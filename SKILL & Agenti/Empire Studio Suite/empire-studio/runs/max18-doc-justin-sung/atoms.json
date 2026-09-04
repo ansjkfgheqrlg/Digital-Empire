@@ -1,0 +1,794 @@
+[
+  {
+    "id": "JS-001",
+    "tipo": "framework",
+    "contenuto": "Le tre fondamenta dell'apprendimento: ENCODING (mettere l'informazione nella memoria a lungo termine, determina quanti buchi hai), RETRIEVAL (usarla, trova i buchi e consolida) ed ENABLERS (le abilita' che ti permettono di presentarti e fare il lavoro). L'ordine in cui svilupparle e' enablers -> retrieval -> encoding.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 3657 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "here are the three pillars and how you need to think about getting better at learning"
+  },
+  {
+    "id": "JS-002",
+    "tipo": "regola",
+    "contenuto": "Migliorare nell'apprendimento NON significa renderlo piu' veloce e facile: l'apprendimento efficace richiede sforzo, spesso e' scomodo e comporta pensare molto duramente. Ci si abitua alla difficolta' come un maratoneta, non diventa oggettivamente facile.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 2039 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "getting better at learning is not the same thing as making learning faster and easier"
+  },
+  {
+    "id": "JS-003",
+    "tipo": "framework",
+    "contenuto": "Gli enablers si dividono in due categorie: (1) SELF-MANAGEMENT - procrastinazione, gestione del tempo, prioritizzazione, gestione del focus; (2) GROWTH SKILLS - le abilita' che permettono di migliorare nel tempo, le due maggiori essendo sperimentazione e riflessione critica.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 6591 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "you can divide enabler skills into two different types"
+  },
+  {
+    "id": "JS-004",
+    "tipo": "numero",
+    "contenuto": "Fra gli studenti che migliorano molto lentamente e si sentono frustrati, l'autore dichiara che '99 volte su 100' la causa e' che si trattengono dallo sperimentare o non fanno riflessione critica abbastanza spesso. Dichiara anche differenze di velocita' di apprendimento fino a 20 volte fra studenti del suo programma.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 8069 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "99 out of 100 times when we look at the students that are improving very slowly"
+  },
+  {
+    "id": "JS-005",
+    "tipo": "regola",
+    "contenuto": "L'encoding e' l'abilita' piu' importante ma va imparata PER ULTIMA, perche' non e' una tecnica ma un insieme di abitudini di pensiero stratificate in anni che vanno prima disimparate. Tempi dichiarati: poche settimane per chi gia' eccelle, mesi dentro un programma intensivo guidato, diversi anni per chi parte da zero senza guida.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 12931 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "encoding the third pillar takes a long time"
+  },
+  {
+    "id": "JS-006",
+    "tipo": "concetto",
+    "contenuto": "Modello multi-store della memoria: informazione sensoriale -> memoria sensoriale -> memoria di lavoro -> memoria a lungo termine. Il passaggio memoria di lavoro -> lungo termine e' l'ENCODING; il percorso inverso e' il RETRIEVAL. Metafora usata: la memoria di lavoro e' la hall di un hotel, ci si passa per forza in entrata e in uscita ma non ci si puo' restare.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 27708 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "I like thinking about the working memory almost like a hotel lobby"
+  },
+  {
+    "id": "JS-007",
+    "tipo": "regola",
+    "contenuto": "Studiare e imparare sono due cose distinte: studiare e' l'attivita' fisica nel mondo reale, imparare e' il processo cognitivo che ne consegue. Tecniche diverse attivano quantita' di apprendimento diverse: si possono spendere 10 ore di studio e ottenerne 1 di apprendimento se la tecnica e' al 10% di efficienza.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 21949 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "studying is not the same thing as learning"
+  },
+  {
+    "id": "JS-008",
+    "tipo": "concetto",
+    "contenuto": "Teoria del carico cognitivo: l'encoding non avviene senza carico cognitivo sufficiente. La relazione carico/apprendimento e' a U rovesciata - carico basso significa apprendimento passivo e quasi nessun encoding, carico alto ma sotto soglia da' il massimo apprendimento, oltre soglia si va in sovraccarico e l'apprendimento crolla. Il carico tollerabile e' allenabile, non e' una costante.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 30117 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "when the load increases your learning actually increases as well up to a certain point"
+  },
+  {
+    "id": "JS-009",
+    "tipo": "regola",
+    "contenuto": "Segnale interno per riconoscere il carico cognitivo giusto: sensazione di CONFUSIONE, il chiedersi 'di cosa sta parlando, dove va a finire, come si incastra, come lo applico'. Segnale opposto: noia e sonnolenza mentre si studia sono la firma di una tecnica inefficiente, perche' il cervello non sta usando le vie giuste.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 31816 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "cognitive load feels confusing"
+  },
+  {
+    "id": "JS-010",
+    "tipo": "concetto",
+    "contenuto": "Desirable difficulty: il disagio e la difficolta' dell'encoding corretto sono necessari, non un effetto collaterale. Analogia della palestra - l'allenamento e' efficace solo se i muscoli si affaticano; allo stesso modo il cervello lavora davvero solo con quel livello di disagio e carico.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 34176 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "this is actually called desirable difficulty"
+  },
+  {
+    "id": "JS-011",
+    "tipo": "numero",
+    "contenuto": "Forgetting curve: dopo una settimana dall'apprendimento di un fatto, senza alcun retrieval intermedio, si dimentica circa il 50-60% dell'informazione. Ogni ripasso riduce la pendenza della curva (il 'rate of decay').",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 36193 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "you can actually forget around 60% of this information 50 to 60% of it"
+  },
+  {
+    "id": "JS-012",
+    "tipo": "regola",
+    "contenuto": "Active recall e spaced repetition funzionano spostando lungo la forgetting curve, ma hanno rendimenti rapidamente decrescenti. Portano da 'male' a 'meglio' chi non fa nulla, non da 'meglio' a 'ottimo'. Per chi gia' rende bene l'autore dichiara che non c'e' evidenza forte di beneficio, e cita ricerca che indica il contrario.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 39612 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "there isn't really strong evidence to say that for people that are already achieving pretty well"
+  },
+  {
+    "id": "JS-013",
+    "tipo": "concetto",
+    "contenuto": "Metafora centrale del capitolo 1: affidarsi solo al retrieval senza costruire l'encoding equivale a riempire un secchio bucato. La mossa corretta e' tappare il buco, non versare piu' forte.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 53703 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "you're essentially just trying to refill a bucket with a hole in it"
+  },
+  {
+    "id": "JS-014",
+    "tipo": "concetto",
+    "contenuto": "Tre bias spiegano la popolarita' di active recall e spaced repetition: (1) Dunning-Kruger, la confidenza e' massima quando si sa pochissimo o si e' esperti da decenni; (2) success bias, l'analogia degli aerei della Seconda Guerra Mondiale crivellati sulle ali - si vedono solo quelli tornati, chi fallisce non fa un video; (3) availability bias, piu' incontriamo una cosa piu' la giudichiamo legittima, con effetto a spirale.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 46449 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "this is the Dunning Krueger graph"
+  },
+  {
+    "id": "JS-015",
+    "tipo": "regola",
+    "contenuto": "Le flashcard sono utili per tre motivi: attivano retrieval reale, rendono banale spaziare le ripetizioni a livello di singolo fatto invece che di argomento, e abilitano il microlearning (sessioni di 3-7 minuti nei ritagli di tempo, fino a 20-30 minuti al giorno recuperati senza pianificare tempo extra).",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 60106 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "flashcards are useful for three main reasons"
+  },
+  {
+    "id": "JS-016",
+    "tipo": "regola",
+    "contenuto": "Tre limiti strutturali delle flashcard: (1) rapporto 1:1 prompt-concetto, inadatte all'apprendimento di ordine superiore con piu' concetti interrelati; (2) diventano travolgenti e producono conoscenza poco connessa in rete, quindi piu' facilmente dimenticata; (3) si finisce per memorizzare la flashcard invece della conoscenza, riconoscendo la domanda dalle prime parole - in esame, con la domanda posta diversamente, si crolla.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 62649 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "what are flashcards not good at"
+  },
+  {
+    "id": "JS-017",
+    "tipo": "regola",
+    "contenuto": "Regola pratica dichiarata: se uno studente usa flashcard per quasi tutto il suo apprendimento e ne accumula centinaia o migliaia, sta facendo molto piu' danno che bene.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 68265 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "if I see a student using flashcards for almost all of their learning"
+  },
+  {
+    "id": "JS-018",
+    "tipo": "framework",
+    "contenuto": "Strategia flashcard avanzata: la sessione di studio lunga si divide in tre parti - (1) targeted review, (2) consolidation and preparation sul materiale nuovo, (3) preview del materiale non ancora affrontato. Origine dichiarata: il caso di un atleta olimpico con 30 ore settimanali di allenamento e una sola finestra di 6 ore il sabato.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 69895 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "you want to split your dedicated long study sessions into three parts"
+  },
+  {
+    "id": "JS-019",
+    "tipo": "framework",
+    "contenuto": "Metodo delle 3 volte sulle flashcard: durante la settimana si marcano con flag diversi le carte sbagliate 3 volte di fila e quelle giuste 3 volte di fila. Le sbagliate ricevono 5-10 minuti ciascuna di approfondimento per costruirci una rete di collegamenti (o si cancellano se inutili). Le giuste vengono FUSE in una domanda di ordine superiore.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 73088 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "you need to mark the ones that you got correct three times in a row"
+  },
+  {
+    "id": "JS-020",
+    "tipo": "framework",
+    "contenuto": "Esempio letterale di fusione delle flashcard: 'come funziona la sintesi proteica?' + 'come vengono ricevuti gli ormoni dai recettori cellulari?' diventano 'come influenzano gli ormoni la sintesi proteica?'. Tre benefici dichiarati: riduce il numero di carte, obbliga a pensare le relazioni, e poggia su fondamenta gia' padroneggiate. Effetto collaterale: le carte cambiano di continuo, quindi non si puo' memorizzare la card al posto del contenuto.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 76332 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "how do hormones influence protein synthesis"
+  },
+  {
+    "id": "JS-021",
+    "tipo": "numero",
+    "contenuto": "Riferimento di volume dichiarato: con questo metodo si dovrebbero completare circa 100-150 flashcard a settimana nei ritagli di tempo. Se sono molte di piu', il segnale e' che il problema sta nell'encoding, non nelle flashcard.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 72730 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "around about 100 to 150 flash cards per week"
+  },
+  {
+    "id": "JS-022",
+    "tipo": "regola",
+    "contenuto": "Il PREVIEW e' dichiarato piu' importante del REVIEW: dovendo sceglierne uno solo, si sceglie il preview, perche' e' cio' che impedisce di dimenticare tanto in partenza. Il review si puo' recuperare, il ritardo accumulato senza preview no.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 78516 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "If you had to choose between only doing review versus only doing the preview"
+  },
+  {
+    "id": "JS-023",
+    "tipo": "framework",
+    "contenuto": "Ordini di apprendimento secondo Bloom, dal basso: remembering, understanding, applying, analyzing, evaluating. Analyzing e' il primo livello in cui si mettono le idee una accanto all'altra confrontandole; evaluating e' quando si giudica e prioritizza, capendo quale relazione conta di piu' e qual e' la natura esatta del legame.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 84031 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the first one is called Bloom's taxonomy"
+  },
+  {
+    "id": "JS-024",
+    "tipo": "framework",
+    "contenuto": "La SOLO taxonomy e' dichiarata preferita dall'autore rispetto a Bloom: il salto avviene quando le idee smettono di esistere isolate e diventano relazionali, e poi quando si agganciano al quadro generale, attivando l'apprendimento di ordine superiore.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 88147 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "another taxonomy that we can use apart from blooms is solo taxonomy"
+  },
+  {
+    "id": "JS-025",
+    "tipo": "regola",
+    "contenuto": "Mossa controintuitiva centrale dell'encoding: puntare SUBITO all'ordine superiore senza passare deliberatamente dai livelli bassi. Alla domanda 'come analizzo qualcosa che non ho ancora capito' la risposta e' 'non puoi, ed e' proprio il punto': il cervello riempie da solo memorizzazione e comprensione strada facendo, e lo fa in modo gia' organizzato.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 89870 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "automatically fill in the lower order levels of thinking"
+  },
+  {
+    "id": "JS-026",
+    "tipo": "regola",
+    "contenuto": "Il motivo per cui l'ordine conta e' meccanico: si hanno SECONDI in memoria di lavoro per encodare. Se in quei secondi si decide di trattare l'informazione isolata, e' gia' archiviata male e in seguito bisognera' DISIMPARARE quell'organizzazione prima di rifarla. Analogia: conviene decidere dove va un oggetto mentre lo si raccoglie, non ammucchiare tutto e riordinare dopo.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 84759 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "we've got seconds so in the in the seconds that that information is in our working memory"
+  },
+  {
+    "id": "JS-027",
+    "tipo": "numero",
+    "contenuto": "Ritenzione dichiarata dall'autore per i suoi studenti dopo il training di encoding: 90% o piu' a 2-3 settimane di distanza senza aver riguardato il materiale, contro un valore indicato come norma generalmente accettata del 40-60%. Dato riportato dall'autore, non verificabile dal documento.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 92062 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "their retention is like 90% plus after 2 3 weeks"
+  },
+  {
+    "id": "JS-028",
+    "tipo": "regola",
+    "contenuto": "Segnale da riconoscere: quando si scrivono appunti e si sente un SOLLIEVO, un peso che si toglie, significa che si e' scaricato il carico cognitivo sulla carta invece di encodarlo. Tipico di chi scrive appunti lineari e prolissi. L'allenamento consiste nel leggere/ascoltare senza scrivere subito, arrivando a 15-30 minuti, chiedendosi come ogni cosa si lega alla precedente e al quadro generale.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 94985 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "there is a sort of burden that's been lifted from your mind"
+  },
+  {
+    "id": "JS-029",
+    "tipo": "framework",
+    "contenuto": "PACER - i 5 tipi di informazione e il processo mirato per ciascuno: P Procedural -> practice (applicare il prima possibile); A Analogous -> critique (esaminare criticamente quanto regge l'analogia); C Conceptual -> mapping (note non lineari a rete); E Evidence -> store and rehearse (usandola); R Reference -> store and rehearse con richiamo diretto (qui le flashcard sono lo strumento giusto).",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 104990 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "I break down the information that I read into five different categories using the acronym Pacer"
+  },
+  {
+    "id": "JS-030",
+    "tipo": "regola",
+    "contenuto": "Le due fasi di PACER, consumo e digestione, devono restare in EQUILIBRIO: se non c'e' tempo di digerire si deve consumare di MENO, non di piu'. Consumare senza digerire e' l'equivalente dell'abbuffarsi, e si finisce per vomitare tutto attraverso il processo che chiamiamo dimenticare.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 107748 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the two stages of consuming and digesting must always be balanced"
+  },
+  {
+    "id": "JS-031",
+    "tipo": "numero",
+    "contenuto": "Percentuale dichiarata di quanto si dimentica leggendo senza digerire: alcuni studi suggerirebbero fino al 90% del contenuto consumato. Citato genericamente come 'some studies', senza riferimento bibliografico.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 108585 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "up to 90% of what is consumed is forgotten"
+  },
+  {
+    "id": "JS-032",
+    "tipo": "concetto",
+    "contenuto": "Struttura interna di PACER: la A (analogous) e' rappresentata come un sottoinsieme che sta DENTRO sia la P (procedural) sia la C (conceptual) - si possono creare analogie sia su istruzioni sia su concetti. E ed R sono quasi identiche e quasi nessuno le distingue, ed e' li' che si bruciano ore ogni settimana: l'evidence serve ad argomentare un concetto, la reference va solo richiamata.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 114126 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the analogous information can exist within as a subset of procedural information"
+  },
+  {
+    "id": "JS-033",
+    "tipo": "concetto",
+    "contenuto": "Kim Peek: memoria letteralmente perfetta (sindrome FG, macrocefalia, assenza del corpo calloso) ma debole in ragionamento e problem solving. In un esame di livello elementare vincerebbe lui, in uno universitario o post-laurea potrebbe vincere uno studente normale. Morale del framework: ricordare tutto non e' l'obiettivo, l'obiettivo e' ricordare cio' che serve nella forma in cui serve.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 102662 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "this man's name is Kim Peak"
+  },
+  {
+    "id": "JS-034",
+    "tipo": "framework",
+    "contenuto": "LADDER METHOD - metodo della scala, per studiare quando si e' esausti. Si spezza l'argomento in pioli a sforzo costante e BASSO: a ogni passata si prende solo cio' che sembra facile da capire, confrontare e collocare, saltando il resto. Piolo 1 salta quasi tutto ma costruisce l'impalcatura; il piolo 2 dura di piu' (circa 35 minuti nell'esempio) e va piu' a fondo sulle stesse idee organizzandole; di norma 3 pioli chiudono l'argomento.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 128426 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "this is where the ladder method comes in"
+  },
+  {
+    "id": "JS-035",
+    "tipo": "concetto",
+    "contenuto": "Modello biglie/tazze alla base del ladder method: normalmente si prende un'informazione e si decide in quale tazza va, costo gestibile. La sensazione di 'non ho voglia di studiare' nasce quando NON SI HANNO TAZZE: bisogna decidere quante servono, quali, quali alternative esistono e cosa fare se dopo tre biglie si scopre di aver sbagliato. Il cervello consuma circa il 20% dell'energia a riposo ed evita attivamente questo costo.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 126993 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "imagine if I didn't have any cups at all"
+  },
+  {
+    "id": "JS-036",
+    "tipo": "concetto",
+    "contenuto": "I tre consumi di energia durante l'apprendimento: (1) capire cio' che entra, (2) confrontarlo con cio' che si sa gia', (3) decidere dove collocarlo in base a somiglianza e relazione. Farli tutti e tre insieme e' cio' che genera il senso di sopraffazione.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 127646 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "there are three main ways that your brain uses lots of energy while learning"
+  },
+  {
+    "id": "JS-037",
+    "tipo": "regola",
+    "contenuto": "Perche' il ladder method funziona: ogni piolo costa quanto il precedente, ma copre piu' contenuto, perche' le strutture organizzative esistono gia'. Il lavoro totale e' lo stesso, spalmato in sessioni tutte facili. Applicabile identico a progetti e compiti, partendo dalla pianificazione ad alto livello.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 132180 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "each rung takes the same effort as the last rung"
+  },
+  {
+    "id": "JS-038",
+    "tipo": "framework",
+    "contenuto": "Le 12 regole dell'encoding: 1 smetti di combattere il cervello; 2 previeni il debito di apprendimento; 3 non abbuffarti di informazione; 4 semplifica tutto; 5 confronta tutto; 6 collega tutto; 7 raggruppa tutto; 8 abituati a pensare duro; 9 rifai tutto; 10 usa analogie migliori; 11 usa gli appunti come scarico cognitivo; 12 sfida costantemente le tue ipotesi.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 134372 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "you can learn it by following these 12 rules"
+  },
+  {
+    "id": "JS-039",
+    "tipo": "concetto",
+    "contenuto": "LEARNING DEBT: non rendere rilevante un'informazione ora significa crearsi il lavoro dopo - ritrovarla, riapprenderla, ripeterla, dimenticarla di nuovo, in ciclo. Chi ha questa abitudine non migliora mai l'encoding, perche' rinuncia sistematicamente all'occasione di allenare proprio quella capacita'.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 137003 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "learning debt is what happens when you keep fighting your brain"
+  },
+  {
+    "id": "JS-040",
+    "tipo": "regola",
+    "contenuto": "Regola 4 (semplifica tutto), la piu' controintuitiva: smettere di cercare di ricordare e capire. Ricordare e capire sono EFFETTI COLLATERALI del tipo di pensiero giusto. Se l'obiettivo diventa semplificare, il cervello fa il resto da solo. Anche una semplificazione SBAGLIATA rafforza la memoria della versione corretta quando arriva.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 143107 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "even if you incorrectly simplify something the work that went into trying to simplify it"
+  },
+  {
+    "id": "JS-041",
+    "tipo": "regola",
+    "contenuto": "Il motore dell'encoding e' la sequenza semplifica -> confronta -> collega -> raggruppa, e va applicata a TUTTO, non quando capita o quando e' ovvio. E' un'abitudine, non un episodio. Effetto collaterale: chi encoda bene fa domande migliori, non 'cosa significa' ma 'somiglia a questo ma differisce qui, e forse si lega a quest'altro'.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 145230 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "I deliberately use the word everything when I say simplify everything compare everything connect everything"
+  },
+  {
+    "id": "JS-042",
+    "tipo": "regola",
+    "contenuto": "Regola 11 - gli appunti come scarico cognitivo (offload). Due vantaggi dichiarati: e' cognitivamente piu' facile perche' si vedono e si spostano i pensieri sulla carta, e gli appunti diventano lo specchio della mente. Un'informazione isolata a bordo pagina segnala che li' si dimentichera' e non si sapranno risolvere problemi complessi, SENZA bisogno di testarsi.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 156408 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "you can look at your notes to find areas of weakness in your knowledge"
+  },
+  {
+    "id": "JS-043",
+    "tipo": "regola",
+    "contenuto": "Regola 12 - ogni struttura di conoscenza e' solo un'IPOTESI. L'autore dichiara di considerare ipotesi tutto cio' che sa sull'apprendimento dopo 13 anni. Senza questa postura la conoscenza diventa rigida, e gli errori presi all'inizio restano nascosti e diventano le fondamenta su cui si costruisce tutto il resto.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 156690 :: cap.2 encoding",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "every piece of knowledge we're crafting every network we're forming is just a hypothesis"
+  },
+  {
+    "id": "JS-044",
+    "tipo": "regola",
+    "contenuto": "Fraintendimento di partenza del mind mapping: la mappa NON e' la conoscenza. Importare la mappa perfetta di un altro non serve a niente, non si copia-incolla la conoscenza da un cervello all'altro. Il valore e' il processo che la produce - il punto del mind mapping non e' avere una mind map.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 161374 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the point of mind mapping isn't to have a mind map"
+  },
+  {
+    "id": "JS-045",
+    "tipo": "framework",
+    "contenuto": "GRIND - i 6 passi della mappa perfetta: G grouping (raggruppare, la parte difficile e' decidere il criterio); R relational (esprimere la natura delle relazioni, non solo la loro esistenza); I interconnected (collegare i GRUPPI fra loro); N non-verbal (ridurre le parole, usare linee, frecce e disposizione spaziale); D directional (dare flusso e direzione); E emphasized (decidere e mostrare visivamente cosa conta di piu').",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 159562 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "my six-step framework for mind mapping which I call grind"
+  },
+  {
+    "id": "JS-046",
+    "tipo": "concetto",
+    "contenuto": "Esempio del criterio di raggruppamento (passo G di GRIND): le stesse penne si possono raggruppare per colore, per quantita' di inchiostro rimasto o per valore affettivo. Esistono sempre piu' raggruppamenti validi, e quello giusto per la propria memoria non e' necessariamente il primo, il piu' ovvio, o quello con cui l'argomento e' stato insegnato.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 162366 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "I could group these pens based on color"
+  },
+  {
+    "id": "JS-047",
+    "tipo": "concetto",
+    "contenuto": "Anti-pattern ISLANDS (passo I di GRIND): gruppi densi di relazioni ma isolati fra loro, con connessione complessiva debole. Nasce dal tunnel vision, compartimenta la comprensione e blocca il problem solving complesso. L'autore dichiara che e' uno di oltre 90 pattern che insegna nel suo programma.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 168168 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "this is a pattern I call islands"
+  },
+  {
+    "id": "JS-048",
+    "tipo": "concetto",
+    "contenuto": "Passo E di GRIND (emphasized): e' il passo che quasi tutti saltano ed e' quello che alza di piu' il livello. Crea la BACKBONE, la spina dorsale della mappa. Saper dire e giustificare cosa e' piu' importante e' il segno distintivo dell'esperto; conoscere molti fatti connessi senza saper dire cosa conta e' il segno del principiante.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 176996 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "this creates something that I often call the backbone of the mind map"
+  },
+  {
+    "id": "JS-049",
+    "tipo": "concetto",
+    "contenuto": "I passi di GRIND si influenzano a vicenda: arrivare alla E puo' rivelare che il raggruppamento iniziale era sbagliato, obbligando a rifare G, R e I. Non e' uno spreco - e' la natura RICORSIVA dell'apprendimento profondo, e va attraversata, non evitata.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 178748 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the recursive nature of deep learning"
+  },
+  {
+    "id": "JS-050",
+    "tipo": "framework",
+    "contenuto": "I livelli delle mappe. Livello 0: appunti lineari, prolissi, superficiali, molto evidenziatore, inutilmente costosi. Livello 1: non-linearita' e connessioni, spesso caotico, beneficio scarso. Livello 2: gruppi, gruppi correlati, flusso piu' chiaro. Livello 3: struttura e flusso molto chiari, enfasi visiva su alcuni gruppi e frecce, gruppi intuitivi spesso RINOMINATI rispetto alla terminologia del corso.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 203829 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "mind mapping can be broken down into three different levels of skill"
+  },
+  {
+    "id": "JS-051",
+    "tipo": "regola",
+    "contenuto": "Il livello 1 e' necessario ma non saltabile - l'autore lo paragona alle rotelle della bicicletta. Molti provano il mind mapping, si fermano al livello 1, concludono che non funziona: hanno ragione, al livello 1 non funziona davvero.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 208128 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "it's kind of like training wheels on a bicycle"
+  },
+  {
+    "id": "JS-052",
+    "tipo": "numero",
+    "contenuto": "Stime di resa dichiarate dall'autore (non verificate): passare dal livello 0 al livello 2 vale circa un aumento di voto del 10-15%; il livello 3 e' poco comune e corrisponde grosso modo a un top 10% di performance; il salto dal 2 al 3 pesa PIU' del salto da 0 a 2; la differenza fra livello 1 e livello 3 e' quella fra un top 30% e un top 1%.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 215075 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "level three is where you start seeing some serious improvements"
+  },
+  {
+    "id": "JS-053",
+    "tipo": "regola",
+    "contenuto": "Si possono ottenere risultati da livello 3 anche con appunti LINEARI, se mentalmente si fa il lavoro di ordine superiore - l'autore lo dimostra scrivendo una sintesi tipo mini-saggio. Lo sconsiglia comunque per due motivi concreti: e' 2-3 volte piu' faticoso (bisogna tenere tutto in testa senza tracciarlo) ed e' 2-3 volte piu' lento in revisione.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 212417 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "there actually is a way to still do linear notes while still getting level three results"
+  },
+  {
+    "id": "JS-054",
+    "tipo": "concetto",
+    "contenuto": "Barriera mentale 1 - non fidarsi del proprio cervello. Scrivere in tempo reale come una fotocopiatrice umana e' il sintomo. Punto meccanico: l'apprendimento avviene nello SPAZIO fra l'input e l'output, e scrivere mentre si ascolta azzera quello spazio. La ricerca citata dice che scrivere appunti contemporaneamente all'ascolto peggiora l'apprendimento.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 185608 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "research tells us that writing notes immediately after listening or reading"
+  },
+  {
+    "id": "JS-055",
+    "tipo": "framework",
+    "contenuto": "DELAYED NOTE-TAKING e l'interruttore cognitivo. Ritardo zero: sforzo e memoria quasi nulli, estremamente facile e altrettanto inutile. Ritardo di poche frasi: JUGGLE MODE, lo sforzo schizza ma la memoria non sale - e' la trappola. Ritardo oltre 1-2 minuti: tenere tutto diventa impossibile e scatta l'ORGANIZING MODE, dove si raggruppa e semplifica per avere meno cose da tenere; lo sforzo RIDISCENDE e memoria e comprensione salgono molto.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 192054 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "from juggle mode into organizing mode"
+  },
+  {
+    "id": "JS-056",
+    "tipo": "concetto",
+    "contenuto": "Analogia dell'organizing mode: e' come ripiegare i vestiti e metterli nel cassetto invece di tenerli tutti in braccio. Si sa dove sono i calzini perche' sono logicamente nel cassetto dei calzini; allo stesso modo il cervello sa accedere all'informazione perche' e' stata attivamente organizzata in modo sensato.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 192869 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "it's kind of like folding and putting your clothes away"
+  },
+  {
+    "id": "JS-057",
+    "tipo": "numero",
+    "contenuto": "Target dichiarato per il delayed note-taking: un apprendista efficiente ritarda gli appunti di circa 5 minuti o piu' a seconda della densita'. Il livello utile per padroneggiare il mind mapping e' 3-5 minuti. L'autore avverte che arrivarci da soli puo' richiedere letteralmente anni, ed e' il motivo per cui molti mollano prima.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 193676 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "an efficient learner can usually delay their note-taking by around five minutes or more"
+  },
+  {
+    "id": "JS-058",
+    "tipo": "concetto",
+    "contenuto": "Barriera mentale 2 - credere che piu' appunti significhi meglio. La ricerca citata dice il contrario: appunti piu' lunghi e prolissi si associano a prestazioni accademiche peggiori. E' l'ILLUSIONE DELL'APPRENDIMENTO, come comprare libri e non leggerli: 30 pagine di appunti bellissimi che tra una settimana saranno per meta' dimenticate e per meta' mai piu' rilette.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 196662 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the illusion of learning"
+  },
+  {
+    "id": "JS-059",
+    "tipo": "regola",
+    "contenuto": "La mind map NON si costruisce partendo dal tema centrale con i rami intorno: e' l'ESITO del ragionamento. La progressione corretta e': appunti originali, poi togliere frasi e parole di riempimento, poi sostituire con disposizione spaziale, frecce e connessioni. A ogni passaggio meno sulla pagina e piu' nella testa, e la mappa emerge da sola.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 199621 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "most people when they think about doing a mind map they start with this big central theme"
+  },
+  {
+    "id": "JS-060",
+    "tipo": "numero",
+    "contenuto": "Tempi dichiarati per il mind mapping: da appunti lineari alla versione 'word drop' 1-2 settimane con pratica diligente; da li' a una mappa piena che potenzia la memoria altre 2-6 settimane con guida, oppure 2-6 mesi da soli. Dipende da quanto sono radicate le vecchie abitudini.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 200524 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "it's going to take you probably one or two weeks"
+  },
+  {
+    "id": "JS-061",
+    "tipo": "regola",
+    "contenuto": "Criterio sull'uso dell'AI nell'apprendimento. DANNOSA se: (1) rende cognitivamente piu' facile organizzare l'informazione; (2) scavalca il bisogno di confrontare o di giudicare in autonomia. UTILE se: (1) fa risparmiare tempo nella raccolta di informazione; (2) riassume grandi volumi che poi si processano e giudicano da soli; (3) fa risparmiare tempo rispetto a una ricerca Google equivalente.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 180819 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "using AI in our learning is generally harmful for learning if it"
+  },
+  {
+    "id": "JS-062",
+    "tipo": "regola",
+    "contenuto": "Esempio dirimente sull'AI: farsi generare i GRUPPI da ChatGPT e' dannoso, perche' toglie proprio il processo che produce apprendimento. Costruire i gruppi da soli e poi farli VERIFICARE dall'AI e' utile, perche' la parte dura e' gia' stata fatta e la verifica non e' concettualmente diversa da una ricerca su Google, solo piu' veloce.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 179902 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "getting AI to just do that for us would be harmful"
+  },
+  {
+    "id": "JS-063",
+    "tipo": "concetto",
+    "contenuto": "LATENT LEARNING - periodo di apprendimento latente, attribuito allo psicologo americano Edward Tolman negli anni '30. E' il tempo fra l'apprendere e il ricevere un riscontro reale. Allacciarsi le scarpe non ne ha; gli scacchi ne hanno settimane; imparare a imparare puo' averne mesi, e nel frattempo si sono fatte centinaia di altre cose, rendendo impossibile sapere quale causa ha prodotto quale effetto.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 224659 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "latent learning was first described in the 1930s by this American psychologist called Edward Tolman"
+  },
+  {
+    "id": "JS-064",
+    "tipo": "framework",
+    "contenuto": "RAIL - le 4 fasi dell'acquisizione di un'abilita' complessa e le azioni corrispondenti. R Relevance: capire cosa e' rilevante -> exploration + challenging. A Awareness: si prova e si sbaglia di continuo, e' il plateau period -> experimentation + reflection. I Iteration: si sa fare ma con molto sforzo e poca consistenza -> varied practice + adjust. L Lifelong: e' diventata abitudine -> refine + uso regolare contro lo skill decay.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 223198 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "this is where the rail framework comes in"
+  },
+  {
+    "id": "JS-065",
+    "tipo": "regola",
+    "contenuto": "L'errore che RAIL serve a correggere: si fanno le azioni della FASE 3 quando si e' ancora in FASE 2. Da questo disallineamento nascono tempo sprecato, frustrazione, stress e l'impossibilita' di padroneggiare qualsiasi abilita' complessa.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 222969 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "most people are doing actions at stage three when they're only at stage two"
+  },
+  {
+    "id": "JS-066",
+    "tipo": "regola",
+    "contenuto": "Ordine obbligato nella fase I (iteration): prima la CONSISTENZA, poi la facilita', poi la velocita'. Cercare la velocita' prima di avere consistenza e accuratezza aumenta solo il tasso di errore, ed e' una causa comune di demotivazione e abbandono in questa fase.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 236802 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "and it must be in that order"
+  },
+  {
+    "id": "JS-067",
+    "tipo": "concetto",
+    "contenuto": "Genealogia di RAIL: deriva dal modello delle 4 fasi della competenza (unconscious incompetence, conscious incompetence, conscious competence, unconscious competence). L'autore dichiara di insegnare anche l'originale ma di aver costruito RAIL perche' il modello classico e' denso, astratto e non dice COSA FARE per passare di fase, soprattutto in fase 3.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 235068 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the four stages of competence"
+  },
+  {
+    "id": "JS-068",
+    "tipo": "regola",
+    "contenuto": "Nota chiave sulle fasi R e A di RAIL: in entrambe non si ottengono ancora risultati e non si sa ancora eseguire l'abilita', ma si sta comunque progredendo. In R il progresso si misura dal numero di variabili nuove che si iniziano a vedere; in A dal numero di errori che si smette di fare. E' esattamente il punto in cui la gente conclude di non essere portata.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 228862 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "you're not actually getting any better at the skill"
+  },
+  {
+    "id": "JS-069",
+    "tipo": "concetto",
+    "contenuto": "THEORY OVERLOAD - l'errore con quasi il 100% di tasso di fallimento nell'apprendimento di qualsiasi abilita'. Il cervello ha risorse cognitive finite (metafora della ciotola e dei blocchi di legno): ogni cosa nuova da tenere a mente le occupa, e anche il solo ESEGUIRE l'attivita' ne occupa molte finche' non e' abitudine. In letteratura: multiple element interactivity, che porta al cognitive overload.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 240058 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "I call this mistake theory overload"
+  },
+  {
+    "id": "JS-070",
+    "tipo": "numero",
+    "contenuto": "Caso dei due studenti riportato dall'autore dal suo programma. Suresh: 5 settimane, 31% del programma coperto, risultato passato dall'80% al 71% (peggiorato). Enzo: 54 settimane, 20% del programma coperto, risultato passato dal 62% al 92%. Dati dichiarati dall'autore, non verificabili dal documento.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 242343 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "who was on the program for 5 weeks and got through 31% of the program"
+  },
+  {
+    "id": "JS-071",
+    "tipo": "regola",
+    "contenuto": "Aggravante specifica delle abilita' COGNITIVE rispetto a quelle fisiche: qui l'attivita' stessa (capire, processare, organizzare, creare memoria) consuma gia' moltissime risorse mentali, quindi bastano poche aggiunte per andare in sovraccarico. Conclusione operativa: sperimentare solo UNA O DUE cose alla volta.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 245505 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "we should only ever be trying to experiment with one or two things at the same time"
+  },
+  {
+    "id": "JS-072",
+    "tipo": "numero",
+    "contenuto": "Regola empirica dichiarata per bilanciare teoria e pratica: almeno 5 ore di pratica per ogni ora di teoria (5h di pratica -> max 1h di teoria; 20h -> max 4h). L'autore la relativizza subito: la metrica vera non sono le ore ma la velocita' con cui si formano le ABITUDINI, perche' e' l'abitudine che libera risorse cognitive. Enzo, formando abitudini lentamente, e' andato a 15-20 ore di pratica per ora di teoria.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 248247 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "for every hour of theory we should have at least 5 hours of practice"
+  },
+  {
+    "id": "JS-073",
+    "tipo": "regola",
+    "contenuto": "Segnale che una nuova abitudine si sta formando: l'esecuzione diventa piu' facile e piu' veloce SENZA perdere accuratezza e consistenza, e la velocita' arriva senza che la si stia cercando. E' il momento in cui si e' liberato spazio cognitivo per assorbire nuova teoria.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 249217 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "when you can feel that things are becoming easier and faster"
+  },
+  {
+    "id": "JS-074",
+    "tipo": "concetto",
+    "contenuto": "Ciclo esperienziale, ingrediente senza il quale nessuna abilita' si impara: esperienza -> osservare il risultato -> decidere cosa cambiare -> nuovo esperimento. Analogia dell'arco: quando la freccia e' partita non la si controlla piu', dove arriva dipende da tutto cio' che si e' fatto prima. Uguale per lo studio - il voto dipende dai processi usati prima.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 241410 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "this is essentially the experiential cycle"
+  },
+  {
+    "id": "JS-075",
+    "tipo": "regola",
+    "contenuto": "Consiglio 1 per professionisti - START FROM ZERO. Chi ha abbandonato l'universita' e' spesso PIU' facile da allenare del bravo studente diligente, perche' ha meno abitudini incrostate. La parte difficile non e' imparare metodi nuovi, e' scoprire e disimparare quelli vecchi accumulati in anni.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 251395 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "most of the time the second person who struggled was a terrible student is actually easier to coach"
+  },
+  {
+    "id": "JS-076",
+    "tipo": "framework",
+    "contenuto": "Consiglio 2 - LEARN IN SPRINTS. Fuori dall'universita' nessuno fornisce il programma: bisogna darsi obiettivi di apprendimento espliciti (cosa devo sapere, a che livello, entro quando), poi consumare aggressivamente finche' si inizia a perdere il filo, poi applicare subito e a lungo. Esempio dichiarato dall'autore: 2 settimane di libri seguite da 6 mesi di sola applicazione.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 252813 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "learn in sprints"
+  },
+  {
+    "id": "JS-077",
+    "tipo": "regola",
+    "contenuto": "Consiglio 3 - LEAD DON'T FOLLOW. I neolaureati che spiccano si mettono nella testa dell'ESPERTO, non del pari livello. Motivo tecnico dichiarato: il contesto e lo scopo con cui si impara determinano COME il cervello organizza l'informazione. Imparare solo per soddisfare il requisito attuale da' il livello attuale, e li' il 90% del valore di quell'apprendimento finisce.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 255271 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the way your brain will store and organize new information that you learn is heavily influenced by the context"
+  },
+  {
+    "id": "JS-078",
+    "tipo": "regola",
+    "contenuto": "Consiglio 5 - DON'T MEMORIZE. Memorizzare e' il metodo di ULTIMA istanza, da usare quando nessun altro e' applicabile. L'obiettivo primario davanti a informazione nuova deve essere 'come la imparo in modo da NON doverla memorizzare'. Segnale d'allarme da riconoscere in se': il loop 'tanto me lo dimentico, quindi lo ripeto ancora'.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 258132 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "learning through memorization is a losing game"
+  },
+  {
+    "id": "JS-079",
+    "tipo": "framework",
+    "contenuto": "Consiglio 7 - DON'T OVEREAT, con due domande di controllo da porsi in continuazione: (1) 'questo ha senso per me?' - non 'l'ho capito', proprio 'ha senso', perche' avere senso significa che il pattern di connessioni e' familiare al cervello; (2) 'sento che sto per dimenticarlo?'. Se una delle due va male, si deve SMETTERE di consumare e digerire.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 265155 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "there are two questions I am constantly asking myself while I'm learning new information"
+  },
+  {
+    "id": "JS-080",
+    "tipo": "regola",
+    "contenuto": "Consiglio 9 - JUDGE EVERYTHING. Il valore delle informazioni non e' uguale e dipende dal contesto. Anche solo chiedersi 'da 1 a 10 quanto e' importante questo?' ha impatto immediato. E' cio' che distingue chi dice 'e' fatto di A, B e C' da chi dice 'e' fatto di A, B e C ma conta soprattutto B, per l'influenza che ha su A e C' - e si capisce subito chi dei due ha capito piu' a fondo.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 270210 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "simply just asking yourself on a scale of 1 to 10 how important"
+  },
+  {
+    "id": "JS-081",
+    "tipo": "regola",
+    "contenuto": "Consiglio 10 - ASK BETTER QUESTIONS. Le domande migliori nascono dal mappare e dal giudicare. Segnale gestionale esplicito dichiarato dall'autore: se qualcuno affronta un tema nuovo e complesso e NON ha domande, per lui e' una bandiera rossa - significa che non sta pensando al livello necessario, e quindi quasi certamente non raggiungera' lo standard richiesto.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 272664 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "if I'm working with someone and I know it's complicated and it's new to them and they don't have any questions"
+  },
+  {
+    "id": "JS-082",
+    "tipo": "framework",
+    "contenuto": "Consiglio 11 - TACTICALLY HIT THE BOOKS. Studiare e' la QUARTA opzione per un problema di conoscenza: (1) lo sai gia'; (2) ricerca veloce; (3) ricerca approfondita; (4) studio vero, quando non basta avere la risposta ma serve saper PENSARE il problema. Errore comune: prendere un corso o un libro intero per colmare un buco generico - passivo, lento, pieno di materiale irrilevante.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 274078 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "think about studying as your fourth optimal solution to a knowledge problem"
+  },
+  {
+    "id": "JS-083",
+    "tipo": "regola",
+    "contenuto": "Consiglio 12 - DELETE THE LATENT LEARNING PERIOD. Da professionista il periodo latente va portato il piu' vicino possibile a zero: proporre presto come si applicherebbe cio' che si e' imparato e farlo verificare da qualcuno, spesso. Se il modo di inquadrare il problema e' sbagliato bisogna saperlo PRIMA di averci costruito sopra settimane, proprie e di altri.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 278198 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "as a professional we want to bring that as close to zero as possible"
+  },
+  {
+    "id": "JS-084",
+    "tipo": "regola",
+    "contenuto": "Consiglio 13 - SLOW IS FAST. Citazione riportata da un general manager: 'good planning costs a lot but not planning costs much more'. Il collo di bottiglia non e' mai la velocita' di consumo, che si puo' cambiare a piacere: e' il tempo dedicato a pensare, processare e organizzare. Andare piano e farlo bene e' cio' che rende veloce l'apprendimento.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 279633 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "good planning costs a lot but not planning costs much more"
+  },
+  {
+    "id": "JS-085",
+    "tipo": "regola",
+    "contenuto": "Consiglio 14 - BRING EVERYTHING TO THE TABLE. Aneddoto su un suo ex studente poi assunto: eccellente nello studio, molto meno sul lavoro, perche' teneva quello standard di pensiero solo mentre studiava. Il cervello deve ABITUARSI allo standard alto perche' diventi abitudine e quindi facile; alternare giorni alti e giorni bassi impedisce all'abitudine di consolidarsi.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 282253 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "bring everything to the table"
+  },
+  {
+    "id": "JS-086",
+    "tipo": "concetto",
+    "contenuto": "Frase che riassume il capitolo 4 e in gran parte l'intero documento: il modo piu' veloce di imparare qualsiasi abilita' e' imparare piu' lentamente. Bilanciare l'ingresso di teoria con la velocita' reale di formazione delle abitudini, invece di correre a coprire contenuto.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 241828 :: cap.4 skill acquisition",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "the fastest way to learn any skill is to learn more slowly"
+  },
+  {
+    "id": "JS-087",
+    "tipo": "cautela",
+    "contenuto": "Il documento e' anche materiale di vendita: ricorrono richiami alla newsletter gratuita 'Learning Drops', a un quiz diagnostico gratuito e al programma a pagamento icanstudy.com. Alcune affermazioni sui tempi ('mesi con guida, anni da soli') sono strutturalmente favorevoli a chi vende il programma. Non le squalifica, ma impone di non trattarle come dati.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 201992 :: cap.3 mind mapping",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "if you want to make this process a little bit faster a little bit smoother a little bit more guided"
+  },
+  {
+    "id": "JS-088",
+    "tipo": "cautela",
+    "contenuto": "Nessuno studio e' citato per titolo, autore o anno in tutto il documento: tutti i numeri sono dichiarazioni dell'autore o rimandi generici a 'the research'. L'autore stesso dichiara di stare per pubblicare i propri dati su riviste, quindi al momento del documento NON l'ha ancora fatto.",
+    "fonte": "Agency 2026 (1).md :: riga 366 :: char 44202 :: cap.1 retrieval",
+    "frame": null,
+    "confidenza": "osservato",
+    "ancora": "I'm gearing up to publish it in journals"
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "knowledge_id": "justin-sung-learning-guide",
+  "titolo": "Justin Sung - Guida completa all'apprendimento (4 capitoli)",
+  "autore": "Justin Sung (learning coach, ex medico, head of learning @ I Can Study)",
+  "data_ingest": "2026-09-04",
+  "run": "empire-studio/runs/max18-doc-justin-sung",
+  "tipo_fonte": "documento di testo",
+  "video_guardato": false,
+  "frame_estratti": 0,
+  "frame_guardati": 0,
+  "no_finto": {
+    "esito": "PASS",
+    "motivazione": "Fonte TESTUALE. Nessun video guardato, zero frame visti: il video 'Justin Sung 4h55' non e' disponibile e il link non esiste nel repo (EMP-QQ2R sez.3). Max ha consegnato il testo. Nessuna affermazione su contenuti visivi e' presente in alcun artefatto di questo run."
+  },
+  "sorgente": {
+    "file": "C:/Users/Utente/Pictures/materiale/Agency 2026 (1).md",
+    "riga": 366,
+    "caratteri": 285119,
+    "parole": 52582,
+    "lingua": "en",
+    "sha256_blocco": "fe62b46c2ee611fd6a615593b03b5549ead5012d49e3e9bd7f19ee58ff5fbd19"
+  },
+  "copertura": {
+    "caratteri_letti": 285119,
+    "caratteri_totali": 285119,
+    "percentuale": 100.0,
+    "metodo": "split in 12 blocchi da ~24.000 caratteri su confine di parola, tutti letti in ordine"
+  },
+  "atomi": {
+    "totale": 88,
+    "per_capitolo": {
+      "cap.1 retrieval": 23,
+      "cap.2 encoding": 21,
+      "cap.3 mind mapping": 20,
+      "cap.4 skill acquisition": 24
+    },
+    "tracciabilita": "ogni atomo porta un campo 'ancora' con una frase letterale; l'offset in 'fonte' e' calcolato cercandola nel testo reale. 2 atomi su 88 sono stati scartati alla prima esecuzione perche' le ancore erano parafrasi imprecise, poi corretti sul testo. Esito: 88/88 verificati.",
+    "campo_frame": "sempre null - non applicabile a fonte testuale"
+  },
+  "framework_estratti": [
+    "3 fondamenta (encoding / retrieval / enablers) e ordine di sviluppo",
+    "teoria del carico cognitivo (curva a U rovesciata) + desirable difficulty",
+    "metodo delle 3 volte per le flashcard (fondere le giuste, approfondire le sbagliate)",
+    "PACER - procedural/analogous/conceptual/evidence/reference + processo mirato",
+    "ladder method (metodo della scala) + modello biglie/tazze",
+    "12 regole dell'encoding",
+    "GRIND - grouping/relational/interconnected/non-verbal/directional/emphasized",
+    "livelli 0-3 delle mappe mentali",
+    "delayed note-taking e interruttore juggle mode -> organizing mode",
+    "criterio danno/beneficio sull'uso dell'AI nell'apprendimento",
+    "latent learning (Tolman)",
+    "RAIL - relevance/awareness/iteration/lifelong + azioni per fase",
+    "theory overload e il rapporto >=5h pratica / 1h teoria",
+    "14 consigli per il professionista"
+  ],
+  "wiki": "second-brain-vault/wiki/sources/Source_Justin_Sung_Guida_Apprendimento.md",
+  "stages": {
+    "C_archiviazione_integrale": "completato",
+    "D_H_enrichment": "NON eseguiti deliberatamente. Perimetro EMP-QQ2R (Fase 1 = studio) e presenza di altre sentinelle in lavoro parallelo sullo stesso repo: nessuna patch applicata a skill o agenti condivisi. I 7 consigli sono documentati e verificati con Grep nella pagina wiki, e restano proposte."
+  },
+  "consigli_verificati_grep": [
+    "zero learning science in tutto l'ecosistema di conoscenza DE (soli falsi positivi su **/SKILL.md)",
+    "book-to-skill: manca lo step emphasis/backbone (passo E di GRIND); eredita il raggruppamento dell'autore",
+    "contraddizione book-to-skill ('chapter summaries') vs conoscenza-empire/content-forge ('mai riassunti')",
+    "atoms.json senza archi/relazioni; atomizer.py senza edge|relates_to|cluster - DE produce mappe di livello 1",
+    "Empire Studio senza stage di digestione/consolidamento (pipeline tutta consumo+archiviazione)",
+    "PACER assente come triage di ingestione",
+    "theory overload spiega il dato di peso_skill.py e da' un criterio per la Fase 2 di EMP-QQ2R"
+  ],
+  "cautele": [
+    "nessun riferimento bibliografico in 52.582 parole: tutti i numeri sono dichiarazioni dell'autore",
+    "fonte anche commerciale (newsletter, quiz, programma a pagamento icanstudy.com)",
+    "montaggio di piu' video, non un discorso unico",
+    "trascrizione automatica non ripulita, refusi conservati e non corretti"
+  ],
+  "correzione_collaterale": {
+    "pagina": "second-brain-vault/wiki/sources/Source_Giovanni_Beggiato_Guida_Agenzia_AI.md",
+    "cosa": "stesso file sorgente: corrette le soglie del close rate (60/30/20, erano schiacciate in una sola al 30%) e integrato materiale nuovo verificato sulla trascrizione grezza; segnalate 4 aggiunte delle rielaborazioni AI non dette dal relatore (Ikigai, Ignorance Tax, tabella a fasce released capacity, soglia hiring a 10.000 euro/mese)"
+  }
+}

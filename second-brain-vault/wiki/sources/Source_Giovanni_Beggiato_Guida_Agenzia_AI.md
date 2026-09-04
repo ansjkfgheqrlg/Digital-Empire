@@ -1,7 +1,7 @@
 ---
 Type: SOURCE
 Status: Active
-Tags: #agenzia-ai #agency-scalping #pricing #client-acquisition #fulfillment #gohighlevel #hiring #max17
+Tags: #agenzia-ai #agency-scalping #pricing #client-acquisition #fulfillment #gohighlevel #hiring #released-capacity #max17
 Created: 2026-09-04
 Last updated: 2026-09-04
 ---
@@ -65,7 +65,23 @@ dal tempo dell'operatore. Tre modelli contrattuali sovrapposti: pay in full, pay
 (es. cliente paga solo l'ad-spend, l'agenzia rischia sul resto), retainer misto.
 
 **Golden rule del close rate al 30%**: percentuale di lead che arrivano in sales call e pagano.
-Sopra 30% → prezzo troppo basso; sotto 30% → prezzo troppo alto o vendita debole.
+Le soglie esatte sono **tre**, non due (verificate sulla trascrizione grezza il 2026-09-04 —
+correzione di una versione precedente di questa pagina che le schiacciava in un'unica soglia al
+30%):
+
+| Close rate | Lettura |
+|---|---|
+| **60%** | prezzo **troppo basso** rispetto all'offerta |
+| **30%** | **golden rule** per un service business — l'equilibrio giusto |
+| **20%** | prezzo troppo alto **oppure** "siete delle scarpe a vendere" |
+
+> "se il vostro close rate e' piu' alto quindi ipotizziamo che il vostro close rate sia del **60%**
+> significa che il vostro prezzo e' troppo basso rispetto all'offerta se invece ipotizziamo questo
+> sia del **20%** vuol dire che o siete delle scarpe a vendere o che il prezzo e' troppo alto [...]
+> golden rule per service business dovreste essere sul **30%**"
+
+Valore di riferimento diverso per altri modelli: per una **community** il close rate atteso e' del
+**2-4%**, non del 30%.
 
 ## Il Sistema di Fulfillment — Flowchart Whimsical Reale
 
@@ -96,6 +112,73 @@ assumere. Grafico mostrato a mano (`frame-1875.png`): il salario dell'imprendito
 temporaneamente dopo l'assunzione del CTO prima di risalire quando il fatturato scala. Chiusura:
 l'agenzia AI e' quasi sempre uno step intermedio verso business piu' scalabili (SaaS, community,
 digital product), non l'ultimo business.
+
+## Integrazione 2026-09-04 — materiale nuovo dallo stesso file consegnato da Max
+
+Max ha consegnato il documento `Agency 2026 (1).md`, che contiene alla **riga 1** la trascrizione
+grezza di questo stesso video e alle **righe 3-364** tre **rielaborazioni** ("manuali strategici")
+non presenti quando questa pagina e' stata scritta. Il contenuto qui sotto **non e' un nuovo
+studio del video**: e' il risultato di un controllo differenziale, in cui ogni elemento nuovo e'
+stato **cercato nella trascrizione grezza** prima di essere accettato. Dettaglio del metodo e
+degli esiti in `runs/max18-doc-justin-sung/coverage.md`.
+
+### Dati di mercato (verificati nella trascrizione, Eurostat + grafico LinkedIn)
+
+**Italia** (popolazione 16-74 anni): **8%** usa l'AI generativa **per lavoro** → terzultimo posto in
+Europa (il **92%** non la usa); **6,4%** per **educazione** → quintultimo; **12,8%** per **uso
+personale** → penultimo.
+
+**Mondo:** **84%** della popolazione (6,8 miliardi) **non ha mai usato l'AI**; **16%** sono "free
+chatbot user" (1,3 miliardi); **~0,3%** paga un piano (~25 milioni); **0,04%** usa coding
+scaffold/strumenti agentici (**2-5 milioni di persone**). E' il dato che l'autore usa per dire che
+chi lavora con gli agenti oggi non e' "in anticipo", e' **molto** in anticipo.
+
+### "Released capacity" — il cuore economico dell'offerta (era assente da questa pagina)
+
+L'agenzia non vende software, vende **capacita' produttiva liberata**:
+
+```
+100 dipendenti × 5 ore risparmiate/settimana = 500 ore/settimana
+500 ore × €10/ora                            = €5.000/settimana di "freed capacity"
+```
+
+Precisazione esplicita del relatore, importante e spesso persa nelle rielaborazioni: **questi non
+sono soldi in mano all'imprenditore — sono soldi *potenzialmente* cash.** Da qui il salto di ruolo
+dell'agenzia da fornitore di tool a partner di **change management**: se non aiuti l'azienda a
+decidere **cosa farci** con le 500 ore liberate, il valore percepito resta basso.
+
+### Altri elementi verificati e nuovi per questa pagina
+
+- **Le 7 fasi** dello scheletro operativo: Lead Generation → Sales Funnel → Sales Call → Onboarding
+  → CRM Management → Delivery/Fulfillment → Upselling.
+- **I 3 pilastri** aziendali: **Promozione** (acquisizione) · **Prodotto** (delivery) · **Daily
+  Ops**. La competenza sui *processi* sopravvive all'obsolescenza dei tool.
+- **Niche hopping** (nel testo: "nich hopping") — nominato come errore ricorrente, con la
+  conseguenza dichiarata: si resta sotto il tetto dei **~€3.000/mese** perche' non si accumula mai
+  competenza verticale sufficiente.
+- **Testing delle nicchie**: l'errore comune e' chiedere a Claude/ChatGPT "trovami le 5 nicchie
+  migliori" e fermarsi li'. Va usato **solo come step iniziale**, seguito da ricerca di mercato e
+  testing reale sul campo.
+- **Speed to lead — meccanica esatta**: Meta Ads → l'utente compila un form → l'AI chiama **prima
+  l'agenzia/il commerciale**, che **preme un tasto** sul telefono → il sistema mette in contatto col
+  lead in tempo reale → poi parte il workflow automatico di messaggi. E' il dettaglio che mancava
+  alla voce "taking in charge" gia' presente in questa pagina.
+
+### ⚠️ Cosa NON e' del relatore — aggiunte delle rielaborazioni
+
+Le tre rielaborazioni sono **testi prodotti da AI**, non trascrizioni. Questi elementi **non
+compaiono nella trascrizione grezza** e **non vanno attribuiti a Beggiato**:
+
+| Elemento | Occorrenze nella trascrizione |
+|---|---|
+| **"Ikigai"** come framework di scelta della nicchia | **0** — il relatore dice "3 P", l'Ikigai e' un innesto della rielaborazione |
+| **"Ignorance Tax" / "Experience Capital"** | **0** — formule della rielaborazione |
+| Tabella a fasce della released capacity (€30/ora → €60.000/mese; €50/ora → €100.000/mese) | esiste **solo** l'esempio a €10/ora; le fasce alte sono estrapolazione |
+| "Non assumete finche' non raggiungete i €10.000/mese" **come soglia di hiring** | €10.000/mese compare, ma in **altri contesti** (fatturato dei clienti, timeline dei "primi successi") — la soglia di assunzione non risulta enunciata cosi' |
+
+Le tre rielaborazioni si **contraddicono anche fra loro** sul close rate (il primo manuale scrive
+"30-40%", gli altri due "60%"): la trascrizione dice **60%**, ed e' cio' che ha permesso di
+correggere la tabella delle soglie piu' sopra.
 
 ## Key Quotes
 
@@ -180,6 +263,11 @@ non verificate indipendentemente da Digital Empire, salvo dove esplicitamente se
   framework LTV/CAC e la regola del close rate al 30% citati in questo video sono direttamente
   applicabili come benchmark nei report della Tesoreria DE quando si valuta il pricing dei propri
   servizi.
+- [[sources/Source_Justin_Sung_Guida_Apprendimento|Justin Sung — Guida completa all'apprendimento
+  (max18)]] — **stessa fonte fisica**: entrambe le conoscenze arrivano dal file `Agency 2026 (1).md`
+  consegnato da Max (Beggiato alle righe 1-364, Justin Sung alla riga 366). La verifica incrociata
+  fatta in quella sessione ha prodotto la correzione delle soglie del close rate su questa pagina e
+  la sezione "Integrazione 2026-09-04".
 - [[sources/Source_MiK_Cosentino_Micro_Personal_Brand|MiK Cosentino — Come creare un
   MICRO-PERSONAL BRAND da milioni di euro (batch max17, v16)]] — stesso lotto, tema complementare:
   Cosentino copre acquisizione via organico/personal-brand in profondita', questo video la tratta

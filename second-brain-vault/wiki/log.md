@@ -1688,3 +1688,51 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   "Agency Operations & Scaling".
 - MEMORY EMPIRE: `memory-empire/knowledge/rvpRQD43wdY/` chiuso (ingest-manifest.json, atoms.json,
   contenuto-integrale.md) — path live confermato in questa sessione, non le cartelle morte B-033.
+
+## 2026-09-04 (EMPIRE STUDIO — Justin Sung, fonte TESTUALE, chiude l'ultimo buco di EMP-QQ2R)
+
+- INGEST: `Agency 2026 (1).md` riga 366 — guida completa all'apprendimento di **Justin Sung**,
+  4 capitoli (retrieval, encoding, mind mapping, skill acquisition). **NON è un video: è un
+  documento di testo consegnato da Max.** Zero frame estratti, **zero frame guardati** — il video
+  "Justin Sung 4h55" non è disponibile e il link non esiste nel repo, esattamente come dichiarato
+  in `EMP-QQ2R` §3. Copertura reale: **285.119/285.119 caratteri = 100% del testo letto**
+  (12 blocchi, nessuno saltato). Copia integrale **byte-identica** verificata con round-trip SHA-256.
+- RUN: `empire-studio/runs/max18-doc-justin-sung/` — `contenuto-fonte.md` (copia integrale +
+  mappa capitoli con offset misurati), `analisi.md` (9 sezioni), `atoms.json` (**88 KA**, campo
+  `frame` sempre `null` perché non applicabile), `coverage.md` (dichiarazione NO-FINTO esplicita
+  sulla natura testuale).
+- CONTROLLO QUALITÀ INTERNO: lo script di build degli atomi calcola l'offset cercando nel testo
+  reale un'**ancora** letterale, e scarta l'atomo se non la trova. **Ha intercettato 2 miei errori
+  su 88** (citazioni fatte a memoria invece che dal testo), corretti prima della scrittura su disco.
+  Esito: 88/88 atomi con offset verificato, zero citazioni non verificate.
+- WIKI: 1 pagina creata (`sources/Source_Justin_Sung_Guida_Apprendimento.md`), cross-link a 4 pagine
+  esistenti verificate ([[tools/Tool_Conoscenza_Empire_Agente]], [[tools/Tool_Memory_Wiki_Bridge]],
+  [[sources/Source_Giovanni_Beggiato_Guida_Agenzia_AI]], [[sources/Source_Nate_Herk_Claude_Second_Brain_Levels]]).
+  `index.md`: nuova sezione "Learning Science & Metodo di Studio".
+- WIKI (correzione su pagina esistente): `sources/Source_Giovanni_Beggiato_Guida_Agenzia_AI.md`
+  aggiornata — lo stesso file conteneva la trascrizione grezza Beggiato (riga 1) e **tre
+  rielaborazioni AI** (righe 3-364) non viste prima. Materiale nuovo **verificato sulla trascrizione
+  grezza** prima di essere accettato: dati Eurostat/mercato, **released capacity**, le 7 fasi, i 3
+  pilastri, niche hopping col tetto dei ~€3.000/mese, meccanica esatta dello speed to lead.
+  **Corrette le soglie del close rate**: sono tre (60% troppo basso / 30% golden rule / 20% troppo
+  alto), la pagina le schiacciava in una sola. Segnalate come **NON dette dal relatore** quattro
+  aggiunte delle rielaborazioni (Ikigai, "Ignorance Tax", la tabella a fasce della released capacity,
+  la soglia di hiring a €10.000/mese) — zero occorrenze nella trascrizione.
+- CONSIGLI (7, tutti verificati con `Grep` prima di essere scritti, **nessuna patch applicata**
+  — perimetro `EMP-QQ2R` Fase 1 = studio): **zero learning science in tutto l'ecosistema di
+  conoscenza di DE** (gli unici match su `**/SKILL.md` sono falsi positivi: costo dei modelli, UX
+  writing, chunking di date); `book-to-skill` non ha nessuno step di **emphasis/backbone** ed eredita
+  in blocco il raggruppamento dell'autore; **contraddizione interna** fra `book-to-skill` ("Generate
+  chapter *summaries*") e `conoscenza-empire`/`content-forge` ("mai riassunti / never summarizes");
+  **`atoms.json` non ha archi** (schema senza relazioni, `atomizer.py` senza `edge|relates_to|
+  cluster`) mentre il catalogo agenti dichiara un knowledge-graph agent che li costruirebbe — DE
+  produce mappe di **livello 1**, quelle che Sung dichiara inutili; Empire Studio non ha uno stage di
+  **digestione/consolidamento**; **PACER** come triage di ingestione oggi assente; il **theory
+  overload** spiega il dato già misurato da `peso_skill.py` e dà un criterio per la Fase 2 di
+  `EMP-QQ2R` (applicare i consigli **1-2 alla volta**, non tutti insieme).
+- MEMORY EMPIRE: `memory-empire/knowledge/justin-sung-learning-guide/` chiuso
+  (`ingest-manifest.json`, `atoms.json`, `contenuto-integrale.md`) — path live dentro
+  `empire-studio/`, non le cartelle morte B-033.
+- NOTA FINE-RIGA: `log.md` e `index.md` verificati **LF puro** su disco prima di scrivere
+  (0 CRLF, misurati byte per byte), non CRLF come indicherebbe la regola generica — preservato
+  lo stato reale, coerente con quanto già trovato e documentato in CP-20260904-003.
