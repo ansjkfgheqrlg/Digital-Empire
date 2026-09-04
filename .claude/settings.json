@@ -132,6 +132,16 @@
             "statusMessage": "EMPERATOR — dottrina integrale..."
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 scripts/sveglia_max.py",
+            "timeout": 15,
+            "statusMessage": "messaggio di Gael..."
+          }
+        ]
       }
     ],
     "Stop": [
