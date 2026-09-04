@@ -1,3 +1,62 @@
+## 📕 2026-09-04 — GAEL+CLAUDE: TASK-KDP-FIX-W2 riverificata per intero. 5 gate su 6 chiusi, FIX-1 aspetta Gael — CP-20260904-002/003
+
+**Sessione fermata da Gael, tutto salvato e pushato. Questo blocco dice esattamente da dove si riprende.**
+
+**Fatto oggi, tutto verificato rieseguendo il codice, non leggendo le note:**
+- **`Proof_of_Murder` riparato**: era a **111 pagine reali contro un minimo di 115**, quindi
+  invendibile. Ora **116 pagine**, `kdp pacchetto` esce 0 = COMPLETO. +1.148 parole vere su
+  5 capitoli, due delle quali hanno chiuso buchi che erano gia' nel libro consegnato (Nate
+  sospeso e reintegrato senza niente in mezzo; l'arco di Diane risolto 7 capitoli dopo la sua
+  scena). 193 test verdi.
+- **I 6 gate di TASK-KDP-FIX-W2 rimisurati uno per uno**: FIX-2/3/4/5/6 **PASS**
+  (5 pacchetti su 5 a exit 0; 0 falsi positivi trattino; stima pagine errore max **1,7** su un
+  limite di 3; magazzino 8 argomenti liberi con dati veri).
+- **FIX-4 era tornato ROSSO** su The_Winter_Term (8 avvisi trattino) e nessuno se n'era
+  accorto: il suo `validazione.json` era del **25 agosto**, precedente al fix, e quel libro non
+  era mai stato riconsegnato. Riconsegnato, ora 0. **Un fix su un validatore non ripulisce i
+  verdetti gia' scritti.**
+- **Corretto un mio errore**: avevo accusato FIX-5 di sbagliare di 5,5 pagine. Falso: avevo
+  letto la vecchia riga `@320wpp` che `assembla` stampa ancora accanto alla stima buona.
+  Corretto CP-20260904-002 invece di lasciarlo mentire. Il difetto vero, molto piu' piccolo,
+  e' quella riga → **B-055**.
+
+**🔴 FIX-1 E' L'UNICO APERTO E NON E' CHIUDIBILE DA UNA SESSIONE.** `libri_pubblicati/`
+contiene solo `.gitkeep`, **0 ASIN**. Stato libro per libro, dichiarato come chiede il gate:
+
+| Libro | Pagine | Cosa manca |
+|---|---|---|
+| The_Ninth_Winter | 119 | **niente: caricabile su KDP adesso** |
+| The_Quiet_Hours | 118 | **niente: caricabile su KDP adesso** |
+| The_Second-Hand_Spellbook | 119 | **niente: caricabile su KDP adesso** |
+| Proof_of_Murder | 116 | copertina (unico bloccante), poi upload |
+| The_Winter_Term | 116 | copertina (unico bloccante), poi upload |
+
+**Tre libri su cinque sono pronti da caricare senza altro lavoro.** La task non e' ferma
+perche' manca codice: e' ferma perche' nessuno ha aperto KDP. Le 2 copertine non sono
+generabili qui (nessuna API immagini, profilo Arena non autenticato). Task lasciata
+**in_corso e non "fatto"**: il gate chiede `libri_pubblicati/` non vuota, e segnarla fatta
+con la cartella vuota sarebbe un PASS finto.
+
+**⏸️ PARCHEGGIATO PER ORDINE DI GAEL:** `the-coven-of-lost-ember` e' a **15/24 capitoli,
+22.227 parole**, con outline completa, prompt copertina pronto e riassunti aggiornati fino al
+cap 8. Prossimo capitolo da scrivere: **cap_16**. Gael ha detto di non scrivere libri e di
+lavorare sulle task, quindi il libro resta fermo li', **non abbandonato**: il gate `kdp blocco`
+passa (media 1.598 parole) e i capitoli 9-15 sono committati. Va scritto a **~1.700
+parole/capitolo**, non 1.600, o atterra sul bordo dei 115.
+
+**RIPRESA DA (in quest'ordine, Gael ha chiesto di essere interpellato fra una task e l'altra):**
+1. **FIX-1, che e' sulle sue mani**: 2 copertine dai prompt gia' pronti + upload dei 3 libri
+   pubblicabili + `kdp pubblicato <slug> --asin B0XXXXXXXX --prezzo X.XX`. Al primo ASIN
+   TASK-KDP-FIX-W2 si chiude.
+2. **TASK-KDP-5LIBRI-W2 e' bloccata da una contraddizione da sciogliere con Gael**: chiede
+   5 libri completi, ma Gael ha ordinato di non scrivere libri. O da' il via, o la task va
+   ridefinita, o si salta.
+3. **TASK-LANCI-ECO-W2 non l'ha ancora aperta nessuno da questa parte**, MA i checkpoint del
+   2026-09-03 (CP-20260903-009, "L3 architettura chiusa") dicono che un'altra sessione ci ha
+   lavorato: **verificare cosa esiste gia' prima di ricostruire.**
+
+---
+
 ## ⚠️ COORDINAMENTO — 2026-09-04 11:xx — NUOVO LOTTO max18: 9 video + 1 documento
 
 Max ha consegnato **9 link YouTube nuovi** (tutti verificati unici, nessun doppione col lotto
