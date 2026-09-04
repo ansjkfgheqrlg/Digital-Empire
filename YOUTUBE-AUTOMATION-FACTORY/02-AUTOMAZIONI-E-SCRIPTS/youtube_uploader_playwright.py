@@ -19,6 +19,50 @@ def upload_mock(video_path, metadata, thumbnail_path):
     print("Video ID Generato: mock-playwright-vid-12345")
     return {"status": "success", "video_id": "mock-playwright-vid-12345"}
 
+def _gestisci_step_monetization(page):
+    """Step "Monetization" del wizard di upload — CAUSA REALE del fallimento del 2026-09-04.
+
+    Su un canale monetizzato (come @Legami d'amore) Studio inserisce un tab in piu' fra
+    "Details" e "Visibility". Quel tab ha un menu a tendina vuoto e il messaggio rosso
+    "Your video needs a monetization setting": finche' non si sceglie, il pulsante Next resta
+    DISABILITATO. Il vecchio codice cliccava Next a vuoto, usciva dal ciclo e finiva a cercare
+    il pannello Visibility che non era ancora comparso (timeout su [class*='visibility']).
+
+    Si sceglie "On", non "Off": regola permanente di Max (2026-09-03) — ogni video deve
+    guadagnare. E' la stessa scelta che ads_on_after_upload() applica dopo l'upload.
+    Ritorna True se ha impostato qualcosa, False se lo step non c'era (canale non monetizzato).
+    """
+    try:
+        avviso = page.get_by_text("needs a monetization setting", exact=False)
+        if avviso.count() == 0:
+            return False
+    except Exception:
+        return False
+
+    print("[MONETIZZAZIONE] Step obbligatorio trovato: imposto le pubblicita' su ON.")
+    try:
+        page.locator("ytcp-select, tp-yt-paper-dropdown-menu").first.click(timeout=8000)
+        page.wait_for_timeout(1200)
+        page.locator("tp-yt-paper-item, ytcp-menuitem").filter(
+            has_text="On").first.click(timeout=8000)
+        page.wait_for_timeout(1500)
+    except Exception as e:
+        print("[MONETIZZAZIONE] Menu a tendina non aperto come previsto: %s" % e)
+        return False
+
+    # Scelto "On", Studio chiede l'autocertificazione sui contenuti. Per i video di questo
+    # canale (psicologia relazionale, consigli) nessuna categoria si applica: "None of the
+    # above" e' la risposta onesta, la stessa gia' usata da ads_on_after_upload().
+    try:
+        if page.get_by_text("Inappropriate language", exact=False).count() > 0:
+            print("[MONETIZZAZIONE] Questionario contenuti: nessuna categoria applicabile.")
+            page.get_by_text("None of the above", exact=False).first.click(timeout=8000)
+            page.wait_for_timeout(1500)
+    except Exception as e:
+        print("[MONETIZZAZIONE] Questionario non gestito automaticamente: %s" % e)
+    return True
+
+
 def ads_on_after_upload(page, video_id):
     """Attiva 'Watch Page ads & YouTube Premium' per un video appena caricato.
     Trovato dal vivo il 2026-09-03 (ordine di Max): Google lascia le pubblicita' SPENTE
@@ -212,6 +256,10 @@ def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
                         break
                 except Exception:
                     pass
+                # Uno step del wizard puo' essere bloccante finche' non lo si compila
+                # (Monetization su canale monetizzato): va risolto PRIMA di cliccare Next,
+                # altrimenti il Next e' disabilitato e il click non produce nulla.
+                _gestisci_step_monetization(page)
                 print(f"Clic su pulsante Avanti/Next (Passo {step+1})...")
                 try:
                     page.locator(
@@ -364,7 +412,9 @@ def main():
         res = upload_via_playwright(args.video, metadata, args.thumbnail, args.profile)
         
     print(f"Risultato: {json.dumps(res)}")
-    return 0
+    # Prima qui c'era un `return 0` fisso: un upload fallito usciva con codice 0 e sembrava
+    # riuscito a chi guardava solo l'exit code (successo il 2026-09-04 su video-06).
+    return 1 if res.get("status") == "error" else 0
 
 if __name__ == "__main__":
     sys.exit(main())
