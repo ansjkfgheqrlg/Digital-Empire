@@ -1840,3 +1840,135 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   fallisce sempre; (c) nuova skill `promo-video` da costruire sopra l'MCP Higgsfield; (d) tetto di
   spesa scritto nel codice (mai sopra 50 crediti senza via libera di Max), perche' l'MCP non ne ha
   uno nativo; (e) candidare Digital Empire allo Startup Grant ElevenLabs prima di pagare.
+
+## 2026-09-04 (EMPIRE STUDIO — chiusura ciclo 1Dyld3y-V7Y, batch max18 v03, sentinella max18-v03)
+- INGEST: "Dammi 36 Minuti e Ti Faro' Risparmiare MILIONI di Token su Claude" di Riccardo Belli
+  Contarini (Martes AI), 36m01s, 20 capitoli ufficiali. Ripresa di una run gia' avviata: frame,
+  scenes e transcript erano gia' su disco, la sentinella gemella e' morta per **limite di sessione
+  dell'account** mentre iniziava a guardare i frame — non per un suo errore. Nessuna estrazione
+  rifatta.
+- COVERAGE: **138/138 frame unici guardati (100%)** su 721 frame densi @3s; **950/950 righe di
+  `clean_transcript.txt` lette (100%)**, dalle 7.616 righe del `.vtt` grezzo. 12 frame ingranditi
+  con crop+upscale LANCZOS (27 ritagli aperti) perche' contenevano numeri, tabelle o codice.
+  Strategia opposta a quella di `max17-v16`: la' campionamento rado motivato (talk dal vivo, il
+  contenuto sta nell'audio), qui copertura totale motivata (screen-recording denso, le cifre della
+  lavagna **non vengono mai dette a voce**).
+- VINCOLO DICHIARATO: il `video.mp4` gia' scaricato e' **640x360 av1** (verificato con `ffprobe`),
+  quindi i PNG non possono contenere piu' informazione di cosi'. Provato crop+upscale 4x-8x: le
+  lettere non ci sono nei pixel. Regola applicata: **una card e' citata testualmente solo se letta
+  in una vista ravvicinata**; dalle viste d'insieme ho preso solo la struttura. **CAUSA TROVATA, e
+  non e' YouTube: e' un default nostro.** `empire-studio/scripts/frame_extractor.py:133` ha
+  `--height default=360` e la riga 51 lo passa a yt-dlp come `bv*[height<=360]` — e' l'Impero a
+  chiedere il formato peggiore, per ogni video. Sensato per i talk dal vivo, sbagliato per gli
+  screen-recording dove il contenuto **e'** il testo a schermo. Il flag `--height 720` esiste gia'
+  e nessuno lo usa. Non applicato: e' una decisione di costo (piu' banda, frame piu' pesanti), non
+  una svista da correggere di nascosto.
+- TRE ERRORI DI LETTURA MIEI, trovati e messi a verbale invece che nascosti: "ADESSO, SUBITO" era
+  **"GRATIS, SUBITO"**; "-19.000 a sessione" era **"-47.000"** (26.000 GitHub + 21.000 Slack);
+  "IL MODELLO ADATTO" era **"IL MODELLO GIUSTO"**. In tutti e tre i casi **l'audio confermava
+  plausibilmente la lettura sbagliata**: e' il modo tipico in cui una sagoma di parola a bassa
+  risoluzione produce una citazione falsa che suona giusta.
+- CONTROLLO SULLA CIFRA DEI TOKEN (appunto lasciato dalla gemella, verificato e non preso per
+  buono): **confermato, e la prova sta nel video stesso**. La cifra "tra i 1.500 e 3.000 token per
+  pagina PDF" e' detta a [00:17:41]; cinque secondi prima, in `frame-353.png`, si vede la fonte:
+  una ricerca Google a cui risponde un **AI Overview**, con il chip di citazione **"GitHub"** sulla
+  frase stessa e le voci di dettaglio citate a **Reddit r/ClaudeAI** e **Medium**. Catena reale:
+  relatore -> AI Overview -> GitHub/Reddit/Medium, **nessuna documentazione primaria Anthropic**.
+  Riportata ovunque come "detta dal relatore" (KA-037), mai come dato verificato. Nota di equita':
+  l'autore **non nasconde** la fonte (12 secondi a schermo), semplicemente non dice a voce che sta
+  citando un riassunto generato da un'AI — difetto di etichettatura, non di occultamento. Tenuta
+  separata la cifra "3-4x sui PDF", che e' dichiarata come misurazione **propria** dell'autore.
+- TROVATA PIU' INTERESSANTE: nel pannello `/usage` che il relatore mostra a 3:36 per dimostrare le
+  sue tesi, Claude Code stesso consiglia "**Usa /compact a meta' attivita'**" — cioe' esattamente il
+  comando che il video definisce "la cavolata piu' grossa". L'autore non lo nota e non lo confuta.
+  Per DE il conflitto non e' "uno YouTuber contro l'Impero", e' **il relatore contro il vendor**.
+- ATOMI: 47 in `atoms.json`, con **96 archi tipizzati** (`discende-da`, `quantifica`, `sostituisce`,
+  `contraddice`, `corregge`, `motiva`, `specializza`, `istanza-di`, `generalizza`), validati a
+  macchina: **0 archi rotti, 0 atomi orfani, 0 atomi senza ancora letterale**. E' il primo
+  `atoms.json` di DE con relazioni fra atomi — difetto noto dell'Impero. Compatibilita' scelta a
+  ragion veduta: **il file resta un array piatto** come `max17-v01-artem/atoms.json` e le relazioni
+  stanno **dentro** ogni atomo, cosi' i lettori del vecchio schema continuano a funzionare.
+  Errore mio corretto qui: 14 archi puntavano a ID inesistenti (avevo scritto relazioni verso atomi
+  "DE" che non esistono, perche' le osservazioni sulla codebase **non sono atomi del video**) —
+  rimossi o ripuntati, validazione rieseguita.
+- WIKI: 1 pagina creata (`sources/Source_Riccardo_Belli_Risparmiare_Token_Claude_Code.md`),
+  cross-link a 5 pagine esistenti ([[sources/Source_Riccardo_Belli_Claude_Codex_Setup]] — stesso
+  autore, verdetto opposto; [[sources/Source_Giovanni_Beggiato_Company_Brain_Karpathy]] — seconda
+  fonte DE sullo stesso pattern Karpathy, ma questo video **sbaglia i fatti sull'autore**;
+  [[sources/Source_Jay_E_Agentic_OS_Claude5]] — da cui viene la soglia 150 righe di
+  `peso_skill.py`; [[concepts/Emperator_Gerarchia_Forze]] — haiku/sonnet/opus;
+  [[tools/Tool_Memory_Wiki_Bridge]]), `index.md` aggiornato nella sezione "Dev Tooling &
+  Cross-Model Review". Fine-riga verificati prima di scrivere: `log.md` e `index.md` sono **LF
+  puro** (0 CR), scritto in LF.
+- CONSIGLI (grep-verificati, nessuna patch applicata — Fase 1 = solo studio):
+  (a) **`/compact`**: DE ha una raccomandazione **opposta** scritta in
+  `.claude/skills/agente-max/knowledge/K05-context.md:531` ("tenete Autocompact su on... potrete
+  sempre usare /compact manualmente"), e in tutta `company/Memory` "compact" ha **0 occorrenze** —
+  l'Impero non ha una posizione. Serve una decisione di Max, da scrivere come ADR, non una patch
+  di iniziativa;
+  (b) **gap piu' preciso trovato**: `scripts/peso_skill.py` pesa il **corpo** di ogni `SKILL.md`
+  (costo di **attivazione**) ma la stringa `description` ha **0 occorrenze** nel file — cioe' non
+  misura mai la voce che si paga **a ogni sessione per tutte le skill installate**, che e'
+  esattamente quella di cui parla il video. Estensione suggerita: una seconda colonna che sommi i
+  gettoni delle sole `description`;
+  (c) **hook PDF->testo assente ma infrastruttura pronta**: `pdftotext` = 0 occorrenze in
+  `scripts/`, `.claude/agents/`, `.claude/skills/empire-studio/`, `company/`; pero'
+  `.claude/settings.json` dichiara gia' `PreToolUse`. Miglior rapporto valore/sforzo del video per
+  un Impero che ingerisce PDF di continuo;
+  (d) **caveman, distinguo onesto**: DE ha il plugin in `SKILL & Agenti/caveman-extracted/` e
+  `emperator.md:1098` raccomanda `caveman:cavecrew-investigator`; il video **non boccia quello**,
+  boccia il *Caveman Proxy* (compressore di contesto). Resta vero il punto (b): le ~7 skill
+  `caveman:*` pagano la `description` a ogni sessione;
+  (e) **conferme, che valgono quanto i gap**: `CLAUDE.md` root = **153 righe** (<200 gia'
+  rispettato), **48 `CLAUDE.md`** nel repo (pattern per-cartella gia' adottato), root `.mcp.json`
+  con **1 solo server** e `autoStart: false`, gerarchia haiku/sonnet/opus gia' allineata; la soglia
+  "~500 file" sui grafi **non tocca DE**, che conta **166.534 file**, quindi `graphify` resta
+  giustificato;
+  (f) il consiglio piu' trasferibile non e' tecnico: "**ogni 'ricordati di' e' un candidato hook**",
+  perche' una regola scritta a parole nel CLAUDE.md resta un prompt e il modello puo' non
+  eseguirla. Domanda aperta per l'Impero: quali regole di prosa meritano di diventare
+  deterministiche.
+- TRAPPOLA EVITATA, documentata perche' si ripresentera': `frame-334` mostra un diagramma ASCII
+  pieno di numeri appetitosi (`p = 0.004`, `-30%`, `-17,9%`, `-8,5%`) che sembrano misure di questo
+  video. Non lo sono: appartengono a un **altro** lavoro dell'autore sui plugin, usato qui solo
+  come esempio della tecnica ASCII-first. Quei numeri **non sono entrati in `atoms.json`**. Un
+  ingest distratto li avrebbe attribuiti con tanto di timestamp, e sarebbero sembrati verificati.
+- MEMORY EMPIRE: `empire-studio/memory-empire/knowledge/1Dyld3y-V7Y/` chiuso (ingest-manifest.json,
+  atoms.json, contenuto-integrale.md) — path live dentro `empire-studio/`, non le cartelle morte
+  fuori (B-033).
+- REVISIONE 2 (stesso giorno, dopo richiamo di Max: "credi che tu non ti sia studiato abbastanza
+  bene Higgsfield... guarda tutto"). Scansione completa: **60 pagine di higgsfield.ai** lette con
+  Playwright sul DOM renderizzato. **Due conclusioni della revisione 1 erano sbagliate e sono state
+  corrette nel dossier 28**, dichiarate come CORREZIONE e non riscritte di nascosto:
+  (1) **Higgsfield SOSTITUISCE Fliki** — esiste `AI Long Video Generator`, che dichiara alla lettera
+  il nostro caso d'uso ("Build YouTube and long-form content, faceless channels, full episodes").
+  Script in ingresso, video multi-scena da minuti, audio nativo, character lock, scene extension,
+  fino a 12 reference per scena, upscale 4K, export MP4. Conto verificato: un video da 10 minuti in
+  modello misto (8 clip Kling 3.0 1080p + 60 immagini Soul 2.0) costa ~71 crediti = €2,78, quindi
+  ~16 video al mese col piano Plus. Il mio errore era aver calcolato il video come se fosse tutto
+  video, quando Max aveva detto immagini + qualche clip + voce + sottotitoli.
+  (2) **I caroselli restano su Arena** — ho guardato le slide di Max in `Lancio corso skill beast/
+  Page/caroselli - Agency`: sono un sistema di design coerente (tag pre-headline in pillola, grana,
+  arancione <10% come accento, grotesque + corsivo serif, card argento, numerazione 2/8, firma),
+  allineato alle Brand Guidelines CCM. Nano Banana Pro genera la fotografia di una slide, non un
+  layout. Avevo confrontato sul prezzo quando l'asse vero era il tetto di qualita'.
+- SCOPERTA PRINCIPALE: **il Text-to-Speech di Higgsfield usa ElevenLabs v3 come modello di default**
+  (con MiniMax, Seed Speech, Vibe Voice). Comprando Higgsfield le voci ElevenLabs sono gia' dentro,
+  pagate in crediti Higgsfield. ElevenLabs si restringe a 3 compiti: speech-to-speech sulla
+  recitazione di Max, clonazione professionale certificata, agente telefonico.
+- MAPPA MODULI (verificata, non dedotta): Long Video Generator, Popcorn (storyboard 8 scene),
+  Supercomputer (AI Employees con skill, Orchestrator, ragionamento su Claude Opus/Sonnet 4.6,
+  30+ connettori Slack/Drive/Notion, workflow ricorrenti), Canvas a nodi con template riusabili,
+  Marketing Studio (6 formati, carica il prodotto dalla URL, 100+ avatar, layer modificabili),
+  AI Ad Generator (URL -> annuncio in 2 minuti), Layers (immagine piatta -> livelli modificabili,
+  testo compreso), Genjutsu, Mixed Media, Fashion Factory, Soul ID, MCP/CLI, API Cloud, plugin
+  Photoshop/After Effects/Premiere/DaVinci/**Figma**/Blender, Games con deploy.
+  Lacune reali: **nessun generatore di sottotitoli nativo** (/subtitles e' 404) e **costo crediti
+  del TTS non pubblicato** — unico numero non verificabile da fuori, dichiarato come tale.
+- CONSIGLI: (a) `quality_gate.py:93` resta da riparare comunque, la migrazione non lo risolve;
+  (b) nuova skill `video-youtube-higgsfield` al posto del ramo Fliki; (c) **Layers e' la cosa da
+  provare sui caroselli** — rigenerare solo il testo di una slide Arena gia' perfetta invece di
+  ritirare i dadi sul layout; (d) riparare il ramo Arena resta prioritario, e' li' che si vince;
+  (e) plugin Figma da valutare sul comparto visivo dei siti.
+- WIKI: `wiki/tools/Tool_Higgsfield_ElevenLabs.md` aggiornata alla revisione 2. Report professionale
+  pubblicato come artifact: https://claude.ai/code/artifact/24fb95f3-f393-4566-b014-2b8e307d2335

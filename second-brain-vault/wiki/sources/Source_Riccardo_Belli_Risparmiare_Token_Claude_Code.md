@@ -239,7 +239,19 @@ risparmia") **non tocca DE**, che conta **166.534 file** — l'uso di `graphify-
 in `CLAUDE.md` è ampiamente giustificato.
 *Verifiche: `wc -l CLAUDE.md`; `find . -name CLAUDE.md | wc -l`; `find . -type f | wc -l`.*
 
-**C6 — Il consiglio più trasferibile non è tecnico.**
+**C6 — Trovato studiando questo video: l'Impero si acceca da solo sugli screen-recording.**
+Non viene dal contenuto del video ma dall'averlo studiato. `empire-studio/scripts/frame_extractor.py`
+scarica **per default a ≤360p**: riga 133 `ap.add_argument("--height", type=int, default=360)`,
+riga 51 `"format": f"bv*[height<={height}]/b[height<={height}]/worst"`. Non è un limite di
+YouTube: **è DE che chiede il formato peggiore**, per ogni video, sempre (il manifest di
+`max18-v02` lo conferma: `--interval 3 --height 360`). Per un talk dal vivo va benissimo; per un
+tutorial come questo, dove il contenuto **è** il testo a schermo, significa che metà del video è
+illeggibile e va ricostruita dall'audio. Il flag `--height 720` esiste già e nessuno lo usa.
+**Proposta, non applicata**: scegliere l'altezza in base al tipo di video invece che a un default
+fisso. È una decisione di costo (più banda, frame più pesanti), quindi va presa, non fatta di
+nascosto.
+
+**C7 — Il consiglio più trasferibile non è tecnico.**
 "Ogni 'ricordati di' è un candidato hook" è il criterio che separa una regola che
 sopravvive da una che si dimentica. Molte regole di DE oggi vivono come prosa in `CLAUDE.md` e
 in `emperator.md` — cioè come **prompt**, che il modello può non eseguire. Il video dice

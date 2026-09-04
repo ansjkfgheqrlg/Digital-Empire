@@ -68,10 +68,30 @@ Conseguenze misurate, non supposte:
   ravvicinata. Dalle viste d'insieme ho preso solo la struttura (quante colonne, di che
   colore, in che ordine), mai il testo.
 
-**Non ho riscaricato il video a risoluzione maggiore.** Il brief lo vietava esplicitamente
-(l'estrazione è la parte cara) e `yt-dlp` non risulta sul PATH della shell di questa sessione
-(`timeout 60 yt-dlp -F …` → "No such file or directory"). Segnalato come **problema aperto**,
-non risolto: vedi "Cosa resta aperto".
+**Non ho riscaricato il video a risoluzione maggiore** (il brief lo vietava: l'estrazione è la
+parte cara).
+
+### La causa NON è YouTube: è un default della nostra pipeline
+
+Prima ipotesi mia, sbagliata: "yt-dlp non è sul PATH della shell delle sentinelle"
+(`timeout 60 yt-dlp -F …` → "No such file or directory"). Vero, ma **non è la causa**.
+
+La causa vera è in casa nostra, `empire-studio/scripts/frame_extractor.py`:
+
+```
+riga  42:  def download_video(url, run_dir: Path, height=360):
+riga  51:      "format": f"bv*[height<={height}]/b[height<={height}]/worst",
+riga 133:      ap.add_argument("--height", type=int, default=360)
+riga 155:      print(f"[frame] scarico video a <= {args.height}p ...")
+```
+
+**È l'Impero a chiedere esplicitamente ≤360p a yt-dlp**, per default, per ogni video. Il
+manifest di `max18-v02` conferma che è la prassi:
+`"trace": "… frame_extractor.py --interval 3 --height 360 …"`.
+
+La scelta ha senso per i talk dal vivo (dove il contenuto è nell'audio e 360p basta per
+riconoscere una scena) ed è sbagliata per gli screen-recording, dove il contenuto **è** il
+testo a schermo. Il flag esiste già: `--height 720`. Nessuno lo usa.
 
 ## Tre errori di lettura miei, trovati e corretti in corso d'opera
 
@@ -231,11 +251,18 @@ rieseguita.
 
 ## Cosa resta aperto
 
-1. **La sorgente a 360p.** Se l'Impero vuole poter citare le schermate di Claude Code
-   carattere per carattere, la pipeline di ingest deve chiedere a `yt-dlp` un formato ≥720p
-   per i video di tipo screen-recording. Oggi non lo fa, e `yt-dlp` non è sul PATH della shell
-   in cui girano le sentinelle: **entrambe le cose andrebbero sistemate insieme**, altrimenti
-   la prossima run cade nello stesso punto.
+1. **La sorgente a 360p — causa individuata, fix a una riga.**
+   `empire-studio/scripts/frame_extractor.py:133` ha `--height` con `default=360`, e la riga 51
+   lo passa a yt-dlp come `bv*[height<=360]`. Non è un limite di YouTube: **è l'Impero che
+   chiede il formato peggiore**. Proposta (non applicata, Fase 1): far scegliere l'altezza in
+   base al **tipo** di video invece che a un default fisso — 360 per i talk dal vivo, **720 per
+   gli screen-recording**, che è il caso in cui il contenuto è il testo a schermo. Costa più
+   banda e frame più pesanti, quindi è una decisione di costo, non una svista da correggere di
+   nascosto. Finché resta com'è, **ogni futuro video-tutorial su Claude Code sarà studiabile
+   solo dall'audio**, e questo studio ne è la dimostrazione.
+   *(Secondario e separato: `yt-dlp` non è sul PATH della shell in cui girano le sentinelle —
+   verificato in questa sessione. Non è la causa del 360p, ma impedisce a una sentinella di
+   ri-scaricare alcunché di propria iniziativa.)*
 2. **La cifra 1.500-3.000 token/pagina non è stata falsificata, solo tracciata.** Se serve
    davvero, va misurata in casa: `Read` su un PDF di N pagine e confronto del contatore.
 3. **Nessuna patch applicata** (Fase 1 = studio). I consigli grep-verificati sono nella pagina
