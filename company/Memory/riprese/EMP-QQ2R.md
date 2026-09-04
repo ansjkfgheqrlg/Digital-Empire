@@ -114,9 +114,28 @@ manca il framework 6-metodi/DIY-DWY-DFY/regola 30% close-rate; `client-handover`
 `delivery-playbook` mancano scope-creep/kickoff/SOP; zero menzione GoHighLevel in nessuna
 skill; zero "cold reading"/"taking in charge".
 
-**Resta un solo video: `Justin Sung 4h55`, di cui non ho l'indirizzo da nessuna parte.**
-Cercato in tutto il repo (2026-09-04): nessun link salvato, solo nome+durata nei checkpoint
-del 2026-09-02. Serve che Max lo dia, o un indizio (canale/titolo) per cercarlo.
+~~`Justin Sung 4h55`~~ — **CHIUSO 2026-09-04**, CP-20260904-004. Non serviva il link: Max ha
+consegnato un documento (`Pictures/materiale/Agency 2026 (1).md`, 510KB) che contiene la guida
+integrale. Trattato come **fonte testuale, non video**: zero frame visti, dichiarato ovunque
+(coverage, wiki, manifest `video_guardato: false`, 88 atomi con `frame: null`). Letto il
+100% dei 285.119 caratteri, copia verificata byte-identica con SHA-256.
+Wiki: `Source_Justin_Sung_Guida_Apprendimento.md`.
+
+**FASE 1 DI EMP-QQ2R: COMPLETA.** Tutti i video del lotto max17 sono studiati.
+
+**Tre cose trovate mentre lo studiava, e due riguardano noi:**
+1. Le rielaborazioni AI dentro il documento contengono affermazioni **mai fatte dal relatore**
+   ("Ikigai" 0 occorrenze nella trascrizione, "Ignorance Tax" 0, tabelle estrapolate da un solo
+   esempio). Marcate in wiki come non dette, non cancellate.
+2. **Errore nostro corretto**: la pagina wiki di Beggiato schiacciava tre soglie di close rate
+   in una sola. Ora dice il vero: 60% troppo basso / 30% regola d'oro / 20% troppo alto.
+3. **Il difetto di fondo, ed e' il piu' importante**: i nostri `atoms.json` **non hanno archi**
+   e `atomizer.py` non conosce `edge`/`relates_to`/`cluster`. Nel vocabolario di Sung l'Impero
+   produce **mappe di livello 1**, quelle che lui dimostra essere inutili. E' l'intervento a
+   resa piu' alta per la Fase 2. Inoltre `cf-knowledge-graph-agent` **dichiara** di costruire
+   "edges, cluster" che nel codice non esistono, e `book-to-skill` genera "summaries" mentre
+   la regola di casa e' "mai riassunti": stessa classe del pattern gia' segnalato in §3
+   (capacita' dichiarate e non implementate). Da controllare a tappeto in Fase 2.
 
 ---
 
