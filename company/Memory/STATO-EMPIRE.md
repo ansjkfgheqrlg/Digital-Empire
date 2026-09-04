@@ -1,3 +1,22 @@
+## ⚠️ COORDINAMENTO — 2026-09-04 11:xx — NUOVO LOTTO max18: 9 video + 1 documento
+
+Max ha consegnato **9 link YouTube nuovi** (tutti verificati unici, nessun doppione col lotto
+max17) + un documento da 510KB su disco in `Pictures/materiale/Agency 2026 (1).md`.
+
+**Il documento risolve il buco di Justin Sung**: contiene la guida completa di Justin Sung
+sull'apprendimento (retrieval, encoding, mind mapping, skill acquisition) — il video "4h55"
+che il repo non aveva mai avuto il link. Contiene anche materiale sull'agenzia AI di Beggiato,
+gia' coperto da `max17-v17` — quella parte non va rifatta.
+
+**Lotto max18** — run da creare, `runs/max18-vNN-*`:
+`RnoC5IlOUhs` · `LCNk5e5EiCA` · `1Dyld3y-V7Y` · `140FuW7b9pk` · `RnNSRF4s9nk` ·
+`JTn5pqm9ecM` · `O2IDhISyy8Y` · `DI5aWJiFAt8` · `NmoOZVTrTXA`
+
+Max 3 sentinelle in parallelo (regola EMP-QQ2R). Ordine di Max invariato: **Fase 1 = solo
+studio**, Fase 2 (implementazione dei consigli) resta rimandata.
+
+---
+
 ## 👑 2026-09-04 — EMPERATOR: FASE 1 EMP-QQ2R COMPLETA (salvo 1 video bloccato su Max)
 
 Chiuso anche `rvpRQD43wdY` (Beggiato, guida agenzia, **4h17, il video piu' grosso di tutto
