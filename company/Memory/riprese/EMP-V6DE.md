@@ -32,27 +32,41 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
   Una regola senza prova (frame + minuto) **non entra**.
 - **Lezione A4/L00 chiusa end-to-end** (commit `6f56588b`): appunti, report a sei voci,
   3 regole estratte **e già applicate** alla fabbrica, riverificate 3/3, test 11/11 verdi.
+- **Lezione A4/L01 chiusa end-to-end** (CP-20260904-008): 4 regole, 3 applicate (binario A),
+  1 in attesa del gate A4. **Registro: 7 regole, tutte a norma, 6/7 applicate.**
+- **Il nastro gira**: `corso_prepara.py` lanciato il 2026-09-04 alle 21:48 ha già scaricato e
+  trascritto **6 lezioni** di A4. Non va rilanciato: guarda `runs/corso-aitubepro/*/stato.json`.
 
 **Cosa è cambiato nella fabbrica finora:**
 - nuovo `04-SKILLS-E-REFERENCE/references/scelta-strumenti.md` (criterio di scelta, prima assente)
 - `03-AGENTI-E-RUOLI/supporto/self-improver.md` §8 — sorveglianza settimanale col tetto di tempo
 - `03-AGENTI-E-RUOLI/operatori/niche-scout.md` §8 — cataloghi AI come fonte di nicchie
+- `03-AGENTI-E-RUOLI/operatori/transcript-collector.md` §8-§9 — sufficienza del materiale
+  (conta le parole, sotto soglia pretende ≥2 fonti esterne) e via di riserva coi due guasti distinti
+- `03-AGENTI-E-RUOLI/capi/capo-strategia.md` §8 — leva multilingua col suo costo dichiarato
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **166 lezioni su 167 da studiare.** Fatta solo `A4/L00`.
-- `corso_prepara.py` **scritto ma mai eseguito**: è il prossimo comando da lanciare.
+- **165 lezioni su 167 da studiare** (1,2% fatto). Fatte `A4/L00` e `A4/L01`; A4 al 9,5% (2/21).
+- `corso_prepara.py` **eseguito il 2026-09-04**: 6 lezioni di A4 già pronte a nastro.
 - **DURATE.md non esiste**: il censimento delle durate previsto dal piano non è stato fatto
   (la durata si legge lezione per lezione durante lo scaricamento, e finisce in `stato.json`).
 - **CONFLITTI.md non esiste ancora**: nessun conflitto trovato nella prima lezione.
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
+**A4/L02 «Scrivere e (ri)scrivere testi originali con A.I»** (`81e4e28a`, già trascritta): è la
+lezione che chiude il cerchio aperto da L01 e riguarda `script-writer` e `regolatore-originalita`.
+
 ```bash
 cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"
-# 1. prepara in sottofondo TUTTA la categoria (scarica + trascrive, ~20 lezioni)
+# le lezioni pronte si vedono qui (passo = 2-trascritto):
+#   runs/corso-aitubepro/<lesson_id>/stato.json
+# per ognuna, prima delle frame: serve --input con l'URL preso da mappa.json
+PYTHONIOENCODING=utf-8 py -3 frame_extractor.py --run "corso-aitubepro/<id>" --interval 4 --input "<url>"
+PYTHONIOENCODING=utf-8 py -3 scene_detector.py  --run "corso-aitubepro/<id>" --threshold 6.0 --interval 4 --max-gap 24
+# se il nastro si e' fermato, si rilancia (idempotente, salta le lezioni gia' fatte):
 PYTHONIOENCODING=utf-8 py -3 corso_prepara.py --categoria "Metodo AI Tube"
-# 2. mentre gira, si studiano le lezioni già pronte, in ordine
 ```
 
 Poi, per ogni lezione: appunti → report a sei voci → script regole → applicare il binario A.
@@ -75,6 +89,16 @@ B1 Masterclass 2026 (7) → B2 Crypto (10) → poi le altre.
 - **Google Automation Platinum (181 lezioni) resta FUORI perimetro** — ordine di Max.
 
 ## 6. TRAPPOLE — errori già fatti, non rifarli
+
+- **Non fidarsi dell'elenco di `scene_detector.py` su una lezione operativa.** Il 2026-09-04 ha
+  dichiarato «schermo fermo per 96 secondi» mentre passavano cinque schermate diverse, fra cui il
+  secondo strumento della lezione: la miniatura in scala di grigi confonde le pagine a fondo
+  bianco (delta 2.0 fra due siti completamente diversi). È stato aggiunto il presidio `--max-gap`,
+  che **riduce** la finestra cieca (96 s → 24 s) ma non la azzera: **campionare sempre a mano**
+  dentro le finestre lunghe.
+- **`frame_extractor.py` sulle lezioni del corso vuole `--input`**: il video è già su disco, ma
+  senza URL lo script esce con «nessun URL». L'indirizzo sta in `mappa.json`. (`corso_prepara.py`
+  non scrive `ingest.json`.)
 
 - **Il modello del trascrittore NON si scarica da solo su questa macchina.** Tre fallimenti di
   fila: uno con `CAS Client Error` (trasferimento accelerato di HuggingFace), due con
@@ -124,7 +148,11 @@ B1 Masterclass 2026 (7) → B2 Crypto (10) → poi le altre.
 - `.claude/agents/emperator.md` (riga `Assetto` nel battito), `scripts/emperator_boot.py` (impronta percorso)
 - `.gitignore` (media dello studio + profilo browser)
 
+- `SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/scene_detector.py` (presidio `--max-gap`)
+- `company/Memory/studi/aitubepro/regole/registro.py` (`--da-applicare` ora interroga la fabbrica)
+
 **Commit di riferimento:** `3f7b3136` (motore + baseline) · `6f56588b` (prima lezione chiusa)
+· CP-20260904-008 (seconda lezione chiusa + due strumenti riparati)
 
 ---
 

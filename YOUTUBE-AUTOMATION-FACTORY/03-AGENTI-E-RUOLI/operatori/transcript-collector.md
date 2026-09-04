@@ -43,7 +43,9 @@ Quel file è il pacchetto di lavoro del reparto copy.
 ## 4. Playbook
 1. Controlla se il transcript esiste già in `transcripts/` (non riscaricare inutilmente).
 2. Lancia yt-dlp per italiano e inglese.
-3. Se non esce nulla: segnala a `capo-ricerca` e **fermati**. Si passa al candidato B.
+3. Se non esce nulla: **prima la via di riserva** (§9), poi — solo se fallisce anche quella —
+   segnala a `capo-ricerca` dichiarando **quale** dei due guasti è accaduto e **fermati**.
+   Si passa al candidato B.
 4. Pulisci il `.vtt` e ricava il testo continuo.
 5. Scrivi `<videoId>.DA-SCRIVERE.md` con transcript + vincoli.
 6. Passa il pacchetto al reparto COPY.
@@ -69,3 +71,57 @@ nostro script, il confronto con la fonte è possibile.
 - [[capo-ricerca]] — firma il video da cui si parte
 - [[script-writer]] — consuma questo materiale
 - [[regolatore-originalita]] — confronta il nostro script con questo transcript
+
+---
+
+## 8. Sufficienza del materiale (A4-L01-01 · imparata dallo studio, 2026-09-04)
+
+**Raccogliere il transcript non basta: devi dire se basta.**
+
+La fabbrica pretende **2.220 parole** di script finito (`apex7_orchestrator.py:146`,
+`PAROLE_MINIME_SCRIPT`). Un video di cronaca da 5 minuti ne porta circa 700. Finora il pacchetto
+`<videoId>.DA-SCRIVERE.md` allegava il transcript **senza contarlo**: chi scrive riceveva un
+ordine impossibile e aveva tre sole strade — allungare con aria, ripetere, o **inventare**. Su un
+video di cronaca, inventare significa scrivere il falso su persone reali.
+
+Da adesso, in cima al pacchetto ci vanno queste due righe, sempre:
+
+```
+- Parole del transcript sorgente: <N>
+- Sufficienza: BASTA / NON BASTA (servono 2.220 parole di script finito)
+```
+
+**Se NON BASTA** — cioè sotto ~1.500 parole di transcript — il pacchetto non parte finché non
+contiene **almeno 2 fonti esterne** sul tema, ognuna con:
+
+| campo | perché |
+|---|---|
+| link | si deve poter riaprire |
+| testata / autore | una fonte anonima non è una fonte |
+| data | una notizia di ieri e una di tre anni fa non valgono uguale |
+| passaggio utile | cosa aggiunge che nel transcript non c'è |
+
+Dove si cercano: il tema su un motore di ricerca, testate riconoscibili, comunicati ufficiali,
+pagine dell'ente o della persona di cui si parla. **Mai un altro video dello stesso canale
+sorgente**: raddoppierebbe la dipendenza da chi stiamo copiando invece di ridurla.
+
+Le fonti restano nel pacchetto, sotto il transcript, in una sezione `## Fonti esterne`. Chi
+scrive **deve** usarle: è quello che rende lo script nostro invece che una parafrasi.
+
+Se le fonti non si trovano, **dillo e fermati**: il tema non regge, si passa al candidato B.
+Un tema su cui non esiste materiale è un tema su cui non abbiamo niente da dire.
+
+## 9. La via di riserva (A4-L01-02 · imparata dallo studio, 2026-09-04)
+
+`yt-dlp` che non restituisce sottotitoli può voler dire **due cose diverse**, e finora le
+trattavamo uguale:
+
+| guasto | cosa significa | cosa si fa |
+|---|---|---|
+| **strumento muto** — yt-dlp assente, bloccato, limitato, video con restrizione d'accesso | i sottotitoli **esistono**, non li stiamo prendendo noi | si prova la **via di riserva**: un servizio terzo che estrae i sottotitoli dal link pubblico (`savesubs.com` e simili, formato TXT/SRT/VTT). È un ripiego manuale, non un'automazione: yt-dlp resta la via principale perché non passa da terzi e lascia il file come prova di provenienza |
+| **video senza sottotitoli** | non c'è niente da prendere, da nessuna parte | inutile insistere: si dichiara e si passa al candidato B |
+
+**Dichiara sempre quale dei due è stato**, con la riga esatta dell'errore. Un «transcript non
+disponibile» generico ha fatto scartare candidati buoni per un guasto nostro.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L01-scaricare-testi/`.

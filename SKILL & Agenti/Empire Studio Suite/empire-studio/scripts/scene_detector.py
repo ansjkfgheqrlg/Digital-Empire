@@ -22,6 +22,20 @@ Metodo (deterministico, nessuna dipendenza esterna oltre Pillow)
 2. Differenza = media dei valori assoluti pixel-per-pixel, normalizzata 0..100.
 3. Se differenza >= soglia -> il frame e' una schermata NUOVA: si tiene.
 4. Il primo e l'ultimo frame si tengono SEMPRE (apertura e chiusura del video).
+5. PRESIDIO (--max-gap): se sono passati piu' di N secondi dall'ultimo frame tenuto,
+   se ne tiene uno comunque, anche se sotto soglia.
+
+Perche' il presidio esiste (difetto misurato il 2026-09-04)
+----------------------------------------------------------
+La miniatura in scala di grigi confonde pagine web a fondo bianco: un motore di
+ricerca, un foglio di calcolo e il Blocco note hanno luminosita' media quasi
+identica. Sulla lezione A4/L01 del corso AI TUBE PRO lo script ha dichiarato
+"schermo fermo per 96 secondi" mentre in quella finestra passavano CINQUE
+schermate diverse, fra cui il secondo strumento della lezione e il file di
+risultato: quasi due minuti di tutorial persi in silenzio.
+Il presidio non risolve la cecita' della metrica, ma le mette un tetto: oltre
+--max-gap secondi non si puo' piu' dichiarare "non e' successo niente" senza
+che qualcuno abbia guardato.
 
 Onesta' della copertura (regola NO-FINTO)
 -----------------------------------------
@@ -91,6 +105,13 @@ def main():
         default=2.0,
         help="secondi tra un frame denso e il successivo (default 2.0)",
     )
+    ap.add_argument(
+        "--max-gap",
+        type=float,
+        default=30.0,
+        help="presidio: tieni un frame almeno ogni N secondi anche se sotto soglia "
+             "(default 30; 0 = disattivato, comportamento vecchio)",
+    )
     args = ap.parse_args()
 
     base = Path(__file__).resolve().parent.parent
@@ -107,6 +128,7 @@ def main():
 
     tenuti = []
     rif = None  # firma dell'ultimo frame TENUTO
+    ultimo_tenuto = None  # indice dell'ultimo frame tenuto, per il presidio --max-gap
     for i, f in enumerate(frames):
         try:
             sig = firma(f)
@@ -126,7 +148,20 @@ def main():
 
         d = 100.0 if rif is None else differenza(rif, sig)
         ultimo = i == len(frames) - 1
-        if rif is None or d >= args.threshold or ultimo:
+        scaduto = (
+            args.max_gap > 0
+            and ultimo_tenuto is not None
+            and (i - ultimo_tenuto) * args.interval >= args.max_gap
+        )
+        if rif is None or d >= args.threshold or ultimo or scaduto:
+            if rif is None:
+                motivo = "apertura"
+            elif d >= args.threshold:
+                motivo = "cambio"
+            elif scaduto:
+                motivo = "presidio"
+            else:
+                motivo = "chiusura"
             tenuti.append(
                 {
                     "frame": f.name,
@@ -134,9 +169,11 @@ def main():
                     "secondi": round(i * args.interval, 1),
                     "timestamp": mmss(i * args.interval),
                     "delta": round(d, 2),
+                    "motivo": motivo,
                 }
             )
             rif = sig
+            ultimo_tenuto = i
 
     # quanti duplicati rappresenta ogni frame tenuto, e per quanti secondi resta
     for n, t in enumerate(tenuti):
@@ -152,10 +189,16 @@ def main():
         "riduzione_percentuale": round(riduzione, 1),
         "soglia": args.threshold,
         "intervallo_s": args.interval,
-        "metodo": "grayscale 64x64, differenza media assoluta vs ultimo frame tenuto",
+        "max_gap_s": args.max_gap,
+        "tenuti_per_presidio": sum(1 for t_ in tenuti if t_.get("motivo") == "presidio"),
+        "metodo": "grayscale 64x64, differenza media assoluta vs ultimo frame tenuto,"
+                  " con presidio a tempo (--max-gap)",
         "nota_copertura": (
             "Nessun frame cancellato: tutti restano in frames/. I frame non elencati "
-            "sono sotto soglia rispetto al precedente tenuto, cioe' schermate gia' viste."
+            "sono sotto soglia rispetto al precedente tenuto. ATTENZIONE: 'sotto soglia' "
+            "NON garantisce 'schermata gia' vista' — la miniatura in scala di grigi "
+            "confonde pagine diverse a fondo bianco. Il presidio (--max-gap) impedisce "
+            "che una finestra piu' lunga di max_gap_s resti senza nessun frame guardato."
         ),
         "frames": tenuti,
     }
@@ -169,22 +212,28 @@ def main():
         "",
         f"- Frame densi estratti (1 ogni {args.interval}s): **{len(frames)}**",
         f"- Frame unici da guardare: **{len(tenuti)}**",
-        f"- Riduzione: **{riduzione:.1f}%** · soglia {args.threshold}",
+        f"- Riduzione: **{riduzione:.1f}%** · soglia {args.threshold} · presidio {args.max_gap}s",
         "",
         "> Nessun frame e' stato cancellato: tutti restano in `frames/`.",
-        "> I frame non elencati qui sono identici (sotto soglia) a un frame gia' elencato.",
+        "> I frame non elencati qui sono **sotto soglia** rispetto a un frame gia' elencato.",
+        "> Sotto soglia non vuol dire identico: la miniatura in scala di grigi confonde pagine",
+        "> diverse a fondo bianco. I frame marcati `presidio` sono tenuti proprio per questo,",
+        "> perche' nessuna finestra resti senza occhi addosso.",
         "",
-        "| # | frame | ts | delta | schermata dura |",
-        "|---|---|---|---|---|",
+        "| # | frame | ts | delta | motivo | schermata dura |",
+        "|---|---|---|---|---|---|",
     ]
     for n, t in enumerate(tenuti, 1):
         d = "ERR" if t.get("delta") is None else f"{t['delta']:.1f}"
         righe.append(
-            f"| {n} | `{t['frame']}` | {t['timestamp']} | {d} | {t['durata_schermata_s']}s |"
+            f"| {n} | `{t['frame']}` | {t['timestamp']} | {d} | {t.get('motivo', '-')} "
+            f"| {t['durata_schermata_s']}s |"
         )
     (run_dir / "scenes.md").write_text("\n".join(righe) + "\n", encoding="utf-8")
 
-    print(f"[scene] OK: {len(tenuti)}/{len(frames)} frame unici (-{riduzione:.1f}%)")
+    n_presidio = sum(1 for t_ in tenuti if t_.get("motivo") == "presidio")
+    print(f"[scene] OK: {len(tenuti)}/{len(frames)} frame unici (-{riduzione:.1f}%)"
+          f" · di cui {n_presidio} tenuti dal presidio")
     print(f"[scene] -> {run_dir / 'scenes.json'}")
     print(f"[scene] -> {run_dir / 'scenes.md'}")
 

@@ -44,8 +44,41 @@ def carica_tutte():
                 r["_file"] = chiave
                 r["_lezione"] = getattr(mod, "LEZIONE", "")
                 r["_fonte_corso"] = getattr(mod, "FONTE", "")
+                r["_verifica"] = getattr(mod, "verifica", None)
                 trovate.append(r)
     return trovate
+
+
+# La fabbrica sta cinque livelli sopra questa cartella:
+# regole/ -> aitubepro/ -> studi/ -> Memory/ -> company/ -> radice del repo
+FABBRICA = os.path.abspath(os.path.join(HERE, "..", "..", "..", "..", "..",
+                                        "YOUTUBE-AUTOMATION-FACTORY"))
+
+
+def stato_applicazione(regole, fabbrica):
+    """Chiede a ogni lezione se la fabbrica rispetta gia' le sue regole.
+
+    Senza questo, `--da-applicare` elencava TUTTE le regole per sempre, comprese quelle
+    gia' entrate: un elenco che non cala non e' un elenco di lavoro, e' rumore. Ogni
+    script-lezione espone `verifica(fabbrica)` che restituisce {id: True/False}; qui
+    quelle risposte vengono raccolte in un colpo solo.
+
+    Una regola il cui script non risponde resta 'ignota': non si dichiara applicata cio'
+    che nessuno ha guardato.
+    """
+    cache, esiti = {}, {}
+    for r in regole:
+        fn = r.get("_verifica")
+        chiave = r.get("_file")
+        if fn is None:
+            continue
+        if chiave not in cache:
+            try:
+                cache[chiave] = fn(fabbrica) or {}
+            except Exception as e:
+                cache[chiave] = {"_errore": str(e)}
+        esiti[r.get("id")] = cache[chiave].get(r.get("id"))
+    return esiti
 
 
 def verifica(regole, filtro=""):
@@ -74,6 +107,10 @@ def main():
     ap.add_argument("--tocca", help="Mostra le regole che riguardano un certo file.")
     ap.add_argument("--da-applicare", action="store_true",
                     help="Regole non ancora entrate nella fabbrica.")
+    ap.add_argument("--fabbrica", default=FABBRICA,
+                    help="Percorso di YOUTUBE-AUTOMATION-FACTORY (default: quella del repo).")
+    ap.add_argument("--tutte", action="store_true",
+                    help="Con --da-applicare: mostra anche le regole gia' applicate.")
     a = ap.parse_args()
 
     regole = carica_tutte()
@@ -98,12 +135,19 @@ def main():
         return 0
 
     if a.da_applicare:
+        esiti = stato_applicazione(vere, a.fabbrica)
         sel = [r for r in vere if r.get("azione") in ("modifica", "nuovo")]
-        print("Regole da applicare: %d (di cui binario B: %d)"
-              % (len(sel), sum(1 for r in sel if r.get("binario") == "B")))
+        if not a.tutte:
+            sel = [r for r in sel if esiti.get(r.get("id")) is not True]
+        applicate = sum(1 for r in vere if esiti.get(r.get("id")) is True)
+        ignote = sum(1 for r in vere if esiti.get(r.get("id")) is None)
+        print("Regole da applicare: %d (di cui binario B: %d) · gia' applicate: %d · non verificabili: %d"
+              % (len(sel), sum(1 for r in sel if r.get("binario") == "B"), applicate, ignote))
         for r in sel:
-            print("  %-16s [%s/%s] %-22s %s" % (r.get("id"), r.get("binario"), r.get("rischio"),
-                                                str(r.get("tocca"))[:22], str(r.get("regola"))[:60]))
+            marca = {True: "FATTA", False: "manca", None: "ignota"}[esiti.get(r.get("id"))]
+            print("  %-16s [%s/%s] %-6s %-22s %s"
+                  % (r.get("id"), r.get("binario"), r.get("rischio"), marca,
+                     str(r.get("tocca"))[:22], str(r.get("regola"))[:60]))
         return 0
 
     # riepilogo

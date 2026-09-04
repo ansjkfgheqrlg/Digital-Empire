@@ -8913,3 +8913,23 @@ registro che non esiste si assomigliano troppo); poi B-049, il percorso di vendi
 **Regola del doppio binario (ADR-024 in arrivo):** il motore in produzione della fabbrica si
 tocca SOLO a gate di categoria superato, con test verdi e un video di prova. Fino ad allora
 le lezioni atterrano su agenti, regolatori e regole — rischio zero sulla produzione.
+
+## 2026-09-04, terzo turno — A4/L01 chiusa, due strumenti nostri riparati (CP-20260904-008)
+
+**Studio AI TUBE PRO (EMP-V6DE):** seconda lezione chiusa end-to-end. 4 regole, 3 applicate
+(binario A: `transcript-collector` §8-§9, `capo-strategia` §8), 1 in attesa del gate A4.
+Registro: **7 regole, tutte a norma, 6 su 7 applicate** — l'unica mancante è di binario B.
+
+**Il buco tappato:** la fabbrica pretendeva 2.220 parole di script partendo da un pacchetto con
+**una sola fonte** (il transcript del video copiato, allegato senza nemmeno contarlo). Un video
+di cronaca ne porta ~700. Chi scriveva poteva solo allungare, ripetere o **inventare**. Adesso
+il pacchetto conta le parole, dichiara BASTA/NON BASTA e sotto soglia pretende ≥2 fonti esterne.
+
+**Due strumenti nostri riparati lavorando:**
+- `scene_detector.py` dichiarava «schermo fermo 96 secondi» mentre passavano 5 schermate diverse
+  (delta 2.0 fra due siti completamente diversi): aggiunto il **presidio a tempo** `--max-gap`.
+- `registro.py --da-applicare` elencava anche le regole già applicate: ora interroga la fabbrica.
+
+**Il nastro gira:** `corso_prepara.py` ha già pronto e trascritto 6 lezioni di A4.
+**Stato studio: 2/167 (1,2%) · categoria A4: 2/21 (9,5%).**
+**RIPRESA DA:** A4/L02 «Scrivere e (ri)scrivere testi originali con A.I» (`81e4e28a`, pronta).

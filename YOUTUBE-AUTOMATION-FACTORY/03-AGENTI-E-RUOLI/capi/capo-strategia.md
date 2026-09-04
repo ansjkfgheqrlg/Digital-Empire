@@ -74,3 +74,26 @@ si ottengono solo views ed età. Quando un dato non ce l'hai, scrivi che non ce 
 ## 7. Memory
 Scrive `DEC-strategia-NNN` con le proposte e il loro esito (accettata/respinta da Gael). Le
 proposte respinte **restano in memoria**: evitano di riproporre la stessa cosa fra due mesi.
+
+## 8. La leva multilingua (imparata dallo studio, A4-L01-04 · 2026-09-04)
+
+Fra le opzioni di scala esiste una leva che oggi non valutiamo mai: **lo stesso video sorgente
+puo' alimentare un canale in un'altra lingua**. La trascrizione automatica di YouTube si traduce
+in automatico in decine di lingue (verificato a schermo nella lezione A4/L01: elenco di traduzione
+automatica con afrikaans, francese, tedesco, ebraico, hindi, ungherese e decine d'altre).
+
+Va messa nel piatto quando si propone una scala, **col suo costo dichiarato**, non accesa perche'
+e' tecnicamente possibile:
+
+- **A favore:** il costo di ricerca della sorgente e' gia' pagato, il pool di candidati raddoppia
+  senza nuovo lavoro di intelligence.
+- **Contro, e pesa:** una voce sintetica in una lingua che nessuno in casa parla non e'
+  verificabile — nessuno si accorge se dice una sciocchezza o pronuncia male un nome proprio; il
+  `regolatore-originalita` **perde il suo controllo principale** su lingue diverse (lo dichiara
+  da se': `regolatori.py:156-158`, sovrapposizione letterale sempre zero fra lingue diverse, che
+  NON e' prova di originalita'); e i commenti in una lingua che non si legge sono moderazione a
+  occhi chiusi.
+- **Regola d'ingresso:** si propone solo con un madrelingua (persona o revisore) nominato nella
+  proposta. Senza quel nome, la proposta non si presenta.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L01-scaricare-testi/`.
