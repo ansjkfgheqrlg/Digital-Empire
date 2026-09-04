@@ -1,0 +1,131 @@
+# EMP-V6DE — Studio corso AI TUBE PRO: 167 lezioni → regole dentro la fabbrica YouTube
+
+- **Codice di ripresa:** `EMP-V6DE`
+- **Aperto:** 2026-09-04
+- **Stato:** APERTO
+- **Chi riprende:** basta dire `EMP-V6DE` in una chat nuova dentro Digital Empire.
+
+---
+
+## 1. IL LAVORO IN UNA FRASE
+
+Studiare **167 lezioni** (AI TUBE PRO 116 + Bonus Esclusivi 51, portale
+`corsi.muccarossa.com`, autore Mirko Delfino) e trasformare ogni lezione in **regole
+eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max il
+2026-09-04: [PIANO-STUDIO-AITUBEPRO](../plans/PIANO-STUDIO-AITUBEPRO.md).
+
+---
+
+## 2. DOVE SIAMO — cosa è FATTO davvero
+
+**Passo zero: CHIUSO.** La catena regge su una lezione vera, quindi regge su 167.
+
+- **Motore di ingestione costruito** (nuovo, non tocca `yt_ingest.py` — ADR-003):
+  - `empire-studio/scripts/corso_ingest.py` — login SSO, mappa, scaricamento a 360p
+  - `empire-studio/scripts/corso_trascrivi.py` — parlato via faster-whisper, ogni riga col minuto
+  - `empire-studio/scripts/corso_prepara.py` — **prepara in blocco** una categoria intera
+- **Mappa completa**: `empire-studio/runs/corso-aitubepro/mappa.json` — 167 lezioni,
+  16 categorie, ogni lezione con identificativo e indirizzo esatto.
+- **Baseline della fabbrica**: `company/Memory/studi/aitubepro/BASELINE.md` — i numeri
+  PRIMA dello studio, per poter dimostrare il delta.
+- **Contratto e registro delle regole**: `studi/aitubepro/regole/schema.py` + `registro.py`.
+  Una regola senza prova (frame + minuto) **non entra**.
+- **Lezione A4/L00 chiusa end-to-end** (commit `6f56588b`): appunti, report a sei voci,
+  3 regole estratte **e già applicate** alla fabbrica, riverificate 3/3, test 11/11 verdi.
+
+**Cosa è cambiato nella fabbrica finora:**
+- nuovo `04-SKILLS-E-REFERENCE/references/scelta-strumenti.md` (criterio di scelta, prima assente)
+- `03-AGENTI-E-RUOLI/supporto/self-improver.md` §8 — sorveglianza settimanale col tetto di tempo
+- `03-AGENTI-E-RUOLI/operatori/niche-scout.md` §8 — cataloghi AI come fonte di nicchie
+
+## 3. COSA È RIMASTO A METÀ
+
+- **166 lezioni su 167 da studiare.** Fatta solo `A4/L00`.
+- `corso_prepara.py` **scritto ma mai eseguito**: è il prossimo comando da lanciare.
+- **DURATE.md non esiste**: il censimento delle durate previsto dal piano non è stato fatto
+  (la durata si legge lezione per lezione durante lo scaricamento, e finisce in `stato.json`).
+- **CONFLITTI.md non esiste ancora**: nessun conflitto trovato nella prima lezione.
+
+## 4. IL PROSSIMO PASSO ESATTO
+
+```bash
+cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"
+# 1. prepara in sottofondo TUTTA la categoria (scarica + trascrive, ~20 lezioni)
+PYTHONIOENCODING=utf-8 py -3 corso_prepara.py --categoria "Metodo AI Tube"
+# 2. mentre gira, si studiano le lezioni già pronte, in ordine
+```
+
+Poi, per ogni lezione: appunti → report a sei voci → script regole → applicare il binario A.
+A fine categoria: `REPORT-CATEGORIA.md`, `APPUNTI-CATEGORIA.md`, gate a 7 condizioni (piano §9).
+
+**Ordine delle categorie** (piano §10): A4 Metodo AI Tube (21) → A6 Viral Mastery (10) →
+B1 Masterclass 2026 (7) → B2 Crypto (10) → poi le altre.
+
+## 5. DECISIONI GIÀ PRESE — non ridiscuterle
+
+- **Doppio binario.** Binario A (agenti, regolatori, reference, regole) si applica **dopo ogni
+  lezione**; binario B (il motore in `02-AUTOMAZIONI-E-SCRIPTS/`) **solo a gate di categoria**,
+  con test verdi e un video di prova. La fabbrica sta producendo video veri: ADR-003.
+- **Modello di trascrizione `base`**, non `small`: i modelli più grandi non si scaricano su
+  questa macchina (vedi trappole). `base` dà 137 parole/minuto, sopra la soglia di 60.
+- **Qualità video 360p.** Verificato: il testo a schermo si legge perfettamente. Su 167
+  lezioni è la differenza fra ~5 GB e ~40 GB.
+- **Le 16 lezioni «Smart Tube» (da smartphone) restano in profondità BRONZO**: sulla nostra
+  fabbrica Python non si trasferisce quasi nulla, ed è dichiarato nel piano.
+- **Google Automation Platinum (181 lezioni) resta FUORI perimetro** — ordine di Max.
+
+## 6. TRAPPOLE — errori già fatti, non rifarli
+
+- **Il modello del trascrittore NON si scarica da solo su questa macchina.** Tre fallimenti di
+  fila: uno con `CAS Client Error` (trasferimento accelerato di HuggingFace), due con
+  `SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC` — firma tipica di un antivirus che ispeziona il
+  traffico cifrato. **Soluzione già in casa:** il modello sta in `modelli/faster-whisper-base/`
+  e `corso_trascrivi.py` lo usa da lì senza toccare la rete. Per aggiungerne un altro:
+  `curl -sSL --retry 8 --retry-all-errors -C - -o model.bin https://huggingface.co/Systran/faster-whisper-<nome>/resolve/main/model.bin`
+  (più `config.json`, `tokenizer.json`, `vocabulary.txt`).
+- **L'indirizzo di una lezione richiede ANCHE la categoria**:
+  `/courses/products/<corso>/modules/<categoria>/lessons/<lezione>`. Senza `modules/` la
+  pagina si apre ma il lettore non carica nulla, e sembra «video assente» quando è solo un
+  indirizzo incompleto. L'indirizzo giusto è già dentro `mappa.json`.
+- **La barra laterale del portale naviga in JavaScript, senza collegamenti.** Non mappare a
+  click: si intercetta la chiamata interna `user-purchase/categories`, che restituisce
+  l'indice completo in un colpo.
+- **⚠️ IL SALVATAGGIO AUTOMATICO DI FINE TURNO METTE IN STAGE TUTTO** (`git add -A`). Il
+  2026-09-04 sono arrivato a un commit con **514 file in stage, compreso il profilo del
+  browser con i cookie della sessione del portale a pagamento**. Escluso in `.gitignore`, ma
+  **controllare `git diff --cached --name-only | wc -l` prima di ogni commit** resta
+  obbligatorio: un push su repo pubblico non si annulla.
+- **Video, frame e profilo browser NON vanno in git** (ADR-013): già esclusi. Il valore dello
+  studio sono appunti, report e regole, che restano versionati.
+- **Il gettone del video scade**: si cattura e si usa subito, una lezione per volta. Mai code.
+
+## 7. IL CONTESTO CHE SERVE ALLA CHAT NUOVA
+
+- **Assetto:** GOD EMPEROR DOOM, dichiarato all'apertura del lavoro.
+- **Blocco ⚠️ COORDINAMENTO attivo** in `STATO-EMPIRE.md`: dice a Gael e Neri quali cartelle
+  non toccare finché questo lavoro è in corso.
+- **Credenziali del portale:** `~/.claude/corso-credenziali.json`, **fuori dal repository**.
+  Nel codice non ci vanno mai (B-020/B-021/B-023).
+- **Due difetti della fabbrica trovati e ancora APERTI di proposito** (in `BASELINE.md`):
+  - **D-1** — `DURATA_MASSIMA_S=600` contro `PAROLE_MINIME_SCRIPT=2220` (=720 s): la fabbrica
+    chiede l'impossibile. I due video del 2026-09-04 durano 826 s e sforano del 38%.
+  - **D-2** — `verifica_qualita()` non è mai invocata dalla catena di produzione: per questo
+    D-1 è rimasto invisibile.
+  **Si chiudono al gate della categoria A6**, con il numero motivato dalla lezione sulla
+  durata ottimale. Non tapparli prima con una toppa scelta a caso.
+
+## 8. FILE TOCCATI
+
+- `SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/corso_{ingest,trascrivi,prepara}.py` (nuovi)
+- `company/Memory/plans/PIANO-STUDIO-AITUBEPRO.md` (v4, approvato)
+- `company/Memory/studi/aitubepro/**` (baseline, regole, prima lezione)
+- `YOUTUBE-AUTOMATION-FACTORY/04-SKILLS-E-REFERENCE/references/scelta-strumenti.md` (nuovo)
+- `YOUTUBE-AUTOMATION-FACTORY/03-AGENTI-E-RUOLI/{supporto/self-improver,operatori/niche-scout}.md`
+- `.claude/agents/emperator.md` (riga `Assetto` nel battito), `scripts/emperator_boot.py` (impronta percorso)
+- `.gitignore` (media dello studio + profilo browser)
+
+**Commit di riferimento:** `3f7b3136` (motore + baseline) · `6f56588b` (prima lezione chiusa)
+
+---
+
+*Chiudi con: `python scripts/checkpoint.py chiudi EMP-V6DE`*

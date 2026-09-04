@@ -236,3 +236,9 @@ second-brain-vault/wiki/.indice-ricerca.json
 # pagamento. In un repo pubblico sarebbe una credenziale regalata (stessa classe di
 # B-020/B-021/B-023, che restano leggibili nella storia git per sempre).
 **/runs/_profilo-corso/
+
+# Modelli di riconoscimento vocale scaricati a mano: 139 MB il piu
+piccolo.
+# In git non ci vanno MAI (ADR-013: un push e' gia' morto a 899 MB). Si riscaricano
+# con il curl documentato in corso_trascrivi.py.
+modelli/
