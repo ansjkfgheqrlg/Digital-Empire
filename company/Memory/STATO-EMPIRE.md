@@ -1,7 +1,7 @@
 ## 👑 2026-09-04 — EMPERATOR: FASE 1 EMP-QQ2R COMPLETA (salvo 1 video bloccato su Max)
 
 Chiuso anche `rvpRQD43wdY` (Beggiato, guida agenzia, **4h17, il video piu' grosso di tutto
-il lotto**) — CP-20260904-002. Formato misto: 2h53 talking-head+lavagna, poi 80min di
+il lotto**) — CP-20260904-003. Formato misto: 2h53 talking-head+lavagna, poi 80min di
 screen-share denso (GoHighLevel CRM, Meta Ads, Whimsical). Campionamento 24/1.928 frame
 (1,2%) concentrato dove serve — dichiarato e motivato, non un taglio di corner. Numeri
 verificati contro la dashboard reale nel video. Wiki:

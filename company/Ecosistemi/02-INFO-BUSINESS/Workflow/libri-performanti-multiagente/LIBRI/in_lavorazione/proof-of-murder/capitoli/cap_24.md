@@ -34,6 +34,22 @@ Maggie took a blank card from the stack Josie kept in the drawer for exactly thi
 
 She underlined it once, then didn't add anything else, because there wasn't anything else that needed saying, and slid the card into the box, right behind her mother's, where it fit like it had always been waiting for a place there.
 
+She was still sitting there when Eleanor Vance let herself in through the front, having apparently decided that the CLOSED sign did not apply to a woman who had taught most of the town to read.
+
+"I didn't want to give you this out there," Eleanor said, "with everybody watching your face."
+
+She put a photograph on the worktable. It was old, the colors gone warm and slightly orange the way they do, and it showed two women in aprons standing in this kitchen in front of an oven that had been replaced twice since, both of them laughing at something outside the frame. One of them was Rose, maybe forty, flour to the elbows. The other was Eleanor, thirty years younger and caught mid laugh with her head thrown back.
+
+"Nineteen ninety four," Eleanor said. "The year she let me help with the Founder's Day order and I ruined nine dozen rolls. She never let me forget it and she never once let me stop helping." She smoothed the photograph flat with two fingers. "I've had it in a drawer since the funeral because I couldn't decide whether it belonged to me or to you. I've decided."
+
+Maggie looked at her mother's face, unguarded and mid laugh and entirely unaware of anything that was coming, and found that it didn't hurt the way she'd braced for. It just was.
+
+"Thank you," she said.
+
+"Put it where you can see it while you work," Eleanor said. "That's what kitchens are for." She patted Maggie's shoulder once, briskly, the way she'd probably patted four decades of shoulders, and let herself out.
+
+Maggie propped the photograph against the flour bin, where the light from the back window would find it every morning at about half past five.
+
 The bell over the front door jingled. She didn't need to look up to know who it was; she'd know that particular unhurried step anywhere by now.
 
 "They're starting the planning meeting for next year's festival at the Grange in twenty minutes," Nate said from the doorway, leaning against the frame in his uniform, no longer suspended, reinstated the week before with what Torres had called, stiffly, "the department's full confidence," which Maggie privately thought was doing a lot of work for four words. "Ed Whitcombe wants you on the new oversight committee. Something about a woman who reads ledgers better than anybody else in this county."

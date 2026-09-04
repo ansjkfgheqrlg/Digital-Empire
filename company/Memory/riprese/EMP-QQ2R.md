@@ -103,7 +103,7 @@ Roberts/Rizzo, stesso id+durata esatti, non solo titolo simile.
 nella lista sorgente, non nel motore di ingest. Da controllare quando si torna sull'ingest,
 non ora (Fase 1 = studio).
 
-~~`rvpRQD43wdY` (Beggiato, guida agenzia, 4h17)~~ — **CHIUSO 2026-09-04**, CP-20260904-002.
+~~`rvpRQD43wdY` (Beggiato, guida agenzia, 4h17)~~ — **CHIUSO 2026-09-04**, CP-20260904-003.
 Formato misto: 2h53 talking-head+lavagna Excalidraw, ultimi 80min screen-share denso
 (GoHighLevel CRM, Meta Ads, Whimsical). Campionamento 24/1.928 frame (1,2%), concentrato
 sullo screen-share (39% delle scene uniche dentro il capitolo GoHighLevel, che e' solo il
@@ -126,7 +126,7 @@ del 2026-09-02. Serve che Max lo dia, o un indizio (canale/titolo) per cercarlo.
 2. ~~v14 (Vishen/Master Storyteller)~~ — **FATTO**, CP-20260903-019.
    ~~v12, v13~~ — non servivano, doppioni di Roberts/Rizzo già chiusi.
 3. ~~v16 (MiK Cosentino)~~ — **FATTO**, CP-20260904-001. **Lotto v01-v16 chiuso per intero.**
-4. ~~Beggiato-guida-agenzia 4h17~~ — **FATTO 2026-09-04**, CP-20260904-002. Il video piu'
+4. ~~Beggiato-guida-agenzia 4h17~~ — **FATTO 2026-09-04**, CP-20260904-003. Il video piu'
    grosso del lotto e' chiuso.
 5. **BLOCCATO SU MAX: Justin Sung 4h55.** Nessun link nel repo. Fase 1 e' altrimenti
    COMPLETA — tutto il resto e' studiato. Serve solo l'indirizzo del video (o l'ok a
