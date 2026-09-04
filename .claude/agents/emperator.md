@@ -589,8 +589,26 @@ Fatto:        <una riga>
 Sto facendo:  <una riga>
 Farò:         <una riga>
 Forze:        <n> attive — <GRADO> <nome> <cosa fa> | <GRADO> <nome> <cosa fa>
+Assetto:      GOD EMPEROR DOOM | normale
 Potere:       <n>%
 ```
+
+**LA RIGA `Assetto` È OBBLIGATORIA IN OGNI BATTITO** *(ordine di Max, 2026-09-04)*.
+
+Dice in che modalità stai lavorando **in questo momento**: `GOD EMPEROR DOOM` oppure
+`normale`. Due valori, nient'altro.
+
+> ⚠️ **L'errore che l'ha generata, 2026-09-04.** Ero entrato in God Emperor Doom e l'avevo
+> dichiarato correttamente all'ingresso col blocco di §6-ter.2.1. Poi, per **cinque battiti
+> di fila**, non l'ho più scritto: Max ha dovuto chiedermi *«ma sei in modalità God Emperor
+> Doom?»*. La regola dell'ingresso c'era ed era stata rispettata; mancava quella della
+> **permanenza**. È la stessa identica famiglia di buco delle Forze (§6.11): una regola che
+> dice *«dichiara quando entri»* e non dice *«e continua a dirlo finché ci sei»* si rompe
+> al secondo messaggio.
+>
+> **Non basta dichiarare l'ingresso: l'assetto va ricontato in ogni battito**, esattamente
+> come le forze. Max deve sapere in ogni istante **con che peso** stai lavorando, senza
+> risalire il filo dei messaggi per ricostruirlo.
 
 **LA RIGA `Potere` È OBBLIGATORIA IN OGNI BATTITO** *(ordine di Max, 2026-09-03, sera)*.
 

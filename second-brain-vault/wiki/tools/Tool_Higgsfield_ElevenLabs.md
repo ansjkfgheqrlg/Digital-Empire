@@ -31,6 +31,7 @@ valore.
 | **Canvas** | Editor a nodi, piu' modelli nello stesso grafo, template riutilizzabili tra campagne |
 | **Marketing Studio** | 6 formati. Incolli la URL e il prodotto si carica da solo con logo, colori e copy. 100+ avatar. Layer modificabili |
 | **AI Ad Generator** | URL -> annuncio finito in 2 minuti, 9 modalita' |
+| **Vibe Motion** | Motion design da testo. Kinetic captions, infografiche, **HEX/RGB esatti** (il nostro `#fb4604` alla lettera), **safe zone social** per i sottotitoli, curve di easing, upload di loghi e SVG, render 4K. L'uscita e' un **asset modificabile, non un video piatto**: un template si riusa N volte cambiando solo il testo. E' la macchina dei 102 corti al mese |
 | **Layers** | Immagine piatta -> **livelli modificabili, testo compreso**. Relight, inpaint, decomposizione |
 | **Audio** | TTS, Voice Change, Translate. **ElevenLabs v3 come modello di default**, piu' MiniMax, Seed Speech, Vibe Voice |
 | **Soul ID / Character** | Personaggio costante fra luci, angoli e stile. Soul 2.0 a 0,12 crediti a immagine |
@@ -56,17 +57,34 @@ crediti del Text-to-Speech non pubblicato — unico numero non verificabile dall
    giugno) e AI Act articolo 50 (dal 2 agosto, obbligo di dichiarare l'AI dentro la
    conversazione). Il flusso vocale va costruito sul lead caldo che ha gia' risposto in Preventa.
 
-## Numeri chiave
+## Il conto al volume reale di DE (revisione 4)
 
-| | Higgsfield Plus | ElevenLabs Creator |
+Volume dichiarato da Max: **70 video lunghi al mese** (cadenza 3-2-3-2, 2 giorni di stop),
+**102 corti** (3 al giorno, 6 una volta a settimana), **3.000 chiamate** (100 al giorno).
+Totale 172 video e 904 minuti finiti al mese.
+
+| | Mese | Anno |
 |---|---|---|
-| Prezzo | €59 mensile, **€47 annuale** | $22 mensile, $18,33 annuale |
-| Quota | 1.200 crediti/mese (€0,039 l'uno) | 121.000 crediti/mese |
-| Video | Kling 3.0 1080p 8 cr/5s · Seedance 2.0 1080p 45 cr/5s · Veo 3.1 1080p 29 cr/4s | — |
-| Immagini | Soul 2.0 0,12 cr · Nano Banana Pro 2 cr | — |
-| Voce | TTS incluso (ElevenLabs v3), costo da misurare | 1 credito per carattere, Voice Changer 1.000 cr/min |
-| Chiamate | non le fa | ~€0,21 per chiamata da 2 minuti |
+| Higgsfield — scenario medio, 35.514 crediti | €1.496 | €17.952 |
+| ElevenLabs — Pro piu' eccedenza, telefonia e LLM | €617 | €7.404 |
+| **TOTALE** | **€2.113** | **€25.356** |
+| Con tasso di riprova 1,3× invece di 2× | €1.604 | €19.248 |
 
+**Due regole d'acquisto che il listino nasconde:**
+1. **Mai Team ne' Scale di Higgsfield.** Sono i crediti **piu' cari** (€0,065 e €0,060) perche' il prezzo e' per posto con minimo cinque. Il credito piu' economico e' Ultra 9.000 a €0,030.
+2. **I piani ElevenAgents sono lineari a $0,08 al minuto.** Salire di livello non fa risparmiare un centesimo sulle chiamate: si prende **Pro $99**, il piu' basso che copra i crediti voce. Business costerebbe **$510 in piu' al mese** per lo stesso servizio.
+
+**Da comprare:** Ultra 3.000 (€99) piu' ElevenLabs Pro ($99) come **mese di taratura**, poi si
+sale ai numeri misurati. Calcolatore: `PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py`.
+
+**Incognite aperte:** costo in crediti del TTS Higgsfield (decide se i 700 minuti di voce dei
+video lunghi restano li' o vanno su ElevenLabs) e costo reale di un progetto Vibe Motion.
+
+## Tariffe unitarie
+
+Kling 3.0 1080p 8 cr/5s · Seedance 2.0 1080p 45 cr/5s · Veo 3.1 1080p 29 cr/4s ·
+Soul 2.0 0,12 cr a immagine · Nano Banana Pro 2 cr · ElevenLabs TTS 1 credito per carattere ·
+Voice Changer 1.000 cr/min · chiamata da 2 minuti ~€0,21.
 **Starter non accede a Seedance**: il piano minimo utile e' Plus.
 
 ## Rapporto con Arena — verdetto corretto

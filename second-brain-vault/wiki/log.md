@@ -2011,3 +2011,34 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   invece che su quello che ESCE e' il modo piu' caro di non risolvere il collo di bottiglia.
 - NUOVO STRUMENTO: `PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py` — calcolatore
   riproducibile, accetta --yt-giorno --corti-giorno --riprova. I numeri si rifanno, non si ricordano.
+- REVISIONE 4 (stesso giorno, Max ha dato i volumi definitivi: "forse ho un po' esagerato").
+  Volume vero: **70 video lunghi al mese** (cadenza 3-2-3-2 alternata, 2 giorni di stop) e
+  **102 corti** (3 al giorno, 6 una volta a settimana), piu' **3.000 chiamate** (100/giorno).
+  Totale 172 video e 904 minuti finiti al mese.
+- **CORREZIONE 3 mia**: avevo costato i corti come 12 clip generative a testa. Sbagliato — Max li
+  ha descritti senza avatar e senza soggetto, con sottotitoli al centro ed elementi che si
+  spostano: **sono progetti Vibe Motion, non video generati**. Da 239 a 109 crediti l'uno, e li'
+  se ne andava meta' del conto.
+- CONTO FINALE: Higgsfield €635 / **€1.496** / €2.768 al mese nei tre scenari (magro/medio/ricco),
+  ElevenLabs ~€617 tutto compreso. **Totale ~€2.113 al mese, ~€25.400 l'anno.** Con tasso di
+  riprova 1,3x invece di 2x scende a €1.604 al mese: **seimila euro l'anno stanno nella qualita'
+  dei nostri prompt**, non nel piano scelto.
+- **SCOPERTA CHE VALE $510/MESE**: i piani ElevenAgents sono **perfettamente lineari a $0,08 al
+  minuto**, quindi salire di livello NON fa risparmiare sulle chiamate — cambia solo i crediti
+  voce e la concorrenza. Creator/Pro/Scale costano tutti $480 al nostro volume; Business $990.
+  Si prende **Pro $99**, il piu' basso che copra i 204k crediti voce. Concorrenza: 100 chiamate
+  al giorno sono meno di UNA in parallelo, i 20 canali di Pro sono venti volte il necessario.
+- VIBE MOTION documentato a fondo (dossier A.4-BIS): HEX/RGB esatti (il nostro #fb4604 alla
+  lettera), safe zone social per i sottotitoli, curve di easing su cursori, upload di loghi/SVG/
+  footage, Motion Preset, render 4K, categorie Infografiche/Presentazioni/Kinematic Captions.
+  CANVAS documentato a fondo (A.4-TER) su ordine esplicito di Max.
+- CONSIGLI: (a) partire da **Ultra 3.000 + ElevenLabs Pro come MESE DI TARATURA**, non dal livello
+  a regime; (b) 3 mosse a costo zero prima di pagare — Startup Grant ElevenLabs (33M caratteri =
+  oltre dieci anni di voce dei corti), trattativa Enterprise Higgsfield (rollover crediti, conta
+  con una cadenza non piatta), riparazione `quality_gate.py:93`; (c) **mai Team ne' Scale di
+  Higgsfield**: sono i crediti piu' cari del listino perche' il prezzo e' per posto con minimo 5.
+- VINCOLO SOLLEVATO: 3.000 chiamate/mese richiedono 3.000 contatti con **consenso tracciabile**.
+  In Preventa il consenso nasce dalla risposta WhatsApp: la domanda non e' quanto costa l'agente,
+  e' se generiamo cento risposte al giorno da richiamare.
+- Report pubblicato (revisione 4): https://claude.ai/code/artifact/24fb95f3-f393-4566-b014-2b8e307d2335
+  Calcolatore aggiornato: `PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py`

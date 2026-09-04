@@ -222,3 +222,17 @@ nul
 #   python scripts/cerca_wiki.py --ricostruisci
 # Non va nella storia git (ADR-013: blob pesanti fuori dalla storia).
 second-brain-vault/wiki/.indice-ricerca.json
+
+# --- studio corso AI TUBE PRO (corso-lab, 2026-09-04) ---
+# I frame e i media dello studio NON entrano in git: 167 lezioni produrrebbero decine di
+# migliaia di PNG (nei run esistenti ce ne sono gia' 11.408 tracciati). Il valore dello
+# studio sono appunti, report e regole, che vivono in company/Memory/studi/ e restano
+# versionati. ADR-013.
+**/runs/corso-aitubepro/**/frames/
+**/runs/corso-aitubepro/**/*.mp4
+**/runs/corso-aitubepro/**/*.wav
+**/runs/corso-aitubepro/**/*.m4a
+# Profilo browser dello studio corsi: contiene i COOKIE DI SESSIONE del portale a
+# pagamento. In un repo pubblico sarebbe una credenziale regalata (stessa classe di
+# B-020/B-021/B-023, che restano leggibili nella storia git per sempre).
+**/runs/_profilo-corso/

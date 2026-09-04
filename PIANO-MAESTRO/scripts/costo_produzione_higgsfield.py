@@ -65,16 +65,24 @@ def scenari_youtube(riprova: float) -> dict[str, float]:
 
 
 def scenari_corto(riprova: float) -> dict[str, float]:
-    """Crediti per un corto da ~2 minuti: editing avanzato, grafica in movimento, voce."""
+    """Crediti per un corto da 1-3 minuti.
+
+    IMPORTANTE — questi corti NON sono video generati. Max li ha descritti cosi':
+    nessun avatar, nessun soggetto, eleganti, sottotitoli piccoli al centro, elementi
+    che si spostano, grafica 3D. Cioe' sono progetti VIBE MOTION con qualche sfondo,
+    non clip di modelli video. Nella revisione 3 li avevo costati come se fossero
+    dodici clip generative a testa: sbagliato, e li' se ne andava meta' del conto.
+
+    La voce di questi corti sta su ElevenLabs per volonta' di Max (voce profonda,
+    qualita' massima), quindi NON consuma crediti Higgsfield.
+    """
     return {
-        # magro: Higgsfield fa solo gli asset, la grafica la montiamo noi (After Effects)
-        "magro": 6 * CR_KLING_1080 * riprova + 20 * CR_SOUL2 * riprova,
-        # medio: clip piu' un progetto Vibe Motion per la grafica
-        "medio": (12 * CR_KLING_1080 * riprova + 30 * CR_SOUL2 * riprova
-                  + CR_VIBE_MOTION),
-        # ricco: Supercomputer end-to-end
-        "ricco": (12 * CR_KLING_1080 * riprova + 30 * CR_SOUL2 * riprova
-                  + CR_SUPERCOMPUTER),
+        # magro: solo Vibe Motion piu' immagini di sfondo
+        "magro": CR_VIBE_MOTION + 20 * CR_SOUL2 * riprova,
+        # medio: Vibe Motion piu' 4 clip di sfondo in movimento
+        "medio": CR_VIBE_MOTION + 4 * CR_KLING_1080 * riprova + 20 * CR_SOUL2 * riprova,
+        # ricco: Vibe Motion piu' 8 clip
+        "ricco": CR_VIBE_MOTION + 8 * CR_KLING_1080 * riprova + 30 * CR_SOUL2 * riprova,
     }
 
 
@@ -91,23 +99,28 @@ def costo_mensile(crediti_servono: float) -> tuple[str, float, float]:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--yt-giorno", type=float, default=5, help="video YouTube al giorno")
-    ap.add_argument("--corti-giorno", type=float, default=10, help="video corti al giorno")
-    ap.add_argument("--giorni", type=float, default=30, help="giorni di produzione al mese")
+    ap.add_argument("--yt-mese", type=float, default=70,
+                    help="video YouTube al mese (default: cadenza 3/2 alternata, 2 giorni di stop)")
+    ap.add_argument("--corti-mese", type=float, default=102,
+                    help="video corti al mese (default: 3 al giorno, 6 una volta a settimana)")
+    ap.add_argument("--chiamate-giorno", type=float, default=100, help="chiamate dell'agente vocale")
+    ap.add_argument("--minuti-chiamata", type=float, default=2.0, help="durata media chiamata")
     ap.add_argument("--riprova", type=float, default=2.0,
                     help="quante volte in media si rigenera una clip prima di tenerla")
     a = ap.parse_args()
 
-    yt_mese = a.yt_giorno * a.giorni
-    corti_mese = a.corti_giorno * a.giorni
+    yt_mese = a.yt_mese
+    corti_mese = a.corti_mese
 
     print("=" * 78)
-    print("COSTO DI PRODUZIONE HIGGSFIELD — volume Digital Empire")
+    print("COSTO DI PRODUZIONE — volume Digital Empire dichiarato da Max il 2026-09-04")
     print("=" * 78)
-    print(f"  Video YouTube : {a.yt_giorno:g}/giorno x {a.giorni:g} = {yt_mese:,.0f} al mese"
-          f"  ({yt_mese * 10:,.0f} minuti finiti)".replace(",", "."))
-    print(f"  Video corti   : {a.corti_giorno:g}/giorno x {a.giorni:g} = {corti_mese:,.0f} al mese"
-          f"  ({corti_mese * 2:,.0f} minuti finiti)".replace(",", "."))
+    print(f"  Video YouTube : {yt_mese:,.0f} al mese  ({yt_mese * 10:,.0f} minuti finiti)"
+          .replace(",", "."))
+    print(f"                  cadenza 3-2-3-2 alternata, 2 giorni di stop al mese")
+    print(f"  Video corti   : {corti_mese:,.0f} al mese  ({corti_mese * 2:,.0f} minuti finiti)"
+          .replace(",", "."))
+    print(f"                  3 al giorno, 6 una volta a settimana. Vibe Motion, voce ElevenLabs")
     print(f"  Tasso riprova : {a.riprova:g}x  (una clip su {a.riprova:g} si tiene)")
     print(f"  Tetto self-serve: 9.000 crediti al mese (Ultra 9.000, €270)")
     print()
@@ -130,15 +143,36 @@ def main() -> None:
     tot_medio = yt["medio"] * yt_mese + co["medio"] * corti_mese
     print(f"  Scarto dal tetto self-serve, scenario medio: {tot_medio / 9000:.0f}x")
     print()
-    print("  VOCE — non e' inclusa qui.")
-    minuti = yt_mese * 10 + corti_mese * 2
-    caratteri = minuti * 1000
-    print(f"    {minuti:,.0f} minuti al mese = ~{caratteri / 1_000_000:.1f}M caratteri"
+    print("-" * 78)
+    print("  ELEVENLABS — conto separato")
+    print("-" * 78)
+    min_corti = corti_mese * 2
+    cr_corti = min_corti * 1000
+    min_chiamate = a.chiamate_giorno * 30 * a.minuti_chiamata
+    print(f"    Voce dei corti : {min_corti:,.0f} minuti = {cr_corti/1000:,.0f}k crediti"
           .replace(",", "."))
-    print(f"    ElevenLabs Scale $299 copre 1,8M crediti; oltre si paga ~$0,17 al minuto.")
-    print(f"    Higgsfield fa TTS con ElevenLabs v3 dentro i suoi crediti,")
-    print(f"    ma IL COSTO IN CREDITI NON E' PUBBLICATO: va misurato in-app il giorno 1.")
-    print(f"    A questo volume quell'incognita vale diverse centinaia di euro al mese.")
+    print(f"    Agente vocale  : {a.chiamate_giorno:g} chiamate/giorno x 30 x {a.minuti_chiamata:g} min"
+          f" = {min_chiamate:,.0f} minuti".replace(",", "."))
+    print()
+    # I piani ElevenAgents costano esattamente $0,08 al minuto anche in eccedenza:
+    # il livello non cambia il totale, cambia solo quanti crediti TTS e quanta concorrenza.
+    for nome, prezzo, crediti_k, min_incl, conc in [
+        ("Creator", 22, 121, 275, 10), ("Pro", 99, 600, 1238, 20),
+        ("Scale", 299, 1800, 3738, 30), ("Business", 990, 6000, 12375, 40)]:
+        ecc = max(0.0, min_chiamate - min_incl) * 0.08
+        ok_cr = "si'" if crediti_k * 1000 >= cr_corti else "NO"
+        print(f"    {nome:<9} ${prezzo:>4} + ${ecc:>7,.0f} eccedenza = ${prezzo+ecc:>7,.0f}/mese"
+              f"   crediti bastano: {ok_cr:<4} concorrenza {conc}".replace(",", "."))
+    print()
+    print(f"    I piani sono LINEARI a $0,08 al minuto: salire di livello non fa risparmiare")
+    print(f"    sulle chiamate. Si sceglie il piu' basso che copra i crediti TTS.")
+    print(f"    A parte: telefonia Italia ~$0,03/min = ~${min_chiamate*0.03:,.0f}, LLM ~${min_chiamate*0.0012:,.0f}."
+          .replace(",", "."))
+    print()
+    print(f"  VOCE DEI VIDEO LUNGHI — {yt_mese*10:,.0f} minuti al mese.".replace(",", "."))
+    print(f"    Se sta su Higgsfield (TTS con ElevenLabs v3 dentro) costa crediti,")
+    print(f"    MA IL COSTO NON E' PUBBLICATO: va misurato in-app il giorno 1.")
+    print(f"    Se invece va su ElevenLabs sono {yt_mese*10*1000/1_000_000:.1f}M crediti in piu' e serve Scale.")
     print()
     print("  Le tre leve che spostano davvero il conto, in ordine di peso:")
     print("    1. Tasso di riprova. Provalo con --riprova 1.3: e' la meta' del costo.")

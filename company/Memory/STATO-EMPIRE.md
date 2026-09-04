@@ -8894,3 +8894,22 @@ tre video con i frame pronti mai guardati da nessuno.
 
 **RIPRESA DA:** registrare il primo movimento vero in tesoreria (un registro vuoto e un
 registro che non esiste si assomigliano troppo); poi B-049, il percorso di vendita.
+
+---
+
+## ⚠️ COORDINAMENTO — 2026-09-04 — EMPERATOR AL LAVORO SU `corso-lab` (studio AI TUBE PRO)
+
+**Chi:** Emperator, con Max. **Durata prevista:** giorni (167 lezioni).
+**Piano:** [PIANO-STUDIO-AITUBEPRO](plans/PIANO-STUDIO-AITUBEPRO.md) — v4 approvata da Max il 2026-09-04.
+
+**Perimetro che TOCCO io — Gael e Neri non lavorateci sopra finche' questo blocco c'e':**
+- `SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/corso_ingest.py` (nuovo)
+- `company/Memory/studi/aitubepro/**` (nuovo)
+- `YOUTUBE-AUTOMATION-FACTORY/03-AGENTI-E-RUOLI/**` (binario A: agenti e regolatori)
+- `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/**` (binario B: solo a gate di categoria)
+
+**Perimetro LIBERO:** tutto il resto, compreso Outreach, Preventa, libri KDP, ecosistema Lanci.
+
+**Regola del doppio binario (ADR-024 in arrivo):** il motore in produzione della fabbrica si
+tocca SOLO a gate di categoria superato, con test verdi e un video di prova. Fino ad allora
+le lezioni atterrano su agenti, regolatori e regole — rischio zero sulla produzione.

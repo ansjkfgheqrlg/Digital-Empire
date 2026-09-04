@@ -27,6 +27,91 @@ Autore: Emperator (per Max)
 
 ---
 
+# PARTE A-ZERO — IL CONTO AL VOLUME REALE (revisione 4)
+
+> Le revisioni 1-3 costavano un video singolo (€2,78) e si fermavano li'. Max ha dato il
+> volume vero di produzione. Questo e' il conto che conta; tutto il resto del dossier
+> resta valido come mappa del prodotto.
+
+## Il volume, dichiarato da Max il 2026-09-04
+
+| Formato | Cadenza | Al mese | Minuti finiti |
+|---|---|---|---|
+| **Video YouTube 10 min** | 3-2-3-2 alternata, 2 giorni di stop al mese | **70** | 700 |
+| **Corti 1-3 min** | 3 al giorno, 6 una volta a settimana | **102** | 204 |
+| **Chiamate agente vocale** | 100 al giorno | **3.000** | 6.000 |
+
+Totale: **172 video e 904 minuti di video finito al mese.**
+
+## CORREZIONE 3 — i corti costavano meta'
+
+Nella revisione 3 avevo costato i corti come dodici clip generative a testa. Sbagliato:
+Max li ha descritti **senza avatar e senza soggetto**, eleganti, sottotitoli piccoli al
+centro, elementi che si spostano, grafica 3D. Quelli **non sono video generati, sono
+progetti Vibe Motion** con qualche sfondo. Da 239 a 109 crediti l'uno, ed e' li' che se ne
+andava meta' del conto.
+
+## Higgsfield — tre scenari
+
+| Scenario | Cr/video YT | Cr/corto | Crediti/mese | Pacchetti extra | Totale/mese |
+|---|---|---|---|---|---|
+| Magro — poche clip, molte immagini; corti di sola grafica | 176 | 45 | 16.890 | €365 | **€635** |
+| **Medio** — b-roll vero; corti con 4 sfondi in movimento | 349 | 109 | 35.514 | €1.226 | **€1.496** |
+| Ricco — aperture Seedance 2.0; corti con 8 clip | 645 | 175 | 63.006 | €2.498 | **€2.768** |
+
+Base Ultra 9.000 (€270 annuale) piu' pacchetti a €0,046 il credito. Tasso di riprova 2×.
+Con riprova 1,3× lo scenario medio scende a **€987**.
+
+## ElevenLabs — e la scoperta che vale $510 al mese
+
+Fabbisogno: **204.000 crediti** di voce (i 102 corti) e **6.000 minuti** di chiamate.
+
+| Piano | Canone | Eccedenza chiamate | Totale | Crediti voce bastano? |
+|---|---|---|---|---|
+| Creator | $22 | $458 | $480 | No — 121k contro 204k |
+| **Pro** | **$99** | **$381** | **$480** | **Si' — 600k, concorrenza 20** |
+| Scale | $299 | $181 | $480 | Si', ma margine inutile |
+| Business | $990 | $0 | $990 | Si', e costa il doppio per nulla |
+
+**I piani ElevenAgents sono perfettamente lineari a $0,08 al minuto**: salire di livello non
+fa risparmiare un centesimo sulle chiamate, cambia solo i crediti voce e la concorrenza.
+Si prende il piu' basso che copra i crediti, ed e' **Pro**. Business costerebbe $510 in piu'
+al mese per lo stesso servizio.
+
+A parte: telefonia Italia ~$180, modello LLM ~$7.
+**Totale ElevenLabs ~$667 al mese ≈ €617.**
+
+Concorrenza: 100 chiamate al giorno su otto ore sono **meno di una chiamata in parallelo**.
+I 20 canali di Pro sono venti volte il necessario.
+
+## Il totale
+
+| | Mese | Anno |
+|---|---|---|
+| Higgsfield, scenario medio | €1.496 | €17.952 |
+| ElevenLabs tutto compreso | €617 | €7.404 |
+| **TOTALE** | **€2.113** | **€25.356** |
+| Con riprova 1,3× | €1.604 | €19.248 |
+
+## Le due incognite che restano
+
+1. **Il costo in crediti del TTS Higgsfield.** La voce dei 70 video lunghi sono 700 minuti al mese e non e' in nessuno dei due conti. Se resta su Higgsfield costa crediti (prezzo non pubblicato); se va su ElevenLabs sono 0,7M crediti in piu' e serve Scale invece di Pro.
+2. **Il costo di un progetto Vibe Motion.** Nel calcolatore vale 40 crediti ed e' una stima di terzi. Con 102 corti al mese, sbagliarla di venti crediti sposta €1.100 all'anno.
+
+## Il vincolo vero sulle chiamate
+
+Non e' tecnico ne' di prezzo: **3.000 chiamate al mese richiedono 3.000 contatti con
+consenso tracciabile**. In Preventa il consenso nasce dalla risposta su WhatsApp. La domanda
+da rispondere prima di attivare l'agente non e' quanto costa, e' se generiamo cento risposte
+al giorno da richiamare.
+
+## Calcolatore
+
+`PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py` — i numeri si rifanno, non si
+ricordano. Accetta `--yt-mese`, `--corti-mese`, `--chiamate-giorno`, `--riprova`.
+
+---
+
 # PARTE A — MAPPA COMPLETA DI HIGGSFIELD
 
 Ogni voce qui sotto e' una pagina o un modulo verificato sul sito, non una supposizione.
@@ -80,6 +165,40 @@ restano lavoro nostro — cosa che gia' facciamo.
 - **Soul ID** — definisci un personaggio da una reference e resta identico attraverso luci, angoli e stile. E' il market leader dichiarato sulla consistenza.
 - **Character training** — carichi foto da piu' angolazioni e addestri il tuo personaggio, poi lo riusi su immagini e video.
 - **AI Influencer Studio** — un personaggio digitale costante per TikTok, Reels e Shorts, senza mai stare davanti a una camera.
+
+## A.4-BIS Vibe Motion — il motion design (la macchina dei corti)
+
+Pagina `/ai-motion-design`. Motore **da testo ad animazione**: non genera pixel, **costruisce
+la logica dell'animazione**, e l'uscita e' un **asset strutturato e modificabile**, non un
+video piatto. E' esattamente cio' che serve ai 102 corti al mese.
+
+Flusso in cinque passi:
+1. Descrivi l'idea in chat, il motore interpreta l'intento.
+2. Carichi i tuoi asset — **loghi, SVG, immagini, footage**.
+3. Applichi un **Motion Preset** dalla libreria invece di curare l'easing a mano.
+4. **Modifichi il codice, non i pixel**, dall'inspector visuale.
+5. Render fino a 4K.
+
+Controlli, uno per uno:
+- **Colore**: si inseriscono i codici **HEX o RGB esatti** per fondi, tracciati e font. Il nostro `#fb4604` entra alla lettera, non "piu' o meno arancione". E' la prima volta che un tool generativo rispetta le Brand Guidelines alla virgola.
+- **Posizione del testo**: elementi trascinabili, e **safe zone delle piattaforme** perche' i sottotitoli non finiscano sotto i bottoni dell'interfaccia. Esattamente i sottotitoli piccoli al centro chiesti da Max.
+- **Movimento**: durata, ritardo e **curve di easing** su cursori.
+- **Tipografia**: font nostri, crenatura e interlinea, ridimensionamento senza perdita.
+
+Categorie native: **Infografiche, Presentazioni, Kinematic Captions**.
+
+Costo: a generazione, e **le iterazioni bruciano in fretta**. Da fonte terza, ~150 crediti
+valgono 3-10 progetti completi, quindi 15-50 crediti l'uno. **E' una stima, non un dato
+ufficiale**: nel calcolatore vale 40 ed e' da tarare sul campo.
+
+## A.4-TER Canvas — l'officina (da sapere a memoria, ordine di Max)
+
+- **Come si costruisce**: Canvas → nuova lavagna → nodo Text Prompt → collegalo a un nodo di generazione → scegli il modello → collega l'uscita al passo successivo. Ogni modello Higgsfield e' un nodo, audio compreso.
+- **Le reference si comportano in modo diverso, ed e' il dettaglio che fa sbagliare tutti**: i nodi **Seedance** lavorano con le immagini collegate **solo se il prompt dichiara il ruolo** di quell'immagine; i nodi **Kling** trattano l'immagine collegata come **primo fotogramma**, e per usarla come personaggio serve il tag `@nome-elemento`.
+- **Crediti**: costruire e collegare i nodi e' **gratis**. Si paga solo quando un nodo genera, alla stessa tariffa che quel modello ha altrove. Quindi **si progetta l'intera pipeline a costo zero**.
+- **Parallelo**: piu' modelli affiancati sullo stesso grafo, output confrontabili a fianco. Su Ultra sono 8 job video insieme — e' cosi' che si abbatte il tasso di riprova, scegliendo fra quattro varianti invece di rigenerare quattro volte la stessa.
+- **Template**: un intero flusso si salva come template riutilizzabile fra campagne.
+- **Squadra**: si condivide con un link, si lavora in contemporanea, ogni versione resta.
 
 ## A.5 Editing avanzato
 
@@ -307,27 +426,34 @@ freddo.
 
 # PARTE G — COSA COMPRARE
 
-| Tool | Piano | Prezzo | Ruolo |
+## Mese di taratura (il primo)
+
+| Tool | Piano | Prezzo | Perche' questo |
 |---|---|---|---|
-| **Higgsfield** | **Plus** | €59 mensile, €47 annuale | Il motore di produzione: video YouTube, promo, UGC, ads, immagini, voce, automazione via MCP |
-| **ElevenLabs** | **Creator** | $22 (1° mese $11) | Solo cio' che Higgsfield non fa: speech-to-speech sulla tua recitazione, clonazione professionale, agente telefonico |
+| **Higgsfield** | **Ultra 3.000** | €99/mese annuale | Non si parte dal tetto: il primo mese serve a MISURARE le due incognite, non a produrre a regime |
+| **ElevenLabs** | **Pro** | $99/mese + eccedenza | I piani chiamate sono lineari a $0,08/min: Pro basta e Business costerebbe $510 in piu' per nulla |
 
-**Mese 1: circa €69.** A regime in annuale: circa €64 al mese, circa €770 all'anno.
+## A regime, scenario medio
 
-## Mensile o annuale
-Higgsfield **annuale** ha senso adesso: dopo aver visto Long Video Generator, Supercomputer,
-Layers, Marketing Studio e i plugin, il rischio che il tool non serva e' basso, e €144 di
-risparmio sono reali. **ElevenLabs mensile**, perche' il suo perimetro si e' ristretto e va
-verificato che serva ancora dopo un mese di Higgsfield.
+| Tool | Piano | Costo/mese |
+|---|---|---|
+| Higgsfield | Ultra 9.000 (€270) + ~26.500 crediti a pacchetto | €1.496 |
+| ElevenLabs | Pro + eccedenza + telefonia + LLM | €617 |
+| **Totale** | | **€2.113** (€25.356/anno) |
 
-## Cosa non comprare adesso
-- **Ultra (€99)**: solo se finiamo i 1.200 crediti due mesi di fila.
-- **Starter (€19)**: niente Seedance, falso risparmio.
-- **ElevenLabs Pro ($99)**: solo quando le chiamate superano i 275 minuti al mese.
-- **Pacchetti crediti**: $0,05 contro €0,039 dell'abbonamento.
+Con il tasso di riprova portato a 1,3×: **€1.604 al mese**, cioe' €19.248 l'anno.
+**Seimila euro all'anno stanno nella qualita' dei nostri prompt**, non nel piano scelto.
 
-## Prima di pagare
-Candidatura **Startup Grant ElevenLabs**: se passa, ElevenLabs e' gratis per un anno.
+## Cosa NON comprare
+- **Higgsfield Team o Scale**: sono i crediti **piu' cari** del listino (€0,065 e €0,060) perche' il prezzo e' per posto con minimo cinque. Comprano posti, coda prioritaria, controllo di spesa, SSO e manleva — non crediti convenienti.
+- **ElevenLabs Business ($990)**: $510 al mese in piu' per lo stesso identico servizio.
+- **ElevenLabs Scale ($299)**: stesso totale di Pro, ma margine di crediti che non useremo — a meno che la voce dei video lunghi non finisca su ElevenLabs (incognita 1).
+- **Higgsfield Starter e Plus**: sotto il fabbisogno di un fattore dieci.
+
+## Le tre mosse a costo zero, prima di pagare
+1. **Startup Grant ElevenLabs** — 33 milioni di caratteri contro un consumo di 204.000 al mese: vale oltre dieci anni di voce dei corti. Mezz'ora di lavoro.
+2. **Trattativa Enterprise Higgsfield** — a 35.000 crediti al mese siamo un conto da commerciale: sconti a volume per modello e soprattutto **crediti che si riportano al mese dopo**, che con una cadenza 3-2-3-2 e due giorni di stop conta davvero. Richiede settimane, va aperta ora.
+3. **Riparare `quality_gate.py:93`** — a tre video al giorno quel gate ferma settanta produzioni al mese.
 
 ---
 

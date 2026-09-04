@@ -1,0 +1,1812 @@
+{
+  "aitubepro": {
+    "corso_id": "5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2",
+    "n_lezioni": 116,
+    "categorie": [
+      {
+        "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+        "titolo": "Intelligenza Artificiale",
+        "ordine": 0,
+        "n_lezioni": 12,
+        "lezioni": [
+          {
+            "lesson_id": "08704738-4209-4bec-9478-4655840f0335",
+            "titolo": "Benvenuto in Mucca Rossa: Come utilizzare la nostra Piattaforma di Formazione",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/08704738-4209-4bec-9478-4655840f0335",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0c9e1b42-09b4-4bbc-8f94-c9fcdd95ab1f",
+            "titolo": "Come Registrarsi ed Accedere alla Community de La Mucca Rossa",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/0c9e1b42-09b4-4bbc-8f94-c9fcdd95ab1f",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "03811637-a9aa-4189-bce3-790bc0de4cd7",
+            "titolo": "Ti Seguiamo Personalmente per 1 Anno/6 Mesi",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/03811637-a9aa-4189-bce3-790bc0de4cd7",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "445eaf18-5bf9-40f6-9832-0c041d6dd626",
+            "titolo": "Intro al Business",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/445eaf18-5bf9-40f6-9832-0c041d6dd626",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "4fa9cd04-9606-4ff1-898e-9404d4f5dbb8",
+            "titolo": "Canale Telegram Riservato Agli Studenti",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/4fa9cd04-9606-4ff1-898e-9404d4f5dbb8",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "b397962e-0473-4dd1-a381-81b10f935105",
+            "titolo": "Guadagnare Online con YouTube e I.A. Casi Studio Reali (Tutta La Verità)",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/b397962e-0473-4dd1-a381-81b10f935105",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "6ac725b2-3bbc-487f-a612-9d4f3ab5a583",
+            "titolo": "Come settare gli obiettivi e raggiungerli",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/6ac725b2-3bbc-487f-a612-9d4f3ab5a583",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "4e86e3f1-1633-463b-9b5a-1b8533a21b44",
+            "titolo": "Come raggiungere il successo su YouTube",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/4e86e3f1-1633-463b-9b5a-1b8533a21b44",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "ea8072e8-1dd8-4bdd-9f39-d4da049b56c8",
+            "titolo": "Che cos'è l'Intelligenza Artificiale?",
+            "ordine": 9,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/ea8072e8-1dd8-4bdd-9f39-d4da049b56c8",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "803394e6-a871-40ab-bcb8-5b79cc0d0fb7",
+            "titolo": "Intelligenza Artificiale & YouTube",
+            "ordine": 10,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/803394e6-a871-40ab-bcb8-5b79cc0d0fb7",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "e8b49ab9-672a-4eee-aa6e-461dfb7d248a",
+            "titolo": "Come Fare YouTube Automation a Costo Zero - Parte 1",
+            "ordine": 11,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/e8b49ab9-672a-4eee-aa6e-461dfb7d248a",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "3a308070-72a3-4fde-b2d9-624500b3682d",
+            "titolo": "Come Fare YouTube Automation a Costo Zero - Parte 2",
+            "ordine": 12,
+            "tipo": "video",
+            "categoria_id": "737ab9d8-2d17-4791-877e-fbe6b253beca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/737ab9d8-2d17-4791-877e-fbe6b253beca/lessons/3a308070-72a3-4fde-b2d9-624500b3682d",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "f0d0128e-3c97-45b7-9960-052a381a42fc",
+        "titolo": "Le Basi di YouTube",
+        "ordine": 1,
+        "n_lezioni": 7,
+        "lezioni": [
+          {
+            "lesson_id": "51c49e9f-1c5e-41b3-b917-935fb90ca577",
+            "titolo": "Intro A.I Tube",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "f0d0128e-3c97-45b7-9960-052a381a42fc",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/f0d0128e-3c97-45b7-9960-052a381a42fc/lessons/51c49e9f-1c5e-41b3-b917-935fb90ca577",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "340f66b3-02b9-46d6-a3f7-3f802685d921",
+            "titolo": "Come funziona la Monetizzazione di YouTube",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "f0d0128e-3c97-45b7-9960-052a381a42fc",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/f0d0128e-3c97-45b7-9960-052a381a42fc/lessons/340f66b3-02b9-46d6-a3f7-3f802685d921",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "9808d07f-68bb-40e7-a160-03e981537362",
+            "titolo": "Acquistare Canale YouTube già Monetizzato",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "f0d0128e-3c97-45b7-9960-052a381a42fc",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/f0d0128e-3c97-45b7-9960-052a381a42fc/lessons/9808d07f-68bb-40e7-a160-03e981537362",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "54f6a409-4876-4dea-8adc-5deba8c58c61",
+            "titolo": "Cash Cow Channel e YouTube Automation",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "f0d0128e-3c97-45b7-9960-052a381a42fc",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/f0d0128e-3c97-45b7-9960-052a381a42fc/lessons/54f6a409-4876-4dea-8adc-5deba8c58c61",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "7994b526-b946-42bb-a350-f6b287ecf416",
+            "titolo": "Le migliori nicchie per canali e video A.I su YouTube",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "f0d0128e-3c97-45b7-9960-052a381a42fc",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/f0d0128e-3c97-45b7-9960-052a381a42fc/lessons/7994b526-b946-42bb-a350-f6b287ecf416",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "8a1bc298-02ba-4375-a2bb-17c54d6e8c4c",
+            "titolo": "Come scegliere la nicchia e capire quanto si guadagna + bonus",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "f0d0128e-3c97-45b7-9960-052a381a42fc",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/f0d0128e-3c97-45b7-9960-052a381a42fc/lessons/8a1bc298-02ba-4375-a2bb-17c54d6e8c4c",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "46f4c4db-a8cc-433a-a976-1c9c136c7489",
+            "titolo": "Quanti contenuti pubblicare sul canale",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "f0d0128e-3c97-45b7-9960-052a381a42fc",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/f0d0128e-3c97-45b7-9960-052a381a42fc/lessons/46f4c4db-a8cc-433a-a976-1c9c136c7489",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+        "titolo": "YouTube Setup & Launchpad",
+        "ordine": 2,
+        "n_lezioni": 15,
+        "lezioni": [
+          {
+            "lesson_id": "6239e211-adac-4a55-8ac0-9b19e3943448",
+            "titolo": "Come creare un Canale YouTube",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/6239e211-adac-4a55-8ac0-9b19e3943448",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "5ba4cff3-b3e5-47cc-8e6c-732476f8aba2",
+            "titolo": "Come scegliere ed impostare Nome Canale ed Handle con I.A.",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/5ba4cff3-b3e5-47cc-8e6c-732476f8aba2",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "be391873-85a7-4381-9112-f8fb1c561730",
+            "titolo": "Midjourney Tutorial Completo",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/be391873-85a7-4381-9112-f8fb1c561730",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "3127e2a7-4210-441d-9b5a-6078223e0dfa",
+            "titolo": "Come creare copertina e logo canale con Midjourney",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/3127e2a7-4210-441d-9b5a-6078223e0dfa",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "4dc82c27-837d-4faf-af8c-b3fb69e683eb",
+            "titolo": "Come creare Logo e Copertina con Canva",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/4dc82c27-837d-4faf-af8c-b3fb69e683eb",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "ac2bcab1-fb05-4ea0-864f-35c5722f4794",
+            "titolo": "Come Impostare Descrizione e Tag Canale con ChatGPT",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/ac2bcab1-fb05-4ea0-864f-35c5722f4794",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "ae814475-01a4-4f44-a9e3-94de3f793595",
+            "titolo": "A.I Tool per parole chiave, video virali ed analitycs",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/ae814475-01a4-4f44-a9e3-94de3f793595",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "7ba74da2-68ad-4db2-a1ea-806605debf6a",
+            "titolo": "Come trovare e creare video virali",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/7ba74da2-68ad-4db2-a1ea-806605debf6a",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "f5b03364-4492-4047-8b42-0d9d7ece5a0b",
+            "titolo": "Video in Trend come e dove trovarli",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/f5b03364-4492-4047-8b42-0d9d7ece5a0b",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "59af8242-e3b3-4a89-b4d7-f3ea9ab9d09b",
+            "titolo": "Organizzazione e Creazione del Calendario Editoriale",
+            "ordine": 9,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/59af8242-e3b3-4a89-b4d7-f3ea9ab9d09b",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "e605d16c-979b-4220-9924-b2edc772fdab",
+            "titolo": "Come organizzare al meglio il tuo Workflow per essere più Produttivo",
+            "ordine": 10,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/e605d16c-979b-4220-9924-b2edc772fdab",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "fb8e58c2-00b8-46a9-8637-c33020d280a5",
+            "titolo": "Tools Gratuiti di Stock Video Musica e Immagini",
+            "ordine": 11,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/fb8e58c2-00b8-46a9-8637-c33020d280a5",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "6cce91b0-2057-4370-9911-b06153770494",
+            "titolo": "Come diventare Partner di YouTube Guida Passo Passo",
+            "ordine": 12,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/6cce91b0-2057-4370-9911-b06153770494",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "77b6f9f2-3203-4bd4-aaff-fd9b6db41207",
+            "titolo": "Attivazione Iban su Adsense per YouTube + Impostazione Dati Fiscali",
+            "ordine": 13,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/77b6f9f2-3203-4bd4-aaff-fd9b6db41207",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "38b5e7e9-7cb6-4bab-b73b-a1e1b404500f",
+            "titolo": "Fiscalità YouTube in Italia + Consulenza Gratis + Ebook in Regalo",
+            "ordine": 14,
+            "tipo": "video",
+            "categoria_id": "c59bb65d-56dd-4036-8ed3-016ce5046b72",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/c59bb65d-56dd-4036-8ed3-016ce5046b72/lessons/38b5e7e9-7cb6-4bab-b73b-a1e1b404500f",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+        "titolo": "Metodo AI Tube",
+        "ordine": 3,
+        "n_lezioni": 21,
+        "lezioni": [
+          {
+            "lesson_id": "bf8e9863-6a84-45ff-aa36-fd28d09d1707",
+            "titolo": "A.I Artificial Intelligence Tutte le AI + aggiornamenti + Opportunity Business",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/bf8e9863-6a84-45ff-aa36-fd28d09d1707",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a256cb78-f4a2-43e6-bc73-d296e75ed2bc",
+            "titolo": "Scaricare testi già pronti per generare video in 3 click",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/a256cb78-f4a2-43e6-bc73-d296e75ed2bc",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "81e4e28a-eeca-4404-a311-fa0907185d89",
+            "titolo": "Scrivere e (ri)scrivere testi originali con A.I",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/81e4e28a-eeca-4404-a311-fa0907185d89",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "f731e4a1-a705-4020-9e45-6b7dd7f45c92",
+            "titolo": "Text to speech cosa è, e come funziona",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/f731e4a1-a705-4020-9e45-6b7dd7f45c92",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "47e15a85-5075-4f4e-8cba-dcc07a86b835",
+            "titolo": "Editing Video Automatico con AI All in One",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/47e15a85-5075-4f4e-8cba-dcc07a86b835",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "c4a7f5b5-39a7-4205-8640-bdecf6815568",
+            "titolo": "Come creare un video da zero con il metodo A.I tube (IL METODO COMPLETO)",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/c4a7f5b5-39a7-4205-8640-bdecf6815568",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "1d50398f-9468-4171-bc63-ab22d73e1eab",
+            "titolo": "Metodo Copia e Incolla",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/1d50398f-9468-4171-bc63-ab22d73e1eab",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "b9179ace-e0b7-4afe-941c-3179b773ec85",
+            "titolo": "Editing facile con Filmora",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/b9179ace-e0b7-4afe-941c-3179b773ec85",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "58e8cdd0-e274-4573-93e4-b8d3e6375531",
+            "titolo": "Premiere Pro Mega Tutorial Completo",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/58e8cdd0-e274-4573-93e4-b8d3e6375531",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "1f659f44-b91f-42ad-b948-8c5e42f745d8",
+            "titolo": "18 Tecniche Avanzate del Metodo Copia e Incolla",
+            "ordine": 9,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/1f659f44-b91f-42ad-b948-8c5e42f745d8",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "8be966ce-7b63-426d-94ac-24015ef62b48",
+            "titolo": "Montaggio Video Pro con Premiere Pro",
+            "ordine": 10,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/8be966ce-7b63-426d-94ac-24015ef62b48",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "3628ca2b-0f41-4c5c-a238-5925af9baae6",
+            "titolo": "Intelligenza Artificiale con Premiere Pro (SENSEI)",
+            "ordine": 11,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/3628ca2b-0f41-4c5c-a238-5925af9baae6",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "ebc4c3e6-877a-4019-8d89-e39a7f2102ee",
+            "titolo": "Video Virali con sottotitoli automatici in 2 minuti con Premiere Pro",
+            "ordine": 12,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/ebc4c3e6-877a-4019-8d89-e39a7f2102ee",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "42969c7e-01ba-4a57-a4b0-fa53e765fa07",
+            "titolo": "Come avere Final Cut Pro X Gratis per Sempre",
+            "ordine": 13,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/42969c7e-01ba-4a57-a4b0-fa53e765fa07",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0ff3fc46-a1ac-43a7-97df-3e8a34b43a57",
+            "titolo": "Final Cut Metodo Copia & Incolla Avanzato",
+            "ordine": 14,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/0ff3fc46-a1ac-43a7-97df-3e8a34b43a57",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "c0d14096-611a-43ae-8f4a-ed8975d99eb7",
+            "titolo": "Crea il tuo AVATAR con A.I",
+            "ordine": 15,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/c0d14096-611a-43ae-8f4a-ed8975d99eb7",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "fbdfe3ae-e0e8-49cc-9a84-7a9f19c636e7",
+            "titolo": "A.I Per canali di Musica Per separare voce da audio + nicchia",
+            "ordine": 16,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/fbdfe3ae-e0e8-49cc-9a84-7a9f19c636e7",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "bd8a3083-a31f-4e1f-b7e2-e589f11726d4",
+            "titolo": "Componi Musica Originale Con AI in pochi click",
+            "ordine": 17,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/bd8a3083-a31f-4e1f-b7e2-e589f11726d4",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0994bc87-d36e-414b-bbca-5d8911a102ff",
+            "titolo": "Registrare Voice Over con Audacity",
+            "ordine": 18,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/0994bc87-d36e-414b-bbca-5d8911a102ff",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "08d6a09e-b4a8-4322-a654-1bfed76b7207",
+            "titolo": "Perfezionare un video con l’AI All In One",
+            "ordine": 19,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/08d6a09e-b4a8-4322-a654-1bfed76b7207",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "738f5b4b-59d7-48e4-ade5-f9b6c157cabc",
+            "titolo": "Aggiornamento Fliki Luglio 2024",
+            "ordine": 20,
+            "tipo": "video",
+            "categoria_id": "2f95c942-b18e-4405-89de-88c5449df76c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2f95c942-b18e-4405-89de-88c5449df76c/lessons/738f5b4b-59d7-48e4-ade5-f9b6c157cabc",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+        "titolo": "Smart Tube",
+        "ordine": 4,
+        "n_lezioni": 16,
+        "lezioni": [
+          {
+            "lesson_id": "3c5816a4-5f28-44be-9f84-fbb438c7fb3f",
+            "titolo": "Introduzione Smart Tube",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/3c5816a4-5f28-44be-9f84-fbb438c7fb3f",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a79d100d-1efb-4452-bef4-13d6f1515574",
+            "titolo": "Come trasformare il tuo Smartphone in un PC",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/a79d100d-1efb-4452-bef4-13d6f1515574",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "ef8c5443-af8d-4329-9cc6-3b2c62bb79bf",
+            "titolo": "Come Creare un Canale YouTube da Smartphone",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/ef8c5443-af8d-4329-9cc6-3b2c62bb79bf",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "974d4f90-f0c0-49dd-82d3-b01b039b4142",
+            "titolo": "Come Usare Chatgpt dal Smartphone",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/974d4f90-f0c0-49dd-82d3-b01b039b4142",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "35eac03a-c534-4cb3-a632-8b45753df822",
+            "titolo": "Come creare Loghi e Copertine Impattanti da Smartphone",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/35eac03a-c534-4cb3-a632-8b45753df822",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "6aa301ea-f925-44a1-b61f-5fe3ada9f24f",
+            "titolo": "Midjourney da Smartphone Guida Completa",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/6aa301ea-f925-44a1-b61f-5fe3ada9f24f",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "b6583e5c-fab3-44a4-bc7d-d02c030394fa",
+            "titolo": "Come Impostare ed Ottimizzare un Canale YouTube alla perfezione da Smartphone",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/b6583e5c-fab3-44a4-bc7d-d02c030394fa",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "6a88618b-18b4-43ff-a13a-893361869ac3",
+            "titolo": "Come scaricare script da Smartphone",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/6a88618b-18b4-43ff-a13a-893361869ac3",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0d2f644f-4e05-4606-a256-41184c996ba0",
+            "titolo": "come creare testi originali con smartphone",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/0d2f644f-4e05-4606-a256-41184c996ba0",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "b2f5e63f-60e6-42ba-a5e3-9a9df565a08e",
+            "titolo": "Come Registrare audio di alta qualità dallo Smartphone",
+            "ordine": 9,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/b2f5e63f-60e6-42ba-a5e3-9a9df565a08e",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "558e1c9f-d335-4e7d-876f-2e84e6af94a6",
+            "titolo": "Editing Video con a.i da Smartphone",
+            "ordine": 10,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/558e1c9f-d335-4e7d-876f-2e84e6af94a6",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "84c8bd1e-e718-4225-a8ee-70d5fc80a450",
+            "titolo": "Editing Video senza a.i da Smartphone",
+            "ordine": 11,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/84c8bd1e-e718-4225-a8ee-70d5fc80a450",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "5a0d1dcf-2d68-40f1-b17b-38d742ee7849",
+            "titolo": "Come Registrare Schermo dello Smartphone",
+            "ordine": 12,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/5a0d1dcf-2d68-40f1-b17b-38d742ee7849",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "f9a2150b-f4b9-45b8-bdd3-f763da456b0a",
+            "titolo": "Le 15 migliori nicchie per Smartphone",
+            "ordine": 13,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/f9a2150b-f4b9-45b8-bdd3-f763da456b0a",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "334c150b-a263-4448-852d-3338658695d3",
+            "titolo": "Come caricare alla Perfezione un Video su YouTube da Smartphone",
+            "ordine": 14,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/334c150b-a263-4448-852d-3338658695d3",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "371de168-b228-4de4-a3ed-9df927778c1c",
+            "titolo": "YouTube Studio Tutorial Completo APP Smartphone",
+            "ordine": 15,
+            "tipo": "video",
+            "categoria_id": "4ee119dd-3416-4119-b2f7-2d24335cd632",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/4ee119dd-3416-4119-b2f7-2d24335cd632/lessons/371de168-b228-4de4-a3ed-9df927778c1c",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+        "titolo": "YouTube Viral Mastery",
+        "ordine": 5,
+        "n_lezioni": 10,
+        "lezioni": [
+          {
+            "lesson_id": "3b60d164-1199-4aa3-88c0-a35b09c2d776",
+            "titolo": "Caricamento video su YouTube",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/3b60d164-1199-4aa3-88c0-a35b09c2d776",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "693226c5-040b-4117-bec5-16609efeedff",
+            "titolo": "SEO YouTube manuale operativo",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/693226c5-040b-4117-bec5-16609efeedff",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "dd45c2e8-68a0-4423-adcb-1317b2f3af61",
+            "titolo": "Creiamo la copertina (metodi + A.I)",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/dd45c2e8-68a0-4423-adcb-1317b2f3af61",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0b81b294-a586-493d-bde2-081f9ea84c5b",
+            "titolo": "Pubblicazione Video + cosa da fare",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/0b81b294-a586-493d-bde2-081f9ea84c5b",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "bd269e1e-eff1-4e33-b519-0f0de2984bd9",
+            "titolo": "Come aumentare il CTR vertiginosamente",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/bd269e1e-eff1-4e33-b519-0f0de2984bd9",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "7648b298-badd-4709-bcaf-f6e47b416a2c",
+            "titolo": "Quanti video pubblicare, quanto devono durare e proporzione trend evergreen",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/7648b298-badd-4709-bcaf-f6e47b416a2c",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a48bfb41-2b71-4be9-a9a4-4141c6ee0e23",
+            "titolo": "Automazione della pubblicazione Video su YouTube",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/a48bfb41-2b71-4be9-a9a4-4141c6ee0e23",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "7c209f9f-80c6-42d3-825a-c50318b9dea1",
+            "titolo": "Come Aumentare i GUADAGNI su YouTube",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/7c209f9f-80c6-42d3-825a-c50318b9dea1",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "e9e519a2-0a9f-4b79-ab21-6658b3db83f5",
+            "titolo": "Fai crescere la Community e gli iscritti",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/e9e519a2-0a9f-4b79-ab21-6658b3db83f5",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a03af595-3999-4e57-a147-e9e20ca26898",
+            "titolo": "Scaling dei canali e dei video YouTube",
+            "ordine": 9,
+            "tipo": "video",
+            "categoria_id": "cb848bdc-4ced-4598-bd92-9d83e1d2b3a2",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/cb848bdc-4ced-4598-bd92-9d83e1d2b3a2/lessons/a03af595-3999-4e57-a147-e9e20ca26898",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "2e53ef1b-e30d-4095-9c07-6407a2a6f422",
+        "titolo": "YouTube Analytics",
+        "ordine": 6,
+        "n_lezioni": 2,
+        "lezioni": [
+          {
+            "lesson_id": "544b8fd7-378b-4488-bbe7-3036bc9387ec",
+            "titolo": "YouTube Studio Tutorial Completo",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "2e53ef1b-e30d-4095-9c07-6407a2a6f422",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2e53ef1b-e30d-4095-9c07-6407a2a6f422/lessons/544b8fd7-378b-4488-bbe7-3036bc9387ec",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "7e16e9b1-bc17-4335-bd96-ba7f6f5b2b49",
+            "titolo": "YouTube Studio ed Analytics di video e canali virali",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "2e53ef1b-e30d-4095-9c07-6407a2a6f422",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/2e53ef1b-e30d-4095-9c07-6407a2a6f422/lessons/7e16e9b1-bc17-4335-bd96-ba7f6f5b2b49",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca",
+        "titolo": "YouTube Masterclass",
+        "ordine": 7,
+        "n_lezioni": 7,
+        "lezioni": [
+          {
+            "lesson_id": "1a125343-e95d-4627-89b4-eb07d9d74dcc",
+            "titolo": "Guadagnare su Amazon con YouTube",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca/lessons/1a125343-e95d-4627-89b4-eb07d9d74dcc",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "06e301ce-ce10-4af3-9643-9eba3ed7b3f2",
+            "titolo": "Midjourney Guida Super Avanzata",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca/lessons/06e301ce-ce10-4af3-9643-9eba3ed7b3f2",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "2cc93b38-c524-4b98-a55f-f97998cb0d3b",
+            "titolo": "Multichannel Strategy",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca/lessons/2cc93b38-c524-4b98-a55f-f97998cb0d3b",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "b2e6e4ad-3273-4f7c-8df3-de2606fad78e",
+            "titolo": "YouTube Automation e Scaling",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca/lessons/b2e6e4ad-3273-4f7c-8df3-de2606fad78e",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "5a02e1ab-a8bd-411a-8af5-7d2b6753b2d8",
+            "titolo": "Vendi le tue Abilità",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca/lessons/5a02e1ab-a8bd-411a-8af5-7d2b6753b2d8",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "d8144e7c-9ff8-4377-aa7b-4b40df165128",
+            "titolo": "Metodi di Guadagno",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca/lessons/d8144e7c-9ff8-4377-aa7b-4b40df165128",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "e7a37255-4ce6-4629-a825-aee9ecc3d1bf",
+            "titolo": "Strategia In-Feed Ads",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/a03f88f9-d3b8-48b1-91b4-3e3a62eb23ca/lessons/e7a37255-4ce6-4629-a825-aee9ecc3d1bf",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+        "titolo": "Liveclass Studenti",
+        "ordine": 8,
+        "n_lezioni": 11,
+        "lezioni": [
+          {
+            "lesson_id": "00a555ab-e3b6-4bcb-9562-387ed3e6210e",
+            "titolo": "11 Maggio 2023",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/00a555ab-e3b6-4bcb-9562-387ed3e6210e",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "bcd42a6e-958e-4d07-b1af-07dd4e42695d",
+            "titolo": "18 Luglio 2023",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/bcd42a6e-958e-4d07-b1af-07dd4e42695d",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0fd15558-af29-41ef-a26c-c608e12d1a09",
+            "titolo": "4 Settembre 2023",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/0fd15558-af29-41ef-a26c-c608e12d1a09",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "8a4b77bf-883b-403a-ba12-f4943570eb17",
+            "titolo": "23 Ottobre 2023",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/8a4b77bf-883b-403a-ba12-f4943570eb17",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "72bda3b4-4e3f-40a3-9626-a7871c3ae95f",
+            "titolo": "14 Dicembre 2023",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/72bda3b4-4e3f-40a3-9626-a7871c3ae95f",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0277b0d7-20cc-49f4-8835-f64918f8ee6a",
+            "titolo": "10 Gennaio 2024",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/0277b0d7-20cc-49f4-8835-f64918f8ee6a",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "f8c799bd-0fa1-4d1a-b711-2bb02296c782",
+            "titolo": "21 Febbraio 2024",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/f8c799bd-0fa1-4d1a-b711-2bb02296c782",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "d452e1fe-2786-433b-a971-1bc05afe8f43",
+            "titolo": "24 Maggio 2024",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/d452e1fe-2786-433b-a971-1bc05afe8f43",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "e854cd65-0ee4-446c-b920-d2933953874b",
+            "titolo": "27 Giugno 2024",
+            "ordine": 9,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/e854cd65-0ee4-446c-b920-d2933953874b",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0df4ea17-7d59-4ca8-bb20-d7a06fb2038b",
+            "titolo": "12 Agosto 2024",
+            "ordine": 10,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/0df4ea17-7d59-4ca8-bb20-d7a06fb2038b",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "7fca3c5c-24f6-4c29-979d-b87223731742",
+            "titolo": "Novità di YouTube Ottobre 2024",
+            "ordine": 11,
+            "tipo": "video",
+            "categoria_id": "861b1aeb-ff6c-4ac8-8bec-d0db49bef215",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/861b1aeb-ff6c-4ac8-8bec-d0db49bef215/lessons/7fca3c5c-24f6-4c29-979d-b87223731742",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+        "titolo": "BONUS",
+        "ordine": 9,
+        "n_lezioni": 9,
+        "lezioni": [
+          {
+            "lesson_id": "3240b52d-b827-4d11-a0a5-2be1b7ee3e22",
+            "titolo": "Checklist Metodo Copia & Incolla",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/3240b52d-b827-4d11-a0a5-2be1b7ee3e22",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "53c11a36-4f64-4e55-a8ba-fd7e4c9f051b",
+            "titolo": "Masterclass Il Metodo Americano",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/53c11a36-4f64-4e55-a8ba-fd7e4c9f051b",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0aa94e53-de08-4360-b8c3-a8bce0334a3f",
+            "titolo": "Masterclass Guadagna a Vita da 1 Singolo Video",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/0aa94e53-de08-4360-b8c3-a8bce0334a3f",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "865bae5e-5229-4e04-b147-a539780894f1",
+            "titolo": "Processi di Selezione e Creazione Video (19/05)",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/865bae5e-5229-4e04-b147-a539780894f1",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a9041d8c-801b-4a5b-8278-05729ef3cb6a",
+            "titolo": "Video Virali Short - Da Immagine a Video (26/05)",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/a9041d8c-801b-4a5b-8278-05729ef3cb6a",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "ffb1db25-be7b-43cb-aa0b-e3a33b4b51a0",
+            "titolo": "Masterclass Luglio 2025 - Text To Speech Modalità Cinema (GRATIS) + ebook",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/ffb1db25-be7b-43cb-aa0b-e3a33b4b51a0",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "59cbfa50-571c-4095-b551-244aa3960746",
+            "titolo": "Tutte le AI Gratis Senza Limiti",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/59cbfa50-571c-4095-b551-244aa3960746",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "cf4b3cd1-cb30-41f3-8c26-49ac30fec07f",
+            "titolo": "LIVECLASS Analisi Canali - Mercoledì 19 Novembre 2025",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/cf4b3cd1-cb30-41f3-8c26-49ac30fec07f",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "f3379bcb-6adb-4ecb-9301-64cd849eb454",
+            "titolo": "Masterclass Storybook: Come Creare Video Libri Virali Completamente a Costo ZERO",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "6ff43a94-28d2-41f6-85e2-a20a28934e46",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6ff43a94-28d2-41f6-85e2-a20a28934e46/lessons/f3379bcb-6adb-4ecb-9301-64cd849eb454",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "fe70c726-979c-43be-acbf-91d49e5adbf8",
+        "titolo": "Interviste Speciali",
+        "ordine": 10,
+        "n_lezioni": 3,
+        "lezioni": [
+          {
+            "lesson_id": "d9c894e3-8251-4057-840f-0f1229b36f52",
+            "titolo": "YouTube Video Ads Mastery con Jon Penberthy",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "fe70c726-979c-43be-acbf-91d49e5adbf8",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/fe70c726-979c-43be-acbf-91d49e5adbf8/lessons/d9c894e3-8251-4057-840f-0f1229b36f52",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "8cf00709-2100-4f12-af99-3bb766f190b7",
+            "titolo": "Facebook Engagement Mastery con Frazer Brookes",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "fe70c726-979c-43be-acbf-91d49e5adbf8",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/fe70c726-979c-43be-acbf-91d49e5adbf8/lessons/8cf00709-2100-4f12-af99-3bb766f190b7",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "cef88c7a-dc96-4044-b7bd-228384fc7331",
+            "titolo": "Intervista con Simon Young",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "fe70c726-979c-43be-acbf-91d49e5adbf8",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/fe70c726-979c-43be-acbf-91d49e5adbf8/lessons/cef88c7a-dc96-4044-b7bd-228384fc7331",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "8fe95b25-b788-4a90-ab05-15211386c01c",
+        "titolo": "Workshop",
+        "ordine": 11,
+        "n_lezioni": 2,
+        "lezioni": [
+          {
+            "lesson_id": "2ed5aba2-b65d-4348-9c0a-cdd645fbf19e",
+            "titolo": "Dietro le Quinte",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "8fe95b25-b788-4a90-ab05-15211386c01c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/8fe95b25-b788-4a90-ab05-15211386c01c/lessons/2ed5aba2-b65d-4348-9c0a-cdd645fbf19e",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "ea1add4c-c65b-4bcb-a806-1e22b9611802",
+            "titolo": "Scaling Pro",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "8fe95b25-b788-4a90-ab05-15211386c01c",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/8fe95b25-b788-4a90-ab05-15211386c01c/lessons/ea1add4c-c65b-4bcb-a806-1e22b9611802",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "6cef9f48-5991-4f57-8489-4053e8f21cb5",
+        "titolo": "Upgrade a Pack Start - Titanium",
+        "ordine": 12,
+        "n_lezioni": 1,
+        "lezioni": [
+          {
+            "lesson_id": "3f5f8899-2b7c-4061-962b-f7bd9a349ba0",
+            "titolo": "Upgrade a Pack Start - Titanium",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "6cef9f48-5991-4f57-8489-4053e8f21cb5",
+            "url": "https://corsi.muccarossa.com/courses/products/5ff04cd6-ed8a-49f6-bbbb-6a58de8ff5b2/modules/6cef9f48-5991-4f57-8489-4053e8f21cb5/lessons/3f5f8899-2b7c-4061-962b-f7bd9a349ba0",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      }
+    ]
+  },
+  "bonus": {
+    "corso_id": "da098baa-0e44-4192-8ef5-e7cdbf3fd2ee",
+    "n_lezioni": 51,
+    "categorie": [
+      {
+        "categoria_id": "46d771e4-931a-418c-a33c-304e404bcb0a",
+        "titolo": "Masterclass 2026",
+        "ordine": 0,
+        "n_lezioni": 7,
+        "lezioni": [
+          {
+            "lesson_id": "66fa8c00-fcdf-490b-b1d8-699549693c92",
+            "titolo": "Come Rendere Qualsiasi Video Immortale - Masterclass Gennaio 2026",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "46d771e4-931a-418c-a33c-304e404bcb0a",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/46d771e4-931a-418c-a33c-304e404bcb0a/lessons/66fa8c00-fcdf-490b-b1d8-699549693c92",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "111339ce-c2ef-4178-9ea3-3926d8e8df31",
+            "titolo": "Live Analisi Canali del 05/02/2026",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "46d771e4-931a-418c-a33c-304e404bcb0a",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/46d771e4-931a-418c-a33c-304e404bcb0a/lessons/111339ce-c2ef-4178-9ea3-3926d8e8df31",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "bd039f81-ff28-4580-a0d0-06efa48e4755",
+            "titolo": "Il Nuovo YouTube + FLIKI 4.0 x Tutti - Pietro e Samuele Gullone",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "46d771e4-931a-418c-a33c-304e404bcb0a",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/46d771e4-931a-418c-a33c-304e404bcb0a/lessons/bd039f81-ff28-4580-a0d0-06efa48e4755",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "79917664-744a-4bc9-8ad8-ac0acad92612",
+            "titolo": "Immagini Automatiche Infinite Gratis + Voice Over Pro - Pietro Gangemi",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "46d771e4-931a-418c-a33c-304e404bcb0a",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/46d771e4-931a-418c-a33c-304e404bcb0a/lessons/79917664-744a-4bc9-8ad8-ac0acad92612",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "69730e15-9416-4c57-b735-83f1fc748e59",
+            "titolo": "Live Analisi Canali del 23/02/2026",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "46d771e4-931a-418c-a33c-304e404bcb0a",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/46d771e4-931a-418c-a33c-304e404bcb0a/lessons/69730e15-9416-4c57-b735-83f1fc748e59",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "87ebcc43-e12b-4fda-bdf3-1594c8f6ba5c",
+            "titolo": "Creare Video Automatici Infiniti",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "46d771e4-931a-418c-a33c-304e404bcb0a",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/46d771e4-931a-418c-a33c-304e404bcb0a/lessons/87ebcc43-e12b-4fda-bdf3-1594c8f6ba5c",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "efe01440-fcbf-4635-abb3-c9baa75bdf31",
+            "titolo": "Come creare miniature ad alto CTR - 16/07/2026",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "46d771e4-931a-418c-a33c-304e404bcb0a",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/46d771e4-931a-418c-a33c-304e404bcb0a/lessons/efe01440-fcbf-4635-abb3-c9baa75bdf31",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+        "titolo": "Come Guadagnare con la Nicchia delle Criptovalute",
+        "ordine": 1,
+        "n_lezioni": 10,
+        "lezioni": [
+          {
+            "lesson_id": "0d0fefaa-0cbb-42ce-994d-71d01f04d5e3",
+            "titolo": "La Nicchia delle Criptovalute - Introduzione",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/0d0fefaa-0cbb-42ce-994d-71d01f04d5e3",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "09138129-e1de-4ad9-9e81-046347ad1fd0",
+            "titolo": "Come Strutturare un Canali di Crypto",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/09138129-e1de-4ad9-9e81-046347ad1fd0",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "6a277002-b55b-42a1-b820-b464ae42c3fa",
+            "titolo": "+10.000€ al Mese con l'Affiliate Marketing Crypto: Ecco la tua prima Collaborazione",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/6a277002-b55b-42a1-b820-b464ae42c3fa",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "f6ceb904-37b4-4389-be98-e346e416d404",
+            "titolo": "Ecco i Primi Contenuti che ti Consigliamo di Realizzare",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/f6ceb904-37b4-4389-be98-e346e416d404",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "7559135a-2784-4cab-8670-f96264950299",
+            "titolo": "OBS Studio Tutorial Aggiornato 2026",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/7559135a-2784-4cab-8670-f96264950299",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a63d4576-f925-4d52-ae24-b2e54948b437",
+            "titolo": "Piano Editoriale Crypto e Creazione Script",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/a63d4576-f925-4d52-ae24-b2e54948b437",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "d91a0c02-2bd0-4c88-a3cd-218d67ae49a8",
+            "titolo": "Come Creare un Video Crypto con Fliki",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/d91a0c02-2bd0-4c88-a3cd-218d67ae49a8",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "e0ea6b4e-3027-4e7a-a54e-2e6661a90a52",
+            "titolo": "Come Creare Miniature ad alto CTR",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/e0ea6b4e-3027-4e7a-a54e-2e6661a90a52",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "1450051f-c7b3-4ae2-ab8e-345127ccf71d",
+            "titolo": "Come Pubblicare un Video nella Nicchia Crypto",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/1450051f-c7b3-4ae2-ab8e-345127ccf71d",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "24434681-1655-4d93-82d0-ff7fe3852e26",
+            "titolo": "Le Migliori Collaborazioni Crypto",
+            "ordine": 9,
+            "tipo": "video",
+            "categoria_id": "a1d9974f-2df0-42fb-a2e0-8817efdb8cfb",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/a1d9974f-2df0-42fb-a2e0-8817efdb8cfb/lessons/24434681-1655-4d93-82d0-ff7fe3852e26",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      },
+      {
+        "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+        "titolo": "Masterclass Storiche 2019-2025",
+        "ordine": 2,
+        "n_lezioni": 34,
+        "lezioni": [
+          {
+            "lesson_id": "94ec1591-28cb-44a8-8136-0f314f016502",
+            "titolo": "ChatGpt Ultimate 2025",
+            "ordine": 0,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/94ec1591-28cb-44a8-8136-0f314f016502",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "b4e074a1-a92a-4881-bab0-e4b4c4853c2c",
+            "titolo": "Luglio 2025 - Text To Speech Modalità Cinema (GRATIS) + ebook",
+            "ordine": 1,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/b4e074a1-a92a-4881-bab0-e4b4c4853c2c",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "e871af0e-1ef6-4ac9-9f6b-ed73817f56d2",
+            "titolo": "Masterclass Storybook: Come Creare Video Libri Virali Completamente a Costo ZERO",
+            "ordine": 2,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/e871af0e-1ef6-4ac9-9f6b-ed73817f56d2",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "d8eda328-d3fb-467f-834d-cfa755a07023",
+            "titolo": "Liveclass Marzo 2025",
+            "ordine": 3,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/d8eda328-d3fb-467f-834d-cfa755a07023",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "d3c701ae-1be6-4e4e-9457-8dfd6bbc9889",
+            "titolo": "A.I. Thumbnail Mastery",
+            "ordine": 4,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/d3c701ae-1be6-4e4e-9457-8dfd6bbc9889",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "e1ce5b22-0eb6-4ac6-944d-a49dfe6efa39",
+            "titolo": "Liveclass Aprile 2025",
+            "ordine": 5,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/e1ce5b22-0eb6-4ac6-944d-a49dfe6efa39",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "2e84121c-3572-443e-9bda-214f34aa4cba",
+            "titolo": "Liveclass Maggio 2025: Processi di Selezione e Creazione Video",
+            "ordine": 6,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/2e84121c-3572-443e-9bda-214f34aa4cba",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a6fe34c2-3f70-4867-a811-5113f6c5323f",
+            "titolo": "Liveclass Giugno 2025 - Video Virali Short - Da Immagine a Video",
+            "ordine": 7,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/a6fe34c2-3f70-4867-a811-5113f6c5323f",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "2c943cfe-84da-4d81-95c3-ca52bc69741d",
+            "titolo": "Liveclass Gennaio 2024",
+            "ordine": 8,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/2c943cfe-84da-4d81-95c3-ca52bc69741d",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "5975ab63-8c5f-496d-a7ea-9ad420ca06ba",
+            "titolo": "Liveclass Maggio 2024",
+            "ordine": 9,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/5975ab63-8c5f-496d-a7ea-9ad420ca06ba",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "182f672e-bb75-4dc4-b6cb-018525493ad0",
+            "titolo": "Liveclass Agosto 2024",
+            "ordine": 10,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/182f672e-bb75-4dc4-b6cb-018525493ad0",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "34c3719b-2085-47ad-9965-a97fb0303a71",
+            "titolo": "Cose da Fare e Non Fare nei Canali YouTube + Analisi Canali Live",
+            "ordine": 11,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/34c3719b-2085-47ad-9965-a97fb0303a71",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "8de1bdaf-1d0e-4284-b2aa-f6b68ff96133",
+            "titolo": "Dietro le Quinte",
+            "ordine": 12,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/8de1bdaf-1d0e-4284-b2aa-f6b68ff96133",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "f0170ea1-b4d1-4945-9e69-af91885466a0",
+            "titolo": "Scaling Pro",
+            "ordine": 13,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/f0170ea1-b4d1-4945-9e69-af91885466a0",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0efc8f0a-a9d9-433b-86b9-bf0a9076a23a",
+            "titolo": "YouTube ADS",
+            "ordine": 14,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/0efc8f0a-a9d9-433b-86b9-bf0a9076a23a",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "87d8ae8a-cbe1-4c71-848f-85ea2d7b4a8e",
+            "titolo": "Crea la Tua A.I.",
+            "ordine": 15,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/87d8ae8a-cbe1-4c71-848f-85ea2d7b4a8e",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "98c446a6-eabf-4227-b2fd-2713e496feae",
+            "titolo": "Prompt A.I. Immagini",
+            "ordine": 16,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/98c446a6-eabf-4227-b2fd-2713e496feae",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "8c21c762-4158-4e0b-8fa9-a58ae20845b6",
+            "titolo": "Come creare un Cash Cow Channel nella Nicchia QUIZ",
+            "ordine": 17,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/8c21c762-4158-4e0b-8fa9-a58ae20845b6",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "9532262b-99e8-4b43-aa95-22127adb653f",
+            "titolo": "Masterclass Guadagna a Vita da 1 Singolo Video",
+            "ordine": 18,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/9532262b-99e8-4b43-aa95-22127adb653f",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0ef9c827-7c55-4f5b-b465-6f5ceafdf90a",
+            "titolo": "Novità di YouTube Ottobre 2024",
+            "ordine": 19,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/0ef9c827-7c55-4f5b-b465-6f5ceafdf90a",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "1b939e51-e753-4eef-b1ec-e8f81610f29e",
+            "titolo": "Liveclass Gennaio 2023",
+            "ordine": 20,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/1b939e51-e753-4eef-b1ec-e8f81610f29e",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "7428571b-27ba-4e8d-8cee-fcecd7f16034",
+            "titolo": "Liveclass Marzo 2023",
+            "ordine": 21,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/7428571b-27ba-4e8d-8cee-fcecd7f16034",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a32c6777-074a-498b-8ead-06ad7d389aac",
+            "titolo": "Liveclass Aprile 2023",
+            "ordine": 22,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/a32c6777-074a-498b-8ead-06ad7d389aac",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "0990dff6-33d6-4ef7-a5a4-e2fc446d62a6",
+            "titolo": "Liveclass Giugno 2023",
+            "ordine": 23,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/0990dff6-33d6-4ef7-a5a4-e2fc446d62a6",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "17ff87c0-af80-433a-acad-e834087b00d7",
+            "titolo": "Liveclass Settembre 2023",
+            "ordine": 24,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/17ff87c0-af80-433a-acad-e834087b00d7",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "129f6fe0-ca7d-45b6-aae3-8a26bc22f658",
+            "titolo": "Guadagnare su Amazon con YouTube",
+            "ordine": 25,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/129f6fe0-ca7d-45b6-aae3-8a26bc22f658",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "8b92dd45-4e0a-4b41-a921-d84c300a2fe8",
+            "titolo": "Multichannel Strategy",
+            "ordine": 26,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/8b92dd45-4e0a-4b41-a921-d84c300a2fe8",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "c87c52b8-3658-4c06-8269-313498085eb1",
+            "titolo": "Vendi le tue Abilità",
+            "ordine": 27,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/c87c52b8-3658-4c06-8269-313498085eb1",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "6a2efbfc-ef95-4681-aa73-c7ccff977a6a",
+            "titolo": "YouTube Automation e Scaling",
+            "ordine": 28,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/6a2efbfc-ef95-4681-aa73-c7ccff977a6a",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "1189818e-98f3-481d-aee8-b2fb724727b1",
+            "titolo": "Metodi di Guadagno",
+            "ordine": 29,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/1189818e-98f3-481d-aee8-b2fb724727b1",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "9980c478-84e0-4929-9188-93bf6b51a4c1",
+            "titolo": "Strategia In-Feed Ads",
+            "ordine": 30,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/9980c478-84e0-4929-9188-93bf6b51a4c1",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "a55a3271-73e8-4b97-91bb-6c65afcd46c0",
+            "titolo": "Liveclass Dicembre 2023",
+            "ordine": 31,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/a55a3271-73e8-4b97-91bb-6c65afcd46c0",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "1290f9cd-9f99-4589-992c-f5b73542a596",
+            "titolo": "Liveclass Dicembre 2022",
+            "ordine": 32,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/1290f9cd-9f99-4589-992c-f5b73542a596",
+            "durata_s": null,
+            "stato": "da-fare"
+          },
+          {
+            "lesson_id": "48ed8f33-06d7-43e6-8044-50c827cb0c57",
+            "titolo": "Liveclass Novembre 2021",
+            "ordine": 33,
+            "tipo": "video",
+            "categoria_id": "4b3cc983-52be-4f1e-9e74-d6e69be867c8",
+            "url": "https://corsi.muccarossa.com/courses/products/da098baa-0e44-4192-8ef5-e7cdbf3fd2ee/modules/4b3cc983-52be-4f1e-9e74-d6e69be867c8/lessons/48ed8f33-06d7-43e6-8044-50c827cb0c57",
+            "durata_s": null,
+            "stato": "da-fare"
+          }
+        ]
+      }
+    ]
+  }
+}
