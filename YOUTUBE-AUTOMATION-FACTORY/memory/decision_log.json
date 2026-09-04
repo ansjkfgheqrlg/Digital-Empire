@@ -1804,5 +1804,23 @@
     "alternatives_rejected": [],
     "confidence": 0.8,
     "timestamp": "2026-09-04T10:53:40.788234"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260904-110618-cd4de5",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 1885, velocity media 1.6 viste/ora, indice cash cow reale 15.4 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-09-04T11:06:18.378610"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260904-110618-cd4de5",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.5 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-09-04T11:06:18.503869"
   }
 ]

@@ -1076,5 +1076,32 @@
     ],
     "valida": true,
     "blocchi": []
+  },
+  {
+    "run_id": "yt-20260904-110618-cd4de5",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "BLOCCO"
+      }
+    ],
+    "valida": false,
+    "blocchi": [
+      {
+        "regolatore": "regolatore-originalita",
+        "motivo": "Trovate 3 sequenze di 8+ parole identiche al transcript sorgente: e' una copia, va riscritto."
+      }
+    ]
   }
 ]

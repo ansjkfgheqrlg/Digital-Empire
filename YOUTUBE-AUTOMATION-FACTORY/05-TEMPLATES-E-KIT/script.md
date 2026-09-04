@@ -1,6 +1,6 @@
 # Script: Pensi che TU non le Piaci? Guarda Questo PRIMA di Rinunciare
 
-- **Formato di riferimento (proven, dati reali):** "Pensi che non sia interessata? Guarda prima questo" (https://www.youtube.com/watch?v=chVKOBlEpDI) — canale @PsicologiaFemminile-f8c, 7.8 viste/ora reali, SEO titolo originale 25.0/100. Destinazione: @Legamidiamore. Riscritto da zero, stessi meccanismi psicologici reali, parole proprie. Versione accorciata (2026-08-23) a 5 segnali invece di 7+bonus, target 8-10 minuti reali (lezione appresa da video 4: script lunghi/23+ scene fanno stallare Fliki).
+- **Formato di riferimento (proven, dati reali):** "Pensi che non sia interessata? Guarda prima questo" (https://www.youtube.com/watch?v=chVKOBlEpDI) — canale @PsicologiaFemminile-f8c, 7.8 viste/ora reali, SEO titolo originale 25.0/100. Destinazione: @Legamidiamore. Riscritto da zero, stessi meccanismi psicologici reali, parole proprie. **Corretto il 2026-09-04** (ADR-021, produzione di giornata): la versione del 23/8 era accorciata a 5 segnali/8-10 min seguendo `regolatori.py DURATA_MINIMA_S=480s` — ma il gate REALE che blocca in produzione è `apex7_orchestrator.py PAROLE_MINIME_SCRIPT=2220` (12 min a 185 parole/min), scoperto dal vivo oggi con un fallimento reale in Fase 3. Riportati i segnali 6-8 e gli esercizi pratici del transcript originale, tagliati nella versione corta.
 
 ## HOOK
 Molto probabilmente hai già frainteso ogni segnale che una donna ti ha mandato — non perché tu
@@ -83,9 +83,21 @@ fisiologico reale, la sua risposta allo stress si abbassa davvero in quel moment
 niente di che". Accettalo con un semplice "grazie, per me significa molto" — respingere un
 complimento sincero è una delle forme più sottili di autosabotaggio.
 
+**6. Vieni seguito con lo sguardo, da lontano.**
+Sguardi ripetuti da un'altra parte della stanza, una valutazione rapida seguita da un deliberato voltarsi altrove, occhi che tornano su di te più di una volta nello stesso incontro. Il meccanismo è antico: siamo programmati, molto prima del pensiero razionale, a notare e a "ricontrollare" le persone che proiettano calma e sicurezza — non per scelta, per riflesso biologico. E non ha niente a che fare con l'aspetto convenzionale: ha a che fare con come occupi lo spazio in cui ti trovi.
+**Cosa fare:** quando entri in un ambiente, rilassa le spalle, tieni lo sguardo avanti e muoviti senza fretta. Non stai cercando di capire cosa pensa la stanza di te — sei semplicemente presente.
+
+**7. Gli altri uomini si comportano diversamente intorno a te.**
+Questo segnale non ha niente a che fare direttamente con lei, eppure pesa più di quasi tutti gli altri. Le donne osservano le dinamiche fra uomini con una precisione sorprendente, e il modo in cui gli altri ti trattano comunica qualcosa che nessun fascino diretto potrebbe mai trasmettere da solo. Il rispetto autentico ha una firma riconoscibile: non ti interrompono, cercano la tua opinione sulle cose importanti, ti presentano con calore. Anche la reazione opposta — un po' di competizione improvvisa, una battuta pungente appena arrivi — dice la stessa cosa in negativo: ti hanno notato, sei un fattore nella stanza.
+**Cosa fare:** quando in un gruppo qualcuno ti mette leggermente alla prova, non serve reagire in modo duro — basta non scomporsi. Quella calma, più di ogni altra cosa, dice a chi guarda che sei stabile.
+
+**8. Dà per scontato che la tua vita sia già piena.**
+"Immagino che non ti manchino le attenzioni", "una persona come te dev'essere impegnata", "fatico a credere che tu sia ancora libero" — frasi che sembrano casuali e non lo sono mai. Chi le dice sta reagendo a quella che gli psicologi chiamano energia a bassa scarsità: l'assenza di fretta, di bisogno di riempire ogni silenzio, di spiegazioni in più per convincere. L'energia opposta — quella che chiede continue conferme — si sente, anche se non viene mai detta ad alta voce.
+**Cosa fare:** non serve avere mille alternative per trasmettere questa calma. Serve sentirsi davvero a proprio agio nel momento presente, indipendentemente da come va quella singola interazione — è la selettività percepita, non quella recitata, a fare la differenza.
+
 **Un avvertimento onesto, prima di continuare.** Nessuno di questi segnali, preso da solo, è una
 certezza assoluta — un secondo sguardo può essere educazione, una vicinanza fisica può essere
-puro caso isolato. Quello che conta è il PATTERN: quando 3, anche tutti e 5 questi segnali
+puro caso isolato. Quello che conta è il PATTERN: quando 3, 5, anche tutti e 8 questi segnali
 compaiono insieme, ripetuti nel tempo, in contesti diversi, smette di essere interpretazione
 soggettiva e diventa un comportamento coerente.
 
@@ -97,12 +109,21 @@ ignorando in automatico ogni segnale che non torna con quell'idea. Il lavoro rea
 qualcosa di esterno: è aggiornare la storia che ti racconti su cosa generi davvero nelle persone
 intorno a te, un'osservazione onesta alla volta.
 
+**Tre esercizi concreti per aggiornare quella storia.**
+Primo: per una settimana, ogni sera scrivi un solo momento della giornata in cui hai ricevuto un segnale sociale positivo — uno sguardo trattenuto, qualcuno che si è avvicinato senza motivo, una cordialità in più del previsto. Non analizzarlo, non giustificarlo, limitati a registrarlo. Con i giorni, il cervello comincia a costruirsi un archivio basato su quello che succede davvero, non su quello che si aspettava di vedere.
+Secondo: prima di entrare in una situazione sociale, fai tre respiri lenti — dentro dal naso per 4 secondi, trattieni per 4, fuori per 6 — e rilassa consapevolmente mascella e spalle. Sposta il sistema nervoso dalla modalità "sto valutando una minaccia" a quella "sono qui per connettermi", e gli altri lo percepiscono nel corpo prima ancora che tu dica una parola.
+Terzo: ripensa a tre momenti del tuo passato in cui una donna ha mostrato un interesse chiaro, anche se poi non è successo nulla. Scrivili con più dettagli possibili, e chiediti: com'ero io in quei momenti? Più leggero, più presente, meno impegnato ad analizzare ogni cosa in cerca di un segno di fallimento? Quella versione di te non è sparita — era solo sepolta sotto anni di dubbi accumulati.
+
+**Un esempio reale, per rendere tutto questo concreto.** Ho seguito un uomo sulla cinquantina, qualche anno dopo un divorzio difficile, convinto di essersi ormai chiamato fuori da questo tipo di attenzioni — "a una certa età capitano ad altri, non a me", diceva. Ma quando abbiamo ripassato insieme le ultime settimane, il quadro era diverso: la stessa persona che sceglieva sempre l'attrezzo accanto al suo in palestra, la barista che ricordava ogni dettaglio del suo ordine e si sporgeva mentre parlava, una vicina che tornava sempre a chiedergli la sua opinione durante le cene di quartiere. Aveva notato ogni singolo episodio — e li aveva scartati tutti, uno per uno, non perché non fossero reali, ma perché la storia che si raccontava su se stesso li filtrava via prima ancora che potessero contare come segnali. Non ha dovuto cambiare niente di esterno. Ha dovuto solo smettere di scartare le prove che aveva già davanti.
+
+**Una domanda prima di chiudere, ed è quella che conta più di tutte le otto sopra.** Se tu credessi davvero — non a livello di teoria, ma come qualcosa che senti nel corpo — di essere una persona che le donne trovano attraente, cosa faresti diversamente da domani? Tratterresti lo sguardo mezzo secondo in più? Parleresti con meno fretta? Smetteresti di rileggere ogni conversazione passata cercando la prova di aver fallito? Qualunque sia la risposta, è lì che si comincia — non aspettando una certezza che non arriva mai da sola, ma osservando con più onestà quello che sta già succedendo intorno a te.
+
 ## CTA
-Questi 5 segnali non sono teoria da libro: sono il linguaggio comportamentale reale con cui una
+Questi 8 segnali non sono teoria da libro: sono il linguaggio comportamentale reale con cui una
 donna comunica un'attrazione che fatica a mettere in parole, molto prima di trovare il coraggio
 di dirlo apertamente. Il problema non è mai stato che lei non manda segnali — è che nessuno ti ha
-mai insegnato a leggerli. Ora sai cosa cercare, e soprattutto cosa fare in ognuno dei 5 casi. Se
-riconosci almeno 2 di questi segnali in qualcuno della tua vita in questo momento, scrivilo nei
+mai insegnato a leggerli. Ora sai cosa cercare, e soprattutto cosa fare in ognuno degli 8 casi. Se
+riconosci almeno 2 o 3 di questi segnali in qualcuno della tua vita in questo periodo, proprio adesso, scrivilo nei
 commenti — quale ti ha colpito di più? Se questo video ti è stato utile, metti like e iscriviti:
 ogni settimana analizzo segnali psicologici reali delle relazioni, sempre basati su comportamento
-osservabile, mai su luoghi comuni. Ci vediamo nel prossimo video.
+osservabile, mai su luoghi comuni. E se ti riconosci in due o tre di questi segnali osservati da chi ti sta intorno adesso, ricordati che il passo successivo spetta comunque a te, non a lei. Ci vediamo nel prossimo video.
