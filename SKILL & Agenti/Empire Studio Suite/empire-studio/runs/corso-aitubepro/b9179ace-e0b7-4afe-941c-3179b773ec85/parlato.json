@@ -1,0 +1,2563 @@
+{
+  "lesson_id": "b9179ace-e0b7-4afe-941c-3179b773ec85",
+  "modello": "base",
+  "durata_s": 2470.3,
+  "parole": 5843,
+  "blocchi": [
+    {
+      "inizio": 6.54,
+      "fine": 17.54,
+      "testo": "Ciao a tutti e benvenuti in questo tutorial su Wondershare Filmora, che è uno dei video editor più potenti, più veloci, ma soprattutto più economici che ci sia."
+    },
+    {
+      "inizio": 17.54,
+      "fine": 23.54,
+      "testo": "La prima cosa che dobbiamo fare ovviamente andare sul sito Filmora.wondershare.it."
+    },
+    {
+      "inizio": 23.54,
+      "fine": 29.54,
+      "testo": "Allora ci tengo a precisare che Filmora ha una versione gratuita che vi permette di fare praticamente tutto."
+    },
+    {
+      "inizio": 29.54,
+      "fine": 37.54,
+      "testo": "Ora prima di scaricare guardate prima il tutorial in modo da avere tutto quanto chiaro e tutto quanto sotto controllo."
+    },
+    {
+      "inizio": 37.54,
+      "fine": 45.54,
+      "testo": "La questa fantastica di Filmora come vi dicevo è che possiamo avere immediatamente la versione gratuita e testare e vedere se ci piace."
+    },
+    {
+      "inizio": 45.54,
+      "fine": 52.54,
+      "testo": "Ma vi faccio vedere però quanto costa prima di scaricarlo gradi, in modo che cavide se far caso vostro oppure no."
+    },
+    {
+      "inizio": 52.54,
+      "fine": 60.54,
+      "testo": "Allora come potete vedere c'è un piano per pedo o che vuol dire che dura per sempre che costa solamente 80 euro."
+    },
+    {
+      "inizio": 60.54,
+      "fine": 66.54,
+      "testo": "Io ho acquistato la versione mi sembra sette, addirittura nel 2017."
+    },
+    {
+      "inizio": 66.54,
+      "fine": 72.54,
+      "testo": "Siamo nel 2023 e ho avuto tutti gli aggiornamenti gratuiti la parte di Filmora."
+    },
+    {
+      "inizio": 72.54,
+      "fine": 80.54,
+      "testo": "E soprattutto è cambiato e migliorato tantissimo nel corso del tempo e ho montato veramente tanti, tanti, tanti, tanti video,"
+    },
+    {
+      "inizio": 80.54,
+      "fine": 84.54,
+      "testo": "soprattutto all'inizio quando non avevo computer potenti come quello di oggi."
+    },
+    {
+      "inizio": 84.54,
+      "fine": 91.54,
+      "testo": "Però Filmora oggi è diventata veramente una realtà importante e quindi andiamo a vedere tutto quello che ci permette di fare."
+    },
+    {
+      "inizio": 91.54,
+      "fine": 100.54,
+      "testo": "La prima cosa è che possiamo fare ho un piano da 26 euro al mese o possiamo fare un piano da 50 euro annuale,"
+    },
+    {
+      "inizio": 100.54,
+      "fine": 112.54,
+      "testo": "quindi ogni anno dovete rinnovare però ovviamente sarebbe stupido pagare 50 euro all'anno quando con 80 euro in realtà avete gli aggiornamenti per sempre."
+    },
+    {
+      "inizio": 112.54,
+      "fine": 122.54,
+      "testo": "Ok, in Filmora aggiunto diverse funzioni che adesso vi farò vedere nel dettaglio, ovviamente all'inizio io vi consiglio di partire con questo."
+    },
+    {
+      "inizio": 122.54,
+      "fine": 132.54,
+      "testo": "Se non avete io 80 euro perché può capitare in questo momento, potete iniziare magari con questo primo piano giusto per provarlo oppure con la versione gratuita,"
+    },
+    {
+      "inizio": 132.54,
+      "fine": 135.54,
+      "testo": "che però come vedrete non è il massimo."
+    },
+    {
+      "inizio": 135.54,
+      "fine": 143.54,
+      "testo": "E' una cosa fantastica e data devoluzione anche dell'intelligenza artificiale non solo filmora si va sempre ad aggiornare."
+    },
+    {
+      "inizio": 143.54,
+      "fine": 151.54,
+      "testo": "Infatti ci sono tantissime funzioni. Il pagamento potete farlo o con paybolo con qualsiasi alta tipo di carta."
+    },
+    {
+      "inizio": 151.54,
+      "fine": 161.54,
+      "testo": "Quindi la cosa che dobbiamo fare ovviamente è dopo aver acquistato provare filmora, vi basterà cliccare su prova gradi se potete installare direttamente la versione qui."
+    },
+    {
+      "inizio": 161.54,
+      "fine": 168.54,
+      "testo": "Quindi ci cliccate, andate avanti e dopo la registrazione ci troviamo in una pagina come questa."
+    },
+    {
+      "inizio": 168.54,
+      "fine": 183.54,
+      "testo": "E eccoci qui che ci troviamo all'interno di filmora. La prima cosa che vediamo ovviamente è questa schermata come vi dicevo in questo momento in cui sto registrando questo tutorial è stata da poco rilascia dalla versione 12, che è una versione molto potente."
+    },
+    {
+      "inizio": 184.54,
+      "fine": 192.54,
+      "testo": "Allora andiamo a vedere subito cosa si può fare come vedete ci sono delle funzioni tra cui la registrazione dell'oscermo ma che si può fare anche all'interno."
+    },
+    {
+      "inizio": 192.54,
+      "fine": 210.54,
+      "testo": "E poi alcune cose già pronte per sistemare i vostri video per tagliare il video per poter unire una serie di foto per poter migliorare l'audio e per sincronizzare automaticamente quei video, quei audio dove ci sono problemi di sincronizzazione."
+    },
+    {
+      "inizio": 210.54,
+      "fine": 215.54,
+      "testo": "Ma quello che interessa noi in questo momento ovviamente come si crea un progetto."
+    },
+    {
+      "inizio": 215.54,
+      "fine": 221.54,
+      "testo": "La prima cosa è che vediamo che possiamo decidere come avviare il nostro progetto."
+    },
+    {
+      "inizio": 221.54,
+      "fine": 235.54,
+      "testo": "Quindi abbiamo la possibilità di farlo in sedicinoni che sono i video praticamente per YouTube, per Instagram il ritrato, quindi video verticali, la modalità standard che possiamo utilizzare anche per YouTube ovviamente."
+    },
+    {
+      "inizio": 235.54,
+      "fine": 243.54,
+      "testo": "La versione 3 quarti, la versione 21 noni, che è la modalità cinema, oppure i video verticali un po' più grandi."
+    },
+    {
+      "inizio": 243.54,
+      "fine": 248.54,
+      "testo": "Allora io inizio subito con widescreen quindi che cosa faccio?"
+    },
+    {
+      "inizio": 248.54,
+      "fine": 253.54,
+      "testo": "Clicco sul nuovo progetto e si avrirà questa versione."
+    },
+    {
+      "inizio": 253.54,
+      "fine": 256.54,
+      "testo": "Quindi siamo all'interno del nostro video editor."
+    },
+    {
+      "inizio": 256.54,
+      "fine": 267.54,
+      "testo": "Adesso andiamo ad analizzare ogni singola voce e mi paro a capire perché filmora è estremamente potente e soprattutto ci può aiutare alla grande in quelli che sono i nostri progetti."
+    },
+    {
+      "inizio": 267.54,
+      "fine": 277.54,
+      "testo": "Allora, intanto vi faccio vedere una delle cose che mi piacciono di più in assoluto per quanto riguarda filmora, che è la facilità di utilizzo."
+    },
+    {
+      "inizio": 277.54,
+      "fine": 287.54,
+      "testo": "Per poter portare all'interno della timeline, la timeline sarebbe questa, i nostri video ci basterà semplicemente trascinarli."
+    },
+    {
+      "inizio": 287.54,
+      "fine": 298.54,
+      "testo": "Io in questo momento sto trascinando la prima parte del video che state per vedere, quindi ve lo faccio direttamente in tempo reale così capite come ho fatto alcuni effetti mentre vedete del video."
+    },
+    {
+      "inizio": 298.54,
+      "fine": 313.54,
+      "testo": "La creazione del proxy vi consiglio ovviamente di mettere sì perché vi consentirà di avere una versione più piccola del progetto, quindi la qualità non sarà il massimo mentre lavorate, ma la qualità finale sarà fantastico."
+    },
+    {
+      "inizio": 313.54,
+      "fine": 322.54,
+      "testo": "Questo ovviamente vi permetterà di avere una velocità maggiore del computer e non avere problemi poi quando andate a dedicare il video."
+    },
+    {
+      "inizio": 322.54,
+      "fine": 347.54,
+      "testo": "Vedete sì, ed ecco qui che ci troviamo ovviamente la prima parte del nostro video, vogliamo inserirlo una nuova parte, possiamo ov fare direttamente così, o possiamo registrare direttamente lo schermo vedete, o da la webcam, o da lo schermo del PC e addirittura possiamo anche registrare una voce fuori campo, che questo per i nostri video YouTube, ovviamente se vogliamo andare ad esempio a tempo nel nostro video è un'ottima funzione."
+    },
+    {
+      "inizio": 347.54,
+      "fine": 361.54,
+      "testo": "Un altro modo per aggiungere i media qui sopra e cliccare due volte col tastosinistro, quindi clicchiamo e ci troviamo in questa parte, ok? Dio aggiungo anche la parte 2 in questo momento giusto per farvi vedere come si fa, ok?"
+    },
+    {
+      "inizio": 361.54,
+      "fine": 374.54,
+      "testo": "Quindi ho la parte 1 e la parte 2 del progetto, dopo aver capito come importare vi faccio vedere qualche altra cosa, in grandisco qui così riuscite a vedere meglio tutto quello che bado a fare."
+    },
+    {
+      "inizio": 374.54,
+      "fine": 386.54,
+      "testo": "Allora qui abbiamo la possibilità di salvare dei nostri media che andiamo ad utilizzare spesso, quindi ad esempio i effetti di il tasto iscriviti possiamo utilizzare la musica tutte queste cose qui."
+    },
+    {
+      "inizio": 386.54,
+      "fine": 399.54,
+      "testo": "Abbiamo uno spazio graduato che ci da più mora su cloud in modo da non dover avere per forse i nostri file, con il piano prodo, dovrebbe essere un giga, dovrebbe essere un giga quindi comunque va bene."
+    },
+    {
+      "inizio": 399.54,
+      "fine": 407.54,
+      "testo": "Qui abbiamo la possibilità ovviamente di avere delle prese lezioni di quelli che poi sono tutti parametri del video."
+    },
+    {
+      "inizio": 407.54,
+      "fine": 418.54,
+      "testo": "Ma adesso iniziamo subito con una cosa molto importante che ha me piace tantissimo, allora io come prima cosa trascino il file, ok?"
+    },
+    {
+      "inizio": 418.54,
+      "fine": 429.54,
+      "testo": "Abbiamo la possibilità di adattare al file multimediale, quindi il nostro file registrato 3840 per 2060 oppure possiamo mantenere le impostazioni del progetto."
+    },
+    {
+      "inizio": 429.54,
+      "fine": 438.54,
+      "testo": "Io per facilità in questo momento metto questa, se poi volete avere un video migliore ovviamente mettete quello più grande."
+    },
+    {
+      "inizio": 438.54,
+      "fine": 450.54,
+      "testo": "Andiamo a vedere qui per rimpicciolire o diminuire la timeline ci basterà, rimpicciolire la così o allargarla così quando dobbiamo fare la avoria ad esempio di precisione, ok?"
+    },
+    {
+      "inizio": 450.54,
+      "fine": 462.54,
+      "testo": "Andiamo subito a vedere le funzioni quelli più basilari, ecco diciamo così, allora se io faccio play come vedete all'interno del video non c'era niente perché non stavo parlando."
+    },
+    {
+      "inizio": 462.54,
+      "fine": 477.54,
+      "testo": "Ok, come si fanno i tagli, come vedete abbiamo la possibilità di trascinare la nostra linea rossa, ci basterà cliccare sul laforbige, ok?"
+    },
+    {
+      "inizio": 477.54,
+      "fine": 487.54,
+      "testo": "Selezioniamo qui, tasto destro e mettiamo elimina, come vedete in automatico il nostro video è stato tagliato quindi se io vado a faccio play,"
+    },
+    {
+      "inizio": 488.54,
+      "fine": 502.54,
+      "testo": "ok il video parte direttamente da ciavo a tutti e benvenuti in questo video, vi ho fatto vedere questa che la funzione del taglio quella più facile, abbiamo un altro modo che è quello di utilizzare il tasto c e il tasto b della nostra tastiera."
+    },
+    {
+      "inizio": 502.54,
+      "fine": 513.54,
+      "testo": "Quindi se io oré si far un taglio, ok facciamo finita che io oré si far un taglio qui, clicco col tasto c, ok?"
+    },
+    {
+      "inizio": 513.54,
+      "fine": 521.54,
+      "testo": "Vi basterà cliccare col tasto b ed ecco qui che ho selezionato la parte, ok? Come vedete è stata divisa."
+    },
+    {
+      "inizio": 521.54,
+      "fine": 531.54,
+      "testo": "Quindi ovviamente questo lo potete fare anche direttamente come vi ho detto dalla timeline, questa è una cosa che poi col tempo andrete a migliorare direttamente voi."
+    },
+    {
+      "inizio": 532.54,
+      "fine": 546.54,
+      "testo": "Dopo aver capito come impostare un video, vi faccio vedere anche come sovrapporre un video come aggiungere la musica e come potere modificare le parti quelle basilari, come vi dicevo importante partire dalle basi per capire tutto."
+    },
+    {
+      "inizio": 546.54,
+      "fine": 554.54,
+      "testo": "Quindi se io volessi aggiungere un'altra parte di video sopra immaginate che stiamo modificando un video di qualcuno, ok?"
+    },
+    {
+      "inizio": 554.54,
+      "fine": 570.54,
+      "testo": "Io voglio aggiungere un nuovo video sopra, ok? Ecco qui che qua, ad esempio, ciò la mia parte del mio secondo video che sono andato ad incollare nella timeline e lo sovrapposta quindi come vedete è messa qui in alto, ok?"
+    },
+    {
+      "inizio": 570.54,
+      "fine": 577.54,
+      "testo": "E che cosa vuol dire che il video prima ci sarà la parte questa qui che abbiamo messo di sotto, ok?"
+    },
+    {
+      "inizio": 577.54,
+      "fine": 591.54,
+      "testo": "Però la parte che c'è sopra è quella che si vedrà quando arriva il momento, ok? Quando la timeline arriva direttamente, in facti come vedete qui si vede il montaggio e il taglio che io ho fatto dove vi stavo spiegando come fare."
+    },
+    {
+      "inizio": 591.54,
+      "fine": 599.54,
+      "testo": "Quindi abbiamo capito anche come soprappore dei video, anche qui potete fare i vostri solidi tagli, eccetera."
+    },
+    {
+      "inizio": 599.54,
+      "fine": 605.54,
+      "testo": "E ovviamente se vuole da aggiungere la musica potete importarla direttamente come vi ho fatto vedere prima, ok?"
+    },
+    {
+      "inizio": 605.54,
+      "fine": 614.54,
+      "testo": "Quindi se io volessi importare ad esempio questa musica, ok? La trascino qui e come vedete lo inserida nella timeline in basso."
+    },
+    {
+      "inizio": 614.54,
+      "fine": 623.54,
+      "testo": "Se volete aggiungere suoni, epetti eccetera e adesso vi farò vedere come si fa lo possiamo fare direttamente da queste timeline."
+    },
+    {
+      "inizio": 623.54,
+      "fine": 632.54,
+      "testo": "Non c'è un limite di timeline che potete creare e quindi potete sbizzarvivi a fare di tutto e di più."
+    },
+    {
+      "inizio": 632.54,
+      "fine": 639.54,
+      "testo": "Ora vi faccio vedere un'altra funzione molto molto interessante. Allora lascio solamente questa prima parte di 38 secondi del video,"
+    },
+    {
+      "inizio": 639.54,
+      "fine": 646.54,
+      "testo": "giusto per farvi vedere un po' come funziona. E iniziamo subito con le cose importanti di filmora."
+    },
+    {
+      "inizio": 646.54,
+      "fine": 654.54,
+      "testo": "Ecco qui che se vuoi cliccate su stock media, abbiamo in tanto un elenco personale dove possiamo salvare i nostri preferiti."
+    },
+    {
+      "inizio": 654.54,
+      "fine": 663.54,
+      "testo": "Ma poi guardate qui che cosa c'è. Ci sono degli stock video già pronti, quindi senza utilizzare ad esempio Big Sabake,"
+    },
+    {
+      "inizio": 663.54,
+      "fine": 672.54,
+      "testo": "che troviamo qui oppure Embado eccetera. Abbiamo direttamente dei video che possiamo andare a prendere direttamente dal nostro video."
+    },
+    {
+      "inizio": 672.54,
+      "fine": 681.54,
+      "testo": "Quindi facciamo non lo sto scrivo sole, ok? Guardate qui quanti video che io posso utilizzare che ho sul sole."
+    },
+    {
+      "inizio": 681.54,
+      "fine": 689.54,
+      "testo": "Ok, qui abbiamo la possibilità di selezionare la risoluzione, quindi come vogliamo il video e qui se lo vogliamo,"
+    },
+    {
+      "inizio": 689.54,
+      "fine": 698.54,
+      "testo": "esaggio, ritratto o quadrato. Quindi se clicchiamo ritratto, ovviamente avremo il sole così verticale. Ok, lo vedete?"
+    },
+    {
+      "inizio": 698.54,
+      "fine": 707.54,
+      "testo": "E queste è fantastico perché non c'è bisogno di perdere più tempo ad andare a scaricare e fetti, clip e quant'altro,"
+    },
+    {
+      "inizio": 707.54,
+      "fine": 714.54,
+      "testo": "perché lo possiamo fare direttamente da qui. Allo stesso po' ci sono anche le foto."
+    },
+    {
+      "inizio": 714.54,
+      "fine": 723.54,
+      "testo": "Ok, quindi se vuoi volete inserire una foto del sole, la prendete la dracinata e qui guardate. Quando il video deve arrivare nella parte del sole,"
+    },
+    {
+      "inizio": 723.54,
+      "fine": 731.54,
+      "testo": "ecco qui che si vedrà il sole. Se dovessimo mettere il video, vi metto il video qua e vi faccio vedere."
+    },
+    {
+      "inizio": 731.54,
+      "fine": 737.54,
+      "testo": "Intanto come vedete, viene scaricato direttamente, quindi non c'è bisogno che lo scaricate sul vostro computer."
+    },
+    {
+      "inizio": 737.54,
+      "fine": 744.54,
+      "testo": "Mettoplay ed ecco qui che c'è la parte del sole. Questo è strordinaria, è una cosa strordinaria,"
+    },
+    {
+      "inizio": 744.54,
+      "fine": 751.54,
+      "testo": "è una delle cose che mi piace di più di filmora perché non abbiamo la necessità di scaricare clip,"
+    },
+    {
+      "inizio": 751.54,
+      "fine": 759.54,
+      "testo": "ma come vedete non c'è solo big sales, ma ci sono anche le gif, c'è bigsa, bei e c'è un splash."
+    },
+    {
+      "inizio": 759.54,
+      "fine": 766.54,
+      "testo": "Vi voglio però far notare una cosa, che quando andiamo a selezionare i nostri video vedete,"
+    },
+    {
+      "inizio": 766.54,
+      "fine": 773.54,
+      "testo": "abbiamo l'azio e lo ho già fatto vedere, la possibilità di scegliere la risoluzione del nostro video,"
+    },
+    {
+      "inizio": 773.54,
+      "fine": 779.54,
+      "testo": "è una cosa che già vi ho fatto vedere, ma è molto importante da capire perché se dobbiamo fare un video,"
+    },
+    {
+      "inizio": 779.54,
+      "fine": 785.54,
+      "testo": "come vi dicevo, provo a scriverla ad esempio con New York, facciamo che sto facendo video di una città,"
+    },
+    {
+      "inizio": 785.54,
+      "fine": 791.54,
+      "testo": "io bisogno ovviamente di delle immagine ad altissima qualità, e guardate qui la qualità del video,"
+    },
+    {
+      "inizio": 791.54,
+      "fine": 797.54,
+      "testo": "ovviamente dovete scaricarlo ecco qui che c'è il video in altissima qualità,"
+    },
+    {
+      "inizio": 797.54,
+      "fine": 803.54,
+      "testo": "quindi andiamo a rendere dei video in maniera velociissima totalmente originali, ok?"
+    },
+    {
+      "inizio": 803.54,
+      "fine": 808.54,
+      "testo": "Ricordatevi questa parte perché è fondamentale, poi che cosa succede?"
+    },
+    {
+      "inizio": 809.54,
+      "fine": 815.54,
+      "testo": "Abbiamo la possibilità qua in cello così, abbiamo tutto sotto controllo,"
+    },
+    {
+      "inizio": 815.54,
+      "fine": 819.54,
+      "testo": "qua ovviamente possiamo selezionare se vogliamo le miniature grandi,"
+    },
+    {
+      "inizio": 819.54,
+      "fine": 823.54,
+      "testo": "piccole queste sono cose che poi vi potete gestire direttamente voi,"
+    },
+    {
+      "inizio": 823.54,
+      "fine": 829.54,
+      "testo": "ma ne ha a vedere un'altra cosa straordinaria, la musica, c'è bisogno di avere sempre musica,"
+    },
+    {
+      "inizio": 829.54,
+      "fine": 836.54,
+      "testo": "pagamento, eccetera, eccetera, assolutamente no, però nella musica vi voglio far notare una cosa,"
+    },
+    {
+      "inizio": 836.54,
+      "fine": 842.54,
+      "testo": "allora se io vado su musica ci ritroveremo qui questo tasto, c'è scritto tutti, gratuito o pagato,"
+    },
+    {
+      "inizio": 842.54,
+      "fine": 848.54,
+      "testo": "che cosa vogliono dire queste cose? Se io clicco su gratuito, ecco qui gavro della musica,"
+    },
+    {
+      "inizio": 848.54,
+      "fine": 854.54,
+      "testo": "gratuita che mi da direttamente filmora disponibile per i miei video, ok?"
+    },
+    {
+      "inizio": 854.54,
+      "fine": 861.54,
+      "testo": "Quindi se volessi stessi facendo un blog, ad esempio, oppure cliccate su play, ascoltate la musica,"
+    },
+    {
+      "inizio": 862.54,
+      "fine": 868.54,
+      "testo": "e se vi piace la potete trascinare direttamente all'interno del vostro video, ok?"
+    },
+    {
+      "inizio": 868.54,
+      "fine": 875.54,
+      "testo": "Anche qui il audio lo potete tagliare, potete fare quello che volete come vi ho fatto vedere prima,"
+    },
+    {
+      "inizio": 875.54,
+      "fine": 892.8,
+      "testo": "allora guardate qui cosa succede quando parte la musica, ok?"
+    },
+    {
+      "inizio": 892.8,
+      "fine": 898.8,
+      "testo": "Qui abbiamo la possibilità quindi utilizzando questa lineetta di qua basso,"
+    },
+    {
+      "inizio": 898.8,
+      "fine": 906.8,
+      "testo": "se no, ci sono due volte io che parlo, ok? Qui abbiamo la possibilità di alzare o di abbassare il volume in base"
+    },
+    {
+      "inizio": 906.8,
+      "fine": 912.8,
+      "testo": "a come ci serve, e come vedete ci sono un sacco di audio gratuiti per ogni venienza,"
+    },
+    {
+      "inizio": 912.8,
+      "fine": 919.8,
+      "testo": "quindi per l'intro musica pop, guardate queste tutta musica gratuita che potete utilizzare ed è ottimo,"
+    },
+    {
+      "inizio": 919.8,
+      "fine": 925.8,
+      "testo": "ci sono anche degli effetti sonori, quindi guardate, ok?"
+    },
+    {
+      "inizio": 925.8,
+      "fine": 933.8,
+      "testo": "Quindi se volete aggiungere suoni particolari e effetti, ce ne sono tantissimi gratuiti,"
+    },
+    {
+      "inizio": 933.8,
+      "fine": 941.8,
+      "testo": "anche in questo caso vi basta selezionare le mettere qui, e in un clic praticamente anche questa cosa è stata fatta,"
+    },
+    {
+      "inizio": 941.8,
+      "fine": 950.78,
+      "testo": "quindi guardate cosa succede, ok? Avete visto c'è stato il suono, ovviamente andate a vedere in base a quello che vi serve,"
+    },
+    {
+      "inizio": 950.78,
+      "fine": 956.78,
+      "testo": "quindi cartone animati, strumentale, suon ambientale, guardate ce ne sono veramente tanti effetti"
+    },
+    {
+      "inizio": 956.78,
+      "fine": 964.78,
+      "testo": "che vi possono tornare utili, e questa è un'altra cosa straordinaria di filmora, però come vi ho detto,"
+    },
+    {
+      "inizio": 964.78,
+      "fine": 971.78,
+      "testo": "io ho fatto vedere che ci sono dei audio questi qui gratuito, oppure ci sono questi dove ci è scritto pagato, ok?"
+    },
+    {
+      "inizio": 971.78,
+      "fine": 976.78,
+      "testo": "pagato che cosa vuol dire? Vedete questo di amantino che vedete qui?"
+    },
+    {
+      "inizio": 977.78,
+      "fine": 982.78,
+      "testo": "Ok, clicchiamo play, vediamo se c'è qualcosa che ci piace, e che cosa succede?"
+    },
+    {
+      "inizio": 982.78,
+      "fine": 989.78,
+      "testo": "Succede che per utilizzare questa musica dobbiamo pagare, infatti come vedete,"
+    },
+    {
+      "inizio": 989.78,
+      "fine": 999.78,
+      "testo": "possiamo acquistare o provarlo, ok? Io adesso è più metto provalo giusto per vedere come verrebbe il video con l'effetto,"
+    },
+    {
+      "inizio": 999.78,
+      "fine": 1009.07,
+      "testo": "ok? Quindi faccio play, vedete, c'è l'audio, se mi piace io lo posso acquistare,"
+    },
+    {
+      "inizio": 1009.07,
+      "fine": 1014.07,
+      "testo": "quindi quello che vuoi potete fare è acquistare direttamente l'effetto che vi piace, ok?"
+    },
+    {
+      "inizio": 1014.07,
+      "fine": 1023.07,
+      "testo": "Se lo lasciamo nel video, quando andremo ad esportare il video alla fine ci dice vuolete rimuovere il sono appagamento"
+    },
+    {
+      "inizio": 1023.07,
+      "fine": 1028.07,
+      "testo": "oppure vuolete acquistarlo, quindi questo è verrà alla fine del video."
+    },
+    {
+      "inizio": 1028.07,
+      "fine": 1035.07,
+      "testo": "Se clicchiamo su acquista vi faccio vedere un attimo come funziona, perché abbiamo diversi pacchetti per quanto riguarda"
+    },
+    {
+      "inizio": 1035.07,
+      "fine": 1042.07,
+      "testo": "gli effetti i plugin, eccetera eccetera. Allora come vedete abbiamo il piano menzile, ok?"
+    },
+    {
+      "inizio": 1042.07,
+      "fine": 1050.07,
+      "testo": "Quindi che costa 20 euro al mese, abbiamo il piano trimestrale che costa 40 euro, quindi ogni 3 mesi,"
+    },
+    {
+      "inizio": 1050.07,
+      "fine": 1057.07,
+      "testo": "e abbiamo il piano annuale che costa 99 euro, e abbiamo la possibilità di utilizzare in tanto tutti i video,"
+    },
+    {
+      "inizio": 1057.07,
+      "fine": 1064.07,
+      "testo": "tutti gli audio, il supporto tecnico, abbiamo la possibilità di utilizzare gli effetti creativi li quali da professionale."
+    },
+    {
+      "inizio": 1064.07,
+      "fine": 1072.07,
+      "testo": "La rimozione dell'ospondo che queste una funzione è nuova che c'è per quanto riguarda l'intelligenza artificiale."
+    },
+    {
+      "inizio": 1072.07,
+      "fine": 1083.07,
+      "testo": "Possiamo aggiungere tanti titoli nuovi per le editing del video e possiamo utilizzare tanti, tanti, tanti, tanti, tanti, tanti altri film stock standard, ok?"
+    },
+    {
+      "inizio": 1083.07,
+      "fine": 1089.07,
+      "testo": "Tutto questo costa 100 euro. Se volete capire gli effetti i plugin quali sono vi basterà a guardare,"
+    },
+    {
+      "inizio": 1089.07,
+      "fine": 1097.07,
+      "testo": "qui verranno sempre aggiornati ovviamente di solito e sparno sempre così, te potete utilizzare tutto, ok?"
+    },
+    {
+      "inizio": 1097.07,
+      "fine": 1106.07,
+      "testo": "E' questo qua, ovviamente, l'abbonamento che abbiamo visto prima. Quindi ricordatevi tutti gli effetti li vedete acquistare in un'unica volta,"
+    },
+    {
+      "inizio": 1106.07,
+      "fine": 1112.07,
+      "testo": "ma già con quello che c'è gratis che adesso vi faccio vedere funziona veramente tutto alla grande."
+    },
+    {
+      "inizio": 1112.07,
+      "fine": 1124.07,
+      "testo": "Ok, andiamo avanti e vediamo le funzioni di filmora, quindi mettiamo un attimo, un giusto così per farvi capire come vado a montare il video, ok?"
+    },
+    {
+      "inizio": 1124.07,
+      "fine": 1131.07,
+      "testo": "E quindi abbiamo visto che possiamo aggiungere i effetti sonori, possiamo aggiungere la musica, questa è una cosa fantastica,"
+    },
+    {
+      "inizio": 1131.07,
+      "fine": 1138.07,
+      "testo": "qui ovviamente ci sono degli audio delle cose in tendenza che il morava a spingere e ci sono tutti i video."
+    },
+    {
+      "inizio": 1138.07,
+      "fine": 1147.07,
+      "testo": "Quindi già abbiamo visto funzioni straordinaria, ma c'è ancora un'altra cosa straordinaria che sono i titoli, ok?"
+    },
+    {
+      "inizio": 1147.07,
+      "fine": 1157.07,
+      "testo": "I titoli guardate ci sono una marea di titoli, anche in questo caso ci sono questi gratis, ci sono questi appagamento."
+    },
+    {
+      "inizio": 1157.07,
+      "fine": 1164.07,
+      "testo": "Se io clicco appagamento qui tra i consigliati mi va a vedere uno solo, come vedete ce ne sono tanti altri, qua vi va a vedere l'ante prima."
+    },
+    {
+      "inizio": 1164.07,
+      "fine": 1175.07,
+      "testo": "Se io ho metto gratuito ce ne sono veramente, veramente tanti. Questo qui è uno ad esempio un titolo che io uso spesso perché mi piace,"
+    },
+    {
+      "inizio": 1175.07,
+      "fine": 1183.07,
+      "testo": "questi qui ce ne sono veramente, veramente tanti, guardate, metto tutti e vado a scegliere quello che mi piace di più."
+    },
+    {
+      "inizio": 1183.07,
+      "fine": 1190.07,
+      "testo": "Se avete l'appagamento gratuito, cliccate su gratuito, cliccate su i titoli e andiamo a vedere quelli che ci sono."
+    },
+    {
+      "inizio": 1190.07,
+      "fine": 1197.07,
+      "testo": "Come si fa ad incollare il titolo possiamo direttamente prenderlo e trascinarlo direttamente sulla nostra timeline."
+    },
+    {
+      "inizio": 1197.07,
+      "fine": 1201.07,
+      "testo": "Come funziona guardate, lo vedete?"
+    },
+    {
+      "inizio": 1201.07,
+      "fine": 1211.07,
+      "testo": "Se io lo volessimo di vigare con lo qui posso spostarlo, decidere dove metterlo, oppure scrivere stiamo facendo una video top 10, ok?"
+    },
+    {
+      "inizio": 1211.07,
+      "fine": 1221.07,
+      "testo": "Se scrivo numero 1 ad esempio, quindi quando arriverà il video, la parte del video guardate qui cosa succede, numero 1, ok?"
+    },
+    {
+      "inizio": 1221.07,
+      "fine": 1230.07,
+      "testo": "Ma ce ne sono tantissimi ne potete utilizzare un miliardo di questi titoli, sono veramente belli e funzionano tutti."
+    },
+    {
+      "inizio": 1230.07,
+      "fine": 1238.07,
+      "testo": "Sono molto facili da utilizzare, sono veloci e come vi dicevo non c'è più bisogno di impazzire a stare di edro su cosa fare,"
+    },
+    {
+      "inizio": 1238.07,
+      "fine": 1243.07,
+      "testo": "come farlo, perché farlo eccetera eccetera, assolutamente no."
+    },
+    {
+      "inizio": 1243.07,
+      "fine": 1246.07,
+      "testo": "Se cliccate su titolo però guardate che cosa succede?"
+    },
+    {
+      "inizio": 1246.07,
+      "fine": 1253.07,
+      "testo": "Oltre questi qui che ad esempio non messo uno, abbiamo la possibilità di vedere anche il font."
+    },
+    {
+      "inizio": 1253.07,
+      "fine": 1259.07,
+      "testo": "Abbiamo la possibilità, sono addirittura, sono divisi di titoli in base a quando vanno messi."
+    },
+    {
+      "inizio": 1259.07,
+      "fine": 1263.07,
+      "testo": "Questi sono titoli ad esempio che sono iniziali che andrebbero messi all'inizio."
+    },
+    {
+      "inizio": 1263.07,
+      "fine": 1269.07,
+      "testo": "Questi qui sono i video quelli che vanno in basso dove magari andrà a scrivere guardatevi."
+    },
+    {
+      "inizio": 1269.07,
+      "fine": 1276.07,
+      "testo": "Facciamo sempre stiamo facendo una classifica dei migliori animali, ok?"
+    },
+    {
+      "inizio": 1276.07,
+      "fine": 1285.07,
+      "testo": "Ok, qui c'è il nostro testo, scrivo tipo il leone, metto la scritta nera se non lo vedete, ho scritto leoneo."
+    },
+    {
+      "inizio": 1285.07,
+      "fine": 1292.07,
+      "testo": "Ok, e abbiamo il nostro testo, lo possiamo modificare, lo possiamo spostare dove vogliamo."
+    },
+    {
+      "inizio": 1292.07,
+      "fine": 1299.07,
+      "testo": "E veramente in un attimo, qua possiamo modificare la grandezza, qua possiamo modificare la scrittura."
+    },
+    {
+      "inizio": 1299.07,
+      "fine": 1305.07,
+      "testo": "Possiamo fare tutto, possiamo scegliere l'animazione quindi vedete questa parte in animata così."
+    },
+    {
+      "inizio": 1305.07,
+      "fine": 1312.07,
+      "testo": "E' molto molto semplice, ovviamente non vi posso spiegare ogni singolo titolo comodilizzarlo,"
+    },
+    {
+      "inizio": 1312.07,
+      "fine": 1317.07,
+      "testo": "ma guardate un'altra funzione, ci sono i sottotitoli quindi se voi volete aggiungere il vostro testo,"
+    },
+    {
+      "inizio": 1317.07,
+      "fine": 1324.07,
+      "testo": "ma qui a basso guardate, io ho trascinato i sottotitoli e ci sono i sottotitoli,"
+    },
+    {
+      "inizio": 1324.07,
+      "fine": 1330.07,
+      "testo": "voglio provare questi, metto questi ed eccoli qui i sottotitoli."
+    },
+    {
+      "inizio": 1330.07,
+      "fine": 1335.07,
+      "testo": "Ma stai attenti perché per i sottotitoli adesso vi farò vedere un'altra cosa straordinaria."
+    },
+    {
+      "inizio": 1335.07,
+      "fine": 1344.07,
+      "testo": "Alla fine del video ci sono i crediti quindi dovete ringraziare qualcuno che ha lavorato al canale eccetera."
+    },
+    {
+      "inizio": 1344.07,
+      "fine": 1355.07,
+      "testo": "Ok eccoli qui personaggi, quindi Giuseppe qua potete descrivere praticamente i nomi di chi ha lavorato."
+    },
+    {
+      "inizio": 1355.07,
+      "fine": 1361.07,
+      "testo": "Queste molto bello sembra un video poi più professionali eccetera, guardate cosa succede, vedete."
+    },
+    {
+      "inizio": 1361.07,
+      "fine": 1373.07,
+      "testo": "Mi sto facendo vedere degli esempi, ce ne sono tantissimi, vi consiglio di andare a vedermeli tutti e a decidere quali sono i titoli migliori per voi."
+    },
+    {
+      "inizio": 1373.07,
+      "fine": 1377.07,
+      "testo": "Ma ve lo faccio rivedere, ce ne sono una marea."
+    },
+    {
+      "inizio": 1377.07,
+      "fine": 1384.07,
+      "testo": "Poi un altro passaggio ci sono le transizioni, abbiamo detto, abbiamo capito che nei nostri video,"
+    },
+    {
+      "inizio": 1384.07,
+      "fine": 1392.07,
+      "testo": "una parte importante andare a evitare più possibile quello che il video e adesso ve lo faccio vedere."
+    },
+    {
+      "inizio": 1392.07,
+      "fine": 1396.07,
+      "testo": "Allora ho incollato tipo due parti di video quindi quando andate a creare un video,"
+    },
+    {
+      "inizio": 1396.07,
+      "fine": 1401.07,
+      "testo": "andrete a inserire tante clip, guardate qui."
+    },
+    {
+      "inizio": 1401.07,
+      "fine": 1406.07,
+      "testo": "Se io lascio il video originale quello che succede è che è finita una clip parte e l'altra così."
+    },
+    {
+      "inizio": 1406.07,
+      "fine": 1413.07,
+      "testo": "Ma se io clicco su transizioni, la transizione cosa è il passaggio da una clip all'altra."
+    },
+    {
+      "inizio": 1413.07,
+      "fine": 1415.07,
+      "testo": "Anche qui ne abbiamo una marea."
+    },
+    {
+      "inizio": 1415.07,
+      "fine": 1419.07,
+      "testo": "Ok ci sono quelle gradi, se ci sono quelle appagamento."
+    },
+    {
+      "inizio": 1419.07,
+      "fine": 1421.07,
+      "testo": "Io ho metto gradi, ma mi faccio vedere."
+    },
+    {
+      "inizio": 1421.07,
+      "fine": 1428.07,
+      "testo": "Ad esempio, vado ad incollare la transizione la metto qui nel mezzo tra le due clip."
+    },
+    {
+      "inizio": 1428.07,
+      "fine": 1432.07,
+      "testo": "Guardate, metto Play, guardate cosa succede."
+    },
+    {
+      "inizio": 1432.07,
+      "fine": 1435.07,
+      "testo": "Ok, avete visto? Questo è una transizione."
+    },
+    {
+      "inizio": 1435.07,
+      "fine": 1437.07,
+      "testo": "C'è ne sono tantissime."
+    },
+    {
+      "inizio": 1437.07,
+      "fine": 1443.07,
+      "testo": "Bene faccio vedere giusto per rafforzare il concetto 2-3."
+    },
+    {
+      "inizio": 1443.07,
+      "fine": 1448.07,
+      "testo": "Qua vado a mettere questa qui con l'acqua, ad esempio, guardate cosa succede."
+    },
+    {
+      "inizio": 1448.07,
+      "fine": 1452.07,
+      "testo": "Voglio modifica che vedete c'è l'onda che si drascina via tutto."
+    },
+    {
+      "inizio": 1452.07,
+      "fine": 1457.07,
+      "testo": "Oppure voglio usiamo questa che mi sembra molto carina."
+    },
+    {
+      "inizio": 1457.07,
+      "fine": 1461.07,
+      "testo": "Non lo ho mai usato da forse è stata giutta addirittura da poco."
+    },
+    {
+      "inizio": 1461.07,
+      "fine": 1464.07,
+      "testo": "Quindi se io metto Play, ok, avete visto."
+    },
+    {
+      "inizio": 1464.07,
+      "fine": 1467.07,
+      "testo": "Guardate quanti ecce ne sono."
+    },
+    {
+      "inizio": 1467.07,
+      "fine": 1472.07,
+      "testo": "Vedete fare quello per Youtube, mettete like, un cuore, etc."
+    },
+    {
+      "inizio": 1472.07,
+      "fine": 1474.07,
+      "testo": "Guardate qui."
+    },
+    {
+      "inizio": 1474.07,
+      "fine": 1477.07,
+      "testo": "Andiamo di edro, mettiamo Play, guardate il video."
+    },
+    {
+      "inizio": 1477.07,
+      "fine": 1479.07,
+      "testo": "Ok, ci sono i cuori e si va avanti."
+    },
+    {
+      "inizio": 1479.07,
+      "fine": 1481.07,
+      "testo": "Cismo oppure, mettete un like."
+    },
+    {
+      "inizio": 1481.07,
+      "fine": 1483.07,
+      "testo": "Guardate qui quanti ecce ne sono."
+    },
+    {
+      "inizio": 1483.07,
+      "fine": 1485.07,
+      "testo": "Potete veramente spizzarrivi."
+    },
+    {
+      "inizio": 1485.07,
+      "fine": 1491.07,
+      "testo": "Ed è tutto, tutto, compreso nell'abbonamento gratuito."
+    },
+    {
+      "inizio": 1491.07,
+      "fine": 1494.07,
+      "testo": "Ok, quindi questo è straordinario."
+    },
+    {
+      "inizio": 1494.07,
+      "fine": 1497.07,
+      "testo": "Andiamo avanti e andiamo a vedere tutte le altre funzioni."
+    },
+    {
+      "inizio": 1497.07,
+      "fine": 1499.07,
+      "testo": "Ovviamente ci sono anche gli effetti."
+    },
+    {
+      "inizio": 1499.07,
+      "fine": 1504.07,
+      "testo": "Vi ricordate che vi diciamo sempre che per modificare i video"
+    },
+    {
+      "inizio": 1504.07,
+      "fine": 1507.07,
+      "testo": "dobbiamo renderli originali e tutte queste cose qui."
+    },
+    {
+      "inizio": 1507.07,
+      "fine": 1511.07,
+      "testo": "Bene, vi basterà veramente, trascinare."
+    },
+    {
+      "inizio": 1511.07,
+      "fine": 1513.07,
+      "testo": "Guardate un attimo il video, no?"
+    },
+    {
+      "inizio": 1513.07,
+      "fine": 1515.07,
+      "testo": "Guardate lo qui in alto a destra."
+    },
+    {
+      "inizio": 1515.07,
+      "fine": 1518.07,
+      "testo": "Vi basterà, io inserido la clip e come vedete?"
+    },
+    {
+      "inizio": 1518.07,
+      "fine": 1523.07,
+      "testo": "Adesso c'è questa nebio linea che va rendere il video unico."
+    },
+    {
+      "inizio": 1523.07,
+      "fine": 1525.07,
+      "testo": "In realtà l'abbiamo già modificato."
+    },
+    {
+      "inizio": 1525.07,
+      "fine": 1529.07,
+      "testo": "Oppure voglio aggiungere la scintilla, guardate."
+    },
+    {
+      "inizio": 1529.07,
+      "fine": 1531.07,
+      "testo": "L'aggiungo ed ecco la qui."
+    },
+    {
+      "inizio": 1531.07,
+      "fine": 1533.07,
+      "testo": "Quindi veramente con due click."
+    },
+    {
+      "inizio": 1533.07,
+      "fine": 1537.07,
+      "testo": "Guardate, ho aggiunto un'altra giusto per farvi vedere come"
+    },
+    {
+      "inizio": 1537.07,
+      "fine": 1539.07,
+      "testo": "modificarla al massimo."
+    },
+    {
+      "inizio": 1539.07,
+      "fine": 1542.07,
+      "testo": "Oppure aggiungo pure questa, guardate."
+    },
+    {
+      "inizio": 1542.07,
+      "fine": 1546.07,
+      "testo": "Il video è diventato un video original e non è più riconoscibile."
+    },
+    {
+      "inizio": 1546.07,
+      "fine": 1548.07,
+      "testo": "Ed è un video nuovo."
+    },
+    {
+      "inizio": 1548.07,
+      "fine": 1549.07,
+      "testo": "Vedete?"
+    },
+    {
+      "inizio": 1549.07,
+      "fine": 1552.07,
+      "testo": "Quindi queste sono delle funzioni straordinarie per i youtube,"
+    },
+    {
+      "inizio": 1552.07,
+      "fine": 1554.07,
+      "testo": "per i gashco channel e non solo."
+    },
+    {
+      "inizio": 1554.07,
+      "fine": 1557.07,
+      "testo": "Guardate quanti effetti ci sono."
+    },
+    {
+      "inizio": 1557.07,
+      "fine": 1560.07,
+      "testo": "E praticamente questi qui sono tutti gratis."
+    },
+    {
+      "inizio": 1560.07,
+      "fine": 1563.07,
+      "testo": "Ok, sono tutti gratis."
+    },
+    {
+      "inizio": 1563.07,
+      "fine": 1567.07,
+      "testo": "Andiamo ad eliminare questa parte."
+    },
+    {
+      "inizio": 1567.07,
+      "fine": 1569.07,
+      "testo": "Elimino anche questa."
+    },
+    {
+      "inizio": 1569.07,
+      "fine": 1573.07,
+      "testo": "E potete veramente intre secondi"
+    },
+    {
+      "inizio": 1573.07,
+      "fine": 1575.07,
+      "testo": "utilizzare questi effetti."
+    },
+    {
+      "inizio": 1575.07,
+      "fine": 1577.07,
+      "testo": "Poi ci sono degli effetti video."
+    },
+    {
+      "inizio": 1577.07,
+      "fine": 1581.07,
+      "testo": "Ok, gli effetti video vanno ovviamente o a cambiare."
+    },
+    {
+      "inizio": 1581.07,
+      "fine": 1586.07,
+      "testo": "Vedete qui, potete selezionare, far vedere quale parte di video o lette."
+    },
+    {
+      "inizio": 1586.07,
+      "fine": 1589.07,
+      "testo": "Questi qui ovviamente voglio vedere a studiare"
+    },
+    {
+      "inizio": 1589.07,
+      "fine": 1591.07,
+      "testo": "personalmente se li volete utilizzare."
+    },
+    {
+      "inizio": 1591.07,
+      "fine": 1594.07,
+      "testo": "Perché ogni funzione a sé."
+    },
+    {
+      "inizio": 1594.07,
+      "fine": 1597.07,
+      "testo": "Ok, miglioramente automatico."
+    },
+    {
+      "inizio": 1597.07,
+      "fine": 1600.07,
+      "testo": "Vi va a sistemare la luce in automatico."
+    },
+    {
+      "inizio": 1600.07,
+      "fine": 1602.07,
+      "testo": "Ok, bellezza vi va a migliorare,"
+    },
+    {
+      "inizio": 1602.07,
+      "fine": 1604.07,
+      "testo": "solo a tutto quando ci sono volte,"
+    },
+    {
+      "inizio": 1604.07,
+      "fine": 1606.07,
+      "testo": "è l'aluminosità."
+    },
+    {
+      "inizio": 1606.07,
+      "fine": 1608.07,
+      "testo": "Poi ci sono tutti questi sistemi,"
+    },
+    {
+      "inizio": 1608.07,
+      "fine": 1610.07,
+      "testo": "questi sono sempre in intelligenza artificiale"
+    },
+    {
+      "inizio": 1610.07,
+      "fine": 1612.07,
+      "testo": "che vi permettono di modificare."
+    },
+    {
+      "inizio": 1612.07,
+      "fine": 1615.07,
+      "testo": "Se ci sono volte potete utilizzare questi effetti,"
+    },
+    {
+      "inizio": 1615.07,
+      "fine": 1617.07,
+      "testo": "quindi le emogi e girafasi."
+    },
+    {
+      "inizio": 1617.07,
+      "fine": 1620.07,
+      "testo": "Guardate, ce ne sono veramente tantissare,"
+    },
+    {
+      "inizio": 1620.07,
+      "fine": 1622.07,
+      "testo": "ben possibile far beli vedere."
+    },
+    {
+      "inizio": 1622.07,
+      "fine": 1624.07,
+      "testo": "Poiiamo modificare il video,"
+    },
+    {
+      "inizio": 1624.07,
+      "fine": 1627.07,
+      "testo": "utilizziamo questo effetto e guardate come cambia il video."
+    },
+    {
+      "inizio": 1627.07,
+      "fine": 1630.07,
+      "testo": "Ok, vedete come fare questo effetto."
+    },
+    {
+      "inizio": 1630.07,
+      "fine": 1633.07,
+      "testo": "Questo è ottimo se volete rendere il video unico."
+    },
+    {
+      "inizio": 1633.07,
+      "fine": 1635.07,
+      "testo": "Possiamo, ce ne sono troppi."
+    },
+    {
+      "inizio": 1635.07,
+      "fine": 1637.07,
+      "testo": "Ce ne sono veramente tanti e troppi"
+    },
+    {
+      "inizio": 1637.07,
+      "fine": 1639.07,
+      "testo": "per far beli vedere tutti."
+    },
+    {
+      "inizio": 1639.07,
+      "fine": 1642.07,
+      "testo": "Ok, ma cliccate su effetti,"
+    },
+    {
+      "inizio": 1642.07,
+      "fine": 1644.07,
+      "testo": "andate a guardarvi tutti."
+    },
+    {
+      "inizio": 1644.07,
+      "fine": 1647.07,
+      "testo": "Perché vi namorerebbe di questo strumento."
+    },
+    {
+      "inizio": 1647.07,
+      "fine": 1650.07,
+      "testo": "Un'altra funzione sono gli adesivi."
+    },
+    {
+      "inizio": 1650.07,
+      "fine": 1653.07,
+      "testo": "Anche qui, gratuito e appagamento."
+    },
+    {
+      "inizio": 1653.07,
+      "fine": 1656.07,
+      "testo": "Vogliamo mettere un cuore in questa parte di video."
+    },
+    {
+      "inizio": 1656.07,
+      "fine": 1657.07,
+      "testo": "Ok, lo dracino."
+    },
+    {
+      "inizio": 1657.07,
+      "fine": 1659.07,
+      "testo": "Ecco qui."
+    },
+    {
+      "inizio": 1659.07,
+      "fine": 1661.07,
+      "testo": "E sembra un effetto super figo"
+    },
+    {
+      "inizio": 1661.07,
+      "fine": 1664.07,
+      "testo": "che chisa quale programmatore o grafico"
+    },
+    {
+      "inizio": 1664.07,
+      "fine": 1667.07,
+      "testo": "l'ha dovuto fare invece l'abbiamo fatto con un secondo."
+    },
+    {
+      "inizio": 1667.07,
+      "fine": 1670.07,
+      "testo": "Vogliamo mettere un gattino che compare all'improviso."
+    },
+    {
+      "inizio": 1670.07,
+      "fine": 1673.07,
+      "testo": "Ecco lo qua, il gattino che compare all'improviso."
+    },
+    {
+      "inizio": 1673.07,
+      "fine": 1676.07,
+      "testo": "Vogliamo mettere la fascina."
+    },
+    {
+      "inizio": 1676.07,
+      "fine": 1679.07,
+      "testo": "Questi sono a tutti i strumenti velocissimi"
+    },
+    {
+      "inizio": 1679.07,
+      "fine": 1682.07,
+      "testo": "che vanno a rendere unico il vostro video."
+    },
+    {
+      "inizio": 1682.07,
+      "fine": 1684.07,
+      "testo": "Guardate, anche qui."
+    },
+    {
+      "inizio": 1684.07,
+      "fine": 1686.07,
+      "testo": "Ce ne sono una marea."
+    },
+    {
+      "inizio": 1686.07,
+      "fine": 1689.07,
+      "testo": "E questi sono a tutti i gradovi."
+    },
+    {
+      "inizio": 1689.07,
+      "fine": 1691.07,
+      "testo": "Quindi non dovete metterevi."
+    },
+    {
+      "inizio": 1691.07,
+      "fine": 1694.07,
+      "testo": "Li appenzare è a fare niente."
+    },
+    {
+      "inizio": 1694.07,
+      "fine": 1698.07,
+      "testo": "Dovete solo scegliere quello che è il più adatto a voi."
+    },
+    {
+      "inizio": 1698.07,
+      "fine": 1701.07,
+      "testo": "Ok, il tasto iscrivi di adesempio."
+    },
+    {
+      "inizio": 1701.07,
+      "fine": 1704.07,
+      "testo": "Non sapete come fare, perché non lo sapete fare, eccetera."
+    },
+    {
+      "inizio": 1704.07,
+      "fine": 1706.07,
+      "testo": "Ecco lo qua."
+    },
+    {
+      "inizio": 1706.07,
+      "fine": 1707.07,
+      "testo": "Qua potete ovviamente..."
+    },
+    {
+      "inizio": 1707.07,
+      "fine": 1709.07,
+      "testo": "Ce ne sono altri."
+    },
+    {
+      "inizio": 1709.07,
+      "fine": 1711.07,
+      "testo": "Quindi non messo una caso,"
+    },
+    {
+      "inizio": 1711.07,
+      "fine": 1713.07,
+      "testo": "ma ce ne sono veramente tanti altri."
+    },
+    {
+      "inizio": 1713.07,
+      "fine": 1714.07,
+      "testo": "C'è il pericolo."
+    },
+    {
+      "inizio": 1714.07,
+      "fine": 1716.07,
+      "testo": "Andiamo a mettere il pericolo."
+    },
+    {
+      "inizio": 1716.07,
+      "fine": 1718.07,
+      "testo": "Oppure c'è tutto."
+    },
+    {
+      "inizio": 1718.07,
+      "fine": 1720.07,
+      "testo": "Guardate, ce ne sono veramente tanti."
+    },
+    {
+      "inizio": 1720.07,
+      "fine": 1724.07,
+      "testo": "Sono sicuro che siete felici mentre sta devendo questo video."
+    },
+    {
+      "inizio": 1724.07,
+      "fine": 1725.07,
+      "testo": "Ma c'è sta."
+    },
+    {
+      "inizio": 1725.07,
+      "fine": 1727.07,
+      "testo": "Stesse identica cosa gli stickers."
+    },
+    {
+      "inizio": 1727.07,
+      "fine": 1730.07,
+      "testo": "I stickers sono questi qui."
+    },
+    {
+      "inizio": 1730.07,
+      "fine": 1733.07,
+      "testo": "Obviamente mettiamo gradovi non ce ne sono."
+    },
+    {
+      "inizio": 1733.07,
+      "fine": 1736.07,
+      "testo": "Ma se clicchiamo in alto ce ne sono..."
+    },
+    {
+      "inizio": 1736.07,
+      "fine": 1738.07,
+      "testo": "Sono quelli che vi ho fatto vedere prima praticamente."
+    },
+    {
+      "inizio": 1738.07,
+      "fine": 1742.07,
+      "testo": "Ok, quindi eliminiamo anche questo e andiamo avanti."
+    },
+    {
+      "inizio": 1742.07,
+      "fine": 1745.07,
+      "testo": "Abbiamo visto tutta questa prima parte"
+    },
+    {
+      "inizio": 1745.07,
+      "fine": 1748.07,
+      "testo": "per capire come poter utilizzare al meglio filmora."
+    },
+    {
+      "inizio": 1748.07,
+      "fine": 1751.07,
+      "testo": "Poi ci sono dei modelli già predefiniti."
+    },
+    {
+      "inizio": 1751.07,
+      "fine": 1754.07,
+      "testo": "Ok, che se noi andiamo ad incollare ovviamente."
+    },
+    {
+      "inizio": 1754.07,
+      "fine": 1756.07,
+      "testo": "Diciamo che va..."
+    },
+    {
+      "inizio": 1756.07,
+      "fine": 1757.07,
+      "testo": "Ecco lo qua, vedete?"
+    },
+    {
+      "inizio": 1757.07,
+      "fine": 1762.07,
+      "testo": "Ci sono degli effetti e noi possiamo poi andare a inserire il video"
+    },
+    {
+      "inizio": 1762.07,
+      "fine": 1765.07,
+      "testo": "per replicare la stessa identica cosa."
+    },
+    {
+      "inizio": 1765.07,
+      "fine": 1769.07,
+      "testo": "Honestamente non credo che servirà molti,"
+    },
+    {
+      "inizio": 1769.07,
+      "fine": 1772.07,
+      "testo": "magari se volete fare uno spot qualsiasi cosa,"
+    },
+    {
+      "inizio": 1772.07,
+      "fine": 1776.07,
+      "testo": "bene lo potete fare e funziona anche molto molto bene."
+    },
+    {
+      "inizio": 1776.07,
+      "fine": 1780.07,
+      "testo": "Ok, proseguiamo con il nostro tutorial."
+    },
+    {
+      "inizio": 1780.07,
+      "fine": 1782.07,
+      "testo": "Le vi faccio vedere altre funzioni."
+    },
+    {
+      "inizio": 1782.07,
+      "fine": 1784.07,
+      "testo": "Quindi dover visti modelli questi qui."
+    },
+    {
+      "inizio": 1784.07,
+      "fine": 1787.07,
+      "testo": "Guardate lì se c'è qualcosa che vi piace ovviamente."
+    },
+    {
+      "inizio": 1787.07,
+      "fine": 1789.07,
+      "testo": "Replicatela."
+    },
+    {
+      "inizio": 1789.07,
+      "fine": 1792.07,
+      "testo": "Aniamo a vedere altre funzioni."
+    },
+    {
+      "inizio": 1792.07,
+      "fine": 1795.07,
+      "testo": "Anzi queste qui ve le faccio vedere tra poco."
+    },
+    {
+      "inizio": 1795.07,
+      "fine": 1798.07,
+      "testo": "Aniamo a vedere un'attimo cosa possiamo fare durante il progetto."
+    },
+    {
+      "inizio": 1798.07,
+      "fine": 1801.07,
+      "testo": "Allora, qui, se vogliamo aprire nuovi progetti,"
+    },
+    {
+      "inizio": 1801.07,
+      "fine": 1804.07,
+      "testo": "ci basterà ovviamente il consiglio che video quando lavorate,"
+    },
+    {
+      "inizio": 1804.07,
+      "fine": 1808.07,
+      "testo": "salvate sempre i progetti e salvate lì con nome."
+    },
+    {
+      "inizio": 1808.07,
+      "fine": 1810.07,
+      "testo": "Così sapete assattamente a cosa si riferisce."
+    },
+    {
+      "inizio": 1810.07,
+      "fine": 1814.07,
+      "testo": "Quando lavorate tante ore su un video, su un qualcosa,"
+    },
+    {
+      "inizio": 1814.07,
+      "fine": 1820.07,
+      "testo": "è importante che poi si ha salvato."
+    },
+    {
+      "inizio": 1820.07,
+      "fine": 1824.07,
+      "testo": "Perché se dovesse succedere che si chiude il computer da un secondo all'altro,"
+    },
+    {
+      "inizio": 1824.07,
+      "fine": 1825.07,
+      "testo": "siamo fregati."
+    },
+    {
+      "inizio": 1825.07,
+      "fine": 1828.07,
+      "testo": "Quindi andiamo a vedere tutto."
+    },
+    {
+      "inizio": 1828.07,
+      "fine": 1831.07,
+      "testo": "Qui possiamo importare i file ma già vi ho fatto vedere."
+    },
+    {
+      "inizio": 1831.07,
+      "fine": 1833.07,
+      "testo": "Qui possiamo registrare direttamente."
+    },
+    {
+      "inizio": 1833.07,
+      "fine": 1834.07,
+      "testo": "Qui possiamo salvare."
+    },
+    {
+      "inizio": 1834.07,
+      "fine": 1837.07,
+      "testo": "Qui ci fa vedere un'ante prima di come verrà il video."
+    },
+    {
+      "inizio": 1837.07,
+      "fine": 1839.07,
+      "testo": "Qui ci fa vedere l'impostazione del progetto."
+    },
+    {
+      "inizio": 1839.07,
+      "fine": 1843.07,
+      "testo": "Perché magari mentre facciamo il video ci rendiamo conto che vogliamo cambiare"
+    },
+    {
+      "inizio": 1843.07,
+      "fine": 1845.07,
+      "testo": "la risoluzione del video."
+    },
+    {
+      "inizio": 1845.07,
+      "fine": 1850.07,
+      "testo": "Oppure magari abbiamo sbagliato e dobbiamo fare un video con altre proporzioni."
+    },
+    {
+      "inizio": 1850.07,
+      "fine": 1854.07,
+      "testo": "Quello che dobbiamo fare ovviamente andare a modificarlo da qui."
+    },
+    {
+      "inizio": 1854.07,
+      "fine": 1855.07,
+      "testo": "Qui è cambiato."
+    },
+    {
+      "inizio": 1855.07,
+      "fine": 1857.07,
+      "testo": "Questo è una cosa molto importante."
+    },
+    {
+      "inizio": 1857.07,
+      "fine": 1860.07,
+      "testo": "Ricordate, ve la torno di nuovo Fullscreen."
+    },
+    {
+      "inizio": 1860.07,
+      "fine": 1864.07,
+      "testo": "Qui potete ovviamente seleccionare la qualità del video."
+    },
+    {
+      "inizio": 1864.07,
+      "fine": 1866.07,
+      "testo": "Potete direttamente modificarlo da qui."
+    },
+    {
+      "inizio": 1866.07,
+      "fine": 1867.07,
+      "testo": "È molto importante."
+    },
+    {
+      "inizio": 1867.07,
+      "fine": 1869.07,
+      "testo": "Per quanto riguarda le preferenze."
+    },
+    {
+      "inizio": 1869.07,
+      "fine": 1870.07,
+      "testo": "Qui ci sono."
+    },
+    {
+      "inizio": 1870.07,
+      "fine": 1872.07,
+      "testo": "Dove verranno salvati file."
+    },
+    {
+      "inizio": 1872.07,
+      "fine": 1873.07,
+      "testo": "Tutte queste cose."
+    },
+    {
+      "inizio": 1873.07,
+      "fine": 1874.07,
+      "testo": "Qui che vi ripeto."
+    },
+    {
+      "inizio": 1874.07,
+      "fine": 1877.07,
+      "testo": "Se lasciate già le informazioni che ci sono, va comunque bene."
+    },
+    {
+      "inizio": 1877.07,
+      "fine": 1880.07,
+      "testo": "I aggiornamenti lasciate ogni settimana."
+    },
+    {
+      "inizio": 1880.07,
+      "fine": 1883.07,
+      "testo": "Perché si aggiò una spesso filmora come vi dicevo."
+    },
+    {
+      "inizio": 1883.07,
+      "fine": 1885.07,
+      "testo": "E' molto importante."
+    },
+    {
+      "inizio": 1885.07,
+      "fine": 1889.07,
+      "testo": "Qui è tutto quello che possiamo fare all'interno del video."
+    },
+    {
+      "inizio": 1889.07,
+      "fine": 1893.07,
+      "testo": "Quindi gli effetti abbiamo visto eliminarli, doyeri, eccetera."
+    },
+    {
+      "inizio": 1893.07,
+      "fine": 1897.07,
+      "testo": "Instrumenti abbiamo la possibilità di modificare i video."
+    },
+    {
+      "inizio": 1897.07,
+      "fine": 1898.07,
+      "testo": "Ok."
+    },
+    {
+      "inizio": 1898.07,
+      "fine": 1900.07,
+      "testo": "Quindi li possiamo ruotare."
+    },
+    {
+      "inizio": 1900.07,
+      "fine": 1901.07,
+      "testo": "Li possiamo stabilizzare."
+    },
+    {
+      "inizio": 1901.07,
+      "fine": 1903.07,
+      "testo": "Possiamo cambiare la luce."
+    },
+    {
+      "inizio": 1903.07,
+      "fine": 1905.07,
+      "testo": "Possiamo fare ridagli intelligente."
+    },
+    {
+      "inizio": 1905.07,
+      "fine": 1908.07,
+      "testo": "Possiamo controllare un po' tutto."
+    },
+    {
+      "inizio": 1909.07,
+      "fine": 1913.07,
+      "testo": "Nell'audio possiamo regolare l'audio."
+    },
+    {
+      "inizio": 1913.07,
+      "fine": 1915.07,
+      "testo": "Come vedete qui c'è la funzione."
+    },
+    {
+      "inizio": 1915.07,
+      "fine": 1916.07,
+      "testo": "Ok."
+    },
+    {
+      "inizio": 1916.07,
+      "fine": 1919.07,
+      "testo": "Ritorno direttamente da qua così vi faccio vedere."
+    },
+    {
+      "inizio": 1919.07,
+      "fine": 1921.07,
+      "testo": "Possiamo scollegare audio."
+    },
+    {
+      "inizio": 1921.07,
+      "fine": 1924.07,
+      "testo": "Ho cliccato su scollegaudio e praticamente cosa succede."
+    },
+    {
+      "inizio": 1924.07,
+      "fine": 1928.07,
+      "testo": "Andiamo ad dividere il video dal suono."
+    },
+    {
+      "inizio": 1928.07,
+      "fine": 1930.07,
+      "testo": "Quindi se vuoi non volete l'audio."
+    },
+    {
+      "inizio": 1930.07,
+      "fine": 1931.07,
+      "testo": "Ok."
+    },
+    {
+      "inizio": 1931.07,
+      "fine": 1932.07,
+      "testo": "Cliccate su scollegga."
+    },
+    {
+      "inizio": 1932.07,
+      "fine": 1935.07,
+      "testo": "Lo potete fare anche direttamente col tasto destro."
+    },
+    {
+      "inizio": 1935.07,
+      "fine": 1938.07,
+      "testo": "Siamo lo d'acqua, c'è scritto scollegga audio."
+    },
+    {
+      "inizio": 1938.07,
+      "fine": 1940.07,
+      "testo": "Faccio un attimo indietro."
+    },
+    {
+      "inizio": 1940.07,
+      "fine": 1941.07,
+      "testo": "Vi faccio vedere anche da qui."
+    },
+    {
+      "inizio": 1941.07,
+      "fine": 1944.07,
+      "testo": "Selezioniamo la clip, tasto destro."
+    },
+    {
+      "inizio": 1944.07,
+      "fine": 1945.07,
+      "testo": "Scollegga audio."
+    },
+    {
+      "inizio": 1945.07,
+      "fine": 1948.07,
+      "testo": "E praticamente questo è il audio del nostro video."
+    },
+    {
+      "inizio": 1948.07,
+      "fine": 1949.07,
+      "testo": "Questo qui."
+    },
+    {
+      "inizio": 1949.07,
+      "fine": 1950.07,
+      "testo": "Guardate."
+    },
+    {
+      "inizio": 1950.07,
+      "fine": 1954.05,
+      "testo": "Ok."
+    },
+    {
+      "inizio": 1954.05,
+      "fine": 1958.05,
+      "testo": "Se io volessi doyere l'audio, basta doyarlo."
+    },
+    {
+      "inizio": 1958.05,
+      "fine": 1961.05,
+      "testo": "E praticamente adesso ciò solo il video."
+    },
+    {
+      "inizio": 1961.05,
+      "fine": 1963.05,
+      "testo": "Ma non c'è più l'audio."
+    },
+    {
+      "inizio": 1963.05,
+      "fine": 1966.05,
+      "testo": "Se invece vogliamo lasciare solo l'audio facciamo al contrario."
+    },
+    {
+      "inizio": 1966.05,
+      "fine": 1969.05,
+      "testo": "Ok."
+    },
+    {
+      "inizio": 1969.05,
+      "fine": 1975.05,
+      "testo": "Quindi abbiamo direttamente il audio e non abbiamo il video."
+    },
+    {
+      "inizio": 1975.05,
+      "fine": 1979.05,
+      "testo": "Adesso dopo aver visto quello che possiamo fare nelle clip,"
+    },
+    {
+      "inizio": 1979.05,
+      "fine": 1984.05,
+      "testo": "abbiamo visto strumenti, ovviamente possiamo modificare anche il colore."
+    },
+    {
+      "inizio": 1984.05,
+      "fine": 1988.05,
+      "testo": "Se clicchiamo qui abbiamo la possibilità, qua vediamo il primo e il dopo,"
+    },
+    {
+      "inizio": 1988.05,
+      "fine": 1992.05,
+      "testo": "ovviamente di abbassare, alzare, qui ci va a vedere come si vede."
+    },
+    {
+      "inizio": 1992.05,
+      "fine": 1995.05,
+      "testo": "Anche qui la tonalità potete modificare tutto."
+    },
+    {
+      "inizio": 1995.05,
+      "fine": 1998.05,
+      "testo": "Vi ricordo che per rendere i video originali delle volte,"
+    },
+    {
+      "inizio": 1998.05,
+      "fine": 2000.05,
+      "testo": "vanno cambiate tutte queste cose."
+    },
+    {
+      "inizio": 2000.05,
+      "fine": 2004.05,
+      "testo": "Qui vedete anche qui, ovviamente dovete essere un po' espertio,"
+    },
+    {
+      "inizio": 2004.05,
+      "fine": 2006.05,
+      "testo": "comunque fate un po' di prove."
+    },
+    {
+      "inizio": 2006.05,
+      "fine": 2010.05,
+      "testo": "Vedete come volete il vostro video, più chiaro, più lungo."
+    },
+    {
+      "inizio": 2010.05,
+      "fine": 2015.05,
+      "testo": "Qui cliccando sul velocità, abbiamo la possibilità di rendere il video più lento"
+    },
+    {
+      "inizio": 2015.05,
+      "fine": 2017.05,
+      "testo": "o di rendere lo più veloce."
+    },
+    {
+      "inizio": 2017.05,
+      "fine": 2018.05,
+      "testo": "Ok."
+    },
+    {
+      "inizio": 2018.05,
+      "fine": 2021.05,
+      "testo": "E questo, ovviamente, è un'altra cosa importante."
+    },
+    {
+      "inizio": 2021.05,
+      "fine": 2025.05,
+      "testo": "Qui abbiamo la possibilità di selezionare la velocità,"
+    },
+    {
+      "inizio": 2025.05,
+      "fine": 2027.05,
+      "testo": "direttamente fattina automatico."
+    },
+    {
+      "inizio": 2027.05,
+      "fine": 2032.05,
+      "testo": "E qui ovviamente ci sono gli effetti da dove deve apparire il video,"
+    },
+    {
+      "inizio": 2032.05,
+      "fine": 2037.05,
+      "testo": "tagliarlo, girarlo, volete tagliare una parte di sopra, fate così, di sotto così."
+    },
+    {
+      "inizio": 2037.05,
+      "fine": 2041.05,
+      "testo": "Ma se volessimo spostare il video ci basterà direttamente,"
+    },
+    {
+      "inizio": 2041.05,
+      "fine": 2047.05,
+      "testo": "cliccare sulla clip, se magari la vogliamo mettere in un punto specifico del nostro video,"
+    },
+    {
+      "inizio": 2047.05,
+      "fine": 2052.05,
+      "testo": "e decidiamo ad esempio di metterla qui, o qui questo, decidiamo noi."
+    },
+    {
+      "inizio": 2052.05,
+      "fine": 2053.05,
+      "testo": "Ok."
+    },
+    {
+      "inizio": 2053.05,
+      "fine": 2057.05,
+      "testo": "Io lo rimetto, lo rendisco un attimo, giusto per continuare con il video."
+    },
+    {
+      "inizio": 2057.05,
+      "fine": 2058.05,
+      "testo": "Ok."
+    },
+    {
+      "inizio": 2058.05,
+      "fine": 2061.05,
+      "testo": "Quindi abbiamo visto un po' di cose."
+    },
+    {
+      "inizio": 2061.05,
+      "fine": 2066.05,
+      "testo": "Aiuto ovviamente qua ci sono le informazioni tutte cose che vi possono tornare utili."
+    },
+    {
+      "inizio": 2066.05,
+      "fine": 2070.05,
+      "testo": "Ma adesso come cosa sono queste funzioni?"
+    },
+    {
+      "inizio": 2070.05,
+      "fine": 2072.05,
+      "testo": "Andiamo a guardarle insieme."
+    },
+    {
+      "inizio": 2072.05,
+      "fine": 2075.05,
+      "testo": "Allora, se io clicco qui la prima cosa che vedo,"
+    },
+    {
+      "inizio": 2075.05,
+      "fine": 2077.05,
+      "testo": "è barra degli strumenti."
+    },
+    {
+      "inizio": 2077.05,
+      "fine": 2081.05,
+      "testo": "Qui li usciamo a capire subito che cosa sono, guardate."
+    },
+    {
+      "inizio": 2081.05,
+      "fine": 2083.05,
+      "testo": "Quindi annulla ci fa tornare indietro."
+    },
+    {
+      "inizio": 2083.05,
+      "fine": 2086.05,
+      "testo": "Rifai ci torna avanti in quella nelle abbiamo fatto."
+    },
+    {
+      "inizio": 2086.05,
+      "fine": 2091.05,
+      "testo": "Cliccando sull'accessino il tasto elimina, questo è dividere, quindi tagliare."
+    },
+    {
+      "inizio": 2091.05,
+      "fine": 2094.05,
+      "testo": "Audio strecce, seleccionare l'audio e modificarlo."
+    },
+    {
+      "inizio": 2094.05,
+      "fine": 2099.05,
+      "testo": "Questo è il tagliarino per tagliare e decidere dove tagliare i nostri pezzi."
+    },
+    {
+      "inizio": 2099.05,
+      "fine": 2102.05,
+      "testo": "Questo è per ridagliare la parte di video che vogliamo."
+    },
+    {
+      "inizio": 2102.05,
+      "fine": 2105.05,
+      "testo": "Questo è per scrivere i titoli."
+    },
+    {
+      "inizio": 2105.05,
+      "fine": 2107.05,
+      "testo": "Questo è per la velocità."
+    },
+    {
+      "inizio": 2107.05,
+      "fine": 2108.05,
+      "testo": "Questo è per il colore."
+    },
+    {
+      "inizio": 2108.05,
+      "fine": 2111.05,
+      "testo": "Questo è per aggiornare un ire dei video."
+    },
+    {
+      "inizio": 2111.05,
+      "fine": 2115.05,
+      "testo": "Questo è per la velocità della durata delle clip."
+    },
+    {
+      "inizio": 2115.05,
+      "fine": 2117.05,
+      "testo": "Possiamo mettere le direttamente noi in manuale."
+    },
+    {
+      "inizio": 2117.05,
+      "fine": 2124.05,
+      "testo": "Chi framing è una cosa un po' più avanzata che ci permette di andare a seleccionare"
+    },
+    {
+      "inizio": 2124.05,
+      "fine": 2128.05,
+      "testo": "un prem specifico dove vogliamo che appare qualcosa."
+    },
+    {
+      "inizio": 2128.05,
+      "fine": 2131.05,
+      "testo": "Modifica sono tutte le modifiche che mi ho fatto vedere prima."
+    },
+    {
+      "inizio": 2131.05,
+      "fine": 2136.05,
+      "testo": "Rilevamento del zilezzo ci fa capire le parti dell'audio dove non c'è suono."
+    },
+    {
+      "inizio": 2136.05,
+      "fine": 2142.05,
+      "testo": "Sincronizzazione automatica e direttamente il programma sincronizzare l'audio con magari il parlato."
+    },
+    {
+      "inizio": 2142.05,
+      "fine": 2146.05,
+      "testo": "E poi ci sono queste due funzioni che ho lasciato per ultimo."
+    },
+    {
+      "inizio": 2146.05,
+      "fine": 2149.05,
+      "testo": "E che sono molto molto importanti."
+    },
+    {
+      "inizio": 2149.05,
+      "fine": 2153.05,
+      "testo": "Che sono speech to text e text to speech."
+    },
+    {
+      "inizio": 2153.05,
+      "fine": 2155.05,
+      "testo": "Che cosa sono? Andiamo a vedere l'insieme."
+    },
+    {
+      "inizio": 2155.05,
+      "fine": 2160.05,
+      "testo": "Allora andiamo a vedere insieme questo text to speech che cos'è."
+    },
+    {
+      "inizio": 2160.05,
+      "fine": 2163.05,
+      "testo": "Allora ho inserito qui il mio video."
+    },
+    {
+      "inizio": 2163.05,
+      "fine": 2165.05,
+      "testo": "Ora facciamo una cosa."
+    },
+    {
+      "inizio": 2165.05,
+      "fine": 2169.05,
+      "testo": "Lo rendo più piccolo così almeno."
+    },
+    {
+      "inizio": 2169.05,
+      "fine": 2173.05,
+      "testo": "Possiamo lavorare con un video un po' più breve."
+    },
+    {
+      "inizio": 2173.05,
+      "fine": 2176.05,
+      "testo": "Ok. No da io ancora di più."
+    },
+    {
+      "inizio": 2176.05,
+      "fine": 2179.05,
+      "testo": "Ovviamente questo lo sto facendo io per farvi vedere il video,"
+    },
+    {
+      "inizio": 2179.05,
+      "fine": 2181.05,
+      "testo": "ma non c'è bisogno che poi lo facciate."
+    },
+    {
+      "inizio": 2181.05,
+      "fine": 2185.05,
+      "testo": "Lo vedete questo qui."
+    },
+    {
+      "inizio": 2185.05,
+      "fine": 2188.05,
+      "testo": "Io ho selezionato la clip."
+    },
+    {
+      "inizio": 2188.05,
+      "fine": 2195.05,
+      "testo": "Ci basta cliccare qua speech to text e in automatico che cosa farà il nostro programma?"
+    },
+    {
+      "inizio": 2195.05,
+      "fine": 2200.05,
+      "testo": "Andrà ad identificare quello che è il nostro testo all'interno del video."
+    },
+    {
+      "inizio": 2200.05,
+      "fine": 2205.05,
+      "testo": "Come vedete una cosa importante è che filmora ci da i secondi,"
+    },
+    {
+      "inizio": 2205.05,
+      "fine": 2210.05,
+      "testo": "che sono tanti all'inizio io sono quasi arrivato alla fine di questa cosa."
+    },
+    {
+      "inizio": 2210.05,
+      "fine": 2213.05,
+      "testo": "Ma possiamo comprare altri secondi."
+    },
+    {
+      "inizio": 2213.05,
+      "fine": 2216.05,
+      "testo": "Per comprare i secondi ci basterà cliccare su comprare altro."
+    },
+    {
+      "inizio": 2216.05,
+      "fine": 2220.05,
+      "testo": "Possiamo fare il pacchetto questo 5 euro al mese 1 hora di servizio."
+    },
+    {
+      "inizio": 2220.05,
+      "fine": 2222.05,
+      "testo": "O 20 euro al mese."
+    },
+    {
+      "inizio": 2222.05,
+      "fine": 2225.05,
+      "testo": "5 ore di servizio o 30 euro al mese."
+    },
+    {
+      "inizio": 2225.05,
+      "fine": 2227.05,
+      "testo": "Ben 10 ore di servizio."
+    },
+    {
+      "inizio": 2227.05,
+      "fine": 2229.05,
+      "testo": "Di bene dai video che fate."
+    },
+    {
+      "inizio": 2229.05,
+      "fine": 2234.05,
+      "testo": "Noi come azienda ovviamente andiamo ben oltre queste 10 ore,"
+    },
+    {
+      "inizio": 2234.05,
+      "fine": 2237.05,
+      "testo": "quindi utilizziamo altri strumenti solo per fare i sottodidoli."
+    },
+    {
+      "inizio": 2237.05,
+      "fine": 2242.05,
+      "testo": "Per i sottodidoli per dovere di cronaca vi dico che io preferisco premier pro,"
+    },
+    {
+      "inizio": 2242.05,
+      "fine": 2244.05,
+      "testo": "perché è gratuito da fare."
+    },
+    {
+      "inizio": 2244.05,
+      "fine": 2249.05,
+      "testo": "Però è una parte di tutti il video però che non ha tanti altre cose che abbiamo visto"
+    },
+    {
+      "inizio": 2249.05,
+      "fine": 2251.05,
+      "testo": "nel tutorial di oggi."
+    },
+    {
+      "inizio": 2251.05,
+      "fine": 2254.05,
+      "testo": "Quindi andiamo avanti qua non ho aggiornato."
+    },
+    {
+      "inizio": 2254.05,
+      "fine": 2258.05,
+      "testo": "Come vedete abbiamo la possibilità di avere il text to speech,"
+    },
+    {
+      "inizio": 2258.05,
+      "fine": 2262.05,
+      "testo": "però qui vedete non ho più crediti per far vero vedere,"
+    },
+    {
+      "inizio": 2262.05,
+      "fine": 2265.05,
+      "testo": "ma è la stessa cosa dello speech to text."
+    },
+    {
+      "inizio": 2265.05,
+      "fine": 2270.05,
+      "testo": "Quindi ci basterà, anzi sono già stati vatti, sono già stati gliati,"
+    },
+    {
+      "inizio": 2270.05,
+      "fine": 2271.05,
+      "testo": "fatti nella timeline."
+    },
+    {
+      "inizio": 2271.05,
+      "fine": 2274.05,
+      "testo": "Guardate qui che cosa è avvenuto."
+    },
+    {
+      "inizio": 2274.05,
+      "fine": 2277.05,
+      "testo": "Ehi è il primo o?"
+    },
+    {
+      "inizio": 2277.05,
+      "fine": 2281.05,
+      "testo": "Ok, praticamente vorrei velo faccio vedere l'icco sul tasto destro,"
+    },
+    {
+      "inizio": 2281.05,
+      "fine": 2284.05,
+      "testo": "l'icco su modifiche."
+    },
+    {
+      "inizio": 2284.05,
+      "fine": 2286.05,
+      "testo": "E qui abbiamo il nostro testo."
+    },
+    {
+      "inizio": 2286.05,
+      "fine": 2289.05,
+      "testo": "Ora non lo vedete perché è scritto in bianco."
+    },
+    {
+      "inizio": 2289.05,
+      "fine": 2293.05,
+      "testo": "Vado su personalizza, qua possiamo seleccionar il conore."
+    },
+    {
+      "inizio": 2293.05,
+      "fine": 2295.05,
+      "testo": "Ok, vedete."
+    },
+    {
+      "inizio": 2295.05,
+      "fine": 2298.05,
+      "testo": "E qui c'è tutto il testo."
+    },
+    {
+      "inizio": 2298.05,
+      "fine": 2301.05,
+      "testo": "E adesso vi farò vedere nel dettaglio, ovviamente all'inizio,"
+    },
+    {
+      "inizio": 2301.05,
+      "fine": 2303.05,
+      "testo": "io vi consiglio di lo leggete."
+    },
+    {
+      "inizio": 2303.05,
+      "fine": 2306.05,
+      "testo": "Partire con questo se non avete i 80 euro."
+    },
+    {
+      "inizio": 2306.05,
+      "fine": 2309.05,
+      "testo": "Perché boccabitare in questo è quello che ho detto prima."
+    },
+    {
+      "inizio": 2309.05,
+      "fine": 2314.05,
+      "testo": "Qui abbiamo la possibilità di andare a modificare quello che il nostro testo."
+    },
+    {
+      "inizio": 2314.05,
+      "fine": 2318.05,
+      "testo": "Quindi possiamo cambiare, ad esempio il font."
+    },
+    {
+      "inizio": 2318.05,
+      "fine": 2319.05,
+      "testo": "Vedete."
+    },
+    {
+      "inizio": 2319.05,
+      "fine": 2324.05,
+      "testo": "Lo possiamo ingrandire, quindi vedete se io vuole essere il testo più grande"
+    },
+    {
+      "inizio": 2324.05,
+      "fine": 2325.05,
+      "testo": "lo metto così."
+    },
+    {
+      "inizio": 2325.05,
+      "fine": 2328.05,
+      "testo": "Lo posso mettere al centro, a destra, di sopra."
+    },
+    {
+      "inizio": 2328.05,
+      "fine": 2332.05,
+      "testo": "Ok, posso andare a modificare veramente tutto."
+    },
+    {
+      "inizio": 2332.05,
+      "fine": 2337.05,
+      "testo": "Posso mettere l'ingrassetto, posso metterlo a sinistra."
+    },
+    {
+      "inizio": 2337.05,
+      "fine": 2341.05,
+      "testo": "Potete fare veramente tutto in base a quello che il vostro video."
+    },
+    {
+      "inizio": 2341.05,
+      "fine": 2344.05,
+      "testo": "Ok, ora lo metto al centro e lo metto grande,"
+    },
+    {
+      "inizio": 2344.05,
+      "fine": 2349.05,
+      "testo": "giusto proprio per farvi capire e come funzionano questi sottoditori."
+    },
+    {
+      "inizio": 2349.05,
+      "fine": 2352.05,
+      "testo": "Qui potete andare come ho detto a modificare il colore."
+    },
+    {
+      "inizio": 2352.05,
+      "fine": 2356.05,
+      "testo": "Qui possiamo modificare anche con l'effetto gradiente."
+    },
+    {
+      "inizio": 2356.05,
+      "fine": 2361.05,
+      "testo": "Possiamo selezionare il tipo di scritta che vogliamo vedete."
+    },
+    {
+      "inizio": 2361.05,
+      "fine": 2365.05,
+      "testo": "Ci sono tante già pronte, quindi non c'è bisogno che vi inventate niente"
+    },
+    {
+      "inizio": 2365.05,
+      "fine": 2367.05,
+      "testo": "e neanche in questo caso."
+    },
+    {
+      "inizio": 2367.05,
+      "fine": 2371.05,
+      "testo": "Potete fare un po' di testo e selezionate quella che vi piace di più."
+    },
+    {
+      "inizio": 2371.05,
+      "fine": 2376.05,
+      "testo": "Ok, in questo momento lascio questa che è pure molto bella."
+    },
+    {
+      "inizio": 2376.05,
+      "fine": 2381.05,
+      "testo": "Ok, vogliamo cambiare qualche parola ci basterà andare."
+    },
+    {
+      "inizio": 2381.05,
+      "fine": 2386.05,
+      "testo": "Qui, se è per caso perché ovviamente, può cavidare che non legge tutte le parole bene."
+    },
+    {
+      "inizio": 2386.05,
+      "fine": 2392.05,
+      "testo": "Ok, clicchiamo su appricate, tutti possiamo salvare come personalizzato il testo che abbiamo."
+    },
+    {
+      "inizio": 2392.05,
+      "fine": 2397.05,
+      "testo": "Guardate, clicco su ok, faccio play, guardate qui."
+    },
+    {
+      "inizio": 2397.05,
+      "fine": 2402.05,
+      "testo": "E in primora è tutto diverse funzioni che adesso vi paro vedere in dettaglio."
+    },
+    {
+      "inizio": 2402.05,
+      "fine": 2407.05,
+      "testo": "Ovviamente all'inizio io vi consiglio di partire con questo se non avete."
+    },
+    {
+      "inizio": 2407.05,
+      "fine": 2410.05,
+      "testo": "Qui non si legge tutto perché ho messo la scritta troppo grande."
+    },
+    {
+      "inizio": 2410.05,
+      "fine": 2415.05,
+      "testo": "Vi faccio vedere di nuovo come si va sempre per farvi capire al meglio."
+    },
+    {
+      "inizio": 2415.05,
+      "fine": 2420.05,
+      "testo": "Ok, metto una scritta un po' più piccola."
+    },
+    {
+      "inizio": 2420.05,
+      "fine": 2424.05,
+      "testo": "Così si legge tutto."
+    },
+    {
+      "inizio": 2424.05,
+      "fine": 2430.02,
+      "testo": "Torniamo in dietro e vediamo."
+    },
+    {
+      "inizio": 2430.02,
+      "fine": 2434.02,
+      "testo": "E in primora è tutto diverse funzioni che adesso vi paro vedere in dettaglio."
+    },
+    {
+      "inizio": 2434.02,
+      "fine": 2439.02,
+      "testo": "Ovviamente all'inizio io vi consiglio di partire con questo se non avete."
+    },
+    {
+      "inizio": 2439.02,
+      "fine": 2442.02,
+      "testo": "E' uno perché può cavidare in questo momento."
+    },
+    {
+      "inizio": 2442.02,
+      "fine": 2445.02,
+      "testo": "Avete visto? Ha praticamente letto tutto."
+    },
+    {
+      "inizio": 2445.02,
+      "fine": 2449.02,
+      "testo": "Adesso seguite tutta la formula di immobili digitali."
+    },
+    {
+      "inizio": 2449.02,
+      "fine": 2455.02,
+      "testo": "Se seguite la nel dettaglio e vi renderete conto che questo è uno strumento potentissimo"
+    },
+    {
+      "inizio": 2455.02,
+      "fine": 2458.02,
+      "testo": "per poter modificare tutti i vostri video."
+    },
+    {
+      "inizio": 2458.02,
+      "fine": 2463.02,
+      "testo": "Un grosso abbraccio da Pietro Kanjemi e ci vediamo nei prossimi video. Ciao a tutti."
+    }
+  ]
+}

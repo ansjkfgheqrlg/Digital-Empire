@@ -1,0 +1,743 @@
+{
+  "lesson_id": "f731e4a1-a705-4020-9e45-6b7dd7f45c92",
+  "modello": "base",
+  "durata_s": 994.9,
+  "parole": 2265,
+  "blocchi": [
+    {
+      "inizio": 6.74,
+      "fine": 12.92,
+      "testo": "Ciao a tutti e benvenuti in questo video dove andremo a vedere i text to speech."
+    },
+    {
+      "inizio": 12.92,
+      "fine": 18.38,
+      "testo": "Letteralmente text to speech vuol dire trasformare un testo in un audio."
+    },
+    {
+      "inizio": 18.38,
+      "fine": 23.02,
+      "testo": "Visto che parliamo di intelligenza artificiale sarebbe stubilo in questo caso,"
+    },
+    {
+      "inizio": 23.02,
+      "fine": 26.52,
+      "testo": "dove era assumere un professionista per registrarci un contenuto."
+    },
+    {
+      "inizio": 26.52,
+      "fine": 28.74,
+      "testo": "Oppure mettere la nostra voce."
+    },
+    {
+      "inizio": 28.74,
+      "fine": 35.6,
+      "testo": "Vi anticipo già che nei prossimi video vi farò vedere anche come poter mettere la nostra voce"
+    },
+    {
+      "inizio": 35.6,
+      "fine": 40.32,
+      "testo": "a servizio del nostro canale YouTube come farlo grazie all'intelligenza artificiale"
+    },
+    {
+      "inizio": 40.32,
+      "fine": 46.72,
+      "testo": "senza farla sembrare neanche la nostra oppure senza metterci lì a registrare ore e ore di contenuto."
+    },
+    {
+      "inizio": 46.72,
+      "fine": 51.24,
+      "testo": "Perché grazie all'intelligenza artificiale tutto questo è superfluo."
+    },
+    {
+      "inizio": 51.24,
+      "fine": 57.34,
+      "testo": "Questo video è strutturato appositamente per farbi capire che cos'è il text to speech"
+    },
+    {
+      "inizio": 57.34,
+      "fine": 59.58,
+      "testo": "e come lo dovete utilizzare."
+    },
+    {
+      "inizio": 59.78,
+      "fine": 67.78,
+      "testo": "Intanto per cercare tutti i migliori text to speech da utilizzare avete quattro opzioni."
+    },
+    {
+      "inizio": 67.78,
+      "fine": 73.58,
+      "testo": "La prima ovviamente che video le prime tre sono quelle di andare nei link che vi ho dato"
+    },
+    {
+      "inizio": 73.58,
+      "fine": 79.58,
+      "testo": "nel primo modulo di questo corso dove ci sono i tre portali di tutti i sistemi di intelligenza"
+    },
+    {
+      "inizio": 79.58,
+      "fine": 80.58,
+      "testo": "artificiale."
+    },
+    {
+      "inizio": 80.58,
+      "fine": 86.08,
+      "testo": "Ad esempio se andiamo sul pudur piria quello che possiamo fare è andare qui su cerca,"
+    },
+    {
+      "inizio": 86.08,
+      "fine": 89.08,
+      "testo": "scrivere text to speech ok."
+    },
+    {
+      "inizio": 89.08,
+      "fine": 94.58,
+      "testo": "E come vedete ci sono ben 52 intelligenza artificiali che possiamo analizzare."
+    },
+    {
+      "inizio": 94.58,
+      "fine": 97.08,
+      "testo": "Io intanto ci clicco e li lascio qui."
+    },
+    {
+      "inizio": 97.08,
+      "fine": 102.92,
+      "testo": "Un'altra cosa ad esempio su pudur stulzo il secondo mezzo dove video è quello di cliccare"
+    },
+    {
+      "inizio": 102.92,
+      "fine": 109.08,
+      "testo": "direttamente text to speech, vedete quanti ce ne sono, c'è anche speech to text quindi"
+    },
+    {
+      "inizio": 109.08,
+      "fine": 114.08,
+      "testo": "il contrario da spormare un audio in testo se magari vi può tornare utile."
+    },
+    {
+      "inizio": 114.08,
+      "fine": 119.58,
+      "testo": "Ma io in questo momento bado a mettere text to speech e vedete che ce ne sono tantissimi"
+    },
+    {
+      "inizio": 119.58,
+      "fine": 120.58,
+      "testo": "anche qui."
+    },
+    {
+      "inizio": 120.58,
+      "fine": 124.08,
+      "testo": "Stessi identica cosa lo posso fare su AI Finder."
+    },
+    {
+      "inizio": 124.08,
+      "fine": 131.78,
+      "testo": "Adesso però vi faccio vedere anche su Google scrivo text to speech italiano ok e ne troverete"
+    },
+    {
+      "inizio": 131.78,
+      "fine": 132.78,
+      "testo": "tantissimi."
+    },
+    {
+      "inizio": 132.78,
+      "fine": 137.28,
+      "testo": "Come vi ho detto qui è questo è l'unico video dove io non vi posso parvedere uno strumento"
+    },
+    {
+      "inizio": 137.28,
+      "fine": 143.58,
+      "testo": "specifico perché ce ne sono così tanti e per tutti i gusti e per tutti i generi che sarebbe"
+    },
+    {
+      "inizio": 143.58,
+      "fine": 146.58,
+      "testo": "inutile che io vi dici essi quale utilizzare."
+    },
+    {
+      "inizio": 146.58,
+      "fine": 148.58,
+      "testo": "Come dovete fare la scelta?"
+    },
+    {
+      "inizio": 148.58,
+      "fine": 153.78,
+      "testo": "In base a se gratuito appagamento dipende da voi quello che volete utilizzare, dipende"
+    },
+    {
+      "inizio": 153.78,
+      "fine": 158.58,
+      "testo": "dal genere di contenuto che potete creare, ci sono delle voce artificiali che utilizzano"
+    },
+    {
+      "inizio": 158.58,
+      "fine": 165.08,
+      "testo": "ad esempio delle voci super, super realistiche che magari trovate all'interno di questi"
+    },
+    {
+      "inizio": 165.08,
+      "fine": 170.22,
+      "testo": "strumenti ok, oppure degli strumenti dove voi potete andare ad utilizzare addirittura"
+    },
+    {
+      "inizio": 170.22,
+      "fine": 177.66,
+      "testo": "la voce di personaggi famosi ok, lo trovate direttamente anche qui, magari ve lo faccio"
+    },
+    {
+      "inizio": 177.66,
+      "fine": 182.22,
+      "testo": "vedere adesso che così mi ricorda un attimo come si chiama ok, vedete se è un ebri"
+    },
+    {
+      "inizio": 182.22,
+      "fine": 187.1,
+      "testo": "di voice changer l'anno creatora vi ripeto un esempio ma ce ne sono tanti altri che"
+    },
+    {
+      "inizio": 187.1,
+      "fine": 192.82,
+      "testo": "fanno questo, vi fanno vedere, vi fanno modificare la voce direttamente delle celebri da utilizzando"
+    },
+    {
+      "inizio": 192.82,
+      "fine": 198.62,
+      "testo": "le voci delle celebri da quindi ce ne sono tantissimi e tutti quelli che vedete qui in realtà"
+    },
+    {
+      "inizio": 198.62,
+      "fine": 204.38,
+      "testo": "possono andare bene, dipende quello che voi dovete fare, quindi io vi faccio vedere giusto"
+    },
+    {
+      "inizio": 204.38,
+      "fine": 210.74,
+      "testo": "per onore di cronaca come funziona il textus pitch quindi il sintetizzatore vocale online, come"
+    },
+    {
+      "inizio": 210.74,
+      "fine": 215.66,
+      "testo": "vedete ce ne sono tantissimi anche qui c'è l'imbarazzo della scelta io ne abbro un"
+    },
+    {
+      "inizio": 215.66,
+      "fine": 220.9,
+      "testo": "a caso ok ne ho abberto un a caso giusto per farvi vedere come funziona, andiamo a prendere"
+    },
+    {
+      "inizio": 220.9,
+      "fine": 229.14,
+      "testo": "il nostro testo ok, lo copio, lo incollo qui, possiamo selezionare la lingua vedete qua"
+    },
+    {
+      "inizio": 229.14,
+      "fine": 233.54,
+      "testo": "ad esempio ci sono solo queste lingue ma ci sono tutte le lingue del mondo posso selezionare"
+    },
+    {
+      "inizio": 233.54,
+      "fine": 241.54,
+      "testo": "la velocità, clicco black, ok vedete questa è una voce artificiale, pessima che io non"
+    },
+    {
+      "inizio": 241.54,
+      "fine": 248.18,
+      "testo": "vi consiglio ok è gratuita la posso utilizzare tutti ed è una voce che si capisce che artificiale"
+    },
+    {
+      "inizio": 248.18,
+      "fine": 254.74,
+      "testo": "ad esempio ora vi faccio vedere un altro textus pitch che io utilizzavo che si chiama l'obo"
+    },
+    {
+      "inizio": 254.74,
+      "fine": 262.3,
+      "testo": "l'obo mi sembra che si scriva così ok ecco lo qua questo è un questo è il primo che"
+    },
+    {
+      "inizio": 262.3,
+      "fine": 267.94,
+      "testo": "ho utilizzato come vedete potete creare anche un acconto gratuito iniziale io faccio la registrazione"
+    },
+    {
+      "inizio": 267.94,
+      "fine": 274.14,
+      "testo": "veloce giusto per farvi vedere come funziona uno strumento textus pitch avanzato rispetto agli altri"
+    },
+    {
+      "inizio": 274.42,
+      "fine": 279.42,
+      "testo": "qui dovete mettere quello che volete perché lo utilizzate potete mettere qualsiasi cosa io metto"
+    },
+    {
+      "inizio": 279.42,
+      "fine": 284.62,
+      "testo": "freelancer giusto per andare avanti metto youtube vedete qua vi dice cosa vuoi creare"
+    },
+    {
+      "inizio": 284.62,
+      "fine": 292.54,
+      "testo": "voce video pure solo voi soverri in questo caso metto solo voi sover ok si creerà tutta l'account"
+    },
+    {
+      "inizio": 292.54,
+      "fine": 299.42,
+      "testo": "e come vedete vi faccio vedere ora perché questo qui è già un strumento avanzato ma diciamo che"
+    },
+    {
+      "inizio": 299.42,
+      "fine": 306.06,
+      "testo": "funzionano quasi tutti allo stesso modo quindi imparando e capendo come funziona un textus pitch"
+    },
+    {
+      "inizio": 306.06,
+      "fine": 313.34,
+      "testo": "di potrete riutilizzare tutti quanti ok come vedete c'è una prova gratuita poi potete fare"
+    },
+    {
+      "inizio": 313.34,
+      "fine": 319.5,
+      "testo": "l'app grade vi faccio vedere questo perché i prezzi di strumenti che funzionano molto molto bene"
+    },
+    {
+      "inizio": 319.5,
+      "fine": 325.42,
+      "testo": "di solito sono questi come vedete potete fare o qualsiasi tipo di abbonamento dipende quello"
+    },
+    {
+      "inizio": 325.42,
+      "fine": 331.02,
+      "testo": "che volete fare con questo da venti quattro dollari al mesi avete ben cinque ore più diventi"
+    },
+    {
+      "inizio": 331.02,
+      "fine": 337.26,
+      "testo": "voci premium potete anche esportare i video perché vi dicevo si stanno evvolvendo e si evvolveranno"
+    },
+    {
+      "inizio": 337.26,
+      "fine": 344.26,
+      "testo": "sempre nuovi strumenti quindi dovete sempre restare al passo con i tempi magari questo che vi"
+    },
+    {
+      "inizio": 344.26,
+      "fine": 350.06,
+      "testo": "sto facendo vedere oggi diventerà il textus pitch più importante al mondo come probabilmente potrebbe"
+    },
+    {
+      "inizio": 350.06,
+      "fine": 355.74,
+      "testo": "scomparire dall'olge al domani proprio perché la tecnologia fa passi da gigante giorno dopo giorno"
+    },
+    {
+      "inizio": 355.74,
+      "fine": 361.74,
+      "testo": "quindi ricordatevi sempre di visitare quei portali e vedere le novità e cavire se fanno al caso vostro"
+    },
+    {
+      "inizio": 361.74,
+      "fine": 368.38,
+      "testo": "oppure no quindi come funziona andiamo all'interno di my workspace creiamo un nuovo progetto metto"
+    },
+    {
+      "inizio": 368.38,
+      "fine": 375.42,
+      "testo": "voiceover e ci ritroviamo in una pagina come questa come vedi qui c'è un vabbè questo è un"
+    },
+    {
+      "inizio": 375.42,
+      "fine": 382.78,
+      "testo": "testo di default e come vedi abbiamo la possibilità di modificare ed terminate impostazioni adesso io"
+    },
+    {
+      "inizio": 382.78,
+      "fine": 386.86,
+      "testo": "vi faccio vedere un attimo come funziona in inglese qual è la voce io ho click o play"
+    },
+    {
+      "inizio": 391.98,
+      "fine": 394.14,
+      "testo": "ok queste è un'altra voce ad esempio"
+    },
+    {
+      "inizio": 398.38,
+      "fine": 401.5,
+      "testo": "questa è un'altra voce ancora quindi guardo qui e click o play"
+    },
+    {
+      "inizio": 401.5,
+      "fine": 404.22,
+      "testo": "press generate on the right to generate speech"
+    },
+    {
+      "inizio": 404.22,
+      "fine": 411.14,
+      "testo": "vedete ogni voce ha un accento diverso sono voce ultra realistiche che non hanno nulla a che"
+    },
+    {
+      "inizio": 411.14,
+      "fine": 417.98,
+      "testo": "vedere con quelle voce che magari abbiamo visto prima ok quindi vi faccio vedere un attimo se io volessi"
+    },
+    {
+      "inizio": 417.98,
+      "fine": 426.06,
+      "testo": "aggiungere il mio testo come devo fare clicco qua ed a new block andiamo sul nostro testo questo"
+    },
+    {
+      "inizio": 426.22,
+      "fine": 437.62,
+      "testo": "che abbiamo creato prima clicco su copia vado su qui di nuovo in collo il testo qua ok e che cosa"
+    },
+    {
+      "inizio": 437.62,
+      "fine": 444.06,
+      "testo": "succede guardate succede che adesso possiamo generare il testo vedete qua ci dalla possibilità di"
+    },
+    {
+      "inizio": 444.06,
+      "fine": 449.62,
+      "testo": "generare il testo però prima di generarlo dobbiamo selezionare una voce guardate qui quanti c'e ne"
+    },
+    {
+      "inizio": 450.18,
+      "fine": 457.86,
+      "testo": "sono queste sono voci premium vedete vi dice che in tanto possiamo scegliere se maschio o femmina possiamo"
+    },
+    {
+      "inizio": 457.86,
+      "fine": 465.34,
+      "testo": "scegliere la lingua con l'accento australiano britannico o americano e questa è pazesca come cosa possiamo"
+    },
+    {
+      "inizio": 465.34,
+      "fine": 471.22,
+      "testo": "scegliere una voce di bambino una voce matura una voce di un giovane adulto o possiamo vedere per"
+    },
+    {
+      "inizio": 471.22,
+      "fine": 476.98,
+      "testo": "cosa utilizzarlo quindi audio libri ed ucazione intrattenimento marketing news questo caso gli avremo"
+    },
+    {
+      "inizio": 476.98,
+      "fine": 484.14,
+      "testo": "messo direttamente intrattenimento e ci sono una serie di voci se volessi ascoltarla se volete ascoltare"
+    },
+    {
+      "inizio": 484.14,
+      "fine": 500.22,
+      "testo": "un ademo il cade qui c'è vi rene del conto della potenzialità di questa cosa ok abbiamo la"
+    },
+    {
+      "inizio": 500.22,
+      "fine": 510.02,
+      "testo": "possibilità di scegliere voce emozionali tipo quest questa qui riesce ad adattarsi a quello che"
+    },
+    {
+      "inizio": 510.02,
+      "fine": 516.1,
+      "testo": "c'è scritto all'interno del testo e poi ci sono le voci globali tra cui quelle in italiano quindi se"
+    },
+    {
+      "inizio": 516.1,
+      "fine": 524.06,
+      "testo": "io vado qui clicco sull'engui guardate guardate quanti lingui ci sono praticamente tutte cosa faccio"
+    },
+    {
+      "inizio": 524.06,
+      "fine": 530.42,
+      "testo": "vado su italiano se il vostro video in italiano altrimenti fatelo in giapponese il landese"
+    },
+    {
+      "inizio": 530.42,
+      "fine": 538.46,
+      "testo": "coreano come volete e guardate quanti voci ci sono sono veramente tante voci comunque sono"
+    },
+    {
+      "inizio": 538.46,
+      "fine": 546.62,
+      "testo": "voci professionali ascoltiamole cerchi la voce perfetta allora sono la tua migliore opzione cerchi la"
+    },
+    {
+      "inizio": 546.62,
+      "fine": 557.34,
+      "testo": "voce perfetta cerchi la voce perfetta allora sono la tua migliore opzione cerchi la voce perfetta allora sono"
+    },
+    {
+      "inizio": 557.34,
+      "fine": 565.18,
+      "testo": "cerchi la voce perfetta ok ad esempio immaginiamo che questa è quella che c'è piaciuta di più la"
+    },
+    {
+      "inizio": 565.18,
+      "fine": 574.1,
+      "testo": "selezione ok e cosa posso fare qui posso andare a regenerare il testo quindi cliccate qui genero il"
+    },
+    {
+      "inizio": 574.1,
+      "fine": 582.22,
+      "testo": "testo attendiamo un attimo e guardate qui che cosa succede clicco blay il cantatore roberto"
+    },
+    {
+      "inizio": 582.22,
+      "fine": 587.54,
+      "testo": "vecchioni ha annunciato sulla sua pagina social la scopra ad esempio qui non ci sono bigola eccetera"
+    },
+    {
+      "inizio": 587.54,
+      "fine": 598.01,
+      "testo": "quindi io ad esempio il cantatore roberto vecchioni virgola guardate come cambia la lettura il cantatore"
+    },
+    {
+      "inizio": 598.01,
+      "fine": 603.29,
+      "testo": "roberto vecchioni ha annunciato sulla sua pagina social la scomparsa del figlio a rigo ha venuta"
+    },
+    {
+      "inizio": 603.29,
+      "fine": 607.73,
+      "testo": "dopo una lunga lotta contro una malattia ancora non specificata"
+    },
+    {
+      "inizio": 607.73,
+      "fine": 615.93,
+      "testo": "benissimo se io volessi cambiare la voce vado di nuovo qui vado su global voce vi faccio vedere vado in"
+    },
+    {
+      "inizio": 615.93,
+      "fine": 623.65,
+      "testo": "italiano e metto un'altra voce giusto per farvi capire di nuovo come funziona vediamo questa"
+    },
+    {
+      "inizio": 623.65,
+      "fine": 632.17,
+      "testo": "chi la voce perfetta ok utilizziamo questa quello che io posso fare è impostare anche all'interno"
+    },
+    {
+      "inizio": 632.17,
+      "fine": 639.61,
+      "testo": "di questa voce delle pause che si possono generare direttamente d'acqua vedete la velocità del video"
+    },
+    {
+      "inizio": 639.61,
+      "fine": 644.89,
+      "testo": "quindi se io voglio che legge più lento lo metto così lo voglio più veloce faccio così"
+    },
+    {
+      "inizio": 644.89,
+      "fine": 653.45,
+      "testo": "genero anche questo questo audio e lo ascoltiamo roberto vecchioni è uno dei cantatori più avanti"
+    },
+    {
+      "inizio": 653.45,
+      "fine": 659.13,
+      "testo": "rispettati del palorama italiano con una carriera che si sta troppo veloce lo messa più lenta"
+    },
+    {
+      "inizio": 659.69,
+      "fine": 665.89,
+      "testo": "roberto vecchioni è uno dei cantatori più avanti rispettati del palorama italiano con una carriera che si"
+    },
+    {
+      "inizio": 665.89,
+      "fine": 673.69,
+      "testo": "stende per ultre 50 anni e chi ha regalato al pubblico alcune delle canzoni più bello ok mi va bene mi piace la letta"
+    },
+    {
+      "inizio": 673.69,
+      "fine": 681.67,
+      "testo": "bene se io volessi scaricare l'audio poi ovviamente lo dovete fare con tutto il testo cliccate qui e in un"
+    },
+    {
+      "inizio": 681.67,
+      "fine": 688.13,
+      "testo": "clic anche in questo caso abbiamo la nostra voce roberto vecchioni è uno dei cantatori più avanti rispettati"
+    },
+    {
+      "inizio": 688.13,
+      "fine": 695.13,
+      "testo": "del palorama italiano con una carriera che si stende per ultre 50 anni e chi ha regalato quindi dopo aver"
+    },
+    {
+      "inizio": 695.13,
+      "fine": 702.61,
+      "testo": "visto come funziona dovete solamente trovare il textus pitch migliore per quello che il vostro video come"
+    },
+    {
+      "inizio": 702.61,
+      "fine": 711.29,
+      "testo": "vi dicevo qui non non non c'è una voce in particolare che io vi posso suggerire o un software in particolare"
+    },
+    {
+      "inizio": 711.29,
+      "fine": 717.93,
+      "testo": "c'è ne sono tantissimi guardate qui c'è che è quello che falca su vostro e quello in base alle vostre"
+    },
+    {
+      "inizio": 717.93,
+      "fine": 725.41,
+      "testo": "disponibilità e al vostro budget per mettere le pausa invece ci basterà cliccare qui su pausa e come vedete"
+    },
+    {
+      "inizio": 725.41,
+      "fine": 732.29,
+      "testo": "possiamo abbiamo la possibilità di esempio diserezionare la pausa la parola e mettere la pausa dove"
+    },
+    {
+      "inizio": 732.29,
+      "fine": 741.09,
+      "testo": "ci interessa tipo dopo finalmente voglio mettere una pausa di 0.3 secondi la posso mettere se vogliamo se c'è"
+    },
+    {
+      "inizio": 741.09,
+      "fine": 747.01,
+      "testo": "una parola che magari non viene pronuncia da bene vi faccio vedere ad esempio cosa può succedere clicco"
+    },
+    {
+      "inizio": 747.01,
+      "fine": 753.33,
+      "testo": "su pronuncia vi faccio vedere può succedere allora l'intelligenza artificiale cosa fa legge in base ai"
+    },
+    {
+      "inizio": 753.33,
+      "fine": 761.69,
+      "testo": "accenti che ci sono scritti se io ad esempio scrivo iscriviti ok guardate come viene letto iscriviti"
+    },
+    {
+      "inizio": 761.69,
+      "fine": 770.99,
+      "testo": "iscriviti vedete viene letto iscriviti se io invece voglio che questa parola iscriviti"
+    },
+    {
+      "inizio": 770.99,
+      "fine": 780.27,
+      "testo": "venga letta iscriviti invece di iscriviti magari vi metto l'accento sulla i vedo se così che voglio che"
+    },
+    {
+      "inizio": 780.27,
+      "fine": 790.15,
+      "testo": "venga letta iscriviti esatto e la giungo qui in automatico il programma leggerà quando c'è scritto"
+    },
+    {
+      "inizio": 790.15,
+      "fine": 797.31,
+      "testo": "iscriviti iscriviti dovete stare attenti quando utilizzate il textus pitch in questo strumento e in"
+    },
+    {
+      "inizio": 797.31,
+      "fine": 805.87,
+      "testo": "tutti gli altri a utilizzarlo bene mi raccomando perché gli accenti sono l'unica cosa difficile da"
+    },
+    {
+      "inizio": 805.87,
+      "fine": 813.75,
+      "testo": "comprendere e da far capire all'intelligenza artificiale ma poi è tutto indisceza una volta che capite"
+    },
+    {
+      "inizio": 813.75,
+      "fine": 819.79,
+      "testo": "quali sono le parole che vanno sistemate ok quindi ammano che le trovate magari ve le salvate su un"
+    },
+    {
+      "inizio": 819.79,
+      "fine": 826.15,
+      "testo": "file così sapete che quando c'è quella parola valette in un determinato modo un'altra cosa che fa"
+    },
+    {
+      "inizio": 826.15,
+      "fine": 832.07,
+      "testo": "questo strumento ma che stanno iniziando a fare tutti è l'aiuto nello scrivere un video ok"
+    },
+    {
+      "inizio": 832.07,
+      "fine": 837.91,
+      "testo": "molti di questi software si appoggiano a chat gpt quindi se io voglio creare un video per i youtube vedete"
+    },
+    {
+      "inizio": 837.91,
+      "fine": 847.27,
+      "testo": "clicco crea youtube video e posso di gli ad esempio di che video hai bisogno descrivi l'argomento e"
+    },
+    {
+      "inizio": 847.27,
+      "fine": 853.39,
+      "testo": "la rivelazza della rivelazza del tuo targette della tua audience ad esempio qua possiamo scrivere"
+    },
+    {
+      "inizio": 853.39,
+      "fine": 868.39,
+      "testo": "scrivi un testo che parla delle giori pose da vedere ammilano ok l'audience è il pubblico che va"
+    },
+    {
+      "inizio": 868.39,
+      "fine": 881.63,
+      "testo": "a vedere lo scrivo people 30 60 anni ok qual è l'obiettivo informare sto scrivendo a caso giusto"
+    },
+    {
+      "inizio": 881.63,
+      "fine": 895.25,
+      "testo": "per farvi vedere che genere di video è entertainment quindi trattenimento quanto deve durare cinque"
+    },
+    {
+      "inizio": 895.25,
+      "fine": 906.19,
+      "testo": "minuti ok crea andiamo a vedere il il testo che ci genererà direttamente grazie all'intelligenza"
+    },
+    {
+      "inizio": 906.19,
+      "fine": 913.55,
+      "testo": "artificiale come vi dicevo questo è uno strumento una prova ma tutti gli strumenti che andranno ad"
+    },
+    {
+      "inizio": 913.55,
+      "fine": 921.07,
+      "testo": "vedere tutti tu la verano delle peculiarità quindi quello che dovete fare voi semplicemente capire cosa vi"
+    },
+    {
+      "inizio": 921.07,
+      "fine": 929.47,
+      "testo": "può dare in più un tulle rispetto a un altro guardate qui vedete è stato creato il testo vedete merà"
+    },
+    {
+      "inizio": 929.47,
+      "fine": 938.59,
+      "testo": "creato direttamente in italiano ecco lo qui posso modificarlo o inserirlo ora ovviamente questa è"
+    },
+    {
+      "inizio": 938.59,
+      "fine": 947.51,
+      "testo": "una versione beta ma voi noi siamo i pionieri di questo movimento sapere già tutte queste informazioni vi"
+    },
+    {
+      "inizio": 947.51,
+      "fine": 953.51,
+      "testo": "permette di avere un mantaggio ultra competitivo nel corso dei mesi e degli anni che verranno rispetto a"
+    },
+    {
+      "inizio": 953.51,
+      "fine": 959.83,
+      "testo": "tutti gli altri quindi lo ribederò all'infinito all'interno di questo corso e lo ribetudo tante volte dovete"
+    },
+    {
+      "inizio": 959.83,
+      "fine": 966.63,
+      "testo": "stare sempre aggiornati con i tempi e ogni nuovo tool che esce cercate di capire come lo potete"
+    },
+    {
+      "inizio": 966.63,
+      "fine": 974.47,
+      "testo": "spruttare per dare più valore al vostro canale youtube ovviamente aumentare i guadagni nei prossimo video"
+    },
+    {
+      "inizio": 974.47,
+      "fine": 982.83,
+      "testo": "invece vi farò vedere come uno strumento all in one vi può creare il testo vi può creare la voce e"
+    },
+    {
+      "inizio": 982.83,
+      "fine": 988.15,
+      "testo": "vi può creare anche il montaggio del video ci vediamo nel prossimo video"
+    }
+  ]
+}

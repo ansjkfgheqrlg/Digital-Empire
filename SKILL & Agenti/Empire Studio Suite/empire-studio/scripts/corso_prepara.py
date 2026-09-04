@@ -48,12 +48,29 @@ def lezioni_di(categoria, corso="aitubepro"):
 
 
 def gia_fatta(lesson_id):
-    """Una lezione e' pronta quando ha il video E il parlato."""
+    """Una lezione e' pronta quando ha il video E il parlato E il video e' il suo.
+
+    L'ultima condizione e' nata da un guasto vero (2026-09-04): una lezione da 15
+    minuti era arrivata a casa come un video di 2 minuti di un altro modulo, e senza
+    controllo risultava 'pronta'. Una lezione marcata sospetta non e' pronta: va
+    riscaricata, non studiata.
+    """
     cartella = os.path.join(RUNS, lesson_id)
     mp4 = os.path.join(cartella, "video.mp4")
     txt = os.path.join(cartella, "parlato.txt")
-    return (os.path.exists(mp4) and os.path.getsize(mp4) > 100000
-            and os.path.exists(txt) and os.path.getsize(txt) > 500)
+    if not (os.path.exists(mp4) and os.path.getsize(mp4) > 100000
+            and os.path.exists(txt) and os.path.getsize(txt) > 500):
+        return False
+    stato = os.path.join(cartella, "stato.json")
+    if os.path.exists(stato):
+        try:
+            with io.open(stato, encoding="utf-8") as f:
+                d = json.load(f)
+            if d.get("passo") == "1-sospetto" or d.get("avviso"):
+                return False
+        except Exception:
+            pass
+    return True
 
 
 def esegui(script, args):
@@ -79,6 +96,13 @@ def prepara(categoria, corso="aitubepro", da=0, quante=None, modello="base"):
 
         print("[%2d/%2d] . %s" % (i, len(fetta), tit), flush=True)
         r = esegui("corso_ingest.py", ["--lezione", lid, "--corso", corso, "--nascosto"])
+        if r.returncode == 3:
+            # video sospetto: la durata non torna. NON si trascrive, altrimenti si
+            # studia il video di un'altra lezione credendo che sia questa.
+            riga = [x for x in (r.stdout or "").splitlines() if "SOSPETTA" in x]
+            print("        [!] %s" % (riga[0].strip() if riga else "video sospetto"))
+            guasti.append((lid, tit, "video sospetto"))
+            continue
         if r.returncode != 0 or not os.path.exists(os.path.join(RUNS, lid, "video.mp4")):
             coda = (r.stdout or "")[-200:] + (r.stderr or "")[-200:]
             print("        [!] scaricamento fallito: %s" % coda.replace("\n", " ")[-160:])

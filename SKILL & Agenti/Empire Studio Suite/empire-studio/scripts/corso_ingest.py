@@ -232,6 +232,78 @@ def url_lezione(lesson_id, corso="aitubepro"):
 
 
 
+def durata_flusso(url):
+    """Quanto dura il flusso che sta dietro a questo indirizzo, senza scaricarlo.
+
+    ffprobe legge solo il manifesto (poche decine di KB) e risponde in un paio di
+    secondi: e' quello che permette di scegliere il flusso GIUSTO prima di scaricare
+    centinaia di frammenti.
+    """
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "default=nw=1:nk=1", url],
+            capture_output=True, text=True, timeout=60)
+        return int(round(float(out.stdout.strip())))
+    except Exception:
+        return None
+
+
+def scegli_flusso(catturati, durata_s):
+    """Fra i flussi visti dal browser, sceglie quello che dura quanto la lezione.
+
+    PERCHE' NON BASTA PRENDERNE UNO. Le pagine del portale caricano piu' lettori:
+    oltre alla lezione ci sono video promozionali e registrazioni di webinar. Il
+    2026-09-04 la lezione 81e4e28a e' arrivata a casa due volte col video sbagliato
+    — prima l'introduzione di un altro modulo (119 s), poi un webinar di vendita
+    (1.595 s) — mentre la lezione ne dura 935. Prendere il primo flusso, o l'ultimo,
+    e' una scommessa: la durata invece e' un fatto, e si puo' misurare prima di
+    scaricare.
+
+    Se la durata della lezione non si conosce, si dichiara e si prende l'ultimo visto.
+    """
+    unici = []
+    for u in catturati:
+        if u not in unici:
+            unici.append(u)
+    if not durata_s:
+        print("[!] Durata della lezione sconosciuta: prendo l'ultimo flusso visto "
+              "(%d candidati). Il controllo sul file scaricato resta attivo." % len(unici))
+        return unici[-1]
+
+    tolleranza = max(10, 0.05 * durata_s)
+    misure = []
+    for u in unici:
+        d = durata_flusso(u)
+        misure.append((u, d))
+        print("[i] candidato: %s s attesi %s -> %s"
+              % (d if d else "?", durata_s, "SI" if d and abs(d - durata_s) <= tolleranza else "no"))
+        if d and abs(d - durata_s) <= tolleranza:
+            return u
+    if len(unici) == 1:
+        print("[!] Un solo flusso e non corrisponde alla durata attesa: lo scarico "
+              "comunque, il controllo sul file lo marchera' sospetto.")
+        return unici[0]
+    return None
+
+
+def durata_reale(percorso):
+    """Quanti secondi dura DAVVERO il file scaricato, secondo ffprobe.
+
+    Serve a smascherare i due guasti che si assomigliano e sono opposti: il video di
+    un'altra lezione (dura tutt'altro) e lo scaricamento interrotto a meta'. Senza
+    questa misura, entrambi passano per lezione buona e si studiano per veri.
+    """
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "default=nw=1:nk=1", percorso],
+            capture_output=True, text=True, timeout=30)
+        return int(round(float(out.stdout.strip())))
+    except Exception:
+        return None
+
+
 def scarica_lezione(lesson_id, corso="aitubepro", qualita=360, visibile=True):
     """Apre la lezione, cattura l'indirizzo del flusso col gettone, scarica subito.
 
@@ -270,20 +342,38 @@ def scarica_lezione(lesson_id, corso="aitubepro", qualita=360, visibile=True):
         # scambia per "video assente" quello che e' solo un indirizzo incompleto
         # (sbagliato dal vivo il 2026-09-04). L'indirizzo esatto e' gia' nella mappa.
         url = url_lezione(lesson_id, corso)
+        # Si azzera QUI: tutto cio' che il browser aveva chiesto prima di questa
+        # navigazione appartiene a un'altra lezione. Il 2026-09-04 la lezione 81e4e28a
+        # e' arrivata a casa col video sbagliato (l'introduzione di un altro modulo,
+        # 119 s al posto dei suoi) proprio perche' si prendeva il PRIMO flusso visto.
+        del catturati[:]
         page.goto(url, wait_until="domcontentloaded", timeout=60000)
         page.wait_for_timeout(11000)
 
         titolo = ""
         durata_s = None
+        # Prima si chiede al lettore stesso: e' l'unica fonte che parla di QUESTO video.
+        # Il ripiego (leggere i mm:ss dal testo e prendere il massimo) prendeva la durata
+        # piu' lunga presente in pagina, che spesso e' quella di un'ALTRA lezione
+        # dell'elenco laterale: cosi' 81e4e28a risultava di 935 s quando ne dura 119.
+        try:
+            d = page.locator("video").first.evaluate(
+                "v => (v && isFinite(v.duration) && v.duration > 0) ? v.duration : null",
+                timeout=8000)
+            if d:
+                durata_s = int(round(float(d)))
+        except Exception:
+            pass
         try:
             testo = page.locator("body").inner_text(timeout=8000)
             righe = [r.strip() for r in testo.splitlines() if r.strip()]
-            # la durata compare nella barra del lettore come mm:ss
-            for r in righe:
-                m = re.fullmatch(r"(\d{1,2}):(\d{2})", r)
-                if m:
-                    s = int(m.group(1)) * 60 + int(m.group(2))
-                    durata_s = max(durata_s or 0, s)
+            # ripiego: la durata compare nella barra del lettore come mm:ss
+            if durata_s is None:
+                for r in righe:
+                    m = re.fullmatch(r"(\d{1,2}):(\d{2})", r)
+                    if m:
+                        s = int(m.group(1)) * 60 + int(m.group(2))
+                        durata_s = max(durata_s or 0, s)
             for r in righe:
                 if "/ Categories /" in r:
                     titolo = r.split("/")[-1].strip()
@@ -305,7 +395,10 @@ def scarica_lezione(lesson_id, corso="aitubepro", qualita=360, visibile=True):
         print("[!] Nessun flusso catturato: il lettore non ha caricato il video.")
         return 1
 
-    flusso = catturati[0]
+    flusso = scegli_flusso(catturati, durata_s)
+    if flusso is None:
+        print("[!] Nessun flusso corrisponde alla lezione: non scarico niente.")
+        return 4
     print("[+] Flusso catturato (gettone valido adesso).")
     print("[+] Scarico a %dp ..." % qualita)
 
@@ -315,17 +408,36 @@ def scarica_lezione(lesson_id, corso="aitubepro", qualita=360, visibile=True):
     esito = subprocess.run(cmd, cwd=cartella)
     ok = esito.returncode == 0 and os.path.exists(mp4)
 
+    # Il video e' arrivato: ma e' IL video della lezione? Si misura, non si spera.
+    durata_reale_s = durata_reale(mp4) if ok else None
+    avviso = None
+    if ok and durata_reale_s and durata_s:
+        scarto = abs(durata_reale_s - durata_s)
+        if scarto > max(10, 0.05 * durata_s):
+            avviso = ("il file dura %d s ma la lezione ne dichiara %d (scarto %d s): "
+                      "probabilmente e' il video di un'altra lezione, oppure lo "
+                      "scaricamento si e' interrotto" % (durata_reale_s, durata_s, scarto))
+    passo = "1-scaricato" if ok else "1-fallito"
+    if ok and avviso:
+        passo = "1-sospetto"
+
     with io.open(stato_path, "w", encoding="utf-8") as f:
         json.dump({
             "lesson_id": lesson_id,
             "corso": corso,
             "titolo": titolo,
             "durata_s": durata_s,
+            "durata_reale_s": durata_reale_s,
             "scaricato": bool(ok),
             "qualita": qualita,
             "quando": time.strftime("%Y-%m-%dT%H:%M:%S"),
-            "passo": "1-scaricato" if ok else "1-fallito",
+            "passo": passo,
+            "avviso": avviso,
         }, f, ensure_ascii=False, indent=2)
+
+    if avviso:
+        print("[!] SOSPETTA: %s" % avviso)
+        return 3
 
     if ok:
         print("[+] Video: %s (%.1f MB)" % (mp4, os.path.getsize(mp4) / 1e6))
