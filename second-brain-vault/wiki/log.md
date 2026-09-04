@@ -1736,3 +1736,77 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 - NOTA FINE-RIGA: `log.md` e `index.md` verificati **LF puro** su disco prima di scrivere
   (0 CRLF, misurati byte per byte), non CRLF come indicherebbe la regola generica — preservato
   lo stato reale, coerente con quanto già trovato e documentato in CP-20260904-003.
+
+## 2026-09-04 (EMPIRE STUDIO — chiusura ciclo LCNk5e5EiCA, batch max18 v02, sentinella max18-v02)
+
+- INGEST (Empire Studio + Memory Empire): batch `max18`, video `LCNk5e5EiCA` "Claude Code +
+  Karpathy = Agenti AI da 10.000€" (Giovanni Beggiato / Gentes AI, 25m03s, IT, 16 capitoli).
+  Video **genuinamente nuovo**: nessun run preesistente per questo id, verificato prima di
+  partire. Pipeline eseguita da zero in questa sessione: `yt_ingest.py` → `frame_extractor.py
+  --interval 3 --height 360` → `scene_detector.py --threshold 6` → visione nativa →
+  `video-analysis.md` + `atoms.json` (43 KA) + `coverage.md`.
+- COPERTURA: **501 frame densi estratti, 69 unici, 80 frame guardati nativamente (16,0% del
+  totale) di cui 69/69 unici = 100%.** Trascrizione **612/612 righe uniche lette (100%)**,
+  deduplicate da 1.837 righe grezze del `.vtt` italiano, da 0:00:02 a 0:24:59 (gli ultimi ~4
+  secondi non hanno sottotitoli in nessuna delle due tracce). Tutti i numeri ricontati in
+  sessione contro `frames/manifest.json`, `scenes.json` e `atoms.json`, comandi riprodotti in
+  fondo a `coverage.md`.
+- DIFETTO DI STRUMENTO TROVATO E CORRETTO: `scene_detector.py` a soglia 6 dichiara il tratto
+  19:24→24:45 come **una sola schermata di 321 secondi**. È falso — in quei 5 minuti l'autore
+  costruisce a mano su lavagna Excalidraw tutto il ragionamento sul pricing. Il detector
+  confronta miniature 64x64 in scala di grigi, e tratti di penna nera su fondo bianco non
+  superano la soglia. Me ne sono accorto perché la trascrizione descriveva calcoli che nessun
+  frame unico mostrava; ho campionato quel tratto a mano ogni 30s (`frame-400` → `frame-490`,
+  10 frame) e ricostruito l'evoluzione. **Lo strumento è affidabile su screen-share e slide, non
+  su lavagne disegnate dal vivo** — registrato in `coverage.md` per le prossime run.
+- CONTENUTO: il **pattern LLM Wiki di Andrej Karpathy** (post originale su X letto integralmente
+  a schermo) calato su un'azienda come **Company Brain** — tre strati (fonti grezze immutabili /
+  wiki di note collegate mantenuto dall'AI / schema di regole) e tre operazioni (INGEST, QUERY
+  con citazione obbligatoria delle note, LINT su contraddizioni-dati vecchi-note orfane).
+  Dimostrazione A/B dal vivo con due Claude Code affiancati, stesso transcript di discovery call:
+  **la differenza dimostrata non è estetica ma di verificabilità** — quello senza cervello chiude
+  chiedendo all'umano di confermare cifre che ha inventato, quello col cervello dichiara cinque
+  controlli superati contro `offerta/offerta.md` e registra una nota di memoria. Recuperati parola
+  per parola: i due prompt integrali, le tre regole del `CLAUDE.md` (i prezzi vivono SOLO in
+  offerta.md · nessuna proposta senza nota · mai mostrare .env), il transcript-fonte della call,
+  il pattern di integrazione API (interroga il template prima di scrivere il codice + il ciclo
+  `uploaded` → attesa → `draft`), e il value-based pricing con proxy `tempo persona × proposte al
+  mese`, calcolo ROI e criterio del retainer.
+- CAUTELA DICHIARATA: a voce l'autore liquida l'output senza cervello come "quasi AI slop" e dice
+  "non ha nemmeno il nostro logo". Guardando davvero il frame, l'artifact è impaginato e porta
+  "Gentes.AI" come testo; manca il logo immagine, il template brandizzato e il canale di firma.
+  Il claim è retorica dell'autore, non un fatto verificato a schermo — riportato come tale in
+  `video-analysis.md`, in `coverage.md` e nell'atomo inferito KA-042.
+- **0 patch applicate** a skill/agenti esistenti (perimetro del checkpoint `EMP-QQ2R`, fase di
+  studio, ordine esplicito di Max) — 7 consigli verificati con `Grep`/`find`/`ls` prima di essere
+  scritti: (1) il listino DE compare in **68 file markdown** e **nessun `offerta.md` o
+  `listino.md` canonico esiste nel repo**; (2) `/lint-wiki`, `/query-wiki`, `/synthesis`,
+  `/research-topic` sono documentati in `second-brain-vault/CLAUDE.md` ma **nessuna delle quattro
+  skill esiste** — puntatore che manda a sbattere, mentre il motore per costruirlo
+  (`skill-contradiction-analyzer`) e il controllo orfani (`sync-wiki-totale:31-32`) ci sono già;
+  (3) `proposal-gate` e `beast-preventivi` hanno **zero** match per memoria/registro/checkpoint,
+  quindi DE ha "nessun task senza Memory" ma non "nessun preventivo senza nota"; (4)
+  `beast-preventivi/references/stages/02-pricing.md:19-31` ha già il valore-vs-costo — il gap
+  reale è più stretto: manca la proxy del tempo salvato per i deliverable di tipo agente e la
+  variante a 2 opzioni non pre-evidenziate contro le 3 imposte in `SKILL.md:83`; (5)
+  **contraddizione sul retainer** fra `agency-scalping:68` ("Retainer > one-shot"),
+  `cro-call:1293/2234/3776` ("Non vendiamo retainer" / "Sprint, non retainer") e
+  `proposal-gate:46` ("EUR 0 canoni mensili", BLOCCA) — il video dà un criterio invece di uno
+  slogan; (6) il pattern async `uploaded → draft` non è codificato in nessuna SKILL.md operativa
+  ma è già implementato in `fliki_client.py` (`poll_status()`), cioè DE l'ha imparato una volta e
+  non l'ha scritto; (7) **zero PandaDoc in DE** (1 solo match, in un raw-source non distillato) e
+  `preventivo-auto` si ferma al PDF senza firma, pagamento né nota di ritorno.
+- CORREZIONE DI STATO: il brief di questa sentinella chiedeva di preservare il CRLF di
+  `second-brain-vault/wiki/log.md`. Verificato con Python: il file ha **0 CRLF e 1.690 LF**, ed è
+  già interamente LF (stesso esito per `index.md`: 0 CRLF, 1.743 LF). Scritto in LF, che è ciò
+  che i file hanno davvero. Segnalato perché un'istruzione basata su uno stato superato può far
+  introdurre proprio il file misto che il guardiano vuole evitare.
+- WIKI: 1 pagina creata (`sources/Source_Giovanni_Beggiato_Company_Brain_Karpathy.md`), cross-link
+  a 5 pagine esistenti ([[sources/Source_Nate_Herk_Claude_Second_Brain_Levels]],
+  [[sources/Source_Justin_Sung_Guida_Apprendimento]],
+  [[sources/Source_Giovanni_Beggiato_Guida_Agenzia_AI]],
+  [[sources/Source_Giovanni_Beggiato_CFO_AI_Claude]], [[tools/Tool_Tesoreria_Digital_Empire]]),
+  `index.md` aggiornato nella sezione "Second Brain & Knowledge Architecture".
+- MEMORY EMPIRE: `empire-studio/memory-empire/knowledge/LCNk5e5EiCA/` chiuso
+  (ingest-manifest.json, atoms.json, contenuto-integrale.md) — path live dentro `empire-studio/`,
+  non le cartelle morte fuori (B-033).

@@ -1,11 +1,11 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-20260904-114812-d39ea7
-- **Data Aggiornamento**: 2026-09-04 11:48:12
+- **Ultimo Run ID**: yt-20260904-141456-12f2c8
+- **Data Aggiornamento**: 2026-09-04 14:14:57
 - **Canale Target**: Legami d'Amore (`@Legamidiamore`)
-- **Video Replicato**: Pensi che non sia interessata? Guarda prima questo
-- **Idea Script (Fase 3)**: Pensi che TU non le Piaci? Guarda Questo PRIMA di Rinunciare
-- **SEO Score Metadati (Fase 5)**: 100.0
+- **Video Replicato**: 4 segnali che indicano che lei ti desidera segretamente: riconoscili prima che sia troppo tardi!
+- **Idea Script (Fase 3)**: 4 Segnali Che Lei Ti Desidera In Segreto (E Che Quasi Nessun Uomo Nota)
+- **SEO Score Metadati (Fase 5)**: 92.5
 - **Stato Fabbrica**: 🟡 PARZIALE (fermata alla fase 5, --phase limitato)
 
 ## 📊 Metriche di Esecuzione (esito REALE di questa run)

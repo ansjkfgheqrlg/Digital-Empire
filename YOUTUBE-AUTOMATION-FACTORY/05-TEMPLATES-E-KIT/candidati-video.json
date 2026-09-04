@@ -2,11 +2,13 @@
   "channel": "@PsicologiaFemminile-f8c",
   "videos": [
     {
-      "title": "Pensi che non sia interessata? Guarda prima questo",
-      "url": "https://www.youtube.com/watch?v=chVKOBlEpDI",
-      "views": 6500.0,
-      "age_hours": 1460.0,
-      "errors": []
+      "title": "4 segnali che indicano che lei ti desidera segretamente: riconoscili prima che sia troppo tardi!",
+      "url": "https://www.youtube.com/watch?v=qHB80wbamBI",
+      "views": 1800.0,
+      "age_hours": 312.0,
+      "errors": [
+        "seo debole (score reale 17.5/25 sul titolo, keyword '4 segnali che indicano')"
+      ]
     }
   ]
 }

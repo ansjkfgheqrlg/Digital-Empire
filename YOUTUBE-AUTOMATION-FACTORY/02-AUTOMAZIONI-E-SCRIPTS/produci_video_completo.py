@@ -42,6 +42,7 @@ import json
 import os
 import re
 import subprocess
+import shutil
 import sys
 import time
 
@@ -63,6 +64,9 @@ CODA_PATH = os.path.join(MEMORY_DIR, "coda_produzione.json")
 STATO_PATH = os.path.join(MEMORY_DIR, "produzione_completa_stato.json")
 ARENA_PROFILE_DIR = os.path.join(FACTORY_DIR, "chrome-profile-arena")
 VIDEOS_DIR = os.path.join(FACTORY_DIR, "06-DASHBOARD-E-METRICHE", "video-generati")
+# Cartella di CONSEGNA A MAX: e' qui che finisce il lavoro finito, un video per
+# sottocartella (video.mp4 + copy.md + metadata.json), e Max ci mette la copertina.
+VIDEO_PRONTI_DIR = os.path.join(FACTORY_DIR, "VIDEO-PRONTI")
 
 
 # --------------------------------------------------------------------------- #
@@ -276,6 +280,83 @@ def _slug(testo: str, fallback: str) -> str:
     return s or fallback
 
 
+def _prossima_cartella_pronti() -> str:
+    """VIDEO-PRONTI/video-NN progressivo, il primo numero libero."""
+    os.makedirs(VIDEO_PRONTI_DIR, exist_ok=True)
+    usati = []
+    for nome in os.listdir(VIDEO_PRONTI_DIR):
+        if nome.startswith("video-") and nome[6:].isdigit():
+            usati.append(int(nome[6:]))
+    return os.path.join(VIDEO_PRONTI_DIR, "video-%02d" % ((max(usati) + 1) if usati else 1))
+
+
+def consegna_a_max(mp4: str, titolo: str, lavoro: dict) -> str | None:
+    """Il pezzo che finora NON esisteva nel codice e veniva rifatto a mano ogni volta con
+    script usa-e-getta (_finish_video02.py, _resume_video05_*.py ...): mettere il lavoro
+    finito nella cartella dedicata del video, con dentro tutto tranne la copertina.
+
+    REGOLA PERMANENTE DI MAX: la copertina la fa lui. Qui si consegna
+    video.mp4 + copy.md + metadata.json in VIDEO-PRONTI/video-NN/, si apre la cartella, e ci
+    si ferma. L'upload e' un atto separato, dopo che Max ha messo il .png dentro.
+    """
+    if not os.path.exists(mp4):
+        print("[!] Consegna saltata: l'mp4 non esiste sul disco.")
+        return None
+
+    meta = _leggi_json(os.path.join(TEMPLATES_DIR, "metadati.json"), {})
+    dest = _prossima_cartella_pronti()
+    os.makedirs(dest, exist_ok=True)
+    shutil.copy2(mp4, os.path.join(dest, "video.mp4"))
+
+    with open(os.path.join(dest, "metadata.json"), "w", encoding="utf-8") as f:
+        json.dump(meta, f, ensure_ascii=False, indent=2)
+
+    titolo_finale = meta.get("title") or titolo
+    tags = meta.get("tags") or []
+    righe = [
+        "# Copy - %s (%s)" % (os.path.basename(dest), lavoro.get("canale", "")),
+        "",
+        "**Fonte:** %s (%s) -> canale %s" % (lavoro.get("video_id", ""),
+                                             lavoro.get("canale_origine", ""),
+                                             lavoro.get("canale", "")),
+        "**Generato via:** fliki_client.py (API reale)",
+        "",
+        "## Title",
+        titolo_finale,
+        "",
+        "## Description",
+        meta.get("description", ""),
+        "",
+        "## Tags",
+        ", ".join(tags),
+        "",
+        "## Copertina - LA FA MAX",
+        "Il file .png della copertina va messo dentro questa stessa cartella.",
+        'Titolo che deve leggersi nella copertina: "%s"' % titolo_finale,
+        "Formato 16:9, testo grande e leggibile anche in miniatura piccola.",
+        "",
+        "## Upload",
+        "Quando la copertina e' in cartella, l'upload parte con:",
+        "  python youtube_uploader_playwright.py --video <cartella>/video.mp4 \\",
+        "      --thumbnail <cartella>/<copertina>.png --privato",
+        "",
+    ]
+    with open(os.path.join(dest, "copy.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(righe))
+
+    print("\n" + "=" * 70)
+    print("CONSEGNATO A MAX")
+    print("=" * 70)
+    print("  Cartella:  %s" % dest)
+    print("  Dentro:    video.mp4 - copy.md - metadata.json")
+    print("  Manca:     LA COPERTINA (la fa Max, va messa in questa cartella)")
+    print("  Titolo:    %s" % titolo_finale)
+    try:
+        subprocess.Popen(["explorer", dest])
+    except OSError:
+        pass
+    return dest
+
 def main() -> int:
     ap = argparse.ArgumentParser(
         description="Produce video + copertina in un colpo solo, dalla catena reale della fabbrica.")
@@ -390,8 +471,9 @@ def main() -> int:
         print(f"             {os.path.getsize(mp4) / 1_000_000:.1f} MB")
     print(f"  Copertina: {', '.join(copertine) if copertine else '(nessuna: passo saltato)'}")
     print("  Pubblicazione su YouTube: NON fatta da qui — resta un atto separato e voluto.")
+    cartella = consegna_a_max(mp4, titolo_nostro, lavoro)
     scrivi_stato("completato", video_id=lavoro["video_id"], titolo=titolo_nostro,
-                 video=mp4, copertine=copertine)
+                 video=mp4, copertine=copertine, cartella_consegna=cartella)
     return 0
 
 
