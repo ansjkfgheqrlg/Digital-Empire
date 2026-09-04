@@ -54,7 +54,12 @@ def marcatore_path(sessione=""):
     """
     import hashlib
     import tempfile
-    firma = hashlib.md5(eh.ROOT.encode("utf-8", "replace")).hexdigest()[:10]
+    # normcase PRIMA dell'impronta: su Windows lo stesso percorso arriva ora come
+    # "C:\..." ora come "c:\..." a seconda di chi lancia il processo, e due impronte
+    # diverse per la STESSA cartella facevano cercare all'hook un file-spia che non
+    # esisteva -> "NON RISULTA CARICATA" falso -> potere 60% falso e rilettura inutile
+    # di 73.000 caratteri a spese di Max. Misurato il 2026-09-04: a1ed15b24c vs 23b0de640a.
+    firma = hashlib.md5(os.path.normcase(eh.ROOT).encode("utf-8", "replace")).hexdigest()[:10]
     sess = "".join(c for c in str(sessione) if c.isalnum() or c in "-_")[:64] or "senza-sessione"
     return os.path.join(tempfile.gettempdir(), "emperator-boot-%s-%s.json" % (firma, sess))
 

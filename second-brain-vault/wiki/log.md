@@ -1972,3 +1972,42 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   (e) plugin Figma da valutare sul comparto visivo dei siti.
 - WIKI: `wiki/tools/Tool_Higgsfield_ElevenLabs.md` aggiornata alla revisione 2. Report professionale
   pubblicato come artifact: https://claude.ai/code/artifact/24fb95f3-f393-4566-b014-2b8e307d2335
+- REVISIONE 3 (stesso giorno, dopo secondo richiamo di Max: "sei sicuro che basti? fai il conto su
+  5 video YouTube al giorno + 10 corti al giorno"). **Terza conclusione mia sbagliata e corretta**:
+  avevo calcolato il costo di UN video (EUR 2,78) e mi ero fermato li'. Al volume vero di DE —
+  450 video e 2.100 minuti finiti al mese — **nessun piano self-serve regge**: servono da 57.000
+  (scenario magro) a 216.000 crediti/mese (ricco) contro un tetto acquistabile di 9.000.
+  Costo reale: EUR 2.473 / 5.592 / 9.866 al mese. Scarto dal tetto nello scenario medio: **14x**.
+- LISTINO COMPLETO estratto (prima avevo solo Plus e Ultra 3.000): Ultra 6.000 EUR 194/mese annuale,
+  **Ultra 9.000 EUR 270/mese annuale** (= EUR 0,030/credito, il piu' economico del listino e il
+  massimo acquistabile senza commerciale). **Team ed Enterprise sono i crediti PIU' CARI**: Team
+  5.000 crediti a EUR 65 PER POSTO x 5 posti = EUR 325 (EUR 0,065/cr), Scale 12.500 a EUR 150 x 5 =
+  EUR 750 (EUR 0,060/cr) — comprano posti, coda prioritaria, controllo spesa, SSO e manleva, non
+  crediti convenienti. Team NON ha modelli unlimited, Scale si' (7 giorni).
+- **VIBE MOTION trovato** — e' quello che Max ricordava come "motion design o graphics". Motore
+  code-to-video: kinetic typography, infografiche animate, loghi, **Kinematic Captions**, HEX/RGB
+  esatti (quindi il nostro #fb4604 alla lettera), safe zone social per i sottotitoli, curve di
+  easing su cursori, upload di loghi/SVG/footage, render 4K. **L'uscita e' un asset strutturato e
+  modificabile, non un video piatto** — quindi un template si riusa N volte cambiando solo il testo.
+- **CANVAS studiato a fondo** (ordine esplicito di Max): ogni modello e' un nodo; costruire e
+  collegare e' GRATIS, i crediti si scalano solo quando un nodo genera; run in parallelo e confronto
+  affiancato (8 job su Ultra) = leva contro il tasso di riprova; template riutilizzabili.
+  Dettaglio che fa sbagliare tutti: **i nodi Seedance leggono le reference collegate solo se il
+  prompt ne dichiara il ruolo; i nodi Kling trattano l'immagine collegata come PRIMO FOTOGRAMMA e
+  per il personaggio serve il tag @nome-elemento**.
+- VOCE A VOLUME: 2.100 min/mese = ~2,1M caratteri. Creator copre il 6%. Serve ElevenLabs **Scale
+  $299 + ~$51 di eccedenza**. Lo Startup Grant (33M caratteri) vale ~15 mesi del nostro consumo,
+  cioe' EUR 4-5.000: e' la mezz'ora meglio spesa del dossier.
+- CONSIGLI: (a) **aprire subito la trattativa Enterprise** — e' l'unico livello con sconti a volume
+  per modello e **crediti che si riportano al mese dopo**, e richiede settimane; (b) partire da
+  Ultra 3.000 (EUR 99) come **mese di taratura**, non dal tetto, per misurare le 3 incognite (costo
+  crediti del TTS, costo di un progetto Vibe Motion, nostro tasso di riprova reale); (c) **il tasso
+  di riprova vale meta' del conto** — da 2x a 1,3x lo scenario medio scende da EUR 5.592 a 3.778,
+  quindi la libreria di prompt e reference e' il lavoro che rende di piu'; (d) **un secondo di clip
+  Kling costa 66 volte un'immagine Soul 2.0** — il lungo faceless va costruito su immagini mosse in
+  montaggio; (e) 5 template Canvas + 5 template Vibe Motion trasformano 450 produzioni in 10 stampi.
+- OBIEZIONE SOLLEVATA A MAX (non un blocco, un fatto): DE ha 25 pezzi finiti mai pubblicati, il piu'
+  vecchio da 135 giorni (dossier ULTIMO METRO). Dimensionare l'abbonamento sul volume che ENTRA
+  invece che su quello che ESCE e' il modo piu' caro di non risolvere il collo di bottiglia.
+- NUOVO STRUMENTO: `PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py` — calcolatore
+  riproducibile, accetta --yt-giorno --corti-giorno --riprova. I numeri si rifanno, non si ricordano.
