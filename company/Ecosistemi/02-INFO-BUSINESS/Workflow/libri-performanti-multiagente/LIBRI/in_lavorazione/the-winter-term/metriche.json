@@ -86,6 +86,15 @@
       "motivi": [
         "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
       ]
+    },
+    {
+      "quando": "2026-09-04T14:15:31",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 LIBRO: The Winter Term
-Generato: 2026-08-25T20:49:21.485091
+Generato: 2026-09-04T14:15:27.278451
 Word count: 39654 — Pagine stimate: 123.9 @320wpp
 Manoscritto: The_Winter_Term.docx
 PDF: The_Winter_Term.pdf

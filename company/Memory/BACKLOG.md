@@ -273,3 +273,4 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   L'errore nasce dal cercare in `.git/hooks/` invece che nella cartella configurata.
   **Da scrivere nei prompt degli scagnozzi e in `guild-prompt`:** i guardiani di questo
   repo stanno in `.githooks/`, non in `.git/hooks/`.
+| B-055 | `assembla` stampa ancora la stima pagine VECCHIA e sbagliata accanto a quella buona | Dopo FIX-5 il modello vero e' `config.stima_pagine` (caratteri + penalita' per paragrafo), errore massimo misurato **1,7 pagine** su 5 libri. Ma `book_project.assembla` continua a stampare la riga `N parole = X pagine @320wpp`, che sul solo Proof of Murder sbagliava di 5,5 pagine. Il 2026-09-04 quella riga ha ingannato me: ho aperto un difetto contro FIX-5 che era sano e l'ho scritto in un checkpoint prima di accorgermene. Non e' un bug di calcolo, e' un output che mente | quando si tocca `book_project.assembla`, o prima che inganni qualcun altro | &#9744; |
