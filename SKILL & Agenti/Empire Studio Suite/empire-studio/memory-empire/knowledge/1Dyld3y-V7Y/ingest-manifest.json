@@ -1,0 +1,149 @@
+{
+  "video_id": "1Dyld3y-V7Y",
+  "title": "Dammi 36 Minuti e Ti Farò Risparmiare MILIONI di Token su Claude",
+  "channel": "Riccardo Belli Contarini",
+  "url": "https://www.youtube.com/watch?v=1Dyld3y-V7Y",
+  "run": "max18-v03-belli-token",
+  "run_path": "empire-studio/runs/max18-v03-belli-token",
+  "category": "max18-costo-contesto-claude-code",
+  "duration_s": 2161,
+  "duration_human": "36m01s",
+  "language": "it",
+  "format": "screen-recording denso (~70% della durata): lavagna Excalidraw unica a 6 blocchi che fa da indice del video + Claude Code desktop e terminale + browser (Google, GitHub, Supabase docs, Instagram), alternato a talking head su fondo chiaro e a tre animazioni originali prodotte dall'autore (costo quadratico del contesto, CLAUDE.md documento vs indice, ricerca con e senza grafo). Chiusura con spezzoni video di aule di formazione reali.",
+  "ingested_at": "2026-09-04T11:56:51",
+  "stageC_date": "2026-09-04",
+  "predecessor_note": "Ingest, estrazione frame e scene detection completati da una sentinella gemella il 2026-09-04 fra le 11:56 e le 12:00. Quella sessione si e' interrotta per LIMITE DI SESSIONE DELL'ACCOUNT (non per un errore di merito) proprio mentre iniziava a guardare i frame, lasciando su disco frames/, scenes.json, scenes.md, clean_transcript.txt e info.json ma nessun deliverable. La presente sessione ha ripreso da li' senza rifare nulla dell'estrazione, e ha prodotto video-analysis.md, atoms.json, coverage.md, la pagina wiki, index.md/log.md e questa chiusura Memory. La gemella aveva lasciato un solo appunto (la cifra sui token PDF potrebbe venire da un riassunto automatico di Google): verificato in prima persona invece che ereditato, ed e' risultato corretto.",
+  "frames": {
+    "total_dense": 721,
+    "interval_sec": 3.0,
+    "unique_scenes": 138,
+    "unique_frames_read": 138,
+    "all_read_native_vision": true,
+    "coverage_pct_of_unique_scenes": 100.0,
+    "coverage_pct_of_dense": 19.1,
+    "frames_zoomed": 12,
+    "zoom_crops_read": 27,
+    "frames_unreadable_partial": 4,
+    "no_finto_status": "PASS",
+    "note": "Copertura TOTALE dei frame unici: 138/138. Strategia deliberatamente opposta a max17-v16 (20/858 campionati): li' era un talk dal vivo e il contenuto stava nell'audio, qui e' uno screen-recording denso e le cifre della lavagna NON vengono mai dette a voce. 12 frame ingranditi con crop+upscale LANCZOS 4x-8x perche' contenevano numeri, tabelle o codice. Parzialmente illeggibili e dichiarati tali: la cifra 'strumenti e permessi' nel riquadro sub-agenti (frame-667), il contatore 'Con il grafo' (frame-574), il menu output style (24:19), la didascalia troncata sotto la lavagna (frame-652)."
+  },
+  "source_quality_constraint": {
+    "video_resolution": "640x360",
+    "codec": "av1",
+    "verified_with": "ffprobe -v error -select_streams v:0 -show_entries stream=width,height,codec_name video.mp4",
+    "root_cause": "empire-studio/scripts/frame_extractor.py:133 ha --height con default=360, e la riga 51 lo passa a yt-dlp come 'bv*[height<=360]/b[height<=360]/worst'. Non e' un limite di YouTube: e' la pipeline dell'Impero a chiedere il formato peggiore, per ogni video, sempre.",
+    "impact": "Su un video che e' per il 70% screen-recording, il testo minuto delle schermate non e' recuperabile. Verificato che crop+upscale 4x-8x NON lo recupera: le lettere non sono nei pixel. Regola applicata di conseguenza: una card e' citata testualmente SOLO se letta in una vista ravvicinata (quelle in cui l'autore zooma); dalle viste d'insieme e' stata presa solo la struttura, mai il testo.",
+    "reading_errors_caused_and_corrected": 3
+  },
+  "transcript": {
+    "source_file": "runs/max18-v03-belli-token/1Dyld3y-V7Y.it.vtt",
+    "raw_lines": 7616,
+    "deduplicated_unique_lines": 950,
+    "coverage_pct": 100.0,
+    "range": "0:00:01 -> 0:35:46",
+    "read_in_blocks": 1,
+    "method": "clean_transcript.txt era gia' stato prodotto dalla sentinella gemella deduplicando il formato rolling-caption di YouTube. Letto per intero in un solo passaggio PRIMA di aprire un solo frame, per conoscere la struttura e sapere cosa cercare nelle schermate."
+  },
+  "chapters": [
+    {"start": 0, "title": "Introduzione"},
+    {"start": 96, "title": "Gli strumenti di misurazione: /context, /usage, status line"},
+    {"start": 272, "title": "clear ad ogni cambio di task"},
+    {"start": 319, "title": "Modello ed effort si scelgono solo all'inizio"},
+    {"start": 367, "title": "Perché /compact è un errore"},
+    {"start": 473, "title": "rewind e il file di hand-off al posto del compact"},
+    {"start": 699, "title": "Il diagramma ASCII prima di costruire qualsiasi cosa di grafico"},
+    {"start": 815, "title": "Spegni gli MCP che non usi"},
+    {"start": 841, "title": "Il CLAUDE.md trattato come un indice"},
+    {"start": 917, "title": "Un CLAUDE.md per ogni cartella"},
+    {"start": 1005, "title": "Archivia le skill inutilizzate e accorcia le descrizioni"},
+    {"start": 1070, "title": "L'hook che estrae il testo dai PDF"},
+    {"start": 1217, "title": "Quale modello scegliere in base al task"},
+    {"start": 1347, "title": "Controlla hook e task schedulati dimenticati"},
+    {"start": 1408, "title": "Cose da non fare: screenshot, prompt troppo corti, tool fuffa"},
+    {"start": 1458, "title": "Usa l'output style invece dei \"compressori\" di contesto"},
+    {"start": 1492, "title": "CLI invece di MCP"},
+    {"start": 1771, "title": "CodeGraph e Graphify per i grafi di conoscenza"},
+    {"start": 1843, "title": "Trasforma in codice ciò che è ripetibile"},
+    {"start": 1994, "title": "Sottoagenti: quando usarli e i sottoagenti Haiku"}
+  ],
+  "chapters_note": "20 capitoli ufficiali presi da ingest.json. Il video promette '10 mosse' in apertura ma non numera mai nulla: le tecniche distinte sono piu' di dieci (14 di risparmio + 5 anti-pattern contati in questa analisi).",
+  "knowledge_atoms": 47,
+  "atoms_edges": 96,
+  "atoms_edges_broken": 0,
+  "atoms_orphans": 0,
+  "atoms_by_confidence": {
+    "osservato": 44,
+    "dichiarato dal relatore, contestato": 1,
+    "detto dal relatore, fonte a monte debole e verificata come tale": 1,
+    "dichiarato dal relatore come misurazione propria, non verificato": 1
+  },
+  "atoms_with_frame_ref": 45,
+  "atoms_audio_only": 2,
+  "atoms_schema_note": "PRIMO atoms.json di Digital Empire con relazioni fra atomi (difetto noto: gli atomi dell'Impero non avevano archi). Ogni atomo porta un campo 'relazioni' con archi tipizzati: discende-da, quantifica, sostituisce, contraddice, corregge, motiva, specializza, istanza-di, generalizza, complementa, verifica. SCELTA DI COMPATIBILITA' deliberata: il file resta un ARRAY PIATTO come max17-v01-artem/atoms.json e le relazioni stanno DENTRO ogni atomo, cosi' un lettore del vecchio schema ignora il campo in piu' e continua a funzionare, mentre un lettore nuovo ottiene il grafo. Nessun wrapper attorno all'array, che avrebbe rotto tutti i lettori esistenti. I 96 archi sono validati a macchina: ogni 'verso' punta a un 'id' esistente.",
+  "atoms_extra_field": "ancora — ogni atomo porta la frase letterale (dal transcript o dal frame) da cui nasce, verificata con una ricerca PRIMA del salvataggio. 47/47 atomi hanno l'ancora.",
+  "source_verification": {
+    "claim_checked": "Ogni pagina di un PDF elaborato da Claude Code consuma tra 1.500 e 3.000 token",
+    "stated_at": "00:17:41",
+    "verdict": "FONTE DEBOLE — CONFERMATO, con prova nel video stesso",
+    "evidence": "frame-353.png (17:36, cinque secondi PRIMA che la cifra sia pronunciata) mostra il browser dell'autore su una ricerca Google 'claude code quanti token consuma per ogni pagina di un pdf'. La risposta e' un AI Overview di Google: il chip di citazione attaccato alla frase con la cifra e' 'GitHub', le tre voci di dettaglio sono citate a Reddit r/ClaudeAI (x2) e Medium, e i due risultati organici in colonna destra sono entrambi thread Reddit r/ClaudeAI. Letto dopo zoom 5x su quattro regioni.",
+    "chain": "relatore -> AI Overview di Google -> GitHub / Reddit / Medium",
+    "primary_anthropic_doc": false,
+    "how_reported": "sempre come 'detta dal relatore' (KA-037), mai come dato verificato",
+    "fairness_note": "L'autore NON nasconde la fonte: la tiene a schermo 12 secondi (frame-353 -> frame-357). Quello che non fa e' dire A VOCE che sta citando un riassunto generato da un'AI. Difetto di etichettatura, non di occultamento.",
+    "not_verified": "se la cifra sia poi VERA. Nessuna misurazione fatta, nessuna doc Anthropic aperta. L'unica cosa accertata e' la provenienza.",
+    "kept_separate": "La cifra '300 pagine -> 500-600k token con Read contro 150k con l'hook, 3-4x' (00:19:53) e' dichiarata dall'autore come misurazione PROPRIA, non come citazione. Altra classe di affermazione, catalogata a parte in KA-038."
+  },
+  "self_corrections": [
+    "Colonna 1 della lavagna letta come 'ADESSO, SUBITO' dalla vista d'insieme, in realta' 'GRATIS, SUBITO' (frame-033)",
+    "MCP spenti letti come '-19.000 a sessione', in realta' '-47.000' = 26.000 GitHub + 21.000 Slack (frame-271)",
+    "Colonna 3 letta come 'IL MODELLO ADATTO', in realta' 'IL MODELLO GIUSTO' (frame-410)",
+    "In atoms.json 14 archi puntavano a ID inesistenti (relazioni verso atomi 'DE' mai creati, perche' le osservazioni sulla codebase non sono atomi del video): rimossi o ripuntati, validazione rieseguita"
+  ],
+  "self_corrections_note": "I primi tre errori venivano tutti da viste d'insieme a 360p, e in tutti e tre i casi L'AUDIO CONFERMAVA PLAUSIBILMENTE LA LETTURA SBAGLIATA ('tecniche da subito', 'un MCP puo' occupare anche 26.000 token', 'la questione dei modelli'). E' il modo tipico in cui una sagoma di parola a bassa risoluzione produce una citazione falsa che suona giusta. Lasciati a verbale in coverage.md invece che cancellati.",
+  "trap_avoided": "frame-334 mostra un diagramma ASCII pieno di numeri (p=0.004, 10 task -30% -> 86 task -8,5%, /clear -17,9%, CLAUDE.md 500-600 token -8,5%) che sembrano misurazioni di questo video. Appartengono invece a un ALTRO lavoro dell'autore sui plugin (sessione 'Lavagna Excalidraw plugin Claude Code'), usato qui solo come esempio della tecnica ASCII-first. NON sono entrati in atoms.json e sono segnalati come estranei in video-analysis.md.",
+  "asr_corrections": [
+    "'gestisco Mart, un'azienda' -> Martes AI (letto su frame-020 e frame-067)",
+    "'la mia skill Real Editor' -> /reel-editor (letto sul pannello /usage, frame-073)",
+    "'Cloud Code' / 'Clode MD' -> Claude Code / CLAUDE.md (errore ASR sistematico)"
+  ],
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max18-v03-belli-token/video-analysis.md",
+    "coverage": "empire-studio/runs/max18-v03-belli-token/coverage.md",
+    "contenuto_integrale": "memory-empire/knowledge/1Dyld3y-V7Y/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/1Dyld3y-V7Y/atoms.json"
+  },
+  "wiki_page": "second-brain-vault/wiki/sources/Source_Riccardo_Belli_Risparmiare_Token_Claude_Code.md",
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "wiki_crosslinks": [
+    "sources/Source_Riccardo_Belli_Claude_Codex_Setup",
+    "sources/Source_Giovanni_Beggiato_Company_Brain_Karpathy",
+    "sources/Source_Jay_E_Agentic_OS_Claude5",
+    "concepts/Emperator_Gerarchia_Forze",
+    "tools/Tool_Memory_Wiki_Bridge"
+  ],
+  "patches_applied": 0,
+  "patches_note": "Fase 1 = solo studio. I 7 consigli della pagina wiki sono tutti verificati con Grep/Read PRIMA di essere scritti, con file e riga indicati, ma nessuno e' stato applicato a skill, agenti, script o configurazione.",
+  "gaps_proposed": 7,
+  "gaps_summary": [
+    "C1 — /compact: DE ha la raccomandazione OPPOSTA scritta in .claude/skills/agente-max/knowledge/K05-context.md:531 ('tenete Autocompact su on... potrete sempre usare /compact manualmente'), e 'compact' ha 0 occorrenze in tutta company/Memory. L'Impero non ha una posizione: serve una decisione di Max, da scrivere come ADR.",
+    "C2 — scripts/peso_skill.py misura il CORPO delle skill (costo di attivazione) ma la stringa 'description' ha 0 occorrenze nel file: non misura mai il costo pagato a OGNI sessione per TUTTE le skill installate, che e' esattamente il punto del video.",
+    "C3 — hook PDF->testo assente (pdftotext = 0 occorrenze in scripts/, .claude/agents/, .claude/skills/empire-studio/, company/) ma .claude/settings.json dichiara gia' PreToolUse: e' un'aggiunta, non una costruzione.",
+    "C4 — caveman: DE ha il plugin in 'SKILL & Agenti/caveman-extracted/' e emperator.md:1098 raccomanda caveman:cavecrew-investigator. Distinguo onesto: il video boccia il Caveman PROXY (compressore di contesto), non il subagent locator. Resta vero C2 sulle description delle ~7 skill caveman:*.",
+    "C5 — conferme: CLAUDE.md root = 153 righe (<200 gia' rispettato), 48 CLAUDE.md nel repo (pattern per-cartella gia' adottato), root .mcp.json con 1 solo server e autoStart:false, gerarchia haiku/sonnet/opus gia' allineata. La soglia '~500 file' sui grafi non tocca DE: 166.534 file, graphify resta giustificato.",
+    "C6 — trovato studiando, non nel video: frame_extractor.py:133 scarica per default a <=360p, quindi DE si acceca da sola su ogni video-tutorial. Il flag --height 720 esiste e nessuno lo usa. Decisione di costo, non svista.",
+    "C7 — 'ogni ricordati di e' un candidato hook': molte regole di DE vivono come prosa in CLAUDE.md/emperator.md, cioe' come prompt che il modello puo' non eseguire. Domanda aperta: quali meritano di diventare deterministiche."
+  ],
+  "unverified_claims_flagged": [
+    "KA-023 — Karpathy 'adesso sta ad Anthropic' e 'ha inventato il second brain con l'LLM wiki': attribuzione che non risulta corretta, segnata come dichiarazione dubbia del relatore da non propagare (nessuna fonte esterna aperta per accertarlo)",
+    "KA-021 — 'sotto le 200 righe' attribuito ai doc Anthropic: attribuzione dichiarata dall'autore ma non verificata da noi",
+    "KA-032 — Caveman 'fra zero e negativo' contro il suo README che rivendica -33,2%: affermazioni in conflitto diretto, nessuna delle due testata da noi",
+    "KA-031 — aneddoto del CTO di ClickUp: seconda mano, nessun documento a conferma",
+    "KA-039 — il relatore dice 'esponenziale' ma la sua stessa animazione descrive una crescita lineare per turno (quadratica sul cumulato): imprecisione di linguaggio non ereditata"
+  ],
+  "notable_finding": "Nel pannello /usage che il relatore mostra a 3:36 per dimostrare le sue tesi, Claude Code stesso consiglia 'Usa /compact a meta' attivita', /clear quando passi a nuove attivita'' — cioe' esattamente il comando che il video definisce 'la cavolata piu' grossa'. L'autore non lo nota e non lo confuta. Per DE significa che il conflitto non e' 'uno YouTuber contro l'Impero' ma il relatore contro il vendor, e va risolto misurando.",
+  "checkpoint": "company/Memory/checkpoints/CP-20260904-007.md",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=1Dyld3y-V7Y, frame_extractor.py --interval 3 --height 360 (default), scene_detector.py --threshold 10 --interval 3; visione nativa Claude su 138/138 frame unici + 27 ritagli crop+upscale LANCZOS generati con PIL in questa sessione"
+}

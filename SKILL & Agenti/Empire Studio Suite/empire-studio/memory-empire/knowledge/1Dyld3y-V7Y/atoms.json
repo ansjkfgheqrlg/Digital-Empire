@@ -1,0 +1,591 @@
+[
+  {
+    "id": "KA-001",
+    "tipo": "regola",
+    "contenuto": "Il costo di una sessione non lo fa quello che scrivi tu: a ogni invio il modello rilegge da capo tutta la conversazione (il tuo contesto, tutte le sue risposte, ogni file aperto). Il tuo messaggio resta costante, quello che lui rilegge cresce a ogni turno. E' il principio da cui discendono quasi tutte le altre tecniche del video.",
+    "fonte": "1Dyld3y-V7Y#9:12 (animazione a schermo) + audio 9:14-10:02",
+    "frame": "frame-185.png",
+    "ancora": "Tu scrivi una riga. Lui rilegge tutto. Ogni volta.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-002", "tipo": "quantificato-da"},
+      {"verso": "KA-006", "tipo": "motiva"},
+      {"verso": "KA-010", "tipo": "motiva"},
+      {"verso": "KA-014", "tipo": "motiva"},
+      {"verso": "KA-039", "tipo": "corretto-da"}
+    ]
+  },
+  {
+    "id": "KA-002",
+    "tipo": "numero",
+    "contenuto": "L'animazione quantifica il principio con un messaggio costante da 180 token: al TURNO 2 il modello rilegge 360 token, al TURNO 3 ne rilegge 540. Il costo per turno cresce linearmente col numero di turni, quindi il cumulato cresce quadraticamente.",
+    "fonte": "1Dyld3y-V7Y#0:15 e #9:12 (stesso pannello, due turni diversi)",
+    "frame": "frame-006.png, frame-185.png",
+    "ancora": "IL TUO MESSAGGIO: 180 token / QUELLO CHE RILEGGE PER RISPONDERTI: 360 token",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-001", "tipo": "quantifica"}]
+  },
+  {
+    "id": "KA-003",
+    "tipo": "metodo",
+    "contenuto": "Tre strumenti di misura da usare PRIMA di toccare qualsiasi cosa: /context (cosa occupa la finestra adesso), /usage (dove hai bruciato i limiti), la status line personalizzata (il contatore sempre a schermo). Sulla lavagna sono in un banner dorato sopra tutte le tecniche, non dentro una colonna.",
+    "fonte": "1Dyld3y-V7Y#1:33-1:44 (audio) + banner della lavagna",
+    "frame": "frame-033.png",
+    "ancora": "PRIMA DI TOCCARE QUALSIASI COSA, MISURA",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-004", "tipo": "misura"},
+      {"verso": "KA-017", "tipo": "verifica"}
+    ]
+  },
+  {
+    "id": "KA-004",
+    "tipo": "regola",
+    "contenuto": "Su una conversazione NUOVA, prima di scrivere qualsiasi cosa, /context deve stare fra il 3% e il 6%. Quel costo di partenza e' fatto da file di memoria, system prompt (CLAUDE.md), server MCP e skill installate. Molti clienti dell'autore partono gia' al 20% e poi si chiedono perche' bruciano i token.",
+    "fonte": "1Dyld3y-V7Y#2:33-2:49",
+    "frame": "frame-110.png (conferma a schermo: 59.5k / 1M = 6%)",
+    "ancora": "come regola bisogna stare fra il 3 e il 6%",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-005", "tipo": "misurato-con"},
+      {"verso": "KA-017", "tipo": "principale-causa"},
+      {"verso": "KA-020", "tipo": "causa"},
+      {"verso": "KA-022", "tipo": "causa"}
+    ]
+  },
+  {
+    "id": "KA-005",
+    "tipo": "numero",
+    "contenuto": "Finestra di contesto dei modelli come dichiarata e mostrata: Opus = 1 milione di token (letto a schermo: '59.5k / 1M (6%)'), Sonnet = 200.000 secondo l'autore ('se non sbaglio'). Il selettore modelli mostrato in quella build elenca Fable 5, Opus 5, Sonnet 5, Haiku 4.5, piu' un effort selezionabile (a schermo: 'Opus 5 | Extra').",
+    "fonte": "1Dyld3y-V7Y#1:49-1:57 (audio) + #5:27 (schermo)",
+    "frame": "frame-110.png",
+    "ancora": "Finestra di contesto — 59.5k / 1M (6%)",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-004", "tipo": "misura"}]
+  },
+  {
+    "id": "KA-006",
+    "tipo": "metodo",
+    "contenuto": "/clear a ogni cambio di task. E' l'unica mossa che azzera la cronologia invece di limarla: 'ogni altro fix taglia una fetta, questo azzera la torta'. Non serve aprire una chat nuova. Dimostrato a schermo: dopo un solo 'Ciao, come stai?' il contesto era al 15%, dopo /clear torna al 6% di partenza.",
+    "fonte": "1Dyld3y-V7Y#4:34-5:22 (audio) + card lavagna",
+    "frame": "frame-107.png",
+    "ancora": "/clear a ogni cambio di task — azzera la base",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-001", "tipo": "discende-da"},
+      {"verso": "KA-007", "tipo": "alternativa-a"},
+      {"verso": "KA-045", "tipo": "confermato-da"}
+    ]
+  },
+  {
+    "id": "KA-007",
+    "tipo": "regola",
+    "contenuto": "/compact e' l'anti-pattern centrale del video: 'il messaggio piu' caro'. Per riassumere rimanda tutto il contesto al modello, e poi butta via la roba gia' pronta in cache. Compra continuita', non risparmio. In piu' e' Claude a scegliere cosa tenere e cosa buttare, non tu.",
+    "fonte": "1Dyld3y-V7Y#6:11-7:00 e #23:04-23:15 (audio) + card lavagna",
+    "frame": "frame-462.png",
+    "ancora": "/compact per risparmiare — il messaggio piu' caro",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-008", "tipo": "sostituito-da"},
+      {"verso": "KA-009", "tipo": "sostituito-da"},
+      {"verso": "KA-037", "tipo": "contraddetto-da"},
+      {"verso": "KA-041", "tipo": "in-conflitto-con"}
+    ]
+  },
+  {
+    "id": "KA-008",
+    "tipo": "metodo",
+    "contenuto": "/rewind al posto di /compact quando basta tornare indietro: riporta la conversazione a un punto precedente senza consumare token, perche' torni a uno stato che il modello ha gia' pronto invece di farglielo ricostruire. Funziona identico in terminale, app desktop ed estensione VS Code.",
+    "fonte": "1Dyld3y-V7Y#7:46-8:41 (audio) + card lavagna",
+    "frame": "frame-126.png",
+    "ancora": "/rewind, non /compact — non ricostruisci nulla",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-007", "tipo": "sostituisce"}
+    ]
+  },
+  {
+    "id": "KA-009",
+    "tipo": "metodo",
+    "contenuto": "File di handoff al posto di /compact quando devi davvero cambiare sessione: scrivi tu lo stato e riparti da un prefisso piccolo (poche centinaia di token) invece di lasciare a Claude la scelta di cosa riassumere. Contenuto del file: obiettivo, a che punto siamo, cosa abbiamo provato che NON ha funzionato, problemi incontrati e come risolti, decisioni prese, file toccati, dove vogliamo andare.",
+    "fonte": "1Dyld3y-V7Y#8:41-11:31 (audio) + card lavagna",
+    "frame": "frame-235.png",
+    "ancora": "un file di handoff, non /compact — poche centinaia di token",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-007", "tipo": "sostituisce"},
+      {"verso": "KA-010", "tipo": "specializzato-da"}
+    ]
+  },
+  {
+    "id": "KA-010",
+    "tipo": "regola",
+    "contenuto": "Dettaglio presente SOLO sulla lavagna e mai detto a voce: nel file di handoff la cosa che deve sopravvivere per prima sono le strade gia' fallite. E' il pezzo di stato che costa di piu' riscoprire e che un riassunto automatico butta via per primo perche' sembra rumore.",
+    "fonte": "1Dyld3y-V7Y#11:42 (card della lavagna, non nel parlato)",
+    "frame": "frame-235.png",
+    "ancora": "E scegli tu cosa sopravvive; soprattutto le strade gia' fallite.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-009", "tipo": "specializza"}]
+  },
+  {
+    "id": "KA-011",
+    "tipo": "regola",
+    "contenuto": "Modello ed effort si scelgono una volta sola, all'inizio. Cambiarli a meta' conversazione butta via tutto il lavoro gia' pronto legato al modello precedente: 'e' come scegliere un nuovo cervello', e quel cervello deve riprendersi tutta la conversazione da capo. Se vuoi il modello economico, ci parti.",
+    "fonte": "1Dyld3y-V7Y#5:22-6:09 (audio) + card lavagna",
+    "frame": "frame-107.png",
+    "ancora": "modello ed effort scelti una volta — eviti un 10x",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-012", "tipo": "raffinato-da"},
+      {"verso": "KA-025", "tipo": "collegato-a"}
+    ]
+  },
+  {
+    "id": "KA-012",
+    "tipo": "metodo",
+    "contenuto": "Il modello non si sceglie per sessione ma per skill e per sub-agente: passi il modello dentro la skill o dentro il sub-agente, cosi' la sessione principale non la tocchi e non perdi la cache. E' la versione operativa della regola 'mai a meta' sessione'.",
+    "fonte": "1Dyld3y-V7Y#21:27 (card lavagna) + audio 22:20-22:32",
+    "frame": "frame-430.png",
+    "ancora": "si sceglie per skill e per sub-agente — mai a meta' sessione",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-011", "tipo": "raffina"},
+      {"verso": "KA-026", "tipo": "applicato-a"}
+    ]
+  },
+  {
+    "id": "KA-013",
+    "tipo": "metodo",
+    "contenuto": "Farsi produrre un diagramma ASCII PRIMA di costruire qualsiasi cosa di grafico (front-end, lavagna, layout). Il diagramma costa pochissimo perche' sono trattini, e permette di correggere lo stile prima di generare. Consiglio operativo esplicito: aggiungere questo step in testa a ogni skill di design.",
+    "fonte": "1Dyld3y-V7Y#11:41-13:29 (audio) + card lavagna",
+    "frame": "frame-201.png",
+    "ancora": "diagramma ASCII prima di costruire — togli il giro",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-014", "tipo": "istanza-di"},
+      {"verso": "KA-031", "tipo": "affine-a"}
+    ]
+  },
+  {
+    "id": "KA-014",
+    "tipo": "regola",
+    "contenuto": "Il costo che conta non e' quello del giro singolo ma quello del LAVORO RIFATTO: 'il lavoro rifatto non avviene proprio. Nessun compressore puo' farlo: agiscono su cio' che e' gia' successo'. E' il criterio che separa le tecniche che spostano davvero il conto da quelle cosmetiche.",
+    "fonte": "1Dyld3y-V7Y#11:42 (card lavagna)",
+    "frame": "frame-201.png",
+    "ancora": "Il lavoro rifatto non avviene proprio. Nessun compressore puo' farlo",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-013", "tipo": "generalizza"},
+      {"verso": "KA-024", "tipo": "generalizza"},
+      {"verso": "KA-028", "tipo": "generalizza"},
+      {"verso": "KA-001", "tipo": "discende-da"}
+    ]
+  },
+  {
+    "id": "KA-015",
+    "tipo": "numero",
+    "contenuto": "Spegnere i server MCP che non usi vale -47.000 token a sessione secondo la lavagna, scomposti a schermo in GitHub 26.000 + Slack 21.000. Il punto e' che quel peso entra PRIMA che tu scriva qualsiasi cosa, e resta anche se il tool non lo usi mai.",
+    "fonte": "1Dyld3y-V7Y#13:30-14:03 (card lavagna, cifre lette a schermo)",
+    "frame": "frame-271.png",
+    "ancora": "spegni gli MCP che non usi — -47.000 a sessione — GitHub 26.000, Slack 21.000",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-004", "tipo": "riduce"},
+      {"verso": "KA-017", "tipo": "premessa-di"}
+    ]
+  },
+  {
+    "id": "KA-016",
+    "tipo": "metodo",
+    "contenuto": "Test di verifica dato dall'autore per sapere se un MCP sta pesando: /context deve dire 'deferred'. Se lo dice, i manuali dei tool restano fuori dal contesto finche' non servono davvero.",
+    "fonte": "1Dyld3y-V7Y#27:30 (nota gialla del riquadro CLI vs MCP)",
+    "frame": "frame-551.png",
+    "ancora": "Verifica sempre che /context dica 'deferred'",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-003", "tipo": "usa"},
+      {"verso": "KA-017", "tipo": "verifica"}
+    ]
+  },
+  {
+    "id": "KA-017",
+    "tipo": "architettura",
+    "contenuto": "Preferire una CLI a un MCP e' definito dall'autore 'il taglio piu' grosso della lista, e non e' un tool: e' scegliere un altro modo di collegare le cose'. Un MCP carica all'avvio il manuale di TUTTI i suoi metodi e l'indice cresce a ogni tool aggiunto; una CLI costa zero finche' non la chiami, e basta una riga nel CLAUDE.md perche' l'agente sappia che esiste. A schermo: MCP 26.000 token contro CLI ~40 token, e solo quando serve.",
+    "fonte": "1Dyld3y-V7Y#24:52-28:30 (audio) + riquadro lavagna letto per intero",
+    "frame": "frame-570.png",
+    "ancora": "MCP: il manuale entra all'avvio / CLI: zero finche' non la chiami",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-015", "tipo": "generalizza"},
+      {"verso": "KA-018", "tipo": "motivato-da"},
+      {"verso": "KA-016", "tipo": "verificato-da"},
+      {"verso": "KA-019", "tipo": "istanza-di"}
+    ]
+  },
+  {
+    "id": "KA-018",
+    "tipo": "architettura",
+    "contenuto": "Perche' non usare direttamente l'API invece dell'MCP: le risposte API nascono per essere lette da umani, quindi sono JSON lunghissimi che finiscono interi nel contesto. La CLI risolve i due problemi insieme: non carica i manuali a priori (problema MCP) e non restituisce JSON gonfi (problema API). Mostrato a schermo con una ricerca immagini 'api response json' piena di JSON lunghi.",
+    "fonte": "1Dyld3y-V7Y#26:40-27:28 (audio) + #26:42 (schermo)",
+    "frame": "frame-535.png",
+    "ancora": "le chiamate API nascono per essere lette da umani",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-017", "tipo": "motiva"}]
+  },
+  {
+    "id": "KA-019",
+    "tipo": "metodo",
+    "contenuto": "Regola generale che l'autore tiene scritta nel proprio CLAUDE.md: cercare sempre se esiste una CLI prima di installare un MCP. Esempio dimostrato a schermo con Supabase: invece del Supabase MCP Server (la cui doc ufficiale avverte che collegare un LLM ai progetti comporta rischi di sicurezza), cercare 'supabase cli'.",
+    "fonte": "1Dyld3y-V7Y#28:24-28:32 (audio) + #28:15-28:18 (schermo)",
+    "frame": "frame-566.png",
+    "ancora": "ho nel mio cloud cerca sempre se ci sono cli petto ad MCP",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-017", "tipo": "istanzia"},
+      {"verso": "KA-020", "tipo": "vive-dentro"}
+    ]
+  },
+  {
+    "id": "KA-020",
+    "tipo": "regola",
+    "contenuto": "Il CLAUDE.md va trattato come un INDICE, non come un documento: deve dire DOVE stanno le cose, non contenerle. Motivo: si rilegge a ogni messaggio per tutta la conversazione. Confronto mostrato in animazione: 4.000 token come documento contro 450 token come indice; su 6 messaggi fanno 24.000 token contro poche migliaia.",
+    "fonte": "1Dyld3y-V7Y#14:01-15:17 (audio + animazione dedicata)",
+    "frame": "frame-283.png",
+    "ancora": "Il CLAUDE.md e' un indice, non un documento.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-001", "tipo": "discende-da"},
+      {"verso": "KA-021", "tipo": "vincolato-da"},
+      {"verso": "KA-022", "tipo": "completato-da"}
+    ]
+  },
+  {
+    "id": "KA-021",
+    "tipo": "numero",
+    "contenuto": "Soglia dichiarata per il CLAUDE.md: sotto le 200 righe. L'autore la attribuisce esplicitamente alla documentazione Anthropic, sia a voce sia scritta sulla lavagna. Il suo CLAUDE.md del second brain sta sulle 166 righe. ATTENZIONE: attribuzione dichiarata dall'autore ma NON verificata in questa sessione contro la doc Anthropic.",
+    "fonte": "1Dyld3y-V7Y#14:45-14:52 (audio) + card lavagna",
+    "frame": "frame-282.png",
+    "ancora": "sotto le 200 righe — Regola dai doc Anthropic",
+    "confidenza": "osservato (cifra) / non verificato (attribuzione della fonte)",
+    "relazioni": [
+      {"verso": "KA-020", "tipo": "vincola"}
+    ]
+  },
+  {
+    "id": "KA-022",
+    "tipo": "numero",
+    "contenuto": "Un CLAUDE.md per ogni cartella vale -7.160 token a sessione secondo la lavagna. Il meccanismo: il CLAUDE.md della radice si carica SEMPRE, quelli nelle sottocartelle solo quando l'agente entra davvero in quella cartella. Cosi' il file radice resta un indice leggero e il dettaglio si paga solo su richiesta.",
+    "fonte": "1Dyld3y-V7Y#15:17-16:45 (audio) + card lavagna",
+    "frame": "frame-307.png",
+    "ancora": "un CLAUDE.md per cartella — -7.160 a sessione",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-020", "tipo": "completa"},
+      {"verso": "KA-023", "tipo": "attribuito-a"}
+    ]
+  },
+  {
+    "id": "KA-023",
+    "tipo": "affermazione",
+    "contenuto": "L'autore attribuisce il pattern 'un CLAUDE.md per cartella' ad Andrej Karpathy, descritto come 'uno dei membri fondatori di OpenAI, adesso sta ad Anthropic, ha inventato tutto il concetto di second brain con l'LLM wiki'. DA NON PROPAGARE COSI': l'affermazione che Karpathy lavori in Anthropic non risulta corretta e non e' stata verificata contro fonti esterne in questa sessione. Riportato come dichiarazione dubbia del relatore.",
+    "fonte": "1Dyld3y-V7Y#15:31-15:44",
+    "frame": "n/a (solo audio)",
+    "ancora": "viene direttamente da Andrew Carpati, uno dei membri fondatori di Openi, adesso sta ad Antropic",
+    "confidenza": "dichiarato dal relatore, contestato",
+    "relazioni": [{"verso": "KA-022", "tipo": "attribuisce"}]
+  },
+  {
+    "id": "KA-024",
+    "tipo": "regola",
+    "contenuto": "Le skill installate e le loro descrizioni si caricano a OGNI sessione, comprese quelle che non lanci mai: vale 'migliaia di token a sessione'. Le due mosse sono archiviare le skill che non usi e accorciare le descrizioni di quelle che restano. Formula della lavagna: 'restano installate, smettono di pesare'. L'autore consiglia di far accorciare le descrizioni a Claude e poi fargli fare un test end-to-end che le skill funzionino ancora.",
+    "fonte": "1Dyld3y-V7Y#16:45-17:24 (audio) + card lavagna",
+    "frame": "frame-341.png",
+    "ancora": "Skill e descrizioni si caricano ogni volta, anche quelle che non parti mai.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-004", "tipo": "riduce"},
+      {"verso": "KA-046", "tipo": "dimostrato-da"}
+    ]
+  },
+  {
+    "id": "KA-025",
+    "tipo": "regola",
+    "contenuto": "La qualita' del modello e' essa stessa un risparmio: per coding e planning veri si resta sul modello di frontiera, perche' 'un risultato da rifare costa piu' di quello che hai risparmiato scegliendo il modello economico'. Modelli di frontiera nominati a voce: Fable, Opus, GPT 5.6, Grock 4.6.",
+    "fonte": "1Dyld3y-V7Y#20:22-21:20 (audio) + card lavagna",
+    "frame": "frame-410.png",
+    "ancora": "coding e planning veri — resta sul modello di frontiera",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-014", "tipo": "discende-da"},
+      {"verso": "KA-026", "tipo": "complemento-di"}
+    ]
+  },
+  {
+    "id": "KA-026",
+    "tipo": "regola",
+    "contenuto": "Per routine, skill, sub-agenti e /chrome bastano Haiku e Sonnet: 'i job schedulati che sai gia' riuscire, la navigazione, la manovalanza. Li' il modello grosso non serve'. A voce l'autore dice il 90% (in un altro passaggio il 99%) di skill e routine.",
+    "fonte": "1Dyld3y-V7Y#21:27 (card lavagna) + audio 21:26-22:20",
+    "frame": "frame-430.png",
+    "ancora": "routine, skill, sub-agenti, /chrome — Haiku e Sonnet vanno benissimo",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-025", "tipo": "complementa"},
+      {"verso": "KA-030", "tipo": "applicato-a"}
+    ]
+  },
+  {
+    "id": "KA-027",
+    "tipo": "numero",
+    "contenuto": "I task schedulati 'pagano dieci volte': mandano il contesto INTERO a ogni scatto, e a frequenza oraria non trovano mai niente di pronto in cache. Anche alle 3 di notte. L'autore racconta di aver trovato, facendo un audit, task schedulati dimenticati che gli consumavano gran parte dell'usage.",
+    "fonte": "1Dyld3y-V7Y#22:30 (card lavagna) + audio 22:32-22:58",
+    "frame": "frame-451.png",
+    "ancora": "i task schedulati: pagano dieci volte",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-026", "tipo": "rimedio-in"}]
+  },
+  {
+    "id": "KA-028",
+    "tipo": "numero",
+    "contenuto": "Cinque anti-pattern con il loro costo, dalla colonna 'NON FARLO' ('sembrano furbe, costano'): /compact per risparmiare = il messaggio piu' caro; screenshot del testo = 2.700 token per duecento parole (e un'immagine l'agente non la puo' modificare); dare PDF grezzi = paghi due volte, il testo della pagina PIU' l'immagine della stessa pagina; prompt piu' corti = lo 0,01% del conto, 'quello che digiti tu e' un errore di arrotondamento'; i tool che promettono il 90% = fra zero e negativo.",
+    "fonte": "1Dyld3y-V7Y#23:03-24:00 (colonna lavagna letta per intero) + audio 22:58-24:52",
+    "frame": "frame-462.png, frame-472.png",
+    "ancora": "NON FARLO — sembrano furbe, costano",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-007", "tipo": "contiene"},
+      {"verso": "KA-029", "tipo": "contiene"},
+      {"verso": "KA-032", "tipo": "contiene"},
+      {"verso": "KA-014", "tipo": "discende-da"}
+    ]
+  },
+  {
+    "id": "KA-029",
+    "tipo": "regola",
+    "contenuto": "Controintuitivo e utile: accorciare i propri prompt e' inutile, vale lo 0,01% del conto. I prompt vaghi costano, ma non per i loro token: costano per il lavoro rifatto che innescano. Quindi la mossa giusta e' dare PIU' contesto, non meno.",
+    "fonte": "1Dyld3y-V7Y#23:33 (card lavagna) + audio 24:35-24:48",
+    "frame": "frame-472.png",
+    "ancora": "prompt piu' corti — lo 0,01% del conto",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-028", "tipo": "parte-di"},
+      {"verso": "KA-014", "tipo": "istanza-di"}
+    ]
+  },
+  {
+    "id": "KA-030",
+    "tipo": "numero",
+    "contenuto": "I sub-agenti non risparmiano, SPOSTANO il conto: quello che vedi tu e' un ritorno di 420 token, ma il conto vero e' system prompt 2.400 + copia della memoria 1.400 + strumenti e permessi + lettura vera 6.000, cioe' 9.800 token spesi per risparmiarne 5.700. Condizione che ribalta il conto: usarli SOLO per azioni in bulk (quaranta file, dieci fonti, roba di cui ti serve solo il verdetto). Upgrade dichiarato: metterli su Haiku, cosi' non toccano la cache della sessione principale.",
+    "fonte": "1Dyld3y-V7Y#33:15-34:12 (riquadro lavagna) + audio 33:18-34:12",
+    "frame": "frame-667.png",
+    "ancora": "9.800 spesi per risparmiarne 5.700",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-026", "tipo": "applica"},
+      {"verso": "KA-014", "tipo": "discende-da"}
+    ]
+  },
+  {
+    "id": "KA-031",
+    "tipo": "architettura",
+    "contenuto": "Trasforma in codice cio' che e' ripetibile: 'l'AI serve per il GIUDIZIO. Tutto il resto e' esecuzione, e l'esecuzione ripetibile e' codice'. Confronto sulla lavagna: farlo rifare all'AI = ~2.000 token a giro, ogni tanto sbaglia, il risultato cambia; farlo fare a uno script = 0 token, non sbaglia mai, gira uguale ogni volta. Il passaggio si paga una volta sola ('lo fai scrivere UNA volta sola').",
+    "fonte": "1Dyld3y-V7Y#30:45-32:20 (riquadro lavagna letto per intero) + audio 30:43-32:24",
+    "frame": "frame-652.png",
+    "ancora": "L'AI serve per il GIUDIZIO. Tutto il resto e' esecuzione, e l'esecuzione ripetibile e' codice.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-033", "tipo": "operazionalizzato-da"},
+      {"verso": "KA-034", "tipo": "specializzato-da"},
+      {"verso": "KA-014", "tipo": "discende-da"}
+    ]
+  },
+  {
+    "id": "KA-032",
+    "tipo": "strumento",
+    "contenuto": "I due tool di compressione contesto nominati e bocciati sono Caveman e RTK (loghi mostrati accanto alla card). Giudizio dell'autore: 'li ho provati tutti. Comprimono l'unica parte del conto che non conta, e ti mettono in mezzo uno strato fragile'; a voce aggiunge che Caveman 'spesso salta informazioni' e 'lascia cose fondamentali'. Il README di Caveman mostrato a schermo rivendica invece '33.2% fewer provider-reported input tokens' e un esempio 69 token -> 19 token. Le due affermazioni sono in conflitto diretto e NESSUNA e' stata verificata da noi.",
+    "fonte": "1Dyld3y-V7Y#23:33 (card + loghi) + #24:00 (README a schermo) + audio 23:50-24:52",
+    "frame": "frame-480.png, frame-481.png",
+    "ancora": "i tool che promettono il 90% — fra zero e negativo",
+    "confidenza": "osservato (entrambe le affermazioni), non verificato (quale sia vera)",
+    "relazioni": [
+      {"verso": "KA-028", "tipo": "parte-di"},
+      {"verso": "KA-035", "tipo": "sostituito-da"}
+    ]
+  },
+  {
+    "id": "KA-033",
+    "tipo": "metodo",
+    "contenuto": "Il modo per trovare cosa trasformare in codice: lanciare un prompt di audit dentro il proprio brain o la propria app che chieda quali pezzi del flusso NON hanno bisogno di un modello. Quelli diventano uno script dentro la skill, e da li' in poi non si pagano mai piu'.",
+    "fonte": "1Dyld3y-V7Y#32:33 (riquadro giallo lavagna) + audio 32:24-32:42",
+    "frame": "frame-652.png",
+    "ancora": "lancia il prompt di audit e fatti dire quali pezzi del tuo flusso non hanno bisogno di un modello",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-031", "tipo": "operazionalizza"}]
+  },
+  {
+    "id": "KA-034",
+    "tipo": "regola",
+    "contenuto": "Euristica per capire cosa deve diventare un hook invece di una riga nel CLAUDE.md: 'ogni ricordati di e' un candidato hook: e' l'unica categoria di consiglio che sopravvive al fatto che te ne dimentichi'. Motivo: un hook e' deterministico e scatta sempre, mentre una regola scritta nel CLAUDE.md e' un prompt, e puo' capitare che il modello non la esegua.",
+    "fonte": "1Dyld3y-V7Y#32:33 (riquadro lavagna) + audio 32:46-33:16",
+    "frame": "frame-652.png",
+    "ancora": "Ogni 'ricordati di' e' un candidato hook",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-031", "tipo": "specializza"},
+      {"verso": "KA-033", "tipo": "affine-a"}
+    ]
+  },
+  {
+    "id": "KA-035",
+    "tipo": "metodo",
+    "contenuto": "Alternativa proposta ai compressori di contesto: cambiare l'output style di Claude Code (Settings -> output style -> 'conciso'), che restituisce il risultato senza preamboli ne' epiloghi. Zero installazioni, zero strato in mezzo.",
+    "fonte": "1Dyld3y-V7Y#24:19-24:52",
+    "frame": "n/a (menu mostrato ma non leggibile a 640x360)",
+    "ancora": "la cosa che ha molto piu' senso e' mettere ad esempio conciso",
+    "confidenza": "osservato (audio) / frame non leggibile",
+    "relazioni": [{"verso": "KA-032", "tipo": "sostituisce"}]
+  },
+  {
+    "id": "KA-036",
+    "tipo": "numero",
+    "contenuto": "L'hook PDF dell'autore, documentato a schermo da Claude stesso: file ~/.claude/hooks/pdf-read-as-text.py, registrato in ~/.claude/settings.json come PreToolUse con matcher Read, globale su tutti i progetti. Estrae il testo con 'pdftotext -layout', lo mette in cache in ~/.claude/pdf-text-cache/<nome>.<hash>.txt, e riscrive il file_path verso quel .txt cosi' le pagine non entrano in contesto come immagini renderizzate. Si tira indietro da solo se il testo estratto sta sotto 200 caratteri per pagina o se pdftotext manca. Override manuale: 'touch ~/.claude/pdf-visual-once', consumato una volta sola. Limite dichiarato: sui PDF a colonne pdftotext appiattisce le colonne.",
+    "fonte": "1Dyld3y-V7Y#19:12 (schermata di Claude che descrive l'hook, letta per intero)",
+    "frame": "frame-385.png",
+    "ancora": "~/.claude/hooks/pdf-read-as-text.py ... PreToolUse con matcher Read",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-034", "tipo": "istanza-di"},
+      {"verso": "KA-037", "tipo": "giustificato-da"},
+      {"verso": "KA-028", "tipo": "rimedia-a"}
+    ]
+  },
+  {
+    "id": "KA-037",
+    "tipo": "affermazione",
+    "contenuto": "CIFRA DA MANEGGIARE CON CAUTELA. Il relatore afferma che ogni pagina di un PDF elaborato da Claude Code consuma fra 1.500 e 3.000 token. Cinque secondi prima, a schermo, si vede da dove viene: un AI Overview di Google in risposta alla query 'claude code quanti token consuma per ogni pagina di un pdf', con il chip di citazione 'GitHub' sulla frase stessa e le voci di dettaglio citate a Reddit r/ClaudeAI e Medium. NON e' documentazione primaria Anthropic. Da riportare sempre come 'detto dal relatore', mai come dato verificato.",
+    "fonte": "1Dyld3y-V7Y#17:41 (audio) + #17:36 (fonte visibile a schermo)",
+    "frame": "frame-353.png",
+    "ancora": "Ogni pagina di un documento PDF elaborato con Cloud code consuma tra i 1500 e 3000 token",
+    "confidenza": "detto dal relatore, fonte a monte debole e verificata come tale",
+    "relazioni": [
+      {"verso": "KA-036", "tipo": "giustifica"},
+      {"verso": "KA-028", "tipo": "supporta"}
+    ]
+  },
+  {
+    "id": "KA-038",
+    "tipo": "numero",
+    "contenuto": "Misurazione dichiarata dall'autore come propria (non citata): un PDF da 300 pagine passato con Read costa 'circa 500-600.000 token', mentre con il suo hook ne costa 150.000, quindi 'risparmi dalle 3 alle 4 volte'. Sulla lavagna la card sintetizza in '3-4x sui PDF'. E' una classe di affermazione diversa da KA-037: e' un test suo, non una citazione. Resta comunque non verificato da noi.",
+    "fonte": "1Dyld3y-V7Y#19:51-20:12 (audio) + card lavagna",
+    "frame": "frame-341.png",
+    "ancora": "Io ho fatto diversi test, se non mi credete fateli anche voi",
+    "confidenza": "dichiarato dal relatore come misurazione propria, non verificato",
+    "relazioni": [{"verso": "KA-036", "tipo": "quantifica"}]
+  },
+  {
+    "id": "KA-039",
+    "tipo": "regola",
+    "contenuto": "Imprecisione di linguaggio del relatore da non ereditare: a 9:48 dice che il costo cresce 'come se fosse esponenziale'. L'animazione che mostra lui stesso descrive invece una crescita LINEARE per turno (messaggio costante riletto n volte al turno n), quindi quadratica sul cumulato. L'animazione e' corretta, la parola no.",
+    "fonte": "1Dyld3y-V7Y#9:48 (audio) contro #9:12 (animazione)",
+    "frame": "frame-185.png",
+    "ancora": "quindi ogni volta e' come se fosse esponenziale",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-001", "tipo": "corregge"}]
+  },
+  {
+    "id": "KA-040",
+    "tipo": "regola",
+    "contenuto": "Soglia dei grafi di conoscenza: sotto i ~500 file non conviene ne' CodeGraph ne' Graphify, perche' il grafo costa piu' di quello che fa risparmiare. L'autore attribuisce la soglia ai manutentori stessi di CodeGraph, che lo scriverebbero nel loro README, citando un repo da 102 file su cui il tool consuma piu' del comportamento nativo. Differenza fra i due: CodeGraph e' il sensore residente per il CODICE (si indicizza da solo, un watcher lo tiene aggiornato); Graphify e' la torcia per un BRAIN (PDF, immagini, markdown, output Obsidian) ma il grafo te lo costruisce un agente, e lo paghi.",
+    "fonte": "1Dyld3y-V7Y#30:00-30:45 (riquadro lavagna letto per intero) + audio 30:34-30:46 e 34:35-34:39",
+    "frame": "frame-628.png",
+    "ancora": "Sotto i ~500 file non conviene nessuno dei due",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-041", "tipo": "descrive"},
+      {"verso": "KA-042", "tipo": "motivato-da"}
+    ]
+  },
+  {
+    "id": "KA-041",
+    "tipo": "strumento",
+    "contenuto": "Dati letti direttamente dalle due repo aperte a schermo. CodeGraph (colbymchenry/codegraph): 'Pre-indexed code knowledge graph, auto syncs on code changes... fewer tokens, fewer tool calls, 100% local', 68.8k stelle, MIT, sezione '4. No more syncing!' con auto-sync via watcher e 'the index is never stale', disinstallazione con 'codegraph uninstall'. Graphify: '#2 Repository Of The Day', Apache-2.0, 162 contributors, Python 100%; mappa codice, docs, PDF, immagini e video in 'a knowledge graph you can query instead of grepping'; il codice via tree-sitter AST e' deterministico e locale, mentre docs/PDF/immagini/video usano il modello dell'assistente; ogni arco e' taggato EXTRACTED o INFERRED; non e' un vector index. Install: 'uv tool install graphify' poi 'graphify install'.",
+    "fonte": "1Dyld3y-V7Y#29:36-29:54 e #30:33 (pagine GitHub aperte e lette)",
+    "frame": "frame-594.png, frame-595.png, frame-598.png, frame-599.png",
+    "ancora": "a knowledge graph you can query instead of grepping through files",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-040", "tipo": "descritto-da"}
+    ]
+  },
+  {
+    "id": "KA-042",
+    "tipo": "numero",
+    "contenuto": "Senza grafo l'agente 'cerca a tentoni', e ogni tentativo sbagliato resta in contesto: 'apre un file, non e' quello. Ne apre altri cinque. Ogni apertura entra nel contesto e ci resta, anche quella sbagliata'. Contatore contesto mostrato nell'animazione sul pannello 'Senza grafo': 3480. Con il grafo fa una domanda sola, va dritto al nodo, e il file poi lo legge lo stesso.",
+    "fonte": "1Dyld3y-V7Y#28:39 (animazione) + #30:00 (riquadro lavagna)",
+    "frame": "frame-574.png",
+    "ancora": "Senza grafo cerca a tentoni. E ogni tentativo resta in contesto.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-040", "tipo": "motiva"},
+      {"verso": "KA-001", "tipo": "istanza-di"}
+    ]
+  },
+  {
+    "id": "KA-043",
+    "tipo": "regola",
+    "contenuto": "Regola editoriale che l'autore si e' fatto scrivere da Claude in un proprio style.md, letta a schermo mentre preparava questo stesso video: se il corpo di un contenuto e' pieno di numeri misurati, l'intro promette con un AVVERBIO, non con una cifra. Una cifra in apertura o e' gonfiata (e allora contraddice un video che smonta chi promette percentuali) o e' precisa (e allora non e' una promessa ma un dettaglio che lo spettatore non sa ancora dove mettere). Da qui il 'tagliare DRASTICAMENTE' della prima riga.",
+    "fonte": "1Dyld3y-V7Y#10:06 (risposta di Claude a schermo, letta per intero)",
+    "frame": "frame-203.png",
+    "ancora": "se il corpo e' pieno di numeri misurati, l'intro promette con un avverbio, non con una cifra",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-044", "tipo": "esempio-di-metodo"}]
+  },
+  {
+    "id": "KA-044",
+    "tipo": "architettura",
+    "contenuto": "Metodo di lavoro dell'autore visibile trasversalmente nel video: le regole non vivono in testa ma in file (style.md per le regole editoriali, script.md per lo script, CLAUDE.md per le regole operative, hook per le regole deterministiche). Ogni volta che una decisione vale oltre il caso singolo, viene scritta nel file che la fara' riapplicare da sola.",
+    "fonte": "1Dyld3y-V7Y#10:06 + #15:42 (second brain in VS Code) + #19:12 (hook)",
+    "frame": "frame-203.png, frame-315.png, frame-385.png",
+    "ancora": "l'ho scritta come regola in style.md, perche' vale oltre questo video",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-034", "tipo": "generalizza"},
+      {"verso": "KA-020", "tipo": "generalizza"}
+    ]
+  },
+  {
+    "id": "KA-045",
+    "tipo": "affermazione",
+    "contenuto": "CONTRADDIZIONE VISIBILE A SCHERMO E MAI COMMENTATA. Nel pannello /usage che l'autore mostra a 3:36 per dimostrare le sue tesi, in fondo, Claude Code stesso suggerisce: 'Le sessioni piu' lunghe sono piu' costose anche con la cache. Usa /compact a meta' attivita', /clear quando passi a nuove attivita''. Cioe' il prodotto raccomanda esattamente il comando che il video definisce 'la cavolata piu' grossa'. L'autore non lo nota e non lo confuta.",
+    "fonte": "1Dyld3y-V7Y#3:36 (pannello /usage, testo letto a schermo)",
+    "frame": "frame-073.png",
+    "ancora": "Usa /compact a meta' attivita', /clear quando passi a nuove attivita'",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-007", "tipo": "contraddice"},
+      {"verso": "KA-006", "tipo": "conferma"}
+    ]
+  },
+  {
+    "id": "KA-046",
+    "tipo": "numero",
+    "contenuto": "Numeri di consumo reali dell'autore, letti nel pannello /usage: 93% del suo utilizzo eseguito oltre i 150k di contesto; 30% eseguito con 4 o piu' sessioni in parallelo; la skill che gli costa di piu' e' /reel-editor con il 29%, seguita da /apple-design 2%, /resource-page 1%, /post-all 1%, /repurpose 1%. Limite settimanale su tutti i modelli al 24%. Disclaimer a schermo: misure approssimative e sovrapposte, solo quel computer, escluso claude.ai.",
+    "fonte": "1Dyld3y-V7Y#3:36 (pannello /usage letto a schermo) + audio 3:03-3:17",
+    "frame": "frame-073.png",
+    "ancora": "93% eseguito oltre 150k di contesto / 30% eseguito mentre 4+ sessioni erano in parallelo",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "KA-003", "tipo": "prodotto-da"},
+      {"verso": "KA-024", "tipo": "dimostra"}
+    ]
+  },
+  {
+    "id": "KA-047",
+    "tipo": "entita",
+    "contenuto": "L'autore e' Riccardo Belli Contarini, ingegnere informatico, founder di Martes AI (www.martes-ai.com), azienda che forma i team aziendali su Claude Code / Claude Cowork / Codex e poi costruisce soluzioni AI su misura. Posizionamento dichiarato: 'non siamo l'azienda di consulenza che ti fa l'analisi dei processi e ti da' il deck di 200 pagine, ma andiamo ad eseguire e a costruire'. Case study letto a schermo sul sito: 82.271 euro generati da un agente AI su WhatsApp per Bluvacanze. Profilo Instagram: 134 post, 12.5K follower, 22.5K iscritti YouTube dichiarati in bio.",
+    "fonte": "1Dyld3y-V7Y#0:52-1:20 e #35:00-35:40 (audio) + #0:57 e #3:18 (schermo)",
+    "frame": "frame-020.png, frame-067.png",
+    "ancora": "82.271 generati da un agente AI su WhatsApp",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "KA-043", "tipo": "autore-di"}]
+  }
+]

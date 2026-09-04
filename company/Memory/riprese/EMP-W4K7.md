@@ -20,12 +20,19 @@ max18), che finora sono solo scritti e mai applicati.
 
 ## 2. DOVE SIAMO — cosa e' FATTO davvero
 
-**Chiusi end-to-end: 2 su 10** (9 video + 1 documento)
+**Chiusi end-to-end: 3 su 10** (9 video + 1 documento)
 
 | Fonte | id | Stato |
 |---|---|---|
 | Documento Justin Sung | *(testo, no video)* | ✅ CP-20260904-004, wiki `Source_Justin_Sung_Guida_Apprendimento.md` |
 | `max18-v02-karpathy-agenti` | `LCNk5e5EiCA` | ✅ CP-20260904-005, wiki `Source_Giovanni_Beggiato_Company_Brain_Karpathy.md` |
+| `max18-v03-belli-token` | `1Dyld3y-V7Y` | ✅ CP-20260904-007, wiki `Source_Riccardo_Belli_Risparmiare_Token_Claude_Code.md` |
+
+**`max18-v03` e' il modello da imitare per tutti i prossimi run.** Belli Contarini, 36:01,
+screen-recording denso: **copertura totale 138/138 frame unici (100%)**, non campionamento —
+e motivato, perche' le cifre chiave stanno sulla lavagna e **non vengono mai dette a voce**.
+Ha prodotto il **primo `atoms.json` dell'Impero con gli archi**: 47 atomi, **96 archi
+tipizzati, 0 rotti, 0 orfani**. E' la lezione di Justin Sung applicata lo stesso giorno.
 
 **Il documento di Max ha chiuso il buco di Justin Sung** (`Pictures/materiale/Agency 2026 (1).md`,
 510KB): conteneva la guida integrale sull'apprendimento. Trattato come **fonte testuale, non
@@ -41,7 +48,6 @@ per cause esterne, non per errore di merito:
 | Run | id | Cosa c'e' su disco | Cosa manca |
 |---|---|---|---|
 | `max18-v01-second-brain-obsidian` | `RnoC5IlOUhs` | 1.390 frame, `scenes.json/md` (352 scene), `transcript.md`, `video-analysis.md` **parziale** | atoms, coverage, wiki, memory close |
-| `max18-v03-belli-token` | `1Dyld3y-V7Y` | 722 frame, `scenes.json/md`, `clean_transcript.txt`, `video-analysis.md` **parziale** | atoms, coverage, wiki, memory close |
 
 **PRIMA DI RILANCIARLE: leggere cosa c'e' gia' nei loro `video-analysis.md`.** Il download e
 l'estrazione dei frame sono la parte piu' cara e sono gia' fatti: non si rifanno mai.
@@ -78,6 +84,21 @@ Tutti verificati unici il 2026-09-04, nessun doppione col lotto max17.
 - **Zero learning science in tutto l'ecosistema di studio DE** (grep-verificato: gli unici
   match sono falsi positivi). Empire Studio, Memory Empire e CONOSCENZA-EMPIRE non
   applicano niente di cio' che l'Impero ha appena archiviato sull'apprendimento.
+
+**Altri quattro lavori di Fase 2, trovati da `max18-v03` e tutti misurati sul codice:**
+- **`frame_extractor.py:133` scarica a `--height default=360`: ci accechiamo da soli.** Non
+  e' un limite di YouTube, e' la nostra pipeline che chiede il formato peggiore. Il flag
+  `--height 720` esiste gia' e nessuno lo usa. Spiega perche' le sentinelle faticano a
+  leggere il testo nei frame.
+- **`scripts/peso_skill.py` misura il costo sbagliato**: pesa il corpo delle skill ma la
+  parola `description` ha **0 occorrenze** nel file — non conta mai la voce che si paga a
+  **ogni sessione per tutte le skill**. La misura dell'81% del peso va rifatta.
+- **Decisione che spetta a Max — autocompact**: `agente-max/knowledge/K05-context.md:531`
+  raccomanda Autocompact **ON**; il video lo chiama l'errore piu' grosso. In tutta
+  `company/Memory` la parola "compact" ha **0 occorrenze**: non abbiamo mai deciso davvero.
+- **L'auto-sync committa i file delle sentinelle mentre lavorano** (visto in diretta:
+  commit `10c3b356` e `b71bef6d`). L'ordine "non fare git commit" dato alle sentinelle e'
+  aggirato da un demone. Da sapere quando si ragiona su chi ha scritto cosa.
 - **Fonte testuale ≠ video.** Quando il materiale arriva come testo si dichiara: nessun
   frame visto, `frame: null` sugli atomi. Mai lasciar intendere di aver guardato un video.
 
