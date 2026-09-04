@@ -1894,5 +1894,23 @@
     "alternatives_rejected": [],
     "confidence": 0.8,
     "timestamp": "2026-09-04T14:14:56.525861"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260904-143757-db2840",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 1885, velocity media 1.6 viste/ora, indice cash cow reale 15.4 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-09-04T14:37:58.030600"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260904-143757-db2840",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per un'attrazione immediata per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 5.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-09-04T14:37:58.132159"
   }
 ]

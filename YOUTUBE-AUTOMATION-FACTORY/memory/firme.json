@@ -1246,5 +1246,41 @@
     ],
     "valida": true,
     "blocchi": []
+  },
+  {
+    "run_id": "yt-20260904-143757-db2840",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260904-143757-db2840",
+    "artefatto": "metadati",
+    "esegue_L2": "metadata-optimizer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
   }
 ]
