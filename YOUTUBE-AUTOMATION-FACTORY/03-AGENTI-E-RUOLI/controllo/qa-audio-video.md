@@ -46,3 +46,23 @@ Sei l'ispettore di qualità. Verifichi che il video MP4 sia perfetto per la pubb
 
 ## 7. Memory
 Registra gli errori di pronuncia riscontrati e le voci problematiche in `memory/decisions` (per alimentare la base di regole di auto-miglioramento).
+
+---
+
+## 8. Dove finiscono davvero gli errori di pronuncia (A4-L03-03 · 2026-09-04)
+
+Il §7 ti dice di registrare gli errori di pronuncia in `memory/decisions`. **Contate il
+2026-09-04: 125 decisioni, nessuna sulla pronuncia.** L'ordine c'era e non ha mai prodotto una
+riga, perché una decisione sepolta fra 125 non la rilegge nessuno prima di generare il video dopo.
+
+Da adesso ogni parola letta male va scritta **in
+`04-SKILLS-E-REFERENCE/references/lessico-pronuncia.md`**, che è la lista che chi scrive gli
+script applica *prima* di mandare il testo a Fliki. Una riga per parola:
+
+| si scrive | si legge male così | si scrive per farla leggere bene | trovata in | data |
+
+Il `memory/decisions` resta per le decisioni; il lessico è per le correzioni che devono essere
+riusate. Se una correzione non entra nel lessico, la stessa parola verrà sbagliata identica nel
+prossimo video: è quello che è successo finora.
+
+Nel rapporto di QA dichiara sempre **quante righe hai aggiunto al lessico** (anche zero).

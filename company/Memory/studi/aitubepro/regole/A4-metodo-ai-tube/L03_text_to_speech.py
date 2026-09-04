@@ -95,7 +95,7 @@ def verifica(fabbrica):
 
     esiti = {}
     esiti["A4-L03-01"] = contiene("03-AGENTI-E-RUOLI/operatori/voice-caster.md",
-                                  ["voce fissata", "eta' percepita"])
+                                  ["si sceglie una volta e si fissa", "à percepita"])
     esiti["A4-L03-02"] = contiene("02-AUTOMAZIONI-E-SCRIPTS/apex7_orchestrator.py",
                                   ["voice_id"])
     esiti["A4-L03-03"] = (os.path.exists(os.path.join(

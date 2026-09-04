@@ -71,3 +71,43 @@ Annota la voce usata per ogni video. Se una voce risulta associata a performance
 
 ## Connessioni
 - [[capo-produzione]] · [[video-producer]] · [[regolatore-configurazione]]
+
+---
+
+## 8. La voce si sceglie una volta e si fissa (A4-L03-01 · imparata dallo studio, 2026-09-04)
+
+**Il difetto che questa regola chiude, misurato:** questa scheda ti chiede «una voce maschile,
+calma, di qualità, **non la prima disponibile**». Il codice che esegue l'ordine
+(`fliki_client.py:113`) filtra per genere e prende **`candidates[0]`**: letteralmente la prima.
+E la risolve **ad ogni generazione**, perché `CANALI` (`apex7_orchestrator.py:84-119`) contiene
+`voice_gender` ma **nessun `voice_id`**.
+
+Conseguenza: se l'ordine in cui l'API elenca le voci cambia — una voce nuova, un riordino a
+monte — **il canale cambia voce da un video all'altro senza che nessuno l'abbia deciso**. Per un
+canale che pubblica a nastro la voce è la faccia: cambiarla in silenzio è come cambiare il logo
+fra un video e il successivo. Oggi non ce ne accorgeremmo nemmeno: in `memory/decisions` ci sono
+125 decisioni e **nessuna riporta la voce usata**, malgrado il §7 di questa scheda lo imponga.
+
+### I criteri con cui si sceglie (in quest'ordine)
+
+| criterio | per il nostro pubblico (70-80 anni) |
+|---|---|
+| **genere** | come da configurazione approvata del canale |
+| **età percepita** | matura, mai voce di giovane o di bambino: deve suonare coetanea, non estranea |
+| **uso previsto** | narrazione / news, mai voce da marketing o da spot |
+| **ritmo** | lenta e regolare; se corre, si abbassa la velocità (`fliki-avanzato.md` §1: 90-95%) |
+| **pulizia** | nessun artefatto udibile sulle parole lunghe: si ascoltano almeno 3 candidate sullo stesso paragrafo prima di decidere |
+
+### Cosa fare, in pratica
+
+1. **Se il canale ha già una voce fissata**, usala e basta. Non si riapre la scelta ad ogni video.
+2. **Se non ce l'ha**, scegli coi criteri qui sopra, ascoltando davvero le candidate, e
+   **registra la voce scelta** — nome, `_id`, e perché — in `memory/decisions` come
+   `DEC-voce-<canale>`.
+3. **Ogni cambio di voce è una decisione scritta**, con il motivo e la data. Mai un effetto
+   collaterale dell'ordine di una lista.
+4. Finché il `voice_id` non è fissato in configurazione (regola `A4-L03-02`, in attesa del gate
+   di categoria A4), **dichiara in ogni log la voce effettivamente usata**: è l'unico modo per
+   accorgersi se è cambiata.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L03-text-to-speech/`.

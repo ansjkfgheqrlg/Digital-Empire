@@ -1,0 +1,608 @@
+{
+  "lesson_id": "81e4e28a-eeca-4404-a311-fa0907185d89",
+  "modello": "base",
+  "durata_s": 935.4,
+  "parole": 1882,
+  "blocchi": [
+    {
+      "inizio": 2.16,
+      "fine": 14.09,
+      "testo": "Ciao a tutti e benvenuti in questo video importantissimo, dove andremo a vedere come utilizzare"
+    },
+    {
+      "inizio": 14.09,
+      "fine": 21.09,
+      "testo": "ChatGPT in particolar modo per scrivere i testi, ma non solo per scrivere, io direi"
+    },
+    {
+      "inizio": 21.09,
+      "fine": 26.29,
+      "testo": "riscrivere i contenuti che abbiamo già trovato sul web."
+    },
+    {
+      "inizio": 26.29,
+      "fine": 31.53,
+      "testo": "L'isapere che ChatGPT è un'interigenza artificiale che è in grado di generare testi"
+    },
+    {
+      "inizio": 31.53,
+      "fine": 38.49,
+      "testo": "unici. Ad esempio, se io dove immaginiamo il caso del canale delle notizie, dico scrivimi"
+    },
+    {
+      "inizio": 38.49,
+      "fine": 47.13,
+      "testo": "una notizia del giorno. Lui è in grado comunque, vedete, di andare a generare una notizia"
+    },
+    {
+      "inizio": 47.13,
+      "fine": 53.65,
+      "testo": "per il 20 April 2023. Mi rende conto, è una cosa fantastica. Quindi quello che io posso"
+    },
+    {
+      "inizio": 53.65,
+      "fine": 61.49,
+      "testo": "fare è andare a prendere direttamente questo contenuto e crearci un nuovo contenuto"
+    },
+    {
+      "inizio": 61.49,
+      "fine": 66.17,
+      "testo": "però vi ricordate che io vi ho fatto vedere, io prendo i video che già funzionano su"
+    },
+    {
+      "inizio": 66.17,
+      "fine": 71.79,
+      "testo": "YouTube. Abbiamo scaricato i nostri sottotitoli, quindi qui ciò i sottotitoli, prendiamo ad"
+    },
+    {
+      "inizio": 71.79,
+      "fine": 77.53,
+      "testo": "esempio questo qui di Federico Salvatore. Ovviamente voi fattelo nella vostra"
+    },
+    {
+      "inizio": 77.53,
+      "fine": 95.85,
+      "testo": "nicchia. Ok, scrivimi questo testo da zero rendendolo originale come se fossi un giornalista"
+    },
+    {
+      "inizio": 95.85,
+      "fine": 105.25,
+      "testo": "in collo. Ed ecco qui che ChatGPT in automatico mi sta andando a creare nel testo. Ci stiamo"
+    },
+    {
+      "inizio": 105.25,
+      "fine": 115.17,
+      "testo": "rendendo conto della potenza. Vedete, questo qui è un testo nuovo, non esiste online. È un"
+    },
+    {
+      "inizio": 115.17,
+      "fine": 123.33,
+      "testo": "testo dove io sono partito da diciamo una piccola, un piccolo script e mi è stato generato un nuovo"
+    },
+    {
+      "inizio": 123.33,
+      "fine": 129.81,
+      "testo": "contenuto. Però vi ricordate che vi ho fatto anche salvare ad esempio le note quello che noi"
+    },
+    {
+      "inizio": 129.81,
+      "fine": 140.69,
+      "testo": "possiamo fare. Se vogliamo rendere l'articolo ancora, diciamo più corposo, ok, io abbro. Vedete,"
+    },
+    {
+      "inizio": 140.69,
+      "fine": 148.25,
+      "testo": "e posso andare a prendere determinati parti del testo, guardate l'inserisco su ChatGPT qua,"
+    },
+    {
+      "inizio": 148.25,
+      "fine": 163.38,
+      "testo": "vado a prendere questa altra parte. Ok, quindi sto aggiungendo delle informazioni proprio per"
+    },
+    {
+      "inizio": 163.38,
+      "fine": 176.02,
+      "testo": "farvi capire quello che sto facendo all'interno del corso e gli dico aggiungi questa parte di testo"
+    },
+    {
+      "inizio": 176.02,
+      "fine": 191.35,
+      "testo": "senza essere ripetitivo e rendi l'articolo originale. Ok, e qui mi sta aggiungendo altre parti,"
+    },
+    {
+      "inizio": 191.35,
+      "fine": 200.35,
+      "testo": "ok, direttamente con la prima parte che io ho inviato, ok, e con la nuova parte di contenuto. Adesso,"
+    },
+    {
+      "inizio": 200.35,
+      "fine": 208.15,
+      "testo": "su ChatGPT, in realtà, si potrebbe parlare ore, ore, ore, ore, ore, ore. Io il consiglio che vi voglio"
+    },
+    {
+      "inizio": 208.15,
+      "fine": 215.79,
+      "testo": "dare proprio per farvelo sfruttare al meglio e quello di semplicemente testare, scrivere, farì"
+    },
+    {
+      "inizio": 215.79,
+      "fine": 223.59,
+      "testo": "domande, perché più domande fate a ChatGPT, più in grado di darvi dell'informazione migliori. Ora,"
+    },
+    {
+      "inizio": 223.59,
+      "fine": 229.35,
+      "testo": "in questo caso, io sto facendo tutto con la versione appagamento, guardate, avete visto la velocità."
+    },
+    {
+      "inizio": 229.35,
+      "fine": 235.63,
+      "testo": "Allora, queste qui sono le versioni di ChatGPT, abbiamo la possibilità di avere la versione"
+    },
+    {
+      "inizio": 235.63,
+      "fine": 245.03,
+      "testo": "default, che è ChatGPT già 3.5, ChatGPT4, che è la versione appagamento, e questa qui, invece,"
+    },
+    {
+      "inizio": 245.03,
+      "fine": 251.43,
+      "testo": "è legasi, è proprio la prima, quindi è la versione gratuita che ti permette di fare tutto quello che"
+    },
+    {
+      "inizio": 251.43,
+      "fine": 259.07,
+      "testo": "vi ho fatto vedere, ok, se io dovessi mettere ChatGPT 3.5, Gpt4, addirittura sarebbe ancora più"
+    },
+    {
+      "inizio": 259.07,
+      "fine": 265.23,
+      "testo": "evoluto. Ci sono dei limiti di messaggi, costa 20 dollari al mese, trovate il link direttamente"
+    },
+    {
+      "inizio": 265.23,
+      "fine": 273.23,
+      "testo": "in basso per poter entrare su ChatGPT, avete già visto dei tutorial, su come si usa tutto quanto,"
+    },
+    {
+      "inizio": 273.23,
+      "fine": 284.07,
+      "testo": "e io qui posso andare a scrivi un articolo per un, anzi, scrivi un testo per un video di YouTube"
+    },
+    {
+      "inizio": 286.54,
+      "fine": 293.54,
+      "testo": "partendo da questo, i vado ad incollare, ad esempio quella piccola parte, vi sto facendo vedere,"
+    },
+    {
+      "inizio": 293.54,
+      "fine": 302.54,
+      "testo": "e come vedete, mi stanno andando a creare il testo, ok, quindi io adesso faccio scrivere"
+    },
+    {
+      "inizio": 302.54,
+      "fine": 309.54,
+      "testo": "a ChatGPT tutto l'articolo, quindi vedete senza dovermi mettere lì e ad inventare nulla di nulla di nulla,"
+    },
+    {
+      "inizio": 309.54,
+      "fine": 316.54,
+      "testo": "mi sta scrivendo direttamente tutto lui, e così non ho limiti di contenuti che posso creare, ok,"
+    },
+    {
+      "inizio": 316.54,
+      "fine": 324.54,
+      "testo": "mi vado ad aprire sempre il mio file, quindi vi faccio vedere come dovreste fare, vado ad aprire il mio file,"
+    },
+    {
+      "inizio": 324.54,
+      "fine": 334.54,
+      "testo": "ok, vado su documenti, vado su il documento di desto, qua gli metto di bofederico salvatore,"
+    },
+    {
+      "inizio": 335.54,
+      "fine": 348.21,
+      "testo": "qua mette ovviamente il vostro, la vostra notizia, ok, il vostro testo, vedete qui sta andando a scrivere tutto il testo,"
+    },
+    {
+      "inizio": 348.21,
+      "fine": 357.21,
+      "testo": "adesso vi faccio vedere quando finirà questa ChatGPT4 e quella più evoluta in questo momento in cui sto registrando il video,"
+    },
+    {
+      "inizio": 357.21,
+      "fine": 363.21,
+      "testo": "ma credetemi queste tecnologie vanno veramente, veramente avanti e in maniera importante,"
+    },
+    {
+      "inizio": 364.21,
+      "fine": 372.21,
+      "testo": "ok, quindi appena ChatGPT mi avrà scritto tutto il testo, la prossima bella faccio vedere con la versione quella più veloce,"
+    },
+    {
+      "inizio": 372.21,
+      "fine": 378.21,
+      "testo": "ma come vedete qui mi ha dato anche le istruzioni di come devo andare a creare il video, vedete?"
+    },
+    {
+      "inizio": 378.21,
+      "fine": 386.21,
+      "testo": "quindi io mentre parlavo con voi in un minuto partendo da una notizia, sabendo già da qual è il video che funziona,"
+    },
+    {
+      "inizio": 386.21,
+      "fine": 395.21,
+      "testo": "posso andare a replicarlo, quindi mi salvo tutto il testo, me lo incollo qui, tolgo questa parte intro del video perché non mi interessa,"
+    },
+    {
+      "inizio": 395.21,
+      "fine": 405.21,
+      "testo": "tolgo questa parte immagini e tolgo altro perché non mi interessa, ok, e come vedete in meno di un minuto, perché in meno di un minuto,"
+    },
+    {
+      "inizio": 405.21,
+      "fine": 412.21,
+      "testo": "io ci ho la notizia, ho fatto un nuovo testo partendo da qualcosa che già so che funziona e che ci ha interesse,"
+    },
+    {
+      "inizio": 412.21,
+      "fine": 420.21,
+      "testo": "ma adesso vi faccio vedere anche un nuovo documento, vi faccio vedere direttamente con ChatGPT non 4,"
+    },
+    {
+      "inizio": 420.21,
+      "fine": 427.21,
+      "testo": "ed ecco infatti posso utilizzare la versione, questa qui è uguale a quella che potrete avere in maniera gratuita,"
+    },
+    {
+      "inizio": 427.21,
+      "fine": 434.21,
+      "testo": "oppure con la versione questa di default che adesso è molto molto più veloce e da più conoscenza,"
+    },
+    {
+      "inizio": 434.21,
+      "fine": 441.21,
+      "testo": "è più coincisione del testo, allora quello che io faccio è ovviamente che dovete fare prendo"
+    },
+    {
+      "inizio": 441.21,
+      "fine": 446.21,
+      "testo": "il altro video che voglio andare a realizzare, vi faccio vedere come queste ancora più veloce,"
+    },
+    {
+      "inizio": 446.21,
+      "fine": 459.21,
+      "testo": "quindi qui potete veramente fare 200 contenuti in un'ora, metto, riscrivimi il testo in maniera originale partendo da"
+    },
+    {
+      "inizio": 459.21,
+      "fine": 467.21,
+      "testo": "questo, incollo il sottotitolo, ok, ecco qui che mi ha riscritto il testo,"
+    },
+    {
+      "inizio": 467.21,
+      "fine": 474.21,
+      "testo": "ora io gli dico aggiungi più aspetto sbagliato, aggiungi,"
+    },
+    {
+      "inizio": 474.21,
+      "fine": 479.21,
+      "testo": "ok comunque la già scritto, già capito quello che volevo dire,"
+    },
+    {
+      "inizio": 479.21,
+      "fine": 487.21,
+      "testo": "e come vedete ci sta dando tutte le informazioni su Roberto vecchioni se io volessi allungare il video,"
+    },
+    {
+      "inizio": 487.21,
+      "fine": 494.21,
+      "testo": "il posso dire anche continua e lui continua a fare ad aggiungere testo,"
+    },
+    {
+      "inizio": 494.21,
+      "fine": 505.21,
+      "testo": "quindi l'utilizzo di chat gpt realtà non è una materia che ha delle regole ben precisi che io ti posso dare,"
+    },
+    {
+      "inizio": 505.21,
+      "fine": 512.21,
+      "testo": "ci saranno dei video, ci saranno un video specificivo dove vi faccio vedere come trovare magari i migliori prompt,"
+    },
+    {
+      "inizio": 512.21,
+      "fine": 520.21,
+      "testo": "perché questi comandi che noi diamo sono i prompt di chat gpt però poi il contenuto,"
+    },
+    {
+      "inizio": 520.21,
+      "fine": 527.21,
+      "testo": "comunque in ogni caso dovete capire voi cosa chiedere in base a quello che l'argomento,"
+    },
+    {
+      "inizio": 527.21,
+      "fine": 535.21,
+      "testo": "vi faccio l'esempio, faccio l'argomento dei super bonus, ok, vi posso chiedere cosa sono i super bonus"
+    },
+    {
+      "inizio": 535.21,
+      "fine": 544.21,
+      "testo": "al livello fiscale per creare un contenuto intendono e lui mi va a spiegare a fare direttamente il contenuto"
+    },
+    {
+      "inizio": 544.21,
+      "fine": 550.21,
+      "testo": "che io posso andare a caricare su gpt capite, dipende molto da quello che l'argomento,"
+    },
+    {
+      "inizio": 550.21,
+      "fine": 558.99,
+      "testo": "oppure mi dici 10 curiosità sui gatti versioni guardate qui,"
+    },
+    {
+      "inizio": 558.99,
+      "fine": 563.99,
+      "testo": "e lui direttamente mi va a scrivere tutto quello che a me interessa,"
+    },
+    {
+      "inizio": 563.99,
+      "fine": 569.99,
+      "testo": "e io posso andare a copiare tra virgolette tutto quello che mi dice lui,"
+    },
+    {
+      "inizio": 569.99,
+      "fine": 575.99,
+      "testo": "oppure prendere degli spunti, ad esempio guardate, vi spiego cosintendo,"
+    },
+    {
+      "inizio": 575.99,
+      "fine": 579.99,
+      "testo": "vedete, gli esemplari di gatti versioni neri sono da volta definiti,"
+    },
+    {
+      "inizio": 579.99,
+      "fine": 584.99,
+      "testo": "gatti pantera a causa del loro aspetto elegante e misterioso, ok,"
+    },
+    {
+      "inizio": 584.99,
+      "fine": 597.5,
+      "testo": "se io gli scrivo, mi dai più informazioni sui gatti pantera, guardate,"
+    },
+    {
+      "inizio": 597.5,
+      "fine": 610.54,
+      "testo": "cosa succede, vedete? Quindi mi sta aggiungere delle informazioni su quello che è una parte del testo,"
+    },
+    {
+      "inizio": 610.54,
+      "fine": 615.54,
+      "testo": "quindi qui voi non avete i limiti nel chiedere a chat gpt di migliorare il vostro testo,"
+    },
+    {
+      "inizio": 615.54,
+      "fine": 622.54,
+      "testo": "ad esempio io torno di nuovo qui, guardate, prendo sempre il video questo qua di vecchionino,"
+    },
+    {
+      "inizio": 622.54,
+      "fine": 635.54,
+      "testo": "vada di collare il testo, iscrivo, puoi iscrivermi un testo come se fosse un giornalista rai,"
+    },
+    {
+      "inizio": 635.54,
+      "fine": 641.54,
+      "testo": "sto facendo un esempio, vedete qui che mi fa vedere, vi crea la notizia,"
+    },
+    {
+      "inizio": 641.54,
+      "fine": 651.54,
+      "testo": "io posso fare così, scrivimi questo testo come se fosse un giornalista rai,"
+    },
+    {
+      "inizio": 651.54,
+      "fine": 659.4,
+      "testo": "vedete? Obviamente non utilizzate la rai, vi sto facendo vedere come ci sta scrivendo un testo"
+    },
+    {
+      "inizio": 659.4,
+      "fine": 664.4,
+      "testo": "come se dovesse leggere lo intibu, ok, vedete?"
+    },
+    {
+      "inizio": 664.4,
+      "fine": 671.4,
+      "testo": "cioè vi rendete conto quanti informazioni mi sta dando in più, è fantastico,"
+    },
+    {
+      "inizio": 671.4,
+      "fine": 675.4,
+      "testo": "cioè qui siamo veramente a livelli altissimi per quello vi ho detto,"
+    },
+    {
+      "inizio": 675.4,
+      "fine": 682.4,
+      "testo": "se voi avete il vostro biano idoriale con i vostri testi, adesso potete andare su chat gpt"
+    },
+    {
+      "inizio": 682.4,
+      "fine": 689.4,
+      "testo": "e creare quanti più testi possibili, adesso ovviamente solo per farvi vedere il video,"
+    },
+    {
+      "inizio": 689.4,
+      "fine": 695.4,
+      "testo": "farvi vedere tutte le evoluzioni, faccio così, vado a prendere anche questa notizia,"
+    },
+    {
+      "inizio": 695.4,
+      "fine": 700.4,
+      "testo": "così me la salvo sul piano idoriale vi faccio vedere proprio come lavoro sul campo,"
+    },
+    {
+      "inizio": 700.4,
+      "fine": 712.57,
+      "testo": "ok, la incollo qui, attimo che non lo salvata così, vi faccio vedere tutti passaggi,"
+    },
+    {
+      "inizio": 712.57,
+      "fine": 721.94,
+      "testo": "ok, allora, qua tolgo queste rai, ovviamente perché non possiamo dire che siamo la rai,"
+    },
+    {
+      "inizio": 721.94,
+      "fine": 727.94,
+      "testo": "perché non lo siamo, io praticamente ho fatto, ma avrei potuto farne 10 minuti,"
+    },
+    {
+      "inizio": 727.94,
+      "fine": 731.94,
+      "testo": "avrei potuto fare 10, 15, 20 testi, proprio senza notizie,"
+    },
+    {
+      "inizio": 731.94,
+      "fine": 736.94,
+      "testo": "ecco qui, ciò le prime due notizie, che sono i due video che andrò a creare adesso"
+    },
+    {
+      "inizio": 736.94,
+      "fine": 743.94,
+      "testo": "e che caricherò sul canale, ok, ovviamente questo è un esempio sul canale delle notizie,"
+    },
+    {
+      "inizio": 743.94,
+      "fine": 748.94,
+      "testo": "potete chiedere qualsiasi cosa a chat gpt nella vostra nicchia,"
+    },
+    {
+      "inizio": 748.94,
+      "fine": 757.94,
+      "testo": "potete chiedere, chiedere di riscrivervi il test originale di utilizzare una trama per un video di YouTube,"
+    },
+    {
+      "inizio": 757.94,
+      "fine": 763.94,
+      "testo": "quindi sarà lui stesso a crearvi il contenuto, poi è normale che se ci sono dei piccoli errori,"
+    },
+    {
+      "inizio": 763.94,
+      "fine": 769.94,
+      "testo": "calcolate che è riscrivere un testo da 0 cb porterebbe via ore ore se non giornate intere,"
+    },
+    {
+      "inizio": 769.94,
+      "fine": 775.94,
+      "testo": "utilizzando chat gpt magari per fare tutte le modifiche per fare un testo perfetto,"
+    },
+    {
+      "inizio": 775.94,
+      "fine": 781.94,
+      "testo": "piegate 5, 10 minuti al massimo, quindi il consiglio che vido ora è quello di smanettare"
+    },
+    {
+      "inizio": 781.94,
+      "fine": 787.94,
+      "testo": "quanto più possibile su chat gpt, ok, e comunque all'interno del percorso"
+    },
+    {
+      "inizio": 787.94,
+      "fine": 792.94,
+      "testo": "avete trovato tante informazioni su chat gpt e tante altre ne troverete,"
+    },
+    {
+      "inizio": 792.94,
+      "fine": 798.94,
+      "testo": "quindi per questo video è tutto, vi ho fatto vedere come generare i video per questo genere di contenuti,"
+    },
+    {
+      "inizio": 798.94,
+      "fine": 803.94,
+      "testo": "la stessa cosa potete farlo per tutte le nicchie che abbiamo mostrato inizialmente,"
+    },
+    {
+      "inizio": 803.94,
+      "fine": 810.94,
+      "testo": "perché sarà chat gpt stesso a mostrarvi il contenuto, però ovviamente può succedere,"
+    },
+    {
+      "inizio": 810.94,
+      "fine": 816.94,
+      "testo": "come vi ho fatto vedere, che magari abbiamo un testo in un'altra lingua,"
+    },
+    {
+      "inizio": 816.94,
+      "fine": 820.94,
+      "testo": "perché come vi ho detto dobbiamo cercare i video in altre lingue, ok,"
+    },
+    {
+      "inizio": 820.94,
+      "fine": 828.94,
+      "testo": "vedere qui ho scaricato il testo di vecchioni in francese, ok, immaginate che il testo che mi interessava"
+    },
+    {
+      "inizio": 828.94,
+      "fine": 838.94,
+      "testo": "era francese lo voglio in italiano, ok, riscrivimi questo testo traducendolo in italiano,"
+    },
+    {
+      "inizio": 838.94,
+      "fine": 848.7,
+      "testo": "guardate, io sto inserendo il testo in francese adesso, ok, vedete che mi lo sta scrivendo in italiano,"
+    },
+    {
+      "inizio": 848.7,
+      "fine": 853.7,
+      "testo": "perché il mio canale parla in italiano, se io lo volessi in spagnolo,"
+    },
+    {
+      "inizio": 853.7,
+      "fine": 866.46,
+      "testo": "io vi digo, riscrivimi questo testo rendendolo originale in spagnolo, ok,"
+    },
+    {
+      "inizio": 866.46,
+      "fine": 872.46,
+      "testo": "ecco lo qui, me lo sta scrivendo in spagnolo, quindi io la stessa lo stesso contenuto"
+    },
+    {
+      "inizio": 872.46,
+      "fine": 881.46,
+      "testo": "lo posso fare su più lingue, questo ci interesserà molto per quando andremo poi a scalare il nostro business,"
+    },
+    {
+      "inizio": 881.46,
+      "fine": 889.46,
+      "testo": "e ci serve in questo momento se tutti i contenuti dei canali, dove noi vogliamo prendere spunto non sono dei canali italiano,"
+    },
+    {
+      "inizio": 889.46,
+      "fine": 896.46,
+      "testo": "sono sicuro che questo video ti è piaciuto tantissimo e soprattutto di servirà tantissimo,"
+    },
+    {
+      "inizio": 896.46,
+      "fine": 901.46,
+      "testo": "adesso ovviamente dobbiamo andare a registrare la voce di questo video,"
+    },
+    {
+      "inizio": 901.46,
+      "fine": 907.46,
+      "testo": "e ve lo faccio vedere nel prossimo contenuto, quello che devi fare ora però prima di andare avanti al prossimo contenuto"
+    },
+    {
+      "inizio": 907.46,
+      "fine": 916.46,
+      "testo": "è smarettare tanto su chat gpt, perché è importante che tu riesca da avere un contenuto scritto bene e mi raccomando"
+    },
+    {
+      "inizio": 916.46,
+      "fine": 925.46,
+      "testo": "salvadelo in un file, tipo questo, in modo che poi si possa leggere o magari io lo facciamo leggere ad un'intervigienza artificiale."
+    },
+    {
+      "inizio": 925.46,
+      "fine": 928.46,
+      "testo": "Ciao da Pietro Kanjermi e ci vediamo nel prossimo video."
+    }
+  ]
+}

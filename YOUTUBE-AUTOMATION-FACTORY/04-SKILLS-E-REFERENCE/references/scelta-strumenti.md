@@ -57,3 +57,31 @@ novità arrivano prima dei cataloghi: server Discord, gruppi Telegram e Facebook
 
 **Cosa NON si fa:** adottare qualcosa il giorno che lo si scopre. Fra la scoperta e la
 produzione ci stanno le quattro domande qui sopra.
+
+
+---
+
+## Il criterio messo alla prova: i sintetizzatori vocali (A4-L03-04 · 2026-09-04)
+
+Il primo caso concreto in cui questo criterio è servito davvero. Cercando **text to speech** nei
+cataloghi: **52 strumenti** su Futurepedia, una categoria intera su FutureTools, e su Google i
+nomi grossi che nei cataloghi non compaiono nemmeno (Amazon Polly, Google Cloud TTS, Speechify).
+
+Davanti a decine di strumenti che fanno la stessa cosa, l'ordine di scelta è questo:
+
+1. **Realismo della voce**, ascoltato sullo stesso paragrafo per tutti i candidati. La differenza
+   fra una voce gratuita e una buona si sente in tre secondi, e non si recupera dopo.
+2. **Controllo fine**: pause su una parola scelta, velocità di lettura, **dizionario di
+   pronuncia**. Uno strumento senza queste tre leve costringe a rifare l'audio a mano ogni volta
+   che sbaglia un accento.
+3. **Lingua vera, non tradotta**: voci native italiane, non una voce inglese che legge italiano.
+4. **Costo per ora di parlato**, non il prezzo dell'abbonamento: cinque ore a 24 dollari sono un
+   numero confrontabile, «piano Pro» non lo è.
+5. **Novità: mai un criterio.** Vale qui la regola `A4-L00-01` — verificati e popolari, non
+   l'ultimo uscito. Lo dice anche l'autore del corso davanti al suo strumento preferito: «magari
+   questo diventerà il più importante al mondo, come potrebbe scomparire dall'oggi al domani».
+
+Perché non abbiamo cambiato strumento: usiamo **Fliki**, che copre voce e montaggio in un solo
+passaggio e sta già dentro la catena via API. Un sintetizzatore migliore sulla singola voce ci
+costringerebbe a rimettere insieme audio e video a mano — un guadagno sul pezzo, una perdita
+sulla catena.
