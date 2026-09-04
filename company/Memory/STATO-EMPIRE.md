@@ -1,3 +1,32 @@
+## 👑⚠️ 2026-09-04 — ORDINE DIRETTO DI MAX A GAEL — ECOSISTEMA LANCI, da leggere PRIMA di tutto
+
+**GAEL: questo messaggio è per te, testuale, parola di Max — non lo riassumo, non lo addolcisco:**
+
+> *"Deve essere tutto ancora più architettato, mi raccomando i miglioramenti - Devi fare
+> l'intera parte di architettatura e struttura tutta completamente con arena Però fatti dare
+> tutto l'intero prompt e contesto da Emperator."*
+
+**Cosa significa, in pratico:**
+1. L'architettura dell'ecosistema LANCI (`PIANO-MAESTRO/26-ECOSISTEMA-LANCI.md`, ferma a L3
+   dal 3 settembre sera) va **rifatta più a fondo** — più giri di critica, più miglioramenti,
+   prima di chiudere L4→L6. Non basta "funziona": deve reggere il livello che Max si aspetta.
+2. **Prima di scrivere una riga**, apri una chat e scrivi `Emperator` (o il codice della task):
+   ti do io il prompt e il contesto intero per ripartire — non improvvisare da solo su questa.
+3. **"con arena"** — testuale così come Max l'ha dettato, non chiarito oltre. Portalo tu stesso
+   nel giro con Emperator: probabile riferimento al sistema **Arena** (Arena AI / 13-ARENA-APEX),
+   ma va confermato insieme prima di costruire, non assunto.
+
+**Collisione trovata da me, non ancora vista da nessuno: il numero 14 è già preso.**
+Il piano di Gael usa `14-LANCI`, ma **`14-TESORERIA` esiste già** in `company/Ecosistemi/`
+(creato dopo il piano). E non è la prima volta: `08-INTELLIGENCE` e `08-STREAM-S7-BOT` hanno
+**già lo stesso numero da tempo**, mai corretto. Creato oggi `company/Ecosistemi/REGISTRO-NUMERI.md`
+— **prossimo numero libero: 15**. Da ora, prima di assegnare un numero a un ecosistema nuovo,
+si controlla e si riserva lì: niente più numeri a sensazione.
+
+**RIPRESA DA (Gael)**: apri chat con Emperator prima di toccare `26-ECOSISTEMA-LANCI.md`.
+
+---
+
 ## 📕 2026-09-04 — GAEL+CLAUDE: TASK-KDP-FIX-W2 riverificata per intero. 5 gate su 6 chiusi, FIX-1 aspetta Gael — CP-20260904-002/003
 
 **Sessione fermata da Gael, tutto salvato e pushato. Questo blocco dice esattamente da dove si riprende.**

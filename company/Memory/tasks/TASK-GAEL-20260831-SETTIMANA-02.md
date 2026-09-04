@@ -400,6 +400,15 @@ toglie di mezzo pagandolo una volta sola per tutta la settimana.
 
 # 🔴 TASK-LANCI-ECO-W2 — Ecosistema LANCI: **prima il piano, poi (e solo poi) la costruzione**
 
+> ⚠️ **ORDINE DI MAX, 2026-09-04 — letto per intero prima di riprendere questa task.**
+> Testuale: *"Deve essere tutto ancora più architettato, mi raccomando i miglioramenti - Devi
+> fare l'intera parte di architettatura e struttura tutta completamente con arena Però fatti
+> dare tutto l'intero prompt e contesto da Emperator."*
+> L3 (§1-2) è chiusa, ma non basta: prima di L4→L6, apri una chat con Emperator e fatti dare
+> il prompt/contesto completo — non riprendere da solo. E occhio al numero: `14-LANCI` collide
+> con `14-TESORERIA` già esistente — prossimo numero libero in
+> `company/Ecosistemi/REGISTRO-NUMERI.md` (15). Dettagli in `STATO-EMPIRE.md`, blocco di oggi.
+
 ⚠️ **Questa task ha una regola diversa dalle altre due. Leggila tutta prima di toccare un file.**
 
 Max è stato esplicito: **prima devi consegnare un piano perfetto, estremamente progettato,
