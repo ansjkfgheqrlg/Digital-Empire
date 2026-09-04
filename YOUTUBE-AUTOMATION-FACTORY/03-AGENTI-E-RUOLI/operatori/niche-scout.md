@@ -55,3 +55,27 @@ Regole:
 ## 7. Memory
 Scrive la nicchia scelta e i canali candidati come input per `DEC` (decisione di nicchia) via
 `memory-keeper`. Se è un pivot, annota il motivo (segnale da F6).
+
+---
+
+## 8. I cataloghi di strumenti come fonte di nicchie *(regola `A4-L00-03`)*
+
+> Imparata da **AI TUBE PRO / Metodo AI Tube / L00** (Pietro Gangemi, 07:57).
+
+I cataloghi di strumenti AI — `futuretools.io`, `futurepedia.io`, `aifinder.info` — **non si
+interrogano solo per strumento: si interrogano per ARGOMENTO**, e allora restituiscono idee di
+canale invece che software.
+
+Parole del relatore: *«se noi mettiamo marketing o qualsiasi altra cosa — finanza, chat,
+avatar — abbiamo la possibilita' di scoprire il nuovo video per nuovi canali da realizzare»*.
+
+**Come si usa qui.** Cercando un argomento nel catalogo si vede **quanti strumenti esistono per
+farci contenuti**: e' un indizio di quanto quella nicchia sia gia' industrializzata. Serve nei
+due sensi, ed e' per questo che vale:
+- **tanti strumenti** = nicchia affollata, ma anche produzione a costo basso;
+- **pochi strumenti** = piu' attrito, ma meno concorrenza automatizzata.
+
+**Attenzione, e' un indizio non una prova.** Non sostituisce nessuno dei criteri gia' in questa
+scheda: la nicchia si decide sui numeri veri dei canali (costanza, visualizzazioni/ora,
+replicabilita' senza volto), non sul numero di strumenti disponibili. Questa e' una fonte di
+**candidati da verificare**, non un verdetto.

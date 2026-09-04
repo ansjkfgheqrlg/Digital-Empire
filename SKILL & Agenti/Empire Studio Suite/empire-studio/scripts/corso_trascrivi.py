@@ -34,6 +34,8 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 STUDIO = os.path.dirname(HERE)
 RUNS = os.path.join(STUDIO, "runs", "corso-aitubepro")
+# radice del monorepo: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts -> su di 4
+REPO = os.path.abspath(os.path.join(HERE, "..", "..", "..", ".."))
 
 
 def mmss(secondi):
@@ -75,8 +77,23 @@ def trascrivi(lesson_id, modello="small"):
     # costo si paga una volta sola per tutte le lezioni.
     os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
     from faster_whisper import WhisperModel
+
+    # COPIA LOCALE PRIMA DI TUTTO. Su questa macchina lo scaricamento automatico del modello
+    # e' fallito TRE volte di fila — una col trasferimento accelerato, due con
+    # "SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC", la firma tipica di un antivirus che ispeziona
+    # il traffico cifrato. `curl --retry --continue-at` invece arriva in fondo perche' riprende
+    # invece di ricominciare. Quindi: se il modello e' gia' sul disco lo si usa e non si tocca
+    # la rete. Per aggiungerne uno:
+    #   curl -sSL --retry 8 --retry-all-errors -C - -o model.bin \
+    #     https://huggingface.co/Systran/faster-whisper-<modello>/resolve/main/model.bin
+    #   (idem config.json, tokenizer.json, vocabulary.txt) dentro modelli/faster-whisper-<modello>/
+    locale = os.path.join(REPO, "modelli", "faster-whisper-%s" % modello)
+    sorgente = locale if os.path.exists(os.path.join(locale, "model.bin")) else modello
+    if sorgente is locale:
+        print("      (copia locale: %s)" % locale)
+
     # int8 su CPU: la scelta che rende praticabili 167 lezioni su una macchina senza GPU.
-    riconoscitore = WhisperModel(modello, device="cpu", compute_type="int8")
+    riconoscitore = WhisperModel(sorgente, device="cpu", compute_type="int8")
 
     print("[3/3] Trascrivo ...")
     t0 = time.time()

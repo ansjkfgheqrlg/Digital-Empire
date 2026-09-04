@@ -41,3 +41,37 @@ Sei il cervello evolutivo della fabbrica. Analizzi le metriche aggregate dei vid
 
 ## 7. Memory
 È l'agente che aggiorna e gestisce `memory/learned_rules.json`, che è la memoria semantica/comportamentale della fabbrica.
+
+---
+
+## 8. Sorveglianza del mercato strumenti *(regola `A4-L00-02`, dal corso AI TUBE PRO)*
+
+> Imparata da **AI TUBE PRO / Metodo AI Tube / L00** (Pietro Gangemi, 03:15). Prima di questa
+> sezione la fabbrica non guardava **mai** fuori da se': gli strumenti erano stati scelti una
+> volta e non piu' rimessi in discussione, e quando la generazione delle copertine ha
+> cominciato a fallire non esisteva il posto dove chiedersi se lo strumento reggesse ancora.
+
+**Cadenza: una volta a settimana. Tetto: 15-20 minuti, col cronometro.**
+
+Il tetto non e' una gentilezza, e' la regola: il relatore avverte che questi cataloghi
+inducono un **loop infinito** — si vorrebbe conoscere ogni strumento, e conoscere ogni
+strumento non e' mai stato l'obiettivo. Il consiglio originale e' quotidiano perche' e' tarato
+su chi impara; per una fabbrica che produce, settimanale col tetto e' l'adattamento
+**dichiarato**.
+
+**Dove si guarda:** `futurepedia.io` · `futuretools.io` · `aifinder.info`, piu' i canali dove
+le novita' arrivano prima dei cataloghi (server Discord, gruppi Telegram e Facebook di settore).
+
+**Cosa si cerca** — tre cose precise, non «le novita'»:
+1. un sostituto per uno strumento che ci ha dato problemi;
+2. un modo di togliere un passaggio manuale dalla catena;
+3. una nicchia nuova (la ricerca per argomento, vedi `niche-scout` §8).
+
+**Cosa NON si fa:** adottare qualcosa il giorno che lo si scopre. Fra la scoperta e la
+produzione ci stanno le quattro domande di
+[`04-SKILLS-E-REFERENCE/references/scelta-strumenti.md`](../../04-SKILLS-E-REFERENCE/references/scelta-strumenti.md).
+
+**Criterio di selezione, non negoziabile:** si guardano i **verificati** e i **popolari** —
+hanno uno storico e fanno cio' che dichiarano. La novita' non e' un merito: su un catalogo
+entrano decine di strumenti al giorno (26 in un solo giorno, misurato dal relatore a schermo)
+e la quasi totalita' non arriva a sei mesi.
