@@ -424,7 +424,97 @@ freddo.
 
 ---
 
-# PARTE G — COSA COMPRARE
+# PARTE F-BIS — IL MESE DI PROVA (decisione di Max, 2026-09-05)
+
+> Max: *"faremo un acquisto di prova solamente per un mese, un acquisto minimo indispensabile
+> per poter fare tutte le prove possibili — però considera che le prime prove saranno scarti
+> perche' sbaglieremo qualcosa."*
+>
+> Questa parte viene **prima** di tutto il resto del piano. Nessun impegno annuale finche' le
+> prove non hanno risposto.
+
+## La regola che rende valida la prova
+
+**MENSILE, mai annuale.** L'annuale sconta il 30% ma blocca dodici mesi: su un mese di prova
+annullerebbe il senso stesso della prova. **Si perde lo sconto, e va bene: e' il prezzo
+dell'opzione di dire di no.** Promozioni come quella vengono rimesse ogni due mesi.
+
+Seconda regola: **i crediti dell'abbonamento non si riportano al mese dopo**. Quello che non
+si spende entro il mese e' perso, quindi le prove vanno fatte tutte, non "quando c'e' tempo".
+
+## Cosa comprare per la prova
+
+| Tool | Piano | Prezzo | Cosa sblocca |
+|---|---|---|---|
+| **Higgsfield** | **Ultra 3.000, MENSILE** | **€129** | Tutti i modelli, 8 job paralleli, Supercomputer, Canvas, Vibe Motion, e i **7 giorni di Kling 3.0 e Nano Banana Pro unlimited** |
+| **ElevenLabs** | **Creator, MENSILE** | **$11** (primo mese al 50%) | Professional Voice Cloning, licenza commerciale, 121.000 crediti (~121 min), **275 minuti di chiamate** |
+
+**Totale del mese di prova: circa €139.**
+
+### Perche' Ultra e non Plus, sulla prova
+Plus mensile costa €59 e da' 1.200 crediti. Le prove ne chiedono ~2.640, quindi servirebbero
+1.440 crediti a pacchetto: €66. Totale **€125** — praticamente identico a Ultra (**€129**), ma
+con 6 job paralleli invece di 8, senza Nano Banana Pro unlimited e senza un solo credito di
+margine per gli scarti. **A parita' di spesa si prende quello che non finisce a meta' prova.**
+
+## Il bilancio della prova, con lo scarto dentro
+
+Tasso di scarto **3×** sulle prime prove (contro 2× a regime): la prima volta si sbaglia il
+prompt, la reference, il formato. E' messo nel conto, non sperato via.
+
+| # | Prova | Composizione | Crediti |
+|---|---|---|---|
+| 1 | **Video YouTube** — prima un segmento da 2 min provato 3 volte per trovare la formula, poi un video intero da 10 min | 3 × (4 clip Kling ×3 + 25 img Soul) + 1 × (20 clip ×2 + 120 img) | **664** |
+| 2 | **Corti Vibe Motion** — 3 corti diversi, 3 iterazioni ciascuno, sfondi condivisi | 9 progetti Vibe Motion + 8 clip ×3 | **552** |
+| 3 | **Misura del TTS Higgsfield** — 5 campioni di lunghezza nota (30s, 1, 2, 5, 10 min) per ricavare la tariffa | incognita, budget | **150** |
+| 4 | **Canvas** — costruzione gratis, 3 esecuzioni del template YouTube | 3 × 110 | **330** |
+| 5 | **Layers su una slide Arena** — 10 tentativi di rigenerazione del solo testo | incognita, budget | **80** |
+| 6 | **Avatar UGC** — 300 volti Soul 2.0, training del personaggio, 1 video da 30s | 36 + 120 + 6 lipsync ×3 | **372** |
+| 7 | **Promo prodotto 30s** — Manuale Claude Code | 6 clip Kling ×3 | **144** |
+| 8 | **Confronto modelli premium** sulla stessa scena | Seedance 2.0 ×2, Veo 3.1 ×2, Sora 2 Pro ×2 | **248** |
+| 9 | **MCP da Claude Code** — 10 generazioni miste guidate da me | | **100** |
+| | **Somma** | | **2.640** |
+| | **Margine imprevisti 25%** | | **660** |
+| | **TOTALE** | | **~3.300** |
+
+**Ultra da' 3.000 crediti, quindi si e' 300 sotto — ma solo sulla carta:** i 7 giorni di
+**Kling 3.0 unlimited** coprono a mano tutte le clip Kling delle prove 1, 2, 7 e in parte 4,
+che valgono circa **900 crediti**. Facendo quelle nella finestra unlimited, i 3.000 bastano con
+margine reale. **La finestra unlimited va usata per prima, non per ultima.**
+
+## Le nove risposte che la prova deve portare a casa
+
+| Prova | La domanda | Come si decide |
+|---|---|---|
+| 1 | Il Long Video Generator batte quello che usciva da Fliki? | Confronto diretto con un video gia' pubblicato, a parita' di script |
+| 2 | Vibe Motion regge il livello di editing che hai in testa? | Sottotitoli al centro, elementi in movimento, `#fb4604` esatto — pubblicabile o no |
+| 3 | **Quanto costa un minuto di TTS in crediti?** | E' l'incognita che decide se i 700 minuti dei video lunghi restano su Higgsfield o vanno su ElevenLabs, cioe' Pro contro Scale |
+| 4 | Il costo scende alla seconda e terza esecuzione di un template? | Se non scende, l'architettura a template non paga e va ripensata |
+| 5 | Layers tiene il layout rigenerando solo il testo? | Se si', i caroselli Arena diventano riusabili |
+| 6 | L'avatar e' indistinguibile? | Se non lo e', il formato UGC si accantona e basta |
+| 7 | Il promo e' pubblicabile senza scuse? | Metro binario |
+| 8 | Quale modello premium vale il suo prezzo? | Seedance 2.0 costa 5,6 volte Kling 3.0: deve valerlo |
+| 9 | L'MCP regge un flusso vero da qui? | Se si', l'automazione parte; se no, resta lavoro a mano |
+
+**Il numero 3 e' il piu' importante.** Senza quello nessun conto di questo dossier e' chiuso.
+
+## Regole di condotta durante la prova
+
+1. **Tetto di spesa scritto nel codice:** nessuna generazione sopra 50 crediti senza via libera esplicito di Max. L'MCP non ha un tetto nativo.
+2. **Registro delle prove**: ogni generazione annotata con modello, crediti spesi, esito. Senza registro il mese di prova non produce numeri, produce impressioni.
+3. **La finestra unlimited per prima**, a mano, mai con script (i Termini lo vietano).
+4. **Disdetta prima del rinnovo** se due prove su tre falliscono. La data del rinnovo va segnata sul calendario il giorno stesso dell'acquisto.
+5. **Le prove 3 e 5 sono misure, non giudizi**: vanno fatte anche se l'esito estetico e' brutto, perche' servono i numeri.
+
+## Cosa NON si compra nel mese di prova
+- Nessun impegno annuale, su nessuno dei due.
+- Nessun piano Team o Scale di Higgsfield.
+- Nessun pacchetto di crediti extra prima di aver esaurito i 3.000 e la finestra unlimited.
+- ElevenLabs Pro o Scale: Creator basta per provare, e i 275 minuti di chiamata coprono il test dell'agente su venti lead molte volte.
+
+---
+
+# PARTE G — COSA COMPRARE (a regime, dopo la prova)
 
 ## Mese di taratura (il primo)
 

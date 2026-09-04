@@ -74,8 +74,26 @@ Totale 172 video e 904 minuti finiti al mese.
 1. **Mai Team ne' Scale di Higgsfield.** Sono i crediti **piu' cari** (€0,065 e €0,060) perche' il prezzo e' per posto con minimo cinque. Il credito piu' economico e' Ultra 9.000 a €0,030.
 2. **I piani ElevenAgents sono lineari a $0,08 al minuto.** Salire di livello non fa risparmiare un centesimo sulle chiamate: si prende **Pro $99**, il piu' basso che copra i crediti voce. Business costerebbe **$510 in piu' al mese** per lo stesso servizio.
 
-**Da comprare:** Ultra 3.000 (€99) piu' ElevenLabs Pro ($99) come **mese di taratura**, poi si
-sale ai numeri misurati. Calcolatore: `PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py`.
+Calcolatore: `PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py`.
+
+## Il mese di prova (decisione di Max, 2026-09-05)
+
+**Higgsfield Ultra 3.000 MENSILE (€129) + ElevenLabs Creator (primo mese $11) ≈ €139.**
+
+- **Mensile, mai annuale.** L'annuale sconta il 30% ma blocca dodici mesi e annullerebbe il
+  senso della prova. Si perde lo sconto: e' il prezzo dell'opzione di dire di no.
+- **Nove prove con budget crediti dichiarato e tasso di scarto 3× invece di 2×**, perche' le
+  prime prove si sbagliano: video YouTube 664 crediti, corti Vibe Motion 552, misura del TTS
+  150, Canvas 330, Layers su slide Arena 80, avatar UGC 372, promo prodotto 144, confronto
+  modelli premium 248, MCP 100. Somma 2.640 piu' 25% di margine = ~3.300.
+- **I 7 giorni di Kling 3.0 unlimited coprono a mano ~900 crediti** delle prove: la finestra
+  va usata **per prima**, non per ultima.
+- **Perche' Ultra e non Plus:** Plus (€59 piu' €66 di pacchetti = €125) costa uguale ma con 6
+  job paralleli invece di 8 e zero margine per gli scarti.
+- Condotta: tetto di 50 crediti per generazione senza via libera di Max, **registro delle
+  prove** obbligatorio, data del rinnovo sul calendario il giorno stesso dell'acquisto.
+
+Checkpoint: `company/Memory/checkpoints/CP-20260905-001.md` — **codice di ripresa EMP-HGFD**.
 
 **Incognite aperte:** costo in crediti del TTS Higgsfield (decide se i 700 minuti di voce dei
 video lunghi restano li' o vanno su ElevenLabs) e costo reale di un progetto Vibe Motion.

@@ -2042,3 +2042,32 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   e' se generiamo cento risposte al giorno da richiamare.
 - Report pubblicato (revisione 4): https://claude.ai/code/artifact/24fb95f3-f393-4566-b014-2b8e307d2335
   Calcolatore aggiornato: `PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py`
+
+## 2026-09-05
+- REVISIONE 5 — **MESE DI PROVA definito** (decisione di Max: "faremo un acquisto di prova solamente
+  per un mese, il minimo indispensabile per fare tutte le prove possibili, pero' considera che le
+  prime prove saranno scarti"). **Higgsfield Ultra 3.000 MENSILE (EUR 129) + ElevenLabs Creator
+  (primo mese $11) = ~EUR 139.**
+  - **Regola non negoziabile: MENSILE, mai annuale.** L'annuale sconta il 30% ma blocca 12 mesi e
+    annullerebbe il senso della prova. Si perde lo sconto: e' il prezzo dell'opzione di dire di no.
+  - **Nove prove con budget crediti dichiarato e tasso di scarto 3x invece di 2x** (le prime volte
+    si sbaglia prompt, reference o formato — messo nel conto, non sperato via): video YouTube 664,
+    corti Vibe Motion 552, misura del TTS 150, Canvas 330, Layers su slide Arena 80, avatar UGC 372,
+    promo prodotto 144, confronto modelli premium 248, MCP 100. Somma 2.640 + 25% margine = ~3.300.
+  - Ultra ne da' 3.000, ma **i 7 giorni di Kling 3.0 unlimited coprono a mano ~900 crediti** delle
+    prove 1, 2, 7 e parte della 4: **la finestra unlimited va usata per PRIMA, non per ultima.**
+  - Perche' Ultra e non Plus: Plus (EUR 59 + EUR 66 di pacchetti = EUR 125) costa uguale ma con 6 job
+    paralleli invece di 8 e **zero margine per gli scarti**. A parita' di spesa si prende quello che
+    non finisce a meta' prova.
+  - Regole di condotta: tetto di 50 crediti per generazione senza via libera di Max; registro delle
+    prove (senza registro il mese produce impressioni, non numeri); data del rinnovo sul calendario
+    il giorno stesso dell'acquisto; i crediti non si riportano, quindi le prove si fanno tutte.
+- CHECKPOINT: `company/Memory/checkpoints/CP-20260905-001.md`. **Codice di ripresa: EMP-HGFD.**
+- Report finale (revisione 5): https://claude.ai/code/artifact/24fb95f3-f393-4566-b014-2b8e307d2335
+- CONSIGLI (chiusura dello studio): (a) le tre mosse a costo zero si possono fare **prima** di
+  comprare — Startup Grant ElevenLabs (33M caratteri = oltre dieci anni di voce dei corti),
+  riparazione `quality_gate.py:93`, apertura trattativa Enterprise; (b) la prova 3, la misura del
+  costo in crediti del TTS, va fatta per prima perche' senza quel numero nessun conto e' chiuso;
+  (c) skill nuove da costruire dopo la prova: `video-youtube-higgsfield` (al posto del ramo Fliki) e
+  `corto-vibe-motion`; (d) la conoscenza di Canvas e Vibe Motion va dentro CONOSCENZA-EMPIRE, perche'
+  serve a qualunque agente che tocchi produzione video.

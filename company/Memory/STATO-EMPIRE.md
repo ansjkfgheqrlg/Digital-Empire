@@ -1,3 +1,36 @@
+## 🎬 2026-09-05 — HIGGSFIELD + ELEVENLABS: studio chiuso, piano approvato, mese di prova definito — CP-20260905-001
+
+**Codice di ripresa: EMP-HGFD.** Dossier: `PIANO-MAESTRO/28-DOSSIER-HIGGSFIELD-ELEVENLABS.md`
+(quinta revisione). Report: https://claude.ai/code/artifact/24fb95f3-f393-4566-b014-2b8e307d2335
+Calcolatore: `PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py`.
+
+**DECISIONE DI MAX: si compra, ma un mese di prova, mensile.**
+- **Higgsfield Ultra 3.000 MENSILE (€129) + ElevenLabs Creator (primo mese $11) ≈ €139.**
+- **Mai annuale** su una prova: l'annuale sconta il 30% ma blocca dodici mesi.
+- Nove prove con budget crediti e **tasso di scarto 3×**; i 7 giorni di Kling 3.0 unlimited
+  coprono ~900 crediti e **vanno usati per primi**.
+
+**Conto a regime, sul volume dichiarato** (70 video lunghi + 102 corti + 3.000 chiamate al mese):
+**€2.113/mese, €25.356/anno**. Con tasso di riprova 1,3× invece di 2×: €1.604/mese.
+
+**Le cinque cose da non dimenticare:**
+1. Il TTS di Higgsfield gira su **ElevenLabs v3**: comprando Higgsfield le voci sono già dentro.
+2. I piani ElevenAgents sono **lineari a $0,08/min**: si prende **Pro**, Business butterebbe $510/mese.
+3. **Team e Scale di Higgsfield sono i crediti più CARI** (prezzo per posto, minimo 5). Mai prenderli.
+4. **L'unlimited non è automatizzabile** (Termini): a mano, in sprint. L'automazione va su MCP/API a crediti.
+5. **Chiamate a freddo automatiche in Italia: bloccate** (L.49/2026 + AI Act art. 50). Il flusso
+   vocale si costruisce sul lead caldo di Preventa. E 3.000 chiamate/mese vogliono 3.000 consensi.
+
+**Due incognite aperte, si misurano nella prima settimana di prova:** il costo in crediti del TTS
+Higgsfield (decide Pro contro Scale a regime) e il costo reale di un progetto Vibe Motion.
+
+**RIPRESA DA (Max):** comprare Ultra 3.000 mensile + Creator, e segnare la data di rinnovo.
+**RIPRESA DA (Emperator):** collegare l'MCP, poi misurare il TTS **prima di ogni altra prova**.
+**Si può fare adesso, a costo zero:** Startup Grant ElevenLabs, riparazione di `quality_gate.py:93`
+(21 fallimenti identici, e a 3 video al giorno ferma 70 produzioni al mese), trattativa Enterprise.
+
+---
+
 ## 👑⚠️ 2026-09-04 — ORDINE DIRETTO DI MAX A GAEL — ECOSISTEMA LANCI, da leggere PRIMA di tutto
 
 **GAEL: questo messaggio è per te, testuale, parola di Max — non lo riassumo, non lo addolcisco:**
