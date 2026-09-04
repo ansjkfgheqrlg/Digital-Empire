@@ -1810,3 +1810,33 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 - MEMORY EMPIRE: `empire-studio/memory-empire/knowledge/LCNk5e5EiCA/` chiuso
   (ingest-manifest.json, atoms.json, contenuto-integrale.md) — path live dentro `empire-studio/`,
   non le cartelle morte fuori (B-033).
+
+## 2026-09-04
+- INGEST: studio a fondo di **Higgsfield** ed **ElevenLabs** su ordine di Max ("abbiamo budget").
+  Siti letti direttamente con Playwright sul DOM renderizzato (entrambe le pagine prezzi sono SPA:
+  il fetch semplice le vede vuote e restituisce listini di terze parti, spesso sbagliati). Estratti
+  i listini veri in EUR e USD, la tabella crediti per singolo modello, il funzionamento reale di
+  "Unlimited", MCP/CLI, API Cloud, ElevenAgents. Incrociato con normativa italiana ed europea.
+  -> 2 pagine create: `PIANO-MAESTRO/28-DOSSIER-HIGGSFIELD-ELEVENLABS.md` (dossier completo) e
+  `wiki/tools/Tool_Higgsfield_ElevenLabs.md` (scheda), cross-link a 4 pagine esistenti.
+- SCOPERTA CHE CAMBIA IL PIANO (1/3): Higgsfield **non sostituisce Fliki** — tetto di 15 secondi
+  per clip, fa il girato non il film. E il blocco della fabbrica YouTube non viene da Fliki:
+  21 fallimenti identici in `memory/` nascono da un gate nostro,
+  `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/quality_gate.py:93` (sezioni HOOK, CORPO,
+  CTA mancanti). Stavamo attribuendo a un fornitore un blocco costruito in casa.
+- SCOPERTA CHE CAMBIA IL PIANO (2/3): l'**Unlimited di Higgsfield non e' automatizzabile**. I
+  Termini vietano esplicitamente l'uso automatizzato, e l'unlimited non esiste su MCP, CLI, Canvas
+  o Supercomputer. Si usa a mano, in sprint di 7 giorni a inizio mese; l'automazione legittima
+  passa da MCP e API, a crediti.
+- SCOPERTA CHE CAMBIA IL PIANO (3/3): le **chiamate a freddo automatiche in Italia oggi sono
+  bloccate**. Legge 49/2026 (opt-in obbligatorio dal 19 giugno), RPO esteso alle utenze aziendali,
+  AI Act articolo 50 operativo dal 2 agosto (obbligo di dichiarare l'AI dentro la conversazione,
+  non nella privacy policy), sanzioni fino a 20 milioni o 4% del fatturato in solido tra mandante
+  e contact center. Riprogettato il flusso vocale sul lead caldo che ha gia' risposto su WhatsApp
+  in Preventa: consenso tracciabile, conversione piu' alta, circa 0,21 euro a chiamata.
+- CONSIGLI (obbligatori dopo ogni studio): (a) riparare `quality_gate.py:93` PRIMA di comprare
+  qualsiasi cosa, e' mezz'ora contro 21 fallimenti; (b) innestare Nano Banana Pro nella skill
+  `carousel-empire` con le reference come parametro, non come upload manuale — e' li' che Arena
+  fallisce sempre; (c) nuova skill `promo-video` da costruire sopra l'MCP Higgsfield; (d) tetto di
+  spesa scritto nel codice (mai sopra 50 crediti senza via libera di Max), perche' l'MCP non ne ha
+  uno nativo; (e) candidare Digital Empire allo Startup Grant ElevenLabs prima di pagare.

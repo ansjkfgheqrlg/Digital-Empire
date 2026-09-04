@@ -88,5 +88,61 @@ documento viene **solo dall'audio**, ed è dichiarato come tale.
 
 ---
 
+## ⚠️ CONTROLLO SULLA CIFRA "1.500-3.000 TOKEN PER PAGINA PDF" — esito
+
+**Domanda posta**: una sentinella precedente aveva lasciato l'appunto che questa cifra
+verrebbe da un riassunto automatico di Google e non da una fonte primaria. Verificato in
+prima persona, non preso per buono.
+
+**1. La cifra è davvero nel video — SÌ.** Ancora letterale dalla trascrizione,
+`clean_transcript.txt` riga 480, timestamp **[00:17:41]**:
+
+> "Ogni pagina di un documento PDF elaborato con Cloud code consuma **tra i 1500 e 3000
+> token**. Immaginatemi un PDF di 100 pagine, 200 pagine, 1000 pagine."
+
+("Cloud code" è l'ASR italiano per "Claude Code".)
+
+**2. La fonte a monte è debole — CONFERMATO, e si vede a schermo.** `frame-353.png`
+(**17:36**, cioè **5 secondi PRIMA** che la cifra venga pronunciata) mostra il browser
+dell'autore su una ricerca Google. **[LETTO]** parola per parola dopo zoom 5x:
+
+- **Query digitata**: `claude code quanti token consuma per ogni pagina di un pdf`
+- **Il pannello che risponde è un "AI Overview" di Google** (etichetta e icona letti):
+  > "In genere, ogni pagina di un documento PDF elaborato da Claude Code consuma
+  > **tra i 1.500 e i 3.000 token**."
+- **La citazione attaccata a QUELLA frase è un chip "GitHub"** — non la documentazione
+  Anthropic.
+- Le tre voci di dettaglio sotto sono citate a: **Reddit · r/ClaudeAI +1** (elaborazione
+  multimodale), **Reddit · r/ClaudeAI** (costi extra/overhead del tool Read), **Medium ·
+  Vivek Singh P… +1** (convertire in Markdown risparmia "spesso del 50% o più").
+- Nella colonna destra i due risultati organici sono **entrambi thread Reddit r/ClaudeAI**:
+  "Sto raggiungendo i limiti di Claude quasi subito. Ormai è inutile." (5 Jan 2025) e
+  "I tested PDF token usage Claude Code vs Claude.ai" (25 Jan 2026).
+- L'autore ha disegnato **una freccia verde a mano** sopra lo screenshot che punta alla voce
+  "Costi extra (Overhead)".
+
+**VERDETTO.** La cifra va riportata come **detta dal relatore**, mai come dato verificato.
+La catena reale è: *relatore → AI Overview di Google → GitHub/Reddit/Medium*. **Nessun
+passaggio della catena è documentazione primaria Anthropic**, e questo non è un sospetto:
+è leggibile a schermo nel video stesso.
+
+**Nota di equità verso l'autore** (che va detta, altrimenti il rilievo è scorretto): il
+relatore **non nasconde la fonte** — mostra la ricerca a schermo per 12 secondi
+(`frame-353` → `frame-357`, 17:36-17:48). Quello che non fa è **dire a voce** che sta
+citando un riassunto generato da un'AI: la pronuncia come se fosse un dato di fatto. Il
+difetto è di etichettatura, non di occultamento.
+
+**Cosa NON ho verificato e non fingo di aver verificato**: se la cifra sia poi vera. Non ho
+misurato il consumo reale di una pagina PDF, e nessuna documentazione Anthropic è stata
+aperta in questa sessione per confrontarla. L'unica cosa accertata qui è **la provenienza**.
+
+**Da tenere separato** — le altre cifre sui PDF nel video sono di natura diversa: il test
+"PDF da 300 pagine: ~500-600.000 token con Read, 150.000 token con l'hook, quindi 3-4x"
+([00:19:53]-[00:20:12]) è dichiarato dall'autore come **misurazione fatta da lui**
+("Io ho fatto diversi test, se non mi credete fateli anche voi"), non come citazione. Resta
+non verificata da noi, ma è una classe di affermazione diversa dalla prima.
+
+---
+
 ## Scena per scena
 

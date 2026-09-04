@@ -20,35 +20,80 @@ def upload_mock(video_path, metadata, thumbnail_path):
     return {"status": "success", "video_id": "mock-playwright-vid-12345"}
 
 def _gestisci_step_monetization(page):
-    """Step "Monetization" del wizard di upload — CAUSA REALE del fallimento del 2026-09-04.
+    """Step "Monetization" del wizard di upload — MONETIZZAZIONE v2.
 
-    Su un canale monetizzato (come @Legami d'amore) Studio inserisce un tab in piu' fra
-    "Details" e "Visibility". Quel tab ha un menu a tendina vuoto e il messaggio rosso
-    "Your video needs a monetization setting": finche' non si sceglie, il pulsante Next resta
-    DISABILITATO. Il vecchio codice cliccava Next a vuoto, usciva dal ciclo e finiva a cercare
-    il pannello Visibility che non era ancora comparso (timeout su [class*='visibility']).
+    CAUSA REALE del fallimento del 2026-09-04: su un canale monetizzato (come @Legami d'amore)
+    Studio inserisce un tab in piu' fra "Details" e "Visibility", con un menu a tendina vuoto e
+    il messaggio rosso "Your video needs a monetization setting". Finche' non si sceglie, il
+    pulsante Next resta DISABILITATO: il vecchio codice cliccava Next a vuoto, usciva dal ciclo
+    e finiva a cercare il pannello Visibility non ancora comparso.
 
     Si sceglie "On", non "Off": regola permanente di Max (2026-09-03) — ogni video deve
-    guadagnare. E' la stessa scelta che ads_on_after_upload() applica dopo l'upload.
-    Ritorna True se ha impostato qualcosa, False se lo step non c'era (canale non monetizzato).
+    guadagnare, come gia' fa ads_on_after_upload() dopo l'upload.
+
+    Il menu a tendina non ha un selettore stabile (il primo tentativo con
+    "ytcp-select, tp-yt-paper-dropdown-menu" e' andato in timeout dal vivo), quindi si prova una
+    catena di strategie e, se falliscono tutte, si salva l'HTML dello step per poterlo
+    correggere senza dover ricaricare da capo centinaia di MB di video.
     """
     try:
-        avviso = page.get_by_text("needs a monetization setting", exact=False)
-        if avviso.count() == 0:
+        if page.get_by_text("needs a monetization setting", exact=False).count() == 0:
             return False
     except Exception:
         return False
 
     print("[MONETIZZAZIONE] Step obbligatorio trovato: imposto le pubblicita' su ON.")
-    try:
-        page.locator("ytcp-select, tp-yt-paper-dropdown-menu").first.click(timeout=8000)
-        page.wait_for_timeout(1200)
-        page.locator("tp-yt-paper-item, ytcp-menuitem").filter(
-            has_text="On").first.click(timeout=8000)
-        page.wait_for_timeout(1500)
-    except Exception as e:
-        print("[MONETIZZAZIONE] Menu a tendina non aperto come previsto: %s" % e)
+
+    aperto = False
+    tentativi = [
+        ("ytcp-video-monetization ytcp-select", "componente monetizzazione"),
+        ("#monetization-select", "id diretto"),
+        ("ytcp-select", "select generico di Studio"),
+        ("tp-yt-paper-dropdown-menu", "dropdown paper"),
+        ("ytcp-text-dropdown-trigger", "trigger testuale"),
+    ]
+    for sel, nome in tentativi:
+        try:
+            loc = page.locator(sel).first
+            if loc.count() > 0 and loc.is_visible():
+                loc.click(timeout=4000)
+                aperto = True
+                print("[MONETIZZAZIONE] Menu aperto (%s)." % nome)
+                break
+        except Exception:
+            continue
+
+    if not aperto:
+        # Ultima strategia: il box vuoto mostra la parola "Select" (vista dal vivo nello
+        # screenshot diagnostico). Cliccare il testo e' meno elegante ma non dipende dai
+        # nomi dei custom element, che Google cambia spesso.
+        try:
+            page.get_by_text("Select", exact=True).first.click(timeout=4000)
+            aperto = True
+            print("[MONETIZZAZIONE] Menu aperto (testo 'Select').")
+        except Exception:
+            pass
+
+    if not aperto:
+        _dump_step_monetization(page)
         return False
+
+    page.wait_for_timeout(1500)
+    scelto = False
+    for sel in ("tp-yt-paper-item", "ytcp-menuitem", "[role='option']"):
+        try:
+            opt = page.locator(sel).filter(has_text="On").first
+            if opt.count() > 0:
+                opt.click(timeout=4000)
+                scelto = True
+                print("[MONETIZZAZIONE] Opzione 'On' selezionata (%s)." % sel)
+                break
+        except Exception:
+            continue
+    if not scelto:
+        _dump_step_monetization(page)
+        return False
+    page.wait_for_timeout(1500)
 
     # Scelto "On", Studio chiede l'autocertificazione sui contenuti. Per i video di questo
     # canale (psicologia relazionale, consigli) nessuna categoria si applica: "None of the
@@ -61,6 +106,29 @@ def _gestisci_step_monetization(page):
     except Exception as e:
         print("[MONETIZZAZIONE] Questionario non gestito automaticamente: %s" % e)
     return True
+
+
+def _dump_step_monetization(page):
+    """Salva l'HTML dello step di monetizzazione. Ogni tentativo a vuoto costa un upload
+    intero (centinaia di MB, minuti reali): meglio portarsi a casa il DOM vero al primo
+    fallimento che indovinare selettori a colpi di ricaricamenti."""
+    import os
+    out = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                       "..", "memory", "youtube_step_monetizzazione.html")
+    try:
+        html = page.locator("ytcp-uploads-dialog").first.inner_html(timeout=5000)
+    except Exception:
+        try:
+            html = page.content()
+        except Exception as e:
+            print("[MONETIZZAZIONE] DOM non leggibile: %s" % e)
+            return
+    try:
+        with open(out, "w", encoding="utf-8") as f:
+            f.write(html)
+        print("[MONETIZZAZIONE] DOM dello step salvato in: %s" % os.path.abspath(out))
+    except OSError as e:
+        print("[MONETIZZAZIONE] Salvataggio DOM fallito: %s" % e)
 
 
 def ads_on_after_upload(page, video_id):

@@ -1745,3 +1745,4 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 - [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/examples/(examples) 2026-05-06-example-carousel-2|example-carousel-2]] — *(Workfolw crea caroselli à > carousel-factory > context > examples)*
 -  — *(Workfolw crea caroselli à > carousel-factory > output > 2026-03-22-il-90-dei-freelance-fallisce-per-questo-motivo)*
 - [[Concept_CCM_Brand_Guidelines]] — il sistema visivo e verbale del lancio CCM: 18 pagine, 15 capitoli, valori misurati dal DOM. L'arancione è conteso col concorrente, l'argento e la grana sono la firma
+- [[Tool_Higgsfield_ElevenLabs]] — valutazione d'acquisto dei due strumenti: listini veri estratti dal DOM, tabella crediti per modello, e i tre vincoli che cambiano il piano (Fliki non si sostituisce, l'unlimited non si automatizza, le chiamate a freddo in Italia sono bloccate)
