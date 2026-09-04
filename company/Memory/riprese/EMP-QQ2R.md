@@ -103,9 +103,20 @@ Roberts/Rizzo, stesso id+durata esatti, non solo titolo simile.
 nella lista sorgente, non nel motore di ingest. Da controllare quando si torna sull'ingest,
 non ora (Fase 1 = studio).
 
-**Due video mai scaricati:** `rvpRQD43wdY` (**Beggiato, guida agenzia, 4h17** — le
-trascrizioni ci sono già in `runs/max-17-2026-09/subs/`) e **Justin Sung 4h55**, di cui
-non ho l'indirizzo da nessuna parte.
+~~`rvpRQD43wdY` (Beggiato, guida agenzia, 4h17)~~ — **CHIUSO 2026-09-04**, CP-20260904-002.
+Formato misto: 2h53 talking-head+lavagna Excalidraw, ultimi 80min screen-share denso
+(GoHighLevel CRM, Meta Ads, Whimsical). Campionamento 24/1.928 frame (1,2%), concentrato
+sullo screen-share (39% delle scene uniche dentro il capitolo GoHighLevel, che e' solo il
+16,5% della durata) — dichiarato e motivato in coverage.md. Trascritto 100% (5.550 righe
+deduplicate da 44.552 grezze). Numeri verificati contro dashboard reale (conversion rate
+9,09% ↔ "9%" detto a voce). 5 gap proposti (grep-verificati): `agency-scalping/SKILL.md`
+manca il framework 6-metodi/DIY-DWY-DFY/regola 30% close-rate; `client-handover`/
+`delivery-playbook` mancano scope-creep/kickoff/SOP; zero menzione GoHighLevel in nessuna
+skill; zero "cold reading"/"taking in charge".
+
+**Resta un solo video: `Justin Sung 4h55`, di cui non ho l'indirizzo da nessuna parte.**
+Cercato in tutto il repo (2026-09-04): nessun link salvato, solo nome+durata nei checkpoint
+del 2026-09-02. Serve che Max lo dia, o un indizio (canale/titolo) per cercarlo.
 
 ---
 
@@ -115,12 +126,14 @@ non ho l'indirizzo da nessuna parte.
 2. ~~v14 (Vishen/Master Storyteller)~~ — **FATTO**, CP-20260903-019.
    ~~v12, v13~~ — non servivano, doppioni di Roberts/Rizzo già chiusi.
 3. ~~v16 (MiK Cosentino)~~ — **FATTO**, CP-20260904-001. **Lotto v01-v16 chiuso per intero.**
-4. **PROSSIMO: solo 2 video restano fuori dal lotto originale** — il mostro da 4h17
-   (Beggiato-guida-agenzia, `rvpRQD43wdY`, trascrizioni già in `runs/max-17-2026-09/subs/`)
-   e Justin Sung 4h55 (link da ritrovare, non ce l'ho da nessuna parte).
-5. Poi valutare il pattern trovato in §3 (auto-dichiarazione non verificata prima del
+4. ~~Beggiato-guida-agenzia 4h17~~ — **FATTO 2026-09-04**, CP-20260904-002. Il video piu'
+   grosso del lotto e' chiuso.
+5. **BLOCCATO SU MAX: Justin Sung 4h55.** Nessun link nel repo. Fase 1 e' altrimenti
+   COMPLETA — tutto il resto e' studiato. Serve solo l'indirizzo del video (o l'ok a
+   dichiarare la Fase 1 chiusa senza di lui).
+6. Poi valutare il pattern trovato in §3 (auto-dichiarazione non verificata prima del
    crash di sessione) — serve un controllo strutturale, non solo correzioni a mano.
-6. **Fase 2 (dopo, esplicitamente rimandata da Max)**: implementare tutti i consigli dati
+7. **Fase 2 (dopo, esplicitamente rimandata da Max)**: implementare tutti i consigli dati
    negli studi — non partire da soli, Max lo chiede a parte.
 
 **Massimo 2-3 sentinelle in parallelo quando leggono immagini.** Con 3 la sessione è saltata

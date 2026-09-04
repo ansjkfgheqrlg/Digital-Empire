@@ -1,0 +1,250 @@
+[
+  {
+    "id": "KA-001",
+    "tipo": "framework",
+    "contenuto": "Un'agenzia (di qualsiasi tipo, AI o no) e' sempre la stessa struttura di business: lead generation -> funnel di vendita -> sales call -> onboarding -> CRM/pipeline -> delivery -> upselling. Solo la parte di delivery cambia a seconda del servizio venduto (automazione AI vs social media management vs altro).",
+    "fonte": "rvpRQD43wdY#0:17-0:24",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-002",
+    "tipo": "dato",
+    "contenuto": "Statistiche Eurostat 2025 citate a schermo (non verificate indipendentemente): mondo, 84% delle persone (6,8 miliardi) non ha mai usato AI; 16% (1,3 miliardi) usa solo modelli gratuiti; 0,3% (~25 milioni) paga un abbonamento AI; 0,04% (2-5 milioni) usa coding harness agentici. Italia: 8% usa AI generativa sul lavoro (terzultimo posto EU), 6,4% per educazione, 12,8% per uso personale.",
+    "fonte": "rvpRQD43wdY#0:04-0:08 e #0:22-0:26",
+    "frame": "frame-0029.png (0:03:44)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-003",
+    "tipo": "framework",
+    "contenuto": "Blue Ocean vs Red Ocean Strategy per la scelta del mercato. Blue Ocean = mercato libero senza Proof of Concept (rischioso: puo' essere che nessuno se ne sia accorto, tipo Facebook/Instagram, o che qualcuno abbia gia' fallito, esempio Tesla vs tentativi precedenti di auto elettriche). Red Ocean = mercato saturo (palestre, dentisti, real estate) dove la PoC esiste gia'. Consiglio esplicito: partire in Red Ocean con un'offerta differenziante, non in Blue Ocean, salvo avere capitale da perdere.",
+    "fonte": "rvpRQD43wdY#0:29-0:38",
+    "frame": "frame-0263.png (0:35:04)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-004",
+    "tipo": "framework",
+    "contenuto": "Due framework per scegliere la nicchia. 1) Se sai fare qualcosa: modello delle 3P (Passion / Profession / Pain del cliente), con riferimento al framework Ikigai. 2) Se non sai fare nulla: evitare nicchie regolamentate (farmaceutico, assicurazioni, banking), testare 5-6 nicchie in parallelo contattando ~100 persone per nicchia, poi concentrarsi sulle 2-3 che convertono meglio invece di scegliere 'a tavolino' con un LLM generico.",
+    "fonte": "rvpRQD43wdY#0:38-0:53",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-005",
+    "tipo": "regola",
+    "contenuto": "Anti-pattern 'niche hopping': permanenza minima consigliata di 6 mesi su una nicchia prima di scartarla. 30 chiamate a freddo non sono un campione sufficiente per giudicare una nicchia morta. Chi salta nicchia ogni poche settimane resta sotto la soglia dei 3.000 euro/mese perche' non accumula mai competenza verticale.",
+    "fonte": "rvpRQD43wdY#0:53-0:54",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-006",
+    "tipo": "framework",
+    "contenuto": "Matrice di pricing 3x3: righe DIY / DWY / DFY (Do It Yourself, Done With You, Done For You) per colonne Tempo / Unita' / Risultato. Esempio a schermo: DIY-Unita' = ebook/PDF. A voce: DFY-tempo = consulenza a ore (sconsigliata); DWY-unita' = formazione/corso con revisione; DWY-risultato = coaching a percentuale (raro); DFY-unita' = 'vendo 3 automazioni a X euro' (quadrante dove l'autore colloca la maggior parte delle soluzioni AI, piu' scalabile perche' disaccoppiato dal tempo); DFY-risultato = pagamento a risultato.",
+    "fonte": "rvpRQD43wdY#0:58-1:06",
+    "frame": "frame-0451.png (1:00:08)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-007",
+    "tipo": "framework",
+    "contenuto": "Tre modelli contrattuali per il pagamento: pay in full (paga tutto oggi, 3.000-10.000 euro upfront, difficile da vendere senza track record); pay on performance (es. paga solo l'ad-spend, 25-200 euro/giorno, il resto solo a risultato, permette ticket anche oltre 10.000 euro perche' il rischio lo prende l'agenzia); retainer (misto: fee di setup + percentuale variabile per lead/cliente o fee fissa mensile, es. 250 euro/mese).",
+    "fonte": "rvpRQD43wdY#1:06-1:20",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-008",
+    "tipo": "regola",
+    "contenuto": "Golden rule del close rate al 30% per un service business: percentuale di lead che arrivano in sales call e pagano. Sopra il 30% -> prezzo troppo basso (si perde margine). Sotto il 30% -> prezzo troppo alto o vendita debole. Per community/infoprodotti il benchmark citato e' diverso (2-4%).",
+    "fonte": "rvpRQD43wdY#1:20-1:23",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-009",
+    "tipo": "framework",
+    "contenuto": "Elenco a schermo dei 6 metodi di acquisizione clienti ordinati per facilita'/costo crescente: 1. Warm Network, 2. Upwork, 3. Strategie Cold (DM, Email, Call), 4. Ads, 5. Fiverr, 6. Social Media Posting (Organico).",
+    "fonte": "rvpRQD43wdY#1:24-1:24",
+    "frame": "frame-0631.png (1:24:00)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-010",
+    "tipo": "metodo",
+    "contenuto": "Metodo Warm Network: mappare la propria rubrica (amici stretti, familiari, amici di amici, conoscenti) e clusterizzarla per professione (impiegato/imprenditore/studente). Script di contatto: presentazione breve + richiesta se conosce qualcuno interessato a un servizio gratuito in cambio di un testimonial e almeno due referral. Meccanica a catena: 1 cliente gratuito -> 2 referral -> 2 nuovi clienti (prezzo crescente, es. 250-500-1000 euro) -> altri referral.",
+    "fonte": "rvpRQD43wdY#1:25-1:45",
+    "frame": "frame-0676.png (1:30:08) e frame-0751.png (1:40:08)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-011",
+    "tipo": "osservazione",
+    "contenuto": "Le persone aiutano molto di piu' a inizio carriera (quando l'imprenditore e' ancora a zero, senza 'invidia sociale') che nella fase intermedia di crescita (quando iniziano a superare economicamente chi li aiuta). Quindi il momento migliore per chiedere aiuto/referral e' l'inizio, non a meta' percorso.",
+    "fonte": "rvpRQD43wdY#1:40-1:43",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-012",
+    "tipo": "metodo",
+    "contenuto": "Upwork come piattaforma di acquisizione: si applica a job posting reali (es. 'Email Flow Creator for Automation'), costo per candidatura in 'connects' (~1 euro), consiglio di applicare entro 24 ore dalla pubblicazione e di usare prezzi non tondi (es. 13,15$/h) per differenziarsi. Buon ROI per bootstrap iniziale (es. 50 euro investiti per potenzialmente 3-4 progetti).",
+    "fonte": "rvpRQD43wdY#2:36-2:50",
+    "frame": "frame-1235.png (2:44:32)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-013",
+    "tipo": "framework",
+    "contenuto": "Funnel di conversione per le strategie Cold (email/DM/call) con metriche a cascata: input (es. 100 email/DM) -> open rate (80%) -> reply rate (30%) -> CTR sui link (20%) -> risposte positive (10%) -> conversione a meeting (8% sull'input) -> clienti paganti (2%). Ogni metrica bassa indica un problema diverso da correggere: oggetto scadente -> open rate basso; offerta scadente -> reply rate basso; sales call debole -> conversione meeting-cliente bassa.",
+    "fonte": "rvpRQD43wdY#1:49-1:55",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-014",
+    "tipo": "tecnica",
+    "contenuto": "Tecnica 'cold reading' per l'apertura di un'email/DM freddo: frase generica applicabile a chiunque nella nicchia target ma percepita come personalizzata (tecnica attribuita a FBI/profiling). Struttura mostrata a schermo: oggetto breve informale + body con [1] cold reading, [2] credenziale sociale (nome noto nello stesso spazio), [3] offerta con risk reversal (setup gratuito, paghi solo a risultato), [4] CTA a un meeting breve con slot gia' proposto.",
+    "fonte": "rvpRQD43wdY#1:58-2:07",
+    "frame": "frame-0899.png (1:59:44)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-015",
+    "tipo": "metodo",
+    "contenuto": "Script di cold calling: identificare il decision-maker (proprietario o assistente con potere decisionale, es. segretaria in uno studio dentistico), fare 2 domande di scoperta del problema (es. 'ho provato a cercarla su Google ma non trovo il suo studio'), offrire una demo di 10 minuti senza impegno, chiedere uno slot preciso. Aspettarsi 80-90% di rifiuti.",
+    "fonte": "rvpRQD43wdY#2:08-2:14",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-016",
+    "tipo": "framework",
+    "contenuto": "Curva comparativa cold vs organico vs ads nel tempo: le strategie cold danno risultati rapidi ma con plateau precoce; il contenuto organico cresce lentamente ma senza plateau evidente nel breve periodo; gli ads, quando validati su contenuto gia' performante, salgono ripidi con alto ROI. Consiglio: outbound cold all'inizio, poi organico, poi ads sui contenuti organici gia' validati (mai ads su contenuto non testato).",
+    "fonte": "rvpRQD43wdY#2:14-2:35",
+    "frame": "frame-1075.png (2:23:12)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-017",
+    "tipo": "dato",
+    "contenuto": "'200 views cage': fase iniziale in cui un creator resta bloccato tra 200 e 2.500 views a video/post, tipica di chi comincia su Instagram/TikTok/YouTube. Consiglio esplicito: monetizzare prima con outbound (cold/warm), investire poi il capitale generato nel personal brand di lungo periodo — non il contrario.",
+    "fonte": "rvpRQD43wdY#2:20-2:24",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-018",
+    "tipo": "metodo",
+    "contenuto": "Fiverr come canale inbound: si crea un profilo con servizi a pacchetti (basic/standard/premium), consigliato solo con un brand gia' riconosciuto perche' senza recensioni pregresse il traffico organico della piattaforma non converte.",
+    "fonte": "rvpRQD43wdY#2:50-2:53",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-019",
+    "tipo": "regola",
+    "contenuto": "Un cliente esiste solo se c'e' stato un movimento di denaro effettivo — un 'si' via email non basta a definire qualcuno come cliente pagante (le persone ripensano, si fanno influenzare, cambiano priorita').",
+    "fonte": "rvpRQD43wdY#2:54-2:55",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-020",
+    "tipo": "framework",
+    "contenuto": "Flowchart Whimsical reale ('How to Service Your First Automation Client in 2026') per il processo di kickoff/fulfillment: 'Hai gia' fatto questo progetto?' -> SI: 'Customizza un template esistente sulla richiesta del cliente' / NO: 'Costruisci un MVP' -> 'Comincia a costruire' -> 'Templetizza la soluzione' -> 'Aggiorna sui progressi' (con Project Update/Delivery Templates ogni 2 settimane) -> 'Progetto completato' -> 'Test Style Workflow End-to-End (e2e)' -> 'Rafforza i check per i casi limite'.",
+    "fonte": "rvpRQD43wdY#3:06-3:14",
+    "frame": "frame-1401.png (3:06:40) e frame-1440.png (3:11:52)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-021",
+    "tipo": "metodo",
+    "contenuto": "5 punti della kickoff call: 1) definire la timeline del progetto applicando under-promise-and-overdeliver (es. dichiarare 6 settimane, consegnare in 4); 2) definire esplicitamente la reperibilita' (giorni/orari di risposta) per evitare aspettative implicite; 3) definire il successo/deliverable in modo scritto per prevenire lo scope creep; 4) registrare il cliente su tutte le piattaforme necessarie durante la call stessa; 5) tracciare tutto in un project management tool (opzionale per il primo cliente).",
+    "fonte": "rvpRQD43wdY#2:57-3:04",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-022",
+    "tipo": "regola",
+    "contenuto": "Policy sulle credenziali cliente: lavorare sempre sulle credenziali/abbonamenti/carta di credito del cliente, mai su credenziali proprie dell'agenzia, per evitare vendor lock-in ('ghigliottina' sul cliente che dipende dal pagamento ricorrente). Preferire riproporre servizi aggiuntivi via email/upsell piuttosto che trattenere l'accesso come leva di ricontrattazione.",
+    "fonte": "rvpRQD43wdY#3:05-3:06",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-023",
+    "tipo": "tecnica",
+    "contenuto": "Tecnica 'taking in charge': dopo la submission del form, inviare subito un messaggio automatico che comunica la presa in carico della richiesta ('ho ricevuto la tua richiesta, ti chiamo tra pochi minuti da questo numero') prima della chiamata umana vera e propria — aumenta il pickup-rate perche' il lead riconosce il numero come atteso invece che sconosciuto.",
+    "fonte": "rvpRQD43wdY#3:48-3:49",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-024",
+    "tipo": "framework",
+    "contenuto": "Distinzione tecnica GoHighLevel tra custom values (dati legati al sub-account/cliente, es. nome agenzia, citta' — cambiano quando si rivende il sistema a un nuovo cliente in un'altra citta') e custom fields (dati legati al singolo lead, es. origine, consenso, campagna). Confondere le due categorie e' l'errore principale che impedisce di templetizzare davvero un funnel per rivenderlo ad altri clienti.",
+    "fonte": "rvpRQD43wdY#3:30-3:34",
+    "frame": "frame-1590.png (3:31:52)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-025",
+    "tipo": "dato",
+    "contenuto": "GoHighLevel: piattaforma CRM all-in-one per agenzie a ~97$/mese (piano starter), 3 sub-account inclusi, contatti e utenti illimitati, supporto 24/7, programma di affiliazione fino al 50% ricorrente sulla spesa dei clienti riferiti. Modello sub-account = un cliente = un contenitore isolato (evita di mischiare dati/messaggi tra clienti diversi).",
+    "fonte": "rvpRQD43wdY#3:16-3:18",
+    "frame": "frame-1511.png (3:21:20)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-026",
+    "tipo": "metodo",
+    "contenuto": "Workflow di automazione GoHighLevel dimostrato dal vivo: submission form Meta -> crea opportunita' in pipeline -> invia messaggio/email di presa in carico -> chiama l'operatore umano (mai l'AI direttamente al lead, per evitare impatto negativo sul brand) -> se l'operatore preme 1, il sistema chiama il lead e li mette in contatto diretto -> se il lead non risponde, sequenza di nurturing a cicli di 20 minuti con messaggi alternati (SMS/email) fino a un ultimo messaggio di chiusura.",
+    "fonte": "rvpRQD43wdY#3:45-3:52",
+    "frame": "frame-1687.png (3:44:48)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-027",
+    "tipo": "regola",
+    "contenuto": "Regola di assunzione: assumere quando si e' a capacita' (non piu' tempo per nuovo lavoro dai clienti esistenti) e per bisogno, non per crescita, specialmente all'inizio — assumere per crescita e' una scommessa che, se fallisce, lascia l'imprenditore in perdita netta di stipendio rispetto a prima dell'assunzione.",
+    "fonte": "rvpRQD43wdY#3:58-4:02",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-028",
+    "tipo": "regola",
+    "contenuto": "Il primo hire consigliato per un'agenzia AI e' un CTO (non un commerciale), anche se costoso (5.000-6.000+ euro/mese), perche' libera l'imprenditore dalla delivery per concentrarsi sulle vendite, l'unica attivita' che fa davvero crescere il fatturato (la delivery mantiene il business ma non lo fa scalare). Prerequisito indispensabile: SOP gia' documentate prima di assumere, altrimenti il nuovo hire dipende continuamente dall'imprenditore per le informazioni mancanti.",
+    "fonte": "rvpRQD43wdY#4:02-4:09",
+    "frame": "frame-1875.png (4:09:52)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-029",
+    "tipo": "framework",
+    "contenuto": "Grafico mostrato a mano: dopo l'assunzione del CTO, le curve 'Fatturato' e 'Salario' dell'imprenditore divergono temporaneamente (il salario scende perche' l'introito puro va in parte al CTO) prima di risalire quando il fatturato scala grazie al tempo liberato per le vendite. Stessa dinamica si ripete con l'assunzione del sales team in una seconda fase.",
+    "fonte": "rvpRQD43wdY#4:06-4:12",
+    "frame": "frame-1875.png (4:09:52)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-030",
+    "tipo": "osservazione",
+    "contenuto": "L'agenzia AI (come qualsiasi agenzia) e' quasi sempre uno step intermedio, non il business finale: il capitale, l'esperienza e il network accumulati portano poi a business piu' scalabili (SaaS, community, digital product). Errore comune: scartare l'agenzia perche' 'cappata' a 1-3 milioni/anno confrontandola con business teoricamente piu' scalabili, invece di confrontarla con lo stipendio da dipendente di partenza.",
+    "fonte": "rvpRQD43wdY#4:14-4:16",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-031",
+    "tipo": "osservazione",
+    "contenuto": "Il video apre con una clip di repertorio giornalistico (Presidente del Consiglio Giorgia Meloni a un podio istituzionale) usata come B-roll generico per illustrare il tema 'cambiamento epocale in atto' — non e' un contenuto originale del relatore ne' una dichiarazione a lui attribuibile, e va letta come scelta editoriale di apertura video, non come dato.",
+    "fonte": "rvpRQD43wdY#0:00-0:00",
+    "frame": "frame-0001.png (0:00:00)",
+    "confidenza": "osservato"
+  }
+]

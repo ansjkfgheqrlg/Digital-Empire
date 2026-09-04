@@ -1642,3 +1642,49 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   a 3 pagine esistenti ([[Concept_Hook_Anti_Cliche_Checklist]], [[Framework_Barnum_Rainbow_5Pilastri]],
   [[Source_Artem_Novitckii_Caroselli_ChatGPT]]), `index.md` aggiornato con nuova sezione
   "Storytelling & Public Speaking".
+
+## 2026-09-04 (EMPIRE STUDIO — chiusura ciclo rvpRQD43wdY, batch max17 v17, il video piu' lungo del lotto)
+
+- INGEST: nuovo run `runs/max17-v17-beggiato-agenzia` creato da zero — nessun run precedente
+  esisteva per questo video (4h17m00s, il piu' lungo del lotto max17). Trascrizione gia' pronta
+  riutilizzata da `runs/max-17-2026-09/subs/` (44.552 righe grezze `.vtt`, deduplicate a 5.550
+  righe uniche con script Python locale, lette per intero in 12 blocchi = 100% audio). Video
+  scaricato a 360p (158 MB) con `frame_extractor.py --interval 8`: 1.928 frame densi ->
+  `scene_detector.py --threshold 10` -> 158 frame unici (-91,8%).
+- FORMATO VERIFICATO (misto, non presunto): ~2h53m talking-head+whiteboard Excalidraw (disegni
+  fissi a schermo fino a 31,5 minuti consecutivi, come nei video precedenti del lotto) + ultimi
+  ~80 minuti screen-share denso reale (documento Whimsical, GoHighLevel, Meta Ads Manager) — il
+  62/158 (39%) dei frame unici cade nei soli 2.503s (16,5% della durata) del capitolo
+  GoHighLevel, confermando la scelta di concentrare li' il campione visivo.
+- **24/1.928 frame guardati nativamente (1,2%), campionamento mirato dichiarato e concentrato
+  sulle sezioni a screen-share reale** — dettaglio completo con motivo di ciascuna scelta in
+  `coverage.md`. 31 KA estratti in `atoms.json`, NO-FINTO PASS con copertura frame parziale
+  dichiarata. `video-analysis.md` scritto capitolo per capitolo sui 14 capitoli ufficiali del
+  video, tutti i contenuti a schermo citati sempre con `frame-NNNN.png` di riferimento.
+- CONTENUTO: guida end-to-end per costruire un'agenzia AI — Blue/Red Ocean per la nicchia
+  (verificato a schermo l'esempio Tesla), matrice di pricing **DIY/DWY/DFY x Tempo/Unita'/
+  Risultato** (verificata a schermo), golden rule del **close rate al 30%**, **6 metodologie di
+  acquisizione clienti ranked a schermo** (Warm Network con catena testimonial+2 referral,
+  Upwork, Strategie Cold con funnel a cascata e tecnica "cold reading", Ads, Fiverr, Organico),
+  flowchart Whimsical reale di fulfillment (kickoff call, under-promise-overdeliver, scope creep,
+  policy "credenziali sempre del cliente, mai dell'agenzia"), demo GoHighLevel (custom values vs
+  custom fields, workflow con tecnica "taking in charge"), regola di hiring "CTO prima del
+  commerciale, per bisogno non per crescita" con grafico salario/fatturato verificato a schermo.
+- CURIOSITA' documentata (non un errore): il primo frame del video (`frame-0001.png`) non mostra
+  il relatore ma una clip di repertorio giornalistico (Presidente del Consiglio Giorgia Meloni a
+  un podio istituzionale) usata come B-roll editoriale per il tema "cambiamento epocale" —
+  verificato contro `frames/manifest.json`, non un bug di estrazione.
+- **0 patch applicate** a skill/agenti esistenti (perimetro del checkpoint `EMP-QQ2R`, fase di
+  studio) — 5 gap verificati con `Grep` prima di essere scritti in "Consigli": `agency-scalping`
+  (SKILL.md operativa senza close rate/scope creep/niche hopping/DFY-DWY/warm network, presenti
+  solo in PDF grezzi non distillati), `client-handover` e `delivery-playbook` (nessun match per
+  scope creep/kickoff/under promise/SOP), nessuna skill DE menziona GoHighLevel (zero match),
+  "cold reading" e "taking in charge" mai codificate in nessuna skill di outreach/copy, `pricing`
+  senza la matrice DIY/DWY/DFY.
+- WIKI: 1 pagina creata (`sources/Source_Giovanni_Beggiato_Guida_Agenzia_AI.md`), cross-link a
+  3 pagine esistenti ([[sources/Source_Giovanni_Beggiato_Team_Marketing_AI]],
+  [[sources/Source_Giovanni_Beggiato_CFO_AI_Claude]], [[tools/Tool_Tesoreria_Digital_Empire]]) +
+  [[sources/Source_MiK_Cosentino_Micro_Personal_Brand]], `index.md` aggiornato con nuova sezione
+  "Agency Operations & Scaling".
+- MEMORY EMPIRE: `memory-empire/knowledge/rvpRQD43wdY/` chiuso (ingest-manifest.json, atoms.json,
+  contenuto-integrale.md) — path live confermato in questa sessione, non le cartelle morte B-033.

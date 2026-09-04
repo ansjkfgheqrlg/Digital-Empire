@@ -1,4 +1,23 @@
-## 👑 2026-09-04 00:xx — EMPERATOR: LOTTO v01-v16 CHIUSO PER INTERO — EMP-QQ2R Fase 1 quasi finita
+## 👑 2026-09-04 — EMPERATOR: FASE 1 EMP-QQ2R COMPLETA (salvo 1 video bloccato su Max)
+
+Chiuso anche `rvpRQD43wdY` (Beggiato, guida agenzia, **4h17, il video piu' grosso di tutto
+il lotto**) — CP-20260904-002. Formato misto: 2h53 talking-head+lavagna, poi 80min di
+screen-share denso (GoHighLevel CRM, Meta Ads, Whimsical). Campionamento 24/1.928 frame
+(1,2%) concentrato dove serve — dichiarato e motivato, non un taglio di corner. Numeri
+verificati contro la dashboard reale nel video. Wiki:
+`Source_Giovanni_Beggiato_Guida_Agenzia_AI.md`. 5 gap reali proposti per `agency-scalping`,
+`client-handover`, `delivery-playbook` (nessuna patch applicata, perimetro Fase 1).
+
+**Fase 1 di EMP-QQ2R (studio dei 17 video) e' ora completa salvo un solo video: Justin Sung
+4h55, di cui il repo non ha mai avuto il link.** Cercato ovunque il 2026-09-04, niente.
+Serve l'indirizzo da Max, o l'ok a chiudere la Fase 1 senza di lui.
+
+**Fase 2** (implementare tutti i consigli raccolti — decine, sparsi nelle pagine wiki e nei
+checkpoint di questi 2 giorni) resta rimandata a ordine esplicito di Max.
+
+---
+
+## 👑 2026-09-04 00:xx — EMPERATOR: LOTTO v01-v16 CHIUSO PER INTERO
 
 `max17-v16` chiuso — CP-20260904-001. MiK Cosentino, micro-infobusiness a scarsita' reale
 (front-end €500, mastermind €30-46k/anno cap 50, finestra vendita 1 sett./4). Evento dal
