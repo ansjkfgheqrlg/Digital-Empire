@@ -8,6 +8,16 @@
       "nota": "ADR-021 (2026-09-03): script gia' scritto il 23/8, destinazione @Legamidiamore, mai messo in coda — trovato fermo senza motivo tecnico durante l'audit del piano. 9,7 minuti stimati (~1358 parole), sopra il gate reale DURATA_MINIMA_S=480s (regolatori.py). Strategia A (fonte @PsicologiaFemminile-f8c, 7.8 viste/ora reali). Zero costo di scrittura: pronto a produrre subito."
     },
     {
+      "video_sorgente_id": "qHB80wbamBI",
+      "canale": "legamidiamore",
+      "nota": "Script scritto oggi 2026-09-04 (produzione di giornata, ordine di Max). Riga 3 del piano (giorno 3, 2026-08-29, Strategia A), in ritardo. Fonte @PsicologiaFemminile-f8c, 5.77 viste/ora reali. 4 segnali (attenzione, vicinanza, memoria, vulnerabilita'), 1247 parole / ~8.9 min stimati, sopra il gate DURATA_MINIMA_S=480s."
+    },
+    {
+      "video_sorgente_id": "XABjAjqfUxw",
+      "canale": "legamidiamore",
+      "nota": "Script scritto oggi 2026-09-04 (produzione di giornata, ordine di Max). Riga 4 del piano (giorno 4, 2026-08-30, Strategia A), in ritardo. Fonte @PsicologiaFemminile-f8c, 5.42 viste/ora reali. Sorgente da 20 segnali/60min condensata ai 7 piu' rapidi, 1171 parole / ~8.4 min stimati, sopra il gate DURATA_MINIMA_S=480s."
+    },
+    {
       "video_sorgente_id": "CxdlEsEnZ9g",
       "canale": "legamidiamore",
       "nota": "Script adattato pronto (CP-20260806-001, primo script reale @Legamidiamore). Sorgente competitor @PsicologiaFemminile-f8c, 13.000 viste / 17.8 viste-ora, in cache dal 2026-08-06. Gia' prodotto e pubblicato il 2026-09-03 (CP-20260903-013) — voce lasciata per storico, la coda la salta da sola."
