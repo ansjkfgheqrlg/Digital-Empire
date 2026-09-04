@@ -40,6 +40,30 @@ Maggie sat with that for a long moment, the kitchen quiet except for the tick of
 
 "I'll say it to anybody who'll listen," Del said. "I should have said it three years ago. I told myself it wasn't my place, that I didn't have proof of anything, just a habit of noticing who came through my door. I let that be enough of an excuse for a long time." He looked at her steadily. "Seems like there was a lot of that going around, people telling themselves silence was the responsible choice. I'm sorry, Maggie. I mean that."
 
+Del walked her out to the car, and at the door of the truck he stopped her with a hand on the frame.
+
+"One more thing, and then I'll let you go, because it's been bothering me since you sat down." He squinted off toward the ridge. "Your mother came in on her own, that last time. Late October, I want to say, close to the end. She didn't need a refill, she'd have had thirty days left on the ninety day supply. She came in and asked me a question."
+
+"What question?"
+
+"She asked me how a person would know," Del said, "if the pills in a bottle weren't the pills on the label."
+
+Maggie's hand went still on the door handle.
+
+"I told her the truth, which is that for most of them you wouldn't, not by looking. Different manufacturers stamp different markings, sizes vary, but if you don't know what yours are supposed to look like in the first place you'd never notice a swap. I told her to bring the bottle in and I'd check it against the log for her." He shook his head slowly. "She said she would. She never did. And I never followed up, because people ask pharmacists odd questions all day long and half of them are about a magazine article they read. I filed it under that."
+
+"Did you tell anyone? After."
+
+"Who would I have told?" It came out with real bitterness, the first Maggie had heard from him. "Bill Torres, that a woman who died of a heart attack had asked me a general question about pill identification a few weeks earlier? I'd have been the crank pharmacist wasting the chief's afternoon. So I didn't. And then a year went by, and then two." He let go of the truck door. "You put that in front of your deputy along with the rest. It's not proof. But it's not nothing either, and I'd rather be a crank in a courtroom than keep sitting on it out here."
+
+Maggie found she couldn't answer for a second. Her mother, standing at that pharmacy counter in the last weeks of her life, holding a suspicion she hadn't been able to prove and hadn't been able to let go of, asking the only expert she trusted the one question that mattered, and getting an answer three weeks too late to save her.
+
+*She knew,* Maggie thought. *Not everything. But she knew enough to be afraid, and she went and asked anyway.*
+
+"She'd have liked that you told me," she said finally. "She never could stand a thing left half asked."
+
+Del smiled at that, small and sad. "No," he agreed. "She surely could not."
+
 She thanked him, left the box of cookies on his counter despite his protests, and drove back toward town with the windows down and the cool September air pouring through the cab, Main Street already strung with bunting for the festival now only days away, banners reading CEDAR HOLLOW FOUNDER'S DAY snapping gently over the sidewalks where vendors were beginning to stake out their tents.
 
 She still had no proof, nothing a court would look twice at, only a pharmacist's uneasy memory and a name that kept surfacing first no matter which direction she came at it from. But for the first time since she'd found Harold Pruitt slumped against her proofing drawer, Maggie understood the shape of what had happened to her mother, and she understood, with a clarity that settled cold and certain in her chest, exactly whose name belonged at the center of it.

@@ -24,6 +24,26 @@ By the time she finished, Diane's face had gone the color of the ash in the cold
 
 "I think so, yes."
 
+Diane got up. She crossed to the window and stood with her back to the room, and Maggie let her have the silence, because there was nothing useful to put into it.
+
+"Do you know what I've been doing for two weeks?" Diane said at last. "I've been going through his shirts. Every one. Checking the collars." She laughed, and it came out badly. "Forty one years married and I stood in my own laundry room holding my dead husband's shirts up to the light looking for lipstick, because that was the only story I could think of that explained a man who stopped sleeping and stopped talking and started going out at eleven at night without saying where."
+
+"Diane."
+
+"I was so certain." She turned around. Her eyes were dry, which was somehow worse. "I had a whole life built for it. I knew how I was going to feel at the funeral, I knew which of my friends I'd tell and which I wouldn't. I had it all arranged, Maggie, I had grieved a marriage that never happened, and now you're standing in my sitting room telling me he was frightened. That he was carrying something so heavy it kept him up at night, in this house, twelve feet from me, and he never said a word."
+
+"Maybe he couldn't."
+
+"He could have." It came out flat and certain. "That's the part. He could have. He chose not to, and I've spent two weeks angry at him for the wrong reason entirely, and now I don't even get to be angry properly, because how do you stay angry at a man who was that afraid?" She pressed the back of her wrist briefly against her mouth. "I'd rather it had been a woman. God forgive me. At least then he'd have been happy about something."
+
+Maggie stayed where she was. She had learned, in three years of people saying the wrong kind and the right kind of thing to her about Rose, that the worst instinct was to reach for a person too early.
+
+"He wasn't a bad man," Diane said, quieter. "I need you to know that, whatever comes out of this. Whatever he did or let happen, he wasn't a bad man. He was a weak one, and he knew it, and I think he'd been trying to stop being one right at the end. That's not nothing, is it? Trying at the end?"
+
+"No," Maggie said. "It isn't nothing."
+
+Diane nodded once, twice, and then seemed to gather herself all at once, the way women of her generation did, folding the whole thing away somewhere to be dealt with privately later.
+
 "I heard him on the phone two nights before he died," Diane said, as if reciting something she'd told herself so many times it had worn smooth, like a stone. "I told you that already, at the Grange. He said he couldn't carry it anymore. He said he needed to make it right before the festival." Her voice cracked on the last word. "I thought. God help me, Maggie, I thought it was another woman. I thought my husband of thirty-one years had found somebody else, and he was trying to work out how to leave me gently, and I was so ashamed of even thinking it that I never said a word to anyone, not even Bill Torres, because I didn't want it written down somewhere, I didn't want it to be true just because I'd said it out loud."
 
 "Diane."

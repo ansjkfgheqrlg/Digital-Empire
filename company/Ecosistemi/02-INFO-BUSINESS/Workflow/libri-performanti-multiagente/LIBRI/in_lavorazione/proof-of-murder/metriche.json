@@ -43,6 +43,41 @@
       "cosa": "blocco",
       "esito": "passato",
       "motivi": []
+    },
+    {
+      "quando": "2026-09-04T10:48:41",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 38881,
+      "media_per_capitolo": 1620
+    },
+    {
+      "quando": "2026-09-04T10:49:12",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Pagine reali 114, il minimo per il target e' 115; Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'"
+      ]
+    },
+    {
+      "quando": "2026-09-04T10:50:19",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
+      ]
+    },
+    {
+      "quando": "2026-09-04T10:51:09",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
+      ]
     }
   ]
 }

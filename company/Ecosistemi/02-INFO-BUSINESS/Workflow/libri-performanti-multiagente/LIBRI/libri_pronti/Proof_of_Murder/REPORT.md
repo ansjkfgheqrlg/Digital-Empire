@@ -1,6 +1,6 @@
 # Report di consegna — Proof of Murder
 
-_Generato il 30/08/2026 alle 15:45_
+_Generato il 04/09/2026 alle 10:51_
 
 ---
 
@@ -10,8 +10,8 @@ _Generato il 30/08/2026 alle 15:45_
 - **Autore**: Emma Hartwell
 - **Nicchia**: cozy mystery bakery small town
 - **Capitoli**: 24
-- **Parole**: 37.719
-- **Pagine reali** (contate sul PDF impaginato): **111**
+- **Parole**: 39.772
+- **Pagine reali** (contate sul PDF impaginato): **116**
 - **Formato**: 6.0x9.0 pollici
 
 ## File consegnati
@@ -25,27 +25,27 @@ _Generato il 30/08/2026 alle 15:45_
 
 Il libro nasce da un'analisi di mercato su Amazon: quali libri vendono in questa nicchia, a che prezzo, con quanta concorrenza. **Il testo e' originale**: i concorrenti servono a capire cosa cerca il lettore, mai a riprendere contenuti (KDP verifica i manoscritti e chiude gli account per contenuti derivati).
 
-### Perche' questa nicchia (punteggio 77.7/100)
+### Perche' questa nicchia (punteggio 78.1/100)
 
-recensioni mediane 58 -> 50.0/50 | 9 concorrenti sotto 100 recensioni su 16 -> 16.9/30 | prezzo medio $5.40 -> 10.8/20
+recensioni mediane 55 -> 50.0/50 | 10 concorrenti sotto 100 recensioni su 16 -> 18.8/30 | prezzo medio $4.66 -> 9.3/20
 
 - Concorrenti esaminati in prima pagina: **16**
-- Recensioni mediane dei concorrenti: **58** (piu' sono basse, piu' e' aggredibile)
-- Concorrenti deboli (sotto 100 recensioni): **9**
-- Prezzo medio della nicchia: **$5.4**
-- Valutazione media: **4.43/5**
+- Recensioni mediane dei concorrenti: **55** (piu' sono basse, piu' e' aggredibile)
+- Concorrenti deboli (sotto 100 recensioni): **10**
+- Prezzo medio della nicchia: **$4.66**
+- Valutazione media: **4.31/5**
 
 ### Libri di riferimento analizzati
 
 _Concorrenti in prima pagina su Amazon per questa ricerca. Usati per capire posizionamento e prezzo, non come fonte di testo._
 
-- Cupcakes and Crime: A Small-Town Bakery Witch Cozy Mystery (Gold Valley Mysteries Book 1)
-- Murder at the Blarney Bash (A Beacon Bakeshop Mystery)
-- Deadly Danish: A Small Town Baker with Dog Cozy Mystery Series (Paws and Pastries Mystery Series Book 1)
-- Sprinkle of Murder: A Cozy Small Town Murder Mystery Series (A Genie Bakery Mystery Series Book 1)
 - Baked Justice: A Small Town Bakery Cozy Mystery (Eliza Crumbles Mysteries Book 1)
+- Murder at the Blarney Bash (A Beacon Bakeshop Mystery)
+- Murder At Buttercream Bakery Book 1 of The Buttercream Bakery Trilogy: A Willowbrook Cozy Mystery: A Small-Town Bakery Cozy Mystery
+- Sprinkle of Murder: A Cozy Small Town Murder Mystery Series (A Genie Bakery Mystery Series Book 1)
+- Mallory Harper Cozy Mystery Collection (Boxset 1-3):: A Bingeable Murder Mystery with Small-town Charm and Feel-Good Whodunits (A Mallory Harper Murder Mystery)
 
-_Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260820_135214.json`_
+_Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260901_205043.json`_
 
 ---
 
@@ -56,13 +56,7 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260820_135214.json`
 - ✅ **Capitoli che si ripetono**: nessun problema
 - ✅ **Capitoli simili (da rileggere)**: nessun problema
 - ✅ **Copy KDP (lo legge chi compra)**: nessun problema
-- ⚠️ **Trattini nel testo (da rivedere a occhio)**: 13 da verificare
-    - riga 291: trattino in 'soft-featured' — contesto: 'Maggie's whole body went rigid. She turned, expecting to find bitterne'
-    - riga 291: trattino in 'red-rimmed' — contesto: 'Maggie's whole body went rigid. She turned, expecting to find bitterne'
-    - riga 567: trattino in 'fingerprint-powder' — contesto: 'The space still smelled wrong. Under the flour and yeast and the ghost'
-    - riga 627: trattino in 'pie-eating' — contesto: 'They started with the year before Rose died, working forward, Maggie r'
-    - riga 659: trattino in 'hand-painted' — contesto: 'Ruth Ann Sawyer's shop sat two doors down from the hardware store, a n'
-    - _...e altri 8_
+- ✅ **Trattini nel testo (da rivedere a occhio)**: nessun problema
 - ✅ **Prezzo rispetto alla nicchia**: nessun problema
 - ✅ **EPUB (ebook)**: nessun problema
 - ⚠️ **Scheda libro di ispirazione**: 1 da verificare

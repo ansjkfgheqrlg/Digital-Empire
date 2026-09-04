@@ -1,26 +1,12 @@
 {
   "pubblicabile": false,
-  "pagine_reali": 111,
+  "pagine_reali": 116,
   "bloccanti": [
-    "Pagine reali 111, il minimo per il target e' 115",
     "Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-PROMPT.md, poi: python -m engine.kdp consegna proof-of-murder --cover <file.png>"
   ],
   "errori": [],
   "verifiche_non_eseguite": [],
   "avvisi": [
-    "[Trattini nel testo (da rivedere a occhio)] riga 291: trattino in 'soft-featured' — contesto: 'Maggie's whole body went rigid. She turned, expecting to find bitterne'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 291: trattino in 'red-rimmed' — contesto: 'Maggie's whole body went rigid. She turned, expecting to find bitterne'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 567: trattino in 'fingerprint-powder' — contesto: 'The space still smelled wrong. Under the flour and yeast and the ghost'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 627: trattino in 'pie-eating' — contesto: 'They started with the year before Rose died, working forward, Maggie r'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 659: trattino in 'hand-painted' — contesto: 'Ruth Ann Sawyer's shop sat two doors down from the hardware store, a n'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 695: trattino in 'flour-dusted' — contesto: 'Maggie let out a breath she hadn't realized she was holding. Ruth Ann '",
-    "[Trattini nel testo (da rivedere a occhio)] riga 753: trattino in 'hand-drawn' — contesto: 'The Grange hall smelled the way it always had, of old wood polish and '",
-    "[Trattini nel testo (da rivedere a occhio)] riga 757: trattino in 'note-taking' — contesto: 'Six folding chairs stood pulled away from the stacks, arranged in a lo'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 879: trattino in 'C-14' — contesto: 'Maggie looked down at the bill in her hands, at the account number and'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 1189: trattino in 'sharp-suited' — contesto: '\"Then let it not be you.\" His eyes were wet now, and he looked, for ju'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 1379: trattino in 'on-site' — contesto: '\"All right,\" she said at last, closing the binder. \"Here's what I can '",
-    "[Trattini nel testo (da rivedere a occhio)] riga 1401: trattino in 'hand-carved' — contesto: 'The morning fog burned off Cedar Hollow by ten, and by noon the town g'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 1579: trattino in 'show-home' — contesto: 'Walter Finch turned himself in to Priya Adjei's office the next mornin'",
     "[Scheda libro di ispirazione] assente: nessun ispirazione.json nel progetto. Non blocca, ma il libro non porta con se' il perche' e' stato fatto cosi'."
   ]
 }

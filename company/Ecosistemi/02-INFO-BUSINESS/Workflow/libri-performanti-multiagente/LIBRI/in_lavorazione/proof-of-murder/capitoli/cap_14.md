@@ -18,7 +18,31 @@ Ferris was quiet for a moment, the kind of quiet that told Maggie he'd already t
 
 Maggie sat with that in the car the whole way home, Nate driving in silence beside her, the hills going gold and rust past the windows, festival banners already strung between the lampposts on Main Street for an event that suddenly felt very far away and very close at the same time.
 
-"I need her pharmacy records," Maggie said finally. "Whoever filled that prescription would know if anything was off."
+She had him drop her at the house instead of the bakery.
+
+She hadn't been inside her mother's place in eight days, and it had the particular stillness of a house where somebody had stopped living rather than moved out, the mail she'd already collected stacked on the hall table, the clock over the stove still keeping perfect time because Rose had bought the kind that ran on a battery and Maggie had never once thought to let it stop.
+
+She went upstairs to the bathroom and opened the medicine cabinet, and stood there looking at it for a while.
+
+Three years. She had told herself a dozen times that she would clear it out, and every time she had closed the door instead. A tube of the hand cream Rose used after a long day at the ovens, dried solid in its cap. A box of adhesive bandages. A bottle of aspirin with an expiration date that had come and gone while nobody was watching.
+
+And on the second shelf, exactly where it had always been, the amber prescription bottle, mostly empty, the label soft and slightly lifted at one corner. ROSE M. DOYLE. LISINOPRIL 10MG. TAKE ONE TABLET DAILY.
+
+Maggie picked it up carefully, by the cap, the way she'd seen the technicians handle things in her own kitchen, and it struck her as absurd, the sudden reflex of it, that she was standing in her mother's bathroom treating her mother's medicine like evidence.
+
+Except it might be.
+
+She set it back down without opening it, took a photograph of the label with her phone, and then, because she couldn't help herself, another of the whole shelf. Then she sat down on the edge of the tub in the yellow light and let herself think, for the first time in eight days, about the last conversation she'd had with her mother.
+
+It had been a Tuesday, on the phone, from her apartment in Boston. Rose had sounded tired. Maggie remembered being impatient, remembered a pot on the stove she'd been watching while she half listened. Rose had said something about committee business being more complicated than she'd expected, and Maggie had said, *Mom, you're seventy percent of the reason that festival happens, tell them to figure it out themselves for once.* And Rose had laughed and let it go and asked about the pastry program instead.
+
+Tell them to figure it out themselves.
+
+Maggie put her face in her hands for a moment, and then she got up, and washed her face in the cold tap, and went back down the stairs and locked the house behind her, and did not cry until she was in her own kitchen with the door shut.
+
+She called Nate that evening, when the light had gone out of the kitchen windows and the ovens had been cold for an hour.
+
+"I need her pharmacy records," Maggie said. "Whoever filled that prescription would know if anything was off. And Nate, the bottle's still in her medicine cabinet. It's been sitting on that shelf for three years."
 
 "One thing at a time," Nate said, but he was already nodding, already thinking two steps ahead the way he did. "I'll ask around who filled prescriptions in town back then. Let's get through tonight first."
 

@@ -36,6 +36,26 @@ He lost most of it anyway. The development folded within the month. The festival
 
 ***
 
+Nate was suspended with pay on the Monday.
+
+It came down as a two line letter from the county, pending a review board hearing into his conduct during the investigation, specifically the twenty six hours he had held back the coroner's preliminary finding from his own chief in order to give Maggie time. He brought the letter to the bakery himself, folded once in his shirt pocket, and set it on the counter between them like a man laying down a hand of cards he already knew he'd lose.
+
+"You did that for me," Maggie said. Her throat had gone tight. "I didn't ask you to."
+
+"No, you didn't." He turned his coffee cup a quarter turn on the saucer. "I want to be straight with you, because I think you'll assume it was gallantry and then feel guilty about it for a year. It wasn't. I held that report because I'd watched Bill Torres decide on a suspect inside of six hours, and I knew that once the coroner's finding hit his desk he was going to use it to close a door instead of open one. I made a judgment call about my own chief. That's the part they'll write me up for, and honestly, that's the part they should write me up for."
+
+"Will you lose the badge?"
+
+"Probably not." He said it evenly. "I'll get a letter in my file and a month of somebody watching me fill out paperwork. It'll follow me if I ever want to be chief anywhere in this county." He looked up at her then, and something in his face eased. "Ask me if I'd do it again."
+
+"Would you?"
+
+"Yes," Nate said. "But not because it was you. Because it was right, and I'd have wanted somebody to do it for anybody in that chair." A pause. "It being you didn't hurt."
+
+The review board met eleven days later behind a closed door in Rutland for ninety minutes, and Priya Adjei sent them a written statement that Maggie never saw and Nate would only describe as *unhelpfully complimentary.* The letter went in his file. He was back in uniform before the leaves turned.
+
+***
+
 Chief Bill Torres called a press conference on the courthouse steps four days later, in his dress uniform, his face gray under the September sun. He read from a prepared statement about the diligent work of the Vermont State Police, about Denise Cobb's arrest on two counts of murder and multiple counts of fraud and embezzlement, about the department's commitment to justice for the Pruitt and Doyle families.
 
 Then he set the paper down, and for a moment he just stood there, and the reporters from the county paper waited.
