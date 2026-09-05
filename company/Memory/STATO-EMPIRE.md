@@ -1,3 +1,14 @@
+## 🟠 2026-09-05 — Categoria Lanci + copertina Brand Guidelines rifatta — CP-20260905-015
+
+**Codice di ripresa: EMP-BGRIF.** Max: contenuto Brand Guidelines CCM perfetto, grafica no —
+copertina e colophon rifatti sul pattern del dossier 28 (titolo piatto ancorato in basso,
+`.cover-lead`, `.cover-meta`), 15 capitoli interni non toccati per istruzione esplicita.
+Verificato per screenshot, non a fiducia. Aggiunta categoria **`Lanci/`** in
+`documentazione Empire/` (§6.17), doppione collocato lì. La migrazione di
+`build_brand_guidelines.py` sul motore condiviso è stata committata in parallelo da un'altra
+sessione (vedi voce sotto, `881da7c7`) — verificato che l'HEAD contenesse esattamente le mie
+modifiche prima di proseguire, nessuna perdita. Pushato (`7c786608`).
+
 ## 🔧 2026-09-05 — Brand Guidelines CCM sul motore PDF condiviso + falso conflitto di sync sanato
 
 Chiuso il lavoro orfano di EMP-PDFSTD: `build_brand_guidelines.py` e `content.py` migrati al
