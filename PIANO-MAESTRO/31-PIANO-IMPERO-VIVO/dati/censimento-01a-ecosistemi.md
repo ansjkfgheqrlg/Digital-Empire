@@ -1066,3 +1066,191 @@
   restano a 0 byte, l'ecosistema e' vivo come macchina e morto come organo.
 
 ---
+
+# SINTESI
+
+## A. Tabella riassuntiva
+
+| # | Ecosistema | File totali | Ha codice | Punto d'ingresso | Motore esterno | Difficolta' |
+|---|---|---:|---|---|---|---|
+| 01 | AGENCY | 209 | NO (209/209 `.md`) | NO nel nodo | **SI** — `Outreach/` (313 `.py`, 6 `.bat`) | MEDIA |
+| 02 | INFO-BUSINESS | 1.225 | **SI** (566 `.py`) | SI parziale — `AVVIA-LOGIN-SESSIONI.bat`, `python -m engine.*` | parziale — `Workflow-libri/` (7 `.py`); il motore vero e' **dentro** il nodo | MEDIA |
+| 03 | CONTENT-FACTORY | 186 | NO (183 `.md` + 3 file di ordine) | NO nel nodo | **SI** — `caroselli.py`, `carousel-factory/`, `YOUTUBE-AUTOMATION-FACTORY/` (136 `.py`) | BASSA |
+| 04 | MARKETING | 159 | NO (159/159 `.md`) | skill `copy-workflow` | SI ma **di sola prosa** — 189 file, **0 `.py`** | MEDIA |
+| 05 | MULTI-BUSINESS | 40 | NO (40/40 `.md`) | NO | SI per 2 rami su 3 — `Workflow-libri/`, `YOUTUBE-AUTOMATION-FACTORY/` (mai citato); **e-commerce: nessuno** | MEDIA |
+| 06 | PLATFORM | 27 | NO (27/27 `.md`) | NO nel nodo | **SI** — `Crea siti/` (399 file) + `scripts/` (19 voci) | BASSA |
+| 07 | FORGE | 34 | NO (34/34 `.md`) | NO nel nodo (le skill) | SI — le skill stesse (`skill-creator`, `agent-factory`, …) | BASSA |
+| 08 | INTELLIGENCE | 16 | NO (16/16 `.md`) | skill `memory-empire`, `wiki-context` | **SI** — `second-brain-vault/wiki/` (1.872 file) | BASSA |
+| 08 | STREAM-S7-BOT | 1 (+4 `.pyc`) | **SI, nello `.zip`** (5 `.py`) | SI ma **rotto** (`python main.py` su file compresso) | NO — motore interno | BASSA tecnica / **ALTA** decisionale |
+| 09 | OPERATIONS | 32 | NO (32/32 `.md`) | NO | **NO** — `ruflo/` = **0 file**, nessun ledger nel repo | **ALTA** |
+| 10 | MEMORY | 28 | NO (28/28 `.md`) | SI, fuori — `python scripts/checkpoint.py cp` | **SI** — `company/Memory/` (425 file, 299 CP, 25 ADR) | BASSA |
+| 11 | APEX-7-CORE | 489 | **SI** (161 `.py`, 27 test, CI) | **SI** — `main.py`, `run_demo.py`, `arena_generator.py` | NO — motore interno | BASSA (per se') / MEDIA (per l'Impero) |
+| 12 | STREAM-S7-BOT | 81 | **SI** (31 `.py`, 6 test) | SI — `main.py`, `test_apex7.py` (7/7 verde) | NO — motore interno | BASSA tecnica / **ALTA** decisionale |
+| 13 | ARENA-APEX | 19 | **SI** (1 `.py`, 453 righe, CLI) | SI — `orchestrator.py <cmd>` | NO — motore interno (Arena.ai esterno, **fermo** dal 2026-08-25) | BASSA |
+| 14 | TESORERIA | 1 | NO | SI, fuori — `python scripts/tesoreria.py …` | **SI** — `scripts/tesoreria.py` + skill + 5 agenti | BASSA |
+
+**Totali del perimetro**: **2.547 file** censiti (esclusi `__pycache__/`, `node_modules/`, `.git/`).
+**5 nodi su 15 hanno codice eseguibile dentro di se'** (02, 08-STREAM-S7-BOT, 11, 12, 13) e valgono
+**1.815 dei 2.547 file (71,3%)**; gli altri **10 nodi sono 732 file, quasi interamente `.md`**.
+**Nodi che soddisfano oggi tutte e quattro le condizioni di "vivo"**: **11-APEX-7-CORE** e
+**12-STREAM-S7-BOT**; piu' **un singolo workflow** dentro 02 (`libri-performanti-multiagente`).
+Sono **2 ecosistemi su 15**, cioe' il **13%** — coerente con il "18% vivo" da cui parte il piano.
+
+---
+
+## B. Gli ecosistemi SENZA nessun motore reale dietro
+
+Qui "vivo" non si ottiene collegando: si ottiene **costruendo**.
+
+### B.1 — 09-OPERATIONS: il caso piu' grave (nessun motore, e tutti dipendono da lui)
+- `ECOSISTEMA.md` dichiara "ruflo installato"; `find ruflo -type f | wc -l` → **0**.
+  La cartella `ruflo/` alla radice esiste ed e' **completamente vuota**.
+- Il DONE WHEN #1 esige un "ledger unico": `find . -maxdepth 4 -iname "*ledger*"` → **0 risultati**
+  in tutto il repository.
+- Il budget guard, la cost attribution, la dashboard, lo scheduling: **nessun file eseguibile,
+  ne' dentro ne' fuori**. Le sole cose che girano sono le 7 skill `avvia-*`, che pero' lanciano
+  i flussi **senza passare da OPERATIONS e senza lasciare traccia misurabile**.
+- **Conseguenza per il piano**: finche' 09 non esiste, nessun altro ecosistema puo' dimostrare
+  la condizione (d) "un test lo prova" a livello di holding, perche' non c'e' dove registrare l'esito.
+
+### B.2 — 04-MARKETING: motore dichiarato, ma senza una riga di codice
+- Il "motore principale" (`SKILL & Agenti/Copy-Workflow-manuale/copy-workflow/`) ha **189 file e
+  0 `.py`**: e' documentazione + una skill.
+- I gate numerici (APSOC ≥80, sales page ≥85, "−15 se P prima di S") **non hanno un esecutore**:
+  nessuna funzione calcola quel punteggio, in nessun punto del repo.
+- Zero ordini, zero output tracciati: e' l'unico ecosistema "business" che non ha **nemmeno una**
+  prova di lavoro consegnato dentro di se'.
+
+### B.3 — 05-MULTI-BUSINESS, ramo E-COMMERCE
+- 3 reparti (`ECOM-Ricerca`, `ECOM-Store`, `ECOM-Crescita`) e 1 workflow (`WF-ECOM-PRODUCT`),
+  **zero agenti, zero codice, nessuna cartella corrispondente alla radice**.
+- Lo stesso `ECOSISTEMA.md` lo mette OUT OF SCOPE: e' l'unico ramo del censimento dichiarato
+  non-costruibile-ora dal documento che lo istituisce.
+
+### B.4 — Le funzioni scoperte dentro ecosistemi che un motore ce l'hanno
+Non sono ecosistemi interi, ma sono buchi della stessa natura:
+- **01-AGENCY**: il motore copre solo l'acquisizione (`Outreach/`). **Preventivi (A3), Delivery (A4),
+  Closing (A8), Account (A7), Partnership (A9), QA-Cliente (A10) non hanno alcun motore**, dentro o fuori.
+- **02-INFO-BUSINESS**: motore solo per i libri. **Corso, lancio, funnel evergreen, validazione:
+  nessun eseguibile.**
+- **03-CONTENT-FACTORY**: motore per caroselli e video. **CF-R6-QA-Gate e CF-R7-Pubblicazione non
+  esistono come esecutori** — e gli ordini reali si fermano esattamente li' ("handoff-cf-r6:
+  non_eseguito", "la pubblicazione non e' agganciata").
+- **07-FORGE**: i motori (le skill) esistono, ma **il registro delle forgiature no**: `frg-hr-registrar`
+  descrive un'anagrafe che non e' mai stata creata come file.
+
+---
+
+## C. Sorprese e contraddizioni
+
+Ogni voce cita **cio' che il documento dichiara** e **cio' che il disco mostra**.
+
+### C.1 — La cartella "vuota" che conteneva un bot funzionante e gia' eseguito
+- **Dichiarato**: un audit precedente ha classificato `company/Ecosistemi/08-STREAM-S7-BOT/` come
+  cartella vuota.
+- **Disco**: contiene `S7_NFT_BOT.zip` (21.884 byte) con **14 voci** — 5 moduli Python, `requirements.txt`,
+  `.env.example`, `LEGGIMI.md`, `report-studio.md`, `paper_trade_log.csv` — **piu' 4 file `.pyc`
+  fuori dallo zip** (`__pycache__/*.cpython-311.pyc`) datati **2026-07-23 08:47-08:48**: prova che il
+  codice **e' stato eseguito su questa macchina**. Il `paper_trade_log.csv` contiene **6 trade
+  simulati reali** con lo stesso timestamp.
+
+### C.2 — Il roster di 01-AGENCY non e' dove il documento dice, e i reparti sono il doppio
+- **Dichiarato** (`01-AGENCY/ECOSISTEMA.md` §3): "Roster completo: **38 schede in `Agenti/`**"
+  e un org chart con **6 reparti** (A1-A6).
+- **Disco**: la cartella `Agenti/` **non esiste** in `01-AGENCY/`; le schede sono **74**, tutte in
+  `Reparti/*/agenti/`; i reparti sono **10** (A1-A10, quindi A7-Account, A8-Closing,
+  A9-Partnership, A10-QA-Cliente non compaiono nell'org chart del loro stesso ecosistema).
+
+### C.3 — Quattro ecosistemi indicano path di reparto che non esistono
+| Ecosistema | Path dichiarati in `ECOSISTEMA.md` | Cosa c'e' davvero |
+|---|---|---|
+| 02-INFO-BUSINESS | `Reparti/Prodotto/`, `Reparti/Lanci/`, `Reparti/Vendite-Funnel/`, `Reparti/Community-Retention/` (4) | 5 cartelle `IB-L2-COMM/LANC/PROD/STRA/VEND-*` |
+| 04-MARKETING | `Reparti/Copywriting/`, `Reparti/Advertising/`, `Reparti/Email-Marketing/`, `Reparti/Analytics/` (4) | 6 cartelle `L2-1…L2-6` |
+| 06-PLATFORM | `Reparti/Web-Engineering/`, `Reparti/Tooling/`, `Reparti/Security/`, `Reparti/CI-CD/` | 5 **file** `.md` con nomi diversi |
+| 08-INTELLIGENCE | `Reparti/Ingestione/`, `Reparti/Wiki/`, `Reparti/Memory-Empire/`, `Reparti/Research/` (5 con NERVE-SOLVE) | 4 **file** `.md` (`INGESTION`, `MEMORY`, `RESEARCH`, `SECOND-BRAIN`) |
+| 10-MEMORY | `Reparti/Checkpoint/`, `Reparti/ADR/`, `Reparti/State/`, `Reparti/Audit/` | 5 **file** `M1…M5` |
+Nessuno di quei path esiste: **un agente che seguisse i documenti non troverebbe il proprio reparto**.
+
+### C.4 — Tre istruzioni operative mandano l'operatore nel posto sbagliato
+1. **`12-STREAM-S7-BOT/LEGGIMI.md`**: "Entrare nella cartella: `cd company/Ecosistemi/**08**-STREAM-S7-BOT`"
+   — manda nel nodo gemello, **dove il codice e' compresso e `python main.py` fallisce**.
+   Il codice funzionante e' proprio nella cartella 12, quella del LEGGIMI.
+2. **`13-ARENA-APEX/README.md`**: "`cd digital-empire`" — **nessuna cartella con quel nome esiste** nel repo.
+3. **`02-INFO-BUSINESS/.../ARCHITETTURA.md`**: rimanda la procedura a `.claude/skills/libro/SKILL.md`
+   — `ls .claude/skills/libro` → **No such file or directory** (esistono `book-optimizer-skill` e
+   `book-to-skill`, che sono altra cosa).
+   Piu' `04-MARKETING/Workflow/copy-workflow-wrapper.md`, che cita un PDF
+   (`Il+manuale+del+copywriting+V1.1.pdf`) il cui nome reale e' `Il+manuale+del+copywriting+V1.1+Defo (1).pdf`.
+
+### C.5 — Il runtime della holding e' una cartella vuota
+- **Dichiarato**: `09-OPERATIONS/ECOSISTEMA.md` → "**ruflo installato**, swarm non inizializzato";
+  il `CLAUDE.md` globale istruisce a usare i tool MCP `swarm_init`, `agent_spawn`, `memory_store`.
+- **Disco**: `ruflo/` alla radice = **0 file**. Il server MCP `claude-flow` non si connette in questa
+  sessione. **Il livello L4 di APEX-7 (`11-APEX-7-CORE/README.md`) poggia esplicitamente su RuFLO.**
+
+### C.6 — La tesoreria e' perfetta e non ha contato un euro
+- **Dichiarato**: `14-TESORERIA/README.md` — cinque comandi, cinque agenti, tre leggi, ADR-020.
+- **Disco**: `company/Memory/tesoreria/entrate.jsonl` e `spese.jsonl` = **0 byte entrambi**,
+  creati il 2026-09-03 alle 13:03 e mai scritti. `company/Memory/TESORERIA.md` lo ammette:
+  "**Nessun movimento registrato**". Il nodo stesso e' **1 file + 2 cartelle vuote**
+  (`agenti/`, `workflow/`), senza `ECOSISTEMA.md` ne' `BACKBONE.md`.
+
+### C.7 — Tre APEX, e due S7: la stessa architettura scritta quattro volte
+- `11-APEX-7-CORE` (489 file, 161 `.py`, 27 test, CI), `12-STREAM-S7-BOT` (81 file, 31 `.py`, 6 test),
+  `13-ARENA-APEX` (19 file, 1 `.py`, **0 test**) implementano **gli stessi tre stream**
+  (skill-forge, carousel, cold-outreach) con la stessa memoria a layer e lo stesso quality gate.
+- Dentro il solo 11, l'**ADR-012** tiene deliberatamente in vita **tre motori di orchestrazione**
+  (`orchestrator/`, `orchestration/`, `orchestration-layer/`).
+- `08-STREAM-S7-BOT` e `12-STREAM-S7-BOT` sono lo stesso bot in due stadi, e
+  `REGISTRO-NUMERI.md` registra la collisione del numero 08 come "**non risolto, non bloccante**".
+
+### C.8 — I libri KDP hanno due padroni, e il motore migliore e' nell'ecosistema che non li rivendica
+- **05-MULTI-BUSINESS** ha 4 reparti `PUB-*`, 6 workflow `WF-PUB-*` e `libri-wrapper.md` che punta a
+  `Workflow-libri/` (**7 `.py`**).
+- **02-INFO-BUSINESS** contiene `libri-performanti-multiagente/` con **28 moduli `engine/` + 4 test +
+  gate che escono con codice d'errore**: l'unico workflow non-APEX del censimento che soddisfa tutte
+  e quattro le condizioni di "vivo".
+- **Nessuno dei due documenti nomina l'altro.**
+
+### C.9 — Il motore video piu' grosso dell'Impero non e' citato da nessuno dei due ecosistemi che lo userebbero
+- `YOUTUBE-AUTOMATION-FACTORY/` alla radice: **136 `.py`**, `VIDEO-PRONTI/`, `memory/`,
+  4 profili Chrome dedicati.
+- `grep -r "YOUTUBE-AUTOMATION-FACTORY" company/Ecosistemi/05-MULTI-BUSINESS/` → **0 occorrenze**,
+  benche' 05 abbia 9 agenti `MB-YT-*` e 7 workflow `WF-YT-*`.
+- `03-CONTENT-FACTORY` ha il reparto video (`CF-R3-Produzione-Video`) e **zero ordini registrati**,
+  mentre l'unico reparto con ordini reali e' CF-R5 (caroselli).
+
+### C.10 — L'unico ecosistema che documenta i propri gate come "verificati a mano"
+- `03-CONTENT-FACTORY/Reparti/CF-R5-.../orders/CF-2026-PREVENTA-001/state.json`:
+  `"metodo": "verifica manuale (CF-R5-QA non ancora costruito come script reale)"` per GATE-FORMATO
+  **e** GATE-BRAND, con `"brand_kit_path": null` — mentre il DONE WHEN #1 dello stesso ecosistema
+  esige un contratto d'ordine con `brand_kit`.
+- Tre settimane dopo, l'ordine 002 registra `"tipo": "AUTOMATICO"` perche' il gate e' finito dentro
+  `caroselli.py`. **E' l'unico caso documentato, in tutto il censimento, di un gate passato da
+  prosa a codice.** E' il modello che il piano dovrebbe replicare.
+
+### C.11 — Due agenti con lo stesso codice
+- `10-MEMORY/Agenti/` contiene **`ME-A00-conductor.md` e `ME-A00-memory-conductor.md`**: due schede
+  distinte con **lo stesso identificativo A00**. Chi instradasse per codice non saprebbe quale prendere.
+
+### C.12 — Cinque cartelle-reparto morte convivono con le nuove
+- `03-CONTENT-FACTORY/Reparti/` contiene le 9 cartelle `CF-R0…CF-R8` **e** 5 gusci della nomenclatura
+  precedente (`Strategia/`, `Produzione-Video/`, `Produzione-Testuale/`, `Visual-Design/`,
+  `Pubblicazione/`), con **1 solo `README.md` ciascuna** e nessun documento che dica quale valga.
+
+### C.13 — Il codice piu' onesto dell'Impero e' quello che dice di non essere usato
+- `12-STREAM-S7-BOT/STATO-RIPRESA.md`: "**non manca codice, manca una decisione**" — gate finale
+  L6→L7 **7/7 verde**, ma expectancy **negativa** e ">85% di perdere il capitale entro il primo mese";
+  layer NFT **bocciato su 89/89 controlli reali** (`CP-20260730-007`).
+- `08-STREAM-S7-BOT/report-studio.md` (dentro lo zip) arriva alla stessa conclusione per il mempool
+  Solana: "300-800 ms di ritardo... quando il nostro `analysis_engine.py` invia il segnale di BUY,
+  l'NFT/token e' gia' stato comprato".
+- **Due sistemi tecnicamente vivi che i loro stessi documenti sconsigliano di mettere in produzione.**
+  Per questi due, "portare al 100% vivo" puo' voler dire archiviarli con onore — decisione di Max,
+  non di chi costruisce.
+
+---
+
+*Censimento chiuso il 2026-09-06. 15 schede su 15. Esclusi da ogni conteggio: `__pycache__/`,
+`node_modules/`, `.git/` — con l'eccezione dichiarata di `08-STREAM-S7-BOT`, dove i 4 `.pyc` sono
+riportati perche' costituiscono prova di esecuzione.*

@@ -772,3 +772,121 @@ altrove: i 17 `mba-*` e i 25 `cf-*` sono invocabili oggi. La mossa economica è 
 `arch-*`/`frg-*` sugli agenti `mba-*`/`cf-*` che già esistono e dichiarare quella mappa nel registro,
 invece di forgiare 18 file nuovi. Da correggere subito: il puntatore `Genesi-Core/07-CONTROL/` in
 `empire/dash/render_md.py:26`, che sporca ogni dashboard generata.
+
+---
+
+## 10. `company/org/` — l'inventario degli asset
+
+**Cosa è** (dall'intestazione di `org/inventario-asset.yaml`): «EMPIRE OS Asset Inventory. Ogni
+cartella/progetto nella root del monorepo → destinazione → azione raccomandata. Regola (ADR-003):
+**WRAP non riscrittura. Il codice resta dove si trova.**» `version: "1.0"`, `updated:
+"2026-06-11"`, `maintainer: "COO (company/Board-CSuite/COO.md)"`.
+
+**Contenuto reale — 1 file .yaml, 346 righe.** `inventario-asset.yaml`, nient'altro. Nessun README.
+
+Censisce **33 asset** (voci `- cartella:`), ognuno con 8 campi tipati e dichiarati in testa al file:
+`cartella` · `ecosistema` (ID di destinazione) · `reparto` (L2) · `azione` (`usa | wrappa | evolvi |
+archivia | verifica`) · `stato` (`active | legacy | experimental | archived | unknown`) · `orfano`
+(`false` = mappato, `true` = da assegnare) · `priorita` (`P1` revenue · `P2` crescita · `P3`
+supporto · `P4` archivio) · `note`. Esempio della prima voce: `Outreach` → 01-AGENCY / Acquisizione
+/ azione `usa` / stato `active` / P1 / «SISTEMA ATTIVO. 300+ email/gg… **NON modificare (ADR-003)**».
+
+**Orfani dichiarati: 2** — le cartelle `bho` e `prove`. Su 33 asset, 31 hanno una casa.
+
+**Agenti definiti: nessuno.** È un file di dati, non un organo che agisce.
+
+**Come si attiva oggi.** È l'unico organo, insieme al Mandato, ad avere un **gate automatico sul
+contenuto e non solo sull'esistenza**: `scripts/verify-empire.ps1:139-145` legge il file, conta le
+occorrenze di `orfano: true` con una regex e verifica che siano **≤ 3** — «`Check "Orfani <= 3
+(attuale: $orfaniCount)"`». Oggi il conteggio è 2 e il check è PASS. È inoltre elencato in
+`gen-empire.py` e citato in `.../inventario-asset.yaml:253` come luogo dove sono censiti gli script
+di sistema. Nessun hook lo esegue: come tutto il resto, `verify-empire.ps1` va lanciato a mano.
+
+**Che cosa produce e dove finisce.** Non produce: **è il registro**. Il suo valore è di essere la
+sola mappa che dice, per ogni cartella del monorepo, a quale ecosistema appartiene e cosa farne. Il
+suo prodotto indiretto è il verdetto «orfani ≤ 3» dentro `verify-empire.ps1`, che esce a console e
+non viene depositato.
+
+**Il problema vero non è la forma, è la data.** `updated: "2026-06-11"`: **87 giorni fa**. Da allora
+sono entrati nel monorepo interi sistemi che non compaiono qui — fra gli altri `WORKFLOW-ESTATE/`,
+`empire/`, `EmpireDesk/`, `DIGITAL-EMPIRE/`, `Preventa`, i lavori di YouTube Automation Factory. Il
+gate «orfani ≤ 3» resta verde non perché non ci siano orfani, ma perché **conta solo gli orfani già
+dichiarati**: un asset mai censito non è un orfano, è un invisibile. Il controllo misura l'onestà
+del file, non la realtà del disco.
+
+**Cosa manca perché sia vivo:**
+- (a) **comando** — c'è, dentro `verify-empire.ps1`; manca un comando che *aggiorni* l'inventario, oggi si tocca a mano.
+- (b) **contratto** — c'è, ed è tipato: 8 campi con valori ammessi dichiarati in testa al file.
+- (c) **posto stabilito** — è lui stesso il posto.
+- (d) **test** — c'è, ed è l'unico check di contenuto oltre a quelli del Mandato: `orfani ≤ 3`, PASS.
+
+**Difficoltà: BASSA.** Serve una cosa sola, e cambia il senso del gate: uno script che elenchi le
+cartelle di primo livello del monorepo, le confronti con le 33 censite, e segnali quelle assenti.
+Così «orfani ≤ 3» smette di misurare il file e comincia a misurare l'azienda.
+
+---
+
+## 11. `company/Antigravity-Briefs/` — i brief per il costruttore esterno
+
+**Cosa è** (da `GEM-00-INDEX-E-PROTOCOLLO.md`): la cartella dei brief operativi per un esecutore
+diverso da Claude — `Esecutore designato: GEMINI in ANTIGRAVITY (accesso pieno al monorepo)`,
+`Created: 2026-07-22`, `Status: ATTIVO`. La divisione del lavoro è dichiarata da Max:
+«**Claude** = architettura, decisioni (ADR), memoria semantica, copy/revenue, gate 5-bis.
+**Gemini/Antigravity** = **costruire il substrato eseguibile**. Codice Python reale, runtime,
+telemetria, validatori, dashboard, motore di workflow. **È il reparto che manca.**»
+
+**Contenuto reale — 16 file .md, 2.314 righe.**
+- `GEM-00-INDEX-E-PROTOCOLLO.md` (indice e regole d'ingaggio)
+- 8 brief numerati: `GEM-01-EMPIRE-CORE-RUNTIME`, `GEM-02-MEMORY-RUNTIME`, `GEM-03-ISPETTORATO-TELEMETRIA`, `GEM-04-ANAGRAFE-LINK-INTEGRITY`, `GEM-05-DASHBOARD-E-METRICHE`, `GEM-06-WORKFLOW-ENGINE`, `GEM-07-PROMPT-DA-INCOLLARE-S7`, `GEM-07-S7-NFT-BOT-BRIEF`
+- `consegne/` — **3 consegne**: `GEM-03-CONSEGNA.md`, `GEM-04-CONSEGNA.md`, `GEM-05-CONSEGNA.md`
+- 4 prompt operativi: `01_PROMPT_CLAUDE_SCRAPER_APEX7`, `02_PROMPT_ANTIGRAVITY_YOUTUBE_ENGINE`, `PROMPT-ARENA` (68 righe), `PROMPT-DA-INCOLLARE` (207 righe)
+
+**Questo organo ha già fatto, il 2026-07-22, la stessa diagnosi che il piano sta rifacendo oggi** —
+e vale la pena riportarla per intero, perché è la misura da cui si parte. Da `GEM-00`, sezione «0.
+Perché questi brief esistono», tabella «Diagnosi misurata il 2026-07-22 sul monorepo»:
+`.md` in `company/` = **1.267** («il livello documentale è costruito») · `.py` in `company/` = **0**
+(«il livello eseguibile non esiste») · `Ispettorato/telemetry/` **vuota** («l'organo di performance
+non ha mai girato») · `Ispettorato/report/` **vuota** · `Ispettorato/state/` **vuota** ·
+`Memory/audit/` **vuota** · path rotti dentro `WORKFLOW-ESTATE/` = **26** ·
+`WORKFLOW-ESTATE/05-TEMPLATES-E-KIT/` e `06-DASHBOARD-E-METRICHE/` **vuote** (violano Art.8 del
+Mandato) · `memory_manager.py status` = **crash** `UnicodeEncodeError` cp1252.
+E la conclusione, scritta in grassetto nel file: **«Digital Empire oggi è un'azienda *descritta*, non
+un'azienda *che gira*. Esiste l'organigramma…, non esiste il substrato eseguibile che rende
+quell'organigramma osservabile, misurabile e auto-correttivo.»**
+
+**Tre di quelle caselle oggi non sono più vuote**, e si vede da questo censimento:
+`Ispettorato/telemetry/` ha 88 file, `Ispettorato/report/` ne ha 88, e `empire/inspect/` esiste con
+30 test verdi — è la consegna GEM-03. GEM-04 e GEM-05 hanno anch'esse la loro consegna. **Restano
+senza consegna GEM-01, GEM-02, GEM-06, GEM-07.** `Ispettorato/state/` è ancora vuota.
+
+Le **10 regole non negoziabili** di `GEM-00 §1` sono, di fatto, il capitolato di qualità del codice
+di Digital Empire, e servono a chiunque costruirà i pezzi mancanti: ADR-003 wrap mai riscrittura ·
+ADR-008 nessun artefatto orfano (Owner/Controllore/Origine/Governo in testa a ogni file + iscrizione
+in `REGISTRO-IMPRESA.md`) · Art.8 6 pilastri non vuoti · **Windows-first** (`encoding="utf-8"`
+esplicito e `sys.stdout.reconfigure`, «uno script che crasha su Windows non è consegnato») · zero
+segreti nel codice · zero dipendenze nuove senza motivo · **idempotenza** con test esplicito ·
+**«Prova, non dichiarazione»** («un task è chiuso solo se hai INCOLLATO nel report finale il comando
+eseguito e l'output reale. *"Dovrebbe funzionare" = task non chiuso*») · solo date assolute · un
+checkpoint per task chiuso. Il §2 impone inoltre un **protocollo di verifica skill obbligatorio**
+prima di ogni brief: «Non assumere che esistano», con i comandi di verifica e la tabella da produrre.
+
+**Agenti definiti: nessuno** — sono brief, non schede agente.
+
+**Come si attiva oggi.** A mano, incollando un brief a Gemini in Antigravity. Nessun hook, nessuno
+script, nessun riferimento in `gen-empire.py` o `verify-empire.ps1`: come Genesi-Core, **non è
+coperto dal gate strutturale**.
+
+**Che cosa produce e dove finisce.** Produce **codice consegnato altrove** — è l'unico organo il cui
+prodotto sta fuori da `company/`: `empire/inspect/` (GEM-03) è il risultato più visibile. La
+destinazione dei report è invece stabilita e rispettata: `consegne/GEM-NN-CONSEGNA.md`, 3 su 8.
+
+**Cosa manca perché sia vivo:**
+- (a) **comando** — è umano per natura (incollare un brief a un altro modello): non ha senso automatizzarlo, ma andrebbe dichiarato dove sta la coda dei brief aperti.
+- (b) **contratto** — c'è, ed è il più severo del perimetro: 10 regole + protocollo di verifica skill + formato di consegna.
+- (c) **posto stabilito** — c'è: `consegne/`.
+- (d) **test** — la regola «prova, non dichiarazione» *è* il test, ma è verificata da una persona che legge il report.
+
+**Difficoltà: BASSA.** Il pezzo mancante è un indice di stato: una tabella in `GEM-00` che dica, per
+ognuno degli 8 brief, aperto/consegnato/verificato — oggi si ricava solo contando i file in
+`consegne/`. E le 4 caselle della diagnosi 2026-07-22 che sono state chiuse vanno segnate come
+chiuse, altrimenti il documento continua a descrivere un'azienda peggiore di quella che è.
