@@ -1,7 +1,7 @@
-﻿[2026-09-05 12:27:26] CONFLITTO DI SYNC
+﻿[2026-09-05 14:47:58] CONFLITTO DI SYNC
 COMMIT BLOCCATO da un controllo pre-commit. Il lavoro NON e' committato ne' pushato.
 
-On branch main Your branch is up to date with 'origin/main'.  Changes not staged for commit:   (use "git add <file>..." to update what will be committed)   (use "git restore <file>..." to discard changes in working directory)   (commit or discard the untracked or modified content in submodules) 	modified:   SKILL & Agenti/Orchestracion Layer - Problem solving/poc/ruflo-source (modified content)   It took 2.65 seconds to enumerate untracked files. See 'git help status' for information on how to improve this.  no changes added to commit (use "git add" and/or "git commit -a")
+On branch main Your branch is up to date with 'origin/main'.  Changes not staged for commit:   (use "git add <file>..." to update what will be committed)   (use "git restore <file>..." to discard changes in working directory)   (commit or discard the untracked or modified content in submodules) 	modified:   SKILL & Agenti/Orchestracion Layer - Problem solving/poc/ruflo-source (modified content)  no changes added to commit (use "git add" and/or "git commit -a")
 
 Cosa fare: leggi il messaggio qui sopra, correggi il problema (spesso basta
   python .githooks/check_memory.py --fix
