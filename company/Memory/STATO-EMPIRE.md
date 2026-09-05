@@ -1,3 +1,14 @@
+## 🟠 2026-09-05 — PDF dossier 28 (Higgsfield+ElevenLabs) rigenerato, aperto, chiuso — CP-20260905-011
+
+**Codice di ripresa: EMP-PDF28.** Lo script `PIANO-MAESTRO/scripts/build_dossier28_pdf.py` era
+stato toccato dopo l'ultima build: PDF su disco stale. Rigenerato (11 pagine, 0,52 MB), aperto
+per Max, committato da solo (`ed2009e9`). Nessuna azione pendente su dossier 28.
+
+**Segnalato, non risolto:** submodule `SKILL & Agenti/Orchestracion Layer - Problem solving/poc/ruflo-source`
+dirty (decine di file modificati, `crates` cancellata) + `SYNC-CONFLICT.txt` in radice da un
+commit precedente bloccato da pre-commit hook — fuori scope di questo task, decide Max come
+risolverlo (probabile `git pull --rebase` manuale).
+
 ## 🟠 2026-09-05 — IL RECAP HA UNA FORMA SOLA: automodifica della dottrina — CP-20260905-002
 
 **Codice di ripresa: EMP-RCAP.** Ordine diretto di Max: *"li dai sempre in modo diverso"*.
