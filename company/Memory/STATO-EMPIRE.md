@@ -9046,3 +9046,23 @@ che la via esiste solo a mano — e allora è una scelta, non un limite.
 
 Nastro rilanciato su A4. Il controllo di durata ha già fermato da solo, in produzione, la lezione
 `1f659f44` (dichiarava 1.122 s, il file ne durava 1.595: lo stesso webinar di vendita di L02).
+
+### 2026-09-05 — PAUSA con 4 DOOM BOT ancora al lavoro
+
+Ordine di Max: gli appunti dello studio devono essere **più lunghi e più ampi del parlato della
+lezione**, con miglioramento a tre livelli (stesura → miglioramento → miglioramento del
+miglioramento) e revisione. Misurato: i miei appunti erano **1.113-1.277 parole contro parlati da
+1.610-2.413** — sotto standard, e per una scelta mia (avevo tenuto tutto in prima persona per
+timore che un agente inventasse dove serve la prova frame+minuto).
+
+**Schierati 4 DOOM BOT (opus), uno per lezione — L00, L02, L03, L04** — con obbligo di ancorare
+ogni riga a `[mm:ss]` o `frame-NNN.png` e di aprire davvero i frame. Obiettivi di lunghezza:
+L00 ≥3.500, L02 ≥4.500, L03 ≥5.000, L04 ≥9.000 parole. **L01 non è partito**: il classificatore
+di sicurezza è andato in timeout due volte. Va rilanciato alla ripresa.
+
+Al ritorno: le SENTINELLE di verità sui loro risultati (nessuna riga senza provenienza), poi
+`report.md` e regole di L04 — la lezione su Fliki, la più vicina al motore.
+
+**Domanda ancora aperta (vale più del resto di L04):** l'API di Fliki espone la libreria propria
+(«My Library») e la musica di sottofondo? Se sì, chiude il difetto delle clip stock fuori target
+che la fabbrica aveva archiviato come limite dell'API.
