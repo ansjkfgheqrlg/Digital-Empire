@@ -108,6 +108,23 @@ stesso turno.
 
 Dettagli: [CP-20260905-017](checkpoints/CP-20260905-017.md) · ripresa [EMP-URQ7](riprese/EMP-URQ7.md).
 
+## 🟠 2026-09-06 — I quattro miti del camuffamento: A4 a metà — CP-20260906-001
+
+**Codice di ripresa: EMP-V6DE (APERTA).** Chiuse in una sessione **L05, L06, L07, L08, L10** →
+**A4 al 47,6% (10/21)**, studio a **10/167 (6,0%)**. Registro: **34 regole, 31 applicate, 3 al
+gate**. Test fabbrica 11/11 verdi. L07/L08/L10 (110 minuti di tutorial su Filmora e Premiere)
+chiuse in **BRONZO dichiarato** — parlato integrale letto, zero frame, due lezioni delegate a
+scagnozzi. **Il trovato più importante non viene da una lezione ma dal leggerne quattro di fila:
+i QUATTRO MITI DEL CAMUFFAMENTO** (il *fair use* spacciato per regola di YouTube · i filtri che
+renderebbero un video «non più riconoscibile» · le clip protette lecite «sotto i 5 secondi» · il
+logo coperto per «evitare il copyright») — tutti falsi, tutti con lo stesso errore: **confondono
+il non farsi riconoscere da una macchina con l'essere in regola**. Raccolti in
+`references/monetizzazione-compliance.md` §5. Altre scoperte: la velocity di un video giovane
+**misura la base iscritti, non l'appeal** (corretto `video-analyst`); **non abbiamo intro né
+outro** e nessuno lo sapeva; la **sincronia voce/immagini** ci è gratis perché generiamo il visivo
+dal nostro testo. Aperti **C-004** (riuso fotogrammi: porta chiusa) e **C-005** (il corso
+contraddice sé stesso). Prossimo: le 7 lezioni pronte, poi il gate di categoria A4.
+
 ## 🟠 2026-09-05 — A4/L04 chiusa: la fabbrica descriveva un montaggio che nessuno fa più — CP-20260905-020
 
 **Codice di ripresa: EMP-V6DE (APERTA).** Chiusa `A4/L04` «Editing Video Automatico con AI All in

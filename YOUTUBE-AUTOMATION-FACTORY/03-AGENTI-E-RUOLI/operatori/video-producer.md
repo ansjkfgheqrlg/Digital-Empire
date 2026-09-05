@@ -99,3 +99,33 @@ Non è una preferenza estetica, è una cosa pagata due volte:
 Noi facciamo un passo oltre il corso: lui lascia acceso lo zoom su immagini ferme, noi generiamo
 clip vere. **Tornare alle immagini ferme è una regressione, non una semplificazione.** Se qualcuno
 propone di togliere `aiVideoModel` per risparmiare, il costo è il video v10.
+
+## 10. La sincronia ce l'abbiamo gratis, e va saputo (A4-L10-03 · 2026-09-05)
+
+Le nostre immagini nascono **dal testo della scena**: parlato e visivo combaciano per costruzione,
+e nessuno deve farli combaciare.
+
+Chi monta a mano su clip altrui vive il problema opposto, descritto in AI TUBE PRO A4/L10
+(05:25 → 05:56): il voiceover nuovo è **sempre** più veloce o più lento dell'originale — «se è più
+lento dovete rimuovere alcune clip, se è più veloce dovete aggiungerne» — e ogni video diventa una
+caccia ai punti di taglio.
+
+**Perché è scritto qui:** è un vantaggio strutturale, e i vantaggi che non si sanno di avere si
+barattano alla prima scorciatoia. Chiunque proponga di riusare clip di un video sorgente sta
+proponendo, in cambio di niente, **di ricomprarsi quel problema** — oltre a tutto il resto
+(`references/monetizzazione-compliance.md` §4).
+
+## 11. Intro e outro: la firma che oggi non abbiamo (A4-L10-01 · 2026-09-05)
+
+Un canale che pubblica a nastro ha bisogno di **due elementi ricorrenti**: un'apertura e una
+chiusura riconoscibili. Servono a tre cose: dicono di chi è il video, danno un ritmo costante alla
+serie, e — nota pratica del corso — «l'intro la posso inserire fra due sezioni: **cambio la
+lunghezza del video**» (A4/L10, 07:27).
+
+**Stato reale della nostra fabbrica: non ne abbiamo nessuno dei due.** I video cominciano e
+finiscono nudi. Il payload di `fliki_client.py` non prevede né intro né outro, e nessun agente li
+nomina. Non è un difetto grave — è **una cosa che non c'è e che nessun documento diceva**.
+
+**Cosa fai adesso, in attesa che venga deciso:** quando compili la spec, **dichiara che il video
+uscirà senza intro e senza outro**. Che sia una scelta consapevole e non una dimenticanza.
+Annotato in `BACKLOG.md`.

@@ -97,3 +97,10 @@ nostra catena può davvero eseguire.
 criterio che la catena non può né produrre né correggere, **non spuntarlo e non bocciare**:
 dichiaralo sospeso nel rapporto, e chiedi che venga accertato. Un FAIL su una cosa inesistente
 ferma la produzione per niente; un PASS dato senza guardare insegna a fidarsi di un gate cieco.
+
+**Il metro, per quando servirà (A4-L08-02).** Se la verifica accerterà che una traccia musicale
+c'è, il livello di riferimento non è «un po' più bassa»: nella lezione A4/L08 (44:39 → 45:06) il
+docente porta la musica da 0 dB a **−25 dB** e la giudica **ancora troppo alta**, chiudendo a
+**−35 dB**. La sua unica istruzione di metodo è quella giusta: «**mi regolo ascoltando**».
+Teniamo **−35 dB** come punto di partenza, non come dogma — ma sapendo che l'errore tipico è
+lasciarla **molto** più alta di quanto serva.

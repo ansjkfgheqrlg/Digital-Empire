@@ -45,7 +45,13 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
   con tre arbitrati. Il migliore, **C-001**: la nostra soglia «scarta tutto sotto le 24 ore» era
   un vincolo **temporale** messo a difesa di un problema di **volume** — corretta in ≥10.000
   viste sotto le 24 h, e ci sblocca le nicchie di attualità.
-  **Registro: 24 regole, tutte a norma, 21 applicate, 3 in attesa del gate A4 (binario B).**
+- **Lezioni A4/L06, L07, L08, L10 chiuse** (CP-20260906-001): 10 regole, tutte applicate.
+  Il trovato che conta non viene da una lezione ma dal **leggerne quattro di fila**: **i quattro
+  miti del camuffamento** (fair use come regola di YouTube · i filtri che rendono «irriconoscibile»
+  · le clip protette sotto i 5 secondi · il logo coperto), tutti in
+  `references/monetizzazione-compliance.md` §5. Da L06 il regalo migliore: la velocity di un video
+  giovane **misura la base iscritti**, non l'appeal.
+  **Registro: 34 regole, tutte a norma, 31 applicate, 3 in attesa del gate A4 (binario B).**
 - **Ingestione riparata**: portava a casa il video sbagliato (L02 arrivata due volte con un altro
   video). Ora la durata si chiede al lettore vero, i flussi si misurano con ffprobe PRIMA di
   scaricare, e un file fuori tolleranza diventa `1-sospetto` e non si trascrive.
@@ -62,7 +68,11 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **161 lezioni su 167 da studiare** (3,6% fatto). Fatte `A4/L00` → `L05`; A4 al 28,6% (6/21).
+- **157 lezioni su 167 da studiare** (6,0% fatto). Fatte `A4/L00` → `L08` e `L10`; **A4 al 47,6%
+  (10/21)**. L07, L08 e L10 chiuse in **BRONZO dichiarato** (tutorial di editor manuali: 110
+  minuti di interfaccia, parlato letto integralmente, zero frame — piano §10).
+- **In A4 restano: 7 lezioni già trascritte** da studiare e **4 in stato `1-fallito`** (HTTP 403,
+  gettone scaduto: si riscaricano con un gettone nuovo, non si forzano).
 - **Due verifiche assegnate al gate A4**: (1) ascoltare un MP4 prodotto e stabilire se contiene
   musica (`A4-L04-04`); (2) cronometrare una produzione vera end-to-end (`A4-L05-04`) — il corso
   ha un metro di 5 minuti, noi nessuno.
@@ -78,10 +88,13 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-**A4/L06 «Metodo Copia e Incolla»** (già trascritta) — da guardare con attenzione: il titolo
-promette esattamente il metodo a fonte singola che C-002 ha appena scartato. Le lezioni già
-scaricate e trascritte si vedono in `runs/corso-aitubepro/<id>/stato.json` al passo
-`2-trascritto` (`completata` = già chiusa, `1-fallito` = da riscaricare col gettone nuovo).
+**Le 7 lezioni di A4 già trascritte** che restano — si vedono in
+`runs/corso-aitubepro/<id>/stato.json` al passo `2-trascritto` (`completata` = già chiusa,
+`1-fallito` = da riscaricare col gettone nuovo).
+
+Poi: riscaricare le 4 fallite, e il **gate di categoria a 7 condizioni** (piano §9), che porta con
+sé le due verifiche già assegnate — **la musica** (`A4-L04-04`) e **il tempo per video**
+(`A4-L05-04`) — più le 3 regole di binario B da applicare al motore.
 
 ```bash
 cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"

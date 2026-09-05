@@ -123,3 +123,24 @@ blog, da altri video… **se io inserissi altre parti di testo sarebbe ancora me
 **2:34**, contro i «10, 12, 15, 20 minuti» annunciati nella stessa lezione.
 
 Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L05-metodo-completo/`.
+
+---
+
+## 10. Gli elementi ricorrenti si ruotano (A4-L08-01 · 2026-09-05)
+
+Un canale ha delle formule che tornano in ogni video: il richiamo all'iscrizione, lo stacco fra
+le sezioni, la chiusura. **Non devono essere le stesse due video di fila.**
+
+Tieni **un ventaglio di tre o quattro varianti per ciascuna**, diverse fra loro, e **ruotale**.
+Nella spec dichiara quale variante hai usato, così la rotazione è verificabile e non affidata alla
+memoria.
+
+Perché conta: la ripetizione identica è il segnale più forte che un canale è una catena di
+montaggio — e chi guarda due video di fila lo sente prima di saperlo dire. Il corso lo mette così
+(A4/L08, ≈09:35): «ne prendete 3-4 che vi piacciono, **diversi anche tra di loro**… per ogni video
+ne utilizzate qualcuno diverso, **non sempre gli stessi**».
+
+Vale anche al contrario: **l'intro e l'outro del canale devono restare stabili** (sono la firma —
+`video-producer.md` §11); a ruotare sono le formule interne, non l'identità.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L08-premiere-mega/`.
