@@ -413,9 +413,19 @@ toglie di mezzo pagandolo una volta sola per tutta la settimana.
 > cartella creata, nessun agente scritto, nessuna skill forgiata.
 >
 > **📂 Il piano: `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` — comincia da `00-LEGGIMI.md`.**
-> Sette documenti più la cartella `dati/`. **Il primo si apre con una pagina scritta per te** —
+> Nove documenti più la cartella `dati/`. **Il primo si apre con una pagina scritta per te** —
 > cosa è cambiato dalla versione che avevi ricevuto e perché — e prosegue con il problema, la tesi,
 > il primo giorno e le condizioni in cui si smette. Gli altri si consultano, non si studiano.
+>
+> **I due che ti servono di più mentre costruisci:**
+>
+> | | |
+> |---|---|
+> | `07-REPARTI-E-GERARCHIA.md` | **chi fa cosa**: i dodici reparti con missione e confine, chi possiede quale file, i cinque livelli di comando, chi può attivare chi, i quindici passaggi di consegne, i dodici comandi |
+> | `08-WORKFLOW.md` | **come si lavora**: i dieci flussi, quarantadue fasi, ognuna con l'agente che la esegue, cosa serve prima, cosa lascia sul disco, quando è finita e come può andare storta |
+>
+> Sono il livello che nella prima consegna mancava: Max ha chiesto di vederlo e ha ragione lui —
+> senza, avevi tredici file da produrre e nessuna idea di chi li produce e in che ordine.
 >
 > **⚠️ Il piano è alla versione 4.** La versione 3 — quella con dodici reparti e cinquanta agenti —
 > è stata smontata da quattro revisori indipendenti (oltre cinquanta difetti sostanziali, dodici
@@ -423,10 +433,11 @@ toglie di mezzo pagandolo una volta sola per tutta la settimana.
 > lavoro L1-L2-L3 resta la base di tutto ed è citato per nome.
 >
 > **Cosa contiene, in breve:** tredici artefatti tipizzati con schema, quattordici controlli con
-> criterio eseguibile e test rosso, quindici agenti, dodici stati, sei punti umani con scadenza.
-> Tutto dentro **una fonte di verità unica** — `dati/registro.yaml` — validata da un programma
-> (`dati/valida_registro.py`: 253 controlli, esce zero). Costruzione a sei scaglioni,
-> 118-174 ore-uomo.
+> criterio eseguibile e test rosso, quindici agenti, **dodici reparti**, **dieci flussi di lavoro
+> per quarantadue fasi**, **quindici passaggi di consegne**, dodici comandi, dodici stati e sei
+> punti umani con scadenza. Tutto dentro **una fonte di verità unica** — `dati/registro.yaml` —
+> validata da un programma (`dati/valida_registro.py`: **832 controlli**, esce zero, provato con
+> undici casi costruiti apposta per farlo fallire). Costruzione a sei scaglioni, 118-174 ore-uomo.
 >
 > **Quattro cose da sapere subito:**
 > 1. **Il numero è 15, non 14** (il 14 è Tesoreria). Riservato nel registro dei numeri.
@@ -444,6 +455,11 @@ toglie di mezzo pagandolo una volta sola per tutta la settimana.
 > il canale che doveva portare pubblico al Manuale è **spento dal 29/07/2026**. Il piano precedente
 > progettava dodici reparti sopra quei due fatti senza nominarli. Il dettaglio, difetto per
 > difetto, è in `06-CRITICA-E-GIRI.md`.
+>
+> **In che ordine leggerli, il primo giorno:** `00-LEGGIMI.md` (tutto) → `07-REPARTI-E-GERARCHIA.md`
+> §2 e §4, per sapere chi fa cosa → `04-COSTRUZIONE.md` §3, scaglione S0, che è il lavoro di
+> domani. Il resto si consulta quando serve: `08-WORKFLOW.md` mentre costruisci un flusso,
+> `06-CRITICA-E-GIRI.md` quando una scelta ti sembra strana.
 >
 > **Se qualcosa non ti convince, apri una chat e scrivi `Emperator`.** Si ridiscute con i numeri
 > davanti. Un piano eseguito controvoglia produce un ecosistema peggiore di uno scritto male da
