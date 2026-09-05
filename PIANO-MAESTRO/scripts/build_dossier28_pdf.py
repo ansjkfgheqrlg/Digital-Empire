@@ -136,7 +136,10 @@ h1.big .acc { color:var(--orange); }
   font-size:12.5px; color:rgba(244,242,246,0.66); max-width:56ch;
   margin-top:12mm; line-height:1.74;
 }
-.cover-meta { display:grid; grid-template-columns:repeat(4,1fr); gap:6mm; margin-top:18mm; }
+/* flex e non grid: dentro un contenitore flex in colonna la griglia a 4 colonne
+   collassava a una sola. Con flex+basis le quattro voci restano affiancate. */
+.cover-meta { display:flex; gap:9mm; margin-top:18mm; width:100%; }
+.cover-meta > div { flex:1 1 0; min-width:0; }
 .cover-meta .k {
   font-size:7.5px; letter-spacing:0.2em; text-transform:uppercase;
   color:rgba(244,242,246,0.36); margin-bottom:2.5mm;

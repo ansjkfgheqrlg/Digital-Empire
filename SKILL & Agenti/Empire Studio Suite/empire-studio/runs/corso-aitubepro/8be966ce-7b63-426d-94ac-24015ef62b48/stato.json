@@ -7,6 +7,9 @@
   "scaricato": false,
   "qualita": 360,
   "quando": "2026-09-04T23:57:18",
-  "passo": "1-fallito",
-  "avviso": null
+  "passo": "2-trascritto",
+  "avviso": null,
+  "parole": 2000,
+  "parole_al_minuto": 163,
+  "modello": "base"
 }

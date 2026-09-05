@@ -1,0 +1,628 @@
+{
+  "lesson_id": "8be966ce-7b63-426d-94ac-24015ef62b48",
+  "modello": "base",
+  "durata_s": 738.0,
+  "parole": 2000,
+  "blocchi": [
+    {
+      "inizio": 6.16,
+      "fine": 22.16,
+      "testo": "Ciao da Mirko del Fino, benvenuti all'interno di un nuovo video sui tube, continuiamo a parlare di editing video, continuiamo a parlare di Premiere Pro, in questo video abbiamo deciso di regalarvi un ulteriore bonus all'interno del percorso con montaggio video avanzato di Premiere Pro."
+    },
+    {
+      "inizio": 22.16,
+      "fine": 48.16,
+      "testo": "Dopo aver visto una parolabica su Premiere Pro, quindi come funziona, vi ho insegnato alcune tecniche importanti. Dopo aver visto come funziona il metodo dopo big colla, adesso cerchiamo di capire per esempio come andremo a editare un video con il metodo copy and colla partendo da un filmato originale, quindi vi farò vedere alcune tecniche che possiamo utilizzare che andranno naturalmente a completare quello che abbiamo già intravisto all'interno del percorso di i tube."
+    },
+    {
+      "inizio": 48.16,
+      "fine": 67.16,
+      "testo": "Questo è un video che proviene direttamente da immobili digitali della moccarossa, i nostri percorsi di formazione dedicata a youtube ad omissione, che scao channel dal valore di migliaia e di euro, che abbiamo deciso di regalarvi alcuni di questi contenuti all'interno del percorso, quindi vi lascio con il video seguidelo con molta attenzione."
+    },
+    {
+      "inizio": 67.16,
+      "fine": 78.16,
+      "testo": "Ciao amico del filmo, benvenuti all'interno di un nuovo video, in questo video andremo a vedere come editare una clip video che abbiamo per esempio scaricato da youtube o da qualsiasi altro portale."
+    },
+    {
+      "inizio": 78.16,
+      "fine": 96.16,
+      "testo": "Quindi quello che noi faremo naturalmente all'interno di premier pro è importare la clip video di nostro interesse, il voice over, quindi la parte naturalmente abbiamo inserito la nostra voce e le traccia audio di nostro interesse, naturalmente possiamo importare tutto ciò che vogliamo poi andare ad inserire all'interno del video."
+    },
+    {
+      "inizio": 96.16,
+      "fine": 117.16,
+      "testo": "Io qui, come potete vedere, vado a inserire per esempio la clip video, questa clip video, una clip video relativa a un video di un altro nostro canale, noi abbiamo tantissimi canali monetizzati con youtube e quindi capite bene che poi stiamo essenzialmente portando avanti quello che vi cerchiamo di insegnare nel corso, cioè creare più business, redidizi all'interno di youtube."
+    },
+    {
+      "inizio": 117.16,
+      "fine": 146.16,
+      "testo": "Perché vi dico questo perché naturalmente all'interno di questo video io non andrò a essenzialmente editare completamente tutta la clip perché comunque è la clip video di un altro nostro canale, questa potrebbe essere un'idente interessante, c'è avere un canale generico dove vuoi andare a pubblicare i vari video e poi andare a creare dei canali di nicchi, un po' come abbiamo fatto noi con mentalità milionaria, dove praticamente questi canali di nicchi potete pubblicare dei video specifici su un argomento e riutilizzare il stesso identico contenuto cambiando alcune cose."
+    },
+    {
+      "inizio": 146.16,
+      "fine": 158.16,
+      "testo": "Naturalmente voi potete anche decidere di prendere i video da altri canali come abbiamo fatto vedere all'interno del corso stesso, una volta scaricati questi video andate naturalmente importate in Premiere Pro."
+    },
+    {
+      "inizio": 158.16,
+      "fine": 172.16,
+      "testo": "Quindi immaginiamo che questo video di un altro canale è la prima cosa che dobbiamo fare naturalmente è rimuovere la musica e il buoi sovre, quindi io che cosa vado a fare, vado a cliccare qui sulla voce selezione con legata e la deseleziono, seleziono la parte dell'audio e la concello."
+    },
+    {
+      "inizio": 172.16,
+      "fine": 181.16,
+      "testo": "È essenzialmente quello che andrà a fare, quindi io è modificare un po' tutta la clip, ok, però inserirò il buoi sovre è inserirò la tra ciao."
+    },
+    {
+      "inizio": 181.16,
+      "fine": 198.16,
+      "testo": "Io quindi diciamo che già sto creando qualcosa di unico e di diverso, sprutando un po' tutto quello che abbiamo visto all'interno di questo corso, dei video precedenti, anche relativi a Premiere Pro, come possiamo andare a inserire per esempio un po' tutte quelle trucchetti all'interno delle clip per poter non avere reclama eccetera."
+    },
+    {
+      "inizio": 198.16,
+      "fine": 203.16,
+      "testo": "Bene, il fatto di inserire un po' di sovre originale, musica, no copyright ci dà una consissima mano."
+    },
+    {
+      "inizio": 203.16,
+      "fine": 216.16,
+      "testo": "Ora però io ritorno indietro perché naturalmente in questo caso specifico, come vi dicevo, io abbiano solo la parte iniziale, ma dovete unire i pezzi su tutto quello che abbiamo visto e poi comunque editare il video proprio come vi ho insegnato, ok?"
+    },
+    {
+      "inizio": 216.16,
+      "fine": 227.16,
+      "testo": "Quindi in questo caso specifico che cosa andrò a fare? Andrò ad ascoltare la clip e lo farò insieme a voi, infatti questo naturalmente un video dove andremo a fare questo editing totalmente assieme,"
+    },
+    {
+      "inizio": 227.16,
+      "fine": 233.16,
+      "testo": "che quindi comunque sarà un po' più lunghetto, magari, ma potete vedere come lavoro generalmente."
+    },
+    {
+      "inizio": 233.16,
+      "fine": 241.16,
+      "testo": "Ok, adesso vi dirò dettagliatamente quello che andrò a fare e in primi misso come avete visto anche importato la intro e il logo."
+    },
+    {
+      "inizio": 241.16,
+      "fine": 254.16,
+      "testo": "Ecco perché vi consiglio di creare un intro e anche un altro, naturalmente se volete quindi rendo screen, per esempio c'è fatto che andiamo a personalizzare il video, poi il logo lo possiamo inserire all'interno delle clip,"
+    },
+    {
+      "inizio": 254.16,
+      "fine": 265.16,
+      "testo": "quindi per esempio posso mettere questo logo qui, ok? Lo posso rimpicciolire, quindi vado ad normalmente a rimpicciolirlo, ed ecco che sto ancora di più personalizzando e rendendo unica."
+    },
+    {
+      "inizio": 265.16,
+      "fine": 271.16,
+      "testo": "La mia clip come si avessi totalmente credo io dal 0 questo video, ok? Quindi facciamo lo nei nostri canali."
+    },
+    {
+      "inizio": 271.16,
+      "fine": 279.16,
+      "testo": "Naturalmente non è obbligatorio, quindi ceriamo il logo magari solo in alcune clip del nostro video, ma siamo o no liberi di decidere come vogliamo fare."
+    },
+    {
+      "inizio": 279.16,
+      "fine": 284.16,
+      "testo": "Quindi io per esempio vi faccio vedere lo metto qui in basso, ok? E clicco play."
+    },
+    {
+      "inizio": 284.16,
+      "fine": 291.16,
+      "testo": "Dentro la proprietà abbandonata di Pablo Escobar da 10 milioni di dollari. Nel 19."
+    },
+    {
+      "inizio": 291.16,
+      "fine": 298.16,
+      "testo": "Ok, io praticamente in questo video che cosa andrò a fare, ok? Voi quando montate i vostri video, considerate che avrete."
+    },
+    {
+      "inizio": 298.16,
+      "fine": 306.16,
+      "testo": "Qui la clip video, l'audio lo rimuovete, magari la cosa che andrete a fare e ascoltare la clip originali per capire dove andare a inserire il voiceover,"
+    },
+    {
+      "inizio": 306.16,
+      "fine": 318.16,
+      "testo": "giusto? Ok. In questo caso spruisco io c'ho una linea qui di video sovere, per esempio se è il video che andrete a realizzare e trattano le 5 cose, le 10 cose, le 7 cose così via,"
+    },
+    {
+      "inizio": 318.16,
+      "fine": 325.16,
+      "testo": "io vi consiglio di separare appunto i video in queste sezioni. Così voi sapete essenzialmente dove dovete inserire il voiceover."
+    },
+    {
+      "inizio": 325.16,
+      "fine": 333.16,
+      "testo": "Perché il problema del voiceover è essenzialmente che su clip video scaricate, magari il voiceover, magari americano, ok?"
+    },
+    {
+      "inizio": 333.16,
+      "fine": 340.16,
+      "testo": "Va un po' troppo veloce, ho più lento rispetto al voiceover originale, magari siete stati voi stessi a creare il voiceover, ok?"
+    },
+    {
+      "inizio": 340.16,
+      "fine": 349.16,
+      "testo": "E quindi di conseguenza divento un po' complicato, quindi quello che puoi andare da fare nel caso in cui è più lento è ottimo perché dovete solo rimuovere alcune clip, quindi ancora meglio."
+    },
+    {
+      "inizio": 349.16,
+      "fine": 356.16,
+      "testo": "Se è più veloce dovete comunque aggiungerne delle clip, però vi ho già fatto vedere gli strumenti che possiamo utilizzare."
+    },
+    {
+      "inizio": 356.16,
+      "fine": 363.16,
+      "testo": "Quindi io qui è cosa vado a fare stoppo quando lui smette di parlare la parte iniziale vado a modificare, adesso vi faccio vedere come."
+    },
+    {
+      "inizio": 363.16,
+      "fine": 366.16,
+      "testo": "Quindi dollari, ok."
+    },
+    {
+      "inizio": 366.16,
+      "fine": 375.86,
+      "testo": "Io questa parte qui la sposto, vado a cliccare qua, ok?"
+    },
+    {
+      "inizio": 375.86,
+      "fine": 383.86,
+      "testo": "Cancello, vado a inserire il la mia voice, ok?"
+    },
+    {
+      "inizio": 383.86,
+      "fine": 392.87,
+      "testo": "Questo è qui, quindi io mi regolo qui."
+    },
+    {
+      "inizio": 392.87,
+      "fine": 398.87,
+      "testo": "Questo è stato fatto appositamente per voi per questo video per farvi capire come potete lavorare, quindi io vado qui e mi regolo."
+    },
+    {
+      "inizio": 398.87,
+      "fine": 399.87,
+      "testo": "Ok, guardate."
+    },
+    {
+      "inizio": 399.87,
+      "fine": 403.87,
+      "testo": "L'entro la propietà abbandonata di Pablo Escobar da 10 milioni di dollari."
+    },
+    {
+      "inizio": 403.87,
+      "fine": 414.87,
+      "testo": "Queste in metallità milionaria, in oggi il nostro mentore milionario, ci mostra come il noto traficante colombiano guadagnava e spendeva il suo patrimonio da 30 miliardi di dollari."
+    },
+    {
+      "inizio": 414.87,
+      "fine": 417.87,
+      "testo": "Ok, io cosa vado a fare?"
+    },
+    {
+      "inizio": 417.87,
+      "fine": 426.87,
+      "testo": "Stoppo, caccio, questa parte finale qui, è praticamente vado a inserire la mia intro, quindi significa che io sono,"
+    },
+    {
+      "inizio": 426.87,
+      "fine": 432.87,
+      "testo": "sono con certezza, questo è la sposto un attimino che stiamo attenti qui di clicchiamo perfetto."
+    },
+    {
+      "inizio": 432.87,
+      "fine": 436.87,
+      "testo": "Quindi la mia intro andrà alla fine della mia voice, questo è la sposto qui."
+    },
+    {
+      "inizio": 436.87,
+      "fine": 442.87,
+      "testo": "E quindi io so in questo caso specifico, essendo che voi soverano un po' più lento rispetto a me in questo caso perché parlo ad o meno,"
+    },
+    {
+      "inizio": 442.87,
+      "fine": 447.87,
+      "testo": "io aggiunto qualcosa, ma devo aggiungere delle clip, questa parte qui deve essere aggiunta."
+    },
+    {
+      "inizio": 447.87,
+      "fine": 453.87,
+      "testo": "Ora vi faccio vedere però il discorso della intro che mi da l'opportunità di personalizzare ancora di più il video,"
+    },
+    {
+      "inizio": 453.87,
+      "fine": 458.87,
+      "testo": "perché comunque la posso inserire tra due secioni, quindi significa che vado semplicemente allungare il video,"
+    },
+    {
+      "inizio": 458.87,
+      "fine": 467.87,
+      "testo": "ma capito, cambio la lunghezza del video, lo rendo unico perché c'è naturalmente l'intro quindi si capisce e chi ha realizzato il video."
+    },
+    {
+      "inizio": 467.87,
+      "fine": 474.87,
+      "testo": "Oc c'è tutta una serie di fattori che comunque ci dà una grossa mano, anche per il discorso reglamico, b-right, eccetera,"
+    },
+    {
+      "inizio": 474.87,
+      "fine": 479.87,
+      "testo": "ma anche ai occhi delle persone che vengono a guardare il nostro video che vedranno qualcosa comunque di unico."
+    },
+    {
+      "inizio": 479.87,
+      "fine": 482.87,
+      "testo": "E infatti io ho click o play però faccio vedere."
+    },
+    {
+      "inizio": 482.87,
+      "fine": 490.94,
+      "testo": "Nel 1989 Pablo Esco."
+    },
+    {
+      "inizio": 490.94,
+      "fine": 492.94,
+      "testo": "Ok, e quindi poi inizio il video normalmente."
+    },
+    {
+      "inizio": 492.94,
+      "fine": 496.94,
+      "testo": "Ora sto andato all'interno di Google perché vi faccio vedere quello che vado a fare."
+    },
+    {
+      "inizio": 496.94,
+      "fine": 502.94,
+      "testo": "Io voglio magari modificare alcune clip del video giusto, quindi le voglio rimuovere, le voglio sostituire con altre."
+    },
+    {
+      "inizio": 502.94,
+      "fine": 504.94,
+      "testo": "E voglio aggiungere ne quando c'è bisogno di aggiungere."
+    },
+    {
+      "inizio": 504.94,
+      "fine": 512.94,
+      "testo": "Allora io vado su Google Immagini per esempio scrivo Pablo Escobar, vado a inserire naturalmente la licenza come abbiamo già fatto vedere all'interno"
+    },
+    {
+      "inizio": 512.94,
+      "fine": 515.94,
+      "testo": "e del corso e posso utilizzare queste immagini qui."
+    },
+    {
+      "inizio": 515.94,
+      "fine": 521.94,
+      "testo": "Vado all'interno di Envato Elements, ho scritto Pablo Escobar ed ecco che mi apparsa questa prigione colombiana,"
+    },
+    {
+      "inizio": 521.94,
+      "fine": 529.94,
+      "testo": "poi qui ho dei video relative in arcos, ok, qui ho dei video relative alla colombia e qui ho le foto relative alla colombia."
+    },
+    {
+      "inizio": 529.94,
+      "fine": 532.94,
+      "testo": "Quindi io andrò a selezionare tra foto e video tutto quello che posso utilizzare."
+    },
+    {
+      "inizio": 532.94,
+      "fine": 539.94,
+      "testo": "Non copirai ti portante quando utilizziamo dei video come questi, ok, che li prendiamo e sono già belli che fatti."
+    },
+    {
+      "inizio": 539.94,
+      "fine": 542.94,
+      "testo": "Cerchiamo se è possibile di utilizzare clip no copirati."
+    },
+    {
+      "inizio": 542.94,
+      "fine": 548.94,
+      "testo": "Poi attenzione possiamo anche utilizzare clip come vi abbiamo già fatto vedere all'interno del corso con il copyright,"
+    },
+    {
+      "inizio": 548.94,
+      "fine": 554.94,
+      "testo": "magari di un film, magari della serie di Budi Narcos che dura no meno di 5 secondi in questo caso specifico,"
+    },
+    {
+      "inizio": 554.94,
+      "fine": 557.94,
+      "testo": "dato che stiamo andando ai di daro video su Pablo Escobar."
+    },
+    {
+      "inizio": 557.94,
+      "fine": 563.94,
+      "testo": "Però comunque se è possibile facciamo in questa maniera visto che comunque il video è già pronto e dobbiamo solo aggiungere alcune cose."
+    },
+    {
+      "inizio": 563.94,
+      "fine": 570.94,
+      "testo": "Quindi eccoci tornati qui su Premiere Pro, ho importato un po' di clip video e immagini, vediamo l'attivina al volo,"
+    },
+    {
+      "inizio": 570.94,
+      "fine": 575.94,
+      "testo": "quindi riascoltiamo e cerchiamo di capire come possiamo inserire le nostre clip e le nostre immagini."
+    },
+    {
+      "inizio": 575.94,
+      "fine": 580.94,
+      "testo": "L'entro la propietà abandonata di Pablo Escobar da 10 milioni di dollari."
+    },
+    {
+      "inizio": 580.94,
+      "fine": 584.94,
+      "testo": "Queste in metalità milionaria, in oggi il nostro mento e il milionario ci mostrerà come."
+    },
+    {
+      "inizio": 584.94,
+      "fine": 589.94,
+      "testo": "Ok, perfettissimo, allora intanto possiamo mettere una foto di Pablo Escobar."
+    },
+    {
+      "inizio": 589.94,
+      "fine": 591.94,
+      "testo": "Vediamo questa qui."
+    },
+    {
+      "inizio": 591.94,
+      "fine": 593.94,
+      "testo": "Ok, queste è ottima."
+    },
+    {
+      "inizio": 593.94,
+      "fine": 597.94,
+      "testo": "E quindi per esempio possiamo mettere questa, possiamo ingrandirla."
+    },
+    {
+      "inizio": 597.94,
+      "fine": 602.43,
+      "testo": "Vediamo ancora un po'."
+    },
+    {
+      "inizio": 602.43,
+      "fine": 611.43,
+      "testo": "Alto comunque è una foto un po' vecchia, quindi possiamo anche fare di fare questo movimento così dal basso verso l'alto."
+    },
+    {
+      "inizio": 611.43,
+      "fine": 613.43,
+      "testo": "Quindi facciamo così guardate, allora andiamo qui."
+    },
+    {
+      "inizio": 613.43,
+      "fine": 615.43,
+      "testo": "Eccoci, perfetto."
+    },
+    {
+      "inizio": 616.43,
+      "fine": 618.43,
+      "testo": "E li facciamo fare questo movimento."
+    },
+    {
+      "inizio": 618.43,
+      "fine": 622.81,
+      "testo": "La ripicceriamo un po', si mettiamo altre foto."
+    },
+    {
+      "inizio": 622.81,
+      "fine": 623.81,
+      "testo": "E io foro questo."
+    },
+    {
+      "inizio": 623.81,
+      "fine": 625.81,
+      "testo": "Allora, vado qui."
+    },
+    {
+      "inizio": 625.81,
+      "fine": 627.81,
+      "testo": "Clicco su Scala."
+    },
+    {
+      "inizio": 627.81,
+      "fine": 628.81,
+      "testo": "Ecco qua."
+    },
+    {
+      "inizio": 628.81,
+      "fine": 631.81,
+      "testo": "Una volta è cliccato su Scala che cosa va da fare?"
+    },
+    {
+      "inizio": 631.81,
+      "fine": 633.81,
+      "testo": "Vado? Anzi no."
+    },
+    {
+      "inizio": 633.81,
+      "fine": 636.81,
+      "testo": "Non facciamo Scala, ma facciamo gli fare il movimento."
+    },
+    {
+      "inizio": 636.81,
+      "fine": 637.81,
+      "testo": "Quindi clicco su posizione."
+    },
+    {
+      "inizio": 637.81,
+      "fine": 642.81,
+      "testo": "Ok, così, comunque, come potete vedere inserisco all'interno della foto."
+    },
+    {
+      "inizio": 642.81,
+      "fine": 645.81,
+      "testo": "La partenza, quindi dovete parte alla posizione della foto."
+    },
+    {
+      "inizio": 645.81,
+      "fine": 647.81,
+      "testo": "Ok, poi vado alla fine."
+    },
+    {
+      "inizio": 647.81,
+      "fine": 648.81,
+      "testo": "La partiamo alla fine."
+    },
+    {
+      "inizio": 648.81,
+      "fine": 649.81,
+      "testo": "Eccoci qui."
+    },
+    {
+      "inizio": 652.81,
+      "fine": 656.81,
+      "testo": "E la posizione la spostiamo, quindi vi basso semplicemente spostarla verso l'alto."
+    },
+    {
+      "inizio": 656.81,
+      "fine": 659.81,
+      "testo": "Ora, ritorno indietro su sbaglio verso l'alto."
+    },
+    {
+      "inizio": 659.81,
+      "fine": 660.81,
+      "testo": "Ecco qui."
+    },
+    {
+      "inizio": 660.81,
+      "fine": 661.81,
+      "testo": "Ecco qua da verso così."
+    },
+    {
+      "inizio": 661.81,
+      "fine": 663.81,
+      "testo": "Ok, vediamo attivo in assieme alla clip."
+    },
+    {
+      "inizio": 663.81,
+      "fine": 668.81,
+      "testo": "Anaria, oggi il nostro mento e il milionario ci mostrerà come il noto traficante."
+    },
+    {
+      "inizio": 668.81,
+      "fine": 673.81,
+      "testo": "Ok, quindi l'abbiamo fatta, poi possiamo mettere per esempio il video."
+    },
+    {
+      "inizio": 673.81,
+      "fine": 678.81,
+      "testo": "Vediamo se c'è il video volombiano."
+    },
+    {
+      "inizio": 678.81,
+      "fine": 683.81,
+      "testo": "C'è quello relativo a questo qui perfettissimo."
+    },
+    {
+      "inizio": 683.81,
+      "fine": 685.81,
+      "testo": "Quindi possiamo mettere qui."
+    },
+    {
+      "inizio": 685.81,
+      "fine": 688.81,
+      "testo": "Lo piaziamo qui."
+    },
+    {
+      "inizio": 688.81,
+      "fine": 690.81,
+      "testo": "Questo qui, mettiamo qui."
+    },
+    {
+      "inizio": 690.81,
+      "fine": 694.22,
+      "testo": "Ok, possiamo vedere assieme, vediamo."
+    },
+    {
+      "inizio": 694.22,
+      "fine": 698.22,
+      "testo": "Oto traficante, colombiano, guadagnava e spendeva."
+    },
+    {
+      "inizio": 698.22,
+      "fine": 703.91,
+      "testo": "Quindi possiamo mettere la bandera dell'America e della colombia."
+    },
+    {
+      "inizio": 704.91,
+      "fine": 705.91,
+      "testo": "Chiudiamo?"
+    },
+    {
+      "inizio": 705.91,
+      "fine": 706.91,
+      "testo": "Ecco qui."
+    },
+    {
+      "inizio": 706.91,
+      "fine": 708.91,
+      "testo": "Quindi possiamo anche utilizzare queste tre."
+    },
+    {
+      "inizio": 708.91,
+      "fine": 711.91,
+      "testo": "Possiamo anche utilizzare le altre, possiamo modificarle così via."
+    },
+    {
+      "inizio": 711.91,
+      "fine": 713.91,
+      "testo": "Però comunque la facciamo così."
+    },
+    {
+      "inizio": 713.91,
+      "fine": 716.91,
+      "testo": "Il suo patrimonio da 30 miliardi di dollar."
+    },
+    {
+      "inizio": 716.91,
+      "fine": 719.91,
+      "testo": "Ok, qui possiamo mettere per esempio un testo."
+    },
+    {
+      "inizio": 719.91,
+      "fine": 722.91,
+      "testo": "Quindi andiamo a inserire un testo che possa apparire."
+    },
+    {
+      "inizio": 722.91,
+      "fine": 726.91,
+      "testo": "Vediamo tra questi qui, selezioniamo l'assieme."
+    },
+    {
+      "inizio": 726.91,
+      "fine": 728.91,
+      "testo": "C'è questo."
+    },
+    {
+      "inizio": 728.91,
+      "fine": 729.91,
+      "testo": "Ecco qui."
+    },
+    {
+      "inizio": 729.91,
+      "fine": 731.91,
+      "testo": "Io lo mettiamo qui."
+    },
+    {
+      "inizio": 731.91,
+      "fine": 735.32,
+      "testo": "O spostiamolo qui."
+    },
+    {
+      "inizio": 735.32,
+      "fine": 737.32,
+      "testo": "Atteniamo che cari un po' di tutto."
+    },
+    {
+      "inizio": 737.32,
+      "fine": 738.32,
+      "testo": "Ecco, io questo."
+    }
+  ]
+}
