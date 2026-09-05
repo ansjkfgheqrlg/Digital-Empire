@@ -1,3 +1,39 @@
+## 🚀 2026-09-05 — ECOSISTEMA LANCI: il piano passa alla VERSIONE 4 (EMP-URQ7)
+
+**Ordine di Max:** revisione totale e riscrittura — *"l'architettura deve essere molto piu'
+architettata, a livello chirurgico"*. Era la **seconda volta** che lo chiedeva: la v3 non aveva
+soddisfatto la richiesta.
+
+**La v3 e' stata demolita da quattro revisori indipendenti:** oltre **50 difetti sostanziali,
+12 fatali**. I nove rapporti sono conservati in `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/_critica-v3/`.
+
+**I due fatti che hanno cambiato tutto**, che nessuno degli 11 dossier della v3 conosceva:
+1. **L'azienda non puo' incassare un euro** — nessun canale di pagamento attivo.
+2. **Il canale di traffico del Manuale e' spento dal 29/07/2026.**
+La v3 progettava 12 reparti e 50 agenti sopra quei due fatti, senza nominarli.
+
+**La versione 4:** 7 documenti + `dati/`. Il centro non e' piu' il reparto ma **l'artefatto** —
+13 artefatti tipizzati con schema, 14 controlli con criterio eseguibile e test rosso, 15 agenti
+(non 41-50: la tassa per invocazione e' 0,08-0,11 $, ADR-014), 12 stati, 6 punti umani con
+scadenza, 10 invarianti. **La fonte di verita' e' `dati/registro.yaml`, validata da un programma**
+(`valida_registro.py`: 253 controlli, esce 0). Se un documento contraddice il registro, ha torto
+il documento.
+
+**Il primo giorno e' cambiato:** non "crea la cartella" ma **incassa un euro vero e rimborsalo**.
+I primi due scaglioni non contengono una riga di codice. Costruzione: 6 scaglioni, 118-174 ore.
+
+**⚠️ CONFLITTO INTERCETTATO:** il numero **ADR-022 e' stato preso alle 19:30 da un'altra sessione**
+(studio AI TUBE PRO, gia' ACCETTATA). L'ADR dei LANCI e' ora il **023**, rinumerato ovunque nello
+stesso turno.
+
+**Cosa aspetta Max — 4 decisioni, le prime due chiudibili in dieci minuti:**
+1. **Il Manuale si vende o e' un regalo?** (ferma da 6 mesi; ora ha default reversibile a 7 giorni)
+2. **Sostituire la chiave di posta esposta** (B-020, cresce ogni giorno)
+3. Approvare l'**ADR-023** (senza, la cartella dell'ecosistema non puo' nascere: ADR-009)
+4. Riaprire o no **ADR-019** sul motore di orchestrazione
+
+Dettagli: [CP-20260905-017](checkpoints/CP-20260905-017.md) · ripresa [EMP-URQ7](riprese/EMP-URQ7.md).
+
 ## 📕 2026-09-05 — Lo studio AI TUBE PRO si chiude con un'opera pubblica — ADR-022
 
 **Codice di ripresa: EMP-V6DE (APERTO).** Ordine di Max: la missione di studio delle 167 lezioni
@@ -12,7 +48,25 @@ piano §16 e nella ripresa [EMP-V6DE](riprese/EMP-V6DE.md) §4-bis. **Finché ma
 la missione è aperta.** Stato studio: 4/167 lezioni (2,4%), A4 al 19,0%; L04 in lavorazione
 (parlato letto, 19 frame guardati), fermo sul via di Max.
 
-## 🟠 2026-09-05 — Gate meccanico sul battito dopo la 5a caduta nello stesso giorno — CP-20260905-017
+## 🟠 2026-09-05 (sera) — Il battito ora è sorvegliato da una macchina, non dalla mia memoria — CP-20260905-018
+
+**Codice di ripresa: EMP-YZGE (chiuso).** Max ha chiesto: *«hai risolto il problema in modo
+definitivo?»* — e la risposta onesta era **no**. Il controllo del pomeriggio
+(`verifica_recap.py`) andava **lanciato a mano**: l'obbligo era di nuovo una riga scritta in
+dottrina, cioè la stessa categoria di regola già ceduta cinque volte quel giorno. Costruito
+`scripts/gate_battito_hook.py`, **hook Stop** registrato in `.claude/settings.json`: legge ogni
+messaggio in uscita e **blocca la consegna** se il battito è fuori forma. Provato 6/6
+(`scripts/test_gate_battito.py`), inclusi i casi limite — esempi dentro ``` non bloccano,
+anti-loop su `stop_hook_active`, mai rottura del turno. Il gate copre la **forma**; contenuto,
+percentuale vera e parole semplici restano §3. Dettagli in
+[CP-20260905-018](checkpoints/CP-20260905-018.md).
+
+⚠️ **Puntatore corretto:** la voce sotto citava `CP-20260905-017`, che **un'altra sessione ha
+sovrascritto** col piano LANCI v4 (numerazione progressiva di `empire mem write` che collide fra
+chat parallele — stesso difetto già chiuso in `scripts/checkpoint.py` con `fe35ab17`, non ancora
+in `mem write`). Il contenuto originale di quel checkpoint vive in `riprese/EMP-YZGE.md`.
+
+## 🟠 2026-09-05 — Gate meccanico sul battito dopo la 5a caduta nello stesso giorno — [EMP-YZGE](riprese/EMP-YZGE.md)
 
 **Codice di ripresa: EMP-YZGE (chiuso).** Max: il recap era uscito fuori forma almeno 4 volte
 nello stesso giorno nonostante la forma fissa scritta carattere per carattere in `emperator.md`

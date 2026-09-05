@@ -139,6 +139,16 @@
         "hooks": [
           {
             "type": "command",
+            "command": "py -3 scripts/gate_battito_hook.py",
+            "timeout": 15,
+            "statusMessage": "EMPERATOR — controllo del battito..."
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
             "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode push",
             "timeout": 120
           }

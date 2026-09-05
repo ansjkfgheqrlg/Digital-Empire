@@ -656,6 +656,44 @@ caduta è registrata anche in `company/Ispettorato/registro/REGISTRO-ERRORI.md` 
 `ERR-20260905-001` — è esattamente la recidiva cross-cutting che `WF-RECIDIVA-GATE` esiste per
 bloccare, e da oggi passa da lì anche quando l'errore lo faccio io.
 
+**IL GATE CHE SCATTA DA SOLO — la domanda di Max che ha chiuso il cerchio** *(2026-09-05, sera)*.
+
+> ⚠️ **Il controllo di poche ore prima non era definitivo, e Max l'ha capito prima di me.**
+> Costruito `verifica_recap.py`, ho riferito il lavoro come chiuso. Max ha chiesto una cosa
+> sola: *«hai risolto il problema in modo definitivo?»* — e la risposta onesta era **no**.
+> Lo strumento c'era, ma **l'ordine di usarlo era di nuovo una riga scritta in dottrina**:
+> esattamente la stessa categoria di regola che aveva già ceduto cinque volte quel giorno.
+> Uno strumento che dipende dal fatto che io mi ricordi di lanciarlo non è un gate: è un
+> promemoria con un eseguibile accanto.
+>
+> **La lezione, la più dura delle sei:** quando una regola cede per la quinta volta, non basta
+> costruire lo strumento che la verifica — bisogna togliere a me stesso la possibilità di
+> saltarlo. Finché l'ultimo anello della catena è la mia memoria, la catena ha un anello di
+> memoria.
+
+`scripts/gate_battito_hook.py` — hook **Stop**, registrato in `.claude/settings.json` accanto
+al sync. Gira **a ogni fine turno**, legge il messaggio che sto per consegnare, e se contiene un
+battito fuori forma **blocca la consegna** e mi ordina di riscriverlo. Non devo ricordarmi
+niente: se sbaglio, non parte.
+
+| Cosa fa | Perché è costruito così |
+|---|---|
+| valida solo se il messaggio **contiene** un battito | non si impone un battito dove non serve (§6.11: sui lavori corti sarebbe rumore) |
+| ignora le righe dentro ``` , dopo `>` o indentate | sono **esempi** — dottrina, spiegazioni, documentazione. Senza questa protezione mi bloccherei da solo ogni volta che scrivo del battito |
+| controlla anche la **posizione** (in cima) | la posizione è parte della regola, ed è stata la prima delle cinque cadute |
+| si arrende se `stop_hook_active` | un gate che intrappola la sessione in un loop è peggio del difetto che sorveglia |
+| qualunque errore → esce 0 in silenzio | un hook non fa mai fallire il turno di Max (lezione degli hook globali del 2026-08-31) |
+| importa lo schema da `verifica_recap.py` | **una sola fonte di verità della forma**: due copie da tenere allineate sarebbero la doppia scrittura di §6.13, tornata sotto altro nome |
+
+Provato per esecuzione su sei casi, non dichiarato: `py -3 scripts/test_gate_battito.py` →
+**6/6**, inclusi i due che contano davvero (esempio in blocco di codice → passa; battito giusto
+ma messo dopo la prosa → blocca).
+
+**Cosa resta mio, e non lo copre nessuna macchina:** il gate garantisce la **forma**, mai il
+**contenuto**. Che la percentuale sia vera, che le forze siano contate davvero, che il potere
+non sia inventato, che le parole siano semplici (§6.11) — quello resta la Legge Suprema (§3),
+e nessun hook può verificarlo al posto mio.
+
 **LA RIGA `Assetto` È OBBLIGATORIA IN OGNI BATTITO** *(ordine di Max, 2026-09-04)*.
 
 Dice in che modalità stai lavorando **in questo momento**: `GOD EMPEROR DOOM` oppure
