@@ -9030,3 +9030,19 @@ per uno con ffprobe:
   non riuscito, da rilanciare.
 
 Il blocco ⚠️ COORDINAMENTO più sopra **resta valido**: il perimetro dello studio è ancora mio.
+
+### 2026-09-05 — checkpoint su richiesta di Max, A4/L04 a metà (CP-20260905-010)
+
+Lavoro ripreso dopo la pausa. **A4/L04 «Editing Video Automatico con AI All in One» in corso**:
+è la lezione su **Fliki**, cioè sul motore che la fabbrica usa davvero. Materiale pronto e
+verificato (1.834 s dichiarati = misurati, 4.190 parole lette per intero, 367 schermate → 112
+diverse); appunti, report e regole **non ancora scritti**. Nessun frame ancora guardato.
+
+**Domanda aperta che vale più di tutto il resto della lezione:** la fabbrica ha dichiarato per
+iscritto un difetto — le clip stock a volte fuori target anagrafico — chiudendolo con «l'API non
+offre controllo per-scena». La lezione mostra che l'interfaccia una via ce l'ha (**My Library**,
+clip proprie). Va verificato se l'API la espone: se sì, chiude un difetto vero; se no, va scritto
+che la via esiste solo a mano — e allora è una scelta, non un limite.
+
+Nastro rilanciato su A4. Il controllo di durata ha già fermato da solo, in produzione, la lezione
+`1f659f44` (dichiarava 1.122 s, il file ne durava 1.595: lo stesso webinar di vendita di L02).
