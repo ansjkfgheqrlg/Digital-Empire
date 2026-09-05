@@ -313,7 +313,222 @@ def valida(d: dict, cartella_schemi: str) -> Esito:
     senza_gate = id_artefatti - presidiati
     e.verifica("INV-12", not senza_gate, f"artefatti senza nessun gate: {sorted(senza_gate)}")
 
+    # -- Il livello di organizzazione: reparti, gerarchia, workflow ---------
+    valida_organizzazione(d, e, id_artefatti, id_agenti, id_gate, id_stati)
+
     return e
+
+
+def valida_organizzazione(
+    d: dict,
+    e: Esito,
+    id_artefatti: set,
+    id_agenti: set,
+    id_gate: set,
+    id_stati: set,
+) -> None:
+    """Verifica il livello che la versione 3 aveva soltanto in prosa.
+
+    I dodici reparti della versione precedente non hanno superato la revisione
+    per un motivo solo: erano NOMI. Nessuno di essi possedeva un file con uno
+    schema, quindi le sigle divergevano fra documenti senza che nulla se ne
+    accorgesse. Qui reparti, gerarchia, workflow e passaggi sono dati, e queste
+    righe sono cio' che impedisce loro di tornare a essere etichette.
+    """
+    reparti = d.get("reparti", [])
+    workflow = d.get("workflow", [])
+    passaggi = d.get("passaggi", [])
+    comandi = d.get("comandi", [])
+    gerarchia = d.get("gerarchia", {})
+
+    id_reparti = {r["id"] for r in reparti}
+    per_id_reparto = {r["id"]: r for r in reparti}
+    id_livelli = {l["id"] for l in gerarchia.get("livelli", [])}
+    id_punti = {p["id"] for p in d.get("punti_umani", [])}
+
+    # -- INV-13 ------------------------------------------------------------
+    # Un reparto esiste se possiede un artefatto. Altrimenti e' un titolo.
+    proprietario: dict[str, list[str]] = {}
+    for r in reparti:
+        for art in r.get("possiede", []):
+            proprietario.setdefault(art, []).append(r["id"])
+        if r.get("tipo") == "operativo":
+            e.verifica(
+                "INV-13",
+                bool(r.get("possiede")),
+                f"{r['id']}: reparto operativo che non possiede nessun artefatto",
+            )
+    for art, propr in proprietario.items():
+        e.verifica(
+            "INV-13",
+            art in id_artefatti,
+            f"un reparto possiede {art}, che non e' un artefatto",
+        )
+        e.verifica(
+            "INV-13",
+            len(propr) == 1,
+            f"{art}: posseduto da piu' reparti ({', '.join(propr)})",
+        )
+    orfani = id_artefatti - set(proprietario)
+    e.verifica("INV-13", not orfani, f"artefatti senza reparto proprietario: {sorted(orfani)}")
+
+    # -- INV-14 ------------------------------------------------------------
+    # Ogni agente ha un reparto, ogni reparto ha un capo che gli appartiene.
+    di_chi: dict[str, list[str]] = {}
+    for r in reparti:
+        for ag in r.get("agenti", []):
+            di_chi.setdefault(ag, []).append(r["id"])
+            e.verifica("INV-14", ag in id_agenti, f"{r['id']}: cita l'agente {ag}, che non esiste")
+        capo = r.get("capo")
+        e.verifica("INV-14", bool(capo), f"{r['id']}: nessun capo dichiarato")
+        if capo:
+            e.verifica(
+                "INV-14",
+                capo in r.get("agenti", []),
+                f"{r['id']}: il capo {capo} non e' fra gli agenti del reparto",
+            )
+    for ag, rep in di_chi.items():
+        e.verifica("INV-14", len(rep) == 1, f"{ag}: appartiene a piu' reparti ({', '.join(rep)})")
+    senza_reparto = id_agenti - set(di_chi)
+    e.verifica("INV-14", not senza_reparto, f"agenti senza reparto: {sorted(senza_reparto)}")
+
+    # -- INV-15 ------------------------------------------------------------
+    # Un anello nella catena di comando significa che nessuno decide.
+    for r in reparti:
+        visti = [r["id"]]
+        corrente = r.get("risponde_a")
+        while corrente:
+            if corrente in visti:
+                e.verifica("INV-15", False, f"ciclo di comando: {' -> '.join(visti + [corrente])}")
+                break
+            if corrente not in id_reparti:
+                e.verifica("INV-15", False, f"{visti[-1]}: risponde a {corrente}, che non e' un reparto")
+                break
+            visti.append(corrente)
+            corrente = per_id_reparto[corrente].get("risponde_a")
+
+    # -- INV-16 ------------------------------------------------------------
+    # Il giudice non risponde a chi giudica. E' il gemello gerarchico di INV-09:
+    # quello gli toglie la penna, questo gli toglie il padrone.
+    for r in reparti:
+        if r.get("tipo") != "governo" or not r.get("capo"):
+            continue
+        giudica = any(a.get("giudice") == r["capo"] for a in d.get("artefatti", []))
+        if not giudica:
+            continue
+        sopra = r.get("risponde_a")
+        e.verifica(
+            "INV-16",
+            sopra is None or per_id_reparto.get(sopra, {}).get("tipo") == "governo",
+            f"{r['id']} giudica gli artefatti ma risponde a {sopra}, che e' un reparto operativo",
+        )
+
+    # -- INV-17 ------------------------------------------------------------
+    # Un artefatto senza workflow e' un file che nessuno sa come si fa.
+    prodotto_da: dict[str, list[str]] = {}
+    for w in workflow:
+        e.verifica(
+            "INV-17",
+            w.get("reparto") in id_reparti,
+            f"{w['id']}: appartiene al reparto {w.get('reparto')}, che non esiste",
+        )
+        for art in w.get("produce", []):
+            prodotto_da.setdefault(art, []).append(w["id"])
+            e.verifica("INV-17", art in id_artefatti, f"{w['id']}: produce {art}, che non e' un artefatto")
+        for g in w.get("gate_finale", []):
+            e.verifica("INV-17", g in id_gate, f"{w['id']}: cita il gate {g}, che non esiste")
+        for campo in ("stato_da", "stato_a"):
+            val = w.get(campo)
+            e.verifica("INV-17", val in id_stati, f"{w['id']}: {campo}={val} non e' uno stato")
+    for art, wf in prodotto_da.items():
+        e.verifica("INV-17", len(wf) == 1, f"{art}: prodotto da piu' workflow ({', '.join(wf)})")
+    senza_wf = id_artefatti - set(prodotto_da)
+    e.verifica("INV-17", not senza_wf, f"artefatti che nessun workflow produce: {sorted(senza_wf)}")
+
+    # -- INV-18 e INV-19 ---------------------------------------------------
+    # Una fase senza criterio di uscita non finisce: smette quando qualcuno si
+    # stanca. E una fase eseguita da un agente di un altro reparto senza dirlo
+    # e' il modo in cui le responsabilita' evaporano.
+    for w in workflow:
+        rep = per_id_reparto.get(w.get("reparto"), {})
+        agenti_reparto = set(rep.get("agenti", []))
+        e.verifica("INV-18", bool(w.get("fasi")), f"{w['id']}: nessuna fase")
+        for f in w.get("fasi", []):
+            eti = f"{w['id']}/{f.get('id', '?')}"
+            for campo in ("nome", "agente", "ingresso", "uscita", "criterio_uscita"):
+                e.verifica("INV-18", bool(f.get(campo)), f"{eti}: manca il campo {campo}")
+            ag = f.get("agente")
+            if ag:
+                e.verifica("INV-18", ag in id_agenti, f"{eti}: agente {ag} inesistente")
+            e.verifica(
+                "INV-18",
+                bool(f.get("modi_fallimento")),
+                f"{eti}: nessun modo di fallimento dichiarato",
+            )
+            pu = f.get("punto_umano")
+            if pu:
+                e.verifica("INV-18", pu in id_punti, f"{eti}: punto umano {pu} inesistente")
+            ospite = f.get("reparto_ospite")
+            if ag and ag not in agenti_reparto:
+                e.verifica(
+                    "INV-19",
+                    bool(ospite) and ospite in id_reparti,
+                    f"{eti}: l'agente {ag} non e' del reparto {w.get('reparto')} e la fase non dichiara reparto_ospite valido",
+                )
+
+    # -- INV-20 ------------------------------------------------------------
+    # Un passaggio senza criterio di accettazione e' una speranza.
+    for p in passaggi:
+        eti = f"passaggio {p.get('da')} -> {p.get('a')}"
+        if p.get("esterno"):
+            continue
+        for campo in ("da", "a"):
+            e.verifica(
+                "INV-20",
+                p.get(campo) in id_reparti,
+                f"{eti}: {campo}={p.get(campo)} non e' un reparto",
+            )
+        e.verifica(
+            "INV-20",
+            p.get("passa") in id_artefatti,
+            f"{eti}: passa {p.get('passa')}, che non e' un artefatto",
+        )
+        e.verifica(
+            "INV-20",
+            bool(p.get("criterio_accettazione")),
+            f"{eti}: nessun criterio di accettazione",
+        )
+        e.verifica("INV-20", bool(p.get("se_rifiutato")), f"{eti}: non dice cosa succede se rifiutato")
+
+    # -- I comandi citano livelli che esistono -----------------------------
+    for c in comandi:
+        for liv in c.get("invocabile_da", []):
+            e.verifica(
+                "INV-21",
+                liv in id_livelli,
+                f"comando '{c.get('nome')}': invocabile da {liv}, che non e' un livello",
+            )
+
+    # -- INV-22 ------------------------------------------------------------
+    # Il campo `produce` dell'agente deve coincidere con gli artefatti di cui e'
+    # davvero il produttore. Trovato da una prova rossa mal costruita, il
+    # 2026-09-05: la prova aveva alterato il `produce` di un agente invece di
+    # quello di un workflow, e NESSUN controllo se n'era accorto. Era la stessa
+    # famiglia di difetto che questo registro esiste per impedire: due punti che
+    # dicono la stessa cosa e possono divergere in silenzio.
+    dichiarato: dict[str, set] = {}
+    for a in d.get("agenti", []):
+        dichiarato[a["id"]] = {x for x in a.get("produce", []) if str(x).startswith("ART-")}
+    reale: dict[str, set] = {}
+    for a in d.get("artefatti", []):
+        reale.setdefault(a["produttore"], set()).add(a["id"])
+    for ag, dich in dichiarato.items():
+        vero = reale.get(ag, set())
+        e.verifica(
+            "INV-22",
+            dich == vero,
+            f"{ag}: dichiara di produrre {sorted(dich) or 'niente'} ma e' produttore di {sorted(vero) or 'niente'}",
+        )
 
 
 def main() -> int:
@@ -325,10 +540,15 @@ def main() -> int:
     d = carica(args.registro)
     e = valida(d, args.schemi)
 
+    fasi = sum(len(w.get("fasi", [])) for w in d.get("workflow", []))
     print(f"registro   : {args.registro}")
     print(f"artefatti  : {len(d.get('artefatti', []))}")
     print(f"gate       : {len(d.get('gate', []))}")
     print(f"agenti     : {len(d.get('agenti', []))}")
+    print(f"reparti    : {len(d.get('reparti', []))}")
+    print(f"workflow   : {len(d.get('workflow', []))}  ({fasi} fasi)")
+    print(f"passaggi   : {len(d.get('passaggi', []))}")
+    print(f"comandi    : {len(d.get('comandi', []))}")
     print(f"controlli  : {e.controlli_eseguiti}")
     print()
 

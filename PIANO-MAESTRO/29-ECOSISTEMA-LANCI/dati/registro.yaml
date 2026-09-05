@@ -816,6 +816,23 @@ invarianti:
       un passaggio senza criterio di accettazione e' una speranza: chi riceve
       scopre che manca qualcosa quando e' gia' al lavoro, e torna indietro.
 
+  - id: "INV-21"
+    dice: "ogni comando dichiara da quale livello della gerarchia puo' essere invocato, e quel livello esiste"
+    perche: >-
+      un comando che chiunque puo' invocare e' un comando senza responsabile.
+      Vale soprattutto per i tre che impegnano cose irreversibili: la firma sul
+      prezzo, il via libera all'apertura, l'abbandono di un lancio.
+
+  - id: "INV-22"
+    dice: "il campo produce di ogni agente coincide con gli artefatti di cui e' davvero il produttore"
+    perche: >-
+      trovato da una prova rossa mal costruita il 2026-09-05: la prova aveva
+      alterato il campo produce di un agente invece di quello di un workflow, e
+      NESSUN controllo se n'era accorto. Sono due punti che dicono la stessa cosa
+      e potevano divergere in silenzio — cioe' esattamente la famiglia di difetto
+      per cui questo registro esiste. L'errore di una prova ha trovato un buco
+      vero: e' la ragione per cui le prove rosse si fanno.
+
 # =============================================================================
 # 9. I REPARTI — organi veri, ancorati agli artefatti che possiedono
 # =============================================================================
@@ -1072,3 +1089,808 @@ gerarchia:
       perche: "INV-19: le responsabilita' evaporano quando il lavoro attraversa i confini in silenzio"
     - regola: "solo L0 autorizza cio' che e' irreversibile verso l'esterno"
       perche: "un'email spedita non si richiama, una vendita aperta non si chiude in silenzio"
+
+# =============================================================================
+# 11. I WORKFLOW — come si svolge il lavoro, fase per fase
+# =============================================================================
+# IL DIFETTO CHE RIPARANO. La versione precedente aveva sette flussi, e i
+# revisori li hanno smontati tutti per lo stesso motivo: fasi senza agente, fasi
+# senza criterio di uscita, e un flusso (il funnel) che non aveva ne' l'uno ne'
+# l'altro. Un elenco di buone intenzioni in ordine cronologico non e' un
+# workflow: e' un promemoria.
+#
+# Qui ogni fase dichiara, obbligatoriamente:
+#   agente            chi la esegue — e deve appartenere al reparto (INV-19)
+#   ingresso          cosa deve esistere prima, o la fase non parte
+#   uscita            cosa lascia sul disco quando finisce
+#   criterio_uscita   il predicato che dice che e' finita. Non "quando e' pronta"
+#   modi_fallimento   come puo' andare storta, e cosa si fa
+#
+# La differenza fra "fase" e "gate": la fase PRODUCE, il gate GIUDICA. Nessun
+# workflow contiene il proprio gate fra le fasi, perche' un flusso che si
+# autogiudica non e' giudicato (INV-01).
+workflow:
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-MERCATO"
+    reparto: "LAN-MER"
+    produce: ["ART-PUB", "ART-RIC"]
+    innesco: "un lancio entra in IDEA"
+    stato_da: "IDEA"
+    stato_a: "VALUTATO"
+    gate_finale: ["GATE-PUB-1", "GATE-INT-1"]
+    durata_stimata_h: "3-6"
+    perche_e_il_primo: >-
+      perche' il piano precedente progettava il lancio di un prodotto il cui
+      canale di traffico era spento da cinque settimane, e non lo sapeva. Prima
+      di ogni altra cosa si conta chi c'e' davvero.
+    fasi:
+      - id: "ME-1"
+        nome: "censimento dei canali"
+        agente: "lan-pub-censore"
+        ingresso: "l'elenco dei canali dell'azienda"
+        uscita: "pubblico.json, sezione canali[], una riga per canale"
+        criterio_uscita: "ogni canale noto compare, anche quelli a zero"
+        modi_fallimento:
+          - caso: "un canale non e' accessibile"
+            allora: "si scrive raggiungibili_verificati=0 con prova.tipo=null e il motivo"
+
+      - id: "ME-2"
+        nome: "prova di ogni numero"
+        agente: "lan-pub-censore"
+        ingresso: "pubblico.json con i canali elencati"
+        uscita: "ogni canale con prova.tipo e prova.data"
+        criterio_uscita: >-
+          ogni canale con raggiungibili_verificati>0 ha una prova fra
+          esporto-lista, schermata-conteggio-piattaforma, misura-analytics, con
+          data non anteriore a 30 giorni
+        modi_fallimento:
+          - caso: "il numero e' noto ma la prova non e' recuperabile"
+            allora: "il canale vale zero. E' legittimo scrivere che non si sa; non lo e' contare cio' che non si sa"
+
+      - id: "ME-3"
+        nome: "verifica dei canali morti"
+        agente: "lan-pub-censore"
+        ingresso: "i canali dichiarati attivi"
+        uscita: "campo stato_canale per ognuno"
+        criterio_uscita: "ogni canale attivo ha una attivita' registrata negli ultimi 90 giorni, oppure e' marcato dormiente"
+        modi_fallimento:
+          - caso: "il canale e' stato dirottato su un altro progetto"
+            allora: "vale zero e la cosa entra nel verbale. E' esattamente cio' che e' successo al canale del Manuale il 29/07/2026"
+
+      - id: "ME-4"
+        nome: "raccolta delle parole vere"
+        agente: "lan-int-analista"
+        ingresso: "il prodotto e il pubblico censito"
+        uscita: "ricerca.json, sezione frasi[]"
+        criterio_uscita: "almeno 15 frasi, ognuna con fonte.url"
+        modi_fallimento:
+          - caso: "non si arriva a 15 frasi con fonte"
+            allora: "si consegna quello che c'e' e il gate blocca: meglio un blocco visibile di quindici frasi inventate"
+
+      - id: "ME-5"
+        nome: "buchi dei concorrenti"
+        agente: "lan-int-analista"
+        ingresso: "l'elenco dei concorrenti noti"
+        uscita: "ricerca.json, sezione concorrenti[]"
+        criterio_uscita: "ogni concorrente ha almeno un buco dichiarato con la fonte che lo mostra"
+        modi_fallimento:
+          - caso: "nessun concorrente identificabile"
+            allora: "si dichiara e si prosegue: l'assenza di concorrenti e' un dato, spesso cattivo"
+        reparto_ospite: null
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-STRATEGIA"
+    reparto: "LAN-STR"
+    produce: ["ART-DEC"]
+    innesco: "GATE-PUB-1 e' passato"
+    stato_da: "IDEA"
+    stato_a: "VALUTATO"
+    gate_finale: ["GATE-STR-1"]
+    durata_stimata_h: "1-2"
+    fasi:
+      - id: "ST-1"
+        nome: "le cinque domande"
+        agente: "lan-str-filtro"
+        ingresso: "ART-PUB valido, il prodotto proposto"
+        uscita: "decisione.json, sezione domande[]"
+        criterio_uscita: "tutte e cinque hanno risposta si oppure no, e ognuna cita l'artefatto che la sostiene"
+        modi_fallimento:
+          - caso: "una domanda non ha un artefatto che la sostenga"
+            allora: "la risposta e' no. Una risposta senza prova vale come negativa, non come dubbio"
+
+      - id: "ST-2"
+        nome: "confronto con i lanci in coda"
+        agente: "lan-str-filtro"
+        ingresso: "l'elenco dei lanci non chiusi"
+        uscita: "decisione.json, campo perche_questo_e_non_un_altro"
+        criterio_uscita: "il campo nomina almeno un lancio alternativo e dice perche' viene dopo"
+        modi_fallimento:
+          - caso: "non ci sono alternative in coda"
+            allora: "si dichiara: e' il caso normale del primo lancio"
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-PRODOTTO"
+    reparto: "LAN-PRD"
+    produce: ["ART-CRT"]
+    innesco: "il lancio e' VALUTATO"
+    stato_da: "VALUTATO"
+    stato_a: "ISTRUITO"
+    gate_finale: ["GATE-PRD-1"]
+    durata_stimata_h: "2-4 integrale, 1-2 retroattiva"
+    fasi:
+      - id: "PR-1"
+        nome: "scelta della modalita'"
+        agente: "lan-prd-collaudatore"
+        ingresso: "il prodotto e la sua storia"
+        uscita: "certificato.json, campo modalita'"
+        criterio_uscita: "modalita' vale integrale oppure retroattiva, e la scelta e' motivata"
+        modi_fallimento:
+          - caso: "il prodotto e' nato fuori dal sistema e non ha brief"
+            allora: >-
+              modalita' retroattiva. E' il percorso costruito per il Manuale, pronto
+              dal 07/03/2026: senza, il flusso usciva con errore alla prima riga
+              proprio sul prodotto per cui il reparto esiste
+
+      - id: "PR-2"
+        nome: "le sei bandiere rosse"
+        agente: "lan-prd-collaudatore"
+        ingresso: "il file del prodotto"
+        uscita: "certificato.json, sezione bandiere_rosse[]"
+        criterio_uscita: "tutte e sei hanno esito booleano e chi risulta presente ha la prova allegata"
+        modi_fallimento:
+          - caso: "una bandiera e' presente"
+            allora: "il gate blocca e il lancio torna a VALUTATO con l'elenco di cosa manca"
+
+      - id: "PR-3"
+        nome: "prova dei collegamenti"
+        agente: "lan-prd-collaudatore"
+        ingresso: "l'elenco dei collegamenti dentro il prodotto"
+        uscita: "certificato.json, sezione link[] con esito"
+        criterio_uscita: "ogni collegamento e' stato aperto e ha un esito registrato"
+        modi_fallimento:
+          - caso: "un collegamento e' morto"
+            allora: "il gate blocca. La verifica la rifa' il gate, non il produttore"
+
+      - id: "PR-4"
+        nome: "dichiarazione del debito di collaudo"
+        agente: "lan-prd-collaudatore"
+        ingresso: "la modalita' scelta"
+        uscita: "certificato.json, campo debito_collaudo"
+        criterio_uscita: "in modalita' retroattiva il campo elenca cosa non e' stato verificato e perche'"
+        modi_fallimento:
+          - caso: "si e' tentati di lasciarlo vuoto per far passare il gate"
+            allora: "il gate blocca: in retroattiva il debito e' obbligatorio, anche se e' 'nessuno'"
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-OFFERTA"
+    reparto: "LAN-OFF"
+    produce: ["ART-PRV", "ART-OFF"]
+    innesco: "ART-CRT e ART-RIC sono validi"
+    stato_da: "ISTRUITO"
+    stato_a: "DATATO"
+    gate_finale: ["GATE-PRV-1", "GATE-OFF-1"]
+    durata_stimata_h: "3-5 piu' il tempo della firma"
+    e_il_cuore: >-
+      e' il flusso per cui l'intero ecosistema esiste: produce i due numeri che
+      l'azienda non riesce a produrre da sei mesi, un prezzo e una data.
+    fasi:
+      - id: "O1"
+        nome: "il ruolo del prodotto"
+        agente: "lan-off-conductor"
+        ingresso: "ART-CRT valido"
+        uscita: "offerta.json, campo ruolo_prodotto"
+        criterio_uscita: "il campo vale vendita oppure acquisizione-contatti"
+        punto_umano: "PU-RUOLO"
+        modi_fallimento:
+          - caso: "la persona non risponde entro 7 giorni"
+            allora: >-
+              si procede col default vendita, si scrive ruolo_scelto_per_silenzio
+              e la data di revisione, e si avvisa. Il default e' vendita perche' e'
+              la strada da cui si torna indietro
+
+      - id: "O2"
+        nome: "riconciliazione dei prezzi gia' dati"
+        agente: "lan-off-conductor"
+        ingresso: "catalogo prodotti, wiki, listino, piani precedenti"
+        uscita: "offerta.json, sezione prezzi_precedenti_trovati[]"
+        criterio_uscita: "ogni fonte trovata e' nell'elenco con valore e data"
+        modi_fallimento:
+          - caso: "le fonti si contraddicono"
+            allora: >-
+              e' il caso normale: per il Manuale sono quattro valori diversi mai
+              messi sullo stesso tavolo. Si elencano tutte e si dichiara perche' ci
+              si discosta
+
+      - id: "O3"
+        nome: "struttura dell'offerta"
+        agente: "lan-off-conductor"
+        ingresso: "ART-CRT, ART-RIC"
+        uscita: "offerta.json, sezione struttura"
+        criterio_uscita: >-
+          valore_dichiarato e' la somma dei soli bonus con fonte_valore diversa da
+          null piu' il valore del prodotto, la garanzia ha almeno 14 giorni, e
+          l'azione richiesta e' una sola
+        modi_fallimento:
+          - caso: "il rapporto valore/prezzo non raggiunge la soglia"
+            allora: >-
+              NON si aggiungono bonus senza fonte. Un bonus senza fonte vale zero
+              nel calcolo: nella versione precedente il controllo istruiva a gonfiare
+
+      - id: "O4"
+        nome: "alternative di prezzo con il ricavo di ciascuna"
+        agente: "lan-prv-modello"
+        ingresso: "ART-PUB valido, la struttura dell'offerta"
+        uscita: "previsione.json completo, e offerta.json sezione confronto_alternative_prezzo[]"
+        criterio_uscita: >-
+          almeno tre prezzi hanno un ricavo atteso calcolato con la formula
+          dichiarata, i tre scenari esistono, e ogni assunzione ha stato misurato
+          oppure assunto
+        modi_fallimento:
+          - caso: "un tasso e' dichiarato misurato senza fonte"
+            allora: "GATE-PRV-1 blocca. E' il test rosso di quel gate"
+
+      - id: "O5"
+        nome: "la proposta e la firma"
+        agente: "lan-off-conductor"
+        ingresso: "previsione.json valido"
+        uscita: "il testo della proposta, e la sua impronta"
+        criterio_uscita: >-
+          esiste una proposta di cinque righe che dice prezzo, data, ricavo atteso,
+          pareggio e caso pessimista, e ne e' stata calcolata l'impronta
+        punto_umano: "PU-PREZZO"
+        modi_fallimento:
+          - caso: "la persona non risponde entro 14 giorni"
+            allora: >-
+              il lancio va in SOSPESO con la data di revisione e il comando per
+              uscirne. Qui NON c'e' default, ed e' deliberato: un prezzo scelto da
+              una macchina produce un danno che si scopre a lancio finito
+          - caso: "un agente prova a scrivere il campo firma"
+            allora: >-
+              il campo e' rifiutato: nessun agente ha permesso di scrittura su
+              firma, e il canale deve essere in lista chiusa
+
+      - id: "O6"
+        nome: "congelamento"
+        agente: "lan-off-conductor"
+        ingresso: "offerta.json con firma valida"
+        uscita: "data_chiusura calcolata, lancio in DATATO"
+        criterio_uscita: "GATE-OFF-1 esce 0 e la data di chiusura e' coerente con apertura piu' durata"
+        modi_fallimento:
+          - caso: "la proposta e' stata rigenerata dopo la firma"
+            allora: "l'impronta non corrisponde, la firma decade, O5 si riapre"
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-PAROLA"
+    reparto: "LAN-CPY"
+    produce: ["ART-CPY"]
+    innesco: "il lancio e' DATATO: esistono un prezzo e una data firmati"
+    stato_da: "DATATO"
+    stato_a: "IN_PRODUZIONE"
+    gate_finale: ["GATE-CPY-1"]
+    durata_stimata_h: "8-14"
+    perche_dopo_l_offerta: >-
+      perche' ogni testo dice un prezzo e una data. Nella versione precedente i
+      testi si scrivevano prima, e un cambio di prezzo non invalidava niente:
+      restavano online pagine che promettevano un numero diverso da quello vero.
+    fasi:
+      - id: "PA-1"
+        nome: "inventario dei pezzi"
+        agente: "lan-cpy-conductor"
+        ingresso: "ART-OFF firmato, ART-FNL se gia' esiste"
+        uscita: "copy/manifest.json, sezione pezzi[] con destinazione"
+        criterio_uscita: "ogni pezzo ha una destinazione risolvibile e un tipo"
+        modi_fallimento:
+          - caso: "un pezzo non ha destinazione"
+            allora: "non si scrive. Un testo senza posto dove andare e' lavoro buttato"
+
+      - id: "PA-2"
+        nome: "raccolta delle prove"
+        agente: "lan-cpy-conductor"
+        ingresso: "ART-CRT, ART-RIC"
+        uscita: "l'elenco delle affermazioni dimostrabili, con il riferimento"
+        criterio_uscita: "ogni affermazione di categoria prova ha un riferimento risolvibile fuori dal testo stesso"
+        modi_fallimento:
+          - caso: "una prova non esiste"
+            allora: >-
+              l'affermazione si toglie o si declassa a opinione. Non si scrive un
+              numero che non si puo' mostrare: il gate lo risolve contro ART-CRT e
+              ART-RIC, non contro il testo
+
+      - id: "PA-3"
+        nome: "scrittura dei pezzi"
+        agente: "lan-cpy-conductor"
+        ingresso: "inventario e prove"
+        uscita: "i file di testo dentro copy/"
+        criterio_uscita: "ogni pezzo dell'inventario esiste come file non vuoto"
+        modi_fallimento:
+          - caso: "un pezzo richiede una copertina"
+            allora: >-
+              si apre PU-COPERTINA: la copertina la fa Max, la macchina fornisce
+              solo cartella aperta, titolo e due righe di brief. Il pezzo resta in
+              attesa e compare fra cio' che blocca il lancio
+
+      - id: "PA-4"
+        nome: "punteggio"
+        agente: "lan-cpy-conductor"
+        ingresso: "i pezzi scritti"
+        uscita: "copy/manifest.json, punteggio per blocco e totale"
+        criterio_uscita: "ogni pezzo ha un punteggio per blocco calcolato con la griglia dichiarata"
+        modi_fallimento:
+          - caso: "il totale supera 80 ma un blocco sta sotto meta' dei suoi punti"
+            allora: >-
+              il gate blocca lo stesso. E' il test rosso di GATE-CPY-1: una media
+              buona nasconde un pezzo rotto
+
+      - id: "PA-5"
+        nome: "coerenza con il prezzo firmato"
+        agente: "lan-cpy-conductor"
+        ingresso: "ART-OFF"
+        uscita: "campo impronta_offerta in copy/manifest.json"
+        criterio_uscita: "l'impronta dell'offerta usata coincide con quella dell'offerta corrente"
+        modi_fallimento:
+          - caso: "il prezzo e' cambiato dopo la scrittura"
+            allora: "tutti i pezzi che lo citano diventano da_rivedere e il loro controllo si riapre"
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-VENDITA"
+    reparto: "LAN-FNL"
+    produce: ["ART-FNL"]
+    innesco: "esistono i testi approvati"
+    stato_da: "IN_PRODUZIONE"
+    stato_a: "IN_PRODUZIONE"
+    gate_finale: ["GATE-FNL-1"]
+    durata_stimata_h: "6-12"
+    perche_prima_dell_apertura: >-
+      perche' la versione precedente metteva la pubblicazione irreversibile prima
+      della prova che il pagamento funzionasse. Qui si vende solo dopo che un euro
+      vero e' entrato ed e' tornato indietro.
+    fasi:
+      - id: "VE-1"
+        nome: "messa online delle pagine"
+        agente: "lan-fnl-costruttore"
+        ingresso: "ART-CPY approvato"
+        uscita: "funnel.json, sezione pagine[] con indirizzo"
+        criterio_uscita: "ogni pagina risponde 200 da una rete esterna"
+        modi_fallimento:
+          - caso: "una pagina non risponde"
+            allora: "resta nell'elenco con l'esito, il gate blocca, le pagine buone restano"
+
+      - id: "VE-2"
+        nome: "installazione della misura"
+        agente: "lan-fnl-costruttore"
+        ingresso: "le pagine online"
+        uscita: "funnel.json, evento_conversione per ogni pagina"
+        criterio_uscita: "l'evento e' stato visto arrivare nello strumento di misura, con origine piattaforma"
+        modi_fallimento:
+          - caso: "l'evento non arriva"
+            allora: >-
+              il gate blocca. Non si accetta uno screenshot: la prova si legge
+              dalla piattaforma, altrimenti il gate si fida di chi giudica
+
+      - id: "VE-3"
+        nome: "prova di cassa"
+        agente: "lan-fnl-costruttore"
+        ingresso: "la pagina di pagamento collegata"
+        uscita: "funnel.json, sezione prova_cassa"
+        criterio_uscita: >-
+          prova_cassa.stato vale incassato_e_rimborsato e il riferimento della
+          transazione e' presente e leggibile nel pannello del fornitore
+        modi_fallimento:
+          - caso: "il pagamento non va a buon fine"
+            allora: >-
+              il lancio non avanza. E' la condizione che nella versione precedente
+              non esisteva, e che riguarda il difetto piu' grave trovato: l'azienda
+              non puo' incassare un euro
+
+      - id: "VE-4"
+        nome: "quota di consenso alla misura"
+        agente: "lan-fnl-costruttore"
+        ingresso: "lo strumento di misura installato"
+        uscita: "funnel.json, campo quota_consenso"
+        criterio_uscita: "la quota e' un numero letto dallo strumento, oppure e' dichiarata sconosciuta"
+        modi_fallimento:
+          - caso: "la quota non e' misurabile"
+            allora: >-
+              si dichiara sconosciuta. Senza, ogni previsione tarata su quei numeri
+              e' sbagliata di una quantita' nota e taciuta
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-EDITORIALE"
+    reparto: "LAN-EDT"
+    produce: ["ART-EDT"]
+    innesco: "esistono i testi e le pagine"
+    stato_da: "IN_PRODUZIONE"
+    stato_a: "IN_PRODUZIONE"
+    gate_finale: ["GATE-EDT-1"]
+    durata_stimata_h: "4-8"
+    fasi:
+      - id: "ED-1"
+        nome: "calendario a ritroso dalla data di apertura"
+        agente: "lan-edt-pianificatore"
+        ingresso: "ART-OFF, data_apertura e durata_carrello_gg"
+        uscita: "editoriale.json, sezione giorni[]"
+        criterio_uscita: "ogni giorno fra oggi e la chiusura del carrello esiste come riga"
+        modi_fallimento:
+          - caso: "la data di apertura e' troppo vicina per il piano"
+            allora: "si dichiara il numero di giorni mancanti e la Regia decide se spostare"
+
+      - id: "ED-2"
+        nome: "assegnazione dei contenuti"
+        agente: "lan-edt-pianificatore"
+        ingresso: "ART-CPY, i giorni del calendario"
+        uscita: "ogni contenuto con giorno, canale e destinazione"
+        criterio_uscita: "ogni giorno del carrello ha almeno un contenuto, e ogni contenuto punta a una pagina esistente in ART-FNL"
+        modi_fallimento:
+          - caso: "un contenuto punta a una pagina inesistente"
+            allora: "il gate blocca. E' il test rosso di GATE-EDT-1"
+
+      - id: "ED-3"
+        nome: "marcatura degli invii reali"
+        agente: "lan-edt-pianificatore"
+        ingresso: "il piano assegnato"
+        uscita: "campo richiede_autorizzazione su ogni riga di invio"
+        criterio_uscita: "ogni riga che comporta un invio alla lista e' marcata come punto umano"
+        punto_umano: "PU-INVIO"
+        modi_fallimento:
+          - caso: "l'autorizzazione non arriva"
+            allora: "l'invio non parte. Un'email spedita non si richiama, e non avra' mai un default"
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-TESORO"
+    reparto: "LAN-TSR"
+    produce: ["ART-BDG"]
+    innesco: "il lancio e' DATATO"
+    stato_da: "DATATO"
+    stato_a: "IN_PRODUZIONE"
+    gate_finale: ["GATE-TSR-1", "GATE-TSR-2"]
+    durata_stimata_h: "2-4"
+    fasi:
+      - id: "TE-1"
+        nome: "voci di costo"
+        agente: "lan-tsr-contabile"
+        ingresso: "il piano del lancio"
+        uscita: "budget.json, sezione voci[]"
+        criterio_uscita: "ogni voce ha importo, tipo e stato; le voci impegnate hanno chi le ha autorizzate"
+        modi_fallimento:
+          - caso: "una voce passa a impegnato senza autorizzazione"
+            allora: "lo schema la rifiuta: impegnare denaro e' una decisione umana"
+
+      - id: "TE-2"
+        nome: "costo della macchina"
+        agente: "lan-tsr-contabile"
+        ingresso: "il numero di invocazioni previste per agente"
+        uscita: "budget.json, campo costo_macchina_previsto"
+        criterio_uscita: "il campo e' presente e maggiore di zero"
+        modi_fallimento:
+          - caso: "il campo manca"
+            allora: >-
+              GATE-TSR-1 blocca. E' il test rosso di quel gate, e ripara il difetto
+              per cui la versione precedente prevedeva 41 agenti senza una riga sul
+              costo
+
+      - id: "TE-3"
+        nome: "pareggio"
+        agente: "lan-tsr-contabile"
+        ingresso: "ART-PRV"
+        uscita: "budget.json, sezione pareggio"
+        criterio_uscita: "copie_per_pareggio e' calcolato da previsione.json, e lo scenario usato e' dichiarato"
+        modi_fallimento:
+          - caso: "manca la previsione"
+            allora: >-
+              il pareggio non si calcola e il gate blocca. Nella versione precedente
+              il gate chiedeva un pareggio che nessun artefatto produceva: era
+              insoddisfacibile per costruzione
+
+      - id: "TE-4"
+        nome: "sorveglianza dello scarto"
+        agente: "lan-tsr-contabile"
+        ingresso: "i movimenti registrati durante la produzione"
+        uscita: "budget.json, sezione scarto_corrente"
+        criterio_uscita: "lo scarto e' ricalcolato dai movimenti, mai dalla dichiarazione"
+        tipo_fase: "continua"
+        modi_fallimento:
+          - caso: "lo scarto supera il dieci per cento"
+            allora: >-
+              la spesa nuova si blocca e il lancio torna a DATATO: non muore. Si
+              sblocca solo con firma umana tracciata (PU-SPESA)
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-REGIA"
+    reparto: "LAN-REG"
+    produce: ["ART-APE", "ART-CNS"]
+    innesco: "testi, pagine, piano editoriale e budget sono tutti validi"
+    stato_da: "IN_PRODUZIONE"
+    stato_a: "CHIUSO"
+    gate_finale: ["GATE-REG-1", "GATE-CNS-1"]
+    durata_stimata_h: "3-5 piu' i giorni del carrello"
+    fasi:
+      - id: "RE-1"
+        nome: "lista di sincronizzazione"
+        agente: "lan-reg-calendarista"
+        ingresso: "tutti gli artefatti da ART-PUB a ART-BDG"
+        uscita: "apertura.json, sezione lista_sincronizzazione[]"
+        criterio_uscita: >-
+          ogni voce ha esito booleano, e la validita' di ogni artefatto e'
+          ricalcolata dai file, mai letta dallo stato salvato
+        modi_fallimento:
+          - caso: "nove voci vere e una falsa"
+            allora: >-
+              il gate blocca e il lancio torna a IN_PRODUZIONE con l'elenco delle
+              voci false. E' il test rosso di GATE-REG-1: una lista quasi completa
+              non e' una lista completa
+
+      - id: "RE-2"
+        nome: "richiesta del via libera"
+        agente: "lan-reg-calendarista"
+        ingresso: "la lista tutta vera"
+        uscita: "apertura.json, campo via_libera in attesa"
+        criterio_uscita: "esiste una richiesta esplicita con tutto cio' che serve per decidere in una schermata"
+        punto_umano: "PU-APERTURA"
+        modi_fallimento:
+          - caso: "il via libera non arriva"
+            allora: >-
+              il lancio resta in PRONTO, senza scadenza. Aprire una vendita e'
+              irreversibile verso l'esterno: non ha e non avra' mai un default
+
+      - id: "RE-3"
+        nome: "apertura"
+        agente: "lan-reg-calendarista"
+        ingresso: "via_libera firmato per canale ammesso"
+        uscita: "lancio in APERTO, data di apertura registrata"
+        criterio_uscita: "GATE-REG-1 esce 0 e lo stato e' APERTO"
+        modi_fallimento:
+          - caso: "un gate rifiuta dopo la sincronizzazione"
+            allora: "si torna a IN_PRODUZIONE: e' l'unica transizione autorizzata dal gate stesso"
+
+      - id: "RE-4"
+        nome: "misura quotidiana"
+        agente: "lan-reg-tracciatore"
+        ingresso: "il lancio aperto"
+        uscita: "una riga al giorno con ordini e ricavo letti dai pannelli"
+        criterio_uscita: "ogni giorno del carrello ha una riga con origine dichiarata"
+        tipo_fase: "continua"
+        modi_fallimento:
+          - caso: "il fornitore di pagamento non risponde"
+            allora: "codice 3, la riga resta mancante e dichiarata tale: non si stima"
+
+      - id: "RE-5"
+        nome: "consuntivo"
+        agente: "lan-reg-tracciatore"
+        ingresso: "le righe quotidiane, la chiusura del carrello"
+        uscita: "consuntivo.json"
+        criterio_uscita: >-
+          ricavo_lordo ha origine fornitore-pagamento oppure esporto-piattaforma, il
+          periodo copre tutte le date del carrello, e il numero di ordini e'
+          coerente con ricavo diviso prezzo
+        modi_fallimento:
+          - caso: "il ricavo e' dichiarato a mano"
+            allora: >-
+              il gate blocca e il lancio resta APERTO finche' il consuntivo non ha
+              un'origine verificabile. E' il test rosso di GATE-CNS-1
+
+  # ---------------------------------------------------------------------------
+  - id: "WF-MEMORIA"
+    reparto: "LAN-MEM"
+    produce: ["ART-DBR"]
+    innesco: "il lancio e' CHIUSO e il consuntivo e' valido"
+    stato_da: "CHIUSO"
+    stato_a: "APPRESO"
+    gate_finale: ["GATE-MEM-1"]
+    durata_stimata_h: "2-4"
+    perche_esiste: >-
+      perche' senza, un lancio finito lascia solo un numero. Un numero senza
+      confronto non insegna niente: si archivia e si ricomincia da zero al lancio
+      dopo.
+    fasi:
+      - id: "MM-1"
+        nome: "calcolo degli scarti"
+        agente: "lan-mem-distillatore"
+        ingresso: "ART-PRV e ART-CNS"
+        uscita: "debrief.json, sezione scarti[]"
+        criterio_uscita: "ogni voce prevista ha accanto la voce reale e la differenza in percentuale"
+        modi_fallimento:
+          - caso: "manca la previsione perche' il lancio e' vecchio"
+            allora: "si dichiara e il debrief resta parziale, marcato come tale"
+
+      - id: "MM-2"
+        nome: "cause degli scarti"
+        agente: "lan-mem-distillatore"
+        ingresso: "gli scarti calcolati"
+        uscita: "una causa scritta per ogni scarto oltre il dieci per cento"
+        criterio_uscita: "nessuno scarto oltre soglia e' privo di causa"
+        modi_fallimento:
+          - caso: "la causa non si conosce"
+            allora: >-
+              si scrive 'non nota' e si dice quale misura sarebbe servita. E' un
+              risultato utile: dice cosa installare prima del prossimo lancio
+
+      - id: "MM-3"
+        nome: "distillazione degli schemi"
+        agente: "lan-mem-distillatore"
+        ingresso: "cause e verbali del lancio"
+        uscita: "debrief.json, sezione schemi[]"
+        criterio_uscita: >-
+          almeno tre schemi, ognuno con si_applica_quando non vuoto e un
+          riferimento a un artefatto esistente sul disco
+        modi_fallimento:
+          - caso: "gli schemi sono generici"
+            allora: >-
+              il gate blocca: uno schema che si applica sempre non si applica mai.
+              E' il test rosso di GATE-MEM-1
+
+      - id: "MM-4"
+        nome: "controfirma della Regia"
+        agente: "lan-reg-calendarista"
+        reparto_ospite: "LAN-REG"
+        ingresso: "il debrief completo"
+        uscita: "debrief.json, campo controfirma"
+        criterio_uscita: "la Regia ha controfirmato, oppure ha lasciato scritta l'obiezione accanto"
+        modi_fallimento:
+          - caso: "Regia e Memoria non sono d'accordo"
+            allora: >-
+              l'obiezione resta scritta accanto invece di essere negoziata via.
+              Nessuno dei due scrive da solo la storia di com'e' andata
+
+# =============================================================================
+# 12. I PASSAGGI DI CONSEGNE — chi consegna a chi, e quando e' accettato
+# =============================================================================
+# Un passaggio senza criterio di accettazione e' una speranza: chi riceve scopre
+# che manca qualcosa quando e' gia' al lavoro, e torna indietro. INV-20 verifica
+# che ognuno citi due reparti esistenti, un artefatto esistente e un criterio.
+passaggi:
+
+  - da: "LAN-MER"
+    a: "LAN-STR"
+    passa: "ART-PUB"
+    criterio_accettazione: "il totale verificato e' un numero, e ogni canale che contribuisce ha una prova non piu' vecchia di 30 giorni"
+    se_rifiutato: "torna a LAN-MER, il lancio resta in IDEA"
+
+  - da: "LAN-MER"
+    a: "LAN-OFF"
+    passa: "ART-RIC"
+    criterio_accettazione: "almeno 15 frasi con fonte apribile, e il campione riaperto dal gate risulta raggiungibile"
+    se_rifiutato: "torna a LAN-MER, le frasi con fonte valida si conservano"
+
+  - da: "LAN-STR"
+    a: "LAN-PRD"
+    passa: "ART-DEC"
+    criterio_accettazione: "cinque risposte, nessuna negativa, ognuna con l'artefatto che la sostiene"
+    se_rifiutato: "il lancio va in ARCHIVIATO con la ragione, e resta riproponibile con un elemento nuovo"
+
+  - da: "LAN-PRD"
+    a: "LAN-OFF"
+    passa: "ART-CRT"
+    criterio_accettazione: "nessuna bandiera rossa presente, link testati dal gate, e in modalita' retroattiva il debito di collaudo dichiarato"
+    se_rifiutato: "torna a LAN-PRD, il lancio torna a VALUTATO con l'elenco di cosa manca"
+
+  - da: "LAN-OFF"
+    a: "LAN-CPY"
+    passa: "ART-OFF"
+    criterio_accettazione: "prezzo e data esistono, la firma ha canale ammesso e l'impronta corrisponde alla proposta corrente"
+    se_rifiutato: "torna a LAN-OFF, la proposta si conserva e la fase O5 si riapre"
+
+  - da: "LAN-OFF"
+    a: "LAN-TSR"
+    passa: "ART-PRV"
+    criterio_accettazione: "i tre scenari esistono e ogni assunzione dichiara stato misurato oppure assunto"
+    se_rifiutato: "torna a LAN-OFF, la previsione si conserva marcata non valida"
+
+  - da: "LAN-CPY"
+    a: "LAN-FNL"
+    passa: "ART-CPY"
+    criterio_accettazione: "punteggio totale almeno 80, nessun blocco sotto meta' dei propri punti, e ogni prova risolvibile"
+    se_rifiutato: "torna a LAN-CPY, si rifanno solo i blocchi bocciati"
+
+  - da: "LAN-CPY"
+    a: "LAN-EDT"
+    passa: "ART-CPY"
+    criterio_accettazione: "ogni pezzo destinato a un contenuto editoriale esiste come file non vuoto"
+    se_rifiutato: "torna a LAN-CPY con l'elenco dei pezzi mancanti"
+
+  - da: "LAN-FNL"
+    a: "LAN-REG"
+    passa: "ART-FNL"
+    criterio_accettazione: "ogni pagina risponde, l'evento e' arrivato dalla piattaforma, e la prova di cassa e' incassata e rimborsata"
+    se_rifiutato: "torna a LAN-FNL, le pagine conformi restano"
+
+  - da: "LAN-EDT"
+    a: "LAN-REG"
+    passa: "ART-EDT"
+    criterio_accettazione: "nessuna riga incompleta, ogni contenuto punta a una pagina esistente, ogni giorno del carrello ha un contenuto"
+    se_rifiutato: "torna a LAN-EDT con le righe incomplete evidenziate"
+
+  - da: "LAN-TSR"
+    a: "LAN-REG"
+    passa: "ART-BDG"
+    criterio_accettazione: "costo totale sotto il tetto, pareggio calcolato dalla previsione, costo macchina presente"
+    se_rifiutato: "torna a LAN-TSR, il budget si conserva marcato oltre tetto"
+
+  - da: "LAN-REG"
+    a: "LAN-MEM"
+    passa: "ART-CNS"
+    criterio_accettazione: "il ricavo ha origine verificabile e il periodo copre tutte le date del carrello"
+    se_rifiutato: "torna a LAN-REG, il lancio resta APERTO"
+
+  - da: "LAN-MEM"
+    a: "LAN-DIR"
+    passa: "ART-DBR"
+    criterio_accettazione: "ogni scarto oltre il dieci per cento ha una causa, almeno tre schemi con si_applica_quando, e la controfirma della Regia"
+    se_rifiutato: "torna a LAN-MEM, il lancio resta CHIUSO e non diventa APPRESO"
+
+  # --- verso l'esterno dell'ecosistema ---------------------------------------
+  - da: "ULTIMO-METRO"
+    a: "LAN-STR"
+    passa: "l'elenco di cio' che e' pronto e non e' uscito"
+    criterio_accettazione: "il prodotto esiste come file ed e' dichiarato pubblicabile"
+    se_rifiutato: "resta in carico all'Ultimo Metro"
+    esterno: true
+
+  - da: "LAN-REG"
+    a: "TESORERIA"
+    passa: "ricavi e costi reali"
+    criterio_accettazione: "ogni numero ha un'origine leggibile in un pannello"
+    se_rifiutato: "il numero resta dichiarato non verificabile e la divergenza si registra"
+    esterno: true
+    nota: "ogni euro nasce qui e sale in Tesoreria, non scende mai. Se un numero diverge, ha ragione la Tesoreria"
+
+# =============================================================================
+# 13. I COMANDI — il repertorio, e chi puo' invocarli
+# =============================================================================
+comandi:
+
+  - nome: "lancio crea <id> --prodotto <nome>"
+    fa: "crea la cartella del lancio con stato.json in IDEA"
+    invocabile_da: ["L0", "L1"]
+
+  - nome: "lancio avanza <id>"
+    fa: "fa avanzare il lancio finche' un controllo non lo ferma"
+    invocabile_da: ["L0", "L1"]
+    nota: "e' l'unico che invoca il giudice. Nessun reparto puo' farlo: sceglierebbe quando farsi giudicare"
+
+  - nome: "lancio avanza <id> --solo-gate <GATE>"
+    fa: "riesegue un solo controllo dopo una correzione"
+    invocabile_da: ["L0", "L1", "L2"]
+
+  - nome: "lancio avanza <id> --a-vuoto"
+    fa: "calcola e stampa senza scrivere niente"
+    invocabile_da: ["L0", "L1", "L2"]
+
+  - nome: "lancio elenco"
+    fa: "una riga per lancio, con da quanti giorni e' fermo e su cosa"
+    invocabile_da: ["L0", "L1", "L2"]
+
+  - nome: "lancio blocchi"
+    fa: "tutti i punti umani aperti dell'azienda, ordinati per giorni di attesa"
+    invocabile_da: ["L0", "L1", "L2"]
+    nota: >-
+      il comando piu' importante del sistema, e nella versione precedente non
+      esisteva. Rende visibile il problema vero di questa azienda: non i lanci che
+      vanno male, ma quelli che non partono perche' una decisione aspetta
+
+  - nome: "lancio costi <id>"
+    fa: "quanto e' costato finora, letto dal registro delle chiamate"
+    invocabile_da: ["L0", "L1", "L2"]
+    nota: "letto, mai stimato"
+
+  - nome: "lancio sospendi <id> --motivo <testo> --revisione <data>"
+    fa: "porta il lancio in SOSPESO e congela gli orologi"
+    invocabile_da: ["L0", "L1"]
+
+  - nome: "lancio riprendi <id>"
+    fa: "riporta il lancio allo stato di partenza con un verbale"
+    invocabile_da: ["L0", "L1"]
+
+  - nome: "lancio firma <id> --prezzo <n> --data <gg/mm/aaaa>"
+    fa: "registra la firma umana sul prezzo, con canale comando-utente e impronta della proposta"
+    invocabile_da: ["L0"]
+    nota: "solo Max. Nessun agente ha permesso di scrittura sul campo firma"
+
+  - nome: "lancio via-libera <id>"
+    fa: "autorizza l'apertura della vendita"
+    invocabile_da: ["L0"]
+    nota: "irreversibile verso l'esterno: non avra' mai un default ne' una scadenza"
+
+  - nome: "lancio abbandona <id> --motivo <testo>"
+    fa: "porta il lancio in ABORTITO, conservando cio' che si salva"
+    invocabile_da: ["L0"]
