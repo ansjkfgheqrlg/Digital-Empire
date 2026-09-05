@@ -1079,6 +1079,38 @@ proprio perché è sempre lì.
 **Quando riapri, non ricominci da capo con Max:** la conversazione la ricordi. Rileggi il libro,
 una riga sobria, e riprendi esattamente da dove eri.
 
+### 6.17 I documenti importanti hanno sempre un doppione — cartella `documentazione Empire` *(direttiva Max, 2026-09-05)*
+
+**Ordine di Max, testuale:** *"non voglio che tu sposti questi documenti [...] ma voglio che
+gli duplichi"*. Non è un trasloco, è una fotocopia: **l'originale resta esattamente dove è
+sempre stato** (Memory, `PIANO-MAESTRO/`, wiki, dossier di reparto — la sua casa canonica non
+cambia mai), e in più nasce una **copia identica** in una cartella unica e sempre uguale:
+
+```
+C:\Users\Utente\Desktop\qui tutto\Digital Empire\documentazione Empire\
+```
+
+Alla radice, accanto alle altre cartelle principali (`PIANO-MAESTRO/`, `company/`,
+`second-brain-vault/`, ecc.) — non dentro nessuna di esse.
+
+**Cosa ci va dentro** — ogni volta che un PDF di questa famiglia è finito e consegnato:
+
+| Categoria | Esempio |
+|---|---|
+| Piano d'azione | un piano operativo con task e scadenze |
+| Piano editoriale | calendario contenuti, es. `Legami d'Amore` |
+| Piano aziendale | dossier di decisione tipo `28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf` |
+| Report importante | audit, analisi, consuntivo consegnato a Max |
+| *(futuro)* Task mensili di team | quando esisteranno, stessa regola |
+
+**Cosa non ci va:** materiale di lavoro interno non consegnato (bozze, HTML intermedi,
+checkpoint, log) — solo il PDF finito, quello che Max apre e guarda.
+
+**Come si applica, in pratica:** dopo aver salvato il PDF nella sua casa naturale, **prima di
+dichiarare il lavoro chiuso**, copialo (mai spostarlo, mai un link/shortcut) dentro
+`documentazione Empire/`, stesso nome file. Se la cartella non esiste ancora, la crei — è
+lei che manca, non il resto dell'albero. Primo caso applicato: `28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf`
+(2026-09-05).
 
 ---
 
