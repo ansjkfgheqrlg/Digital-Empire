@@ -1105,7 +1105,8 @@ documentazione Empire/
 │   ├── Agency/
 │   └── <altri modelli di business, uno per cartella, man mano che nascono>
 ├── Report/                            ← audit, analisi, dossier di decisione
-└── Aziendale/                         ← documenti che riguardano l'azienda nel suo complesso
+├── Aziendale/                         ← documenti che riguardano l'azienda nel suo complesso
+└── Lanci/                             ← materiale di un lancio: brand guidelines, piani di lancio
 ```
 
 | Tipologia | Cosa ci va | Sotto-struttura |
@@ -1113,6 +1114,7 @@ documentazione Empire/
 | `Piani/` | piano d'azione, piano editoriale, ogni piano legato a **un** modello di business | una cartella per modello di business (`YouTube Automation Factory/`, `KDP/`, `Agency/`, ecc.) — creala vuota appena il modello esiste, anche prima del primo documento |
 | `Report/` | audit, analisi, dossier di decisione, consuntivo consegnato a Max | piatta, nessuna sotto-cartella per ora |
 | `Aziendale/` | documenti che riguardano l'Impero nel suo complesso, non un singolo modello | piatta, nessuna sotto-cartella per ora |
+| `Lanci/` | brand guidelines, dossier e piani specifici di un lancio (es. Claude Code Mastery) | piatta, nessuna sotto-cartella per ora |
 | *(futuro)* Task mensili di team | quando esisteranno | dentro `Piani/`, sotto-cartella per modello o per team a seconda di cosa dice Max quando arriva |
 
 **Cosa non ci va:** materiale di lavoro interno non consegnato (bozze, HTML intermedi,
@@ -1123,8 +1125,8 @@ dichiarare il lavoro chiuso**, copialo (mai spostarlo, mai un link/shortcut) den
 sotto-cartella giusta di `documentazione Empire/`, stesso nome file. Se la cartella o la
 sotto-cartella non esiste ancora, la crei — è lei che manca, non il resto dell'albero.
 Casi applicati: `28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf` → `Report/`;
-`piano-editoriale-70-legamidiamore-30gg.pdf` → `Piani/YouTube Automation Factory/`
-(2026-09-05).
+`piano-editoriale-70-legamidiamore-30gg.pdf` → `Piani/YouTube Automation Factory/`;
+`CCM-Brand-Guidelines.pdf` → `Lanci/` (2026-09-05).
 
 ### 6.19 Il PDF è una tua specializzazione — lo standard-oro è già deciso *(direttiva Max, 2026-09-05)*
 

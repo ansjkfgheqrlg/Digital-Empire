@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #ccm #brand #lancio #design-system #guidelines
 Created: 2026-09-03
-Last updated: 2026-09-03
+Last updated: 2026-09-05
 ---
 
 # BRAND GUIDELINES CCM — Claude Code Mastery
@@ -12,14 +12,16 @@ Il sistema visivo e verbale del lancio di **Claude Code Mastery**, in 18 pagine 
 
 ## Il file da mandare in giro
 
-`CCM-Brand-Guidelines.pdf` — 18 pagine, 0,88 MB. Copertina, indice, **15 capitoli**, colophon.
+`CCM-Brand-Guidelines.pdf` — 18 pagine, 0,67 MB. Copertina, indice, **15 capitoli**, colophon.
 
 ## Come si rigenera
 
     python build_brand_guidelines.py
     python build_brand_guidelines.py --html-only   # solo HTML, per ispezione a schermo
 
-Motore: HTML + Chromium `page.pdf()` via Playwright. Font Onest e IBM Plex Mono da Google.
+Motore condiviso: `PIANO-MAESTRO/scripts/pdf_engine_empire.py` (standard-oro
+`28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf`, direttiva Max 2026-09-05) — HTML + Chromium
+`page.pdf()` via Playwright. Font Onest e IBM Plex Mono da Google.
 
 ## Come e' fatto
 
@@ -75,7 +77,15 @@ noi la dichiariamo.**
 
 Ogni pagina e' misurata: il fondo dell'ultimo elemento contro il margine utile.
 Alla consegna: **18 pagine su 18 in norma**, nessuna che trabocca, nessuna sotto la soglia
-di riempimento. Le due copertine sono escluse dal controllo: hanno il titolo centrato per scelta.
+di riempimento.
+
+## Copertina e colophon (rifatte 2026-09-05)
+
+Max ha giudicato il contenuto perfetto ma la grafica no, e ha dato come standard-oro il PDF
+`28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf`: copertina e colophon non hanno piu' il titolo a
+gradiente centrato con glow radiale, ma il pattern condiviso del motore — titolo piatto
+ancorato al terzo basso, una parola sola accentata in arancione, `.cover-lead` e
+`.cover-meta` a riga. Le 15 pagine interne non sono state toccate: erano gia' allo standard.
 
 ## Connessioni
 
