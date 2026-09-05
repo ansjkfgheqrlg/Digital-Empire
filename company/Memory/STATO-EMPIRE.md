@@ -1,3 +1,11 @@
+## 🟠 2026-09-05 — `documentazione Empire` strutturata a tipologie — CP-20260905-013
+
+**Codice di ripresa: EMP-DOCEMP2.** Max ha precisato la legge CP-012: dentro
+`documentazione Empire/` tre tipologie — `Piani/` (una sotto-cartella per modello di
+business: `YouTube Automation Factory/`, `KDP/`, `Agency/`), `Report/`, `Aziendale/`.
+`emperator.md` §6.17 aggiornata. Ricollocati i due doppioni esistenti nelle cartelle
+giuste, committato e pushato (`cf5ff067`).
+
 ## 🟠 2026-09-05 — Nuova legge: documenti importanti hanno un doppione in `documentazione Empire` — CP-20260905-012
 
 **Codice di ripresa: EMP-DOCEMP.** Ordine durevole di Max: ogni PDF piano d'azione/editoriale/
