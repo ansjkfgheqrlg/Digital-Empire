@@ -192,7 +192,7 @@ non si prezza un prodotto non certificato»*, ribadito a `04:312`, con l'ingress
 **Il caso concreto che lo fa cadere.** Giorno 0. Si esegue il comando dell'offerta sul Manuale.
 Primo campo dell'ingresso: `certificato_path`. Il Manuale è finito dal 07/03/2026 e non è mai
 passato da un flusso di produzione: non ha un certificato. **Codice di uscita 2 alla prima riga di
-ingresso.** Lo stesso vale per tutto l'inventario reale dell'azienda: una landing già online
+ingresso.** Lo stesso vale per tutto l'inventario reale dell'azienda: una pagina d'ingresso già online
 (`06:212`), 25 contenuti già prodotti (`06:248-249`).
 
 **Perché è fatale.** Il flusso motivante non supera il proprio controllo d'ingresso. Per prezzare
@@ -302,7 +302,7 @@ Lo stesso guasto altrove: `CRITICA-A.md` P-A-18 e B-A-10 — `03:201` (`"firma_u
 null"`), `01:422` (`"attestato_da": "Max"`).
 
 **Il caso concreto che lo fa cadere.** Due casi, entrambi dimostrati:
-1. Un conductor in ciclo di auto-riparazione, incalzato da un controllo che blocca, scrive
+1. Un agente conduttore in ciclo di auto-riparazione, incalzato da un controllo che blocca, scrive
    `firmato_da: "Max"` per sbloccarsi. Il controllo certifica una decisione umana mai presa, e il
    lancio parte a un prezzo che nessuno ha approvato.
 2. Max firma 47 € su una proposta; la proposta viene rigenerata con motivazioni diverse; la firma
@@ -574,7 +574,7 @@ qualunque sigla fuori elenco. `GATE-TSR-3` non esiste: il perché è in §4, R-0
 **G-03 · Due dossier con lo stesso numero in testa, un agente con due nomi, due prefissi per lo stesso reparto.**
 *Dove:* `CRITICA-B.md` D-B-22 (`05:8` porta «# 06 — WF-CPY» dentro un file chiamato `05-`; anche
 `06:8` porta «06»; `lan-cpy-giudice` a `05:74` contro `lan-copy-giudice` a `05:244`; il dossier 04
-è l'unico senza frontmatter, quindi invisibile a qualunque indicizzazione) · `CRITICA-D.md` §1 (il
+è l'unico senza intestazione YAML, quindi invisibile a qualunque indicizzazione) · `CRITICA-D.md` §1 (il
 file `08-…` ha per intestazione «# 11 — AGENTI, SKILL E COMANDI») · `CRITICA-C.md` §1.3
 (`lan-prd-` contro `lan-prod-`, usato 33 volte).
 *Caso:* nascono due file diversi in `.claude/agents/` per lo stesso mestiere — e `08:159` avverte
@@ -601,7 +601,7 @@ nessun controllo di raggiungibilità a `02:245`) · C-A-24 (`01:144` dice che la
 criteri; `03:170-178` li definisce dentro il dossier di un altro reparto; `02:198-203` li fa
 scrivere dal mittente del passaggio di consegne) · `CRITICA-B.md` §4.2 (il rapporto valore/prezzo
 vive in due controlli con due proprietari).
-*Caso:* 17 fonti, una dietro un filtro che risponde 403 a un cliente non-browser. Una riga boccia,
+*Caso:* 17 fonti, una dietro un filtro che risponde 403 a chi non è un navigatore. Una riga boccia,
 l'altra passa: il verbale dirà una cosa o l'altra secondo quale riga ha letto chi ha scritto il codice.
 *Perché conta:* due criteri sullo stesso oggetto senza regola di precedenza producono un blocco che
 nessuno sa a chi appartiene.
@@ -649,7 +649,7 @@ rosso che lo prova: «uno scarto dell'11% deve bloccare la spesa nuova e NON ucc
 
 **G-09 · Il controllo più costoso si spegneva abbassando un numero deciso da chi ha fretta.**
 *Dove:* `CRITICA-A.md` D-A-11 — `03:139` (prova sul campo obbligatoria sopra 97 €), `03:156` («se
-si fissa un prezzo < 97 €, il gate si rilegge e il beta decade»), `03:177` (passaggio automatico
+si fissa un prezzo < 97 €, il controllo si rilegge e il beta decade»), `03:177` (passaggio automatico
 sotto soglia).
 *Caso:* prezzo a 89 € per chiudere il pilota, controllo saltato, certificato emesso. Due settimane
 dopo il prezzo sale a 197 €. Nessuna regola riapre il controllo: esce un prodotto da 197 € senza un
@@ -663,10 +663,10 @@ niente al rialzo.
 *Dove:* `CRITICA-B.md` D-B-09 (`06:111`, `06:117-120`, `06:126-127` —
 `prova_evento(url, evento, timeout_s=60) -> bool`: non è detto **dove** si guarda, e la sola fonte
 che conta ha latenza di ore) e D-B-10 (`06:192` nomina il consenso ai cookie come causa numero uno
-di fallimento della misura, e `06:118` non dice cosa fa il tester col banner).
+di fallimento della misura, e `06:118` non dice cosa fa chi esegue la prova davanti all'avviso di consenso).
 *Caso:* il controllo restituisce falso su un tracciamento funzionante, blocca il lancio, e viene
-derogato la prima volta. Al secondo lancio nessuno lo esegue più. Oppure: il tester accetta il
-consenso, l'utente medio lo rifiuta, il controllo è verde e i numeri non arrivano lo stesso.
+derogato la prima volta. Al secondo lancio nessuno lo esegue più. Oppure: chi esegue la prova accetta il
+consenso, il visitatore medio lo rifiuta, il controllo è verde e i numeri non arrivano lo stesso.
 *Perché conta:* un controllo che boccia a caso viene derogato, e un controllo derogato una volta
 smette di esistere.
 *v4:* `GATE-FNL-1` chiede per ogni pagina un evento di conversione con `prova.origine=='piattaforma'`;
@@ -757,7 +757,7 @@ affermazioni di categoria `prova` contro il certificato e la ricerca, **non cont
 
 **G-17 · Nessun artefatto era versionato: un cambio a monte non invalidava niente a valle.**
 *Dove:* `CRITICA-B.md` D-B-11 — `05:40-43` (le fondamenta nascono prima del prezzo, per progetto),
-`06:212` (la landing esistente si riusa), `04:327` (la metrica «prezzi rivisti dopo l'apertura: 0»).
+`06:212` (la pagina d'ingresso esistente si riusa), `04:327` (la metrica «prezzi rivisti dopo l'apertura: 0»).
 *Caso:* Max risponde «preferisco 27» — risposta che `04:169` prevede. La pagina di vendita è già
 scritta con l'ancoraggio su 47, la cassa è configurata, le email di recupero citano il prezzo.
 Nessun processo se ne accorge.
@@ -842,7 +842,7 @@ basso produca un artefatto che richiede giudizio.
 `07:90`, `07:93`, `07:102`, `07:171` gli assegnano come risultato **il verbale**; `00:297` dice che
 senza verbale il controllo non è stato eseguito. Stesso guasto sulla sentinella (`CRITICA-C.md`
 D-C-03): sola lettura a `08:106`, e a `07:92` un file JSON da produrre.
-*Caso:* si copia il frontmatter alla lettera, il verbale non viene scritto, il passaggio successivo
+*Caso:* si copia l'intestazione alla lettera, il verbale non viene scritto, il passaggio successivo
 lo rifiuta «per verbale mancante», e il lancio si blocca senza che nulla dica perché.
 *Perché conta:* la correzione che il dossier 08 chiama «la più importante di tutto questo dossier»
 rendeva fisicamente impossibile al giudice il compito che tredici righe gli assegnavano.
@@ -868,7 +868,7 @@ divieto è affidato a quel campo.
 *Dove:* `CRITICA-C.md` D-C-05 — `08:184-185` chiede una sezione «contratto d'uscita, con quale
 schema» nel corpo markdown, mentre `08:166` elenca i campi che lo esprimerebbero fra quelli che fanno
 scartare il file **in silenzio**. E `CRITICA-D.md` §1: i quattro controlli del verificatore non
-aprono mai il corpo, quindi un agente con frontmatter perfetto e sezione vuota passa lo stesso.
+aprono mai il corpo, quindi un agente con intestazione perfetta e sezione vuota passa lo stesso.
 *Caso:* l'agente dell'offerta restituisce `"prezzo": "97€"` invece di `97.00`. Nessun controllo
 scatta: gli schemi validano i file su disco, non ciò che un agente restituisce al chiamante. Il
 difetto emerge tre fasi dopo, dentro il calcolo del ricavo netto, come un errore aritmetico.
@@ -879,8 +879,8 @@ il proprio schema prima che il successivo parta (`INV-02`, campo `dipende_da`).
 **G-26 · Lo scaglione minimo non poteva eseguire l'unico flusso specificato.**
 *Dove:* `CRITICA-A.md` D-A-20 (mancano gli agenti di quattro fasi, fra cui quella obbligatoria nel
 percorso del pilota; e la giustificazione di `01:400` è falsa: il certificato lo emette un altro
-agente) e D-A-05 (il record di chiusura fase lo scrive il conductor del reparto; cinque reparti dello
-scaglione minimo non hanno conductor, quindi il record non si scrive e la fase non si chiude).
+agente) e D-A-05 (il record di chiusura fase lo scrive il capo del reparto; cinque reparti dello
+scaglione minimo non ne hanno uno, quindi il record non si scrive e la fase non si chiude).
 *Caso:* il pilota entra nel flusso Prodotto e non ha nessuno che validi l'ingresso, nessuno che
 censisca i 203 fogli, nessuno che emetta il certificato. Il primo lancio si blocca alla prima fase,
 per una regola introdotta come la correzione principale del piano.
@@ -1036,7 +1036,7 @@ giorno e non smette; viene ignorato entro due settimane e diventa rumore permane
 
 **G-38 · Il passaggio scaduto diventava un blocco permanente, e la sospensione non fermava gli orologi.**
 *Dove:* `CRITICA-A.md` D-A-08 (un passaggio scaduto valorizza un **campo**, non innesca nessuna
-transizione: nessun timer, nessuna escalation, nessun processo che lo osservi) · D-A-09 (la
+transizione: nessun cronometro, nessuna risalita di livello, nessun processo che lo osservi) · D-A-09 (la
 sospensione può durare fino a 90 giorni, la validità dei passaggi è 48 ore: al rientro sono tutti
 scaduti e il blocco si rivalorizza subito) · D-A-10 (48 ore solari in un'azienda che lavora a giorni,
 senza nessun calendario dichiarato).
@@ -1099,7 +1099,7 @@ eventi, tracciamento d'esecuzione, telemetria; «cruscotto» compare tre volte e
 numeri di vendita, mai allo stato del sistema. Manca un registro degli eventi, un identificativo di
 correlazione, una misura di durata e consumo per invocazione (che `08:302` promette senza dire dove si
 scrive), e una diagnosi di perché il lancio è fermo, da quanto, in attesa di chi. Aggravante in
-`CRITICA-A.md` P-A-20: la scala dei tempi di escalation esiste, e `01:87` dichiara «il file esiste,
+`CRITICA-A.md` P-A-20: la scala dei tempi di risalita esiste, e `01:87` dichiara «il file esiste,
 quindi la Direzione lo vede: niente notifiche da costruire» — scambiando la persistenza per la consegna.
 *Caso:* a nove giorni dall'apertura il lancio è ancora in produzione e nessuno sa se un controllo ha
 bloccato, se un agente è morto a metà, o se nessuno ha eseguito il comando.
@@ -1127,7 +1127,7 @@ prima di fare i conti, non dopo il primo rimborso».
 
 **G-44 · Una credenziale in chiaro nel repository, pubblica da mesi e mai sostituita.**
 *Dove:* `INCASSO.md` §2 — la chiave del servizio di posta è scritta nel codice lato cliente ed è
-duplicata in almeno altri tre file; il repository è pubblico dal primo commit; la voce di arretrato
+duplicata in almeno altri tre file; il repository è pubblico da quando esiste; la voce di arretrato
 B-020 è ancora aperta. Nessuno degli undici dossier della v3 la nomina.
 *Caso:* chiunque abbia il collegamento può scrivere sulla lista contatti dell'azienda — che è
 l'unico pubblico posseduto che l'azienda abbia.
@@ -1319,7 +1319,7 @@ Qui ci sono quelle che la versione 4 ha preso e portato dentro, con dove sono fi
 | 17 | **Traffico organico e a pagamento non si mescolano** (`06:52-56`) | `CRITICA-B.md` S-11, «mescolarli rende ogni numero successivo una divisione fra grandezze scollegate» | `consuntivo.schema.json`, campo `per_canale`, con la ragione scritta nello schema |
 | 18 | **Legare le varianti al traffico disponibile** (`05:229-240`), «aver ucciso 196 varianti inutili» | `CRITICA-B.md` S-08 | portato all'estremo: nessun artefatto di prova comparativa esiste più (§4, R-07) |
 | 19 | **Il reparto editoriale ordina e verifica, non produce** (`06:335-336`) | `CRITICA-B.md` S-14, «confine giusto, coerente col resto dell'Impero» | `ART-EDT` ha destinazioni risolvibili contro il funnel: ordina e verifica |
-| 20 | **L'escalation che muore contro un controllo**: se una delle due posizioni viola un controllo esistente, non è un conflitto, vince il controllo (`01:88-89`) | `CRITICA-A.md` S-A-03, «uccide metà dei conflitti senza riunioni» | conservata: nella v4 le transizioni dichiarano chi autorizza, e il controllo che rifiuta autorizza il ritorno indietro |
+| 20 | **La risalita che muore contro un controllo**: se una delle due posizioni viola un controllo esistente, non è un conflitto, vince il controllo (`01:88-89`) | `CRITICA-A.md` S-A-03, «uccide metà dei conflitti senza riunioni» | conservata: nella v4 le transizioni dichiarano chi autorizza, e il controllo che rifiuta autorizza il ritorno indietro |
 | 21 | **Le condizioni di abbandono con soglie numeriche** (`09:206-219`) | `CRITICA-D.md` §7 e `CRITICA-EMPERATOR.md` D.5, «la maggior parte dei piani non ne ha nessuna» | erano tre, ora sono **quattro** (`00-LEGGIMI.md` §7), e la prima è nuova ed è la più importante |
 | 22 | **«Un sistema di controlli che non ha mai bloccato non è provato»** (`10:139-144`) | `CRITICA-D.md` §7, «controintuitivo e corretto, raro trovarlo scritto in un piano» | è diventato un invariante: `INV-04`, ogni controllo ha un test rosso dichiarato |
 | 23 | **«Un agente scritto solo in una cartella di reparto è una specifica, non un agente»** (`01:476-482`) | `CRITICA-A.md` S-A-13, «diagnosi esatta di un guasto reale e verificato» | il registro elenca gli agenti con grado, modello e strumenti: la specifica e l'agente sono lo stesso dato |
@@ -1411,7 +1411,7 @@ senza guardare i prezzi che l'azienda si è già data non è istruito: è invent
 Claude_Code_Mastery_Launch.md`, creato il 2026-04-29, letto da `ORIGINE.md` §5 e portato come
 rilievo in `CRITICA-EMPERATOR.md` E-12. Contiene una tabella di marcia esplicita — *«START
 2026-04-29 → TARGET SHIP 2026-05-30»* — con titolare dichiarato (Max), perimetro, e tre traguardi
-datati: 07/05 script e analisi dei concorrenti, 15/05 landing online e due o tre video pubblicati,
+datati: 07/05 script e analisi dei concorrenti, 15/05 pagina d'ingresso online e due o tre video pubblicati,
 30/05 funnel completo e primi 50 iscritti alla prova.
 
 **Perché nessuno lo sapeva.** Perché **nessun documento registra il mancato rispetto**. La data
@@ -1442,8 +1442,8 @@ Le prove, con il percorso:
 | Nessun canale di pagamento attivo per il prodotto pilota | `checkout.config.json` righe 7-33: tutti a `"attivo": false`; l'unico attivo è l'ordine per email |
 | Il passaggio d'acquisto è un collegamento di posta | `pagamento.html` righe 190, 197, 375 |
 | La pagina di vendita non è online | nessun file di pubblicazione nella cartella, verificato due volte (Memory e disco) |
-| Una chiave di pagamento reale esiste, ma per un altro prodotto e senza nessun bottone collegato | `KDP - prodottti digitali\Leanding Page\email-agent\.env` e le sei landing di quel prodotto, dove la ricerca dà zero risultati |
-| Nessun tracciamento installato su nessun sito verificato | ricerca mirata su tutte le landing: zero occorrenze reali |
+| Una chiave di pagamento reale esiste, ma per un altro prodotto e senza nessun bottone collegato | `KDP - prodottti digitali\Leanding Page\email-agent\.env` e le sei pagine d'ingresso di quel prodotto, dove la ricerca dà zero risultati |
+| Nessun tracciamento installato su nessun sito verificato | ricerca mirata su tutte le pagine d'ingresso: zero occorrenze reali |
 | I registri economici sono vuoti | `entrate.jsonl` e `spese.jsonl`: **zero righe** entrambi |
 | L'azienda lo dichiara di sé | `STATO-EMPIRE.md` righe 9007-9010, voce B-043, 2026-09-03: *«Digital Empire non misura un solo euro»* |
 
