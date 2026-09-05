@@ -233,3 +233,38 @@ Excalidraw a schermo intero. Titolo **"LA NOTA ATOMICA"**, sottotitolo **"Niklas
 - **"SI"**: cinque caselle colorate disposte a rete, ciascuna **"1 idea"** (viola, verde, arancione al centro, giallo, blu), collegate tra loro da linee curve; sotto, **"il valore è nei legami"** e **"riusabile in 20 contesti"**.
 🔎 Il nome **Niklas Luhmann** compare qui esplicitamente per iscritto sulla slide, mentre a voce (69:37 ca.) l'autore dice *"non pronuncerò ora questa parola"* riferendosi al metodo (Zettelkasten, mai nominato a voce in questo tratto).
 Voce: *"introduciamo il concetto di che cos'è"* — introduzione della nota atomica prima di tornare a Notion.
+
+### Scena 170 · `frame-0706.png` · 70:30
+Stessa slide "LA NOTA ATOMICA", inquadratura leggermente diversa: titolo e sottotitolo "Niklas Luhmann: una idea per scheda" pienamente visibili in alto a destra, colonna "NO" con il riquadro arancione "PDF da 40 pagine, tutto insieme" e la X con "nessuno lo riusa" ben leggibili; sul bordo destro si intravede l'inizio della colonna "SI" (due caselle "1 idea" tagliate).
+Voce: *"tirato per i capelli, ma è il prefondatore di e delle teorie alla base"*
+
+### Scena 171 · `frame-0717.png` · 71:36 — **"ZETTELKASTEN" scritto a mano + esempio Fiducia/Soldi + "90.000+"** ⭐
+Sopra la stessa slide compare un'annotazione a mano in blu: la scritta **"ZETTELKASTEN"** in stampatello, con due frecce che scendono verso due riquadri numerati — **"FIDUCIA"** (cerchio "①") e **"SOLDI"** (cerchio "②") — gli esempi di "scheda 1" e "scheda 2" citati a voce. Più in basso a sinistra, scritto a mano: **"90.000+"** (il numero di schede del metodo). Sul bordo destro si intravede ancora il riquadro arancione "NO" della slide sottostante.
+Voce: *"fatto è stato creare 90.000 schede autonome con cui scriveva i libri. Che"*
+🔎 Il nome del metodo, **"Zettelkasten"**, che il narratore dichiara esplicitamente di non voler pronunciare a voce ("non pronuncerò ora questa parola", 70:44-70:51), compare qui scritto per esteso a mano sullo schermo.
+
+### Scena 172 · `frame-0739.png` · 73:48
+Slide "LA NOTA ATOMICA" di nuovo pulita, senza le annotazioni a mano della scena 171 (probabilmente rimosse o su un livello separato). Colonna "SI" con la rete completa delle 5 caselle "1 idea" colorate, "il valore è nei legami", "riusabile in 20 contesti".
+Voce: (pausa nel parlato tra 73:45 e 73:54) *"questo, tornando alla nostra immagin[e]... è che non vogliamo avere questi malloppi di PDF da 40 pagine tutti insieme, ma"*
+
+### Scena 173 · `frame-0745.png` · 74:24
+Stessa slide, zoom leggermente diverso: sotto "PDF da 40 pagine, tutto insieme" compare ora una sottolineatura ondulata blu sulla parola "pagine", e sotto "riusabile in 20 contesti" una sottolineatura ondulata blu su "riusabile in 20 contesti" — l'autore sta enfatizzando questi due punti col tratto a mano.
+Voce: *"di fondo aziendale, no? Un ultimo"*
+
+# PARTE B4 — Costruzione degli Hub (Hub And Spoke) e degli indici (74:30 → 82:18)
+
+### Scena 174 · `frame-0746.png` · 74:30 — **slide "HUB-AND-SPOKE: l'ordine di costruzione"** ⭐
+Nuova slide Excalidraw. Titolo **"HUB-AND-SPOKE: l'ordine di costruzione"**, sottotitolo **"come una ruota di bicicletta"**. Al centro un cerchio grigio **"HUB"** con icona persona e didascalia **"identita azienda, reparti"** (così scritto, senza accento sullo schermo). Attorno, sei nodi colorati etichettati **"dettaglio"** con icone diverse (documento, informazione "i", posizione/pin, due liste, organigramma ad albero), collegati al centro da linee radiali grigie e tra loro da un cerchio tratteggiato. Etichette curve: **"1) prima gli hub"** e **"2) poi i dettagli"**. Sotto, un riquadro: **"Ogni link punta a qualcosa che esiste già, quindi i link rotti sono impossibili."**
+Voce: *"concetto da introdurre prima di andare in notion è gli hub[,] che cosa vuol"*
+
+### Scena 175 · `frame-0753.png` · 75:12
+Vista intermedia/scroll tra la slide "LA NOTA ATOMICA" (parzialmente visibile a sinistra, con "riusabile in 20 contesti" sottolineato) e l'inizio della slide successiva ("...ordine di costruzione" appena visibile in basso).
+Voce: *"che ora, se noi non facessimo il"*
+
+### Scena 176 · `frame-0756.png` · 75:30
+Ulteriore scroll: sopra rimane visibile la rete "SI" della nota atomica, sotto compare uno schizzo preparatorio a mano in blu — una serie di ovali/pallini collegati da linee che convergono verso un nodo centrale (a forma di stella/ragno), con un piccolo cerchio rosso isolato a destra — bozza preliminare del diagramma hub-and-spoke prima della versione pulita. In basso a sinistra si legge il titolo parziale **"SPOKE: l'ordine di costruzione"**.
+Voce: *"pallino viene creato prima del tag o prima della nota corrispondente"*
+
+### Scena 177 · `frame-0760.png` · 75:54 — **Hub-and-Spoke, versione completa e leggibile** ⭐
+Slide "HUB-AND-SPOKE: l'ordine di costruzione" a schermo pieno, identica alla scena 174 ma più leggibile: si notano due collegamenti (verso il nodo in alto e verso quello a sinistra) evidenziati in blu più spesso rispetto agli altri quattro, come se l'autore stesse animando/ripercorrendo le connessioni una per una. In alto a destra, residuo dello schizzo a mano libera della scena 176 (alcuni cerchi blu collegati) rimasto su un'altra porzione della canvas infinita di Excalidraw.
+Voce: *"ora che hai le tue cartelle, le 11, assicurati di avere gli hub, quindi"*
