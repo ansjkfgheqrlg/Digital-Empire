@@ -350,7 +350,14 @@ un riassunto del corso: è **il corpus**, ordinato meglio dell'originale.
 |---|---|---|
 | **Markdown** | `IL-METODO-YOUTUBE-AUTOMATION.md` | la fonte di verità, versionata in git |
 | **Python** | `il_metodo_youtube_automation.py` | il metodo **interrogabile dalla macchina**: fasi, regole, soglie, checklist come strutture dati che agenti e script possono leggere (stessa forma dei file in `regole/`) |
-| **PDF** | `IL-METODO-YOUTUBE-AUTOMATION.pdf` | il documento da leggere e da consegnare — stile minimal AP Sales, via HTML + Chromium |
+| **PDF** | `IL-METODO-YOUTUBE-AUTOMATION.pdf` | il documento da leggere e da consegnare — **standard-oro dossier 28** (`emperator.md` §6.19), costruito col motore `PIANO-MAESTRO/scripts/pdf_engine_empire.py` (classe `PDFDoc`) |
+
+**Il PDF ha due case, non una** (legge §6.17, CP-20260905-012/013): resta nella sua casa
+canonica `company/Memory/studi/aitubepro/` **e** riceve un doppione identico in
+`documentazione Empire/Piani/YouTube Automation Factory/`. Il doppione si copia, non si sposta,
+e si riallinea ad **ogni** rigenerazione: un doppione vecchio è peggio di nessun doppione.
+Qualità non negoziabile: quel PDF sta accanto al dossier 28 e agli altri, e deve reggere il
+confronto — impaginazione, grana, colori, tipografia dello standard, mai un PDF "di servizio".
 
 **Struttura del documento — in quest'ordine, non negoziabile:**
 
@@ -377,9 +384,16 @@ un riassunto del corso: è **il corpus**, ordinato meglio dell'originale.
   già chiuse — a ogni categoria chiusa la sua sezione è già scrivibile. L'ultima categoria
   chiusa fa scattare l'assemblaggio finale, la parte finanziaria e la sintesi.
 
-**Criterio di uscita:** i tre file esistono, dicono la stessa cosa, il PDF è impaginato e
-leggibile, e ogni sezione della parte estesa cita la lezione da cui viene. Finché manca uno
-dei tre formati, **la missione non è chiusa**.
+**Criterio di uscita — cinque condizioni, tutte verificabili:**
+
+1. I tre file esistono e dicono la stessa cosa (nessuna divergenza fra `.md`, `.py` e PDF).
+2. Ogni sezione della parte estesa **cita la lezione e il minuto** da cui viene.
+3. Il PDF è costruito col motore `pdf_engine_empire.py` e regge il confronto col dossier 28.
+4. Il **doppione** è in `documentazione Empire/Piani/YouTube Automation Factory/` e ha lo
+   stesso identico contenuto della copia canonica (stessa data di build).
+5. Il PDF viene **aperto davanti a Max**, non solo consegnato come percorso.
+
+Finché manca uno dei cinque, **la missione non è chiusa**.
 
 ---
 

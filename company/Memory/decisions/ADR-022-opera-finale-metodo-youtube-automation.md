@@ -24,7 +24,12 @@ Lo studio si chiude con **un'opera ufficiale e pubblica**: `IL METODO YOUTUBE AU
 1. **Tre formati, un solo sorgente** — `.md` (fonte di verità versionata), `.py` (il metodo
    interrogabile dalla macchina: fasi, regole, soglie e checklist come strutture dati, nella
    stessa forma dei file in `studi/aitubepro/regole/`), `.pdf` (il documento da consegnare,
-   stile minimal AP Sales via HTML + Chromium).
+   **standard-oro dossier 28** per §6.19, costruito col motore condiviso
+   `PIANO-MAESTRO/scripts/pdf_engine_empire.py`).
+1-bis. **Il PDF ha il suo doppione** in `documentazione Empire/Piani/YouTube Automation
+   Factory/` (legge §6.17): copia identica, mai spostamento, riallineata ad ogni rigenerazione.
+   Quel PDF vive accanto al dossier 28: **la stessa qualità, sempre**, mai un documento di
+   servizio impaginato in fretta.
 2. **Struttura fissa** — parte finanziaria e modello di business, poi la sintesi stretta di
    tutte le fasi, poi la parte estesa integrale: regole primarie, fasi, tutti i metodi e il
    metodo migliore dichiarato, SEO, ricerca, analisi, l'intera formazione.
