@@ -412,25 +412,37 @@ toglie di mezzo pagandolo una volta sola per tutta la settimana.
 > nome. **La costruzione è rimasta tutta tua, e non è stata toccata di una riga:** nessuna
 > cartella creata, nessun agente scritto, nessuna skill forgiata.
 >
-> **📂 Il piano: `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` — comincia da `00-LEGGIMI-GAEL.md`.**
-> Undici dossier. Il primo contiene la nota per te, il primo giorno, il glossario e le condizioni
-> in cui si smette. Gli altri si consultano, non si studiano.
+> **📂 Il piano: `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` — comincia da `00-LEGGIMI.md`.**
+> Sette documenti più la cartella `dati/`. Il primo contiene il problema, la tesi, il primo giorno
+> e le condizioni in cui si smette. Gli altri si consultano, non si studiano.
 >
-> **Cosa contiene, in breve:** dodici reparti, sette flussi con l'agente per ogni fase, 50 agenti
-> con il frontmatter già scritto, tredici gate con criteri numerici, ~235 file con il percorso
-> assoluto, 139-187 ore-uomo di costruzione a scaglioni.
+> **⚠️ Il piano è alla versione 4.** La versione 3 — quella con dodici reparti e cinquanta agenti —
+> è stata smontata da quattro revisori indipendenti (oltre cinquanta difetti sostanziali, dodici
+> fatali) ed è archiviata **integralmente** in `_v3-superata/`: non è stata cancellata. Il tuo
+> lavoro L1-L2-L3 resta la base di tutto ed è citato per nome.
 >
-> **Tre cose da sapere subito:**
+> **Cosa contiene, in breve:** tredici artefatti tipizzati con schema, quattordici controlli con
+> criterio eseguibile e test rosso, quindici agenti, dodici stati, sei punti umani con scadenza.
+> Tutto dentro **una fonte di verità unica** — `dati/registro.yaml` — validata da un programma
+> (`dati/valida_registro.py`: 253 controlli, esce zero). Costruzione a sei scaglioni,
+> 118-174 ore-uomo.
+>
+> **Quattro cose da sapere subito:**
 > 1. **Il numero è 15, non 14** (il 14 è Tesoreria). Riservato nel registro dei numeri.
-> 2. **L'ADR-022 va registrato PRIMA di creare la cartella** — lo impone una norma in vigore, e un
->    controllo di conformità lo verifica. È il passo zero, non l'ultimo.
-> 3. **Il criterio di chiusura del primo scaglione è far uscire davvero il Manuale Claude Code.**
->    Se non esce, gli altri reparti non si costruiscono — e il vincolo è tecnico, non morale.
+> 2. **L'ADR-023 va registrato PRIMA di creare la cartella** — lo impone ADR-009, e un controllo di
+>    conformità lo verifica. È il passo zero, non l'ultimo. *(Era ADR-022: quel numero è stato
+>    occupato da un'altra decisione il 05/09, mentre il piano veniva scritto.)*
+> 3. **I primi due scaglioni non contengono una riga di codice.** Prima si incassa un euro vero e
+>    lo si rimborsa; poi si porta un lancio a mano fino alla firma del prezzo. Il software nasce
+>    dopo, dai difetti misurati — non prima, dai problemi immaginati.
+> 4. **Se un documento contraddice il registro, ha torto il documento.** I documenti spiegano; il
+>    registro decide.
 >
-> **Il piano è stato battuto tre volte** (prima versione → critica di tre revisori indipendenti →
-> riscrittura). Dieci difetti gravi trovati e corretti, fra cui: la squadra minima che non poteva
-> produrre prezzo e data, il flusso del funnel senza agenti, due gate sul budget che non potevano
-> fallire. **Sono elencati nel dossier 10 §C.3**, con la correzione accanto.
+> **Perché è cambiato tutto:** i revisori hanno misurato che l'azienda **non può incassare un
+> euro** (nessun canale di pagamento attivo, il bottone d'acquisto è un indirizzo di posta) e che
+> il canale che doveva portare pubblico al Manuale è **spento dal 29/07/2026**. Il piano precedente
+> progettava dodici reparti sopra quei due fatti senza nominarli. Il dettaglio, difetto per
+> difetto, è in `06-CRITICA-E-GIRI.md`.
 >
 > **Se qualcosa non ti convince, apri una chat e scrivi `Emperator`.** Si ridiscute con i numeri
 > davanti. Un piano eseguito controvoglia produce un ecosistema peggiore di uno scritto male da

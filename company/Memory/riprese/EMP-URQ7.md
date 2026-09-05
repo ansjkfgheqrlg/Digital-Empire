@@ -1,6 +1,7 @@
-# EMP-URQ7 — Piano ecosistema LANCI v4: critica completa, riscrittura a metà
+# EMP-URQ7 — Piano ecosistema LANCI: versione 4 completa e consegnata
 
-- **Aperto:** 2026-09-05 · **Task:** TASK-LANCI-ECO-W2 · **Stato:** ⏸️ IN PAUSA su ordine di Max
+- **Aperto:** 2026-09-05 · **Task:** TASK-LANCI-ECO-W2 · **Stato:** ✅ **CHIUSO** — versione 4 consegnata per intero
+- **Checkpoint di chiusura:** [CP-20260905-017](../checkpoints/CP-20260905-017.md)
 - **Continua:** [EMP-ECGA](EMP-ECGA.md) — che dichiarava il piano chiuso. **Non lo è più:**
   Max ha ordinato revisione totale e riscrittura ultra-architettata.
 
@@ -20,7 +21,7 @@ tutto ancora più architettato"*. È la seconda volta: la v3 non aveva soddisfat
 ### La critica (completa, 7 forze schierate, 6 rientrate)
 Tutti i rapporti sono in
 `C:\Users\Utente\AppData\Local\Temp\claude\c--Users-Utente-Desktop-qui-tutto-Digital-Empire\84927332-f056-487f-bf27-9e03c5796847\scratchpad\critica-lanci\`
-**⚠️ È lo scratchpad di sessione: se serve conservarli, vanno copiati nel repo prima che sparisca.**
+**✅ COPIATI NEL REPO** in `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/_critica-v3/` (300 KB): non spariscono più.
 
 | File | Contenuto |
 |---|---|
@@ -44,20 +45,22 @@ Dentro `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`:
 - [x] `01-ARCHITETTURA.md` — catena, `avanza`, stati, ponte, motore, errori, osservabilità,
       sicurezza e obblighi di legge, confini
 
-## Cosa è A METÀ — il lavoro riprende esattamente da qui
+## Cosa è STATO COMPLETATO dopo la pausa
 
-**Mancano quattro documenti**, tutti già progettati nella mappa di `00-LEGGIMI.md` §5:
+Tutti e quattro i documenti mancanti sono scritti, più le tre operazioni di chiusura:
 
-1. `02-PREVISIONE-E-DENARO.md` — modello del ricavo, costo macchina, pareggio, obblighi fiscali
-2. `03-FLUSSO-OFFERTA.md` — il cuore riscritto (le riparazioni sono già negli schemi)
-3. `04-COSTRUZIONE.md` — ordine, ore, sblocchi eseguibili, pre-mortem, condizioni d'uscita
-4. `05-ADR-022.md` e `06-CRITICA-E-GIRI.md`
-
-**E tre operazioni di chiusura:**
-5. Archiviare i vecchi dossier in `_v3-superata/` (**mai cancellarli**: Direttiva NIENTE SI SCARTA)
-6. Aggiornare i puntatori **nello stesso turno**: `REGISTRO-NUMERI.md`, `STATO-EMPIRE.md`,
-   `wiki/log.md`, `TASK-GAEL-20260831-SETTIMANA-02.md`
-7. Commit + push (**niente è ancora committato**)
+- [x] `02-PREVISIONE-E-DENARO.md` (354 righe) — **il costo macchina è calcolato**: 48-79 invocazioni
+      per lancio, 3,84-8,69 $ di sola tassa. Il tetto di 15 $ regge il lancio pulito, non regge molte
+      riprove: dichiarato apertamente
+- [x] `03-FLUSSO-OFFERTA.md` (371 righe) — sei fasi O1-O6, la firma come oggetto con impronta
+- [x] `04-COSTRUZIONE.md` (320 righe) — 6 scaglioni, pre-mortem a 10 voci, 5 condizioni d'uscita
+- [x] `05-ADR-023.md` (261 righe) — **rinumerato da 022**: quel numero è stato occupato da un'altra
+      sessione alle 19:30 (studio AI TUBE PRO, già ACCETTATA)
+- [x] `06-CRITICA-E-GIRI.md` (1.613 righe) — 12 fatali, 45 gravi, 8 respinti, 26 tenuti
+- [x] I nove rapporti della critica **salvati nel repo** in `_critica-v3/` (300 KB)
+- [x] La v3 archiviata in `_v3-superata/` con la propria nota, integrale
+- [x] Puntatori aggiornati nello stesso turno: registro numeri, task di Gael, stato, wiki
+- [x] Validatore rieseguito: **253 controlli, esce 0**; 137 sigle verificate, zero ignote
 
 ## Decisioni già prese — non rimetterle in discussione
 
@@ -82,7 +85,10 @@ Dentro `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`:
 4. **Il servizio dei subagenti è instabile**: un DOOM BOT è morto per errore server a metà lavoro.
    Antidoto che ha funzionato: far creare il file d'uscita SUBITO con le sezioni vuote e farlo
    risalvare a ogni sezione. Chi muore lascia comunque il lavoro fatto.
-5. **I rapporti della critica stanno nello scratchpad di sessione**, non nel repo.
+5. **I rapporti della critica sono ora nel repo**, in `_critica-v3/`.
+7. **La console è cp1252:** ogni script che stampa emoji va lanciato con `PYTHONIOENCODING=utf-8`.
+8. **`sed` con `|` come delimitatore rompe** sulle righe di tabella markdown: usare Python.
+9. **ADR-022 non è più libero**: occupato il 05/09 alle 19:30 da un'altra sessione. Il nostro è il **023**.
 6. **⚠️ SICUREZZA, da dire a Max ogni volta finché non è fatto:** la chiave del servizio di posta
    (Brevo) è pubblica da mesi e mai sostituita. Va cambiata **sul servizio**: la storia git
    pubblica resta leggibile. È B-020.
@@ -100,15 +106,13 @@ Dentro `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`:
 
 ## Il prossimo passo esatto
 
-```
-Scrivere PIANO-MAESTRO/29-ECOSISTEMA-LANCI/02-PREVISIONE-E-DENARO.md
-seguendo la mappa in 00-LEGGIMI.md §5, poi 03, 04, 05, 06.
-Infine: archiviare la v3, aggiornare i puntatori, commit+push.
-```
+**Nessuno sul piano: è chiuso.** Il lavoro riprende solo se Max decide qualcosa fra le quattro
+voci qui sotto, oppure quando Gael comincia a costruire da
+`PIANO-MAESTRO/29-ECOSISTEMA-LANCI/00-LEGGIMI.md` → `04-COSTRUZIONE.md` §3, scaglione S0.
 
 ## Cosa aspetta MAX — quattro decisioni, le prime due chiudibili in dieci minuti
 
 1. **Il Manuale si vende o è un regalo?** (ora ha default reversibile "vendita" a 7 giorni)
-2. **Sostituire la chiave di posta esposta** (cresce ogni giorno)
-3. Approvare l'**ADR-022**
+2. **Sostituire la chiave di posta esposta** (cresce ogni giorno — B-020)
+3. Approvare l'**ADR-023** (era il 022: quel numero è stato occupato da un'altra decisione)
 4. Riaprire o no **ADR-019** sul motore di orchestrazione

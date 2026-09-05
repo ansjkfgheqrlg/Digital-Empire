@@ -1,5 +1,36 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-05 (EMPERATOR — ecosistema LANCI: il piano passa alla versione 4)
+- INGEST: nessuno. Revisione totale e riscrittura, su ordine di Max: *"l'architettura deve essere
+  molto piu' architettata, a livello chirurgico"*. Era la seconda volta che lo chiedeva.
+- DEMOLITA la versione 3 (11 dossier, 3.718 righe) da **quattro revisori indipendenti**: oltre
+  **cinquanta difetti sostanziali, dodici fatali**. I nove rapporti sono conservati in
+  `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/_critica-v3/` (300 KB).
+- I DUE FATTI CHE HANNO CAMBIATO TUTTO, e che nessuno degli 11 dossier conosceva:
+  (1) **l'azienda non puo' incassare un euro** — nessun canale di pagamento attivo, il bottone
+  d'acquisto e' un indirizzo di posta; (2) **il canale di traffico del Manuale e' spento dal
+  29/07/2026** e dirottato su @dosementale (`wiki/log.md:1054-1063`). La versione 3 progettava
+  12 reparti e 50 agenti sopra quei due fatti, senza nominarli.
+- CREATA la versione 4: **7 documenti** (`00-LEGGIMI`, `01-ARCHITETTURA`, `02-PREVISIONE-E-DENARO`,
+  `03-FLUSSO-OFFERTA`, `04-COSTRUZIONE`, `05-ADR-023`, `06-CRITICA-E-GIRI`) piu' la cartella
+  `dati/`: **una fonte di verita' unica** (`registro.yaml`) validata da un programma
+  (`valida_registro.py` — 253 controlli, esce 0) e **13 schemi JSON**.
+- IL CAMBIO DI IMPOSTAZIONE: il centro non e' piu' il reparto, e' **l'artefatto**. 13 artefatti
+  tipizzati, 14 controlli con criterio eseguibile e test rosso, 15 agenti (non 41-50: ogni
+  invocazione costa 0,08-0,11 $ di sola tassa, ADR-014), 12 stati, 6 punti umani con scadenza,
+  10 invarianti verificati da un programma.
+- IL PRIMO GIORNO E' CAMBIATO: non piu' "crea la cartella", ma **incassa un euro vero e
+  rimborsalo**. I primi due scaglioni non contengono una riga di codice.
+- CONFLITTO INTERCETTATO: il numero **ADR-022 e' stato occupato alle 19:30 da un'altra sessione**
+  (studio AI TUBE PRO, stato ACCETTATA) mentre il piano veniva scritto. Rinumerato tutto ad
+  **ADR-023**, che e' libero, nello stesso turno.
+- ARCHIVIATA la versione 3 in `_v3-superata/` con la propria nota — **integrale, non cancellata**
+  (regola: niente si scarta).
+- PUNTATORI aggiornati nello stesso turno: `REGISTRO-NUMERI.md`, `TASK-GAEL-20260831-SETTIMANA-02.md`
+  (puntava al documento appena archiviato), `STATO-EMPIRE.md`, questo log.
+- VERIFICA: 137 sigle citate nei documenti, **zero inventate** — il difetto peggiore della v3
+  (sigle divergenti fra documenti) e' ora impossibile, e il controllo si rifa' in tre secondi.
+
 ## 2026-09-05 (EMPERATOR — piano dell'ecosistema LANCI, consegnato a Gael)
 - INGEST: nessuno. Lavoro di **progettazione**, non di ingestione.
 - CREATO: `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` — **11 dossier**, il piano di costruzione completo

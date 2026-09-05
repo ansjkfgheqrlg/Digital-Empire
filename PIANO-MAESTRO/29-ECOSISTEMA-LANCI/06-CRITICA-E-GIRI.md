@@ -1148,7 +1148,7 @@ condizioni di abbandono, l'ADR resterebbe in vigore a governare un ecosistema ab
 una descrizione.
 *Perché conta:* un ADR che riassume i dossier non vincola nulla, ed è esattamente il tipo di atto che
 la Memoria dell'Impero esiste per evitare.
-*v4:* l'ADR-022 è un documento a sé (`05-ADR-022.md`), la parte descrittiva vive nel registro che si
+*v4:* l'ADR-023 è un documento a sé (`05-ADR-023.md`), la parte descrittiva vive nel registro che si
 valida da solo, e le decisioni che aspettano una persona sono elencate e dichiarate aperte in
 `00-LEGGIMI.md` §4 invece di essere prese per silenzio dentro un atto.
 
@@ -1557,7 +1557,7 @@ decorativo** e la riparazione non è avvenuta.
 | **G-42** Nessuna osservabilità | grave | `registro-chiamate.jsonl` · verbale sempre · `lancio elenco` · `lancio costi` · `lancio blocchi` | eseguire `lancio blocchi`: deve elencare i punti umani aperti ordinati per giorni di attesa. Se non stampa niente e un lancio è fermo, l'osservabilità non funziona |
 | **G-43** Nessun obbligo di legge | grave | `01-ARCHITETTURA.md` §9 · `rinuncia_recesso_raccolta` nello schema dell'offerta | validare un'offerta senza il campo del recesso quando il prodotto si scarica subito: lo schema lo prevede e la nota ne dichiara l'effetto sui conti |
 | **G-44** Credenziale pubblica mai sostituita | grave | gesto **0** del giorno zero (`00-LEGGIMI.md` §3.1) | criterio già scritto: la vecchia chiave **non funziona più sul servizio**. Finché funziona, il giorno zero non è chiuso |
-| **G-45** L'ADR descriveva invece di decidere | grave | `05-ADR-022.md` separato · il descrittivo nel registro · le decisioni aperte dichiarate | `00-LEGGIMI.md` §4 elenca le decisioni che aspettano una persona: nessuna di esse è presa dentro l'ADR per silenzio |
+| **G-45** L'ADR descriveva invece di decidere | grave | `05-ADR-023.md` separato · il descrittivo nel registro · le decisioni aperte dichiarate | `00-LEGGIMI.md` §4 elenca le decisioni che aspettano una persona: nessuna di esse è presa dentro l'ADR per silenzio |
 
 ---
 
@@ -1576,7 +1576,7 @@ decorativo** e la riparazione non è avvenuta.
 - `00-LEGGIMI-GAEL.md` — la nota d'apertura per chi costruisce
 
 > **Nota di onestà sui puntatori.** La mappa del pacchetto (`00-LEGGIMI.md` §5) elenca anche
-> `02-PREVISIONE-E-DENARO.md`, `03-FLUSSO-OFFERTA.md`, `04-COSTRUZIONE.md` e `05-ADR-022.md`. Al
+> `02-PREVISIONE-E-DENARO.md`, `03-FLUSSO-OFFERTA.md`, `04-COSTRUZIONE.md` e `05-ADR-023.md`. Al
 > 2026-09-05, sul disco, esistono `00-LEGGIMI.md`, `00-LEGGIMI-GAEL.md`, `01-ARCHITETTURA.md`,
 > questo documento e la cartella `dati/`. Dove qui sopra si rimanda al 02, al 03, al 04 o al 05, si
 > rimanda a quella mappa e non a un file già scritto.

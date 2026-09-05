@@ -207,7 +207,7 @@ Sono **quattro**, e la prima blocca tutto il resto.
 | # | Decisione | Dove sono gli elementi | Costo dell'attesa |
 |---|---|---|---|
 | **1** | **Il Manuale si vende o è un regalo?** | `03-FLUSSO-OFFERTA.md` §3 — le due strade con le conseguenze, e quale è reversibile | **sei mesi finora.** Adesso ha una scadenza di 7 giorni e un default reversibile: se non arriva risposta si procede con "vendita" e si può tornare indietro |
-| 2 | Approvare l'**ADR-022** | `05-ADR-022.md`, pronto da copiare | senza, la cartella dell'ecosistema non può nascere: lo impone ADR-009 |
+| 2 | Approvare l'**ADR-023** | `05-ADR-023.md`, pronto da copiare | senza, la cartella dell'ecosistema non può nascere: lo impone ADR-009 |
 | 3 | Riaprire o no **ADR-019** | `01-ARCHITETTURA.md` §6 | nessuno: la risposta è già misurata, serve solo che sia registrata |
 | 4 | Sostituire la chiave di posta esposta | §3.1 gesto 0 | **cresce ogni giorno**: è pubblica dal repository, e la storia resta leggibile anche dopo |
 
@@ -225,7 +225,7 @@ seguono.
 | 02 | `02-PREVISIONE-E-DENARO.md` | il modello del ricavo, il costo di far girare il sistema, il pareggio, gli obblighi di legge | scaglione 1 |
 | 03 | `03-FLUSSO-OFFERTA.md` | il cuore: prezzo e data istruiti fino alla firma, riscritto dopo la demolizione | scaglione 1 |
 | 04 | `04-COSTRUZIONE.md` | ordine, ore, criteri di sblocco eseguibili, pre-mortem, condizioni di abbandono | prima di cominciare |
-| 05 | `05-ADR-022.md` | la decisione da registrare, pronta | **passo zero** |
+| 05 | `05-ADR-023.md` | la decisione da registrare, pronta | **passo zero** |
 | 06 | `06-CRITICA-E-GIRI.md` | i difetti trovati nella v3, uno per uno, e cosa è cambiato | quando una scelta sembra strana |
 | **dati/** | `registro.yaml` · `valida_registro.py` · `schemi/*.json` | **la fonte di verità** | sempre |
 

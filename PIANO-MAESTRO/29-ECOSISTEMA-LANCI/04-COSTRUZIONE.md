@@ -315,6 +315,6 @@ incoerente.
 - [[01-ARCHITETTURA]] — `avanza`, il ponte, gli errori, l'osservabilità
 - [[02-PREVISIONE-E-DENARO]] — il costo della macchina, che entra nel tetto di S2
 - [[03-FLUSSO-OFFERTA]] — ciò che S1 percorre a mano
-- [[05-ADR-022]] — la decisione da registrare **prima** di creare la cartella
+- [[05-ADR-023]] — la decisione da registrare **prima** di creare la cartella
 - `company/Memory/decisions/ADR-014-il-codice-torna-a-chiamare-un-modello.md`
 - `company/Memory/decisions/ADR-019-motore-orchestrazione-canonico.md`
