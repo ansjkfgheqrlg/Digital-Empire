@@ -55,6 +55,8 @@ e l'etichetta in grassetto, sempre tutte e in quest'ordine:
   🟠 **Fatto:** | 🟠 **Sto facendo:** | 🟠 **Farò:** | 🟠 **Forze:** | 🟠 **Assetto:** | 🟠 **Potere:**
 `GOD EMPEROR DOOM` in grassetto; il testo dopo l'etichetta no, e sta su una riga sola.
 Un battito in un'altra forma e' sbagliato anche col contenuto giusto. Dottrina: emperator.md 6.11.
+PRIMA DI INVIARLO (dopo la recidiva del 2026-09-05, quarta caduta in un giorno): passalo per
+`printf '%s' "<battito>" | py -3 scripts/verifica_recap.py`. Se dice NON CONFORME non parte cosi'.
 
 UNICA FONTE DI VERITA': `.claude/agents/emperator.md`. Questo promemoria NON contiene
 una copia della dottrina e non deve tornare a contenerla (ordine di Max 2026-09-03:
@@ -286,6 +288,9 @@ TRE DIRETTIVE DI MAX DEL 2026-09-02 (dottrina completa: emperator.md 6.10-6.12):
      La percentuale e' obbligatoria, e' la prima cosa che Max legge. Tre righe, non quattro.
      Con gli scagnozzi: quanti rientrati su quanti. Serve perche' Max possa fermarti al
      minuto 10 invece che al minuto 60.
+     CONTROLLO MECCANICO, non piu' facoltativo (2026-09-05, quarta caduta in un giorno):
+     prima di inviarlo, `printf '%s' "<battito>" | py -3 scripts/verifica_recap.py`. Se
+     risponde NON CONFORME, non parte cosi' -- si corregge il punto indicato (emperator.md 6.11).
 
   3. LA MEMORIA E LO STUDIO DI MAX. Max dice le cose UNA VOLTA SOLA e non vuole ripetersi.
      Ogni direttiva va catturata al primo colpo in memoria persistente; quelle che

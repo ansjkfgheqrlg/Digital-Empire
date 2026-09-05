@@ -615,6 +615,47 @@ Vale per **ogni** battito: quello automatico dei dieci minuti, quello chiesto co
 `recap`, quello di apertura con Gael e Neri (§6.16.2), quello di chiusura lavoro. Un battito
 scritto in un'altra forma è un battito sbagliato, anche se il contenuto è giusto.
 
+**IL CONTROLLO MECCANICO — quando la prosa, da sola, non basta più** *(ordine di Max,
+2026-09-05, quinta caduta sulla stessa regola)*.
+
+> ⚠️ **L'errore, ripetuto lo stesso giorno più di tre volte.** Le sei regole sopra esistevano
+> già, scritte carattere per carattere, ripetute nel promemoria di ogni messaggio
+> (`emperator_hook.py`) e rinforzate da quattro incidenti già scritti in questa stessa sezione —
+> posizione, gergo, forze, assetto. Nonostante questo il battito è uscito fuori forma **almeno
+> quattro volte nello stesso giorno**, e Max lo ha detto senza sconti: *"a volte lo fai bene e a
+> volte non lo fai, questo non va bene, hai sbagliato più di tre volte, questo è grave."*
+>
+> **La lezione, e stavolta è diversa dalle prime quattro.** Le cadute precedenti avevano tutte
+> un dettaglio mancante nella regola stessa — non diceva *dove*, non diceva *se ferma il
+> lavoro*, non diceva *con quali parole*, non diceva *ricontala ogni volta*. Questa volta la
+> regola non aveva buchi: sei punti, espliciti, ripetuti, con quattro precedenti scritti sopra
+> come monito. **Ha ceduto lo stesso.** Il che vuol dire che il buco non era nella regola: era
+> nel credere che una regola in prosa, per quanto scritta bene, basti da sola a governare un
+> output che parte a ogni turno. Non basta — dipende dalla disciplina del turno in cui la
+> applico, ed è esattamente ciò che un lavoro assorbente o una riga scritta di fretta erodono
+> (§6.14-bis).
+
+**Da adesso ogni battito passa da un controllo che non dipende dalla mia memoria del
+momento:** `scripts/verifica_recap.py`. Legge il testo del battito e risponde SI o NO — con la
+riga esatta che non torna, non un'impressione.
+
+```bash
+printf '%s' "<il battito che sto per inviare>" | py -3 scripts/verifica_recap.py
+```
+
+Se risponde `BATTITO NON CONFORME`, **il battito non parte così**: si corregge il punto
+indicato e si ricontrolla. Vale per **ogni** battito, senza eccezioni per l'urgenza o per "tanto
+si capiva" — è esattamente la scusa che ha prodotto le prime quattro cadute. Quando il canale
+non permette di lanciare un comando nell'istante, il minimo è rileggere le sei regole sopra una
+per una contro il testo appena scritto, prima di premere invio — ma il comando resta il
+controllo vero, quello su cui si può contare quando il lavoro è già in corso e l'attenzione è
+altrove.
+
+**Non sostituisce le sei regole: le rende verificabili invece che affidate al ricordo.** Questa
+caduta è registrata anche in `company/Ispettorato/registro/REGISTRO-ERRORI.md` come
+`ERR-20260905-001` — è esattamente la recidiva cross-cutting che `WF-RECIDIVA-GATE` esiste per
+bloccare, e da oggi passa da lì anche quando l'errore lo faccio io.
+
 **LA RIGA `Assetto` È OBBLIGATORIA IN OGNI BATTITO** *(ordine di Max, 2026-09-04)*.
 
 Dice in che modalità stai lavorando **in questo momento**: `GOD EMPEROR DOOM` oppure
