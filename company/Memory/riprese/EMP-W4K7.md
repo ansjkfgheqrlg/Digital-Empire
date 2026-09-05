@@ -40,6 +40,32 @@ video** — zero frame, dichiarato ovunque (`video_guardato: false`, 88 atomi co
 
 ---
 
+## 2-bis. AGGIORNAMENTO 2026-09-05 — ripresa in chat nuova
+
+**Errore in apertura, registrato perche' non si ripeta:** ho dedotto il checkpoint dalle date
+dei file del repo invece di leggere questo file, e sono partito su un lavoro sbagliato
+(ecosistema LANCI). Due agenti hanno fatto in tempo a scrivere
+`PIANO-MAESTRO/29-ECOSISTEMA-LANCI/02-PREVISIONE-E-DENARO.md` e `03-FLUSSO-OFFERTA.md`:
+restano su disco non committati, appartengono a `EMP-ECGA`, non a questo checkpoint.
+**Regola:** il codice di ripresa si LEGGE, non si deduce.
+
+**Fatto oggi su `max18-v01`:**
+- I frame erano a **640x360** mentre `video.mp4` sul disco e' **1920x1080**: ci accecavamo da
+  soli. Ri-estratti in `frames-hd/` a **1280x720** i **310 frame** delle scene 43-352
+  (ffmpeg locale, nessun nuovo download, 310/310 riusciti). `frames/` non e' stato toccato.
+- `_scene_index.json`: indice JSON delle 352 scene `{n, frame, ts}`, generato da `scenes.md`.
+- Tre sentinelle schierate in parallelo sulle scene **43-145 / 146-250 / 251-352**, ognuna
+  scrive il proprio `_parte-A|B|C.md` in append ogni 8 scene. L'unione in `video-analysis.md`
+  la faccio io, per non far scrivere tre teste sullo stesso file.
+
+**Ordine nuovo di Max, gia' chiuso nel codice (commit `fe35ab17`):** nessun identificativo di
+checkpoint e' piu' progressivo. `CP-YYYYMMDD-XXXX` con quattro caratteri sorteggiati, unicita'
+verificata su disco **e su tutta la storia git di ogni ramo**, file creato nell'istante del
+conio. Comando: `python scripts/checkpoint.py cp --titolo "..."`. Vale anche per Gael
+(`CLAUDE.md` aggiornato). La trappola "collisione di numeri checkpoint" del §6 e' chiusa.
+
+---
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte
@@ -60,11 +86,63 @@ Tutti verificati unici il 2026-09-04, nessun doppione col lotto max17.
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-1. **Finire `max18-v01` e `max18-v03`** ripartendo dai loro `video-analysis.md` parziali.
+1. **Finire `max18-v01`** ripartendo dal suo `video-analysis.md` parziale (`max18-v03` e'
+   gia' chiuso, vedi §2: la riga vecchia lo dava a meta' ed era sbagliata).
 2. **Poi i sei mai iniziati**, a giri da massimo 2-3 sentinelle in parallelo.
 3. **Poi la FASE 2 — e' quella che Max chiama "la cosa piu' importante in assoluto".**
    Implementare i consigli raccolti in tutti gli studi. Il primo e il piu' importante e'
    gia' identificato, vedi §5.
+4. **PASSO FINALE — IL LIBRO DELL'AGENCY**, vedi §4-bis: il documento pubblico ufficiale in
+   `.md` + `.py` + `.pdf` con il metodo Digital Empire e TUTTA la formazione acquisita.
+
+---
+
+## 4-bis. PASSO FINALE — IL LIBRO DELL'AGENCY (ordine di Max, 2026-09-05)
+
+**Aggiunto da Max come ultimo pezzo della missione: viene DOPO la Fase 2, e chiude EMP-W4K7.**
+
+### Cos'e'
+
+Un **documento pubblico ufficiale** che contiene, in un corpo solo:
+
+1. **IL METODO DIGITAL EMPIRE per scalare un'agenzia** — il nostro, preciso, operativo: come si
+   acquisisce, come si vende, come si consegna, come si scala, con i numeri e i passi reali.
+2. **TUTTA la formazione e la conoscenza acquisita** da cui quel metodo nasce — **ogni appunto,**
+   **ogni dettaglio, integrale, mai riassunto** (regola di casa). Non un'appendice di rimandi:
+   il materiale dentro il documento.
+
+### In quali formati (tutti e tre, obbligatori)
+
+| Formato | Dove | Note |
+|---|---|---|
+| `.md` | la sorgente, nella casa canonica del documento | e' la fonte di verita' del testo |
+| `.py` | lo script che costruisce il PDF | sopra `PIANO-MAESTRO/scripts/pdf_engine_empire.py`, come `build_dossier28_pdf.py`. Mai stile scritto a mano |
+| `.pdf` | generato dallo script | standard-oro dossier 28 (`emperator.md` §6.19): niente istruzioni di stile da chiedere |
+
+**Piu' il doppione**, legge `emperator.md` §6.17: copia identica in
+`documentazione Empire/Piani/Agency/` (la cartella esiste gia'). Mai spostare, copiare.
+
+### Da dove esce il contenuto — materiale gia' sul disco, misurato il 2026-09-05
+
+| Fonte | Quanto |
+|---|---|
+| `second-brain-vault/wiki/sources/` | **64 pagine fonte**, di cui **15** parlano di agenzia, acquisizione clienti, outreach, closing, prezzi |
+| `empire-studio/memory-empire/knowledge/` | **70 cartelle** di contenuto integrale archiviato |
+| `atoms.json` sparsi nei run | **147 file** di atomi |
+| studi max17 (`EMP-QQ2R`) + max18 (questo) | tutti i `video-analysis.md` e le pagine wiki prodotte |
+| skill `agency-scalping` | il metodo gia' codificato in casa, da confrontare e assorbire |
+
+### Regole di costruzione — non negoziabili
+
+- **Mai riassunti.** Il documento ESPANDE: ogni atomo di conoscenza entra piu' ricco, non piu'
+  corto. Chi taglia per brevita' ha sbagliato lavoro.
+- **Ogni affermazione porta la fonte esatta** (fonte + minuto/riga), come fa CONOSCENZA-EMPIRE.
+- **Il metodo nostro sta separato** dalla formazione grezza: due parti dichiarate, non un
+  impasto in cui non si capisce piu' cosa e' nostro e cosa e' di un altro.
+- **Documento pubblico:** niente credenziali, niente nomi di clienti, niente numeri interni non
+  destinati a uscire. Passa dal vaglio prima di essere dichiarato pubblico.
+- Serve il **conteggio di copertura** alla consegna: quante fonti sono entrate su quante
+  esistono. Si conta sul disco, non si dichiara.
 
 ---
 

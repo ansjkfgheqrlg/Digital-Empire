@@ -336,6 +336,53 @@ baseline. Se non si sono mossi, **sono io a proporti di fermare il piano.**
 
 ---
 
+# PARTE VI — IL PEZZO FINALE (ordine di Max, 2026-09-05)
+
+## 16. `IL METODO YOUTUBE AUTOMATION` — l'opera che chiude la missione
+
+Alla fine dello studio — **non prima**, non a rate — si consegna **un documento ufficiale e
+pubblico** che contiene **tutta** la formazione e la conoscenza del corso, organizzata. Non è
+un riassunto del corso: è **il corpus**, ordinato meglio dell'originale.
+
+**Tre formati obbligatori, stesso contenuto, un solo sorgente:**
+
+| Formato | File | A cosa serve |
+|---|---|---|
+| **Markdown** | `IL-METODO-YOUTUBE-AUTOMATION.md` | la fonte di verità, versionata in git |
+| **Python** | `il_metodo_youtube_automation.py` | il metodo **interrogabile dalla macchina**: fasi, regole, soglie, checklist come strutture dati che agenti e script possono leggere (stessa forma dei file in `regole/`) |
+| **PDF** | `IL-METODO-YOUTUBE-AUTOMATION.pdf` | il documento da leggere e da consegnare — stile minimal AP Sales, via HTML + Chromium |
+
+**Struttura del documento — in quest'ordine, non negoziabile:**
+
+1. **Parte finanziaria** — il modello di business per intero: da dove vengono i soldi, quanto
+   costa produrre, i numeri dichiarati nel corso, quelli veri nostri, e il confronto fra i due.
+2. **Sintesi** — tutte le fasi in forma stretta: il quadro completo che si legge in una volta.
+3. **Parte estesa** — tutto il resto, senza tagli: ogni regola primaria, ogni fase con la sua
+   procedura, **tutti i metodi** e poi **il metodo migliore** (dichiarato, motivato, scelto),
+   tutta la SEO, tutta la ricerca (nicchie, argomenti, parole chiave), tutte le analisi
+   (metriche, retention, CTR, performance), l'intero apparato di formazione e conoscenza.
+
+**Regole di costruzione:**
+
+- **Si costruisce dai materiali già prodotti**, non a memoria: gli `appunti.md`, i `report.md`,
+  i `REPORT-CATEGORIA.md` e il registro delle regole sono le fonti. Ogni affermazione del
+  documento è **tracciabile** a una lezione e a un minuto.
+- **Zero riassunti al posto della conoscenza**: dove il corso spiega una procedura in dieci
+  passi, il documento ha dieci passi. La sintesi sta nella §2, e solo lì.
+- **Il metodo migliore va dichiarato**: fra più metodi che il corso presenta, il documento dice
+  quale vince, perché, e a quali condizioni cade.
+- **Ciò che il corso sbaglia o che è invecchiato resta scritto**, marcato come tale: un corpus
+  che nasconde i punti deboli non è un corpus, è una brochure.
+- **Costruzione a nastro, non in un colpo**: il documento si assembla dalle parti di categoria
+  già chiuse — a ogni categoria chiusa la sua sezione è già scrivibile. L'ultima categoria
+  chiusa fa scattare l'assemblaggio finale, la parte finanziaria e la sintesi.
+
+**Criterio di uscita:** i tre file esistono, dicono la stessa cosa, il PDF è impaginato e
+leggibile, e ogni sezione della parte estesa cita la lezione da cui viene. Finché manca uno
+dei tre formati, **la missione non è chiusa**.
+
+---
+
 ## 15. Cosa è cambiato nei giri
 
 | Giro | Difetto trovato | Correzione |

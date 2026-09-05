@@ -1,3 +1,37 @@
+## 📕 2026-09-05 — Lo studio AI TUBE PRO si chiude con un'opera pubblica — ADR-022
+
+**Codice di ripresa: EMP-V6DE (APERTO).** Ordine di Max: la missione di studio delle 167 lezioni
+non finisce con la fabbrica migliorata, finisce con **`IL METODO YOUTUBE AUTOMATION`** — documento
+ufficiale e pubblico in **tre formati** (`.md` fonte di verità · `.py` metodo interrogabile dagli
+agenti · `.pdf` impaginato stile minimal AP Sales). Struttura fissa: parte finanziaria e modello
+di business → sintesi stretta di tutte le fasi → parte estesa integrale (regole primarie, tutte le
+fasi, tutti i metodi + il metodo migliore dichiarato, SEO, ricerca, analisi, formazione completa).
+Ogni affermazione tracciabile a lezione + minuto; si assembla **a nastro** da ogni categoria
+chiusa. Scritto in [ADR-022](decisions/ADR-022-opera-finale-metodo-youtube-automation.md), nel
+piano §16 e nella ripresa [EMP-V6DE](riprese/EMP-V6DE.md) §4-bis. **Finché mancano i tre formati,
+la missione è aperta.** Stato studio: 4/167 lezioni (2,4%), A4 al 19,0%; L04 in lavorazione
+(parlato letto, 19 frame guardati), fermo sul via di Max.
+
+## 🟠 2026-09-05 — Gate meccanico sul battito dopo la 5a caduta nello stesso giorno — CP-20260905-017
+
+**Codice di ripresa: EMP-YZGE (chiuso).** Max: il recap era uscito fuori forma almeno 4 volte
+nello stesso giorno nonostante la forma fissa scritta carattere per carattere in `emperator.md`
+§6.11 e ripetuta ad ogni messaggio — "questo è grave", ordine di rinforzare la regola davvero,
+non riscriverla una sesta volta. Creato `scripts/verifica_recap.py`: valida meccanicamente le
+sei righe del battito (ordine, pallino, grassetto, riga singola) prima dell'invio, verificato
+per esecuzione su un caso conforme e uno rotto con 4 difetti diversi. Obbligo innestato in
+`emperator.md` §6.11 ed entrambi i blocchi di `emperator_hook.py` (sveglia + ancoraggi apertura
+sessione). Registrato `ERR-20260905-001` in `company/Ispettorato/registro/REGISTRO-ERRORI.md`
+(APERTO — chiude solo dopo N battiti reali verificati conformi, non a fiducia). Committato e
+pushato (`71a6b100`).
+
+**Scoperta collaterale, per chi riprende:** durante il lavoro `scripts/checkpoint.py` è
+risultato per qualche istante sintatticamente non valido (`SyntaxError` alla riga 152) — non
+per colpa di questa sessione, ma per una scrittura in corso da un'altra sessione sulla stessa
+macchina (108 righe aggiunte, ancora non committate al momento di scrivere questa voce). Il
+file è tornato valido da solo un minuto dopo. Non toccato: non è lavoro mio. Se lo ritrovi
+ancora modificato-non-committato, non è un residuo mio.
+
 ## 🟠 2026-09-05 — Categoria Lanci + copertina Brand Guidelines rifatta — CP-20260905-015
 
 **Codice di ripresa: EMP-BGRIF.** Max: contenuto Brand Guidelines CCM perfetto, grafica no —

@@ -1,0 +1,5 @@
+﻿[2026-09-05 19:12:34] CONFLITTO DI SYNC
+Push fallito: 
+Il tuo lavoro e' al sicuro (committato in locale).
+Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
+Poi cancella questo file.

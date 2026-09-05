@@ -200,6 +200,10 @@ nul
 # Frame estratti da Empire Studio: artefatti rigenerabili (yt_ingest + estrazione a 2s).
 # 12.747 file, 2,4 GB. Restano su disco, fuori dal repo.
 **/frames/frame-*.png
+# Stessa cosa in HD: la regola sopra copre solo la cartella "frames/", non "frames-hd/" —
+# buco vero, trovato il 2026-09-05 quando un commit automatico (git add -A) ne ha
+# inglobati 259 prima del push. Chiuso qui.
+**/frames-hd/*.png
 # Binario di build, 72 MB
 .claude/skills/workflow-pubblicazione-auto/DE_Publisher.exe
 # Risorsa PDF del corso, 46 MB: resta in locale

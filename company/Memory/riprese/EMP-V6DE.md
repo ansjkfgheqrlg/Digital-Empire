@@ -82,6 +82,21 @@ A fine categoria: `REPORT-CATEGORIA.md`, `APPUNTI-CATEGORIA.md`, gate a 7 condiz
 **Ordine delle categorie** (piano §10): A4 Metodo AI Tube (21) → A6 Viral Mastery (10) →
 B1 Masterclass 2026 (7) → B2 Crypto (10) → poi le altre.
 
+## 4-bis. IL PEZZO FINALE — come si chiude la missione (ordine di Max, 2026-09-05)
+
+Lo studio **non si chiude con le 167 lezioni**: si chiude con un'opera pubblica,
+`IL METODO YOUTUBE AUTOMATION`, in **tre formati** (`.md` fonte di verità · `.py` metodo
+interrogabile dagli agenti · `.pdf` impaginato, stile minimal AP Sales via HTML+Chromium).
+
+Struttura fissa: **1) parte finanziaria e modello di business · 2) sintesi stretta di tutte le
+fasi · 3) parte estesa integrale** — regole primarie, tutte le fasi, tutti i metodi e poi il
+metodo migliore dichiarato e motivato, tutta la SEO, tutta la ricerca, tutte le analisi,
+l'intera formazione. Ogni affermazione tracciabile a lezione + minuto. Si assembla **a nastro**
+da ogni categoria chiusa, mai scritto a memoria alla fine.
+
+Piano: §16. Decisione: [ADR-022](../decisions/ADR-022-opera-finale-metodo-youtube-automation.md).
+**Finché mancano i tre formati, la missione è APERTA.**
+
 ## 5. DECISIONI GIÀ PRESE — non ridiscuterle
 
 - **Doppio binario.** Binario A (agenti, regolatori, reference, regole) si applica **dopo ogni

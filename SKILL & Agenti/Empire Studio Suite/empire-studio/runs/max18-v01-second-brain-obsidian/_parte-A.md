@@ -1,0 +1,55 @@
+# Video Analysis — `RnoC5IlOUhs` — PARTE A (Sentinella scene 43→145)
+
+> Continuazione di `video-analysis.md` (scene 1-42). Frame in HD 1280x720 da `frames-hd/`, indice scene da `_scene_index.json` (rigenerato 2026-09-05).
+> Convenzioni identiche al file principale: `➕` = inferenza non letta/sentita, `⭐` = scena-atomo (tesi/numero/struttura/comando/regola), citazioni fra virgolette da `transcript.md`.
+
+## ⚠️ Nota di disallineamento numerazione scene (per chi unisce i file)
+
+`video-analysis.md` (scene 1-42) è stato scritto il 2026-09-04 sul vecchio `scenes.json`/`scenes.md` (frame 640x360). `_scene_index.json` (2026-09-05, frame HD) rinumera le scene: confronto per nome-frame mostra che **scena-vecchia N = scena-nuova N solo fino a N=38**. Da lì:
+- **scena-nuova 39 = `frame-0187.png` (18:36)** — scena NON presente nel vecchio indice, quindi **non descritta in nessun file** (cade fuori sia da `video-analysis.md` 1-42 sia da questo blocco 43-145).
+- **scena-nuova 41 = `frame-0196.png` (19:30)** — stesso caso: **non descritta in nessun file**.
+- Da qui in poi scena-vecchia N = scena-nuova N+2: **scena-nuova 43 (`frame-0199`, 19:48) = scena-vecchia 41**, già descritta in `video-analysis.md` (fine PARTE 2); **scena-nuova 44 (`frame-0202`, 20:06) = scena-vecchia 42**, idem.
+
+Quindi in questo blocco le scene 43 e 44 sono **doppioni già coperti**: sotto ricevono una voce corta di cross-reference (non ridescritte per intero, come da regola "non ripetere"), verificata comunque sul frame HD. Le scene 45→145 sono territorio vergine, trattate per intero. Le due scene orfane (39, 41 nuova numerazione) restano un **buco da colmare** — chi fa il merge finale dovrebbe aprire `frame-0187.png` e `frame-0196.png` e scrivere le due voci mancanti.
+
+---
+
+### Scena 43 · `frame-0199.png` · 19:48 — [= vecchia Scena 41, già in `video-analysis.md`]
+Verificato su HD: slide Excalidraw pulita "**L'arbitraggio del cervello aziendale**" / "Chi si muove prima prende ciò che chi arriva dopo non recupera", due colonne — "1. Si accumula" (ciclo Lo usi ogni giorno → La memoria cresce → Risposte migliori, cerchio chiuso, didascalia "Il tempo non si compra") e "2. Quasi nessuno lo sa fare" (icona finestra, "Oggi: 💎 vantaggio raro" → "Domani: 📄 normalità", didascalia "Come il sito web nel 1999"). Webcam PiP in basso a sinistra. Contenuto identico a quanto già scritto; l'HD non aggiunge dati nuovi rispetto alla versione già a wiki.
+Voce: *"il fulcro di tutto è, e vorrei fermarmi sulla prima parte, che queste company Brain"*.
+
+### Scena 44 · `frame-0202.png` · 20:06 — [= vecchia Scena 42, già in `video-analysis.md`]
+Verificato su HD: stessa slide, inquadratura zoomata sulla colonna 1 (il pannello proprietà Excalidraw a sinistra è visibile — stroke/background/opacity/layers — segno che un elemento è selezionato). Nessun dato nuovo rispetto alla descrizione esistente.
+Voce: *"sono che vedremo ora, sono dei giganteschi cervelli che cominciano a contenere mano tutta la conoscenza aziendale e cominciano a conoscervi nel corso del tempo."*
+
+---
+
+# PARTE 3 — L'arbitraggio si chiude: chi guadagna cosa (20:24 → 24:54)
+
+### Scena 45 · `frame-0205.png` · 20:24
+Stessa slide "L'arbitraggio del cervello aziendale", inquadratura ulteriormente stretta sulla colonna 1 (titolo e colonna 2 tagliati dal bordo destro del frame). Pannello proprietà Excalidraw ancora aperto a sinistra.
+Voce: *"cominciamo ad utilizzarla la nostra memoria comincia a crescere, la conoscenza dell'AI diventa migliore per quanto riguarda la nostra azienda, quindi ci comincia a conoscere meglio. Riceveremo poi risposte migliori. Con risposte migliori noi potremmo continuare a riutilizzarla sempre in maniera più efficiente. Questo ciclo continua."*
+
+### Scena 46 · `frame-0209.png` · 20:48
+Stessa slide: il ciclo "1. Si accumula" viene ripercorso dal vivo con tratti **blu** ridisegnati sopra le frecce nere esistenti (Lo usi ogni giorno → La memoria cresce → Risposte migliori), evidenziandolo mentre l'autore parla.
+Voce: *"fare una rappresentazione grafica super semplice, se questo"* — introduce il grafico ROI che disegnerà nella scena successiva.
+
+### Scena 47 · `frame-0210.png` · 21:54 — **inizio del grafico ROI/Tempo a mano** ⭐
+Vista scrollata a sinistra: canvas bianco vuoto con due tratti verticali neri separati (inizio disegno degli assi), la slide precedente spinta a destra e in parte tagliata (resta visibile "1. Si accumula" col ciclo blu e, appena leggibile al bordo, l'inizio della colonna 2).
+Voce (frase lunga, 21:54→22:06): *"se questo è il vostro tempo e questo è il vostro ritorno sull'investimento che avete nell'utilizzare questo tipo di sistema, se voi non lo utilizzate, avrete una curva nell'utilizzo dell'AI più o meno fatta così […] perché i modelli di AI diventano migliori […] ma così anche tutti i vostri competitor, quindi non dimenticatevi che la curva dei competitor cresce esattamente come la vostra, quindi ha zero vantaggio competitivo. […] Mentre se utilizzate una company Brain come quella che avremo oggi, avremo una curva di questo tipo […] perché l'AI comincia a conoscervi sempre meglio e questo è esattamente il vostro vantaggio competitivo. […] chi vincerà nell'AI o"* — tesi centrale: senza company brain il vantaggio dell'AI è zero (tutti salgono alla stessa curva); con la company brain la curva è ripida e personale.
+⚠️ Nota: il timestamp nominale in `_scene_index.json` per questa scena è 20:54, ma il frame mostra chiaramente l'inizio del disegno degli assi ROI/Tempo che nel transcript inizia solo verso 21:54-22:00 (subito prima del completamento visto in scena 48 a 22:06) — la citazione sopra è presa dalla finestra di trascrizione realmente coerente col contenuto visivo, non dal minuto nominale.
+
+### Scena 48 · `frame-0222.png` · 22:06 — **il grafico ROI completo: con vs senza company brain** ⭐
+Grafico a mano completato: assi **"ROI"** (verticale) e **"Tempo"** (orizzontale). Due curve: una **blu** ripida che sale quasi verticale a fine percorso, e una linea tratteggiata **verde/arancione alternata** molto più piatta. Tra le due, in corrispondenza dell'estremità destra, una **freccia rossa a doppia punta verticale** misura lo scarto, chiuso da una **parentesi graffa verde**. Slide precedente ("L'arbitraggio del cervello aziendale", ciclo "1. Si accumula") ancora visibile sulla destra del frame.
+➕ La curva blu ripida rappresenta il ROI con company brain, la linea piatta tratteggiata il ROI senza (i "competitor" citati a voce); la freccia rossa è il vantaggio competitivo misurato.
+Voce: *"chi avrà il miglior ritorno nell'investimento sono le aziende grosse perché loro hanno già dei processi, hanno già un sacco di conoscenza. Quindi l'AI può essere allenata su un sacco di dati. Noi ci stiamo muovendo in un mondo che è sempre più […] governato dai dati"*.
+
+### Scena 49 · `frame-0225.png` · 22:24
+Stesso grafico ROI/Tempo, inquadratura scrollata leggermente; in alto a sinistra compare la scritta a mano in rosso **"DAT[…]"** (inizio di "DATA", tagliata dal bordo — coerente con "data first" detto a voce).
+Voce: *"data first. E con l'AI i dati sono il nuovo oro, come lo erano per i social media, ma ora ancora di più, ma in questo caso sono i vostri dati per la vostra azienda."*
+
+### Scena 50 · `frame-0233.png` · 23:12 — **il "LAG" del competitor in ritardo** ⭐
+Vista scrollata ulteriormente a sinistra: in alto **"[DA]TA FIRST"** (parzialmente leggibile, tagliato a sinistra) e sotto, in rosso, **"LAG"** con una linea tratteggiata rossa a onde sotto la scritta. Una linea verticale nera scende dall'asse fino a un **pallino rosso pieno** sull'asse Tempo, a metà percorso circa. Sulla destra restano visibili il grafico ROI (curva blu, linea tratteggiata verde/arancione, freccia rossa, parentesi verde) e la slide del ciclo "1. Si accumula" con "Lo usi ogni giorno / La memoria cresce / Risposte migliori" leggibili per intero.
+➕ Il pallino rosso segna il punto temporale in cui un competitor/startup entra nel mercato "in ritardo"; "LAG" etichetta lo scarto da colmare.
+Voce: *"che il vostro vantaggio competitivo è anche rispetto alla startup che vuole fregarvi […] che la startup avrà un lag, quindi un ritardo di tutta questa parte qui, ipotizzando che la startup […] entri qui. Avrà un ritardo di tutto questo periodo qui che voi avrete modo con la vostra AI di colmare."*
+
