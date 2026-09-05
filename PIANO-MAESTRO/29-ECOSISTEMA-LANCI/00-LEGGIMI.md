@@ -16,6 +16,94 @@ Autore: Max (via Emperator) · Esecutore della costruzione: Gael
 
 ---
 
+# 📬 PRIMA DI TUTTO — QUESTA PAGINA È PER TE, GAEL
+
+> Sono **Emperator Agent**. Questa pagina va prima di ogni altra cosa: senza, rischi di leggere
+> il resto con l'umore sbagliato — e stavolta ancora di più, perché c'è una notizia da darti.
+
+## Il piano che ti era stato consegnato è stato rifatto da capo
+
+Ieri hai ricevuto un pacchetto di undici dossier. **Quel pacchetto è stato smontato**, e quello
+che hai davanti adesso è la versione 4. Te lo dico subito e chiaro, perché scoprirlo da solo
+aprendo una cartella diversa sarebbe peggio.
+
+**Cosa è stato demolito, e di chi era:** i dossier demoliti erano **il lavoro di Max**, non il
+tuo. Max li ha fatti fare, Max li ha fatti criticare da quattro revisori indipendenti, e i
+revisori hanno trovato oltre cinquanta difetti sostanziali, dodici fatali. Nessuno di quei difetti
+sta nel tuo lavoro.
+
+**Il tuo L1-L2-L3 non è stato toccato ed è ancora la base di tutto.** La ricognizione e
+l'assorbimento sono citati per nome in tutta la versione 4: le 2.377 righe misurate con i comandi
+in chiaro, le 26.300 righe di materiale storico aperte, i 58 framework mappati. Quel lavoro ha
+retto alla revisione. Il piano scritto sopra, no.
+
+**E la versione 3 non è stata cancellata:** sta integrale in `_v3-superata/`, con una nota che
+spiega perché è stata superata. Niente si scarta.
+
+## Perché è cambiato — i due fatti che nessuno sapeva
+
+Non è stato un capriccio di stile. I revisori hanno misurato due cose che **nessuno degli undici
+dossier conosceva**, e che cambiano l'ordine di tutto:
+
+1. **Digital Empire non può incassare un euro.** Nessun canale di pagamento attivo, il bottone
+   d'acquisto è un indirizzo di posta, i registri di entrate e spese hanno zero righe.
+2. **Il canale che doveva portare pubblico al Manuale è spento dal 29/07/2026** e dirottato su un
+   altro progetto.
+
+Il piano precedente progettava dodici reparti e cinquanta agenti **sopra quei due fatti, senza
+nominarli**. Era costruire la torre di controllo prima della pista.
+
+## Cosa cambia per te, in concreto
+
+| | Versione 3 | **Versione 4** |
+|---|---|---|
+| Da dove si comincia | crea la cartella dell'ecosistema | **incassa un euro vero e rimborsalo** |
+| I primi due blocchi di lavoro | codice | **nessuna riga di codice** |
+| Quanti agenti scrivi | 41-50 | **15** |
+| Dove stanno le sigle e i numeri | ricopiati a mano in undici documenti | **in un file solo**, `dati/registro.yaml`, con un programma che lo verifica |
+| Quanti documenti devi leggere per cominciare | undici | **due**: questo e il 04, sezione 3 |
+| Ore stimate | 139-187 | 118-174 |
+
+**La cosa che ti semplifica di più la vita:** non devi più tenere insieme a mente sigle sparse in
+undici file. Se un documento contraddice il registro, ha torto il documento. E un comando te lo
+dice in tre secondi:
+
+```bash
+cd PIANO-MAESTRO/29-ECOSISTEMA-LANCI/dati
+PYTHONIOENCODING=utf-8 python valida_registro.py
+```
+
+## La costruzione resta tua, e non è stata toccata di una riga
+
+**Nessuna cartella creata. Nessun agente scritto. Nessuna skill forgiata.** Il repository, sul
+lato lanci, è esattamente come l'hai lasciato tu. Quello che trovi in più è soltanto carta di
+progetto — cioè precisamente la parte che costa tempo, annoia, e non si vede quando è fatta bene.
+
+**Ti è stata tolta la parte che non si vede. Ti resta la parte che si vede.**
+
+## Da dove parti, domani mattina
+
+1. Questa pagina.
+2. Il §3 di questa pagina — **il primo giorno**.
+3. `04-COSTRUZIONE.md`, sezione 3, scaglione **S0**: sei gesti, nessuno dei quali è codice.
+
+Non leggere tutto il pacchetto il primo giorno. Il 06 è lungo 1.600 righe e serve per una cosa
+sola: quando una scelta della versione 4 ti sembra strana, lì c'è scritto **contro quale difetto
+misurato** è stata presa.
+
+## Una cosa sola ti chiedo — e vale il doppio adesso
+
+**Se qualcosa qui dentro ti sembra sbagliato, dillo — non aggirarlo in silenzio.** Un piano
+scritto da un altro ed eseguito controvoglia produce un ecosistema peggiore di un piano mediocre
+scritto da chi lo costruisce. E questo piano è già stato riscritto una volta perché qualcuno l'ha
+criticato sul serio: **la critica qui dentro funziona, e non costa niente a chi la fa.**
+
+Apri una chat, scrivi `Emperator`, e si ridiscute con i numeri davanti.
+
+— *Emperator Agent*
+
+---
+
 # 1. IL PROBLEMA, IN NUMERI MISURATI OGGI
 
 Non è teoria e non è la diagnosi della versione precedente: sono misure fatte il 2026-09-05,
@@ -220,7 +308,7 @@ seguono.
 
 | # | Documento | Cosa contiene | Quando lo apri |
 |---|---|---|---|
-| **00** | *questo* | problema, tesi, primo giorno, decisioni, quando si smette | adesso |
+| **00** | *questo* | **la nota per Gael**, problema, tesi, primo giorno, decisioni, quando si smette | adesso |
 | 01 | `01-ARCHITETTURA.md` | la macchina: artefatti, stati, controlli, errori, concorrenza, il ponte verso gli agenti, il motore | prima di costruire |
 | 02 | `02-PREVISIONE-E-DENARO.md` | il modello del ricavo, il costo di far girare il sistema, il pareggio, gli obblighi di legge | scaglione 1 |
 | 03 | `03-FLUSSO-OFFERTA.md` | il cuore: prezzo e data istruiti fino alla firma, riscritto dopo la demolizione | scaglione 1 |

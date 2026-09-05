@@ -1325,7 +1325,7 @@ Qui ci sono quelle che la versione 4 ha preso e portato dentro, con dove sono fi
 | 23 | **«Un agente scritto solo in una cartella di reparto è una specifica, non un agente»** (`01:476-482`) | `CRITICA-A.md` S-A-13, «diagnosi esatta di un guasto reale e verificato» | il registro elenca gli agenti con grado, modello e strumenti: la specifica e l'agente sono lo stesso dato |
 | 24 | **Aver verificato il riuso invece di dichiararlo**: aver misurato che cinque componenti non accettano parametri e aver dichiarato che il piano stesso aveva scritto un contratto inesistente (`05:301-320`, `06:214-227`) | `CRITICA-B.md` S-09, «il comportamento più sano dei tre documenti» | tenuto come metodo: ogni misura di questo pacchetto porta la data e il comando accanto |
 | 25 | **Il divieto della parola «pianificato» senza data e nome** (`09:1`) | `CRITICA-EMPERATOR.md` D.8 | tenuto |
-| 26 | **La nota d'apertura a Gael** | `CRITICA-EMPERATOR.md` D.9, «risolve un problema umano vero» | confluita nel §1 di `00-LEGGIMI.md`; l'originale in `_v3-superata/00-LEGGIMI-GAEL.md` |
+| 26 | **La nota d'apertura a Gael** | `CRITICA-EMPERATOR.md` D.9, «risolve un problema umano vero» | riscritta per la v4 in apertura di `00-LEGGIMI.md`; l'originale in `_v3-superata/00-LEGGIMI-GAEL.md` |
 
 **Una cosa va detta senza attenuarla:** la diagnosi centrale della versione 3 — *«non c'è un buco
 di capacità, c'è un buco di decisione ed esecuzione»* — è **giusta**, ed è la ragione per cui la

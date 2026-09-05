@@ -413,8 +413,9 @@ toglie di mezzo pagandolo una volta sola per tutta la settimana.
 > cartella creata, nessun agente scritto, nessuna skill forgiata.
 >
 > **📂 Il piano: `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` — comincia da `00-LEGGIMI.md`.**
-> Sette documenti più la cartella `dati/`. Il primo contiene il problema, la tesi, il primo giorno
-> e le condizioni in cui si smette. Gli altri si consultano, non si studiano.
+> Sette documenti più la cartella `dati/`. **Il primo si apre con una pagina scritta per te** —
+> cosa è cambiato dalla versione che avevi ricevuto e perché — e prosegue con il problema, la tesi,
+> il primo giorno e le condizioni in cui si smette. Gli altri si consultano, non si studiano.
 >
 > **⚠️ Il piano è alla versione 4.** La versione 3 — quella con dodici reparti e cinquanta agenti —
 > è stata smontata da quattro revisori indipendenti (oltre cinquanta difetti sostanziali, dodici
