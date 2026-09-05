@@ -1,4 +1,4 @@
-# CP-YYYYMMDD-NNN — <titolo task>
+# CP-YYYYMMDD-XXXX — <titolo task>
 
 - **Data:** YYYY-MM-DD
 - **Ecosistema/Reparto:** <01-agency … 10-memory> / <reparto>

@@ -831,7 +831,40 @@ python scripts/checkpoint.py nuovo --titolo "..." --task "..."
 python scripts/checkpoint.py lista
 python scripts/checkpoint.py leggi EMP-K7Q2
 python scripts/checkpoint.py chiudi EMP-K7Q2
+python scripts/checkpoint.py cp --titolo "..."      # CP di lavoro, codice coniato
 ```
+
+### LEGGE ANTI-COLLISIONE — nessun codice e' mai progressivo
+
+**Ordine di Max, 2026-09-05, dato dopo il secondo scontro di checkpoint.**
+
+Un identificativo progressivo (`CP-YYYYMMDD-001`, `-002`, `-003`) e' **rotto per
+costruzione**, e il difetto non e' la disattenzione di chi lo scrive: e' che due chat
+aperte insieme **non si vedono**. Ognuna guarda la cartella, trova lo stesso "ultimo
+numero", e sceglie lo stesso "prossimo". Nessuna delle due sta sbagliando: sbaglia la
+regola, perche' presume un osservatore unico che non esiste.
+
+**Quindi, sempre e senza eccezioni:**
+
+| Cosa | Forma | Come nasce |
+|---|---|---|
+| checkpoint di ripresa | `EMP-XXXX` | quattro caratteri **sorteggiati** |
+| checkpoint di lavoro | `CP-YYYYMMDD-XXXX` | quattro caratteri **sorteggiati**, mai un numero in fila |
+
+- I codici si **sorteggiano** dall'alfabeto senza lettere ambigue (614.656 combinazioni
+  per giorno): due chat che non si parlano non collidono per probabilita', non per
+  coordinamento — perche' il coordinamento non c'e'.
+- L'unicita' si verifica contro **il disco di adesso E tutta la storia di git, su ogni
+  ramo** (`git log --all --diff-filter=A`): un codice usato in una sessione parallela e
+  poi spostato resta bruciato per sempre.
+- **Il file nasce nello stesso istante del codice.** Coniare senza scrivere lascia una
+  finestra in cui un'altra chat puo' prendere lo stesso codice.
+- **Mai** scegliere un numero leggendo la cartella e aggiungendo uno. Mai. Il comando
+  `checkpoint.py cp` esiste per questo: non si conia a mano.
+
+> Costo gia' pagato: due volte, l'ultima il 2026-09-05, con checkpoint sovrascritti fra
+> sessioni parallele e buchi nella numerazione del giorno (004-008 mancanti).
+
 
 I file vivono in `company/Memory/riprese/<CODICE>.md`. Il codice è `EMP-XXXX`, quattro
 caratteri, **alfabeto senza lettere ambigue** (niente O/0, I/1/L, S/5): un codice si detta a

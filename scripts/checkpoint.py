@@ -27,6 +27,16 @@ Uso:
     python scripts/checkpoint.py leggi EMP-K7Q2
     python scripts/checkpoint.py nuovo --titolo "..." --task "..."
     python scripts/checkpoint.py chiudi EMP-K7Q2
+    python scripts/checkpoint.py cp --titolo "..."   (CP-YYYYMMDD-XXXX)
+
+LEGGE ANTI-COLLISIONE (ordine di Max, 2026-09-05)
+-------------------------------------------------
+Nessun identificativo di checkpoint e' progressivo. Ne' EMP-XXXX ne'
+CP-YYYYMMDD-XXXX. Il progressivo e' rotto per costruzione: due chat che
+lavorano in parallelo non si vedono, calcolano lo stesso "prossimo numero" e
+si sovrascrivono. I codici si SORTEGGIANO, si verificano contro il disco E
+contro tutta la storia git (ogni ramo), e il file nasce subito per occupare
+il codice.
 
 Console Windows: solo ASCII in output.
 """
@@ -52,9 +62,11 @@ def assicura_cartella():
 
 
 def codici_esistenti():
-    if not os.path.isdir(CARTELLA):
-        return set()
-    return set(n[:-3] for n in os.listdir(CARTELLA) if n.endswith(".md"))
+    usati = set()
+    if os.path.isdir(CARTELLA):
+        usati |= set(n[:-3] for n in os.listdir(CARTELLA) if n.endswith(".md"))
+    usati |= _nomi_mai_esistiti("company/Memory/riprese")
+    return usati
 
 
 def nuovo_codice():
@@ -65,6 +77,94 @@ def nuovo_codice():
         if c not in usati:
             return c
     raise RuntimeError("Non trovo un codice libero: sono finiti o la cartella e' rotta.")
+
+
+CARTELLA_CP = os.path.join(RADICE, "company", "Memory", "checkpoints")
+
+_CACHE_GIT = {}
+
+
+def _nomi_mai_esistiti(sottocartella):
+    """Ogni nome di file MAI aggiunto in tutta la storia del repo, su ogni ramo.
+
+    Serve perche' un codice puo' essere stato usato in una sessione parallela e
+    poi spostato, rinominato o cancellato: la cartella di adesso non basta.
+    """
+    if sottocartella in _CACHE_GIT:
+        return _CACHE_GIT[sottocartella]
+    nomi = set()
+    try:
+        import subprocess
+        out = subprocess.run(
+            ["git", "log", "--all", "--diff-filter=A", "--name-only",
+             "--pretty=format:", "--", sottocartella],
+            cwd=RADICE, capture_output=True, text=True, timeout=60)
+        for riga in out.stdout.splitlines():
+            riga = riga.strip()
+            if riga.endswith(".md"):
+                nomi.add(os.path.basename(riga)[:-3])
+    except Exception:
+        pass  # senza git si lavora lo stesso, con meno memoria
+    _CACHE_GIT[sottocartella] = nomi
+    return nomi
+
+
+def sorteggia(n=4):
+    return "".join(random.choice(ALFABETO) for _ in range(n))
+
+
+def cp_esistenti():
+    """Tutti i CP: quelli sul disco adesso + quelli mai nati nella storia git."""
+    usati = set()
+    if os.path.isdir(CARTELLA_CP):
+        usati |= set(n[:-3] for n in os.listdir(CARTELLA_CP) if n.endswith(".md"))
+    usati |= _nomi_mai_esistiti("company/Memory/checkpoints")
+    return usati
+
+
+def nuovo_cp(titolo, quando=None):
+    """Conia un identificativo di checkpoint IRRIPETIBILE: CP-YYYYMMDD-XXXX.
+
+    Il numero progressivo e' vietato per costruzione: due chat che non si
+    vedono sceglierebbero lo stesso 'prossimo numero'. Qui i quattro caratteri
+    sono sorteggiati (614.656 combinazioni al giorno) e il file viene creato
+    subito, cosi' il codice e' occupato nell'istante in cui nasce.
+    """
+    os.makedirs(CARTELLA_CP, exist_ok=True)
+    giorno = (quando or datetime.now()).strftime("%Y%m%d")
+    usati = cp_esistenti()
+    codice = None
+    for _ in range(2000):
+        c = "CP-%s-%s" % (giorno, sorteggia(4))
+        if c not in usati and not os.path.exists(os.path.join(CARTELLA_CP, c + ".md")):
+            codice = c
+            break
+    if not codice:
+        raise RuntimeError("Nessun codice CP libero: cartella rotta o alfabeto esaurito.")
+    modello = os.path.join(RADICE, "company", "Memory", "templates", "CP-template.md")
+    testo = ""
+    if os.path.exists(modello):
+        testo = io.open(modello, encoding="utf-8").read()
+        testo = testo.replace("CP-YYYYMMDD-NNN", codice, 1)
+        testo = testo.replace("<titolo task>", titolo, 1)
+        testo = testo.replace("YYYY-MM-DD", datetime.now().strftime("%Y-%m-%d"), 1)
+    else:
+        righe = ["# " + codice + " - " + titolo, "",
+                 "- **Data:** " + datetime.now().strftime("%Y-%m-%d"), ""]
+        testo = chr(10).join(righe)
+    with io.open(os.path.join(CARTELLA_CP, codice + ".md"), "w",
+                 encoding="utf-8", newline=chr(10)) as f:
+        f.write(testo)
+    print("")
+    print("  CHECKPOINT DI LAVORO CONIATO (codice irripetibile, mai progressivo)")
+    print("")
+    print("     CODICE:  %s" % codice)
+    print("     Titolo:  %s" % titolo)
+    print("     File:    company/Memory/checkpoints/%s.md" % codice)
+    print("")
+    print("  Il file esiste gia': il codice e' occupato, nessuna altra chat puo' prenderlo.")
+    print("")
+    return codice
 
 
 def percorso(codice):
@@ -278,6 +378,9 @@ def main():
     c = sub.add_parser("chiudi", help="marca un checkpoint come chiuso")
     c.add_argument("codice")
 
+    k = sub.add_parser("cp", help="conia un CP di lavoro con codice irripetibile")
+    k.add_argument("--titolo", required=True)
+
     a = ap.parse_args()
 
     if a.comando == "nuovo":
@@ -286,6 +389,8 @@ def main():
         return leggi(normalizza_codice(a.codice))
     elif a.comando == "chiudi":
         return chiudi(normalizza_codice(a.codice))
+    elif a.comando == "cp":
+        nuovo_cp(a.titolo)
     else:
         lista(getattr(a, "tutti", False))
     return 0

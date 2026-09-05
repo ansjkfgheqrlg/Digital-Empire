@@ -7,7 +7,9 @@
 2. Se il task tocca un'area con ADR attivi → rispettali o proponi nuovo ADR (mai contraddirli in silenzio).
 
 **DOPO ogni task chiuso:**
-1. Scrivi checkpoint in `company/Memory/checkpoints/CP-YYYYMMDD-NNN.md` (template in `company/Memory/templates/`).
+1. Scrivi checkpoint in `company/Memory/checkpoints/CP-YYYYMMDD-XXXX.md` — **il codice si conia con
+   `python scripts/checkpoint.py cp --titolo "..."`, mai a mano e mai progressivo** (due chat parallele
+   sceglierebbero lo stesso numero). Template in `company/Memory/templates/`.
 2. Aggiorna `STATO-EMPIRE.md` (cosa fatto, lavori in corso, RIPRESA DA).
 3. Decisioni prese → ADR in `company/Memory/decisions/`.
 
