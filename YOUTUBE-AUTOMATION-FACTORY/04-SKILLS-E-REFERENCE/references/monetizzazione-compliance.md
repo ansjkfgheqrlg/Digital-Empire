@@ -33,3 +33,42 @@ Per certificare la conformità del video, applica rigorosamente le seguenti rego
 - [ ] Il montaggio include zoom, transizioni curate, SFX e overlay grafici (non solo stock video passivi)?
 - [ ] La voce narrante selezionata è tra quelle certificate ad alta espressività e non presente nella blacklist di `learned_rules.json`?
 - [ ] Il video si distingue nettamente dagli altri video pubblicati sul canale per stile visivo o focus argomentativo?
+- [ ] **Nessun fotogramma proviene dal video sorgente** (§4)?
+
+---
+
+## 4. Il «metodo copia e incolla»: perché è una porta chiusa (A4-L06-02 · 2026-09-05)
+
+Esiste un metodo diffuso — insegnato per intero nel corso AI TUBE PRO (A4/L06) — che consiste nel
+**scaricare il video altrui e ripubblicarlo modificato**: si rimuove la traccia audio, si traduce
+lo script, si rifà il voiceover, si cambia la musica, **si toglie il logo e si rifanno i testi a
+schermo**, si riordinano le clip e se ne sostituiscono alcune con materiale da Envato o Pexels.
+La difesa dichiarata è: «così **non incorriamo in strike**».
+
+**La nostra fabbrica non lo fa, e non è una questione di gusto.** Tre ragioni, in ordine di peso:
+
+1. **Quella difesa è contro la macchina, non contro il diritto.** Cambiare audio, ordine e grafica
+   serve a non farsi riconoscere dal **Content ID**, che è un sistema di identificazione
+   automatica: identifica, non stabilisce chi ha ragione. Un titolare può agire anche su un'opera
+   modificata. **Non essere riconosciuti** ed **essere in regola** sono due cose diverse, e il
+   metodo le confonde per tutta la lezione.
+2. **Il «fair use» viene citato come se fosse una regola di YouTube.** Non lo è: è una dottrina
+   del diritto **statunitense**, valutata da un giudice su quattro fattori, caso per caso.
+   L'ordinamento italiano non ha un equivalente altrettanto largo. Costruire un modello di
+   business su un istituto straniero frainteso è il rischio più grosso dell'intero metodo.
+3. **È lavoro manuale, e cancella l'automazione.** Togliere un logo, rifare ogni testo a schermo,
+   riordinare le clip e sostituirne alcune sono operazioni da editor video, **una per una, su ogni
+   video**. La nostra catena genera via API senza aprire un browser: quel passaggio non solo non
+   conviene, **non è eseguibile**.
+
+**Cosa si prende invece, e non è poco:** l'**idea validata**. Che un format abbia funzionato — in
+italiano o in un'altra lingua — è il segnale più economico che esista, e va usato (vedi
+`video-analyst.md` §8, col caso misurato Lama Facha / Famiglia Sfortunata). **Si replica l'idea e
+la struttura; il materiale visivo si genera o si prende alla fonte.**
+
+**Un limite nostro, dichiarato:** i regolatori vigilano sulla copiatura **solo del testo**
+(`regolatori.py`, `N_GRAM = 8`). Sul lato visivo non esiste alcun controllo — semplicemente perché
+non riusiamo mai materiale altrui. **È una proprietà del flusso, non un presidio:** se qualcuno
+introducesse clip scaricate, nessun regolatore se ne accorgerebbe. Annotato in `BACKLOG.md`.
+
+Arbitrato completo: `company/Memory/studi/aitubepro/CONFLITTI.md` **C-004**.

@@ -1,0 +1,211 @@
+[
+  {
+    "id": "P1-033",
+    "tipo": "struttura",
+    "contenuto": "Tabella completa \"Clienti\" in Notion, colonne Cliente/ARR/Città/Dal/MQ/Prodotto, 20 righe leggibili per intero (ordinate per ARR decrescente): Residenze Aurora Verde €620.000 (Brescia, dal 2014, 90000mq, Care); Polo Universitario Sud €597.000 (Catania, dal 2024, 60000mq, Edge); Torre Eurosky Uffici €558.000 (Roma, dal 2016, 90000mq, Cloud); BioPharma Stabilimenti €555.000 (Latina, dal 2022, 40000mq, Edge); Galleria Moderna €552.000 (Firenze, dal 2018, 40000mq, Care); Iberia Centros €528.000 (Madrid, dal 2013, 18000mq, Care); Università Politecnica Adriatica €522.000 (Ancona, dal 2021, 60000mq, Care); Museo delle Arti Contemporanee €511.000 (Torino, dal 2017, 25000mq, Care); MediCenter Salute €508.000 (Padova, dal 2013, 12000mq, Cloud); Aurora DACH Buildings €486.000 (Monaco di Baviera, dal 2014, 8000mq, Care); Distretto Tessile Pratese €420.000 (Prato, dal 2020, 25000mq, Care); Retail Gamma €402.000 (Verona, dal 2022, 8000mq, Edge); Nordic Retail Chain €370.000 (Amburgo, dal 2024, 12000mq, Edge); Centro Direzionale Partenope €369.000 (Napoli, dal 2013, 25000mq, Cloud); Industria Meccanica Veneta €347.000 (Vicenza, dal 2018, 12000mq, Care); Stadio Arena Nuova €343.000 (Udine, dal 2013, 90000mq, Care); Supermercati Risparmio €314.000 (Bologna, dal 2022, 8000mq, Care); Helvetia Office Park €309.000 (Zurigo, dal 2021, 12000mq, Care); Banca Civica €278.000 (Torino, dal 2017, 18000mq, Care); Terranova Sviluppo €277.000 (Bologna, dal 2016, 90000mq, Care). Il badge \"OPEN\" che compare accanto a una riga è un effetto hover del mouse, non un tag fisso: cambia riga da una scena all'altra (confermato confrontando scena 67 e scena 73).",
+    "fonte": "RnoC5IlOUhs#27:30 (tabella \"Clienti\" completa in Notion, colonne Cliente/ARR/Città/Dal/MQ/Prodotto) + voce 27:30-28:36",
+    "frame": "frame-0276.png",
+    "ancora": "vediamo che l'AI ha interpretato bene la nostra richiesta",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-034", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-034",
+    "tipo": "procedura",
+    "contenuto": "Claude Code (Antigravity IDE) risponde a \"sai dirmi qual è il cliente più grosso per questa azienda?\" con una sequenza di comandi tracciata riga per riga nel thought-process: (1) Bash `ls \"/Users/giovannibeggiato/Desktop/Company Knowledge Base/entities/\" \"/Users/giovannibeggiato/Desktop/Company Knowledge Base/scripts/rag/views/\" 2>/dev/null` per elencare le cartelle entities e views; (2) Read del file `view-clienti-arr.md` (una vista/aggregazione); (3) Bash `ls -la \"/Users/giovannibeggiato/Desktop/Company Knowledge Base/workspace/overrides/\" 2>/dev/null` che trova `cliente-residenze-aurora-verde.md`; (4) a voce alta: \"C'è un override su Residenze Aurora Verde, lo controllo prima di risponderti\"; (5) Read del file di override `cliente-residenze-aurora-verde.md` prima di formulare la risposta finale. Il meccanismo dimostrato: mai rispondere solo dalla vista aggregata, controllare sempre se esiste un override manuale più recente su quel record specifico.",
+    "fonte": "RnoC5IlOUhs#28:36 (thought-process di Claude Code letto riga per riga, tab \"Identify largest client for company\") + voce 28:36-29:18",
+    "frame": "frame-0287.png",
+    "ancora": "Vediamo che cosa sta facendo nel nostro thought process. Comincia a fare i vari comandi, comincia ad entrare dentro la nostra azienda",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-033", "tipo": "parte-di"},
+      {"verso": "P1-035", "tipo": "precede"},
+      {"verso": "P1-037", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P1-035",
+    "tipo": "numero",
+    "contenuto": "Risposta finale di Claude Code alla domanda sul cliente più grosso (prima dell'aggiornamento ARR del Polo Universitario Sud): Residenze Aurora Verde (Brescia, segmento SMB) con 620.000 EUR di ARR, dato preso da `view-clienti-arr.md` e comprensivo dell'override manuale applicato il 9 giugno (ARR portato da 590.000 a 620.000 EUR, già propagato alla vista). Al secondo posto Polo Universitario Sud con 597.000 EUR — quindi anche senza l'override Residenze Aurora Verde resterebbe comunque in vetta, con un margine minimo. Il totale dei 34 clienti nominati vale 10.866.000 EUR di ARR.",
+    "fonte": "RnoC5IlOUhs#28:36 (risposta testuale completa di Claude Code) + voce 28:36-29:18",
+    "frame": "frame-0287.png",
+    "ancora": "Il dato viene dalla vista `view-clienti-arr.md` e include l'override manuale che hai applicato il 9 giugno",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-038", "tipo": "precede"},
+      {"verso": "P1-041", "tipo": "contraddice"}
+    ]
+  },
+  {
+    "id": "P1-036",
+    "tipo": "comando",
+    "contenuto": "Comando ricostruito per scrivere un override su un fatto cliente: `python3 scripts/edit_fact.py --nome \"<Nome Cliente>\" --campo <campo> --valore <valore> --date <data>` (esempio nel video: `python3 scripts/edit_fact.py --nome \"Polo Universitario Sud\" --campo arr --valore 750000 --date 2026-0…`, comando troncato dal bordo destro dello schermo). Dopo l'override si lancia la propagazione completa con `cd \"/Users/giovannibeggiato/Desktop/Company Knowledge Base\" && python3 scripts/propagate.py`, che il video dichiara propagare su: canon, views, Qdrant, Notion, audit.",
+    "fonte": "RnoC5IlOUhs#28:42 (comando Bash per scrivere l'override ARR + comando propagate.py) + voce 28:42-29:18",
+    "frame": "frame-0288.png",
+    "ancora": "Riga di comando esatta per aggiornare un fatto: `python3 scripts/edit_fact.py --nome \"<Nome>\" --campo <campo> --valore <valore> --date <data>`; propagazione con `python3 scripts/propagate.py`",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P1-037", "tipo": "motiva"},
+      {"verso": "P1-038", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-037",
+    "tipo": "principio",
+    "contenuto": "Meccanismo \"canon vs override\": quando un fatto cambia (es. ARR di un cliente), Claude Code non riscrive la scheda canonica in `entities/` ma scrive un file separato in `workspace/overrides/` (es. `cliente-polo-universitario-sud.md`). L'override è dichiarato dal sistema come \"scritto e VISIBILE in Obsidian\" e soprattutto \"non sarà coperto da generate_notes\" — cioè uno script che rigenera le schede canoniche non lo cancella. Dopo la scrittura dell'override si esegue la skill `brain-sync` (barra di progresso teal) che lancia la propagazione completa (`propagate.py`) su tutti i sistemi collegati: prima scrive su Obsidian, poi aggiorna tutte le interfacce grafiche collegate (Notion, Qdrant) in modo che tutti abbiano accesso live alle informazioni aggiornate. Le skill coinvolte nel flusso di modifica sono `canon-edit` (per scrivere l'override) e `brain-sync` (per propagare).",
+    "fonte": "RnoC5IlOUhs#28:42 (skill canon-edit e brain-sync in esecuzione, sidebar entities espansa) + voce 28:42-29:18",
+    "frame": "frame-0288.png",
+    "ancora": "sta adesso facendo una propagazione completa su tutti i sistemi che abbiamo collegato. Quindi ora quello che farà sarà prima scrivere su Obsidian",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-036", "tipo": "quantificato-da"},
+      {"verso": "P1-039", "tipo": "motiva"},
+      {"verso": "P1-040", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P1-038",
+    "tipo": "numero",
+    "contenuto": "Verifica end-to-end della propagazione: dopo il comando di override e `propagate.py`, la tabella \"Clienti\" in Notion mostra la riga Polo Universitario Sud aggiornata a 750.000,00 EUR (Catania, dal 2024, 60000 mq, Edge), ora sopra Residenze Aurora Verde a 620.000,00 EUR (Brescia, dal 2014, 90000 mq, Care) — prova visiva che la scrittura fatta da Claude Code nel vault Obsidian arriva fino a Notion senza intervento manuale.",
+    "fonte": "RnoC5IlOUhs#29:18 (riga Polo Universitario Sud aggiornata a €750.000,00 in Notion, evidenziata) + voce 29:18-29:24",
+    "frame": "frame-0294.png",
+    "ancora": "750.000",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-037", "tipo": "esempio-di"},
+      {"verso": "P1-041", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-039",
+    "tipo": "struttura",
+    "contenuto": "Contenuto completo della cartella `workspace/` mostrato nella sidebar Explorer di Antigravity: sottocartella `journal`, sottocartella `overrides` (con dentro `cliente-polo-universita…md` e `cliente-residenze-auro…md`, entrambi marcati [M] per \"modificato\"), e allo stesso livello di `workspace` una serie di file sciolti dedicati a valutazione/qualità: `_audit_sample.json`, `_eval_gold.json`, `_eval_questions.json`, `_eval_results_full.json`, `_eval_results_rag_baseline.j…`, `_eval_results_rag_prod…` [M], `_eval_results.json`, `_index.md`, `_redteam_ans.json` [M], `_redteam.json`, `canon.json` [M], `enrich.log`, `notes.json` [M]. Questi nomi anticipano un impianto di valutazione e red-teaming del RAG già presente nella company brain, prima ancora del capitolo dedicato ai gate di qualità.",
+    "fonte": "RnoC5IlOUhs#29:24 (sidebar Explorer con workspace/overrides ed eval espansi) + voce 29:24-30:00",
+    "frame": "frame-0295.png",
+    "ancora": "_audit_sample.json`, `_eval_gold.json`, `_eval_questions.json`, `_eval_results_full.json`",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-037", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-040",
+    "tipo": "struttura",
+    "contenuto": "Contenuto integrale della scheda-cliente `entities/cliente-polo-universitario-sud.md` dopo l'override, letta riga per riga nell'editor:\n```\n---\ntitle: Polo Universitario Sud\nsummary: Scheda dei clienti di Aurora Sistemi.\ntags: [entities, tipo/cliente, status/active]\nstatus: active\ncreated: 2026-06-08\nupdated: 2026-06-08\nrelated: \"[[soc-clienti]],[[sito-polo-universitario-sud-1]] [[segmento-smb]]\"\n---\n\n# Polo Universitario Sud\n\n**Polo Universitario Sud (Education, Catania)**\n\nÈ considerato un cliente SMB, con una superficie complessiva di 60000 mq distribuiti su 9 edifici.\n\nIl cliente genera un ARR (Annual Recurring Revenue) di 750000 EUR.\n\n## Prodotti e Servizi in Uso\n\nPolo Universitario Sud utilizza i seguenti prodotti e servizi di Aurora Sistemi:\n- Edge\n- Care\n- Cloud\n\n## Voci collegate\n- [[soc-clienti]]\n- [[sito-polo-universitario-sud-1]]\n- [[segmento-smb]]\n```\nStesso schema properties (title/summary/tags/status/created/updated/related) + corpo con wikilink `[[…]]` in coda già visto nella nota `kpi-2025-edifici` mostrata in precedenza nel video.",
+    "fonte": "RnoC5IlOUhs#30:00 (editor con il file cliente-polo-universitario-sud.md aperto per intero, vista divisa con la chat) + voce 30:00-30:18",
+    "frame": "frame-0301.png",
+    "ancora": "genera un ARR (Annual Recurring Revenue) di 750000 EUR.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-037", "tipo": "esempio-di"},
+      {"verso": "P1-041", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-041",
+    "tipo": "numero",
+    "contenuto": "Risposta finale di Claude Code dopo l'override, citando il file: \"Il cliente più grosso è Polo Universitario Sud (Education, Catania): genera un ARR di 750.000 EUR, il più alto tra tutti i 34 clienti nominati di Aurora Sistemi. È un cliente SMB dal 2024, con 60.000 mq su 9 edifici, e usa Edge, Care e Cloud.\" I successivi in classifica sono Residenze Aurora Verde (620.000 EUR) e Torre Eurosky Uffici (558.000 EUR). Il totale ARR di tutti i clienti sale ora a 11.019.000 EUR (contro i 10.866.000 EUR calcolati prima dell'override di scena 68, per effetto dell'aumento di 153.000 EUR — da 597.000 a 750.000 — sul Polo Universitario Sud).",
+    "fonte": "RnoC5IlOUhs#30:00 (risposta chat a sinistra nella vista divisa) + voce 30:00-30:18",
+    "frame": "frame-0301.png",
+    "ancora": "su un ARR totale clienti di 11.019.000 EUR.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-035", "tipo": "contraddice"},
+      {"verso": "P1-040", "tipo": "quantificato-da"}
+    ]
+  },
+  {
+    "id": "P1-042",
+    "tipo": "struttura",
+    "contenuto": "Indice TLDR completo del documento Notion privato \"Company Brain — Tutti i prompt del tutorial (segui passo passo)\": TLDR; AVANAGUARDIA-PLUS; Passo 1 — Obsidian, la prima nota, i collegamenti (a mano); Passo 2 — Le 11 cartelle e le prime note con l'AI; Prompt 2 — Estrai il canon (prima un piano, poi il tuo ok); Prompt 3 — Trasforma il canon in note atomiche (prima gli hub); Prompt 4 — Completa il cervello fino a circa 28 note; Passo 3 — Gate di qualità, indice per le AI, showcase, grafo, GitHub (Prompt 5 — Il gate di qualità [solo referto]; Prompt 6 — Correggi e ripeti finché esce \"0 errori\"; Prompt 7 — Genera l'indice per le AI [llms.txt]; Prompt 8 — Lo showcase [la fotografia per la demo]; Impostazioni grafo a sfera [a mano, in Obsidian]; Prompt 9 — Metti il vault sotto git [senza push]); Passo 4 — Interrogare il cervello, mostrarlo, tenerlo vivo (Prompt 10 — Interroga il cervello [a 28 note, senza RAG]; Prompt 11 — La domanda di incrocio [dove le cartelle si arrendono]; Prompt 12 — Il cruscotto HTML locale; Prompt 13 — Apri la sessione [il briefing]; Prompt 14 — Chiudi la sessione [il diario]). La numerazione salta da \"Passo 1\" a \"Prompt 2\": il \"Prompt 1\" non compare in questo indice, probabilmente enunciato più avanti nella pagina (risulta poi essere \"Crea le 11 cartelle\", visto in un frame successivo).",
+    "fonte": "RnoC5IlOUhs#30:48 (indice completo dei 14 prompt, pagina Notion) + voce 30:48-31:12",
+    "frame": "frame-0309.png",
+    "ancora": "Prompt 2 — Estrai il canon (prima un piano, poi il tuo ok)",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-044", "tipo": "parte-di"},
+      {"verso": "P1-046", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-043",
+    "tipo": "numero",
+    "contenuto": "Offerta commerciale citata nel TLDR del documento: \"Se sei un imprenditore e vuoi applicare AI nella tua azienda (creando un secondo cervello con claude e molto altro) OPPURE se sei un freelancer e hai intenzione di rivendere questo servizio ad aziende\" → link AVANAGUARDIA-PLUS. Confronto di prezzo esplicito: \"Un consulente AI fa formazioni su questi argomenti per €1.000+ / giorno\", mentre in Avanguardia-Plus lo stesso contenuto si trova (aggiornato) a $99, cioè circa €85.",
+    "fonte": "RnoC5IlOUhs#30:42 (blocco TLDR con offerta Avanguardia-Plus, pagina Notion) + voce 30:42-30:48",
+    "frame": "frame-0308.png",
+    "ancora": "Un consulente AI fa formazioni su questi argomenti per €1.000+ / giorno, in Avanguardia-Plus li trovi (aggiornati) a $99… quindi €85!",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-042", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-044",
+    "tipo": "procedura",
+    "contenuto": "Passo 1 — Obsidian, la prima nota, i collegamenti (a mano), nessun prompt all'AI, si fa una volta sola dentro Obsidian: (1) Installa Obsidian e crea il contenitore vuoto — vai su `obsidian.md`, scarica la versione per il tuo sistema (Mac o Windows) e installala; crea sul computer una cartella nuova e vuota chiamata `aurora-cervello`; apri Obsidian → \"Apri cartella come vault\" (\"Open folder as vault\") → seleziona `aurora-cervello`. (2) Prima nota — crea (Cmd+N / Ctrl+N), chiamala `self-identita-aurora`, e scrivi nel corpo: \"Aurora Sistemi S.p.A. e' un'azienda da 340 persone che vende sistemi per rendere efficienti gli edifici. Tre linee di prodotto: Aurora Edge, Aurora Cloud, Aurora Care.\" (3) Seconda nota + wikilink — crea `persona-elena-ferraro` e scrivi: \"Elena Ferraro guida la divisione commerciale di [[self-identita-aurora]]. E' la persona che conosce il perche' dietro ogni cliente acquisito.\" Poi torna su `self-identita-aurora` e aggiungi in fondo: \"Il commerciale di riferimento e' [[persona-elena-ferraro]].\" (4) Backlink — su `self-identita-aurora`, attiva il pannello \"Backlinks\" (tre puntini in alto a destra → \"Mostra backlink\"): comparirà da solo `persona-elena-ferraro`. (5) Grafo — apri la vista grafo dall'icona nella barra laterale (o Cmd+P / Ctrl+P → \"Apri vista grafo\"): due pallini, una linea — è già un grafo.",
+    "fonte": "RnoC5IlOUhs#30:48 (indice + inizio Passo 1, pagina Notion) + voce 30:48-35:18",
+    "frame": "frame-0309.png, frame-0353.png, frame-0390.png",
+    "ancora": "Nessun prompt all'AI qui: si fa una volta sola, dentro Obsidian.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-042", "tipo": "parte-di"},
+      {"verso": "P1-045", "tipo": "precede"},
+      {"verso": "P1-047", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P1-045",
+    "tipo": "struttura",
+    "contenuto": "Punto 6 del Passo 1 — Frontmatter: apri `self-identita-aurora` e incolla questo blocco in cima, prima del testo:\n```\n---\ntitle: Identita' di Aurora Sistemi\nsummary: Aurora Sistemi e' un'azienda da 340 persone che vende sistemi di efficie[nza...] (riga troncata oltre il bordo destro del frame)\ntags: [self, type/identita]\nstatus: active\ncreated: 2026-06-09\nupdated: 2026-06-09\nrelated: [[persona-elena-ferraro]]\n---\n```\nSubito dopo, nel documento, comincia il Passo 2 — Le 11 cartelle e le prime note con l'AI, con il Prompt 1 — Crea le 11 cartelle.",
+    "fonte": "RnoC5IlOUhs#44:12 (blocco frontmatter completo, pagina Notion Passo 1 punto 6) + voce 44:12-44:18",
+    "frame": "frame-0443.png",
+    "ancora": "title: Identita' di Aurora Sistemi",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-044", "tipo": "parte-di"},
+      {"verso": "P1-049", "tipo": "motiva"},
+      {"verso": "P1-046", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-046",
+    "tipo": "comando",
+    "contenuto": "Passo 2, Prompt 1 — \"Crea le 11 cartelle\": dà all'AI lo scheletro del cervello, 11 cartelle vuote e niente altro. Testo del prompt (visibile fino al bordo del frame, elenco cartelle troncato): \"Crea nel mio vault, alla radice, queste 11 cartelle vuote, una per ciascun lavoro del cervello: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, ... (elenco troncato in basso dal bordo del frame, cartelle restanti non leggibili qui)\".",
+    "fonte": "RnoC5IlOUhs#44:12 (Passo 2, Prompt 1, pagina Notion) + voce 44:12-44:18",
+    "frame": "frame-0443.png",
+    "ancora": "Crea nel mio vault, alla radice, queste 11 cartelle vuote, una per ciascun lavoro del cervello:",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-045", "tipo": "parte-di"},
+      {"verso": "P1-042", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-047",
+    "tipo": "principio",
+    "contenuto": "Dimostrazione pratica di cosa sia davvero Obsidian: si crea una nota di prova chiamata \"ciao\" con corpo \"qualcosa\"; subito appare nel grafo. Aprendo Finder si verifica che è un file `ciao.md` reale sul disco (Date Modified \"Today at 10:48\", Size \"9 bytes\", Kind Markdown Document) dentro la cartella `aurora cervello`. Conclusione esplicita: \"Obsidian è un layer che va sopra la cartella e ci permette di avere una rappresentazione visiva di quello che c'è\" — non è un database, ma un layer che collega note markdown vere e proprie salvate su disco. Molte persone confondono le due cose, ed è per questo che a 1000-2000-3000 note l'organizzazione comincia a fare fatica se non si struttura bene il collegamento tra le note.",
+    "fonte": "RnoC5IlOUhs#32:36 (Finder con ciao.md, 9 bytes, Markdown Document) + voce 32:36-33:24",
+    "frame": "frame-0327.png, frame-0330.png",
+    "ancora": "Obsidian è un layer che permette di collegare varie note markdown.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-044", "tipo": "parte-di"},
+      {"verso": "P1-048", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-048",
+    "tipo": "numero",
+    "contenuto": "Dimostrazione del problema di scala: la nota `persona-elena-ferraro` (normalmente 30 words / 141 characters con backlink attivo) viene riempita a scopo dimostrativo con un'unica frase (\"E' la persona che conosce il perche' dietro ogni cliente acquisito.\") ripetuta senza interruzione fino a raggiungere 438 words / 2.688 characters. Spiegazione a voce: se avessimo 1000 note così, ogni volta che l'AI entra nella nota dovrebbe leggersi tutto il contesto, consumando un sacco di token e con rischio di allucinazione — un problema di leggibilità che porterebbe l'AI a sbagliare. Dopo la dimostrazione la nota viene ripulita e torna a 30 words / 141 characters.",
+    "fonte": "RnoC5IlOUhs#43:06 (nota persona-elena-ferraro invasa dalla frase ripetuta, 438 words · 2,688 characters) + voce 43:06-43:36",
+    "frame": "frame-0432.png, frame-0434.png",
+    "ancora": "1 backlink · 438 words · 2,688 characters",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-047", "tipo": "esempio-di"},
+      {"verso": "P1-049", "tipo": "motiva"}
+    ]
+  }
+]

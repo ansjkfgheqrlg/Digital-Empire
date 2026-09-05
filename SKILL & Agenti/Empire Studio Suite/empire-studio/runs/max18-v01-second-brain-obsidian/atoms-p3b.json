@@ -1,0 +1,172 @@
+[
+  {
+    "id": "P3-041",
+    "tipo": "struttura",
+    "contenuto": "Quarto reset di conversazione osservato nel video (dopo le scene 279/284): schema fisso e ripetuto, tab rinominata 'Untitled', icona pixel-art arancione del robot Claude Code (qui con il corpo pieno invece che a contorno, variante grafica non vista prima), messaggio placeholder identico 'You've come to the absolutely right place!' e campo di input vuoto con bordo rosso attivo in basso. Il presentatore inizia già a dettare a voce la domanda successiva ('Ehi, guardando al mio database in una...') mentre la chat è ancora completamente vuota: il parlato anticipa sempre l'azione a schermo in questo montaggio, pattern già osservato più volte nel corso del video.",
+    "fonte": "RnoC5IlOUhs#116:18 (scena 294, editor Antigravity, tab 'Untitled') + voce 116:18-116:24",
+    "frame": "frame-1164.png",
+    "ancora": "You've come to the absolutely right place!",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-042", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-042",
+    "tipo": "struttura",
+    "contenuto": "Nuova domanda posta dal presentatore, che nasce direttamente dal limite appena rilevato in P3-040 (l'ARR pro-capite era ricostruibile solo per un impiegato su dati parziali): testo esatto digitato, con chip file allegato 'persona-marco-bianchi.m...': 'Ehi, guardando al mio database in una tabella abbastanza schematica, riesci a dirmi quali sono le informazioni mancanti per riuscire a farli delle analisi complete?' Claude risponde: 'Ti aiuto. Per dirti cosa manca, prima devo vedere cosa c'è. Esploro il database.' ed esegue un comando bash 'List all vault files' che restituisce l'elenco completo e letterale di tutti i file del vault Aurora: .DS_Store, .env, .gitignore, _index-aurora.md, _showcase/showcase.md, areas/.DS_Store, areas/_index-areas.md, areas/area-customer-success.md, areas/area-finance-operations.md, areas/area-marketing.md, areas/area-people-cultura.md, areas/area-prodotto-engineering.md, areas/area-vendite.md, code/_index-code.md, code/code-export-crm.md, concepts/_index-concepts.md, concepts/concetto-arr.md, concepts/concetto-churn.md, concepts/concetto-efficienza-energetica.md, data/_index-data.md, data/kpi-2025-arr.md, data/kpi-2025-churn.md, data/kpi-2025-clienti-attivi.md, data/kpi-2025-edifici.md, data/kpi-2025-nrr.md, docs/_index-docs.md, docs/doc-onboarding-cliente.md, entities/_index-entities.md, entities/cliente-banca-adriatica.md, entities/cliente-hotelline-hospitality.md, entities/cliente-immobiliare-lombarda.md, entities/persona-chiara-fontana.md, entities/persona-elena-ferraro.md, entities/persona-giulia-rinaldi.md, entities/persona-marco-bianchi.md, entities/prodotto-aurora-access.md, entities/prodotto-aurora-core.md, entities/prodotto-aurora-energy.md, entities/strumento-crm.md. Segue un secondo comando bash che legge tutte le entità chiave (persone, clienti, prodotti) prima di passare a KPI/aree, motivato da Claude come necessario perché 'Aurora è il caso di studio': legge entità (persone, clienti, prodotti, KPI, aree).",
+    "fonte": "RnoC5IlOUhs#117:06-117:18 (scene 295-296) + voce",
+    "frame": "frame-1172.png, frame-1174.png",
+    "ancora": "quali sono le informazioni mancanti per riuscire a farli delle analisi complete?",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-043", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-043",
+    "tipo": "struttura",
+    "contenuto": "Dopo la lettura delle entità, Claude esegue un terzo comando bash che concatena in un solo for-loop la lettura di KPI, aree, progetto e script di export CRM (comando visibile solo in parte: 'cd \"...aurora cervello\" && for f in data/kpi-*.md areas/area-*.md projects/progetto-arr-5m-20[26...]' tagliato a destra), motivato a voce dal narratore come necessario per vedere 'la parte numerica e organizzativa'. Durante questa fase il contatore di elaborazione sale da 'Thinking... · 16 tokens' a 'Thinking... · 857 tokens' poi 'Thinking... · 1.3k tokens', e l'etichetta di stato ruota tra parole casuali invece di restare fissa su un singolo 'Thinking...': si osservano in sequenza '🔺 Wandering...', '🔺 Computing...', '🔺 Percolating...'. Il testo della scena 298 dichiara esplicitamente che con queste si contano 'cinque' etichette scherzose in questo blocco di sistema RAG-demo, ma ne elenca sette in tutto: Discombobulating, Germinating, Ruminating (già viste in parte-C) più le quattro nuove Forming, Wandering, Computing, Percolating — la fonte stessa non risolve l'incongruenza tra il numero dichiarato (cinque) e i nomi elencati (sette), quindi va riportata come discrepanza osservata nel materiale originale, non normalizzata qui.",
+    "fonte": "RnoC5IlOUhs#117:18-117:36 (scene 296-298) + voce",
+    "frame": "frame-1174.png, frame-1176.png, frame-1177.png",
+    "ancora": "🔺 Percolating...",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-044", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-044",
+    "tipo": "principio",
+    "contenuto": "Risposta di Claude sotto heading 'Il problema di fondo (è quello del \"top employee\")': 'Il tuo cervello oggi è fotografico e descrittivo' — dice benissimo com'è fatta Aurora oggi (quante ARR per cliente) ma non risponde a 'cosa funziona meglio, cosa rende davvero, dove stai andando'. Diagnosi esplicita: per quelle analisi servono tre cose che oggi mancano quasi ovunque — 'una metrica per ogni unità (persona, prodotto, cliente)', 'i costi (non solo i ricavi)', e 'il tempo (serie storiche, non una foto al 31/12)'. Il caso 'top employee' è usato come sintomo perfetto: il database descrive ruoli e gerarchia ma non attacca nessun numero alla singola persona — solo Chiara Fontana ha un 'colpo dell'anno' scritto nelle note, quindi sembra l'unica brava, ma 'Non è che sia la migliore: è l'unica misurata.' Segue heading 'Cosa puoi GIÀ fare (così è chiaro il confine)': il database non è debole, è incompleto — già oggi risponde a cliente più grande (Immobiliare Lombarda, 720k), cliente con più edifici (Gruppo Retail, 210) e penetrazione dei moduli sui 9 clienti (Core 9/9, Energy 5/9, Manutenzione 5/9, Access 2/9); quello che NON si sa è quanto rende ciascun modulo, perché manca il prezzo.",
+    "fonte": "RnoC5IlOUhs#117:48 (scena 299) + voce 117:48-118:06",
+    "frame": "frame-1179.png",
+    "ancora": "Il tuo cervello oggi è fotografico e descrittivo",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-045", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-045",
+    "tipo": "struttura",
+    "contenuto": "Heading 'Dati che mancano del tutto (tabelle nuove)': 'Questi non sono colonne, sono interi pezzi di azienda assenti:' seguito da lista numerata completa: 1. 'Conto economico / costi: vedi solo i ricavi (ARR). Zero costi, margine, EBITDA, cassa, runway. Oggi non puoi dire se Aurora guadagna.' 2. 'CAC, LTV, payback: quanto costa acquisire un cliente e in quanto tempo rientri. È il cuore di un SaaS e non c'è.' (riga evidenziata in blu nello screenshot). 3. 'Pipeline e forecast 2026: l'obiettivo è 5M ma non esiste una pipeline che dica se raggiungibile o un sogno.' 4. 'Serie storica dei KPI 2018-2025: oggi hai due punti (inizio e fine 2025). Due punti non fanno una tendenza.' 5. 'Marketing a numeri: lead generati, costo per lead, conversione lead→cliente. Marketing è descritto ma senza una sola cifra.' 6. 'Concorrenti e win/loss: parli di \"vecchi BMS\" ma non c'è un concorrente nominato né perché vinci o perdi.' 7. 'People in numeri: turnover per reparto, tempo di assunzione, costo del lavoro per reparto.'",
+    "fonte": "RnoC5IlOUhs#118:06 (scena 300) + voce",
+    "frame": "frame-1182.png",
+    "ancora": "Questi non sono colonne, sono interi pezzi di azienda assenti",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-046", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-046",
+    "tipo": "regola",
+    "contenuto": "Heading 'Migliorie strutturali (rendono le analisi automatiche)', punto 1: 'Metti i numeri nel frontmatter come campi, non nella prosa. Oggi l'ARR è scritto \"€ 720.000\" dentro al testo: per sommarlo o filtrarlo serve farlo a mano. Se diventa un campo (arr: 720000, settore: banca), Obsidian con Dataview lo somma e filtra da solo. Esempio concreto: \"tutti i clienti retail sopra 400k senza insights\" diventa una query, non una rilettura a mano.' Punto 2: 'Schede che mancano: i 6 clienti senza nota (ci sono solo 3/9), i 2 prodotti senza nota (Manutenzione, Insights), e soprattutto Costruzioni Sud, il cliente perso: è la fonte più preziosa per capire perché si perde un cliente.'",
+    "fonte": "RnoC5IlOUhs#118:06 (scena 300) + voce",
+    "frame": "frame-1182.png",
+    "ancora": "Metti i numeri nel frontmatter come campi, non nella prosa.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-047", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-047",
+    "tipo": "procedura",
+    "contenuto": "Heading 'Le 3 mosse che sbloccano l'80%': 'Se fai solo tre cose, in ordine:' 1. 'Prezzo per modulo sui clienti → sblocca ricavo per prodotto, attach rate a valore, e metà delle analisi commerciali.' 2. 'Una metrica di risultato per persona (almeno AE e CSM) → sblocca il \"top employee\" e la valutazione del team.' 3. 'I costi (conto economico base + RAL) → sblocca profittabilità, margine, ARR per dipendente: passi da \"quanto fatturo\" a \"quanto guadagno\".' Chiude con la domanda del modello: 'Vuoi che ti prepari lo schema dei campi nuovi (un template aggiornato per cliente/persona/prodotto) e le 8 schede mancanti come bozze da riempire?'",
+    "fonte": "RnoC5IlOUhs#118:18 (scena 301) + voce",
+    "frame": "frame-1184.png",
+    "ancora": "Le 3 mosse che sbloccano l'80%",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-048", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-048",
+    "tipo": "numero",
+    "contenuto": "Il presentatore stacca su Excalidraw e disegna a mano una tabella di scala 'a 80/20' esplicitamente definita come 'numeri indicativi... non prendeteli come solo questo', per capire 'che tipologia di company brain' serve in base al numero di note del vault. Tabella completa a due colonne '# NOTE' (arancione) | 'ARCHITETTURA' (blu): '< 500' → '~' con una freccetta che punta a testo blu corsivo, letto come 'MAPPE CONTENUTO + Plus. txt' (trascrizione incerta per la grafia manoscritta, possibile refuso per 'più .txt'/file di testo semplice); '500 - 2500' → '~' (stessa freccetta, nessun testo aggiuntivo distinto in questi frame); '2500 - 20'000' → 'Embeddings / RAG'; '20'000 +' → 'Pipeline RAG completo'. Accanto, sullo stesso canvas, un secondo schizzo separato con due rettangoli rossi etichettati 'daily logs' e 'sessions' collegati da una freccia che passa da nero a blu, elemento che introduce visivamente il concetto di embedding/vettori mostrato subito dopo con l'Embedding Projector di TensorFlow. Un terzo doodle, non correlato al discorso in corso secondo la fonte (schema 'BRANCH'/'COMMIT' in stile Git), compare sullo stesso file Excalidraw senza corrispondenza nel parlato a quel timestamp.",
+    "fonte": "RnoC5IlOUhs#122:06-124:12 (scene 302-303, 307, 309) + voce",
+    "frame": "frame-1222.png, frame-1230.png, frame-1242.png",
+    "ancora": "MAPPE CONTENUTO + Plus. txt",
+    "confidenza": "dedotto",
+    "relazioni": [{"verso": "P3-049", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-049",
+    "tipo": "definizione",
+    "contenuto": "Stacco sulla piattaforma community Skool 'Avanguardia Plus', corso 'Fondamenta AI / Business', lezione 'Cosa sono i Vector Databases' (progresso 0%, sezione 'Fondamenta AI' con altre lezioni collegate: 'Cosa Uso Per fare Le Presentazioni', introduzioni agli LLM, 'Prompt Engineering Basics', masterclass live). Testo della lezione, heading 'Cosa impari in questa lezione': 'Un vector database è un tipo di database ottimizzato per salvare e cercare vector embeddings. Se RAG è il processo, il vector database è dove i dati vivono.' Segue la differenza rispetto a un database tradizionale: 'un database SQL cerca corrispondenze esatte (\"dammi tutte le righe dove città = Milano\"). Un vector database cerca per similarità semantica (\"dammi i chunk di testo più simili a questa domanda\").' Il player video incorporato nella lezione mostra come miniatura l'Embedding Projector di TensorFlow, strumento che verrà usato dal vivo nella scena successiva.",
+    "fonte": "RnoC5IlOUhs#122:12 (scena 304) + voce",
+    "frame": "frame-1223.png",
+    "ancora": "Un vector database è un tipo di database ottimizzato per salvare e cercare vector embeddings.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-050", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-050",
+    "tipo": "esempio",
+    "contenuto": "Dimostrazione dal vivo su projector.tensorflow.org (Embedding Projector, 'Tensors from: Word2Vec 10K', 'Points: 10000 | Dimension: 200', checkbox 'Spherize data' spuntata): il presentatore cerca la parola 'king' e mostra che, cliccando dal centro della nuvola di punti, 'Kings e King sono vettori simili nella stessa direzione nello spazio tridimensionale' — dimostrazione visiva del concetto di similarità semantica appena definito. La stessa registrazione viene rivista poco dopo dentro la lezione Skool 'Cosa sono i Vector Databases', dove è visibile un secondo esempio con un grappolo di parole tutte terminanti in '-ing' disposte vicine nello spazio vettoriale: 'networking', 'buckingham', 'cooking', 'tracking', 'viking', 'checking', 'smoking', 'drinking', 'striking', 'looking', 'attacking', 'working', 'thinking', con frecce blu disegnate a mano che convergono verso l'area di 'drinking' da un angolo del grafico — prova visiva che il vector database raggruppa per somiglianza morfologico-semantica, non per accesso esatto.",
+    "fonte": "RnoC5IlOUhs#122:18-122:48 (scene 305-306) + voce",
+    "frame": "frame-1224.png, frame-1229.png",
+    "ancora": "convergono verso l'area di \"drinking\" da un angolo del grafico",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-051", "tipo": "precede"}, {"verso": "P3-049", "tipo": "esempio-di"}]
+  },
+  {
+    "id": "P3-051",
+    "tipo": "principio",
+    "contenuto": "Sulla vista Graph view di Obsidian del vault Aurora (decine di nodi: aree, KPI, persone, clienti, prodotti, indici), il presentatore traccia a mano un percorso blu a zigzag da 'output-pitch-deck-vendite' fino a 'self-identita-aurora'/'_index-entities' per illustrare il vantaggio pratico dei vector database: 'al posto che andare dentro e farsi tutti i 1000... rami e sprecare token, l'AI andrà direttamente a vedere le cose che in un database vettoriale sono più o meno orientate nella stessa direzione' — cioè un'AI collegata a un vero vector database non deve attraversare l'intero grafo di note per rispondere, ma salta direttamente ai nodi semanticamente vicini alla domanda, risparmiando token. Il grafo stesso viene poi mostrato a schermo intero come prova visiva che il vault costruito è solido: 'Obsidian è il nostro layer 1' nell'architettura a livelli della company brain, e un grafo così strutturato è la conferma che 'avete un'architettura che funzioni' e 'può essere scalabile fino a un certo punto'.",
+    "fonte": "RnoC5IlOUhs#123:18-125:18 (scene 308, 314-315) + voce",
+    "frame": "frame-1234.png, frame-1253.png, frame-1254.png",
+    "ancora": "Obsidian è il nostro layer 1, adattiamo",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-052", "tipo": "precede"}, {"verso": "P3-048", "tipo": "esempio-di"}]
+  },
+  {
+    "id": "P3-052",
+    "tipo": "definizione",
+    "contenuto": "Rassegna di tre vector database concreti consigliati per integrazioni RAG, mostrata tramite tre ricerche Google consecutive: Supabase ('The Postgres Development Platform', 'Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings') — voce: 'i database che consiglio sono, se volete fare integrazioni di tipo rag, potete usare Superabase e quindi il classico che vedete all'interno... dei video, soprattutto quando c'erano le [integrazioni]'; Qdrant, risultato sponsorizzato ('Vector Database for RAG — Enterprise-ready vector database for cloud, on-prem, and edge deployments') — voce: 'oppure potete usare un database come quadrant, hanno alcune differenze. Supase vi permette di fare integrazioni...'; Weaviate, ultimo esempio ('Weaviate: The AI database developers love', 'With over 20M open source downloads and thousands of customers') — chiude la rassegna con entrambe le mani alzate a palmo aperto, gesto enfatico di conclusione dell'elenco.",
+    "fonte": "RnoC5IlOUhs#124:12-125:12 (scene 310-313) + voce",
+    "frame": "frame-1243.png, frame-1246.png, frame-1252.png",
+    "ancora": "Vector Database for RAG",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-053", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-053",
+    "tipo": "comando",
+    "contenuto": "Pagina Notion privata 'Company Brain — Tutti i prompt del...', heading 'Prompt 12 — Il cruscotto HTML locale': 'Un singolo file HTML offline da aprire con un doppio click: il biglietto da visita per una demo.' Blocco codice del prompt riportato per intero: 'Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apro con un doppio click, offline e senza account.' Introdotto a voce come primo dei due 'layer visivi' della company brain (il secondo è Notion): 'Possiamo fare o cruscotti locali, quindi con un HTML locale, lo vedete in un sacco di video YouTube, oppure possiamo utilizzare Notion.'",
+    "fonte": "RnoC5IlOUhs#126:06 (scena 316) + voce",
+    "frame": "frame-1262.png",
+    "ancora": "Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apro con un doppio click, offline e senza account.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-054", "tipo": "parte-di"}]
+  },
+  {
+    "id": "P3-054",
+    "tipo": "comando",
+    "contenuto": "Stessa pagina Notion 'Company Brain — Tutti i prompt', heading 'Prompt 13 — Apri la sessione (il briefing)': 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Blocco codice del prompt, parzialmente tagliato dal bordo inferiore dello screenshot: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conv[iene fare oggi in] ordine di priorità.' seguito (non del tutto leggibile nello screenshot) da: 'Non scrivere ancora niente nel cervello. Solo il briefing.' Questo prompt anticipa esattamente il comando 'buongiorno' della futura skill journal costruita più avanti nel video (vedi P3-069), con la stessa struttura in 5 righe e lo stesso vincolo di non scrivere nulla durante il briefing.",
+    "fonte": "RnoC5IlOUhs#126:06 (scena 316) + voce",
+    "frame": "frame-1262.png",
+    "ancora": "Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-055", "tipo": "precede"}, {"verso": "P3-069", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-055",
+    "tipo": "esempio",
+    "contenuto": "Il presentatore passa da Notion ad Antigravity ed esegue dal vivo esattamente il Prompt 12: nel riquadro di input (bordo rosso attivo) digita/incolla lo stesso testo letterale già visto nella pagina Notion ('Genera un cruscotto HTML statico dai dati del canon...'), sopra la coda ancora visibile della risposta precedente sull'audit del database (punti 'Metti i numeri nel frontmatter...' e 'Le 3 mosse che sbloccano l'80%'). Voce: 'Quindi adesso facciamo un prompt super semplice e lo incolleremo qua dentro... genere, un croscotl scarico statico dei dati del canon, gli indicatori dell'ultimo mese, grafici, l'andamento, la classifica, tutto in un solo file, HTML che apre con un doppio click online e senza account' — corrisponde parola per parola al prompt scritto, a parte i piccoli inciampi del parlato. Dopo l'invio il prompt riappare in un blocco 'Bash tool output' con pulsante 'Show more' e stato di elaborazione 'Considering...'.",
+    "fonte": "RnoC5IlOUhs#126:36-126:48 (scene 317-318) + voce",
+    "frame": "frame-1267.png, frame-1269.png",
+    "ancora": "Bash tool output (o57wx9)",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-053", "tipo": "esempio-di"}, {"verso": "P3-056", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-056",
+    "tipo": "struttura",
+    "contenuto": "Cruscotto HTML generato dal Prompt 12, aperto in locale (barra indirizzo 'File | /Users/giovannibeggiato/Desktop/aurora%20cervello/outputs/cruscotto-aurora.html'), sfondo scuro: header con logo quadrato sfumato viola-azzurro, titolo 'Aurora Sistemi S.p.A.', sottotitolo 'Cruscotto direzionale'; a destra 'Periodo di riferimento: fine 2025', 'Fonte: canon.md · compilato 2026-06-10', 'Dati riconciliati · nessun dato inventato'. Sezione 'INDICATORI CHIAVE - FINE 2025' con 6 card riportate per intero: 'ARR TOTALE' € 3,84 Mln (€ 3.840.000, +24% vs inizio 2025); 'CLIENTI ATTIVI' 9 (+1 nuovo logo · -1 perso, netto 0); 'EDIFICI GESTITI' 751 (su Aurora Core, 9 clienti); 'NRR' 115% (nel revenue attention, target >110%); 'CHURN LOGO' ~11% (1 cliente perso su 9, Costruzioni Sud); 'CHURN FATTURATO' 5,8% (€ 180.000 gross, perdita attesa). Voce del presentatore: 'Perfetto. Quindi il primo è questo output di cruscotto Aurora HTML che può rappresentare la nostra company Brain.'",
+    "fonte": "RnoC5IlOUhs#127:12 (scena 319) + voce",
+    "frame": "frame-1273.png",
+    "ancora": "Dati riconciliati · nessun dato inventato",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-057", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-057",
+    "tipo": "struttura",
+    "contenuto": "Stesso cruscotto HTML, sezione 'ANDAMENTO' con due grafici riportati per intero: a sinistra 'Fatturato (ARR)' — linea che parte da € 3,10 Mln (inizio periodo reale) e sale a € 3,84 Mln (fine 2025), poi prosegue tratteggiata fino a € 5,00 Mln, etichettata come obiettivo Board 2026; a destra 'Clienti attivi' — linea a gradini dal 2019 al 2025 con valori 1, 4, 6, 8, 9, 9, 9 (crescita rapida 2019-2022, poi plateau a 9 clienti attivi dal 2023). I due grafici traducono in immagine esattamente i numeri già visti nel canon (P3-047, progetto ARR 5M) e nell'audit (churn/espansione).",
+    "fonte": "RnoC5IlOUhs#127:12 (scena 319)",
+    "frame": "frame-1273.png",
+    "ancora": "Fatturato (ARR)",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-058", "tipo": "precede"}]
+  }
+]

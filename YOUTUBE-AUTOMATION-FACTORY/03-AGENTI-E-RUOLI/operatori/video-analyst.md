@@ -45,6 +45,31 @@ Due cautele che cambiano il risultato:
    madre su un video di **13 ore** con **89.000 viste**. Con la vecchia regola l'avremmo buttato —
    e con esso l'intera famiglia di nicchie in cui la freschezza *è* il prodotto: notizie, cronaca,
    attualità, gossip. Arbitrato completo in `company/Memory/studi/aitubepro/CONFLITTI.md` **C-001**.
+
+   **Il volume non basta: va rapportato agli iscritti (A4-L06-01).** Su un video appena
+   pubblicato le viste arrivano in buona parte **dalla base iscritti del canale**, che guarda il
+   nuovo contenuto *perché è iscritta*, non perché quel contenuto sia forte. Quindi la velocity di
+   un video giovane misura **la dimensione del canale sorgente, non l'appeal del video**.
+
+   Per noi conta perché **replichiamo su canali piccoli**: un format che ha fatto numeri grazie a
+   4 milioni di iscritti altrui è un risultato **non riproducibile da noi**.
+
+   Quindi, per ogni candidato sotto le 24 ore, annota anche il rapporto:
+
+   ```
+   viste_prime_ore / iscritti_canale
+   ```
+
+   Un video con 89.000 viste su un canale da 100.000 iscritti dice qualcosa (89%); le stesse
+   89.000 viste su un canale da 9 milioni non dicono quasi nulla (1%) — è quello che il canale fa
+   comunque. **Dichiara sempre il rapporto accanto alla velocity**, e privilegia i candidati in
+   cui il numero regge da solo.
+
+   L'argomento non è nostro: viene dal corso, A4/L06 (07:02), ed è migliore di quello che avevamo
+   scritto qui («la velocity è rumore»), perché non è statistico ma **strutturale**. Nota per chi
+   legge: **la stessa fonte si contraddice** — L05 sceglie un video di 13 ore, L06 spiega perché
+   non si deve. La nostra regola supera entrambe, perché non ragiona per età ma per **credibilità
+   del segnale**. Vedi `CONFLITTI.md` **C-005**.
 2. **Mediana, non media.** Per descrivere il canale usa la mediana: un solo virale sposta la media
    e fa sembrare sano un canale fermo.
 
@@ -79,7 +104,8 @@ Fornisci gli elementi: di cosa parla il titolo, quali temi del canale tocca.
 ## 6. Failure modes
 | Failure | Sintomo | Prevenzione | Recupero |
 |---|---|---|---|
-| Velocity su video di 2 ore | candidato fantasma in cima | soglia 24h | escludi |
+| Velocity su video di 2 ore con poche viste | candidato fantasma in cima | soglia di volume (§2) | escludi |
+| Velocity gonfiata dalla base iscritti | copi un format che ha funzionato per il canale, non per il contenuto | rapporto viste/iscritti (§2) | escludi o declassa |
 | Media invece di mediana | canale fermo che sembra sano | usa la mediana | ricalcola |
 | Provenienza non dichiarata | decisione su dati vecchi senza saperlo | dichiara sempre | ripeti il fetch |
 | Sconfina nel giudizio | l'analista decide al posto del capo | solo elementi | rimanda |
@@ -88,6 +114,33 @@ Fornisci gli elementi: di cosa parla il titolo, quali temi del canale tocca.
 La classifica di ogni ciclo resta in memoria: confrontarle nel tempo mostra se il canale sorgente
 sta accelerando o rallentando — segnale utile a `capo-strategia`.
 
+---
+
+## 8. Il candidato cross-lingua vale doppio, e adesso c'è il numero (A4-L06-03 · 2026-09-05)
+
+Un format che ha già funzionato **in un'altra lingua** è un candidato forte: il rischio di
+contenuto è già stato corso da qualcun altro, e nella nostra lingua il posto può essere ancora
+libero. Fin qui era un'intuizione (`video-hunter.md` lo chiamava «bonus»). **Ora è misurata.**
+
+Il caso, mostrato in AI TUBE PRO A4/L06 (12:07 → 14:35) e verificato a schermo:
+
+| canale | lingua | iscritti | video gemelli |
+|---|---|---|---|
+| **Lama Facha** | francese | 9,42 M | 63,6k viste · 10:56 |
+| **Famiglia Sfortunata** | italiano | 1,66 M | 10,4k viste · 10:49 |
+
+Sono **le stesse identiche clip**, montate nello stesso ordine; cambia il voiceover — e con esso
+la durata, di sette secondi. Su un secondo confronto: **208k** contro **75k**.
+
+**Cosa ne prendiamo:** segnala sempre i candidati che esistono già in un'altra lingua, con la
+velocity di entrambe le versioni quando è leggibile. È il segnale più economico che abbiamo.
+
+**Cosa NON ne prendiamo:** le clip. Il caso qui sopra funziona perché due canali si passano lo
+stesso materiale visivo — che è esattamente ciò che noi non facciamo mai, per le ragioni scritte
+in `references/monetizzazione-compliance.md` §«Metodo copia e incolla» e in `CONFLITTI.md`
+**C-004**. Si replica **l'idea validata**, mai i fotogrammi.
+
 ## Connessioni
 - [[video-hunter-playwright]] — fornisce i dati grezzi
 - [[capo-ricerca]] — usa questa classifica per decidere
+- [[monetizzazione-compliance]] — perché l'idea sì e il materiale no

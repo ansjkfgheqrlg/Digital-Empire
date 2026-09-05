@@ -1,0 +1,413 @@
+[
+  {
+    "id": "P1-001",
+    "tipo": "principio",
+    "contenuto": "La tesi d'apertura del corso: una company brain (cervello aziendale) è la tecnologia che separa chi usa l'AI per moltiplicare il proprio business da chi la usa solo per giocarci. Il corso promette di costruirne uno reale e funzionante, non un esperimento teorico.",
+    "fonte": "RnoC5IlOUhs#0:00 (talking head, apertura) + voce 0:00-0:12",
+    "frame": "frame-0001.png",
+    "ancora": "benvenuti al tutorial più completo sulla company Brain",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-009", "tipo": "precede"},
+      {"verso": "P1-027", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P1-002",
+    "tipo": "definizione",
+    "contenuto": "Prima ancora di mostrarla, il video anticipa con un overlay di testo la domanda retorica su cosa sia davvero una company brain, segnalando che quasi nessuno lo sa: il resto del corso esiste per rispondere a questa domanda.",
+    "fonte": "RnoC5IlOUhs#0:12 (overlay testo kinetic 'cos'è?') + voce 0:12",
+    "frame": "frame-0003.png",
+    "ancora": "Talking head con overlay di testo grande in basso a sinistra, parzialmente fuori campo: \"cos'è?\"",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P1-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-003",
+    "tipo": "struttura",
+    "contenuto": "La company brain reale mostrata nel video è una graph view di Obsidian a schermo intero, tema scuro: una sfera densissima di migliaia di nodi colorati con un anello esterno di puntini bianchi isolati. La legenda a sinistra elenca le cartelle-gruppo per colore: `_showcase`, `areas` (arancione), `code`, `concepts` (verde/teal), `data` (verde lime), `docs` (azzurro), `entities`, `outputs` (viola), `projects` (giallo), `scripts`, `self` (rosso/rosa), `sources`, `workspace` (blu); più, senza colore-gruppo dedicato: `CONVENTIONS`, `README`, `tutorial-completo`, `tutorial-pratico` (chiamato altrove anche `tutorial-grafico`).",
+    "fonte": "RnoC5IlOUhs#0:18 (prima apparizione) e #25:00 (legenda completa nella demo) + voce 0:18, 25:00-25:12",
+    "frame": "frame-0004.png, frame-0251.png",
+    "ancora": "In alto a sinistra la **legenda dei gruppi di colore**, leggibile come elenco di cartelle: `areas`, `code`, `concepts`, `data`, `docs`, `entities`, `outputs`, `projects`, `self`, `sources`, `workspace`",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-004", "tipo": "quantificato-da"},
+      {"verso": "P1-039", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-004",
+    "tipo": "numero",
+    "contenuto": "La company brain mostrata contiene 22.870 documenti (cifra scritta sulla lavagna Excalidraw dell'agenda). Il video però usa anche la cifra 22.500 detta a voce più avanti durante la demo: le due cifre divergono e non vengono riconciliate esplicitamente nel materiale visto.",
+    "fonte": "RnoC5IlOUhs#0:18 (graph view) e #0:54 (lavagna agenda) + voce 1:10, 25:04",
+    "frame": "frame-0004.png, frame-0010.png",
+    "ancora": "Nota: il numero **22.870** letto sulla lavagna diverge dal *\"22.500 note\"* detto a voce più avanti (25:04) e dai *\"22.870\"* della voce a 1:10. Il video usa entrambe le cifre; il dato scritto è 22.870.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-003", "tipo": "quantificato-da"},
+      {"verso": "P1-034", "tipo": "contraddice"}
+    ]
+  },
+  {
+    "id": "P1-005",
+    "tipo": "struttura",
+    "contenuto": "Anatomia reale di una nota atomica della company brain, nota `kpi-2025-edifici`: pannello Properties con campi `title` (\"KPI 2025 — Edifici gestiti\"), `summary` (frase discorsiva sul contenuto), `tags` (4 pill colorate tra cui `data` e `kpi`), `status`, `created`/`updated` (10-06-2026), `related` (tre wikilink). Corpo: titolo, poi bullet con il dato, la sua provenienza (link a `[[prodotto-aurora-core]]`) e la sua quadratura (somma verificabile). La sidebar mostra già le 11 cartelle: `areas`, `code`, `concepts`, `data`, `docs`, `entities`, `outputs`, `projects`, `self`, `sources`, `workspace`.",
+    "fonte": "RnoC5IlOUhs#0:24 + voce assente (solo screen-share)",
+    "frame": "frame-0005.png",
+    "ancora": "Pannello **Properties** con i campi: `title` = \"KPI 2025 — Edifici gestiti\"; `summary` = una frase che descrive il contenuto",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-006", "tipo": "quantificato-da"},
+      {"verso": "P1-058", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P1-006",
+    "tipo": "numero",
+    "contenuto": "Il dato solido riportato nella nota `kpi-2025-edifici`: 751 edifici gestiti sulla piattaforma a fine 2025, distribuiti su 9 clienti attivi, con una riga di \"quadratura\" che dichiara la somma degli immobili dei 9 clienti. Attenzione: la lista di addendi visibile nel frame (8 numeri leggibili per 9 clienti dichiarati, somma 757) non torna con 751 — a risoluzione 640x360 una o più cifre non sono leggibili con certezza, quindi i singoli addendi non vanno usati come dato, solo il totale dichiarato (751) e il conteggio clienti (9).",
+    "fonte": "RnoC5IlOUhs#0:24 (corpo nota kpi-2025-edifici)",
+    "frame": "frame-0005.png",
+    "ancora": "*\"Edifici gestiti sulla piattaforma a fine 2025: **751**.\"*",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-005", "tipo": "quantificato-da"}
+    ]
+  },
+  {
+    "id": "P1-007",
+    "tipo": "definizione",
+    "contenuto": "L'identità reale dell'autore/relatore: il sito mostrato a schermo è `gentes.ai` (agenzia \"Gentes\"), con badge \"Ten years building growth systems inside Amazon and P&G\" e loghi partner tra cui Anthropic e Notion. La trascrizione automatica del video rende il nome come \"Gente Sei\": il nome corretto, letto direttamente sul frame, è Gentes.",
+    "fonte": "RnoC5IlOUhs#0:36 (screen-share sito gentes.ai)",
+    "frame": "frame-0007.png",
+    "ancora": "🔎 La trascrizione automatica scrive *\"la mia agenzia di intelligenza artificiale **Gente Sei**\"*: il frame mostra che il nome reale è **Gentes / gentes.ai**.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-008", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-008",
+    "tipo": "struttura",
+    "contenuto": "L'autore gestisce una community a pagamento su Skool, \"Avanguardia Plus\" (`skool.com/avanguardia-plus`), presentata a schermo come programma pensato per portare l'iscritto al primo ritorno economico con l'AI entro 90 giorni. Nel feed si vede l'owner (Giovanni Beggiato, che nel video si presenta oralmente come \"Joe\") postare il messaggio di benvenuto.",
+    "fonte": "RnoC5IlOUhs#0:48 (screen-share skool.com/avanguardia-plus)",
+    "frame": "frame-0009.png",
+    "ancora": "*\"Un grosso benvenuto in community! Come accennato, Avanguardia Plus è un programma pensato per portarti al primo ritorno economico con l'AI entro 90 giorni.\"*",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-007", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-009",
+    "tipo": "struttura",
+    "contenuto": "Agenda completa del corso disegnata su lavagna Excalidraw, 13 voci: 1) ROI delle Company Brain e perché ORA; 2) Production Ready Brain 22.870 documenti; 3) Come Obsidian, Notion, Github, Qdrant e Claude interagiscono; 4) Come installare Obsidian; 5) Come funziona Obsidian (wikilinks, backlinks, frontmatter, tags); 6) Le 11 cartelle: la struttura del cervello, con la regola che dice dove va ogni cosa senza più pensarci; 7) Prendiamo il materiale grezzo dell'azienda e lo trasformiamo in note atomiche e collegate; 8) L'indice per le AI (llms.txt); 9) Grafo a sfera; 10) Github o Google Drive per version control; 11) Self-Improvement guidati dalla company brain; 12) Layer Visivi (Notion, HTML); 13) Memoria Viva: aggiornamento automatico ad ogni sessione.",
+    "fonte": "RnoC5IlOUhs#0:54, #1:36, #2:06, #2:48 (lavagna Excalidraw scrollata in 4 passaggi) + voce 0:54-2:48",
+    "frame": "frame-0010.png, frame-0017.png, frame-0022.png, frame-0029.png",
+    "ancora": "Questa è la **spina dorsale completa del corso**: 13 voci.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-010", "tipo": "precede"},
+      {"verso": "P1-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-010",
+    "tipo": "struttura",
+    "contenuto": "Documento Notion companion \"Company Brain — Tutti i prompt del tutorial\", indice completo: Passo 1 (Obsidian a mano, nessun prompt); Prompt 2 — Estrai il canon (prima un piano, poi l'ok); Prompt 3 — Trasforma il canon in note atomiche (prima gli hub); Prompt 4 — Completa il cervello (fino a circa 28 note); Passo 3 — Gate di qualità, indice per le AI, showcase, grafo, GitHub (Prompt 5 — gate di qualità/solo referto; Prompt 6 — correggi e ripeti finché \"0 errori\"; Prompt 7 — genera llms.txt; Prompt 8 — lo showcase; impostazioni grafo a sfera a mano; Prompt 9 — vault sotto git senza push); Passo 4 — Interrogare il cervello, mostrarlo, tenerlo vivo (Prompt 10 — interroga a 28 note senza RAG; Prompt 11 — domanda di incrocio dove le cartelle si arrendono; Prompt 12 — cruscotto HTML locale; Prompt 13 — apri sessione/briefing; Prompt 14 — chiudi sessione/diario).",
+    "fonte": "RnoC5IlOUhs#3:12 e #30:48 (screen-share Notion, pagina 'Company Brain — Tutti i prompt del tutorial') + voce 3:12, 30:48",
+    "frame": "frame-0033.png, frame-0309.png",
+    "ancora": "Prompt 3 — *Trasforma il canon in note atomiche (prima gli hub)* / Prompt 4 — *Completa il cervello (fino a circa 28 note)*",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-011", "tipo": "parte-di"},
+      {"verso": "P1-009", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-011",
+    "tipo": "procedura",
+    "contenuto": "Passo 1 completo del documento Notion, riportato integralmente — l'unico passo che si fa a mano dentro Obsidian, senza alcun prompt all'AI: (1) Installa Obsidian e crea il contenitore vuoto: vai su `obsidian.md`, scarica la versione per il tuo sistema (Mac o Windows) e installala; crea sul computer una cartella nuova e vuota `aurora-cervello`; apri Obsidian → \"Apri cartella come vault\" (\"Open folder as vault\") → seleziona `aurora-cervello`. (2) Prima nota: crea (Cmd+N / Ctrl+N), chiamala `self-identita-aurora`, scrivi nel corpo il testo aziendale. (3) Seconda nota + wikilink: crea `persona-elena-ferraro` con un wikilink `[[self-identita-aurora]]`, poi torna sulla prima nota e aggiungi in fondo un wikilink di ritorno `[[persona-elena-ferraro]]`. (4) Backlink: su `self-identita-aurora`, attiva il pannello \"Backlinks\" (tre puntini in alto a destra → \"Mostra backlink\"): il collegamento comparirà da solo. (5) Grafo: apri la vista grafo dall'icona nella barra laterale (o Cmd+P/Ctrl+P → \"Apri vista grafo\"): due pallini, una linea, è già un grafo. (6) Frontmatter: apri `self-identita-aurora` e incolla in cima, prima del testo, il blocco YAML con `title`, `summary`, `tags`, `status`, `created`, `updated`, `related`.",
+    "fonte": "RnoC5IlOUhs#3:12, #34:36, #38:54, #44:12 (Notion, 'Passo 1' letto per intero in più passaggi) + voce 30:48-44:30",
+    "frame": "frame-0033.png, frame-0347.png, frame-0390.png, frame-0443.png",
+    "ancora": "**Passo 1 — Obsidian, la prima nota, i collegamenti (a mano)** / *\"Nessun prompt all'AI qui: si fa una volta sola, dentro Obsidian.\"*",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-054", "tipo": "parte-di"},
+      {"verso": "P1-055", "tipo": "parte-di"},
+      {"verso": "P1-058", "tipo": "parte-di"},
+      {"verso": "P1-061", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-012",
+    "tipo": "principio",
+    "contenuto": "Patto dichiarato col pubblico all'inizio della parte 2, tre promesse: 1) costruiremo un company brain assieme; 2) capirete il vantaggio competitivo di averne uno; 3) saprete cosa serve per scalarlo.",
+    "fonte": "RnoC5IlOUhs#4:30 (lavagna Excalidraw, titolo 'QUESTO È UN CORSO PRATICO')",
+    "frame": "frame-0046.png",
+    "ancora": "Titolo in maiuscoletto: **\"QUESTO È UN CORSO PRATICO\"**. Tre bullet con rombo arancione: 1. **Costruiremo un company brain assieme** 2. **Capirete il vantaggio competitivo di averne uno** 3. **Saprete cosa serve per scalarlo**",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-001", "tipo": "parte-di"},
+      {"verso": "P1-013", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-013",
+    "tipo": "struttura",
+    "contenuto": "Diagramma centrale della tesi economica: nodo viola in cima \"CONOSCENZA SPARSA\" con tre figli collegati: ① verde \"Nelle chat\" (\"decisioni prese al volo\"); ② arancio \"Nella testa delle persone\" (\"il commerciale, il tecnico\"); ③ giallo \"In dieci strumenti diversi\" (\"che nessuno ritrova\"). La slide scritta dice \"dieci strumenti diversi\" mentre la voce a 9:53 dice \"20.000 tool diversi\": la slide scritta è il dato affidabile.",
+    "fonte": "RnoC5IlOUhs#5:24 (lavagna Excalidraw, diagramma 'CONOSCENZA SPARSA') + voce 9:53",
+    "frame": "frame-0055.png",
+    "ancora": "🔎 Il frame corregge la voce: il relatore a 9:53 dice *\"20.000 tool diversi\"*, la slide scritta dice **\"dieci strumenti diversi\"**.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-014", "tipo": "precede"},
+      {"verso": "P1-015", "tipo": "precede"},
+      {"verso": "P1-018", "tipo": "parte-di"},
+      {"verso": "P1-016", "tipo": "quantificato-da"}
+    ]
+  },
+  {
+    "id": "P1-014",
+    "tipo": "principio",
+    "contenuto": "Il rischio \"conoscenza nella testa delle persone\" si biforca in due etichette scritte a mano: \"TOP PERFORMER\" e \"ONBOARDING\". Quando il top performer se ne va o viene sottratto, i tre danni per l'azienda sono: (1) perdita economica immediata (freccia rossa verso il simbolo \"$\" barrato), (2) impossibilità di fare training perché la conoscenza non è mai stata documentata, (3) costo di tempo per riassumere e riformare qualcun altro allo stesso livello.",
+    "fonte": "RnoC5IlOUhs#7:00-8:42 (lavagna, etichette 'TOP PERFORMER'/'ONBOARDING' + freccia rossa) + voce 8:42",
+    "frame": "frame-0071.png, frame-0088.png",
+    "ancora": "Voce, sui tre danni del top performer: **(1)** perdita economica immediata, **(2)** impossibilità di fare training perché la conoscenza non è documentata, **(3)** costo di tempo per riassumere e riformare qualcuno allo stesso livello.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-013", "tipo": "parte-di"},
+      {"verso": "P1-017", "tipo": "quantificato-da"}
+    ]
+  },
+  {
+    "id": "P1-015",
+    "tipo": "struttura",
+    "contenuto": "Disegno a mano di due linee sinuose orizzontali che si incrociano, completato con un'ellisse rossa sull'incrocio e una freccia rossa che la indica: rappresenta il punto in cui i canali informativi (i \"dieci strumenti diversi\" del box ③) si sovrappongono senza che nessuno lo governi — un collo di bottiglia non gestito.",
+    "fonte": "RnoC5IlOUhs#8:06, #9:54, #10:00 (disegno progressivo sulla lavagna, tre scene)",
+    "frame": "frame-0082.png, frame-0100.png, frame-0101.png",
+    "ancora": "➕ Marca il punto in cui i canali informativi si sovrappongono senza che nessuno lo governi.",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P1-013", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-016",
+    "tipo": "numero",
+    "contenuto": "Dato di mercato con fonte citata: il settore impiegatizio passa circa il 19% della settimana lavorativa a cercare informazioni, cioè 1 giorno su 5. Fonte dichiarata a schermo: McKinsey Global Report. È uno dei soli tre numeri di terze parti citati con fonte in tutto il video; viene poi ricerchiato in rosso per enfasi.",
+    "fonte": "RnoC5IlOUhs#10:42 (slide dati di mercato, prima apparizione) + #16:30 (cerchiato in rosso)",
+    "frame": "frame-0108.png, frame-0166.png",
+    "ancora": "**\"Il settore impiegatizio passa circa il 19% della settimana a cercare informazioni (1 giorno su 5)\"** — **FONTE: McKinsey Global Report**",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-013", "tipo": "quantificato-da"}
+    ]
+  },
+  {
+    "id": "P1-017",
+    "tipo": "numero",
+    "contenuto": "Dato di mercato con fonte citata: un nuovo assunto ci mette in media 8-12 mesi per diventare davvero produttivo (gran parte del tempo speso a leggere report, fare domande, ecc.). Fonte dichiarata a schermo: HBR (Harvard Business Review). La trascrizione automatica rende il dato erroneamente come \"8-1 mesi\"; il frame mostra chiaramente 8-12. Viene poi ricerchiato in rosso per enfasi.",
+    "fonte": "RnoC5IlOUhs#10:42 (slide dati di mercato) + #16:30 (cerchiato in rosso)",
+    "frame": "frame-0108.png, frame-0166.png",
+    "ancora": "🔎 La trascrizione automatica rende il secondo dato come *\"8-1 mesi\"*: il frame mostra **8-12**.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-014", "tipo": "quantificato-da"},
+      {"verso": "P1-020", "tipo": "quantificato-da"}
+    ]
+  },
+  {
+    "id": "P1-018",
+    "tipo": "principio",
+    "contenuto": "Terzo dato della slide di mercato, senza fonte citata: quando una persona lascia l'azienda, si porta via la sua conoscenza — esce dalla porta e quel pezzo di azienda esce con lei. È il collegamento diretto tra la \"conoscenza nella testa delle persone\" e il rischio di perdita permanente se non è mai stata trasferita in un sistema esterno.",
+    "fonte": "RnoC5IlOUhs#10:42 (slide dati di mercato, terzo bullet)",
+    "frame": "frame-0108.png",
+    "ancora": "*\"Quando una persona se ne va, si porta via la sua conoscenza. Esce dalla porta e quel pezzo di azienda esce con lei.\"* (senza fonte)",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-013", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-019",
+    "tipo": "struttura",
+    "contenuto": "Curva di apprendimento disegnata a mano sulla lavagna: assi \"Apprend.\" (verticale) e \"Tempo\" (orizzontale). La curva sale, poi scende in una conca, poi risale ripida fino a un plateau. Sul fondo della conca un cerchietto rosso segna il punto critico dove si concentra la perdita di produttività prima della risalita.",
+    "fonte": "RnoC5IlOUhs#13:54 (disegno a mano della curva) + voce 13:54-15:12",
+    "frame": "frame-0140.png",
+    "ancora": "La curva sale, poi **scende in una conca**, poi risale ripida fino a un **plateau**. Sul fondo della conca c'è un cerchietto rosso",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-020", "tipo": "quantificato-da"},
+      {"verso": "P1-021", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-020",
+    "tipo": "numero",
+    "contenuto": "I tre tempi (in mesi) necessari per superare la conca della curva di apprendimento, raggruppati da una graffa in rosso sotto il grafico: 3-6 mesi per un top performer, 8-12 mesi per un mid performer, 14-18 mesi per un low performer.",
+    "fonte": "RnoC5IlOUhs#13:54 (curva a mano, numeri raggruppati in rosso) + voce 13:54-15:12",
+    "frame": "frame-0140.png",
+    "ancora": "Voce: sono i **mesi** che servono per superare la conca — 3-6 per un *top performer*, 8-12 per un *mid performer*, 14-18 per un *low performer*.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-019", "tipo": "quantificato-da"},
+      {"verso": "P1-017", "tipo": "quantificato-da"}
+    ]
+  },
+  {
+    "id": "P1-021",
+    "tipo": "principio",
+    "contenuto": "Sulla stessa curva, l'autore annota chi guadagna in quale metà: tratto arancione sulla prima parte della curva (\"VOI GUADAGNATE\", cioè il dipendente durante l'apprendimento), tratto verde sulla seconda parte dopo la risalita (\"AZIENDA GUADAGNA\"), riquadro rosso \"≤ 2 anni\" vicino all'asse Tempo e \"TRAINING\" in alto a destra. Tesi: l'azienda trattiene il dipendente per almeno 2 anni perché solo dopo la conca comincia a guadagnarci; ridurre la conca significa massimizzare il guadagno aziendale.",
+    "fonte": "RnoC5IlOUhs#15:12 (curva annotata con etichette VOI GUADAGNATE/AZIENDA GUADAGNA) + voce 15:12",
+    "frame": "frame-0153.png",
+    "ancora": "Tratto **arancione** sulla prima parte della curva con etichetta **\"VOI GUADAGNATE\"**; Tratto **verde** sulla seconda parte (dopo la risalita) con etichetta **\"AZIENDA GUADAGNA\"**; Vicino all'asse Tempo, riquadro rosso: **\"≤ 2 anni\"**",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-019", "tipo": "parte-di"},
+      {"verso": "P1-022", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-022",
+    "tipo": "principio",
+    "contenuto": "Le tre implicazioni economiche dirette dell'accorciare la conca della curva (scritte a mano in rosso): AZIENDA↑↑ (guadagna di più), JOB ROTATION↑↑ (può muovere le persone tra ruoli più liberamente), CHURN (%)↓↓ ⟹ $ (il tasso di abbandono del personale scende, e questo è denaro).",
+    "fonte": "RnoC5IlOUhs#16:24 (lista a mano in rosso, sopra la slide dei dati)",
+    "frame": "frame-0165.png",
+    "ancora": "**AZIENDA ↑↑** / **JOB ROTATION ↑↑** / **CHURN (%) ↓↓ ⟹ $** (con il simbolo del dollaro cerchiato)",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-021", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-023",
+    "tipo": "anti-pattern",
+    "contenuto": "Lo \"shadow AI\" del dipendente: un box \"Dipendente\" da cui escono tre oggetti — \"Contratto\" (verde), \"Cartellino del prezzo\" (rosa), \"Dati interni\" (giallo) — verso una nuvola \"ChatGPT / AI esterna\", con un triangolo di warning \"⚠️ Nessun controllo\". Didascalia: dati aziendali incollati fuori, senza protezione. È l'anti-pattern per eccellenza del corso: usare un'AI esterna generica senza governance espone i dati proprietari dell'azienda.",
+    "fonte": "RnoC5IlOUhs#17:00 (slide shadow AI) + #18:30 (annotato: dipendente etichettato 'GIO', riquadro tratteggiato sulla nuvola)",
+    "frame": "frame-0171.png, frame-0186.png",
+    "ancora": "Didascalia sotto: **\"Dati aziendali incollati fuori, senza protezione.\"**",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-024", "tipo": "motiva"},
+      {"verso": "P1-046", "tipo": "corretto-da"}
+    ]
+  },
+  {
+    "id": "P1-024",
+    "tipo": "principio",
+    "contenuto": "Principio riassuntivo dello shadow AI, ricostruito dalla frase in corsivo mostrata a schermo (bordi tagliati) e completata dal parlato: la nostra AI è intelligente quanto ciò che può leggere della nostra azienda. Senza una company brain che le dia contesto proprietario, l'AI resta generica.",
+    "fonte": "RnoC5IlOUhs#18:24 (frase in corsivo, bordi tagliati) + voce 18:24",
+    "frame": "frame-0171.png",
+    "ancora": "**\"…stra AI e' intelligente quanto cio' che puo' leggere della … a azienda.\"** (bordi tagliati dal frame; il testo completo è *\"La nostra AI è intelligente quanto ciò che può leggere della vostra azienda\"*, ricostruito ➕ dal parlato a 18:24)",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P1-023", "tipo": "motiva"},
+      {"verso": "P1-025", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-025",
+    "tipo": "principio",
+    "contenuto": "Se un'azienda e il suo competitor usano lo stesso modello AI senza un contesto proprietario, ricevono la stessa identica risposta: l'uso dell'AI, da solo, ha zero vantaggio competitivo. Il vantaggio nasce solo dai dati proprietari che alimentano il modello.",
+    "fonte": "RnoC5IlOUhs#19:36 (scritta a mano 'STESSA RISPOSTA' + parentesi graffe) + voce 19:36",
+    "frame": "frame-0197.png",
+    "ancora": "Tesi: se tu e il tuo competitor usate lo stesso modello senza contesto proprietario, ricevete **la stessa identica risposta** → l'uso dell'AI, da solo, ha **zero vantaggio competitivo**.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-024", "tipo": "precede"},
+      {"verso": "P1-026", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-026",
+    "tipo": "struttura",
+    "contenuto": "Slide pulita \"L'arbitraggio del cervello aziendale\" (sottotitolo: \"Chi si muove prima prende ciò che chi arriva dopo non recupera\"), due colonne. Colonna 1 \"Si accumula\": ciclo chiuso a tre nodi — \"Lo usi ogni giorno\" (azzurro) → \"La memoria cresce\" (verde) → \"Risposte migliori\" (rosa) → ritorno; didascalia \"Il tempo non si compra\". Colonna 2 \"Quasi nessuno lo sa fare\": linea del tempo con icona pellicola, etichetta \"finestra aperta\", due punti — \"Oggi: 💎 vantaggio raro\" → \"Domani: 📄 normalità\"; didascalia \"Come il sito web nel 1999\".",
+    "fonte": "RnoC5IlOUhs#19:48 (slide 'L'arbitraggio del cervello aziendale') + voce 20:24-20:48",
+    "frame": "frame-0199.png",
+    "ancora": "**Colonna 1 — \"1. Si accumula\"**: ciclo chiuso a tre nodi → **\"Lo usi ogni giorno\"** (azzurro) → **\"La memoria cresce\"** (verde) → **\"Risposte migliori\"** (rosa) → e ritorno. Didascalia: **\"Il tempo non si compra\"**.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-025", "tipo": "precede"},
+      {"verso": "P1-027", "tipo": "precede"},
+      {"verso": "P1-031", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-027",
+    "tipo": "principio",
+    "contenuto": "Tesi centrale del grafico ROI: senza company brain la curva di utilizzo dell'AI cresce più o meno uguale per tutti (i modelli migliorano per tutti, competitor inclusi), quindi zero vantaggio competitivo. Con una company brain come quella costruita nel corso, la curva è ripida e personale, perché l'AI comincia a conoscere l'azienda sempre meglio — ed è esattamente questo il vantaggio competitivo.",
+    "fonte": "RnoC5IlOUhs#21:54-22:06 (disegno degli assi ROI/Tempo) + voce 21:54-22:06",
+    "frame": "frame-0210.png, frame-0222.png",
+    "ancora": "\"se questo è il vostro tempo e questo è il vostro ritorno sull'investimento […] la curva dei competitor cresce esattamente come la vostra, quindi ha zero vantaggio competitivo. […] Mentre se utilizzate una company Brain […] avremo una curva di questo tipo […] perché l'AI comincia a conoscervi sempre meglio e questo è esattamente il vostro vantaggio competitivo.\"",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-001", "tipo": "motiva"},
+      {"verso": "P1-028", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-028",
+    "tipo": "struttura",
+    "contenuto": "Grafico ROI/Tempo completato a mano: due curve — una blu ripida che sale quasi verticale a fine percorso (con company brain) e una linea tratteggiata verde/arancione alternata molto più piatta (senza, cioè i competitor). Tra le due, in corrispondenza dell'estremità destra, una freccia rossa a doppia punta verticale misura lo scarto, chiuso da una parentesi graffa verde. Le aziende grandi hanno il ROI migliore perché hanno già processi e conoscenza accumulata su cui allenare l'AI: il mondo è sempre più governato dai dati.",
+    "fonte": "RnoC5IlOUhs#22:06 (grafico ROI completo) + voce 22:06",
+    "frame": "frame-0222.png",
+    "ancora": "chi avrà il miglior ritorno nell'investimento sono le aziende grosse perché loro hanno già dei processi, hanno già un sacco di conoscenza. Quindi l'AI può essere allenata su un sacco di dati.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-027", "tipo": "parte-di"},
+      {"verso": "P1-029", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-029",
+    "tipo": "principio",
+    "contenuto": "Principio \"data first\": con l'AI i dati sono il nuovo oro, come lo erano per i social media ma ora ancora di più — e in questo caso sono i dati proprietari della propria azienda, non dati generici raccolti da terzi.",
+    "fonte": "RnoC5IlOUhs#22:24 (scritta a mano 'DAT[A]' sul grafico) + voce 22:24",
+    "frame": "frame-0225.png",
+    "ancora": "\"data first. E con l'AI i dati sono il nuovo oro, come lo erano per i social media, ma ora ancora di più, ma in questo caso sono i vostri dati per la vostra azienda.\"",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-028", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P1-030",
+    "tipo": "definizione",
+    "contenuto": "\"LAG\": il ritardo temporale che una startup o un competitor entrato più tardi nel mercato deve colmare rispetto a chi ha già accumulato mesi/anni di company brain. Sul grafico ROI, un pallino rosso pieno sull'asse Tempo segna il punto in cui il competitor entra, e una scritta rossa \"LAG\" con linea tratteggiata ondulata etichetta lo scarto da recuperare.",
+    "fonte": "RnoC5IlOUhs#23:12 (grafico con 'LAG' e pallino rosso) + voce 23:12-23:18",
+    "frame": "frame-0233.png",
+    "ancora": "\"la startup avrà un lag, quindi un ritardo di tutta questa parte qui […] Avrà un ritardo di tutto questo periodo qui che voi avrete modo con la vostra AI di colmare.\"",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-028", "tipo": "parte-di"},
+      {"verso": "P1-031", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P1-031",
+    "tipo": "definizione",
+    "contenuto": "Definizione esplicita di \"arbitraggio\" data a voce: l'arbitraggio è la differenza tra quello che fai tu oggi e quello che farà il mercato domani. Vale sia per chi vende il servizio (l'azienda che applica la company brain) sia per chi lo insegna/rivende (freelancer, agenzia, community).",
+    "fonte": "RnoC5IlOUhs#23:18-23:36 (scritta a mano 'ARBITRAGGIO') + voce 23:18-23:36",
+    "frame": "frame-0234.png, frame-0237.png",
+    "ancora": "\"definiamo arbitraggio. Ok? Quindi, come si misura l'arbitraggio? L'arbitraggio è la differenza tra […] quello che fate voi oggi e quello che fa il mercato domani.\"",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-026", "tipo": "parte-di"},
+      {"verso": "P1-032", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-032",
+    "tipo": "struttura",
+    "contenuto": "Le due componenti dell'arbitraggio disegnate a mano sotto il titolo \"ARBITRAGGIO\": due barre/parentesi verticali blu affiancate, e a destra in rosso una freccia verso l'alto etichettata \"VC\" (vantaggio competitivo dell'azienda che applica la company brain) e un'altra freccia sotto etichettata \"NOVITÀ (ROI↗)\" (il fattore novità/ROI che un freelancer o un canale/community porta rivendendo il servizio, prima che la finestra di opportunità si chiuda).",
+    "fonte": "RnoC5IlOUhs#24:12 (disegno VC/NOVITÀ) + voce 24:12-24:36",
+    "frame": "frame-0243.png",
+    "ancora": "una freccia verso l'alto con etichetta **\"VC\"**, e sotto un'altra freccia con etichetta **\"NOVITÀ (ROI↗)\"**",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-031", "tipo": "parte-di"}
+    ]
+  }
+]

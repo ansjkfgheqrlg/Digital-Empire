@@ -40,7 +40,12 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
   montaggio a mano abbandonato da mesi («lo fa l'utente in Fliki»), che 4 dei suoi 6 ordini sono
   ineseguibili via API, e che `qa-audio-video` — **gate bloccante** — bocciava i video sul volume
   di una musica che nel payload non esiste.
-  **Registro: 20 regole, tutte a norma, 17 applicate, 3 in attesa del gate A4 (binario B).**
+- **Lezione A4/L05 chiusa** (CP-20260905-021): 4 regole, tutte applicate. È la **lezione madre**
+  (il metodo intero in 5 minuti) e la prima che ci contraddice: aperto il primo `CONFLITTI.md`
+  con tre arbitrati. Il migliore, **C-001**: la nostra soglia «scarta tutto sotto le 24 ore» era
+  un vincolo **temporale** messo a difesa di un problema di **volume** — corretta in ≥10.000
+  viste sotto le 24 h, e ci sblocca le nicchie di attualità.
+  **Registro: 24 regole, tutte a norma, 21 applicate, 3 in attesa del gate A4 (binario B).**
 - **Ingestione riparata**: portava a casa il video sbagliato (L02 arrivata due volte con un altro
   video). Ora la durata si chiede al lettore vero, i flussi si misurano con ffprobe PRIMA di
   scaricare, e un file fuori tolleranza diventa `1-sospetto` e non si trascrive.
@@ -57,8 +62,10 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **162 lezioni su 167 da studiare** (3,0% fatto). Fatte `A4/L00`, `L01`, `L02`, `L03`, `L04`;
-  A4 al 23,8% (5/21).
+- **161 lezioni su 167 da studiare** (3,6% fatto). Fatte `A4/L00` → `L05`; A4 al 28,6% (6/21).
+- **Due verifiche assegnate al gate A4**: (1) ascoltare un MP4 prodotto e stabilire se contiene
+  musica (`A4-L04-04`); (2) cronometrare una produzione vera end-to-end (`A4-L05-04`) — il corso
+  ha un metro di 5 minuti, noi nessuno.
 - **Verifica aperta assegnata al gate A4** (da `A4-L04-04`): ascoltare un MP4 già prodotto in
   `06-DASHBOARD-E-METRICHE/video-generati/` e stabilire **se i nostri video contengono musica**.
   Finché non si sa, il criterio «Bilanciamento Volumi» di `qa-audio-video` resta sospeso.
@@ -67,14 +74,14 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 - `corso_prepara.py` **eseguito il 2026-09-04**: 6 lezioni di A4 già pronte a nastro.
 - **DURATE.md non esiste**: il censimento delle durate previsto dal piano non è stato fatto
   (la durata si legge lezione per lezione durante lo scaricamento, e finisce in `stato.json`).
-- **CONFLITTI.md non esiste ancora**: nessun conflitto trovato nella prima lezione.
+- **`CONFLITTI.md` aperto il 2026-09-05** con tre arbitrati (C-001, C-002, C-003), tutti da L05.
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-**A4/L05** — annunciata a 30:19 della L04 come suo seguito diretto: «se volessi creare un video
-**da zero**, cosa devo fare? Ve lo spiego nel prossimo tutorial». Le lezioni già scaricate e
-trascritte si vedono in `runs/corso-aitubepro/<id>/stato.json` al passo `2-trascritto`
-(`completata` = già chiusa).
+**A4/L06 «Metodo Copia e Incolla»** (già trascritta) — da guardare con attenzione: il titolo
+promette esattamente il metodo a fonte singola che C-002 ha appena scartato. Le lezioni già
+scaricate e trascritte si vedono in `runs/corso-aitubepro/<id>/stato.json` al passo
+`2-trascritto` (`completata` = già chiusa, `1-fallito` = da riscaricare col gettone nuovo).
 
 ```bash
 cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"

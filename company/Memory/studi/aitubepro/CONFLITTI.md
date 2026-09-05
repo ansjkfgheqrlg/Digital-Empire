@@ -122,3 +122,85 @@ sappiamo quanto ci costa un video, non possiamo dire di aver scelto la qualità:
 di essere lenti e chiamarlo standard.
 
 Regola che ne nasce: **`A4-L05-04`** (binario A).
+
+---
+
+## C-004 · Riusare i fotogrammi del video sorgente — **il corso lo insegna, noi lo vietiamo**
+
+| | |
+|---|---|
+| **Chi** | `A4/L06` («Metodo Copia e Incolla», tutta la lezione) contro `regolatori.py` (`N_GRAM=8`), `fliki_client.py` (`visuals: ai`) e `references/monetizzazione-compliance.md` |
+| **Aperto** | 2026-09-05 |
+| **Esito** | **ARBITRATO — vinciamo noi, e la ragione è tecnica prima che morale** |
+
+**Cosa dice il corso.** Si scarica il video altrui in 1080p (aTubeCatcher), si rimuove la traccia
+audio, si traduce lo script, si rifà il voiceover, si cambia la musica, **si toglie il logo e si
+rifanno tutti i testi a schermo**, si riordinano le clip e se ne sostituiscono alcune con
+materiale da Envato o Pexels. La difesa: «così **non incorriamo in strike**» — con tre strike il
+canale è chiuso.
+
+**Cosa facciamo noi.** Le immagini nascono dal testo della scena (`visuals: "ai"`) o
+dall'archivio Fliki; i regolatori bloccano la copiatura **del testo** con `N_GRAM = 8`.
+
+**Arbitrato — tre ragioni, in ordine di peso:**
+
+1. **La difesa proposta è contro la macchina, non contro il diritto.** Cambiare audio, ordine e
+   grafica serve a non farsi riconoscere dal **Content ID**, che identifica e basta: non
+   stabilisce chi ha ragione. Un titolare può agire anche su un'opera modificata. Il metodo
+   confonde per tutta la lezione **non essere riconosciuti** con **essere in regola**.
+2. **Il «fair use» è citato come se fosse una regola di YouTube.** È una dottrina del diritto
+   **statunitense**, valutata da un giudice su quattro fattori; l'ordinamento italiano non ha un
+   equivalente altrettanto largo. Costruire un modello di business su un istituto straniero
+   frainteso è il rischio più grosso della lezione.
+3. **È lavoro manuale e cancella l'automazione.** Togliere un logo e rifare ogni testo a schermo,
+   su ogni video, è lavoro da editor. La nostra catena genera via API senza aprire un browser:
+   **quel passaggio non è eseguibile**, non solo sconveniente.
+
+**Decisione: porta chiusa, scritta nella scheda di conformità** (non in un playbook: un divieto
+che vive in un playbook si aggira senza accorgersene). **Si prende l'idea validata, mai i
+fotogrammi.**
+
+**Limite nostro, dichiarato nello stesso atto:** la difesa sulla copiatura vigila **solo sul
+testo**. Sul visivo non c'è controllo, perché non riusiamo mai materiale altrui — **è una
+proprietà del flusso, non un presidio**. Annotato in `BACKLOG.md`.
+
+Regola che ne nasce: **`A4-L06-02`** (binario A).
+
+---
+
+## C-005 · **Il corso contraddice sé stesso** sulla freschezza del video sorgente
+
+| | |
+|---|---|
+| **Chi** | `A4/L05` (01:09) contro `A4/L06` (07:02) — stessa categoria, due lezioni consecutive |
+| **Aperto** | 2026-09-05 |
+| **Esito** | **ARBITRATO — non vince nessuna delle due: la nostra correzione le supera entrambe** |
+
+**L05** sceglie un video di **13 ore** e lo chiama «numero magico»: la freschezza *è* il segnale.
+
+**L06**, sedici minuti di lezione dopo, dice il contrario e con un argomento migliore: «è normale
+che **un video appena pubblicato faccia tante visualizzazioni, soprattutto se ci sono tanti
+iscritti al canale**, che vanno subito a vedere il nuovo contenuto» — e sceglie apposta un video
+**non recente**.
+
+**Nessuna delle due lezioni dichiara il contrasto.** Chi segue il corso in ordine riceve due
+istruzioni opposte a distanza di una lezione.
+
+**Arbitrato.** L'argomento di L06 è il migliore dei tre in campo — meglio anche del nostro. Il
+nostro diceva «sotto le 24 ore la velocity è **rumore**»: un argomento **statistico**. L06 dice
+che la velocity di un video giovane **misura la base iscritti del canale, non l'appeal del
+contenuto**: un argomento **strutturale**, e per noi decisivo, perché replichiamo su canali
+piccoli. Copiare un format che ha fatto numeri grazie a 4 milioni di iscritti altrui significa
+copiare **un risultato non riproducibile**.
+
+**Decisione:** la nostra regola non ragiona più per **età** ma per **credibilità del segnale**, in
+due passaggi che stanno entrambi in `video-analyst.md` §2:
+1. sotto le 24 ore serve un **volume assoluto** che regga (C-001, ≥10.000 viste);
+2. e comunque il volume va **rapportato agli iscritti del canale sorgente**, dichiarando il
+   rapporto accanto alla velocity.
+
+Così passa il caso di L05 (89.000 viste in 13 ore, se il canale non è gigantesco) e si scarta
+quello che L06 teme (il video fresco che vive di iscritti).
+
+Regola che ne nasce: **`A4-L06-01`** (binario A). Aggiorna **C-001**, che resta valido ma
+incompleto da solo.

@@ -6,7 +6,7 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 ---
 
 # 📊 DASHBOARD OPERATIVA — Digital Empire
-> Generato automaticamente il: **2026-09-03 11:42:02**
+> Generato automaticamente il: **2026-09-05 23:22:28**
 
 ---
 

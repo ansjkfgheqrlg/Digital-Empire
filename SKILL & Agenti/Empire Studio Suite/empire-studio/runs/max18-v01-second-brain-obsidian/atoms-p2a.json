@@ -1,0 +1,217 @@
+[
+  {
+    "id": "P2-001",
+    "tipo": "struttura",
+    "contenuto": "La Company Brain si organizza in 11 cartelle poste alla radice del vault, ciascuna un 'lavoro' specifico che il cervello aziendale deve svolgere. La decisione di archiviazione e' una sola: quanto e' azionabile il contenuto, non il suo tipo. Le 11 cartelle presentate nello schema Excalidraw, in ordine di lettura: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, workspace.",
+    "fonte": "RnoC5IlOUhs#48:42 (Excalidraw, schema \"Company Brain: 11 cartelle\") + voce 48:36-48:42",
+    "frame": "frame-0488.png",
+    "ancora": "Una sola decisione: quanto e' azionabile?",
+    "confidenza": "osservato",
+    "relazioni": []
+  },
+  {
+    "id": "P2-002",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'self' rappresenta 'chi e azienda'. Nello schema annotato a mano e' contrassegnata da un'icona cerchiata '1' con l'elenco 'OBIETTIVI · MISSIONE · CLIENTI · OFFERTE', collegato con una freccia che sale verso la cartella 'areas' — self e' quindi il punto di partenza gerarchico da cui discendono le responsabilita' continue dell'azienda.",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato \"Company Brain: 11 cartelle\", versione completa) + voce 60:30-60:48",
+    "frame": "frame-0609.png",
+    "ancora": "chi e azienda",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-003",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'areas' rappresenta 'responsabilita' continue'. Tra le card 'areas' e 'projects' l'annotazione a mano riporta '• REPARTI': le aree corrispondono ai reparti stabili dell'azienda, distinti dai progetti che hanno invece un traguardo temporale.",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "responsabilita' continue",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-004",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'projects' rappresenta 'lavoro a tempo, con traguardo'. Tra areas e projects l'annotazione aggiunge 'AUTOMAZIONI' e, sotto, una parola scritta piu' in piccolo letta come 'PROGETTABILE' ➕ (lettura non certa al 100%): il progetto sembra quindi collegato al concetto di automazione una volta reso ricorrente.",
+    "fonte": "RnoC5IlOUhs#60:30 (Excalidraw, schema annotato)",
+    "frame": "frame-0606.png",
+    "ancora": "lavoro a tempo, con traguardo",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-005",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'sources' e' 'la inbox grezza'. In alto a destra dello schema annotato, sopra la card sources, la lista a mano riporta '• ARTICOLI · • APPUNTI · • NOTE': il materiale non ancora elaborato (articoli, appunti, note sparse) atterra qui prima di essere trasformato in canon e poi in note atomiche.",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "la inbox grezza",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-006",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'concepts' e' 'idee, una per nota'. Sopra concepts/docs l'annotazione condivisa riporta '• SOP'. Sulla sinistra del canvas, accanto alla colonna concepts/code, compaiono altre annotazioni a mano: 'ARR: FATTURATO', 'AVVIO', una terza parola poco leggibile (~'DEFINITORE' ➕), e sotto 'CHURN:' con un tratto/sottolineatura incompiuta — probabili concetti-chiave di business da tenere come note atomiche in concepts.",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "idee, una per nota",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-007",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'docs' e' 'procedure intere'. Condivide con concepts l'annotazione soprastante '• SOP' (Standard Operating Procedure): a differenza di concepts (un'idea per nota), docs ospita la procedura per intero, non spezzata.",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "procedure intere",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"},
+      {"verso": "P2-006", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-008",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'entities' e' 'schede dei nomi propri'. Sopra la card, l'annotazione a mano mostra due colonne di parole piccole, lette come 'PERSONE / RUOLI' e 'FORN. / TOOL' ➕ (grafia minuta, lettura non certa al 100%): le schede-entita' catalogano quindi persone/ruoli interni e fornitori/tool esterni con cui l'azienda ha rapporti.",
+    "fonte": "RnoC5IlOUhs#60:30 (Excalidraw, schema annotato)",
+    "frame": "frame-0606.png",
+    "ancora": "schede dei nomi propri",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-009",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'data' e' 'i numeri'. A destra della card, un piccolo schizzo a griglia/tabella con una lettera iniziale simile a 'K' compare nell'annotazione, ma resta tagliato dal bordo del frame e illeggibile con certezza ➕ — non e' possibile determinare a cosa si riferisca esattamente quello schizzo.",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "i numeri",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-010",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'code' e' 'script e automazioni'. Sotto la card, una freccia introduce l'annotazione '• SCRIPT' e '• ONGOING AUTOMATION': e' la destinazione dei progetti one-off che, una volta diventati processi ricorrenti, smettono di essere 'projects' e diventano automazioni permanenti in 'code'.",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "script e automazioni",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-011",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'outputs' e' 'deliverable finiti'. Sotto la card, una freccia introduce '• PROPOSTE', '• CASE STUDY', '• CONTRATTI': sono gli output completati e chiusi, la seconda destinazione possibile per un progetto che ha raggiunto il traguardo (l'altra e' code, per cio' che diventa automazione permanente).",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "deliverable finiti",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-012",
+    "tipo": "definizione",
+    "contenuto": "La cartella 'workspace' e' 'bozze e diario'. A destra della card, una piccola freccia curva introduce l'annotazione 'DIARIO SESSIONI & GIORNALIERO': e' qui che vivono le note di sessione e i riepiloghi giornalieri (journal/sessions e journal/daily), non ancora materiale finale.",
+    "fonte": "RnoC5IlOUhs#60:48 (Excalidraw, schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "bozze e diario",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-013",
+    "tipo": "procedura",
+    "contenuto": "Regola del ciclo di vita di un progetto nella Company Brain: quando un progetto one-off (in 'projects') diventa un processo ricorrente, si sposta dentro 'code' come script/ongoing automation; quando invece il progetto si conclude con un deliverable, si sposta dentro 'outputs'. La trascrizione automatica rende 'one-off' come 'oneof' ➕ (probabile refuso ASR), ma il senso della regola resta chiaro dalle annotazioni sullo schema.",
+    "fonte": "RnoC5IlOUhs#60:48 (voce sopra lo schema annotato completo)",
+    "frame": "frame-0609.png",
+    "ancora": "project oneof quando diventano ongoing vanno direttamente dentro code",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P2-004", "tipo": "motiva"},
+      {"verso": "P2-010", "tipo": "esempio-di"},
+      {"verso": "P2-011", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-014",
+    "tipo": "principio",
+    "contenuto": "La tassonomia risponde alla domanda 'che tipo di cosa e'?' e dice dove archiviare un contenuto: nello schema Excalidraw e' illustrata con l'esempio 'Progetti' che si dirama in 'Progetti Interni' e 'Progetti Clienti', cioe' l'albero di cartelle ('il vostro alberello'). Un'annotazione a mano aggiunta successivamente, 'COME / DEVO / ARCHIVIARE', con una freccia ripiegata verso questo stesso albero, sintetizza visivamente il ruolo della tassonomia: la decisione di dove mettere le cose.",
+    "fonte": "RnoC5IlOUhs#59:36 (Excalidraw, schema \"Tassonomia vs Ontologia\") + voce 59:36-61:12, annotazione aggiunta a 61:06",
+    "frame": "frame-0597.png, frame-0612.png",
+    "ancora": "ti dice dove archiviarla",
+    "confidenza": "osservato",
+    "relazioni": []
+  },
+  {
+    "id": "P2-015",
+    "tipo": "principio",
+    "contenuto": "L'ontologia risponde alla domanda 'cosa sono le cose e come si collegano?' ed e' 'leggibile da una macchina': nello schema e' illustrata con due entita', 'Aurora Sistemi' (azienda) e 'Marco' (persona), collegate da una freccia con l'etichetta 'lavora nel commerciale'. A voce l'autore la definisce esplicitamente: 'Ontologica vuol dire come collego le informazioni. E' un'ontologia applicata.' Una sottolineatura ondulata blu aggiunta sotto il titolo 'ONTOLOGIA' enfatizza il concetto proprio nel momento in cui viene pronunciato a voce.",
+    "fonte": "RnoC5IlOUhs#59:36 (Excalidraw, schema \"Tassonomia vs Ontologia\") + voce 61:30-61:36",
+    "frame": "frame-0616.png, frame-0617.png",
+    "ancora": "Ontologica vuol dire come collego le informazioni. È un'ontologia applicata",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-014", "tipo": "contraddice"}
+    ]
+  },
+  {
+    "id": "P2-016",
+    "tipo": "principio",
+    "contenuto": "La tassonomia dell'autore e' stata progettata deliberatamente per essere agnostica rispetto al tipo di business: 'l'ho fatta apposta perche' funzioni in qualsiasi business' e 'non ha un funziona solo per, non lo so, la clinica o la l'officina, funziona pure per me che faccio contenuto, ho la mia agenzia'.",
+    "fonte": "RnoC5IlOUhs#63:06-63:18 (solo webcam)",
+    "frame": "frame-0632.png, frame-0633.png",
+    "ancora": "l'ho fatta apposta perché funzioni in qualsiasi business",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-014", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-017",
+    "tipo": "principio",
+    "contenuto": "A differenza della tassonomia (che l'autore fornisce gia' pronta), l'ontologia va costruita da ciascuno: 'L'ontologia e' la logica di collegamento ed e' una cosa che voi ovviamente se non volete seguire la mia logica dovrete farvi[la]... Quindi dovrete dare ad Obsidian il come colleghiamo queste cosine qui.'",
+    "fonte": "RnoC5IlOUhs#63:18-63:24 (solo webcam)",
+    "frame": "frame-0634.png, frame-0635.png",
+    "ancora": "L'ontologia è la logica di collegamento ed è una cosa che voi ovviamente se non volete seguire la mia logica dovrete farvi",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-015", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-018",
+    "tipo": "struttura",
+    "contenuto": "Versione estesa dell'esempio di ontologia: a fianco dei due cerchi 'Aurora Sistemi'/'Marco', uno schizzo a mano mostra 'AURORA' e 'MARCO' in alto, con parentesi graffe che convergono su un riquadro 'COMMERC[IALE]', da cui partono frecce verso quattro attributi della relazione: 'DIPENDENTE', 'TENURE', 'FUNZ[IONE]' e 'SALARIO' — un modello concreto di come un'entita'-persona si collega a un'entita'-azienda con attributi tipati.",
+    "fonte": "RnoC5IlOUhs#63:42 (Excalidraw, slide \"ONTOLOGIA\" con l'esempio Aurora/Marco)",
+    "frame": "frame-0638.png",
+    "ancora": "\"DIPENDENTE\"**, **\"TENURE\"**, **\"FUNZ[IONE]\"** e, più a destra, **\"SALARIO\"",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-015", "tipo": "esempio-di"}
+    ]
+  }
+]

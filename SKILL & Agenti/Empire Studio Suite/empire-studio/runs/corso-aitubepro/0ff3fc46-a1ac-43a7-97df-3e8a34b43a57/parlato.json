@@ -1,0 +1,2723 @@
+{
+  "lesson_id": "0ff3fc46-a1ac-43a7-97df-3e8a34b43a57",
+  "modello": "base",
+  "durata_s": 3011.4,
+  "parole": 9013,
+  "blocchi": [
+    {
+      "inizio": 6.1,
+      "fine": 10.9,
+      "testo": "Ciao da pericordere fino o bevenuti all'interno di un nuovo video di high-tube, oggi parleremo"
+    },
+    {
+      "inizio": 10.9,
+      "fine": 18.36,
+      "testo": "di Final Cut Pro X e vedremo come editare un video attraverso Final Cut Pro X."
+    },
+    {
+      "inizio": 18.36,
+      "fine": 22.64,
+      "testo": "Vi anticipo già che questo è un video invece che consiglio di vedere anche gli utenti che"
+    },
+    {
+      "inizio": 22.64,
+      "fine": 27.88,
+      "testo": "non sono Mac in quanto troverete degli spunti per quanto riguarda il metodo copy in colla."
+    },
+    {
+      "inizio": 27.88,
+      "fine": 33.38,
+      "testo": "Infatti, volutamente in questo video ho scelto di utilizzare un video originale molto complicato"
+    },
+    {
+      "inizio": 33.38,
+      "fine": 39.46,
+      "testo": "da editare perché pieno di effetti e di situazioni che potrebbero far accorgere a proprietario del"
+    },
+    {
+      "inizio": 39.46,
+      "fine": 43.14,
+      "testo": "canale che gli abbiamo copiato il video, quindi mi sono voluto complicare la vita."
+    },
+    {
+      "inizio": 43.14,
+      "fine": 47.26,
+      "testo": "Anche questo è un video bonus che abbiamo estrato dal corso della muccarossa e di mobili"
+    },
+    {
+      "inizio": 47.26,
+      "fine": 51.86,
+      "testo": "digitali, proprio perché abbiamo voluto regalarvi l'opportunità di utilizzare un programma"
+    },
+    {
+      "inizio": 51.86,
+      "fine": 56.66,
+      "testo": "come Final Cut e il linea generale strategie presenti, quindi alcune strategie presente"
+    },
+    {
+      "inizio": 56.66,
+      "fine": 61.54,
+      "testo": "l'interno di questi corsi, proprio per poter vivare la possibilità di ampliare il ventaglio"
+    },
+    {
+      "inizio": 61.54,
+      "fine": 66.26,
+      "testo": "delle vostre opportunità, delle vostre scelte, le momenti cui decidete di crear un canale"
+    },
+    {
+      "inizio": 66.26,
+      "fine": 70.9,
+      "testo": "YouTube e monetizzare attraverso il metodo dell'intelligenza artificiale e naturalmente parliamo"
+    },
+    {
+      "inizio": 70.9,
+      "fine": 74.9,
+      "testo": "di un cash cow-channel, un canale dove non ci metti la faccia, dove non ci metti la voce"
+    },
+    {
+      "inizio": 74.9,
+      "fine": 79.3,
+      "testo": "e dove, se non vuoi non è di video, ma se li vuoi editare, puoi utilizzare i tutorial che"
+    },
+    {
+      "inizio": 79.3,
+      "fine": 84.42,
+      "testo": "trovi all'interno di questa sezione, quindi entriamo all'interno del video bonus e io vi auguro"
+    },
+    {
+      "inizio": 84.42,
+      "fine": 89.74,
+      "testo": "buona visione. Ciao da piccola del filo, bevenuti all'interno di un nuovo video, continuiamo"
+    },
+    {
+      "inizio": 89.74,
+      "fine": 96.06,
+      "testo": "con il filone dedicato a come andiamo a realizzare step by step un montaggio video con il"
+    },
+    {
+      "inizio": 96.06,
+      "fine": 101.98,
+      "testo": "metodo copia in colla. In questo video, utilizzero Final Cut Pro X, ma attenzione, potete"
+    },
+    {
+      "inizio": 101.98,
+      "fine": 107.22,
+      "testo": "utilizzare senza alcun problema altri software di video editing come Adobe Premiere Pro,"
+    },
+    {
+      "inizio": 107.22,
+      "fine": 111.74,
+      "testo": "come Davinci Resolve, Filmora, eccetera, eccetera. Non ci interessa tanto come editare"
+    },
+    {
+      "inizio": 111.74,
+      "fine": 117.42,
+      "testo": "il video, quindi le tecniche da usare all'interno del software, ma come naturalmente andare"
+    },
+    {
+      "inizio": 117.42,
+      "fine": 122.22,
+      "testo": "a impostare alla parte creativa. Iniziamo naturalmente, quindi riprendiamo ad adovesceravamo"
+    },
+    {
+      "inizio": 122.22,
+      "fine": 126.86,
+      "testo": "lasciati, abbiamo scaricato le nostre clip video, da utilizzare all'interno del video, abbiamo"
+    },
+    {
+      "inizio": 126.86,
+      "fine": 131.02,
+      "testo": "scaricato il video originale, abbiamo il voiceover originale, magari abbiamo anche scelto"
+    },
+    {
+      "inizio": 131.02,
+      "fine": 135.88,
+      "testo": "un attraciaudio, però la prima cosa in assoluto che io ho ad affare è spostare l'interno"
+    },
+    {
+      "inizio": 135.88,
+      "fine": 140.5,
+      "testo": "di questa sezione di video traciaudio, ok, quindi come potete vedere io metto Play."
+    },
+    {
+      "inizio": 140.5,
+      "fine": 151.62,
+      "testo": "Ok, questa è un video in English, ok, ora una cosa cosa importante, questo è un video"
+    },
+    {
+      "inizio": 151.62,
+      "fine": 156.72,
+      "testo": "dedicato al montaggio complicato con il metodo occupi in colla, cioè tutti quei video chiano"
+    },
+    {
+      "inizio": 156.72,
+      "fine": 162.18,
+      "testo": "al suo interno delle clip che comunque non possono essere utilizzate, sono tante le"
+    },
+    {
+      "inizio": 162.18,
+      "fine": 166.02,
+      "testo": "clip che non possono essere utilizzate, quindi questo è il peggior video in assoluto che"
+    },
+    {
+      "inizio": 166.02,
+      "fine": 172.26,
+      "testo": "vi può capitare quando andate ad editare attraversi il metodo occupi, ora la prima cosa"
+    },
+    {
+      "inizio": 172.26,
+      "fine": 177.34,
+      "testo": "che io ho va ad affare naturalmente in questo caso specifico è rimuovere l'audio, quindi"
+    },
+    {
+      "inizio": 177.34,
+      "fine": 183.78,
+      "testo": "la va ad rimuovere così non ci distulbano, quindi su Final Cut ritorno indietro vi faccio"
+    },
+    {
+      "inizio": 183.78,
+      "fine": 189.42,
+      "testo": "vedere come si fa, clicco il tasso destro e clicco su questa voce qui, ok, lo lascio un attimino"
+    },
+    {
+      "inizio": 189.42,
+      "fine": 193.38,
+      "testo": "così in sovimpressione così la potete vedere, negli altri software di video editing ci sarà"
+    },
+    {
+      "inizio": 193.38,
+      "fine": 197.34,
+      "testo": "la possibilità, già vi ho mostrato come si fa ma magari su Premiere Pro di andare a rimuovere"
+    },
+    {
+      "inizio": 197.34,
+      "fine": 201.7,
+      "testo": "solo l'audio, ok, se non sapete come fare una determinata cosa, cercate la su Google perché"
+    },
+    {
+      "inizio": 201.7,
+      "fine": 206.44,
+      "testo": "avete sempre la risposta trovando, cercando naturalmente di trovare l'informazione per il"
+    },
+    {
+      "inizio": 206.44,
+      "fine": 210.9,
+      "testo": "posto software di video editing, quindi va ad rimuovere l'audio, seleziono la parte"
+    },
+    {
+      "inizio": 210.9,
+      "fine": 215.22,
+      "testo": "e la elimino così non ci disturban, nemmeno adesso all'interno del video stesso, vi voglio"
+    },
+    {
+      "inizio": 215.22,
+      "fine": 219.58,
+      "testo": "proprio far vedere questo video, vedete questo è un canale, ok, una cosa molto importante"
+    },
+    {
+      "inizio": 219.58,
+      "fine": 223.76,
+      "testo": "non copiate i video che stiamo facendo all'interno del corso, non copiate queste"
+    },
+    {
+      "inizio": 223.76,
+      "fine": 229.1,
+      "testo": "niche che vi sto mostrando perché non ha senso, è un errore, ok, fare una cosa del genere,"
+    },
+    {
+      "inizio": 229.1,
+      "fine": 233.42,
+      "testo": "io vi sto facendo degli esempi, infatti ho preso così un violandolo, ma quindi potenzialmente"
+    },
+    {
+      "inizio": 233.42,
+      "fine": 238.04,
+      "testo": "potrebbe non funzionare, ora ho scelto questo video proprio perché vi sono fatto"
+    },
+    {
+      "inizio": 238.04,
+      "fine": 243.94,
+      "testo": "preparare anche una tra ciao, io proprio per farvi capire del poi sovere, per farvi capire"
+    },
+    {
+      "inizio": 243.94,
+      "fine": 248.5,
+      "testo": "come fare il tutto, come potete vedere questo video è pieno gli effetti che vanno poi tolti,"
+    },
+    {
+      "inizio": 248.5,
+      "fine": 252.26,
+      "testo": "quando ci sono, ecco ve lo dico subito, quando c'è il logo, per esempio, del canale va"
+    },
+    {
+      "inizio": 252.26,
+      "fine": 256.78,
+      "testo": "sempre rimosso, quando ci sono i testi, fatti in questo modo, vanno rimosso o comunque vanno"
+    },
+    {
+      "inizio": 256.78,
+      "fine": 262.82,
+      "testo": "coperti, quando ci sono immagini di questo tipo che in realtà sono delle clip video che"
+    },
+    {
+      "inizio": 262.82,
+      "fine": 267.36,
+      "testo": "potrebbero essere delle clip animate, create direttamente dal loro, ecco come in questo caso,"
+    },
+    {
+      "inizio": 267.36,
+      "fine": 273.58,
+      "testo": "non vanno mai usate, ok, per lo meno potresti utilizzare altraversi il metodo del, del"
+    },
+    {
+      "inizio": 273.58,
+      "fine": 279.64,
+      "testo": "ferius, ok, ma io vi stra consiglio quando sono immagini come queste particolari di non usarle"
+    },
+    {
+      "inizio": 279.64,
+      "fine": 283.86,
+      "testo": "proprio, di andarla a cambiare se volete stare tranquilli, se non potete utilizzare i feriusche"
+    },
+    {
+      "inizio": 283.86,
+      "fine": 287.98,
+      "testo": "comunque potrebbe anch'andare bene, ora come potete vedere questo video ha un sacco"
+    },
+    {
+      "inizio": 287.98,
+      "fine": 295.1,
+      "testo": "di effetti che vanno rimorsi, ok, e ha naturalmente anche degli stock tipo questo che possiamo"
+    },
+    {
+      "inizio": 295.1,
+      "fine": 300.46,
+      "testo": "tenere e utilizzare, quindi come potete vedere questo miglio molto molto complicato che potenzialmente"
+    },
+    {
+      "inizio": 300.46,
+      "fine": 304.74,
+      "testo": "va rivoluzionato totalmente, però ci può tornare utile un video come questo perché abbiamo"
+    },
+    {
+      "inizio": 304.74,
+      "fine": 309.78,
+      "testo": "già la base di partenza per capire e comandare a impostare il nostro video, ok, quindi io vi sto"
+    },
+    {
+      "inizio": 309.78,
+      "fine": 315.82,
+      "testo": "mostrando appunto tutti questi effetti che sono abbastanza particolari, ok, ripeto, ora vedremo"
+    },
+    {
+      "inizio": 315.82,
+      "fine": 319.7,
+      "testo": "mano a mano come andiamo a sostituirli quali teniamo i quali no, però come potete vedere"
+    },
+    {
+      "inizio": 319.7,
+      "fine": 324.26,
+      "testo": "anche quando appaiono questi effetti qui in alto, ecco qui, questi qui, questi vanno sempre"
+    },
+    {
+      "inizio": 324.26,
+      "fine": 330.12,
+      "testo": "tolti, vanno sempre tolti semplicemente perché non vanno bene in quanto il proprietario del contenuto"
+    },
+    {
+      "inizio": 330.12,
+      "fine": 334.18,
+      "testo": "potrebbe vedere che il video è stato copiato, quindi se noi siamo bravi a togliere tutti"
+    },
+    {
+      "inizio": 334.18,
+      "fine": 339.14,
+      "testo": "quelli che sono effetti particolari, come testi, come loghi e quant'altro, quando sono video"
+    },
+    {
+      "inizio": 339.14,
+      "fine": 344.14,
+      "testo": "di questo genere molto complicati dai di dare naturalmente complicati intendo perché"
+    },
+    {
+      "inizio": 344.14,
+      "fine": 348.38,
+      "testo": "c'è un sacco di roba da dover modificare noi comunque possiamo stare sicuri che abbiamo"
+    },
+    {
+      "inizio": 348.38,
+      "fine": 352.7,
+      "testo": "realizzato un bel contenuto e non avremo problemi di copyright. La seconda cosa che va da fare"
+    },
+    {
+      "inizio": 352.7,
+      "fine": 357.46,
+      "testo": "una volta tolta la tracciaudio in lingua inglese va ad inserire la tracciaudio in lingua"
+    },
+    {
+      "inizio": 357.46,
+      "fine": 361.42,
+      "testo": "italiana, quindi il risposto qui all'inizio del video è il video che c'è lo, e quindi"
+    },
+    {
+      "inizio": 361.42,
+      "fine": 366.1,
+      "testo": "posso già iniziare ad editare il mio video, però prima di iniziare ad editare il mio video"
+    },
+    {
+      "inizio": 366.1,
+      "fine": 371.46,
+      "testo": "che cosa va da fare va ad inserire anche la traccia musicale che ho scelto, quindi la importerò"
+    },
+    {
+      "inizio": 371.46,
+      "fine": 377.06,
+      "testo": "attraverso in port media, all'interno del mio progetto, qualsiasi sia il programma di video editing,"
+    },
+    {
+      "inizio": 377.06,
+      "fine": 381.42,
+      "testo": "la inserisco sotto la voce, regolo la traccia audio naturalmente del voice over con quella"
+    },
+    {
+      "inizio": 381.42,
+      "fine": 385.22,
+      "testo": "musicale che deve essere più bassa perché naturalmente si deve sentire di più la voce,"
+    },
+    {
+      "inizio": 385.22,
+      "fine": 390.9,
+      "testo": "e già così che cosa ho fatto, ho creato un video comunque diverso perché cambia la durata,"
+    },
+    {
+      "inizio": 390.9,
+      "fine": 395.78,
+      "testo": "vi voglio vedere questa cosa, guardatele quanto dura la tracciaudio e guardate quanto"
+    },
+    {
+      "inizio": 395.78,
+      "fine": 399.98,
+      "testo": "dura il video, in questo caso specifico la voce overa addirittura è stata più veloce"
+    },
+    {
+      "inizio": 399.98,
+      "fine": 405.7,
+      "testo": "la voce overa italiana del voice over inglese, ma la maggior parte delle volte diciamo"
+    },
+    {
+      "inizio": 405.7,
+      "fine": 409.82,
+      "testo": "che i video in lingua inglese sono un po' più breve di quelli italiani perché sono più"
+    },
+    {
+      "inizio": 409.82,
+      "fine": 413.62,
+      "testo": "veloce a parlare, però può cavigliare anche il contrario, però la cosa straordinaria"
+    },
+    {
+      "inizio": 413.62,
+      "fine": 417.22,
+      "testo": "è proprio uguale è che rispetta il video originale, già sta cambiando la durata del video perché"
+    },
+    {
+      "inizio": 417.22,
+      "fine": 422.06,
+      "testo": "in questo caso sarà più breve il video, o alcune volte sarà più lungo, cambia la voce"
+    },
+    {
+      "inizio": 422.06,
+      "fine": 426.42,
+      "testo": "che non è più inglese, ma e oggi quindi cambia il tonno della voce che sta parlando,"
+    },
+    {
+      "inizio": 426.42,
+      "fine": 430.74,
+      "testo": "non è più inglese ma in italiano, cambia la musica di sottofondo che sarà diversa rispetta"
+    },
+    {
+      "inizio": 430.74,
+      "fine": 436.58,
+      "testo": "il video originale, quindi già io ho iniziato a creare un video unico con tre semplici click."
+    },
+    {
+      "inizio": 436.58,
+      "fine": 442.02,
+      "testo": "Quindi quello che vado a fare è posizionale la traciaudio in questa sezione qui, è successivamente"
+    },
+    {
+      "inizio": 442.02,
+      "fine": 447.26,
+      "testo": "una cosa molto importante, vedete cosa lo dice, io vado qui, mi sposto piano piano e vado"
+    },
+    {
+      "inizio": 447.26,
+      "fine": 452.42,
+      "testo": "di solito vado a meno 20, meno 25, 10, bello, per rendere naturalmente la traciaudio non"
+    },
+    {
+      "inizio": 452.42,
+      "fine": 456.62,
+      "testo": "troppo alta, meno 24 dovrebbe andare bene, premiamo Play e vediamo assieme."
+    },
+    {
+      "inizio": 456.62,
+      "fine": 461.42,
+      "testo": "Il canale di consigli e informazioni per migliorare la tua quotidianità."
+    },
+    {
+      "inizio": 461.9,
+      "fine": 468.7,
+      "testo": "Ok, quindi la traciaudio del voiceover rispetto alla traciaudio musicale è sul giusto"
+    },
+    {
+      "inizio": 468.7,
+      "fine": 473.46,
+      "testo": "livello perché c'è un piccolo sottofondo che si sente ma che non disturba rispetto a quello"
+    },
+    {
+      "inizio": 473.46,
+      "fine": 476.98,
+      "testo": "che dice il voiceover che in questo caso è la cosa più importante insieme a quello che"
+    },
+    {
+      "inizio": 476.98,
+      "fine": 481.18,
+      "testo": "apparirà all'interno del video, quindi la qualsiasi punto di vista siamo apposto,"
+    },
+    {
+      "inizio": 481.18,
+      "fine": 487.06,
+      "testo": "poi noi basso semplicemente andare a duplicare questa traciaudio più volta all'interno del"
+    },
+    {
+      "inizio": 487.14,
+      "fine": 491.18,
+      "testo": "video, posso decidere di usare più traciaudio, questo sta boi, che io lo potrebbe anche"
+    },
+    {
+      "inizio": 491.18,
+      "fine": 495.5,
+      "testo": "avere senza utilizzare più traciaudio, soprattutto se utilizzate portali come in vado e alle"
+    },
+    {
+      "inizio": 495.5,
+      "fine": 499.98,
+      "testo": "mezzo dovevete le licenze, perché può essere interessante, e questo video io naturalmente"
+    },
+    {
+      "inizio": 499.98,
+      "fine": 504.66,
+      "testo": "ne usero solo una anche per un discorso di velocità, ma se potete usare più traciaudio"
+    },
+    {
+      "inizio": 504.66,
+      "fine": 509.02,
+      "testo": "fanno comunque anche essere la differenza, in alcune parti di vendere l'aldeanica,"
+    },
+    {
+      "inizio": 509.02,
+      "fine": 514.02,
+      "testo": "immaginiamo un video super motivazionale, da un certo punto c'è bisogno che cambia la musica,"
+    },
+    {
+      "inizio": 514.02,
+      "fine": 516.02,
+      "testo": "ecco quello, fadelo perché è molto senso."
+    },
+    {
+      "inizio": 516.26,
+      "fine": 520.5,
+      "testo": "Ok, quello che vado a fare generalmente è creare, per esempio, un nuovo evento, dove"
+    },
+    {
+      "inizio": 520.5,
+      "fine": 528.3,
+      "testo": "metto le clip di embate, in questo caso specifico, lo posso anche rinominare, e clip embato"
+    },
+    {
+      "inizio": 528.3,
+      "fine": 533.66,
+      "testo": "iniziali, perché, perché è un cosio che vi posso dare all'inizio di un video, ok, nel"
+    },
+    {
+      "inizio": 533.66,
+      "fine": 540.5,
+      "testo": "frattempo orrimoso l'ascolto dell'audio in realtime, per poter fare questo vi"
+    },
+    {
+      "inizio": 540.74,
+      "fine": 548.74,
+      "testo": "basta andare nella sezione view, e attivate questa funzione, questa prima che vi può servire,"
+    },
+    {
+      "inizio": 548.74,
+      "fine": 552.9,
+      "testo": "ma che comunque durante il video magari ci disturba, c'è anche lo shortcut, vedete?"
+    },
+    {
+      "inizio": 552.9,
+      "fine": 557.98,
+      "testo": "La cosa stradinaria del Mac è di Final Cut, è che vi disina in automatio quali sono"
+    },
+    {
+      "inizio": 557.98,
+      "fine": 563.18,
+      "testo": "gli shortcut, ma anche premere pronsacco di shortcut di tastiere, quindi pulsanti che"
+    },
+    {
+      "inizio": 563.18,
+      "fine": 567.06,
+      "testo": "clicca di sulla tastiera, al di là del mouse vi permettono di accedere ad determinare"
+    },
+    {
+      "inizio": 567.06,
+      "fine": 571.1,
+      "testo": "le funzioni, quindi in questo caso io lo tolgo, ok così non abbiamo l'anteprima, tra"
+    },
+    {
+      "inizio": 571.1,
+      "fine": 577.14,
+      "testo": "la lasciando questo, il consiglio che vi do sempre, sempre, in qualsiasi video, all'inizio"
+    },
+    {
+      "inizio": 577.14,
+      "fine": 583.34,
+      "testo": "del video, ok, è fondamentale cambiare, le clip, tutte le clip, i primi 30 secondi, io"
+    },
+    {
+      "inizio": 583.34,
+      "fine": 589.62,
+      "testo": "le cambierei, sempre, per rendere totalmente unico il video, in questo caso specifico, quindi"
+    },
+    {
+      "inizio": 589.62,
+      "fine": 594.38,
+      "testo": "che cosa va da fare? Qui si come all'inizio, ciao, voi so aver dice ciao e benvenuti all'interno"
+    },
+    {
+      "inizio": 594.38,
+      "fine": 599.18,
+      "testo": "del canale, eccetera, eccetera, ok, oppure magari poi sovere inizia dicendo subito"
+    },
+    {
+      "inizio": 599.18,
+      "fine": 604.18,
+      "testo": "immediatamente all'argomento del video, quindi per esempio non giniamo che faccio video"
+    },
+    {
+      "inizio": 604.18,
+      "fine": 609.1,
+      "testo": "su come guadagnane su YouTube, inizio il video dicendo come guadagnare su YouTube, in otto"
+    },
+    {
+      "inizio": 609.1,
+      "fine": 614.06,
+      "testo": "semplici passi, ecco una cosa che posso fare, è cambiare totalmente l'inizio del video,"
+    },
+    {
+      "inizio": 614.06,
+      "fine": 619.82,
+      "testo": "ok, mettendo anche degli effetti di testi che possono apparire all'inizio del video, ok,"
+    },
+    {
+      "inizio": 619.82,
+      "fine": 625.26,
+      "testo": "quindi detto questo, io, in questo caso specifico, vado a selezionare la clip questa qui"
+    },
+    {
+      "inizio": 625.26,
+      "fine": 631.3,
+      "testo": "e la metto qui, ok, quindi qui inizio, inizio al video in questa maniera, ok, vado"
+    },
+    {
+      "inizio": 631.3,
+      "fine": 635.74,
+      "testo": "già a sostituire, vi ricordate il logo che c'era del canale, ecco lo vado a rimuovere,"
+    },
+    {
+      "inizio": 635.74,
+      "fine": 641.22,
+      "testo": "il canale di consigli e informazioni per migliorare la tua quotidianità, ok, quello che"
+    },
+    {
+      "inizio": 641.22,
+      "fine": 645.34,
+      "testo": "posso fare qui, per esempio quando dice il canale di consigli e informazioni perché l'inizio"
+    },
+    {
+      "inizio": 645.34,
+      "fine": 649.1,
+      "testo": "dice ciao e benvenuti, eccetera, eccetera e bombe, lo faccio ascoltare tutto, ok,"
+    },
+    {
+      "inizio": 649.1,
+      "fine": 655.74,
+      "testo": "il canale dico, posso andare qui, vado naturalmente in questo caso specifico, effettuale"
+    },
+    {
+      "inizio": 655.74,
+      "fine": 660.78,
+      "testo": "un taglio, ok, non vi faccio vedere nel dettaglio come tagliare, l'abbiamo già visto"
+    },
+    {
+      "inizio": 660.78,
+      "fine": 666.26,
+      "testo": "precedentemente, vediamo un poco cosa posso utilizzare, adesso naturalmente sto utilizzando"
+    },
+    {
+      "inizio": 666.26,
+      "fine": 671.46,
+      "testo": "delle clip così al volo, ma voi potete essere ancora più precisi, e qui all'inizio, quando"
+    },
+    {
+      "inizio": 671.46,
+      "fine": 675.7,
+      "testo": "saluto all'inizio del video, potete mettere, per esempio, il logo del canale, il nome del canale,"
+    },
+    {
+      "inizio": 675.7,
+      "fine": 679.7,
+      "testo": "anzi fate, lo vi stra consiglio all'inizio, se, per esempio, il voi so aver inizia, ciao,"
+    },
+    {
+      "inizio": 679.7,
+      "fine": 684.18,
+      "testo": "benvenuti all'interno del canale, bene, mettete il logo del canale, il nome, un effetto, un testo"
+    },
+    {
+      "inizio": 684.18,
+      "fine": 689.38,
+      "testo": "che appare per rendere il vostro contenuto super unico all'inizio, ok, qui, successivamente"
+    },
+    {
+      "inizio": 689.38,
+      "fine": 695.9,
+      "testo": "cambiamo le clip, rendiamolo super intrattenente del video, soprattutto nei primi 30 secondi"
+    },
+    {
+      "inizio": 695.9,
+      "fine": 700.02,
+      "testo": "un minuto che al di là del fatto di creare un contenuto unico, e lì che si fa un enorme"
+    },
+    {
+      "inizio": 700.02,
+      "fine": 704.34,
+      "testo": "differenza su YouTube, quando vuoi prendere è attirare l'attenzione dell'utente per"
+    },
+    {
+      "inizio": 704.34,
+      "fine": 707.74,
+      "testo": "tutto il video, perché il tuo obiettivo non è solo farlo cliccare, ma fa di vedere"
+    },
+    {
+      "inizio": 707.74,
+      "fine": 713.06,
+      "testo": "l'intero video, ok, quindi io va davanti all'intero del video, sì gli è i formazioni per"
+    },
+    {
+      "inizio": 713.06,
+      "fine": 719.1,
+      "testo": "migliorare la tua quotidianità, ok, ora vuoi lo che va da fare è tagliare anche questa"
+    },
+    {
+      "inizio": 719.1,
+      "fine": 725.3,
+      "testo": "batte, andiamo avanti, per ti è attivare le notifiche, prima di iniziare, ricordo di"
+    },
+    {
+      "inizio": 725.3,
+      "fine": 731.26,
+      "testo": "descriverti e attivare le notifiche per non perdere i nuovi contenuti, e guardate cosa possiamo"
+    },
+    {
+      "inizio": 731.26,
+      "fine": 735.58,
+      "testo": "fare, qui in questo caso specifico, io posso usare il clip come questa che ne pieno in"
+    },
+    {
+      "inizio": 735.58,
+      "fine": 742.46,
+      "testo": "bado elements, ok, e guardate un po' allora, prima di iniziare, ok, guardate un po',"
+    },
+    {
+      "inizio": 742.46,
+      "fine": 749.02,
+      "testo": "io vuoi lo che va da fare, metto la clip, bado nei testi di Final Cut, ok, poi se siete"
+    },
+    {
+      "inizio": 749.02,
+      "fine": 753.26,
+      "testo": "interessati a avere queste tipologie di testi, affetti, etc., c'era fate, ma lo sapere"
+    },
+    {
+      "inizio": 753.26,
+      "fine": 757.02,
+      "testo": "ne trovate molti su in bado elements, se vuole dei quelli un po' più professionali, abbiamo"
+    },
+    {
+      "inizio": 757.02,
+      "fine": 760.82,
+      "testo": "anche questa possibilità, quindi ci potete poi magari chiedere all'intero della community,"
+    },
+    {
+      "inizio": 760.82,
+      "fine": 765.98,
+      "testo": "ma tra lasciando questo, in questo caso specifico, magari io vado a utilizzare, vediamo un po'"
+    },
+    {
+      "inizio": 765.98,
+      "fine": 773.3,
+      "testo": "quale effetto, ho subito a disposizione probabilmente qui, ora ve lo dico, vedete, io lo"
+    },
+    {
+      "inizio": 773.3,
+      "fine": 781.89,
+      "testo": "cerco al volo, ok, potrei utilizzare, per esempio, questo, che è un effetto molto, molto"
+    },
+    {
+      "inizio": 781.89,
+      "fine": 788.01,
+      "testo": "figo, ok, ma non serò questo qui, voglio utilizzarne un altro, perché ne ho diversi da poter"
+    },
+    {
+      "inizio": 788.01,
+      "fine": 795.46,
+      "testo": "utilizzare potenzialmente, vi faccio vedere nel frattempo appunto tutti gli effetti,"
+    },
+    {
+      "inizio": 795.46,
+      "fine": 800.54,
+      "testo": "abbiamo per farvi capire quante come, ecco lo qui, questo qui vado a usare questo, lo"
+    },
+    {
+      "inizio": 800.54,
+      "fine": 809.31,
+      "testo": "metto qui, ok, guardate un po' che cosa vado a fare, l'icco, guardate di iscriverti e attiva."
+    },
+    {
+      "inizio": 809.31,
+      "fine": 814.03,
+      "testo": "Allora, quello che io posso fare qui, in questo caso specifico, è andare nei parametri,"
+    },
+    {
+      "inizio": 814.03,
+      "fine": 819.83,
+      "testo": "ok, e cambiare la lingüese all'italiano, quindi io faccio iscriviti, per esempio,"
+    },
+    {
+      "inizio": 819.83,
+      "fine": 823.95,
+      "testo": "un meliposto anche per preparare in anticipo già tra dotti in italiano, attenzione c'è anche"
+    },
+    {
+      "inizio": 823.95,
+      "fine": 831.23,
+      "testo": "questa possibilità, ok, e questo, che cosa vado a fare, vado su trasforma e meno sposto"
+    },
+    {
+      "inizio": 831.23,
+      "fine": 837.43,
+      "testo": "qui, per esempio, ok, e quindi guardate un po', prima di viziare, ricordo di iscriverti"
+    },
+    {
+      "inizio": 837.43,
+      "fine": 844.03,
+      "testo": "e attivare le notifiche per non perdere i nuovi contenuti, le arteri sono, ok, io qua"
+    },
+    {
+      "inizio": 844.03,
+      "fine": 850.91,
+      "testo": "vado già a tagliare, ok, perché, le arteri sono quasi santo piano, io qui, taglio,"
+    },
+    {
+      "inizio": 850.91,
+      "fine": 858.91,
+      "testo": "questa parte qua, perché non mi interessa, ok, vado a selezionare e tagliarla, e qui, diciamo"
+    },
+    {
+      "inizio": 858.91,
+      "fine": 864.39,
+      "testo": "che, come potete vedere, mi faccio rivedere dalla parte iniziale un po', ok, vediamo quindi"
+    },
+    {
+      "inizio": 864.39,
+      "fine": 870.71,
+      "testo": "da qui, ecco più o meno da qui, e lo, il canale di consigli e informazioni per migliorare"
+    },
+    {
+      "inizio": 870.71,
+      "fine": 877.07,
+      "testo": "la tua quotidianità, prima di viziare, ricordo di iscriverti e attivare le notifiche"
+    },
+    {
+      "inizio": 877.07,
+      "fine": 884.07,
+      "testo": "per non perdere i nuovi contenuti, le art? ok, vedete, io sto molto attento nella parte iniziale,"
+    },
+    {
+      "inizio": 884.07,
+      "fine": 893.23,
+      "testo": "vedete che poi, in certo punto, abbiamo, abbiamo avuto l'effetto che scomparso e accamere"
+    },
+    {
+      "inizio": 893.23,
+      "fine": 897.15,
+      "testo": "una cosa che non piace quando accadere una cosa del genere, quindi è cosa vado a fare,"
+    },
+    {
+      "inizio": 897.15,
+      "fine": 901.55,
+      "testo": "questo lo lascio così un po' più largo, questo lo, in grandisco, guardate un po' io e cosa"
+    },
+    {
+      "inizio": 901.55,
+      "fine": 907.23,
+      "testo": "vado a fare vado qui, ok, e qui proprio quando stavamo scomparire, io vado a effettuare"
+    },
+    {
+      "inizio": 907.23,
+      "fine": 911.23,
+      "testo": "il mio taglio, quindi non mi interessa avere questa, non mi interessa avere questa, magari"
+    },
+    {
+      "inizio": 911.23,
+      "fine": 916.67,
+      "testo": "non voglia avere questo, non voglia avere questo, qui posso anche fare la stessa sentica cosa,"
+    },
+    {
+      "inizio": 916.67,
+      "fine": 923.07,
+      "testo": "ok, e quindi che vado a fare vado a selezionare questa parte, la taglio, questa parte, la taglio"
+    },
+    {
+      "inizio": 923.07,
+      "fine": 928.03,
+      "testo": "e qua già me la tagliati la automata, quindi vediamo un po' un tì, le art aree sono basi"
+    },
+    {
+      "inizio": 928.03,
+      "fine": 932.83,
+      "testo": "sanguigni che da sportano, ok, io adesso ritorno qui, ora naturalmente ragazzi io sto perdendo"
+    },
+    {
+      "inizio": 932.83,
+      "fine": 937.91,
+      "testo": "più tempo a spiegarvi, a parlarvi eccetera eccetera che a fare naturalmente perché voglio essere"
+    },
+    {
+      "inizio": 937.91,
+      "fine": 943.15,
+      "testo": "anche un po' lento in questo video per farvi vedere dettagliatamente tutto quello che noi possiamo fare,"
+    },
+    {
+      "inizio": 943.15,
+      "fine": 950.35,
+      "testo": "e andiamo a selezionare questa, questa clip qui, ecco qui, quella delle art aree, questa qui"
+    },
+    {
+      "inizio": 950.35,
+      "fine": 955.51,
+      "testo": "e la metto qua, ok, quindi che cosa vado a fare, un tì, le art aree sono basi sanguigni,"
+    },
+    {
+      "inizio": 955.59,
+      "fine": 961.03,
+      "testo": "voglio farno dare una cosa, se io la sposto un'attimina guardate la clip quell'original, vedete che è molto"
+    },
+    {
+      "inizio": 961.03,
+      "fine": 967.75,
+      "testo": "simile, però questo è una clip che ho preso da invato elements, quindi già diciamo che sto utilizzando"
+    },
+    {
+      "inizio": 967.75,
+      "fine": 972.71,
+      "testo": "una clip originale di un video che ha funzionato molto bene, cioè un formato original di un video"
+    },
+    {
+      "inizio": 972.71,
+      "fine": 977.19,
+      "testo": "che ha funzionato molto bene il video di in questione ha fatto milioni di visualizzazioni, andando"
+    },
+    {
+      "inizio": 977.19,
+      "fine": 982.63,
+      "testo": "per accambiare le clip, proprio perché mantengono lo stesso formato, ma, ma, attenzione, lo rendo"
+    },
+    {
+      "inizio": 982.63,
+      "fine": 987.43,
+      "testo": "unico, e soprattutto la parte iniziale lo rendo molto, molto interessante, che la parte in cui le"
+    },
+    {
+      "inizio": 987.43,
+      "fine": 991.35,
+      "testo": "persone decido non si guardano il video, lo ripeto tante volte perché fondamentale, se vuole"
+    },
+    {
+      "inizio": 991.35,
+      "fine": 997.51,
+      "testo": "da avere successo in questo business che facciate questo, le art aree sono basi sanguigni che trasportano"
+    },
+    {
+      "inizio": 997.51,
+      "fine": 1004.31,
+      "testo": "sangue ricco di ossigeno in tu, facciamo anche una bella cosa qui, questo qui lo allungo, contenuti,"
+    },
+    {
+      "inizio": 1004.31,
+      "fine": 1010.63,
+      "testo": "le art aree sono basi sanguigni che trasportano sangue ricco di ossigeno in tutto il corpo,"
+    },
+    {
+      "inizio": 1011.51,
+      "fine": 1016.39,
+      "testo": "allora io qua voglio che potrei fare adesso non lo faccio semplicemente perché è un'utile che mi"
+    },
+    {
+      "inizio": 1016.39,
+      "fine": 1022.87,
+      "testo": "metto qui a fare ogni singolo modifica cambiamento eccetera eccetera, ok, magari poi alla fine, alla fine,"
+    },
+    {
+      "inizio": 1022.87,
+      "fine": 1028.63,
+      "testo": "le faccio, queste modifiche ve le faccio vedere, ok perché se non stiamo qui ore ore ore perché vi dovrei"
+    },
+    {
+      "inizio": 1028.63,
+      "fine": 1033.75,
+      "testo": "vi dovrei fare vedere come mettere un testo eccetera eccetera mai roba che già sapete, ok quindi"
+    },
+    {
+      "inizio": 1033.75,
+      "fine": 1039.99,
+      "testo": "guard così nave la faccio vedere qualcosa altro, no? Qui potrei mettere il testo scrivendo che cosa"
+    },
+    {
+      "inizio": 1039.99,
+      "fine": 1045.59,
+      "testo": "sono le arteri e lo potrei fare apparire in questa parte qui che bianca vedete che non disturba con il"
+    },
+    {
+      "inizio": 1045.59,
+      "fine": 1051.59,
+      "testo": "video con la clip video, anzi addirittura molto meglio perché contestualmente quello che sto andando"
+    },
+    {
+      "inizio": 1051.59,
+      "fine": 1056.79,
+      "testo": "a fare quindi contemporaneamente sto rendendo il contenuto unico e nello stesso tempo interessante"
+    },
+    {
+      "inizio": 1056.79,
+      "fine": 1062.47,
+      "testo": "perché anche i testi mesi all'interno del video non estibuti ma a testi con magari con effetti carini"
+    },
+    {
+      "inizio": 1062.47,
+      "fine": 1069.43,
+      "testo": "fanno le norme differenze, ok? La British Heart Foundation ha osservato, ok questa parte qui invece"
+    },
+    {
+      "inizio": 1069.43,
+      "fine": 1075.11,
+      "testo": "la British Heart Foundation potrei mettere, o la British Heart Foundation quindi potrei proprio mettere qualcosa"
+    },
+    {
+      "inizio": 1075.11,
+      "fine": 1083.59,
+      "testo": "che fa vedere questa, questa, questa fondazione, ok, aspettandiamo a eliminare questo e questo, ma"
+    },
+    {
+      "inizio": 1083.59,
+      "fine": 1090.79,
+      "testo": "nel mio caso specifico quello che andrò a fare è mettere questa parte qui, ok, e quindi vi faccio proprio vedere. La British Heart Foundation"
+    },
+    {
+      "inizio": 1090.95,
+      "fine": 1097.83,
+      "testo": "ha osservato che molte persone sono in consapevoli di aprire le arteri ustruite, si raccorgono solo quando"
+    },
+    {
+      "inizio": 1097.83,
+      "fine": 1105.59,
+      "testo": "sull'iscono unictus o un infanto. Una cosa importante questa clip qui vedete, ok, io potrei anche"
+    },
+    {
+      "inizio": 1105.59,
+      "fine": 1112.95,
+      "testo": "mantenerla questa parte qui, guardate un po', vediamo quando inizia, non un po' dietro, cerchiamo di"
+    },
+    {
+      "inizio": 1112.95,
+      "fine": 1119.75,
+      "testo": "capire quando inizia questa clip, ecco qui, questa la potrei anche mantenere, non disturba, ok, proprio"
+    },
+    {
+      "inizio": 1119.75,
+      "fine": 1126.63,
+      "testo": "perché è una clip senza testo, quando appare questo testo, io quello che posso fare è coprirlo con un altro"
+    },
+    {
+      "inizio": 1126.63,
+      "fine": 1131.75,
+      "testo": "testo, quindi con un effetto che gli mi metto sopra così non si vede proprio questa parte in inglese, oppure"
+    },
+    {
+      "inizio": 1131.75,
+      "fine": 1139.51,
+      "testo": "semplicemente quando sta per entrare la cambio subito, però dipende naturalmente come si vede il, diciamo,"
+    },
+    {
+      "inizio": 1139.51,
+      "fine": 1143.99,
+      "testo": "che potrei anche fare questo, guardate un po', io posso tagliare questa parte qui, questa parte qui prima che"
+    },
+    {
+      "inizio": 1143.99,
+      "fine": 1149.75,
+      "testo": "inizia il testo, quindi vi do delle linee guida, è rallentare il video, fare un effetto specchio,"
+    },
+    {
+      "inizio": 1149.75,
+      "fine": 1156.55,
+      "testo": "rendo già la clip unica, ok, ma personalmente, io, personalmente, vedete che siamo già arrivati più o"
+    },
+    {
+      "inizio": 1156.55,
+      "fine": 1162.63,
+      "testo": "meno a 30 secondi di video, quello che andrei a fare è cambiarla la clip, perché questi primi secondi di"
+    },
+    {
+      "inizio": 1162.63,
+      "fine": 1168.71,
+      "testo": "video, c'è quindi questa parte iniziale, se la rendo unica, unica, unica sono veramente apposto"
+    },
+    {
+      "inizio": 1168.71,
+      "fine": 1175.59,
+      "testo": "successivamente, dove diciamo, è un po' più complicato quando sono cose molto specifiche, andare a"
+    },
+    {
+      "inizio": 1175.59,
+      "fine": 1180.71,
+      "testo": "trovare magari nelle clip, allora in quel caso io che cosa va ad appare, vado semplicemente a usare"
+    },
+    {
+      "inizio": 1180.71,
+      "fine": 1185.27,
+      "testo": "le clip del video originale, però avendo cambiato già queste iniziali e utilizzando il medodo e le"
+    },
+    {
+      "inizio": 1185.27,
+      "fine": 1190.71,
+      "testo": "ferius, eccetera, sono apposto, voglio specificare anche l'altro discorso del ferius, in realtà questa"
+    },
+    {
+      "inizio": 1190.71,
+      "fine": 1196.91,
+      "testo": "clip qui utilizzata, il canale che la sta utilizzando non è che la creata a lui, ok, non è un video che"
+    },
+    {
+      "inizio": 1196.91,
+      "fine": 1201.23,
+      "testo": "hanno registrato loro, probabilmente hanno utilizzato anche loro un programma, un portale che ha"
+    },
+    {
+      "inizio": 1201.23,
+      "fine": 1206.83,
+      "testo": "stock video come questo, quindi in realtà il ferius decade, perché non possono mai dire con certezza"
+    },
+    {
+      "inizio": 1206.83,
+      "fine": 1211.15,
+      "testo": "che noi abbiamo popiato il video, stiamo facendo quello che vi sto facendo vedere io, semplicemente"
+    },
+    {
+      "inizio": 1211.15,
+      "fine": 1215.95,
+      "testo": "perché almeno che non hanno realmente loro realizzato questo contenuto video ed è originale loro,"
+    },
+    {
+      "inizio": 1215.95,
+      "fine": 1220.39,
+      "testo": "noi siamo apposto, siccome nella maggior parte dei canali, quando sono video così ve lo dico"
+    },
+    {
+      "inizio": 1220.39,
+      "fine": 1225.23,
+      "testo": "Gempartenza, questo me ne accorgolo vedo, non sono realizzati dal loro, ma sono clip che hanno preso"
+    },
+    {
+      "inizio": 1225.23,
+      "fine": 1230.43,
+      "testo": "d'altre parte, comunque semplicemente hanno preso un png che hanno spostato qui, siamo apposto, in più"
+    },
+    {
+      "inizio": 1230.43,
+      "fine": 1235.79,
+      "testo": "che cosa succede, succede che abbiamo il ferius, quindi come potete vedere, guardate quando inizia questa"
+    },
+    {
+      "inizio": 1235.79,
+      "fine": 1244.03,
+      "testo": "parte qui, allora io lo sposto leggermente qui per essere tranquillo quando inizia questa parte non"
+    },
+    {
+      "inizio": 1244.03,
+      "fine": 1251.23,
+      "testo": "deve apparire questo, ok, quindi immaginiamo da qui, ok, 30 a 3 secondi, guardate già un secondo,"
+    },
+    {
+      "inizio": 1251.23,
+      "fine": 1256.03,
+      "testo": "io dovrei toglierlo per me non vale la pena, perché almeno che noi li metto un testo sopra e quindi"
+    },
+    {
+      "inizio": 1256.03,
+      "fine": 1263.47,
+      "testo": "la 33 guardate quanto arriviamo, arriviamo a più o meno a 37, lo toglierei, sono 4 secondi di video che"
+    },
+    {
+      "inizio": 1263.47,
+      "fine": 1268.95,
+      "testo": "non possono dire nulla perché siamo dentro il ferius, ok, quindi comunque andate super tranquilli, quindi"
+    },
+    {
+      "inizio": 1268.95,
+      "fine": 1273.27,
+      "testo": "come capite noi possiamo già ragionare da questo punto di vista, detto questo io cercherò magari di"
+    },
+    {
+      "inizio": 1273.27,
+      "fine": 1278.19,
+      "testo": "mettere un'altra clip sopra così sono tranquillo, sono apposto e fico quando non interromano lo step 1"
+    },
+    {
+      "inizio": 1278.19,
+      "fine": 1282.35,
+      "testo": "di questo video perché poi ci dirà qualcosa a mangiare per evitare questi problemi in questo video,"
+    },
+    {
+      "inizio": 1282.35,
+      "fine": 1287.19,
+      "testo": "io userò solo il clip originale, quindi vada avanti un attimo in insieme a voi,"
+    },
+    {
+      "inizio": 1287.19,
+      "fine": 1294.15,
+      "testo": "per evitare questi problemi ci sono alcuni accorgimenti alimentari che si possono prendere, quindi"
+    },
+    {
+      "inizio": 1294.15,
+      "fine": 1299.63,
+      "testo": "ecco alcune bepande alimenti che possono, ok, allora vediamo un po tra le clip che ho preparato"
+    },
+    {
+      "inizio": 1299.63,
+      "fine": 1304.83,
+      "testo": "qui quali abbiamo a disposizione, questi le abbiamo usato di tutti, c'è questa qui per esempio che può"
+    },
+    {
+      "inizio": 1304.83,
+      "fine": 1311.03,
+      "testo": "andare molto molto bene, quindi ho metto questa, alto, per evitare questi problemi ci sono alcuni"
+    },
+    {
+      "inizio": 1311.03,
+      "fine": 1317.27,
+      "testo": "accorgimenti alimentari che si possono prendere, quindi ecco alcune bepande alimenti che possono"
+    },
+    {
+      "inizio": 1317.27,
+      "fine": 1328.62,
+      "testo": "aiutare a mantenere le arterisane, ecco io taglio allora una cosa importante, qua potremmettere"
+    },
+    {
+      "inizio": 1328.62,
+      "fine": 1333.42,
+      "testo": "un effetto di testo dove dice quindi ecco quali alimenti anche qui potremmettere un testo che"
+    },
+    {
+      "inizio": 1333.42,
+      "fine": 1338.18,
+      "testo": "appare per esempio qui in alto, oppure addirittura un certo punto dopo questa parte qui dove"
+    },
+    {
+      "inizio": 1338.18,
+      "fine": 1343.06,
+      "testo": "vogliamo ai alimenti eccetera, ok quindi questa parte qui di che dicevano dualmente il voiceover,"
+    },
+    {
+      "inizio": 1343.06,
+      "fine": 1348.34,
+      "testo": "qui è un certo punto questa qui dove dice queco gli alimenti e le bepande che possono essere usati,"
+    },
+    {
+      "inizio": 1348.34,
+      "fine": 1353.1,
+      "testo": "posso dirizzare addirittura interamente un effetto testo che c'è lo qui guarda di quanti c'è neo,"
+    },
+    {
+      "inizio": 1353.1,
+      "fine": 1358.42,
+      "testo": "ok anche voi li potete scaricare eccetera eccetera, vedete quanti sono, e una volta utilizzati"
+    },
+    {
+      "inizio": 1358.42,
+      "fine": 1362.98,
+      "testo": "questi effetti testi naturalmente che cosa succede adesso faccio alcune modifiche così vi faccio"
+    },
+    {
+      "inizio": 1362.98,
+      "fine": 1368.74,
+      "testo": "vedere questa roba qua, una volta cosa do questi questi effetti sono apposto perché perché ho"
+    },
+    {
+      "inizio": 1368.74,
+      "fine": 1374.1,
+      "testo": "creato un bel contenuto super unico e anche che intrattiene lo spettatore quindi adesso faccio"
+    },
+    {
+      "inizio": 1374.1,
+      "fine": 1379.78,
+      "testo": "alcune modifiche non vi faccio vedere come si mettono i testi perché già vorrò fatto vedere, c'è per dire voglio"
+    },
+    {
+      "inizio": 1379.78,
+      "fine": 1385.26,
+      "testo": "mettere questo qui, maginiamo di voler mettere questo, ok ecco quello spostato e il l'unico cosa che"
+    },
+    {
+      "inizio": 1385.26,
+      "fine": 1389.38,
+      "testo": "devo fare è cambiare dove c'è scritto nome, dove c'è scritto descripcion, devo scrivere tutto qui"
+    },
+    {
+      "inizio": 1390.34,
+      "fine": 1395.46,
+      "testo": "e fine, ho finito perché comunque sono apposto perché ho creato comunque un effetto che può andare a"
+    },
+    {
+      "inizio": 1395.46,
+      "fine": 1400.74,
+      "testo": "coprire anche gli testi che ci sono delle grippe originali, ok riesco mi qui adesso vi faccio vedere"
+    },
+    {
+      "inizio": 1400.74,
+      "fine": 1405.34,
+      "testo": "il dettaglio per esempio come possiamo andare a personalizzare il digio quindi io parto naturalmente"
+    },
+    {
+      "inizio": 1405.34,
+      "fine": 1411.3,
+      "testo": "dalla parte iniziale vedete che ho messo questo loggetto che comunque può servire, possiamo"
+    },
+    {
+      "inizio": 1411.3,
+      "fine": 1417.08,
+      "testo": "anche animarlo se volete si possono fare tante robbe, ma può servire per rendere unico il contenuto"
+    },
+    {
+      "inizio": 1417.08,
+      "fine": 1422.6,
+      "testo": "tra l'altro in questa maniera se provano a copiare il vostro contenuto c'è il vostro logo quindi molto"
+    },
+    {
+      "inizio": 1422.6,
+      "fine": 1427.4,
+      "testo": "semplice poi fargli la segnalazione direttamente a youtube stesso perché molti quando copiono il"
+    },
+    {
+      "inizio": 1427.4,
+      "fine": 1432.2,
+      "testo": "contenuto non fanno quello che stimo facendo noi ma non usano in medio dove ho ben colla, io vado"
+    },
+    {
+      "inizio": 1432.2,
+      "fine": 1436.16,
+      "testo": "avanti adesso vi faccio vedere nel dettaglio tutto quello che è stato fatto quindi li ascoltiamo"
+    },
+    {
+      "inizio": 1436.16,
+      "fine": 1442.12,
+      "testo": "questa parte iniziale assieme perché è fondamentale entrare nell'ottica di come si va a editare un video"
+    },
+    {
+      "inizio": 1442.68,
+      "fine": 1447.6,
+      "testo": "quando è molto complicato di dare un video che ricco ricco di effetti perché vi potrà capitare"
+    },
+    {
+      "inizio": 1447.6,
+      "fine": 1451.8,
+      "testo": "dal canale che da cui voi prendete spunto che alcuni sono molto semplici e vedremo in un altro video"
+    },
+    {
+      "inizio": 1451.8,
+      "fine": 1456.4,
+      "testo": "come farlo in quel caso alcune volte sono un po' più complicati però è un peccato non usare"
+    },
+    {
+      "inizio": 1456.4,
+      "fine": 1460.6,
+      "testo": "quei video perché magari hanno fatto un sacco di visualizzazioni quindi clicchiamo poi e ascoltiamo."
+    },
+    {
+      "inizio": 1460.6,
+      "fine": 1467.14,
+      "testo": "È meglio il canale di consigli e informazioni per migliorare la tua quotidianità. Prima di"
+    },
+    {
+      "inizio": 1467.14,
+      "fine": 1472.98,
+      "testo": "iniziale ricordo di descriverti e attivare le notifiche per non perdere i nuovi contenuti."
+    },
+    {
+      "inizio": 1472.98,
+      "fine": 1479.3,
+      "testo": "Le arterie sono basi sanguigni che trasportano il sangue ricco di ossigeno in tutto il corpo."
+    },
+    {
+      "inizio": 1479.3,
+      "fine": 1485.78,
+      "testo": "La British Heart Foundation ha osservato che molte persone sono in consapevoli di avere"
+    },
+    {
+      "inizio": 1485.78,
+      "fine": 1492.9,
+      "testo": "le arterie ustruite, se ne accorgono solo quando subviscono unictus o un infarto. Per evitare questi"
+    },
+    {
+      "inizio": 1492.9,
+      "fine": 1499.46,
+      "testo": "problemi ci sono alcuni accorgimenti alimentari che si possono prendere. Quindi ecco alcune bepande"
+    },
+    {
+      "inizio": 1499.46,
+      "fine": 1506.34,
+      "testo": "alimenti che possono aiutare a mantenervi arterizzane. Ok, fine, quindi la parte iniziale che sono in"
+    },
+    {
+      "inizio": 1506.34,
+      "fine": 1512.58,
+      "testo": "totale, andiamo a vedere assieme, 44 secondi l'abbiamo totalmente rivoluzionate, abbiamo creato il"
+    },
+    {
+      "inizio": 1512.58,
+      "fine": 1518.18,
+      "testo": "contenuto unico, credetemi che lavorando in questo modo, nel lungo periodo se volete naturalmente"
+    },
+    {
+      "inizio": 1518.18,
+      "fine": 1523.46,
+      "testo": "gestire il vostro canale direttamente voi, tutto quello che vi ho fatto vedere adesso lo fate"
+    },
+    {
+      "inizio": 1523.46,
+      "fine": 1528.66,
+      "testo": "veramente in un minuto di dioroologio, ma proprio se ba male la prima parte, quindi il primo minuto"
+    },
+    {
+      "inizio": 1528.66,
+      "fine": 1532.9,
+      "testo": "in 5-10 minuti, però considerate che andate a realizzare un contenuto che mettiamo caso"
+    },
+    {
+      "inizio": 1532.9,
+      "fine": 1538.82,
+      "testo": "urcivolo un'ora di lavoro per poterlo terminare, è un contenuto che magari riporta migliaia, migliaia,"
+    },
+    {
+      "inizio": 1538.82,
+      "fine": 1542.66,
+      "testo": "diavolo nel corso del tempo. Nello stesso tempo io consiglio sempre di imparare questo"
+    },
+    {
+      "inizio": 1542.66,
+      "fine": 1546.42,
+      "testo": "metodo di lavoro perché quando inizierete a creare il team che al lavoro era per voi, quindi il"
+    },
+    {
+      "inizio": 1546.42,
+      "fine": 1551.06,
+      "testo": "videomegher, al videomegher io dovete dare esattamente queste indicazioni in modo tale da non"
+    },
+    {
+      "inizio": 1551.06,
+      "fine": 1556.82,
+      "testo": "fargli fare cavolate e comunque avere dei contenuti che realmente attirano gli spettatori, guardare"
+    },
+    {
+      "inizio": 1556.82,
+      "fine": 1561.7,
+      "testo": "l'intero contenuto e non avere problemi di copirati perché sono le due cose fondamentali che all'interno"
+    },
+    {
+      "inizio": 1561.7,
+      "fine": 1566.18,
+      "testo": "di un video vi devono interessare. Ecco che sono andato leggermente avanti così vi faccio vedere"
+    },
+    {
+      "inizio": 1566.18,
+      "fine": 1573.14,
+      "testo": "dettagliatamente quello che ho fatto, in primis qui come potete vedere ho aggiunto un testo perché"
+    },
+    {
+      "inizio": 1573.14,
+      "fine": 1578.58,
+      "testo": "essendo che in questo video parliamo di diversi alimenti, ok, è un video sulla salute,"
+    },
+    {
+      "inizio": 1578.58,
+      "fine": 1583.7,
+      "testo": "come per venire, come abbiamo visto Iecto si imparte quant'altro, quindi in questo caso specifico"
+    },
+    {
+      "inizio": 1583.7,
+      "fine": 1589.62,
+      "testo": "parliamo del pesce come fuddo, come cibo. E allora che cosa ho fatto ho semplicemente messo un"
+    },
+    {
+      "inizio": 1589.62,
+      "fine": 1594.42,
+      "testo": "effetto testo che ne possiamo trovare tantissimi come vi dicevo sui invato aremenze portali simili."
+    },
+    {
+      "inizio": 1594.42,
+      "fine": 1602.5,
+      "testo": "Successivamente che cosa ho fatto ho tagliato una gran parte del video in quanto come vi dicevo in"
+    },
+    {
+      "inizio": 1602.5,
+      "fine": 1606.26,
+      "testo": "questo caso specifico il voice over in italiano è stato più veloce del voice over in glese, quindi"
+    },
+    {
+      "inizio": 1606.26,
+      "fine": 1611.46,
+      "testo": "alcune clip vado direttamente a tagliare, vado a tagliare quelli proprio in un po' più complicate. Che"
+    },
+    {
+      "inizio": 1611.46,
+      "fine": 1616.54,
+      "testo": "cosa ho fatto? Guardate qui ho lasciato questa clip, semplicemente perché questa clip che vedete in"
+    },
+    {
+      "inizio": 1616.54,
+      "fine": 1621.94,
+      "testo": "sovint pressione è una clip che probabilmente è stata presa da portali tipo in vado aremenze eccetera,"
+    },
+    {
+      "inizio": 1621.94,
+      "fine": 1627.38,
+      "testo": "ma soprattutto anche per il discorso del ferius posso usarla senza problemi, ok, non ha effetti particolari"
+    },
+    {
+      "inizio": 1627.38,
+      "fine": 1634.34,
+      "testo": "eccetera eccetera. Vado avanti qui ho coberto la clip con uno stock video, ok, che ho scaricato da"
+    },
+    {
+      "inizio": 1634.34,
+      "fine": 1639.3,
+      "testo": "invato aremenze, la cosa molto importante è che mi ricordo io ho scelto volutamente un video"
+    },
+    {
+      "inizio": 1639.3,
+      "fine": 1645.14,
+      "testo": "difficilissimo andare a modificare, essendo che pieno di effetti ma veramente pieno di effetti di"
+    },
+    {
+      "inizio": 1645.14,
+      "fine": 1650.82,
+      "testo": "complicazioni, quindi generalmente il video che scaricate non sono così, ok, quindi comunque ho"
+    },
+    {
+      "inizio": 1650.82,
+      "fine": 1658.02,
+      "testo": "voluto proprio scaricare un video di questo tipo per farvi vedere che è effattibile, qualsiasi"
+    },
+    {
+      "inizio": 1658.02,
+      "fine": 1662.42,
+      "testo": "tipologia di video c'è lo possiamo portare a casa, ok, quindi è effattibile e cento per cento."
+    },
+    {
+      "inizio": 1662.42,
+      "fine": 1668.02,
+      "testo": "Detto questo andiamo avanti e guardate un po' quello che ho fatto qui, semplicemente questo testo"
+    },
+    {
+      "inizio": 1668.02,
+      "fine": 1673.62,
+      "testo": "che vedete qui, allora questa è la clip originale quella che c'è sotto e qui in realtà se io va"
+    },
+    {
+      "inizio": 1673.62,
+      "fine": 1679.82,
+      "testo": "ad eliminare, guardate, ve lo vediamo se se riusciamo fare così dai, allora andiamo direttamente"
+    },
+    {
+      "inizio": 1679.82,
+      "fine": 1686.86,
+      "testo": "a eliminare un attimino questo, ok, intanto poi ritormi indietro, guardate, in realtà c'era un testo"
+    },
+    {
+      "inizio": 1686.86,
+      "fine": 1693.34,
+      "testo": "in inglese, io che cosa ho fatto, semplicemente ho aggiunto un rettangolino per poter coprire naturalmente"
+    },
+    {
+      "inizio": 1693.34,
+      "fine": 1697.74,
+      "testo": "il testo perché se non ho un po' devo farlo, io ho messo un testo, quindi il colesterolo porta la"
+    },
+    {
+      "inizio": 1697.74,
+      "fine": 1702.06,
+      "testo": "rostruzione delle arterie tra l'altro, ho aggiunto un testo che mi aiuta a rendere ancora più unico il"
+    },
+    {
+      "inizio": 1702.06,
+      "fine": 1708.26,
+      "testo": "video, va davanti, ok, e in questo caso specifico scaricato da invato aremenze, una serie di clip che ho"
+    },
+    {
+      "inizio": 1708.34,
+      "fine": 1713.66,
+      "testo": "coperto il mio nome per messo di coprire perché è una cosa importante quando sono video di questo tipo"
+    },
+    {
+      "inizio": 1713.66,
+      "fine": 1719.02,
+      "testo": "così complicati di andare a deditare però ci possono tornare utili quello che l'ora non fatto"
+    },
+    {
+      "inizio": 1719.02,
+      "fine": 1723.62,
+      "testo": "per capire cosa possiamo mettere noi al posto del video stesso, ora non vi sto facendo scoltare"
+    },
+    {
+      "inizio": 1723.62,
+      "fine": 1728.62,
+      "testo": "l'audio del video perché naturalmente non ha senso, non ok, perché poi naturalmente ogni video, una"
+    },
+    {
+      "inizio": 1728.62,
+      "fine": 1733.02,
+      "testo": "storia se, ma considerate che una altra cosa che faccio generalmente, fare in modo che quello che"
+    },
+    {
+      "inizio": 1733.02,
+      "fine": 1737.9,
+      "testo": "viene detto da voi sover possa rispondere con quello che appare, ok, ho messo un"
+    },
+    {
+      "inizio": 1737.9,
+      "fine": 1742.78,
+      "testo": "movimento un altro test e vedete poi guardate quanto diventa semplice perché io qui che cosa ho fatto"
+    },
+    {
+      "inizio": 1742.78,
+      "fine": 1748.42,
+      "testo": "ho selezionato queste due cose, poi dipende quali i software di video editing utilizzo, con tutti"
+    },
+    {
+      "inizio": 1748.42,
+      "fine": 1757.02,
+      "testo": "io posso copiare questi effetti e spostarli qui, nel caso per esempio di Final Cut clicco sul tasto"
+    },
+    {
+      "inizio": 1757.02,
+      "fine": 1762.42,
+      "testo": "option, quindi tengo premuto sul tasto option e posso spostare però mantenendo un alterato quello"
+    },
+    {
+      "inizio": 1762.42,
+      "fine": 1766.9,
+      "testo": "che copiate quindi come si è vada a duplicare essenzialmente questo video lo spostato qui, infatti"
+    },
+    {
+      "inizio": 1766.9,
+      "fine": 1771.18,
+      "testo": "guardate in modo di trovo in questo caso, ora ritorno indietro perché già lo avevo fatto e quindi"
+    },
+    {
+      "inizio": 1771.18,
+      "fine": 1777.5,
+      "testo": "ecco che ho messo il testo gli uomi, quindi mi basta farlo una volta e poi lo copio sempre e in maniera"
+    },
+    {
+      "inizio": 1777.5,
+      "fine": 1782.26,
+      "testo": "molto veloce riesca ad andare avanti, io va davanti come potete vedere qui c'è la clip originale perché"
+    },
+    {
+      "inizio": 1782.26,
+      "fine": 1786.74,
+      "testo": "qui vedete che non ho un serido nulla, in quanto non mi crea problemi questo tipo di clip, anche"
+    },
+    {
+      "inizio": 1786.74,
+      "fine": 1792.06,
+      "testo": "qui c'era la clip originale, ma guardate che cosa ho fatto io ho inserito un testo perché perché ho"
+    },
+    {
+      "inizio": 1792.06,
+      "fine": 1796.22,
+      "testo": "voluto naturalmente personalizzare il video, questa è un'opzione in più che ho voluto naturalmente"
+    },
+    {
+      "inizio": 1796.22,
+      "fine": 1800.54,
+      "testo": "attuare io per rendere ancora più unico il video, ma soprattutto più interessante perché i testi"
+    },
+    {
+      "inizio": 1800.54,
+      "fine": 1806.18,
+      "testo": "sono belli da vedere anche in questo caso, qui ho coperto la clip di software con una clip video"
+    },
+    {
+      "inizio": 1806.18,
+      "fine": 1812.14,
+      "testo": "scaricata da Envato Elements, idem anche qui, idem anche qui, considerate che il download su Envato Elements"
+    },
+    {
+      "inizio": 1812.14,
+      "fine": 1817.5,
+      "testo": "è stato velociissimo quindi non mi ha portato nessun tipo di problema, nuovamente per lo step"
+    },
+    {
+      "inizio": 1817.5,
+      "fine": 1823.86,
+      "testo": "numero 3 che sono le noci occupiato quel titolo, ok ho lasciato vedere la clip originale qui"
+    },
+    {
+      "inizio": 1823.86,
+      "fine": 1829.3,
+      "testo": "in basso semplicemente perché come avete visto va benissimo cioè nel senso non mi crea nessun tipo"
+    },
+    {
+      "inizio": 1829.3,
+      "fine": 1834.62,
+      "testo": "di problema, poi ho aggiunto questo titolo quindi un effetto che ho inserito in 3 secondi qui"
+    },
+    {
+      "inizio": 1834.62,
+      "fine": 1838.98,
+      "testo": "e ho semplicemente aggiunto quello che il poi software stava dicendo, cioè che le noci migliorano"
+    },
+    {
+      "inizio": 1838.98,
+      "fine": 1844.46,
+      "testo": "la versibilità delle arterie e poi che cosa ho fatto o in questo caso specifico ho lasciato"
+    },
+    {
+      "inizio": 1844.46,
+      "fine": 1849.86,
+      "testo": "queste clip qui in basso, dovrei aver lasciato queste clip qui in basso che mi hanno permesso"
+    },
+    {
+      "inizio": 1849.86,
+      "fine": 1854.78,
+      "testo": "noduralmente di non effettuare modifiche di andare avanti velocemente, nuovamente ho aggiunto un altro"
+    },
+    {
+      "inizio": 1854.78,
+      "fine": 1860.34,
+      "testo": "titolo semplicemente copiandolo e anche in questo caso ho lasciato queste clip qui in basso e adesso mi"
+    },
+    {
+      "inizio": 1860.34,
+      "fine": 1864.78,
+      "testo": "sono fermato così andiamo avanti queste sono tutte clip originali del video io lo lasciate senza"
+    },
+    {
+      "inizio": 1864.78,
+      "fine": 1870.22,
+      "testo": "problemi perché queste non mi arregano nessun problema e considerate che quasi a 100% questo"
+    },
+    {
+      "inizio": 1870.3,
+      "fine": 1875.98,
+      "testo": "vero dico non sono clip originali ma di portali con stock video quindi sono super tranquillo, ma ricordate"
+    },
+    {
+      "inizio": 1875.98,
+      "fine": 1880.14,
+      "testo": "vi c'è sempre la regola del periodo che non ve la ripeto ne abbiamo già parlato e quindi io"
+    },
+    {
+      "inizio": 1880.14,
+      "fine": 1886.06,
+      "testo": "posso usare comunque delle clip anche di film, di serie di boo, di video originali quando comunque"
+    },
+    {
+      "inizio": 1886.06,
+      "fine": 1891.14,
+      "testo": "è quella clip non è il centro del mio video, queste tre clip non sono il centro del mio video, il centro del"
+    },
+    {
+      "inizio": 1891.14,
+      "fine": 1895.34,
+      "testo": "mio video è quello che racconta il poi sovere e tutto il montaggio ho effettuato, quindi io su questo"
+    },
+    {
+      "inizio": 1895.34,
+      "fine": 1900.38,
+      "testo": "video non avrò nessun tipo di problema in questa maniera. Andiamo avanti velocemente ho scaricato"
+    },
+    {
+      "inizio": 1900.38,
+      "fine": 1904.94,
+      "testo": "altre clip da Envato Elements, considerate che io queste clip sapendo quello di cui va da parlare"
+    },
+    {
+      "inizio": 1904.94,
+      "fine": 1909.5,
+      "testo": "l'itero del video posso dividermeli per argomento le scariche o tutte quanti insieme vi ho fatto vedere"
+    },
+    {
+      "inizio": 1909.5,
+      "fine": 1916.86,
+      "testo": "come convertirli in file mp4 se naturalmente nei video successivi in un canale tipo questo magari va"
+    },
+    {
+      "inizio": 1916.86,
+      "fine": 1922.22,
+      "testo": "da parlare nuovamente di semi di lino, va da parlare di pesce, allora mi possono servire ok e quindi"
+    },
+    {
+      "inizio": 1922.3,
+      "fine": 1927.42,
+      "testo": "ci sono già scarigate male che vada comunque, non mi servono per quel le scarico fine, una volta scarigate"
+    },
+    {
+      "inizio": 1927.42,
+      "fine": 1932.62,
+      "testo": "le uso all'intero del video originale comunque detto questo vi faccio vedere quello che ho fatto, ho inserito"
+    },
+    {
+      "inizio": 1932.62,
+      "fine": 1937.9,
+      "testo": "questa clip qui ma in realtà io quello che potete fare era anche tenere questa clip con questo"
+    },
+    {
+      "inizio": 1937.9,
+      "fine": 1943.66,
+      "testo": "effetto qui magari cambiare leggermente il colore perché comunque io posso fare la color correction,"
+    },
+    {
+      "inizio": 1943.66,
+      "fine": 1949.34,
+      "testo": "vedete se io vado all'itero di una clip va da fare la color correction e vedete come cambio anche"
+    },
+    {
+      "inizio": 1949.34,
+      "fine": 1954.62,
+      "testo": "la tonalità ecco che riuscita a vederla quindi già la rendo leggermente diversa naturalmente adesso"
+    },
+    {
+      "inizio": 1954.62,
+      "fine": 1958.62,
+      "testo": "io torni dietro perché è una cosa che non voglio fare e se voglio cambiare la color correction ricordatevi"
+    },
+    {
+      "inizio": 1958.62,
+      "fine": 1963.9,
+      "testo": "sempre di tagliare la clip in modo tale tipo fare così e usare solo la color correction qui perché"
+    },
+    {
+      "inizio": 1963.9,
+      "fine": 1969.98,
+      "testo": "naturalmente se non la cambio su tutte le clip e magari non va bene e potevano mettere magari un"
+    },
+    {
+      "inizio": 1969.98,
+      "fine": 1975.82,
+      "testo": "quadratone di questo colore qui sopra e poi scriverci su per esempio ok e risolverevo senza scaricare"
+    },
+    {
+      "inizio": 1975.82,
+      "fine": 1980.46,
+      "testo": "la clip io questo caso specifico adorno indietro e metto la clip e vi faccio vedere un altro bello"
+    },
+    {
+      "inizio": 1980.46,
+      "fine": 1985.98,
+      "testo": "effetto che possiamo utilizzare l'effetto reverse che si usa che naturalmente presente in qualsiasi"
+    },
+    {
+      "inizio": 1985.98,
+      "fine": 1992.3,
+      "testo": "programma di video editing io qui vado a cliccare sulla clip in questione clicco qui e vedete che io ho la"
+    },
+    {
+      "inizio": 1992.3,
+      "fine": 1998.54,
+      "testo": "possibilità di fare lo slow motion di velocizzare la clip di fare un reverse questo caso normale oppure"
+    },
+    {
+      "inizio": 1998.54,
+      "fine": 2004.46,
+      "testo": "più veloce quindi posso comunque vedete quante cose ci sono io posso andare a fare le wind eccetera eccetera quindi"
+    },
+    {
+      "inizio": 2004.46,
+      "fine": 2009.98,
+      "testo": "con la possibilità di utilizzare tantif effetti che io vi stra consiglio come dico sempre quando avete un"
+    },
+    {
+      "inizio": 2009.98,
+      "fine": 2017.18,
+      "testo": "programma di video editing di non mettervi a editare subito il primo video come il primo video che pubblicherete"
+    },
+    {
+      "inizio": 2017.18,
+      "fine": 2024.06,
+      "testo": "sul canale ma prendete un video così random e iniziate a tagliare le clip per capire come si taglia, come si copie,"
+    },
+    {
+      "inizio": 2024.06,
+      "fine": 2029.34,
+      "testo": "come si incolla, come si elimina tutte le cose di cui abbiamo già parlato e un'altra cosa molto importante"
+    },
+    {
+      "inizio": 2029.34,
+      "fine": 2036.22,
+      "testo": "andare naturalmente poi a fare degli esperimenti tipo questo capire come funziona lo slow motion velocizzare il"
+    },
+    {
+      "inizio": 2036.22,
+      "fine": 2040.94,
+      "testo": "video perché poi dopo una volta che avete imparati vi servono per i video successivi e riuscite a cambiare"
+    },
+    {
+      "inizio": 2040.94,
+      "fine": 2046.46,
+      "testo": "le clip in maiera molto veloce e semplice senza stare il hidro può sbattervi quello che ho fatto quindi"
+    },
+    {
+      "inizio": 2046.46,
+      "fine": 2053.02,
+      "testo": "inserire questo effetto è poche cosa ho fatto aggiunto un effetto testo gli effetti testi naturalmente sono"
+    },
+    {
+      "inizio": 2053.02,
+      "fine": 2059.26,
+      "testo": "delle cose che sto inserendo io in più ok che mi permettoni in tanto di personalizzare il video ma"
+    },
+    {
+      "inizio": 2059.26,
+      "fine": 2064.66,
+      "testo": "soprattutto di l'endolo ancora più interessante ok questo è condamentale perché ricordiamoci sempre che"
+    },
+    {
+      "inizio": 2064.66,
+      "fine": 2070.7,
+      "testo": "non dobbiamo limitarci al compitino che con il metodo dove in colla potrebbe anch'andare bene potrebbero esplodere i"
+    },
+    {
+      "inizio": 2070.7,
+      "fine": 2078.38,
+      "testo": "canali ma come dico sempre se vogliamo realmente fare qualcosa che possa avere grandi grossi risultati allora è"
+    },
+    {
+      "inizio": 2078.38,
+      "fine": 2086.06,
+      "testo": "sempre meglio dare il meglio all'interno del video e capire da metterci le panie lo spettatore cosa vuole"
+    },
+    {
+      "inizio": 2086.06,
+      "fine": 2090.94,
+      "testo": "vedere lo spettatore lo spettatore abbia bisogno anche all'interno del video di poter comunque leggere"
+    },
+    {
+      "inizio": 2090.94,
+      "fine": 2098.94,
+      "testo": "dei testi che diciamo allontanano la mono di un video magari composto solo da stock video immagine che"
+    },
+    {
+      "inizio": 2098.94,
+      "fine": 2104.3,
+      "testo": "comunque in ogni caso ripeto con gli effetto anche questo guardate che effetto qui particolare ti attira"
+    },
+    {
+      "inizio": 2104.3,
+      "fine": 2109.38,
+      "testo": "perché è una cosa che generalmente non ve di mettere questi dito li qui all'inizio attila ok mettere"
+    },
+    {
+      "inizio": 2109.38,
+      "fine": 2114.22,
+      "testo": "delle clip video come questa attila tenere quell'originali che comunque generalmente su video che hanno fatto"
+    },
+    {
+      "inizio": 2114.22,
+      "fine": 2119.98,
+      "testo": "milioni di visualizzazioni vuol dire che funzionano attila una bella voce attila una musica attila quindi sono"
+    },
+    {
+      "inizio": 2119.98,
+      "fine": 2125.06,
+      "testo": "cose che comunque attirano ok messa tutte le sieme queste cose funzionano io questo un di più perché"
+    },
+    {
+      "inizio": 2125.06,
+      "fine": 2130.66,
+      "testo": "potevo anche decidere di non metterlo il testo ma siccome è veramente roba di un minuto di tempo andare"
+    },
+    {
+      "inizio": 2130.66,
+      "fine": 2136.42,
+      "testo": "a inserire un testo e vi parlo veramente di un minuto di tempo perché potremmo anche metterci di meno non"
+    },
+    {
+      "inizio": 2136.42,
+      "fine": 2143.7,
+      "testo": "è tanto perché vedete io ado qui c'è il go per esempio m2 3 ciò la mia tipografie 3 ok la copio qui"
+    },
+    {
+      "inizio": 2143.7,
+      "fine": 2148.7,
+      "testo": "e va da cambiare il testo ascolto quello che dice la voi sovere è cerco di scrivere qualcosa che abbia senso"
+    },
+    {
+      "inizio": 2148.7,
+      "fine": 2153.78,
+      "testo": "successivamente vedete che qui abbiamo la curcuma quindi ho fatto copi in colla ve ho fatto vedere prima come si"
+    },
+    {
+      "inizio": 2153.78,
+      "fine": 2158.94,
+      "testo": "fa del testo e anche in questo caso guardate un po queste clip le lascio quindi ho levato a modificare perché"
+    },
+    {
+      "inizio": 2158.94,
+      "fine": 2163.58,
+      "testo": "sono degli stock video dell'immagini e qui faccio vedere proprio quel discorso che dicevo io di andare a"
+    },
+    {
+      "inizio": 2163.58,
+      "fine": 2170.06,
+      "testo": "sostituire questo testo qui senza cambiare la che in basso quindi per capirci quello che volevo fare qui"
+    },
+    {
+      "inizio": 2170.06,
+      "fine": 2176.18,
+      "testo": "che ritorno indietro con cielo così ve lo ricordo se lo faccio qui e nudile che lo rifaccio di nuovo qui perché quando ci"
+    },
+    {
+      "inizio": 2176.18,
+      "fine": 2182.46,
+      "testo": "sono troppi effetti come questo video noi lui siamo tutti quanti però alcuni effetti li possiamo lasciare ora il"
+    },
+    {
+      "inizio": 2182.46,
+      "fine": 2188.06,
+      "testo": "discorso quale è che qui non ha senso ne ne lasciare questo ne è tanto meno lasciare il testo in primi"
+    },
+    {
+      "inizio": 2188.06,
+      "fine": 2192.86,
+      "testo": "sperchè scrittere inglese ci siamo rivolgendo un pubblico italiano e non ha senso in secondo luogo perché saremo"
+    },
+    {
+      "inizio": 2192.86,
+      "fine": 2199.9,
+      "testo": "facilmente scopribili magari potenzialmente da chi è proprio del canale che è proprio il canale viene a vedere il vostro"
+    },
+    {
+      "inizio": 2199.9,
+      "fine": 2206.3,
+      "testo": "canale generalmente quando copiate per interromviglio senza fare modifiche gli arriva la notificatrami dei YouTube ma facendo"
+    },
+    {
+      "inizio": 2206.3,
+      "fine": 2212.5,
+      "testo": "quello che vi sto facendo vedere io questo volo dico qui quindi ve lo dico qui rimane qui perché non mi prendo"
+    },
+    {
+      "inizio": 2212.62,
+      "fine": 2218.98,
+      "testo": "responsabilità da questo punto di vista perché naturalmente considerato una altra cosa che youtube nel corso degli anni si"
+    },
+    {
+      "inizio": 2218.98,
+      "fine": 2225.14,
+      "testo": "avava a evolvere essendo questo un percorso che non è un percorso di quest'anno anche percorso che andrà bene anche 3-10 anni"
+    },
+    {
+      "inizio": 2225.14,
+      "fine": 2232.18,
+      "testo": "magari alcune cose manna cambiare quindi riaggiornatevi sempre le cose che si possono non possono fare in questo momento"
+    },
+    {
+      "inizio": 2232.18,
+      "fine": 2237.1,
+      "testo": "mettete sto registrando il video si va da lasciare questa clip così non succede niente naturalmente se copio per"
+    },
+    {
+      "inizio": 2237.1,
+      "fine": 2241.06,
+      "testo": "intero il video senza fare quello che vi ho fatto vedere è un problema ma dopo tutto quello ho fatto"
+    },
+    {
+      "inizio": 2241.06,
+      "fine": 2247.82,
+      "testo": "se io questa parte la lascio così bigarantisco che non succede nulla però non mi posso prendere la responsabilità perché poi magari arriva la"
+    },
+    {
+      "inizio": 2247.82,
+      "fine": 2253.54,
+      "testo": "segnalazione lo strike e percorpa di questa cosa magari dovete buttare via un video un canale addirittura si prende"
+    },
+    {
+      "inizio": 2253.54,
+      "fine": 2258.7,
+      "testo": "del 3 strike quindi per come la vedo io è sempre meglio stare un po' più tranquilli ripeto e nel caso in cui andate a"
+    },
+    {
+      "inizio": 2258.7,
+      "fine": 2266.02,
+      "testo": "montare i video voi se poi un video maker che pagate assicuratevi assicuratevi che faccia un ottimo lavoro e quindi vediamo come fare allora"
+    },
+    {
+      "inizio": 2266.02,
+      "fine": 2273.02,
+      "testo": "quello che vado a fare io vado qui nei miei effetti testo ok vado in genera torsi in questo caso specifico su Final Cut"
+    },
+    {
+      "inizio": 2273.02,
+      "fine": 2277.22,
+      "testo": "vi ricordo che questa cosa la potete fare un po' dappertutto ne avrà la sua"
+    },
+    {
+      "inizio": 2277.22,
+      "fine": 2283.22,
+      "testo": "il suo modo di intendere l'effetto testo in questo caso specifico l'effetto rettangolo come lo chiamo"
+    },
+    {
+      "inizio": 2283.22,
+      "fine": 2290.42,
+      "testo": "generalmente io c'è rettangolo che metto sopra comunque una forma che metto sopra un'immagine ok in questo caso vedete io la"
+    },
+    {
+      "inizio": 2290.42,
+      "fine": 2298.42,
+      "testo": "vedto dove chiappare qui quindi io voglio chiappare esattamente qui quindi la metto qui ok anzi la metto poco"
+    },
+    {
+      "inizio": 2298.42,
+      "fine": 2303.94,
+      "testo": "poco prima qui perché tante alla fine vedete che questo lo posso fare soprattutto in questo caso in maniera molto"
+    },
+    {
+      "inizio": 2303.94,
+      "fine": 2309.94,
+      "testo": "semplice andando a oscurare senza che lo spettatore si ne accorga in quanto è un"
+    },
+    {
+      "inizio": 2309.94,
+      "fine": 2316.42,
+      "testo": "mono colore questo qui ok quindi io che cosa vado a fare vado qui nella mia nel mio effetto intanto vado a"
+    },
+    {
+      "inizio": 2316.42,
+      "fine": 2325.66,
+      "testo": "mettere diamond ok perdonati non diamo ma rettangolo vado a eliminare quello che c'è a torno vado anche a"
+    },
+    {
+      "inizio": 2325.66,
+      "fine": 2334.3,
+      "testo": "scegliere il questo colore bianco che cosa faccio utilizzo lo strumento contagocce ok vado qui e lo"
+    },
+    {
+      "inizio": 2334.3,
+      "fine": 2340.3,
+      "testo": "coloro di questo colore guardate cosa succede io vado qui su transforma lo sposto qui è praticamente"
+    },
+    {
+      "inizio": 2340.3,
+      "fine": 2347.7,
+      "testo": "ho inserito questo effetto che poi naturalmente io dovrò andare a rimuovere questo lo facita vedete perché se"
+    },
+    {
+      "inizio": 2347.7,
+      "fine": 2353.5,
+      "testo": "non appare questo facito a qui di l'ado quindi l'aporto così ok fine ora ora lo rifaccio di un"
+    },
+    {
+      "inizio": 2353.5,
+      "fine": 2357.7,
+      "testo": "nuovo ridorno indietro anzi cancello questo effetto così lo faccio di vedere perché per me queste sono"
+    },
+    {
+      "inizio": 2357.7,
+      "fine": 2362.3,
+      "testo": "cose troppo importanti che dovete imparare ora vedo sto facendo vedere su Final Cut ma si può fare"
+    },
+    {
+      "inizio": 2362.3,
+      "fine": 2367.78,
+      "testo": "uguale su qualsiasi software di video editing quindi metto una forma in questo caso su Final Cut è un cerco"
+    },
+    {
+      "inizio": 2367.78,
+      "fine": 2375.9,
+      "testo": "iniziale lo trasformo in retangolo vado a togliere il contorno a torno perché non mi serve vado a"
+    },
+    {
+      "inizio": 2375.9,
+      "fine": 2380.7,
+      "testo": "rimuovere l'opacità che questa che trovate qui perché non mi serve vado a selezionare lo strumento"
+    },
+    {
+      "inizio": 2380.7,
+      "fine": 2386.66,
+      "testo": "contagocce per esempio su premere progetto lo strumento contagocce ok quindi perdonato vi vado qui su"
+    },
+    {
+      "inizio": 2386.66,
+      "fine": 2392.78,
+      "testo": "colore seleziono lo strumento contagocce ecco che praticamente vado a di ingrandire questo effetto che"
+    },
+    {
+      "inizio": 2392.78,
+      "fine": 2400.34,
+      "testo": "io dovrei trovare qui perché vediamo un po' appena appare il testo ecco io me lo ve la gioco così vediamo se"
+    },
+    {
+      "inizio": 2400.34,
+      "fine": 2406.3,
+      "testo": "appare quella così in alto a destra non dovrebbe appare il effetto io ho coperto totalmente quell'effetto e che"
+    },
+    {
+      "inizio": 2406.3,
+      "fine": 2413.62,
+      "testo": "cosa vado a fare poco prima quindi vi faccio per vedere poco prima che appare questo quindi qui ok vado"
+    },
+    {
+      "inizio": 2413.62,
+      "fine": 2419.18,
+      "testo": "un'archimina a far un taglio così sono tranquillo che appare dopo ok cancello questa parte qui perché poi"
+    },
+    {
+      "inizio": 2419.18,
+      "fine": 2425.18,
+      "testo": "c'è questo effetto qui io mi prendo in mio bel tidolo che era quello che avevamo visto prima me lo sposto qui"
+    },
+    {
+      "inizio": 2425.18,
+      "fine": 2433.46,
+      "testo": "quindi è cosa vado a fare semplicemente ecco vedete e ho coperto qui ora io qui è cosa scrivo scrivo un testo"
+    },
+    {
+      "inizio": 2433.46,
+      "fine": 2438.82,
+      "testo": "quindi posso mettere un effetto come questo che era quello che avevo fatto vedere prima io ho"
+    },
+    {
+      "inizio": 2438.82,
+      "fine": 2443.9,
+      "testo": "quanti sacco di testi quindi scrivo un testo scrivo un testo dipende cosa dice naturalmente in questo caso"
+    },
+    {
+      "inizio": 2443.9,
+      "fine": 2448.7,
+      "testo": "specifico il il voi sovere ok quindi a seconda di quello che dice il voi sovere io vado a"
+    },
+    {
+      "inizio": 2448.7,
+      "fine": 2454.14,
+      "testo": "scrivere un testo posso naturalmente rendere un po più veloce la clip in questo caso è questa qui in basso"
+    },
+    {
+      "inizio": 2454.14,
+      "fine": 2461.82,
+      "testo": "quindi io che cosa devo fare guardate un po' da quando appare la clip allora vado qui se vogliono"
+    },
+    {
+      "inizio": 2461.82,
+      "fine": 2467.78,
+      "testo": "normalmente applicare un effetto alla clip questa è una cosa molto importante quindi vado avanti alla"
+    },
+    {
+      "inizio": 2467.78,
+      "fine": 2474.54,
+      "testo": "andiamo velocemente avanti ecco qui fino a che appare la clip eccola vado a poco poco dietro"
+    },
+    {
+      "inizio": 2474.54,
+      "fine": 2483.38,
+      "testo": "ecco me la gioco da qui in poi quindi da qui ok vado avanti posso arrivare fino a qui tanto comunque"
+    },
+    {
+      "inizio": 2483.38,
+      "fine": 2488.5,
+      "testo": "va benissimo questa parte qui e qui posso andare nell'intero della clip e faro un po' quello che voglio"
+    },
+    {
+      "inizio": 2488.5,
+      "fine": 2499.22,
+      "testo": "quindi voglio un effetto quello che avevamo visto prima ok quindi reverse vediamo guardate cosa"
+    },
+    {
+      "inizio": 2499.22,
+      "fine": 2504.14,
+      "testo": "succede che prima e così e poi se ne va via generalmente ok quindi ora non si vede perché voi"
+    },
+    {
+      "inizio": 2504.14,
+      "fine": 2508.66,
+      "testo": "appare il testo ma vedete che a mano a mano se ne va via quindi già posso fare questo e ho cambiato"
+    },
+    {
+      "inizio": 2508.66,
+      "fine": 2513.9,
+      "testo": "leggermente questa clip poi vedete che appare qui adesso il titolo perché ho fatto il reverse quindi"
+    },
+    {
+      "inizio": 2513.9,
+      "fine": 2520.22,
+      "testo": "guardate guardate qui in alto il countdown ora vado metaboliche che contribuiscono perdate vado così"
+    },
+    {
+      "inizio": 2520.22,
+      "fine": 2527.18,
+      "testo": "e quindi cosa succede secondo dimensioni metaboliche che contribu perché naturalmente ho fatto l'effetto al"
+    },
+    {
+      "inizio": 2527.18,
+      "fine": 2531.22,
+      "testo": "contrario quindi lo dovrei spostare qui ora meno n'interessa fare questo effetto al contrario quindi"
+    },
+    {
+      "inizio": 2531.22,
+      "fine": 2537.74,
+      "testo": "lo tengo in questa maniera posso cambiare leggermente il colore e quindi vado qui e cambio la tonalità del"
+    },
+    {
+      "inizio": 2537.74,
+      "fine": 2543.78,
+      "testo": "colore ok però se cambio la tonalità del colore attenzione attenzione guardate un po' che cosa"
+    },
+    {
+      "inizio": 2543.78,
+      "fine": 2550.66,
+      "testo": "vado a fare io vado nel mio effetto retangolo che ha usato prima precedentemente lo selezione il colore"
+    },
+    {
+      "inizio": 2550.66,
+      "fine": 2557.62,
+      "testo": "ok vado sulla mia bella il suo mio bel contacocce ok e lo vado a cambiare perché lo vado a cambiare"
+    },
+    {
+      "inizio": 2557.62,
+      "fine": 2563.94,
+      "testo": "perché giustamente e vedete perché ho cambiato il colore di base di questa clip quindi ho già"
+    },
+    {
+      "inizio": 2563.94,
+      "fine": 2569.26,
+      "testo": "cambio il testo ho cambiato il colore potso usare un effetto reverse un effetto specchio quello che"
+    },
+    {
+      "inizio": 2569.98,
+      "fine": 2575.42,
+      "testo": "sono apposto adesso vado solo a inserir un testo nuovo e ho modificato una clip originale senza che il"
+    },
+    {
+      "inizio": 2575.42,
+      "fine": 2579.66,
+      "testo": "proprietario se ne possa mai poi mai accorgere e ripeto faccio tutto questo semplicemente perché il test"
+    },
+    {
+      "inizio": 2579.66,
+      "fine": 2584.62,
+      "testo": "di inglese perché magari se il testo anche se fosse strada di inglese poteva andare bene per un"
+    },
+    {
+      "inizio": 2584.62,
+      "fine": 2589.18,
+      "testo": "pubblico italiano per questa clipo devo anche mantenerlo ed ecco quello che ho fatto quindi di"
+    },
+    {
+      "inizio": 2589.18,
+      "fine": 2595.18,
+      "testo": "faccio vedere vedete qui ho aggiuto questo testo ok poi siamo andati avanti c'è il terberto quindi"
+    },
+    {
+      "inizio": 2595.18,
+      "fine": 2600.62,
+      "testo": "ho ricopiato di nuovo il titolo copi in colla molto veloce che vi ho già fatto vedere come si fa ho"
+    },
+    {
+      "inizio": 2600.62,
+      "fine": 2606.62,
+      "testo": "lasciato queste clipo originali qui sullo spondo ho aggiunto questo effetto testo che è molto veloce molto"
+    },
+    {
+      "inizio": 2606.62,
+      "fine": 2612.86,
+      "testo": "semplice ma che comunque va anche a cambiare leggermente ogni tanto i colori del video stesso quindi diciamo"
+    },
+    {
+      "inizio": 2612.86,
+      "fine": 2617.58,
+      "testo": "da quell'interruzione che spinge l'ospertatore a leggere da andare avanti ridere del video ho"
+    },
+    {
+      "inizio": 2617.58,
+      "fine": 2622.74,
+      "testo": "combiato la clip di sotto fondo con questa clip quindi vedete verità verde alla fine ho lasciato tutto così"
+    },
+    {
+      "inizio": 2622.74,
+      "fine": 2627.94,
+      "testo": "come ho aggiunto una sola clip più e messo un titolo andiamo avanti e poi c'è la cannella in questo caso"
+    },
+    {
+      "inizio": 2627.94,
+      "fine": 2633.94,
+      "testo": "come potete vedere ho lasciato queste clip ok e poi che cosa ho fatto praticamente ho aggiunto questa"
+    },
+    {
+      "inizio": 2633.94,
+      "fine": 2642.1,
+      "testo": "trassizione che è una altra cosa che noi possiamo fare e praticamente vedete qui c'erano qui un testo"
+    },
+    {
+      "inizio": 2642.1,
+      "fine": 2648.82,
+      "testo": "molto piccolino e qui praticamente c'erano dei dei testi in inglese li ho coperti come vi ho spiegato"
+    },
+    {
+      "inizio": 2648.9,
+      "fine": 2654.86,
+      "testo": "precedentemente quindi questa maniera ho aggiunto delle informazioni sono andato avanti poi ho aggiunto un"
+    },
+    {
+      "inizio": 2654.86,
+      "fine": 2661.02,
+      "testo": "altra clip più quindi per quanto riguarda la cannella se non sbaglio ho scaricato una sola clip più e poi"
+    },
+    {
+      "inizio": 2661.02,
+      "fine": 2665.78,
+      "testo": "lasciato tutto quanto originale e poi praticamente siamo arrivati al meolograno per il meolograno anche in"
+    },
+    {
+      "inizio": 2665.78,
+      "fine": 2671.04,
+      "testo": "questo caso ho messo il titolo molto veloce da inserire ho lasciato questa clip poi guardate qua ci sono"
+    },
+    {
+      "inizio": 2671.04,
+      "fine": 2675.98,
+      "testo": "queste clip queste non mi interessa io questa parte lo tagliate guardate che cosa va da fare qui vedete che"
+    },
+    {
+      "inizio": 2675.98,
+      "fine": 2681.54,
+      "testo": "c'è questo effettino qui comunque potrebbe potenzialmente rompere le scadole allora io intanto vado a"
+    },
+    {
+      "inizio": 2681.54,
+      "fine": 2689.22,
+      "testo": "seleccionare la clip ok vado a cambiare leggermente la tonalità del colore così lo rendiamo diverso poi"
+    },
+    {
+      "inizio": 2689.22,
+      "fine": 2695.62,
+      "testo": "vado qui clicco su reverse ok guardate cosa succede che è tutto il contrario in questo caso in"
+    },
+    {
+      "inizio": 2695.62,
+      "fine": 2701.42,
+      "testo": "inglese prima quella parte quindi la clip quella dopo e poi l'altra così anche semplicemente"
+    },
+    {
+      "inizio": 2701.42,
+      "fine": 2707.66,
+      "testo": "cambiare una clip l'ordine delle clip ho parla differenza e vedete questo cuorecino al contrario va da"
+    },
+    {
+      "inizio": 2707.66,
+      "fine": 2715.58,
+      "testo": "quindi invece di comparire un certo punto già pare nel video poi scompare ok così naturalmente io ho"
+    },
+    {
+      "inizio": 2715.58,
+      "fine": 2721.48,
+      "testo": "creato un effetto molto veloce in tre semplici clic che mi ha permesso di mantenere le clip originali una"
+    },
+    {
+      "inizio": 2721.48,
+      "fine": 2725.9,
+      "testo": "volta fatto questo siamo quindi quasi alla fine questo video e vi faccio vedere appunto una cosa molto"
+    },
+    {
+      "inizio": 2725.9,
+      "fine": 2730.78,
+      "testo": "importante guardate un po' io che cosa ho fatto messo naturalmente un altro stock video qui in"
+    },
+    {
+      "inizio": 2730.78,
+      "fine": 2735.9,
+      "testo": "vasso e poi nella colto action finale vi faccio vedere quello che voi potete fare potete utilizzare sia"
+    },
+    {
+      "inizio": 2735.9,
+      "fine": 2741.5,
+      "testo": "detesti sia dei video che comunque spingo l'ultente affariazione ecco perché vi dicevo la parte"
+    },
+    {
+      "inizio": 2741.5,
+      "fine": 2746.54,
+      "testo": "finale va sempre modificata al di là del discorso di rendere il video unico perché è fondamentale"
+    },
+    {
+      "inizio": 2746.54,
+      "fine": 2750.78,
+      "testo": "che le persone faccio nazione vi faccio proprio vedere la parte vi faccio proprio ascoltare la parte"
+    },
+    {
+      "inizio": 2750.78,
+      "fine": 2756.7,
+      "testo": "finale guardate un po' quali di questi cipi consumi amitualmente scrivono i commenti e non"
+    },
+    {
+      "inizio": 2756.7,
+      "fine": 2763.26,
+      "testo": "dimenticare di scriveti per ricevere altri consigli salutari come questi grazie per aver guardato"
+    },
+    {
+      "inizio": 2764.78,
+      "fine": 2770.54,
+      "testo": "molto semplice quindi ho semplicemente scaricato due clip video che tra l'altro queste clip questo"
+    },
+    {
+      "inizio": 2770.54,
+      "fine": 2776.14,
+      "testo": "di commentare di fare magari azione in questo canso c'è questa signorina che indica nel scaricato un"
+    },
+    {
+      "inizio": 2776.14,
+      "fine": 2780.7,
+      "testo": "bel po' che le potete utilizzare abbita quindi molto veloce perché le importate le vette in due secondi"
+    },
+    {
+      "inizio": 2780.7,
+      "fine": 2786.38,
+      "testo": "però spingete l'ultente affariazione perché ricordate vi anche nel voice over stesso quindi nella voce"
+    },
+    {
+      "inizio": 2786.38,
+      "fine": 2791.66,
+      "testo": "del video che al di là dello script in lingua inglese va comunque riadattato il lingua italiana aggiungendo"
+    },
+    {
+      "inizio": 2791.66,
+      "fine": 2796.62,
+      "testo": "queste cose se per esempio non l'anno aggiunte il fatto di spingere l'ultente a mettere like al video"
+    },
+    {
+      "inizio": 2796.62,
+      "fine": 2802.3,
+      "testo": "a descriversi ad attivare la campanellina a commentare fondamentale fa io lo fare quindi mettiamolo sia"
+    },
+    {
+      "inizio": 2802.3,
+      "fine": 2807.5,
+      "testo": "come immagini sia come effetti video in questo caso non bisogna niente è un effetto video di"
+    },
+    {
+      "inizio": 2808.22,
+      "fine": 2813.26,
+      "testo": "Final Cut ce ne sono tantissimi come vi dicevo per qualsiasi software di video editing quindi lo spostato"
+    },
+    {
+      "inizio": 2813.26,
+      "fine": 2817.98,
+      "testo": "qui ho semplicemente tradotto questo effetto dall'inglese all'italiano quindi invece di subscribe o"
+    },
+    {
+      "inizio": 2817.98,
+      "fine": 2822.46,
+      "testo": "scritto iscriviti ma bodevo anche lasciarlo inglese le persone lo capivano lo stesso ok"
+    },
+    {
+      "inizio": 2822.46,
+      "fine": 2827.58,
+      "testo": "quindi è finito adesso l'unica cosa che devo fare è esportare il mio video io già fatto vedere come si fa"
+    },
+    {
+      "inizio": 2828.14,
+      "fine": 2834.46,
+      "testo": "per Final Cut quindi in questo caso specifico vado su share vado naturalmente su export file oppure"
+    },
+    {
+      "inizio": 2834.46,
+      "fine": 2840.86,
+      "testo": "potevo premere con man e è naturalmente in questo caso specifico io clicco sul contivo perché ci sono"
+    },
+    {
+      "inizio": 2840.86,
+      "fine": 2845.42,
+      "testo": "alcuni dito li mi dicono che sono offline ma non va bene uguale ok adesso vado avanti al volo"
+    },
+    {
+      "inizio": 2847.26,
+      "fine": 2852.14,
+      "testo": "vado naturalmente in questa tezione qui e io in questo caso specifico creato un video in"
+    },
+    {
+      "inizio": 2852.14,
+      "fine": 2859.9,
+      "testo": "1980 quindi lascio tutto così come lascio tutto così come vado qui e mi fa vedere che mp4 mi dice"
+    },
+    {
+      "inizio": 2859.9,
+      "fine": 2865.66,
+      "testo": "che alla fine il peso sarà di 667 megabyte clicco sul nex clicco in questo caso nella cartela"
+    },
+    {
+      "inizio": 2865.66,
+      "fine": 2871.58,
+      "testo": "dall'od posso anche da io nome al video quindi in questo caso specifico lo lascio così non fa niente"
+    },
+    {
+      "inizio": 2871.58,
+      "fine": 2876.86,
+      "testo": "quindi lo lascio in questa maniera inizia ma dovrebbe esportare che qui io posso vedere a mano a mano"
+    },
+    {
+      "inizio": 2877.58,
+      "fine": 2883.18,
+      "testo": "ho finito quindi adesso o il mio video pronto da utilizzare all'interno del mio crescago genre naturalmente"
+    },
+    {
+      "inizio": 2883.18,
+      "fine": 2889.66,
+      "testo": "ripeto specifico che questa è la sua semplicemente un test quindi un video fatto così random proprio per"
+    },
+    {
+      "inizio": 2889.66,
+      "fine": 2896.86,
+      "testo": "farvi capire cosa noi possiamo fare quindi non ci sono consigli di niente anzi non vi stra consiglio"
+    },
+    {
+      "inizio": 2896.86,
+      "fine": 2901.1,
+      "testo": "di non copiare quello che vedete all'interno dei nostri video anche perché magari se lo fanno altre"
+    },
+    {
+      "inizio": 2901.1,
+      "fine": 2905.74,
+      "testo": "persone rischiati tutti di avere la stessa identica niche non vanno meno bene ma nello stesso tempo"
+    },
+    {
+      "inizio": 2905.74,
+      "fine": 2910.94,
+      "testo": "ripeto è solo attitelo è simplificativo per farvi vedere come andare e dare un video in questo"
+    },
+    {
+      "inizio": 2910.94,
+      "fine": 2915.9,
+      "testo": "caso specifico un video molto complicato ricco ricco ricco ricco di effetti generalmente non sono"
+    },
+    {
+      "inizio": 2915.9,
+      "fine": 2923.66,
+      "testo": "così se vi posso dare un consiglio quando credo che lo voglia di così io visto che avete acquistato"
+    },
+    {
+      "inizio": 2923.66,
+      "fine": 2930.14,
+      "testo": "questo percorso quando dovete scegliere il video e il video di un canale controllate se sono video come"
+    },
+    {
+      "inizio": 2930.14,
+      "fine": 2934.06,
+      "testo": "quello che vi ho fatto vedere perché se sono tutti così per come la vedo io non ha senso copiare"
+    },
+    {
+      "inizio": 2934.06,
+      "fine": 2938.86,
+      "testo": "quel tipo di video perché è un più il casino ne andare di dare il video che comunque si può fare"
+    },
+    {
+      "inizio": 2938.86,
+      "fine": 2945.82,
+      "testo": "rispetto a trovarne un altro che ha meno titoli dove poi voi avete diciamo più più margine di"
+    },
+    {
+      "inizio": 2945.82,
+      "fine": 2949.66,
+      "testo": "manovra perché poi titoli sarete voi a mettere le in guitalia anche dove non li hanno messi loro"
+    },
+    {
+      "inizio": 2949.66,
+      "fine": 2954.46,
+      "testo": "attenzione però lo potete fare comunque con tutta la tranquillità di non avere un video totalmente"
+    },
+    {
+      "inizio": 2954.46,
+      "fine": 2959.94,
+      "testo": "da rivoluzionare ok qui come avete visto io ho mantenuto delle clipo originali altri lo sostituite"
+    },
+    {
+      "inizio": 2959.94,
+      "fine": 2965.54,
+      "testo": "considerate che ho ditato questo video mentre sto anche parlando con voi ok e quindi di conseguenza non"
+    },
+    {
+      "inizio": 2965.54,
+      "fine": 2972.78,
+      "testo": "se se mi fossi concentrato interamente a editare questo video senza spiegarvi determinati concetti"
+    },
+    {
+      "inizio": 2972.78,
+      "fine": 2977.34,
+      "testo": "e c'erano molto più veloce quindi per farvi capire che realtà editare un video di questo tipo non ci"
+    },
+    {
+      "inizio": 2977.34,
+      "fine": 2983.18,
+      "testo": "vuole aggiornata ma per niente ok ci vuole giusto il tempo naturalmente di imprimi sprenderci mano"
+    },
+    {
+      "inizio": 2983.18,
+      "fine": 2988.66,
+      "testo": "perché normale che più editate video più andata avanti in questo business più diventate veloce e bravi e nello"
+    },
+    {
+      "inizio": 2988.66,
+      "fine": 2993.46,
+      "testo": "stesso tempo il tempo è naturalmente a seconda del video da cui voi partite di inserire delle clip che"
+    },
+    {
+      "inizio": 2993.46,
+      "fine": 2999.66,
+      "testo": "abbiano senso però comunque finire con un lavoro di questo tipo vi porterà avere veramente un video fatto"
+    },
+    {
+      "inizio": 2999.66,
+      "fine": 3004.74,
+      "testo": "bene anzi video di più potete anche fare meglio ma anche per essere un po più veloce sono voluta andare"
+    },
+    {
+      "inizio": 3004.74,
+      "fine": 3010.74,
+      "testo": "avanti all'interno del video stesso ci vediamo in un prossimo video qui da Mirko del Fine tutto ciao e"
+    },
+    {
+      "inizio": 3010.74,
+      "fine": 3012.74,
+      "testo": "presto"
+    }
+  ]
+}

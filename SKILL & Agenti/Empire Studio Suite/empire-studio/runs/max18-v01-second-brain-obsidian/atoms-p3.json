@@ -1,0 +1,495 @@
+[
+  {
+    "id": "P3-001",
+    "tipo": "procedura",
+    "contenuto": "Per rigenerare e verificare al volo l'indice llms.txt si usa un unico comando bash concatenato: entra nella cartella del vault, esegue lo script generatore, poi stampa il file appena scritto con un separatore visivo. L'output conferma quante note e quante cartelle sono state indicizzate (30 note in 9 cartelle) prima ancora di aprire il file.",
+    "fonte": "RnoC5IlOUhs#96:54 (blocco Bash nella chat Antigravity, scena 241) + voce 96:54-97:24",
+    "frame": "frame-0970.png",
+    "ancora": "cd \"/Users/giovannibeggiato/Desktop/aurora cervello\" && python3 genera_llms.py && echo \"=== llms.txt ===\" && cat llms.txt",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-002", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-002",
+    "tipo": "struttura",
+    "contenuto": "Contenuto integrale di llms.txt come mostrato in editor (righe tagliate a destra dal bordo del frame dove indicato nella fonte, dichiarato): intestazione con nota che il file è DERIVATO e non va modificato a mano, poi una sezione per ognuna delle 9 cartelle di contenuto (self, areas, projects, concepts, docs, entities e le altre), ciascuna con la sua nota elencata nel formato '- [[nome-file]] — summary'. Sezione self: 1 nota (self-identita-aurora). Sezione areas: 6 note (area-customer-success, area-finance-operations, area-marketing, area-people-cultura, area-prodotto-engineering, area-vendite). Sezione projects: 1 nota (progetto-arr-5m-2026). Sezione concepts: 3 note (concetto-arr, concetto-churn, concetto-efficienza-energetica). Sezione docs: 1 nota (doc-onboarding-cliente). Sezione entities: 11 note (2 clienti, 1 cliente aggiuntivo, 4 persone, 3 prodotti, 1 strumento).",
+    "fonte": "RnoC5IlOUhs#97:24 (editor llms.txt aperto per intero, scena 242)",
+    "frame": "frame-0975.png",
+    "ancora": "# Aurora Sistemi — llms.txt\n> Indice-porta per AI. File DERIVATO: rigenerato da genera_llms.py, non modificare a mano.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-003", "tipo": "esempio-di"},
+      {"verso": "P3-001", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-003",
+    "tipo": "regola",
+    "contenuto": "Spiegazione integrale (letta a schermo, non riassunta) di cosa contiene e cosa esclude llms.txt: le 9 cartelle di contenuto nell'ordine indicato (self → outputs), ognuna con la sua riga di intestazione '## <cartella>'; 30 note elencate come '- [[nome-file]] — summary', con il summary preso SOLO dal frontmatter (le virgolette del template vengono ripulite); sources/ e workspace/ esclusi; file _index- esclusi.",
+    "fonte": "RnoC5IlOUhs#97:42 (risposta completa dell'agente in chat, scena 243)",
+    "frame": "frame-0978.png",
+    "ancora": "`sources/` e `workspace/` esclusi; file `_index-` esclusi.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-002", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P3-004",
+    "tipo": "procedura",
+    "contenuto": "Come si rigenera llms.txt (letto per intero): è derivato, non si tocca a mano. Comando: python3 genera_llms.py. Lo script genera_llms.py riscrive llms.txt da capo leggendo i frontmatter correnti; quando si aggiunge o modifica una nota, va rilanciato e l'indice si aggiorna da solo. Nota di coerenza esplicita: il generatore e il gate di qualità condividono le stesse assunzioni (stesse 9 cartelle, stesso parsing di frontmatter, esclusione _index), così quello che passa il gate è esattamente ciò che finisce in llms.txt. Proposta del sistema: incatenare i due in un unico comando che lancia gate_qualita.py e, solo se esce 0, rigenera llms.txt — utile come hook pre-commit; se non si è in un repo git, l'alternativa offerta è un piccolo script build.sh.",
+    "fonte": "RnoC5IlOUhs#97:42-97:48 (scene 243/245, testo identico ripetuto)",
+    "frame": "frame-0978.png, frame-0980.png",
+    "ancora": "Lo script `genera_llms.py` riscrive `llms.txt` da capo leggendo i frontmatter correnti. Quando aggiungi o modifichi note, rilancialo e l'indice si aggiorna da solo.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-001", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P3-005",
+    "tipo": "principio",
+    "contenuto": "L'autore dichiara esplicitamente che llms.txt non è uno standard di settore ma un consiglio personale suo: lo trova utile a livello di efficienza token, ma invita ognuno a valutare se adottarlo o meno per il proprio cervello aziendale.",
+    "fonte": "RnoC5IlOUhs#97:48 (voce, scena 243)",
+    "frame": "frame-0978.png",
+    "ancora": "Non è una best practice, è una raccomandazione dello zio Jo, vedete voi cosa farne.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-004", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P3-006",
+    "tipo": "comando",
+    "contenuto": "Prompt 8 — 'Lo showcase (la fotografia per la demo)', scritto prima nel canovaccio Notion e poi incollato nella chat: chiede di generare una fotografia sintetica del cervello aziendale da mostrare in una demo commerciale, contando tutte le note (11 cartelle meno sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo. Testo continuo più ampio ricostruito unendo le scene 246-247 (il resto della riga prosegue oltre il bordo del frame, dichiarato tagliato nella fonte): 'Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 e tutto...'.",
+    "fonte": "RnoC5IlOUhs#98:24-99:18 (chip llms.txt#50-50 in chat, scene 246-248) + canovaccio Notion scena 244/250",
+    "frame": "frame-0985.png, frame-0994.png",
+    "ancora": "Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 e tutto",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-008", "tipo": "precede"},
+      {"verso": "P3-080", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-007",
+    "tipo": "principio",
+    "contenuto": "Lo showcase, come llms.txt, è dichiarato una fotografia DERIVATA: invece di scrivere i numeri a mano, si crea un generatore (genera_showcase.py) e lo si esegue, così i numeri sono calcolati dal grafo reale e si rigenerano automaticamente quando il cervello cambia — evitando che una fotografia commerciale diventi silenziosamente falsa nel tempo.",
+    "fonte": "RnoC5IlOUhs#99:18 (risposta dell'agente prima di scrivere il file, scena 248)",
+    "frame": "frame-0994.png",
+    "ancora": "Come `llms.txt`, anche questa è una fotografia **derivata**: creo un generatore e lo eseguo, così i numeri sono calcolati dal grafo reale e si rigenerano quando il cervello cambia.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-005", "tipo": "esempio-di"},
+      {"verso": "P3-080", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P3-008",
+    "tipo": "struttura",
+    "contenuto": "Contenuto integrale del file sorgente _showcase/showcase.md generato: intestazione con dichiarazione di derivazione e scope esplicito (le 11 cartelle meno sources/ e workspace/, l'indice madre alla radice resta fuori), poi la tabella 'La fotografia' a due colonne (Metrica | Valore): Note totali 39; di cui note di contenuto 30; di cui hub (un _index per cartella) 9; Wikilink totali (la colla del grafo) 262; Componenti connesse 1.",
+    "fonte": "RnoC5IlOUhs#99:30 (editor sorgente showcase.md, scena 249)",
+    "frame": "frame-0996.png",
+    "ancora": "# Showcase — Cervello Aurora Sistemi\n> Fotografia DERIVATA del grafo. Rigenerata da genera_showcase.py, non modificare a mano.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-009", "tipo": "quantificato-da"},
+      {"verso": "P3-011", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-009",
+    "tipo": "numero",
+    "contenuto": "Le tre metriche chiave della fotografia del cervello Aurora, come riassunte in chat dopo la generazione: 39 note totali (30 di contenuto + 9 hub, un _index per cartella); 262 wikilink che le tengono insieme; 1 componente connessa, cioè tutto collegato, nessuna isola nel grafo.",
+    "fonte": "RnoC5IlOUhs#99:30 (risposta 'Fatto.' dell'agente, scena 249)",
+    "frame": "frame-0996.png",
+    "ancora": "**39 note totali** — 30 di contenuto + 9 hub (un `_index` per cartella)",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-012", "tipo": "corretto-da"},
+      {"verso": "P3-008", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P3-010",
+    "tipo": "regola",
+    "contenuto": "Regola di scope dichiarata nel corpo stesso di showcase.md: lo showcase copre le 11 cartelle del vault meno sources/ e workspace/ (quindi 9 cartelle), e l'indice madre alla radice del vault (_index-aurora.md) resta fuori dal conteggio — la stessa convenzione di esclusione già vista in llms.txt e nel gate di qualità.",
+    "fonte": "RnoC5IlOUhs#99:30 (blocco di nota in cima a showcase.md, scena 249)",
+    "frame": "frame-0996.png",
+    "ancora": "Scope: le 11 cartelle meno sources/ e workspace/ (9 cartelle). L'indice madre alla radice resta fuori.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-003", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P3-011",
+    "tipo": "struttura",
+    "contenuto": "Tabella 'Note per cartella' del rendering di showcase.md, con colonne Cartella | Contenuto | Hub | Totale: self 1/1/2; areas 6/1/7; projects 1/1/2; concepts 3/1/4; docs 1/1/2; entities 11(?)/1(?)/12(?) — quest'ultima riga è tagliata dal bordo inferiore del frame nella fonte, cifre poco nitide e dichiarate incerte.",
+    "fonte": "RnoC5IlOUhs#99:30 (pannello 'Preview showcase.md', scena 249)",
+    "frame": "frame-0996.png",
+    "ancora": "| self | 1 | 1 | 2 |",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-008", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-012",
+    "tipo": "regola",
+    "contenuto": "Autocorrezione esplicita e non richiesta del sistema, dichiarata onestamente in chat: in un turno precedente l'agente aveva detto '28 note scansionate' dal gate di qualità — un numero sbagliato che l'agente stesso ammette di aver 'buttato lì', perché il gate non lo aveva realmente stampato. Il conteggio vero, ricalcolato al momento, è 39 note nelle 9 cartelle (30 contenuto + 9 hub); i tre strumenti (gate_qualita.py, genera_llms.py, genera_showcase.py) condividono ora lo stesso scope e lo stesso parsing, quindi i numeri sono coerenti tra loro.",
+    "fonte": "RnoC5IlOUhs#103:48 (risposta dell'agente prima del Prompt 9, scena 254)",
+    "frame": "frame-1039.png",
+    "ancora": "era un numero sbagliato buttato lì da me, il gate non lo aveva stampato.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-009", "tipo": "corretto-da"}
+    ]
+  },
+  {
+    "id": "P3-013",
+    "tipo": "comando",
+    "contenuto": "Prompt 6 del canovaccio Notion — 'Correggi e ripeti finché esce' (titolo tagliato dal bordo del frame nella fonte): sottotitolo 'Il ciclo correttivo: l'AI sistema ciò che hai segnalato, ril[egge]...'. Corpo (tagliato a destra, dichiarato nella fonte): 'Correggi le note che hai appena segnalato, ar[...] frontmatter completo, massimo 300 righe, alm[eno]... link rotti, zero orfani, un solo grappolo con[...] mostrami il nuovo referto. Ripeti finché no[n]...'.",
+    "fonte": "RnoC5IlOUhs#97:48 (pagina Notion 'Company Brain — Tutti i prompt', scena 244)",
+    "frame": "frame-0979.png",
+    "ancora": "Correggi le note che hai appena segnalato, ar",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-014", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-014",
+    "tipo": "comando",
+    "contenuto": "Prompt 7 del canovaccio Notion — 'Genera l'indice per la AI (llms.txt)', sottotitolo 'La porta d'ingresso per le AI: un indice derivato, rigenerato dal frontmatter'. Corpo, ricostruito unendo la versione più estesa vista nella scena 250 (righe tagliate a destra dal bordo, dichiarato): 'Genera il file llms.txt nella radice del vault: e' l'indi[ce]... Per ogni cartella di contenuto (self, areas, projects, co[ncepts,] data, code, outputs) elenca le sue note nel formato \"- [[...]]\"... prendendo il summary dal frontmatter di ogni nota. In cim[a]... intestazione per ogni cartella. NON includere sources/ e [workspace/]... niente: title e summary vengono SOLO dal frontmatter dell[a nota]... Ricordati che llms.txt e' DERIVATO: si rigenera da capo, [...]'. Corrisponde parola per parola al prompt eseguito in azione nelle scene 239/242.",
+    "fonte": "RnoC5IlOUhs#100:24 (pagina Notion, scena 250)",
+    "frame": "frame-1005.png",
+    "ancora": "Genera il file llms.txt nella radice del vault: e' l'indi",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-002", "tipo": "precede"},
+      {"verso": "P3-003", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-015",
+    "tipo": "procedura",
+    "contenuto": "Voce del canovaccio Notion 'Impostazioni grafo a sfera (a mano, in Obsidian)', non ancora eseguita a schermo, letta per intero nella sua versione più completa (scena 253): Distanza dei link (Link distance): BASSA → avvicina le note collegate, formano piccole sfere fitte; Forza di repulsione (Repel force): MODERATA → le note non si toccano ma non volano via; Forza centrale (Center force): DOLCE → tira tutto verso il centro, niente disperde ai bordi; Orfani (Show orphans): ACCESI → formano l'anello esterno attorno al grappolo. Istruzione aggiuntiva: poi aggiungere i gruppi di colore per cartella (le persone di un colore, i dati di un altro, ecc.).",
+    "fonte": "RnoC5IlOUhs#100:30 e #103:42 (pagina Notion, scene 251/253)",
+    "frame": "frame-1006.png, frame-1038.png",
+    "ancora": "Forza centrale (Center force): DOLCE -> tira tutto verso il centro, niente disperde ai bordi",
+    "confidenza": "osservato",
+    "relazioni": []
+  },
+  {
+    "id": "P3-016",
+    "tipo": "comando",
+    "contenuto": "Prompt 9 (versione breve, letta per prima nella scena 251) — 'Metti il vault sotto git (senza push)', sottotitolo 'La macchina del tempo locale: repository + branch + commit, niente push.' Testo integrale: 'Metti il mio vault sotto git, così ho una macchina del tempo. Se non è ancora un repository, crealo. Crea un branch di lavoro chiamato feature/wave-01, prendi tutti i file e fai un commit con questo messaggio: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". NON fare push da nessuna parte: il cervello resta solo sul mio computer.'",
+    "fonte": "RnoC5IlOUhs#100:30 (pagina Notion, scena 251)",
+    "frame": "frame-1006.png",
+    "ancora": "NON fare push da nessuna parte: il cervello resta solo sul mio computer.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-017", "tipo": "contraddice"},
+      {"verso": "P3-018", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-017",
+    "tipo": "comando",
+    "contenuto": "Prompt 9 (versione 'istruzioni precise', vista pochi minuti dopo alla scena 253 e incollata per intero nell'IDE alla scena 254) — stesso titolo 'Metti il vault sotto git' e stesso sottotitolo, ma corpo completamente diverso, un elenco numerato: 'Trasforma il mio vault Obsidian in un repository Git. Obiettivo: avere una cronologia completa delle modifiche, come una macchina del tempo per il mio company brain. Istruzioni precise: 1. Verifica se la cartella del vault è già un repository Git. Se non lo è, inizializzalo con git init. 2. Crea un file .gitignore adatto a Obsidian: escludi .obsidian/workspace.json, .obsidian/workspace-mobile.json, file di cache e file di sistema (.DS_Store, Thumbs.db). Tutto il resto della cartella .obsidian va versionato, perché contiene grafo e configurazioni. 3. Crea un branch di lavoro chiamato feature/wave-01 e spostati su quel branch. 4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". 5. Alla fine mostrami: il branch attivo, l'output di git status e l'output di git log --oneline.'",
+    "fonte": "RnoC5IlOUhs#103:42-105:18 (pagina Notion scena 253 + IDE Antigravity scena 254/258)",
+    "frame": "frame-1038.png, frame-1039.png, frame-1054.png",
+    "ancora": "4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto:",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-016", "tipo": "contraddice"},
+      {"verso": "P3-024", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-018",
+    "tipo": "anti-pattern",
+    "contenuto": "Le due letture dello stesso riquadro 'Prompt 9', rilette due volte per certezza, non coincidono: alle 100:30 il codice dice esplicitamente 'NON fare push da nessuna parte', mentre alle 103:42 lo stesso riquadro (stesso titolo, stesso sottotitolo) contiene un elenco numerato il cui punto 4 dice 'fai commit e push' — l'istruzione di sicurezza è sparita, sostituita dall'opposto. Non è un errore di lettura: il contenuto del box è realmente diverso tra i due momenti, probabilmente riscritto/espanso con l'AI tra una ripresa e l'altra. Nota operativa per l'Impero: un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un 'espandi questo prompt'.",
+    "fonte": "RnoC5IlOUhs#103:42 (confronto scena 251 vs scena 253) 🔎 doppia lettura per certezza",
+    "frame": "frame-1006.png, frame-1038.png",
+    "ancora": "un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un \"espandi questo prompt\".",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-016", "tipo": "contraddice"},
+      {"verso": "P3-017", "tipo": "contraddice"}
+    ]
+  },
+  {
+    "id": "P3-019",
+    "tipo": "comando",
+    "contenuto": "Prompt 10 del canovaccio Notion — 'Interroga il cervello (a 28 note, senza RAG)', sottotitolo 'Carichi tutte le note e fai una domanda da imprenditore. Regola d'oro: rispondi solo con le note, cita il file, se non c'è dillo.' Testo integrale: 'Ti do l'intero cervello di Aurora Sistemi: tutte le note markdown del vault, con il loro frontmatter. Rispondi alla mia domanda usando SOLO il contenuto di queste note. - Cita sempre il nome del file da cui prendi ogni informazione. - Se la risposta non è presente nelle note, scrivi esattamente: \"Non presente nel cervello.\" Non inventare, non stimare, non dedurre. Domanda: qual è l'ARR di Aurora e come è cambiato l'organico negli ultimi tre anni?'",
+    "fonte": "RnoC5IlOUhs#100:30 (pagina Notion, scena 251)",
+    "frame": "frame-1006.png",
+    "ancora": "Rispondi alla mia domanda usando SOLO il contenuto di queste note.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-029", "tipo": "precede"},
+      {"verso": "P3-030", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-020",
+    "tipo": "comando",
+    "contenuto": "Prompt 9 completo così come incollato e visibile per intero nel campo di input dell'IDE Antigravity (bordo rosso, non ancora inviato), tutte e 5 le istruzioni leggibili: '1. Verifica se la cartella del vault è già un repository Git. Se non lo è, inizializzalo con git init. 2. Crea un file .gitignore adatto a Obsidian: escludi .obsidian/workspace.json, .obsidian/workspace-mobile.json, file di cache e file di sistema (.DS_Store, Thumbs.db). Tutto il resto della cartella .obsidian va versionato, perché contiene grafo e configurazioni. 3. Crea un branch di lavoro chiamato feature/wave-01 e spostati su quel branch. 4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". 5. Alla fine mostrami: il branch attivo, l'output di git status e l'output di git log --oneline.' Sotto, campo separato: 'GITHUB TOKEN:' con cursore lampeggiante e campo vuoto.",
+    "fonte": "RnoC5IlOUhs#105:18 (scena 258)",
+    "frame": "frame-1054.png",
+    "ancora": "5. Alla fine mostrami: il branch attivo, l'output di 'git status' e l'output di 'git log --oneline'.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-017", "tipo": "esempio-di"},
+      {"verso": "P3-021", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-021",
+    "tipo": "procedura",
+    "contenuto": "Per dare accesso a GitHub all'agente, il presentatore valuta due strade a voce (MCP o token) e sceglie il token; annuncia l'intenzione di metterlo in un file .env (che infatti viene aperto vuoto, una sola riga, nell'Explorer accanto al prompt), ma nella pratica il token finisce incollato direttamente nel campo 'GITHUB TOKEN:' dentro il riquadro del prompt stesso (scena 258), non nel file .env. Il token viene nominato 'second brain' durante la creazione su GitHub.",
+    "fonte": "RnoC5IlOUhs#104:18-105:18 (scene 255, 258)",
+    "frame": "frame-1044.png, frame-1054.png",
+    "ancora": "allora ora dovremmo dargli accesso a GitHub. Eh, potremmo farlo con MCP, potremmo farlo con token, diamoglielo con il token.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-020", "tipo": "parte-di"},
+      {"verso": "P3-025", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P3-022",
+    "tipo": "struttura",
+    "contenuto": "Vista 'app switcher' con le cinque applicazioni tenute aperte in parallelo per costruire il tutorial del cervello Aurora: Desktop 1, Obsidian (graph view), Antigravity IDE (finestra attiva, bordo evidenziato in blu — conferma il nome esatto del tool, non 'VS Code' né 'Claude Code'), Notion, Google Chrome.",
+    "fonte": "RnoC5IlOUhs#105:24 (scena 259)",
+    "frame": "frame-1055.png",
+    "ancora": "**\"Antigravity IDE\"** (miniatura scura, editor di codice — bordo evidenziato in blu, finestra attiva)",
+    "confidenza": "osservato",
+    "relazioni": []
+  },
+  {
+    "id": "P3-023",
+    "tipo": "definizione",
+    "contenuto": "Diagramma Excalidraw disegnato a mano per spiegare Git come analogia visiva: in alto scritta BRANCH con una linea che scende verso un'icona 'postazione/laptop' (rettangolo con cerchio dentro e bandierina sopra); tre linee orizzontali parallele — una blu etichettata MAIN con trattini lungo il percorso, una arancione che sale verso un fitto scarabocchio rosso a zig-zag (che sembra rappresentare un branch fallito/da scartare, coerente con l'esempio verbale di un branch di prova per una modifica al sito che se non funziona si cancella — lettura del testo sotto lo scarabocchio non verificabile con certezza), una verde etichettata COMMIT che parte da un pallino verde e termina con una freccia corta.",
+    "fonte": "RnoC5IlOUhs#109:36 (Excalidraw, scena 261)",
+    "frame": "frame-1097.png",
+    "ancora": "una linea nera che scende e termina su una piccola icona (rettangolo con un cerchio dentro e un pennacchio/bandierina sopra, stile \"postazione/laptop\")",
+    "confidenza": "osservato",
+    "relazioni": []
+  },
+  {
+    "id": "P3-024",
+    "tipo": "numero",
+    "contenuto": "Esito reale del Prompt 9 (versione con push) su GitHub: repository aurora-cervello, branch feature/wave-01, commit con messaggio esatto 'Bootstrap del cervello a 11 cartelle: note + grafo Obsidian', hash 42c675e (esteso: 42c675e7ed8fa83797aaf98defcd3f5224e8d011), datato 'Jun 10, 2026'. Il diff del commit mostra 50 files changed, +1.638 righe aggiunte, nessuna cancellazione, con un banner di avviso 'Some content is hidden' perché il commit è troppo grande per essere mostrato tutto.",
+    "fonte": "RnoC5IlOUhs#111:12-111:36 (github.com/Giobebbe/aurora-cervello, scene 275-278)",
+    "frame": "frame-1113.png, frame-1114.png, frame-1116.png, frame-1117.png",
+    "ancora": "**\"50 files changed\"**, \"+1,638\" (conteggio verde, nessuna cancellazione mostrata)",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-017", "tipo": "esempio-di"},
+      {"verso": "P3-025", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-025",
+    "tipo": "struttura",
+    "contenuto": "Diff mostrato su GitHub per il file .gitignore generato dall'agente (badge verde '+21' righe, le prime 8 leggibili per intero prima del taglio del frame, dichiarato): '# === Segreti: MAI versionare ===' / '.env' / '.env.*' / '*.key' / (riga vuota) / '# === Obsidian: stato UI locale (non versionare) ===' / '.obsidian/workspace.json' / '.obsidian/workspace-mobile.json'.",
+    "fonte": "RnoC5IlOUhs#111:30 (diff del commit 42c675e su GitHub, scena 277)",
+    "frame": "frame-1116.png",
+    "ancora": "# === Segreti: MAI versionare ===\n+ .env\n+ .env.*\n+ *.key",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-021", "tipo": "esempio-di"},
+      {"verso": "P3-024", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-026",
+    "tipo": "principio",
+    "contenuto": "Motivazione a voce, riepilogata attraverso una lunga sequenza di scene talking-head, sul perché versionare il cervello: proteggersi dalla perdita del computer o da un suo guasto; e, per un team, garantire che chi aggiorna la company brain lasci un'unica verità condivisa — un'unica 'source of truth' — che gli altri possano recuperare (da GitHub o da un cloud storage) invece di lavorare su copie disallineate.",
+    "fonte": "RnoC5IlOUhs#110:06-110:30 (talking head, scene 266-270)",
+    "frame": "frame-1102.png, frame-1104.png, frame-1105.png",
+    "ancora": "questo folder è aggiornato e abbiamo un'unica verità, un'unica source of",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-017", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P3-027",
+    "tipo": "principio",
+    "contenuto": "Confronto esplicito tra GitHub e Google Drive come alternative equivalenti per il version control del cervello: GitHub è più tecnico e scala meglio, ma richiede più competenza; Google Drive costa relativamente poco e offre comunque un posto dove tenere le varie versioni del progetto e tornare a una versione precedente quando serve.",
+    "fonte": "RnoC5IlOUhs#110:36-110:54 (talking head, scene 271-273)",
+    "frame": "frame-1107.png, frame-1108.png, frame-1110.png",
+    "ancora": "Github o che voi utilizziate Google Drive, la realtà è che vabbè, Gitub è più tecnico, scala meglio, però cambia",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-026", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-028",
+    "tipo": "definizione",
+    "contenuto": "Dentro l'IDE Antigravity viene aperto un pannello dedicato letteralmente etichettato 'Claude Code' (logo, messaggio di benvenuto 'Use planning mode to talk through big changes before a commit. Press [Shift][Tab] to cycle between modes.'): i due strumenti (Antigravity e Claude Code) convivono nella stessa finestra dell'editor.",
+    "fonte": "RnoC5IlOUhs#112:00 (scena 279)",
+    "frame": "frame-1121.png",
+    "ancora": "Conferma che dentro l'IDE \"Antigravity\" viene aperto un pannello dedicato letteralmente etichettato **\"Claude Code\"**: i due strumenti convivono nella stessa finestra.",
+    "confidenza": "dedotto",
+    "relazioni": []
+  },
+  {
+    "id": "P3-029",
+    "tipo": "procedura",
+    "contenuto": "Demo live del Prompt 10: l'agente, prima di rispondere, esegue un comando bash di ricerca testuale multi-keyword nel vault (grep -rin -e \"organico\" -e \"persone\" -e \"dipendent\" -e \"team\" -e \"cresci\" -e \"fonda[to]\") per trovare informazioni sull'organico storico, poi risponde citando sempre il file sorgente: per l'ARR cita kpi-2025-arr.md (confermato anche in area-finance-operations.md); per l'organico, non trovando uno storico triennale, applica la regola d'oro e dichiara l'assenza del dato.",
+    "fonte": "RnoC5IlOUhs#112:30 (scena 280)",
+    "frame": "frame-1126.png",
+    "ancora": "A fine 2025 l'ARR di Aurora è **€ 3.840.000**, in crescita del **+24% (+€ 740.000)** rispetto ai € 3.100.000 di inizio 2025. (file: `kpi-2025-arr.md`; confermato anche in `area-finance-operations.md`)",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-019", "tipo": "esempio-di"},
+      {"verso": "P3-030", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-030",
+    "tipo": "regola",
+    "contenuto": "Applicazione concreta della regola d'oro del Prompt 10 nella demo: alla domanda su come è cambiato l'organico negli ultimi tre anni, l'agente risponde testualmente 'Non presente nel cervello.', spiegando che le note riportano solo l'organico attuale (47 persone su due sedi Milano e Bologna) e il piano di +6 assunzioni approvato per il 2026 (file area-people-cultura.md, canon.md), senza alcuno storico sui tre anni precedenti — nessuna stima, nessuna invenzione.",
+    "fonte": "RnoC5IlOUhs#112:30 (scena 280)",
+    "frame": "frame-1126.png",
+    "ancora": "Non presente nel cervello.\" \"Le note riportano solo l'organico attuale (**47 persone** su due sedi Milano e Bologna) e il piano di **+6 assunzioni** approvato per il 2026",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-019", "tipo": "esempio-di"},
+      {"verso": "P3-037", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-031",
+    "tipo": "comando",
+    "contenuto": "Prompt 11 del canovaccio Notion — 'La domanda di incrocio (dove le cartelle si arrendono)', sottotitolo 'Due fatti in due note diverse: la risposta si costruisce camminando sui collegamenti.' Testo integrale: 'Rispondi usando SOLO le note del cervello di Aurora. - Cita sempre il nome del file da cui prendi ogni informazione. - Elenca SOLO i clienti che hanno DAVVERO tutti e due i prodotti. Se un cliente ne ha uno solo, lascialo fuori. - Se la risposta non è nel cervello, scrivi: \"Non presente nel cervello.\" Domanda: quali clienti hanno attivato sia Aurora Cloud sia Aurora Care, e chi li segue nel customer success?'",
+    "fonte": "RnoC5IlOUhs#112:54 e #113:06 (pagina Notion scena 282, incollato in chat scena 284)",
+    "frame": "frame-1130.png, frame-1132.png",
+    "ancora": "Elenca SOLO i clienti che hanno DAVVERO tutti e due i prodotti. Se un cliente ne ha uno solo, lascialo fuori.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-037", "tipo": "precede"},
+      {"verso": "P3-038", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-032",
+    "tipo": "comando",
+    "contenuto": "Prompt 12 del canovaccio Notion — 'Il cruscotto HTML locale', sottotitolo 'Un singolo file HTML offline da aprire con un doppio click: il biglietto da visita per una demo.' Testo integrale: 'Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apre con un doppio click, offline e senza account.' Eseguito parola per parola nella scena 317 (con minima variazione 'apro' al posto di 'apre').",
+    "fonte": "RnoC5IlOUhs#112:54 e #126:36 (pagina Notion scena 282, prompt incollato in Antigravity scena 317)",
+    "frame": "frame-1130.png, frame-1267.png",
+    "ancora": "Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-057", "tipo": "precede"},
+      {"verso": "P3-058", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-033",
+    "tipo": "comando",
+    "contenuto": "Prompt 13 del canovaccio Notion — 'Apri la sessione (il briefing)', sottotitolo 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Testo integrale: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conviene affrontare oggi, in ordine di priorità. Non scrivere ancora niente nel cervello. Solo il briefing.'",
+    "fonte": "RnoC5IlOUhs#112:48 e #126:06 (pagina Notion, scene 281, 316)",
+    "frame": "frame-1129.png, frame-1262.png",
+    "ancora": "Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta).",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-072", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-034",
+    "tipo": "comando",
+    "contenuto": "Prompt 14 del canovaccio Notion — 'Chiudi la sessione (il diario)', sottotitolo 'A fine giornata, fai scrivere al cervello la nota di sessione, agganciata alle entità vere toccate.' Testo integrale: 'Chiudiamo la sessione di oggi. Scrivi la nota di diario nel cervello. - Cartella: workspace/journal/sessions/ - Nome file: sessione-<data di oggi> (esempio: sessione-2026-06-09) - In cima il frontmatter: title, summary (UNA frase su cosa abbiamo fatto oggi), tags (il primo è workspace/session), status: done, created e updated con la data di oggi, e related su una riga coi wikilink alle note toccate. - Corpo in tre sezioni brevi: ## Fatto — cosa abbiamo concluso oggi / ## Deciso — le scelte prese e il perché / ## Aperto — cosa resta in sospeso per domani - Aggancia la nota alle entità vere toccate oggi coi [[wikilink]] (i clienti, i KPI, i progetti). Mai una nota di diario sciolta nel vuoto. Prima dimmi in 3 righe cosa hai capito che abbiamo fatto oggi. Al mio ok, scrivi.'",
+    "fonte": "RnoC5IlOUhs#112:48 (pagina Notion, scena 281)",
+    "frame": "frame-1129.png",
+    "ancora": "Nome file: sessione-<data di oggi> (esempio: sessione-2026-06-09)",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-073", "tipo": "precede"},
+      {"verso": "P3-069", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P3-035",
+    "tipo": "struttura",
+    "contenuto": "Nota atomica reale prodotto-aurora-access.md, frontmatter e corpo trascritti per intero: title 'Prodotto — Aurora Access'; summary 'Modulo di controllo accessi (badge, fasce orarie, videosorveglianza) per gestire la sicurezza di molte sedi da un unico punto.'; tags [entities, prodotto, aurora-access]; status active; created/updated 2026-06-10; related [[prodotto-aurora-core]], [[area-prodotto-engineering]], [[area-customer-success]]. Corpo: modulo che si appoggia a [[prodotto-aurora-core]] per il controllo degli accessi agli edifici (badge, permessi per fasce orarie, integrazione con la videosorveglianza), pensato per chi gestisce la sicurezza di molte sedi da un unico punto. Costruito da [[area-prodotto-engineering]]. Upsell dell'anno 2025: estensione a tutte le filiali di Banca Adriatica, seguita da [[area-customer-success]]. Usato da: Gruppo Retail, Rete Sanità Nord, UniCampus, Banca Adriatica.",
+    "fonte": "RnoC5IlOUhs#114:18 (editor, tab prodotto-aurora-access.md, scena 286)",
+    "frame": "frame-1144.png",
+    "ancora": "title: \"Prodotto — Aurora Access\"",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-037", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-036",
+    "tipo": "procedura",
+    "contenuto": "Comando bash usato dall'agente per verificare rigorosamente se i prodotti citati nella domanda dell'utente esistono davvero nel cervello, prima di rispondere: grep -rln -i \"aurora cloud\\|aurora care\" --include=\"*.md\" . eseguito dentro la cartella del vault; l'output è vuoto (Bash completed with no output), a conferma che nessuna nota contiene quei due nomi.",
+    "fonte": "RnoC5IlOUhs#114:24 (scena 287)",
+    "frame": "frame-1145.png",
+    "ancora": "grep -rln -i \"aurora cloud\\|aurora care\" --include=\"*.md\" .",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-037", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P3-037",
+    "tipo": "regola",
+    "contenuto": "Risposta dell'agente dopo la verifica grep: 'Ho cercato in tutte le note del cervello di Aurora i prodotti citati nella domanda. I prodotti registrati nel cervello sono solo tre: Aurora Access, Aurora Core e Aurora Energy. Né \"Aurora Cloud\" né \"Aurora Care\" compaiono in alcuna nota. Non presente nel cervello.' Applicazione rigorosa della regola d'oro anche quando i nomi dei prodotti nella domanda sono plausibili ma inventati.",
+    "fonte": "RnoC5IlOUhs#114:18-114:24 (scene 286-287)",
+    "frame": "frame-1144.png, frame-1145.png",
+    "ancora": "I prodotti registrati nel cervello sono solo tre: **Aurora Access, Aurora Core e Aurora Energy**. Né \"Aurora Cloud\" né \"Aurora Care\" compaiono in alcuna nota.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-030", "tipo": "parte-di"},
+      {"verso": "P3-036", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P3-038",
+    "tipo": "esempio",
+    "contenuto": "Rieseguendo la domanda del Prompt 11 sui prodotti reali (Access, Core, Energy), l'agente legge le note dei tre clienti e applica la regola stretta (un cliente conta solo se ha davvero tutti i prodotti citati): cliente-banca-adriatica.md ha Core, Access, Manutenzione → Core+Access, manca Energy; cliente-hotelline-hospitality.md ha Core, Energy → manca Access; cliente-immobiliare-lombarda.md ha Core, Energy, Manutenzione, Insights → manca Access. Conclusione con la regola stretta: nessun cliente ha tutti e tre (Access + Core + Energy). Rilassando a 'almeno due dei tre', invece, tutti e tre i clienti si qualificano, e nel customer success: Banca Adriatica e Immobiliare Lombarda SGR sono seguite da Chiara Fontana; HotelLine Hospitality non ha un referente CS indicato nelle note (acquisita da Vendite) → 'Non presente nel cervello.'",
+    "fonte": "RnoC5IlOUhs#114:36-115:24 (scene 288-290)",
+    "frame": "frame-1147.png, frame-1155.png",
+    "ancora": "Clienti con tutti e tre (Access + Core + Energy): nessuno.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-031", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P3-039",
+    "tipo": "struttura",
+    "contenuto": "Nota atomica reale persona-marco-bianchi.md, frontmatter e corpo trascritti per intero: title 'Persona — Marco Bianchi (CTO)'; summary 'CTO e co-fondatore di Aurora Sistemi, responsabile di Prodotto & Engineering.'; tags [entities, persona, founder, cto]; status active; created/updated 2026-06-10; related [[area-prodotto-engineering]], [[prodotto-aurora-core]], [[persona-elena-ferraro]]. Corpo: co-fondatore e direttore tecnico di Aurora Sistemi, come [[persona-elena-ferraro|Elena Ferraro]] viene dall'ingegneria degli impianti, insieme dal 2018. Ruolo: responsabile di [[area-prodotto-engineering]] — sviluppo della piattaforma e di tutti i moduli, a partire da [[prodotto-aurora-core]]. Riporti tecnici: Luca Esposito (Engineering Lead, Core) e Paolo Marchetti (PM, Energy).",
+    "fonte": "RnoC5IlOUhs#115:30 (editor, tab persona-marco-bianchi.md, scena 291)",
+    "frame": "frame-1156.png",
+    "ancora": "Co-fondatore e direttore tecnico di Aurora Sistemi.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-040", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P3-040",
+    "tipo": "esempio",
+    "contenuto": "Risposta completa alla domanda 'c'è un modo di identificare quale degli impiegati porta il maggior ARR?': il cervello documenta l'ARR di solo 3 clienti su 9 (per gli altri 6 i canoni non sono nelle note). L'unico impiegato legato esplicitamente a clienti con ARR noto è Chiara Fontana (CSM): Banca Adriatica € 520.000 + Immobiliare Lombarda SGR € 720.000 = totale € 1.240.000. HotelLine (€ 260.000) è acquisita da area-vendite.md ma non assegnata a una persona CS specifica. Risposta finale: Chiara Fontana è, in base al cervello, l'impiegata che porta il maggior ARR, con due avvertenze esplicite: 1) 'portare ARR' qui significa gestione/retention (ruolo CS), non acquisizione (ruolo vendite, non attribuita a nessun venditore per nome); 2) mancano i dati di 6 clienti su 9, quindi non si può escludere che un altro impiegato gestisca account più grandi — per quei clienti: 'Non presente nel cervello.'",
+    "fonte": "RnoC5IlOUhs#115:24-115:54 (scene 290, 292-293)",
+    "frame": "frame-1155.png, frame-1157.png, frame-1160.png",
+    "ancora": "l'impiegata che porta il maggior ARR è **Chiara Fontana**, con € 1.240.000 di key account in gestione.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P3-039", "tipo": "esempio-di"},
+      {"verso": "P3-042", "tipo": "motiva"}
+    ]
+  }
+]

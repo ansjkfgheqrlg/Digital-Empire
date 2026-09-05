@@ -2,11 +2,14 @@
   "lesson_id": "c0d14096-611a-43ae-8f4a-ed8975d99eb7",
   "corso": "aitubepro",
   "titolo": "",
-  "durata_s": null,
-  "durata_reale_s": null,
-  "scaricato": false,
+  "durata_s": 833,
+  "durata_reale_s": 833,
+  "scaricato": true,
   "qualita": 360,
-  "quando": "2026-09-05T12:41:44",
-  "passo": "1-fallito",
-  "avviso": null
+  "quando": "2026-09-05T23:39:54",
+  "passo": "2-trascritto",
+  "avviso": null,
+  "parole": 1944,
+  "parole_al_minuto": 140,
+  "modello": "base"
 }
