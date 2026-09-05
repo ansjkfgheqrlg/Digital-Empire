@@ -1,0 +1,112 @@
+[
+  {
+    "id": "P2-101",
+    "tipo": "procedura",
+    "contenuto": "Dopo l'esecuzione del Prompt 3 in modalita' bypass permissions, Claude Code scrive il primo hub del cervello: l'azione \"Write self-identita-aurora.md\" (38 righe), con il messaggio di chiusura \"Fatto. Canon scritto in workspace/canon.md e gli 7 hub creati (1 self + 6 reparti), tutti interconnessi senza link morti.\" Il frontmatter dell'hub self, riportato fino al punto in cui il frame lo taglia: title: \"Identita' -- Aurora Sistemi S.p.A.\", summary: \"Aurora Sistemi e' la piattaforma SaaS italiana per la gestione intelligente del patrimonio immobiliare, fondata a Milano nel 2018\", tags: [self, identita, azienda, hub], status: active, created: 2026-06-10, updated: 2026-06-10, related: [[area-prodotto-engineering]], [[area-vendite]], [[area-customer-success]], [[area-marketing]], [[area-finance-operations]], [[area-p... (coda del campo related tagliata dal bordo destro del frame, oltre il quinto wikilink, non leggibile con certezza). Corpo: \"# Identita' -- Aurora Sistemi S.p.A.\", poi \"Hub centrale del cervello aziendale. Da qui si raggiungono i reparti (e, salendo dalle note di dettaglio, prodotti, clienti e KPI).\", poi il titolo di sezione \"## In una frase\" (la riga di contenuto che segue e' tagliata dal bordo inferiore del frame, non leggibile).",
+    "fonte": "RnoC5IlOUhs#77:30-77:42 (Write self-identita-aurora.md, frontmatter e corpo) + voce 77:30-77:42",
+    "frame": "frame-0776.png, frame-0777.png",
+    "ancora": "Fatto. Canon scritto in `workspace/canon.md` e gli **7 hub** creati (1 self + 6 reparti), tutti interconnessi senza link morti.",
+    "confidenza": "osservato",
+    "relazioni": []
+  },
+  {
+    "id": "P2-102",
+    "tipo": "principio",
+    "contenuto": "Il file `workspace/canon.md` e' il documento di lavoro intermedio, dichiaratamente non parte delle note atomiche: si apre con \"_File di lavoro. Estratto e riconciliato dalle 9 fonti in `sources/`. Nessun fatto inventato._\" e \"_Compilato: 2026-06-10._\". La sezione \"1. Identita'\", riportata per intero attraverso le due riaperture del file (scena 183 e scena 205): Ragione sociale: Aurora Sistemi S.p.A.; Anno di fondazione: 2018, a Milano; Fondatori: Elena Ferraro (CEO) e Marco Bianchi (CTO), entrambi dal mondo dell'ingegneria degli impianti; Missione: rendere ogni edificio piu' efficiente, sicuro e sostenibile, dando a chi gestisce il patrimonio immobiliare un unico \"cervello digitale\" al posto di dieci sistemi scollegati; Offerta: piattaforma software SaaS in cloud per la gestione intelligente degli edifici, un'unica interfaccia per tutti gli immobili (consumi energetici, manutenzioni, accessi e sicurezza, documenti); Posizionamento: \"la piattaforma italiana per la gestione intelligente del patrimonio immobiliare\", a differenza dei vecchi BMS (frammentati e legati all'hardware) Aurora e' soluzione unica, in cloud, conforme al GDPR, con time-to-value in settimane; Cliente ideale (ICP): organizzazioni che gestiscono patrimoni immobiliari medio-grandi in Italia, di norma dai 20 edifici in su -- societa' di property & facility management, catene retail, pubblica amministrazione, sanita', banche, interlocutore tipo Facility Manager / Direttore Operations / Energy Manager; Sedi: Milano -- sede principale (HQ), Via Tortona 27, Bologna -- secondo ufficio dal 2022, dove si trova buona parte del team di Customer Success; Dipendenti: 47 persone (organico confermato dal Board a fine 2025). Segue l'inizio della sezione \"2. Prodotti\" con tabella (Prodotto | Tipo | Cosa fa), prima riga: \"Aurora Core | Base | Cuore della piattaforma. Anagrafica di tutti gli edifici (metratura, destinazione d'uso, impianti, contratti), dashboard unica, gestione spazi e planimetrie, archivio documentale (certificazioni, contratti, collaudi). Tutti gli altri moduli si a...\" (tagliata dal bordo inferiore). Alla riapertura in Obsidian (scena 205) la barra di stato segnala \"0 backlinks - 942 words - 7,192 characters\": nessuna nota rimanda ancora al Canon, prova diretta che e' un file orfano di grafo per costruzione (e' materiale grezzo, non una nota atomica).",
+    "fonte": "RnoC5IlOUhs#77:42 (canon.md aperto per intero, sezione 1) + RnoC5IlOUhs#86:24 (riapertura completa in Obsidian, sezioni 1-2) + voce 77:42-77:48 e 86:24-86:42",
+    "frame": "frame-0778.png, frame-0865.png",
+    "ancora": "0 backlinks · 942 words · 7,192 characters",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-104",
+        "tipo": "motiva"
+      }
+    ]
+  },
+  {
+    "id": "P2-103",
+    "tipo": "procedura",
+    "contenuto": "Secondo hub di reparto mostrato per intero, `areas/area-customer-success.md`: frontmatter title: \"Reparto -- Customer Success\", summary: \"Reparto che cura onboarding, supporto e crescita dei clienti esistenti, guidato da Giulia Rinaldi a Bologna.\", tags: [areas, reparto, customer-success, hub], status: active, created: 2026-06-10, updated: 2026-06-10, related come blocco YAML a tre righe tra virgolette: \"[[self-identita-aurora]]\", \"[[area-vendite]]\", \"[[area-prodotto-engineering]]\". Corpo: \"# Reparto -- Customer Success\", poi \"Funzione continua responsabile di onboarding, supporto e crescita dei clienti esistenti di [[self-identita-aurora|Aurora Sistemi]]. E' il motore della retention e dell'espansione (NRR 115% nel 2025).\", poi elenco puntato \"A capo: Giulia Rinaldi (Head of Customer Success), basata a Bologna.\", \"Customer Success Manager: Chiara Fontana, segue i key account (Banca Adriatica, Immobiliare Lombarda SGR).\", \"Dimensione: ~9 persone, concentrate a Bologna.\", poi sezione \"## Come lavora\": \"Prende in carico i clienti chiusi da [[area-vendite]] e li fa crescere con l'upsell di nuovi moduli costruiti da [[area-prodotto-engineering]]. Nel 2025 ha guidato gli upsell chiave: Banca Adriatica (Access su tutte le filiali), Gruppo Retail (Energy) e Immobiliare Lombarda (Insights).\" Nota: il campo `related` e' gia' qui scritto a blocco YAML multi-riga (non su una riga sola), anticipando il conflitto con la regola dettata a voce che emergera' esplicitamente solo dopo, quando Claude scoprira' il vero `_template-nota.md`.",
+    "fonte": "RnoC5IlOUhs#78:00 (area-customer-success.md aperto per intero) + voce 78:00-78:12",
+    "frame": "frame-0781.png",
+    "ancora": "Prende in carico i clienti chiusi da [[area-vendite]] e li fa crescere con l'upsell di nuovi moduli costruiti da [[area-prodotto-engineering]].",
+    "confidenza": "osservato",
+    "relazioni": []
+  },
+  {
+    "id": "P2-104",
+    "tipo": "principio",
+    "contenuto": "Prima apparizione di Obsidian nella sessione (cambio applicazione da Antigravity): Graph view con la stessa sidebar a 11 cartelle (areas, code, concepts, data, docs, entities, outputs, projects, self, sources, workspace). Nodi visibili: canon (in alto, isolato, con un piccolo pallino arancione accanto, segnalato come nodo separato/orfano), area-finance-operations, area-prodotto-engineering, area-vendite, area-people-cultura, self-identita-aurora (al centro del grappolo), area-marketing, area-customer-success. Le linee formano una rete fitta tra le aree e il nodo centrale self-identita-aurora, mentre canon resta separato in alto senza linee visibili verso gli altri nodi. Questa e' la prima prova visiva, mostrata dal vivo, del problema dei file orfani che l'episodio sviluppera' nelle scene successive.",
+    "fonte": "RnoC5IlOUhs#78:30 (Obsidian, Graph view con canon orfano) + voce 78:30-78:42",
+    "frame": "frame-0786.png",
+    "ancora": "Se andiamo in Obsidian, ora vedremo se si è rotto o meno.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-112",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-105",
+    "tipo": "comando",
+    "contenuto": "Prompt 4 del canovaccio Notion, titolo \"Prompt 4 -- Completa il cervello fino a circa 28 note\", sottotitolo \"Riempi tutte le cartelle, categoria per categoria, fermandoti intorno a 28 note di contenuto.\" Testo integrale: \"Perfetto. Ora completa il resto del cervello, sempre con le stesse regole (nota atomica, frontmatter, related su una riga, almeno 3 wikilink reali, nomi unici). Genera le note mancanti, categoria per categoria, collegandole a cio' che gia' esiste: data/: i KPI di fine 2025 (ARR totale, clienti attivi, churn, NRR, edifici); concepts/: ARR, churn, efficienza energetica; entities/: gli altri clienti, le persone coi ruoli, i tre prodotti, gli strumenti usati; docs/, projects/, outputs/, code/: le procedure, i progetti in corso, i deliverable, gli script dell'azienda. I canali commerciali (LinkedIn, eventi, partner) NON sono cartelle: sono TAG (channel/linkedin), perche' una stessa attivita' puo' valere per due canali e in cartella la duplicheresti. Fermati intorno a 28 note di contenuto, quante bastano per una demo che riempie il grafo. Alla fine dammi il conteggio per cartella.\" Nota di rilievo: la regola qui enunciata (\"related su una riga\") verra' poi smentita dal vero `_template-nota.md` scoperto da Claude piu' avanti nella sessione.",
+    "fonte": "RnoC5IlOUhs#80:30 (Notion, Prompt 4 per intero) + voce 80:24-80:36",
+    "frame": "frame-0806.png",
+    "ancora": "Fermati intorno a 28 note di contenuto, quante bastano per una demo che riempie il grafo. Alla fine dammi il conteggio per cartella.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-120",
+        "tipo": "contraddice"
+      }
+    ]
+  },
+  {
+    "id": "P2-106",
+    "tipo": "procedura",
+    "contenuto": "Dopo aver ricevuto il Prompt 4, Claude annuncia la propria strategia di scrittura prima di procedere: \"Procedo con le note di dettaglio. Riuso i prefissi di dominio dei tuoi esempi (cliente-, concetto-, kpi-, e per coerenza persona-, prodotto-, strumento-, doc-, progetto-, output-, code-), ordino la creazione in modo che ogni related punti solo a note gia' scritte (zero link morti). I canali commerciali restano tag (channel/...), non cartelle. Scrivo tutto in un'unica passata (prodotti -> concetti -> KPI -> persona -> clienti -> strumenti -> docs/projects/outputs/code).\" Seguono le prime azioni Write in sequenza: `prodotto-aurora-core.md` (18 righe, anteprima: \"title: Prodotto -- Aurora Core\" / \"summary: Modulo base della piattaforma: anagrafica edifici, dashboard unica, spazi e archivio documentale, su cui si appoggiano tutti gli altri m[oduli]\" tagliato) e `prodotto-aurora-energy.md` (8 righe, anteprima parzialmente coperta).",
+    "fonte": "RnoC5IlOUhs#81:30 (Claude spiega la strategia dei prefissi e comincia a scrivere le note prodotto) + voce 81:30-81:42",
+    "frame": "frame-0816.png",
+    "ancora": "Riuso i prefissi di dominio dei tuoi esempi (`cliente-`, `concetto-`, `kpi-`, e per coerenza `persona-`, `prodotto-`, `strumento-`, `doc-`, `progetto-`, `output-`, `code-`)",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-105",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-107",
+    "tipo": "procedura",
+    "contenuto": "Nota di concetto mostrata per intero, `concepts/concetto-churn.md`: frontmatter title: \"Concetto -- Churn\", summary: \"La perdita di clienti (logo churn) o di fatturato (gross churn) in un periodo; in Aurora il 2025 ha visto un solo logo perso.\", tags: [concepts, concetto, churn, metrica], status: active, created: 2026-06-10, updated: 2026-06-10, related: [[concetto-arr]], [[area-customer-success]], [[area-finance-operations]] (qui ancora su una riga sola, non a blocco). Corpo: \"# Concetto -- Churn\", \"Il churn misura quanto si perde. Due tagli:\", poi elenco puntato \"Logo churn: numero di clienti persi. In Aurora nel 2025 = 1 cliente (Costruzioni Sud, uscito a giugno dopo un'acquisizione) su 9 a inizio anno, ~11%.\", \"Gross revenue churn: [[concetto-arr|ARR]] perso. In Aurora = € 180.000, ~5,8% dell'ARR di inizio anno.\", chiusura \"E' il contraltare dell'espansione: [[area-customer-success]] lavora per minimizzarlo, [[area-finance-operations]] lo certifica. Obiettivo Board 2026: logo churn sotto il 10%.\" Contemporaneamente, nel pannello chat, altre azioni Write in coda: `concetto-efficienza-energetica.md` (18 righe) e `kpi-2025-arr.md` (9 righe).",
+    "fonte": "RnoC5IlOUhs#81:42 (concetto-churn.md aperto per intero) + voce 81:42-81:48",
+    "frame": "frame-0818.png",
+    "ancora": "**Gross revenue churn**: [[concetto-arr|ARR]] perso. In Aurora = € 180.000, ~5,8% dell'ARR di inizio anno.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-106",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-108",
+    "tipo": "numero",
+    "contenuto": "Scrittura in serie dei file KPI 2025, quattro azioni Write consecutive documentate nella sidebar e nella chat: `kpi-2025-clienti-attivi.md` (18 lines, summary: \"A fine 2025 Aurora ha 9 clienti attivi, dopo l'ingresso di HotelLine e l'uscita di Costruzioni Sud.\"), `kpi-2025-churn.md` (18 lines, summary: \"Nel 2025 Aurora ha perso 1 cliente (logo churn ~11%) per € 180.000 di ARR (gross churn ~5,8%).\"), `kpi-2025-nrr.md` (19 lines, summary: \"La Net Revenue Retention 2025 di Aurora e' 115%; l'espansione sui clienti esistenti ha piu' che compensato il churn.\"), `kpi-2025-edifici.md` (parzialmente coperta dal campo di input, non leggibile oltre il titolo). Ogni file appare nella sidebar sotto la cartella `concepts`/`data` man mano che viene scritto, a riprova che Claude sta popolando le cartelle in un'unica passata come annunciato in precedenza.",
+    "fonte": "RnoC5IlOUhs#81:48 (scrittura in serie dei 5 file KPI 2025) + voce 81:48-82:18",
+    "frame": "frame-0819.png",
+    "ancora": "kpi-2025-nrr.md",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-106",
+        "tipo": "esempio-di"
+      }
+    ]
+  }
+]

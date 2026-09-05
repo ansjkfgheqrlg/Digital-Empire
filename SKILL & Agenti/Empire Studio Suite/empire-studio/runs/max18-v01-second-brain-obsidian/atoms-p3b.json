@@ -257,6 +257,106 @@
     "frame": "frame-1300.png",
     "ancora": "Due note di trasparenza:",
     "confidenza": "osservato",
-    "relazioni": [{"verso": "P3-067", "tipo": "precede"}, {"verso": "P3-046", "tipo": "corretto-da"}]
+    "relazioni": [{"verso": "P3-067", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-067",
+    "tipo": "principio",
+    "contenuto": "Il presentatore apre una nuova sessione Claude Code vuota in Antigravity ('Type /model to pick the right tool for the job.') e passa a schermo webcam a piena inquadratura per introdurre il limite strutturale della memoria fin qui costruita: 'che non abbiamo ancora un modo di dire allei \"Ehi, ascolta, ma a marzo avevamo parlato di questo argomento? Ti ricordi cos'era? Cosa avevamo deciso?\"' Il punto è che le note statiche (clienti, KPI, progetti) non bastano: serve un meccanismo dedicato per far ricordare all'AI le conversazioni passate, altrimenti resta senza memoria episodica. Il presentatore motiva perché vale la pena costruirlo: 'che ci permette di avere enormi ritorni,' — introduce così l'ultimo pezzo del sistema, la memoria dinamica (skill journal) che verrà costruita subito dopo.",
+    "fonte": "RnoC5IlOUhs#130:00-130:42 (scene 332-336) + voce",
+    "frame": "frame-1301.png, frame-1305.png, frame-1306.png, frame-1307.png, frame-1308.png",
+    "ancora": "che ci permette di avere enormi ritorni,",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-068", "tipo": "motiva"}]
+  },
+  {
+    "id": "P3-068",
+    "tipo": "comando",
+    "contenuto": "Prompt digitato per intero nel riquadro di input di Antigravity (bordo rosso attivo) per costruire la skill journal, trascritto riga per riga così come appare a schermo: 'Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.' — riga vuota — 'CONTESTO -- memoria viva' — 'Il cervello ha due strati di memoria:' — '- Memoria STATICA: le note delle entità vere (clienti, KPI, progetti).' — '  Vivono già nel cervello e cambiano di rado.' — '- Memoria DINAMICA: il diario di lavoro. Ogni sessione e ogni giornata' — '  lasciano una nota che si AGGANCIA sempre alle entità statiche coi' — '  [[wikilink]]. Mai una nota di diario sciolta nel vuoto.' — 'Lo scopo della skill e' tenere viva la memoria dinamica e cucirla a' (riga finale tagliata dal bordo inferiore del riquadro nello screenshot: il testo del prompt continua oltre quanto visibile, la fonte non ne riporta il proseguimento). Prima di inviarlo il presentatore lo introduce a voce quasi verbatim: 'dentro e gli diciamo contesto memoria viva. Il cervello ha due strati, memoria...'",
+    "fonte": "RnoC5IlOUhs#134:06 (scena 338) + voce",
+    "frame": "frame-1342.png",
+    "ancora": "Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-069", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-069",
+    "tipo": "comando",
+    "contenuto": "Risposta di Claude dopo aver costruito la skill, sezione 'Come invochi i tre comandi' riportata per intero: 'Fatto. Ho costruito una sola skill (journal) con i tre comandi al suo interno, più i due template, e prima ho scritto i due template in parallelo per andare più veloce come hai chiesto.' 'Scrivi semplicemente, in chat:' — 'buongiorno → briefing di inizio sessione in 5 righe. Non scrive niente.' — 'chiudi sessione → prima ti dice in 3 righe cosa abbiamo fatto, al tuo ok scrive sessione-<data>.' — 'fine giornata → legge tutte le sessioni del giorno, ti dice in 3 righe cosa e' successo, al tuo ok scrive il daily.' Poi: 'La skill si attiva da sola su queste frasi (e varianti tipo \"chiudiamo la sessione\", \"riassunto del giorno\"). Se vuoi forzarla puoi anche scrivere /journal.' Questo comando realizza concretamente lo schema già anticipato dal Prompt 13 'Apri la sessione' della pagina Notion (vedi P3-054): stessa logica di briefing in poche righe senza scrivere nulla, ora però automatizzata in una skill invocabile a frase libera.",
+    "fonte": "RnoC5IlOUhs#136:12 (scena 340) + voce",
+    "frame": "frame-1355.png",
+    "ancora": "Come invochi i tre comandi",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-070", "tipo": "parte-di"}, {"verso": "P3-054", "tipo": "esempio-di"}]
+  },
+  {
+    "id": "P3-070",
+    "tipo": "struttura",
+    "contenuto": "Stessa risposta, sezione 'Dove sono finiti i file' riportata per intero: 'Skill: .claude/skills/SKILL.md — l'orchestratore coi tre comandi e le regole.' — 'Template sessione: workspace/journal/_templates/_template-sessione.md' — 'Template daily: workspace/journal/_templates/_template-daily.md' — 'Cartelle del diario (create): workspace/journal/sessions/ e workspace/journal/daily/' Poi: 'Regole rispettate dentro la skill: date sempre YYYY-MM-DD, frontmatter conforme a _template-nota.md, ogni nota di diario con almeno un [[wikilink]] a un'entità reale (se manca, te lo chiede, nessuna entità inventata.' Testo tagliato in fondo: 'Vuoi che pr[...]'. Nella sidebar Explorer compare per la prima volta una cartella .claude in cima all'albero, appena creata dalla skill stessa.",
+    "fonte": "RnoC5IlOUhs#136:12 (scena 340)",
+    "frame": "frame-1355.png",
+    "ancora": "Dove sono finiti i file",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-071", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-071",
+    "tipo": "esempio",
+    "contenuto": "Primo test del comando 'buongiorno': messaggio utente 'Buongiorno Claude', Claude legge prima llms.txt (indice-porta del vault) poi risponde per intero: 'Buongiorno Gio.' — 'Non c'è ancora nessuna nota di sessione nel diario, quindi il briefing è solo sull'indice del cervello (llms.txt).' Heading 'Dove siamo': 'Il cervello di Aurora Sistemi è popolato e in piedi: 6 aree, 3 clienti attivi mappati (Banca Adriatica, HotelLine, Immobiliare Lombarda), KPI 2025 e l'unico progetto strategico aperto.' — 'Il diario di lavoro è vuoto: questa è di fatto la prima sessione tracciata.' Heading 'Cosa è aperto / da affrontare oggi, in ordine': '1. [[progetto-arr-5m-2026]] — l'obiettivo Board 2026: ARR oltre 5M con NRR >110% e churn logo <10%. È l'unico progetto attivo, quindi il candidato naturale su cui lavorare.' '2. Churn — il 2025 ha chiuso con logo churn ~11% ([[kpi-2025-churn]]), sopra la soglia <10% che il progetto richiede. Punto di attenzione concreto.' '3. Vedo che hai aperto outputs/cruscotto-aurora.html nell'IDE — se il lavoro di oggi è lì, partiamo da quello.' Chiusura: 'Da cosa vuoi cominciare?' Verifica end-to-end che il briefing rispetta esattamente la struttura in 5 righe promessa dal comando 'buongiorno' (P3-069) e dal Prompt 13 originale (P3-054), senza scrivere nulla nel cervello.",
+    "fonte": "RnoC5IlOUhs#136:12 (scena 341) + voce",
+    "frame": "frame-1363.png",
+    "ancora": "Buongiorno Gio.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-072", "tipo": "precede"}, {"verso": "P3-069", "tipo": "esempio-di"}]
+  },
+  {
+    "id": "P3-072",
+    "tipo": "struttura",
+    "contenuto": "Primo test del comando 'chiudi sessione': Claude conferma 'Fatto. La skill funziona: nota salvata in workspace/journal/sessions/sessione-2026-06-10.md.' con verifica di conformità (frontmatter valido, aggancio a [[progetto-arr-5m-2026]] rispettando la regola del wikilink obbligatorio, corpo in tre sezioni Fatto/Deciso/Aperto). Il file sessione-2026-06-10.md viene aperto e trascritto per intero, riga per riga: frontmatter — title: \"Sessione — 2026-06-10\"; summary: \"Test della skill journal: briefing di buongiorno e prima chiusura di sessione per verificare il salvataggio della nota.\"; tags: [workspace, type/session]; status: done; created: 2026-06-10; updated: 2026-06-10; related: - \"[[progetto-arr-5m-2026]]\". Corpo — # Sessione — 2026-06-10 ## Fatto: 'Briefing di buongiorno sul cervello di Aurora Sistemi (diario ancora vuoto, prima sessione tracciata).' 'Test della skill journal: verificato che la chiusura di sessione salvi correttamente una nota nel workspace.' ## Deciso: 'Agganciare questa nota di test a [[progetto-arr-5m-2026]], unico progetto attivo, per rispettare la regola del wikilink obbligatorio.' ## Aperto: 'Lavoro reale sul progetto ARR 5M e sul churn logo 2025 (~11%, sopra la soglia <10%) ancora da affrontare.'",
+    "fonte": "RnoC5IlOUhs#137:12 (scena 342)",
+    "frame": "frame-1373.png",
+    "ancora": "Fatto. La skill funziona: nota salvata in",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-073", "tipo": "precede"}, {"verso": "P3-069", "tipo": "esempio-di"}]
+  },
+  {
+    "id": "P3-073",
+    "tipo": "procedura",
+    "contenuto": "Terzo test, comando 'fine giornata': messaggio utente 'Hey Claude, grazie per oggi. Finisco la giornata qui', Claude risponde: 'Grazie a te, Gio. Attivo \"fine giornata\". Prima di scrivere il daily, in 3 righe cosa è successo oggi in totale:' numerato per intero: '1. Briefing di buongiorno sul cervello di Aurora Sistemi (diario vuoto, prima giornata tracciata).' '2. Test della skill journal: chiusura di sessione che ha salvato correttamente la nota nel workspace.' '3. Nessun lavoro reale sulle entità: giornata dedicata a verificare il meccanismo del diario.' Poi: 'C'è una sola sessione oggi ([[sessione-2026-06-10]]), che fonderò nel daily. Ti torna? Dammi l'ok e scrivo.' L'utente risponde 'fai pure', a quel punto Claude esegue un comando bash 'Bash Read daily template, check existing' ('cd \"...aurora cervello\" && cat workspace/journal/_templates/_template-daily.md 2>/dev/null && ...') prima di scrivere il file: questa sequenza dimostra in pratica la regola dichiarata nel comando (P3-069) — riassumere e chiedere conferma prima di scrivere, mai scrivere alla cieca.",
+    "fonte": "RnoC5IlOUhs#137:36 (scena 343) + voce",
+    "frame": "frame-1377.png",
+    "ancora": "Grazie a te, Gio. Attivo \"fine giornata\"",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-074", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-074",
+    "tipo": "struttura",
+    "contenuto": "Template _template-daily.md aperto e trascritto per intero, riga per riga (parzialmente tagliato dal bordo inferiore dello screenshot, il file continua oltre quanto visibile): frontmatter — title: \"Daily — YYYY-MM-DD\"; summary: \"Una frase di sintesi sull'intera giornata.\"; tags: [workspace, type/daily]; status: done; created: YYYY-MM-DD; updated: YYYY-MM-DD; related: - \"[[sessione-YYYY-MM-DD]]\" - \"[[entita-principale-toccata]]\". Corpo — # Daily — YYYY-MM-DD ## Fatto: 'Sintesi unica di cosa è stato concluso oggi, fondendo le sessioni senza ripeterle riga per riga.' ## Deciso: 'Le scelte chiave della giornata e il perché.' ## Aperto: 'Cosa resta in sospeso a fine giornata.' ## Sessioni: '- [[sessione-YYYY-MM-DD]]' Poi un commento HTML con le regole (tagliato prima della fine, testo visibile): '<!-- REGOLE (vedi workspace/_template-nota.md): - Date sempre YYYY-MM-DD, mai relative. - related = lista a blocco con TUTTE le sessioni del giorno + le entità principali toccate. - title e summary sempre fra virgolette doppie.' (il commento prosegue oltre il bordo visibile, non riportato dalla fonte).",
+    "fonte": "RnoC5IlOUhs#137:42 (scena 344)",
+    "frame": "frame-1378.png",
+    "ancora": "title: \"Daily — YYYY-MM-DD\"",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-075", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-075",
+    "tipo": "esempio",
+    "contenuto": "File 2026-06-10.md (daily) generato da Claude a partire dal template P3-074 e dalla sessione P3-072, trascritto per intero, riga per riga: frontmatter — title: \"Daily — 2026-06-10\"; summary: \"Prima giornata tracciata del diario: test della skill journal, dal briefing di buongiorno alla chiusura di sessione.\"; tags: [workspace, type/daily]; status: done; created: 2026-06-10; updated: 2026-06-10; related: - \"[[sessione-2026-06-10]]\" - \"[[progetto-arr-5m-2026]]\". Corpo — # Daily — 2026-06-10 ## Fatto: 'Briefing di buongiorno sul cervello di Aurora Sistemi: diario di lavoro ancora vuoto, questa è la prima giornata tracciata.' 'Testata la skill journal end-to-end: chiusura di sessione che salva correttamente la nota nel workspace.' ## Deciso: 'Agganciare le note di test a [[progetto-arr-5m-2026]], unico progetto attivo, per rispettare la regola del wikilink obbligatorio.' ## Aperto: 'Lavoro reale sul progetto ARR 5M e sul churn logo 2025 (~11%, sopra la soglia <10%) ancora da affrontare.' ## Sessioni: '- [[sessione-2026-06-10]]' Questo è l'ultimo output tecnico mostrato nel tutorial: il sistema di memoria viva end-to-end (skill journal + template + note agganciate via wikilink) completo e funzionante.",
+    "fonte": "RnoC5IlOUhs#138:00 (scena 346)",
+    "frame": "frame-1381.png",
+    "ancora": "Prima giornata tracciata del diario: test della skill journal, dal briefing di buongiorno alla chiusura di sessione.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-076", "tipo": "precede"}, {"verso": "P3-074", "tipo": "esempio-di"}]
+  },
+  {
+    "id": "P3-076",
+    "tipo": "principio",
+    "contenuto": "Tesi finale del relatore, ricostruita per intero incollando le battute letterali (marcate a voce, una per scena) delle ultime sei scene del video, tutte in webcam a piena inquadratura senza schermo software: scena 347 'Bene, signori, quindi direi che' / 'abbiamo fatto il nostro tutorial sulla' [company brain]; scena 348 'mille per essere arrivati fino alla' [fine — apertura del ringraziamento: 'Grazie mille per essere arrivati fino alla fine']; scena 349 'di più su come farlo in maniera anche' [più massiva per la propria azienda]; scena 350 'vendere questa tipologia di servizi da' [community]; scena 351 'interattive con una community di ormai' [90 imprenditori]; scena 352, ultimo frame estratto del video (occhi chiusi, espressione rilassata) 'ovviamente grazie ancora per aver' — chiusura letterale riportata dalla fonte: 'seguito il tutorial.' Tesi centrale ricomposta: il tutorial sulla company brain (Obsidian + Claude Code + layer visivi HTML/Notion + memoria viva via skill journal) è concluso, e il relatore rimanda chi vuole applicarlo 'in maniera anche più massiva' per la propria azienda, o venderlo come servizio, alla propria community di 'ormai 90 imprenditori' con 'moduli su moduli e live interattive'.",
+    "fonte": "RnoC5IlOUhs#138:06-138:48 (scene 347-352) + voce",
+    "frame": "frame-1382.png, frame-1383.png, frame-1384.png, frame-1386.png, frame-1387.png, frame-1389.png",
+    "ancora": "Bene, signori, quindi direi che",
+    "confidenza": "dedotto",
+    "relazioni": []
   }
 ]

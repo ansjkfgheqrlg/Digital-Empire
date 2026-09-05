@@ -72,3 +72,29 @@ non riusiamo mai materiale altrui. **È una proprietà del flusso, non un presid
 introducesse clip scaricate, nessun regolatore se ne accorgerebbe. Annotato in `BACKLOG.md`.
 
 Arbitrato completo: `company/Memory/studi/aitubepro/CONFLITTI.md` **C-004**.
+
+---
+
+## 5. I quattro miti del camuffamento (A4-L06/L07/L08/L10 · 2026-09-05)
+
+Studiando quattro lezioni consecutive di AI TUBE PRO ne sono emerse **quattro affermazioni
+diverse** su come rendere «proprio» un video altrui. Sono tutte false, e sbagliano **nello stesso
+punto**: confondono **il non farsi riconoscere da una macchina** con **l'essere in regola**.
+
+Le raccolgo qui perché sono esattamente il tipo di frase che circola, suona tecnica, e viene
+ripetuta come acquisita da chi non l'ha mai verificata.
+
+| # | Il mito | Dove | Perché è falso |
+|---|---|---|---|
+| 1 | «Su YouTube esiste il **fair use**, e ci permette di utilizzare video di altre persone» | L06 · 10:36 | Il *fair use* non è una regola di YouTube: è una dottrina del diritto **statunitense**, valutata **da un giudice** su quattro fattori, caso per caso. L'ordinamento italiano non ha un equivalente altrettanto largo |
+| 2 | Filtri, overlay ed effetti rendono il video «**originale e non più riconoscibile**» | L07 · 24:57 e 33:04 | «Non riconoscibile» riguarda l'algoritmo di *matching*. L'opera resta l'opera di un altro: l'irriconoscibilità non crea la titolarità |
+| 3 | Si possono usare clip protette «magari di un film, magari di *Narcos*, **che dura non meno di 5 secondi**» | L10 · 09:02 | **Nessuna soglia di durata** rende lecito l'uso di materiale protetto — né 5, né 7, né 30 secondi. La porzione usata è **uno** dei fattori del fair use, non una franchigia. Il Content ID riconosce anche frammenti brevi |
+| 4 | Coprire il logo con un rettangolo, ritagliare, zoomare e tradurre il testo «**serve a evitare problemi di copyright**» | L08 · 39:56, 40:37, 48:49 | Il diritto d'autore protegge **il contenuto audiovisivo**, non il logo che ci sta sopra. Coprire il marchio nasconde la provenienza, non trasferisce i diritti |
+
+**La regola di casa, in una riga:** *se una tecnica serve a non farsi riconoscere, quella tecnica
+sta ammettendo che c'è qualcosa da riconoscere.*
+
+**Come si comporta la nostra fabbrica:** non riusa materiale di terzi, quindi nessuno di questi
+quattro problemi la riguarda. Questa sezione **non serve a difenderci** — serve a **non farci
+importare quei miti** da un corso, da un video o da un collaboratore che li dà per buoni. Se
+qualcuno propone una di queste quattro cose, la risposta è già scritta qui.

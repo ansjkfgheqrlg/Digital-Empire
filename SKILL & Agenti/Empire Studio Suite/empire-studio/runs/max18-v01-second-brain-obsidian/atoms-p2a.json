@@ -393,5 +393,92 @@
       {"verso": "P2-031", "tipo": "esempio-di"},
       {"verso": "P2-029", "tipo": "quantificato-da"}
     ]
+  },
+  {
+    "id": "P2-034",
+    "tipo": "numero",
+    "contenuto": "Il canon viene salvato in workspace/canon.md, e Claude lo dichiara esplicitamente 'un file di lavoro, non una nota finale': il Canon e' quindi una fase intermedia, un output temporaneo destinato a essere smontato nelle note atomiche definitive dentro le 11 cartelle, non un documento da conservare cosi' com'e'.",
+    "fonte": "RnoC5IlOUhs#69:18 (piano in 5 punti di Claude, punto 4)",
+    "frame": "frame-0694.png",
+    "ancora": "`workspace/canon.md` nel vault (è un file di lavoro, non una nota finale).",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-033", "tipo": "parte-di"},
+      {"verso": "P2-012", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-035",
+    "tipo": "definizione",
+    "contenuto": "La slide 'LA NOTA ATOMICA' (sottotitolo: 'Niklas Luhmann: una idea per scheda') contrappone due modelli: colonna 'NO' — un PDF da 40 pagine tutto insieme, con una X sotto e la scritta 'nessuno lo riusa'; colonna 'SI' — cinque caselle colorate, ciascuna '1 idea', collegate tra loro in rete, con le scritte 'il valore e' nei legami' e 'riusabile in 20 contesti'. E' la giustificazione visiva del perche' il Canon (un file unico) va smontato in tante piccole note.",
+    "fonte": "RnoC5IlOUhs#70:18 (Excalidraw, slide \"LA NOTA ATOMICA\") + #74:24 (enfasi con sottolineature)",
+    "frame": "frame-0704.png, frame-0745.png",
+    "ancora": "PDF da 40 pagine, tutto insieme",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-032", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P2-036",
+    "tipo": "definizione",
+    "contenuto": "Il metodo citato come base teorica della nota atomica e' lo Zettelkasten di Niklas Luhmann (nome scritto per esteso a mano sullo schermo, ma che l'autore dichiara di non voler pronunciare a voce): 90.000+ schede autonome create per scrivere i suoi libri. L'annotazione a mano mostra un esempio concreto a due schede collegate: 'FIDUCIA' (scheda 1) e 'SOLDI' (scheda 2).",
+    "fonte": "RnoC5IlOUhs#71:36 (annotazione a mano \"ZETTELKASTEN\" + esempio Fiducia/Soldi + \"90.000+\")",
+    "frame": "frame-0717.png",
+    "ancora": "fatto è stato creare 90.000 schede autonome con cui scriveva i libri",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-035", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-037",
+    "tipo": "principio",
+    "contenuto": "'HUB-AND-SPOKE: l'ordine di costruzione' (sottotitolo: 'come una ruota di bicicletta'): al centro un HUB grigio con icona persona e didascalia 'identita azienda, reparti'; attorno, sei nodi colorati 'dettaglio' collegati al centro e tra loro. Etichette curve: '1) prima gli hub' e '2) poi i dettagli'. Regola conseguente, scritta in un riquadro: 'Ogni link punta a qualcosa che esiste gia', quindi i link rotti sono impossibili.'",
+    "fonte": "RnoC5IlOUhs#74:30 (Excalidraw, slide \"HUB-AND-SPOKE\") + #75:54 (versione completa e leggibile)",
+    "frame": "frame-0746.png, frame-0760.png",
+    "ancora": "Ogni link punta a qualcosa che esiste già, quindi i link rotti sono impossibili.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-035", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-038",
+    "tipo": "comando",
+    "contenuto": "Prompt 3 — 'Trasforma il canon in note atomiche (prima gli hub)', testo integrale: 'Ottimo, il canon va bene. Ora trasformalo in note atomiche dentro le 11 cartelle.' Regole per ogni nota compilata: una sola idea per nota, massimo 300 righe; frontmatter in cima con title, summary (una frase), tags (il primo e' sempre il nome della cartella), status, created, updated, related; il campo related deve stare su una sola riga fisica, con i wikilink separati da virgola e senza spazi dentro le doppie parentesi; almeno 3 wikilink uscenti verso note reali (contando i target unici, non lo stesso link ripetuto); nome del file unico in tutto il vault, con un prefisso di dominio (es. self-identita-aurora, cliente-...).",
+    "fonte": "RnoC5IlOUhs#76:12 (Notion, Prompt 3 completo) + #76:24 (stesso testo incollato in Claude Code)",
+    "frame": "frame-0763.png, frame-0765.png",
+    "ancora": "Ottimo, il canon va bene. Ora trasformalo in note atomiche dentro le 11 cartelle.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-030", "tipo": "precede"},
+      {"verso": "P2-035", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-039",
+    "tipo": "regola",
+    "contenuto": "Ordine di costruzione imposto dal Prompt 3 (da rispettare): 1) prima gli hub, le note-mappa — 'self/self-identita-aurora' e' l'hub centrale; 2) poi le note di dettaglio — prodotti, clienti, KPI, concetti, ognuna collegata all'hub. Vincolo assoluto: 'Un wikilink punta solo a una nota che esiste gia': niente link verso note non ancora create.' Claude deve partire dagli hub e mostrare 'self-identita-aurora' prima di proseguire con il resto.",
+    "fonte": "RnoC5IlOUhs#76:12 (Notion, sezione \"Ordine di costruzione\" del Prompt 3)",
+    "frame": "frame-0763.png",
+    "ancora": "Un wikilink punta solo a una nota che esiste già",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-038", "tipo": "parte-di"},
+      {"verso": "P2-037", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-040",
+    "tipo": "numero",
+    "contenuto": "Sotto il Prompt 3, nella stessa pagina Notion, compare gia' il titolo del prompt successivo: 'Prompt 4 — Completa il cervello fino a circa 28 note' — indica la dimensione target dell'intero vault dimostrativo Aurora Sistemi, non ancora aperto/spiegato in questa porzione di video.",
+    "fonte": "RnoC5IlOUhs#76:12 (Notion, titolo del Prompt 4 visibile sotto il Prompt 3)",
+    "frame": "frame-0763.png",
+    "ancora": "Prompt 4 — Completa il cervello fino a circa 28 note",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-038", "tipo": "precede"}
+    ]
   }
 ]

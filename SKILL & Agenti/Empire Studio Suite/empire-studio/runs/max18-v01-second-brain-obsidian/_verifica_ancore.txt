@@ -1,0 +1,12 @@
+KA-002 | atoms-p1.json | ancora len 96
+   testuale dopo pulizia grassetti: True
+   coda trovata: True
+KA-022 | atoms-p1.json | ancora len 86
+   testuale dopo pulizia grassetti: False
+   coda trovata: True
+KA-030 | atoms-p1.json | ancora len 166
+   testuale dopo pulizia grassetti: False
+   coda trovata: True
+KA-124 | atoms-p3.json | ancora len 162
+   testuale dopo pulizia grassetti: True
+   coda trovata: True
