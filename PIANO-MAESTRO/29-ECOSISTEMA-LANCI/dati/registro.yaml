@@ -762,3 +762,313 @@ invarianti:
   - id: "INV-10"
     dice: "ogni artefatto con umano=true dichiara il nome del campo firma obbligatorio"
     perche: "una firma senza canale e senza legame col testo firmato e' una stringa qualunque"
+
+  - id: "INV-13"
+    dice: "ogni artefatto appartiene a UN SOLO reparto, e ogni reparto operativo possiede almeno un artefatto"
+    perche: >-
+      nella versione precedente i dodici reparti erano etichette: nessuno di essi
+      possedeva un file con uno schema, quindi due reparti potevano credere di
+      possedere la stessa cosa e nessuno la produceva. Un reparto che non possiede
+      un artefatto non e' un organo: e' un titolo.
+
+  - id: "INV-14"
+    dice: "ogni agente appartiene a un reparto esistente, e ogni reparto ha un capo che e' un suo agente"
+    perche: >-
+      un agente senza reparto non ha nessuno a cui rispondere, e un reparto senza
+      capo non ha nessuno che risponda per lui quando un gate boccia.
+
+  - id: "INV-15"
+    dice: "la catena di comando non ha cicli: nessun reparto risponde, per catena, a se stesso"
+    perche: >-
+      un anello nella gerarchia significa che nessuno decide. Si verifica con lo
+      stesso metodo del grafo delle dipendenze fra artefatti.
+
+  - id: "INV-16"
+    dice: "il reparto che giudica (LAN-QLT) non risponde a nessun reparto operativo: risponde solo alla Direzione"
+    perche: >-
+      un giudice che risponde a chi giudica non e' un giudice. E' il gemello
+      gerarchico di INV-09, che gli toglie la penna: questo gli toglie il padrone.
+      Togliergliene una sola lascia intatto il modo di aggirarlo.
+
+  - id: "INV-17"
+    dice: "ogni workflow produce artefatti esistenti, e ogni artefatto e' prodotto da esattamente un workflow"
+    perche: >-
+      due workflow che producono la stessa cosa sono due verita' in conflitto; un
+      artefatto senza workflow e' un file che nessuno sa come si fa.
+
+  - id: "INV-18"
+    dice: "ogni fase di ogni workflow ha un agente esistente, un ingresso, un'uscita e un criterio di uscita"
+    perche: >-
+      la versione precedente aveva flussi con fasi senza agente e fasi senza
+      criterio: erano elenchi di buone intenzioni in ordine cronologico. Una fase
+      senza criterio di uscita non finisce, smette quando qualcuno si stanca.
+
+  - id: "INV-19"
+    dice: "l'agente di ogni fase appartiene al reparto proprietario del workflow, oppure la fase dichiara reparto_ospite"
+    perche: >-
+      senza questo vincolo un reparto puo' far lavorare gli agenti di un altro
+      senza che nessuno lo sappia, ed e' il modo in cui le responsabilita'
+      evaporano: il lavoro risulta fatto, ma nessuno ne risponde.
+
+  - id: "INV-20"
+    dice: "ogni passaggio di consegne cita due reparti esistenti, un artefatto esistente e un criterio di accettazione"
+    perche: >-
+      un passaggio senza criterio di accettazione e' una speranza: chi riceve
+      scopre che manca qualcosa quando e' gia' al lavoro, e torna indietro.
+
+# =============================================================================
+# 9. I REPARTI — organi veri, ancorati agli artefatti che possiedono
+# =============================================================================
+# LA DIFFERENZA CON LA VERSIONE PRECEDENTE, che aveva dodici reparti e li ha
+# persi tutti alla revisione: li' il reparto era un NOME in un organigramma,
+# ricopiato a mano in undici documenti (sei sigle esistevano in un dossier e non
+# nell'altro). Qui un reparto esiste se e solo se POSSIEDE un artefatto con uno
+# schema, e INV-13 lo verifica. Un reparto che non possiede niente non e' un
+# organo: e' un titolo.
+#
+#   possiede      gli artefatti di cui e' l'unico proprietario di scrittura
+#   capo          l'agente che risponde per il reparto quando un gate boccia
+#   agenti        tutti gli agenti del reparto
+#   risponde_a    il reparto sopra di lui nella catena di comando
+#   workflow      il flusso di lavoro che esegue
+#   confine       cio' che NON fa, e chi lo fa al posto suo
+reparti:
+
+  # ------------------------------------------------------------------ governo
+  - id: "LAN-DIR"
+    nome: "Direzione"
+    tipo: "governo"
+    missione: "porta un lancio da IDEA ad APPRESO e risponde a Max di cosa e' successo"
+    possiede: []
+    capo: "lan-direttore"
+    agenti: ["lan-direttore"]
+    risponde_a: null
+    workflow: null
+    confine: >-
+      non produce nessun artefatto e non giudica nessun artefatto: se lo facesse
+      sarebbe parte in causa nei conflitti che deve arbitrare.
+
+  - id: "LAN-QLT"
+    nome: "Qualita'"
+    tipo: "governo"
+    missione: "esegue tutti i controlli e scrive i verbali, anche quando lasciano passare"
+    possiede: []
+    capo: "lan-gate"
+    agenti: ["lan-gate"]
+    risponde_a: "LAN-DIR"
+    workflow: null
+    confine: >-
+      non produce nessun artefatto (INV-01) e non ha permesso di scrittura
+      (INV-09). Non risponde a nessun reparto operativo (INV-16).
+
+  # ---------------------------------------------------------------- operativi
+  - id: "LAN-MER"
+    nome: "Mercato"
+    tipo: "operativo"
+    missione: "sa quante persone possiamo mettere davanti all'offerta e con quali parole parlano"
+    possiede: ["ART-PUB", "ART-RIC"]
+    capo: "lan-pub-censore"
+    agenti: ["lan-pub-censore", "lan-int-analista"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-MERCATO"
+    confine: >-
+      non costruisce pubblico e non fa campagne: conta cio' che c'e' e porta la
+      prova di ogni numero. Costruire pubblico e' lavoro di 04-MARKETING.
+    perche_uniti: >-
+      pubblico e ricerca rispondono alla stessa domanda — chi c'e' la' fuori e
+      cosa dice — e attingono alle stesse fonti. Separarli avrebbe prodotto due
+      reparti da un agente ciascuno, cioe' due titoli.
+
+  - id: "LAN-STR"
+    nome: "Strategia"
+    tipo: "operativo"
+    missione: "decide se questo lancio si fa adesso, e non un altro"
+    possiede: ["ART-DEC"]
+    capo: "lan-str-filtro"
+    agenti: ["lan-str-filtro"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-STRATEGIA"
+    confine: >-
+      non sceglie il prezzo e non sceglie la data: sono dell'Offerta. Qui si
+      decide solo se vale la pena istruire il lancio.
+
+  - id: "LAN-PRD"
+    nome: "Prodotto"
+    tipo: "operativo"
+    missione: "certifica che il prodotto e' consegnabile a un cliente pagante senza vergogna e senza rischio"
+    possiede: ["ART-CRT"]
+    capo: "lan-prd-collaudatore"
+    agenti: ["lan-prd-collaudatore"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-PRODOTTO"
+    confine: >-
+      non crea il prodotto: e' di 02-INFO-BUSINESS. Qui si collauda cio' che
+      arriva gia' fatto, anche in modalita' retroattiva.
+
+  - id: "LAN-OFF"
+    nome: "Offerta"
+    tipo: "operativo"
+    missione: "istruisce prezzo e data fino a renderli una conferma di dieci secondi"
+    possiede: ["ART-PRV", "ART-OFF"]
+    capo: "lan-off-conductor"
+    agenti: ["lan-off-conductor", "lan-prv-modello"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-OFFERTA"
+    confine: >-
+      non firma. La firma e' di una persona, per canale ammesso, e nessun agente
+      di questo reparto ha permesso di scrittura sul campo firma.
+    perche_uniti: >-
+      la previsione esiste per rendere la firma del prezzo una decisione invece
+      che una scelta di gusto: sono due meta' dello stesso atto. Tenerle in due
+      reparti avrebbe rifatto il difetto della versione precedente, dove il prezzo
+      si sceglieva senza sapere quanto produceva.
+
+  - id: "LAN-CPY"
+    nome: "Parola"
+    tipo: "operativo"
+    missione: "tutti i testi del lancio, ognuno col punteggio calcolato e la destinazione"
+    possiede: ["ART-CPY"]
+    capo: "lan-cpy-conductor"
+    agenti: ["lan-cpy-conductor"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-PAROLA"
+    confine: >-
+      non possiede lo standard dei testi ne' la voce del marchio: sono di
+      04-MARKETING e si ricevono come vincolo, non si ridiscutono qui.
+
+  - id: "LAN-FNL"
+    nome: "Vendita"
+    tipo: "operativo"
+    missione: "le pagine sono online, misurano, e la cassa ha incassato un pagamento vero"
+    possiede: ["ART-FNL"]
+    capo: "lan-fnl-costruttore"
+    agenti: ["lan-fnl-costruttore"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-VENDITA"
+    confine: >-
+      non decide cosa dicono le pagine (e' della Parola) e non porta traffico
+      (e' dell'Editoriale e di 04-MARKETING). Qui si costruisce e si prova che
+      incassa.
+
+  - id: "LAN-EDT"
+    nome: "Editoriale"
+    tipo: "operativo"
+    missione: "riempie i giorni del lancio di contenuti che escono davvero e portano da qualche parte"
+    possiede: ["ART-EDT"]
+    capo: "lan-edt-pianificatore"
+    agenti: ["lan-edt-pianificatore"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-EDITORIALE"
+    confine: >-
+      non spedisce niente da solo: ogni invio reale alla lista e' un punto umano
+      (PU-INVIO), perche' un'email spedita non si richiama.
+
+  - id: "LAN-TSR"
+    nome: "Tesoro"
+    tipo: "operativo"
+    missione: "sa quanto costa il lancio, quanto costa farlo girare, e a quante copie va in pari"
+    possiede: ["ART-BDG"]
+    capo: "lan-tsr-contabile"
+    agenti: ["lan-tsr-contabile"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-TESORO"
+    confine: >-
+      non e' la Tesoreria dell'azienda (ecosistema 14): qui si governa il costo di
+      UN lancio. Se un numero compare in tutti e due i posti ed e' diverso, ha
+      ragione la Tesoreria.
+
+  - id: "LAN-REG"
+    nome: "Regia"
+    tipo: "operativo"
+    missione: "porta il lancio all'apertura con tutte le condizioni vere insieme, e ne misura il risultato"
+    possiede: ["ART-APE", "ART-CNS"]
+    capo: "lan-reg-calendarista"
+    agenti: ["lan-reg-calendarista", "lan-reg-tracciatore"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-REGIA"
+    confine: >-
+      non apre la vendita: il via libera e' di una persona e non avra' mai un
+      default, perche' e' irreversibile verso l'esterno.
+    perche_uniti: >-
+      chi porta all'apertura e chi misura cosa e' successo devono essere lo stesso
+      organo, altrimenti il consuntivo lo scrive qualcuno che non sa cosa era
+      stato promesso il giorno dell'apertura.
+
+  - id: "LAN-MEM"
+    nome: "Memoria"
+    tipo: "operativo"
+    missione: "trasforma un lancio finito in vantaggio per il prossimo"
+    possiede: ["ART-DBR"]
+    capo: "lan-mem-distillatore"
+    agenti: ["lan-mem-distillatore"]
+    risponde_a: "LAN-DIR"
+    workflow: "WF-MEMORIA"
+    confine: >-
+      non giudica le persone e non riscrive la storia: confronta previsione e
+      realta', scrive le cause degli scarti, e la Regia controfirma. Se i due non
+      sono d'accordo, l'obiezione resta scritta accanto.
+
+# =============================================================================
+# 10. LA GERARCHIA — chi comanda chi, e chi puo' attivare chi
+# =============================================================================
+# Cinque livelli. La regola che li tiene insieme: UN LIVELLO PUO' ATTIVARE SOLO
+# IL LIVELLO SOTTO. Un agente che puo' attivare chiunque produce spesa non
+# prevista e nessuna catena di responsabilita': e' il modo in cui un lancio
+# consuma il tetto di quindici dollari senza che nessuno sappia chi ha chiamato
+# cosa.
+gerarchia:
+
+  livelli:
+    - id: "L0"
+      chi: "Max"
+      natura: "persona"
+      decide: >-
+        tutto cio' che e' irreversibile verso l'esterno (apertura della vendita,
+        invii reali, spese oltre il tetto), il prezzo, e l'abbandono di un lancio
+      puo_attivare: ["L1"]
+      non_delegabile: true
+
+    - id: "L1"
+      chi: "LAN-DIR"
+      natura: "governo"
+      decide: "l'ordine del lavoro, quale reparto attivare, quando fermarsi"
+      puo_attivare: ["L2", "LQ"]
+      non_delegabile: false
+
+    - id: "L2"
+      chi: "i capi dei nove reparti operativi"
+      natura: "capi reparto"
+      decide: "come il proprio reparto produce il proprio artefatto"
+      puo_attivare: ["L3"]
+      non_delegabile: false
+
+    - id: "L3"
+      chi: "gli agenti esecutori"
+      natura: "esecutori"
+      decide: "niente: eseguono una fase e restituiscono un risultato tipizzato"
+      puo_attivare: []
+      non_delegabile: false
+
+    - id: "LQ"
+      chi: "LAN-QLT"
+      natura: "giudizio, fuori dalla catena operativa"
+      decide: "se un artefatto passa o blocca"
+      puo_attivare: []
+      non_delegabile: false
+      nota: >-
+        sta FUORI dalla scala L1-L3 di proposito. Non risponde ai reparti che
+        giudica (INV-16) e non ha permesso di scrittura (INV-09). Gli si toglie
+        insieme il padrone e la penna: togliergliene una sola lascia intatto il
+        modo di aggirarlo.
+
+  regole:
+    - regola: "un livello attiva solo il livello sotto"
+      perche: "senza, si perdono insieme la spesa e la responsabilita'"
+    - regola: "nessun reparto attiva il giudice per farsi approvare"
+      perche: >-
+        il giudice lo invoca il comando `avanza`, mai un reparto. Se lo invocasse
+        il reparto, sceglierebbe quando farsi giudicare.
+    - regola: "un capo reparto non attiva agenti di un altro reparto"
+      perche: "INV-19: le responsabilita' evaporano quando il lavoro attraversa i confini in silenzio"
+    - regola: "solo L0 autorizza cio' che e' irreversibile verso l'esterno"
+      perche: "un'email spedita non si richiama, una vendita aperta non si chiude in silenzio"
