@@ -1,20 +1,12 @@
 """
 build_dossier28_pdf.py — Dossier 28 (Higgsfield + ElevenLabs) in PDF impaginato.
 
-Metodo: HTML + Chromium `page.pdf()` via Playwright — lo stesso motore di
-`company/02-info-business/ccm/brand/build_brand_guidelines.py`, e le stesse regole di
-stile che Max ha fissato dopo AP Sales (2026-08-30):
-  - fondo chiaro + grana leggera, mai massimalista
-  - UN heading per pagina
-  - il colore è accento, non superficie: niente card a gradiente pieno dietro al testo
-  - NIENTE linee: la separazione è spazio (le tabelle usano un velo di tinta, non tratti)
-  - unità atomiche: un blocco o entra intero nella pagina, o va alla successiva
-
-La grana è un PNG pre-renderizzato, MAI feTurbulence SVG: in stampa Chromium lo
-rasterizza e il file supera i 16 MB (lezione del piano editoriale YouTube).
+Contenuto di questo dossier sopra il motore riusabile `pdf_engine_empire.py` (standard-oro
+dichiarato da Max il 2026-09-05). Il motore porta CSS, grana, `page/head/tab/figure`; qui
+resta solo il contenuto, pagina per pagina.
 
 Sorgente dei contenuti: `PIANO-MAESTRO/28-DOSSIER-HIGGSFIELD-ELEVENLABS.md`.
-Il markdown resta l’originale; questo file ne fa l’edizione da leggere.
+Il markdown resta l'originale; questo file ne fa l'edizione da leggere.
 
 Uso:
     python build_dossier28_pdf.py
@@ -24,10 +16,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
-import base64
-import io
 import os
-import random
 import sys
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -38,299 +27,23 @@ if hasattr(sys.stdout, "reconfigure"):
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEST = os.path.dirname(HERE)  # PIANO-MAESTRO/
-OUT_HTML = os.path.join(DEST, "28-DOSSIER-HIGGSFIELD-ELEVENLABS.html")
-OUT_PDF = os.path.join(DEST, "28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf")
+sys.path.insert(0, HERE)
 
+from pdf_engine_empire import PDFDoc  # noqa: E402
 
-# --------------------------------------------------------------------------- grana
-def _grain_data_uri(size: int = 140, lo: int = 25, hi: int = 235, seed: int = 11) -> str:
-    from PIL import Image
-
-    random.seed(seed)
-    img = Image.new("L", (size, size))
-    px = img.load()
-    for y in range(size):
-        for x in range(size):
-            px[x, y] = random.randint(lo, hi)
-    buf = io.BytesIO()
-    img.save(buf, format="PNG", optimize=True)
-    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode("ascii")
-
-
-GRAIN = _grain_data_uri()
-
-
-# --------------------------------------------------------------------------- CSS
-CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
-
-:root {
-  --ink:#1c1c1c; --ink-2:#0a0a0a; --paper:#fafafa; --grey-bg:#e8e8e6;
-  --orange:#fb4604; --orange-dp:#c9370a;
-  --silver:#d9d4e1; --text-2:#55535a; --text-3:#8b8890;
-  --tint:rgba(28,28,28,0.035);
-}
-* { box-sizing:border-box; }
-html,body { margin:0; padding:0; }
-body {
-  font-family:'Onest',-apple-system,'Segoe UI',sans-serif;
-  color:var(--ink); background:var(--paper); font-size:11.5px;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3 { margin:0; font-weight:700; letter-spacing:-0.028em; line-height:1.06; }
-p { margin:0; line-height:1.68; }
-strong { font-weight:600; }
-/* Zero NON barrato: in un documento di cifre lo zero slashed di Plex sembra un refuso.
-   `zero 0` spegne quella feature, `tnum` tiene le colonne allineate. */
-.mono, .tab td.n, .tab th.n, .figure .n {
-  font-feature-settings:"zero" 0, "tnum" 1;
-  font-variant-numeric:tabular-nums;
-}
-.mono { font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace; }
-
-/* ------------------------------------------------------------------ impaginato */
-.page {
-  position:relative; width:210mm; height:297mm; padding:22mm 20mm 18mm 20mm;
-  overflow:hidden; page-break-after:always; background:var(--paper);
-}
-.page:last-child { page-break-after:avoid; }
-.page.dark { background:var(--ink); color:#f4f2f6; }
-.page.grey { background:var(--grey-bg); }
-
-.grain::before {
-  content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
-  opacity:0.13; background-image:url("__GRAIN__");
-  background-repeat:repeat; background-size:3mm 3mm;
-}
-.page.dark .grain::before { opacity:0.22; mix-blend-mode:overlay; }
-.layer { position:relative; z-index:1; height:100%; display:flex; flex-direction:column; }
-
-.masthead {
-  display:flex; justify-content:space-between; align-items:baseline;
-  font-size:8px; letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--text-3); margin-bottom:15mm;
-}
-.page.dark .masthead { color:rgba(244,242,246,0.42); }
-.masthead .mk { font-weight:700; color:var(--ink); letter-spacing:0.2em; }
-.page.dark .masthead .mk { color:rgba(244,242,246,0.8); }
-
-.foot {
-  position:absolute; left:20mm; right:20mm; bottom:11mm; z-index:1;
-  display:flex; justify-content:space-between;
-  font-size:7.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-3);
-}
-.page.dark .foot { color:rgba(244,242,246,0.32); }
-.foot .num { font-weight:600; color:var(--ink); }
-.page.dark .foot .num { color:rgba(244,242,246,0.7); }
-
-/* ------------------------------------------------------------------ copertina */
-.page.cover .masthead { position:absolute; left:20mm; right:20mm; top:22mm; margin:0; }
-/* Il titolo siede sul terzo basso, non al centro: sopra resta l’aria, sotto la firma. */
-.cover-mid {
-  flex:1; display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:14mm;
-}
-h1.big { font-size:64px; line-height:0.94; letter-spacing:-0.04em; }
-h1.big .soft { color:rgba(244,242,246,0.38); font-weight:300; }
-h1.big .acc { color:var(--orange); }
-.cover-lead {
-  font-size:12.5px; color:rgba(244,242,246,0.66); max-width:56ch;
-  margin-top:12mm; line-height:1.74;
-}
-/* flex e non grid: dentro un contenitore flex in colonna la griglia a 4 colonne
-   collassava a una sola. Con flex+basis le quattro voci restano affiancate. */
-.cover-meta { display:flex; gap:9mm; margin-top:18mm; width:100%; }
-.cover-meta > div { flex:1 1 0; min-width:0; }
-.cover-meta .k {
-  font-size:7.5px; letter-spacing:0.2em; text-transform:uppercase;
-  color:rgba(244,242,246,0.36); margin-bottom:2.5mm;
-}
-.cover-meta .v { font-size:11px; font-weight:600; color:#fff; }
-
-/* ------------------------------------------------------------------ pagina */
-.eyebrow {
-  font-size:8.5px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase;
-  color:var(--orange); margin-bottom:5mm;
-}
-.eyebrow .idx { color:var(--text-3); margin-right:8px; }
-.page.dark .eyebrow .idx { color:rgba(244,242,246,0.35); }
-h2.title { font-size:30px; max-width:22ch; }
-h2.title .soft { color:var(--text-3); font-weight:300; }
-.page.dark h2.title .soft { color:rgba(244,242,246,0.42); }
-.lead { font-size:12px; color:var(--text-2); max-width:64ch; margin-top:7mm; line-height:1.72; }
-.page.dark .lead { color:rgba(244,242,246,0.66); }
-
-/* La colonna distribuisce i blocchi su tutta l’altezza: i margini sono il minimo,
-   lo spazio che avanza si divide fra i blocchi invece di cadere tutto in fondo.
-   È la differenza fra una pagina impaginata e una pagina che finisce prima. */
-.body {
-  flex:1; margin-top:13mm; padding-bottom:5mm;
-  display:flex; flex-direction:column; justify-content:space-between;
-}
-.unit { break-inside:avoid; page-break-inside:avoid; }
-.stack > * + * { margin-top:10mm; }
-.stack-tight > * + * { margin-top:7mm; }
-.push { margin-top:auto; }
-
-.kicker {
-  font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase;
-  color:var(--ink); margin-bottom:3mm;
-}
-.page.dark .kicker { color:rgba(244,242,246,0.9); }
-.kicker .n { color:var(--orange); margin-right:7px; }
-.note { font-size:10.5px; color:var(--text-2); line-height:1.7; }
-.page.dark .note { color:rgba(244,242,246,0.62); }
-.note strong { color:var(--ink); }
-.page.dark .note strong { color:#fff; }
-
-.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:9mm; }
-.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:7mm; }
-
-ul.clean { list-style:none; margin:0; padding:0; }
-ul.clean li {
-  position:relative; padding-left:6mm; margin-bottom:4.4mm;
-  font-size:10.5px; line-height:1.62; color:var(--text-2); break-inside:avoid;
-}
-ul.clean li::before { content:"—"; position:absolute; left:0; color:var(--text-3); }
-ul.clean li strong { color:var(--ink); font-weight:600; }
-.page.dark ul.clean li { color:rgba(244,242,246,0.66); }
-.page.dark ul.clean li strong { color:#fff; }
-.page.dark ul.clean li::before { color:rgba(244,242,246,0.3); }
-
-/* ------------------------------------------------------------------ numero grosso */
-.figure { display:flex; flex-direction:column; }
-.figure .n {
-  font-size:40px; font-weight:800; letter-spacing:-0.04em; line-height:1;
-  font-variant-numeric:tabular-nums;
-}
-.figure .n.acc { color:var(--orange); }
-.figure .k {
-  font-size:7.5px; letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--text-3); margin-bottom:3mm;
-}
-.page.dark .figure .k { color:rgba(244,242,246,0.36); }
-.figure .u { font-size:10px; color:var(--text-2); margin-top:3mm; line-height:1.6; }
-.page.dark .figure .u { color:rgba(244,242,246,0.6); }
-
-/* ------------------------------------------------------------------ tabella
-   Nessuna linea: le righe si separano con un velo di tinta, che è superficie. */
-.tab { width:100%; border-collapse:collapse; }
-.tab th {
-  font-size:7.5px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase;
-  color:var(--text-3); text-align:left; padding:0 4mm 3.5mm 0; vertical-align:bottom;
-}
-.tab td {
-  font-size:10.5px; color:var(--text-2); padding:3.2mm 4mm 3.2mm 0;
-  vertical-align:top; line-height:1.5;
-}
-.tab td:last-child, .tab th:last-child { padding-right:0; }
-.tab tbody tr:nth-child(odd) td { background:var(--tint); }
-.tab tbody tr td:first-child { padding-left:3mm; }
-.tab tbody tr:nth-child(odd) td:first-child { border-radius:2px 0 0 2px; }
-.tab tbody tr:nth-child(odd) td:last-child { border-radius:0 2px 2px 0; }
-.tab td.k { color:var(--ink); font-weight:500; }
-.tab td.n, .tab th.n {
-  text-align:right; font-family:'IBM Plex Mono',ui-monospace,monospace;
-  font-variant-numeric:tabular-nums; font-size:10px; white-space:nowrap; color:var(--ink);
-}
-.tab tr.hi td { background:rgba(251,70,4,0.075) !important; }
-.tab tr.hi td.k, .tab tr.hi td.n { color:var(--orange-dp); font-weight:600; }
-.page.dark .tab td { color:rgba(244,242,246,0.66); }
-.page.dark .tab td.k, .page.dark .tab td.n { color:#fff; }
-.page.dark .tab tbody tr:nth-child(odd) td { background:rgba(255,255,255,0.045); }
-.page.dark .tab th { color:rgba(244,242,246,0.36); }
-.cap { font-size:9px; color:var(--text-3); line-height:1.6; margin-top:4mm; max-width:70ch; }
-.page.dark .cap { color:rgba(244,242,246,0.42); }
-.cap strong { color:var(--text-2); }
-.page.dark .cap strong { color:rgba(244,242,246,0.7); }
-
-/* ------------------------------------------------------------------ correzione */
-.fix { padding-left:6mm; position:relative; }
-.fix::before {
-  content:""; position:absolute; left:0; top:1mm; bottom:1mm; width:1.6mm;
-  background:var(--orange); border-radius:1px;
-}
-.fix .tag {
-  font-size:7.5px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--orange); margin-bottom:2.5mm;
-}
-.fix h3 { font-size:14px; margin-bottom:3mm; }
-.fix.mute::before { background:var(--silver); }
-.fix.mute .tag { color:var(--text-3); }
-
-/* ------------------------------------------------------------------ passo */
-.step { display:grid; grid-template-columns:14mm 1fr; gap:0; break-inside:avoid; }
-.step .idx {
-  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:8.5px; font-weight:600;
-  letter-spacing:0.12em; color:var(--orange); padding-top:1.5mm;
-}
-.step h3 { font-size:13px; margin-bottom:3mm; }
-
-.quote {
-  font-size:12.5px; line-height:1.66; color:var(--ink); max-width:60ch;
-  font-weight:500;
-}
-.page.dark .quote { color:#fff; }
-.quote .src { display:block; font-size:9px; color:var(--text-3); margin-top:4mm; font-weight:400;
-  letter-spacing:0.14em; text-transform:uppercase; }
-.page.dark .quote .src { color:rgba(244,242,246,0.4); }
-"""
-
-
-# --------------------------------------------------------------------------- pagine
-_pages: list[str] = []
-
-
-def page(html: str, cls: str = "", foot_l: str = "", foot_r: str = "") -> None:
-    n = len(_pages) + 1
-    left = foot_l or "Dossier 28 · Higgsfield ed ElevenLabs"
-    right = foot_r or f"<span class='num'>{n:02d}</span>"
-    mast = (
-        "<div class='masthead'><span class='mk'>DIGITAL EMPIRE</span>"
-        "<span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div>"
-    )
-    _pages.append(
-        f"<section class='page grain {cls}'><div class='layer'>{mast}{html}</div>"
-        f"<div class='foot'><span>{left}</span><span>{right}</span></div></section>"
-    )
-
-
-def head(idx: str, eyebrow: str, title: str, lead: str = "") -> str:
-    lead_html = f"<p class='lead'>{lead}</p>" if lead else ""
-    return (
-        f"<div class='eyebrow'><span class='idx'>{idx}</span>{eyebrow}</div>"
-        f"<h2 class='title'>{title}</h2>{lead_html}"
-    )
-
-
-def tab(cols: list[str], rows: list[list[str]], cap: str = "", hi: int | None = None) -> str:
-    th = "".join(
-        f"<th class='n'>{c[1:]}</th>" if c.startswith("~") else f"<th>{c}</th>" for c in cols
-    )
-    body = []
-    for i, r in enumerate(rows):
-        cls = " class='hi'" if hi is not None and i == hi else ""
-        tds = "".join(
-            f"<td class='n'>{c[1:]}</td>" if c.startswith("~")
-            else (f"<td class='k'>{c[1:]}</td>" if c.startswith("*") else f"<td>{c}</td>")
-            for c in r
-        )
-        body.append(f"<tr{cls}>{tds}</tr>")
-    cap_html = f"<p class='cap'>{cap}</p>" if cap else ""
-    return (
-        f"<table class='tab'><thead><tr>{th}</tr></thead>"
-        f"<tbody>{''.join(body)}</tbody></table>{cap_html}"
-    )
-
-
-def figure(k: str, n: str, u: str, acc: bool = False) -> str:
-    return (
-        f"<div class='figure'><div class='k'>{k}</div>"
-        f"<div class='n{' acc' if acc else ''}'>{n}</div><div class='u'>{u}</div></div>"
-    )
-
+doc = PDFDoc(
+    title="Dossier 28 — Higgsfield ed ElevenLabs",
+    doc_label="Dossier 28 · revisione 5 · 5 settembre 2026",
+    footer_left="Dossier 28 · Higgsfield ed ElevenLabs",
+    out_html=os.path.join(DEST, "28-DOSSIER-HIGGSFIELD-ELEVENLABS.html"),
+    out_pdf=os.path.join(DEST, "28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf"),
+)
+head = doc.head
+tab = doc.tab
+figure = doc.figure
 
 # ============================================================ 01 · copertina
-page(
+doc.page(
     """
 <div class='cover-mid'>
   <h1 class='big'>Higgsfield<br><span class='soft'>ed</span> <span class='acc'>ElevenLabs</span>.</h1>
@@ -338,7 +51,7 @@ page(
   d’uso e la normativa italiana. Il conto è fatto sul volume di produzione dichiarato, non su
   un video singolo. Tre conclusioni delle stesure precedenti erano sbagliate e qui sono
   corrette, ognuna segnata dov’è.</p>
-  <div class='cover-metà>
+  <div class='cover-meta'>
     <div><div class='k'>Volume</div><div class='v'>172 video · 904 min</div></div>
     <div><div class='k'>Mese di prova</div><div class='v'>circa €139</div></div>
     <div><div class='k'>A regime</div><div class='v'>€2.113 al mese</div></div>
@@ -352,7 +65,7 @@ page(
 )
 
 # ============================================================ 02 · la prima mossa
-page(
+doc.page(
     head(
         "A",
         "La prima mossa",
@@ -386,7 +99,7 @@ page(
 )
 
 # ============================================================ 03 · le nove prove
-page(
+doc.page(
     head(
         "A",
         "Il mese di prova",
@@ -428,7 +141,7 @@ page(
 )
 
 # ============================================================ 04 · il volume
-page(
+doc.page(
     head(
         "B",
         "Il conto a regime",
@@ -466,7 +179,7 @@ page(
 )
 
 # ============================================================ 05 · il listino
-page(
+doc.page(
     head(
         "B",
         "Il listino",
@@ -509,7 +222,7 @@ page(
 )
 
 # ============================================================ 06 · le correzioni
-page(
+doc.page(
     head(
         "C",
         "Onestà",
@@ -551,7 +264,7 @@ page(
 )
 
 # ============================================================ 07 · le leve
-page(
+doc.page(
     head(
         "D",
         "Architettura",
@@ -593,7 +306,7 @@ page(
 )
 
 # ============================================================ 08 · le due macchine
-page(
+doc.page(
     head(
         "E",
         "La fabbrica",
@@ -626,7 +339,7 @@ page(
 )
 
 # ============================================================ 09 · il muro legale
-page(
+doc.page(
     head(
         "F",
         "Vincolo",
@@ -666,7 +379,7 @@ page(
 )
 
 # ============================================================ 10 · il piano
-page(
+doc.page(
     head(
         "G",
         "Esecuzione",
@@ -723,7 +436,7 @@ page(
 )
 
 # ============================================================ 11 · chiusura
-page(
+doc.page(
     head(
         "H",
         "Metodo e limiti",
@@ -763,50 +476,11 @@ page(
 )
 
 
-# --------------------------------------------------------------------------- render
-def render_html() -> str:
-    css = CSS.replace("__GRAIN__", GRAIN)
-    return (
-        "<!doctype html><html lang='it'><head><meta charset='utf-8'>"
-        "<title>Dossier 28 — Higgsfield ed ElevenLabs</title>"
-        "<style>@page{size:A4;margin:0;}</style>"
-        f"<style>{css}</style></head><body>{''.join(_pages)}</body></html>"
-    )
-
-
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--html-only", action="store_true")
     args = ap.parse_args()
-
-    html = render_html()
-    with io.open(OUT_HTML, "w", encoding="utf-8", newline="\n") as fh:
-        fh.write(html)
-    print(f"[ok] HTML   {OUT_HTML}  ({len(html)/1024:.0f} KB, {len(_pages)} pagine)")
-
-    if args.html_only:
-        return 0
-
-    from playwright.sync_api import sync_playwright
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        pg = browser.new_page()
-        pg.goto("file:///" + OUT_HTML.replace("\\", "/"), wait_until="networkidle")
-        pg.wait_for_timeout(2500)  # i font arrivano da Google: senza attesa stampa in fallback
-        pg.pdf(
-            path=OUT_PDF,
-            format="A4",
-            print_background=True,
-            margin={"top": "0", "right": "0", "bottom": "0", "left": "0"},
-            prefer_css_page_size=True,
-        )
-        browser.close()
-
-    size_mb = os.path.getsize(OUT_PDF) / (1024 * 1024)
-    print(f"[ok] PDF    {OUT_PDF}  ({size_mb:.2f} MB)")
-    if size_mb > 8:
-        print("[!]  oltre 8 MB: controllare che la grana non sia finita in SVG invece che PNG")
+    doc.build(html_only=args.html_only)
     return 0
 
 

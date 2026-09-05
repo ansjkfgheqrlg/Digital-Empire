@@ -17,15 +17,12 @@ body {
 h1,h2,h3 { margin:0; font-weight:700; letter-spacing:-0.028em; line-height:1.06; }
 p { margin:0; line-height:1.68; }
 strong { font-weight:600; }
-/* Zero NON barrato: in un documento di cifre lo zero slashed di Plex sembra un refuso.
-   `zero 0` spegne quella feature, `tnum` tiene le colonne allineate. */
 .mono, .tab td.n, .tab th.n, .figure .n {
   font-feature-settings:"zero" 0, "tnum" 1;
   font-variant-numeric:tabular-nums;
 }
 .mono { font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace; }
 
-/* ------------------------------------------------------------------ impaginato */
 .page {
   position:relative; width:210mm; height:297mm; padding:22mm 20mm 18mm 20mm;
   overflow:hidden; page-break-after:always; background:var(--paper);
@@ -60,9 +57,7 @@ strong { font-weight:600; }
 .foot .num { font-weight:600; color:var(--ink); }
 .page.dark .foot .num { color:rgba(244,242,246,0.7); }
 
-/* ------------------------------------------------------------------ copertina */
 .page.cover .masthead { position:absolute; left:20mm; right:20mm; top:22mm; margin:0; }
-/* Il titolo siede sul terzo basso, non al centro: sopra resta l’aria, sotto la firma. */
 .cover-mid {
   flex:1; display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:14mm;
 }
@@ -73,8 +68,6 @@ h1.big .acc { color:var(--orange); }
   font-size:12.5px; color:rgba(244,242,246,0.66); max-width:56ch;
   margin-top:12mm; line-height:1.74;
 }
-/* flex e non grid: dentro un contenitore flex in colonna la griglia a 4 colonne
-   collassava a una sola. Con flex+basis le quattro voci restano affiancate. */
 .cover-meta { display:flex; gap:9mm; margin-top:18mm; width:100%; }
 .cover-meta > div { flex:1 1 0; min-width:0; }
 .cover-meta .k {
@@ -83,7 +76,6 @@ h1.big .acc { color:var(--orange); }
 }
 .cover-meta .v { font-size:11px; font-weight:600; color:#fff; }
 
-/* ------------------------------------------------------------------ pagina */
 .eyebrow {
   font-size:8.5px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase;
   color:var(--orange); margin-bottom:5mm;
@@ -96,9 +88,6 @@ h2.title .soft { color:var(--text-3); font-weight:300; }
 .lead { font-size:12px; color:var(--text-2); max-width:64ch; margin-top:7mm; line-height:1.72; }
 .page.dark .lead { color:rgba(244,242,246,0.66); }
 
-/* La colonna distribuisce i blocchi su tutta l’altezza: i margini sono il minimo,
-   lo spazio che avanza si divide fra i blocchi invece di cadere tutto in fondo.
-   È la differenza fra una pagina impaginata e una pagina che finisce prima. */
 .body {
   flex:1; margin-top:13mm; padding-bottom:5mm;
   display:flex; flex-direction:column; justify-content:space-between;
@@ -133,7 +122,6 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
 .page.dark ul.clean li strong { color:#fff; }
 .page.dark ul.clean li::before { color:rgba(244,242,246,0.3); }
 
-/* ------------------------------------------------------------------ numero grosso */
 .figure { display:flex; flex-direction:column; }
 .figure .n {
   font-size:40px; font-weight:800; letter-spacing:-0.04em; line-height:1;
@@ -148,8 +136,6 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
 .figure .u { font-size:10px; color:var(--text-2); margin-top:3mm; line-height:1.6; }
 .page.dark .figure .u { color:rgba(244,242,246,0.6); }
 
-/* ------------------------------------------------------------------ tabella
-   Nessuna linea: le righe si separano con un velo di tinta, che è superficie. */
 .tab { width:100%; border-collapse:collapse; }
 .tab th {
   font-size:7.5px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase;
@@ -180,7 +166,6 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
 .cap strong { color:var(--text-2); }
 .page.dark .cap strong { color:rgba(244,242,246,0.7); }
 
-/* ------------------------------------------------------------------ correzione */
 .fix { padding-left:6mm; position:relative; }
 .fix::before {
   content:""; position:absolute; left:0; top:1mm; bottom:1mm; width:1.6mm;
@@ -194,7 +179,6 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
 .fix.mute::before { background:var(--silver); }
 .fix.mute .tag { color:var(--text-3); }
 
-/* ------------------------------------------------------------------ passo */
 .step { display:grid; grid-template-columns:14mm 1fr; gap:0; break-inside:avoid; }
 .step .idx {
   font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:8.5px; font-weight:600;
@@ -217,7 +201,7 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
   d’uso e la normativa italiana. Il conto è fatto sul volume di produzione dichiarato, non su
   un video singolo. Tre conclusioni delle stesure precedenti erano sbagliate e qui sono
   corrette, ognuna segnata dov’è.</p>
-  <div class='cover-metà>
+  <div class='cover-meta'>
     <div><div class='k'>Volume</div><div class='v'>172 video · 904 min</div></div>
     <div><div class='k'>Mese di prova</div><div class='v'>circa €139</div></div>
     <div><div class='k'>A regime</div><div class='v'>€2.113 al mese</div></div>

@@ -1126,6 +1126,44 @@ Casi applicati: `28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf` → `Report/`;
 `piano-editoriale-70-legamidiamore-30gg.pdf` → `Piani/YouTube Automation Factory/`
 (2026-09-05).
 
+### 6.19 Il PDF è una tua specializzazione — lo standard-oro è già deciso *(direttiva Max, 2026-09-05)*
+
+**Ordine di Max, testuale:** *"il report [...] è veramente fatto bene [...] voglio che questo
+report [...] lo metti come esempio perfetto [...] d'ora in poi quando ti chiedo di fare un PDF
+[...] non voglio starti a dire come voglio lo stile, i colori, la qualità — lo standard è
+questo."* Da oggi produrre PDF **non è più un compito da definire ogni volta: è una tua
+competenza permanente**, con uno standard già fissato che non si rinegozia a ogni richiesta.
+
+**Lo standard-oro è `PIANO-MAESTRO/28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf`** (revisione 5,
+doppione anche in `documentazione Empire/Report/`). Prima di costruire un PDF nuovo, se hai
+un dubbio di stile, **lo riguardi** — non chiedi a Max come vuole i colori o la qualità.
+
+**Il motore vive in codice, non solo a parole**, per evitare che lo standard si allontani a
+ogni PDF nuovo (lo stesso rischio della deriva di §6.14-bis, applicato allo stile invece che
+alla dottrina): `PIANO-MAESTRO/scripts/pdf_engine_empire.py`. Contiene CSS, grana, e gli
+helper `page/head/tab/figure` già pronti — un PDF nuovo importa `PDFDoc`, scrive solo il
+contenuto pagina per pagina, il resto è già deciso. `build_dossier28_pdf.py` ne è la riprova:
+riscritto sopra il motore, stesso output (11 pagine, 0,52 MB), invariato.
+
+**Le regole che lo standard porta con sé, sempre, senza che Max le ripeta:**
+
+- fondo chiaro + grana leggera (mai massimalista), copertina scura, pagine interne chiare
+- **un heading forte per pagina**, non più concetti affiancati
+- il colore (`#fb4604`) è **accento sotto il 10% dell'area**, mai sfondo pieno/gradiente
+- **niente linee/bordi** da nessuna parte: la separazione è spazio o un velo di tinta
+  (`rgba(0,0,0,0.035)` sulle righe dispari delle tabelle)
+- **unità atomiche** (`.unit`): un blocco o entra intero nella pagina o trasla alla successiva
+- grana **PNG pre-renderizzato**, mai `feTurbulence` SVG — Chromium lo rasterizza e il file
+  supera i 16 MB
+- tipografia Onest (testo) + IBM Plex Mono (numeri, tabular-nums, zero non barrato)
+- verifica per screenshot di ogni pagina prima di consegnare, mai a fiducia (§3, la Legge
+  Suprema vale anche qui: un PDF "dichiarato riuscito" e non guardato è la stessa finzione)
+
+Questa legge **consolida** — non contraddice — [[feedback_pdf_design_minimal_apsales]]
+(riferimento AP Sales, 2026-08-29) e [[project_ccm_brand_guidelines]] (Brand Guidelines CCM,
+stesso motore HTML+Chromium): dossier 28 è la versione più matura della stessa linea, e da
+oggi è quella che si copia, non le precedenti.
+
 ---
 
 ## 6-bis. LE TUE FORZE — tre gradi, e il criterio che li separa *(direttiva Max, 2026-09-03)*
