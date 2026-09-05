@@ -24,6 +24,51 @@
 > vanno copiati in una spec di produzione. Le pronunce si correggono nel testo dello script, con
 > `references/lessico-pronuncia.md`.
 
+---
+
+## ⚠️ DUE COSE CHE STANNO NELL'ACCOUNT, NON NEL CODICE (A4-L19 · 2026-09-06)
+
+### 1. L'ID del canale YouTube va registrato nel profilo Fliki
+
+Fliki espone in **`Profile`** un campo **`YouTube channel ID(s)`** (due caselle), il cui scopo
+dichiarato è **prevenire i reclami di copyright** sui contenuti generati con la piattaforma: si
+registra l'ID del canale su cui quei video verranno pubblicati, e in caso di reclamo si dispone
+della **licenza Fliki** da opporre.
+
+**Come si trova l'ID del canale:** YouTube → il proprio canale → in basso a sinistra
+**Impostazioni** → **Visualizza impostazioni avanzate** → si copia **l'ID del canale**. Poi si
+incolla nel campo di Fliki e si preme **Update**.
+
+**Cosa copre e cosa non copre — leggere prima di stare tranquilli:**
+
+| ✅ Copre | ❌ Non copre |
+|---|---|
+| le **clip stock** che Fliki ci fornisce | il materiale che **carichiamo noi** |
+| le **musiche** della libreria Fliki | qualunque contenuto di **terzi** |
+
+Non è un interruttore che spegne il problema del diritto d'autore: è la registrazione della nostra
+licenza presso il fornitore delle clip. *(Il corso lo presenta come «da questo momento non avrò
+più problemi di copyright», e aggiunge «nel 99,9% dei casi» — che è **una stima detta a voce**,
+non un dato.)*
+
+**Stato nostro:** ⏳ **DA FARE.** Verificato il 2026-09-06: in tutta la fabbrica questo campo non
+era mai stato nominato. Va compilato **a mano** per **`dosementale`** e **`legamidiamore`**.
+**Assegnato al gate di categoria A4.** Finché non è fatto, questa scheda descrive una cosa giusta
+e non eseguita — ed è scritto qui perché non venga scambiata per fatta.
+
+### 2. I minuti sono un plafond mensile, e il tetto è negoziabile
+
+L'abbonamento dà un monte minuti **al mese**, che si consuma in base a **cosa** si genera (testo,
+immagini, musica: dentro Fliki c'è un tutorial sui crediti, che cambia spesso).
+
+**Il tetto non è rigido:** si può scrivere all'assistenza (live chat o email) e **chiedere un
+piano su misura** — più minuti, o un abbonamento dedicato. Nel corso: «ad alcuni clienti hanno
+risposto in maniera positiva, ad altri no».
+
+**Perché sta scritto qui:** il monte minuti è **il vincolo fisico della capacità produttiva** di
+questa fabbrica. Se un giorno il collo di bottiglia diventa «non possiamo generare abbastanza
+video», la prima mossa non è tagliare la qualità: è **chiedere**.
+
 ## Setup (registrazione)
 1. fliki.ai → "Get Started".
 2. Registrati con **email valida** (arriva mail di conferma) o Google/Facebook.
