@@ -1,13 +1,18 @@
 {
   "lesson_id": "47e15a85-5075-4f4e-8cba-dcc07a86b835",
   "corso": "aitubepro",
-  "titolo": "",
+  "titolo": "Editing Video Automatico con AI All in One",
   "durata_s": 1834,
   "scaricato": true,
   "qualita": 360,
   "quando": "2026-09-04T22:11:10",
-  "passo": "2-trascritto",
+  "passo": "completata",
   "parole": 4190,
   "parole_al_minuto": 137,
-  "modello": "base"
+  "modello": "base",
+  "frame_estratti": 367,
+  "frame_unici": 112,
+  "frame_guardati": 19,
+  "regole_estratte": 5,
+  "chiusa_il": "2026-09-05"
 }

@@ -3,6 +3,24 @@
 > Conoscenza on-demand per `video-producer` e `qa-audio-video`.
 > Obiettivo: Ottimizzare l'espressività vocale dei render AI, correggere le pronunce errate ed evitare un feeling robotico.
 
+> ## ⚠️ COSA DI QUESTA SCHEDA È RAGGIUNGIBILE **VIA API** — E COSA NO (A4-L04-03 · 2026-09-05)
+>
+> Verificato sul payload reale di `fliki_client.py` il 2026-09-05:
+>
+> | Leva | Dov'è in Fliki | La nostra catena |
+> |---|---|---|
+> | **Pause** (`Add pause`, 0,2 s fra parole · 1-3 s a fine clip) | menu contestuale sul testo selezionato | ❌ **non via API** — si ottiene solo con la punteggiatura nel testo |
+> | **Velocità / intonazione** (`Tune → Rate`) | menu contestuale sul testo selezionato | ❌ **non via API** — nessun campo nel payload |
+> | **Mappa delle pronunce** | `More → Pronunciation map` | ❌ **non via API** — si corregge **riscrivendo la parola nello script** |
+> | **Musica di sottofondo e volume** | `More → Background music` | ❌ **non via API** — nessun campo `backgroundMusic`/`musicId`/`audioTrack` nel payload |
+> | **Sottotitoli** (preset, karaoke) | Settings | ✅ `subtitlePresetId` + `highlightSubtitles` |
+> | **Movimento delle scene** | Ken Burns / zoom | ✅ meglio: `aiVideoModel` + `aiVideoClipPercentage=100` |
+>
+> **Conseguenza operativa:** le tre voci della checklist §3 su velocità, pause e volume musica
+> **non sono eseguibili dalla nostra catena**. Restano qui come conoscenza dello strumento, non
+> come ordini. L'unica leva che ci resta davvero sul parlato è **il testo che mandiamo**: grafia
+> delle parole (`references/lessico-pronuncia.md`) e punteggiatura.
+
 ---
 
 ## 1. Gestione delle Pause e dell'Intonazione (SSML)

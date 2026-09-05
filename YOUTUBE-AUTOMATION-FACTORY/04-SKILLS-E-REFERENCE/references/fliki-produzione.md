@@ -2,6 +2,28 @@
 
 > Conoscenza on-demand per `video-producer`. Fonte: MKD §3. Sito: fliki.ai.
 
+> ## ⚠️ LEGGI QUESTO PRIMA DEL RESTO (A4-L04-03 · 2026-09-05)
+>
+> **Tutto ciò che segue descrive Fliki usato A MANO nell'interfaccia. La nostra fabbrica non usa
+> l'interfaccia.** Genera **via API** (`02-AUTOMAZIONI-E-SCRIPTS/fliki_client.py`), con
+> `shouldExport: True`: nessun browser aperto, nessuna anteprima, nessun clic.
+>
+> **Cosa imposta davvero la nostra catena (via API):**
+> `aspectRatio` (oggi `16:9` fisso) · `resolution: 1080p` · `voiceId` · `visuals` (ai/stock) ·
+> `sceneBreakdown: lineBreak` · `subtitlePresetId` + `highlightSubtitles` · `aiVideoModel` +
+> `aiVideoClipPercentage` + `imageAnimationPreset` · `duration` (1-15 minuti, campo inerte sulla
+> durata finale) · `fileName`.
+>
+> **Cosa esiste in Fliki ma la nostra catena NON tocca** (verificato sul payload il 2026-09-05):
+> musica di sottofondo e suo volume · transizioni fra scene · durata della singola scena ·
+> pause (`Add pause`) · velocità e intonazione (`Tune → Rate`) · mappa delle pronunce
+> (`More → Pronunciation map`) · anteprima prima dell'export · caricamento di clip proprie.
+>
+> **Regola d'uso di questa scheda:** i passaggi qui sotto valgono per capire *lo strumento* e per
+> un eventuale intervento manuale straordinario. **Non sono istruzioni per la catena**, e non
+> vanno copiati in una spec di produzione. Le pronunce si correggono nel testo dello script, con
+> `references/lessico-pronuncia.md`.
+
 ## Setup (registrazione)
 1. fliki.ai → "Get Started".
 2. Registrati con **email valida** (arriva mail di conferma) o Google/Facebook.

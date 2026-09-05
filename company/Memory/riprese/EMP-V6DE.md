@@ -35,7 +35,12 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 - **Lezione A4/L01 chiusa end-to-end** (CP-20260904-008): 4 regole, 3 applicate (binario A),
   1 in attesa del gate A4.
 - **Lezioni A4/L02 e A4/L03 chiuse** (CP-20260905-009): 8 regole, 6 applicate.
-  **Registro: 15 regole, tutte a norma, 13 applicate, 2 in attesa del gate A4 (binario B).**
+- **Lezione A4/L04 chiusa** (CP-20260905-020): 5 regole, 4 applicate. È la lezione su **Fliki**,
+  lo strumento che usiamo in produzione: ha scoperto che `video-producer.md` ordinava un
+  montaggio a mano abbandonato da mesi («lo fa l'utente in Fliki»), che 4 dei suoi 6 ordini sono
+  ineseguibili via API, e che `qa-audio-video` — **gate bloccante** — bocciava i video sul volume
+  di una musica che nel payload non esiste.
+  **Registro: 20 regole, tutte a norma, 17 applicate, 3 in attesa del gate A4 (binario B).**
 - **Ingestione riparata**: portava a casa il video sbagliato (L02 arrivata due volte con un altro
   video). Ora la durata si chiede al lettore vero, i flussi si misurano con ffprobe PRIMA di
   scaricare, e un file fuori tolleranza diventa `1-sospetto` e non si trascrive.
@@ -52,8 +57,13 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **163 lezioni su 167 da studiare** (2,4% fatto). Fatte `A4/L00`, `L01`, `L02`, `L03`;
-  A4 al 19,0% (4/21).
+- **162 lezioni su 167 da studiare** (3,0% fatto). Fatte `A4/L00`, `L01`, `L02`, `L03`, `L04`;
+  A4 al 23,8% (5/21).
+- **Verifica aperta assegnata al gate A4** (da `A4-L04-04`): ascoltare un MP4 già prodotto in
+  `06-DASHBOARD-E-METRICHE/video-generati/` e stabilire **se i nostri video contengono musica**.
+  Finché non si sa, il criterio «Bilanciamento Volumi» di `qa-audio-video` resta sospeso.
+- **La fabbrica oggi non può produrre Shorts**: `aspectRatio` è la costante `"16:9"` a
+  `fliki_client.py:258` (regola `A4-L04-02`, binario B).
 - `corso_prepara.py` **eseguito il 2026-09-04**: 6 lezioni di A4 già pronte a nastro.
 - **DURATE.md non esiste**: il censimento delle durate previsto dal piano non è stato fatto
   (la durata si legge lezione per lezione durante lo scaricamento, e finisce in `stato.json`).
@@ -61,9 +71,10 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-**A4/L04 «Editing Video Automatico con AI All in One»** (`47e15a85`, 30:34, già trascritta,
-4.190 parole): è la lezione dello strumento all-in-one, tocca il terreno di Fliki e del
-`video-producer`.
+**A4/L05** — annunciata a 30:19 della L04 come suo seguito diretto: «se volessi creare un video
+**da zero**, cosa devo fare? Ve lo spiego nel prossimo tutorial». Le lezioni già scaricate e
+trascritte si vedono in `runs/corso-aitubepro/<id>/stato.json` al passo `2-trascritto`
+(`completata` = già chiusa).
 
 ```bash
 cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"

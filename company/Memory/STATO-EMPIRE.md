@@ -64,6 +64,22 @@ stesso turno.
 
 Dettagli: [CP-20260905-017](checkpoints/CP-20260905-017.md) · ripresa [EMP-URQ7](riprese/EMP-URQ7.md).
 
+## 🟠 2026-09-05 — A4/L04 chiusa: la fabbrica descriveva un montaggio che nessuno fa più — CP-20260905-020
+
+**Codice di ripresa: EMP-V6DE (APERTA).** Chiusa `A4/L04` «Editing Video Automatico con AI All in
+One» (30:34, 4.190 parole, 19 frame guardati su 367): è la prima lezione del corso che insegna
+**Fliki, lo strumento che usiamo in produzione**. Ha fatto da specchio e ha trovato uno
+scollamento sistemico: `video-producer.md` diceva «il video lo monta l'utente in Fliki» — falso
+da mesi, la catena genera via API senza browser — e **4 dei suoi 6 ordini erano ineseguibili**
+(musica, transizioni, anteprima, «non chiudere il browser»); `qa-audio-video`, che è un **gate
+bloccante**, bocciava i video sul volume di una musica che nel nostro payload non esiste.
+Binario A applicato su 4 file (agente riscritto sui campi reali del payload, criterio musica
+dichiarato sospeso con verifica assegnata al gate A4, due schede Fliki separate fra «via API» e
+«a mano»). 5 regole nuove → **registro a 20, tutte a norma, 17 applicate, 3 al gate**. Test
+fabbrica **11/11 verdi**. Limite emerso e prima d'ora mai scritto: **la fabbrica non può produrre
+Shorts** (`aspectRatio` costante a `fliki_client.py:258`, regola `A4-L04-02` binario B).
+Studio: **5/167 lezioni (3,0%)**, A4 al 23,8%. Prossimo: A4/L05.
+
 ## 📕 2026-09-05 — Lo studio AI TUBE PRO si chiude con un'opera pubblica — ADR-022
 
 **Codice di ripresa: EMP-V6DE (APERTO).** Ordine di Max: la missione di studio delle 167 lezioni
