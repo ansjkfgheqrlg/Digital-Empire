@@ -1264,3 +1264,163 @@ A queste si aggiungono i 3 OPERATIVO storici di `WORKFLOW-ESTATE/03-AGENTI-E-RUO
 - famiglia con capostipite in casa → si copia la forma del capostipite (25 famiglie);
 - famiglia senza capostipite → si copia dall'Ispettorato se e' un organo di controllo,
   da A8-Closing se e' un reparto operativo, da A7-Account se e' un gate (19 famiglie).
+
+---
+---
+
+# SINTESI FINALE
+
+## A. VERDETTO SUI DUE CENSIMENTI — tre righe
+
+1. **Ha ragione `forge scan`: 439 e' il numero giusto**, confermato riga per riga
+   (`empire/forge.py:150-158` + `empire/loader.py:152-175`), e cosi' tutti gli altri numeri
+   di EMPERATOR (61/324/54, C4 mancante in 314, 129 · 35 · 164 · 6 · 172 · 2).
+2. **`registry census` mente per un difetto di indentazione**: in `empire/registry/census.py`
+   il corpo del ciclo `for fname in filenames:` finisce a riga 189 e tutto il resto (191-240,
+   `artifacts.append` compreso) sta nel ciclo esterno — cosi' viene salvato **un solo file per
+   cartella**. Prova: artefatti totali = directory visitate = **21682, identici**.
+3. **Non contano comunque la stessa cosa**: forge conta le **schede-agente dei cinque percorsi
+   di `company/`**; registry census conta **tutti i file del monorepo classificati per tipo**, e
+   per costruzione non chiamerebbe mai "agent" ne' gli agenti di `.claude/` (riga 142 → `vendored`)
+   ne' quelli del Board (riga 147 → `department`). Fino alla riparazione, `registry census` va
+   escluso da ogni conteggio di agenti.
+
+---
+
+## B. LA SPECIFICA C4-USCITA, PRONTA DA APPLICARE
+
+> ### REGOLA C4 — CONTRATTO DI USCITA
+>
+> **Ogni file di agente deve contenere una riga autonoma che comincia con `## Output`.**
+> Il titolo deve essere di livello 2, e la parola `Output` deve seguire immediatamente i
+> cancelletti e gli spazi: `## Output`. Sotto quel titolo va dichiarato, per ogni artefatto
+> prodotto, **che cosa e'** e **dove finisce** (percorso su disco, chiave AgentDB, o agente
+> destinatario).
+>
+> **Forma obbligatoria — tabella a tre colonne:**
+>
+> ```markdown
+> ## Output
+>
+> | Artefatto | Destinazione | Sempre? |
+> |---|---|---|
+> | <cosa esce, in una riga> | <percorso, namespace o agente> | sì / condizione |
+> ```
+>
+> **Forma alternativa ammessa** — schema JSON, **a condizione che** la destinazione sia
+> dichiarata dentro lo schema (campo `namespace` / `destinazione`) o in una tabella
+> `## Chiavi AgentDB` nello stesso file.
+>
+> **VIETATO, perche' la misura non lo vede** (errori gia' commessi rispettivamente 274 e 228
+> volte nel repository):
+> - `## Input / Output` — un titolo unico per due contratti: soddisfa C3 e **fallisce C4**.
+>   Va **spezzato** in `## Input` e `## Output`.
+> - `**Output prodotto:**` — il grassetto con una parola in mezzo non e' riconosciuto.
+>   Il testo puo' restare, ma **sopra ci deve stare il titolo `## Output`**.
+> - una riga di tabella `| Output | … |`, il verbo `produce`, `consegna`, `scrive in`:
+>   nessuna di queste forme e' riconosciuta.
+>
+> **Collaudo, uno per uno:** `python -m empire forge agente <id>` deve stampare
+> `OK C4-uscita` con `prova: ## Output`. Una `prova:` diversa da `## Output` (per esempio
+> `**Output**` o `Output:`) segnala un passaggio accidentale, non un contratto.
+
+**Fondamento nel codice** (`empire/forge.py:62-64`), da citare nel prompt delle riscritture:
+
+```python
+"C4-uscita": ("dice cosa produce e dove", [
+    r"##\s*Output", r"\*\*Output\*\*", r"##\s*Uscit", r"\bOUTPUT\s*[:=]",
+    r"##\s*Artefatt"]),
+```
+
+---
+
+## C. LE ONDATE DI LAVORO PROPOSTE
+
+Ogni ondata e' definita da **cosa manca**, non da chi e' l'agente: e' cosi' che il prompt
+resta uguale per tutti i file dell'ondata e il lavoro si puo' parallelizzare.
+Dopo ogni ondata si rilancia `python -m empire forge scan` e il progresso si vede.
+
+### ONDATA 0 — BONIFICA DEL PERIMETRO · **non tocca nessun agente** · prima di tutto
+
+Senza questa, le ondate 1-4 lavorano su un elenco sporco.
+
+| intervento | quanti file | effetto |
+|---|---|---|
+| togliere dal perimetro gli 8 file di corredo di `DIGITAL-EMPIRE/04-AGENTS/` (`memory`, `playbook`, `system-prompt`, `tools`) — basta aggiungerli a `_CORREDO`, `empire/forge.py:146-147` | 8 | −8 falsi DOCUMENTALI |
+| togliere `WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/STATO-AGENTI.md`: **e' il referto che forge stesso scrive** (`empire/forge.py:220-223`) | 1 | −1 falso DOCUMENTALE |
+| **decidere una copia** per i 19 doppioni divergenti di 04-MARKETING (§3.4 Bomba 1) | 19 | −19 doppi conteggi |
+| **includere nel perimetro** i 26 agenti mai misurati di `company/Genesi-Core/` (18) e `company/MAXIMILIAN/` (8) — fra cui 10 `frg-*` che sono **migliori delle copie oggi contate** | +26 | perimetro vero |
+| decidere se `AGENTE-MAX` / `AGENTE-GAEL` / `AGENTE-CLAUDE` sono agenti o schede di persone | 3 | evita 3 riscritture inutili |
+
+**Perimetro dopo la bonifica: ~436 file, tutti agenti veri.**
+
+### ONDATA 1 — **174 agenti** · manca SOLO C4 · *spezzare un titolo*
+
+Il lavoro per agente e' una sostituzione:
+
+```
+-  ## Input / Output
++  ## Input
+   …blocco input…
++  ## Output
+```
+
+Nessun contenuto nuovo da inventare: il contratto d'uscita **e' gia' scritto** sotto
+`**Output prodotto:**`. Va solo messo sotto un titolo che la macchina veda, e completato con
+la destinazione dove manca.
+
+**Effetto misurato in anticipo: 61 + 174 = 235 OPERATIVO, dal 13,9% al 53,5%.**
+E' l'ondata con il rapporto risultato/fatica piu' alto che esista in questo lavoro:
+**da sola vale piu' delle altre quattro messe insieme.**
+
+### ONDATA 2 — **66 agenti** · mancano C4 e C5 · *titolo + gate*
+
+Stesso intervento dell'ondata 1, piu' una sezione `## Gate` (o `## Criteri di successo`)
+copiata nella forma dal capostipite della famiglia (§5.2, colonna "capostipite") o, se la
+famiglia non ne ha, da `isp-conductor` / `ag-a7-qa` (§4).
+
+**Effetto: 235 + 66 = 301 OPERATIVO, 68,6%.**
+
+### ONDATA 3 — **74 agenti** · manca C4 + qualcos'altro (C1, C3, C6 in varie combinazioni)
+
+Le combinazioni piu' frequenti: C3+C4 (14), C1+C4+C5+C6 (10), C4+C6 (9), C1+C4+C6 (9),
+C4+C5+C6 (7), C3+C4+C5 (5). Qui la scheda va davvero rimessa in forma sullo scheletro di §4.6.
+Concentrati in `04-MARKETING` (radice), `06-PLATFORM`, `05-MULTI-BUSINESS`, `Board/Chief-Forge`.
+
+**Effetto: 301 + 74 = 375 OPERATIVO, 85,4%.**
+
+### ONDATA 4 — **64 agenti** · hanno C4, manca altro
+
+17 solo C5 · 11 solo C6 · 11 C1+C5 · 25 altre combinazioni.
+Tre famiglie intere hanno un buco di **identita'** e non di uscita, e vanno trattate insieme:
+`10-MEMORY` (C1 in 9 su 9), `05-MULTI-BUSINESS` (C1 in 6 su 6), `08-INTELLIGENCE` (C1 in 4 su 4):
+l'intervento e' aggiungere `- **ID**: \`<nome-file>\`` in testa, come fa l'Ispettorato.
+
+**Effetto: 439 OPERATIVO, 100%.**
+
+### Riepilogo delle ondate
+
+| ondata | agenti | intervento | OPERATIVO dopo | % |
+|---|---|---|---|---|
+| 0 — bonifica perimetro | 0 (57 file toccati) | escludere, deduplicare, includere | 61 | 13,9% |
+| **1 — solo C4** | **174** | **spezzare `## Input / Output`** | **235** | **53,5%** |
+| 2 — C4 + C5 | 66 | titolo + sezione gate | 301 | 68,6% |
+| 3 — C4 + altro | 74 | rimessa in forma sullo scheletro §4.6 | 375 | 85,4% |
+| 4 — senza C4 | 64 | id, gate, passi operativi | 439 | 100% |
+
+### Due avvertenze da portare nel piano
+
+1. **Il punteggio non e' il contratto.** `cfo-spend-approver` e' 10/10 con la prova C4 presa
+   da un bullet in mezzo alla prosa (§4, Modello 5), e 26 dei 61 OPERATIVO passano C4 dalla
+   porta accidentale `\bOUTPUT\s*[:=]`. Il collaudo di ogni riscrittura deve verificare che la
+   `prova:` stampata sia esattamente `## Output` — non basta guardare salire il numero.
+2. **Le due popolazioni.** I 439 agenti-scheda di `company/` e i 164 agenti eseguibili di
+   `.claude/agents/` si toccano in **due nomi soli** (§3.3). Portare i 439 al 100% non rende
+   concatenabile un solo agente che gira davvero. Il contratto C4 va portato **anche** nei 164,
+   o le due anagrafi vanno ricongiunte: e' una decisione di piano che va presa **prima**
+   dell'ondata 1, non dopo.
+
+---
+
+*Fine del censimento 03a. Prodotto da un doom bot al servizio di EMPERATOR, 2026-09-06.
+Nessun file del repository e' stato modificato all'infuori di questo.*

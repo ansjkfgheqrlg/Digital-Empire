@@ -697,3 +697,78 @@ scritto, la cartella già esiste, e "mandare un handoff" può voler dire, al pri
 JSON conforme a `HC-template.json` dentro `Bus/handoffs/` e un check in `verify-empire.ps1` che
 validi i file presenti contro lo schema. Da correggere subito, a costo zero: il numero «19 agenti»
 in `Identity-HR/README.md`, e la differenza 123 vs 129 fra registro e `.claude/agents/`.
+
+---
+
+## 9. `company/Genesi-Core/` — la fabbrica che crea gli altri organi
+
+**Cosa è** (da `ARCHITETTURA/ECOSISTEMA.md`): il Genesi Core è la coppia gemella
+**ARCHITETTURA + FORGE**, «il nucleo strutturale» da cui nasce tutto il resto — «i 10 ecosistemi
+nascono DA Genesi Core». La divisione del lavoro è dichiarata in termini SPARC: «ARCHITETTURA
+possiede **Specification → Pseudocode → Architecture**; la FORGE possiede **Refinement →
+Completion**. *L'architetto disegna, la fabbrica costruisce.*» E il vincolo: «nulla si forgia senza
+un blueprint architettato e approvato qui».
+
+**Contenuto reale — 64 file, tutti .md**, divisi in due metà simmetriche:
+
+**`ARCHITETTURA/` (30 file)** — `ECOSISTEMA.md`, `BACKBONE.md`
+- `Agenti/` — **8**: `arch-director`, `arch-blueprint`, `arch-spec-writer`, `arch-schema-keeper`, `arch-org-designer`, `arch-pattern-scout`, `arch-validator`, `arch-contradiction`
+- `Reparti/` — **6**: `L2.1-Spec-Requirements`, `L2.2-Blueprint-Struttura`, `L2.3-Schemi-Canonici`, `L2.4-Validazione-Strutturale`, `L2.5-Progettazione-Ecosistemi`, `Pattern-Guild`
+- `Schemi-Canonici/` — **10**: `README` + `Schema-Agente`, `Schema-Skill`, `Schema-Team`, `Schema-Workflow`, `Schema-Reparto`, `Schema-Ecosistema`, `Schema-Principio`, `Schema-Stile`, `Schema-Documento-MKD`
+- `Workflow/` — **4**: `WF-ARCH-DESIGN`, `WF-STRUCT-VALIDATE`, `WF-SCHEMA-EVOLVE`, `WF-ECOSYSTEM-DESIGN`
+
+**`FORGE/` (34 file)** — `ECOSISTEMA.md`, `BACKBONE.md`
+- `Agenti/` — **10**: `frg-chief`, `frg-spec-writer`, `frg-prd-architect`, `frg-mkd-forger`, `frg-skill-smith`, `frg-org-designer`, `frg-eval-runner`, `frg-sparc-warden`, `frg-contradiction-gate`, `frg-hr-registrar`
+- `Reparti/` — **5**: `SKILL-WORKS`, `AGENT-WORKS`, `WORKFLOW-WORKS`, `ECOSYSTEM-WORKS`, `METHOD-GUARD`
+- `Workflow/` — **9**: `WF-FORGE-PIPELINE`, `WF-SKILL-NEW`, `WF-SKILL-IMPROVE`, `WF-SKILL-AUDIT`, `WF-AGENT-NEW`, `WF-TEAM-NEW`, `WF-ECOSYSTEM-NEW`, `WF-PRD`, `WF-SPARC-ENFORCE`
+- `Funzioni/` — **7**: `T-spec`, `T-draft`, `T-eval-runner`, `T-org-design`, `T-handoff-contracts`, `T-shared-state-schema`, `T-description-optimizer`
+- `Motori/` — **1**: `Mappa-Motori.md`
+
+I 10 **Schemi-Canonici** meritano una riga a parte: sono la forma normativa di ogni cosa che
+l'azienda crea (un agente, una skill, un team, un workflow, un reparto, un ecosistema, un principio,
+uno stile, un documento MKD). Se un giorno si vorrà generare automaticamente un organo mancante,
+questi sono i template da cui partire — sono già scritti.
+
+**Agenti definiti: 18** (8 `arch-*` + 10 `frg-*`). **Invocabili in `.claude/agents/`: ZERO**
+(verificato: `ls .claude/agents/ | grep -c "^arch-\|^frg-"` → 0). **Skill installate: zero**
+(nessuna skill `genesi` o `forge` in `.claude/skills/`).
+
+Va però detto che **la funzione esiste altrove, con altri nomi**: `.claude/agents/` contiene 17
+agenti `mba-*` (Master Build Architecture — `mba-conductor` è «Orchestratore principale per
+progettazione architetture software complete», `mba-agent-spec-builder`, `mba-topology-designer`,
+`mba-principle-codifier`…) e 25 agenti `cf-*` (Content Forge 2.0, con `cf-skill-builder-agent`,
+`cf-agent-builder-agent`, `cf-team-builder-agent`, `cf-workflow-builder-agent`). Sono, per funzione,
+gli stessi mestieri di `arch-*` e `frg-*`: progettare la struttura e costruire l'artefatto. La
+fabbrica dichiarata nel governo non è invocabile; **due fabbriche parallele, non registrate come
+organo, lo sono.**
+
+**Come si attiva oggi.** Nessun hook, nessuno script, nessun agente, nessuna skill. L'unico aggancio
+è `empire/empire.toml:31` (`genesi = "company/Genesi-Core"`), un alias di percorso verificato dal
+test degli alias. Non compare in `gen-empire.py` né in `verify-empire.ps1`: **è l'unico organo del
+perimetro che nemmeno il gate strutturale controlla.**
+
+**E c'è un puntatore rotto dentro il codice.** `empire/dash/render_md.py:26` scrive, nell'header di
+ogni dashboard generata, la riga `Origine: Genesi-Core/07-CONTROL/DASHBOARD-E-RETRO.md`. Quel
+percorso **non esiste**: `company/Genesi-Core/` contiene solo `ARCHITETTURA/` e `FORGE/`. Ogni
+dashboard prodotta cita come propria origine un file che non c'è.
+
+**Che cosa produce e dove finisce.** Produce **blueprint** (ARCHITETTURA) e **artefatti forgiati**
+(FORGE: skill, agenti, team, workflow, ecosistemi), con la catena di gate in serie descritta in
+`MAXIMILIAN/BACKBONE.md`: ARCHITETTURA (struttura completa) → FORGE (contenuto + eval) → MAXIMILIAN
+(all'altezza) → Mandato (lecito) → Identity-HR (registra) → **VIVO**. È, letteralmente, la catena
+che questo censimento sta cercando: la definizione di "vivo" esiste già dentro l'Impero, scritta qui.
+La destinazione finale è dichiarata: registrazione in `registro-agenti.yaml` via `frg-hr-registrar`.
+Il registro esiste; l'agente che dovrebbe scriverci no.
+
+**Cosa manca perché sia vivo:**
+- (a) **comando** — manca del tutto: 0 agenti su 18, 0 skill.
+- (b) **contratto** — c'è, ed è il più formalizzato dell'intero perimetro: 10 schemi canonici + 13 workflow + 7 funzioni.
+- (c) **posto stabilito** — parziale: la registrazione finale ha un posto (`registro-agenti.yaml`), i blueprint intermedi no.
+- (d) **test** — assente, e non è coperto neanche dal check strutturale.
+
+**Difficoltà: ALTA — ma con una scorciatoia.** Alta se si vogliono i 18 agenti invocabili e la
+pipeline `WF-FORGE-PIPELINE` che gira davvero. Bassa se si riconosce che il lavoro è già fatto
+altrove: i 17 `mba-*` e i 25 `cf-*` sono invocabili oggi. La mossa economica è **mappare** i 18
+`arch-*`/`frg-*` sugli agenti `mba-*`/`cf-*` che già esistono e dichiarare quella mappa nel registro,
+invece di forgiare 18 file nuovi. Da correggere subito: il puntatore `Genesi-Core/07-CONTROL/` in
+`empire/dash/render_md.py:26`, che sporca ogni dashboard generata.

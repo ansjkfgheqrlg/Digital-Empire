@@ -127,7 +127,7 @@ domanda «perché il piano dice questo e non quello».
 | `dati/censimento-01b-organi.md` | Board, Guilds, Sentinelle, MAXIMILIAN, Mandato, Ispettorato | 🔄 628 righe |
 | `dati/censimento-02-collegamenti.md` | l'infrastruttura dei collegamenti: bus, contratti, registri, flow, tracce | ✅ §1-4 · §5-6 passate a `02b` |
 | `dati/censimento-02b-mappa-collegamenti.md` | la mappa dei passaggi di consegne progettati nei dossier | 🔄 |
-| `dati/censimento-03a-popolazione.md` | popolazione agenti, specifica C1..C6, ondate di lavoro | 🔄 1.064 righe |
+| `dati/censimento-03a-popolazione.md` | **popolazione agenti, specifica C4 esatta, 5 ondate, un guasto vero in `census.py`** | ✅ 1.426 righe |
 | `dati/censimento-03b-regolamento-forze.md` | la gerarchia delle forze già in vigore (ADR-015) | ✅ §1 |
 | `dati/censimento-03b2-cadute.md` | **33 cadute reali · 6 famiglie di recidiva · 29 regole, 12 da rendere meccaniche** | ✅ |
 | `dati/censimento-04-motori.md` | i motori della famiglia `Outreach/` | ✅ parziale |

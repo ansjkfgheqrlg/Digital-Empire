@@ -883,3 +883,186 @@
   orchestratori prevista da ADR-012.
 
 ---
+
+## 12 — STREAM-S7-BOT
+
+- **Percorso**: `company/Ecosistemi/12-STREAM-S7-BOT/`
+
+- **Cosa contiene davvero**: **81 file totali** (esclusi `__pycache__`). Ripartizione esatta:
+  **31 `.py`** · **31 `.md`** · 8 `.txt` · 6 `.json` · **2 `.csv`** · 1 `.yaml` · 1 `.gitignore` ·
+  1 `.example` (`.env.example`). Piu' una cartella `.claude/` con `settings.json` e
+  `settings.local.json` propri del nodo.
+  Sottocartelle: `agents/` (con `conductor/`, `execution/`, `forge/`, `meta/`, `quant/` e i loro
+  sotto-agenti `chief-forge`, `ingestion`, `mkd-builder`, `silent-observer`,
+  `expectancy-calculator`), `memory/` (`architectures/`, `checkpoints/`, `decisions/`, `nft_cache/`),
+  `prompts/`.
+  **E' il gemello evoluto di `08-STREAM-S7-BOT`**: contiene gli stessi 5 moduli
+  (`main.py`, `data_manager.py`, `analysis_engine.py`, `execution_engine.py`, `risk_manager.py`)
+  piu' 26 moduli aggiuntivi.
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE, `BACKBONE.md` PRESENTE, `LEGGIMI.md` PRESENTE
+  (con front-matter `Owner: 08-STREAM-S7-BOT (R&D Speculativo)`, `Status: EXPERIMENTAL`), piu' una
+  documentazione insolitamente ricca: `STATO-RIPRESA.md`, `LOGICA-COMPLETA-S7.md`,
+  `PIANO-STRATEGICO-S7.md`, `STUDIO-NFT-FASE0.md`, `FAILURE-MODES-NFT.md`, `APEX-7.md`,
+  `report-studio.md`, `task_max.md`. README di radice ASSENTE.
+
+- **Reparti**: nessuna cartella `Reparti/`; l'organizzazione e' per team di agenti dentro `agents/`:
+  **conductor · execution · forge · meta · quant**.
+
+- **Workflow definiti**: `apex7_workflow.ruflo.yaml` (unico `.yaml` del nodo).
+
+- **Agenti definiti dentro il nodo**: **agenti-codice**, non schede: `agents/conductor/team_conductor.py`,
+  `agents/execution/team_execution.py`, `agents/forge/team_forge.py`, `agents/quant/team_quant.py`,
+  piu' `meta_agent.py`, `gate_agent.py`, `worker_agent.py` alla radice.
+
+- **Ha codice eseguibile?** **SI**: 31 moduli Python, di cui **6 sono test**
+  (`test_apex7.py`, `test_level_1.py`, `test_nft_s7.py`, `test_nft_ondata2.py`,
+  `test_nft_ondata3.py`, `test_nft_ondata4.py`). Motori NFT dedicati: `nft_analysis_engine.py`,
+  `nft_magiceden_client.py`, `nft_monte_carlo.py`, `nft_ondata2/3/4.py`. Infrastruttura:
+  `event_bus.py`, `orchestrator.py`, `quality_gates.py`, `gate_verifiers.py`,
+  `memory_interface.py`, `ruflo_adapter.py`, `position_monitor.py`.
+
+- **Punto d'ingresso gia' esistente?** **SI, due, e uno e' verificato verde**:
+  - `python main.py` (paper trading);
+  - `python test_apex7.py` — `STATO-RIPRESA.md` riporta "gate finale L6→L7 **PASSED 7/7, score 1.0**
+    (riverificato il 2026-08-03)".
+  **Ma il `LEGGIMI.md` di questo nodo dice di entrare nella cartella sbagliata**: "1. Entrare nella
+  cartella: `cd company/Ecosistemi/08-STREAM-S7-BOT`" — cioe' manda nel nodo gemello, dove il codice
+  e' compresso e il comando fallisce. E' un puntatore stale copiato insieme al file.
+
+- **Motore reale corrispondente FUORI da `company/`**: **NO.** Nessuna cartella di trading alla radice.
+  Il motore e' il nodo stesso; la duplicazione e' interna (08 vs 12).
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) SODDISFATTA nei fatti (`python main.py`, `python test_apex7.py`), ma **il documento che
+    istruisce l'operatore punta alla cartella sbagliata** — va corretto prima di ogni altra cosa.
+  - (b) SODDISFATTA: `quality_gates.py` + `gate_verifiers.py` + `apex7_workflow.ruflo.yaml`
+    definiscono e verificano i gate; `STATO-RIPRESA.md` cita 89/89 controlli reali sul layer NFT.
+  - (c) SODDISFATTA parzialmente: le uscite vanno in `paper_trade_log.csv` (**7 righe**) e
+    `paper_trade_log_nft.csv` (**3 righe**), piu' `memory/` con checkpoint e decisioni proprie.
+    Sono volumi da prova, non da esercizio.
+  - (d) SODDISFATTA: 6 file di test, gate finale documentato come 7/7.
+  - **Cio' che manca non e' tecnico.** `STATO-RIPRESA.md` lo dice in un blocco intitolato
+    "non manca codice, manca una decisione": expectancy **negativa**, ">85% di perdere il capitale
+    entro il primo mese", e il layer NFT "bocciato per live" da 89/89 controlli reali
+    (`CP-20260730-007`). Il prerequisito bloccante e' economico (B-010: RPC Solana a pagamento —
+    l'endpoint pubblico risponde `429` dopo 2 chiamate).
+  - **Duplicazione da sanare**: 08 e 12 sono lo stesso sistema in due stadi; il registro
+    (`REGISTRO-NUMERI.md`) segnala la collisione e la lascia aperta.
+
+- **Difficolta'**: **BASSA** tecnicamente (gia' verde), **ALTA** come decisione: due analisi
+  indipendenti dicono di non andare live, e finche' Max non decide, ogni lavoro qui e' a vuoto —
+  lo scrive il nodo stesso.
+
+---
+
+## 13 — ARENA-APEX
+
+- **Percorso**: `company/Ecosistemi/13-ARENA-APEX/`
+
+- **Cosa contiene davvero**: **19 file totali** — **9 `.md`**, **9 `.json`**, **1 `.py`**.
+  Struttura: `config/` (1), `memory/` (5 sottocartelle da 1 file), `output/` (1),
+  `prompts/` (3), `skills/` (1), `workflows/` (3), + `README.md`, `ARCHITECTURE.md`,
+  `ECOSISTEMA.md`, `BACKBONE.md`, `orchestrator.py`.
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE, `BACKBONE.md` PRESENTE,
+  **`README.md` PRESENTE** (con Quick Start eseguibile), `ARCHITECTURE.md` PRESENTE.
+  E' uno dei due soli nodi con README (l'altro e' 11-APEX-7-CORE).
+
+- **Reparti**: nessuno. **Workflow definiti (3, come JSON eseguibili, non prosa)**:
+  `workflows/carousel-workflow.json`, `workflows/cold-outreach-workflow.json`,
+  `workflows/skill-forge-workflow.json`.
+
+- **Agenti definiti dentro il nodo**: nessuna scheda agente. Ci sono 3 prompt operativi
+  (`prompts/skill-forge-v2.md`, `prompts/carousel-engine-v2.md`, `prompts/cold-outreach-v2.md`)
+  e 1 skill (`skills/client-onboarding.md`).
+
+- **Ha codice eseguibile?** **SI, uno solo ma completo**: `orchestrator.py`, **453 righe**, con
+  `if __name__ == "__main__"` alla riga 452 e una CLI a 6 sottocomandi documentata nel docstring.
+
+- **Punto d'ingresso gia' esistente?** **SI**: `python3 orchestrator.py status | memory <layer> |
+  workflow <name> | critique <file> | decision <cosa> <perche'> | snapshot`.
+  **Il README pero' fa entrare in una cartella che non esiste**: "`cd digital-empire`" — nel repo
+  non c'e' nessuna cartella con quel nome; il comando va lanciato dentro `13-ARENA-APEX/`.
+
+- **Motore reale corrispondente FUORI da `company/`**: **NO in senso stretto** — il motore e' il
+  nodo. Ma e' **la versione ridotta e stand-alone di 11-APEX-7-CORE**: stessi tre stream
+  (skill-forge, carousel, cold-outreach), stessa idea di memoria a layer, stesso quality gate.
+  Il collegamento esterno reale e' Arena.ai (i prompt in `prompts/` sono da incollare li'), lo stesso
+  motore che `03-CONTENT-FACTORY` chiama "Ramo D" e che `CF-2026-PREVENTA-002` ha dichiarato
+  **fermo su questa macchina** dal 2026-08-25 (`playwright_stealth` non installato, sessione assente).
+  Alla radice del repo esiste anche `imported-from-arena/`.
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) SODDISFATTA a meta': la CLI esiste e funziona, ma il README indirizza a una cartella
+    inesistente (`cd digital-empire`) — chi segue le istruzioni non parte.
+  - (b) SODDISFATTA: quality gate dichiarato a **≥ 7.5/10** e 3 workflow descritti in JSON
+    (formato macchina, non prosa).
+  - (c) SODDISFATTA in minima parte: `output/` contiene **un solo prodotto**,
+    `output/outreach-concessionari-20260723/sequenza-email.md`; i 5 file di memoria
+    (`memory/decisions/log.json` 2.849 byte, `knowledge/base.json` 2.136,
+    `strategies/store.json` 2.273, `architecture/snapshots.json` 1.273,
+    `working/context.json` 570) sono **tutti fermi al 25 luglio 2026**.
+  - (d) **NESSUN test**: zero `test_*.py`, a differenza dei fratelli 11 e 12.
+  - **Sovrapposizione da sciogliere**: 11-APEX-7-CORE, 12-STREAM-S7-BOT e 13-ARENA-APEX sono tre
+    implementazioni della stessa architettura APEX; solo la 11 ha CI e 27 test.
+
+- **Difficolta'**: **BASSA** — un comando gia' funzionante, un README da correggere, e la decisione
+  se tenerlo come sistema separato o fonderlo in 11-APEX-7-CORE.
+
+---
+
+## 14 — TESORERIA
+
+- **Percorso**: `company/Ecosistemi/14-TESORERIA/`
+
+- **Cosa contiene davvero**: **1 file** — `README.md`. Piu' **due cartelle completamente vuote**:
+  `agenti/` (0 file) e `workflow/` (0 file), create il 2026-09-03 e mai riempite.
+  Nessun `.py`, `.json`, `.yaml`, `.zip`.
+
+- **Documenti di governo**: `ECOSISTEMA.md` **ASSENTE**, `BACKBONE.md` **ASSENTE**.
+  **`README.md` PRESENTE** ed e' il migliore del perimetro: dichiara la data di nascita
+  (2026-09-03), l'ADR che lo istituisce (`ADR-020`), il motivo misurato
+  ("Digital Empire non misurava un solo euro"), i **cinque comandi esatti**, la tabella degli organi
+  con i path, e tre leggi operative ("Previsto non e' incassato. Mai.").
+
+- **Reparti**: nessuno (la cartella `agenti/` esiste vuota). **Workflow**: nessuno (`workflow/` vuota).
+
+- **Agenti definiti dentro il nodo**: **zero.** I 5 agenti esistono e sono registrati, ma **fuori**:
+  `.claude/agents/tesoreria-conductor.md`, `-entrate.md`, `-spese.md`, `-report.md`, `-previsione.md`
+  (tutti verificati presenti).
+
+- **Ha codice eseguibile?** **NO nel nodo.** Il motore e' fuori: `scripts/tesoreria.py`,
+  **18.443 byte**, del 2026-09-03.
+
+- **Punto d'ingresso gia' esistente?** **SI, cinque comandi dichiarati e funzionanti**, scritti nel
+  README con la sintassi completa:
+  `python scripts/tesoreria.py entrata|spesa|incassa|report [--mese YYYY-MM] [--scrivi]`.
+  Piu' la skill registrata `.claude/skills/tesoreria/SKILL.md`.
+
+- **Motore reale corrispondente FUORI da `company/`**: **SI, ed e' l'unico caso del censimento in cui
+  il motore e' completo, recente e perfettamente puntato dal nodo.**
+  - `scripts/tesoreria.py` (18.443 byte) — registra, calcola, riferisce.
+  - `.claude/skills/tesoreria/SKILL.md` — il comando.
+  - `.claude/agents/tesoreria-*.md` — i 5 agenti.
+  - `company/Memory/tesoreria/` — i dati: `entrate.jsonl`, `spese.jsonl`, `README.md`.
+  - `company/Memory/TESORERIA.md` — il rapporto, rigenerato da `report --scrivi`.
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) SODDISFATTA: cinque comandi dichiarati, motore presente.
+  - (b) SODDISFATTA: il formato e' una riga JSON per movimento, e le tre leggi sono un contratto
+    scritto ("Un numero che non esiste si dichiara, non si stima").
+  - (c) SODDISFATTA come destinazione, **vuota come contenuto**: `company/Memory/tesoreria/entrate.jsonl`
+    e `spese.jsonl` sono **entrambi di 0 byte**, creati il 2026-09-03 alle 13:03 e mai scritti.
+    `company/Memory/TESORERIA.md` lo certifica da solo: "**Nessun movimento registrato** — non
+    significa che l'azienda non incassi e non spenda: significa che non lo sta ancora scrivendo da
+    nessuna parte."
+  - (d) **NESSUN test**: nessun `test_tesoreria.py` in `scripts/`.
+  - **Il nodo e' un guscio**: 1 file e 2 cartelle vuote. Tutto cio' che vive sta altrove, e questo
+    ecosistema non contiene nemmeno i suoi documenti di governo.
+
+- **Difficolta'**: **BASSA** tecnicamente — il motore e' pronto e i comandi funzionano; il vero
+  ostacolo non e' informatico: **serve che qualcuno registri il primo euro**. Finche' i due `.jsonl`
+  restano a 0 byte, l'ecosistema e' vivo come macchina e morto come organo.
+
+---
