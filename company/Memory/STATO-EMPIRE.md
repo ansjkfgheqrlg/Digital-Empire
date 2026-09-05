@@ -1,3 +1,47 @@
+## 🚀 2026-09-05 — ECOSISTEMA LANCI: piano di costruzione completo consegnato a Gael — 29-ECOSISTEMA-LANCI
+
+**Max ha fatto fare il piano architetturale intero dell'ecosistema LANCI**, completando L4-L5-L6
+della task di Gael (`TASK-LANCI-ECO-W2`) e andando molto oltre. Consegnato in
+`PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` — **11 dossier**, si comincia da `00-LEGGIMI-GAEL.md`.
+
+**Cosa contiene:** 12 reparti (4 nuovi, 8 che avvolgono cio' che esiste) · 7 flussi completi con
+l'agente per ogni fase · **50 agenti** con frontmatter e contratti · **13 gate** con criteri
+numerici e numerazione unica `GATE-<REPARTO>-<n>` · ~235 file con percorso assoluto · costruzione
+a scaglioni per **139-187 ore-uomo** · lancio pilota (il Manuale Claude Code) · ADR-022 proposto.
+
+**Metodo: tre giri.** Prima versione (3.761 righe) → critica di **tre revisori indipendenti**
+(891 + 398 righe, 106 rilievi, verifiche eseguite nel codice) → riscrittura. **Dieci difetti
+gravi corretti**, fra cui: la squadra minima non poteva produrre prezzo e data (si sarebbe
+fermata al secondo stato per sempre); il flusso del funnel non aveva ne' fasi ne' agenti; due
+gate sul budget non potevano fallire per costruzione; nessun comando dell'Impero riesce oggi a
+verificare che un agente sia ufficiale (provato nel codice); vietare il campo `tools` toglieva
+l'unico modo di impedire a un gate di riscrivere cio' che giudica.
+
+**⚠️ TRE COSE PER CHI RIPRENDE:**
+1. **Il numero e' 15, non 14** (14 = TESORERIA). **Riservato** in `REGISTRO-NUMERI.md`: chi crea
+   un ecosistema nuovo prima dei LANCI prenda il **16**.
+2. **L'ADR-022 va registrato PRIMA di creare la cartella** — lo impone ADR-009 e `conform.py` lo
+   verifica. E' il passo zero, non l'ultimo.
+3. **Nessuna cartella `15-LANCI/` creata**, nessun agente scritto, nessuna skill forgiata: il
+   repo sul lato lanci e' come Gael l'ha lasciato. Il piano e' carta di progetto, per ordine di Max.
+
+**Aperto e dichiarato:** il ruolo del Manuale (a pagamento o regalo) decide Max e **senza quella
+decisione il primo lancio non parte**; lo standard dei testi decide il CMO; il sistema visivo la
+guild Design; `empire doctor` esce 1 oggi per 2 bloccanti estranei ai lanci.
+
+**RIPRESA DA (Gael):** `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/00-LEGGIMI-GAEL.md`, §4 "il primo giorno".
+
+---
+
+## 🟠 2026-09-05 — Il PDF è specializzazione fissa: standard-oro dossier 28 — CP-20260905-014
+
+**Codice di ripresa: EMP-PDFSTD.** Max: il dossier 28 è il PDF più perfetto prodotto finora —
+da ora è lo standard di default, senza più bisogno di istruzioni su stile/colori/qualità.
+Legge **§6.19** in `emperator.md`. Motore estratto in codice (non solo dottrina):
+`PIANO-MAESTRO/scripts/pdf_engine_empire.py` (classe `PDFDoc`). `build_dossier28_pdf.py`
+riscritto sopra il motore e riverificato (stesso output, 11 pagine, 0,52 MB). Committato e
+pushato (`9ac8c8f7`).
+
 ## 🟠 2026-09-05 — `documentazione Empire` strutturata a tipologie — CP-20260905-013
 
 **Codice di ripresa: EMP-DOCEMP2.** Max ha precisato la legge CP-012: dentro
