@@ -1,0 +1,68 @@
+archi trasversali gia scritti: 32
+componenti: 9 | dimensioni: [164, 9, 8, 6, 5, 5, 4, 2, 2]
+
+=== ISOLA 0 (164 atomi) ===
+  KA-001 [principio] La tesi d'apertura del corso: una company brain (cervello aziendale) è la tecnologia che separa
+  KA-002 [definizione] Prima ancora di mostrarla, il video anticipa con un overlay di testo la domanda retorica su cos
+  KA-003 [struttura] La company brain reale mostrata nel video è una graph view di Obsidian a schermo intero, tema s
+  KA-004 [numero] La company brain mostrata contiene 22.870 documenti (cifra scritta sulla lavagna Excalidraw del
+  KA-009 [struttura] Agenda completa del corso disegnata su lavagna Excalidraw, 13 voci: 1) ROI delle Company Brain 
+  KA-010 [struttura] Documento Notion companion "Company Brain — Tutti i prompt del tutorial", indice completo: Pass
+  KA-011 [procedura] Passo 1 completo del documento Notion, riportato integralmente — l'unico passo che si fa a mano
+  KA-012 [principio] Patto dichiarato col pubblico all'inizio della parte 2, tre promesse: 1) costruiremo un company
+  KA-013 [struttura] Diagramma centrale della tesi economica: nodo viola in cima "CONOSCENZA SPARSA" con tre figli c
+  KA-014 [principio] Il rischio "conoscenza nella testa delle persone" si biforca in due etichette scritte a mano: "
+  KA-015 [struttura] Disegno a mano di due linee sinuose orizzontali che si incrociano, completato con un'ellisse ro
+  KA-016 [numero] Dato di mercato con fonte citata: il settore impiegatizio passa circa il 19% della settimana la
+  KA-017 [numero] Dato di mercato con fonte citata: un nuovo assunto ci mette in media 8-12 mesi per diventare da
+  KA-018 [principio] Terzo dato della slide di mercato, senza fonte citata: quando una persona lascia l'azienda, si 
+  ... altri 150
+=== ISOLA 1 (9 atomi) ===
+  KA-130 [procedura] Per rigenerare e verificare al volo l'indice llms.txt si usa un unico comando bash concatenato:
+  KA-131 [struttura] Contenuto integrale di llms.txt come mostrato in editor (righe tagliate a destra dal bordo del 
+  KA-132 [regola] Spiegazione integrale (letta a schermo, non riassunta) di cosa contiene e cosa esclude llms.txt
+  KA-133 [procedura] Come si rigenera llms.txt (letto per intero): è derivato, non si tocca a mano. Comando: python3
+  KA-134 [principio] L'autore dichiara esplicitamente che llms.txt non è uno standard di settore ma un consiglio per
+  KA-136 [principio] Lo showcase, come llms.txt, è dichiarato una fotografia DERIVATA: invece di scrivere i numeri a
+  KA-139 [regola] Regola di scope dichiarata nel corpo stesso di showcase.md: lo showcase copre le 11 cartelle de
+  KA-142 [comando] Prompt 6 del canovaccio Notion — 'Correggi e ripeti finché esce' (titolo tagliato dal bordo del
+  KA-143 [comando] Prompt 7 del canovaccio Notion — 'Genera l'indice per la AI (llms.txt)', sottotitolo 'La porta 
+=== ISOLA 2 (8 atomi) ===
+  KA-148 [comando] Prompt 10 del canovaccio Notion — 'Interroga il cervello (a 28 note, senza RAG)', sottotitolo '
+  KA-158 [procedura] Demo live del Prompt 10: l'agente, prima di rispondere, esegue un comando bash di ricerca testu
+  KA-159 [regola] Applicazione concreta della regola d'oro del Prompt 10 nella demo: alla domanda su come è cambi
+  KA-160 [comando] Prompt 11 del canovaccio Notion — 'La domanda di incrocio (dove le cartelle si arrendono)', sot
+  KA-164 [struttura] Nota atomica reale prodotto-aurora-access.md, frontmatter e corpo trascritti per intero: title 
+  KA-165 [procedura] Comando bash usato dall'agente per verificare rigorosamente se i prodotti citati nella domanda 
+  KA-166 [regola] Risposta dell'agente dopo la verifica grep: 'Ho cercato in tutte le note del cervello di Aurora
+  KA-167 [esempio] Rieseguendo la domanda del Prompt 11 sui prodotti reali (Access, Core, Energy), l'agente legge 
+=== ISOLA 3 (6 atomi) ===
+  KA-118 [comando] Prompt 5 del canovaccio Notion ("Il gate di qualita' (solo referto)", descrizione: "Controlla o
+  KA-119 [comando] Prompt 6 del canovaccio Notion ("Correggi e ripeti finche' esce '0 errori'", descrizione: "Il c
+  KA-123 [principio] Ripresa dello screen-share dopo la sequenza sull'outsourcing di comprensione: Claude, dopo "Tho
+  KA-124 [procedura] Referto completo del primo run del gate di qualita', trascritto per intero (compare identico, p
+  KA-125 [comando] Codice sorgente di `gate_qualita.py` aperto in editor, riportato riga per riga fino al punto in
+  KA-126 [principio] Conferma del percorso reale del file: il mouse fermo sopra `gate_qualita.py` nella sidebar most
+=== ISOLA 4 (5 atomi) ===
+  KA-068 [principio] La tassonomia risponde alla domanda 'che tipo di cosa e'?' e dice dove archiviare un contenuto:
+  KA-069 [principio] L'ontologia risponde alla domanda 'cosa sono le cose e come si collegano?' ed e' 'leggibile da 
+  KA-070 [principio] La tassonomia dell'autore e' stata progettata deliberatamente per essere agnostica rispetto al 
+  KA-071 [principio] A differenza della tassonomia (che l'autore fornisce gia' pronta), l'ontologia va costruita da 
+  KA-072 [struttura] Versione estesa dell'esempio di ontologia: a fianco dei due cerchi 'Aurora Sistemi'/'Marco', un
+=== ISOLA 5 (5 atomi) ===
+  KA-135 [comando] Prompt 8 — 'Lo showcase (la fotografia per la demo)', scritto prima nel canovaccio Notion e poi
+  KA-137 [struttura] Contenuto integrale del file sorgente _showcase/showcase.md generato: intestazione con dichiara
+  KA-138 [numero] Le tre metriche chiave della fotografia del cervello Aurora, come riassunte in chat dopo la gen
+  KA-140 [struttura] Tabella 'Note per cartella' del rendering di showcase.md, con colonne Cartella | Contenuto | Hu
+  KA-141 [regola] Autocorrezione esplicita e non richiesta del sistema, dichiarata onestamente in chat: in un tur
+=== ISOLA 6 (4 atomi) ===
+  KA-120 [comando] Prompt 7 del canovaccio Notion ("Genera l'indice per la AI (llms.txt)", descrizione: "La porta 
+  KA-121 [comando] Prompt 8 del canovaccio Notion ("Lo showcase (la fotografia per la demo)", descrizione: "Numeri
+  KA-127 [procedura] Esecuzione dal vivo del Prompt 7: il prompt utente, dettato/incollato con la formulazione legge
+  KA-128 [procedura] Azione **Write** `genera_llms.py`, badge "70 lines", anteprima di codice mostrata: `#!/usr/bin/
+=== ISOLA 7 (2 atomi) ===
+  KA-005 [struttura] Anatomia reale di una nota atomica della company brain, nota `kpi-2025-edifici`: pannello Prope
+  KA-006 [numero] Il dato solido riportato nella nota `kpi-2025-edifici`: 751 edifici gestiti sulla piattaforma a
+=== ISOLA 8 (2 atomi) ===
+  KA-007 [definizione] L'identità reale dell'autore/relatore: il sito mostrato a schermo è `gentes.ai` (agenzia "Gente
+  KA-008 [struttura] L'autore gestisce una community a pagamento su Skool, "Avanguardia Plus" (`skool.com/avanguardi

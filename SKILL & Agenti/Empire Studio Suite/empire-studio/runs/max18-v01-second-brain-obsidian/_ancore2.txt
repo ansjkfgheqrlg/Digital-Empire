@@ -1,0 +1,29 @@
+KA-036 [comando] Comando ricostruito per scrivere un override su un fatto cliente: `python3 scripts/edit_fact.py --nome "<Nome Cliente>" --campo <campo>
+KA-037 [principio] Meccanismo "canon vs override": quando un fatto cambia (es. ARR di un cliente), Claude Code non riscrive la scheda canonica in `entitie
+KA-039 [struttura] Contenuto completo della cartella `workspace/` mostrato nella sidebar Explorer di Antigravity: sottocartella `journal`, sottocartella `
+KA-040 [struttura] Contenuto integrale della scheda-cliente `entities/cliente-polo-universitario-sud.md` dopo l'override, letta riga per riga nell'editor:
+KA-042 [struttura] Indice TLDR completo del documento Notion privato "Company Brain — Tutti i prompt del tutorial (segui passo passo)": TLDR; AVANAGUARDIA
+KA-044 [procedura] Passo 1 — Obsidian, la prima nota, i collegamenti (a mano), nessun prompt all'AI, si fa una volta sola dentro Obsidian: (1) Installa Ob
+KA-045 [struttura] Punto 6 del Passo 1 — Frontmatter: apri `self-identita-aurora` e incolla questo blocco in cima, prima del testo:
+```
+---
+title: Identit
+KA-046 [comando] Passo 2, Prompt 1 — "Crea le 11 cartelle": dà all'AI lo scheletro del cervello, 11 cartelle vuote e niente altro. Testo del prompt (vis
+KA-089 [definizione] La slide 'LA NOTA ATOMICA' (sottotitolo: 'Niklas Luhmann: una idea per scheda') contrappone due modelli: colonna 'NO' — un PDF da 40 pa
+KA-090 [definizione] Il metodo citato come base teorica della nota atomica e' lo Zettelkasten di Niklas Luhmann (nome scritto per esteso a mano sullo scherm
+KA-091 [principio] 'HUB-AND-SPOKE: l'ordine di costruzione' (sottotitolo: 'come una ruota di bicicletta'): al centro un HUB grigio con icona persona e did
+KA-096 [principio] Il file `workspace/canon.md` e' il documento di lavoro intermedio, dichiaratamente non parte delle note atomiche: si apre con "_File di
+KA-098 [principio] Prima apparizione di Obsidian nella sessione (cambio applicazione da Antigravity): Graph view con la stessa sidebar a 11 cartelle (area
+KA-104 [principio] Passaggio dall'IDE a sola webcam per introdurre il tema degli orfani: "immaginatela come se viaggiasse solo tra quei collegamenti nella
+KA-105 [principio] Distinzione chiave enunciata a sola webcam, in sequenza: "Vogliamo avere file orfani a livello concettuale, ma non orfani a livello gra
+KA-106 [principio] Dissolvenza incrociata webcam -> Graph view di Obsidian: mentre lo schermo passa dal volto di Joe al grafo, la voce completa il ragiona
+KA-107 [procedura] Dimostrazione dal vivo del problema su canon.md riaperto per intero in Obsidian (frontmatter + sezioni 1-2 del canon, gia' trascritte i
+KA-108 [procedura] Annotazione a mano con penna/Apple Pencil verde acceso sulla Graph view di Obsidian: la scritta corsiva "index" con una freccia curva c
+KA-020 [numero] I tre tempi (in mesi) necessari per superare la conca della curva di apprendimento, raggruppati da una graffa in rosso sotto il grafico
+KA-026 [struttura] Slide pulita "L'arbitraggio del cervello aziendale" (sottotitolo: "Chi si muove prima prende ciò che chi arriva dopo non recupera"), du
+KA-197 [comando] Prompt digitato per intero nel riquadro di input di Antigravity (bordo rosso attivo) per costruire la skill journal, trascritto riga pe
+KA-204 [esempio] File 2026-06-10.md (daily) generato da Claude a partire dal template P3-074 e dalla sessione P3-072, trascritto per intero, riga per ri
+KA-205 [principio] Tesi finale del relatore, ricostruita per intero incollando le battute letterali (marcate a voce, una per scena) delle ultime sei scene
+KA-168 [struttura] Nota atomica reale persona-marco-bianchi.md, frontmatter e corpo trascritti per intero: title 'Persona — Marco Bianchi (CTO)'; summary 
+KA-169 [esempio] Risposta completa alla domanda 'c'è un modo di identificare quale degli impiegati porta il maggior ARR?': il cervello documenta l'ARR d
+KA-170 [struttura] Quarto reset di conversazione osservato nel video (dopo le scene 279/284): schema fisso e ripetuto, tab rinominata 'Untitled', icona pi

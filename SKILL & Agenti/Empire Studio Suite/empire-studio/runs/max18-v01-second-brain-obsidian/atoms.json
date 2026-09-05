@@ -15,6 +15,11 @@
    {
     "verso": "KA-027",
     "tipo": "motiva"
+   },
+   {
+    "verso": "KA-205",
+    "tipo": "precede",
+    "perche": "La tesi d'apertura ('la company brain separa chi moltiplica il business da chi gioca con l'AI') e la tesi finale ricostruita dalle ultime sei scene sono i due capi dello stesso arco: il video apre e chiude sullo stesso enunciato."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -87,6 +92,11 @@
    {
     "verso": "KA-006",
     "tipo": "quantificato-da"
+   },
+   {
+    "verso": "KA-089",
+    "tipo": "esempio-di",
+    "perche": "La nota kpi-2025-edifici, con Properties e corpo, e' l'anatomia reale della nota atomica definita nella slide."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -135,6 +145,11 @@
    {
     "verso": "KA-007",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il documento Notion indicizzato in KA-042 contiene la voce AVANGUARDIA, cioe' la community a pagamento dell'autore."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -211,6 +226,16 @@
    {
     "verso": "KA-013",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-055",
+    "tipo": "motiva",
+    "perche": "La seconda promessa del patto ('capirete il vantaggio competitivo di averne uno') richiede una struttura che l'AI sappia percorrere: le 11 cartelle di KA-055 sono la risposta operativa a quella promessa."
+   },
+   {
+    "verso": "KA-205",
+    "tipo": "precede",
+    "perche": "Le tre promesse del patto (costruirlo insieme, capire il vantaggio, sapere come scalarlo) sono cio' che la chiusura di KA-205 dichiara mantenuto: il patto e' il contratto, la tesi finale il collaudo."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -239,6 +264,16 @@
    {
     "verso": "KA-016",
     "tipo": "quantificato-da"
+   },
+   {
+    "verso": "KA-055",
+    "tipo": "motiva",
+    "perche": "Il diagramma 'CONOSCENZA SPARSA' con il ramo 'in dieci strumenti diversi' e' il problema; le 11 cartelle alla radice del vault sono il contenitore unico che lo chiude. Senza KA-013 le cartelle sono arbitrarie."
+   },
+   {
+    "verso": "KA-189",
+    "tipo": "corretto-da",
+    "perche": "Il ramo 'in dieci strumenti diversi' del diagramma di dispersione e' esattamente il problema che l'MCP di Notion risolve: un protocollo con cui l'agente scrive dentro gli altri strumenti invece di lasciarli scollegati."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -259,6 +294,11 @@
    {
     "verso": "KA-017",
     "tipo": "quantificato-da"
+   },
+   {
+    "verso": "KA-168",
+    "tipo": "corretto-da",
+    "perche": "Il danno 'TOP PERFORMER che se ne va' si cura scrivendo la persona nel grafo: persona-marco-bianchi.md (CTO, co-fondatore, responsabile Prodotto & Engineering) e' la conoscenza estratta dalla testa e messa su disco."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -291,6 +331,11 @@
    {
     "verso": "KA-013",
     "tipo": "quantificato-da"
+   },
+   {
+    "verso": "KA-113",
+    "tipo": "motiva",
+    "perche": "Il 19% della settimana speso a cercare informazioni (McKinsey) e' il costo che il prompt dello _index attacca: analizzare tutte le cartelle e costruire una mappa navigabile serve a non cercare piu'."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -311,6 +356,11 @@
    {
     "verso": "KA-020",
     "tipo": "quantificato-da"
+   },
+   {
+    "verso": "KA-084",
+    "tipo": "motiva",
+    "perche": "8-12 mesi perche' un nuovo assunto diventi produttivo, gran parte spesi a leggere report: il Canon che congela identita', prodotti, clienti e KPI in un unico file coerente esiste per accorciare proprio quella lettura."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -327,6 +377,11 @@
    {
     "verso": "KA-013",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-155",
+    "tipo": "motiva",
+    "perche": "'Quando una persona lascia l'azienda si porta via la sua conoscenza' e' esattamente il rischio che KA-155 dichiara di voler chiudere versionando il cervello: unica verita' condivisa, indipendente dal singolo."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -423,6 +478,11 @@
    {
     "verso": "KA-046",
     "tipo": "corretto-da"
+   },
+   {
+    "verso": "KA-154",
+    "tipo": "corretto-da",
+    "perche": "Lo shadow AI e' 'dati interni verso una nuvola esterna, nessun controllo'. Il .gitignore che apre con '# === Segreti: MAI versionare ===' e blocca .env, .env.*, *.key e' la contromisura concreta a quella perdita di controllo."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -443,6 +503,11 @@
    {
     "verso": "KA-025",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-078",
+    "tipo": "motiva",
+    "perche": "'La nostra AI e' intelligente quanto cio' che puo' leggere della nostra azienda' e' la tesi che rende necessario il Prompt 1: dare all'AI uno scheletro leggibile (self, areas, projects...) prima di qualsiasi contenuto."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -463,6 +528,11 @@
    {
     "verso": "KA-026",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-084",
+    "tipo": "motiva",
+    "perche": "Se senza contesto proprietario azienda e competitor ricevono la stessa risposta, allora il Canon — che 'congela i fatti duri dell'azienda in un unico canon coerente' — e' precisamente l'atto che crea quel contesto."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -487,6 +557,11 @@
    {
     "verso": "KA-031",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-196",
+    "tipo": "motiva",
+    "perche": "Il ciclo 'si accumula' esige una memoria fra sessioni; KA-196 e' il momento in cui il relatore ammette che quella memoria ancora non c'e' e apre la costruzione della skill journal per crearla."
    }
   ],
   "_origine": "atoms-p1.json"
@@ -639,6 +714,11 @@
    {
     "verso": "KA-037",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-073",
+    "tipo": "esempio-di",
+    "perche": "La demo in cui Claude Code lancia ls e legge entities/ gira dentro l'editor che KA-073 identifica per nome esatto: 'Antigravity IDE — Code with Agent'. Senza KA-073 la demo resta senza nome del tool."
    }
   ],
   "_origine": "atoms-p1b.json"
@@ -863,6 +943,11 @@
    {
     "verso": "KA-046",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-175",
+    "tipo": "corretto-da",
+    "perche": "Il frontmatter del Passo 1 mette title e summary discorsivi e lascia i numeri nella prosa; KA-175 corregge proprio questo: 'metti i numeri nel frontmatter come campi (arr: 720000), non nella prosa', altrimenti vanno sommati a mano."
    }
   ],
   "_origine": "atoms-p1b.json"
@@ -1258,7 +1343,13 @@
   "frame": "frame-0597.png, frame-0612.png",
   "ancora": "ti dice dove archiviarla",
   "confidenza": "osservato",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-046",
+    "tipo": "motiva",
+    "perche": "La tassonomia risponde a 'che tipo di cosa e'' e dice dove archiviare: le 11 cartelle create dal Prompt 1 SONO quella tassonomia resa cartelle."
+   }
+  ],
   "_origine": "atoms-p2a.json"
  },
  {
@@ -1273,6 +1364,11 @@
    {
     "verso": "KA-068",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-045",
+    "tipo": "motiva",
+    "perche": "L'ontologia deve essere 'leggibile dalle macchine': si realizza nel blocco frontmatter che il Passo 1 fa incollare in cima alla nota."
    }
   ],
   "_origine": "atoms-p2a.json"
@@ -1476,6 +1572,11 @@
    {
     "verso": "KA-081",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-029",
+    "tipo": "esempio-di",
+    "perche": "01_chi-siamo-sito-web.md (Milano 2018, due ingegneri, 47 persone) e' il dato proprietario grezzo di cui parla il principio 'data first': non un dato di mercato comprato, ma il materiale interno dell'azienda."
    }
   ],
   "_origine": "atoms-p2a.json"
@@ -1600,6 +1701,11 @@
    {
     "verso": "KA-086",
     "tipo": "motiva"
+   },
+   {
+    "verso": "KA-164",
+    "tipo": "motiva",
+    "perche": "La regola 'una idea per scheda' di Luhmann motiva la forma della nota atomica reale prodotto-aurora-access.md."
    }
   ],
   "_origine": "atoms-p2a.json"
@@ -1700,7 +1806,18 @@
   "frame": "frame-0776.png, frame-0777.png",
   "ancora": "Fatto. Canon scritto in `workspace/canon.md` e gli **7 hub** creati (1 self + 6 reparti), tutti interconnessi senza link morti.",
   "confidenza": "osservato",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-097",
+    "tipo": "precede",
+    "perche": "KA-095 documenta la scrittura del primo hub (self-identita-aurora.md, 38 righe) e la chiusura 'gli 7 hub creati'; KA-097 e' il secondo di quegli hub (areas/area-customer-success.md): stessa serie, ordine dichiarato."
+   },
+   {
+    "verso": "KA-093",
+    "tipo": "esempio-di",
+    "perche": "self-identita-aurora.md e' l'hub centrale che KA-093 nomina per primo nell'ordine di costruzione imposto dal Prompt 3."
+   }
+  ],
   "_origine": "atoms-p2b.json"
  },
  {
@@ -1727,7 +1844,18 @@
   "frame": "frame-0781.png",
   "ancora": "Prende in carico i clienti chiusi da [[area-vendite]] e li fa crescere con l'upsell di nuovi moduli costruiti da [[area-prodotto-engineering]].",
   "confidenza": "osservato",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-057",
+    "tipo": "parte-di",
+    "perche": "area-customer-success.md sta in areas/ e ha tag [areas]: e' una delle 'responsabilita' continue' che KA-057 definisce come contenuto della cartella areas, cioe' i reparti stabili."
+   },
+   {
+    "verso": "KA-093",
+    "tipo": "esempio-di",
+    "perche": "KA-093 impone 'prima gli hub, le note-mappa'; area-customer-success e' esattamente un hub di reparto scritto in quella prima ondata, non una nota di dettaglio."
+   }
+  ],
   "_origine": "atoms-p2b.json"
  },
  {
@@ -1914,6 +2042,11 @@
    {
     "verso": "KA-114",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-118",
+    "tipo": "precede",
+    "perche": "Nel video l'annotazione 'index' sul grafo e la soluzione degli orfani vengono prima del gate di qualita' del Prompt 5."
    }
   ],
   "_origine": "atoms-p2b.json"
@@ -1930,6 +2063,11 @@
    {
     "verso": "KA-107",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-144",
+    "tipo": "motiva",
+    "perche": "KA-109 dice 'noi dobbiamo sapere leggere cosa va male nel grafico e capire come migliorarlo': quel bisogno di leggibilita' e' la ragione per cui esiste la voce di canovaccio sulle impostazioni grafo di KA-144."
    }
   ],
   "_origine": "atoms-p2b.json"
@@ -2086,6 +2224,11 @@
    {
     "verso": "KA-124",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 5 e' una voce del documento Notion 'Tutti i prompt del tutorial', il cui indice integrale sta in KA-042."
    }
   ],
   "_origine": "atoms-p2b.json"
@@ -2102,6 +2245,11 @@
    {
     "verso": "KA-118",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 6 e' una voce dello stesso canovaccio Notion indicizzato in KA-042."
    }
   ],
   "_origine": "atoms-p2b.json"
@@ -2118,6 +2266,11 @@
    {
     "verso": "KA-127",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 7 (llms.txt) e' una voce dello stesso canovaccio Notion."
    }
   ],
   "_origine": "atoms-p2b.json"
@@ -2134,6 +2287,11 @@
    {
     "verso": "KA-120",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 8 (showcase) e' una voce dello stesso canovaccio Notion."
    }
   ],
   "_origine": "atoms-p2b.json"
@@ -2258,6 +2416,11 @@
    {
     "verso": "KA-127",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-133",
+    "tipo": "precede",
+    "perche": "La scrittura di genera_llms.py precede la regola d'uso 'derivato, non si tocca a mano, si rigenera col comando'."
    }
   ],
   "_origine": "atoms-p2b.json"
@@ -2274,6 +2437,11 @@
    {
     "verso": "KA-095",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-073",
+    "tipo": "parte-di",
+    "perche": "I verbi in -ing idiosincratici ('Schlepping...', 'Wrangling...') sono l'indicatore di stato dell'IDE nominato in KA-073: sono un dettaglio di quell'interfaccia, non un comportamento del modello."
    }
   ],
   "_origine": "atoms-p2b.json"
@@ -2374,6 +2542,11 @@
    {
     "verso": "KA-137",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 8 e' scritto prima nel canovaccio Notion di KA-042 e poi eseguito."
    }
   ],
   "_origine": "atoms-p3.json"
@@ -2410,6 +2583,11 @@
    {
     "verso": "KA-140",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-046",
+    "tipo": "parte-di",
+    "perche": "showcase.md fotografa esattamente le 11 cartelle create dal Prompt 1."
    }
   ],
   "_origine": "atoms-p3.json"
@@ -2462,6 +2640,11 @@
    {
     "verso": "KA-137",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-046",
+    "tipo": "quantificato-da",
+    "perche": "La tabella 'Note per cartella' conta le note dentro le 11 cartelle: e' la misura di quella struttura."
    }
   ],
   "_origine": "atoms-p3.json"
@@ -2494,6 +2677,11 @@
    {
     "verso": "KA-143",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 6 appare nel canovaccio Notion il cui indice e' KA-042."
    }
   ],
   "_origine": "atoms-p3.json"
@@ -2514,6 +2702,11 @@
    {
     "verso": "KA-132",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 7 appare nel canovaccio Notion il cui indice e' KA-042."
    }
   ],
   "_origine": "atoms-p3.json"
@@ -2526,7 +2719,13 @@
   "frame": "frame-1006.png, frame-1038.png",
   "ancora": "Forza centrale (Center force): DOLCE -> tira tutto verso il centro, niente disperde ai bordi",
   "confidenza": "osservato",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-003",
+    "tipo": "motiva",
+    "perche": "Le impostazioni a mano (link distance bassa, forza centrale alta) sono cio' che produce la forma a sfera densa con anello esterno di orfani descritta in KA-003: la sfera non e' un dato, e' una configurazione."
+   }
+  ],
   "_origine": "atoms-p3.json"
  },
  {
@@ -2605,6 +2804,11 @@
    {
     "verso": "KA-159",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 10 (interroga il cervello) e' una voce dello stesso canovaccio Notion."
    }
   ],
   "_origine": "atoms-p3.json"
@@ -2657,7 +2861,18 @@
   "frame": "frame-1055.png",
   "ancora": "**\"Antigravity IDE\"** (miniatura scura, editor di codice — bordo evidenziato in blu, finestra attiva)",
   "confidenza": "osservato",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-073",
+    "tipo": "esempio-di",
+    "perche": "La vista app switcher mostra la finestra 'Antigravity IDE' attiva col bordo blu ed e' la seconda prova indipendente del nome esatto che KA-073 fissa (non 'VS Code')."
+   },
+   {
+    "verso": "KA-098",
+    "tipo": "parte-di",
+    "perche": "Il cambio applicazione Antigravity -> Obsidian di KA-098 e' uno dei salti resi possibili dalle cinque app tenute aperte in parallelo che KA-151 fotografa nell'app switcher."
+   }
+  ],
   "_origine": "atoms-p3.json"
  },
  {
@@ -2668,7 +2883,18 @@
   "frame": "frame-1097.png",
   "ancora": "una linea nera che scende e termina su una piccola icona (rettangolo con un cerchio dentro e un pennacchio/bandierina sopra, stile \"postazione/laptop\")",
   "confidenza": "osservato",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-146",
+    "tipo": "motiva",
+    "perche": "Il diagramma Excalidraw con BRANCH, la linea blu e le tre linee parallele e' la spiegazione visiva che precede e giustifica le istruzioni numerate del Prompt 9 (init, branch, commit) di KA-146."
+   },
+   {
+    "verso": "KA-153",
+    "tipo": "precede",
+    "perche": "Il branch disegnato a mano nel diagramma si materializza nel risultato reale su GitHub: branch feature/wave-01, commit 42c675e. Il disegno e' lo schema, KA-153 e' la sua esecuzione verificabile."
+   }
+  ],
   "_origine": "atoms-p3.json"
  },
  {
@@ -2751,7 +2977,23 @@
   "frame": "frame-1121.png",
   "ancora": "Conferma che dentro l'IDE \"Antigravity\" viene aperto un pannello dedicato letteralmente etichettato **\"Claude Code\"**: i due strumenti convivono nella stessa finestra.",
   "confidenza": "dedotto",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-073",
+    "tipo": "parte-di",
+    "perche": "Il pannello etichettato letteralmente 'Claude Code' con il messaggio 'Use planning mode...' e' un riquadro interno alla finestra Antigravity: i due strumenti sono contenitore e contenuto, non alternative."
+   },
+   {
+    "verso": "KA-051",
+    "tipo": "esempio-di",
+    "perche": "Il pannello 'Claude Code' dentro Antigravity e' la stessa applicazione mostrata in KA-051 nella versione desktop (tab Cowork) con il popup di permesso sul vault: due superfici dello stesso agente."
+   },
+   {
+    "verso": "KA-190",
+    "tipo": "precede",
+    "perche": "Il pannello Claude Code aperto in KA-157 e' la finestra in cui poi si digitano '/fast' (Opus 4.6) e '/clear' per collegare Notion via MCP in KA-190."
+   }
+  ],
   "_origine": "atoms-p3.json"
  },
  {
@@ -2810,6 +3052,11 @@
    {
     "verso": "KA-167",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "Il Prompt 11 (domanda di incrocio) e' una voce dello stesso canovaccio Notion."
    }
   ],
   "_origine": "atoms-p3.json"
@@ -2950,6 +3197,11 @@
    {
     "verso": "KA-169",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-089",
+    "tipo": "esempio-di",
+    "perche": "persona-marco-bianchi.md e' una nota atomica reale che applica la regola 'una idea per scheda'."
    }
   ],
   "_origine": "atoms-p3.json"
@@ -3510,6 +3762,11 @@
    {
     "verso": "KA-198",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-026",
+    "tipo": "esempio-di",
+    "perche": "La nota sessione-2026-06-10.md, salvata e agganciata a [[progetto-arr-5m-2026]], e' l'unita' con cui la memoria si accumula: ogni sessione chiusa aggiunge un nodo al ciclo che KA-026 descrive come vantaggio cumulativo."
    }
   ],
   "_origine": "atoms-p3b.json"
@@ -3562,6 +3819,11 @@
    {
     "verso": "KA-203",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-026",
+    "tipo": "esempio-di",
+    "perche": "Il daily 2026-06-10 ('Prima giornata tracciata del diario') e' il primo giro del ciclo chiuso di KA-026: 'lo usi ogni giorno' -> 'la memoria cresce'. La memoria viva della fine e' il principio d'apertura in atto."
    }
   ],
   "_origine": "atoms-p3b.json"
