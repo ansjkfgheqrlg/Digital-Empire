@@ -1,5 +1,29 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-05 (EMPERATOR — piano dell'ecosistema LANCI, consegnato a Gael)
+- INGEST: nessuno. Lavoro di **progettazione**, non di ingestione.
+- CREATO: `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` — **11 dossier**, il piano di costruzione completo
+  dell'ecosistema `15-LANCI`. Copre L4-L5-L6 di `TASK-LANCI-ECO-W2` (task di Gael) e va oltre:
+  12 reparti, 7 flussi con l'agente per ogni fase, 50 agenti, 13 gate, ~235 file, 139-187 ore-uomo.
+- METODO: **tre giri** come impone ADR-006 per i lavori grossi. V1 (3.761 righe, 8 documenti) →
+  critica di **tre revisori indipendenti** (106 rilievi, verifiche eseguite nel codice del repo) →
+  riscrittura. Regola rispettata anche qui: **chi produce non approva**.
+- I DIECI DIFETTI GRAVI CORRETTI (dossier 10 §C.3): squadra minima incapace di produrre prezzo e
+  data · flusso funnel senza fasi ne' agenti · due gate budget che non potevano fallire · griglia
+  copy che dichiarava 60 punti automatici e ne aveva 11, e bocciava 8 pezzi su 14 per costruzione ·
+  `SOSPESO` senza uscita · calendario incompatibile coi flussi che orchestrava · duplicazione di
+  `IB-L2-VEND`, `sentinel-quality`, `sentinel-cost` e dello script di tesoreria · una citazione
+  falsa sui componenti `ObjectionCPB_*` (non hanno props: verificato nel codice).
+- DUE SCOPERTE CHE VALGONO OLTRE I LANCI: **(1)** nessun comando dell'Impero puo' oggi verificare
+  che un agente sia ufficiale — `census.py` marca `.claude/` come vendored, `orphans.py` lo salta,
+  `forge.py` guarda solo `company/`; **(2)** vietare il campo `tools` nel frontmatter toglieva
+  l'unico vincolo meccanico alle regole di comportamento degli agenti.
+- PUNTATORI AGGIORNATI NELLO STESSO TURNO (regola: mai stale): `REGISTRO-NUMERI.md` (15 riservato,
+  prossimo libero 16) · `TASK-GAEL-20260831-SETTIMANA-02.md` (nota d'apertura per Gael) ·
+  `26-ECOSISTEMA-LANCI.md` (marcato superato, rimanda al 29) · `STATO-EMPIRE.md`.
+- ⚠️ NESSUNA CARTELLA `15-LANCI/` CREATA, nessun agente, nessuna skill: il repo sul lato lanci e'
+  come Gael l'ha lasciato. Il deliverable e' il piano, per ordine esplicito di Max.
+
 ## 2026-09-05 (EMPERATOR — la forma del recap diventa fissa)
 - AUTOMODIFICA (ordine diretto di Max): il **battito** di Emperator aveva contenuto corretto ma
   forma variabile a ogni messaggio. Da oggi lo schema e' **unico**: titolo `RECAP — <n>%` in

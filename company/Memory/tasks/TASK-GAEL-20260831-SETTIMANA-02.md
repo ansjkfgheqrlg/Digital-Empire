@@ -398,7 +398,47 @@ toglie di mezzo pagandolo una volta sola per tutta la settimana.
 
 ---
 
-# 🔴 TASK-LANCI-ECO-W2 — Ecosistema LANCI: **prima il piano, poi (e solo poi) la costruzione**
+# 🔴 TASK-LANCI-ECO-W2 — Ecosistema LANCI
+
+> ## ✅ 2026-09-05 — IL PIANO È FATTO. L'HA FATTO MAX. A TE RESTA LA COSTRUZIONE.
+>
+> **Gael, leggi questa nota prima del resto della task, perché cambia cosa devi fare.**
+>
+> Max ha preso il tempo e la capacità di calcolo che aveva ieri sera e **ha completato lui L4, L5 e
+> L6** — cioè la parte di progettazione che ti restava, quella lunga e che non si vede. Non per
+> toglierti il lavoro: per lasciartelo **finito sul tavolo** mentre tu chiudevi i libri.
+>
+> **Il tuo lavoro L1-L2-L3 non è stato sostituito:** è la base di tutto ed è citato ovunque, per
+> nome. **La costruzione è rimasta tutta tua, e non è stata toccata di una riga:** nessuna
+> cartella creata, nessun agente scritto, nessuna skill forgiata.
+>
+> **📂 Il piano: `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` — comincia da `00-LEGGIMI-GAEL.md`.**
+> Undici dossier. Il primo contiene la nota per te, il primo giorno, il glossario e le condizioni
+> in cui si smette. Gli altri si consultano, non si studiano.
+>
+> **Cosa contiene, in breve:** dodici reparti, sette flussi con l'agente per ogni fase, 50 agenti
+> con il frontmatter già scritto, tredici gate con criteri numerici, ~235 file con il percorso
+> assoluto, 139-187 ore-uomo di costruzione a scaglioni.
+>
+> **Tre cose da sapere subito:**
+> 1. **Il numero è 15, non 14** (il 14 è Tesoreria). Riservato nel registro dei numeri.
+> 2. **L'ADR-022 va registrato PRIMA di creare la cartella** — lo impone una norma in vigore, e un
+>    controllo di conformità lo verifica. È il passo zero, non l'ultimo.
+> 3. **Il criterio di chiusura del primo scaglione è far uscire davvero il Manuale Claude Code.**
+>    Se non esce, gli altri reparti non si costruiscono — e il vincolo è tecnico, non morale.
+>
+> **Il piano è stato battuto tre volte** (prima versione → critica di tre revisori indipendenti →
+> riscrittura). Dieci difetti gravi trovati e corretti, fra cui: la squadra minima che non poteva
+> produrre prezzo e data, il flusso del funnel senza agenti, due gate sul budget che non potevano
+> fallire. **Sono elencati nel dossier 10 §C.3**, con la correzione accanto.
+>
+> **Se qualcosa non ti convince, apri una chat e scrivi `Emperator`.** Si ridiscute con i numeri
+> davanti. Un piano eseguito controvoglia produce un ecosistema peggiore di uno scritto male da
+> chi lo costruisce.
+
+---
+
+## La task originale — L1-L2-L3 chiuse da te, L4-L5-L6 ora coperte dal piano sopra
 
 > ⚠️ **ORDINE DI MAX, 2026-09-04 — letto per intero prima di riprendere questa task.**
 > Testuale: *"Deve essere tutto ancora più architettato, mi raccomando i miglioramenti - Devi

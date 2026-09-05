@@ -31,7 +31,12 @@ Nato il 2026-09-04 perché due numeri erano già collisi senza che nessuno se ne
 
 ## Riservati (piano approvato, cartella non ancora creata)
 
-*(nessuno al momento)*
+| # | Nome | Stato | Riferimento |
+|---|---|---|---|
+| **15** | **LANCI** | ⏳ **piano consegnato, in attesa dell'ok di Max** — la cartella **non** va creata prima che l'ADR sia registrato | `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` · ADR-022 proposto |
+
+⚠️ **Attenzione a chi prende il prossimo numero:** il 15 è **prenotato**, non libero. Chi crea un
+ecosistema nuovo prima che i LANCI nascano prenda il **16** e lo scriva qui.
 
 ## Prossimo libero
 

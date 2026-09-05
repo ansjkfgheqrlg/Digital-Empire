@@ -154,19 +154,16 @@ modo che **non si possa costruire tutto prima di aver fatto uscire qualcosa**.
 | # | Dossier | Cosa contiene | Quando lo apri |
 |---|---|---|---|
 | **00** | *questo* | nota, problema, mappa, **il primo giorno**, glossario, **quando si smette** | adesso |
-| 01 | Gerarchia e reparti | sei livelli di comando, i dodici reparti, chi può bloccare chi | prima di costruire |
-| 02 | Memoria e passaggi di consegne | gli spazi di memoria, gli schemi riutilizzabili, i contratti fra reparti | scaglione S0 |
-| 03 | Flusso Strategia e Mercato | le cinque domande, la ricerca con le fonti | scaglione S1 e S3 |
-| 04 | Flusso Prodotto | creazione e certificazione, i due percorsi | scaglione S3 |
-| **05** | **Flusso Offerta** | **il cuore: prezzo e data istruiti fino alla firma** | **scaglione S1** |
-| 06 | Flusso Copy | tutti i testi, la griglia di punteggio a 100 punti | scaglione S2 |
-| 07 | Flusso Funnel | le nove pagine, il gate che pretende la misura | scaglione S1 e S2 |
-| 08 | Flusso Editoriale | il piano dei 37 giorni, e come si evita che i contenuti non escano | scaglione S2 |
-| 09 | Flusso Tesoro | budget, spese, pareggio, consuntivo | scaglione S4 |
-| 10 | Flusso Regia | il calendario T-30→T+7, la sincronizzazione, il tracciamento | scaglione S1 |
-| 11 | Agenti, skill e comandi | i 41 agenti, come si rendono ufficiali, i costi | ogni scaglione |
-| 12 | Costruzione e lancio pilota | gli scaglioni, le ore, il pilota, i rischi | prima di cominciare |
-| 13 | Decisione da registrare e i tre giri | l'ADR proposto, e cosa è cambiato fra le versioni | prima dell'ok di Max |
+| 01 | Gerarchia e reparti | sei livelli di comando, i dodici reparti, la macchina a stati, lo scaglione minimo | prima di costruire |
+| 02 | Memoria e passaggi di consegne | i dodici spazi, gli schemi riutilizzabili, i contratti fra reparti | scaglione S0 |
+| 03 | Flusso Prodotto | creazione e certificazione, **il percorso per prodotti già finiti** | scaglione S1 e S3 |
+| **04** | **Flusso Offerta** | **il cuore: prezzo e data istruiti fino alla firma** | **scaglione S1** |
+| 05 | Flusso Copy | tutti i testi, le tre griglie di punteggio, i punti umani con scadenza | scaglione S2 |
+| 06 | Flussi Funnel ed Editoriale | le nove pagine col gate che pretende la misura · il piano dei contenuti | scaglione S1 e S2 |
+| 07 | Flussi Tesoro, Mercato e Regia | budget e pareggio · la ricerca con le fonti · **il calendario di 38 giorni** | scaglione S1 e S4 |
+| 08 | Agenti, skill e comandi | i 50 agenti, il campo degli strumenti, come si rendono ufficiali, i costi | ogni scaglione |
+| 09 | Costruzione e scaglioni | le ore-uomo, le condizioni di sblocco, il pre-mortem | prima di cominciare |
+| **10** | **Decisione da registrare, pilota e i tre giri** | **l'ADR — che è il PRIMO passo, non l'ultimo** · il lancio pilota · i dieci difetti corretti | **prima di tutto** |
 
 ---
 
@@ -193,8 +190,14 @@ essere consultato, non studiato.
 
 ## 4.2 La prima ora — si costruisce, non si legge
 
+> ⚠️ **Il passo zero, prima di tutti:** la decisione registrata (dossier 10) **va scritta e
+> approvata prima di creare la cartella.** Una norma in vigore lo impone per ogni ecosistema dal
+> quattordicesimo in poi, e un controllo di conformità dell'Impero lo verifica. Senza, la cartella
+> nasce fuori norma e il primo controllo la boccia.
+
 | # | Gesto | Come si sa che è andato |
 |---|---|---|
+| 0 | **L'ADR-022 è scritto e approvato da Max** | il file esiste in `company/Memory/decisions/` |
 | 1 | Crea `company/Ecosistemi/15-LANCI/` | esiste |
 | 2 | Riserva il **15** in `company/Ecosistemi/REGISTRO-NUMERI.md`, **nello stesso commit** | il registro dice 15 occupato |
 | 3 | Scrivi i cinque file di testa dell'ecosistema | esistono e non sono vuoti |

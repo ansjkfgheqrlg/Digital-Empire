@@ -11,7 +11,21 @@ Gate L3: ✅ PASSATO — §1-2 scritte, 8 reparti con missione/output/blocco
    finché Max non approva.
 ---
 
-# 🚀 14 — ECOSISTEMA LANCI
+> ## ⚠️ 2026-09-05 — QUESTO DOCUMENTO È SUPERATO. VAI A `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`
+>
+> Questo file resta come **L3 di Gael**, ed è la base da cui è nato tutto il resto: gli otto
+> reparti, le etichette wrap/nuovo, i sette gate. Va letto per capire **da dove si è partiti**.
+>
+> **Ma due cose qui dentro sono cambiate e non vanno più usate:**
+> 1. **Il numero è `15`, non `14`.** Il 14 è occupato da Tesoreria (collisione trovata il
+>    2026-09-04). Riservato in `company/Ecosistemi/REGISTRO-NUMERI.md`.
+> 2. **I reparti sono dodici, non otto.** I quattro aggiunti — offerta, editoriale, tesoro,
+>    memoria — coprono cose che negli otto non avevano un proprietario.
+>
+> **Il piano completo di costruzione (L4, L5, L6 e oltre) è in
+> `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`**, undici dossier. Si comincia da `00-LEGGIMI-GAEL.md`.
+
+# 🚀 14 — ECOSISTEMA LANCI *(superato: vedi il riquadro sopra)*
 
 > **§1-2, deliverable di L3.** L'ecosistema e i suoi reparti.
 > §3 (flusso end-to-end + comando) è L4. §4 (agenti e gate) è L5. L'ADR è L6.
