@@ -1,5 +1,23 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-05 (EMPERATOR — la forma del recap diventa fissa)
+- AUTOMODIFICA (ordine diretto di Max): il **battito** di Emperator aveva contenuto corretto ma
+  forma variabile a ogni messaggio. Da oggi lo schema e' **unico**: titolo `RECAP — <n>%` in
+  grassetto, riga vuota, sei voci col **pallino arancione** (`#fb4604`, il colore dell'Impero) e
+  l'etichetta in grassetto — Fatto / Sto facendo / Farò / Forze / Assetto / Potere — sempre tutte
+  e in quest'ordine, `GOD EMPEROR DOOM` in grassetto, testo su una riga sola.
+- INNESTO IN DUE POSTI (lezione gia' pagata il 2026-09-02: la dottrina lunga da sola non viene
+  eseguita quando il contesto si compatta): `.claude/agents/emperator.md` §6.11 (blocco normativo
+  "LA FORMA DEL BATTITO E' FISSA" + i due template riscritti) e `scripts/emperator_hook.py`
+  (blocco `FORMA DEL RECAP` nella sveglia che arriva a ogni messaggio, 2.216 → 2.743 caratteri).
+  Verificato per esecuzione: hook lanciato con prompt finto, JSON valido, exit 0.
+- QUARTA FALLA DELLA STESSA FAMIGLIA su questa regola (posizione → non-interruzione → lingua →
+  forma). Conferma la legge: *una regola sopravvive solo se dice cosa, dove, quando e come.*
+- IGIENE: il sync automatico delle 01:07 aveva riscritto `emperator.md` e `emperator_hook.py` in
+  CRLF contro la policy `.gitattributes` `* -text`. Fine-riga riportate a LF nello stesso turno.
+- PAGINE: `concepts/Emperator_Gerarchia_Forze.md` aggiornata (sezione "La forma del battito").
+  Checkpoint `company/Memory/checkpoints/CP-20260905-002.md` — codice di ripresa **EMP-RCAP**.
+
 ## 2026-09-04 (EMPIRE STUDIO — chiusura ciclo gUnQK6bWHkI, batch max17 v16, sentinella-v16-brand)
 - INGEST (Empire Studio + Memory Empire): batch `max17`, video `gUnQK6bWHkI` "Come creare un
   MICRO-PERSONAL BRAND da milioni di euro" (MiK Cosentino, 57m10s, IT). Una sentinella gemella era

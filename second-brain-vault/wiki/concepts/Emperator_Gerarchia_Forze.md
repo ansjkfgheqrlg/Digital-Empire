@@ -3,7 +3,7 @@ Type: CONCEPT
 Status: Active
 Tags: #emperator #agenti #orchestrazione #gerarchia
 Created: 2026-09-03
-Last updated: 2026-09-03
+Last updated: 2026-09-05
 ---
 
 # Emperator — Gerarchia delle Forze e God Emperor Doom
@@ -33,6 +33,34 @@ autocritica finale · dichiarazione d'uscita con checkpoint.
 
 **Dove vive:** `.claude/agents/emperator.md` §2-ter, §6-bis, §6-ter — e, in forma compressa,
 nella stringa `DOTTRINA` di `scripts/emperator_hook.py` (legge della doppia scrittura, §6.13).
+
+## La forma del battito — dove Forze e Assetto si dichiarano *(2026-09-05)*
+
+Forze e assetto non vivono in un blocco a parte: si **ricontano dentro ogni recap**. Dal
+2026-09-05, per ordine di Max, la forma del recap e' fissa carattere per carattere — prima
+cambiava a ogni messaggio e costringeva a rileggerlo invece che scorrerlo:
+
+```
+**⏱️ RECAP — <n>%**
+
+🟠 **Fatto:** <una riga>
+🟠 **Sto facendo:** <una riga>
+🟠 **Farò:** <una riga>
+🟠 **Forze:** <n> attive — <GRADO> <nome> <cosa fa> | ...
+🟠 **Assetto:** **GOD EMPEROR DOOM** | normale
+🟠 **Potere:** <n>%
+```
+
+Sei regole: titolo in grassetto con la percentuale · riga vuota · pallino arancione 🟠 davanti a
+ogni voce (mai un trattino, mai un `•`) · sei etichette in grassetto coi due punti, sempre tutte
+e in quest'ordine · `GOD EMPEROR DOOM` in grassetto · testo dopo l'etichetta normale, una riga
+sola. L'arancione e' il colore dell'Impero (`#fb4604`): il pallino non e' decorazione, e' il
+segnale che quella riga e' un battito e non testo qualunque.
+
+**Il caso "nessuna" si scrive lo stesso**, per Forze come per Assetto: una riga assente non si
+distingue da una dimenticata. Dottrina: `.claude/agents/emperator.md` §6.11. Innestata anche in
+`scripts/emperator_hook.py`, perche' una regola che vive solo nella dottrina lunga non viene
+eseguita quando il contesto si compatta. Checkpoint: `CP-20260905-002` (**EMP-RCAP**).
 
 ## Connessioni
 - [[Digital_Empire_6_Phase_Process]]
