@@ -1738,7 +1738,12 @@
   "frame": "frame-0786.png",
   "ancora": "Se andiamo in Obsidian, ora vedremo se si è rotto o meno.",
   "confidenza": "osservato",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-106",
+    "tipo": "precede"
+   }
+  ],
   "_origine": "atoms-p2b.json"
  },
  {
@@ -1749,7 +1754,12 @@
   "frame": "frame-0806.png",
   "ancora": "Fermati intorno a 28 note di contenuto, quante bastano per una demo che riempie il grafo. Alla fine dammi il conteggio per cartella.",
   "confidenza": "osservato",
-  "relazioni": [],
+  "relazioni": [
+   {
+    "verso": "KA-114",
+    "tipo": "contraddice"
+   }
+  ],
   "_origine": "atoms-p2b.json"
  },
  {
@@ -1802,6 +1812,474 @@
  },
  {
   "id": "KA-103",
+  "tipo": "numero",
+  "contenuto": "Prima Graph view \"piena\" di Obsidian dopo la scrittura in massa delle note del Prompt 4: nuvola fitta di decine di nodi bianchi (note) e verdi (tag, riconoscibili dal prefisso #), collegati da una rete di linee sottili molto densa attorno a un nodo centrale piu' grande, self-identita-aurora, e a un secondo nodo grande poco sopra, area-customer-success. Etichette leggibili con certezza: #property-management, #founder, canon (in alto a destra, isolato, senza linee visibili verso gli altri nodi), kpi-2025-edifici, #efficienza-energetica, #ceo, #pitch-deck, #sales, #marketing, #prodotto, cliente-immobiliare-lombarda, prodotto-aurora-energy, #entities, #cliente, area-vendite, area-marketing, #operations, #finance, area-finance-operations, #churn, kpi-2025-churn, concetto-arr, concetto-churn, #report, #metrica, area-prodotto-engineering, #engineering, #hub, #azienda, 2026. Molte altre etichette (decine) sono presenti ma a risoluzione 1280x720 risultano troppo piccole per una lettura affidabile: dichiarato invece di indovinare.",
+  "fonte": "RnoC5IlOUhs#82:18 (prima Graph view piena in Obsidian, decine di nodi tag+nota) + voce 82:18-82:30",
+  "frame": "frame-0824.png",
+  "ancora": "vedete che abbiamo la sfera che comincia lentamente a crearsi",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-098",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-104",
+  "tipo": "principio",
+  "contenuto": "Passaggio dall'IDE a sola webcam per introdurre il tema degli orfani: \"immaginatela come se viaggiasse solo tra quei collegamenti nella nostra company Brain\" -- l'AI, spiega Joe, si muove esclusivamente lungo i wikilink del vault, mai fuori da essi, motivo per cui non lasciare note isolate dal grafo e' un requisito tecnico e non solo estetico. Segue la domanda retorica, posta tenendo in mano una penna bianca (Apple Pencil) orizzontale davanti al microfono: \"Quindi noi vogliamo avere file orfani? La risposta e' no.\"",
+  "fonte": "RnoC5IlOUhs#84:42 (solo webcam, introduzione al viaggio dell'AI lungo i link) + voce 84:42-84:54",
+  "frame": "frame-0848.png, frame-0849.png",
+  "ancora": "immaginatela come se viaggiasse solo tra quei collegamenti nella nostra company Brain",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-105",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-105",
+  "tipo": "principio",
+  "contenuto": "Distinzione chiave enunciata a sola webcam, in sequenza: \"Vogliamo avere file orfani a livello concettuale, ma non orfani a livello grafo, ok?\" -- un orfano \"concettuale\" (nessuno lo cita a voce nella conversazione quotidiana) va bene, un orfano \"di grafo\" (zero wikilink in entrata) no, \"perche' vogliamo comunque che lei [l'AI] vada dentro\". L'esempio concreto portato: \"le note che avete preso in un meeting, ok? che magari le avete buttate li' a calcioni... per capirci. Eh, vogliamo che queste siano all'interno, no, del tutto\" -- una nota di riunione presa senza cura resta un tipico caso di orfano concettuale che pero' deve restare raggiungibile dal grafo, perche' se l'utente chiede all'AI \"'Hei, vai a vedere che cosa avevamo detto in quel meeting...' perche' c'era una roba interessante e magari non sono collegate a nulla, ok?\" -- se quella nota non e' collegata a nulla, l'AI non ha modo di raggiungerla.",
+  "fonte": "RnoC5IlOUhs#84:54-85:24 (solo webcam, sequenza di 6 scene sulla distinzione orfano concettuale/orfano di grafo) + voce 84:54-85:24",
+  "frame": "frame-0850.png, frame-0851.png, frame-0852.png, frame-0853.png, frame-0854.png, frame-0855.png",
+  "ancora": "Vogliamo avere file orfani a livello concettuale, ma non orfani a livello grafo, ok?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-104",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-107",
+    "tipo": "motiva"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-106",
+  "tipo": "principio",
+  "contenuto": "Dissolvenza incrociata webcam -> Graph view di Obsidian: mentre lo schermo passa dal volto di Joe al grafo, la voce completa il ragionamento sull'accesso alle note isolate (\"noi non avremo modo di accedervi, quindi dobbiamo instaurare ora una specie di...\") e poi annuncia il nome della soluzione: \"...stratagemma per collegare tutti gli orfani. Questo si chiamera' SL/index e volevo farvelo vedere ora...\" (SL/index = slash-index, cioe' il file _index per cartella). Nel frame di transizione, con la Graph view gia' nitida, sono identificati 33 nodi totali (contati uno per uno, nessuna etichetta dubbia): code-export-crm, area-vendite, concetto-arr, concetto-efficienza-energetica, cliente-hotelline-hospitality, persona-marco-bianchi, area-customer-success (nodo grande), persona-elena-ferraro, area-marketing, strumento-crm, kpi-2025-churn, doc-onboarding-cliente, persona-chiara-fontana, prodotto-aurora-energy, nota-collegata-2, area-prodotto-engineering, cliente-banca-adriatica, progetto-arr-6m-2026, area-finance-operations, concetto-churn, cliente-immobiliare-lombarda, output-pitch-deck-vendita, kpi-2025-edifici, kpi-2025-arr, kpi-2025-nrr, area-people-cultura, self-identita-aurora (nodo centrale grande), persona-giulia-rinaldi, prodotto-aurora-core, kpi-2025-clienti-attivi, nota-collegata-1, _template-nota, canon, prodotto-aurora-accesso. Canon e nota-collegata-1 risultano visivamente piu' periferici/in basso rispetto al grosso grappolo centrale, ma dal solo frame non e' possibile determinare con certezza se abbiano linee di collegamento entranti: dichiarato invece di indovinare (a questo punto della registrazione canon dovrebbe essere ancora il nodo orfano gia' segnalato in precedenza, poiche' la soluzione _index non e' ancora stata introdotta nel progetto).",
+  "fonte": "RnoC5IlOUhs#85:30-85:36 (dissolvenza incrociata webcam -> Graph view, 33 nodi identificati) + voce 85:30-85:36",
+  "frame": "frame-0856.png, frame-0857.png",
+  "ancora": "stratagemma per collegare tutti gli orfani. Questo si chiamerà SL/index",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {
+    "verso": "KA-098",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-107",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-107",
+  "tipo": "procedura",
+  "contenuto": "Dimostrazione dal vivo del problema su canon.md riaperto per intero in Obsidian (frontmatter + sezioni 1-2 del canon, gia' trascritte in P2-102): la barra di stato in basso mostra \"0 backlinks - 942 words - 7,192 characters\", confermando che nessuna nota rimanda ancora al Canon. Voce: \"...non c'e' nessuno che va a parlare con il nostro Canon e il problema non e' quante diramazioni abbiamo, ma e' quanti file riferiscono alla nostra nota, vogliamo che il nostro index e la nostra nota siano collegati tra di loro,\" -- Joe ribadisce che la metrica che conta per un vault e' il numero di link IN ENTRATA a una nota, non i link in uscita, ed e' esattamente questa la metrica che l'_index dovra' garantire a ogni nota.",
+  "fonte": "RnoC5IlOUhs#86:24-86:42 (workspace/canon aperto per intero, 0 backlinks) + voce 86:24-86:42",
+  "frame": "frame-0865.png",
+  "ancora": "il problema non è quante diramazioni abbiamo, ma è quanti file riferiscono alla nostra nota",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-106",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-108",
+  "tipo": "procedura",
+  "contenuto": "Annotazione a mano con penna/Apple Pencil verde acceso sulla Graph view di Obsidian: la scritta corsiva \"index\" con una freccia curva che parte da sotto e punta verso la cartella workspace nella sidebar (espansa: _template-nota, canon). Voce: \"perche' questo fa si' che non ci siano orfani scollegati e che quindi lei possa entrare e cominciare a vedere anche queste note.\" -- l'annotazione collega visivamente la soluzione appena nominata (_index per cartella) al nodo canon ancora isolato nel grafo, prima ancora che lo _index venga effettivamente generato.",
+  "fonte": "RnoC5IlOUhs#86:42-86:54 (annotazione a penna verde sul sidebar) + voce 86:42-86:54",
+  "frame": "frame-0868.png",
+  "ancora": "index",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-107",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-114",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-109",
+  "tipo": "principio",
+  "contenuto": "Chiarimento sull'uso pratico del Graph view, in sequenza di sole webcam: \"Di nuovo, noi non useremo il grafico perche' il grafo sara' per l'AI, ma noi dobbiamo sapere leggere cosa va male nel grafico e capire come possiamo migliorarlo di modo tale che l'AI possa utilizzarlo nel migliore dei modi, no? Quindi oltre ai nostri prompt abbiamo anche una maniera visiva e il toggle, no, trova gli orfani per far si' che riusciamo a vederli.\" -- il Graph view non e' uno strumento di lavoro quotidiano per l'utente umano (quello e' per l'AI), ma resta lo strumento diagnostico per individuare visivamente note isolate o mal collegate, incluso un toggle dedicato di Obsidian per \"trovare gli orfani\".",
+  "fonte": "RnoC5IlOUhs#86:54-87:24 (sequenza di 5 scene solo webcam sul ruolo del grafo) + voce 86:54-87:24",
+  "frame": "frame-0870.png, frame-0871.png, frame-0872.png, frame-0873.png, frame-0874.png",
+  "ancora": "il grafo sarà per l'AI, ma noi dobbiamo sapere leggere cosa va male nel grafico",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-107",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-110",
+  "tipo": "numero",
+  "contenuto": "Ritorno allo screen-share su Obsidian: Graph view con la cartella data espansa nella sidebar (5 file: kpi-2025-arr, kpi-2025-churn, kpi-2025-clienti-attivi, kpi-2025-edifici, kpi-2025-nrr) e workspace espansa (_template-nota, canon). Il grafo mostra la stessa rete fitta di nodi gia' elencata in P2-112, con canon ancora presente come nodo a se'. Cursore del mouse posizionato sul nodo prodotto-aurora-core. Voce di transizione: \"cominceremo e lo faremo, pero' era solo una premessa che volevo farvi.\"",
+  "fonte": "RnoC5IlOUhs#87:24 (Graph view completo con cartella data espansa, 44 note) + voce 87:24-87:30",
+  "frame": "frame-0875.png",
+  "ancora": "cominceremo e lo faremo, però era solo una premessa che volevo farvi.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-109",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-111",
+  "tipo": "numero",
+  "contenuto": "Graph view completo con la sidebar allineata alle 11 cartelle (workspace espansa: _index-workspa..., _template-nota..., canon.md). Rete fitta di nodi etichettati, tra cui: kpi-2025-churn, concetto-churn, nota-collegata-2, output-pitch-deck-vendite, area-finance-operations, kpi-2025-nrr, prodotto-aurora-core, concetto-efficienza-energetica, prodotto-aurora-access, doc-onboarding-cliente, _template-nota, area-customer-success (nodo grande, molto connesso), persona-giulia-rinaldi, cliente-banca-adriatica, kpi-2025-edifici, area-prodotto-engineering, self-identita-aurora (nodo grande centrale), cliente-immobiliare-lombarda, persona-chiara-fontana, kpi-2025-arr, area-marketing, area-vendite, kpi-2025-clienti-attivi, prodotto-aurora-energy, concetto-arr, nota-collegata-1, strumento-crm, area-people-cultura, progetto-arr-fin-2026, persona-elena-ferraro, canon, persona-marco-bianchi, code-export-crm, cliente-hoteline-hospitality. Questo e' il grafo appena prima che Claude riceva il comando di analisi/aggiunta indice (scena successiva), con canon ancora presente nella foto come nodo distinto ma non ancora esplicitamente segnalato come collegato o isolato in questo frame specifico.",
+  "fonte": "RnoC5IlOUhs#87:24 (Obsidian, Graph view completo con cartella data espansa) + voce 87:24-87:30",
+  "frame": "frame-0875.png",
+  "ancora": "cominceremo e lo faremo, però era solo una premessa che volevo farvi.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-112",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-112",
+  "tipo": "procedura",
+  "contenuto": "Report completo di Claude dopo la scrittura in massa delle note del Prompt 4, trascritto integralmente, prima parte (\"Regole rispettate\"): \"Ogni nota: una sola idea, frontmatter completo (title, summary, tags, status, created, updated, related), primo tag = nome cartella, ≥3 wikilink uscenti a note reali e uniche. Ordine di creazione studiato perche' ogni related punti solo a note gia' esistenti: zero link morti, zero orfani. Canali commerciali come tag, non cartelle: channel/referral (Immobiliare Lombarda), channel/eventi (pitch deck, progetto ARR). Numeri coerenti col canon: somma ARR clienti = 3,84M, somma immobili = 751.\" Seconda parte (\"Tre cose da segnalarti\"), integrale: \"1. 'Tre prodotti' vs cinque. Mi hai chiesto i tre prodotti, ma nel canon ce ne sono cinque (Core, Energy, Manutenzione, Access, Insights). Ho creato i 3 piu' centrali per la demo (Core, Energy, Access). Vuoi che aggiunga anche Manutenzione e Insights? Sono +2 note. 2. Selezione su persone e clienti. Per restare intorno a 28 ho messo 4 persone (su 11) e 3 clienti attivi (su 9). Se la demo ti serve piu' 'popolata', dimmelo e completo gli altri. 3. Il linter di Obsidian riscrive related. Avevo scritto il campo su una riga sola come da regola, ma il tuo linter lo converte in lista YAML multi-riga (l'hai gia' visto sugli hub). In questo vault la regola 'una riga fisica' non regge a causa di quel tool: se ti serve davvero il formato a riga singola, va disattivata la relativa regola del linter.\" Questo e' il primo momento in cui Claude segnala esplicitamente il conflitto tra la regola dettata a voce (related su una riga) e il comportamento reale del linter -- conflitto che verra' risolto nella scoperta del vero _template-nota.md poco dopo.",
+  "fonte": "RnoC5IlOUhs#87:30 (report Regole rispettate + Tre cose da segnalarti, per intero) + voce 87:30-87:42",
+  "frame": "frame-0876.png",
+  "ancora": "Il linter di Obsidian riscrive related. Avevo scritto il campo su una riga sola come da regola, ma il tuo linter lo converte in lista YAML multi-riga",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-099",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-114",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-113",
+  "tipo": "comando",
+  "contenuto": "Prompt dell'utente che chiede l'introduzione dello _index, trascritto integralmente (con _index evidenziato in blu, selezionato): \"Hey, ora ho bisogno di un'ulteriore aggiunta. Analizza bene la struttura del progetto: analizza tutte le cartelle, anche quelle che hai in conversazione, e assicurati di avere tutto documentato. In particolare, assicurati di avere: - un front matter - un indice (un _index) che possa evitare note orfane all'interno del progetto. Ti posso chiedere di introdurre questo indice in ogni cartella, o dove meglio ritieni opportuno?\" Questo e' il comando che innesca la creazione effettiva degli 11 _index di cartella + l'indice madre _index-aurora.md.",
+  "fonte": "RnoC5IlOUhs#88:30 (prompt _index inviato, Claude in elaborazione) + voce 88:30-88:42",
+  "frame": "frame-0886.png",
+  "ancora": "un indice (un `_index`) che possa evitare note orfane all'interno del progetto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-108",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-114",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-114",
+  "tipo": "procedura",
+  "contenuto": "Risposta completa di Claude alla richiesta dello _index, ricostruita unendo la prima apparizione (scena 215, troncata dal frame) con la ripetizione integrale successiva (scena 223, non troncata): comando eseguito con output \"File .md totali: 44 / Senza frontmatter: NESSUNO / Link rotti (escluso template): NESSUNO\", poi: \"Fatto. Grafo chiuso e verificato. Risultato finale: 44 file .md, tutti con frontmatter -- zero senza. Zero link rotti, zero note orfane (escluso il template, che e' uno scaffold per definizione fuori dal grafo). Cosa ho aggiunto: Un _index in ogni cartella (11) + un indice madre _index-aurora.md alla radice -> unico punto d'ingresso, grafo navigabile dall'alto: madre -> indice di cartella -> nota. Ogni nota ora riceve almeno un link entrante dal suo indice. Nomi unici (_index-<cartella>) per non rompere la risoluzione wikilink di Obsidian. Frontmatter aggiunto a canon.md, che ne era privo. Due scoperte importanti durante l'analisi (te le segnalo perche' cambiano le regole che mi avevi dato prima): 1. Ho trovato il tuo _template-nota.md in workspace/: e' la fonte vera delle regole di frontmatter del vault, e spiega perche' il linter riscriveva le mie note. Le regole reali sono: related a blocco con wikilink fra virgolette (non piu' 'una riga sola'), title/summary sempre fra virgolette doppie, anni come tag annidati anno/2025. Ho riallineato tutti i 12 indici a questo template (erano appena creati, non ancora linterati). 2. La regola 'related su una riga' che mi avevi dato nei turni precedenti e' di fatto superata dal template: erano in conflitto, e il template (col linter che lo applica) vince. Da ora seguo quello.\" Nota testuale: nella prima apparizione (scena 215) il punto 2 e' formulato con una lieve variante (\"e il linter (col template che si applica) vince. Da...\", poi tagliato dal frame) rispetto alla riformulazione integrale successiva citata sopra: entrambe le versioni compaiono nel materiale sorgente, riportate qui entrambe invece di sceglierne una arbitrariamente.",
+  "fonte": "RnoC5IlOUhs#88:42 (referto 44 file, prima apparizione troncata) + RnoC5IlOUhs#93:36 (stessa risposta, ripetizione integrale) + voce 88:42-88:54",
+  "frame": "frame-0888.png, frame-0937.png",
+  "ancora": "44 file .md, tutti con frontmatter — zero senza.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-116",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-115",
+  "tipo": "principio",
+  "contenuto": "Coda esclusiva della risposta di Claude, visibile per intero solo nella ripetizione integrale (scena 223), assente dalla prima apparizione troncata: \"Scope: ho indicizzato solo il vault Aurora. Le directory .claude/ e .claude/plans/ viste in sessione sono config dello strumento, non parte del cervello: lasciate fuori. Vuoi che fissi _index-aurora come nota home (impostazione di Obsidian) o lo lasci a te?\" Claude distingue qui esplicitamente i file di configurazione del proprio strumento (.claude/) dal contenuto reale del cervello aziendale, e propone di fissare l'indice madre come nota \"home\" di Obsidian (impostazione nativa dell'app, separata dal contenuto del vault).",
+  "fonte": "RnoC5IlOUhs#93:36 (chat Antigravity, scope + domanda su _index-aurora come nota home) + voce 93:36-93:48",
+  "frame": "frame-0937.png",
+  "ancora": "Vuoi che fissi `_index-aurora` come nota home (impostazione di Obsidian) o lo lasci a te?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-114",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-116",
+  "tipo": "procedura",
+  "contenuto": "Esempio integrale del pattern _index per cartella, file `outputs/_index-outputs.md` aperto per intero: frontmatter title: \"Indice -- outputs\", summary: \"Mappa dei deliverable prodotti da Aurora.\", tags: [outputs, index, moc], status: active, created: 2026-06-10, updated: 2026-06-10, related a blocco: \"[[output-pitch-deck-vendite]]\", \"[[area-marketing]]\", \"[[self-identita-aurora]]\". Corpo: \"# Indice -- outputs\", \"La cartella outputs/ contiene i deliverable concreti.\", sezione \"## Note\" con \"[[output-pitch-deck-vendite]] -- pitch deck commerciale, agg. dicembre 2025.\", sezione \"## Salendo\" con \"Indice madre: [[_index-aurora]]\" e \"Reparti proprietari: [[area-marketing]], [[area-vendite]]\". Questo file dimostra concretamente la struttura a tre livelli annunciata nella risposta di Claude (P2-120): indice madre -> indice di cartella -> nota, con la sezione \"Salendo\" che fa risalire il lettore (umano o AI) dal singolo _index verso l'indice madre e i reparti proprietari.",
+  "fonte": "RnoC5IlOUhs#88:54 (split screen, _index-outputs.md aperto per intero) + voce 88:54-89:06",
+  "frame": "frame-0890.png",
+  "ancora": "Reparti proprietari: [[area-marketing]], [[area-vendite]]",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-114",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-117",
+  "tipo": "numero",
+  "contenuto": "Graph view di Obsidian dopo la creazione degli _index: compaiono gli 11 nuovi nodi indice, riconoscibili dal prefisso _index-: _index-concepts, _index-data, _index-self, _index-docs, _index-outputs, _index-areas, _index-workspace, _index-sources, _index-code, _index-projects, _index-entities, piu' il nodo centrale _index-aurora posizionato tra area-vendite e self-identita-aurora. Voce: \"E come vedete ora abbiamo il collegamento a Canon. Quindi questo vuol dire che se noi andiamo qui ora il nostro Canon non e' piu' una nota orfana e quindi abbiamo fatto tutto come si deve\" -- conferma diretta che il nodo canon, isolato dalla prima apparizione del grafo (P2-104) fino a poco prima, risulta ora collegato alla rete grazie all'_index di workspace.",
+  "fonte": "RnoC5IlOUhs#89:06 (Obsidian, Graph view con gli _index di ogni cartella e _index-aurora come hub) + voce 89:06-89:18",
+  "frame": "frame-0892.png",
+  "ancora": "E come vedete ora abbiamo il collegamento a Canon.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-098",
+    "tipo": "corretto-da"
+   },
+   {
+    "verso": "KA-114",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-118",
+  "tipo": "comando",
+  "contenuto": "Prompt 5 del canovaccio Notion (\"Il gate di qualita' (solo referto)\", descrizione: \"Controlla ogni nota contro le sei regole e ti restituisce solo il referto.\"), testo integrale: \"Crea un link python che faccia 'a gate di qualita' sul cervello di Aurora. Passa 11 cartelle (salta solo sources/ e workspace/, che sono materiale grezzo e scratch) e controllala contro queste sei regole: 1. Frontmatter completo: title, summary, tags, status, created, updated. 2. Massimo 300 righe di corpo per nota. 3. Almeno 3 wikilink [[...]] in uscita verso note che esistono davvero (conta i bersagli unici, non lo stesso link ripetuto; gli _index non valgono). 4. Zero link rotti: ogni [[bersaglio]] punta a una nota che esiste. 5. Zero orfani: ogni nota ha almeno 1 link in ENTRATA (gli _index sono esentati). 6. Una sola componente connessa: tutto il grafo e' un unico grappolo, non due isole. Elenca gli errori nota per nota, raggruppati per regola. Se e' tutto in regola, rispondi solo: 'OK, 0 errori'. Per ora non correggere niente, dammi solo il referto.\" Nel campo di Antigravity il prompt viene incollato/dettato con una lieve variante di formulazione (\"Passa al setaccio OGNI nota delle 11 cartelle\" invece di \"Passa 11 cartelle\"), coerente con la voce del presentatore piuttosto che con la copia esatta da Notion.",
+  "fonte": "RnoC5IlOUhs#92:36 (Notion, Prompt 5 completo) + RnoC5IlOUhs#92:48 (stesso prompt incollato in Antigravity, variante dettata) + voce 92:30-92:48",
+  "frame": "frame-0927.png, frame-0929.png",
+  "ancora": "Una sola componente connessa: tutto il grafo è un unico grappolo, non due iso",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-124",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-119",
+  "tipo": "comando",
+  "contenuto": "Prompt 6 del canovaccio Notion (\"Correggi e ripeti finche' esce '0 errori'\", descrizione: \"Il ciclo correttivo: l'AI sistema cio' che ha segnalato, rifa' il gate, e ripete fino a zero.\"), testo integrale: \"Correggi le note che hai appena segnalato, applicando le regole del gate: frontmatter completo, massimo 300 righe, almeno 3 wikilink reali in uscita, zero link rotti, zero orfani, un solo grappolo connesso. Poi rifai il gate da capo e mostrami il nuovo referto. Ripeti finche' non esce 'OK, 0 errori'.\" Questo prompt istituisce il ciclo automatico correggi-verifica-ripeti come pattern operativo standard per portare qualunque vault a \"0 errori\" rispetto alle sei regole del gate di qualita', senza intervento manuale nota per nota.",
+  "fonte": "RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 6 per intero) + voce 95:48-96:00",
+  "frame": "frame-0959.png",
+  "ancora": "Il ciclo correttivo: l'AI sistema ciò che ha segnalato, rifà il gate, e ripete fino a zero.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-118",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-120",
+  "tipo": "comando",
+  "contenuto": "Prompt 7 del canovaccio Notion (\"Genera l'indice per la AI (llms.txt)\", descrizione: \"La porta d'ingresso per la AI: un indice derivato, rigenerato dal frontmatter.\"), testo integrale: \"Genera il file llms.txt nella radice del vault: e' l'indice-porta per la AI. Per ogni cartella di contenuto (self, areas, projects, docs, entities, data, code, outputs) elenca le note nel formato \"- [[nome-file]] — summary\", prendendo il summary dal frontmatter di ogni nota. In cima metti una riga di intestazione per ogni cartella. NON includere sources/ e workspace/. NON inventare niente: title e summary vengono SOLO dal frontmatter delle note. Ricordati che llms.txt e' DERIVATO: si rigenera da capo, non si modifica a mano.\" Nota di rilievo: nell'elenco delle cartelle di questo prompt canonico manca esplicitamente 'concepts' (self, areas, projects, docs, entities, data, code, outputs = 8 cartelle su 9 scansionabili), mentre nella formulazione dettata a voce poco dopo (scena 239) 'concepts' compare regolarmente nell'elenco: una piccola discrepanza tra il testo scritto in Notion e la sua ripetizione a voce, riportata cosi' com'e' invece di essere corretta.",
+  "fonte": "RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 7 per intero) + voce 96:00-96:12",
+  "frame": "frame-0959.png",
+  "ancora": "La porta d'ingresso per la AI: un indice derivato, rigenerato dal frontmatter.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-127",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-121",
+  "tipo": "comando",
+  "contenuto": "Prompt 8 del canovaccio Notion (\"Lo showcase (la fotografia per la demo)\", descrizione: \"Numeri da mostrare a un cliente: quante note, quanti link, quante componenti connesse.\"), testo integrale: \"Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 = tutto collegato). Poi dammi una tabella 'note per cartella' e, sotto, l'elenco degli hub (i piu' linkati). Prendi il summary dell'_index di ogni cartella. Salva tutto in _showcase/showcase.md. E' una fotografia DERIVATA: si rigenera, non si scrive a mano.\" Questo e' l'ultimo dei quattro prompt (5-6-7-8) del \"Passo 3 — Gate di qualita', indice per le AI, showcase, grafo, GitHub\": la sua esecuzione effettiva (genera_showcase.py, _showcase/showcase.md) avviene in scene successive a quella qui coperta (181-240), fuori dal perimetro di questo file.",
+  "fonte": "RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 8 per intero) + voce 96:00-96:12",
+  "frame": "frame-0959.png",
+  "ancora": "Numeri da mostrare a un cliente: quante note, quanti link, quante componenti connesse.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-120",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-122",
+  "tipo": "principio",
+  "contenuto": "Sequenza a sola webcam sul limite strutturale della delega all'AI, ricostruita per intero dalle 9 scene consecutive: \"Un concetto molto importante che ehm ripeto abbastanza in community e' [che] nel mondo delle AI noi possiamo fare outsourcing di competenza perche' l'AI puo' scrivere codice al posto nostro, di pensiero perche' molto spesso l'AI puo' pensare quale sia la migliore architettura, ok? al posto nostro, pero' non possiamo fare outsourcing della comprensione e questo e' la skill, il pensiero critico e' comprensione di un problema. Ehm, e questo e' importante perche' siamo arrivati al punto in cui possiamo raccontare un sacco di cose alle AI, ma se non capiamo i cosa c'e' sotto, sara' molto complesso che poi Lei riesca a farlo per noi capendolo da sola. Ok? Perche' ricordatevi sempre che a prescindere da quanto bravi diventino i modelli, sono sempre allenati sulla media dei dati disponibili. Ok? Bene.\" La distinzione e' netta: outsourcing di competenza (scrittura di codice) e outsourcing di pensiero (scelta architetturale) sono deleghe legittime all'AI; l'outsourcing di comprensione (capire davvero il problema) non lo e', perche' i modelli restano allenati sulla media dei dati, non sul caso specifico dell'utente.",
+  "fonte": "RnoC5IlOUhs#94:06-95:00 (sequenza di 9 scene solo webcam, outsourcing competenza vs comprensione) + voce 94:06-95:00",
+  "frame": "frame-0942.png, frame-0943.png, frame-0944.png, frame-0945.png, frame-0946.png, frame-0947.png, frame-0949.png, frame-0950.png, frame-0951.png",
+  "ancora": "sono sempre allenati sulla media dei dati disponibili",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-109",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-123",
+  "tipo": "principio",
+  "contenuto": "Ripresa dello screen-share dopo la sequenza sull'outsourcing di comprensione: Claude, dopo \"Thought for 88s\", annuncia \"Creo il gate come script Python autonomo (nessuna dipendenza esterna) e lo eseguo per produrre il referto.\" e precisa lo scope reale rispetto all'enunciato del prompt: \"Una precisazione di scope che il tuo enunciato implica: l'indice madre _index-aurora.md sta nella radice del vault, non dentro una delle 11 cartelle, quindi per definizione ('ogni nota delle 11 cartelle') resta fuori dal setaccio. Le cartelle effettivamente scansionate sono 9 (11 − sources/ − workspace/).\" Lo stato di avanzamento mostrato durante l'elaborazione e' etichettato \"Cerebrating...\" invece del solito \"Thinking...\", una delle numerose etichette di stato scherzose usate dall'IDE Antigravity per segnalare lavoro in corso.",
+  "fonte": "RnoC5IlOUhs#95:06 (Thought for 88s, precisazione di scope sulle 9 cartelle) + voce 95:06-95:12",
+  "frame": "frame-0952.png",
+  "ancora": "Le cartelle effettivamente scansionate sono 9 (11 − `sources/` − `workspace/`).",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-118",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-124",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-124",
+  "tipo": "procedura",
+  "contenuto": "Referto completo del primo run del gate di qualita', trascritto per intero (compare identico, parola per parola, sia nella scena in cui Claude lo produce sia nella sua ripetizione poco dopo nella stessa sessione): \"Referto: OK, 0 errori. Lo script e' gate_qualita.py alla radice del vault. Ha setacciato le 28 note delle 9 cartelle scansionate (le 11 meno sources/ e workspace/) e tutte e 6 le regole passano: 1. Frontmatter completo — ok. 2. Corpo ≤ 300 righe — ok. 3. ≥3 wikilink uscenti reali e unici, _index esclusi dal conteggio — ok. 4. Zero link rotti — ok. 5. Zero orfani, ≥1 link in entrata (_index esentati) — ok. 6. Una sola componente connessa — ok. Lo lanci con python3 gate_qualita.py (exit code 0 se pulito, 1 se trova errori, cosi' puoi usarlo anche in un hook pre-commit). Il referto raggruppato per regola compare solo quando c'e' almeno un errore; se e' tutto a posto stampa esattamente 'OK, 0 errori'. Due note su come ho risolto i punti ambigui dell'enunciato, cosi' sai cosa controlla davvero: Esistenza dei bersagli (regola 4) valutata sull'intero vault, non solo sulle 9 cartelle: cosi' un eventuale link legittimo verso canon o un indice di workspace/ non risulterebbe falsamente rotto. Connessione (regola 6) calcolata solo tra le note scansionate, grafo non orientato: il grappolo regge da solo, senza dover passare dall'indice madre che sta fuori scope.\" Nella ripetizione successiva nella stessa sessione (Antigravity IDE, non piu' Notion) il numero di note (28) e la stessa lista delle 6 regole vengono confermati identici parola per parola.",
+  "fonte": "RnoC5IlOUhs#95:12 (referto completo: OK, 0 errori) + RnoC5IlOUhs#96:00 (stesso referto ripetuto identico) + voce 95:12-95:18",
+  "frame": "frame-0953.png, frame-0961.png",
+  "ancora": "Ha setacciato le **28 note** delle 9 cartelle scansionate (le 11 meno `sources/` e `workspace/`) e tutte e 6 le regole passano",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-118",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-125",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-125",
+  "tipo": "comando",
+  "contenuto": "Codice sorgente di `gate_qualita.py` aperto in editor, riportato riga per riga fino al punto in cui il frame lo taglia (righe successive alla 37 non leggibili in questo frame, dichiarato):\n```python\n#!/usr/bin/env python3\n\"\"\"\nGate di qualita' sul cervello di Aurora.\nSetaccia ogni nota delle 11 cartelle, saltando sources[...taglio bordo destro]\ne la controlla contro 6 regole. Stampa un referto ragg[...taglio]\nUso: python3 gate_qualita.py\n\"\"\"\n\nimport os\nimport re\nimport sys\n\nVAULT = os.path.dirname(os.path.abspath(__file__))\nSKIP = {\"sources\", \"workspace\"}          # material[...taglio]\nFOLDERS = [\"self\", \"areas\", \"projects\", \"c[...taglio]\",\n           \"entities\", \"data\", \"code\", \"outputs\"]  # [...taglio]\nREQUIRED_FM = [\"title\", \"summary\", \"tags\", \"status\", [...taglio]\nMAX_BODY_LINES = 300\nMIN_OUT = 3\n\nLINK_RE = re.compile(r\"\\[\\[([^\\]]+?)\\]\\]\")\nFM_RE = re.compile(r\"^---\\s*\\n(.*?)\\n---\\s*\\n?\", re.S)\n\ndef is_index(stem):\n    return stem.startswith(\"_index\")\n\ndef split_fm(text):\n    \"\"\"Ritorna (dict_chiavi_presenti, corpo). Frontmat[...taglio]\"\"\"\n    m = FM_RE.match(text)\n    if not m:\n        return None, text\n    block = m.group(1)\n    keys = set()\n    for line in block.splitlines():\n        km = re.match(r\"^([A-Za-z0-9_-]+):\\s*\", line)\n        if km:\n            keys.add(km.group(1))\n```\nLa barra di stato dell'editor conferma: \"Ln 1, Col 1\", \"Spaces: 4\", \"UTF-8\", \"LF\", \"{} Python\", \"3.12.12 64-bit\". Struttura osservabile: costanti VAULT/SKIP/FOLDERS/REQUIRED_FM/MAX_BODY_LINES/MIN_OUT in cima, poi due regex compilate (LINK_RE per i wikilink, FM_RE per il blocco frontmatter delimitato da `---`), poi una funzione `is_index(stem)` che riconosce i file `_index-*` dal prefisso, poi l'inizio di `split_fm(text)` che separa frontmatter e corpo estraendo le chiavi presenti riga per riga con una terza regex.",
+  "fonte": "RnoC5IlOUhs#95:24 (split view: chat a sinistra, gate_qualita.py aperto a destra) + voce 95:24-95:48",
+  "frame": "frame-0954.png",
+  "ancora": "Gate di qualita' sul cervello di Aurora.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-124",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-126",
+  "tipo": "principio",
+  "contenuto": "Conferma del percorso reale del file: il mouse fermo sopra `gate_qualita.py` nella sidebar mostra il tooltip col percorso completo \"~/Desktop/aurora cervello/gate_qualita.py\". Voce: \"Ovviamente e' stato fatto fuori perche' lui e' super partes, no? va a controllare tutte le cartelle, quindi va bene che sia nella cosiddetta root, quindi fuori da tutto da tutte quante queste cartelle, ma dentro a questa cartella principale... Quindi tutti questi 11 piu' questi due sono tutti allo stesso livello.\" Principio generale: uno script che deve controllare (essere \"super partes\" rispetto a) tutte le cartelle di contenuto non puo' vivere dentro nessuna di esse; va messo alla radice del vault, allo stesso livello delle 11 cartelle, insieme all'indice madre `_index-aurora.md`.",
+  "fonte": "RnoC5IlOUhs#95:24-95:24 (annotazione codice) + RnoC5IlOUhs#95:24 (tooltip percorso completo) + voce 95:24-95:36",
+  "frame": "frame-0954.png, frame-0955.png",
+  "ancora": "~/Desktop/aurora cervello/gate_qualita.py",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-125",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-127",
+  "tipo": "procedura",
+  "contenuto": "Esecuzione dal vivo del Prompt 7: il prompt utente, dettato/incollato con la formulazione leggermente estesa vista a schermo (\"Genera il file llms.txt nella radice del vault: e' l'indice-porta per la AI. Per ogni cartella di contenuto (self, areas, projects, concepts, docs, entities, [...] data, code, outputs) elenca le sue note nel formato '- [[nome-file]] — summary'\" — coda tagliata dal riquadro). Risposta di Claude, dopo \"Thought for 24s\": \"llms.txt e' derivato, quindi non lo scrivo a mano: creo un generatore che lo rigenera dal frontmatter delle note, e lo eseguo. Cosi' title/summary vengono solo dalle note e il file si puo' ricostruire da capo quando il cervello cambia. Scelta che ti segnalo: escludo i file _index- dall'elenco. Sono scaffolding di navigazione (summary del tipo 'Mappa della cartella X'), non contenuto; un door-index per AI e' piu' utile se punta alle note vere. Se li vuoi dentro, lo dici e cambio un flag.\" Questa scelta -- escludere gli _index dal file rivolto all'AI -- e' coerente con la loro funzione dichiarata di puro scaffolding di navigazione, non di contenuto da consumare.",
+  "fonte": "RnoC5IlOUhs#96:42 (annotazione penna verde llms.txt + nuovo prompt per generarlo) + voce 96:42-96:48",
+  "frame": "frame-0968.png",
+  "ancora": "escludo i file `_index-` dall'elenco",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-120",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-128",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-128",
+  "tipo": "procedura",
+  "contenuto": "Azione **Write** `genera_llms.py`, badge \"70 lines\", anteprima di codice mostrata: `#!/usr/bin/env python3`, poi apertura della docstring `\"\"\"` con prima riga \"Generatore di llms.txt per il cervello di Aurora.\" Stato di avanzamento durante la scrittura: \"Wrangling...\". Nella sidebar compare il nuovo file `genera_llms.py` subito sotto `gate_qualita.py`. Coerentemente con quanto appena dichiarato in P2-133, il generatore (non il file `llms.txt` stesso) e' l'artefatto scritto a mano; l'esecuzione dello script e la lettura del file `llms.txt` che ne risulta avvengono nella scena immediatamente successiva, fuori dal perimetro 181-240 coperto da questo file.",
+  "fonte": "RnoC5IlOUhs#96:48 (scrittura di genera_llms.py, 70 righe) + voce 96:48-96:54",
+  "frame": "frame-0969.png",
+  "ancora": "Generatore di llms.txt per il cervello di Aurora.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-127",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-129",
+  "tipo": "struttura",
+  "contenuto": "Pattern osservabile trasversale a piu' scene: l'IDE Antigravity non usa mai una generica etichetta \"Loading...\" per segnalare che l'agente sta lavorando, ma ruota tra verbi in -ing scelti in modo giocoso/idiosincratico, diversi ogni volta: \"Schlepping...\" (scena 181, subito dopo bypass permission), \"Thinking...\"/\"Stuttering...\" (scena 190, durante l'elaborazione del Prompt 4), \"Thinking... - 64 tokens\" (scena 214, invio del prompt _index), \"Cerebrating...\" (scena 233, mentre Claude scrive lo script del gate), \"Wrangling...\" (scena 240, mentre scrive genera_llms.py). Il contatore di token accanto all'etichetta (es. \"64 tokens\") e il nome \"Thought for Ns\" prima della risposta finale sono gli unici indicatori numerici di avanzamento mostrati all'utente durante l'attesa.",
+  "fonte": "RnoC5IlOUhs#77:30, #80:42, #88:30, #95:06, #96:48 (etichette di stato Schlepping/Thinking-Stuttering/Cerebrating/Wrangling nelle rispettive scene)",
+  "frame": "frame-0776.png, frame-0808.png, frame-0886.png, frame-0952.png, frame-0969.png",
+  "ancora": "Schlepping...",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-095",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p2b.json"
+ },
+ {
+  "id": "KA-130",
   "tipo": "procedura",
   "contenuto": "Per rigenerare e verificare al volo l'indice llms.txt si usa un unico comando bash concatenato: entra nella cartella del vault, esegue lo script generatore, poi stampa il file appena scritto con un separatore visivo. L'output conferma quante note e quante cartelle sono state indicizzate (30 note in 9 cartelle) prima ancora di aprire il file.",
   "fonte": "RnoC5IlOUhs#96:54 (blocco Bash nella chat Antigravity, scena 241) + voce 96:54-97:24",
@@ -1810,14 +2288,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-104",
+    "verso": "KA-131",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-104",
+  "id": "KA-131",
   "tipo": "struttura",
   "contenuto": "Contenuto integrale di llms.txt come mostrato in editor (righe tagliate a destra dal bordo del frame dove indicato nella fonte, dichiarato): intestazione con nota che il file è DERIVATO e non va modificato a mano, poi una sezione per ognuna delle 9 cartelle di contenuto (self, areas, projects, concepts, docs, entities e le altre), ciascuna con la sua nota elencata nel formato '- [[nome-file]] — summary'. Sezione self: 1 nota (self-identita-aurora). Sezione areas: 6 note (area-customer-success, area-finance-operations, area-marketing, area-people-cultura, area-prodotto-engineering, area-vendite). Sezione projects: 1 nota (progetto-arr-5m-2026). Sezione concepts: 3 note (concetto-arr, concetto-churn, concetto-efficienza-energetica). Sezione docs: 1 nota (doc-onboarding-cliente). Sezione entities: 11 note (2 clienti, 1 cliente aggiuntivo, 4 persone, 3 prodotti, 1 strumento).",
   "fonte": "RnoC5IlOUhs#97:24 (editor llms.txt aperto per intero, scena 242)",
@@ -1826,18 +2304,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-105",
+    "verso": "KA-132",
     "tipo": "esempio-di"
    },
    {
-    "verso": "KA-103",
+    "verso": "KA-130",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-105",
+  "id": "KA-132",
   "tipo": "regola",
   "contenuto": "Spiegazione integrale (letta a schermo, non riassunta) di cosa contiene e cosa esclude llms.txt: le 9 cartelle di contenuto nell'ordine indicato (self → outputs), ognuna con la sua riga di intestazione '## <cartella>'; 30 note elencate come '- [[nome-file]] — summary', con il summary preso SOLO dal frontmatter (le virgolette del template vengono ripulite); sources/ e workspace/ esclusi; file _index- esclusi.",
   "fonte": "RnoC5IlOUhs#97:42 (risposta completa dell'agente in chat, scena 243)",
@@ -1846,14 +2324,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-104",
+    "verso": "KA-131",
     "tipo": "motiva"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-106",
+  "id": "KA-133",
   "tipo": "procedura",
   "contenuto": "Come si rigenera llms.txt (letto per intero): è derivato, non si tocca a mano. Comando: python3 genera_llms.py. Lo script genera_llms.py riscrive llms.txt da capo leggendo i frontmatter correnti; quando si aggiunge o modifica una nota, va rilanciato e l'indice si aggiorna da solo. Nota di coerenza esplicita: il generatore e il gate di qualità condividono le stesse assunzioni (stesse 9 cartelle, stesso parsing di frontmatter, esclusione _index), così quello che passa il gate è esattamente ciò che finisce in llms.txt. Proposta del sistema: incatenare i due in un unico comando che lancia gate_qualita.py e, solo se esce 0, rigenera llms.txt — utile come hook pre-commit; se non si è in un repo git, l'alternativa offerta è un piccolo script build.sh.",
   "fonte": "RnoC5IlOUhs#97:42-97:48 (scene 243/245, testo identico ripetuto)",
@@ -1862,14 +2340,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-103",
+    "verso": "KA-130",
     "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-107",
+  "id": "KA-134",
   "tipo": "principio",
   "contenuto": "L'autore dichiara esplicitamente che llms.txt non è uno standard di settore ma un consiglio personale suo: lo trova utile a livello di efficienza token, ma invita ognuno a valutare se adottarlo o meno per il proprio cervello aziendale.",
   "fonte": "RnoC5IlOUhs#97:48 (voce, scena 243)",
@@ -1878,14 +2356,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-106",
+    "verso": "KA-133",
     "tipo": "motiva"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-108",
+  "id": "KA-135",
   "tipo": "comando",
   "contenuto": "Prompt 8 — 'Lo showcase (la fotografia per la demo)', scritto prima nel canovaccio Notion e poi incollato nella chat: chiede di generare una fotografia sintetica del cervello aziendale da mostrare in una demo commerciale, contando tutte le note (11 cartelle meno sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo. Testo continuo più ampio ricostruito unendo le scene 246-247 (il resto della riga prosegue oltre il bordo del frame, dichiarato tagliato nella fonte): 'Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 e tutto...'.",
   "fonte": "RnoC5IlOUhs#98:24-99:18 (chip llms.txt#50-50 in chat, scene 246-248) + canovaccio Notion scena 244/250",
@@ -1894,14 +2372,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-110",
+    "verso": "KA-137",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-109",
+  "id": "KA-136",
   "tipo": "principio",
   "contenuto": "Lo showcase, come llms.txt, è dichiarato una fotografia DERIVATA: invece di scrivere i numeri a mano, si crea un generatore (genera_showcase.py) e lo si esegue, così i numeri sono calcolati dal grafo reale e si rigenerano automaticamente quando il cervello cambia — evitando che una fotografia commerciale diventi silenziosamente falsa nel tempo.",
   "fonte": "RnoC5IlOUhs#99:18 (risposta dell'agente prima di scrivere il file, scena 248)",
@@ -1910,14 +2388,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-107",
+    "verso": "KA-134",
     "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-110",
+  "id": "KA-137",
   "tipo": "struttura",
   "contenuto": "Contenuto integrale del file sorgente _showcase/showcase.md generato: intestazione con dichiarazione di derivazione e scope esplicito (le 11 cartelle meno sources/ e workspace/, l'indice madre alla radice resta fuori), poi la tabella 'La fotografia' a due colonne (Metrica | Valore): Note totali 39; di cui note di contenuto 30; di cui hub (un _index per cartella) 9; Wikilink totali (la colla del grafo) 262; Componenti connesse 1.",
   "fonte": "RnoC5IlOUhs#99:30 (editor sorgente showcase.md, scena 249)",
@@ -1926,18 +2404,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-111",
+    "verso": "KA-138",
     "tipo": "quantificato-da"
    },
    {
-    "verso": "KA-113",
+    "verso": "KA-140",
     "tipo": "parte-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-111",
+  "id": "KA-138",
   "tipo": "numero",
   "contenuto": "Le tre metriche chiave della fotografia del cervello Aurora, come riassunte in chat dopo la generazione: 39 note totali (30 di contenuto + 9 hub, un _index per cartella); 262 wikilink che le tengono insieme; 1 componente connessa, cioè tutto collegato, nessuna isola nel grafo.",
   "fonte": "RnoC5IlOUhs#99:30 (risposta 'Fatto.' dell'agente, scena 249)",
@@ -1946,18 +2424,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-114",
+    "verso": "KA-141",
     "tipo": "corretto-da"
    },
    {
-    "verso": "KA-110",
+    "verso": "KA-137",
     "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-112",
+  "id": "KA-139",
   "tipo": "regola",
   "contenuto": "Regola di scope dichiarata nel corpo stesso di showcase.md: lo showcase copre le 11 cartelle del vault meno sources/ e workspace/ (quindi 9 cartelle), e l'indice madre alla radice del vault (_index-aurora.md) resta fuori dal conteggio — la stessa convenzione di esclusione già vista in llms.txt e nel gate di qualità.",
   "fonte": "RnoC5IlOUhs#99:30 (blocco di nota in cima a showcase.md, scena 249)",
@@ -1966,14 +2444,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-105",
+    "verso": "KA-132",
     "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-113",
+  "id": "KA-140",
   "tipo": "struttura",
   "contenuto": "Tabella 'Note per cartella' del rendering di showcase.md, con colonne Cartella | Contenuto | Hub | Totale: self 1/1/2; areas 6/1/7; projects 1/1/2; concepts 3/1/4; docs 1/1/2; entities 11(?)/1(?)/12(?) — quest'ultima riga è tagliata dal bordo inferiore del frame nella fonte, cifre poco nitide e dichiarate incerte.",
   "fonte": "RnoC5IlOUhs#99:30 (pannello 'Preview showcase.md', scena 249)",
@@ -1982,14 +2460,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-110",
+    "verso": "KA-137",
     "tipo": "parte-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-114",
+  "id": "KA-141",
   "tipo": "regola",
   "contenuto": "Autocorrezione esplicita e non richiesta del sistema, dichiarata onestamente in chat: in un turno precedente l'agente aveva detto '28 note scansionate' dal gate di qualità — un numero sbagliato che l'agente stesso ammette di aver 'buttato lì', perché il gate non lo aveva realmente stampato. Il conteggio vero, ricalcolato al momento, è 39 note nelle 9 cartelle (30 contenuto + 9 hub); i tre strumenti (gate_qualita.py, genera_llms.py, genera_showcase.py) condividono ora lo stesso scope e lo stesso parsing, quindi i numeri sono coerenti tra loro.",
   "fonte": "RnoC5IlOUhs#103:48 (risposta dell'agente prima del Prompt 9, scena 254)",
@@ -1998,14 +2476,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-111",
+    "verso": "KA-138",
     "tipo": "corretto-da"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-115",
+  "id": "KA-142",
   "tipo": "comando",
   "contenuto": "Prompt 6 del canovaccio Notion — 'Correggi e ripeti finché esce' (titolo tagliato dal bordo del frame nella fonte): sottotitolo 'Il ciclo correttivo: l'AI sistema ciò che hai segnalato, ril[egge]...'. Corpo (tagliato a destra, dichiarato nella fonte): 'Correggi le note che hai appena segnalato, ar[...] frontmatter completo, massimo 300 righe, alm[eno]... link rotti, zero orfani, un solo grappolo con[...] mostrami il nuovo referto. Ripeti finché no[n]...'.",
   "fonte": "RnoC5IlOUhs#97:48 (pagina Notion 'Company Brain — Tutti i prompt', scena 244)",
@@ -2014,110 +2492,19 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-116",
+    "verso": "KA-143",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-116",
+  "id": "KA-143",
   "tipo": "comando",
   "contenuto": "Prompt 7 del canovaccio Notion — 'Genera l'indice per la AI (llms.txt)', sottotitolo 'La porta d'ingresso per le AI: un indice derivato, rigenerato dal frontmatter'. Corpo, ricostruito unendo la versione più estesa vista nella scena 250 (righe tagliate a destra dal bordo, dichiarato): 'Genera il file llms.txt nella radice del vault: e' l'indi[ce]... Per ogni cartella di contenuto (self, areas, projects, co[ncepts,] data, code, outputs) elenca le sue note nel formato \"- [[...]]\"... prendendo il summary dal frontmatter di ogni nota. In cim[a]... intestazione per ogni cartella. NON includere sources/ e [workspace/]... niente: title e summary vengono SOLO dal frontmatter dell[a nota]... Ricordati che llms.txt e' DERIVATO: si rigenera da capo, [...]'. Corrisponde parola per parola al prompt eseguito in azione nelle scene 239/242.",
   "fonte": "RnoC5IlOUhs#100:24 (pagina Notion, scena 250)",
   "frame": "frame-1005.png",
   "ancora": "Genera il file llms.txt nella radice del vault: e' l'indi",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-104",
-    "tipo": "precede"
-   },
-   {
-    "verso": "KA-105",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3.json"
- },
- {
-  "id": "KA-117",
-  "tipo": "procedura",
-  "contenuto": "Voce del canovaccio Notion 'Impostazioni grafo a sfera (a mano, in Obsidian)', non ancora eseguita a schermo, letta per intero nella sua versione più completa (scena 253): Distanza dei link (Link distance): BASSA → avvicina le note collegate, formano piccole sfere fitte; Forza di repulsione (Repel force): MODERATA → le note non si toccano ma non volano via; Forza centrale (Center force): DOLCE → tira tutto verso il centro, niente disperde ai bordi; Orfani (Show orphans): ACCESI → formano l'anello esterno attorno al grappolo. Istruzione aggiuntiva: poi aggiungere i gruppi di colore per cartella (le persone di un colore, i dati di un altro, ecc.).",
-  "fonte": "RnoC5IlOUhs#100:30 e #103:42 (pagina Notion, scene 251/253)",
-  "frame": "frame-1006.png, frame-1038.png",
-  "ancora": "Forza centrale (Center force): DOLCE -> tira tutto verso il centro, niente disperde ai bordi",
-  "confidenza": "osservato",
-  "relazioni": [],
-  "_origine": "atoms-p3.json"
- },
- {
-  "id": "KA-118",
-  "tipo": "comando",
-  "contenuto": "Prompt 9 (versione breve, letta per prima nella scena 251) — 'Metti il vault sotto git (senza push)', sottotitolo 'La macchina del tempo locale: repository + branch + commit, niente push.' Testo integrale: 'Metti il mio vault sotto git, così ho una macchina del tempo. Se non è ancora un repository, crealo. Crea un branch di lavoro chiamato feature/wave-01, prendi tutti i file e fai un commit con questo messaggio: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". NON fare push da nessuna parte: il cervello resta solo sul mio computer.'",
-  "fonte": "RnoC5IlOUhs#100:30 (pagina Notion, scena 251)",
-  "frame": "frame-1006.png",
-  "ancora": "NON fare push da nessuna parte: il cervello resta solo sul mio computer.",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-119",
-    "tipo": "contraddice"
-   },
-   {
-    "verso": "KA-120",
-    "tipo": "parte-di"
-   }
-  ],
-  "_origine": "atoms-p3.json"
- },
- {
-  "id": "KA-119",
-  "tipo": "comando",
-  "contenuto": "Prompt 9 (versione 'istruzioni precise', vista pochi minuti dopo alla scena 253 e incollata per intero nell'IDE alla scena 254) — stesso titolo 'Metti il vault sotto git' e stesso sottotitolo, ma corpo completamente diverso, un elenco numerato: 'Trasforma il mio vault Obsidian in un repository Git. Obiettivo: avere una cronologia completa delle modifiche, come una macchina del tempo per il mio company brain. Istruzioni precise: 1. Verifica se la cartella del vault è già un repository Git. Se non lo è, inizializzalo con git init. 2. Crea un file .gitignore adatto a Obsidian: escludi .obsidian/workspace.json, .obsidian/workspace-mobile.json, file di cache e file di sistema (.DS_Store, Thumbs.db). Tutto il resto della cartella .obsidian va versionato, perché contiene grafo e configurazioni. 3. Crea un branch di lavoro chiamato feature/wave-01 e spostati su quel branch. 4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". 5. Alla fine mostrami: il branch attivo, l'output di git status e l'output di git log --oneline.'",
-  "fonte": "RnoC5IlOUhs#103:42-105:18 (pagina Notion scena 253 + IDE Antigravity scena 254/258)",
-  "frame": "frame-1038.png, frame-1039.png, frame-1054.png",
-  "ancora": "4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto:",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-118",
-    "tipo": "contraddice"
-   },
-   {
-    "verso": "KA-126",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3.json"
- },
- {
-  "id": "KA-120",
-  "tipo": "anti-pattern",
-  "contenuto": "Le due letture dello stesso riquadro 'Prompt 9', rilette due volte per certezza, non coincidono: alle 100:30 il codice dice esplicitamente 'NON fare push da nessuna parte', mentre alle 103:42 lo stesso riquadro (stesso titolo, stesso sottotitolo) contiene un elenco numerato il cui punto 4 dice 'fai commit e push' — l'istruzione di sicurezza è sparita, sostituita dall'opposto. Non è un errore di lettura: il contenuto del box è realmente diverso tra i due momenti, probabilmente riscritto/espanso con l'AI tra una ripresa e l'altra. Nota operativa per l'Impero: un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un 'espandi questo prompt'.",
-  "fonte": "RnoC5IlOUhs#103:42 (confronto scena 251 vs scena 253) 🔎 doppia lettura per certezza",
-  "frame": "frame-1006.png, frame-1038.png",
-  "ancora": "un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un \"espandi questo prompt\".",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-118",
-    "tipo": "contraddice"
-   },
-   {
-    "verso": "KA-119",
-    "tipo": "contraddice"
-   }
-  ],
-  "_origine": "atoms-p3.json"
- },
- {
-  "id": "KA-121",
-  "tipo": "comando",
-  "contenuto": "Prompt 10 del canovaccio Notion — 'Interroga il cervello (a 28 note, senza RAG)', sottotitolo 'Carichi tutte le note e fai una domanda da imprenditore. Regola d'oro: rispondi solo con le note, cita il file, se non c'è dillo.' Testo integrale: 'Ti do l'intero cervello di Aurora Sistemi: tutte le note markdown del vault, con il loro frontmatter. Rispondi alla mia domanda usando SOLO il contenuto di queste note. - Cita sempre il nome del file da cui prendi ogni informazione. - Se la risposta non è presente nelle note, scrivi esattamente: \"Non presente nel cervello.\" Non inventare, non stimare, non dedurre. Domanda: qual è l'ARR di Aurora e come è cambiato l'organico negli ultimi tre anni?'",
-  "fonte": "RnoC5IlOUhs#100:30 (pagina Notion, scena 251)",
-  "frame": "frame-1006.png",
-  "ancora": "Rispondi alla mia domanda usando SOLO il contenuto di queste note.",
   "confidenza": "osservato",
   "relazioni": [
    {
@@ -2132,7 +2519,98 @@
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-122",
+  "id": "KA-144",
+  "tipo": "procedura",
+  "contenuto": "Voce del canovaccio Notion 'Impostazioni grafo a sfera (a mano, in Obsidian)', non ancora eseguita a schermo, letta per intero nella sua versione più completa (scena 253): Distanza dei link (Link distance): BASSA → avvicina le note collegate, formano piccole sfere fitte; Forza di repulsione (Repel force): MODERATA → le note non si toccano ma non volano via; Forza centrale (Center force): DOLCE → tira tutto verso il centro, niente disperde ai bordi; Orfani (Show orphans): ACCESI → formano l'anello esterno attorno al grappolo. Istruzione aggiuntiva: poi aggiungere i gruppi di colore per cartella (le persone di un colore, i dati di un altro, ecc.).",
+  "fonte": "RnoC5IlOUhs#100:30 e #103:42 (pagina Notion, scene 251/253)",
+  "frame": "frame-1006.png, frame-1038.png",
+  "ancora": "Forza centrale (Center force): DOLCE -> tira tutto verso il centro, niente disperde ai bordi",
+  "confidenza": "osservato",
+  "relazioni": [],
+  "_origine": "atoms-p3.json"
+ },
+ {
+  "id": "KA-145",
+  "tipo": "comando",
+  "contenuto": "Prompt 9 (versione breve, letta per prima nella scena 251) — 'Metti il vault sotto git (senza push)', sottotitolo 'La macchina del tempo locale: repository + branch + commit, niente push.' Testo integrale: 'Metti il mio vault sotto git, così ho una macchina del tempo. Se non è ancora un repository, crealo. Crea un branch di lavoro chiamato feature/wave-01, prendi tutti i file e fai un commit con questo messaggio: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". NON fare push da nessuna parte: il cervello resta solo sul mio computer.'",
+  "fonte": "RnoC5IlOUhs#100:30 (pagina Notion, scena 251)",
+  "frame": "frame-1006.png",
+  "ancora": "NON fare push da nessuna parte: il cervello resta solo sul mio computer.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-146",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-147",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p3.json"
+ },
+ {
+  "id": "KA-146",
+  "tipo": "comando",
+  "contenuto": "Prompt 9 (versione 'istruzioni precise', vista pochi minuti dopo alla scena 253 e incollata per intero nell'IDE alla scena 254) — stesso titolo 'Metti il vault sotto git' e stesso sottotitolo, ma corpo completamente diverso, un elenco numerato: 'Trasforma il mio vault Obsidian in un repository Git. Obiettivo: avere una cronologia completa delle modifiche, come una macchina del tempo per il mio company brain. Istruzioni precise: 1. Verifica se la cartella del vault è già un repository Git. Se non lo è, inizializzalo con git init. 2. Crea un file .gitignore adatto a Obsidian: escludi .obsidian/workspace.json, .obsidian/workspace-mobile.json, file di cache e file di sistema (.DS_Store, Thumbs.db). Tutto il resto della cartella .obsidian va versionato, perché contiene grafo e configurazioni. 3. Crea un branch di lavoro chiamato feature/wave-01 e spostati su quel branch. 4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". 5. Alla fine mostrami: il branch attivo, l'output di git status e l'output di git log --oneline.'",
+  "fonte": "RnoC5IlOUhs#103:42-105:18 (pagina Notion scena 253 + IDE Antigravity scena 254/258)",
+  "frame": "frame-1038.png, frame-1039.png, frame-1054.png",
+  "ancora": "4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto:",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-145",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-153",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3.json"
+ },
+ {
+  "id": "KA-147",
+  "tipo": "anti-pattern",
+  "contenuto": "Le due letture dello stesso riquadro 'Prompt 9', rilette due volte per certezza, non coincidono: alle 100:30 il codice dice esplicitamente 'NON fare push da nessuna parte', mentre alle 103:42 lo stesso riquadro (stesso titolo, stesso sottotitolo) contiene un elenco numerato il cui punto 4 dice 'fai commit e push' — l'istruzione di sicurezza è sparita, sostituita dall'opposto. Non è un errore di lettura: il contenuto del box è realmente diverso tra i due momenti, probabilmente riscritto/espanso con l'AI tra una ripresa e l'altra. Nota operativa per l'Impero: un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un 'espandi questo prompt'.",
+  "fonte": "RnoC5IlOUhs#103:42 (confronto scena 251 vs scena 253) 🔎 doppia lettura per certezza",
+  "frame": "frame-1006.png, frame-1038.png",
+  "ancora": "un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un \"espandi questo prompt\".",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-145",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-146",
+    "tipo": "contraddice"
+   }
+  ],
+  "_origine": "atoms-p3.json"
+ },
+ {
+  "id": "KA-148",
+  "tipo": "comando",
+  "contenuto": "Prompt 10 del canovaccio Notion — 'Interroga il cervello (a 28 note, senza RAG)', sottotitolo 'Carichi tutte le note e fai una domanda da imprenditore. Regola d'oro: rispondi solo con le note, cita il file, se non c'è dillo.' Testo integrale: 'Ti do l'intero cervello di Aurora Sistemi: tutte le note markdown del vault, con il loro frontmatter. Rispondi alla mia domanda usando SOLO il contenuto di queste note. - Cita sempre il nome del file da cui prendi ogni informazione. - Se la risposta non è presente nelle note, scrivi esattamente: \"Non presente nel cervello.\" Non inventare, non stimare, non dedurre. Domanda: qual è l'ARR di Aurora e come è cambiato l'organico negli ultimi tre anni?'",
+  "fonte": "RnoC5IlOUhs#100:30 (pagina Notion, scena 251)",
+  "frame": "frame-1006.png",
+  "ancora": "Rispondi alla mia domanda usando SOLO il contenuto di queste note.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-158",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-159",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3.json"
+ },
+ {
+  "id": "KA-149",
   "tipo": "comando",
   "contenuto": "Prompt 9 completo così come incollato e visibile per intero nel campo di input dell'IDE Antigravity (bordo rosso, non ancora inviato), tutte e 5 le istruzioni leggibili: '1. Verifica se la cartella del vault è già un repository Git. Se non lo è, inizializzalo con git init. 2. Crea un file .gitignore adatto a Obsidian: escludi .obsidian/workspace.json, .obsidian/workspace-mobile.json, file di cache e file di sistema (.DS_Store, Thumbs.db). Tutto il resto della cartella .obsidian va versionato, perché contiene grafo e configurazioni. 3. Crea un branch di lavoro chiamato feature/wave-01 e spostati su quel branch. 4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". 5. Alla fine mostrami: il branch attivo, l'output di git status e l'output di git log --oneline.' Sotto, campo separato: 'GITHUB TOKEN:' con cursore lampeggiante e campo vuoto.",
   "fonte": "RnoC5IlOUhs#105:18 (scena 258)",
@@ -2141,18 +2619,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-119",
+    "verso": "KA-146",
     "tipo": "esempio-di"
    },
    {
-    "verso": "KA-123",
+    "verso": "KA-150",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-123",
+  "id": "KA-150",
   "tipo": "procedura",
   "contenuto": "Per dare accesso a GitHub all'agente, il presentatore valuta due strade a voce (MCP o token) e sceglie il token; annuncia l'intenzione di metterlo in un file .env (che infatti viene aperto vuoto, una sola riga, nell'Explorer accanto al prompt), ma nella pratica il token finisce incollato direttamente nel campo 'GITHUB TOKEN:' dentro il riquadro del prompt stesso (scena 258), non nel file .env. Il token viene nominato 'second brain' durante la creazione su GitHub.",
   "fonte": "RnoC5IlOUhs#104:18-105:18 (scene 255, 258)",
@@ -2161,18 +2639,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-122",
+    "verso": "KA-149",
     "tipo": "parte-di"
    },
    {
-    "verso": "KA-127",
+    "verso": "KA-154",
     "tipo": "motiva"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-124",
+  "id": "KA-151",
   "tipo": "struttura",
   "contenuto": "Vista 'app switcher' con le cinque applicazioni tenute aperte in parallelo per costruire il tutorial del cervello Aurora: Desktop 1, Obsidian (graph view), Antigravity IDE (finestra attiva, bordo evidenziato in blu — conferma il nome esatto del tool, non 'VS Code' né 'Claude Code'), Notion, Google Chrome.",
   "fonte": "RnoC5IlOUhs#105:24 (scena 259)",
@@ -2183,7 +2661,7 @@
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-125",
+  "id": "KA-152",
   "tipo": "definizione",
   "contenuto": "Diagramma Excalidraw disegnato a mano per spiegare Git come analogia visiva: in alto scritta BRANCH con una linea che scende verso un'icona 'postazione/laptop' (rettangolo con cerchio dentro e bandierina sopra); tre linee orizzontali parallele — una blu etichettata MAIN con trattini lungo il percorso, una arancione che sale verso un fitto scarabocchio rosso a zig-zag (che sembra rappresentare un branch fallito/da scartare, coerente con l'esempio verbale di un branch di prova per una modifica al sito che se non funziona si cancella — lettura del testo sotto lo scarabocchio non verificabile con certezza), una verde etichettata COMMIT che parte da un pallino verde e termina con una freccia corta.",
   "fonte": "RnoC5IlOUhs#109:36 (Excalidraw, scena 261)",
@@ -2194,7 +2672,7 @@
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-126",
+  "id": "KA-153",
   "tipo": "numero",
   "contenuto": "Esito reale del Prompt 9 (versione con push) su GitHub: repository aurora-cervello, branch feature/wave-01, commit con messaggio esatto 'Bootstrap del cervello a 11 cartelle: note + grafo Obsidian', hash 42c675e (esteso: 42c675e7ed8fa83797aaf98defcd3f5224e8d011), datato 'Jun 10, 2026'. Il diff del commit mostra 50 files changed, +1.638 righe aggiunte, nessuna cancellazione, con un banner di avviso 'Some content is hidden' perché il commit è troppo grande per essere mostrato tutto.",
   "fonte": "RnoC5IlOUhs#111:12-111:36 (github.com/Giobebbe/aurora-cervello, scene 275-278)",
@@ -2203,18 +2681,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-119",
+    "verso": "KA-146",
     "tipo": "esempio-di"
    },
    {
-    "verso": "KA-127",
+    "verso": "KA-154",
     "tipo": "parte-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-127",
+  "id": "KA-154",
   "tipo": "struttura",
   "contenuto": "Diff mostrato su GitHub per il file .gitignore generato dall'agente (badge verde '+21' righe, le prime 8 leggibili per intero prima del taglio del frame, dichiarato): '# === Segreti: MAI versionare ===' / '.env' / '.env.*' / '*.key' / (riga vuota) / '# === Obsidian: stato UI locale (non versionare) ===' / '.obsidian/workspace.json' / '.obsidian/workspace-mobile.json'.",
   "fonte": "RnoC5IlOUhs#111:30 (diff del commit 42c675e su GitHub, scena 277)",
@@ -2223,18 +2701,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-123",
+    "verso": "KA-150",
     "tipo": "esempio-di"
    },
    {
-    "verso": "KA-126",
+    "verso": "KA-153",
     "tipo": "parte-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-128",
+  "id": "KA-155",
   "tipo": "principio",
   "contenuto": "Motivazione a voce, riepilogata attraverso una lunga sequenza di scene talking-head, sul perché versionare il cervello: proteggersi dalla perdita del computer o da un suo guasto; e, per un team, garantire che chi aggiorna la company brain lasci un'unica verità condivisa — un'unica 'source of truth' — che gli altri possano recuperare (da GitHub o da un cloud storage) invece di lavorare su copie disallineate.",
   "fonte": "RnoC5IlOUhs#110:06-110:30 (talking head, scene 266-270)",
@@ -2243,14 +2721,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-119",
+    "verso": "KA-146",
     "tipo": "motiva"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-129",
+  "id": "KA-156",
   "tipo": "principio",
   "contenuto": "Confronto esplicito tra GitHub e Google Drive come alternative equivalenti per il version control del cervello: GitHub è più tecnico e scala meglio, ma richiede più competenza; Google Drive costa relativamente poco e offre comunque un posto dove tenere le varie versioni del progetto e tornare a una versione precedente quando serve.",
   "fonte": "RnoC5IlOUhs#110:36-110:54 (talking head, scene 271-273)",
@@ -2259,14 +2737,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-128",
+    "verso": "KA-155",
     "tipo": "parte-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-130",
+  "id": "KA-157",
   "tipo": "definizione",
   "contenuto": "Dentro l'IDE Antigravity viene aperto un pannello dedicato letteralmente etichettato 'Claude Code' (logo, messaggio di benvenuto 'Use planning mode to talk through big changes before a commit. Press [Shift][Tab] to cycle between modes.'): i due strumenti (Antigravity e Claude Code) convivono nella stessa finestra dell'editor.",
   "fonte": "RnoC5IlOUhs#112:00 (scena 279)",
@@ -2277,7 +2755,7 @@
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-131",
+  "id": "KA-158",
   "tipo": "procedura",
   "contenuto": "Demo live del Prompt 10: l'agente, prima di rispondere, esegue un comando bash di ricerca testuale multi-keyword nel vault (grep -rin -e \"organico\" -e \"persone\" -e \"dipendent\" -e \"team\" -e \"cresci\" -e \"fonda[to]\") per trovare informazioni sull'organico storico, poi risponde citando sempre il file sorgente: per l'ARR cita kpi-2025-arr.md (confermato anche in area-finance-operations.md); per l'organico, non trovando uno storico triennale, applica la regola d'oro e dichiara l'assenza del dato.",
   "fonte": "RnoC5IlOUhs#112:30 (scena 280)",
@@ -2286,18 +2764,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-121",
+    "verso": "KA-148",
     "tipo": "esempio-di"
    },
    {
-    "verso": "KA-132",
+    "verso": "KA-159",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-132",
+  "id": "KA-159",
   "tipo": "regola",
   "contenuto": "Applicazione concreta della regola d'oro del Prompt 10 nella demo: alla domanda su come è cambiato l'organico negli ultimi tre anni, l'agente risponde testualmente 'Non presente nel cervello.', spiegando che le note riportano solo l'organico attuale (47 persone su due sedi Milano e Bologna) e il piano di +6 assunzioni approvato per il 2026 (file area-people-cultura.md, canon.md), senza alcuno storico sui tre anni precedenti — nessuna stima, nessuna invenzione.",
   "fonte": "RnoC5IlOUhs#112:30 (scena 280)",
@@ -2306,18 +2784,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-121",
+    "verso": "KA-148",
     "tipo": "esempio-di"
    },
    {
-    "verso": "KA-139",
+    "verso": "KA-166",
     "tipo": "parte-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-133",
+  "id": "KA-160",
   "tipo": "comando",
   "contenuto": "Prompt 11 del canovaccio Notion — 'La domanda di incrocio (dove le cartelle si arrendono)', sottotitolo 'Due fatti in due note diverse: la risposta si costruisce camminando sui collegamenti.' Testo integrale: 'Rispondi usando SOLO le note del cervello di Aurora. - Cita sempre il nome del file da cui prendi ogni informazione. - Elenca SOLO i clienti che hanno DAVVERO tutti e due i prodotti. Se un cliente ne ha uno solo, lascialo fuori. - Se la risposta non è nel cervello, scrivi: \"Non presente nel cervello.\" Domanda: quali clienti hanno attivato sia Aurora Cloud sia Aurora Care, e chi li segue nel customer success?'",
   "fonte": "RnoC5IlOUhs#112:54 e #113:06 (pagina Notion scena 282, incollato in chat scena 284)",
@@ -2326,18 +2804,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-139",
+    "verso": "KA-166",
     "tipo": "precede"
    },
    {
-    "verso": "KA-140",
+    "verso": "KA-167",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-134",
+  "id": "KA-161",
   "tipo": "comando",
   "contenuto": "Prompt 12 del canovaccio Notion — 'Il cruscotto HTML locale', sottotitolo 'Un singolo file HTML offline da aprire con un doppio click: il biglietto da visita per una demo.' Testo integrale: 'Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apre con un doppio click, offline e senza account.' Eseguito parola per parola nella scena 317 (con minima variazione 'apro' al posto di 'apre').",
   "fonte": "RnoC5IlOUhs#112:54 e #126:36 (pagina Notion scena 282, prompt incollato in Antigravity scena 317)",
@@ -2346,18 +2824,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-159",
+    "verso": "KA-186",
     "tipo": "precede"
    },
    {
-    "verso": "KA-160",
+    "verso": "KA-187",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-135",
+  "id": "KA-162",
   "tipo": "comando",
   "contenuto": "Prompt 13 del canovaccio Notion — 'Apri la sessione (il briefing)', sottotitolo 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Testo integrale: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conviene affrontare oggi, in ordine di priorità. Non scrivere ancora niente nel cervello. Solo il briefing.'",
   "fonte": "RnoC5IlOUhs#112:48 e #126:06 (pagina Notion, scene 281, 316)",
@@ -2366,14 +2844,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-174",
+    "verso": "KA-201",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-136",
+  "id": "KA-163",
   "tipo": "comando",
   "contenuto": "Prompt 14 del canovaccio Notion — 'Chiudi la sessione (il diario)', sottotitolo 'A fine giornata, fai scrivere al cervello la nota di sessione, agganciata alle entità vere toccate.' Testo integrale: 'Chiudiamo la sessione di oggi. Scrivi la nota di diario nel cervello. - Cartella: workspace/journal/sessions/ - Nome file: sessione-<data di oggi> (esempio: sessione-2026-06-09) - In cima il frontmatter: title, summary (UNA frase su cosa abbiamo fatto oggi), tags (il primo è workspace/session), status: done, created e updated con la data di oggi, e related su una riga coi wikilink alle note toccate. - Corpo in tre sezioni brevi: ## Fatto — cosa abbiamo concluso oggi / ## Deciso — le scelte prese e il perché / ## Aperto — cosa resta in sospeso per domani - Aggancia la nota alle entità vere toccate oggi coi [[wikilink]] (i clienti, i KPI, i progetti). Mai una nota di diario sciolta nel vuoto. Prima dimmi in 3 righe cosa hai capito che abbiamo fatto oggi. Al mio ok, scrivi.'",
   "fonte": "RnoC5IlOUhs#112:48 (pagina Notion, scena 281)",
@@ -2382,18 +2860,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-175",
+    "verso": "KA-202",
     "tipo": "precede"
    },
    {
-    "verso": "KA-171",
+    "verso": "KA-198",
     "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-137",
+  "id": "KA-164",
   "tipo": "struttura",
   "contenuto": "Nota atomica reale prodotto-aurora-access.md, frontmatter e corpo trascritti per intero: title 'Prodotto — Aurora Access'; summary 'Modulo di controllo accessi (badge, fasce orarie, videosorveglianza) per gestire la sicurezza di molte sedi da un unico punto.'; tags [entities, prodotto, aurora-access]; status active; created/updated 2026-06-10; related [[prodotto-aurora-core]], [[area-prodotto-engineering]], [[area-customer-success]]. Corpo: modulo che si appoggia a [[prodotto-aurora-core]] per il controllo degli accessi agli edifici (badge, permessi per fasce orarie, integrazione con la videosorveglianza), pensato per chi gestisce la sicurezza di molte sedi da un unico punto. Costruito da [[area-prodotto-engineering]]. Upsell dell'anno 2025: estensione a tutte le filiali di Banca Adriatica, seguita da [[area-customer-success]]. Usato da: Gruppo Retail, Rete Sanità Nord, UniCampus, Banca Adriatica.",
   "fonte": "RnoC5IlOUhs#114:18 (editor, tab prodotto-aurora-access.md, scena 286)",
@@ -2402,14 +2880,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-139",
+    "verso": "KA-166",
     "tipo": "parte-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-138",
+  "id": "KA-165",
   "tipo": "procedura",
   "contenuto": "Comando bash usato dall'agente per verificare rigorosamente se i prodotti citati nella domanda dell'utente esistono davvero nel cervello, prima di rispondere: grep -rln -i \"aurora cloud\\|aurora care\" --include=\"*.md\" . eseguito dentro la cartella del vault; l'output è vuoto (Bash completed with no output), a conferma che nessuna nota contiene quei due nomi.",
   "fonte": "RnoC5IlOUhs#114:24 (scena 287)",
@@ -2418,14 +2896,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-139",
+    "verso": "KA-166",
     "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-139",
+  "id": "KA-166",
   "tipo": "regola",
   "contenuto": "Risposta dell'agente dopo la verifica grep: 'Ho cercato in tutte le note del cervello di Aurora i prodotti citati nella domanda. I prodotti registrati nel cervello sono solo tre: Aurora Access, Aurora Core e Aurora Energy. Né \"Aurora Cloud\" né \"Aurora Care\" compaiono in alcuna nota. Non presente nel cervello.' Applicazione rigorosa della regola d'oro anche quando i nomi dei prodotti nella domanda sono plausibili ma inventati.",
   "fonte": "RnoC5IlOUhs#114:18-114:24 (scene 286-287)",
@@ -2434,18 +2912,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-132",
+    "verso": "KA-159",
     "tipo": "parte-di"
    },
    {
-    "verso": "KA-138",
+    "verso": "KA-165",
     "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-140",
+  "id": "KA-167",
   "tipo": "esempio",
   "contenuto": "Rieseguendo la domanda del Prompt 11 sui prodotti reali (Access, Core, Energy), l'agente legge le note dei tre clienti e applica la regola stretta (un cliente conta solo se ha davvero tutti i prodotti citati): cliente-banca-adriatica.md ha Core, Access, Manutenzione → Core+Access, manca Energy; cliente-hotelline-hospitality.md ha Core, Energy → manca Access; cliente-immobiliare-lombarda.md ha Core, Energy, Manutenzione, Insights → manca Access. Conclusione con la regola stretta: nessun cliente ha tutti e tre (Access + Core + Energy). Rilassando a 'almeno due dei tre', invece, tutti e tre i clienti si qualificano, e nel customer success: Banca Adriatica e Immobiliare Lombarda SGR sono seguite da Chiara Fontana; HotelLine Hospitality non ha un referente CS indicato nelle note (acquisita da Vendite) → 'Non presente nel cervello.'",
   "fonte": "RnoC5IlOUhs#114:36-115:24 (scene 288-290)",
@@ -2454,14 +2932,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-133",
+    "verso": "KA-160",
     "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-141",
+  "id": "KA-168",
   "tipo": "struttura",
   "contenuto": "Nota atomica reale persona-marco-bianchi.md, frontmatter e corpo trascritti per intero: title 'Persona — Marco Bianchi (CTO)'; summary 'CTO e co-fondatore di Aurora Sistemi, responsabile di Prodotto & Engineering.'; tags [entities, persona, founder, cto]; status active; created/updated 2026-06-10; related [[area-prodotto-engineering]], [[prodotto-aurora-core]], [[persona-elena-ferraro]]. Corpo: co-fondatore e direttore tecnico di Aurora Sistemi, come [[persona-elena-ferraro|Elena Ferraro]] viene dall'ingegneria degli impianti, insieme dal 2018. Ruolo: responsabile di [[area-prodotto-engineering]] — sviluppo della piattaforma e di tutti i moduli, a partire da [[prodotto-aurora-core]]. Riporti tecnici: Luca Esposito (Engineering Lead, Core) e Paolo Marchetti (PM, Energy).",
   "fonte": "RnoC5IlOUhs#115:30 (editor, tab persona-marco-bianchi.md, scena 291)",
@@ -2470,14 +2948,14 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-142",
+    "verso": "KA-169",
     "tipo": "parte-di"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-142",
+  "id": "KA-169",
   "tipo": "esempio",
   "contenuto": "Risposta completa alla domanda 'c'è un modo di identificare quale degli impiegati porta il maggior ARR?': il cervello documenta l'ARR di solo 3 clienti su 9 (per gli altri 6 i canoni non sono nelle note). L'unico impiegato legato esplicitamente a clienti con ARR noto è Chiara Fontana (CSM): Banca Adriatica € 520.000 + Immobiliare Lombarda SGR € 720.000 = totale € 1.240.000. HotelLine (€ 260.000) è acquisita da area-vendite.md ma non assegnata a una persona CS specifica. Risposta finale: Chiara Fontana è, in base al cervello, l'impiegata che porta il maggior ARR, con due avvertenze esplicite: 1) 'portare ARR' qui significa gestione/retention (ruolo CS), non acquisizione (ruolo vendite, non attribuita a nessun venditore per nome); 2) mancano i dati di 6 clienti su 9, quindi non si può escludere che un altro impiegato gestisca account più grandi — per quei clienti: 'Non presente nel cervello.'",
   "fonte": "RnoC5IlOUhs#115:24-115:54 (scene 290, 292-293)",
@@ -2486,471 +2964,23 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-141",
+    "verso": "KA-168",
     "tipo": "esempio-di"
    },
    {
-    "verso": "KA-144",
+    "verso": "KA-171",
     "tipo": "motiva"
    }
   ],
   "_origine": "atoms-p3.json"
  },
  {
-  "id": "KA-143",
+  "id": "KA-170",
   "tipo": "struttura",
   "contenuto": "Quarto reset di conversazione osservato nel video (dopo le scene 279/284): schema fisso e ripetuto, tab rinominata 'Untitled', icona pixel-art arancione del robot Claude Code (qui con il corpo pieno invece che a contorno, variante grafica non vista prima), messaggio placeholder identico 'You've come to the absolutely right place!' e campo di input vuoto con bordo rosso attivo in basso. Il presentatore inizia già a dettare a voce la domanda successiva ('Ehi, guardando al mio database in una...') mentre la chat è ancora completamente vuota: il parlato anticipa sempre l'azione a schermo in questo montaggio, pattern già osservato più volte nel corso del video.",
   "fonte": "RnoC5IlOUhs#116:18 (scena 294, editor Antigravity, tab 'Untitled') + voce 116:18-116:24",
   "frame": "frame-1164.png",
   "ancora": "You've come to the absolutely right place!",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-144",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-144",
-  "tipo": "struttura",
-  "contenuto": "Nuova domanda posta dal presentatore, che nasce direttamente dal limite appena rilevato in P3-040 (l'ARR pro-capite era ricostruibile solo per un impiegato su dati parziali): testo esatto digitato, con chip file allegato 'persona-marco-bianchi.m...': 'Ehi, guardando al mio database in una tabella abbastanza schematica, riesci a dirmi quali sono le informazioni mancanti per riuscire a farli delle analisi complete?' Claude risponde: 'Ti aiuto. Per dirti cosa manca, prima devo vedere cosa c'è. Esploro il database.' ed esegue un comando bash 'List all vault files' che restituisce l'elenco completo e letterale di tutti i file del vault Aurora: .DS_Store, .env, .gitignore, _index-aurora.md, _showcase/showcase.md, areas/.DS_Store, areas/_index-areas.md, areas/area-customer-success.md, areas/area-finance-operations.md, areas/area-marketing.md, areas/area-people-cultura.md, areas/area-prodotto-engineering.md, areas/area-vendite.md, code/_index-code.md, code/code-export-crm.md, concepts/_index-concepts.md, concepts/concetto-arr.md, concepts/concetto-churn.md, concepts/concetto-efficienza-energetica.md, data/_index-data.md, data/kpi-2025-arr.md, data/kpi-2025-churn.md, data/kpi-2025-clienti-attivi.md, data/kpi-2025-edifici.md, data/kpi-2025-nrr.md, docs/_index-docs.md, docs/doc-onboarding-cliente.md, entities/_index-entities.md, entities/cliente-banca-adriatica.md, entities/cliente-hotelline-hospitality.md, entities/cliente-immobiliare-lombarda.md, entities/persona-chiara-fontana.md, entities/persona-elena-ferraro.md, entities/persona-giulia-rinaldi.md, entities/persona-marco-bianchi.md, entities/prodotto-aurora-access.md, entities/prodotto-aurora-core.md, entities/prodotto-aurora-energy.md, entities/strumento-crm.md. Segue un secondo comando bash che legge tutte le entità chiave (persone, clienti, prodotti) prima di passare a KPI/aree, motivato da Claude come necessario perché 'Aurora è il caso di studio': legge entità (persone, clienti, prodotti, KPI, aree).",
-  "fonte": "RnoC5IlOUhs#117:06-117:18 (scene 295-296) + voce",
-  "frame": "frame-1172.png, frame-1174.png",
-  "ancora": "quali sono le informazioni mancanti per riuscire a farli delle analisi complete?",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-145",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-145",
-  "tipo": "struttura",
-  "contenuto": "Dopo la lettura delle entità, Claude esegue un terzo comando bash che concatena in un solo for-loop la lettura di KPI, aree, progetto e script di export CRM (comando visibile solo in parte: 'cd \"...aurora cervello\" && for f in data/kpi-*.md areas/area-*.md projects/progetto-arr-5m-20[26...]' tagliato a destra), motivato a voce dal narratore come necessario per vedere 'la parte numerica e organizzativa'. Durante questa fase il contatore di elaborazione sale da 'Thinking... · 16 tokens' a 'Thinking... · 857 tokens' poi 'Thinking... · 1.3k tokens', e l'etichetta di stato ruota tra parole casuali invece di restare fissa su un singolo 'Thinking...': si osservano in sequenza '🔺 Wandering...', '🔺 Computing...', '🔺 Percolating...'. Il testo della scena 298 dichiara esplicitamente che con queste si contano 'cinque' etichette scherzose in questo blocco di sistema RAG-demo, ma ne elenca sette in tutto: Discombobulating, Germinating, Ruminating (già viste in parte-C) più le quattro nuove Forming, Wandering, Computing, Percolating — la fonte stessa non risolve l'incongruenza tra il numero dichiarato (cinque) e i nomi elencati (sette), quindi va riportata come discrepanza osservata nel materiale originale, non normalizzata qui.",
-  "fonte": "RnoC5IlOUhs#117:18-117:36 (scene 296-298) + voce",
-  "frame": "frame-1174.png, frame-1176.png, frame-1177.png",
-  "ancora": "🔺 Percolating...",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-146",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-146",
-  "tipo": "principio",
-  "contenuto": "Risposta di Claude sotto heading 'Il problema di fondo (è quello del \"top employee\")': 'Il tuo cervello oggi è fotografico e descrittivo' — dice benissimo com'è fatta Aurora oggi (quante ARR per cliente) ma non risponde a 'cosa funziona meglio, cosa rende davvero, dove stai andando'. Diagnosi esplicita: per quelle analisi servono tre cose che oggi mancano quasi ovunque — 'una metrica per ogni unità (persona, prodotto, cliente)', 'i costi (non solo i ricavi)', e 'il tempo (serie storiche, non una foto al 31/12)'. Il caso 'top employee' è usato come sintomo perfetto: il database descrive ruoli e gerarchia ma non attacca nessun numero alla singola persona — solo Chiara Fontana ha un 'colpo dell'anno' scritto nelle note, quindi sembra l'unica brava, ma 'Non è che sia la migliore: è l'unica misurata.' Segue heading 'Cosa puoi GIÀ fare (così è chiaro il confine)': il database non è debole, è incompleto — già oggi risponde a cliente più grande (Immobiliare Lombarda, 720k), cliente con più edifici (Gruppo Retail, 210) e penetrazione dei moduli sui 9 clienti (Core 9/9, Energy 5/9, Manutenzione 5/9, Access 2/9); quello che NON si sa è quanto rende ciascun modulo, perché manca il prezzo.",
-  "fonte": "RnoC5IlOUhs#117:48 (scena 299) + voce 117:48-118:06",
-  "frame": "frame-1179.png",
-  "ancora": "Il tuo cervello oggi è fotografico e descrittivo",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-147",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-147",
-  "tipo": "struttura",
-  "contenuto": "Heading 'Dati che mancano del tutto (tabelle nuove)': 'Questi non sono colonne, sono interi pezzi di azienda assenti:' seguito da lista numerata completa: 1. 'Conto economico / costi: vedi solo i ricavi (ARR). Zero costi, margine, EBITDA, cassa, runway. Oggi non puoi dire se Aurora guadagna.' 2. 'CAC, LTV, payback: quanto costa acquisire un cliente e in quanto tempo rientri. È il cuore di un SaaS e non c'è.' (riga evidenziata in blu nello screenshot). 3. 'Pipeline e forecast 2026: l'obiettivo è 5M ma non esiste una pipeline che dica se raggiungibile o un sogno.' 4. 'Serie storica dei KPI 2018-2025: oggi hai due punti (inizio e fine 2025). Due punti non fanno una tendenza.' 5. 'Marketing a numeri: lead generati, costo per lead, conversione lead→cliente. Marketing è descritto ma senza una sola cifra.' 6. 'Concorrenti e win/loss: parli di \"vecchi BMS\" ma non c'è un concorrente nominato né perché vinci o perdi.' 7. 'People in numeri: turnover per reparto, tempo di assunzione, costo del lavoro per reparto.'",
-  "fonte": "RnoC5IlOUhs#118:06 (scena 300) + voce",
-  "frame": "frame-1182.png",
-  "ancora": "Questi non sono colonne, sono interi pezzi di azienda assenti",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-148",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-148",
-  "tipo": "regola",
-  "contenuto": "Heading 'Migliorie strutturali (rendono le analisi automatiche)', punto 1: 'Metti i numeri nel frontmatter come campi, non nella prosa. Oggi l'ARR è scritto \"€ 720.000\" dentro al testo: per sommarlo o filtrarlo serve farlo a mano. Se diventa un campo (arr: 720000, settore: banca), Obsidian con Dataview lo somma e filtra da solo. Esempio concreto: \"tutti i clienti retail sopra 400k senza insights\" diventa una query, non una rilettura a mano.' Punto 2: 'Schede che mancano: i 6 clienti senza nota (ci sono solo 3/9), i 2 prodotti senza nota (Manutenzione, Insights), e soprattutto Costruzioni Sud, il cliente perso: è la fonte più preziosa per capire perché si perde un cliente.'",
-  "fonte": "RnoC5IlOUhs#118:06 (scena 300) + voce",
-  "frame": "frame-1182.png",
-  "ancora": "Metti i numeri nel frontmatter come campi, non nella prosa.",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-149",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-149",
-  "tipo": "procedura",
-  "contenuto": "Heading 'Le 3 mosse che sbloccano l'80%': 'Se fai solo tre cose, in ordine:' 1. 'Prezzo per modulo sui clienti → sblocca ricavo per prodotto, attach rate a valore, e metà delle analisi commerciali.' 2. 'Una metrica di risultato per persona (almeno AE e CSM) → sblocca il \"top employee\" e la valutazione del team.' 3. 'I costi (conto economico base + RAL) → sblocca profittabilità, margine, ARR per dipendente: passi da \"quanto fatturo\" a \"quanto guadagno\".' Chiude con la domanda del modello: 'Vuoi che ti prepari lo schema dei campi nuovi (un template aggiornato per cliente/persona/prodotto) e le 8 schede mancanti come bozze da riempire?'",
-  "fonte": "RnoC5IlOUhs#118:18 (scena 301) + voce",
-  "frame": "frame-1184.png",
-  "ancora": "Le 3 mosse che sbloccano l'80%",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-150",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-150",
-  "tipo": "numero",
-  "contenuto": "Il presentatore stacca su Excalidraw e disegna a mano una tabella di scala 'a 80/20' esplicitamente definita come 'numeri indicativi... non prendeteli come solo questo', per capire 'che tipologia di company brain' serve in base al numero di note del vault. Tabella completa a due colonne '# NOTE' (arancione) | 'ARCHITETTURA' (blu): '< 500' → '~' con una freccetta che punta a testo blu corsivo, letto come 'MAPPE CONTENUTO + Plus. txt' (trascrizione incerta per la grafia manoscritta, possibile refuso per 'più .txt'/file di testo semplice); '500 - 2500' → '~' (stessa freccetta, nessun testo aggiuntivo distinto in questi frame); '2500 - 20'000' → 'Embeddings / RAG'; '20'000 +' → 'Pipeline RAG completo'. Accanto, sullo stesso canvas, un secondo schizzo separato con due rettangoli rossi etichettati 'daily logs' e 'sessions' collegati da una freccia che passa da nero a blu, elemento che introduce visivamente il concetto di embedding/vettori mostrato subito dopo con l'Embedding Projector di TensorFlow. Un terzo doodle, non correlato al discorso in corso secondo la fonte (schema 'BRANCH'/'COMMIT' in stile Git), compare sullo stesso file Excalidraw senza corrispondenza nel parlato a quel timestamp.",
-  "fonte": "RnoC5IlOUhs#122:06-124:12 (scene 302-303, 307, 309) + voce",
-  "frame": "frame-1222.png, frame-1230.png, frame-1242.png",
-  "ancora": "MAPPE CONTENUTO + Plus. txt",
-  "confidenza": "dedotto",
-  "relazioni": [
-   {
-    "verso": "KA-151",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-151",
-  "tipo": "definizione",
-  "contenuto": "Stacco sulla piattaforma community Skool 'Avanguardia Plus', corso 'Fondamenta AI / Business', lezione 'Cosa sono i Vector Databases' (progresso 0%, sezione 'Fondamenta AI' con altre lezioni collegate: 'Cosa Uso Per fare Le Presentazioni', introduzioni agli LLM, 'Prompt Engineering Basics', masterclass live). Testo della lezione, heading 'Cosa impari in questa lezione': 'Un vector database è un tipo di database ottimizzato per salvare e cercare vector embeddings. Se RAG è il processo, il vector database è dove i dati vivono.' Segue la differenza rispetto a un database tradizionale: 'un database SQL cerca corrispondenze esatte (\"dammi tutte le righe dove città = Milano\"). Un vector database cerca per similarità semantica (\"dammi i chunk di testo più simili a questa domanda\").' Il player video incorporato nella lezione mostra come miniatura l'Embedding Projector di TensorFlow, strumento che verrà usato dal vivo nella scena successiva.",
-  "fonte": "RnoC5IlOUhs#122:12 (scena 304) + voce",
-  "frame": "frame-1223.png",
-  "ancora": "Un vector database è un tipo di database ottimizzato per salvare e cercare vector embeddings.",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-152",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-152",
-  "tipo": "esempio",
-  "contenuto": "Dimostrazione dal vivo su projector.tensorflow.org (Embedding Projector, 'Tensors from: Word2Vec 10K', 'Points: 10000 | Dimension: 200', checkbox 'Spherize data' spuntata): il presentatore cerca la parola 'king' e mostra che, cliccando dal centro della nuvola di punti, 'Kings e King sono vettori simili nella stessa direzione nello spazio tridimensionale' — dimostrazione visiva del concetto di similarità semantica appena definito. La stessa registrazione viene rivista poco dopo dentro la lezione Skool 'Cosa sono i Vector Databases', dove è visibile un secondo esempio con un grappolo di parole tutte terminanti in '-ing' disposte vicine nello spazio vettoriale: 'networking', 'buckingham', 'cooking', 'tracking', 'viking', 'checking', 'smoking', 'drinking', 'striking', 'looking', 'attacking', 'working', 'thinking', con frecce blu disegnate a mano che convergono verso l'area di 'drinking' da un angolo del grafico — prova visiva che il vector database raggruppa per somiglianza morfologico-semantica, non per accesso esatto.",
-  "fonte": "RnoC5IlOUhs#122:18-122:48 (scene 305-306) + voce",
-  "frame": "frame-1224.png, frame-1229.png",
-  "ancora": "convergono verso l'area di \"drinking\" da un angolo del grafico",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-153",
-    "tipo": "precede"
-   },
-   {
-    "verso": "KA-151",
-    "tipo": "esempio-di"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-153",
-  "tipo": "principio",
-  "contenuto": "Sulla vista Graph view di Obsidian del vault Aurora (decine di nodi: aree, KPI, persone, clienti, prodotti, indici), il presentatore traccia a mano un percorso blu a zigzag da 'output-pitch-deck-vendite' fino a 'self-identita-aurora'/'_index-entities' per illustrare il vantaggio pratico dei vector database: 'al posto che andare dentro e farsi tutti i 1000... rami e sprecare token, l'AI andrà direttamente a vedere le cose che in un database vettoriale sono più o meno orientate nella stessa direzione' — cioè un'AI collegata a un vero vector database non deve attraversare l'intero grafo di note per rispondere, ma salta direttamente ai nodi semanticamente vicini alla domanda, risparmiando token. Il grafo stesso viene poi mostrato a schermo intero come prova visiva che il vault costruito è solido: 'Obsidian è il nostro layer 1' nell'architettura a livelli della company brain, e un grafo così strutturato è la conferma che 'avete un'architettura che funzioni' e 'può essere scalabile fino a un certo punto'.",
-  "fonte": "RnoC5IlOUhs#123:18-125:18 (scene 308, 314-315) + voce",
-  "frame": "frame-1234.png, frame-1253.png, frame-1254.png",
-  "ancora": "Obsidian è il nostro layer 1, adattiamo",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-154",
-    "tipo": "precede"
-   },
-   {
-    "verso": "KA-150",
-    "tipo": "esempio-di"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-154",
-  "tipo": "definizione",
-  "contenuto": "Rassegna di tre vector database concreti consigliati per integrazioni RAG, mostrata tramite tre ricerche Google consecutive: Supabase ('The Postgres Development Platform', 'Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings') — voce: 'i database che consiglio sono, se volete fare integrazioni di tipo rag, potete usare Superabase e quindi il classico che vedete all'interno... dei video, soprattutto quando c'erano le [integrazioni]'; Qdrant, risultato sponsorizzato ('Vector Database for RAG — Enterprise-ready vector database for cloud, on-prem, and edge deployments') — voce: 'oppure potete usare un database come quadrant, hanno alcune differenze. Supase vi permette di fare integrazioni...'; Weaviate, ultimo esempio ('Weaviate: The AI database developers love', 'With over 20M open source downloads and thousands of customers') — chiude la rassegna con entrambe le mani alzate a palmo aperto, gesto enfatico di conclusione dell'elenco.",
-  "fonte": "RnoC5IlOUhs#124:12-125:12 (scene 310-313) + voce",
-  "frame": "frame-1243.png, frame-1246.png, frame-1252.png",
-  "ancora": "Vector Database for RAG",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-155",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-155",
-  "tipo": "comando",
-  "contenuto": "Pagina Notion privata 'Company Brain — Tutti i prompt del...', heading 'Prompt 12 — Il cruscotto HTML locale': 'Un singolo file HTML offline da aprire con un doppio click: il biglietto da visita per una demo.' Blocco codice del prompt riportato per intero: 'Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apro con un doppio click, offline e senza account.' Introdotto a voce come primo dei due 'layer visivi' della company brain (il secondo è Notion): 'Possiamo fare o cruscotti locali, quindi con un HTML locale, lo vedete in un sacco di video YouTube, oppure possiamo utilizzare Notion.'",
-  "fonte": "RnoC5IlOUhs#126:06 (scena 316) + voce",
-  "frame": "frame-1262.png",
-  "ancora": "Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apro con un doppio click, offline e senza account.",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-156",
-    "tipo": "parte-di"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-156",
-  "tipo": "comando",
-  "contenuto": "Stessa pagina Notion 'Company Brain — Tutti i prompt', heading 'Prompt 13 — Apri la sessione (il briefing)': 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Blocco codice del prompt, parzialmente tagliato dal bordo inferiore dello screenshot: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conv[iene fare oggi in] ordine di priorità.' seguito (non del tutto leggibile nello screenshot) da: 'Non scrivere ancora niente nel cervello. Solo il briefing.' Questo prompt anticipa esattamente il comando 'buongiorno' della futura skill journal costruita più avanti nel video (vedi P3-069), con la stessa struttura in 5 righe e lo stesso vincolo di non scrivere nulla durante il briefing.",
-  "fonte": "RnoC5IlOUhs#126:06 (scena 316) + voce",
-  "frame": "frame-1262.png",
-  "ancora": "Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora.",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-157",
-    "tipo": "precede"
-   },
-   {
-    "verso": "KA-171",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-157",
-  "tipo": "esempio",
-  "contenuto": "Il presentatore passa da Notion ad Antigravity ed esegue dal vivo esattamente il Prompt 12: nel riquadro di input (bordo rosso attivo) digita/incolla lo stesso testo letterale già visto nella pagina Notion ('Genera un cruscotto HTML statico dai dati del canon...'), sopra la coda ancora visibile della risposta precedente sull'audit del database (punti 'Metti i numeri nel frontmatter...' e 'Le 3 mosse che sbloccano l'80%'). Voce: 'Quindi adesso facciamo un prompt super semplice e lo incolleremo qua dentro... genere, un croscotl scarico statico dei dati del canon, gli indicatori dell'ultimo mese, grafici, l'andamento, la classifica, tutto in un solo file, HTML che apre con un doppio click online e senza account' — corrisponde parola per parola al prompt scritto, a parte i piccoli inciampi del parlato. Dopo l'invio il prompt riappare in un blocco 'Bash tool output' con pulsante 'Show more' e stato di elaborazione 'Considering...'.",
-  "fonte": "RnoC5IlOUhs#126:36-126:48 (scene 317-318) + voce",
-  "frame": "frame-1267.png, frame-1269.png",
-  "ancora": "Bash tool output (o57wx9)",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-155",
-    "tipo": "esempio-di"
-   },
-   {
-    "verso": "KA-158",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-158",
-  "tipo": "struttura",
-  "contenuto": "Cruscotto HTML generato dal Prompt 12, aperto in locale (barra indirizzo 'File | /Users/giovannibeggiato/Desktop/aurora%20cervello/outputs/cruscotto-aurora.html'), sfondo scuro: header con logo quadrato sfumato viola-azzurro, titolo 'Aurora Sistemi S.p.A.', sottotitolo 'Cruscotto direzionale'; a destra 'Periodo di riferimento: fine 2025', 'Fonte: canon.md · compilato 2026-06-10', 'Dati riconciliati · nessun dato inventato'. Sezione 'INDICATORI CHIAVE - FINE 2025' con 6 card riportate per intero: 'ARR TOTALE' € 3,84 Mln (€ 3.840.000, +24% vs inizio 2025); 'CLIENTI ATTIVI' 9 (+1 nuovo logo · -1 perso, netto 0); 'EDIFICI GESTITI' 751 (su Aurora Core, 9 clienti); 'NRR' 115% (nel revenue attention, target >110%); 'CHURN LOGO' ~11% (1 cliente perso su 9, Costruzioni Sud); 'CHURN FATTURATO' 5,8% (€ 180.000 gross, perdita attesa). Voce del presentatore: 'Perfetto. Quindi il primo è questo output di cruscotto Aurora HTML che può rappresentare la nostra company Brain.'",
-  "fonte": "RnoC5IlOUhs#127:12 (scena 319) + voce",
-  "frame": "frame-1273.png",
-  "ancora": "Dati riconciliati · nessun dato inventato",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-159",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-159",
-  "tipo": "struttura",
-  "contenuto": "Stesso cruscotto HTML, sezione 'ANDAMENTO' con due grafici riportati per intero: a sinistra 'Fatturato (ARR)' — linea che parte da € 3,10 Mln (inizio periodo reale) e sale a € 3,84 Mln (fine 2025), poi prosegue tratteggiata fino a € 5,00 Mln, etichettata come obiettivo Board 2026; a destra 'Clienti attivi' — linea a gradini dal 2019 al 2025 con valori 1, 4, 6, 8, 9, 9, 9 (crescita rapida 2019-2022, poi plateau a 9 clienti attivi dal 2023). I due grafici traducono in immagine esattamente i numeri già visti nel canon (P3-047, progetto ARR 5M) e nell'audit (churn/espansione).",
-  "fonte": "RnoC5IlOUhs#127:12 (scena 319)",
-  "frame": "frame-1273.png",
-  "ancora": "Fatturato (ARR)",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-160",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-160",
-  "tipo": "struttura",
-  "contenuto": "Stesso cruscotto HTML, scroll su classifica clienti per fatturato (barra multicolore con gradiente che rappresenta i moduli attivi) e organico per reparto, riportati per intero: 1 \"Immobiliare Lombarda SGR\" \"€ 720.000\" (\"Property management\", \"120 edifici · dal 2018\"); 2 \"Gruppo Retail Centro\" \"€ 640.000\" (\"Catena retail\", \"210 edifici · dal 2020\"); 3 \"Banca Adriatica\" \"€ 520.000\" (\"Banca\", \"140 edifici · dal 2019\"); 4 \"Comune di Bologna\" \"€ 410.000\" (\"Pubblica amm.\", \"95 edifici · dal 2021\"); 5 \"LogiPark Logistica\" \"€ 380.000\" (\"Logistica\", \"65 edifici · dal 2021\"); 6 \"TorreVerde Property\" \"€ 350.000\" (\"Property management\", \"60 edifici · dal 2022\"); 7 \"Rete Sanità Nord\" \"€ 300.000\" (\"Sanità\", \"38 edifici · dal 2022\"); 8 \"UniCampus Student Housing\" \"€ 260.000\"; \"HotelLine Hospitality\" \"€ 260.000\". Legenda colori moduli: Manutenzione, Access, Insights. A destra, grafico a ciambella '47 persone' al centro con legenda completa: Prodotto & Engineering 18 · 38%, Customer Success 9 · 19%, Vendite 7 · 15%, Finance & Operations 5 · 11%, Marketing 4 · 9%, People & Cultura 2 · 4%, Fondatori 2 · 4%.",
-  "fonte": "RnoC5IlOUhs#127:30-127:36 (scene 320-321)",
-  "frame": "frame-1276.png, frame-1277.png",
-  "ancora": "\"Immobiliare Lombarda SGR\" \"€ 720.000\" (\"Property management\", \"120 edifici · dal 2018\")",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-161",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-161",
-  "tipo": "struttura",
-  "contenuto": "In fondo alla pagina del cruscotto, riga di stato centrata riportata per intero: 'Cruscotto statico offline · generato dai dati del canon di Aurora Sistemi · 47 persone · 9 clienti attivi · 751 edifici'. Il presentatore chiude il primo esempio con: 'credo che avere un cruscotto figo ora da parte mia sia esattamente quello per cui avete cliccato sul video, quindi lo eviteremo... Questo è un primo layer visivo. Il secondo layer visivo è utilizzarlo tramite Notion.' Torna poi in cima alla stessa pagina prima di cambiare strumento e annuncia il passaggio successivo: 'Adesso connetterò al volo questo con eh cloud code.'",
-  "fonte": "RnoC5IlOUhs#127:36-127:48 (scene 321-322) + voce",
-  "frame": "frame-1277.png, frame-1278.png",
-  "ancora": "Cruscotto statico offline · generato dai dati del canon di Aurora Sistemi · 47 persone · 9 clienti attivi · 751 edifici",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-162",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-162",
-  "tipo": "comando",
-  "contenuto": "Documentazione ufficiale consultata a schermo, developers.notion.com/guides/mcp/get-started-with-mcp, pagina 'Connecting to Notion MCP': 'This guide walks you through connecting your AI tool to Notion using the Model Context Protocol (MCP). Once connected, your tool can read and write to your Notion workspace based on your access and permissions.' Sezione 'Claude Code': 'Run this command in your terminal:' comando riportato per intero: 'claude mcp add --transport http notion https://mcp.notion.com/mcp'. Segue: 'Then authenticate by running /mcp in Claude Code and following the OAuth flow.' Più sotto: 'Use the /mcp command to list and manage the MCP servers you have installed, and use the /context command to understand the context token usage of your current session, including the number of tokens used by each MCP server that's enabled.' La sidebar destra elenca le altre integrazioni supportate oltre a Claude Code: Cursor, VS Code (GitHub Copilot), Claude Desktop, Windsurf, ChatGPT, Codex, Antigravity, Other tools (con sotto-voce JSON configuration format), Connect through the Notion app, Troubleshooting, FAQ.",
-  "fonte": "RnoC5IlOUhs#127:48 (scena 323) + voce",
-  "frame": "frame-1279.png",
-  "ancora": "claude mcp add --transport http notion https://mcp.notion.com/mcp",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-163",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-163",
-  "tipo": "comando",
-  "contenuto": "Sequenza terminale in Claude Code per collegare Notion: digitazione '/fast' con risposta '⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok'; poi digitazione '/cl▍' con menu di autocompletamento visibile ('/clear — Start a new session with empty context; previous session stays on disk (resumable with /resume)', '/claude-api', '/exit', '/code-review-mcp-issue-prompts'); eseguito '/clear' per ripartire pulito, poi banner di benvenuto 'Welcome back Gio!' con 'Opus 4.6 (1M context) with hi[gher limits]... · Claude Max', organizzazione 'giobeggiato@gmail.com's Organization', box 'Tips for getting started' ('Run /init to create a CLAUDE.md file with instructions for Claude', 'Introducing Claude Fable 5: a Mythos-class model that we've made saf...', 'Fixed sessions not saving transcripts...', 'Added \"--safe-mode\" flag...'), avviso '⚠ 1 setup issue: MCP · /doctor'; comando cronologia '> mcp add --transport http notion https://mcp.notion.com/mcp' con stato '⚙ Perusing...'; infine messaggio utente 'sei connesso con Notion?' con stato di elaborazione '🔴 Pontific_a' (verosimilmente 'Pontificating...', etichetta troncata a schermo). Nota di cautela sulla fonte: il nome del modello 'Claude Fable 5' così come appare nel banner di questa specifica registrazione non è verificabile altrove nella sessione ed è riportato alla lettera solo perché leggibile a schermo in quel frame.",
-  "fonte": "RnoC5IlOUhs#127:54-129:18 (scene 324-326) + voce",
-  "frame": "frame-1280.png, frame-1281.png, frame-1287.png",
-  "ancora": "⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok",
-  "confidenza": "dedotto",
-  "relazioni": [
-   {
-    "verso": "KA-164",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-164",
-  "tipo": "struttura",
-  "contenuto": "Claude crea in Notion una nuova pagina privata intitolata 'Cervello Pino' (emoji albero di pino 🌲), callout verde riportato per intero: '🌲 Cervello Pino — Cruscotto KPI di Aurora Sistemi S.p.A.' — 'Piattaforma SaaS italiana per la gestione intelligente del patrimonio immobiliare (fondata a Milano nel 2018). Dati consolidati a fine 2025 (fonte: verbale CdA del 22/01/2026, riconciliato dalla contabilità).' Heading '📊 KPI principali — chiusura 2025' con tre card colorate: verde '📈 ARR' € 3,84M ('+24% sui € 3,10M di inizio anno (+€ 740k)'); blu '🔄 NRR' 115% ('Espansione che supera il churn. Obiettivo Board: >110%'); viola '🏢 Edifici gestiti' 751 ('Somma dei 9 clienti attivi, quadra con l'anagrafica Core'). Voce: 'Integrazione Notion fatta. App Notion, lo chiameremo cervello pino. Abbiamo il nostro ARR, abbiamo il nostro revenue.'",
-  "fonte": "RnoC5IlOUhs#129:18 (scena 327) + voce",
-  "frame": "frame-1294.png",
-  "ancora": "🌲 Cervello Pino — Cruscotto KPI di Aurora Sistemi S.p.A.",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-165",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-165",
-  "tipo": "numero",
-  "contenuto": "Nella pagina 'Cervello Pino', heading '📊 Revenue — dettaglio ARR' con tabella a ponte riportata per intero (colonne Voce | Valore | Note): 'ARR inizio 2025' | '€ 3.100.000' | 'Base di partenza'; '– Churn (gross)' | '– € 180.000' | 'Costruzioni Sud, uscita giugno 2025 (acquisita da gruppo con sistema proprietario)'; '+ Espansione (upsell)' | '+ € 660.000' | 'Motore NRR: Banca Adriatica (Access), Gruppo Retail (Energy), Immobiliare Lombarda (Insights)'; '+ Nuovo logo' | '+ € 260.000' | 'HotelLine Hospitality (onboarding chiuso a ottobre)'; riga totale evidenziata in verde 'ARR fine 2025' | '€ 3.840.000' | '+24% YoY'. Sotto, callout blu: '💡 La crescita 2025 è stata trainata soprattutto dall'espansione sui clienti esistenti (upsell di moduli), non dall'acquisizione: un solo nuovo logo nell'anno. È il modello che la CEO Elena Ferraro cita come \"il vero motore\" di Aurora.'",
-  "fonte": "RnoC5IlOUhs#129:24 (scena 328) + voce",
-  "frame": "frame-1295.png",
-  "ancora": "ARR fine 2025",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-166",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-166",
-  "tipo": "struttura",
-  "contenuto": "Stessa pagina 'Cervello Pino', heading '👥 Clienti — i 3 key account per fatturato' con tre card: verde '🏢 Immobiliare Lombarda SGR' ('Property management · cliente dal...', poi coda leggibile nello scroll successivo: 'Core, Energy, Manutenzione, Insights / 2025: ha aggiunto Insights. Referenzia volentieri.'); blu '🏦 Banca Adriatica' ('Banca · cliente dal 2022', coda: '2025: Access esteso a tutte le filiali — upsell più esteso dell'anno.'); arancione '🏨 HotelLine Hospitality' ('Hospitality · cliente dal 2025', coda quasi tagliata: '...logo 2025. Forte interesse su Energy.'). Callout grigio di trasparenza sui dati: 'Il database qui sotto elenca tutti i clienti. ARR ed edifici sono valorizzati solo dove certi nel vault aziendale: per i clienti non-key account le singole cifre non sono dettagliate nelle note di origine (so il totale: € 3,84M su 751 edifici, ma non la ripartizione cliente per cliente).' Heading '🎯 Obiettivo 2026 (approvato dal CdA il 22/01/2026)' con card viola: '🚀 ARR oltre € 5.000.000 (da € 3,84M)', bullet 'Vincoli di qualità: NRR > 110%, logo churn < 10%', 'Leve: nuovi loghi (Vendite) + espansione clienti esistenti (Customer Success)', 'Abilitatore: +6 assunzioni, soprattutto Engineering e Customer Success'. Heading '🧩 Reparti e contesto' con tabella 'Reparto | A capo | Ruolo sui numeri': 'Vendite | Davide Conti (VP Sales) | Acquisizione nuovi loghi (~7 persone)', riga successiva tagliata dal bordo inferiore 'Customer Success | Giulia Rinaldi (Bologna) | Retention ed espansione —[...]'.",
-  "fonte": "RnoC5IlOUhs#129:24-129:30 (scene 328-329) + voce",
-  "frame": "frame-1295.png, frame-1296.png",
-  "ancora": "🎯 Obiettivo 2026 (approvato dal CdA il 22/01/2026)",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-167",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-167",
-  "tipo": "struttura",
-  "contenuto": "Il presentatore mostra al volo anche un database Notion preesistente e distinto, non generato in questa sessione: breadcrumb 'New page / Cruscotto Aurora / Clienti' (ramo diverso da 'Cervello Pino'). Tabella '📁 Clienti' con colonne 'Cliente | ARR | città | Dal | MQ | Pr[odotto]' e righe leggibili: Polo Universitario Sud €750.000 Catania 2024 60000 Edge; Residenze Aurora Verde €820.000 Brescia 2014 90000 Care; Torre Eurosky Uffici €558.000 Roma 2016 90000 Cloud; BioPharma Stabilimenti €555.000 Latina 2022 40000 Edge; Galleria Moderna €552.000 Firenze 2018 40000 Care; Iberia Centros €528.000 Madrid 2013 18000 Care; Università Politecnica Adriatica €522.000 Ancona 2021 60000 Care; Museo delle Arti Contemporanee €511.000 Torino 2017 25000 Care; MediCenter Salute €508.000 Padova 2013 12000 Cloud; Aurora DACH Buildings €486.000 Monaco di Baviera 2014 8000 Care; Distretto Tessile Pratese €420.000 Prato 2020 25000 Care; Retail Gamma €402.000 Verona 2022 8000 Edge; Nordic Retail Chain €370.000 Amburgo 2024 12000 Edge; Centro Direzionale Partenope €369.000 Napoli 2013 25000 Cloud; Industria Meccanica Veneta €347.000 Vicenza 2018 12000 Care; Stadio Arena Nuova €343.000 Udine 2013 90000 Care; Supermercati Risparmio €314.000 Bologna 2022 8000 Care; Helvetia Office Park €309.000 Zurigo 2021 12000 Care; Banca Civica €278.000 Torino 2017 18000 Care (tagliata dal bordo). Questo elenco di ~18 clienti con cifre diverse da quelli di 'Cervello Pino' (i 9 attivi + Costruzioni Sud) appartiene a una pagina Notion preesistente ('Cruscotto Aurora') e non contraddice i dati della nuova pagina generata: è un dataset dimostrativo separato già presente nel workspace prima di questa sessione.",
-  "fonte": "RnoC5IlOUhs#129:36 (scena 330) + voce",
-  "frame": "frame-1297.png",
-  "ancora": "New page / Cruscotto Aurora / Clienti",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-168",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-168",
-  "tipo": "principio",
-  "contenuto": "Risposta completa di Claude in Antigravity dopo il prompt 'Per favore, costruiscimi su Notion un cruscotto di KPI per la mia azienda Aurora con tutto quello che hai... Chiamalo \"Cervello Pino\"...': '\"Cervello Pino\" è creato su Notion:' con link, poi riepilogo di cosa contiene (cruscotto KPI a 6 card, tabella revenue a ponte, 3 key account + database 'Clienti Aurora' inline con tutti i 10 clienti filtrabile, obiettivo 2026 e mappa reparti). Poi, testuali, le 'Due note di trasparenza:' che sono il cuore metodologico dell'intero esercizio: '1.' 'Ho usato i dati del vault locale \"aurora cervello\", non un workspace Notion preesistente: il tuo Notion non aveva nessun teamspace, quindi ho costruito da zero coi dati certi del vault.' '2.' 'ARR ed edifici per cliente li ho valorizzati solo dove certi. Il vault dà il totale (€ 3,84M su 751 edifici) e il dettaglio dei 3 key account, ma non la ripartizione cliente-per-cliente degli altri 6. Inoltre il vault cita 9 clienti attivi ma ne nomina solo 8: ho messo un placeholder \"Cliente settore PA\" per far quadrare il conteggio, invece di inventare un nome.' Chiusura: 'Vuoi che ti provi a derivare l'ARR mancante per cliente o che colleghi questa pagina ad altre note?' Questo è il principio anti-invenzione applicato in pratica: quando un dato non è certo nel cervello, l'AI dichiara il buco (o usa un placeholder esplicito) invece di inventare un numero o un nome plausibile.",
-  "fonte": "RnoC5IlOUhs#129:54 (scena 331) + voce",
-  "frame": "frame-1300.png",
-  "ancora": "Due note di trasparenza:",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-169",
-    "tipo": "precede"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-169",
-  "tipo": "principio",
-  "contenuto": "Il presentatore apre una nuova sessione Claude Code vuota in Antigravity ('Type /model to pick the right tool for the job.') e passa a schermo webcam a piena inquadratura per introdurre il limite strutturale della memoria fin qui costruita: 'che non abbiamo ancora un modo di dire allei \"Ehi, ascolta, ma a marzo avevamo parlato di questo argomento? Ti ricordi cos'era? Cosa avevamo deciso?\"' Il punto è che le note statiche (clienti, KPI, progetti) non bastano: serve un meccanismo dedicato per far ricordare all'AI le conversazioni passate, altrimenti resta senza memoria episodica. Il presentatore motiva perché vale la pena costruirlo: 'che ci permette di avere enormi ritorni,' — introduce così l'ultimo pezzo del sistema, la memoria dinamica (skill journal) che verrà costruita subito dopo.",
-  "fonte": "RnoC5IlOUhs#130:00-130:42 (scene 332-336) + voce",
-  "frame": "frame-1301.png, frame-1305.png, frame-1306.png, frame-1307.png, frame-1308.png",
-  "ancora": "che ci permette di avere enormi ritorni,",
-  "confidenza": "osservato",
-  "relazioni": [
-   {
-    "verso": "KA-170",
-    "tipo": "motiva"
-   }
-  ],
-  "_origine": "atoms-p3b.json"
- },
- {
-  "id": "KA-170",
-  "tipo": "comando",
-  "contenuto": "Prompt digitato per intero nel riquadro di input di Antigravity (bordo rosso attivo) per costruire la skill journal, trascritto riga per riga così come appare a schermo: 'Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.' — riga vuota — 'CONTESTO -- memoria viva' — 'Il cervello ha due strati di memoria:' — '- Memoria STATICA: le note delle entità vere (clienti, KPI, progetti).' — '  Vivono già nel cervello e cambiano di rado.' — '- Memoria DINAMICA: il diario di lavoro. Ogni sessione e ogni giornata' — '  lasciano una nota che si AGGANCIA sempre alle entità statiche coi' — '  [[wikilink]]. Mai una nota di diario sciolta nel vuoto.' — 'Lo scopo della skill e' tenere viva la memoria dinamica e cucirla a' (riga finale tagliata dal bordo inferiore del riquadro nello screenshot: il testo del prompt continua oltre quanto visibile, la fonte non ne riporta il proseguimento). Prima di inviarlo il presentatore lo introduce a voce quasi verbatim: 'dentro e gli diciamo contesto memoria viva. Il cervello ha due strati, memoria...'",
-  "fonte": "RnoC5IlOUhs#134:06 (scena 338) + voce",
-  "frame": "frame-1342.png",
-  "ancora": "Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.",
   "confidenza": "osservato",
   "relazioni": [
    {
@@ -2962,20 +2992,16 @@
  },
  {
   "id": "KA-171",
-  "tipo": "comando",
-  "contenuto": "Risposta di Claude dopo aver costruito la skill, sezione 'Come invochi i tre comandi' riportata per intero: 'Fatto. Ho costruito una sola skill (journal) con i tre comandi al suo interno, più i due template, e prima ho scritto i due template in parallelo per andare più veloce come hai chiesto.' 'Scrivi semplicemente, in chat:' — 'buongiorno → briefing di inizio sessione in 5 righe. Non scrive niente.' — 'chiudi sessione → prima ti dice in 3 righe cosa abbiamo fatto, al tuo ok scrive sessione-<data>.' — 'fine giornata → legge tutte le sessioni del giorno, ti dice in 3 righe cosa e' successo, al tuo ok scrive il daily.' Poi: 'La skill si attiva da sola su queste frasi (e varianti tipo \"chiudiamo la sessione\", \"riassunto del giorno\"). Se vuoi forzarla puoi anche scrivere /journal.' Questo comando realizza concretamente lo schema già anticipato dal Prompt 13 'Apri la sessione' della pagina Notion (vedi P3-054): stessa logica di briefing in poche righe senza scrivere nulla, ora però automatizzata in una skill invocabile a frase libera.",
-  "fonte": "RnoC5IlOUhs#136:12 (scena 340) + voce",
-  "frame": "frame-1355.png",
-  "ancora": "Come invochi i tre comandi",
+  "tipo": "struttura",
+  "contenuto": "Nuova domanda posta dal presentatore, che nasce direttamente dal limite appena rilevato in P3-040 (l'ARR pro-capite era ricostruibile solo per un impiegato su dati parziali): testo esatto digitato, con chip file allegato 'persona-marco-bianchi.m...': 'Ehi, guardando al mio database in una tabella abbastanza schematica, riesci a dirmi quali sono le informazioni mancanti per riuscire a farli delle analisi complete?' Claude risponde: 'Ti aiuto. Per dirti cosa manca, prima devo vedere cosa c'è. Esploro il database.' ed esegue un comando bash 'List all vault files' che restituisce l'elenco completo e letterale di tutti i file del vault Aurora: .DS_Store, .env, .gitignore, _index-aurora.md, _showcase/showcase.md, areas/.DS_Store, areas/_index-areas.md, areas/area-customer-success.md, areas/area-finance-operations.md, areas/area-marketing.md, areas/area-people-cultura.md, areas/area-prodotto-engineering.md, areas/area-vendite.md, code/_index-code.md, code/code-export-crm.md, concepts/_index-concepts.md, concepts/concetto-arr.md, concepts/concetto-churn.md, concepts/concetto-efficienza-energetica.md, data/_index-data.md, data/kpi-2025-arr.md, data/kpi-2025-churn.md, data/kpi-2025-clienti-attivi.md, data/kpi-2025-edifici.md, data/kpi-2025-nrr.md, docs/_index-docs.md, docs/doc-onboarding-cliente.md, entities/_index-entities.md, entities/cliente-banca-adriatica.md, entities/cliente-hotelline-hospitality.md, entities/cliente-immobiliare-lombarda.md, entities/persona-chiara-fontana.md, entities/persona-elena-ferraro.md, entities/persona-giulia-rinaldi.md, entities/persona-marco-bianchi.md, entities/prodotto-aurora-access.md, entities/prodotto-aurora-core.md, entities/prodotto-aurora-energy.md, entities/strumento-crm.md. Segue un secondo comando bash che legge tutte le entità chiave (persone, clienti, prodotti) prima di passare a KPI/aree, motivato da Claude come necessario perché 'Aurora è il caso di studio': legge entità (persone, clienti, prodotti, KPI, aree).",
+  "fonte": "RnoC5IlOUhs#117:06-117:18 (scene 295-296) + voce",
+  "frame": "frame-1172.png, frame-1174.png",
+  "ancora": "quali sono le informazioni mancanti per riuscire a farli delle analisi complete?",
   "confidenza": "osservato",
   "relazioni": [
    {
     "verso": "KA-172",
-    "tipo": "parte-di"
-   },
-   {
-    "verso": "KA-156",
-    "tipo": "esempio-di"
+    "tipo": "precede"
    }
   ],
   "_origine": "atoms-p3b.json"
@@ -2983,10 +3009,10 @@
  {
   "id": "KA-172",
   "tipo": "struttura",
-  "contenuto": "Stessa risposta, sezione 'Dove sono finiti i file' riportata per intero: 'Skill: .claude/skills/SKILL.md — l'orchestratore coi tre comandi e le regole.' — 'Template sessione: workspace/journal/_templates/_template-sessione.md' — 'Template daily: workspace/journal/_templates/_template-daily.md' — 'Cartelle del diario (create): workspace/journal/sessions/ e workspace/journal/daily/' Poi: 'Regole rispettate dentro la skill: date sempre YYYY-MM-DD, frontmatter conforme a _template-nota.md, ogni nota di diario con almeno un [[wikilink]] a un'entità reale (se manca, te lo chiede, nessuna entità inventata.' Testo tagliato in fondo: 'Vuoi che pr[...]'. Nella sidebar Explorer compare per la prima volta una cartella .claude in cima all'albero, appena creata dalla skill stessa.",
-  "fonte": "RnoC5IlOUhs#136:12 (scena 340)",
-  "frame": "frame-1355.png",
-  "ancora": "Dove sono finiti i file",
+  "contenuto": "Dopo la lettura delle entità, Claude esegue un terzo comando bash che concatena in un solo for-loop la lettura di KPI, aree, progetto e script di export CRM (comando visibile solo in parte: 'cd \"...aurora cervello\" && for f in data/kpi-*.md areas/area-*.md projects/progetto-arr-5m-20[26...]' tagliato a destra), motivato a voce dal narratore come necessario per vedere 'la parte numerica e organizzativa'. Durante questa fase il contatore di elaborazione sale da 'Thinking... · 16 tokens' a 'Thinking... · 857 tokens' poi 'Thinking... · 1.3k tokens', e l'etichetta di stato ruota tra parole casuali invece di restare fissa su un singolo 'Thinking...': si osservano in sequenza '🔺 Wandering...', '🔺 Computing...', '🔺 Percolating...'. Il testo della scena 298 dichiara esplicitamente che con queste si contano 'cinque' etichette scherzose in questo blocco di sistema RAG-demo, ma ne elenca sette in tutto: Discombobulating, Germinating, Ruminating (già viste in parte-C) più le quattro nuove Forming, Wandering, Computing, Percolating — la fonte stessa non risolve l'incongruenza tra il numero dichiarato (cinque) e i nomi elencati (sette), quindi va riportata come discrepanza osservata nel materiale originale, non normalizzata qui.",
+  "fonte": "RnoC5IlOUhs#117:18-117:36 (scene 296-298) + voce",
+  "frame": "frame-1174.png, frame-1176.png, frame-1177.png",
+  "ancora": "🔺 Percolating...",
   "confidenza": "osservato",
   "relazioni": [
    {
@@ -2998,20 +3024,16 @@
  },
  {
   "id": "KA-173",
-  "tipo": "esempio",
-  "contenuto": "Primo test del comando 'buongiorno': messaggio utente 'Buongiorno Claude', Claude legge prima llms.txt (indice-porta del vault) poi risponde per intero: 'Buongiorno Gio.' — 'Non c'è ancora nessuna nota di sessione nel diario, quindi il briefing è solo sull'indice del cervello (llms.txt).' Heading 'Dove siamo': 'Il cervello di Aurora Sistemi è popolato e in piedi: 6 aree, 3 clienti attivi mappati (Banca Adriatica, HotelLine, Immobiliare Lombarda), KPI 2025 e l'unico progetto strategico aperto.' — 'Il diario di lavoro è vuoto: questa è di fatto la prima sessione tracciata.' Heading 'Cosa è aperto / da affrontare oggi, in ordine': '1. [[progetto-arr-5m-2026]] — l'obiettivo Board 2026: ARR oltre 5M con NRR >110% e churn logo <10%. È l'unico progetto attivo, quindi il candidato naturale su cui lavorare.' '2. Churn — il 2025 ha chiuso con logo churn ~11% ([[kpi-2025-churn]]), sopra la soglia <10% che il progetto richiede. Punto di attenzione concreto.' '3. Vedo che hai aperto outputs/cruscotto-aurora.html nell'IDE — se il lavoro di oggi è lì, partiamo da quello.' Chiusura: 'Da cosa vuoi cominciare?' Verifica end-to-end che il briefing rispetta esattamente la struttura in 5 righe promessa dal comando 'buongiorno' (P3-069) e dal Prompt 13 originale (P3-054), senza scrivere nulla nel cervello.",
-  "fonte": "RnoC5IlOUhs#136:12 (scena 341) + voce",
-  "frame": "frame-1363.png",
-  "ancora": "Buongiorno Gio.",
+  "tipo": "principio",
+  "contenuto": "Risposta di Claude sotto heading 'Il problema di fondo (è quello del \"top employee\")': 'Il tuo cervello oggi è fotografico e descrittivo' — dice benissimo com'è fatta Aurora oggi (quante ARR per cliente) ma non risponde a 'cosa funziona meglio, cosa rende davvero, dove stai andando'. Diagnosi esplicita: per quelle analisi servono tre cose che oggi mancano quasi ovunque — 'una metrica per ogni unità (persona, prodotto, cliente)', 'i costi (non solo i ricavi)', e 'il tempo (serie storiche, non una foto al 31/12)'. Il caso 'top employee' è usato come sintomo perfetto: il database descrive ruoli e gerarchia ma non attacca nessun numero alla singola persona — solo Chiara Fontana ha un 'colpo dell'anno' scritto nelle note, quindi sembra l'unica brava, ma 'Non è che sia la migliore: è l'unica misurata.' Segue heading 'Cosa puoi GIÀ fare (così è chiaro il confine)': il database non è debole, è incompleto — già oggi risponde a cliente più grande (Immobiliare Lombarda, 720k), cliente con più edifici (Gruppo Retail, 210) e penetrazione dei moduli sui 9 clienti (Core 9/9, Energy 5/9, Manutenzione 5/9, Access 2/9); quello che NON si sa è quanto rende ciascun modulo, perché manca il prezzo.",
+  "fonte": "RnoC5IlOUhs#117:48 (scena 299) + voce 117:48-118:06",
+  "frame": "frame-1179.png",
+  "ancora": "Il tuo cervello oggi è fotografico e descrittivo",
   "confidenza": "osservato",
   "relazioni": [
    {
     "verso": "KA-174",
     "tipo": "precede"
-   },
-   {
-    "verso": "KA-171",
-    "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3b.json"
@@ -3019,30 +3041,26 @@
  {
   "id": "KA-174",
   "tipo": "struttura",
-  "contenuto": "Primo test del comando 'chiudi sessione': Claude conferma 'Fatto. La skill funziona: nota salvata in workspace/journal/sessions/sessione-2026-06-10.md.' con verifica di conformità (frontmatter valido, aggancio a [[progetto-arr-5m-2026]] rispettando la regola del wikilink obbligatorio, corpo in tre sezioni Fatto/Deciso/Aperto). Il file sessione-2026-06-10.md viene aperto e trascritto per intero, riga per riga: frontmatter — title: \"Sessione — 2026-06-10\"; summary: \"Test della skill journal: briefing di buongiorno e prima chiusura di sessione per verificare il salvataggio della nota.\"; tags: [workspace, type/session]; status: done; created: 2026-06-10; updated: 2026-06-10; related: - \"[[progetto-arr-5m-2026]]\". Corpo — # Sessione — 2026-06-10 ## Fatto: 'Briefing di buongiorno sul cervello di Aurora Sistemi (diario ancora vuoto, prima sessione tracciata).' 'Test della skill journal: verificato che la chiusura di sessione salvi correttamente una nota nel workspace.' ## Deciso: 'Agganciare questa nota di test a [[progetto-arr-5m-2026]], unico progetto attivo, per rispettare la regola del wikilink obbligatorio.' ## Aperto: 'Lavoro reale sul progetto ARR 5M e sul churn logo 2025 (~11%, sopra la soglia <10%) ancora da affrontare.'",
-  "fonte": "RnoC5IlOUhs#137:12 (scena 342)",
-  "frame": "frame-1373.png",
-  "ancora": "Fatto. La skill funziona: nota salvata in",
+  "contenuto": "Heading 'Dati che mancano del tutto (tabelle nuove)': 'Questi non sono colonne, sono interi pezzi di azienda assenti:' seguito da lista numerata completa: 1. 'Conto economico / costi: vedi solo i ricavi (ARR). Zero costi, margine, EBITDA, cassa, runway. Oggi non puoi dire se Aurora guadagna.' 2. 'CAC, LTV, payback: quanto costa acquisire un cliente e in quanto tempo rientri. È il cuore di un SaaS e non c'è.' (riga evidenziata in blu nello screenshot). 3. 'Pipeline e forecast 2026: l'obiettivo è 5M ma non esiste una pipeline che dica se raggiungibile o un sogno.' 4. 'Serie storica dei KPI 2018-2025: oggi hai due punti (inizio e fine 2025). Due punti non fanno una tendenza.' 5. 'Marketing a numeri: lead generati, costo per lead, conversione lead→cliente. Marketing è descritto ma senza una sola cifra.' 6. 'Concorrenti e win/loss: parli di \"vecchi BMS\" ma non c'è un concorrente nominato né perché vinci o perdi.' 7. 'People in numeri: turnover per reparto, tempo di assunzione, costo del lavoro per reparto.'",
+  "fonte": "RnoC5IlOUhs#118:06 (scena 300) + voce",
+  "frame": "frame-1182.png",
+  "ancora": "Questi non sono colonne, sono interi pezzi di azienda assenti",
   "confidenza": "osservato",
   "relazioni": [
    {
     "verso": "KA-175",
     "tipo": "precede"
-   },
-   {
-    "verso": "KA-171",
-    "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3b.json"
  },
  {
   "id": "KA-175",
-  "tipo": "procedura",
-  "contenuto": "Terzo test, comando 'fine giornata': messaggio utente 'Hey Claude, grazie per oggi. Finisco la giornata qui', Claude risponde: 'Grazie a te, Gio. Attivo \"fine giornata\". Prima di scrivere il daily, in 3 righe cosa è successo oggi in totale:' numerato per intero: '1. Briefing di buongiorno sul cervello di Aurora Sistemi (diario vuoto, prima giornata tracciata).' '2. Test della skill journal: chiusura di sessione che ha salvato correttamente la nota nel workspace.' '3. Nessun lavoro reale sulle entità: giornata dedicata a verificare il meccanismo del diario.' Poi: 'C'è una sola sessione oggi ([[sessione-2026-06-10]]), che fonderò nel daily. Ti torna? Dammi l'ok e scrivo.' L'utente risponde 'fai pure', a quel punto Claude esegue un comando bash 'Bash Read daily template, check existing' ('cd \"...aurora cervello\" && cat workspace/journal/_templates/_template-daily.md 2>/dev/null && ...') prima di scrivere il file: questa sequenza dimostra in pratica la regola dichiarata nel comando (P3-069) — riassumere e chiedere conferma prima di scrivere, mai scrivere alla cieca.",
-  "fonte": "RnoC5IlOUhs#137:36 (scena 343) + voce",
-  "frame": "frame-1377.png",
-  "ancora": "Grazie a te, Gio. Attivo \"fine giornata\"",
+  "tipo": "regola",
+  "contenuto": "Heading 'Migliorie strutturali (rendono le analisi automatiche)', punto 1: 'Metti i numeri nel frontmatter come campi, non nella prosa. Oggi l'ARR è scritto \"€ 720.000\" dentro al testo: per sommarlo o filtrarlo serve farlo a mano. Se diventa un campo (arr: 720000, settore: banca), Obsidian con Dataview lo somma e filtra da solo. Esempio concreto: \"tutti i clienti retail sopra 400k senza insights\" diventa una query, non una rilettura a mano.' Punto 2: 'Schede che mancano: i 6 clienti senza nota (ci sono solo 3/9), i 2 prodotti senza nota (Manutenzione, Insights), e soprattutto Costruzioni Sud, il cliente perso: è la fonte più preziosa per capire perché si perde un cliente.'",
+  "fonte": "RnoC5IlOUhs#118:06 (scena 300) + voce",
+  "frame": "frame-1182.png",
+  "ancora": "Metti i numeri nel frontmatter come campi, non nella prosa.",
   "confidenza": "osservato",
   "relazioni": [
    {
@@ -3054,11 +3072,11 @@
  },
  {
   "id": "KA-176",
-  "tipo": "struttura",
-  "contenuto": "Template _template-daily.md aperto e trascritto per intero, riga per riga (parzialmente tagliato dal bordo inferiore dello screenshot, il file continua oltre quanto visibile): frontmatter — title: \"Daily — YYYY-MM-DD\"; summary: \"Una frase di sintesi sull'intera giornata.\"; tags: [workspace, type/daily]; status: done; created: YYYY-MM-DD; updated: YYYY-MM-DD; related: - \"[[sessione-YYYY-MM-DD]]\" - \"[[entita-principale-toccata]]\". Corpo — # Daily — YYYY-MM-DD ## Fatto: 'Sintesi unica di cosa è stato concluso oggi, fondendo le sessioni senza ripeterle riga per riga.' ## Deciso: 'Le scelte chiave della giornata e il perché.' ## Aperto: 'Cosa resta in sospeso a fine giornata.' ## Sessioni: '- [[sessione-YYYY-MM-DD]]' Poi un commento HTML con le regole (tagliato prima della fine, testo visibile): '<!-- REGOLE (vedi workspace/_template-nota.md): - Date sempre YYYY-MM-DD, mai relative. - related = lista a blocco con TUTTE le sessioni del giorno + le entità principali toccate. - title e summary sempre fra virgolette doppie.' (il commento prosegue oltre il bordo visibile, non riportato dalla fonte).",
-  "fonte": "RnoC5IlOUhs#137:42 (scena 344)",
-  "frame": "frame-1378.png",
-  "ancora": "title: \"Daily — YYYY-MM-DD\"",
+  "tipo": "procedura",
+  "contenuto": "Heading 'Le 3 mosse che sbloccano l'80%': 'Se fai solo tre cose, in ordine:' 1. 'Prezzo per modulo sui clienti → sblocca ricavo per prodotto, attach rate a valore, e metà delle analisi commerciali.' 2. 'Una metrica di risultato per persona (almeno AE e CSM) → sblocca il \"top employee\" e la valutazione del team.' 3. 'I costi (conto economico base + RAL) → sblocca profittabilità, margine, ARR per dipendente: passi da \"quanto fatturo\" a \"quanto guadagno\".' Chiude con la domanda del modello: 'Vuoi che ti prepari lo schema dei campi nuovi (un template aggiornato per cliente/persona/prodotto) e le 8 schede mancanti come bozze da riempire?'",
+  "fonte": "RnoC5IlOUhs#118:18 (scena 301) + voce",
+  "frame": "frame-1184.png",
+  "ancora": "Le 3 mosse che sbloccano l'80%",
   "confidenza": "osservato",
   "relazioni": [
    {
@@ -3070,6 +3088,466 @@
  },
  {
   "id": "KA-177",
+  "tipo": "numero",
+  "contenuto": "Il presentatore stacca su Excalidraw e disegna a mano una tabella di scala 'a 80/20' esplicitamente definita come 'numeri indicativi... non prendeteli come solo questo', per capire 'che tipologia di company brain' serve in base al numero di note del vault. Tabella completa a due colonne '# NOTE' (arancione) | 'ARCHITETTURA' (blu): '< 500' → '~' con una freccetta che punta a testo blu corsivo, letto come 'MAPPE CONTENUTO + Plus. txt' (trascrizione incerta per la grafia manoscritta, possibile refuso per 'più .txt'/file di testo semplice); '500 - 2500' → '~' (stessa freccetta, nessun testo aggiuntivo distinto in questi frame); '2500 - 20'000' → 'Embeddings / RAG'; '20'000 +' → 'Pipeline RAG completo'. Accanto, sullo stesso canvas, un secondo schizzo separato con due rettangoli rossi etichettati 'daily logs' e 'sessions' collegati da una freccia che passa da nero a blu, elemento che introduce visivamente il concetto di embedding/vettori mostrato subito dopo con l'Embedding Projector di TensorFlow. Un terzo doodle, non correlato al discorso in corso secondo la fonte (schema 'BRANCH'/'COMMIT' in stile Git), compare sullo stesso file Excalidraw senza corrispondenza nel parlato a quel timestamp.",
+  "fonte": "RnoC5IlOUhs#122:06-124:12 (scene 302-303, 307, 309) + voce",
+  "frame": "frame-1222.png, frame-1230.png, frame-1242.png",
+  "ancora": "MAPPE CONTENUTO + Plus. txt",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {
+    "verso": "KA-178",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-178",
+  "tipo": "definizione",
+  "contenuto": "Stacco sulla piattaforma community Skool 'Avanguardia Plus', corso 'Fondamenta AI / Business', lezione 'Cosa sono i Vector Databases' (progresso 0%, sezione 'Fondamenta AI' con altre lezioni collegate: 'Cosa Uso Per fare Le Presentazioni', introduzioni agli LLM, 'Prompt Engineering Basics', masterclass live). Testo della lezione, heading 'Cosa impari in questa lezione': 'Un vector database è un tipo di database ottimizzato per salvare e cercare vector embeddings. Se RAG è il processo, il vector database è dove i dati vivono.' Segue la differenza rispetto a un database tradizionale: 'un database SQL cerca corrispondenze esatte (\"dammi tutte le righe dove città = Milano\"). Un vector database cerca per similarità semantica (\"dammi i chunk di testo più simili a questa domanda\").' Il player video incorporato nella lezione mostra come miniatura l'Embedding Projector di TensorFlow, strumento che verrà usato dal vivo nella scena successiva.",
+  "fonte": "RnoC5IlOUhs#122:12 (scena 304) + voce",
+  "frame": "frame-1223.png",
+  "ancora": "Un vector database è un tipo di database ottimizzato per salvare e cercare vector embeddings.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-179",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-179",
+  "tipo": "esempio",
+  "contenuto": "Dimostrazione dal vivo su projector.tensorflow.org (Embedding Projector, 'Tensors from: Word2Vec 10K', 'Points: 10000 | Dimension: 200', checkbox 'Spherize data' spuntata): il presentatore cerca la parola 'king' e mostra che, cliccando dal centro della nuvola di punti, 'Kings e King sono vettori simili nella stessa direzione nello spazio tridimensionale' — dimostrazione visiva del concetto di similarità semantica appena definito. La stessa registrazione viene rivista poco dopo dentro la lezione Skool 'Cosa sono i Vector Databases', dove è visibile un secondo esempio con un grappolo di parole tutte terminanti in '-ing' disposte vicine nello spazio vettoriale: 'networking', 'buckingham', 'cooking', 'tracking', 'viking', 'checking', 'smoking', 'drinking', 'striking', 'looking', 'attacking', 'working', 'thinking', con frecce blu disegnate a mano che convergono verso l'area di 'drinking' da un angolo del grafico — prova visiva che il vector database raggruppa per somiglianza morfologico-semantica, non per accesso esatto.",
+  "fonte": "RnoC5IlOUhs#122:18-122:48 (scene 305-306) + voce",
+  "frame": "frame-1224.png, frame-1229.png",
+  "ancora": "convergono verso l'area di \"drinking\" da un angolo del grafico",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-180",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-178",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-180",
+  "tipo": "principio",
+  "contenuto": "Sulla vista Graph view di Obsidian del vault Aurora (decine di nodi: aree, KPI, persone, clienti, prodotti, indici), il presentatore traccia a mano un percorso blu a zigzag da 'output-pitch-deck-vendite' fino a 'self-identita-aurora'/'_index-entities' per illustrare il vantaggio pratico dei vector database: 'al posto che andare dentro e farsi tutti i 1000... rami e sprecare token, l'AI andrà direttamente a vedere le cose che in un database vettoriale sono più o meno orientate nella stessa direzione' — cioè un'AI collegata a un vero vector database non deve attraversare l'intero grafo di note per rispondere, ma salta direttamente ai nodi semanticamente vicini alla domanda, risparmiando token. Il grafo stesso viene poi mostrato a schermo intero come prova visiva che il vault costruito è solido: 'Obsidian è il nostro layer 1' nell'architettura a livelli della company brain, e un grafo così strutturato è la conferma che 'avete un'architettura che funzioni' e 'può essere scalabile fino a un certo punto'.",
+  "fonte": "RnoC5IlOUhs#123:18-125:18 (scene 308, 314-315) + voce",
+  "frame": "frame-1234.png, frame-1253.png, frame-1254.png",
+  "ancora": "Obsidian è il nostro layer 1, adattiamo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-181",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-177",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-181",
+  "tipo": "definizione",
+  "contenuto": "Rassegna di tre vector database concreti consigliati per integrazioni RAG, mostrata tramite tre ricerche Google consecutive: Supabase ('The Postgres Development Platform', 'Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings') — voce: 'i database che consiglio sono, se volete fare integrazioni di tipo rag, potete usare Superabase e quindi il classico che vedete all'interno... dei video, soprattutto quando c'erano le [integrazioni]'; Qdrant, risultato sponsorizzato ('Vector Database for RAG — Enterprise-ready vector database for cloud, on-prem, and edge deployments') — voce: 'oppure potete usare un database come quadrant, hanno alcune differenze. Supase vi permette di fare integrazioni...'; Weaviate, ultimo esempio ('Weaviate: The AI database developers love', 'With over 20M open source downloads and thousands of customers') — chiude la rassegna con entrambe le mani alzate a palmo aperto, gesto enfatico di conclusione dell'elenco.",
+  "fonte": "RnoC5IlOUhs#124:12-125:12 (scene 310-313) + voce",
+  "frame": "frame-1243.png, frame-1246.png, frame-1252.png",
+  "ancora": "Vector Database for RAG",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-182",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-182",
+  "tipo": "comando",
+  "contenuto": "Pagina Notion privata 'Company Brain — Tutti i prompt del...', heading 'Prompt 12 — Il cruscotto HTML locale': 'Un singolo file HTML offline da aprire con un doppio click: il biglietto da visita per una demo.' Blocco codice del prompt riportato per intero: 'Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apro con un doppio click, offline e senza account.' Introdotto a voce come primo dei due 'layer visivi' della company brain (il secondo è Notion): 'Possiamo fare o cruscotti locali, quindi con un HTML locale, lo vedete in un sacco di video YouTube, oppure possiamo utilizzare Notion.'",
+  "fonte": "RnoC5IlOUhs#126:06 (scena 316) + voce",
+  "frame": "frame-1262.png",
+  "ancora": "Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apro con un doppio click, offline e senza account.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-183",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-183",
+  "tipo": "comando",
+  "contenuto": "Stessa pagina Notion 'Company Brain — Tutti i prompt', heading 'Prompt 13 — Apri la sessione (il briefing)': 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Blocco codice del prompt, parzialmente tagliato dal bordo inferiore dello screenshot: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conv[iene fare oggi in] ordine di priorità.' seguito (non del tutto leggibile nello screenshot) da: 'Non scrivere ancora niente nel cervello. Solo il briefing.' Questo prompt anticipa esattamente il comando 'buongiorno' della futura skill journal costruita più avanti nel video (vedi P3-069), con la stessa struttura in 5 righe e lo stesso vincolo di non scrivere nulla durante il briefing.",
+  "fonte": "RnoC5IlOUhs#126:06 (scena 316) + voce",
+  "frame": "frame-1262.png",
+  "ancora": "Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-184",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-198",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-184",
+  "tipo": "esempio",
+  "contenuto": "Il presentatore passa da Notion ad Antigravity ed esegue dal vivo esattamente il Prompt 12: nel riquadro di input (bordo rosso attivo) digita/incolla lo stesso testo letterale già visto nella pagina Notion ('Genera un cruscotto HTML statico dai dati del canon...'), sopra la coda ancora visibile della risposta precedente sull'audit del database (punti 'Metti i numeri nel frontmatter...' e 'Le 3 mosse che sbloccano l'80%'). Voce: 'Quindi adesso facciamo un prompt super semplice e lo incolleremo qua dentro... genere, un croscotl scarico statico dei dati del canon, gli indicatori dell'ultimo mese, grafici, l'andamento, la classifica, tutto in un solo file, HTML che apre con un doppio click online e senza account' — corrisponde parola per parola al prompt scritto, a parte i piccoli inciampi del parlato. Dopo l'invio il prompt riappare in un blocco 'Bash tool output' con pulsante 'Show more' e stato di elaborazione 'Considering...'.",
+  "fonte": "RnoC5IlOUhs#126:36-126:48 (scene 317-318) + voce",
+  "frame": "frame-1267.png, frame-1269.png",
+  "ancora": "Bash tool output (o57wx9)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-182",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-185",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-185",
+  "tipo": "struttura",
+  "contenuto": "Cruscotto HTML generato dal Prompt 12, aperto in locale (barra indirizzo 'File | /Users/giovannibeggiato/Desktop/aurora%20cervello/outputs/cruscotto-aurora.html'), sfondo scuro: header con logo quadrato sfumato viola-azzurro, titolo 'Aurora Sistemi S.p.A.', sottotitolo 'Cruscotto direzionale'; a destra 'Periodo di riferimento: fine 2025', 'Fonte: canon.md · compilato 2026-06-10', 'Dati riconciliati · nessun dato inventato'. Sezione 'INDICATORI CHIAVE - FINE 2025' con 6 card riportate per intero: 'ARR TOTALE' € 3,84 Mln (€ 3.840.000, +24% vs inizio 2025); 'CLIENTI ATTIVI' 9 (+1 nuovo logo · -1 perso, netto 0); 'EDIFICI GESTITI' 751 (su Aurora Core, 9 clienti); 'NRR' 115% (nel revenue attention, target >110%); 'CHURN LOGO' ~11% (1 cliente perso su 9, Costruzioni Sud); 'CHURN FATTURATO' 5,8% (€ 180.000 gross, perdita attesa). Voce del presentatore: 'Perfetto. Quindi il primo è questo output di cruscotto Aurora HTML che può rappresentare la nostra company Brain.'",
+  "fonte": "RnoC5IlOUhs#127:12 (scena 319) + voce",
+  "frame": "frame-1273.png",
+  "ancora": "Dati riconciliati · nessun dato inventato",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-186",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-186",
+  "tipo": "struttura",
+  "contenuto": "Stesso cruscotto HTML, sezione 'ANDAMENTO' con due grafici riportati per intero: a sinistra 'Fatturato (ARR)' — linea che parte da € 3,10 Mln (inizio periodo reale) e sale a € 3,84 Mln (fine 2025), poi prosegue tratteggiata fino a € 5,00 Mln, etichettata come obiettivo Board 2026; a destra 'Clienti attivi' — linea a gradini dal 2019 al 2025 con valori 1, 4, 6, 8, 9, 9, 9 (crescita rapida 2019-2022, poi plateau a 9 clienti attivi dal 2023). I due grafici traducono in immagine esattamente i numeri già visti nel canon (P3-047, progetto ARR 5M) e nell'audit (churn/espansione).",
+  "fonte": "RnoC5IlOUhs#127:12 (scena 319)",
+  "frame": "frame-1273.png",
+  "ancora": "Fatturato (ARR)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-187",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-187",
+  "tipo": "struttura",
+  "contenuto": "Stesso cruscotto HTML, scroll su classifica clienti per fatturato (barra multicolore con gradiente che rappresenta i moduli attivi) e organico per reparto, riportati per intero: 1 \"Immobiliare Lombarda SGR\" \"€ 720.000\" (\"Property management\", \"120 edifici · dal 2018\"); 2 \"Gruppo Retail Centro\" \"€ 640.000\" (\"Catena retail\", \"210 edifici · dal 2020\"); 3 \"Banca Adriatica\" \"€ 520.000\" (\"Banca\", \"140 edifici · dal 2019\"); 4 \"Comune di Bologna\" \"€ 410.000\" (\"Pubblica amm.\", \"95 edifici · dal 2021\"); 5 \"LogiPark Logistica\" \"€ 380.000\" (\"Logistica\", \"65 edifici · dal 2021\"); 6 \"TorreVerde Property\" \"€ 350.000\" (\"Property management\", \"60 edifici · dal 2022\"); 7 \"Rete Sanità Nord\" \"€ 300.000\" (\"Sanità\", \"38 edifici · dal 2022\"); 8 \"UniCampus Student Housing\" \"€ 260.000\"; \"HotelLine Hospitality\" \"€ 260.000\". Legenda colori moduli: Manutenzione, Access, Insights. A destra, grafico a ciambella '47 persone' al centro con legenda completa: Prodotto & Engineering 18 · 38%, Customer Success 9 · 19%, Vendite 7 · 15%, Finance & Operations 5 · 11%, Marketing 4 · 9%, People & Cultura 2 · 4%, Fondatori 2 · 4%.",
+  "fonte": "RnoC5IlOUhs#127:30-127:36 (scene 320-321)",
+  "frame": "frame-1276.png, frame-1277.png",
+  "ancora": "\"Immobiliare Lombarda SGR\" \"€ 720.000\" (\"Property management\", \"120 edifici · dal 2018\")",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-188",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-188",
+  "tipo": "struttura",
+  "contenuto": "In fondo alla pagina del cruscotto, riga di stato centrata riportata per intero: 'Cruscotto statico offline · generato dai dati del canon di Aurora Sistemi · 47 persone · 9 clienti attivi · 751 edifici'. Il presentatore chiude il primo esempio con: 'credo che avere un cruscotto figo ora da parte mia sia esattamente quello per cui avete cliccato sul video, quindi lo eviteremo... Questo è un primo layer visivo. Il secondo layer visivo è utilizzarlo tramite Notion.' Torna poi in cima alla stessa pagina prima di cambiare strumento e annuncia il passaggio successivo: 'Adesso connetterò al volo questo con eh cloud code.'",
+  "fonte": "RnoC5IlOUhs#127:36-127:48 (scene 321-322) + voce",
+  "frame": "frame-1277.png, frame-1278.png",
+  "ancora": "Cruscotto statico offline · generato dai dati del canon di Aurora Sistemi · 47 persone · 9 clienti attivi · 751 edifici",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-189",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-189",
+  "tipo": "comando",
+  "contenuto": "Documentazione ufficiale consultata a schermo, developers.notion.com/guides/mcp/get-started-with-mcp, pagina 'Connecting to Notion MCP': 'This guide walks you through connecting your AI tool to Notion using the Model Context Protocol (MCP). Once connected, your tool can read and write to your Notion workspace based on your access and permissions.' Sezione 'Claude Code': 'Run this command in your terminal:' comando riportato per intero: 'claude mcp add --transport http notion https://mcp.notion.com/mcp'. Segue: 'Then authenticate by running /mcp in Claude Code and following the OAuth flow.' Più sotto: 'Use the /mcp command to list and manage the MCP servers you have installed, and use the /context command to understand the context token usage of your current session, including the number of tokens used by each MCP server that's enabled.' La sidebar destra elenca le altre integrazioni supportate oltre a Claude Code: Cursor, VS Code (GitHub Copilot), Claude Desktop, Windsurf, ChatGPT, Codex, Antigravity, Other tools (con sotto-voce JSON configuration format), Connect through the Notion app, Troubleshooting, FAQ.",
+  "fonte": "RnoC5IlOUhs#127:48 (scena 323) + voce",
+  "frame": "frame-1279.png",
+  "ancora": "claude mcp add --transport http notion https://mcp.notion.com/mcp",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-190",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-190",
+  "tipo": "comando",
+  "contenuto": "Sequenza terminale in Claude Code per collegare Notion: digitazione '/fast' con risposta '⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok'; poi digitazione '/cl▍' con menu di autocompletamento visibile ('/clear — Start a new session with empty context; previous session stays on disk (resumable with /resume)', '/claude-api', '/exit', '/code-review-mcp-issue-prompts'); eseguito '/clear' per ripartire pulito, poi banner di benvenuto 'Welcome back Gio!' con 'Opus 4.6 (1M context) with hi[gher limits]... · Claude Max', organizzazione 'giobeggiato@gmail.com's Organization', box 'Tips for getting started' ('Run /init to create a CLAUDE.md file with instructions for Claude', 'Introducing Claude Fable 5: a Mythos-class model that we've made saf...', 'Fixed sessions not saving transcripts...', 'Added \"--safe-mode\" flag...'), avviso '⚠ 1 setup issue: MCP · /doctor'; comando cronologia '> mcp add --transport http notion https://mcp.notion.com/mcp' con stato '⚙ Perusing...'; infine messaggio utente 'sei connesso con Notion?' con stato di elaborazione '🔴 Pontific_a' (verosimilmente 'Pontificating...', etichetta troncata a schermo). Nota di cautela sulla fonte: il nome del modello 'Claude Fable 5' così come appare nel banner di questa specifica registrazione non è verificabile altrove nella sessione ed è riportato alla lettera solo perché leggibile a schermo in quel frame.",
+  "fonte": "RnoC5IlOUhs#127:54-129:18 (scene 324-326) + voce",
+  "frame": "frame-1280.png, frame-1281.png, frame-1287.png",
+  "ancora": "⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {
+    "verso": "KA-191",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-191",
+  "tipo": "struttura",
+  "contenuto": "Claude crea in Notion una nuova pagina privata intitolata 'Cervello Pino' (emoji albero di pino 🌲), callout verde riportato per intero: '🌲 Cervello Pino — Cruscotto KPI di Aurora Sistemi S.p.A.' — 'Piattaforma SaaS italiana per la gestione intelligente del patrimonio immobiliare (fondata a Milano nel 2018). Dati consolidati a fine 2025 (fonte: verbale CdA del 22/01/2026, riconciliato dalla contabilità).' Heading '📊 KPI principali — chiusura 2025' con tre card colorate: verde '📈 ARR' € 3,84M ('+24% sui € 3,10M di inizio anno (+€ 740k)'); blu '🔄 NRR' 115% ('Espansione che supera il churn. Obiettivo Board: >110%'); viola '🏢 Edifici gestiti' 751 ('Somma dei 9 clienti attivi, quadra con l'anagrafica Core'). Voce: 'Integrazione Notion fatta. App Notion, lo chiameremo cervello pino. Abbiamo il nostro ARR, abbiamo il nostro revenue.'",
+  "fonte": "RnoC5IlOUhs#129:18 (scena 327) + voce",
+  "frame": "frame-1294.png",
+  "ancora": "🌲 Cervello Pino — Cruscotto KPI di Aurora Sistemi S.p.A.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-192",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-192",
+  "tipo": "numero",
+  "contenuto": "Nella pagina 'Cervello Pino', heading '📊 Revenue — dettaglio ARR' con tabella a ponte riportata per intero (colonne Voce | Valore | Note): 'ARR inizio 2025' | '€ 3.100.000' | 'Base di partenza'; '– Churn (gross)' | '– € 180.000' | 'Costruzioni Sud, uscita giugno 2025 (acquisita da gruppo con sistema proprietario)'; '+ Espansione (upsell)' | '+ € 660.000' | 'Motore NRR: Banca Adriatica (Access), Gruppo Retail (Energy), Immobiliare Lombarda (Insights)'; '+ Nuovo logo' | '+ € 260.000' | 'HotelLine Hospitality (onboarding chiuso a ottobre)'; riga totale evidenziata in verde 'ARR fine 2025' | '€ 3.840.000' | '+24% YoY'. Sotto, callout blu: '💡 La crescita 2025 è stata trainata soprattutto dall'espansione sui clienti esistenti (upsell di moduli), non dall'acquisizione: un solo nuovo logo nell'anno. È il modello che la CEO Elena Ferraro cita come \"il vero motore\" di Aurora.'",
+  "fonte": "RnoC5IlOUhs#129:24 (scena 328) + voce",
+  "frame": "frame-1295.png",
+  "ancora": "ARR fine 2025",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-193",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-193",
+  "tipo": "struttura",
+  "contenuto": "Stessa pagina 'Cervello Pino', heading '👥 Clienti — i 3 key account per fatturato' con tre card: verde '🏢 Immobiliare Lombarda SGR' ('Property management · cliente dal...', poi coda leggibile nello scroll successivo: 'Core, Energy, Manutenzione, Insights / 2025: ha aggiunto Insights. Referenzia volentieri.'); blu '🏦 Banca Adriatica' ('Banca · cliente dal 2022', coda: '2025: Access esteso a tutte le filiali — upsell più esteso dell'anno.'); arancione '🏨 HotelLine Hospitality' ('Hospitality · cliente dal 2025', coda quasi tagliata: '...logo 2025. Forte interesse su Energy.'). Callout grigio di trasparenza sui dati: 'Il database qui sotto elenca tutti i clienti. ARR ed edifici sono valorizzati solo dove certi nel vault aziendale: per i clienti non-key account le singole cifre non sono dettagliate nelle note di origine (so il totale: € 3,84M su 751 edifici, ma non la ripartizione cliente per cliente).' Heading '🎯 Obiettivo 2026 (approvato dal CdA il 22/01/2026)' con card viola: '🚀 ARR oltre € 5.000.000 (da € 3,84M)', bullet 'Vincoli di qualità: NRR > 110%, logo churn < 10%', 'Leve: nuovi loghi (Vendite) + espansione clienti esistenti (Customer Success)', 'Abilitatore: +6 assunzioni, soprattutto Engineering e Customer Success'. Heading '🧩 Reparti e contesto' con tabella 'Reparto | A capo | Ruolo sui numeri': 'Vendite | Davide Conti (VP Sales) | Acquisizione nuovi loghi (~7 persone)', riga successiva tagliata dal bordo inferiore 'Customer Success | Giulia Rinaldi (Bologna) | Retention ed espansione —[...]'.",
+  "fonte": "RnoC5IlOUhs#129:24-129:30 (scene 328-329) + voce",
+  "frame": "frame-1295.png, frame-1296.png",
+  "ancora": "🎯 Obiettivo 2026 (approvato dal CdA il 22/01/2026)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-194",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-194",
+  "tipo": "struttura",
+  "contenuto": "Il presentatore mostra al volo anche un database Notion preesistente e distinto, non generato in questa sessione: breadcrumb 'New page / Cruscotto Aurora / Clienti' (ramo diverso da 'Cervello Pino'). Tabella '📁 Clienti' con colonne 'Cliente | ARR | città | Dal | MQ | Pr[odotto]' e righe leggibili: Polo Universitario Sud €750.000 Catania 2024 60000 Edge; Residenze Aurora Verde €820.000 Brescia 2014 90000 Care; Torre Eurosky Uffici €558.000 Roma 2016 90000 Cloud; BioPharma Stabilimenti €555.000 Latina 2022 40000 Edge; Galleria Moderna €552.000 Firenze 2018 40000 Care; Iberia Centros €528.000 Madrid 2013 18000 Care; Università Politecnica Adriatica €522.000 Ancona 2021 60000 Care; Museo delle Arti Contemporanee €511.000 Torino 2017 25000 Care; MediCenter Salute €508.000 Padova 2013 12000 Cloud; Aurora DACH Buildings €486.000 Monaco di Baviera 2014 8000 Care; Distretto Tessile Pratese €420.000 Prato 2020 25000 Care; Retail Gamma €402.000 Verona 2022 8000 Edge; Nordic Retail Chain €370.000 Amburgo 2024 12000 Edge; Centro Direzionale Partenope €369.000 Napoli 2013 25000 Cloud; Industria Meccanica Veneta €347.000 Vicenza 2018 12000 Care; Stadio Arena Nuova €343.000 Udine 2013 90000 Care; Supermercati Risparmio €314.000 Bologna 2022 8000 Care; Helvetia Office Park €309.000 Zurigo 2021 12000 Care; Banca Civica €278.000 Torino 2017 18000 Care (tagliata dal bordo). Questo elenco di ~18 clienti con cifre diverse da quelli di 'Cervello Pino' (i 9 attivi + Costruzioni Sud) appartiene a una pagina Notion preesistente ('Cruscotto Aurora') e non contraddice i dati della nuova pagina generata: è un dataset dimostrativo separato già presente nel workspace prima di questa sessione.",
+  "fonte": "RnoC5IlOUhs#129:36 (scena 330) + voce",
+  "frame": "frame-1297.png",
+  "ancora": "New page / Cruscotto Aurora / Clienti",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-195",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-195",
+  "tipo": "principio",
+  "contenuto": "Risposta completa di Claude in Antigravity dopo il prompt 'Per favore, costruiscimi su Notion un cruscotto di KPI per la mia azienda Aurora con tutto quello che hai... Chiamalo \"Cervello Pino\"...': '\"Cervello Pino\" è creato su Notion:' con link, poi riepilogo di cosa contiene (cruscotto KPI a 6 card, tabella revenue a ponte, 3 key account + database 'Clienti Aurora' inline con tutti i 10 clienti filtrabile, obiettivo 2026 e mappa reparti). Poi, testuali, le 'Due note di trasparenza:' che sono il cuore metodologico dell'intero esercizio: '1.' 'Ho usato i dati del vault locale \"aurora cervello\", non un workspace Notion preesistente: il tuo Notion non aveva nessun teamspace, quindi ho costruito da zero coi dati certi del vault.' '2.' 'ARR ed edifici per cliente li ho valorizzati solo dove certi. Il vault dà il totale (€ 3,84M su 751 edifici) e il dettaglio dei 3 key account, ma non la ripartizione cliente-per-cliente degli altri 6. Inoltre il vault cita 9 clienti attivi ma ne nomina solo 8: ho messo un placeholder \"Cliente settore PA\" per far quadrare il conteggio, invece di inventare un nome.' Chiusura: 'Vuoi che ti provi a derivare l'ARR mancante per cliente o che colleghi questa pagina ad altre note?' Questo è il principio anti-invenzione applicato in pratica: quando un dato non è certo nel cervello, l'AI dichiara il buco (o usa un placeholder esplicito) invece di inventare un numero o un nome plausibile.",
+  "fonte": "RnoC5IlOUhs#129:54 (scena 331) + voce",
+  "frame": "frame-1300.png",
+  "ancora": "Due note di trasparenza:",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-196",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-196",
+  "tipo": "principio",
+  "contenuto": "Il presentatore apre una nuova sessione Claude Code vuota in Antigravity ('Type /model to pick the right tool for the job.') e passa a schermo webcam a piena inquadratura per introdurre il limite strutturale della memoria fin qui costruita: 'che non abbiamo ancora un modo di dire allei \"Ehi, ascolta, ma a marzo avevamo parlato di questo argomento? Ti ricordi cos'era? Cosa avevamo deciso?\"' Il punto è che le note statiche (clienti, KPI, progetti) non bastano: serve un meccanismo dedicato per far ricordare all'AI le conversazioni passate, altrimenti resta senza memoria episodica. Il presentatore motiva perché vale la pena costruirlo: 'che ci permette di avere enormi ritorni,' — introduce così l'ultimo pezzo del sistema, la memoria dinamica (skill journal) che verrà costruita subito dopo.",
+  "fonte": "RnoC5IlOUhs#130:00-130:42 (scene 332-336) + voce",
+  "frame": "frame-1301.png, frame-1305.png, frame-1306.png, frame-1307.png, frame-1308.png",
+  "ancora": "che ci permette di avere enormi ritorni,",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-197",
+    "tipo": "motiva"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-197",
+  "tipo": "comando",
+  "contenuto": "Prompt digitato per intero nel riquadro di input di Antigravity (bordo rosso attivo) per costruire la skill journal, trascritto riga per riga così come appare a schermo: 'Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.' — riga vuota — 'CONTESTO -- memoria viva' — 'Il cervello ha due strati di memoria:' — '- Memoria STATICA: le note delle entità vere (clienti, KPI, progetti).' — '  Vivono già nel cervello e cambiano di rado.' — '- Memoria DINAMICA: il diario di lavoro. Ogni sessione e ogni giornata' — '  lasciano una nota che si AGGANCIA sempre alle entità statiche coi' — '  [[wikilink]]. Mai una nota di diario sciolta nel vuoto.' — 'Lo scopo della skill e' tenere viva la memoria dinamica e cucirla a' (riga finale tagliata dal bordo inferiore del riquadro nello screenshot: il testo del prompt continua oltre quanto visibile, la fonte non ne riporta il proseguimento). Prima di inviarlo il presentatore lo introduce a voce quasi verbatim: 'dentro e gli diciamo contesto memoria viva. Il cervello ha due strati, memoria...'",
+  "fonte": "RnoC5IlOUhs#134:06 (scena 338) + voce",
+  "frame": "frame-1342.png",
+  "ancora": "Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-198",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-198",
+  "tipo": "comando",
+  "contenuto": "Risposta di Claude dopo aver costruito la skill, sezione 'Come invochi i tre comandi' riportata per intero: 'Fatto. Ho costruito una sola skill (journal) con i tre comandi al suo interno, più i due template, e prima ho scritto i due template in parallelo per andare più veloce come hai chiesto.' 'Scrivi semplicemente, in chat:' — 'buongiorno → briefing di inizio sessione in 5 righe. Non scrive niente.' — 'chiudi sessione → prima ti dice in 3 righe cosa abbiamo fatto, al tuo ok scrive sessione-<data>.' — 'fine giornata → legge tutte le sessioni del giorno, ti dice in 3 righe cosa e' successo, al tuo ok scrive il daily.' Poi: 'La skill si attiva da sola su queste frasi (e varianti tipo \"chiudiamo la sessione\", \"riassunto del giorno\"). Se vuoi forzarla puoi anche scrivere /journal.' Questo comando realizza concretamente lo schema già anticipato dal Prompt 13 'Apri la sessione' della pagina Notion (vedi P3-054): stessa logica di briefing in poche righe senza scrivere nulla, ora però automatizzata in una skill invocabile a frase libera.",
+  "fonte": "RnoC5IlOUhs#136:12 (scena 340) + voce",
+  "frame": "frame-1355.png",
+  "ancora": "Come invochi i tre comandi",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-199",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-183",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-199",
+  "tipo": "struttura",
+  "contenuto": "Stessa risposta, sezione 'Dove sono finiti i file' riportata per intero: 'Skill: .claude/skills/SKILL.md — l'orchestratore coi tre comandi e le regole.' — 'Template sessione: workspace/journal/_templates/_template-sessione.md' — 'Template daily: workspace/journal/_templates/_template-daily.md' — 'Cartelle del diario (create): workspace/journal/sessions/ e workspace/journal/daily/' Poi: 'Regole rispettate dentro la skill: date sempre YYYY-MM-DD, frontmatter conforme a _template-nota.md, ogni nota di diario con almeno un [[wikilink]] a un'entità reale (se manca, te lo chiede, nessuna entità inventata.' Testo tagliato in fondo: 'Vuoi che pr[...]'. Nella sidebar Explorer compare per la prima volta una cartella .claude in cima all'albero, appena creata dalla skill stessa.",
+  "fonte": "RnoC5IlOUhs#136:12 (scena 340)",
+  "frame": "frame-1355.png",
+  "ancora": "Dove sono finiti i file",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-200",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-200",
+  "tipo": "esempio",
+  "contenuto": "Primo test del comando 'buongiorno': messaggio utente 'Buongiorno Claude', Claude legge prima llms.txt (indice-porta del vault) poi risponde per intero: 'Buongiorno Gio.' — 'Non c'è ancora nessuna nota di sessione nel diario, quindi il briefing è solo sull'indice del cervello (llms.txt).' Heading 'Dove siamo': 'Il cervello di Aurora Sistemi è popolato e in piedi: 6 aree, 3 clienti attivi mappati (Banca Adriatica, HotelLine, Immobiliare Lombarda), KPI 2025 e l'unico progetto strategico aperto.' — 'Il diario di lavoro è vuoto: questa è di fatto la prima sessione tracciata.' Heading 'Cosa è aperto / da affrontare oggi, in ordine': '1. [[progetto-arr-5m-2026]] — l'obiettivo Board 2026: ARR oltre 5M con NRR >110% e churn logo <10%. È l'unico progetto attivo, quindi il candidato naturale su cui lavorare.' '2. Churn — il 2025 ha chiuso con logo churn ~11% ([[kpi-2025-churn]]), sopra la soglia <10% che il progetto richiede. Punto di attenzione concreto.' '3. Vedo che hai aperto outputs/cruscotto-aurora.html nell'IDE — se il lavoro di oggi è lì, partiamo da quello.' Chiusura: 'Da cosa vuoi cominciare?' Verifica end-to-end che il briefing rispetta esattamente la struttura in 5 righe promessa dal comando 'buongiorno' (P3-069) e dal Prompt 13 originale (P3-054), senza scrivere nulla nel cervello.",
+  "fonte": "RnoC5IlOUhs#136:12 (scena 341) + voce",
+  "frame": "frame-1363.png",
+  "ancora": "Buongiorno Gio.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-201",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-198",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-201",
+  "tipo": "struttura",
+  "contenuto": "Primo test del comando 'chiudi sessione': Claude conferma 'Fatto. La skill funziona: nota salvata in workspace/journal/sessions/sessione-2026-06-10.md.' con verifica di conformità (frontmatter valido, aggancio a [[progetto-arr-5m-2026]] rispettando la regola del wikilink obbligatorio, corpo in tre sezioni Fatto/Deciso/Aperto). Il file sessione-2026-06-10.md viene aperto e trascritto per intero, riga per riga: frontmatter — title: \"Sessione — 2026-06-10\"; summary: \"Test della skill journal: briefing di buongiorno e prima chiusura di sessione per verificare il salvataggio della nota.\"; tags: [workspace, type/session]; status: done; created: 2026-06-10; updated: 2026-06-10; related: - \"[[progetto-arr-5m-2026]]\". Corpo — # Sessione — 2026-06-10 ## Fatto: 'Briefing di buongiorno sul cervello di Aurora Sistemi (diario ancora vuoto, prima sessione tracciata).' 'Test della skill journal: verificato che la chiusura di sessione salvi correttamente una nota nel workspace.' ## Deciso: 'Agganciare questa nota di test a [[progetto-arr-5m-2026]], unico progetto attivo, per rispettare la regola del wikilink obbligatorio.' ## Aperto: 'Lavoro reale sul progetto ARR 5M e sul churn logo 2025 (~11%, sopra la soglia <10%) ancora da affrontare.'",
+  "fonte": "RnoC5IlOUhs#137:12 (scena 342)",
+  "frame": "frame-1373.png",
+  "ancora": "Fatto. La skill funziona: nota salvata in",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-202",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-198",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-202",
+  "tipo": "procedura",
+  "contenuto": "Terzo test, comando 'fine giornata': messaggio utente 'Hey Claude, grazie per oggi. Finisco la giornata qui', Claude risponde: 'Grazie a te, Gio. Attivo \"fine giornata\". Prima di scrivere il daily, in 3 righe cosa è successo oggi in totale:' numerato per intero: '1. Briefing di buongiorno sul cervello di Aurora Sistemi (diario vuoto, prima giornata tracciata).' '2. Test della skill journal: chiusura di sessione che ha salvato correttamente la nota nel workspace.' '3. Nessun lavoro reale sulle entità: giornata dedicata a verificare il meccanismo del diario.' Poi: 'C'è una sola sessione oggi ([[sessione-2026-06-10]]), che fonderò nel daily. Ti torna? Dammi l'ok e scrivo.' L'utente risponde 'fai pure', a quel punto Claude esegue un comando bash 'Bash Read daily template, check existing' ('cd \"...aurora cervello\" && cat workspace/journal/_templates/_template-daily.md 2>/dev/null && ...') prima di scrivere il file: questa sequenza dimostra in pratica la regola dichiarata nel comando (P3-069) — riassumere e chiedere conferma prima di scrivere, mai scrivere alla cieca.",
+  "fonte": "RnoC5IlOUhs#137:36 (scena 343) + voce",
+  "frame": "frame-1377.png",
+  "ancora": "Grazie a te, Gio. Attivo \"fine giornata\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-203",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-203",
+  "tipo": "struttura",
+  "contenuto": "Template _template-daily.md aperto e trascritto per intero, riga per riga (parzialmente tagliato dal bordo inferiore dello screenshot, il file continua oltre quanto visibile): frontmatter — title: \"Daily — YYYY-MM-DD\"; summary: \"Una frase di sintesi sull'intera giornata.\"; tags: [workspace, type/daily]; status: done; created: YYYY-MM-DD; updated: YYYY-MM-DD; related: - \"[[sessione-YYYY-MM-DD]]\" - \"[[entita-principale-toccata]]\". Corpo — # Daily — YYYY-MM-DD ## Fatto: 'Sintesi unica di cosa è stato concluso oggi, fondendo le sessioni senza ripeterle riga per riga.' ## Deciso: 'Le scelte chiave della giornata e il perché.' ## Aperto: 'Cosa resta in sospeso a fine giornata.' ## Sessioni: '- [[sessione-YYYY-MM-DD]]' Poi un commento HTML con le regole (tagliato prima della fine, testo visibile): '<!-- REGOLE (vedi workspace/_template-nota.md): - Date sempre YYYY-MM-DD, mai relative. - related = lista a blocco con TUTTE le sessioni del giorno + le entità principali toccate. - title e summary sempre fra virgolette doppie.' (il commento prosegue oltre il bordo visibile, non riportato dalla fonte).",
+  "fonte": "RnoC5IlOUhs#137:42 (scena 344)",
+  "frame": "frame-1378.png",
+  "ancora": "title: \"Daily — YYYY-MM-DD\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-204",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p3b.json"
+ },
+ {
+  "id": "KA-204",
   "tipo": "esempio",
   "contenuto": "File 2026-06-10.md (daily) generato da Claude a partire dal template P3-074 e dalla sessione P3-072, trascritto per intero, riga per riga: frontmatter — title: \"Daily — 2026-06-10\"; summary: \"Prima giornata tracciata del diario: test della skill journal, dal briefing di buongiorno alla chiusura di sessione.\"; tags: [workspace, type/daily]; status: done; created: 2026-06-10; updated: 2026-06-10; related: - \"[[sessione-2026-06-10]]\" - \"[[progetto-arr-5m-2026]]\". Corpo — # Daily — 2026-06-10 ## Fatto: 'Briefing di buongiorno sul cervello di Aurora Sistemi: diario di lavoro ancora vuoto, questa è la prima giornata tracciata.' 'Testata la skill journal end-to-end: chiusura di sessione che salva correttamente la nota nel workspace.' ## Deciso: 'Agganciare le note di test a [[progetto-arr-5m-2026]], unico progetto attivo, per rispettare la regola del wikilink obbligatorio.' ## Aperto: 'Lavoro reale sul progetto ARR 5M e sul churn logo 2025 (~11%, sopra la soglia <10%) ancora da affrontare.' ## Sessioni: '- [[sessione-2026-06-10]]' Questo è l'ultimo output tecnico mostrato nel tutorial: il sistema di memoria viva end-to-end (skill journal + template + note agganciate via wikilink) completo e funzionante.",
   "fonte": "RnoC5IlOUhs#138:00 (scena 346)",
@@ -3078,18 +3556,18 @@
   "confidenza": "osservato",
   "relazioni": [
    {
-    "verso": "KA-178",
+    "verso": "KA-205",
     "tipo": "precede"
    },
    {
-    "verso": "KA-176",
+    "verso": "KA-203",
     "tipo": "esempio-di"
    }
   ],
   "_origine": "atoms-p3b.json"
  },
  {
-  "id": "KA-178",
+  "id": "KA-205",
   "tipo": "principio",
   "contenuto": "Tesi finale del relatore, ricostruita per intero incollando le battute letterali (marcate a voce, una per scena) delle ultime sei scene del video, tutte in webcam a piena inquadratura senza schermo software: scena 347 'Bene, signori, quindi direi che' / 'abbiamo fatto il nostro tutorial sulla' [company brain]; scena 348 'mille per essere arrivati fino alla' [fine — apertura del ringraziamento: 'Grazie mille per essere arrivati fino alla fine']; scena 349 'di più su come farlo in maniera anche' [più massiva per la propria azienda]; scena 350 'vendere questa tipologia di servizi da' [community]; scena 351 'interattive con una community di ormai' [90 imprenditori]; scena 352, ultimo frame estratto del video (occhi chiusi, espressione rilassata) 'ovviamente grazie ancora per aver' — chiusura letterale riportata dalla fonte: 'seguito il tutorial.' Tesi centrale ricomposta: il tutorial sulla company brain (Obsidian + Claude Code + layer visivi HTML/Notion + memoria viva via skill journal) è concluso, e il relatore rimanda chi vuole applicarlo 'in maniera anche più massiva' per la propria azienda, o venderlo come servizio, alla propria community di 'ormai 90 imprenditori' con 'moduli su moduli e live interattive'.",
   "fonte": "RnoC5IlOUhs#138:06-138:48 (scene 347-352) + voce",

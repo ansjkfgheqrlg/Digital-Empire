@@ -108,5 +108,446 @@
         "tipo": "esempio-di"
       }
     ]
+  },
+  {
+    "id": "P2-109",
+    "tipo": "numero",
+    "contenuto": "Prima Graph view \"piena\" di Obsidian dopo la scrittura in massa delle note del Prompt 4: nuvola fitta di decine di nodi bianchi (note) e verdi (tag, riconoscibili dal prefisso #), collegati da una rete di linee sottili molto densa attorno a un nodo centrale piu' grande, self-identita-aurora, e a un secondo nodo grande poco sopra, area-customer-success. Etichette leggibili con certezza: #property-management, #founder, canon (in alto a destra, isolato, senza linee visibili verso gli altri nodi), kpi-2025-edifici, #efficienza-energetica, #ceo, #pitch-deck, #sales, #marketing, #prodotto, cliente-immobiliare-lombarda, prodotto-aurora-energy, #entities, #cliente, area-vendite, area-marketing, #operations, #finance, area-finance-operations, #churn, kpi-2025-churn, concetto-arr, concetto-churn, #report, #metrica, area-prodotto-engineering, #engineering, #hub, #azienda, 2026. Molte altre etichette (decine) sono presenti ma a risoluzione 1280x720 risultano troppo piccole per una lettura affidabile: dichiarato invece di indovinare.",
+    "fonte": "RnoC5IlOUhs#82:18 (prima Graph view piena in Obsidian, decine di nodi tag+nota) + voce 82:18-82:30",
+    "frame": "frame-0824.png",
+    "ancora": "vedete che abbiamo la sfera che comincia lentamente a crearsi",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-104",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-110",
+    "tipo": "principio",
+    "contenuto": "Passaggio dall'IDE a sola webcam per introdurre il tema degli orfani: \"immaginatela come se viaggiasse solo tra quei collegamenti nella nostra company Brain\" -- l'AI, spiega Joe, si muove esclusivamente lungo i wikilink del vault, mai fuori da essi, motivo per cui non lasciare note isolate dal grafo e' un requisito tecnico e non solo estetico. Segue la domanda retorica, posta tenendo in mano una penna bianca (Apple Pencil) orizzontale davanti al microfono: \"Quindi noi vogliamo avere file orfani? La risposta e' no.\"",
+    "fonte": "RnoC5IlOUhs#84:42 (solo webcam, introduzione al viaggio dell'AI lungo i link) + voce 84:42-84:54",
+    "frame": "frame-0848.png, frame-0849.png",
+    "ancora": "immaginatela come se viaggiasse solo tra quei collegamenti nella nostra company Brain",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-111",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-111",
+    "tipo": "principio",
+    "contenuto": "Distinzione chiave enunciata a sola webcam, in sequenza: \"Vogliamo avere file orfani a livello concettuale, ma non orfani a livello grafo, ok?\" -- un orfano \"concettuale\" (nessuno lo cita a voce nella conversazione quotidiana) va bene, un orfano \"di grafo\" (zero wikilink in entrata) no, \"perche' vogliamo comunque che lei [l'AI] vada dentro\". L'esempio concreto portato: \"le note che avete preso in un meeting, ok? che magari le avete buttate li' a calcioni... per capirci. Eh, vogliamo che queste siano all'interno, no, del tutto\" -- una nota di riunione presa senza cura resta un tipico caso di orfano concettuale che pero' deve restare raggiungibile dal grafo, perche' se l'utente chiede all'AI \"'Hei, vai a vedere che cosa avevamo detto in quel meeting...' perche' c'era una roba interessante e magari non sono collegate a nulla, ok?\" -- se quella nota non e' collegata a nulla, l'AI non ha modo di raggiungerla.",
+    "fonte": "RnoC5IlOUhs#84:54-85:24 (solo webcam, sequenza di 6 scene sulla distinzione orfano concettuale/orfano di grafo) + voce 84:54-85:24",
+    "frame": "frame-0850.png, frame-0851.png, frame-0852.png, frame-0853.png, frame-0854.png, frame-0855.png",
+    "ancora": "Vogliamo avere file orfani a livello concettuale, ma non orfani a livello grafo, ok?",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-110",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-113",
+        "tipo": "motiva"
+      }
+    ]
+  },
+  {
+    "id": "P2-112",
+    "tipo": "principio",
+    "contenuto": "Dissolvenza incrociata webcam -> Graph view di Obsidian: mentre lo schermo passa dal volto di Joe al grafo, la voce completa il ragionamento sull'accesso alle note isolate (\"noi non avremo modo di accedervi, quindi dobbiamo instaurare ora una specie di...\") e poi annuncia il nome della soluzione: \"...stratagemma per collegare tutti gli orfani. Questo si chiamera' SL/index e volevo farvelo vedere ora...\" (SL/index = slash-index, cioe' il file _index per cartella). Nel frame di transizione, con la Graph view gia' nitida, sono identificati 33 nodi totali (contati uno per uno, nessuna etichetta dubbia): code-export-crm, area-vendite, concetto-arr, concetto-efficienza-energetica, cliente-hotelline-hospitality, persona-marco-bianchi, area-customer-success (nodo grande), persona-elena-ferraro, area-marketing, strumento-crm, kpi-2025-churn, doc-onboarding-cliente, persona-chiara-fontana, prodotto-aurora-energy, nota-collegata-2, area-prodotto-engineering, cliente-banca-adriatica, progetto-arr-6m-2026, area-finance-operations, concetto-churn, cliente-immobiliare-lombarda, output-pitch-deck-vendita, kpi-2025-edifici, kpi-2025-arr, kpi-2025-nrr, area-people-cultura, self-identita-aurora (nodo centrale grande), persona-giulia-rinaldi, prodotto-aurora-core, kpi-2025-clienti-attivi, nota-collegata-1, _template-nota, canon, prodotto-aurora-accesso. Canon e nota-collegata-1 risultano visivamente piu' periferici/in basso rispetto al grosso grappolo centrale, ma dal solo frame non e' possibile determinare con certezza se abbiano linee di collegamento entranti: dichiarato invece di indovinare (a questo punto della registrazione canon dovrebbe essere ancora il nodo orfano gia' segnalato in precedenza, poiche' la soluzione _index non e' ancora stata introdotta nel progetto).",
+    "fonte": "RnoC5IlOUhs#85:30-85:36 (dissolvenza incrociata webcam -> Graph view, 33 nodi identificati) + voce 85:30-85:36",
+    "frame": "frame-0856.png, frame-0857.png",
+    "ancora": "stratagemma per collegare tutti gli orfani. Questo si chiamerà SL/index",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {
+        "verso": "P2-104",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-113",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-113",
+    "tipo": "procedura",
+    "contenuto": "Dimostrazione dal vivo del problema su canon.md riaperto per intero in Obsidian (frontmatter + sezioni 1-2 del canon, gia' trascritte in P2-102): la barra di stato in basso mostra \"0 backlinks - 942 words - 7,192 characters\", confermando che nessuna nota rimanda ancora al Canon. Voce: \"...non c'e' nessuno che va a parlare con il nostro Canon e il problema non e' quante diramazioni abbiamo, ma e' quanti file riferiscono alla nostra nota, vogliamo che il nostro index e la nostra nota siano collegati tra di loro,\" -- Joe ribadisce che la metrica che conta per un vault e' il numero di link IN ENTRATA a una nota, non i link in uscita, ed e' esattamente questa la metrica che l'_index dovra' garantire a ogni nota.",
+    "fonte": "RnoC5IlOUhs#86:24-86:42 (workspace/canon aperto per intero, 0 backlinks) + voce 86:24-86:42",
+    "frame": "frame-0865.png",
+    "ancora": "il problema non è quante diramazioni abbiamo, ma è quanti file riferiscono alla nostra nota",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-112",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-114",
+    "tipo": "procedura",
+    "contenuto": "Annotazione a mano con penna/Apple Pencil verde acceso sulla Graph view di Obsidian: la scritta corsiva \"index\" con una freccia curva che parte da sotto e punta verso la cartella workspace nella sidebar (espansa: _template-nota, canon). Voce: \"perche' questo fa si' che non ci siano orfani scollegati e che quindi lei possa entrare e cominciare a vedere anche queste note.\" -- l'annotazione collega visivamente la soluzione appena nominata (_index per cartella) al nodo canon ancora isolato nel grafo, prima ancora che lo _index venga effettivamente generato.",
+    "fonte": "RnoC5IlOUhs#86:42-86:54 (annotazione a penna verde sul sidebar) + voce 86:42-86:54",
+    "frame": "frame-0868.png",
+    "ancora": "index",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-113",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-120",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-115",
+    "tipo": "principio",
+    "contenuto": "Chiarimento sull'uso pratico del Graph view, in sequenza di sole webcam: \"Di nuovo, noi non useremo il grafico perche' il grafo sara' per l'AI, ma noi dobbiamo sapere leggere cosa va male nel grafico e capire come possiamo migliorarlo di modo tale che l'AI possa utilizzarlo nel migliore dei modi, no? Quindi oltre ai nostri prompt abbiamo anche una maniera visiva e il toggle, no, trova gli orfani per far si' che riusciamo a vederli.\" -- il Graph view non e' uno strumento di lavoro quotidiano per l'utente umano (quello e' per l'AI), ma resta lo strumento diagnostico per individuare visivamente note isolate o mal collegate, incluso un toggle dedicato di Obsidian per \"trovare gli orfani\".",
+    "fonte": "RnoC5IlOUhs#86:54-87:24 (sequenza di 5 scene solo webcam sul ruolo del grafo) + voce 86:54-87:24",
+    "frame": "frame-0870.png, frame-0871.png, frame-0872.png, frame-0873.png, frame-0874.png",
+    "ancora": "il grafo sarà per l'AI, ma noi dobbiamo sapere leggere cosa va male nel grafico",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-113",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-116",
+    "tipo": "numero",
+    "contenuto": "Ritorno allo screen-share su Obsidian: Graph view con la cartella data espansa nella sidebar (5 file: kpi-2025-arr, kpi-2025-churn, kpi-2025-clienti-attivi, kpi-2025-edifici, kpi-2025-nrr) e workspace espansa (_template-nota, canon). Il grafo mostra la stessa rete fitta di nodi gia' elencata in P2-112, con canon ancora presente come nodo a se'. Cursore del mouse posizionato sul nodo prodotto-aurora-core. Voce di transizione: \"cominceremo e lo faremo, pero' era solo una premessa che volevo farvi.\"",
+    "fonte": "RnoC5IlOUhs#87:24 (Graph view completo con cartella data espansa, 44 note) + voce 87:24-87:30",
+    "frame": "frame-0875.png",
+    "ancora": "cominceremo e lo faremo, però era solo una premessa che volevo farvi.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-115",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-117",
+    "tipo": "numero",
+    "contenuto": "Graph view completo con la sidebar allineata alle 11 cartelle (workspace espansa: _index-workspa..., _template-nota..., canon.md). Rete fitta di nodi etichettati, tra cui: kpi-2025-churn, concetto-churn, nota-collegata-2, output-pitch-deck-vendite, area-finance-operations, kpi-2025-nrr, prodotto-aurora-core, concetto-efficienza-energetica, prodotto-aurora-access, doc-onboarding-cliente, _template-nota, area-customer-success (nodo grande, molto connesso), persona-giulia-rinaldi, cliente-banca-adriatica, kpi-2025-edifici, area-prodotto-engineering, self-identita-aurora (nodo grande centrale), cliente-immobiliare-lombarda, persona-chiara-fontana, kpi-2025-arr, area-marketing, area-vendite, kpi-2025-clienti-attivi, prodotto-aurora-energy, concetto-arr, nota-collegata-1, strumento-crm, area-people-cultura, progetto-arr-fin-2026, persona-elena-ferraro, canon, persona-marco-bianchi, code-export-crm, cliente-hoteline-hospitality. Questo e' il grafo appena prima che Claude riceva il comando di analisi/aggiunta indice (scena successiva), con canon ancora presente nella foto come nodo distinto ma non ancora esplicitamente segnalato come collegato o isolato in questo frame specifico.",
+    "fonte": "RnoC5IlOUhs#87:24 (Obsidian, Graph view completo con cartella data espansa) + voce 87:24-87:30",
+    "frame": "frame-0875.png",
+    "ancora": "cominceremo e lo faremo, però era solo una premessa che volevo farvi.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-118",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-118",
+    "tipo": "procedura",
+    "contenuto": "Report completo di Claude dopo la scrittura in massa delle note del Prompt 4, trascritto integralmente, prima parte (\"Regole rispettate\"): \"Ogni nota: una sola idea, frontmatter completo (title, summary, tags, status, created, updated, related), primo tag = nome cartella, ≥3 wikilink uscenti a note reali e uniche. Ordine di creazione studiato perche' ogni related punti solo a note gia' esistenti: zero link morti, zero orfani. Canali commerciali come tag, non cartelle: channel/referral (Immobiliare Lombarda), channel/eventi (pitch deck, progetto ARR). Numeri coerenti col canon: somma ARR clienti = 3,84M, somma immobili = 751.\" Seconda parte (\"Tre cose da segnalarti\"), integrale: \"1. 'Tre prodotti' vs cinque. Mi hai chiesto i tre prodotti, ma nel canon ce ne sono cinque (Core, Energy, Manutenzione, Access, Insights). Ho creato i 3 piu' centrali per la demo (Core, Energy, Access). Vuoi che aggiunga anche Manutenzione e Insights? Sono +2 note. 2. Selezione su persone e clienti. Per restare intorno a 28 ho messo 4 persone (su 11) e 3 clienti attivi (su 9). Se la demo ti serve piu' 'popolata', dimmelo e completo gli altri. 3. Il linter di Obsidian riscrive related. Avevo scritto il campo su una riga sola come da regola, ma il tuo linter lo converte in lista YAML multi-riga (l'hai gia' visto sugli hub). In questo vault la regola 'una riga fisica' non regge a causa di quel tool: se ti serve davvero il formato a riga singola, va disattivata la relativa regola del linter.\" Questo e' il primo momento in cui Claude segnala esplicitamente il conflitto tra la regola dettata a voce (related su una riga) e il comportamento reale del linter -- conflitto che verra' risolto nella scoperta del vero _template-nota.md poco dopo.",
+    "fonte": "RnoC5IlOUhs#87:30 (report Regole rispettate + Tre cose da segnalarti, per intero) + voce 87:30-87:42",
+    "frame": "frame-0876.png",
+    "ancora": "Il linter di Obsidian riscrive related. Avevo scritto il campo su una riga sola come da regola, ma il tuo linter lo converte in lista YAML multi-riga",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-105",
+        "tipo": "contraddice"
+      },
+      {
+        "verso": "P2-120",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-119",
+    "tipo": "comando",
+    "contenuto": "Prompt dell'utente che chiede l'introduzione dello _index, trascritto integralmente (con _index evidenziato in blu, selezionato): \"Hey, ora ho bisogno di un'ulteriore aggiunta. Analizza bene la struttura del progetto: analizza tutte le cartelle, anche quelle che hai in conversazione, e assicurati di avere tutto documentato. In particolare, assicurati di avere: - un front matter - un indice (un _index) che possa evitare note orfane all'interno del progetto. Ti posso chiedere di introdurre questo indice in ogni cartella, o dove meglio ritieni opportuno?\" Questo e' il comando che innesca la creazione effettiva degli 11 _index di cartella + l'indice madre _index-aurora.md.",
+    "fonte": "RnoC5IlOUhs#88:30 (prompt _index inviato, Claude in elaborazione) + voce 88:30-88:42",
+    "frame": "frame-0886.png",
+    "ancora": "un indice (un `_index`) che possa evitare note orfane all'interno del progetto",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-114",
+        "tipo": "esempio-di"
+      },
+      {
+        "verso": "P2-120",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-120",
+    "tipo": "procedura",
+    "contenuto": "Risposta completa di Claude alla richiesta dello _index, ricostruita unendo la prima apparizione (scena 215, troncata dal frame) con la ripetizione integrale successiva (scena 223, non troncata): comando eseguito con output \"File .md totali: 44 / Senza frontmatter: NESSUNO / Link rotti (escluso template): NESSUNO\", poi: \"Fatto. Grafo chiuso e verificato. Risultato finale: 44 file .md, tutti con frontmatter -- zero senza. Zero link rotti, zero note orfane (escluso il template, che e' uno scaffold per definizione fuori dal grafo). Cosa ho aggiunto: Un _index in ogni cartella (11) + un indice madre _index-aurora.md alla radice -> unico punto d'ingresso, grafo navigabile dall'alto: madre -> indice di cartella -> nota. Ogni nota ora riceve almeno un link entrante dal suo indice. Nomi unici (_index-<cartella>) per non rompere la risoluzione wikilink di Obsidian. Frontmatter aggiunto a canon.md, che ne era privo. Due scoperte importanti durante l'analisi (te le segnalo perche' cambiano le regole che mi avevi dato prima): 1. Ho trovato il tuo _template-nota.md in workspace/: e' la fonte vera delle regole di frontmatter del vault, e spiega perche' il linter riscriveva le mie note. Le regole reali sono: related a blocco con wikilink fra virgolette (non piu' 'una riga sola'), title/summary sempre fra virgolette doppie, anni come tag annidati anno/2025. Ho riallineato tutti i 12 indici a questo template (erano appena creati, non ancora linterati). 2. La regola 'related su una riga' che mi avevi dato nei turni precedenti e' di fatto superata dal template: erano in conflitto, e il template (col linter che lo applica) vince. Da ora seguo quello.\" Nota testuale: nella prima apparizione (scena 215) il punto 2 e' formulato con una lieve variante (\"e il linter (col template che si applica) vince. Da...\", poi tagliato dal frame) rispetto alla riformulazione integrale successiva citata sopra: entrambe le versioni compaiono nel materiale sorgente, riportate qui entrambe invece di sceglierne una arbitrariamente.",
+    "fonte": "RnoC5IlOUhs#88:42 (referto 44 file, prima apparizione troncata) + RnoC5IlOUhs#93:36 (stessa risposta, ripetizione integrale) + voce 88:42-88:54",
+    "frame": "frame-0888.png, frame-0937.png",
+    "ancora": "44 file .md, tutti con frontmatter — zero senza.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-122",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-121",
+    "tipo": "principio",
+    "contenuto": "Coda esclusiva della risposta di Claude, visibile per intero solo nella ripetizione integrale (scena 223), assente dalla prima apparizione troncata: \"Scope: ho indicizzato solo il vault Aurora. Le directory .claude/ e .claude/plans/ viste in sessione sono config dello strumento, non parte del cervello: lasciate fuori. Vuoi che fissi _index-aurora come nota home (impostazione di Obsidian) o lo lasci a te?\" Claude distingue qui esplicitamente i file di configurazione del proprio strumento (.claude/) dal contenuto reale del cervello aziendale, e propone di fissare l'indice madre come nota \"home\" di Obsidian (impostazione nativa dell'app, separata dal contenuto del vault).",
+    "fonte": "RnoC5IlOUhs#93:36 (chat Antigravity, scope + domanda su _index-aurora come nota home) + voce 93:36-93:48",
+    "frame": "frame-0937.png",
+    "ancora": "Vuoi che fissi `_index-aurora` come nota home (impostazione di Obsidian) o lo lasci a te?",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-120",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-122",
+    "tipo": "procedura",
+    "contenuto": "Esempio integrale del pattern _index per cartella, file `outputs/_index-outputs.md` aperto per intero: frontmatter title: \"Indice -- outputs\", summary: \"Mappa dei deliverable prodotti da Aurora.\", tags: [outputs, index, moc], status: active, created: 2026-06-10, updated: 2026-06-10, related a blocco: \"[[output-pitch-deck-vendite]]\", \"[[area-marketing]]\", \"[[self-identita-aurora]]\". Corpo: \"# Indice -- outputs\", \"La cartella outputs/ contiene i deliverable concreti.\", sezione \"## Note\" con \"[[output-pitch-deck-vendite]] -- pitch deck commerciale, agg. dicembre 2025.\", sezione \"## Salendo\" con \"Indice madre: [[_index-aurora]]\" e \"Reparti proprietari: [[area-marketing]], [[area-vendite]]\". Questo file dimostra concretamente la struttura a tre livelli annunciata nella risposta di Claude (P2-120): indice madre -> indice di cartella -> nota, con la sezione \"Salendo\" che fa risalire il lettore (umano o AI) dal singolo _index verso l'indice madre e i reparti proprietari.",
+    "fonte": "RnoC5IlOUhs#88:54 (split screen, _index-outputs.md aperto per intero) + voce 88:54-89:06",
+    "frame": "frame-0890.png",
+    "ancora": "Reparti proprietari: [[area-marketing]], [[area-vendite]]",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-120",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-123",
+    "tipo": "numero",
+    "contenuto": "Graph view di Obsidian dopo la creazione degli _index: compaiono gli 11 nuovi nodi indice, riconoscibili dal prefisso _index-: _index-concepts, _index-data, _index-self, _index-docs, _index-outputs, _index-areas, _index-workspace, _index-sources, _index-code, _index-projects, _index-entities, piu' il nodo centrale _index-aurora posizionato tra area-vendite e self-identita-aurora. Voce: \"E come vedete ora abbiamo il collegamento a Canon. Quindi questo vuol dire che se noi andiamo qui ora il nostro Canon non e' piu' una nota orfana e quindi abbiamo fatto tutto come si deve\" -- conferma diretta che il nodo canon, isolato dalla prima apparizione del grafo (P2-104) fino a poco prima, risulta ora collegato alla rete grazie all'_index di workspace.",
+    "fonte": "RnoC5IlOUhs#89:06 (Obsidian, Graph view con gli _index di ogni cartella e _index-aurora come hub) + voce 89:06-89:18",
+    "frame": "frame-0892.png",
+    "ancora": "E come vedete ora abbiamo il collegamento a Canon.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-104",
+        "tipo": "corretto-da"
+      },
+      {
+        "verso": "P2-120",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-124",
+    "tipo": "comando",
+    "contenuto": "Prompt 5 del canovaccio Notion (\"Il gate di qualita' (solo referto)\", descrizione: \"Controlla ogni nota contro le sei regole e ti restituisce solo il referto.\"), testo integrale: \"Crea un link python che faccia 'a gate di qualita' sul cervello di Aurora. Passa 11 cartelle (salta solo sources/ e workspace/, che sono materiale grezzo e scratch) e controllala contro queste sei regole: 1. Frontmatter completo: title, summary, tags, status, created, updated. 2. Massimo 300 righe di corpo per nota. 3. Almeno 3 wikilink [[...]] in uscita verso note che esistono davvero (conta i bersagli unici, non lo stesso link ripetuto; gli _index non valgono). 4. Zero link rotti: ogni [[bersaglio]] punta a una nota che esiste. 5. Zero orfani: ogni nota ha almeno 1 link in ENTRATA (gli _index sono esentati). 6. Una sola componente connessa: tutto il grafo e' un unico grappolo, non due isole. Elenca gli errori nota per nota, raggruppati per regola. Se e' tutto in regola, rispondi solo: 'OK, 0 errori'. Per ora non correggere niente, dammi solo il referto.\" Nel campo di Antigravity il prompt viene incollato/dettato con una lieve variante di formulazione (\"Passa al setaccio OGNI nota delle 11 cartelle\" invece di \"Passa 11 cartelle\"), coerente con la voce del presentatore piuttosto che con la copia esatta da Notion.",
+    "fonte": "RnoC5IlOUhs#92:36 (Notion, Prompt 5 completo) + RnoC5IlOUhs#92:48 (stesso prompt incollato in Antigravity, variante dettata) + voce 92:30-92:48",
+    "frame": "frame-0927.png, frame-0929.png",
+    "ancora": "Una sola componente connessa: tutto il grafo è un unico grappolo, non due iso",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-130",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-125",
+    "tipo": "comando",
+    "contenuto": "Prompt 6 del canovaccio Notion (\"Correggi e ripeti finche' esce '0 errori'\", descrizione: \"Il ciclo correttivo: l'AI sistema cio' che ha segnalato, rifa' il gate, e ripete fino a zero.\"), testo integrale: \"Correggi le note che hai appena segnalato, applicando le regole del gate: frontmatter completo, massimo 300 righe, almeno 3 wikilink reali in uscita, zero link rotti, zero orfani, un solo grappolo connesso. Poi rifai il gate da capo e mostrami il nuovo referto. Ripeti finche' non esce 'OK, 0 errori'.\" Questo prompt istituisce il ciclo automatico correggi-verifica-ripeti come pattern operativo standard per portare qualunque vault a \"0 errori\" rispetto alle sei regole del gate di qualita', senza intervento manuale nota per nota.",
+    "fonte": "RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 6 per intero) + voce 95:48-96:00",
+    "frame": "frame-0959.png",
+    "ancora": "Il ciclo correttivo: l'AI sistema ciò che ha segnalato, rifà il gate, e ripete fino a zero.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-124",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-126",
+    "tipo": "comando",
+    "contenuto": "Prompt 7 del canovaccio Notion (\"Genera l'indice per la AI (llms.txt)\", descrizione: \"La porta d'ingresso per la AI: un indice derivato, rigenerato dal frontmatter.\"), testo integrale: \"Genera il file llms.txt nella radice del vault: e' l'indice-porta per la AI. Per ogni cartella di contenuto (self, areas, projects, docs, entities, data, code, outputs) elenca le note nel formato \"- [[nome-file]] — summary\", prendendo il summary dal frontmatter di ogni nota. In cima metti una riga di intestazione per ogni cartella. NON includere sources/ e workspace/. NON inventare niente: title e summary vengono SOLO dal frontmatter delle note. Ricordati che llms.txt e' DERIVATO: si rigenera da capo, non si modifica a mano.\" Nota di rilievo: nell'elenco delle cartelle di questo prompt canonico manca esplicitamente 'concepts' (self, areas, projects, docs, entities, data, code, outputs = 8 cartelle su 9 scansionabili), mentre nella formulazione dettata a voce poco dopo (scena 239) 'concepts' compare regolarmente nell'elenco: una piccola discrepanza tra il testo scritto in Notion e la sua ripetizione a voce, riportata cosi' com'e' invece di essere corretta.",
+    "fonte": "RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 7 per intero) + voce 96:00-96:12",
+    "frame": "frame-0959.png",
+    "ancora": "La porta d'ingresso per la AI: un indice derivato, rigenerato dal frontmatter.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-133",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-127",
+    "tipo": "comando",
+    "contenuto": "Prompt 8 del canovaccio Notion (\"Lo showcase (la fotografia per la demo)\", descrizione: \"Numeri da mostrare a un cliente: quante note, quanti link, quante componenti connesse.\"), testo integrale: \"Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 = tutto collegato). Poi dammi una tabella 'note per cartella' e, sotto, l'elenco degli hub (i piu' linkati). Prendi il summary dell'_index di ogni cartella. Salva tutto in _showcase/showcase.md. E' una fotografia DERIVATA: si rigenera, non si scrive a mano.\" Questo e' l'ultimo dei quattro prompt (5-6-7-8) del \"Passo 3 — Gate di qualita', indice per le AI, showcase, grafo, GitHub\": la sua esecuzione effettiva (genera_showcase.py, _showcase/showcase.md) avviene in scene successive a quella qui coperta (181-240), fuori dal perimetro di questo file.",
+    "fonte": "RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 8 per intero) + voce 96:00-96:12",
+    "frame": "frame-0959.png",
+    "ancora": "Numeri da mostrare a un cliente: quante note, quanti link, quante componenti connesse.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-126",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-128",
+    "tipo": "principio",
+    "contenuto": "Sequenza a sola webcam sul limite strutturale della delega all'AI, ricostruita per intero dalle 9 scene consecutive: \"Un concetto molto importante che ehm ripeto abbastanza in community e' [che] nel mondo delle AI noi possiamo fare outsourcing di competenza perche' l'AI puo' scrivere codice al posto nostro, di pensiero perche' molto spesso l'AI puo' pensare quale sia la migliore architettura, ok? al posto nostro, pero' non possiamo fare outsourcing della comprensione e questo e' la skill, il pensiero critico e' comprensione di un problema. Ehm, e questo e' importante perche' siamo arrivati al punto in cui possiamo raccontare un sacco di cose alle AI, ma se non capiamo i cosa c'e' sotto, sara' molto complesso che poi Lei riesca a farlo per noi capendolo da sola. Ok? Perche' ricordatevi sempre che a prescindere da quanto bravi diventino i modelli, sono sempre allenati sulla media dei dati disponibili. Ok? Bene.\" La distinzione e' netta: outsourcing di competenza (scrittura di codice) e outsourcing di pensiero (scelta architetturale) sono deleghe legittime all'AI; l'outsourcing di comprensione (capire davvero il problema) non lo e', perche' i modelli restano allenati sulla media dei dati, non sul caso specifico dell'utente.",
+    "fonte": "RnoC5IlOUhs#94:06-95:00 (sequenza di 9 scene solo webcam, outsourcing competenza vs comprensione) + voce 94:06-95:00",
+    "frame": "frame-0942.png, frame-0943.png, frame-0944.png, frame-0945.png, frame-0946.png, frame-0947.png, frame-0949.png, frame-0950.png, frame-0951.png",
+    "ancora": "sono sempre allenati sulla media dei dati disponibili",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-115",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-129",
+    "tipo": "principio",
+    "contenuto": "Ripresa dello screen-share dopo la sequenza sull'outsourcing di comprensione: Claude, dopo \"Thought for 88s\", annuncia \"Creo il gate come script Python autonomo (nessuna dipendenza esterna) e lo eseguo per produrre il referto.\" e precisa lo scope reale rispetto all'enunciato del prompt: \"Una precisazione di scope che il tuo enunciato implica: l'indice madre _index-aurora.md sta nella radice del vault, non dentro una delle 11 cartelle, quindi per definizione ('ogni nota delle 11 cartelle') resta fuori dal setaccio. Le cartelle effettivamente scansionate sono 9 (11 − sources/ − workspace/).\" Lo stato di avanzamento mostrato durante l'elaborazione e' etichettato \"Cerebrating...\" invece del solito \"Thinking...\", una delle numerose etichette di stato scherzose usate dall'IDE Antigravity per segnalare lavoro in corso.",
+    "fonte": "RnoC5IlOUhs#95:06 (Thought for 88s, precisazione di scope sulle 9 cartelle) + voce 95:06-95:12",
+    "frame": "frame-0952.png",
+    "ancora": "Le cartelle effettivamente scansionate sono 9 (11 − `sources/` − `workspace/`).",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-124",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-130",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-130",
+    "tipo": "procedura",
+    "contenuto": "Referto completo del primo run del gate di qualita', trascritto per intero (compare identico, parola per parola, sia nella scena in cui Claude lo produce sia nella sua ripetizione poco dopo nella stessa sessione): \"Referto: OK, 0 errori. Lo script e' gate_qualita.py alla radice del vault. Ha setacciato le 28 note delle 9 cartelle scansionate (le 11 meno sources/ e workspace/) e tutte e 6 le regole passano: 1. Frontmatter completo — ok. 2. Corpo ≤ 300 righe — ok. 3. ≥3 wikilink uscenti reali e unici, _index esclusi dal conteggio — ok. 4. Zero link rotti — ok. 5. Zero orfani, ≥1 link in entrata (_index esentati) — ok. 6. Una sola componente connessa — ok. Lo lanci con python3 gate_qualita.py (exit code 0 se pulito, 1 se trova errori, cosi' puoi usarlo anche in un hook pre-commit). Il referto raggruppato per regola compare solo quando c'e' almeno un errore; se e' tutto a posto stampa esattamente 'OK, 0 errori'. Due note su come ho risolto i punti ambigui dell'enunciato, cosi' sai cosa controlla davvero: Esistenza dei bersagli (regola 4) valutata sull'intero vault, non solo sulle 9 cartelle: cosi' un eventuale link legittimo verso canon o un indice di workspace/ non risulterebbe falsamente rotto. Connessione (regola 6) calcolata solo tra le note scansionate, grafo non orientato: il grappolo regge da solo, senza dover passare dall'indice madre che sta fuori scope.\" Nella ripetizione successiva nella stessa sessione (Antigravity IDE, non piu' Notion) il numero di note (28) e la stessa lista delle 6 regole vengono confermati identici parola per parola.",
+    "fonte": "RnoC5IlOUhs#95:12 (referto completo: OK, 0 errori) + RnoC5IlOUhs#96:00 (stesso referto ripetuto identico) + voce 95:12-95:18",
+    "frame": "frame-0953.png, frame-0961.png",
+    "ancora": "Ha setacciato le **28 note** delle 9 cartelle scansionate (le 11 meno `sources/` e `workspace/`) e tutte e 6 le regole passano",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-124",
+        "tipo": "esempio-di"
+      },
+      {
+        "verso": "P2-131",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-131",
+    "tipo": "comando",
+    "contenuto": "Codice sorgente di `gate_qualita.py` aperto in editor, riportato riga per riga fino al punto in cui il frame lo taglia (righe successive alla 37 non leggibili in questo frame, dichiarato):\n```python\n#!/usr/bin/env python3\n\"\"\"\nGate di qualita' sul cervello di Aurora.\nSetaccia ogni nota delle 11 cartelle, saltando sources[...taglio bordo destro]\ne la controlla contro 6 regole. Stampa un referto ragg[...taglio]\nUso: python3 gate_qualita.py\n\"\"\"\n\nimport os\nimport re\nimport sys\n\nVAULT = os.path.dirname(os.path.abspath(__file__))\nSKIP = {\"sources\", \"workspace\"}          # material[...taglio]\nFOLDERS = [\"self\", \"areas\", \"projects\", \"c[...taglio]\",\n           \"entities\", \"data\", \"code\", \"outputs\"]  # [...taglio]\nREQUIRED_FM = [\"title\", \"summary\", \"tags\", \"status\", [...taglio]\nMAX_BODY_LINES = 300\nMIN_OUT = 3\n\nLINK_RE = re.compile(r\"\\[\\[([^\\]]+?)\\]\\]\")\nFM_RE = re.compile(r\"^---\\s*\\n(.*?)\\n---\\s*\\n?\", re.S)\n\ndef is_index(stem):\n    return stem.startswith(\"_index\")\n\ndef split_fm(text):\n    \"\"\"Ritorna (dict_chiavi_presenti, corpo). Frontmat[...taglio]\"\"\"\n    m = FM_RE.match(text)\n    if not m:\n        return None, text\n    block = m.group(1)\n    keys = set()\n    for line in block.splitlines():\n        km = re.match(r\"^([A-Za-z0-9_-]+):\\s*\", line)\n        if km:\n            keys.add(km.group(1))\n```\nLa barra di stato dell'editor conferma: \"Ln 1, Col 1\", \"Spaces: 4\", \"UTF-8\", \"LF\", \"{} Python\", \"3.12.12 64-bit\". Struttura osservabile: costanti VAULT/SKIP/FOLDERS/REQUIRED_FM/MAX_BODY_LINES/MIN_OUT in cima, poi due regex compilate (LINK_RE per i wikilink, FM_RE per il blocco frontmatter delimitato da `---`), poi una funzione `is_index(stem)` che riconosce i file `_index-*` dal prefisso, poi l'inizio di `split_fm(text)` che separa frontmatter e corpo estraendo le chiavi presenti riga per riga con una terza regex.",
+    "fonte": "RnoC5IlOUhs#95:24 (split view: chat a sinistra, gate_qualita.py aperto a destra) + voce 95:24-95:48",
+    "frame": "frame-0954.png",
+    "ancora": "Gate di qualita' sul cervello di Aurora.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-130",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-132",
+    "tipo": "principio",
+    "contenuto": "Conferma del percorso reale del file: il mouse fermo sopra `gate_qualita.py` nella sidebar mostra il tooltip col percorso completo \"~/Desktop/aurora cervello/gate_qualita.py\". Voce: \"Ovviamente e' stato fatto fuori perche' lui e' super partes, no? va a controllare tutte le cartelle, quindi va bene che sia nella cosiddetta root, quindi fuori da tutto da tutte quante queste cartelle, ma dentro a questa cartella principale... Quindi tutti questi 11 piu' questi due sono tutti allo stesso livello.\" Principio generale: uno script che deve controllare (essere \"super partes\" rispetto a) tutte le cartelle di contenuto non puo' vivere dentro nessuna di esse; va messo alla radice del vault, allo stesso livello delle 11 cartelle, insieme all'indice madre `_index-aurora.md`.",
+    "fonte": "RnoC5IlOUhs#95:24-95:24 (annotazione codice) + RnoC5IlOUhs#95:24 (tooltip percorso completo) + voce 95:24-95:36",
+    "frame": "frame-0954.png, frame-0955.png",
+    "ancora": "~/Desktop/aurora cervello/gate_qualita.py",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-131",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-133",
+    "tipo": "procedura",
+    "contenuto": "Esecuzione dal vivo del Prompt 7: il prompt utente, dettato/incollato con la formulazione leggermente estesa vista a schermo (\"Genera il file llms.txt nella radice del vault: e' l'indice-porta per la AI. Per ogni cartella di contenuto (self, areas, projects, concepts, docs, entities, [...] data, code, outputs) elenca le sue note nel formato '- [[nome-file]] — summary'\" — coda tagliata dal riquadro). Risposta di Claude, dopo \"Thought for 24s\": \"llms.txt e' derivato, quindi non lo scrivo a mano: creo un generatore che lo rigenera dal frontmatter delle note, e lo eseguo. Cosi' title/summary vengono solo dalle note e il file si puo' ricostruire da capo quando il cervello cambia. Scelta che ti segnalo: escludo i file _index- dall'elenco. Sono scaffolding di navigazione (summary del tipo 'Mappa della cartella X'), non contenuto; un door-index per AI e' piu' utile se punta alle note vere. Se li vuoi dentro, lo dici e cambio un flag.\" Questa scelta -- escludere gli _index dal file rivolto all'AI -- e' coerente con la loro funzione dichiarata di puro scaffolding di navigazione, non di contenuto da consumare.",
+    "fonte": "RnoC5IlOUhs#96:42 (annotazione penna verde llms.txt + nuovo prompt per generarlo) + voce 96:42-96:48",
+    "frame": "frame-0968.png",
+    "ancora": "escludo i file `_index-` dall'elenco",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-126",
+        "tipo": "esempio-di"
+      },
+      {
+        "verso": "P2-134",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-134",
+    "tipo": "procedura",
+    "contenuto": "Azione **Write** `genera_llms.py`, badge \"70 lines\", anteprima di codice mostrata: `#!/usr/bin/env python3`, poi apertura della docstring `\"\"\"` con prima riga \"Generatore di llms.txt per il cervello di Aurora.\" Stato di avanzamento durante la scrittura: \"Wrangling...\". Nella sidebar compare il nuovo file `genera_llms.py` subito sotto `gate_qualita.py`. Coerentemente con quanto appena dichiarato in P2-133, il generatore (non il file `llms.txt` stesso) e' l'artefatto scritto a mano; l'esecuzione dello script e la lettura del file `llms.txt` che ne risulta avvengono nella scena immediatamente successiva, fuori dal perimetro 181-240 coperto da questo file.",
+    "fonte": "RnoC5IlOUhs#96:48 (scrittura di genera_llms.py, 70 righe) + voce 96:48-96:54",
+    "frame": "frame-0969.png",
+    "ancora": "Generatore di llms.txt per il cervello di Aurora.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-133",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-135",
+    "tipo": "struttura",
+    "contenuto": "Pattern osservabile trasversale a piu' scene: l'IDE Antigravity non usa mai una generica etichetta \"Loading...\" per segnalare che l'agente sta lavorando, ma ruota tra verbi in -ing scelti in modo giocoso/idiosincratico, diversi ogni volta: \"Schlepping...\" (scena 181, subito dopo bypass permission), \"Thinking...\"/\"Stuttering...\" (scena 190, durante l'elaborazione del Prompt 4), \"Thinking... - 64 tokens\" (scena 214, invio del prompt _index), \"Cerebrating...\" (scena 233, mentre Claude scrive lo script del gate), \"Wrangling...\" (scena 240, mentre scrive genera_llms.py). Il contatore di token accanto all'etichetta (es. \"64 tokens\") e il nome \"Thought for Ns\" prima della risposta finale sono gli unici indicatori numerici di avanzamento mostrati all'utente durante l'attesa.",
+    "fonte": "RnoC5IlOUhs#77:30, #80:42, #88:30, #95:06, #96:48 (etichette di stato Schlepping/Thinking-Stuttering/Cerebrating/Wrangling nelle rispettive scene)",
+    "frame": "frame-0776.png, frame-0808.png, frame-0886.png, frame-0952.png, frame-0969.png",
+    "ancora": "Schlepping...",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-101",
+        "tipo": "esempio-di"
+      }
+    ]
   }
 ]
