@@ -1,3 +1,11 @@
+## 🟠 2026-09-05 — Nuova legge: documenti importanti hanno un doppione in `documentazione Empire` — CP-20260905-012
+
+**Codice di ripresa: EMP-DOCEMP.** Ordine durevole di Max: ogni PDF piano d'azione/editoriale/
+aziendale/report importante resta nella sua casa canonica **e** riceve un doppione identico
+(mai spostato) in `documentazione Empire/`, alla radice del repo. Scritta in `emperator.md`
+§6.17. Cartella creata, primo doppione fatto (`28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf`),
+committato e pushato (`d0818c7f`).
+
 ## 🟠 2026-09-05 — PDF dossier 28 (Higgsfield+ElevenLabs) rigenerato, aperto, chiuso — CP-20260905-011
 
 **Codice di ripresa: EMP-PDF28.** Lo script `PIANO-MAESTRO/scripts/build_dossier28_pdf.py` era
