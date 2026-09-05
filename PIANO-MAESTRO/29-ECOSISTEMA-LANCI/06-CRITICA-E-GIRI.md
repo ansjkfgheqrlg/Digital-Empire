@@ -1325,7 +1325,7 @@ Qui ci sono quelle che la versione 4 ha preso e portato dentro, con dove sono fi
 | 23 | **«Un agente scritto solo in una cartella di reparto è una specifica, non un agente»** (`01:476-482`) | `CRITICA-A.md` S-A-13, «diagnosi esatta di un guasto reale e verificato» | il registro elenca gli agenti con grado, modello e strumenti: la specifica e l'agente sono lo stesso dato |
 | 24 | **Aver verificato il riuso invece di dichiararlo**: aver misurato che cinque componenti non accettano parametri e aver dichiarato che il piano stesso aveva scritto un contratto inesistente (`05:301-320`, `06:214-227`) | `CRITICA-B.md` S-09, «il comportamento più sano dei tre documenti» | tenuto come metodo: ogni misura di questo pacchetto porta la data e il comando accanto |
 | 25 | **Il divieto della parola «pianificato» senza data e nome** (`09:1`) | `CRITICA-EMPERATOR.md` D.8 | tenuto |
-| 26 | **La nota d'apertura a Gael** | `CRITICA-EMPERATOR.md` D.9, «risolve un problema umano vero» | `00-LEGGIMI-GAEL.md` resta |
+| 26 | **La nota d'apertura a Gael** | `CRITICA-EMPERATOR.md` D.9, «risolve un problema umano vero» | confluita nel §1 di `00-LEGGIMI.md`; l'originale in `_v3-superata/00-LEGGIMI-GAEL.md` |
 
 **Una cosa va detta senza attenuarla:** la diagnosi centrale della versione 3 — *«non c'è un buco
 di capacità, c'è un buco di decisione ed esecuzione»* — è **giusta**, ed è la ragione per cui la
@@ -1573,13 +1573,14 @@ decorativo** e la riparazione non è avvenuta.
   registro, ha torto questo documento
 - `dati/valida_registro.py` — il comando che verifica i dieci invarianti
 - `dati/schemi/*.json` — tredici schemi, uno per artefatto
-- `00-LEGGIMI-GAEL.md` — la nota d'apertura per chi costruisce
+- `_v3-superata/00-LEGGIMI-GAEL.md` — la nota d'apertura della versione 3, archiviata
 
-> **Nota di onestà sui puntatori.** La mappa del pacchetto (`00-LEGGIMI.md` §5) elenca anche
-> `02-PREVISIONE-E-DENARO.md`, `03-FLUSSO-OFFERTA.md`, `04-COSTRUZIONE.md` e `05-ADR-023.md`. Al
-> 2026-09-05, sul disco, esistono `00-LEGGIMI.md`, `00-LEGGIMI-GAEL.md`, `01-ARCHITETTURA.md`,
-> questo documento e la cartella `dati/`. Dove qui sopra si rimanda al 02, al 03, al 04 o al 05, si
-> rimanda a quella mappa e non a un file già scritto.
+> **Nota sui puntatori, aggiornata a fine giornata.** Quando questo documento è stato scritto,
+> il 02, il 03, il 04 e il 05 erano ancora soltanto voci della mappa. Ora esistono tutti sul disco
+> e sono committati: `00-LEGGIMI.md`, `01-ARCHITETTURA.md`, `02-PREVISIONE-E-DENARO.md`,
+> `03-FLUSSO-OFFERTA.md`, `04-COSTRUZIONE.md`, `05-ADR-023.md`, questo documento e la cartella
+> `dati/`. Gli undici dossier della versione 3 sono in `_v3-superata/`, integrali, con una nota
+> che spiega perché sono stati superati.
 
 **I rapporti della critica** — in `_critica-v3/`, tutti conservati, nessuno riassunto
 
