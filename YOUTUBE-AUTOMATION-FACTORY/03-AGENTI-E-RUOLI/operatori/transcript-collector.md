@@ -125,3 +125,35 @@ trattavamo uguale:
 disponibile» generico ha fatto scartare candidati buoni per un guasto nostro.
 
 Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L01-scaricare-testi/`.
+
+---
+
+## 10. Contro cosa difende la regola delle due fonti (A4-L05-03 · 2026-09-05)
+
+I §8-§9 dicono **cosa** fare. Questo dice **contro cosa**, perché una regola di cui si è
+dimenticato il motivo prima o poi viene tolta da qualcuno che la trova scomoda.
+
+**Il metodo che rifiutiamo** — insegnato per intero in AI TUBE PRO A4/L05, «IL METODO COMPLETO»:
+si prende **un solo** video, si scaricano i sottotitoli, si dà tutto a un modello con
+«riscrivimi questo testo da zero… **rendilo originale**», e il risultato diventa il video. Detto
+due volte come pregio del metodo: **«non so assolutamente nulla di cosa tratta questo video»**.
+
+**Perché è scartato — quattro ragioni, tutte verificabili:**
+
+1. **Il corso si smentisce da solo**, un minuto dopo: «potremmo fare un testo della durata anche
+   di 10, 12, 15, 20 minuti… **se io inserissi altre parti di testo sarebbe ancora meglio**».
+   La via a più fonti la conosce e la dichiara migliore — semplicemente non la usa.
+2. **Il fatto lo smentisce:** con una fonte sola il video prodotto in diretta dura **2:34**, non
+   10-20 minuti.
+3. **La lezione è di aprile 2023** (datata a schermo: file Fliki «Apr 20, 2023», ChatGPT su
+   GPT-3.5). Le regole di YouTube sul **contenuto riutilizzato** sono cambiate da allora — vedi
+   `references/monetizzazione-compliance.md`.
+4. **«Rendilo originale» è un'istruzione a un modello, non una proprietà del contenuto.** Un testo
+   che sembra diverso a un lettore e un contenuto che una piattaforma considera originale sono
+   due cose distinte, e la lezione non le distingue mai.
+
+Arbitrato completo: `company/Memory/studi/aitubepro/CONFLITTI.md` **C-002**. Se una lezione futura
+ripropone la fonte singola, **non è una novità: è questo, e resta scartato** — salvo che porti un
+argomento nuovo, che allora va scritto lì.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L05-metodo-completo/`.

@@ -99,3 +99,27 @@ Nel consegnare lo script dichiara: **quanti fatti hai riverificato e quanti ne h
 > dentro una lezione: annotato in `BACKLOG.md`. Finché non esiste, questo controllo è tuo.
 
 Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L02-riscrivere-testi/`.
+
+---
+
+## 9. La lunghezza si costruisce con le fonti, non col prompt (A4-L05-02 · 2026-09-05)
+
+Quando lo script è corto ci sono due strade, e **una sola è buona**.
+
+| Strada | Cosa succede davvero |
+|---|---|
+| ❌ **Chiedere «scrivi più dettagli»** | il modello riempie con quello che ha: giri di frase, ripetizioni, generalità plausibili. Il testo si allunga, **il contenuto no**. Il tempo di visione che guadagni lo perdi in ritenzione |
+| ✅ **Aggiungere fonti vere** | altri transcript, articoli, blog sullo stesso fatto. Ogni fonte porta **informazione che non c'era**, e la lunghezza viene da sé |
+
+**Non allungare mai uno script chiedendo al modello di essere più prolisso.** Se il materiale non
+basta per le 2.220 parole richieste, il problema è a monte: torna al `transcript-collector` e
+pretendi altre fonti (§8-§9 di quell'agente).
+
+Da dove viene questa regola: il corso AI TUBE PRO (A4/L05) mostra la via sbagliata — «se volessi
+farlo il doppio più lungo, **scrivi più dettagli**» (05:39) — e poi, un minuto dopo, dichiara da
+sé quella giusta: «vi ricordo che abbiamo già visto come prendere tutte le informazioni da siti,
+blog, da altri video… **se io inserissi altre parti di testo sarebbe ancora meglio**» (05:53).
+**Il fatto gli dà torto sulla prima:** il video prodotto in diretta con una fonte sola dura
+**2:34**, contro i «10, 12, 15, 20 minuti» annunciati nella stessa lezione.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L05-metodo-completo/`.

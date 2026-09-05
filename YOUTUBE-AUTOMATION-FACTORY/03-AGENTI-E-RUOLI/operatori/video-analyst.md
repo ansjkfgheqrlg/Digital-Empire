@@ -28,8 +28,23 @@ velocity = views / età_in_ore
 
 Due cautele che cambiano il risultato:
 
-1. **Maturità.** Sotto le 24 ore la velocity è rumore: un video di 2 ore con 200 viste segna 100
-   views/ora, un dato che non si manterrà. Scarta tutto ciò che è più giovane di 24 ore.
+1. **Maturità — e la sua correzione (A4-L05-01, 2026-09-05).** Sotto le 24 ore la velocity è
+   *spesso* rumore: un video di 2 ore con 200 viste segna 100 views/ora, un dato che non si
+   manterrà. **Ma quel candidato è rumore per le 200 viste, non per le 2 ore.** Il vincolo giusto
+   è di **volume**, non di tempo:
+   - **≥ 24 ore** → il candidato entra normalmente;
+   - **< 24 ore** → entra **solo se supera la soglia di volume: 10.000 viste reali**. Sotto,
+     scartalo e dichiaralo.
+
+   Perché la soglia esiste: 10.000 viste non si spiegano con l'oscillazione delle prime ore —
+   sono un fatto misurato, a qualunque età. La soglia è un numero deciso, non una legge di natura:
+   se un canale la rende inutile (nicchie enormi o minuscole), si cambia **qui**, con la ragione
+   scritta accanto.
+
+   Perché è stata corretta: il metodo del corso AI TUBE PRO (A4/L05) costruisce l'intera lezione
+   madre su un video di **13 ore** con **89.000 viste**. Con la vecchia regola l'avremmo buttato —
+   e con esso l'intera famiglia di nicchie in cui la freschezza *è* il prodotto: notizie, cronaca,
+   attualità, gossip. Arbitrato completo in `company/Memory/studi/aitubepro/CONFLITTI.md` **C-001**.
 2. **Mediana, non media.** Per descrivere il canale usa la mediana: un solo virale sposta la media
    e fa sembrare sano un canale fermo.
 
@@ -47,7 +62,8 @@ Fornisci gli elementi: di cosa parla il titolo, quali temi del canale tocca.
 
 ## 4. Playbook
 1. Carica i video con la loro provenienza.
-2. Scarta i più giovani di 24 ore, dichiarando quanti ne hai scartati.
+2. Applica il filtro di maturità del §2: i più giovani di 24 ore passano **solo sopra le 10.000
+   viste**. Dichiara sempre **quanti ne hai scartati e quanti ne hai ammessi per volume**.
 3. Calcola la velocity di ciascuno e la mediana del canale.
 4. Ordina per velocity, tieni i primi 5.
 5. Per ciascuno annota: velocity, viste, età, temi toccati, SEO del titolo originale.

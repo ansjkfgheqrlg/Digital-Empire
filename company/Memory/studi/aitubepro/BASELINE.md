@@ -20,6 +20,29 @@
 > soglia. È il primo bersaglio naturale del binario A — ogni lezione che porta un numero
 > vero (durata, CTR, densità di parole) trasforma un guardiano finto in uno vero.
 
+### 1-bis. Tempo per video — **la misura che ci manca** (A4-L05-04, aperta il 2026-09-05)
+
+| Metrica | Il metro del corso | Il nostro |
+|---|---|---|
+| **Tempo per video, dall'idea al file pronto** | **5 minuti** (A4/L05, cronometrato in diretta: «sono le 13 e 18» → «ci ho impiegato veramente 5 minuti») | **NON MISURATO** |
+
+Questa baseline conta test, script, agenti e soglie: **non contiene un solo minuto di
+produzione reale**. È un buco, e pesa il doppio alla luce di `ADR-016` (Ultimo Metro): **25 pezzi
+finiti e mai pubblicati**, il più vecchio fermo da 135 giorni.
+
+Finché il numero non c'è, la frase «noi puntiamo sulla qualità, loro sulla quantità» non è una
+scelta dichiarata: è una copertura della lentezza. Nessuno può dire se i nostri gate costano
+dieci minuti o tre giorni.
+
+**Come si chiude:** cronometrare **una** produzione vera end-to-end (F1→F5) e scrivere qui il
+numero, con la data e cosa era incluso. **Assegnata al gate di categoria A4**, insieme alla
+verifica sulla musica (`A4-L04-04`).
+
+**Attenzione a non barare nel confronto:** i 5 minuti del corso comprendono solo scelta della
+fonte, riscrittura, montaggio ed export. Non comprendono ricerca di nicchia, controllo dei fatti,
+SEO, miniatura e pubblicazione — che nella nostra catena ci sono. Quando misureremo, il confronto
+onesto è **passo per passo**, non totale contro totale.
+
 ## 2. Le soglie in vigore — copiate esatte
 
 ### `02-AUTOMAZIONI-E-SCRIPTS/regolatori.py`
