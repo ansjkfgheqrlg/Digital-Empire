@@ -207,5 +207,80 @@
       {"verso": "P1-047", "tipo": "esempio-di"},
       {"verso": "P1-049", "tipo": "motiva"}
     ]
+  },
+  {
+    "id": "P1-049",
+    "tipo": "principio",
+    "contenuto": "Perché serve il frontmatter: l'AI, per leggere le skill (e per estensione le note), comincia col leggere la sezione frontmatter (\"front\") in cima al file; \"se e solo se il contesto è rilevante\" allora procede a leggere tutto il resto del documento. Questo è il meccanismo che rende sostenibile una company brain con migliaia di note: invece di dover leggere ogni nota per intero (col rischio dimostrato in P1-048, token sprecati e allucinazioni), l'AI filtra prima dal frontmatter e apre per intero solo ciò che serve davvero.",
+    "fonte": "RnoC5IlOUhs#43:36 (esempio concreto: file SKILL.md con frontmatter, progetto Social Media Manager) + voce 43:36-44:12",
+    "frame": "frame-0437.png",
+    "ancora": "Il l'AI per leggere le varie skill comincia con il leggere questa parte qui che si chiama front e se e solo se il contesto è rilevante allora procede a leggere tutto il resto.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-048", "tipo": "corretto-da"},
+      {"verso": "P1-045", "tipo": "motiva"},
+      {"verso": "P1-050", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P1-050",
+    "tipo": "struttura",
+    "contenuto": "Contenuto integrale del file `SKILL.md` (skill \"skill-creator\", progetto \"Social Media Manager\") mostrato come esempio concreto di frontmatter applicato: frontmatter — `name: skill-creator`; `description: Create new skills, improve existing ones, or capture a working session as a reusable skill. Use when the user wants to create/improve/fix a skill, add a workflow or automation, says make this a skill, or /skill-creator.`; `allowed-tools: Bash, Read, Write, Edit, Glob, Grep, AskUserQuestion`. Corpo: \"# Skill Creator\", \"## Goal\" — Turn any repeated multi-step workflow into a reusable slash command with proper error handling; Create new skills and iteratively improve existing ones for this project; Read `references/skill-writing-guide.md` for the full conventions reference (Golden Rules, skill types, script boilerplate, writing style guide). \"## When to Create a Skill\" — un processo merita una skill propria quando: è ripetuto 3+ volte tra conversazioni; coinvolge più passaggi che beneficiano di orchestrazione strutturata; richiede tool specifici (browser automation, file editing, API calls); l'utente chiede esplicitamente di automatizzare qualcosa. \"## Step 1: Capture Intent\" — prima di scrivere qualsiasi cosa, intervistare l'utente per estrarre passi, tool usati e correzioni fatte, poi confermare; domande da chiarire: 1) What problem does this solve? (il WHY, non solo il WHAT); 2) What type of skill is it?; 3) When should it trigger?; 4) What tools does it need?; 5) Does it overlap with existing skills?. \"## Step 2: Choose a Pattern\" — leggere 1-2 skill esistenti dello stesso tipo, con tabella di riferimento (Content generation → linkedin-post, youtube-description; Pipeline → shorts; Browser automation → riga finale troncata dal bordo del frame).",
+    "fonte": "RnoC5IlOUhs#43:36 (editor con SKILL.md aperto per intero, sidebar skills espansa) + voce 43:36-44:12",
+    "frame": "frame-0437.png",
+    "ancora": "name: skill-creator",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-049", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P1-051",
+    "tipo": "procedura",
+    "contenuto": "Demo dell'app desktop Claude Code (tab Cowork) sul vault `aurora cervello`: prima un popup di permesso da approvare — \"Allow Claude to change files in \"aurora cervello\"? This includes all files and subfolders. Claude will be able to read, edit, and permanently delete—and may share file contents with third-party tools it connects to. Be careful about exposing sensitive information.\" con pulsanti Cancel / Always allow / Allow. Poi la domanda all'AI: \"Ehi, sapresti dirmi chi è il responsabile commerciale dell'azienda?\". Risposta di Claude, preceduta da \"Read 2 files, ran a command\": \"Il responsabile commerciale è Elena Ferraro. Guida la divisione commerciale di Aurora Sistemi S.p.A. (l'azienda da 340 persone con le tre linee Aurora Edge, Aurora Cloud e Aurora Care). È indicata come il commerciale di riferimento e, dalle note, è 'la persona che conosce il perché dietro ogni cliente acquisito'.\" Fonti dichiarate esplicitamente in risposta: file `self-info-azienda.md` e `persona-elena-ferraro.md` nella cartella selezionata.",
+    "fonte": "RnoC5IlOUhs#41:00 (popup permessi Cowork) + #41:36 (risposta con fonti citate) + voce 41:00-41:48",
+    "frame": "frame-0411.png, frame-0417.png",
+    "ancora": "Fonti: file `self-info-azienda.md` e `persona-elena-ferraro.md` nella cartella selezionata.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-044", "tipo": "esempio-di"},
+      {"verso": "P1-052", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-052",
+    "tipo": "principio",
+    "contenuto": "Follow-up alla domanda precedente: \"Hai anche altre informazioni di Elena a riguardo?\". Claude risponde citando solo ciò che trova scritto nella nota, senza inventare nulla: \"Le uniche informazioni che ho su Elena sono quelle nel file persona-elena-ferraro.md, e sono poche: Guida la divisione commerciale di Aurora Sistemi S.p.A. È la persona che conosce il 'perché' dietro ogni cliente acquisito. Si occupa di vendere (la nota dice scherzosamente 'non lo so, spazzolini'). Le piace la pizza. Non ho altri dettagli (cognome a parte, contatti, ruolo preciso, ecc.). Se vuoi, posso cercare altre informazioni nelle tue email, nel calendario o negli altri strumenti collegati. Dimmi solo dove guardare.\" Questo dimostra il comportamento corretto atteso da una company brain ben progettata: l'AI dichiara i limiti di ciò che sa e offre di ampliare la ricerca solo se esistono altre fonti collegate, invece di generare risposte plausibili ma non verificate.",
+    "fonte": "RnoC5IlOUhs#42:00 (risposta completa split-screen desktop+Cowork) + voce 41:48-42:06",
+    "frame": "frame-0421.png",
+    "ancora": "Non ho altri dettagli (cognome a parte, contatti, ruolo preciso, ecc.). Se vuoi, posso cercare altre informazioni nelle tue email, nel calendario o negli altri strumenti collegati.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-051", "tipo": "precede"}
+    ]
+  },
+  {
+    "id": "P1-053",
+    "tipo": "procedura",
+    "contenuto": "Uso del pannello Properties di Obsidian: sotto il titolo di una nota compare la sezione \"Properties\" con un campo vuoto (placeholder \"Empty\") e un menu a tendina con tipi di proprietà disponibili, tra cui \"aliases\", \"cssclasses\", \"tags\". Esempio dimostrato: viene aggiunta la proprietà \"title\" con valore \"Identità di aurora\" (poi \"1 backlink · 1 property · 34 words · 230 characters\" nella barra di stato), con link \"+ Add property\" per aggiungerne altre. Queste proprietà tramite UI sono l'equivalente grafico di scrivere a mano il blocco frontmatter YAML tra i tre trattini.",
+    "fonte": "RnoC5IlOUhs#44:18 (pannello Properties aperto su self-info-azienda) + voce 44:18-44:30",
+    "frame": "frame-0444.png, frame-0446.png",
+    "ancora": "Allora, vedete che cominciamo ad avere delle proprietà.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P1-045", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P1-054",
+    "tipo": "principio",
+    "contenuto": "Introduzione (lasciata in sospeso, solo webcam senza UI) al perché le company brain funzionano meglio di una normale nota di testo per l'AI: \"perché le company Brain funzionano? Perché esistono questi collegamenti\" tra le note (i wikilink visti in Passo 1). Anticipa che spiegherà \"come funzionano e qual è la logica sottostante\", per poi arrivare a: \"una normale nota di testo […] è […] perché Obsidian ha la possibilità di\" — frase interrotta, la spiegazione del vantaggio specifico di Obsidian prosegue oltre la scena 120 (fuori dall'intervallo analizzato qui).",
+    "fonte": "RnoC5IlOUhs#48:06 (solo webcam, mani a ventaglio) + voce 48:06-48:36",
+    "frame": "frame-0482.png, frame-0486.png",
+    "ancora": "perché le company Brain funzionano? Ok, perché esistono",
+    "confidenza": "dedotto",
+    "relazioni": [
+      {"verso": "P1-047", "tipo": "parte-di"}
+    ]
   }
 ]

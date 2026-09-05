@@ -175,7 +175,7 @@
     "ancora": "Ontologica vuol dire come collego le informazioni. È un'ontologia applicata",
     "confidenza": "osservato",
     "relazioni": [
-      {"verso": "P2-014", "tipo": "contraddice"}
+      {"verso": "P2-014", "tipo": "parte-di"}
     ]
   },
   {
@@ -212,6 +212,186 @@
     "confidenza": "osservato",
     "relazioni": [
       {"verso": "P2-015", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-019",
+    "tipo": "definizione",
+    "contenuto": "Il nome esatto dell'editor usato per Claude Code in questa demo e' 'Antigravity IDE' (sottotitolo 'Code with Agent'), confermato sia dalla schermata splash sia dall'etichetta della finestra in Mission Control di macOS.",
+    "fonte": "RnoC5IlOUhs#63:48 (splash Antigravity IDE) + #64:00 (Mission Control)",
+    "frame": "frame-0639.png, frame-0641.png",
+    "ancora": "Antigravity IDE",
+    "confidenza": "osservato",
+    "relazioni": []
+  },
+  {
+    "id": "P2-020",
+    "tipo": "struttura",
+    "contenuto": "La finestra di sistema 'Apri' di macOS, aperta sulla company Brain reale e gia' in uso dall'autore (non la demo Aurora), mostra esattamente le 11 cartelle blu del framework: areas, code, concepts, data, docs, entities, outputs, projects, self, sources, workspace — a conferma che lo schema teorico Excalidraw corrisponde 1:1 a una struttura di file gia' operativa in produzione.",
+    "fonte": "RnoC5IlOUhs#57:00 (finestra di sistema \"Open\" con le 11 cartelle reali)",
+    "frame": "frame-0571.png",
+    "ancora": "areas, code, concepts, data, docs, entities, outputs, projects, self, sources, workspace",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-021",
+    "tipo": "struttura",
+    "contenuto": "La cartella 'workspace' dell'autore contiene un journal con due tipi di nota distinti e complementari: 'sessions' (una nota per ogni conversazione chiusa, con frontmatter title/tags/date/related e corpo diviso in Fatto/Decisioni/Da fare/Voci collegate) e 'daily' (un file per giornata che aggrega e riassume tutte le sessioni chiuse quel giorno sotto un titolo 'Riepilogo giornata'). Voce dell'autore: 'perche' dobbiamo averne due, perche' il daily e' un suo [riassunto]... Lei andra' a vedere con i vari titoletti che cosa ho fatto qua dentro'.",
+    "fonte": "RnoC5IlOUhs#57:24-57:42 (Explorer + note reali aperte)",
+    "frame": "frame-0575.png, frame-0578.png",
+    "ancora": "questo perché è importante? Perché dobbiamo averne due, perché il daily è un suo",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-012", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-022",
+    "tipo": "struttura",
+    "contenuto": "Esempio reale di wikilink e backlink in una nota di sessione: il frontmatter dichiara 'related:' seguito da una lista di wikilink su righe separate — [[tooling-skill-e-audit]], [[modulo-youtube-desc]], [[modulo-linkedin]], [[metriche-mrr-churn]] — e lo stesso identico elenco viene ripetuto nel corpo della nota sotto il titolo '## Voci collegate'. Il frontmatter dichiara il collegamento machine-readable, il corpo lo rende leggibile anche a un umano che apre la nota: e' la stessa relazione espressa due volte, in due formati.",
+    "fonte": "RnoC5IlOUhs#57:24 (file workspace/journal/sessions/2026-06-10-0221.md aperto per intero)",
+    "frame": "frame-0575.png",
+    "ancora": "- \"[[tooling-skill-e-audit]]\"",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-021", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-023",
+    "tipo": "struttura",
+    "contenuto": "Il file giornaliero mostra concretamente come il daily aggreghi le sessioni: la sezione 'Riepilogo giornata' racconta in linguaggio narrativo quante sessioni sono state chiuse e cosa hanno prodotto — 'Sei chiusure di sessione registrate dall'hook, quattro narrative scritte..., tutto il lavoro e' riconciliato' — trasformando log meccanici di chiusura in un resoconto leggibile, non solo in un elenco di link.",
+    "fonte": "RnoC5IlOUhs#57:42 (file workspace/journal/daily/2026-06-10.md aperto)",
+    "frame": "frame-0578.png",
+    "ancora": "Sei chiusure di sessione registrate dall'hook, quattro narrative scritte",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-021", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-024",
+    "tipo": "comando",
+    "contenuto": "Prompt 1 — 'Crea le 11 cartelle', testo integrale incollato in Claude Code: 'Crea nel mio vault, alla radice, queste 11 cartelle vuote, una per ciascun lavoro del cervello: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, workspace. Non crearne altre e non metterci dentro nessun file. Solo le 11 cartelle.' E' il primo comando dato all'AI per costruire lo scheletro vuoto del cervello aziendale, senza ancora nessun contenuto.",
+    "fonte": "RnoC5IlOUhs#64:12 (Notion, pagina \"Company Brain — Tutti i prompt\") + #64:18 (stesso testo incollato in Claude Code)",
+    "frame": "frame-0643.png, frame-0644.png",
+    "ancora": "Crea nel mio vau[l]t, alla radice, queste 11 cartelle vuote, una per ciascun lavoro del cervello: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, workspace. Non crearne altre e non metterci dentro nessun file. Solo le 11 cartelle.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-001", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-025",
+    "tipo": "comando",
+    "contenuto": "Comando bash eseguito da Claude Code per materializzare il Prompt 1 sul filesystem reale: cd \"/Users/giovannibeggiato/Desktop/aurora cervello\" && mkdir -p self areas projects sources concepts docs entities data code outputs workspace && ls -la. E' l'unico comando necessario a tradurre lo schema teorico delle 11 cartelle in struttura di file reale.",
+    "fonte": "RnoC5IlOUhs#65:18 (blocco Bash completo nella chat Claude Code)",
+    "frame": "frame-0654.png",
+    "ancora": "cd \"/Users/giovannibeggiato/Desktop/aurora cervello\" && mkdir -p self areas projects sources concepts docs entities data code outputs workspace && ls -la",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-024", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-026",
+    "tipo": "struttura",
+    "contenuto": "Risultato del Prompt 1: l'Explorer mostra 'aurora cervello' popolata con le 11 sottocartelle in ordine alfabetico (areas, code, concepts, data, docs, entities, outputs, projects, self, sources, workspace), tutte vuote, e Claude conferma testualmente: 'Fatto. Le 11 cartelle vuote sono alla radice del vault: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, workspace. Nessun file dentro, nessuna cartella extra.'",
+    "fonte": "RnoC5IlOUhs#64:48 (Explorer con le 11 cartelle create)",
+    "frame": "frame-0649.png",
+    "ancora": "Fatto. Le 11 cartelle vuote sono alla radice del vault: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, workspace. Nessun file dentro, nessuna cartella extra.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-025", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-027",
+    "tipo": "struttura",
+    "contenuto": "La cartella 'sources/' della demo Aurora Sistemi contiene esattamente 9 file di materiale grezzo fittizio, numerati in ordine: 01_chi-siamo-sito-web.md, 02_pitch-deck-vendita.md, 03_prodotti-brochure.md, 04_organigramma.md, 05_verbale-board-Q4-2025.md, 06_export-CRM-clienti.csv, 07_note-customer-success.md, 08_intervista-CEO_podcast.md, 09_email-interne.md. E' l'esempio concreto di cosa significa 'la inbox grezza' della cartella sources.",
+    "fonte": "RnoC5IlOUhs#65:06 (Finder sulla cartella sources/, 9 file elencati)",
+    "frame": "frame-0652.png",
+    "ancora": "`01_chi-siamo-sito-web.md`, `02_pitch-deck-vendita.md`, `03_prodotti-brochure.md`, `04_organigramma.md`, `05_verbale-board-Q4-2025.md`",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-005", "tipo": "esempio-di"}
+    ]
+  },
+  {
+    "id": "P2-028",
+    "tipo": "struttura",
+    "contenuto": "Contenuto chiave del file sorgente 01_chi-siamo-sito-web.md: Aurora Sistemi S.p.A. e' un'azienda fittizia (dichiarata tale dall'autore) nata a Milano nel 2018 da due ingegneri, Elena Ferraro e Marco Bianchi; oggi conta 47 persone, sede principale a Milano e un secondo ufficio a Bologna dal 2022 per il Customer Success; e' una piattaforma SaaS per la gestione intelligente degli edifici (consumi, manutenzioni, accessi, sicurezza, documenti), rivolta a organizzazioni con patrimoni immobiliari da 20 edifici in su in Italia.",
+    "fonte": "RnoC5IlOUhs#64:54 (testo integrale di 01_chi-siamo-sito-web.md)",
+    "frame": "frame-0650.png",
+    "ancora": "Aurora Sistemi S.p.A. nasce a Milano nel 2018 dall'idea di due ingegneri, Elena",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-027", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-029",
+    "tipo": "struttura",
+    "contenuto": "Il file 06_export-CRM-clienti.csv, aperto in foglio di calcolo, ha colonne ARR_eur | stato | moduli_attivi con 10 righe: 9 clienti 'attivo' (ARR da 260.000 a 720.000 euro, con combinazioni di moduli Core/Energy/Manutenzione/Access/Insights) e 1 cliente 'churned 06/2025' da 180.000 euro. Questi numeri sono poi quelli che il canon dovra' far quadrare con i KPI aggregati.",
+    "fonte": "RnoC5IlOUhs#65:06 (foglio di calcolo con l'export CRM aperto)",
+    "frame": "frame-0652.png",
+    "ancora": "180000  churned 06/2025   Core, Manutenzione",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-027", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-030",
+    "tipo": "definizione",
+    "contenuto": "Il Canon e' definito dal Prompt 2 ('Estrai il canon'): 'Congela i fatti duri dell'azienda in un unico canon coerente' — un unico file che deve coprire identita' (missione, ICP, offerta, posizionamento, sedi, anno di fondazione, numero dipendenti), prodotti (con cosa fa ciascuno), reparti (le funzioni continue), persone e ruoli, clienti (ognuno con i suoi numeri: da quando cliente, quanti immobili, ARR) e KPI di fine 2025 (ARR totale, clienti attivi, churn, NRR, edifici gestiti).",
+    "fonte": "RnoC5IlOUhs#65:48 (Notion, Prompt 2 completo) + #68:12 (stesso testo incollato in Claude Code)",
+    "frame": "frame-0659.png, frame-0683.png",
+    "ancora": "estrai i **fatti duri** e scrivili in un **unico canon coerente**",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-027", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P2-031",
+    "tipo": "regola",
+    "contenuto": "Le 'Regole d'oro' del Canon, dal Prompt 2: nessun fatto inventato ('se non e' nel materiale in sources/, NON scriverlo'); i numeri devono QUADRARE tra loro (la somma dell'ARR dei clienti deve essere coerente con l'ARR totale dei KPI). A queste si aggiunge, nella versione completa vista al Prompt 3, che il canon va scritto in un solo file di lavoro (non ancora note finali) e che se l'AI non riesce a fare qualcosa deve comunicarlo, non improvvisare.",
+    "fonte": "RnoC5IlOUhs#65:48 (Notion, Regole del Prompt 2) + #76:12 (coda delle Regole, stessa pagina)",
+    "frame": "frame-0659.png, frame-0763.png",
+    "ancora": "I numeri devono **quadrare** tra loro",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-030", "tipo": "parte-di"}
+    ]
+  },
+  {
+    "id": "P2-032",
+    "tipo": "principio",
+    "contenuto": "Analogia visiva disegnata a mano sopra Notion per spiegare il passaggio dal Canon alle note atomiche: un bacinello grande, pieno d'acqua, collegato con linee a due-tre bicchieri piu' piccoli e vuoti — il Canon (bacinello unico e pieno) si spezza in 11 microbacinelle, una per cartella della Company Brain. Voce: 'microbacinelle, ok? Ovviamente ogni singola di queste bacinelle avra' al suo [interno]...' (frase troncata a schermo).",
+    "fonte": "RnoC5IlOUhs#66:18 (annotazione a mano sopra Notion, \"bacinello d'acqua\")",
+    "frame": "frame-0664.png",
+    "ancora": "microbacinelle, ok? Ovviamente ogni singola di queste bacinelle avrà al suo",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-030", "tipo": "motiva"}
+    ]
+  },
+  {
+    "id": "P2-033",
+    "tipo": "struttura",
+    "contenuto": "Prima di scrivere il Canon, Claude propone un piano in 5 punti: (1) ha letto tutti e 9 i file in sources/, fonti coerenti senza contraddizioni; (2) i numeri quadrano gia' — ARR dei 9 clienti attivi = esattamente 3.840.000 euro, immobili = esattamente 751, identici ai KPI del verbale board e del deck, churn 180k = Costruzioni Sud (-5,8% del 3,1M di inizio anno); (3) struttura del canon: un solo file con 6 sezioni (Identita', Prodotti-5 moduli, Reparti-6 funzioni, Persone e ruoli-11 nominate, Clienti-tabella 9 attivi+1 churned, KPI fine 2025 con riga di verifica); (4) lo scrive in workspace/canon.md, dichiarato 'file di lavoro, non una nota finale'; (5) lascia fuori tutto cio' che e' inventato, ma include l'obiettivo 2026 del board (ARR>5M, NRR>110%, churn<10%, +6 assunzioni) segnalandolo come obiettivo, non come KPI. Chiude chiedendo il via libera: 'Ok per scrivere?'",
+    "fonte": "RnoC5IlOUhs#69:18 (piano in 5 punti di Claude prima di scrivere il Canon)",
+    "frame": "frame-0694.png",
+    "ancora": "Ho letto tutti e 9 i file in `sources/` e verificato i numeri. Ecco il piano:",
+    "confidenza": "osservato",
+    "relazioni": [
+      {"verso": "P2-030", "tipo": "esempio-di"},
+      {"verso": "P2-031", "tipo": "esempio-di"},
+      {"verso": "P2-029", "tipo": "quantificato-da"}
     ]
   }
 ]

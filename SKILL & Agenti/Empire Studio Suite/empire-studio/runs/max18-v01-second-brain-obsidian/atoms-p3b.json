@@ -168,5 +168,95 @@
     "ancora": "Fatturato (ARR)",
     "confidenza": "osservato",
     "relazioni": [{"verso": "P3-058", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-058",
+    "tipo": "struttura",
+    "contenuto": "Stesso cruscotto HTML, scroll su classifica clienti per fatturato (barra multicolore con gradiente che rappresenta i moduli attivi) e organico per reparto, riportati per intero: 1 \"Immobiliare Lombarda SGR\" \"€ 720.000\" (\"Property management\", \"120 edifici · dal 2018\"); 2 \"Gruppo Retail Centro\" \"€ 640.000\" (\"Catena retail\", \"210 edifici · dal 2020\"); 3 \"Banca Adriatica\" \"€ 520.000\" (\"Banca\", \"140 edifici · dal 2019\"); 4 \"Comune di Bologna\" \"€ 410.000\" (\"Pubblica amm.\", \"95 edifici · dal 2021\"); 5 \"LogiPark Logistica\" \"€ 380.000\" (\"Logistica\", \"65 edifici · dal 2021\"); 6 \"TorreVerde Property\" \"€ 350.000\" (\"Property management\", \"60 edifici · dal 2022\"); 7 \"Rete Sanità Nord\" \"€ 300.000\" (\"Sanità\", \"38 edifici · dal 2022\"); 8 \"UniCampus Student Housing\" \"€ 260.000\"; \"HotelLine Hospitality\" \"€ 260.000\". Legenda colori moduli: Manutenzione, Access, Insights. A destra, grafico a ciambella '47 persone' al centro con legenda completa: Prodotto & Engineering 18 · 38%, Customer Success 9 · 19%, Vendite 7 · 15%, Finance & Operations 5 · 11%, Marketing 4 · 9%, People & Cultura 2 · 4%, Fondatori 2 · 4%.",
+    "fonte": "RnoC5IlOUhs#127:30-127:36 (scene 320-321)",
+    "frame": "frame-1276.png, frame-1277.png",
+    "ancora": "\"Immobiliare Lombarda SGR\" \"€ 720.000\" (\"Property management\", \"120 edifici · dal 2018\")",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-059", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-059",
+    "tipo": "struttura",
+    "contenuto": "In fondo alla pagina del cruscotto, riga di stato centrata riportata per intero: 'Cruscotto statico offline · generato dai dati del canon di Aurora Sistemi · 47 persone · 9 clienti attivi · 751 edifici'. Il presentatore chiude il primo esempio con: 'credo che avere un cruscotto figo ora da parte mia sia esattamente quello per cui avete cliccato sul video, quindi lo eviteremo... Questo è un primo layer visivo. Il secondo layer visivo è utilizzarlo tramite Notion.' Torna poi in cima alla stessa pagina prima di cambiare strumento e annuncia il passaggio successivo: 'Adesso connetterò al volo questo con eh cloud code.'",
+    "fonte": "RnoC5IlOUhs#127:36-127:48 (scene 321-322) + voce",
+    "frame": "frame-1277.png, frame-1278.png",
+    "ancora": "Cruscotto statico offline · generato dai dati del canon di Aurora Sistemi · 47 persone · 9 clienti attivi · 751 edifici",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-060", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-060",
+    "tipo": "comando",
+    "contenuto": "Documentazione ufficiale consultata a schermo, developers.notion.com/guides/mcp/get-started-with-mcp, pagina 'Connecting to Notion MCP': 'This guide walks you through connecting your AI tool to Notion using the Model Context Protocol (MCP). Once connected, your tool can read and write to your Notion workspace based on your access and permissions.' Sezione 'Claude Code': 'Run this command in your terminal:' comando riportato per intero: 'claude mcp add --transport http notion https://mcp.notion.com/mcp'. Segue: 'Then authenticate by running /mcp in Claude Code and following the OAuth flow.' Più sotto: 'Use the /mcp command to list and manage the MCP servers you have installed, and use the /context command to understand the context token usage of your current session, including the number of tokens used by each MCP server that's enabled.' La sidebar destra elenca le altre integrazioni supportate oltre a Claude Code: Cursor, VS Code (GitHub Copilot), Claude Desktop, Windsurf, ChatGPT, Codex, Antigravity, Other tools (con sotto-voce JSON configuration format), Connect through the Notion app, Troubleshooting, FAQ.",
+    "fonte": "RnoC5IlOUhs#127:48 (scena 323) + voce",
+    "frame": "frame-1279.png",
+    "ancora": "claude mcp add --transport http notion https://mcp.notion.com/mcp",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-061", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-061",
+    "tipo": "comando",
+    "contenuto": "Sequenza terminale in Claude Code per collegare Notion: digitazione '/fast' con risposta '⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok'; poi digitazione '/cl▍' con menu di autocompletamento visibile ('/clear — Start a new session with empty context; previous session stays on disk (resumable with /resume)', '/claude-api', '/exit', '/code-review-mcp-issue-prompts'); eseguito '/clear' per ripartire pulito, poi banner di benvenuto 'Welcome back Gio!' con 'Opus 4.6 (1M context) with hi[gher limits]... · Claude Max', organizzazione 'giobeggiato@gmail.com's Organization', box 'Tips for getting started' ('Run /init to create a CLAUDE.md file with instructions for Claude', 'Introducing Claude Fable 5: a Mythos-class model that we've made saf...', 'Fixed sessions not saving transcripts...', 'Added \"--safe-mode\" flag...'), avviso '⚠ 1 setup issue: MCP · /doctor'; comando cronologia '> mcp add --transport http notion https://mcp.notion.com/mcp' con stato '⚙ Perusing...'; infine messaggio utente 'sei connesso con Notion?' con stato di elaborazione '🔴 Pontific_a' (verosimilmente 'Pontificating...', etichetta troncata a schermo). Nota di cautela sulla fonte: il nome del modello 'Claude Fable 5' così come appare nel banner di questa specifica registrazione non è verificabile altrove nella sessione ed è riportato alla lettera solo perché leggibile a schermo in quel frame.",
+    "fonte": "RnoC5IlOUhs#127:54-129:18 (scene 324-326) + voce",
+    "frame": "frame-1280.png, frame-1281.png, frame-1287.png",
+    "ancora": "⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok",
+    "confidenza": "dedotto",
+    "relazioni": [{"verso": "P3-062", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-062",
+    "tipo": "struttura",
+    "contenuto": "Claude crea in Notion una nuova pagina privata intitolata 'Cervello Pino' (emoji albero di pino 🌲), callout verde riportato per intero: '🌲 Cervello Pino — Cruscotto KPI di Aurora Sistemi S.p.A.' — 'Piattaforma SaaS italiana per la gestione intelligente del patrimonio immobiliare (fondata a Milano nel 2018). Dati consolidati a fine 2025 (fonte: verbale CdA del 22/01/2026, riconciliato dalla contabilità).' Heading '📊 KPI principali — chiusura 2025' con tre card colorate: verde '📈 ARR' € 3,84M ('+24% sui € 3,10M di inizio anno (+€ 740k)'); blu '🔄 NRR' 115% ('Espansione che supera il churn. Obiettivo Board: >110%'); viola '🏢 Edifici gestiti' 751 ('Somma dei 9 clienti attivi, quadra con l'anagrafica Core'). Voce: 'Integrazione Notion fatta. App Notion, lo chiameremo cervello pino. Abbiamo il nostro ARR, abbiamo il nostro revenue.'",
+    "fonte": "RnoC5IlOUhs#129:18 (scena 327) + voce",
+    "frame": "frame-1294.png",
+    "ancora": "🌲 Cervello Pino — Cruscotto KPI di Aurora Sistemi S.p.A.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-063", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-063",
+    "tipo": "numero",
+    "contenuto": "Nella pagina 'Cervello Pino', heading '📊 Revenue — dettaglio ARR' con tabella a ponte riportata per intero (colonne Voce | Valore | Note): 'ARR inizio 2025' | '€ 3.100.000' | 'Base di partenza'; '– Churn (gross)' | '– € 180.000' | 'Costruzioni Sud, uscita giugno 2025 (acquisita da gruppo con sistema proprietario)'; '+ Espansione (upsell)' | '+ € 660.000' | 'Motore NRR: Banca Adriatica (Access), Gruppo Retail (Energy), Immobiliare Lombarda (Insights)'; '+ Nuovo logo' | '+ € 260.000' | 'HotelLine Hospitality (onboarding chiuso a ottobre)'; riga totale evidenziata in verde 'ARR fine 2025' | '€ 3.840.000' | '+24% YoY'. Sotto, callout blu: '💡 La crescita 2025 è stata trainata soprattutto dall'espansione sui clienti esistenti (upsell di moduli), non dall'acquisizione: un solo nuovo logo nell'anno. È il modello che la CEO Elena Ferraro cita come \"il vero motore\" di Aurora.'",
+    "fonte": "RnoC5IlOUhs#129:24 (scena 328) + voce",
+    "frame": "frame-1295.png",
+    "ancora": "ARR fine 2025",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-064", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-064",
+    "tipo": "struttura",
+    "contenuto": "Stessa pagina 'Cervello Pino', heading '👥 Clienti — i 3 key account per fatturato' con tre card: verde '🏢 Immobiliare Lombarda SGR' ('Property management · cliente dal...', poi coda leggibile nello scroll successivo: 'Core, Energy, Manutenzione, Insights / 2025: ha aggiunto Insights. Referenzia volentieri.'); blu '🏦 Banca Adriatica' ('Banca · cliente dal 2022', coda: '2025: Access esteso a tutte le filiali — upsell più esteso dell'anno.'); arancione '🏨 HotelLine Hospitality' ('Hospitality · cliente dal 2025', coda quasi tagliata: '...logo 2025. Forte interesse su Energy.'). Callout grigio di trasparenza sui dati: 'Il database qui sotto elenca tutti i clienti. ARR ed edifici sono valorizzati solo dove certi nel vault aziendale: per i clienti non-key account le singole cifre non sono dettagliate nelle note di origine (so il totale: € 3,84M su 751 edifici, ma non la ripartizione cliente per cliente).' Heading '🎯 Obiettivo 2026 (approvato dal CdA il 22/01/2026)' con card viola: '🚀 ARR oltre € 5.000.000 (da € 3,84M)', bullet 'Vincoli di qualità: NRR > 110%, logo churn < 10%', 'Leve: nuovi loghi (Vendite) + espansione clienti esistenti (Customer Success)', 'Abilitatore: +6 assunzioni, soprattutto Engineering e Customer Success'. Heading '🧩 Reparti e contesto' con tabella 'Reparto | A capo | Ruolo sui numeri': 'Vendite | Davide Conti (VP Sales) | Acquisizione nuovi loghi (~7 persone)', riga successiva tagliata dal bordo inferiore 'Customer Success | Giulia Rinaldi (Bologna) | Retention ed espansione —[...]'.",
+    "fonte": "RnoC5IlOUhs#129:24-129:30 (scene 328-329) + voce",
+    "frame": "frame-1295.png, frame-1296.png",
+    "ancora": "🎯 Obiettivo 2026 (approvato dal CdA il 22/01/2026)",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-065", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-065",
+    "tipo": "struttura",
+    "contenuto": "Il presentatore mostra al volo anche un database Notion preesistente e distinto, non generato in questa sessione: breadcrumb 'New page / Cruscotto Aurora / Clienti' (ramo diverso da 'Cervello Pino'). Tabella '📁 Clienti' con colonne 'Cliente | ARR | città | Dal | MQ | Pr[odotto]' e righe leggibili: Polo Universitario Sud €750.000 Catania 2024 60000 Edge; Residenze Aurora Verde €820.000 Brescia 2014 90000 Care; Torre Eurosky Uffici €558.000 Roma 2016 90000 Cloud; BioPharma Stabilimenti €555.000 Latina 2022 40000 Edge; Galleria Moderna €552.000 Firenze 2018 40000 Care; Iberia Centros €528.000 Madrid 2013 18000 Care; Università Politecnica Adriatica €522.000 Ancona 2021 60000 Care; Museo delle Arti Contemporanee €511.000 Torino 2017 25000 Care; MediCenter Salute €508.000 Padova 2013 12000 Cloud; Aurora DACH Buildings €486.000 Monaco di Baviera 2014 8000 Care; Distretto Tessile Pratese €420.000 Prato 2020 25000 Care; Retail Gamma €402.000 Verona 2022 8000 Edge; Nordic Retail Chain €370.000 Amburgo 2024 12000 Edge; Centro Direzionale Partenope €369.000 Napoli 2013 25000 Cloud; Industria Meccanica Veneta €347.000 Vicenza 2018 12000 Care; Stadio Arena Nuova €343.000 Udine 2013 90000 Care; Supermercati Risparmio €314.000 Bologna 2022 8000 Care; Helvetia Office Park €309.000 Zurigo 2021 12000 Care; Banca Civica €278.000 Torino 2017 18000 Care (tagliata dal bordo). Questo elenco di ~18 clienti con cifre diverse da quelli di 'Cervello Pino' (i 9 attivi + Costruzioni Sud) appartiene a una pagina Notion preesistente ('Cruscotto Aurora') e non contraddice i dati della nuova pagina generata: è un dataset dimostrativo separato già presente nel workspace prima di questa sessione.",
+    "fonte": "RnoC5IlOUhs#129:36 (scena 330) + voce",
+    "frame": "frame-1297.png",
+    "ancora": "New page / Cruscotto Aurora / Clienti",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-066", "tipo": "precede"}]
+  },
+  {
+    "id": "P3-066",
+    "tipo": "principio",
+    "contenuto": "Risposta completa di Claude in Antigravity dopo il prompt 'Per favore, costruiscimi su Notion un cruscotto di KPI per la mia azienda Aurora con tutto quello che hai... Chiamalo \"Cervello Pino\"...': '\"Cervello Pino\" è creato su Notion:' con link, poi riepilogo di cosa contiene (cruscotto KPI a 6 card, tabella revenue a ponte, 3 key account + database 'Clienti Aurora' inline con tutti i 10 clienti filtrabile, obiettivo 2026 e mappa reparti). Poi, testuali, le 'Due note di trasparenza:' che sono il cuore metodologico dell'intero esercizio: '1.' 'Ho usato i dati del vault locale \"aurora cervello\", non un workspace Notion preesistente: il tuo Notion non aveva nessun teamspace, quindi ho costruito da zero coi dati certi del vault.' '2.' 'ARR ed edifici per cliente li ho valorizzati solo dove certi. Il vault dà il totale (€ 3,84M su 751 edifici) e il dettaglio dei 3 key account, ma non la ripartizione cliente-per-cliente degli altri 6. Inoltre il vault cita 9 clienti attivi ma ne nomina solo 8: ho messo un placeholder \"Cliente settore PA\" per far quadrare il conteggio, invece di inventare un nome.' Chiusura: 'Vuoi che ti provi a derivare l'ARR mancante per cliente o che colleghi questa pagina ad altre note?' Questo è il principio anti-invenzione applicato in pratica: quando un dato non è certo nel cervello, l'AI dichiara il buco (o usa un placeholder esplicito) invece di inventare un numero o un nome plausibile.",
+    "fonte": "RnoC5IlOUhs#129:54 (scena 331) + voce",
+    "frame": "frame-1300.png",
+    "ancora": "Due note di trasparenza:",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P3-067", "tipo": "precede"}, {"verso": "P3-046", "tipo": "corretto-da"}]
   }
 ]
