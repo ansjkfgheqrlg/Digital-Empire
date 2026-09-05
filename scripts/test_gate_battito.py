@@ -39,13 +39,24 @@ BATTITO_ROTTO = """**⏱️ RECAP — 40%**
 
 
 def transcript(testo_assistente):
+    """`testo_assistente` puo' essere una stringa o una LISTA di blocchi di testo.
+
+    La lista serve a riprodurre un turno lungo: piu' messaggi dell'assistente intervallati
+    da strumenti, che e' esattamente lo scenario in cui il gate ha sbagliato la prima volta.
+    """
     fd, percorso = tempfile.mkstemp(suffix=".jsonl")
     os.close(fd)
-    righe = [
-        {"type": "user", "message": {"role": "user", "content": "vai"}},
-        {"type": "assistant", "message": {"role": "assistant",
-                                          "content": [{"type": "text", "text": testo_assistente}]}},
-    ]
+    pezzi = testo_assistente if isinstance(testo_assistente, list) else [testo_assistente]
+    righe = [{"type": "user", "message": {"role": "user", "content": "vai"}}]
+    for i, t in enumerate(pezzi):
+        righe.append({"type": "assistant", "message": {"role": "assistant",
+                                                       "content": [{"type": "text", "text": t}]}})
+        if i < len(pezzi) - 1:
+            # fra un messaggio e l'altro c'e' uno strumento, come nella vita vera
+            righe.append({"type": "assistant", "message": {"role": "assistant", "content": [
+                {"type": "tool_use", "id": "t%d" % i, "name": "Bash", "input": {}}]}})
+            righe.append({"type": "user", "message": {"role": "user", "content": [
+                {"type": "tool_result", "tool_use_id": "t%d" % i, "content": "ok"}]}})
     with io.open(percorso, "w", encoding="utf-8") as f:
         for r in righe:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
@@ -88,6 +99,16 @@ CASI = [
 
     ("6. battito rotto ma stop_hook_active -> passa (anti-loop)",
      BATTITO_ROTTO, True, False),
+
+    # --- il caso pagato in produzione, 2026-09-05 sera ---
+    ("7. turno lungo: messaggi intermedi + battito in cima all'ultimo -> passa",
+     ["Ricevuto, Max. Parto col lavoro.",
+      "Ho finito la prima parte, ora salvo.",
+      BATTITO_OK + "\n\nChiuso, il codice e' EMP-RWKX."], False, False),
+
+    ("8. turno lungo ma il battito e' sotto la prosa nel SUO messaggio -> BLOCCA",
+     ["Parto col lavoro.",
+      "Ti racconto prima com'e' andata, poi il battito.\n\n" + BATTITO_OK], False, True),
 ]
 
 

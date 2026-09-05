@@ -93,11 +93,15 @@ def trova_battito(testo):
     return inizio, "\n".join(righe[inizio:inizio + 8])
 
 
-def ultimo_testo_del_turno(percorso):
-    """Il testo che sto per consegnare, cioe' i blocchi `text` dell'ultimo turno.
+def blocchi_testo_del_turno(percorso):
+    """I blocchi `text` dell'ultimo turno, SEPARATI — non concatenati.
 
-    Si risale il transcript fino all'ultimo messaggio VERO dell'utente (un `user` che non sia
-    un tool_result): tutto cio' che l'assistente ha scritto dopo appartiene a questo turno.
+    Separati e' la parte che conta, ed e' una correzione pagata in produzione il 2026-09-05:
+    la prima versione li univa in un testo solo, e in un turno lungo (piu' messaggi intervallati
+    da strumenti) il battito finiva a meta' della concatenazione. Il gate lo leggeva come
+    "battito non in cima" e bloccava un messaggio giusto — al primo turno vero, su di me.
+    Ogni blocco e' un messaggio a se' che Max legge da solo: la posizione del battito si giudica
+    DENTRO il suo blocco, non dentro la somma del turno.
     """
     try:
         righe = io.open(percorso, encoding="utf-8", errors="replace").read().splitlines()
@@ -131,7 +135,7 @@ def ultimo_testo_del_turno(percorso):
                     if t.strip():
                         pezzi.append(t)
 
-    return "\n\n".join(reversed(pezzi))
+    return list(reversed(pezzi))
 
 
 def main():
@@ -155,25 +159,30 @@ def main():
     if not percorso or not os.path.exists(percorso):
         return 0
 
-    testo = ultimo_testo_del_turno(percorso)
-    if not testo.strip():
+    messaggi = blocchi_testo_del_turno(percorso)
+    if not messaggi:
         return 0
-
-    inizio, blocco = trova_battito(testo)
-    if blocco is None:
-        return 0  # nessun battito in questo messaggio: niente da sorvegliare
 
     from verifica_recap import valida  # unica fonte di verita' della forma
 
-    problemi = valida(blocco)
+    problemi = []
+    for testo in messaggi:
+        inizio, blocco = trova_battito(testo)
+        if blocco is None:
+            continue  # questo messaggio non porta un battito: niente da sorvegliare
 
-    # La posizione e' parte della regola (§6.11: il battito va IN CIMA). Se prima del
-    # battito c'e' gia' della prosa, si dice cosi', invece di lasciare un errore oscuro.
-    prima = "\n".join(testo.split("\n")[:inizio]).strip()
-    if prima:
-        problemi = ["il battito non e' in cima al messaggio: prima di esso ci sono gia' "
+        guai = valida(blocco)
+
+        # La posizione e' parte della regola (§6.11: il battito va IN CIMA) e si giudica
+        # DENTRO il messaggio che lo contiene — mai sulla somma del turno (vedi la nota in
+        # blocchi_testo_del_turno: quella confusione bloccava messaggi corretti).
+        prima = "\n".join(testo.split("\n")[:inizio]).strip()
+        if prima:
+            guai = ["il battito non e' in cima al messaggio: prima di esso ci sono gia' "
                     "%d caratteri di testo (§6.11 -- mai in fondo, mai dopo l'analisi)"
-                    % len(prima)] + problemi
+                    % len(prima)] + guai
+
+        problemi.extend(guai)
 
     if not problemi:
         return 0
