@@ -26,7 +26,7 @@ Tutti i rapporti sono in
 |---|---|
 | `CRITICA-A.md` (58 KB) | dossier 01-02-03: **19 difetti gravi** |
 | `CRITICA-B.md` (47 KB) | dossier 04-05-06: **22 difetti gravi** |
-| `CRITICA-D.md` | dossier 07-08-10 — **era ancora al lavoro alla pausa** |
+| `CRITICA-D.md` | dossier 07-08-10 — **rientrata, completa (8 sezioni)**. Rilievi chiave: le formule dello scarto di budget non hanno tetto e possono rendere non-bloccante GATE-TSR-2; i conti dei reparti/agenti/gate non tornano fra dossier 01 e 08 (11 vs 10, 30 vs 29, 13 vs 14 gate); GATE-TSR-3 e GATE-MEM-1 si sovrappongono sulla stessa transizione, mai cablata; più agenti sono pura aritmetica travestita da modello; nessuna stima numerica del costo per lancio; **due affermazioni di fatto del piano erano già false mentre venivano scritte** — il registro numeri dava il 15 già riservato e `empire conform` restituisce 1 blocco, non 2 |
 | `CRITICA-EMPERATOR.md` (17 KB) | i miei 13 rilievi, con ADR alla mano |
 | `ORIGINE.md` (39 KB) | cosa era stato chiesto davvero (13 vincoli V-01..V-13) |
 | `PONTE-AGENTI.md` (17 KB) | il ponte codice→agente: esiste, funziona, nessuno lo usa |
