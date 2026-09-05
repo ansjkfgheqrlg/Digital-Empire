@@ -1,0 +1,423 @@
+<!doctype html><html lang='it'><head><meta charset='utf-8'><title>Dossier 28 — Higgsfield ed ElevenLabs</title><style>@page{size:A4;margin:0;}</style><style>
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --ink:#1c1c1c; --ink-2:#0a0a0a; --paper:#fafafa; --grey-bg:#e8e8e6;
+  --orange:#fb4604; --orange-dp:#c9370a;
+  --silver:#d9d4e1; --text-2:#55535a; --text-3:#8b8890;
+  --tint:rgba(28,28,28,0.035);
+}
+* { box-sizing:border-box; }
+html,body { margin:0; padding:0; }
+body {
+  font-family:'Onest',-apple-system,'Segoe UI',sans-serif;
+  color:var(--ink); background:var(--paper); font-size:11.5px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3 { margin:0; font-weight:700; letter-spacing:-0.028em; line-height:1.06; }
+p { margin:0; line-height:1.68; }
+strong { font-weight:600; }
+.mono { font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums; }
+
+/* ------------------------------------------------------------------ impaginato */
+.page {
+  position:relative; width:210mm; height:297mm; padding:22mm 20mm 18mm 20mm;
+  overflow:hidden; page-break-after:always; background:var(--paper);
+}
+.page:last-child { page-break-after:avoid; }
+.page.dark { background:var(--ink); color:#f4f2f6; }
+.page.grey { background:var(--grey-bg); }
+
+.grain::before {
+  content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+  opacity:0.13; background-image:url("data:image/png;base64,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");
+  background-repeat:repeat; background-size:3mm 3mm;
+}
+.page.dark .grain::before { opacity:0.22; mix-blend-mode:overlay; }
+.layer { position:relative; z-index:1; height:100%; display:flex; flex-direction:column; }
+
+.masthead {
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-size:8px; letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--text-3); margin-bottom:15mm;
+}
+.page.dark .masthead { color:rgba(244,242,246,0.42); }
+.masthead .mk { font-weight:700; color:var(--ink); letter-spacing:0.2em; }
+.page.dark .masthead .mk { color:rgba(244,242,246,0.8); }
+
+.foot {
+  position:absolute; left:20mm; right:20mm; bottom:11mm; z-index:1;
+  display:flex; justify-content:space-between;
+  font-size:7.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-3);
+}
+.page.dark .foot { color:rgba(244,242,246,0.32); }
+.foot .num { font-weight:600; color:var(--ink); }
+.page.dark .foot .num { color:rgba(244,242,246,0.7); }
+
+/* ------------------------------------------------------------------ copertina */
+.page.cover .masthead { position:absolute; left:20mm; right:20mm; top:22mm; margin:0; }
+.cover-mid { flex:1; display:flex; flex-direction:column; justify-content:center; }
+h1.big { font-size:64px; line-height:0.94; letter-spacing:-0.04em; }
+h1.big .soft { color:rgba(244,242,246,0.38); font-weight:300; }
+h1.big .acc { color:var(--orange); }
+.cover-lead {
+  font-size:12.5px; color:rgba(244,242,246,0.66); max-width:56ch;
+  margin-top:12mm; line-height:1.74;
+}
+.cover-meta { display:grid; grid-template-columns:repeat(4,1fr); gap:6mm; margin-top:18mm; }
+.cover-meta .k {
+  font-size:7.5px; letter-spacing:0.2em; text-transform:uppercase;
+  color:rgba(244,242,246,0.36); margin-bottom:2.5mm;
+}
+.cover-meta .v { font-size:11px; font-weight:600; color:#fff; }
+
+/* ------------------------------------------------------------------ pagina */
+.eyebrow {
+  font-size:8.5px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase;
+  color:var(--orange); margin-bottom:5mm;
+}
+.eyebrow .idx { color:var(--text-3); margin-right:8px; }
+.page.dark .eyebrow .idx { color:rgba(244,242,246,0.35); }
+h2.title { font-size:30px; max-width:22ch; }
+h2.title .soft { color:var(--text-3); font-weight:300; }
+.page.dark h2.title .soft { color:rgba(244,242,246,0.42); }
+.lead { font-size:12px; color:var(--text-2); max-width:64ch; margin-top:7mm; line-height:1.72; }
+.page.dark .lead { color:rgba(244,242,246,0.66); }
+
+.body { flex:1; margin-top:13mm; padding-bottom:5mm; display:flex; flex-direction:column; }
+.unit { break-inside:avoid; page-break-inside:avoid; }
+.stack > * + * { margin-top:10mm; }
+.stack-tight > * + * { margin-top:7mm; }
+.push { margin-top:auto; }
+
+.kicker {
+  font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase;
+  color:var(--ink); margin-bottom:3mm;
+}
+.page.dark .kicker { color:rgba(244,242,246,0.9); }
+.kicker .n { color:var(--orange); margin-right:7px; }
+.note { font-size:10.5px; color:var(--text-2); line-height:1.7; }
+.page.dark .note { color:rgba(244,242,246,0.62); }
+.note strong { color:var(--ink); }
+.page.dark .note strong { color:#fff; }
+
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:9mm; }
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:7mm; }
+
+ul.clean { list-style:none; margin:0; padding:0; }
+ul.clean li {
+  position:relative; padding-left:6mm; margin-bottom:4.4mm;
+  font-size:10.5px; line-height:1.62; color:var(--text-2); break-inside:avoid;
+}
+ul.clean li::before { content:"—"; position:absolute; left:0; color:var(--text-3); }
+ul.clean li strong { color:var(--ink); font-weight:600; }
+.page.dark ul.clean li { color:rgba(244,242,246,0.66); }
+.page.dark ul.clean li strong { color:#fff; }
+.page.dark ul.clean li::before { color:rgba(244,242,246,0.3); }
+
+/* ------------------------------------------------------------------ numero grosso */
+.figure { display:flex; flex-direction:column; }
+.figure .n {
+  font-size:40px; font-weight:800; letter-spacing:-0.04em; line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.figure .n.acc { color:var(--orange); }
+.figure .k {
+  font-size:7.5px; letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--text-3); margin-bottom:3mm;
+}
+.page.dark .figure .k { color:rgba(244,242,246,0.36); }
+.figure .u { font-size:10px; color:var(--text-2); margin-top:3mm; line-height:1.6; }
+.page.dark .figure .u { color:rgba(244,242,246,0.6); }
+
+/* ------------------------------------------------------------------ tabella
+   Nessuna linea: le righe si separano con un velo di tinta, che e' superficie. */
+.tab { width:100%; border-collapse:collapse; }
+.tab th {
+  font-size:7.5px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--text-3); text-align:left; padding:0 4mm 3.5mm 0; vertical-align:bottom;
+}
+.tab td {
+  font-size:10.5px; color:var(--text-2); padding:3.2mm 4mm 3.2mm 0;
+  vertical-align:top; line-height:1.5;
+}
+.tab td:last-child, .tab th:last-child { padding-right:0; }
+.tab tbody tr:nth-child(odd) td { background:var(--tint); }
+.tab tbody tr td:first-child { padding-left:3mm; }
+.tab tbody tr:nth-child(odd) td:first-child { border-radius:2px 0 0 2px; }
+.tab tbody tr:nth-child(odd) td:last-child { border-radius:0 2px 2px 0; }
+.tab td.k { color:var(--ink); font-weight:500; }
+.tab td.n, .tab th.n {
+  text-align:right; font-family:'IBM Plex Mono',ui-monospace,monospace;
+  font-variant-numeric:tabular-nums; font-size:10px; white-space:nowrap; color:var(--ink);
+}
+.tab tr.hi td { background:rgba(251,70,4,0.075) !important; }
+.tab tr.hi td.k, .tab tr.hi td.n { color:var(--orange-dp); font-weight:600; }
+.page.dark .tab td { color:rgba(244,242,246,0.66); }
+.page.dark .tab td.k, .page.dark .tab td.n { color:#fff; }
+.page.dark .tab tbody tr:nth-child(odd) td { background:rgba(255,255,255,0.045); }
+.page.dark .tab th { color:rgba(244,242,246,0.36); }
+.cap { font-size:9px; color:var(--text-3); line-height:1.6; margin-top:4mm; max-width:70ch; }
+.page.dark .cap { color:rgba(244,242,246,0.42); }
+.cap strong { color:var(--text-2); }
+.page.dark .cap strong { color:rgba(244,242,246,0.7); }
+
+/* ------------------------------------------------------------------ correzione */
+.fix { padding-left:6mm; position:relative; }
+.fix::before {
+  content:""; position:absolute; left:0; top:1mm; bottom:1mm; width:1.6mm;
+  background:var(--orange); border-radius:1px;
+}
+.fix .tag {
+  font-size:7.5px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--orange); margin-bottom:2.5mm;
+}
+.fix h3 { font-size:14px; margin-bottom:3mm; }
+.fix.mute::before { background:var(--silver); }
+.fix.mute .tag { color:var(--text-3); }
+
+/* ------------------------------------------------------------------ passo */
+.step { display:grid; grid-template-columns:14mm 1fr; gap:0; break-inside:avoid; }
+.step .idx {
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:8.5px; font-weight:600;
+  letter-spacing:0.12em; color:var(--orange); padding-top:1.5mm;
+}
+.step h3 { font-size:13px; margin-bottom:3mm; }
+
+.quote {
+  font-size:12.5px; line-height:1.66; color:var(--ink); max-width:60ch;
+  font-weight:500;
+}
+.page.dark .quote { color:#fff; }
+.quote .src { display:block; font-size:9px; color:var(--text-3); margin-top:4mm; font-weight:400;
+  letter-spacing:0.14em; text-transform:uppercase; }
+.page.dark .quote .src { color:rgba(244,242,246,0.4); }
+</style></head><body><section class='page grain cover dark'><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div>
+<div class='cover-mid'>
+  <h1 class='big'>Higgsfield<br><span class='soft'>ed</span> <span class='acc'>ElevenLabs</span>.</h1>
+  <p class='cover-lead'>Sessantotto pagine dei due siti lette sul DOM renderizzato, i Termini
+  d'uso e la normativa italiana. Il conto e' fatto sul volume di produzione dichiarato, non su
+  un video singolo. Tre conclusioni delle stesure precedenti erano sbagliate e qui sono
+  corrette, ognuna segnata dov'e'.</p>
+  <div class='cover-meta'>
+    <div><div class='k'>Volume</div><div class='v'>172 video · 904 min</div></div>
+    <div><div class='k'>Mese di prova</div><div class='v'>circa €139</div></div>
+    <div><div class='k'>A regime</div><div class='v'>€2.113 al mese</div></div>
+    <div><div class='k'>Per</div><div class='v'>Max</div></div>
+  </div>
+</div>
+</div><div class='foot'><span>Emperator · 5 settembre 2026</span><span>Piano d'acquisto</span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>A</span>La prima mossa</div><h2 class='title'>Un mese di prova, <span class='soft'>mensile.</span></h2><p class='lead'>Nessun impegno annuale finche' le prove non hanno risposto. L'annuale sconta il 30% ma blocca dodici mesi: su un mese di prova annullerebbe la prova stessa.</p>
+<div class='body stack'>
+  <div class='unit grid3'>
+    <div class='figure'><div class='k'>Higgsfield · Ultra 3.000</div><div class='n'>€129</div><div class='u'>Mensile. Tutti i modelli, otto job in parallelo, Canvas, Vibe Motion, Supercomputer, e i sette giorni di Kling 3.0 unlimited.</div></div><div class='figure'><div class='k'>ElevenLabs · Creator</div><div class='n'>$11</div><div class='u'>Primo mese al 50%, poi $22. Voice cloning professionale, 121.000 crediti di voce, 275 minuti di chiamate.</div></div><div class='figure'><div class='k'>Totale del mese di prova</div><div class='n acc'>€139</div><div class='u'>Il prezzo dell'opzione di dire di no. Promozioni come il 30% vengono rimesse ogni due mesi.</div></div>
+  </div>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>—</span>Perche' Ultra e non Plus</div>
+    <p class='note'>Plus costa €59 e da' 1.200 crediti; le prove ne chiedono 2.640, quindi
+    servirebbero €66 di pacchetti. Totale €125, praticamente identico — ma con sei job
+    paralleli invece di otto e <strong>zero margine per gli scarti</strong>. A parita' di spesa
+    si prende quello che non finisce a meta' prova.</p>
+  </div>
+  <div class='unit push'>
+    <p class='quote'>«Faremo un acquisto di prova solamente per un mese, il minimo indispensabile
+    per fare tutte le prove possibili. Pero' considera che le prime prove saranno scarti, perche'
+    sbaglieremo qualcosa.»<span class='src'>Max — 5 settembre 2026</span></p>
+  </div>
+</div>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>02</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>A</span>Il mese di prova</div><h2 class='title'>Nove prove, <span class='soft'>con lo scarto dentro al conto.</span></h2><p class='lead'>Tasso di scarto 3× invece di 2×: la prima volta si sbaglia il prompt, la reference o il formato. E' messo nel conto, non sperato via.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Prova</th><th>Composizione</th><th class='n'>Crediti</th></tr></thead><tbody><tr><td class='k'>1 · Video YouTube</td><td>Un segmento da 2 min provato 3 volte, poi un video intero da 10 min</td><td class='n'>664</td></tr><tr><td class='k'>2 · Corti Vibe Motion</td><td>3 corti, 3 iterazioni ciascuno, sfondi condivisi</td><td class='n'>552</td></tr><tr class='hi'><td class='k'>3 · Misura del TTS</td><td>5 campioni di lunghezza nota — incognita, budget</td><td class='n'>150</td></tr><tr><td class='k'>4 · Canvas</td><td>Costruzione gratis, 3 esecuzioni del template</td><td class='n'>330</td></tr><tr><td class='k'>5 · Layers su slide Arena</td><td>10 rigenerazioni del solo testo — incognita, budget</td><td class='n'>80</td></tr><tr><td class='k'>6 · Avatar UGC</td><td>300 volti Soul 2.0, training del personaggio, 1 video da 30s</td><td class='n'>372</td></tr><tr><td class='k'>7 · Promo prodotto 30s</td><td>Manuale Claude Code</td><td class='n'>144</td></tr><tr><td class='k'>8 · Confronto premium</td><td>Seedance 2.0, Veo 3.1 e Sora 2 Pro sulla stessa scena</td><td class='n'>248</td></tr><tr><td class='k'>9 · MCP da Claude Code</td><td>10 generazioni miste guidate da qui</td><td class='n'>100</td></tr><tr><td class='k'>Somma piu' 25% di margine</td><td>2.640 + 660</td><td class='n'>3.300</td></tr></tbody></table><p class='cap'>Ultra da' 3.000 crediti, quindi si e' 300 sotto — <strong>ma solo sulla carta</strong>: i sette giorni di Kling 3.0 unlimited coprono a mano circa 900 crediti delle prove 1, 2, 7 e in parte 4. La finestra unlimited va usata per prima, non per ultima.</p></div>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>—</span>Le regole di condotta</div>
+    <ul class='clean'>
+      <li><strong>Tetto di spesa nel codice:</strong> nessuna generazione sopra 50 crediti senza via libera esplicito. L'MCP non ne ha uno nativo.</li>
+      <li><strong>Registro delle prove:</strong> ogni generazione annotata con modello, crediti ed esito. Senza registro il mese produce impressioni, non numeri.</li>
+      <li><strong>Data del rinnovo sul calendario</strong> il giorno stesso dell'acquisto. Disdetta se due prove su tre falliscono.</li>
+      <li><strong>I crediti non si riportano al mese dopo:</strong> quello che non si spende e' perso, quindi le prove si fanno tutte.</li>
+    </ul>
+  </div>
+</div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>03</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>B</span>Il conto a regime</div><h2 class='title'>Il volume vero <span class='soft'>di Digital Empire.</span></h2><p class='lead'>Le stesure precedenti costavano un video singolo e si fermavano li'. Questo e' il conto che decide.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Formato</th><th>Cadenza</th><th class='n'>Al mese</th><th class='n'>Minuti</th></tr></thead><tbody><tr><td class='k'>Video YouTube 10 min</td><td>3-2-3-2 alternata, due giorni di stop</td><td class='n'>70</td><td class='n'>700</td></tr><tr><td class='k'>Corti 1-3 min</td><td>Tre al giorno, sei una volta a settimana</td><td class='n'>102</td><td class='n'>204</td></tr><tr><td class='k'>Chiamate agente vocale</td><td>Cento al giorno</td><td class='n'>3.000</td><td class='n'>6.000</td></tr></tbody></table><p class='cap'>Totale: <strong>172 video e 904 minuti di video finito al mese</strong>.</p></div><div class='unit'><table class='tab'><thead><tr><th>Scenario</th><th class='n'>Cr / video YT</th><th class='n'>Cr / corto</th><th class='n'>Crediti al mese</th><th class='n'>Higgsfield / mese</th></tr></thead><tbody><tr><td class='k'>Magro — poche clip, molte immagini; corti di sola grafica</td><td class='n'>176</td><td class='n'>45</td><td class='n'>16.890</td><td class='n'>€635</td></tr><tr class='hi'><td class='k'>Medio — b-roll vero; corti con quattro sfondi in movimento</td><td class='n'>349</td><td class='n'>109</td><td class='n'>35.514</td><td class='n'>€1.496</td></tr><tr><td class='k'>Ricco — aperture Seedance 2.0; corti con otto clip</td><td class='n'>645</td><td class='n'>175</td><td class='n'>63.006</td><td class='n'>€2.768</td></tr></tbody></table><p class='cap'>Base Ultra 9.000 (€270 annuale) piu' pacchetti a €0,046 il credito. Tasso di riprova 2×. Calcolo riproducibile: <strong>PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py</strong></p></div><div class='unit grid3'><div class='figure'><div class='k'>Higgsfield, scenario medio</div><div class='n'>€1.496</div><div class='u'>35.514 crediti al mese: quattro volte il tetto acquistabile da soli.</div></div><div class='figure'><div class='k'>ElevenLabs, tutto compreso</div><div class='n'>€617</div><div class='u'>Pro piu' eccedenza chiamate, telefonia italiana e modello.</div></div><div class='figure'><div class='k'>Totale mensile</div><div class='n acc'>€2.113</div><div class='u'>Circa €25.400 all'anno. Con il tasso di riprova a 1,3: €1.604 al mese.</div></div></div></div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>04</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>B</span>Il listino</div><h2 class='title'>Dove stanno <span class='soft'>i crediti economici.</span></h2><p class='lead'>Sorpresa del listino: i piani per squadre sono i crediti piu' cari di tutti, perche' il prezzo e' per posto con un minimo di cinque.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Piano Higgsfield</th><th class='n'>Crediti/mese</th><th class='n'>Costo/mese</th><th class='n'>Per credito</th></tr></thead><tbody><tr><td class='k'>Team — cinque posti</td><td class='n'>5.000</td><td class='n'>€325</td><td class='n'>€0,0650</td></tr><tr><td class='k'>Scale — cinque posti</td><td class='n'>12.500</td><td class='n'>€750</td><td class='n'>€0,0600</td></tr><tr><td class='k'>Pacchetti extra</td><td class='n'>a consumo</td><td class='n'>—</td><td class='n'>€0,0463</td></tr><tr><td class='k'>Plus</td><td class='n'>1.200</td><td class='n'>€47</td><td class='n'>€0,0392</td></tr><tr><td class='k'>Ultra 3.000</td><td class='n'>3.000</td><td class='n'>€99</td><td class='n'>€0,0330</td></tr><tr><td class='k'>Ultra 6.000</td><td class='n'>6.000</td><td class='n'>€194</td><td class='n'>€0,0323</td></tr><tr class='hi'><td class='k'>Ultra 9.000</td><td class='n'>9.000</td><td class='n'>€270</td><td class='n'>€0,0300</td></tr></tbody></table><p class='cap'>Tariffe annuali, IVA esclusa. <strong>Starter non accede a Seedance</strong>: il piano minimo utile e' Plus. Ultra 9.000 e' il massimo acquistabile senza passare da un commerciale.</p></div><div class='unit'><table class='tab'><thead><tr><th>Piano ElevenLabs</th><th class='n'>Canone</th><th class='n'>Eccedenza chiamate</th><th class='n'>Totale/mese</th><th>Crediti voce bastano?</th></tr></thead><tbody><tr><td class='k'>Creator</td><td class='n'>$22</td><td class='n'>$458</td><td class='n'>$480</td><td>No — 121k contro 204k</td></tr><tr class='hi'><td class='k'>Pro</td><td class='n'>$99</td><td class='n'>$381</td><td class='n'>$480</td><td>Si' — 600k, concorrenza 20</td></tr><tr><td class='k'>Scale</td><td class='n'>$299</td><td class='n'>$181</td><td class='n'>$480</td><td>Si', ma margine inutile</td></tr><tr><td class='k'>Business</td><td class='n'>$990</td><td class='n'>$0</td><td class='n'>$990</td><td>Si', e costa il doppio per nulla</td></tr></tbody></table><p class='cap'><strong>Scoperta che vale $510 al mese:</strong> i piani per gli agenti vocali sono perfettamente lineari a $0,08 al minuto, quindi salire di livello non fa risparmiare un centesimo sulle chiamate — cambia solo i crediti voce e la concorrenza. Si prende il piu' basso che copra i crediti, ed e' Pro.</p></div></div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>05</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>C</span>Onesta'</div><h2 class='title'>Dove mi ero <span class='soft'>sbagliato.</span></h2><p class='lead'>Tre conclusioni mie, corrette per iscritto invece che riscritte di nascosto. Nascono tutte dallo stesso difetto: rispondere sul caso singolo invece che sul sistema.</p>
+<div class='body stack'>
+  <div class='unit fix'>
+    <div class='tag'>Correzione 1 · Fliki</div>
+    <h3>Higgsfield sostituisce Fliki, e fa un altro mestiere.</h3>
+    <p class='note'>Avevo scritto che il tetto di quindici secondi per clip rendeva impraticabile
+    un video da dieci minuti. Il conto era giusto <strong>solo se il video e' tutto video</strong>.
+    Esiste un modulo dedicato, <strong>AI Long Video Generator</strong>, che dichiara alla lettera
+    il nostro caso d'uso: «Build YouTube and long-form content — faceless channels — full episodes
+    with consistent voice and look».</p>
+  </div>
+  <div class='unit fix'>
+    <div class='tag'>Correzione 2 · Caroselli</div>
+    <h3>I caroselli restano su Arena. Il prezzo era l'asse sbagliato.</h3>
+    <p class='note'>Le slide che Max produce in Arena sono un sistema di design coerente — tag
+    pre-headline in pillola, grana, arancione sotto il dieci per cento come accento, grotesque
+    bold col corsivo serif, card argento, numerazione, firma. Nano Banana Pro a due crediti
+    genera <strong>la fotografia di una slide</strong>, non un layout. Su Arena il problema non e'
+    la qualita': e' l'affidabilita' dell'automazione, e quella va riparata, non sostituita.</p>
+  </div>
+  <div class='unit fix'>
+    <div class='tag'>Correzione 3 · Il conto</div>
+    <h3>Il costo di un video non e' una risposta.</h3>
+    <p class='note'>«€2,78 a video» era vero e inutile: su una decisione di spesa ricorrente il
+    costo unitario va moltiplicato per il volume che l'azienda produce davvero — e il volume si
+    chiede, se non lo si sa. Nello stesso errore stavano i corti, costati come dodici clip
+    generative quando sono <strong>progetti Vibe Motion</strong>: da 239 a 109 crediti l'uno, e
+    li' se ne andava meta' del conto.</p>
+  </div>
+</div>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>06</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>D</span>Architettura</div><h2 class='title'>Le quattro leve, <span class='soft'>in ordine di peso.</span></h2><p class='lead'>Il conto non si vince comprando un piano piu' grande. Si vince qui.</p>
+<div class='body stack'>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>01</span>Il tasso di riprova — vale meta' del conto</div>
+    <p class='note'>Se una clip su due va buttata, si paga il doppio. Passare da 2× a 1,3× porta
+    Higgsfield da €1.496 a <strong>€987</strong> al mese: <strong>seimila euro all'anno</strong>.
+    Non e' una trattativa col fornitore — e' la nostra libreria di prompt e le reference. E' il
+    lavoro che rende di piu' in assoluto.</p>
+  </div>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>02</span>Immagini al posto delle clip — rapporto 66 a 1</div>
+    <p class='note'>Un'immagine Soul 2.0 costa <strong>0,12 crediti</strong>; un secondo di clip
+    Kling 3.0 in 1080p ne costa 1,6. <strong>Sessantasei volte tanto.</strong> Il video lungo
+    faceless va costruito su immagini mosse in montaggio, con le clip riservate a hook, stacchi e
+    momenti che devono muoversi davvero.</p>
+  </div>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>03</span>Lo stampo — Canvas e Vibe Motion</div>
+    <p class='note'>Vibe Motion produce un <strong>asset strutturato e modificabile</strong>, non
+    un video piatto: si costruisce il modello una volta e si rigenera solo il testo, cento volte.
+    Canvas salva l'intero flusso come template riutilizzabile. E' qui che 102 corti al mese
+    smettono di essere 102 produzioni e diventano cinque stampi.</p>
+  </div>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>04</span>Lo sprint dei sette giorni unlimited</div>
+    <p class='note'>Kling 3.0 unlimited a inizio mese produce il girato senza toccare un credito.
+    Ma la coda e' rilassata — <strong>una generazione alla volta</strong> — e i Termini vietano
+    l'automazione. A mano, sei ore al giorno per sette giorni, copre forse un quarto del
+    fabbisogno. E' una leva reale, non e' la soluzione.</p>
+  </div>
+</div>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>07</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>E</span>La fabbrica</div><h2 class='title'>Le due macchine <span class='soft'>da sapere a memoria.</span></h2><p class='lead'>A 172 video al mese non conta saper generare: conta saper costruire lo stampo.</p>
+<div class='body stack'>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>—</span>Canvas · l'officina a nodi</div>
+    <ul class='clean'>
+      <li><strong>Come si costruisce:</strong> nuova lavagna, nodo Text Prompt, lo colleghi a un nodo di generazione, scegli il modello, colleghi l'uscita al passo dopo. Ogni modello Higgsfield e' un nodo, audio compreso.</li>
+      <li><strong>Il dettaglio che fa sbagliare tutti:</strong> i nodi <strong>Seedance</strong> leggono le reference collegate solo se il prompt ne dichiara il ruolo; i nodi <strong>Kling</strong> trattano l'immagine collegata come primo fotogramma, e per il personaggio vogliono il tag @nome-elemento.</li>
+      <li><strong>Crediti:</strong> costruire e collegare e' gratis. Si paga solo quando un nodo genera. Quindi si progetta l'intera pipeline a costo zero.</li>
+      <li><strong>Parallelo:</strong> otto job insieme su Ultra, output confrontabili a fianco. E' cosi' che si abbatte il tasso di riprova — si sceglie fra quattro varianti invece di rigenerare quattro volte la stessa.</li>
+    </ul>
+  </div>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>—</span>Vibe Motion · il motore da testo ad animazione</div>
+    <ul class='clean'>
+      <li><strong>Non genera pixel:</strong> costruisce la logica dell'animazione, e l'uscita e' un asset modificabile. Un template si riusa cento volte cambiando solo il testo.</li>
+      <li><strong>Colore:</strong> si inseriscono i codici HEX o RGB esatti. Il nostro <strong>#fb4604</strong> entra alla lettera, non «piu' o meno arancione».</li>
+      <li><strong>Safe zone social:</strong> gli elementi si trascinano dove servono e i sottotitoli non finiscono sotto i bottoni dell'interfaccia.</li>
+      <li><strong>Movimento e tipografia:</strong> durata, ritardo e curve di easing su cursori; font nostri, crenatura e interlinea, ridimensionamento senza perdita. Categorie native: Infografiche, Presentazioni, Kinematic Captions.</li>
+      <li><strong>Il costo e' l'incognita:</strong> le iterazioni bruciano in fretta. Stima di terzi 15-50 crediti a progetto — nel calcolatore vale 40, ed e' da tarare sul campo.</li>
+    </ul>
+  </div>
+</div>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>08</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>F</span>Vincolo</div><h2 class='title'>Il muro sulle <span class='soft'>chiamate a freddo.</span></h2><p class='lead'>Non e' prudenza: e' aritmetica. Un agente vocale che chiama a freddo numeri italiani senza consenso e senza dichiararsi mette a rischio l'azienda per un ritorno che non vale la cifra.</p>
+<div class='body stack'>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>—</span>Cosa e' cambiato quest'anno</div>
+    <ul class='clean'>
+      <li><strong>Legge 49/2026, dal 19 giugno.</strong> Modifica l'articolo 51 del Codice del Consumo: opt-in obbligatorio, consenso preventivo esplicito e tracciabile. Nasce sul settore energia, le fonti divergono sulla trasversalita' — va verificato con un legale prima di costruire, non dopo.</li>
+      <li><strong>Registro Pubblico delle Opposizioni:</strong> copre anche le utenze aziendali, e vale sia per l'operatore umano sia per le chiamate automatiche.</li>
+      <li><strong>Il 68% dei numeri «aziendali»</strong> nelle liste e' intestato a persone fisiche: GDPR pieno, consenso esplicito.</li>
+      <li><strong>AI Act articolo 50, dal 2 agosto.</strong> Obbligo di dichiarare dentro la conversazione, al primo contatto, che si parla con un'AI e per conto di chi. La privacy policy non basta.</li>
+      <li><strong>Fino a €20 milioni o il 4% del fatturato</strong>, con responsabilita' in solido fra mandante e contact center: non ci si copre appaltando.</li>
+    </ul>
+  </div>
+  <div class='unit fix'>
+    <div class='tag'>La strada che resta, ed e' migliore</div>
+    <p class='note'>In Preventa la catena di consenso <strong>esiste gia'</strong>: mandiamo
+    WhatsApp, il concessionario risponde. Quello e' un contatto che ha manifestato interesse, ed
+    e' li' che entra l'agente vocale — richiamo del lead caldo entro cinque minuti, qualifica in
+    entrata, conferma appuntamenti, riattivazione dormienti, post-vendita. Con la dichiarazione AI
+    nei primi tre secondi e l'opt-out immediato e' in regola, e converte piu' del freddo.</p>
+  </div>
+  <div class='unit fix mute'>
+    <div class='tag'>Il vincolo vero, che non e' il prezzo</div>
+    <p class='note'>Tremila chiamate al mese richiedono <strong>tremila contatti con consenso
+    tracciabile</strong>. La domanda da rispondere prima di attivare l'agente non e' quanto costa:
+    e' se generiamo cento risposte al giorno da richiamare.</p>
+  </div>
+</div>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>09</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>G</span>Esecuzione</div><h2 class='title'>Il piano, <span class='soft'>nell'ordine che conta.</span></h2><p class='lead'>Le prime tre mosse non costano niente e cambiano di quanto la quarta va dimensionata.</p>
+<div class='body stack-tight'>
+  <div class='unit step'>
+    <div class='idx'>F01</div>
+    <div>
+      <h3>Le tre mosse a costo zero, oggi</h3>
+      <ul class='clean'>
+        <li><strong>Startup Grant ElevenLabs.</strong> 33 milioni di caratteri contro un consumo di 204.000 al mese: vale oltre dieci anni di voce dei corti. Mezz'ora di lavoro.</li>
+        <li><strong>Trattativa Enterprise con Higgsfield.</strong> Unico livello con sconti a volume per modello e crediti che si riportano al mese dopo — e con una cadenza 3-2-3-2 la produzione non e' piatta. Richiede settimane: va aperta ora.</li>
+        <li><strong>Riparare quality_gate.py:93.</strong> Ventuno fallimenti identici in memoria; a tre video al giorno quel gate ferma settanta produzioni al mese.</li>
+      </ul>
+    </div>
+  </div>
+  <div class='unit step'>
+    <div class='idx'>F02</div>
+    <div>
+      <h3>Il mese di prova</h3>
+      <p class='note'>Ultra 3.000 mensile piu' ElevenLabs Creator. Nove prove col budget crediti
+      dichiarato, la finestra unlimited usata per prima, il registro delle prove aperto dal primo
+      giorno. <strong>La misura del costo del TTS viene prima di ogni altra prova:</strong> senza
+      quel numero nessun conto di questo dossier e' chiuso.</p>
+    </div>
+  </div>
+  <div class='unit step'>
+    <div class='idx'>F03</div>
+    <div>
+      <h3>La fabbrica — settimane due-sei</h3>
+      <ul class='clean'>
+        <li><strong>Cinque template Canvas</strong>, uno per formato: YouTube lungo, corto prodotto, corto Preventa, promo, UGC.</li>
+        <li><strong>Cinque template Vibe Motion</strong> con le Brand Guidelines dentro: safe zone, font, HEX esatti.</li>
+        <li>Skill <strong>video-youtube-higgsfield</strong> al posto del ramo Fliki, sottotitoli nostri.</li>
+        <li>Soul ID del personaggio di brand e libreria di reference — e' la leva che abbassa il tasso di riprova, cioe' meta' del conto.</li>
+        <li><strong>Riparazione del ramo Arena</strong> per i caroselli, che restano li'.</li>
+      </ul>
+    </div>
+  </div>
+  <div class='unit step'>
+    <div class='idx'>F04</div>
+    <div>
+      <h3>L'agente vocale — settimane quattro-otto</h3>
+      <p class='note'>Parere legale prima di tutto. Poi l'agente «richiamo lead caldo» su Preventa,
+      dichiarazione AI nei primi tre secondi, opt-out immediato, registro dei consensi a prova di
+      ispezione. Test su venti lead, poi si decide se salire.</p>
+    </div>
+  </div>
+</div>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>10</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>H</span>Metodo e limiti</div><h2 class='title'>Cosa e' misurato <span class='soft'>e cosa no.</span></h2>
+<div class='body stack'>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>—</span>Come e' stato fatto</div>
+    <p class='note'>Sessantotto pagine di higgsfield.ai lette con Playwright sul DOM renderizzato.
+    Le pagine prezzi sono applicazioni a pagina singola: il fetch semplice le vede vuote e
+    restituisce listini di terze parti, che nei fatti erano <strong>tutti sbagliati</strong> —
+    davano Plus a $39 e Ultra a $99 in dollari, quando il listino reale in euro e' €47 e €99 con
+    una scala fino a €270. Piu' la documentazione API, l'help center, i Termini d'uso, i listini
+    ElevenLabs e la documentazione del Voice Changer.</p>
+  </div>
+  <div class='unit'>
+    <div class='kicker'><span class='n'>—</span>Le due incognite, dichiarate</div>
+    <ul class='clean'>
+      <li><strong>Il costo in crediti del Text-to-Speech Higgsfield.</strong> Non pubblicato da nessuna parte. Decide se i 700 minuti di voce dei video lunghi restano li' o vanno su ElevenLabs — cioe' se a regime basta Pro o serve Scale.</li>
+      <li><strong>Il costo reale di un progetto Vibe Motion.</strong> Nel calcolatore vale 40 crediti ed e' una stima di terzi. Con 102 corti al mese, sbagliarla di venti crediti sposta €1.100 all'anno.</li>
+    </ul>
+    <p class='note'>Entrambe si misurano nella prima settimana del mese di prova. Sono scritte qui
+    perche' <strong>un numero non misurato resta non misurato</strong> anche quando fa comodo.</p>
+  </div>
+  <div class='unit push'>
+    <div class='kicker'><span class='n'>—</span>Dove vive questo dossier</div>
+    <ul class='clean'>
+      <li><strong>Originale:</strong> PIANO-MAESTRO/28-DOSSIER-HIGGSFIELD-ELEVENLABS.md</li>
+      <li><strong>Calcolatore:</strong> PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py</li>
+      <li><strong>Checkpoint:</strong> company/Memory/checkpoints/CP-20260905-001.md — codice di ripresa EMP-HGFD</li>
+      <li><strong>Wiki:</strong> second-brain-vault/wiki/tools/Tool_Higgsfield_ElevenLabs.md</li>
+    </ul>
+  </div>
+</div>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>11</span></span></div></section></body></html>
