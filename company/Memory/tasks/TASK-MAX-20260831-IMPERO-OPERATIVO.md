@@ -370,3 +370,22 @@ Gael e Neri non collidono.
 | B8 — Auto-miglioramento | 1 evoluzione proposta dal sistema e applicata | ⬜ | |
 
 **RIPRESA DA:** costruire EMPERATOR (STRUMENTO ZERO), poi B0.
+
+---
+
+## ⚠️ AGGIORNAMENTO 2026-09-05 — questa task è stata RIMISURATA e RIORDINATA
+
+Le misure qui sopra sono del **31 agosto**. Il 5 settembre sono state rilanciate tutte con gli
+stessi comandi: **nove su undici sono ferme**, l'unica mossa è `.claude/agents/` da **0 a 129**
+(STRUMENTO ZERO resta 2/3, B2 sale a ~40%). Verdetto: **Impero 92% sulla carta, 18% vivo**.
+
+Il piano operativo che esegue questa task — con i numeri di oggi, sette scaglioni, gate
+eseguibili e ore — è **[PIANO-MAESTRO/30-PIANO-COMPLETAMENTO-IMPERO.md](../../../PIANO-MAESTRO/30-PIANO-COMPLETAMENTO-IMPERO.md)**.
+Questa task resta la fonte dei blocchi B0..B8; il dossier 30 li misura e li ordina.
+
+**Unica modifica strutturale, dichiarata:** la **fetta verticale** (un workflow vero end-to-end,
+~10 agenti) viene **prima** di B1 (contratto d'uscita su 439 agenti). Motivo: B1 per primo
+significa scrivere 314 contratti prima di sapere se lo standard funziona.
+
+Ripresa: **[EMP-MCC4](../riprese/EMP-MCC4.md)** · checkpoint:
+[CP-20260905-NUJJ](../checkpoints/CP-20260905-NUJJ.md).

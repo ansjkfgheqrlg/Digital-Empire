@@ -2159,3 +2159,29 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   (c) skill nuove da costruire dopo la prova: `video-youtube-higgsfield` (al posto del ramo Fliki) e
   `corto-vibe-motion`; (d) la conoscenza di Canvas e Vibe Motion va dentro CONOSCENZA-EMPIRE, perche'
   serve a qualunque agente che tocchi produzione video.
+
+## 2026-09-05 — STATO DELLA COSTRUZIONE DELL'IMPERO: 92% carta / 18% vivo (EMP-MCC4)
+
+- ANALISI: misurata con tredici comandi del runtime di governo (`empire doctor`, `forge scan`,
+  `flow status`, `trace stato`, `registry orphans`, `controllo`, `estate`, `pytest empire/tests`,
+  `verify-agents.py`, `verify-skills.py`) la distanza fra l'Impero descritto e l'Impero che
+  esegue. **92% sulla carta, 18% vivo** — il 18% su dieci gate a peso uguale, non stimato.
+- SCOPERTA: dalla task madre del 31 agosto, **nove misure su undici sono ferme in cinque
+  giorni**. L'unica mossa reale: agenti invocabili da 0 a 129 (l'ufficializzazione di skill e
+  agenti). Il resto del tempo è andato in carta — è ADR-016 (ultimo metro) applicata alla
+  costruzione, non solo ai contenuti.
+- SCOPERTA TECNICA: la finestra di `empire flow` è **scaduta il 26 luglio**. È questa, non la
+  mancanza di motore, la ragione per cui il contatore degli step è a zero da luglio.
+- SCOPERTA TECNICA: `empire forge scan` conta 439 agenti, `empire registry census` ne conta 69.
+  Uno dei due mente, e va deciso quale prima di scrivere 314 contratti d'uscita.
+- CREATO: `PIANO-MAESTRO/30-PIANO-COMPLETAMENTO-IMPERO.md` — sette scaglioni S1..S7 con gate
+  eseguibili, 127-189 ore, dipendenze, tre rischi e l'obiezione più forte con risposta.
+  Correzione strutturale alla task di agosto: la fetta verticale (un workflow vero) viene prima
+  del contratto d'uscita su 439 agenti.
+- MEMORY: `CP-20260905-NUJJ` + ripresa `EMP-MCC4` + voce in `STATO-EMPIRE.md`.
+- CONSIGLI (chiusura): (a) i quattro atti di Max valgono più di quaranta ore di macchina — 45
+  minuti portano `empire controllo` da 2/6 a 5/6 e aprono l'incasso; (b) LANCI non parte prima
+  che un workflow vero abbia chiuso un ciclo, o si aggiunge carta a un'azienda viva al 18%;
+  (c) skill/agenti da potenziare dopo S3: tutti quelli che oggi non dichiarano cosa producono
+  (314 su 439) — la conoscenza dello standard C4 va dentro CONOSCENZA-EMPIRE, perché serve a
+  qualunque agente che debba essere concatenato.

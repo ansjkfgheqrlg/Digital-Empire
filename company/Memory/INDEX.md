@@ -6,6 +6,7 @@
 
 ## Stato corrente
 - [STATO-EMPIRE.md](STATO-EMPIRE.md) — fase roadmap, lavori in corso, RIPRESA DA
+- 🎯 **[DOSSIER 30 — Piano di completamento dell'Impero](../../PIANO-MAESTRO/30-PIANO-COMPLETAMENTO-IMPERO.md)** — quanto è costruita l'azienda (92% carta / **18% viva**, misurato 2026-09-05), i sette scaglioni S1..S7 per chiuderla, 127-189 ore. Ripresa: [EMP-MCC4](riprese/EMP-MCC4.md)
 
 ## Decisioni attive (ADR)
 - [ADR-001](decisions/ADR-001-empire-os-10-ecosistemi.md) — EMPIRE OS: holding di 10 ecosistemi su modello AION GROUP

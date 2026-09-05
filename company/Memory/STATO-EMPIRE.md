@@ -1,3 +1,47 @@
+## 👑 2026-09-05 — QUANTO È COSTRUITA DAVVERO L'AZIENDA: 92% sulla carta, 18% viva — EMP-MCC4
+
+**Ordine di Max:** *«la costruzione di Digital Empire non era finita al 100% — a che percentuale
+eravamo? Cosa ho davanti, in che ordine, con che priorità, e un piano per fare tutto.»*
+
+**Risposta misurata, non ricordata** (tredici comandi lanciati oggi): **l'Impero è costruito al
+92% sulla carta e vivo al 18%.** Il 18% è calcolato su dieci gate a peso uguale, ognuno col suo
+comando — non è una sensazione.
+
+**Il fatto scomodo, detto per primo:** la task madre `TASK-MAX-20260831-IMPERO-OPERATIVO` fu
+emessa il 31 agosto. In cinque giorni **nove misure su undici sono ferme**. L'unica che si è
+mossa davvero è `.claude/agents/` **da 0 a 129** — cioè proprio l'ufficializzazione di skill e
+agenti che Max ricordava, che ha chiuso metà del blocco B2. Gli altri cinque giorni sono andati
+in studio, PDF, brand guidelines, piano LANCI v4, Tesoreria, Ultimo Metro: lavoro vero, ma
+nessuno di quei lavori sposta l'ago dell'azienda viva. **È ADR-016 (ultimo metro) applicata alla
+costruzione:** la carta cresce più veloce del motore.
+
+**I numeri fermi:** C4-uscita mancante **314/439** · step di workflow chiusi **0 su 10** (la
+finestra di `empire flow` è **scaduta il 26 luglio**, ed è per questo che il contatore è a zero)
+· tracce **25 in tutta la vita del sistema** · orfani bloccanti **9.911** · `empire doctor`
+**2 block** · canali pronti **2/6** · `empire estate` **NON FINITO** · libri pubblicati **0**
+(`libri_pubblicati/` contiene solo `.gitkeep`) · **3 credenziali ancora vive sul repo pubblico**.
+Verde: `pytest empire/tests` **236 passed**.
+
+**Consegnato: [dossier 30](../../PIANO-MAESTRO/30-PIANO-COMPLETAMENTO-IMPERO.md)** — sette
+scaglioni S1..S7, gate eseguibili, **127-189 ore**, dipendenze, tre rischi, e l'obiezione più
+forte al piano con la risposta. **Una sola correzione strutturale alla task di agosto:** la
+**fetta verticale** (un workflow vero, ~10 agenti) viene **prima** del contratto d'uscita su 439
+agenti — mettere B1 per primo significa scrivere 314 contratti prima di sapere se lo standard
+funziona.
+
+**LANCI (15° ecosistema) non parte prima di S2:** aggiungerebbe carta sopra un'azienda viva al
+18%. I suoi scaglioni 1-2 (canale d'incasso, zero codice) sono **assorbiti in S1**, quindi la
+parte che produce valore subito non è rimandata.
+
+**RIPRESA DA — S1, quattro atti di Max, 45 minuti, in quest'ordine:** (1) revocare chiave Brevo
+B-020; (2) cambiare password Arena + chiave OpenRouter B-021 (**la OpenRouter è viva adesso**);
+(3) cambiare password Instagram B-023 **poi** rifare il login IG (invertire l'ordine uccide la
+sessione nuova); (4) creare **2 Payment Link Stripe** — è l'atto che trasforma l'azienda in una
+che può incassare. In parallelo, mio: `empire doctor` a 0 bloccanti e i due `verify-*` a verde.
+
+Dettagli: [CP-20260905-NUJJ](checkpoints/CP-20260905-NUJJ.md) · ripresa
+[EMP-MCC4](riprese/EMP-MCC4.md).
+
 ## 🏛️ 2026-09-05 — ECOSISTEMA LANCI: il livello di organizzazione (EMP-URQ7)
 
 **Rilievo di Max, fondato:** la versione 4 non mostrava reparti, gerarchie e workflow. Li avevo
