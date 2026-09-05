@@ -1,0 +1,54 @@
+{
+  "kind": "single-video",
+  "id": "RnNSRF4s9nk",
+  "title": "Ho Creato un Bot Crypto che Fa Trading 24/7 con Claude Code",
+  "url": "https://www.youtube.com/watch?v=RnNSRF4s9nk",
+  "duration_sec": 1417,
+  "uploader": "Giovanni Beggiato",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione"
+    },
+    {
+      "start": 74,
+      "title": "Comprensione del problema: i building blocks del bot"
+    },
+    {
+      "start": 290,
+      "title": "Come usare Claude per decomporre qualsiasi problema"
+    },
+    {
+      "start": 469,
+      "title": "Design del sistema: dalla strategia all'architettura"
+    },
+    {
+      "start": 776,
+      "title": "Visualizzare l'architettura con Excalidraw"
+    },
+    {
+      "start": 1012,
+      "title": "Implementazione con Claude Code in plan mode"
+    },
+    {
+      "start": 1083,
+      "title": "Connessione API a Binance"
+    },
+    {
+      "start": 1200,
+      "title": "Go live: bot in esecuzione su testnet"
+    },
+    {
+      "start": 1377,
+      "title": "Considerazioni conclusive"
+    }
+  ],
+  "subs": [
+    "runs\\max18-v05-RnNSRF4s9nk\\RnNSRF4s9nk.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max18-v05-RnNSRF4s9nk\\RnNSRF4s9nk.webp"
+  ],
+  "ingested_at": "2026-09-05T21:03:39",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=RnNSRF4s9nk"
+}

@@ -1,0 +1,74 @@
+{
+  "kind": "single-video",
+  "id": "JTn5pqm9ecM",
+  "title": "CORSO COMPLETO AGENTI AI: le tecniche che NESSUNO ti spiega (2026)",
+  "url": "https://www.youtube.com/watch?v=JTn5pqm9ecM",
+  "duration_sec": 6620,
+  "uploader": "Giovanni Beggiato",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione e overview del corso"
+    },
+    {
+      "start": 222,
+      "title": "Cos'è un agente AI (architettura e componenti)"
+    },
+    {
+      "start": 654,
+      "title": "DEMO in n8n: costruire un agente ai"
+    },
+    {
+      "start": 1118,
+      "title": "Come gli agenti svolgono le task (finestra di contesto)"
+    },
+    {
+      "start": 1409,
+      "title": "DEMO in Claude Code: come agenti ai svolgono tasks"
+    },
+    {
+      "start": 2423,
+      "title": "Adaptive Guardrails e self-improving prompts"
+    },
+    {
+      "start": 3124,
+      "title": "I quattro livelli di specificità del prompt"
+    },
+    {
+      "start": 3342,
+      "title": "Back prompt engineering (Step Back e Reverse Prompting)"
+    },
+    {
+      "start": 4246,
+      "title": "Prompt Contracts e definizione del successo"
+    },
+    {
+      "start": 4647,
+      "title": "Premortem prompting"
+    },
+    {
+      "start": 4987,
+      "title": "Agent Polling"
+    },
+    {
+      "start": 5673,
+      "title": "Agent Debates"
+    },
+    {
+      "start": 6033,
+      "title": "Broswer Swarm"
+    },
+    {
+      "start": 6336,
+      "title": "Audit"
+    }
+  ],
+  "subs": [
+    "runs\\max18-v06-JTn5pqm9ecM\\JTn5pqm9ecM.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max18-v06-JTn5pqm9ecM\\JTn5pqm9ecM.webp"
+  ],
+  "ingested_at": "2026-09-05T21:04:40",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=JTn5pqm9ecM"
+}

@@ -1,0 +1,1214 @@
+{
+  "run": "max18-v04-140FuW7b9pk",
+  "frame_densi_totali": 141,
+  "frame_unici_da_guardare": 120,
+  "riduzione_percentuale": 14.9,
+  "soglia": 3.0,
+  "intervallo_s": 6.0,
+  "max_gap_s": 30.0,
+  "tenuti_per_presidio": 0,
+  "metodo": "grayscale 64x64, differenza media assoluta vs ultimo frame tenuto, con presidio a tempo (--max-gap)",
+  "nota_copertura": "Nessun frame cancellato: tutti restano in frames/. I frame non elencati sono sotto soglia rispetto al precedente tenuto. ATTENZIONE: 'sotto soglia' NON garantisce 'schermata gia' vista' — la miniatura in scala di grigi confonde pagine diverse a fondo bianco. Il presidio (--max-gap) impedisce che una finestra piu' lunga di max_gap_s resti senza nessun frame guardato.",
+  "frames": [
+    {
+      "frame": "frame-001.png",
+      "indice": 0,
+      "secondi": 0.0,
+      "timestamp": "0:00",
+      "delta": 100.0,
+      "motivo": "apertura",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-002.png",
+      "indice": 1,
+      "secondi": 6.0,
+      "timestamp": "0:06",
+      "delta": 20.24,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-003.png",
+      "indice": 2,
+      "secondi": 12.0,
+      "timestamp": "0:12",
+      "delta": 23.17,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-004.png",
+      "indice": 3,
+      "secondi": 18.0,
+      "timestamp": "0:18",
+      "delta": 25.98,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-005.png",
+      "indice": 4,
+      "secondi": 24.0,
+      "timestamp": "0:24",
+      "delta": 33.7,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-006.png",
+      "indice": 5,
+      "secondi": 30.0,
+      "timestamp": "0:30",
+      "delta": 16.06,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-007.png",
+      "indice": 6,
+      "secondi": 36.0,
+      "timestamp": "0:36",
+      "delta": 10.83,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-008.png",
+      "indice": 7,
+      "secondi": 42.0,
+      "timestamp": "0:42",
+      "delta": 6.0,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-009.png",
+      "indice": 8,
+      "secondi": 48.0,
+      "timestamp": "0:48",
+      "delta": 14.27,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-011.png",
+      "indice": 10,
+      "secondi": 60.0,
+      "timestamp": "1:00",
+      "delta": 13.15,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-012.png",
+      "indice": 11,
+      "secondi": 66.0,
+      "timestamp": "1:06",
+      "delta": 3.52,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-013.png",
+      "indice": 12,
+      "secondi": 72.0,
+      "timestamp": "1:12",
+      "delta": 13.25,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-014.png",
+      "indice": 13,
+      "secondi": 78.0,
+      "timestamp": "1:18",
+      "delta": 19.32,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-015.png",
+      "indice": 14,
+      "secondi": 84.0,
+      "timestamp": "1:24",
+      "delta": 14.35,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-016.png",
+      "indice": 15,
+      "secondi": 90.0,
+      "timestamp": "1:30",
+      "delta": 12.16,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-017.png",
+      "indice": 16,
+      "secondi": 96.0,
+      "timestamp": "1:36",
+      "delta": 16.93,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-018.png",
+      "indice": 17,
+      "secondi": 102.0,
+      "timestamp": "1:42",
+      "delta": 17.85,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-019.png",
+      "indice": 18,
+      "secondi": 108.0,
+      "timestamp": "1:48",
+      "delta": 15.96,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-020.png",
+      "indice": 19,
+      "secondi": 114.0,
+      "timestamp": "1:54",
+      "delta": 6.02,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-021.png",
+      "indice": 20,
+      "secondi": 120.0,
+      "timestamp": "2:00",
+      "delta": 19.2,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-022.png",
+      "indice": 21,
+      "secondi": 126.0,
+      "timestamp": "2:06",
+      "delta": 9.35,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-023.png",
+      "indice": 22,
+      "secondi": 132.0,
+      "timestamp": "2:12",
+      "delta": 27.79,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-024.png",
+      "indice": 23,
+      "secondi": 138.0,
+      "timestamp": "2:18",
+      "delta": 45.15,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-025.png",
+      "indice": 24,
+      "secondi": 144.0,
+      "timestamp": "2:24",
+      "delta": 4.67,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-026.png",
+      "indice": 25,
+      "secondi": 150.0,
+      "timestamp": "2:30",
+      "delta": 7.02,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-028.png",
+      "indice": 27,
+      "secondi": 162.0,
+      "timestamp": "2:42",
+      "delta": 11.99,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-029.png",
+      "indice": 28,
+      "secondi": 168.0,
+      "timestamp": "2:48",
+      "delta": 7.15,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-030.png",
+      "indice": 29,
+      "secondi": 174.0,
+      "timestamp": "2:54",
+      "delta": 3.42,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-031.png",
+      "indice": 30,
+      "secondi": 180.0,
+      "timestamp": "3:00",
+      "delta": 9.46,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-032.png",
+      "indice": 31,
+      "secondi": 186.0,
+      "timestamp": "3:06",
+      "delta": 3.36,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-034.png",
+      "indice": 33,
+      "secondi": 198.0,
+      "timestamp": "3:18",
+      "delta": 47.12,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-035.png",
+      "indice": 34,
+      "secondi": 204.0,
+      "timestamp": "3:24",
+      "delta": 35.51,
+      "motivo": "cambio",
+      "rappresenta_frame": 4,
+      "durata_schermata_s": 24.0
+    },
+    {
+      "frame": "frame-039.png",
+      "indice": 38,
+      "secondi": 228.0,
+      "timestamp": "3:48",
+      "delta": 19.56,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-040.png",
+      "indice": 39,
+      "secondi": 234.0,
+      "timestamp": "3:54",
+      "delta": 18.13,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-041.png",
+      "indice": 40,
+      "secondi": 240.0,
+      "timestamp": "4:00",
+      "delta": 17.52,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-042.png",
+      "indice": 41,
+      "secondi": 246.0,
+      "timestamp": "4:06",
+      "delta": 22.67,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-043.png",
+      "indice": 42,
+      "secondi": 252.0,
+      "timestamp": "4:12",
+      "delta": 8.83,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-044.png",
+      "indice": 43,
+      "secondi": 258.0,
+      "timestamp": "4:18",
+      "delta": 5.09,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-045.png",
+      "indice": 44,
+      "secondi": 264.0,
+      "timestamp": "4:24",
+      "delta": 9.67,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-046.png",
+      "indice": 45,
+      "secondi": 270.0,
+      "timestamp": "4:30",
+      "delta": 23.42,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-047.png",
+      "indice": 46,
+      "secondi": 276.0,
+      "timestamp": "4:36",
+      "delta": 27.76,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-048.png",
+      "indice": 47,
+      "secondi": 282.0,
+      "timestamp": "4:42",
+      "delta": 44.89,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-049.png",
+      "indice": 48,
+      "secondi": 288.0,
+      "timestamp": "4:48",
+      "delta": 35.51,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-050.png",
+      "indice": 49,
+      "secondi": 294.0,
+      "timestamp": "4:54",
+      "delta": 11.23,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-051.png",
+      "indice": 50,
+      "secondi": 300.0,
+      "timestamp": "5:00",
+      "delta": 3.96,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-052.png",
+      "indice": 51,
+      "secondi": 306.0,
+      "timestamp": "5:06",
+      "delta": 6.38,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-053.png",
+      "indice": 52,
+      "secondi": 312.0,
+      "timestamp": "5:12",
+      "delta": 13.42,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-054.png",
+      "indice": 53,
+      "secondi": 318.0,
+      "timestamp": "5:18",
+      "delta": 16.28,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-055.png",
+      "indice": 54,
+      "secondi": 324.0,
+      "timestamp": "5:24",
+      "delta": 4.36,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-056.png",
+      "indice": 55,
+      "secondi": 330.0,
+      "timestamp": "5:30",
+      "delta": 16.9,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-057.png",
+      "indice": 56,
+      "secondi": 336.0,
+      "timestamp": "5:36",
+      "delta": 13.24,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-058.png",
+      "indice": 57,
+      "secondi": 342.0,
+      "timestamp": "5:42",
+      "delta": 7.97,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-059.png",
+      "indice": 58,
+      "secondi": 348.0,
+      "timestamp": "5:48",
+      "delta": 18.75,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-061.png",
+      "indice": 60,
+      "secondi": 360.0,
+      "timestamp": "6:00",
+      "delta": 5.14,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-062.png",
+      "indice": 61,
+      "secondi": 366.0,
+      "timestamp": "6:06",
+      "delta": 17.27,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-063.png",
+      "indice": 62,
+      "secondi": 372.0,
+      "timestamp": "6:12",
+      "delta": 18.87,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-064.png",
+      "indice": 63,
+      "secondi": 378.0,
+      "timestamp": "6:18",
+      "delta": 13.2,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-065.png",
+      "indice": 64,
+      "secondi": 384.0,
+      "timestamp": "6:24",
+      "delta": 18.88,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-067.png",
+      "indice": 66,
+      "secondi": 396.0,
+      "timestamp": "6:36",
+      "delta": 16.75,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-068.png",
+      "indice": 67,
+      "secondi": 402.0,
+      "timestamp": "6:42",
+      "delta": 9.88,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-069.png",
+      "indice": 68,
+      "secondi": 408.0,
+      "timestamp": "6:48",
+      "delta": 16.21,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-070.png",
+      "indice": 69,
+      "secondi": 414.0,
+      "timestamp": "6:54",
+      "delta": 3.02,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-072.png",
+      "indice": 71,
+      "secondi": 426.0,
+      "timestamp": "7:06",
+      "delta": 16.16,
+      "motivo": "cambio",
+      "rappresenta_frame": 3,
+      "durata_schermata_s": 18.0
+    },
+    {
+      "frame": "frame-075.png",
+      "indice": 74,
+      "secondi": 444.0,
+      "timestamp": "7:24",
+      "delta": 3.68,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-076.png",
+      "indice": 75,
+      "secondi": 450.0,
+      "timestamp": "7:30",
+      "delta": 9.71,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-077.png",
+      "indice": 76,
+      "secondi": 456.0,
+      "timestamp": "7:36",
+      "delta": 4.58,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-078.png",
+      "indice": 77,
+      "secondi": 462.0,
+      "timestamp": "7:42",
+      "delta": 4.61,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-079.png",
+      "indice": 78,
+      "secondi": 468.0,
+      "timestamp": "7:48",
+      "delta": 8.14,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-080.png",
+      "indice": 79,
+      "secondi": 474.0,
+      "timestamp": "7:54",
+      "delta": 8.85,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-082.png",
+      "indice": 81,
+      "secondi": 486.0,
+      "timestamp": "8:06",
+      "delta": 15.74,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-084.png",
+      "indice": 83,
+      "secondi": 498.0,
+      "timestamp": "8:18",
+      "delta": 12.95,
+      "motivo": "cambio",
+      "rappresenta_frame": 3,
+      "durata_schermata_s": 18.0
+    },
+    {
+      "frame": "frame-087.png",
+      "indice": 86,
+      "secondi": 516.0,
+      "timestamp": "8:36",
+      "delta": 17.67,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-088.png",
+      "indice": 87,
+      "secondi": 522.0,
+      "timestamp": "8:42",
+      "delta": 28.21,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-089.png",
+      "indice": 88,
+      "secondi": 528.0,
+      "timestamp": "8:48",
+      "delta": 28.55,
+      "motivo": "cambio",
+      "rappresenta_frame": 3,
+      "durata_schermata_s": 18.0
+    },
+    {
+      "frame": "frame-092.png",
+      "indice": 91,
+      "secondi": 546.0,
+      "timestamp": "9:06",
+      "delta": 17.88,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-093.png",
+      "indice": 92,
+      "secondi": 552.0,
+      "timestamp": "9:12",
+      "delta": 18.32,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-095.png",
+      "indice": 94,
+      "secondi": 564.0,
+      "timestamp": "9:24",
+      "delta": 7.5,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-097.png",
+      "indice": 96,
+      "secondi": 576.0,
+      "timestamp": "9:36",
+      "delta": 41.41,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-098.png",
+      "indice": 97,
+      "secondi": 582.0,
+      "timestamp": "9:42",
+      "delta": 37.01,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-100.png",
+      "indice": 99,
+      "secondi": 594.0,
+      "timestamp": "9:54",
+      "delta": 3.28,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-101.png",
+      "indice": 100,
+      "secondi": 600.0,
+      "timestamp": "10:00",
+      "delta": 13.22,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-102.png",
+      "indice": 101,
+      "secondi": 606.0,
+      "timestamp": "10:06",
+      "delta": 9.84,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-103.png",
+      "indice": 102,
+      "secondi": 612.0,
+      "timestamp": "10:12",
+      "delta": 19.99,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-104.png",
+      "indice": 103,
+      "secondi": 618.0,
+      "timestamp": "10:18",
+      "delta": 3.15,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-105.png",
+      "indice": 104,
+      "secondi": 624.0,
+      "timestamp": "10:24",
+      "delta": 14.46,
+      "motivo": "cambio",
+      "rappresenta_frame": 2,
+      "durata_schermata_s": 12.0
+    },
+    {
+      "frame": "frame-107.png",
+      "indice": 106,
+      "secondi": 636.0,
+      "timestamp": "10:36",
+      "delta": 15.67,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-108.png",
+      "indice": 107,
+      "secondi": 642.0,
+      "timestamp": "10:42",
+      "delta": 13.27,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-109.png",
+      "indice": 108,
+      "secondi": 648.0,
+      "timestamp": "10:48",
+      "delta": 14.48,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-110.png",
+      "indice": 109,
+      "secondi": 654.0,
+      "timestamp": "10:54",
+      "delta": 18.1,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-111.png",
+      "indice": 110,
+      "secondi": 660.0,
+      "timestamp": "11:00",
+      "delta": 17.41,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-112.png",
+      "indice": 111,
+      "secondi": 666.0,
+      "timestamp": "11:06",
+      "delta": 6.84,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-113.png",
+      "indice": 112,
+      "secondi": 672.0,
+      "timestamp": "11:12",
+      "delta": 20.42,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-114.png",
+      "indice": 113,
+      "secondi": 678.0,
+      "timestamp": "11:18",
+      "delta": 4.19,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-115.png",
+      "indice": 114,
+      "secondi": 684.0,
+      "timestamp": "11:24",
+      "delta": 3.73,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-116.png",
+      "indice": 115,
+      "secondi": 690.0,
+      "timestamp": "11:30",
+      "delta": 34.55,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-117.png",
+      "indice": 116,
+      "secondi": 696.0,
+      "timestamp": "11:36",
+      "delta": 38.28,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-118.png",
+      "indice": 117,
+      "secondi": 702.0,
+      "timestamp": "11:42",
+      "delta": 10.71,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-119.png",
+      "indice": 118,
+      "secondi": 708.0,
+      "timestamp": "11:48",
+      "delta": 13.46,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-120.png",
+      "indice": 119,
+      "secondi": 714.0,
+      "timestamp": "11:54",
+      "delta": 8.4,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-121.png",
+      "indice": 120,
+      "secondi": 720.0,
+      "timestamp": "12:00",
+      "delta": 6.16,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-122.png",
+      "indice": 121,
+      "secondi": 726.0,
+      "timestamp": "12:06",
+      "delta": 9.16,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-123.png",
+      "indice": 122,
+      "secondi": 732.0,
+      "timestamp": "12:12",
+      "delta": 19.25,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-124.png",
+      "indice": 123,
+      "secondi": 738.0,
+      "timestamp": "12:18",
+      "delta": 4.72,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-125.png",
+      "indice": 124,
+      "secondi": 744.0,
+      "timestamp": "12:24",
+      "delta": 20.93,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-126.png",
+      "indice": 125,
+      "secondi": 750.0,
+      "timestamp": "12:30",
+      "delta": 7.59,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-127.png",
+      "indice": 126,
+      "secondi": 756.0,
+      "timestamp": "12:36",
+      "delta": 3.01,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-128.png",
+      "indice": 127,
+      "secondi": 762.0,
+      "timestamp": "12:42",
+      "delta": 27.21,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-129.png",
+      "indice": 128,
+      "secondi": 768.0,
+      "timestamp": "12:48",
+      "delta": 19.96,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-130.png",
+      "indice": 129,
+      "secondi": 774.0,
+      "timestamp": "12:54",
+      "delta": 11.01,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-131.png",
+      "indice": 130,
+      "secondi": 780.0,
+      "timestamp": "13:00",
+      "delta": 24.88,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-132.png",
+      "indice": 131,
+      "secondi": 786.0,
+      "timestamp": "13:06",
+      "delta": 6.94,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-133.png",
+      "indice": 132,
+      "secondi": 792.0,
+      "timestamp": "13:12",
+      "delta": 7.11,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-134.png",
+      "indice": 133,
+      "secondi": 798.0,
+      "timestamp": "13:18",
+      "delta": 15.7,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-135.png",
+      "indice": 134,
+      "secondi": 804.0,
+      "timestamp": "13:24",
+      "delta": 4.05,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-136.png",
+      "indice": 135,
+      "secondi": 810.0,
+      "timestamp": "13:30",
+      "delta": 13.34,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-137.png",
+      "indice": 136,
+      "secondi": 816.0,
+      "timestamp": "13:36",
+      "delta": 4.75,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-138.png",
+      "indice": 137,
+      "secondi": 822.0,
+      "timestamp": "13:42",
+      "delta": 20.11,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-139.png",
+      "indice": 138,
+      "secondi": 828.0,
+      "timestamp": "13:48",
+      "delta": 20.75,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-140.png",
+      "indice": 139,
+      "secondi": 834.0,
+      "timestamp": "13:54",
+      "delta": 4.49,
+      "motivo": "cambio",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    },
+    {
+      "frame": "frame-141.png",
+      "indice": 140,
+      "secondi": 840.0,
+      "timestamp": "14:00",
+      "delta": 1.36,
+      "motivo": "chiusura",
+      "rappresenta_frame": 1,
+      "durata_schermata_s": 6.0
+    }
+  ]
+}

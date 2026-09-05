@@ -1,0 +1,90 @@
+{
+  "kind": "single-video",
+  "id": "DI5aWJiFAt8",
+  "title": "CLAUDE COWORK CORSO COMPLETO: Da ZERO ad Impiegato AI (in 2 h)",
+  "url": "https://www.youtube.com/watch?v=DI5aWJiFAt8",
+  "duration_sec": 6811,
+  "uploader": "Giovanni Beggiato",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione"
+    },
+    {
+      "start": 36,
+      "title": "Aspettative del corso"
+    },
+    {
+      "start": 158,
+      "title": "Setup Claude Cowork"
+    },
+    {
+      "start": 272,
+      "title": "Differenza Claude Chat vs Claude Code vs Claude Cowork"
+    },
+    {
+      "start": 608,
+      "title": "Demo #1: Report per Direttore Vendite"
+    },
+    {
+      "start": 1234,
+      "title": "Come pensare con Cowork"
+    },
+    {
+      "start": 1472,
+      "title": "Ruolo della formazione AI in azienda"
+    },
+    {
+      "start": 1805,
+      "title": "Walkthrough della piattaforma"
+    },
+    {
+      "start": 1938,
+      "title": "Come importare i dati da altri LLM in Claude"
+    },
+    {
+      "start": 2085,
+      "title": "Demo #2: Riordinare fatture + best practices per prompt"
+    },
+    {
+      "start": 2520,
+      "title": "Claude Projects e Local Instructions"
+    },
+    {
+      "start": 3065,
+      "title": "Global Project Instructions"
+    },
+    {
+      "start": 3322,
+      "title": "Parallelismo tra Project Instructions & CLAUDE.md"
+    },
+    {
+      "start": 3520,
+      "title": "Demo #3: Proposta Commerciale"
+    },
+    {
+      "start": 3997,
+      "title": "Subagents (Pipeline vs Paralleli)"
+    },
+    {
+      "start": 4586,
+      "title": "Skills"
+    },
+    {
+      "start": 4800,
+      "title": "Demo #4: Riadattare Powerpoint con brand guidelines"
+    },
+    {
+      "start": 5340,
+      "title": "Commandi (Task schedulate o programmate)"
+    }
+  ],
+  "subs": [
+    "runs\\max18-v08-DI5aWJiFAt8\\DI5aWJiFAt8.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max18-v08-DI5aWJiFAt8\\DI5aWJiFAt8.webp"
+  ],
+  "ingested_at": "2026-09-05T21:14:17",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=DI5aWJiFAt8"
+}

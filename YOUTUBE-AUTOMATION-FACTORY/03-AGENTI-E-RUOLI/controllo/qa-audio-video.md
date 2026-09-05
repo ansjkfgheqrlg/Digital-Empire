@@ -22,7 +22,8 @@ Sei l'ispettore di qualità. Verifichi che il video MP4 sia perfetto per la pubb
 
 ## 3. Criteri (checklist bloccante)
 - [ ] **Nitidezza Audio:** Voce chiara e priva di fruscii.
-- [ ] **Bilanciamento Volumi:** Musica di sottofondo presente ma non copre mai la voce narrante.
+- [ ] **Bilanciamento Volumi:** ⚠️ **CRITERIO SOSPESO — DA ACCERTARE** (A4-L04-04, vedi §9). Non
+      emettere FAIL su questo punto finché non è accertato se i nostri video contengono musica.
 - [ ] **Correttezza Pronuncia:** Nessun errore fonetico macroscopico (nomi propri o termini stranieri storpiati).
 - [ ] **Sincronizzazione Sottotitoli:** I sottotitoli a schermo compaiono esattamente in sincronia con il parlato.
 - [ ] **Risoluzione di Esportazione:** Il file è almeno 1080p in formato MP4 (no artefatti grafici o compressione visibile).
@@ -66,3 +67,33 @@ riusate. Se una correzione non entra nel lessico, la stessa parola verrà sbagli
 prossimo video: è quello che è successo finora.
 
 Nel rapporto di QA dichiara sempre **quante righe hai aggiunto al lessico** (anche zero).
+
+---
+
+## 9. Un gate bloccante controlla solo ciò che esiste (A4-L04-04 · 2026-09-05)
+
+Il criterio **«Bilanciamento Volumi»** del §3 è **sospeso**, e va detto perché.
+
+Quel criterio nasce da `fliki-produzione.md` e `fliki-avanzato.md`, due schede scritte per il
+**montaggio a mano dentro l'interfaccia di Fliki**, dove la musica si sceglie da un pannello e il
+volume si regola con uno slider. La nostra fabbrica non monta a mano: `fliki_client.py` manda un
+payload all'API con `shouldExport: True`, e **in quel payload non c'è alcun campo musica**
+(cercati `backgroundMusic`, `musicId`, `audioTrack` in `02-AUTOMAZIONI-E-SCRIPTS/`: zero
+occorrenze, verificato il 2026-09-05).
+
+Restano due possibilità, e **non so quale sia vera**:
+
+1. Fliki aggiunge una traccia musicale di default → allora la stiamo **subendo**, non scegliendo,
+   e il criterio è reale ma nessuno può correggerlo dalla nostra catena;
+2. non c'è musica → il criterio **non può fallire mai**, e un controllo che non può fallire non è
+   un controllo: è una formula che fa sembrare il gate più severo di quanto sia.
+
+**Verifica assegnata al gate di categoria A4:** ascoltare un MP4 già prodotto
+(`06-DASHBOARD-E-METRICHE/video-generati/`) e stabilire quale delle due è vera. Da quella
+risposta il criterio si chiude: o viene tolto, o viene riscritto con l'azione correttiva che la
+nostra catena può davvero eseguire.
+
+**Regola generale, che vale oltre questo caso:** se sei un gate bloccante e trovi in checklist un
+criterio che la catena non può né produrre né correggere, **non spuntarlo e non bocciare**:
+dichiaralo sospeso nel rapporto, e chiedi che venga accertato. Un FAIL su una cosa inesistente
+ferma la produzione per niente; un PASS dato senza guardare insegna a fidarsi di un gate cieco.

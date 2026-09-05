@@ -1,0 +1,68 @@
+{
+  "kind": "single-video",
+  "id": "NmoOZVTrTXA",
+  "title": "AGENTI VOCALI IN CLAUDE CODE: Costruisci e Vendi",
+  "url": "https://www.youtube.com/watch?v=NmoOZVTrTXA",
+  "duration_sec": 7991,
+  "uploader": "Giovanni Beggiato",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione"
+    },
+    {
+      "start": 28,
+      "title": "Argomenti del corso"
+    },
+    {
+      "start": 110,
+      "title": "Piattaforme per agenti vocali: Vapi & Retell"
+    },
+    {
+      "start": 237,
+      "title": "Anatomia di un agente vocale + parte pratica"
+    },
+    {
+      "start": 818,
+      "title": "Struttura di un system prompt + File Notion"
+    },
+    {
+      "start": 1518,
+      "title": "Le 4 tipologie di Tool"
+    },
+    {
+      "start": 1955,
+      "title": "Le 4 tipologie di inserimento della Knowledge Base aziendale"
+    },
+    {
+      "start": 2749,
+      "title": "Come controllare la Latenza (latency tuning)"
+    },
+    {
+      "start": 3224,
+      "title": "Dentro a Claude Code ed n8n"
+    },
+    {
+      "start": 3464,
+      "title": "Setup in Claude Code ed i 4 file.md"
+    },
+    {
+      "start": 5754,
+      "title": "Creazione dell'AI Receptionist in Claude Code (con n8n workflows)"
+    },
+    {
+      "start": 7550,
+      "title": "Offerte per aziende (le 4 soluzioni che raccomando)"
+    },
+    {
+      "start": 7960,
+      "title": "Come lavorare assieme"
+    }
+  ],
+  "subs": [],
+  "thumbnails": [
+    "runs\\max18-v09-NmoOZVTrTXA\\NmoOZVTrTXA.webp"
+  ],
+  "ingested_at": "2026-09-05T21:17:33",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=NmoOZVTrTXA"
+}

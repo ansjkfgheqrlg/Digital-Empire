@@ -1,7 +1,7 @@
 # EMP-URQ7 — Piano ecosistema LANCI: versione 4 completa e consegnata
 
 - **Aperto:** 2026-09-05 · **Task:** TASK-LANCI-ECO-W2 · **Stato:** ✅ **CHIUSO** — versione 4 consegnata per intero
-- **Checkpoint di chiusura:** [CP-20260905-017](../checkpoints/CP-20260905-017.md)
+- **Checkpoint di chiusura:** [CP-20260905-017](../checkpoints/CP-20260905-017.md) · **livello di organizzazione:** [CP-20260905-019](../checkpoints/CP-20260905-019.md)
 - **Continua:** [EMP-ECGA](EMP-ECGA.md) — che dichiarava il piano chiuso. **Non lo è più:**
   Max ha ordinato revisione totale e riscrittura ultra-architettata.
 

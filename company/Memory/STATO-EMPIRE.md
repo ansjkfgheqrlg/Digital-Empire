@@ -1,3 +1,33 @@
+## 🏛️ 2026-09-05 — ECOSISTEMA LANCI: il livello di organizzazione (EMP-URQ7)
+
+**Rilievo di Max, fondato:** la versione 4 non mostrava reparti, gerarchie e workflow. Li avevo
+tolti insieme al difetto che li rendeva etichette, consegnando qualcosa di **più rigoroso ma meno
+architettato**. Max ha scelto l'opzione A: ricostruire quel livello sopra l'impianto nuovo.
+
+**Prima i dati, poi la prosa.** Il registro acquisisce **12 reparti** (ancorati agli artefatti che
+possiedono), **5 livelli di comando**, **10 workflow per 42 fasi** (ognuna con agente, ingresso,
+uscita, criterio di uscita e modi di fallimento), **15 passaggi di consegne** con criterio di
+accettazione, **12 comandi** con il livello che può invocarli.
+
+**Il validatore passa da 253 a 832 controlli**, con dieci invarianti nuovi (INV-13..INV-22).
+**Undici prove rosse**, tutte bloccano: proprietà doppia, capo estraneo, ciclo di comando, giudice
+sotto un operativo, doppio produttore, artefatto orfano, fase senza criterio, agente di un altro
+reparto, passaggio senza criterio.
+
+**INV-22 è nato da una prova sbagliata:** aveva colpito il campo `produce` di un agente invece che
+di un workflow, e nessun controllo se n'era accorto. Mancava davvero. L'errore della prova ha
+trovato il buco.
+
+**Consegnati:** `07-REPARTI-E-GERARCHIA.md` (563 righe) e `08-WORKFLOW.md` (637 righe). I due doom
+bot che li scrivevano sono caduti per un guasto di rete: l'antidoto (creare il file subito,
+risalvarlo a ogni sezione) ha salvato 446 righe, completate a mano.
+
+**⚠️ Due collisioni di numerazione con l'altra sessione, nello stesso giorno:** ADR-022 occupato
+dallo studio AI TUBE PRO (il nostro è **ADR-023**), CP-018 occupato dal gate del battito (questo è
+il **019**). Verificare sempre il numero libero prima di scrivere.
+
+Commit `9036d18e` e `16c9b985`. Dettagli: [CP-20260905-019](checkpoints/CP-20260905-019.md).
+
 ## 🚀 2026-09-05 — ECOSISTEMA LANCI: il piano passa alla VERSIONE 4 (EMP-URQ7)
 
 **Ordine di Max:** revisione totale e riscrittura — *"l'architettura deve essere molto piu'

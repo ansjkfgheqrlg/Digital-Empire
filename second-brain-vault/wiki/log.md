@@ -1,5 +1,20 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-05 (EMPERATOR — LANCI: reparti, gerarchia e workflow)
+- INGEST: nessuno. Costruzione del livello di organizzazione, su rilievo di Max: la v4 non
+  mostrava reparti ne' gerarchie ne' workflow.
+- REGISTRO ESTESO: 12 reparti ancorati agli artefatti · 5 livelli di comando · 10 workflow per
+  42 fasi · 15 passaggi di consegne · 12 comandi. Da 764 a ~1.900 righe.
+- VALIDATORE: da 253 a **832 controlli**, dieci invarianti nuovi (INV-13..INV-22).
+- PROVE ROSSE: 11 casi costruiti apposta, tutti bloccano. INV-22 e' nato da una prova MAL
+  costruita che ha rivelato un buco vero: il campo `produce` di un agente poteva divergere da chi
+  produce davvero l'artefatto, e nessun controllo se ne accorgeva.
+- CREATI: `07-REPARTI-E-GERARCHIA.md` (563 righe) e `08-WORKFLOW.md` (637 righe).
+- LEZIONE OPERATIVA: due doom bot caduti per guasto di rete a lavoro iniziato; l'antidoto
+  "crea il file subito e risalvalo a ogni sezione" ha salvato 446 righe complessive.
+- NUMERAZIONE: due collisioni con l'altra sessione nello stesso giorno (ADR-022 -> ADR-023,
+  CP-018 -> CP-019). Il numero si verifica, non si assume.
+
 ## 2026-09-05 (EMPERATOR — ecosistema LANCI: il piano passa alla versione 4)
 - INGEST: nessuno. Revisione totale e riscrittura, su ordine di Max: *"l'architettura deve essere
   molto piu' architettata, a livello chirurgico"*. Era la seconda volta che lo chiedeva.
