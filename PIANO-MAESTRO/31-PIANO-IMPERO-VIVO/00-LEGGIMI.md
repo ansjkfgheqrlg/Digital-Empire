@@ -162,10 +162,35 @@ Ogni attivazione è dichiarata per iscritto (ADR-015). Questa tabella si aggiorn
 
 | Data | Grado | Nome | Compito | Uscita | Esito |
 |---|---|---|---|---|---|
-| 2026-09-06 | DOOM BOT (opus) | CENSIMENTO-VIVO | cosa deve diventare vivo, nodo per nodo | `dati/censimento-01-vivo.md` | 🔄 |
+| 2026-09-06 | DOOM BOT (opus) | CENSIMENTO-VIVO | cosa deve diventare vivo, nodo per nodo | `dati/censimento-01-vivo.md` | ❌ **CADUTO** (rete) — 12 righe salvate su ~500 |
 | 2026-09-06 | DOOM BOT (opus) | CENSIMENTO-COLLEGAMENTI | chi parla con chi, oggi e in progetto | `dati/censimento-02-collegamenti.md` | 🔄 |
-| 2026-09-06 | DOOM BOT (opus) | CENSIMENTO-FORZE | popolazione agenti, contratto C4, regolamento | `dati/censimento-03-forze.md` | 🔄 |
+| 2026-09-06 | DOOM BOT (opus) | CENSIMENTO-FORZE | popolazione agenti, contratto C4, regolamento | `dati/censimento-03-forze.md` | ❌ **CADUTO** (ECONNRESET) — 3 righe salvate |
 | 2026-09-06 | DOOM BOT (opus) | CENSIMENTO-MOTORI | tutto ciò che gira fuori da `company/` | `dati/censimento-04-motori.md` | 🔄 |
+| 2026-09-06 | DOOM BOT (opus) | 01A-ECOSISTEMI | i 15 ecosistemi, scheda per scheda | `dati/censimento-01a-ecosistemi.md` | 🔄 |
+| 2026-09-06 | DOOM BOT (opus) | 01B-ORGANI | Board, Guilds, Sentinelle, MAXIMILIAN, Mandato, Ispettorato | `dati/censimento-01b-organi.md` | 🔄 |
+| 2026-09-06 | DOOM BOT (opus) | 03A-POPOLAZIONE | i due censimenti agenti, la specifica C1..C6, le ondate | `dati/censimento-03a-popolazione.md` | 🔄 |
+| 2026-09-06 | DOOM BOT (opus) | 03B-REGOLAMENTO | cadute reali → regolamento, addestramento, modulo d'ingaggio | `dati/censimento-03b-regolamento-forze.md` | 🔄 |
+
+### ⚠️ Prima lezione del piano, pagata sul campo (2026-09-06)
+
+Due doom bot su quattro sono caduti per un guasto di rete (`server_error` e `ECONNRESET`)
+**dopo aver raccolto tutti i dati e prima di averne scritto uno**. Il file di uscita c'era —
+l'avevano creato come ordinato — ma conteneva solo l'intestazione: 12 righe su circa 500, e 3.
+Tutto il lavoro perso.
+
+**L'ordine era giusto e insufficiente.** Dicevo *«crea subito il file e riscrivilo a ogni
+sezione completata»*: un agente che considera «una sezione» l'intero censimento la rispetta
+alla lettera e muore con tutto in mano.
+
+**Regola corretta, ora in vigore per ogni forza schierata:**
+> **Non tenere mai in testa più di una scheda.** Finita una scheda — un ecosistema, un organo,
+> una sezione — **si scrive su disco immediatamente**, poi si passa alla successiva. Se la
+> forza cade alla settima, le sei precedenti devono essere già salvate.
+
+E, insieme: **perimetri più piccoli.** I due caduti avevano un compito grande; sono stati
+rischierati in quattro, ciascuno con meno terreno. Un doom bot con meno da tenere in mano cade
+meno, e quando cade perde meno.
+
 
 ---
 

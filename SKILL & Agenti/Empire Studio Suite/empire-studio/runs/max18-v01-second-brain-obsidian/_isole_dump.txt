@@ -1,0 +1,228 @@
+======================================================================
+ISOLA 1 (9 atomi)
+======================================================================
+[KA-130] tipo=procedura fonte=RnoC5IlOUhs#96:54 (blocco Bash nella chat Antigravity, scena 241) + voce 96:54-97:24
+  ancora: cd "/Users/giovannibeggiato/Desktop/aurora cervello" && python3 genera_llms.py && echo "=== llms.txt ===" && cat llms.txt
+  Per rigenerare e verificare al volo l'indice llms.txt si usa un unico comando bash concatenato: entra nella cartella del vault, esegue lo script generatore, poi stampa il file appena scritto con un separatore visivo. L'output conferma quante note e quante cartelle sono state indicizzate (30 note in 9 cartelle) prima ancora di aprire il file.
+  rel: precede->KA-131
+
+[KA-131] tipo=struttura fonte=RnoC5IlOUhs#97:24 (editor llms.txt aperto per intero, scena 242)
+  ancora: # Aurora Sistemi — llms.txt > Indice-porta per AI. File DERIVATO: rigenerato da genera_llms.py, non modificare a mano.
+  Contenuto integrale di llms.txt come mostrato in editor (righe tagliate a destra dal bordo del frame dove indicato nella fonte, dichiarato): intestazione con nota che il file è DERIVATO e non va modificato a mano, poi una sezione per ognuna delle 9 cartelle di contenuto (self, areas, projects, concepts, docs, entities e le altre), ciascuna con la sua nota elencata nel formato '- [[nome-file]] — summary'. Sezione self: 1 nota (self-identita-aurora). Sezione areas: 6 note (area-customer-success, area-finance-operations, area-marketing, area-people-cultura, area-prodotto-engineering, area-vendite). Sezione projects: 1 nota (progetto-arr-5m-2026). Sezione concepts: 3 note (concetto-arr, concetto-churn, concetto-efficienza-energetica). Sezione docs: 1 nota (doc-onboarding-cliente). Sezione entities: 11 note (2 clienti, 1 cliente aggiuntivo, 4 persone, 3 prodotti, 1 strumento).
+  rel: esempio-di->KA-132, precede->KA-130
+
+[KA-132] tipo=regola fonte=RnoC5IlOUhs#97:42 (risposta completa dell'agente in chat, scena 243)
+  ancora: `sources/` e `workspace/` esclusi; file `_index-` esclusi.
+  Spiegazione integrale (letta a schermo, non riassunta) di cosa contiene e cosa esclude llms.txt: le 9 cartelle di contenuto nell'ordine indicato (self → outputs), ognuna con la sua riga di intestazione '## <cartella>'; 30 note elencate come '- [[nome-file]] — summary', con il summary preso SOLO dal frontmatter (le virgolette del template vengono ripulite); sources/ e workspace/ esclusi; file _index- esclusi.
+  rel: motiva->KA-131
+
+[KA-133] tipo=procedura fonte=RnoC5IlOUhs#97:42-97:48 (scene 243/245, testo identico ripetuto)
+  ancora: Lo script `genera_llms.py` riscrive `llms.txt` da capo leggendo i frontmatter correnti. Quando aggiungi o modifichi note, rilancialo e l'indice si aggiorna da s
+  Come si rigenera llms.txt (letto per intero): è derivato, non si tocca a mano. Comando: python3 genera_llms.py. Lo script genera_llms.py riscrive llms.txt da capo leggendo i frontmatter correnti; quando si aggiunge o modifica una nota, va rilanciato e l'indice si aggiorna da solo. Nota di coerenza esplicita: il generatore e il gate di qualità condividono le stesse assunzioni (stesse 9 cartelle, stesso parsing di frontmatter, esclusione _index), così quello che passa il gate è esattamente ciò che finisce in llms.txt. Proposta del sistema: incatenare i due in un unico comando che lancia gate_qualita.py e, solo se esce 0, rigenera llms.txt — utile come hook pre-commit; se non si è in un repo git, l'alternativa offerta è un piccolo script build.sh.
+  rel: esempio-di->KA-130
+
+[KA-134] tipo=principio fonte=RnoC5IlOUhs#97:48 (voce, scena 243)
+  ancora: Non è una best practice, è una raccomandazione dello zio Jo, vedete voi cosa farne.
+  L'autore dichiara esplicitamente che llms.txt non è uno standard di settore ma un consiglio personale suo: lo trova utile a livello di efficienza token, ma invita ognuno a valutare se adottarlo o meno per il proprio cervello aziendale.
+  rel: motiva->KA-133
+
+[KA-136] tipo=principio fonte=RnoC5IlOUhs#99:18 (risposta dell'agente prima di scrivere il file, scena 248)
+  ancora: Come `llms.txt`, anche questa è una fotografia **derivata**: creo un generatore e lo eseguo, così i numeri sono calcolati dal grafo reale e si rigenerano quando
+  Lo showcase, come llms.txt, è dichiarato una fotografia DERIVATA: invece di scrivere i numeri a mano, si crea un generatore (genera_showcase.py) e lo si esegue, così i numeri sono calcolati dal grafo reale e si rigenerano automaticamente quando il cervello cambia — evitando che una fotografia commerciale diventi silenziosamente falsa nel tempo.
+  rel: esempio-di->KA-134
+
+[KA-139] tipo=regola fonte=RnoC5IlOUhs#99:30 (blocco di nota in cima a showcase.md, scena 249)
+  ancora: Scope: le 11 cartelle meno sources/ e workspace/ (9 cartelle). L'indice madre alla radice resta fuori.
+  Regola di scope dichiarata nel corpo stesso di showcase.md: lo showcase copre le 11 cartelle del vault meno sources/ e workspace/ (quindi 9 cartelle), e l'indice madre alla radice del vault (_index-aurora.md) resta fuori dal conteggio — la stessa convenzione di esclusione già vista in llms.txt e nel gate di qualità.
+  rel: esempio-di->KA-132
+
+[KA-142] tipo=comando fonte=RnoC5IlOUhs#97:48 (pagina Notion 'Company Brain — Tutti i prompt', scena 244)
+  ancora: Correggi le note che hai appena segnalato, ar
+  Prompt 6 del canovaccio Notion — 'Correggi e ripeti finché esce' (titolo tagliato dal bordo del frame nella fonte): sottotitolo 'Il ciclo correttivo: l'AI sistema ciò che hai segnalato, ril[egge]...'. Corpo (tagliato a destra, dichiarato nella fonte): 'Correggi le note che hai appena segnalato, ar[...] frontmatter completo, massimo 300 righe, alm[eno]... link rotti, zero orfani, un solo grappolo con[...] mostrami il nuovo referto. Ripeti finché no[n]...'.
+  rel: precede->KA-143
+
+[KA-143] tipo=comando fonte=RnoC5IlOUhs#100:24 (pagina Notion, scena 250)
+  ancora: Genera il file llms.txt nella radice del vault: e' l'indi
+  Prompt 7 del canovaccio Notion — 'Genera l'indice per la AI (llms.txt)', sottotitolo 'La porta d'ingresso per le AI: un indice derivato, rigenerato dal frontmatter'. Corpo, ricostruito unendo la versione più estesa vista nella scena 250 (righe tagliate a destra dal bordo, dichiarato): 'Genera il file llms.txt nella radice del vault: e' l'indi[ce]... Per ogni cartella di contenuto (self, areas, projects, co[ncepts,] data, code, outputs) elenca le sue note nel formato "- [[...]]"... prendendo il summary dal frontmatter di ogni nota. In cim[a]... intestazione per ogni cartella. NON includere sources/ e [workspace/]... niente: title e summary vengono SOLO dal frontmatter dell[a nota]... Ricordati che llms.txt e' DERIVATO: si rigenera da capo, [...]'. Corrisponde parola per parola al prompt eseguito in azione nelle scene 239/242.
+  rel: precede->KA-131, precede->KA-132
+
+======================================================================
+ISOLA 2 (8 atomi)
+======================================================================
+[KA-148] tipo=comando fonte=RnoC5IlOUhs#100:30 (pagina Notion, scena 251)
+  ancora: Rispondi alla mia domanda usando SOLO il contenuto di queste note.
+  Prompt 10 del canovaccio Notion — 'Interroga il cervello (a 28 note, senza RAG)', sottotitolo 'Carichi tutte le note e fai una domanda da imprenditore. Regola d'oro: rispondi solo con le note, cita il file, se non c'è dillo.' Testo integrale: 'Ti do l'intero cervello di Aurora Sistemi: tutte le note markdown del vault, con il loro frontmatter. Rispondi alla mia domanda usando SOLO il contenuto di queste note. - Cita sempre il nome del file da cui prendi ogni informazione. - Se la risposta non è presente nelle note, scrivi esattamente: "Non presente nel cervello." Non inventare, non stimare, non dedurre. Domanda: qual è l'ARR di Aurora e come è cambiato l'organico negli ultimi tre anni?'
+  rel: precede->KA-158, precede->KA-159
+
+[KA-158] tipo=procedura fonte=RnoC5IlOUhs#112:30 (scena 280)
+  ancora: A fine 2025 l'ARR di Aurora è **€ 3.840.000**, in crescita del **+24% (+€ 740.000)** rispetto ai € 3.100.000 di inizio 2025. (file: `kpi-2025-arr.md`; confermat
+  Demo live del Prompt 10: l'agente, prima di rispondere, esegue un comando bash di ricerca testuale multi-keyword nel vault (grep -rin -e "organico" -e "persone" -e "dipendent" -e "team" -e "cresci" -e "fonda[to]") per trovare informazioni sull'organico storico, poi risponde citando sempre il file sorgente: per l'ARR cita kpi-2025-arr.md (confermato anche in area-finance-operations.md); per l'organico, non trovando uno storico triennale, applica la regola d'oro e dichiara l'assenza del dato.
+  rel: esempio-di->KA-148, precede->KA-159
+
+[KA-159] tipo=regola fonte=RnoC5IlOUhs#112:30 (scena 280)
+  ancora: Non presente nel cervello." "Le note riportano solo l'organico attuale (**47 persone** su due sedi Milano e Bologna) e il piano di **+6 assunzioni** approvato p
+  Applicazione concreta della regola d'oro del Prompt 10 nella demo: alla domanda su come è cambiato l'organico negli ultimi tre anni, l'agente risponde testualmente 'Non presente nel cervello.', spiegando che le note riportano solo l'organico attuale (47 persone su due sedi Milano e Bologna) e il piano di +6 assunzioni approvato per il 2026 (file area-people-cultura.md, canon.md), senza alcuno storico sui tre anni precedenti — nessuna stima, nessuna invenzione.
+  rel: esempio-di->KA-148, parte-di->KA-166
+
+[KA-160] tipo=comando fonte=RnoC5IlOUhs#112:54 e #113:06 (pagina Notion scena 282, incollato in chat scena 284)
+  ancora: Elenca SOLO i clienti che hanno DAVVERO tutti e due i prodotti. Se un cliente ne ha uno solo, lascialo fuori.
+  Prompt 11 del canovaccio Notion — 'La domanda di incrocio (dove le cartelle si arrendono)', sottotitolo 'Due fatti in due note diverse: la risposta si costruisce camminando sui collegamenti.' Testo integrale: 'Rispondi usando SOLO le note del cervello di Aurora. - Cita sempre il nome del file da cui prendi ogni informazione. - Elenca SOLO i clienti che hanno DAVVERO tutti e due i prodotti. Se un cliente ne ha uno solo, lascialo fuori. - Se la risposta non è nel cervello, scrivi: "Non presente nel cervello." Domanda: quali clienti hanno attivato sia Aurora Cloud sia Aurora Care, e chi li segue nel customer success?'
+  rel: precede->KA-166, precede->KA-167
+
+[KA-164] tipo=struttura fonte=RnoC5IlOUhs#114:18 (editor, tab prodotto-aurora-access.md, scena 286)
+  ancora: title: "Prodotto — Aurora Access"
+  Nota atomica reale prodotto-aurora-access.md, frontmatter e corpo trascritti per intero: title 'Prodotto — Aurora Access'; summary 'Modulo di controllo accessi (badge, fasce orarie, videosorveglianza) per gestire la sicurezza di molte sedi da un unico punto.'; tags [entities, prodotto, aurora-access]; status active; created/updated 2026-06-10; related [[prodotto-aurora-core]], [[area-prodotto-engineering]], [[area-customer-success]]. Corpo: modulo che si appoggia a [[prodotto-aurora-core]] per il controllo degli accessi agli edifici (badge, permessi per fasce orarie, integrazione con la videosorveglianza), pensato per chi gestisce la sicurezza di molte sedi da un unico punto. Costruito da [[area-prodotto-engineering]]. Upsell dell'anno 2025: estensione a tutte le filiali di Banca Adriatica, seguita da [[area-customer-success]]. Usato da: Gruppo Retail, Rete Sanità Nord, UniCampus, Banca Adriatica.
+  rel: parte-di->KA-166
+
+[KA-165] tipo=procedura fonte=RnoC5IlOUhs#114:24 (scena 287)
+  ancora: grep -rln -i "aurora cloud\|aurora care" --include="*.md" .
+  Comando bash usato dall'agente per verificare rigorosamente se i prodotti citati nella domanda dell'utente esistono davvero nel cervello, prima di rispondere: grep -rln -i "aurora cloud\|aurora care" --include="*.md" . eseguito dentro la cartella del vault; l'output è vuoto (Bash completed with no output), a conferma che nessuna nota contiene quei due nomi.
+  rel: precede->KA-166
+
+[KA-166] tipo=regola fonte=RnoC5IlOUhs#114:18-114:24 (scene 286-287)
+  ancora: I prodotti registrati nel cervello sono solo tre: **Aurora Access, Aurora Core e Aurora Energy**. Né "Aurora Cloud" né "Aurora Care" compaiono in alcuna nota.
+  Risposta dell'agente dopo la verifica grep: 'Ho cercato in tutte le note del cervello di Aurora i prodotti citati nella domanda. I prodotti registrati nel cervello sono solo tre: Aurora Access, Aurora Core e Aurora Energy. Né "Aurora Cloud" né "Aurora Care" compaiono in alcuna nota. Non presente nel cervello.' Applicazione rigorosa della regola d'oro anche quando i nomi dei prodotti nella domanda sono plausibili ma inventati.
+  rel: parte-di->KA-159, esempio-di->KA-165
+
+[KA-167] tipo=esempio fonte=RnoC5IlOUhs#114:36-115:24 (scene 288-290)
+  ancora: Clienti con tutti e tre (Access + Core + Energy): nessuno.
+  Rieseguendo la domanda del Prompt 11 sui prodotti reali (Access, Core, Energy), l'agente legge le note dei tre clienti e applica la regola stretta (un cliente conta solo se ha davvero tutti i prodotti citati): cliente-banca-adriatica.md ha Core, Access, Manutenzione → Core+Access, manca Energy; cliente-hotelline-hospitality.md ha Core, Energy → manca Access; cliente-immobiliare-lombarda.md ha Core, Energy, Manutenzione, Insights → manca Access. Conclusione con la regola stretta: nessun cliente ha tutti e tre (Access + Core + Energy). Rilassando a 'almeno due dei tre', invece, tutti e tre i clienti si qualificano, e nel customer success: Banca Adriatica e Immobiliare Lombarda SGR sono seguite da Chiara Fontana; HotelLine Hospitality non ha un referente CS indicato nelle note (acquisita da Vendite) → 'Non presente nel cervello.'
+  rel: esempio-di->KA-160
+
+======================================================================
+ISOLA 3 (6 atomi)
+======================================================================
+[KA-118] tipo=comando fonte=RnoC5IlOUhs#92:36 (Notion, Prompt 5 completo) + RnoC5IlOUhs#92:48 (stesso prompt incollato in Antigravity, variante dettata) + voce 92:30-92:48
+  ancora: Una sola componente connessa: tutto il grafo è un unico grappolo, non due iso
+  Prompt 5 del canovaccio Notion ("Il gate di qualita' (solo referto)", descrizione: "Controlla ogni nota contro le sei regole e ti restituisce solo il referto."), testo integrale: "Crea un link python che faccia 'a gate di qualita' sul cervello di Aurora. Passa 11 cartelle (salta solo sources/ e workspace/, che sono materiale grezzo e scratch) e controllala contro queste sei regole: 1. Frontmatter completo: title, summary, tags, status, created, updated. 2. Massimo 300 righe di corpo per nota. 3. Almeno 3 wikilink [[...]] in uscita verso note che esistono davvero (conta i bersagli unici, non lo stesso link ripetuto; gli _index non valgono). 4. Zero link rotti: ogni [[bersaglio]] punta a una nota che esiste. 5. Zero orfani: ogni nota ha almeno 1 link in ENTRATA (gli _index sono esentati). 6. Una sola componente connessa: tutto il grafo e' un unico grappolo, non due isole. Elenca gli errori nota per nota, raggruppati per regola. Se e' tutto in regola, rispondi solo: 'OK, 0 errori'. Per ora non correggere niente, dammi solo il referto." Nel campo di Antigravity il prompt viene incollato/dettato con una lieve variante di formulazione ("Passa al setaccio OGNI nota delle 11 cartelle" invece di "Passa 11 cartelle"), coerente con la voce del presentatore piuttosto che con la copia esatta da Notion.
+  rel: precede->KA-124
+
+[KA-119] tipo=comando fonte=RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 6 per intero) + voce 95:48-96:00
+  ancora: Il ciclo correttivo: l'AI sistema ciò che ha segnalato, rifà il gate, e ripete fino a zero.
+  Prompt 6 del canovaccio Notion ("Correggi e ripeti finche' esce '0 errori'", descrizione: "Il ciclo correttivo: l'AI sistema cio' che ha segnalato, rifa' il gate, e ripete fino a zero."), testo integrale: "Correggi le note che hai appena segnalato, applicando le regole del gate: frontmatter completo, massimo 300 righe, almeno 3 wikilink reali in uscita, zero link rotti, zero orfani, un solo grappolo connesso. Poi rifai il gate da capo e mostrami il nuovo referto. Ripeti finche' non esce 'OK, 0 errori'." Questo prompt istituisce il ciclo automatico correggi-verifica-ripeti come pattern operativo standard per portare qualunque vault a "0 errori" rispetto alle sei regole del gate di qualita', senza intervento manuale nota per nota.
+  rel: parte-di->KA-118
+
+[KA-123] tipo=principio fonte=RnoC5IlOUhs#95:06 (Thought for 88s, precisazione di scope sulle 9 cartelle) + voce 95:06-95:12
+  ancora: Le cartelle effettivamente scansionate sono 9 (11 − `sources/` − `workspace/`).
+  Ripresa dello screen-share dopo la sequenza sull'outsourcing di comprensione: Claude, dopo "Thought for 88s", annuncia "Creo il gate come script Python autonomo (nessuna dipendenza esterna) e lo eseguo per produrre il referto." e precisa lo scope reale rispetto all'enunciato del prompt: "Una precisazione di scope che il tuo enunciato implica: l'indice madre _index-aurora.md sta nella radice del vault, non dentro una delle 11 cartelle, quindi per definizione ('ogni nota delle 11 cartelle') resta fuori dal setaccio. Le cartelle effettivamente scansionate sono 9 (11 − sources/ − workspace/)." Lo stato di avanzamento mostrato durante l'elaborazione e' etichettato "Cerebrating..." invece del solito "Thinking...", una delle numerose etichette di stato scherzose usate dall'IDE Antigravity per segnalare lavoro in corso.
+  rel: precede->KA-118, precede->KA-124
+
+[KA-124] tipo=procedura fonte=RnoC5IlOUhs#95:12 (referto completo: OK, 0 errori) + RnoC5IlOUhs#96:00 (stesso referto ripetuto identico) + voce 95:12-95:18
+  ancora: Ha setacciato le **28 note** delle 9 cartelle scansionate (le 11 meno `sources/` e `workspace/`) e tutte e 6 le regole passano
+  Referto completo del primo run del gate di qualita', trascritto per intero (compare identico, parola per parola, sia nella scena in cui Claude lo produce sia nella sua ripetizione poco dopo nella stessa sessione): "Referto: OK, 0 errori. Lo script e' gate_qualita.py alla radice del vault. Ha setacciato le 28 note delle 9 cartelle scansionate (le 11 meno sources/ e workspace/) e tutte e 6 le regole passano: 1. Frontmatter completo — ok. 2. Corpo ≤ 300 righe — ok. 3. ≥3 wikilink uscenti reali e unici, _index esclusi dal conteggio — ok. 4. Zero link rotti — ok. 5. Zero orfani, ≥1 link in entrata (_index esentati) — ok. 6. Una sola componente connessa — ok. Lo lanci con python3 gate_qualita.py (exit code 0 se pulito, 1 se trova errori, cosi' puoi usarlo anche in un hook pre-commit). Il referto raggruppato per regola compare solo quando c'e' almeno un errore; se e' tutto a posto stampa esattamente 'OK, 0 errori'. Due note su come ho risolto i punti ambigui dell'enunciato, cosi' sai cosa controlla davvero: Esistenza dei bersagli (regola 4) valutata sull'intero vault, non solo sulle 9 cartelle: cosi' un eventuale link legittimo verso canon o un indice di workspace/ non risulterebbe falsamente rotto. Connessione (regola 6) calcolata solo tra le note scansionate, grafo non orientato: il grappolo regge da solo, senza dover passare dall'indice madre che sta fuori scope." Nella ripetizione successiva nella stessa sessione (Antigravity IDE, non piu' Notion) il numero di note (28) e la stessa lista delle 6 regole vengono confermati identici parola per parola.
+  rel: esempio-di->KA-118, parte-di->KA-125
+
+[KA-125] tipo=comando fonte=RnoC5IlOUhs#95:24 (split view: chat a sinistra, gate_qualita.py aperto a destra) + voce 95:24-95:48
+  ancora: Gate di qualita' sul cervello di Aurora.
+  Codice sorgente di `gate_qualita.py` aperto in editor, riportato riga per riga fino al punto in cui il frame lo taglia (righe successive alla 37 non leggibili in questo frame, dichiarato): ```python #!/usr/bin/env python3 """ Gate di qualita' sul cervello di Aurora. Setaccia ogni nota delle 11 cartelle, saltando sources[...taglio bordo destro] e la controlla contro 6 regole. Stampa un referto ragg[...taglio] Uso: python3 gate_qualita.py """ import os import re import sys VAULT = os.path.dirname(os.path.abspath(__file__)) SKIP = {"sources", "workspace"} # material[...taglio] FOLDERS = ["self", "areas", "projects", "c[...taglio]", "entities", "data", "code", "outputs"] # [...taglio] REQUIRED_FM = ["title", "summary", "tags", "status", [...taglio] MAX_BODY_LINES = 300 MIN_OUT = 3 LINK_RE = re.compile(r"\[\[([^\]]+?)\]\]") FM_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.S) def is_index(stem): return stem.startswith("_index") def split_fm(text): """Ritorna (dict_chiavi_presenti, corpo). Frontmat[...taglio]""" m = FM_RE.match(text) if not m: return None, text block = m.group(1) keys = set() for line in block.splitlines(): km = re.match(r"^([A-Za-z0-9_-]+):\s*", line) if km: keys.add(km.group(1)) ``` La barra di stato dell'editor conferma: "Ln 1, Col 1", "Spaces: 4", "UTF-8", "LF", "{} Python", "3.12.12 64-bit". Struttura osservabile: costanti VAULT/SKIP/FOLDERS/REQUIRED_FM/MAX_BODY_LINES/MIN_OUT in cima, poi due regex compilate (LINK_RE per i wikilink, FM_RE per il blocco frontmatter delimitato da `---`), poi una funzione `is_index(stem)` che riconosce i file `_index-*` dal prefisso, poi l'inizio di `split_fm(text)` che separa frontmatter e corpo estraendo le chiavi presenti riga per riga con una terza regex.
+  rel: esempio-di->KA-124
+
+[KA-126] tipo=principio fonte=RnoC5IlOUhs#95:24-95:24 (annotazione codice) + RnoC5IlOUhs#95:24 (tooltip percorso completo) + voce 95:24-95:36
+  ancora: ~/Desktop/aurora cervello/gate_qualita.py
+  Conferma del percorso reale del file: il mouse fermo sopra `gate_qualita.py` nella sidebar mostra il tooltip col percorso completo "~/Desktop/aurora cervello/gate_qualita.py". Voce: "Ovviamente e' stato fatto fuori perche' lui e' super partes, no? va a controllare tutte le cartelle, quindi va bene che sia nella cosiddetta root, quindi fuori da tutto da tutte quante queste cartelle, ma dentro a questa cartella principale... Quindi tutti questi 11 piu' questi due sono tutti allo stesso livello." Principio generale: uno script che deve controllare (essere "super partes" rispetto a) tutte le cartelle di contenuto non puo' vivere dentro nessuna di esse; va messo alla radice del vault, allo stesso livello delle 11 cartelle, insieme all'indice madre `_index-aurora.md`.
+  rel: parte-di->KA-125
+
+======================================================================
+ISOLA 4 (5 atomi)
+======================================================================
+[KA-068] tipo=principio fonte=RnoC5IlOUhs#59:36 (Excalidraw, schema "Tassonomia vs Ontologia") + voce 59:36-61:12, annotazione aggiunta a 61:06
+  ancora: ti dice dove archiviarla
+  La tassonomia risponde alla domanda 'che tipo di cosa e'?' e dice dove archiviare un contenuto: nello schema Excalidraw e' illustrata con l'esempio 'Progetti' che si dirama in 'Progetti Interni' e 'Progetti Clienti', cioe' l'albero di cartelle ('il vostro alberello'). Un'annotazione a mano aggiunta successivamente, 'COME / DEVO / ARCHIVIARE', con una freccia ripiegata verso questo stesso albero, sintetizza visivamente il ruolo della tassonomia: la decisione di dove mettere le cose.
+  rel: 
+
+[KA-069] tipo=principio fonte=RnoC5IlOUhs#59:36 (Excalidraw, schema "Tassonomia vs Ontologia") + voce 61:30-61:36
+  ancora: Ontologica vuol dire come collego le informazioni. È un'ontologia applicata
+  L'ontologia risponde alla domanda 'cosa sono le cose e come si collegano?' ed e' 'leggibile da una macchina': nello schema e' illustrata con due entita', 'Aurora Sistemi' (azienda) e 'Marco' (persona), collegate da una freccia con l'etichetta 'lavora nel commerciale'. A voce l'autore la definisce esplicitamente: 'Ontologica vuol dire come collego le informazioni. E' un'ontologia applicata.' Una sottolineatura ondulata blu aggiunta sotto il titolo 'ONTOLOGIA' enfatizza il concetto proprio nel momento in cui viene pronunciato a voce.
+  rel: parte-di->KA-068
+
+[KA-070] tipo=principio fonte=RnoC5IlOUhs#63:06-63:18 (solo webcam)
+  ancora: l'ho fatta apposta perché funzioni in qualsiasi business
+  La tassonomia dell'autore e' stata progettata deliberatamente per essere agnostica rispetto al tipo di business: 'l'ho fatta apposta perche' funzioni in qualsiasi business' e 'non ha un funziona solo per, non lo so, la clinica o la l'officina, funziona pure per me che faccio contenuto, ho la mia agenzia'.
+  rel: parte-di->KA-068
+
+[KA-071] tipo=principio fonte=RnoC5IlOUhs#63:18-63:24 (solo webcam)
+  ancora: L'ontologia è la logica di collegamento ed è una cosa che voi ovviamente se non volete seguire la mia logica dovrete farvi
+  A differenza della tassonomia (che l'autore fornisce gia' pronta), l'ontologia va costruita da ciascuno: 'L'ontologia e' la logica di collegamento ed e' una cosa che voi ovviamente se non volete seguire la mia logica dovrete farvi[la]... Quindi dovrete dare ad Obsidian il come colleghiamo queste cosine qui.'
+  rel: parte-di->KA-069
+
+[KA-072] tipo=struttura fonte=RnoC5IlOUhs#63:42 (Excalidraw, slide "ONTOLOGIA" con l'esempio Aurora/Marco)
+  ancora: "DIPENDENTE"**, **"TENURE"**, **"FUNZ[IONE]"** e, più a destra, **"SALARIO"
+  Versione estesa dell'esempio di ontologia: a fianco dei due cerchi 'Aurora Sistemi'/'Marco', uno schizzo a mano mostra 'AURORA' e 'MARCO' in alto, con parentesi graffe che convergono su un riquadro 'COMMERC[IALE]', da cui partono frecce verso quattro attributi della relazione: 'DIPENDENTE', 'TENURE', 'FUNZ[IONE]' e 'SALARIO' — un modello concreto di come un'entita'-persona si collega a un'entita'-azienda con attributi tipati.
+  rel: esempio-di->KA-069
+
+======================================================================
+ISOLA 5 (5 atomi)
+======================================================================
+[KA-135] tipo=comando fonte=RnoC5IlOUhs#98:24-99:18 (chip llms.txt#50-50 in chat, scene 246-248) + canovaccio Notion scena 244/250
+  ancora: Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink 
+  Prompt 8 — 'Lo showcase (la fotografia per la demo)', scritto prima nel canovaccio Notion e poi incollato nella chat: chiede di generare una fotografia sintetica del cervello aziendale da mostrare in una demo commerciale, contando tutte le note (11 cartelle meno sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo. Testo continuo più ampio ricostruito unendo le scene 246-247 (il resto della riga prosegue oltre il bordo del frame, dichiarato tagliato nella fonte): 'Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 e tutto...'.
+  rel: precede->KA-137
+
+[KA-137] tipo=struttura fonte=RnoC5IlOUhs#99:30 (editor sorgente showcase.md, scena 249)
+  ancora: # Showcase — Cervello Aurora Sistemi > Fotografia DERIVATA del grafo. Rigenerata da genera_showcase.py, non modificare a mano.
+  Contenuto integrale del file sorgente _showcase/showcase.md generato: intestazione con dichiarazione di derivazione e scope esplicito (le 11 cartelle meno sources/ e workspace/, l'indice madre alla radice resta fuori), poi la tabella 'La fotografia' a due colonne (Metrica | Valore): Note totali 39; di cui note di contenuto 30; di cui hub (un _index per cartella) 9; Wikilink totali (la colla del grafo) 262; Componenti connesse 1.
+  rel: quantificato-da->KA-138, parte-di->KA-140
+
+[KA-138] tipo=numero fonte=RnoC5IlOUhs#99:30 (risposta 'Fatto.' dell'agente, scena 249)
+  ancora: **39 note totali** — 30 di contenuto + 9 hub (un `_index` per cartella)
+  Le tre metriche chiave della fotografia del cervello Aurora, come riassunte in chat dopo la generazione: 39 note totali (30 di contenuto + 9 hub, un _index per cartella); 262 wikilink che le tengono insieme; 1 componente connessa, cioè tutto collegato, nessuna isola nel grafo.
+  rel: corretto-da->KA-141, esempio-di->KA-137
+
+[KA-140] tipo=struttura fonte=RnoC5IlOUhs#99:30 (pannello 'Preview showcase.md', scena 249)
+  ancora: | self | 1 | 1 | 2 |
+  Tabella 'Note per cartella' del rendering di showcase.md, con colonne Cartella | Contenuto | Hub | Totale: self 1/1/2; areas 6/1/7; projects 1/1/2; concepts 3/1/4; docs 1/1/2; entities 11(?)/1(?)/12(?) — quest'ultima riga è tagliata dal bordo inferiore del frame nella fonte, cifre poco nitide e dichiarate incerte.
+  rel: parte-di->KA-137
+
+[KA-141] tipo=regola fonte=RnoC5IlOUhs#103:48 (risposta dell'agente prima del Prompt 9, scena 254)
+  ancora: era un numero sbagliato buttato lì da me, il gate non lo aveva stampato.
+  Autocorrezione esplicita e non richiesta del sistema, dichiarata onestamente in chat: in un turno precedente l'agente aveva detto '28 note scansionate' dal gate di qualità — un numero sbagliato che l'agente stesso ammette di aver 'buttato lì', perché il gate non lo aveva realmente stampato. Il conteggio vero, ricalcolato al momento, è 39 note nelle 9 cartelle (30 contenuto + 9 hub); i tre strumenti (gate_qualita.py, genera_llms.py, genera_showcase.py) condividono ora lo stesso scope e lo stesso parsing, quindi i numeri sono coerenti tra loro.
+  rel: corretto-da->KA-138
+
+======================================================================
+ISOLA 6 (4 atomi)
+======================================================================
+[KA-120] tipo=comando fonte=RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 7 per intero) + voce 96:00-96:12
+  ancora: La porta d'ingresso per la AI: un indice derivato, rigenerato dal frontmatter.
+  Prompt 7 del canovaccio Notion ("Genera l'indice per la AI (llms.txt)", descrizione: "La porta d'ingresso per la AI: un indice derivato, rigenerato dal frontmatter."), testo integrale: "Genera il file llms.txt nella radice del vault: e' l'indice-porta per la AI. Per ogni cartella di contenuto (self, areas, projects, docs, entities, data, code, outputs) elenca le note nel formato "- [[nome-file]] — summary", prendendo il summary dal frontmatter di ogni nota. In cima metti una riga di intestazione per ogni cartella. NON includere sources/ e workspace/. NON inventare niente: title e summary vengono SOLO dal frontmatter delle note. Ricordati che llms.txt e' DERIVATO: si rigenera da capo, non si modifica a mano." Nota di rilievo: nell'elenco delle cartelle di questo prompt canonico manca esplicitamente 'concepts' (self, areas, projects, docs, entities, data, code, outputs = 8 cartelle su 9 scansionabili), mentre nella formulazione dettata a voce poco dopo (scena 239) 'concepts' compare regolarmente nell'elenco: una piccola discrepanza tra il testo scritto in Notion e la sua ripetizione a voce, riportata cosi' com'e' invece di essere corretta.
+  rel: precede->KA-127
+
+[KA-121] tipo=comando fonte=RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 8 per intero) + voce 96:00-96:12
+  ancora: Numeri da mostrare a un cliente: quante note, quanti link, quante componenti connesse.
+  Prompt 8 del canovaccio Notion ("Lo showcase (la fotografia per la demo)", descrizione: "Numeri da mostrare a un cliente: quante note, quanti link, quante componenti connesse."), testo integrale: "Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 = tutto collegato). Poi dammi una tabella 'note per cartella' e, sotto, l'elenco degli hub (i piu' linkati). Prendi il summary dell'_index di ogni cartella. Salva tutto in _showcase/showcase.md. E' una fotografia DERIVATA: si rigenera, non si scrive a mano." Questo e' l'ultimo dei quattro prompt (5-6-7-8) del "Passo 3 — Gate di qualita', indice per le AI, showcase, grafo, GitHub": la sua esecuzione effettiva (genera_showcase.py, _showcase/showcase.md) avviene in scene successive a quella qui coperta (181-240), fuori dal perimetro di questo file.
+  rel: parte-di->KA-120
+
+[KA-127] tipo=procedura fonte=RnoC5IlOUhs#96:42 (annotazione penna verde llms.txt + nuovo prompt per generarlo) + voce 96:42-96:48
+  ancora: escludo i file `_index-` dall'elenco
+  Esecuzione dal vivo del Prompt 7: il prompt utente, dettato/incollato con la formulazione leggermente estesa vista a schermo ("Genera il file llms.txt nella radice del vault: e' l'indice-porta per la AI. Per ogni cartella di contenuto (self, areas, projects, concepts, docs, entities, [...] data, code, outputs) elenca le sue note nel formato '- [[nome-file]] — summary'" — coda tagliata dal riquadro). Risposta di Claude, dopo "Thought for 24s": "llms.txt e' derivato, quindi non lo scrivo a mano: creo un generatore che lo rigenera dal frontmatter delle note, e lo eseguo. Cosi' title/summary vengono solo dalle note e il file si puo' ricostruire da capo quando il cervello cambia. Scelta che ti segnalo: escludo i file _index- dall'elenco. Sono scaffolding di navigazione (summary del tipo 'Mappa della cartella X'), non contenuto; un door-index per AI e' piu' utile se punta alle note vere. Se li vuoi dentro, lo dici e cambio un flag." Questa scelta -- escludere gli _index dal file rivolto all'AI -- e' coerente con la loro funzione dichiarata di puro scaffolding di navigazione, non di contenuto da consumare.
+  rel: esempio-di->KA-120, precede->KA-128
+
+[KA-128] tipo=procedura fonte=RnoC5IlOUhs#96:48 (scrittura di genera_llms.py, 70 righe) + voce 96:48-96:54
+  ancora: Generatore di llms.txt per il cervello di Aurora.
+  Azione **Write** `genera_llms.py`, badge "70 lines", anteprima di codice mostrata: `#!/usr/bin/env python3`, poi apertura della docstring `"""` con prima riga "Generatore di llms.txt per il cervello di Aurora." Stato di avanzamento durante la scrittura: "Wrangling...". Nella sidebar compare il nuovo file `genera_llms.py` subito sotto `gate_qualita.py`. Coerentemente con quanto appena dichiarato in P2-133, il generatore (non il file `llms.txt` stesso) e' l'artefatto scritto a mano; l'esecuzione dello script e la lettura del file `llms.txt` che ne risulta avvengono nella scena immediatamente successiva, fuori dal perimetro 181-240 coperto da questo file.
+  rel: esempio-di->KA-127
+
+======================================================================
+ISOLA 7 (2 atomi)
+======================================================================
+[KA-005] tipo=struttura fonte=RnoC5IlOUhs#0:24 + voce assente (solo screen-share)
+  ancora: Pannello **Properties** con i campi: `title` = "KPI 2025 — Edifici gestiti"; `summary` = una frase che descrive il contenuto
+  Anatomia reale di una nota atomica della company brain, nota `kpi-2025-edifici`: pannello Properties con campi `title` ("KPI 2025 — Edifici gestiti"), `summary` (frase discorsiva sul contenuto), `tags` (4 pill colorate tra cui `data` e `kpi`), `status`, `created`/`updated` (10-06-2026), `related` (tre wikilink). Corpo: titolo, poi bullet con il dato, la sua provenienza (link a `[[prodotto-aurora-core]]`) e la sua quadratura (somma verificabile). La sidebar mostra già le 11 cartelle: `areas`, `code`, `concepts`, `data`, `docs`, `entities`, `outputs`, `projects`, `self`, `sources`, `workspace`.
+  rel: quantificato-da->KA-006
+
+[KA-006] tipo=numero fonte=RnoC5IlOUhs#0:24 (corpo nota kpi-2025-edifici)
+  ancora: *"Edifici gestiti sulla piattaforma a fine 2025: **751**."*
+  Il dato solido riportato nella nota `kpi-2025-edifici`: 751 edifici gestiti sulla piattaforma a fine 2025, distribuiti su 9 clienti attivi, con una riga di "quadratura" che dichiara la somma degli immobili dei 9 clienti. Attenzione: la lista di addendi visibile nel frame (8 numeri leggibili per 9 clienti dichiarati, somma 757) non torna con 751 — a risoluzione 640x360 una o più cifre non sono leggibili con certezza, quindi i singoli addendi non vanno usati come dato, solo il totale dichiarato (751) e il conteggio clienti (9).
+  rel: quantificato-da->KA-005
+
+======================================================================
+ISOLA 8 (2 atomi)
+======================================================================
+[KA-007] tipo=definizione fonte=RnoC5IlOUhs#0:36 (screen-share sito gentes.ai)
+  ancora: 🔎 La trascrizione automatica scrive *"la mia agenzia di intelligenza artificiale **Gente Sei**"*: il frame mostra che il nome reale è **Gentes / gentes.ai**.
+  L'identità reale dell'autore/relatore: il sito mostrato a schermo è `gentes.ai` (agenzia "Gentes"), con badge "Ten years building growth systems inside Amazon and P&G" e loghi partner tra cui Anthropic e Notion. La trascrizione automatica del video rende il nome come "Gente Sei": il nome corretto, letto direttamente sul frame, è Gentes.
+  rel: parte-di->KA-008
+
+[KA-008] tipo=struttura fonte=RnoC5IlOUhs#0:48 (screen-share skool.com/avanguardia-plus)
+  ancora: *"Un grosso benvenuto in community! Come accennato, Avanguardia Plus è un programma pensato per portarti al primo ritorno economico con l'AI entro 90 giorni."*
+  L'autore gestisce una community a pagamento su Skool, "Avanguardia Plus" (`skool.com/avanguardia-plus`), presentata a schermo come programma pensato per portare l'iscritto al primo ritorno economico con l'AI entro 90 giorni. Nel feed si vede l'owner (Giovanni Beggiato, che nel video si presenta oralmente come "Joe") postare il messaggio di benvenuto.
+  rel: parte-di->KA-007

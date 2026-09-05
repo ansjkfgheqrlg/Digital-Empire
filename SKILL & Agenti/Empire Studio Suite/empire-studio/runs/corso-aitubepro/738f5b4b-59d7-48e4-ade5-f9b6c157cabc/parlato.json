@@ -1,0 +1,6148 @@
+{
+  "lesson_id": "738f5b4b-59d7-48e4-ade5-f9b6c157cabc",
+  "modello": "base",
+  "durata_s": 4615.2,
+  "parole": 10007,
+  "blocchi": [
+    {
+      "inizio": 0.0,
+      "fine": 9.0,
+      "testo": "Formazione come prima cosa intanto voglio dare il benvenuto alla persona che ci aiuterà in questa formazione in maniera"
+    },
+    {
+      "inizio": 9.0,
+      "fine": 18.0,
+      "testo": "Magistrale quindi lo è il benvenuto a Samuel e buonasera a semma. Ciao, ciao tutti. Ok e vi chiedo grazie a tutti in chat se ci vedete"
+    },
+    {
+      "inizio": 18.0,
+      "fine": 25.0,
+      "testo": "E ci sentite di lasciare ovviamente un commento quindi che ci vedete che ci state sentendo nel migliore dei modi"
+    },
+    {
+      "inizio": 25.0,
+      "fine": 34.0,
+      "testo": "Ok quindi ciao veronica Lucilla Simone Laura Vanda Simonetta Giovanna buonasera a tutti buonasera buonasera buonasera"
+    },
+    {
+      "inizio": 34.0,
+      "fine": 43.0,
+      "testo": "Allora faccio una piccola introduzione per spiegarvi perché questa live visto che molto probabilmente poi la ritroverete all'interno del percorso"
+    },
+    {
+      "inizio": 43.0,
+      "fine": 52.0,
+      "testo": "E perché dovete sapere che il nostro amato programma di Editing che ci permette di realizzare video veramente i pochissimi clic"
+    },
+    {
+      "inizio": 52.0,
+      "fine": 58.0,
+      "testo": "Quindi grazie a tutti per il feedback ci vedete ci sentite non vi preoccupate se ci vedete in piccolo"
+    },
+    {
+      "inizio": 58.0,
+      "fine": 61.0,
+      "testo": "Quello che importante vedere lo schermo in questo momento"
+    },
+    {
+      "inizio": 61.0,
+      "fine": 72.0,
+      "testo": "Perché come vi ho detto sarà un vero e proprio aggiornamento quindi un tutorial nuovo su tutto quello che ha introdotto in i ultimi"
+    },
+    {
+      "inizio": 72.0,
+      "fine": 83.0,
+      "testo": "Nel ultimo periodo flichi ok quindi se siete pronti io direi iniziare subito così andiamo proprio dritti al punto e facciamo una mega formazione sul campo ok"
+    },
+    {
+      "inizio": 83.0,
+      "fine": 93.0,
+      "testo": "Andiamo a vedere un po tutte quelle che sono le novità di flichi e lascio lavorare all'assemo che ve lo dico oggi pubblicamente"
+    },
+    {
+      "inizio": 93.0,
+      "fine": 99.0,
+      "testo": "È una figura chiave all'interno del nostro percorso e all'interno della nostra azienda"
+    },
+    {
+      "inizio": 99.0,
+      "fine": 113.0,
+      "testo": "E che diciamo il dietro al reparto di video produzione della muccarossa quindi chi meglio di lui può spiegare tutto quello che lavoro che facciamo anche dietro ai canali che viene diretto magistralmente"
+    },
+    {
+      "inizio": 113.0,
+      "fine": 124.0,
+      "testo": "Come ho già detto da parte sua quindi io ti lascio la parola sa muelle e buona formazione a tutti guardatevi tutta la live state attenti perché ogni piccola parola"
+    },
+    {
+      "inizio": 124.0,
+      "fine": 136.0,
+      "testo": "Ogni piccolo suggerimento può veramente migliorarvi e cambiare la percezione che avete e di questo strordinario strumento quindi ti lascio la parola semmo e ciao a tutti"
+    },
+    {
+      "inizio": 136.0,
+      "fine": 141.0,
+      "testo": "Grazie grazie Pietro troppo buono come al solito e allora"
+    },
+    {
+      "inizio": 141.0,
+      "fine": 151.0,
+      "testo": "Soltune cosa andrò un pochettino magari più spedito perché sono cose che magari saranno triteri trite per alcuni"
+    },
+    {
+      "inizio": 151.0,
+      "fine": 159.0,
+      "testo": "Quindi andrò un pochettino più veloce e per poi approfondire degli aggiornamenti ragazzi che sono veramente eccezionali"
+    },
+    {
+      "inizio": 159.0,
+      "fine": 171.0,
+      "testo": "Fli chi hauto nevoluzione davvero pazzesca e un qualcosa di dimenso in alcune cose specifiche e adesso l'endremo affrontare"
+    },
+    {
+      "inizio": 171.0,
+      "fine": 180.0,
+      "testo": "Mi dico che può aumentare la vostra produttività in un modo incredibile"
+    },
+    {
+      "inizio": 180.0,
+      "fine": 188.0,
+      "testo": "Adesso vi farò vedere delle chicche davvero particolari che hanno implementato in questi giorni e attenzionevi in manette fino all'ultimo"
+    },
+    {
+      "inizio": 188.0,
+      "fine": 198.0,
+      "testo": "Perché ci sarà una novità davvero carina che hanno trovato da pochissimo e che mette in modo di bigolette spreca a zero crediti"
+    },
+    {
+      "inizio": 198.0,
+      "fine": 205.0,
+      "testo": "Ok quindi tante volte noi parliamo discutiamo vedono nella community tante volte screma"
+    },
+    {
+      "inizio": 205.0,
+      "fine": 209.0,
+      "testo": "Quanto consuma e crediti se io faccio questa roba qui suplici?"
+    },
+    {
+      "inizio": 209.0,
+      "fine": 214.0,
+      "testo": "Beh hanno introdotto tanti e tanti strumenti che sono proprio gratuiti"
+    },
+    {
+      "inizio": 214.0,
+      "fine": 218.0,
+      "testo": "Quindi andremo a vedere poi un pochettino verso la fine"
+    },
+    {
+      "inizio": 218.0,
+      "fine": 225.0,
+      "testo": "Allora innanzitutto diciamo che questo è un file vuoto che abbiamo creato"
+    },
+    {
+      "inizio": 225.0,
+      "fine": 230.0,
+      "testo": "Quindi un 16 noni fa il vuoto appunto"
+    },
+    {
+      "inizio": 230.0,
+      "fine": 237.0,
+      "testo": "Qui andremo a impostare intimo luogo un po' l'impostazione totale del nostro layout"
+    },
+    {
+      "inizio": 237.0,
+      "fine": 243.0,
+      "testo": "Quindi abbiamo la possibilità di scegliere una tracci audio da far vivare in background"
+    },
+    {
+      "inizio": 243.0,
+      "fine": 249.0,
+      "testo": "Il background audio che cos'è quella musicetta che noi inseriamo sotto i video"
+    },
+    {
+      "inizio": 249.0,
+      "fine": 258.0,
+      "testo": "Ok quindi qui iniziamo a inserire una tracci audio che l'oggiamente deve essere assolutamente arganciata"
+    },
+    {
+      "inizio": 258.0,
+      "fine": 263.0,
+      "testo": "Quello che il nostro tema è il momento del contenuto del video"
+    },
+    {
+      "inizio": 263.0,
+      "fine": 272.0,
+      "testo": "Perché tante volte gli utenti a un mandorano perché la traccia non è in tema con il testo, quindi si sente una musica pop"
+    },
+    {
+      "inizio": 272.0,
+      "fine": 280.0,
+      "testo": "Quando stiamo andando a fare una favola della buona notte per dire una sciocchezza"
+    },
+    {
+      "inizio": 280.0,
+      "fine": 286.0,
+      "testo": "Non trova assolutamente compatibilità, quindi dobbiamo essere anche bravi"
+    },
+    {
+      "inizio": 286.0,
+      "fine": 291.0,
+      "testo": "A scegliere una tracci audio corretta e soprattutto dosare il volume"
+    },
+    {
+      "inizio": 291.0,
+      "fine": 294.0,
+      "testo": "Il volume è un'altra cosa che andremo a vedere perché è molto importante"
+    },
+    {
+      "inizio": 294.0,
+      "fine": 299.0,
+      "testo": "Ora io inserirò delle rombe a caso quindi non andremo a testarle"
+    },
+    {
+      "inizio": 299.0,
+      "fine": 306.0,
+      "testo": "Solo per farvi vedere la parte e diciamo tecnica e voi potrete farlo con le vostre tracci audio e i vostri contenuti"
+    },
+    {
+      "inizio": 306.0,
+      "fine": 309.0,
+      "testo": "Quindi vado in background audio"
+    },
+    {
+      "inizio": 309.0,
+      "fine": 312.0,
+      "testo": "Qui ci compare questa sezione che chiamano in cera"
+    },
+    {
+      "inizio": 312.0,
+      "fine": 319.0,
+      "testo": "Vi ricordatevi quando lavorate sul fliki, molti questa roba non la considerano per lavorare sulla scena uno"
+    },
+    {
+      "inizio": 319.0,
+      "fine": 326.0,
+      "testo": "Cliccandoci sopra, abbiamo poi le varie sezioni, io qui sono sul voi sovere, qui sono sul media"
+    },
+    {
+      "inizio": 326.0,
+      "fine": 333.0,
+      "testo": "Perché vi ne siano col contorno rosa, ok? Quindi dovete stare attenti che siete nella sezione corretta"
+    },
+    {
+      "inizio": 333.0,
+      "fine": 343.0,
+      "testo": "Perché non posso stare sulla tracci audio e così dovresti un attivino vedere un pochettino meglio"
+    },
+    {
+      "inizio": 343.0,
+      "fine": 348.0,
+      "testo": "Non potete stare sulla tracci audio e volerle modificare qualcosa che riguarda la scena uno, ok?"
+    },
+    {
+      "inizio": 348.0,
+      "fine": 353.0,
+      "testo": "Quindi è molto molto importante, quindi scegliamo un file"
+    },
+    {
+      "inizio": 353.0,
+      "fine": 358.0,
+      "testo": "Ora andremo a vedere più tardi delle cose davvero carine che sono state introdote"
+    },
+    {
+      "inizio": 358.0,
+      "fine": 371.0,
+      "testo": "Però facciamo finita che noi prendiamo una tracci audio che è nella libreria di fliki, quindi queste tracce sono tutte gratuite, diciamo"
+    },
+    {
+      "inizio": 371.0,
+      "fine": 380.0,
+      "testo": "Ma soprattutto sono tutte licenziate, diciamo così, quindi cosa succede?"
+    },
+    {
+      "inizio": 380.0,
+      "fine": 392.0,
+      "testo": "Sendovesse arrivarci una segnalazione di violazione di copyright da parte di YouTube, noi abbiamo una frase, un trafiletto che andiamo a incollare nella disputa"
+    },
+    {
+      "inizio": 392.0,
+      "fine": 399.0,
+      "testo": "E YouTube risolve subito la questione, perché ci sono queste tracce che sono già state licenziate"
+    },
+    {
+      "inizio": 399.0,
+      "fine": 408.0,
+      "testo": "Se avete bisogno, scrivete la combino e ti vi comuniciamo il trafiletto, ma dovresti trovare abbondattemente perché è stato anche questo, presentato più volte"
+    },
+    {
+      "inizio": 408.0,
+      "fine": 413.0,
+      "testo": "Quindi inseriamo una traccia audio qualsiasi, non è questo il tema"
+    },
+    {
+      "inizio": 414.0,
+      "fine": 423.0,
+      "testo": "Quindi abbiamo detto, se io ho clicco sulla scena 1 e sono qui, io non posso modificare la tracci audio, non non nulla che riguarda la tracci audio"
+    },
+    {
+      "inizio": 423.0,
+      "fine": 429.0,
+      "testo": "Quindi devo essere necessariamente qui evidenziando il rosa qui, questa sezione che è della tracci audio"
+    },
+    {
+      "inizio": 429.0,
+      "fine": 432.0,
+      "testo": "E come potete notare, compare la questione del volume"
+    },
+    {
+      "inizio": 433.0,
+      "fine": 445.0,
+      "testo": "Adesso il volume in base al tipo di contenuto, considerate che il volume massimo che normalmente appliciamo è 15"
+    },
+    {
+      "inizio": 445.0,
+      "fine": 459.0,
+      "testo": "Ma ci devono essere le condizioni, le condizioni sono ascoltiamo in base alla tipologia di traccia, in base alla tipologia di narratore, in base al volume del narratore, andiamo più o meno ad alzare l'audio"
+    },
+    {
+      "inizio": 459.0,
+      "fine": 468.0,
+      "testo": "Normalmente quello che mai si noterà, ma sarà gradevole la scolto e il volume 5"
+    },
+    {
+      "inizio": 468.0,
+      "fine": 479.0,
+      "testo": "Attenzione, perché ogni volta che è fatto una modifica dovete applicare a tutte le scene, perché se non lo fate, lo farà soltanto alla scena 1"
+    },
+    {
+      "inizio": 479.0,
+      "fine": 490.0,
+      "testo": "Quindi appliciamo, se sicuro che vuoi copriare tutte le impostazioni su tutti i layers, quindi tutti i livelli su tutte le scene del file, si, ok, applico"
+    },
+    {
+      "inizio": 490.0,
+      "fine": 501.0,
+      "testo": "E ci danno conferma, quindi ok, io ho fatto tutto, per come mi chiesto, ok, quindi ottimo abbiamo già inserito una musica di sottofondo"
+    },
+    {
+      "inizio": 501.0,
+      "fine": 514.0,
+      "testo": "Però ancora l'impostazione nostro layout non è completa, perché dobbiamo andare anche a impostare la velocità, questa che vedete speed 100"
+    },
+    {
+      "inizio": 514.0,
+      "fine": 518.0,
+      "testo": "E la velocità di narrazione del nostro narratore"
+    },
+    {
+      "inizio": 518.0,
+      "fine": 529.0,
+      "testo": "Ora, normalmente il narratore può sillare anche da 85 circa di velocità a 100, in base a punto al contenuto"
+    },
+    {
+      "inizio": 529.0,
+      "fine": 539.0,
+      "testo": "Non dobbiamo far narrare molto lento, perché logicamente è noioso, le persone esistano di ascoltare una roba del genere e lasciano il contenuto"
+    },
+    {
+      "inizio": 539.0,
+      "fine": 557.0,
+      "testo": "Quindi lo sapete benissimo parliamo di per lo più di produzione di contenuti che sono sopra gli 8 minuti, perché dobbiamo generare più az, quindi generare più az, inserile, durante la fuizione del contenuto genera per noi un guadanno"
+    },
+    {
+      "inizio": 557.0,
+      "fine": 561.0,
+      "testo": "Quindi dobbiamo essere bravi ad arrivare sopra gli 2 minuti"
+    },
+    {
+      "inizio": 561.0,
+      "fine": 571.0,
+      "testo": "Quindi vediamo che in questo caso facciamo finte che abbiamo testato la nostra nicchia, la conciò, bene impostiamo il nostro narratore a velocità 90"
+    },
+    {
+      "inizio": 571.0,
+      "fine": 575.0,
+      "testo": "E appliciamo a tutte le scene"
+    },
+    {
+      "inizio": 575.0,
+      "fine": 596.0,
+      "testo": "Adesso, vediamo, scrivetemi in chat, secondo voi, cosa manca a questa conmon-shen, che è quella impostazione del nostro layout totale del nostro contenuto, cosa manca da inserire per renderlo fisso in tutte le scene del contenuto"
+    },
+    {
+      "inizio": 596.0,
+      "fine": 612.29,
+      "testo": "Vediamo chi risponde per primo, forza, il watermark è esatto, esatto robberto, esatto vetano, bravissimi, bravissimi, geloca, grande, antonella, assolutamente lovo, bravo Dario"
+    },
+    {
+      "inizio": 612.29,
+      "fine": 624.29,
+      "testo": "Assolutamente sì, quello che abbiamo lovo, watermark comunque è quello, è l'identificativo e il nostro marchio, è quello che deve caracterizzare il nostro video per diversi motivi"
+    },
+    {
+      "inizio": 624.29,
+      "fine": 635.29,
+      "testo": "Il primo è che stiamo mettendo un bollino a partire a me, quindi anche l'utente, a livello visivo, a bisogno di una riconduciabilità"
+    },
+    {
+      "inizio": 635.29,
+      "fine": 645.29,
+      "testo": "Perché questo comunque vi ha già molto anche sul subconcio delle persone, quindi mettere un bel logo che sia attivante, nella misura è giusta anche con la trasparenza,"
+    },
+    {
+      "inizio": 645.29,
+      "fine": 656.29,
+      "testo": "Fai identificare presti i nostri contenuti, perché l'utente, quando visto un bel video, fruibile, bello che l'ha tenuto il collato al monitor, quando va a scrollare le pagine,"
+    },
+    {
+      "inizio": 657.29,
+      "fine": 671.29,
+      "testo": "Bene, il contenuto che parte nautomatico l'anteprima dopo la miniatura, quindi inizia a vengere il contenuto, anche se lo vettine piccolo, considerate che i nostri occhi, i nostramenti, agganciano subito, e una riconduciabilità ottica che abbiamo con il nostro subconcio"
+    },
+    {
+      "inizio": 671.29,
+      "fine": 679.29,
+      "testo": "E capiscono subito, ah caspita, quello era il contenuto per visto l'altor di quel canale bellissimo, ci pico solo voglio vedere, perché mi è più sudotanto"
+    },
+    {
+      "inizio": 679.29,
+      "fine": 700.29,
+      "testo": "Ok, quindi il watermark, o il logo, chiamiamo lo come vogliamo, deve essere assolutamente un elemento che caratterize i nostri contenuti, quindi sempre da add layer, quindi inseriamo un ulteriore livello, ok, dentro il contenuto, andiamo a inserire, eccolo qui, watermark"
+    },
+    {
+      "inizio": 700.29,
+      "fine": 727.29,
+      "testo": "Se imparate ad utilizzare i termini corretti, anche al livello subito di percezione, andate in tre secondi a regolarmi subito di dove c'è il cari, perché se magari lo chiamiamo sempre logo, vi può asfuggire quando si apreverle prima volta di c'è, dove è che il logo watermark, ok, cercate di fare sempre un passo avanti, memorizzare le cose che servono necessariamente, quindi watermark"
+    },
+    {
+      "inizio": 727.29,
+      "fine": 757.29,
+      "testo": "andiamo a inserire sempre qualcosa di banale, così vi faccio vedere soltanto cosa si può fare, quindi inseriamo questo che è colorato, che è molto carino, andiamo a inserire, quindi ci presenterà una roba del genere, ok, perché non abbiamo creato, ho importato un qualcosa che arriva da campo, che abbiamo già preso tondo, che abbiamo esportato in pienne G per levare lo spondo, no, però abbiamo la possibilità di farle"
+    },
+    {
+      "inizio": 757.29,
+      "fine": 786.29,
+      "testo": "la possibilità di lavorarlo su flichi direttamente, queste ho un altro delle cose stupende che hanno fatto da poco tempo, cliccando su qualsiasi oggetto media o anche sottotitoli, qualsiasi cose che c'è nella scena, abbiamo la possibilità di fare questo, quindi lo spostiamo per dove ci interessa, potremmo piazzarlo anche al centro, ok, ma facciamo finta che lo andiamo a inserire qui, avete la possibilità di farlo"
+    },
+    {
+      "inizio": 786.29,
+      "fine": 813.29,
+      "testo": "lo spostamento o con queste situazioni qui, sono i menu laterali, no, top o left, quindi cliccando si abbassa o si alza, i comandi sono tra virgoletti invertiti perché sono le posizioni logginamente, e qui va a fare destra o sinistra, ok, vi dovete vedere la possibilità di lavorare con più precisione su starova qui, quindi col menu laterale."
+    },
+    {
+      "inizio": 813.29,
+      "fine": 842.29,
+      "testo": "Io amo metterlo normalmente tanto in una volta che lo centro, così ho finito diciamo di fare le robbe, abbiamo la possibilità di lavorare su questo logo, quindi abbiamo cliccando background blur, ok, abbiamo la possibilità, già lo ha resottondo, ok, è carimissimo, già è carino ma avete la possibilità di creare loghi dal parrato, ha un parrato con..."
+    },
+    {
+      "inizio": 842.29,
+      "fine": 869.29,
+      "testo": "con gli angoli rotundati, ha un vero proprio tondino, ok, e qui invece arriviamo all'opacità, l'opacità, sinceramente abbiamo la possibilità di spaziare, però ricordatevi sempre che il logo non deve devastare il contenuto, perché se il logo è troppo visibile e troppo grande, immaginate una situazione del genere, no?"
+    },
+    {
+      "inizio": 869.29,
+      "fine": 890.29,
+      "testo": "C'è guardate quanto spazio occupa rispetto a tutta la scena, è troppo grande, non va bene, ok, quindi dovete anche proporzionarlo in modo efficace, ricordatevi delle proporzioni che sono molti importanti, una volta ha fatto quello che vogliamo fare e facciamo apply, quindi to all science, quindi andiamo a applicarlo a tutte le scene."
+    },
+    {
+      "inizio": 890.29,
+      "fine": 911.29,
+      "testo": "Cosa potreste fare realmente con il watermark? Utilizzarlo come avete mai visto le filigrane sui video per far sì che non copino il nostro contenuto, perché ogni tanto ci capita che anche noi facciamo il davolo, destrappoliamo qualcosa dei contenuti di altri."
+    },
+    {
+      "inizio": 911.29,
+      "fine": 937.5,
+      "testo": "In questo modo potremmo anche fare questa roupa qui, facciamo finita, lo porto al centro, ora immaginatevi al posto di un'immagine una scrittano con il brand del canale, però facciamo finita che questa è la nostra situazione e facciamo andiamo su opacità e lo facciamo quasi opaco al 5 barra di 10%."
+    },
+    {
+      "inizio": 937.5,
+      "fine": 961.5,
+      "testo": "In questo modo avete creato come una filigrana, e questo rende il nostro contenuto, diciamo poco copiabile, però dovete stare sempre attenti che non si ha devastato il contenuto, perché se troppo evidente la filigrana è buttata giù così nell'utente si stanca, perché non vede quelle che sono le scene poi."
+    },
+    {
+      "inizio": 961.5,
+      "fine": 975.5,
+      "testo": "Ok, riportiamo la situazione come stava prima, più o meno, ora ci ne frigliamo settondo, vale o quadrato, e facciamo, ritorniamo su il nostro, sulla nostra sezione, facciamo più peziono tutte le scene perché lo ho spostato."
+    },
+    {
+      "inizio": 975.5,
+      "fine": 990.5,
+      "testo": "Ok, benissimo, questa è più o meno l'impostazione del nostro layout, così che andiamo a fare, ora ho individuato un testo su internet, qualsiasi facciamo, prendiamo se prendiamo la micchia viaggi,"
+    },
+    {
+      "inizio": 990.5,
+      "fine": 1004.5,
+      "testo": "ormai è quella che sentite sempre più spesso da noi, quindi questo momento cosa ho fatto, ho fatto cobbia e in colla di un piccolo testo che ho stravolato da un sito o un portale di viaggi."
+    },
+    {
+      "inizio": 1004.5,
+      "fine": 1020.94,
+      "testo": "Ok, un itinerario, andiamo a vedere un attimino, bene, anzi questa sarei anche molto svelto flinchi, abbiamo il testo diviso già in 3 scene."
+    },
+    {
+      "inizio": 1020.94,
+      "fine": 1029.94,
+      "testo": "Ok, benissimo, adesso ridugo leggermente lo zoom quando sarà ora, per chi voglio per vedere cosa si crea sotto, se non perdete i vari passaggi."
+    },
+    {
+      "inizio": 1029.94,
+      "fine": 1039.94,
+      "testo": "La cosa affiglissima che hanno entrotto, beh, intanto avete visto apposizionato noi già delle immagini in base a quelle che sono quello che il testo,"
+    },
+    {
+      "inizio": 1039.94,
+      "fine": 1050.94,
+      "testo": "ma hanno introdotto delle cose effigissime che una volta noi facevamo in maniera un pochettino rozza, manuale, cosa che facevamo una volta?"
+    },
+    {
+      "inizio": 1050.94,
+      "fine": 1057.94,
+      "testo": "Una volta facevamo la divisione delle scene, un pochettino così per avere l'effetto migliore."
+    },
+    {
+      "inizio": 1057.94,
+      "fine": 1065.94,
+      "testo": "Quindi tagliamo il testo, lasciavamo solo questa parte qui perché volevamo effettivamente un'immagine per questa parte di testo."
+    },
+    {
+      "inizio": 1066.94,
+      "fine": 1076.94,
+      "testo": "E poi inserivamo le altre scene in questo modo, facciamo questo, per esempio, per identificare i vari posti in maniera esclusiva."
+    },
+    {
+      "inizio": 1076.94,
+      "fine": 1083.94,
+      "testo": "No, facciamo tutta questa roba qui che le creavamo, una scena, però ogni ropa che volevamo evidenziare come testo."
+    },
+    {
+      "inizio": 1083.94,
+      "fine": 1090.94,
+      "testo": "Oggi invece non c'è più la necessità perché grazie all'ultimo app grade che hanno fatto uno degli ultimi travergoletti, non è proprio l'ultimo,"
+    },
+    {
+      "inizio": 1091.94,
+      "fine": 1094.94,
+      "testo": "ma abbiamo la possibilità di fare una roba che lo vi faccio vedere."
+    },
+    {
+      "inizio": 1094.94,
+      "fine": 1103.94,
+      "testo": "Ricordatevi sempre che dovete dare un play generale a tutto in modo che flichica con il tempo del testo,"
+    },
+    {
+      "inizio": 1103.94,
+      "fine": 1111.94,
+      "testo": "perché come vedete qui abbiamo 4 secondi totali, flichi non ha calcolato nulla ancora, non sa quanto grande questo testo."
+    },
+    {
+      "inizio": 1112.94,
+      "fine": 1117.94,
+      "testo": "Quindi in secondi generazione ovviamente, quindi andiamo a fare il nostro play."
+    },
+    {
+      "inizio": 1117.94,
+      "fine": 1126.94,
+      "testo": "Ora su questa roba qui ci metto un pochettino più perché devi andare a calibrare talmente tanti cose che deve incastrare con gli ultimi aggiornamenti che voleva faccio vedere,"
+    },
+    {
+      "inizio": 1126.94,
+      "fine": 1135.94,
+      "testo": "che effettivamente questa latenza è un pochettino, diciamo, alta, però ricordatevi sempre una roba, dovete sempre giustire il tempo."
+    },
+    {
+      "inizio": 1135.94,
+      "fine": 1145.94,
+      "testo": "Mentre io faccio play qui, sto andando a fare 10 cose nel frattempo, non mi sto qui al monitor braccia con certe e inservedere a quando finisce,"
+    },
+    {
+      "inizio": 1145.94,
+      "fine": 1154.94,
+      "testo": "metto il cronometro 5 secondi, 10 secondi, ok, non faccio questo, ok?"
+    },
+    {
+      "inizio": 1154.94,
+      "fine": 1162.94,
+      "testo": "Vado e faccio altro intanto, perché ho tanti di quelle cose da fare per un canale, per un contenuto che ha voglia se ci ho roba da fare."
+    },
+    {
+      "inizio": 1162.94,
+      "fine": 1171.94,
+      "testo": "Ora lui ha calcolato tutto, abbiamo un minuto e 20 di video di contenuto, che cos'è la cosa veramente carina che hanno fatto?"
+    },
+    {
+      "inizio": 1171.94,
+      "fine": 1174.94,
+      "testo": "Andiamoci nella scena 1, parliamo da qui."
+    },
+    {
+      "inizio": 1174.94,
+      "fine": 1183.94,
+      "testo": "Io evidenzio il testo così e in automatico abbiamo la possibilità di interagire con un nuovo menu che si è creato,"
+    },
+    {
+      "inizio": 1183.94,
+      "fine": 1189.94,
+      "testo": "c'era già prima, ma ha inserito questa funzionalità che la B roll, cosa fa questa B roll?"
+    },
+    {
+      "inizio": 1189.94,
+      "fine": 1201.94,
+      "testo": "Se ci glielchiamo sopra, lui va a fare questo, prende questo testo, calcola i secondi, quindi lui sa che questo testo narrato con questo narratore,"
+    },
+    {
+      "inizio": 1201.94,
+      "fine": 1216.94,
+      "testo": "poi potete utilizzare un narratore che volete, durano 9 secondi, quindi già lui lo sa e crea una scena aggiuntiva, un media aggiuntiva, un media aggiuntivo che durano 9 secondi."
+    },
+    {
+      "inizio": 1216.94,
+      "fine": 1231.94,
+      "testo": "Ok, poi amme piacerebbe che la ventino sia fatto per contosuo, gelio, idem e squilino e via dicendo, quindi faccio B roll a tutti."
+    },
+    {
+      "inizio": 1231.94,
+      "fine": 1237.94,
+      "testo": "Ok, tempo che finisce di fare il B roll a 1 e parto con l'altro."
+    },
+    {
+      "inizio": 1237.94,
+      "fine": 1252.94,
+      "testo": "Ok, squilino, come vedete lui sta già frazionando tutta la parte del scena con i secondi corretti, ma non li fraziona così a caso, guardate che roba fantastica che sta creando."
+    },
+    {
+      "inizio": 1252.94,
+      "fine": 1264.94,
+      "testo": "Lui sta facendo il calcolo delle scene, quindi dice questa mirura, mi parto 8 secondi, mi dura 10 secondi, questa mi parto 9 secondi, fina 11 secondi, quindi 2 secondi di scena."
+    },
+    {
+      "inizio": 1264.94,
+      "fine": 1270.94,
+      "testo": "Questa 10 va 12, va tutti in automatico, ora vedremo l'effetto che davvero è davvero molto bello."
+    },
+    {
+      "inizio": 1270.94,
+      "fine": 1276.94,
+      "testo": "Questa quindi inserisco tutte 3 insieme, giusto per non dirungarci molto con il ragionamento."
+    },
+    {
+      "inizio": 1276.94,
+      "fine": 1283.94,
+      "testo": "Però ricordatevi, quando fate questo, considerate che il primo media che lui inserisce, che cosa è che fa?"
+    },
+    {
+      "inizio": 1283.94,
+      "fine": 1295.94,
+      "testo": "Lo inserisce sopra il primo in assoluto che già c'era, questo non ha più senza ragione di esistere a pesantisce un pochettino, soltanto in file andiamo ad esportare perché realmente questo media è presente,"
+    },
+    {
+      "inizio": 1295.94,
+      "fine": 1312.94,
+      "testo": "ma non è presente perché non si vede, quando vedete non ha una timeline dedicata a passù, quindi provvediamo e lo cancelliamo, non serve assolutissimamente, quindi facciamo cancella, adesso andiamo a guardarci un attimino, tutto quello che abbiamo creato."
+    },
+    {
+      "inizio": 1312.94,
+      "fine": 1345.2,
+      "testo": "Avete visto, ci sono voluti, davvero 3 secondi, avete visto, synchronizzato e una roba devastante ragazzi, potete creare un contenuto non esplosivo, ma di più bellissimo, fruitibile che non stanca."
+    },
+    {
+      "inizio": 1345.2,
+      "fine": 1365.2,
+      "testo": "Non ho voluto fare una roba in barrazzante per fare questo poco di scene, vabbiamo frazionare, porta scena 2, fai nuova scena, c'era, vabbiamo creare un manicomio, adesso in 2 secondi, quando acquisirete la manualità, vedrete che sta roba qui, la farete con una sveltezza che è veramente disarmante."
+    },
+    {
+      "inizio": 1365.2,
+      "fine": 1376.2,
+      "testo": "Ok, però torniamo un attimino all'impostazione layout, perché realmente adesso che abbiamo fatto play e abbiamo un attimino con tezzo, abbiamo sistemato un altro roba."
+    },
+    {
+      "inizio": 1376.2,
+      "fine": 1392.2,
+      "testo": "Giovanna scriveva, può sensili anche le foto, assolutamente sì, si possono importare qualsiasi tipo di contenuto, adesso facciamo una prova, andiamo in my library, questo è un fligio che utilizziamo come testo di contenuto aziendale,"
+    },
+    {
+      "inizio": 1392.2,
+      "fine": 1404.2,
+      "testo": "qui c'è nella cantante, facciamo gente che inseriamo lei, questo è una foto. Ok, potete inserire voi qualsiasi in genere di contenuto, non c'è problema, assolutissimamente."
+    },
+    {
+      "inizio": 1404.2,
+      "fine": 1414.2,
+      "testo": "Però, dobbiamo andare a sistemare che cosa? Vediamo chi ha capito cosa dobbiamo ancora andare a sistemare il nostro layout, perché come vedete, logo c'è qui."
+    },
+    {
+      "inizio": 1415.2,
+      "fine": 1424.2,
+      "testo": "Così che dobbiamo andare ancora a sistemare, cosa dobbiamo dargli come impostazione al nostro layout totale, quindi a uniscena."
+    },
+    {
+      "inizio": 1424.2,
+      "fine": 1442.75,
+      "testo": "Vediamo, vediamo qui c'alio aver primo, scrivetemelo in chat, non c'è nulla così di sul mercato assolutamente, confermo, Matteo è veramente di un intuitimo in un modo disarmante,"
+    },
+    {
+      "inizio": 1443.75,
+      "fine": 1461.75,
+      "testo": "concetto, brava il testo, roberto alla grande, sottotitoli, patrizio, bravissima, sottotitoli lisa, brava i bravituti, ormai vedo che state viaggiando sulla portetta in postazione, perché questo è una in postazione davvero, che sono doverose se vogliamo creare un contenuto fatto bene."
+    },
+    {
+      "inizio": 1461.75,
+      "fine": 1471.75,
+      "testo": "La cosa bellissima che dobbiamo dare era solo una volta questa in postazione, quindi andiamo a fare questa roba qui, li chiamo logicamente ricordatevi, operiamo per livelli."
+    },
+    {
+      "inizio": 1471.75,
+      "fine": 1490.75,
+      "testo": "Quindi se devo modificare il testo i sottotitoli, non mi posso trovare qui, perché questo menu sarà dedicato scena 1 media, fate molto attenzione a questa roba qui, è troppo importante, dove andare sulla sezione corretta, quindi su livello."
+    },
+    {
+      "inizio": 1490.75,
+      "fine": 1496.75,
+      "testo": "In questo caso abbiamo il testo, ed è bello evidenziato con questo colore violacio."
+    },
+    {
+      "inizio": 1496.75,
+      "fine": 1507.75,
+      "testo": "Ora, così che andiamo a fare, abbiamo la possibilità di fare gli allenamenti, quindi lo facciamo allenate a sinistra, lo facciamo al centro, lo facciamo a destra, ognuno embasa la tipologia di contenuto."
+    },
+    {
+      "inizio": 1507.75,
+      "fine": 1518.75,
+      "testo": "La cosa carina, che una volta poteranno far solo questo, era mettere al centro, spostare più su, spostare più giù, bimbombam, oggi, ricordatevi quello che ho detto."
+    },
+    {
+      "inizio": 1518.75,
+      "fine": 1530.75,
+      "testo": "Adesso abbiamo la possibilità di fare questo, se clicchiamo sul nostro bello testo, sottotitoli, abbiamo la possibilità di mettere dove vogliamo."
+    },
+    {
+      "inizio": 1531.75,
+      "fine": 1546.75,
+      "testo": "Vedete che io lo posizionate al centro e ci sono una croce che dice così sei al centro per riciso dell'immagine, perché vi posso assicurare che ci sono tantissimi contenuti, dove il testo metto al centro è troppo bello da vedere."
+    },
+    {
+      "inizio": 1546.75,
+      "fine": 1553.75,
+      "testo": "Anzi si vedrebbe male se posto in altri situazioni."
+    },
+    {
+      "inizio": 1554.75,
+      "fine": 1562.19,
+      "testo": "Occhio, si sta bloccando ragazzi, un letto si è bloccato da Gabriella."
+    },
+    {
+      "inizio": 1562.19,
+      "fine": 1572.19,
+      "testo": "Scrivetevi se avete tutti il video che si bloca o è soltanto qualcuno, così, proseguo."
+    },
+    {
+      "inizio": 1572.19,
+      "fine": 1586.42,
+      "testo": "Scrivete quello per favore in chat. No, non si bloca, io no, io no, no, si vede bene, allora sarà la vostra connessione ragazzi."
+    },
+    {
+      "inizio": 1586.42,
+      "fine": 1596.42,
+      "testo": "Così, giusto per stare tranquilli che gli altri si vere. Monica, l'escritto solo, temo una persona, quindi presumo sia la vostra connessione."
+    },
+    {
+      "inizio": 1596.42,
+      "fine": 1599.42,
+      "testo": "Bene, bene, tutti vedono bene, però seguiamo un attimino."
+    },
+    {
+      "inizio": 1599.42,
+      "fine": 1607.42,
+      "testo": "Allora, trascendola l'alineamento su giù centro, eccetera, eccetera. Andiamo a sistemare una roba prima di tutto."
+    },
+    {
+      "inizio": 1607.42,
+      "fine": 1620.42,
+      "testo": "Ok, andiamo a sistemare la grandezza del font. Con questa bellissima barra che hanno creato, abbiamo la possibilità di vedere il nostro contenuto di il nostro font."
+    },
+    {
+      "inizio": 1621.42,
+      "fine": 1642.42,
+      "testo": "Generalmente si spazia molto. Questo è una questione abbastanza di fluizione di contenuto che va molto a sensazione personale, però che dico che tra 50 e 60 normalmente è una buona dinamica per mantenersi con sul contenuto in modo adeguato."
+    },
+    {
+      "inizio": 1642.42,
+      "fine": 1648.42,
+      "testo": "Quindi non andiamo a arrominarlo, arrominare tanto la scena perché è una percentuale gradevole."
+    },
+    {
+      "inizio": 1648.42,
+      "fine": 1661.42,
+      "testo": "Cosa andiamo a fare? Io, come suol dire, per non sapere nel leggero e in descrivere, quando faccio delle modifiche che sono importanti, inizi a modificare tantiero, bevado sulla scena e gli faccio applica a tutto."
+    },
+    {
+      "inizio": 1661.42,
+      "fine": 1669.42,
+      "testo": "Così sto tranquillo. Non siamo a ecce qualcosa che non va. Io comunque già fatto una specie di salvataggio a tutte le scene. Ok?"
+    },
+    {
+      "inizio": 1669.42,
+      "fine": 1687.42,
+      "testo": "Adesso andiamo però a lavorare sulla scritta. Potete logicamente lavorare al livello di grassetto, corsivo, normale, un po' più light. Vedete come va a togliere una porzione di contorno."
+    },
+    {
+      "inizio": 1688.42,
+      "fine": 1699.42,
+      "testo": "Il grassetto che c'era prima lo va un po' vettinatogliere, perché in alcuni contenuti effettivamente non ci sta, però noi andiamo a fare anche una situazione di extra bold per esempio."
+    },
+    {
+      "inizio": 1699.42,
+      "fine": 1708.42,
+      "testo": "Ok? Potete fare tranquillamente tutte le in teste che volete, ma andate a lavorare soprattutto sulle colorazioni."
+    },
+    {
+      "inizio": 1708.42,
+      "fine": 1717.42,
+      "testo": "Le colorazioni sono troppo importanti, su molti contenuti, si va sul roba del genere che effettivamente sono gradevoli all'occhio."
+    },
+    {
+      "inizio": 1717.42,
+      "fine": 1726.42,
+      "testo": "Si inizi a mettere una roba in background come colore, non questo giallo così acceso magari."
+    },
+    {
+      "inizio": 1727.42,
+      "fine": 1740.42,
+      "testo": "Oggi noi si va su colori gradevoli che possano non disturbare la percezione delle persone e ricordatevi che mi sogna per un po' vettino occhio per farle robbe bene."
+    },
+    {
+      "inizio": 1740.42,
+      "fine": 1746.42,
+      "testo": "C'è il testo così, ma non ci sta iniziata a lavorare su il testo."
+    },
+    {
+      "inizio": 1746.42,
+      "fine": 1756.42,
+      "testo": "Iniziata a fare le prove, come ci sarebbe nero, come ci sarebbe rosso, ovviamente sto facendo degli esempi, rosso splash non modo assurdo."
+    },
+    {
+      "inizio": 1756.42,
+      "fine": 1763.42,
+      "testo": "Ok? Quindi avete la possibilità di lavorare in morto su questa parte qui, ma non è finito."
+    },
+    {
+      "inizio": 1763.42,
+      "fine": 1772.42,
+      "testo": "Hanno inserito degli effetti che sono bellissimi, avete la possibilità di lavorare su effetti, come questo per esempio il fil,"
+    },
+    {
+      "inizio": 1772.42,
+      "fine": 1782.42,
+      "testo": "volevo faccio vedere senza fare play, cosa fa il fil? Va a evidenziare in synchronismo con la narnazione le parole che si stanno narrando."
+    },
+    {
+      "inizio": 1782.42,
+      "fine": 1788.42,
+      "testo": "Quindi il narratore in questo momento sta dicendo cittadì poi dice Roma e si vi denzia Roma con il nero."
+    },
+    {
+      "inizio": 1788.42,
+      "fine": 1801.42,
+      "testo": "Oggi ho questa funzionalità ragazzi, mi raccomando perché con tanti narratori o in alcuni momenti, invece quando è sotto per grade, il synchronismo si va a fare stranvere dire."
+    },
+    {
+      "inizio": 1801.42,
+      "fine": 1810.42,
+      "testo": "Ok? Quindi questa funzionalità ho occupando l'utilizzate perché potrebbe essere molto bella da far vedere, però potrebbe essere la nostra ruina."
+    },
+    {
+      "inizio": 1810.42,
+      "fine": 1822.42,
+      "testo": "Perché il narratore 3, 4, 5 parola avanti che ancora devono scattare le parole come scena e lui rimane indietro, il narratore avanti,"
+    },
+    {
+      "inizio": 1822.42,
+      "fine": 1828.42,
+      "testo": "sottotitoli sono indietro quindi occhio. Però andiamo a fare una cosa carina."
+    },
+    {
+      "inizio": 1828.42,
+      "fine": 1839.42,
+      "testo": "Quindi avete visto che utilizzando stroke è marcato troppo ma perché ha aggiunto un contorno cosa andiamo a fare?"
+    },
+    {
+      "inizio": 1839.42,
+      "fine": 1850.42,
+      "testo": "Andiamo a selezionare logicamente un contorno che vede in contrasto con il testo. Vedete? Andiamo a selezionare Roma del genere, un bianco per dire."
+    },
+    {
+      "inizio": 1850.42,
+      "fine": 1860.42,
+      "testo": "Ok? Dove evidenzia bene la scritta ma non va generare una roba del genere che è veramente orrenda perché lo devasta il testo non è più legibile."
+    },
+    {
+      "inizio": 1860.42,
+      "fine": 1879.42,
+      "testo": "Ok? Quindi andate a fare delle parole con il vostro bella colore. La cosa carina è che cliccando su questo tool che abbiamo lo così e un contavoce avete la possibilità di andare a selezionare probabilmente dei pixel"
+    },
+    {
+      "inizio": 1879.42,
+      "fine": 1889.42,
+      "testo": "che sono contenuti dentro la scena o oppure il logo che ora è un posto molto in trasparenza. Però facciamo vinta che noi,"
+    },
+    {
+      "inizio": 1889.42,
+      "fine": 1898.42,
+      "testo": "vogliamo, questo ho giù c'è un cantiere, una roba del genere, abbiamo la possibilità di applicare questo rosso qui. Vedete?"
+    },
+    {
+      "inizio": 1898.42,
+      "fine": 1909.42,
+      "testo": "E' uno strumento davvero finissimo che hanno fatto perché abbiamo la possibilità di creare un equiliglio tra tutti i colori che andiamo a utilizzare nel nostro video."
+    },
+    {
+      "inizio": 1909.42,
+      "fine": 1918.42,
+      "testo": "Ovviamente adesso non andrò a modificarle, non siamo qui per fare una lezione di grafica e di accostamenti di colori ma per farvi vedere gli strumenti."
+    },
+    {
+      "inizio": 1919.42,
+      "fine": 1932.42,
+      "testo": "Andiamo a fare il text color. Text color è una funzionalità che quando il narratore narra si evidencia con questo color e la parola un po' è la funzione fil,"
+    },
+    {
+      "inizio": 1932.42,
+      "fine": 1945.42,
+      "testo": "son da dove il filo opera in trasparenza e poi evidenzia con il colore scelto del font, la parola text color invece la fa vedere e qui avete la possibilità davvero di spaziale con tanti effetti,"
+    },
+    {
+      "inizio": 1945.42,
+      "fine": 1954.42,
+      "testo": "ma giunto gli zoom sono carini se li utilizzate moderatamente, suttanti, contenuti sono veramente fantastici."
+    },
+    {
+      "inizio": 1955.42,
+      "fine": 1969.42,
+      "testo": "Abbiamo la possibilità poi di fare delle cose tine davvero carine come l'animazione, l'animazione che della scena quindi in ingresso ho in uscita."
+    },
+    {
+      "inizio": 1970.42,
+      "fine": 1980.42,
+      "testo": "Potete fare tantissime cose come la misulizzazione anche della tracci audio che sta scorrendo e vi posso garantirvi anche questo,"
+    },
+    {
+      "inizio": 1980.42,
+      "fine": 1997.42,
+      "testo": "è una bellissima cosa che potrete trovare in tanti tanti contenuti e che potete logicamente spostare dove meglio credete, potete addirittura portare in alto o portare in basso e puoi spostare di nuovo i sottotitoli."
+    },
+    {
+      "inizio": 1998.42,
+      "fine": 2010.42,
+      "testo": "Quindi abbiamo veramente la possibilità di spaziali in un modo incredibile, però andiamo a vedere delle altre robbettine davvero figli che hanno implementato,"
+    },
+    {
+      "inizio": 2011.42,
+      "fine": 2025.42,
+      "testo": "e Matteo scrive Occio alle date anche, assolutamente sì le date, ne abbiamo parlato abundantemente, però lo andiamo anche a vedere, in questo caso lui cosa narra, narra sicuramente in inglese,"
+    },
+    {
+      "inizio": 2025.42,
+      "fine": 2040.42,
+      "testo": "vediamo perché mi sembra che prima abbiano arrato in inglese, non ho preparato, ok, se vencogli, ora questo è una thematica molto calda tra voi studenti."
+    },
+    {
+      "inizio": 2040.42,
+      "fine": 2049.42,
+      "testo": "Si può risolvere in diversi modi, in diversi situazioni, c'è chi, come me, se non ha la possibilità di far restruzione a flichi,"
+    },
+    {
+      "inizio": 2049.42,
+      "fine": 2067.42,
+      "testo": "che ora mi faccio vedere che cos'è, va a fare semplicemente questo, se ho finito all'utente, non fregerà nulla, non si destabilizza che legge anche 1960 scritto all'etere rispetto a un numero, ok?"
+    },
+    {
+      "inizio": 2067.42,
+      "fine": 2074.42,
+      "testo": "Non si destabilizza assolutissimamente, quindi potete farlo sia scritto o potete andare a restruire flichi."
+    },
+    {
+      "inizio": 2074.42,
+      "fine": 2084.42,
+      "testo": "Carla io scrive il letter, sì assolutamente, specie quando ci sono letter corte, non numeri corti, ma proprio alla grande non ci pensate,"
+    },
+    {
+      "inizio": 2084.42,
+      "fine": 2089.42,
+      "testo": "ma potete fare anche restruzione all'intelligenza artificiale, come funziona?"
+    },
+    {
+      "inizio": 2089.42,
+      "fine": 2103.9,
+      "testo": "Ripostiamo qui sette, andiamo sul mur e andiamo nella parte di mappa delle pronunce, quindi andiamo a istruire quello che è flichi,"
+    },
+    {
+      "inizio": 2103.9,
+      "fine": 2117.9,
+      "testo": "dicendo gli 8 bello mio, quando che tenete di fare in modo corretto le pronunce, però ricordatevi che lui parte con un buoso vero di impostazione base che questa Elsa,"
+    },
+    {
+      "inizio": 2117.9,
+      "fine": 2125.9,
+      "testo": "lo dobbiamo ricordarci che stiamo parando con Enzo, quindi andiamo a trovare il nostro Enzo, innanzitutto andiamo a digli che è un maschio,"
+    },
+    {
+      "inizio": 2125.9,
+      "fine": 2137.9,
+      "testo": "così ci toglie tutte le donne, abbiamo al corpoto ottimo, magari lo individuiamo più facilmente e questo, quindi diciamo guarda che io devo lavorare su Enzo,"
+    },
+    {
+      "inizio": 2137.9,
+      "fine": 2143.9,
+      "testo": "lo clicchiamo e facciamo selector, in questo momento stiamo lavorando su Enzo, che cosa andiamo a fare?"
+    },
+    {
+      "inizio": 2143.9,
+      "fine": 2159.55,
+      "testo": "Andiamo per esempio scrivere questo e il numero originale che trova nel testo, sentiamo come lo vanno a arrare, 7, ok?"
+    },
+    {
+      "inizio": 2159.55,
+      "fine": 2173.76,
+      "testo": "Ora andiamo quindi diciamo 7, ci ho un play, 7, dovete trovare gli accenti corretti da inserire questo è un altro tema molto caldo, ok?"
+    },
+    {
+      "inizio": 2173.76,
+      "fine": 2183.76,
+      "testo": "Quindi state attienti questa roba qui, specie se lo state impostando, diciamo per la prima volta, adesso io non ho preparato nulle in anticipo per questa live,"
+    },
+    {
+      "inizio": 2183.76,
+      "fine": 2201.26,
+      "testo": "quindi andrò a fare delle prove con voi, ci metto un accento così e vediamo come se che succede, 7, ok?"
+    },
+    {
+      "inizio": 2201.26,
+      "fine": 2211.26,
+      "testo": "Abbiamo trovare il giusto equilibrio perché potremmo anche non trovarlo, ve lo dico perché io sono uscito matto a dargli un comando su un numero molto lungo,"
+    },
+    {
+      "inizio": 2211.26,
+      "fine": 2219.26,
+      "testo": "non ho mai trovato la possibilità di farlo, però poi lo scritto alle lettere ragazzi, dobbiamo andare veloci, non c'è nefrega nulla,"
+    },
+    {
+      "inizio": 2219.26,
+      "fine": 2226.26,
+      "testo": "gli diamo la spunta, gli diamo il visto e quando vedete lui lo aggiunto a una mappa delle pronunce, ok?"
+    },
+    {
+      "inizio": 2226.26,
+      "fine": 2233.26,
+      "testo": "E li facciamo danno, ok, io ho fatto, mi sta bene così, gli diamo a fare un play perché poterate che arridotto la scena, vedete?"
+    },
+    {
+      "inizio": 2233.26,
+      "fine": 2241.26,
+      "testo": "A quansione ho scesi, 1-0-6 e qui è corta la scena 1, vedete? La ridotta tantissimo, bene, quindi diamo a fare un play,"
+    },
+    {
+      "inizio": 2241.26,
+      "fine": 2254.71,
+      "testo": "avete sentito l'ha fatto molto bene, 7 con gli, l'hanno arrato benissimo, ok?"
+    },
+    {
+      "inizio": 2254.71,
+      "fine": 2262.71,
+      "testo": "Perché quando andate alla mappa delle pronunce, considerate che lui sta leggendo esclusivamente quel numero,"
+    },
+    {
+      "inizio": 2262.71,
+      "fine": 2272.71,
+      "testo": "ma quando va a fare la rarrazione, avgancia il numero con il testo, ok? Provate la fare questa roba, noi non senti,"
+    },
+    {
+      "inizio": 2272.71,
+      "fine": 2282.71,
+      "testo": "ah non sentite flichi, ok? Strano, pensavo si sentisse sinceramente, provate a farla voi in autonomia e vedete che funziona molto bene,"
+    },
+    {
+      "inizio": 2282.71,
+      "fine": 2290.71,
+      "testo": "quindi andate a inserire nella mappa delle pronunce un numero piccolo, come questo 1, 2, 3, 4, 5, 6, 7,"
+    },
+    {
+      "inizio": 2290.71,
+      "fine": 2300.71,
+      "testo": "e fate la prova facendo play perché lui accorvera con il testo, ok? Quindi si fate play dalla mappa delle pronunce,"
+    },
+    {
+      "inizio": 2300.71,
+      "fine": 2307.71,
+      "testo": "ma poi tornate, fate play sulla scena perché per esempio adesso nella mappa delle pronunce non lo dava in modo corretto,"
+    },
+    {
+      "inizio": 2307.71,
+      "fine": 2322.71,
+      "testo": "si sentiva un sette, un po' che tiro inglesizzato, ok? Ma se noi utilizziamo poi sette nella rarrazione, la patte in modo impeccabile,"
+    },
+    {
+      "inizio": 2322.71,
+      "fine": 2332.71,
+      "testo": "si sente praticamente, vai struito ad ogni video, no, quando noi distruiamo una volta sola, in narratore, attenzione,"
+    },
+    {
+      "inizio": 2332.71,
+      "fine": 2340.71,
+      "testo": "io ho istruito, vedete come ritorna sempre Elsa, io devo ritornare a Enzo, ok, se è quello che mi interessa nello specifico,"
+    },
+    {
+      "inizio": 2340.71,
+      "fine": 2348.71,
+      "testo": "quindi istruiamo in narratori e poi c'è la mia memoria, io questo non so neanche quando l'ha approfatto,"
+    },
+    {
+      "inizio": 2348.71,
+      "fine": 2354.71,
+      "testo": "forse in un'rozione di flichene, quando lo ricordamo il 2 e 1, come avete visto era la mia memoria, ok?"
+    },
+    {
+      "inizio": 2354.71,
+      "fine": 2360.71,
+      "testo": "Perché noi li mantiene, stiamo istruendo, un po' come certi GPT quando gli diamo gli ordini, no?"
+    },
+    {
+      "inizio": 2360.71,
+      "fine": 2366.71,
+      "testo": "Fai questa cosa qui e ricordati che l'amo di sempre in questo modo, bene? Tante volte scarrella, no?"
+    },
+    {
+      "inizio": 2366.71,
+      "fine": 2374.71,
+      "testo": "Perché comunque intelligenza artificiale non è un umano però mantengono tantissime memoria, ok?"
+    },
+    {
+      "inizio": 2374.71,
+      "fine": 2382.71,
+      "testo": "Bene, adesso andiamo a fare una cosa davvero carina che è stata implementata anche questo da poco."
+    },
+    {
+      "inizio": 2382.71,
+      "fine": 2389.71,
+      "testo": "I potizziamo che noi dividiamo in scena, il colosseo bla bla bla,"
+    },
+    {
+      "inizio": 2389.71,
+      "fine": 2396.71,
+      "testo": "spettato in giochi dei gradiatori, di facciamo un biroll, quindi ce lo ha diviso,"
+    },
+    {
+      "inizio": 2396.71,
+      "fine": 2401.71,
+      "testo": "guardate che c'è sempre la scena principale sotto la cosa già cancellare, non beneficiano nulla,"
+    },
+    {
+      "inizio": 2401.71,
+      "fine": 2408.71,
+      "testo": "perché mi ha gensereito il primo media, però oggi io per esempio non ho preso la i, ok?"
+    },
+    {
+      "inizio": 2408.71,
+      "fine": 2415.71,
+      "testo": "Quindi queste sono errori che dovete anche cercare di evitare, ok?"
+    },
+    {
+      "inizio": 2415.71,
+      "fine": 2419.71,
+      "testo": "Tra gli eventi più spettacola ricevere le combattimenti tra i, in cui i gradiatori,"
+    },
+    {
+      "inizio": 2419.71,
+      "fine": 2425.71,
+      "testo": "in cui i geniare combattivano contro gli male selvatici come i leoni, guardate cosa andiamo a fare?"
+    },
+    {
+      "inizio": 2425.71,
+      "fine": 2429.71,
+      "testo": "Vado a fare un biroll fino a come?"
+    },
+    {
+      "inizio": 2429.71,
+      "fine": 2440.71,
+      "testo": "Poi mi prendo i leoni per contro loro, e voi direte ma come creiamo un media solo per i leoni di 3 secondi?"
+    },
+    {
+      "inizio": 2440.71,
+      "fine": 2444.71,
+      "testo": "Sì, ora vi faccio vedere perché, ok?"
+    },
+    {
+      "inizio": 2444.71,
+      "fine": 2450.71,
+      "testo": "Sì, può darsi anche ragazzi, sono diversi aggiornamenti che sono stati fatti,"
+    },
+    {
+      "inizio": 2450.71,
+      "fine": 2454.71,
+      "testo": "io la mappe delle pronunce non l'ha utilizzato mai, vi ripeto."
+    },
+    {
+      "inizio": 2454.71,
+      "fine": 2459.71,
+      "testo": "Quindi odersi pure che la tenga solo per questo progetto e non per gli altri,"
+    },
+    {
+      "inizio": 2459.71,
+      "fine": 2464.71,
+      "testo": "però vi posso dire che io ho utilizzato in passato su diversi progetti e la mantiene speggio,"
+    },
+    {
+      "inizio": 2464.71,
+      "fine": 2470.71,
+      "testo": "se voi fate un qualcosa che mi ho detto sempre di fare, quindi vi fate un'impostazione di un file,"
+    },
+    {
+      "inizio": 2470.71,
+      "fine": 2473.71,
+      "testo": "campione, uno demo e poi fate duplica."
+    },
+    {
+      "inizio": 2473.71,
+      "fine": 2479.71,
+      "testo": "Se voi fate questa roba qui vedrete che la mappe delle pronunce rimane sempre uguale,"
+    },
+    {
+      "inizio": 2479.71,
+      "fine": 2484.71,
+      "testo": "quindi la restruzione e la mantiene, quindi ricordatevi di questo aspetto."
+    },
+    {
+      "inizio": 2484.71,
+      "fine": 2489.71,
+      "testo": "Una volta che avete creato il vostro layout, lasciatelo all'fermo,"
+    },
+    {
+      "inizio": 2489.71,
+      "fine": 2495.71,
+      "testo": "createvi una demo andate dietro, vediamo se lo faccio,"
+    },
+    {
+      "inizio": 2495.71,
+      "fine": 2498.71,
+      "testo": "ecco per esempio, questa nella precedente lezione ho fatto questo."
+    },
+    {
+      "inizio": 2498.71,
+      "fine": 2504.71,
+      "testo": "Demo non utilizzare io qui ho insegnato all'intelligenza artificiale tutto,"
+    },
+    {
+      "inizio": 2504.71,
+      "fine": 2508.71,
+      "testo": "ho già il logo inserito, ho genuodermark, ho già la musica,"
+    },
+    {
+      "inizio": 2508.71,
+      "fine": 2511.71,
+      "testo": "vado qui e faccio duplita."
+    },
+    {
+      "inizio": 2511.71,
+      "fine": 2517.71,
+      "testo": "Quindi, di conseguenza, mi ritrovo già tutte le istruzioni che avevo dato per quanto di guarda"
+    },
+    {
+      "inizio": 2517.71,
+      "fine": 2519.71,
+      "testo": "per esempio la mappe delle pronunce."
+    },
+    {
+      "inizio": 2519.71,
+      "fine": 2523.71,
+      "testo": "Quindi oggi a questa roba perché è davvero importante per quanto vi riguarda."
+    },
+    {
+      "inizio": 2523.71,
+      "fine": 2525.71,
+      "testo": "Però torniamo le nostre scene."
+    },
+    {
+      "inizio": 2525.71,
+      "fine": 2530.71,
+      "testo": "Io mi sono messo adesso i leoni e poi va da creare questa scena unica,"
+    },
+    {
+      "inizio": 2530.71,
+      "fine": 2536.71,
+      "testo": "per chi voglio vedere, far vedere una roba che è troppo figa che hanno utilizzato,"
+    },
+    {
+      "inizio": 2536.71,
+      "fine": 2543.71,
+      "testo": "che hanno creato. Intanto, guardate una cosa, come potete notare,"
+    },
+    {
+      "inizio": 2543.71,
+      "fine": 2549.71,
+      "testo": "avete la possibilità, lui ci propina una timeline,"
+    },
+    {
+      "inizio": 2549.71,
+      "fine": 2555.71,
+      "testo": "quindi ci dice questo midia è presente da 23 secondi a 45."
+    },
+    {
+      "inizio": 2555.71,
+      "fine": 2562.71,
+      "testo": "Ma come vedete, questa scena dei leoni, che era da 3 secondi, va da 22-26,"
+    },
+    {
+      "inizio": 2562.71,
+      "fine": 2567.71,
+      "testo": "quindi questa gli passa sopra, a 4 che non facciamo una roba."
+    },
+    {
+      "inizio": 2567.71,
+      "fine": 2570.71,
+      "testo": "Ho questa, la mettiamo sotto."
+    },
+    {
+      "inizio": 2570.71,
+      "fine": 2578.71,
+      "testo": "Ok, perché dai puntini potete salire e scendere di livello un midia,"
+    },
+    {
+      "inizio": 2578.71,
+      "fine": 2581.71,
+      "testo": "oppure clicchiamo sulla scena."
+    },
+    {
+      "inizio": 2581.71,
+      "fine": 2585.71,
+      "testo": "Andiamo sotto e vi ha abbritato in automatico la funzione timing,"
+    },
+    {
+      "inizio": 2585.71,
+      "fine": 2587.71,
+      "testo": "quindi il timing è che cos'è."
+    },
+    {
+      "inizio": 2587.71,
+      "fine": 2591.71,
+      "testo": "Ci dà la possibilità di andare a giocare la roba ulteriormente con i secondi,"
+    },
+    {
+      "inizio": 2591.71,
+      "fine": 2596.71,
+      "testo": "è vero che lui mi ha detto che va da 23 seconda a 45."
+    },
+    {
+      "inizio": 2596.71,
+      "fine": 2599.71,
+      "testo": "Ma meno rinteressa perché questa mi parta a 26,"
+    },
+    {
+      "inizio": 2599.71,
+      "fine": 2605.71,
+      "testo": "quindi io prendo come vedete qua giù, i secondi andranno a aumentare 25,"
+    },
+    {
+      "inizio": 2605.71,
+      "fine": 2607.71,
+      "testo": "26 ok?"
+    },
+    {
+      "inizio": 2607.71,
+      "fine": 2613.71,
+      "testo": "Quindi io so che questa scena, adesso da 22-26 c'è quella delleoni,"
+    },
+    {
+      "inizio": 2613.71,
+      "fine": 2616.71,
+      "testo": "da 26-45 c'è tutto il resto, mi sta bene."
+    },
+    {
+      "inizio": 2616.71,
+      "fine": 2619.71,
+      "testo": "Ok, perché voglio che i leoni si vedono più possibile,"
+    },
+    {
+      "inizio": 2619.71,
+      "fine": 2622.71,
+      "testo": "se non altrimenti in quel modo si vedevano per un secondo."
+    },
+    {
+      "inizio": 2622.71,
+      "fine": 2625.71,
+      "testo": "Ok, andiamo a vedere che cosa succede."
+    },
+    {
+      "inizio": 2625.71,
+      "fine": 2630.71,
+      "testo": "Intanto, una volta che ho selezionato la scena,"
+    },
+    {
+      "inizio": 2630.71,
+      "fine": 2636.71,
+      "testo": "io posso fare la scelta di qualsiasi contenuto,"
+    },
+    {
+      "inizio": 2636.71,
+      "fine": 2639.71,
+      "testo": "come abbiamo detto prima, ce l'abbiamo ad importare,"
+    },
+    {
+      "inizio": 2639.71,
+      "fine": 2642.71,
+      "testo": "se non dovessimo trovarlo in flichi,"
+    },
+    {
+      "inizio": 2642.71,
+      "fine": 2645.71,
+      "testo": "oppure possiamo fare anche diverse altre situazioni,"
+    },
+    {
+      "inizio": 2645.71,
+      "fine": 2646.71,
+      "testo": "ancora mi prospecto."
+    },
+    {
+      "inizio": 2646.71,
+      "fine": 2649.71,
+      "testo": "La cosa su cui voglio concentrare sono delle robbe particolare"
+    },
+    {
+      "inizio": 2649.71,
+      "fine": 2651.71,
+      "testo": "che sono stati implementate da poco,"
+    },
+    {
+      "inizio": 2651.71,
+      "fine": 2653.71,
+      "testo": "cosa succede?"
+    },
+    {
+      "inizio": 2653.71,
+      "fine": 2656.71,
+      "testo": "Noi abbiamo sempre qui la possibilità di aggiungere un livello."
+    },
+    {
+      "inizio": 2656.71,
+      "fine": 2658.71,
+      "testo": "Tenete le considerazioni questa roba,"
+    },
+    {
+      "inizio": 2658.71,
+      "fine": 2661.71,
+      "testo": "perché potete fare delle cose veramente carine."
+    },
+    {
+      "inizio": 2661.71,
+      "fine": 2665.71,
+      "testo": "Se facciamo ad layer, e poi facciamo audio,"
+    },
+    {
+      "inizio": 2665.71,
+      "fine": 2667.71,
+      "testo": "cosa che succede?"
+    },
+    {
+      "inizio": 2667.71,
+      "fine": 2671.71,
+      "testo": "C'è andata a creare quassù un ulteriore audio"
+    },
+    {
+      "inizio": 2671.71,
+      "fine": 2674.71,
+      "testo": "che non è la tracia audio, ok?"
+    },
+    {
+      "inizio": 2674.71,
+      "fine": 2676.71,
+      "testo": "Quindi cosa chiediamo a fare?"
+    },
+    {
+      "inizio": 2676.71,
+      "fine": 2679.71,
+      "testo": "Scegliamo un file,"
+    },
+    {
+      "inizio": 2679.71,
+      "fine": 2684.71,
+      "testo": "ma vi voglio far vedere che cosa voglio andare a fare,"
+    },
+    {
+      "inizio": 2684.71,
+      "fine": 2687.71,
+      "testo": "perché mi è venuta in questo momento l'idea,"
+    },
+    {
+      "inizio": 2687.71,
+      "fine": 2691.71,
+      "testo": "guardando il testo."
+    },
+    {
+      "inizio": 2691.71,
+      "fine": 2693.71,
+      "testo": "Quindi vado su Generate,"
+    },
+    {
+      "inizio": 2693.71,
+      "fine": 2697.71,
+      "testo": "uno strumento davvero figissimo che hanno fatto."
+    },
+    {
+      "inizio": 2697.71,
+      "fine": 2700.71,
+      "testo": "In questo caso ricordatevi che sono su audio,"
+    },
+    {
+      "inizio": 2700.71,
+      "fine": 2703.71,
+      "testo": "quindi tutte le struttioni che io darò adesso"
+    },
+    {
+      "inizio": 2703.71,
+      "fine": 2705.71,
+      "testo": "a l'intelligenza attivici alla flichi,"
+    },
+    {
+      "inizio": 2705.71,
+      "fine": 2707.71,
+      "testo": "saranno relativamente all'audio."
+    },
+    {
+      "inizio": 2707.71,
+      "fine": 2708.71,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 2708.71,
+      "fine": 2710.71,
+      "testo": "Quindi io ne vado sul traduttore,"
+    },
+    {
+      "inizio": 2710.71,
+      "fine": 2712.71,
+      "testo": "perché non lo so come si scrive,"
+    },
+    {
+      "inizio": 2712.71,
+      "fine": 2714.71,
+      "testo": "facciamo il file inizio a scrivere forte,"
+    },
+    {
+      "inizio": 2714.71,
+      "fine": 2718.71,
+      "testo": "rungito leone."
+    },
+    {
+      "inizio": 2718.71,
+      "fine": 2719.71,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 2719.71,
+      "fine": 2720.71,
+      "testo": "Bene?"
+    },
+    {
+      "inizio": 2720.71,
+      "fine": 2723.22,
+      "testo": "Lo tradotto,"
+    },
+    {
+      "inizio": 2723.22,
+      "fine": 2725.22,
+      "testo": "lo inserisco qui,"
+    },
+    {
+      "inizio": 2725.22,
+      "fine": 2726.22,
+      "testo": "faccio Generate."
+    },
+    {
+      "inizio": 2726.22,
+      "fine": 2736.36,
+      "testo": "Ora mi dispiace che voi non sentite effettivamente"
+    },
+    {
+      "inizio": 2736.36,
+      "fine": 2738.36,
+      "testo": "quello che va a creare,"
+    },
+    {
+      "inizio": 2738.36,
+      "fine": 2743.56,
+      "testo": "ma mi posso garantire che è figissimo,"
+    },
+    {
+      "inizio": 2743.56,
+      "fine": 2744.56,
+      "testo": "e avete la possibilità,"
+    },
+    {
+      "inizio": 2744.56,
+      "fine": 2745.56,
+      "testo": "se non vi piace,"
+    },
+    {
+      "inizio": 2745.56,
+      "fine": 2747.56,
+      "testo": "magari lo volete più ruggente,"
+    },
+    {
+      "inizio": 2747.56,
+      "fine": 2749.56,
+      "testo": "di rigenerarlo."
+    },
+    {
+      "inizio": 2749.56,
+      "fine": 2750.56,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 2750.56,
+      "fine": 2752.56,
+      "testo": "In questo caso adesso quello che sarà,"
+    },
+    {
+      "inizio": 2752.56,
+      "fine": 2754.56,
+      "testo": "non manteniamo per chi vi voglio vedere,"
+    },
+    {
+      "inizio": 2754.56,
+      "fine": 2756.56,
+      "testo": "può far vedere che cosa va da fare,"
+    },
+    {
+      "inizio": 2756.56,
+      "fine": 2757.56,
+      "testo": "come accrocchio,"
+    },
+    {
+      "inizio": 2757.56,
+      "fine": 2759.56,
+      "testo": "che io la parola diamo sempre,"
+    },
+    {
+      "inizio": 2759.56,
+      "fine": 2760.56,
+      "testo": "tanto utilizzare."
+    },
+    {
+      "inizio": 2760.56,
+      "fine": 2762.56,
+      "testo": "Usa questo audio,"
+    },
+    {
+      "inizio": 2762.56,
+      "fine": 2764.56,
+      "testo": "così che succede adesso."
+    },
+    {
+      "inizio": 2764.56,
+      "fine": 2766.56,
+      "testo": "Come vedete noi abbiamo"
+    },
+    {
+      "inizio": 2766.56,
+      "fine": 2768.56,
+      "testo": "il ruggito delleone qui inserito,"
+    },
+    {
+      "inizio": 2768.56,
+      "fine": 2770.56,
+      "testo": "che cosa succede?"
+    },
+    {
+      "inizio": 2770.56,
+      "fine": 2772.56,
+      "testo": "Andiamo in timing,"
+    },
+    {
+      "inizio": 2772.56,
+      "fine": 2774.56,
+      "testo": "andiamo a fare una cosa figissima,"
+    },
+    {
+      "inizio": 2774.56,
+      "fine": 2775.56,
+      "testo": "andiamo su timing,"
+    },
+    {
+      "inizio": 2775.56,
+      "fine": 2777.56,
+      "testo": "ci ricordiamo il leone che è questo,"
+    },
+    {
+      "inizio": 2777.56,
+      "fine": 2779.56,
+      "testo": "da quale seconda,"
+    },
+    {
+      "inizio": 2779.56,
+      "fine": 2781.56,
+      "testo": "da 22-26, ok?"
+    },
+    {
+      "inizio": 2781.56,
+      "fine": 2782.56,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 2782.56,
+      "fine": 2784.56,
+      "testo": "ritorniamo qui,"
+    },
+    {
+      "inizio": 2784.56,
+      "fine": 2785.56,
+      "testo": "guardo su timing,"
+    },
+    {
+      "inizio": 2785.56,
+      "fine": 2786.56,
+      "testo": "vi dedico, caro,"
+    },
+    {
+      "inizio": 2786.56,
+      "fine": 2787.56,
+      "testo": "fai questa roba qui?"
+    },
+    {
+      "inizio": 2787.56,
+      "fine": 2790.56,
+      "testo": "Porto lo da 22 a 26,"
+    },
+    {
+      "inizio": 2790.56,
+      "fine": 2792.94,
+      "testo": "ok?"
+    },
+    {
+      "inizio": 2792.94,
+      "fine": 2794.94,
+      "testo": "Sono 22,"
+    },
+    {
+      "inizio": 2794.94,
+      "fine": 2796.94,
+      "testo": "queste sono i secondi di durata,"
+    },
+    {
+      "inizio": 2796.94,
+      "fine": 2797.94,
+      "testo": "mi servono 4 secondi,"
+    },
+    {
+      "inizio": 2797.94,
+      "fine": 2799.94,
+      "testo": "se voglio che sia 26."
+    },
+    {
+      "inizio": 2799.94,
+      "fine": 2800.94,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 2800.94,
+      "fine": 2802.94,
+      "testo": "Questo ruggito delleone,"
+    },
+    {
+      "inizio": 2802.94,
+      "fine": 2803.94,
+      "testo": "in questo momento,"
+    },
+    {
+      "inizio": 2803.94,
+      "fine": 2805.94,
+      "testo": "sarà synchronizzato"
+    },
+    {
+      "inizio": 2805.94,
+      "fine": 2808.94,
+      "testo": "preciso alla scena"
+    },
+    {
+      "inizio": 2808.94,
+      "fine": 2809.94,
+      "testo": "che faremo vedere leone,"
+    },
+    {
+      "inizio": 2809.94,
+      "fine": 2811.94,
+      "testo": "è una figata pazzesca,"
+    },
+    {
+      "inizio": 2811.94,
+      "fine": 2813.94,
+      "testo": "ragazzi, potete fare degli effetti"
+    },
+    {
+      "inizio": 2813.94,
+      "fine": 2816.94,
+      "testo": "che sono veramente fantastici."
+    },
+    {
+      "inizio": 2816.94,
+      "fine": 2818.94,
+      "testo": "Non abbiamo veramente più limiti"
+    },
+    {
+      "inizio": 2818.94,
+      "fine": 2820.94,
+      "testo": "a quella che è la creatività"
+    },
+    {
+      "inizio": 2820.94,
+      "fine": 2822.94,
+      "testo": "ad afflicare sulle scene."
+    },
+    {
+      "inizio": 2822.94,
+      "fine": 2824.94,
+      "testo": "La trasferta mi pone un dubbio,"
+    },
+    {
+      "inizio": 2824.94,
+      "fine": 2826.94,
+      "testo": "la muriamo magari tanto"
+    },
+    {
+      "inizio": 2826.94,
+      "fine": 2827.94,
+      "testo": "e tutti sulle stesse nichi,"
+    },
+    {
+      "inizio": 2827.94,
+      "fine": 2828.94,
+      "testo": "no?"
+    },
+    {
+      "inizio": 2828.94,
+      "fine": 2829.94,
+      "testo": "Ha diciamo qualche giorno in YouTube"
+    },
+    {
+      "inizio": 2829.94,
+      "fine": 2830.94,
+      "testo": "ci direà da questo conteno"
+    },
+    {
+      "inizio": 2830.94,
+      "fine": 2832.94,
+      "testo": "del duplicato solo perché"
+    },
+    {
+      "inizio": 2832.94,
+      "fine": 2833.94,
+      "testo": "utilizziamo magari"
+    },
+    {
+      "inizio": 2833.94,
+      "fine": 2835.94,
+      "testo": "tanti la stessa scena,"
+    },
+    {
+      "inizio": 2835.94,
+      "fine": 2837.94,
+      "testo": "utilizzando questi tool,"
+    },
+    {
+      "inizio": 2837.94,
+      "fine": 2838.94,
+      "testo": "non si crea più neanche,"
+    },
+    {
+      "inizio": 2838.94,
+      "fine": 2840.94,
+      "testo": "questa possibilità."
+    },
+    {
+      "inizio": 2840.94,
+      "fine": 2843.94,
+      "testo": "Se ipodizziamo 100 persone di noi,"
+    },
+    {
+      "inizio": 2843.94,
+      "fine": 2844.94,
+      "testo": "che in questo momento"
+    },
+    {
+      "inizio": 2844.94,
+      "fine": 2846.94,
+      "testo": "stanno lavorando su un video"
+    },
+    {
+      "inizio": 2846.94,
+      "fine": 2847.94,
+      "testo": "sul Roma,"
+    },
+    {
+      "inizio": 2847.94,
+      "fine": 2849.94,
+      "testo": "con lo stesso Covid,"
+    },
+    {
+      "inizio": 2849.94,
+      "fine": 2851.94,
+      "testo": "è quasi impossibile"
+    },
+    {
+      "inizio": 2851.94,
+      "fine": 2852.94,
+      "testo": "che il contenuto"
+    },
+    {
+      "inizio": 2852.94,
+      "fine": 2854.94,
+      "testo": "sarà uguale per tutte e cento"
+    },
+    {
+      "inizio": 2854.94,
+      "fine": 2855.94,
+      "testo": "le persone,"
+    },
+    {
+      "inizio": 2855.94,
+      "fine": 2856.94,
+      "testo": "perché avete visto,"
+    },
+    {
+      "inizio": 2856.94,
+      "fine": 2857.94,
+      "testo": "io ho utilizzato"
+    },
+    {
+      "inizio": 2857.94,
+      "fine": 2858.94,
+      "testo": "tanti situazioni di 30,"
+    },
+    {
+      "inizio": 2858.94,
+      "fine": 2859.94,
+      "testo": "ora vi va a fare vedere"
+    },
+    {
+      "inizio": 2859.94,
+      "fine": 2860.94,
+      "testo": "delle cose carine"
+    },
+    {
+      "inizio": 2860.94,
+      "fine": 2861.94,
+      "testo": "anche da applicare."
+    },
+    {
+      "inizio": 2861.94,
+      "fine": 2863.94,
+      "testo": "Voi ne avete utilizzato"
+    },
+    {
+      "inizio": 2863.94,
+      "fine": 2864.94,
+      "testo": "altre,"
+    },
+    {
+      "inizio": 2864.94,
+      "fine": 2865.94,
+      "testo": "abbiamo centinaia di scene"
+    },
+    {
+      "inizio": 2865.94,
+      "fine": 2866.94,
+      "testo": "da poter utilizzare"
+    },
+    {
+      "inizio": 2866.94,
+      "fine": 2868.94,
+      "testo": "e matematicamente impossibili"
+    },
+    {
+      "inizio": 2868.94,
+      "fine": 2869.94,
+      "testo": "che essere con condizioni"
+    },
+    {
+      "inizio": 2869.94,
+      "fine": 2870.94,
+      "testo": "del genere."
+    },
+    {
+      "inizio": 2870.94,
+      "fine": 2871.94,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 2871.94,
+      "fine": 2872.94,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 2872.94,
+      "fine": 2873.94,
+      "testo": "abbiamo fatto una cosa"
+    },
+    {
+      "inizio": 2873.94,
+      "fine": 2874.94,
+      "testo": "veramente,"
+    },
+    {
+      "inizio": 2874.94,
+      "fine": 2875.94,
+      "testo": "veramente bella,"
+    },
+    {
+      "inizio": 2875.94,
+      "fine": 2876.94,
+      "testo": "però,"
+    },
+    {
+      "inizio": 2876.94,
+      "fine": 2877.94,
+      "testo": "non è finita qui."
+    },
+    {
+      "inizio": 2877.94,
+      "fine": 2878.94,
+      "testo": "Se noi che li chiamo"
+    },
+    {
+      "inizio": 2878.94,
+      "fine": 2879.94,
+      "testo": "su scena,"
+    },
+    {
+      "inizio": 2879.94,
+      "fine": 2880.94,
+      "testo": "ok?"
+    },
+    {
+      "inizio": 2880.94,
+      "fine": 2881.94,
+      "testo": "Io in questo momento,"
+    },
+    {
+      "inizio": 2881.94,
+      "fine": 2882.94,
+      "testo": "ho clicato qui"
+    },
+    {
+      "inizio": 2882.94,
+      "fine": 2884.94,
+      "testo": "sul banner di scena."
+    },
+    {
+      "inizio": 2884.94,
+      "fine": 2885.94,
+      "testo": "Come vedete,"
+    },
+    {
+      "inizio": 2885.94,
+      "fine": 2886.94,
+      "testo": "non c'è nulla"
+    },
+    {
+      "inizio": 2886.94,
+      "fine": 2888.94,
+      "testo": "evidenziato qui in rosa,"
+    },
+    {
+      "inizio": 2888.94,
+      "fine": 2890.94,
+      "testo": "ma qui mi riporta scena 3."
+    },
+    {
+      "inizio": 2890.94,
+      "fine": 2892.94,
+      "testo": "E voi potete fare"
+    },
+    {
+      "inizio": 2892.94,
+      "fine": 2893.94,
+      "testo": "delle cose veramente"
+    },
+    {
+      "inizio": 2893.94,
+      "fine": 2894.94,
+      "testo": "belle,"
+    },
+    {
+      "inizio": 2894.94,
+      "fine": 2895.94,
+      "testo": "come la transizione"
+    },
+    {
+      "inizio": 2895.94,
+      "fine": 2896.94,
+      "testo": "tra le scene."
+    },
+    {
+      "inizio": 2896.94,
+      "fine": 2897.94,
+      "testo": "Se voi"
+    },
+    {
+      "inizio": 2897.94,
+      "fine": 2898.94,
+      "testo": "clicate su,"
+    },
+    {
+      "inizio": 2898.94,
+      "fine": 2899.94,
+      "testo": "vedete,"
+    },
+    {
+      "inizio": 2899.94,
+      "fine": 2900.94,
+      "testo": "transizione,"
+    },
+    {
+      "inizio": 2900.94,
+      "fine": 2902.94,
+      "testo": "qui c'è type,"
+    },
+    {
+      "inizio": 2902.94,
+      "fine": 2904.94,
+      "testo": "e inizia ad affargli"
+    },
+    {
+      "inizio": 2904.94,
+      "fine": 2905.94,
+      "testo": "l'impostazione"
+    },
+    {
+      "inizio": 2905.94,
+      "fine": 2907.94,
+      "testo": "a dargli dell'impostazione"
+    },
+    {
+      "inizio": 2907.94,
+      "fine": 2908.94,
+      "testo": "di cambio di scena."
+    },
+    {
+      "inizio": 2908.94,
+      "fine": 2909.94,
+      "testo": "Facciamo flip,"
+    },
+    {
+      "inizio": 2909.94,
+      "fine": 2910.94,
+      "testo": "per esempio."
+    },
+    {
+      "inizio": 2910.94,
+      "fine": 2911.94,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 2911.94,
+      "fine": 2912.94,
+      "testo": "Guardate che cosa fa."
+    },
+    {
+      "inizio": 2912.94,
+      "fine": 2913.94,
+      "testo": "Avete visto?"
+    },
+    {
+      "inizio": 2913.94,
+      "fine": 2917.6,
+      "testo": "Avete la possibilità"
+    },
+    {
+      "inizio": 2917.6,
+      "fine": 2919.6,
+      "testo": "di fare delle robe"
+    },
+    {
+      "inizio": 2919.6,
+      "fine": 2920.6,
+      "testo": "che sono infinite."
+    },
+    {
+      "inizio": 2920.6,
+      "fine": 2922.6,
+      "testo": "Avete pure la possibilità"
+    },
+    {
+      "inizio": 2922.6,
+      "fine": 2923.6,
+      "testo": "di mettergli"
+    },
+    {
+      "inizio": 2923.6,
+      "fine": 2924.6,
+      "testo": "una suono,"
+    },
+    {
+      "inizio": 2924.6,
+      "fine": 2925.6,
+      "testo": "quindi,"
+    },
+    {
+      "inizio": 2925.6,
+      "fine": 2926.6,
+      "testo": "come se fosse un clic"
+    },
+    {
+      "inizio": 2926.6,
+      "fine": 2927.6,
+      "testo": "al cambio scena."
+    },
+    {
+      "inizio": 2927.6,
+      "fine": 2928.6,
+      "testo": "Però orchio,"
+    },
+    {
+      "inizio": 2928.6,
+      "fine": 2929.6,
+      "testo": "queste cose,"
+    },
+    {
+      "inizio": 2929.6,
+      "fine": 2930.6,
+      "testo": "perché potrebbero"
+    },
+    {
+      "inizio": 2930.6,
+      "fine": 2931.6,
+      "testo": "infastedire."
+    },
+    {
+      "inizio": 2931.6,
+      "fine": 2932.6,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 2932.6,
+      "fine": 2934.6,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 2934.6,
+      "fine": 2935.6,
+      "testo": "avete la possibilità"
+    },
+    {
+      "inizio": 2935.6,
+      "fine": 2937.6,
+      "testo": "di spaziale tantissimo."
+    },
+    {
+      "inizio": 2937.6,
+      "fine": 2938.6,
+      "testo": "Ma io voglio farlo vedere"
+    },
+    {
+      "inizio": 2938.6,
+      "fine": 2940.6,
+      "testo": "una cosa che è davvero bella"
+    },
+    {
+      "inizio": 2940.6,
+      "fine": 2941.6,
+      "testo": "su questa scena che non"
+    },
+    {
+      "inizio": 2941.6,
+      "fine": 2942.6,
+      "testo": "l'abbiamo toccata"
+    },
+    {
+      "inizio": 2942.6,
+      "fine": 2943.6,
+      "testo": "per nulla,"
+    },
+    {
+      "inizio": 2943.6,
+      "fine": 2945.6,
+      "testo": "livello di media."
+    },
+    {
+      "inizio": 2945.6,
+      "fine": 2947.6,
+      "testo": "I potizziamo"
+    },
+    {
+      "inizio": 2947.6,
+      "fine": 2949.6,
+      "testo": "che noi vogliamo"
+    },
+    {
+      "inizio": 2949.6,
+      "fine": 2950.6,
+      "testo": "far uscire"
+    },
+    {
+      "inizio": 2950.6,
+      "fine": 2951.6,
+      "testo": "un qualcosa di specifico"
+    },
+    {
+      "inizio": 2951.6,
+      "fine": 2952.6,
+      "testo": "anto in certo punto."
+    },
+    {
+      "inizio": 2952.6,
+      "fine": 2953.6,
+      "testo": "Vi ricordate"
+    },
+    {
+      "inizio": 2953.6,
+      "fine": 2954.6,
+      "testo": "la questione dei numeri,"
+    },
+    {
+      "inizio": 2954.6,
+      "fine": 2955.6,
+      "testo": "no?"
+    },
+    {
+      "inizio": 2955.6,
+      "fine": 2958.6,
+      "testo": "Per esempio,"
+    },
+    {
+      "inizio": 2958.6,
+      "fine": 2960.6,
+      "testo": "qui,"
+    },
+    {
+      "inizio": 2960.6,
+      "fine": 2961.6,
+      "testo": "sappiamo che questa scena,"
+    },
+    {
+      "inizio": 2961.6,
+      "fine": 2962.6,
+      "testo": "dove non vinava"
+    },
+    {
+      "inizio": 2962.6,
+      "fine": 2963.6,
+      "testo": "sette,"
+    },
+    {
+      "inizio": 2963.6,
+      "fine": 2964.6,
+      "testo": "circa al"
+    },
+    {
+      "inizio": 2964.6,
+      "fine": 2966.6,
+      "testo": "nonno secondo,"
+    },
+    {
+      "inizio": 2966.6,
+      "fine": 2967.6,
+      "testo": "anzi,"
+    },
+    {
+      "inizio": 2967.6,
+      "fine": 2968.6,
+      "testo": "8.9,"
+    },
+    {
+      "inizio": 2968.6,
+      "fine": 2969.6,
+      "testo": "lui dice,"
+    },
+    {
+      "inizio": 2969.6,
+      "fine": 2970.6,
+      "testo": "certe colli,"
+    },
+    {
+      "inizio": 2970.6,
+      "fine": 2971.6,
+      "testo": "perché arrivano alla fine"
+    },
+    {
+      "inizio": 2971.6,
+      "fine": 2972.6,
+      "testo": "di questa timeline."
+    },
+    {
+      "inizio": 2972.6,
+      "fine": 2973.6,
+      "testo": "Cosa facciamo noi?"
+    },
+    {
+      "inizio": 2973.6,
+      "fine": 2974.6,
+      "testo": "Possiamo fare anche questo."
+    },
+    {
+      "inizio": 2974.6,
+      "fine": 2975.6,
+      "testo": "Alcuni di coro"
+    },
+    {
+      "inizio": 2975.6,
+      "fine": 2977.6,
+      "testo": "è ma scritto"
+    },
+    {
+      "inizio": 2977.6,
+      "fine": 2978.6,
+      "testo": "e brutto da vedere"
+    },
+    {
+      "inizio": 2978.6,
+      "fine": 2979.6,
+      "testo": "scritto al letter"
+    },
+    {
+      "inizio": 2979.6,
+      "fine": 2980.6,
+      "testo": "il numero."
+    },
+    {
+      "inizio": 2980.6,
+      "fine": 2981.6,
+      "testo": "In tanto,"
+    },
+    {
+      "inizio": 2981.6,
+      "fine": 2982.6,
+      "testo": "mi dico"
+    },
+    {
+      "inizio": 2982.6,
+      "fine": 2983.6,
+      "testo": "non lo notano."
+    },
+    {
+      "inizio": 2983.6,
+      "fine": 2984.6,
+      "testo": "Però,"
+    },
+    {
+      "inizio": 2984.6,
+      "fine": 2985.6,
+      "testo": "quindi,"
+    },
+    {
+      "inizio": 2985.6,
+      "fine": 2986.6,
+      "testo": "un'incisimità"
+    },
+    {
+      "inizio": 2986.6,
+      "fine": 2987.6,
+      "testo": "differente,"
+    },
+    {
+      "inizio": 2987.6,
+      "fine": 2988.6,
+      "testo": "fate così,"
+    },
+    {
+      "inizio": 2988.6,
+      "fine": 2989.6,
+      "testo": "add layer,"
+    },
+    {
+      "inizio": 2989.6,
+      "fine": 2991.6,
+      "testo": "fate text,"
+    },
+    {
+      "inizio": 2991.6,
+      "fine": 2993.6,
+      "testo": "e lui posiziona"
+    },
+    {
+      "inizio": 2993.6,
+      "fine": 2994.6,
+      "testo": "fisicamente il testo,"
+    },
+    {
+      "inizio": 2994.6,
+      "fine": 2995.6,
+      "testo": "ricordatevi che,"
+    },
+    {
+      "inizio": 2995.6,
+      "fine": 2996.6,
+      "testo": "quando sono aggiunte"
+    },
+    {
+      "inizio": 2996.6,
+      "fine": 2997.6,
+      "testo": "di livello,"
+    },
+    {
+      "inizio": 2997.6,
+      "fine": 2998.6,
+      "testo": "li posiziona"
+    },
+    {
+      "inizio": 2998.6,
+      "fine": 2999.6,
+      "testo": "sempre sopra"
+    },
+    {
+      "inizio": 2999.6,
+      "fine": 3000.6,
+      "testo": "e mai sulle scena,"
+    },
+    {
+      "inizio": 3000.6,
+      "fine": 3001.6,
+      "testo": "queste sono i media."
+    },
+    {
+      "inizio": 3001.6,
+      "fine": 3002.6,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3002.6,
+      "fine": 3003.6,
+      "testo": "Quindi qua,"
+    },
+    {
+      "inizio": 3003.6,
+      "fine": 3004.6,
+      "testo": "io li vado"
+    },
+    {
+      "inizio": 3004.6,
+      "fine": 3005.6,
+      "testo": "a me le inserire"
+    },
+    {
+      "inizio": 3005.6,
+      "fine": 3006.6,
+      "testo": "il numero sette."
+    },
+    {
+      "inizio": 3006.6,
+      "fine": 3007.6,
+      "testo": "Vedete qui,"
+    },
+    {
+      "inizio": 3007.6,
+      "fine": 3008.6,
+      "testo": "come compare?"
+    },
+    {
+      "inizio": 3008.6,
+      "fine": 3009.6,
+      "testo": "Il numero sette,"
+    },
+    {
+      "inizio": 3009.6,
+      "fine": 3010.6,
+      "testo": "qui vado a farli"
+    },
+    {
+      "inizio": 3010.6,
+      "fine": 3011.6,
+      "testo": "una lavorazione diversa,"
+    },
+    {
+      "inizio": 3011.6,
+      "fine": 3012.6,
+      "testo": "invece di metterli"
+    },
+    {
+      "inizio": 3012.6,
+      "fine": 3015.6,
+      "testo": "un 60-70,"
+    },
+    {
+      "inizio": 3015.6,
+      "fine": 3017.6,
+      "testo": "io li vado a posizionare"
+    },
+    {
+      "inizio": 3017.6,
+      "fine": 3018.6,
+      "testo": "un numero molto alto"
+    },
+    {
+      "inizio": 3018.6,
+      "fine": 3019.6,
+      "testo": "perché lo voglio"
+    },
+    {
+      "inizio": 3019.6,
+      "fine": 3020.6,
+      "testo": "ben visibile."
+    },
+    {
+      "inizio": 3020.6,
+      "fine": 3021.6,
+      "testo": "È al posto del,"
+    },
+    {
+      "inizio": 3021.6,
+      "fine": 3022.6,
+      "testo": "del bianco,"
+    },
+    {
+      "inizio": 3022.6,
+      "fine": 3023.6,
+      "testo": "devo insericci"
+    },
+    {
+      "inizio": 3023.6,
+      "fine": 3024.6,
+      "testo": "non lo so un colore"
+    },
+    {
+      "inizio": 3024.6,
+      "fine": 3025.6,
+      "testo": "particolare,"
+    },
+    {
+      "inizio": 3025.6,
+      "fine": 3026.6,
+      "testo": "perché vogliamo che,"
+    },
+    {
+      "inizio": 3026.6,
+      "fine": 3027.6,
+      "testo": "che si veda."
+    },
+    {
+      "inizio": 3027.6,
+      "fine": 3028.6,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3028.6,
+      "fine": 3029.6,
+      "testo": "È lavorare"
+    },
+    {
+      "inizio": 3029.6,
+      "fine": 3030.6,
+      "testo": "sul timing."
+    },
+    {
+      "inizio": 3030.6,
+      "fine": 3031.6,
+      "testo": "Quindi li diciamo sempre"
+    },
+    {
+      "inizio": 3031.6,
+      "fine": 3032.6,
+      "testo": "questa scena."
+    },
+    {
+      "inizio": 3032.6,
+      "fine": 3033.6,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3033.6,
+      "fine": 3034.6,
+      "testo": "Aspetta un po',"
+    },
+    {
+      "inizio": 3034.6,
+      "fine": 3035.6,
+      "testo": "tu devi comparire"
+    },
+    {
+      "inizio": 3035.6,
+      "fine": 3036.6,
+      "testo": "quando sono 8"
+    },
+    {
+      "inizio": 3036.6,
+      "fine": 3037.6,
+      "testo": "e due secondi,"
+    },
+    {
+      "inizio": 3037.6,
+      "fine": 3038.6,
+      "testo": "quindi,"
+    },
+    {
+      "inizio": 3038.6,
+      "fine": 3039.6,
+      "testo": "finisci a 10."
+    },
+    {
+      "inizio": 3039.6,
+      "fine": 3040.6,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3040.6,
+      "fine": 3041.6,
+      "testo": "Vediamo se è vero."
+    },
+    {
+      "inizio": 3041.6,
+      "fine": 3042.6,
+      "testo": "Vediamo cosa,"
+    },
+    {
+      "inizio": 3042.6,
+      "fine": 3043.6,
+      "testo": "se l'ha preso"
+    },
+    {
+      "inizio": 3043.6,
+      "fine": 3044.6,
+      "testo": "come colando."
+    },
+    {
+      "inizio": 3044.6,
+      "fine": 3045.6,
+      "testo": "Ecco,"
+    },
+    {
+      "inizio": 3045.6,
+      "fine": 3052.9,
+      "testo": "la inserita dopo"
+    },
+    {
+      "inizio": 3052.9,
+      "fine": 3053.9,
+      "testo": "perché ho sbagliata"
+    },
+    {
+      "inizio": 3053.9,
+      "fine": 3054.9,
+      "testo": "da real timing."
+    },
+    {
+      "inizio": 3054.9,
+      "fine": 3055.9,
+      "testo": "Vedete che qua"
+    },
+    {
+      "inizio": 3055.9,
+      "fine": 3056.9,
+      "testo": "è 8 secondi."
+    },
+    {
+      "inizio": 3056.9,
+      "fine": 3057.9,
+      "testo": "Andiamo a vedere"
+    },
+    {
+      "inizio": 3057.9,
+      "fine": 3058.9,
+      "testo": "quando dice sette."
+    },
+    {
+      "inizio": 3058.9,
+      "fine": 3059.9,
+      "testo": "Ecco,"
+    },
+    {
+      "inizio": 3059.9,
+      "fine": 3061.9,
+      "testo": "è parte sette secondi."
+    },
+    {
+      "inizio": 3061.9,
+      "fine": 3062.9,
+      "testo": "Ho sbagliato io."
+    },
+    {
+      "inizio": 3062.9,
+      "fine": 3063.9,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3063.9,
+      "fine": 3064.9,
+      "testo": "andiamo sette"
+    },
+    {
+      "inizio": 3064.9,
+      "fine": 3065.9,
+      "testo": "due nove."
+    },
+    {
+      "inizio": 3065.9,
+      "fine": 3070.36,
+      "testo": "Vedete?"
+    },
+    {
+      "inizio": 3070.36,
+      "fine": 3071.36,
+      "testo": "O la possibilità"
+    },
+    {
+      "inizio": 3071.36,
+      "fine": 3072.36,
+      "testo": "di interagire"
+    },
+    {
+      "inizio": 3072.36,
+      "fine": 3073.36,
+      "testo": "in modo perfetto"
+    },
+    {
+      "inizio": 3073.36,
+      "fine": 3075.36,
+      "testo": "con la scena."
+    },
+    {
+      "inizio": 3075.36,
+      "fine": 3076.36,
+      "testo": "Andiamo a farli un play"
+    },
+    {
+      "inizio": 3076.36,
+      "fine": 3077.36,
+      "testo": "anche se non sentite."
+    },
+    {
+      "inizio": 3077.36,
+      "fine": 3083.1,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3083.1,
+      "fine": 3086.6,
+      "testo": "Quindi potete fare"
+    },
+    {
+      "inizio": 3086.6,
+      "fine": 3088.6,
+      "testo": "un qualcosa di"
+    },
+    {
+      "inizio": 3088.6,
+      "fine": 3089.6,
+      "testo": "devastante"
+    },
+    {
+      "inizio": 3089.6,
+      "fine": 3091.6,
+      "testo": "al livello di"
+    },
+    {
+      "inizio": 3091.6,
+      "fine": 3092.6,
+      "testo": "animazioni,"
+    },
+    {
+      "inizio": 3092.6,
+      "fine": 3093.6,
+      "testo": "al livello di"
+    },
+    {
+      "inizio": 3093.6,
+      "fine": 3095.6,
+      "testo": "unicità sui contenuti."
+    },
+    {
+      "inizio": 3095.6,
+      "fine": 3097.6,
+      "testo": "Ma non è finita qui."
+    },
+    {
+      "inizio": 3097.6,
+      "fine": 3098.6,
+      "testo": "Questo effetto,"
+    },
+    {
+      "inizio": 3098.6,
+      "fine": 3100.6,
+      "testo": "io lo utilizzo tantissimo"
+    },
+    {
+      "inizio": 3100.6,
+      "fine": 3101.6,
+      "testo": "perché è troppo bello."
+    },
+    {
+      "inizio": 3101.6,
+      "fine": 3102.6,
+      "testo": "Qui abbiamo questa scena,"
+    },
+    {
+      "inizio": 3102.6,
+      "fine": 3103.6,
+      "testo": "questo media."
+    },
+    {
+      "inizio": 3103.6,
+      "fine": 3104.6,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3104.6,
+      "fine": 3105.6,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3105.6,
+      "fine": 3106.6,
+      "testo": "la fontana di trevi."
+    },
+    {
+      "inizio": 3106.6,
+      "fine": 3107.6,
+      "testo": "Bene,"
+    },
+    {
+      "inizio": 3107.6,
+      "fine": 3108.6,
+      "testo": "io faccio"
+    },
+    {
+      "inizio": 3108.6,
+      "fine": 3109.6,
+      "testo": "ad layer,"
+    },
+    {
+      "inizio": 3109.6,
+      "fine": 3111.6,
+      "testo": "butto su una"
+    },
+    {
+      "inizio": 3111.6,
+      "fine": 3112.6,
+      "testo": "altro media"
+    },
+    {
+      "inizio": 3112.6,
+      "fine": 3114.6,
+      "testo": "e occhio"
+    },
+    {
+      "inizio": 3114.6,
+      "fine": 3116.6,
+      "testo": "perché quando aggiungete un livello"
+    },
+    {
+      "inizio": 3116.6,
+      "fine": 3117.6,
+      "testo": "che cos'è che fa,"
+    },
+    {
+      "inizio": 3117.6,
+      "fine": 3119.6,
+      "testo": "lo porta sempre quassù."
+    },
+    {
+      "inizio": 3119.6,
+      "fine": 3120.6,
+      "testo": "Quindi, come vedete,"
+    },
+    {
+      "inizio": 3120.6,
+      "fine": 3121.6,
+      "testo": "questo immagine,"
+    },
+    {
+      "inizio": 3121.6,
+      "fine": 3122.6,
+      "testo": "che non c'è l'immagine,"
+    },
+    {
+      "inizio": 3122.6,
+      "fine": 3124.6,
+      "testo": "ha lo scurato completamente"
+    },
+    {
+      "inizio": 3124.6,
+      "fine": 3126.6,
+      "testo": "quella che la fontana di trevi,"
+    },
+    {
+      "inizio": 3126.6,
+      "fine": 3127.6,
+      "testo": "quindi, sempre attraversi"
+    },
+    {
+      "inizio": 3127.6,
+      "fine": 3128.6,
+      "testo": "sei puntili,"
+    },
+    {
+      "inizio": 3128.6,
+      "fine": 3129.6,
+      "testo": "prendete"
+    },
+    {
+      "inizio": 3129.6,
+      "fine": 3130.6,
+      "testo": "e la scostate in questo caso"
+    },
+    {
+      "inizio": 3130.6,
+      "fine": 3132.6,
+      "testo": "sotto e scomparsa."
+    },
+    {
+      "inizio": 3132.6,
+      "fine": 3133.6,
+      "testo": "Ma, in questo caso,"
+    },
+    {
+      "inizio": 3133.6,
+      "fine": 3134.6,
+      "testo": "lo oponiamo sopra"
+    },
+    {
+      "inizio": 3134.6,
+      "fine": 3135.6,
+      "testo": "perché voglio fare vedere"
+    },
+    {
+      "inizio": 3135.6,
+      "fine": 3137.6,
+      "testo": "una roba che faccio spesso."
+    },
+    {
+      "inizio": 3137.6,
+      "fine": 3139.6,
+      "testo": "Come per esempio,"
+    },
+    {
+      "inizio": 3139.6,
+      "fine": 3140.6,
+      "testo": "qui sta parlando,"
+    },
+    {
+      "inizio": 3140.6,
+      "fine": 3141.6,
+      "testo": "non lo so."
+    },
+    {
+      "inizio": 3141.6,
+      "fine": 3142.6,
+      "testo": "Facciamo,"
+    },
+    {
+      "inizio": 3142.6,
+      "fine": 3143.6,
+      "testo": "fide che, in questo testo,"
+    },
+    {
+      "inizio": 3143.6,
+      "fine": 3144.6,
+      "testo": "ci sia la fontana di trevi,"
+    },
+    {
+      "inizio": 3144.6,
+      "fine": 3145.6,
+      "testo": "il colosseo."
+    },
+    {
+      "inizio": 3145.6,
+      "fine": 3146.6,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3146.6,
+      "fine": 3147.6,
+      "testo": "Io faccio questa roba qui."
+    },
+    {
+      "inizio": 3147.6,
+      "fine": 3148.6,
+      "testo": "Benevado,"
+    },
+    {
+      "inizio": 3148.6,
+      "fine": 3149.6,
+      "testo": "alla stock library,"
+    },
+    {
+      "inizio": 3149.6,
+      "fine": 3151.6,
+      "testo": "ci mi prendo il colosseo"
+    },
+    {
+      "inizio": 3151.6,
+      "fine": 3153.6,
+      "testo": "e faccio questo."
+    },
+    {
+      "inizio": 3153.6,
+      "fine": 3154.6,
+      "testo": "Vedete?"
+    },
+    {
+      "inizio": 3154.6,
+      "fine": 3156.6,
+      "testo": "Così, si vede solo il colosseo."
+    },
+    {
+      "inizio": 3156.6,
+      "fine": 3157.6,
+      "testo": "Non abbiamo fatto un training,"
+    },
+    {
+      "inizio": 3157.6,
+      "fine": 3158.6,
+      "testo": "occhio,"
+    },
+    {
+      "inizio": 3158.6,
+      "fine": 3159.6,
+      "testo": "questa roba,"
+    },
+    {
+      "inizio": 3159.6,
+      "fine": 3160.6,
+      "testo": "perché la fontana di trevi"
+    },
+    {
+      "inizio": 3160.6,
+      "fine": 3161.6,
+      "testo": "non si vedrà completamente."
+    },
+    {
+      "inizio": 3161.6,
+      "fine": 3162.6,
+      "testo": "Però,"
+    },
+    {
+      "inizio": 3162.6,
+      "fine": 3163.6,
+      "testo": "clicco su questa scena,"
+    },
+    {
+      "inizio": 3163.6,
+      "fine": 3164.6,
+      "testo": "questo media"
+    },
+    {
+      "inizio": 3164.6,
+      "fine": 3165.6,
+      "testo": "preciso,"
+    },
+    {
+      "inizio": 3165.6,
+      "fine": 3166.6,
+      "testo": "qui di questa scena,"
+    },
+    {
+      "inizio": 3166.6,
+      "fine": 3168.6,
+      "testo": "vado nel menu a destra"
+    },
+    {
+      "inizio": 3168.6,
+      "fine": 3169.6,
+      "testo": "e vado a lavorare"
+    },
+    {
+      "inizio": 3169.6,
+      "fine": 3170.6,
+      "testo": "sull'opacità."
+    },
+    {
+      "inizio": 3170.6,
+      "fine": 3172.88,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3172.88,
+      "fine": 3174.88,
+      "testo": "Quando farò un play,"
+    },
+    {
+      "inizio": 3174.88,
+      "fine": 3176.88,
+      "testo": "in questo caso,"
+    },
+    {
+      "inizio": 3176.88,
+      "fine": 3177.88,
+      "testo": "magari, è brutto"
+    },
+    {
+      "inizio": 3177.88,
+      "fine": 3178.88,
+      "testo": "da vedere, però,"
+    },
+    {
+      "inizio": 3178.88,
+      "fine": 3179.88,
+      "testo": "magari,"
+    },
+    {
+      "inizio": 3179.88,
+      "fine": 3180.88,
+      "testo": "il concetto."
+    },
+    {
+      "inizio": 3180.88,
+      "fine": 3184.44,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3184.44,
+      "fine": 3185.44,
+      "testo": "Vendere da vedere,"
+    },
+    {
+      "inizio": 3185.44,
+      "fine": 3186.44,
+      "testo": "sia questo media"
+    },
+    {
+      "inizio": 3186.44,
+      "fine": 3187.44,
+      "testo": "che questo altro,"
+    },
+    {
+      "inizio": 3187.44,
+      "fine": 3189.44,
+      "testo": "potete fare"
+    },
+    {
+      "inizio": 3189.44,
+      "fine": 3191.44,
+      "testo": "l'inserimento di media"
+    },
+    {
+      "inizio": 3191.44,
+      "fine": 3193.44,
+      "testo": "e operare per trasparenza."
+    },
+    {
+      "inizio": 3193.44,
+      "fine": 3194.44,
+      "testo": "Quindi, è una,"
+    },
+    {
+      "inizio": 3194.44,
+      "fine": 3195.44,
+      "testo": "è una di quelle,"
+    },
+    {
+      "inizio": 3195.44,
+      "fine": 3196.44,
+      "testo": "figate,"
+    },
+    {
+      "inizio": 3196.44,
+      "fine": 3197.44,
+      "testo": "pazze,"
+    },
+    {
+      "inizio": 3197.44,
+      "fine": 3198.44,
+      "testo": "che potete veramente rendere"
+    },
+    {
+      "inizio": 3198.44,
+      "fine": 3200.44,
+      "testo": "unico in contenuto."
+    },
+    {
+      "inizio": 3200.44,
+      "fine": 3201.44,
+      "testo": "D'accordo?"
+    },
+    {
+      "inizio": 3201.44,
+      "fine": 3202.44,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3202.44,
+      "fine": 3204.44,
+      "testo": "è spazio alla creatività"
+    },
+    {
+      "inizio": 3204.44,
+      "fine": 3206.44,
+      "testo": "di quello che possiamo fare"
+    },
+    {
+      "inizio": 3206.44,
+      "fine": 3207.44,
+      "testo": "con figli,"
+    },
+    {
+      "inizio": 3207.44,
+      "fine": 3209.44,
+      "testo": "dopo queste giornamenti."
+    },
+    {
+      "inizio": 3209.44,
+      "fine": 3210.44,
+      "testo": "Bene,"
+    },
+    {
+      "inizio": 3210.44,
+      "fine": 3212.44,
+      "testo": "ma ci sono delle sezioni"
+    },
+    {
+      "inizio": 3212.44,
+      "fine": 3213.44,
+      "testo": "che,"
+    },
+    {
+      "inizio": 3213.44,
+      "fine": 3214.44,
+      "testo": "effettivamente,"
+    },
+    {
+      "inizio": 3214.44,
+      "fine": 3216.44,
+      "testo": "hanno imparitato da poco,"
+    },
+    {
+      "inizio": 3216.44,
+      "fine": 3217.44,
+      "testo": "e"
+    },
+    {
+      "inizio": 3217.44,
+      "fine": 3219.44,
+      "testo": "qualcuno ha già fatto vedere"
+    },
+    {
+      "inizio": 3219.44,
+      "fine": 3220.44,
+      "testo": "in quale tradizione,"
+    },
+    {
+      "inizio": 3220.44,
+      "fine": 3221.44,
+      "testo": "ma c'è qualche novità"
+    },
+    {
+      "inizio": 3221.44,
+      "fine": 3223.44,
+      "testo": "davvero molto, molto importante"
+    },
+    {
+      "inizio": 3223.44,
+      "fine": 3224.44,
+      "testo": "e molto figa,"
+    },
+    {
+      "inizio": 3224.44,
+      "fine": 3225.44,
+      "testo": "diciamo, diciamo,"
+    },
+    {
+      "inizio": 3225.44,
+      "fine": 3227.44,
+      "testo": "c'è l'apertamente,"
+    },
+    {
+      "inizio": 3227.44,
+      "fine": 3228.44,
+      "testo": "perché c'è uno delle robe,"
+    },
+    {
+      "inizio": 3228.44,
+      "fine": 3229.44,
+      "testo": "che,"
+    },
+    {
+      "inizio": 3229.44,
+      "fine": 3230.44,
+      "testo": "già quando non si vanno a consumare"
+    },
+    {
+      "inizio": 3230.44,
+      "fine": 3231.44,
+      "testo": "dei creativi,"
+    },
+    {
+      "inizio": 3231.44,
+      "fine": 3232.44,
+      "testo": "uno dice figa,"
+    },
+    {
+      "inizio": 3232.44,
+      "fine": 3233.44,
+      "testo": "a crescindere."
+    },
+    {
+      "inizio": 3234.44,
+      "fine": 3235.44,
+      "testo": "Il faccio di vedere,"
+    },
+    {
+      "inizio": 3235.44,
+      "fine": 3236.44,
+      "testo": "al volo,"
+    },
+    {
+      "inizio": 3236.44,
+      "fine": 3237.44,
+      "testo": "un tool,"
+    },
+    {
+      "inizio": 3237.44,
+      "fine": 3238.44,
+      "testo": "senza soffermarmi,"
+    },
+    {
+      "inizio": 3238.44,
+      "fine": 3239.44,
+      "testo": "perché qui,"
+    },
+    {
+      "inizio": 3239.44,
+      "fine": 3240.44,
+      "testo": "veramente questioni di"
+    },
+    {
+      "inizio": 3240.44,
+      "fine": 3241.44,
+      "testo": "andare a fare dei test,"
+    },
+    {
+      "inizio": 3241.44,
+      "fine": 3243.44,
+      "testo": "che avevo già presentato"
+    },
+    {
+      "inizio": 3243.44,
+      "fine": 3245.44,
+      "testo": "in un'altra lezione,"
+    },
+    {
+      "inizio": 3245.44,
+      "fine": 3247.44,
+      "testo": "da queste attrezzi"
+    },
+    {
+      "inizio": 3247.44,
+      "fine": 3248.44,
+      "testo": "qua su,"
+    },
+    {
+      "inizio": 3248.44,
+      "fine": 3251.44,
+      "testo": "abbiamo la possibilità"
+    },
+    {
+      "inizio": 3251.44,
+      "fine": 3252.44,
+      "testo": "di,"
+    },
+    {
+      "inizio": 3252.44,
+      "fine": 3253.44,
+      "testo": "appunto,"
+    },
+    {
+      "inizio": 3253.44,
+      "fine": 3256.44,
+      "testo": "fare delle modifiche"
+    },
+    {
+      "inizio": 3256.44,
+      "fine": 3257.44,
+      "testo": "su dei video,"
+    },
+    {
+      "inizio": 3257.44,
+      "fine": 3258.44,
+      "testo": "delle immagili,"
+    },
+    {
+      "inizio": 3258.44,
+      "fine": 3259.44,
+      "testo": "o degli audio."
+    },
+    {
+      "inizio": 3259.44,
+      "fine": 3260.44,
+      "testo": "Cosa succede?"
+    },
+    {
+      "inizio": 3260.44,
+      "fine": 3261.44,
+      "testo": "Molte volte noi,"
+    },
+    {
+      "inizio": 3261.44,
+      "fine": 3262.44,
+      "testo": "abbiamo la necessità"
+    },
+    {
+      "inizio": 3262.44,
+      "fine": 3265.44,
+      "testo": "di fare un'inserire"
+    },
+    {
+      "inizio": 3265.44,
+      "fine": 3266.44,
+      "testo": "dentro flichi,"
+    },
+    {
+      "inizio": 3266.44,
+      "fine": 3268.44,
+      "testo": "una parte di un contenuto"
+    },
+    {
+      "inizio": 3268.44,
+      "fine": 3269.44,
+      "testo": "che,"
+    },
+    {
+      "inizio": 3269.44,
+      "fine": 3270.44,
+      "testo": "magari abbiamo copiato"
+    },
+    {
+      "inizio": 3270.44,
+      "fine": 3271.44,
+      "testo": "da un corrector,"
+    },
+    {
+      "inizio": 3271.44,
+      "fine": 3273.44,
+      "testo": "oppure abbiamo scaricato"
+    },
+    {
+      "inizio": 3273.44,
+      "fine": 3275.44,
+      "testo": "da un sito,"
+    },
+    {
+      "inizio": 3275.44,
+      "fine": 3277.44,
+      "testo": "oppure abbiamo registrato"
+    },
+    {
+      "inizio": 3277.44,
+      "fine": 3278.44,
+      "testo": "in un filmato,"
+    },
+    {
+      "inizio": 3278.44,
+      "fine": 3279.44,
+      "testo": "per esempio,"
+    },
+    {
+      "inizio": 3279.44,
+      "fine": 3281.44,
+      "testo": "sono da farongi"
+    },
+    {
+      "inizio": 3281.44,
+      "fine": 3283.44,
+      "testo": "una visita io a Roma,"
+    },
+    {
+      "inizio": 3283.44,
+      "fine": 3284.44,
+      "testo": "ho fatto il filmato,"
+    },
+    {
+      "inizio": 3284.44,
+      "fine": 3285.44,
+      "testo": "casque da sei,"
+    },
+    {
+      "inizio": 3285.44,
+      "fine": 3286.44,
+      "testo": "sto realizzando il filmato"
+    },
+    {
+      "inizio": 3286.44,
+      "fine": 3287.44,
+      "testo": "su Roma,"
+    },
+    {
+      "inizio": 3287.44,
+      "fine": 3288.44,
+      "testo": "quella roba lico filmato,"
+    },
+    {
+      "inizio": 3288.44,
+      "fine": 3289.44,
+      "testo": "esclusive,"
+    },
+    {
+      "inizio": 3289.44,
+      "fine": 3290.44,
+      "testo": "è bella, lo ho fatto io,"
+    },
+    {
+      "inizio": 3290.44,
+      "fine": 3291.44,
+      "testo": "vorrei inserirla,"
+    },
+    {
+      "inizio": 3291.44,
+      "fine": 3293.44,
+      "testo": "bene, inserite"
+    },
+    {
+      "inizio": 3293.44,
+      "fine": 3294.44,
+      "testo": "il video qui,"
+    },
+    {
+      "inizio": 3294.44,
+      "fine": 3296.44,
+      "testo": "occhio a questa roba qui,"
+    },
+    {
+      "inizio": 3296.44,
+      "fine": 3297.44,
+      "testo": "perché ancora ci devono"
+    },
+    {
+      "inizio": 3297.44,
+      "fine": 3298.44,
+      "testo": "lavorare parecchio,"
+    },
+    {
+      "inizio": 3298.44,
+      "fine": 3299.44,
+      "testo": "ma lo fanno"
+    },
+    {
+      "inizio": 3299.44,
+      "fine": 3300.44,
+      "testo": "sicuramente"
+    },
+    {
+      "inizio": 3300.44,
+      "fine": 3301.44,
+      "testo": "per non intasare"
+    },
+    {
+      "inizio": 3301.44,
+      "fine": 3302.44,
+      "testo": "i server,"
+    },
+    {
+      "inizio": 3302.44,
+      "fine": 3304.44,
+      "testo": "perché la grandezza"
+    },
+    {
+      "inizio": 3304.44,
+      "fine": 3306.44,
+      "testo": "è veramente tanta roba,"
+    },
+    {
+      "inizio": 3306.44,
+      "fine": 3307.44,
+      "testo": "però avete"
+    },
+    {
+      "inizio": 3307.44,
+      "fine": 3308.44,
+      "testo": "la possibilità di inserire"
+    },
+    {
+      "inizio": 3308.44,
+      "fine": 3309.44,
+      "testo": "dentro un contenuto"
+    },
+    {
+      "inizio": 3309.44,
+      "fine": 3310.44,
+      "testo": "a 30 megabyte"
+    },
+    {
+      "inizio": 3310.44,
+      "fine": 3311.44,
+      "testo": "e tagliarlo,"
+    },
+    {
+      "inizio": 3311.44,
+      "fine": 3312.44,
+      "testo": "ok?"
+    },
+    {
+      "inizio": 3312.44,
+      "fine": 3313.44,
+      "testo": "Potete fare delle modifiche"
+    },
+    {
+      "inizio": 3313.44,
+      "fine": 3314.44,
+      "testo": "e lo potete"
+    },
+    {
+      "inizio": 3314.44,
+      "fine": 3315.44,
+      "testo": "diminuire"
+    },
+    {
+      "inizio": 3315.44,
+      "fine": 3316.44,
+      "testo": "di formato,"
+    },
+    {
+      "inizio": 3316.44,
+      "fine": 3317.44,
+      "testo": "ruotare,"
+    },
+    {
+      "inizio": 3317.44,
+      "fine": 3319.44,
+      "testo": "aumentare"
+    },
+    {
+      "inizio": 3319.44,
+      "fine": 3321.44,
+      "testo": "di minuire la velocità"
+    },
+    {
+      "inizio": 3321.44,
+      "fine": 3322.44,
+      "testo": "di secuzione del video,"
+    },
+    {
+      "inizio": 3322.44,
+      "fine": 3323.44,
+      "testo": "e quei tutti questi"
+    },
+    {
+      "inizio": 3323.44,
+      "fine": 3324.44,
+      "testo": "sono strumenti,"
+    },
+    {
+      "inizio": 3324.44,
+      "fine": 3325.44,
+      "testo": "gratuiti,"
+    },
+    {
+      "inizio": 3325.44,
+      "fine": 3326.44,
+      "testo": "che mettere"
+    },
+    {
+      "inizio": 3326.44,
+      "fine": 3327.44,
+      "testo": "disposizione flichi,"
+    },
+    {
+      "inizio": 3327.44,
+      "fine": 3329.44,
+      "testo": "e che non consumano credito,"
+    },
+    {
+      "inizio": 3329.44,
+      "fine": 3330.44,
+      "testo": "infatti vedete,"
+    },
+    {
+      "inizio": 3330.44,
+      "fine": 3331.44,
+      "testo": "non sono l'inchieste"
+    },
+    {
+      "inizio": 3331.44,
+      "fine": 3332.44,
+      "testo": "credite per usare"
+    },
+    {
+      "inizio": 3332.44,
+      "fine": 3334.44,
+      "testo": "questo tool, ok?"
+    },
+    {
+      "inizio": 3334.44,
+      "fine": 3336.44,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3336.44,
+      "fine": 3338.44,
+      "testo": "è davvero"
+    },
+    {
+      "inizio": 3338.44,
+      "fine": 3339.44,
+      "testo": "devastante,"
+    },
+    {
+      "inizio": 3339.44,
+      "fine": 3341.44,
+      "testo": "però vi voglio sensibilizzare"
+    },
+    {
+      "inizio": 3341.44,
+      "fine": 3342.44,
+      "testo": "su una roba"
+    },
+    {
+      "inizio": 3342.44,
+      "fine": 3343.44,
+      "testo": "che molte volte"
+    },
+    {
+      "inizio": 3343.44,
+      "fine": 3345.44,
+      "testo": "tanti di voi,"
+    },
+    {
+      "inizio": 3345.44,
+      "fine": 3346.44,
+      "testo": "avete,"
+    },
+    {
+      "inizio": 3346.44,
+      "fine": 3348.44,
+      "testo": "diciamo,"
+    },
+    {
+      "inizio": 3348.44,
+      "fine": 3350.44,
+      "testo": "l'attune"
+    },
+    {
+      "inizio": 3350.44,
+      "fine": 3352.44,
+      "testo": "di gestione di questa"
+    },
+    {
+      "inizio": 3352.44,
+      "fine": 3353.44,
+      "testo": "situazione,"
+    },
+    {
+      "inizio": 3353.44,
+      "fine": 3354.44,
+      "testo": "cosa mi è implementato"
+    },
+    {
+      "inizio": 3354.44,
+      "fine": 3355.44,
+      "testo": "da qualche,"
+    },
+    {
+      "inizio": 3355.44,
+      "fine": 3356.44,
+      "testo": "a qualche giorno?"
+    },
+    {
+      "inizio": 3356.44,
+      "fine": 3357.44,
+      "testo": "Facciamo NewFile,"
+    },
+    {
+      "inizio": 3357.44,
+      "fine": 3358.44,
+      "testo": "beh,"
+    },
+    {
+      "inizio": 3358.44,
+      "fine": 3359.44,
+      "testo": "intanto si sono mutati"
+    },
+    {
+      "inizio": 3359.44,
+      "fine": 3361.44,
+      "testo": "su delle robbe davvero carine,"
+    },
+    {
+      "inizio": 3361.44,
+      "fine": 3362.44,
+      "testo": "beh, video audio già"
+    },
+    {
+      "inizio": 3362.44,
+      "fine": 3363.44,
+      "testo": "sapevate,"
+    },
+    {
+      "inizio": 3363.44,
+      "fine": 3364.44,
+      "testo": "c'erano già."
+    },
+    {
+      "inizio": 3364.44,
+      "fine": 3365.44,
+      "testo": "Sul design,"
+    },
+    {
+      "inizio": 3365.44,
+      "fine": 3367.44,
+      "testo": "si sono proiettati su"
+    },
+    {
+      "inizio": 3367.44,
+      "fine": 3368.44,
+      "testo": "robbe molto carine,"
+    },
+    {
+      "inizio": 3368.44,
+      "fine": 3369.44,
+      "testo": "in tanto,"
+    },
+    {
+      "inizio": 3369.44,
+      "fine": 3370.44,
+      "testo": "ricordatevi"
+    },
+    {
+      "inizio": 3370.44,
+      "fine": 3371.44,
+      "testo": "il formato nostro"
+    },
+    {
+      "inizio": 3371.44,
+      "fine": 3372.44,
+      "testo": "semplice vicinovi,"
+    },
+    {
+      "inizio": 3372.44,
+      "fine": 3373.44,
+      "testo": "eh,"
+    },
+    {
+      "inizio": 3373.44,
+      "fine": 3374.44,
+      "testo": "qui faremo,"
+    },
+    {
+      "inizio": 3374.44,
+      "fine": 3376.44,
+      "testo": "adesso lo tembiamo test"
+    },
+    {
+      "inizio": 3376.44,
+      "fine": 3377.44,
+      "testo": "live,"
+    },
+    {
+      "inizio": 3377.44,
+      "fine": 3379.44,
+      "testo": "e avete la possibilità"
+    },
+    {
+      "inizio": 3379.44,
+      "fine": 3381.44,
+      "testo": "di fare che cos'un file"
+    },
+    {
+      "inizio": 3381.44,
+      "fine": 3382.44,
+      "testo": "vuoto,"
+    },
+    {
+      "inizio": 3382.44,
+      "fine": 3383.44,
+      "testo": "oppure,"
+    },
+    {
+      "inizio": 3383.44,
+      "fine": 3385.44,
+      "testo": "cos'è che possiamo fare?"
+    },
+    {
+      "inizio": 3385.44,
+      "fine": 3386.44,
+      "testo": "Una"
+    },
+    {
+      "inizio": 3386.44,
+      "fine": 3388.44,
+      "testo": "miniatura,"
+    },
+    {
+      "inizio": 3388.44,
+      "fine": 3389.44,
+      "testo": "oi chioregazzi,"
+    },
+    {
+      "inizio": 3389.44,
+      "fine": 3390.44,
+      "testo": "questa è una figata"
+    },
+    {
+      "inizio": 3390.44,
+      "fine": 3391.44,
+      "testo": "pazzesca che hanno fatto,"
+    },
+    {
+      "inizio": 3391.44,
+      "fine": 3393.44,
+      "testo": "tra un po' potrete gestire"
+    },
+    {
+      "inizio": 3393.44,
+      "fine": 3394.44,
+      "testo": "anche le miniature,"
+    },
+    {
+      "inizio": 3394.44,
+      "fine": 3396.44,
+      "testo": "senza l'utilizio,"
+    },
+    {
+      "inizio": 3396.44,
+      "fine": 3397.44,
+      "testo": "e anche di un"
+    },
+    {
+      "inizio": 3397.44,
+      "fine": 3398.44,
+      "testo": "camba quasi,"
+    },
+    {
+      "inizio": 3398.44,
+      "fine": 3399.44,
+      "testo": "direttamente su"
+    },
+    {
+      "inizio": 3399.44,
+      "fine": 3400.44,
+      "testo": "flichi,"
+    },
+    {
+      "inizio": 3400.44,
+      "fine": 3402.44,
+      "testo": "e la figata che"
+    },
+    {
+      "inizio": 3402.44,
+      "fine": 3403.44,
+      "testo": "è veramente pazzesca"
+    },
+    {
+      "inizio": 3403.44,
+      "fine": 3404.44,
+      "testo": "il gratuito,"
+    },
+    {
+      "inizio": 3404.44,
+      "fine": 3405.44,
+      "testo": "io ho fatto diversi testo"
+    },
+    {
+      "inizio": 3405.44,
+      "fine": 3406.44,
+      "testo": "questa settimana,"
+    },
+    {
+      "inizio": 3406.44,
+      "fine": 3407.44,
+      "testo": "è un atto,"
+    },
+    {
+      "inizio": 3407.44,
+      "fine": 3408.44,
+      "testo": "in sottofondo,"
+    },
+    {
+      "inizio": 3408.44,
+      "fine": 3409.44,
+      "testo": "ho fatto le testi"
+    },
+    {
+      "inizio": 3409.44,
+      "fine": 3410.44,
+      "testo": "di esportazione,"
+    },
+    {
+      "inizio": 3410.44,
+      "fine": 3412.44,
+      "testo": "ed è completamente gratuito."
+    },
+    {
+      "inizio": 3412.44,
+      "fine": 3413.44,
+      "testo": "Facciamo"
+    },
+    {
+      "inizio": 3413.44,
+      "fine": 3415.44,
+      "testo": "miniatura,"
+    },
+    {
+      "inizio": 3415.44,
+      "fine": 3418.44,
+      "testo": "cos'è che succede?"
+    },
+    {
+      "inizio": 3418.44,
+      "fine": 3419.44,
+      "testo": "Cos'è che vogliamo scrivere qui?"
+    },
+    {
+      "inizio": 3419.44,
+      "fine": 3420.44,
+      "testo": "Lui già ci propina"
+    },
+    {
+      "inizio": 3420.44,
+      "fine": 3422.44,
+      "testo": "miniatura,"
+    },
+    {
+      "inizio": 3422.44,
+      "fine": 3423.44,
+      "testo": "noi stiamo facendo"
+    },
+    {
+      "inizio": 3423.44,
+      "fine": 3426.44,
+      "testo": "un video su Roma,"
+    },
+    {
+      "inizio": 3426.44,
+      "fine": 3428.44,
+      "testo": "quindi inizio a scrivere"
+    },
+    {
+      "inizio": 3428.44,
+      "fine": 3430.44,
+      "testo": "cosa"
+    },
+    {
+      "inizio": 3430.44,
+      "fine": 3433.44,
+      "testo": "visitare a Roma"
+    },
+    {
+      "inizio": 3434.44,
+      "fine": 3437.44,
+      "testo": "in 3 giorni."
+    },
+    {
+      "inizio": 3437.44,
+      "fine": 3438.44,
+      "testo": "Sto scrivendo delle robe"
+    },
+    {
+      "inizio": 3438.44,
+      "fine": 3440.44,
+      "testo": "fatti a caso."
+    },
+    {
+      "inizio": 3440.44,
+      "fine": 3441.44,
+      "testo": "Qui, in parte,"
+    },
+    {
+      "inizio": 3441.44,
+      "fine": 3442.44,
+      "testo": "una roba pazzesca,"
+    },
+    {
+      "inizio": 3442.44,
+      "fine": 3443.44,
+      "testo": "si andate"
+    },
+    {
+      "inizio": 3443.44,
+      "fine": 3445.44,
+      "testo": "a fare ai media,"
+    },
+    {
+      "inizio": 3445.44,
+      "fine": 3446.44,
+      "testo": "qui iniziata"
+    },
+    {
+      "inizio": 3446.44,
+      "fine": 3447.44,
+      "testo": "a consumare dei crediti,"
+    },
+    {
+      "inizio": 3447.44,
+      "fine": 3448.44,
+      "testo": "se fate stocmilia,"
+    },
+    {
+      "inizio": 3448.44,
+      "fine": 3449.44,
+      "testo": "no,"
+    },
+    {
+      "inizio": 3449.44,
+      "fine": 3450.44,
+      "testo": "qui sono,"
+    },
+    {
+      "inizio": 3450.44,
+      "fine": 3451.44,
+      "testo": "dei midi,"
+    },
+    {
+      "inizio": 3451.44,
+      "fine": 3452.44,
+      "testo": "perché già sono contenuti"
+    },
+    {
+      "inizio": 3452.44,
+      "fine": 3453.44,
+      "testo": "dentro dei propri,"
+    },
+    {
+      "inizio": 3453.44,
+      "fine": 3454.44,
+      "testo": "quindi facciamo sabbomit,"
+    },
+    {
+      "inizio": 3454.44,
+      "fine": 3455.44,
+      "testo": "la velocità"
+    },
+    {
+      "inizio": 3455.44,
+      "fine": 3456.44,
+      "testo": "vi posso garantire"
+    },
+    {
+      "inizio": 3456.44,
+      "fine": 3458.44,
+      "testo": "che è tanta roba,"
+    },
+    {
+      "inizio": 3458.44,
+      "fine": 3459.44,
+      "testo": "che hanno creato"
+    },
+    {
+      "inizio": 3459.44,
+      "fine": 3460.44,
+      "testo": "per questa sezione,"
+    },
+    {
+      "inizio": 3460.44,
+      "fine": 3461.44,
+      "testo": "è veramente"
+    },
+    {
+      "inizio": 3461.44,
+      "fine": 3462.44,
+      "testo": "una figata pazzesca,"
+    },
+    {
+      "inizio": 3462.44,
+      "fine": 3464.44,
+      "testo": "ok?"
+    },
+    {
+      "inizio": 3464.44,
+      "fine": 3466.44,
+      "testo": "E avete la possibilità"
+    },
+    {
+      "inizio": 3466.44,
+      "fine": 3468.44,
+      "testo": "di creare una miniatura,"
+    },
+    {
+      "inizio": 3468.44,
+      "fine": 3469.44,
+      "testo": "guardate,"
+    },
+    {
+      "inizio": 3469.44,
+      "fine": 3470.44,
+      "testo": "già come ha"
+    },
+    {
+      "inizio": 3470.44,
+      "fine": 3471.44,
+      "testo": "selezionato"
+    },
+    {
+      "inizio": 3471.44,
+      "fine": 3473.44,
+      "testo": "un testo che"
+    },
+    {
+      "inizio": 3473.44,
+      "fine": 3474.44,
+      "testo": "è particolare,"
+    },
+    {
+      "inizio": 3474.44,
+      "fine": 3475.44,
+      "testo": "molti di voi,"
+    },
+    {
+      "inizio": 3475.44,
+      "fine": 3476.44,
+      "testo": "peccano,"
+    },
+    {
+      "inizio": 3476.44,
+      "fine": 3477.44,
+      "testo": "proprio su questa roba"
+    },
+    {
+      "inizio": 3477.44,
+      "fine": 3478.44,
+      "testo": "qui magari,"
+    },
+    {
+      "inizio": 3478.44,
+      "fine": 3479.44,
+      "testo": "quando creano una miniatura,"
+    },
+    {
+      "inizio": 3479.44,
+      "fine": 3480.44,
+      "testo": "e sappiamo che la miniatura"
+    },
+    {
+      "inizio": 3480.44,
+      "fine": 3481.44,
+      "testo": "ha un peso"
+    },
+    {
+      "inizio": 3481.44,
+      "fine": 3482.44,
+      "testo": "davvero troppo importante"
+    },
+    {
+      "inizio": 3482.44,
+      "fine": 3483.44,
+      "testo": "per un contenuto"
+    },
+    {
+      "inizio": 3483.44,
+      "fine": 3484.44,
+      "testo": "che va"
+    },
+    {
+      "inizio": 3484.44,
+      "fine": 3485.44,
+      "testo": "su YouTube,"
+    },
+    {
+      "inizio": 3485.44,
+      "fine": 3487.44,
+      "testo": "e non vi dico che"
+    },
+    {
+      "inizio": 3487.44,
+      "fine": 3489.44,
+      "testo": "90% ma"
+    },
+    {
+      "inizio": 3489.44,
+      "fine": 3491.44,
+      "testo": "davvero poco ci manca."
+    },
+    {
+      "inizio": 3491.44,
+      "fine": 3492.44,
+      "testo": "Quindi già ha creato"
+    },
+    {
+      "inizio": 3492.44,
+      "fine": 3493.44,
+      "testo": "una roba che"
+    },
+    {
+      "inizio": 3493.44,
+      "fine": 3494.44,
+      "testo": "è molto gradevole"
+    },
+    {
+      "inizio": 3494.44,
+      "fine": 3495.44,
+      "testo": "ai occhi da vedere,"
+    },
+    {
+      "inizio": 3495.44,
+      "fine": 3496.44,
+      "testo": "già creato"
+    },
+    {
+      "inizio": 3496.44,
+      "fine": 3498.44,
+      "testo": "con un fondo carino"
+    },
+    {
+      "inizio": 3498.44,
+      "fine": 3500.44,
+      "testo": "che potete cambiare,"
+    },
+    {
+      "inizio": 3500.44,
+      "fine": 3501.44,
+      "testo": "è un contorno"
+    },
+    {
+      "inizio": 3501.44,
+      "fine": 3502.44,
+      "testo": "altrettanto carino,"
+    },
+    {
+      "inizio": 3502.44,
+      "fine": 3503.44,
+      "testo": "tra le qualche sfumatura,"
+    },
+    {
+      "inizio": 3503.44,
+      "fine": 3504.44,
+      "testo": "ma ne posso assicurare"
+    },
+    {
+      "inizio": 3504.44,
+      "fine": 3506.44,
+      "testo": "che gli utenti"
+    },
+    {
+      "inizio": 3506.44,
+      "fine": 3507.44,
+      "testo": "non sere accordono,"
+    },
+    {
+      "inizio": 3507.44,
+      "fine": 3508.44,
+      "testo": "non è quello che fa la differenza,"
+    },
+    {
+      "inizio": 3508.44,
+      "fine": 3509.44,
+      "testo": "quando mettete"
+    },
+    {
+      "inizio": 3509.44,
+      "fine": 3510.44,
+      "testo": "l'immagine giusta"
+    },
+    {
+      "inizio": 3510.44,
+      "fine": 3511.44,
+      "testo": "all'utente,"
+    },
+    {
+      "inizio": 3511.44,
+      "fine": 3512.44,
+      "testo": "non viene frega nulla,"
+    },
+    {
+      "inizio": 3512.44,
+      "fine": 3513.44,
+      "testo": "e qui"
+    },
+    {
+      "inizio": 3513.44,
+      "fine": 3514.44,
+      "testo": "iniziamo a impostare"
+    },
+    {
+      "inizio": 3514.44,
+      "fine": 3515.44,
+      "testo": "la nostra miniatura,"
+    },
+    {
+      "inizio": 3515.44,
+      "fine": 3516.44,
+      "testo": "vedete?"
+    },
+    {
+      "inizio": 3516.44,
+      "fine": 3517.44,
+      "testo": "Watermark,"
+    },
+    {
+      "inizio": 3517.44,
+      "fine": 3518.44,
+      "testo": "cosa che puoi fare?"
+    },
+    {
+      "inizio": 3518.44,
+      "fine": 3519.44,
+      "testo": "Flicky"
+    },
+    {
+      "inizio": 3519.44,
+      "fine": 3520.44,
+      "testo": "già ci lo dice,"
+    },
+    {
+      "inizio": 3520.44,
+      "fine": 3522.44,
+      "testo": "mette il Watermark, no?"
+    },
+    {
+      "inizio": 3522.44,
+      "fine": 3523.44,
+      "testo": "E' importante"
+    },
+    {
+      "inizio": 3523.44,
+      "fine": 3524.44,
+      "testo": "che ci siano studentificativo"
+    },
+    {
+      "inizio": 3524.44,
+      "fine": 3526.44,
+      "testo": "sulle miniature,"
+    },
+    {
+      "inizio": 3526.44,
+      "fine": 3527.44,
+      "testo": "come nei contenuti,"
+    },
+    {
+      "inizio": 3527.44,
+      "fine": 3528.44,
+      "testo": "perché ci identificano"
+    },
+    {
+      "inizio": 3528.44,
+      "fine": 3530.44,
+      "testo": "in nostro marco di fabbrica,"
+    },
+    {
+      "inizio": 3530.44,
+      "fine": 3531.44,
+      "testo": "come abbiamo detto prima"
+    },
+    {
+      "inizio": 3531.44,
+      "fine": 3532.44,
+      "testo": "nel contenuto?"
+    },
+    {
+      "inizio": 3532.44,
+      "fine": 3533.44,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3533.44,
+      "fine": 3534.44,
+      "testo": "ipotizziamo che ci siano"
+    },
+    {
+      "inizio": 3534.44,
+      "fine": 3535.44,
+      "testo": "il nostro"
+    },
+    {
+      "inizio": 3535.44,
+      "fine": 3536.44,
+      "testo": "bel"
+    },
+    {
+      "inizio": 3536.44,
+      "fine": 3537.44,
+      "testo": "marco di fabbrica,"
+    },
+    {
+      "inizio": 3537.44,
+      "fine": 3538.44,
+      "testo": "che questo,"
+    },
+    {
+      "inizio": 3538.44,
+      "fine": 3539.44,
+      "testo": "il nostro Watermark,"
+    },
+    {
+      "inizio": 3539.44,
+      "fine": 3540.44,
+      "testo": "è sempre"
+    },
+    {
+      "inizio": 3540.44,
+      "fine": 3542.44,
+      "testo": "che torniamo li,"
+    },
+    {
+      "inizio": 3542.44,
+      "fine": 3543.44,
+      "testo": "va fatta la la,"
+    },
+    {
+      "inizio": 3543.44,
+      "fine": 3544.44,
+      "testo": "vedete che non si vede?"
+    },
+    {
+      "inizio": 3544.44,
+      "fine": 3546.44,
+      "testo": "Questa è una cosa importante."
+    },
+    {
+      "inizio": 3546.44,
+      "fine": 3548.44,
+      "testo": "C'è lo più sbarrato."
+    },
+    {
+      "inizio": 3548.44,
+      "fine": 3549.44,
+      "testo": "Ok, dovete"
+    },
+    {
+      "inizio": 3549.44,
+      "fine": 3551.44,
+      "testo": "cliccare sull'occhio,"
+    },
+    {
+      "inizio": 3551.44,
+      "fine": 3552.44,
+      "testo": "se volete che si veda."
+    },
+    {
+      "inizio": 3552.44,
+      "fine": 3554.44,
+      "testo": "Però adesso non perdiamo tempo,"
+    },
+    {
+      "inizio": 3554.44,
+      "fine": 3555.44,
+      "testo": "al rivedere,"
+    },
+    {
+      "inizio": 3555.44,
+      "fine": 3557.44,
+      "testo": "come fare il Watermark,"
+    },
+    {
+      "inizio": 3557.44,
+      "fine": 3558.44,
+      "testo": "perché l'abbiamo visto prima."
+    },
+    {
+      "inizio": 3558.44,
+      "fine": 3559.44,
+      "testo": "Madiamo a vedere un'altra"
+    },
+    {
+      "inizio": 3559.44,
+      "fine": 3560.44,
+      "testo": "lombettino carina."
+    },
+    {
+      "inizio": 3560.44,
+      "fine": 3562.44,
+      "testo": "Andiamo sul media,"
+    },
+    {
+      "inizio": 3562.44,
+      "fine": 3563.44,
+      "testo": "e qui è come se"
+    },
+    {
+      "inizio": 3563.44,
+      "fine": 3565.44,
+      "testo": "stessimo su Flicky,"
+    },
+    {
+      "inizio": 3565.44,
+      "fine": 3567.44,
+      "testo": "al livello di video."
+    },
+    {
+      "inizio": 3567.44,
+      "fine": 3569.44,
+      "testo": "Quindi possiamo andare a sceglierci,"
+    },
+    {
+      "inizio": 3569.44,
+      "fine": 3571.44,
+      "testo": "un'immagine carina,"
+    },
+    {
+      "inizio": 3571.44,
+      "fine": 3572.44,
+      "testo": "per esempio,"
+    },
+    {
+      "inizio": 3572.44,
+      "fine": 3573.44,
+      "testo": "facciamo finta,"
+    },
+    {
+      "inizio": 3573.44,
+      "fine": 3574.44,
+      "testo": "questa,"
+    },
+    {
+      "inizio": 3574.44,
+      "fine": 3576.44,
+      "testo": "vediamo come sta?"
+    },
+    {
+      "inizio": 3576.44,
+      "fine": 3577.44,
+      "testo": "Ok,"
+    },
+    {
+      "inizio": 3577.44,
+      "fine": 3578.44,
+      "testo": "vi do persone,"
+    },
+    {
+      "inizio": 3578.44,
+      "fine": 3579.44,
+      "testo": "perché fa vedere"
+    },
+    {
+      "inizio": 3579.44,
+      "fine": 3580.44,
+      "testo": "due persone che si fa"
+    },
+    {
+      "inizio": 3580.44,
+      "fine": 3582.44,
+      "testo": "un selfie di frantacoloseo,"
+    },
+    {
+      "inizio": 3582.44,
+      "fine": 3584.44,
+      "testo": "giusto per fare un'ipotesi."
+    },
+    {
+      "inizio": 3584.44,
+      "fine": 3585.44,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3585.44,
+      "fine": 3586.44,
+      "testo": "che lo si andiamo a fare?"
+    },
+    {
+      "inizio": 3586.44,
+      "fine": 3588.44,
+      "testo": "Andiamo a fare questo lavoro qui."
+    },
+    {
+      "inizio": 3588.44,
+      "fine": 3589.44,
+      "testo": "Se io voglio mortare il testo,"
+    },
+    {
+      "inizio": 3589.44,
+      "fine": 3590.44,
+      "testo": "da volata all'altro,"
+    },
+    {
+      "inizio": 3590.44,
+      "fine": 3591.44,
+      "testo": "ok,"
+    },
+    {
+      "inizio": 3591.44,
+      "fine": 3593.44,
+      "testo": "fate sempre attenzione che il testo"
+    },
+    {
+      "inizio": 3593.44,
+      "fine": 3596.44,
+      "testo": "non arriva al morso e sattro,"
+    },
+    {
+      "inizio": 3596.44,
+      "fine": 3597.44,
+      "testo": "ma che lo spiori,"
+    },
+    {
+      "inizio": 3597.44,
+      "fine": 3598.44,
+      "testo": "perché se no,"
+    },
+    {
+      "inizio": 3598.44,
+      "fine": 3599.44,
+      "testo": "si possono perdere,"
+    },
+    {
+      "inizio": 3599.44,
+      "fine": 3600.44,
+      "testo": "magari dei particolari,"
+    },
+    {
+      "inizio": 3600.44,
+      "fine": 3602.44,
+      "testo": "ed è anche brutto da vedere."
+    },
+    {
+      "inizio": 3602.44,
+      "fine": 3603.44,
+      "testo": "Però lo voglio gradire."
+    },
+    {
+      "inizio": 3603.44,
+      "fine": 3604.44,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3604.44,
+      "fine": 3605.44,
+      "testo": "siamo sul testo,"
+    },
+    {
+      "inizio": 3605.44,
+      "fine": 3606.44,
+      "testo": "sì,"
+    },
+    {
+      "inizio": 3606.44,
+      "fine": 3607.44,
+      "testo": "vedete,"
+    },
+    {
+      "inizio": 3607.44,
+      "fine": 3608.44,
+      "testo": "è selezionato in rosa."
+    },
+    {
+      "inizio": 3608.44,
+      "fine": 3610.44,
+      "testo": "Abbiamo la possibilità di lavorare"
+    },
+    {
+      "inizio": 3610.44,
+      "fine": 3612.44,
+      "testo": "su questo menu laterale, ragazzi."
+    },
+    {
+      "inizio": 3612.44,
+      "fine": 3613.44,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3613.44,
+      "fine": 3615.44,
+      "testo": "voglio grandito il font."
+    },
+    {
+      "inizio": 3615.44,
+      "fine": 3616.44,
+      "testo": "Vedete,"
+    },
+    {
+      "inizio": 3616.44,
+      "fine": 3619.44,
+      "testo": "potete fare quello che volete."
+    },
+    {
+      "inizio": 3619.44,
+      "fine": 3621.44,
+      "testo": "Sempre rimanendo,"
+    },
+    {
+      "inizio": 3621.44,
+      "fine": 3623.44,
+      "testo": "nella parte di,"
+    },
+    {
+      "inizio": 3623.44,
+      "fine": 3624.44,
+      "testo": "sia gradevole,"
+    },
+    {
+      "inizio": 3624.44,
+      "fine": 3625.44,
+      "testo": "giusto?"
+    },
+    {
+      "inizio": 3625.44,
+      "fine": 3626.44,
+      "testo": "Quindi."
+    },
+    {
+      "inizio": 3626.44,
+      "fine": 3628.88,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3628.88,
+      "fine": 3632.54,
+      "testo": "E andiamo a dopere avere sempre sui colori."
+    },
+    {
+      "inizio": 3632.54,
+      "fine": 3633.54,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3633.54,
+      "fine": 3635.54,
+      "testo": "non mi piace il nero,"
+    },
+    {
+      "inizio": 3635.54,
+      "fine": 3636.54,
+      "testo": "cosa andiamo a fare?"
+    },
+    {
+      "inizio": 3636.54,
+      "fine": 3637.54,
+      "testo": "Non voglio rosso."
+    },
+    {
+      "inizio": 3638.54,
+      "fine": 3639.54,
+      "testo": "Ok?"
+    },
+    {
+      "inizio": 3639.54,
+      "fine": 3640.54,
+      "testo": "Come per dire,"
+    },
+    {
+      "inizio": 3640.54,
+      "fine": 3642.54,
+      "testo": "lo voglio di un altro colore,"
+    },
+    {
+      "inizio": 3642.54,
+      "fine": 3643.54,
+      "testo": "oppure,"
+    },
+    {
+      "inizio": 3643.54,
+      "fine": 3644.54,
+      "testo": "voglio un altro tipo di fonti,"
+    },
+    {
+      "inizio": 3644.54,
+      "fine": 3646.54,
+      "testo": "perché questo non mi piace."
+    },
+    {
+      "inizio": 3646.54,
+      "fine": 3648.54,
+      "testo": "Vedete?"
+    },
+    {
+      "inizio": 3648.54,
+      "fine": 3650.54,
+      "testo": "Avete la possibilità"
+    },
+    {
+      "inizio": 3650.54,
+      "fine": 3652.54,
+      "testo": "di spaziale,"
+    },
+    {
+      "inizio": 3652.54,
+      "fine": 3654.54,
+      "testo": "anche sotto questo punto di vista aspetto,"
+    },
+    {
+      "inizio": 3654.54,
+      "fine": 3655.54,
+      "testo": "che è una roba"
+    },
+    {
+      "inizio": 3655.54,
+      "fine": 3657.54,
+      "testo": "che è devastante, ragazzi."
+    },
+    {
+      "inizio": 3657.54,
+      "fine": 3658.54,
+      "testo": "Flicky sta facendo"
+    },
+    {
+      "inizio": 3658.54,
+      "fine": 3660.54,
+      "testo": "dei passi non"
+    },
+    {
+      "inizio": 3660.54,
+      "fine": 3661.54,
+      "testo": "dal gigante,"
+    },
+    {
+      "inizio": 3661.54,
+      "fine": 3663.54,
+      "testo": "ma veramente"
+    },
+    {
+      "inizio": 3663.54,
+      "fine": 3665.54,
+      "testo": "di"
+    },
+    {
+      "inizio": 3665.54,
+      "fine": 3667.54,
+      "testo": "10 giganti messi insieme."
+    },
+    {
+      "inizio": 3667.54,
+      "fine": 3668.54,
+      "testo": "Cioè nell'acqua di un mese,"
+    },
+    {
+      "inizio": 3668.54,
+      "fine": 3669.54,
+      "testo": "è vero che,"
+    },
+    {
+      "inizio": 3669.54,
+      "fine": 3671.54,
+      "testo": "ci stravolgono un po' di tino la vita"
+    },
+    {
+      "inizio": 3671.54,
+      "fine": 3672.54,
+      "testo": "quando fanno gli upgrade,"
+    },
+    {
+      "inizio": 3672.54,
+      "fine": 3673.54,
+      "testo": "e ci fanno"
+    },
+    {
+      "inizio": 3673.54,
+      "fine": 3674.54,
+      "testo": "penare,"
+    },
+    {
+      "inizio": 3674.54,
+      "fine": 3675.54,
+      "testo": "noi che ci lavoriamo"
+    },
+    {
+      "inizio": 3675.54,
+      "fine": 3677.54,
+      "testo": "tutto il giorno magari,"
+    },
+    {
+      "inizio": 3677.54,
+      "fine": 3678.54,
+      "testo": "ma devo dire,"
+    },
+    {
+      "inizio": 3678.54,
+      "fine": 3679.54,
+      "testo": "poi,"
+    },
+    {
+      "inizio": 3679.54,
+      "fine": 3680.54,
+      "testo": "vedere quello che fanno"
+    },
+    {
+      "inizio": 3680.54,
+      "fine": 3682.54,
+      "testo": "di upgrade,"
+    },
+    {
+      "inizio": 3682.54,
+      "fine": 3684.54,
+      "testo": "ne vale veramente la pena."
+    },
+    {
+      "inizio": 3684.54,
+      "fine": 3685.54,
+      "testo": "Quindi,"
+    },
+    {
+      "inizio": 3685.54,
+      "fine": 3686.54,
+      "testo": "abbiamo visto"
+    },
+    {
+      "inizio": 3686.54,
+      "fine": 3687.54,
+      "testo": "diverse situazioni,"
+    },
+    {
+      "inizio": 3687.54,
+      "fine": 3688.54,
+      "testo": "quindi,"
+    },
+    {
+      "inizio": 3688.54,
+      "fine": 3689.54,
+      "testo": "dal gestire un filmato"
+    },
+    {
+      "inizio": 3689.54,
+      "fine": 3691.54,
+      "testo": "con la funzionalità move"
+    },
+    {
+      "inizio": 3691.54,
+      "fine": 3692.54,
+      "testo": "a Viroll,"
+    },
+    {
+      "inizio": 3692.54,
+      "fine": 3693.54,
+      "testo": "abbiamo visto"
+    },
+    {
+      "inizio": 3693.54,
+      "fine": 3695.54,
+      "testo": "come inserire un logido"
+    },
+    {
+      "inizio": 3695.54,
+      "fine": 3697.54,
+      "testo": "di un leone creato"
+    },
+    {
+      "inizio": 3697.54,
+      "fine": 3699.54,
+      "testo": "con Flicky direttamente,"
+    },
+    {
+      "inizio": 3699.54,
+      "fine": 3701.54,
+      "testo": "come per dire,"
+    },
+    {
+      "inizio": 3701.54,
+      "fine": 3702.54,
+      "testo": "mi serve un'atomobile"
+    },
+    {
+      "inizio": 3702.54,
+      "fine": 3703.54,
+      "testo": "che fa una frenata di colpo,"
+    },
+    {
+      "inizio": 3703.54,
+      "fine": 3704.54,
+      "testo": "lo posso creare,"
+    },
+    {
+      "inizio": 3704.54,
+      "fine": 3705.54,
+      "testo": "lo inserisco nell'ascena"
+    },
+    {
+      "inizio": 3705.54,
+      "fine": 3706.54,
+      "testo": "in quel momento,"
+    },
+    {
+      "inizio": 3706.54,
+      "fine": 3707.54,
+      "testo": "è stato,"
+    },
+    {
+      "inizio": 3707.54,
+      "fine": 3708.54,
+      "testo": "ok ragazzi,"
+    },
+    {
+      "inizio": 3708.54,
+      "fine": 3709.54,
+      "testo": "si sta arrivando"
+    },
+    {
+      "inizio": 3709.54,
+      "fine": 3710.54,
+      "testo": "davvero"
+    },
+    {
+      "inizio": 3710.54,
+      "fine": 3711.54,
+      "testo": "una parte di editing,"
+    },
+    {
+      "inizio": 3711.54,
+      "fine": 3713.54,
+      "testo": "davvero carina con"
+    },
+    {
+      "inizio": 3713.54,
+      "fine": 3714.54,
+      "testo": "Flicky,"
+    },
+    {
+      "inizio": 3714.54,
+      "fine": 3715.54,
+      "testo": "non possiamo"
+    },
+    {
+      "inizio": 3715.54,
+      "fine": 3716.54,
+      "testo": "metterla"
+    },
+    {
+      "inizio": 3716.54,
+      "fine": 3717.54,
+      "testo": "confronto con"
+    },
+    {
+      "inizio": 3717.54,
+      "fine": 3718.54,
+      "testo": "programmi di editing,"
+    },
+    {
+      "inizio": 3718.54,
+      "fine": 3720.54,
+      "testo": "serie,"
+    },
+    {
+      "inizio": 3720.54,
+      "fine": 3722.54,
+      "testo": "come non lo so,"
+    },
+    {
+      "inizio": 3722.54,
+      "fine": 3724.54,
+      "testo": "quello della suite di ador,"
+    },
+    {
+      "inizio": 3724.54,
+      "fine": 3725.54,
+      "testo": "per dire, no?"
+    },
+    {
+      "inizio": 3725.54,
+      "fine": 3727.54,
+      "testo": "O come"
+    },
+    {
+      "inizio": 3727.54,
+      "fine": 3728.54,
+      "testo": "filmora,"
+    },
+    {
+      "inizio": 3728.54,
+      "fine": 3729.54,
+      "testo": "c'è,"
+    },
+    {
+      "inizio": 3729.54,
+      "fine": 3730.54,
+      "testo": "li parliamo di editing,"
+    },
+    {
+      "inizio": 3730.54,
+      "fine": 3731.54,
+      "testo": "un pochettino più"
+    },
+    {
+      "inizio": 3731.54,
+      "fine": 3732.54,
+      "testo": "da editing,"
+    },
+    {
+      "inizio": 3732.54,
+      "fine": 3733.54,
+      "testo": "però,"
+    },
+    {
+      "inizio": 3733.54,
+      "fine": 3734.54,
+      "testo": "Flicky,"
+    },
+    {
+      "inizio": 3734.54,
+      "fine": 3735.54,
+      "testo": "veramente,"
+    },
+    {
+      "inizio": 3735.54,
+      "fine": 3736.54,
+      "testo": "sta facendo un lavoro"
+    },
+    {
+      "inizio": 3736.54,
+      "fine": 3737.54,
+      "testo": "enorme,"
+    },
+    {
+      "inizio": 3737.54,
+      "fine": 3738.54,
+      "testo": "c'è,"
+    },
+    {
+      "inizio": 3738.54,
+      "fine": 3739.54,
+      "testo": "possiamo andare a fare"
+    },
+    {
+      "inizio": 3739.54,
+      "fine": 3741.54,
+      "testo": "un'aggestione di un video,"
+    },
+    {
+      "inizio": 3741.54,
+      "fine": 3742.54,
+      "testo": "di un contenuto,"
+    },
+    {
+      "inizio": 3742.54,
+      "fine": 3743.54,
+      "testo": "come sempre,"
+    },
+    {
+      "inizio": 3743.54,
+      "fine": 3744.54,
+      "testo": "veramente,"
+    },
+    {
+      "inizio": 3744.54,
+      "fine": 3745.54,
+      "testo": "il prossimo di fronta"
+    },
+    {
+      "inizio": 3745.54,
+      "fine": 3746.54,
+      "testo": "a un filmora,"
+    },
+    {
+      "inizio": 3746.54,
+      "fine": 3747.54,
+      "testo": "ragazzi,"
+    },
+    {
+      "inizio": 3747.54,
+      "fine": 3748.54,
+      "testo": "quindi,"
+    },
+    {
+      "inizio": 3748.54,
+      "fine": 3750.54,
+      "testo": "è spazio all'immaginazione,"
+    },
+    {
+      "inizio": 3750.54,
+      "fine": 3751.54,
+      "testo": "veramente,"
+    },
+    {
+      "inizio": 3751.54,
+      "fine": 3752.54,
+      "testo": "io immagino,"
+    },
+    {
+      "inizio": 3752.54,
+      "fine": 3754.54,
+      "testo": "l'altra volta parlavo"
+    },
+    {
+      "inizio": 3754.54,
+      "fine": 3755.54,
+      "testo": "con mia congnata,"
+    },
+    {
+      "inizio": 3755.54,
+      "fine": 3756.54,
+      "testo": "lei è una grafica"
+    },
+    {
+      "inizio": 3756.54,
+      "fine": 3757.54,
+      "testo": "professionista,"
+    },
+    {
+      "inizio": 3757.54,
+      "fine": 3759.54,
+      "testo": "e il capo marketing"
+    },
+    {
+      "inizio": 3759.54,
+      "fine": 3760.54,
+      "testo": "di una grossa"
+    },
+    {
+      "inizio": 3760.54,
+      "fine": 3761.54,
+      "testo": "seppia in Italia,"
+    },
+    {
+      "inizio": 3761.54,
+      "fine": 3762.54,
+      "testo": "una multinationale"
+    },
+    {
+      "inizio": 3762.54,
+      "fine": 3763.54,
+      "testo": "veramente in"
+    },
+    {
+      "inizio": 3763.54,
+      "fine": 3764.54,
+      "testo": "tutto il mondo."
+    },
+    {
+      "inizio": 3764.54,
+      "fine": 3765.54,
+      "testo": "Lei che,"
+    },
+    {
+      "inizio": 3765.54,
+      "fine": 3766.54,
+      "testo": "cos'è che,"
+    },
+    {
+      "inizio": 3766.54,
+      "fine": 3767.54,
+      "testo": "ne ho fatto vedere"
+    },
+    {
+      "inizio": 3767.54,
+      "fine": 3768.54,
+      "testo": "alcune funzionalità"
+    },
+    {
+      "inizio": 3768.54,
+      "fine": 3769.54,
+      "testo": "dei tulle"
+    },
+    {
+      "inizio": 3769.54,
+      "fine": 3770.54,
+      "testo": "cotizzo,"
+    },
+    {
+      "inizio": 3770.54,
+      "fine": 3772.54,
+      "testo": "è rimasta scomvolta,"
+    },
+    {
+      "inizio": 3772.54,
+      "fine": 3773.54,
+      "testo": "dice"
+    },
+    {
+      "inizio": 3773.54,
+      "fine": 3774.54,
+      "testo": "ogni volta"
+    },
+    {
+      "inizio": 3774.54,
+      "fine": 3775.54,
+      "testo": "che parlo con te,"
+    },
+    {
+      "inizio": 3775.54,
+      "fine": 3776.54,
+      "testo": "mi sembra di aver"
+    },
+    {
+      "inizio": 3776.54,
+      "fine": 3777.54,
+      "testo": "preso tutti,"
+    },
+    {
+      "inizio": 3777.54,
+      "fine": 3778.54,
+      "testo": "mi estudi"
+    },
+    {
+      "inizio": 3778.54,
+      "fine": 3779.54,
+      "testo": "di una vita,"
+    },
+    {
+      "inizio": 3779.54,
+      "fine": 3780.54,
+      "testo": "e aaware,"
+    },
+    {
+      "inizio": 3780.54,
+      "fine": 3781.54,
+      "testo": "con i miei delle bellei"
+    },
+    {
+      "inizio": 3781.54,
+      "fine": 3782.54,
+      "testo": "ati,"
+    },
+    {
+      "inizio": 3782.54,
+      "fine": 3783.38,
+      "testo": "scuola,"
+    },
+    {
+      "inizio": 3783.38,
+      "fine": 3784.38,
+      "testo": "e roba valia."
+    },
+    {
+      "inizio": 3784.38,
+      "fine": 3786.54,
+      "testo": "E buon terni,"
+    },
+    {
+      "inizio": 3786.54,
+      "fine": 3787.54,
+      "testo": "in il gabinetto"
+    },
+    {
+      "inizio": 3787.54,
+      "fine": 3788.54,
+      "testo": ", ti rarosciaco"
+    },
+    {
+      "inizio": 3788.54,
+      "fine": 3789.54,
+      "testo": "in 3 secondi,"
+    },
+    {
+      "inizio": 3789.54,
+      "fine": 3790.54,
+      "testo": "perché ti riferi"
+    },
+    {
+      "inizio": 3790.54,
+      "fine": 3791.54,
+      "testo": "delle robe,"
+    },
+    {
+      "inizio": 3791.54,
+      "fine": 3793.54,
+      "testo": "che io per fargli con"
+    },
+    {
+      "inizio": 3793.54,
+      "fine": 3794.54,
+      "testo": "un programma che"
+    },
+    {
+      "inizio": 3794.54,
+      "fine": 3795.54,
+      "testo": "ci ho studiato una vita,"
+    },
+    {
+      "inizio": 3795.54,
+      "fine": 3797.54,
+      "testo": "adesso ci metto,"
+    },
+    {
+      "inizio": 3797.54,
+      "fine": 3798.54,
+      "testo": "magari ci inclinute a farli,"
+    },
+    {
+      "inizio": 3798.54,
+      "fine": 3799.54,
+      "testo": "a teia li in 3 secondi,"
+    },
+    {
+      "inizio": 3799.54,
+      "fine": 3800.54,
+      "testo": "la fai,"
+    },
+    {
+      "inizio": 3800.54,
+      "fine": 3801.54,
+      "testo": "si, ragazzi,"
+    },
+    {
+      "inizio": 3801.54,
+      "fine": 3802.54,
+      "testo": "veramente soffrendente,"
+    },
+    {
+      "inizio": 3802.54,
+      "fine": 3803.54,
+      "testo": "riusciamo a fare"
+    },
+    {
+      "inizio": 3803.54,
+      "fine": 3804.54,
+      "testo": "con il tulle"
+    },
+    {
+      "inizio": 3804.54,
+      "fine": 3805.54,
+      "testo": "che vi inseriamo"
+    },
+    {
+      "inizio": 3805.54,
+      "fine": 3806.54,
+      "testo": "nel corso che avete vi istto,"
+    },
+    {
+      "inizio": 3806.54,
+      "fine": 3811.94,
+      "testo": "avete visto e che vi lanciamo aggiornamenti continui, cioè io vi dico la"
+    },
+    {
+      "inizio": 3811.94,
+      "fine": 3815.54,
+      "testo": "formazione fatto in questo modo è una figata pazzesca, io vi sono ritrovato"
+    },
+    {
+      "inizio": 3815.54,
+      "fine": 3820.06,
+      "testo": "sempre da fuide di corsi che se ti vuoi aggiornare te aggiornite i"
+    },
+    {
+      "inizio": 3820.06,
+      "fine": 3825.14,
+      "testo": "tull come ne nascono e bene te le vai che vi studi a me se ci riesci"
+    },
+    {
+      "inizio": 3825.14,
+      "fine": 3829.94,
+      "testo": "sembravo e poi avanti, ma qui no veramente vi facciamo toccare con mano delle"
+    },
+    {
+      "inizio": 3829.94,
+      "fine": 3838.1,
+      "testo": "robbe che magari voi anche per questioni di tempo non andrete a curiosare sui"
+    },
+    {
+      "inizio": 3838.1,
+      "fine": 3842.58,
+      "testo": "vari softwares, sui vari tull che utilizzate, quindi noi ci passiamo le"
+    },
+    {
+      "inizio": 3842.58,
+      "fine": 3847.34,
+      "testo": "giornate a fare dei test, a farvi vedere le funzionalità, magari quella roba"
+    },
+    {
+      "inizio": 3847.34,
+      "fine": 3855.22,
+      "testo": "li ero giuto leone, vado fatto vedere in un minuto per farvela capire bene, ma"
+    },
+    {
+      "inizio": 3855.22,
+      "fine": 3861.1,
+      "testo": "magari noi testandolo ci abbiamo messo 20 minuti, mezz'ora ok, quindi"
+    },
+    {
+      "inizio": 3861.1,
+      "fine": 3865.96,
+      "testo": "considerate con un gran lavoro che noi facciamo non per noi perché non amiamo"
+    },
+    {
+      "inizio": 3865.96,
+      "fine": 3870.46,
+      "testo": "a mantenere segreti, noi vedete la nostra comiurità è troppo bella, siamo"
+    },
+    {
+      "inizio": 3870.46,
+      "fine": 3874.4,
+      "testo": "veramente in una grande famiglia, non ci riserviamo di dire le cose, e questo"
+    },
+    {
+      "inizio": 3874.4,
+      "fine": 3879.7,
+      "testo": "è uno delle figate pazzesche, vi fanno aumentare le views, vi fanno aumentare"
+    },
+    {
+      "inizio": 3879.7,
+      "fine": 3884.28,
+      "testo": "i ritmi di lavoro, vi argevolano il lavoro e vi posso garantire che ci sono"
+    },
+    {
+      "inizio": 3884.28,
+      "fine": 3889.08,
+      "testo": "tanti di quelle creatività che potete utilizzare, io non sono una persona molto"
+    },
+    {
+      "inizio": 3889.08,
+      "fine": 3896.64,
+      "testo": "creativa di mio, al livello grafico, ho utilizzato per 6 anni, 7 anni, l'autodidata"
+    },
+    {
+      "inizio": 3896.64,
+      "fine": 3901.7,
+      "testo": "Photoshop e illustreto per la suite di Alop, però il gusto grafico è un'altra"
+    },
+    {
+      "inizio": 3901.7,
+      "fine": 3906.0,
+      "testo": "roba, c'è l'O ma non c'è l'otra per il colette, però qui si arriva a"
+    },
+    {
+      "inizio": 3906.0,
+      "fine": 3910.04,
+      "testo": "dei condombi troppo facile ad utilizzare che semplificano la vita in un modo"
+    },
+    {
+      "inizio": 3910.04,
+      "fine": 3915.2,
+      "testo": "stravolgente, ragazzi, e questa è la verità, abbiamo la possibilità di fare"
+    },
+    {
+      "inizio": 3915.2,
+      "fine": 3920.68,
+      "testo": "anche la differenza da un nostro contenuto rispetto al contenuto di un"
+    },
+    {
+      "inizio": 3920.68,
+      "fine": 3924.68,
+      "testo": "competitor, perché già applicando delle robbe del genere, come quello del"
+    },
+    {
+      "inizio": 3924.68,
+      "fine": 3929.52,
+      "testo": "birono sulle scene, potete fare una scena che lunga, flicchi, se non va"
+    },
+    {
+      "inizio": 3929.52,
+      "fine": 3933.44,
+      "testo": "del rato, ma fatto che non ci sia stato qualche lanzo di giornamento, vi è da"
+    },
+    {
+      "inizio": 3933.44,
+      "fine": 3938.08,
+      "testo": "la possibilità di inserire mille caratteri in una unica scena, ora cosa che"
+    },
+    {
+      "inizio": 3938.08,
+      "fine": 3942.52,
+      "testo": "succede? Vabbè potete mantenere una scena lunghissima, andate a fraccionare con"
+    },
+    {
+      "inizio": 3942.52,
+      "fine": 3951.6,
+      "testo": "biron, il copi e create tante media nella stessa scena, è fantastico ragazzi,"
+    },
+    {
+      "inizio": 3951.6,
+      "fine": 3955.96,
+      "testo": "dovete starli di nuovo a fraccionare il testo copia, non ho una scena, rifai e la"
+    },
+    {
+      "inizio": 3955.96,
+      "fine": 3962.0,
+      "testo": "cosa bellissima che quando l'andrete a utilizzare, mi direte, il birono ha una"
+    },
+    {
+      "inizio": 3962.0,
+      "fine": 3966.32,
+      "testo": "capacità sensitiva che va analizzare il testo che abbiamo ridenziato, che"
+    },
+    {
+      "inizio": 3966.32,
+      "fine": 3972.36,
+      "testo": "pazzi è scarallanzi, ora non ho fatto della rulla perché è un filmato davvero"
+    },
+    {
+      "inizio": 3972.36,
+      "fine": 3977.24,
+      "testo": "complicato da far gestire, quello di Roma perché c'erano dei monumenti che magari"
+    },
+    {
+      "inizio": 3977.24,
+      "fine": 3983.32,
+      "testo": "non sono integrati, no, nel flicchi, ma se vuoi andate a creare contenuti di un"
+    },
+    {
+      "inizio": 3983.32,
+      "fine": 3988.96,
+      "testo": "certo germano in alcune ricche sono tutti gli lui riconosce il testo e"
+    },
+    {
+      "inizio": 3988.96,
+      "fine": 3993.44,
+      "testo": "ve li inserisce quasi i precisi, ok? Oggi ho fatto vedere l'anteprima questa"
+    },
+    {
+      "inizio": 3993.44,
+      "fine": 4002.44,
+      "testo": "soluzione a uno studente che ha comprato delle consolenze e praticamente rimasta"
+    },
+    {
+      "inizio": 4002.44,
+      "fine": 4006.4,
+      "testo": "scomolta perché abbiamo creato in un'unica scena, abbiamo inserito tra"
+    },
+    {
+      "inizio": 4006.4,
+      "fine": 4011.6,
+      "testo": "in media diversi, gli ha sincronizzati esattamente con la stessa persona"
+    },
+    {
+      "inizio": 4011.6,
+      "fine": 4019.96,
+      "testo": "inserita in posizioni diverse ragazzi, diverse e questo rigordatevi che"
+    },
+    {
+      "inizio": 4019.96,
+      "fine": 4024.68,
+      "testo": "soprattutto tutti voi che avete l'abbonamento base di flicchi dovresti"
+    },
+    {
+      "inizio": 4024.68,
+      "fine": 4030.0,
+      "testo": "baciare a terra perché avete la possibilità di superare probabilmente in"
+    },
+    {
+      "inizio": 4030.0,
+      "fine": 4033.6,
+      "testo": "numero delle cinquantacine, adesso io questa prova al zoolemane di dicola"
+    },
+    {
+      "inizio": 4033.6,
+      "fine": 4039.6,
+      "testo": "veri che non lo fa, ma presumo che funzioni sicuramente perché nell'abbonamento"
+    },
+    {
+      "inizio": 4039.6,
+      "fine": 4043.92,
+      "testo": "basa e tu ci sappiamo che abbiamo cinquantacine massimo da utilizzare, ok?"
+    },
+    {
+      "inizio": 4043.92,
+      "fine": 4049.48,
+      "testo": "dopodiché flicchi ci dice è fermaticarlo se voi vanno più di cinquanta sborse"
+    },
+    {
+      "inizio": 4049.48,
+      "fine": 4055.56,
+      "testo": "denari vai comprati l'abbonamento full invece in questo modo se voi raggruppate in"
+    },
+    {
+      "inizio": 4055.56,
+      "fine": 4061.28,
+      "testo": "una scena, una grossa apporzione di testa, fate il birol e inserite 10,000"
+    },
+    {
+      "inizio": 4061.28,
+      "fine": 4068.4,
+      "testo": "nella stessa scena poi potrete creare altre 40 scena con 40 immagini, ma ne avrete"
+    },
+    {
+      "inizio": 4068.4,
+      "fine": 4073.08,
+      "testo": "a questo punto veramente superato il numero delle cinquanta, ok?"
+    },
+    {
+      "inizio": 4073.08,
+      "fine": 4076.76,
+      "testo": "Per esempio il Roberto Conferma si sembra supera nella grande perché il"
+    },
+    {
+      "inizio": 4076.76,
+      "fine": 4082.44,
+      "testo": "Roberto avrà fatto questo test, questo è una roba che vi dico, vi hanno facilitato"
+    },
+    {
+      "inizio": 4082.44,
+      "fine": 4089.24,
+      "testo": "in un modo pazzesco, poi io l'abbonamento primimo vero consiglio semplicemente per"
+    },
+    {
+      "inizio": 4089.24,
+      "fine": 4094.28,
+      "testo": "una roba avete delle voci ultre analistiche ragazzi, abbiamo implementato nell'ultima"
+    },
+    {
+      "inizio": 4094.28,
+      "fine": 4104.96,
+      "testo": "upgrade che sono qualcosa di pazzesco, io veramente giocando una domenica ho fatto sentire"
+    },
+    {
+      "inizio": 4104.96,
+      "fine": 4113.12,
+      "testo": "una mamma in famiglia, ho fatto sentire le narrazioni o non riuscivano a capire, andavo"
+    },
+    {
+      "inizio": 4113.12,
+      "fine": 4117.48,
+      "testo": "una sensazione di cenare questo artificiale, no questo reale, c'è veramente in pazzesco"
+    },
+    {
+      "inizio": 4117.48,
+      "fine": 4122.92,
+      "testo": "ragazzi, se non lo sappiamo non le riconosciamone anche noi tante volte, se gistite bene"
+    },
+    {
+      "inizio": 4122.92,
+      "fine": 4129.32,
+      "testo": "nell'accento, loro fanno con l'ultima upgrade con le voci ultre analiste che fanno i respiri"
+    },
+    {
+      "inizio": 4129.32,
+      "fine": 4136.52,
+      "testo": "ragazzi, cioè si fermano facendo le pause con i respiri e pazzesco, c'è veramente difficile"
+    },
+    {
+      "inizio": 4136.52,
+      "fine": 4143.88,
+      "testo": "che si riesca a percepire che un arratore è un'intelligenza artificiale, abbiamo la possibilità"
+    },
+    {
+      "inizio": 4143.88,
+      "fine": 4153.0,
+      "testo": "di creare contenuti bellissimi, che sono unici, basta che andiamo lì e giocarelliamo"
+    },
+    {
+      "inizio": 4153.0,
+      "fine": 4160.76,
+      "testo": "con i tool, facciamo test, ok, o come amo dire sempre, ormai chi mi conosce lo sa, smaniamo,"
+    },
+    {
+      "inizio": 4160.76,
+      "fine": 4166.36,
+      "testo": "ok, andiamo li a smanettare, facciamo delle prove, andiamo a verificare, come sarebbe"
+    },
+    {
+      "inizio": 4166.36,
+      "fine": 4170.36,
+      "testo": "stare un bacchi, come l'effetto, si non andavo a gestire questa roba qui delle miniatumure,"
+    },
+    {
+      "inizio": 4170.36,
+      "fine": 4175.56,
+      "testo": "vedere dopo la predivetti cosa hanno fatto, oggi non potevo presentare veloce, dovete essere"
+    },
+    {
+      "inizio": 4175.56,
+      "fine": 4184.36,
+      "testo": "curiosi, la curiosità veramente vi porta avanti 10 passi rispetto a gli altri, ok, quindi questa,"
+    },
+    {
+      "inizio": 4184.36,
+      "fine": 4192.44,
+      "testo": "secondo me, è stata una lezione abbastanza intensa, marido, abbiamo fatto un po' di robette in un'ora"
+    },
+    {
+      "inizio": 4192.44,
+      "fine": 4202.28,
+      "testo": "e 10 e mi fermerei così, perché è inutile andare avanti con altri informazioni, lavorateci,"
+    },
+    {
+      "inizio": 4202.28,
+      "fine": 4215.16,
+      "testo": "divertitevi, siete creativi, farete delle robbe, fa 6 ragazzi, ok, quindi io intanto vi dico se avete"
+    },
+    {
+      "inizio": 4215.16,
+      "fine": 4221.96,
+      "testo": "qualche domanda di qualcosa che non abbiamo fatto, mi lascio spazio ma giusto per"
+    },
+    {
+      "inizio": 4222.76,
+      "fine": 4230.84,
+      "testo": "3 domande e poi ci lasciamo perché sono le 10-10, io tanto lavoro ancora da fare, lavoro per voi,"
+    },
+    {
+      "inizio": 4231.4,
+      "fine": 4236.92,
+      "testo": "quindi assolutamente se non ci sono domande, se non arrivano, la miniatura si deve scaricare,"
+    },
+    {
+      "inizio": 4236.92,
+      "fine": 4245.4,
+      "testo": "perfetto, lo davo per scontata Antonio, assolutamente sì, basta che vai su Download e lui scarica la"
+    },
+    {
+      "inizio": 4245.4,
+      "fine": 4253.8,
+      "testo": "miniatura, ok, come facciamo per il video, avete la possibilità di lavorare su i vari formati, quindi"
+    },
+    {
+      "inizio": 4253.8,
+      "fine": 4263.24,
+      "testo": "GPEG, PNG, Web, PDF, addirittura o il formato per la suite di Office compatibile, ok, quindi molto,"
+    },
+    {
+      "inizio": 4263.24,
+      "fine": 4274.04,
+      "testo": "molto, molto semplice, una roba semplice che mi può far fare la differenza, ok, vediamo se c'è qualche"
+    },
+    {
+      "inizio": 4274.04,
+      "fine": 4281.96,
+      "testo": "domanda, io inserisco foto, posso fare lo stesso lavoro in testo di multiminut, sì assolutamente sì,"
+    },
+    {
+      "inizio": 4281.96,
+      "fine": 4289.56,
+      "testo": "c'è la può fare, lo stesso lavoro al posto del contenuto di se un frame video puoi farlo con le foto,"
+    },
+    {
+      "inizio": 4289.56,
+      "fine": 4294.84,
+      "testo": "non cambiano la basta che fa il upload e poi puoi lavorare, ho cambiato un bene cos'entendi,"
+    },
+    {
+      "inizio": 4294.84,
+      "fine": 4303.72,
+      "testo": "l'ho trinzo tantissimo anch'io, quindi ti dico assolutamente sì, puoi fare questo, ok, vedo che"
+    },
+    {
+      "inizio": 4303.72,
+      "fine": 4312.8,
+      "testo": "porto una scritto, scritto in Q&A, vediamo che cosa c'è, c'è qualche domanda, ok, come si fa da"
+    },
+    {
+      "inizio": 4312.8,
+      "fine": 4320.48,
+      "testo": "giornal, la pronuncia della demo, si erano utilizzando la demo, non ho chilizzare, l'hato più importante in"
+    },
+    {
+      "inizio": 4320.48,
+      "fine": 4328.0,
+      "testo": "volta, allora Valentina, quando te fai la, si ho capito cosa vuoi dire, un po' contortato la domanda,"
+    },
+    {
+      "inizio": 4328.0,
+      "fine": 4335.76,
+      "testo": "ma ho capito bene, quando fai la mappa delle pronunce, la devi fare su quella demo, è l'ogico, la"
+    },
+    {
+      "inizio": 4335.76,
+      "fine": 4344.24,
+      "testo": "fai nel tuo media che stai creando nel tuo contenuto, però fai questo, io cosa faccio, mi"
+    },
+    {
+      "inizio": 4344.24,
+      "fine": 4353.36,
+      "testo": "duplico la maschera e faccio questa situazione qui, adesso semmo, facciamo finta, questa era quello"
+    },
+    {
+      "inizio": 4353.36,
+      "fine": 4359.92,
+      "testo": "di prima, l'amcollo della miniatura malattura, ovvero con due maschere differenti, facciamo finta,"
+    },
+    {
+      "inizio": 4359.92,
+      "fine": 4371.76,
+      "testo": "facciamo finta di questo, dai, allora in questa settione, per esempio il sette non c'è,"
+    },
+    {
+      "inizio": 4371.76,
+      "fine": 4377.28,
+      "testo": "è l'abbiamo implementato prima su questa, è un biavolo che si è rimasta, infatti è rimasto,"
+    },
+    {
+      "inizio": 4377.28,
+      "fine": 4383.96,
+      "testo": "cosa è che faccio? Facciamo finta, anzi no, prima ci proprio la demo, così facciamo la domanda esatta"
+    },
+    {
+      "inizio": 4383.96,
+      "fine": 4392.36,
+      "testo": "di rispondere la domanda esatta di valentina, devono utilizzare, andiamo nella pronuncia, ok,"
+    },
+    {
+      "inizio": 4392.36,
+      "fine": 4398.2,
+      "testo": "non c'è i sette, però io qui lo impostato, cos'è che faccio copia, non vale la pena sul set,"
+    },
+    {
+      "inizio": 4398.2,
+      "fine": 4405.4,
+      "testo": "perché io non il numero, vi copio questo, vado sulla demo, scrivo sette, poi faccio in colla,"
+    },
+    {
+      "inizio": 4405.48,
+      "fine": 4414.64,
+      "testo": "io do il visto e faccio danno, così ho aggiornato anche il file demo, quindi ho visto che funziona quando"
+    },
+    {
+      "inizio": 4414.64,
+      "fine": 4421.88,
+      "testo": "faccio la narrazione di qua, vado e mi faccio con la mappe le pronunce del file demo, implementazione,"
+    },
+    {
+      "inizio": 4421.88,
+      "fine": 4429.64,
+      "testo": "così per tutti gli altimi rimarranno, ok, vediamo se ci altro, allora semmo, dimise mi senti?"
+    },
+    {
+      "inizio": 4429.64,
+      "fine": 4437.12,
+      "testo": "Ok, allora intanto grazie mille per la decine, che hanno apprezzato tutti, quindi vi chiedo anche"
+    },
+    {
+      "inizio": 4437.12,
+      "fine": 4443.64,
+      "testo": "a voi ragazzi in chat, se vi è piaciuta a questa live, magari vi piacerebbe farne altre,"
+    },
+    {
+      "inizio": 4443.64,
+      "fine": 4449.08,
+      "testo": "perché come avete visto questi aggiornamenti possono e faranno la differenza per molti di voi,"
+    },
+    {
+      "inizio": 4449.08,
+      "fine": 4455.56,
+      "testo": "quindi magari fatecelo sapere nella chat, vi invito sempre a essere presenti nella community,"
+    },
+    {
+      "inizio": 4455.56,
+      "fine": 4461.48,
+      "testo": "a scrivere, perché quello vi motiva anche a voi, e ci motiva anche a noi a fare sempre di più,"
+    },
+    {
+      "inizio": 4461.48,
+      "fine": 4468.36,
+      "testo": "vedo che ovviamente tutti volete altre lezioni del genere, siccome una domanda che hanno fatto"
+    },
+    {
+      "inizio": 4468.36,
+      "fine": 4475.92,
+      "testo": "in tanti, se questa live verrà caricata all'interno del percorso, allora molto probabilmente,"
+    },
+    {
+      "inizio": 4475.92,
+      "fine": 4482.08,
+      "testo": "visto che siamo alla fine, verrà caricato come aggiornamento nella sezione Editing, quindi ci sarà un"
+    },
+    {
+      "inizio": 4482.08,
+      "fine": 4487.64,
+      "testo": "video, ma comunque riceverebbe una comunicazione, però ora, quindi per chi si è registrato state"
+    },
+    {
+      "inizio": 4487.64,
+      "fine": 4494.2,
+      "testo": "tranquilli, perché domani riceverebbe comunque la registrazione, via email, vi arriverà l'imail della"
+    },
+    {
+      "inizio": 4494.2,
+      "fine": 4500.64,
+      "testo": "registrazione di questa live, direttamente nell'imail che aveva ed utilizzato per registrarvi, quindi poi"
+    },
+    {
+      "inizio": 4500.64,
+      "fine": 4505.24,
+      "testo": "non dite magari non mi è arrivata, perché vi arriverà in queste mei, quindi se avete partecipato oggi,"
+    },
+    {
+      "inizio": 4505.24,
+      "fine": 4513.56,
+      "testo": "vi arriverà sicuro al cento per cento, quindi come vi ha detto se, nei corsi di formazione di solido,"
+    },
+    {
+      "inizio": 4513.56,
+      "fine": 4520.04,
+      "testo": "ci tengo a sottolineare questa cosa, poi comprate il percorso definito, noi vi siamo comunque aggiornando,"
+    },
+    {
+      "inizio": 4520.04,
+      "fine": 4526.96,
+      "testo": "siamo facendo un sacco di live-class, di aggiornamenti su tutto quello che è possibile, ovviamente darvi e"
+    },
+    {
+      "inizio": 4526.96,
+      "fine": 4533.8,
+      "testo": "lo facciamo con grandissimo, grandissimo piacere, però sapete che non è una cosa scontata questa,"
+    },
+    {
+      "inizio": 4533.8,
+      "fine": 4538.84,
+      "testo": "quindi ci tengo a sottolinearlo, soprattutto per tanti che hanno assistido oggi a questa live,"
+    },
+    {
+      "inizio": 4538.84,
+      "fine": 4546.68,
+      "testo": "perché magari non l'avevano nel loro pack, quindi per molti questa live, questa registrazione,"
+    },
+    {
+      "inizio": 4546.68,
+      "fine": 4553.32,
+      "testo": "comunque dovuta e la ritroverete, per molti è stato un regalo, quindi ci tengo a sottolineare questa"
+    },
+    {
+      "inizio": 4553.32,
+      "fine": 4560.04,
+      "testo": "cosa, non ve lo l'ora di vedervi presenti nella live, continuate a seguirci, grazie Sam, per questa"
+    },
+    {
+      "inizio": 4560.04,
+      "fine": 4569.16,
+      "testo": "straordinaria, aiutato sicuramente tutti, quindi buona notte è un grandissimo abbraccio da Pietro"
+    },
+    {
+      "inizio": 4569.16,
+      "fine": 4573.4,
+      "testo": "Kanjami e da Mitico Sam. Ciao ragazzi, buona sera, abbraccio."
+    }
+  ]
+}
