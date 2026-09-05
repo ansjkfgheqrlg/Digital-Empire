@@ -17,7 +17,13 @@ body {
 h1,h2,h3 { margin:0; font-weight:700; letter-spacing:-0.028em; line-height:1.06; }
 p { margin:0; line-height:1.68; }
 strong { font-weight:600; }
-.mono { font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums; }
+/* Zero NON barrato: in un documento di cifre lo zero slashed di Plex sembra un refuso.
+   `zero 0` spegne quella feature, `tnum` tiene le colonne allineate. */
+.mono, .tab td.n, .tab th.n, .figure .n {
+  font-feature-settings:"zero" 0, "tnum" 1;
+  font-variant-numeric:tabular-nums;
+}
+.mono { font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace; }
 
 /* ------------------------------------------------------------------ impaginato */
 .page {
@@ -56,7 +62,10 @@ strong { font-weight:600; }
 
 /* ------------------------------------------------------------------ copertina */
 .page.cover .masthead { position:absolute; left:20mm; right:20mm; top:22mm; margin:0; }
-.cover-mid { flex:1; display:flex; flex-direction:column; justify-content:center; }
+/* Il titolo siede sul terzo basso, non al centro: sopra resta l’aria, sotto la firma. */
+.cover-mid {
+  flex:1; display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:14mm;
+}
 h1.big { font-size:64px; line-height:0.94; letter-spacing:-0.04em; }
 h1.big .soft { color:rgba(244,242,246,0.38); font-weight:300; }
 h1.big .acc { color:var(--orange); }
@@ -84,7 +93,13 @@ h2.title .soft { color:var(--text-3); font-weight:300; }
 .lead { font-size:12px; color:var(--text-2); max-width:64ch; margin-top:7mm; line-height:1.72; }
 .page.dark .lead { color:rgba(244,242,246,0.66); }
 
-.body { flex:1; margin-top:13mm; padding-bottom:5mm; display:flex; flex-direction:column; }
+/* La colonna distribuisce i blocchi su tutta l’altezza: i margini sono il minimo,
+   lo spazio che avanza si divide fra i blocchi invece di cadere tutto in fondo.
+   È la differenza fra una pagina impaginata e una pagina che finisce prima. */
+.body {
+  flex:1; margin-top:13mm; padding-bottom:5mm;
+  display:flex; flex-direction:column; justify-content:space-between;
+}
 .unit { break-inside:avoid; page-break-inside:avoid; }
 .stack > * + * { margin-top:10mm; }
 .stack-tight > * + * { margin-top:7mm; }
@@ -131,7 +146,7 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
 .page.dark .figure .u { color:rgba(244,242,246,0.6); }
 
 /* ------------------------------------------------------------------ tabella
-   Nessuna linea: le righe si separano con un velo di tinta, che e' superficie. */
+   Nessuna linea: le righe si separano con un velo di tinta, che è superficie. */
 .tab { width:100%; border-collapse:collapse; }
 .tab th {
   font-size:7.5px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase;
@@ -196,86 +211,86 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
 <div class='cover-mid'>
   <h1 class='big'>Higgsfield<br><span class='soft'>ed</span> <span class='acc'>ElevenLabs</span>.</h1>
   <p class='cover-lead'>Sessantotto pagine dei due siti lette sul DOM renderizzato, i Termini
-  d'uso e la normativa italiana. Il conto e' fatto sul volume di produzione dichiarato, non su
+  d’uso e la normativa italiana. Il conto è fatto sul volume di produzione dichiarato, non su
   un video singolo. Tre conclusioni delle stesure precedenti erano sbagliate e qui sono
-  corrette, ognuna segnata dov'e'.</p>
-  <div class='cover-meta'>
+  corrette, ognuna segnata dov’è.</p>
+  <div class='cover-metà>
     <div><div class='k'>Volume</div><div class='v'>172 video · 904 min</div></div>
     <div><div class='k'>Mese di prova</div><div class='v'>circa €139</div></div>
     <div><div class='k'>A regime</div><div class='v'>€2.113 al mese</div></div>
     <div><div class='k'>Per</div><div class='v'>Max</div></div>
   </div>
 </div>
-</div><div class='foot'><span>Emperator · 5 settembre 2026</span><span>Piano d'acquisto</span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>A</span>La prima mossa</div><h2 class='title'>Un mese di prova, <span class='soft'>mensile.</span></h2><p class='lead'>Nessun impegno annuale finche' le prove non hanno risposto. L'annuale sconta il 30% ma blocca dodici mesi: su un mese di prova annullerebbe la prova stessa.</p>
+</div><div class='foot'><span>Emperator · 5 settembre 2026</span><span>Piano d’acquisto</span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>A</span>La prima mossa</div><h2 class='title'>Un mese di prova, <span class='soft'>mensile.</span></h2><p class='lead'>Nessun impegno annuale finche' le prove non hanno risposto. L’annuale sconta il 30% ma blocca dodici mesi: su un mese di prova annullerebbe la prova stessa.</p>
 <div class='body stack'>
   <div class='unit grid3'>
-    <div class='figure'><div class='k'>Higgsfield · Ultra 3.000</div><div class='n'>€129</div><div class='u'>Mensile. Tutti i modelli, otto job in parallelo, Canvas, Vibe Motion, Supercomputer, e i sette giorni di Kling 3.0 unlimited.</div></div><div class='figure'><div class='k'>ElevenLabs · Creator</div><div class='n'>$11</div><div class='u'>Primo mese al 50%, poi $22. Voice cloning professionale, 121.000 crediti di voce, 275 minuti di chiamate.</div></div><div class='figure'><div class='k'>Totale del mese di prova</div><div class='n acc'>€139</div><div class='u'>Il prezzo dell'opzione di dire di no. Promozioni come il 30% vengono rimesse ogni due mesi.</div></div>
+    <div class='figure'><div class='k'>Higgsfield · Ultra 3.000</div><div class='n'>€129</div><div class='u'>Mensile. Tutti i modelli, otto job in parallelo, Canvas, Vibe Motion, Supercomputer, e i sette giorni di Kling 3.0 unlimited.</div></div><div class='figure'><div class='k'>ElevenLabs · Creator</div><div class='n'>$11</div><div class='u'>Primo mese al 50%, poi $22. Voice cloning professionale, 121.000 crediti di voce, 275 minuti di chiamate.</div></div><div class='figure'><div class='k'>Totale del mese di prova</div><div class='n acc'>€139</div><div class='u'>Il prezzo dell’opzione di dire di no. Promozioni come il 30% vengono rimesse ogni due mesi.</div></div>
   </div>
   <div class='unit'>
-    <div class='kicker'><span class='n'>—</span>Perche' Ultra e non Plus</div>
+    <div class='kicker'><span class='n'>—</span>Perché Ultra e non Plus</div>
     <p class='note'>Plus costa €59 e da' 1.200 crediti; le prove ne chiedono 2.640, quindi
     servirebbero €66 di pacchetti. Totale €125, praticamente identico — ma con sei job
-    paralleli invece di otto e <strong>zero margine per gli scarti</strong>. A parita' di spesa
-    si prende quello che non finisce a meta' prova.</p>
+    paralleli invece di otto e <strong>zero margine per gli scarti</strong>. A parità di spesa
+    si prende quello che non finisce a metà prova.</p>
   </div>
   <div class='unit push'>
     <p class='quote'>«Faremo un acquisto di prova solamente per un mese, il minimo indispensabile
-    per fare tutte le prove possibili. Pero' considera che le prime prove saranno scarti, perche'
+    per fare tutte le prove possibili. Pero' considera che le prime prove saranno scarti, perché
     sbaglieremo qualcosa.»<span class='src'>Max — 5 settembre 2026</span></p>
   </div>
 </div>
-</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>02</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>A</span>Il mese di prova</div><h2 class='title'>Nove prove, <span class='soft'>con lo scarto dentro al conto.</span></h2><p class='lead'>Tasso di scarto 3× invece di 2×: la prima volta si sbaglia il prompt, la reference o il formato. E' messo nel conto, non sperato via.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Prova</th><th>Composizione</th><th class='n'>Crediti</th></tr></thead><tbody><tr><td class='k'>1 · Video YouTube</td><td>Un segmento da 2 min provato 3 volte, poi un video intero da 10 min</td><td class='n'>664</td></tr><tr><td class='k'>2 · Corti Vibe Motion</td><td>3 corti, 3 iterazioni ciascuno, sfondi condivisi</td><td class='n'>552</td></tr><tr class='hi'><td class='k'>3 · Misura del TTS</td><td>5 campioni di lunghezza nota — incognita, budget</td><td class='n'>150</td></tr><tr><td class='k'>4 · Canvas</td><td>Costruzione gratis, 3 esecuzioni del template</td><td class='n'>330</td></tr><tr><td class='k'>5 · Layers su slide Arena</td><td>10 rigenerazioni del solo testo — incognita, budget</td><td class='n'>80</td></tr><tr><td class='k'>6 · Avatar UGC</td><td>300 volti Soul 2.0, training del personaggio, 1 video da 30s</td><td class='n'>372</td></tr><tr><td class='k'>7 · Promo prodotto 30s</td><td>Manuale Claude Code</td><td class='n'>144</td></tr><tr><td class='k'>8 · Confronto premium</td><td>Seedance 2.0, Veo 3.1 e Sora 2 Pro sulla stessa scena</td><td class='n'>248</td></tr><tr><td class='k'>9 · MCP da Claude Code</td><td>10 generazioni miste guidate da qui</td><td class='n'>100</td></tr><tr><td class='k'>Somma piu' 25% di margine</td><td>2.640 + 660</td><td class='n'>3.300</td></tr></tbody></table><p class='cap'>Ultra da' 3.000 crediti, quindi si e' 300 sotto — <strong>ma solo sulla carta</strong>: i sette giorni di Kling 3.0 unlimited coprono a mano circa 900 crediti delle prove 1, 2, 7 e in parte 4. La finestra unlimited va usata per prima, non per ultima.</p></div>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>02</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>A</span>Il mese di prova</div><h2 class='title'>Nove prove, <span class='soft'>con lo scarto dentro al conto.</span></h2><p class='lead'>Tasso di scarto 3× invece di 2×: la prima volta si sbaglia il prompt, la reference o il formato. È messo nel conto, non sperato via.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Prova</th><th>Composizione</th><th class='n'>Crediti</th></tr></thead><tbody><tr><td class='k'>1 · Video YouTube</td><td>Un segmento da 2 min provato 3 volte, poi un video intero da 10 min</td><td class='n'>664</td></tr><tr><td class='k'>2 · Corti Vibe Motion</td><td>3 corti, 3 iterazioni ciascuno, sfondi condivisi</td><td class='n'>552</td></tr><tr class='hi'><td class='k'>3 · Misura del TTS</td><td>5 campioni di lunghezza nota — incognita, budget</td><td class='n'>150</td></tr><tr><td class='k'>4 · Canvas</td><td>Costruzione gratis, 3 esecuzioni del template</td><td class='n'>330</td></tr><tr><td class='k'>5 · Layers su slide Arena</td><td>10 rigenerazioni del solo testo — incognita, budget</td><td class='n'>80</td></tr><tr><td class='k'>6 · Avatar UGC</td><td>300 volti Soul 2.0, training del personaggio, 1 video da 30s</td><td class='n'>372</td></tr><tr><td class='k'>7 · Promo prodotto 30s</td><td>Manuale Claude Code</td><td class='n'>144</td></tr><tr><td class='k'>8 · Confronto premium</td><td>Seedance 2.0, Veo 3.1 e Sora 2 Pro sulla stessa scena</td><td class='n'>248</td></tr><tr><td class='k'>9 · MCP da Claude Code</td><td>10 generazioni miste guidate da qui</td><td class='n'>100</td></tr><tr><td class='k'>Somma più 25% di margine</td><td>2.640 + 660</td><td class='n'>3.300</td></tr></tbody></table><p class='cap'>Ultra da' 3.000 crediti, quindi si è 300 sotto — <strong>ma solo sulla carta</strong>: i sette giorni di Kling 3.0 unlimited coprono a mano circa 900 crediti delle prove 1, 2, 7 e in parte 4. La finestra unlimited va usata per prima, non per ultima.</p></div>
   <div class='unit'>
     <div class='kicker'><span class='n'>—</span>Le regole di condotta</div>
     <ul class='clean'>
-      <li><strong>Tetto di spesa nel codice:</strong> nessuna generazione sopra 50 crediti senza via libera esplicito. L'MCP non ne ha uno nativo.</li>
+      <li><strong>Tetto di spesa nel codice:</strong> nessuna generazione sopra 50 crediti senza via libera esplicito. L’MCP non ne ha uno nativo.</li>
       <li><strong>Registro delle prove:</strong> ogni generazione annotata con modello, crediti ed esito. Senza registro il mese produce impressioni, non numeri.</li>
-      <li><strong>Data del rinnovo sul calendario</strong> il giorno stesso dell'acquisto. Disdetta se due prove su tre falliscono.</li>
-      <li><strong>I crediti non si riportano al mese dopo:</strong> quello che non si spende e' perso, quindi le prove si fanno tutte.</li>
+      <li><strong>Data del rinnovo sul calendario</strong> il giorno stesso dell’acquisto. Disdetta se due prove su tre falliscono.</li>
+      <li><strong>I crediti non si riportano al mese dopo:</strong> quello che non si spende è perso, quindi le prove si fanno tutte.</li>
     </ul>
   </div>
-</div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>03</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>B</span>Il conto a regime</div><h2 class='title'>Il volume vero <span class='soft'>di Digital Empire.</span></h2><p class='lead'>Le stesure precedenti costavano un video singolo e si fermavano li'. Questo e' il conto che decide.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Formato</th><th>Cadenza</th><th class='n'>Al mese</th><th class='n'>Minuti</th></tr></thead><tbody><tr><td class='k'>Video YouTube 10 min</td><td>3-2-3-2 alternata, due giorni di stop</td><td class='n'>70</td><td class='n'>700</td></tr><tr><td class='k'>Corti 1-3 min</td><td>Tre al giorno, sei una volta a settimana</td><td class='n'>102</td><td class='n'>204</td></tr><tr><td class='k'>Chiamate agente vocale</td><td>Cento al giorno</td><td class='n'>3.000</td><td class='n'>6.000</td></tr></tbody></table><p class='cap'>Totale: <strong>172 video e 904 minuti di video finito al mese</strong>.</p></div><div class='unit'><table class='tab'><thead><tr><th>Scenario</th><th class='n'>Cr / video YT</th><th class='n'>Cr / corto</th><th class='n'>Crediti al mese</th><th class='n'>Higgsfield / mese</th></tr></thead><tbody><tr><td class='k'>Magro — poche clip, molte immagini; corti di sola grafica</td><td class='n'>176</td><td class='n'>45</td><td class='n'>16.890</td><td class='n'>€635</td></tr><tr class='hi'><td class='k'>Medio — b-roll vero; corti con quattro sfondi in movimento</td><td class='n'>349</td><td class='n'>109</td><td class='n'>35.514</td><td class='n'>€1.496</td></tr><tr><td class='k'>Ricco — aperture Seedance 2.0; corti con otto clip</td><td class='n'>645</td><td class='n'>175</td><td class='n'>63.006</td><td class='n'>€2.768</td></tr></tbody></table><p class='cap'>Base Ultra 9.000 (€270 annuale) piu' pacchetti a €0,046 il credito. Tasso di riprova 2×. Calcolo riproducibile: <strong>PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py</strong></p></div><div class='unit grid3'><div class='figure'><div class='k'>Higgsfield, scenario medio</div><div class='n'>€1.496</div><div class='u'>35.514 crediti al mese: quattro volte il tetto acquistabile da soli.</div></div><div class='figure'><div class='k'>ElevenLabs, tutto compreso</div><div class='n'>€617</div><div class='u'>Pro piu' eccedenza chiamate, telefonia italiana e modello.</div></div><div class='figure'><div class='k'>Totale mensile</div><div class='n acc'>€2.113</div><div class='u'>Circa €25.400 all'anno. Con il tasso di riprova a 1,3: €1.604 al mese.</div></div></div></div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>04</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>B</span>Il listino</div><h2 class='title'>Dove stanno <span class='soft'>i crediti economici.</span></h2><p class='lead'>Sorpresa del listino: i piani per squadre sono i crediti piu' cari di tutti, perche' il prezzo e' per posto con un minimo di cinque.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Piano Higgsfield</th><th class='n'>Crediti/mese</th><th class='n'>Costo/mese</th><th class='n'>Per credito</th></tr></thead><tbody><tr><td class='k'>Team — cinque posti</td><td class='n'>5.000</td><td class='n'>€325</td><td class='n'>€0,0650</td></tr><tr><td class='k'>Scale — cinque posti</td><td class='n'>12.500</td><td class='n'>€750</td><td class='n'>€0,0600</td></tr><tr><td class='k'>Pacchetti extra</td><td class='n'>a consumo</td><td class='n'>—</td><td class='n'>€0,0463</td></tr><tr><td class='k'>Plus</td><td class='n'>1.200</td><td class='n'>€47</td><td class='n'>€0,0392</td></tr><tr><td class='k'>Ultra 3.000</td><td class='n'>3.000</td><td class='n'>€99</td><td class='n'>€0,0330</td></tr><tr><td class='k'>Ultra 6.000</td><td class='n'>6.000</td><td class='n'>€194</td><td class='n'>€0,0323</td></tr><tr class='hi'><td class='k'>Ultra 9.000</td><td class='n'>9.000</td><td class='n'>€270</td><td class='n'>€0,0300</td></tr></tbody></table><p class='cap'>Tariffe annuali, IVA esclusa. <strong>Starter non accede a Seedance</strong>: il piano minimo utile e' Plus. Ultra 9.000 e' il massimo acquistabile senza passare da un commerciale.</p></div><div class='unit'><table class='tab'><thead><tr><th>Piano ElevenLabs</th><th class='n'>Canone</th><th class='n'>Eccedenza chiamate</th><th class='n'>Totale/mese</th><th>Crediti voce bastano?</th></tr></thead><tbody><tr><td class='k'>Creator</td><td class='n'>$22</td><td class='n'>$458</td><td class='n'>$480</td><td>No — 121k contro 204k</td></tr><tr class='hi'><td class='k'>Pro</td><td class='n'>$99</td><td class='n'>$381</td><td class='n'>$480</td><td>Si' — 600k, concorrenza 20</td></tr><tr><td class='k'>Scale</td><td class='n'>$299</td><td class='n'>$181</td><td class='n'>$480</td><td>Si', ma margine inutile</td></tr><tr><td class='k'>Business</td><td class='n'>$990</td><td class='n'>$0</td><td class='n'>$990</td><td>Si', e costa il doppio per nulla</td></tr></tbody></table><p class='cap'><strong>Scoperta che vale $510 al mese:</strong> i piani per gli agenti vocali sono perfettamente lineari a $0,08 al minuto, quindi salire di livello non fa risparmiare un centesimo sulle chiamate — cambia solo i crediti voce e la concorrenza. Si prende il piu' basso che copra i crediti, ed e' Pro.</p></div></div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>05</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>C</span>Onesta'</div><h2 class='title'>Dove mi ero <span class='soft'>sbagliato.</span></h2><p class='lead'>Tre conclusioni mie, corrette per iscritto invece che riscritte di nascosto. Nascono tutte dallo stesso difetto: rispondere sul caso singolo invece che sul sistema.</p>
+</div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>03</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>B</span>Il conto a regime</div><h2 class='title'>Il volume vero <span class='soft'>di Digital Empire.</span></h2><p class='lead'>Le stesure precedenti costavano un video singolo e si fermavano lì. Questo è il conto che decide.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Formato</th><th>Cadenza</th><th class='n'>Al mese</th><th class='n'>Minuti</th></tr></thead><tbody><tr><td class='k'>Video YouTube 10 min</td><td>3-2-3-2 alternata, due giorni di stop</td><td class='n'>70</td><td class='n'>700</td></tr><tr><td class='k'>Corti 1-3 min</td><td>Tre al giorno, sei una volta a settimana</td><td class='n'>102</td><td class='n'>204</td></tr><tr><td class='k'>Chiamate agente vocale</td><td>Cento al giorno</td><td class='n'>3.000</td><td class='n'>6.000</td></tr></tbody></table><p class='cap'>Totale: <strong>172 video e 904 minuti di video finito al mese</strong>.</p></div><div class='unit'><table class='tab'><thead><tr><th>Scenario</th><th class='n'>Cr / video YT</th><th class='n'>Cr / corto</th><th class='n'>Crediti al mese</th><th class='n'>Higgsfield / mese</th></tr></thead><tbody><tr><td class='k'>Magro — poche clip, molte immagini; corti di sola grafica</td><td class='n'>176</td><td class='n'>45</td><td class='n'>16.890</td><td class='n'>€635</td></tr><tr class='hi'><td class='k'>Medio — b-roll vero; corti con quattro sfondi in movimento</td><td class='n'>349</td><td class='n'>109</td><td class='n'>35.514</td><td class='n'>€1.496</td></tr><tr><td class='k'>Ricco — aperture Seedance 2.0; corti con otto clip</td><td class='n'>645</td><td class='n'>175</td><td class='n'>63.006</td><td class='n'>€2.768</td></tr></tbody></table><p class='cap'>Base Ultra 9.000 (€270 annuale) più pacchetti a €0,046 il credito. Tasso di riprova 2×. Calcolo riproducibile: <strong>PIANO-MAESTRO/scripts/costo_produzione_higgsfield.py</strong></p></div><div class='unit grid3'><div class='figure'><div class='k'>Higgsfield, scenario medio</div><div class='n'>€1.496</div><div class='u'>35.514 crediti al mese: quattro volte il tetto acquistabile da soli.</div></div><div class='figure'><div class='k'>ElevenLabs, tutto compreso</div><div class='n'>€617</div><div class='u'>Pro più eccedenza chiamate, telefonia italiana e modello.</div></div><div class='figure'><div class='k'>Totale mensile</div><div class='n acc'>€2.113</div><div class='u'>Circa €25.400 all’anno. Con il tasso di riprova a 1,3: €1.604 al mese.</div></div></div></div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>04</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>B</span>Il listino</div><h2 class='title'>Dove stanno <span class='soft'>i crediti economici.</span></h2><p class='lead'>Sorpresa del listino: i piani per squadre sono i crediti più cari di tutti, perché il prezzo è per posto con un minimo di cinque.</p><div class='body stack'><div class='unit'><table class='tab'><thead><tr><th>Piano Higgsfield</th><th class='n'>Crediti/mese</th><th class='n'>Costo/mese</th><th class='n'>Per credito</th></tr></thead><tbody><tr><td class='k'>Team — cinque posti</td><td class='n'>5.000</td><td class='n'>€325</td><td class='n'>€0,0650</td></tr><tr><td class='k'>Scale — cinque posti</td><td class='n'>12.500</td><td class='n'>€750</td><td class='n'>€0,0600</td></tr><tr><td class='k'>Pacchetti extra</td><td class='n'>a consumo</td><td class='n'>—</td><td class='n'>€0,0463</td></tr><tr><td class='k'>Plus</td><td class='n'>1.200</td><td class='n'>€47</td><td class='n'>€0,0392</td></tr><tr><td class='k'>Ultra 3.000</td><td class='n'>3.000</td><td class='n'>€99</td><td class='n'>€0,0330</td></tr><tr><td class='k'>Ultra 6.000</td><td class='n'>6.000</td><td class='n'>€194</td><td class='n'>€0,0323</td></tr><tr class='hi'><td class='k'>Ultra 9.000</td><td class='n'>9.000</td><td class='n'>€270</td><td class='n'>€0,0300</td></tr></tbody></table><p class='cap'>Tariffe annuali, IVA esclusa. <strong>Starter non accede a Seedance</strong>: il piano minimo utile è Plus. Ultra 9.000 è il massimo acquistabile senza passare da un commerciale.</p></div><div class='unit'><table class='tab'><thead><tr><th>Piano ElevenLabs</th><th class='n'>Canone</th><th class='n'>Eccedenza chiamate</th><th class='n'>Totale/mese</th><th>Crediti voce bastano?</th></tr></thead><tbody><tr><td class='k'>Creator</td><td class='n'>$22</td><td class='n'>$458</td><td class='n'>$480</td><td>No — 121k contro 204k</td></tr><tr class='hi'><td class='k'>Pro</td><td class='n'>$99</td><td class='n'>$381</td><td class='n'>$480</td><td>Si' — 600k, concorrenza 20</td></tr><tr><td class='k'>Scale</td><td class='n'>$299</td><td class='n'>$181</td><td class='n'>$480</td><td>Si', ma margine inutile</td></tr><tr><td class='k'>Business</td><td class='n'>$990</td><td class='n'>$0</td><td class='n'>$990</td><td>Si', e costa il doppio per nulla</td></tr></tbody></table><p class='cap'><strong>Scoperta che vale $510 al mese:</strong> i piani per gli agenti vocali sono perfettamente lineari a $0,08 al minuto, quindi salire di livello non fa risparmiare un centesimo sulle chiamate — cambia solo i crediti voce e la concorrenza. Si prende il più basso che copra i crediti, ed è Pro.</p></div></div></div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>05</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>C</span>Onestà</div><h2 class='title'>Dove mi ero <span class='soft'>sbagliato.</span></h2><p class='lead'>Tre conclusioni mie, corrette per iscritto invece che riscritte di nascosto. Nascono tutte dallo stesso difetto: rispondere sul caso singolo invece che sul sistema.</p>
 <div class='body stack'>
   <div class='unit fix'>
     <div class='tag'>Correzione 1 · Fliki</div>
     <h3>Higgsfield sostituisce Fliki, e fa un altro mestiere.</h3>
     <p class='note'>Avevo scritto che il tetto di quindici secondi per clip rendeva impraticabile
-    un video da dieci minuti. Il conto era giusto <strong>solo se il video e' tutto video</strong>.
+    un video da dieci minuti. Il conto era giusto <strong>solo se il video è tutto video</strong>.
     Esiste un modulo dedicato, <strong>AI Long Video Generator</strong>, che dichiara alla lettera
-    il nostro caso d'uso: «Build YouTube and long-form content — faceless channels — full episodes
+    il nostro caso d’uso: «Build YouTube and long-form content — faceless channels — full episodes
     with consistent voice and look».</p>
   </div>
   <div class='unit fix'>
     <div class='tag'>Correzione 2 · Caroselli</div>
-    <h3>I caroselli restano su Arena. Il prezzo era l'asse sbagliato.</h3>
+    <h3>I caroselli restano su Arena. Il prezzo era l’asse sbagliato.</h3>
     <p class='note'>Le slide che Max produce in Arena sono un sistema di design coerente — tag
     pre-headline in pillola, grana, arancione sotto il dieci per cento come accento, grotesque
     bold col corsivo serif, card argento, numerazione, firma. Nano Banana Pro a due crediti
-    genera <strong>la fotografia di una slide</strong>, non un layout. Su Arena il problema non e'
-    la qualita': e' l'affidabilita' dell'automazione, e quella va riparata, non sostituita.</p>
+    genera <strong>la fotografia di una slide</strong>, non un layout. Su Arena il problema non è
+    la qualità: è l’affidabilità dell’automazione, e quella va riparata, non sostituita.</p>
   </div>
   <div class='unit fix'>
     <div class='tag'>Correzione 3 · Il conto</div>
-    <h3>Il costo di un video non e' una risposta.</h3>
+    <h3>Il costo di un video non è una risposta.</h3>
     <p class='note'>«€2,78 a video» era vero e inutile: su una decisione di spesa ricorrente il
-    costo unitario va moltiplicato per il volume che l'azienda produce davvero — e il volume si
+    costo unitario va moltiplicato per il volume che l’azienda produce davvero — e il volume si
     chiede, se non lo si sa. Nello stesso errore stavano i corti, costati come dodici clip
-    generative quando sono <strong>progetti Vibe Motion</strong>: da 239 a 109 crediti l'uno, e
-    li' se ne andava meta' del conto.</p>
+    generative quando sono <strong>progetti Vibe Motion</strong>: da 239 a 109 crediti l’uno, e
+    lì se ne andava metà del conto.</p>
   </div>
 </div>
-</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>06</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>D</span>Architettura</div><h2 class='title'>Le quattro leve, <span class='soft'>in ordine di peso.</span></h2><p class='lead'>Il conto non si vince comprando un piano piu' grande. Si vince qui.</p>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>06</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>D</span>Architettura</div><h2 class='title'>Le quattro leve, <span class='soft'>in ordine di peso.</span></h2><p class='lead'>Il conto non si vince comprando un piano più grande. Si vince qui.</p>
 <div class='body stack'>
   <div class='unit'>
-    <div class='kicker'><span class='n'>01</span>Il tasso di riprova — vale meta' del conto</div>
+    <div class='kicker'><span class='n'>01</span>Il tasso di riprova — vale metà del conto</div>
     <p class='note'>Se una clip su due va buttata, si paga il doppio. Passare da 2× a 1,3× porta
-    Higgsfield da €1.496 a <strong>€987</strong> al mese: <strong>seimila euro all'anno</strong>.
-    Non e' una trattativa col fornitore — e' la nostra libreria di prompt e le reference. E' il
-    lavoro che rende di piu' in assoluto.</p>
+    Higgsfield da €1.496 a <strong>€987</strong> al mese: <strong>seimila euro all’anno</strong>.
+    Non è una trattativa col fornitore — è la nostra libreria di prompt e le reference. È il
+    lavoro che rende di più in assoluto.</p>
   </div>
   <div class='unit'>
     <div class='kicker'><span class='n'>02</span>Immagini al posto delle clip — rapporto 66 a 1</div>
-    <p class='note'>Un'immagine Soul 2.0 costa <strong>0,12 crediti</strong>; un secondo di clip
+    <p class='note'>Un’immagine Soul 2.0 costa <strong>0,12 crediti</strong>; un secondo di clip
     Kling 3.0 in 1080p ne costa 1,6. <strong>Sessantasei volte tanto.</strong> Il video lungo
     faceless va costruito su immagini mosse in montaggio, con le clip riservate a hook, stacchi e
     momenti che devono muoversi davvero.</p>
@@ -284,75 +299,75 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
     <div class='kicker'><span class='n'>03</span>Lo stampo — Canvas e Vibe Motion</div>
     <p class='note'>Vibe Motion produce un <strong>asset strutturato e modificabile</strong>, non
     un video piatto: si costruisce il modello una volta e si rigenera solo il testo, cento volte.
-    Canvas salva l'intero flusso come template riutilizzabile. E' qui che 102 corti al mese
+    Canvas salva l’intero flusso come template riutilizzabile. È qui che 102 corti al mese
     smettono di essere 102 produzioni e diventano cinque stampi.</p>
   </div>
   <div class='unit'>
     <div class='kicker'><span class='n'>04</span>Lo sprint dei sette giorni unlimited</div>
     <p class='note'>Kling 3.0 unlimited a inizio mese produce il girato senza toccare un credito.
-    Ma la coda e' rilassata — <strong>una generazione alla volta</strong> — e i Termini vietano
-    l'automazione. A mano, sei ore al giorno per sette giorni, copre forse un quarto del
-    fabbisogno. E' una leva reale, non e' la soluzione.</p>
+    Ma la coda è rilassata — <strong>una generazione alla volta</strong> — e i Termini vietano
+    l’automazione. A mano, sei ore al giorno per sette giorni, copre forse un quarto del
+    fabbisogno. È una leva reale, non è la soluzione.</p>
   </div>
 </div>
 </div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>07</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>E</span>La fabbrica</div><h2 class='title'>Le due macchine <span class='soft'>da sapere a memoria.</span></h2><p class='lead'>A 172 video al mese non conta saper generare: conta saper costruire lo stampo.</p>
 <div class='body stack'>
   <div class='unit'>
-    <div class='kicker'><span class='n'>—</span>Canvas · l'officina a nodi</div>
+    <div class='kicker'><span class='n'>—</span>Canvas · l’officina a nodi</div>
     <ul class='clean'>
-      <li><strong>Come si costruisce:</strong> nuova lavagna, nodo Text Prompt, lo colleghi a un nodo di generazione, scegli il modello, colleghi l'uscita al passo dopo. Ogni modello Higgsfield e' un nodo, audio compreso.</li>
-      <li><strong>Il dettaglio che fa sbagliare tutti:</strong> i nodi <strong>Seedance</strong> leggono le reference collegate solo se il prompt ne dichiara il ruolo; i nodi <strong>Kling</strong> trattano l'immagine collegata come primo fotogramma, e per il personaggio vogliono il tag @nome-elemento.</li>
-      <li><strong>Crediti:</strong> costruire e collegare e' gratis. Si paga solo quando un nodo genera. Quindi si progetta l'intera pipeline a costo zero.</li>
-      <li><strong>Parallelo:</strong> otto job insieme su Ultra, output confrontabili a fianco. E' cosi' che si abbatte il tasso di riprova — si sceglie fra quattro varianti invece di rigenerare quattro volte la stessa.</li>
+      <li><strong>Come si costruisce:</strong> nuova lavagna, nodo Text Prompt, lo colleghi a un nodo di generazione, scegli il modello, colleghi l’uscita al passo dopo. Ogni modello Higgsfield è un nodo, audio compreso.</li>
+      <li><strong>Il dettaglio che fa sbagliare tutti:</strong> i nodi <strong>Seedance</strong> leggono le reference collegate solo se il prompt ne dichiara il ruolo; i nodi <strong>Kling</strong> trattano l’immagine collegata come primo fotogramma, e per il personaggio vogliono il tag @nome-elemento.</li>
+      <li><strong>Crediti:</strong> costruire e collegare è gratis. Si paga solo quando un nodo genera. Quindi si progetta l’intera pipeline a costo zero.</li>
+      <li><strong>Parallelo:</strong> otto job insieme su Ultra, output confrontabili a fianco. È così che si abbatte il tasso di riprova — si sceglie fra quattro varianti invece di rigenerare quattro volte la stessa.</li>
     </ul>
   </div>
   <div class='unit'>
     <div class='kicker'><span class='n'>—</span>Vibe Motion · il motore da testo ad animazione</div>
     <ul class='clean'>
-      <li><strong>Non genera pixel:</strong> costruisce la logica dell'animazione, e l'uscita e' un asset modificabile. Un template si riusa cento volte cambiando solo il testo.</li>
-      <li><strong>Colore:</strong> si inseriscono i codici HEX o RGB esatti. Il nostro <strong>#fb4604</strong> entra alla lettera, non «piu' o meno arancione».</li>
-      <li><strong>Safe zone social:</strong> gli elementi si trascinano dove servono e i sottotitoli non finiscono sotto i bottoni dell'interfaccia.</li>
+      <li><strong>Non genera pixel:</strong> costruisce la logica dell’animazione, e l’uscita è un asset modificabile. Un template si riusa cento volte cambiando solo il testo.</li>
+      <li><strong>Colore:</strong> si inseriscono i codici HEX o RGB esatti. Il nostro <strong>#fb4604</strong> entra alla lettera, non «più o meno arancione».</li>
+      <li><strong>Safe zone social:</strong> gli elementi si trascinano dove servono e i sottotitoli non finiscono sotto i bottoni dell’interfaccia.</li>
       <li><strong>Movimento e tipografia:</strong> durata, ritardo e curve di easing su cursori; font nostri, crenatura e interlinea, ridimensionamento senza perdita. Categorie native: Infografiche, Presentazioni, Kinematic Captions.</li>
-      <li><strong>Il costo e' l'incognita:</strong> le iterazioni bruciano in fretta. Stima di terzi 15-50 crediti a progetto — nel calcolatore vale 40, ed e' da tarare sul campo.</li>
+      <li><strong>Il costo è l’incognita:</strong> le iterazioni bruciano in fretta. Stima di terzi 15-50 crediti a progetto — nel calcolatore vale 40, ed è da tarare sul campo.</li>
     </ul>
   </div>
 </div>
-</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>08</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>F</span>Vincolo</div><h2 class='title'>Il muro sulle <span class='soft'>chiamate a freddo.</span></h2><p class='lead'>Non e' prudenza: e' aritmetica. Un agente vocale che chiama a freddo numeri italiani senza consenso e senza dichiararsi mette a rischio l'azienda per un ritorno che non vale la cifra.</p>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>08</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>F</span>Vincolo</div><h2 class='title'>Il muro sulle <span class='soft'>chiamate a freddo.</span></h2><p class='lead'>Non è prudenza: è aritmetica. Un agente vocale che chiama a freddo numeri italiani senza consenso e senza dichiararsi mette a rischio l’azienda per un ritorno che non vale la cifra.</p>
 <div class='body stack'>
   <div class='unit'>
-    <div class='kicker'><span class='n'>—</span>Cosa e' cambiato quest'anno</div>
+    <div class='kicker'><span class='n'>—</span>Cosa è cambiato quest’anno</div>
     <ul class='clean'>
-      <li><strong>Legge 49/2026, dal 19 giugno.</strong> Modifica l'articolo 51 del Codice del Consumo: opt-in obbligatorio, consenso preventivo esplicito e tracciabile. Nasce sul settore energia, le fonti divergono sulla trasversalita' — va verificato con un legale prima di costruire, non dopo.</li>
-      <li><strong>Registro Pubblico delle Opposizioni:</strong> copre anche le utenze aziendali, e vale sia per l'operatore umano sia per le chiamate automatiche.</li>
-      <li><strong>Il 68% dei numeri «aziendali»</strong> nelle liste e' intestato a persone fisiche: GDPR pieno, consenso esplicito.</li>
-      <li><strong>AI Act articolo 50, dal 2 agosto.</strong> Obbligo di dichiarare dentro la conversazione, al primo contatto, che si parla con un'AI e per conto di chi. La privacy policy non basta.</li>
-      <li><strong>Fino a €20 milioni o il 4% del fatturato</strong>, con responsabilita' in solido fra mandante e contact center: non ci si copre appaltando.</li>
+      <li><strong>Legge 49/2026, dal 19 giugno.</strong> Modifica l’articolo 51 del Codice del Consumo: opt-in obbligatorio, consenso preventivo esplicito e tracciabile. Nasce sul settore energia, le fonti divergono sulla trasversalità — va verificato con un legale prima di costruire, non dopo.</li>
+      <li><strong>Registro Pubblico delle Opposizioni:</strong> copre anche le utenze aziendali, e vale sia per l’operatore umano sia per le chiamate automatiche.</li>
+      <li><strong>Il 68% dei numeri «aziendali»</strong> nelle liste è intestato a persone fisiche: GDPR pieno, consenso esplicito.</li>
+      <li><strong>AI Act articolo 50, dal 2 agosto.</strong> Obbligo di dichiarare dentro la conversazione, al primo contatto, che si parla con un’AI e per conto di chi. La privacy policy non basta.</li>
+      <li><strong>Fino a €20 milioni o il 4% del fatturato</strong>, con responsabilità in solido fra mandante e contact center: non ci si copre appaltando.</li>
     </ul>
   </div>
   <div class='unit fix'>
-    <div class='tag'>La strada che resta, ed e' migliore</div>
-    <p class='note'>In Preventa la catena di consenso <strong>esiste gia'</strong>: mandiamo
-    WhatsApp, il concessionario risponde. Quello e' un contatto che ha manifestato interesse, ed
-    e' li' che entra l'agente vocale — richiamo del lead caldo entro cinque minuti, qualifica in
+    <div class='tag'>La strada che resta, ed è migliore</div>
+    <p class='note'>In Preventa la catena di consenso <strong>esiste già</strong>: mandiamo
+    WhatsApp, il concessionario risponde. Quello è un contatto che ha manifestato interesse, ed
+    è lì che entra l’agente vocale — richiamo del lead caldo entro cinque minuti, qualifica in
     entrata, conferma appuntamenti, riattivazione dormienti, post-vendita. Con la dichiarazione AI
-    nei primi tre secondi e l'opt-out immediato e' in regola, e converte piu' del freddo.</p>
+    nei primi tre secondi e l’opt-out immediato è in regola, e converte più del freddo.</p>
   </div>
   <div class='unit fix mute'>
-    <div class='tag'>Il vincolo vero, che non e' il prezzo</div>
+    <div class='tag'>Il vincolo vero, che non è il prezzo</div>
     <p class='note'>Tremila chiamate al mese richiedono <strong>tremila contatti con consenso
-    tracciabile</strong>. La domanda da rispondere prima di attivare l'agente non e' quanto costa:
-    e' se generiamo cento risposte al giorno da richiamare.</p>
+    tracciabile</strong>. La domanda da rispondere prima di attivare l’agente non è quanto costa:
+    è se generiamo cento risposte al giorno da richiamare.</p>
   </div>
 </div>
-</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>09</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>G</span>Esecuzione</div><h2 class='title'>Il piano, <span class='soft'>nell'ordine che conta.</span></h2><p class='lead'>Le prime tre mosse non costano niente e cambiano di quanto la quarta va dimensionata.</p>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>09</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>G</span>Esecuzione</div><h2 class='title'>Il piano, <span class='soft'>nell’ordine che conta.</span></h2><p class='lead'>Le prime tre mosse non costano niente e cambiano di quanto la quarta va dimensionata.</p>
 <div class='body stack-tight'>
   <div class='unit step'>
     <div class='idx'>F01</div>
     <div>
       <h3>Le tre mosse a costo zero, oggi</h3>
       <ul class='clean'>
-        <li><strong>Startup Grant ElevenLabs.</strong> 33 milioni di caratteri contro un consumo di 204.000 al mese: vale oltre dieci anni di voce dei corti. Mezz'ora di lavoro.</li>
-        <li><strong>Trattativa Enterprise con Higgsfield.</strong> Unico livello con sconti a volume per modello e crediti che si riportano al mese dopo — e con una cadenza 3-2-3-2 la produzione non e' piatta. Richiede settimane: va aperta ora.</li>
+        <li><strong>Startup Grant ElevenLabs.</strong> 33 milioni di caratteri contro un consumo di 204.000 al mese: vale oltre dieci anni di voce dei corti. Mezz’ora di lavoro.</li>
+        <li><strong>Trattativa Enterprise con Higgsfield.</strong> Unico livello con sconti a volume per modello e crediti che si riportano al mese dopo — e con una cadenza 3-2-3-2 la produzione non è piatta. Richiede settimane: va aperta ora.</li>
         <li><strong>Riparare quality_gate.py:93.</strong> Ventuno fallimenti identici in memoria; a tre video al giorno quel gate ferma settanta produzioni al mese.</li>
       </ul>
     </div>
@@ -361,10 +376,10 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
     <div class='idx'>F02</div>
     <div>
       <h3>Il mese di prova</h3>
-      <p class='note'>Ultra 3.000 mensile piu' ElevenLabs Creator. Nove prove col budget crediti
+      <p class='note'>Ultra 3.000 mensile più ElevenLabs Creator. Nove prove col budget crediti
       dichiarato, la finestra unlimited usata per prima, il registro delle prove aperto dal primo
       giorno. <strong>La misura del costo del TTS viene prima di ogni altra prova:</strong> senza
-      quel numero nessun conto di questo dossier e' chiuso.</p>
+      quel numero nessun conto di questo dossier è chiuso.</p>
     </div>
   </div>
   <div class='unit step'>
@@ -375,40 +390,40 @@ ul.clean li strong { color:var(--ink); font-weight:600; }
         <li><strong>Cinque template Canvas</strong>, uno per formato: YouTube lungo, corto prodotto, corto Preventa, promo, UGC.</li>
         <li><strong>Cinque template Vibe Motion</strong> con le Brand Guidelines dentro: safe zone, font, HEX esatti.</li>
         <li>Skill <strong>video-youtube-higgsfield</strong> al posto del ramo Fliki, sottotitoli nostri.</li>
-        <li>Soul ID del personaggio di brand e libreria di reference — e' la leva che abbassa il tasso di riprova, cioe' meta' del conto.</li>
-        <li><strong>Riparazione del ramo Arena</strong> per i caroselli, che restano li'.</li>
+        <li>Soul ID del personaggio di brand e libreria di reference — è la leva che abbassa il tasso di riprova, cioè metà del conto.</li>
+        <li><strong>Riparazione del ramo Arena</strong> per i caroselli, che restano lì.</li>
       </ul>
     </div>
   </div>
   <div class='unit step'>
     <div class='idx'>F04</div>
     <div>
-      <h3>L'agente vocale — settimane quattro-otto</h3>
-      <p class='note'>Parere legale prima di tutto. Poi l'agente «richiamo lead caldo» su Preventa,
+      <h3>L’agente vocale — settimane quattro-otto</h3>
+      <p class='note'>Parere legale prima di tutto. Poi l’agente «richiamo lead caldo» su Preventa,
       dichiarazione AI nei primi tre secondi, opt-out immediato, registro dei consensi a prova di
       ispezione. Test su venti lead, poi si decide se salire.</p>
     </div>
   </div>
 </div>
-</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>10</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>H</span>Metodo e limiti</div><h2 class='title'>Cosa e' misurato <span class='soft'>e cosa no.</span></h2>
+</div><div class='foot'><span>Dossier 28 · Higgsfield ed ElevenLabs</span><span><span class='num'>10</span></span></div></section><section class='page grain '><div class='layer'><div class='masthead'><span class='mk'>DIGITAL EMPIRE</span><span>Dossier 28 · revisione 5 · 5 settembre 2026</span></div><div class='eyebrow'><span class='idx'>H</span>Metodo e limiti</div><h2 class='title'>Cosa è misurato <span class='soft'>e cosa no.</span></h2>
 <div class='body stack'>
   <div class='unit'>
-    <div class='kicker'><span class='n'>—</span>Come e' stato fatto</div>
+    <div class='kicker'><span class='n'>—</span>Come è stato fatto</div>
     <p class='note'>Sessantotto pagine di higgsfield.ai lette con Playwright sul DOM renderizzato.
     Le pagine prezzi sono applicazioni a pagina singola: il fetch semplice le vede vuote e
     restituisce listini di terze parti, che nei fatti erano <strong>tutti sbagliati</strong> —
-    davano Plus a $39 e Ultra a $99 in dollari, quando il listino reale in euro e' €47 e €99 con
-    una scala fino a €270. Piu' la documentazione API, l'help center, i Termini d'uso, i listini
+    davano Plus a $39 e Ultra a $99 in dollari, quando il listino reale in euro è €47 e €99 con
+    una scala fino a €270. Più la documentazione API, l’help center, i Termini d’uso, i listini
     ElevenLabs e la documentazione del Voice Changer.</p>
   </div>
   <div class='unit'>
     <div class='kicker'><span class='n'>—</span>Le due incognite, dichiarate</div>
     <ul class='clean'>
-      <li><strong>Il costo in crediti del Text-to-Speech Higgsfield.</strong> Non pubblicato da nessuna parte. Decide se i 700 minuti di voce dei video lunghi restano li' o vanno su ElevenLabs — cioe' se a regime basta Pro o serve Scale.</li>
-      <li><strong>Il costo reale di un progetto Vibe Motion.</strong> Nel calcolatore vale 40 crediti ed e' una stima di terzi. Con 102 corti al mese, sbagliarla di venti crediti sposta €1.100 all'anno.</li>
+      <li><strong>Il costo in crediti del Text-to-Speech Higgsfield.</strong> Non pubblicato da nessuna parte. Decide se i 700 minuti di voce dei video lunghi restano lì o vanno su ElevenLabs — cioè se a regime basta Pro o serve Scale.</li>
+      <li><strong>Il costo reale di un progetto Vibe Motion.</strong> Nel calcolatore vale 40 crediti ed è una stima di terzi. Con 102 corti al mese, sbagliarla di venti crediti sposta €1.100 all’anno.</li>
     </ul>
     <p class='note'>Entrambe si misurano nella prima settimana del mese di prova. Sono scritte qui
-    perche' <strong>un numero non misurato resta non misurato</strong> anche quando fa comodo.</p>
+    perché <strong>un numero non misurato resta non misurato</strong> anche quando fa comodo.</p>
   </div>
   <div class='unit push'>
     <div class='kicker'><span class='n'>—</span>Dove vive questo dossier</div>
