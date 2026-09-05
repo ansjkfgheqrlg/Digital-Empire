@@ -192,13 +192,14 @@ Nella versione 4 il sistema è definito da **cosa deve esistere e chi lo certifi
 | Schemi dei file prodotti | 4 su 13 | **13 su 13, versionati** |
 | Contenuto eseguibile | **zero** | il validatore, che gira e ha già bocciato un errore mio |
 
-Il registro contiene tredici artefatti, quattordici controlli, quindici agenti, dodici stati,
-diciassette transizioni, sei punti umani e **dieci invarianti**. Il comando che lo verifica:
+Il registro contiene tredici artefatti, quattordici controlli, quindici agenti, **dodici reparti**,
+**dieci flussi di lavoro per quarantadue fasi**, **quindici passaggi di consegne**, dodici comandi,
+dodici stati, diciassette transizioni, sei punti umani e **ventidue invarianti**. Il comando che lo verifica:
 
 ```bash
 cd PIANO-MAESTRO/29-ECOSISTEMA-LANCI/dati
 PYTHONIOENCODING=utf-8 python valida_registro.py
-# 253 controlli eseguiti → PIANO COERENTE
+# 832 controlli eseguiti → PIANO COERENTE
 ```
 
 **Se esce diverso da zero, il piano è incoerente e non si costruisce.** Non è una
@@ -315,6 +316,8 @@ seguono.
 | 04 | `04-COSTRUZIONE.md` | ordine, ore, criteri di sblocco eseguibili, pre-mortem, condizioni di abbandono | prima di cominciare |
 | 05 | `05-ADR-023.md` | la decisione da registrare, pronta | **passo zero** |
 | 06 | `06-CRITICA-E-GIRI.md` | i difetti trovati nella v3, uno per uno, e cosa è cambiato | quando una scelta sembra strana |
+| **07** | `07-REPARTI-E-GERARCHIA.md` | **i dodici reparti, chi possiede cosa, la catena di comando, chi può attivare chi** | prima di costruire |
+| **08** | `08-WORKFLOW.md` | **i dieci flussi di lavoro, fase per fase, con agente e criterio di uscita** | **mentre si costruisce** |
 | **dati/** | `registro.yaml` · `valida_registro.py` · `schemi/*.json` | **la fonte di verità** | sempre |
 
 **Regola che nasce dal difetto peggiore della v3:** se un documento dice una cosa diversa dal
