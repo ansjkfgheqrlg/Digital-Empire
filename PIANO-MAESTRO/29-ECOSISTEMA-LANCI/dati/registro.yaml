@@ -1,0 +1,764 @@
+# =============================================================================
+# REGISTRO DELL'ECOSISTEMA LANCI — LA FONTE DI VERITA' UNICA
+# =============================================================================
+#
+# Questo file NON e' documentazione. E' il dato da cui i documenti citano e da
+# cui gli script leggono. Se un documento dice una cosa diversa da qui, ha
+# torto il documento.
+#
+# Perche' esiste: nella versione precedente del piano le stesse informazioni
+# (sigle di reparto, nomi dei gate, elenco degli agenti) erano ricopiate a mano
+# in undici documenti. Risultato misurato dai revisori: il dossier 03 usava sei
+# sigle di reparto che non esistevano nel dossier 01; sette gate "GP-0..GP-6"
+# convivevano con tre gate "GATE-PRD-1/2/3" senza mappa; una correzione fatta
+# nel dossier 01 (scaglione minimo da 9 a 11 agenti) non era arrivata nel
+# dossier 09, che e' proprio quello che si esegue.
+#
+# La prosa non puo' restare coerente con se stessa. Un dato validato da un
+# programma si'.
+#
+# VALIDAZIONE:  python scripts/valida_registro.py
+#   e' il comando che verifica gli invarianti dichiarati in fondo a questo file.
+#   Se esce diverso da zero, il piano e' incoerente e non si costruisce.
+#
+# schema_version: la versione di QUESTO formato. Cambia solo se cambia la
+# struttura del registro, mai per un dato nuovo dentro una struttura esistente.
+# =============================================================================
+
+schema_version: "1.0.0"
+ecosistema:
+  numero: 15
+  sigla: "LAN"
+  nome: "LANCI"
+  cartella: "company/Ecosistemi/15-LANCI"
+  registrato_in: "company/Ecosistemi/REGISTRO-NUMERI.md"
+  adr_abilitante: "ADR-022"
+  stato_adr: "da_registrare_prima_della_cartella"
+
+# -----------------------------------------------------------------------------
+# 1. IL MANDATO — dove sta questo ecosistema nella catena degli organi
+# -----------------------------------------------------------------------------
+# Non e' una dichiarazione di intenti: e' la ragione per cui i confini sono
+# dove sono. ADR-016 ha chiuso il buco "prodotto -> pubblicato" e ha dichiarato
+# aperto quello successivo. Questo ecosistema e' quel buco.
+mandato:
+  frase: "Porta un prodotto gia' pubblicabile da 'pubblicato' a 'venduto e misurato'."
+  anello_precedente:
+    organo: "ULTIMO METRO"
+    adr: "ADR-016"
+    copre: "prodotto -> pubblicato"
+  anello_proprio:
+    copre: "pubblicato -> venduto -> misurato"
+  anello_successivo:
+    organo: "TESORERIA"
+    adr: "ADR-020"
+    copre: "l'euro nei conti dell'azienda"
+  citazione_adr_016: >-
+    "Non esiste una misura di cosa succede DOPO la pubblicazione. L'Ultimo Metro
+    chiude il buco fra 'prodotto' e 'pubblicato'; resta aperto quello fra
+    'pubblicato' e 'venduto'. E' il prossimo da chiudere."
+
+# -----------------------------------------------------------------------------
+# 2. GLI ARTEFATTI — il sistema E' questa catena
+# -----------------------------------------------------------------------------
+# Il centro dell'architettura non e' l'organigramma: e' l'artefatto.
+# Ogni riga qui sotto e' un contratto completo, e ogni campo e' obbligatorio.
+#
+#   id             sigla univoca, usata ovunque
+#   file           il nome del file dentro lanci/<lancio_id>/
+#   afferma        cosa quel file dichiara vero (in italiano, una riga)
+#   schema         il file JSON Schema che lo valida
+#   produttore     l'agente che lo scrive          <- unico proprietario di scrittura
+#   giudice        l'agente che lo giudica         <- INVARIANTE: != produttore
+#   gate           il controllo che lo blocca
+#   dipende_da     gli artefatti che devono esistere e essere validi prima
+#   se_fallisce    dove torna il lancio quando il gate boccia  <- mai vuoto
+#   umano          se richiede una firma umana per essere valido
+artefatti:
+
+  - id: "ART-PUB"
+    file: "pubblico.json"
+    afferma: "quante persone possiamo mettere davanti all'offerta il giorno dell'apertura, per canale, con la prova di ognuna"
+    schema: "schemi/pubblico.schema.json"
+    produttore: "lan-pub-censore"
+    giudice: "lan-gate"
+    gate: "GATE-PUB-1"
+    dipende_da: []
+    se_fallisce: "IDEA"
+    umano: false
+    nuovo_in_v4: true
+    perche_nuovo: >-
+      La versione precedente non aveva questo artefatto e progettava il lancio del
+      Manuale Claude Code senza sapere che il canale YouTube destinato a portargli
+      pubblico era stato dichiarato "funnel morto" e dirottato su @dosementale il
+      2026-07-29 (second-brain-vault/wiki/log.md righe 1054-1063). Senza questo
+      artefatto l'azienda scopre di non avere pubblico il giorno dell'apertura,
+      dopo aver speso tutto il resto.
+
+  - id: "ART-DEC"
+    file: "decisione.json"
+    afferma: "questo lancio si fa adesso, e non un altro"
+    schema: "schemi/decisione.schema.json"
+    produttore: "lan-str-filtro"
+    giudice: "lan-gate"
+    gate: "GATE-STR-1"
+    dipende_da: ["ART-PUB"]
+    se_fallisce: "ARCHIVIATO"
+    umano: false
+
+  - id: "ART-CRT"
+    file: "certificato.json"
+    afferma: "il prodotto e' consegnabile a un cliente pagante senza vergogna e senza rischio"
+    schema: "schemi/certificato.schema.json"
+    produttore: "lan-prd-collaudatore"
+    giudice: "lan-gate"
+    gate: "GATE-PRD-1"
+    dipende_da: ["ART-DEC"]
+    se_fallisce: "VALUTATO"
+    umano: false
+    modalita_ammesse: ["integrale", "retroattiva"]
+    nota_retroattiva: >-
+      La modalita' retroattiva esiste per i prodotti gia' finiti (il Manuale e' pronto
+      dal 07/03/2026 e non e' mai passato da un flusso di produzione). Senza, il
+      reparto costruito per sbloccare quel prodotto risulta inaccessibile a quel
+      prodotto: il revisore ha dimostrato che il flusso usciva con codice 2 alla
+      prima riga di input.
+
+  - id: "ART-RIC"
+    file: "ricerca.json"
+    afferma: "le parole vere del pubblico e i buchi veri dei concorrenti, ognuna con la fonte"
+    schema: "schemi/ricerca.schema.json"
+    produttore: "lan-int-analista"
+    giudice: "lan-gate"
+    gate: "GATE-INT-1"
+    dipende_da: ["ART-DEC"]
+    se_fallisce: "VALUTATO"
+    umano: false
+
+  - id: "ART-PRV"
+    file: "previsione.json"
+    afferma: "quanto ci aspettiamo di incassare, con la banda e le assunzioni dichiarate"
+    schema: "schemi/previsione.schema.json"
+    produttore: "lan-prv-modello"
+    giudice: "lan-gate"
+    gate: "GATE-PRV-1"
+    dipende_da: ["ART-PUB", "ART-RIC"]
+    se_fallisce: "ISTRUITO"
+    umano: false
+    nuovo_in_v4: true
+    perche_nuovo: >-
+      In 3.718 righe la versione precedente non conteneva mai la domanda "quanto ci
+      aspettiamo di incassare". Conseguenze misurate: la firma del prezzo restava
+      cieca (si sceglie un numero, non un risultato); il gate del budget pretendeva
+      "il pareggio calcolato" che nessun artefatto produceva, quindi era
+      insoddisfacibile; e senza previsione il consuntivo e' un numero solo, senza
+      scarto, quindi la memoria ereditava un compito impossibile. Chiude anche
+      B-043 ("DE non misura un solo euro").
+
+  - id: "ART-OFF"
+    file: "offerta.json"
+    afferma: "il prezzo, la data e la struttura dell'offerta, firmati da una persona"
+    schema: "schemi/offerta.schema.json"
+    produttore: "lan-off-conductor"
+    giudice: "lan-gate"
+    gate: "GATE-OFF-1"
+    dipende_da: ["ART-CRT", "ART-PRV"]
+    se_fallisce: "ISTRUITO"
+    umano: true
+    firma_obbligatoria: "firma"
+
+  - id: "ART-CPY"
+    file: "copy/manifest.json"
+    afferma: "tutti i testi del lancio, ognuno col suo punteggio calcolato e la sua destinazione"
+    schema: "schemi/copy.schema.json"
+    produttore: "lan-cpy-conductor"
+    giudice: "lan-gate"
+    gate: "GATE-CPY-1"
+    dipende_da: ["ART-OFF", "ART-RIC"]
+    se_fallisce: "DATATO"
+    umano: false
+
+  - id: "ART-FNL"
+    file: "funnel.json"
+    afferma: "le pagine sono online, misurano, e la cassa ha incassato un pagamento di prova vero"
+    schema: "schemi/funnel.schema.json"
+    produttore: "lan-fnl-costruttore"
+    giudice: "lan-gate"
+    gate: "GATE-FNL-1"
+    dipende_da: ["ART-CPY", "ART-OFF"]
+    se_fallisce: "IN_PRODUZIONE"
+    umano: false
+    nota_cassa: >-
+      La prova di cassa e' dentro questo gate e non in fondo: la versione precedente
+      metteva la pubblicazione irreversibile prima della prova che il pagamento
+      funzionasse. Si vende solo dopo che un euro vero e' entrato ed e' stato
+      rimborsato in prova.
+
+  - id: "ART-EDT"
+    file: "editoriale.json"
+    afferma: "i contenuti dei giorni del lancio, ognuno con la data di uscita e dove porta"
+    schema: "schemi/editoriale.schema.json"
+    produttore: "lan-edt-pianificatore"
+    giudice: "lan-gate"
+    gate: "GATE-EDT-1"
+    dipende_da: ["ART-OFF", "ART-CPY"]
+    se_fallisce: "IN_PRODUZIONE"
+    umano: false
+
+  - id: "ART-BDG"
+    file: "budget.json"
+    afferma: "quanto costa questo lancio, quanto costa farlo girare, e a quante copie va in pari"
+    schema: "schemi/budget.schema.json"
+    produttore: "lan-tsr-contabile"
+    giudice: "lan-gate"
+    gate: "GATE-TSR-1"
+    dipende_da: ["ART-PRV", "ART-OFF"]
+    se_fallisce: "DATATO"
+    umano: false
+
+  - id: "ART-APE"
+    file: "apertura.json"
+    afferma: "tutte le condizioni di apertura sono vere insieme, e una persona ha dato il via"
+    schema: "schemi/apertura.schema.json"
+    produttore: "lan-reg-calendarista"
+    giudice: "lan-gate"
+    gate: "GATE-REG-1"
+    dipende_da: ["ART-FNL", "ART-EDT", "ART-BDG", "ART-CPY"]
+    se_fallisce: "IN_PRODUZIONE"
+    umano: true
+    firma_obbligatoria: "via_libera"
+
+  - id: "ART-CNS"
+    file: "consuntivo.json"
+    afferma: "quanto e' entrato davvero, da dove, e quanto e' costato davvero"
+    schema: "schemi/consuntivo.schema.json"
+    produttore: "lan-reg-tracciatore"
+    giudice: "lan-gate"
+    gate: "GATE-CNS-1"
+    dipende_da: ["ART-APE"]
+    se_fallisce: "APERTO"
+    umano: false
+    nuovo_in_v4: true
+    perche_nuovo: >-
+      Nella versione precedente il consuntivo era un markdown ("consuntivo.md"), cioe'
+      un testo. Un testo non si confronta con una previsione. Qui e' un artefatto
+      tipizzato, ed e' la meta' che rende possibile lo scarto.
+
+  - id: "ART-DBR"
+    file: "debrief.json"
+    afferma: "previsione contro realta', ogni scarto con la sua causa, e cosa il prossimo lancio deve fare di diverso"
+    schema: "schemi/debrief.schema.json"
+    produttore: "lan-mem-distillatore"
+    giudice: "lan-gate"
+    gate: "GATE-MEM-1"
+    dipende_da: ["ART-CNS", "ART-PRV"]
+    se_fallisce: "CHIUSO"
+    umano: false
+    controfirma: "lan-reg-calendarista"
+    nota_controfirma: >-
+      La Regia ha eseguito il lancio, la Memoria lo giudica, e la Regia controfirma:
+      nessuno dei due scrive da solo la storia di com'e' andata. Ma la controfirma e'
+      un CAMPO dell'artefatto, non il ruolo di giudice — perche' lan-reg-calendarista
+      ha permesso di scrittura e un giudice che puo' riscrivere cio' che giudica non
+      e' un giudice (INV-09). Il primo giro del validatore ha bocciato proprio questa
+      riga, scritta un'ora prima: e' la prova che l'invariante serve.
+
+# -----------------------------------------------------------------------------
+# 3. I GATE — un controllo che non puo' fallire non e' un controllo
+# -----------------------------------------------------------------------------
+# Ogni gate ha, obbligatoriamente:
+#   criterio_eseguibile  il predicato, non una frase italiana
+#   dato_da_terzi        i dati che il gate usa NON possono essere prodotti da chi
+#                        e' giudicato (altrimenti e' auto-soddisfacibile)
+#   ramo_fallimento      cosa succede quando boccia: dove torna, cosa si conserva
+#   exit_code            0 passa · 1 blocca con verbale · 2 input non valido · 3 ambiente
+#   test_rosso           il caso costruito apposta perche' fallisca: se non fallisce,
+#                        il gate e' decorativo
+gate:
+
+  - id: "GATE-PUB-1"
+    presidia: "ART-PUB"
+    criterio_eseguibile: >-
+      somma(canali[].raggiungibili_verificati) > 0 AND ogni canale ha prova.tipo in
+      [esporto-lista, schermata-conteggio-piattaforma, misura-analytics] con data
+      non anteriore a 30 giorni
+    dato_da_terzi: "il conteggio viene letto dalla piattaforma, non dichiarato dall'agente"
+    ramo_fallimento: "il lancio torna a IDEA con bloccato_da='nessun pubblico verificato'; l'artefatto resta sul disco"
+    exit_code: 1
+    test_rosso: "un pubblico.json con 3 canali tutti a raggiungibili_verificati=0 deve BLOCCARE"
+
+  - id: "GATE-STR-1"
+    presidia: "ART-DEC"
+    criterio_eseguibile: "tutte e cinque le domande hanno risposta in [si, no] e nessuna e' 'no'"
+    dato_da_terzi: "le risposte citano artefatti esistenti su disco, verificati dal gate"
+    ramo_fallimento: "ARCHIVIATO con la ragione; l'idea resta consultabile e riproponibile con un elemento nuovo"
+    exit_code: 1
+    test_rosso: "una decisione con una sola risposta 'no' deve BLOCCARE"
+
+  - id: "GATE-PRD-1"
+    presidia: "ART-CRT"
+    criterio_eseguibile: >-
+      bandiere_rosse[].presente tutte false AND file_prodotto esiste e dimensione>0
+      AND ogni link del prodotto testato con esito registrato AND
+      (modalita=='integrale' OR (modalita=='retroattiva' AND debito_collaudo dichiarato))
+    dato_da_terzi: "i link sono testati dal gate, non dichiarati dal produttore"
+    ramo_fallimento: "VALUTATO, con l'elenco puntuale di cosa manca; il certificato parziale si conserva"
+    exit_code: 1
+    test_rosso: "un prodotto con un link morto deve BLOCCARE senza intervento umano"
+
+  - id: "GATE-INT-1"
+    presidia: "ART-RIC"
+    criterio_eseguibile: >-
+      frasi.count >= 15 AND ogni frase ha fonte.url AND campione_verificato.count >= 3
+      AND ogni elemento del campione ha esito.raggiungibile == true
+    dato_da_terzi: "il campione viene riaperto dal gate, non dall'analista"
+    ramo_fallimento: "VALUTATO; le frasi con fonte valida si conservano, quelle senza si scartano con elenco"
+    exit_code: 1
+    test_rosso: "una ricerca con 20 frasi plausibili e zero fonti raggiungibili deve BLOCCARE"
+
+  - id: "GATE-PRV-1"
+    presidia: "ART-PRV"
+    criterio_eseguibile: >-
+      scenari ha esattamente [pessimista, atteso, ottimista] AND ogni scenario ha
+      ricavo_lordo calcolato dalla formula dichiarata AND ogni assunzione ha
+      stato in [misurato, assunto] AND nessuna assunzione con stato=='misurato'
+      priva di fonte
+    dato_da_terzi: "pubblico e prezzo arrivano da ART-PUB e ART-OFF, non li sceglie il modello"
+    ramo_fallimento: "ISTRUITO; la previsione si conserva marcata non_valida con il motivo"
+    exit_code: 1
+    test_rosso: "una previsione con un tasso di conversione dichiarato 'misurato' e senza fonte deve BLOCCARE"
+
+  - id: "GATE-OFF-1"
+    presidia: "ART-OFF"
+    criterio_eseguibile: >-
+      prezzo e' numero > 0 AND prezzo non in lista_valori_evasivi AND data_apertura
+      e' data futura valida AND durata_carrello_gg > 0 AND ruolo_prodotto in
+      [vendita, acquisizione-contatti] AND firma.canale in canali_firma_ammessi AND
+      firma.proposta_hash == sha256(file proposta corrente) AND
+      somma(bonus[].valore dove fonte_valore != null) usata per rapporto_valore_prezzo
+    dato_da_terzi: >-
+      la firma non e' scrivibile da nessun agente: il campo e' rifiutato se il canale
+      non e' in lista chiusa, e l'hash lega la firma al testo esatto firmato
+    ramo_fallimento: "ISTRUITO; la proposta si conserva, la firma decade e O5 si riapre"
+    exit_code: 1
+    test_rosso: >-
+      due casi: (a) un offerta.json con firma.chi='Max' scritta da un agente e canale
+      non ammesso deve BLOCCARE; (b) una firma valida su una proposta poi rigenerata
+      deve BLOCCARE per hash non corrispondente
+
+  - id: "GATE-CPY-1"
+    presidia: "ART-CPY"
+    criterio_eseguibile: >-
+      punteggio_totale >= 80 AND nessun blocco sotto il 50% dei propri punti AND
+      ogni affermazione con categoria=='prova' ha riferimento risolvibile
+    dato_da_terzi: "le prove sono risolte contro ART-CRT e ART-RIC, non contro il testo stesso"
+    ramo_fallimento: "DATATO; i testi sopra soglia si conservano, si rifanno solo i blocchi bocciati"
+    exit_code: 1
+    test_rosso: "un testo con punteggio 85 ma un blocco al 30% dei suoi punti deve BLOCCARE"
+
+  - id: "GATE-FNL-1"
+    presidia: "ART-FNL"
+    criterio_eseguibile: >-
+      ogni pagina risponde 200 AND ogni pagina ha evento_conversione con
+      prova.origine=='piattaforma' AND prova_cassa.stato=='incassato_e_rimborsato'
+      AND prova_cassa.riferimento_transazione != null
+    dato_da_terzi: "l'evento si legge dalla piattaforma di misura; la transazione dal fornitore di pagamento"
+    ramo_fallimento: "IN_PRODUZIONE con l'elenco delle pagine non conformi; le pagine conformi restano"
+    exit_code: 1
+    test_rosso: "un funnel con tutte le pagine a 200 ma senza transazione di prova deve BLOCCARE"
+
+  - id: "GATE-EDT-1"
+    presidia: "ART-EDT"
+    criterio_eseguibile: >-
+      nessuna riga con campi obbligatori vuoti AND ogni contenuto ha destinazione
+      risolvibile in ART-FNL AND ogni giorno del carrello ha almeno un contenuto
+    dato_da_terzi: "le destinazioni sono verificate contro il funnel reale"
+    ramo_fallimento: "IN_PRODUZIONE; il piano si conserva con le righe incomplete evidenziate"
+    exit_code: 1
+    test_rosso: "un piano con un contenuto che punta a una pagina inesistente deve BLOCCARE"
+
+  - id: "GATE-TSR-1"
+    presidia: "ART-BDG"
+    criterio_eseguibile: >-
+      costo_totale_previsto <= tetto AND pareggio.copie calcolato da ART-PRV AND
+      costo_macchina_previsto presente e > 0
+    dato_da_terzi: "il pareggio usa il ricavo previsto di ART-PRV, non un numero del contabile"
+    ramo_fallimento: "DATATO; il budget si conserva marcato oltre_tetto con lo scostamento"
+    exit_code: 1
+    test_rosso: "un budget senza costo_macchina_previsto deve BLOCCARE"
+
+  - id: "GATE-TSR-2"
+    presidia: "ART-BDG"
+    tipo: "continuo"
+    criterio_eseguibile: "scarto_percentuale(speso, previsto) <= 10"
+    dato_da_terzi: "lo speso si legge dai movimenti registrati, non dalla dichiarazione"
+    ramo_fallimento: "IN_PRODUZIONE -> DATATO: la spesa nuova si blocca, il lancio non muore; sblocco solo con firma umana tracciata"
+    exit_code: 1
+    test_rosso: "uno scarto dell'11% deve bloccare la spesa nuova e NON uccidere il lancio"
+
+  - id: "GATE-REG-1"
+    presidia: "ART-APE"
+    criterio_eseguibile: >-
+      tutte le voci della lista_sincronizzazione hanno esito==true AND
+      via_libera.canale in canali_firma_ammessi AND
+      tutti gli artefatti da ART-PUB a ART-BDG sono validi contro il proprio schema
+    dato_da_terzi: "la validita' degli artefatti e' ricalcolata dai file, mai letta dallo stato"
+    ramo_fallimento: "IN_PRODUZIONE con l'elenco delle voci false"
+    exit_code: 1
+    test_rosso: "una lista con nove voci vere e una falsa deve BLOCCARE"
+
+  - id: "GATE-CNS-1"
+    presidia: "ART-CNS"
+    criterio_eseguibile: >-
+      ricavo_lordo ha origine in [fornitore-pagamento, esporto-piattaforma] AND
+      periodo copre tutte le date del carrello AND ordini.count coerente con ricavo/prezzo
+    dato_da_terzi: "il ricavo si legge dal fornitore di pagamento, mai dichiarato"
+    ramo_fallimento: "APERTO: il lancio non chiude finche' il consuntivo non ha un'origine verificabile"
+    exit_code: 1
+    test_rosso: "un consuntivo con ricavo dichiarato a mano e origine assente deve BLOCCARE"
+
+  - id: "GATE-MEM-1"
+    presidia: "ART-DBR"
+    criterio_eseguibile: >-
+      ogni scarto oltre il 10% fra ART-PRV e ART-CNS ha causa scritta AND
+      schemi.count >= 3 AND ogni schema ha si_applica_quando non vuoto AND
+      ogni record di memoria della fase cita un artefatto esistente su disco
+    dato_da_terzi: "gli scarti sono ricalcolati dal gate confrontando i due artefatti"
+    ramo_fallimento: "CHIUSO: il lancio resta chiuso e non diventa APPRESO finche' il debrief non e' completo"
+    exit_code: 1
+    test_rosso: >-
+      un debrief con tre schemi generici e uno scarto del 40% senza causa deve BLOCCARE;
+      e un record di memoria con corpo 'ok' e fonti vuote deve BLOCCARE
+
+# -----------------------------------------------------------------------------
+# 4. GLI STATI — la macchina, con tutte le transizioni e nessuna via senza uscita
+# -----------------------------------------------------------------------------
+stati:
+  - {id: "IDEA",          descrizione: "proposta, non ancora filtrata"}
+  - {id: "VALUTATO",      descrizione: "ha passato il filtro, si istruisce"}
+  - {id: "ISTRUITO",      descrizione: "pubblico, ricerca, prodotto e previsione pronti; manca prezzo e data"}
+  - {id: "DATATO",        descrizione: "prezzo e data firmati: il conto alla rovescia e' partito"}
+  - {id: "IN_PRODUZIONE", descrizione: "testi, pagine, contenuti e budget in costruzione"}
+  - {id: "PRONTO",        descrizione: "tutte le condizioni di apertura vere insieme"}
+  - {id: "APERTO",        descrizione: "si vende"}
+  - {id: "CHIUSO",        descrizione: "la vendita e' finita, il consuntivo esiste, il debrief no"}
+  - {id: "APPRESO",       descrizione: "debrief completo con gli scarti spiegati - l'unico finale buono"}
+  - {id: "SOSPESO",       descrizione: "fermo, con stato di partenza, data di revisione e comando di uscita"}
+  - {id: "ABORTITO",      descrizione: "chiuso per decisione umana, con cosa si salva"}
+  - {id: "ARCHIVIATO",    descrizione: "idea respinta, conservata con la ragione"}
+
+transizioni:
+  - {da: "IDEA",          a: "VALUTATO",           condizione: "GATE-PUB-1 e GATE-STR-1 passano",                       autorizza: "sistema"}
+  - {da: "IDEA",          a: "ARCHIVIATO",         condizione: "GATE-STR-1 boccia",                                     autorizza: "sistema"}
+  - {da: "ARCHIVIATO",    a: "IDEA",               condizione: "riproposta con elemento nuovo",                         autorizza: "L2"}
+  - {da: "VALUTATO",      a: "ISTRUITO",           condizione: "GATE-PRD-1, GATE-INT-1, GATE-PRV-1 passano",            autorizza: "sistema"}
+  - {da: "VALUTATO",      a: "ARCHIVIATO",         condizione: "il prodotto non e' certificabile",                      autorizza: "L2"}
+  - {da: "ISTRUITO",      a: "DATATO",             condizione: "GATE-OFF-1 passa con firma umana",                      autorizza: "persona"}
+  - {da: "DATATO",        a: "IN_PRODUZIONE",      condizione: "GATE-TSR-1 passa",                                      autorizza: "sistema"}
+  - {da: "IN_PRODUZIONE", a: "DATATO",             condizione: "GATE-TSR-2 boccia in corsa",                            autorizza: "sistema"}
+  - {da: "IN_PRODUZIONE", a: "PRONTO",             condizione: "GATE-REG-1 passa",                                      autorizza: "sistema"}
+  - {da: "PRONTO",        a: "IN_PRODUZIONE",      condizione: "un gate rifiuta dopo la sincronizzazione",              autorizza: "il gate"}
+  - {da: "PRONTO",        a: "APERTO",             condizione: "via libera firmato",                                    autorizza: "persona"}
+  - {da: "APERTO",        a: "CHIUSO",             condizione: "data di chiusura raggiunta",                            autorizza: "persona"}
+  - {da: "CHIUSO",        a: "APPRESO",            condizione: "GATE-CNS-1 e GATE-MEM-1 passano",                       autorizza: "sistema"}
+  - {da: "*",             a: "SOSPESO",            condizione: "punto umano scaduto senza default, o conflitto irrisolto", autorizza: "sistema"}
+  - {da: "SOSPESO",       a: "stato_di_partenza",  condizione: "la causa e' rimossa",                                   autorizza: "L2 con verbale"}
+  - {da: "SOSPESO",       a: "ABORTITO",           condizione: "90 giorni, proposta a Max",                             autorizza: "solo Max"}
+  - {da: "*",             a: "ABORTITO",           condizione: "decisione",                                             autorizza: "solo Max"}
+
+# Gli orologi si fermano quando il lancio e' SOSPESO. Senza questa riga, un lancio
+# sospeso per mancanza di firma accumula scadenze di consegna che scattano tutte
+# insieme al risveglio: e' il difetto rilevato dal revisore sul dossier 01.
+orologi:
+  congelati_in: ["SOSPESO"]
+  ripartono_da: "il valore che avevano all'ingresso in SOSPESO"
+
+# -----------------------------------------------------------------------------
+# 5. I PUNTI UMANI — ognuno con scadenza, default e comportamento allo scadere
+# -----------------------------------------------------------------------------
+# Regola generale, ricavata dal difetto piu' grave della versione precedente:
+# il cronometro non sta sulla firma del prezzo, sta su OGNI punto umano aperto.
+# Il Manuale Claude Code si e' fermato per sei mesi su un punto (il ruolo del
+# prodotto) che nella versione precedente non aveva ne' scadenza ne' default, e
+# il contatore dell'inerzia contava i giorni "da quando la proposta aspetta" —
+# una proposta che in quel ramo non nasce mai. Il fallimento era invisibile alla
+# sua stessa misura.
+punti_umani:
+
+  - id: "PU-RUOLO"
+    domanda: "Il prodotto si vende o e' un regalo per acquisire contatti?"
+    apre_su: "ART-OFF fase O1"
+    scadenza_giorni: 7
+    default: "vendita"
+    default_giustificato_da: >-
+      la strada "vendita" e' reversibile (un prodotto venduto puo' diventare un regalo
+      dopo), la strada "regalo" non lo e' (un prodotto regalato non si rimette in
+      vendita senza bruciare chi l'ha avuto gratis). Fra due strade, quando scade il
+      tempo, si prende quella da cui si torna indietro.
+    allo_scadere: "si procede col default, si scrive scelto_per_silenzio=true e revisione_il, e si avvisa"
+    revocabile: true
+
+  - id: "PU-PREZZO"
+    domanda: "Confermi il prezzo e la data proposti?"
+    apre_su: "ART-OFF fase O5"
+    scadenza_giorni: 14
+    default: null
+    default_giustificato_da: >-
+      qui NON c'e' default, ed e' deliberato: un prezzo scelto da una macchina per
+      sbloccare un gate produce un danno che si scopre a lancio finito. Il rinvio si
+      vede e si corregge.
+    allo_scadere: "SOSPESO con revisione_il e come_si_esce come comando eseguibile"
+    revocabile: false
+
+  - id: "PU-APERTURA"
+    domanda: "Do il via libera all'apertura della vendita?"
+    apre_su: "ART-APE"
+    scadenza_giorni: null
+    default: null
+    default_giustificato_da: "irreversibile verso l'esterno: non ha e non avra' mai un default"
+    allo_scadere: "resta in PRONTO, senza scadenza"
+    revocabile: false
+
+  - id: "PU-INVIO"
+    domanda: "Autorizzo l'invio reale alla lista?"
+    apre_su: "ART-EDT, ogni invio"
+    scadenza_giorni: null
+    default: null
+    default_giustificato_da: "un'email spedita non si richiama"
+    allo_scadere: "l'invio non parte"
+    revocabile: false
+
+  - id: "PU-SPESA"
+    domanda: "Autorizzo questa spesa oltre il tetto?"
+    apre_su: "GATE-TSR-2"
+    scadenza_giorni: null
+    default: null
+    default_giustificato_da: "impegna denaro vero"
+    allo_scadere: "la spesa non parte, il lancio prosegue con quanto gia' speso"
+    revocabile: false
+
+  - id: "PU-COPERTINA"
+    domanda: "La copertina la fa Max: e' pronta?"
+    apre_su: "ART-CPY e ART-EDT, per ogni pezzo che ne ha bisogno"
+    scadenza_giorni: 3
+    default: null
+    default_giustificato_da: >-
+      regola dell'Impero non negoziabile: la copertina la fa Max, la macchina fornisce
+      solo cartella aperta, titolo e due righe di brief. Nessun default possibile.
+      Era il punto umano piu' frequente dell'intero piano e non compariva in nessuna
+      tabella dei punti umani.
+    allo_scadere: "il pezzo resta in attesa e compare nell'elenco di cosa blocca il lancio"
+    revocabile: false
+
+canali_firma_ammessi:
+  - "comando-utente"      # la persona ha digitato il comando con --firma
+  - "chat-firmata"        # la persona ha risposto in chat e il riferimento e' registrato
+  - "file-fuori-agenti"   # un file che nessun agente ha permesso di scrivere
+# Nessun agente ha permesso di scrittura sul sotto-oggetto "firma" di ART-OFF e
+# sul "via_libera" di ART-APE. Senza questa riga il campo firmato_da e' una
+# stringa che qualunque agente in ciclo di auto-riparazione puo' riempire con
+# "Max" per sbloccarsi — ed e' il fallimento peggiore possibile di tutto il
+# sistema, peggiore del blocco che vuole curare.
+
+# -----------------------------------------------------------------------------
+# 6. GLI AGENTI — nucleo minimo, derivato dagli artefatti e non elencato a mano
+# -----------------------------------------------------------------------------
+# Il nucleo minimo NON e' una scelta: e' l'insieme dei produttori degli artefatti
+# necessari a portare un lancio da IDEA ad APPRESO, piu' il giudice. Si calcola,
+# non si decide. Lo verifica valida_registro.py.
+#
+# grado:  scagnozzo (haiku, un controllo) · sentinella (sonnet, una missione) ·
+#         doombot (opus, progetta e costruisce)
+# Il grado determina il modello, e il modello determina il costo.
+agenti:
+
+  - id: "lan-direttore"
+    grado: "doombot"
+    modello: "claude-opus-5"
+    produce: []
+    ruolo: "orchestra il lancio, unico interlocutore umano mentre corre"
+    tools: ["Read", "Write", "Edit", "Bash", "Glob", "Grep"]
+
+  - id: "lan-gate"
+    grado: "sentinella"
+    modello: "claude-sonnet-5"
+    produce: ["verbali"]
+    ruolo: "esegue TUTTI i gate. Non produce nessun artefatto giudicato da se'"
+    tools: ["Read", "Bash", "Glob", "Grep"]
+    nota_tools: >-
+      NON ha Write ne' Edit, e non e' un dettaglio: un giudice che puo' riscrivere
+      cio' che giudica non e' un giudice. I verbali li scrive lo script, non l'agente.
+
+  - id: "lan-pub-censore"
+    grado: "sentinella"
+    modello: "claude-sonnet-5"
+    produce: ["ART-PUB"]
+    ruolo: "conta le persone raggiungibili per canale e porta la prova di ogni numero"
+    tools: ["Read", "Write", "Bash", "Glob", "Grep"]
+
+  - id: "lan-str-filtro"
+    grado: "scagnozzo"
+    modello: "claude-haiku-4-5-20251001"
+    produce: ["ART-DEC"]
+    ruolo: "le cinque domande del filtro, ognuna con l'artefatto che la sostiene"
+    tools: ["Read", "Write", "Glob", "Grep"]
+
+  - id: "lan-prd-collaudatore"
+    grado: "sentinella"
+    modello: "claude-sonnet-5"
+    produce: ["ART-CRT"]
+    ruolo: "certifica il prodotto, anche in modalita' retroattiva per cio' che e' gia' finito"
+    tools: ["Read", "Write", "Bash", "Glob", "Grep"]
+
+  - id: "lan-int-analista"
+    grado: "sentinella"
+    modello: "claude-sonnet-5"
+    produce: ["ART-RIC"]
+    ruolo: "porta le parole vere del pubblico, ognuna con la fonte apribile"
+    tools: ["Read", "Write", "Bash", "Glob", "Grep", "WebFetch"]
+
+  - id: "lan-prv-modello"
+    grado: "scagnozzo"
+    modello: "claude-haiku-4-5-20251001"
+    produce: ["ART-PRV"]
+    ruolo: "applica la formula del ricavo previsto ai numeri che riceve"
+    tools: ["Read", "Write", "Bash"]
+    nota: >-
+      E' il grado piu' basso di proposito: qui non c'e' niente da interpretare, c'e'
+      una formula da applicare. Un modello linguistico che "ragiona" su un calcolo
+      deterministico e' un modo caro di sbagliare.
+
+  - id: "lan-off-conductor"
+    grado: "doombot"
+    modello: "claude-opus-5"
+    produce: ["ART-OFF"]
+    ruolo: "istruisce prezzo e data fino a renderli una conferma di dieci secondi"
+    tools: ["Read", "Write", "Edit", "Bash", "Glob", "Grep"]
+    vincolo_scrittura: "NON puo' scrivere il sotto-oggetto firma"
+
+  - id: "lan-cpy-conductor"
+    grado: "doombot"
+    modello: "claude-opus-5"
+    produce: ["ART-CPY"]
+    ruolo: "tutti i testi del lancio, nell'ordine in cui il funnel li usa"
+    tools: ["Read", "Write", "Edit", "Glob", "Grep"]
+
+  - id: "lan-fnl-costruttore"
+    grado: "sentinella"
+    modello: "claude-sonnet-5"
+    produce: ["ART-FNL"]
+    ruolo: "mette online le pagine e prova che misurano e che la cassa incassa"
+    tools: ["Read", "Write", "Edit", "Bash", "Glob", "Grep"]
+
+  - id: "lan-edt-pianificatore"
+    grado: "sentinella"
+    modello: "claude-sonnet-5"
+    produce: ["ART-EDT"]
+    ruolo: "riempie i giorni del lancio di contenuti che escono davvero"
+    tools: ["Read", "Write", "Edit", "Glob", "Grep"]
+
+  - id: "lan-tsr-contabile"
+    grado: "scagnozzo"
+    modello: "claude-haiku-4-5-20251001"
+    produce: ["ART-BDG"]
+    ruolo: "somma i costi, calcola il pareggio dalla previsione, sorveglia lo scarto"
+    tools: ["Read", "Write", "Bash"]
+
+  - id: "lan-reg-calendarista"
+    grado: "sentinella"
+    modello: "claude-sonnet-5"
+    produce: ["ART-APE"]
+    ruolo: "il calendario a ritroso, la lista di sincronizzazione, la controfirma del debrief"
+    tools: ["Read", "Write", "Edit", "Bash", "Glob", "Grep"]
+
+  - id: "lan-reg-tracciatore"
+    grado: "scagnozzo"
+    modello: "claude-haiku-4-5-20251001"
+    produce: ["ART-CNS"]
+    ruolo: "legge i numeri veri dal fornitore di pagamento e dalla piattaforma di misura"
+    tools: ["Read", "Write", "Bash"]
+
+  - id: "lan-mem-distillatore"
+    grado: "sentinella"
+    modello: "claude-sonnet-5"
+    produce: ["ART-DBR"]
+    ruolo: "confronta previsione e realta', scrive le cause, distilla gli schemi"
+    tools: ["Read", "Write", "Glob", "Grep"]
+
+# -----------------------------------------------------------------------------
+# 7. IL PONTE — come un programma fa lavorare un agente
+# -----------------------------------------------------------------------------
+# Verificato sulla macchina: il meccanismo esiste e funziona, ma nessuno script
+# dell'azienda lo usa ancora. Le regole qui sotto NON sono nuove: sono le lezioni
+# gia' pagate da ADR-014 (2026-08-30), che la versione precedente del piano non
+# citava mai pur poggiando interamente sugli agenti.
+ponte:
+  meccanismo: "claude -p --agent <id> --output-format json"
+  regole_ereditate_da_adr_014:
+    - regola: "il prompt si passa da standard input, mai come argomento"
+      perche: "il wrapper troncava i prompt multiriga alla prima riga, in silenzio"
+    - regola: "si passa l'identificativo esplicito del modello, mai l'alias"
+      perche: "--model sonnet restituiva claude-sonnet-4-6: l'alias mente e si paga un altro modello"
+    - regola: "si legge total_cost_usd dalla risposta e si verifica il budget PRIMA di ogni chiamata"
+      perche: "il tetto di spesa e' stato sfondato in silenzio una volta"
+    - regola: "si lavora a blocchi, non a unita' minima"
+      perche: "ogni invocazione costa ~0,08-0,11 $ di sola tassa, indipendentemente dal contenuto"
+  tetto_spesa_per_lancio_usd: 15.00
+  comportamento_al_tetto: "il lancio si ferma dove e', salvato; non si ricomincia, si riprende"
+
+# -----------------------------------------------------------------------------
+# 8. GLI INVARIANTI — cio' che valida_registro.py verifica prima di ogni build
+# -----------------------------------------------------------------------------
+# Un invariante e' una cosa che deve essere sempre vera. Se uno solo di questi
+# e' falso, il piano e' incoerente e non si costruisce.
+invarianti:
+
+  - id: "INV-01"
+    dice: "per ogni artefatto, giudice != produttore"
+    perche: >-
+      nella versione precedente cinque gate su sette del flusso Prodotto erano
+      eseguiti dallo stesso agente che aveva prodotto la cosa giudicata, violando
+      una regola scritta dieci righe sopra. Una regola che un programma non
+      controlla e' un'opinione.
+
+  - id: "INV-02"
+    dice: "ogni artefatto ha uno schema esistente in dati/schemi/"
+    perche: "nove artefatti su tredici erano dichiarati 'un file JSON' senza schema"
+
+  - id: "INV-03"
+    dice: "ogni gate ha ramo_fallimento non vuoto e uno stato di destinazione valido"
+    perche: "nessuno dei gate della versione precedente diceva cosa succede quando boccia"
+
+  - id: "INV-04"
+    dice: "ogni gate ha un test_rosso dichiarato"
+    perche: "un gate senza un caso che lo faccia fallire e' decorativo per costruzione"
+
+  - id: "INV-05"
+    dice: "ogni sigla usata in qualunque campo appartiene all'elenco degli id definiti qui"
+    perche: >-
+      la versione precedente usava sei sigle di reparto in un dossier che non
+      esistevano nell'altro, e sette nomi di gate senza mappa verso i tre nomi
+      ufficiali. Il documento operativo non era installabile sopra quello di governo.
+
+  - id: "INV-06"
+    dice: "ogni punto umano ha scadenza_giorni oppure una motivazione esplicita per non averla"
+    perche: "il punto su cui l'azienda si e' fermata sei mesi era l'unico senza scadenza"
+
+  - id: "INV-07"
+    dice: "il nucleo minimo di agenti copre tutti i produttori degli artefatti da ART-PUB a ART-DBR"
+    perche: >-
+      lo scaglione minimo della versione precedente, anche dopo la correzione, non
+      conteneva i produttori di tre artefatti necessari: il primo lancio si sarebbe
+      fermato alla prima fase.
+
+  - id: "INV-08"
+    dice: "nessun agente con grado scagnozzo produce un artefatto che richiede giudizio"
+    perche: "il grado deve corrispondere alla natura del lavoro, non alla sua importanza"
+
+  - id: "INV-09"
+    dice: "l'agente lan-gate non ha Write ne' Edit fra i propri tools"
+    perche: "un giudice che puo' riscrivere cio' che giudica non e' un giudice"
+
+  - id: "INV-10"
+    dice: "ogni artefatto con umano=true dichiara il nome del campo firma obbligatorio"
+    perche: "una firma senza canale e senza legame col testo firmato e' una stringa qualunque"

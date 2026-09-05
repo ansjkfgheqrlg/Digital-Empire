@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/offerta.schema.json",
+  "title": "offerta.json — prezzo, data e struttura, firmati da una persona",
+  "description": "Il cuore dell'ecosistema, riscritto dopo tre difetti dimostrati dai revisori. (1) Il campo 'firmato_da' della versione precedente era una stringa: qualunque agente in ciclo di auto-riparazione poteva scrivere 'Max' per sbloccarsi, e il gate avrebbe certificato una decisione umana mai presa — il fallimento peggiore possibile, peggiore del blocco che il reparto vuole curare. Qui la firma è un oggetto con canale in lista chiusa e impronta del testo firmato. (2) La firma non era legata al contenuto: una proposta rigenerata lasciava valida la firma precedente. Qui l'impronta lega le due cose e ogni rigenerazione la invalida. (3) Il rapporto valore/prezzo ≥3 era auto-soddisfacibile: lo stesso agente che costruiva il pacchetto decideva quanto valeva, e ci arrivava aggiungendo un bonus con un prezzo inventato. Qui ogni bonus porta la fonte del proprio valore, e un bonus senza fonte vale zero.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "ruolo_prodotto", "prezzo", "valuta", "data_apertura", "durata_carrello_gg", "struttura", "firma", "previsione_riferimento"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "ruolo_prodotto": {
+      "enum": ["vendita", "acquisizione-contatti"],
+      "description": "Mai 'non-deciso' in un file valido. Se la scelta scade senza risposta si applica il default 'vendita' e si marca scelto_per_silenzio."
+    },
+    "ruolo_scelto_per_silenzio": {
+      "type": "boolean",
+      "default": false,
+      "description": "true quando i 7 giorni del punto umano PU-RUOLO sono scaduti e si è proceduto col default reversibile. Il campo esiste perché la scelta resti visibile e revocabile invece di sparire dentro un valore qualunque."
+    },
+    "ruolo_revisione_il": { "type": ["string", "null"], "format": "date" },
+    "prezzo": { "type": "number", "exclusiveMinimum": 0 },
+    "valuta": { "const": "EUR" },
+    "prezzi_precedenti_trovati": {
+      "type": "array",
+      "description": "La riconciliazione obbligatoria delle fonti già esistenti in azienda. Per il Manuale Claude Code ne sono state trovate quattro diverse, mai messe sullo stesso tavolo: '€ NON LO SO' nel catalogo prodotti (07/03/2026), '€297-€497' nella wiki (29/04/2026), due fasce nel listino, e i 47 € proposti dal piano. Un prezzo proposto senza guardare i prezzi che l'azienda si è già data non è istruito: è inventato con più pagine.",
+      "items": {
+        "type": "object",
+        "required": ["fonte", "valore", "data"],
+        "additionalProperties": false,
+        "properties": {
+          "fonte": { "type": "string" },
+          "valore": { "type": ["number", "string"] },
+          "data": { "type": ["string", "null"] },
+          "perche_ci_discostiamo": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "livello_listino": { "type": ["integer", "null"], "minimum": 0 },
+    "data_apertura": { "type": "string", "format": "date" },
+    "durata_carrello_gg": { "type": "integer", "exclusiveMinimum": 0 },
+    "data_chiusura": { "type": "string", "format": "date" },
+    "struttura": {
+      "type": "object",
+      "required": ["valore_dichiarato", "rapporto_valore_prezzo", "garanzia", "azione_richiesta"],
+      "additionalProperties": false,
+      "properties": {
+        "valore_dichiarato": {
+          "type": "number",
+          "description": "Somma dei soli bonus con fonte_valore diversa da null, più il valore del prodotto. Un numero che il gate ricalcola, mai legge."
+        },
+        "rapporto_valore_prezzo": { "type": "number" },
+        "soglia_rapporto_minima": {
+          "type": "number",
+          "default": 3,
+          "description": "Parametro del listino, non costante sparsa in due documenti. Dichiarata provvisoria: ereditata dal materiale storico e mai misurata su questa azienda."
+        },
+        "ancoraggio": { "type": ["string", "null"] },
+        "bonus": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["nome", "valore", "fonte_valore"],
+            "additionalProperties": false,
+            "properties": {
+              "nome": { "type": "string" },
+              "valore": { "type": "number", "minimum": 0 },
+              "fonte_valore": {
+                "enum": ["prezzo-listino-proprio", "prezzo-mercato-con-url", "costo-produzione", null],
+                "description": "null è ammesso, ma allora il bonus vale 0 nel calcolo. Senza questo vincolo il rapporto si raggiunge inventando: 'Bonus: checklist, valore 99 €' e il gate diventa verde."
+              },
+              "riferimento_fonte": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "garanzia": {
+          "type": "object",
+          "required": ["giorni", "condizioni"],
+          "additionalProperties": false,
+          "properties": {
+            "giorni": { "type": "integer", "minimum": 14, "description": "Minimo 14 per obbligo di legge sui prodotti digitali venduti a consumatori in UE, non per scelta di marketing." },
+            "condizioni": { "type": "string" },
+            "rinuncia_recesso_raccolta": {
+              "type": "boolean",
+              "description": "Per il download immediato di un prodotto digitale serve il consenso esplicito alla perdita del diritto di recesso, raccolto al checkout. Se false, il rimborso resta dovuto per 14 giorni: va saputo prima di fare i conti, non dopo il primo rimborso."
+            }
+          }
+        },
+        "motivo_per_agire_adesso": { "type": ["string", "null"], "description": "una scadenza vera, mai 'affrettati'" },
+        "azione_richiesta": { "type": "string", "description": "una sola. Due azioni in una pagina sono zero azioni." }
+      }
+    },
+    "previsione_riferimento": {
+      "type": "object",
+      "required": ["file", "ricavo_atteso"],
+      "additionalProperties": false,
+      "description": "Il legame che rende la firma una decisione informata: chi firma vede il ricavo che quel prezzo produce sulla lista che abbiamo davvero.",
+      "properties": {
+        "file": { "const": "previsione.json" },
+        "ricavo_atteso": { "type": "number" },
+        "impronta": { "type": "string", "description": "sha256 della previsione al momento della firma" }
+      }
+    },
+    "alternative_scartate": {
+      "type": "array",
+      "description": "Serve al terzo lancio, non a questo: permette di vedere se si è sempre scelto troppo basso — l'errore più comune e il più invisibile, perché un prezzo basso vende e quindi sembra aver funzionato.",
+      "items": {
+        "type": "object",
+        "required": ["prezzo", "perche_no"],
+        "additionalProperties": false,
+        "properties": {
+          "prezzo": { "type": "number" },
+          "ricavo_atteso": { "type": ["number", "null"] },
+          "perche_no": { "type": "string" }
+        }
+      }
+    },
+    "firma": {
+      "type": "object",
+      "required": ["chi", "canale", "riferimento", "proposta_impronta", "il"],
+      "additionalProperties": false,
+      "description": "NESSUN AGENTE HA PERMESSO DI SCRITTURA SU QUESTO OGGETTO. È il punto in cui il sistema riconosce che ci sono cose che non gli competono, e la riga di codice che lo impedisce vale più della frase che lo dichiara.",
+      "properties": {
+        "chi": { "type": "string", "minLength": 2 },
+        "canale": {
+          "enum": ["comando-utente", "chat-firmata", "file-fuori-agenti"],
+          "description": "Lista chiusa. Un canale fuori lista fa fallire il gate."
+        },
+        "riferimento": { "type": "string", "description": "il comando digitato, o l'identificativo del messaggio in cui la persona ha risposto" },
+        "proposta_impronta": {
+          "type": "string",
+          "description": "sha256 del testo della proposta firmata. Se la proposta viene rigenerata, l'impronta non corrisponde più e la firma decade: si riapre la conferma invece di far partire un lancio a un prezzo che nessuno ha approvato in quella forma."
+        },
+        "il": { "type": "string", "format": "date-time" }
+      }
+    },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  }
+}

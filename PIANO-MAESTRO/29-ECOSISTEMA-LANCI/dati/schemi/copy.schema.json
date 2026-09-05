@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/copy.schema.json",
+  "title": "copy/manifest.json — tutti i testi, ognuno col punteggio calcolato",
+  "description": "Nella versione precedente questo era l'artefatto più importante del suo dossier e non aveva schema, e la griglia di punteggio poggiava su due liste che esistevano solo dentro un markdown: da un testo libero non si estrae una lista tipizzata di prove. Qui le prove sono riferimenti risolvibili contro il certificato e la ricerca, e il giudice non è l'autore.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "pezzi", "punteggio_totale"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "pezzi": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "tipo", "file", "destinazione", "punteggio", "affermazioni"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "tipo": { "enum": ["pagina-vendita", "email", "annuncio", "script-video", "post", "pagina-cattura"] },
+          "file": { "type": "string" },
+          "destinazione": { "type": "string", "description": "il ruolo di pagina del funnel a cui porta: risolvibile contro funnel.json, non una descrizione" },
+          "punteggio": {
+            "type": "object",
+            "required": ["totale", "blocchi"],
+            "additionalProperties": false,
+            "properties": {
+              "totale": { "type": "number", "minimum": 0, "maximum": 100 },
+              "blocchi": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["nome", "punti", "punti_massimi", "assegnato_da"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "nome": { "type": "string" },
+                    "punti": { "type": "number", "minimum": 0 },
+                    "punti_massimi": { "type": "number", "exclusiveMinimum": 0 },
+                    "assegnato_da": {
+                      "enum": ["calcolo", "giudice"],
+                      "description": "'calcolo' = misurabile da un programma (lunghezza, presenza, conteggio). 'giudice' = valutato da un agente che NON è l'autore. Nessun pezzo può essere valutato da chi lo ha scritto."
+                    },
+                    "ancora": { "type": ["string", "null"], "description": "l'esempio concreto che definisce quel punteggio: senza ancore, due giudici danno voti diversi allo stesso testo" }
+                  }
+                }
+              }
+            }
+          },
+          "affermazioni": {
+            "type": "array",
+            "description": "Ogni cosa che il testo afferma come fatto. Le prove si risolvono contro certificato.json e ricerca.json: un testo non può essere la prova di se stesso.",
+            "items": {
+              "type": "object",
+              "required": ["testo", "categoria"],
+              "additionalProperties": false,
+              "properties": {
+                "testo": { "type": "string" },
+                "categoria": { "enum": ["prova", "promessa", "opinione"] },
+                "riferimento": { "type": ["string", "null"], "description": "obbligatorio quando categoria = prova" }
+              }
+            }
+          },
+          "copertina_richiesta": {
+            "type": ["object", "null"],
+            "description": "La copertina la fa Max, sempre: la macchina fornisce cartella, titolo e due righe di brief. Era il punto umano più frequente dell'intero piano e non compariva in nessuna tabella dei punti umani.",
+            "required": ["titolo", "brief", "cartella"],
+            "additionalProperties": false,
+            "properties": { "titolo": { "type": "string" }, "brief": { "type": "string" }, "cartella": { "type": "string" }, "consegnata": { "type": "boolean" } }
+          }
+        }
+      }
+    },
+    "punteggio_totale": { "type": "number", "minimum": 0, "maximum": 100 },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  }
+}

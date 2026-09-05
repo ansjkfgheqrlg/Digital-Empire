@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/editoriale.schema.json",
+  "title": "editoriale.json — i contenuti dei giorni del lancio, e dove portano",
+  "description": "Nella versione precedente lo stesso istante aveva tre rappresentazioni diverse in tre punti del piano, e nessuna era dichiarata fonte di verità. Qui il calendario è uno solo, ogni contenuto ha una destinazione risolvibile contro il funnel, e ogni pezzo che richiede una copertina lo dichiara — perché la copertina è il punto umano che si ripete di più e nella versione precedente non era contato da nessuna parte.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "contenuti"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "contenuti": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "data_uscita", "canale", "formato", "destinazione", "stato"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "data_uscita": { "type": "string", "format": "date" },
+          "canale": { "type": "string" },
+          "a_pagamento": { "type": "boolean", "description": "La linea fra contenuto organico e traffico comprato è il denaro. Lo stesso video, messo in campagna, diventa anche traffico a pagamento, e i due numeri restano separati." },
+          "formato": { "type": "string" },
+          "destinazione": { "type": "string", "description": "quale pagina del funnel: risolvibile, non descritta" },
+          "stato": { "enum": ["da-fare", "pronto", "pubblicato", "saltato"] },
+          "pubblicato_il": { "type": ["string", "null"], "format": "date-time" },
+          "prova_pubblicazione": { "type": ["string", "null"], "description": "URL pubblico del contenuto uscito. Nessun altro valore prova che è uscito davvero." },
+          "copertina_richiesta": { "type": ["object", "null"], "additionalProperties": false, "required": ["titolo", "brief", "cartella"], "properties": { "titolo": { "type": "string" }, "brief": { "type": "string" }, "cartella": { "type": "string" }, "consegnata": { "type": "boolean" } } },
+          "invio_reale": {
+            "type": ["object", "null"],
+            "description": "Per i contenuti che sono un invio alla lista: un'email spedita non si richiama, quindi porta sempre un'autorizzazione umana.",
+            "additionalProperties": false,
+            "required": ["autorizzato_da", "il"],
+            "properties": { "autorizzato_da": { "type": "string" }, "il": { "type": "string", "format": "date-time" }, "destinatari": { "type": ["integer", "null"] } }
+          }
+        }
+      }
+    },
+    "giorni_scoperti": {
+      "type": "array",
+      "items": { "type": "string", "format": "date" },
+      "description": "I giorni del carrello senza nessun contenuto. Elencati, non nascosti: un lancio con tre giorni muti in mezzo si vede solo se qualcuno li conta."
+    },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  }
+}

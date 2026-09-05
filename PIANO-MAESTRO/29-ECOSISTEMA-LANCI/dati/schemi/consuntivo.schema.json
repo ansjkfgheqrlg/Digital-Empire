@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/consuntivo.schema.json",
+  "title": "consuntivo.json — quanto è entrato davvero",
+  "description": "Nella versione precedente il consuntivo era un markdown, cioè un testo. Un testo non si confronta con una previsione, e senza confronto non esiste scarto: la memoria ereditava il compito impossibile di imparare da un numero solo. Qui è tipizzato, ed è la metà che rende possibile lo scarto. Regola dura: il ricavo si LEGGE dal fornitore di pagamento, non si dichiara. È l'applicazione diretta della Legge Suprema dell'Impero (prove, non promesse) al punto in cui mentire è più comodo.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "periodo", "ricavo_lordo", "origine", "ordini", "costi_reali"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "periodo": {
+      "type": "object",
+      "required": ["dal", "al"],
+      "additionalProperties": false,
+      "properties": {
+        "dal": { "type": "string", "format": "date" },
+        "al": { "type": "string", "format": "date" }
+      }
+    },
+    "ricavo_lordo": { "type": "number", "minimum": 0, "description": "Zero è un valore legittimo e va scritto. Un lancio che incassa zero è un lancio misurato; un lancio senza consuntivo è un lancio perso." },
+    "ricavo_netto": { "type": ["number", "null"], "description": "al netto di commissioni, rimborsi e imposte, quando noti" },
+    "origine": {
+      "type": "object",
+      "required": ["tipo", "riferimento", "letto_il"],
+      "additionalProperties": false,
+      "properties": {
+        "tipo": {
+          "enum": ["fornitore-pagamento", "esporto-piattaforma"],
+          "description": "Non esiste il valore 'dichiarato'. Un ricavo senza origine verificabile fa fallire il gate e il lancio non chiude."
+        },
+        "riferimento": { "type": "string" },
+        "letto_il": { "type": "string", "format": "date-time" }
+      }
+    },
+    "ordini": {
+      "type": "object",
+      "required": ["numero", "prezzo_medio"],
+      "additionalProperties": false,
+      "properties": {
+        "numero": { "type": "integer", "minimum": 0 },
+        "prezzo_medio": { "type": "number", "minimum": 0 },
+        "rimborsi_numero": { "type": "integer", "minimum": 0 },
+        "rimborsi_importo": { "type": "number", "minimum": 0 }
+      }
+    },
+    "per_canale": {
+      "type": "array",
+      "description": "Separato per canale, e i canali a pagamento restano distinti da quelli organici: mescolarli rende impossibile sapere cosa ha funzionato.",
+      "items": {
+        "type": "object",
+        "required": ["canale", "visite", "ordini"],
+        "additionalProperties": false,
+        "properties": {
+          "canale": { "type": "string" },
+          "a_pagamento": { "type": "boolean" },
+          "visite": { "type": ["integer", "null"] },
+          "ordini": { "type": "integer", "minimum": 0 },
+          "costo": { "type": ["number", "null"] },
+          "costo_per_acquisto": { "type": ["number", "null"] }
+        }
+      }
+    },
+    "costi_reali": {
+      "type": "object",
+      "required": ["totale"],
+      "additionalProperties": false,
+      "properties": {
+        "totale": { "type": "number", "minimum": 0 },
+        "macchina": { "type": ["number", "null"], "description": "il costo delle chiamate ai modelli, letto dal registro delle invocazioni, non stimato" },
+        "pubblicita": { "type": ["number", "null"] },
+        "strumenti": { "type": ["number", "null"] },
+        "altro": { "type": ["number", "null"] }
+      }
+    },
+    "non_misurato": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Ciò che non si è potuto leggere. Dichiararlo è obbligatorio: un consuntivo che tace i buchi mente per omissione."
+    }
+  }
+}

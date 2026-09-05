@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/pubblico.schema.json",
+  "title": "pubblico.json — quante persone possiamo mettere davanti all'offerta",
+  "description": "Artefatto NUOVO della versione 4. Nasce da un fatto misurato: il piano precedente progettava il lancio del Manuale Claude Code senza sapere che il canale YouTube destinato a portargli pubblico era stato dichiarato 'funnel morto' e dirottato su un altro progetto il 2026-07-29 (second-brain-vault/wiki/log.md, righe 1054-1063). Senza questo file, l'azienda scopre di non avere pubblico il giorno dell'apertura, dopo aver speso tutto il resto. Regola dura: un numero senza prova vale zero nel totale.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "misurato_il", "canali", "totale_raggiungibile_verificato"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string", "minLength": 3 },
+    "misurato_il": { "type": "string", "format": "date-time" },
+    "scade_il": {
+      "type": "string",
+      "format": "date",
+      "description": "Un conteggio di pubblico invecchia. Oltre questa data va rifatto: 30 giorni dalla misura."
+    },
+    "canali": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "tipo", "posseduto", "raggiungibili_verificati", "prova"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "tipo": {
+            "enum": ["lista-email", "community-chat", "canale-video", "profilo-social", "traffico-pagato", "pubblico-altrui"]
+          },
+          "posseduto": {
+            "type": "boolean",
+            "description": "true = l'azienda controlla il contatto (lista, community propria). false = dipende da una piattaforma o da un terzo. Un lancio che poggia solo su pubblico non posseduto è un lancio in affitto, e va dichiarato."
+          },
+          "raggiungibili_verificati": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Quante persone si possono raggiungere DAVVERO il giorno dell'apertura. Non gli iscritti storici: quelli raggiungibili."
+          },
+          "raggiungibili_dichiarati": {
+            "type": ["integer", "null"],
+            "description": "Il numero che qualcuno ha detto senza prova. Si conserva per confronto, non entra nel totale."
+          },
+          "prova": {
+            "type": "object",
+            "required": ["tipo", "riferimento", "data"],
+            "additionalProperties": false,
+            "properties": {
+              "tipo": {
+                "enum": ["esporto-lista", "schermata-conteggio-piattaforma", "misura-analytics", "nessuna"],
+                "description": "'nessuna' è ammesso ma porta raggiungibili_verificati a 0 nel calcolo del totale: si può dichiarare di non sapere, non si può contare ciò che non si sa."
+              },
+              "riferimento": { "type": "string", "description": "percorso file o URL apribile" },
+              "data": { "type": "string", "format": "date" }
+            }
+          },
+          "stato_tecnico": {
+            "type": "string",
+            "enum": ["attivo", "dirottato", "sospeso", "credenziale-scaduta", "sconosciuto"],
+            "description": "Il campo che sarebbe servito a luglio. 'dirottato' = il canale esiste ma serve un altro progetto."
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "totale_raggiungibile_verificato": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Somma dei soli canali con prova diversa da 'nessuna'. È il numero che entra nella previsione."
+    },
+    "non_misurato": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Ogni cosa che non si è potuta misurare, dichiarata. Mai stimata di nascosto."
+    }
+  }
+}

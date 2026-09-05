@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/certificato.schema.json",
+  "title": "certificato.json — il prodotto è consegnabile a un cliente pagante",
+  "description": "La modalità retroattiva è la riparazione del difetto più imbarazzante della versione precedente: il flusso ammetteva solo prodotti usciti dal proprio processo di produzione, quindi il Manuale Claude Code — finito da marzo, mai passato di lì — usciva con codice di errore alla prima riga. Il reparto costruito per sbloccare quel prodotto era inaccessibile a quel prodotto. E l'azienda ha 25 pezzi finiti in questa condizione.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "modalita", "file_prodotto", "bandiere_rosse", "esito"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "modalita": {
+      "enum": ["integrale", "retroattiva"],
+      "description": "retroattiva = il prodotto esiste già finito; si saltano le fasi di produzione, NON i controlli di consegnabilità"
+    },
+    "file_prodotto": {
+      "type": "object",
+      "required": ["percorso", "byte", "formato"],
+      "additionalProperties": false,
+      "properties": {
+        "percorso": { "type": "string" },
+        "byte": { "type": "integer", "exclusiveMinimum": 0 },
+        "formato": { "type": "string" },
+        "pagine": { "type": ["integer", "null"] }
+      }
+    },
+    "bandiere_rosse": {
+      "type": "array",
+      "minItems": 6,
+      "description": "Sei controlli, ognuno con l'esito e come è stato verificato. Una sola presente e non si consegna.",
+      "items": {
+        "type": "object",
+        "required": ["id", "presente", "come_verificata"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "enum": ["RF1-nessun-output-pratico", "RF2-template-senza-esempio", "RF3-promessa-non-mantenuta", "RF4-contenuto-non-originale", "RF5-link-morti", "RF6-consegna-non-provata"] },
+          "presente": { "type": "boolean" },
+          "come_verificata": { "type": "string", "description": "il comando eseguito o il file aperto: mai 'controllato'" },
+          "dettaglio": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "link_testati": {
+      "type": "array",
+      "description": "Ogni link del prodotto, testato in sessione pulita, con l'esito per link. Non un totale: l'elenco.",
+      "items": {
+        "type": "object",
+        "required": ["url", "codice"],
+        "additionalProperties": false,
+        "properties": { "url": { "type": "string" }, "codice": { "type": ["integer", "null"] } }
+      }
+    },
+    "debito_collaudo": {
+      "type": ["string", "null"],
+      "description": "obbligatorio quando modalita = retroattiva: cosa non è stato controllato e entro quando va fatto. Un'eccezione senza debito scritto diventa la regola."
+    },
+    "esito": { "enum": ["consegnabile", "non-consegnabile"] },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "modalita": { "const": "retroattiva" } } },
+      "then": { "required": ["debito_collaudo"], "properties": { "debito_collaudo": { "type": "string", "minLength": 10 } } }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/decisione.schema.json",
+  "title": "decisione.json — questo lancio si fa adesso, e non un altro",
+  "description": "Il filtro. Nella versione precedente le cinque domande erano prosa italiana che un gate 'verificava': una frase non si verifica. Qui ogni domanda ha risposta chiusa e cita l'artefatto che la sostiene, così il gate confronta con il disco invece di leggere un'opinione.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "prodotto", "domande", "esito"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "prodotto": { "type": "string" },
+    "domande": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "testo", "risposta", "sostenuta_da"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "enum": ["D1-prodotto-esiste", "D2-pubblico-esiste", "D3-si-puo-incassare", "D4-capacita-nel-periodo", "D5-nessun-lancio-in-conflitto"] },
+          "testo": { "type": "string" },
+          "risposta": { "enum": ["si", "no"] },
+          "sostenuta_da": {
+            "type": "string",
+            "description": "percorso di un artefatto esistente. Il gate lo apre: una risposta 'si' senza file dietro vale 'no'."
+          }
+        }
+      }
+    },
+    "esito": { "enum": ["si-fa", "archiviato"] },
+    "ragione_archiviazione": { "type": ["string", "null"], "description": "obbligatoria quando esito = archiviato: le idee respinte sono un patrimonio, alla sesta volta si vede che è già stata respinta cinque volte" },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  }
+}

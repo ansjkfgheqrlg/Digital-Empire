@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/apertura.schema.json",
+  "title": "apertura.json — tutte le condizioni vere insieme, e una persona che dà il via",
+  "description": "L'ultimo controllo prima dell'unica azione davvero irreversibile. La validità degli artefatti si RICALCOLA dai file, mai si legge dallo stato: questo repository ha tre casi documentati di codice che dichiara successo senza aver eseguito nulla, ed è il modello di fallimento più probabile di tutto il sistema.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "lista_sincronizzazione", "artefatti_ricalcolati", "via_libera"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "lista_sincronizzazione": {
+      "type": "array",
+      "minItems": 10,
+      "description": "Dieci voci che devono essere vere NELLO STESSO MOMENTO. Una sola falsa e non si apre.",
+      "items": {
+        "type": "object",
+        "required": ["voce", "esito", "verificata_il"],
+        "additionalProperties": false,
+        "properties": {
+          "voce": { "type": "string" },
+          "esito": { "type": "boolean" },
+          "verificata_il": { "type": "string", "format": "date-time" },
+          "come": { "type": "string", "description": "il comando eseguito o il file letto" }
+        }
+      }
+    },
+    "artefatti_ricalcolati": {
+      "type": "array",
+      "description": "Ogni artefatto rivalidato contro il proprio schema al momento dell'apertura, non al momento in cui fu prodotto. Un artefatto valido a ottobre può non esserlo più a novembre.",
+      "items": {
+        "type": "object",
+        "required": ["artefatto", "valido", "ricalcolato_il"],
+        "additionalProperties": false,
+        "properties": { "artefatto": { "type": "string" }, "valido": { "type": "boolean" }, "ricalcolato_il": { "type": "string", "format": "date-time" }, "motivo": { "type": ["string", "null"] } }
+      }
+    },
+    "via_libera": {
+      "type": "object",
+      "required": ["chi", "canale", "riferimento", "il"],
+      "additionalProperties": false,
+      "description": "Come la firma dell'offerta: nessun agente ha permesso di scrittura su questo oggetto. Aprire una vendita è irreversibile verso l'esterno, e per queste cose il sistema prepara tutto fino all'ultimo centimetro e poi si ferma.",
+      "properties": {
+        "chi": { "type": "string" },
+        "canale": { "enum": ["comando-utente", "chat-firmata", "file-fuori-agenti"] },
+        "riferimento": { "type": "string" },
+        "il": { "type": "string", "format": "date-time" }
+      }
+    },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  }
+}

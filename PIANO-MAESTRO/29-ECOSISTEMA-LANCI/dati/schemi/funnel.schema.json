@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/funnel.schema.json",
+  "title": "funnel.json — le pagine sono online, misurano, e la cassa ha incassato davvero",
+  "description": "Due riparazioni rispetto alla versione precedente. (1) La prova del tracciamento era un valore vero/falso con un'attesa di 60 secondi e nessuna fonte dichiarata: produce falsi negativi sistematici, e un controllo che sbaglia spesso viene derogato al primo lancio. Qui la prova dice DOVE si legge l'evento e con quale identificativo. (2) La pubblicazione irreversibile veniva prima della prova che la cassa funzionasse. Qui la prova di cassa è dentro questo gate: si vende solo dopo che un pagamento vero è entrato ed è stato rimborsato in prova. Misurato il 2026-09-05: l'azienda oggi non ha nessun percorso automatico dalla pagina all'euro incassato, quindi questo campo è il vero collo di bottiglia del primo lancio.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "pagine", "prova_cassa", "consenso"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "pagine": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["ruolo", "url", "codice_http", "evento_conversione"],
+        "additionalProperties": false,
+        "properties": {
+          "ruolo": { "enum": ["cattura", "vendita", "checkout", "grazie", "consegna", "altro"] },
+          "url": { "type": "string", "format": "uri" },
+          "codice_http": { "type": "integer" },
+          "verificata_il": { "type": "string", "format": "date-time" },
+          "evento_conversione": {
+            "type": "object",
+            "required": ["nome", "prova"],
+            "additionalProperties": false,
+            "properties": {
+              "nome": { "type": "string" },
+              "prova": {
+                "type": "object",
+                "required": ["origine", "identificativo_evento", "letto_il"],
+                "additionalProperties": false,
+                "properties": {
+                  "origine": {
+                    "enum": ["piattaforma-misura", "registro-server", "fornitore-pagamento"],
+                    "description": "Dove si è andati a leggere che l'evento è arrivato. Senza questo campo il gate si fida di uno screenshot, e uno screenshot non è una prova."
+                  },
+                  "identificativo_evento": { "type": "string" },
+                  "letto_il": { "type": "string", "format": "date-time" }
+                }
+              }
+            }
+          },
+          "tempo_caricamento_ms": { "type": ["integer", "null"] }
+        }
+      }
+    },
+    "prova_cassa": {
+      "type": "object",
+      "required": ["stato", "fornitore"],
+      "additionalProperties": false,
+      "description": "Il passo che nessuno aveva messo: un pagamento vero, con carta vera, incassato e poi rimborsato. Finché questo non è 'incassato_e_rimborsato', la vendita non si apre.",
+      "properties": {
+        "stato": {
+          "enum": ["non_provata", "incassato", "incassato_e_rimborsato", "fallita"],
+          "description": "Solo 'incassato_e_rimborsato' fa passare il gate: incassare non basta, bisogna sapere anche che si può restituire."
+        },
+        "fornitore": { "type": "string" },
+        "riferimento_transazione": { "type": ["string", "null"] },
+        "importo": { "type": ["number", "null"] },
+        "eseguita_il": { "type": ["string", "null"], "format": "date-time" },
+        "consegna_verificata": {
+          "type": ["boolean", "null"],
+          "description": "Dopo il pagamento di prova, il prodotto è davvero arrivato a chi ha pagato? Un lancio che incassa e non consegna è un problema legale, non un difetto di prodotto."
+        }
+      }
+    },
+    "consenso": {
+      "type": "object",
+      "required": ["banner_presente", "misura_prima_del_consenso"],
+      "additionalProperties": false,
+      "description": "Il consenso ai cookie era nominato dalla versione precedente come causa numero uno di fallimento della misura, e non entrava in nessun controllo. Se la misura parte solo dopo il consenso, i numeri sono sistematicamente più bassi del vero e ogni previsione tarata su di essi è sbagliata di una quantità nota e non dichiarata.",
+      "properties": {
+        "banner_presente": { "type": "boolean" },
+        "misura_prima_del_consenso": { "type": "boolean" },
+        "quota_consenso_stimata": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "nota": { "type": "string" }
+      }
+    },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  }
+}

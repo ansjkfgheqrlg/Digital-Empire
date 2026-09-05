@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/previsione.schema.json",
+  "title": "previsione.json — quanto ci aspettiamo di incassare",
+  "description": "Artefatto NUOVO della versione 4, e il più importante dei tre. In 3.718 righe la versione precedente non conteneva mai la domanda 'quanto ci aspettiamo di incassare'. Tre conseguenze misurate: (1) la firma del prezzo restava cieca — si sceglie un numero, non un risultato; (2) il gate del budget pretendeva 'il pareggio calcolato' che nessun artefatto produceva, quindi era insoddisfacibile per costruzione; (3) senza previsione il consuntivo è un numero solo, senza scarto, e la memoria ereditava un compito impossibile. Chiude anche B-043 ('DE non misura un solo euro'). La formula è dichiarata nel file: chi legge deve poter rifare il conto a mano.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "calcolata_il", "formula", "ingressi", "scenari", "assunzioni"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "calcolata_il": { "type": "string", "format": "date-time" },
+    "formula": {
+      "type": "string",
+      "const": "ricavo_lordo = pubblico_raggiungibile * tasso_visita * tasso_acquisto * prezzo",
+      "description": "Scritta nel file e non solo nel codice: una previsione di cui non si può rifare il conto a mano non è una previsione, è un numero."
+    },
+    "ingressi": {
+      "type": "object",
+      "required": ["pubblico_raggiungibile", "prezzo", "fonte_pubblico", "fonte_prezzo"],
+      "additionalProperties": false,
+      "properties": {
+        "pubblico_raggiungibile": { "type": "integer", "minimum": 0 },
+        "prezzo": { "type": "number", "exclusiveMinimum": 0 },
+        "fonte_pubblico": { "const": "ART-PUB", "description": "il modello non sceglie il pubblico: lo riceve" },
+        "fonte_prezzo": { "enum": ["ART-OFF", "proposta-in-corso"], "description": "in fase di istruttoria il prezzo è quello proposto, e si ricalcola a ogni alternativa" }
+      }
+    },
+    "scenari": {
+      "type": "object",
+      "required": ["pessimista", "atteso", "ottimista"],
+      "additionalProperties": false,
+      "description": "Tre scenari obbligatori. Un numero solo nasconde l'incertezza invece di dichiararla, e fa firmare al buio credendo di vedere.",
+      "properties": {
+        "pessimista": { "$ref": "#/$defs/scenario" },
+        "atteso": { "$ref": "#/$defs/scenario" },
+        "ottimista": { "$ref": "#/$defs/scenario" }
+      }
+    },
+    "assunzioni": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["nome", "valore", "stato"],
+        "additionalProperties": false,
+        "properties": {
+          "nome": { "type": "string" },
+          "valore": { "type": ["number", "string"] },
+          "stato": {
+            "enum": ["misurato", "assunto"],
+            "description": "'misurato' richiede una fonte reale. Un'assunzione travestita da misura è la bugia più costosa di tutto il sistema: entra in un gate come prova."
+          },
+          "fonte": { "type": ["string", "null"], "description": "obbligatoria quando stato = misurato" },
+          "da_dove_viene_se_assunto": {
+            "type": ["string", "null"],
+            "description": "es. 'benchmark di settore', 'lancio precedente di un altro prodotto', 'numero di comodo'. Dichiarare 'numero di comodo' è legittimo; nasconderlo no."
+          }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "stato": { "const": "misurato" } } },
+            "then": { "required": ["fonte"], "properties": { "fonte": { "type": "string", "minLength": 3 } } }
+          }
+        ]
+      }
+    },
+    "pareggio": {
+      "type": "object",
+      "description": "Il numero che rende la firma una decisione invece che una scelta di gusto: quante copie servono per non perderci.",
+      "required": ["copie_per_pareggio", "costo_totale_previsto"],
+      "additionalProperties": false,
+      "properties": {
+        "copie_per_pareggio": { "type": "number", "minimum": 0 },
+        "costo_totale_previsto": { "type": "number", "minimum": 0 },
+        "include_costo_macchina": {
+          "type": "boolean",
+          "description": "true se il costo delle chiamate ai modelli è dentro. Nella versione precedente non era contato da nessuna parte."
+        }
+      }
+    },
+    "confronto_alternative_prezzo": {
+      "type": "array",
+      "description": "Il pezzo che trasforma la domanda 'confermi 47?' in 'confermi 47, che a questa lista fa X, mentre 27 fa Y e 97 fa Z?'. È la ragione per cui questo artefatto viene prima dell'offerta.",
+      "items": {
+        "type": "object",
+        "required": ["prezzo", "ricavo_atteso"],
+        "additionalProperties": false,
+        "properties": {
+          "prezzo": { "type": "number" },
+          "ricavo_atteso": { "type": "number" },
+          "tasso_acquisto_ipotizzato": { "type": "number" },
+          "nota": { "type": "string" }
+        }
+      }
+    },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  },
+  "$defs": {
+    "scenario": {
+      "type": "object",
+      "required": ["tasso_visita", "tasso_acquisto", "ricavo_lordo"],
+      "additionalProperties": false,
+      "properties": {
+        "tasso_visita": { "type": "number", "minimum": 0, "maximum": 1, "description": "quota del pubblico che arriva sulla pagina" },
+        "tasso_acquisto": { "type": "number", "minimum": 0, "maximum": 1, "description": "quota dei visitatori che compra" },
+        "ricavo_lordo": { "type": "number", "minimum": 0 },
+        "copie": { "type": "number", "minimum": 0 },
+        "perche_questo_scenario": { "type": "string" }
+      }
+    }
+  }
+}

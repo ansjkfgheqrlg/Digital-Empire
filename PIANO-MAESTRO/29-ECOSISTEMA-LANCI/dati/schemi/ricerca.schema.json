@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/ricerca.schema.json",
+  "title": "ricerca.json — le parole vere del pubblico, con la fonte",
+  "description": "Il gate riapre un campione delle fonti invece di fidarsi dell'elenco: il modo tipico in cui questo artefatto fallisce non è restare vuoto, è riempirsi di frasi plausibili e inventate. Una ricerca con venti frasi credibili e zero fonti raggiungibili deve bloccare, ed è il test rosso dichiarato.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "frasi", "campione_verificato"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "frasi": {
+      "type": "array",
+      "minItems": 15,
+      "items": {
+        "type": "object",
+        "required": ["testo", "fonte", "categoria"],
+        "additionalProperties": false,
+        "properties": {
+          "testo": { "type": "string", "minLength": 10, "description": "le parole della persona, non la parafrasi" },
+          "fonte": {
+            "type": "object",
+            "required": ["url", "raccolta_il"],
+            "additionalProperties": false,
+            "properties": { "url": { "type": "string" }, "raccolta_il": { "type": "string", "format": "date" }, "contesto": { "type": ["string", "null"] } }
+          },
+          "categoria": { "enum": ["dolore", "desiderio", "obiezione", "linguaggio", "confronto"] }
+        }
+      }
+    },
+    "campione_verificato": {
+      "type": "array",
+      "minItems": 3,
+      "description": "Il gate riapre almeno tre fonti a caso e registra l'esito. È il solo modo di distinguere una ricerca da un'invenzione ben scritta.",
+      "items": {
+        "type": "object",
+        "required": ["url", "raggiungibile", "verificata_il"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string" },
+          "raggiungibile": { "type": "boolean" },
+          "testo_ritrovato": { "type": ["boolean", "null"] },
+          "verificata_il": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "concorrenti": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["nome", "prezzo", "fonte_prezzo"],
+        "additionalProperties": false,
+        "properties": {
+          "nome": { "type": "string" },
+          "prezzo": { "type": ["number", "null"] },
+          "fonte_prezzo": { "type": "string", "description": "URL della pagina di vendita: un prezzo di concorrente senza pagina è una voce" },
+          "cosa_non_copre": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  }
+}

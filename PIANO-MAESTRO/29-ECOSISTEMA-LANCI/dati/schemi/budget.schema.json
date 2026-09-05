@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/budget.schema.json",
+  "title": "budget.json — quanto costa il lancio e a quante copie va in pari",
+  "description": "Due riparazioni. (1) Il gate del budget pretendeva 'il pareggio calcolato', ma il pareggio è ricavo previsto contro costo, e nella versione precedente il ricavo previsto non esisteva in nessun artefatto: il gate era insoddisfacibile per costruzione. Qui il pareggio si calcola da previsione.json. (2) Il costo delle chiamate ai modelli non compariva mai in 3.718 righe, pur essendo un ecosistema che prevedeva 41 agenti su una tassa fissa misurata di 0,08-0,11 dollari per invocazione. Qui è una voce obbligatoria con un tetto.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "tetto", "voci", "costo_totale_previsto", "costo_macchina_previsto", "pareggio"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "tetto": { "type": "number", "exclusiveMinimum": 0 },
+    "voci": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["nome", "importo", "tipo", "stato"],
+        "additionalProperties": false,
+        "properties": {
+          "nome": { "type": "string" },
+          "importo": { "type": "number", "minimum": 0 },
+          "tipo": { "enum": ["una-tantum", "ricorrente", "macchina"] },
+          "stato": { "enum": ["previsto", "impegnato", "speso"] },
+          "autorizzato_da": { "type": ["string", "null"], "description": "obbligatorio per passare a 'impegnato': impegnare denaro è una decisione umana" }
+        }
+      }
+    },
+    "costo_totale_previsto": { "type": "number", "minimum": 0 },
+    "costo_macchina_previsto": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Stima delle chiamate ai modelli per questo lancio: numero di invocazioni per agente, per il costo del suo modello, più la tassa fissa per invocazione. Un ecosistema che non conosce il proprio costo unitario non può calcolare nessun pareggio."
+    },
+    "tetto_macchina": { "type": "number", "exclusiveMinimum": 0, "default": 15 },
+    "pareggio": {
+      "type": "object",
+      "required": ["copie", "calcolato_da"],
+      "additionalProperties": false,
+      "properties": {
+        "copie": { "type": "number", "minimum": 0 },
+        "calcolato_da": { "const": "previsione.json" },
+        "scenario_usato": { "enum": ["pessimista", "atteso", "ottimista"] }
+      }
+    },
+    "scarto_corrente": {
+      "type": ["object", "null"],
+      "description": "Sorvegliato durante la produzione. Oltre il 10% blocca la spesa nuova e il lancio torna indietro di uno stato: non muore. Uno sforamento che uccide il lancio è un difetto di progetto, non un controllo.",
+      "additionalProperties": false,
+      "required": ["speso", "previsto", "percentuale"],
+      "properties": {
+        "speso": { "type": "number" },
+        "previsto": { "type": "number" },
+        "percentuale": { "type": "number" },
+        "sbloccato_da": { "type": ["string", "null"] },
+        "sbloccato_il": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "non_misurato": { "type": "array", "items": { "type": "string" } }
+  }
+}

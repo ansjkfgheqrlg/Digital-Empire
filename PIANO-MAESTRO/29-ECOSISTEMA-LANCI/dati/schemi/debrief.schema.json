@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lanci/debrief.schema.json",
+  "title": "debrief.json — previsione contro realtà, con le cause",
+  "description": "Il gate della memoria, nella versione precedente, verificava che il record ESISTESSE, non che dicesse qualcosa: un booleano di esistenza si soddisfa con un file che contiene 'ok'. Il presidio duro risultava più debole di quello morbido che sostituiva, perché quello almeno chiedeva un contenuto. Qui il debrief è il confronto fra due artefatti tipizzati, e ogni scarto oltre il 10% deve avere una causa scritta. Senza previsione questo file non può esistere: è la ragione per cui previsione.json viene prima.",
+  "type": "object",
+  "required": ["schema_version", "lancio_id", "confronto", "cause", "schemi", "controfirma"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "lancio_id": { "type": "string" },
+    "confronto": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Ogni voce previsione contro la stessa voce misurata. Lo scarto lo ricalcola il gate: non lo legge da qui.",
+      "items": {
+        "type": "object",
+        "required": ["voce", "previsto", "reale", "scarto_percentuale"],
+        "additionalProperties": false,
+        "properties": {
+          "voce": { "type": "string" },
+          "previsto": { "type": ["number", "null"] },
+          "reale": { "type": ["number", "null"] },
+          "scarto_percentuale": { "type": ["number", "null"] }
+        }
+      }
+    },
+    "cause": {
+      "type": "array",
+      "description": "Obbligatoria una causa per ogni scarto oltre il 10%. 'È andata male' non è una causa: una causa dice cosa si farebbe di diverso.",
+      "items": {
+        "type": "object",
+        "required": ["voce", "causa", "cosa_faremmo_di_diverso"],
+        "additionalProperties": false,
+        "properties": {
+          "voce": { "type": "string" },
+          "causa": { "type": "string", "minLength": 20 },
+          "cosa_faremmo_di_diverso": { "type": "string", "minLength": 20 },
+          "misurata": { "type": "boolean", "description": "false = è un'ipotesi sulla causa, e va detto" }
+        }
+      }
+    },
+    "schemi": {
+      "type": "array",
+      "minItems": 3,
+      "description": "Gli schemi riutilizzabili. Salgono di grado con le conferme e SCENDONO con le smentite: una memoria che può solo salire è una superstizione con la data.",
+      "items": {
+        "type": "object",
+        "required": ["testo", "forza", "si_applica_quando"],
+        "additionalProperties": false,
+        "properties": {
+          "testo": { "type": "string", "minLength": 20 },
+          "forza": { "enum": ["osservazione", "indizio", "regola"] },
+          "si_applica_quando": {
+            "type": "string",
+            "minLength": 10,
+            "description": "Il campo che impedisce a una regola di essere applicata dove non vale. Senza, uno schema nato su un ebook da 47 € finisce addosso a un servizio da 3.000 €."
+          },
+          "conferme": { "type": "integer", "minimum": 0 },
+          "smentite": { "type": "integer", "minimum": 0 },
+          "artefatto_di_origine": { "type": "string" }
+        }
+      }
+    },
+    "gate_bloccanti_scattati": {
+      "type": "array",
+      "description": "Quali controlli hanno bloccato davvero durante questo lancio. Un ecosistema in cui nessun gate ha mai bloccato non ha gate: ha decorazioni.",
+      "items": {
+        "type": "object",
+        "required": ["gate", "volte"],
+        "additionalProperties": false,
+        "properties": {
+          "gate": { "type": "string" },
+          "volte": { "type": "integer", "minimum": 0 },
+          "costo_in_giorni": { "type": ["number", "null"] }
+        }
+      }
+    },
+    "punti_umani_scaduti": {
+      "type": "array",
+      "description": "Quali decisioni umane sono scadute e cosa è successo. È la misura vera del collo di bottiglia dell'azienda, e va guardata prima di aggiungere reparti.",
+      "items": {
+        "type": "object",
+        "required": ["punto", "giorni_attesa", "esito"],
+        "additionalProperties": false,
+        "properties": {
+          "punto": { "type": "string" },
+          "giorni_attesa": { "type": "number" },
+          "esito": { "enum": ["firmato", "default-per-silenzio", "sospeso", "abortito"] }
+        }
+      }
+    },
+    "controfirma": {
+      "type": "object",
+      "required": ["chi", "il"],
+      "additionalProperties": false,
+      "description": "La Memoria giudica il lancio, la Regia controfirma: nessuno dei due scrive da solo la storia di com'è andata. La controfirma è un campo, non il ruolo di giudice — perché chi controfirma ha il permesso di scrivere, e un giudice che può riscrivere ciò che giudica non è un giudice.",
+      "properties": {
+        "chi": { "type": "string" },
+        "il": { "type": "string", "format": "date-time" },
+        "obiezioni": { "type": ["string", "null"], "description": "se la Regia non è d'accordo col giudizio, l'obiezione resta scritta accanto invece di essere negoziata via" }
+      }
+    }
+  }
+}
