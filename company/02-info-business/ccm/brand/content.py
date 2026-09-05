@@ -13,18 +13,20 @@ from __future__ import annotations
 def build(page, title_block) -> None:
     # ===================================================================== copertina
     page(
-        '<div class="glow"></div>'
         '<div class="masthead"><span class="mk">DIGITAL EMPIRE</span>'
         "<span>Brand Guidelines · v1.0 · Settembre 2026</span></div>"
-        '<h1><span class="silver-word" style="font-size:62px">Claude Code</span><br>'
-        '<span class="silverorange-word" style="font-size:62px">Mastery</span></h1>'
-        '<div class="sub">Il sistema visivo e verbale del lancio</div>'
-        '<div class="meta">'
-        '<div><div class="lb">Marca</div><div class="vl">Claude Code Mastery</div></div>'
-        '<div><div class="lb">Casa</div><div class="vl">Digital Empire</div></div>'
-        '<div><div class="lb">Stato</div><div class="vl">Vincolante dal lancio</div></div>'
-        "</div>",
-        kind="dark cover",
+        '<div class="cover-mid">'
+        '<h1 class="big">Claude Code<br><span class="acc">Mastery</span>.</h1>'
+        '<p class="cover-lead">Il sistema visivo e verbale del lancio. Quindici capitoli, '
+        "ognuno chiude con una regola verificabile a occhio o con un contagocce — o è "
+        "rispettata, o non lo è.</p>"
+        '<div class="cover-meta">'
+        '<div><div class="k">Marca</div><div class="v">Claude Code Mastery</div></div>'
+        '<div><div class="k">Casa</div><div class="v">Digital Empire</div></div>'
+        '<div><div class="k">Stato</div><div class="v">Vincolante dal lancio</div></div>'
+        '<div><div class="k">Versione</div><div class="v">v1.0 · Settembre 2026</div></div>'
+        "</div></div>",
+        kind="cover dark",
     )
 
     # ===================================================================== indice
@@ -667,24 +669,22 @@ def build(page, title_block) -> None:
 
     # ===================================================================== colophon
     page(
-        '<div class="glow"></div>'
         '<div class="masthead"><span class="mk">DIGITAL EMPIRE</span><span>Colophon</span></div>'
-        '<div style="margin-top:auto">'
+        '<div class="cover-mid">'
         '<h2 class="title" style="font-size:38px;color:#fff;max-width:24ch">'
-        'Le regole valgono <span style="color:#8a8594">finché reggono alla misura.</span></h2>'
-        '<p class="lead" style="color:rgba(244,242,246,0.6);max-width:60ch">Questo documento non nasce da un gusto: '
-        "nasce dal foglio di stile del sito CCM e da una cattura forense del sito del concorrente diretto, letta dal "
-        "DOM. Quando uno dei due cambia, cambia anche questo documento — e si rigenera con un comando.</p>"
-        '<div class="meta" style="margin-top:14mm">'
-        '<div><div class="lb">Fonte dei valori</div>'
-        '<div class="vl mono" style="font-size:9px">ccm-premium/src/app/globals.css</div></div>'
-        '<div><div class="lb">Fonte del confronto</div>'
-        '<div class="vl mono" style="font-size:9px">site-study/capture/07-claude-speedrun</div></div>'
-        "</div>"
-        '<div class="meta" style="margin-top:8mm">'
-        '<div><div class="lb">Si rigenera con</div>'
-        '<div class="vl mono" style="font-size:9px">python build_brand_guidelines.py</div></div>'
-        '<div><div class="lb">Versione</div><div class="vl">v1.0 · 3 settembre 2026</div></div>'
+        'Le regole valgono <span class="soft">finché reggono alla misura.</span></h2>'
+        '<p class="cover-lead">Questo documento non nasce da un gusto: nasce dal foglio di '
+        "stile del sito CCM e da una cattura forense del sito del concorrente diretto, letta "
+        "dal DOM. Quando uno dei due cambia, cambia anche questo documento — e si rigenera "
+        "con un comando.</p>"
+        '<div class="cover-meta">'
+        '<div><div class="k">Fonte dei valori</div>'
+        '<div class="v mono" style="font-size:9px">ccm-premium/src/app/globals.css</div></div>'
+        '<div><div class="k">Fonte del confronto</div>'
+        '<div class="v mono" style="font-size:9px">site-study/capture/07-claude-speedrun</div></div>'
+        '<div><div class="k">Si rigenera con</div>'
+        '<div class="v mono" style="font-size:9px">python build_brand_guidelines.py</div></div>'
+        '<div><div class="k">Versione</div><div class="v">v1.0 · 5 settembre 2026</div></div>'
         "</div></div>",
-        kind="dark cover",
+        kind="cover dark",
     )

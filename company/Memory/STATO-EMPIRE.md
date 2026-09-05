@@ -1,3 +1,12 @@
+## 🔧 2026-09-05 — Brand Guidelines CCM sul motore PDF condiviso + falso conflitto di sync sanato
+
+Chiuso il lavoro orfano di EMP-PDFSTD: `build_brand_guidelines.py` e `content.py` migrati al
+motore `pdf_engine_empire.py` (−177 righe di stile duplicato), PDF rigenerato e verificato
+(18 pagine, 0,67 MB). Sanato in via permanente il falso conflitto di sync: era il submodule
+`ruflo-source` (bit eseguibile perso su Windows + CRLF, zero modifiche vere) — fix con
+`diff.ignoreSubmodules dirty` nel padre e `core.fileMode false` nel submodule, `SYNC-CONFLICT.txt`
+rimosso dopo verifica HEAD = origin/main. Dettagli: [CP-20260905-016](checkpoints/CP-20260905-016.md).
+
 ## 🚀 2026-09-05 — ECOSISTEMA LANCI: piano di costruzione completo consegnato a Gael — 29-ECOSISTEMA-LANCI
 
 **Max ha fatto fare il piano architetturale intero dell'ecosistema LANCI**, completando L4-L5-L6

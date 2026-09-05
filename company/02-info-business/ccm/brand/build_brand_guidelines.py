@@ -1,8 +1,12 @@
 """
 build_brand_guidelines.py — Brand Guidelines di Claude Code Mastery (lancio 2026).
 
-Metodo: HTML + Chromium `page.pdf()` via Playwright. Stesso motore del piano editoriale
-YouTube, ma con le regole di stile che Max ha fissato dopo quello:
+Motore condiviso: `PIANO-MAESTRO/scripts/pdf_engine_empire.py`, lo stesso standard-oro di
+`28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf` (direttiva Max, 2026-09-05: quel PDF e' lo standard,
+questo file ne eredita CSS e copertina invece di tenerne uno leggermente diverso). Qui restano
+solo i componenti che il dossier 28 non usa (campioni colore, checklist, confronto, ecc.).
+
+Regole di stile (ereditate, non ridiscusse):
   - fondo chiaro + grana leggera, mai massimalista (rif. AP Sales, 2026-08-30)
   - UN heading per pagina
   - il colore e' accento, non superficie: niente card a gradiente pieno dietro al testo
@@ -22,167 +26,28 @@ Uso:
 from __future__ import annotations
 
 import argparse
-import base64
 import io
 import os
-import random
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", "..", "..", ".."))  # radice del repo
+ENGINE_DIR = os.path.join(ROOT, "PIANO-MAESTRO", "scripts")
+sys.path.insert(0, ENGINE_DIR)
+
+from pdf_engine_empire import CSS_TEMPLATE, grain_data_uri  # noqa: E402
+
 OUT_HTML = os.path.join(HERE, "CCM-Brand-Guidelines.html")
 OUT_PDF = os.path.join(HERE, "CCM-Brand-Guidelines.pdf")
 
-
-# --------------------------------------------------------------------------- grana
-def _grain_data_uri(size: int = 140, lo: int = 25, hi: int = 235, seed: int = 11) -> str:
-    """Grana come PNG pre-renderizzato.
-
-    Non feTurbulence SVG: in stampa Chromium lo rasterizza e il file passa i 16 MB
-    (lezione del piano editoriale YouTube). Range piu' stretto di quello: qui la grana
-    deve accompagnare, non dominare.
-    """
-    from PIL import Image
-
-    random.seed(seed)
-    img = Image.new("L", (size, size))
-    px = img.load()
-    for y in range(size):
-        for x in range(size):
-            px[x, y] = random.randint(lo, hi)
-    buf = io.BytesIO()
-    img.save(buf, format="PNG", optimize=True)
-    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode("ascii")
-
-
-GRAIN = _grain_data_uri()
-
+GRAIN = grain_data_uri()
 
 # --------------------------------------------------------------------------- CSS
-CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
-
-:root {
-  --ink:        #1c1c1c;
-  --ink-2:      #0a0a0a;
-  --ink-soft:   #2a2a2a;
-  --paper:      #fafafa;
-  --grey-bg:    #e8e8e6;
-  --orange:     #fb4604;
-  --orange-br:  #ff6a2e;
-  --orange-dp:  #c9370a;
-  --silver:     #d9d4e1;
-  --silver-dim: #8a8594;
-  --text-2:     #55535a;
-  --text-3:     #8b8890;
-}
-
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body {
-  font-family: 'Onest', -apple-system, 'Segoe UI', sans-serif;
-  color: var(--ink);
-  background: var(--paper);
-  font-size: 11.5px;
-  -webkit-font-smoothing: antialiased;
-}
-h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.028em; line-height: 1.06; }
-p { margin: 0; line-height: 1.68; }
-strong { font-weight: 600; }
-em { font-style: italic; }
-.mono {
-  font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
-  font-variant-numeric: tabular-nums;
-}
-
-/* ---------------------------------------------------------------- impaginato */
-.page {
-  position: relative;
-  width: 210mm;
-  height: 297mm;
-  padding: 22mm 20mm 18mm 20mm;
-  overflow: hidden;
-  page-break-after: always;
-  background: var(--paper);
-}
-.page:last-child { page-break-after: avoid; }
-.page.dark { background: var(--ink); color: #f4f2f6; }
-.page.grey { background: var(--grey-bg); }
-
-.grain::before {
-  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
-  opacity: 0.13;
-  background-image: url("__GRAIN__");
-  background-repeat: repeat; background-size: 3mm 3mm;
-}
-.page.dark .grain::before { opacity: 0.22; mix-blend-mode: overlay; }
-.layer { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; }
-
-/* masthead e piede: solo spazio, nessuna linea */
-.page.cover .masthead { position: absolute; left: 20mm; right: 20mm; top: 22mm; }
-.masthead {
-  display: flex; justify-content: space-between; align-items: baseline;
-  font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--text-3); margin-bottom: 15mm;
-}
-.page.dark .masthead { color: rgba(244,242,246,0.42); }
-.masthead .mk { font-weight: 700; color: var(--ink); letter-spacing: 0.2em; }
-.page.dark .masthead .mk { color: rgba(244,242,246,0.8); }
-
-.foot {
-  position: absolute; left: 20mm; right: 20mm; bottom: 11mm; z-index: 1;
-  display: flex; justify-content: space-between;
-  font-size: 7.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-3);
-}
-.page.dark .foot { color: rgba(244,242,246,0.32); }
-.foot .num { font-weight: 600; color: var(--ink); }
-.page.dark .foot .num { color: rgba(244,242,246,0.7); }
-
-/* ---------------------------------------------------------------- titolo di pagina */
-.eyebrow {
-  font-size: 8.5px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--orange); margin-bottom: 5mm;
-}
-.eyebrow .idx { color: var(--text-3); margin-right: 8px; }
-.page.dark .eyebrow .idx { color: rgba(244,242,246,0.35); }
-h2.title { font-size: 30px; max-width: 20ch; }
-h2.title .soft { color: var(--text-3); font-weight: 300; }
-.page.dark h2.title .soft { color: rgba(244,242,246,0.42); }
-.lead {
-  font-size: 12px; color: var(--text-2); max-width: 62ch; margin-top: 7mm; line-height: 1.72;
-}
-.page.dark .lead { color: rgba(244,242,246,0.66); }
-
-.body { flex: 1; margin-top: 14mm; padding-bottom: 5mm; display: flex; flex-direction: column; }
-.unit { break-inside: avoid; page-break-inside: avoid; }
-.stack > * + * { margin-top: 11mm; }
-.stack-tight > * + * { margin-top: 7.5mm; }
-
-/* ---------------------------------------------------------------- blocchi */
-.kicker {
-  font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--ink); margin-bottom: 3mm;
-}
-.page.dark .kicker { color: rgba(244,242,246,0.9); }
-.kicker .n { color: var(--orange); margin-right: 7px; }
-
-.note { font-size: 10.5px; color: var(--text-2); line-height: 1.7; }
-.page.dark .note { color: rgba(244,242,246,0.62); }
-
-.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9mm; }
-.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7mm; }
-
-/* liste senza pallini grafici: il trattino e' tipografia, non decorazione */
-ul.clean { list-style: none; margin: 0; padding: 0; }
-ul.clean li {
-  position: relative; padding-left: 6mm; margin-bottom: 4.4mm;
-  font-size: 10.5px; line-height: 1.62; color: var(--text-2); break-inside: avoid;
-}
-ul.clean li::before { content: "—"; position: absolute; left: 0; color: var(--text-3); }
-ul.clean li strong { color: var(--ink); font-weight: 600; }
-.page.dark ul.clean li { color: rgba(244,242,246,0.66); }
-.page.dark ul.clean li strong { color: #ffffff; }
-.page.dark ul.clean li::before { color: rgba(244,242,246,0.3); }
-
+# Il motore (CSS_TEMPLATE) porta gia': variabili colore, .page/.grain/.masthead/.foot,
+# .eyebrow/.title/.lead, .body/.unit/.stack, .kicker/.note, .grid2/.grid3, ul.clean,
+# e la copertina standard (.cover-mid, h1.big, .cover-lead, .cover-meta). Qui restano
+# SOLO i componenti specifici delle Brand Guidelines che il dossier 28 non usa.
+BRAND_CSS = """
 /* dato misurato: il monospaziato dice "qui si misura" senza scriverlo */
 .datum { display: flex; align-items: baseline; gap: 5mm; margin-bottom: 4.2mm; }
 .datum .k {
@@ -352,29 +217,9 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
 .check .t { font-size: 10.5px; line-height: 1.55; }
 .check .t span { color: var(--text-2); }
 
-/* ---------------------------------------------------------------- copertina */
-.page.cover { padding: 24mm 20mm 22mm 20mm; }
-.page.cover .layer { justify-content: center; }
-.page.cover .glow {
-  position: absolute; left: -15%; right: -15%; bottom: -25%; height: 65%;
-  background: radial-gradient(58% 100% at 26% 100%, rgba(251,70,4,0.42) 0%, transparent 68%),
-              radial-gradient(48% 92% at 78% 100%, rgba(217,212,225,0.20) 0%, transparent 70%);
-  z-index: 0;
-}
-.page.cover h1 {
-  font-size: 62px; line-height: 0.95;
-  letter-spacing: -0.038em;
-}
-.page.cover .sub {
-  font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
-  color: rgba(244,242,246,0.45); margin-top: 9mm;
-}
-.page.cover .meta { display: flex; gap: 16mm; margin-top: 14mm; }
-.page.cover .meta .lb {
-  font-size: 7.5px; letter-spacing: 0.2em; text-transform: uppercase;
-  color: rgba(244,242,246,0.35);
-}
-.page.cover .meta .vl { font-size: 10px; color: rgba(244,242,246,0.85); margin-top: 1.5mm; }
+/* La copertina (.cover-mid, h1.big, .cover-lead, .cover-meta) e' quella del motore
+   condiviso — niente piu' glow radiale ne' testo centrato: stessa impostazione bassa
+   e ferma del dossier 28 (direttiva Max, 2026-09-05, sulla copertina). */
 
 /* ---------------------------------------------------------------- indice */
 .toc-row { display: flex; align-items: baseline; gap: 5mm; padding: 3.5mm 0; break-inside: avoid; }
@@ -423,7 +268,7 @@ def render_html() -> str:
     import content
 
     content.build(page, title_block)
-    css = CSS.replace("__GRAIN__", GRAIN)
+    css = (CSS_TEMPLATE + BRAND_CSS).replace("__GRAIN__", GRAIN)
     return (
         "<!doctype html><html lang='it'><head><meta charset='utf-8'>"
         "<title>Claude Code Mastery — Brand Guidelines</title>"
