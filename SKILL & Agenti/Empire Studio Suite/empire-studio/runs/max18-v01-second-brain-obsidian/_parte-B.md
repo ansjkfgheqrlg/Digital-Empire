@@ -225,6 +225,8 @@ Explorer a sinistra: cartella "aurora cervello" con le 11 sottocartelle già ele
 Voce: *"leggerlo in maniera adeguata. E mi dice"* — la battuta successiva del narratore, *"ho letto tutti e noi i file in sources e verificato i numeri. Ecco il piano"*, corrisponde quasi verbatim al testo a schermo.
 🔎 La trascrizione automatica rende "tutti e 9 i file" come *"tutti e noi i file"*: il frame mostra chiaramente **"tutti e 9 i file"**.
 
+# PARTE B3 — Canon aziendale e note atomiche (70:18 → 74:24)
+
 ### Scena 169 · `frame-0704.png` · 70:18 — **slide "LA NOTA ATOMICA" nomina Niklas Luhmann per iscritto** ⭐
 Excalidraw a schermo intero. Titolo **"LA NOTA ATOMICA"**, sottotitolo **"Niklas Luhmann: una idea per scheda"**. Confronto in due colonne:
 - **"NO"**: rettangolo arancione pallido **"PDF da 40 pagine, tutto insieme"**, con una X sotto e la scritta **"nessuno lo riusa"**.

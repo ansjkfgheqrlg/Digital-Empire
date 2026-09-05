@@ -259,3 +259,64 @@ Voce: *"a ehm i vari i vari nodi. Quindi, rispondi utilizzando solo le note del"
 Nuova tab **"Query Aurora customer pr[oduct adoption]..."**. Messaggio utente: chip ".env", "Rispondi usando SOLO le note del cervello di Aurora." poi pulsante grigio **"Show more"** che nasconde il resto del prompt (si intravede appena, sotto il pulsante, l'inizio di "Cita sempre il nome del file da cui prendi ogni informazione"). Sotto, indicatore di stato con icona rossa: **"🔺 Discombobulating..."** (etichetta scherzosa usata dal tool per il proprio "sto pensando", al posto del classico "Thinking..."). In fondo, campo "Queue another message..." e un pulsante rosso quadrato (stop, generazione in corso).
 ➕ "Discombobulating..." è un dettaglio di branding/microcopy dello strumento (Antigravity/Claude Code), non spiegato a voce.
 Voce: *"segue nel Customer Success? Vedete ora e poi parleremo di architettura. Eh già"* — ha appena lanciato la domanda e anticipa che dopo la demo parlerà di architettura RAG.
+
+### Scena 286 · `frame-1144.png` · 114:18 — nota atomica reale: `prodotto-aurora-access.md` ⭐
+Vista divisa in due pannelli. Sinistra: tab "Query Aurora customer pr...", Explorer con la cartella `entities` espansa: `_index-entities.md`, `cliente-banca-a[driatica].md`, `cliente-hoteline-[hospitality].md`, `cliente-immobil[iare-lombarda].md`, `persona-chiara-f[ontana].md`, `persona-elena-f[erraro].md`, `persona-giulia-ri[naldi].md`, `persona-marco-...[bianchi].md`, tre file `prodotto-aurora...` (uno evidenziato), `strumento-crm-...md`. Nella chat: "Rispondi usando SOLO le note del cervello di Aurora." poi riferimenti file "./_showcase/showcase.md" / "./areas/_index-areas.md", "Thought for 1s", 🔧 **Bash: Search notes for Aurora Cloud and Aurora Care** con OUT "(Bash completed with no output)", "Thought for 2s", risposta: "Ho cercato in tutte le note del cervello di Aurora i prodotti citati nella domanda. I prodotti registrati nel cervello sono solo tre: **Aurora Access, Aurora Core e Aurora Energy**. Né "Aurora Cloud" né "Aurora Care" compaiono in alcuna nota. **Non presente nel cervello.**" In basso, messaggio in digitazione: "[e se io t]i facessi la domanda invece sui prodotti di cui siamo proprietari, [quindi] Access, Core ed Energy?"
+Destra: tab **`prodotto-aurora-access.md`** aperta, frontmatter e corpo per intero:
+```
+---
+title: "Prodotto — Aurora Access"
+summary: "Modulo di controllo accessi (badge, fasce orarie, videosorveglianza) per gestire la sicurezza di molte sedi da un unico punto."
+tags: [entities, prodotto, aurora-access]
+status: active
+created: 2026-06-10
+updated: 2026-06-10
+related:
+  - "[[prodotto-aurora-core]]"
+  - "[[area-prodotto-engineering]]"
+  - "[[area-customer-success]]"
+---
+
+# Prodotto — Aurora Access
+
+Modulo che si appoggia a [[prodotto-aurora-core]] per il controllo degli accessi agli edifici: badge, permessi per fasce orarie, integrazione con la videosorveglianza. Pensato per chi deve gestire la sicurezza di molte sedi da un unico punto.
+
+- **Costruito da**: [[area-prodotto-engineering]].
+- **Upsell dell'anno 2025**: estensione a tutte le filiali di Banca Adriatica, seguita da [[area-customer-success]].
+- **Usato da**: Gruppo Retail, Rete Sanità Nord, UniCampus, Banca Adriatica.
+```
+Voce: *"vedete che io riesco effettivamente a verificare che non abbiamo alcuna"* — commenta dal vivo il fatto che il cervello non trova "Aurora Cloud"/"Aurora Care" perché non esistono davvero.
+
+### Scena 287 · `frame-1145.png` · 114:24 — comando bash reale usato per la ricerca ⭐
+Stesso tab, ora a pannello singolo. Si vede il comando bash completo della ricerca appena eseguita:
+`cd "/Users/giovannibeggiato/Desktop/aurora cervello" && grep -rln -i "aurora cloud\|aurora care" --include="*.md" .`
+OUT: `(Bash completed with no output)` — poi la stessa risposta di scena 286 ("I prodotti registrati... Non presente nel cervello."), seguita dal nuovo messaggio utente già inviato: "e se io ti facessi la domanda invece sui prodotti di cui siamo proprietari, quindi Access, Core ed Energy?", "Thought for 2s", e l'inizio (tagliato in fondo al frame) di un nuovo blocco "🔧 Bash: Re[ad client, CS area, and persona notes]".
+Voce: *"gli abbiamo dato. E guardate che senza"* — introduce l'idea che senza un'architettura corretta il sistema "si sponna" (si confonde).
+
+### Scena 288 · `frame-1147.png` · 114:36 — grep sulle note clienti, tre profili a confronto ⭐
+Stesso tab, scrollato: "🔧 Bash: Read client, CS area, and persona notes":
+IN: `cd "/Users/giovannibeggiato/Desktop/aurora cervello" && for f in entities/cliente-banca-adriatica.md entities/cliente-hotelline-hosp[itality.md ...]` (comando tagliato a destra)
+OUT: `===== entities/cliente-banca-adriatica.md ===== --- title: "Cliente — Banca Adriatica"` (tagliato)
+"Thought for 16s", poi:
+"Applicando la stessa regola stretta (un cliente conta solo se ha davvero tutti i prodotti citati), ecco cosa dicono le note.
+Moduli attivi per cliente:
+- cliente-banca-adriatica.md: Core, Access, Manutenzione → ha Core + Access, manca Energy.
+- cliente-hotelline-hospitality.md: Core, Energy → ha Core + Energy, manca Access.
+- cliente-immobiliare-lombarda.md: Core, Energy, Manutenzione, Insights → ha Core + Energy, manca Access.
+Clienti con tutti e tre (Access + Core + Energy): nessuno."
+Sotto, stato di elaborazione: **"🔺 Germinating..."**
+Voce: *"Non ho idea da dove venga, non so neanche se sia offensivo."* — battuta fuori tema sul proprio accento, mentre il sistema sta ancora elaborando.
+
+### Scena 289 · `frame-1152.png` · 115:06 — Chiara Fontana emerge come referente comune ⭐
+Stesso tab, risposta precedente scrollata per intero, con una riga evidenziata/selezionata in blu: *"Se invece intendevi "almeno due dei tre", allora tutti e tre i clienti si qualificano, e nel customer success:"* — e sotto, tagliato in fondo, l'inizio dell'elenco clienti (visibile per intero nella scena successiva).
+Voce: *"conta solo se hai davvero tutti i prodotti citati. Ecco cosa dicono le"* — legge a voce la regola appena applicata dal sistema.
+
+### Scena 290 · `frame-1155.png` · 115:24 — risposta completa + nuova domanda su ARR per impiegato ⭐
+Stesso tab, ora con l'elenco leggibile per intero:
+"Se invece intendevi "almeno due dei tre", allora tutti e tre i clienti si qualificano, e nel customer success:
+- **Banca Adriatica** (Core + Access) → seguita da **Chiara Fontana** (persona-chiara-fontana.md, area-customer-success.md).
+- **Immobiliare Lombarda SGR** (Core + Energy) → seguita da **Chiara Fontana** (stesse fonti).
+- **HotelLine Hospitality** (Core + Energy) → nessun referente di customer success indicato nelle note (acquisita da Vendite, onboarding chiuso a ottobre). Chi la segua nel CS: **Non presente nel cervello.**"
+Nuovo messaggio utente (con chip file "prodotto-aurora-access.md"): **"Hey, c'è un modo di identificare quale degli impiegati porta il maggior ARR?"** Sotto: "Thinking... · 20 tokens", poi stato **"🔺 Ruminating..."**.
+➕ Tre diciture di "sto pensando" diverse osservate finora in questo blocco (scene 285, 288, 290): **"Discombobulating..."**, **"Germinating..."**, **"Ruminating..."** — sembra che il tool ruoti etichette scherzose casuali invece di un semplice "Thinking...".
+Voce: *"sostanzialmente chiamiamo e c'è un modo di identificare eh quale degli impiegati porta il maggior ARR."* — corrisponde esattamente alla domanda appena digitata a schermo.

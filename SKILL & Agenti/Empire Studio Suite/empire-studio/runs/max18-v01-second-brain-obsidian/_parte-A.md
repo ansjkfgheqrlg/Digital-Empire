@@ -332,3 +332,58 @@ Voce: *"as vault e andremo in Aurora cervello. Quindi, semplicemente ora abbiamo
 Finestra Obsidian aperta sul vault "aurora cervello" (nome visibile in basso a sinistra nella status bar). Tab in alto: **"Graph view"**, completamente vuota (nessun nodo, perché il vault non contiene ancora file). Sidebar sinistra con soli i pulsanti icona (explorer file, ricerca, segnalibri, tag/calendario, canvas, altro) senza contenuto.
 Voce: *"nostra rappresentazione di assolutamente niente perché la cartella è vuota e"*
 
+### Scena 83 · `frame-0323.png` · 32:12
+Graph view ancora vuota; tooltip **"Open quick switcher"** visibile su un'icona della barra laterale sinistra (passaggio del mouse).
+Voce: *"come è giusto che sia non ci sono file. Allora, cominciamo subito con il vedere che cos'è Obsidian. E allora per farlo"*
+
+### Scena 84 · `frame-0324.png` · 32:18
+Torna il Desktop (uscita temporanea dal fullscreen), stessa disposizione di icone e dock della scena 80.
+Voce: *"metterò anche questa a tutto schermo di modo tale che lo vediamo e cominciamo a"*
+
+### Scena 85 · `frame-0325.png` · 32:24
+Graph view vuota, stessa inquadratura della scena 83 con un'icona della sidebar evidenziata al passaggio del mouse.
+Voce: *"creare la nostra prima nota e la chiamiamo una nota ciao e ci scrivo qualcosa. Ah, come vedete qui ora è comparso questo ciao, però se vado nel mio Aurora cervello vedo che ho che ciao è in un"*
+
+### Scena 86 · `frame-0327.png` · 32:36 — **verifica: `ciao.md` è un file markdown reale sul disco**
+Finder macOS, sidebar (Recents, Shared, Favorites: Applications/Desktop/Documents/Downloads, Locations: iCloud Drive/giovannibeggiato/Macintosh HD/AirDrop/Trash, Tags: Red/1/Final_Projects/prova 1/Grigio/Lavoro). Colonna file: **`ciao.md`** · Date Modified **"Today at 10:48"** · Size **"9 bytes"** · Kind **"Markdo…ument"** (Markdown Document, troncato).
+Voce: *"formato markdown e se poi lo vado ad aprire dentro ad una IDE vedo letteralmente che c'è scritto qualcosa che è quello che ho scritto dentro."*
+
+### Scena 87 · `frame-0329.png` · 32:48
+Desktop, la cartella **"aurora cervello"** appare con la casella del nome in modalità selezione/rinomina (bordo attorno all'etichetta). Barra verticale di icone sul bordo destro dello schermo (stessa app non identificata delle scene precedenti).
+Voce: *"Quindi da qui capiamo che cos'è Obsidian. Obsidian"*
+
+### Scena 88 · `frame-0330.png` · 32:54
+Stesso Finder della scena 86, ora con la riga **`ciao.md`** evidenziata/selezionata in blu; stessi metadati (10:48, 9 bytes, Markdown Document).
+Voce: *"database e molte persone confondono queste due cose. Motivo per cui quando andate su 1000, 2000, 3000 note comincerà a fare fatica […] Obsidian è un layer che permette di collegare varie note markdown. Vedremo dopo perché l'AI preferisce questo layer e come fare questi formati markdown leggibili dall'AI"*
+
+### Scena 89 · `frame-0335.png` · 33:24 — **il contenuto reale della nota "ciao"**
+Obsidian, nota **"ciao"** aperta: titolo in grassetto "ciao", corpo: **"qualcosa"**. Barra di stato in basso: **"0 backlinks · 1 word · 9 characters"**. Tooltip **"Open graph view"** visibile sulla sidebar sinistra.
+Voce (frase lunga, sintesi): *"[…] possiamo anche vedere che se noi le cancelliamo, ovviamente verranno cancellate in maniera totale sia dal grafico che dalla nostra cartella […] ora è il momento di cominciare a costruire la nostra company Brain. Quindi, per farlo faremo la nostra prima nota quasi completa […] andiamo quindi alla prima"*
+
+### Scena 90 · `frame-0347.png` · 34:36 — **il testo esatto delle prime due note + wikilink, dal doc dei prompt** ⭐
+Notion, stessa pagina "Company Brain — Tutti i prompt del tutorial", scrollata sul resto del **Passo 1** (contenuto integrale, riprende da dove si era interrotta la scena 76):
+> **1. Installa Obsidian e crea il contenitore vuoto**
+> - Vai su `obsidian.md`, scarica la versione per il tuo sistema (Mac o Windows) e installala.
+> - Crea sul computer una cartella nuova e vuota: `aurora-cervello`.
+> - Apri Obsidian → "Apri cartella come vault" ("Open folder as vault") → seleziona `aurora-cervello`.
+>
+> **2. Prima nota** — crea (Cmd+N / Ctrl+N), chiamala `self-identita-aurora`, e scrivi nel corpo:
+> ```
+> Aurora Sistemi S.p.A. e' un'azienda da 340 persone che vende sistemi per rendere efficienti gli edifici. Tre linee di prodotto: Aurora Edge, Aurora Cloud, Aurora Care.
+> ```
+>
+> **3. Seconda nota + wikilink** — crea `persona-elena-ferraro` e scrivi:
+> ```
+> Elena Ferraro guida la divisione commerciale di [[self-identita-aurora]]. E' la persona che conosce il perche' dietro ogni cliente acquisito.
+> ```
+> Poi torna su `self-identita-aurora` e aggiungi in fondo:
+> ```
+> Il commerciale di riferimento e' [[persona-elena-ferraro]].
+> ```
+>
+> **4. Backlink** — su `self-identita-aurora`, attiva il pannello "Backlinks" (tre puntini in alto a destra → "Mostra backlink"). Vedrai comparire da solo `persona-elena-ferraro`.
+>
+> **5. Grafo** — apri la vista grafo dall'icona nella barra laterale (o Cmd+P / Ctrl+P → "Apri vista grafo"). Due pallini, una linea […] *(prosegue oltre il bordo del frame)*
+🔎 Questo blocco spiega e corregge la scena 92 di questo stesso file: il transcript automatico lì rende *"un'azienda di 340 persone che vada a vedere i sistemi"*, ma il testo sorgente esatto — letto qui — è *"un'azienda da 340 persone che vende sistemi per rendere efficienti gli edifici"*.
+Voce: *"nota. Allora, la prima nota la chiameremo Selfdity di Aurora e vedrete poi perché ci tengo a chiamarla selfa,"*
+
