@@ -155,7 +155,9 @@
     non di un motore di lancio invocabile.
   - `Workflow-libri/` alla radice = **78 file**, di cui 50 `.png`, 8 `.md`, **7 `.py`**, 5 `.txt` —
     e' il **predecessore** del workflow libri, molto piu' piccolo di quello che ora vive dentro il nodo.
-  - `KDP - prodottti digitali/` alla radice **contiene 0 file** (`Glob "KDP - prodottti digitali/*"` → nessun risultato).
+  - `KDP - prodottti digitali/` alla radice = **803 file**, due sole sottocartelle: `CAROSELLI/`
+    (immagini `ChatGPT Image *.png` divise per titolo di libro) e `GPT - KDP Carousel Factory/` —
+    e' un **archivio di immagini**, non un motore.
   **Il motore vero di questo ecosistema e' gia' dentro `company/`**, non fuori: e' `engine/`.
 
 - **COSA MANCA PERCHE' SIA VIVO**:
@@ -255,5 +257,629 @@
 - **Difficolta'**: **BASSA** — e' l'ecosistema piu' vicino al vivo: un ordine reale ha gia' percorso
   brief → copy → render → gate automatico → consegna, e il comando che lo fa esiste e funziona;
   serve dargli una porta d'ingresso dentro il nodo e agganciare CF-R6/CF-R7.
+
+---
+
+## 04 — MARKETING
+
+- **Percorso**: `company/Ecosistemi/04-MARKETING/`
+
+- **Cosa contiene davvero**: **159 file totali**, **tutti `.md`** (159/159). Zero `.py`, `.json`,
+  `.yaml`, `.zip`, zero binari. Struttura: 2 file di radice (`ECOSISTEMA.md`, `BACKBONE.md`) +
+  `Agenti/` (24) + `Funzioni/` (3) + `Workflow/` (8) + `Reparti/` (6 sottocartelle).
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE (missione, 4 gate di qualita' con soglie
+  numeriche: APSOC ≥80, sales page ≥85, brand gate binario, "−15 automatico se P prima di S violata"),
+  `BACKBONE.md` PRESENTE. README di radice ASSENTE.
+
+- **Reparti (6)**: `L2-1-Copywriting` · `L2-2-Advertising` · `L2-3-Email-Lifecycle` ·
+  `L2-4-Analytics` · `L2-5-Brand-Creative-Strategy` · `L2-6-Conversion-Architecture`.
+  Ogni reparto ha gli 8 comparti (`agenti/`, `workflow/`, `kpi/`, `principi/`, `regole/`, `scripts/`,
+  `skills/`, `state/`).
+
+- **Workflow definiti**: 8 in `Workflow/` (`WF-ADS-CAMPAIGN.md`, `WF-COPY-AD.md`, `WF-COPY-EMAIL.md`,
+  `WF-COPY-FULL.md`, `WF-COPY-SALES-PAGE.md`, `WF-EMAIL-LAUNCH.md`, `WF-OPTIMIZATION-LOOP.md`,
+  `copy-workflow-wrapper.md`) + **22** dentro i reparti.
+
+- **Agenti definiti dentro il nodo**: **68 schede** — **24 in `Agenti/`** di radice, nominate per ruolo
+  APSOC (`A1-briefing-analyst.md` … `A8-copy-reviewer.md`, `S1-funnel-strategist.md`,
+  `S2-positioning-strategist.md`, `S3-campaign-strategist.md`, `AD1-audience-analyst.md` …
+  `AD4-compliance-checker.md`, `AN1-tracking-engineer.md` … `AN4-insight-distiller.md`,
+  `E1-lifecycle-architect.md`, `E2-deliverability-guard.md`, `E3-segmentation-analyst.md`,
+  `MKT-0-conductor.md`, `SEN-BV-brand-voice-sentinel.md`) + **44 in `Reparti/*/agenti/`**.
+  In `Funzioni/`: 3 file (`T-AVATAR.md`, `T-HEADLINE.md`, `T-OBJECTIONS.md`).
+
+- **Ha codice eseguibile?** **NO.** Zero file eseguibili. `Reparti/L2-1-Copywriting/scripts/README.md`
+  lo dichiara: "gli script REALI che eseguono il copy vivono nel motore esistente ... e NON si
+  riscrivono. Questa cartella contiene solo il layer di invocazione (wrapper)" — wrapper che pero'
+  **non esiste come file**: `scripts/` contiene solo quel `README.md`.
+
+- **Punto d'ingresso gia' esistente?** **SI, ma e' una skill Claude Code, non uno script**:
+  `.claude/skills/copy-workflow/` esiste ed e' registrata, quindi il motore si invoca
+  conversazionalmente. Nessun `main`, nessun `.bat`, nessuna CLI.
+
+- **Motore reale corrispondente FUORI da `company/`**: **SI, ma e' un motore di prosa, non di codice.**
+  - `SKILL & Agenti/Copy-Workflow-manuale/copy-workflow/` — **189 file**, di cui **56 `.md`**,
+    14 `.sample`, 2 `.json`, 1 `.txt`, 1 `.pdf` e un repo git di backup (`bak/`).
+    **Zero `.py`**: `find "SKILL & Agenti/Copy-Workflow-manuale" -name "*.py" | wc -l` → **0**.
+    Contiene `SKILL.md`, `agents/`, `orchestrators/`, `workflows/`, `skills/`, `evals/`, `templates/`,
+    `references/`.
+  - Skill correlate registrate: `.claude/skills/copy-workflow/`, piu' `cro-copy-architect`,
+    `market-copy`, `copywriting`, `ad-creative`, `emails`, `cold-email` nel catalogo skill.
+  - `Marketing & Ai/` alla radice contiene una sola sottocartella omonima.
+  - **Puntatore sbagliato**: `Workflow/copy-workflow-wrapper.md` cita il manuale come
+    `SKILL & Agenti/Copy-Workflow-manuale/Il+manuale+del+copywriting+V1.1.pdf`; il file su disco si
+    chiama `Il+manuale+del+copywriting+V1.1+Defo (1).pdf` — il path citato non esiste.
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) **Invocabile solo da un umano in chat.** La skill `copy-workflow` parte se qualcuno la
+    nomina; nessun altro ecosistema puo' chiamare MARKETING via comando: i contract `HC-*` in
+    `BACKBONE.md` non hanno un ricevitore eseguibile.
+  - (b) **I gate numerici non sono calcolati da niente.** `ECOSISTEMA.md` fissa APSOC ≥80 / ≥85 e
+    "−15 se P prima di S": nel nodo e nei 189 file del motore non esiste una funzione che assegni
+    quel punteggio — e' un giudizio che l'agente A8 esprime a mano, senza registro.
+  - (c) **Nessun posto stabilito dove finisce il copy.** Nessuna cartella `orders/`, `output/` o
+    `state/` popolata: `Reparti/*/state/` contiene solo prosa. A differenza di 03-CONTENT-FACTORY,
+    qui non esiste **nemmeno un** ordine tracciato.
+  - (d) **Nessun test.** `evals/` esiste nel motore esterno ma non e' agganciata a niente nel nodo;
+    zero file di test dentro `04-MARKETING`.
+
+- **Difficolta'**: **MEDIA** — la conoscenza e la struttura sono complete e la skill si invoca gia',
+  ma tutto cio' che rende il lavoro verificabile (punteggio APSOC calcolato, ordine tracciato, output
+  in un posto fisso) va costruito da zero: non c'e' una riga di codice da riusare.
+
+---
+
+## 05 — MULTI-BUSINESS
+
+- **Percorso**: `company/Ecosistemi/05-MULTI-BUSINESS/`
+
+- **Cosa contiene davvero**: **40 file totali**, **tutti `.md`** (40/40). Zero `.py`, `.json`, `.yaml`,
+  `.zip`. Alberatura piatta: `Agenti/` (10), `Funzioni/` (2), `Reparti/` (11 **file**, non cartelle),
+  `Workflow/` (15), + `ECOSISTEMA.md` e `BACKBONE.md`.
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE (7 DONE WHEN, e un "vincolo di onesta'"
+  esplicito: i canali `@Legamidiamore` e `@dosementale` "NON sono ancora stati analizzati... Nessun
+  dato su quei canali in questa documentazione e' inventato"), `BACKBONE.md` PRESENTE. README ASSENTE.
+
+- **Reparti (11, ognuno un singolo file `.md`, non una cartella)**: `YT-Strategia.md`,
+  `YT-Produzione.md`, `YT-Pubblicazione.md`, `YT-Ottimizzazione.md`, `PUB-Ricerca.md`,
+  `PUB-Produzione.md`, `PUB-Packaging.md`, `PUB-Pubblicazione.md`, `ECOM-Ricerca.md`,
+  `ECOM-Store.md`, `ECOM-Crescita.md`. **Differenza strutturale rispetto a 01/02/03/04**: qui non
+  c'e' nessuno degli 8 comparti (`agenti/`, `kpi/`, `regole/`, `scripts/`, `state/`...): il reparto
+  e' una pagina.
+
+- **Workflow definiti (15)**: YouTube — `WF-YT-NICHE`, `WF-YT-CALENDAR`, `WF-YT-VIDEO-ORDER`,
+  `WF-YT-PUBLISH`, `WF-YT-OPT`, `WF-YT-ANALYTICS`, `WF-YT-CHANNEL-LAUNCH`;
+  Publishing — `WF-PUB-NICHE`, `WF-PUB-BOOK-ORDER`, `WF-PUB-COVER`, `WF-PUB-LISTING`,
+  `WF-PUB-PUBLISH`, `WF-PUB-MONITOR`; E-commerce — `WF-ECOM-PRODUCT`; piu' `libri-wrapper.md`.
+
+- **Agenti definiti dentro il nodo**: **10 schede** in `Agenti/` — `MB-A00-conductor.md` e
+  `MB-YT-A01-strategy-coord.md` … `MB-YT-A09-opt-coord.md`. **Tutte e 9 le schede di reparto sono
+  YouTube**: zero agenti per Publishing, zero per E-commerce, benche' entrambi abbiano reparti e
+  workflow. In `Funzioni/`: `T-niche-scout.md`, `T-competitor-map.md`.
+
+- **Ha codice eseguibile?** **NO.** Zero file eseguibili di qualunque tipo.
+
+- **Punto d'ingresso gia' esistente?** **NO.** Nessun `main`, nessuno script, nessuna skill dedicata
+  registrata col nome dell'ecosistema.
+
+- **Motore reale corrispondente FUORI da `company/`**: **SI per due rami su tre, e non e' quello che il nodo dichiara.**
+  - **Publishing** — `Workflow-libri/` alla radice: **78 file**, **7 `.py`** in `scripts/`
+    (`orchestrator.py`, `build_book.py`, `build_book_reportlab.py`, `parse_manuscript.py`,
+    `prepare_manuscript.py`, `generate_images.py`, `qa_checker.py`), piu' `agents/` (3),
+    `templates/` (2), `input/` (2), `output/` (8), `config/`, `assets/images/`, `.claude/`.
+    La struttura descritta in `Workflow/libri-wrapper.md` (`agents/`, `scripts/`, `templates/`,
+    `input/`, `output/`) **corrisponde esattamente** al disco: e' l'unico wrapper del censimento il
+    cui path dichiarato regge la verifica in ogni voce.
+    **Ma**: il motore libri piu' avanzato dell'Impero non e' questo — e' `engine/` (28 moduli + 4 test)
+    dentro `company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/`.
+    Due ecosistemi rivendicano i libri KDP con due motori diversi e nessuno dei due lo dice.
+  - **YouTube** — `YOUTUBE-AUTOMATION-FACTORY/` alla radice: **136 `.py`**, con `01-FLUSSI-E-PIANI/`,
+    `02-AUTOMAZIONI-E-SCRIPTS/`, `03-AGENTI-E-RUOLI/`, `VIDEO-PRONTI/`, `memory/`, `transcripts/`,
+    4 profili Chrome dedicati. **Il nodo `05-MULTI-BUSINESS` non lo nomina mai**: `grep -r
+    "YOUTUBE-AUTOMATION-FACTORY" company/Ecosistemi/05-MULTI-BUSINESS/` → **0 occorrenze**.
+    Gli unici path esterni citati dai 40 file sono `Workflow-libri/` (8 volte) e
+    `KDP - prodottti digitali/` (15 volte, di cui 12 verso `.../LIBRO`).
+  - **E-commerce** — **nessun motore, da nessuna parte.** Non esiste una cartella e-commerce
+    alla radice; lo stesso `ECOSISTEMA.md` lo mette OUT OF SCOPE ("e-commerce operativo — solo scheletro").
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) **Nessun comando, per nessuno dei 15 workflow.** Il nodo e' 40 pagine di prosa: nessun
+    eseguibile, nessuna skill che si chiami come l'ecosistema.
+  - (a) **Il motore YouTube esiste (136 `.py`) ma il nodo non sa che esiste**: i 9 agenti `MB-YT-*`
+    descrivono a parole cio' che `YOUTUBE-AUTOMATION-FACTORY/` gia' fa in codice, senza citarlo.
+  - (b) **I 4 QA gate bloccanti (script, audio, visual, SEO) di `ECOSISTEMA.md` §3.1 non esistono
+    come controllo**: nessun file del nodo li implementa ne' li registra.
+  - (c) **Nessuna destinazione d'uscita nel nodo**: zero `orders/`, zero `state/`, zero `output/`.
+    Le uscite reali (video pronti, libri) finiscono in cartelle esterne che il nodo non nomina.
+  - (d) **Nessun test**, e i DONE WHEN #3 e #4 ("≥1 video che ha superato tutti e 4 i gate",
+    "pipeline libro eseguita una volta end-to-end") non hanno alcun registro che li possa provare.
+  - **Conflitto di competenza da sciogliere prima di costruire**: i libri KDP sono rivendicati sia
+    qui (`Reparti/PUB-*`, `WF-PUB-*`, `libri-wrapper.md`) sia da 02-INFO-BUSINESS
+    (`libri-performanti-multiagente/`, che e' quello con codice e test).
+
+- **Difficolta'**: **MEDIA** — per YouTube e libri il codice esiste gia' altrove e va solo dichiarato
+  e agganciato; per l'e-commerce non esiste niente e non e' nemmeno in scope, quindi l'ecosistema non
+  potra' mai essere "vivo" al 100% finche' quel terzo ramo resta sulla carta.
+
+---
+
+## 06 — PLATFORM
+
+- **Percorso**: `company/Ecosistemi/06-PLATFORM/`
+
+- **Cosa contiene davvero**: **27 file totali**, **tutti `.md`** (27/27). Zero `.py`, `.json`, `.yaml`,
+  `.zip`, zero binari. Alberatura piatta: `Agenti/` (11), `Funzioni/` (3), `Reparti/` (5 **file**),
+  `Workflow/` (6), + `ECOSISTEMA.md` e `BACKBONE.md`.
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE (missione, tabella "Siti attivi" con 4 URL,
+  elenco "Asset esistenti da migrare in F3"), `BACKBONE.md` PRESENTE. README di radice ASSENTE.
+  **Nessun DONE WHEN misurabile**, a differenza di 01/02/03/05.
+
+- **Reparti (5, ognuno un singolo file `.md`)**: `Web-Engineering.md`, `Tooling-Automation.md`,
+  `Security-Quality.md`, `Deploy-CICD.md`, `Product-Engineering.md`.
+
+- **Workflow definiti (6)**: `WF-SITE-FULL.md`, `WF-LANDING-RAPIDA.md`, `WF-EMPIRE-RESTYLE.md`,
+  `WF-DEPLOY.md`, `WF-SEC-SCAN.md`, `crea-siti-wrapper.md`.
+
+- **Agenti definiti dentro il nodo**: **11 schede** in `Agenti/` — `plt-director.md`,
+  `plt-site-architect.md`, `plt-site-builder.md`, `plt-site-copy-merger.md`, `plt-motion-eng.md`,
+  `plt-seo-tech.md`, `plt-qa-runner.md`, `plt-deploy-op.md`, `plt-sec-sentinel.md`,
+  `plt-custodian.md`, `plt-cc-master.md`. In `Funzioni/`: `T-site-brief.md`,
+  `T-site-architecture.md`, `T-site-design.md`.
+
+- **Ha codice eseguibile?** **NO.** Zero file eseguibili nel nodo.
+
+- **Punto d'ingresso gia' esistente?** **NO nel nodo.** Ma l'Impero ha gia' gli eseguibili che questo
+  ecosistema dovrebbe governare: `scripts/verify-empire.ps1`, `scripts/verify-agents.py`,
+  `scripts/verify-skills.py`, `scripts/empire-sync.ps1`, `scripts/gen-empire.py` — **tutti alla radice
+  del repo, nessuno citato dal nodo**. In piu' esistono le skill registrate `site-build`, `site-deploy`,
+  `site-qa`, `web-builder`, `website-creator`, `empire-premium-style`, `vercel:deploy`.
+
+- **Motore reale corrispondente FUORI da `company/`**: **SI, molto frammentato.**
+  - `Crea siti/` — **399 file** (esclusi `node_modules/` e `.git/`), con `agents/`, `skills/`,
+    `system/`, `Siti CCM/`, `Preventa/`, `Skill-qui/`, `OPUS-CONTEXT.md`, `README.md`.
+    E' il sorgente dichiarato da `Workflow/crea-siti-wrapper.md`.
+  - `agency-empire/`, `agency-empire-landing/`, `Landing Page/`, `Agency page/`,
+    `Skill empire-premium-style/`, `App/`, `EmpireDesk/` alla radice.
+  - `scripts/` alla radice: **19 voci** fra `.py` e `.ps1`, incluso il `verify-empire.ps1` che
+    `ECOSISTEMA.md` nomina nella missione del reparto CI/CD ma non collega mai a un path.
+  - **Puntatore incompleto**: `ECOSISTEMA.md` elenca fra gli asset `empire-style/` e
+    `presentazione-empire/` come cartelle di radice; sul disco esistono invece
+    `Skill empire-premium-style/` e la presentazione solo come URL Vercel.
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) **Nessun comando nel nodo**, e i comandi che esistono (i 19 script di `scripts/`) non sono
+    dichiarati da nessuna delle 27 pagine: la parola "verify-empire" compare nella prosa del reparto
+    CI/CD, mai come path eseguibile.
+  - (b) **Nessun contratto d'uscita.** I 4 "siti attivi" sono elencati per URL: non c'e' un formato
+    di consegna, un manifest di build, ne' una regola su cosa debba contenere un sito finito.
+  - (c) **Nessun posto stabilito**: zero `state/`, zero `orders/`, zero log di deploy dentro il nodo.
+    Il namespace `platform/*` e' dichiarato in `BACKBONE.md` e non scritto da niente.
+  - (d) **Nessun test**, benche' esistano gia' `scripts/verify-*.py|ps1` che potrebbero diventarne
+    la base immediata.
+  - **Reparti fantasma nei path**: `ECOSISTEMA.md` indica `Reparti/Web-Engineering/`, `Reparti/Tooling/`,
+    `Reparti/Security/`, `Reparti/CI-CD/` — **nessuna di queste cartelle esiste**; sul disco ci sono
+    5 file `.md` con nomi in parte diversi (`Tooling-Automation.md`, `Security-Quality.md`, `Deploy-CICD.md`).
+
+- **Difficolta'**: **BASSA** — l'ecosistema piu' facile da rendere vivo: 19 script eseguibili
+  esistono gia' alla radice e fanno esattamente il suo mestiere (verify, sync, gen, deploy);
+  basta dichiararli qui e dargli un posto dove scrivere l'esito.
+
+---
+
+## 07 — FORGE
+
+- **Percorso**: `company/Ecosistemi/07-FORGE/`
+
+- **Cosa contiene davvero**: **34 file totali**, **tutti `.md`** (34/34). Zero `.py`, `.json`, `.yaml`,
+  `.zip`. Struttura: `Agenti/` (10), `Funzioni/` (7), `Reparti/` (5 cartelle con **un solo
+  `README.md` dentro ciascuna**), `Workflow/` (10), + `ECOSISTEMA.md` e `BACKBONE.md`.
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE, `BACKBONE.md` PRESENTE. README di radice ASSENTE.
+  Ogni reparto ha solo `README.md` (nessun `ARCHITETTURA.md`, nessun `agenti/`, nessun `kpi/`).
+
+- **Reparti (5, cartelle con 1 file ciascuna)**: `AGENT-WORKS/`, `SKILL-WORKS/`, `WORKFLOW-WORKS/`,
+  `ECOSYSTEM-WORKS/`, `METHOD-GUARD/`.
+
+- **Workflow definiti (10)**: `WF-AGENT-NEW.md`, `WF-SKILL-NEW.md`, `WF-SKILL-AUDIT.md`,
+  `WF-SKILL-IMPROVE.md`, `WF-TEAM-NEW.md`, `WF-ECOSYSTEM-NEW.md`, `WF-PRD.md`,
+  `WF-FORGE-PIPELINE.md`, `WF-SPARC-ENFORCE.md`, `skill-creator-wrapper.md`.
+
+- **Agenti definiti dentro il nodo**: **10 schede** in `Agenti/` — `frg-chief.md`, `frg-skill-smith.md`,
+  `frg-org-designer.md`, `frg-spec-writer.md`, `frg-prd-architect.md`, `frg-mkd-forger.md`,
+  `frg-eval-runner.md`, `frg-contradiction-gate.md`, `frg-sparc-warden.md`, `frg-hr-registrar.md`.
+  In `Funzioni/` 7 file: `T-spec.md`, `T-draft.md`, `T-eval-runner.md`, `T-org-design.md`,
+  `T-handoff-contracts.md`, `T-shared-state-schema.md`, `T-description-optimizer.md`.
+
+- **Ha codice eseguibile?** **NO.** Zero file eseguibili nel nodo.
+
+- **Punto d'ingresso gia' esistente?** **NO nel nodo**, ma il mestiere della FORGE e' gia' svolto da
+  skill registrate e funzionanti: `.claude/skills/skill-creator/`, `agent-factory`, `skill-builder`,
+  `agent-architecture`, `agent-specification`, `prd-architect-os`, `sparc-methodology`,
+  `skill-contradiction-analyzer`. `Workflow/skill-creator-wrapper.md` e' il wrapper di una di queste.
+
+- **Motore reale corrispondente FUORI da `company/`**: **SI, ed e' il piu' usato di tutti — ma non e'
+  codice: sono le skill stesse.** Il catalogo skill del repo (`.claude/skills/`) contiene i motori
+  che FORGE descrive: `skill-creator`, `agent-factory`, `skill-builder`, `master-build-architecture`,
+  `content-forge` / `content-forge2.0`, `book-to-skill`, `prompt-engegniring-skill`,
+  `system-promot-creator-project`, `swarm-advanced`, `sparc-methodology`. Piu' le cartelle di radice
+  `master-build-architecture/`, `content-forge2.0/`, `master-app-builder-skill/`,
+  `System OMEGA - Creazione proggetti e skill per Claude/`, `SKILL & Agenti/`.
+  Fuori dal nodo esistono anche i verificatori: `scripts/verify-skills.py`, `scripts/verify-agents.py`,
+  `scripts/peso_skill.py` — **nessuno dei tre e' citato dai 34 file di 07-FORGE**.
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) **Il comando esiste (le skill) ma non passa da qui.** Quando si forgia una skill si invoca
+    `skill-creator` direttamente: nessun passaggio tocca `07-FORGE`, che quindi non registra nulla.
+  - (b) **`frg-contradiction-gate` e `frg-eval-runner` sono gate senza esecutore.** Esistono come
+    schede; il controllo reale (`scripts/verify-skills.py`, `scripts/peso_skill.py`) vive altrove e
+    non e' agganciato al gate.
+  - (c) **Nessun registro delle forgiature.** `frg-hr-registrar.md` descrive un registro anagrafico
+    degli agenti creati: quel registro **non esiste come file** nel nodo. Zero `state/`, zero `orders/`.
+  - (d) **Nessun test** e nessuna eval agganciata, benche' `T-eval-runner.md` e `WF-SKILL-AUDIT.md`
+    la presuppongano.
+  - **Reparti vuoti**: 5 cartelle con un solo `README.md`, nessun agente e nessun workflow dentro —
+    i 10 agenti e i 10 workflow stanno tutti nella radice del nodo, quindi i reparti non contengono
+    il lavoro che dovrebbero organizzare.
+
+- **Difficolta'**: **BASSA** — non serve costruire un motore: i motori (le skill) girano gia' ogni
+  giorno; serve far passare la forgiatura da un registro e agganciare i tre verificatori esistenti.
+
+---
+
+## 08 — INTELLIGENCE
+
+- **Percorso**: `company/Ecosistemi/08-INTELLIGENCE/`
+  (⚠️ numero 08 **collide** con `08-STREAM-S7-BOT`: la collisione e' registrata e non risolta in
+  `company/Ecosistemi/REGISTRO-NUMERI.md`, "duplicato vecchio, mai corretto")
+
+- **Cosa contiene davvero**: **16 file totali**, **tutti `.md`** (16/16) — il secondo nodo piu' piccolo
+  del perimetro dopo `14-TESORERIA` e `08-STREAM-S7-BOT`. Zero `.py`, `.json`, `.yaml`, `.zip`.
+  Struttura: `Agenti/` (4), `Funzioni/` (5), `Reparti/` (4 **file**), `Workflow/` (1),
+  + `ECOSISTEMA.md` e `BACKBONE.md`.
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE (missione, tabella "Asset attivi" con 6 voci e
+  relativi path, avviso in grassetto sulle ingestioni YouTube pendenti), `BACKBONE.md` PRESENTE.
+  README di radice ASSENTE.
+
+- **Reparti (4, ognuno un singolo file `.md`)**: `INGESTION.md`, `MEMORY.md`, `RESEARCH.md`,
+  `SECOND-BRAIN.md`. **`ECOSISTEMA.md` ne dichiara 5** (L2.1 Ingestione, L2.2 Wiki & Knowledge,
+  L2.3 Memory Empire, L2.4 Research & Trend, L2.5 Cognitive Control/NERVE-SOLVE) **con path diversi
+  da quelli reali** (`Reparti/Ingestione/`, `Reparti/Wiki/`, `Reparti/Memory-Empire/`,
+  `Reparti/Research/`): nessuno di quei quattro path esiste.
+
+- **Workflow definiti**: **uno solo** — `Workflow/wiki-wrapper.md`.
+
+- **Agenti definiti dentro il nodo**: **4 schede** — `INT-A00-int-director.md`,
+  `INT-A01-int-studio-conductor.md`, `INT-A02-int-memory-router.md`, `INT-A03-int-librarian.md`.
+  In `Funzioni/` 5 file: `T-INGEST-VIDEO.md`, `T-INGEST-WEB.md`, `T-RESEARCH.md`,
+  `T-WIKI-CONTEXT.md`, `T-REASONINGBANK.md`.
+
+- **Ha codice eseguibile?** **NO.** Zero file eseguibili nel nodo.
+
+- **Punto d'ingresso gia' esistente?** **SI, fuori dal nodo e realmente in uso**: le skill registrate
+  `memory-empire` (presente sia in `.claude/skills/memory-empire/` sia in
+  `~/.claude/skills/memory-empire/`), `wiki-context`, `sync-wiki-totale`, `empire-studio`,
+  `nerve-solve` (`.claude/skills/nerve-solve/` — verificata presente, come dichiara `ECOSISTEMA.md`).
+
+- **Motore reale corrispondente FUORI da `company/`**: **SI, ed e' vivo e pieno di dati.**
+  - `second-brain-vault/wiki/` — **1.872 file**, organizzata in `00 - Inbox`, `01 - Projects`,
+    `02 - Areas`, `03 - Frameworks`, `03 - Resources`, `04 - Notes`, `05 - Daily Notes`,
+    `06 - People`, `07 - Meetings`, `08 - Templates`. E' la fonte di verita' dichiarata dal
+    `CLAUDE.md` di progetto.
+  - `SKILL & Agenti/Empire Studio Suite/` — pipeline di ingestione video (`empire-studio/runs/…`,
+    con run reali `max18-v01…v09` visibili anche nello stato git).
+  - Skill: `memory-empire`, `wiki-context`, `sync-wiki-totale`, `empire-studio`, `nerve-solve`,
+    `conoscenza-empire` (agente), `graphify` + `graphify-out/`.
+  - `company/Memory/` (ecosistema 10) e' il partner interno: vedi scheda 10.
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) **Il nodo non e' mai il punto d'ingresso**: si invocano direttamente `memory-empire` o
+    `wiki-context`; le 4 schede agente non sono registrate da nessuna parte come invocabili.
+  - (b) **Il contratto d'uscita esiste ma e' altrove**: lo standard "ogni operazione logga in
+    `second-brain-vault/wiki/log.md`" e' un obbligo scritto nel `CLAUDE.md` di progetto, non un
+    controllo del nodo; nessun file di `08-INTELLIGENCE` verifica che sia stato rispettato.
+  - (c) **La destinazione e' fuori** (`second-brain-vault/wiki/`), e il nodo non ha alcun `state/`.
+  - (d) **Nessun test.** Nessun controllo automatico di integrita' della wiki (link morti, pagine
+    orfane) esiste nel nodo, benche' `wiki-wrapper.md` dichiari l'operazione "LINT".
+  - **Debito dichiarato nel documento stesso**: `ECOSISTEMA.md` marca `@Legamidiamore` e
+    `@dosementale` come "NON ancora ingeriti — Task 7.0/F-MB1", e lo stesso vincolo blocca i
+    parametri di 05-MULTI-BUSINESS.
+  - **Il numero 08 va sanato** prima di qualunque automazione che indirizzi gli ecosistemi per numero.
+
+- **Difficolta'**: **BASSA** — motore vivo (1.872 file di wiki), skill gia' invocabili, ingestioni che
+  girano davvero: manca solo far passare le operazioni da un registro e mettere un lint automatico.
+
+---
+
+## 08 — STREAM-S7-BOT (secondo occupante del numero 08)
+
+- **Percorso**: `company/Ecosistemi/08-STREAM-S7-BOT/`
+
+- **Cosa contiene davvero**: **1 file** con i filtri standard — `S7_NFT_BOT.zip` (21.884 byte,
+  23 luglio 2026) — **piu' una cartella `__pycache__/` con 4 file di bytecode compilato**
+  (`analysis_engine.cpython-311.pyc`, `data_manager.cpython-311.pyc`,
+  `execution_engine.cpython-311.pyc`, `risk_manager.cpython-311.pyc`), esclusi dal conteggio come da
+  regola ma **non ignorabili**: sono la prova che questo codice **e' stato eseguito su questa macchina**
+  con Python 3.11, il 23 luglio 2026 alle 08:47-08:48.
+  **Un audit precedente aveva dichiarato questa cartella "vuota": e' falso.**
+
+  **Contenuto dello `.zip` — aperto e letto, 14 voci, 40.731 byte decompressi:**
+  | File | Byte | Cos'e' |
+  |---|---|---|
+  | `main.py` | 2.035 | entry-point `asyncio.run(main())`, lega i 4 layer |
+  | `data_manager.py` | 3.882 | Layer A — ascolto WebSocket mempool Solana |
+  | `analysis_engine.py` | 3.611 | Layer B — genera il segnale di BUY |
+  | `execution_engine.py` | 3.205 | Layer C — esecuzione (con `_simulate_transaction`) |
+  | `risk_manager.py` | 2.093 | Layer D — sizing + `activate_kill_switch()` |
+  | `requirements.txt` | 97 | `solana==0.33.0`, `solders==0.21.0`, `websockets==12.0`, `pandas==2.2.0`, `numpy==1.26.4`, `python-dotenv==1.0.1` |
+  | `.env.example` | 822 | `SOLANA_WSS_URL`, `TRADE_MODE`, `BASE_BANKROLL_SOL`, `MAX_POSITION_PCT`, `WALLET_*` |
+  | `LEGGIMI.md` | 1.755 | istruzioni d'uso + procedura di passaggio a LIVE + kill-switch |
+  | `report-studio.md` | 3.149 | **il verdetto**: l'edge del retail non esiste |
+  | `paper_trade_log.csv` | 651 | **6 trade simulati reali**, tutti BUY, 0.5 SOL, esito SUCCESS, del 2026-07-23 |
+  | 4 × `__pycache__/*.pyc` | 19.431 | bytecode, uguale a quello fuori dallo zip |
+
+- **Documenti di governo**: `ECOSISTEMA.md` **ASSENTE**. `BACKBONE.md` **ASSENTE**. README di radice
+  **ASSENTE** — l'unico documento e' `LEGGIMI.md`, **dentro** lo zip. E' l'unico dei 15 nodi senza
+  alcun documento di governo leggibile senza decomprimere.
+
+- **Reparti**: nessuno. **Workflow**: nessuno.
+
+- **Agenti definiti dentro il nodo**: **zero schede.** Gli unici "agenti" sono i 4 layer software.
+
+- **Ha codice eseguibile?** **SI, ma compresso**: 5 moduli Python dentro `S7_NFT_BOT.zip`
+  (`main.py`, `data_manager.py`, `analysis_engine.py`, `execution_engine.py`, `risk_manager.py`).
+  Fuori dallo zip non c'e' nessun `.py` estratto: resta solo il bytecode nel `__pycache__`.
+
+- **Punto d'ingresso gia' esistente?** **SI, documentato con precisione dentro `LEGGIMI.md`**:
+  `cd company/Ecosistemi/08-STREAM-S7-BOT` → `pip install -r requirements.txt` → `python main.py`.
+  **Il comando cosi' com'e' oggi fallisce**: i file citati non esistono sul disco, sono dentro lo zip;
+  serve un `unzip` che il LEGGIMI non menziona.
+
+- **Motore reale corrispondente FUORI da `company/`**: **NO — e nemmeno serve: il motore e' questo.**
+  Non esiste nessuna cartella di radice dedicata al trading/NFT. Esiste pero' un **gemello dentro
+  `company/`**: `company/Ecosistemi/12-STREAM-S7-BOT/` (81 file, 31 `.py`, 31 `.md`), che porta lo
+  stesso nome e lo stesso numero di stream — vedi scheda 12.
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) **Il comando dichiarato non funziona da fermo**: `python main.py` in quella cartella non trova
+    `main.py` (e' compresso). Basta estrarre lo zip perche' (a) sia soddisfatta.
+  - (b) **Il contratto d'uscita esiste gia' ed e' il piu' rigoroso del censimento**: `LEGGIMI.md`
+    impone che `report-studio.md` dimostri "un'expectancy positiva su almeno 30 giorni di simulazione"
+    prima di passare a `TRADE_MODE=LIVE`. Il `paper_trade_log.csv` contiene pero' **6 righe di un
+    solo minuto** (2026-07-23, 08:47-08:48) e **nessuna riga di chiusura** (solo BUY, mai SELL):
+    l'expectancy non e' calcolabile, il gate non e' superato.
+  - (c) **La destinazione e' stabilita** (`paper_trade_log.csv` accanto al codice) ma il file vive
+    dentro lo zip: ogni nuova run scriverebbe in una cartella estratta non tracciata.
+  - (d) **Nessun test**: nessun `test_*.py`, e il kill-switch (`activate_kill_switch()` in
+    `risk_manager.py`) non ha una prova che si attivi davvero.
+  - **Domanda che il piano deve porsi prima di spendere lavoro qui**: `report-studio.md` — scritto
+    dallo studio stesso — conclude che il retail non ha edge ("un bot in Python su un VPS standard
+    che usa una RPC pubblica riceve il dato dal mempool con 300-800 ms di ritardo... quando il nostro
+    `analysis_engine.py` invia il segnale di BUY, l'NFT/token e' gia' stato comprato"). **Rendere
+    "vivo" questo nodo puo' voler dire archiviarlo con onore, non collegarlo.**
+
+- **Difficolta'**: **BASSA** in senso tecnico (un `unzip` e il codice riparte), **ALTA** in senso
+  decisionale: il documento interno dice che la strategia non ha vantaggio statistico, quindi la
+  scelta non e' tecnica ma di Max.
+
+---
+
+## 09 — OPERATIONS
+
+- **Percorso**: `company/Ecosistemi/09-OPERATIONS/`
+
+- **Cosa contiene davvero**: **32 file totali**, **tutti `.md`** (32/32). Zero `.py`, `.json`, `.yaml`,
+  `.zip`. Struttura: `Agenti/` (10), `Funzioni/` (4), `Reparti/` (5 cartelle con un solo `README.md`
+  ciascuna), `Workflow/` (11), + `ECOSISTEMA.md` e `BACKBONE.md`.
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE, con **4 DONE WHEN misurabili** e una tabella di
+  handoff che nomina 7 controparti. `BACKBONE.md` PRESENTE. README di radice ASSENTE.
+  Lo stato dichiarato in testa e' gia' onesto: "parziale (ruflo installato, swarm non inizializzato,
+  run outreach attive ma lanciate a mano)".
+
+- **Reparti (5, cartelle con 1 `README.md`)**: `RUNTIME/`, `SCHEDULING/`, `COST-GUARD/`,
+  `STORAGE-ASSETS/`, `MONITORING-DASHBOARD/`.
+
+- **Workflow definiti (11)**: `WF-SWARM-RUN.md`, `WF-QUEUE.md`, `WF-LOOP.md`, `WF-CRON.md`,
+  `WF-WATCH.md`, `WF-BUDGET.md`, `WF-ATTRIBUTION.md`, `WF-TIER-ROUTING.md`, `WF-DASHBOARD.md`,
+  `WF-BACKUP.md`, `WF-ASSET-MGMT.md`.
+
+- **Agenti definiti dentro il nodo**: **10 schede** in `Agenti/` — `ops-director.md`,
+  `ops-swarm-marshal.md`, `ops-scheduler.md`, `ops-watchdog.md`, `ops-cost-sentinel.md`,
+  `ops-cost-accountant.md`, `ops-tier-router.md`, `ops-dashboard-builder.md`, `ops-backup-op.md`,
+  `ops-asset-keeper.md`. In `Funzioni/` 4 file: `T-fanout.md`, `T-worker-pool.md`,
+  `T-merge-results.md`, `T-retry-failed.md`.
+
+- **Ha codice eseguibile?** **NO.** Zero file eseguibili nel nodo.
+
+- **Punto d'ingresso gia' esistente?** **NO nel nodo**, ma esistono fuori i comandi che questo
+  ecosistema dovrebbe schedulare e misurare: le skill registrate `avvia-email`, `avvia-ig`,
+  `avvia-parallel`, `avvia-scraper`, `avvia-linkedin`, `avvia-outreach-preventa`, `avvia-estate-wk`
+  (verificate presenti in `.claude/skills/`), piu' `scripts/empire-sync.ps1`, `scripts/agency-trace.ps1`,
+  `scripts/gate_battito_hook.py`, `scripts/verifica_recap.py`.
+
+- **Motore reale corrispondente FUORI da `company/`**: **parziale, e una gamba dichiarata e' vuota.**
+  - **Esistono**: i 7 comandi `avvia-*` come skill, e i `.bat` che lanciano (`Outreach/*.bat`);
+    `scripts/` alla radice con hook e verificatori.
+  - **NON esiste il runtime dichiarato**: `ECOSISTEMA.md` dice "ruflo installato", e il `CLAUDE.md`
+    globale rimanda a `ruflo` come MCP con `swarm_init`, `agent_spawn`, `memory_store`.
+    Sul disco **`ruflo/` alla radice contiene 0 file** (`find ruflo -type f | wc -l` → **0**:
+    cartella esistente e completamente vuota). Il server MCP `claude-flow` risulta inoltre non
+    raggiungibile in questa sessione (timeout di connessione).
+  - **Non esiste il ledger**: `find . -maxdepth 4 -iname "*ledger*"` → **0 risultati** in tutto il repo,
+    benche' il DONE WHEN #1 lo esiga ("raccolto in un ledger unico").
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) **Nessun comando del nodo**, e i comandi reali (`avvia-*`) non passano da OPERATIONS: chi
+    lancia una run non registra nulla qui.
+  - (b) **L'evento standard `{ecosistema, workflow, costo, durata, esito}` del DONE WHEN #1 non
+    esiste come formato in nessun file**: nessuno schema, nessun esempio compilato.
+  - (c) **Nessun posto dove finiscono le misure**: zero `state/`, zero `ledger`, zero dashboard.
+    Il DONE WHEN #4 ("dashboard unica leggibile in 30 secondi") non ha alcun artefatto.
+  - (c) **Il budget guard (DONE WHEN #2) non puo' bloccare niente**: `ops-cost-sentinel.md` e
+    `WF-BUDGET.md` descrivono il blocco, ma non c'e' codice che intercetti una spesa.
+  - (d) **Nessun test.** In compenso esistono gia' fuori dal nodo due hook eseguibili e attivi
+    (`scripts/gate_battito_hook.py`, `scripts/verifica_recap.py`): sono la prova che in questo repo
+    un gate bloccante si sa scrivere — semplicemente non e' stato scritto per OPERATIONS.
+  - **Da verificare prima di progettare lo swarm**: la dipendenza da `ruflo`, oggi cartella vuota.
+
+- **Difficolta'**: **ALTA** — e' l'unico ecosistema trasversale il cui motore dichiarato (ruflo/swarm)
+  **non esiste sul disco**: qui non si collega, si costruisce da zero (ledger, eventi, budget guard,
+  dashboard), e ogni altro ecosistema dipende da lui per essere misurato.
+
+---
+
+## 10 — MEMORY
+
+- **Percorso**: `company/Ecosistemi/10-MEMORY/`
+
+- **Cosa contiene davvero**: **28 file totali**, **tutti `.md`** (28/28). Zero `.py`, `.json`, `.yaml`,
+  `.zip`. Struttura: `Agenti/` (12), `Funzioni/` (5), `Reparti/` (5 **file**), `Workflow/` (4),
+  + `ECOSISTEMA.md` e `BACKBONE.md`.
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE (dichiara stato "OPERATIVO (ME-0/ME-1)" e una
+  tabella "Componenti operativi (gia' costruiti)" con 10 voci e i loro path), `BACKBONE.md` PRESENTE.
+  README di radice ASSENTE. ADR fondativo citato: `company/Memory/decisions/ADR-002-memory-first.md`.
+
+- **Reparti (5, ognuno un singolo file `.md`)**: `M1-RECALL-PRETASK.md`, `M2-CHECKPOINT-SESSIONI.md`,
+  `M3-ADR.md`, `M4-PIANI-STATO.md`, `M5-SYNC.md`. **`ECOSISTEMA.md` ne dichiara altri 4 con path
+  diversi** (`Reparti/Checkpoint/`, `Reparti/ADR/`, `Reparti/State/`, `Reparti/Audit/`, marcati
+  "da costruire in fasi successive"): nessuna di quelle cartelle esiste.
+
+- **Workflow definiti (4)**: `WF-PRE-TASK-GATE.md`, `WF-POST-TASK-COMMIT.md`, `WF-ADR-REGISTER.md`,
+  `WF-AMNESIA-TEST.md`.
+
+- **Agenti definiti dentro il nodo**: **12 schede** in `Agenti/` — `ME-A00-conductor.md` **e**
+  `ME-A00-memory-conductor.md` (**due schede con lo stesso codice A00**), poi
+  `ME-A01-context-loader.md`, `ME-A02-relevance-scorer.md`, `ME-A03-checkpoint-writer.md`,
+  `ME-A04-session-logger.md`, `ME-A05-adr-registrar.md`, `ME-A06-contradiction-checker.md`,
+  `ME-A07-plan-keeper.md`, `ME-A08-state-tracker.md`, `ME-A09-wiki-syncer.md`,
+  `ME-A10-memory-sentinel.md`. In `Funzioni/` 5 file `T-M1…T-M5`.
+
+- **Ha codice eseguibile?** **NO** dentro il nodo.
+
+- **Punto d'ingresso gia' esistente?** **SI, fuori dal nodo, ed e' obbligatorio per legge interna**:
+  `python scripts/checkpoint.py cp --titolo "..."` — file verificato: `scripts/checkpoint.py`,
+  12.995 byte, modificato il 2026-09-05. Il `CLAUDE.md` di progetto lo impone: "il codice si conia con
+  `python scripts/checkpoint.py cp`, **mai a mano e mai progressivo**".
+
+- **Motore reale corrispondente FUORI da `company/`**: **SI — ed e' l'ecosistema piu' vivo dei 15.**
+  - `company/Memory/` — **425 file**, con `INDEX.md`, `STATO-EMPIRE.md`, `BACKLOG.md`, `ROUTINES.md`,
+    `PESO-SKILL.md`, `TESORERIA.md`, `ULTIMO-METRO.md`, piu' le cartelle `checkpoints/`,
+    `decisions/`, `plans/`, `sessions/`, `session/`, `state/`, `studi/`, `riprese/`, `tasks/`,
+    `templates/`, `audit/`, `tesoreria/`, `maximilian-corpus/`.
+  - **Prova di attivita' reale, non dichiarata: 299 checkpoint** in `company/Memory/checkpoints/`,
+    l'ultimo `CP-20260906-001.md` (oggi), e **25 ADR** in `company/Memory/decisions/`.
+  - `scripts/checkpoint.py` (conio del codice CP), `scripts/emperator_hook.py`,
+    `scripts/gate_battito_hook.py`, `scripts/verifica_recap.py` — hook attivi.
+  - Skill correlate: `memory-empire`, `memory-management`, `sync-wiki-totale`.
+  - Da notare: **il motore sta dentro `company/`, ma fuori dal nodo censito** — `company/Memory/`
+    (425 file, vivo) contro `company/Ecosistemi/10-MEMORY/` (28 file, prosa).
+
+- **COSA MANCA PERCHE' SIA VIVO**:
+  - (a) **Soddisfatta a meta'**: il comando esiste (`scripts/checkpoint.py`) ed e' usato ogni giorno,
+    ma non e' dichiarato dentro il nodo — nessuno dei 28 file lo cita come punto d'ingresso.
+  - (b) **Contratto d'uscita reale ma solo per i checkpoint** (template in `company/Memory/templates/`).
+    `WF-PRE-TASK-GATE.md` e `WF-AMNESIA-TEST.md` non hanno un esecutore: il gate memory-first e'
+    applicato dalla disciplina in `CLAUDE.md`, non da un controllo.
+  - (c) **La destinazione e' stabilita e rispettata** (`company/Memory/checkpoints/`,
+    `/decisions/`) — questa e' l'unica condizione pienamente soddisfatta, con 299+25 prove su disco.
+  - (d) **Nessun test**: `WF-AMNESIA-TEST.md` descrive la prova regina ("una chat nuova riprende da
+    dove eravamo?") e non e' mai stata resa eseguibile.
+  - **Difetto strutturale**: due agenti con lo stesso codice `ME-A00`
+    (`ME-A00-conductor.md` e `ME-A00-memory-conductor.md`) — chi instrada per codice non sa quale prendere.
+
+- **Difficolta'**: **BASSA** — tre condizioni su quattro sono gia' vere nei fatti; serve dichiarare nel
+  nodo il comando che tutti gia' usano e rendere eseguibile il test di amnesia.
+
+---
+
+## 11 — APEX-7-CORE
+
+- **Percorso**: `company/Ecosistemi/11-APEX-7-CORE/`
+
+- **Cosa contiene davvero**: **489 file totali** (esclusi `__pycache__`, `node_modules`, `.git`) —
+  **il nodo piu' grande del perimetro**. Ripartizione esatta:
+  **189 `.json`** · **161 `.py`** · **62 `.md`** · **23 `.yaml`** · 15 `.png` · 9 `.ts` · 5 `.sh` ·
+  4 `.mjs` · 3 `.txt` · 2 `.yml` · **2 `.sql`** · **2 `.rego`** · 2 `.gz` · **2 `.db`** · 1 `.toml` ·
+  1 `.sig` · 1 `.ini` · 1 `.gitignore` · piu' 4 file senza estensione
+  (`orchestration-layer/release/candidate/SHA256SUMS`,
+  `orchestration-layer/quality/evidence/policy-bundle/SHA256SUMS`,
+  `orchestration-layer/deploy/pilot/Dockerfile`, `orchestration-layer/CODEOWNERS`).
+  **Dove stanno i 161 `.py`**: 96 in `orchestration-layer/src/`, 26 in `orchestration-layer/tests/`,
+  8 in `orchestration-layer/scripts/`, 3 in `orchestration-layer/migrations/`, 7 in `agents/`,
+  7 in `orchestration/`, 3 test di radice, `main.py`, `run_demo.py`, `arena_generator.py`,
+  `orchestrator/ruflo_core.py`, `memory/memory_system.py`, `calc/*`.
+  **I due `.db` sono SQLite reali**: `memory/data/decision_log.db` (45.056 byte) e
+  `memory/data/youtube/decision_log.db` (40.960 byte).
+
+- **Documenti di governo**: `ECOSISTEMA.md` PRESENTE, `BACKBONE.md` PRESENTE, **`README.md` PRESENTE**
+  (unico nodo del perimetro che ce l'ha), piu' `EXECUTION_REPORT.md` e `UPGRADE_V2_REPORT.md`.
+  Il README apre con un ADR citato per esteso (**ADR-012, 2026-08-26**): "`orchestration-layer/` e' il
+  nuovo motore di orchestrazione canonico (governance OPA, contratti JSON Schema, adapter Postgres,
+  bridge RuFlo pinnato, 148 test verdi)... `orchestrator/` e `orchestration/` restano ATTIVI e
+  agganciati in produzione — NON cancellare finche' i consumatori non sono migrati".
+
+- **Reparti**: **nessuna cartella `Reparti/`.** L'organizzazione non e' per reparti ma per moduli
+  software: `agents/`, `orchestrator/`, `orchestration/`, `orchestration-layer/`, `memory/`,
+  `workflows/`, `prompts/`, `skills/`, `calc/`, `outputs/`, `reference/`.
+
+- **Workflow definiti**: `workflows/` (con `apex7_workflow.yaml`, RuFLO-compatible, routing
+  condizionale score-based) + `orchestration-layer/builder_swarm/workflow.yaml` +
+  3 gate YAML (`gates/architecture.yaml`, `gates/implementation.yaml`, `gates/release.yaml`).
+
+- **Agenti definiti dentro il nodo**: **7 moduli Python veri, non schede**: `agents/base_agent.py`,
+  `planner.py`, `writer.py`, `analyst.py`, `critic.py`, `refiner.py`, `meta_agent.py`.
+  Piu' 4 skill scritte: `skills/apex7-master/`, `skills/carousel-machine/`, `skills/cold-outreach/`,
+  `skills/skill-forge/`. **E' l'unico nodo dove "agente" significa codice eseguibile.**
+
+- **Ha codice eseguibile?** **SI, in modo massiccio.** 161 moduli Python, 5 `.sh`, 4 `.mjs`, 2
+  migrazioni SQL (`0001_core.sql`, `0002_privacy.sql`), 2 policy OPA in Rego
+  (`policies/authorization.rego` + il suo `authorization_test.rego`), un `Dockerfile`,
+  un `docker-compose.yml`, un `CODEOWNERS`, e **una pipeline CI reale**:
+  `orchestration-layer/.github/workflows/ci.yml`.
+
+- **Punto d'ingresso gia' esistente?** **SI, tre, tutti documentati e gia' eseguiti**:
+  - `python main.py "<richiesta>"` — entry-point del sistema a 7 livelli
+    (`main.py` gestisce esplicitamente il problema cp1252 di Windows con `sys.stdout.reconfigure`).
+  - `python run_demo.py` — demo 3 stream paralleli.
+  - `python arena_generator.py --model "GPT-4o" --demo`.
+
+- **Motore reale corrispondente FUORI da `company/`**: **NO — e non serve: il motore e' qui dentro.**
+  E' l'unico ecosistema del perimetro il cui codice vive nel nodo stesso. Riferimenti esterni:
+  la skill ufficiale `apex-7` (`.claude/skills/apex-7/`, che `ECOSISTEMA.md` indica come
+  `../../.agents/skills/apex-7/`) e il progetto esterno `github.com/ruvnet/ruflo` citato dal README
+  come base del livello L4 — ma la cartella `ruflo/` alla radice del repo **e' vuota (0 file)**.
+
+- **COSA MANCA PERCHE' SIA VIVO** — qui la domanda si rovescia: **e' gia' vivo su tutte e quattro le
+  condizioni**, e cio' che manca e' il collegamento agli altri 14:
+  - (a) SODDISFATTA: `python main.py`, `python run_demo.py`, `python arena_generator.py` — comandi
+    dichiarati nel README e nell'`EXECUTION_REPORT.md`.
+  - (b) SODDISFATTA: contratti JSON Schema in `orchestration-layer/contracts/` (14 `.json`),
+    quality gate a 5 dimensioni con soglie numeriche (Completezza ≥8, Precisione ≥8, Creativita' ≥7,
+    Actionability ≥8, Coerenza ≥9), 3 gate YAML del builder swarm, policy OPA in Rego.
+  - (c) SODDISFATTA: `outputs/` contiene **10 file prodotti davvero** (7 PNG di carosello,
+    `SKILL_20260723_075817.md`, `SKILL_20260813_111030.md` + il suo `.gate.json`), e i due
+    `decision_log.db` SQLite registrano le decisioni.
+  - (d) SODDISFATTA: **27 file di test** (`test_calc.py`, `test_multi_tenant.py`,
+    `test_orchestration.py` di radice + 24 in `orchestration-layer/tests/`, inclusi
+    `integration/test_postgres_real.py`, `test_opa_real.py`, `test_api_worker_real.py`),
+    piu' CI GitHub Actions e SHA256SUMS di release firmati.
+  - **Cio' che manca davvero**:
+    - **nessuno degli altri 14 ecosistemi lo invoca**: `ECOSISTEMA.md` dichiara che tutti "DEVONO
+      obbligatoriamente implementare e interfacciarsi con la Skill Ufficiale APEX-7", ma nei nodi
+      01-10 e 12-14 non esiste una sola chiamata a `main.py` ne' un riferimento ai suoi gate;
+    - **tre motori di orchestrazione convivono** (`orchestrator/`, `orchestration/`,
+      `orchestration-layer/`) e l'ADR-012 li tiene tutti e tre in vita di proposito: finche' la
+      migrazione non finisce, "quale motore risponde" non e' univoco;
+    - **la dipendenza RuFLO e' scoperta**: il livello L4 poggia su un progetto la cui cartella
+      locale e' vuota, e il server MCP correlato non risponde in questa sessione.
+
+- **Difficolta'**: **BASSA per se stesso** (e' gia' vivo e testato), **MEDIA per l'Impero**: il lavoro
+  non e' costruire, e' far si' che gli altri 14 lo chiamino davvero e chiudere la migrazione dei tre
+  orchestratori prevista da ADR-012.
 
 ---

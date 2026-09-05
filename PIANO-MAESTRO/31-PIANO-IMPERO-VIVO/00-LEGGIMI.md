@@ -123,10 +123,16 @@ domanda «perché il piano dice questo e non quello».
 | Percorso | Cosa è | Stato |
 |---|---|---|
 | `00-LEGGIMI.md` | questo file: ordine, leggi, metodo, avanzamento | ✅ |
-| `dati/censimento-01-vivo.md` | cosa deve diventare vivo, nodo per nodo | 🔄 in corso |
-| `dati/censimento-02-collegamenti.md` | chi parla con chi oggi, chi dovrebbe | 🔄 in corso |
-| `dati/censimento-03-forze.md` | popolazione agenti, contratto C4, regolamento delle forze | 🔄 in corso |
-| `dati/censimento-04-motori.md` | tutto ciò che già gira fuori da `company/` | 🔄 in corso |
+| `dati/censimento-01a-ecosistemi.md` | i 15 ecosistemi, scheda per scheda | 🔄 798 righe |
+| `dati/censimento-01b-organi.md` | Board, Guilds, Sentinelle, MAXIMILIAN, Mandato, Ispettorato | 🔄 628 righe |
+| `dati/censimento-02-collegamenti.md` | l'infrastruttura dei collegamenti: bus, contratti, registri, flow, tracce | ✅ §1-4 · §5-6 passate a `02b` |
+| `dati/censimento-02b-mappa-collegamenti.md` | la mappa dei passaggi di consegne progettati nei dossier | 🔄 |
+| `dati/censimento-03a-popolazione.md` | popolazione agenti, specifica C1..C6, ondate di lavoro | 🔄 1.064 righe |
+| `dati/censimento-03b-regolamento-forze.md` | la gerarchia delle forze già in vigore (ADR-015) | ✅ §1 |
+| `dati/censimento-03b2-cadute.md` | **33 cadute reali · 6 famiglie di recidiva · 29 regole, 12 da rendere meccaniche** | ✅ |
+| `dati/censimento-04-motori.md` | i motori della famiglia `Outreach/` | ✅ parziale |
+| `dati/censimento-04b-motori.md` | tutti gli altri motori fuori da `company/` | 🔄 |
+| `dati/censimento-01-vivo.md` · `dati/censimento-03-forze.md` | resti dei due doom bot caduti alla prima ondata — conservati, non cancellati (L1) | ⚠️ 12 e 3 righe |
 | `V1-PIANO-GENERALE.md` | prima versione | ⬜ |
 | `_critica-v1/` | i rapporti dei revisori su V1 | ⬜ |
 | `V2-PIANO-AMPLIATO.md` | seconda versione | ⬜ |
