@@ -2185,3 +2185,12 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   (c) skill/agenti da potenziare dopo S3: tutti quelli che oggi non dichiarano cosa producono
   (314 su 439) — la conoscenza dello standard C4 va dentro CONOSCENZA-EMPIRE, perché serve a
   qualunque agente che debba essere concatenato.
+
+## 2026-09-06
+
+- INGEST: "CORSO COMPLETO SECOND BRAIN 2h: Claude + Obsidian" di Giovanni Beggiato (RnoC5IlOUhs,
+  2h18m50s, lotto max18 video 1) — costruzione dal vivo di una Company Brain completa (11 cartelle,
+  canon/override, gate_qualita.py a 6 regole, genera_llms.py/llms.txt, genera_showcase.py, soluzione
+  `_index` agli orfani, skill journal sessioni/daily, cruscotto HTML + Notion via MCP, 14 prompt del
+  canovaccio), 205 atomi / 333 archi / 1 componente connessa / 0 orfani → 1 pagina wiki creata
+  (sources/Source_Giovanni_Beggiato_Second_Brain_Obsidian_Claude.md).

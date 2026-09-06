@@ -401,3 +401,108 @@ errore di lettura ma un contenuto realmente diverso, probabilmente riscritto con
 e l'altra. Lezione operativa dichiarata nella fonte: *"un'espansione di prompt via AI può capovolgere
 in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un 'espandi questo
 prompt'"* — RnoC5IlOUhs#100:30, #103:42 (KA-145, KA-146, KA-147).
+
+## Cosa ne ricava Digital Empire
+
+Sezione mia, dichiarata come tale: nessuna patch applicata, nessuno script toccato — `EMP-QQ2R`
+Fase 1 resta solo studio. Confronto fatto con `ls`/`grep` reali sul repo, non a memoria.
+
+**Cosa l'Impero ha già, nella stessa forma**: il `second-brain-vault/wiki/` attivo (`concepts/`,
+`entities/`, `projects/`, `sources/`, `synthesis/`, `tools/`) è, nella sostanza, la stessa idea delle
+11 cartelle — una tassonomia dichiarata in `second-brain-vault/CLAUDE.md` con la regola "ogni pagina
+nuova deve linkare almeno 2-3 pagine esistenti", cioè lo stesso principio hub-and-spoke/anti-orfano
+di questo video, solo con parole diverse. **Curiosità verificata**: dentro `second-brain-vault/wiki/`
+convivono anche 9 cartelle numerate più vecchie (`00 - Inbox` → `09 - Archives`, stile PARA) accanto
+alla tassonomia attiva — due schemi di cartelle nello stesso vault, non riconciliati; è esattamente
+il tipo di deriva che questo video previene dichiarando "una tassonomia sola, decisa una volta".
+
+**Cosa manca, verificato con grep**: `grep -rl "llms.txt" .claude` non trova nulla — DE non ha nessun
+equivalente di `genera_llms.py`: nessun indice derivato, a bassa spesa token, pensato apposta per
+essere letto da un agente prima di rispondere. Oggi un agente che deve orientarsi nella wiki legge
+`index.md` (catalogo manuale) o fa query dirette sui file: funziona, ma non è **derivato e
+rigenerabile** — se una pagina cambia titolo o summary, nulla lo segnala automaticamente. Un
+`genera_llms.py` per `second-brain-vault/wiki/` costerebbe poco (stessa logica: leggere il
+frontmatter di ogni pagina, scrivere una riga per pagina, escludere gli indici) e chiuderebbe un gap
+concreto, distinto da quello già segnalato su Karpathy (`/lint-wiki` documentato ma assente): qui
+manca la porta d'ingresso per l'AI, là mancava il controllo di qualità.
+
+**La memoria viva di questo video è più automatizzata di quella di DE, su un punto preciso**: DE ha
+già `company/Memory/checkpoints/` (301 file, verificato con `ls`) e `company/Memory/sessions/`
++ `session-template.md`, cioè lo stesso principio "sessione con frontmatter e wikilink alle entità
+toccate" imposto da REGOLA ZERO — ma **manca il livello daily**: `company/Memory/sessions/` contiene
+un solo file (`session-20260610.md`), senza un aggregatore che, a fine giornata, fonda le sessioni
+del giorno in un riepilogo narrativo come fa `_template-daily.md` in questo video. Oggi in DE
+l'aggregazione la fa `STATO-EMPIRE.md` a mano, riscritto ogni volta; il pattern "buongiorno / chiudi
+sessione / fine giornata" come **tre comandi a frase libera che scrivono da soli**, invece che tre
+istruzioni in un CLAUDE.md che Claude deve ricordarsi di eseguire, è un salto di automazione che DE
+non ha ancora fatto.
+
+**Il cruscotto HTML e Notion via MCP non hanno equivalente in DE**: nessun file HTML statico
+generato dai dati di `company/Memory/tesoreria/` o `STATO-EMPIRE.md` esiste oggi (i report di
+Tesoreria sono markdown/chat, non un singolo `.html` apribile offline); e DE non usa Notion — la
+wiki vive solo in Obsidian-style markdown locale. Il comando MCP di questo video
+(`claude mcp add --transport http notion https://mcp.notion.com/mcp`) è un pattern generale
+riutilizzabile per **qualunque** integrazione MCP futura di DE, non solo per Notion: mostra la
+sequenza completa (aggiungi transport → autentica con `/mcp` → verifica), utile la prossima volta
+che l'Impero collega un servizio esterno via MCP invece di scrivere un client custom.
+
+**Canon vs override è un pattern che DE non applica ancora ai propri dati**: la Tesoreria e
+`STATO-EMPIRE.md` non hanno un meccanismo dichiarato di "scrivi un override separato, mai sovrascrivi
+il canonico in silenzio" — un fatto corretto oggi viene semplicemente riscritto nel file originale,
+senza distinguere "quello che sapevamo" da "quello che abbiamo corretto e quando". Per un'azienda che
+vuole tracciare **quando** un numero è cambiato (esattamente il tipo di domanda che la Tesoreria pone
+sui conti), il pattern `workspace/overrides/` + `propagate.py` di questo video è un candidato diretto
+da valutare, non da copiare meccanicamente.
+
+## Nota di trasparenza — limiti della fonte
+
+- **Gate di qualità e generatore `llms.txt` mostrati parzialmente**: il codice di `gate_qualita.py`
+  e `genera_llms.py` è tagliato dal bordo del frame in più punti (righe successive alla 37 nel primo
+  caso); riportato qui esattamente fino a dove il materiale sorgente lo rende leggibile, senza
+  completare le righe mancanti.
+- **Contraddizione osservata nel Prompt 9**: due letture dello stesso riquadro Notion, a distanza di
+  pochi minuti nel video, danno istruzioni opposte su git push (KA-145 vs KA-146) — riportata come
+  discrepanza, non risolta arbitrariamente a favore dell'una o dell'altra.
+- **Cifra dei documenti divergente**: 22.870 (lavagna) vs 22.500 (voce), mai riconciliata nella
+  fonte (KA-004).
+- **Caso di studio interamente fittizio**: Aurora Sistemi S.p.A., dichiarata tale dall'autore; tutti
+  i numeri di business (ARR, clienti, edifici) sono dati dimostrativi, non un'azienda reale.
+- **Alcune letture manoscritte segnalate come incerte nella fonte stessa** (confidenza: dedotto):
+  la parola "PROGETTABILE" sotto `projects` (KA-058), le due colonne sotto `entities` (KA-062), lo
+  schizzo illeggibile sotto `data` (KA-063).
+
+## Connessioni
+
+- [[sources/Source_Giovanni_Beggiato_Company_Brain_Karpathy|Giovanni Beggiato — Claude Code +
+  Karpathy = Agenti AI da 10.000€]] — **stesso autore, video 2 dello stesso lotto `max18`**: quella
+  è la demo tecnica di un singolo deliverable (proposta commerciale PandaDoc) costruito **dentro**
+  una company brain già pronta; questa è il corso intero che insegna a costruire quella company
+  brain da zero, cartella per cartella, script per script. Le tre architetture che quella pagina
+  segnala come gap DE (single source of truth sui prezzi, operazione LINT, "nessuna proposta senza
+  nota") sono qui rese concrete: il canon/override è il single-source-of-truth, `gate_qualita.py` è
+  l'operazione LINT resa eseguibile, la skill journal è "nessuna sessione senza nota" applicato alla
+  memoria invece che alle proposte.
+- [[sources/Source_Justin_Sung_Guida_Apprendimento|Justin Sung — Guida completa
+  all'apprendimento (max18)]] — **stesso lotto, stessa diagnosi da due lati opposti**: quello studio
+  aveva trovato che l'`atoms.json` di DE non ha archi ("DE produce isole, non reti") e che GRIND
+  (Grouping/Relational/Interconnected/Non-verbal/Directional/Emphasized) è il processo per
+  trasformare mappe di livello 1 in reti di livello 3. Questo video mostra l'altra metà dello stesso
+  problema risolto in produzione: hub-and-spoke (KA-091) è Grouping+Relational fatto cartella per
+  cartella, il gate "zero orfani + una sola componente connessa" (KA-118) è la verifica automatica
+  che Sung lascia solo come principio teorico. Le 333 relazioni tipizzate di **questo** `atoms.json`
+  (contro gli 0 archi denunciati sull'altro studio) sono la prova che l'assenza di archi non è un
+  limite dello schema di Empire Studio, ma di come è stato applicato finora.
+- [[sources/Source_Nate_Herk_Claude_Second_Brain_Levels|Nate Herk — Every Level of a Claude Second
+  Brain Explained]] — **la scala su cui collocare questa Company Brain**: Herk misura DE a Livello
+  1-2 (cartella + wiki curata, ricerca lessicale) su 1.831 pagine. La Company Brain di questo video
+  è anch'essa, nella sostanza, un Livello 2 evoluto — nessun vector database mostrato in uso reale
+  (solo consigliato a voce: Supabase, Qdrant, Weaviate, KA-181), nessun RAG — ma con tre automatismi
+  che Herk non descrive: un gate di qualità eseguibile, un indice derivato per l'AI, e una memoria
+  episodica a comandi naturali. È la prova che si può spingere molto un Livello 2 con disciplina
+  ingegneristica, prima ancora di dover salire al Livello 3 (semantic search) che la tabella "80/20"
+  di questo stesso video (KA-177) colloca solo oltre le 2.500 note.
+- [[tools/Tool_Conoscenza_Empire_Agente|CONOSCENZA-EMPIRE — Agente Biblioteca Vivente]] — il gap
+  `llms.txt` (nessun indice derivato per l'AI nella wiki di DE) e il pattern canon/override
+  (nessuna distinzione oggi fra fatto canonico e fatto corretto) toccano direttamente il mandato di
+  questo agente: possiede e distribuisce la conoscenza, ma oggi lo fa senza un indice a bassa spesa
+  token e senza tracciare quando un fatto è stato smentito.
