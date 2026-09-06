@@ -2188,6 +2188,17 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 
 ## 2026-09-06
 
+- INGEST: "La MIGLIORE Strategia Per Generare Clienti Su LinkedIn" di Giovanni Beggiato
+  (O2IDhISyy8Y, 33m20s, lotto max18) — framework a 5 punti per cold DM (personalizzato / chiarire
+  chi sei / dare qualcosa / micro commitment / poco attrito), definizioni verbatim di Effetto
+  Barnum e Rainbow Ruse, 3 DM reali smontati punto per punto, i due template completi (con/senza
+  autorità) con variabili dinamiche, schema PROOF ("la avete"/"la create"), sequenza a 3 step
+  20%/50%/30% (corretta dal vivo dall'autore), 57 atomi / 116 archi / 1 componente connessa / 0
+  orfani → 1 pagina wiki creata (sources/Source_Giovanni_Beggiato_LinkedIn_Generare_Clienti.md).
+  Scoperta: il framework DE `Framework_Barnum_Rainbow_5Pilastri.md` (2026-07-30) è quasi identico
+  a questo video ma riporta 40% invece di 50% per il secondo step — discrepanza segnalata, non
+  corretta d'iniziativa.
+
 - INGEST: "CORSO COMPLETO SECOND BRAIN 2h: Claude + Obsidian" di Giovanni Beggiato (RnoC5IlOUhs,
   2h18m50s, lotto max18 video 1) — costruzione dal vivo di una Company Brain completa (11 cartelle,
   canon/override, gate_qualita.py a 6 regole, genera_llms.py/llms.txt, genera_showcase.py, soluzione
@@ -2205,3 +2216,11 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   (schermata per schermata con misure ed effetti), PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md (il
   sistema che ne nasce), sources/Source_Andrei_Pascu_Armageddon_Landing_Lancio.md. README site-study
   aggiornato: 10 pagine su 12 note.
+
+- BUILD: **Fabbrica Siti, Fase 1** — nasce `.claude/skills/fabbrica-siti/`: `CLAUDE-SITI.md` (la
+  legge, 10 articoli numerati e citabili), `canone/canone.css` (445 righe) + `canone/canone.json`
+  (gemello a macchina), `scripts/canone_sync.py` (PASS: 16 colori = 16 ammessi, 2 curve identiche).
+  Deciso in ADR-023: **una legge, un canone, due corsie** — ≤3 pagine e nessuno stato → vanilla con
+  colonna `--u` e zero build; tutto il resto → Next.js 16. Chiude la contraddizione fra
+  `empire-premium-style` ("mai HTML statico") e `website-creator` ("zero framework"), che si
+  vietavano a vicenda dichiarandosi entrambe obbligatorie. → CP-20260906-9TWF.

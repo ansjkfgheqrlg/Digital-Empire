@@ -161,3 +161,149 @@ Verdetto — il peggiore dei tre nonostante nomini il destinatario — O2IDhISyy
 4. Micro commitment ✗ — *"non mi sta chiedendo niente"*.
 5. Poco attrito ✗ — annotazione manoscritta "CTA?": *"qual è la mia call to action? Cioè, devo
    risponderti sì, devo risponderti no, devo premere un..."* — nessuna azione concreta richiesta.
+
+## I due template completi
+
+Il DM 3 (video editor) viene riscritto da zero con variabili dinamiche, *"di modo tale che voi
+possiate customizzarlo con AI"* — O2IDhISyy8Y#20:18 (KA-039). Struttura in 5 blocchi: (1) Effetto
+Barnum di apertura, (2) Rainbow Ruse sul pain, (3) case study di autorità, (4) offerta gratuita
+senza vincoli, (5) micro commitment a bassissimo attrito + firma. Con questo template è la
+**prima volta nel video che un DM supera l'intero framework a 5 punti**, tutti ✓ —
+O2IDhISyy8Y#29:18-29:36 (KA-048).
+
+**Template CON autorità**, riportato parola per parola così come appare assemblato per intero sul
+canvas — O2IDhISyy8Y#29:00 (KA-047, assemblato progressivamente KA-040, KA-043, KA-044, KA-045,
+KA-046):
+
+> "Ciao {{nome}}, ho visto il tuo ultimo video su {{variabile}}. Finalmente qualcuno che parla di
+> AI in modo chiaro e senza fronzoli. Canali come il tuo hanno un contenuto fantastico, ma spesso
+> può non arrivare perché spesso il watch time non è dove dovrebbe. Sono Gino, ed ho aiutato
+> *PERSONA* ad crescere da 5k subs a 50k subs in 3 mesi, creando video di alta qualità che hanno
+> incrementato drasticamente il watch time. Mi farebbe piacere fare l'introduzione del tuo
+> prossimo video gratuitamente. Ovviamente, non mi devi nulla e solo se performa secondo le tue
+> aspettative, ti chiederò di lavorare assieme. Se ti interessa, tutto quello che mi serve è che
+> tu mi mandi un link google drive da cui io posso caricare e scarica il video. Fammi sapere,
+> Giovanni."
+
+**Template SENZA autorità**, per il caso "Gino senza case study reale da citare": il relatore
+riscrive in diretta **solo il terzo blocco** (il case study), dichiarando esplicitamente che
+*"non cambierei niente che non fosse questa parte qui"* — tutto il resto (apertura, secondo
+statement, offerta gratuita, micro commitment, firma) resta invariato — O2IDhISyy8Y#29:36-31:06
+(KA-049). Blocco 3 sostituito con:
+
+> "Sono Gino e sono un video editor specializzato nel creare "hook" ad alto engagement. Questo è
+> un video che ho preparato per te: [LINK]"
+
+Template completo risultante (ricostruito unendo i blocchi invariati confermati dalla fonte al
+nuovo blocco 3, per intero):
+
+> "Ciao {{nome}}, ho visto il tuo ultimo video su {{variabile}}. Finalmente qualcuno che parla di
+> AI in modo chiaro e senza fronzoli. Canali come il tuo hanno un contenuto fantastico, ma spesso
+> può non arrivare perché spesso il watch time non è dove dovrebbe. Sono Gino e sono un video
+> editor specializzato nel creare "hook" ad alto engagement. Questo è un video che ho preparato
+> per te: [LINK]. Mi farebbe piacere fare l'introduzione del tuo prossimo video gratuitamente.
+> Ovviamente, non mi devi nulla e solo se performa secondo le tue aspettative, ti chiederò di
+> lavorare assieme. Se ti interessa, tutto quello che mi serve è che tu mi mandi un link google
+> drive da cui io posso caricare e scarica il video. Fammi sapere, Giovanni."
+
+## Lo schema PROOF
+
+Introdotto subito dopo la riscrittura "senza autorità", come albero a due rami — la scritta in
+blocco **"PROOF"** che si dirama in **"LA AVETE"** e **"LA CREATE"** — O2IDhISyy8Y#30:36-31:06
+(KA-050): *"sarà eh rilevante è o la avete e quindi se la avete potete scriverla, se l'avete in
+settore meglio oppure la create."* Nel mondo dell'AI l'unica cosa davvero rilevante per chi
+riceve un cold DM è la prova (proof) reale: se il mittente la possiede già (un case study vero),
+la scrive nel messaggio; se non la possiede, **la costruisce artificialmente** — es. un video
+dimostrativo generico offerto a chiunque, col placeholder "[LINK]".
+
+**La regola sulla proof costruita**: funziona lo stesso, perché se il contenuto/hook piace al
+destinatario, questi non si sofferma a verificare con chi il mittente abbia realmente lavorato —
+*"quello che succederà sarà che nella testa di questa persona non viene a pensare 'Ah, ok, ma con
+chi ha lavorato? Che cosa?'"* — O2IDhISyy8Y#31:06-31:24 (KA-051). A riprova, il relatore racconta
+un aneddoto personale: dice di aver trovato tutto il proprio team YouTube (LinkedIn incluso)
+proprio grazie a persone che gli hanno scritto messaggi generici di questo tipo, offerte di
+lavoro gratuito dimostrativo senza alcun vincolo se il risultato non fosse piaciuto —
+O2IDhISyy8Y#31:30-31:48 (KA-052).
+
+## La sequenza a 3 step e i suoi tassi
+
+Introdotta sottolineando la parola "follow-up" nel DM Zeekeo: *"i soldi non sono mai nel primo
+messaggio, neanche con le cold email, ma i soldi vengono generalmente nel secondo messaggio"* —
+O2IDhISyy8Y#14:24-14:54 (KA-025). Tassi di risposta disegnati come tre cerchi verdi 1→2→3, **con
+una correzione fatta dal vivo dall'autore**: primo messaggio ~20%; secondo messaggio scritto
+prima "40%", poi corretto a voce e sulla lavagna a **50%**; terzo messaggio **30%** —
+O2IDhISyy8Y#14:54-15:36 (KA-026): *"e sul terzo messaggio, anzi facciamola a 50 perché è
+estremamente probabile che al terzo vi accoltellino, ma è del 30%."* Tassi finali dichiarati:
+**20% / 50% / 30%**. Motivazione a insistere: *"se voi non fate questa parte qui, state lasciando
+[...] soldi sul tavolo [...] al primo messaggio non vi si risponde nessuno, al secondo, al terzo
+comincerete a ricevere risposte anche positive."*
+
+## Cosa ne ricava Digital Empire
+
+Sezione mia, dichiarata come tale: nessuna patch applicata, nessuno script toccato — `EMP-QQ2R`
+Fase 1 resta solo studio. Confronto fatto leggendo per intero le pagine wiki esistenti, non a
+memoria.
+
+**Scoperta principale — un framework quasi identico esiste già in DE, con una fonte diversa
+dichiarata**: [[Framework_Barnum_Rainbow_5Pilastri]] (creato 2026-07-30, attribuito a *"un video di
+Max"*, non a Giovanni Beggiato) descrive **esattamente** gli stessi elementi di questo video —
+Effetto Barnum, Inganno Arcobaleno, gli stessi **5 pilastri nello stesso ordine** (personalizzazione
+reale / chiarezza entro 3 secondi / valore anticipato con case study reale-o-costruito / micro
+commitment / basso attrito) e la stessa sequenza a 3 step. La sovrapposizione è troppo precisa per
+essere casuale: o questo video di Beggiato è la fonte originale non citata di quel documento, o
+esiste un'altra fonte comune non ancora ricollegata. Vale la pena verificarlo, non l'ho risolto
+arbitrariamente qui.
+
+**La discrepanza concreta da segnalare**: il documento DE esistente scrive *"20%/40%/30%"* per la
+sequenza a 3 step. Questo video mostra che l'autore ha scritto **40%** sulla lavagna e poi lo ha
+**corretto dal vivo a 50%**, motivando esplicitamente la correzione (KA-026). Se
+`Framework_Barnum_Rainbow_5Pilastri.md` deriva da questo stesso video (o da una sua trascrizione),
+potrebbe aver catturato il numero **pre-correzione**. Non ho toccato il documento: la differenza
+40% vs 50% andrebbe verificata e, se confermata, corretta da chi possiede quella pagina.
+
+**Cosa DE ha già, in sostanza coincidente**: lo schema PROOF "la avete / la create" di questo
+video corrisponde punto per punto al terzo pilastro già scritto in
+[[Framework_Barnum_Rainbow_5Pilastri]] — *"se non hai un case study reale, lo costruisci
+artificialmente PRIMA di chiedere qualsiasi cosa"* — applicato in produzione da
+[[Tool_Outreach_Message_Team]]. Su questo punto specifico DE non ha un gap, ha una conferma
+indipendente (o la stessa fonte) di un principio che già usa.
+
+**Cosa questo video aggiunge di più fine rispetto ai documenti DE letti**: il verdetto sul DM 3
+(video editor) mostra un livello di scrutinio che i documenti DE consultati non rendono esplicito
+— un messaggio che **nomina il destinatario per nome** viene comunque bocciato sul punto
+"Personalizzato" perché il relatore riconosce lo schema di un template ("Salve {nome}") dietro la
+variabile (KA-035). Se il gate automatico di [[Tool_Outreach_Message_Team]]
+(`rule_keeper_lint.py`, citato in memoria) verifica solo la presenza di un campo `{{nome}}`
+compilato, questo è un controllo più severo da valutare: la vera personalizzazione richiede un
+dettaglio specifico e verificabile (l'esempio della "felpa verde nell'ultimo video"), non la sola
+sostituzione di una variabile.
+
+**Cosa non ho verificato**: se l'autorità dichiarata con numeri esterni (follower reali, ranking
+Favikon) — il modo in cui questo video apre prima ancora di insegnare il framework — sia già un
+pattern codificato nel materiale DE sull'autorità del brand personale, oltre a quanto già coperto
+da [[Source_Paolo_Trivellato_LinkedIn_Agency_1M]] sul profilo-come-sales-page. Non è un gap
+dichiarato, è una domanda aperta che non ho chiuso in questa sessione.
+
+## Connessioni
+
+- [[Framework_Barnum_Rainbow_5Pilastri]] — il framework DE quasi identico a questo video (stessi
+  5 pilastri, stesso ordine, stessa sequenza 3-step con la discrepanza 40%/50% segnalata sopra):
+  la connessione più diretta e più urgente da verificare di tutta questa pagina.
+- [[Framework_Cold_Outreach_APSOC]] — il framework macro (APSOC) in cui il metodo Barnum-Rainbow
+  di questo video si inserisce come tecnica specifica per il punto "Attenzione/Personalizzazione".
+- [[Tool_Outreach_Message_Team]] — il team di 4 agenti DE che scrive e valida i cold DM in
+  produzione: il test più severo sulla personalizzazione osservato in questo video (riconoscere
+  lo schema del template anche quando il nome è presente) è un candidato diretto per
+  `rule_keeper_lint.py`.
+- [[Source_Paolo_Trivellato_LinkedIn_Agency_1M]] — stessa piattaforma (LinkedIn), filosofia
+  opposta: Trivellato ha fatturato $1,2M con **zero cold outreach**, solo contenuto + profilo
+  come sales page; Beggiato costruisce la maggioranza del proprio fatturato **dal cold DM**
+  (meno del 5% dai post, KA-004) — le due fonti coprono i due estremi dello stesso canale, utili
+  lette insieme per capire quando usare l'uno o l'altro approccio.
+- [[Source_Giovanni_Beggiato_Second_Brain_Obsidian_Claude]] — stesso autore, stesso lotto `max18`:
+  quel video insegna a costruire una company brain da zero, questo insegna ad acquisire clienti
+  su LinkedIn; nessuna sovrapposizione di contenuto, ma la stessa voce che nella company brain
+  raccomanda di non inventare mai un fatto ("se non è nel materiale, non scriverlo") qui applica
+  lo stesso rigore al proprio metodo di vendita: mostra sempre la prova reale prima di dichiarare
+  un principio.
+
