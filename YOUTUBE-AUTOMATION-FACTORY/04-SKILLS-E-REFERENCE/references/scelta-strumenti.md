@@ -147,6 +147,17 @@ video, cioè esattamente ciò che questa fabbrica esiste per non fare.
 | intermedio | «un'ora» | non detto |
 | Enterprise | «centinaia di video» | non detto |
 
+**La stessa cosa, un mese dopo, con la musica (A4-L17-03 · 2026-09-06).** A4/L17 mostra **AIVA**
+(generatore di musica AI) per quattordici minuti: **ventisei passaggi, tutti a click**, mai un
+endpoint né una chiave. Due lezioni diverse, due categorie di strumento diverse, **lo stesso
+esito**: sono prodotti pensati per un umano davanti a uno schermo.
+
+**La regola che ne esce, e vale in avanti:** quando serve una capacità nuova (un volto, una musica,
+una voce), la prima domanda non è «qual è il migliore?» ma **«quale di questi si comanda da
+programma?»**. Uno strumento migliore ma solo a click, in una fabbrica che produce a nastro, **è
+uno strumento peggiore**: il suo costo vero non è l'abbonamento, è il tempo umano che reintroduce
+su ogni video.
+
 Serve per un confronto futuro, **non come istruzione operativa**: nessuno adotti un avatar parlante
 sulla base di questa riga. Se un giorno servisse un volto, la domanda da fare per prima resta:
 **esiste una via programmabile?** Se la risposta è no, la conversazione finisce lì.

@@ -242,3 +242,38 @@ numeri sullo stesso costo, si prende quello della lezione che mostra, non di que
 — e si registra la contraddizione, perche' e' un dato sulla fonte.*
 
 Regola che ne nasce: **`A4-L14-05`** (binario A).
+
+---
+
+## C-007 · **Il corso contraddice sé stesso dentro UNA SOLA lezione** — chi possiede la musica generata
+
+| | |
+|---|---|
+| **Chi** | `A4/L17` contro `A4/L17` — apertura (00:46-01:03) contro dettaglio (08:24-09:21) |
+| **Aperto** | 2026-09-06 |
+| **Esito** | **ARBITRATO — vince il dettaglio, e la contraddizione stessa diventa una regola** |
+
+**In apertura** la lezione promette: «possiamo **monetizzare questa musica come se l'avessimo
+creata totalmente noi**… su tutti i social network, **ma anche su piattaforme esterne, perché
+saremo noi i proprietari**» [00:46-01:03].
+
+**Otto minuti dopo**, la stessa lezione: col piano **gratuito** «non abbiamo i diritti» [08:50];
+con lo **Standard** si monetizza «solamente su YouTube, Twitch, TikTok e Instagram» e «non
+possiamo rivendere all'esterno» [08:57, 09:49]; la proprietà piena è **solo del piano Pro**
+[09:16].
+
+**E in mezzo**, su una traccia creata con l'account **free**: «la posso rivendere e la posso
+utilizzare su YouTube» [08:24] — cioè esattamente ciò che il free, per sua stessa ammissione,
+**non consente**.
+
+**Arbitrato: vince il dettaglio**, ovviamente. Ma il valore non è qui: è che questa è la **terza**
+autocontraddizione del corso (dopo C-005 sulla freschezza del video sorgente e C-006 sul tempo per
+video) e la **prima interna a una lezione sola**. Le tre insieme non sono più un incidente: sono
+**un dato sulla fonte**.
+
+**La regola che ne nasce, e vale oltre questo corso:** *l'apertura di una lezione dice quello che
+vende, il dettaglio dice quello che sa. Sul denaro, sui diritti e sul tempo, si prende il
+dettaglio — e quando c'è di mezzo una licenza, non si prende né l'uno né l'altro: si vanno a
+leggere i termini del fornitore.*
+
+Regola che ne nasce: **`A4-L17-01`** (binario A).

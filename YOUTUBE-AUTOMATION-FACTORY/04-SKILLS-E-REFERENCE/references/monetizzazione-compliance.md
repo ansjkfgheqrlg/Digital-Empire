@@ -212,3 +212,50 @@ miniatura personaggi, mascotte, loghi o stili identificabili di terzi.
 **Il metro pratico, in una riga:** *se un umano guardando l'immagine sa dire di chi è il personaggio
 o chi è la persona, allora quel diritto è di qualcun altro — e l'ha generato una macchina non
 cambia una virgola.*
+
+---
+
+## 9. Da dove può venire la musica dei nostri video (A4-L17-01/02 · 2026-09-06)
+
+**Domanda ancora aperta, e va detto per prima:** non sappiamo se i video che produciamo abbiano una
+musica di sottofondo. La verifica è assegnata al gate della categoria A4 (`A4-L04-04`), e finché
+non è fatta, il criterio «Bilanciamento Volumi» di `qa-audio-video` resta sospeso.
+
+Quando la domanda avrà una risposta, le vie sono **tre**, e **una è chiusa**.
+
+| via | stato | perché |
+|---|---|---|
+| **1. La musica che Fliki ci fornisce** | ✅ **è quella che abbiamo già in casa** | coperta dalla licenza della piattaforma; è esattamente ciò che il campo `YouTube channel ID(s)` del profilo Fliki serve a difendere in caso di reclamo (§ `fliki-produzione.md`, `A4-L19-01`) |
+| **2. Musica generata da uno strumento AI** | ⚠️ **percorribile, ma a condizioni** | vedi sotto |
+| **3. Voce e base separate da brani altrui** | ❌ **porta chiusa** | §7: elaborazione non autorizzata di una registrazione esistente |
+
+### La via 2, e le sue due condizioni
+
+A4/L17 mostra **AIVA**, generatore di musica da AI, e ha il merito di dire una cosa che quasi
+nessuno dice: **i diritti sulla musica generata dipendono dal piano che paghi.** Parole della
+lezione:
+
+- piano **gratuito**: «ci permette di creare la musica **così per gioco**… perché **non abbiamo i
+  diritti**» [08:50]
+- piano **Standard**: «diritti di monetizzare, ma **solamente su YouTube, Twitch, TikTok e
+  Instagram**», e «non possiamo rivendere all'esterno» [08:57, 09:49]
+- piano **Pro**: «siamo noi i proprietari» [09:16]
+
+**Condizione 1 — il titolo si verifica sui termini del fornitore, mai su una lezione.** La stessa
+lezione, in apertura, aveva promesso che «saremo noi i proprietari» e che si può monetizzare
+«anche su piattaforme esterne» [00:46-01:03] — cosa vera **solo per il piano più alto**, come lei
+stessa spiega otto minuti dopo. Se una promessa e la sua smentita stanno nello stesso video, la
+fonte non è il posto dove si legge una licenza: si legge sul contratto del fornitore, prima di
+pubblicare (arbitrato `CONFLITTI.md` **C-007**).
+
+**Condizione 2 — nessun brano altrui come riferimento di stile.** Nella dimostrazione, il docente
+carica nella sezione `Influencers` «una canzone abbastanza conosciuta e abbastanza famosa» per
+farsi generare qualcosa di simile [11:03-11:23], **senza una parola** sul fatto che la licenza lo
+copra o meno, né sul rischio che il risultato somigli troppo all'originale. **È lo stesso schema
+del §7:** lo strumento è pulito, **il materiale in ingresso no**. Da noi si genera **da zero**:
+genere, umore, durata. Nessun file di riferimento che non sia nostro.
+
+**E una cosa che la licenza non copre, da tenere separata.** In tutta la lezione **Content ID non
+è mai nominato**. Un contratto col fornitore dice cosa hai il diritto di fare; **non impedisce a
+un sistema automatico di segnalarti**. Sono due piani distinti, e servono entrambi: il titolo
+d'uso, e la difesa in piattaforma quando arriva un reclamo.
