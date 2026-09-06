@@ -15,6 +15,29 @@ elenca cosa manca. Ne escono: i **miti del camuffamento da 4 a 6**, due **porte 
 insegna un aggiramento di licenza, L16 la separazione audio di brani altrui) e un dato che smonta
 L05 (il copia-incolla fatto bene costa **~1 ora a video**, non 5 minuti).
 
+## 📚 2026-09-06 — max18-v01 chiuso end-to-end + codici checkpoint mai piu' progressivi — CP-20260906-7GRK
+
+**Codice di ripresa: EMP-W4K7** (lotto max18, Fase 1). Il corso *Second Brain 2h: Claude +
+Obsidian* di Giovanni Beggiato e' stato **visto per intero**: 352 scene su 352, 2.776 righe di
+analisi, **205 atomi e 333 archi in una sola componente connessa**, zero orfani, zero ancore
+inventate. Archivio integrale (531 KB) in `knowledge/RnoC5IlOUhs/`, pagina wiki di 508 righe.
+
+**Legge nuova, gia' nel codice (`fe35ab17`):** nessun identificativo di checkpoint e' piu'
+progressivo. `CP-YYYYMMDD-XXXX` con quattro caratteri **sorteggiati**, unicita' verificata su
+disco **e su tutta la storia git di ogni ramo**, file creato nell'istante del conio. Ordine di
+Max dopo la seconda collisione fra chat parallele — due sessioni che non si vedono calcolano lo
+stesso "prossimo numero". Comando: `python scripts/checkpoint.py cp --titolo "..."`.
+Vale anche per Gael: `CLAUDE.md` aggiornato.
+
+**Tre difetti misurati e chiusi durante il lavoro:** la pipeline scaricava i frame a 360p da un
+video 1080p (ci accecavamo da soli); le sentinelle morivano al watchdog perche' aprivano un
+transcript da 148 KB; sei atomizzatori in parallelo producevano 21 isole invece di un grafo.
+
+**RIPRESA DA:** Fase 1 **non chiusa** — 4 fonti su 10. Sei video gia' scaricati e pronti,
+**1.217 scene** da guardare. In corso `max18-v07` (LinkedIn, generare clienti), scelto per primo
+perche' alimenta il **Libro dell'Agency**, il passo finale aggiunto da Max il 2026-09-05
+(`EMP-W4K7` §4-bis: documento pubblico in `.md` + `.py` + `.pdf`, metodo DE + tutta la
+formazione, integrale). Dettagli: [CP-20260906-7GRK](checkpoints/CP-20260906-7GRK.md).
 ## 👑 2026-09-05 — QUANTO È COSTRUITA DAVVERO L'AZIENDA: 92% sulla carta, 18% viva — EMP-MCC4
 
 **Ordine di Max:** *«la costruzione di Digital Empire non era finita al 100% — a che percentuale
