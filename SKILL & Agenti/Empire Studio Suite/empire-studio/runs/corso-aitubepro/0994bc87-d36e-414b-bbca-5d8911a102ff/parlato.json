@@ -1,0 +1,948 @@
+{
+  "lesson_id": "0994bc87-d36e-414b-bbca-5d8911a102ff",
+  "modello": "base",
+  "durata_s": 996.9,
+  "parole": 2952,
+  "blocchi": [
+    {
+      "inizio": 6.13,
+      "fine": 10.61,
+      "testo": "Ciao da Mirko del Fino, benvenuti all'interno di un nuovo video di High Tube."
+    },
+    {
+      "inizio": 10.61,
+      "fine": 12.93,
+      "testo": "Oggi parliamo di Boy Sovere."
+    },
+    {
+      "inizio": 12.93,
+      "fine": 18.89,
+      "testo": "In questo video vedremo come registrare la nostra bocce attraverso il nostro computer, un"
+    },
+    {
+      "inizio": 18.89,
+      "fine": 21.09,
+      "testo": "microfono e il nostro computer."
+    },
+    {
+      "inizio": 21.09,
+      "fine": 25.05,
+      "testo": "Una cosa molto importante è che ci tenga precisare che attraverso naturalmente il modello"
+    },
+    {
+      "inizio": 25.05,
+      "fine": 29.45,
+      "testo": "di Business, che si caucione e di YouTube Automation, noi abbiamo la possibilità di poter"
+    },
+    {
+      "inizio": 29.45,
+      "fine": 34.05,
+      "testo": "delegare tutto o utilizzare l'intelligenza artificiale, quindi tra le altre cose non abbiamo bisogno"
+    },
+    {
+      "inizio": 34.05,
+      "fine": 38.65,
+      "testo": "di farvi voi sover, quindi di mettere la nostra bocce, possiamo non metterci la faccia,"
+    },
+    {
+      "inizio": 38.65,
+      "fine": 39.65,
+      "testo": "non è di dare video."
+    },
+    {
+      "inizio": 39.65,
+      "fine": 43.49,
+      "testo": "Ma noi all'interno di questo percorso vogliamo darvi anche l'opportunità e la possibilità"
+    },
+    {
+      "inizio": 43.49,
+      "fine": 48.81,
+      "testo": "di poter ampliare il ventaglio di opportunità, e quindi se magari volete mettere la voce,"
+    },
+    {
+      "inizio": 48.81,
+      "fine": 50.21,
+      "testo": "volete capire come farlo."
+    },
+    {
+      "inizio": 50.21,
+      "fine": 54.25,
+      "testo": "Naturalmente una cosa molto importante è che ci tenga precisare se volete mettere la voce"
+    },
+    {
+      "inizio": 54.25,
+      "fine": 59.37,
+      "testo": "all'interno di un canale YouTube, la cosa fondamentale e avere un buon microfono, ok?"
+    },
+    {
+      "inizio": 59.37,
+      "fine": 63.45,
+      "testo": "Un buon microfono non significa che dovete investire migliaia di euro come ho fatto io in questo"
+    },
+    {
+      "inizio": 63.69,
+      "fine": 69.49,
+      "testo": "specifico, perché io lo faccio di lavoro, metto anche la faccia, faccio podcast, vado online"
+    },
+    {
+      "inizio": 69.49,
+      "fine": 73.41,
+      "testo": "con delle live, eccetera, eccetera, quindi è un altro discorso."
+    },
+    {
+      "inizio": 73.41,
+      "fine": 77.81,
+      "testo": "Per un che scopo c'anal invece, naturalmente possiamo utilizzare anche dei microfono in un"
+    },
+    {
+      "inizio": 77.81,
+      "fine": 82.57,
+      "testo": "po' più economici, ce ne sono alcuni che costano 50 euro che vanno molto molto bene, non"
+    },
+    {
+      "inizio": 82.57,
+      "fine": 90.25,
+      "testo": "vi dirò quali microfono acquistare in quanto all'interno dell'evoluzione tecnologica nel corso"
+    },
+    {
+      "inizio": 90.25,
+      "fine": 95.33,
+      "testo": "del tempo, cambieranno, se ne troveranno sempre di nuove, quindi magari quelli di oggi"
+    },
+    {
+      "inizio": 95.33,
+      "fine": 99.53,
+      "testo": "non ci saranno più tra uno, un anno, due anni e così via, però se avete bisogno di un"
+    },
+    {
+      "inizio": 99.53,
+      "fine": 102.97,
+      "testo": "buon microfono per registrare un video, potete venire all'interno della community di chiedere,"
+    },
+    {
+      "inizio": 102.97,
+      "fine": 107.29,
+      "testo": "noi andranno all'almente vi daremo un consiglio, quindi l'unica cosa di cui avete bisogno"
+    },
+    {
+      "inizio": 107.29,
+      "fine": 111.33,
+      "testo": "se volete registrare la vostra voce realmente è un computer, ok?"
+    },
+    {
+      "inizio": 111.33,
+      "fine": 115.45,
+      "testo": "In teoria si potrebbe anche fare da smartphone, ma lasciamo perdere questo discorso qui perché"
+    },
+    {
+      "inizio": 115.45,
+      "fine": 119.93,
+      "testo": "oggi mostrerò un programma che si può utilizzare nel computer e che ci permette di fare diverse"
+    },
+    {
+      "inizio": 119.93,
+      "fine": 122.97,
+      "testo": "cose tra cui anche modificare in una nostra voce e migliorarla, ok?"
+    },
+    {
+      "inizio": 122.97,
+      "fine": 128.41,
+      "testo": "Quindi abbiamo bisogno di un computer qualsiasi, ok, di un microfono naturalmente se volete"
+    },
+    {
+      "inizio": 128.41,
+      "fine": 132.09,
+      "testo": "un microfono budget basto un microfono USB, ok?"
+    },
+    {
+      "inizio": 132.09,
+      "fine": 135.61,
+      "testo": "In questo caso specifico come potete vedere questo no sure mi faccio nel esempio banale,"
+    },
+    {
+      "inizio": 135.61,
+      "fine": 140.37,
+      "testo": "questo microfono da oltre 300 euro per lo meno mentre sto registrando il video, quindi"
+    },
+    {
+      "inizio": 140.37,
+      "fine": 143.05,
+      "testo": "basto anche un microfono da 50 euro, ok?"
+    },
+    {
+      "inizio": 143.05,
+      "fine": 149.77,
+      "testo": "Un computer è un programma di registrazione dell'audio che si chiama audacity, ora quello"
+    },
+    {
+      "inizio": 149.77,
+      "fine": 154.49,
+      "testo": "che ho deciso di fare all'interno di questo video è regalarvi un video, un video presente"
+    },
+    {
+      "inizio": 154.49,
+      "fine": 160.25,
+      "testo": "all'interno di un altro nostro percorso che si chiama immobili digitali, barra, la muccarossa,"
+    },
+    {
+      "inizio": 160.25,
+      "fine": 164.97,
+      "testo": "dove spiegiamo tra le altre cose come funziona il modello di YouTube, bottom action, quindi"
+    },
+    {
+      "inizio": 164.97,
+      "fine": 169.81,
+      "testo": "dove tu è la possibilità oltre all'intelligenza artificiale di delegare tutto questo anche"
+    },
+    {
+      "inizio": 169.81,
+      "fine": 176.65,
+      "testo": "degli esseri umani, quindi un discorso leggermente diverso che ti stragonzio però se vuoi anche"
+    },
+    {
+      "inizio": 176.65,
+      "fine": 180.85,
+      "testo": "scalare un certo punto il tuo canale è comunque migliorare quella che la tua formazione"
+    },
+    {
+      "inizio": 180.85,
+      "fine": 185.57,
+      "testo": "in questo settore di acquistare, quindi sono dei percorsi che si stragonzio di acquistarli,"
+    },
+    {
+      "inizio": 185.57,
+      "fine": 190.33,
+      "testo": "naturalmente non è questo l'oggetto del video, ma ogni tanto le precise queste cose perché"
+    },
+    {
+      "inizio": 190.33,
+      "fine": 195.33,
+      "testo": "sono importanti e so che volete comunque migliorare a 360 gradi e come sempre se avete bisogno"
+    },
+    {
+      "inizio": 195.33,
+      "fine": 199.37,
+      "testo": "di qualcosa o volete maggiori informazioni, potete chiedere il tutto all'interno della"
+    },
+    {
+      "inizio": 199.37,
+      "fine": 204.41,
+      "testo": "comune di, e questo io vi lascio con il video bonus e quindi con audacity che ci permetterà"
+    },
+    {
+      "inizio": 204.41,
+      "fine": 208.97,
+      "testo": "finalmente di registrare una vostra voce e renderla anche migliorare. Quello che dovete fare"
+    },
+    {
+      "inizio": 208.97,
+      "fine": 213.81,
+      "testo": "è andare all'interno di Google e scrivere questa keyword, questa parola chiave audacity che"
+    },
+    {
+      "inizio": 213.81,
+      "fine": 218.97,
+      "testo": "è il nome del software che utilizzeremo e gratuito quindi vi basterà cliccare sul primo risultato,"
+    },
+    {
+      "inizio": 218.97,
+      "fine": 223.85,
+      "testo": "andate all'interno del download, come potete vedere potrete utilizzare questo software per diverse"
+    },
+    {
+      "inizio": 223.85,
+      "fine": 230.81,
+      "testo": "piattaforme anche Apple, Oltre, Windows, Linux, etc. Una volta effettuato il download della piattaforma,"
+    },
+    {
+      "inizio": 231.21,
+      "fine": 236.09,
+      "testo": "installate la naturalmente, apritela e ci ritroveremo all'interno della schermata. Ok,"
+    },
+    {
+      "inizio": 236.09,
+      "fine": 241.17,
+      "testo": "conci all'interno del software di audacity come potete vedere queste sono le impostazioni che"
+    },
+    {
+      "inizio": 241.17,
+      "fine": 246.93,
+      "testo": "generalmente io utilizzo, insieme al mio microfono che è un OSHURMV7 quindi naturalmente in questo"
+    },
+    {
+      "inizio": 246.93,
+      "fine": 251.09,
+      "testo": "caso il mio microfono ha un suo software quindi se avete un microfono che ha un suo software o comunque"
+    },
+    {
+      "inizio": 251.09,
+      "fine": 256.89,
+      "testo": "avete magari un impostazione per quanto riguarda l'audio external al PC stesso perché divende molto"
+    },
+    {
+      "inizio": 256.89,
+      "fine": 261.61,
+      "testo": "dalle schede audio che è stato utilizzando dal vostro PC, dal tipo di microfono, etc., etc., potete"
+    },
+    {
+      "inizio": 261.61,
+      "fine": 266.97,
+      "testo": "comunque gestire tutta parte poi lasciare tutto automatizzato qui all'interno di audacity, quindi"
+    },
+    {
+      "inizio": 266.97,
+      "fine": 270.89,
+      "testo": "dipende ad volamente dal tipo di microfono che avete. In ogni caso se ho utilizzato lo stesso mio"
+    },
+    {
+      "inizio": 270.89,
+      "fine": 276.29,
+      "testo": "microfono queste sono le impostazioni automatiche, detto questo vediamo un po' come funziona audacity,"
+    },
+    {
+      "inizio": 276.29,
+      "fine": 279.93,
+      "testo": "quindi questo lo possiamo andare a chiudere, qui possiamo andare a impostare il nostro microfono,"
+    },
+    {
+      "inizio": 279.93,
+      "fine": 284.93,
+      "testo": "vi ricordo di selezionare il microfono che volete utilizzare per registrare, qui possiamo impostare se"
+    },
+    {
+      "inizio": 284.93,
+      "fine": 290.37,
+      "testo": "vogliamo un audio stereo o mono, naturalmente se lo vogliamo stereo significa che sarà su due canale"
+    },
+    {
+      "inizio": 290.37,
+      "fine": 295.65,
+      "testo": "quindi è quello che generalmente si utilizza quando poi si va a pubblicare un video su YouTube quindi se"
+    },
+    {
+      "inizio": 295.65,
+      "fine": 299.97,
+      "testo": "volete un audio già pronto vi consiglio di selezionare il stereo, qui possiamo anche selezionare gli"
+    },
+    {
+      "inizio": 299.97,
+      "fine": 305.45,
+      "testo": "alto parlanti che ci sarebbe per poi ascoltare l'audio che abbiamo registrado e generalmente potete vedere"
+    },
+    {
+      "inizio": 305.45,
+      "fine": 312.13,
+      "testo": "quelle che sono le impostazioni che io utilizzo all'interno dei miei audio. Ora vediamo un attimo"
+    },
+    {
+      "inizio": 312.17,
+      "fine": 317.45,
+      "testo": "come funziona audacity, naturalmente qui abbiamo la possibilità di avere le varie sezioni che ci"
+    },
+    {
+      "inizio": 317.45,
+      "fine": 321.49,
+      "testo": "permettono tra l'altro nella sezione effetti di modificare totalmente il nostro audio, ora io"
+    },
+    {
+      "inizio": 321.49,
+      "fine": 325.81,
+      "testo": "non vi vorrò vedere tutto nel dettaglio perché anche inutile per YouTube entrare il troppo nello"
+    },
+    {
+      "inizio": 325.81,
+      "fine": 332.85,
+      "testo": "specifico perché quando parliamo di audio ci vorrebbe una serie di contenuti, una serie di informazioni"
+    },
+    {
+      "inizio": 332.85,
+      "fine": 337.49,
+      "testo": "che possono essere un corso a parte attenzione però diciamo che questo software ci permetti in maniera"
+    },
+    {
+      "inizio": 337.49,
+      "fine": 343.73,
+      "testo": "molto semplice e veloce, se abbiamo un microfono che fa il sosporco lavoro ma nella sezione specifica"
+    },
+    {
+      "inizio": 343.73,
+      "fine": 348.93,
+      "testo": "degli strumenti che abbiamo così ad alcuni microfoni, ecco in questo caso con audacity possiamo fare tutti"
+    },
+    {
+      "inizio": 348.93,
+      "fine": 354.45,
+      "testo": "in maniera molto veloce e automatizzata. Allora in anzitutto qui possiamo come potete vedere andare"
+    },
+    {
+      "inizio": 354.45,
+      "fine": 358.93,
+      "testo": "a visionare quelli che sono i pulsanti che generalmente utilizzeremo per andare a registrare i nostri video,"
+    },
+    {
+      "inizio": 358.93,
+      "fine": 364.13,
+      "testo": "se io voglio registrare audio, se io voglio registrare l'audio per esempio va da cliccare qui, ok,"
+    },
+    {
+      "inizio": 364.53,
+      "fine": 370.13,
+      "testo": "ed ecco che sto registrando perché audasi mi mostrerà esattamente quello che io sto dicendo attraverso"
+    },
+    {
+      "inizio": 370.13,
+      "fine": 376.29,
+      "testo": "le classiche Band, ok, che troviamo all'interno dei due canali stereo, ok, quindi questi non"
+    },
+    {
+      "inizio": 376.29,
+      "fine": 381.41,
+      "testo": "dualmente sono le onde che ci permetto di capire che sto registrando se piatto significa che qualcosa non sta"
+    },
+    {
+      "inizio": 381.41,
+      "fine": 387.41,
+      "testo": "funzionando. Se io voglio stoppare questo audio e quindi riprenderlo mi basta cliccare su pausa,"
+    },
+    {
+      "inizio": 387.41,
+      "fine": 393.65,
+      "testo": "quindi il primo pulsante e ho stoppato, ok, qui intanto come potete vedere una audasi di mi sta mostrando il"
+    },
+    {
+      "inizio": 393.65,
+      "fine": 399.01,
+      "testo": "fatto che comunque sta funzionando il microfono perché sta registrando, vedete qui vediamo il livello"
+    },
+    {
+      "inizio": 399.01,
+      "fine": 405.33,
+      "testo": "dell'audio. Se io riclicco di nuovo qui ecco che riparto, quindi posso continuare a registrare. Se voglio"
+    },
+    {
+      "inizio": 405.33,
+      "fine": 410.69,
+      "testo": "invece interromperi totalmente la registrazione mi basta cliccare qui su ferma, ecco che se io va da"
+    },
+    {
+      "inizio": 410.69,
+      "fine": 415.97,
+      "testo": "cliccare qui naturalmente non faccio più nulla. Se volessi però continuare a registrare questa tracci audio mi"
+    },
+    {
+      "inizio": 415.97,
+      "fine": 422.29,
+      "testo": "basta di nuovo cliccare su registra ed ecco che continuo a registrare in un nuovo spesso ne però sempre"
+    },
+    {
+      "inizio": 422.29,
+      "fine": 427.97,
+      "testo": "nella stessa identica tracci audio. Adesso stoppo nuovamente e andiamo a vedere un po' quello che è"
+    },
+    {
+      "inizio": 427.97,
+      "fine": 435.25,
+      "testo": "la scolta, quindi a me basta tornare indietro ok e vediamo se è registrato in maniera ottimale. Ed ecco"
+    },
+    {
+      "inizio": 435.25,
+      "fine": 440.85,
+      "testo": "che sto registrando perché audasi di mi mostrerà esottamente quello che io sto dicendo attraverso ok"
+    },
+    {
+      "inizio": 440.85,
+      "fine": 446.65,
+      "testo": "come potete vedere intanto qui audasi di mi fa vedere il volume quindi mi fa capire che io sto scoltando le"
+    },
+    {
+      "inizio": 446.65,
+      "fine": 451.81,
+      "testo": "case stanno funzionando perché naturalmente quando registremo delle tracci audio dobbiamo sia fare in modo"
+    },
+    {
+      "inizio": 451.81,
+      "fine": 456.41,
+      "testo": "che funziona il microfono sia dobbiamo ascoltare fondamentale per capire se c'è qualche problema quindi io vi"
+    },
+    {
+      "inizio": 456.41,
+      "fine": 462.05,
+      "testo": "consiglio di ascoltarle sempre le tracci audio. Ora una cosa molto interessante di audasi di è che se per caso c'è"
+    },
+    {
+      "inizio": 462.05,
+      "fine": 466.97,
+      "testo": "stato un errore io voglio cancellarlo quindi andiamo qui vedete la seconda traccia magari che ho"
+    },
+    {
+      "inizio": 466.97,
+      "fine": 472.89,
+      "testo": "registrato sempre l'interno di unica traccia voglio cancellarla mi basta selezionare quindi vedete io"
+    },
+    {
+      "inizio": 472.89,
+      "fine": 480.41,
+      "testo": "vado a selezionare questa traccia posso anche partire direttamente da qui all'inizio ok la seleziono"
+    },
+    {
+      "inizio": 480.41,
+      "fine": 486.15,
+      "testo": "tutta posso anche fuori in questa maniera ok quindi selezionare anche quella precedente però io"
+    },
+    {
+      "inizio": 486.15,
+      "fine": 491.85,
+      "testo": "arrivo a qui e clicco il pastocance ecco che ho cancellato quindi se c'è un errore io posso semplicemente"
+    },
+    {
+      "inizio": 491.85,
+      "fine": 497.45,
+      "testo": "cancellarla e poi registrare nuovamente naturalmente una volta che ho scoltato il mio audio io capisco se"
+    },
+    {
+      "inizio": 497.45,
+      "fine": 503.45,
+      "testo": "il volume del microfono è perfetto pure no perché qui posso impostare il volume del microfono qui il volume"
+    },
+    {
+      "inizio": 503.45,
+      "fine": 508.29,
+      "testo": "dell'ascoltato quindi di quello che poi l'adracciavo io diciamo che questo ci serve solo essenzialmente per"
+    },
+    {
+      "inizio": 508.29,
+      "fine": 513.53,
+      "testo": "ascoltare quindi va cambia poco questo però è fondamentale cioè nel senso anche queste fondamentale perché"
+    },
+    {
+      "inizio": 513.53,
+      "fine": 519.29,
+      "testo": "comunque se lo mettiamo al volume massimo capiamo se ci sono degli errori se ci sono dei fruci e quindi vogliamo"
+    },
+    {
+      "inizio": 519.29,
+      "fine": 525.61,
+      "testo": "migliorare qualcosa magari ci siamo diventicati più faccio un esempio banalissimo il condizionatore"
+    },
+    {
+      "inizio": 525.61,
+      "fine": 531.09,
+      "testo": "aperto vogliamo chiudarlo perché troppo rumorose di storbal audio allora io vi consiglio se ci sono dei"
+    },
+    {
+      "inizio": 531.09,
+      "fine": 537.85,
+      "testo": "rumori che danno fastidio se potete di andarli a rimuovere poi c'è il modo per poter rimuovere in post"
+    },
+    {
+      "inizio": 537.85,
+      "fine": 546.05,
+      "testo": "produzione queste questi rumori con software tipo audasi di o anche ado adician però io dico se possiamo già"
+    },
+    {
+      "inizio": 546.05,
+      "fine": 550.37,
+      "testo": "eliminare i rumori registrazione meglio perché comunque l'adracciavo di essere ancora più pulita poi"
+    },
+    {
+      "inizio": 550.37,
+      "fine": 556.97,
+      "testo": "dipende dal tipo di microfono che voi andate ad utilizzare ripeto quindi se io ho fatto un errore lo posso"
+    },
+    {
+      "inizio": 556.97,
+      "fine": 562.53,
+      "testo": "lancelare posso riprovare quindi vedete io riprovo di nuovamente a dire le se sentire cosa magari"
+    },
+    {
+      "inizio": 562.53,
+      "fine": 568.85,
+      "testo": "come ho detto prima riascolto vedo se tutto ok va dove vedete io posso anche spostare la ok"
+    },
+    {
+      "inizio": 568.85,
+      "fine": 573.85,
+      "testo": "qua abbiamo chiuso perfetto vedete io riprovo di nuovamente a dire le se ok quindi io posso"
+    },
+    {
+      "inizio": 573.85,
+      "fine": 580.13,
+      "testo": "riescoltare se ok vado avanti se c'è un problema di volume io porto il volume a metà generalmente"
+    },
+    {
+      "inizio": 580.13,
+      "fine": 586.41,
+      "testo": "l'ideale potrebbe anche essere se non avete comunque dei microfono in tipo quello che io di poter"
+    },
+    {
+      "inizio": 586.41,
+      "fine": 592.85,
+      "testo": "andare a impostare il volume a metà ok effettuare la registrazione e poi all'interno degli effetti"
+    },
+    {
+      "inizio": 592.85,
+      "fine": 597.89,
+      "testo": "potete comunque amplificare e utilizzate io se clicco qui vi faccio vedere un effetto"
+    },
+    {
+      "inizio": 597.89,
+      "fine": 605.53,
+      "testo": "uno degli effetti che possiamo utilizzare all'interno di audasi di io ricco su amplifica naturalmente"
+    },
+    {
+      "inizio": 605.53,
+      "fine": 612.45,
+      "testo": "devo selezionare l'audio giustamente quindi lo selezionare di tutto amplifica e qui posso andare"
+    },
+    {
+      "inizio": 612.45,
+      "fine": 620.01,
+      "testo": "a amplificare quello che il volume aumentandolo qui ok diciamo che c'è veramente tanto da dire"
+    },
+    {
+      "inizio": 620.01,
+      "fine": 625.45,
+      "testo": "da questo punto di vista per quanto riguarda le tracci audio quindi io vi consiglio naturalmente di poi"
+    },
+    {
+      "inizio": 625.45,
+      "fine": 631.93,
+      "testo": "fare anche dei test per capire a seconda anche il tipo di tono di voce che voi avete e quindi dal volume"
+    },
+    {
+      "inizio": 631.93,
+      "fine": 637.69,
+      "testo": "dalle spaccettature della della vostra voce e riuscire ad accappire quale può essere l'effetto migliore però"
+    },
+    {
+      "inizio": 637.69,
+      "fine": 642.99,
+      "testo": "diciamo che se vedo un ottimo microfono se avete acquistato uno dei microfoni che noi abbiamo consigliato"
+    },
+    {
+      "inizio": 642.99,
+      "fine": 648.49,
+      "testo": "già nel microfono stesso potete modificare il volume quindi qui dovete solo registrare e al massimo in"
+    },
+    {
+      "inizio": 648.49,
+      "fine": 652.97,
+      "testo": "fase di registrazione se vi rende in fase di montaggio se vi rendete conto che il volume troppo basso"
+    },
+    {
+      "inizio": 652.97,
+      "fine": 658.29,
+      "testo": "potete aumentare il volume ok infatti guardate quello che noi possiamo fare qui e se vogliamo"
+    },
+    {
+      "inizio": 658.29,
+      "fine": 663.57,
+      "testo": "modificare qui abbiamo tutte queste voce e ve lo già fatte vedere qui possiamo andare anche a"
+    },
+    {
+      "inizio": 663.57,
+      "fine": 668.61,
+      "testo": "utilizzare tante altre voce come per esempio il discorso relativo di rumore quando sentite"
+    },
+    {
+      "inizio": 668.61,
+      "fine": 675.73,
+      "testo": "parlare nel mondo dei video di rumore per quanto riguarda gli audio il rumore in realtà è il tutti"
+    },
+    {
+      "inizio": 675.73,
+      "fine": 682.05,
+      "testo": "quei fastidiosi riusci eccetera che possono essere limosti da un audio rendendo comunque l'audio"
+    },
+    {
+      "inizio": 682.05,
+      "fine": 689.01,
+      "testo": "perfetto li liscio limpio ok ora considerate che se voi per esempio andate a realizzare dei video su"
+    },
+    {
+      "inizio": 689.01,
+      "fine": 694.13,
+      "testo": "youtube su un canale dove magari mettete solo la voce poi mettete una tracciaglio se il rumore"
+    },
+    {
+      "inizio": 694.13,
+      "fine": 700.05,
+      "testo": "veramente basso lediting in utile in quel caso perché comunque la musica va a coprire quindi"
+    },
+    {
+      "inizio": 700.05,
+      "fine": 706.17,
+      "testo": "le tracciaglio vanno a coprire il rumore si sente il vostro volume della vostra voce e di conseguenza"
+    },
+    {
+      "inizio": 706.17,
+      "fine": 711.61,
+      "testo": "risulta tutto vi radevole ripeto sempre lediting dell'audio importantissimo mai molto più importante"
+    },
+    {
+      "inizio": 711.61,
+      "fine": 717.73,
+      "testo": "partire comunque da una tracciaglio dove non ci siano dei rumori di sottofondo esterni che noi"
+    },
+    {
+      "inizio": 717.73,
+      "fine": 722.41,
+      "testo": "possiamo evitare e come anche nei video se noi possiamo illuminare bene la scena già in partenza"
+    },
+    {
+      "inizio": 722.41,
+      "fine": 729.09,
+      "testo": "avere una fotografia del video chiara l'impida che si vede bene magari con una buona"
+    },
+    {
+      "inizio": 729.09,
+      "fine": 733.61,
+      "testo": "video camera e tutto il resto è normale che poi in fase di editing è molto più facile di dare perché"
+    },
+    {
+      "inizio": 733.61,
+      "fine": 738.21,
+      "testo": "non dobbiamo andare anche a risolvere i problemi possiamo cimentarsi invece nel migliorare il video magari"
+    },
+    {
+      "inizio": 738.21,
+      "fine": 742.21,
+      "testo": "aggiungendo gli effetti eccetera eccetera si abbiamo dei problemi capite bene che il montaggio è"
+    },
+    {
+      "inizio": 742.21,
+      "fine": 747.21,
+      "testo": "molto più lungo quindi per ricapitolare ci basta abbrire ad acidi andare a impostare il volume"
+    },
+    {
+      "inizio": 747.21,
+      "fine": 752.61,
+      "testo": "nella maniera corretto una volta che abbiamo scoltato il nostro volume cliccare su play registremo il"
+    },
+    {
+      "inizio": 752.61,
+      "fine": 757.05,
+      "testo": "nostro audio andiamo a cancellare quando ci sono delle parti che non ci piace una volta che è"
+    },
+    {
+      "inizio": 757.05,
+      "fine": 761.29,
+      "testo": "tutto ok e abbiamo naturalmente impostato il tutto in questa maniera quello che dobbiamo fare"
+    },
+    {
+      "inizio": 761.29,
+      "fine": 767.61,
+      "testo": "andare su file e dobbiamo andare all'interno della voce esporta allora avete diverse tipologie"
+    },
+    {
+      "inizio": 767.61,
+      "fine": 773.13,
+      "testo": "di esportazioni generalmente questa la seconda voce è per un audio dove poi possiamo fare un"
+    },
+    {
+      "inizio": 773.13,
+      "fine": 779.37,
+      "testo": "editing dell'audio migliore perché diciamo a molte più sfacettature ok peserà di più il file e"
+    },
+    {
+      "inizio": 779.37,
+      "fine": 784.89,
+      "testo": "di conseguenza lo possiamo modificare molto meglio ma se l'audio è già ottimo io vi consiglio di esportarlo"
+    },
+    {
+      "inizio": 784.89,
+      "fine": 790.47,
+      "testo": "come mp3 appunto anche per non appesantire il montaggio del video per non inviare file al troppo"
+    },
+    {
+      "inizio": 790.47,
+      "fine": 796.33,
+      "testo": "pesanti compresi magari i video e tutto il resto quindi possiamo direttamente andare qui su questa"
+    },
+    {
+      "inizio": 796.33,
+      "fine": 801.49,
+      "testo": "voce una volta fatto questo andiamo a selezionare per esempio la cartella e come potete vedere io"
+    },
+    {
+      "inizio": 801.49,
+      "fine": 809.53,
+      "testo": "va a inserire il nome del file va a inserire naturalmente salva come file mp3 posso andare a impostare la"
+    },
+    {
+      "inizio": 809.53,
+      "fine": 814.97,
+      "testo": "modalità del bitrate in maniera differente quindi costante e meglio variabile combinazione io posso"
+    },
+    {
+      "inizio": 814.97,
+      "fine": 820.45,
+      "testo": "mettere combinazione velocità variabile io metto veloce standard possiamo andare praticamente a"
+    },
+    {
+      "inizio": 820.45,
+      "fine": 827.41,
+      "testo": "creare un audio estremo come qualità quindi senza senso vedete già il nome estremo oppure standard"
+    },
+    {
+      "inizio": 827.41,
+      "fine": 833.49,
+      "testo": "no possiamo impostare standard lasciamo naturalmente tutto in questa maniera e poi clicchiamo su salva"
+    },
+    {
+      "inizio": 833.49,
+      "fine": 840.01,
+      "testo": "naturalmente quello che voi potete fare qui è impostare anche diverse voci per capire poi il vostro"
+    },
+    {
+      "inizio": 840.01,
+      "fine": 845.95,
+      "testo": "audio una volta che avete esportato qual è quello che vi piace di più quindi volete provare la"
+    },
+    {
+      "inizio": 845.95,
+      "fine": 851.71,
+      "testo": "versione estremo senza senso salvate prima così una volta che avete salvato chiudete riaprite"
+    },
+    {
+      "inizio": 851.71,
+      "fine": 858.09,
+      "testo": "ritornate qui e salvate la come standard ascoltate magari con delle guffie perché se ascoltate l'audio con"
+    },
+    {
+      "inizio": 858.09,
+      "fine": 863.51,
+      "testo": "delle guffie ancora meglio riuscite a sentire tutti quelli tutte quelle che sono le spacettature di un"
+    },
+    {
+      "inizio": 863.51,
+      "fine": 869.15,
+      "testo": "audio come vi dicevi rimuori di sottopondo la vostra voce se c'è il pop cioè quando voi praticamente"
+    },
+    {
+      "inizio": 869.15,
+      "fine": 875.53,
+      "testo": "parlate troppo vicino al microfone magari si sente come se ci fosse un esplosione di areo"
+    },
+    {
+      "inizio": 875.53,
+      "fine": 880.71,
+      "testo": "ok all'intero del microfono che non è mai bello da ascoltare quindi se volete poi registare voi i"
+    },
+    {
+      "inizio": 880.71,
+      "fine": 885.19,
+      "testo": "vostri audio io vi consiglio di acquistare un filtro antipop su Amazon se ne sono tantissime costano"
+    },
+    {
+      "inizio": 885.19,
+      "fine": 890.11,
+      "testo": "veramente poco poi ci sono i microfone che hanno già incorporato il filtro antipop comunque con delle"
+    },
+    {
+      "inizio": 890.11,
+      "fine": 896.79,
+      "testo": "guffie anche da 20 30 40 euro 50 euro anche alcune da 10 euro attenzione riuscite a ascoltare"
+    },
+    {
+      "inizio": 896.79,
+      "fine": 901.59,
+      "testo": "meglio l'audio capite se ci sono delle differenze se vuole differenze che vedete sono minime considerate"
+    },
+    {
+      "inizio": 901.59,
+      "fine": 906.71,
+      "testo": "che magari la maggior parte le volte mettere delle traccia audio allora capite che inutile stare l'iasbatterse"
+    },
+    {
+      "inizio": 906.71,
+      "fine": 911.27,
+      "testo": "lasciate tutto così come esportate il vostro audio una volta che vedete esportate il vostro audio la mettete"
+    },
+    {
+      "inizio": 911.27,
+      "fine": 917.39,
+      "testo": "all'intero di premier pro o del vostro software di video editing e potete effettuare il montaggio"
+    },
+    {
+      "inizio": 917.39,
+      "fine": 922.71,
+      "testo": "naturalmente se avete le domande poi potete chiedere senza problemi se ma avete dei lubi siamo"
+    },
+    {
+      "inizio": 922.71,
+      "fine": 927.87,
+      "testo": "a vostra completa disposizione considerate che ci sono una marea di guide di tutorial nel web"
+    },
+    {
+      "inizio": 927.87,
+      "fine": 932.63,
+      "testo": "relativo al mondo dell'audio quindi se volete comunque specializzarvi in questo vi basterà andare"
+    },
+    {
+      "inizio": 932.63,
+      "fine": 938.75,
+      "testo": "su google su youtube trovate gratis tante informazioni qui io vi volevo per vedere la strada migliore più veloce per"
+    },
+    {
+      "inizio": 938.75,
+      "fine": 945.99,
+      "testo": "poter andare a creare un audio pulito perché in realtà non è tanto il fatto di poi massimizzare la"
+    },
+    {
+      "inizio": 945.99,
+      "fine": 950.83,
+      "testo": "qualità dell'audio che nel lungo periodo soprattutto se avete un canale che sta crescendo alla grande"
+    },
+    {
+      "inizio": 950.83,
+      "fine": 954.39,
+      "testo": "può essere una cosa molto positiva ma sono i contenuti che vengono da creare le strategie che"
+    },
+    {
+      "inizio": 954.39,
+      "fine": 959.47,
+      "testo": "creerete quello vi farà fare le norme differenza l'audio vi farà fare la differenza nel caso in"
+    },
+    {
+      "inizio": 959.47,
+      "fine": 965.15,
+      "testo": "cui è un buon audio ok se l'audio è scadente non va bene allora in quel caso no ecco perché noi"
+    },
+    {
+      "inizio": 965.15,
+      "fine": 969.47,
+      "testo": "consigliamo comunque almeno l'acquisto di un microfono se volete registrare voi il audio quello è"
+    },
+    {
+      "inizio": 969.47,
+      "fine": 974.87,
+      "testo": "fondamentale ma poi stare lì a guardare la virgola il punto molto spesso inutile soprattutto su"
+    },
+    {
+      "inizio": 974.87,
+      "fine": 979.27,
+      "testo": "canale appena lanciati perché le cose più importanti ripeto e avere un buon audio avere dei"
+    },
+    {
+      "inizio": 979.27,
+      "fine": 983.71,
+      "testo": "buoni contenuti e poi le strategie che andano ad utilizzare poi ripeto a mano a mano scalate il"
+    },
+    {
+      "inizio": 983.71,
+      "fine": 988.55,
+      "testo": "vostro business acquistate magari degli strumenti migliori microconi migliori diventate più bravi nell'editing"
+    },
+    {
+      "inizio": 988.55,
+      "fine": 993.55,
+      "testo": "del video nell'editing dell'audio e quindi poi naturalmente il vostro pubblico apprezzela con questo"
+    },
+    {
+      "inizio": 993.55,
+      "fine": 996.51,
+      "testo": "video abbiamo terminato ci vediamo in un prossimo video ciao e a presto"
+    }
+  ]
+}
