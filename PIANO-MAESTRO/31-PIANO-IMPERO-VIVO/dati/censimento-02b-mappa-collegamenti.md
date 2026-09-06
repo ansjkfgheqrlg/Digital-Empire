@@ -271,3 +271,275 @@ consistency**, che e' l'unico gate dell'Impero che **rimanda indietro il brief a
 | 157 | MKT-Conductor | `marketing/handoffs/log` | ogni richiesta/risposta cross-ecosistema registrata; G4 fallito → rework specifico o rinegoziazione loggata | "Handoff acceptance rate": % consegne accettate senza rework | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:591`, `:600`, `:646` | NO (namespace mai creato) | INTER · MAI (**e' il registro dei passaggi, e non contiene niente**) |
 | 158 | BR2 Brand Voice Architect (WF-BRAND-EVOLUTION) | Max (via ADR) | proposta evolutiva del brand DE | *"solo Max modifica Art.2"*; proposta come ADR-bozza, non si attua senza approvazione (Art.5.3 Mandato) | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:324` | NO | INTRA → LX · MAI |
 | 159 | tutti i reparti L2 di 04-MKT | committenti esterni | *"ogni reparto ha almeno un handoff reale entro M5"* | nessuno oltre la scadenza M5 | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:676` | NO | INTER · **VAGO** (promessa di data, non passaggio) · MAI |
+
+### FONTE 5a — `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md`
+
+MB si autodefinisce **"cliente interno degli ecosistemi trasversali"** (`:45`) e *"non duplica capacita'
+che esistono altrove"*: e' l'ecosistema che ORDINA piu' di tutti e produce quasi nulla in proprio
+(`:186-188`: *"i passi 5-9 sono eseguiti da Content-Factory su ordine `WF-YT-VIDEO-ORDER`;
+Multi-Business valida la consegna e possiede i gate"*). Contratto Bus dichiarato:
+`{from, to, payload, acceptance_criteria}` (`:64`) — schema n.2 del censimento gemello, l'unico
+riusato tale e quale. Verifica su disco: `ls company/05-multibusiness` → **inesistente**; nessun
+ordine, nessun `brand_kit`. **Se CF non riceve l'ordine, MB non produce nulla: e' l'ecosistema piu'
+dipendente dell'Impero.** Nota di merito: MB e' l'unico che nomina un agente il cui unico mestiere
+e' **verificare cio' che rientra** (`mb-yt-handoff-validator`, `:128`) e uno che **ordina e non
+produce** (`:89`).
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 160 | 05-MULTI-BUSINESS | 03-CONTENT-FACTORY | produzione video YouTube (script→voiceover→visual→thumbnail), manoscritti libri, creative store — payload `{brand_kit, formato, quantita', deadline, spec_tecniche, riferimenti_stile}` | asset conformi a spec (durata, risoluzione, formato file), brand_kit rispettato, consegna entro deadline | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:68` | NO | INTER · MAI (**il piu' pesante dell'Impero: senza di lui MB non ha prodotto**) |
+| 161 | 05-MULTI-BUSINESS | 04-MARKETING | copy listing KDP, descrizioni SEO, titoli, copy ads e-comm, hook script — payload `{brand_kit, icp, formato_copy, framework: APSOC, vincoli_piattaforma}` | copy passa Copy/APSOC Guild gate + brand gate | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:69` | NO | INTER · MAI (specchio di #126) |
+| 162 | 05-MULTI-BUSINESS | 08-INTELLIGENCE | ricerca niche, analisi competitor, trend, ingestione Empire Studio dei canali riferimento — `{dominio, domande_di_ricerca, output_atteso: dossier_wiki}` | dossier in wiki `sources/` o `synthesis/` con **dati verificabili e fonti** | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:70` | NO | INTER · MAI |
+| 163 | 05-MULTI-BUSINESS | 06-PLATFORM | tooling: CLI KDP, integrazioni YouTube Data API, store setup — `{spec_funzionale, API_target, vincoli}` | **tool passa `verify.sh` Empire** | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:71` | NO | INTER · MAI |
+| 164 | 05-MULTI-BUSINESS | 09-OPERATIONS | esecuzione swarm mass-production, scheduling pubblicazioni, budget — `{workflow_id, parallelismo, budget_max, schedule}` | dry-run ok, **Cost-Sentinel verde** | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:72` | NO | INTER · MAI |
+| 165 | 05-MULTI-BUSINESS | 07-FORGE | nuove skill/team (es. `yt-seo-optimizer`) — `{gap_capacita', spec_skill}` | skill conforme a progressive disclosure (kernel ≤500 righe) | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:73` | NO | INTER · MAI |
+| 166 | 03-CONTENT-FACTORY | 05-MB (`mb-yt-handoff-validator`) | **consegna di ritorno**: script + audio + video + thumbnail contro il contratto `WF-YT-VIDEO-ORDER` | **4 gate bloccanti in serie**: #1 Script (hook 15s, similarita' < soglia vs ultimi 20 script), #2 Audio (-14 LUFS, durata ±5%), #3 Visual (≥1080p, thumbnail leggibile a 120px), #4 SEO — gate rosso = pacchetto rispedito al team con report di failure in ReasoningBank | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:197`, `:206-210`, `:212-213` | NO | INTER · MAI (**il ritorno meglio specificato di tutto l'Impero: 4 gate misurabili e un rimando scritto**) |
+| 167 | 05-MB (`WF-PUB-BOOK-ORDER`) | 03-CONTENT-FACTORY | ordine manoscritto `{brand_kit, formato: manoscritto_md + image_prompts.yaml, quantita': 1, spec: n_capitoli/parole/stile}` | GATE LAYOUT a valle su `book_final.pdf` 6x9 + `qa_report.md` verde | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:249-253` | NO | INTER · MAI |
+| 168 | 05-MB (`WF-PUB-COVER`) | 03-CONTENT-FACTORY | spec cover (trim+spine calcolati dal n. pagine reale) | **Cover Gate**: dimensioni trim+bleed corrette per il n. pagine reale; testo dorso leggibile; conformita' template KDP | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:255-256`, `:288` | NO | INTER · MAI |
+| 169 | 05-MB (`WF-PUB-LISTING`) | 04-MARKETING | richiesta copy listing KDP (APSOC), 7 keyword, categorie, pricing | **Listing Gate**: no keyword stuffing (policy KDP); **descrizione APSOC approvata da Marketing**; 7 keyword + 3 categorie coerenti con la niche | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:257-258`, `:289` | NO | INTER · MAI |
+| 170 | 05-MB (`WF-YT-ANALYTICS`) | calendario + memoria `mb/yt/patterns` | metriche 48h/7gg/28gg → report retention/CTR + raccomandazioni che **retro-alimentano i brief** | *"la cadenza non supera mai la capacita' dei gate"* | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:199`, `:427` | NO | INTRA · MAI (**ciclo chiuso progettato, mai chiuso**) |
+| 171 | 05-MB (`WF-PUB-MONITOR`) | fase 1 (niche research) | BSR, recensioni, royalty → "feedback a (1)" | non dichiarato | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:260` | NO | INTRA · **VAGO** · MAI |
+| 172 | 05-MB / MB-PUB (skill `book-to-skill`) | 02-INFO-BUSINESS | libro pubblicato → skill/asset riusabile: **cross-sell libro → corso** ("ponte", trigger post-pubblicazione da definire) | trigger post-pubblicazione **non ancora definito** | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:275`, `:319` | NO | INTER · **VAGO** · MAI (gemello inverso di #59/#80) |
+| 173 | `Lanco ebook/` (ebook venduto fuori KDP) | 02-INFO-BUSINESS | confine di proprieta' del prodotto: "ebook venduto fuori KDP = Info-Business" | **decisione di confine mai presa** ("Ingestione wiki + decisione confine") | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:311` | NO | INTER · **VAGO** · MAI |
+| 174 | 05-MB (`caroselli/`, Carousel Factory) | 03-CONTENT-FACTORY | caroselli/promo social: *"MB e' solo committente"* — da migrare a CF e ordinare via contratto | non dichiarato | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:316`, `:273` | NO | INTER · MAI |
+| 175 | 05-MB (`WF-ECOM-PRODUCT`) | 08-INTELLIGENCE | ricerca prodotto e-commerce "eseguita da Intelligence su ordine MB", output = dossier wiki | dossier WF-ECOM-PRODUCT + decisione `mb-conductor` + **ok umano** per passare a E1 | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:293-296` | NO | INTER · MAI |
+| 176 | 05-MB (E2 store MVP) | 04-MARKETING + 03-CONTENT-FACTORY | ≤10 listing: "copy → Marketing, visual → Content-Factory" | E1 chiusa, budget approvato | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:297` | NO | INTER · MAI |
+| 177 | 05-MB (`KDP - prodottti digitali/Leanding Page`) | 06-PLATFORM | landing KDP gestita "da Platform per conto di MB-PUB" | audit + eventuale `empire-style` | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:310` | NO | INTER · **VAGO** · MAI |
+| 178 | 05-MB (F-MB2 scaffolding) | 07-FORGE | "ordini alla Forge per le skill P1" | skill P1 consegnate e conformi; **zero orfani tra gli asset §7** | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:410` | NO | INTER · MAI |
+| 179 | `Strategia Ebook _ Kpd - pr. TikTock.pdf` | 08-INTELLIGENCE → MB-PUB | conoscenza di lancio/promo da ingerire e riusare in `WF-PUB-LISTING` | ingestione Empire Studio / wiki | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS.md:312`, `:276` | NO | INTER · **VAGO** · MAI |
+
+### FONTE 5b — `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md`
+
+La V2 dichiara la tabella handoff **"invariata dal v1"** (`:95`) e aggiunge una sola colonna: il
+**reparto MB emittente** (`:98`). E' l'unico dossier dell'Impero che dica non solo "chi ordina a chi"
+ma **quale reparto interno firma l'ordine**. Il guadagno vero della V2 sta altrove: introduce il
+**ciclo di rifiuto** (`WF-YT-ORDER-QA`, `:228`) e il **tracciamento dello stato ordine**
+(`mb-yt-order-tracker`, `:221`) — cioe' gli unici due pezzi dell'Impero che sappiano dire *dove sta
+adesso* un passaggio di consegne. Righe qui sotto: solo cio' che il v1 non diceva.
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 180 | MB / YT-Produzione-Ordini + PUB-Produzione-Ordini + ECOM-Store | 03-CONTENT-FACTORY | stesso ordine del v1 (#160) ma con **reparto emittente nominato** | invariati | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:100` | NO | INTER · MAI |
+| 181 | MB / YT-Ottimizzazione + PUB-Packaging + ECOM-Crescita | 04-MARKETING | copy listing/SEO/titoli/ads con reparto emittente nominato | *"copy passa Copy/APSOC Guild gate + brand gate (**04-MARKETING-V2 §7.1 G1/G2**)"* — **unico rimando incrociato a un gate di un altro dossier in tutto l'Impero** | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:101` | NO | INTER · MAI |
+| 182 | MB / YT-Strategia + PUB-Ricerca + ECOM-Ricerca | 08-INTELLIGENCE | ricerca niche/competitor/trend con reparto emittente nominato | dossier in wiki con dati verificabili e fonti | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:102` | NO | INTER · MAI |
+| 183 | MB / YT-Pubblicazione + PUB-Pubblicazione | 06-PLATFORM | tooling con reparto emittente nominato | tool passa `verify.sh` Empire | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:103` | NO | INTER · MAI |
+| 184 | MB / MB-Portfolio | 09-OPERATIONS | swarm mass-production, scheduling, budget — emesso dal **nuovo layer di portafoglio** | dry-run ok, Cost-Sentinel verde | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:104` | NO | INTER · MAI |
+| 185 | MB / `mb-conductor` + MB-Portfolio | 07-FORGE | skill nuove (`yt-seo-optimizer`, `mb-portfolio-registry`, `order-handoff-validator` P2) | kernel ≤500 righe; **skill P0 consegnate e conformi**, zero orfani | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:105`, `:648`, `:759` | NO | INTER · MAI |
+| 186 | 03-CONTENT-FACTORY (consegna non conforme) | MB (`WF-YT-ORDER-QA`) | **ciclo di rifiuto/rework**: la consegna CF che non passa la validazione **ri-apre l'ordine con feedback specifico invece di rilanciare da zero** | consegna corretta entro **2 cicli di rework**, poi escalation a `mb-yt-order-lead` | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:228`, `:681` | NO | INTER · MAI (**il quarto e ultimo canale di ritorno scritto dell'Impero — e l'unico INTER con contatore di tentativi**) |
+| 187 | 03-CONTENT-FACTORY | `mb-yt-asset-receiver` → YT-Ottimizzazione | asset consegnati ricevuti, archiviati e **instradati** al reparto successivo | non dichiarato | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:219` | NO | INTER → INTRA · MAI (**unico "instradatore di consegne" nominato in tutto l'Impero**) |
+| 188 | `mb-yt-order-tracker` | `MB-Portfolio` (cost-attribution) | stato di ogni ordine in corso: `in coda` / `in produzione` / `consegnato` / `rifiutato` | non dichiarato | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:221` | NO | INTRA · MAI (**l'unico organo dell'Impero che saprebbe dire dove sta un passaggio adesso**) |
+| 189 | 03-CONTENT-FACTORY | `mb-pub-order-handoff-validator` | manoscritto + immagini: validazione **prima** dell'ingresso in book-factory (layout) | rispetto del brief verificato prima del passaggio a layout | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:312`, `:322` | NO | INTER · MAI |
+| 190 | `mb-pub-res-lead` (PUB-Ricerca) | 04-MARKETING + 08-INTELLIGENCE | "smista le richieste di niche verso Marketing/Intelligence per copy e dati" | non dichiarato | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:288` | NO | INTER · **VAGO** · MAI |
+| 191 | `mb-pub-pkg-lead` (PUB-Packaging) | 04-MARKETING | "smista il copy a Marketing (APSOC)" per cover + listing | non dichiarato oltre il Listing Gate | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:333` | NO | INTER · **VAGO** · MAI |
+| 192 | `WF-YT-COMPETITOR-INGEST` | 08-INTELLIGENCE (Empire Studio) | ordine/aggiornamento dell'ingestione dei canali di riferimento (prima esecuzione = F-MB1, poi ri-scan periodico) | **2+ dossier in wiki `sources/`; pattern salvati in `mb/yt/patterns`** | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:177`, `:206` | NO | INTER · MAI |
+| 193 | `mb-port-report-analyst` | `mb-conductor` → C-Suite | report mensile revenue/costo per istanza | `WF-MB-PORTFOLIO-REVIEW`: decisione tieni/kill/rilancia **con dati da `WF-YT-ANALYTICS`/`WF-PUB-MONITOR`, mai a opinione** | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:450`, `:458` | NO | INTRA → INTER (L0) · MAI |
+| 194 | `mb-port-launch-gate` | `mb-conductor` / swarm | autorizzazione ad aprire una nuova istanza (canale/libro/store) | **≥10 video con ≥80% gate verdi al primo colpo** (F-MB5) + niche/angolo non duplicato nel registro `brand_kit` | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:449`, `:459`, `:718` | NO | INTRA · MAI |
+| 195 | `mb-qa-sentinel-liaison` | Quality/Brand/Cost Sentinel (Backbone) | escalation da gate rossi ricorrenti | non dichiarato | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:468` | NO | INTER (Backbone) · **VAGO** · MAI |
+| 196 | `mb-port-qa` (Portfolio Isolation QA) | ogni istanza MB | verifica che ogni istanza legga **solo** il proprio namespace + i pattern condivisi — **blocca** su cross-contaminazione | zero cross-contaminazione di memoria fra istanze | `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md:446` | NO | INTRA · MAI |
+
+### FONTE 6 — `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md`
+
+E' il dossier che dichiara il principio da cui dipende TUTTA la mappa: *"Nessun ecosistema business
+tocca direttamente codice, creazione di agenti, memoria o runtime: **lo chiede ai core via handoff
+contract**"* (`:11`). Cioe': i 5 ecosistemi che incassano non possono muoversi senza 4 passaggi di
+consegne verso i core. La **Matrice di dipendenza Core × Business** (`:501-506`) e' l'unica tabella
+20-celle dell'Impero in cui ogni cella e' un passaggio dichiarato, e nessuna cella e' vuota.
+L'invariante di chiusura e' esplicito: *"i 4 core non generano revenue diretta — il loro KPI ultimo
+e' il KPI degli altri 5"* (`:535`). Verifica su disco: nessuna delle 20 celle ha un contratto, un file
+o un log; `company/Ecosistemi/06-PLATFORM|07-FORGE|08-INTELLIGENCE|09-OPERATIONS/` contengono solo
+`ECOSISTEMA.md`/`BACKBONE.md`/cartelle vuote di scaffolding.
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 197 | 01-AGENCY | 06-PLATFORM | `{brief cliente, brand_kit, icp, scope, deadline}` | sito/implementazione consegnata + **codice in custodia cliente** | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:47` | NO | INTER · MAI (gemello di #10 `HC-AG-PL-01`) |
+| 198 | 04-MARKETING | 06-PLATFORM | copy APSOC validato | *"PLATFORM non scrive copy: **lo monta**"* — confine non valicabile | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:48` | NO | INTER · MAI |
+| 199 | 03-CONTENT-FACTORY | 06-PLATFORM | asset visual/video | embed + ottimizzazione performance (Lighthouse ≥90 sui siti consegnati, `:129`) | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:49` | NO | INTER · MAI |
+| 200 | 06-PLATFORM | 09-OPERATIONS | **ogni build/deploy emette evento** `{commessa, costo, durata, esito}` per cost attribution | evento emesso a ogni build, senza eccezioni | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:50` | NO | INTER · MAI (**se esistesse, sarebbe il primo euro misurato dell'Impero**) |
+| 201 | 06-PLATFORM | 08-INTELLIGENCE | post-mortem tecnici, ADR d'architettura | → wiki `tools/` + ReasoningBank | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:51` | NO | INTER · MAI |
+| 202 | 07-FORGE | 06-PLATFORM | nuovi agenti/skill engineering (es. skill `site-*`) | **consegnati E installati** | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:52` | NO | INTER · MAI |
+| 203 | 08-INTELLIGENCE | 06-PLATFORM | ricerca tecnica (stack, librerie, competitor tecnici) | **prima di ogni scelta d'architettura** (vincolo temporale, non solo di contenuto) | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:53` | NO | INTER · MAI |
+| 204 | QUALSIASI ecosistema | 07-FORGE | `{capability mancante, contesto, KPI attesi, budget}` | artefatto consegnato + **eval report**; tempo richiesta→consegna ≤2 giorni per skill semplice | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:163`, `:242` | NO | INTER (9→1) · MAI |
+| 205 | 08-INTELLIGENCE | 07-FORGE | materiale raw ingerito (Empire Studio) + pattern ReasoningBank | input per forgiare/arricchire skill | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:164`, `:282` | NO | INTER · MAI (**dichiarato da entrambe le parti**) |
+| 206 | 07-FORGE | 08-INTELLIGENCE | ogni artefatto creato → pagina wiki `tools/` + log | *"enrichment skill esistenti passa per Memory Empire"* | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:165` | NO | INTER · MAI |
+| 207 | 07-FORGE | 09-OPERATIONS | ogni nuovo agente dichiara tier modello + costo stimato | **budget guard pre-approvazione**; registrazione nel cost model | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:166`, `:399` | NO | INTER · MAI (**dichiarato da entrambe le parti**) |
+| 208 | 07-FORGE | Backbone Identity-HR | assunzione/ritiro agenti | **registro unico aggiornato a ogni forgiatura** | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:167` | NO | INTER (Backbone) · MAI |
+| 209 | LX / Board | 07-FORGE | mandato per ecosistemi interi nuovi (es. F9+ E-commerce) | `ecosystem-scaffold` (F5) | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:168`, `:531` | NO | INTER · MAI |
+| 210 | QUALSIASI | 08-INTELLIGENCE | `{link/video/file/domanda}` | ingestione integrale **oppure** context pack `{pagine wiki, memorie, pattern, fonti}` | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:282` | NO | INTER (9→1) · MAI |
+| 211 | 08-INTELLIGENCE | 07-FORGE | conoscenza distillata MKD-ready + pattern ReasoningBank sui fallimenti | MKD-ready | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:283` | NO | INTER · MAI |
+| 212 | 08-INTELLIGENCE | 04-MARKETING + 01-AGENCY | ricerca cliente (`customer-research`), profili competitor (`competitor-profiling`), trend | non dichiarato | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:284` | NO | INTER · **VAGO** · MAI (gemello di #13, #25, #128, #145) |
+| 213 | 08-INTELLIGENCE | 03-CONTENT-FACTORY + 05-MULTI-BUSINESS | analisi canali di riferimento (F7: ingestione 2 canali YouTube via Empire Studio) | non dichiarato | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:285` | NO | INTER · MAI |
+| 214 | 09-OPERATIONS | 08-INTELLIGENCE | log run, metriche, costi | **distillati in pattern e pagine wiki** (post-mortem) | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:286`, `:398` | NO | INTER · MAI (**dichiarato da entrambe le parti**) |
+| 215 | 08-INTELLIGENCE | Backbone BRAIN | *"e' l'ecosistema che OPERA il Brain del backbone (wiki + AgentDB + ReasoningBank)"* | nessuno | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:287` | NO | INTER (Backbone) · **VAGO** (rapporto di proprieta', non passaggio) |
+| 216 | QUALSIASI | 09-OPERATIONS | `{workflow, parametri, budget_max, schedule}` | run eseguita/schedulata + report `{esito, costo, durata}` | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:397` | NO | INTER (9→1) · MAI |
+| 217 | 09-OPERATIONS | QUALSIASI | **alert**: budget all'80%, run fallita, drift di costo, processo zombie | nessuno | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:398` | NO | INTER (1→9) · MAI (**unico broadcast dell'Impero: uno a tutti**) |
+| 218 | 09-OPERATIONS | Board (L0) | report costi settimanale per ecosistema + dashboard | cadenza settimanale | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:400` | NO | INTER · MAI |
+| 219 | 09-OPERATIONS | 06-PLATFORM | richieste tooling (script scheduling, dashboard) — *"OPERATIONS le usa, PLATFORM le scrive"* | non dichiarato | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:402` | NO | INTER · MAI |
+| 220 | 06-PLATFORM | AGENCY / INFO-BUS / CF / MKT / MB | **matrice di dipendenza, riga 1**: siti clienti + code custody · sales page + piattaforma corsi · tooling pubblicazione · landing/funnel tecnici · SaaS/App + automazioni KDP/YT | nessuno per cella | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:503` | NO | INTER ×5 · **VAGO** (matrice, non contratti) · MAI |
+| 221 | 07-FORGE | AGENCY / INFO-BUS / CF / MKT / MB | **riga 2**: team delivery + skill preventivi · team lancio + skill prodotto · team per formato/canale · skill copy/ads nuove · **interi rami nuovi (YT, Ecomm)** | nessuno per cella | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:504` | NO | INTER ×5 · **VAGO** · MAI |
+| 222 | 08-INTELLIGENCE | AGENCY / INFO-BUS / CF / MKT / MB | **riga 3**: ricerca lead/ICP + dossier competitor · ricerca audience + materiale corsi · ingestione fonti + trend · customer insight + pattern copy vincenti · analisi canali YT + nicchie KDP | nessuno per cella | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:505` | NO | INTER ×5 · **VAGO** · MAI |
+| 223 | 09-OPERATIONS | AGENCY / INFO-BUS / CF / MKT / MB | **riga 4**: run outreach schedulate + costi per commessa · costi lancio + scheduling email · mass-production swarm + render queue · budget ads guard + attribution · batch libri/video + cron | nessuno per cella | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:506` | NO | INTER ×5 · **VAGO** · MAI |
+| 224 | 08-INTELLIGENCE | 07-FORGE → 06-PLATFORM | **catena di dipendenza interna ai core**: contesto/materia prima → skill/agenti/team → build | ordine di costruzione vincolato: INTELLIGENCE prima, OPERATIONS subito dopo (*"il cost guard deve esistere PRIMA di moltiplicare gli agenti"*), FORGE terza, PLATFORM in parallelo | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:511-520` | NO | INTER · MAI |
+| 225 | TUTTI (9 ecosistemi) | 09-OPERATIONS | eventi costo/run da tutti — chiusura del cerchio della catena core | nessuno | `PIANO-MAESTRO/06-ECOSISTEMI-CORE.md:514-517` | NO | INTER (9→1) · MAI |
+
+### FONTE 6a — `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md`
+
+Regola gemella di quella di MARKETING, ma sul codice: *"nessun ecosistema business scrive o modifica
+codice di produzione in autonomia. Puo' fornire brief e contenuti (copy, asset), ma **l'implementazione
+e il deploy vivono in PLATFORM**"* (`:91-93`). Contratto d'ingresso
+`{committente, formato, brand_kit, scope, deadline, budget_max}` (`:361`) — **ottavo schema**; risposta
+`{deliverable, url_staging_prod, verify_report, security_report, costo_evento, workflow_eseguito}`
+(`:377`), l'unico contratto di ritorno dell'Impero che porti con se' **il costo dell'operazione**.
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 226 | 01-AGENCY | 06a-PLATFORM | sito cliente completo, implementazione tecnica, **code custody a fine commessa** | G-SEC + G-QA + G-BRAND + G-DEPLOY verdi; lead time brief→deploy ≤10 giorni lavorativi; Lighthouse ≥90 | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:83`, `:186`, `:476-478` | NO | INTER · MAI (**e' il pezzo tecnico del Gate Delivery #22: senza custody il cliente non e' libero**) |
+| 227 | 02-INFO-BUSINESS | 06a-PLATFORM | sales page tecnica, piattaforma corsi/membership | WF-SITE-FULL o WF-LANDING-RAPIDA; gate G-QA | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:84` | NO | INTER · MAI (gemello di #55/#74 `HC-PL-IB-01`) |
+| 228 | 03-CONTENT-FACTORY | 06a-PLATFORM | tooling di pubblicazione; embed e ottimizzazione performance di asset visual/video | non dichiarato oltre T-site-qa | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:85` | NO | INTER · MAI (gemello di #98) |
+| 229 | 04-MARKETING (L2.6) | 06a-PLATFORM | implementazione tecnica di landing/funnel disegnati da Conversion Architecture | brief tecnico approvato (cfr. #148) | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:86`, `:564` | NO | INTER · MAI (**dichiarato da entrambe le parti**) |
+| 230 | 05-MULTI-BUSINESS | 06a-PLATFORM | MVP SaaS/App, automazioni KDP/YT (book-factory automation) | `plt-product-qa` verde; **PRD quality score ≥75 rispettato a build** | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:87`, `:228` | NO | INTER · MAI |
+| 231 | 06b-FORGE | 06a-PLATFORM | installazione di nuovi agenti/skill engineering consegnati | reparto destinatario scelto per competenza della skill | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:88` | NO | INTER · MAI |
+| 232 | 06c-INTELLIGENCE | 06a-PLATFORM | ricerca tecnica **"in ingresso, non su richiesta"** | *"L2.1/L2.2 consultano PRIMA di ogni scelta stack"* | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:89` | NO | INTER · MAI (**unico passaggio dell'Impero dichiarato non richiesto ma dovuto**) |
+| 233 | 06b-FORGE (`frg-prd-architect`) | 06a-PLATFORM (`plt-prd-intake`) | PRD → tradotto in task di build | PRD quality score ≥75 | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:216`, `:228` | NO | INTER · MAI (**unico passaggio con agente ricevente dedicato su entrambi i lati**) |
+| 234 | 06a-PLATFORM | committente (qualsiasi) | risposta `{deliverable, url_staging_prod, verify_report, security_report, **costo_evento**, workflow_eseguito}` | `WF-EMPIRE-VERIFY-PIPELINE` verde prima di ogni handoff | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:295`, `:377` | NO | INTER · MAI (**unico ritorno che porta il costo con se': e' il pezzo mancante di #200**) |
+| 235 | `plt-director` | `platform/handoffs/log` | registro richieste/risposte cross-ecosistema | non dichiarato | `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md:519` | NO (namespace mai creato) | INTER · MAI |
+
+### FONTE 6b — `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md`
+
+Terza regola-cardine dello stesso tipo: *"nessun ecosistema crea agenti, skill o team in autonomia.
+Ogni capability nuova passa dalla FORGE"* (`:98-99`). Contratto `{ecosistema, gap, target, kpi_attesi,
+budget}` (`:350`), risposta `{artefatto_consegnato, eval_report, registro_hr_aggiornato,
+workflow_eseguito}` (`:370`). FORGE e' l'unico ecosistema che dichiara di **servire tutti e nove** gli
+altri piu' il Board (`:74-82`). Il dossier ammette da solo il buco piu' grave dell'Impero:
+*"~248 agenti progettati, 19 censiti"* nel registro Identity-HR (`:547`) — cioe' il registro dei
+destinatari dei passaggi e' disallineato dal reale del 92%.
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 236 | QUALSIASI ecosistema | 06b-FORGE | `capability-request`: skill, agente, team o workflow mancante | **artefatto senza eval = non consegnabile (G-EVAL non bypassabile)**; ≤2 giorni per skill semplice | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:89`, `:119`, `:463`, `:472` | NO | INTER (9→1) · MAI |
+| 237 | 06a-PLATFORM | 06b-FORGE | nuove skill/agenti engineering (prima skill prevista: `empire-verify`) | skill consegnata con **eval verde** (milestone F1) | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:90`, `:530` | NO | INTER · MAI (**dichiarato da entrambe le parti**) |
+| 238 | 04-MARKETING | 06b-FORGE | skill copy/ads nuove: `empire-brand-gate`, `copy-request-router`, `brand-strategy-gate` | `contradiction-analyzer` verde + eval ≥ soglia | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:91`, `:167`, `:561` | NO | INTER · MAI (**dichiarato da entrambe le parti**, cfr. #138) |
+| 239 | 01-AGENCY + 02-INFO-BUSINESS | 06b-FORGE | team delivery / team lancio completi | `frg-org-designer` approva la gerarchia; **`frg-handoff-designer` verifica ogni contratto I/O** | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:92`, `:195`, `:206` | NO | INTER · MAI (**il progettista dei contratti dell'Impero e' un agente mai creato**) |
+| 240 | 05-MULTI-BUSINESS | 06b-FORGE | interi rami nuovi (YT, E-comm) | **mandato Board richiesto**; `frg-ecosystem-qa` verifica conformita' §0 piano V2 | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:93`, `:266`, `:272` | NO | INTER · MAI |
+| 241 | 06c-INTELLIGENCE | 06b-FORGE | materiale raw ingerito + pattern ReasoningBank **"in ingresso"** → `content-forge` lo trasforma | **MKD intermedio SEMPRE presente (mai saltato); mai riassumere, sempre espandere** | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:94`, `:239`, `:531` | NO | INTER · MAI |
+| 242 | LX/Board | 06b-FORGE | mandato per ecosistemi interi o revisione dello standard organizzativo | mandato Board **formalmente chiuso** a fine WF-ECOSYSTEM-NEW | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:95`, `:272` | NO | INTER · MAI |
+| 243 | 06b-FORGE | 06c-INTELLIGENCE | ogni artefatto creato → pagina wiki `tools/` | consegna al committente **e** pagina wiki, insieme | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:80`, `:392` | NO | INTER · MAI |
+| 244 | 06b-FORGE | 06d-OPERATIONS | dichiarazione tier modello + costo stimato per ogni nuovo agente | **budget guard pre-approvazione** | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:81` | NO | INTER · MAI |
+| 245 | 06b-FORGE (`frg-hr-registrar`) | Backbone Identity-HR | censimento agenti a ogni forgiatura | **G-REGISTRY: artefatto non consegnabile finche' il registro non e' coerente (100% agenti censiti)** — oggi 19 censiti su ~248 progettati | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:465`, `:547` | NO | INTER (Backbone) · MAI (**il gate che, se acceso oggi, bloccherebbe ogni consegna dell'Impero**) |
+| 246 | 06b-FORGE (`WF-SKILL-RETIRE`) | tutti gli ecosistemi committenti | **notifica di deprecazione** di una skill ritirata | skill deprecata segnalata a tutti i committenti; **nessun riferimento orfano** | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:170` | NO | INTER (1→9) · MAI (**secondo broadcast dell'Impero, dopo l'alert di OPERATIONS #217**) |
+| 247 | `frg-orchestration-builder` | committente | script eseguibili reali (`.py`/`.ps1`) e non solo markdown | *"**vietato consegnare un ruolo in un markdown**"* (standard §0 piano V2) | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:232` | NO | INTER · MAI (**la regola che l'intero censimento dimostra violata**) |
+| 248 | `frg-chief` | `forge/handoffs/log` + Board | coda richieste, arbitrato priorita' fra committenti, escalation | violazioni dei pattern non negoziabili (#1,#6,#7,#8) → escalation a `frg-chief` (WF-PATTERN-AUDIT) | `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md:313`, `:323`, `:516` | NO | INTER · MAI |
+
+### FONTE 6c — `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md`
+
+Quarta regola-cardine dello stesso tipo: *"nessun ecosistema ingerisce contenuto esterno o scrive
+pagine wiki 'a mano' fuori standard"* (`:119-122`). E' l'ecosistema che dovrebbe **precedere** tutti
+gli altri: *"ogni ecosistema, prima di un task non banale, ottiene un context pack"* (`:56`), con
+**copertura ≥95% dei task non banali** (`:270`) — cioe' 9 passaggi in entrata prima di ogni lavoro
+serio dell'Impero. Contratto `{committente, tipo_richiesta, target, urgenza, deadline}` (`:127-133`),
+risposta `{esito, pagine_wiki_prodotte, memorie_collegate, pattern_usati, fonti, workflow_eseguito}`
+(`:137-139`). Due regole di rifiuto proprie: *"pattern-query senza corrispondenza → **restituisce
+errore, non inventa la fonte**"* (`:143`) e *"context-pack senza committente → non produce output
+generico: **chiede il committente**"* (`:144-145`).
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 249 | 01-AGENCY | 06c-INTELLIGENCE | ricerca lead/ICP, dossier competitor, **ricerca cliente pre-preventivo** | R-QA: fonti tracciate, zero dati inventati, **dossier senza fonti = non si consegna** | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:109`, `:146`, `:298` | NO | INTER · MAI (gemello di #13/#25) |
+| 250 | 02-INFO-BUSINESS | 06c-INTELLIGENCE | ricerca audience, materiale corso ingerito (video/canale di riferimento) | G-INTEGRAL (archiviazione integrale, mai riassunti) | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:110` | NO | INTER · MAI (gemello di #54/#73) |
+| 251 | 03-CONTENT-FACTORY | 06c-INTELLIGENCE | ingestione fonti (canali, articoli), trend contenuti | G-INTEGRAL + fonti tracciate | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:111` | NO | INTER · MAI (gemello di #100) |
+| 252 | 04-MARKETING | 06c-INTELLIGENCE | customer insight, **pattern copy vincenti per ICP** (lettura di `intelligence/learning/patterns/{ecosistema}`) | *"`pattern-query` senza corrispondenza → **restituisce errore, non inventa la fonte**"* | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:112`, `:143` | NO | INTER · MAI (gemello di #145) |
+| 253 | 05-MULTI-BUSINESS | 06c-INTELLIGENCE | analisi canali YouTube di riferimento, nicchie KDP | 2+ dossier in wiki `sources/` (cfr. #192) | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:113` | NO | INTER · MAI (**dichiarato da entrambe le parti**) |
+| 254 | 06a-PLATFORM | 06c-INTELLIGENCE | ricerca tecnica (stack, librerie, competitor tecnici) **prima** delle scelte d'architettura | fonti tracciate | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:114` | NO | INTER · MAI (**dichiarato da entrambe le parti**, cfr. #232) |
+| 255 | 06b-FORGE | 06c-INTELLIGENCE | `knowledge-pull` + `pattern-query`: materiale MKD-ready e pattern sui fallimenti | MKD-ready; pattern esistente o errore | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:115` | NO | INTER · MAI (**dichiarato da entrambe le parti**, cfr. #241) |
+| 256 | 06d-OPERATIONS | 06c-INTELLIGENCE | log run, metriche, costi da distillare (`pattern-distill` → WF-REASONINGBANK) | *"riceve log/metriche, **restituisce pattern distillati**"* — l'unico scambio bidirezionale dichiarato in una riga sola | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:102`, `:116` | NO | INTER · MAI (**dichiarato da entrambe le parti**, cfr. #214) |
+| 257 | QUALSIASI ecosistema | 06c-INTELLIGENCE (SECOND-BRAIN / SB3) | **context pack pre-task** `{pagine wiki, memorie, pattern, fonti}` | pack consegnato entro SLA; **copertura ≥95% dei task non banali**; senza `committente` non produce output generico | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:56`, `:117`, `:144-145`, `:270`, `:450` | NO | INTER (9→1) · MAI (**il passaggio piu' a monte di tutto l'Impero: dovrebbe precedere ogni task non banale, e non e' mai avvenuto**) |
+| 258 | qualsiasi ecosistema (bozza di pagina) | SECOND-BRAIN | *"un ecosistema puo' proporre una bozza di pagina, ma **la pubblicazione formale** (frontmatter, cross-link, log) passa da qui"* | **G-STRUCT + G-LOG + G-LINK**: blocca pagine senza cross-link o senza log | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:121-122`, `:264`, `:273` | NO | INTER · MAI |
+| 259 | ING-LEAD (team liaison) | Empire Studio (conductor) | richiesta di ingestione video/canale — *"il team liaison e' il **SOLO** punto di contatto; zero modifiche interne"* | ING-QA verifica **G-INTEGRAL**: contenuto integrale, mai un riassunto — **blocca la chiusura del ticket** se fallisce; ticket con SLA tracciato | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:177`, `:189`, `:194`, `:200-201`, `:479` | NO | INTER (verso motore esistente) · MAI |
+| 260 | MEM-LEAD (team liaison) | Memory Empire v3 | richieste DE instradate al router + enrichment di skill esistenti | **G-SAFE-ENRICH**: backup + diff + verifica non-regressione **tutti e tre obbligatori**, mai bypassabile, prima di toccare una skill attiva | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:221`, `:224`, `:234`, `:480` | NO | INTER (verso motore esistente) · MAI (**il gate piu' severo dell'Impero**) |
+| 261 | R4 (`WF-MARKET-SYNTHESIS`) | committente o Board | dossier di sintesi da dati grezzi Empire Studio + ricerche R1-R3 | R-QA verifica **tracciabilita' delle fonti prima della consegna** | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:308` | NO | INTER · MAI |
+| 262 | `INT-OBSERVER` | Board | KPI d'ecosistema: copertura context pack, ingestioni completate, **divergenze wiki/AgentDB**, pattern riusati | "alimenta il report Board" | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:354` | NO | INTER · **VAGO** · MAI |
+| 263 | 06d-OPERATIONS | 06c-INTELLIGENCE | runtime swarm per l'ingestione, cost guard, scheduling di `WF-WIKI-GARDEN`/`WF-TREND` — "DIPENDE DA" | non dichiarato | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:88-89` | NO | INTER · **VAGO** · MAI |
+| 264 | 06b-FORGE | 06c-INTELLIGENCE | evoluzione di Empire Studio / Memory Empire + forgiatura delle 3 skill proprie (`context-pack`, `wiki-sync-guard`, `ingest-router`) | skill forgiate **con PRD + architettura** (standard §8 piano V2) | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:73`, `:89-90` | NO | INTER · MAI |
+| 265 | 06c-INTELLIGENCE | ecosistema 10-MEMORY | **confine dichiarato**: memoria operativa della holding (checkpoint/ADR/stato) *"non qui"* | out of scope esplicito | `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md:77-78` | NO | INTER · **VAGO** (confine, non passaggio) |
+
+### FONTE 6d — `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md`
+
+E' l'unico ecosistema che si dichiara **obbligatorio e bidirezionale con tutti**: *"e' l'unico
+ecosistema con cui OGNI altro ha un handoff obbligatorio bidirezionale (**ogni run passa da qui e ogni
+run genera un evento di ritorno**)"* (`:78-81`). Quinta e ultima regola-cardine: *"nessun workflow
+gira in produzione reale senza dry-run con stima costi (G-DRYRUN) e senza budget dichiarato
+(G-BUDGET). **Nessuna eccezione, nemmeno per run interne di OPERATIONS su se stesso**"* (`:101-103`).
+Contratto `{ecosistema_richiedente, workflow, parametri, budget_max, schedule, dry_run}` (`:107-116`);
+risposta `{esito, costo_reale, durata, tier_usato, evento_ledger_id, alert_generati}` (`:118-119`).
+Tre rifiuti scritti: senza `budget_max` **COST GUARD rifiuta prima che RUNTIME spawni** (`:123`);
+`dry_run: false` senza conferma umana **bloccata** (`:124-125`); run schedulata senza `rollback_plan`
+**rifiutata** (`:126`). **Questo e' l'ecosistema che, se acceso, farebbe misurare all'Impero il primo
+euro** — ed e' il tema del gemello B-043 (*"DE non misura un solo euro"*).
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 266 | QUALSIASI ecosistema | 06d-OPERATIONS (RUNTIME) | esecuzione run (swarm, batch, singola) entro budget dichiarato | **G-DRYRUN + G-BUDGET**; senza `budget_max` la run e' rifiutata prima dello spawn | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:86`, `:101-103`, `:123` | NO | INTER (9→1) · MAI |
+| 267 | 01-AGENCY | 06d-OPERATIONS (SCHEDULING) | scheduling run outreach giornaliere (`avvia-email`/`ig`/`parallel`) | run schedulata senza `rollback_plan` → **rifiutata** (G-RUNBOOK) | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:87`, `:126` | NO | INTER · MAI (gemello di #15/#49 `HC-AG-OP-01`) |
+| 268 | 02-INFO-BUSINESS | 06d-OPERATIONS | scheduling email lancio + costi lancio | budget approvato prima del go (cfr. #90 Gate Dry-Run + Costi) | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:88` | NO | INTER · MAI (gemello di #60/#76/#81) |
+| 269 | 03-CONTENT-FACTORY | 06d-OPERATIONS | mass-production swarm, render queue (`swarm --parallel N --budget N`) | G-BUDGET | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:89` | NO | INTER · MAI (gemello di #102) |
+| 270 | 04-MARKETING | 06d-OPERATIONS (COST GUARD) | budget ads guard, **cost attribution per campagna** | `dry_run: false` senza conferma umana esplicita → bloccata (Art.4.3 Mandato) | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:90`, `:124-125` | NO | INTER · MAI (gemello di #131) |
+| 271 | 05-MULTI-BUSINESS | 06d-OPERATIONS | batch produzione libri/video, cron pubblicazione | dry-run ok, Cost-Sentinel verde | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:91` | NO | INTER · MAI (**dichiarato da entrambe le parti**, cfr. #164/#184) |
+| 272 | 06a-PLATFORM | 06d-OPERATIONS | **evento `{commessa, costo, durata, esito}` per ogni build/deploy** | WF-ATTRIBUTION | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:92` | NO | INTER · MAI (**dichiarato da entrambe le parti**, cfr. #200/#234) |
+| 273 | 06b-FORGE | 06d-OPERATIONS | registrazione nel cost model di ogni nuovo agente `{agente, tier, costo_stimato}` | WF-TIER-ROUTING | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:93` | NO | INTER · MAI (**dichiarato da entrambe le parti**, cfr. #207/#244) |
+| 274 | 06c-INTELLIGENCE | 06d-OPERATIONS | log/metriche da distillare + scheduling di `WF-WIKI-GARDEN`/`WF-TREND` | MONITORING (log) + SCHEDULING (cron) | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:94` | NO | INTER · MAI (**dichiarato da entrambe le parti**, cfr. #256/#263) |
+| 275 | 06d-OPERATIONS (WF-WATCH) | TUTTI | **alert push**: budget all'80%, run fallita, drift di costo, processo zombie | evento push, nessun criterio di accettazione dichiarato | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:95` | NO | INTER (1→9) · MAI (terzo broadcast, cfr. #217/#246) |
+| 276 | 06d-OPERATIONS (WF-BOARD-REPORT) | Board (L0) | report costi settimanale per ecosistema + dashboard | cadenza settimanale | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:96` | NO | INTER · MAI (gemello di #218) |
+| 277 | 06d-OPERATIONS | committente (qualsiasi) | **ritorno obbligatorio di ogni run**: `{esito, costo_reale, durata, tier_usato, evento_ledger_id, alert_generati}` | *"ogni run genera un evento di ritorno"*, senza eccezioni | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:78-81`, `:118-119` | NO | INTER (1→9) · MAI (**il ritorno che manca all'Impero intero: nessuna run ha mai reso un `costo_reale`**) |
+| 278 | 06a-PLATFORM | 06d-OPERATIONS | script di scheduling/dashboard: *"PLATFORM li scrive, OPERATIONS li usa"* — "DIPENDE DA" | non dichiarato | `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md:75-76` | NO | INTER · **VAGO** · MAI (gemello di #219) |
+
+### FONTE 7 — `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md`
+
+Non e' un ecosistema: e' **la strada su cui tutti i passaggi di questa mappa dovrebbero viaggiare**.
+Dichiara *"nessuna azione isolata, ogni passaggio di lavoro tra agenti, team, reparti ed ecosistemi
+e' un messaggio tracciato e append-only"* (`:55-57`). Il contratto e' il **nono schema** censito
+(`:71-83`) — ed e' l'unico dell'Impero con un campo `status` a sei valori
+(`pending|accepted|in_progress|done|rejected|escalated`), cioe' l'unico che sappia raccontare la
+**vita** di un passaggio e non solo la sua partenza. Tre regole di rifiuto: (a) handoff senza
+`acceptance_criteria` misurabili e' **INVALIDO** e il coordinator lo rifiuta; (b) `status=rejected`
+DEVE includere note correttive; (c) **2 reject consecutivi → escalation automatica** al reparto
+superiore via gbus (`:85-87`). Il gemello `dati/censimento-02-collegamenti.md` ha gia' accertato che
+**il Bus non ha mai trasportato niente**: qui si registra solo cosa avrebbe dovuto trasportare.
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 279 | qualsiasi team | qualsiasi team **dentro** lo stesso ecosistema | livello **INTRA** via `company/orchestrator/bus.sh` → `company/runtime/bus/<eco>/messages.jsonl` | handoff con `acceptance_criteria` misurabili, altrimenti INVALIDO | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:59-61`, `:85` | script esiste, **traffico zero** (cfr. `dati/censimento-02-collegamenti.md`) | INTRA · MAI |
+| 280 | ecosistema / BOARD / EMPIRE | ecosistema / BOARD / EMPIRE | livello **INTER** via `gbus.sh` → `company/runtime/group-bus/messages.jsonl`; mittenti e destinatari **validati contro Identity-HR** | destinatario esistente nel registro HR (oggi 19 agenti censiti su ~248: la validazione rifiuterebbe quasi tutti) | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:62-64` | script esiste, **traffico zero** | INTER · MAI |
+| 281 | mittente di handoff "pesante" | destinatario | payload multi-file (copy, video, report) come file in `company/Ecosistemi/<ECO>/handoffs/{inbox,outbox,archive}/H-<id>.json` — *"il jsonl trasporta il riferimento, la cartella trasporta il contenuto"* | schema JSON validato da `validate-handoff.sh` | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:65-68`, `:95-96` | **NO** — su disco esistono solo `01-agency/A1..A4/handoffs` e `Backbone/Bus/handoffs`, nessun `inbox/outbox/archive` | INTER · MAI |
+| 282 | coordinator ricevente | mittente | **rifiuto**: `status=rejected` con note correttive obbligatorie | 2 reject consecutivi → `type: escalation` automatica al reparto superiore via gbus | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:85-87`, `:413` | NO | INTRA+INTER · MAI (**il canale di ritorno universale dell'Impero — quello che rende inutili i quattro canali locali #104/#117/#156/#186 se acceso**) |
+| 283 | ogni gate/run/handoff | `company/metrics/runs.jsonl` | eventi standard `run_done`, `gate_passed`, `gate_failed`, `handoff_rejected`, `swarm_done`, `lead_generated`, `content_published`, **`sale_closed`**, `evolution` — ognuno con `{eco, reparto, team, agente, brand_kit, costo}` | KPI Backbone: **backlog bus (messaggi pending >24h) = 0**; **handoff invalidi (senza acceptance criteria) = 0%** | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:219-222`, `:495-496` | NO | INTER · MAI (**`sale_closed` e' l'evento che collegherebbe la mappa a un incasso: non e' mai stato emesso**) |
+| 284 | metriche | `cost/by-{agent,team,eco,brand}.json` → dashboard | cost-attribution multi-tenant: *"quanto costa servire il cliente X? quanto costa il canale YT Y?"* | rigenerati da `costs.sh` | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:223-226` | NO | INTER · MAI |
+| 285 | metriche | `neural_train` / `autopilot_predict` / `evolve` → 07-FORGE | pattern, previsione colli di bottiglia, **creazione/ritiro agenti automatico** | fallback senza MCP: i jsonl locali bastano | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:229-232` | NO | INTER · MAI |
+| 286 | Sentinelle (Quality) | team + Quality-Guild → CTO → Board | **escalation a soglia**: pass_rate <90% su 10 run · **2 reject consecutivi stesso team** · trend qualita' in calo per 3 cicli → blocco consegna + richiesta rework con note | soglie numeriche esplicite | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:413` | NO | INTER · MAI |
+| 287 | skill `empire-handoff` (P0 #3) | Bus | *"crea/valida/instrada handoff conformi al contract §1.1"* (wrapper di `bus.sh`/`gbus.sh`) | conformita' al contract §1.1 | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:370` | **skill mai forgiata** (solo `gbus.sh` come script) | INTER · MAI (**e' l'attrezzo con cui l'Impero dovrebbe fare i passaggi, e non esiste**) |
+| 288 | B2.3 (fase di build) | primi workflow reali | *"wiring nei primi workflow reali (outreach AGENCY, F4)"* — il primo aggancio previsto del Bus a lavoro vero | handoff di test che **attraversa 2 ecosistemi e torna `done`** (gate B2) | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:94-96`, `:512` | NO | INTER · MAI (**il gate B2 non e' mai stato superato: nessun handoff e' mai tornato `done`**) |
+| 289 | Board / Governance | tutti gli ecosistemi | topologia di lavoro assegnata per ecosistema (AGENCY hierarchical, INFO-BUSINESS **ring** — *"ogni fase passa il testimone"*, CF hierarchical+mesh, MARKETING **star** — *"ogni output copy passa dal hub"*, MB mesh, PLATFORM hierarchical, FORGE star, INTELLIGENCE mesh, OPERATIONS mesh) | nessuno | `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md:249-257` | NO | INTER · **VAGO** (regola di forma, non passaggio) · MAI |
+
+### FONTE 8 — `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md`
+
+E' il **secondo** ecosistema a dichiararsi obbligatorio con tutti (dopo OPERATIONS): *"MEMORY serve
+TUTTI gli ecosistemi ed e' servito da tutti: e' l'unico ecosistema con cui **ogni** team ha un
+handoff obbligatorio bidirezionale"* (`:37-40`). I suoi 4 contratti hanno un prefisso proprio
+(`HC-ME-*`) e sono i soli codici contratto dell'Impero **effettivamente in uso operativo**: la regola
+memory-first di `CLAUDE.md` e' viva, i checkpoint si scrivono (questo censimento stesso ne e' prova).
+Restano pero' non-passaggi nel senso di questa mappa: sono uomo→file, non ecosistema→ecosistema.
+L'enforcement e' l'unico dell'Impero che sia **cablato e non solo scritto** (hook SessionStart,
+`CLAUDE.md`, Memory-Sentinel, `verify-empire.sh`, `:170-186`). E la regola piu' pesante:
+*"l'acceptance criteria di OGNI team L3/L4 della holding include 'CP scritto in Memory' — **un handoff
+senza CP-id e' invalido per contratto**"* (`:180-182`) — cioe' TUTTI i 288 passaggi censiti finora
+sarebbero invalidi, perche' nessuno porta un CP-id.
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 290 | qualsiasi team (pre-task) | 10-MEMORY | `HC-ME-PRE`: `{task_id, ecosistema, descrizione, keywords}` | **context-pack restituito**: stato + CP/ADR/piani rilevanti + pattern AgentDB; se MEMORY segnala contraddizione con un ADR attivo → **STOP + escalation Board** | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:44`, `:155` | codice usato, **file di contratto no** | INTER (10→1) · **parzialmente percorso** (regola memory-first attiva via hook, mai come handoff fra ecosistemi) |
+| 291 | qualsiasi team (post-task) | 10-MEMORY | `HC-ME-POST`: `{task_id, esito, output_paths, lezioni, **costi**}` | CP scritto + INDEX aggiornato + STATO aggiornato; **il team committente riceve conferma CP-id — senza CP-id il task NON e' chiuso** | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:45`, `:105`, `:158-160` | codice usato, contratto no | INTER (10→1) · **parzialmente percorso** (i CP esistono; il campo `costi` non e' mai stato compilato da nessuno) |
+| 292 | Board / qualsiasi team | 10-MEMORY | `HC-ME-ADR`: `{decisione, contesto, alternative, conseguenze}` | ADR-NNN registrato + **contradiction-check vs ADR attivi passato**; conflitto → escalation hive-mind Board | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:46`, `:162-164` | codice usato, contratto no | INTER · **parzialmente percorso** (gli ADR esistono e sono numerati fino a ADR-023) |
+| 293 | Board / 07-FORGE | 10-MEMORY | `HC-ME-PLAN`: nuovo piano o revisione | versionato in `plans/` + STATO aggiornato | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:47` | codice usato, contratto no | INTER · **parzialmente percorso** |
+| 294 | 10-MEMORY | ReasoningBank (Backbone BRAIN) | **flusso continuo**: fallimenti distillati in pattern | pattern nel namespace AgentDB `patterns` | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:48` | NO | INTER · MAI (**nessun pattern e' mai stato depositato: e' lo stesso buco di #28, #89, #137, #155, #285**) |
+| 295 | 10-MEMORY | wiki (06c-INTELLIGENCE) | **flusso continuo**: eventi rilevanti per gli umani → entry in `wiki/log.md` | non dichiarato oltre la entry | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:49` | NO | INTER · **parzialmente percorso** (il `log.md` viene aggiornato, ma a mano dalla regola WIKI-FIRST, non da MEMORY come ecosistema) |
+| 296 | Memory-Sentinel | escalation | scansione periodica: task/sessioni **senza CP** → escalation | `verify-empire.sh`: INDEX aggiornato, **0 CP orfani**, STATO coerente col filesystem, ADR senza conflitti | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:183-186`, `:232` | NO (sentinella mai costruita) | INTER · MAI |
+| 297 | 10-MEMORY | ogni team L3/L4 della holding | **CP-id come requisito di validita' di ogni handoff**: *"un handoff senza CP-id e' invalido per contratto"* (G-ME2) | CP-id presente in ogni handoff | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:180-182`, `:232` | NO | INTER (10→9) · MAI (**la regola che invalida per contratto tutti gli altri 296 passaggi di questa mappa**) |
+| 298 | Memory Empire skill (`~/.claude/skills/memory-empire/`) | 10-MEMORY | **rapporto di partenariato**: resta motore di INTELLIGENCE per la conoscenza esterna; MEMORY ne riusa i pattern (handoff JSON, backup→append→log→rollback) | non dichiarato | `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:194` | NO | INTER · **VAGO** · MAI |

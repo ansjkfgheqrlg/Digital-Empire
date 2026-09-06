@@ -79,3 +79,31 @@ due sensi, ed e' per questo che vale:
 scheda: la nicchia si decide sui numeri veri dei canali (costanza, visualizzazioni/ora,
 replicabilita' senza volto), non sul numero di strumenti disponibili. Questa e' una fonte di
 **candidati da verificare**, non un verdetto.
+
+---
+
+## 9. Un canale di successo non è una prova (A4-L16-02 · 2026-09-06)
+
+> Imparata da **AI TUBE PRO / Metodo AI Tube / L16**, dove una nicchia viene proposta mostrando
+> un canale da **544 video e quasi 1 milione di iscritti** [03:55] — e nient'altro.
+
+Quando una nicchia ti viene proposta con l'argomento «guarda questo canale, funziona», quel canale
+sta rispondendo a **una domanda sola**: *è possibile che funzioni?* Non risponde alle due che
+contano davvero per noi.
+
+**Le due domande da porre sempre, prima di aprire una nicchia su un esempio:**
+
+1. **È lecita la pratica su cui si regge?** Se la nicchia funziona **perché** riusa materiale di
+   terzi (musica altrui separata, clip scaricate, doppiaggi non autorizzati), l'esempio di successo
+   non dimostra la liceità: dimostra solo che **finora** non ci sono state conseguenze. È
+   **survivorship bias** — si guarda chi è rimasto in piedi e non si contano quelli spariti facendo
+   la stessa identica cosa, perché quelli non hanno un canale da mostrare.
+2. **È riproducibile da noi, oggi?** Un canale con 544 video ha un archivio costruito in anni e una
+   base di iscritti che gli regala le prime visualizzazioni di ogni pubblicazione. I suoi numeri
+   **non sono i numeri che faremmo noi** partendo da zero (vedi `video-analyst.md` §2: la velocity
+   va sempre rapportata agli iscritti del canale sorgente).
+
+**Regola operativa:** un esempio di successo entra nel dossier di nicchia **come candidato**, mai
+come verdetto, e il dossier deve dichiarare **su cosa si regge** quel successo. Se la risposta è
+«sul riuso di materiale altrui», la nicchia è chiusa qui e non arriva al `niche-gate`
+(`references/monetizzazione-compliance.md` §7).

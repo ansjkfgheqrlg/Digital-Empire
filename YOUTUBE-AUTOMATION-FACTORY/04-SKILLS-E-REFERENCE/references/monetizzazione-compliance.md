@@ -61,6 +61,14 @@ La difesa dichiarata è: «così **non incorriamo in strike**».
    video**. La nostra catena genera via API senza aprire un browser: quel passaggio non solo non
    conviene, **non è eseguibile**.
 
+   **Il costo vero, detto dal corso stesso (A4-L14-05 · 2026-09-06).** La lezione madre A4/L05
+   promette un video in **~5 minuti**. Sette lezioni dopo, A4/L14 mostra il metodo dal vivo e
+   dichiara: **5-10 minuti per il primo minuto di video, e circa 1 ora a video intero**, *dopo*
+   che si è fatta pratica [L14 · 25:23]. È un fattore **12×** fra la promessa e la misura, e le due
+   cifre stanno **nello stesso corso**. Chi valuta il metodo sui 5 minuti sta valutando un numero
+   che la scuola che lo insegna smentisce da sola. Arbitrato completo:
+   `company/Memory/studi/aitubepro/CONFLITTI.md` **C-006**.
+
 **Cosa si prende invece, e non è poco:** l'**idea validata**. Che un format abbia funzionato — in
 italiano o in un'altra lingua — è il segnale più economico che esista, e va usato (vedi
 `video-analyst.md` §8, col caso misurato Lama Facha / Famiglia Sfortunata). **Si replica l'idea e
@@ -75,11 +83,16 @@ Arbitrato completo: `company/Memory/studi/aitubepro/CONFLITTI.md` **C-004**.
 
 ---
 
-## 5. I quattro miti del camuffamento (A4-L06/L07/L08/L10 · 2026-09-05)
+## 5. I sei miti del camuffamento (A4-L06/L07/L08/L10/L14 · aggiornata 2026-09-06)
 
-Studiando quattro lezioni consecutive di AI TUBE PRO ne sono emerse **quattro affermazioni
-diverse** su come rendere «proprio» un video altrui. Sono tutte false, e sbagliano **nello stesso
-punto**: confondono **il non farsi riconoscere da una macchina** con **l'essere in regola**.
+Studiando le lezioni di AI TUBE PRO sono emerse **sei affermazioni diverse** su come rendere
+«proprio» un video altrui. Sono tutte false, e sbagliano **nello stesso punto**: confondono **il non
+farsi riconoscere da una macchina** con **l'essere in regola**.
+
+> **Aggiornata il 2026-09-06:** i miti erano quattro, sono diventati **sei**. I due nuovi vengono
+> entrambi da **A4/L14**, e sono i più istruttivi dei sei perché mostrano che il ragionamento non
+> è nemmeno stabile: la soglia magica cambia numero da una lezione all'altra, e il fair use viene
+> invocato e poi dichiarato decaduto **nella stessa lezione**, sempre a favore di chi copia.
 
 Le raccolgo qui perché sono esattamente il tipo di frase che circola, suona tecnica, e viene
 ripetuta come acquisita da chi non l'ha mai verificata.
@@ -90,11 +103,69 @@ ripetuta come acquisita da chi non l'ha mai verificata.
 | 2 | Filtri, overlay ed effetti rendono il video «**originale e non più riconoscibile**» | L07 · 24:57 e 33:04 | «Non riconoscibile» riguarda l'algoritmo di *matching*. L'opera resta l'opera di un altro: l'irriconoscibilità non crea la titolarità |
 | 3 | Si possono usare clip protette «magari di un film, magari di *Narcos*, **che dura non meno di 5 secondi**» | L10 · 09:02 | **Nessuna soglia di durata** rende lecito l'uso di materiale protetto — né 5, né 7, né 30 secondi. La porzione usata è **uno** dei fattori del fair use, non una franchigia. Il Content ID riconosce anche frammenti brevi |
 | 4 | Coprire il logo con un rettangolo, ritagliare, zoomare e tradurre il testo «**serve a evitare problemi di copyright**» | L08 · 39:56, 40:37, 48:49 | Il diritto d'autore protegge **il contenuto audiovisivo**, non il logo che ci sta sopra. Coprire il marchio nasconde la provenienza, non trasferisce i diritti |
+| 5 | «**Sono 4 secondi di video** che non possono dire nulla perché siamo dentro il fair use, quindi andate super tranquilli» | L14 · 20:51 | **La stessa soglia inesistente del mito 3, con un numero diverso.** L10 diceva 5 secondi, L14 dice 4: due lezioni dello stesso corso danno due franchigie diverse per una franchigia che non esiste. Il fatto che il numero cambi è la prova che nessuno dei due l'ha letto da qualche parte |
+| 6 | «Il canale che usa quella clip non è che l'ha creata lui, quindi **il fair use decade**: non possono mai dire con certezza che noi abbiamo copiato» | L14 · 19:50 | **Il più contorto dei sei.** Confonde due domande diverse: *chi può agire* (il titolare del diritto, che resta chi ha creato l'opera, non chi la sta riusando) e *se l'uso sia lecito*. E poi trasforma una **difficoltà di prova** in una **licenza**: «non possono dimostrarlo» non ha mai voluto dire «si può fare» |
 
 **La regola di casa, in una riga:** *se una tecnica serve a non farsi riconoscere, quella tecnica
 sta ammettendo che c'è qualcosa da riconoscere.*
 
 **Come si comporta la nostra fabbrica:** non riusa materiale di terzi, quindi nessuno di questi
-quattro problemi la riguarda. Questa sezione **non serve a difenderci** — serve a **non farci
+sei problemi la riguarda. Questa sezione **non serve a difenderci** — serve a **non farci
 importare quei miti** da un corso, da un video o da un collaboratore che li dà per buoni. Se
-qualcuno propone una di queste quattro cose, la risposta è già scritta qui.
+qualcuno propone una di queste sei cose, la risposta è già scritta qui.
+
+---
+
+## 6. Il catalogo delle manovre di camuffamento (A4-L09-01 · 2026-09-06)
+
+I sei miti del §5 sono le **frasi**. Questa è la lista delle **manovre** che quelle frasi
+giustificano — dodici, tutte da una sola lezione (A4/L09, «18 Tecniche Avanzate del Metodo Copia
+e Incolla»), tutte applicate a una clip scaricata da un video altrui.
+
+Serve per riconoscerle quando arrivano: raramente vengono proposte col loro nome.
+
+| manovra | minuto | a cosa serve davvero |
+|---|---|---|
+| zoom, ridimensionamento, spostamento, pan+zoom animato | 04:38 – 06:29 | tagliare fuori i dettagli che identificano la fonte |
+| color grading, LUT, bianco e nero, virata di tinta | 06:35 – 07:24 | alterare la firma cromatica |
+| **flip orizzontale / effetto specchio** | 09:10 – 09:41 | **elusione pura**: nessuna funzione estetica |
+| **effetti di distorsione / specularità** | 09:53 – 10:17 | **elusione pura** |
+| green screen e chroma key per sostituire lo sfondo | 10:58 – 14:35 | cambiare il contesto della scena |
+| overlay di testo (MOGRT) e footage ad alpha channel | 15:34 – 17:57 | coprire, distrarre, «rompere la monotonia» |
+
+**Le due in grassetto sono il caso limite, ed è per questo che questa sezione esiste.** Capovolgere
+un'immagine o distorcerla **non migliora il video di un fotogramma**: l'unica cosa che cambia è che
+un sistema di *matching* fa più fatica a riconoscerla. Una manovra che non ha nessuno scopo se non
+quello di **non farsi riconoscere** dichiara, da sola, che c'è qualcosa da riconoscere.
+
+**Regola di casa:** nessuna di queste manovre entra in fabbrica, e nessuna serve — perché la
+fabbrica non parte mai da materiale altrui. Se una di esse viene proposta «per sicurezza», la
+domanda giusta non è «funziona?» ma **«cosa stiamo cercando di nascondere?»**.
+
+---
+
+## 7. Porta chiusa: la separazione audio di brani altrui (A4-L16-01 · 2026-09-06)
+
+Il corso (A4/L16) propone una nicchia «canali di musica» costruita così: **link YouTube → sito
+terzo di download audio → mp3 → AI di *source separation* (lalal.ai) → voce e base separate**, da
+ripubblicare. La presenta come «uno dei settori che funziona di più su YouTube se si fa bene,
+evitando tutti i problemi di copyright» [03:20], **e poi non spiega alcun meccanismo per evitarli**.
+
+**Non entra in fabbrica.** Due passaggi distinti, entrambi problematici:
+
+1. **Scaricare l'audio da YouTube tramite siti terzi** viola i Termini di servizio della
+   piattaforma su cui pubblichiamo. È già sufficiente da solo.
+2. **Separare voce e strumentale da una registrazione altrui e riusarle** è **elaborazione non
+   autorizzata**: tocca sia il **diritto d'autore sulla composizione** sia i **diritti connessi
+   sulla registrazione**. La separazione non crea un'opera nuova — **isola pezzi di quella
+   esistente**, e li isola meglio di prima.
+
+**L'argomento portato a sostegno è un canale da 544 video e quasi 1 milione di iscritti** [03:55].
+Non prova nulla: è **survivorship bias**. Un canale che non ha *ancora* subito conseguenze non
+dimostra che la pratica sia lecita, e non si contano quelli spariti facendo la stessa cosa. Il
+principio in forma generale sta in `03-AGENTI-E-RUOLI/operatori/niche-scout.md` §9 (`A4-L16-02`).
+
+**Lo strumento non è il problema: il materiale in ingresso lo è.** La *source separation* resta
+legittima e utile su **audio nostro** — una traccia registrata male, una voce coperta dalla musica
+[L16 · 06:18]. La linea è semplice e vale per qualunque strumento del genere: **si separa ciò di
+cui si hanno i diritti.**

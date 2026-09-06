@@ -203,3 +203,154 @@ Piu' **20 archivi `.zip`/`.tar.gz` sciolti nella cartella** (`Context-Engineerin
 ### 3.5 `memory-empire/` dentro la Suite — due cartelle vuote di codice
 - **Percorso:** `SKILL & Agenti/Empire Studio Suite/empire-studio/memory-empire/`
 - **Contenuto reale:** due sole sottocartelle, `memory/` e `knowledge/`, **zero file `.py`**, ferme al **2026-07-19**. E' il deposito su cui scrive `scripts/save_to_memory_empire.py`, non un motore a se'.
+
+### 3.6 Workflow pubblicazione automatica — L'ULTIMO METRO, misurato
+- **Percorso:** `SKILL & Agenti/Workflow pubblicazione automatica/`
+- **A cosa serve:** dal docstring di `pubblica.py` — *"UN comando per pubblicare una cartella di contenuti gia' pronti sul canale giusto (TASK-PUBLISHER-W1). La cartella e' un output gia' pronto (es. un prodotto dell'Arsenale Caroselli): slide_01.png ... slide_NN.png + caption.txt. Non genera contenuto, non tocca i motori: li WRAPPA (ADR-003)."*
+- **Dimensione:** 40 file `.py`, **3.497 righe di Python**, 2.921 file totali. Piu' un **`DE_Publisher.exe` da 75,5 MB** (2026-07-19) — un eseguibile impacchettato dell'app, non codice sorgente.
+- **PUNTO D'INGRESSO:** `python pubblica.py "<cartella>"` (dry-run VERIFICATO, default) / `--live` per pubblicare davvero. Esistono anche `app.py` (27 KB, GUI), `run_daily.py`, `setup_scheduler.py`, `alert.py` — tutti fermi al 2026-07-19.
+- **GIRA ANCORA? DORMIENTE, e con la prova piu' pesante del censimento.** Il registro delle pubblicazioni, `published.json`, contiene **letteralmente `{}`** — 2 byte, ultima scrittura **2026-07-19**. Cioe': **questo motore non ha mai pubblicato niente, e non lo fa da 49 giorni.** `pubblica.py` invece e' stato riscritto il **2026-08-31**: qualcuno ha rimesso in ordine il braccio, ma non l'ha ancora usato.
+- **AUTODIAGNOSI GIA' SCRITTA IN CASA:** `DIAGNOSI-PUBLISHER.md` (2026-08-27) e' un audit *"eseguito, non letto"*, e dichiara due guasti che qui vanno citati parola per parola perche' sono la ragione dell'Ultimo Metro:
+  - **`Instagram/instagram_publisher.py::publish()` non puo' fallire.** *"Il `try/except` finale cattura ogni eccezione, la stampa e ritorna `None`: la funzione 'riesce' sempre, anche se non ha pubblicato niente. In piu' non fa login."*
+  - **`main_orchestrator.py` non parte proprio.** *"IMPORT FAIL main_orchestrator -> OpenAIError: Missing credentials."* Catena: `main_orchestrator` → `Core/copy_generator` → `Core/AI_Team/ai_client` che istanzia `OpenAI(...)` **a livello di modulo** con `OPENROUTER_API_KEY`/`GROQ_API_KEY` assenti — muore all'import, prima di eseguire una riga. E *"stampa `FLUSSO COMPLETATO CON SUCCESSO!` incondizionatamente"*.
+  - Cio' che invece **funziona verificato**: `Core/browser_manager.py` (Chrome 151 avviato), `scripts/ig_carousel_publish.py` (`is_ready() -> (True, '6 img OK')`, 6 immagini, caption 924 char su cartella Arsenale reale), la navigazione a instagram.com. `LinkedIn/linkedin_publisher.py` importa ma **mai eseguito end-to-end**, e la diagnosi si rifiuta di dichiararlo funzionante.
+- **DIPENDENZE ESTERNE:** `OPENROUTER_API_KEY` / `GROQ_API_KEY` — **MANCANTI, ed e' questo che uccide l'orchestratore**. Sessione Instagram e sessione Google Drive in `Google_Drive/session_data/` e `Google Drive/session_data/` (**due cartelle quasi omonime, una con lo spazio e una con l'underscore**: sono due sessioni browser separate, e nessuna delle due e' dichiarata come quella buona). Playwright + Chrome reale.
+- **CHI LO POSSIEDE:** **ORFANO.** Ne' `company/REGISTRO-IMPRESA.md` ne' `company/skills-map.yaml` censiscono `pubblica.py` o la cartella `Workflow pubblicazione automatica/`. Esiste solo una skill omonima `/workflow-pubblicazione-auto` nell'elenco skill di Claude, e una skill locale `.claude/skills/social-publisher/` **dentro** la cartella stessa.
+- **COME SI AVVOLGE:** e' l'unico motore che **ha gia' il contratto giusto** (dry-run verificato di default, `--live` esplicito, exit 0 solo su PASS reale, *"nessun PASS finto"*) e **non viene chiamato da nessuno**. Perche' l'Impero lo lanci non serve scrivere codice: serve una chiave modello nel `.env` e che il comando che chiude la Carousel Factory passi la cartella prodotta a `pubblica.py --live`. **I due motori sono a un argomento di distanza e nessuno li ha collegati.**
+
+### 3.7 `apex7/` — la copia autonoma di APEX-7 (non quella della fabbrica YouTube)
+- **Percorso:** `SKILL & Agenti/apex7/`
+- **A cosa serve:** dal docstring di `main.py` — *"APEX-7 Main Entry - Sistema Completo Adaptive Prompt Execution"*. Orchestratore async a 6 agenti che importa `orchestrator/ruflo_core.py::RuFLOOrchestrator` e monta `PlannerAgent`, `WriterAgent`, `AnalystAgent`, `CriticAgent`, `RefinerAgent`, `MetaAgent`.
+- **Dimensione:** 17 file `.py`, **3.383 righe di Python**, 298 file totali.
+- **PUNTO D'INGRESSO:** `main.py` (`run_apex7_system(user_input, context)`), piu' `run_demo.py` per la prova a vuoto.
+- **GIRA ANCORA? DORMIENTE.** Tutto il sistema e' fermo al **2026-08-23** (14 giorni). Ha pero' girato davvero: `memory/data/` contiene `decision_log.db` (SQLite, 61 KB), `architecture_snapshots.json`, `compressed_knowledge.json`, `strategy_store.json` e **cinque `working_memory_<uuid>.json`**, uno da 142 KB e uno da 101 KB — sessioni reali, non stub. L'ultimo prodotto e' `outputs/carousel/Content_Factory_per__20260805_064447/` con `slides_copy.json` e 8 coppie `slide_NN_copy.json` + `slide_NN_prompt.txt`, del **2026-08-05**.
+- **DUPLICAZIONE DA DICHIARARE:** questo APEX-7 **non e'** l'`apex7_orchestrator.py` della fabbrica YouTube (§2.1), ne' l'ecosistema `company/Ecosistemi/11-APEX-7-CORE`. Sono **tre APEX-7 distinti** nello stesso repository, con memorie separate (`memory/data/` qui, `memory/*.json` la'), che non si parlano.
+- **DIPENDENZE ESTERNE:** `requirements_playwright.txt` presente; `playwright_bridge/` e `arena_generator.py` puntano di nuovo ad arena.ai — la terza copia dello stesso tentativo (dopo §2.4 e §3.3).
+- **CHI LO POSSIEDE:** non censito col suo percorso. **ORFANO** (l'ecosistema `11-APEX-7-CORE` esiste, ma parla dell'APEX-7 di `company/`, non di questa cartella).
+- **COME SI AVVOLGE:** `main.py` e' gia' una funzione con ingresso e contesto; basterebbe un `if __name__ == "__main__"` con argparse e un dump JSON dell'esito. Ma prima va deciso **quale dei tre APEX-7 e' quello vero**, altrimenti si avvolge un doppione.
+
+### 3.8 NERVE-SOLVE / Orchestration Layer — architettura enorme, motore appena nato
+- **Percorso:** `SKILL & Agenti/Orchestracion Layer - Problem solving/`
+- **A cosa serve:** e' l'Orchestration Layer 1 di Digital Empire (motore di problem solving). La cartella e' quasi tutta **documentazione di progetto**: 15 file `.md` di architettura, audit, validazione e piani di produzione L1-L7 (`ARCHITETTURA_DEFINITIVA_NERVE-SOLVE_..._v2.1.md` e `v2.2`, `AUDIT_..._v2.0.md`, `RAPPORTO_VALIDAZIONE_...v2.1/v2.2`, `INGESTION_REPORT_...`).
+- **Dimensione:** 20 file `.py`, **3.414 righe di Python**, 2.091 file totali. **Ma le righe di Python sono quasi tutte concentrate in un solo modulo appena abbozzato:** `implementation/src/orchestration_layer/constitutional/` (`kernel.py`, `canonical.py`, `models.py`, `ports.py`, `signing.py`, `errors.py`) piu' tre script `verify_*.py` e i test.
+- **PUNTO D'INGRESSO:** **NON CE N'E' UNO.** Non esiste un `main`, un CLI o un comando. Si entra solo dai tre `implementation/scripts/verify_*.py` (`verify_constitution_candidate.py`, `verify_m1_authority_decision.py`, `verify_m3_response.py`), che sono verifiche, non esecuzione.
+- **GIRA ANCORA? DORMIENTE.** Tutto fermo al **2026-08-23**. Nessun output di produzione: solo `validation/` e `implementation/`. Il rapporto di sproporzione e' il dato: **quindici documenti di architettura contro un unico package `constitutional/` implementato.**
+- **DIPENDENZE ESTERNE:** nessuna chiave; e' logica pura piu' test.
+- **CHI LO POSSIEDE:** esiste la skill `/nerve-solve` nell'elenco skill di Claude, quindi la conoscenza e' raggiungibile. La **cartella** non e' censita nei registri. **ORFANA come codice.**
+- **COME SI AVVOLGE:** oggi non si avvolge: non c'e' niente da lanciare. Serve prima che qualcuno decida se questo layer va costruito o archiviato — sta consumando spazio in mappa senza produrre.
+
+### 3.9 I 19 ARCHIVI `.zip` di `SKILL & Agenti/` — aperti uno per uno
+Ordine ricevuto: **se trovi archivi, dichiara cosa contengono.** Ogni riga qui viene da
+`zipfile.ZipFile(...).namelist()` eseguito sull'archivio, non dal nome del file. **Peso complessivo: ~379 MB.**
+
+| archivio | peso | data | file | .py | cosa contiene davvero |
+|---|---:|---|---:|---:|---|
+| `Forge-caroselli-empire.zip` | 91 MB | 2026-08-05 | 112 | 17 | **la cartella `apex7/` gia' estratta al §3.7**, piu' i due `apex7-ultra-grain-playwright-bridge*.tar.gz` |
+| `Orchestracion Layer - Problem solving.zip` | 88 MB | 2026-08-22 | 2.130 | 20 | **la cartella §3.8 gia' estratta**, ma con dentro anche `.claude-flow/policy/state.json` e un'installazione `gh 2.97.0` — un ambiente di lavoro intero, non un progetto |
+| `caroselli-forge.zip` | 72 MB | 2026-08-05 | 89 | 16 | **quasi identico a `Forge-caroselli-empire.zip`**: stesso `apex7/`, un tar.gz invece di due |
+| `playwright-main.zip` | 41 MB | 2026-05-22 | 3.564 | 2 | repo pubblico della skill `playwright-dev` |
+| `Context-Engineering-main.zip` | 37 MB | 2026-05-22 | 357 | 31 | repo pubblico: gli agenti `alignment.agent`, `research.agent`, `test.agent`… **gia' installati come skill di Claude** |
+| `cli-printing-press-main.zip` | 33 MB | 2026-05-22 | 3.921 | 7 | repo pubblico `printing-press` — gia' skill installata |
+| `impeccable-main.zip` | 27 MB | 2026-05-22 | 2.149 | 0 | repo pubblico `impeccable` — gia' skill installata |
+| `ruflo-main.zip` | 27 MB | 2026-05-29 | 5.921 | 0 | repo pubblico `ruflo` — **gia' estratto accanto in `ruflo-main-extracted/` (4.514 file)** |
+| `Copy-Workflow-manuale.zip` | 18 MB | 2026-05-26 | 46 | 0 | **gia' estratto accanto in `Copy-Workflow-manuale/` (189 file)** |
+| `sparc-main.zip` | 15 MB | 2026-05-31 | 511 | **88** | repo pubblico SPARC — **il singolo archivio con piu' Python**; gia' skill `/sparc-methodology` |
+| `REPORT SITE - WORKFLOW.zip` | 1,1 MB | 2026-08-05 | 133 | 12 | `lp-audit-skill/` + una cartella `formazione/` (copywriting landing, funnel, psicologia colori) |
+| `marketingskills-main.zip` | 896 KB | 2026-05-22 | 465 | 0 | repo pubblico delle skill marketing — gia' installate (`ads`, `cro`, `seo-audit`…) |
+| `vibing-main.zip` | 804 KB | 2026-05-31 | 101 | 0 | repo pubblico, app con deploy Fly.io |
+| `caveman-opencode-plugin.zip` | 272 KB | 2026-06-05 | 210 | 22 | plugin caveman — **gia' estratto accanto in `caveman-extracted/`** e gia' plugin installato |
+| `infinity-ui-main.zip` | 260 KB | 2026-05-31 | 94 | 0 | repo UI (gpt-engineer), mai integrato |
+| `ai-video-main.zip` | 248 KB | 2026-05-31 | 12 | 1 | repo `app.py` per video AI, mai integrato |
+| `nova-main.zip` | 92 KB | 2026-05-31 | 98 | **56** | repo `nova` con `conjecture/` — 56 file Python, **mai estratto e mai citato in nessun registro** |
+| `book-to-skill-master.zip` | 32 KB | 2026-05-23 | 9 | 1 | repo `book-to-skill` — gia' skill installata |
+| `stop-slop-main.zip` | 12 KB | 2026-05-23 | 9 | 0 | repo `stop-slop`, sola `SKILL.md` |
+
+**Cosa dicono questi archivi, messi in fila:**
+1. **Nessuno e' un bot nascosto** — a differenza del caso `08-STREAM-S7-BOT`, qui non c'e' un sistema vivo dentro uno `.zip`. Sono materia prima scaricata.
+2. **Cinque sono doppioni gia' estratti accanto** (`ruflo`, `Copy-Workflow-manuale`, `caveman`, e i due `caroselli-forge`/`Forge-caroselli-empire` che contengono `apex7/`): **~209 MB di pura duplicazione**.
+3. **Nove sono repo pubblici gia' diventati skill installate** — tenerli qui non aggiunge nulla.
+4. **Due sono materiale mai aperto:** `nova-main.zip` (56 file `.py`) e `infinity-ui-main.zip`. Sono l'unica cosa in questa lista che nessuno ha mai guardato.
+
+---
+
+## 4. `empire/` — IL RUNTIME. La risposta alla domanda "come si avvolge"
+
+- **Percorso:** `c:\Users\Utente\Desktop\qui tutto\Digital Empire\empire\`
+- **Nome vero:** *Core Runtime di Digital Empire*.
+- **A cosa serve:** dal `README.md`, che dichiara anche il problema che risolve — *"Il livello che mancava. L'azienda aveva 1.267 file `.md` e 0 file `.py`: un organigramma completo, nessun processo. Questo pacchetto rende gli artefatti descritti in Markdown interrogabili, validabili e misurabili da codice."* E la riga che conta piu' di tutte: **"Non esegue il lavoro. Lo rende osservabile."**
+- **Dimensione:** 97 file `.py`, **14.628 righe di Python**, 122 file totali — cioe' **e' quasi tutto codice**, senza zavorra. E' la densita' piu' alta del repository.
+- **PUNTO D'INGRESSO:** `python -m empire <comando>` (`__main__.py` -> `cli.py::main`). Sette comandi nel core: `status`, `paths`, `links`, `art8`, `adr001`, `conform`, `doctor`. **Contratto gia' dichiarato nel README:** *"Ogni comando di lettura accetta `--json`. Exit code: 0 ok · 1 finding bloccanti · 2 errore interno."*
+- **ARCHITETTURA A LOTTI — il pezzo piu' intelligente del repository:** `cli.py` non conosce i sottocomandi degli altri. Li carica per plugin, con un commento che spiega perche': *"Ogni lotto aggiunge i propri sottocomandi nel PROPRIO modulo, esponendo `register(sub)`. Cosi' nessuno modifica questo file e non ci sono collisioni di merge tra Max, Gael e Gemini."* I sette moduli, con l'autore scritto accanto nel codice: `empire.loader_cli` (Gael — agents, ecosystems, workflows, skills), `empire.index_cli` (Gael — index, find, show), `empire.flow.cli` (Gael), `empire.memory.cli` (Claude — mem *), `empire.inspect.cli` (Claude), `empire.registry.cli` (Gemini), `empire.dash.cli` (Gemini). Un lotto mancante non rompe niente: `except ImportError: continue  # lotto non ancora costruito: normale`.
+- **GIRA ANCORA? VIVO.** Prova: `empire/memory/` scritto il **2026-09-03**; `WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/DASHBOARD.md` rigenerato il **2026-09-05** (e' l'uscita di `empire dash`); la skill `/avvia-estate-wk` esiste e dichiara di *"rigenerare la dashboard, valutare i gate, misurare gli agenti, contare le tracce"*.
+- **DIPENDENZE ESTERNE:** `requirements.txt` presente; **nessuna chiave API, nessuna sessione browser, nessun credito**. E' l'unico motore grosso che non puo' rompersi per una credenziale scaduta.
+- **CHI LO POSSIEDE:** `company/REGISTRO-IMPRESA.md` riga 84: *"`empire/` (core runtime Python — completato via LMarena, GEM-01) | MAX | Claude (gate) · esecutore LMarena/Antigravity · Governo: ADR-003 wrap + ADR-008"*. **NON orfano, e con proprietario nominale: MAX.**
+- **COME SI AVVOLGE:** **non va avvolto: e' l'involucro.** E' gia' costruito per ricevere i motori altrui — un motore che espone `register(sub)` diventa un sottocomando `python -m empire <x>` senza toccare una riga di `cli.py`. **Il guasto dell'Impero non e' che manchi un posto dove agganciare i motori: e' che nessuno dei motori dei paragrafi 2 e 3 si e' mai agganciato qui.** Carousel Factory, publisher, Empire Studio, fabbrica YouTube: nessuno espone `register(sub)`.
+
+## 5. `WORKFLOW-ESTATE/` — il cervello di campagna, pilotato da `empire`
+- **Percorso:** `WORKFLOW-ESTATE/`
+- **A cosa serve:** da `AVVIO-OPERATIVO.md` — *"Il cervello della campagna estiva. Operativo da: 2026-07-27. Questo file e' il bottone di accensione: apri qui, sai in 10 secondi cosa fare e come farlo partire."*
+- **Dimensione:** 251 file `.py` contati sull'albero, **5.690 righe di Python**, 8.403 file totali. Nove cartelle numerate `01-FLUSSI-E-PIANI` ... `07-VIDEO-RUN`, piu' `forge-run-2026-07-22T10-21-00`.
+- **PUNTO D'INGRESSO:** **non e' un suo file — sono tre comandi del runtime `empire`**, elencati in `AVVIO-OPERATIVO.md`: `python -m empire estate` (*"lo STATO VERO: cosa e' finito, cosa e' fermo, di chi e'"*), `python -m empire forge scan` (*"gli AGENTI: quanti operativi, quali da promuovere"*), `python -m empire trace stato` (*"la MEMORIA: decisioni, errori, lezioni registrate"*). Piu' la skill `/avvia-estate-wk` e `02-AUTOMAZIONI-E-SCRIPTS/run_checkpoint_eod.bat`.
+- **GIRA ANCORA? DORMIENTE, con un solo segno di vita recente.** Il codice e la memoria sono fermi al **2026-07-25 / 2026-07-29** (`memory_manager.py` 2026-07-25, `errors/` 2026-07-29, `decisions/`, `performances/`, `sessions/` 2026-07-28). L'unico file aggiornato e' `06-DASHBOARD-E-METRICHE/DASHBOARD.md`, **2026-09-05** — cioe' **la dashboard viene ancora rigenerata su una campagna che non produce piu' da 40 giorni.** `CANTIERE.md` fermo al 2026-07-31, `AZIONI-MAX.md` e `lead.csv` al 2026-07-25/28.
+- **DIPENDENZE ESTERNE:** il runtime `empire/` (che e' vivo), nessuna chiave propria.
+- **CHI LO POSSIEDE:** censito — `empire art8 WORKFLOW-ESTATE` e `empire conform WORKFLOW-ESTATE` sono negli esempi del README di `empire/`, cioe' e' un artefatto sorvegliato dal runtime. **NON orfano.**
+- **COME SI AVVOLGE:** e' **l'unico caso del repository gia' avvolto correttamente** — non ha un suo lanciatore, si interroga dal runtime. E' il modello che i motori dei §2-3 non hanno seguito.
+
+---
+
+## 6. `DIGITAL-EMPIRE/` — il workshop estate, e il TERZO cervello che dice le stesse cose
+
+- **Percorso:** `DIGITAL-EMPIRE/`
+- **Nome vero:** *DIGITAL-EMPIRE / ESTATE-2026 REVENUE WORKSHOP*.
+- **A cosa serve:** dal `README.md` — *"Il piano estate trasformato in workflow eseguibile: reparti, agenti, skill, memoria, gates. Costruito il 21/07/2026 da CHIEF-FORGE."* Otto cartelle numerate `00-MEMORY` ... `07-CONTROL`.
+- **Dimensione:** 125 file `.py`, **14.679 righe di Python**, 6.704 file totali.
+- **PUNTO D'INGRESSO:** `python3 00-MEMORY/memory_manager.py status` (piu' `03-WORKFLOWS/workflows.yaml` per l'orchestrazione macchina). **Non e' un motore di produzione: e' un motore di memoria e di gate.**
+- **GIRA ANCORA? DORMIENTE.** Tutto fermo tra il **2026-07-21 e il 2026-07-25**. Il README stesso e' datato: manda Max a decidere *"prezzo Manuale OGGI h20:00"* del 21 luglio, e Claude a fare il *"Batch copy 21/07 sera"*. E' un cruscotto congelato su una giornata di 47 giorni fa.
+- **ANOMALIA DI DATA:** tre cartelle (`01-PLANNING/`, `02-ARCHITECTURE/`, `06-NERVOUS-SYSTEM/`) hanno mtime **1980-01-02** — timestamp azzerato, tipico di file estratti da un archivio ZIP che non conservava le date. Quelle cartelle non sono mai state toccate dopo l'estrazione.
+- **DUPLICAZIONE GRAVE:** `05-SKILLS/` contiene **`content-forge2.0`, `master-build-architecture` e `ruflo` clonati** — e le stesse tre cartelle esistono **identiche nella radice del repository**. Il README lo ammette senza girarci attorno: *"(clonati)"*. Sono la seconda copia di tre sistemi interi.
+- **TERZA SOVRAPPOSIZIONE:** questo e' il **terzo** impianto memoria+gate del repository, dopo `company/Memory/` e `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/memory_manager.py` — e i due `memory_manager.py` (qui e in WORKFLOW-ESTATE) sono due file distinti che fanno lo stesso mestiere.
+- **DIPENDENZE ESTERNE:** nessuna chiave; `ruflo` clonato dipende dal server MCP `claude-flow`, che **in questa sessione non si connette** (`CONNECT_TIMEOUT` dopo 30 s).
+- **CHI LO POSSIEDE:** censito due volte. `company/REGISTRO-IMPRESA.md` riga 81: *"`DIGITAL-EMPIRE/` (workflow estate NUOVO, sostituisce planning-workshop+workflows+ESTATE-WORKSHOP*) | MAX (import) → Chief-Forge (build originale)"*, e `company/skills-map.yaml` riga 517 come `digital-empire-estate-workflow`. **NON orfano.**
+- **NOTA CHE CONTA:** il registro lo chiama *"workflow estate NUOVO"*, ma esiste **anche** `WORKFLOW-ESTATE/` (§5), che si dichiara *"operativo da 2026-07-27"* — cioe' **sei giorni dopo** questo. Due workshop estate paralleli, entrambi fermi, ciascuno convinto di essere quello buono.
+- **COME SI AVVOLGE:** non ne vale la pena finche' non si decide quale dei due workshop estate sopravvive. Avvolgerli entrambi significherebbe dare all'Impero due comandi che rispondono in modo diverso alla stessa domanda.
+
+---
+
+## 7. FAMIGLIA `Clienti/` — l'unico codice del repository che un cliente paga
+
+Quattro cartelle, contate: `EXPONIUM/` (49 `.py`, 811 file, fermo al **2026-06-04**),
+`Prof Autocad/` (26 `.py`, 8.888 file, **2026-09-02**), `preventivo-exponium/` (0 `.py`, 234 file, 2026-08-23),
+`presentazione-empire/` (0 `.py`, 574 file, 2026-05-20).
+
+### 7.1 PreventivoForge — VIVO, consegnato quattro giorni fa
+- **Percorso:** `Clienti/Prof Autocad/preventivo-forge/` (sorgente) + `Clienti/Prof Autocad/CONSEGNA-NOVACAR-2SET2026/PreventivoForge-Novacar-v2.2.zip` (consegna).
+- **A cosa serve:** genera preventivi auto per il concessionario Novacar leggendo gli annunci di **mobile.de** e traducendoli dal tedesco. Moduli reali in `implementation/`: `ai_translate.py`, `parser.py`, `dealers.py`, `glossary_de_it.py`, `cdp.py`, `archivio.py`, `licenza.py`.
+- **Dimensione:** **3.583 righe di Python** in `preventivo-forge/`.
+- **PUNTO D'INGRESSO:** per il cliente e' **`PreventivoForge.exe`**, non un comando Python: lo ZIP di consegna contiene **1.979 file, 13 `.py` e 3 `.exe`**, con `_internal/` (numpy, cryptography, playwright, fontTools) — un pacchetto PyInstaller autonomo. In casa si entra da `implementation/`.
+- **GIRA ANCORA? VIVO — ed e' l'unico motore del repository con un guasto esterno gia' riparato.** Prova, da `CONSEGNA-NOVACAR-2SET2026/LEGGIMI.txt` del **2026-09-02**: *"A fine agosto mobile.de ha rifatto il proprio sito e ha cambiato il modo in cui pubblica i dati degli annunci. Le versioni precedenti dell'app leggevano i dati nel 'vecchio' formato: da quel cambio in poi non li trovavano piu' e ogni preventivo finiva con 'Non riuscito'. Questa versione legge il NUOVO formato di mobile.de (e continua a leggere anche il vecchio, per sicurezza)."* Cioe': il fornitore ha rotto il motore a fine agosto, e **entro il 2 settembre era gia' uscita la v2.2 che lo ripara**. Nessun altro motore dell'Impero ha questo tempo di reazione.
+- **Le run vecchie** (`preventivo-forge/runs/AF-20260713-*`, `logs/AF-20260713-*.log`) sono di luglio: la produzione reale ora avviene **sulla macchina del cliente**, non qui — ed e' per questo che qui non si vedono log recenti.
+- **DIPENDENZE ESTERNE:** `.env` (dentro lo ZIP di consegna), `licenze.config.json` (**kill-switch abbonamento**), `browser-profile/`, Playwright impacchettato, mobile.de come fonte dati — **la dipendenza fragile: e' cambiata una volta e ricambiera'**.
+- **CHI LO POSSIEDE:** censito bene, due volte. `company/REGISTRO-IMPRESA.md` riga 40: *"PreventivoForge (+ fabbrica `/nuovo-concessionario`, kill-switch licenze) | 01-AGENCY / A4-Delivery + S1/S6 dossier 16 | Gate IMG/R + regole-check + A10"*. `company/skills-map.yaml` riga 535, con nota: *"PRODOTTO LIVE (Novacar consegnato)"*. **NON orfano.**
+- **RUMORE NEL REGISTRO:** le righe 163 e 264 di `REGISTRO-IMPRESA.md` censiscono come "dashboard" e "skill" dell'Impero **due file interni della libreria Playwright impacchettata** (`.../driver/package/lib/vite/dashboard/index.html`, `.../cli-client/skill/SKILL.md`). Sono file di terze parti finiti in registro per scansione automatica.
+- **COME SI AVVOLGE:** e' l'unico motore **che non deve essere avvolto dall'Impero**: gira a casa del cliente. Cio' che l'Impero deve poter lanciare e' la *fabbrica* (`/nuovo-concessionario`) e il *kill-switch* licenze, non il preventivo.
+
+### 7.2 EXPONIUM — cantiere cliente fermo
+- **Percorso:** `Clienti/EXPONIUM/` — 49 file `.py`, 811 file, **fermo al 2026-06-04 (94 giorni)**.
+- **Contenuto reale, aperto:** `MASTER_PLAN.md`, `GAEL_TASKS.md`, `GIORNATA.md`, `CLAUDE_CODE_SESSIONS.md`, `CLAUDE.md`, `sync.ps1`, piu' tre sottosistemi: `content-factory/`, `outreach/`, `shared/`. E' un **monorepo cliente in miniatura**, con la sua governance separata.
+- **GIRA ANCORA? DORMIENTE.** Nessun output dopo il 4 giugno. Accanto, `Clienti/preventivo-exponium/` (0 `.py`) e' stato toccato il **2026-08-23**: la relazione col cliente e' viva, il codice no.
+- **CHI LO POSSIEDE:** **ORFANO.** Ne' `REGISTRO-IMPRESA.md` ne' `skills-map.yaml` censiscono `Clienti/EXPONIUM/`. 49 file Python di un cliente reale, fuori da ogni registro.
+- **COME SI AVVOLGE:** prima va deciso se il cliente e' ancora attivo. Avvolgere un cantiere chiuso e' spreco.
+
+---
+
+## 8. `Crea siti/` — Web Creation System: 19 agenti, un solo file eseguibile
+- **Percorso:** `Crea siti/`
+- **A cosa serve:** dal `README.md` — *"Digital Empire — Web Creation System. Navigazione master del sistema. Tutto il sistema e' qui."* Dichiara **19 agenti AI in 6 categorie** (`orchestrators/`, `market/` 5 sub-agenti, `omega/` 2, `site-build/` 3, `site-copy/` 3, `site-qa/`), piu' `skills/`, `system/` (5 SOP: ACTIVATION-GUIDE, ARCHITETTURA-SISTEMA-SITE, SOP-MARKETING, SOP-OPUS, SOP-SITE).
+- **Dimensione:** 15 file `.py`, **3.865 righe di Python**, 399 file totali.
+- **DOVE STA DAVVERO IL PYTHON (aperto, non dedotto):** quasi tutto **non e' del sistema siti**. E' dentro `skills/market/scripts/` (`analyze_page.py`, `competitor_scanner.py`, `generate_pdf_report.py`, `social_calendar.py`) e `skills/skill-creator/scripts/` (`package_skill.py`, `aggregate_benchmark.py`, `generate_report.py`, `improve_description.py`) — cioe' **copie locali delle skill `market` e `skill-creator` gia' installate in Claude**. L'unico Python scritto per questo progetto e' **un solo file**: `Siti CCM/builder.py`, 18 righe utili — carica `data.json`, renderizza `template.html` con Jinja2, scrive `index.html`. Nient'altro.
+- **PUNTO D'INGRESSO:** **non esiste per il sistema, esiste per il sito.** I 19 "agenti" sono file Markdown, si attivano da Claude (skill `/site-build`, `/opus`, `/website-creator`). L'unico comando reale e' `python builder.py` dentro `Siti CCM/`.
+- **GIRA ANCORA? Il sistema e' DORMIENTE, il sito e' VIVO.** `README.md`, `OPUS-CONTEXT.md`, `agents/`, `skills/`, `system/` sono fermi al **2026-03-29** (161 giorni). Ma `Siti CCM/` e' del **2026-08-25**: `index.html` (65 KB), `template.html` (36 KB), `index_empire.html`, piu' `ccm-elite-ultimate/`, `ccm-full-empire/`, `ccm-sale-page-empire/`, `ccm-webinar/`, `emails/`, `CONTESTO/`. Cioe' **il sito CCM si costruisce ancora, ma senza passare dal sistema che era stato scritto per costruirlo.**
+- **SEGNO DI DISORDINE:** in `Siti CCM/` convivono `index.html`, `index - Copia.html` (byte per byte identico, 65.653 byte entrambi), `index_backup.html` e `index_empire.html`. Quattro versioni della stessa pagina, nessuna dichiarata come quella buona.
+- **DIPENDENZE ESTERNE:** `jinja2` per `builder.py`. Le skill copiate hanno le loro (`generate_pdf_report.py` richiede il motore PDF).
+- **CHI LO POSSIEDE:** **ORFANO come cartella.** Nessun registro censisce `Crea siti/`. Esistono le skill `/site-build`, `/site-copy`, `/site-qa`, `/opus`, `/website-creator`, `/empire-premium-style` nell'elenco skill di Claude — ma puntano alle skill installate, non a questa cartella.
+- **COME SI AVVOLGE:** `builder.py` e' gia' un comando (`python builder.py`), gli manca solo di accettare il percorso invece di leggere la cartella corrente. Il "sistema a 19 agenti" invece non e' avvolgibile: e' documentazione, e va o riattivato come skill o archiviato.

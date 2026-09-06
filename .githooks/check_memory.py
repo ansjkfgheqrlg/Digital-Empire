@@ -34,7 +34,11 @@ from collections import defaultdict
 
 CHECKPOINT_DIR = "company/Memory/checkpoints"
 MEMORY_DIR = "company/Memory"
-NOME_CP = re.compile(r"^CP-(\d{8})-(\d{3})\.md$")
+# Il suffisso non e' piu' un progressivo: dal 2026-09-06 si SORTEGGIA (legge
+# anti-collisione, emperator.md). Due chat parallele non si vedono e sceglierebbero
+# lo stesso "prossimo numero": per questo i vecchi CP-YYYYMMDD-NNN restano validi,
+# ma i nuovi sono CP-YYYYMMDD-XXXX con quattro caratteri dell'alfabeto non ambiguo.
+NOME_CP = re.compile(r"^CP-(\d{8})-([0-9]{3}|[ACDEFGHJKMNPQRTUVWXYZ2346789]{4})\.md$")
 
 ROSSO = "\033[31m"; GIALLO = "\033[33m"; VERDE = "\033[32m"; RESET = "\033[0m"
 if os.name == "nt" and not os.environ.get("WT_SESSION"):

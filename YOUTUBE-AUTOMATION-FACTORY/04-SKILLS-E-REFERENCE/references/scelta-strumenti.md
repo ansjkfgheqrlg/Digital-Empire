@@ -25,6 +25,7 @@ e la quasi totalità non arriva a sei mesi.
 | 2 | **Cosa succede alla fabbrica il giorno che sparisce o raddoppia il prezzo?** | non entra finché non c'è un piano B nominato |
 | 3 | **Quanto costa per video, davvero?** | non entra: un costo non misurato è un costo che scoprirai a fine mese |
 | 4 | **Si comanda da riga di comando, o solo da browser?** | entra con riserva: quello che si comanda solo a click si rompe quando l'interfaccia cambia |
+| 5 | **Con che titolo lo stiamo usando?** *(A4-L13-01 · 2026-09-06)* | non entra: uno strumento usato senza un titolo valido è un rischio legale travestito da risparmio |
 
 ## Gli strumenti in uso oggi, e perché
 
@@ -85,3 +86,42 @@ Perché non abbiamo cambiato strumento: usiamo **Fliki**, che copre voce e monta
 passaggio e sta già dentro la catena via API. Un sintetizzatore migliore sulla singola voce ci
 costringerebbe a rimettere insieme audio e video a mano — un guadagno sul pezzo, una perdita
 sulla catena.
+
+---
+
+## La quinta domanda: il vaglio della licenza (A4-L13-01 · 2026-09-06)
+
+**Perché è stata aggiunta.** Le prime quattro domande guardavano storico, piano B, costo e
+comandabilità. **Nessuna chiedeva che titolo avessimo per usare quello strumento** — un buco che
+si vede solo quando qualcuno propone la scorciatoia.
+
+L'ha fatto il corso: A4/L13 insegna ad avere **Final Cut Pro (350 €) «gratis per sempre»**
+eseguendo nel Terminale una stringa che **azzera il contatore della prova di 90 giorni**, ripetibile
+all'infinito. Non è un *crack* di terzi: è **manomissione del meccanismo di licenza**, e **viola
+l'EULA**. L'autore stesso chiude con «**non so quanto durerà questo metodo**» [08:01], dopo aver
+ripetuto tre volte che «bisogna premiare gli sviluppatori».
+
+**La regola, in una riga:** *uno strumento entra in produzione solo per la porta d'ingresso — piano
+gratuito dichiarato dal fornitore, prova ufficiale entro la sua durata, o licenza pagata.*
+
+Le tre risposte ammesse alla domanda 5:
+
+| titolo | ammesso | nota |
+|---|---|---|
+| **Licenza pagata** (abbonamento o una tantum) | ✅ | il caso normale in produzione |
+| **Piano gratuito o prova ufficiale**, usati come il fornitore li offre | ✅ | ma vale la domanda 2: cosa succede quando scade |
+| **Aggiramento del meccanismo di licenza** (reset del contatore, *crack*, chiave condivisa) | ❌ | **mai**, nemmeno per una prova, nemmeno «solo per vedere se serve» |
+
+**Le tre ragioni, in ordine di peso** — e la prima non è quella che ci si aspetta:
+
+1. **È un guasto con la data già fissata.** Uno strumento che sta in piedi su un trucco «che non so
+   quanto durerà» fallirà in un giorno che non decidiamo noi, probabilmente **mentre la fabbrica
+   sta producendo**. È esattamente il rischio che la domanda 2 esiste per intercettare.
+2. **Rischio legale e reputazionale sproporzionato.** 350 € contro l'esposizione di un'azienda che
+   pubblica col proprio nome: il conto non torna nemmeno se andasse tutto bene.
+3. **Non è nemmeno un risparmio vero.** Il tempo speso a rimettere in piedi il trucco a ogni
+   scadenza è lavoro manuale ricorrente — la cosa che questa fabbrica esiste per non fare.
+
+**Nota di metodo:** questa regola non nasce da uno strumento che ci serviva. Non usiamo Final Cut e
+non lo useremo mai (la fabbrica non apre editor video). Nasce dall'aver visto **la manovra**, e vale
+per qualunque strumento futuro si presenti con la stessa porta.

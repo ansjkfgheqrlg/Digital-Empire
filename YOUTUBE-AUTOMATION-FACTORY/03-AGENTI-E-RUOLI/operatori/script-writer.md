@@ -144,3 +144,61 @@ Vale anche al contrario: **l'intro e l'outro del canale devono restare stabili**
 `video-producer.md` §11); a ruotare sono le formule interne, non l'identità.
 
 Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L08-premiere-mega/`.
+
+---
+
+## 11. I primi 30 secondi sono ritenzione, non solo clic (A4-L14-01 · 2026-09-06)
+
+**Il capovolgimento, in una riga:** titolo e copertina lavorano sul **clic**; i primi 30 secondi
+dello script lavorano su **quanto lo spettatore resta**. Sono due mestieri diversi, e finora la
+fabbrica ne curava esplicitamente **uno solo**.
+
+La lezione lo dice così (A4/L14, 11:35): «lì si fa **un'enorme differenza su YouTube**, quando vuoi
+attirare l'attenzione dell'utente per tutto il video, perché **il tuo obiettivo non è solo farlo
+cliccare, ma fargli vedere l'intero video**». Il motivo per cui *loro* riscrivono l'apertura (rendere
+irriconoscibile un video copiato) **non ci riguarda**: il principio sì, e regge da solo.
+
+**Cosa devi fare, concretamente.**
+
+1. **I primi 30 secondi si scrivono per ultimi**, quando sai già qual è il punto più forte del
+   video. Scritti per primi diventano un'introduzione: «in questo video vedremo…» è il modo più
+   veloce di perdere chi ha appena cliccato.
+2. **Devono contenere una promessa specifica e verificabile** — la stessa che il titolo ha fatto,
+   detta con parole diverse e con **un dettaglio in più** che il titolo non poteva contenere.
+3. **Nessun riepilogo, nessun preambolo, nessuna presentazione del canale** nei primi 30 secondi.
+   Il richiamo all'iscrizione, se c'è, sta **dopo**, non prima (§10 per la rotazione delle formule).
+4. **Nella spec dichiara l'apertura come blocco a sé**, con il conto delle parole: a ~137 parole al
+   minuto della nostra voce, **30 secondi sono circa 68 parole**. È un budget stretto, e va visto.
+
+**Come si vede se ha funzionato:** è l'unica delle regole di script che ha una misura già
+disponibile fuori di qui — la **ritenzione ai 30 secondi** in YouTube Studio. Va guardata lì, non
+stimata qui (`performance-auditor.md`).
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L14-final-cut-avanzato/`.
+
+---
+
+## 12. La CTA di chiusura: il video finisce chiedendo qualcosa (A4-L14-02 · 2026-09-06)
+
+**Il finale non è il posto dove il video smette: è l'unico punto in cui parli a chi è arrivato
+fino in fondo** — cioè alle persone più disposte a fare qualcosa. Sprecarlo con una dissolvenza è
+il difetto più comune e il più facile da togliere.
+
+La lezione (A4/L14, 45:35 e 50:33): «**la parte finale va sempre modificata**… è fondamentale che
+le persone facciano l'azione», cioè «mettere like, iscriversi, attivare la campanella, commentare».
+
+**Regola operativa: ogni script si chiude con una CTA di chiusura esplicita, UNA sola, scelta e
+dichiarata nella spec.** Non quattro richieste in fila — quattro azioni chieste insieme sono zero
+azioni fatte.
+
+| dove | cosa | perché |
+|---|---|---|
+| **ultime ~20 parole** | una sola azione, all'imperativo, con **il motivo** («se vuoi il prossimo caso, iscriviti») | una CTA senza motivo è rumore |
+| **variante** | ruotata dal ventaglio del §10, mai identica due video di fila | la ripetizione identica è la firma della catena di montaggio |
+| **domanda per i commenti** | ammessa **al posto** dell'azione, non in aggiunta | i commenti sono un segnale, ma non si chiedono insieme all'iscrizione |
+
+**Attenzione a non confonderla con l'outro del canale:** l'outro è la **firma stabile** e sta in
+`video-producer.md` §11; la CTA di chiusura è **testo dello script**, cambia da video a video, ed è
+mestiere tuo.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L14-final-cut-avanzato/`.
