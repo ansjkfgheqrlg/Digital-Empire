@@ -84,8 +84,14 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
   `L19`; **A4 al 71,4% (15/21)**. Registro: **47 regole, 44 applicate**. Sette lezioni chiuse in
   **BRONZO dichiarato** (L07, L08, L10 + L09, L13, L14, L16: tutorial di editor manuali e manovre
   su materiale altrui, parlato letto integralmente, zero frame — piano §10).
-- **In A4 restano: 2 lezioni già trascritte** da studiare e **4 in stato `1-fallito`** (HTTP 403,
-  gettone scaduto: si riscaricano con un gettone nuovo, non si forzano).
+- **In A4 restano: 3 lezioni già trascritte** da studiare — **L15** «Crea il tuo AVATAR con A.I»
+  (~14 min), **L17** «Componi Musica Originale Con AI» (~14 min), **L20** «Aggiornamento Fliki
+  Luglio 2024» (**77 min, sul nostro strumento di produzione: è la più importante**) — e **3 in
+  stato `1-fallito`**: **L11** (Premiere SENSEI), **L12** (sottotitoli automatici), **L18**
+  (voice over con Audacity), tutte HTTP 403 da gettone scaduto: si riscaricano con un gettone
+  nuovo, non si forzano.
+- **Lo stato delle lezioni chiuse oggi è stato allineato** in `runs/corso-aitubepro/*/stato.json`
+  (`2-trascritto` → `completata` per L09, L13, L14, L16): il nastro non le ripropone più.
 - **Tre verifiche assegnate al gate A4**: (1) ascoltare un MP4 prodotto e stabilire se contiene
   musica (`A4-L04-04`); (2) cronometrare una produzione vera end-to-end (`A4-L05-04`) — il corso
   ha un metro di 5 minuti, noi nessuno; (3) ⭐ **compilare il campo `YouTube channel ID(s)` nel
@@ -114,7 +120,7 @@ I rapporti grezzi degli scagnozzi restano come **materiale d'origine** in
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-**Le 2 lezioni di A4 già trascritte** che restano — si vedono in
+**Le 3 lezioni di A4 già trascritte** che restano (L15, L17, L20) — si vedono in
 `runs/corso-aitubepro/<id>/stato.json` al passo `2-trascritto` (`completata` = già chiusa,
 `1-fallito` = da riscaricare col gettone nuovo).
 

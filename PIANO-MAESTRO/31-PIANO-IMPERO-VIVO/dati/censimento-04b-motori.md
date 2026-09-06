@@ -457,6 +457,157 @@ Quattro cartelle, contate: `EXPONIUM/` (49 `.py`, 811 file, fermo al **2026-06-0
 - **`APEX SKILL.zip`** — **3.873 file, 128 `.py`**. Contiene `apex-7/` completo: `ARCHITECTURE.md`, `SKILL.md`, e gli agenti `analyst`, `critic` (con `failure-modes.md` e `playbook.md`) e gli altri. E' **il QUARTO APEX-7 del repository** dopo `YOUTUBE-AUTOMATION-FACTORY` (§2.1), `SKILL & Agenti/apex7/` (§3.7) e `company/Ecosistemi/11-APEX-7-CORE`. La skill `/apex-7` e' gia' installata in `.claude/skills/apex-7/`: **questo zip e' materia prima gia' consumata.**
 - **`digital-empire-team---sito.zip`** — 49 file, **0 `.py`**. Componenti React/TypeScript (`components/ui/GoldButton.tsx`, `Navbar.tsx`, `types.ts`, `metadata.json`) di un sito team. Nessun motore.
 
+## 17. `libri-performanti-multiagente/` — IL MOTORE PIU' IMPORTANTE CHE NESSUN REGISTRO CONOSCE
+
+> **Nota di perimetro:** questo motore sta dentro `company/`. Il file 04 aveva escluso `company/` dal
+> proprio perimetro e il mio esclude solo `Outreach/`: senza questa scheda **nessuno dei due censimenti
+> lo avrebbe registrato**, ed e' il motore che ha prodotto qualcosa oggi.
+
+- **Percorso:** `company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/`
+- **A cosa serve:** dal docstring di `engine/auto.py` — *"Produzione automatica di un libro completo, da un comando solo (2026-08-30). Dall'avvio alla cartella finale non chiede NIENTE."* I cinque passi dichiarati: argomento (dal magazzino o da riga di comando) -> titolo + outline + fili narrativi + prompt copertina -> **capitoli a BLOCCHI con il GATE dopo ogni blocco, che se boccia RISCRIVE quel blocco** -> copy Amazon (titolo, sottotitolo, descrizione, keyword) validato -> assemblaggio `docx + PDF + EPUB + prompt copertina + copy` nella stessa cartella. Il codice motiva anche la scelta: *"non tira dritto: e' tutta la differenza fra correggere 4 capitoli e correggerne 24"*.
+- **DECISIONE ECONOMICA SCRITTA NEL CODICE** (unica nel repository, e va citata): *"PERCHE' A BLOCCHI E NON UN CAPITOLO PER CHIAMATA. Misurato il 2026-08-30: ogni invocazione di `claude -p` costa ~0,08-0,11 $ di solo harness, prima ancora di scrivere una parola. A capitolo singolo sarebbero ~2,4 $ di sola tassa su 24 capitoli. A blocchi di 4 diventano ~0,5 $. Il blocco e' anche l'unita' che il gate gia' usa, quindi i due ritmi coincidono."* **E' l'unico motore dell'Impero che dichiara il proprio costo unitario misurato.**
+- **Dimensione:** **28 moduli in `engine/`**, **9.737 righe di Python** nell'albero. Moduli reali: `auto.py`, `kdp.py`, `scrittore.py`, `gate_blocco.py`, `story_validator.py`, `validators.py`, `report_validazione.py`, `amazon_research.py`, `niche_finder.py`, `nicchia_attiva.py`, `scout.py`, `magazzino.py`, `piano.py`, `paratesto.py`, `epub.py`, `kdp_formatter.py`, `copertina_kdp.py`, `pubblicazione.py`, `libro_del_giorno.py`, `metriche.py`, `diagnosi.py`, `session_manager.py`, `book_project.py`, `book_output_manager.py`, `book_report.py`, `ispirazione.py`, `config.py`.
+- **PUNTO D'INGRESSO:** **`python -m engine.kdp auto "<argomento>"`** — dichiarato nel docstring, e funziona anche senza argomento (*"prende dal magazzino"*).
+- **GIRA ANCORA? VIVO — ha prodotto OGGI.** Prova: `LIBRI/libri_pronti/` contiene **sei libri finiti**: `The_Coven_of_Lost_Ember` (**2026-09-06**), `The_Winter_Term` e `Proof_of_Murder` (2026-09-04), `The_Second-Hand_Spellbook`, `The_Quiet_Hours`, `The_Ninth_Winter` (2026-09-02). Piu' `LIBRI/CARICA-SU-KDP.md` (2026-09-06), `magazzino_argomenti.json` e `nicchia_attiva.json` (2026-09-02), e i log `LIBRI/_log/kdp_20260902_*.log`.
+- **DIPENDENZE ESTERNE:** `claude -p` (l'harness stesso, a pagamento — costo misurato ~0,08-0,11 $ a chiamata), `requirements.txt` presente. Nessuna sessione browser: **non puo' rompersi per una sessione scaduta**, a differenza di quasi tutti gli altri.
+- **CHI LO POSSIEDE: ORFANO — e nel modo peggiore.** Comandi lanciati: `grep -in "libri-performanti" company/REGISTRO-IMPRESA.md company/skills-map.yaml` -> **0 righe**; `grep -in "engine.kdp" ...` -> **0 righe**; `grep -in "libri" company/REGISTRO-IMPRESA.md` -> **0 righe: la parola "libri" non compare mai nel registro d'impresa.** `skills-map.yaml` conosce due voci vicine ma sbagliate: `workflow-libri` -> `Workflow-libri/` (7 script, fermi al **2026-03-21**, §13) e `kdp-prodotti` -> `KDP - prodottti digitali/` (1 script, fermo al 2026-04-08). **I registri censiscono i due gusci morti e ignorano il motore che stampa libri.**
+- **MA E' GIA' AGGANCIATO ALL'INVOLUCRO:** `EmpireDesk/modules/libri.py` riga 33 e `modules/libri_kdp.py` righe 14/19/31 lo puntano esplicitamente — *"elenca i pacchetti pronti in `LIBRI/libri_pronti/` con il verdetto di pubblicabilita'... `engine/kdp.py`, il comando unico del workflow. Qui non vive nessuna logica di produzione."* Cioe': **EmpireDesk sa che questo motore esiste, i registri no.**
+- **COME SI AVVOLGE:** e' gia' avvolto due volte (comando `python -m engine.kdp auto`, piu' due tile in EmpireDesk). **Non gli manca l'involucro: gli manca una riga nel registro d'impresa.** Finche' non c'e', l'unico motore che produce prodotto vendibile ogni giorno resta invisibile a chiunque legga i registri per sapere cosa possiede l'Impero.
+
+## 18. Gli altri motori dentro `company/` — perimetro dichiarato
+
+`company/` conta **778 file `.py`** (esclusi venv e cache), la concentrazione maggiore del repository.
+Oltre al §17, i raggruppamenti trovati col conteggio per cartella sono:
+
+- `company/Ecosistemi/12-STREAM-S7-BOT/` — **27 file `.py`**. E' il gemello di `08-STREAM-S7-BOT`, la cartella che in un audit precedente era stata dichiarata vuota mentre conteneva un bot in `.zip` con sei trade reali. **Due cartelle STREAM-S7-BOT numerate diversamente (08 e 12) nello stesso albero.**
+- `company/Ecosistemi/11-APEX-7-CORE/orchestration-layer/` — **21 file di test** + `src/orchestrator/domain/` (10 file). E' il **quinto** APEX-7 e il **secondo** orchestration-layer del repository (l'altro al §3.8).
+- `company/Ecosistemi/02-INFO-BUSINESS/.../_archivio_blueprint_narrativo/` e `_archivio_automazione_modelli/` — **oltre 130 file `.py`** di team multiagente archiviati (`BookWritingTeam`, `AmazonKeywordResearchTeam`, `MemoryManagementTeam`, `QualificationAnalysisTeam`), in **due copie parallele** (`workflow_architecture/` e `architettura_sincrona/`) con gli stessi nomi di team. Sono archivio dichiarato, non produzione.
+- `company/Memory/studi/aitubepro/regole/A4-metodo-ai-tube/` — 15 file `.py`: materiale di studio, non motore.
+
+> Questi restano di competenza dei doom bot su `company/` (ecosistemi e organi). Sono elencati qui
+> **perche' nessun perimetro li reclamava** e perche' due di essi (STREAM-S7-BOT doppio, APEX-7 quinto)
+> confermano il difetto di fondo che questo censimento continua a incontrare: **l'Impero costruisce lo
+> stesso sistema piu' volte in posti diversi.**
+
+
 ## 19. Due cartelle che contengono copie di motori gia' censiti
 - **`Agency page/`** (31 `.py`, 4.957 file, 2026-08-04): e' un sito Vite/React (`App.tsx`, `index.tsx`, `vite.config.ts`, `package.json`), **ma dentro `Agency page/Clienti/Prof Autocad/preventivo-forge/` c'e' una COPIA INTERA di PreventivoForge**, `dist/` compreso. Con `Clienti/Prof Autocad/preventivo-forge/` (§7.1) e lo ZIP di consegna, **PreventivoForge esiste in tre copie nel repository**. Piu' `Agency page - Copia/` (74 file), copia della copia.
 - **`second-brain-vault/`** (13 `.py`, 3.415 file): gli script (`compile_to_wiki.py`, `check_broken_links.py`, `fix_links.py`, `interlink_advanced.py`, `create_stubs.py`, `clean_wiki.py`, `extract_to_raw.py`, `garbage_cleanup.py`) sono **fermi al 2026-05-06/07**, ma `wiki/` e' scritta **2026-09-06**. Cioe': **la wiki e' viva, i suoi manutentori automatici sono morti da quattro mesi.** Chi la scrive oggi e' Empire Studio (§3.1) e Claude a mano, non questi script. Se un link si rompe, oggi non se ne accorge nessuno: `check_broken_links.py` non gira dal 6 maggio.
+
+---
+---
+
+# LE QUATTRO SINTESI
+
+> **Perimetro:** tutto il repository **tranne** `Outreach/` (coperto dal file 04). Conteggi con
+> `node_modules/`, `.git/`, `__pycache__/`, `venv/`, `.venv/`, `site-packages/`, `.next/` **esclusi** —
+> l'esclusione ha cambiato il verdetto in due casi: `Agenti/` (3.192 -> 42 file `.py` reali) e
+> `Clienti/Prof Autocad/` (dove `_internal/` e' libreria impacchettata).
+> **Nessuno script e' stato eseguito:** nessun invio, nessuna spesa, nessun account toccato, nessuna pubblicazione.
+
+## A. TABELLA — i 25 motori censiti
+
+| # | nome | percorso | righe py | punto d'ingresso | stato | proprietario | orfano |
+|---|---|---|---:|---|---|---|---|
+| 1 | apex7_orchestrator | `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/apex7_orchestrator.py` | (101 KB) | `python apex7_orchestrator.py run --phase N` | **VIVO** | 03-CONTENT-FACTORY | NO |
+| 2 | produci_video_completo | stessa cartella | (24 KB) | questo file | **VIVO** (ultimo giro fallito) | 03-CONTENT-FACTORY | NO |
+| 3 | fliki_client | stessa cartella | (26 KB) | chiamato da #2 | **VIVO** (spende) | 03-CONTENT-FACTORY | NO |
+| 4 | arena_thumbnail | stessa cartella | (23 KB) | passo 2 di #2 | **ROTTO** | 03-CONTENT-FACTORY | NO |
+| 5 | youtube_uploader_playwright | stessa cartella | (31 KB) | questo file | **VIVO** | 03-CONTENT-FACTORY | NO |
+| 6 | youtube_automation_factory (pacchetto) | `YOUTUBE-AUTOMATION-FACTORY/youtube_automation_factory/` | 4.601 | `yaf` (Typer) | **DORMIENTE** | 03-CONTENT-FACTORY | NO |
+| 7 | **Empire Studio** | `SKILL & Agenti/Empire Studio Suite/empire-studio/` | 6.433 | nessuno (attivazione naturale) | **VIVO oggi** | 10-MEMORY + Competitor Research | NO (doppio in mappa) |
+| 8 | **Carousel Factory** | `SKILL & Agenti/Workflow agency creative/caroselli.py` | 731 | `python caroselli.py "<arg>"` | **VIVO** | CF-R5 (percorso non censito) | **SI** |
+| 9 | caroselli - agency | `SKILL & Agenti/Workflow agency creative/caroselli - agency/` | (in 731) | libreria | **ROTTO** (ramo browser) | CF-R5 | parziale |
+| 10 | **Workflow pubblicazione automatica** | `SKILL & Agenti/Workflow pubblicazione automatica/` | 3.497 | `python pubblica.py "<cart>" [--live]` | **DORMIENTE** (0 pubblicazioni) | — | **SI** |
+| 11 | apex7 (copia autonoma) | `SKILL & Agenti/apex7/` | 3.383 | `main.py` | **DORMIENTE** | — | **SI** |
+| 12 | NERVE-SOLVE Orchestration Layer | `SKILL & Agenti/Orchestracion Layer - Problem solving/` | 3.414 | **nessuno** | **DORMIENTE** | skill `/nerve-solve` | **SI** (come codice) |
+| 13 | **empire (Core Runtime)** | `empire/` | **14.628** | `python -m empire <cmd>` | **VIVO** | MAX (REGISTRO r.84) | NO |
+| 14 | WORKFLOW-ESTATE | `WORKFLOW-ESTATE/` | 5.690 | `python -m empire estate/forge/trace` | **DORMIENTE** | sorvegliato da #13 | NO |
+| 15 | DIGITAL-EMPIRE workshop | `DIGITAL-EMPIRE/` | 14.679 | `python3 00-MEMORY/memory_manager.py` | **DORMIENTE** | MAX / Chief-Forge | NO |
+| 16 | **PreventivoForge** | `Clienti/Prof Autocad/preventivo-forge/` | 3.583 | `PreventivoForge.exe` (cliente) | **VIVO** (v2.2, 2 set) | 01-AGENCY / A4-Delivery | NO |
+| 17 | EXPONIUM | `Clienti/EXPONIUM/` | (49 file .py) | — | **DORMIENTE** (94 gg) | — | **SI** |
+| 18 | Web Creation System / builder | `Crea siti/` + `Crea siti/Siti CCM/builder.py` | 3.865 | `python builder.py` | sistema **DORMIENTE**, sito **VIVO** | — | **SI** |
+| 19 | **Agenti/Agency (outreach v1)** | `Agenti/Agency/` | 10.456 | `python run.py --pipeline <x>` | **DORMIENTE** (172 gg) | — | **SI** |
+| 20 | System OMEGA | `System OMEGA - .../` | 14.583 (skill copiate) | `/omega-create` | **INCERTO** | skill + 2 agenti | parziale |
+| 21 | **scripts/ (attrezzi Emperator)** | `scripts/` | (19 file) | uno per strumento | **VIVO** | MAX / EMPERATOR | NO |
+| 22 | **EmpireDesk** | `EmpireDesk/` | 2.628 | `python app.py` / `.exe` | **VIVO oggi** | 06-CORE/Platform (r.47) | NO |
+| 23 | carousel-factory (render Node) | `Workfolw crea caroselli à/carousel-factory/` | 0 py (JS) | chiamato da #8 | **VIVO** come libreria | `workflow-caroselli-alt` | NO |
+| 24 | `.claude/` skill+agenti | `.claude/skills/` + `agents/` | **21.535** | comandi slash | **VIVO** | skills-map.yaml | NO |
+| 25 | **libri-performanti-multiagente** | `company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/` | **9.737** | `python -m engine.kdp auto "<arg>"` | **VIVO oggi** | **NESSUNO** | **SI** |
+
+**Totale righe di Python censite in questo file: ~135.000**, fuori da `Outreach/` e fuori dai venv.
+
+## B. I MOTORI VIVI — il patrimonio da non toccare
+
+**Nove motori hanno prodotto un output datato negli ultimi 60 giorni.** In ordine di ultima produzione:
+
+1. **`libri-performanti-multiagente`** — `The_Coven_of_Lost_Ember` finito **oggi 2026-09-06**, sesto libro dal 2 settembre. **Produce l'unica cosa vendibile che esce dall'Impero ogni giorno.**
+2. **Empire Studio** — nove run `max18-*` tra il 4 e il 6 settembre, trascrizioni e scene scritte **oggi**.
+3. **EmpireDesk** — `state/taskboard.json` scritto **oggi**. E' l'involucro che lancia gli altri.
+4. **`second-brain-vault/wiki/`** — scritta **oggi** (ma dai motori 2 e 3, non dai suoi script).
+5. **`scripts/`** — cinque strumenti riscritti il **2026-09-05**, con test accanto.
+6. **La fabbrica YouTube** (motori 1-3, 5) — otto video in `VIDEO-PRONTI/`, l'ultimo il 2026-09-04.
+7. **`empire/` Core Runtime** — `memory/` 2026-09-03, dashboard rigenerata 2026-09-05.
+8. **PreventivoForge** — v2.2 consegnata al cliente il **2026-09-02**, riparando in giorni una rottura causata da mobile.de.
+9. **Carousel Factory** — tre caroselli nell'Arsenale, l'ultimo il 2026-08-31.
+
+**Cosa hanno in comune i migliori tre** (libri, caroselli, publisher): **un comando solo, argomenti espliciti, exit code dichiarati nel docstring, cartella d'uscita deterministica.** Non e' un caso: sono i tre scritti piu' di recente, e chi li ha scritti ha imparato la stessa lezione.
+
+**Cosa non va toccato senza motivo:** `engine/` dei libri, `empire-studio/scripts/`, `EmpireDesk/modules/`, `empire/cli.py` e il suo meccanismo `register(sub)`, `scripts/checkpoint.py`, `caroselli.py`.
+
+## C. I ROTTI E I DORMIENTI, col guasto esatto e il costo per rimetterli in moto
+
+### ROTTI (3)
+
+| motore | guasto esatto, citato | costo | ragione |
+|---|---|---|---|
+| **arena_thumbnail** (§2.4) | `memory/arena_thumbnail_status.json`: `"status":"tentativo_fallito"`, `"n":3`, `"errore":"Locator.count: Target page, context or browser has been closed"` | **BASSA — ma non va riparato** | la copertina la fa Max a mano per regola. E' una ridondanza rotta, non un blocco. Va **archiviato**, non riparato |
+| **caroselli - agency**, ramo Arena (§3.3) | tre cause scritte in `caroselli.py`: `playwright_stealth` non installato (muore all'import), `ArenaAI/session_data/` non esiste (login Google interattivo, gitignorato), e richiede sorveglianza umana per ogni run | **ALTA** | le prime due si risolvono in un'ora; la terza no: **un motore che chiede babysitting per 15 minuti non e' automazione.** Il ramo locale gia' lo sostituisce |
+| **`Instagram/instagram_publisher.py`** (§3.6) | `DIAGNOSI-PUBLISHER.md`: *"il try/except finale cattura ogni eccezione... la funzione 'riesce' sempre, anche se non ha pubblicato niente. In piu' non fa login"* | **BASSA** | e' gia' stato aggirato: `pubblica.py` non lo usa. Va **cancellato**, perche' finche' esiste qualcuno lo richiamera' |
+
+**Il guasto che si ripete tre volte:** `Target page, context or browser has been closed` colpisce `arena_thumbnail` (§2.4), `caroselli - agency` (§3.3) e — nel file 04 — l'Instagram Automation. **Tre motori diversi, lo stesso muro: pilotare un sito di terze parti con Playwright su sessione persistente.** Ripararli uno per uno e' spreco; e' un problema solo, e va risolto una volta.
+
+### DORMIENTI col guasto (in ordine di valore perso)
+
+| motore | perche' e' fermo | costo | ragione |
+|---|---|---|---|
+| **Workflow pubblicazione automatica** (§3.6) | `main_orchestrator` muore all'import: `OpenAIError: Missing credentials` — `Core/AI_Team/ai_client` istanzia `OpenAI(...)` **a livello di modulo** con `OPENROUTER_API_KEY`/`GROQ_API_KEY` assenti. `published.json` = `{}` | **BASSA** | serve **una chiave nel `.env`** e spostare l'istanziazione dentro una funzione. `pubblica.py` e `ig_carousel_publish.py` sono gia' verificati funzionanti. **E' il ritorno piu' alto per il minor lavoro di tutto il censimento** |
+| **youtube_automation_factory** (§2.6) | non e' rotto: e' **scavalcato**. Gli script sciolti di `02-AUTOMAZIONI-E-SCRIPTS` fanno il lavoro, il pacchetto pulito con `yaf` e gli 8 test resta fermo dal 2026-08-04 | **MEDIA** | tecnicamente parte subito; il costo e' **una decisione**, non codice: o si migra la produzione dentro il pacchetto, o si archivia e si smette di far credere al registro che la fabbrica sia quella |
+| **Agenti/Agency** (§9) | fermo dal 2026-03-18 (172 gg) dopo 20 run reali | **MEDIA** | il codice regge (`run.py --pipeline` e' un buon ingresso), ma `Outreach/` fa lo stesso mestiere ed e' piu' recente. Costo vero = decidere quale muore |
+| **WORKFLOW-ESTATE** + **DIGITAL-EMPIRE** (§5, §6) | due workshop estate paralleli, entrambi fermi a luglio, ciascuno convinto di essere quello buono | **ALTA** | non e' lavoro tecnico: e' scegliere. E la campagna estiva e' finita, quindi il costo va speso solo se serve l'impianto, non i contenuti |
+| **NERVE-SOLVE** (§3.8) | **non ha un punto d'ingresso.** 15 documenti di architettura, un solo package implementato | **ALTA** | costruirlo e' un progetto intero. Alternativa onesta: archiviarlo |
+| **apex7 autonomo** (§3.7) | fermo al 2026-08-23; e' il **terzo** APEX-7 su cinque nel repository | **MEDIA** | riavviarlo senza prima scegliere quale APEX-7 e' quello vero significa aggiungere un quarto doppione vivo |
+| **EXPONIUM** (§7.2) | fermo dal 2026-06-04, 49 file `.py` di un cliente reale | **INCERTO** | dipende da un fatto che il codice non puo' dire: **il cliente e' ancora attivo?** `preventivo-exponium/` toccato il 2026-08-23 dice di si' |
+| **Workflow-libri** (§13) | fermo dal **2026-03-21**, 169 giorni. E' la voce che `skills-map.yaml` censisce **al posto** del motore libri vero | **BASSA — da cancellare** | tenere in registro un guscio morto che ruba il nome al motore vivo (§17) fa danno attivo |
+| **script wiki di second-brain-vault** (§19) | fermi dal 2026-05-06; `check_broken_links.py` non gira da 4 mesi mentre la wiki cresce ogni giorno | **BASSA** | e' un `cron`. Ma senza, **nessuno si accorge quando un link della wiki si rompe** |
+
+## D. GLI ORFANI — codice vero che nessun registro conosce
+
+Otto motori. Criterio: `grep` del percorso in `company/REGISTRO-IMPRESA.md` **e** in `company/skills-map.yaml`, entrambi a zero.
+
+| # | motore | righe py | perche' fa male |
+|---|---|---:|---|
+| 1 | **`libri-performanti-multiagente`** | **9.737** | **Il caso piu' grave del censimento.** Produce libri completi (docx+PDF+EPUB+copy Amazon) da un comando solo, **ha consegnato oggi**, ha il gate che riscrive i blocchi bocciati, dichiara il proprio costo misurato. `grep "libri" REGISTRO-IMPRESA.md` -> **0 righe**. E i registri censiscono al suo posto due gusci morti (`Workflow-libri/`, `KDP - prodottti digitali/`) |
+| 2 | **Carousel Factory** (`caroselli.py`) | 731 | Il motore col contratto migliore del repository (4 exit code dichiarati). I registri conoscono `caroselli/` e `Workfolw crea caroselli à/` — **le due cartelle sbagliate**. E per questo `EmpireDesk/metrics.py` conta i caroselli dalla cartella ferma a marzo |
+| 3 | **Workflow pubblicazione automatica** | 3.497 | E' l'ULTIMO METRO in persona: `published.json` = `{}`. Ha gia' il dry-run verificato e la regola *"nessun PASS finto"*. Nessun registro sa che esiste |
+| 4 | **Agenti/Agency** | 10.456 | 20 run di produzione documentate (Milano, Parma, Messina...). Antenato di `Outreach/`. Fuori da ogni mappa |
+| 5 | **`Crea siti/`** | 3.865 | 19 agenti dichiarati, ma il Python vero e' **un solo file** (`builder.py`); il resto sono skill copiate. Il sito CCM si costruisce ancora da qui |
+| 6 | **`SKILL & Agenti/apex7/`** | 3.383 | 5 sessioni reali in `memory/data/`, `decision_log.db` da 61 KB. Terzo APEX-7 |
+| 7 | **NERVE-SOLVE** | 3.414 | Orfano come codice (la skill `/nerve-solve` esiste, la cartella no) |
+| 8 | **`Clienti/EXPONIUM/`** | 49 file `.py` | **Codice di un cliente pagante fuori da ogni registro** |
+
+**Il totale che conta: ~35.000 righe di Python funzionante, di cui due motori hanno prodotto negli ultimi sette giorni, che nessuno dei due registri d'impresa sa di possedere.**
+
+### Il difetto strutturale che questo censimento continua a incontrare
+Non e' l'abbandono. E' la **costruzione ripetuta**:
+- **cinque APEX-7** (fabbrica YouTube, `SKILL & Agenti/apex7/`, `company/11-APEX-7-CORE`, `APEX SKILL.zip`, skill `/apex-7`)
+- **due orchestration-layer** (§3.8 e `11-APEX-7-CORE/orchestration-layer/`)
+- **due STREAM-S7-BOT** (`08-` e `12-`)
+- **tre cartelle caroselli**, **tre copie di PreventivoForge**, **tre copie di `skill-creator`**
+- **due workshop estate**, **tre impianti di memoria**, **due filiere YouTube che non si conoscono** (§2.8)
+- **~209 MB di ZIP che duplicano cartelle gia' estratte accanto** (§3.9)
+
+**E il rimedio esiste gia', costruito e vivo:** `empire/` (§4) sa ricevere qualunque motore con `register(sub)`, ed EmpireDesk (§12) sa lanciarlo come subprocess senza riscriverlo (ADR-003). **Oggi sono agganciati quattro motori su venticinque — e uno dei quattro punta alla cartella sbagliata.**
+
+---
+*Censimento 04b chiuso il 2026-09-06. 25 motori schedati, nessuno script eseguito.*

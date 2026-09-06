@@ -19,8 +19,10 @@ riproducibilità, survivorship bias).
 **Due principi di script che la fabbrica non aveva:** i primi 30 secondi sono **ritenzione** e non
 solo clic (§11, budget ~68 parole, misura = ritenzione ai 30s su YouTube Studio) e **una sola CTA
 di chiusura**, motivata e ruotata (§12). Innestate anche le due regole di L19 rimaste in sospeso.
-**RIPRESA DA:** in A4 restano **2 lezioni già trascritte** e **4 in `1-fallito`** (403, gettone
-scaduto: si riscaricano). Poi il **gate di categoria a 7 condizioni**, con le tre verifiche già
+**RIPRESA DA:** in A4 restano **3 lezioni già trascritte** (L15 avatar, L17 musica generata, **L20
+aggiornamento Fliki: 77 minuti sul nostro strumento di produzione**) e **3 in `1-fallito`** (L11,
+L12, L18 — 403, gettone scaduto: si riscaricano). Il conteggio «due e quattro» scritto poco fa era
+sbagliato: verificato run per run in `runs/corso-aitubepro/*/stato.json`. Poi il **gate di categoria a 7 condizioni**, con le tre verifiche già
 assegnate — musica, tempo per video, e il campo **`YouTube channel ID(s)`** su Fliki per
 `dosementale` e `legamidiamore`. Dettagli: [CP-20260906-49XK](checkpoints/CP-20260906-49XK.md).
 
