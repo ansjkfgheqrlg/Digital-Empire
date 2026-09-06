@@ -1,5 +1,12 @@
-﻿[2026-09-06 19:36:09] CONFLITTO DI SYNC
-Rebase pre-push fallito: Created autostash: c485c7ef
+﻿[2026-09-06 19:41:45] CONFLITTO DI SYNC
+COMMIT BLOCCATO da un controllo pre-commit. Il lavoro NON e' committato ne' pushato.
+
+
+
+Cosa fare: leggi il messaggio qui sopra, correggi il problema (spesso basta
+  python .githooks/check_memory.py --fix
+) e rilancia. Non usare --no-verify: quei controlli fermano guasti che si
+scoprirebbero al merge, a ore di distanza.
 Il tuo lavoro e' al sicuro (committato in locale).
 Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
 Poi cancella questo file.
