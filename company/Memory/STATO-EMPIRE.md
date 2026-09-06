@@ -1,3 +1,46 @@
+## 🜂 2026-09-06 — PIANO IMPERO VIVO: otto censimenti, V1 scritta, e 41 rilievi che la demoliscono — EMP-MCC4
+
+**Ordine di Max:** portare l'Impero **dal 18% vivo al 100%, senza eliminare niente, con tutto
+collegato**, e arrivarci con un piano lavorato quattro volte — *«un risultato one shot»*.
+Metodo imposto: V1 → critica → V2 → critica → V3 → V4 esecutivo.
+**⛔ Divieto in vigore: nessuna modifica costruttiva al repository fino a V4.**
+
+**Prodotte 9.264 righe** in `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/`: **otto censimenti misurati
+(7.700 righe)**, `V1-PIANO-GENERALE.md`, e **41 rilievi di critica indipendente su modello
+diverso (10 FATALI)**.
+
+**I numeri che comandano il piano, tutti misurati:**
+**328 collegamenti progettati · 21 con contratto · 4 percorsi · ZERO fra ecosistemi** (e l'82,6%
+dei 328 sono proprio passaggi fra ecosistemi) · **439 schede di agente e 164 esecutori si toccano
+in 2 nomi** · **274 agenti hanno già il contratto scritto sotto il titolo sbagliato**, e la prima
+ondata è una **rinomina** che porta gli operativi dal 13,9% al **53,5%** · **25 motori,
+135.000 righe di Python: 9 vivi, 3 rotti dallo stesso guasto, 8 orfani** · **7 organi di governo
+che nessuno chiama, 0 sentinelle su 5 attive da sole, 4 conteggi di agenti che danno 4 numeri**.
+
+**Tre scoperte che nessuno sapeva:** la **fabbrica libri** (9.737 righe, 6 libri, l'ultimo oggi)
+**non è in nessun registro**, mentre l'anagrafe censisce due gusci morti che le rubano il nome ·
+**`registry census` è rotto** (bug di indentazione: artefatti = directory = 21.682) · il **gate
+pre-commit dell'anagrafe, lanciato senza l'opzione giusta, risponde «totale: 0» e dà una
+conferma falsa**.
+
+**La critica ha fatto il suo mestiere e ha demolito il mio piano su dieci punti fatali.** I tre
+che cambiano tutto: (1) i **«2 vivi su 15» sono 0 su 15** per la legge L3 dello stesso piano, e
+uno dei due è **progettato per non collegarsi** — unico schema dell'Impero senza `from` e senza
+`to`; (2) **«avere un proprietario» non basta** — l'Ispettorato ce l'ha e ha 87 rapporti da un
+solo backfill con 44 giorni scoperti: serve un **consumatore quotidiano già esistente**, e questa
+diventa la legge centrale di V2; (3) **la frase-cardine della diagnosi è falsa fuori dal
+perimetro strumentato** — **Preventa attraversa la catena da agosto con 1.045 lead e 22 contatti
+reali**, e V1 non la nomina mai, progettando una fetta verticale sui concessionari **accanto al
+motore concessionari che già gira**.
+
+**Verdetto su NEXUS:** regge come cinque funzioni, **non regge come sedicesimo ecosistema** —
+quattro organi su cinque esistono già in tutto o in parte. Il lavoro è **aggancio e pompa, non
+fondazione**.
+
+**RIPRESA DA:** scrivere **V2**, che non è un ritocco ma un altro piano, a partire dai dieci
+fatali. Tutto in [EMP-MCC4](riprese/EMP-MCC4.md) · dettagli in
+[CP-20260906-J8EV](checkpoints/CP-20260906-J8EV.md).
+
 ## 🟠 2026-09-06 — Il concorrente ha una legge scritta, noi avevamo quattro skill che si vietavano a vicenda — CP-20260906-9TWF
 
 **Nasce la FABBRICA SITI. Fase 1 chiusa: legge, canone, ADR-023.**

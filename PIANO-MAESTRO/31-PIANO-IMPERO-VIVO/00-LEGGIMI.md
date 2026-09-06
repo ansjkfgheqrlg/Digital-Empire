@@ -136,8 +136,8 @@ domanda «perché il piano dice questo e non quello».
 | `dati/censimento-04-motori.md` | i motori della famiglia `Outreach/` | ✅ parziale |
 | `dati/censimento-04b-motori.md` | tutti gli altri motori fuori da `company/` | 🔄 462 righe |
 | `dati/censimento-01-vivo.md` · `dati/censimento-03-forze.md` | resti dei due doom bot caduti alla prima ondata — conservati, non cancellati (L1) | ⚠️ 12 e 3 righe |
-| `V1-PIANO-GENERALE.md` | prima versione | ⬜ |
-| `_critica-v1/` | i rapporti dei revisori su V1 | ⬜ |
+| `V1-PIANO-GENERALE.md` | prima versione | ✅ |
+| `_critica-v1/` | **41 rilievi, 10 FATALI** — architettura (13) · esecuzione (12) · verità e omissioni (16) | ✅ |
 | `V2-PIANO-AMPLIATO.md` | seconda versione | ⬜ |
 | `_critica-v2/` | i rapporti su V2 | ⬜ |
 | `V3-PIANO-ASSESTATO.md` | terza versione | ⬜ |
@@ -209,9 +209,9 @@ meno, e quando cade perde meno.
 |---|---|---|
 | Leggi e metodo fissati | ✅ | 2026-09-06 |
 | Quattro censimenti | 🔄 in corso | 2026-09-06 |
-| V1 — piano generale | ⬜ | |
-| Critica 1 | ⬜ | |
-| V2 — piano ampliato | ⬜ | |
+| V1 — piano generale | ✅ | 2026-09-06 |
+| **Critica 1** | ✅ **41 rilievi, 10 FATALI** | 2026-09-06 |
+| **V2 — piano ampliato** | ⬜ **<- SI RIPRENDE DA QUI** | |
 | Critica 2 | ⬜ | |
 | V3 — piano assestato | ⬜ | |
 | V4 — piano esecutivo | ⬜ | |
