@@ -872,6 +872,27 @@ python scripts/checkpoint.py chiudi EMP-K7Q2
 python scripts/checkpoint.py cp --titolo "..."      # CP di lavoro, codice coniato
 ```
 
+### LA PERCENTUALE DEL BATTITO — e' la MISSIONE, non il pezzo
+
+**Ordine di Max, 2026-09-06, dopo che ho scritto `RECAP — 100%` con due terzi del lavoro
+ancora da fare.**
+
+Il numero nel titolo `**⏱️ RECAP — <n>%**` e' l'**avanzamento della missione in corso**, quella
+che Max ha ordinato, non del compito che ho appena chiuso. Se ho finito di guardare un video
+su nove, il battito non fa 100%: fa la frazione vera.
+
+- **100% si scrive solo quando e' finito TUTTO**, l'ultimo pezzo compreso. Fino a quel momento
+  e' un numero piu' basso, e va bene che sia basso.
+- **Si conta, non si stima**: la percentuale esce da cio' che c'e' sul disco (fonti chiuse,
+  scene viste su scene totali, artefatti prodotti), con lo stesso rigore delle coperture.
+- Quando la missione ha piu' fasi, **si dichiara il peso**: *"Fase 1 al 49%, e la Fase 1 pesa
+  meta' della missione: siamo al 25%"*. Chi legge deve poter rifare il conto.
+- Il pezzo appena chiuso si racconta nella riga **Fatto**, non gonfiando il titolo.
+
+> Perche' conta: la percentuale e' l'unica cosa del battito che Max legge come promessa. Un
+> 100% falso gli fa credere che possa cominciare la fase dopo, e lo fa partire su un lavoro
+> costruito su due terzi di materiale non studiato.
+
 ### LEGGE ANTI-COLLISIONE — nessun codice e' mai progressivo
 
 **Ordine di Max, 2026-09-05, dato dopo il secondo scontro di checkpoint.**
