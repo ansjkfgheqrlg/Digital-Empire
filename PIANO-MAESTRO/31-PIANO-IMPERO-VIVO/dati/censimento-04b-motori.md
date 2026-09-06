@@ -113,3 +113,24 @@ sono le sessioni browser vive del sistema.
 - **~40 script `_*.py` datati 2026-09-03** (`_ads_on_single.py`, `_check_claims.py`, `_resume_video05_v4.py`, `_delete_stuck_video05.py`…) — non sono un motore: sono i **ferri chirurgici** di una giornata passata a sbloccare a mano video incastrati su YouTube Studio. Vanno archiviati, non censiti come sistema.
 - `VIDEO-PRONTI/video-01..video-08` — la consegna: `video.mp4` + `copy.md` + `metadata.json`. **Otto video prodotti, l'ultimo il 2026-09-04.**
 - `.claude/commands/avvia-yt.md` + `.claude/agents/credential-keeper.md` — la fabbrica ha un comando di Impero proprio (`/avvia-yt`) e un agente dedicato che legge `FLIKI_API_KEY` dal `.env` senza chiedere conferma.
+
+### 2.8 VERIFICA DELL'ACCUSA — "nessun ecosistema nomina la fabbrica"
+
+**L'accusa e' vera, ma va riformulata.** Comandi lanciati:
+
+- `grep -ril "youtube-automation-factory\|YTAF" company/Ecosistemi/05-MULTI-BUSINESS/` -> **0 file**.
+- `grep -ri "youtube" company/Ecosistemi/05-MULTI-BUSINESS/` -> **64 occorrenze** in 10+ file.
+
+Cioe': `05-MULTI-BUSINESS` **parla molto di YouTube** e ha una sua filiera YouTube completa di sette agenti
+propri — `Agenti/MB-YT-A02-niche-scout.md`, `MB-YT-A03-competitor-mapper.md`, `MB-YT-A04-keyword-miner.md`,
+`MB-YT-A05-brandkit-builder.md`, `MB-YT-A06-calendar-planner.md`, `MB-YT-A09-opt-coord.md`, piu'
+`Funzioni/T-niche-scout.md` — **ma non nomina mai il motore che quei compiti li esegue davvero**.
+
+Il quadro reale, quindi, non e' "la fabbrica e' orfana": la fabbrica **e'** censita, in
+`company/REGISTRO-IMPRESA.md` riga 52, sotto `03-CONTENT-FACTORY`. Il guasto e' un altro e piu' grave:
+**due filiere YouTube parallele che non si conoscono.** Una scritta come agenti-documento in
+`05-MULTI-BUSINESS` (niche scout, competitor mapper, keyword miner) e una scritta come Python funzionante in
+`YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS` (`niche_discovery.py`, `channel_discovery.py`,
+`seo_score.py`, `thumbnail_analyzer.py`) — **gli stessi identici mestieri, due volte**, e nessuno dei due lato
+cita l'altro. Chi legge l'ecosistema 05 crede di dover ancora costruire cio' che in 02-AUTOMAZIONI-E-SCRIPTS
+gira gia'.
