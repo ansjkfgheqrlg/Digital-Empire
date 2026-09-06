@@ -1,3 +1,38 @@
+## 🟠 2026-09-06 — Il concorrente ha una legge scritta, noi avevamo quattro skill che si vietavano a vicenda — CP-20260906-9TWF
+
+**Nasce la FABBRICA SITI. Fase 1 chiusa: legge, canone, ADR-023.**
+Studiato il nuovo lancio di Andrei Pascu (`armageddon.bsns.it`) con la pipeline completa: cattura
+forense, 10 screenshot visionati uno per uno, CSS (1.020 righe) e JS (5,6 KB) letti integralmente.
+⭐ **Il trovato che ha cambiato il piano non e' il design.** Il suo CSS e' servito in chiaro e
+commentato, e i commenti citano `docs/homepage-design/full-page-mockup.pdf` (826,46 × 2.851,92
+unita'), **`CLAUDE.md §4`**, `assets/brand.css`, il ticket **`AP-138`** e richieste datate
+(*"Andrei asked on 5 September"*). **Andrei costruisce le sue landing con Claude Code, con una legge
+numerata che i suoi agenti citano per giustificare una deroga.**
+**La diagnosi su di noi, contata sul disco:** DE aveva **quattro** sistemi per fare siti e due si
+vietavano a vicenda — `empire-premium-style` (*"Mai HTML/CSS statico"*) contro `website-creator`
+(*"Zero framework"*), entrambe dichiarate obbligatorie, piu' 15 skill `site-*` (4.052 righe) e un
+agente con un terzo stack. **Quale sistema parte dipendeva da quale frase Max pronunciava, non da
+quale lavoro andava fatto.** E le 2.362 righe di studio sui suoi 10 siti non erano dentro nessuna
+skill: tre mesi archiviati, non operativi.
+**Costruito oggi:** `.claude/skills/fabbrica-siti/` con **CLAUDE-SITI.md** (10 articoli numerati e
+citabili), **canone.css** (445 righe: colonna `--u`, scala di opacita', due curve, grana, silver
+mixing, blocco reduced-motion), **canone.json** (gemello a macchina con i 10 gate futuri) e
+**canone_sync.py**, che rende vera con una macchina la promessa "i due canoni non possono divergere"
+— al primo giro ha bocciato con 5 divergenze reali, ora **PASS**.
+**[ADR-023](decisions/ADR-023-fabbrica-siti-due-corsie.md):** una legge, un canone, **due corsie**.
+≤3 pagine e nessuno stato → **A** vanilla, zero build. Tutto il resto → **B** Next.js 16.
+Le 4 skill vecchie perdono l'autorita', non i file.
+**12 mosse prese da lui** (colonna `--u`, prezzo che si somma dal DOM, `is-locked`, cucitura
+fotografica, FAQ contro il proprio interesse, e sopra tutte il CLAUDE.md citabile), **8 nostre
+tenute** (grana, silver mixing, `#0a0a0a` invece del nero puro — misurato —, Onest, fondi alternati,
+APSOC, corsia B, il gate a macchina), **3 suoi difetti diventati nostri controlli automatici**.
+**Aperto B-057:** `site_capture.py` buca i paragrafi con `<strong>`, e quel file e' la base dei
+teardown di copy. Da correggere prima della prossima cattura.
+**RIPRESA DA:** **Fase 2 — i 20 pattern** (11 Empire gia' scritti + 9 da estrarre dall'atlante
+visivo). Poi Fase 3 (flusso a 9 passi + `SKILL.md` + `emperator.md §6.20`), Fase 4 (i due gate),
+Fase 5 (collaudo: rifare `armageddon` col nostro canone).
+Dettagli: [CP-20260906-9TWF](checkpoints/CP-20260906-9TWF.md) · dossier `PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md`.
+
 ## 🟠 2026-09-06 — Un gate bocciava i video su una musica che non esiste — CP-20260906-JYGA
 
 **Codice di ripresa: EMP-V6DE (APERTA).** Chiuse **L15, L17 e L20** con **3 sentinelle** lanciate in

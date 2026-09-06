@@ -278,3 +278,12 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
 | B-056 | La fabbrica YouTube non ha nessun controllo dei fatti | Cercato il 2026-09-05 su tutti i `.md` e `.py` di `YOUTUBE-AUTOMATION-FACTORY`: *verifica dei fatti*, *fact-check*, *controllo dei fatti* → **zero risultati**. Abbiamo `verifica_originalita` (`regolatori.py:153`) che dice se un testo e' troppo SIMILE alla fonte; non abbiamo niente che dica se e' ancora VERO. Riscrivere "con parole proprie" e' esattamente l'operazione in cui una data si sposta, un'eta' cambia, una citazione viene attribuita a un altro — e il regolatore dell'originalita', davanti a un fatto storpiato, da' **via libera** (meno somiglianza). Tappato per ora a mano: `script-writer` §8 impone la rilettura dei fatti contro la fonte (regola A4-L02-02). Il rimedio vero e' un **regolatore dei fatti** automatico, gemello di quello dell'originalita': organo nuovo dell'architettura, si apre con un ADR | prima del prossimo ciclo di produzione con sorgenti di cronaca | &#9744; |
 
 | B-057 | `site_capture.py` buca i paragrafi con testo in linea | Il testo proprio di un `<p>` viene estratto escludendo i figli `<strong>`/`<em>`, quindi le risposte FAQ escono con dei buchi ("Quattro corsi completi &mdash; , , e &mdash;"). Trovato il 2026-09-06 catturando `armageddon.bsns.it`. Il contenuto resta recuperabile dall'HTML, ma `copy-integrale.md` non e' affidabile su paragrafi con inline &mdash; e quel file e' la base dei teardown di copy. Fix: ricomporre il testo dai nodi figli quando l'elemento non contiene altri blocchi. File: `competitor/Andrei Pascu/site-study/scripts/site_capture.py` | prima della prossima cattura di un sito | &#9744; |
+
+- **B-058 — NUOVA.** Il tasso del secondo follow-up e' sbagliato dentro casa nostra:
+  `second-brain-vault/wiki/concepts/Framework_Barnum_Rainbow_5Pilastri.md:31` scrive
+  **20%/40%/30%** per la sequenza a 3 step, ma nel video il relatore **si corregge dal vivo e
+  dice 50%**, non 40%: abbiamo ripreso il numero prima della correzione. Quel framework alimenta
+  **cinque agenti** (`cmo-empire`, `outreach-message-writer`, `outreach-rule-keeper`,
+  `sentinel-brandvoice`, `sentinel-quality`): dieci punti di errore falsano ogni previsione di
+  campagna. **Non toccato**: Fase 1 e' solo studio, si corregge in Fase 2.
+  (origine: studio `max18-v07` / `O2IDhISyy8Y`, checkpoint `EMP-W4K7`)
