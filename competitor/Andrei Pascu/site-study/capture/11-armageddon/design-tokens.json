@@ -1,0 +1,307 @@
+{
+ "url": "https://armageddon.bsns.it/",
+ "title": "Armageddon — outEmail, outFunnel, outHeadline, outViral a 199€",
+ "meta_description": "Quattro prodotti in un pack solo: outEmail, outFunnel, outHeadline, outViral. 199€ fino a giovedì 10 settembre, più 199€ di sconto su Funnel Operator al lancio.",
+ "og_title": "Armageddon is here",
+ "lang": "it",
+ "page_height": 5103,
+ "page_width": 1430,
+ "body_bg": "#000000",
+ "body_font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+ "palette_text": [
+  [
+   "#ffffff",
+   41
+  ],
+  [
+   "#ffffff @0.76",
+   11
+  ],
+  [
+   "#bc0807",
+   5
+  ],
+  [
+   "#ffffff @0.5",
+   4
+  ],
+  [
+   "#ffffff @0.55",
+   3
+  ],
+  [
+   "#ffffff @0.42",
+   2
+  ],
+  [
+   "#ffffff @0.78",
+   1
+  ],
+  [
+   "transparent",
+   1
+  ],
+  [
+   "#000000",
+   1
+  ],
+  [
+   "#0000ee",
+   1
+  ],
+  [
+   "#ffffff @0.62",
+   1
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#000000",
+   4
+  ],
+  [
+   "#bc0807",
+   4
+  ],
+  [
+   "#000000 (+img)",
+   2
+  ],
+  [
+   "#ffffff",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+   59
+  ],
+  [
+   "Curseyt, \"Times New Roman\", serif",
+   12
+  ]
+ ],
+ "type_scale": [
+  [
+   "16.512px / lh 27.4099px / w700",
+   19
+  ],
+  [
+   "16.512px / lh 27.4099px / w400",
+   12
+  ],
+  [
+   "19.008px / lh 25.6608px / w700",
+   11
+  ],
+  [
+   "28.3203px / lh 28.3203px / w800",
+   4
+  ],
+  [
+   "12px / lh normal / w700",
+   4
+  ],
+  [
+   "59.52px / lh 65.472px / w400",
+   4
+  ],
+  [
+   "14.88px / lh normal / w400",
+   3
+  ],
+  [
+   "191.616px / lh 191.616px / w400",
+   2
+  ],
+  [
+   "24.9651px / lh normal / w800",
+   2
+  ],
+  [
+   "81.6px / lh 81.6px / w400",
+   2
+  ],
+  [
+   "12px / lh 20.4px / w400",
+   2
+  ],
+  [
+   "13.92px / lh normal / w800",
+   1
+  ],
+  [
+   "194.4px / lh 194.4px / w400",
+   1
+  ],
+  [
+   "94.08px / lh 94.08px / w400",
+   1
+  ],
+  [
+   "151.987px / lh 151.987px / w400",
+   1
+  ],
+  [
+   "72px / lh 72px / w400",
+   1
+  ],
+  [
+   "12px / lh 21px / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "700",
+   34
+  ],
+  [
+   "400",
+   30
+  ],
+  [
+   "800",
+   7
+  ]
+ ],
+ "radii": [
+  [
+   "6.375px",
+   4
+  ],
+  [
+   "15.1861px",
+   2
+  ],
+  [
+   "15.1872px",
+   1
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Armageddon Armageddon is here"
+  },
+  {
+   "tag": "h2",
+   "text": "Sei pronto?"
+  },
+  {
+   "tag": "h2",
+   "text": "Domande"
+  },
+  {
+   "tag": "h2",
+   "text": "Cosa include"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "COMPRA",
+   "href": "https://buy.stripe.com/00w28s9LA5Y0eIT8N64Ja1O",
+   "y": 2888,
+   "x": 571,
+   "w": 288,
+   "h": 71,
+   "bg": "#ffffff",
+   "color": "#000000",
+   "radius": "15.1861px",
+   "border": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+   "size": "24.9651px",
+   "weight": "800",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "COSA INCLUDE?",
+   "href": null,
+   "y": 2979,
+   "x": 571,
+   "w": 288,
+   "h": 71,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "15.1861px",
+   "border": "3px solid rgb(255, 255, 255)",
+   "shadow": "none",
+   "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+   "size": "24.9651px",
+   "weight": "800",
+   "transform": "none",
+   "padding": "1px 6px"
+  }
+ ],
+ "images": [
+  {
+   "tag": "img",
+   "src": "/assets/home/eye-mark.webp",
+   "alt": "",
+   "y": 26,
+   "x": 652,
+   "w": 35,
+   "h": 35
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/splatter-left.webp",
+   "alt": "",
+   "y": 86,
+   "x": 235,
+   "w": 152,
+   "h": 893
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/portrait.webp",
+   "alt": "Andrei Pascu",
+   "y": 86,
+   "x": 235,
+   "w": 960,
+   "h": 960
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/splatter-right.webp",
+   "alt": "",
+   "y": 301,
+   "x": 732,
+   "w": 462,
+   "h": 653
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1166,
+   "x": 614,
+   "w": 202,
+   "h": 121
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/ticket-front.webp",
+   "alt": "Armageddon pack: outEmail, outFunnel, outHeadline, outViral — 199€",
+   "y": 2256,
+   "x": 500,
+   "w": 317,
+   "h": 605
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/ticket-back.webp",
+   "alt": "",
+   "y": 2312,
+   "x": 590,
+   "w": 328,
+   "h": 543
+  }
+ ],
+ "slices_desktop": 6,
+ "slices_mobile": 4,
+ "mobile_page_height": 2830
+}

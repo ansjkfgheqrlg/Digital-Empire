@@ -1,0 +1,762 @@
+
+[00:00:00] Claude is the world's number one design
+[00:00:02] agent for building beautiful websites.
+[00:00:05] But just because your site looks pretty
+[00:00:07] doesn't mean that it will sell or get
+[00:00:09] customers. For that, you need to use the
+[00:00:12] correct skills. And in this video, I'll
+[00:00:14] show you the most important ones across
+[00:00:16] seven levels so you can build beautiful
+[00:00:19] websites that are mobile optimized,
+[00:00:21] sound like they've been written by a
+[00:00:22] human, and have the correct structure
+[00:00:24] without the need to be a design expert.
+[00:00:27] So, if you haven't already, grab that
+[00:00:29] beautiful coffee and let's dive straight
+[00:00:31] in. So, level one is finding the
+[00:00:33] standard. Now, building a beautiful
+[00:00:35] website isn't actually the hard part.
+[00:00:38] It's the other stuff around it. And I'm
+[00:00:39] going to cover those seven skills here.
+[00:00:41] And by the end of the video, you will
+[00:00:42] know everything you need to know to
+[00:00:44] build websites that do actually sell or
+[00:00:46] just significantly level up your
+[00:00:49] website, including all the psychological
+[00:00:51] things that I've learned from doing this
+[00:00:53] myself that you're not going to want to
+[00:00:54] miss out. So, how do we find out what
+[00:00:56] the standard is? Well, we need a great
+[00:00:58] reference point. And one of the best
+[00:01:00] resources I found for this is going to
+[00:01:02] be referral.design. And I'm going to
+[00:01:03] timestamp everything down below. So, you
+[00:01:05] can go to any section you like to, but I
+[00:01:07] encourage you to watch every bit because
+[00:01:09] it's going to have stuff that you
+[00:01:10] probably haven't seen before. So, what I
+[00:01:11] would encourage you to do at level one
+[00:01:13] is effectively find a website in your
+[00:01:15] niche that is gold standard, that has
+[00:01:18] won awards, that is converting
+[00:01:19] customers. Now, if I come on to this
+[00:01:21] section here, the one that I'm going to
+[00:01:22] be using this one is going to be
+[00:01:23] Mintlify, which I think is a beautiful
+[00:01:26] and gorgeous website. As you can see,
+[00:01:27] it's got a nice background here. It
+[00:01:29] scrolls down, it shows you. Now, what
+[00:01:31] this has done is given us the design
+[00:01:33] DNA, the design blueprint such that we
+[00:01:36] can actually understand what makes this
+[00:01:38] design fantastic. And when we give that
+[00:01:40] to Claude, we can build a version for
+[00:01:42] ourselves. So, now we found a great
+[00:01:43] design, and it would be awesome for us
+[00:01:45] to have that. We're going to do
+[00:01:46] something that most people never do and
+[00:01:48] that's think about something beyond the
+[00:01:50] homepage because to have a great website
+[00:01:52] what we need is a full structure. So
+[00:01:55] there's a couple of ways to do this. You
+[00:01:56] can build the site and claude. One of
+[00:01:58] the cool tools that I've been using a
+[00:01:59] lot recently is something called Reloom.
+[00:02:01] Now Reloom is kind of like this really
+[00:02:03] decent. It's built by designers. It's
+[00:02:05] got loads of individual kind of like
+[00:02:07] design knowledge baked into it. But it's
+[00:02:09] very cool. Now with Reloom we can
+[00:02:10] actually get full site maps like this.
+[00:02:12] And this is what I want really. I want
+[00:02:14] to get a bird's eye view of my website
+[00:02:16] because if we're handing this over to a
+[00:02:18] client or building it ourselves, people
+[00:02:20] aren't just going to stay on the
+[00:02:21] homepage. They're going to click into
+[00:02:22] different things, right? We're going to
+[00:02:23] need a wireframe that explains what
+[00:02:25] everything looks like. We're going to
+[00:02:26] want some idea about what does design
+[00:02:28] look like, and we need to give it a
+[00:02:29] brief. And I found really to be the
+[00:02:31] fastest way to get this up and running.
+[00:02:32] You can do this in Claude if you want
+[00:02:33] to, but if you want to do it quicker,
+[00:02:35] you might find this very helpful. So,
+[00:02:36] there's two ways we can do this. Number
+[00:02:38] one with this skill at level two is you
+[00:02:40] can do export. So if you click on export
+[00:02:42] for example, what you can do is come
+[00:02:44] over, click on a new project and then
+[00:02:45] effectively you can describe it. So I
+[00:02:47] might say hey that I want you to build
+[00:02:48] for me a roofing company that is
+[00:02:51] bestin-class using the below design
+[00:02:54] principles. Then once you've done that
+[00:02:55] come down and literally just paste in
+[00:02:57] that URL that you grab from this website
+[00:02:59] right here and you can if you want to
+[00:03:00] also just copy and paste all of this and
+[00:03:02] just drop it in. Then once you've done
+[00:03:03] that you'll actually get a site map
+[00:03:05] that's generated from Room. And I think
+[00:03:07] this is really cool. Now, one of the
+[00:03:09] reasons why this is really handy is we
+[00:03:10] can actually move these sections up and
+[00:03:12] down. So, remember an ounce in print is
+[00:03:14] worth a pound in post. So, we're still
+[00:03:16] going to make this look amazing, but
+[00:03:18] what's great is that we can actually
+[00:03:19] think through what does our site map
+[00:03:21] look like? Will about us page, a
+[00:03:23] services page, projects, blog, contact
+[00:03:25] us, everything. We can look at the
+[00:03:27] wireframes, which is fantastic. And then
+[00:03:29] on the wireframe section, you can
+[00:03:31] actually just see what all of those
+[00:03:32] different things look like. We can move
+[00:03:34] them around. We can edit them in the
+[00:03:35] left hand side. It's really great to
+[00:03:37] spend a few minutes going through and
+[00:03:38] building out everything you want to. And
+[00:03:40] of course, we've got the style guide
+[00:03:42] based on everything that we gave. We've
+[00:03:44] got the colors, we've got things that we
+[00:03:45] can change. If we don't like seller, we
+[00:03:46] want to change something else. We can do
+[00:03:48] anything we want. So, it gives us this
+[00:03:50] allin-one platform effectively to kind
+[00:03:52] of build any website that we like. Then,
+[00:03:54] once you've got to a point where you're
+[00:03:55] really happy with the wireframes, what
+[00:03:56] we can do is come over to top right and
+[00:03:57] click on export. And you can export this
+[00:03:59] directly to Claude design, but for the
+[00:04:01] purpose of this, I'm going to export it
+[00:04:03] via HTML. And then you want to come back
+[00:04:04] over to Claude, upload that zip file and
+[00:04:06] say, "Hey, I want you to go ahead and
+[00:04:07] build for me a beautiful website using
+[00:04:09] this link based on the zip file and all
+[00:04:12] the design systems that we got from
+[00:04:13] Breloom. And what we can do is also grab
+[00:04:16] this reference link." So Claude's got
+[00:04:17] access to the original. And then you
+[00:04:18] want to go ahead and grab this design
+[00:04:20] loop skill. It will be the second link
+[00:04:22] in the description. Once you click on
+[00:04:23] that link, you will land on this page
+[00:04:25] here, which is where I keep all my free
+[00:04:26] resources. Again, it's 100% free. You
+[00:04:28] come in basically, and then you'll see
+[00:04:30] the video here. You can literally grab
+[00:04:32] it for free. So people get a little bit
+[00:04:33] confused. I just wanted to explain where
+[00:04:35] that that is so you can come and grab it
+[00:04:36] there. Now what this design lip does, it
+[00:04:38] helps us basically basically inspire and
+[00:04:40] get the style that we want to using some
+[00:04:42] really cool techniques. All you're going
+[00:04:43] to do is copy it all before if you
+[00:04:45] haven't come back over to Claude, drop
+[00:04:46] it in, and then let Claude work its
+[00:04:48] magic. And side note, by the way, you
+[00:04:50] can actually do all this in Room if you
+[00:04:51] wanted to. If you click on publish at
+[00:04:53] the top left, it kind of functions as a
+[00:04:55] full CRM system. So if you look at the
+[00:04:56] one that I built earlier, for example,
+[00:04:58] the roofing code website, you can see
+[00:04:59] you can build everything. So, one of the
+[00:05:01] big things that people struggle with is
+[00:05:03] a CMS. So, it's the exact same thing.
+[00:05:05] You've got the brief it builds out for
+[00:05:06] you, which is really awesome. You get
+[00:05:08] the full site map here. You get the
+[00:05:10] wireframes as well, which you can edit
+[00:05:11] in a million different ways. It's super
+[00:05:13] intuitive. And then you've got the
+[00:05:14] designs that you can play around with.
+[00:05:16] Then in the top right, when you're done
+[00:05:17] with it, you can actually publish it
+[00:05:18] like so in a click. And then you've got
+[00:05:20] this continue and you can view it in a
+[00:05:22] new window and have a great time doing
+[00:05:23] it. What is really cool just very
+[00:05:25] quickly if you're doing it here if you
+[00:05:26] click on for example library you can see
+[00:05:28] the images you've got styling over here
+[00:05:30] but if you click on this little settings
+[00:05:31] here you can edit the pages like so you
+[00:05:33] can see the meta title meta description
+[00:05:35] it's just it's an easy in the box way if
+[00:05:37] you wanted to go ahead and do that but
+[00:05:38] we're going to do now is come back over
+[00:05:39] to Claude and see what it built for us
+[00:05:42] but Claude is not going to be able to
+[00:05:43] get us a beautiful website that looks
+[00:05:46] anything like this unless we give it the
+[00:05:49] ability to generate beautiful images
+[00:05:51] with the latest models. How do we do
+[00:05:54] that? Well, the one that we're going to
+[00:05:55] be using here is Higsfield. I use this
+[00:05:57] all the time. All the images you see in
+[00:05:58] my websites, presentations. I use this.
+[00:06:00] The really cool thing about this is we
+[00:06:02] can actually connect this to Claude so
+[00:06:05] easily. All you're going to do, and I'll
+[00:06:06] put a link down below. So, you can click
+[00:06:07] it and just grab you can screenshot this
+[00:06:09] if you want to or just grab the URL.
+[00:06:11] I'll just give it the URL I post down
+[00:06:13] below. Now, what we can do with this is
+[00:06:14] build images in the best models, best
+[00:06:16] videos. But effectively what's really
+[00:06:18] cool about it once you screenshot this
+[00:06:20] will copy the link. You just let Claude
+[00:06:21] know hey I want you to connect to the
+[00:06:22] Higsfield CLI so we can create beautiful
+[00:06:25] images and videos. Here's the link just
+[00:06:27] like that and it'll open you up in a new
+[00:06:29] browser. You sign in and then you're
+[00:06:31] ready and able to make the magic happen.
+[00:06:34] And when I tell you that using
+[00:06:35] Hakesfield on websites isn't just about
+[00:06:38] 3D animations. You can literally build
+[00:06:40] things that look spectacular stuff that
+[00:06:42] you wouldn't even really think. And I'll
+[00:06:44] show you exactly what I mean in a
+[00:06:45] minute. So then we have this beautiful
+[00:06:48] website which again we built the
+[00:06:50] structure. This is the step that
+[00:06:51] everyone misses guys building out the
+[00:06:53] site map and the structure because one
+[00:06:55] pages are cool but no one just buys a
+[00:06:57] page right they need buttons to click on
+[00:06:59] if you're selling this for a roofing
+[00:07:00] company if you're selling this to any
+[00:07:02] business at all. They need to have this
+[00:07:03] sort of stuff locked down which is
+[00:07:05] great. We got that structure. We got the
+[00:07:07] best design system. We got the images
+[00:07:09] and videos and then this is what we've
+[00:07:11] got from that. It's built as a logo,
+[00:07:13] which is awesome. And again, one of the
+[00:07:14] great reasons why we bring in Hicksville
+[00:07:15] because we can just build these logos as
+[00:07:17] we go if the client doesn't have it. And
+[00:07:19] you'll notice it also copies the exact
+[00:07:22] style here with the green and the black,
+[00:07:24] which is what we wanted to be inspired
+[00:07:26] by. And we've got that, which is
+[00:07:27] awesome. So then we can come down and
+[00:07:28] have a look. This is a nice thing. We've
+[00:07:30] got this beautiful animation. We've got
+[00:07:31] the companies that we're working with.
+[00:07:33] Nice bit of animation here, which is
+[00:07:34] awesome. And in fact, what's really
+[00:07:36] cool, you can see as you refresh it,
+[00:07:38] these animations pop up. Build the same
+[00:07:40] thing. That's really crisp. And then
+[00:07:42] we've got these different businesses we
+[00:07:43] work with. Anthropic, Slack. Obviously,
+[00:07:45] these are examples. I don't know if
+[00:07:47] Stripe is paying us to do the roofs.
+[00:07:48] Well, at Ridgeline, guys, they are at
+[00:07:50] Ridgeline. We work with the best AI
+[00:07:52] companies ever to give them the best
+[00:07:53] roof. Don't you ever forget our roof
+[00:07:55] abilities. Loved by your favorite
+[00:07:57] companies. This this is really crisp,
+[00:07:59] guys. Like, this is just the design on
+[00:08:01] this is fantastic. And look at the
+[00:08:02] adherence, by the way. Look at the
+[00:08:04] adherence to some of the features here.
+[00:08:07] So, if you can come down and see
+[00:08:08] actually as it scrolls down, look at the
+[00:08:10] scrollability at the bottom of this. You
+[00:08:12] see this? I just love how it's kind of
+[00:08:14] like done its own thing, but kind of
+[00:08:16] understood why that looks good and why
+[00:08:17] that's so crisp. I mean, it's just such
+[00:08:19] a beautiful design. Then you can come
+[00:08:21] back. We've got this here. Find out what
+[00:08:22] is actually wrong with your website. And
+[00:08:24] then we've got all this stuff here. But
+[00:08:25] it doesn't just stop there. Now, we've
+[00:08:26] actually got the website. So, we've got
+[00:08:29] different pages and stuff that we can
+[00:08:30] play around with. So, we can click on
+[00:08:32] things like services and about us and
+[00:08:34] build these pages out. and it's just got
+[00:08:35] the whole site map that's been developed
+[00:08:37] now by using these tools. Now, believe
+[00:08:39] it or not, this is just the foundation.
+[00:08:41] Level three is where we take it to a new
+[00:08:43] level. Now, to reiterate, we've got the
+[00:08:45] site map. We use Room to get basically
+[00:08:47] one brief in. We got site maps,
+[00:08:48] wireframes, which is cool now because if
+[00:08:50] we ever want to build out the website,
+[00:08:51] we can do it in one location, which is
+[00:08:53] super handy. These are humanmade
+[00:08:55] components. They're not necessarily AI
+[00:08:57] generated, which is awesome, and it's
+[00:08:58] going to help us have a really
+[00:08:59] consistent style with all the beautiful
+[00:09:01] websites that we build on. Level three
+[00:09:04] is the scroll stopper. You know, this is
+[00:09:06] a classic example. I built this again
+[00:09:08] using Hixold video generation. It's
+[00:09:10] beautiful. It's a showstopper, but
+[00:09:12] everyone thinks of just the website, but
+[00:09:14] there's so many different ways that you
+[00:09:15] can actually create attention,
+[00:09:16] especially if you want to drive lots of
+[00:09:18] conversions, and these do convert. They
+[00:09:19] are beautiful, but there's many ways, as
+[00:09:22] they say, to skin a cat. So, for
+[00:09:23] example, if you come over to a website
+[00:09:24] that I'm in love with recently, which is
+[00:09:25] save with two E, many E. You can see
+[00:09:28] these beautiful designs. But what's
+[00:09:30] really cool is you can search for
+[00:09:31] inspiration. So, I could come down and
+[00:09:33] like I've said before, I might say
+[00:09:34] dashboard UI. So, let's say that we're
+[00:09:36] building out a dashboard together,
+[00:09:38] right? And we want some inspiration. You
+[00:09:40] you can look at Pinterest, but
+[00:09:42] everybody's on Pinterest. Although
+[00:09:43] Pinterest is cool to be fair, you can
+[00:09:45] find beautiful things. Let's say I want
+[00:09:47] to have a sign up form, right? Maybe we
+[00:09:50] want to add something interactive to our
+[00:09:52] roofing website essentially so that they
+[00:09:55] give their information, but then what if
+[00:09:56] we could have a beautiful, you know, get
+[00:09:58] them a quote, some kind of lead magnet.
+[00:10:00] Well, we can find beautiful designs that
+[00:10:02] were inspired by one such one that I
+[00:10:04] found that looked amazing was this one.
+[00:10:06] But what's the problem with this, Jack?
+[00:10:08] The problem with this is this is not a
+[00:10:10] component. This is not a UI thing that
+[00:10:11] we can just grab. We need to literally
+[00:10:14] basically create this, but in the style
+[00:10:16] for our own website. So, all we're going
+[00:10:18] to do is we're going to copy this image
+[00:10:19] like so and head over to Claude. And
+[00:10:21] just like before, you're going to do
+[00:10:22] forward slash. You type in design loop.
+[00:10:25] And essentially, you're going to come
+[00:10:26] down and say, "Hey there, I want you to
+[00:10:28] make a roofing version of this." And
+[00:10:31] what I would like you to do is enable
+[00:10:33] them to upload an image of the roof,
+[00:10:35] answer a few questions, and then I want
+[00:10:36] a beautiful Siri like animation to play
+[00:10:39] and then actually show what the price is
+[00:10:42] for them, and we can capture that
+[00:10:43] information. Okay, give it that prompt,
+[00:10:45] drop it in the image, and then let's go
+[00:10:47] find a Siri type animation. And just
+[00:10:50] like that, guys, I've got one here. And
+[00:10:51] that looks freaking gorgeous. I like
+[00:10:54] that. I want to what? I don't know what
+[00:10:55] that is selling, but I want to buy that
+[00:10:57] right now. So, I'm going to come down.
+[00:10:58] I'm just going to download this as a
+[00:11:00] kind of video overview suggestion for
+[00:11:02] Claude to use. And just like this, guys,
+[00:11:04] we now have a free quote for your roof,
+[00:11:06] which is cool. So, we can upload an
+[00:11:08] image if you want to. Got a postcode.
+[00:11:10] We'll just check out what it looks like.
+[00:11:11] Click on get my price. And then here we
+[00:11:13] go. We got our animation. It's checking
+[00:11:15] pitch and tiles, price of materials.
+[00:11:18] Almost there. having a look around. I
+[00:11:19] mean, you can just see how fun this is,
+[00:11:20] right? Bam. £7,150.
+[00:11:23] And then it's got some different things
+[00:11:24] here for like reviews and you can book
+[00:11:26] the free survey. So freaking cool. I
+[00:11:28] mean, when you have the right skills,
+[00:11:30] you can pay the bills, as they say. No
+[00:11:31] one said I'm not saying I'm a rapid just
+[00:11:33] cuz I'm wearing this like funky jumper,
+[00:11:35] but you get the idea. Now, this didn't
+[00:11:37] exist until we built it. One of the
+[00:11:39] reasons why this is so cool, by the way,
+[00:11:40] is like at the bottom of the image, you
+[00:11:41] can see I hold it here. It's got white.
+[00:11:43] Now, ideally, these drops would have
+[00:11:45] finished so it looks like a true blend
+[00:11:47] in, but it's kind of phased out a little
+[00:11:48] bit. So, it just gives it that nice kind
+[00:11:50] of beautiful blend. And that's awesome.
+[00:11:52] I get my quote. It's done some cool AI
+[00:11:54] analysis, which we can bake in the
+[00:11:56] website. I'm using various different
+[00:11:57] like skills which are quite easy. And
+[00:11:59] then we can just add this to the
+[00:12:00] website. And by the way, if this sounds
+[00:12:02] like I'm speaking in design Spanish, I'm
+[00:12:04] going to put a link down below for my
+[00:12:05] full core code master class that will
+[00:12:07] take you through foundations. It will
+[00:12:09] take you through building websites from
+[00:12:11] zero to deploying them, power features,
+[00:12:13] memory systems, Hermes agent, apps,
+[00:12:15] building anything, monetizing this
+[00:12:17] stuff, and I'll also show you the full
+[00:12:19] and beautiful Claude code operating
+[00:12:21] system that has all the bells and
+[00:12:22] whistles, the memory systems, the cost
+[00:12:24] saving, the design OS, a million other
+[00:12:26] different things that you definitely
+[00:12:28] want to have a look at if you want to
+[00:12:29] level up and get light years ahead of
+[00:12:31] everybody else. It's not fair on your
+[00:12:33] competitors. I will say that much. It's
+[00:12:34] not going to be fair on your
+[00:12:35] competitors, so just bear that in mind.
+[00:12:36] Now, we've got these scroll stoppers,
+[00:12:37] which is awesome. But it doesn't just
+[00:12:40] stop that. We can take this much
+[00:12:41] further. What does that look like at
+[00:12:43] level four, Jack? Well, level four
+[00:12:45] itself, and I'm going to show you all
+[00:12:46] these things integrated into the website
+[00:12:48] in a second once we've added a few of
+[00:12:50] the other bells and whistles, and you'll
+[00:12:51] see what I mean when I say that. Level
+[00:12:53] four realistically, is understanding
+[00:12:55] that 60% of traffic at least actually is
+[00:12:58] on our phones. I should had my phone out
+[00:13:00] earlier before I said that. A lot of
+[00:13:01] people are on their phones. They're not
+[00:13:03] necessarily always sat down at a
+[00:13:05] desktop, but yet most content always
+[00:13:07] focuses on the screen. And I'm guilty of
+[00:13:09] that to be fair to some extent as well
+[00:13:10] because it's just easy to show. But what
+[00:13:12] we need to do is mobile optimize our
+[00:13:14] website. Now, how do you mobile optimize
+[00:13:16] a website? Well, to be honest with you,
+[00:13:17] there are loads of skills and I'll I'll
+[00:13:19] put a link down below in the post. But
+[00:13:20] honestly, you can head over to Claude
+[00:13:22] and say, "Hey, I want you to mobile
+[00:13:23] optimize this website. go out and find
+[00:13:26] for me the most proficient, well-reed
+[00:13:29] repos that have been battle tested that
+[00:13:31] will make sure that it follows all of
+[00:13:32] the best mobile design principles. And
+[00:13:36] I'll put a link down below for my
+[00:13:37] favorite. And essentially, once you've
+[00:13:39] done that, call to go ahead and it'll
+[00:13:40] mobile optimize it. Well, how do we know
+[00:13:42] that? Well, we can just do this. Look at
+[00:13:43] it. This is really cool. You can see how
+[00:13:45] at every frame rate it makes a
+[00:13:47] difference. Now, believe it or not, it
+[00:13:49] did it did not look like this initially.
+[00:13:50] I had to do this, but look at this,
+[00:13:52] guys. You can come down and see that. We
+[00:13:54] need to just uh fix that a little bit.
+[00:13:55] As you can see, it's not perfect, but
+[00:13:57] look at this. It's a website you can
+[00:13:59] actually use and understand on mobile.
+[00:14:01] And again, I can still scroll through
+[00:14:02] these and it's added these different
+[00:14:04] elements in. I think this is great that
+[00:14:06] it's just Look at this, guys. That's
+[00:14:07] crazy because remember, most of your
+[00:14:08] traffic is going to be on mobile. And a
+[00:14:11] lot of times you go to mobile, they've
+[00:14:12] never optimized it for it. You can't
+[00:14:14] even read the actual website itself.
+[00:14:16] It's even got this nice hamburger thing
+[00:14:18] in. You must mobile optimize your
+[00:14:20] website. In fact, most people and when I
+[00:14:22] did my last tech startup, which by the
+[00:14:24] way, if you are new, I built and sold my
+[00:14:25] last tech startup with like a gazillion
+[00:14:27] customers and now I'm building my own AI
+[00:14:29] startup here and I was really big on SEO
+[00:14:31] and building out websites. And honestly,
+[00:14:33] we'd start off with the mobile first and
+[00:14:35] then work backwards to get to the actual
+[00:14:37] full desktop version. And there is no
+[00:14:40] substitute, but to actually going
+[00:14:41] through the mobile yourself. Claude can
+[00:14:43] do loads of checks using the Reaper that
+[00:14:44] I'll share down below uh in the skills
+[00:14:46] section, but ultimately speaking, you
+[00:14:47] want to go through the website yourself
+[00:14:49] and check it out. and we got this
+[00:14:50] beautiful email address and we're having
+[00:14:51] a great time. But then that takes us on
+[00:14:53] to the biggest problem of this video so
+[00:14:56] far and that is what I call the fight
+[00:14:58] against the AI slop monster. I invite
+[00:15:00] you to join me. I am I'm good against AI
+[00:15:02] slot but I am one man and I I I would
+[00:15:04] like a team. Now what do we call the
+[00:15:06] dlopification? What do I mean by that? I
+[00:15:09] mean that AI itself, if you ever look at
+[00:15:11] it, has like a really standard way of
+[00:15:13] presenting itself. It's so obvious that
+[00:15:15] something's written by AI. And as I
+[00:15:17] showed on my other videos, I built this
+[00:15:18] copy system which is really cool and I
+[00:15:20] encourage you to look at something like
+[00:15:21] this because I built this inside my
+[00:15:23] community because I got this question
+[00:15:24] all the time. Effectively, you can just
+[00:15:27] grab information from the best GitHub
+[00:15:29] repos which are the slopification and it
+[00:15:31] basically takes all the classic signs of
+[00:15:33] AI writing like Wikipedia for example
+[00:15:35] and it just like runs it all through
+[00:15:37] that. You can run it through GPT 5.6 as
+[00:15:39] well to make it sound way more human
+[00:15:41] because most websites these days are
+[00:15:43] written by Claude, hence why they all
+[00:15:44] sound the same. Um, and you can just
+[00:15:46] identify all these classic things that
+[00:15:48] AI does. And then it's underpinned by
+[00:15:50] some core psychology. One of the best
+[00:15:52] psychological principles in building
+[00:15:53] anything is this idea of don't make me
+[00:15:55] think. The idea essentially being that
+[00:15:58] when people don't read websites, they
+[00:16:00] browse them. What do I mean by that? I
+[00:16:02] mean, I need to be able to glance at it
+[00:16:04] and understand what the website is
+[00:16:06] about. You know, don't take anybody's
+[00:16:09] time for granted. Don't just assume that
+[00:16:10] that, you know, you have to earn their
+[00:16:11] time. And if I have to invest a minute
+[00:16:14] to understand what your website is
+[00:16:16] about, it's too much. It's way too much.
+[00:16:18] So general idea, use the system two
+[00:16:20] cognition. Don't make me think. Sorry,
+[00:16:22] the system one cognition. Just make it
+[00:16:24] super easy. You want to name the pain.
+[00:16:26] And again, the other thing you want to
+[00:16:27] do is run this through loads of key
+[00:16:29] marketing and psychological and sales
+[00:16:30] things. Um, for example, the classic
+[00:16:33] example I always give here, instead of
+[00:16:34] get started, start free. Instead of the
+[00:16:36] fun way to learn AI, everyone uses AI.
+[00:16:38] So at level five, you want to do a
+[00:16:39] delopification of everything. So, and my
+[00:16:42] website system brings up some copy here.
+[00:16:44] So, check this out. Again, it just runs
+[00:16:46] through everything. So, signs of AI
+[00:16:47] writing. Look at this. Trusted,
+[00:16:50] reliable, and built to last. Six nails
+[00:16:51] per shingle. Every shingle. How cool is
+[00:16:53] that? I mean, it's like it's it's the
+[00:16:55] same thing, but it's just giving a
+[00:16:56] practical example. And these are just,
+[00:16:58] you know, the the rules and principles
+[00:17:00] apply to this website. Not just a roof,
+[00:17:02] but peace of mind. Guys, how many let me
+[00:17:05] down below in the comment section could
+[00:17:07] tell that that was written by if you saw
+[00:17:09] that you'd be like, "Dude, which AI
+[00:17:11] person has written that a written scope
+[00:17:13] and a fixed number before anyone climbs
+[00:17:15] the ladder?" Yeah, obviously that just
+[00:17:17] sounds so much better. Elevated verbs
+[00:17:19] instead of we leverage industryleading
+[00:17:21] materials to deliver unparalleled
+[00:17:22] protection. We source materials from
+[00:17:24] manufacturers who test for wind, hail,
+[00:17:26] and sun.
+[00:17:28] Leverage deliver. It's like it's
+[00:17:29] awesome, guys. Empty superlatives, the
+[00:17:31] area's most trusted roofing experts. No
+[00:17:33] roofing and only roofing since 2020
+[00:17:36] 2001.
+[00:17:37] M dash pileup. Our team trained,
+[00:17:39] certified and local is ready to help. 38
+[00:17:42] on the crew factory trained for every
+[00:17:44] material we install.
+[00:17:46] Which one, genuinely speaking, are you
+[00:17:47] going to click on and be like, obviously
+[00:17:49] that's better. Loved by 10,000 happy
+[00:17:51] homeowners, project names and
+[00:17:53] photography are placeholders. Swapping
+[00:17:54] your own jobs before this goes live.
+[00:17:55] Yeah. Okay. That one's just telling me
+[00:17:57] that like I built placeholders, so that
+[00:17:58] one's like not a good idea, but you get
+[00:18:00] the idea. and you get this full
+[00:18:01] breakdown explaining everything, the
+[00:18:03] principles, stuff like that. We have to
+[00:18:05] deiify our entire website such that it
+[00:18:08] actually just reads like a human wrote
+[00:18:10] it because I will tell you this that
+[00:18:11] what people aren't telling you is the
+[00:18:13] fact that people can smell AI websites
+[00:18:15] coming from 6 milesi away unless you
+[00:18:18] unpin these issues unless you make it
+[00:18:20] non-mobile optimized, unless you make it
+[00:18:22] mobile optimized and you're actually
+[00:18:24] kind of like attacking the slop issue
+[00:18:26] which these skills do. But now we've
+[00:18:28] solved some of the text. We move on to
+[00:18:30] level six. Now level six is an
+[00:18:31] interesting one and it's icons and
+[00:18:33] showstoppers. What do I mean by that?
+[00:18:35] Now this is what I call UI sniping. And
+[00:18:38] I love UI sniping. Now UI sniping is the
+[00:18:41] idea that we can find any UI component
+[00:18:42] that we like and bring it over. Reloom
+[00:18:44] itself is building out a really cool
+[00:18:46] freaking library of stuff that you can
+[00:18:47] just go ahead and grab, which is decent.
+[00:18:49] So cool advantage being it's built by
+[00:18:51] designers. Another good example of this
+[00:18:53] is 21st.dev dev where you can basically
+[00:18:55] find different things like libraries,
+[00:18:57] backgrounds, borders, whatever it is.
+[00:18:59] Find stuff that you like and you can
+[00:19:00] basically bring them over. Obviously, if
+[00:19:02] you got really, it's super handsy going
+[00:19:03] do that as well. I know that the guys
+[00:19:05] over there are building out all their
+[00:19:06] stuff, which is really freaking cool. If
+[00:19:07] you've got the real MCP, you can just
+[00:19:09] ask it or if you're grabbing it from a
+[00:19:10] different website like 21st.dev, you can
+[00:19:12] come down and literally just copy the
+[00:19:13] code and say you want this, for example,
+[00:19:15] this design, which looks cool. You just
+[00:19:16] copy the code, head over to Claude and
+[00:19:18] say, "Hey, add this to my website." And
+[00:19:20] then when I come back over the website,
+[00:19:21] you can see I added these things in
+[00:19:22] here. Look at this. booked in a week.
+[00:19:24] And look at this. I'll hover over. I can
+[00:19:25] see these customers. 4,800 roofs kept
+[00:19:28] dry. And again, it's just nice little
+[00:19:29] credibility cuz it's just like, how can
+[00:19:31] you show that you're legitimate? Cuz
+[00:19:33] that's one of the questions people have,
+[00:19:34] right? You can see I hover over and it's
+[00:19:36] got that stuff here fully integrated
+[00:19:37] into the website and you can move it in
+[00:19:39] any direction that you like. And of
+[00:19:41] course, you can also use icons. I'm a
+[00:19:43] really big fan of icons. Um, there's
+[00:19:44] different ones like icons 8, flat icon,
+[00:19:47] Icon Scout, loads of different ones.
+[00:19:49] Check them all out. I think the one I'm
+[00:19:50] using right now is flat icon. Again,
+[00:19:51] like not sponsored by them or anything
+[00:19:53] like that. I just tell you like I just
+[00:19:54] think they're pretty cool. Basically,
+[00:19:55] you can come down and get like different
+[00:19:57] styles. So, if you're doing a kind of
+[00:19:59] new age cool vibe, younger demographic
+[00:20:02] like um I'd say millennial or like Gen Z
+[00:20:04] or below, you may want to use cool
+[00:20:05] graphics and you can just like get loads
+[00:20:07] of different styles, they it only costs
+[00:20:09] like $10 to 12 to, you know, be on one
+[00:20:11] of these websites. And effectively, once
+[00:20:13] you're on there, you can just use those
+[00:20:14] icons u based on the license you've got.
+[00:20:16] Again, the I don't know these guys. I'm
+[00:20:18] not sponsored by these guys. I'm just
+[00:20:19] telling you like it's something you can
+[00:20:21] do to just make it look a little bit
+[00:20:23] kind of fresh and stuff if that if that
+[00:20:25] fits your design and vibe. But if not,
+[00:20:27] you can just UI sty and make it look
+[00:20:29] amazing. But then that does bring us
+[00:20:30] very nicely onto level seven. Now level
+[00:20:33] seven is something that a lot of people
+[00:20:35] miss and that is the SEOification of
+[00:20:38] your website. I know we have loads of
+[00:20:39] different skills on GitHub. I like
+[00:20:41] Claude SEO. It's quite nice. You can see
+[00:20:42] this one here. Um it's fairly well
+[00:20:44] reviewed. It's got this I think this
+[00:20:45] guy's a content creator as well. So
+[00:20:47] shout out to this guy. But effectively
+[00:20:48] SEO nerds, I call them nerds. Um I hope
+[00:20:50] they don't mind if they love SEO. They
+[00:20:53] basically codify it and you can build
+[00:20:54] out systems that do stuff like this to
+[00:20:56] really help you kind of like run through
+[00:20:58] your website. So what we do is we head
+[00:20:59] over to Claude and then you say, "Hey, I
+[00:21:01] want you to go ahead and find for me the
+[00:21:03] best SEO design strategies that exist on
+[00:21:06] the internet and I want you to take a
+[00:21:07] look at this SEO repo and I want you to
+[00:21:10] build a checklist and a strategy for my
+[00:21:12] website. The the things that I can rank
+[00:21:14] for. Here are some of the keywords that
+[00:21:16] I want to rank for. here's the kind of
+[00:21:18] intent that I want to do and I want you
+[00:21:20] to question me on my customer so that we
+[00:21:22] together can find out the longtail
+[00:21:25] intention words, the short intention
+[00:21:26] words and I want you to rank those based
+[00:21:29] on um basically volume and also
+[00:21:32] difficulty. And from that we're going to
+[00:21:34] build up an SEO strategy, a content road
+[00:21:36] map, and we're going to find SEO
+[00:21:38] suggestions for our own website. And
+[00:21:40] once you do that, you're going to find a
+[00:21:41] page that looks a little bit something
+[00:21:42] like this. This is an exercise I did
+[00:21:44] recently for Glider, my speech to text
+[00:21:46] startups. how I'm able to talk to
+[00:21:47] things. And I mean, just look at the
+[00:21:48] detail of this, guys. Like speech to
+[00:21:50] text, how many people search it, the
+[00:21:52] demand index, how hard is it? And it
+[00:21:54] just finds those nice um kind of sweet
+[00:21:56] spots. Again, got 28 keywords that we
+[00:21:58] should rank for. Longtail stuff like
+[00:22:00] Whisper Flow alternative. Um every other
+[00:22:02] it's just really, really helpful. And
+[00:22:04] you can use this to build out a content
+[00:22:06] strategy. I mean, this is just literally
+[00:22:07] the stuff that I'm doing in my own tech
+[00:22:09] startup right now. And you can use AI to
+[00:22:11] do this in any of your websites or
+[00:22:13] systems. And then to post it, you just
+[00:22:15] need to basically tell Claude to upload
+[00:22:17] this to GitHub in a private repo. I've
+[00:22:19] got full tutorials on the channel. I'll
+[00:22:21] put links somewhere to show you the
+[00:22:22] process. And then you can run the entire
+[00:22:23] thing from Versel. Versel hosts
+[00:22:26] everything. It even hosts many of the
+[00:22:27] websites that I show you on this
+[00:22:29] channel. Super duper easy to set up.
+[00:22:31] Explain to Claude and it will explain it
+[00:22:33] to you step by step. But this does bring
+[00:22:35] us on to a problem and that's the fact
+[00:22:37] that these design skills are handy and
+[00:22:39] they do help us build beautiful websites
+[00:22:41] that sell. But the truth is, if you
+[00:22:43] don't have your own design operating
+[00:22:45] system, you're leaving way too many
+[00:22:47] hours and productivity and value on the
+[00:22:49] table. Which is why the next thing that
+[00:22:51] we need to do is learn how to set one of
+[00:22:53] these up, which we're going to do in
+[00:22:55] this video right

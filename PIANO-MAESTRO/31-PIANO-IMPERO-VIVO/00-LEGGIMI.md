@@ -123,15 +123,18 @@ domanda «perché il piano dice questo e non quello».
 | Percorso | Cosa è | Stato |
 |---|---|---|
 | `00-LEGGIMI.md` | questo file: ordine, leggi, metodo, avanzamento | ✅ |
-| `dati/censimento-01a-ecosistemi.md` | i 15 ecosistemi, scheda per scheda | 🔄 798 righe |
-| `dati/censimento-01b-organi.md` | Board, Guilds, Sentinelle, MAXIMILIAN, Mandato, Ispettorato | 🔄 628 righe |
+| `dati/censimento-01a-ecosistemi.md` | i 15 ecosistemi, scheda per scheda — **2 vivi su 15** | ✅ 1.256 righe |
+| `dati/censimento-01b-organi.md` | i 14 organi di governo, scheda per scheda | ✅ 1.096 righe |
+| `dati/censimento-01c-sintesi-organi.md` | **7 organi che nessuno chiama · 0 sentinelle automatiche su 5 · due gate con verdetti opposti · il gate pre-commit che mente** | ✅ 468 righe |
 | `dati/censimento-02-collegamenti.md` | l'infrastruttura dei collegamenti: bus, contratti, registri, flow, tracce | ✅ §1-4 · §5-6 passate a `02b` |
-| `dati/censimento-02b-mappa-collegamenti.md` | la mappa dei passaggi di consegne progettati nei dossier | 🔄 |
+| `dati/censimento-02b-mappa-collegamenti.md` | la mappa dei passaggi di consegne: 12 fonti spogliate, ~349 righe di tabella | ✅ 619 righe |
+| `dati/censimento-02d-sintesi-collegamenti.md` | matrice, ecosistemi isolati, i 10 da accendere, le bugie dell'architettura | 🔄 |
 | `dati/censimento-03a-popolazione.md` | **popolazione agenti, specifica C4 esatta, 5 ondate, un guasto vero in `census.py`** | ✅ 1.426 righe |
 | `dati/censimento-03b-regolamento-forze.md` | la gerarchia delle forze già in vigore (ADR-015) | ✅ §1 |
+| `dati/censimento-03c-addestramento.md` | **19 fonti · minimo comune 10 righe · modulo d'ingaggio in 3 varianti · costo 180-550 token per forza** | ✅ 1.064 righe |
 | `dati/censimento-03b2-cadute.md` | **33 cadute reali · 6 famiglie di recidiva · 29 regole, 12 da rendere meccaniche** | ✅ |
 | `dati/censimento-04-motori.md` | i motori della famiglia `Outreach/` | ✅ parziale |
-| `dati/censimento-04b-motori.md` | tutti gli altri motori fuori da `company/` | 🔄 |
+| `dati/censimento-04b-motori.md` | tutti gli altri motori fuori da `company/` | 🔄 462 righe |
 | `dati/censimento-01-vivo.md` · `dati/censimento-03-forze.md` | resti dei due doom bot caduti alla prima ondata — conservati, non cancellati (L1) | ⚠️ 12 e 3 righe |
 | `V1-PIANO-GENERALE.md` | prima versione | ⬜ |
 | `_critica-v1/` | i rapporti dei revisori su V1 | ⬜ |
