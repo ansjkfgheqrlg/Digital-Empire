@@ -13,7 +13,7 @@
 - **Perche' non funziona all'atto pratico:** il censimento 04b lo dichiara testualmente *«il ritorno piu' alto per il minor lavoro di tutto il censimento»*: `main_orchestrator` muore all'import per `OpenAIError: Missing credentials` (`OPENROUTER_API_KEY`/`GROQ_API_KEY` assenti dal `.env`), mentre `pubblica.py` e `ig_carousel_publish.py` sono **gia' verificati funzionanti**, con dry-run di default e regola *«nessun PASS finto»*. In coda ci sono 25 pezzi finiti mai usciti, il piu' vecchio da 135 giorni (ADR-016). Costo dichiarato: **una chiave nel `.env`** piu' lo spostamento di un'istanziazione dentro una funzione. V1 lo lascia — al massimo, per implicazione — dentro E8 «gli orfani per triage», dietro E1..E7: **125-194 ore di lavoro pianificato prima di girare una chiave**. E il paradosso e' doppio: E0 tocca **proprio OpenRouter** (rotazione B-021), cioe' Max passera' dalla console OpenRouter in E0 e il piano non gli fa scrivere la chiave nuova nell'unico `.env` che la aspetta.
 - **Prova:** `grep -n -i "ultimo|pubblica|metro|OPENROUTER"` su `V1-PIANO-GENERALE.md` → zero occorrenze di Ultimo Metro / Workflow pubblicazione (solo la rotazione B-021 in §22-E0 e la parola «orfani» in E8). Contro: `dati/censimento-04b-motori.md` §3.6 e tabella «DORMIENTI col guasto» riga 1 («E' il ritorno piu' alto per il minor lavoro di tutto il censimento»), sezione D riga 3 (orfano, `published.json` = `{}`).
 - **Dove si romperebbe:** non si rompe: peggio, **non parte**. Il principio d'ordine di §21 viene violato dal suo stesso autore alla prima applicazione, e chi esegue segue l'ordine scritto, non il principio.
-- **Con quale conseguenza:** 25 pezzi gia' pagati restano fermi per tutta la durata di E1..E7 (settimane di calendario, vedi R-8); B-043 («DE non misura un solo euro») resta aperto mentre il piano dichiara il denaro «primo scaglione».
+- **Con quale conseguenza:** 25 pezzi gia' pagati restano fermi per tutta la durata di E1..E7 (settimane di calendario, vedi R-10 e R-21); B-043 («DE non misura un solo euro») resta aperto mentre il piano dichiara il denaro «primo scaglione».
 - **Cosa proporresti al posto:** dentro E0: Max incolla la chiave nel `.env` del publisher (e' lavoro da credenziali, identico al resto di E0); primo pezzo di E1: l'aggancio Carousel Factory → `pubblica.py --live` (04b: «i due motori sono a un argomento di distanza»).
 
 ### R-2 — I tre collegamenti che il censimento mette per primi sono ignorati o rimandati  [GRAVE]
@@ -28,7 +28,7 @@
 ### R-3 — V1 e' fondato sui censimenti nella versione monca, e non lo sa piu'  [GRAVE]
 - **Dove:** V1 §0.3 (tabella fonti) e §27 (punti 1, 2, 3)
 - **Cosa dice il piano:** §0.3: «`02b` 208 righe», «`04`+`04b` 196 righe»; §27: «il censimento dei motori e' al 20% … `04b` e' a 115 righe», «le tre sintesi degli organi … mancano».
-- **Perche' non funziona all'atto pratico:** oggi, sul disco, quei file sono finiti: `02b` **619 righe** (dichiarata «tabella completa»), `04b` **613 righe** («Censimento 04b chiuso il 2026-09-06. 25 motori schedati»), `01c` **468 righe**, `02d` **622 righe**, `03c` **1.064 righe**. V1 non cita mai `01c`, `02d`, `03c` (grep → 0 occorrenze). Non e' solo un problema di completezza — e' che **le parti arrivate dopo ribaltano l'ordine del lavoro**: 02d mette per primi collegamenti che V1 non nomina (R-2), 04b individua il ritorno piu' alto (R-1), 01c consegna il vizio dei gate che confermano il falso (R-5). Chi eseguisse V1 domani lavorerebbe con la mappa vecchia avendo quella nuova nel cassetto.
+- **Perche' non funziona all'atto pratico:** oggi, sul disco, quei file sono finiti: `02b` **619 righe** (dichiarata «tabella completa»), `04b` **613 righe** («Censimento 04b chiuso il 2026-09-06. 25 motori schedati»), `01c` **468 righe**, `02d` **622 righe**, `03c` **1.064 righe**. V1 non cita mai `01c`, `02d`, `03c` (grep → 0 occorrenze). Non e' solo un problema di completezza — e' che **le parti arrivate dopo ribaltano l'ordine del lavoro**: 02d mette per primi collegamenti che V1 non nomina (R-2), 04b individua il ritorno piu' alto (R-1), 01c consegna il vizio dei gate che confermano il falso (R-7, R-18). Chi eseguisse V1 domani lavorerebbe con la mappa vecchia avendo quella nuova nel cassetto.
 - **Prova:** `wc -l dati/*.md` → 02b=619, 04b=613, 01c=468, 02d=622, 03c=1.064; `grep -c "01c|02d|03c" V1-PIANO-GENERALE.md` → **0**.
 - **Dove si romperebbe:** in V2, se il rifacimento riparte dal testo di V1 invece che dai censimenti chiusi: gli scaglioni verrebbero raffinati nell'ordine sbagliato ereditato.
 - **Con quale conseguenza:** ore di V2 spese a dettagliare E-scaglioni la cui priorita' e' gia' smentita dai dati di casa.
@@ -116,7 +116,8 @@
 - **Cosa proporresti al posto:** uno scaglione E1.5 «I DODICI HOOK» (o dentro E1): ogni regola [M] → il suo hook/gate, ciascuno provato contro il proprio scheletro vuoto (regola 21 applicata a se stessa), PRIMA che parta la prima ondata di massa. Il precedente interno esiste gia' ed e' il gate del battito: costruito in un giorno, 6/6 al test.
 
 
-### R-4 — I dodici hook [MECCANICA] non stanno in nessuno scaglione  [GRAVE]
+### R-17 — I dodici hook [MECCANICA] non stanno in nessuno scaglione  [GRAVE]
+> *Convergenza indipendente con R-12: trovato dai due revisori separatamente, con prove autonome.*
 - **Dove:** V1 §15 contro §22 (E0..E9)
 - **Cosa dice il piano:** §15: *«rendere meccanico ciò che oggi è volontario»* — dodici regole marcate [MECCANICA] perché la loro famiglia di errore è recidiva («chiudere un lavoro senza traccia: 25 tracce in tutta la vita» · «accettare il rapporto di un agente senza verifica su disco: 6 episodi»).
 - **Perche' non funziona all'atto pratico:** i dodici hook sono l'unico pezzo del piano che renderebbe automatica la disciplina che i gate di E1..E8 presuppongono — eppure **nessuno scaglione li contiene**: non hanno ore, non hanno gate, non hanno posto. E3 pretende «le tracce scritte da sole», ma l'hook che scrive le tracce da solo non è nel lavoro di nessun E. Ogni scaglione da E1 in poi verrà quindi eseguito con la stessa disciplina volontaria che §15 dimostra fallita (i numeri della recidiva sono suoi, non miei). È anche la risposta alla domanda «quale scaglione, fatto per primo, renderebbe più facili tutti gli altri?»: questo — e V1 non l'ha messo in fondo, l'ha dimenticato del tutto.
@@ -125,7 +126,7 @@
 - **Con quale conseguenza:** la recidiva già pagata (6 episodi di lavoro dichiarato mai fatto) rientra dentro l'esecuzione stessa del piano che doveva eliminarla; ore di verifica manuale a ogni scaglione.
 - **Cosa proporresti al posto:** i 12 hook diventano uno scaglione E0.7 (mezza giornata, sono configurazione non costruzione), PRIMA di E1: da lì in poi ogni scaglione lavora sorvegliato.
 
-### R-5 — Il gate di E0 sull'INCASSO misura un flag scritto a mano, non i Payment Link  [FATALE]
+### R-18 — Il gate di E0 sull'INCASSO misura un flag scritto a mano, non i Payment Link  [FATALE]
 - **Dove:** V1 §22-E0 («Gate: `empire controllo` passa da 2/6 a 5/6»)
 - **Cosa dice il piano:** E0 chiede a Max «2 Payment Link Stripe» e il gate è il contatore di `empire controllo`.
 - **Perche' non funziona all'atto pratico:** ho letto il codice del contatore. La riga INCASSO si accende leggendo `Crea siti/Siti CCM/checkout.config.json` → `rails.stripe_base.attivo`: **un booleano in un file JSON del repo**. Nessuna verifica che i Payment Link esistano. Doppio vizio: (a) chiunque scrive `"attivo": true` con zero link e il gate diventa verde — è esattamente il vizio che `censimento-01c` ha trovato nel gate pre-commit («ottiene una conferma falsa»), riprodotto stanotte dal vivo: `python -m empire registry gate` senza argomenti → `block: 0 warn: 0 totale: 0`, exit 0; (b) al contrario, Max crea davvero i 2 Payment Link e il gate **resta rosso** finché qualcuno non edita il JSON a mano — quindi anche nel caso onesto il passaggio del gate è una dichiarazione, non un'esecuzione (L5 violata alla lettera). In più il secondo gate di E0, «la vecchia chiave OpenRouter risponde 401», non ha un solo comando nel repo che lo esegua: è un controllo a memoria d'uomo.
@@ -134,7 +135,8 @@
 - **Con quale conseguenza:** l'azienda crede di poter incassare e non è stato verificato niente; tutti gli scaglioni a valle che citano «prima ciò che porta denaro» poggiano su una spunta manuale.
 - **Cosa proporresti al posto:** il gate INCASSO diventa una richiesta HTTP in sola lettura ai 2 Payment Link (status 200 e pagina Stripe viva), e `controllo` esce con exit≠0 sotto soglia; il 401 OpenRouter diventa uno script `gate_rotazione.py` lanciabile.
 
-### R-6 — Il gate di E3 «trace stato > 25» dista UNA traccia dal verde, e la clausola che conta non ha verificatore  [GRAVE]
+### R-19 — Il gate di E3 «trace stato > 25» dista UNA traccia dal verde, e la clausola che conta non ha verificatore  [GRAVE]
+> *Convergenza indipendente con R-6.*
 - **Dove:** V1 §22-E3 («Gate: … `trace stato` > 25 **senza intervento manuale**»)
 - **Cosa dice il piano:** la fetta verticale è chiusa quando le tracce superano 25 senza mano umana.
 - **Perche' non funziona all'atto pratico:** ho lanciato il comando: le tracce sono **esattamente 25 oggi** (6 decisioni, 6 errori, 7 prestazioni, 4 lezioni, 2 sessioni). Il gate passa alla ventiseiesima — e la ventiseiesima si scrive in dieci secondi con `empire trace scrivi`, che è un comando manuale a disposizione di chiunque. La clausola «senza intervento manuale» è l'unica cosa che dà senso al gate, ma `trace stato` stampa **solo conteggi per tipo**: non registra chi ha scritto la traccia (hook, agente, o mano), quindi la clausola non è verificabile da nessun comando. Un gate la cui soglia si supera con un comando manuale e la cui condizione qualificante non è misurabile è un gate che si dichiara — L5 alla rovescia.
@@ -186,7 +188,8 @@
 - **Cosa proporresti al posto:** una regola per V2: ogni numero cardinale in uno scaglione (5 ecosistemi, 36 duplicati, ~10 agenti, 4 libri) porta accanto o l'elenco dei nomi o il puntatore esatto a file e sezione che li elenca.
 
 
-### R-7 — Metà degli scaglioni non ha gate, e i gate di E4/E5 non nominano un comando  [GRAVE]
+### R-20 — Metà degli scaglioni non ha gate, e i gate di E4/E5 non nominano un comando  [GRAVE]
+> *Convergenza indipendente con R-7; in più qui: anche E6 e E7 sono senza riga Gate.*
 - **Dove:** V1 §22-E4, E5, E6, E7, E8, E9
 - **Cosa dice il piano:** L5 (§17): *«nessun gate si dichiara, si esegue»*. Poi: E6, E7 e E9 **non hanno alcuna riga Gate**; E4 ha «una traccia nasce da sola · il ledger registra il primo movimento · un handoff con carico vero attraversa il Bus»; E5 ha «EMPERATOR ordina → un direttore esegue → l'uscita finisce dove il contratto dice».
 - **Perche' non funziona all'atto pratico:** su dieci scaglioni, tre sono senza gate del tutto e due hanno gate descritti come **eventi da osservare**, senza il comando che li verifica, senza soglia, senza exit code. «Una traccia nasce da sola» — verificato da chi, con che comando, distinguendola come in R-6? «L'uscita finisce dove il contratto dice» — chi confronta l'uscita col contratto, a mano? Capisco che NEXUS non esista ancora e i suoi comandi nemmeno: ma allora il gate va scritto come *specifica del comando che dovrà esistere* (nome, argomenti, condizione di fallimento), altrimenti a fine E4 la verifica sarà una frase in un checkpoint — cioè una dichiarazione. Per E7 (30-45 ore su 204 agenti) l'assenza è più grave: il comando esiste già (`forge scan`, con le percentuali per criterio) e V1 non lo aggancia; per E9 l'assenza è dichiarata («solo quando E3+E4+E5 sono chiusi») ma chiusi secondo quali gate, se E4 e E5 non ne hanno di eseguibili?
@@ -195,7 +198,8 @@
 - **Con quale conseguenza:** 80-120 ore (E4+E5+E7) chiuse per dichiarazione; il rischio R3 di V1 («NEXUS diventa un altro pezzo di carta») senza il solo strumento che lo scongiura.
 - **Cosa proporresti al posto:** V2 non pubblica uno scaglione senza riga Gate con comando nominato, condizione di fallimento e exit code — per i comandi futuri, la firma del comando fa parte del lavoro dello scaglione stesso.
 
-### R-8 — Le ore di E1, E7 e E8 non reggono il conto dei file  [GRAVE]
+### R-21 — Le ore di E1, E7 e E8 non reggono il conto dei file  [GRAVE]
+> *Convergenza indipendente con R-9 e R-10 su E1/E7; il conto misurato degli orfani di E8 (25.023) è solo qui.*
 - **Dove:** V1 §22-E1 (4-6 h), §22-E7 (30-45 h), §22-E8 (25-40 h)
 - **Cosa dice il piano:** le stime in intestazione, senza scomposizione per voce.
 - **Perche' non funziona all'atto pratico:** ho contato i pezzi con gli strumenti del piano stesso.
@@ -208,7 +212,7 @@
 - **Con quale conseguenza:** 70-150 ore non pianificate; oppure contratti C4 scritti a 10 minuti l'uno, che è il modo in cui si torna al 13,9%.
 - **Cosa proporresti al posto:** stime per voce (n° file × minuti misurati su un campione di 5), regole di triage all'ingrosso per gli orfani (per cartella, non per file), e l'ADR sull'albero canonico chiesto a Max dentro E0.
 
-### R-9 — E4 si dichiara prerequisito di tutti («senza N3/N4 nessuno scaglione è misurabile») ma arriva quarto  [MEDIO]
+### R-22 — E4 si dichiara prerequisito di tutti («senza N3/N4 nessuno scaglione è misurabile») ma arriva quarto  [MEDIO]
 - **Dove:** V1 §22-E4, contro §22-E1..E3
 - **Cosa dice il piano:** E4: *«Prima N3 (l'emettitore unico) e N4 (il ledger), perché senza di loro nessun altro scaglione è misurabile»*.
 - **Perche' non funziona all'atto pratico:** delle due l'una. Se la frase è vera, allora E1, E2 e E3 — che stanno prima — vengono eseguiti e chiusi **non misurabili**, e l'ordine è sbagliato: N3+N4 andrebbero estratti da E4 e anticipati (anche in versione minima) prima della fetta verticale. Se la frase è falsa — e in parte lo è: E1..E3 hanno gate su comandi che esistono già, li ho lanciati tutti — allora la giustificazione interna di E4 è gonfiata e va riscritta, perché chi esegue la userà per difendere 25-40 h di costruzione «indispensabile» quando il piano stesso dimostra che si misura anche senza NEXUS. In entrambi i casi il testo attuale non può restare: o sposta il lavoro o corregge la pretesa.
@@ -216,3 +220,17 @@
 - **Dove si romperebbe:** nella discussione di chiusura di E3: «è chiuso ma non misurabile, lo dice E4» — e la fetta verticale resta in limbo finché NEXUS non esiste.
 - **Con quale conseguenza:** o settimane di attesa artificiale tra E3 e E4, o un E4 sovradimensionato difeso con un argomento che i comandi smentiscono.
 - **Cosa proporresti al posto:** una riga in V2: «E1..E3 si misurano coi comandi esistenti; N3/N4 aggiungono la misura *automatica*, non la prima misura» — e un N4 minimo (ledger a file, senza Bus) anticipato accanto a E3, dove R-2 ha già messo gli alimentatori.
+
+---
+
+## COSA REGGE
+
+Detto tutto il male: questo piano ha fondamenta che i lanci di stanotte **confermano**, e vanno dette con la stessa precisione dei rilievi.
+
+1. **Quattro gate su sei di E1..E3 sono gate veri, e oggi falliscono come devono.** Lanciati tutti in sola lettura: `empire doctor` → block 2, **exit 1**; `empire estate` → «NON FINITO: 2 controlli», **exit 1**, coi nomi esatti di cosa manca; `verify-agents` → 7 FAIL, exit 1; `verify-skills` → 3 FAIL, exit 1. Comandi che esistono, possono fallire, e stanno fallendo: L5 rispettata nei fatti, lì.
+2. **I numeri di V1 sono onesti sul disco di oggi.** `forge scan` → 439 analizzati, OPERATIVO 13,9%: le stesse cifre del piano, riverificate stanotte. E l'aritmetica della rinomina torna: 61+174 = 235 = 53,5% di 439.
+3. **La diagnosi di E3 è esatta.** `flow status` → finestra ESTATE-2026 «2026-07-21..2026-07-26» scaduta, `WF-S1-CONCESSIONARI` a 0/5 step: la ragione del contatore a zero è davvero la finestra, come V1 sostiene, non la mancanza di motore.
+4. **Il metodo di E2 è quello giusto.** Ho aperto una scheda a campione (`company/Board-CSuite/.../ceo-analista-strategico.md`): sotto `## Input / Output` ci sono già i blocchi `**Input atteso:**` e `**Output prodotto:**` separati — la spaccatura è meccanizzabile, e l'ordine «con un programma che verifica una per una, non a mano» è la lezione delle cadute applicata bene. (Nota per V2: i file con quell'intestazione in `company/` sono **391**, non 174 — il programma ne tocca più del doppio di quelli che cambiano fascia; la stima 6-10 h regge comunque.)
+5. **E0 delimita bene le mani di Max.** La lista degli atti che nessuno può fare al posto suo coincide con la sezione «ATTI DI MAX» che `empire controllo` stampa da sé: piano e strumento dicono la stessa cosa.
+6. **La regola §18 (produzione sequenziale, ricognizione parallela con scrittura incrementale) è pagata con dati veri** — 9/9 contro 1/4, e le 5.042 righe salve di stanotte — ed è correttamente cablata dentro E7. Questo stesso documento, scritto un rilievo alla volta, ne è l'ennesima prova.
+7. **Il criterio d'ordine di §21 è giusto in sé.** I tre principi sono quelli che i censimenti sostengono; i rilievi R-1, R-2, R-12 e R-17 non contestano il criterio — contestano che gli scaglioni non lo applicano. Un piano col criterio giusto e l'ordine sbagliato si corregge in V2 riordinando; uno col criterio sbagliato si butta. Questo si corregge.

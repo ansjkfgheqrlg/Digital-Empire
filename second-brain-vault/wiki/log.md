@@ -2224,3 +2224,13 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   colonna `--u` e zero build; tutto il resto → Next.js 16. Chiude la contraddizione fra
   `empire-premium-style` ("mai HTML statico") e `website-creator` ("zero framework"), che si
   vietavano a vicenda dichiarandosi entrambe obbligatorie. → CP-20260906-9TWF.
+
+- BUILD: **Fabbrica Siti, Fase 2** — 8 pattern costruiti come **codice che gira** (`pattern.html`
+  apribile + `scheda.md` con "quando NO" e "cosa cade se sbagli"): testata-targa, hero-due-strati,
+  cucitura-fotografica, prova-video, oggetto-che-si-posa, contatore-scadenza, faq-native,
+  coda-legale. Più `CORSIA-B.md` e `scripts/galleria.py`, che **genera** `GALLERIA.html` dalle
+  cartelle e fa da gate. Prima applicazione di `emperator.md §6.20` (piano criticato tre volte): P1
+  ha smentito il dossier ("11 pattern già scritti" era falso), P2 ha imposto la galleria generata,
+  P3 ha tagliato da 20 a 8 perché 20 violavano il nostro stesso §10. Il gate ha bocciato il suo
+  autore alla prima esecuzione (contatore senza ramo reduced-motion) — corretto, poi PASS.
+  → CP-20260906-GUCC.

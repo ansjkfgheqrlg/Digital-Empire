@@ -41,6 +41,39 @@ fondazione**.
 fatali. Tutto in [EMP-MCC4](riprese/EMP-MCC4.md) · dettagli in
 [CP-20260906-J8EV](checkpoints/CP-20260906-J8EV.md).
 
+## 🟠 2026-09-06 — Il gate ha bocciato il suo stesso autore il primo giorno — CP-20260906-GUCC
+
+**FABBRICA SITI, FASE 2 CHIUSA: 8 pattern che girano, galleria generata, PASS a macchina.**
+Prima applicazione di **§6.20** (direttiva Max di oggi: il piano si critica fino a tre volte, ogni
+giro attacca il giro prima). I quattro giri sono scritti in `pattern/_PIANO-FASE-2.md`, e **nessuno
+e' stato teatro**:
+• **P1** ha trovato che il dossier 32 mentiva: *"11 pattern nostri gia' scritti"* e' falso —
+`section-patterns.md` e' una tabella di 117 righe, i corpi stanno in JSX (**solo Corsia B**), **10
+puntatori su 17 gia' stale**. Il piano nasceva **fuori legge** il giorno dopo aver scritto §5.
+• **P2** ha imposto che la galleria sia **generata**, mai scritta a mano: un indice a mano e' un
+debito con una data di scadenza, e ne avevamo gia' la prova sotto gli occhi.
+• **P3** ha tagliato l'ambizione: 20 pattern prima di aver costruito un solo sito **violano il
+nostro §10** (un pattern si promuove dopo due usi). Ridotti a **8** — quelli che compongono una
+pagina di lancio dall'alto in basso, cioe' il bersaglio del collaudo di Fase 5.
+⭐ **Il fatto della giornata:** alla prima esecuzione `galleria.py` ha dato **FAIL** su
+`contatore-scadenza` — *"ha JavaScript ma nessun ramo prefers-reduced-motion"*. **Ed era vero:** una
+cifra che cambia ogni secondo e' movimento, e l'avevo scritta senza il ramo `reduce` **mentre
+costruivo lo strumento che deve impedire proprio quello**. Corretto (con reduced-motion il conto
+resta ma va al minuto e i secondi spariscono), seconda esecuzione **PASS**. Un gate che boccia il suo
+autore il primo giorno vale piu' di dieci righe di manuale.
+**Gli 8:** `testata-targa` · `hero-due-strati` · `cucitura-fotografica` · `prova-video` ·
+`oggetto-che-si-posa` · `contatore-scadenza` · `faq-native` · `coda-legale`. Ognuno e' **codice
+che gira** (`pattern.html` apribile) piu' una scheda che dice quando si', quando no, **e cosa cade se
+sbagli**. Piu' `CORSIA-B.md` (una regola sola per tutti) e `scripts/galleria.py`.
+**Dichiarato cosa resta fuori:** i pattern Empire di contenuto restano in `reference-page-full.tsx`
+finche' un cantiere non li chiede — trascriverli in prosa sarebbe una seconda copia della verita'.
+**Anche fatto oggi:** sbloccato il conflitto di sync (commit `553bf764` pushato), scritte in dottrina
+**§6.20** (il piano si critica tre volte) e **§6.21** (i siti hanno una fabbrica).
+**RIPRESA DA:** **Fase 3** — il flusso a 9 passi + `SKILL.md` invocabile (`/fabbrica-siti`); la voce
+in dottrina e' gia' scritta. Poi Fase 4 (`gate_siti.py` completo + `qa_sito.py` Playwright) e Fase 5
+(rifare `armageddon` col nostro canone).
+Dettagli: [CP-20260906-GUCC](checkpoints/CP-20260906-GUCC.md).
+
 ## 🟠 2026-09-06 — Il concorrente ha una legge scritta, noi avevamo quattro skill che si vietavano a vicenda — CP-20260906-9TWF
 
 **Nasce la FABBRICA SITI. Fase 1 chiusa: legge, canone, ADR-023.**
