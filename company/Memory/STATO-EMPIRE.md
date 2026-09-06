@@ -1,3 +1,20 @@
+## 🟠 2026-09-06 — Un campo di Fliki che protegge i canali, mai compilato — CP-20260906-002
+
+**Codice di ripresa: EMP-V6DE (APERTA).** Chiusa `A4/L19` (ORO): studio a **11/167 (6,6%)**, A4 al
+**52,4%**, registro **38 regole, 33 applicate**. ⭐ **Trovata un'azione concreta mai fatta:** Fliki
+ha in `Profile` il campo **`YouTube channel ID(s)`**, che serve a **prevenire i reclami di
+copyright** sulle clip e le musiche che la piattaforma ci fornisce — verificato che in tutta la
+fabbrica non era **mai stato nominato**. Va compilato a mano per `dosementale` e `legamidiamore`
+(gratis, assegnato al gate A4). Copre ciò che Fliki ci dà, **non** ciò che carichiamo noi.
+Seconda scoperta, per prova: la **mappa delle pronunce di Fliki vale «for this video»** — il
+docente dice il contrario, ma vince lo schermo (piano §6.4): quindi il debito aperto da L03 **non
+si chiude con una configurazione**, le pronunce si correggono nel testo dello script.
+⚠️ **Lavoro a metà, da riprendere per primo:** L09, L13, L14, L16 sono **lette ma non chiuse** —
+rapporti salvati in `studi/aitubepro/A4-metodo-ai-tube/RAPPORTI-GREZZI-L09-L13-L14-L16.md`, che
+elenca cosa manca. Ne escono: i **miti del camuffamento da 4 a 6**, due **porte chiuse** (L13
+insegna un aggiramento di licenza, L16 la separazione audio di brani altrui) e un dato che smonta
+L05 (il copia-incolla fatto bene costa **~1 ora a video**, non 5 minuti).
+
 ## 👑 2026-09-05 — QUANTO È COSTRUITA DAVVERO L'AZIENDA: 92% sulla carta, 18% viva — EMP-MCC4
 
 **Ordine di Max:** *«la costruzione di Digital Empire non era finita al 100% — a che percentuale

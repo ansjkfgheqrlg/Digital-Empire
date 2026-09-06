@@ -1,15 +1,21 @@
 {
   "lesson_id": "08d6a09e-b4a8-4322-a654-1bfed76b7207",
   "corso": "aitubepro",
-  "titolo": "",
+  "titolo": "Perfezionare un video con l'AI All In One",
   "durata_s": 665,
   "durata_reale_s": 665,
   "scaricato": true,
   "qualita": 360,
   "quando": "2026-09-05T23:57:21",
-  "passo": "2-trascritto",
+  "passo": "completata",
   "avviso": null,
   "parole": 1630,
   "parole_al_minuto": 147,
-  "modello": "base"
+  "modello": "base",
+  "profondita": "ORO",
+  "frame_estratti": 167,
+  "frame_unici": 38,
+  "frame_guardati": 4,
+  "regole_estratte": 4,
+  "chiusa_il": "2026-09-06"
 }

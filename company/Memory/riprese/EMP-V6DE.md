@@ -68,14 +68,16 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **157 lezioni su 167 da studiare** (6,0% fatto). Fatte `A4/L00` → `L08` e `L10`; **A4 al 47,6%
-  (10/21)**. L07, L08 e L10 chiuse in **BRONZO dichiarato** (tutorial di editor manuali: 110
+- **156 lezioni su 167 da studiare** (6,6% fatto). Fatte `A4/L00` → `L08`, `L10`, `L19`;
+  **A4 al 52,4% (11/21)**. Registro: **38 regole, 33 applicate**. L07, L08 e L10 chiuse in **BRONZO dichiarato** (tutorial di editor manuali: 110
   minuti di interfaccia, parlato letto integralmente, zero frame — piano §10).
 - **In A4 restano: 7 lezioni già trascritte** da studiare e **4 in stato `1-fallito`** (HTTP 403,
   gettone scaduto: si riscaricano con un gettone nuovo, non si forzano).
-- **Due verifiche assegnate al gate A4**: (1) ascoltare un MP4 prodotto e stabilire se contiene
+- **Tre verifiche assegnate al gate A4**: (1) ascoltare un MP4 prodotto e stabilire se contiene
   musica (`A4-L04-04`); (2) cronometrare una produzione vera end-to-end (`A4-L05-04`) — il corso
-  ha un metro di 5 minuti, noi nessuno.
+  ha un metro di 5 minuti, noi nessuno; (3) ⭐ **compilare il campo `YouTube channel ID(s)` nel
+  profilo Fliki** per `dosementale` e `legamidiamore` (`A4-L19-01`) — è gratuito, protegge dai
+  reclami sulle clip che Fliki ci fornisce, e **non è mai stato fatto**.
 - **Verifica aperta assegnata al gate A4** (da `A4-L04-04`): ascoltare un MP4 già prodotto in
   `06-DASHBOARD-E-METRICHE/video-generati/` e stabilire **se i nostri video contengono musica**.
   Finché non si sa, il criterio «Bilanciamento Volumi» di `qa-audio-video` resta sospeso.
@@ -85,6 +87,25 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 - **DURATE.md non esiste**: il censimento delle durate previsto dal piano non è stato fatto
   (la durata si legge lezione per lezione durante lo scaricamento, e finisce in `stato.json`).
 - **`CONFLITTI.md` aperto il 2026-09-05** con tre arbitrati (C-001, C-002, C-003), tutti da L05.
+
+## 3-bis. ⚠️ IL LAVORO FATTO A METÀ — si riprende da qui (2026-09-06)
+
+**Quattro lezioni sono LETTE ma NON CHIUSE: L09, L13, L14, L16.** I rapporti integrali dei tre
+scagnozzi che le hanno lette sono in
+[`RAPPORTI-GREZZI-L09-L13-L14-L16.md`](../studi/aitubepro/A4-metodo-ai-tube/RAPPORTI-GREZZI-L09-L13-L14-L16.md),
+che contiene anche **l'elenco preciso di cosa manca**. Mancano appunti, report, regole.
+
+Cose importanti già emerse e da lavorare:
+- **I miti del camuffamento passano da 4 a 6**: nuovi la soglia dei «4 secondi» (L14, 20:51) e il
+  «il fair use decade perché la clip non è loro» (L14, 19:50).
+- **Due porte chiuse da scrivere**: L13 insegna un **aggiramento di licenza** (Final Cut «gratis
+  per sempre»); L16 propone di separare voce e base da **brani altrui**.
+- **Due principi veri** (L14): i primi 30 secondi sono leva di **ritenzione**, non solo di CTR; e
+  la CTA di chiusura va curata.
+- **Un dato che smonta L05**: il copia-incolla fatto bene costa **~1 ora a video**, non 5 minuti.
+
+**Due regole di L19 restano da innestare:** `A4-L19-02` in `lessico-pronuncia.md` (la mappa Fliki
+è per-video) e `A4-L19-03` in `fliki-avanzato.md` (la fonte del 10%).
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
