@@ -1,12 +1,15 @@
 # Rapporti grezzi degli scagnozzi — L09 · L13 · L14 · L16
 
-> ⚠️ **MATERIALE GREZZO, NON ANCORA LAVORATO.** Sono i rapporti integrali di tre scagnozzi
-> (agenti sonnet) che hanno letto il parlato di quattro lezioni. **Gli appunti, i report e le
-> regole di queste quattro lezioni NON sono ancora stati scritti**: le quattro lezioni sono
-> **APERTE**, non chiuse.
+> ✅ **LAVORATO IL 2026-09-06. Le quattro lezioni sono CHIUSE.** Questo file resta come
+> **materiale d'origine**: sono i rapporti integrali dei tre scagnozzi (agenti sonnet) che hanno
+> letto il parlato delle quattro lezioni, e serve a poter risalire a cosa fu letto davvero.
 >
-> Salvati qui il 2026-09-06 per non perderli alla chiusura della sessione. Chi riprende parte da
-> qui: il lavoro di lettura è fatto, manca la lavorazione.
+> Il lavoro finito sta qui:
+> - appunti: `L09-18-tecniche-avanzate/`, `L13-final-cut-gratis/`, `L14-final-cut-avanzato/`,
+>   `L16-ai-musica-separazione/`
+> - report a sei voci: [`REPORT-BLOCCO-COPIA-INCOLLA.md`](REPORT-BLOCCO-COPIA-INCOLLA.md)
+> - regole: `../regole/A4-metodo-ai-tube/L{09,13,14,16}_*.py` — **9 regole, tutte applicate**
+> - arbitrato: `../CONFLITTI.md` **C-006**
 
 ---
 

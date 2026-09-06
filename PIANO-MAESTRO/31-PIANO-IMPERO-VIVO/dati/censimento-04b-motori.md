@@ -387,3 +387,72 @@ Quattro cartelle, contate: `EXPONIUM/` (49 `.py`, 811 file, fermo al **2026-06-0
 - **DIPENDENZE ESTERNE:** nessuna chiave; `hooks-sync.json` e la configurazione hook di Claude Code.
 - **CHI LO POSSIEDE:** **MAX / EMPERATOR**, per uso diretto — `checkpoint.py` e' prescritto in `CLAUDE.md`, quindi e' governato dalla regola di casa piu' alta. Non censito voce per voce nei registri, ma non e' orfano: e' il braccio di chi scrive i registri.
 - **COME SI AVVOLGE:** e' gia' l'unico posto dove un comando dell'Impero **e'** un file. Il passo mancante e' agganciarlo a `python -m empire` (§4) come lotto `register(sub)`, cosi' che `checkpoint`, `tesoreria` e `ultimo_metro` diventino sottocomandi del runtime invece di script sciolti.
+
+---
+
+## 12. `EmpireDesk/` — L'INVOLUCRO CHE ESISTE GIA'. La risposta a "come si avvolge"
+
+- **Percorso:** `EmpireDesk/`
+- **Nome vero:** *EMPIRE DESK*.
+- **A cosa serve:** dal docstring di `app.py` — *"Un solo .exe = l'app gestionale di Digital Empire. Il server locale serve la piattaforma **Aureus Agency OS** (React/Vite, grafica di Max — `platform/`, INTOCCABILE) come root, mantenendo vive le stesse API `/api/*` (tiles/launch/poll/modules/...)."* E la riga che risolve la domanda di questo censimento: **"Ogni tile/automazione lanciata resta un subprocess su un runtime ESISTENTE (ADR-003: launcher/wrapper, mai riscrittura dei motori)."**
+- **Dimensione:** 14 file `.py`, **2.628 righe di Python**, 3.989 file totali (gonfiati da `platform/` React, `chrome-profile/`, `dist/`, `build/`).
+- **PUNTO D'INGRESSO:** `python app.py` (dev, richiede `platform/dist/` gia' buildata con `npm install && npm run build`), `python app.py --selftest` (*"verifica tile/moduli/build platform, NON lancia nulla"*), `build_exe.bat` per l'eseguibile, `cron_dash.bat` per lo schedulato.
+- **SCELTA TECNICA MOTIVATA DA UN BUG REALE, citata dal codice:** *"ordine motori = Chrome-app (server locale + finestra `chrome --app`) -> pywebview -> Tkinter. Motivo: su alcuni PC WebView2 manca e pywebview fallisce IN SILENZIO (bug reale trovato in PreventivoForge, CP-20260715-001) -> qui si parte gia' col motore che NON dipende da WebView2."*
+- **GIRA ANCORA? VIVO, scritto OGGI.** Prova: `state/taskboard.json` **38 KB, 2026-09-06**; `state/preventa_leads.json` **1,31 MB, 2026-08-31**; `state/revenue.json` 2026-07-19.
+- **QUALI MOTORI AVVOLGE GIA' — verificato leggendo i moduli, non il README:**
+  - `modules/yt_produzione.py` righe 11/133-134: lancia **`YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/produci_video_completo.py`** (§2.2), con `cwd` dichiarato.
+  - `modules/outreach.py` righe 8/120-121: lancia **`Outreach/preventa-maps-scraper/02-AUTOMAZIONI-E-SCRIPTS/run.py`** (file 04, §1.1).
+  - `modules/preventa.py`: serve alla UI Areus i lead che `Outreach/preventa-maps-scraper` scrive.
+  - `modules/licenze.py` riga 12: punta a **`Clienti/Prof Autocad/preventivo-forge/gestione-licenze.py`** (§7.1) — e' il kill-switch abbonamenti.
+  - `modules/metrics.py` riga 20: conta i caroselli, **ma da `Workfolw crea caroselli à/carousel-factory`** — cioe' da una TERZA cartella caroselli, non da `SKILL & Agenti/Workflow agency creative/` dove `caroselli.py` scrive davvero (§3.2). **Il cruscotto sta contando la cartella sbagliata.**
+  - Altri moduli: `dash.py`, `libri.py`, `libri_kdp.py`, `metrics.py`, `notify.py`, `revenue.py`, `scheduler.py`, `taskboard.py`, `youtube.py`.
+- **DIPENDENZE ESTERNE:** Node/npm per buildare `platform/`; Chrome installato; `chrome-profile/` proprio; i motori avvolti con le loro chiavi (Fliki, WhatsApp).
+- **CHI LO POSSIEDE:** `company/REGISTRO-IMPRESA.md` riga 47: *"EmpireDesk.exe (completato via LMarena zip) | 06-CORE/Platform (interim: Genesi-Core) | selftest 8/8 tile + 5-bis | dossier 17 | Art.2 (zero bottoni finti) · ADR-003 (solo launcher)"*. `skills-map.yaml` riga 563. **NON orfano.**
+- **RUMORE NEL REGISTRO:** `skills-map.yaml` righe 1123-1124 censiscono come artefatto dell'Impero **un file JavaScript di un'estensione Chrome dentro `EmpireDesk/chrome-profile/Default/Extensions/`** — spazzatura da scansione automatica.
+- **COME SI AVVOLGE:** **non si avvolge: e' lui l'involucro.** Insieme a `empire/` (§4) chiude il cerchio — `empire` per *osservare*, EmpireDesk per *lanciare*. **Il patrimonio dell'Impero non e' privo di un guscio: ne ha due, gia' costruiti e vivi. Il guasto e' che dentro EmpireDesk sono agganciati quattro motori su quindici, e uno dei quattro (metrics/caroselli) punta alla cartella sbagliata.**
+
+---
+
+## 13. Le cartelle senza motore — aperte e dichiarate, non dedotte
+
+| cartella | .py | file | ultimo | cosa contiene davvero |
+|---|---:|---:|---|---|
+| `second-brain-vault/` | 13 | 3.415 | **2026-09-06** | la wiki di Digital Empire (Markdown + Obsidian). **VIVA oggi**, ma non e' un motore: e' l'uscita di Empire Studio (§3.1) |
+| `agency-empire/` + `agency-empire-landing/` | 0 | 1.854 + 1.774 | 2026-07-25 | siti Next.js (vetrina agenzia). `09b-prove-novacar.tsx` e' censito in REGISTRO riga 55. Nessun Python |
+| `Lancio corso skill beast/` | 1 | 10.193 | 2026-05-13 | **materiale di lancio**, non codice: 10.193 file per un solo `.py`. Fermo da 116 giorni |
+| `SaaS/` | 0 | 721 | 2026-06-10 | zero Python. Non e' un SaaS: e' una cartella di materiale |
+| `KDP - prodottti digitali/` | 1 | 803 | 2026-04-08 | un solo `.py`. Fermo da 151 giorni |
+| `Workflow-libri/` | 7 | 80 | **2026-03-21** | 7 script libri, **il piu' vecchio motore attivo mai censito: 169 giorni**. DORMIENTE |
+| `master-build-architecture/` | 5 | 408 | 2026-07-20 | metodologia MBA; il Python e' contorno. Esiste **anche clonata** in `DIGITAL-EMPIRE/05-SKILLS/` (§6) |
+| `competitor/` | 1 | 485 | 2026-09-01 | studio competitor: `Andrei Pascu/`, `Martes Ai/`. Materiale, non motore |
+| `Formazzione/` | 0 | 23 | 2026-05-31 | materiale |
+| `App/` | 0 | **1** | 2026-05-01 | **un solo file in tutta la cartella.** Non esiste nessuna "App" |
+| `content-forge2.0/` | 0 | **0** | — | **CARTELLA COMPLETAMENTE VUOTA** (creata 2026-07-21). Ma `DIGITAL-EMPIRE/05-SKILLS/content-forge2.0` esiste e ha contenuto, e la skill `/content-forge2.0` e' installata: **il registro punta a un guscio vuoto** |
+| `data/`, `shared/`, `tests/` (radice) | 0-1 | 2 | 2026-07/09 | segnaposto da 2 file ciascuno |
+
+**Nota su `content-forge2.0/` in radice:** e' l'unico caso in cui il rischio "cartella vuota" si e' avverato **al contrario** rispetto al caso `08-STREAM-S7-BOT`: li' una cartella dichiarata vuota conteneva un bot; qui una cartella che il repository tratta come sistema vivo **non contiene nemmeno un file**.
+
+---
+
+## 14. `Workfolw crea caroselli à/carousel-factory/` — il motore di render, che NON e' Python
+- **Percorso:** `Workfolw crea caroselli à/carousel-factory/` (il nome della cartella contiene un refuso e una `à` finale: e' questo che ha confuso i registri).
+- **A cosa serve:** e' il **motore di render Puppeteer + template HTML** che `caroselli.py` (§3.2) invoca come processo esterno. Non e' Python: `scripts/` contiene `generate.js`, `render.js`, `export-all.js`; ha `package.json`, `package-lock.json`, `templates/`, `brands/`, `context/`, `node_modules/`.
+- **PUNTO D'INGRESSO:** gli script Node, chiamati da `caroselli.py`. Non ha un lancio proprio dichiarato.
+- **GIRA ANCORA? VIVO come libreria, morto come cartella d'uscita.** `scripts/`, `templates/`, `brands/`, `package-lock.json` sono **2026-08-31** — la stessa data di `caroselli.py`, cioe' sono stati toccati insieme. Ma `output/` contiene **una sola cartella, del 2026-03-22** (`2026-03-22-il-90-dei-freelance-fallisce-per-questo-motivo`): da quando `caroselli.py` esiste, l'uscita va nell'Arsenale, non qui.
+- **PERCHE' E' IMPORTANTE PER IL CENSIMENTO:** e' la cartella che `EmpireDesk/modules/metrics.py` riga 20 usa per contare i caroselli prodotti. **Il cruscotto legge `output/`, che e' fermo a marzo, invece di `Arsenale Caroselli/`, che e' di fine agosto. Quel numero sul cruscotto e' sbagliato per costruzione.**
+- **CHI LO POSSIEDE:** `company/skills-map.yaml` riga 179 lo censisce come `workflow-caroselli-alt` — *"Workflow Crea Caroselli (alternativo)"*. E' l'unica delle tre cartelle caroselli ad avere una voce col percorso giusto, e il registro la marca come "alternativa" mentre e' il motore vero del render.
+- **LA TERNA CAROSELLI, per chiarezza:** `caroselli/` in radice (contiene solo `3-sistemi-ai/` — materiale), `Workfolw crea caroselli à/carousel-factory/` (**il render, Node**), `SKILL & Agenti/Workflow agency creative/` (**il comando e l'Arsenale, Python**). Tre cartelle, un solo flusso, e i registri ne conoscono le due sbagliate.
+
+## 15. `.claude/` — il livello skill/agenti: 172 skill, 129 agenti, 21.535 righe
+- **Percorso:** `.claude/skills/` + `.claude/agents/`
+- **Dimensione reale, contata:** **172 skill**, **129 agenti**, **440 file `.py` per 21.535 righe di Python** (esclusi `__pycache__`). E' la seconda concentrazione di Python del repository dopo `company/`.
+- **A cosa serve:** e' il livello che l'Impero usa davvero ogni giorno — `/avvia-outreach-preventa`, `/empire-studio`, `/tesoreria`, `/ultimo-metro`, `/graphify`, `/memory-empire`, `/checkpoint`. Gli script Python dentro le skill (`agency-scalping/scripts/coverage_checker.py`, `lint_anti_summary.py`, `schema_validator.py`, `agente-max/scripts/generate_agent.py`, `context_calculator.py`) sono **gate deterministici**, non contorno: fanno fallire la skill quando l'output non e' conforme.
+- **PUNTO D'INGRESSO:** i comandi slash. Non c'e' e non serve un CLI.
+- **GIRA ANCORA? VIVO.** E' il livello attraverso cui questo stesso censimento viene eseguito.
+- **DUPLICAZIONE RILEVATA:** `skill-creator` esiste **tre volte** (`.claude/skills/skill-creator/`, `Crea siti/skills/skill-creator/`, `System OMEGA .../.claude/skills/skill-creator/`); `market`/`marketingskills` esiste come skill installata **e** come copia in `Crea siti/skills/market/` **e** come `marketingskills-main.zip` (§3.9).
+- **CHI LO POSSIEDE:** `company/skills-map.yaml` e' proprio la mappa di questo livello. **NON orfano** — anzi, e' l'unica parte del repository che il registro copre bene.
+- **NOTA:** `.claude/agents/` contiene 129 agenti; `.claude/commands/` e' **vuota** (0 file), mentre `YOUTUBE-AUTOMATION-FACTORY/.claude/commands/avvia-yt.md` esiste. I comandi di progetto stanno nelle cartelle dei motori, non al centro.
+
+## 16. I due archivi in radice, aperti
+- **`APEX SKILL.zip`** — **3.873 file, 128 `.py`**. Contiene `apex-7/` completo: `ARCHITECTURE.md`, `SKILL.md`, e gli agenti `analyst`, `critic` (con `failure-modes.md` e `playbook.md`) e gli altri. E' **il QUARTO APEX-7 del repository** dopo `YOUTUBE-AUTOMATION-FACTORY` (§2.1), `SKILL & Agenti/apex7/` (§3.7) e `company/Ecosistemi/11-APEX-7-CORE`. La skill `/apex-7` e' gia' installata in `.claude/skills/apex-7/`: **questo zip e' materia prima gia' consumata.**
+- **`digital-empire-team---sito.zip`** — 49 file, **0 `.py`**. Componenti React/TypeScript (`components/ui/GoldButton.tsx`, `Navbar.tsx`, `types.ts`, `metadata.json`) di un sito team. Nessun motore.

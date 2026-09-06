@@ -58,6 +58,18 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 - **Il nastro gira**: `corso_prepara.py` lanciato il 2026-09-04 alle 21:48 ha già scaricato e
   trascritto **6 lezioni** di A4. Non va rilanciato: guarda `runs/corso-aitubepro/*/stato.json`.
 
+- **Lezioni A4/L09, L13, L14, L16 chiuse** (CP-20260906-49XK): il blocco del copia-incolla
+  avanzato, 14.499 parole, BRONZO dichiarato. **9 regole, tutte applicate.** Da L14 il raccolto
+  migliore: **~1 ora a video** contro i «~5 minuti» promessi da L05 (arbitrato `C-006`, fattore
+  12×), i **miti del camuffamento da 4 a 6**, e i due principi di script che mancavano
+  (l'apertura come **ritenzione**, la **CTA di chiusura**). Due porte chiuse nuove: l'aggiramento
+  di licenza (L13) e la separazione audio di brani altrui (L16). Due buchi **nostri**: il criterio
+  di scelta strumenti non chiedeva la licenza, `niche-scout` non chiedeva su cosa si reggesse un
+  canale portato a esempio.
+  **Registro: 47 regole, tutte a norma, 44 applicate, 3 in attesa del gate A4 (binario B).**
+- **Le due regole di L19 rimaste in sospeso sono innestate**: `A4-L19-02` in `lessico-pronuncia.md`
+  (la mappa Fliki vale «for this video») e `A4-L19-03` in `fliki-avanzato.md` (la fonte del 10%).
+
 **Cosa è cambiato nella fabbrica finora:**
 - nuovo `04-SKILLS-E-REFERENCE/references/scelta-strumenti.md` (criterio di scelta, prima assente)
 - `03-AGENTI-E-RUOLI/supporto/self-improver.md` §8 — sorveglianza settimanale col tetto di tempo
@@ -68,10 +80,11 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **156 lezioni su 167 da studiare** (6,6% fatto). Fatte `A4/L00` → `L08`, `L10`, `L19`;
-  **A4 al 52,4% (11/21)**. Registro: **38 regole, 33 applicate**. L07, L08 e L10 chiuse in **BRONZO dichiarato** (tutorial di editor manuali: 110
-  minuti di interfaccia, parlato letto integralmente, zero frame — piano §10).
-- **In A4 restano: 7 lezioni già trascritte** da studiare e **4 in stato `1-fallito`** (HTTP 403,
+- **152 lezioni su 167 da studiare** (9,0% fatto). Fatte `A4/L00` → `L10`, `L13`, `L14`, `L16`,
+  `L19`; **A4 al 71,4% (15/21)**. Registro: **47 regole, 44 applicate**. Sette lezioni chiuse in
+  **BRONZO dichiarato** (L07, L08, L10 + L09, L13, L14, L16: tutorial di editor manuali e manovre
+  su materiale altrui, parlato letto integralmente, zero frame — piano §10).
+- **In A4 restano: 2 lezioni già trascritte** da studiare e **4 in stato `1-fallito`** (HTTP 403,
   gettone scaduto: si riscaricano con un gettone nuovo, non si forzano).
 - **Tre verifiche assegnate al gate A4**: (1) ascoltare un MP4 prodotto e stabilire se contiene
   musica (`A4-L04-04`); (2) cronometrare una produzione vera end-to-end (`A4-L05-04`) — il corso
@@ -86,36 +99,29 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 - `corso_prepara.py` **eseguito il 2026-09-04**: 6 lezioni di A4 già pronte a nastro.
 - **DURATE.md non esiste**: il censimento delle durate previsto dal piano non è stato fatto
   (la durata si legge lezione per lezione durante lo scaricamento, e finisce in `stato.json`).
-- **`CONFLITTI.md` aperto il 2026-09-05** con tre arbitrati (C-001, C-002, C-003), tutti da L05.
+- **`CONFLITTI.md`**: sei arbitrati (C-001..C-006). L'ultimo, **C-006**, è il secondo caso in cui
+  il corso contraddice sé stesso — e riguarda il costo del suo stesso metodo.
 
-## 3-bis. ⚠️ IL LAVORO FATTO A METÀ — si riprende da qui (2026-09-06)
+## 3-bis. ✅ IL LAVORO CHE ERA A METÀ — CHIUSO IL 2026-09-06
 
-**Quattro lezioni sono LETTE ma NON CHIUSE: L09, L13, L14, L16.** I rapporti integrali dei tre
-scagnozzi che le hanno lette sono in
-[`RAPPORTI-GREZZI-L09-L13-L14-L16.md`](../studi/aitubepro/A4-metodo-ai-tube/RAPPORTI-GREZZI-L09-L13-L14-L16.md),
-che contiene anche **l'elenco preciso di cosa manca**. Mancano appunti, report, regole.
+**L09, L13, L14, L16 erano lette ma non chiuse. Ora sono chiuse** (CP-20260906-49XK): appunti per
+lezione, [`REPORT-BLOCCO-COPIA-INCOLLA.md`](../studi/aitubepro/A4-metodo-ai-tube/REPORT-BLOCCO-COPIA-INCOLLA.md),
+9 regole a registro tutte applicate, arbitrato `C-006`.
+I rapporti grezzi degli scagnozzi restano come **materiale d'origine** in
+[`RAPPORTI-GREZZI-L09-L13-L14-L16.md`](../studi/aitubepro/A4-metodo-ai-tube/RAPPORTI-GREZZI-L09-L13-L14-L16.md).
 
-Cose importanti già emerse e da lavorare:
-- **I miti del camuffamento passano da 4 a 6**: nuovi la soglia dei «4 secondi» (L14, 20:51) e il
-  «il fair use decade perché la clip non è loro» (L14, 19:50).
-- **Due porte chiuse da scrivere**: L13 insegna un **aggiramento di licenza** (Final Cut «gratis
-  per sempre»); L16 propone di separare voce e base da **brani altrui**.
-- **Due principi veri** (L14): i primi 30 secondi sono leva di **ritenzione**, non solo di CTR; e
-  la CTA di chiusura va curata.
-- **Un dato che smonta L05**: il copia-incolla fatto bene costa **~1 ora a video**, non 5 minuti.
-
-**Due regole di L19 restano da innestare:** `A4-L19-02` in `lessico-pronuncia.md` (la mappa Fliki
-è per-video) e `A4-L19-03` in `fliki-avanzato.md` (la fonte del 10%).
+**Nessun lavoro a metà aperto in questo momento.**
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-**Le 7 lezioni di A4 già trascritte** che restano — si vedono in
+**Le 2 lezioni di A4 già trascritte** che restano — si vedono in
 `runs/corso-aitubepro/<id>/stato.json` al passo `2-trascritto` (`completata` = già chiusa,
 `1-fallito` = da riscaricare col gettone nuovo).
 
 Poi: riscaricare le 4 fallite, e il **gate di categoria a 7 condizioni** (piano §9), che porta con
-sé le due verifiche già assegnate — **la musica** (`A4-L04-04`) e **il tempo per video**
-(`A4-L05-04`) — più le 3 regole di binario B da applicare al motore.
+sé le **tre** verifiche già assegnate — **la musica** (`A4-L04-04`), **il tempo per video**
+(`A4-L05-04`) e il campo **`YouTube channel ID(s)`** su Fliki per `dosementale` e `legamidiamore`
+(`A4-L19-01`) — più le 3 regole di binario B da applicare al motore.
 
 ```bash
 cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"

@@ -1,3 +1,29 @@
+## 🟠 2026-09-06 — Il corso si smentisce da solo: 5 minuti promessi, 1 ora misurata — CP-20260906-49XK
+
+**Codice di ripresa: EMP-V6DE (APERTA).** Chiuse le quattro lezioni lasciate a metà (`A4/L09`,
+`L13`, `L14`, `L16`, 14.499 parole, BRONZO dichiarato): studio a **15/167 (9,0%)**, **A4 al 71,4%
+(15/21)**, registro **47 regole, 44 applicate** (le 3 restanti sono tutte binario B, al gate).
+⭐ **Il trovato che conta:** A4/L05 vende il metodo copia-incolla a **~5 minuti a video**; A4/L14 lo
+esegue davanti alla telecamera e dichiara **~1 ora** [25:23]. **Fattore 12×, stesso corso, nessuna
+delle due lezioni cita l'altra** — secondo caso di autocontraddizione dopo C-005, e ormai è un dato
+sulla fonte: **vetrina e dimostrazione danno numeri diversi, sempre a favore della vetrina**
+(arbitrato `C-006`).
+**I miti del camuffamento passano da 4 a 6** (la soglia «4 secondi», e «il fair use decade perché la
+clip non è loro»: il più contorto dei sei, scambia la difficoltà di prova per una licenza), e
+accanto ai miti ora c'è il **catalogo delle dodici manovre** che quelle frasi giustificano.
+**Due porte chiuse nuove:** l'aggiramento di licenza e la separazione audio di brani altrui.
+**Due buchi NOSTRI, trovati guardando manovre altrui:** `scelta-strumenti.md` non chiedeva **con
+che titolo** usiamo uno strumento (ora è la quinta domanda); `niche-scout.md` misurava i numeri di
+un canale esemplare e **non chiedeva mai su cosa si reggessero** (ora §9: liceità +
+riproducibilità, survivorship bias).
+**Due principi di script che la fabbrica non aveva:** i primi 30 secondi sono **ritenzione** e non
+solo clic (§11, budget ~68 parole, misura = ritenzione ai 30s su YouTube Studio) e **una sola CTA
+di chiusura**, motivata e ruotata (§12). Innestate anche le due regole di L19 rimaste in sospeso.
+**RIPRESA DA:** in A4 restano **2 lezioni già trascritte** e **4 in `1-fallito`** (403, gettone
+scaduto: si riscaricano). Poi il **gate di categoria a 7 condizioni**, con le tre verifiche già
+assegnate — musica, tempo per video, e il campo **`YouTube channel ID(s)`** su Fliki per
+`dosementale` e `legamidiamore`. Dettagli: [CP-20260906-49XK](checkpoints/CP-20260906-49XK.md).
+
 ## 🟠 2026-09-06 — Un campo di Fliki che protegge i canali, mai compilato — CP-20260906-002
 
 **Codice di ripresa: EMP-V6DE (APERTA).** Chiusa `A4/L19` (ORO): studio a **11/167 (6,6%)**, A4 al

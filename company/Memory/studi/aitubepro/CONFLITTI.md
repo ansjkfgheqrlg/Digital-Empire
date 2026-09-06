@@ -204,3 +204,41 @@ quello che L06 teme (il video fresco che vive di iscritti).
 
 Regola che ne nasce: **`A4-L06-01`** (binario A). Aggiorna **C-001**, che resta valido ma
 incompleto da solo.
+
+---
+
+## C-006 · **Il corso contraddice se' stesso** sul tempo che costa il suo metodo
+
+| | |
+|---|---|
+| **Chi** | `A4/L05` (la lezione madre) contro `A4/L14` (25:23) — stessa categoria, stesso metodo |
+| **Aperto** | 2026-09-06 |
+| **Esito** | **ARBITRATO — vince L14, e la differenza non e' una sfumatura: e' 12x** |
+
+**L05 vende il metodo copia-incolla come «un video in ~5 minuti».** E' il numero su cui si decide
+se adottarlo: e' la promessa che regge l'intera categoria.
+
+**L14 mostra lo stesso metodo dal vivo, per 50 minuti, e dichiara il costo reale** [25:23]:
+**5-10 minuti per il primo minuto di video**, e **circa un'ora per il video intero** — precisando
+che e' il tempo *dopo* aver fatto pratica, quindi il migliore possibile, non il primo tentativo.
+
+**Nessuna delle due lezioni dichiara il contrasto.** Chi segue il corso in ordine riceve prima la
+promessa e poi la smentita, a nove lezioni di distanza, senza che nessuno le metta accanto.
+
+**Arbitrato: vince L14, per una ragione di metodo prima che di merito.** Il costo di un metodo si
+prende dalla lezione che lo **esegue davanti alla telecamera**, non da quella che lo **annuncia**.
+L05 e' la lezione di vendita del metodo: il suo numero non e' misurato, e' promesso. L14 e' la
+dimostrazione: il suo numero e' quello che ha impiegato chi lo stava facendo.
+
+**Cosa cambia per noi.** Nulla sulla decisione — la porta era gia' chiusa per ragioni di diritto
+(`C-004`, `monetizzazione-compliance.md` §4) e quelle ragioni non dipendono dal tempo. Cambia
+l'**argomento numero 3** di quella porta chiusa, che diceva «e' lavoro manuale» senza un numero:
+adesso ha **la cifra della scuola che lo insegna**. Un'ora a video, moltiplicata per una
+programmazione di 3 video a settimana, e' **una giornata piena di lavoro manuale a settimana**
+per fare cio' che la nostra catena fa senza aprire un browser.
+
+**Il principio generale che ne resta**, e vale oltre questo corso: *quando una fonte da' due
+numeri sullo stesso costo, si prende quello della lezione che mostra, non di quella che promette
+— e si registra la contraddizione, perche' e' un dato sulla fonte.*
+
+Regola che ne nasce: **`A4-L14-05`** (binario A).

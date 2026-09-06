@@ -1,0 +1,165 @@
+0:00 | Hei, benvenuto in quello che è il corso
+0:02 | più completo sugli agenti AI attualmente
+0:04 | disponibile su YouTube. Io ho una
+0:06 | community dove insegno agli imprenditori
+0:07 | e freelancer come implementare agenti AI
+0:10 | sia sul proprio business sia per
+0:12 | venderli agli altri. Ed attualmente ho
+0:14 | anche una mia agenzia AI che lavora con
+0:16 | aziende da €10.000 al mese fino a 50
+0:18 | milioni l'anno utilizzando proprio gli
+0:20 | agenti AI. Non ci sarà bisogno di nessun
+0:23 | background tecnico o conoscenza
+0:25 | pregressa di piattaforme per seguire
+0:26 | questo video, dato che sarà un corso
+0:28 | generale in modo tale da assicurarsi che
+0:31 | tutti partiremo dalla stessa conoscenza
+0:33 | ed arriveremo allo stesso punto. Vi
+0:34 | faccio ora un overview veloce di quello
+0:36 | che andremo a coprire, così saprete cosa
+0:38 | aspettarvi. La prima cosa che faremo
+0:40 | sarà andare a capire che cos'è un agente
+0:42 | AI, quindi ci soffermeremo su i pezzi
+0:45 | che lo costituiscono e andremo a vedere
+0:47 | poi l'architettura. La seconda cosa che
+0:49 | faremo sarà andare a costruire un
+0:52 | semplicissimo agente su N10 per capire
+0:55 | come i pezzi interagiscono tra di loro e
+0:57 | vederlo anche a livello pratico. La
+1:00 | terza sarà capire come questi agenti
+1:02 | svolgono le tasks. Penso che molti di
+1:05 | noi abbiano unintuizione su quello che
+1:07 | succede, ma eh capire che cosa succede
+1:10 | nel dettaglio è un po' più complicato.
+1:12 | Poi andremo a vedere i come queste tasks
+1:15 | avvengono nel dettaglio e utilizzeremo
+1:17 | antigravity o cloud code, qualsiasi ID
+1:19 | per farlo. [sbuffare] Andremo poi a
+1:21 | vedere qual è il loop di ragionamento
+1:23 | agentico, quello che viene chiamato OTD
+1:27 | e poi andremo ad analizzarlo in Cloud
+1:29 | Code per vedere step by step che cosa
+1:31 | Cloud Code fa nel momento in cui gli
+1:32 | chiediamo di eseguire una task. Andremo
+1:35 | poi ad analizzare qual è l'importanza
+1:37 | dei prompt negli agenti AI e quindi
+1:39 | questo vuol dire quando utilizzare il
+1:41 | nostro gemini. Cloud.md o agents.md a
+1:45 | seconda poi della piattaforma che
+1:46 | andiamo ad utilizzare.
+1:48 | Parleremo poi di back prompt
+1:51 | engineering, quindi in questo caso
+1:53 | capiremo come riuscire a fare back
+1:56 | engineering dei nostri prompt
+1:57 | analizzando due skill. La prima sarà lo
+2:00 | step back prompting e la seconda skill
+2:03 | che utilizzeremo sarà il reverse
+2:04 | prompting. E queste due le utilizzeremo
+2:07 | sostanzialmente per fare zoom out e
+2:09 | capire bene o forzare la gente a capire
+2:11 | qual è la task che vogliamo fare prima
+2:13 | ancora di andare ad eseguirla. Parleremo
+2:15 | poi di che cosa sono i prompt contracts,
+2:17 | che sono una metodologia per assicurarsi
+2:20 | che i nostri prompt siano sempre molto
+2:21 | accurati. E alla fine parleremo poi di
+2:24 | premortem proming, che significa
+2:27 | assicurarsi di mettere all'inizio del
+2:29 | progetto tutte le ragioni per cui questo
+2:31 | progetto potrebbe andare storto, di modo
+2:33 | tale che l'AI abbia un piano complessivo
+2:35 | migliore per capire che cosa succede.
+2:38 | Parleremo poi di self improving prompts,
+2:40 | in particolare parleremo di quelli che
+2:42 | vengono definiti adaptive guard rails,
+2:44 | quindi delle guide che servono ai nostri
+2:47 | prompt andare nella direzione corretta e
+2:49 | quindi essere più efficaci e poi ne
+2:51 | capiremo anche il ciclo iterativo.
+2:54 | Andremo poi ad analizzare quali sono i
+2:56 | quattro livelli di specificità del
+2:58 | prompt e l'influenza che hanno quando
+3:00 | andate a costruire su piattaforme come
+3:02 | Codex, Antigravity, Cloud e come si
+3:05 | comportano. Vedremo poi la definizione
+3:07 | di agent polling e una skill per farlo.
+3:10 | Allo stesso modo vedremo quelli che in
+3:11 | gergo tecnico vengono chiamati agents
+3:13 | debates, quindi avere più di un agente
+3:15 | che eh aiuta a rifinire un'idea e quindi
+3:19 | avremo questi agenti che collaboreranno
+3:21 | affinché potremo poi avere l'idea
+3:23 | raffinata alla fine. Parleremo poi di
+3:25 | che cosa sono i browser SWM, quindi come
+3:27 | utilizzare più agenti per andare a fare
+3:29 | diverse sessioni all'interno di
+3:31 | qualsiasi browser e poi vedremo come si
+3:34 | fa un full workflow audit e utilizzeremo
+3:37 | poi una skill per farlo. Detto questo,
+3:39 | spero siate eccitati tanto quanto me di
+3:41 | fare questo corso. Cominciamo.
+3:42 | Cominciamo quindi dalle cose un po' più
+3:45 | semplici, quindi riprendiamo la canonica
+3:47 | definizione di che cos'è un agente AI
+3:50 | prima di andarlo poi a costruire. Nel
+3:51 | pratico, tutto parte dalla richiesta di
+3:55 | un utente, quindi l'utente utilizzerà
+3:57 | una qualche interfaccia di interazione
+4:00 | con il nostro agente AI. Allora, qui
+4:02 | abbiamo varie possibilità, no? Abbiamo
+4:04 | interfacce di tipo chat, quindi
+4:06 | interfacce di testo, abbiamo interfacce
+4:10 | eh di tipo vocale, quindi nel momento in
+4:13 | cui utilizziamo ehm agenti vocali,
+4:15 | abbiamo un'interfaccia come il microfono
+4:17 | del telefono o qualsiasi cosa vogliamo
+4:20 | avere, abbiamo anche possibilità di
+4:23 | attivare questi ehm agenti AI con
+4:27 | l'utilizzo di form. Quindi, nel caso in
+4:29 | cui un ehm cliente compili un form,
+4:33 | allora attiva l'agente AI e fai queste
+4:35 | determinate cose. Una volta che questa
+4:38 | richiesta viene fatta dall'utente, entra
+4:41 | in quello che noi chiamiamo agente AI. E
+4:44 | qui allora sappiamo che dentro l'agente
+4:48 | AI per processare questa richiesta viene
+4:52 | richiesto in linea generale il fatto che
+4:55 | ci sia un prompt. Questo è in linea
+4:58 | generale perché negli agenti più
+4:59 | semplici, come magari ne vedremo uno
+5:02 | dopo, eh, o per le cosiddette demo, non
+5:05 | c'è necessità di avere questo prompt. il
+5:07 | prompt diventa necessario se e solo se
+5:10 | cominciamo a avere un un progetto
+5:14 | abbastanza complesso e lì diventerà la
+5:17 | cosa invece più importante perché questo
+5:20 | sarà a livello effettivo l'unica vostra
+5:23 | proprietà intellettuale mano che il
+5:26 | mercato delle automazioni e dell'AI
+5:29 | andrà avanti. Questo perché? perché
+5:32 | l'automazione di per sé stessa e quindi
+5:34 | per esempio il template 101 o cose di
+5:37 | questo tipo non sono cose che hanno
+5:39 | particolare valore. Quello che avrà
+5:41 | valore sarà quello che andrete a dare
+5:43 | voi come istruzione all'agente AI. Ed è
+5:46 | anche il motivo di questo corso perché
+5:48 | sarà l'unica skill che non cambierà nel
+5:51 | momento in cui gli agenti ehm si
+5:53 | evolveranno, ma rimarrà eh la skill
+5:55 | necessaria e soprattutto perché, e
+5:58 | questo ci tengo a stressarlo, il
+6:00 | l'agente AI viene direzionato dal vostro
+6:03 | prompt. Che cosa vuol dire? Vuol dire
+6:05 | che se io sono l'utente e ho come
+6:09 | obiettivo il fatto di arrivare qui, eh
+6:13 | se il mio prompt è direzionato nel modo
+6:17 | corretto, ok? avrò una possibile
+6:21 | traiettoria di questo tipo, nella quale
+6:23 | il mio prompt dirà lei hei, vai in
+6:26 | questa direzione fino a che poi non
+6:28 | colpisci l'obiettivo. Se invece il mio
+6:31 | agente è direzionato male, questo
+6:33 | significa che magari il prompto.
+6:36 | Abbiamo la possibilità che il prompt
+6:38 | manchi il nostro obiettivo e poi
