@@ -134,3 +134,72 @@ Il quadro reale, quindi, non e' "la fabbrica e' orfana": la fabbrica **e'** cens
 `seo_score.py`, `thumbnail_analyzer.py`) — **gli stessi identici mestieri, due volte**, e nessuno dei due lato
 cita l'altro. Chi legge l'ecosistema 05 crede di dover ancora costruire cio' che in 02-AUTOMAZIONI-E-SCRIPTS
 gira gia'.
+
+---
+
+## 3. FAMIGLIA `SKILL & Agenti/` — la piu' popolosa e la piu' disordinata
+
+Conteggio per sottocartella (file `.py` | file totali), esclusi `node_modules/`, `__pycache__/`, `venv/`:
+
+| .py | file tot | sottocartella |
+|---:|---:|---|
+| 271 | 38.793 | `Empire Studio Suite/` |
+| 64 | 6.004 | `Workflow agency creative/` |
+| 40 | 2.921 | `Workflow pubblicazione automatica/` |
+| 22 | 145 | `caveman-extracted/` |
+| 20 | 2.091 | `Orchestracion Layer - Problem solving/` |
+| 17 | 298 | `apex7/` |
+| 16 | 554 | `SKILL/` |
+| 0 | 4.514 | `ruflo-main-extracted/` |
+| 0 | 189 | `Copy-Workflow-manuale/` |
+| 0 | 157 | `github-repos/` |
+| 0 | 34 | `Skill Master Architecture/` |
+
+Piu' **20 archivi `.zip`/`.tar.gz` sciolti nella cartella** (`Context-Engineering-main.zip`,
+`Forge-caroselli-empire.zip`, `caroselli-forge.zip`, `ruflo-main.zip`, `sparc-main.zip`,
+`impeccable-main.zip`, `nova-main.zip`, `vibing-main.zip`, `playwright-main.zip`,
+`marketingskills-main.zip`, `stop-slop-main.zip`, `infinity-ui-main.zip`, `ai-video-main.zip`,
+`cli-printing-press-main.zip`, `book-to-skill-master.zip`, `caveman-opencode-plugin.zip`,
+`REPORT SITE - WORKFLOW.zip`, `apex7-ultra-grain-playwright-bridge*.tar.gz` x2,
+`Copy-Workflow-manuale.zip`, `Orchestracion Layer - Problem solving.zip`) — aperti piu' avanti al §3.9.
+
+### 3.1 Empire Studio — il motore che gira ADESSO
+- **Percorso:** `SKILL & Agenti/Empire Studio Suite/empire-studio/`
+- **Nome vero:** *Empire Studio* (v2.0), dichiarato nel `README.md`.
+- **A cosa serve:** dal `README.md` — *"Workflow gerarchico per trasformare link grezzi (YouTube, TikTok, siti web, progetti/repo) in conoscenza operativa dentro la wiki di Digital Empire — con visione reale dei video, organizzazione a reparti, memory-first, CLI-only."* Il README dichiara anche di cosa e' la riparazione: *"la ricostruzione pulita (v2.0), nata dall'audit del primo tentativo che era in gran parte impalcatura: stub spacciati per 'fatti', video-watcher finto, pipeline senza codice, due copie divergenti."*
+- **Dimensione:** 271 file `.py` nell'intera Suite, **6.433 righe di Python** nel solo `empire-studio/`; 38.793 file totali (gonfiati da 35 cartelle `runs/` con video e frame).
+- **PUNTO D'INGRESSO:** **non c'e' un comando unico, ed e' voluto.** Il README: *"ATTIVAZIONE NATURALE — nessun comando. Non si digita niente di tecnico. Basta passare un link o chiedere a parole."* Il motore reale sta in 19 script di `scripts/`: `yt_ingest.py`, `frame_extractor.py`, `scene_detector.py`, `wiki_writer.py`, `validator.py`, `memory_manager.py`, `skill_factory.py`, `agent_factory.py`, `package.py`, `corso_ingest.py` / `corso_prepara.py` / `corso_trascrivi.py`, `save_to_memory_empire.py`, `ruflo_bridge.py`, `catalog_status.py`, `setup_check.py`, `generate_strategy_manifest.py`. Prerequisiti: `python scripts/setup_check.py`. Gate di chiusura: *"'fatto' finche' `python scripts/validator.py` non da' 0 violazioni."*
+- **GIRA ANCORA? VIVO — e' il motore piu' caldo del repository.** Prova: la cartella `runs/` contiene **35 run**, e le ultime scrivono **oggi, 2026-09-06**: `runs/max18-v07-O2IDhISyy8Y/_parte-022-042.md`, `_transcript_full_0_330.txt`, `_scene_index.json` tutti datati 2026-09-06; `runs/max18-v09-NmoOZVTrTXA/_scene_index.json` 2026-09-06; `runs/max18-v01-second-brain-obsidian/_ancoraggi.txt`, `_componenti.txt`, `_grafo_analisi.py` 2026-09-06. Nove run `max18-*` aperte tra il 4 e il 6 settembre.
+- **ANOMALIA DA DICHIARARE:** in `runs/max18-v09-NmoOZVTrTXA/` il video e' **`video.mp4.part` (94 MB)** — un download `yt-dlp` **interrotto a meta'**, mai completato, con le scene gia' estratte attorno. Una run appesa.
+- **DIPENDENZE ESTERNE:** `yt-dlp` e `ffmpeg` obbligatori, `playwright` opzionale per il web (dichiarati nel README). Nessuna chiave API: e' l'unico motore grosso dell'Impero che **non spende** per girare.
+- **CHI LO POSSIEDE:** censito **due volte**. `company/REGISTRO-IMPRESA.md` riga 44: *Empire Studio (ingestione video → knowledge) | 10-MEMORY (knowledge) + Reparto Competitor Research | WATCH-001 match check | ADR-002 (integrale, mai riassunti)*. E `company/skills-map.yaml` lo registra **in due voci distinte e sovrapposte**: `id: empire-studio` (riga 423) e `id: empire-studio-suite` (riga 544), entrambe con lo stesso percorso `SKILL & Agenti/Empire Studio Suite/`. NON orfano, ma **doppio in mappa**.
+- **RUMORE NEL REGISTRO:** `REGISTRO-IMPRESA.md` righe 551-559 censiscono come skill attive nove file che stanno dentro `_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/` — cioe' **il registro elenca come patrimonio proprio la versione che il README dichiara rotta e sostituita**.
+- **COME SI AVVOLGE:** e' il caso piu' difficile del repository. Non ha un punto d'ingresso perche' l'ingresso e' Claude stesso. Perche' un comando dell'Impero lo lanci servirebbe un `run_studio.py <url>` che incateni ingest → frame → scene → forge → wiki e stampi una riga d'esito (`run_id`, `wiki_pages`, `violazioni_validator`); oggi l'esito si legge solo aprendo la cartella `runs/`.
+
+### 3.2 Carousel Factory — `caroselli.py`
+- **Percorso:** `SKILL & Agenti/Workflow agency creative/caroselli.py` (21.052 byte, **2026-08-31**)
+- **Nome vero:** *Carousel Factory*, dal docstring.
+- **A cosa serve:** dal docstring — *"UN comando, un argomento, un carosello nell'Arsenale."* Catena: `argomento -> copy (modello via API) -> piano slide -> render locale -> Arsenale Caroselli/<Prodotto>/<data>_<slug>/ -> GATE`. Il docstring dichiara anche cosa ha sostituito: *"Prima di questo file il flusso esisteva ma era in pezzi... Cinque passaggi manuali per un carosello, piu' un login interattivo e un captcha."*
+- **Dimensione:** 64 file `.py` nella famiglia, **731 righe di Python** (il grosso dei 6.004 file totali sono gli ZIP e i PNG dell'Arsenale). Un test: `tests/test_caroselli.py`.
+- **PUNTO D'INGRESSO:** chiarissimo, ed e' l'unico motore del repository che dichiara i propri codici d'uscita nel docstring: `python caroselli.py "<argomento>" [--prodotto Preventa] [--slide 6]` — *"Exit code: 0 ok | 1 gate fallito (carosello non valido) | 2 parametri/config errati | 3 errore di sistema."*
+- **GIRA ANCORA? VIVO.** Prova: `Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo/` e `.../2026-08-27_tradurre-a-mano-un-annuncio-tedesco-e-ri/` contengono `slide-01.html`, `copy.json`, `caption.txt` scritti il **2026-08-31**. Prima di quelli, un carosello completo 8 slide PNG 4K del 2026-08-06.
+- **RAMO ROTTO DICHIARATO DAL CODICE STESSO:** il ramo Arena (browser) e' fermo, e il docstring elenca **tre guasti verificati, non ipotizzati**: *"`playwright_stealth` non e' installato (ogni script muore all'import), `ArenaAI/session_data/` non esiste (serve un login Google interattivo, ed e' gitignorato quindi non arriva col repo), e anche funzionando richiede attesa e sorveglianza umana per ogni run."* Il ramo locale e' stato scritto proprio per aggirarli, e `--engine arena` e' gia' predisposto per quando la sessione tornera'.
+- **DIPENDENZE ESTERNE:** una API di modello per il copy (via `Agents/ai_client.py`, importato — ADR-003 wrap); `carousel-factory` (Puppeteer + template HTML) invocato come **processo esterno**. Per il ramo morto: `playwright_stealth` (mancante) e sessione Google in `ArenaAI/session_data/` (mancante).
+- **CHI LO POSSIEDE:** **semi-orfano.** `company/REGISTRO-IMPRESA.md` conosce il reparto `03-CONTENT-FACTORY/Reparti/CF-R5-Visual-Design-Caroselli` (riga 120) e censisce un `tsconfig.json` della dashboard caroselli (riga 168), **ma non censisce mai `caroselli.py`**. `company/skills-map.yaml` registra due voci caroselli (righe 170 e 179) che puntano a **`caroselli/` e `Workfolw crea caroselli a/`, cioe' altre due cartelle**, non a questa. Il motore che produce davvero non e' in nessun registro col suo percorso.
+- **COME SI AVVOLGE:** **e' gia' avvolto meglio di chiunque altro** — un argomento in ingresso, quattro codici d'uscita distinti, cartella di consegna deterministica. E' il modello da copiare sugli altri motori. Manca solo che il registro sappia che esiste.
+
+### 3.3 `caroselli - agency/` — il cantiere di debug sotto la Carousel Factory
+- **Percorso:** `SKILL & Agenti/Workflow agency creative/caroselli - agency/` (2026-08-06)
+- **A cosa serve:** e' il progetto da cui `caroselli.py` importa `Agents/ai_client.py`. Contiene `Agents/` (copywriter, orchestrator, ai_client), `ArenaAI/` (arena_generator, read_arena_chat, setup_arena_session), `Core/browser_manager.py`, `GoogleDrive/drive_uploader.py` + `setup_drive_session.py`, e una `dashboard. Produzione caroselli Agency/` in TypeScript.
+- **GIRA ANCORA? ROTTO nella meta' browser, VIVO come libreria.** Nove dei suoi file sono `debug_*.py` / `inspect_*.py` / `find_send_button.py`: sono i **ferri lasciati sul banco** dal tentativo di pilotare arena.ai, lo stesso muro contro cui ha sbattuto `arena_thumbnail.py` della fabbrica YouTube (§2.4). La parte che sopravvive e' `ai_client.py`, che gira ogni volta che gira `caroselli.py`.
+- **DIPENDENZE ESTERNE:** `playwright_stealth` (mancante), sessione Google Drive in `GoogleDrive/`, sessione Arena.
+- **CHI LO POSSIEDE:** `03-CONTENT-FACTORY / CF-R5`. Censito solo per un `tsconfig.json`.
+
+### 3.4 `andrei-pascu-system/` — non e' un motore
+- **Percorso:** `SKILL & Agenti/Empire Studio Suite/andrei-pascu-system/`
+- **Contenuto reale, aperto:** **3 soli file, zero Python** — `LEGGIMI.md`, `playbook.md` (12 KB), `checklist_APSOC.md`, tutti fermi al **2026-07-25**. E' materiale di studio del competitor Andrei Pascu, non codice.
+- **CHI LO POSSIEDE:** `company/skills-map.yaml` riga 434 lo registra come skill con percorso proprio. **Il registro lo chiama motore, ma non lo e'.**
+
+### 3.5 `memory-empire/` dentro la Suite — due cartelle vuote di codice
+- **Percorso:** `SKILL & Agenti/Empire Studio Suite/empire-studio/memory-empire/`
+- **Contenuto reale:** due sole sottocartelle, `memory/` e `knowledge/`, **zero file `.py`**, ferme al **2026-07-19**. E' il deposito su cui scrive `scripts/save_to_memory_empire.py`, non un motore a se'.

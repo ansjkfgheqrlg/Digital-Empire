@@ -54,3 +54,10 @@ Le voci sintetiche sbagliano spesso i termini inglesi inseriti in un contesto it
 - [ ] Sono state inserite pause di almeno 0.5 secondi dopo ogni punto fermo o cambio di scena?
 - [ ] Le parole straniere o tecniche sono state verificate nell'anteprima audio e corrette nel dizionario pronunce se storpiate?
 - [ ] Il volume della traccia musicale è impostato al 10% - 15% rispetto alla voce (100%) per non sovrastare il parlato?
+
+> **Da dove viene il 10% (A4-L19-03 · 2026-09-06).** Fino a oggi quel numero era una
+> prescrizione senza fonte. Ora ha una prova: nel pannello `More → Background music` di Fliki
+> lo slider del volume è una **percentuale**, e il valore mostrato a schermo nella lezione
+> A4/L19 è **10%** (`frame-088.png @ 05:52`). La nostra prescrizione era già giusta: adesso si
+> sa perché. **Resta non eseguibile via API** (vedi la tabella in testa): è conoscenza dello
+> strumento, non un ordine alla catena.

@@ -206,3 +206,68 @@ Le righe che ripetono il v1 non sono ri-numerate: qui solo cio' che il v1 non di
 | 121 | CF-D-BUDGET | CF-D-LEAD → Board (hive-mind) | alert se un ordine sfora la soglia globale; escalation al Board se due committenti hanno stessa priorita' e il budget non copre entrambi | precedenza `deadline → revenue impact (Agency/Lanci) → interno` | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:183`, `:124-126` | NO | INTRA → INTER · MAI |
 | 122 | CF-R8 | Board / ADR | propone ADR su pattern strutturali dalla libreria hook/formule | non dichiarato | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:556` | NO | INTER · **VAGO** · MAI |
 
+
+### FONTE 4a — `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md`
+
+MARKETING e' l'ecosistema piu' **richiesto** dell'Impero: *"Il suo prodotto e' il copy degli altri 8
+ecosistemi"* (`:20`) e *"nessun ecosistema scrive copy di conversione in autonomia"* (`:68-70`) —
+cioe' ogni riga di copy che porta a un incasso dovrebbe attraversare questo collo di bottiglia.
+Il contratto d'ingresso e' un JSON `{committente, formato, awareness_level, icp, obiettivo, deadline}`
+(`:76-84`) — **settimo schema** diverso dai sei gia' censiti — ed e' l'unico dell'Impero che dichiara
+anche il **contratto di risposta**: `{copy_finale, score_A8, qa_report, brand_gate, pattern_usati}`
+(`:95`). Verifica su disco: `ls company/04-marketing` → **directory inesistente** (esiste solo
+`company/Ecosistemi/04-MARKETING/`); `find company -type d -name handoffs` → solo `01-agency/A1..A4`
+e `Backbone/Bus`. **Nessun handoff di MARKETING esiste su disco: ne' in entrata ne' in uscita.**
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 123 | 01-AGENCY | 04-MARKETING | copy preventivi/proposte commerciali; copy outreach (email/DM/LinkedIn); copy landing offerte (Outreach Factory, Content Factory, Second Brain, Engine Room) | WF-COPY-REVIEW su output `beast-preventivi`; standard APSOC+V per outreach | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:63` | NO (`company/04-marketing/` non esiste) | INTER · MAI |
+| 124 | 02-INFO-BUSINESS | 04-MARKETING | copy lancio completo: sales page, sequenza email lancio, VSL, ads di lancio | WF-COPY-SALES-PAGE gate ≥85 + WF-EMAIL-LAUNCH + WF-ADS-CAMPAIGN | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:64` | NO | INTER · MAI |
+| 125 | 03-CONTENT-FACTORY | 04-MARKETING | copy per asset: hook, caption, titoli, script intro, CTA nei contenuti | WF-COPY-SOCIAL + T-HEADLINE | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:65` | NO | INTER · MAI (specchio di #96 e #111) |
+| 126 | 05-MULTI-BUSINESS | 04-MARKETING | titoli/descrizioni YouTube; copy listing KDP/e-commerce; description app | T-HEADLINE + WF-COPY-QUICK con pattern industry-specific | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:66` | NO | INTER · MAI |
+| 127 | 04-MARKETING (se' stessa) | 04-MARKETING | campagne ads DE, email list DE, ottimizzazione funnel DE | tutti i gate | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:67` | NO | INTRA · MAI |
+| 128 | 08-INTELLIGENCE | 04-MARKETING | ricerca ICP, trend — "richiede a" | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:53` | NO | INTER · **VAGO** · MAI |
+| 129 | 03-CONTENT-FACTORY | 04-MARKETING | asset visivi per ads — "richiede a" | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:53-54` | NO | INTER · **VAGO** · MAI |
+| 130 | 06-PLATFORM | 04-MARKETING | landing / tracking | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:54` | NO | INTER · **VAGO** · MAI |
+| 131 | 09-OPERATIONS | 04-MARKETING | runtime swarm, cost guard | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:54` | NO | INTER · **VAGO** · MAI |
+| 132 | committente (01/02/03/05) | MKT-Conductor | richiesta copy come messaggio strutturato sul BUS `{committente, formato, awareness_level, icp, obiettivo, deadline}` + opzionali `brand_kit`/`materiali`/`vincoli`/`acceptance_criteria` | **senza `icp` il router spawna A2/T-AVATAR: "non si scrive copy senza avatar"**; senza `awareness_level` lo deduce e lo dichiara (mai implicito) | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:26-27`, `:74-94`, `:228-233` | NO | INTER · MAI |
+| 133 | 04-MARKETING | committente (qualsiasi) | **contratto di risposta**: `{copy_finale, score_A8, qa_report, brand_gate: pass/fail, pattern_usati}` | **G4 Contract check** (MKT-Conductor): la risposta soddisfa gli `acceptance_criteria` del committente, altrimenti rework o rinegoziazione | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:95`, `:251`, `:414` | NO | INTER · MAI (**unico handoff dell'Impero con contratto di ritorno formalizzato**) |
+| 134 | 04-MARKETING (WF-ADS-CAMPAIGN) | 03-CONTENT-FACTORY | richiesta visual/creative dentro la campagna ads, in parallelo swarm con WF-COPY-AD | AD4 Compliance policy check prima del setup; **spesa reale vietata senza ok esplicito dell'utente** | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:258`, `:266`, `:270` | NO | INTER · MAI |
+| 135 | 04-MARKETING (WF-EMAIL-LAUNCH) | 02-INFO-BUSINESS (committente) | sequenza lancio completa (pre-lancio → apertura → proof → obiezioni → scarcity → chiusura) consegnata per l'invio | gate A8 (≥80) + brand gate; **review umana nelle prime fasi** | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:279-283` | NO | INTER · MAI |
+| 136 | 02-INFO-BUSINESS + 05-MB/SaaS (trigger churn) | 04-MARKETING (E1 win-back) | segnale di churn → sequenza win-back + exit survey | *"il churn E' un'obiezione non gestita"* (A6 Objections Handler) | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:289-292` | NO | INTER · MAI |
+| 137 | AN4 Insight Distiller | ReasoningBank + `marketing/copy/patterns/{icp}` + `marketing/handoffs/log` + wiki | performance per `copy_id` → anti-pattern / pattern vincente per ICP, poi revisione mirata e A/B test | verdetto "inconclusivo" se sotto soglia volumi (mai forzato); pattern consolidati solo con evidenza ripetuta | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:301-307`, `:391-397`, `:454` | NO | INTRA → INTER (10-MEMORY) · MAI |
+| 138 | 04-MARKETING | 07-FORGE | richiesta agenti nuovi (MKT-0, AN4, AD1-AD4, E1-E3) con schema team canonico | `skill-contradiction-analyzer` prima di ogni skill nuova | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:218`, `:366` | NO | INTER · MAI |
+| 139 | MKT-Conductor | C-Suite hive-mind (raft) | escalation quando due committenti confliggono sulla stessa deadline / conflitti di priorita' | arbitrato via `deadline` nel contratto; non risolti localmente | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:374-376`, `:456` | NO | INTER · MAI |
+| 140 | 04-MARKETING (M2) | 01-AGENCY | **primo handoff reale previsto**: copy reale per outreach/preventivo + baseline KPI | *"il committente accetta la consegna (G4 verde) senza intervento manuale nel routing"* | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:436` | NO | INTER · MAI (**il collegamento che il dossier stesso mette per primo**) |
+| 141 | 02-INFO-BUSINESS (M3) | 04-MARKETING | primo handoff da INFO-BUSINESS: sequenza di lancio | una sequenza completa gated e consegnata | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:437` | NO | INTER · MAI |
+| 142 | 03-CONTENT-FACTORY | 04-MARKETING (gate CTA) | *"quando un contenuto ha CTA di conversione, la CTA passa dal gate Marketing"* — confine di competenza | gate A8 + brand gate vivono in MARKETING, non in CF | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md:68-70` | NO | INTER · MAI (regola di confine, gemella di #111) |
+
+### FONTE 4b — `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md`
+
+La V2 non tocca la tabella dei committenti (`:82-88`, identica al v1) e dichiara il contratto
+*"identico al v1, e' gia' solido"* (`:94`). Aggiunge pero' **due reparti nuovi** — L2.5 Brand &
+Creative Strategy e L2.6 Conversion Architecture — che generano passaggi che il v1 non aveva, e
+sposta il verbo: dove il v1 diceva "richiede a", la V2 scrive **"DIPENDE DA"** (`:68-71`). Aggiunge
+al contratto di risposta il campo `workflow_eseguito` (`:449`) e un gate nuovo, **G5 Brand
+consistency**, che e' l'unico gate dell'Impero che **rimanda indietro il brief al committente**
+(`:592`). Righe qui sotto: solo cio' che il v1 non diceva.
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 143 | 04-MARKETING (BR3 Creative Director) | 03-CONTENT-FACTORY | brief visivo/creativo + direction per creative ads, dentro la campagna paid | AD4 Compliance G3 policy check a valle; visual in parallelo swarm con le varianti copy | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:303`, `:484`, `:664` | NO | INTER · MAI (specchio di #95/#111: **entrambe le parti lo dichiarano, nessuna lo costruisce**) |
+| 144 | 08-INTELLIGENCE | 04-MARKETING (AD1 Audience Analyst) | ricerca audience, segmenti, lookalike per piattaforma — "input da 08-INTELLIGENCE" | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:212` | NO | INTER · **VAGO** · MAI |
+| 145 | 08-INTELLIGENCE | 04-MARKETING (BR4 Brand Analyst, A2, S2) | competitor data, ICP data, trend, awareness di mercato — "in coordinamento con 08-INTELLIGENCE" | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:304`, `:703` | NO | INTER · **VAGO** · MAI |
+| 146 | 04-MARKETING (WF-BRAND-KIT-BUILD, L2.5) | qualsiasi committente multi-tenant | `brand_kit` costruito (voice guide + visual brief + ICP + tone chart) **da usare nel contratto handoff** di tutti gli altri | BRAND-LEAD approva; kit depositato in `marketing/brand/kits/{brand_kit_id}` | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:323` | NO | INTER · MAI (**e' il pezzo che manca a CF: `brand-kit.json` non esiste su disco, cfr. #93**) |
+| 147 | 04-MARKETING (L2.6 WF-FUNNEL-DESIGN) | L2.1 Copywriting | copy per stage del funnel (ToFu → MoFu → BoFu con mapping APSOC) | CA-QA verifica coerenza APSOC end-to-end; ogni stage ha copy gated | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:351` | NO | INTRA · MAI |
+| 148 | 04-MARKETING (L2.6 CA2 / WF-FUNNEL-DESIGN) | 06-PLATFORM | **landing brief tecnico** — *"Marketing possiede la STRATEGIA di conversione; Platform possiede l'implementazione"* | brief tecnico approvato da 06-PLATFORM (gate d'uscita M5) | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:336-337`, `:344`, `:351`, `:665` | NO | INTER · MAI |
+| 149 | 04-MARKETING (L2.6 WF-FUNNEL-DESIGN) | L2.3 Email | sequenza email dello stage del funnel | copy gated per stage | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:351` | NO | INTRA · MAI |
+| 150 | 04-MARKETING (AN1 Tracking Engineer) | 06-PLATFORM | tracking plan, UTM, eventi, conversion API — "in coordinamento con 06-PLATFORM" | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:277` | NO | INTER · **VAGO** · MAI |
+| 151 | AN5 Funnel Analyst | L2.6 + A8 (diagnosi) + CA3 | drop rate per sezione APSOC, bounce, micro-conversion → innesco WF-CRO-SPRINT | verdetto A/B statisticamente valido; implementazione solo dopo gate AN3 | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:280`, `:345`, `:352` | NO | INTRA · MAI |
+| 152 | AN3 Experiment Designer | E3 Segmentation Analyst | segmenti per ICP × awareness × comportamento — "input da AN3" | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:247` | NO | INTRA · **VAGO** · MAI |
+| 153 | 05-MULTI-BUSINESS / 02-INFO-BUSINESS | 04-MARKETING (E4 Onboarding Specialist) | richiesta sequenze onboarding welcome + attivazione per SaaS/Info | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:248` | NO | INTER · MAI |
+| 154 | AN-OBSERVER | MKT-Conductor + report CMO (C-Suite) | anomalie sui KPI dell'intero ecosistema — "alimenta il report CMO" | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:282` | NO | INTRA → INTER (L0) · **VAGO** · MAI |
+| 155 | AD6 Creative Analyst | ReasoningBank (10-MEMORY) | pattern di formato/performance dal loop creativo ads | non dichiarato | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:491` | NO | INTER · MAI |
+| 156 | BR-QA (**G5 Brand consistency**) | committente | output incoerente col `brand_kit` del cliente → **block + richiesta di brief corretto al committente** | coerenza col brand_kit dichiarato, non solo col Mandato DE | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:592` | NO | INTER · MAI (**terzo canale di ritorno scritto dell'Impero**, dopo CF-R6-REWORK #117 e CF `on_reject` #104) |
+| 157 | MKT-Conductor | `marketing/handoffs/log` | ogni richiesta/risposta cross-ecosistema registrata; G4 fallito → rework specifico o rinegoziazione loggata | "Handoff acceptance rate": % consegne accettate senza rework | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:591`, `:600`, `:646` | NO (namespace mai creato) | INTER · MAI (**e' il registro dei passaggi, e non contiene niente**) |
+| 158 | BR2 Brand Voice Architect (WF-BRAND-EVOLUTION) | Max (via ADR) | proposta evolutiva del brand DE | *"solo Max modifica Art.2"*; proposta come ADR-bozza, non si attua senza approvazione (Art.5.3 Mandato) | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:324` | NO | INTRA → LX · MAI |
+| 159 | tutti i reparti L2 di 04-MKT | committenti esterni | *"ogni reparto ha almeno un handoff reale entro M5"* | nessuno oltre la scadenza M5 | `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md:676` | NO | INTER · **VAGO** (promessa di data, non passaggio) · MAI |

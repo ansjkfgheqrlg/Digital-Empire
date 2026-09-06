@@ -41,6 +41,30 @@ rapporto e non finisce in questa tabella si ripeterà identica.
 partenza, non un lessico: un lessico vero si riempie sentendo i nostri video. La prossima riga
 deve avere un minuto e un video accanto.
 
+## Perche' il pannello di Fliki non e' un'alternativa (A4-L19-02 - 2026-09-06)
+
+Chiudo qui una speranza che L03 aveva lasciato aperta: *«e se le pronunce le configurassimo una
+volta sola dentro Fliki, invece di riscriverle in ogni script?»*. **Non si puo', ed e' dimostrato
+a schermo.**
+
+Il pannello `More -> Pronunciation map` dichiara, testualmente:
+**«Manage pronunciation of words ... to apply while generating audio for this video»**
+(`frame-123.png @ 08:12`). Le tre conseguenze, in ordine di peso:
+
+1. **Vale per UN video solo.** Non e' una configurazione di account: non si eredita fra progetti,
+   e ogni video ripartirebbe da zero.
+2. **Una generazione via API non la vede.** La nostra catena non apre mai il progetto: manda un
+   payload e riceve un MP4.
+3. **E' case-sensitive** (lo dice il pannello stesso): `Fliki` e `fliki` sarebbero due voci
+   diverse, quindi anche a mano sarebbe una mappa fragile.
+
+**Il docente del corso dice il contrario** — che le pronunce «rimangono salvate su Fliki». Vince
+lo schermo (piano di studio, 6.4): quello che si legge nel pannello batte quello che si sente nel
+parlato.
+
+**Conclusione operativa: la correzione si fa nel TESTO dello script, con la tabella qui sopra.**
+Non e' un ripiego in attesa di una via migliore: la via migliore non esiste.
+
 ## Le due famiglie di errore, e la cura
 
 1. **Parola straniera in frase italiana** — si riscrive in grafia italiana (`Cescau`).
