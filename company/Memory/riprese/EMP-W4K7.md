@@ -66,6 +66,37 @@ conio. Comando: `python scripts/checkpoint.py cp --titolo "..."`. Vale anche per
 
 ---
 
+## 2-ter. AGGIORNAMENTO 2026-09-06 sera - chat satura, si riparte da qui
+
+**Chiuse end-to-end: 5 su 10.** Dettaglio completo in
+[CP-20260906-23RG](../checkpoints/CP-20260906-23RG.md).
+
+| Fonte | Visione | Atomi | Wiki | Archivio |
+|---|---|---|---|---|
+| doc Justin Sung · `v01` · `v02` · `v03` · `v07` | 100% | si | si | si |
+| **`v06` corso agenti AI** | **209/376 = 55%** | -- | -- | -- |
+| `v04` mindset · `v05` bot crypto · `v08` Cowork · `v09` vocali | 0% | -- | -- | -- |
+
+**RIPRENDI DA QUI, in quest'ordine:**
+1. `max18-v06-JTn5pqm9ecM`, buchi **211-376 e la scena 21** (167 scene). Sentinelle da 21 scene,
+   scrittura ogni 5, **mai aprire `transcript.md` intero**.
+2. Unione: `python scripts/unisci_parti.py --run max18-v06-JTn5pqm9ecM --scene 376`
+3. Atomi a blocchi, poi `python scripts/unisci_atomi.py --run max18-v06-JTn5pqm9ecM`, poi
+   **saldare le isole** del grafo (gli atomizzatori in parallelo non si vedono fra loro).
+4. Wiki + `knowledge/JTn5pqm9ecM/` sul modello di `knowledge/RnoC5IlOUhs/`.
+5. Poi `v08` (393 scene), `v09` (104, **senza sottotitoli: nessun VTT**), `v05` (98), `v04` (120).
+6. Poi la **Fase 2**, poi il **Libro dell'Agency** (§4-bis).
+
+**Strumenti nuovi, gia' pronti in `empire-studio/scripts/`:**
+`vtt_to_transcript.py` (i transcript ci sono gia' per tutti tranne `v09`), `unisci_parti.py`,
+`unisci_atomi.py`. Non riscriverli dentro i run.
+
+**Leggi nuove di questa giornata:** i codici di checkpoint si **sorteggiano**
+(`python scripts/checkpoint.py cp --titolo "..."`), e la percentuale del battito e'
+l'avanzamento della **missione**, non del pezzo: 100% solo a lavoro finito.
+
+---
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte

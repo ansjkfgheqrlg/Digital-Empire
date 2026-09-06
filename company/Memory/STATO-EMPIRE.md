@@ -33,6 +33,26 @@ visivo). Poi Fase 3 (flusso a 9 passi + `SKILL.md` + `emperator.md §6.20`), Fas
 Fase 5 (collaudo: rifare `armageddon` col nostro canone).
 Dettagli: [CP-20260906-9TWF](checkpoints/CP-20260906-9TWF.md) · dossier `PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md`.
 
+## 📚 2026-09-06 sera — max18: 5 fonti su 10 chiuse, la Fase 1 non e' finita — CP-20260906-23RG
+
+**Codice di ripresa: EMP-W4K7.** Chiusi end-to-end il corso *Second Brain* (352 scene su 352,
+205 atomi, 333 archi in **una sola componente**) e *LinkedIn generare clienti* (126 su 126,
+57 atomi, 116 archi): con i due gia' fatti prima, **5 fonti su 10**. Il corso *Agenti AI* e' al
+**55%** (209 scene su 376). Quattro video sono scaricati con frame a 720p e **mai visti**.
+
+**Due leggi nuove, entrambe nel codice.** I codici di checkpoint non sono piu' progressivi ma
+**sorteggiati** (`checkpoint.py cp`), perche' due chat parallele sceglievano lo stesso numero;
+e la **percentuale del battito e' l'avanzamento della missione, non del pezzo** — 100% si scrive
+solo a lavoro finito (ordine di Max dopo un 100% dichiarato con sei video mai guardati).
+
+**Quindici teste cadute nella giornata** fra errori di rete, watchdog e limite di sessione:
+**zero righe perse**, perche' scrivevano su disco ogni cinque scene. La causa vera degli stalli
+era l'apertura del transcript intero da 148 KB: ora `vtt_to_transcript.py` lo prepara una volta
+per tutti.
+
+**RIPRESA DA:** `max18-v06`, buchi 211-376 e scena 21; poi `v08` 393 scene, `v09` 104 (**senza
+sottotitoli**), `v05` 98, `v04` 120; poi Fase 2, poi il **Libro dell'Agency** (`EMP-W4K7`
+§4-bis). Dettagli: [CP-20260906-23RG](checkpoints/CP-20260906-23RG.md).
 ## 🟠 2026-09-06 — Un gate bocciava i video su una musica che non esiste — CP-20260906-JYGA
 
 **Codice di ripresa: EMP-V6DE (APERTA).** Chiuse **L15, L17 e L20** con **3 sentinelle** lanciate in
