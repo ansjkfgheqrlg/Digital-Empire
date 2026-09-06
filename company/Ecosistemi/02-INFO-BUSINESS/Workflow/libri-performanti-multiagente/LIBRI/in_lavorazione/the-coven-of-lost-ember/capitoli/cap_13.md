@@ -46,6 +46,30 @@ Nessa, from the corner, said: "That's not the same as saying it."
 
 ---
 
+"There's a thing I want to say before anybody else speaks," said Nessa, "and it's not a confession, it's a question, and I want somebody to answer it honestly instead of managing me."
+
+"Go on," said Ada.
+
+"How does it know?" Nessa had her arms folded. "Everyone keeps saying the working can feel it. Feel it how? It's a hole in the ground and a line of words. How does a hole in the ground know that Marged hasn't told anybody something from eleven years ago?"
+
+Marged opened her mouth and found she did not have a clean answer, which was itself instructive.
+
+"It doesn't know," said Wren.
+
+They all turned.
+
+"That's the wrong picture and it's the one everybody starts with, including me at fourteen." Wren pulled her chair round. "There's nothing down there reading our minds. A joining is four people making one shape out of four. To do that, each of you has to put in what you actually are, not what you present. And a person who is holding something back does not put in what she actually is: she puts in a version, with a piece missing, and the piece missing is exactly the shape of the thing she is not saying."
+
+"So it's not that it knows," said Nessa slowly. "It's that we come out the wrong shape."
+
+"You come out the wrong shape, and four wrong shapes do not close on each other, and the thread finds the gap and unpicks along it. Every single time. In the same place, because it's the same gap." Wren spread her hands. "It's not a moral test. Nobody's being judged. It's a joinery problem."
+
+Nessa sat back.
+
+"That's the first time in a fortnight," she said, "that anybody's explained any of this to me like I'm a person who could understand it."
+
+"Ask better questions and you get better answers," said Ada Fenwick. "That one was better than anything the four of us managed in a week."
+
 It went badly after that, which Marged had expected.
 
 Bel wanted a structure. Bel wanted them to go in an order, agreed in advance, with a rule about what happened afterward, and Marged watched a woman who had spent twenty one years in an institution try to build a procedure for the one thing that could not have one.

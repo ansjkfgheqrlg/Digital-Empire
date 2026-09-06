@@ -78,6 +78,24 @@ The sound stopped.
 
 The four of them stood in a rough square around a black stone lying on a village green in the rain, and nobody moved for a long moment.
 
+Behind them, up at the top of the lane, a car had stopped at the barrier. Bel registered it without turning: a red estate, engine running, and somebody in the driver's seat who had wound the window down and was looking at the four of them and at the ground.
+
+Then the window went up and the car reversed away up the pass, badly, in three goes.
+
+"That was Sharon Harrison," said Nessa, from the grass. Her voice was thick. "That's her car. She does the Thursday shop."
+
+"Right," said Bel.
+
+"She'll have heard it. It went right through my feet, she'll have heard it from up there with the engine on."
+
+"Then by seven o'clock this evening," said Marged, "about a hundred people in this valley will have been told that the ground made a noise, and by tomorrow morning it will be four hundred, and I would like everybody here to understand that this is not necessarily bad."
+
+"It's a disaster," said Bel.
+
+"It is the opposite of a disaster." Marged had not taken her eyes off the stone. "For a fortnight the four of us have been the only people who could see this, which has meant that everything we do has had to be explained away afterwards. A valley that has heard it is a valley that will get out of the way when we tell it to."
+
+Bel found she had nothing to say to that, largely because Marged was right and she had not got there herself.
+
 "How long have you known it does that," Marged said.
 
 "Since the second night I was here." Wren's face was white and entirely calm, which Bel recognised, because she had seen it on people who had rehearsed a moment so many times that the moment itself came as a relief. "It doesn't do it in Northumberland. It doesn't do it in a town. It does it here, because there's a failing seal under this green, and the closer it gets the louder they get with each other."

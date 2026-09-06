@@ -60,6 +60,36 @@ Wren was crouched three feet away with her hand flat on the old stone and her fa
 
 ---
 
+On the way back out through the grille Nessa stopped and put her hand on the old stonework where the two masonries met.
+
+"There's one more thing and then I'll shut up," she said. "It changed on Friday."
+
+"Changed how?"
+
+"The rhythm." Nessa struggled with it, the way she always struggled with it, because there were no words that had ever been made for this. "It's like. You know when somebody's telling a long story they've told a hundred times, and you can hear from the other room that they're on the bit they always do? It's been that my whole life. The same shape, over and over, patient, going nowhere."
+
+"And on Friday?"
+
+"On Friday it started repeating." Nessa's hand was flat on the stone. "Same six or seven seconds, again and again and again, for four days. And then on Tuesday morning the ground came open and it stopped repeating and went back to the long thing."
+
+Wren had gone very still behind her.
+
+"Nessa. When did it start repeating, exactly?"
+
+"Friday, about three in the morning. That's when I woke up with my jaw."
+
+"And you're certain it stopped when the crack opened."
+
+"It stopped when the crack opened," said Nessa. "I'm certain because I noticed and I was relieved and then I felt sick about being relieved. Why? What is it?"
+
+Wren did not answer for a moment.
+
+"At Ashmoor," she said, "when a seal starts to go, the thing under it does one of two things. Either it goes quiet, which is bad, because quiet means it has already found the way out and is not wasting effort. Or it repeats. And repeating means it is trying the same place over and over because that is the only place that gives."
+
+"So it was pushing."
+
+"It was knocking," said Wren, "on the same spot, for four days, and you were the only person in England who could hear it, and there was nobody to tell."
+
 They sat on the bank afterward with their feet in the grass and the light going.
 
 "You can talk now," Nessa said.

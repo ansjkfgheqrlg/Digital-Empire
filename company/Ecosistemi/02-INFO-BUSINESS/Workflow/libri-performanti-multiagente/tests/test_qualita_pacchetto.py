@@ -621,3 +621,85 @@ def test_kdp_copy_su_libro_inesistente_e_parametro_errato(tmp_path, monkeypatch)
     monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path / "in_lavorazione")
     assert kdp.main(["copy", "libro-che-non-esiste",
                      "--file", str(_scrivi_copy(tmp_path))]) == 2
+
+
+# --------------------------------------------------------------------------- #
+# 12. IL GATE CONTA LE PAGINE, NON SOLO LE PAROLE (2026-09-06)
+#
+# Il 2026-09-06 il gate ha detto SI PROSEGUE su un libro proiettato a 37.200
+# parole. Il minimo in parole (36.800) era superato, quindi passava. Ma il
+# modello di stima vero lo dava a 112,5 pagine contro un minimo di 115: il gate
+# esiste per fermare i libri corti e stava per farne passare uno.
+#
+# Causa: il conteggio parole assume 320 parole/pagina, e le parole per pagina
+# NON sono una costante. Scendono al crescere dei paragrafi, perche' ogni fine
+# paragrafo spreca la coda di una riga. Un libro molto dialogato ha molti
+# paragrafi corti e quindi piu' pagine a parita' di parole. O meno, come qui.
+# --------------------------------------------------------------------------- #
+
+def _capitoli_corti_in_pagine(p, n_cap, parole_per_cap, parole_per_paragrafo=180):
+    """Capitoli che superano il minimo in PAROLE ma non in PAGINE.
+
+    La forma che inganna il divisore fisso e' questa: parole brevi e paragrafi lunghi.
+    Le pagine si contano sullo spazio occupato (caratteri, piu' la coda sprecata a ogni
+    fine paragrafo), quindi parole corte occupano meno pagine a parita' di conteggio ed
+    e' esattamente il caso in cui il divisore a 320 sovrastima.
+    """
+    for n in range(1, n_cap + 1):
+        parole = [f"al{i % 90}" for i in range(parole_per_cap)]
+        gruppi = [" ".join(parole[i:i + parole_per_paragrafo])
+                  for i in range(0, len(parole), parole_per_paragrafo)]
+        p.path_capitolo(n).write_text(f"# Cap {n}\n\n" + "\n\n".join(gruppi) + ".\n",
+                                      encoding="utf-8")
+    p.riassunti_path.write_text(
+        "# R\n\n## Fili aperti\n\n## Capitoli\n\n"
+        + "\n".join(f"### cap_{n:02d}\n- Succede: cose\n" for n in range(1, n_cap + 1)),
+        encoding="utf-8")
+
+
+def test_il_gate_blocca_un_libro_che_passa_in_parole_ma_non_in_pagine(tmp_path, monkeypatch):
+    """IL difetto del 2026-09-06, riprodotto: parole sopra il minimo, pagine sotto."""
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)
+    p = book_project.BookProject.crea("Libro Dialogato", "cozy mystery")
+    # 24 capitoli a 1.560 parole = 37.440 parole: SOPRA il minimo di 36.800.
+    _capitoli_corti_in_pagine(p, 24, 1570)
+
+    esito = gate_blocco.controlla(p)
+
+    assert esito.proiezione >= config.TARGET_WORD_COUNT_MIN, "il test deve passare in parole"
+    minimo_pagine = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
+    assert esito.pagine_proiettate < minimo_pagine, "il test deve essere corto in pagine"
+    assert not esito.si_prosegue, "il gate deve fermarlo"
+    assert any("PAGINE" in b for b in esito.blocchi), esito.blocchi
+
+
+def test_il_gate_usa_il_modello_vero_e_non_il_divisore_a_320(tmp_path, monkeypatch):
+    """La stima del gate deve coincidere con `config.stima_pagine`, non con parole/320."""
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)
+    p = book_project.BookProject.crea("Libro Misurato", "cozy mystery")
+    _capitoli_corti_in_pagine(p, 24, 1570)
+
+    esito = gate_blocco.controlla(p)
+    atteso = round(config.stima_pagine(esito.caratteri_proiettati,
+                                       esito.paragrafi_proiettati), 1)
+    divisore_vecchio = round(esito.proiezione / config.WORDS_PER_PAGE_ESTIMATE, 1)
+
+    assert esito.pagine_proiettate == atteso
+    assert esito.pagine_proiettate != divisore_vecchio, (
+        "se i due coincidono il test non sta piu' provando niente")
+
+
+def test_un_libro_lungo_abbastanza_passa_ancora(tmp_path, monkeypatch):
+    """Il gate nuovo non deve bloccare quello che prima passava a ragione."""
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)
+    p = book_project.BookProject.crea("Libro Giusto", "cozy mystery")
+    for n in range(1, 25):
+        p.path_capitolo(n).write_text(f"# Cap {n}\n\n{_prosa(f'scena{n}', 1700)}.\n",
+                                      encoding="utf-8")
+    p.riassunti_path.write_text(
+        "# R\n\n## Fili aperti\n\n## Capitoli\n\n"
+        + "\n".join(f"### cap_{n:02d}\n- Succede: cose\n" for n in range(1, 25)),
+        encoding="utf-8")
+
+    esito = gate_blocco.controlla(p)
+    assert esito.si_prosegue, esito.blocchi

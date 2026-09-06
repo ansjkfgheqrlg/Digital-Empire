@@ -26,6 +26,24 @@ Nobody said anything. Ada's pen moved.
 
 She laid out the rest of it methodically, the way she must have laid out a hundred cases for a hundred hearings. She had asked for the site survey. There had not been one. She had asked why an Assize officer had been posted for three years to a village with no registered coven within thirty miles, and had been told officers went where they were needed. She had asked, twice more, in writing, and had received, twice more, a form of words.
 
+"There's a page I want you to see before I get to the rest," Bel said, "because it's the one that took me two years to understand and it took me about four minutes once I stopped defending it."
+
+She laid out four sheets in a row.
+
+"These are the four times I was pulled off other work to chase her. October last year, a licensing dispute in Alston, two families and a boundary. February, a records audit at Brampton. April, an unregistered practitioner in Consett who was selling something to fifteen year olds. And July, a welfare check I had asked to do myself."
+
+Wren, who had not spoken since Bel sat down, said: "Consett."
+
+"Consett." Bel put her finger on the third sheet. "I looked the case number up on Monday, in the car. Nobody ever dealt with it. It was reassigned twice inside the Assize and then closed as *no further action* in the January, and the man is still trading, and I found that in eleven minutes with a laptop on my knees in a lay by."
+
+"You couldn't have known," said Marged.
+
+"I could have looked." Bel's jaw was tight. "That's the thing I keep arriving at. I never looked. Not once in two years. Every time they moved me I thought, *they must have their reasons*, and I got in the car. Twenty one years of being told I was thorough, and it turns out I was thorough in exactly the direction I was pointed and completely incurious in every other."
+
+Ada's pen moved.
+
+"Don't write that one down as though it's a confession," said Bel. "Write it down as a mechanism. It's how it works on people like me. They don't recruit you. They just keep giving you a thing to be excellent at."
+
 And then, in November of 2023, she had been given the Halloway file.
 
 "I want to be exact about this part," Bel said, "because it's the part that matters and it's the part I have lied to myself about." She put both hands flat again. "They did not force it on me. Hollis called me in and said there was an open coven matter that needed somebody who'd stick at it, and he said it would be *good for me to have something in front of me*, and I understood that to be kindness. I have understood it to be kindness for two years."

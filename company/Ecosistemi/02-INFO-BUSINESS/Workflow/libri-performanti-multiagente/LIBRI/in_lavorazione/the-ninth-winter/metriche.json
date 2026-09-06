@@ -37,6 +37,14 @@
       "esito": "ok",
       "con_copertina": true,
       "parole": 36857
+    },
+    {
+      "quando": "2026-09-06T10:02:27",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 36871,
+      "media_per_capitolo": 1536
     }
   ]
 }

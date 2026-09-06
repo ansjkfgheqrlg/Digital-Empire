@@ -55,6 +55,8 @@ class EsitoBlocco:
     media_per_capitolo: int
     proiezione: int
     minimo: int
+    caratteri_proiettati: int = 0
+    paragrafi_proiettati: int = 0
     blocchi: list[str] = field(default_factory=list)
     avvisi: list[str] = field(default_factory=list)
 
@@ -62,8 +64,24 @@ class EsitoBlocco:
     def si_prosegue(self) -> bool:
         return not self.blocchi
 
+    @property
+    def pagine_proiettate(self) -> float:
+        """Pagine a fine libro, col modello misurato (FIX-5).
+
+        NON si divide per 320. Il divisore fisso sbaglia perche' le parole per pagina
+        scendono al crescere dei paragrafi, e un libro molto dialogato ne ha molti.
+        Il 2026-09-06 questo gate ha detto SI PROSEGUE su un libro proiettato a 37.200
+        parole: 116,3 pagine secondo il divisore, **112,5 secondo il modello vero**, cioe'
+        due pagine e mezzo sotto il minimo. Il gate esiste per fermare i libri corti e
+        stava per farne passare uno.
+        """
+        if self.caratteri_proiettati:
+            return round(config.stima_pagine(self.caratteri_proiettati,
+                                             self.paragrafi_proiettati), 1)
+        return round(self.proiezione / config.WORDS_PER_PAGE_ESTIMATE, 1)
+
     def __str__(self) -> str:
-        pagine_proiettate = round(self.proiezione / config.WORDS_PER_PAGE_ESTIMATE, 1)
+        pagine_proiettate = self.pagine_proiettate
         righe = [
             f"Blocco: {self.slug}  {self.capitoli_scritti}/{self.capitoli_totali} capitoli",
             f"  media {self.media_per_capitolo} parole/capitolo",
@@ -101,10 +119,19 @@ def controlla(progetto) -> EsitoBlocco:
     proiezione = media * totali
     ritmo_bersaglio = cfg.get("parole_per_capitolo") or round(minimo / totali)
 
+    # Proiezione anche di caratteri e paragrafi, con lo stesso metodo delle parole: e' cio'
+    # che serve al modello di stima pagine vero. Senza questi due numeri il gate ricadrebbe
+    # sul divisore a 320 e direbbe di proseguire su libri corti (vedi `pagine_proiettate`).
+    n = len(scritti)
+    caratteri_proiettati = round(stato.caratteri_scritti / n * totali) if n else 0
+    paragrafi_proiettati = round(stato.paragrafi_scritti / n * totali) if n else 0
+
     esito = EsitoBlocco(
         slug=progetto.slug, capitoli_scritti=len(scritti), capitoli_totali=totali,
         parole=stato.parole_scritte, media_per_capitolo=media,
         proiezione=proiezione, minimo=minimo,
+        caratteri_proiettati=caratteri_proiettati,
+        paragrafi_proiettati=paragrafi_proiettati,
     )
     if not scritti:
         esito.blocchi.append("nessun capitolo scritto")
@@ -124,7 +151,23 @@ def controlla(progetto) -> EsitoBlocco:
             f"{ritmo_bersaglio} parole/capitolo ({ritmo_bersaglio * totali} totali, "
             f"in mezzo alla finestra). Allunga QUESTI capitoli adesso, non i prossimi."
         )
-    elif proiezione > config.TARGET_WORD_COUNT_MAX:
+    else:
+        # Il conteggio parole non basta, e il 2026-09-06 lo ha dimostrato: un libro
+        # proiettato a 37.200 parole passava il minimo (36.800) ed era comunque a 112,5
+        # pagine vere, due e mezzo sotto il minimo di 115. Le parole per pagina non sono
+        # una costante: scendono al crescere dei paragrafi. Quindi qui si guarda la stima
+        # in PAGINE, che e' cio' che KDP misura davvero.
+        pagine = esito.pagine_proiettate
+        minimo_pagine = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
+        if esito.caratteri_proiettati and pagine < minimo_pagine:
+            esito.blocchi.append(
+                f"le parole bastano ({proiezione}, minimo {minimo}) ma le PAGINE no: il "
+                f"libro chiude a circa {pagine} pagine contro un minimo di {minimo_pagine}. "
+                f"Succede quando il testo e' molto dialogato: tanti paragrafi corti "
+                f"sprecano la coda di ogni riga. Serve piu' testo, non piu' capitoli."
+            )
+
+    if proiezione > config.TARGET_WORD_COUNT_MAX:
         esito.avvisi.append(
             f"a {media} parole/capitolo il libro chiude a {proiezione}, sopra il massimo "
             f"({config.TARGET_WORD_COUNT_MAX}). Puoi accorciare senza fretta."

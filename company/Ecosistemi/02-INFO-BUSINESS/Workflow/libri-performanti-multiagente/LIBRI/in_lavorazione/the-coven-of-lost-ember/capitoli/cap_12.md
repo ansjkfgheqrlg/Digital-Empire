@@ -12,6 +12,26 @@ Nessa's hands off the ground, agreed in advance, and agreed again out loud on th
 
 And the thread laid slowly, in daylight, at four in the afternoon on the first Wednesday in October, with Ada Fenwick sitting on her folding stool by the church wall holding the marbled book open on her knees.
 
+There was one argument, and it was about Ada.
+
+"You sit at the wall," Bel said. "Not on the green."
+
+"I have sat on that wall for the last two and I shall sit on it for this one."
+
+"Ada, on Saturday night a man twenty five feet outside the circle went into stonework."
+
+"Then you had better do it properly this time," said Ada Fenwick, and set up her folding stool, and that was the end of the argument.
+
+Wren watched Marged look at the old woman for a moment and decide, visibly, not to spend anything on it. It was the first time she had seen Marged Pryce concede a point to somebody who was simply more stubborn than she was, and she filed it away as useful.
+
+At four o'clock the light was flat and yellow and there was no wind at all. Bel had walked the lane twice. The Ram was shut. Somewhere over toward the Crozier place a dog was going up and down a fence and would not stop, and all four of them heard it and nobody mentioned it.
+
+"Right," said Marged. "One thing before I start, and I want it said out loud rather than assumed. If this works, the crack closes and we have all had a very interesting fortnight and we go back to our lives. If it does not work, we will know something we do not know now, and that is also worth having. What we are not doing is standing here hoping. Hope is not a method."
+
+"Is that from the book?" said Nessa.
+
+"That is from my grandmother," said Marged, "who would have had all four of us out of this circle by teatime for talking during the setting."
+
 It caught in eleven seconds and it held for four minutes and eleven seconds.
 
 ---

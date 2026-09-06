@@ -293,8 +293,8 @@
       "owner": "Gael",
       "giorno": "W2 (1-7 set)",
       "titolo": "5 libri nuovi completi: kdp pacchetto exit 0, zero bloccanti, zero verifiche non eseguite",
-      "stato": "da_fare",
-      "note": "TASK-GAEL-20260831-SETTIMANA-02.md - ordine obbligatorio: FIX -> PIANO -> 5LIBRI -> LANCI"
+      "stato": "in_corso",
+      "note": "TASK-GAEL-20260831-SETTIMANA-02.md - ordine obbligatorio: FIX -> PIANO -> 5LIBRI -> LANCI || 2026-09-06 (CP-20260906-W4AY): PRIMO LIBRO CONSEGNATO su 5. The Coven of Lost Ember chiuso 24/24, 38.657 parole, 118 PAGINE REALI, `kdp pacchetto the-coven-of-lost-ember` esce 0 = COMPLETO; unico bloccante la copertina, come per gli altri quattro. Era aperto a 0/24 con outline segnaposto e bloccava questa task per la Regola 6. TROVATO E CORRETTO un difetto grosso mentre lo chiudevo: `gate_blocco` calcolava le pagine come parole/320, cioe' col divisore che FIX-5 aveva gia' sostituito ovunque TRANNE li'. A 37.200 parole diceva SI PROSEGUE su un libro che valeva 112,5 pagine contro un minimo di 115: il gate esiste per fermare i libri corti e stava per farne passare uno. Ora usa config.stima_pagine, proietta caratteri e paragrafi, e BLOCCA quando le parole bastano ma le pagine no. 196 test verdi (erano 193), 3 nuovi di cui uno riproduce il caso esatto. RESTA: 4 libri su 5 da scrivere, che e' lavoro di scrittura vero."
     },
     {
       "id": "TASK-LANCI-ECO-W2",

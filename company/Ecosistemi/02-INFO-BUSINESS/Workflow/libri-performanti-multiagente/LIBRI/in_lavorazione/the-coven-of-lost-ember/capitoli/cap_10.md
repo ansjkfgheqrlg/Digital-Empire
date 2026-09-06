@@ -30,6 +30,42 @@ Marged did not want the working. She wanted to be *used*. That was the shameful 
 
 ---
 
+At about eleven she had a visitor she had not expected.
+
+Ruby Tanner was nine and had been sent up from the house with a message, and delivered it from four feet away with the formality of a child who has been told to be polite to somebody sad.
+
+"Mam says are you all right stood there and do you want a cup of tea bringing out."
+
+"Tell your mam I'm perfectly all right and no thank you."
+
+Ruby did not go. She stood on the path in a coat too big for her and looked past Marged at the tape and the steel pins and the laminated card.
+
+"Is it going to eat the school," she said.
+
+Marged Pryce turned round properly for the first time in four hours.
+
+"Who told you that?"
+
+"Nobody told me. I worked it out." Ruby's chin was up. "It's going that way and the school's that way and nobody will say what it is, and when nobody will say what a thing is it's because it's bad."
+
+Marged looked at a nine year old standing on a path at eleven in the morning on a school day, which meant the school had shut, which meant the council had done something nobody had told her about either.
+
+"Right," she said. "Come here. Not past the tape."
+
+Ruby came.
+
+"It is not going to eat the school," said Marged. "I'll tell you what it actually is, because you're quite right that nobody saying is worse. It's a crack. Cracks get bigger if nobody mends them, and nobody has mended this one for a very long time, and now some people are going to mend it."
+
+"Which people?"
+
+"Me, probably," said Marged, and heard herself say it, and stood very still.
+
+Ruby Tanner nodded once, satisfied, in the manner of somebody who has received an adequate answer and is now free to go.
+
+"Right," she said. "I'll tell mam."
+
+She went off down the path, and Marged Pryce stayed at the wall with her hands in her pockets and her heart going, having just told a child the truth and having discovered, in the telling of it, which side of the thing she had actually been standing on since Tuesday.
+
 Ada Fenwick came at noon, with a folding stool.
 
 She set it up beside Marged at the wall, unhurried, and sat down on it with a small grunt, and produced from her coat pocket two wrapped sandwiches and handed one over without asking whether Marged wanted it.

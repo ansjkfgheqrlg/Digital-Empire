@@ -78,6 +78,14 @@
       "motivi": [
         "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
       ]
+    },
+    {
+      "quando": "2026-09-06T10:02:27",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 39779,
+      "media_per_capitolo": 1657
     }
   ]
 }

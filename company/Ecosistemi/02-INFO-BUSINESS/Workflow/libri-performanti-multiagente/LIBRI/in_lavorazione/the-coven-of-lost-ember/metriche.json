@@ -27,6 +27,50 @@
       "capitoli": 8,
       "parole": 12787,
       "media_per_capitolo": 1598
+    },
+    {
+      "quando": "2026-09-06T09:53:29",
+      "cosa": "blocco",
+      "esito": "bocciato",
+      "capitoli": 24,
+      "parole": 35424,
+      "media_per_capitolo": 1476,
+      "motivi": [
+        "a 1476 parole/capitolo il libro chiude a 35424 parole: 1376 sotto il minimo di 36800. Il bersaglio e' 1600 parole/capitolo (38400 totali, in mezzo alla finestra). Allunga QUESTI capitoli adesso, non i prossimi."
+      ]
+    },
+    {
+      "quando": "2026-09-06T09:55:34",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 37212,
+      "media_per_capitolo": 1550
+    },
+    {
+      "quando": "2026-09-06T09:57:38",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 38657,
+      "media_per_capitolo": 1611
+    },
+    {
+      "quando": "2026-09-06T09:58:27",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
+      ]
+    },
+    {
+      "quando": "2026-09-06T10:02:27",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 38657,
+      "media_per_capitolo": 1611
     }
   ]
 }

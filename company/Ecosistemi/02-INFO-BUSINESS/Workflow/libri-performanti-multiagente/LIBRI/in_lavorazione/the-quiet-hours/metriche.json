@@ -28,6 +28,28 @@
       "esito": "ok",
       "con_copertina": true,
       "parole": 37160
+    },
+    {
+      "quando": "2026-09-06T10:02:27",
+      "cosa": "blocco",
+      "esito": "bocciato",
+      "capitoli": 24,
+      "parole": 37168,
+      "media_per_capitolo": 1549,
+      "motivi": [
+        "riassunti.md non copre i capitoli [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]. Senza, il prossimo blocco si scrive alla cieca e nessun controllo automatico se ne accorge."
+      ]
+    },
+    {
+      "quando": "2026-09-06T10:02:40",
+      "cosa": "blocco",
+      "esito": "bocciato",
+      "capitoli": 24,
+      "parole": 37168,
+      "media_per_capitolo": 1549,
+      "motivi": [
+        "riassunti.md non copre i capitoli [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]. Senza, il prossimo blocco si scrive alla cieca e nessun controllo automatico se ne accorge."
+      ]
     }
   ]
 }
