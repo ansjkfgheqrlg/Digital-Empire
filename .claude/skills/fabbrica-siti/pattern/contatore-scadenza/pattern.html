@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; contatore-scadenza</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: la scadenza sta su UN attributo solo, le cifre non ballano, il
+   timer e' leggibile da uno screen reader, e A SCADENZA AVVENUTA LA PAGINA
+   CAMBIA STATO invece di continuare a vendere.
+   Origine: armageddon (contatore) + gate 10 (il suo difetto n.2, corretto). */
+.scadenza { padding: calc(var(--u) * 0.06) 0; background: var(--ink-2); text-align: center; }
+
+.conto { display: flex; justify-content: center; gap: calc(var(--cell) * 0.27359); }
+
+.conto__unita { display: flex; flex-direction: column; align-items: center; gap: calc(var(--cell) * 0.16); }
+
+.conto__cella {
+  width: var(--cell); height: var(--cell);
+  display: grid; place-items: center;
+  background: var(--orange); color: #ffffff;
+  border-radius: calc(var(--cell) * 0.075);
+  font-size: calc(var(--cell) * 0.33318);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;   /* le cifre non ballano mentre scendono */
+  line-height: 1;
+}
+
+/* IL PEZZO CHE ANDREI NON HA. A scadenza avvenuta il contatore sparisce e al
+   suo posto compare cio' che e' vero adesso. Gate 10. */
+.conto[hidden] { display: none; }
+
+.scaduto { margin: 0; font-size: calc(var(--u) * 0.03); font-weight: 700; }
+.scaduto[hidden] { display: none; }
+
+.risparmio { margin: calc(var(--u) * 0.045) 0 0; font-size: clamp(30px, calc(var(--u) * 0.068), 86px); line-height: 1; }
+.risparmio__sotto { margin: calc(var(--u) * 0.014) 0 0; font-size: clamp(11px, calc(var(--u) * 0.0155), 16px);
+                    letter-spacing: 0.05em; color: rgba(249, 249, 249, var(--t-55)); }
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <section class="scadenza">
+
+    <div class="conto" id="conto" data-fino="2026-12-31T23:59:59+01:00" role="timer">
+      <span class="conto__unita"><span class="conto__cella num-tabular" data-unita="g">00</span><span class="label">giorni</span></span>
+      <span class="conto__unita"><span class="conto__cella num-tabular" data-unita="o">00</span><span class="label">ore</span></span>
+      <span class="conto__unita"><span class="conto__cella num-tabular" data-unita="m">00</span><span class="label">minuti</span></span>
+      <span class="conto__unita"><span class="conto__cella num-tabular" data-unita="s">00</span><span class="label">secondi</span></span>
+    </div>
+
+    <p class="scaduto text-silver-white" id="scaduto" hidden>L&rsquo;offerta &egrave; chiusa.</p>
+
+    <!-- §8: un dato solo. Il totale e il risparmio si calcolano, non si scrivono. -->
+    <div id="prezzi" data-pack="199" hidden>
+      <span data-voce data-prezzo="199"></span>
+      <span data-voce data-prezzo="199"></span>
+      <span data-voce data-prezzo="199"></span>
+      <span data-voce data-prezzo="187"></span>
+    </div>
+
+    <p class="risparmio text-silver-white">Risparmi <span class="text-silver-orange" data-risparmio></span></p>
+    <p class="risparmio__sotto"><span data-totale></span> di valore, paghi <span data-paghi></span></p>
+
+  </section>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---- §8 — un prezzo solo nel sorgente, il resto si somma --------------- */
+  var box = document.getElementById('prezzi');
+  if (box) {
+    var totale = 0;
+    Array.prototype.forEach.call(box.querySelectorAll('[data-prezzo]'), function (v) {
+      totale += Number(v.getAttribute('data-prezzo')) || 0;
+    });
+    var paghi = Number(box.getAttribute('data-pack')) || 0;
+    var euro = function (n) { return '\u20AC' + n; };
+    var stampa = function (sel, val) {
+      Array.prototype.forEach.call(document.querySelectorAll(sel), function (e) { e.textContent = val; });
+    };
+    stampa('[data-totale]', euro(totale));
+    stampa('[data-paghi]', euro(paghi));
+    stampa('[data-risparmio]', euro(totale - paghi));
+  }
+
+  /* ---- il contatore ------------------------------------------------------ */
+  var conto = document.getElementById('conto');
+  if (!conto) { return; }
+
+  /* §7 del canone: una cifra che cambia ogni secondo E' movimento, e va spenta
+     come qualunque altra animazione. Con reduced-motion il conto resta (serve:
+     dice quanto manca), ma si aggiorna al minuto e la cella dei secondi sparisce
+     invece di lampeggiare in permanenza. */
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var passo = reduce ? 60000 : 1000;
+  if (reduce) {
+    var unitaSecondi = conto.querySelector('[data-unita="s"]');
+    if (unitaSecondi && unitaSecondi.parentNode) { unitaSecondi.parentNode.hidden = true; }
+  }
+
+  var fino = new Date(conto.getAttribute('data-fino')).getTime();
+  var scaduto = document.getElementById('scaduto');
+  var celle = {};
+  Array.prototype.forEach.call(conto.querySelectorAll('[data-unita]'), function (c) {
+    celle[c.getAttribute('data-unita')] = c;
+  });
+
+  var due = function (n) { return (n < 10 ? '0' : '') + n; };
+  var battito = null;
+
+  var tic = function () {
+    var resta = fino - Date.now();
+
+    /* GATE 10 — il comportamento a scadenza avvenuta e' dichiarato.
+       Non basta fermarsi a zero: la pagina deve smettere di promettere. */
+    if (resta <= 0) {
+      conto.hidden = true;
+      if (scaduto) { scaduto.hidden = false; }
+      document.documentElement.setAttribute('data-offerta', 'chiusa');
+      if (battito) { clearInterval(battito); }
+      return;
+    }
+
+    var s = Math.floor(resta / 1000);
+    var g = Math.floor(s / 86400),
+        o = Math.floor(s % 86400 / 3600),
+        m = Math.floor(s % 3600 / 60),
+        sec = s % 60;
+
+    celle.g.textContent = due(g);
+    celle.o.textContent = due(o);
+    celle.m.textContent = due(m);
+    if (celle.s) { celle.s.textContent = due(sec); }
+
+    /* leggibile davvero, non solo visibile */
+    conto.setAttribute('aria-label',
+      'Mancano ' + g + ' giorni, ' + o + ' ore, ' + m + ' minuti e ' + sec + ' secondi');
+  };
+
+  tic();
+  battito = setInterval(tic, passo);
+})();
+</script>
+</body>
+</html>

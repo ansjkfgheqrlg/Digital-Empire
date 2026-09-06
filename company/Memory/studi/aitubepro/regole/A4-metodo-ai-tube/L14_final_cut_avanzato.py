@@ -129,7 +129,7 @@ def verifica(fabbrica):
     return {
         "A4-L14-01": contiene(SW, ["primi 30 secondi", "ritenzione"]),
         "A4-L14-02": contiene(SW, ["cta di chiusura"]),
-        "A4-L14-03": contiene(MC, ["sei miti", "4 secondi"]),
+        "A4-L14-03": contiene(MC, ["miti del camuffamento", "4 secondi"]),
         "A4-L14-04": contiene(MC, ["fair use decade"]),
         "A4-L14-05": contiene(MC, ["1 ora a video"]),
     }

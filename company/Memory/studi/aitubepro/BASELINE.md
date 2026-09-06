@@ -143,3 +143,44 @@ Questi valori vanno rimisurati **a ogni categoria chiusa**. Il piano si giudica 
 > **M5 è dichiarato mancante, non stimato.** Va letto da YouTube Studio sui video già
 > pubblicati prima di chiudere la prima categoria: senza, l'effetto delle lezioni su
 > copertine e CTR non sarebbe dimostrabile.
+
+---
+
+# RILETTURA AL GATE DELLA CATEGORIA A4 (2026-09-06)
+
+> Condizione 5 del gate (piano §9): *«baseline riletta, i numeri aggiornati, con il delta
+> scritto in chiaro»*. Misurata rieseguendo i comandi, non ricordata.
+
+| Metrica | 2026-09-04 (prima) | 2026-09-06 (dopo A4) | Delta |
+|---|---|---|---|
+| Test della fabbrica | **11/11 verdi** | **16/16 verdi** | **+5 prove**, tutte sulle regole di binario B applicate al gate |
+| Script Python | 136 | 136 | invariato — nessun file nuovo, solo file cambiati |
+| Agenti documentati | 34 | 34 | invariato |
+| Agenti con almeno una soglia numerica | **12 su 34 (35%)** | **19 su 34 (56%)** | **+7 agenti** |
+| Schede di riferimento (`references/`) | 8 | **9** | +1 (`scelta-strumenti.md`, nata dallo studio) |
+| Regole a registro | **0** | **59** | +59, tutte con prova (frame o minuto), **59 applicate** |
+| Arbitrati (`CONFLITTI.md`) | 0 | **7** | C-001 → C-007 |
+
+**Avvertenza onesta sul 35% → 56%:** il criterio del 2026-09-04 («numeri con unità nei file
+agente») non fu registrato come espressione esatta, quindi la mia misura di oggi può non essere
+identica alla sua. **La direzione però non è in dubbio e si vede file per file:** `script-writer`
+ha guadagnato il budget di parole dei primi 30 secondi, `qa-audio-video` il metro dei −35 dB e la
+chiusura sulla musica, `niche-scout` le due domande di liceità e riproducibilità, `video-producer`
+intro/outro e sincronia. **Lezione di metodo: una baseline deve registrare il COMANDO, non solo il
+numero** — altrimenti il delta si discute invece di leggerlo. Vale per la prossima categoria.
+
+## Cosa è cambiato davvero nel motore (binario B, applicato oggi)
+
+| prima | dopo |
+|---|---|
+| la **voce** del canale veniva ri-risolta a ogni generazione: bastava che Fliki cambiasse l'ordine del suo elenco e il canale cambiava voce da solo | **`voice_id` fisso** in `CANALI` per entrambi i canali, con l'`_id` reale letto dall'API |
+| `aspectRatio` era la costante `"16:9"` scritta nel payload: **Shorts impossibili**, e nessun documento diceva perché | il formato è **dichiarato dal canale** o da `--formato`, tre valori ammessi, default invariato: **la fabbrica può produrre Shorts** |
+| il piano editoriale non aveva un posto per le fonti di supporto | colonna **`fonti_extra`** |
+
+## Cosa NON è cambiato, e resta aperto
+
+- **D-1 e D-2 sono ancora aperti di proposito** (durata impossibile e `verifica_qualita()` mai
+  invocata): si chiudono al gate della categoria **A6**, col numero motivato dalla lezione sulla
+  durata ottimale. Non si tappano con una toppa scelta a caso.
+- **Il tempo per video resta NON MISURATO** (§1-bis). È la sola condizione del gate A4 che si
+  chiude con un'azione di produzione, non di studio.

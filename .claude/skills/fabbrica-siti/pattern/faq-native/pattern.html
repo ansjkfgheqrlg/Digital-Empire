@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; faq-native</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: <details> nativo. Si apre con JavaScript disattivato, non ha
+   dipendenze, e ha gia' dentro l'accessibilita' che un accordion fatto a mano
+   deve reimplementare. Origine: armageddon.css:749-812. */
+.domande {
+  max-width: min(760px, 100%);
+  margin: 0 auto;
+  padding: calc(var(--u) * 0.06) calc(var(--u) * 0.04);
+  text-align: left;   /* si LEGGONO: allineate a sinistra dentro un blocco centrato */
+}
+
+.domande__titolo {
+  margin: 0 0 clamp(16px, calc(var(--u) * 0.026), 32px);
+  font-size: clamp(34px, calc(var(--u) * 0.06), 72px);
+  line-height: 1;
+  text-align: center;
+}
+
+.q { border-top: 1px solid var(--line-hair); }
+.q:last-of-type { border-bottom: 1px solid var(--line-hair); }
+
+.q > summary {
+  display: flex; gap: 0.9em;
+  align-items: baseline; justify-content: space-between;
+  padding: clamp(15px, 2.2vw, 22px) 0;
+  font-size: clamp(15px, calc(var(--u) * 0.0165), 20px);
+  font-weight: 700; line-height: 1.35;
+  color: var(--fg);
+  cursor: pointer;
+  list-style: none;    /* Firefox e Chrome */
+}
+
+/* Safari disegna il suo triangolo se non gli si dicono ENTRAMBE le cose. */
+.q > summary::-webkit-details-marker { display: none; }
+
+.q > summary::after {
+  content: "+";
+  flex: none;
+  font-size: 1.35em; line-height: 1;
+  color: var(--orange);
+}
+
+.q[open] > summary::after { content: "\2013"; }
+.q > summary:hover { color: var(--orange); }
+
+.q__a { padding: 0 0 clamp(16px, 2.4vw, 26px); }
+.q__a p { max-width: var(--measure-body); margin: 0;
+          font-size: clamp(14px, calc(var(--u) * 0.0145), 17px);
+          line-height: var(--leading-body);
+          color: rgba(249, 249, 249, var(--t-76)); }
+.q__a strong { color: var(--fg); }
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <section class="domande" aria-labelledby="t-domande">
+    <h2 class="domande__titolo text-silver-orange" id="t-domande">Domande</h2>
+
+    <details class="q">
+      <summary>Ho gi&agrave; uno dei pezzi. Posso pagare meno?</summary>
+      <div class="q__a"><p><strong>No.</strong> Il pacchetto si compra intero ed &egrave; l&rsquo;unico modo
+      di comprarlo. Se ne hai gi&agrave; uno, stai pagando il prezzo pieno per gli altri tre &mdash;
+      <strong>fai tu il conto prima di comprare</strong>.</p></div>
+    </details>
+
+    <details class="q">
+      <summary>Mi garantite dei risultati?</summary>
+      <div class="q__a"><p><strong>No, e diffida di chi lo fa.</strong> Qui dentro c&rsquo;&egrave; un metodo
+      applicato a lavori veri. Cosa ne tiri fuori dipende da cosa vendi e da quanto ci lavori.</p></div>
+    </details>
+
+    <details class="q">
+      <summary>Come e quando ricevo l&rsquo;accesso?</summary>
+      <div class="q__a"><p>Subito dopo il pagamento, <strong>via email</strong>, all&rsquo;indirizzo che
+      inserisci alla cassa. Controlla lo spam prima di ricomprare: <strong>non pagare due volte</strong>.</p></div>
+    </details>
+  </section>
+
+</div>
+</body>
+</html>

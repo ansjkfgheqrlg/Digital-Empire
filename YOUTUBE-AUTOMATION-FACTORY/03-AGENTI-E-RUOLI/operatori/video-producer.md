@@ -129,3 +129,25 @@ nomina. Non è un difetto grave — è **una cosa che non c'è e che nessun docu
 **Cosa fai adesso, in attesa che venga deciso:** quando compili la spec, **dichiara che il video
 uscirà senza intro e senza outro**. Che sia una scelta consapevole e non una dimenticanza.
 Annotato in `BACKLOG.md`.
+
+---
+
+## 12. Il formato si genera, non si ritaglia (A4-L11-01 · 2026-09-06)
+
+Chi monta a mano ha un problema che noi **non abbiamo**, e vale la pena sapere perché.
+
+Quando un video orizzontale va portato in verticale per Shorts, Reels o TikTok, il soggetto
+finisce fuori inquadratura o resta di lato. La soluzione mostrata in A4/L11 è il **riquadro
+automatico** di Premiere: un'analisi che ritaglia e insegue il soggetto, clip per clip
+[07:47-11:06]. Funziona, e resta **una toppa su una decisione presa tardi**.
+
+**Noi generiamo direttamente nel formato di destinazione.** Da oggi il formato è dichiarato dal
+canale (`CANALI[canale]["formato"]`) o passato con `--formato`, e Fliki compone le scene **già**
+in 16:9, 9:16 o 1:1. Non c'è niente da ritagliare, perché non c'è niente di orizzontale da
+convertire.
+
+**È il terzo vantaggio strutturale che questo studio fa emergere**, dopo la sincronia gratis
+(§10) e le immagini che nascono dal nostro testo. Vale la stessa avvertenza: **i vantaggi che non
+si sanno di avere si barattano alla prima scorciatoia.** Se un giorno qualcuno proponesse di
+produrre in 16:9 e ritagliare dopo per fare gli Shorts, la risposta è già qui: **si dichiara la
+destinazione prima, non si rimedia dopo.**

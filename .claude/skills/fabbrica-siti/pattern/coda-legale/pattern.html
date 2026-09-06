@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; coda-legale</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: la coda della pagina. Disclaimer PIU' LARGO del corpo (e' scritto
+   per essere letto davvero), firma con partita IVA, e nessun link col colore di
+   default del browser. Origine: armageddon.css:814-860 + il suo difetto n.1. */
+.coda {
+  padding: calc(var(--u) * 0.05) calc(var(--u) * 0.04) calc(var(--u) * 0.06);
+  background: var(--ink-2);
+  text-align: center;
+}
+
+.coda__voci {
+  display: flex; flex-direction: column; align-items: center;
+  gap: calc(var(--u) * 0.012);
+  margin: 0 0 calc(var(--u) * 0.06); padding: 0;
+  list-style: none;
+}
+
+.coda__voce {
+  font-size: clamp(24px, calc(var(--u) * 0.042), 60px);
+  font-weight: 700; line-height: 1.1;
+  letter-spacing: var(--tracking-display);
+  text-decoration: none;
+}
+
+.coda__voce:hover, .coda__voce:focus-visible {
+  color: var(--orange);
+  text-decoration: underline; text-underline-offset: 0.12em;
+}
+
+/* La misura di lettura del legale e' PIU' LARGA di quella del corpo: 88ch
+   contro 64ch. Non e' una svista: e' scritto per essere letto davvero, che e'
+   tutto il punto di metterlo li'. */
+.coda__disclaimer {
+  max-width: var(--measure-legal);
+  margin: 0 auto 1.4em;
+  padding-bottom: 1.4em;
+  border-bottom: 1px solid rgba(249, 249, 249, 0.12);
+}
+
+.coda__firma { margin: 0; }
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <footer class="coda">
+    <ul class="coda__voci">
+      <li><a class="coda__voce text-silver-white" href="#">Fabbrica Siti</a></li>
+      <li><a class="coda__voce text-silver-white" href="#">Canone</a></li>
+      <li><a class="coda__voce text-silver-white" href="#">Pattern</a></li>
+    </ul>
+
+    <div class="legal">
+      <p class="coda__disclaimer">Questo sito e i contenuti al suo interno sono materiale a scopo
+      informativo basato sull&rsquo;esperienza di Digital Empire. I risultati mostrati non sono tipici
+      e i tuoi potrebbero variare in base a esperienza, impegno, situazione economica e contesto
+      generale.</p>
+
+      <p><a href="#">Privacy, dati, cookie e simili</a> &middot; <a href="mailto:ciao@esempio.it">ciao@esempio.it</a></p>
+      <p class="coda__firma">Digital Empire &middot; P.I. 00000000000 &middot; Indirizzo, Citt&agrave; (XX)</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

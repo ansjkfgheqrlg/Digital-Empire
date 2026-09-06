@@ -83,9 +83,9 @@ Arbitrato completo: `company/Memory/studi/aitubepro/CONFLITTI.md` **C-004**.
 
 ---
 
-## 5. I sei miti del camuffamento (A4-L06/L07/L08/L10/L14 · aggiornata 2026-09-06)
+## 5. I sette miti del camuffamento (A4-L06/L07/L08/L10/L12/L14 · aggiornata 2026-09-06)
 
-Studiando le lezioni di AI TUBE PRO sono emerse **sei affermazioni diverse** su come rendere
+Studiando le lezioni di AI TUBE PRO sono emerse **sette affermazioni diverse** su come rendere
 «proprio» un video altrui. Sono tutte false, e sbagliano **nello stesso punto**: confondono **il non
 farsi riconoscere da una macchina** con **l'essere in regola**.
 
@@ -105,14 +105,15 @@ ripetuta come acquisita da chi non l'ha mai verificata.
 | 4 | Coprire il logo con un rettangolo, ritagliare, zoomare e tradurre il testo «**serve a evitare problemi di copyright**» | L08 · 39:56, 40:37, 48:49 | Il diritto d'autore protegge **il contenuto audiovisivo**, non il logo che ci sta sopra. Coprire il marchio nasconde la provenienza, non trasferisce i diritti |
 | 5 | «**Sono 4 secondi di video** che non possono dire nulla perché siamo dentro il fair use, quindi andate super tranquilli» | L14 · 20:51 | **La stessa soglia inesistente del mito 3, con un numero diverso.** L10 diceva 5 secondi, L14 dice 4: due lezioni dello stesso corso danno due franchigie diverse per una franchigia che non esiste. Il fatto che il numero cambi è la prova che nessuno dei due l'ha letto da qualche parte |
 | 6 | «Il canale che usa quella clip non è che l'ha creata lui, quindi **il fair use decade**: non possono mai dire con certezza che noi abbiamo copiato» | L14 · 19:50 | **Il più contorto dei sei.** Confonde due domande diverse: *chi può agire* (il titolare del diritto, che resta chi ha creato l'opera, non chi la sta riusando) e *se l'uso sia lecito*. E poi trasforma una **difficoltà di prova** in una **licenza**: «non possono dimostrarlo» non ha mai voluto dire «si può fare» |
+| 7 | «Basterà incollare la voce, o artificiale o la vostra, per creare video con sottotitoli, **così che diventano video originali, unici** e che possono senza alcun problema diventare virali» | L12 · 08:36 | **La versione più economica dell'illusione, e la più diffusa.** Voce nuova e sottotitoli sono uno *strato sopra*: non toccano l'opera sotto, che resta di chi è. È lo stesso errore del mito 2, ma suona più ragionevole perché il lavoro fatto è vero — solo che il lavoro vero su materiale altrui non crea un titolo, crea un'opera derivata |
 
 **La regola di casa, in una riga:** *se una tecnica serve a non farsi riconoscere, quella tecnica
 sta ammettendo che c'è qualcosa da riconoscere.*
 
 **Come si comporta la nostra fabbrica:** non riusa materiale di terzi, quindi nessuno di questi
-sei problemi la riguarda. Questa sezione **non serve a difenderci** — serve a **non farci
+sette problemi la riguarda. Questa sezione **non serve a difenderci** — serve a **non farci
 importare quei miti** da un corso, da un video o da un collaboratore che li dà per buoni. Se
-qualcuno propone una di queste sei cose, la risposta è già scritta qui.
+qualcuno propone una di queste sette cose, la risposta è già scritta qui.
 
 ---
 
@@ -194,6 +195,12 @@ reale** — nota o sconosciuta, viva o morta — e non le mette in bocca dichiar
 fatto. Non è una questione di diritto d'autore: è **diritto all'immagine e identità personale**, e
 non si estingue perché l'immagine è sintetica. Una notizia falsa attribuita a una persona vera è
 il caso peggiore, non un caso limite.
+
+**Non è un incidente isolato, ed è questo che lo rende una regola.** La **stessa persona reale**
+compare in **due lezioni diverse** dello stesso corso: in A4/L15 le viene messa in bocca una finta
+notizia di lutto [11:36], in A4/L12 la sua immagine è usata come materiale di montaggio [01:36].
+In nessuna delle due la parola «copyright» compare mai, e nemmeno «consenso». Non è una svista di
+una lezione: è un modo di lavorare.
 
 L'unica eccezione possibile è **il consenso scritto della persona** — che per una fabbrica che
 pubblica automaticamente vuol dire, in pratica: **mai**.

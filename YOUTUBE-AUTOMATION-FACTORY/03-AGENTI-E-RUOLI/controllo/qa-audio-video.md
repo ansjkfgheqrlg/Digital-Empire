@@ -142,3 +142,27 @@ video hanno voce e basta.** Un ascolto potrà confermarlo, ma non può più camb
   non esisteva, e nessuno se n'era accorto perché un criterio che non può fallire **non fa
   rumore**. Quando trovi in checklist qualcosa che la catena non può né produrre né correggere, la
   risposta non è spuntarlo: è **chiedere che venga accertato**, come dice il §9.
+
+---
+
+## 11. L'audio ha una soglia, non un ideale (A4-L18-01 · 2026-09-06)
+
+Una lezione intera sulla registrazione della voce (A4/L18, 17 minuti con microfono e Audacity)
+non ci riguarda in niente: la nostra narrazione è sintetica. **Ma la sua conclusione sì**, ed è
+l'unica cosa che ne prendo [15:38-16:05]: *«non è tanto il fatto di massimizzare la qualità
+dell'audio… sono i contenuti e le strategie a fare la differenza. L'audio fa la differenza nel
+caso in cui è scadente».*
+
+**Tradotto nel tuo mestiere:** sei un gate, e un gate misura una **soglia**, non un ideale. Il tuo
+compito è fermare l'audio **scadente** — voce tagliata, volume irregolare, parole storpiate,
+sincronia rotta — non inseguire la perfezione su un file che nessuno ascolterà con le cuffie da
+studio.
+
+**Perché lo scrivo proprio qui.** Questo è il gate che per mesi ha bocciato video sul volume di
+una musica che **non esiste** (§10). Un gate che insegue un ideale trova sempre qualcosa da
+bocciare, e la produzione si ferma per niente. Un gate che difende una soglia lascia passare ciò
+che è buono abbastanza e blocca ciò che è rotto — che è tutto ciò che gli si chiede.
+
+**Regola pratica:** se stai per bocciare un video e non sai dire **quale spettatore** se ne
+accorgerebbe, non stai difendendo una soglia: stai inseguendo un ideale. Scrivilo nel rapporto
+come osservazione e lascia passare.

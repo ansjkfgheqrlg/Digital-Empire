@@ -16,8 +16,14 @@ fabbrica-siti/
 ├── canone/
 │   ├── canone.css          ← i valori, per il browser. Lo importano tutte e due le corsie.
 │   └── canone.json         ← gemello a macchina, lo leggerà gate_siti.py
+├── pattern/
+│   ├── _PIANO-FASE-2.md    ← il piano coi suoi quattro giri di critica (§6.20)
+│   ├── CORSIA-B.md         ← come la Corsia B avvolge un pattern vanilla
+│   ├── GALLERIA.html       ← GENERATA. Aprila: e' la prova che i pezzi stanno insieme.
+│   └── <8 cartelle>/       ← pattern.html (gira) + scheda.md (quando si', quando no)
 ├── scripts/
-│   └── canone_sync.py      ← verifica che i due canoni non divergano. PASS al 2026-09-06.
+│   ├── canone_sync.py      ← verifica che i due canoni non divergano. PASS.
+│   └── galleria.py         ← genera la galleria E controlla i pattern. PASS.
 └── README.md               ← questo file
 ```
 
@@ -43,7 +49,11 @@ fabbrica-siti/
 **Prima di consegnare**
 ```bash
 python .claude/skills/fabbrica-siti/scripts/canone_sync.py
+python .claude/skills/fabbrica-siti/scripts/galleria.py
 ```
+
+**Per vedere tutti i pattern insieme:** apri `pattern/GALLERIA.html`. E' generata, mai scritta a
+mano — un indice scritto a mano e' un debito con una data di scadenza.
 
 ---
 
@@ -63,8 +73,8 @@ conversazione.
 | Fase | Cosa | Stato |
 |---|---|---|
 | **1** | Legge + canone + ADR-023 | **CHIUSA — 2026-09-06** |
-| 2 | I 20 pattern (11 Empire + 9 da Andrei Pascu) | aperta |
-| 3 | Il flusso a 9 passi + `SKILL.md` + `emperator.md §6.20` | aperta |
+| **2** | **8 pattern** — una pagina di lancio dall'alto in basso, come codice che gira | **CHIUSA — 2026-09-06** |
+| 3 | Il flusso a 9 passi + `SKILL.md` *(la voce in dottrina, `emperator.md §6.21`, e' gia' scritta)* | aperta |
 | 4 | `gate_siti.py` (10 controlli) + `qa_sito.py` (Playwright) | aperta |
 | 5 | Collaudo: rifare `armageddon` col nostro canone + un sito Empire reale | aperta |
 

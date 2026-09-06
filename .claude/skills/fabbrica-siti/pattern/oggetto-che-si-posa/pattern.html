@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; oggetto-che-si-posa</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: l'oggetto arriva SPARSO, si compone 2,5s dopo essere stato visto,
+   e SOLO DOPO risponde al mouse. `is-locked` e' cio' che tiene fermo l'hover a
+   meta' volo: e' il dettaglio che nessuno nota e che tutti sentono.
+   Origine: armageddon.css:508-604 + IIFE. */
+.vetrina {
+  position: relative;
+  padding: calc(var(--u) * 0.09) 0 calc(var(--u) * 0.06);
+  background: var(--ink-2);
+  text-align: center;
+}
+
+/* Il riquadro sensibile e' ESATTAMENTE l'ingombro delle due carte, non la
+   sezione: passarci sopra deve voler dire passare sopra LORO. */
+.carte {
+  position: relative;
+  width: calc(var(--u) * 0.4660);
+  height: calc(var(--u) * 0.7129);
+  margin: 0 auto;
+}
+
+.carta {
+  position: absolute;
+  transition: transform var(--t-slow) var(--ease-heavy);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(165deg, #3a3a3a, #1a1a1a 60%, #0a0a0a);
+  border: 1px solid rgba(249, 249, 249, 0.10);
+  filter:
+    drop-shadow(0 calc(var(--u) * 0.012) calc(var(--u) * 0.03) rgba(0, 0, 0, 0.55))
+    drop-shadow(0 calc(var(--u) * 0.032) calc(var(--u) * 0.078) rgba(0, 0, 0, 0.45));
+}
+
+.carta--fronte {
+  z-index: 2; left: 0; top: calc(var(--u) * 0.0432);
+  width: calc(var(--u) * 0.3305); height: calc(var(--u) * 0.6297);
+  transform-origin: 50% 50%;
+  display: grid; align-content: center; gap: 0.35em;
+  padding: calc(var(--u) * 0.03);
+}
+
+.carta--retro {
+  z-index: 1; left: calc(var(--u) * 0.1551); top: calc(var(--u) * 0.0706);
+  width: calc(var(--u) * 0.3133); height: calc(var(--u) * 0.6076);
+  transform: rotate(7.16deg);
+  transform-origin: 0 0;
+}
+
+/* due stati distinti: quello in cui ARRIVANO e quello che prendono sotto il
+   mouse. `is-locked` vale solo durante l'arrivo. */
+.carte.is-sparse .carta--fronte,
+.carte:not(.is-locked):hover .carta--fronte {
+  transform: translate(calc(var(--u) * -0.03), calc(var(--u) * 0.008)) scale(1.05);
+}
+
+.carte.is-sparse .carta--retro,
+.carte:not(.is-locked):hover .carta--retro {
+  transform: translate(calc(var(--u) * 0.055), calc(var(--u) * -0.02)) rotate(8.9deg);
+}
+
+.carte.is-locked .carta { pointer-events: none; }
+
+.carta__voce { font-size: calc(var(--u) * 0.026); font-weight: 700; }
+.carta__prezzo { margin-top: 0.6em; font-size: calc(var(--u) * 0.05); font-weight: 800; }
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <section class="vetrina">
+    <div class="carte is-sparse is-locked">
+      <div class="carta carta--retro" aria-hidden="true"></div>
+      <div class="carta carta--fronte">
+        <span class="carta__voce text-silver-white">Fabbrica Siti</span>
+        <span class="carta__voce" style="opacity:.6">legge + canone</span>
+        <span class="carta__voce" style="opacity:.6">8 pattern</span>
+        <span class="carta__prezzo text-silver-orange">Empire</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var box = document.querySelector('.carte');
+  if (!box) { return; }
+
+  var posa = function () {
+    box.classList.remove('is-sparse');
+    setTimeout(function () { box.classList.remove('is-locked'); }, 900);
+  };
+
+  /* §7 del canone: il gemello in JavaScript e' obbligatorio. Con reduced-motion
+     le carte partono gia' composte e reattive, senza nessun volo. */
+  if (reduce || !('IntersectionObserver' in window)) {
+    box.classList.remove('is-sparse', 'is-locked');
+    return;
+  }
+
+  var io = new IntersectionObserver(function (voci) {
+    if (!voci[0].isIntersecting) { return; }
+    io.disconnect();
+    setTimeout(posa, 2500);
+  }, { threshold: 0.3 });
+
+  io.observe(box);
+})();
+</script>
+</body>
+</html>

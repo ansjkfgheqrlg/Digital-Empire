@@ -7,9 +7,11 @@
   "scaricato": true,
   "qualita": 360,
   "quando": "2026-09-06T21:24:10",
-  "passo": "2-trascritto",
+  "passo": "completata",
   "avviso": null,
   "parole": 1235,
   "parole_al_minuto": 137,
-  "modello": "base"
+  "modello": "base",
+  "chiusa_il": "2026-09-06",
+  "chiusa_da": "gate A4"
 }
