@@ -125,3 +125,28 @@ Le tre risposte ammesse alla domanda 5:
 **Nota di metodo:** questa regola non nasce da uno strumento che ci serviva. Non usiamo Final Cut e
 non lo useremo mai (la fabbrica non apre editor video). Nasce dall'aver visto **la manovra**, e vale
 per qualunque strumento futuro si presenti con la stessa porta.
+
+---
+
+## Una famiglia intera che non passa la domanda 4: gli avatar parlanti (A4-L15-03 · 2026-09-06)
+
+A4/L15 mostra per intero uno strumento di **avatar parlanti** (nel parlato «studio di ID»,
+verosimilmente **D-ID Studio**): diciassette passaggi, **tutti dentro un browser**. In quattordici
+minuti non compaiono mai un endpoint, una chiave, un payload. È il caso più netto incontrato finora
+della **domanda 4**: quello che si comanda solo a click non entra in una catena che genera via API.
+
+**Non è un giudizio sullo strumento**, che per un umano che monta a mano può essere ottimo. È che
+per noi il costo vero non è l'abbonamento: è **rimettere un umano davanti a uno schermo** per ogni
+video, cioè esattamente ciò che questa fabbrica esiste per non fare.
+
+**Il metro di mercato, che resta utile** (prezzi dichiarati nella lezione, min 12:44-13:09):
+
+| piano | cosa dà | prezzo |
+|---|---|---|
+| base | fino a **10 minuti** di generato | **5 $/mese** |
+| intermedio | «un'ora» | non detto |
+| Enterprise | «centinaia di video» | non detto |
+
+Serve per un confronto futuro, **non come istruzione operativa**: nessuno adotti un avatar parlante
+sulla base di questa riga. Se un giorno servisse un volto, la domanda da fare per prima resta:
+**esiste una via programmabile?** Se la risposta è no, la conversazione finisce lì.

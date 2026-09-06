@@ -1,0 +1,272 @@
+[
+  {
+    "id": "P1-001",
+    "tipo": "numero",
+    "contenuto": "Il relatore apre il video dichiarando di aver generato più di 50.000 follower su LinkedIn nell'ultimo anno e poco più di $100.000, presentandolo come il risultato personale che dimostra la sua competenza sul metodo di acquisizione clienti che sta per insegnare in tutto il video.",
+    "fonte": "O2IDhISyy8Y#0:00 (talking head, apertura) + voce 0:00-0:06",
+    "frame": "frame-001.png",
+    "ancora": "Ho generato più di 50.000 follower nell'ultimo anno solo con LinkedIn e poco più di $100.000.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-002", "tipo": "quantificato-da"}]
+  },
+  {
+    "id": "P1-002",
+    "tipo": "numero",
+    "contenuto": "Screenshot reale della dashboard LinkedIn Analytics (linkedin.com/analytics/creator/audience/) del profilo dell'autore (badge Premium 'AI Automation step by step', location Luxembourg): il riquadro Follower growth mostra 51.747 Total followers con una crescita di +4.828,3% vs prior 365 days, grafico a linea cumulativo che sale da quasi 0 (aprile 2025) a circa 52K (aprile 2026), filtro impostato su 365 days. E' la prova visiva diretta, non solo dichiarata a voce, del numero di follower citato in apertura.",
+    "fonte": "O2IDhISyy8Y#0:06 (screen recording LinkedIn analytics) + voce 0:06-0:12",
+    "frame": "frame-002.png",
+    "ancora": "51,747 Total followers",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-001", "tipo": "quantifica"}]
+  },
+  {
+    "id": "P1-003",
+    "tipo": "principio",
+    "contenuto": "Contro la credenza comune che il modo migliore per fare soldi online sia postare sui social media, l'autore sostiene che questo non è vero, specialmente nel breve termine: postare da solo non genera vendite rapide, va integrato con altre leve (come il cold outreach che introduce subito dopo).",
+    "fonte": "O2IDhISyy8Y#0:12 (talking head, stylus in mano) + voce 0:12-0:18",
+    "frame": "frame-003.png",
+    "ancora": "Tutte persone ti diranno che il miglior modo per fare soldi online è postare sui social media, ma questo non è vero, specialmente nel breve termine.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-005", "tipo": "motiva"}, {"verso": "P1-008", "tipo": "motiva"}]
+  },
+  {
+    "id": "P1-004",
+    "tipo": "numero",
+    "contenuto": "Screenshot della dashboard LinkedIn 'Analytics & tools' (Thursday, April 23): 268.972 Post impressions (+130,7% past 7 days), 51.747 Followers (+2,3% past 7 days), 9.865 Profile viewers (Past 90 days), 442 Search appearances (Previous week); sotto, il Weekly sharing tracker con obiettivo di 3 azioni a settimana superato ('318 of 3 actions') e una card che segnala 314 comments con il claim che chi commenta una volta a settimana in media vede fino a 3 volte più visualizzazioni di profilo. Nonostante questi numeri alti di post, l'autore dichiara che nell'ultimo anno, di tutti i soldi generati per la sua agenzia AI, meno del 5% è venuto da post/content creation.",
+    "fonte": "O2IDhISyy8Y#0:18 (dashboard LinkedIn Analytics & tools) + voce 0:18-0:48",
+    "frame": "frame-004.png",
+    "ancora": "Nell'ultimo anno di tutti i soldi che ho generato per la mia agenzia AI, probabilmente meno del 5% è venuto da post, quindi da content creation.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-003", "tipo": "esempio-di"}, {"verso": "P1-005", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-005",
+    "tipo": "numero",
+    "contenuto": "Stessa dashboard LinkedIn (268.972 impressions, 51.747 followers, 9.865 profile viewers, 442 search appearances, weekly sharing tracker '318 of 3 actions', card '314 comments'). L'autore rivela la vera fonte del fatturato: manda circa un centinaio di messaggi diretti (DM) a settimana; collega esplicitamente la percentuale bassa generata dai post (meno del 5%, vedi P1-004) al fatto che la maggior parte dei clienti arriva dai DM a freddo, non dal contenuto pubblicato.",
+    "fonte": "O2IDhISyy8Y#0:48 (stessa dashboard, cursore su icona Notifiche) + voce 0:48-0:54",
+    "frame": "frame-009.png",
+    "ancora": "e mando più o meno un centinaio di messaggi di EMS a settimana.",
+    "confidenza": "dedotto",
+    "relazioni": [{"verso": "P1-004", "tipo": "quantificato-da"}, {"verso": "P1-008", "tipo": "motiva"}]
+  },
+  {
+    "id": "P1-006",
+    "tipo": "numero",
+    "contenuto": "Prova con screenshot del sito Favikon (creator.favikon.com), ranking 'Top 200 Creators · IT & Tech · LinkedIn · Luxembourg': l'autore Giovanni Beggiato è in prima posizione assoluta (medaglia oro, '1#' 'NEW'), con LinkedIn Score 93,7/100, 51,7K follower LinkedIn + 10,7K su YouTube, Growth +6,95%. Il box di sintesi lo segnala come 'Rising Star' con +6,88% LinkedIn growth e 'Best Country — Luxembourg 109/109'. E' citato a voce come prova della sua autorità come creator numero uno per la categoria IT & Tech in Lussemburgo.",
+    "fonte": "O2IDhISyy8Y#0:54 (ranking Favikon IT&Tech Luxembourg) + voce 0:54-1:12",
+    "frame": "frame-010.png",
+    "ancora": "sono creator numero uno per quanto riguarda parte ET e Technology per quanto riguarda Lussemburgo",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-010", "tipo": "parte-di"}]
+  },
+  {
+    "id": "P1-007",
+    "tipo": "principio",
+    "contenuto": "Unica eccezione dichiarata alla regola 'postare non porta clienti nel breve termine' (P1-003): YouTube, perché è una piattaforma dove 'la gente può vedervi' — il formato video lungo genera fiducia/visibilità che gli altri social non generano, quindi solo lì il posting produce inbound reale.",
+    "fonte": "O2IDhISyy8Y#1:12 (talking head) + voce 1:12-1:24",
+    "frame": "frame-013.png",
+    "ancora": "a meno che non utilizzate una piattaforma come YouTube nella quale la gente può vedervi, postare nei social media non vi porterà poi così tanto in bound.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-003", "tipo": "parte-di"}]
+  },
+  {
+    "id": "P1-008",
+    "tipo": "principio",
+    "contenuto": "Introduce il cold outreach come il metodo con cui ha effettivamente costruito la maggior parte dei suoi risultati commerciali ('che è gran parte di come li ho fatti io'), posizionandolo come alternativa al content marketing puro discusso in precedenza.",
+    "fonte": "O2IDhISyy8Y#1:24 (talking head, stylus alzato) + voce 1:24-1:30",
+    "frame": "frame-015.png",
+    "ancora": "che è gran parte di come li ho fatti io, che è il cold outrich.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-003", "tipo": "alternativa-a"}, {"verso": "P1-011", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-009",
+    "tipo": "anti-pattern",
+    "contenuto": "Riporta l'obiezione più comune al cold outreach — 'nessuno vuole ricevere messaggi nella propria casella' — per poi smontarla nel resto del video mostrando esempi reali di DM ricevuti e un framework che rende i cold DM efficaci invece che fastidiosi.",
+    "fonte": "O2IDhISyy8Y#1:24 (talking head, mani alzate) + voce 1:30-1:36",
+    "frame": "frame-016.png",
+    "ancora": "nessuno vuole ricevere messaggi nella propria casella.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-008", "tipo": "contraddice"}, {"verso": "P1-011", "tipo": "corretto-da"}]
+  },
+  {
+    "id": "P1-010",
+    "tipo": "numero",
+    "contenuto": "Screenshot Favikon, ranking generale 'Top 200 Creators · LinkedIn · Luxembourg' (tutte le categorie, non solo IT&Tech): l'autore Giovanni è in 3ª posizione (bronzo) con Score 93,7/100, 51,7K+10,7K follower e Growth +6,95%, dietro Antony (oro, 96,8/100) e Xavier Bettel, Deputy Prime Minister del Lussemburgo (argento, 95/100), e davanti a Luc Frieden, Prime Minister del Lussemburgo (93,6/100). Citato a voce come 'terzo sotto al primo ministro per quanto riguarda crescita su LinkedIn'.",
+    "fonte": "O2IDhISyy8Y#1:36 (ranking Favikon generale Luxembourg) + voce 1:01-1:05 (citazione riportata nell'analisi, timestamp non coincidente col frame)",
+    "frame": "frame-017.png",
+    "ancora": "sono il terzo sotto al primo ministro per quanto riguarda crescita su LinkedIn",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-006", "tipo": "quantificato-da"}]
+  },
+  {
+    "id": "P1-011",
+    "tipo": "struttura",
+    "contenuto": "Framework completo 'LE CARATTERISTICHE DI UN COLD DMs' scritto per intero sulla lavagna Excalidraw, presentato come lista di 5 caratteristiche che un cold DM efficace deve avere, nell'ordine esatto: '1. Personalizzato', '2. Chiarire chi sei e perché devo leggere', '3. Dare qualcosa', '4. Micro commitment', '5. Poco attrito'. Questo è lo scheletro usato per tutto il resto del video per valutare (con segni di spunta verdi o X rosse) i DM reali ricevuti dall'autore.",
+    "fonte": "O2IDhISyy8Y#1:48 (whiteboard Excalidraw, titolo capitolo) + voce 1:48-2:06",
+    "frame": "frame-019.png",
+    "ancora": "1. Personalizzato / 2. Chiarire chi sei e perché devo leggere / 3. Dare qualcosa / 4. Micro commitment / 5. Poco attrito",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-013", "tipo": "parte-di"}, {"verso": "P1-022", "tipo": "precede"}, {"verso": "P1-027", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-012",
+    "tipo": "esempio",
+    "contenuto": "Template icebreaker generico basato su variabili dinamiche, scritto per intero sulla lavagna: 'Ciao {{nome}},' seguito da '{{icebreaker}}'. Rappresenta lo schema standard usato in automazioni AI per personalizzare email/DM di massa (nome + riga di apertura generata da AI). L'autore introduce questo schema per poi spiegare, nella scena successiva, perché non è la strategia più efficace nonostante sembri personalizzato.",
+    "fonte": "O2IDhISyy8Y#2:30 (whiteboard Excalidraw, template icebreaker) + voce 2:30-3:00",
+    "frame": "frame-026.png",
+    "ancora": "Ciao {{nome}}, / {{icebreaker}}",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-011", "tipo": "esempio-di"}, {"verso": "P1-013", "tipo": "corretto-da"}]
+  },
+  {
+    "id": "P1-013",
+    "tipo": "definizione",
+    "contenuto": "Effetto Barnum, definito e scritto per intero sulla lavagna: 'EFFETTO BARNUM: frase \"unversali-specifiche\" che sembrano personalizzate' (con refuso a schermo 'unversali' per 'universali'). Spiegazione estesa scritta subito sotto: 'Questa è la base di ogni oroscopo o lettura della mano. Consiste nel fare affermazioni \"universali-specifiche\": frasi che sembrano personali ma che valgono per chiunque.' Esempio completo scritto e letto a voce parola per parola: 'Hai una grande necessità di piacere agli altri, ma tendi a essere molto critico con te stesso.' (con sottolineatura sulla parte 'molto critico con'). L'autore valida l'efficacia della frase con una domanda retorica: 'Esiste qualcuno a cui fa piacere, non piacere agli altri?' — dimostrando che la frase, pur sembrando su misura, si applica a chiunque, esattamente come un oroscopo.",
+    "fonte": "O2IDhISyy8Y#3:00 (whiteboard Excalidraw, titolo Effetto Barnum) + voce 3:00-4:24",
+    "frame": "frame-031.png, frame-033.png, frame-038.png, frame-040.png",
+    "ancora": "EFFETTO BARNUM: frase \"unversali-specifiche\" che sembrano personalizzate",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-012", "tipo": "corretto-da"}, {"verso": "P1-014", "tipo": "precede"}, {"verso": "P1-015", "tipo": "motiva"}]
+  },
+  {
+    "id": "P1-014",
+    "tipo": "definizione",
+    "contenuto": "Rainbow Ruse (nell'analisi visibile a schermo tagliato come 'RAINBOW RUSE: L'Inganno arcobaleno'), secondo concetto chiave introdotto come contrapposto/complementare all'Effetto Barnum. Definizione scritta per intero sulla lavagna: 'Si attribuisce a una persona un tratto della personalità e il suo esatto opposto nello stesso momento.' (con 'esatto opposto' sottolineato). Esempio completo scritto e in parte letto a voce: 'Di solito sei una persona socievole e aperta, ma ci sono momenti in cui ti chiudi in te stessa e diventi molto riservata.' L'autore ne spiega il meccanismo ingannevole: attribuendo un tratto e il suo opposto contemporaneamente, la frase risulta sempre vera per chiunque, generando la sensazione 'Oh, magari mi conosce questa persona, no?'.",
+    "fonte": "O2IDhISyy8Y#4:24 (whiteboard Excalidraw, titolo Rainbow Ruse) + voce 4:24-4:48",
+    "frame": "frame-045.png, frame-047.png, frame-048.png",
+    "ancora": "Si attribuisce a una persona un tratto della personalità e il suo esatto opposto nello stesso momento.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-013", "tipo": "corretto-da"}, {"verso": "P1-015", "tipo": "motiva"}]
+  },
+  {
+    "id": "P1-015",
+    "tipo": "principio",
+    "contenuto": "L'autore giustifica perché va bene usare frasi generiche tipo Barnum/Rainbow Ruse anche se non si applicano al 100% dei destinatari: disegna un diagramma a cerchio con una fetta verde grande (la maggioranza delle persone per cui il messaggio generico 'funziona' e si sente rispecchiata, con associazioni tipo legami 'FAMILIARE' o 'EVENTI' di networking) e una fetta rossa sottile (la minoranza che reagisce con 'Madonna ma cosa fai? Queste cose qui per me non vanno bene'). Conclusione numerica esplicita: nel 99% dei casi la frase generica può essere corretta, il restante ~1% la rifiuta ed è un costo accettabile.",
+    "fonte": "O2IDhISyy8Y#5:00 (diagramma cerchio verde/rosso su lavagna) + voce 5:00-6:12",
+    "frame": "frame-051.png, frame-057.png, frame-062.png",
+    "ancora": "però nel 99% dei casi questa frase può essere può essere corretta, no?",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-013", "tipo": "motiva"}, {"verso": "P1-014", "tipo": "motiva"}]
+  },
+  {
+    "id": "P1-016",
+    "tipo": "numero",
+    "contenuto": "A supporto del punto 2 del framework ('Chiarire chi sei e perché devo leggere'), l'autore mostra uno screenshot reale e oscurato per privacy del pannello risposte Typeform ('Agency Roadmap - 101 Mentorship Program', admin.typeform.com): il tab Responses conta 157 risposte ricevute in un dato periodo (filtro 'Apr 1, 2026 - Today'). Dichiara a voce di aver ricevuto 157 richieste di consulenza nelle ultime 48 ore, più altre persone (12-13 da un video) che vogliono saltare direttamente in call — prova concreta che il suo calendario è già pieno di richieste in entrata, quindi ogni DM che gli manda deve avere un motivo chiarissimo per essere letto.",
+    "fonte": "O2IDhISyy8Y#7:30 (screenshot Typeform Responses, dato oscurato per privacy) + voce 7:30-8:36",
+    "frame": "frame-076.png, frame-081.png, frame-082.png",
+    "ancora": "ho ricevuto 157",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-011", "tipo": "esempio-di"}]
+  },
+  {
+    "id": "P1-017",
+    "tipo": "principio",
+    "contenuto": "Punto 3 del framework ('Dare qualcosa') introdotto dal concetto scritto in rosso sulla lavagna: 'NESSUNO È SPECIALE'. L'autore spiega che entrando nel mondo dell'imprenditoria o della vendita bisogna 'ucciderci l'ego': se ci si rivolge a uno sconosciuto chiedendo soldi/tempo senza dare nulla prima, nessuno risponde, indipendentemente da quanto ci si senta qualificati.",
+    "fonte": "O2IDhISyy8Y#9:06 (lavagna, annotazione rossa 'NESSUNO È SPECIALE') + voce 9:06-9:42",
+    "frame": "frame-092.png, frame-096.png",
+    "ancora": "NESSUNO È SPECIALE",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-011", "tipo": "parte-di"}, {"verso": "P1-018", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-018",
+    "tipo": "principio",
+    "contenuto": "Sviluppo del punto 'NESSUNO È SPECIALE' (P1-017): annotazione rossa completa sulla lavagna, 'PROFESSIONALITA' VALGA QUALCOSA X L'ALTRA PERSONA' (X = per). L'autore spiega che la propria professionalità/esperienza acquisita vale solo se è rilevante per chi la riceve, non in assoluto: esempio concreto, aver costruito un sito web o aver lavorato 10 anni per un'azienda come Google non ha alcuna rilevanza per un potenziale cliente se non è in target con quello che gli si sta vendendo.",
+    "fonte": "O2IDhISyy8Y#9:42 (lavagna, annotazione 'PROFESSIONALITA VALGA QUALCOSA X L'ALTRA PERSONA') + voce 9:42-10:24",
+    "frame": "frame-098.png, frame-103.png, frame-104.png",
+    "ancora": "La vostra professionalità vale, ma non ha alcun valore quando e se non è in target con quello che state vendendo.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-017", "tipo": "parte-di"}, {"verso": "P1-019", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-019",
+    "tipo": "principio",
+    "contenuto": "Conclusione del ragionamento su professionalità (P1-018): l'unica vera 'moneta' di credibilità verso chi non ti conosce sono i case study, cioè risultati verificabili mostrati ('hai fatto un sito? l'hai messo da qualcuno? che risultati hai?'), perché oggi chiunque può scrivere qualsiasi cosa su LinkedIn senza che sia verificabile — solo i case study concreti fanno la differenza in un primo contatto senza storico di interazione.",
+    "fonte": "O2IDhISyy8Y#10:24 (lavagna, annotazione 'CASE STUDY') + voce 10:24-10:42",
+    "frame": "frame-105.png, frame-107.png",
+    "ancora": "l'unica vostra moneta qui sono i case study, ok?",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-018", "tipo": "parte-di"}, {"verso": "P1-017", "tipo": "parte-di"}]
+  },
+  {
+    "id": "P1-020",
+    "tipo": "principio",
+    "contenuto": "Punto 4 del framework ('Micro commitment'), spiegato meccanicamente: quando in un'email/DM si chiede al destinatario un piccolo passo (anche minimo) per ottenere qualcosa di gratuito e questo dice già di sì a quel piccolo passo, diventa psicologicamente più semplice che la stessa persona dica di sì anche alle richieste successive più impegnative. E' il principio di coerenza applicato in sequenza alle richieste del DM.",
+    "fonte": "O2IDhISyy8Y#10:42 (lavagna, sottolineatura verde su 'Micro commitment') + voce 10:42-11:36",
+    "frame": "frame-108.png, frame-113.png",
+    "ancora": "Nel momento in cui noi chiediamo e una persona dice già di sì ad un qualcosa, anche se piccolo, è più semplice che poi l'altra la persona dica di sì a qualcosa o alle nostre richieste successive.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-011", "tipo": "parte-di"}]
+  },
+  {
+    "id": "P1-021",
+    "tipo": "esempio",
+    "contenuto": "Primo DM reale ricevuto dall'autore su LinkedIn, riportato per intero via screenshot incollato in Excalidraw. Intestazione professionale del mittente: 'Senior Full Stack Developer | Angular | Node.js | MongoDB | AWS | Building Scalable SaaS Platforms | Remote-First Engineer for Clients …' (datata APR 13). Titolo del messaggio: 'Experienced Full Stack Engineer – Open to Remote Roles'. Testo integrale del messaggio: 'Hi, I'm Shakeel. I spend most of my time working on web products and solving practical problems for teams. I'm currently open to new collaborations. Some recent work: https://[nome-progetto-oscurato].vercel.app/ Best,' (nome mittente e firma oscurati con rettangoli blu per privacy). L'autore nota che l'headline del mittente è stata scelta 'apposta vaga' per dimostrare che il framework si applica a qualsiasi settore, non solo al suo.",
+    "fonte": "O2IDhISyy8Y#11:36 (screenshot DM reale incollato in Excalidraw) + voce 11:36-12:18",
+    "frame": "frame-117.png, frame-119.png",
+    "ancora": "Hi, I'm Shakeel. I spend most of my time working on web products and solving practical problems for teams. I'm currently open to new collaborations. Some recent work: https://[nome-progetto-oscurato].vercel.app/ Best,",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-011", "tipo": "esempio-di"}, {"verso": "P1-022", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-022",
+    "tipo": "procedura",
+    "contenuto": "Valutazione del DM di Shakeel (P1-021) contro il framework a 5 punti (P1-011), fatta dal vivo sulla lavagna con X rosse su ogni punto — bocciatura totale 0/5: (1) Personalizzato → NO, 'non c'è nemmeno il mio nome'; (2) Chiarire chi sei e perché devo leggere → NO, non chiaro; (3) Dare qualcosa → NO, 'non ho ricevuto niente, anzi mi stai prendendo qualcosa che è il mio tempo'; (4) e (5) valutati insieme come falliti (una freccia blu collega i punti 3-4-5); (5) Poco attrito → NO, perché per avere poco attrito serve dare qualcosa in cambio dell'attenzione richiesta, e qui non si riceve nulla. Conclusione dell'autore: è un messaggio a cui non risponde.",
+    "fonte": "O2IDhISyy8Y#12:18 (lavagna, framework + screenshot DM affiancati, X rosse progressive) + voce 12:18-13:48",
+    "frame": "frame-124.png, frame-129.png, frame-134.png",
+    "ancora": "Poi c'è poco attrito? No, perchè? Perchè per avere poco attrito devo avere poco attrito nel cosa? nel ricevere questo qualcosa e io non sto ricevendo niente.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-021", "tipo": "esempio-di"}, {"verso": "P1-011", "tipo": "esempio-di"}, {"verso": "P1-023", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-023",
+    "tipo": "numero",
+    "contenuto": "Grafico cartesiano disegnato sulla lavagna per spiegare la curva dell'attenzione di chi riceve un cold DM/cold email: asse X con i valori 0, 3, 4 (secondi); la curva resta alta e quasi piatta fino al secondo 3, poi crolla bruscamente verso il secondo 4 fino quasi a zero. Conclusione operativa: il destinatario decide se continuare a leggere nei primi 3 secondi, corrispondenti a circa una riga e mezza di testo (evidenziata con un cerchio verde sul DM di Shakeel: 'Hi, I'm Shakeel. I spend most of my time working on web') — è lì, non nel resto del messaggio, che si gioca il successo o il fallimento del cold DM.",
+    "fonte": "O2IDhISyy8Y#13:48 (grafico curva attenzione + cerchio verde su prima riga e mezza del DM) + voce 13:48-14:24",
+    "frame": "frame-139.png",
+    "ancora": "nel cold email o cold DMs fa questo fino ai 3 secondi e dopo fa così. Quindi questo significa che se voi volete avere un code DM su LinkedIn di successo dovete riuscire a giocare [...] non solo nei primi 3 secondi, ma in queste ehm prima riga e mezza.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-021", "tipo": "esempio-di"}, {"verso": "P1-024", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-024",
+    "tipo": "esempio",
+    "contenuto": "Secondo DM reale ricevuto dall'autore, riportato per intero via screenshot incollato in Excalidraw. Intestazione mittente: '[nome oscurato] · 2nd' con headline 'Operations Executive @ Zeekeo | Helping B2B teams turn trust + consistent follow-ups into a predictable pipeline', datato APR 6, ore 12:46 PM. Oggetto: 'Early-stage growth question'. Testo integrale del messaggio: 'Hi Giovanni, congrats on getting AI Automation Founders off the ground. Quick one, when things get busy, do you find follow-up slips a bit, or have you already got that side sorted?'. A differenza del DM di Shakeel (P1-021), questo nomina il destinatario per nome e pone una domanda specifica sul follow-up.",
+    "fonte": "O2IDhISyy8Y#13:54 (screenshot secondo DM reale incollato in Excalidraw) + voce 13:54-14:24",
+    "frame": "frame-140.png",
+    "ancora": "Hi Giovanni, congrats on getting AI Automation Founders off the ground. Quick one, when things get busy, do you find follow-up slips a bit, or have you already got that side sorted?",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-011", "tipo": "esempio-di"}, {"verso": "P1-025", "tipo": "precede"}, {"verso": "P1-027", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-025",
+    "tipo": "principio",
+    "contenuto": "Sottolineando la parola 'follow-up' nel DM di Zeekeo (P1-024), l'autore introduce il principio centrale della sequenza multi-step: chiunque sia in business sa che i soldi non arrivano quasi mai al primo messaggio, né nelle cold email né nei cold DM, ma generalmente nel secondo messaggio — da qui la necessità di costruire una sequenza a tre step invece di aspettarsi risultati dal singolo invio.",
+    "fonte": "O2IDhISyy8Y#14:24 (lavagna, sottolineatura verde su 'follow-up' nel DM Zeekeo) + voce 14:24-14:54",
+    "frame": "frame-145.png",
+    "ancora": "i soldi non sono mai nel primo messaggio, neanche con le cold email, ma i soldi vengono generalmente nel secondo messaggio.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-024", "tipo": "motiva"}, {"verso": "P1-026", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-026",
+    "tipo": "numero",
+    "contenuto": "Tassi di risposta ipotetici per una sequenza cold DM a 3 step, disegnati come tre cerchi verdi numerati 1→2→3 collegati da frecce, con correzione dal vivo sulla lavagna: primo messaggio ~20% di risposta; secondo messaggio inizialmente scritto '40%' poi corretto a voce e sulla lavagna a '50%' ('anzi facciamola a 50'); terzo messaggio 30%, motivato dal fatto che a quel punto 'è estremamente probabile che al terzo vi accoltellino'. Tassi finali dichiarati: 20% / 50% / 30%. L'autore li presenta come stima realistica di cosa aspettarsi da una sequenza di follow-up, sottolineando che chi non fa questa parte 'sta lasciando soldi sul tavolo': al primo messaggio in genere non risponde nessuno, le risposte (anche positive) iniziano ad arrivare dal secondo e dal terzo.",
+    "fonte": "O2IDhISyy8Y#14:54 (tre cerchi 1-2-3 con percentuali, correzione dal vivo) + voce 14:54-15:36",
+    "frame": "frame-150.png, frame-155.png, frame-157.png",
+    "ancora": "e sul terzo messaggio, anzi facciamola a 50 perché è estremamente probabile che al terzo vi accoltellino, ma è del 30%.",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-025", "tipo": "quantifica"}, {"verso": "P1-027", "tipo": "precede"}]
+  },
+  {
+    "id": "P1-027",
+    "tipo": "procedura",
+    "contenuto": "Valutazione del DM di Zeekeo (P1-024) contro il framework a 5 punti (P1-011), avviata dopo la sezione sui tassi di risposta: punto '1. Personalizzato' ricevé un segno di spunta verde (✓) — a differenza del DM di Shakeel (bocciato in P1-022) — perché nomina esplicitamente 'Giovanni' e cita 'AI Automation Founder', la community specifica dell'autore. Punto '2. Chiarire chi sei e perché devo leggere' ricevé invece una X rossa, perché il mittente non si presenta né spiega chi è: 'non so chi sia'. Punto '3. Dare qualcosa' non ancora valutato in questa scena, ultima delle 63 coperte in questa parte.",
+    "fonte": "O2IDhISyy8Y#15:54 (framework applicato al secondo DM, primo segno di spunta verde) + voce 15:54-16:00 (fine scena 63)",
+    "frame": "frame-160.png",
+    "ancora": "Allora, è personalizzato. Beh, sì, corretto. C'è il mio AI Automation Founder. Allora, chiarire chi sei e perchè devo leggere? No, allora questo non è stato chiarito, non so chi sia...",
+    "confidenza": "osservato",
+    "relazioni": [{"verso": "P1-024", "tipo": "esempio-di"}, {"verso": "P1-011", "tipo": "esempio-di"}, {"verso": "P1-022", "tipo": "contraddice"}]
+  }
+]

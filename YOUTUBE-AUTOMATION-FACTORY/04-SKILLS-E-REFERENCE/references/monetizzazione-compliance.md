@@ -169,3 +169,46 @@ principio in forma generale sta in `03-AGENTI-E-RUOLI/operatori/niche-scout.md` 
 legittima e utile su **audio nostro** — una traccia registrata male, una voce coperta dalla musica
 [L16 · 06:18]. La linea è semplice e vale per qualunque strumento del genere: **si separa ciò di
 cui si hanno i diritti.**
+
+---
+
+## 8. Il volto e la voce: due porte chiuse sul generativo (A4-L15-01/02 · 2026-09-06)
+
+Le sezioni precedenti riguardano il **materiale altrui riusato**. Questa riguarda il **materiale
+generato**, ed è lo stesso errore spostato di un passo: là si credeva che modificare un video di
+altri creasse un diritto, qui si crede che **generarlo** lo crei. **Generare non è acquisire un
+titolo.**
+
+Le due manovre vengono dalla stessa lezione (A4/L15, tutorial di uno strumento di avatar parlanti),
+mostrate come normali esercizi tecnici, **senza una sola parola di avvertimento**.
+
+### 8.1 Il volto e la voce di una **persona reale** — mai
+
+Nella lezione, un avatar legge una **finta notizia di lutto** su un cantante italiano **realmente
+esistente** [11:36-11:48], e il commento è: «abbiamo dato anche un volto all'intelligenza
+artificiale». Niente sul consenso, niente sul diritto all'immagine, niente sul fatto che quella
+sia **una notizia falsa** con voce e faccia di una persona viva.
+
+**Regola di casa:** la fabbrica non genera **volto, voce o sembianze riconoscibili di una persona
+reale** — nota o sconosciuta, viva o morta — e non le mette in bocca dichiarazioni che non ha
+fatto. Non è una questione di diritto d'autore: è **diritto all'immagine e identità personale**, e
+non si estingue perché l'immagine è sintetica. Una notizia falsa attribuita a una persona vera è
+il caso peggiore, non un caso limite.
+
+L'unica eccezione possibile è **il consenso scritto della persona** — che per una fabbrica che
+pubblica automaticamente vuol dire, in pratica: **mai**.
+
+### 8.2 I **personaggi protetti** generati dall'AI restano di chi sono
+
+Nella stessa lezione si genera un ritratto con prompt «qualcosa che ha a che fare con **Dragon
+Ball**… e **Goku**» e lo si fa parlare [09:08 → 10:52]. Dragon Ball è di **Toei Animation / Bird
+Studio**. Nessuna parola sul diritto d'autore.
+
+**Regola di casa:** che l'immagine esca da un modello generativo **non cambia di chi è il
+personaggio**. Un modello addestrato su opere protette può restituirne di riconoscibili: la
+riconoscibilità è il problema, non lo strumento. Non generiamo, non pubblichiamo e non mettiamo in
+miniatura personaggi, mascotte, loghi o stili identificabili di terzi.
+
+**Il metro pratico, in una riga:** *se un umano guardando l'immagine sa dire di chi è il personaggio
+o chi è la persona, allora quel diritto è di qualcun altro — e l'ha generato una macchina non
+cambia una virgola.*
