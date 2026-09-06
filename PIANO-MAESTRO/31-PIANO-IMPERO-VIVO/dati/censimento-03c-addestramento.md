@@ -320,3 +320,245 @@ tutti.** Oggi vivono in una cartella che nessuna forza schierata apre mai.
    un pezzo si dimentica.
 3. **La biblioteca non ha lettori.** F1 esiste dal 2026-09-02 e `CP-20260902-002` dichiara che
    *«non ha ancora alimentato nessuno»*: le forze non sanno nemmeno di poterla chiamare.
+
+---
+
+## SEZIONE 2 — L'ADDESTRAMENTO
+
+> **PROGETTO:** nulla di questa sezione esiste oggi come file. Le fonti sono censite in
+> Sezione 1; le regole vengono da 03b (gerarchia) e 03b2 (le 29 regole pagate con 33 cadute).
+
+### 2.0 Il vincolo che decide tutto — l'addestramento si paga N volte
+
+Un ingaggio non e' una lezione: e' una **spesa ripetuta**. Ogni carattere del minimo comune si
+paga **a ogni singola forza, a ogni singolo ingaggio**. In questa stessa sessione sono schierate
+**14 forze**: cio' che costa 1.000 token per forza costa 14.000 token alla notte, e non produce
+una riga di lavoro.
+
+Conversione usata in tutta la sezione: **1 token ≈ 3,8 caratteri** di italiano corrente. Le
+misure di partenza sono quelle prese in Sezione 1.
+
+| Cosa si potrebbe dare a ogni forza | Caratteri | ≈ token | × 14 forze |
+|---|---:|---:|---:|
+| **Minimo comune proposto (§2.1)** | **976** | **~260** | **~3.600** |
+| `10-METODO-CICLO-FASE.md` intero | 5.635 | ~1.480 | ~20.700 |
+| `CLAUDE.md` intero | 6.745 | ~1.775 | ~24.850 |
+| `PRINCIPI.md` + `REGOLE.md` | 6.404 | ~1.685 | ~23.600 |
+| `empire-context/SKILL.md` intero | 8.634 | ~2.270 | ~31.800 |
+| `conoscenza-empire.md` intero | 13.070 | ~3.440 | ~48.200 |
+| `MANDATO-EMPIRE.md` intero | 14.420 | ~3.795 | ~53.100 |
+| `company/Memory/INDEX.md` | 88.232 | ~23.220 | ~325.000 |
+| `wiki/index.md` | 273.302 | ~71.920 | ~1.007.000 |
+| `STATO-EMPIRE.md` | 746.109 | ~196.345 | **~2.749.000** |
+
+L'ultima riga non e' un'ipotesi teorica: **e' la causa dichiarata del gruppo A1 di 03b2 —
+9 episodi distinti di forze morte per limite di budget.** E il caso 1 lo dice in modo ancora
+piu' netto: *«prompt agenti troppo READ-HEAVY: bruciavano il budget leggendo reference PRIMA di
+scrivere, morivano prima di produrre valore»* — 4 agenti morti, **1 file su 62**; il re-run con
+la struttura inline passa *«da 1 file/21 tool_use a 16 file/20 tool_use»*.
+
+**Conclusione che governa tutto il resto:** l'addestramento non e' «quanto sa la forza», e'
+**quanto poco basta perche' non faccia danni**. Ogni riga in piu' va giustificata con una caduta
+che quella riga avrebbe evitato. Se non c'e' la caduta, la riga esce.
+
+---
+
+### 2.1 IL MINIMO COMUNE — cio' che ogni forza deve sapere prima di muovere un dito
+
+**10 righe. 976 caratteri. ~260 token.** Misurato, non stimato a occhio.
+
+```
+LEGGE COMUNE DELL'IMPERO — vale per ogni forza, sempre
+1. ITALIANO in ogni riga, rapporto compreso.
+2. NON INVENTI: nessuna affermazione senza un file che hai aperto, citato col path.
+   Numero che non hai = [DM], mai una cifra plausibile.
+3. SCRIVI SUBITO: crea il file d'uscita entro il primo minuto e risalvalo a ogni
+   sezione finita. Chi cade deve lasciare il lavoro fatto.
+4. PERIMETRO: scrivi SOLO nei path del tuo incarico. Tutto il resto e' sola lettura.
+   Mai company/Memory/, mai wiki/log.md, mai i file di altre forze.
+5. NON TI ALLARGHI: se trovi altro da fare, non lo fai — lo elenchi in fondo al rapporto.
+6. IDEMPOTENTE: rieseguirti due volte non deve rompere ne' duplicare nulla.
+7. NON DELEGHI il tuo incarico ad altri agenti.
+8. FATTO = un comando che lo dimostra, non una tua dichiarazione. Nel rapporto scrivi
+   cosa hai scritto davvero e cosa no.
+9. SE CADI a meta': lascia il file com'e'. Chi riprende rilegge il file e riparte dalla
+   prima sezione mancante.
+```
+
+**Perche' esattamente queste nove, e nessun'altra.** Ognuna ha un morto alle spalle:
+
+| # | Nasce da | Prova |
+|---|---|---|
+| 1 | direttiva permanente di Max sulla lingua | emperator.md riga 118: *«Nei prompt agli scagnozzi imponi la lingua... Si risolve a monte»* |
+| 2 | regole 13 e 17 di 03b2 | caso 23 (numeri inventati sostituiti con `[DM]`), caso 27 (61 lead che non esistono come file), R6+R7 dell'Ispettorato |
+| 3 | **regola 8 [MECCANICA]** di 03b2 | casi 8, 9, 12, 29 — 175 scene su 352 perse; antidoto gia' provato due volte |
+| 4 | invariante ADR-015 + passo 3 di ADR-006 | *«divieto di scrivere su wiki/log.md e Memory/ (solo il conductor)»*; caso 22 (swarm che si sovrascrivono), caso 33 (checkpoint sovrascritto) |
+| 5 | quarta parte obbligatoria del prompt Sentinella | emperator.md riga 1369 |
+| 6 | ADR-006 passo 2 | *«ogni task/prompt deve poter ripartire a meta' senza duplicare»* |
+| 7 | ADR-015 §1.2 di 03b | le forze non schierano altre forze |
+| 8 | regole 15 e 16 di 03b2 | casi 10 e 28: *«le sentinelle morte avevano dichiarato lavoro fatto... che non risultava vero sul disco»* |
+| 9 | regola 20 di 03b2 | casi 29 e 32: la ripresa parte dal disco, non dal racconto |
+
+**Cosa il minimo comune NON contiene — e perche' toglierlo e' la decisione piu' importante:**
+
+- **Niente memory-first (ADR-002/REGOLA ZERO).** Sembra un'eresia, ed e' invece l'unica scelta
+  difendibile: `STATO-EMPIRE.md` vale ~196.000 token e `INDEX.md` ~23.000. Imporre il RECALL a
+  14 forze significa spendere 2,7 milioni di token in lettura prima di una riga di lavoro — cioe'
+  ricreare esattamente il caso 1 e il gruppo A1. **Il RECALL resta di Emperator**, che lo fa una
+  volta e travasa nel prompt le 3-6 righe che servono a quella forza (§3, blocco `CONTESTO`).
+  Nessuna forza deve *scoprire* il contesto: deve *riceverlo* gia' distillato.
+- **Niente Mandato integrale** (3.795 token): gli Articoli 1, 3, 6 non toccano mai una forza di
+  censimento o di bonifica. Art. 2 (prove non promesse) e Art. 7 (zero segreti) entrano nel
+  terreno di chi scrive copy e di chi tocca credenziali, non nel minimo comune.
+- **Niente offerta, prezzi, 10 ecosistemi, storia dell'Impero.** Sono contesto d'azienda, non
+  regole di condotta: una forza che conta file non ne fa nulla, e le paga comunque.
+- **Niente elenco degli ADR.** Un riferimento nudo («rispetta ADR-008») a freddo non e'
+  addestramento, e' rumore: l'agente non sa cosa sia e non ha budget per andarlo a leggere.
+  Cio' che di un ADR serve, **si scrive per esteso** dentro la regola (come nelle 9 righe sopra).
+
+---
+
+### 2.2 L'ADDESTRAMENTO DI TERRENO — solo per chi tocca quell'ambito
+
+Il terreno **non si somma al minimo comune per tutti**: si aggiunge **solo alla forza che entra
+in quell'ambito**, e solo il blocco che le serve. Ogni blocco e' progettato per stare **sotto le
+15 righe** (~400 token), perche' oltre quella soglia si torna nel caso 1.
+
+| Terreno | Chi lo riceve | Righe | ≈ token | Forma consigliata |
+|---|---|---:|---:|---|
+| T1 codice dell'Impero | chi scrive o modifica file di codice/agenti | 12 | ~330 | blocco inline |
+| T2 copy | chi produce testo che esce verso l'esterno | 10 | ~290 | inline + `subagent_type` esistente |
+| T3 soldi | chi spende, o scrive un numero di cassa | 8 | ~230 | inline + rimando a reparto |
+| T4 account e credenziali | chi tocca `.env`, sessioni, chiavi | 7 | ~200 | inline, **divieti secchi** |
+| T5 video | chi produce, monta o pubblica video | 10 | ~290 | inline + `subagent_type` esistente |
+
+#### T1 — IL CODICE DELL'IMPERO
+
+```
+TERRENO CODICE
+- ADR-003: un sistema attivo non si riscrive, si avvolge. `Outreach/Outreach Workflow/`
+  e' in produzione: non lo tocchi senza un sostituto gia' validato.
+- ADR-013: niente blob pesanti nella storia git. Video, zip, PNG di copertina, DB lead,
+  .env e sessioni browser non entrano nel repo (ADR-004).
+- La console e' cp1252: ogni script che stampa emoji va lanciato con PYTHONIOENCODING=utf-8.
+- `sed` col delimitatore `|` rompe le righe di tabella markdown: per quelle usa Python.
+- Frontmatter di un agente: un `": "` non quotato dentro `description` fa sparire l'agente
+  IN SILENZIO. Description su una riga sola, fra virgolette.
+- Un controllo che verifica solo l'esistenza di un file non e' un controllo: provalo contro
+  lo scheletro vuoto. Se lo scheletro passa, il controllo non esiste.
+- Il ramo di errore di un indicatore non e' mai verde.
+```
+*Fonti:* ADR-003, ADR-004, ADR-013 · `EMP-URQ7.md` trappole 7 e 8 · nota di costruzione in
+`conoscenza-empire.md` (*«successo davvero il 2026-08-31: 85 skill su 296 erano mute per
+questo»*) e caso 15 di 03b2 (4 agenti morti per due caratteri) · regole 21 e 22 di 03b2
+(casi 6, 25, 26). *Forze gia' esistenti da preferire:* `sentinel-drift`, `sentinel-security`,
+`caveman:cavecrew-investigator` per la sola lettura.
+
+#### T2 — IL COPY
+
+```
+TERRENO COPY
+- Framework obbligatorio APSOC (Attenzione-Problema-Soluzione-Obiezioni-CTA), gate >= 80/100.
+- Mandato Art. 2: prove, non promesse. Nessun claim senza il numero e la sua fonte.
+- Marca CCM (fonte: company/02-info-business/ccm/brand/CCM-Brand-Guidelines.pdf):
+  · l'arancione #fb4604 e' il colore dell'azione, sotto il 10% dell'area — non e' l'identita',
+    il concorrente diretto usa lo stesso identico arancione;
+  · la firma e' l'argento su fondo inchiostro, ed e' cio' che ci riconosce col logo coperto;
+  · la grana non si spegne mai, e in stampa e' un PNG ripetuto, MAI un filtro SVG.
+- Non consegni copy senza passare dal gate: chi scrive non si approva da solo.
+```
+*Fonti:* `empire-context/SKILL.md` §2 e §4 · Mandato Art. 2 e Art. 4 · `conoscenza-empire.md`
+§3 «REGOLA DI MARCA» · ADR-006 passo 5. *Forze gia' esistenti:* `cro-copy-architect`,
+`sentinel-brandvoice`, `guild-copy-apsoc`. **Una forza generica non scrive copy: si passa il
+lavoro all'agente di terreno che esiste gia'** (emperator.md §6-bis.2: *«non duplicare cio' che
+l'Impero ha gia'»*).
+
+#### T3 — I SOLDI
+
+```
+TERRENO SOLDI
+- Nessuna spesa reale (API, crediti, abbonamenti) senza ok esplicito di Max: prima il dry-run.
+- Budget-guard: sotto il 20% delle risorse di sessione non si aprono lavori nuovi, si chiude.
+- Un solo lavoro pesante in parallelo nell'Impero, e prima si scrive il blocco COORDINAMENTO
+  in company/Memory/STATO-EMPIRE.md.
+- Un numero di cassa non si stima MAI: o viene dal reparto Tesoreria, o si scrive [DM].
+  Reparto: company/Ecosistemi/14-TESORERIA/ — agente `tesoreria-conductor`.
+```
+*Fonti:* `empire-context/SKILL.md` §4 (dry-run, pattern #3) · ADR-006 passo 2 (budget-guard) ·
+regola 2 [MECCANICA] di 03b2 (casi 3 e 19) · ADR-020, che nasce dal fatto misurato
+*«Digital Empire non misurava un solo euro»* · R6 dell'Ispettorato. *Forze:* `tesoreria-*`,
+`sentinel-cost`, `cfo-empire`.
+
+#### T4 — GLI ACCOUNT E LE CREDENZIALI
+
+```
+TERRENO CREDENZIALI — divieti, non consigli
+- Una chiave, un token o una password NON entra mai in un prompt, in un rapporto o in un
+  file d'uscita. Nemmeno mascherata, nemmeno «per esempio».
+- Non apri .env per leggerlo tu: la via ufficiale e' l'agente `credential-keeper`.
+- .env, sessioni browser (instagram/linkedin_session.json, session_data/, maps_session/) e
+  DB lead non entrano nel repo: e' ADR-004, ed e' gia' nel .gitignore.
+- Mandato Art. 7: zero segreti, PII protetta.
+- `.cache-tools/` non ti riguarda: non lo leggi, non lo citi, non lo nomini.
+```
+*Fonti:* Mandato Art. 7 · ADR-004 (elenco di cio' che non viaggia) · `.claude/agents/credential-keeper.md`
+(esiste, ed e' l'unico organo autorizzato a restituire valori di API key) · `conoscenza-empire.md`
+§3 «Fuori dal tuo perimetro». **Da riportare a Max finche' non e' chiuso:** `EMP-URQ7.md`
+trappola 6 — *«la chiave del servizio di posta (Brevo) e' pubblica da mesi e mai sostituita.
+Va cambiata sul servizio»*: riscrivere la storia git non la richiude.
+
+#### T5 — I VIDEO
+
+```
+TERRENO VIDEO
+- Sequenziale, non parallelo: ADR-021 e la misura di CP-20260826-002 — 9/9 video chiusi in
+  sequenza senza un fallimento, contro batch paralleli falliti ripetutamente.
+- Misura il carico PRIMA di accettarlo: watchdog a 600s e tetto immagini per richiesta sono
+  limiti reali. Un lotto di 75 frame in un colpo viene scartato per intero.
+- La riduzione dei frame si fa con il rilevatore di scene, non a mano:
+  "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/scene_detector.py" (misurato:
+  4.309 -> 1.066 frame, -75,3%).
+- La fabbrica sta in YOUTUBE-AUTOMATION-FACTORY/: il gate di qualita' e'
+  02-AUTOMAZIONI-E-SCRIPTS/quality_gate.py, i pezzi finiti stanno in VIDEO-PRONTI/.
+- ADR-022: uno studio si chiude con un'opera, non con un archivio.
+```
+*Fonti:* ADR-021, ADR-022 · caso 17 e caso 21 di 03b2 · path verificati sul disco il 2026-09-06.
+**Puntatore stantio trovato mentre scrivevo (da correggere, non da rifare qui):** 03b2 caso 17
+cita `scripts/scene_detector.py`, ma sul disco il file sta in
+`SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/scene_detector.py`. Una forza che
+seguisse il puntatore vecchio non troverebbe nulla — e' esattamente la REGOLA PUNTATORI di
+`CLAUDE.md` (*«un puntatore vecchio e' peggio di nessun puntatore»*).
+
+---
+
+### 2.3 LA FORMA CONCRETA — quanto costa ciascuna, e quale si sceglie
+
+| Forma | Costo per ingaggio | Arriva sempre? | Funziona a freddo? | Rischio dimostrato |
+|---|---|---|---|---|
+| **A. Blocco inline nel prompt** | il suo peso esatto, ogni volta | **si', garantito** | **si'** | se cresce, esplode ×N |
+| **B. File da leggere (path nel prompt)** | ~25 token nel prompt **+ il file intero + 1-2 tool_use** | no: la forza puo' non aprirlo | si', ma cara | **caso 1: 4 agenti morti, 1 file su 62** |
+| **C. Riferimento nudo («rispetta ADR-008»)** | ~10 token | si' | **no** | l'agente non sa cosa sia: rumore |
+| **D. `subagent_type` di un agente gia' definito** | 0 dal prompt (lo carica il sistema) | si' | si' | va costruito una volta; se il frontmatter e' rotto **sparisce in silenzio** (caso 15) |
+| **E. Chiamata su richiesta (`conoscenza-empire`, `cerca_wiki.py`)** | 0 finche' non serve | no | si' | oggi **non lo chiama nessuno** (caso 30) |
+
+**La scelta, e il perche'.**
+
+1. **Il minimo comune va in FORMA A — inline, sempre, in ogni ingaggio di ogni grado.** E'
+   l'unica forma che non puo' essere saltata, non costa un solo `tool_use` e sopravvive alla
+   partenza a freddo. Il prezzo di questa scelta e' che **il minimo comune deve restare piccolo
+   per legge**: 10 righe sono il tetto, non un obiettivo. Ogni riga nuova costa ~26 token ×
+   ogni forza × ogni notte, e va pagata con una caduta documentata.
+2. **Il terreno va in FORMA A per i divieti, FORMA D per il mestiere.** I divieti (credenziali,
+   perimetro, sequenzialita') devono arrivare sempre: inline. Il mestiere vero — scrivere copy,
+   contare soldi, montare video — **non si insegna nel prompt: si delega all'agente che gia'
+   esiste** (`cro-copy-architect`, `tesoreria-conductor`, `ytf-*`). L'Impero ha 164 agenti e 297
+   skill: riaddestrare a mano cio' che e' gia' costruito e' la spesa piu' stupida possibile.
+3. **La FORMA B si usa solo con il numero di righe scritto accanto al path**, e mai per piu' di
+   due file (regola 9 di 03b2: *«massimo 2-3 letture, prima scrittura entro i primi tool_use»*).
+   «Leggi `STATO-EMPIRE.md`» senza un intervallo di righe e' un ordine di suicidio da 196.000 token.
+4. **La FORMA C non si usa mai da sola.** Un ADR si cita **accanto** alla regola gia' scritta
+   per esteso, come etichetta di provenienza — mai al posto della regola.
+5. **La FORMA E va accesa.** `conoscenza-empire` esiste dal 2026-09-02 e `CP-20260902-002`
+   dichiara che *«non ha ancora alimentato nessuno»*. Costo zero finche' non la si chiama:
+   basta che il modulo d'ingaggio (§3) porti **una riga** che dice alla forza che puo' chiamarla,
+   e la biblioteca smette di essere inerte senza costare un token a chi non ne ha bisogno.

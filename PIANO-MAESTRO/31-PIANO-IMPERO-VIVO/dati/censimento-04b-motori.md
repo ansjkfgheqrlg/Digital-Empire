@@ -354,3 +354,36 @@ Quattro cartelle, contate: `EXPONIUM/` (49 `.py`, 811 file, fermo al **2026-06-0
 - **DIPENDENZE ESTERNE:** `jinja2` per `builder.py`. Le skill copiate hanno le loro (`generate_pdf_report.py` richiede il motore PDF).
 - **CHI LO POSSIEDE:** **ORFANO come cartella.** Nessun registro censisce `Crea siti/`. Esistono le skill `/site-build`, `/site-copy`, `/site-qa`, `/opus`, `/website-creator`, `/empire-premium-style` nell'elenco skill di Claude — ma puntano alle skill installate, non a questa cartella.
 - **COME SI AVVOLGE:** `builder.py` e' gia' un comando (`python builder.py`), gli manca solo di accettare il percorso invece di leggere la cartella corrente. Il "sistema a 19 agenti" invece non e' avvolgibile: e' documentazione, e va o riattivato come skill o archiviato.
+
+---
+
+## 9. `Agenti/Agency/` — il PRIMO motore outreach, l'antenato dimenticato
+- **Percorso:** `Agenti/Agency/`
+- **A cosa serve:** dal docstring di `orchestrator/run.py` — *"Orchestrator — Digital Empire Agency. Punto di ingresso unico per tutte le pipeline."* Quattro pipeline dichiarate nell'uso: `--pipeline no-website` (citta' + settore), `cro-funnel` (url), `ai-implementation`, `full`.
+- **Dimensione:** **CORREZIONE DI CONTEGGIO.** La mappa preliminare dava 42 `.py` per `Agenti/`; il conteggio corretto e' **3.192 file `.py` in totale, ma 3.150 stanno in `Agenti/.venv/Lib/site-packages/`** (un virtualenv completo con dentro l'SDK `anthropic`, `pydantic`, ecc.) — che va escluso. **Il codice vero e' 42 file `.py` per 10.456 righe**, di cui `scripts/generate_pdf_report.py` da solo ne fa 741.
+- **PUNTO D'INGRESSO:** `python run.py --pipeline <nome> --citta "<x>" --settore "<y>"`, dichiarato nel docstring. E' un ingresso pulito con argomenti espliciti.
+- **GIRA ANCORA? DORMIENTE, ed e' il piu' vecchio del repository.** Tutto fermo tra il **2026-03-07 e il 2026-03-18** — **172 giorni**. Ma ha prodotto sul serio: `output/` contiene **almeno 20 run reali numerate** (`run_01_Milano_ristoranti`, `run_18_Reggio_Calabria_ristoranti`, `run_19_Parma_fisioterapisti`, `run_20_Messina_estetiste`…), piu' `process_log.txt` e `recovered/`. Venti citta', venti settori, marzo 2026.
+- **PERCHE' CONTA:** e' **l'antenato di `Outreach/`** (censito nel file 04). Fa lo stesso mestiere — trovare aziende senza sito in una citta' e un settore, qualificarle, scrivere. Ha `outreach/implementation/qualify_leads.py`, `draft_emails.py`, `search_ads_leads.py`, `search_ai_prospects.py`, `import_leads_finder.py`; `sub-agents/no-website/scraper.py`. Nessuno dei due sistemi cita l'altro.
+- **DIPENDENZE ESTERNE:** `requirements.txt` presente (2026-03-08); `.venv/` con l'SDK `anthropic` gia' installato — **una chiave API attesa**; Apify (`process_apify_data.py`).
+- **CHI LO POSSIEDE:** **ORFANO.** Nessun registro censisce `Agenti/`. Un motore con venti run di produzione documentate, fuori da ogni mappa.
+- **COME SI AVVOLGE:** ha gia' il contratto giusto (`run.py --pipeline`), gli manca solo un `--json` d'uscita. Ma prima va deciso se sopravvive lui o `Outreach/`: **sono due risposte alla stessa domanda, e la seconda e' piu' recente.**
+
+## 10. `System OMEGA/` — generatore di progetti e skill
+- **Percorso:** `System OMEGA - Creazione proggetti e skill per Claude/`
+- **A cosa serve:** genera progetti e skill per Claude secondo la metodologia OMEGA. Documenti di governo: `Archittetatura Progetti e skill.md`, `CLAUDE.md`, `REGOLE.md`.
+- **Dimensione:** 42 file `.py`, **14.583 righe**, 196 file totali.
+- **DOVE STA IL PYTHON (aperto):** **non e' suo.** Sta in `.claude/skills/skill-creator/scripts/` (`package_skill.py`, `run_eval.py`, `run_loop.py`, `quick_validate.py`, `aggregate_benchmark.py`, `generate_report.py`, `improve_description.py`) — cioe' **la skill `skill-creator` copiata dentro il progetto**, la stessa gia' copiata in `Crea siti/skills/skill-creator/` (§8) e gia' installata come skill di Claude. **Tre copie della stessa skill.**
+- **PUNTO D'INGRESSO:** **non e' Python.** E' la skill `/omega-create project` / `/omega-create skill`, che lancia l'agente `omega-executor` (con `omega-verifier` che approva ogni file generato). Il motore e' Claude, il codice e' contorno.
+- **GIRA ANCORA? INCERTO.** Ha una cartella `Output/` e una `Attività temporanea/`, ma il sistema e' fatto di prompt e regole: **un censimento a indizi di file non puo' dire se una skill viene invocata.** Gli agenti `omega-executor` e `omega-verifier` risultano registrati e attivabili.
+- **CHI LO POSSIEDE:** censito come skill (`/omega-create`) e come due agenti. La **cartella** non e' nei registri di `company/`.
+- **COME SI AVVOLGE:** e' gia' avvolto nel modo giusto per la sua natura — un comando di Claude. Non serve un CLI.
+
+## 11. `scripts/` — la cassetta degli attrezzi di EMPERATOR (viva, ieri)
+- **Percorso:** `scripts/` (radice)
+- **A cosa serve:** 15 file `.py` + 4 `.ps1`, **19 file in tutto**, nessuna zavorra. Sono gli strumenti che governano il lavoro quotidiano, non un prodotto.
+- **GIRA ANCORA? VIVO — e' il codice piu' recente del repository dopo Empire Studio.** Date reali: `test_gate_battito.py`, `gate_battito_hook.py`, `emperator_hook.py`, `checkpoint.py`, `verifica_recap.py` tutti **2026-09-05**; `emperator_boot.py` 2026-09-04; `task_codice.py`, `tesoreria.py`, `peso_skill.py`, `ultimo_metro.py`, `cerca_wiki.py` **2026-09-03**; `verify-agents.py`, `verify-skills.py` 2026-09-01; `empire-sync.ps1` 2026-08-31. Solo `gen-empire.py`, `verify-empire.ps1`, `agency-trace.ps1`, `hooks-sync.json` sono di giugno.
+- **PUNTO D'INGRESSO:** uno per strumento. Quello dichiarato in `CLAUDE.md` come obbligatorio: **`python scripts/checkpoint.py cp --titolo "..."`** — *"il codice si conia con lo script, mai a mano e mai progressivo (due chat parallele sceglierebbero lo stesso numero)"*.
+- **PEZZI CHE CONTANO:** `ultimo_metro.py` (13,4 KB) e' il codice che **misura** il problema descritto al §3.6 — l'Impero ha uno strumento che conta i pezzi finiti e mai usciti. `tesoreria.py` (18,4 KB) e' il motore del reparto conti. `gate_battito_hook.py` + `test_gate_battito.py` sono l'hook che sorveglia la forma dei recap, **con il proprio test accanto**: uno dei pochissimi casi nel repository in cui un motore nuovo nasce gia' con la sua prova.
+- **DIPENDENZE ESTERNE:** nessuna chiave; `hooks-sync.json` e la configurazione hook di Claude Code.
+- **CHI LO POSSIEDE:** **MAX / EMPERATOR**, per uso diretto — `checkpoint.py` e' prescritto in `CLAUDE.md`, quindi e' governato dalla regola di casa piu' alta. Non censito voce per voce nei registri, ma non e' orfano: e' il braccio di chi scrive i registri.
+- **COME SI AVVOLGE:** e' gia' l'unico posto dove un comando dell'Impero **e'** un file. Il passo mancante e' agganciarlo a `python -m empire` (§4) come lotto `register(sub)`, cosi' che `checkpoint`, `tesoreria` e `ultimo_metro` diventino sottocomandi del runtime invece di script sciolti.
