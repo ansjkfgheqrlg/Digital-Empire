@@ -141,8 +141,15 @@ def verifica(fabbrica):
         non_contiene(VP, ["lo fa l'utente in fliki", "non chiudere il browser"])
         and contiene(VP, ["aspectratio", "scenebreakdown", "subtitlepresetid"]))
     # -02: binario B — vero solo quando aspectRatio smette di essere una costante.
-    esiti["A4-L04-02"] = contiene("02-AUTOMAZIONI-E-SCRIPTS/apex7_orchestrator.py",
-                                  ["aspect_ratio"])
+    # -02: applicata il 2026-09-06 al gate A4. Il controllo cerca la SOSTANZA in entrambi i
+    #      posti, non un nome: il canale dichiara il suo formato di destinazione, e il client
+    #      lo riceve come parametro con i tre valori ammessi invece della costante scritta a
+    #      mano. (Nel codice la chiave del canale si chiama `formato`, in italiano come il
+    #      resto di CANALI; il campo del payload resta `aspectRatio`, che e' il nome di Fliki.)
+    esiti["A4-L04-02"] = (
+        contiene("02-AUTOMAZIONI-E-SCRIPTS/apex7_orchestrator.py", ['"formato": "16:9"'])
+        and contiene("02-AUTOMAZIONI-E-SCRIPTS/fliki_client.py",
+                     ["aspect_ratio", "formati_ammessi", '"aspectratio": aspect_ratio']))
     # -03: entrambe le schede separano API e interfaccia.
     esiti["A4-L04-03"] = (
         contiene("04-SKILLS-E-REFERENCE/references/fliki-produzione.md", ["via api"])

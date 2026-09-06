@@ -208,6 +208,20 @@ Piano: §16. Decisione: [ADR-022](../decisions/ADR-022-opera-finale-metodo-youtu
   studio sono appunti, report e regole, che restano versionati.
 - **Il gettone del video scade**: si cattura e si usa subito, una lezione per volta. Mai code.
 
+- **✅ RISOLTO IL 2026-09-06 — il «gettone scaduto» non era un gettone scaduto.** Per due giorni
+  tre lezioni (L11, L12, L18) sono rimaste in `1-fallito` con l'etichetta «HTTP 403, gettone
+  scaduto». Era una diagnosi sbagliata scritta a memoria: il gettone era valido, **mancavano le
+  intestazioni**. Il CDN del portale rifiuta chi non si presenta come il lettore della pagina.
+  Due guasti in fila, e due correzioni in `corso_ingest.py`:
+  1. **`ffprobe` non riusciva a misurare i flussi** (tutte le durate «?») e `scegli_flusso`
+     rinunciava: ora ffprobe passa `Referer`, `Origin` e `User-Agent`, e se **nessun** candidato
+     è misurabile non si rinuncia più — si prende l'ultimo visto, perché il controllo che conta
+     (`durata_reale` sul file scaricato, che marca `1-sospetto`) resta attivo dopo.
+  2. **`yt-dlp` prendeva 403 sul manifesto**: ora si presenta con le stesse intestazioni.
+  Esito: **L11 scaricata, 1357 s attesi contro 1357 s reali.** Lezione di metodo: *un messaggio
+  d'errore copiato in una nota non è una diagnosi — e una diagnosi non verificata invecchia
+  peggio di nessuna diagnosi.*
+
 ## 7. IL CONTESTO CHE SERVE ALLA CHAT NUOVA
 
 - **Assetto:** GOD EMPEROR DOOM, dichiarato all'apertura del lavoro.

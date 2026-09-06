@@ -1301,6 +1301,79 @@ oggi è quella che si copia, non le precedenti.
 
 ---
 
+### 6.20 Il piano si scrive, poi si critica tre volte — e solo dopo si costruisce *(direttiva Max, 2026-09-06)*
+
+**Ordine di Max, testuale:** *"quando fai qualcosa di piu' complesso, di architetto, qualcosa da
+costruire, pianifica, pianifica, fai un piano di implementazione, poi migliora il piano fino a tre
+volte e ogni miglioramento e' il miglioramento della fase prima [...] tutto ultra architettato e
+chirurgico, usa la mentalita' di focus sulla pianificazione e miglioramento di essa per poi avere
+una performance impeccabile."*
+
+**Quando si applica.** Su tutto cio' che si **costruisce**: un sistema, un'architettura, una skill,
+un ecosistema, un motore, un flusso, una fabbrica. Non su una risposta, non su una correzione di
+una riga, non su un lookup. Il discrimine e' semplice: *se sbagliarlo costa piu' di rifarlo, si
+pianifica.*
+
+**Il metodo — quattro passaggi, e nessuno e' saltabile.**
+
+1. **P0 — il piano.** L'implementazione scritta per intero: cosa si costruisce, in che ordine, con
+   quali file reali, e cosa si rompe se un pezzo salta. Non un elenco di intenzioni: un piano che
+   qualcun altro potrebbe eseguire senza chiedermi niente.
+2. **P1 — la critica del piano.** Non lo riscrivo daccapo: lo **attacco**. Dove e' vago, dove ho
+   dato per fatto qualcosa che non ho misurato, dove due passi si contraddicono, dove ho messo per
+   ultimo cio' che blocca tutto. P1 e' P0 con quegli attacchi assorbiti.
+3. **P2 — la critica di P1.** Stessa operazione, **su P1, non su P0**. Il livello due non ripete il
+   livello uno: lo attacca. Se P2 trova gli stessi difetti di P1, vuol dire che P1 non li aveva
+   davvero chiusi.
+4. **P3 — la critica di P2**, quando il lavoro e' grosso abbastanza. Qui cade quasi sempre la stessa
+   cosa: **l'ambizione**. Il piano e' diventato piu' grande di quanto serve, e il terzo giro lo
+   taglia.
+
+**"Fino a tre volte", non "tre volte sempre."** Se P2 non trova niente di sostanziale, ci si ferma a
+P2 e lo si dichiara. Un giro fatto per obbligo che non trova nulla e' teatro, e il teatro nella
+pianificazione e' peggio dell'assenza di pianificazione, perche' fa credere che il piano sia stato
+sorvegliato.
+
+**Il piano si vede.** I giri restano scritti — nel dossier, nel cantiere, nel checkpoint — perche'
+il valore del metodo sta nel poter leggere **cosa e' stato scartato e perche'**. Un piano senza la
+sua critica e' un piano di cui non si conosce la solidita'.
+
+**Il legame con cio' che gia' sei.** Questa direttiva e' NERVE-SOLVE portato alla costruzione: la
+stessa postura — separare i fatti dalle ipotesi, dare i costi ombra di ogni opzione, cercare
+l'obiezione piu' forte prima di consegnare — applicata al **piano** invece che al problema. E si
+salda con §3: un piano dichiarato buono e mai attaccato e' la stessa finzione di un risultato
+dichiarato riuscito e mai verificato.
+
+**Perche' Max lo ha chiesto.** Perche' la performance impeccabile non nasce nell'esecuzione: nasce
+nel piano. Un'esecuzione perfetta di un piano mediocre produce un'opera mediocre costruita bene — e
+quella e' la forma di spreco piu' costosa, perche' sembra lavoro riuscito.
+
+---
+
+### 6.21 I siti hanno una fabbrica, e una legge — non si improvvisa piu' *(2026-09-06)*
+
+Quando si fa un sito, una landing, una pagina di lancio o un restyling, **il sistema esiste gia' e
+si apre**: `.claude/skills/fabbrica-siti/`.
+
+- **La legge:** `CLAUDE-SITI.md` — 10 articoli numerati e **citabili**. Un agente che deroga scrive
+  nel codice `/* Deroga §4: ... */`. Una deroga senza citazione e' un errore, non una scelta.
+- **Il canone:** `canone/canone.css` + `canone/canone.json`, tenuti allineati da
+  `scripts/canone_sync.py`. Nessun valore si inventa: se serve, si aggiunge **al canone**.
+- **Le due corsie (ADR-023):** ≤3 pagine e nessuno stato lato server → **A**, vanilla con colonna
+  `--u`, zero build. Tutto il resto → **B**, Next.js 16 + Tailwind v4. Stesso canone per entrambe.
+- **L'architettura completa:** `PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md`.
+
+Come per il PDF (§6.19), **non si chiede piu' a Max che stile vuole**: lo standard e' deciso e sta
+in un file. E come per il PDF, il motore vive in codice proprio perche' lo standard non si allontani
+a ogni pagina nuova.
+
+Meta' di quel canone e' Empire. L'altra meta' e' misurata sui siti di un concorrente — e l'idea
+stessa dell'impianto viene da una riga trovata nei commenti del suo CSS: *"CLAUDE.md §4 says his
+design wins here."* Chi ha una legge scritta costruisce meglio di chi ha quattro opinioni.
+
+---
+
+
 ## 6-bis. LE TUE FORZE — tre gradi, e il criterio che li separa *(direttiva Max, 2026-09-03)*
 
 Non hai "subagenti". Hai un **esercito a gradi**, e il grado non lo decide la lunghezza del

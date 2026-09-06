@@ -98,6 +98,18 @@ CANALI = {
         # solo scraping anonimo, vedi legamidiamore_login.py): None fa scattare il fallback mock
         # sicuro in youtube_uploader_playwright.py invece di tentare un upload senza sessione.
         "voice_gender": "male",
+        # ⛔ VOCE FISSA (A4-L03-02, studio AI TUBE PRO / A4-L03 @ 09:25). Prima la voce veniva
+        # RI-RISOLTA a ogni generazione con find_italian_voice(): se Fliki avesse cambiato
+        # l'ordine del suo elenco, il canale avrebbe cambiato voce da solo, senza che nessuno
+        # decidesse nulla. Un canale che cambia voce perde la sua faccia. Questo e' l'_id reale
+        # della voce che dosementale usa da sempre — Calimero — letto dall'API il 2026-09-06.
+        # find_italian_voice resta, ma serve a RISOLVERLA la prima volta, non a risceglierla.
+        "voice_id": "62b22194d63b5531a4077fe2",  # Calimero (MALE)
+        # Formato di destinazione DICHIARATO (A4-L04-02, A4-L04 @ 12:50): landscape per YouTube.
+        # Finche' era una costante scritta nel payload, la fabbrica non poteva produrre Shorts e
+        # nessun documento diceva perche'. Valori ammessi: "16:9" (YouTube), "9:16" (Shorts,
+        # TikTok, Reels), "1:1" (feed social). Il default resta invariato.
+        "formato": "16:9",
         "chrome_profile_dir": None,
         # ⛔ Preset sottotitoli APPROVATO DA GAEL (2026-07-31, config del video v8 "perfetto") —
         # NON CAMBIARE per questo canale. Vedi commento gemello in fliki_client.py:generate_video.
@@ -117,6 +129,12 @@ CANALI = {
         # gia' autenticato su YouTube Studio (bootstrap fatto da legamidiamore_login.py) — unico
         # canale con upload reale abilitabile via --upload su run_phase_5.
         "voice_gender": "female",
+        # ⛔ VOCE FISSA (A4-L03-02) — Fiamma, l'_id reale letto dall'API il 2026-09-06: e' la
+        # voce femminile che find_italian_voice restituiva gia', ora congelata qui.
+        "voice_id": "62b220a6d63b5531a4077caf",  # Fiamma (FEMALE)
+        # Formato di destinazione dichiarato (A4-L04-02). Resta 16:9: il giorno che si vorranno
+        # gli Shorts, si cambia QUI o con --formato, e si sa che si sta cambiando.
+        "formato": "16:9",
         "chrome_profile_dir": "chrome-profile-legamidiamore",
         # Override ESPLICITO solo per questo canale (Max, 2026-08-15): sottotitoli piu' piccoli.
         # "minimal" e' la scelta piu' plausibile fra i 30 preset reali in

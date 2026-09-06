@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; testata-targa</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* La testata non e' una barra di navigazione incollata sopra la pagina: e' una
+   TARGA fra due filetti che si dissolvono nel nero, quindi legge come parte
+   della stessa composizione. Origine: armageddon.css:118-181. */
+.targa { background: var(--ink-2); }
+
+.targa__in {
+  display: flex; align-items: center;
+  gap: clamp(14px, calc(var(--u) * 0.03), 30px);
+  width: var(--u); margin: 0 auto;
+  padding: clamp(15px, calc(var(--u) * 0.027), 28px) 0;
+}
+
+.targa__filo { flex: 1; height: 1px; }
+.targa__filo--sx { background: linear-gradient(90deg, transparent, rgba(251, 70, 4, 0.85)); }
+.targa__filo--dx { background: linear-gradient(90deg, rgba(251, 70, 4, 0.85), transparent); }
+
+.targa__link { display: inline-flex; align-items: center; gap: 0.62em; text-decoration: none; }
+
+.targa__segno {
+  width: clamp(23px, calc(var(--u) * 0.036), 36px);
+  aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--orange-bright), var(--orange-deep));
+  transition: filter var(--t-base) ease, transform 0.35s var(--ease-land);
+}
+
+.targa__nome {
+  font-size: clamp(11px, calc(var(--u) * 0.0145), 15px);
+  font-weight: 800; letter-spacing: 0.26em; text-transform: uppercase;
+  color: rgba(249, 249, 249, var(--t-78));
+  transition: color var(--t-base) ease;
+}
+
+.targa__link:hover .targa__nome,
+.targa__link:focus-visible .targa__nome { color: var(--orange); }
+
+.targa__link:hover .targa__segno {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 10px rgba(251, 70, 4, 0.75));
+}
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <header class="targa">
+    <div class="targa__in">
+      <span class="targa__filo targa__filo--sx" aria-hidden="true"></span>
+      <a class="targa__link" href="/">
+        <span class="targa__segno" aria-hidden="true"></span>
+        <span class="targa__nome">digital empire</span>
+      </a>
+      <span class="targa__filo targa__filo--dx" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <div style="height:36vh"></div>
+</div>
+</body>
+</html>

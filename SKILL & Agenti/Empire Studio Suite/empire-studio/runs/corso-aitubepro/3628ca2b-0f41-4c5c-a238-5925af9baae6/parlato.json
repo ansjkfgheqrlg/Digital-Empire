@@ -1,0 +1,1148 @@
+{
+  "lesson_id": "3628ca2b-0f41-4c5c-a238-5925af9baae6",
+  "modello": "base",
+  "durata_s": 1357.2,
+  "parole": 3720,
+  "blocchi": [
+    {
+      "inizio": 6.29,
+      "fine": 12.65,
+      "testo": "intelligenza artificiale con Premiere Pro, benvenuti da Mirko del Fino in un nuovo video di ITUBE"
+    },
+    {
+      "inizio": 12.65,
+      "fine": 18.29,
+      "testo": "in questo video parleremo di Premiere Pro e nel dettaglio vedremo quali sono alcuni"
+    },
+    {
+      "inizio": 18.29,
+      "fine": 22.97,
+      "testo": "dei più importanti strumenti di intelligenza artificiale che ci amessa disposizione Premiere Pro"
+    },
+    {
+      "inizio": 22.97,
+      "fine": 28.49,
+      "testo": "e che potremmo sfruttare per le editing dei nostri video sia dei nostri Kescao Channel ma video"
+    },
+    {
+      "inizio": 28.49,
+      "fine": 33.77,
+      "testo": "anche dove mettiamo la faccia e la voce. Nel video specifico di oggi naturalmente cercheremo"
+    },
+    {
+      "inizio": 33.77,
+      "fine": 38.41,
+      "testo": "di essere un po' più dettagliati proprio per i Kescao Channel. In quanto ci sono alcune funzioni"
+    },
+    {
+      "inizio": 38.41,
+      "fine": 43.85,
+      "testo": "che sono molto molto interessanti che ci semplificheranno di molto la vita, quindi quello che"
+    },
+    {
+      "inizio": 43.85,
+      "fine": 48.25,
+      "testo": "faremo ad essere entrare il subito all'interno del mio computer e vedere assieme come possiamo"
+    },
+    {
+      "inizio": 48.25,
+      "fine": 53.65,
+      "testo": "sfruttare l'intelligenza artificiale di Premiere Pro. Allora eccoci qui iniziamo subito dalla prima"
+    },
+    {
+      "inizio": 53.65,
+      "fine": 58.25,
+      "testo": "tecnica che possiamo andare ad utilizzare, adesso le faccio vedere a mano a mano tutte le tecniche"
+    },
+    {
+      "inizio": 58.25,
+      "fine": 65.17,
+      "testo": "di intelligenza artificiale che ci mette a disposizione appunto Premiere Pro, ho deciso di non fare"
+    },
+    {
+      "inizio": 65.17,
+      "fine": 69.61,
+      "testo": "apparire la mia web cam in questa sezione così ci possiamo concentrare maggiormente appunto su queste"
+    },
+    {
+      "inizio": 69.61,
+      "fine": 74.21,
+      "testo": "tecniche. La prima tecnica è quella della color correction, la color correction vi ricordo che"
+    },
+    {
+      "inizio": 74.21,
+      "fine": 79.85,
+      "testo": "ci da la possibilità di andare a colorare, quindi modificare i colori di una clip,"
+    },
+    {
+      "inizio": 79.85,
+      "fine": 84.61,
+      "testo": "naturalmente in questo caso specifico modificando i colori di una clip per andiamo a rendere unica,"
+    },
+    {
+      "inizio": 84.61,
+      "fine": 88.33,
+      "testo": "quindi insieme a tutte le altre strategie per rendere una clip unica che abbiamo già visto"
+    },
+    {
+      "inizio": 88.33,
+      "fine": 93.61,
+      "testo": "all'interno del corso, abbiamo la possibilità di modificarla ma senza essere dei colori"
+    },
+    {
+      "inizio": 93.61,
+      "fine": 98.41,
+      "testo": "stesperti, quindi questo ci può anche tornare utile soprattutto se vogliamo migliorare la clip"
+    },
+    {
+      "inizio": 98.41,
+      "fine": 103.77,
+      "testo": "di la di modificarla e vi faccio vedere come si fa. Tutto quello che dobbiamo fare è selezionare"
+    },
+    {
+      "inizio": 103.77,
+      "fine": 107.93,
+      "testo": "una voce di clip, io adesso ne ho selezionato dei due, vedete questa, iniziamo anzi da questo,"
+    },
+    {
+      "inizio": 107.93,
+      "fine": 112.69,
+      "testo": "ok? E quello che vado a fare è andare all'interno di Premiere Pro, cliccare nella bocce"
+    },
+    {
+      "inizio": 112.69,
+      "fine": 120.45,
+      "testo": "Effetti, ok? Cliccare qui nel tasto cerca e andare su colore Lumetri, ok? Io quello che vado a fare"
+    },
+    {
+      "inizio": 120.45,
+      "fine": 125.85,
+      "testo": "in questo caso specifico è selezionare appunto questo colore Lumetri e lo trascino all'interno"
+    },
+    {
+      "inizio": 125.85,
+      "fine": 131.49,
+      "testo": "dell'app clip che voglio andare a modificare. Ora ho la possibilità di andare a effettuare la mia color"
+    },
+    {
+      "inizio": 131.49,
+      "fine": 138.85,
+      "testo": "correction, ma quindi lo posso fare attraverso naturalmente la sezione vi faccio vedere spazio di lavoro"
+    },
+    {
+      "inizio": 138.85,
+      "fine": 143.17,
+      "testo": "e vado a selezionare colore. Vi faccio vedere anche come cambia, vedete io la possibilità di"
+    },
+    {
+      "inizio": 143.17,
+      "fine": 148.69,
+      "testo": "effettuare la mia color correction, ok? Ma se io voglio rimanere naturalmente all'interno,"
+    },
+    {
+      "inizio": 148.69,
+      "fine": 154.05,
+      "testo": "e qui lo facciamo quando vogliamo fare una cosa superprofessionale, ma nel caso di un"
+    },
+    {
+      "inizio": 154.05,
+      "fine": 158.25,
+      "testo": "cash couch annel, di un canale youtube, nel caso in cui non siamo coloristes esperti, quindi magari"
+    },
+    {
+      "inizio": 158.25,
+      "fine": 163.57,
+      "testo": "rischiamo di fare dei danni, allora io rimango sempre lo spazio lavoro di sottotitoli grafica,"
+    },
+    {
+      "inizio": 163.97,
+      "fine": 170.53,
+      "testo": "ok, vado a selezionare colori Lumetri nella sezione effetti, lo trascino qui, e praticamente nelle"
+    },
+    {
+      "inizio": 170.53,
+      "fine": 175.81,
+      "testo": "creazione nelle correcine di base, vedete io la possibilità di effettuare il creativo, le curve,"
+    },
+    {
+      "inizio": 175.81,
+      "fine": 182.29,
+      "testo": "la corrispondenza e ruote colori, ok? Posso naturalmente andare a selezionare la vignettatura così via,"
+    },
+    {
+      "inizio": 182.29,
+      "fine": 188.61,
+      "testo": "ho un'opportunità che quella di andare nelle correcine di base è cliccare qui su pulsante"
+    },
+    {
+      "inizio": 188.61,
+      "fine": 194.81,
+      "testo": "automatica, quindi seleziono la clip, clicco su automatica e guardate un po' praticamente e"
+    },
+    {
+      "inizio": 194.81,
+      "fine": 200.01,
+      "testo": "cambiato il colore della clip, non di tantissimo perché naturalmente una color correction non va"
+    },
+    {
+      "inizio": 200.01,
+      "fine": 207.33,
+      "testo": "rivoluzionare l'immagine almeno che non partiamo da delle immagini registrate in log, quindi comunque"
+    },
+    {
+      "inizio": 207.33,
+      "fine": 211.21,
+      "testo": "da questo punto di vista non voglio entrare e troppo nel dettaglio, ma sono quelle immagini che"
+    },
+    {
+      "inizio": 211.21,
+      "fine": 216.69,
+      "testo": "sono quasi bianche nere su cui si può andare a colorare, che vengono generalmente registrati"
+    },
+    {
+      "inizio": 216.69,
+      "fine": 221.45,
+      "testo": "dai videomegheri super esperti, vi voglio far vedere una cosa, questa è la clip colorata, se io"
+    },
+    {
+      "inizio": 221.45,
+      "fine": 226.49,
+      "testo": "vado a cliccare qui dove c'è scritto attiva, vado a selezionare, io vedo come era prima la clip,"
+    },
+    {
+      "inizio": 226.49,
+      "fine": 232.25,
+      "testo": "vedete che cambia leggermente, quindi guardate qui, si è disattivata e così si è attivata,"
+    },
+    {
+      "inizio": 232.25,
+      "fine": 240.49,
+      "testo": "guardate questa parte qui, ok? Guardate il nero come l'ha colorato, ok, dell'ombra e anche qui,"
+    },
+    {
+      "inizio": 240.49,
+      "fine": 246.61,
+      "testo": "vedete questo, vi faccio vedere come acquisisce un colore leggermente diverso, quindi diciamo che"
+    },
+    {
+      "inizio": 246.61,
+      "fine": 252.69,
+      "testo": "da questo punto di vista l'intelligenza artificiale di premier proceda la possibilità di andare a"
+    },
+    {
+      "inizio": 252.69,
+      "fine": 259.77,
+      "testo": "colorare una clip e quindi cambiare la clip originale, quindi già attenzione, dobbiamo effettuare"
+    },
+    {
+      "inizio": 259.77,
+      "fine": 264.09,
+      "testo": "anche tutte le altre modifiche, ma già questo rende leggermente diverso il video, vi faccio vedere"
+    },
+    {
+      "inizio": 264.09,
+      "fine": 270.93,
+      "testo": "un'altra cosa, guardiamo questa clip, io vado a selezionare la voce automatica, quindi vado qui,"
+    },
+    {
+      "inizio": 271.33,
+      "fine": 277.69,
+      "testo": "clicco su automatica e guardate un po, vedete come è cambiato, quindi senza, è così,"
+    },
+    {
+      "inizio": 277.69,
+      "fine": 282.45,
+      "testo": "con la color correction e migliore con la color correction, lo vedete perché così è troppo"
+    },
+    {
+      "inizio": 282.45,
+      "fine": 288.57,
+      "testo": "scuro, si vede questo verde che sembra quasi uno stagno che è l'acqua, in questa maniera invece,"
+    },
+    {
+      "inizio": 288.57,
+      "fine": 296.01,
+      "testo": "va a rendere un po' più reale anche il colore dell'acqua stesso, e quindi cambiano"
+    },
+    {
+      "inizio": 296.01,
+      "fine": 300.89,
+      "testo": "naturalmente tutta la clip in questa maniera perché ha un colore leggermente diverso rispetto all'original."
+    },
+    {
+      "inizio": 300.89,
+      "fine": 305.85,
+      "testo": "Ok, questa è la prima strategia che noi possiamo utilizzare, naturalmente non ve la faccio"
+    },
+    {
+      "inizio": 305.85,
+      "fine": 310.01,
+      "testo": "rivedere perché lo potete fare tante volte, un'altra cosa che voi potete fare è cosa molto importante"
+    },
+    {
+      "inizio": 310.01,
+      "fine": 314.01,
+      "testo": "vedete qui ha cambiato un po' tutti i dettagli, quindi se voglio andare nel lato creativo,"
+    },
+    {
+      "inizio": 314.01,
+      "fine": 320.97,
+      "testo": "ok, è modificare altre robbe tipo, voglio una nitidezza maggiore, allora vado a fare questo quando"
+    },
+    {
+      "inizio": 320.97,
+      "fine": 326.49,
+      "testo": "faccio questi movimenti, vedete guardate, ok, oppure voglio una vividezza migliore, vedete come"
+    },
+    {
+      "inizio": 326.49,
+      "fine": 330.37,
+      "testo": "cambia tutto, quindi lo posso anche fare manualmente, attenzione, quindi se è un solo un discorso"
+    },
+    {
+      "inizio": 330.37,
+      "fine": 335.01,
+      "testo": "di andare a modificare per il metodo Robin Colle, rendere diverse alla clip posso fare quel,"
+    },
+    {
+      "inizio": 335.01,
+      "fine": 341.37,
+      "testo": "poi toccare qualcosa in qui, ma idetutto inutile, ed è tutti inutile perché già va bene la modifica"
+    },
+    {
+      "inizio": 341.37,
+      "fine": 346.05,
+      "testo": "che ci fa con l'intelligenza artificiale premier pro. Un'altra strategia che possiamo utilizzare"
+    },
+    {
+      "inizio": 346.05,
+      "fine": 352.53,
+      "testo": "è quella relativa al fatto che noi magari vogliamo utilizzare questo video, ok, quindi questo video"
+    },
+    {
+      "inizio": 352.53,
+      "fine": 357.33,
+      "testo": "di questo cresco channel da pubblicare informato verticale, magari lo vogliamo pubblicare come shorts"
+    },
+    {
+      "inizio": 357.33,
+      "fine": 361.57,
+      "testo": "di youtube all'interno di dick talk di instagram e di facebook, qui faccio vedere una cosa molto"
+    },
+    {
+      "inizio": 361.57,
+      "fine": 367.09,
+      "testo": "figa, allora tutto quello che noi dobbiamo fare è andare all'interno di questa sezione qui, che"
+    },
+    {
+      "inizio": 367.09,
+      "fine": 372.53,
+      "testo": "sarebbe essenzialmente vedere questo, vedete che allo stesso nome, ma queste realtà è una clip,"
+    },
+    {
+      "inizio": 372.53,
+      "fine": 377.81,
+      "testo": "queste invece è il progetto intero che troviamo qui, ok, quindi in questo caso abbiamo solo una clip,"
+    },
+    {
+      "inizio": 377.81,
+      "fine": 381.73,
+      "testo": "ma generalmente abbiamo un sacco di clip, musica eccetera eccetera e poi abbiamo il progetto madre,"
+    },
+    {
+      "inizio": 381.89,
+      "fine": 387.65,
+      "testo": "progetto madre a questo simbolo, quello che devo fare è cliccare col tasto destro, andare all'interno"
+    },
+    {
+      "inizio": 387.65,
+      "fine": 394.37,
+      "testo": "della sezione impostazione sequenza che questa è qui, ok, e vado a modificare la mia sequenza da"
+    },
+    {
+      "inizio": 394.37,
+      "fine": 401.89,
+      "testo": "1080, ok, a 1.000 e 20, quindi domenzione e fotogramma lo metto 1.080, che sarebbe l'orizzontare,"
+    },
+    {
+      "inizio": 401.89,
+      "fine": 409.33,
+      "testo": "il verticale lo metto 1.000, 9 e 20 e quindi diventa 9, 16 semi, quindi io posso modificare il video"
+    },
+    {
+      "inizio": 409.33,
+      "fine": 415.01,
+      "testo": "rendendo lo verticale, quadrate così via, clicco su ok, clicco nuovamente su ok, decco che la"
+    },
+    {
+      "inizio": 415.01,
+      "fine": 419.81,
+      "testo": "mia sequenza cambia, ho un problema però quando faccio questo, in primi scome potete vedere queste"
+    },
+    {
+      "inizio": 419.81,
+      "fine": 425.41,
+      "testo": "bandenere sopra il sotto, in secondo luogo alcuni personaggi principali del video, questo cosa"
+    },
+    {
+      "inizio": 425.41,
+      "fine": 431.17,
+      "testo": "specifico, questo dizio non si vedono, allora che cosa posso andare a fare? Vado a utilizzare una funzione"
+    },
+    {
+      "inizio": 431.25,
+      "fine": 439.49,
+      "testo": "nella sezione effetti, ok, che mi permette di andare a modificare appunto quello che sto vedendo,"
+    },
+    {
+      "inizio": 439.49,
+      "fine": 445.49,
+      "testo": "rendendo centriare il protagonista del video e in grandendo questa sezione qui con un semplice"
+    },
+    {
+      "inizio": 445.49,
+      "fine": 450.13,
+      "testo": "clic. Vi voglio proprio far vedere una cosa importante, lo immaginiamo per esempio di voler tagliare"
+    },
+    {
+      "inizio": 450.13,
+      "fine": 457.73,
+      "testo": "questa parte qui, di questo dizio, ok, che faccio, io vado qui con il nostro momento taglierino."
+    },
+    {
+      "inizio": 462.99,
+      "fine": 467.63,
+      "testo": "Ok, allora facciamo così, rimaniamo fino a questo, tanto comunque va bene uguale, guarda io"
+    },
+    {
+      "inizio": 467.63,
+      "fine": 471.63,
+      "testo": "quello che faccio, lo possono dollamente farà l'intera glipo, non vi preoccupate, ma io vado su"
+    },
+    {
+      "inizio": 471.63,
+      "fine": 477.23,
+      "testo": "effetti, scrivo reframe, seleziono la voce reframe automatico, guardate un po' che spettavolo,"
+    },
+    {
+      "inizio": 477.23,
+      "fine": 485.79,
+      "testo": "la metto qui, ok, è mi accentre la persona, quindi in grandice e accentre la persona in questione."
+    },
+    {
+      "inizio": 485.79,
+      "fine": 492.91,
+      "testo": "Vedete praticamente io ce lo sempre al centro, ok, quindi ora facciamo una cosa,"
+    },
+    {
+      "inizio": 492.91,
+      "fine": 497.47,
+      "testo": "dogliamoci un attimo all'audio che tanto non ci interessa in questo momento, ok, ecco qui,"
+    },
+    {
+      "inizio": 497.47,
+      "fine": 503.63,
+      "testo": "vedete come sempre il centro, ora se io volessi fare tutto questo nell'intera glipo che cosa va"
+    },
+    {
+      "inizio": 503.63,
+      "fine": 511.31,
+      "testo": "da fare, reframe automatico, reframe automatico anche nelle altre, quindi naturalmente dobbiamo da"
+    },
+    {
+      "inizio": 511.31,
+      "fine": 516.27,
+      "testo": "gli anche il tempo di fare il reframe, vedete che qui in basso sulla destra c'è appunto analisi per"
+    },
+    {
+      "inizio": 516.27,
+      "fine": 521.51,
+      "testo": "reframe automatico, una volta che è effettuato tutta la analisi, quindi è pronto, va comunque"
+    },
+    {
+      "inizio": 521.51,
+      "fine": 525.67,
+      "testo": "assistermarmi la glipo nel miglior modo possibile perché naturalmente è che cosa va a fare,"
+    },
+    {
+      "inizio": 525.67,
+      "fine": 530.55,
+      "testo": "va in grandire la glipo per quello che è formato che io ho dato, ma nello stesso tempo va anche a"
+    },
+    {
+      "inizio": 530.55,
+      "fine": 536.39,
+      "testo": "sistemarmi quello che è il preto da conistire il video perché devono essere al centro, ok,"
+    },
+    {
+      "inizio": 536.39,
+      "fine": 541.87,
+      "testo": "pagina di studizio qui per capirci che si vedeva la parte destra e si inistra le video dove"
+    },
+    {
+      "inizio": 541.87,
+      "fine": 546.47,
+      "testo": "non c'era, non aveva molto senso per lo spettatore, quindi comunque fa in modo attraverso questo sistema"
+    },
+    {
+      "inizio": 546.47,
+      "fine": 552.99,
+      "testo": "di intelligenza artificiale di renderlo fluibile nel miglior modo possibile alle spettatori, quindi vedete"
+    },
+    {
+      "inizio": 552.99,
+      "fine": 558.83,
+      "testo": "questa per terminare, quindi lasciamo lo terminare, ok, perfetto, quindi possiamo subito vederlo, ecco qui,"
+    },
+    {
+      "inizio": 558.83,
+      "fine": 564.75,
+      "testo": "guardate il video, vi guardate l'inizio del video che c'era sempre questo diizio anche in questo"
+    },
+    {
+      "inizio": 564.75,
+      "fine": 570.07,
+      "testo": "caso specifico, vedete come cerca di seguire le persone, ok, naturalmente qui parliamo di un video"
+    },
+    {
+      "inizio": 570.07,
+      "fine": 574.79,
+      "testo": "con una Maria di tagli, in questo caso specifico soprattutto all'inizio quindi comunque è un po' più"
+    },
+    {
+      "inizio": 574.79,
+      "fine": 581.11,
+      "testo": "complicato, ma riesce senza problemi a rimanere collegato con quella che la persona, qui poi se"
+    },
+    {
+      "inizio": 581.11,
+      "fine": 586.15,
+      "testo": "andava via la persona se ricordate in quella clip e quindi abbiamo un video verticale che poi possiamo"
+    },
+    {
+      "inizio": 586.15,
+      "fine": 590.59,
+      "testo": "per esempio pubblicare all'interno di YouTube, di TikTok, di Instagram perché magari va da"
+    },
+    {
+      "inizio": 590.59,
+      "fine": 595.39,
+      "testo": "realizzare il video di un minuto in questa maniera, vado a selezionare le clip specifice e quindi mi"
+    },
+    {
+      "inizio": 595.39,
+      "fine": 600.95,
+      "testo": "facilita di un sacco alla vita perché devo solo fare questo taglio per un minuto e quindi pubblico"
+    },
+    {
+      "inizio": 600.95,
+      "fine": 605.91,
+      "testo": "i miei shorts, i miei Instagram Reels, i miei video su TikTok, su Facebook, dipende da quella"
+    },
+    {
+      "inizio": 605.91,
+      "fine": 609.43,
+      "testo": "che la strategia, naturalmente io quando mi parlo di strategia, questo video ma semplicemente di"
+    },
+    {
+      "inizio": 609.43,
+      "fine": 614.07,
+      "testo": "creatività, poi naturalmente ci sono delle cose che possono funzionare e altre invece che non possono"
+    },
+    {
+      "inizio": 614.07,
+      "fine": 618.47,
+      "testo": "funzionare. Un'altra cosa super figa che noi possiamo fare con questo strumento, guardate un po',"
+    },
+    {
+      "inizio": 618.47,
+      "fine": 624.83,
+      "testo": "io vado qui, clicco sul tasto destro in questo caso specifico nella timeline, vado a cliccare su"
+    },
+    {
+      "inizio": 624.83,
+      "fine": 631.15,
+      "testo": "la voce applicare fremmo automatico a seguenza questa qui, vado a selezionare per esempio il"
+    },
+    {
+      "inizio": 631.15,
+      "fine": 636.07,
+      "testo": "formato quadrato perché posso selezionare un quarto win t verticale, no me se dici esimmi che sarebbe"
+    },
+    {
+      "inizio": 636.07,
+      "fine": 640.67,
+      "testo": "quello di Instagram, le story eccetera eccetera, se è di cinoni che sarebbe classico oppure"
+    },
+    {
+      "inizio": 640.67,
+      "fine": 645.15,
+      "testo": "personale, io voglio il formato quadrato, non voglio unitificare le clip, voglio le regolazioni"
+    },
+    {
+      "inizio": 645.15,
+      "fine": 649.55,
+      "testo": "di movimento forrente verano quindi sostituite, oppure voglio unitificare le clip verano mantendo"
+    },
+    {
+      "inizio": 649.55,
+      "fine": 654.43,
+      "testo": "le regolazioni di movimento verano rimostre le transizioni, io lascio selezionare la prima guardate un"
+    },
+    {
+      "inizio": 654.43,
+      "fine": 661.23,
+      "testo": "po' e in automatico ecco che mi tiene il soggetto al centro vedete molto molto molto bello vedete"
+    },
+    {
+      "inizio": 661.23,
+      "fine": 666.59,
+      "testo": "anche questo che ha rimesso di nuovo al centro fantastico e questo in due semplici clic, lo strumento"
+    },
+    {
+      "inizio": 666.59,
+      "fine": 672.27,
+      "testo": "successivo è veramente spettacolare adesso vi faccio vedere come funziona allora immaginiamo"
+    },
+    {
+      "inizio": 672.27,
+      "fine": 678.31,
+      "testo": "di avere un attraciaudio ok quindi ho la clipo ok una clipo video che alla fine questa clipo video dura"
+    },
+    {
+      "inizio": 678.31,
+      "fine": 684.25,
+      "testo": "quanto 15 minuti e io però ho una sola attraciaudio da voler utilizzare, ora quello che vado a"
+    },
+    {
+      "inizio": 684.25,
+      "fine": 689.69,
+      "testo": "fare e inserire la attraciaudio qui sotto la clip è naturalmente cosa devo fare generalmente devo"
+    },
+    {
+      "inizio": 689.69,
+      "fine": 694.73,
+      "testo": "duplicare questa attracia più volte ma ci sono dei momenti in cui vi faccio capire essenzialmente"
+    },
+    {
+      "inizio": 694.73,
+      "fine": 703.21,
+      "testo": "cosa voglio dire guardate qui se io ho duplico ok questa attracia selezioniamo ricetta io va ad"
+    },
+    {
+      "inizio": 703.21,
+      "fine": 709.53,
+      "testo": "duplicare la mia attraciaudio per duplicare come sto facendo io basta tenere premuto il tasto alta"
+    },
+    {
+      "inizio": 709.53,
+      "fine": 715.77,
+      "testo": "della tastiera ok e poi spostare questa attraciaudio quindi la duplicate ok la spostate con il mouse"
+    },
+    {
+      "inizio": 715.77,
+      "fine": 718.89,
+      "testo": "guardate cosa succede sentiamo attivando all'attraciaudio insieme"
+    },
+    {
+      "inizio": 739.72,
+      "fine": 744.96,
+      "testo": "capite bene che non va bene per il semplice fatto che se ne accorgono le persone che c'è stata una"
+    },
+    {
+      "inizio": 744.96,
+      "fine": 750.16,
+      "testo": "variazione per rendere un'iforme questa attraciaudio soprattutto allungarla per tutto il video"
+    },
+    {
+      "inizio": 750.16,
+      "fine": 755.92,
+      "testo": "quindi con due semplici clicchio che cosa faccio guarda ridorniamo indietro guarda della facilità sposto"
+    },
+    {
+      "inizio": 755.92,
+      "fine": 760.4,
+      "testo": "la attraciaudio qui ok poi naturalmente devo andare a ridurre l'audio nel caso in cui voglio ridurre il"
+    },
+    {
+      "inizio": 760.4,
+      "fine": 766.4,
+      "testo": "volume quello è una cosa normale va da selezion va da tenere premuto qui su questa voce che generalmente"
+    },
+    {
+      "inizio": 766.4,
+      "fine": 771.36,
+      "testo": "la trovate così voi ok quindi io tengo premuto con il mouse quindi tengo premuto con il pulsante"
+    },
+    {
+      "inizio": 771.36,
+      "fine": 779.04,
+      "testo": "sinistro del mouse e si aprono queste 4 voci clicco su strumento remix questo qui ok vado ad allungare"
+    },
+    {
+      "inizio": 781.04,
+      "fine": 786.88,
+      "testo": "e guardate un po' cosa succede praticamente questo strumento remix inizia ad analizzare la clipo per"
+    },
+    {
+      "inizio": 786.88,
+      "fine": 793.84,
+      "testo": "capire come effettuare i tagli di questa clipauio in modo tale da renderla uniforme e infatti una"
+    },
+    {
+      "inizio": 793.84,
+      "fine": 799.68,
+      "testo": "cosa molto importante adesso se io zoomo io proprio far vedere questo ok zoomo e zoomo anche qui"
+    },
+    {
+      "inizio": 799.68,
+      "fine": 807.12,
+      "testo": "così volo faccio vedere meglio ecco qui so qui ora rimpiccioliamo questo lo spostiamo poco poco"
+    },
+    {
+      "inizio": 807.12,
+      "fine": 815.16,
+      "testo": "più sotto ecco qui guardate vedete questi zoomiamo ancora di più tanto lo posso spostare qui vedete"
+    },
+    {
+      "inizio": 815.16,
+      "fine": 822.4,
+      "testo": "queste queste linee ok queste linee qui queste linee qui praticamente sono gli editing che ha fatto"
+    },
+    {
+      "inizio": 822.4,
+      "fine": 826.8,
+      "testo": "direttamente premere proprio empattivo io vorrei ascoltare un attimo la attraciaudio per capire come"
+    },
+    {
+      "inizio": 826.8,
+      "fine": 832.44,
+      "testo": "dove ci sono queste linee dove sono stati parti proprietagli non vi rendete conto che praticamente è"
+    },
+    {
+      "inizio": 832.44,
+      "fine": 849.25,
+      "testo": "stato fatto un taglio vado avanti guardate un po' incredibile questa cosa ok quindi praticamente ora io"
+    },
+    {
+      "inizio": 849.25,
+      "fine": 858.9,
+      "testo": "ridorniamo come la mamma ok anche qui vediamo così ok qui mettiamo lo poco poco così"
+    },
+    {
+      "inizio": 858.9,
+      "fine": 865.06,
+      "testo": "si si intravedono i tagli ok praticamente questo è quello che ha fatto premere proprio ci ha"
+    },
+    {
+      "inizio": 865.06,
+      "fine": 870.9,
+      "testo": "fatto tutti questi tagli in modo tale che la attracia risulti uniforme fino alla fine del video ora"
+    },
+    {
+      "inizio": 870.9,
+      "fine": 874.86,
+      "testo": "io non l'ho portata proprio fino alla fine ma va bene uguale non è stato un errore mia vuole la"
+    },
+    {
+      "inizio": 874.86,
+      "fine": 880.94,
+      "testo": "dovete portare fino alla fine poi naturalmente qui potete decidere sulla parte destra dove parirà audio"
+    },
+    {
+      "inizio": 880.94,
+      "fine": 888.14,
+      "testo": "essenziale di aumentare la durata e di gastomizzarla in questo caso specifico generalmente ragazzi"
+    },
+    {
+      "inizio": 888.14,
+      "fine": 894.38,
+      "testo": "non dovete fare nulla voi se volete meno segmenti ok ecco io li va da ridurre vedete come sono"
+    },
+    {
+      "inizio": 894.38,
+      "fine": 901.14,
+      "testo": "diminuiti se voglio più segmenti ok vado ad aumentarli e poi naturalmente io lascio tutto così"
+    },
+    {
+      "inizio": 901.14,
+      "fine": 906.3,
+      "testo": "come i segmenti sono quelli che poi sono gli editing che va a fare direttamente premere proprio se invece"
+    },
+    {
+      "inizio": 906.3,
+      "fine": 911.58,
+      "testo": "io la vedo che la attracia troppo monododa possono dare ad aumentare le variazioni queste variazioni"
+    },
+    {
+      "inizio": 911.58,
+      "fine": 917.98,
+      "testo": "mi permettono di rendere la attracia ancora più incalzante e diversa rispetto a avere sempre un"
+    },
+    {
+      "inizio": 917.98,
+      "fine": 923.3,
+      "testo": "tipo di attracia monodola ma lasciando su cinque ok guardate un po' diminuiscono in questo caso"
+    },
+    {
+      "inizio": 923.3,
+      "fine": 929.3,
+      "testo": "specifico nel senso che diminuiscono le variazioni ok ma va bene perché comunque sono una"
+    },
+    {
+      "inizio": 929.3,
+      "fine": 933.98,
+      "testo": "libbia di mezzo quindi segmenti e variazioni io li derrei così poi prendete conto cambia la"
+    },
+    {
+      "inizio": 933.98,
+      "fine": 939.14,
+      "testo": "attracia audio attracia audio ma è perfetto perché in questa maniera non dobbiamo mettere"
+    },
+    {
+      "inizio": 939.14,
+      "fine": 943.94,
+      "testo": "cinoi direttamente qui io ho io mentale vedete ora mi fa l'analisi così me lo aumenta senza"
+    },
+    {
+      "inizio": 943.94,
+      "fine": 952.18,
+      "testo": "comunque avere problemi da questo punto di vista la attracia audio stessa ok e fa in modo"
+    },
+    {
+      "inizio": 952.18,
+      "fine": 956.74,
+      "testo": "che questa attracia audio comunque sia un informe per tutta la durata del video senza che devo fare"
+    },
+    {
+      "inizio": 956.74,
+      "fine": 961.86,
+      "testo": "io dei montaggi per capire qual è la parte in cui tagliare per non fare accorgerlo lo spettatore che"
+    },
+    {
+      "inizio": 961.86,
+      "fine": 966.82,
+      "testo": "comunque quella parte audio un certo punto è terminato ok quindi questa è nesta iniziando un"
+    },
+    {
+      "inizio": 966.82,
+      "fine": 971.34,
+      "testo": "altro che magari sempre la stessa ma sente che comunque qualcosa è cambiato quindi vi stra"
+    },
+    {
+      "inizio": 971.34,
+      "fine": 975.26,
+      "testo": "consiglio di utilizzare questa funzione con premere proprio perché comunque vi cambierà la vita"
+    },
+    {
+      "inizio": 975.26,
+      "fine": 980.42,
+      "testo": "nel montaggio soprattutto rivedo due clic guardate ve lo faccio rivedere perché fantastico io"
+    },
+    {
+      "inizio": 980.42,
+      "fine": 984.34,
+      "testo": "vado praticamente all'interno dell'attracia audio quindi perché è importante capire anche la"
+    },
+    {
+      "inizio": 984.34,
+      "fine": 989.62,
+      "testo": "velocità in cui si fanno le cose perché magari oggi vedendo me spiegare ci metto il tempo perché"
+    },
+    {
+      "inizio": 989.62,
+      "fine": 994.82,
+      "testo": "ve le spiego anche in maniera alimentare però dico io guardate quindi carico all'attracia audio la"
+    },
+    {
+      "inizio": 994.82,
+      "fine": 1004.3,
+      "testo": "cancello da qui ok metto all'attracia audio qui clicco due volte se voglio andare a modificare per"
+    },
+    {
+      "inizio": 1004.3,
+      "fine": 1009.7,
+      "testo": "esempio il volume dell'attracia audio naturalmente in questo caso specifico che va da fare"
+    },
+    {
+      "inizio": 1009.78,
+      "fine": 1015.94,
+      "testo": "vado a selezionarla ok e vado a diminuire il volume qui va bene però questo è una cosa che abbiamo"
+    },
+    {
+      "inizio": 1015.94,
+      "fine": 1023.06,
+      "testo": "già visto voglio questo effetto qui ok allora che cosa va da fare metto all'attracia audio qui ok la"
+    },
+    {
+      "inizio": 1023.06,
+      "fine": 1032.05,
+      "testo": "seleziono seleziono questo a momento così valorando ragazzi e attendo che finisce ho finito"
+    },
+    {
+      "inizio": 1032.05,
+      "fine": 1037.65,
+      "testo": "non devo fare vient'altro farà tutto il programma di video editing per me un altro incredibile"
+    },
+    {
+      "inizio": 1037.81,
+      "fine": 1045.09,
+      "testo": "strumento invece ci da la possibilità di effettuare in atomatico i tagli all'interno di una"
+    },
+    {
+      "inizio": 1045.09,
+      "fine": 1049.17,
+      "testo": "clip di un video in questo caso specifico col metodo come in colla immaginiamo che queste video"
+    },
+    {
+      "inizio": 1049.17,
+      "fine": 1054.93,
+      "testo": "originale che noi vogliamo andare a modificare tutto quello che devo fare è andare a selezionare la"
+    },
+    {
+      "inizio": 1054.93,
+      "fine": 1060.69,
+      "testo": "clip in questione quindi il video intero vedere questo in intero video io posso andare a editare e"
+    },
+    {
+      "inizio": 1060.69,
+      "fine": 1069.77,
+      "testo": "clicco col tasto destro vado all'interno della boce rilevamento modifiche scena ok e quindi"
+    },
+    {
+      "inizio": 1069.77,
+      "fine": 1076.77,
+      "testo": "guardate un po' che cosa succede si abre questo scermata dove io posso essenzialmente far editare il"
+    },
+    {
+      "inizio": 1076.77,
+      "fine": 1081.61,
+      "testo": "video direttamente a premere proprio che lo editerà per noi cioè effettuare ai tagli in ogni punto di"
+    },
+    {
+      "inizio": 1081.61,
+      "fine": 1087.25,
+      "testo": "taglio rilevato adesso vediamo proprio come funziona posso anche creare dei un raccogliatori di clip"
+    },
+    {
+      "inizio": 1087.25,
+      "fine": 1092.61,
+      "testo": "segontari per ogni punto di taglio rilevato e posso anche creare il marcatore il clip per ogni"
+    },
+    {
+      "inizio": 1092.61,
+      "fine": 1097.89,
+      "testo": "punto di video rilevato il marcatore serve essenzialmente quando noi vogliamo mettere appunto un marcatore"
+    },
+    {
+      "inizio": 1097.89,
+      "fine": 1103.49,
+      "testo": "o che vi faccio vedere essenzialmente come lo voglio mettere qui ok vedete che rimane poi salvato"
+    },
+    {
+      "inizio": 1103.49,
+      "fine": 1108.85,
+      "testo": "questo marcatore perché mi ricorda qualcosa che io devo fare va bene e quindi questo caso specifico"
+    },
+    {
+      "inizio": 1108.85,
+      "fine": 1115.17,
+      "testo": "magari io posso fare questo guardate rilevamento modifiche scena non seleziono questa voce il faccio"
+    },
+    {
+      "inizio": 1115.17,
+      "fine": 1119.73,
+      "testo": "semplicemente mettere il marcatore ma in questo caso io voglio proprio che fai tagli e voglio anche"
+    },
+    {
+      "inizio": 1119.73,
+      "fine": 1124.61,
+      "testo": "che crea un raccogliatore di clip segontari per ogni punto di taglio rilevato ora se io faccio"
+    },
+    {
+      "inizio": 1124.61,
+      "fine": 1130.45,
+      "testo": "questo non lo farò ragazzi perché se noi ci mettiamo ancora di più va a creare una cartella qui"
+    },
+    {
+      "inizio": 1130.45,
+      "fine": 1136.17,
+      "testo": "con tutte le clip che noi abbiamo tagliato su divise essenzialmente quindi in questo video originale mi va"
+    },
+    {
+      "inizio": 1136.17,
+      "fine": 1140.85,
+      "testo": "a creare tutte le miniclip va bene e me li ritrovò qui quindi poi ci posso fare quello che voglio"
+    },
+    {
+      "inizio": 1141.25,
+      "fine": 1145.65,
+      "testo": "soprattutto se li voglio mettere una lie tra l'altro in questo caso invece io seleziono solo questa voce"
+    },
+    {
+      "inizio": 1145.65,
+      "fine": 1151.73,
+      "testo": "clicco su analizza ora naturalmente l'analisi delle clip in corso dipende dalla durate dal peso del video io"
+    },
+    {
+      "inizio": 1151.73,
+      "fine": 1157.73,
+      "testo": "quindi adesso lascio terminare questa analisi del clip in corso e poi vi faccio vedere cosa cade nella timeline ok"
+    },
+    {
+      "inizio": 1157.73,
+      "fine": 1164.05,
+      "testo": "premere pro ha finito di editare il video di tagliare il video guardate quanti tagli guardate questo"
+    },
+    {
+      "inizio": 1164.05,
+      "fine": 1169.81,
+      "testo": "immaginate che dovete farli tutti voi di affatti premere pro per voi e quindi per esempio guardate qui"
+    },
+    {
+      "inizio": 1171.25,
+      "fine": 1181.01,
+      "testo": "questa facciamo una cosa così non ci disturba l'audio ok seleziono seleziono questo taglio l'audio ok"
+    },
+    {
+      "inizio": 1181.01,
+      "fine": 1188.33,
+      "testo": "e via ritmoviamolo ora andiamo qui ok vi faccio vedere una cosa guardate i tagli che sono perfetti"
+    },
+    {
+      "inizio": 1188.33,
+      "fine": 1197.13,
+      "testo": "boom taglio guardate qui clip boom taglio e così via quindi praticamente che cosa ha fatto premere pro ha"
+    },
+    {
+      "inizio": 1197.13,
+      "fine": 1203.93,
+      "testo": "tagliato il video nei punti in cui si accorto che doveva essere tagliato se parando così le clip l'una dall'altra"
+    },
+    {
+      "inizio": 1203.93,
+      "fine": 1209.21,
+      "testo": "questa è una cosa molto positiva sapete perché perché con il metodo come in colla tra le varie cose che noi"
+    },
+    {
+      "inizio": 1209.21,
+      "fine": 1215.17,
+      "testo": "dobbiamo andare a fare naturalmente e alcune clip andarle a modificare naturalmente per poter capire cioè per"
+    },
+    {
+      "inizio": 1215.17,
+      "fine": 1221.41,
+      "testo": "capirci ha capito anche che questa era sempre la stessa clip però nonostante il tizie sparide e tornato poi c'è"
+    },
+    {
+      "inizio": 1221.41,
+      "fine": 1231.41,
+      "testo": "questa ok e poi c'è questa c'è l'ucinante da questo punto di vista premere pro quindi cosa succede succede che"
+    },
+    {
+      "inizio": 1231.41,
+      "fine": 1238.61,
+      "testo": "noi abbiamo la possibilità l'opportunità naturalmente alcuni errori li può fare però io già so in"
+    },
+    {
+      "inizio": 1238.61,
+      "fine": 1244.45,
+      "testo": "partenza che volendo prendo un video ok delle clip che avevo so in vato elements per esempio scaricato"
+    },
+    {
+      "inizio": 1244.45,
+      "fine": 1249.85,
+      "testo": "voglio modificare questa clip iniziale so già quanto deve durare non devo manco fare il taglio perché"
+    },
+    {
+      "inizio": 1249.85,
+      "fine": 1255.45,
+      "testo": "già vi dalle indicazioni premere pro a diretturasi ho facevo mettere i marcatori mi trovavo pure i marcatori nel"
+    },
+    {
+      "inizio": 1255.45,
+      "fine": 1260.53,
+      "testo": "caso in cui non gli volevo far far i tagli ma semplicemente farmi dire dove dovevo andare a modificare"
+    },
+    {
+      "inizio": 1260.53,
+      "fine": 1265.25,
+      "testo": "queste clip quindi capite bene che questo non granda aiuto soprattutto per il metodo come in colla poi"
+    },
+    {
+      "inizio": 1265.25,
+      "fine": 1270.85,
+      "testo": "attenzione le casi in cui dovete editare dei video in cui ci mettete la faccia o altre robbe potete provare a"
+    },
+    {
+      "inizio": 1270.85,
+      "fine": 1276.73,
+      "testo": "vedere come va ad effettuare appunti questi tagli però è importante perché riesce a capire dove ci deve"
+    },
+    {
+      "inizio": 1276.73,
+      "fine": 1281.53,
+      "testo": "essere il taglio e di conseguenza quali sono magari le parti da rimuovere perché posso decidere tra le"
+    },
+    {
+      "inizio": 1281.53,
+      "fine": 1287.97,
+      "testo": "varie cose ok di dire io all'intero di questo video voglio rimuovere alcune clip ok perché senza"
+    },
+    {
+      "inizio": 1287.97,
+      "fine": 1295.17,
+      "testo": "stare li a vedere nel dettaglio voglio rimuovere voglio ogni totto rimuovere quindi voglio rimuovere questa"
+    },
+    {
+      "inizio": 1295.17,
+      "fine": 1300.81,
+      "testo": "voglio rimuovere questa perché il video parla il mio argomento in generico dove ci sono delle clip che"
+    },
+    {
+      "inizio": 1300.81,
+      "fine": 1305.93,
+      "testo": "posso mettere senza problemi che ho già scaricato come stock io che faccio miglarico la clip qui vi faccio"
+    },
+    {
+      "inizio": 1305.93,
+      "fine": 1312.97,
+      "testo": "proprio vedere ok che va da fare va a seleccionare lo stock ok ora voi per privacy non lo vedete sono"
+    },
+    {
+      "inizio": 1312.97,
+      "fine": 1320.69,
+      "testo": "all'intero del computer ma va dall'intero della mia cartella con gli stock video ok ne prendo uno così"
+    },
+    {
+      "inizio": 1320.69,
+      "fine": 1330.61,
+      "testo": "caso random ecco lo caricato qui vedete io mi l'ho metto qui in automatico taglio e finito perché"
+    },
+    {
+      "inizio": 1330.61,
+      "fine": 1339.09,
+      "testo": "ho so che qua va già bene questo e so esattamente la scena in cui cambia ok c'è questo e c'è l'altro"
+    },
+    {
+      "inizio": 1339.09,
+      "fine": 1344.01,
+      "testo": "spettabolo bene siamo arrivati alla fine di questo video queste sono alcune delle funzionalità di"
+    },
+    {
+      "inizio": 1344.01,
+      "fine": 1349.01,
+      "testo": "premire proprio per quanto riguarda l'intelligenza artificiale probabilmente nei prossimi mesi verano aggiunte"
+    },
+    {
+      "inizio": 1349.01,
+      "fine": 1355.13,
+      "testo": "altre funzionalità e come sempre vi derremo aggiornati anche all'interno della community ci vediamo in"
+    },
+    {
+      "inizio": 1355.13,
+      "fine": 1356.85,
+      "testo": "un prossimo video ciao e a presto"
+    }
+  ]
+}

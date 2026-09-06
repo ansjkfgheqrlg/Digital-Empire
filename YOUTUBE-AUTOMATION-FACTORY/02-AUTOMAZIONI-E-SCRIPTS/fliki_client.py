@@ -116,6 +116,15 @@ def find_italian_voice(key: str, prefer_gender: str = "male") -> str:
     return chosen["_id"]
 
 
+# I tre formati che Fliki espone nella tendina "Size", con la destinazione di ciascuno
+# (A4-L04-02). Sono scritti qui perche' un elenco di valori ammessi che vive solo nella
+# validazione non si trova quando serve.
+FORMATI_AMMESSI = {
+    "16:9": "landscape — YouTube",
+    "9:16": "portrait — Shorts, TikTok, Reels",
+    "1:1": "square — feed social",
+}
+
 MAX_WORDS_PER_SCENE = 130
 
 
@@ -247,15 +256,25 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str,
                    ai_video_model: str | None = None,
                    clip_percentage: int = AI_VIDEO_CLIP_PERCENTAGE,
                    subtitle_preset_id: str = "builtin-legacy-bold",
+                   aspect_ratio: str = "16:9",
                    canale: str = "dosementale", force_parallel: bool = False) -> str:
     _verifica_nessuna_generazione_in_corso(canale, force_parallel)
+    # A4-L04-02 (studio AI TUBE PRO / A4-L04 @ 12:50, frame-155.png — la tendina "Size" con
+    # Portrait/Square/Landscape e i social scritti accanto). Il formato e' una DECISIONE DI
+    # DESTINAZIONE, non una costante: finche' era la stringa "16:9" scritta qui dentro, la
+    # fabbrica non poteva produrre Shorts e nessun documento diceva perche'. Ora arriva da
+    # CANALI[canale]["formato"] o da --formato, il default resta 16:9 (comportamento invariato).
+    if aspect_ratio not in FORMATI_AMMESSI:
+        raise SystemExit("[!] Formato %r non ammesso. Ammessi: %s"
+                         % (aspect_ratio, ", ".join("%s (%s)" % (k, v)
+                                                    for k, v in FORMATI_AMMESSI.items())))
     payload = {
         "payload": [{
             "workflowType": "script",
             "workflowFormat": "video",
             "content": content,
             "voiceId": voice_id,
-            "aspectRatio": "16:9",
+            "aspectRatio": aspect_ratio,
             "resolution": "1080p",
             # "stock" e' il DEFAULT APPROVATO (video v8). Con --visuals ai le immagini vengono
             # generate dal testo della scena invece di essere pescate da un archivio: le clip
@@ -325,7 +344,11 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str,
     # per essere davvero inviato, letto dalla fonte di verita' in apex7_orchestrator.py.
     esito_config = _mod.REGOLATORI.verifica_configurazione(
         payload["payload"][0],
-        flag_espliciti={"visuals": visuals, "subtitlePresetId": subtitle_preset_id})
+        flag_espliciti={"visuals": visuals, "subtitlePresetId": subtitle_preset_id,
+                        # aspectRatio: variante autorizzata SOLO se e' quella che sta per essere
+                        # davvero inviata, dichiarata dal canale o da --formato. Non e' un
+                        # bypass: il regolatore continua a bocciare qualsiasi altro valore.
+                        "aspectRatio": aspect_ratio})
     print(f"[regolatore-configurazione] {esito_config['esito']} — {esito_config['motivo']}")
     if esito_config["esito"] == "BLOCCO":
         raise SystemExit(f"[!] regolatore-configurazione BLOCCO: {esito_config.get('differenze')}")
@@ -439,6 +462,10 @@ def main():
     ap.add_argument("--canale", choices=["dosementale", "legamidiamore"], default="dosementale",
                     help="Determina il genere voce dal canale (default: dosementale/maschile, "
                          "comportamento invariato). Usa 'legamidiamore' per la voce femminile.")
+    ap.add_argument("--formato", choices=["16:9", "9:16", "1:1"], default=None,
+                    help="Formato del video: 16:9 (YouTube, default), 9:16 (Shorts/TikTok/Reels), "
+                         "1:1 (feed social). Senza questo flag vale quello dichiarato dal canale "
+                         "in CANALI[canale]['formato'] — oggi 16:9 per entrambi (A4-L04-02).")
     ap.add_argument("--force-parallel", action="store_true",
                     help="Ignora il lock anti-generazioni-simultanee (memory/fliki_lock.json). "
                          "Causa CONFERMATA del blocco reale 2026-08-19/20 (3 job insieme rimasti "
@@ -453,9 +480,20 @@ def main():
     import apex7_orchestrator as _mod  # noqa: E402
     voice_gender = _mod.CANALI[args.canale].get("voice_gender", "male")
     subtitle_preset_id = _mod.CANALI[args.canale].get("subtitle_preset", "builtin-legacy-bold")
+    formato = args.formato or _mod.CANALI[args.canale].get("formato", "16:9")
     print(f"[+] Canale={args.canale} -> genere voce richiesto: {voice_gender}, "
-          f"preset sottotitoli: {subtitle_preset_id}")
-    voice_id = find_italian_voice(key, prefer_gender=voice_gender)
+          f"preset sottotitoli: {subtitle_preset_id}, formato: {formato}")
+    # A4-L03-02: la voce del canale sta FISSA nella sua configurazione. find_italian_voice
+    # resta la via per risolverla la prima volta (o se un giorno l'_id sparisse), non il modo
+    # di risceglierla a ogni generazione: un canale che cambia voce da solo perde la sua faccia.
+    voice_id = _mod.CANALI[args.canale].get("voice_id")
+    if voice_id:
+        print(f"[+] Voce fissa del canale: {voice_id} (nessuna riscelta)")
+    else:
+        print("[!] Nessun voice_id in CANALI per questo canale: lo risolvo ora dall'API. "
+              "Congelalo in apex7_orchestrator.py:CANALI, altrimenti la voce puo' cambiare "
+              "da sola alla prossima generazione (A4-L03-02).")
+        voice_id = find_italian_voice(key, prefer_gender=voice_gender)
     modello = None if args.ai_video_model == "nessuno" else args.ai_video_model
     if args.visuals == "ai":
         print(f"[+] Visuals: ai (artStyle={args.art_style}, "
@@ -466,6 +504,7 @@ def main():
                             visuals=args.visuals, art_style=args.art_style,
                             ai_video_model=modello, clip_percentage=args.clip_percentage,
                             subtitle_preset_id=subtitle_preset_id,
+                            aspect_ratio=formato,
                             canale=args.canale, force_parallel=args.force_parallel)
     try:
         download_url = poll_status(key, file_id)

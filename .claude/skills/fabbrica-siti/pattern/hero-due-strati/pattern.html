@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; hero-due-strati</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: la parola del titolo e' disegnata DUE VOLTE nella stessa
+   posizione. Una piena SOTTO il soggetto (z-index 1), una in solo contorno
+   SOPRA (z-index 3). Risultato: la parola e' piena sul fondo e diventa
+   un'INCISIONE dove attraversa il soggetto. Costo: un <span> in piu'.
+   Origine: armageddon.css:264-303. */
+.hero { position: relative; height: var(--u); overflow: hidden; background: var(--ink-2); }
+
+/* Il soggetto. In produzione e' una fotografia con fetchpriority="high";
+   qui e' un placeholder generato, per non inventare URL di immagini. */
+.hero__soggetto {
+  position: absolute; z-index: 2; left: var(--col); top: 0;
+  width: var(--u); height: var(--u);
+  background:
+    radial-gradient(58% 46% at 50% 42%, rgba(217, 212, 225, 0.30) 0%, rgba(217, 212, 225, 0) 62%),
+    radial-gradient(30% 24% at 50% 34%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 70%);
+  animation: reveal-zoom 1700ms var(--ease-land) both;
+}
+
+.hero__alone {
+  position: absolute; z-index: 1; inset: 0;
+  background:
+    radial-gradient(42% 38% at 22% 30%, rgba(251, 70, 4, 0.20), transparent 70%),
+    radial-gradient(38% 34% at 78% 52%, rgba(251, 70, 4, 0.14), transparent 72%);
+  animation: reveal-fade 1400ms ease-out 120ms both;
+}
+
+/* niente z-index sul titolo: le parole devono ordinarsi UNA PER UNA contro il
+   soggetto. Uno z-index qui creerebbe un contesto di impilamento che le sigilla
+   tutte insieme e l'effetto sparisce. */
+.hero__titolo { position: absolute; inset: 0; margin: 0; font-weight: 700; }
+
+.hero__parola {
+  position: absolute; left: 0; right: 0; display: block;
+  text-align: center; line-height: 1;
+  letter-spacing: var(--tracking-display);
+}
+
+.hero__parola--1 { z-index: 1; font-size: calc(var(--u) * 0.1996); top: calc(var(--u) * 0.0622); }
+
+.hero__parola--bordo {
+  z-index: 3;
+  color: transparent;
+  -webkit-text-stroke: max(1px, calc(var(--u) * 0.0013)) var(--orange);
+}
+
+.hero__parola--2 { z-index: 3; font-size: calc(var(--u) * 0.2025); top: calc(var(--u) * 0.62125); }
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <section class="hero">
+    <div class="hero__alone" aria-hidden="true"></div>
+
+    <h1 class="hero__titolo">
+      <span class="hero__parola hero__parola--1"><i class="in in--a text-silver-orange">Impero</i></span>
+      <span class="hero__parola hero__parola--1 hero__parola--bordo" aria-hidden="true"><i class="in in--a">Impero</i></span>
+      <span class="hero__parola hero__parola--2"><i class="in in--b text-silver-white">si costruisce</i></span>
+    </h1>
+
+    <div class="hero__soggetto" aria-hidden="true"></div>
+  </section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,403 @@
+{
+  "lesson_id": "ebc4c3e6-877a-4019-8d89-e39a7f2102ee",
+  "modello": "base",
+  "durata_s": 540.3,
+  "parole": 1235,
+  "blocchi": [
+    {
+      "inizio": 6.42,
+      "fine": 12.1,
+      "testo": "Ciao a tutti e benvenuti all'interno di questo nuovo video. In questo video andiamo a vedere"
+    },
+    {
+      "inizio": 12.1,
+      "fine": 18.14,
+      "testo": "è uno dei miei metodi preferiti per poter costruire centinaia di video anche tutti insieme,"
+    },
+    {
+      "inizio": 18.14,
+      "fine": 23.64,
+      "testo": "sfruttando l'intelligenza artificiale, ma questa volta non sfrutteremo solo l'intelligenza"
+    },
+    {
+      "inizio": 23.64,
+      "fine": 29.34,
+      "testo": "artificiale dei vari programmi, quelli, diciamo che sono nati adesso, ma sfrutteremo"
+    },
+    {
+      "inizio": 29.34,
+      "fine": 34.52,
+      "testo": "il programma di editing per me più potente che esista, che è premier pro, per poter fare"
+    },
+    {
+      "inizio": 34.52,
+      "fine": 39.02,
+      "testo": "questo genere di video. Allora la prima cosa che faccio, ovviamente, ci dobbiamo armare"
+    },
+    {
+      "inizio": 39.02,
+      "fine": 45.46,
+      "testo": "del nostro testo, che molto probabilmente potete realizzare o con la vostra voce, abbiamo"
+    },
+    {
+      "inizio": 45.46,
+      "fine": 52.1,
+      "testo": "visto anche come vedremo, come potere modificare la vostra voce per potere creare i video,"
+    },
+    {
+      "inizio": 52.1,
+      "fine": 58.18,
+      "testo": "oppure come poter utilizzare le voce artificiali. In questo caso io sto utilizzando il text"
+    },
+    {
+      "inizio": 58.28,
+      "fine": 64.82,
+      "testo": "su speech di flichi, poi potete utilizzare qualsiasi text su speech per poter fare questo,"
+    },
+    {
+      "inizio": 64.82,
+      "fine": 72.02,
+      "testo": "quindi ascoltiamo un attivo. Quindi vado a fare da un lot, ed ecco qui che io ciò"
+    },
+    {
+      "inizio": 72.02,
+      "fine": 77.94,
+      "testo": "la mia draccia audio, da questa draccia audio adesso andrò a creare tutto il video. Se avete"
+    },
+    {
+      "inizio": 77.94,
+      "fine": 84.26,
+      "testo": "seguito bene tutti i bassaggi del corso, molto probabilmente adesso avrete delle cartelle"
+    },
+    {
+      "inizio": 84.26,
+      "fine": 90.34,
+      "testo": "con tutte le clip all'interno, in base alla vostra nica, in base all'argomento specifico"
+    },
+    {
+      "inizio": 90.34,
+      "fine": 96.32,
+      "testo": "dei video che volete realizzare. Io in questo caso, per me per fare questo video ho preso una"
+    },
+    {
+      "inizio": 96.32,
+      "fine": 101.52,
+      "testo": "serie di immagini di Roberto Vecchioni, come potevano essere delle clip di imbato o come"
+    },
+    {
+      "inizio": 101.52,
+      "fine": 106.96,
+      "testo": "potevano essere delle clip di qualsiasi altro piattaforma o strumento che abbiamo visto"
+    },
+    {
+      "inizio": 106.96,
+      "fine": 112.64,
+      "testo": "all'interno di questo percorso. Quindi ecco qui che ho selezionato 4, 5, 6, 7, 8 foto"
+    },
+    {
+      "inizio": 112.64,
+      "fine": 117.6,
+      "testo": "per fare questo video, poi ovviamente in base alla lunghezza del testo vi rendere dei conto di"
+    },
+    {
+      "inizio": 117.6,
+      "fine": 126.24,
+      "testo": "quante foto avete bisogno. La prima cosa, ovviamente, è aprire Premiere Pro. Io scrivo Arrigo Vecchioni."
+    },
+    {
+      "inizio": 126.24,
+      "fine": 133.16,
+      "testo": "Ok, clicco sul tasto crea e vi faccio vedere come questo processo richiede veramente pochissimo tempo."
+    },
+    {
+      "inizio": 133.16,
+      "fine": 137.52,
+      "testo": "Allora, la prima cosa che dobbiamo fare ovviamente trascinare all'interno di Premiere Pro in"
+    },
+    {
+      "inizio": 137.52,
+      "fine": 143.04,
+      "testo": "nostro testo, quindi lo vado a prendere, è lo trascinato all'interno di Premiere Pro. La"
+    },
+    {
+      "inizio": 143.04,
+      "fine": 150.32,
+      "testo": "prima cosa che faccio, guardate la facilità e andare a mettere l'audio direttamente nella timeline."
+    },
+    {
+      "inizio": 150.32,
+      "fine": 156.96,
+      "testo": "Cliccando su grafica e tido li finestra qui, troverete il tasto testo, ok, quindi andate su"
+    },
+    {
+      "inizio": 156.96,
+      "fine": 163.16,
+      "testo": "finestra, andate su testo, questo lo potete fare da Premiere Pro 2022 in avanti, ok?"
+    },
+    {
+      "inizio": 163.16,
+      "fine": 170.16,
+      "testo": "E guardate qui, vi basterà cliccare su trascrivi sequenza, mettete la lingua del vostro video,"
+    },
+    {
+      "inizio": 170.16,
+      "fine": 176.6,
+      "testo": "ok, vedete, ci sono le principali lingue, io metterò i daliano, clickerò trascrivi, ed ecco qua"
+    },
+    {
+      "inizio": 176.6,
+      "fine": 183.44,
+      "testo": "che in automatico Premiere Pro mi sta creando i sottotitoli del mio video, quindi non ci sarà bisogno più"
+    },
+    {
+      "inizio": 183.44,
+      "fine": 189.0,
+      "testo": "di utilizzare riescimi la strumenti, ma sarà direttamente Premiere Pro che nel giro di pochissimi"
+    },
+    {
+      "inizio": 189.0,
+      "fine": 194.48,
+      "testo": "secondi mi andrà a creare tutti i sottotitoli, mentre i sottotitoli vengono creati, io vado"
+    },
+    {
+      "inizio": 194.48,
+      "fine": 201.26,
+      "testo": "ad inserire qui le clip che mi sono precedentemente scaricato, quindi cosa faccio, vado qui,"
+    },
+    {
+      "inizio": 201.26,
+      "fine": 209.56,
+      "testo": "abbro la cartella, questa qua di vecchioni, ok, e poi da trascinare tutte le immagini qua dentro,"
+    },
+    {
+      "inizio": 209.56,
+      "fine": 216.56,
+      "testo": "guardate, nel frattempo qui, quindi veramente pochissimo tempo sono stati creati tutti i sottotitoli,"
+    },
+    {
+      "inizio": 217.12,
+      "fine": 223.36,
+      "testo": "controllate solamente se il testo è giusto, ok, vi basterà cliccare qua su crea sottotitoli,"
+    },
+    {
+      "inizio": 223.36,
+      "fine": 231.76,
+      "testo": "vi basterà cliccare su crea, e guardate la magia, in automatico il video è stato creato, guardate,"
+    },
+    {
+      "inizio": 231.76,
+      "fine": 239.24,
+      "testo": "io vado ad inserire le immagini, quindi me le sistemo un po' così a caso, vi rivedo molte volte,"
+    },
+    {
+      "inizio": 239.24,
+      "fine": 245.6,
+      "testo": "non è tanto importante il contenuto video che andiamo a fare, ma quanto il contenuto,"
+    },
+    {
+      "inizio": 245.6,
+      "fine": 252.16,
+      "testo": "poi vero, è proprio del video, vi faccio vedere una cosa, allora vado a sistemarmi le immagini così,"
+    },
+    {
+      "inizio": 252.16,
+      "fine": 262.51,
+      "testo": "le immagini, quindi selezioniamo le varie immagini, guardate cosa sto facendo, quindi in grandisco"
+    },
+    {
+      "inizio": 262.51,
+      "fine": 268.71,
+      "testo": "le immagini, me le sistemo un po', guardate, ci sto lo sto facendo in tempo reale per farvi capire"
+    },
+    {
+      "inizio": 268.71,
+      "fine": 276.99,
+      "testo": "la facilità, ovviamente potete fare il reframe automatico di queste immagini, in modo che non"
+    },
+    {
+      "inizio": 276.99,
+      "fine": 282.51,
+      "testo": "non dovete perdere tempo a fare come sto facendo ora, ve lo sto facendo vedere in maniera"
+    },
+    {
+      "inizio": 282.51,
+      "fine": 289.95,
+      "testo": "manuale, proprio per farvi vedere come funziona, allora come vedete, qui troviamo il nostro sottotitolo,"
+    },
+    {
+      "inizio": 289.95,
+      "fine": 295.39,
+      "testo": "cosa dobbiamo fare noi, selezioniamo pannelli qui che troviamo all'interno della timeline, ok,"
+    },
+    {
+      "inizio": 295.39,
+      "fine": 306.71,
+      "testo": "vado a selezionare tutta questa parte qui, vado a spostare al centro questo qui, lo vedete, il sottotitolo,"
+    },
+    {
+      "inizio": 306.71,
+      "fine": 313.23,
+      "testo": "vado ad inserire uno spondo in modo che comunque sia più chiaro, lo vado a mettere nero e vado a"
+    },
+    {
+      "inizio": 313.23,
+      "fine": 322.23,
+      "testo": "aumentare praticamente qui, lo spondo, quindi la trasparenza non c'è più, guardate qui io metto"
+    },
+    {
+      "inizio": 322.23,
+      "fine": 327.23,
+      "testo": "play e predicate il video è pronto, ve lo faccio vedere perché probabilmente ancora non vi siete"
+    },
+    {
+      "inizio": 327.23,
+      "fine": 332.51,
+      "testo": "resi conto della velocità, quindi metto play e lo vediamo insieme. Buonasera a tutti i nostri"
+    },
+    {
+      "inizio": 332.51,
+      "fine": 338.87,
+      "testo": "delispectatori, questo è un giorno di grande tristezza per il mondo della musica italiana, il cantatore"
+    },
+    {
+      "inizio": 338.87,
+      "fine": 343.75,
+      "testo": "Roberto Becchioni ha annunciato sulla sua pagina social la scomparsa del figlio al rito, ha venuta"
+    },
+    {
+      "inizio": 343.75,
+      "fine": 350.15,
+      "testo": "dopo una lunga lotta contro una malattia ancora non specificata, con un breve post, il cantatore"
+    },
+    {
+      "inizio": 350.15,
+      "fine": 357.19,
+      "testo": "e brian solo ha espresso tutto, quindi Roberto Becchioni è uno dei cantatori più amati"
+    },
+    {
+      "inizio": 357.19,
+      "fine": 361.87,
+      "testo": "rispettati del palorama italiano, con una carriera che si stende per un 3-5."
+    },
+    {
+      "inizio": 361.87,
+      "fine": 368.95,
+      "testo": "Riente, abbiamo fatto il video anche in questo caso in 2-3 minuti, è normale che anche qui più"
+    },
+    {
+      "inizio": 368.95,
+      "fine": 376.23,
+      "testo": "stiamo ad elaborare il video, a fare le cose nel miglior modo possibile, più il video era bene,"
+    },
+    {
+      "inizio": 376.23,
+      "fine": 382.75,
+      "testo": "però se vuoi volete creare tanti video, quindi come vi abbiamo detto utilizzando la quantità"
+    },
+    {
+      "inizio": 382.75,
+      "fine": 389.51,
+      "testo": "rispetto alla qualità, questo è secondo me il metodo migliori in assoluto per poter fare questo,"
+    },
+    {
+      "inizio": 389.51,
+      "fine": 396.55,
+      "testo": "possiamo aggiungere degli effetti video, come ad esempio possiamo aggiungere ok, vedete, proprio per"
+    },
+    {
+      "inizio": 396.55,
+      "fine": 404.11,
+      "testo": "ho messo un effetto al caso, ma ci sono tantissimi effetti che possiamo andare ad aggiungere, ad esempio"
+    },
+    {
+      "inizio": 404.11,
+      "fine": 412.19,
+      "testo": "possiamo aggiungere l'effetto che va a muovere l'immagine in avanti, guardate che facciamo così così"
+    },
+    {
+      "inizio": 412.19,
+      "fine": 417.87,
+      "testo": "qualcune delle canzoni più belle e significative della nostra cultura, vedete, quindi c'è l'effetto"
+    },
+    {
+      "inizio": 417.87,
+      "fine": 422.43,
+      "testo": "all'interno dell'immagine, questo non è un video su premere, però l'abbiamo già visto come si"
+    },
+    {
+      "inizio": 422.43,
+      "fine": 427.83,
+      "testo": "utilizzano gli effetti e tutte queste cose, quindi l'obiettivo di questo video era come, con le"
+    },
+    {
+      "inizio": 427.83,
+      "fine": 434.81,
+      "testo": "semplici immagini o video, creando i sottotidoli automatici di YouTube noi abbiamo la possibilità di"
+    },
+    {
+      "inizio": 434.81,
+      "fine": 441.75,
+      "testo": "avere un video già pronto, se per caso c'è qualche frase che è non viene trascritta bene da parte del"
+    },
+    {
+      "inizio": 441.75,
+      "fine": 449.43,
+      "testo": "programma vi basterà, selezionarla differimenti direttamente da qui, quindi grande affetto di, vedete,"
+    },
+    {
+      "inizio": 449.43,
+      "fine": 455.99,
+      "testo": "c'è scritto di i suoi figli, parlando grande affetto dei suoi figli, quindi io scrivo aggiungolo,"
+    },
+    {
+      "inizio": 455.99,
+      "fine": 471.51,
+      "testo": "ok, e lo vado a vedere, ok, ho creato il video in pochissimi minuti utilizzando"
+    },
+    {
+      "inizio": 471.51,
+      "fine": 478.83,
+      "testo": "premie, però grazie sottotidoli, questa è una delle cose più potenti, veramente, che voi possiate"
+    },
+    {
+      "inizio": 478.83,
+      "fine": 485.27,
+      "testo": "fare e che avete imparato all'interno di questo corso, ricordate per qualsiasi modifica vi"
+    },
+    {
+      "inizio": 485.27,
+      "fine": 491.95,
+      "testo": "basterà, selezionare qui in alto i sottotidoli, ok, e potete fare tutte le modifiche che volete,"
+    },
+    {
+      "inizio": 491.95,
+      "fine": 499.35,
+      "testo": "volete la scritta più grande, ok, lo cambiate qua, volete cambiare il fondo, lo volete fare da qui,"
+    },
+    {
+      "inizio": 499.35,
+      "fine": 506.35,
+      "testo": "ok, volete cambiare il colore di spondo, lo potete fare da qua, quello che vi invito a fare ora, se volete"
+    },
+    {
+      "inizio": 506.35,
+      "fine": 516.63,
+      "testo": "montare con premirpro è sempre prepararvi tutte le cartelle con le varie clip, ok, e poi basterà"
+    },
+    {
+      "inizio": 516.63,
+      "fine": 523.19,
+      "testo": "semplicemente collare la voce, o artificiale, o la vostra voce per creare video con sottotidoli, così che"
+    },
+    {
+      "inizio": 523.19,
+      "fine": 530.39,
+      "testo": "diventano video originali, unici e che possono senza alcun problema diventare virali, un grosso"
+    },
+    {
+      "inizio": 530.39,
+      "fine": 533.55,
+      "testo": "braccio da Pietro Ganjemi e ci vediamo nel prossimo video."
+    }
+  ]
+}

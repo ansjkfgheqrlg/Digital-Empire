@@ -239,14 +239,24 @@ def durata_flusso(url):
     secondi: e' quello che permette di scegliere il flusso GIUSTO prima di scaricare
     centinaia di frammenti.
     """
-    try:
-        out = subprocess.run(
-            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
-             "-of", "default=nw=1:nk=1", url],
-            capture_output=True, text=True, timeout=60)
-        return int(round(float(out.stdout.strip())))
-    except Exception:
-        return None
+    # Alcuni manifesti del portale rispondono solo a chi si presenta come il lettore
+    # della pagina: senza Referer e User-Agent tornano 403 e ffprobe non misura nulla
+    # (visto il 2026-09-06 su L11, L12 e L18 — tre candidati, tutti "?" ).
+    intestazioni = ("Referer: https://corsi.muccarossa.com/\r\n"
+                    "Origin: https://corsi.muccarossa.com\r\n")
+    agente = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+    for extra in (["-headers", intestazioni, "-user_agent", agente], []):
+        try:
+            out = subprocess.run(
+                ["ffprobe", "-v", "error"] + extra +
+                ["-show_entries", "format=duration",
+                 "-of", "default=nw=1:nk=1", url],
+                capture_output=True, text=True, timeout=45)
+            return int(round(float(out.stdout.strip())))
+        except Exception:
+            continue
+    return None
 
 
 def scegli_flusso(catturati, durata_s):
@@ -284,6 +294,16 @@ def scegli_flusso(catturati, durata_s):
         print("[!] Un solo flusso e non corrisponde alla durata attesa: lo scarico "
               "comunque, il controllo sul file lo marchera' sospetto.")
         return unici[0]
+    # NESSUN candidato misurabile (tutte le durate "?"): non e' la stessa cosa di
+    # "misurati e sbagliati". Rinunciare qui era troppo severo e bloccava tre lezioni
+    # (2026-09-06): il controllo che conta davvero — `durata_reale` sul file scaricato,
+    # che marca `1-sospetto` — resta comunque attivo dopo. Si prende l'ultimo visto,
+    # come gia' si fa quando la durata della lezione non si conosce.
+    if all(d is None for _u, d in misure):
+        print("[!] Nessun candidato misurabile (%d flussi, tutte le durate ignote): "
+              "prendo l'ultimo visto. Il controllo sul file scaricato resta attivo."
+              % len(unici))
+        return unici[-1]
     return None
 
 
@@ -402,7 +422,15 @@ def scarica_lezione(lesson_id, corso="aitubepro", qualita=360, visibile=True):
     print("[+] Flusso catturato (gettone valido adesso).")
     print("[+] Scarico a %dp ..." % qualita)
 
-    cmd = [sys.executable, "-m", "yt_dlp", "--no-warnings", "--quiet", "--progress",
+    # Il CDN del portale rifiuta con 403 chi non si presenta come il lettore della pagina
+    # (visto il 2026-09-06 su L11, L12, L18: il flusso era catturato e valido, ma yt-dlp
+    # prendeva 403 sul manifesto). Le stesse intestazioni che usa ffprobe in durata_flusso.
+    AGENTE = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+    cmd = [sys.executable, "-m", "yt_dlp", "--no-warnings", "--quiet", "--no-progress",
+           "--user-agent", AGENTE,
+           "--add-header", "Referer:https://corsi.muccarossa.com/",
+           "--add-header", "Origin:https://corsi.muccarossa.com",
            "-f", "bestvideo[height<=%d]+bestaudio/best[height<=%d]/best" % (qualita, qualita),
            "--merge-output-format", "mp4", "-o", mp4, flusso]
     esito = subprocess.run(cmd, cwd=cartella)

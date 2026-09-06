@@ -74,11 +74,11 @@ conio. Comando: `python scripts/checkpoint.py cp --titolo "..."`. Vale anche per
 | Fonte | Visione | Atomi | Wiki | Archivio |
 |---|---|---|---|---|
 | doc Justin Sung · `v01` · `v02` · `v03` · `v07` | 100% | si | si | si |
-| **`v06` corso agenti AI** | **209/376 = 55%** | -- | -- | -- |
+| **`v06` corso agenti AI** | **273/376 = 72%** | -- | -- | -- |
 | `v04` mindset · `v05` bot crypto · `v08` Cowork · `v09` vocali | 0% | -- | -- | -- |
 
 **RIPRENDI DA QUI, in quest'ordine:**
-1. `max18-v06-JTn5pqm9ecM`, buchi **211-376 e la scena 21** (167 scene). Sentinelle da 21 scene,
+1. `max18-v06-JTn5pqm9ecM`, buco **274-376** (103 scene). Sentinelle da 21 scene,
    scrittura ogni 5, **mai aprire `transcript.md` intero**.
 2. Unione: `python scripts/unisci_parti.py --run max18-v06-JTn5pqm9ecM --scene 376`
 3. Atomi a blocchi, poi `python scripts/unisci_atomi.py --run max18-v06-JTn5pqm9ecM`, poi

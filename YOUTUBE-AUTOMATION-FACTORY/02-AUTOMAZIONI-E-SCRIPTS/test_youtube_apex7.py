@@ -328,5 +328,85 @@ class TestYouTubeApex7(unittest.TestCase):
             self.assertTrue(os.path.exists(dashboard), "gate bloccante senza dashboard aggiornata")
             self.assertTrue(os.path.exists(orchestrator.state_file), "gate bloccante senza stato salvato")
 
+class TestConfigurazioneCanale(unittest.TestCase):
+    """Le due regole di binario B applicate al gate A4 (studio AI TUBE PRO, 2026-09-06).
+
+    Sono prove a secco: il payload si assembla davvero, ma la chiamata a Fliki e' sostituita.
+    Non spendono un minuto di piano e girano in millisecondi.
+    """
+
+    def setUp(self):
+        import fliki_client
+        import apex7_orchestrator
+        self.fc = fliki_client
+        self.ao = apex7_orchestrator
+        self._request_vero = fliki_client._request
+        self._lock_vero = fliki_client._write_lock
+        self._guardia_vera = fliki_client._verifica_nessuna_generazione_in_corso
+        self.catturato = {}
+
+        def finto_request(metodo, percorso, key, payload=None):
+            self.catturato["payload"] = payload
+            return {"data": {"filesCreated": ["prova-a-secco"]}}
+
+        fliki_client._request = finto_request
+        fliki_client._write_lock = lambda *a, **k: None
+        fliki_client._verifica_nessuna_generazione_in_corso = lambda *a, **k: None
+
+    def tearDown(self):
+        self.fc._request = self._request_vero
+        self.fc._write_lock = self._lock_vero
+        self.fc._verifica_nessuna_generazione_in_corso = self._guardia_vera
+
+    def _genera(self, canale, **extra):
+        cfg = self.ao.CANALI[canale]
+        parametri = dict(visuals="ai", art_style="realistic",
+                         ai_video_model=self.fc.AI_VIDEO_MODEL,
+                         subtitle_preset_id=cfg["subtitle_preset"],
+                         aspect_ratio=cfg["formato"], canale=canale)
+        parametri.update(extra)
+        testo = "Prima riga.\n" + "Seconda riga."
+        self.fc.generate_video("chiave-finta", testo,
+                               cfg["voice_id"], "prova-a-secco", **parametri)
+        return self.catturato["payload"]["payload"][0]
+
+    def test_A4_L03_02_la_voce_del_canale_e_fissa(self):
+        """Ogni canale dichiara il suo voice_id e quello finisce nel payload.
+
+        Prima la voce veniva ri-risolta a ogni generazione: se Fliki avesse cambiato l'ordine
+        del suo elenco, il canale avrebbe cambiato voce da solo.
+        """
+        for canale in ("dosementale", "legamidiamore"):
+            atteso = self.ao.CANALI[canale].get("voice_id")
+            self.assertTrue(atteso, f"{canale} non dichiara un voice_id fisso (A4-L03-02)")
+            self.assertEqual(self._genera(canale)["voiceId"], atteso)
+        self.assertNotEqual(self.ao.CANALI["dosementale"]["voice_id"],
+                            self.ao.CANALI["legamidiamore"]["voice_id"],
+                            "due canali non possono avere la stessa voce per sbaglio")
+
+    def test_A4_L04_02_il_formato_e_dichiarato_e_il_default_non_cambia(self):
+        """Il formato arriva dal canale, e il default resta quello approvato."""
+        for canale in ("dosementale", "legamidiamore"):
+            self.assertEqual(self._genera(canale)["aspectRatio"], "16:9")
+
+    def test_A4_L04_02_gli_shorts_ora_si_possono_produrre(self):
+        """9:16 passa il regolatore come variante dichiarata: prima era impossibile."""
+        self.assertEqual(self._genera("dosementale", aspect_ratio="9:16")["aspectRatio"], "9:16")
+
+    def test_A4_L04_02_un_formato_inventato_ferma_tutto(self):
+        with self.assertRaises(SystemExit):
+            self._genera("dosementale", aspect_ratio="4:3")
+
+
+class TestPianoEditoriale(unittest.TestCase):
+    def test_A4_L01_03_esiste_la_colonna_delle_fonti_extra(self):
+        """Una fonte senza un posto dove stare non viene mai riusata (A4-L01-03)."""
+        import io as _io
+        with _io.open("assemble_piano_editoriale.py", encoding="utf-8") as f:
+            sorgente = f.read()
+        self.assertIn('"fonti_extra"', sorgente,
+                      "il piano editoriale non ha la colonna per il materiale di supporto")
+
+
 if __name__ == "__main__":
     unittest.main()

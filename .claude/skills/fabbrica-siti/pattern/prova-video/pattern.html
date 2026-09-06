@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; prova-video</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: il video sta IN PAGINA, non dietro una copertina. Un clic solo,
+   quello sul play. Sopra, un richiamo grande abbastanza da non poterlo mancare.
+   Origine: armageddon.css:376-490. */
+.palco {
+  position: relative;
+  min-height: calc(var(--u) * 1.0866);
+  background: linear-gradient(180deg, var(--ink-2), #3a3a3a 45%, var(--ink-2));
+}
+
+.richiamo {
+  position: absolute; inset-inline: 0; top: calc(var(--u) * 0.022);
+  display: flex; flex-direction: column; align-items: center;
+  gap: calc(var(--u) * 0.005);
+  color: var(--fg);
+  pointer-events: none;   /* sta sopra il fondo, MAI sopra un controllo */
+}
+
+/* Bianco, non arancione: su un fondo caldo l'arancione del brand e' l'unica
+   cosa che non si leggerebbe. La regola tipografica cede al contrasto, e al suo
+   posto arriva un'ombra doppia. */
+.richiamo__riga {
+  margin: 0;
+  font-family: var(--font-shout);
+  font-size: calc(var(--u) * 0.072);
+  line-height: 1;
+  letter-spacing: var(--tracking-display);
+  text-shadow:
+    0 0 calc(var(--u) * 0.028) rgba(0, 0, 0, 0.95),
+    0 calc(var(--u) * 0.003) 0 rgba(0, 0, 0, 0.6);
+}
+
+.richiamo__freccia {
+  width: calc(var(--u) * 0.21); height: auto;
+  filter: drop-shadow(0 0 calc(var(--u) * 0.014) rgba(0, 0, 0, 0.9));
+}
+
+.riquadro {
+  position: absolute;
+  left: calc(var(--col) + var(--u) * 0.1321);
+  top: calc(var(--u) * 0.2621);
+  width: calc(var(--u) * 0.7631);
+  aspect-ratio: 16 / 9;
+  border-radius: calc(var(--u) * 0.01582);
+  overflow: hidden;
+  background: #0a0a0a;
+  display: grid; place-items: center;
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.85);
+}
+
+.riquadro iframe, .riquadro video { display: block; width: 100%; height: 100%; border: 0; }
+.riquadro__vuoto { color: rgba(249, 249, 249, var(--t-50)); font-size: 0.9rem; }
+
+.domanda {
+  position: absolute; inset-inline: 0; top: calc(var(--u) * 0.86487);
+  margin: 0; text-align: center;
+  font-size: calc(var(--u) * 0.11);
+  line-height: 1;
+}
+
+/* Su telefono il riquadro prende TUTTA la larghezza e perde il raggio: il video
+   e' l'intero lavoro della sezione, quindi si prende l'intero schermo.
+   Ogni numero qui e' misurato a 390px, come impone la legge §2. */
+@media (max-width: 720px) {
+  .palco { min-height: calc(var(--u) * 1.28); }
+  .richiamo { top: calc(var(--u) * 0.03); }
+  .richiamo__riga { font-size: calc(var(--u) * 0.095); }
+  .richiamo__freccia { width: calc(var(--u) * 0.28); }
+  .riquadro { left: var(--col); width: var(--u); top: calc(var(--u) * 0.35); border-radius: 0; }
+  .domanda { top: calc(var(--u) * 0.99); }
+}
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <section class="palco">
+    <div class="richiamo">
+      <p class="richiamo__riga">Guarda il video</p>
+      <svg class="richiamo__freccia" viewBox="0 0 200 120" fill="none" aria-hidden="true">
+        <path d="M14 28C56 2 146 6 168 60" stroke="currentColor" stroke-width="13" stroke-linecap="round"/>
+        <path d="M140 40L168 60L174 26" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="riquadro">
+      <!-- In produzione:
+           <iframe src="https://player.vimeo.com/video/ID?dnt=1" title="..." loading="eager"
+                   allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+           dnt=1 (o youtube-nocookie.com) = niente cookie = niente banner da mostrare. -->
+      <p class="riquadro__vuoto">[ qui va l&rsquo;iframe del player, 16:9 ]</p>
+    </div>
+
+    <h2 class="domanda text-silver-orange">Sei pronto?</h2>
+  </section>
+
+</div>
+</body>
+</html>

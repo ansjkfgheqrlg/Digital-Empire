@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; cucitura-fotografica</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: far passare UNA fotografia attraverso DUE <section> senza che si
+   veda la giunzione. Non si usa un bordo: le superfici si agganciano sullo
+   STESSO valore di opacita', tenuto in due variabili proprio perche' le due
+   meta' devono leggerlo identico.
+   Origine: armageddon.css:186-230 + 356-374. */
+.cucitura { --consegna: 0.992; --coda: 0.71; }
+
+/* la fotografia, dichiarata una volta e riusata da tutte le superfici */
+.cucitura {
+  --foto:
+    radial-gradient(72% 52% at 30% 34%, rgba(251, 70, 4, 0.55), transparent 68%),
+    radial-gradient(58% 44% at 74% 62%, rgba(201, 55, 10, 0.62), transparent 70%),
+    linear-gradient(160deg, #3a3a3a, #0a0a0a 72%);
+}
+
+.sopra {
+  position: relative; height: calc(var(--u) * 0.62);
+  overflow: hidden;
+  background-image: var(--foto);
+  background-repeat: no-repeat;
+  background-position: center calc(var(--u) * -0.024);
+  background-size: max(100%, var(--u)) auto;
+}
+
+/* prima meta': da trasparente alla CONSEGNA */
+.sopra::before {
+  content: ""; position: absolute; inset-inline: 0; z-index: 4; pointer-events: none;
+  top: calc(var(--u) * 0.30);
+  bottom: 0;
+  background: linear-gradient(to bottom,
+    rgba(10, 10, 10, 0) 0,
+    rgba(10, 10, 10, var(--consegna)) 100%);
+}
+
+/* la sezione DOPO riparte ESATTAMENTE dalla consegna e scende alla coda:
+   e' l'aggancio, ed e' tutto il pattern. */
+.sotto {
+  position: relative;
+  min-height: calc(var(--u) * 0.55);
+  display: grid; place-items: center;
+  background-image:
+    linear-gradient(to bottom,
+      rgba(10, 10, 10, var(--consegna)) 0,
+      rgba(10, 10, 10, var(--coda)) calc(var(--u) * 0.12),
+      rgba(10, 10, 10, var(--coda)) calc(var(--u) * 0.30),
+      var(--ink-2) calc(var(--u) * 0.52)),
+    var(--foto);
+  background-repeat: no-repeat;
+  background-position: center 0, center calc(var(--u) * -0.145),
+                       center calc(var(--u) * -0.145), center calc(var(--u) * -0.145);
+  background-size: auto,
+                   max(100%, var(--u)) auto,
+                   max(100%, var(--u)) auto,
+                   max(100%, var(--u)) auto;
+}
+
+.sotto h2 { margin: 0; font-size: calc(var(--u) * 0.075); text-align: center; }
+.sopra__nota { padding-top: 6vh; text-align: center; }
+</style>
+</head>
+<body class="grain-fine">
+<div class="page cucitura">
+
+  <section class="sopra">
+    <div class="sopra__nota"><p class="label">la sezione di sopra finisce qui</p></div>
+  </section>
+
+  <section class="sotto">
+    <h2 class="text-silver-orange">e la foto non si e&rsquo; spezzata</h2>
+  </section>
+
+</div>
+</body>
+</html>

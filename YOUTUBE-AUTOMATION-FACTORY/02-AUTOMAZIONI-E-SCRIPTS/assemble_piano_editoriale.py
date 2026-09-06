@@ -651,15 +651,24 @@ def main():
     with open(OUT_JSON, "w", encoding="utf-8") as f:
         json.dump(piano, f, ensure_ascii=False, indent=2)
 
+    # `fonti_extra` (A4-L01-03, studio AI TUBE PRO / A4-L01 @ 05:44): la colonna dove atterrano
+    # i link del materiale di supporto — l'articolo, il video, la pagina da cui lo script prende
+    # i fatti in piu'. Prima non esisteva: una fonte trovata durante la ricerca non aveva un
+    # posto dove stare, quindi non veniva mai riusata e si ricercava tutto da capo al video dopo.
+    # Piu' fonti nella stessa cella si separano con " | ". Vuota e' legittimo.
     campi_csv = ["giorno", "data_pubblicazione", "orario_pubblicazione", "strategia", "canale_sorgente",
                  "url_sorgente_reale", "titolo_originale", "vph_sorgente", "titolo_adattato",
-                 "hook_3_secondi", "caption_descrizione", "hashtag_set", "comando_cli"]
+                 "hook_3_secondi", "caption_descrizione", "hashtag_set", "fonti_extra", "comando_cli"]
     with open(OUT_CSV, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=campi_csv, extrasaction="ignore")
         w.writeheader()
         for r in righe:
             r2 = dict(r)
             r2["hashtag_set"] = " ".join(f"#{h}" for h in r["hashtag_set"])
+            # La colonna esiste sempre, anche quando non ci sono fonti extra: una colonna che
+            # compare solo a volte non e' un posto dove mettere le cose.
+            extra = r.get("fonti_extra") or []
+            r2["fonti_extra"] = " | ".join(extra) if isinstance(extra, (list, tuple)) else str(extra)
             w.writerow(r2)
 
     print(f"[+] {OUT_JSON}")

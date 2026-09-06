@@ -38,7 +38,7 @@ Dettagli: [CP-20260906-9TWF](checkpoints/CP-20260906-9TWF.md) · dossier `PIANO-
 **Codice di ripresa: EMP-W4K7.** Chiusi end-to-end il corso *Second Brain* (352 scene su 352,
 205 atomi, 333 archi in **una sola componente**) e *LinkedIn generare clienti* (126 su 126,
 57 atomi, 116 archi): con i due gia' fatti prima, **5 fonti su 10**. Il corso *Agenti AI* e' al
-**55%** (209 scene su 376). Quattro video sono scaricati con frame a 720p e **mai visti**.
+**72%** (273 scene su 376). Quattro video sono scaricati con frame a 720p e **mai visti**.
 
 **Due leggi nuove, entrambe nel codice.** I codici di checkpoint non sono piu' progressivi ma
 **sorteggiati** (`checkpoint.py cp`), perche' due chat parallele sceglievano lo stesso numero;
