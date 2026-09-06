@@ -1,0 +1,121 @@
+{
+ "video_id": "RnoC5IlOUhs",
+ "titolo": "CORSO COMPLETO SECOND BRAIN 2h: Claude + Obsidian",
+ "autore": "Giovanni Beggiato",
+ "durata_sec": 8330,
+ "url": "https://www.youtube.com/watch?v=RnoC5IlOUhs",
+ "run": "empire-studio/runs/max18-v01-second-brain-obsidian",
+ "lotto": "max18",
+ "checkpoint": "EMP-W4K7",
+ "ingerito_il": "2026-09-04T11:23:56",
+ "studio_chiuso_il": "2026-09-06T19:19:50",
+ "video_guardato": true,
+ "frame_estratti": 1389,
+ "frame_risoluzione_visione": "1280x720 (ri-estratti; l'estrazione originale era 640x360)",
+ "scene_uniche": 352,
+ "scene_analizzate": 352,
+ "copertura": "352/352 = 100%, contata sul disco",
+ "atomi": 205,
+ "archi": 333,
+ "componenti_connesse": 1,
+ "orfani": 0,
+ "ancore_non_verificabili": 0,
+ "atomi_per_tipo": {
+  "struttura": 50,
+  "principio": 40,
+  "comando": 29,
+  "procedura": 26,
+  "definizione": 23,
+  "numero": 21,
+  "regola": 8,
+  "esempio": 6,
+  "anti-pattern": 2
+ },
+ "capitoli": [
+  {
+   "start": 0,
+   "title": "Introduzione alla Company Brain"
+  },
+  {
+   "start": 300,
+   "title": "ROI e vantaggi competitivi per le aziende"
+  },
+  {
+   "start": 600,
+   "title": "Conoscenza sparsa e costi nascosti"
+  },
+  {
+   "start": 1050,
+   "title": "Costo della conoscenza sparsa, Arbitraggio e Vantaggio competitivo con l'AI"
+  },
+  {
+   "start": 1500,
+   "title": "Demo della Company Brain con 22.000 note"
+  },
+  {
+   "start": 1867,
+   "title": "Installazione e basi di Obsidian"
+  },
+  {
+   "start": 2125,
+   "title": "Wikilink, backlink e ontologia delle note"
+  },
+  {
+   "start": 2922,
+   "title": "Le 11 cartelle della Company Brain"
+  },
+  {
+   "start": 3665,
+   "title": "Tassonomia ed Ontologia nell'AI"
+  },
+  {
+   "start": 3853,
+   "title": "Creazione delle 11 cartelle in Obsidian + Claude"
+  },
+  {
+   "start": 4210,
+   "title": "Canon aziendale e note atomiche"
+  },
+  {
+   "start": 4468,
+   "title": "Costruzione degli Hub (Hub And Spoke) e degli indici"
+  },
+  {
+   "start": 5064,
+   "title": "Problematica dei file orfani in Obsidian (ed il _index)"
+  },
+  {
+   "start": 5365,
+   "title": "Gate di qualità e script di controllo"
+  },
+  {
+   "start": 6039,
+   "title": "GitHub e Google Drive per version control del cervello"
+  },
+  {
+   "start": 6735,
+   "title": "Prompting del cervello, e miglioramento continuo"
+  },
+  {
+   "start": 7080,
+   "title": "Architettura RAG e database vettoriali"
+  },
+  {
+   "start": 7500,
+   "title": "Layer visivo con HTML e Notion"
+  },
+  {
+   "start": 7800,
+   "title": "Memoria viva con sessioni e giornale"
+  },
+  {
+   "start": 8100,
+   "title": "Sistema completo e conclusioni"
+  }
+ ],
+ "note": [
+  "Nove sentinelle cadute o stallate durante la visione: nessuna riga persa grazie alla scrittura su disco ogni 5 scene.",
+  "Causa degli stalli: le sentinelle aprivano transcript.md (148KB) e morivano al watchdog dei 600 secondi.",
+  "Sei atomizzatori in parallelo avevano prodotto 21 componenti separate; 51 archi trasversali giustificati le hanno unite in una sola."
+ ]
+}

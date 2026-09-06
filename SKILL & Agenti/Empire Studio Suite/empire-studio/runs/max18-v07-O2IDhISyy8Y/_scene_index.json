@@ -1,0 +1,632 @@
+[
+ {
+  "n": 1,
+  "frame": "frame-001.png",
+  "ts": "0:00"
+ },
+ {
+  "n": 2,
+  "frame": "frame-002.png",
+  "ts": "0:06"
+ },
+ {
+  "n": 3,
+  "frame": "frame-003.png",
+  "ts": "0:12"
+ },
+ {
+  "n": 4,
+  "frame": "frame-004.png",
+  "ts": "0:18"
+ },
+ {
+  "n": 5,
+  "frame": "frame-009.png",
+  "ts": "0:48"
+ },
+ {
+  "n": 6,
+  "frame": "frame-010.png",
+  "ts": "0:54"
+ },
+ {
+  "n": 7,
+  "frame": "frame-013.png",
+  "ts": "1:12"
+ },
+ {
+  "n": 8,
+  "frame": "frame-015.png",
+  "ts": "1:24"
+ },
+ {
+  "n": 9,
+  "frame": "frame-016.png",
+  "ts": "1:30"
+ },
+ {
+  "n": 10,
+  "frame": "frame-017.png",
+  "ts": "1:36"
+ },
+ {
+  "n": 11,
+  "frame": "frame-018.png",
+  "ts": "1:42"
+ },
+ {
+  "n": 12,
+  "frame": "frame-019.png",
+  "ts": "1:48"
+ },
+ {
+  "n": 13,
+  "frame": "frame-022.png",
+  "ts": "2:06"
+ },
+ {
+  "n": 14,
+  "frame": "frame-026.png",
+  "ts": "2:30"
+ },
+ {
+  "n": 15,
+  "frame": "frame-031.png",
+  "ts": "3:00"
+ },
+ {
+  "n": 16,
+  "frame": "frame-033.png",
+  "ts": "3:12"
+ },
+ {
+  "n": 17,
+  "frame": "frame-037.png",
+  "ts": "3:36"
+ },
+ {
+  "n": 18,
+  "frame": "frame-038.png",
+  "ts": "3:42"
+ },
+ {
+  "n": 19,
+  "frame": "frame-040.png",
+  "ts": "3:54"
+ },
+ {
+  "n": 20,
+  "frame": "frame-045.png",
+  "ts": "4:24"
+ },
+ {
+  "n": 21,
+  "frame": "frame-047.png",
+  "ts": "4:36"
+ },
+ {
+  "n": 22,
+  "frame": "frame-048.png",
+  "ts": "4:42"
+ },
+ {
+  "n": 23,
+  "frame": "frame-049.png",
+  "ts": "4:48"
+ },
+ {
+  "n": 24,
+  "frame": "frame-051.png",
+  "ts": "5:00"
+ },
+ {
+  "n": 25,
+  "frame": "frame-052.png",
+  "ts": "5:06"
+ },
+ {
+  "n": 26,
+  "frame": "frame-057.png",
+  "ts": "5:36"
+ },
+ {
+  "n": 27,
+  "frame": "frame-062.png",
+  "ts": "6:06"
+ },
+ {
+  "n": 28,
+  "frame": "frame-063.png",
+  "ts": "6:12"
+ },
+ {
+  "n": 29,
+  "frame": "frame-064.png",
+  "ts": "6:18"
+ },
+ {
+  "n": 30,
+  "frame": "frame-067.png",
+  "ts": "6:36"
+ },
+ {
+  "n": 31,
+  "frame": "frame-068.png",
+  "ts": "6:42"
+ },
+ {
+  "n": 32,
+  "frame": "frame-069.png",
+  "ts": "6:48"
+ },
+ {
+  "n": 33,
+  "frame": "frame-070.png",
+  "ts": "6:54"
+ },
+ {
+  "n": 34,
+  "frame": "frame-071.png",
+  "ts": "7:00"
+ },
+ {
+  "n": 35,
+  "frame": "frame-072.png",
+  "ts": "7:06"
+ },
+ {
+  "n": 36,
+  "frame": "frame-073.png",
+  "ts": "7:12"
+ },
+ {
+  "n": 37,
+  "frame": "frame-074.png",
+  "ts": "7:18"
+ },
+ {
+  "n": 38,
+  "frame": "frame-075.png",
+  "ts": "7:24"
+ },
+ {
+  "n": 39,
+  "frame": "frame-076.png",
+  "ts": "7:30"
+ },
+ {
+  "n": 40,
+  "frame": "frame-081.png",
+  "ts": "8:00"
+ },
+ {
+  "n": 41,
+  "frame": "frame-082.png",
+  "ts": "8:06"
+ },
+ {
+  "n": 42,
+  "frame": "frame-087.png",
+  "ts": "8:36"
+ },
+ {
+  "n": 43,
+  "frame": "frame-092.png",
+  "ts": "9:06"
+ },
+ {
+  "n": 44,
+  "frame": "frame-096.png",
+  "ts": "9:30"
+ },
+ {
+  "n": 45,
+  "frame": "frame-098.png",
+  "ts": "9:42"
+ },
+ {
+  "n": 46,
+  "frame": "frame-103.png",
+  "ts": "10:12"
+ },
+ {
+  "n": 47,
+  "frame": "frame-104.png",
+  "ts": "10:18"
+ },
+ {
+  "n": 48,
+  "frame": "frame-105.png",
+  "ts": "10:24"
+ },
+ {
+  "n": 49,
+  "frame": "frame-107.png",
+  "ts": "10:36"
+ },
+ {
+  "n": 50,
+  "frame": "frame-108.png",
+  "ts": "10:42"
+ },
+ {
+  "n": 51,
+  "frame": "frame-113.png",
+  "ts": "11:12"
+ },
+ {
+  "n": 52,
+  "frame": "frame-117.png",
+  "ts": "11:36"
+ },
+ {
+  "n": 53,
+  "frame": "frame-119.png",
+  "ts": "11:48"
+ },
+ {
+  "n": 54,
+  "frame": "frame-124.png",
+  "ts": "12:18"
+ },
+ {
+  "n": 55,
+  "frame": "frame-129.png",
+  "ts": "12:48"
+ },
+ {
+  "n": 56,
+  "frame": "frame-134.png",
+  "ts": "13:18"
+ },
+ {
+  "n": 57,
+  "frame": "frame-139.png",
+  "ts": "13:48"
+ },
+ {
+  "n": 58,
+  "frame": "frame-140.png",
+  "ts": "13:54"
+ },
+ {
+  "n": 59,
+  "frame": "frame-145.png",
+  "ts": "14:24"
+ },
+ {
+  "n": 60,
+  "frame": "frame-150.png",
+  "ts": "14:54"
+ },
+ {
+  "n": 61,
+  "frame": "frame-155.png",
+  "ts": "15:24"
+ },
+ {
+  "n": 62,
+  "frame": "frame-157.png",
+  "ts": "15:36"
+ },
+ {
+  "n": 63,
+  "frame": "frame-160.png",
+  "ts": "15:54"
+ },
+ {
+  "n": 64,
+  "frame": "frame-162.png",
+  "ts": "16:06"
+ },
+ {
+  "n": 65,
+  "frame": "frame-163.png",
+  "ts": "16:12"
+ },
+ {
+  "n": 66,
+  "frame": "frame-164.png",
+  "ts": "16:18"
+ },
+ {
+  "n": 67,
+  "frame": "frame-166.png",
+  "ts": "16:30"
+ },
+ {
+  "n": 68,
+  "frame": "frame-171.png",
+  "ts": "17:00"
+ },
+ {
+  "n": 69,
+  "frame": "frame-172.png",
+  "ts": "17:06"
+ },
+ {
+  "n": 70,
+  "frame": "frame-173.png",
+  "ts": "17:12"
+ },
+ {
+  "n": 71,
+  "frame": "frame-177.png",
+  "ts": "17:36"
+ },
+ {
+  "n": 72,
+  "frame": "frame-178.png",
+  "ts": "17:42"
+ },
+ {
+  "n": 73,
+  "frame": "frame-179.png",
+  "ts": "17:48"
+ },
+ {
+  "n": 74,
+  "frame": "frame-184.png",
+  "ts": "18:18"
+ },
+ {
+  "n": 75,
+  "frame": "frame-189.png",
+  "ts": "18:48"
+ },
+ {
+  "n": 76,
+  "frame": "frame-194.png",
+  "ts": "19:18"
+ },
+ {
+  "n": 77,
+  "frame": "frame-199.png",
+  "ts": "19:48"
+ },
+ {
+  "n": 78,
+  "frame": "frame-204.png",
+  "ts": "20:18"
+ },
+ {
+  "n": 79,
+  "frame": "frame-205.png",
+  "ts": "20:24"
+ },
+ {
+  "n": 80,
+  "frame": "frame-208.png",
+  "ts": "20:42"
+ },
+ {
+  "n": 81,
+  "frame": "frame-213.png",
+  "ts": "21:12"
+ },
+ {
+  "n": 82,
+  "frame": "frame-218.png",
+  "ts": "21:42"
+ },
+ {
+  "n": 83,
+  "frame": "frame-220.png",
+  "ts": "21:54"
+ },
+ {
+  "n": 84,
+  "frame": "frame-221.png",
+  "ts": "22:00"
+ },
+ {
+  "n": 85,
+  "frame": "frame-226.png",
+  "ts": "22:30"
+ },
+ {
+  "n": 86,
+  "frame": "frame-231.png",
+  "ts": "23:00"
+ },
+ {
+  "n": 87,
+  "frame": "frame-235.png",
+  "ts": "23:24"
+ },
+ {
+  "n": 88,
+  "frame": "frame-239.png",
+  "ts": "23:48"
+ },
+ {
+  "n": 89,
+  "frame": "frame-241.png",
+  "ts": "24:00"
+ },
+ {
+  "n": 90,
+  "frame": "frame-246.png",
+  "ts": "24:30"
+ },
+ {
+  "n": 91,
+  "frame": "frame-248.png",
+  "ts": "24:42"
+ },
+ {
+  "n": 92,
+  "frame": "frame-252.png",
+  "ts": "25:06"
+ },
+ {
+  "n": 93,
+  "frame": "frame-256.png",
+  "ts": "25:30"
+ },
+ {
+  "n": 94,
+  "frame": "frame-257.png",
+  "ts": "25:36"
+ },
+ {
+  "n": 95,
+  "frame": "frame-262.png",
+  "ts": "26:06"
+ },
+ {
+  "n": 96,
+  "frame": "frame-263.png",
+  "ts": "26:12"
+ },
+ {
+  "n": 97,
+  "frame": "frame-266.png",
+  "ts": "26:30"
+ },
+ {
+  "n": 98,
+  "frame": "frame-269.png",
+  "ts": "26:48"
+ },
+ {
+  "n": 99,
+  "frame": "frame-273.png",
+  "ts": "27:12"
+ },
+ {
+  "n": 100,
+  "frame": "frame-276.png",
+  "ts": "27:30"
+ },
+ {
+  "n": 101,
+  "frame": "frame-277.png",
+  "ts": "27:36"
+ },
+ {
+  "n": 102,
+  "frame": "frame-278.png",
+  "ts": "27:42"
+ },
+ {
+  "n": 103,
+  "frame": "frame-281.png",
+  "ts": "28:00"
+ },
+ {
+  "n": 104,
+  "frame": "frame-282.png",
+  "ts": "28:06"
+ },
+ {
+  "n": 105,
+  "frame": "frame-287.png",
+  "ts": "28:36"
+ },
+ {
+  "n": 106,
+  "frame": "frame-291.png",
+  "ts": "29:00"
+ },
+ {
+  "n": 107,
+  "frame": "frame-294.png",
+  "ts": "29:18"
+ },
+ {
+  "n": 108,
+  "frame": "frame-296.png",
+  "ts": "29:30"
+ },
+ {
+  "n": 109,
+  "frame": "frame-297.png",
+  "ts": "29:36"
+ },
+ {
+  "n": 110,
+  "frame": "frame-302.png",
+  "ts": "30:06"
+ },
+ {
+  "n": 111,
+  "frame": "frame-307.png",
+  "ts": "30:36"
+ },
+ {
+  "n": 112,
+  "frame": "frame-312.png",
+  "ts": "31:06"
+ },
+ {
+  "n": 113,
+  "frame": "frame-315.png",
+  "ts": "31:24"
+ },
+ {
+  "n": 114,
+  "frame": "frame-316.png",
+  "ts": "31:30"
+ },
+ {
+  "n": 115,
+  "frame": "frame-317.png",
+  "ts": "31:36"
+ },
+ {
+  "n": 116,
+  "frame": "frame-319.png",
+  "ts": "31:48"
+ },
+ {
+  "n": 117,
+  "frame": "frame-320.png",
+  "ts": "31:54"
+ },
+ {
+  "n": 118,
+  "frame": "frame-321.png",
+  "ts": "32:00"
+ },
+ {
+  "n": 119,
+  "frame": "frame-322.png",
+  "ts": "32:06"
+ },
+ {
+  "n": 120,
+  "frame": "frame-327.png",
+  "ts": "32:36"
+ },
+ {
+  "n": 121,
+  "frame": "frame-329.png",
+  "ts": "32:48"
+ },
+ {
+  "n": 122,
+  "frame": "frame-330.png",
+  "ts": "32:54"
+ },
+ {
+  "n": 123,
+  "frame": "frame-331.png",
+  "ts": "33:00"
+ },
+ {
+  "n": 124,
+  "frame": "frame-332.png",
+  "ts": "33:06"
+ },
+ {
+  "n": 125,
+  "frame": "frame-333.png",
+  "ts": "33:12"
+ },
+ {
+  "n": 126,
+  "frame": "frame-334.png",
+  "ts": "33:18"
+ }
+]

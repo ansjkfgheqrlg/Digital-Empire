@@ -151,3 +151,58 @@ in realta' nel v1 quel codice compare solo dentro `01-ECOSISTEMA-AGENCY.md:39`, 
 | 90 | Cost-Sentinel + 09-OPERATIONS | Area Lanci (gate T-1) | approvazione budget dry-run prima del go | **Gate Dry-Run + Costi**: simulazione OK + budget approvato | `PIANO-MAESTRO/02-ECOSISTEMA-INFOBUSINESS-V2.md:814` | NO | INTER · MAI |
 | 91 | Quality-Sentinel + Brand-Voice-Sentinel + Cost-Sentinel | `ib-director` (T-0) | consenso hive-mind unanime per go/no-go lancio — **UN NO blocca** | consensus unanime a 5 voci | `PIANO-MAESTRO/02-ECOSISTEMA-INFOBUSINESS-V2.md:815` | NO | INTER (sentinelle corporate) · MAI |
 
+### FONTE 3a — `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md`
+
+CF e' l'unico ecosistema che dichiara un **modello committente/fornitore esplicito**: *"non ha clienti
+propri, ha committenti"* (`:45`). L'ingresso e' un "Contratto di ordine" JSON (`:49-61`) e *"nessun
+lavoro parte senza ordine valido"* (`:63`). Verifica su disco: `find . -type d -name "orders"` → **0
+risultati**; `find . -name "brand-kit.json"` → **0 risultati**. Il punto d'ingresso unico non esiste,
+quindi ogni ordine dei 9 ecosistemi committenti e' MAI PERCORSO per costruzione.
+Lo schema handoff interno di CF (`:96-103`, campi `from/to/order_id/payload/acceptance_criteria/on_reject`)
+e' un **sesto schema** diverso da tutti gli altri.
+
+| # | DA (committente) | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 92 | 01-AGENCY | 03-CF | ordina contenuti per i clienti (deliverable "Content Factory €3.500"), creative per outreach, case study visuali | ordine valido `{committente, brand_kit, icp, formato, quantita, deadline, budget}` | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:110`, `:49-63` | NO (`orders/` non esiste) | INTER · MAI |
+| 93 | 01-AGENCY | 03-CF | fornisce `brand_kit` + `icp` dei clienti + accesso account cliente | brand_kit conforme allo schema `:66-88` | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:110` | NO (`brand-kit.json` non esiste su disco) | INTER · MAI |
+| 94 | 02-INFO-BUSINESS | 03-CF | ordina asset lancio: caroselli, VSL/video corso, email-ready, grafiche sales page; fornisce calendario lancio, offerta, price point | priorita' alta in finestra lancio | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:111` | NO | INTER · MAI |
+| 95 | 04-MARKETING | 03-CF | ordina creative per ads (`ad-creative`), visual A/B test | BUS bidirezionale | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:112` | NO | INTER · MAI |
+| 96 | 04-MARKETING | 03-CF | fornisce **copy APSOC validato** (Copy Guild). Confine: *"il copy che vende e' SEMPRE di Marketing; CF scrive solo copy strutturale: slide, caption, script base"* | APSOC validato dalla Copy Guild | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:112`, `:520` | NO | INTER · MAI |
+| 97 | 05-MULTI-BUSINESS | 03-CF | ordina video YouTube (script→render→thumbnail), copertine/interni KDP, creative e-commerce; fornisce brand_kit canale/libro, nicchia, formato piattaforma | batch ricorrenti | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:113` | NO | INTER · MAI |
+| 98 | 06-PLATFORM | 03-CF | fornisce tooling: render farm locale, fix script Puppeteer/ffmpeg, hosting asset (in cambio: grafiche per siti, raro) | ticket `cf→platform` | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:114` | NO | INTER · MAI |
+| 99 | 07-FORGE | 03-CF | fornisce nuove skill/agenti CF quando i KPI calano o serve un formato nuovo | richiesta `cf→forge` con spec | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:115` | NO | INTER · MAI |
+| 100 | 08-INTELLIGENCE | 03-CF | brief di ricerca: trend, hook che funzionano, analisi competitor | `intel→cf` brief | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:116`, `:136` (`T-trend-intake`) | NO | INTER · MAI |
+| 101 | 03-CF | 08-INTELLIGENCE / wiki | **ogni output di CF da loggare in wiki** | `cf→wiki` log **obbligatorio** | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:116` | NO | INTER · MAI |
+| 102 | 09-OPERATIONS | 03-CF | runtime swarm, scheduling cron, storage asset, cost guard centrale | infrastruttura condivisa | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:117` | NO | INTER · **VAGO** · MAI |
+| 103 | LX/L0 Board | 03-CF | ordina contenuti corporate DE; fornisce Mandato Empire (gate non parametrici: pricing policy, "prove non promesse") | governance | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:118` | NO | INTER · MAI |
+| 104 | CF-R4 `WF-CAROSELLO` | CF-R5 `WF-PUBLISH` | `{asset_dir: orders/<id>/06-delivery/, manifest: manifest.json}` | 3 gate verdi in `state.json`; caption presente per ogni canale richiesto; `on_reject`: torna a CF-R4 con motivo strutturato, 2 reject → escalation CF-A00 | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:96-103`, `:255`, `:282` | NO | INTRA · MAI (**unico handoff dell'Impero con regola di rifiuto scritta**) |
+| 105 | CF-R5-A04 delivery-packager | committente (qualsiasi) | pacchetto + manifest in Drive/cartella cliente (`WF-DELIVERY`, committenti non-social) | acceptance criteria handoff | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:166`, `:204`, `:255` | NO | INTER · MAI |
+| 106 | CF-R5 `WF-FEEDBACK` | 04-MARKETING Analytics + `cf/patterns` | performance post-pubblicazione → cosa funziona per quale brand | non dichiarato | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:167` | NO | INTER · **VAGO** · MAI |
+| 107 | CF `WF-NEWSLETTER` | 04-MARKETING | blocco CTA in handoff a MKT | non dichiarato | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:150` | NO | INTER · **VAGO** · MAI |
+| 108 | committente | CF-A00-conductor | ordine → validazione contratto → smistamento ai reparti, gestione precedenze; ordini incompleti rifiutati con **escalation al committente, non improvvisazione** | ordine completo | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:63-64`, `:178` | NO | INTER · MAI |
+| 109 | CF-R3 (`WF-ARTICOLO`/`WF-NEWSLETTER`) | 04-MARKETING Copy Guild | handoff APSOC (GATE-COPY-APSOC eseguito con `cro-copy-architect`, in handoff con la Copy Guild) | gate APSOC verde | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:478`, `:500` | NO | INTER · MAI |
+| 110 | 05-MB (YouTube) | CF | il committente 05-MB riceve le varianti A/B (dry-run: solo i 3 concept) | non dichiarato | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY.md:306` | NO | INTER · **VAGO** · MAI |
+
+### FONTE 3b — `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md`
+
+La V2 riprende la stessa matrice del v1 (`:108-122`) e le mette **un codice contratto** dove il v1
+aveva solo "BUS". Due codici sono nuovi (`HC-MK-CF-01`, `HC-MB-CF-01`); gli altri due riusano i codici
+gia' dichiarati da AGENCY e INFO-BUSINESS — il che rende `HC-AG-CF-01` e `HC-IB-CF-01` gli unici due
+handoff dell'Impero **dichiarati da entrambe le parti** (mittente e destinatario), pur non esistendo.
+Le righe che ripetono il v1 non sono ri-numerate: qui solo cio' che il v1 non diceva.
+
+| # | DA | A | COSA PASSA | CRITERIO DI ACCETTAZIONE | FONTE | CONTRATTO ESISTE? | MAI PERCORSO? |
+|---|---|---|---|---|---|---|---|
+| 111 | 04-MARKETING | 03-CF (R4) | `HC-MK-CF-01` **bidirezionale**: MKT ordina creative/visual A/B; CF chiede il blocco APSOC/CTA | *"handoff MARKETING richiesto prima che il blocco CTA venga scritto da CF (confine non valicabile); merge solo con blocco APSOC approvato dalla Copy Guild"* | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:114`, `:375-376` | NO | INTER · MAI (**il piu' vincolante di tutto l'Impero: blocca la produzione CF**) |
+| 112 | 05-MULTI-BUSINESS | 03-CF | `HC-MB-CF-01`: batch ricorrenti video YT/copertine KDP/creative e-commerce | batch ricorrenti; brand_kit canale/libro | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:115` | NO | INTER · MAI |
+| 113 | committente | CF-D-DISPATCH | ordine → gate CF-D-QA (brand_kit+icp presenti, budget dichiarato, formato riconosciuto) → crea `orders/<id>/state.json+trace.jsonl` → CF-D-SCHED assegna slot → **notifica committente** | gate d'ingresso a 3 criteri | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:191` | NO (`orders/` non esiste) | INTER · MAI |
+| 114 | CF-R1 (piano editoriale) | 04-MARKETING `WF-CALENDAR` | *"il piano si intreccia con WF-CALENDAR di 04-MARKETING per coordinare lancio ads + contenuti organici"* | piano consegnato entro venerdi' per settimana successiva; nessuno slot senza brand_kit validato | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:238-239` | NO | INTER · **VAGO** ("si intreccia") · MAI |
+| 115 | committente brand (se esterno) | CF-R2 (registry) | approvazione aggiornamento `brand_kit` su richiesta o su evidenza drift | nessun aggiornamento senza approvazione CF-R2-COORD **+ committente brand** | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:279-280` | NO | INTER · MAI |
+| 116 | CF-R4 (`WF-SCRIPT-VIDEO`) | CF-R3 (`WF-VIDEO-UGC`/`WF-VIDEO-AVATAR`) | `script.md` con hook 3s, corpo, CTA | GATE-COPY: hook nei 3s, CTA presente, `parole_vietate` assenti da brand_kit | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:381` | NO | INTRA · MAI |
+| 117 | CF-R6-REWORK | reparto d'origine | motivo strutturato → rinvio al reparto corretto con specifica; traccia n. rework per pezzo | ogni pezzo trattato come singolo (nessuna abbreviazione per batch) | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:470`, `:485` | NO | INTRA · MAI (**secondo canale di ritorno scritto dell'Impero**) |
+| 118 | CF-R7-DELIVER | committente non-social | pacchetto + `manifest.json` (lista asset, checksum) via canale richiesto dall'ordine → CF-R7-CHECK conferma ricezione → closure ordine | manifest completo; **nessuna consegna senza conferma ricezione** | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:512`, `:533-534` | NO | INTER · MAI (**unico handoff con ricevuta di ritorno**) |
+| 119 | CF-R7-FEEDBACK | 04-MARKETING Analytics + `cf/patterns` + CF-R6-LEARN | metriche a 48h e 7gg → `memory_store("cf/patterns", {brand, formato, hook, metriche})` → analisi ads+organico integrata → aggiornamento soglie gate | non dichiarato | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:514`, `:538` | NO | INTER + INTRA · MAI |
+| 120 | committente | CF-R5 (thumbnail/varianti) | il committente **sceglie** la variante A/B → scelta registrata in `cf/patterns` | thumbnail selezionata e approvata dal committente; titolo conforme a `brand_kit.voice` | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:434`, `:529` | NO | INTER · MAI |
+| 121 | CF-D-BUDGET | CF-D-LEAD → Board (hive-mind) | alert se un ordine sfora la soglia globale; escalation al Board se due committenti hanno stessa priorita' e il budget non copre entrambi | precedenza `deadline → revenue impact (Agency/Lanci) → interno` | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:183`, `:124-126` | NO | INTRA → INTER · MAI |
+| 122 | CF-R8 | Board / ADR | propone ADR su pattern strutturali dalla libreria hook/formule | non dichiarato | `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md:556` | NO | INTER · **VAGO** · MAI |
+

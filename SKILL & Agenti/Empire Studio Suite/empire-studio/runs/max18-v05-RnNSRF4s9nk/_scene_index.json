@@ -1,0 +1,492 @@
+[
+ {
+  "n": 1,
+  "frame": "frame-001.png",
+  "ts": "0:00"
+ },
+ {
+  "n": 2,
+  "frame": "frame-002.png",
+  "ts": "0:06"
+ },
+ {
+  "n": 3,
+  "frame": "frame-004.png",
+  "ts": "0:18"
+ },
+ {
+  "n": 4,
+  "frame": "frame-005.png",
+  "ts": "0:24"
+ },
+ {
+  "n": 5,
+  "frame": "frame-006.png",
+  "ts": "0:30"
+ },
+ {
+  "n": 6,
+  "frame": "frame-011.png",
+  "ts": "1:00"
+ },
+ {
+  "n": 7,
+  "frame": "frame-012.png",
+  "ts": "1:06"
+ },
+ {
+  "n": 8,
+  "frame": "frame-014.png",
+  "ts": "1:18"
+ },
+ {
+  "n": 9,
+  "frame": "frame-015.png",
+  "ts": "1:24"
+ },
+ {
+  "n": 10,
+  "frame": "frame-016.png",
+  "ts": "1:30"
+ },
+ {
+  "n": 11,
+  "frame": "frame-021.png",
+  "ts": "2:00"
+ },
+ {
+  "n": 12,
+  "frame": "frame-024.png",
+  "ts": "2:18"
+ },
+ {
+  "n": 13,
+  "frame": "frame-029.png",
+  "ts": "2:48"
+ },
+ {
+  "n": 14,
+  "frame": "frame-034.png",
+  "ts": "3:18"
+ },
+ {
+  "n": 15,
+  "frame": "frame-039.png",
+  "ts": "3:48"
+ },
+ {
+  "n": 16,
+  "frame": "frame-044.png",
+  "ts": "4:18"
+ },
+ {
+  "n": 17,
+  "frame": "frame-049.png",
+  "ts": "4:48"
+ },
+ {
+  "n": 18,
+  "frame": "frame-050.png",
+  "ts": "4:54"
+ },
+ {
+  "n": 19,
+  "frame": "frame-051.png",
+  "ts": "5:00"
+ },
+ {
+  "n": 20,
+  "frame": "frame-052.png",
+  "ts": "5:06"
+ },
+ {
+  "n": 21,
+  "frame": "frame-053.png",
+  "ts": "5:12"
+ },
+ {
+  "n": 22,
+  "frame": "frame-056.png",
+  "ts": "5:30"
+ },
+ {
+  "n": 23,
+  "frame": "frame-061.png",
+  "ts": "6:00"
+ },
+ {
+  "n": 24,
+  "frame": "frame-066.png",
+  "ts": "6:30"
+ },
+ {
+  "n": 25,
+  "frame": "frame-071.png",
+  "ts": "7:00"
+ },
+ {
+  "n": 26,
+  "frame": "frame-072.png",
+  "ts": "7:06"
+ },
+ {
+  "n": 27,
+  "frame": "frame-077.png",
+  "ts": "7:36"
+ },
+ {
+  "n": 28,
+  "frame": "frame-079.png",
+  "ts": "7:48"
+ },
+ {
+  "n": 29,
+  "frame": "frame-080.png",
+  "ts": "7:54"
+ },
+ {
+  "n": 30,
+  "frame": "frame-081.png",
+  "ts": "8:00"
+ },
+ {
+  "n": 31,
+  "frame": "frame-082.png",
+  "ts": "8:06"
+ },
+ {
+  "n": 32,
+  "frame": "frame-087.png",
+  "ts": "8:36"
+ },
+ {
+  "n": 33,
+  "frame": "frame-092.png",
+  "ts": "9:06"
+ },
+ {
+  "n": 34,
+  "frame": "frame-097.png",
+  "ts": "9:36"
+ },
+ {
+  "n": 35,
+  "frame": "frame-102.png",
+  "ts": "10:06"
+ },
+ {
+  "n": 36,
+  "frame": "frame-107.png",
+  "ts": "10:36"
+ },
+ {
+  "n": 37,
+  "frame": "frame-108.png",
+  "ts": "10:42"
+ },
+ {
+  "n": 38,
+  "frame": "frame-113.png",
+  "ts": "11:12"
+ },
+ {
+  "n": 39,
+  "frame": "frame-118.png",
+  "ts": "11:42"
+ },
+ {
+  "n": 40,
+  "frame": "frame-121.png",
+  "ts": "12:00"
+ },
+ {
+  "n": 41,
+  "frame": "frame-122.png",
+  "ts": "12:06"
+ },
+ {
+  "n": 42,
+  "frame": "frame-127.png",
+  "ts": "12:36"
+ },
+ {
+  "n": 43,
+  "frame": "frame-130.png",
+  "ts": "12:54"
+ },
+ {
+  "n": 44,
+  "frame": "frame-131.png",
+  "ts": "13:00"
+ },
+ {
+  "n": 45,
+  "frame": "frame-132.png",
+  "ts": "13:06"
+ },
+ {
+  "n": 46,
+  "frame": "frame-136.png",
+  "ts": "13:30"
+ },
+ {
+  "n": 47,
+  "frame": "frame-141.png",
+  "ts": "14:00"
+ },
+ {
+  "n": 48,
+  "frame": "frame-146.png",
+  "ts": "14:30"
+ },
+ {
+  "n": 49,
+  "frame": "frame-147.png",
+  "ts": "14:36"
+ },
+ {
+  "n": 50,
+  "frame": "frame-148.png",
+  "ts": "14:42"
+ },
+ {
+  "n": 51,
+  "frame": "frame-151.png",
+  "ts": "15:00"
+ },
+ {
+  "n": 52,
+  "frame": "frame-152.png",
+  "ts": "15:06"
+ },
+ {
+  "n": 53,
+  "frame": "frame-154.png",
+  "ts": "15:18"
+ },
+ {
+  "n": 54,
+  "frame": "frame-155.png",
+  "ts": "15:24"
+ },
+ {
+  "n": 55,
+  "frame": "frame-156.png",
+  "ts": "15:30"
+ },
+ {
+  "n": 56,
+  "frame": "frame-157.png",
+  "ts": "15:36"
+ },
+ {
+  "n": 57,
+  "frame": "frame-158.png",
+  "ts": "15:42"
+ },
+ {
+  "n": 58,
+  "frame": "frame-163.png",
+  "ts": "16:12"
+ },
+ {
+  "n": 59,
+  "frame": "frame-168.png",
+  "ts": "16:42"
+ },
+ {
+  "n": 60,
+  "frame": "frame-171.png",
+  "ts": "17:00"
+ },
+ {
+  "n": 61,
+  "frame": "frame-174.png",
+  "ts": "17:18"
+ },
+ {
+  "n": 62,
+  "frame": "frame-175.png",
+  "ts": "17:24"
+ },
+ {
+  "n": 63,
+  "frame": "frame-177.png",
+  "ts": "17:36"
+ },
+ {
+  "n": 64,
+  "frame": "frame-178.png",
+  "ts": "17:42"
+ },
+ {
+  "n": 65,
+  "frame": "frame-183.png",
+  "ts": "18:12"
+ },
+ {
+  "n": 66,
+  "frame": "frame-185.png",
+  "ts": "18:24"
+ },
+ {
+  "n": 67,
+  "frame": "frame-186.png",
+  "ts": "18:30"
+ },
+ {
+  "n": 68,
+  "frame": "frame-188.png",
+  "ts": "18:42"
+ },
+ {
+  "n": 69,
+  "frame": "frame-189.png",
+  "ts": "18:48"
+ },
+ {
+  "n": 70,
+  "frame": "frame-190.png",
+  "ts": "18:54"
+ },
+ {
+  "n": 71,
+  "frame": "frame-191.png",
+  "ts": "19:00"
+ },
+ {
+  "n": 72,
+  "frame": "frame-192.png",
+  "ts": "19:06"
+ },
+ {
+  "n": 73,
+  "frame": "frame-193.png",
+  "ts": "19:12"
+ },
+ {
+  "n": 74,
+  "frame": "frame-194.png",
+  "ts": "19:18"
+ },
+ {
+  "n": 75,
+  "frame": "frame-196.png",
+  "ts": "19:30"
+ },
+ {
+  "n": 76,
+  "frame": "frame-201.png",
+  "ts": "20:00"
+ },
+ {
+  "n": 77,
+  "frame": "frame-203.png",
+  "ts": "20:12"
+ },
+ {
+  "n": 78,
+  "frame": "frame-204.png",
+  "ts": "20:18"
+ },
+ {
+  "n": 79,
+  "frame": "frame-206.png",
+  "ts": "20:30"
+ },
+ {
+  "n": 80,
+  "frame": "frame-208.png",
+  "ts": "20:42"
+ },
+ {
+  "n": 81,
+  "frame": "frame-213.png",
+  "ts": "21:12"
+ },
+ {
+  "n": 82,
+  "frame": "frame-214.png",
+  "ts": "21:18"
+ },
+ {
+  "n": 83,
+  "frame": "frame-215.png",
+  "ts": "21:24"
+ },
+ {
+  "n": 84,
+  "frame": "frame-216.png",
+  "ts": "21:30"
+ },
+ {
+  "n": 85,
+  "frame": "frame-217.png",
+  "ts": "21:36"
+ },
+ {
+  "n": 86,
+  "frame": "frame-220.png",
+  "ts": "21:54"
+ },
+ {
+  "n": 87,
+  "frame": "frame-221.png",
+  "ts": "22:00"
+ },
+ {
+  "n": 88,
+  "frame": "frame-222.png",
+  "ts": "22:06"
+ },
+ {
+  "n": 89,
+  "frame": "frame-225.png",
+  "ts": "22:24"
+ },
+ {
+  "n": 90,
+  "frame": "frame-227.png",
+  "ts": "22:36"
+ },
+ {
+  "n": 91,
+  "frame": "frame-228.png",
+  "ts": "22:42"
+ },
+ {
+  "n": 92,
+  "frame": "frame-231.png",
+  "ts": "23:00"
+ },
+ {
+  "n": 93,
+  "frame": "frame-232.png",
+  "ts": "23:06"
+ },
+ {
+  "n": 94,
+  "frame": "frame-233.png",
+  "ts": "23:12"
+ },
+ {
+  "n": 95,
+  "frame": "frame-234.png",
+  "ts": "23:18"
+ },
+ {
+  "n": 96,
+  "frame": "frame-235.png",
+  "ts": "23:24"
+ },
+ {
+  "n": 97,
+  "frame": "frame-236.png",
+  "ts": "23:30"
+ },
+ {
+  "n": 98,
+  "frame": "frame-237.png",
+  "ts": "23:36"
+ }
+]

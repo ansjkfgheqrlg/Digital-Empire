@@ -890,3 +890,207 @@ destinazione dei report è invece stabilita e rispettata: `consegne/GEM-NN-CONSE
 ognuno degli 8 brief, aperto/consegnato/verificato — oggi si ricava solo contando i file in
 `consegne/`. E le 4 caselle della diagnosi 2026-07-22 che sono state chiuse vanno segnate come
 chiuse, altrimenti il documento continua a descrivere un'azienda peggiore di quella che è.
+
+---
+
+## 12. `company/01-agency/` — l'ecosistema revenue messo a terra
+
+**Cosa è** (da `01-agency/BACKBONE.md`): la struttura operativa dell'ecosistema 01-AGENCY, con il
+vincolo in testa al file: «**ADR-003: wrap, mai riscrittura. Sistemi outreach ATTIVI: invariati.**»
+Non è un ecosistema in `company/Ecosistemi/` (che è fuori dal mio perimetro): è la sua **messa a
+terra operativa** in radice di `company/`, con i reparti, i contratti di handoff e i workflow
+wrappati.
+
+**Contenuto reale — 114 file (91 .png, 15 .md, 6 .json, 1 .txt, 1 .gitignore).** Due blocchi molto
+diversi:
+
+**A) La struttura di reparto (23 file utili):**
+- `BACKBONE.md` in radice + un `BACKBONE.md` per ognuno dei **6 reparti L2**: `A1-RICERCA` (Lead & Market Intelligence, coordinator AG-A1-COORD sonnet, topologia star), `A2-ACQUISIZIONE` (Outreach multicanale, sonnet, pipeline + star canali), `A3-PREVENTIVI` (Preventivi problem-first, **opus**, pipeline), `A4-DELIVERY` (Delivery ≤7gg + supporto 90gg, **opus**, hierarchical/star), `A5-COPY-INTERNO` (mesh), `A6-MARKETING-INTERNO` (star). Direttore: `AG-DIR` (opus), «riporta a C-Suite».
+- **4 handoff contract JSON reali e compilati**: `A1-RICERCA/handoffs/HC-A1-A2-leads.json`, `A2-ACQUISIZIONE/handoffs/HC-A2-A3-call.json`, `A3-PREVENTIVI/handoffs/HC-A3-A4-contratto.json`, `A4-DELIVERY/handoffs/HC-A4-A6-testimonianza.json`. Schema `HC-v1`, con `_id`, `_version`, `_created`, `description`, `from` (ecosystem/reparto/agent/task_id), `to` (…/`queue`). **Sono gli unici handoff contract compilati di tutta `company/`** — il `Bus/handoffs/` del Backbone è vuoto, questi esistono.
+- `A2-ACQUISIZIONE/L3/` — **4 workflow wrappati**: `WF-OUTREACH-EMAIL.md`, `WF-OUTREACH-LINKEDIN.md`, `WF-OUTREACH-INSTAGRAM.md`, `WF-REPLY-FOLLOWUP.md`. Sono i wrapper ADR-003 dei sistemi outreach veri, che restano in `Outreach/` fuori da `company/`.
+
+**B) `site-audit/` (94 file)** — un audit del sito fatto il **2026-09-02**, quattro giorni fa:
+`AUDIT-2026-09-02.md`, `IDEE-RESTYLING-2026-09-02.md`, `PIANO-RESTYLING-2026-09-02.md`, più
+`capture/de-agency-landing/` con **91 screenshot .png**, `copy-integrale.md`, `_copy_compatto.txt`,
+`design-tokens.json`, `dom-blocks.json`. È il lavoro più recente dell'intera cartella `company/` ed
+è materiale operativo, non descrittivo.
+
+**Agenti definiti: 7** (`AG-DIR` + `AG-A1-COORD`…`AG-A6-COORD`, dichiarati nella tabella reparti di
+`BACKBONE.md`, senza file-scheda propri). **Invocabili in `.claude/agents/`: ZERO** — nessun `AG-*`
+esiste. Non sono nemmeno nel `registro-agenti.yaml`, che si ferma a board/backbone/guilds/sentinels
+e alle famiglie di skill: `Identity-HR/README.md` lo sa e lo scrive («L1-L5 agents — ⏳ da censire in
+F3»).
+
+**Come si attiva oggi — ed è l'organo più controllato del perimetro.**
+`scripts/verify-empire.ps1:147-196` gli dedica una sezione intera, `[ F4 - AGENCY live ]`, con **~30
+check**: esistenza di `01-agency/` e dei 6 `BACKBONE.md`; esistenza dei 4 file HC; esistenza di
+`Memory/state/agency/{README.md,state.json,trace.jsonl}`; **e poi controlli di contenuto**:
+`state.json` deve contenere lo schema `agency-state-v1` e il blocco `"kpi"`; `trace.jsonl` deve avere
+almeno 1 evento; e il **Gate F4** vero e proprio: il trace deve contenere le stringhe
+`HC-A1-A2-leads`, `HC-A2-A3-call`, `HC-A3-A4-contratto`, `HC-A4-A6-testimonianza` e almeno un
+`gate_passed`, e `state.json` deve avere almeno un ciclo `"id": "CY-"`. In più verifica che il
+**runtime outreach sia intatto** (`Outreach/Outreach Workflow/agents/orchestrator.py`,
+`bibbia_team.py`, `sender.py`, `LinkedIn Automation/01_scrape_leads.py`, `Instagram
+Automation/config.py`) e che esistano le 9 skill F4. **Tutti PASS** nella mia esecuzione.
+
+**Ma i gate passano su dati fermi.** `company/Memory/state/agency/trace.jsonl` ha **22 righe e tutte
+portano la data 2026-06-11**: è un seed di un solo giorno. La prima riga lo ammette:
+«Gate F4 infrastruttura pronta. **Primo ciclo reale pendente** (blocker B-001: token FB)»; la
+seconda: «`agency-trace.ps1` operativo; **gate B2 run-reale pendente** (prossima run giornaliera)».
+Quella run giornaliera non è mai stata scritta qui: **87 giorni senza un evento**. Il gate F4 verifica
+che le quattro sigle HC compaiano nel trace, e ce le trova — perché ce le ha messe il seed, non un
+ciclo di lavoro. Lo strumento per scrivere esiste (`scripts/agency-trace.ps1`, 2.287 byte); nessun
+hook lo chiama.
+
+**Che cosa produce e dove finisce.** Produce **eventi di ciclo revenue** (lead → outreach → call →
+preventivo → contratto → delivery → testimonianza) e li deposita in
+`company/Memory/state/agency/trace.jsonl` + `state.json`. Il posto esiste, il formato è definito, il
+gate lo controlla: **è la catena più completa di tutto il governo — e non ci passa niente.**
+
+**Cosa manca perché sia vivo:**
+- (a) **comando** — c'è: `scripts/agency-trace.ps1`. Manca chi lo chiami quando succede qualcosa di vero.
+- (b) **contratto** — c'è: 4 file HC-v1 compilati + schema `agency-state-v1`.
+- (c) **posto stabilito** — c'è e funziona: `Memory/state/agency/`.
+- (d) **test** — c'è, ed è il più severo del perimetro: ~30 check in `verify-empire.ps1`, tutti PASS.
+
+**Difficoltà: BASSA — e con il rendimento più alto.** Le quattro condizioni sono già tutte
+soddisfatte. Manca solo che l'outreach reale, che gira davvero ogni giorno in `Outreach/`, scriva una
+riga in questo trace quando produce un lead o riceve una risposta. Una chiamata a `agency-trace.ps1`
+in fondo alla run: da quel momento il gate F4 smette di misurare un seed e comincia a misurare i
+soldi. Va però aggiunto un check che il gate oggi non fa: **verificare che l'evento più recente non
+sia più vecchio di N giorni**, altrimenti un trace fossile continuerà a passare per sempre.
+
+---
+
+## 13. `company/02-info-business/` — CCM Brand Guidelines
+
+**Cosa è.** Diversamente da `01-agency/`, non è la messa a terra di un ecosistema: la cartella
+contiene **un solo progetto**, `ccm/brand/` — la produzione delle Brand Guidelines del marchio CCM.
+
+**Contenuto reale — 24 file (18 .png, 2 .py, 1 .pdf, 1 .md, 1 .html, 1 .gitignore),** tutti dentro
+`ccm/brand/`:
+- **`build_brand_guidelines.py`** e **`content.py`** — sono, insieme ai due di `WORKFLOW-ESTATE`, **gli unici file Python di tutta `company/`**
+- `CCM-Brand-Guidelines.html` (il documento generato) e `CCM-Brand-Guidelines.pdf` (l'output finale)
+- `README.md`, `.gitignore`, 18 `.png` (asset grafici e grana), `__pycache__/` con i due `.pyc` (esclusi dal conteggio)
+
+È una **pipeline documentale che funziona**: due script Python producono un HTML e da lì un PDF. Il
+metodo è quello registrato in Memory come standard PDF di Digital Empire (HTML + Chromium, grana
+PNG). Nessun reparto, nessun handoff, nessun agente: è un prodotto, non un organo.
+
+**Agenti definiti: nessuno. Invocabili: nessuno.**
+
+**Come si attiva oggi.** A mano, eseguendo `build_brand_guidelines.py`. Nessun hook. **Non compare
+in `gen-empire.py` né in `verify-empire.ps1`**: a differenza di `01-agency/`, che ha 30 check
+dedicati, questa cartella non è controllata da nulla.
+
+**Che cosa produce e dove finisce.** Produce `CCM-Brand-Guidelines.pdf`, che sta nella stessa
+cartella dello script. È l'unico organo del perimetro il cui prodotto è un **file consegnabile a una
+persona** e non un giudizio o un rapporto interno.
+
+**Cosa manca perché sia vivo:**
+- (a) **comando** — c'è di fatto (`python build_brand_guidelines.py`), ma non è dichiarato da nessuna parte: non è in `skills-map.yaml`, non ha un `/comando`.
+- (b) **contratto** — manca: nessuna specifica di cosa debba contenere l'output, nessun criterio di accettazione.
+- (c) **posto stabilito** — c'è, per convenzione (accanto allo script).
+- (d) **test** — assente. Nessuno verifica che il PDF si rigeneri senza errori.
+
+**Difficoltà: BASSA.** È un pezzo piccolo e isolato: basta dichiarare il comando in
+`skills-map.yaml`, aggiungere due righe di check in `verify-empire.ps1` (lo script esiste, il PDF
+esiste e non è più vecchio dello script) e la cartella entra nel perimetro governato. Va anche
+verificato se questa cartella debba stare qui o dentro `company/Ecosistemi/02-INFO-BUSINESS/`: oggi
+il nome `02-info-business/` in radice duplica l'identità dell'ecosistema senza esserlo.
+
+---
+
+## 14. I tre file alla radice di `company/`
+
+Non sono cartelle, ma sono organi a tutti gli effetti: uno è l'organigramma, due sono i registri
+ufficiali dell'azienda. Li tratto insieme perché condividono lo stesso destino.
+
+### 14a. `company/GRUPPO.md` — l'organigramma (136 righe)
+
+**Cosa è:** «**Documento vivente.** Rispecchia `PIANO-MAESTRO/00-PIANO-MAESTRO.md` §2… **Aggiornare
+ogni volta che un ecosistema cambia struttura o un agente viene assunto/ritirato.**»
+
+Contiene l'organigramma completo livello per livello. LX: «Nessun agente, nessun codice. È il
+**Mandato**… I Sentinel lo vigilano» → `Mandato/MANDATO-EMPIRE.md` + `Sentinels/`. L0: tabella dei 7
+C-level con nome-agente e file (`empire-conductor`, `empire-coo`, `empire-cto`, `empire-cmo`,
+`empire-cro`, `empire-cfo`, `empire-chief-forge`). L1: tabella dei 10 ecosistemi con missione,
+priorità e path.
+
+**Contraddizione di nomenclatura, piccola ma reale:** GRUPPO.md chiama i C-level `empire-conductor`,
+`empire-coo`, `empire-cto`…; il `Board-CSuite/README.md` usa gli stessi nomi; ma i file davvero
+invocabili in `.claude/agents/` si chiamano `ceo-empire-conductor`, `coo-empire`, `cto-empire`,
+`cmo-empire`, `cro-empire`, `cfo-empire`, `chief-forge`. **Nessuno dei sette nomi scritti
+nell'organigramma corrisponde al nome con cui l'agente si invoca davvero.** Chi legge GRUPPO.md e
+prova a chiamare `empire-coo` non trova nulla.
+
+**Attivazione:** `gen-empire.py:26` e `verify-empire.ps1:42` ne verificano l'esistenza (PASS).
+Nessun controllo sul fatto che i nomi e i path che elenca siano ancora veri.
+
+### 14b. `company/REGISTRO-IMPRESA.md` — l'anagrafe (699 righe, 98.577 byte)
+
+**Cosa è:** «**Anagrafe unica degli artefatti (ADR-008)**. **Legge: nessun artefatto orfano.** Ogni
+riga = proprietario + controllore + origine + governo. Manutentore: **Chief-Forge**. Verifica
+intestazioni: **MAXIMILIAN 5-bis**. Vigilanza: **Sentinelle**. Creato 2026-07-19 (direttiva Max).
+**Aggiornare ad ogni creazione — è l'ultimo passo di ogni ciclo FORGE.**» Ultima modifica:
+2026-09-02.
+
+**657 righe di tabella.** La sezione 1 (ORGANI) intesta esattamente il perimetro di questo
+censimento: ARCHITETTURA, FORGE, MAXIMILIAN, Mandato, Board C-Suite, Sentinelle, Guilds, Memory,
+Ispettorato, CONOSCENZA-EMPIRE — ognuno con proprietario, controllore, origine (il dossier da cui
+nasce) e articolo del Mandato che lo governa. È il documento che dice **chi risponde di cosa**, ed è
+l'unico posto dove quel dato esiste.
+
+Vale la pena notare due righe: «Ispettorato Generale (`Ispettorato/` — **M1+M3 ✅** 11 agenti/5 WF,
+M2/M4/M5 residui)» e «CONOSCENZA-EMPIRE (`.claude/agents/conoscenza-empire.md`) | LX (accanto a
+Mandato e MAXIMILIAN) | EMPERATOR | direttiva Max 2026-09-02». La prima conferma che M3
+dell'Ispettorato è chiuso (contro la casella ⬜ nel suo README); la seconda registra un organo LX
+nato quattro giorni fa che **non ha una cartella in `company/`**: vive solo come agente. È l'unico
+organo di livello LX invocabile oggi.
+
+La sezione 2 (ECOSISTEMI) dichiara `01-AGENCY (10/10 ✅) | **vivo**`, `02-INFO-BUSINESS (5/5 ✅) |
+vivo`, `03-CONTENT-FACTORY (9/9 ✅) | vivo`, `04-MARKETING (6/6 ✅) | vivo`. Sulla definizione di
+"vivo" usata dal piano — comando + contratto + posto + test — nessuno dei quattro lo è: gli `AG-*`,
+`IB-*`, `CF-R*`, `L2-*` che ne sono i direttori **non esistono in `.claude/agents/`**. Quel "vivo"
+significa "documentato al completo", ed è una definizione diversa.
+
+**Attivazione:** nessuna. `REGISTRO-IMPRESA.md` **non è in `gen-empire.py` né in
+`verify-empire.ps1`**: l'anagrafe che per legge deve essere aggiornata a ogni creazione non ha un
+solo controllo che verifichi se lo è. È protetto dalla lista orfani in `empire/registry/orphans.py:23`
+— cioè il codice sa che esiste, ma non lo confronta con nulla.
+
+### 14c. `company/skills-map.yaml` — il registro delle skill (3.261 righe, 149.298 byte)
+
+**Cosa è:** «EMPIRE OS Skills & Workflow Registry. Mappa ogni skill/workflow esistente al suo
+ecosistema, reparto e team. Regola (ADR-003): il codice/file RESTA dove si trova. **Questo è un
+registro, non uno spostamento.**» `version: "1.2"`, `updated: "2026-09-01"`, `maintainer:
+"Chief-Forge"`. E la regola in testa, la più dura dei tre file: «ADR-008: questa mappa +
+`company/REGISTRO-IMPRESA.md` = anagrafe unica. **Creare senza registrare = artefatto abusivo.**
+Aggiornare = ultimo passo di ogni ciclo FORGE.»
+
+Formato tipato e dichiarato: `id` · `nome` · `percorso` · `ecosistema` · `reparto` · `tipo` (`skill
+| workflow | tool | agente | knowledge`) · `stato` (`active | legacy | experimental | archived`) ·
+`note`.
+
+**Il numero è il problema. Skill registrate: 80.** Skill effettivamente installate: **172** in
+`.claude/skills/` (di progetto) + **125** in `C:/Users/Utente/.claude/skills/` (globali). Anche
+scontando le sovrapposizioni fra le due cartelle, **la grande maggioranza delle skill che l'Impero
+usa ogni giorno non è nell'anagrafe**. Per la regola scritta in testa al file, sono «artefatti
+abusivi». Nessuno lo rileva, perché — come `REGISTRO-IMPRESA.md` — la sua esistenza è verificata
+(`verify-empire.ps1:127`, PASS) ma il suo **contenuto no**.
+
+**Attivazione:** `verify-empire.ps1:127` (`Check "skills-map.yaml"` — esistenza) e
+`empire/registry/orphans.py:23` (lo protegge dagli orfani). Nessun confronto con `.claude/skills/`.
+
+**Cosa manca perché i tre siano vivi:**
+- (a) **comando** — nessuno dei tre ha un comando che li aggiorni o li verifichi.
+- (b) **contratto** — c'è per due su tre, ed è buono: `skills-map.yaml` ha 8 campi tipati con valori ammessi, `REGISTRO-IMPRESA.md` ha 5 colonne fisse. `GRUPPO.md` è prosa strutturata.
+- (c) **posto stabilito** — sono loro il posto.
+- (d) **test** — solo di esistenza, per tutti e tre.
+
+**Difficoltà: BASSA, e sono il punto in cui la macchina può cominciare a dire la verità.** Tre check
+di contenuto, tutti scrivibili in poche decine di righe dentro `verify-empire.ps1` che già esiste e
+già gira verde:
+1. per ogni `- id:` in `skills-map.yaml`, verificare che il `percorso` esista → smaschera le voci morte;
+2. per ogni cartella in `.claude/skills/` e per ogni file in `.claude/agents/`, verificare che ci sia una voce corrispondente in `skills-map.yaml` o in `REGISTRO-IMPRESA.md` → **smaschera gli artefatti abusivi, che oggi sono la maggioranza**;
+3. per i 7 C-level di `GRUPPO.md`, verificare che il nome-agente citato esista in `.claude/agents/` → oggi fallirebbe 7 volte su 7, ed è giusto che fallisca.
