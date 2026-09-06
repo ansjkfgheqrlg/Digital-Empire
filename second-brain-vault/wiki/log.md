@@ -2194,3 +2194,14 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   `_index` agli orfani, skill journal sessioni/daily, cruscotto HTML + Notion via MCP, 14 prompt del
   canovaccio), 205 atomi / 333 archi / 1 componente connessa / 0 orfani → 1 pagina wiki creata
   (sources/Source_Giovanni_Beggiato_Second_Brain_Obsidian_Claude.md).
+
+- INGEST: `armageddon.bsns.it` — pagina di lancio Andrei Pascu (Armageddon Pack, 199 €, scadenza
+  10 set 2026). Cattura forense Playwright: 5.103px, 6 slice desktop + 4 mobile, 57 blocchi di copy,
+  design-tokens dal DOM, CSS (1.020 righe) e JS (5,6 KB) letti integralmente. Scoperta maggiore:
+  **Andrei costruisce le sue landing con Claude Code** — i commenti del CSS citano `CLAUDE.md §4`,
+  `assets/brand.css`, il mockup `full-page-mockup.pdf` misurato in unità e il ticket `AP-138`.
+  Stack: zero framework, zero build, `<dialog>`/`<details>` nativi, colonna `--u` come unico
+  sistema di misura. → 4 documenti: reports/11-armageddon.md (rapporto), 11-armageddon-ATLANTE-VISIVO.md
+  (schermata per schermata con misure ed effetti), PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md (il
+  sistema che ne nasce), sources/Source_Andrei_Pascu_Armageddon_Landing_Lancio.md. README site-study
+  aggiornato: 10 pagine su 12 note.

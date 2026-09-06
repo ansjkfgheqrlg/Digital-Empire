@@ -148,8 +148,12 @@ def verifica(fabbrica):
         contiene("04-SKILLS-E-REFERENCE/references/fliki-produzione.md", ["via api"])
         and contiene("04-SKILLS-E-REFERENCE/references/fliki-avanzato.md", ["via api"]))
     # -04: il criterio musica e' marcato come da accertare, non piu' dato per buono.
+    # -04: la verifica e' stata CHIUSA il 2026-09-06 (A4-L20-01): il criterio non e' piu'
+    #      "sospeso, da accertare" ma "inapplicabile", perche' i nostri video non hanno
+    #      musica. La regola resta soddisfatta — anzi lo e' meglio di prima — quindi il
+    #      controllo accetta lo stato di arrivo, non quello di attesa.
     esiti["A4-L04-04"] = contiene("03-AGENTI-E-RUOLI/controllo/qa-audio-video.md",
-                                  ["da accertare"])
+                                  ["inapplicabile"])
     # -05: la ragione del movimento vive nell'agente, non solo in un commento del codice.
     esiti["A4-L04-05"] = contiene(VP, ["aivideoclippercentage", "imageanimationpreset"])
     return esiti

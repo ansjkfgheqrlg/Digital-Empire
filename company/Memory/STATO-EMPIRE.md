@@ -1,3 +1,34 @@
+## 🟠 2026-09-06 — Un gate bocciava i video su una musica che non esiste — CP-20260906-JYGA
+
+**Codice di ripresa: EMP-V6DE (APERTA).** Chiuse **L15, L17 e L20** con **3 sentinelle** lanciate in
+parallelo su ordine di Max: **A4 a 18/21 (85,7%)**, studio a **18/167 (10,8%)**, registro
+**59 regole, 56 applicate**.
+⭐ **Il risultato è una verifica che si CHIUDE, non una novità:** sapevamo dal 5 settembre che il
+gate `qa-audio-video` aveva un criterio sul **volume della musica** e che nel nostro payload la
+musica **non c'è**; mancava di sapere se fosse Fliki a metterla da sé. L20 lo mostra: **in Fliki la
+musica non è automatica**, è una traccia da scegliere a mano e da propagare con `Apply to all
+scenes`. Due fatti indipendenti, nessuna terza possibilità: **i nostri video hanno voce e basta**,
+e quel criterio non era sospeso — era **inapplicabile**. Un controllo che non può fallire non fa
+rumore: è per questo che stava lì da mesi.
+**Altre cose accertate su Fliki (76 minuti sul nostro motore):** un **secondo tetto di 50 scene**
+per file sul piano base che nessuno conosceva · il volume musica è **5-15%** e non 10-15 (il 10 era
+un default visto a schermo) · le pronunce si propagano **solo duplicando un file-modello**, e la
+nostra catena non duplica nulla, quindi da noi **non si applicano mai** · Fliki **genera effetti
+sonori da prompt**, e sulla loro licenza non dice nulla · in 76 minuti **Shorts non è nominato una
+volta**, il che conferma il vincolo 16:9.
+**Due porte chiuse nuove sul generativo (L15):** mai volto o voce di **persone reali** (la lezione
+fabbrica un deepfake di un cantante italiano con una finta notizia di lutto), mai **personaggi
+protetti** generati (fa parlare Goku). È l'errore dei sei miti spostato di un passo: **generare non
+crea un titolo.**
+**E la terza autocontraddizione del corso** (`C-007`): L17 promette «saremo noi i proprietari» e
+otto minuti dopo spiega che col piano gratuito non hai **nessun** diritto. Tre casi non sono un
+incidente: **vetrina e dimostrazione danno numeri diversi, sempre a favore della vetrina.**
+**RIPRESA DA:** in A4 restano **solo le 3 lezioni `1-fallito`** (L11, L12, L18 — 403, gettone
+scaduto). Poi il **gate A4**, che ora porta 2 verifiche vecchie (tempo per video, campo `YouTube
+channel ID(s)` da compilare), **3 nuove contro il payload** (SFX via API? timing per-media? il
+tetto di 50 scene vale anche via API?) e le 3 regole di binario B.
+Dettagli: [CP-20260906-JYGA](checkpoints/CP-20260906-JYGA.md).
+
 ## 🟠 2026-09-06 — Il corso si smentisce da solo: 5 minuti promessi, 1 ora misurata — CP-20260906-49XK
 
 **Codice di ripresa: EMP-V6DE (APERTA).** Chiuse le quattro lezioni lasciate a metà (`A4/L09`,

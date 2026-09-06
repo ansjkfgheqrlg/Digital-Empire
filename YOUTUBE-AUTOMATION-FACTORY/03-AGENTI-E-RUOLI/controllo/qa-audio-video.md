@@ -22,8 +22,10 @@ Sei l'ispettore di qualità. Verifichi che il video MP4 sia perfetto per la pubb
 
 ## 3. Criteri (checklist bloccante)
 - [ ] **Nitidezza Audio:** Voce chiara e priva di fruscii.
-- [ ] **Bilanciamento Volumi:** ⚠️ **CRITERIO SOSPESO — DA ACCERTARE** (A4-L04-04, vedi §9). Non
-      emettere FAIL su questo punto finché non è accertato se i nostri video contengono musica.
+- [ ] **Bilanciamento Volumi:** ❌ **CRITERIO INAPPLICABILE — NON SPUNTARLO, NON BOCCIARE**
+      (accertato il 2026-09-06, vedi §10). **I nostri video non hanno musica**: nel payload non
+      c'è un campo musica, e in Fliki la musica non è automatica. Tornerà in vigore soltanto
+      se un giorno metteremo una traccia nel payload.
 - [ ] **Correttezza Pronuncia:** Nessun errore fonetico macroscopico (nomi propri o termini stranieri storpiati).
 - [ ] **Sincronizzazione Sottotitoli:** I sottotitoli a schermo compaiono esattamente in sincronia con il parlato.
 - [ ] **Risoluzione di Esportazione:** Il file è almeno 1080p in formato MP4 (no artefatti grafici o compressione visibile).
@@ -72,6 +74,10 @@ Nel rapporto di QA dichiara sempre **quante righe hai aggiunto al lessico** (anc
 
 ## 9. Un gate bloccante controlla solo ciò che esiste (A4-L04-04 · 2026-09-05)
 
+> ✅ **La domanda aperta in questa sezione ha avuto risposta il 2026-09-06: è vera la
+> possibilità 2 — musica non ce n'è.** La sezione resta per intero perché il ragionamento
+> vale ancora; la conclusione sta nel §10.
+
 Il criterio **«Bilanciamento Volumi»** del §3 è **sospeso**, e va detto perché.
 
 Quel criterio nasce da `fliki-produzione.md` e `fliki-avanzato.md`, due schede scritte per il
@@ -104,3 +110,35 @@ docente porta la musica da 0 dB a **−25 dB** e la giudica **ancora troppo alta
 **−35 dB**. La sua unica istruzione di metodo è quella giusta: «**mi regolo ascoltando**».
 Teniamo **−35 dB** come punto di partenza, non come dogma — ma sapendo che l'errore tipico è
 lasciarla **molto** più alta di quanto serva.
+
+---
+
+## 10. CHIUSA: i nostri video non hanno musica (A4-L20-01 · 2026-09-06)
+
+La verifica assegnata al gate A4 dal §9 è **chiusa**, e non è servito ascoltare un MP4: la risposta
+è venuta da due fatti indipendenti che, messi insieme, non lasciano una terza possibilità.
+
+**Fatto 1 — in Fliki la musica NON è automatica.** È una traccia a sé (`Background Audio`, sezione
+separata dal parlato e dai media) che va **scelta a mano** e poi propagata con **`Apply to all
+scenes`**, altrimenti resta perfino solo sulla prima scena. Mostrato per intero nella lezione
+A4/L20 (03:57-05:26 la scelta, 07:48-08:10 la propagazione): non esiste un momento in cui Fliki
+metta una musica da solo.
+
+**Fatto 2 — nel nostro payload la musica non c'è.** `fliki_client.py:252` costruisce il payload e
+i suoi campi sono `voiceId`, `aspectRatio`, `subtitlePresetId`, i visual: **nessun
+`backgroundMusic`, `musicId` o `audioTrack`** (riverificato il 2026-09-06).
+
+**Conclusione:** nessuno mette la musica — né noi nel payload, né Fliki per conto suo. **I nostri
+video hanno voce e basta.** Un ascolto potrà confermarlo, ma non può più cambiare la risposta.
+
+**Cosa cambia, concretamente, per te che sei il gate:**
+- il criterio «Bilanciamento Volumi» **non è più sospeso: è inapplicabile**. Non spuntarlo, non
+  bocciare, e **non citarlo nel rapporto come se fosse un controllo fatto**;
+- il criterio torna in vigore **solo** il giorno in cui una traccia musicale entrerà nel payload.
+  Quel giorno vale il metro già raccolto: **−35 dB** come punto di partenza (A4-L08-02, §9), e sul
+  pannello di Fliki la percentuale sta fra **5% (tipico) e 15% (massimo)** — vedi
+  `references/fliki-avanzato.md`;
+- **la lezione qui non è sulla musica.** È che un gate aveva per mesi un criterio su una cosa che
+  non esisteva, e nessuno se n'era accorto perché un criterio che non può fallire **non fa
+  rumore**. Quando trovi in checklist qualcosa che la catena non può né produrre né correggere, la
+  risposta non è spuntarlo: è **chiedere che venga accertato**, come dice il §9.

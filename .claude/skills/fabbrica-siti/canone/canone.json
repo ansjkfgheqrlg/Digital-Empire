@@ -1,0 +1,118 @@
+{
+  "_": "CANONE — gemello a macchina di canone.css. Lo legge gate_siti.py. Se i due divergono, canone_sync.py fallisce: canone.css e' la fonte, questo file la copia verificata.",
+  "versione": "1.0.0",
+  "in_vigore_dal": "2026-09-06",
+  "legge": "../CLAUDE-SITI.md",
+  "dossier": "PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md",
+
+  "colori": {
+    "ammessi": [
+      "#1c1c1c", "#0a0a0a", "#fafafa", "#e8e8e6",
+      "#fb4604", "#ff6a2e", "#c9370a", "#ff8a4a",
+      "#d9d4e1", "#ffffff", "#8a8594", "#e8e3ef", "#b5afbd",
+      "#f9f9f9", "#1a1a1a", "#3a3a3a"
+    ],
+    "vietati": {
+      "#000000": "Su nero assoluto il testo bianco antialiasato sfrangia (misurato: atlante armageddon, tavola 5). Usare --ink-2 #0a0a0a.",
+      "#0000ee": "Blu di default del browser sui mailto. Difetto n.1 di armageddon: unico colore fuori palette in 5.103px.",
+      "#FF0000": "Colore puro. Legge Cosmica: nessun colore non argentato.",
+      "#00FF00": "Colore puro.",
+      "#0000FF": "Colore puro.",
+      "#FFFF00": "Colore puro.",
+      "#FF00FF": "Colore puro.",
+      "#00FFFF": "Colore puro."
+    },
+    "regola_saturazione": {
+      "max_hsl_s": 0.70,
+      "eccezione": "--orange #fb4604 e le sue due varianti: e' il colore dell'azione, dichiarato.",
+      "nota": "Qualsiasi colore con saturazione > 0.70 senza componente silver e' violazione."
+    },
+    "scala_opacita": {
+      "regola": "Piu' un testo e' vicino al denaro, piu' e' opaco.",
+      "valori": [1, 0.78, 0.76, 0.62, 0.55, 0.5, 0.42],
+      "origine": "armageddon.bsns.it, palette misurata dal DOM 2026-09-06"
+    }
+  },
+
+  "misura": {
+    "colonna": "--u",
+    "colonna_max_px": 1200,
+    "regola": "Ogni misura di composizione e' calc(var(--u) * frazione). Vedi legge §2.",
+    "px_ammessi_in": ["border", "outline", "box-shadow", "text-shadow", "letter-spacing", "clamp"],
+    "pavimenti": {
+      "--btn": { "min": "206px", "frazione": 0.24, "max": "288px", "motivo": "a 390px senza clamp il bottone e' 117x29 con testo 10px" },
+      "--cell": { "min": "56px", "frazione": 0.0709, "max": "85px", "motivo": "cella del contatore, sotto 56px la cifra non si legge" }
+    },
+    "breakpoint": {
+      "regola": "Un @media senza commento che dichiari la misura reale e' un FAIL.",
+      "riferimento": "legge §2 + §6"
+    }
+  },
+
+  "tipografia": {
+    "famiglie_max": 2,
+    "regola": "Una grida, una spiega. Nessuna eccezione in pagina.",
+    "shout": "Onest",
+    "explain": "Onest",
+    "tracking_display": "-0.025em",
+    "leading_display": 1.08,
+    "leading_body": 1.66,
+    "measure_body": "64ch",
+    "measure_legal": "88ch",
+    "nota_legal": "Il legale e' PIU' LARGO del corpo, di proposito: e' scritto per essere letto.",
+    "font_display_block_quando": "il carattere e' il design (display font di un committente, §4)"
+  },
+
+  "curve": {
+    "--ease-land": "cubic-bezier(0.16, 0.86, 0.3, 1)",
+    "--ease-heavy": "cubic-bezier(0.65, 0, 0.25, 1)",
+    "max_curve_in_pagina": 2,
+    "origine": "armageddon.css:26-27"
+  },
+
+  "tempi_ms": { "fast": 120, "base": 250, "slow": 820, "enter": 1200 },
+
+  "raggi": {
+    "regola": "Il raggio e' una frazione dell'elemento, non un valore assoluto.",
+    "frazioni": { "btn": 0.0528, "cell": 0.075 },
+    "scala_fissa_corsia_b": { "sm": "8px", "base": "12px", "lg": "20px", "xl": "22px", "pill": "9999px" }
+  },
+
+  "corsie": {
+    "A": {
+      "nome": "PAGINA",
+      "condizione": "pagine <= 3 AND stato_server == false",
+      "stack": ["html", "css", "js-vanilla"],
+      "vietato": ["framework", "build-step", "dipendenze-runtime"],
+      "peso_max_primo_carico_kb": 250,
+      "esempi": ["lancio", "landing singola", "one-pager", "pagina di vendita", "pagina evento"]
+    },
+    "B": {
+      "nome": "SITO",
+      "condizione": "tutto il resto",
+      "stack": ["next@16", "tailwind@4", "lenis", "framer-motion", "gsap"],
+      "esempi": ["multi-pagina", "LMS", "area riservata", "dashboard", "e-commerce"]
+    },
+    "regola_pattern_nuovo": "Prima in vanilla (A), poi B lo avvolge in un componente. Mai il contrario.",
+    "adr": "company/Memory/decisions/ADR-023-fabbrica-siti-due-corsie.md"
+  },
+
+  "gate": {
+    "1_colori_fuori_canone": { "attivo": true, "eccezione": "deroga §4 dichiarata in commento" },
+    "2_misure_assolute": { "attivo": true, "nota": "px fuori da clamp/border/outline/shadow o senza commento d'origine" },
+    "3_breakpoint_non_motivati": { "attivo": true },
+    "4_dato_duplicato": { "attivo": true, "nota": "stesso prezzo o numero scritto piu' di una volta nel sorgente" },
+    "5_motion": { "attivo": true, "nota": "animazione presente ma manca prefers-reduced-motion, o il blocco non spegne anche il JS" },
+    "6_accessibilita": { "attivo": true, "contrasto_min": 4.5, "corpo_soglia_px": 24, "richiede": ["alt", "focus-visible", "aria-label sui timer"] },
+    "7_colori_default": { "attivo": true, "origine_difetto": "armageddon n.1" },
+    "8_meta_e_dati_strutturati": { "attivo": true, "richiede": ["canonical", "og:image 1200x630", "FAQPage JSON-LD se esistono FAQ"], "origine_difetto": "armageddon n.4" },
+    "9_peso": { "attivo": true, "corsia_a_max_kb": 250, "font_esclusi": true },
+    "10_scadenze": { "attivo": true, "nota": "un contatore deve dichiarare il comportamento a scadenza scaduta", "origine_difetto": "armageddon n.2" }
+  },
+
+  "provenienze": {
+    "da_empire": ["grana doppio strato", "silver mixing", "#0a0a0a al posto di #000", "Onest ss01 cv11", "fondi alternati ink/paper/grey", "APSOC", "corsia B", "gate a macchina"],
+    "da_andrei_pascu": ["colonna --u", "scala di opacita' come gerarchia", "raggio come frazione", "due curve", "font-display block", "prezzo che si somma dal DOM", "is-locked", "cucitura fotografica", "titolo in due strati", "contatore accessibile", "details/dialog nativi", "CLAUDE.md numerato e citabile"],
+    "fonte": "competitor/Andrei Pascu/site-study/reports/11-armageddon-ATLANTE-VISIVO.md"
+  }
+}

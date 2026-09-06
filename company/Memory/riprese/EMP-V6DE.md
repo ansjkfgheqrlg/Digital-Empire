@@ -80,13 +80,12 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **152 lezioni su 167 da studiare** (9,0% fatto). Fatte `A4/L00` → `L10`, `L13`, `L14`, `L16`,
-  `L19`; **A4 al 71,4% (15/21)**. Registro: **47 regole, 44 applicate**. Sette lezioni chiuse in
+- **149 lezioni su 167 da studiare** (10,8% fatto). Fatte `A4/L00` → `L10`, `L13` → `L17`, `L19`,
+  `L20`; **A4 all'85,7% (18/21)**. Registro: **59 regole, 56 applicate**. Sette lezioni chiuse in
   **BRONZO dichiarato** (L07, L08, L10 + L09, L13, L14, L16: tutorial di editor manuali e manovre
   su materiale altrui, parlato letto integralmente, zero frame — piano §10).
-- **In A4 restano: 3 lezioni già trascritte** da studiare — **L15** «Crea il tuo AVATAR con A.I»
-  (~14 min), **L17** «Componi Musica Originale Con AI» (~14 min), **L20** «Aggiornamento Fliki
-  Luglio 2024» (**77 min, sul nostro strumento di produzione: è la più importante**) — e **3 in
+- **In A4 non resta più nulla da leggere: le tre trascritte (L15, L17, L20) sono chiuse** il
+  2026-09-06 da tre sentinelle in parallelo (CP-20260906-JYGA). Restano **solo 3 lezioni in
   stato `1-fallito`**: **L11** (Premiere SENSEI), **L12** (sottotitoli automatici), **L18**
   (voice over con Audacity), tutte HTTP 403 da gettone scaduto: si riscaricano con un gettone
   nuovo, non si forzano.
@@ -120,31 +119,27 @@ I rapporti grezzi degli scagnozzi restano come **materiale d'origine** in
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-**Le 3 lezioni di A4 già trascritte** che restano (L15, L17, L20) — si vedono in
-`runs/corso-aitubepro/<id>/stato.json` al passo `2-trascritto` (`completata` = già chiusa,
-`1-fallito` = da riscaricare col gettone nuovo).
-
-Poi: riscaricare le 4 fallite, e il **gate di categoria a 7 condizioni** (piano §9), che porta con
-sé le **tre** verifiche già assegnate — **la musica** (`A4-L04-04`), **il tempo per video**
-(`A4-L05-04`) e il campo **`YouTube channel ID(s)`** su Fliki per `dosementale` e `legamidiamore`
-(`A4-L19-01`) — più le 3 regole di binario B da applicare al motore.
+**Non c'è più nulla di leggibile in A4.** Restano tre lezioni in `1-fallito` (**L11** Premiere
+SENSEI, **L12** sottotitoli automatici, **L18** voice over con Audacity): si riscaricano con un
+**gettone nuovo** — il vecchio dà HTTP 403 — e non si forzano.
 
 ```bash
 cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"
-# le lezioni pronte si vedono qui (passo = 2-trascritto):
-#   runs/corso-aitubepro/<lesson_id>/stato.json
-# per ognuna, prima delle frame: serve --input con l'URL preso da mappa.json
-PYTHONIOENCODING=utf-8 py -3 frame_extractor.py --run "corso-aitubepro/<id>" --interval 4 --input "<url>"
-PYTHONIOENCODING=utf-8 py -3 scene_detector.py  --run "corso-aitubepro/<id>" --threshold 6.0 --interval 4 --max-gap 24
-# se il nastro si e' fermato, si rilancia (idempotente, salta le lezioni gia' fatte):
-PYTHONIOENCODING=utf-8 py -3 corso_prepara.py --categoria "Metodo AI Tube"
+# lo stato vero di ogni lezione sta qui (unica fonte, non l'aritmetica):
+#   runs/corso-aitubepro/<lesson_id>/stato.json   -> passo: completata | 2-trascritto | 1-fallito
+PYTHONIOENCODING=utf-8 py -3 corso_prepara.py --categoria "Metodo AI Tube"   # idempotente
 ```
 
-Poi, per ogni lezione: appunti → report a sei voci → script regole → applicare il binario A.
-A fine categoria: `REPORT-CATEGORIA.md`, `APPUNTI-CATEGORIA.md`, gate a 7 condizioni (piano §9).
+**Poi il gate di categoria A4 a 7 condizioni** (piano §9), che adesso porta:
+- **2 verifiche vecchie** — il tempo per video (`A4-L05-04`) e **compilare il campo `YouTube
+  channel ID(s)`** nel profilo Fliki per `dosementale` e `legamidiamore` (`A4-L19-01`);
+  *(la terza, la musica `A4-L04-04`, è stata **chiusa** il 2026-09-06: non c'è musica)*
+- **3 verifiche nuove contro il payload reale**, da L20: la generazione **SFX** esiste via API? il
+  **timing per-media in secondi** è supportato o siamo a una scena = un media? il tetto di **50
+  scene** vale anche per i file creati via API?
+- **3 regole di binario B** da applicare al motore: `A4-L01-03`, `A4-L03-02`, `A4-L04-02`.
 
-**Ordine delle categorie** (piano §10): A4 Metodo AI Tube (21) → A6 Viral Mastery (10) →
-B1 Masterclass 2026 (7) → B2 Crypto (10) → poi le altre.
+A fine categoria: `REPORT-CATEGORIA.md`, `APPUNTI-CATEGORIA.md`, e poi **A6 Viral Mastery** (10).
 
 ## 4-bis. IL PEZZO FINALE — come si chiude la missione (ordine di Max, 2026-09-05)
 

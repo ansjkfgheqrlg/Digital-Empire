@@ -61,3 +61,37 @@ Le voci sintetiche sbagliano spesso i termini inglesi inseriti in un contesto it
 > A4/L19 è **10%** (`frame-088.png @ 05:52`). La nostra prescrizione era già giusta: adesso si
 > sa perché. **Resta non eseguibile via API** (vedi la tabella in testa): è conoscenza dello
 > strumento, non un ordine alla catena.
+
+---
+
+## 4. Riconciliazione del volume della musica, e una funzione nuova (A4-L20-02/05 · 2026-09-06)
+
+### Il numero: 10%, 15%, 5% — non si contraddicono
+
+Abbiamo tre cifre da due lezioni diverse, e vanno lette per quello che sono:
+
+| cifra | da dove | cos'è davvero |
+|---|---|---|
+| **10%** | A4/L19, **visto a schermo** (`frame-088.png @ 05:52`) | il valore che lo slider **mostrava** in quel progetto: un default, non una prescrizione |
+| **15%** | A4/L20, parlato @ 07:13-07:25 | il **massimo** che il relatore applica normalmente |
+| **5%** | A4/L20, parlato @ 07:39-07:48 | il valore che chiama **«gradevole»**, cioè il suo tipico |
+
+**Quindi la banda è 5-15%, con il tipico in basso**, e la nostra vecchia prescrizione «10-15%»
+aveva **il pavimento troppo alto**. Il relatore aggiunge la condizione che conta più dei numeri
+[07:25-07:39]: dipende **dalla traccia, dal narratore e dal volume del narratore** — cioè si
+regola ascoltando, esattamente come dice il metro dei −35 dB in `qa-audio-video.md` §9.
+
+**Nota che evita fraintendimenti:** oggi tutto questo è **teoria dello strumento**. I nostri video
+**non hanno musica** (accertato: `qa-audio-video.md` §10). Serve il giorno in cui ce la metteremo.
+
+### Generazione di effetti sonori da prompt (`Add Layer → Audio → Generate`)
+
+Fliki genera un **effetto sonoro** da una descrizione testuale — nella lezione, il ruggito di un
+leone — e lo si posiziona al secondo esatto col pannello `Timing` [A4/L20, 44:53-46:56]. È la
+funzione dell'aggiornamento con **più probabilità di esistere anche via API**, ed è fra le tre
+verifiche assegnate al gate A4.
+
+⚠️ **Un vuoto da tenere presente:** delle tracce musicali di libreria il corso dice che sono
+«tutte licenziate» [06:06-06:20]; **sugli effetti sonori generati dall'AI non dice nulla.** Prima
+di metterne uno in un video pubblicato, il titolo d'uso si legge nei termini di Fliki — non si
+assume per analogia con la musica (stessa regola del §9 di `monetizzazione-compliance.md`).

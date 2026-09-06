@@ -62,6 +62,22 @@ Il pannello `More -> Pronunciation map` dichiara, testualmente:
 lo schermo (piano di studio, 6.4): quello che si legge nel pannello batte quello che si sente nel
 parlato.
 
+### Confermato, e peggiorato, da A4/L20 (A4-L20-03 · 2026-09-06)
+
+Una seconda lezione, settantasei minuti sullo stesso strumento, dice **come** la mappa si propaga
+davvero — e la risposta chiude l'ultimo spiraglio.
+
+Il relatore ammette di non averla mai usata sul serio [40:54-41:24] e spiega che le pronunce
+«restano» **solo se si lavora così**: ci si costruisce **un file campione, un demo**, e poi si fa
+**duplica**. Nella domanda finale di una studentessa [71:52-73:41] lo dice ancora più chiaro:
+correggere una pronuncia **sul file di lavoro non basta**, la stessa correzione va **incollata
+anche sul file demo**, altrimenti i prossimi video non la ereditano.
+
+**Cosa vuol dire per noi.** La propagazione non è una funzione: è **la duplicazione di un
+progetto**. La nostra catena **non duplica nulla** — `fliki_client.py` crea ogni video da zero con
+una chiamata. Quindi non solo la mappa vale per un video: **nei nostri video non si applica mai**,
+nemmeno per eredità.
+
 **Conclusione operativa: la correzione si fa nel TESTO dello script, con la tabella qui sopra.**
 Non e' un ripiego in attesa di una via migliore: la via migliore non esiste.
 

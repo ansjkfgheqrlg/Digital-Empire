@@ -1,0 +1,444 @@
+/* ==========================================================================
+   CANONE — Digital Empire, Fabbrica Siti
+   Dossier 32 · legge in CLAUDE-SITI.md · gemello a macchina in canone.json
+
+   Un file solo per due corsie:
+     Corsia A (vanilla)  →  <link rel="stylesheet" href="canone.css">
+     Corsia B (Next+Tw4) →  @import "./canone.css";  prima di @theme
+
+   Ogni valore qui dentro e' l'unica fonte. §1 della legge: nessun agente
+   inventa un valore; se ne serve uno nuovo, si aggiunge QUI, non alla pagina.
+
+   Meta' di questo file e' Empire (grana, silver mixing, Onest, fondi
+   alternati). L'altra meta' e' il sistema di misura letto dal sito
+   armageddon.bsns.it di Andrei Pascu il 2026-09-06 (la colonna --u, la scala
+   di opacita', i raggi come frazione, le due curve). Le origini sono
+   dichiarate riga per riga, come impone §6.
+   ========================================================================== */
+
+/* ==========================================================================
+   1. LA COLONNA DI PROGETTO  —  origine: armageddon.css, riga 84
+   --------------------------------------------------------------------------
+   Ogni misura di composizione e' una frazione di --u. La pagina scala come
+   una sola immagine invece di riorganizzarsi a scatti (§2).
+   Container query cosi' una scrollbar desktop non puo' spingere la pagina di
+   lato; vw resta il ripiego per i browser che non le hanno.
+   ========================================================================== */
+
+.page {
+  --u: min(100vw, 1200px);          /* la colonna. 1200 e' la nostra, non i 960 suoi */
+  --col: calc(50% - var(--u) / 2);  /* il suo bordo sinistro */
+
+  /* I due pavimenti. Esistono SOLO perche' sotto una certa misura un elemento
+     non si legge o non si tocca — e §2 impone di dichiarare la misura reale.
+     Verificati a 390px: senza clamp il bottone uscirebbe 117x29 con testo 10px. */
+  --btn:  clamp(206px, calc(var(--u) * 0.2400), 288px);
+  --cell: clamp(56px,  calc(var(--u) * 0.0709), 85px);
+}
+
+@supports (width: 1cqw) {
+  body { container-type: inline-size; }
+  .page { --u: min(100cqw, 1200px); }
+}
+
+html {
+  background: var(--ink-2);
+  -webkit-text-size-adjust: 100%;
+  scrollbar-gutter: stable;   /* origine: armageddon.css:40 — niente salto quando appare */
+}
+
+/* ==========================================================================
+   2. COLORI
+   --------------------------------------------------------------------------
+   Regola sopra tutte (Legge Cosmica ereditata da website-creator): nessun
+   colore puro. Ogni tinta e' argentata — saturazione giu' del 40%, hue verso
+   215 del 25%, blend 35% con #94A3B8. I colori qui sotto sono gia' passati.
+   ========================================================================== */
+
+:root {
+  /* --- fondi ------------------------------------------------------------ */
+  --ink:      #1c1c1c;   /* il fondo scuro di lavoro */
+  --ink-2:    #0a0a0a;   /* il piu' scuro che usiamo. MAI #000 — vedi nota sotto */
+  --paper:    #fafafa;
+  --grey:     #e8e8e6;
+
+  /* --- il colore dell'azione ------------------------------------------- */
+  --orange:        #fb4604;
+  --orange-bright: #ff6a2e;
+  --orange-deep:   #c9370a;
+
+  /* --- argento ---------------------------------------------------------- */
+  --silver:        #d9d4e1;
+  --silver-bright: #ffffff;
+  --silver-dim:    #8a8594;
+
+  /* --- testo ------------------------------------------------------------ */
+  --fg:        #f9f9f9;
+  --fg-on-light: #1c1c1c;
+
+  /* --- la scala di opacita' —  origine: armageddon, palette misurata -----
+     E' la gerarchia del testo, e ha una regola sola:
+     PIU' UN TESTO E' VICINO AL DENARO, PIU' E' OPACO.
+     Sostituisce una scala di grigi: un colore solo, sette pesi. */
+  --t-100: 1;      /* prezzo, titolo, cifra */
+  --t-78:  0.78;   /* wordmark, occhiello */
+  --t-76:  0.76;   /* corpo lungo, risposte */
+  --t-62:  0.62;   /* link di servizio */
+  --t-55:  0.55;   /* riga di valore, didascalia */
+  --t-50:  0.50;   /* etichette maiuscole */
+  --t-42:  0.42;   /* legale, disclaimer */
+
+  /* --- bordi ------------------------------------------------------------ */
+  --line-dark:  rgba(249, 249, 249, 0.08);
+  --line-light: rgba(28, 28, 28, 0.10);
+  --line-hair:  rgba(249, 249, 249, 0.15);  /* i filetti delle FAQ */
+}
+
+/* NOTA MISURATA, non stilistica — origine: atlante visivo armageddon, tavola 5.
+   Su fondo #000 assoluto il testo bianco antialiasato mostra frange ciano/rosse
+   di subpixel. --ink-2 (#0a0a0a) ne toglie meta'. Su questo il nostro canone e'
+   piu' corretto del suo: il nero puro NON e' un fondo per testo lungo. */
+
+/* ==========================================================================
+   3. TIPOGRAFIA
+   --------------------------------------------------------------------------
+   Due famiglie e basta — regola presa da armageddon (12 usi del gotico contro
+   59 della grottesca): UNA GRIDA, UNA SPIEGA. Nessuna eccezione in pagina.
+   Da noi la voce che grida e' Onest ai pesi alti, non un blackletter.
+   ========================================================================== */
+
+:root {
+  --font-shout:   "Onest", system-ui, -apple-system, sans-serif;
+  --font-explain: "Onest", system-ui, -apple-system, sans-serif;
+
+  --tracking-display: -0.025em;
+  --leading-display:  1.08;
+  --leading-body:     1.66;   /* origine: armageddon, risposte FAQ */
+  --measure-body:     64ch;   /* origine: idem */
+  --measure-legal:    88ch;   /* il legale PIU' LARGO del corpo, per essere letto davvero */
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--fg);
+  font-family: var(--font-explain);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;   /* clip e non hidden: hidden farebbe di body uno scroller */
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-shout);
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-display);
+  font-weight: 700;
+}
+
+/* Quando il carattere E' il design, si blocca invece di lampeggiare.
+   Origine: armageddon.css:20 — "the blackletter IS the design, no swap flash".
+   Vale per i display font di un committente (§4), non per Onest. */
+.font-is-design { font-display: block; }
+
+::selection { background: var(--orange); color: #fff; }
+
+/* ==========================================================================
+   4. CURVE E TEMPI  —  origine: armageddon.css:26-27
+   --------------------------------------------------------------------------
+   Due sole curve in tutto l'Impero. Se ne serve una terza, si motiva.
+   ========================================================================== */
+
+:root {
+  --ease-land:  cubic-bezier(0.16, 0.86, 0.3, 1);   /* ingressi, hover leggeri */
+  --ease-heavy: cubic-bezier(0.65, 0, 0.25, 1);     /* oggetti pesanti, carta, pannelli */
+
+  --t-fast:  120ms;
+  --t-base:  250ms;
+  --t-slow:  820ms;    /* la posa di un oggetto */
+  --t-enter: 1200ms;   /* l'ingresso di un titolo */
+}
+
+/* ==========================================================================
+   5. RAGGI  —  regola presa da armageddon
+   --------------------------------------------------------------------------
+   IL RAGGIO E' UNA FRAZIONE DELL'ELEMENTO, non un valore assoluto: un bottone
+   che si rimpicciolisce deve arrotondarsi di meno. La scala fissa resta per la
+   Corsia B, dove i componenti hanno misura propria.
+   ========================================================================== */
+
+:root {
+  --radius:    12px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+  --radius-xl: 22px;
+  --radius-pill: 9999px;
+
+  /* le frazioni, per chi misura sulla colonna */
+  --r-btn:  0.0528;   /* calc(var(--btn) * var(--r-btn)) */
+  --r-cell: 0.0750;   /* calc(var(--cell) * var(--r-cell)) */
+}
+
+/* ==========================================================================
+   6. LA GRANA  —  nostra, e non si tocca
+   --------------------------------------------------------------------------
+   Doppio strato SVG turbulence, blend overlay + hard-light, fissa sul body.
+   E' la firma visiva di Digital Empire. Andrei non ce l'ha.
+   ========================================================================== */
+
+.grain-fine::before {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.55;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+.grain-fine::after {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  pointer-events: none;
+  z-index: 101;
+  opacity: 0.28;
+  mix-blend-mode: hard-light;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.1' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.3 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* ==========================================================================
+   7. TESTO ARGENTATO  —  nostro
+   ========================================================================== */
+
+.text-silver-orange {
+  background: linear-gradient(135deg, #ffffff 0%, #d9d4e1 20%, #fb4604 55%, #ff8a4a 78%, #ffffff 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+
+.text-silver-white {
+  background: linear-gradient(180deg, #ffffff 0%, #e8e3ef 35%, #b5afbd 72%, #8a8594 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+
+.text-silver-black {
+  background: linear-gradient(180deg, #3a3a3a 0%, #1c1c1c 50%, #0a0a0a 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+
+.text-orange-pure { color: var(--orange); }
+
+/* ==========================================================================
+   8. FONDI DI SEZIONE  —  nostri
+   --------------------------------------------------------------------------
+   Il fondo alterna: ink → paper → grey → ink-2. Andrei e' monocromatico:
+   regge su una pagina sola, non su un sito.
+   ========================================================================== */
+
+.bg-ink    { background: var(--ink);    color: var(--fg); }
+.bg-ink-2  { background: var(--ink-2);  color: var(--fg); }
+.bg-paper  { background: var(--paper);  color: var(--fg-on-light); }
+.bg-grey   { background: var(--grey);   color: var(--fg-on-light); }
+.bg-orange { background: var(--orange); color: #ffffff; }
+
+.section       { position: relative; padding: 6rem 0; }
+.section-tight { position: relative; padding: 4rem 0; }
+.section-border-t { border-top: 1px solid var(--line-dark); }
+.bg-paper .section-border-t,
+.bg-grey  .section-border-t { border-top-color: var(--line-light); }
+
+/* La cucitura fotografica — origine: armageddon §6.5.
+   Quando una fotografia deve attraversare due sezioni, NON si usa un bordo:
+   le due superfici si agganciano sullo STESSO valore di opacita', e la foto
+   passa senza mostrare una linea. Il valore di consegna e' una variabile
+   proprio perche' le due meta' devono leggerlo uguale. */
+.seam { --seam-handoff: 0.992; --seam-tail: 0.71; }
+
+/* ==========================================================================
+   9. AZIONE  —  il bottone
+   --------------------------------------------------------------------------
+   Nostro nella resa (arancione con glow), suo nell'impianto (misure in
+   frazioni del bottone, raggio compreso).
+   ========================================================================== */
+
+.btn {
+  display: inline-grid;
+  place-items: center;
+  width: var(--btn);
+  height: calc(var(--btn) * 0.24759);            /* origine: armageddon */
+  border: 0;
+  border-radius: calc(var(--btn) * var(--r-btn));
+  font-family: inherit;
+  font-size: calc(var(--btn) * 0.0868);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform var(--t-fast) ease,
+              background-color var(--t-fast) ease,
+              box-shadow var(--t-base) ease;
+}
+
+.btn-orange {
+  background: var(--orange);
+  color: #ffffff;
+  box-shadow: 0 0 40px 0 rgba(251, 70, 4, 0.35),
+              inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.btn-orange:hover,
+.btn-orange:focus-visible {
+  background: var(--orange-bright);
+  transform: translateY(-1px);
+  box-shadow: 0 0 60px 0 rgba(251, 70, 4, 0.5),
+              inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: max(1px, calc(var(--btn) * 0.0106)) solid rgba(249, 249, 249, 0.22);
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus-visible {
+  border-color: rgba(249, 249, 249, 0.38);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ==========================================================================
+   10. ELEMENTI EMPIRE  —  nostri, misure invariate
+   ========================================================================== */
+
+.bubble-orange,
+.bubble-silver,
+.bubble-ink {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem; font-weight: 600;
+}
+.bubble-orange { background: var(--orange); color: #fff;
+                 box-shadow: 0 8px 24px -10px rgba(251, 70, 4, 0.6); }
+.bubble-silver { background: var(--silver); color: var(--fg-on-light); }
+.bubble-ink    { background: var(--ink);    color: var(--fg); }
+
+.card-dark {
+  background: #1a1a1a;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--t-base) ease, transform var(--t-base) var(--ease-land);
+}
+.card-dark:hover { border-color: rgba(251, 70, 4, 0.5); transform: translateY(-3px); }
+
+.card-paper { background: var(--paper); color: var(--fg-on-light);
+              border-radius: var(--radius-xl); }
+
+.step-num {
+  display: grid; place-items: center;
+  border-radius: var(--radius);
+  background: var(--orange); color: #fff;
+  font-weight: 800; font-size: 1.25rem;
+  box-shadow: 0 10px 30px -10px rgba(251, 70, 4, 0.5);
+}
+
+.hl-block {
+  border-radius: 2px;
+  box-shadow: 0 8px 30px -10px rgba(251, 70, 4, 0.55),
+              inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+/* ==========================================================================
+   11. TESTO LUNGO
+   ========================================================================== */
+
+.prose  { max-width: var(--measure-body);  line-height: var(--leading-body);
+          color: rgba(249, 249, 249, var(--t-76)); }
+.legal  { max-width: var(--measure-legal); line-height: 1.75;
+          color: rgba(249, 249, 249, var(--t-42)); }
+.legal a { color: rgba(249, 249, 249, var(--t-62)); }
+.legal a:hover { color: var(--orange); }
+.label  { font-size: clamp(9px, calc(var(--cell) * 0.145), 12px);
+          font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+          color: rgba(249, 249, 249, var(--t-50)); }
+
+/* §9 del gate: nessun link col colore di default del browser.
+   Origine: armageddon, difetto n.1 — un mailto #0000ee, unico colore fuori
+   palette in 5.103px. Un difetto suo che noi non ripetiamo. */
+a { color: inherit; }
+a[href^="mailto:"], a[href^="tel:"] { color: var(--orange); text-decoration: underline;
+                                      text-underline-offset: 0.12em; }
+
+/* ==========================================================================
+   12. ACCESSIBILITA'
+   ========================================================================== */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.num-tabular { font-variant-numeric: tabular-nums; }  /* cifre che non ballano */
+
+/* ==========================================================================
+   13. INGRESSI  —  origine: armageddon, i tre tempi
+   --------------------------------------------------------------------------
+   L'animazione sta SUI FIGLI, mai sul contenitore: il contenitore lo muove il
+   parallax, e due sistemi di transform sullo stesso nodo si annullano.
+   ========================================================================== */
+
+.in { display: block; animation: reveal-rise var(--t-enter) var(--ease-land) both; }
+.in--a { --rise: calc(var(--u) * 0.026); animation-delay: 180ms; }
+.in--b { --rise: calc(var(--u) * 0.022); animation-delay: 340ms; }
+.in--c { --rise: calc(var(--u) * 0.018); animation-delay: 500ms; }
+
+@keyframes reveal-rise {
+  from { opacity: 0; transform: translateY(var(--rise, 24px)); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes reveal-zoom {
+  from { transform: scale(1.055); }
+  to   { transform: none; }
+}
+
+@keyframes reveal-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Un oggetto che si posa — origine: armageddon §6.4.
+   Arriva sparso, si compone 2,5s dopo essere stato visto, e SOLO DOPO risponde
+   al mouse. is-locked e' cio' che tiene fermo l'hover a meta' volo. */
+.settle       { transition: transform var(--t-slow) var(--ease-heavy); }
+.settle-group.is-locked .settle { pointer-events: none; }
+
+/* ==========================================================================
+   14. §7 — E QUI SI SPEGNE TUTTO
+   --------------------------------------------------------------------------
+   Il gemello in JavaScript e' obbligatorio, non facoltativo:
+     var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+   Un CSS spento con il JS che continua a muovere i livelli non e' accessibile:
+   e' rotto.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .in,
+  .grain-fine::before,
+  .grain-fine::after,
+  [class*="reveal-"] {
+    animation: none !important;
+  }
+  .btn, .card-dark, .settle, .settle-group .settle {
+    transition: none !important;
+  }
+  html { scroll-behavior: auto; }
+}

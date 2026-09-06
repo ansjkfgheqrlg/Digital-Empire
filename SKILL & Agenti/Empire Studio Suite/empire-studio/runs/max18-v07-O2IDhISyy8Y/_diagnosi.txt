@@ -1,0 +1,14 @@
+KA-012 tipo=esempio frame=frame-026.png
+ancora: Ciao {{nome}}, / {{icebreaker}}
+contenuto: Template icebreaker generico basato su variabili dinamiche, scritto per intero sulla lavagna: 'Ciao {{nome}},' seguito da '{{icebreaker}}'. Rappresenta lo schema standard usato in 
+  primi 20 car trovati? False
+  primi 40 car trovati? False
+  primi 60 car trovati? False
+ISOLA 0 (30): ['KA-028', 'KA-029', 'KA-030', 'KA-031', 'KA-032', 'KA-033', '...']
+ISOLA 1 (23): ['KA-003', 'KA-004', 'KA-005', 'KA-007', 'KA-008', 'KA-009', '...']
+ISOLA 2 (2): ['KA-001', 'KA-002']
+    KA-001 [numero] Il relatore apre il video dichiarando di aver generato più di 50.000 follower su LinkedIn 
+    KA-002 [numero] Screenshot reale della dashboard LinkedIn Analytics (linkedin.com/analytics/creator/audien
+ISOLA 3 (2): ['KA-006', 'KA-010']
+    KA-006 [numero] Prova con screenshot del sito Favikon (creator.favikon.com), ranking 'Top 200 Creators · I
+    KA-010 [numero] Screenshot Favikon, ranking generale 'Top 200 Creators · LinkedIn · Luxembourg' (tutte le 

@@ -1,0 +1,69 @@
+{
+ "video_id": "O2IDhISyy8Y",
+ "titolo": "La MIGLIORE Strategia Per Generare Clienti Su LinkedIn",
+ "autore": "Giovanni Beggiato",
+ "durata_sec": 2000,
+ "url": "https://www.youtube.com/watch?v=O2IDhISyy8Y",
+ "run": "empire-studio/runs/max18-v07-O2IDhISyy8Y",
+ "lotto": "max18",
+ "checkpoint": "EMP-W4K7",
+ "ingerito_il": "2026-09-05T21:07:31",
+ "studio_chiuso_il": "2026-09-06T18:00:24",
+ "video_guardato": true,
+ "frame_estratti": 335,
+ "frame_risoluzione_visione": "1280x720 (estratti direttamente a questa risoluzione)",
+ "scene_uniche": 126,
+ "scene_analizzate": 126,
+ "copertura": "126/126 = 100%, contata sul disco",
+ "atomi": 57,
+ "archi": 116,
+ "componenti_connesse": 1,
+ "orfani": 0,
+ "ancore_non_verificabili": 0,
+ "atomi_per_tipo": {
+  "numero": 9,
+  "principio": 14,
+  "anti-pattern": 4,
+  "struttura": 7,
+  "esempio": 9,
+  "definizione": 4,
+  "procedura": 5,
+  "regola": 4,
+  "comando": 1
+ },
+ "capitoli": [
+  {
+   "start": 0,
+   "title": "Intro"
+  },
+  {
+   "start": 11,
+   "title": "Perché postare sui social non funziona"
+  },
+  {
+   "start": 103,
+   "title": "Caratteristiche di un cold DM"
+  },
+  {
+   "start": 123,
+   "title": "Personalizzazione e psicologia per la vendita"
+  },
+  {
+   "start": 695,
+   "title": "LinkedIn DM 1"
+  },
+  {
+   "start": 835,
+   "title": "LinkedIn DM 2"
+  },
+  {
+   "start": 1033,
+   "title": "LinkedIn DM 3 + Riscrizione"
+  }
+ ],
+ "note": [
+  "Quattro atomizzatori paralleli avevano prodotto 4 isole separate (30 + 23 + 2 + 2 atomi, vedi _diagnosi.txt): saldate in una sola componente connessa con 116 archi tipizzati che portano ciascuno la propria giustificazione.",
+  "1 solo atomo a confidenza 'dedotto' (KA-005, refuso di trascrizione 'EMS' per 'DM'): tutti gli altri 56 sono 'osservato'.",
+  "Frame estratti direttamente a 1280x720 (nessun problema di risoluzione, a differenza di RnoC5IlOUhs)."
+ ]
+}

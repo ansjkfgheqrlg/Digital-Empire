@@ -107,3 +107,43 @@ video», la prima mossa non è tagliare la qualità: è **chiedere**.
 - [ ] Sottotitoli ON
 - [ ] Anteprima fatta prima dell'export
 - [ ] Export ≥1080p MP4, browser non chiuso durante il rendering
+
+---
+
+## ⚠️ DUE COSE IMPARATE DALL'AGGIORNAMENTO DI LUGLIO 2024 (A4-L20 · 2026-09-06)
+
+### 3. Il piano base ha un tetto di **50 scene** per file
+
+Oltre alla capacità in minuti (§2), Fliki ha un **secondo tetto, per file: 50 scene** sul piano
+base [A4/L20, 66:59-67:23]. È un vincolo di forma, non di durata, e nessuno da noi lo aveva mai
+nominato.
+
+Il modo di aggirarlo mostrato nella lezione: **impacchettare molto testo in un'unica scena** e poi
+frazionarlo con il **B-roll**, che crea media temporizzati **dentro** la scena senza contarli come
+scene nuove — nell'esempio, **40 immagini in una scena sola** [67:29-67:53]. (Sulla capacità di
+caratteri per scena la lezione si contraddice: «mille» a 65:29 e «10.000» a 67:41. Non normalizzato:
+va misurato, non creduto.)
+
+**Verifica assegnata al gate A4:** questo tetto vale anche per i file creati **via API**, o è un
+conteggio dell'editor web? La risposta cambia il numero massimo di scene che la fabbrica può
+generare per video, e va saputa **prima** di alzare i volumi di produzione.
+
+### 4. La difesa dai reclami: il «trafiletto» del corso, e la nostra
+
+La lezione dichiara che le tracce musicali di libreria di Fliki sono «tutte licenziate»
+[06:06-06:20], e che in caso di reclamo su YouTube «noi abbiamo una frase, **un trafiletto** che
+andiamo a incollare nella disputa e YouTube risolve subito la questione» [06:20-06:39].
+
+**Due osservazioni, e la seconda è quella che conta.**
+
+1. Quel trafiletto **non lo fornisce Fliki**: è un testo che passa la community del corso
+   [06:39-06:48]. È quindi **un processo umano di supporto**, non una funzione della piattaforma:
+   dipende da qualcuno che risponde.
+2. **Nei settantasei minuti dedicati a Fliki, il campo `YouTube channel ID(s)` non viene nominato
+   una sola volta** — mentre è lo strumento **nativo della piattaforma** per lo stesso identico
+   problema (§1 di questa scheda, `A4-L19-01`). Il corso insegna la difesa **dopo** il reclamo e
+   ignora quella **prima**.
+
+**La nostra difesa è nell'ordine opposto:** prima si registra l'ID del canale nel profilo Fliki
+(gratis, una volta), e solo dopo, se il reclamo arriva lo stesso, si discute. Una disputa che si
+apre con una casella già compilata non è la stessa disputa.

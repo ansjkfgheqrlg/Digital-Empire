@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #competitor #andrei-pascu #site-study #design-system #copy-teardown
 Created: 2026-09-01
-Last updated: 2026-09-02
+Last updated: 2026-09-06
 ---
 
 # STUDIO SITI ANDREI PASCU — indice
@@ -14,7 +14,7 @@ Fa parte del **Reparto Competitor Research** di Digital Empire (ecosistema #1: A
 
 ---
 
-## Stato: 9 report su 9 ✅
+## Stato: 10 report su 11 catturate
 
 | # | Pagina | Altezza | Blocchi copy | Report |
 |---|--------|---------|--------------|--------|
@@ -27,10 +27,13 @@ Fa parte del **Reparto Competitor Research** di Digital Empire (ecosistema #1: A
 | 07 | [claude-speedrun.com](reports/07-claude-speedrun.md) — 249 € | 33.756px | 380 | ✅ 🔴 |
 | 08 | [apsales.eu](reports/08-apsales.md) — **agenzia CRO** | 12.565px | 168 | ✅ 🔴 |
 | 09 | [linktr.ee/andrei.bsns](reports/09-linktree.md) — bio-link | 1.287px | 119 | ✅ |
+| 11 | [armageddon.bsns.it](reports/11-armageddon.md) — **lancio a tempo, 199 €** | 5.103px | 57 | ✅ 🔴 + [ATLANTE VISIVO](reports/11-armageddon-ATLANTE-VISIVO.md) |
 
-**9 pagine su 9 catturate e studiate.** 371 screenshot · 1.832 blocchi di copy · 2.362 righe di report.
+**10 pagine catturate e studiate.** 381 screenshot · 1.889 blocchi di copy.
 
-> ⚠️ **L'ecosistema però ha almeno 11 pagine.** Lo storico del bio-link (report 09) rivela due prodotti mai catturati: **`outViral`** (terzo membro della famiglia `out*`) e **`Timer`**. Da aggiungere al prossimo giro.
+> 🔴 **La scoperta piu' grande dello studio siti e' su `armageddon` e non riguarda il design: Andrei costruisce le sue landing con Claude Code**, con un `CLAUDE.md` numerato, un `brand.css`, un mockup PDF misurato in unita' e un ticket system (`AP-138`). I commenti del CSS servito lo dicono. Dettaglio in [11-armageddon.md](reports/11-armageddon.md) §0 — e il sistema che ne nasce e' in `PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md`.
+
+> ⚠️ **Restano fuori 2 pagine su 12 note.** Lo storico del bio-link (report 09) rivela **`outViral`** (ora confermato: e' uno dei quattro corsi dell'Armageddon Pack, `/outviral`) e **`Timer`**. Da aggiungere al prossimo giro. `armageddon` ha inoltre rivelato quattro pagine prodotto figlie — `/outemail`, `/outfunnel`, `/outheadline`, `/outviral` — e un prodotto in uscita, **Funnel Operator**.
 
 ---
 

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "P2-001",
+    "tipo": "regola",
+    "contenuto": "Nel terzo DM analizzato (Zeekeo), il punto 1 'Personalizzato' del framework viene promosso perche' il messaggio nomina esplicitamente 'Giovanni', ma il punto 2 'Chiarire chi sei e perche' devo leggere' resta bocciato perche' il mittente non si presenta ne' spiega la ragione del contatto: il relatore ribadisce che dover spendere tempo a capire chi scrive consuma gia' i 3 secondi di attenzione disponibili, in un modo che il destinatario non ha scelto.",
+    "fonte": "O2IDhISyy8Y#16:06 (frame-162.png, canvas Excalidraw con DM Zeekeo e framework) + voce 15:54-16:12",
+    "frame": "frame-162.png",
+    "ancora": "perché se perdo anche tempo a guardare chi sei, sto già impiegando i miei famosi 3 secondi in una maniera che forse non ti interessa. Però cosa positiva è personalizzato.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-002",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-002",
+    "tipo": "esempio",
+    "contenuto": "Testo integrale del terzo DM reale analizzato (proveniente da un Operations Executive presso Zeekeo, LinkedIn 2nd grado): intestazione profilo '[nome oscurato] . 2nd . Operations Executive @ Zeekeo | Helping B2B teams turn trust + consistent follow-ups into a predictable pipeline', datato 'APR 6', messaggio inviato alle 12:46 PM con oggetto 'Early-stage growth question': 'Hi Giovanni, congrats on getting AI Automation Founders off the ground. Quick one, when things get busy, do you find follow-up slips a bit, or have you already got that side sorted?' La parola 'follow-up' e' sottolineata in verde dal relatore nell'analisi.",
+    "fonte": "O2IDhISyy8Y#16:06 (frame-162.png, screenshot LinkedIn incollato in Excalidraw)",
+    "frame": "frame-162.png",
+    "ancora": "Hi Giovanni, congrats on getting AI Automation Founders off the ground. Quick one, when things get busy, do you find follow-up slips a bit, or have you already got that side sorted?",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-001",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-003",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-003",
+    "tipo": "procedura",
+    "contenuto": "Valutazione rapida in sequenza dei punti 3-5 del framework sul DM Zeekeo: 'Mi stai dando qualcosa? No. C'e' un microcommitment? No. C'e' poco attrito? No, perche' non ricevo niente.' Il relatore mostra cosi' il metodo di scoring veloce: si scorre il framework punto per punto ad alta voce, rispondendo si'/no a ciascun criterio, invece di fare una valutazione discorsiva.",
+    "fonte": "O2IDhISyy8Y#16:12 (frame-163.png, framework con 5 punti visibili) + voce 16:12-16:18",
+    "frame": "frame-163.png",
+    "ancora": "Mi stai dando qualcosa? No. C'è un microcommitment? No. C'è poco attrito? No, perché non ricevo niente.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-002",
+        "tipo": "esempio-di"
+      },
+      {
+        "verso": "P2-004",
+        "tipo": "motiva"
+      }
+    ]
+  },
+  {
+    "id": "P2-004",
+    "tipo": "principio",
+    "contenuto": "Nessuno risponde a un cold DM per cortesia o a caso: chi riceve un messaggio senza offerta, senza un piccolo passo da compiere (micro commitment) e senza un obiettivo chiaro semplicemente non risponde, perche' non ha alcun incentivo a farlo a meno che non abbia tempo da perdere. Ogni DM deve quindi avere un obiettivo esplicito prima di essere inviato.",
+    "fonte": "O2IDhISyy8Y#16:18 (frame-164.png, X rossa sul punto 3 'Dare qualcosa') + voce 16:18-16:30",
+    "frame": "frame-164.png",
+    "ancora": "Ricordatevi che nessuno di nuovo risponde a caso, nessuno risponde per la voglia di rispondervi, a meno che non abbiano nulla da fare. Quindi qui deve esserci un chiaro obiettivo.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-003",
+        "tipo": "motiva"
+      }
+    ]
+  },
+  {
+    "id": "P2-005",
+    "tipo": "principio",
+    "contenuto": "Anche un DM che fallisce quasi tutti i punti del framework puo' essere scritto meglio della media: il DM Zeekeo parte bene nella sua prima riga (probabilmente scritta a mano o con un'automazione decente), ma il resto non soddisfa alcun altro criterio del framework. L'obiettivo dichiarato di un primo DM e' ricevere una risposta o ottenere un'azione.",
+    "fonte": "O2IDhISyy8Y#16:30-17:00 (frame-166.png poi frame-171.png, rettangolo arancione attorno al DM Zeekeo) + voce 16:30-17:00",
+    "frame": "frame-171.png",
+    "ancora": "Allora, l'obiettivo del primo DMS per voi è ricevere una risposta e o ehm fare qualcosa. Quindi questo messaggio, nonostante sia partito bene, perché questa parte fatta qui è molto fatta bene, si vede che probabilmente l'ha scritto a mano o ha usato qualche automazione decente.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-004",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-006",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-006",
+    "tipo": "esempio",
+    "contenuto": "Chiusura dell'analisi del secondo esempio reale (DM Zeekeo): 'Ehm, il resto non soddisfa alcun tipo di criterio. Bene, per ultimo e ora andiamo a vedere quello che riscriviamo.' Il relatore introduce cosi' il passaggio dalla sola analisi critica alla riscrittura pratica di un DM da zero, che occupera' la parte centrale del video (terzo DM, quello del video editor freelance).",
+    "fonte": "O2IDhISyy8Y#17:00 (frame-171.png) + voce 17:00-17:06",
+    "frame": "frame-171.png",
+    "ancora": "Ehm, il resto non soddisfa alcun tipo di criterio. Bene, per ultimo e ora andiamo a vedere quello che riscriviamo.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-005",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-007",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-007",
+    "tipo": "esempio",
+    "contenuto": "Testo integrale del terzo DM reale, quello che verra' riscritto da capo (a differenza dei primi due, solo analizzati): 'Salve Giovanni, mi chiamo [nome oscurato con rettangolo azzurro] e sono una video editor freelance. Sto cercando collaborazioni con creator YouTube che vogliono migliorare qualita' e ritmo dei loro contenuti. Offro editing personalizzato che include: montaggio dinamico, ottimizzazione del ritmo narrativo, audio e color correction, testi/grafiche/effetti (se richiesti). I miei prezzi partono da 60 euro a video, variabili in base a durata e livello di editing. Sono disponibile a valutare anche collaborazioni continuative o pacchetti mensili. Se ti interessa, posso inviarti alcuni video che ho editato di recente. Grazie per il tuo tempo, [nome oscurato]'.",
+    "fonte": "O2IDhISyy8Y#17:06 (frame-172.png, testo scritto direttamente in Excalidraw) + voce 17:06-17:12",
+    "frame": "frame-172.png",
+    "ancora": "Salve Giovanni, mi chiamo [nome oscurato con rettangolo azzurro] e sono una video editor freelance.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-008",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-008",
+    "tipo": "anti-pattern",
+    "contenuto": "Il framework applicato al terzo DM boccia con una X il punto 1 'Personalizzato', ribaltando l'esito dei due DM precedenti (dove la sola presenza del nome 'Giovanni' bastava a promuovere il punto): il relatore riconosce nel messaggio lo schema di un template con variabile dinamica di tipo 'Salve {nome}', non una vera personalizzazione. Il messaggio nomina 'Giovanni' ma il relatore, essendo nell'AI da tempo, riconosce immediatamente lo schema del template dietro la variabile.",
+    "fonte": "O2IDhISyy8Y#18:18 (frame-184.png, X rossa sul punto 1) + voce 18:18-18:48",
+    "frame": "frame-184.png",
+    "ancora": "Allora, qui la risposta è controintuitivamente, no. non è personalizzato perché perché se io leggo questo messaggio, siccome sono nell'AI da un po' di tempo, io mi aspetto, ok, che questo potrebbe essere un messaggio del genere.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-007",
+        "tipo": "corretto-da"
+      },
+      {
+        "verso": "P2-009",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-009",
+    "tipo": "esempio",
+    "contenuto": "Esempio scritto a mano dal relatore per mostrare cosa NON e' personalizzazione vera: 'Salve {nome}' con parentesi graffe attorno a 'nome', a indicare esplicitamente un placeholder di automazione. Contrapposto a un esempio di personalizzazione autentica pronunciato a voce: 'Ho visto che hai una bellissima felpa verde nell'ultimo video... mi e' piaciuta molto eccetera eccetera eccetera' - un dettaglio specifico e realmente osservato, non un campo variabile generico.",
+    "fonte": "O2IDhISyy8Y#18:48 (frame-189.png, testo manoscritto rosso in alto a destra del canvas) + voce 18:48-19:18",
+    "frame": "frame-189.png",
+    "ancora": "Ho visto che hai una bellissima felpa verde nell'ultimo video rossa, anzi ehm mi è piaciuta molto eccetera eccetera eccetera.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-008",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-010",
+    "tipo": "anti-pattern",
+    "contenuto": "Sul terzo DM (video editor), il punto 2 del framework viene promosso solo a meta' ('ha chiarito chi e'' - si', e' un video editor - ma 'perche' devo leggere' resta bocciato), e il punto 3 'Dare qualcosa' riceve una X netta perche' il messaggio, invece di offrire qualcosa gratis, chiede soldi: il paragrafo del prezzo ('I miei prezzi partono da 60 euro a video...') viene cerchiato in rosso a mano come prova visiva. Il relatore lo segnala come pratica che sconsiglia vivamente nei cold DM: chiedere denaro al primo contatto, invece di dare valore gratuito, uccide la risposta.",
+    "fonte": "O2IDhISyy8Y#19:18 (frame-194.png, ovale rosso sul paragrafo prezzo) + voce 19:18-19:48",
+    "frame": "frame-194.png",
+    "ancora": "Ok, ha chiarito chi è. Sì, facciamo sì. È un video editor e perché devo leggere? Assolutamente no. Mi ha dato qualcosa? No, anzi mi sta chiedendo soldi, quindi in questo messaggio, cosa che sconsiglio vivamente...",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-007",
+        "tipo": "corretto-da"
+      },
+      {
+        "verso": "P2-011",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-011",
+    "tipo": "anti-pattern",
+    "contenuto": "Il punto 4 'Micro commitment' viene bocciato sul terzo DM perche' il messaggio non chiede alcun piccolo passo al destinatario ('non mi sta chiedendo niente'). Il relatore aggiunge poi un'annotazione manoscritta rossa 'CTA?' con una freccia che collega il punto 3 del framework al paragrafo del prezzo cerchiato: il messaggio non specifica quale azione concreta il destinatario debba compiere (rispondere si', rispondere no, premere un pulsante), lasciando la call to action del tutto assente o ambigua.",
+    "fonte": "O2IDhISyy8Y#19:48 (frame-199.png, freccia rossa + annotazione 'CTA?') + voce 19:48-20:18",
+    "frame": "frame-199.png",
+    "ancora": "Poi c'è un microcommitment? No, non mi sta chiedendo niente. [...] Vediamo se lo legge. Sì, qual è la mia call to action? Cioè, devo risponderti sì, devo risponderti no, devo premere un...",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-010",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-028",
+        "tipo": "contraddice"
+      }
+    ]
+  },
+  {
+    "id": "P2-012",
+    "tipo": "procedura",
+    "contenuto": "Con tutti e 5 i punti del framework bocciati (tranne il parziale sul punto 2) sul terzo DM, il relatore chiude la fase di sola analisi critica e annuncia la riscrittura pratica: il DM verra' riscritto da zero usando variabili dinamiche (del tipo {{nome}}, {{variabile}}) in modo che chiunque lo guardi possa poi customizzarlo con l'AI per il proprio caso, invece di limitarsi a copiarlo parola per parola.",
+    "fonte": "O2IDhISyy8Y#20:18 (frame-204.png, framework completo a 5 punti) + voce 20:18-20:24",
+    "frame": "frame-204.png",
+    "ancora": "Bene, andiamo a riscriverlo e lo riscriviamo di modo tale che voi possiate customizzarlo con AI. Che cosa intendo? Intendo che ora ve lo scrivo anche utilizzando delle variabili dinamiche in modo tale che ehm capiate...",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-011",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-013",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-013",
+    "tipo": "struttura",
+    "contenuto": "Primo paragrafo del nuovo template 'VIDEO EDITOR' riscritto dal vivo, con variabili dinamiche in doppie parentesi graffe (notazione da template): 'Ciao {{nome}}, ho visto il tuo ultimo video su {{variabile}}. Finalmente qualcuno che parla di AI in modo chiaro e senza fronzoli.' Il relatore spiega che questa apertura funziona perche' chiunque nell'ambito creator si sente in qualche modo lusingato da un complimento specifico sul proprio contenuto, pur restando un template compilabile in automatico.",
+    "fonte": "O2IDhISyy8Y#21:12-21:54 (frame-213.png poi frame-220.png, box di testo sotto il titolo 'VIDEO EDITOR') + voce 21:12-22:00",
+    "frame": "frame-220.png",
+    "ancora": "Ciao {{nome}}, ho visto il tuo ultimo video su {{variabile}}. Finalmente qualcuno che parla di AI in modo chiaro e senza fronzoli.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-012",
+        "tipo": "esempio-di"
+      },
+      {
+        "verso": "P2-014",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-014",
+    "tipo": "definizione",
+    "contenuto": "EFFETTO BARNUM applicato allo statement di apertura del template: definizione riportata per intero dalla lavagna - 'EFFETTO BARNUM: frase \"universali-specifiche\" che sembrano personalizzate. Questa e' la base di ogni oroscopo o lettura della mano. Consiste nel fare affermazioni \"universali-specifiche\": frasi che sembrano personali ma che valgono per chiunque.' Il relatore collega esplicitamente questo meccanismo al paragrafo 'Ciao {{nome}}, ho visto il tuo ultimo video su {{variabile}}...' tracciando una linea arancione dal testo alla definizione.",
+    "fonte": "O2IDhISyy8Y#28:00-28:06 (frame-281.png poi frame-282.png, reveal della sezione con le due definizioni) + voce 28:00-28:06",
+    "frame": "frame-282.png",
+    "ancora": "EFFETTO BARNUM: frase 'universali-specifiche' che sembrano personalizzate",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-013",
+        "tipo": "esempio-di"
+      },
+      {
+        "verso": "P2-015",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-015",
+    "tipo": "definizione",
+    "contenuto": "RAINBOW RUSE (L'Inganno dell'Arcobaleno) applicato al secondo statement del template: definizione riportata per intero dalla lavagna - 'RAINBOW RUSE: L'Inganno dell'Arcobaleno - Si attribuisce a una persona un tratto della personalita' e il suo esatto opposto nello stesso momento.' Il relatore collega con una freccia verde questo meccanismo alla frase 'spesso il watch time non e'' del paragrafo 'Canali come il tuo...', notando che si applica anche a chi ha gia' un milione di follower: il contenuto fantastico puo' comunque non arrivare.",
+    "fonte": "O2IDhISyy8Y#28:06-28:36 (frame-282.png poi frame-287.png, doppio collegamento arancione e verde) + voce 28:06-28:36",
+    "frame": "frame-287.png",
+    "ancora": "RAINBOW RUSE: L'Inganno dell'Arcobaleno",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-014",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-016",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-016",
+    "tipo": "struttura",
+    "contenuto": "Secondo statement generico del template, applicabile a qualunque creator e riscritto due volte in diretta prima di arrivare alla formulazione finale: prima versione 'perche' la gente non guarda tutto il video', poi 'perche' spesso il watch time non aiuta', infine versione definitiva usata nel template: 'Canali come il tuo hanno un contenuto fantastico, ma spesso puo' non arrivare perche' spesso il watch time non e' dove dovrebbe.' Le correzioni live sostituiscono un concetto vago (guardare tutto il video) con il vocabolario tecnico del settore (watch time, CTR), per parlare la lingua del destinatario e colpire il suo 'pain' reale.",
+    "fonte": "O2IDhISyy8Y#24:30-25:30 (frame-246.png, frame-252.png, frame-256.png, tre riscritture successive) + voce 24:30-25:30",
+    "frame": "frame-256.png",
+    "ancora": "Canali come il tuo hanno un contenuto fantastico, ma spesso può non arrivare perché spesso il watch time non è dove dovrebbe.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-013",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-015",
+        "tipo": "esempio-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-017",
+    "tipo": "regola",
+    "contenuto": "Terzo paragrafo del template (case study di autorita' 'Gino'), scritto usando deliberatamente il linguaggio nativo del destinatario invece di terminologia generica: 'Sono Gino, ed ho aiutato *PERSONA* ad crescere da 5k subs a 50k subs in 3 mesi, creando video di alta qualita' che hanno incrementato drasticamente il watch time.' Il placeholder '*PERSONA*' tra asterischi indica un campo hard-coded da personalizzare. Il relatore nota che l'effetto di credibilita' e' ancora piu' forte se il case study citato appartiene alla stessa nicchia del destinatario, e sceglie 'subscribers' invece di 'clienti' per parlare la lingua dei creator YouTube.",
+    "fonte": "O2IDhISyy8Y#25:36-26:48 (frame-257.png fino a frame-266.png, scrittura progressiva del paragrafo) + voce 25:36-26:48",
+    "frame": "frame-266.png",
+    "ancora": "Sono Gino, ed ho aiutato *PERSONA* ad crescere da 5k subs a 50k subs in 3 mesi, creando video di alta qualità che hanno incrementato drasticamente il watch time",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-016",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-022",
+        "tipo": "corretto-da"
+      }
+    ]
+  },
+  {
+    "id": "P2-018",
+    "tipo": "struttura",
+    "contenuto": "Quarto paragrafo del template (punto 3 del framework, 'Dare qualcosa'): 'Mi farebbe piacere fare l'introduzione del tuo prossimo video gratuitamente. Ovviamente, non mi devi nulla e solo se performa secondo le tue aspettative, ti chiedero' di lavorare assieme.' L'offerta e' esplicitamente gratuita e senza vincoli (nessun pagamento richiesto in anticipo), usata come leva di reciprocita': il compenso viene condizionato solo a un risultato futuro verificabile.",
+    "fonte": "O2IDhISyy8Y#26:48-27:12 (frame-269.png poi frame-273.png) + voce 26:48-27:12",
+    "frame": "frame-273.png",
+    "ancora": "Mi farebbe piacere fare l'introduzione del tuo prossimo video gratuitamente. Ovviamente, non mi devi nulla e solo se performa secondo le tue aspettative, ti chiederò di lavorare assieme.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-017",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-019",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-019",
+    "tipo": "struttura",
+    "contenuto": "Quinto e ultimo paragrafo del template (punto 4 'Micro commitment' + punto 5 'Poco attrito'), con firma finale: 'Se ti interessa, tutto quello che mi serve e' che tu mi mandi un link google drive da cui io posso caricare e scarica il video. Fammi sapere, Giovanni' (la scena 102 lo rilegge in forma piu' fluida: '...e scarica il video.' e la firma 'Fammi sapere, Giovanni.'). La richiesta e' condizionata all'interesse del destinatario ('se ti interessa') e l'azione richiesta e' minima: un solo link, senza bisogno di scrivere un messaggio o compilare altro.",
+    "fonte": "O2IDhISyy8Y#27:12-27:42 (frame-273.png fino a frame-278.png, template completo dall'apertura alla firma) + voce 27:12-27:42",
+    "frame": "frame-278.png",
+    "ancora": "Se ti interessa, tutto quello che mi serve è che tu mi mandi un link google drive da cui io posso caricare e scarica il video. Fammi sapere, Giovanni",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-018",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-020",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-020",
+    "tipo": "esempio",
+    "contenuto": "TEMPLATE COMPLETO 'VIDEO EDITOR' (versione CON autorita'/case study), riportato per intero parola per parola cosi' come appare assemblato sul canvas Excalidraw quando e' leggibile senza tagli: 'Ciao {{nome}}, ho visto il tuo ultimo video su {{variabile}}. Finalmente qualcuno che parla di AI in modo chiaro e senza fronzoli. Canali come il tuo hanno un contenuto fantastico, ma spesso puo' non arrivare perche' spesso il watch time non e' dove dovrebbe. Sono Gino, ed ho aiutato *PERSONA* ad crescere da 5k subs a 50k subs in 3 mesi, creando video di alta qualita' che hanno incrementato drasticamente il watch time. Mi farebbe piacere fare l'introduzione del tuo prossimo video gratuitamente. Ovviamente, non mi devi nulla e solo se performa secondo le tue aspettative, ti chiedero' di lavorare assieme. Se ti interessa, tutto quello che mi serve e' che tu mi mandi un link google drive da cui io posso caricare e scarica il video. Fammi sapere, Giovanni.' Struttura in 5 blocchi: 1) Effetto Barnum di apertura con complimento sul video, 2) Rainbow Ruse sul pain (watch time), 3) case study di autorita' con linguaggio nativo del target, 4) offerta gratuita senza vincoli, 5) micro commitment a bassissimo attrito (un link Drive) + firma.",
+    "fonte": "O2IDhISyy8Y#29:00 (frame-291.png, DM completo leggibile per la prima volta senza tagli) + voce 20:24-29:00 (assemblaggio progressivo)",
+    "frame": "frame-291.png",
+    "ancora": "Ciao {{nome}}, ho visto il tuo ultimo video su {{variabile}}. Finalmente qualcuno che parla di AI in modo chiaro e senza fronzoli. Canali come il tuo hanno un contenuto fantastico, ma spesso può non arrivare perché spesso il watch time non è dove dovrebbe. Sono Gino, ed ho aiutato *PERSONA* ad crescere da 5k subs a 50k subs in 3 mesi, creando video di alta qualità che hanno incrementato drasticamente il watch time. Mi farebbe piacere fare l'introduzione del tuo prossimo video gratuitamente. Ovviamente, non mi devi nulla e solo se performa secondo le tue aspettative, ti chiederò di lavorare assieme.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-013",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-016",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-017",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-018",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-019",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-021",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-021",
+    "tipo": "procedura",
+    "contenuto": "Il template e' la prima volta nel video in cui un DM supera l'intero framework a 5 punti senza alcuna bocciatura (framework completo: '1. Personalizzato, 2. Chiarire chi sei e perche' devo leggere, 3. Dare qualcosa, 4. Micro commitment, 5. Poco attrito' - tutti spuntati verdi). Il relatore chiude la valutazione e annuncia l'esperimento successivo: riscrivere lo stesso messaggio per un mittente senza case study/autorita' da citare, dichiarando che non cambierebbe altro se non quella singola parte.",
+    "fonte": "O2IDhISyy8Y#29:18-29:36 (frame-294.png poi frame-296.png, framework interamente spuntato) + voce 29:18-29:36",
+    "frame": "frame-296.png",
+    "ancora": "Abbiamo dato qualcosa, c'è un microcommitment, quindi sì, serve che mi mandi il link di Drive ed è poco attrito.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-020",
+        "tipo": "esempio-di"
+      },
+      {
+        "verso": "P2-022",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-022",
+    "tipo": "struttura",
+    "contenuto": "Riscrittura live del solo paragrafo del case study per il caso 'Gino senza autorita'' (senza numeri di crescita reali da citare): il paragrafo 'Sono Gino, ed ho aiutato *PERSONA* ad crescere da 5k subs a 50k subs...' viene sostituito con: 'Sono Gino e sono un video editor specializzato nel creare \"hook\" ad alto engagement. Questo e' un video che ho preparato per te: [LINK]'. Tutto il resto del template (apertura, secondo statement, offerta gratuita, micro commitment, firma) resta invariato. Il relatore precisa che questa e' l'unica parte che cambierebbe passando da un mittente con case study a uno senza.",
+    "fonte": "O2IDhISyy8Y#29:36-31:06 (frame-297.png fino a frame-312.png, riscrittura in diretta) + voce 29:36-31:06",
+    "frame": "frame-312.png",
+    "ancora": "Sono Gino e sono un video editor specializzato nel creare \"hook\" ad alto engagement. Questo è un video che ho preparato per te",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-017",
+        "tipo": "corretto-da"
+      },
+      {
+        "verso": "P2-021",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-023",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-023",
+    "tipo": "struttura",
+    "contenuto": "Schema 'PROOF' introdotto come albero a due rami dopo la riscrittura del case study senza autorita': la scritta in blocco 'PROOF' con una linea che si dirama in due etichette, 'LA AVETE' e 'LA CREATE'. Il relatore introduce il concetto: nel mondo dell'AI l'unica cosa davvero rilevante e' la prova (proof) reale - se la si possiede gia' (una prova concreta di risultati), la si scrive nel messaggio; se non la si possiede, la si crea artificialmente (es. un video dimostrativo generico mandato a chiunque, con placeholder '[LINK]').",
+    "fonte": "O2IDhISyy8Y#30:36-31:06 (frame-307.png poi frame-312.png, albero PROOF con i due rami) + voce 30:36-31:06",
+    "frame": "frame-312.png",
+    "ancora": "sarà eh rilevante è o la avete e quindi se la avete potete scriverla, se l'avete in settore meglio oppure la create.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-022",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-024",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-024",
+    "tipo": "principio",
+    "contenuto": "Anche una 'proof' costruita artificialmente (non un vero case study, ma un video dimostrativo generico offerto a chiunque) funziona perche', se il contenuto del video/hook piace al destinatario, questi non si sofferma a verificare con chi il mittente abbia realmente lavorato in passato: la mente del destinatario non arriva a pensare 'ma con chi ha lavorato? che cosa?' - l'attenzione resta sulla qualita' percepita dell'esempio, non sulla sua provenienza.",
+    "fonte": "O2IDhISyy8Y#31:06 (frame-312.png, sottolineatura ondulata blu sul placeholder [LINK]) + voce 31:06-31:24",
+    "frame": "frame-312.png",
+    "ancora": "piace l'intro e il video, quello che succederà sarà che nella testa di questa persona non viene a pensare 'Ah, ok, ma con chi ha lavorato? Che cosa?'",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-023",
+        "tipo": "parte-di"
+      }
+    ]
+  },
+  {
+    "id": "P2-025",
+    "tipo": "esempio",
+    "contenuto": "Il relatore interrompe il canvas con uno stacco a webcam intera per raccontare un aneddoto personale a riprova diretta che il metodo funziona: dice di aver trovato personalmente tutto il proprio team YouTube (LinkedIn incluso) proprio grazie a persone che gli hanno scritto messaggi generici di questo tipo - offerte di lavoro gratuito dimostrativo, senza vincoli se il risultato non fosse piaciuto ('Ehi, ti faccio questo gratuitamente, ti piace, non ti piace, vai'). Dichiara di essere stato da entrambe le parti (sia mittente sia destinatario di questo tipo di approccio).",
+    "fonte": "O2IDhISyy8Y#31:30-31:48 (frame-316.png poi frame-317.png, stacco a piena webcam) + voce 31:30-31:48",
+    "frame": "frame-316.png",
+    "ancora": "vi diranno \"No, non è vero, io ho trovato tutto il mio team YouTube così,\"",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-024",
+        "tipo": "esempio-di"
+      },
+      {
+        "verso": "P2-026",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-026",
+    "tipo": "principio",
+    "contenuto": "Primo punto del confronto diretto tra il DM originale e quello riscritto: il relatore critica l'apertura formale 'Salve Giovanni, mi chiamo...' dell'originale a favore del 'Ciao {{nome}}' piu' diretto e informale del riscritto. Nota inoltre che l'originale mette subito l'identita' del mittente in prima posizione ('mi chiamo X e sono...'), mentre il riscritto apre invece con la personalizzazione (il complimento sul video), rimandando l'identita' del mittente al terzo paragrafo.",
+    "fonte": "O2IDhISyy8Y#32:00-32:06 (frame-321.png poi frame-322.png, i due DM affiancati per intero) + voce 32:00-32:06",
+    "frame": "frame-322.png",
+    "ancora": "non con un salve straniero. Poi chi sono? Non è importante avercelo sopra, ma passiamo quindi ad una personalizzazione.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-020",
+        "tipo": "corretto-da"
+      },
+      {
+        "verso": "P2-027",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-027",
+    "tipo": "principio",
+    "contenuto": "Confronto annotato con parentesi graffe blu su entrambi i DM: sull'originale (sinistra) una freccia curva accanto al saluto e due parentesi - una racchiude l'intero elenco puntato dei servizi offerti, l'altra il paragrafo del prezzo ('I miei prezzi partono da 60 euro a video...'). Sul riscritto (destra) quattro parentesi, una per ciascun paragrafo generico applicabile a qualunque creator (apertura con complimento, 'Canali come il tuo...', offerta gratuita, richiesta finale) - nessuna parentesi sul paragrafo 'Sono Gino...', perche' non ha un corrispondente diretto nell'elenco servizi dell'originale. Il paragrafo prezzo dell'originale (che chiede denaro) viene esplicitamente contrapposto ai paragrafi del riscritto che invece danno qualcosa gratis con una CTA chiara.",
+    "fonte": "O2IDhISyy8Y#32:36 (frame-327.png, parentesi comparate sui due DM) + voce 32:36",
+    "frame": "frame-327.png",
+    "ancora": "stai chiedendo a me del denaro, quindi mi stai dando qualcosa di gratis e in più ho poco attrito con una chiarissima CTA che è inviarmi il link di Google Drive",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-026",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-028",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-028",
+    "tipo": "regola",
+    "contenuto": "Il confronto finale isola l'assenza di CTA come la differenza decisiva tra i due DM: nell'originale il destinatario 'non ha ancora capito che cosa devo fare per riceverla' (visualizzato con un grande punto interrogativo disegnato tra i due messaggi), mentre nel riscritto la frase 'un link google drive' nel paragrafo finale riceve una sottolineatura ondulata blu, a marcare la CTA esplicita e concreta. Il relatore la definisce apertamente 'il segreto per far si' che le persone vi rispondano': una call to action chiara e a bassissimo attrito, non l'assenza di richiesta ne' una richiesta di denaro.",
+    "fonte": "O2IDhISyy8Y#32:48-32:54 (frame-329.png, punto interrogativo blu + sottolineatura CTA) + voce 32:36-32:48",
+    "frame": "frame-329.png",
+    "ancora": "questo è un po' il segreto per far sì che le persone vi rispondano.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-011",
+        "tipo": "contraddice"
+      },
+      {
+        "verso": "P2-027",
+        "tipo": "parte-di"
+      },
+      {
+        "verso": "P2-029",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-029",
+    "tipo": "regola",
+    "contenuto": "Riassunto finale del framework a 5 punti, pronunciato a webcam intera in chiusura del video: (1) 'personalizzare il messaggio con uno statement che sia generalmente applicabile ma specifico, di modo tale che sembri personalizzato'; (2) 'chiarire chi siete e perche' il messaggio dovrebbe essere letto'; (3) 'dare qualcosa di gratuito perche' state parlando ad uno straniero e volete in qualche modo ingaggiare in questa conversazione'; (4) 'chiedere un microcommitment'; (5) 'assicurarvi di avere poco attrito'.",
+    "fonte": "O2IDhISyy8Y#32:54-33:12 (frame-330.png fino a frame-333.png, riassunto a piena webcam) + voce 32:54-33:12",
+    "frame": "frame-333.png",
+    "ancora": "Quindi, per riassumere dovete personalizzare il messaggio con uno statement che sia generalmente applicabile ma specifico, di modo tale che sembri personalizzato.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-028",
+        "tipo": "precede"
+      },
+      {
+        "verso": "P2-030",
+        "tipo": "precede"
+      }
+    ]
+  },
+  {
+    "id": "P2-030",
+    "tipo": "comando",
+    "contenuto": "Chiusura del video con doppio invito all'azione, ultimo frame disponibile (33:18-33:20, fine video): 'Se volete vendere servizi AI, primo link' (rimanda a un link in descrizione) 'o aspettate novita' nel caso in cui io lanci una community a pagamento.' Il relatore chiude quindi con una CTA diretta verso un'offerta esistente (link per vendere servizi AI) e un teaser su un futuro prodotto a pagamento (community).",
+    "fonte": "O2IDhISyy8Y#33:18 (frame-334.png, ultimo frame del video) + voce 33:12-33:20 (fine)",
+    "frame": "frame-334.png",
+    "ancora": "Se volete vendere servizi AI, primo link o aspettate novità nel caso in cui io lanci una community a pagamento.",
+    "confidenza": "osservato",
+    "relazioni": [
+      {
+        "verso": "P2-029",
+        "tipo": "precede"
+      }
+    ]
+  }
+]
