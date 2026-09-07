@@ -299,3 +299,11 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   `* -text` («i file viaggiano byte-per-byte fra il PC di Max e quello di Gael»): cambiarla e'
   materia da ADR, non da turno di lavoro. Da fare: trovare chi scrive quel file, e o si aggiusta la
   fonte o si apre l'ADR | quando ricapita, o prima che blocchi Gael | &#9744;
+
+  **FONTE TROVATA il 2026-09-07, al quarto blocco della giornata.** Non e' un guasto: e' **un'altra
+  sessione viva**. `EMP-W4K7` e' la ripresa del lotto `max18` (studio dei 9 video), e il diff la
+  mostra **riscritta per intero mentre quella sessione lavora** — 410 righe che diventano 416, tutto
+  il file rimpiazzato, fine-riga CRLF. Chi scrive non passa da `checkpoint.py` (che scrive gia' in
+  LF): usa lo strumento di scrittura diretto su Windows. Il rimedio non e' in casa mia — o quella
+  sessione scrive in LF, oppure si apre l'ADR per `company/Memory/** text eol=lf`. Fino ad allora,
+  a ogni blocco: `python .githooks/check_memory.py --fix`.
