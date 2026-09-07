@@ -61,15 +61,22 @@ preziosa dell'intero studio.
 | `armageddon.bsns.it/outemail` · `/outfunnel` · `/outheadline` · `/outviral` | ⬜ mai viste — **tutte e 4 rispondono 200** |
 | `claude-speedrun.com` | 🟡 rapporto vecchio, **CSS/JS mai letti** |
 | `apsales.eu` | 🟡 rapporto vecchio, **CSS/JS mai letti** |
-| `apsales.eu/servizi` · `/landing-page` · `/consulenza` | ⬜ mai viste |
+| `apsales.eu/servizi` · `/landing-page` · `/consulenza` | ✅ catturate 2026-09-07 (rapporto + teardown di copy) |
 
-### T2 — PAGINE CHE VENDONO su Squarespace: studio pieno meno il CSS di framework *(13 pagine)*
+### T2 — PAGINE CHE VENDONO su Squarespace: studio pieno meno il CSS di framework *(~9 pagine)*
 Il loro CSS è Squarespace: ventimila righe che non insegnano niente. Ma lo **schema**, il **copy**,
 la **palette** e gli **effetti scritti a mano** (custom.css) sì.
 
 `/copy` ✅ · `/funnel-operator` ✅ · `/outheadline` ✅ · `/outfunnel` ✅ · `/manuale-del-copywriter` ✅
-· `/outemail` ⬜ · `/outviral` ⬜ · `/vendita` ⬜ · `/asa` ⬜ · `/define` ⬜ · `/mpo2` ⬜ ·
-`/armadeggon-strp` ⬜ · `/outfunnel-1` ⬜
+· `/outemail` 🟡 catturata · `/outviral` 🟡 catturata · `/vendita` 🟡 catturata · `/mpo2` 🟡 catturata
+
+> **⚠️ CORREZIONE DELLA TRIAGE — 2026-09-07, misurata dopo l'Onda B.**
+> Quattro pagine che stavano qui **non vendono niente** e sono state spostate in T3:
+> `/asa` · `/define` · `/armadeggon-strp` · `/outfunnel-1`.
+> Misura: altezza media **1.750 px contro 15.653 px** delle T2 vere, **1 sola sezione**, 28-40
+> blocchi di testo contro 132-259. Erano state classificate leggendo i **nomi**, e i nomi mentono
+> (`/outfunnel-1` sembra la pagina del prodotto outFunnel: è la sua cassa).
+> Rapporto: [`reports/24-25-27-28-macchina-del-funnel.md`](reports/24-25-27-28-macchina-del-funnel.md).
 
 > `custom.css` di Squarespace è pubblico e **scritto da lui**:
 > `static1.squarespace.com/static/custom-css/602126db7a4e4c01fd9babb6/...`
