@@ -56,6 +56,18 @@ Clara read it three times, and the third time she read the last line of the repo
 
 She sat with her hands off the keys.
 
+Then she went back to the archive and searched forward, because a death that goes to a coroner comes back to a newspaper, and it did, on the twenty second of January 1997, on page eleven, in eight lines.
+
+**INQUEST: FENN ABBAS DEATH WAS ACCIDENT**
+
+*The Dorset coroner recorded a verdict of accidental death at the inquest into Miss Ruth Feltham, 22, of Fenn Abbas, who was found in St Botolph's churchyard in November. The court heard that Miss Feltham had suffered a head injury consistent with a fall against a stone kerb. No witnesses were called. The hearing lasted eleven minutes.*
+
+Clara read *no witnesses were called* several times.
+
+She had been in a coroner's court once, professionally, over a water damaged parish record, and she remembered the shape of the day: the usher, the list on the door, the family in the second row. Eleven minutes was not a hearing. Eleven minutes was a filing exercise with a person's name on it.
+
+She looked for a follow up in the weeks after and there was none. Fenn Abbas appeared in the *Echo* four more times before the spring, in connection with a burst main, a planning objection, a fun run, and the rescheduled book fair, which had gone ahead in April and had raised nine hundred and forty pounds for the church roof.
+
 G.A.
 
 She made herself go slowly. She was a person who spent her life being told that a document said something, and finding that it did not; the whole of her professional value was that she did not run ahead of the page. So she wrote it out on paper, in pencil, in her own untidy hand.

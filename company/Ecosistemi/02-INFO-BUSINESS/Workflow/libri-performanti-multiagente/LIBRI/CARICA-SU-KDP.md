@@ -109,7 +109,7 @@ per cui la pagina "Also by" e' vuota su tutti e tre.
 
 ---
 
-## PARTE 3 — I due libri che aspettano solo una copertina
+## PARTE 3 — I quattro libri che aspettano solo una copertina
 
 Verdetto `pubblicabile: false` con **un solo bloccante**: manca l'immagine.
 
@@ -117,6 +117,8 @@ Verdetto `pubblicabile: false` con **un solo bloccante**: manca l'immagine.
 |---|---|---|
 | Proof of Murder | 116 | `LIBRI/libri_pronti/Proof_of_Murder/COPERTINA-PROMPT.md` |
 | The Winter Term | 116 | `LIBRI/libri_pronti/The_Winter_Term/COPERTINA-PROMPT.md` |
+| The Coven of Lost Ember | 118 | `LIBRI/libri_pronti/The_Coven_of_Lost_Ember/COPERTINA-PROMPT.md` |
+| The Midnight Ledger | 118 | `LIBRI/libri_pronti/The_Midnight_Ledger/COPERTINA-PROMPT.md` |
 
 I prompt sono completi: scena, luce, palette, stile, composizione e **il testo del titolo
 lettera per lettera**. Si danno a un generatore di immagini cosi' come sono. Poi:
@@ -124,13 +126,20 @@ lettera per lettera**. Si danno a un generatore di immagini cosi' come sono. Poi
 ```bash
 python -m engine.kdp consegna proof-of-murder --cover <file.png>
 python -m engine.kdp consegna the-winter-term --cover <file.png>
+python -m engine.kdp consegna the-coven-of-lost-ember --cover <file.png>
+python -m engine.kdp consegna the-midnight-ledger --cover <file.png>
 ```
 
 Il codice porta l'immagine a norma KDP (2:3, 1800x2700) **senza riscriverci sopra il titolo**,
 perche' il titolo lo ha gia' disegnato il modello seguendo il prompt. Se l'immagine tornasse
 senza testo, e solo in quel caso, si aggiunge `--scrivi-titolo`.
 
-Dopo la consegna il verdetto diventa `pubblicabile: true` e i due libri entrano nella Parte 1.
+Dopo la consegna il verdetto diventa `pubblicabile: true` e i quattro libri entrano nella Parte 1.
+
+**The Coven of Lost Ember** e **The Midnight Ledger** sono entrambi di Maren Ashcroft e sono la
+stessa famiglia di lettori (cozy con qualcosa sotto). Se se ne carica uno solo, carica il
+secondo entro pochi giorni: su Amazon il secondo titolo dello stesso autore nella stessa
+nicchia e' quello che fa lavorare il primo.
 
 ---
 

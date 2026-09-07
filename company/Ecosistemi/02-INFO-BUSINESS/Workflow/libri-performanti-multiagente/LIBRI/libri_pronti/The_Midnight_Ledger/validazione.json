@@ -1,0 +1,10 @@
+{
+  "pubblicabile": false,
+  "pagine_reali": 118,
+  "bloccanti": [
+    "Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-PROMPT.md, poi: python -m engine.kdp consegna the-midnight-ledger --cover <file.png>"
+  ],
+  "errori": [],
+  "verifiche_non_eseguite": [],
+  "avvisi": []
+}

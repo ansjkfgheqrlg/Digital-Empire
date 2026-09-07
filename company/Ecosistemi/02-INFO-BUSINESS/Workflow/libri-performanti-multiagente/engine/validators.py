@@ -504,6 +504,8 @@ def valida_numerazione_pagine(pdf_path: Path) -> list[str]:
         return [f"VERIFICA A MANO: il PDF non si apre ({type(exc).__name__}), "
                 f"impossibile controllare la posizione dei numeri di pagina."]
     for n, (_testo, parole, h) in enumerate(pagine, start=1):
+        # (corrisponde_esatto, posizione) per ogni cifra nelle fasce di testa o piede.
+        candidati: list[tuple[bool, str]] = []
         for parola in parole:
             testo = (parola.get("text") or "").strip()
             if not testo.isdigit():
@@ -518,11 +520,20 @@ def valida_numerazione_pagine(pdf_path: Path) -> list[str]:
                 continue
             y = parola.get("top", 0)
             if y < h * 0.15:
-                posizioni.append((n, "alto"))
-                break
-            if y > h * 0.85:
-                posizioni.append((n, "basso"))
-                break
+                candidati.append((int(testo) == n, "alto"))
+            elif y > h * 0.85:
+                candidati.append((int(testo) == n, "basso"))
+        if not candidati:
+            continue
+        # UN NUMERO ESATTO BATTE UN NUMERO SOLTANTO VICINO (2026-09-07). Prima si
+        # prendeva il primo candidato e si usciva dal ciclo, quindi una cifra qualsiasi
+        # del testo finita nella fascia di testa vinceva sul numero vero stampato in
+        # fondo. Trovato su The Midnight Ledger: a pagina 24 la riga "the top road takes
+        # 22 minutes at a walk" sta in cima, il numero 24 sta in fondo, e il libro veniva
+        # segnalato per numerazione incoerente. Un avviso che grida al lupo su un libro
+        # sano e' peggio di nessun avviso, perche' insegna a non leggerlo.
+        esatti = [pos for esatto, pos in candidati if esatto]
+        posizioni.append((n, esatti[0] if esatti else candidati[0][1]))
 
     if not posizioni:
         return ["VERIFICA A MANO: nessun numero di pagina rilevato nel PDF."]

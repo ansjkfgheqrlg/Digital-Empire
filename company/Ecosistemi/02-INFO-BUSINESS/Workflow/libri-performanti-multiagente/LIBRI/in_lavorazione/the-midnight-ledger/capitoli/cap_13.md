@@ -10,6 +10,16 @@ She did the top floor, which she had not been into at all. Two attic rooms with 
 
 She did the shop, run by run, taking every book off every shelf, which took two days and which she had already done once looking for pencil.
 
+On the second afternoon she found the only interesting thing the whole search produced, and it was not a ledger. Behind the local history, flat against the back board of the shelf where nobody would meet it except somebody emptying the run, was a shoebox with an elastic band round it.
+
+It held forty one photographs of the inside of the shop, taken on a disposable camera, developed at a chemist in Sherborne, dated by the printer on the back edge: August 1996.
+
+Ruth Feltham was in eleven of them. Behind the counter with her hair up. On the ladder. Pulling a face at whoever had the camera. Sitting on the bottom stair with a mug, in a jumper too big for her, reading something and not looking up.
+
+Clara sat on the floor with the box on her knees for a long time.
+
+They were not hidden the way the strips were hidden. They were only put where you had to be doing something thorough to find them, which was the same thing as being put where he would not come across them by accident, and Clara understood the difference exactly, because she had a drawer of her own like that.
+
 She did the upstairs front room the same way and found nothing but what she had already logged.
 
 And on the Thursday evening she stood in the middle of the shop floor at half past six with dust in her hair and both hands filthy and understood that the ten ledgers were not in this building and had not been in it for some time.

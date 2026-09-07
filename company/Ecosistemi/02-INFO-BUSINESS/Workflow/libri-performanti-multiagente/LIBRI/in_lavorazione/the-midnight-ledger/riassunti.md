@@ -1,13 +1,9 @@
-# Riassunti — The Midnight Ledger
-
 ## Fili aperti
 
-- [cap 01, arco lungo] Perche' Edwin Pryor ha lasciato la libreria a Clara, che non lo ha mai conosciuto. Si chiude al cap 22.
-- [cap 05, arco lungo] Chi mette i libri sul pavimento, e perche' in quel numero e in quella direzione. Si chiude al cap 24.
-- [cap 09, arco lungo] Il reverendo Sayers si e' bloccato sui registri parrocchiali e ha disdetto la vestria. Si chiude al cap 19.
-- [cap 15] La dichiarazione di Hettie Boon del 1996 non e' nel fascicolo e non c'e' traccia di una visita
-- [cap 15] Il biglietto di ritorno del 4.xi.96 contraddice l'alibi firmato di Amory, ma da solo non regge
-- [cap 16] Chi altro sapeva che Ruth aveva una figlia, e chi lo sapeva nel 1996
+- [cap 19, arco lungo] Che cosa rispondera' Amory alla sola domanda che conta. Si chiude al cap 21.
+- [cap 20] L'esumazione e' autorizzata e fissata al 18: cosa dara' il DNA
+- [cap 21] Chi ha versato la benzina, dato che Clara non crede sia stato Amory
+- [cap 22] L'ultima riga del registro, 387, non corrisponde a nessuna pagina trovata
 
 ## Capitoli
 
@@ -90,3 +86,43 @@
 - Succede: Clara va da Wallace Feltham, che riconosce il gradino e capisce da solo il 1991-92; racconta che Edwin si e' presentato ogni 4 novembre per ventinove anni e che l'anno scorso disse che avrebbe messo le cose a posto dopo la propria morte; arriva il certificato integrale: madre Ruth Anne Feltham, padre non dichiarato; nello stesso istante la sala di sopra tace per la prima volta in cinque settimane.
 - Cambia: Clara e' la figlia di Ruth e questo spiega l'eredita'; la casa smette di insistere perche' il messaggio e' arrivato.
 - Resta aperto: perche' Edwin non ando' mai alla polizia in trent'anni.
+
+### cap_17
+- Succede: la casa tace da quando e' arrivato il certificato; Okafor rintraccia Raymond Godsall, l'agente del 1996, che ricorda tutto e riferisce la frase del sergente ("se lo metti a verbale qualcuno deve smentirlo"); Godsall era il primo operatore sulla scena e racconta che al cancello lo aspettava un uomo con le chiavi della chiesa; Amory era sacrestano dal 1994; la nota "13 minutes is not enough time" trova senso nei diciotto minuti prima della chiamata.
+- Cambia: chi ha trovato il corpo diventa una domanda con una risposta; il fascicolo di quattro pagine mostra la sua peggiore lacuna.
+- Resta aperto: dove sono la borsa e il cappotto di Ruth.
+
+### cap_18
+- Succede: il reverendo Sayers confessa di aver trovato due anni fa undici settimane tagliate dal registro dei servizi (7 settembre - 24 novembre 1996) e di averne parlato proprio con Amory; Clara capisce che le pagine non nascondono una notte ma un pattern di undici settimane di movimenti; Sayers porta la copia della richiesta di iscrizione sulla lapide, firmata E. Pryor.
+- Cambia: il taglio del registro diventa un atto deliberato e attribuibile; Edwin ha pagato la lapide e scritto l'iscrizione.
+- Resta aperto: quanto tempo prima che Amory lo sappia.
+
+### cap_19
+- Succede: Amory si presenta di sera prima dell'interrogatorio e ammette la relazione con Ruth durata dieci mesi, la bugia nel verbale del 1996 e la vestria; rifiuta di rispondere sulla notte; dice che Edwin era innamorato di Ruth e che lo sapeva tutta la citta' tranne lei; alla domanda finale di Clara sulla figlia, la sua reazione e' autentica e sconvolta.
+- Cambia: tutti i fatti provabili passano dalla parte di Amory perche' li consegna lui per primo; entra il dubbio che non sia stato lui.
+- Resta aperto: la risposta sulla notte, rinviata a lunedi'.
+
+### cap_20
+- Succede: Okafor porta i quaderni di lavoro della patologa Muriel Enright: frattura compatibile con caduta e ugualmente con una spinta, "cannot exclude", e una gravidanza di ventinove settimane comunicata all'agente presente e mai finita da nessuna parte; Wallace lo scopre a settantasette anni; Clara rilegge il cappotto lasciato al chiodo; Okafor annuncia la richiesta di esumazione, gia' accettata da Wallace.
+- Cambia: la gravidanza diventa il fatto tenuto in serbo e il movente possibile; nasce l'unica strada verso il DNA paterno.
+- Resta aperto: cosa dira' l'interrogatorio del lunedi'.
+
+### cap_21
+- Succede: Amory risponde a tutto per sei ore e ammette ogni fatto provabile prima che gli venga contestato, tranne la borsa e il cappotto; viene rilasciato sotto indagine e la notizia esce sull'Echo; il sabato notte qualcuno versa benzina sotto la porta sul retro, Priya arriva con un estintore e in undici minuti salvano l'edificio; la stanza di sopra resta intatta; Clara dichiara a un vigile del fuoco di non credere che sia stato Amory.
+- Cambia: la stanza sopravvive per undici minuti; la citta' si spacca; Clara si sbilancia su una convinzione senza prove.
+- Resta aperto: chi ha appiccato il fuoco e perche' proprio la stanza sul retro.
+
+### cap_22
+- Succede: arrestano Wallace Feltham, che ha bruciato la camera dove dormiva Edwin per rabbia verso l'uomo che sapeva e taceva; Okafor rimprovera a Clara di aver interpretato invece di osservare; Clara capisce che 387 rimanda ai cinque libri regalati a Hettie il quarto giorno, trova la nota nell'ultimo e, nel piatto posteriore, la lettera di Ruth del 4 novembre 1996 che chiede l'incontro e chiede a Edwin di non rivelare mai l'esistenza della figlia.
+- Cambia: si scopre il perche' del silenzio di trent'anni e il perche' dell'eredita'; la lettera e' l'unico documento scritto da Ruth.
+- Resta aperto: se la prova bastera' a un'accusa.
+
+### cap_23
+- Succede: il 18 dicembre aprono la tomba, con Wallace, quaranta persone in strada e Priya che regala centonove te'; il 9 gennaio il DNA fetale da' un profilo paterno che coincide con Amory; il 22 gennaio lo incriminano per omicidio colposo e intralcio alla giustizia; in febbraio la notaia apre una busta sigillata depositata da Edwin in febbraio 2026, da aprire solo a incriminazione avvenuta, e legge la sua confessione: fu lui a mandarla la' e non ando' alla polizia per la bambina.
+- Cambia: il caso diventa un'accusa formale; Edwin parla per la prima e unica volta con la propria voce.
+- Resta aperto: niente, se non come si vive dopo.
+
+### cap_24
+- Succede: la libreria riapre il primo sabato di marzo con la sala di sopra finalmente in vendita, il laboratorio di restauro avviato e un registro nuovo con la colonna di destra rigata a mano e lasciata vuota; Hettie torna per i suoi libri del venerdi' e si riprende la propria testimonianza; la lampada del cancello risulta ponticellata dall'inverno 1996 e Clara la lascia com'e'; il cappotto grigio resta al secondo chiodo.
+- Cambia: Clara resta, dorme altrove, e trasforma la stanza da nascondiglio a luogo di lavoro.
+- Resta aperto: niente. Il libro chiude.

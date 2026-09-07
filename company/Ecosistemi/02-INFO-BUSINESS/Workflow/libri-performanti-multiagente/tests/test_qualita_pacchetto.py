@@ -703,3 +703,54 @@ def test_un_libro_lungo_abbastanza_passa_ancora(tmp_path, monkeypatch):
 
     esito = gate_blocco.controlla(p)
     assert esito.si_prosegue, esito.blocchi
+
+
+# --------------------------------------------------------------------------- #
+# 13. Numerazione pagine: una cifra del testo non deve battere il numero vero
+#     (2026-09-07, trovato su The Midnight Ledger)
+# --------------------------------------------------------------------------- #
+
+def _pagina_finta(numero_stampato, cifra_nel_corpo=None, altezza=648.0):
+    """Una pagina come la vede pdfplumber: numero in fondo, prosa in cima."""
+    parole = [{"text": "the", "top": 70.0}, {"text": "top", "top": 70.0},
+              {"text": "road", "top": 70.0}]
+    if cifra_nel_corpo is not None:
+        # in cima alla pagina, dentro la fascia di testa (< 15%)
+        parole.append({"text": str(cifra_nel_corpo), "top": 70.8})
+    # il numero VERO, in fondo (> 85%)
+    parole.append({"text": str(numero_stampato), "top": 601.1})
+    return ("testo", parole, altezza)
+
+
+def _valida_numerazione_su(pagine_finte, monkeypatch, tmp_path):
+    pdf = tmp_path / "finto.pdf"
+    pdf.write_bytes(b"%PDF-1.4\n")
+    monkeypatch.setattr(validators, "_pagine_pdf", lambda _p: pagine_finte)
+    return validators.valida_numerazione_pagine(pdf)
+
+
+def test_cifra_del_testo_in_cima_non_falsa_la_numerazione(monkeypatch, tmp_path):
+    """IL difetto del 2026-09-07. Pagina 24 di The Midnight Ledger porta in cima la riga
+    'the top road takes 22 minutes at a walk' e il numero 24 in fondo. Il validatore si
+    fermava alla PRIMA cifra trovata, che era il 22 (dentro la tolleranza di +/-5), e
+    dichiarava numerazione 'in alto' su un libro perfettamente impaginato."""
+    pagine = [_pagina_finta(n) for n in range(1, 24)]
+    pagine.append(_pagina_finta(24, cifra_nel_corpo=22))
+    assert _valida_numerazione_su(pagine, monkeypatch, tmp_path) == []
+
+
+def test_una_pagina_davvero_numerata_in_alto_viene_ancora_segnalata(monkeypatch, tmp_path):
+    """Il controllo deve restare capace di fallire: se il numero e' davvero in testa,
+    si dice. Altrimenti la correzione di sopra avrebbe spento il gate invece di tararlo."""
+    pagine = [_pagina_finta(n) for n in range(1, 10)]
+    pagine.append(("testo", [{"text": "10", "top": 20.0}], 648.0))
+    esito = _valida_numerazione_su(pagine, monkeypatch, tmp_path)
+    assert len(esito) == 1 and "pagina 10" in esito[0] and "'alto'" in esito[0]
+
+
+def test_senza_numero_esatto_si_usa_comunque_il_candidato_vicino(monkeypatch, tmp_path):
+    """La tolleranza di +/-5 esiste per i libri che iniziano a numerare dopo il
+    frontespizio: se NESSUNA cifra coincide con l'indice di pagina, il candidato
+    approssimato resta valido e la posizione si rileva lo stesso."""
+    pagine = [("testo", [{"text": str(n - 3), "top": 601.1}], 648.0) for n in range(4, 12)]
+    assert _valida_numerazione_su(pagine, monkeypatch, tmp_path) == []

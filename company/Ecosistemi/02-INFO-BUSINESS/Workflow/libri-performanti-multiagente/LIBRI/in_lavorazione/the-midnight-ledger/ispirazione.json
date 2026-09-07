@@ -1,0 +1,45 @@
+{
+  "_nota": "Numeri rilevati su Amazon il 2026-09-02, mai stimati. Fonte: LIBRI/magazzino_argomenti.json.",
+  "nicchia": "paranormal bookshop cozy mystery",
+  "recensioni_mediana": 44.0,
+  "recensioni_minime": null,
+  "prezzo_medio": 8.18,
+  "rating_medio": null,
+  "concorrenti_analizzati": 16,
+  "concorrenti_deboli": 9,
+  "punteggio": 83.3,
+  "rilevato_il": "2026-09-02",
+  "titolo_concorrente": "",
+  "autore_concorrente": "",
+  "asin": "",
+  "prezzo_concorrente": null,
+  "recensioni_concorrente": null,
+  "genere": "Cozy mystery",
+  "sottogenere": "paranormale leggero / cold case in libreria",
+  "lettore_tipo": "Donne 35-70, lettrici abituali di cozy mystery britannici. Vogliono un ambiente rassicurante (libreria, paese, cimitero di campagna) e un mistero vero da risolvere. Tollerano il paranormale se resta discreto e non risolve il caso al posto della protagonista. Niente violenza esplicita, niente sesso, niente turpiloquio.",
+  "temi_chiave": [
+    "eredita' da uno sconosciuto",
+    "cold case rimasto aperto per una generazione",
+    "una testimone creduta troppo vecchia",
+    "il mestiere della protagonista come chiave del mistero",
+    "una comunita' piccola che sa e non dice",
+    "lutto per una persona mai conosciuta"
+  ],
+  "stile": "Terza persona limitata, passato, frasi lunghe e piane. Dettaglio concreto del mestiere: piatti, pastedown, colla animale, catalogazione. La prova e' sempre un oggetto che il lettore ha gia' visto.",
+  "tono": "Trattenuto e caldo. La paura viene dall'ordine delle cose (undici libri disposti in arco), non da apparizioni.",
+  "struttura": "24 capitoli, tre atti. Atto 1 l'eredita' e la stanza chiusa, atto 2 il sistema di indicizzazione e la scoperta della madre, atto 3 la ricostruzione probatoria e l'incriminazione.",
+  "cosa_funziona": [
+    "ambientazione libreria: il lettore di nicchia la compra a scatola chiusa",
+    "sottotitolo che dichiara genere e ambiente in quattro parole",
+    "protagonista con un mestiere specifico e verificabile",
+    "prezzo medio 8,18 dollari con 44 recensioni mediane: nicchia calda ma non satura"
+  ],
+  "dove_sono_deboli": [
+    "il fantasma spesso risolve il caso al posto della protagonista, e il mistero muore",
+    "la polizia e' quasi sempre stupida o assente: nessuno scrive un poliziotto competente",
+    "il cold case viene chiuso con una confessione in ultima pagina, mai con una prova",
+    "il paese e' fondale decorativo invece che forza attiva"
+  ],
+  "come_ci_distinguiamo": "La libreria indica e non racconta mai: ogni indizio e' un oggetto fisico che il lettore ha gia' visto, e il paranormale smette nel momento in cui il messaggio arriva, a due terzi del libro. DS Okafor e' competente, ha un budget che scade e insegna alla protagonista a separare osservazione e interpretazione, e la rimprovera quando sbaglia. Il caso non si chiude con una confessione: si chiude con una colla animale datata, un biglietto dell'autobus e un profilo genetico. E l'incendiario non e' l'assassino, e' il padre della vittima.",
+  "scritta_il": "2026-09-07"
+}

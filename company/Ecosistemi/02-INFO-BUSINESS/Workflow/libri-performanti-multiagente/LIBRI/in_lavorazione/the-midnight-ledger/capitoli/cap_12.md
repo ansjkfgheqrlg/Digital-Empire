@@ -40,6 +40,14 @@ Clara put her hand on the cover and did not open it.
 
 "Last Tuesday. For about four minutes and then I shut it because I felt sick." Priya got up and went behind the counter and started making something, with her back turned, which Clara understood was a kindness. "It's just a shop book. That's what makes it horrible."
 
+"Say what you mean."
+
+"I opened it expecting a diary." The milk started up, loud, and Priya let it run. "I don't know what I thought was going to be in there. A confession. Something. And it's *two paperbacks three pounds*, and *nil pm*, and *nil pm*, and *nil pm*, page after page, in beautiful handwriting, and the pages don't stop." She switched the machine off. "There's a stretch in about 2017 where he took nothing at all for nine days running and he wrote nil pm every single evening anyway. He sat down at that counter nine nights in a row to write down that nothing had happened."
+
+"That's the discipline of it."
+
+"That's what I couldn't handle," said Priya. "I don't know what he was doing. But whatever it was, he did it on the ninth night."
+
 Clara opened it.
 
 It was a standard trade ledger, three hundred leaves, printed feint with a date column, a description column, and three money columns, bound in dark green cloth over boards with a red leather label. Edwin Pryor had ruled a fourth column by hand down the right hand side of every single page, in ink, with a straight edge, three hundred leaves of it, and headed it with nothing at all.

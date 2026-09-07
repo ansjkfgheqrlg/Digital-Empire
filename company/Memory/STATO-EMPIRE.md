@@ -5,6 +5,31 @@
 `company/Memory/studi/aitubepro/A6-viral-mastery/`. **Gael/Neri: non toccare questi due percorsi
 finché questo blocco non sparisce.** Rimuovo il blocco al gate A6 chiuso.
 
+## 📕 2026-09-07 — The Midnight Ledger finito (118 pagine, zero avvisi) — CP-20260907-EN82
+
+**TASK-KDP-5LIBRI-W2 e' a 2 libri su 5.** `kdp pacchetto the-midnight-ledger` esce **0 =
+COMPLETO**, 24/24 capitoli, 39.696 parole, **118 pagine reali contate sul PDF**, **zero
+avvisi** in validazione. Nicchia `paranormal bookshop cozy mystery` (83,3 misurato il 02/09),
+quinto titolo coerente sotto Maren Ashcroft. Unico bloccante la copertina, come per gli altri.
+
+⭐ **Difetto corretto in `valida_numerazione_pagine`:** si fermava alla PRIMA cifra utile della
+pagina, quindi una riga di prosa in cima ("the top road takes 22 minutes at a walk") batteva il
+numero vero stampato in fondo, e il validatore segnalava numerazione incoerente su un libro
+impaginato bene. Ora un numero esatto batte un numero soltanto vicino, e la tolleranza ±5 resta
+per chi non ne ha uno esatto. **199 test verdi** (erano 196): uno riproduce il caso, uno
+verifica che il gate sappia **ancora** fallire, uno che la tolleranza regga.
+
+**Stima contro realta':** `config.stima_pagine` diceva 117,7, il PDF ne conta 118. Errore 0,3
+pagine. Su sei libri l'errore massimo resta 1,7. (B-055 resta aperto: `assembla` continua a
+stampare la riga vecchia `@320wpp` che sbaglia di 6 pagine e non blocca nulla.)
+
+**FIX-1 resta il collo di bottiglia dell'intera settimana:** 6 libri pronti, `libri_pubblicati/`
+vuota, 0 ASIN. Kit in `LIBRI/CARICA-SU-KDP.md`, aggiornato a **quattro** libri in attesa della
+sola copertina (Proof of Murder, The Winter Term, The Coven of Lost Ember, The Midnight Ledger).
+
+**RIPRESA DA:** terzo libro dal magazzino (`python -m engine.kdp magazzino --prendi`), stesso
+ciclo. Dettagli: [CP-20260907-EN82](checkpoints/CP-20260907-EN82.md).
+
 ## ⏸️ 2026-09-07 sera — PAUSA su ordine di Max: crediti riservati a Gael — CP-20260907-MUPD
 
 **Codice di ripresa: EMP-W4K7 (APERTA).** Max ha fermato il lavoro a comando ("fermati

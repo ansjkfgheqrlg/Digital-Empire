@@ -33,6 +33,32 @@
       "capitoli": 16,
       "parole": 26043,
       "media_per_capitolo": 1628
+    },
+    {
+      "quando": "2026-09-07T21:24:40",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 39710,
+      "media_per_capitolo": 1655
+    },
+    {
+      "quando": "2026-09-07T21:25:37",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
+      ]
+    },
+    {
+      "quando": "2026-09-07T21:29:15",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
+      ]
     }
   ]
 }
