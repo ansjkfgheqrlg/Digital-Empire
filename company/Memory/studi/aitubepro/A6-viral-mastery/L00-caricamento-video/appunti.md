@@ -6,9 +6,11 @@
 - **Strumento:** YouTube Studio (upload wizard completo, canale monetizzato mostrato dal vivo)
 
 > Il valore non è "come si clicca Crea → Carica" (ovvio): è il **wizard di pubblicazione per
-> intero**, con due tab che il nostro `youtube_uploader_playwright.py` non tocca affatto —
-> l'autocertificazione di idoneità per gli annunci (quasi 4 dei 12 minuti) e tre elementi video
-> mai automatizzati (sottotitoli nativi, schermata finale, schede).
+> intero**, confrontato riga per riga col nostro `youtube_uploader_playwright.py`. L'autocertificazione
+> di idoneità per gli annunci (quasi 4 dei 12 minuti di lezione) **è già automatizzata** — lo
+> scoprivo solo perché ho ricontrollato in inglese dopo un primo grep sbagliato in italiano.
+> Il delta vero sono **tre elementi video mai automatizzati**: sottotitoli nativi, schermata
+> finale, schede — verificati assenti in entrambe le lingue, non per una singola stringa mancata.
 
 ---
 
@@ -33,10 +35,14 @@ stesso**, applicata per abitudine.
 
 `frame-131.png @ 4:20` — tab **Monetizzazione**: tre tipi di annuncio (Display, **Annunci video
 ignorabili** ✓, **Annunci video non ignorabili**) e tre posizionamenti (prima/durante/dopo il
-video). Nel frame entrambi gli "annunci video" risultano selezionati. **Il nostro
-`ads_on_after_upload()` non passa da qui**: attiva "Watch Page ads & YouTube Premium" da una
-pagina separata (`/monetization/ads`) **dopo** l'upload — un controllo diverso, non lo stesso
-toggle. Non verificato se i due percorsi convergano sullo stesso stato finale.
+video). Nel frame entrambi gli "annunci video" risultano selezionati. **Sono due controlli reali
+distinti, ed entrambi già automatizzati da noi**, in due punti diversi: il dropdown "Monetization
+On/Off" del wizard (`_gestisci_step_monetization`, riga 48 — sceglie "On", regola permanente di
+Max 2026-09-03) e il toggle separato "Watch Page ads & YouTube Premium" (`ads_on_after_upload`,
+riga 225, chiamato **dopo** l'upload perché Google lo lascia spento di default anche a
+monetizzazione On — bug reale trovato il 2026-09-03). Non lo stesso controllo del tipo/posizione
+annunci mostrato qui a schermo (quello resta ai default YouTube), ma zero delta sulla sostanza:
+il video guadagna in entrambi i casi.
 
 ## 04:20 — 08:20 · ⭐ Idoneità per gli annunci — l'autocertificazione che non facciamo mai
 
@@ -62,10 +68,12 @@ Parlato (08:06): *"se il vostro video rispecchia [...] tutti questi aspetti, dob
 nessuno dei contenuti precedenti [...] da questo momento il [...] youtube va a valutare se il mio
 video può essere realmente o no monetizzato."* — l'autocertificazione è quindi **un prerequisito
 dichiarato dal docente per la valutazione di monetizzazione**, non un passo opzionale.
-**Il nostro uploader non apre mai questa tab** (verificato per grep sul codice, non solo per
-assenza dal parlato — vedi report §2). Non sappiamo se YouTube tratti "mai compilata" come
-equivalente a "nessuno dei contenuti" o come uno stato diverso: è una vera domanda aperta, non
-un'ipotesi da cui partire.
+**Correzione a un mio primo controllo sbagliato:** avevo grep-ato solo in italiano e concluso
+"non gestito" — falso. `youtube_uploader_playwright.py:129-138` (`_gestisci_step_monetization`)
+lo gestisce **in inglese** (la UI Studio automatizzata è in EN): rileva `"Inappropriate
+language"` (prima categoria del questionario, la stessa vista a schermo qui) e clicca `"None of
+the above"` — **esattamente la stessa mossa mostrata dal docente**, automatizzata. Zero delta su
+questo punto, verificato leggendo il codice per intero, non per assenza di una singola stringa.
 
 ## 08:20 — 09:38 · Elementi video: sottotitoli, schermata finale, schede
 
