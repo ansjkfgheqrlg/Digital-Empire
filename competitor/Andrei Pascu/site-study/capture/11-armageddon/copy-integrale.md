@@ -1,15 +1,43 @@
 # Copy integrale — Armageddon — outEmail, outFunnel, outHeadline, outViral a 199€
-**URL:** https://armageddon.bsns.it/
-**Altezza pagina:** 5103px  ·  **Blocchi testuali:** 57
+**URL:** https://armageddon.bsns.it/  ·  **Catturato:** 2026-09-07  ·  **Costruzione:** artigianale
+**Altezza:** 5103px  ·  **Blocchi:** 53  ·  **Sezioni:** 4 (4 distinte)
 
-> Ogni riga: `[y=posizione verticale px] <tag> (colore / dimensione / peso)` poi il testo esatto.
-> Estratto dal DOM renderizzato, nessuna parola riscritta.
+> Ogni riga: `[y] <tag> (colore / corpo / peso)` poi il testo esatto.
+> Il testo dei paragrafi e' RICOMPOSTO coi figli in linea (fix B-057): niente buchi.
 
 ---
+
+**[y=0] `div`** — #ffffff / 16px / w400
+
+BSNS.IT
+
+  *in grassetto/link dentro:* BSNS.IT
+
+**[y=26] `a`** — #0000ee / 16px / w400 → `https://bsns.it`
+
+BSNS.IT
 
 **[y=35] `span`** — #ffffff @0.78 / 13.92px / w800 / uppercase
 
 BSNS.IT
+
+**[y=86] `h1`** — #ffffff / 32px / w400
+
+Armageddon Armageddon is here
+
+  *in grassetto/link dentro:* Armageddon · Armageddon · is here
+
+**[y=146] `span`** — #bc0807 / 191.616px / w400
+
+Armageddon
+
+  *in grassetto/link dentro:* Armageddon
+
+**[y=683] `span`** — #bc0807 / 194.4px / w400
+
+is here
+
+  *in grassetto/link dentro:* is here
 
 **[y=1067] `p`** — #ffffff / 94.08px / w400
 
@@ -27,41 +55,65 @@ COMPRA
 
 COSA INCLUDE?
 
+**[y=3099] `div`** — #ffffff / 16px / w400
+
+03 GIORNI 15 ORE 54 MINUTI 36 SECONDI
+
+**[y=3099] `span`** — #ffffff / 16px / w400
+
+03 GIORNI
+
 **[y=3099] `span`** — #ffffff / 28.3203px / w800
 
-04
-
-**[y=3099] `span`** — #ffffff / 28.3203px / w800
-
-17
-
-**[y=3099] `span`** — #ffffff / 28.3203px / w800
-
-11
+03
 
 **[y=3198] `span`** — #ffffff @0.5 / 12px / w700 / uppercase
 
 GIORNI
 
+**[y=3099] `span`** — #ffffff / 16px / w400
+
+15 ORE
+
+**[y=3099] `span`** — #ffffff / 28.3203px / w800
+
+15
+
 **[y=3198] `span`** — #ffffff @0.5 / 12px / w700 / uppercase
 
 ORE
+
+**[y=3099] `span`** — #ffffff / 16px / w400
+
+54 MINUTI
+
+**[y=3099] `span`** — #ffffff / 28.3203px / w800
+
+54
 
 **[y=3198] `span`** — #ffffff @0.5 / 12px / w700 / uppercase
 
 MINUTI
 
+**[y=3099] `span`** — #ffffff / 16px / w400
+
+36 SECONDI
+
+**[y=3099] `span`** — #ffffff / 28.3203px / w800
+
+36
+
 **[y=3198] `span`** — #ffffff @0.5 / 12px / w700 / uppercase
 
 SECONDI
 
-**[y=3264] `span`** — #bc0807 / 81.6px / w400
-
-€585
-
 **[y=3265] `p`** — #ffffff / 81.6px / w400
 
 Risparmi €585
+
+**[y=3264] `span`** — #bc0807 / 81.6px / w400
+
+€585
 
 **[y=3364] `p`** — #ffffff @0.55 / 14.88px / w400
 
@@ -75,17 +127,41 @@ Risparmi €585
 
 €199
 
+**[y=3526] `li`** — #ffffff / 16px / w400
+
+outEmail
+
+  *in grassetto/link dentro:* outEmail
+
 **[y=3529] `a`** — #ffffff / 59.52px / w400 → `/outemail`
 
 outEmail
+
+**[y=3603] `li`** — #ffffff / 16px / w400
+
+outFunnel
+
+  *in grassetto/link dentro:* outFunnel
 
 **[y=3606] `a`** — #ffffff / 59.52px / w400 → `/outfunnel`
 
 outFunnel
 
+**[y=3680] `li`** — #ffffff / 16px / w400
+
+outHeadline
+
+  *in grassetto/link dentro:* outHeadline
+
 **[y=3683] `a`** — #ffffff / 59.52px / w400 → `/outheadline`
 
 outHeadline
+
+**[y=3757] `li`** — #ffffff / 16px / w400
+
+outViral
+
+  *in grassetto/link dentro:* outViral
 
 **[y=3760] `a`** — #ffffff / 59.52px / w400 → `/outviral`
 
@@ -95,133 +171,59 @@ outViral
 
 Domande
 
-**[y=4065] `p`** — #ffffff @0.76 / 16.512px / w400
+**[y=3993] `summary`** — #ffffff / 19.008px / w700
 
-Quattro corsi completi — , , e — più un da usare su Funnel Operator quando esce. Presi singolarmente sono 784€. Il pacchetto costa 199€.
+Cosa ricevo esattamente con l’Armageddon Pack?
 
-**[y=4068] `strong`** — #ffffff / 16.512px / w700
+**[y=4066] `summary`** — #ffffff / 19.008px / w700
 
-outEmail
+Fino a quando posso comprarlo a 199€?
 
-**[y=4068] `strong`** — #ffffff / 16.512px / w700
+**[y=4140] `summary`** — #ffffff / 19.008px / w700
 
-outFunnel
+Come e quando ricevo l’accesso?
 
-**[y=4068] `strong`** — #ffffff / 16.512px / w700
+**[y=4214] `summary`** — #ffffff / 19.008px / w700
 
-outHeadline
+Come funziona il voucher da 199€ su Funnel Operator?
 
-**[y=4068] `strong`** — #ffffff / 16.512px / w700
+**[y=4287] `summary`** — #ffffff / 19.008px / w700
 
-outViral 2
+outFunnel e Funnel Operator sono lo stesso corso?
 
-**[y=4068] `strong`** — #ffffff / 16.512px / w700
+**[y=4361] `summary`** — #ffffff / 19.008px / w700
 
-voucher da 199€
+Sono già dentro Funnel Operator. Ha senso comprarlo?
 
-**[y=4139] `p`** — #ffffff @0.76 / 16.512px / w400
+**[y=4435] `summary`** — #ffffff / 19.008px / w700
 
-Fino a : l’offerta chiude a mezzanotte fra il 10 e l’11, ora italiana. È quello che conta il timer qui sopra. Dopo quel momento questa pagina non vende più il pacchetto: i corsi tornano ai loro prezzi singoli e il voucher su Funnel Operator non viene più emesso.
+Ho già uno dei quattro corsi. Posso pagare meno?
 
-**[y=4142] `strong`** — #ffffff / 16.512px / w700
+**[y=4508] `summary`** — #ffffff / 19.008px / w700
 
-giovedì 10 settembre compreso
+Come si paga?
 
-**[y=4213] `p`** — #ffffff @0.76 / 16.512px / w400
+**[y=4582] `summary`** — #ffffff / 19.008px / w700
 
-Subito dopo il pagamento, , all’indirizzo che inserisci alla cassa. Usa un indirizzo che leggi davvero e controlla lo spam: quella email è il tuo accesso.
+Posso pagare a rate?
 
-**[y=4216] `strong`** — #ffffff / 16.512px / w700
+**[y=4656] `summary`** — #ffffff / 19.008px / w700
 
-via email
+Mi garantite dei risultati?
 
-**[y=4286] `p`** — #ffffff @0.76 / 16.512px / w400
+**[y=4729] `summary`** — #ffffff / 19.008px / w700
 
-È uno , da usare al lancio. Vale una volta sola e solo su Funnel Operator: non è denaro, non si incassa, non si divide su più acquisti e non si passa a un’altra persona. Se decidi di non comprare Funnel Operator, il voucher semplicemente non lo usi — non diventa un rimborso.
-
-**[y=4289] `strong`** — #ffffff / 16.512px / w700
-
-sconto di 199€ sul prezzo di Funnel Operator
-
-**[y=4360] `p`** — #ffffff @0.76 / 16.512px / w400
-
-, e il nome simile confonde. è uno dei quattro corsi che compri qui dentro: il videocorso sulla strategia di un funnel. è il programma nuovo, quello che esce dopo questa promo, e nel pacchetto: da qui ti porti il voucher da 199€ da usare su Funnel Operator al lancio.
-
-**[y=4363] `strong`** — #ffffff / 16.512px / w700
-
-No, sono due prodotti diversi
-
-**[y=4363] `strong`** — #ffffff / 16.512px / w700
-
-outFunnel
-
-**[y=4390] `strong`** — #ffffff / 16.512px / w700
-
-Funnel Operator
-
-**[y=4418] `strong`** — #ffffff / 16.512px / w700
-
-non è incluso
-
-**[y=4434] `p`** — #ffffff @0.76 / 16.512px / w400
-
-Sì, puoi comprarlo, ma compralo , non per il voucher. Chi è già dentro Funnel Operator riceve di Funnel Operator: non c’è niente da scontare, quindi il voucher non ti serve e . Nessuno ti deve niente su quella parte, ed è giusto tu lo sappia prima di pagare.
-
-**[y=4437] `strong`** — #ffffff / 16.512px / w700
-
-per i quattro corsi
-
-**[y=4464] `strong`** — #ffffff / 16.512px / w700
-
-gratis la prossima versione
-
-**[y=4491] `strong`** — #ffffff / 16.512px / w700
-
-non viene convertito in credito, sconto o rimborso
-
-**[y=4507] `p`** — #ffffff @0.76 / 16.512px / w400
-
-No. Il pacchetto si compra intero, a 199€, ed è l’unico modo di comprarlo: non si toglie un corso, non si compra un pezzo per conto suo e non c’è uno sconto per quello che possiedi già. Se ne hai già uno, stai pagando 199€ per gli altri tre più il voucher — fai tu il conto prima di comprare.
-
-**[y=4581] `p`** — #ffffff @0.76 / 16.512px / w400
-
-con carta, gestito da Stripe. Non è un abbonamento: non ci sono rinnovi e non c’è niente da disdire. I dati della carta li prende Stripe sulla sua pagina, non questo sito: qui non c’è nessun modulo e non passa nessun numero di carta.
-
-**[y=4584] `strong`** — #ffffff / 16.512px / w700
-
-Un pagamento unico
-
-**[y=4655] `p`** — #ffffff @0.76 / 16.512px / w400
-
-Sì. Scegli alla cassa e lo paghi a rate. Anche in certi casi lo permette, ma quello dipende da loro e dal tuo account: Klarna è la strada sicura.
-
-**[y=4658] `strong`** — #ffffff / 16.512px / w700
-
-Klarna
-
-**[y=4658] `strong`** — #ffffff / 16.512px / w700
-
-PayPal
-
-**[y=4728] `p`** — #ffffff @0.76 / 16.512px / w400
-
-Qui dentro ci sono i metodi che Andrei usa sul suo lavoro e sui suoi clienti, spiegati passo passo. Cosa ne tiri fuori dipende da cosa vendi, da quanto ci lavori e dal tuo punto di partenza. I risultati mostrati sono i suoi e non sono la norma. Leggi la nota qui sotto: dice la stessa cosa, per esteso.
-
-**[y=4731] `strong`** — #ffffff / 16.512px / w700
-
-No, e diffida di chi lo fa.
-
-**[y=4802] `p`** — #ffffff @0.76 / 16.512px / w400
-
-Scrivi a , oppure rispondi direttamente all’email che ricevi dopo l’acquisto: quella ha già dentro il tuo ordine, quindi è la strada più corta. Se non ti è arrivata niente entro pochi minuti, guarda nello spam prima di ricomprare — non pagare due volte.
-
-**[y=4805] `a`** — #0000ee / 16.512px / w400 → `mailto:help@apsales.eu`
-
-help@apsales.eu
+Ho un problema con l’accesso. A chi scrivo?
 
 **[y=4872] `p`** — #ffffff @0.42 / 12px / w400
 
 Questo sito e i consigli contenuti al suo interno sono opinioni personali a scopo educativo basate sull’esperienza di Andrei Pascu. I suoi risultati non sono tipici e i tuoi potrebbero variare in base a esperienza, effort, situazione economica e generale contesto. Andrei Pascu e i suoi collaboratori non fanno e non trattano argomenti come crypto, personal finance, fiscalità, risorse umane, recruiting, network marketing o in genere metodi di arricchimento veloce.
+
+**[y=4991] `p`** — #ffffff @0.42 / 12px / w400
+
+Privacy, dati, cookie e simili
+
+  *in grassetto/link dentro:* Privacy, dati, cookie e simili
 
 **[y=4993] `a`** — #ffffff @0.62 / 12px / w400 → `https://www.andrei-copy.com/privacy-dati-cookie-simili`
 

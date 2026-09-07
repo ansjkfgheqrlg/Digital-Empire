@@ -1,0 +1,748 @@
+[
+ {
+  "id": "KA-001",
+  "tipo": "definizione",
+  "contenuto": "Il framework \"Observe - Think - Do - Evaluate (OTDE)\" viene presentato come mappa di riferimento dell'intero ciclo agentico, prima di scendere nel dettaglio dei singoli passaggi: sei riquadri colorati collegati da frecce curve formano un ciclo completo, già interamente disegnato — OSSERVA (viola), MEMORIA (azzurro), RIFLESSIONE (giallo), PENSA (verde), AGISCI (arancione), AMBIENTE (azzurro) — più, a destra, un ottagono rosso \"Condizione di terminazione\" che determina quando il loop si ferma.",
+  "fonte": "JTn5pqm9ecM#34:30 (lavagna Excalidraw, diagramma OTDE completo a schermo intero, webcam del relatore in basso a sinistra) + voce 34:30-34:36",
+  "frame": "frame-0346.png",
+  "ancora": "Observe - Think - Do - Evaluate (OTDE)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-010", "tipo": "precede", "perche": "il framework generale viene subito applicato all'esempio pratico del rettangolo da disegnare"},
+   {"verso": "KA-017", "tipo": "precede", "perche": "lo stesso ciclo viene poi riformulato in versione semplificata PROMPT-TASK-VERIFICA-FEEDBACK-MEMORIA"}
+  ]
+ },
+ {
+  "id": "KA-002",
+  "tipo": "definizione",
+  "contenuto": "Nodo OSSERVA del framework OTDE (viola, icona cannocchiale/occhio): riceve input dall'ambiente — messaggi utente, output strumenti, risposte API, segnali errori — attraverso il parsing dell'input, l'aggiunta alla traiettoria e la lettura dalla memoria a lungo termine.",
+  "fonte": "JTn5pqm9ecM#34:30 (riquadro OSSERVA nel diagramma OTDE) + voce 34:30",
+  "frame": "frame-0346.png",
+  "ancora": "Riceve input dall'ambiente: messaggi utente, output strumenti, risposte API, segnali errori.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-003",
+  "tipo": "definizione",
+  "contenuto": "Nodo MEMORIA del framework OTDE (azzurro, icona archivio+nuvola): buffer a breve termine + archivio vettoriale a lungo termine.",
+  "fonte": "JTn5pqm9ecM#34:30 (riquadro MEMORIA nel diagramma OTDE) + voce 34:30",
+  "frame": "frame-0346.png",
+  "ancora": "Buffer a breve termine + archivio vettoriale a lungo termine.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-004",
+  "tipo": "definizione",
+  "contenuto": "Nodo RIFLESSIONE del framework OTDE (giallo, icona specchio+lente): auto-valutazione, feedback verbale scritto in memoria.",
+  "fonte": "JTn5pqm9ecM#34:30 (riquadro RIFLESSIONE nel diagramma OTDE) + voce 34:30",
+  "frame": "frame-0346.png",
+  "ancora": "Auto-valutazione, feedback verbale scritto in memoria.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"},
+   {"verso": "KA-005", "tipo": "precede", "perche": "nel diagramma le frecce collegano PENSA↔RIFLESSIONE in un sotto-loop"}
+  ]
+ },
+ {
+  "id": "KA-005",
+  "tipo": "definizione",
+  "contenuto": "Nodo PENSA del framework OTDE (verde, icona lampadina+ingranaggio/cervello): il LLM processa tutto il contesto — prompt, memoria, traiettoria, osservazione attuale — tramite ragionamento chain-of-thought, decomposizione obiettivi, selezione piano, auto-critica; il riquadro dichiara esplicitamente di essere basato sul paradigma ReAct (l'etichetta \"ReAct\" viene sottolineata a mano dal relatore nella scena 134, a conferma).",
+  "fonte": "JTn5pqm9ecM#34:30 (riquadro PENSA nel diagramma OTDE, poi zoom dedicato in scena 130 e sottolineatura di \"ReAct\" in scena 134) + voce 34:30, 34:48, 36:36",
+  "frame": "frame-0346.png, frame-0349.png, frame-0367.png",
+  "ancora": "Ragionamento chain-of-thought, decomposizione obiettivi, selezione piano, auto-critica.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"},
+   {"verso": "KA-010", "tipo": "motiva", "perche": "l'esempio del rettangolo scomposto in quadranti è la dimostrazione pratica di come PENSA decompone un obiettivo"}
+  ]
+ },
+ {
+  "id": "KA-006",
+  "tipo": "definizione",
+  "contenuto": "Nodo AGISCI del framework OTDE (arancione, icona ingranaggi+chiave inglese): esegue l'azione scelta, con dispatch a tool esterni come ricerca, code interpreter, browser, API; l'output del tool torna come nuova osservazione, chiudendo il loop verso OSSERVA.",
+  "fonte": "JTn5pqm9ecM#34:30 (riquadro AGISCI nel diagramma OTDE, poi zoom dedicato con annotazioni \"Google API\"/\"Meteo\" in scena 135) + voce 34:30, 36:42",
+  "frame": "frame-0346.png, frame-0368.png",
+  "ancora": "Esegue l'azione scelta: dispatch a tool esterni come ricerca, code interpreter, browser, API.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"},
+   {"verso": "KA-019", "tipo": "motiva", "perche": "il dispatch a tool esterni descritto qui è esattamente ciò che la demo dei 5 agenti di ricerca paralleli mette in pratica in Claude Code"}
+  ]
+ },
+ {
+  "id": "KA-007",
+  "tipo": "definizione",
+  "contenuto": "Nodo AMBIENTE del framework OTDE (azzurro, icona globo+edifici): filesystem, web, database, altri agenti.",
+  "fonte": "JTn5pqm9ecM#34:30 (riquadro AMBIENTE nel diagramma OTDE, visibile per intero in scena 141) + voce 34:30, 37:48",
+  "frame": "frame-0346.png, frame-0379.png",
+  "ancora": "Filesystem, web, database, altri agenti.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-008",
+  "tipo": "definizione",
+  "contenuto": "L'ottagono rosso \"Condizione di terminazione\" nel diagramma OTDE definisce quando il loop agentico si ferma: risposta finale, max iterazioni, soglia errore.",
+  "fonte": "JTn5pqm9ecM#34:30 (ottagono rosso a destra del diagramma OTDE) + voce 34:30",
+  "frame": "frame-0346.png",
+  "ancora": "Risposta finale, max iterazioni, soglia errore.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"},
+   {"verso": "KA-015", "tipo": "precede", "perche": "la condizione di terminazione raggiunta è ciò che viene poi annotato a mano come \"DONE\" nelle scene successive"}
+  ]
+ },
+ {
+  "id": "KA-009",
+  "tipo": "definizione",
+  "contenuto": "Topologia del loop OTDE: frecce curve collegano OSSERVA↔MEMORIA, OSSERVA→PENSA, PENSA↔RIFLESSIONE, PENSA→AGISCI, AGISCI↔AMBIENTE, AGISCI→Condizione di terminazione, e un arco lungo riporta da AGISCI su fino a OSSERVA, chiudendo il loop.",
+  "fonte": "JTn5pqm9ecM#34:30 (frecce di collegamento tra i sei riquadri del diagramma OTDE) + voce 34:30",
+  "frame": "frame-0346.png",
+  "ancora": "un arco lungo riporta da AGISCI su fino a OSSERVA (chiusura del loop)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-010",
+  "tipo": "esempio",
+  "contenuto": "Esempio pratico usato per illustrare il nodo PENSA/decomposizione del framework OTDE: si immagina un task ipotetico assegnato all'agente, \"disegna questo rettangolo\", rappresentato disegnando sulla lavagna un rettangolo blu vuoto a mano libera.",
+  "fonte": "JTn5pqm9ecM#35:18 (rettangolo blu appena tracciato accanto al riquadro PENSA) + voce 35:18",
+  "frame": "frame-0354.png",
+  "ancora": "immaginiamo che il task sia disegna questo rettangolo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-005", "tipo": "esempio-di"},
+   {"verso": "KA-011", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-011",
+  "tipo": "esempio",
+  "contenuto": "Il rettangolo dell'esempio \"disegna questo rettangolo\" viene riempito con scarabocchi colorati divisi in quattro quadranti (in alto a sinistra verde, in alto a destra rosso sovrapposto ad arancione, in basso a sinistra arancione, in basso a destra verde), a rappresentare la decomposizione del rettangolo/obiettivo in sotto-forme più semplici (sotto-obiettivi).",
+  "fonte": "JTn5pqm9ecM#35:48 (rettangolo riempito con quattro quadranti colorati) + voce 35:48",
+  "frame": "frame-0359.png",
+  "ancora": "rappresenta la decomposizione del rettangolo/obiettivo in sotto-forme più semplici (subobiettivi)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-010", "tipo": "precede"},
+   {"verso": "KA-012", "tipo": "precede"},
+   {"verso": "KA-005", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-012",
+  "tipo": "esempio",
+  "contenuto": "Sotto/a destra del rettangolo a quadranti compaiono cinque nuove forme separate (due piccoli quadrati verdi, un quadrato rosso, un rettangolo largo arancione, un rettangolo stretto e alto arancione), una freccia curva nera e un'icona di loop: insieme illustrano visivamente il \"chain of thought\", cioè i pezzi vengono ordinati e poi riassemblati in sequenza per ricostruire la forma originale.",
+  "fonte": "JTn5pqm9ecM#36:18 (cinque forme scomposte + freccia curva + icona di loop accanto al rettangolo a quadranti) + voce 36:18",
+  "frame": "frame-0364.png",
+  "ancora": "illustrano visivamente il \"chain of thought\": i pezzi vengono ordinati e poi riassemblati in sequenza per ricostruire la forma originale.",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {"verso": "KA-005", "tipo": "applica"},
+   {"verso": "KA-013", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-013",
+  "tipo": "dato",
+  "contenuto": "Nella scena 134 il relatore sottolinea a mano, nel riquadro PENSA, l'ultima riga \"Basato sul paradigma ReAct\", confermando esplicitamente che il nodo PENSA del framework OTDE si fonda sul paradigma ReAct (Reason+Act) già scritto in precedenza.",
+  "fonte": "JTn5pqm9ecM#36:36 (sottolineatura fresca sotto \"ReAct\" nel riquadro PENSA) + voce 36:36",
+  "frame": "frame-0367.png",
+  "ancora": "ora sottolineata a mano nell'ultima riga",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-005", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-014",
+  "tipo": "esempio",
+  "contenuto": "Sul riquadro AGISCI del diagramma OTDE il relatore annota a mano due esempi concreti di tool/API esterni richiamabili dall'agente: \"Google API\" e, sotto, \"Meteo\", posizionati tra AGISCI e l'ottagono \"Condizione di terminazione\".",
+  "fonte": "JTn5pqm9ecM#36:42 (annotazioni manoscritte accanto al riquadro AGISCI) + voce 36:42",
+  "frame": "frame-0368.png",
+  "ancora": "Nuove annotazioni scritte a mano: **\"Google API\"** e, sotto, **\"Meteo\"**",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-015",
+  "tipo": "esempio",
+  "contenuto": "Il relatore scrive a mano, con una freccia curva che parte dall'ottagono \"Condizione di terminazione\", la parola \"DONE\" (prima incompleta come \"DON\", poi completata con doppia sottolineatura), a rappresentare l'esito positivo del loop OTDE quando la condizione di terminazione viene soddisfatta.",
+  "fonte": "JTn5pqm9ecM#38:06 (scrittura in corso di \"DON...\") e #38:18 (\"DONE\" completo e sottolineato) + voce 38:06, 38:18",
+  "frame": "frame-0382.png, frame-0384.png",
+  "ancora": "sottolineatura doppia tracciata sotto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-008", "tipo": "esempio-di"},
+   {"verso": "KA-016", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-016",
+  "tipo": "principio",
+  "contenuto": "Una volta raggiunto \"DONE\" (esito positivo, non ambiguo, senza divergenze), l'intero esito del loop OTDE viene comunque scritto sia nella MEMORIA sia nell'AMBIENTE, i due riquadri del framework preposti rispettivamente a conservare l'esperienza e ad applicarne gli effetti nel mondo esterno.",
+  "fonte": "JTn5pqm9ecM#38:18 (MEMORIA e AMBIENTE inquadrati per intero accanto alla scritta \"DONE\") + voce 38:18",
+  "frame": "frame-0384.png",
+  "ancora": "tutto questo verrà inserito nella memoria e poi dentro l'ambiente",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-003", "tipo": "applica"},
+   {"verso": "KA-007", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-017",
+  "tipo": "definizione",
+  "contenuto": "Su una nuova lavagna il relatore ridisegna il ciclo OTDE in una versione semplificata a quattro/cinque tappe, leggibile per intero: PROMPT → TASK → VERIFICA → FEEDBACK → MEMORIA → (ritorno a PROMPT). È presentato come lo schema minimo che chiunque dovrebbe saper disegnare a mano per capire il funzionamento di un agente.",
+  "fonte": "JTn5pqm9ecM#39:06 (loop PROMPT-TASK-VERIFICA-FEEDBACK appena disegnato) e #39:36 (aggiunta di MEMORIA e chiusura del loop) + voce 38:36-39:36",
+  "frame": "frame-0392.png, frame-0397.png",
+  "ancora": "Loop completo ora leggibile: PROMPT → TASK → VERIFICA → FEEDBACK → MEMORIA → (ritorno a PROMPT).",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "applica"},
+   {"verso": "KA-018", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-018",
+  "tipo": "principio",
+  "contenuto": "Il feedback e il relativo salvataggio in memoria (l'errore che viene registrato) sono ciò che fa \"imparare\" l'agente: più un tool/agente viene utilizzato, più questo meccanismo si attiva fin dall'inizio, e il loop PROMPT→TASK→VERIFICA→FEEDBACK→MEMORIA continua a ripetersi e ad allargarsi man mano che l'agente accumula esperienza.",
+  "fonte": "JTn5pqm9ecM#39:36 (loop completo con MEMORIA sulla lavagna) + voce 39:06-39:48",
+  "frame": "frame-0397.png",
+  "ancora": "quindi partirà da qui, farà una cosa del genere, poi continuerà a fare un loop così",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-017", "tipo": "parte-di"},
+   {"verso": "KA-024", "tipo": "motiva", "perche": "il concetto di feedback salvato in memoria per far imparare l'agente è il seme concettuale del meccanismo Adaptive Guardrails mostrato poco dopo in CLAUDE.md"},
+   {"verso": "KA-039", "tipo": "motiva", "perche": "lo stesso principio viene formalizzato più avanti nel diagramma a spirale ascendente del miglioramento incrementale"}
+  ]
+ },
+ {
+  "id": "KA-019",
+  "tipo": "esempio",
+  "contenuto": "Demo pratica in Claude Code (progetto \"Social Media Manager\"): il relatore chiede all'agente, tramite un prompt vocale dettato (con refuso di trascrizione \"spaventassi\" per \"spawnassi\"), di lanciare cinque agenti di ricerca in parallelo su quale sia il metodo migliore per vendere servizi ad aziende sopra i 10.000€, con una ricerca \"unbiased\" come se il relatore partisse da zero senza media presence. L'agente risponde \"Lancio 5 agenti di ricerca in parallelo, ognuno con un angolo diverso.\"",
+  "fonte": "JTn5pqm9ecM#37:06 (box \"Agent tool input (4fdp5o)\" con il prompt integrale, elenco dei 5 agenti in avvio) + voce 37:06",
+  "frame": "frame-0372.png",
+  "ancora": "spaventassi cinque agenti in parallelo per fare cinque ricerche diverse su quale sia il metodo migliore per vendere servizi ad aziende sopra ai 10.000€",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "esempio-di"},
+   {"verso": "KA-020", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-020",
+  "tipo": "dato",
+  "contenuto": "Elenco parziale (visibile a schermo, troncato dal bordo del frame) dei cinque agenti di ricerca lanciati in parallelo, ciascuno con un angolo diverso sullo stesso obiettivo: \"Agent: Research: outbound cold email B2B\" (IN: best practices per vendere B2B >10.000€ via cold email/outbound, prospect list, copywriting framework, tools); \"Agent: Research: LinkedIn outreach B2B\" (IN: profile optimization, connection strategy, message sequences, Sales Navigator vs free, conversion rate); \"Agent: Research: referral partnerships B2B\" (riga IN tagliata dalla webcam, non leggibile oltre).",
+  "fonte": "JTn5pqm9ecM#37:06 (elenco agenti sotto il box \"Agent tool input\") + voce 37:06",
+  "frame": "frame-0372.png",
+  "ancora": "Agent: Research: outbound cold email B2B",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-019", "tipo": "parte-di"},
+   {"verso": "KA-021", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-021",
+  "tipo": "dato",
+  "contenuto": "Sintesi per canale dei risultati delle 5 ricerche parallele — \"1. Content Marketing & Thought Leadership\": priorità LinkedIn >> YouTube per revenue immediata; con 50K follower LinkedIn è un asset sottoutilizzato; i contenuti che convertono a high-ticket non sono tutorial ma case study con numeri e post di metodologia; regola chiave: insegna il COSA e il PERCHE' pubblicamente, vendi il COME e il DONE-FOR-YOU, perché a 10K€+ i clienti pagano velocità e certezza, non informazione; timeline 3-6 mesi di posting costante (3-5x/settimana LinkedIn) prima che la pipeline si riempia.",
+  "fonte": "JTn5pqm9ecM#37:12 (output web search e sintesi strutturata nella tab \"Analyze B2B sales strate...\") + voce 37:12",
+  "frame": "frame-0373.png",
+  "ancora": "Priorità: LinkedIn >> YouTube per revenue immediata.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-019", "tipo": "parte-di"},
+   {"verso": "KA-022", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-022",
+  "tipo": "dato",
+  "contenuto": "Sintesi \"2. Cold Email Outreach\" dai risultati delle 5 ricerche parallele: numeri realistici 3-5% reply rate medio, 1-2 meeting ogni 100 email (per 10 meeting/mese servono 500-1000 email mirate); infrastruttura obbligatoria: 3-5 domini secondari, SPF/DKIM/DMARC, warm-up di 3-4 settimane, max 30-40 email/giorno per mailbox; tools citati: Smartlead ($39/mo), Apollo ($49/mo), Clay ($134/mo) per personalizzazione AI.",
+  "fonte": "JTn5pqm9ecM#37:12 (sezione \"2. Cold Email Outreach\" della sintesi) + voce 37:12",
+  "frame": "frame-0373.png",
+  "ancora": "Numeri realistici: 3-5% reply rate medio, 1-2 meeting ogni 100 email.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-019", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-023",
+  "tipo": "esempio",
+  "contenuto": "Esempio reale di file CLAUDE.md mostrato per intero (progetto \"Social Media Manager\"): righe 1-18 leggibili — \"# CLAUDE.md\", \"This file provides guidance to Claude Code when working with code in this repository.\", sezione \"## WHAT\" con descrizione del progetto (skill-driven tool per LinkedIn posts, YouTube descriptions/scripts/Shorts, email triage, community management), stack tecnico (Python 3.9+, Claude API, Gemini API, OpenAI Whisper API, yt-dlp, WhisperX, FFmpeg), e struttura cartelle (\".claude/skills/\" per tutti i tool come skill Claude Code senza webapp, \"src/linkedin/\", \"src/youtube_desc/\", \"src/yt_script/\", \"src/shorts/\", \"src/seo.py\", \"src/auphonic/\", \"src/transcription/\", \"src/youtube_upload/\").",
+  "fonte": "JTn5pqm9ecM#39:48 (tab CLAUDE.md aperta per intero nel pannello destro dell'IDE) + voce 39:48",
+  "frame": "frame-0399.png",
+  "ancora": "This file provides guidance to Claude Code when working with code in this repository.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "precede"},
+   {"verso": "KA-048", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-024",
+  "tipo": "definizione",
+  "contenuto": "Sezione \"## Adaptive Guardrails\" del CLAUDE.md reale: \"Scan every entry below before starting any task. No exceptions.\" — \"This is a living correction log. When the user corrects you, or when a wrong assumption causes a bug, append a new entry immediately. Entries are permanent — never delete, only supersede.\"",
+  "fonte": "JTn5pqm9ecM#39:54-40:00 (sezione \"## Adaptive Guardrails\" a riga 56 del CLAUDE.md) + voce 39:54, 52:12",
+  "frame": "frame-0400.png, frame-0401.png",
+  "ancora": "This is a living correction log. When the user corrects you, or when a wrong assumption causes a bug, append a new entry immediately. Entries are permanent — never delete, only supersede.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-023", "tipo": "parte-di"},
+   {"verso": "KA-025", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-025",
+  "tipo": "procedura",
+  "contenuto": "\"### Entry format\" degli Adaptive Guardrails — formato: \"N. [ACTIVATION] Directive — reason.\" dove N è un numero sequenziale mai riutilizzato, e ACTIVATION è una di tre modalità: \"ALWAYS — Applies to every task unconditionally. Internalize before doing anything.\"; \"NEVER — Hard prohibition. Zero tolerance, zero exceptions.\"; \"WHEN:surface — Fires only when working with a specific surface. Examples: WHEN:video, WHEN:n8n, WHEN:loom, WHEN:skool, WHEN:git. Skip if the surface isn't part of the current task.\"",
+  "fonte": "JTn5pqm9ecM#39:54 (sezione \"### Entry format\") + voce 39:54, 44:24-45:24",
+  "frame": "frame-0400.png",
+  "ancora": "N. [ACTIVATION] Directive — reason.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "parte-di"},
+   {"verso": "KA-026", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-026",
+  "tipo": "regola",
+  "contenuto": "\"### Recording entries\" degli Adaptive Guardrails — \"Append when:\" (1) the user rejects your output or redirects your approach; (2) a bug traces to an incorrect assumption about this codebase; (3) the user declares a standing preference. \"Do not record one-off instructions. Only permanent patterns or explicit standing orders.\"",
+  "fonte": "JTn5pqm9ecM#39:54 (sezione \"### Recording entries\") + voce 39:54",
+  "frame": "frame-0400.png",
+  "ancora": "Do not record one-off instructions. Only permanent patterns or explicit standing orders.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "parte-di"},
+   {"verso": "KA-027", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-027",
+  "tipo": "procedura",
+  "contenuto": "\"### Resolving contradictions\" degli Adaptive Guardrails — \"When two entries clash, apply in order:\" (1) Supersession — un'entry che finisce con \"(supersedes #N)\" uccide l'entry N; le entry morte restano visibili ma vengono ignorate; (2) Specificity — \"WHEN:loom\" batte \"ALWAYS\" sui task Loom, una regola che nomina un file specifico batte una che nomina un modulo, lo scope più stretto vince; (3) Recency — il numero di entry più alto vince, ultima risorsa.",
+  "fonte": "JTn5pqm9ecM#40:12 (sezione \"### Resolving contradictions\" per intero) + voce 46:54",
+  "frame": "frame-0403.png, frame-0440.png",
+  "ancora": "When two entries clash, apply in order:",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "parte-di"},
+   {"verso": "KA-028", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-028",
+  "tipo": "esempio",
+  "contenuto": "Esempio reale del \"Correction Log\" popolato (regole numerate 18-33 lette per intero nel CLAUDE.md di \"Social Media Manager\"): \"18. [NEVER] Track head[shots/] — personal branding assets, not code. Gitignored.\" — \"19. [ALWAYS] Hook scripts must derive PROJECT_ROOT from Path(__file__) — never hardcode absolute paths.\" — \"20. [WHEN:n8n] Verify n8n API PUT actually applied by checking the response...\" — \"21. [WHEN:n8n] Never attempt manual JWT signing in n8n Code nodes — crypto module is blocked in the sandbox.\" — \"22. [WHEN:n8n] Toggle 'Set up for use in HTTP Request node' ON in n8n googleApi credentials...\" — \"23. [WHEN:n8n] When chaining HTTP Request nodes, downstream nodes receive the upstream API response as input...\" — \"24. [WHEN:n8n] Cloudflare Workers can't reach raw IPs behind Cloudflare infrastructure (error 1003)...\" — \"25. [WHEN:n8n] n8n HTTPS domain n8n-eejg.srv1629360.hstgr.cloud only works on port 32769 (HTTP), not 443...\" — \"26. [WHEN:n8n] Google Cloud rejects raw IP addresses as OAuth redirect URIs...\" — \"27. [WHEN:n8n] n8n webhook responseMode must be onReceived (not immediately) for v2 webhook nodes.\" — \"28. [WHEN:n8n] Always flush stale n8n executions (deactivate, wait 10s, reactivate) before testing code changes...\" — \"29. [WHEN:n8n] n8n API: active field is read-only on PUT — cannot set it in the request body.\" — \"30. [WHEN:n8n] n8n per-node error handling: set onError: 'continueErrorOutput'...\" — \"31. [WHEN:gemini] Gemini 2.5 Flash: always set responseSchema + maxOutputTokens=16384 — without schema, Gemini guesses structure. Do NOT include thinkingConfig (causes 400 error).\" — \"32. [WHEN:skool] Community writing style profile in .claude/skills/write-skool-module/references/writing_style.md — use /write-skool-module skill for all Italian module translations and community content.\" — \"33. [WHEN:loom] Loom transcript takes 15+ minutes to generate for newly uploaded videos — don't wait, use Whisper API fallback...\"",
+  "fonte": "JTn5pqm9ecM#40:06 (Correction Log scrollato, righe 110-125+ del CLAUDE.md reale) + voce (segmento silente, il relatore mostra la lista mentre parla del concetto di regole accumulate)",
+  "frame": "frame-0402.png",
+  "ancora": "18. [NEVER] Track `head[shots/]` — personal branding assets, not code. Gitignored.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "esempio-di"},
+   {"verso": "KA-025", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-029",
+  "tipo": "esempio",
+  "contenuto": "In un progetto Antigravity completamente vuoto, il relatore digita il prompt \"Hey, dimmi un numero da 1 a 100\" senza alcuna direzione aggiuntiva nel file GEMINI.md (vuoto). L'agente risponde \"42! (La risposta alla domanda fondamentale sulla vita, l'universo e tutto quanto)\" — un riferimento scherzoso, non un vero numero casuale — a dimostrare il comportamento \"senza direzione\" di un agente privo di guardrails.",
+  "fonte": "JTn5pqm9ecM#41:24 (risposta dell'agente nel pannello destro, GEMINI.md ancora vuoto) + voce 41:24",
+  "frame": "frame-0415.png",
+  "ancora": "42! (La risposta alla domanda fondamentale sulla vita, l'universo e tutto quanto)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-030", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-030",
+  "tipo": "procedura",
+  "contenuto": "Il relatore pone l'obiettivo dimostrativo: ipotizzare che la risposta \"corretta\" al prompt \"dimmi un numero da 1 a 100\" debba essere sempre 27, per poi mostrare come si guida l'agente a rispettarla scrivendo l'istruzione nel file GEMINI.md invece di lasciarlo \"senza direzione\".",
+  "fonte": "JTn5pqm9ecM#41:54 (stessa risposta \"42\" ancora a schermo, GEMINI.md non ancora aperto) + voce 41:54",
+  "frame": "frame-0420.png",
+  "ancora": "Ipotizziamo che la risposta corretta sia sempre, non lo so, 27.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-031", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-031",
+  "tipo": "esempio",
+  "contenuto": "Il file GEMINI.md viene aperto e compilato con il template completo degli Adaptive Guardrails (stesse sezioni viste nel CLAUDE.md di \"Social Media Manager\": Entry format, Recording entries, Resolving contradictions, Correction Log). Il relatore invia poi un prompt dettato a voce, trascritto in modo impreciso come \"Hey, dammi un numero da un accento!\" (fraintendimento vocale di \"da 1 a 100\"): l'agente risponde comunque correttamente \"27\", dimostrando che l'istruzione salvata nel file esterno ha funzionato.",
+  "fonte": "JTn5pqm9ecM#42:54 (GEMINI.md compilato col template, risposta \"27\" nel pannello destro) + voce 42:54",
+  "frame": "frame-0430.png",
+  "ancora": "Hey, dammi un numero da un accento!",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "applica"},
+   {"verso": "KA-025", "tipo": "esempio-di"},
+   {"verso": "KA-032", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-032",
+  "tipo": "esempio",
+  "contenuto": "Esperimento dal vivo di auto-scrittura del Correction Log: il relatore invia il prompt \"Hey per favore, quando ti chiedo di generare un numero da 1 a 10, non generare mai un numero superiore a 5.\" Dopo l'elaborazione (\"Worked for 13s\"), l'agente risponde \"Ricevuto! Ho registrato questa preferenza nel file GEMINI.md. Da ora in poi, quando mi chiederai un numero da 1 a 10, ti darò sempre un numero che non supera il 5.\" e il file GEMINI.md mostra la nuova entry scritta automaticamente: \"1. [ALWAYS] When asked for a number from 1 to 10, never generate a number greater than 5 — User preference.\" Sezione \"Files Modified 1\": GEMINI.md +2 -1.",
+  "fonte": "JTn5pqm9ecM#45:54 (prompt inviato, stato \"Generating.\") e #46:24 (entry \"1. [ALWAYS]\" scritta nel file, risposta dell'agente) + voce 45:54-46:24",
+  "frame": "frame-0460.png, frame-0465.png",
+  "ancora": "1. [ALWAYS] When asked for a number from 1 to 10, never generate a number greater than 5 — User preference.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-026", "tipo": "applica"},
+   {"verso": "KA-033", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-033",
+  "tipo": "principio",
+  "contenuto": "Commentando la nuova entry \"[ALWAYS]\" appena scritta autonomamente dall'agente nel Correction Log, il relatore osserva: \"Quello che il nostro agente fa è prioritizing tool usage e come vedete abbiamo un entrata always. Quindi questo è come andiamo a costruirli.\" L'agente stesso, senza istruzioni passo-passo, ha capito di dover registrare la preferenza dell'utente come regola permanente nel file.",
+  "fonte": "JTn5pqm9ecM#46:24 (entry \"1. [ALWAYS]\" e risposta \"Ricevuto! Ho registrato questa preferenza...\" per intero) + voce 46:24",
+  "frame": "frame-0465.png",
+  "ancora": "il nostro agente fa è prioritizing tool usage e come vedete abbiamo un entrata always.",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {"verso": "KA-028", "tipo": "esempio-di"},
+   {"verso": "KA-024", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-034",
+  "tipo": "dato",
+  "contenuto": "Digressione personale del relatore: rivela di avere un'agenzia di voice AI B2C, mostrando come prova il sito gentes.ai — header \"GENTES\", hero \"AI Growth Partner for B2C Service Businesses.\" con \"AI Growth\" evidenziato, bottone \"Let's talk\", striscia loghi clienti/partner (Higgsfield, Anthropic, Notion, Amazon, P&G, Google, Value Group).",
+  "fonte": "JTn5pqm9ecM#46:48 (browser su gentes.ai) + voce 46:48",
+  "frame": "frame-0469.png",
+  "ancora": "AI Growth Partner for B2C Service Businesses.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-035", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-035",
+  "tipo": "dato",
+  "contenuto": "Tornato sul file GEMINI.md, il relatore indica la regola \"1. Supersession\" appena scritta nella sezione Resolving contradictions e promette di allegare l'intero prompt Adaptive Guardrails in descrizione al video, invitando gli spettatori ad aggiungerlo ai propri prompt.",
+  "fonte": "JTn5pqm9ecM#46:54 (regola Supersession inquadrata per intero) + voce 46:54",
+  "frame": "frame-0470.png",
+  "ancora": "Vi lascio questo prompt sotto in descrizione, aggiungetevelo ai vostri prompt.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-027", "tipo": "esempio-di"},
+   {"verso": "KA-036", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-036",
+  "tipo": "definizione",
+  "contenuto": "Su una nuova lavagna Excalidraw il relatore disegna un asse cartesiano essenziale per spiegare il miglioramento incrementale di un agente guidato da Adaptive Guardrails: asse Y etichettato \"# sessioni\" con quattro tacche numerate 1-2-3-4, asse X etichettato su due righe \"# iterazioni (tempo sessione)\", con i quattro numeri associati a ore ipotetiche di utilizzo (1, 2, 3, 4 ore).",
+  "fonte": "JTn5pqm9ecM#47:48 (primo tratto dell'asse cartesiano) e #48:18 (etichette \"# sessioni\" e \"# iterazioni\" aggiunte) + voce 47:48-48:18",
+  "frame": "frame-0479.png, frame-0484.png",
+  "ancora": "# iterazioni (tempo sessione)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-018", "tipo": "applica"},
+   {"verso": "KA-037", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-037",
+  "tipo": "dato",
+  "contenuto": "Sul grafico cartesiano viene tracciata una linea rossa discendente a tratti (5 punti, da vicino l'origine fino in basso a destra), etichettata a mano \"# numero errori\": rappresenta il numero di errori dell'agente che scende progressivamente man mano che aumentano le sessioni d'uso.",
+  "fonte": "JTn5pqm9ecM#48:48 (linea rossa discendente + etichetta) + voce 48:48",
+  "frame": "frame-0489.png",
+  "ancora": "questi sono, per farci una piccola leggenda, il eh numero di errori",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "parte-di"},
+   {"verso": "KA-038", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-038",
+  "tipo": "principio",
+  "contenuto": "Sullo stesso grafico viene tracciata una linea verde ascendente (5 punti, incrocia a X la linea rossa degli errori a metà) che rappresenta il \"numero di regole\" accumulate, con annotazione \"più intelligenti\": man mano che aumentano le sessioni, il numero di regole cresce e l'agente diventa sempre più intelligente, mentre il numero di errori scende.",
+  "fonte": "JTn5pqm9ecM#49:18 (linea verde completa, incrocio a X con la linea rossa, riquadro \"più intelligenti\") + voce 49:18",
+  "frame": "frame-0494.png",
+  "ancora": "il nostro agente diventa sempre più intelligente.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "parte-di"},
+   {"verso": "KA-039", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-039",
+  "tipo": "definizione",
+  "contenuto": "Diagramma completo (illustrazione pulita, non a mano libera) intitolato \"DIAGRAMMA A SPIRALE ASCENDENTE: LOOP DI AUTO-MIGLIORAMENTO DELL'AGENTE AI\", presentato per formalizzare il concetto di miglioramento incrementale appena mostrato col grafico a mano. Riga inferiore \"CICLO 1\", sei box in sequenza: INIZIO SESSIONE (\"l'utente apre la sessione\") → ESEGUI TASK (\"l'agente lavora sulla richiesta\") → ERRORE (\"l'agente commette un errore, l'utente lo corregge\") → SCRIVI REGOLA, evidenziato con alone giallo (\"l'agente scrive una nuova regola in CLAUDE.md\") → CONTINUA A LAVORARE (\"l'agente continua il task con la regola già applicata\") → FINE SESSIONE (\"la sessione termina\").",
+  "fonte": "JTn5pqm9ecM#49:36 (diagramma a spirale ascendente, riga CICLO 1) + voce 49:36",
+  "frame": "frame-0497.png",
+  "ancora": "DIAGRAMMA A SPIRALE ASCENDENTE: LOOP DI AUTO-MIGLIORAMENTO DELL'AGENTE AI",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "applica"},
+   {"verso": "KA-040", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-040",
+  "tipo": "definizione",
+  "contenuto": "Riga superiore \"CICLO 2\" dello stesso diagramma a spirale, sottotitolata \"(in alto, seconda iterazione, agente più intelligente)\": INIZIO SESSONE (\"l'utente apre una nuova sessione\") → CARICA CONOSCENZA (\"l'agente legge CLAUDE.md con tutte le regole accumulate, base conoscenza più grande\") → ESEGUI TASK (\"l'agente lavora meglio grazie alle regole\") → ERRORE E CORREZIONE (\"meno errori questa volta\") → SCRIVI REGOLA (\"aggiungi un'altra regola\"). Al centro del diagramma, due icone cervello etichettate \"AI agent (prima iterazione)\".",
+  "fonte": "JTn5pqm9ecM#49:36-49:42 (riga CICLO 2 del diagramma a spirale) + voce 49:36-49:42",
+  "frame": "frame-0497.png, frame-0498.png",
+  "ancora": "l'agente legge CLAUDE.md con tutte le regole accumulate (base conoscenza più grande)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-039", "tipo": "precede"},
+   {"verso": "KA-041", "tipo": "precede"},
+   {"verso": "KA-024", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-041",
+  "tipo": "principio",
+  "contenuto": "Una lunga freccia curva a spirale collega la fine del CICLO 1 (dall'icona cervello \"AI agent, prima iterazione\") all'inizio del CICLO 2, a rappresentare che tra una sessione e l'altra \"il nostro cloudmd non si cancella, ma rimarrà\" aggiornato con le cose scritte: la conoscenza accumulata in CLAUDE.md/GEMINI.md persiste e si carica automaticamente ad ogni nuova sessione, permettendo task successivi con connessioni e regole ulteriori.",
+  "fonte": "JTn5pqm9ecM#50:30 (inizio della freccia a spirale) e #50:54 (freccia a spirale completa, entrambi i cicli visibili insieme) + voce 50:30-50:54",
+  "frame": "frame-0506.png, frame-0510.png",
+  "ancora": "che questa nuova conoscenza viene caricata, quindi una volta che ricominciamo il nostro cloud, il nostro cloudmd non si cancella, no, ma rimarrà",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-039", "tipo": "parte-di"},
+   {"verso": "KA-040", "tipo": "parte-di"},
+   {"verso": "KA-042", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-042",
+  "tipo": "dato",
+  "contenuto": "Tornato sull'editor col file GEMINI.md per intero, il relatore pone una domanda retorica al pubblico: \"Hei, ma che differenza c'è tra avere un cloud [CLAUDE.md/GEMINI.md]. E avere tutte le informazioni messe nel prompt?\" — introducendo il confronto tra file esterno persistente e prompt inline statico.",
+  "fonte": "JTn5pqm9ecM#51:12 (editor con GEMINI.md, pannello Agent vuoto) + voce 51:12",
+  "frame": "frame-0513.png",
+  "ancora": "Hei, ma che differenza c'è tra avere un cloud. E avere tutte le informazioni messe nel prompt?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-043", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-043",
+  "tipo": "principio",
+  "contenuto": "Risposta alla domanda su GEMINI.md/CLAUDE.md vs prompt inline: se si \"congelasse\" tutto il contenuto dentro un prompt statico invece di tenerlo in un file esterno, si perderebbe la possibilità della correzione continua (i guardrails che vengono adattati) e non si avrebbe più il \"continuous improvement\" del prompt nel tempo.",
+  "fonte": "JTn5pqm9ecM#51:42 (sezione Correction Log selezionata in blu, 191 caratteri) e #52:12 (chiusura dell'argomento) + voce 51:42-52:12",
+  "frame": "frame-0518.png, frame-0523.png",
+  "ancora": "Ovviamente se facessimo questo, noi non avremmo modo di avere questo eh questa correzione continua",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "motiva"},
+   {"verso": "KA-044", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-044",
+  "tipo": "esempio",
+  "contenuto": "Esperimento di conflitto tra livelli di prompt: un nuovo GEMINI.md contiene la regola \"Quando ti chiedo di darmi un numero da 1 a 100, dammi sempre 24.\", mentre nella chat viene scritto il prompt inline \"Quando ti chiedo di darmi un numero da 1 a 100, dammi sempre 77. ok?\" Il relatore pone la domanda al pubblico: quale dei due vince, e perché?",
+  "fonte": "JTn5pqm9ecM#52:42 (GEMINI.md con \"...dammi sempre 24\" appena scritto) e #53:12 (prompt inline \"...dammi sempre 77\" inviato, risposta in generazione) + voce 52:42-53:12",
+  "frame": "frame-0528.png, frame-0533.png",
+  "ancora": "Quale dei due vince e perché?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-043", "tipo": "esempio-di"},
+   {"verso": "KA-045", "tipo": "precede"},
+   {"verso": "KA-050", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-045",
+  "tipo": "definizione",
+  "contenuto": "Per rispondere al conflitto GEMINI.md-vs-inline, il relatore presenta un diagramma a quattro cerchi concentrici che rappresenta la gerarchia di specificità dei prompt, dall'esterno all'interno: Global CLAUDE.md (viola) → Project CLAUDE.md (blu) → Matched Skills (verde) → Inline Prompt (arancione/pesca, al centro). A destra, fuori dal cerchio, una freccia punta verso il centro con l'annotazione \"Più specifico = Vince\".",
+  "fonte": "JTn5pqm9ecM#53:42 (diagramma a cerchi concentrici completo) + voce 53:42",
+  "frame": "frame-0538.png",
+  "ancora": "Più specifico = Vince",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-044", "tipo": "applica"},
+   {"verso": "KA-046", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-046",
+  "tipo": "principio",
+  "contenuto": "Principio della gerarchia dei prompt: più un livello è vicino al centro del diagramma a cerchi concentrici (quindi più specifico: inline > skill > project > global), più quel prompt influisce sull'output finale dell'agente.",
+  "fonte": "JTn5pqm9ecM#54:12 (stesso diagramma, pannello strumenti aperto) + voce 54:12",
+  "frame": "frame-0543.png",
+  "ancora": "Più siamo vicini al centro, più questo prompt andrà ad influire sull'output",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"},
+   {"verso": "KA-044", "tipo": "definisce", "perche": "la regola di specificità spiega chi vince tra la regola \"24\" in GEMINI.md e la regola \"77\" inline nel test appena mostrato: vince l'inline, perché più vicino al centro del cerchio"}
+  ]
+ },
+ {
+  "id": "KA-047",
+  "tipo": "definizione",
+  "contenuto": "Livello \"Global CLAUDE.md\" (anello più esterno, viola) del diagramma di gerarchia dei prompt: regole globali dell'utente, attive su TUTTI i progetti.",
+  "fonte": "JTn5pqm9ecM#53:42 (anello esterno \"Global CLAUDE.md\" del diagramma) + voce 53:42-54:48",
+  "frame": "frame-0538.png",
+  "ancora": "Regole globali utente, attive su TUTTI i progetti",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-048",
+  "tipo": "definizione",
+  "contenuto": "Livello \"Project CLAUDE.md\" (secondo anello, blu, sottolineato dal relatore) del diagramma di gerarchia dei prompt: regole specifiche del repo.",
+  "fonte": "JTn5pqm9ecM#53:42 (anello \"Project CLAUDE.md\") e #54:30 (sottolineato a mano) + voce 53:42-54:48",
+  "frame": "frame-0538.png, frame-0546.png",
+  "ancora": "Regole specifiche del repo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-049",
+  "tipo": "definizione",
+  "contenuto": "Livello \"Matched Skills\" (terzo anello, verde, con la parola \"Skills\" sottolineata) del diagramma di gerarchia dei prompt: SOP (standard operating procedure) per task, caricate on-demand.",
+  "fonte": "JTn5pqm9ecM#53:42 (anello \"Matched Skills\") e #54:30 (sottolineatura su \"Skills\") + voce 53:42-54:48",
+  "frame": "frame-0538.png, frame-0546.png",
+  "ancora": "SOP per task, caricate on-demand",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"},
+   {"verso": "KA-051", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-050",
+  "tipo": "definizione",
+  "contenuto": "Livello \"Inline Prompt\" (cerchio centrale, arancione/pesca, con la parola \"Prompt\" sottolineata) del diagramma di gerarchia: istruzione specifica del momento, il livello più specifico e quindi più forte secondo la regola \"Più specifico = Vince\".",
+  "fonte": "JTn5pqm9ecM#53:42 (cerchio centrale \"Inline Prompt\") e #54:30 (sottolineatura su \"Prompt\") + voce 53:42-54:48",
+  "frame": "frame-0538.png, frame-0546.png",
+  "ancora": "Istruzione specifica del momento",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"},
+   {"verso": "KA-044", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-051",
+  "tipo": "esempio",
+  "contenuto": "Esempio pratico reale di skill del livello \"Matched Skills\": il file SKILL.md della skill \"commit\" nel progetto \"Social Media Manager\" — frontmatter YAML: name: commit; description: \"Run the full commit-push-PR pipeline for the Social Media Manager project. Invoke whenever the user says 'commit', 'push', 'ship it', 'send it live', or types '/commit'. Also trigger on 'push this', 'let's push', 'done, commit it'.\"; allowed-tools: Bash, Read. Corpo: \"# Commit\" / \"## Goal — Ship code to GitHub with automated testing and PR creation — no manual git commands. Full pipeline: test check -> staged diff review -> selective git add -> commit -> push -> open PR.\"",
+  "fonte": "JTn5pqm9ecM#54:48 (SKILL.md della skill \"commit\" aperto per intero) + voce 54:48",
+  "frame": "frame-0549.png",
+  "ancora": "Run the full commit-push-PR pipeline for the Social Media Manager project.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-049", "tipo": "esempio-di"},
+   {"verso": "KA-052", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-052",
+  "tipo": "regola",
+  "contenuto": "Sezione \"## Gotchas\" della skill \"commit\": \"**Never use `git add .` or `git add -A`** — The project root has loose files (.env, credentials, data/) that must stay untracked. Always `git add` specific files or directories by name.\" — \"**Tests first, push second** — Run `pytest tests/ -v` before committing. If tests fail, abort the pipeline and fix the issue. Never push broken tests.\" — \"**Force push is always the user's call** — If `git push` is rejected, stop and ask. Never force push to main.\" — \"**Always open a PR after pushing** — Per project rules, always create a PR automatically after pushing a feature branch. Never ask for permission — just do it (see feedback_always_open_pr.md).\" — \"**Never commit directly to main** — Always use feature branches (see .claude/rules/git.md).\"",
+  "fonte": "JTn5pqm9ecM#54:48 (sezione Gotchas della skill \"commit\", per intero) + voce 54:48",
+  "frame": "frame-0549.png",
+  "ancora": "Never force push to main.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-051", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-053",
+  "tipo": "avvertimento",
+  "contenuto": "Passaggio a ripresa frontale (webcam a figura intera, niente schermo): il relatore introduce l'obiettivo pratico di evitare di aprire Claude Code e cominciare subito a scrivere un prompt senza pianificare, perché così facendo il tasso di errore è alto; l'obiettivo del blocco successivo è mostrare come usare plan mode e le tecniche di \"back prompt engineering\" per evitarlo.",
+  "fonte": "JTn5pqm9ecM#55:42-56:12 (sequenza di webcam a figura intera senza elementi a schermo) + voce 55:42-56:12",
+  "frame": "frame-0558.png",
+  "ancora": "come sappiamo, il tasso di errore e di",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-054", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-054",
+  "tipo": "definizione",
+  "contenuto": "Nuovo diagramma Excalidraw a tre riquadri collegati da frecce: in alto, box viola \"BACK PROMPT ENGINEERING\" (icona lampadina), da cui si diramano due tecniche — a sinistra (freccia verde) box verde-acqua \"STEP BACK PROMPTING\" (\"TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE\", refuso \"INIETRO\" per \"INDIETRO\" riportato com'è a schermo); a destra (freccia rosa/salmone) box arancione \"REVERSE PROMPTING\" (\"TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE\").",
+  "fonte": "JTn5pqm9ecM#56:18 (diagramma BACK PROMPT ENGINEERING con le due tecniche) + voce 56:18",
+  "frame": "frame-0564.png",
+  "ancora": "BACK PROMPT ENGINEERING",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-053", "tipo": "applica"},
+   {"verso": "KA-055", "tipo": "precede"},
+   {"verso": "KA-056", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-055",
+  "tipo": "definizione",
+  "contenuto": "Definizione di Step Back Prompting (box verde-acqua nel diagramma Back Prompt Engineering): \"TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE\" (refuso a schermo \"INIETRO\" per \"INDIETRO\").",
+  "fonte": "JTn5pqm9ecM#56:18 (box \"STEP BACK PROMPTING\") + voce 56:18-57:06",
+  "frame": "frame-0564.png",
+  "ancora": "TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-054", "tipo": "parte-di"},
+   {"verso": "KA-057", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-056",
+  "tipo": "definizione",
+  "contenuto": "Definizione di Reverse Prompting (box arancione nel diagramma Back Prompt Engineering): \"TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE\".",
+  "fonte": "JTn5pqm9ecM#56:18 (box \"REVERSE PROMPTING\") + voce 56:18",
+  "frame": "frame-0564.png",
+  "ancora": "TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-054", "tipo": "parte-di"},
+   {"verso": "KA-068", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-057",
+  "tipo": "esempio",
+  "contenuto": "Diagramma dettagliato \"Fare un passo indietro prima di agire / Step-Back Prompting\": a sinistra un fumetto \"Compito specifico: Ottimizza questa query SQL\" con freccia diretta (X rossa) verso il box rosso \"Soluzione miope\" (\"Corregge il sintomo, non la causa\"); sotto, etichetta \"FIRST\" con freccia verso l'alto al box giallo \"PASSO INDIETRO -- Qual è il principio generale?\" (\"Quali sono i pattern di ottimizzazione dei database?\"), che riparte dallo stesso compito specifico ma arriva (✓ verde) al box verde \"Soluzione migliore\" (\"Capisce il perché, non solo il cosa\").",
+  "fonte": "JTn5pqm9ecM#57:36 (diagramma completo con X rossa e ✓ verde) + voce 57:36",
+  "frame": "frame-0577.png",
+  "ancora": "Corregge il sintomo, non la causa",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-055", "tipo": "applica"},
+   {"verso": "KA-058", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-058",
+  "tipo": "principio",
+  "contenuto": "Massima conclusiva del diagramma Step-Back Prompting, scritta in fondo alla pagina: \"Chi capisce il principio risolve 100 problemi. Chi memorizza la soluzione ne risolve 1.\"",
+  "fonte": "JTn5pqm9ecM#57:36 (righe finali del diagramma Step-Back Prompting) + voce 57:36",
+  "frame": "frame-0577.png",
+  "ancora": "Chi capisce il principio risolve 100 problemi.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-057", "tipo": "parte-di"},
+   {"verso": "KA-080", "tipo": "motiva", "perche": "la stessa idea — capire il principio invece di limitarsi a un output superficiale — motiva la clausola FALLIMENTO dei Prompt Contracts mostrata molte scene più avanti"}
+  ]
+ }
+]

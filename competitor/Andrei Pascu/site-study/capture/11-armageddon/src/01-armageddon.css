@@ -1,0 +1,1021 @@
+/* fonte: https://armageddon.bsns.it/assets/armageddon.css */
+/* ==========================================================================
+   Armageddon — the homepage.
+
+   Built to Andrei's mockup, `docs/homepage-design/full-page-mockup.pdf`.
+   Every number below is a fraction of `--u`, the design column, read off that
+   file: the mockup is 826.46 units wide and 2851.92 tall, so `.7631` means
+   "76.31% of the design width" and the whole page keeps its proportions at any
+   size. Do not round them by eye — re-measure the PDF instead.
+
+   `assets/brand.css` does not govern this page. His design has rounded
+   buttons, a red palette and a numeric counter; CLAUDE.md §4 says his design
+   wins here.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Curseyt";
+  src: url("/assets/fonts/curseyt.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block; /* the blackletter IS the design — no swap flash */
+}
+
+:root {
+  --red: #bc0807; /* his, sampled out of the mockup */
+  --ink: #fff;
+  --ease-heavy: cubic-bezier(0.65, 0, 0.25, 1); /* slow off the mark, slow into place */
+  --ease-land: cubic-bezier(0.16, 0.86, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #000;
+  -webkit-text-size-adjust: 100%;
+  /* No default scroller. Styling it turns off macOS overlay scrollbars, so
+     the gutter is reserved up front and nothing shifts when it appears. The
+     page measures itself in container units, which already exclude it. */
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--red) #0b0b0b;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0b0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border: 3px solid #0b0b0b;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e50c0a;
+}
+
+::-webkit-scrollbar-corner {
+  background: #0b0b0b;
+}
+
+html.is-modal {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip; /* clip, not hidden: hidden would make body a scroller */
+}
+
+/* The design column. Everything on the page is a fraction of it, so the whole
+   composition scales as one. Container units so a desktop scrollbar cannot
+   push the page sideways; vw is the fallback. The dialog is a sibling of
+   `.page`, so it is given the same tokens. */
+.page,
+.incl {
+  --u: min(100vw, 960px);
+  --col: calc(50% - var(--u) / 2); /* left edge of the design column */
+
+  /* Andrei's note on AP-138: the type scale is his rough pass, fix it. At his
+     exact ratios the buy button lands at 117x29px on a phone with a 10px
+     label. These floors keep each element's own proportions and only stop it
+     shrinking past the point where it can be read and tapped. */
+  --btn: clamp(206px, calc(var(--u) * 0.2996), 288px);
+  --cell: clamp(56px, calc(var(--u) * 0.0886), 85px);
+}
+
+@supports (width: 1cqw) {
+  body {
+    container-type: inline-size;
+  }
+  .page,
+  .incl {
+    --u: min(100cqw, 960px);
+  }
+}
+
+img {
+  display: block;
+  max-width: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* --- the masthead --------------------------------------------------------
+   Not in the mockup; his brief asks for a way back to bsns.it. Built as a
+   plate between two rules that dissolve into the black, so it reads as part
+   of the same object rather than a website nav bolted on top. */
+.topbar {
+  background: #000;
+}
+
+.topbar__in {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, calc(var(--u) * 0.03), 30px);
+  width: var(--u);
+  margin: 0 auto;
+  padding: clamp(15px, calc(var(--u) * 0.027), 28px) 0;
+}
+
+.topbar__rule {
+  flex: 1;
+  height: 1px;
+}
+
+.topbar__rule--l {
+  background: linear-gradient(90deg, transparent, rgba(188, 8, 7, 0.85));
+}
+
+.topbar__rule--r {
+  background: linear-gradient(90deg, rgba(188, 8, 7, 0.85), transparent);
+}
+
+.topbar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.62em;
+  text-decoration: none;
+}
+
+.topbar__mark {
+  width: clamp(23px, calc(var(--u) * 0.036), 36px);
+  height: auto;
+  transition: filter 0.25s ease, transform 0.35s var(--ease-land);
+}
+
+.topbar__name {
+  font-size: clamp(11px, calc(var(--u) * 0.0145), 15px);
+  font-weight: 800;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+  transition: color 0.25s ease;
+}
+
+.topbar__link:hover .topbar__name,
+.topbar__link:focus-visible .topbar__name {
+  color: var(--red);
+}
+
+.topbar__link:hover .topbar__mark {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 10px rgba(188, 8, 7, 0.75));
+}
+
+/* --- the hero ------------------------------------------------------------
+   A square at column width: black, the splatter, then the portrait cut to his
+   silhouette on top of it, then the two words. */
+.hero {
+  position: relative;
+  height: var(--u);
+  overflow: hidden;
+}
+
+/* The seam, in two parts.
+
+   The sky image is *clipped* in the mockup to start at 0.8785 — just below
+   where its black fade is already opaque — so the cloud creeps in at under
+   1% and nothing shows a line. `::after` is that slice, drawn at the same
+   size and offset `.stage` draws the sky at, so the two meet pixel for pixel.
+
+   `::before` is the other half. His copy of the portrait is 512px upscaled
+   and its bottom is already black by then; ours is 1024 and still has the
+   grain of his tie in it, which the opaque fade would cut off in a straight
+   line. This takes it down to black before the fade arrives. */
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.hero::before {
+  top: calc(var(--u) * 0.78);
+  bottom: calc(var(--u) * 0.1215); /* stops where ::after starts, at 0.8785 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.992) 100%);
+}
+
+.hero::after {
+  top: calc(var(--u) * 0.8785);
+  bottom: 0;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.992) 0, rgba(0, 0, 0, 0.71) 100%),
+    url("/assets/home/sky.webp") no-repeat center calc(var(--u) * -0.0238) /
+      max(100%, var(--u)) auto;
+}
+
+.hero__splats {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero__splat--l {
+  position: absolute;
+  left: var(--col);
+  top: 0;
+  width: calc(var(--u) * 0.158225);
+  height: calc(var(--u) * 0.930436);
+}
+
+.hero__splat--r {
+  position: absolute;
+  left: calc(var(--col) + var(--u) * 0.51767);
+  top: calc(var(--u) * 0.223077);
+  width: calc(var(--u) * 0.481008);
+  height: calc(var(--u) * 0.680359);
+}
+
+.hero__man {
+  position: absolute;
+  z-index: 2;
+  left: var(--col);
+  top: 0;
+  width: var(--u);
+  height: var(--u);
+}
+
+.hero__portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__title {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  font-weight: 400;
+  /* deliberately no z-index: the words have to sort individually against the
+     portrait, one below it and two above */
+}
+
+.hero__word {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  text-align: center;
+  font-family: "Curseyt", "Times New Roman", serif;
+  line-height: 1;
+  color: var(--red);
+}
+
+/* "Armageddon" is drawn twice in the mockup: solid *behind* him, and again
+   in front as an outline only. So the word reads solid against the black and
+   turns into a red etching where it crosses his hair. The two move together
+   as one parallax group. */
+.hero__word--1 {
+  z-index: 1;
+  font-size: calc(var(--u) * 0.1996);
+  top: calc(var(--u) * 0.0622);
+}
+
+.hero__word--edge {
+  z-index: 3;
+  color: transparent;
+  -webkit-text-stroke: max(1px, calc(var(--u) * 0.0013)) var(--red);
+}
+
+.hero__word--2 {
+  z-index: 3;
+  font-size: calc(var(--u) * 0.2025);
+  top: calc(var(--u) * 0.62125);
+}
+
+/* The landing move. It sits on the children so it never fights the parallax
+   transforms the script writes onto the layers themselves. */
+.in {
+  display: block;
+  font-style: normal;
+  animation: ag-rise 1200ms var(--ease-land) both;
+}
+
+.in--a {
+  --rise: calc(var(--u) * 0.026);
+  animation-delay: 180ms;
+}
+
+.in--b {
+  --rise: calc(var(--u) * 0.022);
+  animation-delay: 340ms;
+}
+
+.hero__portrait {
+  animation: ag-zoom 1700ms var(--ease-land) both;
+}
+
+.hero__splats img {
+  animation: ag-fade 1400ms ease-out 120ms both;
+}
+
+@keyframes ag-rise {
+  from {
+    opacity: 0;
+    transform: translateY(var(--rise));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ag-zoom {
+  from {
+    transform: scale(1.055);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes ag-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --- the video, over the red sky ---------------------------------------- */
+.stage {
+  position: relative;
+  height: calc(var(--u) * 1.0866);
+  /* The fades are the mockup's own, in absolute distance from the top of the
+     section so they land in the same place whatever the section measures.
+     The first stop picks up at exactly the opacity `.hero::after` hands over
+     at, so the two halves of his one gradient meet without a step. */
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.71) 0,
+      rgba(0, 0, 0, 0) calc(var(--u) * 0.3057),
+      rgba(0, 0, 0, 0) calc(var(--u) * 0.4083),
+      #000 calc(var(--u) * 0.8386)
+    ),
+    url("/assets/home/sky.webp") no-repeat center calc(var(--u) * -0.1453) /
+      max(100%, var(--u)) auto,
+    #000;
+}
+
+/* Andrei asked on 5 September for a line and an arrow over the player, big
+   enough that nobody misses it. The room comes from the video's own top, which
+   moves down by 6.5% of the column — the empty black between the player and
+   "Sei pronto?" absorbs it, so nothing else in the section moves. */
+.watch {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--u) * 0.022);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--u) * 0.005);
+  color: #fff;
+  pointer-events: none;     /* it sits over the sky, never over a control */
+}
+
+/* Off-white, not the red: the sky behind this band is red, and his red on it
+   is the one thing that would not read. The shadow is what carries it over
+   the bright patches of that photograph. */
+.watch__line {
+  margin: 0;
+  font-family: "Curseyt", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: calc(var(--u) * 0.098);
+  line-height: 1;
+  text-shadow:
+    0 0 calc(var(--u) * 0.028) rgba(0, 0, 0, 0.95),
+    0 calc(var(--u) * 0.003) 0 rgba(0, 0, 0, 0.6);
+}
+
+.watch__arrow {
+  width: calc(var(--u) * 0.21);
+  height: auto;
+  filter: drop-shadow(0 0 calc(var(--u) * 0.014) rgba(0, 0, 0, 0.9));
+}
+
+.video {
+  position: absolute;
+  left: calc(var(--col) + var(--u) * 0.1321);
+  top: calc(var(--u) * 0.2621);
+  width: calc(var(--u) * 0.7631);
+  /* His own thumbnail is 16:9, and so is the video that will replace it, so
+     the slot is 16:9 rather than the mockup grey box's rough 1.67. Same top
+     edge, same width — it ends 2.7% of the column higher. */
+  aspect-ratio: 16 / 9;
+  border-radius: calc(var(--u) * 0.01582);
+  overflow: hidden;
+  background: #000;
+  display: grid;
+  place-items: center;
+}
+
+.video iframe,
+.video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* On a phone his desktop inset leaves the player at 76% of the screen with
+   uneven margins either side. Andrei asked on 5 September for the full width
+   of the screen and square corners: the video is the page's whole job here,
+   so it gets the whole width. `--u` is the design column, which on a phone is
+   the viewport, and `--col` is its left edge — so this is edge to edge without
+   a `100vw` that a scrollbar could push sideways. It still ends above `.ask`. */
+@media (max-width: 720px) {
+  .video {
+    left: var(--col);
+    width: var(--u);
+    border-radius: 0;
+  }
+
+  /* A phone's column is the screen, so the same fractions come out small in
+     absolute terms: the line and the arrow are set larger against it. The
+     player is full width here, which makes it 56% of the column tall instead
+     of 43%, so the section has to grow — otherwise the callout above and
+     "Sei pronto?" below both land on top of the player. Every number here is
+     measured at 390px: callout ends 9px above the player, the player ends
+     25px above the question, and the question ends inside the section. */
+  .stage {
+    height: calc(var(--u) * 1.28);
+  }
+
+  .watch {
+    top: calc(var(--u) * 0.03);
+  }
+
+  .watch__line {
+    font-size: calc(var(--u) * 0.125);
+  }
+
+  .watch__arrow {
+    width: calc(var(--u) * 0.28);
+  }
+
+  .video {
+    top: calc(var(--u) * 0.35);
+  }
+
+}
+
+.ask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--u) * 0.86487);
+  margin: 0;
+  text-align: center;
+  font-family: "Curseyt", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: calc(var(--u) * 0.15832);
+  line-height: 1;
+  color: var(--red);
+}
+
+/* This override has to sit after the rule above, not with the other phone
+   rules further up: same specificity, so source order decides. On a phone the
+   player is full width and therefore taller, and it would otherwise run under
+   the question. */
+@media (max-width: 720px) {
+  .ask {
+    top: calc(var(--u) * 0.99);
+  }
+}
+
+/* --- the offer, over the fire -------------------------------------------
+   This one flows rather than sitting on fixed coordinates: the buttons and
+   the counter carry a size floor on small screens, so the section has to be
+   free to grow under them. */
+.offer {
+  position: relative;
+  padding-top: calc(var(--u) * 0.13);
+  padding-bottom: calc(var(--u) * 0.075);
+  text-align: center;
+  background:
+    linear-gradient(
+      to bottom,
+      #000 0,
+      rgba(0, 0, 0, 0) calc(var(--u) * 0.4304),
+      rgba(0, 0, 0, 0) calc(var(--u) * 0.6906),
+      #000 calc(var(--u) * 1.1209)
+    ),
+    url("/assets/home/flames.webp") no-repeat center calc(var(--u) * 0.0412) /
+      max(100%, calc(var(--u) * 1.576)) auto,
+    #000;
+}
+
+/* The box is exactly the two tickets' footprint, so hovering means hovering
+   them and not half the section. */
+.tickets {
+  position: relative;
+  width: calc(var(--u) * 0.465962);
+  height: calc(var(--u) * 0.7129);
+  margin-left: calc(50% - var(--u) * 0.5 + var(--u) * 0.275938);
+  margin-right: auto;
+}
+
+/* The mockup places these through Canva's own copies of the artwork, which
+   carry more transparent margin than the source PNGs in docs/. These rects
+   are re-derived so the *printed* ticket lands exactly where the mockup puts
+   it — do not "simplify" them back to the PDF's own numbers. */
+.ticket {
+  position: absolute;
+  transition: transform 820ms var(--ease-heavy);
+}
+
+.ticket--front {
+  z-index: 2;
+  left: 0;
+  top: calc(var(--u) * 0.043192);
+  width: calc(var(--u) * 0.330483);
+  height: calc(var(--u) * 0.629732);
+  transform-origin: 50% 50%;
+  filter:
+    drop-shadow(0 calc(var(--u) * 0.012) calc(var(--u) * 0.03) rgba(0, 0, 0, 0.55))
+    drop-shadow(0 calc(var(--u) * 0.032) calc(var(--u) * 0.078) rgba(0, 0, 0, 0.45));
+}
+
+.ticket--back {
+  z-index: 1;
+  left: calc(var(--u) * 0.155062);
+  top: calc(var(--u) * 0.0706);
+  width: calc(var(--u) * 0.3133);
+  height: calc(var(--u) * 0.6076);
+  transform: rotate(7.16deg);
+  transform-origin: 0 0;
+}
+
+.ticket--back img {
+  position: absolute;
+  left: calc(var(--u) * 0.009066);
+  top: calc(var(--u) * 0.03082);
+  width: calc(var(--u) * 0.276823);
+  height: calc(var(--u) * 0.535034);
+  transform-origin: 50% 50%;
+  transition: transform 820ms var(--ease-heavy);
+  filter:
+    drop-shadow(0 calc(var(--u) * 0.012) calc(var(--u) * 0.03) rgba(0, 0, 0, 0.55))
+    drop-shadow(0 calc(var(--u) * 0.032) calc(var(--u) * 0.078) rgba(0, 0, 0, 0.45));
+}
+
+/* Separated: both the state they arrive in and the state they take under the
+   mouse. `is-locked` is on while they arrive, which is what keeps the hover
+   from firing mid-flight. */
+.tickets.is-spread .ticket--front,
+.tickets:not(.is-locked):hover .ticket--front {
+  transform: translate(calc(var(--u) * -0.03), calc(var(--u) * 0.008)) scale(1.05);
+}
+
+.tickets.is-spread .ticket--back,
+.tickets:not(.is-locked):hover .ticket--back {
+  transform: translate(calc(var(--u) * 0.055), calc(var(--u) * -0.02)) rotate(8.9deg);
+}
+
+.tickets.is-spread .ticket--back img,
+.tickets:not(.is-locked):hover .ticket--back img {
+  transform: scale(0.95);
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+  width: var(--btn);
+  height: calc(var(--btn) * 0.24759);
+  margin: 0 auto;
+  border: 0;
+  border-radius: calc(var(--btn) * 0.0528);
+  font-family: inherit;
+  font-size: calc(var(--btn) * 0.0868);
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+}
+
+.btn--buy {
+  margin-top: calc(var(--u) * -0.0116); /* the ticket overlaps it, as drawn */
+  background: #fff;
+  color: #000;
+}
+
+.btn--info {
+  margin-top: calc(var(--btn) * 0.0714);
+  background: transparent;
+  border: max(1px, calc(var(--btn) * 0.0106)) solid #fff;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-1px);
+}
+
+.btn--buy:hover,
+.btn--buy:focus-visible {
+  background: var(--red);
+  color: #fff;
+}
+
+.btn--buy:focus-visible {
+  outline-color: var(--red);
+}
+
+.btn--info:hover,
+.btn--info:focus-visible {
+  background: #fff;
+  color: #000;
+}
+
+/* --- the counter --------------------------------------------------------- */
+.count {
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--cell) * 0.27359);
+  margin-top: calc(var(--btn) * 0.1689);
+}
+
+.count__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--cell) * 0.16);
+}
+
+.count__cell {
+  width: var(--cell);
+  height: var(--cell);
+  display: grid;
+  place-items: center;
+  background: var(--red);
+  color: #fff;
+  border-radius: calc(var(--cell) * 0.075);
+  font-size: calc(var(--cell) * 0.33318);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.count__label {
+  font-size: clamp(9px, calc(var(--cell) * 0.145), 12px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+}
+
+/* --- what it saves ------------------------------------------------------- */
+.save {
+  margin: calc(var(--u) * 0.055) 0 0;
+  font-family: "Curseyt", "Times New Roman", serif;
+  font-size: clamp(30px, calc(var(--u) * 0.085), 86px);
+  line-height: 1;
+  color: #fff;
+}
+
+.save [data-save] {
+  color: var(--red);
+}
+
+.save__sub {
+  margin: calc(var(--u) * 0.018) 0 0;
+  font-size: clamp(11px, calc(var(--u) * 0.0155), 16px);
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* --- the four pages, and the legal --------------------------------------
+   The mockup leaves this strip black and empty. */
+.tail {
+  padding: calc(var(--u) * 0.075) calc(var(--u) * 0.05) calc(var(--u) * 0.06);
+  text-align: center;
+}
+
+.tail__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--u) * 0.012);
+  margin: 0 0 calc(var(--u) * 0.075);
+  padding: 0;
+  list-style: none;
+}
+
+.tail__link {
+  font-family: "Curseyt", "Times New Roman", serif;
+  font-size: clamp(30px, calc(var(--u) * 0.062), 60px);
+  line-height: 1.1;
+  color: #fff;
+  text-decoration: none;
+}
+
+.tail__link:hover,
+.tail__link:focus-visible {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+/* --- le domande ----------------------------------------------------------
+   Not in the mockup: Andrei asked for them on 5 September, under the four
+   product names. Native `<details>`, so they open with JavaScript off, and
+   they borrow the page's own vocabulary rather than inventing one — the
+   blackletter for the heading, the red for the marker, hairlines for the
+   rest. Left-aligned inside a centred footer, because these are read. */
+.faq {
+  max-width: min(760px, 100%);
+  margin: 0 auto calc(var(--u) * 0.072);
+  text-align: left;
+}
+
+.faq__title {
+  margin: 0 0 clamp(16px, calc(var(--u) * 0.026), 32px);
+  font-family: "Curseyt", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(34px, calc(var(--u) * 0.075), 72px);
+  line-height: 1;
+  text-align: center;
+  color: var(--red);
+}
+
+.faq__q {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.faq__q:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.faq__q > summary {
+  display: flex;
+  gap: 0.9em;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: clamp(15px, 2.2vw, 22px) 0;
+  font-size: clamp(15px, calc(var(--u) * 0.0198), 20px);
+  font-weight: 700;
+  line-height: 1.35;
+  color: #fff;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Safari draws its own triangle unless both of these are said. */
+.faq__q > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__q > summary::after {
+  content: "+";
+  flex: none;
+  font-size: 1.35em;
+  line-height: 1;
+  color: var(--red);
+}
+
+.faq__q[open] > summary::after {
+  content: "\2013";
+}
+
+.faq__q > summary:hover {
+  color: var(--red);
+}
+
+.faq__a {
+  padding: 0 0 clamp(16px, 2.4vw, 26px);
+}
+
+.faq__a p {
+  max-width: 64ch;
+  margin: 0;
+  font-size: clamp(14px, calc(var(--u) * 0.0172), 17px);
+  line-height: 1.66;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.faq__a strong {
+  color: #fff;
+}
+
+.legal {
+  font-size: clamp(11px, calc(var(--u) * 0.0125), 13px);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.legal a {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.legal a:hover,
+.legal a:focus-visible {
+  color: var(--red);
+}
+
+.legal p {
+  margin: 0 0 0.6em;
+}
+
+/* His wording, 5 September. It reads as the fine print it is, but it is set
+   wide enough to actually be read — the whole point of putting it here.
+   Written `.legal .legal__disclaimer` rather than `.legal__disclaimer`: the
+   plain class loses to `.legal p` above, which is one specificity point
+   heavier, and `margin: 0 auto` was being overruled — the block sat left of
+   centre under a centred footer. */
+.legal .legal__disclaimer {
+  max-width: 88ch;
+  margin: 0 auto 1.4em;
+  padding-bottom: 1.4em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  line-height: 1.75;
+}
+
+/* --- cosa include -------------------------------------------------------- */
+.incl {
+  width: min(92vw, 560px);
+  max-height: 88vh;
+  padding: clamp(26px, 4.4vw, 46px);
+  border: 1px solid rgba(188, 8, 7, 0.55);
+  border-radius: 8px;
+  background:
+    radial-gradient(120% 72% at 50% 0%, rgba(188, 8, 7, 0.22), rgba(188, 8, 7, 0) 62%),
+    #050505;
+  color: #fff;
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.85);
+  overflow: auto;
+}
+
+.incl::backdrop {
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(4px);
+}
+
+.incl__title {
+  margin: 0 0 clamp(18px, 3vw, 28px);
+  font-family: "Curseyt", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(34px, 7vw, 54px);
+  line-height: 1;
+  color: var(--red);
+}
+
+.incl__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.incl__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  padding: clamp(10px, 1.7vw, 15px) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.incl__name {
+  font-family: "Curseyt", "Times New Roman", serif;
+  font-size: clamp(24px, 5vw, 28px); /* blackletter needs the size to read */
+  line-height: 1.15;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.incl__name:hover,
+a.incl__name:focus-visible {
+  color: var(--red);
+}
+
+/* The four names are set the way the ticket sets them; this one is a line of
+   plain description, so it stays in the text face where it can be read. */
+.incl__row--voucher .incl__name {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: clamp(15px, 2.7vw, 18px);
+  font-weight: 700;
+}
+
+.incl__name small {
+  display: block;
+  margin-top: 5px;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.incl__price {
+  font-size: clamp(15px, 2.7vw, 18px);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.incl__sum {
+  margin: clamp(18px, 3vw, 26px) 0 0;
+}
+
+.incl__sum > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 18px;
+  padding: 6px 0;
+}
+
+.incl__sum dt {
+  font-size: clamp(11px, 2vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.incl__sum dd {
+  margin: 0;
+  font-size: clamp(15px, 2.7vw, 18px);
+  font-weight: 800;
+}
+
+.incl__saveline {
+  margin-top: 10px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(188, 8, 7, 0.5);
+}
+
+.incl__saveline dt {
+  color: var(--red);
+}
+
+.incl__saveline dd {
+  font-size: clamp(24px, 5vw, 34px);
+  color: var(--red);
+}
+
+.incl__cta {
+  margin: clamp(22px, 3.8vw, 32px) auto 0;
+}
+
+.incl__x {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.incl__x:hover,
+.incl__x:focus-visible {
+  color: var(--red);
+}
+
+/* ------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .in,
+  .hero__portrait,
+  .hero__splats img {
+    animation: none;
+  }
+
+  .btn,
+  .ticket,
+  .ticket--back img,
+  .topbar__mark,
+  .topbar__name {
+    transition: none;
+  }
+}

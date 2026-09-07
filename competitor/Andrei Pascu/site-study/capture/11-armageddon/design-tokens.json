@@ -1,8 +1,10 @@
 {
- "url": "https://armageddon.bsns.it/",
  "title": "Armageddon — outEmail, outFunnel, outHeadline, outViral a 199€",
  "meta_description": "Quattro prodotti in un pack solo: outEmail, outFunnel, outHeadline, outViral. 199€ fino a giovedì 10 settembre, più 199€ di sconto su Funnel Operator al lancio.",
  "og_title": "Armageddon is here",
+ "og_image": "https://armageddon.bsns.it/assets/home/og.jpg",
+ "canonical": null,
+ "jsonld": [],
  "lang": "it",
  "page_height": 5103,
  "page_width": 1430,
@@ -180,25 +182,107 @@
    1
   ]
  ],
+ "shadows": [],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    132
+   ],
+   [
+    "transform 0.82s cubic-bezier(0.65, 0, 0.25, 1)",
+    3
+   ],
+   [
+    "transform 0.12s, background-color 0.12s, color 0.12s",
+    2
+   ],
+   [
+    "filter 0.25s, transform 0.35s cubic-bezier(0.16, 0.86, 0.3, 1)",
+    1
+   ],
+   [
+    "color 0.25s",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "ag-rise 1.2s cubic-bezier(0.16, 0.86, 0.3, 1)",
+    3
+   ],
+   [
+    "ag-fade 1.4s ease-out",
+    2
+   ],
+   [
+    "ag-zoom 1.7s cubic-bezier(0.16, 0.86, 0.3, 1)",
+    1
+   ]
+  ],
+  "filtri": [
+   [
+    "drop-shadow(rgba(0, 0, 0, 0.55) 0px 11.52px 28.8px) drop-shadow(rgba(0, 0, 0, 0.45) 0px 30.72px 74.88px)",
+    2
+   ],
+   [
+    "drop-shadow(rgba(0, 0, 0, 0.9) 0px 0px 13.44px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    9
+   ],
+   [
+    "matrix(0.992202, 0.124641, -0.124641, 0.992202, 0, 0)",
+    1
+   ]
+  ]
+ },
  "headings": [
   {
    "tag": "h1",
+   "y": 86,
    "text": "Armageddon Armageddon is here"
   },
   {
    "tag": "h2",
+   "y": 1877,
    "text": "Sei pronto?"
   },
   {
    "tag": "h2",
+   "y": 3895,
    "text": "Domande"
   },
   {
    "tag": "h2",
+   "y": 0,
    "text": "Cosa include"
   }
  ],
  "ctas": [
+  {
+   "text": "BSNS.IT",
+   "href": "https://bsns.it",
+   "y": 26,
+   "x": 652,
+   "w": 125,
+   "h": 35,
+   "bg": "transparent",
+   "color": "#0000ee",
+   "radius": "0px",
+   "border": "0px none rgb(0, 0, 238)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
   {
    "text": "COMPRA",
    "href": "https://buy.stripe.com/00w28s9LA5Y0eIT8N64Ja1O",
@@ -211,8 +295,7 @@
    "radius": "15.1861px",
    "border": "0px none rgb(0, 0, 0)",
    "shadow": "none",
-   "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
-   "size": "24.9651px",
+   "size": 24.9651,
    "weight": "800",
    "transform": "none",
    "padding": "0px"
@@ -229,14 +312,81 @@
    "radius": "15.1861px",
    "border": "3px solid rgb(255, 255, 255)",
    "shadow": "none",
-   "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
-   "size": "24.9651px",
+   "size": 24.9651,
    "weight": "800",
    "transform": "none",
    "padding": "1px 6px"
+  },
+  {
+   "text": "outEmail",
+   "href": "/outemail",
+   "y": 3529,
+   "x": 633,
+   "w": 164,
+   "h": 59,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 59.52,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "outFunnel",
+   "href": "/outfunnel",
+   "y": 3606,
+   "x": 623,
+   "w": 184,
+   "h": 59,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 59.52,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "outHeadline",
+   "href": "/outheadline",
+   "y": 3683,
+   "x": 605,
+   "w": 219,
+   "h": 59,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 59.52,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "outViral",
+   "href": "/outviral",
+   "y": 3760,
+   "x": 639,
+   "w": 151,
+   "h": 59,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 59.52,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
   }
  ],
- "images": [
+ "media": [
   {
    "tag": "img",
    "src": "/assets/home/eye-mark.webp",
@@ -257,21 +407,21 @@
   },
   {
    "tag": "img",
-   "src": "/assets/home/portrait.webp",
-   "alt": "Andrei Pascu",
-   "y": 86,
-   "x": 235,
-   "w": 960,
-   "h": 960
-  },
-  {
-   "tag": "img",
    "src": "/assets/home/splatter-right.webp",
    "alt": "",
    "y": 301,
    "x": 732,
    "w": 462,
    "h": 653
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/portrait.webp",
+   "alt": "Andrei Pascu",
+   "y": 86,
+   "x": 235,
+   "w": 960,
+   "h": 960
   },
   {
    "tag": "svg",
@@ -283,13 +433,13 @@
    "h": 121
   },
   {
-   "tag": "img",
-   "src": "/assets/home/ticket-front.webp",
-   "alt": "Armageddon pack: outEmail, outFunnel, outHeadline, outViral — 199€",
-   "y": 2256,
-   "x": 500,
-   "w": 317,
-   "h": 605
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1224266050?h=146a86b1fa&title=0&byline=0&portrait=0&dnt=1",
+   "alt": "",
+   "y": 1298,
+   "x": 362,
+   "w": 733,
+   "h": 412
   },
   {
    "tag": "img",
@@ -299,6 +449,15 @@
    "x": 590,
    "w": 328,
    "h": 543
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/ticket-front.webp",
+   "alt": "Armageddon pack: outEmail, outFunnel, outHeadline, outViral — 199€",
+   "y": 2256,
+   "x": 500,
+   "w": 317,
+   "h": 605
   }
  ],
  "slices_desktop": 6,

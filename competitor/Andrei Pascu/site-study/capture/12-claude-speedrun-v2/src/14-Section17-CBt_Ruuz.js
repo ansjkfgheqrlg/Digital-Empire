@@ -1,0 +1,2 @@
+/* fonte: https://claude-speedrun.com/assets/Section17-CBt_Ruuz.js */
+import{j as e}from"./index-hunxel6D.js";const s="/assets/section17-graphic-BeFFlXm7.webp",t=()=>e.jsx("section",{id:"section-17",className:"w-full py-24 border-t border-border",children:e.jsx("div",{className:"section-wrapper flex justify-center",children:e.jsx("img",{src:s,alt:"ORA vs CON Speedrun Claude — confronto risultati",className:"w-full max-w-[600px] h-auto",loading:"lazy"})})});export{t as default};

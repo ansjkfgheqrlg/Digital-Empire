@@ -1,0 +1,1673 @@
+{
+ "url": "https://apsales.eu/",
+ "slug": "13-apsales-v2",
+ "catturata": "2026-09-07",
+ "dominio": "apsales.eu",
+ "titolo": "Agenzia CRO per B2B e SaaS | AP Sales",
+ "lang": "it",
+ "costruzione": "artigianale",
+ "altezza": 12565,
+ "larghezza": 1440,
+ "altezza_mobile": 15354,
+ "body_bg": "oklch(0.9821 0 0)",
+ "body_font": "Elza, Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+ "palette_testo": [
+  [
+   "oklch(0.9821 0 0)",
+   273
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.45)",
+   27
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.5)",
+   19
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.35)",
+   19
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.6)",
+   16
+  ],
+  [
+   "oklch(0.556 0.2453 261.33)",
+   13
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.7)",
+   12
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+   8
+  ],
+  [
+   "#ffffff",
+   7
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.65)",
+   7
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.55)",
+   6
+  ],
+  [
+   "oklch(0.2273 0.0038 286.09)",
+   6
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.8)",
+   5
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.85)",
+   4
+  ],
+  [
+   "oklab(0.2273 0.00105316 -0.00365114 / 0.5)",
+   4
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.4)",
+   3
+  ],
+  [
+   "oklab(0.2273 0.00105316 -0.00365114 / 0.7)",
+   3
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+   2
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.75)",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "oklch(0.1448 0.002 285)",
+   20
+  ],
+  [
+   "oklch(0.556 0.2453 261.33)",
+   13
+  ],
+  [
+   "oklch(0.1776 0 0)",
+   10
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.04)",
+   6
+  ],
+  [
+   "oklab(0 0 0 / 0.4)",
+   5
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.12)",
+   4
+  ],
+  [
+   "oklch(0.2273 0.0038 286.09)",
+   3
+  ],
+  [
+   "oklch(0.9821 0 0)",
+   2
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.8)",
+   2
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.08)",
+   2
+  ],
+  [
+   "oklab(0.1448 0.000517639 -0.00193185 / 0.85)",
+   1
+  ],
+  [
+   "#000000",
+   1
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.1)",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "\"DM Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+   240
+  ],
+  [
+   "Elza, Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   109
+  ],
+  [
+   "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+   73
+  ],
+  [
+   "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+   13
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "12.96px / lh 12.96px / w400",
+   218
+  ],
+  [
+   "15px / lh 22.5px / w400",
+   75
+  ],
+  [
+   "17px / lh 27.2px / w400",
+   22
+  ],
+  [
+   "11px / lh 14.3px / w500",
+   22
+  ],
+  [
+   "15px / lh 22.5px / w500",
+   19
+  ],
+  [
+   "25px / lh 31.25px / w700",
+   17
+  ],
+  [
+   "59.999px / lh 59.999px / w600",
+   13
+  ],
+  [
+   "33.9997px / lh 39.0996px / w600",
+   10
+  ],
+  [
+   "17px / lh 25.5px / w500",
+   9
+  ],
+  [
+   "80px / lh 76.8px / w600",
+   4
+  ],
+  [
+   "22.32px / lh 33.48px / w500",
+   4
+  ],
+  [
+   "59.999px / lh 59.999px / w900",
+   4
+  ],
+  [
+   "25px / lh 35px / w400",
+   3
+  ],
+  [
+   "17px / lh 27.2px / w500",
+   3
+  ],
+  [
+   "45px / lh 45px / w600",
+   3
+  ],
+  [
+   "80px / lh 76.8px / w900",
+   2
+  ],
+  [
+   "17px / lh 27.2px / w700",
+   2
+  ],
+  [
+   "25px / lh 35px / w700",
+   1
+  ],
+  [
+   "45px / lh 48.6px / w400",
+   1
+  ],
+  [
+   "45px / lh 48.6px / w700",
+   1
+  ],
+  [
+   "17px / lh 27.2px / w600",
+   1
+  ],
+  [
+   "16px / lh 24px / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "400",
+   320
+  ],
+  [
+   "500",
+   57
+  ],
+  [
+   "600",
+   31
+  ],
+  [
+   "700",
+   21
+  ],
+  [
+   "900",
+   6
+  ]
+ ],
+ "raggi": [
+  [
+   "50%",
+   2
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+   2
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    709
+   ],
+   [
+    "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+    17
+   ],
+   [
+    "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+    7
+   ],
+   [
+    "transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), translate 0.2s cubic-bezier(0.4, 0, 0.2, 1), scale 0.2s cubic-bezier(0.4, 0",
+    7
+   ],
+   [
+    "flex-grow 0.24s cubic-bezier(0.4, 0, 0.2, 1)",
+    3
+   ],
+   [
+    "0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+    2
+   ],
+   [
+    "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), translate 0.3s cubic-bezier(0.4, 0, 0.2, 1), scale 0.3s cubic-bezier(0.4, 0",
+    2
+   ],
+   [
+    "opacity 0.16s cubic-bezier(0.4, 0, 0.2, 1) 0.08s",
+    2
+   ],
+   [
+    "opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1)",
+    1
+   ],
+   [
+    "opacity 0.24s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1) 0.12s",
+    1
+   ],
+   [
+    "0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "logo-marquee 40s linear",
+    1
+   ]
+  ],
+  "filtri": [
+   [
+    "contrast(1.3) brightness(1.45)",
+    3
+   ],
+   [
+    "blur(100px)",
+    2
+   ],
+   [
+    "backdrop: blur(12px)",
+    1
+   ],
+   [
+    "url(\"#luma-alpha-band\")",
+    1
+   ]
+  ],
+  "blend": [
+   [
+    "screen",
+    3
+   ]
+  ],
+  "clip": [
+   [
+    "inset(0px)",
+    1
+   ],
+   [
+    "inset(50%)",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, -78.75)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -52.5)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -20.625)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -575.271, 0)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [
+  "accordion-down",
+  "accordion-up",
+  "caret-blink",
+  "enter",
+  "exit",
+  "logo-marquee",
+  "node-in",
+  "pulse",
+  "rail-marquee"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 177,
+   "text": "Il traffico si compra. I clienti si convertono."
+  },
+  {
+   "tag": "h2",
+   "y": 2752,
+   "text": "Il problema"
+  },
+  {
+   "tag": "h2",
+   "y": 2752,
+   "text": "La soluzione"
+  },
+  {
+   "tag": "h2",
+   "y": 3707,
+   "text": "Facciamo solo due cose. Per scelta."
+  },
+  {
+   "tag": "h3",
+   "y": 4346,
+   "text": "Landing page"
+  },
+  {
+   "tag": "h3",
+   "y": 4346,
+   "text": "Consulenza con Andrei Pascu"
+  },
+  {
+   "tag": "h2",
+   "y": 5189,
+   "text": "Metodo statistico. Non opinioni."
+  },
+  {
+   "tag": "h3",
+   "y": 5425,
+   "text": "Tracciamo"
+  },
+  {
+   "tag": "h3",
+   "y": 5425,
+   "text": "Guardiamo"
+  },
+  {
+   "tag": "h3",
+   "y": 5425,
+   "text": "Costruiamo"
+  },
+  {
+   "tag": "h3",
+   "y": 5425,
+   "text": "Misuriamo"
+  },
+  {
+   "tag": "h3",
+   "y": 5799,
+   "text": "Quello che vediamo"
+  },
+  {
+   "tag": "h2",
+   "y": 6383,
+   "text": "Non facciamo solo pagine. Orchestriamo la conversione."
+  },
+  {
+   "tag": "h3",
+   "y": 6662,
+   "text": "Offerta"
+  },
+  {
+   "tag": "h3",
+   "y": 6662,
+   "text": "Coerenza ads ↔ pagina"
+  },
+  {
+   "tag": "h3",
+   "y": 6662,
+   "text": "Fiducia"
+  },
+  {
+   "tag": "h2",
+   "y": 7075,
+   "text": "Agenzia generalista, freelancer o assumere? Nessuno dei tre."
+  },
+  {
+   "tag": "h2",
+   "y": 8109,
+   "text": "Piccola agenzia. Standard alti."
+  },
+  {
+   "tag": "h2",
+   "y": 9152,
+   "text": "Deleghiamo. Ma mai a caso."
+  },
+  {
+   "tag": "h2",
+   "y": 9738,
+   "text": "Domande frequenti."
+  },
+  {
+   "tag": "h3",
+   "y": 9854,
+   "text": "Cos'è la CRO?"
+  },
+  {
+   "tag": "h3",
+   "y": 9950,
+   "text": "Con chi lavorate?"
+  },
+  {
+   "tag": "h3",
+   "y": 10047,
+   "text": "Che tipo di accordo offrite?"
+  },
+  {
+   "tag": "h3",
+   "y": 10143,
+   "text": "E se le conversioni non aumentano?"
+  },
+  {
+   "tag": "h3",
+   "y": 10239,
+   "text": "Quanto costa?"
+  },
+  {
+   "tag": "h3",
+   "y": 10335,
+   "text": "Fate anche ads, social, SEO?"
+  },
+  {
+   "tag": "h3",
+   "y": 10431,
+   "text": "Quanto tempo devo dedicarci io?"
+  },
+  {
+   "tag": "h2",
+   "y": 10831,
+   "text": "Vediamo se ha senso lavorare insieme."
+  }
+ ],
+ "cta": [
+  {
+   "text": "Carriere",
+   "href": "/carriere",
+   "y": 9296,
+   "x": 1050,
+   "w": 91,
+   "h": 40,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.8)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.2)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 16px"
+  },
+  {
+   "text": "Menu",
+   "href": null,
+   "y": 9296,
+   "x": 1153,
+   "w": 103,
+   "h": 40,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.8)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.2)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 16px"
+  },
+  {
+   "text": "Voglio aumentare le conversioni →",
+   "href": null,
+   "y": 721,
+   "x": 184,
+   "w": 340,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Vedi i servizi",
+   "href": "/servizi",
+   "y": 720,
+   "x": 536,
+   "w": 163,
+   "h": 60,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.25)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Come funziona",
+   "href": "/landing-page",
+   "y": 4801,
+   "x": 225,
+   "w": 184,
+   "h": 60,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.25)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Fai una consulenza",
+   "href": "/consulenza",
+   "y": 4801,
+   "x": 773,
+   "w": 213,
+   "h": 60,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.25)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Conosci il team ↗",
+   "href": "/chi-siamo",
+   "y": 8739,
+   "x": 184,
+   "w": 212,
+   "h": 60,
+   "bg": "transparent",
+   "color": "oklch(0.2273 0.0038 286.09)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.2273 0.00105316 -0.00365114 / 0.25)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Founder Founder Andrei Pascu",
+   "href": null,
+   "y": 8109,
+   "x": 760,
+   "w": 328,
+   "h": 640,
+   "bg": "oklch(0.2273 0.0038 286.09)",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Impatto Impatto Migliaia di professionisti formati",
+   "href": null,
+   "y": 8109,
+   "x": 1108,
+   "w": 64,
+   "h": 640,
+   "bg": "oklch(0.2273 0.0038 286.09)",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Team Team Meno di 10 persone, per scelta",
+   "href": null,
+   "y": 8109,
+   "x": 1192,
+   "w": 64,
+   "h": 640,
+   "bg": "oklch(0.2273 0.0038 286.09)",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Cos'è la CRO?",
+   "href": null,
+   "y": 9854,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Con chi lavorate?",
+   "href": null,
+   "y": 9950,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Che tipo di accordo offrite?",
+   "href": null,
+   "y": 10047,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "E se le conversioni non aumentano?",
+   "href": null,
+   "y": 10143,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Quanto costa?",
+   "href": null,
+   "y": 10239,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Fate anche ads, social, SEO?",
+   "href": null,
+   "y": 10335,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Quanto tempo devo dedicarci io?",
+   "href": null,
+   "y": 10431,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Parla con noi →",
+   "href": null,
+   "y": 11119,
+   "x": 184,
+   "w": 191,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Prenota una chiamata →",
+   "href": null,
+   "y": 10098,
+   "x": 1157,
+   "w": 252,
+   "h": 55,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 24px 16px 20px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "img",
+   "src": "/ascii/occhio.webp",
+   "alt": "",
+   "y": 223,
+   "x": 897,
+   "w": 358,
+   "h": 358
+  },
+  {
+   "tag": "video",
+   "src": "",
+   "alt": "",
+   "y": 1003,
+   "x": 1185,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/warriors/w6.webp",
+   "alt": "",
+   "y": 1288,
+   "x": 201,
+   "w": 171,
+   "h": 289
+  },
+  {
+   "tag": "img",
+   "src": "/warriors/w5.webp",
+   "alt": "",
+   "y": 1258,
+   "x": 357,
+   "w": 221,
+   "h": 346
+  },
+  {
+   "tag": "img",
+   "src": "/warriors/w2.webp",
+   "alt": "",
+   "y": 1149,
+   "x": 619,
+   "w": 202,
+   "h": 447
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1071,
+   "x": 635,
+   "w": 169,
+   "h": 32
+  },
+  {
+   "tag": "img",
+   "src": "/warriors/w4.webp",
+   "alt": "",
+   "y": 1256,
+   "x": 861,
+   "w": 235,
+   "h": 357
+  },
+  {
+   "tag": "img",
+   "src": "/warriors/w3.webp",
+   "alt": "",
+   "y": 1283,
+   "x": 1068,
+   "w": 137,
+   "h": 276
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1752,
+   "x": 702,
+   "w": 36,
+   "h": 36
+  },
+  {
+   "tag": "img",
+   "src": "/logos/vidiren.webp",
+   "alt": "Vidiren",
+   "y": 1883,
+   "x": -575,
+   "w": 82,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/lsp.webp",
+   "alt": "LSP",
+   "y": 1883,
+   "x": -429,
+   "w": 42,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/agl-aste-immobiliari.webp",
+   "alt": "AGL Aste Immobiliari",
+   "y": 1883,
+   "x": -323,
+   "w": 71,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/autos-eu.webp",
+   "alt": "Autos EU Electric & Hybrid",
+   "y": 1883,
+   "x": -188,
+   "w": 67,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/oltreset.webp",
+   "alt": "Oltreset",
+   "y": 1883,
+   "x": -58,
+   "w": 71,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/altlife-agency.webp",
+   "alt": "Altlife Agency",
+   "y": 1883,
+   "x": 77,
+   "w": 106,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/bm-ecom.webp",
+   "alt": "BM Ecom",
+   "y": 1883,
+   "x": 246,
+   "w": 28,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/pearl-west-brands.webp",
+   "alt": "Pearl West Brands",
+   "y": 1883,
+   "x": 338,
+   "w": 164,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/pets-are-kids.webp",
+   "alt": "Pets are Kids",
+   "y": 1883,
+   "x": 565,
+   "w": 61,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/lecca-milano.webp",
+   "alt": "Lecca Milano",
+   "y": 1883,
+   "x": 690,
+   "w": 95,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/mp-edile.webp",
+   "alt": "M.P. Edile & Immobiliare",
+   "y": 1883,
+   "x": 849,
+   "w": 78,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/ca-monogram.webp",
+   "alt": "CA",
+   "y": 1883,
+   "x": 990,
+   "w": 30,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/vidiren.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 1084,
+   "w": 82,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/lsp.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 1230,
+   "w": 42,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/agl-aste-immobiliari.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 1336,
+   "w": 71,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/autos-eu.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 1471,
+   "w": 67,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/oltreset.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 1602,
+   "w": 71,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/altlife-agency.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 1736,
+   "w": 106,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/bm-ecom.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 1906,
+   "w": 28,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/pearl-west-brands.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 1997,
+   "w": 164,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/pets-are-kids.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 2225,
+   "w": 61,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/lecca-milano.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 2350,
+   "w": 95,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/mp-edile.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 2508,
+   "w": 78,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/logos/ca-monogram.webp",
+   "alt": "",
+   "y": 1883,
+   "x": 2650,
+   "w": 30,
+   "h": 48
+  },
+  {
+   "tag": "img",
+   "src": "/ascii/laptop.webp",
+   "alt": "",
+   "y": 3873,
+   "x": 226,
+   "w": 440,
+   "h": 440
+  },
+  {
+   "tag": "img",
+   "src": "/ascii/mirino-dot.webp",
+   "alt": "",
+   "y": 3873,
+   "x": 774,
+   "w": 440,
+   "h": 440
+  },
+  {
+   "tag": "img",
+   "src": "/images/tracking-heatmap.webp",
+   "alt": "Heatmap dell'attenzione su un wireframe di landing page",
+   "y": 5751,
+   "x": 185,
+   "w": 614,
+   "h": 343
+  },
+  {
+   "tag": "img",
+   "src": "/about/founder.webp",
+   "alt": "Andrei Pascu, founder di AP Sales",
+   "y": 8109,
+   "x": 760,
+   "w": 328,
+   "h": 640
+  },
+  {
+   "tag": "img",
+   "src": "/about/impatto.webp",
+   "alt": "Andrei Pascu sul palco davanti alla platea di un evento di formazione",
+   "y": 8109,
+   "x": 1108,
+   "w": 64,
+   "h": 640
+  },
+  {
+   "tag": "img",
+   "src": "/about/team.webp",
+   "alt": "Il team di AP Sales attorno al tavolo riunioni",
+   "y": 8109,
+   "x": 1192,
+   "w": 64,
+   "h": 640
+  },
+  {
+   "tag": "img",
+   "src": "/ascii/templare-pixel.webp",
+   "alt": "",
+   "y": 9202,
+   "x": 269,
+   "w": 137,
+   "h": 153
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11521,
+   "x": 331,
+   "w": 778,
+   "h": 155
+  }
+ ],
+ "blocchi_testo": 537,
+ "meta": {
+  "description": "AP Sales è l'agenzia di Conversion Rate Optimization per B2B e SaaS: landing page, tracciamento e statistica per abbassare il CPL e alzare il ritorno delle ads.",
+  "og_title": "Agenzia CRO per B2B e SaaS | AP Sales",
+  "og_image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cd336771-8410-40ae-bbcf-764fb8baad43/id-preview-9bb40a2b--7478fc2d-006d-4669-95bd-7b45e31d5956.lovable.app-1787155303721.png",
+  "canonical": "https://apsales.eu/",
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Cos'è la CRO?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Conversion Rate Optimization: ottimizzare la percentuale di visitatori che compie un'azione, che sia un contatto, un preventivo o un ordine. Si fa con dati, test e psicologia. Non a sensazione.\"}},{\"@type\":\"Question\",\"name\":\"Con chi lavorate?\",\"acce"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 65,
+   "h": 902,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "relative.overflow-hidden.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Il traffico si compra. I clienti si convertono.",
+   "headings": [
+    "Il traffico si compra. I clienti si convertono."
+   ],
+   "blocchi_testo": 10,
+   "parole": 73,
+   "densita": 8,
+   "media": 1,
+   "cta": 2,
+   "firma": "section|relative.overflow-hidden.bg-void|2|M|C|5",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-il-traffico-si-compra-i-clienti-si.png"
+  },
+  {
+   "i": 2,
+   "y": 967,
+   "h": 720,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "relative.overflow-hidden.bg-black",
+   "bg": "#000000",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 285,
+   "parole": 276,
+   "densita": 38,
+   "media": 8,
+   "cta": 0,
+   "firma": "section|relative.overflow-hidden.bg-black|3|M|-|4",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-section.png"
+  },
+  {
+   "i": 3,
+   "y": 1687,
+   "h": 309,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "relative.overflow-hidden.border-y",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 25,
+   "parole": 10,
+   "densita": 3,
+   "media": 25,
+   "cta": 0,
+   "firma": "section|relative.overflow-hidden.border-y|4|M|-|2",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-section.png"
+  },
+  {
+   "i": 4,
+   "y": 1996,
+   "h": 563,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 1,
+   "parole": 29,
+   "densita": 5,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-pitch|1|-|-|3",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-section.png"
+  },
+  {
+   "i": 5,
+   "y": 2559,
+   "h": 1004,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Il problema",
+   "headings": [
+    "Il problema",
+    "La soluzione"
+   ],
+   "blocchi_testo": 19,
+   "parole": 116,
+   "densita": 12,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|5",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-il-problema.png"
+  },
+  {
+   "i": 6,
+   "y": 3563,
+   "h": 1482,
+   "prof": 3,
+   "tag": "section",
+   "id": "servizi",
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Facciamo solo due cose. Per scelta.",
+   "headings": [
+    "Facciamo solo due cose. Per scelta.",
+    "Landing page",
+    "Consulenza con Andrei Pascu"
+   ],
+   "blocchi_testo": 20,
+   "parole": 126,
+   "densita": 9,
+   "media": 2,
+   "cta": 2,
+   "firma": "section|scroll-mt-16.bg-pitch|1|M|C|7",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-facciamo-solo-due-cose-per-scelta.png"
+  },
+  {
+   "i": 7,
+   "y": 5045,
+   "h": 1194,
+   "prof": 3,
+   "tag": "section",
+   "id": "metodo",
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Metodo statistico. Non opinioni.",
+   "headings": [
+    "Metodo statistico. Non opinioni.",
+    "Tracciamo",
+    "Guardiamo",
+    "Costruiamo",
+    "Misuriamo",
+    "Quello che vediamo"
+   ],
+   "blocchi_testo": 42,
+   "parole": 147,
+   "densita": 12,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|M|-|6",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-metodo-statistico-non-opinioni.png"
+  },
+  {
+   "i": 8,
+   "y": 6239,
+   "h": 692,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Non facciamo solo pagine. Orchestriamo la conversione.",
+   "headings": [
+    "Non facciamo solo pagine. Orchestriamo la conversione.",
+    "Offerta",
+    "Coerenza ads ↔ pagina",
+    "Fiducia"
+   ],
+   "blocchi_testo": 8,
+   "parole": 64,
+   "densita": 9,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|3",
+   "gruppo": 8,
+   "rappresentante": true,
+   "screenshot": "sezioni/08-non-facciamo-solo-pagine-orchestri.png"
+  },
+  {
+   "i": 9,
+   "y": 6931,
+   "h": 1034,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Agenzia generalista, freelancer o assumere? Nessuno dei tre.",
+   "headings": [
+    "Agenzia generalista, freelancer o assumere? Nessuno dei tre."
+   ],
+   "blocchi_testo": 48,
+   "parole": 108,
+   "densita": 10,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|5",
+   "gruppo": 5,
+   "rappresentante": false,
+   "screenshot": "sezioni/09-agenzia-generalista-freelancer-o-a.png"
+  },
+  {
+   "i": 10,
+   "y": 7965,
+   "h": 978,
+   "prof": 3,
+   "tag": "section",
+   "id": "chi-siamo",
+   "classi": "scroll-mt-16.theme-paper.bg-paper",
+   "bg": "oklch(0.9821 0 0)",
+   "bg_img": false,
+   "heading": "Piccola agenzia. Standard alti.",
+   "headings": [
+    "Piccola agenzia. Standard alti."
+   ],
+   "blocchi_testo": 26,
+   "parole": 83,
+   "densita": 8,
+   "media": 3,
+   "cta": 4,
+   "firma": "section|scroll-mt-16.theme-paper.bg-paper|1|M|C|5",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-piccola-agenzia-standard-alti.png"
+  },
+  {
+   "i": 11,
+   "y": 8943,
+   "h": 652,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Deleghiamo. Ma mai a caso.",
+   "headings": [
+    "Deleghiamo. Ma mai a caso."
+   ],
+   "blocchi_testo": 3,
+   "parole": 44,
+   "densita": 7,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|M|-|3",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-deleghiamo-ma-mai-a-caso.png"
+  },
+  {
+   "i": 12,
+   "y": 9594,
+   "h": 1077,
+   "prof": 3,
+   "tag": "section",
+   "id": "faq",
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Domande frequenti.",
+   "headings": [
+    "Domande frequenti.",
+    "Cos'è la CRO?",
+    "Con chi lavorate?",
+    "Che tipo di accordo offrite?",
+    "E se le conversioni non aumentano?",
+    "Quanto costa?"
+   ],
+   "blocchi_testo": 15,
+   "parole": 31,
+   "densita": 3,
+   "media": 7,
+   "cta": 7,
+   "firma": "section|scroll-mt-16.bg-pitch|1|M|C|5",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-domande-frequenti.png"
+  },
+  {
+   "i": 13,
+   "y": 10671,
+   "h": 712,
+   "prof": 3,
+   "tag": "section",
+   "id": "contatti",
+   "classi": "relative.overflow-hidden.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Vediamo se ha senso lavorare insieme.",
+   "headings": [
+    "Vediamo se ha senso lavorare insieme."
+   ],
+   "blocchi_testo": 6,
+   "parole": 37,
+   "densita": 5,
+   "media": 0,
+   "cta": 1,
+   "firma": "section|relative.overflow-hidden.bg-void|2|-|C|4",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-vediamo-se-ha-senso-lavorare-insie.png"
+  },
+  {
+   "i": 14,
+   "y": 11383,
+   "h": 1182,
+   "prof": 2,
+   "tag": "footer",
+   "id": null,
+   "classi": "relative",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 19,
+   "parole": 32,
+   "densita": 3,
+   "media": 1,
+   "cta": 0,
+   "firma": "footer|relative|2|M|-|6",
+   "gruppo": 14,
+   "rappresentante": true,
+   "screenshot": "sezioni/14-footer.png"
+  }
+ ],
+ "sezioni_totali": 14,
+ "sezioni_distinte": 13,
+ "src": [
+  {
+   "file": "src/01-Ascii-BML5uz1H.js",
+   "url": "https://apsales.eu/assets/Ascii-BML5uz1H.js",
+   "bytes": 706
+  },
+  {
+   "file": "src/02-CallDialog-B69m0cou.js",
+   "url": "https://apsales.eu/assets/CallDialog-B69m0cou.js",
+   "bytes": 6063
+  },
+  {
+   "file": "src/03-RevealFooter-B34lvwld.js",
+   "url": "https://apsales.eu/assets/RevealFooter-B34lvwld.js",
+   "bytes": 47460
+  },
+  {
+   "file": "src/04-StickyCta-CHJgR4Y6.js",
+   "url": "https://apsales.eu/assets/StickyCta-CHJgR4Y6.js",
+   "bytes": 1689
+  },
+  {
+   "file": "src/05-accordion-LU6_yz4t.js",
+   "url": "https://apsales.eu/assets/accordion-LU6_yz4t.js",
+   "bytes": 9211
+  },
+  {
+   "file": "src/06-dialog-CKatyLC6.js",
+   "url": "https://apsales.eu/assets/dialog-CKatyLC6.js",
+   "bytes": 35358
+  },
+  {
+   "file": "src/07-forms.functions-DiYx6QCP.js",
+   "url": "https://apsales.eu/assets/forms.functions-DiYx6QCP.js",
+   "bytes": 589
+  },
+  {
+   "file": "src/08-index-CfVXeo8a.js",
+   "url": "https://apsales.eu/assets/index-CfVXeo8a.js",
+   "bytes": 551427
+  },
+  {
+   "file": "src/09-jsx-runtime-CBeXhfNn.js",
+   "url": "https://apsales.eu/assets/jsx-runtime-CBeXhfNn.js",
+   "bytes": 11889
+  },
+  {
+   "file": "src/10-routes-zpYcnjTA.js",
+   "url": "https://apsales.eu/assets/routes-zpYcnjTA.js",
+   "bytes": 31268
+  },
+  {
+   "file": "src/11-styles-CHG2jDaU.css",
+   "url": "https://apsales.eu/assets/styles-CHG2jDaU.css",
+   "bytes": 127394
+  },
+  {
+   "file": "src/12-useServerFn-C9O_qu9A.js",
+   "url": "https://apsales.eu/assets/useServerFn-C9O_qu9A.js",
+   "bytes": 368
+  },
+  {
+   "file": "src/13-css2.css",
+   "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Inter:wght@400;500;600&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap",
+   "bytes": 15091
+  }
+ ],
+ "segmentazione": "ok"
+}

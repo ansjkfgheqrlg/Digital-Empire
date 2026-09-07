@@ -1,0 +1,1876 @@
+{
+ "url": "https://armageddon.bsns.it/outheadline",
+ "slug": "16-arma-outheadline",
+ "catturata": "2026-09-07",
+ "dominio": "armageddon.bsns.it",
+ "titolo": "outHeadline — Armageddon",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 20168,
+ "larghezza": 1440,
+ "altezza_mobile": 20903,
+ "body_bg": "#f4f4f3",
+ "body_font": "sans-serif",
+ "palette_testo": [
+  [
+   "#fafafa",
+   129
+  ],
+  [
+   "#1b1b1d",
+   48
+  ],
+  [
+   "#ffffff",
+   35
+  ],
+  [
+   "#7ab641",
+   5
+  ],
+  [
+   "#4e4d4d",
+   3
+  ],
+  [
+   "#d70101",
+   2
+  ],
+  [
+   "#ffffff @0.5",
+   2
+  ],
+  [
+   "#d50101",
+   1
+  ],
+  [
+   "#545454",
+   1
+  ],
+  [
+   "#6b9f39",
+   1
+  ],
+  [
+   "#ff4f4c",
+   1
+  ],
+  [
+   "#ffffff @0.72",
+   1
+  ],
+  [
+   "#f9f9f9",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#1b1b1d",
+   31
+  ],
+  [
+   "#fafafa",
+   25
+  ],
+  [
+   "#f4f4f3",
+   10
+  ],
+  [
+   "#ebe9e0",
+   4
+  ],
+  [
+   "#141414",
+   2
+  ],
+  [
+   "#bc0807",
+   2
+  ],
+  [
+   "#7ab641",
+   1
+  ],
+  [
+   "#101011",
+   1
+  ],
+  [
+   "#0a0a0b @0.92",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "elza-8u3n84",
+   132
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   92
+  ],
+  [
+   "\"DM Sans\", system-ui, sans-serif",
+   6
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   65
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   58
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   24
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   19
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   16
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   11
+  ],
+  [
+   "24px / lh normal / w700",
+   7
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "12.544px / lh 22.5792px / w700",
+   3
+  ],
+  [
+   "13px / lh 22.75px / w400",
+   3
+  ],
+  [
+   "112.3px / lh 112.3px / w700",
+   2
+  ],
+  [
+   "90.1px / lh 90.1px / w700",
+   2
+  ],
+  [
+   "42.7px / lh 42.7px / w700",
+   2
+  ],
+  [
+   "20px / lh 36px / w300",
+   2
+  ],
+  [
+   "16px / lh 16px / w700",
+   2
+  ],
+  [
+   "83.3px / lh 83.3px / w700",
+   1
+  ],
+  [
+   "42.1px / lh 42.1px / w700",
+   1
+  ],
+  [
+   "40.9px / lh 40.9px / w700",
+   1
+  ],
+  [
+   "82.1px / lh 82.1px / w700",
+   1
+  ],
+  [
+   "24px / lh normal / w400",
+   1
+  ],
+  [
+   "50px / lh 50px / w700",
+   1
+  ],
+  [
+   "50.6px / lh 50.6px / w700",
+   1
+  ],
+  [
+   "121.5px / lh 121.5px / w700",
+   1
+  ],
+  [
+   "149.9px / lh 149.9px / w700",
+   1
+  ],
+  [
+   "38.3px / lh 38.3px / w700",
+   1
+  ],
+  [
+   "15.2px / lh 19px / w700",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "700",
+   156
+  ],
+  [
+   "300",
+   70
+  ],
+  [
+   "400",
+   4
+  ]
+ ],
+ "raggi": [
+  [
+   "50px",
+   8
+  ],
+  [
+   "2px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(255, 255, 255, 0.45) 0px 0px 0px 1px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    1148
+   ],
+   [
+    "transform 0.25s",
+    14
+   ],
+   [
+    "background-color 0.3s",
+    8
+   ],
+   [
+    "opacity 0.15s ease-out",
+    2
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [
+   [
+    "backdrop: blur(10px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-6714364e20a39431ef357bb3\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6715b4ae20a39431ef7cb281\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6715ba478692445dd1fb2286\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67166241da7a1e3ce0b281b0\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67164b89ccf3f03980ac5108\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6715bdf9f2bbe30fd4377dfa\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-671658d95573fd3959c6a77a\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67165931257c97627604fc92\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    11
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    7
+   ]
+  ]
+ },
+ "keyframes": [
+  "anim-form-post-submit",
+  "animation-form-field-fx-highlight-double-trace",
+  "animation-form-field-fx-highlight-double-trace-bottom",
+  "animation-form-field-fx-highlight-glow",
+  "animation-form-field-fx-highlight-trace",
+  "animation-form-field-fx-highlight-trace-bottom",
+  "bounceIn",
+  "bounceOut",
+  "cart-loader-spin",
+  "clipAnimation",
+  "commerce-mini-cart-overlay-fade",
+  "commerce-mini-cart-slide-in-bottom",
+  "commerce-mini-cart-slide-in-right",
+  "commerce-mini-cart-slide-out-bottom",
+  "commerce-mini-cart-slide-out-right",
+  "commerce-reserved-cart-slide-in-right",
+  "commerce-reserved-cart-slide-in-top",
+  "commerce-reserved-cart-slide-out-right",
+  "commerce-reserved-cart-slide-out-top",
+  "fadeout",
+  "gallery-image-enter-from-left",
+  "gallery-image-enter-from-right",
+  "gallery-image-exit-to-left",
+  "gallery-image-exit-to-right",
+  "hideContent",
+  "image-fade-in",
+  "keyframes-bar",
+  "keyframes-check",
+  "keyframes-circle",
+  "keyframes-circle-check",
+  "keyframes-ellipsis-grow",
+  "keyframes-ellipsis-shift",
+  "keyframes-ellipsis-shrink",
+  "keyframes-spinner",
+  "keyframes-spinner-check",
+  "lightbox-open",
+  "loading-dot-2",
+  "loading-dot-3",
+  "loading-indicator-dash",
+  "loading-indicator-rotate-spinner",
+  "no-image-fade-in",
+  "plyr-fade-in",
+  "plyr-popup",
+  "plyr-progress",
+  "portfolio-index-background-image-mask--mask-down-in",
+  "portfolio-index-background-image-mask--mask-down-out",
+  "portfolio-index-background-image-mask--mask-left-in",
+  "portfolio-index-background-image-mask--mask-left-out",
+  "portfolio-index-background-image-mask--mask-right-in",
+  "portfolio-index-background-image-mask--mask-right-out",
+  "portfolio-index-background-image-mask--mask-up-in",
+  "portfolio-index-background-image-mask--mask-up-out",
+  "product-reviews-loader-flip-square",
+  "pulseBadgeOpacity",
+  "riseandfadein",
+  "shake-three",
+  "shimmy",
+  "shiver",
+  "show-confirmation",
+  "show-confirmation-mobile",
+  "spin",
+  "sqs-spin",
+  "tmpl-anim-clip-horizontal-left",
+  "tmpl-anim-clip-vertical-up",
+  "tmpl-anim-fade-scale-up",
+  "tmpl-anim-fade-stretch-up",
+  "tmpl-anim-fade-up",
+  "underlineSlideIn",
+  "underlineSlideOut",
+  "video-player-settings-popup",
+  "video-player__loading-indicator-dash",
+  "video-player__loading-indicator-rotate-spinner"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 95,
+   "text": "QUESTA È UNA"
+  },
+  {
+   "tag": "h1",
+   "y": 180,
+   "text": "HEADLINE."
+  },
+  {
+   "tag": "h2",
+   "y": 321,
+   "text": "E solo i copywriter che scrivono HEADLINE persuasive sono disperatamente richiesti… E guadagnano di più."
+  },
+  {
+   "tag": "h1",
+   "y": 837,
+   "text": "…Ecco cosa succede se 1000"
+  },
+  {
+   "tag": "h1",
+   "y": 885,
+   "text": "persone vedono la tua pagina:"
+  },
+  {
+   "tag": "h1",
+   "y": 1393,
+   "text": "Devi scrivere titoli migliori che impediscono ai clienti di skipparti così."
+  },
+  {
+   "tag": "h1",
+   "y": 2322,
+   "text": "Perché lasciare"
+  },
+  {
+   "tag": "h1",
+   "y": 2414,
+   "text": "soldi sul tavolo?!"
+  },
+  {
+   "tag": "h3",
+   "y": 3216,
+   "text": "La sales page te la può scrivere il miglior copy al mondo..."
+  },
+  {
+   "tag": "h3",
+   "y": 3429,
+   "text": "ma se il titolo non fa leggere i potenziali clienti... È come non avere la sales page"
+  },
+  {
+   "tag": "h2",
+   "y": 3842,
+   "text": "Se scrivi un titolo persuasivo, la gente legge… Se la gente legge, forse compra."
+  },
+  {
+   "tag": "h2",
+   "y": 4065,
+   "text": "Se scrivi titolo non persuasivo, la gente non legge… Se la gente non legge, al 100% non compra."
+  },
+  {
+   "tag": "h2",
+   "y": 4499,
+   "text": "Se sei un copywriter…"
+  },
+  {
+   "tag": "h2",
+   "y": 4879,
+   "text": "Se sei imprenditore che scrive copy da solo…"
+  },
+  {
+   "tag": "h3",
+   "y": 6011,
+   "text": "Andare da una versione all’altra di questa headline non è facile… Ci sono specifiche metodologie per farlo."
+  },
+  {
+   "tag": "h2",
+   "y": 6368,
+   "text": "Dove troverai tutte le strategie per scrivere headline che i copywriter elite si sono sempre tenuti per sé… Fino ad oggi."
+  },
+  {
+   "tag": "h3",
+   "y": 7337,
+   "text": "Le basi del copy sono ovunque… Ma la roba seria dove sta?"
+  },
+  {
+   "tag": "h3",
+   "y": 8460,
+   "text": "Hai bisogno di sentirti ripetere la solita formulina per la decima volta?! Naah 🥱"
+  },
+  {
+   "tag": "h3",
+   "y": 9261,
+   "text": "Sezioni A & B: introduzione al copy"
+  },
+  {
+   "tag": "h3",
+   "y": 9923,
+   "text": "Sezioni 1,2,3,4 & 5: come scrivere headline"
+  },
+  {
+   "tag": "h1",
+   "y": 10913,
+   "text": "outHeadline non è per principianti"
+  },
+  {
+   "tag": "h1",
+   "y": 11599,
+   "text": "“Per scrivere headline basta usare formule”"
+  },
+  {
+   "tag": "h1",
+   "y": 12393,
+   "text": "Gli 8 step per scrivere headline"
+  },
+  {
+   "tag": "h3",
+   "y": 14586,
+   "text": "Copywriter : campagna di marketing = cecchino : missione militare"
+  },
+  {
+   "tag": "h3",
+   "y": 15305,
+   "text": "“Un corso di più di 3 ore su come scrivere titoli? Ma sei pazzo?”"
+  },
+  {
+   "tag": "h3",
+   "y": 15587,
+   "text": "Le persone di successo sono quelle che fanno quello che serve, non quello “che vogliono”. Vale anche per i copywriter, non solo per discorsi motivazionali."
+  },
+  {
+   "tag": "h1",
+   "y": 16412,
+   "text": "Entrando in outHeadline e studiandolo… Sei più vicino al lavorare con multinazionali."
+  },
+  {
+   "tag": "h1",
+   "y": 19029,
+   "text": "outHeadline? Probabilmente non è per te. Ma se lo è… Stai per svoltare."
+  }
+ ],
+ "cta": [
+  {
+   "text": "Clicca qui",
+   "href": null,
+   "y": 5967,
+   "x": 633,
+   "w": 174,
+   "h": 61,
+   "bg": "#7ab641",
+   "color": "#545454",
+   "radius": "50px",
+   "border": "0px none rgb(84, 84, 84)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "400",
+   "transform": "none",
+   "padding": "16px 37px"
+  },
+  {
+   "text": "Sezione A - Intro",
+   "href": null,
+   "y": 9690,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione B - Copywriting",
+   "href": null,
+   "y": 9775,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 1 - Le basi degli headline",
+   "href": null,
+   "y": 10352,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 2 - Come scrivere headline",
+   "href": null,
+   "y": 10437,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 3 - La scienza dietro alle headline",
+   "href": null,
+   "y": 10522,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 4 - Andrei scrive headline",
+   "href": null,
+   "y": 10607,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 5 - Headline checklist",
+   "href": null,
+   "y": 10692,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Prendi l'Armageddon Pack — 199€",
+   "href": "https://buy.stripe.com/00w28s9LA5Y0eIT8N64Ja1O",
+   "y": 15387,
+   "x": 421,
+   "w": 317,
+   "h": 50,
+   "bg": "#bc0807",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "700",
+   "transform": "none",
+   "padding": "17px 28px"
+  },
+  {
+   "text": "Torna alla pagina principale",
+   "href": "/",
+   "y": 15386,
+   "x": 750,
+   "w": 268,
+   "h": 52,
+   "bg": "transparent",
+   "color": "#f9f9f9",
+   "radius": "0px",
+   "border": "1px solid rgba(255, 255, 255, 0.35)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "700",
+   "transform": "none",
+   "padding": "17px 28px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/d0006d2a-ef4a-48df-ad57-2f9b7cdf6172.webp",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 733
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/arrow-red.webp",
+   "alt": "",
+   "y": 356,
+   "x": 320,
+   "w": 124,
+   "h": 124
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 733,
+   "x": 0,
+   "w": 1440,
+   "h": 1467
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/schema-1000-persone.webp",
+   "alt": "",
+   "y": 907,
+   "x": 494,
+   "w": 451,
+   "h": 447
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/outHeadline.webp",
+   "alt": "",
+   "y": 1796,
+   "x": 523,
+   "w": 394,
+   "h": 327
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 733,
+   "x": 0,
+   "w": 1440,
+   "h": 1467
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 733,
+   "x": 0,
+   "w": 1440,
+   "h": 1467
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/bakground-green-lines-oh.webp",
+   "alt": "",
+   "y": 2171,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2171,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2171,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 2217,
+   "x": 0,
+   "w": 1440,
+   "h": 2169
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/andrei-money-graph.webp",
+   "alt": "",
+   "y": 2456,
+   "x": 354,
+   "w": 732,
+   "h": 488
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/burning-phone-sp.webp",
+   "alt": "",
+   "y": 3282,
+   "x": 692,
+   "w": 361,
+   "h": 340
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/white-arrow.webp",
+   "alt": "",
+   "y": 4228,
+   "x": 973,
+   "w": 102,
+   "h": 102
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/white-arrow.webp",
+   "alt": "",
+   "y": 3980,
+   "x": 953,
+   "w": 74,
+   "h": 74
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-2.webp",
+   "alt": "",
+   "y": 4386,
+   "x": 15,
+   "w": 482,
+   "h": 482
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/r4trgfdcs.webp",
+   "alt": "",
+   "y": 4763,
+   "x": 974,
+   "w": 419,
+   "h": 419
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 5183,
+   "x": 0,
+   "w": 1440,
+   "h": 1053
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/1-jpg.webp",
+   "alt": "Image 1",
+   "y": 5449,
+   "x": 388,
+   "w": 665,
+   "h": 498
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/banner-v1.webp",
+   "alt": "",
+   "y": 6236,
+   "x": 0,
+   "w": 1440,
+   "h": 1019
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/outheadline-logo-04.webp",
+   "alt": "",
+   "y": 6284,
+   "x": 590,
+   "w": 259,
+   "h": 74
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Title.webp",
+   "alt": "",
+   "y": 6729,
+   "x": 454,
+   "w": 532,
+   "h": 299
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 7255,
+   "x": 0,
+   "w": 1440,
+   "h": 1074
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/baby-andre-oh.webp",
+   "alt": "",
+   "y": 7511,
+   "x": 0,
+   "w": 404,
+   "h": 404
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/copy-imprenditore.graphic.webp",
+   "alt": "",
+   "y": 7840,
+   "x": 1026,
+   "w": 414,
+   "h": 414
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7255,
+   "x": 0,
+   "w": 1440,
+   "h": 1074
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7255,
+   "x": 0,
+   "w": 1440,
+   "h": 1074
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/bakground-green-lines-oh.webp",
+   "alt": "",
+   "y": 8301,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 8301,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 8301,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 8347,
+   "x": 0,
+   "w": 1440,
+   "h": 754
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/ghjgk22.webp",
+   "alt": "",
+   "y": 8376,
+   "x": 320,
+   "w": 597,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/MacBook-Pro-Mockup.webp",
+   "alt": "",
+   "y": 8485,
+   "x": 793,
+   "w": 647,
+   "h": 478
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/outHeadline-Drop-Overview.webp",
+   "alt": "",
+   "y": 8376,
+   "x": 928,
+   "w": 512,
+   "h": 725
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/8.webp",
+   "alt": "",
+   "y": 9379,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/9.webp",
+   "alt": "",
+   "y": 10040,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Green-Black-Gradient-Background.webp",
+   "alt": "",
+   "y": 10818,
+   "x": 0,
+   "w": 1440,
+   "h": 686
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/1-png.webp",
+   "alt": "",
+   "y": 11054,
+   "x": 523,
+   "w": 394,
+   "h": 215
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/2.webp",
+   "alt": "",
+   "y": 11223,
+   "x": 523,
+   "w": 394,
+   "h": 186
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 11504,
+   "x": 0,
+   "w": 1440,
+   "h": 748
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11504,
+   "x": 0,
+   "w": 1440,
+   "h": 748
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11504,
+   "x": 0,
+   "w": 1440,
+   "h": 748
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/bakground-green-lines-oh.webp",
+   "alt": "",
+   "y": 12223,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 12223,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 12223,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 12269,
+   "x": 0,
+   "w": 1440,
+   "h": 1263
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Piattaforma.-Brand-voice.-Competitor.-Consapevolezza.-Miglior-approccio.-Gancio.-Messaggio-core.-Reason-why..webp",
+   "alt": "",
+   "y": 12598,
+   "x": 489,
+   "w": 462,
+   "h": 678
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/andrei-killer.webp",
+   "alt": "",
+   "y": 13825,
+   "x": 369,
+   "w": 702,
+   "h": 468
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-png.webp",
+   "alt": "",
+   "y": 15276,
+   "x": 0,
+   "w": 681,
+   "h": 784
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/lolol.webp",
+   "alt": "",
+   "y": 15531,
+   "x": 764,
+   "w": 182,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 16317,
+   "x": 0,
+   "w": 1440,
+   "h": 973
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16317,
+   "x": 0,
+   "w": 1440,
+   "h": 973
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16317,
+   "x": 0,
+   "w": 1440,
+   "h": 973
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/bakground-green-lines-oh.webp",
+   "alt": "",
+   "y": 17261,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17261,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17261,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 17307,
+   "x": 0,
+   "w": 1440,
+   "h": 623
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/pattern-white-copy.webp",
+   "alt": "",
+   "y": 17930,
+   "x": 0,
+   "w": 1440,
+   "h": 1004
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/ChatGPT-Logo.webp",
+   "alt": "",
+   "y": 17977,
+   "x": 655,
+   "w": 131,
+   "h": 74
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/chatgpt-oh.webp",
+   "alt": "",
+   "y": 18259,
+   "x": 413,
+   "w": 614,
+   "h": 384
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Untitled-1-jpg.webp",
+   "alt": "",
+   "y": 18934,
+   "x": 0,
+   "w": 1440,
+   "h": 872
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19023,
+   "x": 518,
+   "w": 369,
+   "h": 76
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outheadline/Artboard--E2-80-93-96.webp",
+   "alt": "",
+   "y": 19299,
+   "x": 546,
+   "w": 348,
+   "h": 299
+  }
+ ],
+ "blocchi_testo": 280,
+ "meta": {
+  "description": null,
+  "og_title": null,
+  "og_image": null,
+  "canonical": null,
+  "jsonld": []
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 733,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "QUESTA È UNA",
+   "headings": [
+    "QUESTA È UNA",
+    "HEADLINE.",
+    "E solo i copywriter che scrivono HEADLINE persuasive sono disperatamente richiesti… E guadagnano di più."
+   ],
+   "blocchi_testo": 8,
+   "parole": 19,
+   "densita": 3,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-questa-una.png"
+  },
+  {
+   "i": 2,
+   "y": 733,
+   "h": 1467,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "…Ecco cosa succede se 1000",
+   "headings": [
+    "…Ecco cosa succede se 1000",
+    "persone vedono la tua pagina:",
+    "Se sei il copy medio…",
+    "Devi scrivere titoli migliori che impediscono ai clienti di skipparti così."
+   ],
+   "blocchi_testo": 10,
+   "parole": 40,
+   "densita": 3,
+   "media": 5,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|7",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-ecco-cosa-succede-se-1000.png"
+  },
+  {
+   "i": 3,
+   "y": 2217,
+   "h": 2169,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|11",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-div.png"
+  },
+  {
+   "i": 4,
+   "y": 4386,
+   "h": 797,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Se sei un copywriter…",
+   "headings": [
+    "Se sei un copywriter…",
+    "Se sei imprenditore che scrive copy da solo…"
+   ],
+   "blocchi_testo": 6,
+   "parole": 90,
+   "densita": 11,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 1,
+   "rappresentante": false,
+   "screenshot": "sezioni/04-se-sei-un-copywriter.png"
+  },
+  {
+   "i": 5,
+   "y": 5183,
+   "h": 1053,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Vedi la differenza tu stesso.",
+   "headings": [
+    "Vedi la differenza tu stesso.",
+    "Premi il pulsante sotto per trasformare la headline.",
+    "Andare da una versione all’altra di questa headline non è facile… Ci sono specifiche metodologie per farlo."
+   ],
+   "blocchi_testo": 6,
+   "parole": 32,
+   "densita": 3,
+   "media": 2,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|5",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-vedi-la-differenza-tu-stesso.png"
+  },
+  {
+   "i": 6,
+   "y": 6236,
+   "h": 1019,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Dove troverai tutte le strategie per scrivere headline che i copywriter elite si sono sempre tenuti per sé… Fino ad oggi.",
+   "headings": [
+    "Dove troverai tutte le strategie per scrivere headline che i copywriter elite si sono sempre tenuti per sé… Fino ad oggi.",
+    "Il primo corso Italiano dedicato solo ed esclusivamente alla scrittura di Headline estremamente persuasive.",
+    "Questo è l’unico corso in tutta Italia dedicata solo ed esclusivamente alla scrittura di headline. Da me, Andrei, il copywriter… Per copywriter."
+   ],
+   "blocchi_testo": 7,
+   "parole": 92,
+   "densita": 9,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|5",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-dove-troverai-tutte-le-strategie-p.png"
+  },
+  {
+   "i": 7,
+   "y": 7255,
+   "h": 1074,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Le basi del copy sono ovunque… Ma la roba seria dove sta?",
+   "headings": [
+    "Le basi del copy sono ovunque… Ma la roba seria dove sta?",
+    "Quando iniziai la mia carriera, ero solo un ragazzino che non ne capiva nulla"
+   ],
+   "blocchi_testo": 8,
+   "parole": 174,
+   "densita": 16,
+   "media": 5,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|5",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-le-basi-del-copy-sono-ovunque-ma-l.png"
+  },
+  {
+   "i": 8,
+   "y": 8347,
+   "h": 754,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|4",
+   "gruppo": 8,
+   "rappresentante": true,
+   "screenshot": "sezioni/08-div.png"
+  },
+  {
+   "i": 9,
+   "y": 9101,
+   "h": 1718,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "outHeadline lista lezioni:",
+   "headings": [
+    "outHeadline lista lezioni:",
+    "Sezioni A & B: introduzione al copy",
+    "Sezione A - Intro",
+    "Sezione B - Copywriting",
+    "Sezioni 1,2,3,4 & 5: come scrivere headline",
+    "Sezione 1 - Le basi degli headline"
+   ],
+   "blocchi_testo": 94,
+   "parole": 97,
+   "densita": 6,
+   "media": 2,
+   "cta": 7,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|9",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-outheadline-lista-lezioni.png"
+  },
+  {
+   "i": 10,
+   "y": 10818,
+   "h": 686,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "outHeadline non è per principianti",
+   "headings": [
+    "outHeadline non è per principianti"
+   ],
+   "blocchi_testo": 1,
+   "parole": 5,
+   "densita": 1,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|3",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-outheadline-non-per-principianti.png"
+  },
+  {
+   "i": 11,
+   "y": 11504,
+   "h": 748,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "“Per scrivere headline basta usare formule”",
+   "headings": [
+    "“Per scrivere headline basta usare formule”"
+   ],
+   "blocchi_testo": 12,
+   "parole": 79,
+   "densita": 11,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|4",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-per-scrivere-headline-basta-usare.png"
+  },
+  {
+   "i": 12,
+   "y": 12269,
+   "h": 1263,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|6",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-div.png"
+  },
+  {
+   "i": 13,
+   "y": 13532,
+   "h": 1716,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "ONE SHOT,",
+   "headings": [
+    "ONE SHOT,",
+    "ONE KILL",
+    "Copywriter : campagna di marketing = cecchino : missione militare"
+   ],
+   "blocchi_testo": 33,
+   "parole": 166,
+   "densita": 10,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|9",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-one-shot.png"
+  },
+  {
+   "i": 14,
+   "y": 15248,
+   "h": 1069,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "“Un corso di più di 3 ore su come scrivere titoli? Ma sei pazzo?”",
+   "headings": [
+    "“Un corso di più di 3 ore su come scrivere titoli? Ma sei pazzo?”",
+    "Le persone di successo sono quelle che fanno quello che serve, non quello “che vogliono”. Vale anche per i copywriter, non solo per discorsi motivazionali."
+   ],
+   "blocchi_testo": 12,
+   "parole": 143,
+   "densita": 13,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|5",
+   "gruppo": 6,
+   "rappresentante": false,
+   "screenshot": "sezioni/14-un-corso-di-pi-di-3-ore-su-come-s.png"
+  },
+  {
+   "i": 15,
+   "y": 16317,
+   "h": 973,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Entrando in outHeadline e studiandolo… Sei più vicino al lavorare con multinazionali.",
+   "headings": [
+    "Entrando in outHeadline e studiandolo… Sei più vicino al lavorare con multinazionali.",
+    "Che significa copywriting scientifico?"
+   ],
+   "blocchi_testo": 5,
+   "parole": 138,
+   "densita": 14,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|5",
+   "gruppo": 7,
+   "rappresentante": false,
+   "screenshot": "sezioni/15-entrando-in-outheadline-e-studiand.png"
+  },
+  {
+   "i": 16,
+   "y": 17307,
+   "h": 623,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|3",
+   "gruppo": 16,
+   "rappresentante": true,
+   "screenshot": "sezioni/16-div.png"
+  },
+  {
+   "i": 17,
+   "y": 17930,
+   "h": 1004,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "“Ma io le faccio scrivere a ChatGPT”",
+   "headings": [
+    "“Ma io le faccio scrivere a ChatGPT”",
+    "Ma se non conosci le strategie, non puoi usare l’AI responsabilmente."
+   ],
+   "blocchi_testo": 6,
+   "parole": 94,
+   "densita": 9,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|5",
+   "gruppo": 6,
+   "rappresentante": false,
+   "screenshot": "sezioni/17-ma-io-le-faccio-scrivere-a-chatgp.png"
+  },
+  {
+   "i": 18,
+   "y": 18934,
+   "h": 872,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "outHeadline? Probabilmente non è per te. Ma se lo è… Stai per svoltare.",
+   "headings": [
+    "outHeadline? Probabilmente non è per te. Ma se lo è… Stai per svoltare."
+   ],
+   "blocchi_testo": 4,
+   "parole": 17,
+   "densita": 2,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 1,
+   "rappresentante": false,
+   "screenshot": "sezioni/18-outheadline-probabilmente-non-per.png"
+  },
+  {
+   "i": 19,
+   "y": 19806,
+   "h": 258,
+   "prof": 1,
+   "tag": "div",
+   "id": null,
+   "classi": "ag-legal",
+   "bg": "#101011",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 3,
+   "parole": 90,
+   "densita": 35,
+   "media": 0,
+   "cta": 0,
+   "firma": "div|ag-legal|2|-|-|1",
+   "gruppo": 19,
+   "rappresentante": true,
+   "screenshot": "sezioni/19-div.png"
+  }
+ ],
+ "sezioni_totali": 19,
+ "sezioni_distinte": 14,
+ "src": [
+  {
+   "file": "src/01-contrast-fix.css",
+   "url": "https://armageddon.bsns.it/assets/contrast-fix.css",
+   "bytes": 14114
+  },
+  {
+   "file": "src/02-mirror.css",
+   "url": "https://armageddon.bsns.it/assets/mirror.css",
+   "bytes": 10291
+  },
+  {
+   "file": "src/03-mirror.js",
+   "url": "https://armageddon.bsns.it/assets/mirror.js",
+   "bytes": 13313
+  },
+  {
+   "file": "src/04-06441d7b-website.components.horizontalrule.styles.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/06441d7b-website.components.horizontalrule.styles.css",
+   "bytes": 108
+  },
+  {
+   "file": "src/05-0be3e4f6-custom.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/0be3e4f6-custom.css",
+   "bytes": 1183
+  },
+  {
+   "file": "src/06-2b7bfb92-8308d1793f387442-min.it-IT.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/2b7bfb92-8308d1793f387442-min.it-IT.css",
+   "bytes": 5621
+  },
+  {
+   "file": "src/07-2bca9184-site.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/2bca9184-site.css",
+   "bytes": 1273207
+  },
+  {
+   "file": "src/08-2dbd7472-e237edef00ae5990-min.it-IT.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/2dbd7472-e237edef00ae5990-min.it-IT.css",
+   "bytes": 13228
+  },
+  {
+   "file": "src/09-30124067-website.components.socialLinks.styles.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/30124067-website.components.socialLinks.styles.css",
+   "bytes": 15249
+  },
+  {
+   "file": "src/10-37b3991b-35ebb88013744865-min.it-IT.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/37b3991b-35ebb88013744865-min.it-IT.css",
+   "bytes": 25629
+  },
+  {
+   "file": "src/11-42a6f030-website.components.accordion.styles.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/42a6f030-website.components.accordion.styles.css",
+   "bytes": 9134
+  },
+  {
+   "file": "src/12-4ecf16d9-website.components.button.styles.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/4ecf16d9-website.components.button.styles.css",
+   "bytes": 1341
+  },
+  {
+   "file": "src/13-85e1a20c-website.components.video.styles.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/85e1a20c-website.components.video.styles.css",
+   "bytes": 5090
+  },
+  {
+   "file": "src/14-986dca5f-commerce-d50e5960dc9fd059-min.it-IT.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/986dca5f-commerce-d50e5960dc9fd059-min.it-IT.css",
+   "bytes": 9832
+  },
+  {
+   "file": "src/15-9d4bfc9d-website.components.imageFluid.styles.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/9d4bfc9d-website.components.imageFluid.styles.css",
+   "bytes": 3034
+  },
+  {
+   "file": "src/16-c7bfd762-website.components.code.styles.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/c7bfd762-website.components.code.styles.css",
+   "bytes": 115
+  },
+  {
+   "file": "src/17-cd76cb5b-user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/cd76cb5b-user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "bytes": 2301
+  },
+  {
+   "file": "src/18-d59d72b2-static.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/d59d72b2-static.css",
+   "bytes": 481489
+  },
+  {
+   "file": "src/19-f2d84f95-website.components.html.styles.css",
+   "url": "https://armageddon.bsns.it/assets/mirror/f2d84f95-website.components.html.styles.css",
+   "bytes": 118
+  },
+  {
+   "file": "src/20-veils.css",
+   "url": "https://armageddon.bsns.it/assets/veils.css",
+   "bytes": 6637
+  },
+  {
+   "file": "src/21-css2.css",
+   "url": "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap",
+   "bytes": 15321
+  }
+ ],
+ "segmentazione": "ok"
+}

@@ -1,0 +1,639 @@
+{
+ "url": "https://armageddon.bsns.it/",
+ "slug": "11-armageddon",
+ "catturata": "2026-09-07",
+ "dominio": "armageddon.bsns.it",
+ "titolo": "Armageddon — outEmail, outFunnel, outHeadline, outViral a 199€",
+ "lang": "it",
+ "costruzione": "artigianale",
+ "altezza": 5103,
+ "larghezza": 1430,
+ "altezza_mobile": 2830,
+ "body_bg": "#000000",
+ "body_font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+ "palette_testo": [
+  [
+   "#ffffff",
+   41
+  ],
+  [
+   "#ffffff @0.76",
+   11
+  ],
+  [
+   "#bc0807",
+   5
+  ],
+  [
+   "#ffffff @0.5",
+   4
+  ],
+  [
+   "#ffffff @0.55",
+   3
+  ],
+  [
+   "#ffffff @0.42",
+   2
+  ],
+  [
+   "#ffffff @0.78",
+   1
+  ],
+  [
+   "transparent",
+   1
+  ],
+  [
+   "#000000",
+   1
+  ],
+  [
+   "#0000ee",
+   1
+  ],
+  [
+   "#ffffff @0.62",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#000000",
+   4
+  ],
+  [
+   "#bc0807",
+   4
+  ],
+  [
+   "#000000 (+img)",
+   2
+  ],
+  [
+   "#ffffff",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+   59
+  ],
+  [
+   "Curseyt, \"Times New Roman\", serif",
+   12
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16.512px / lh 27.4099px / w700",
+   19
+  ],
+  [
+   "16.512px / lh 27.4099px / w400",
+   12
+  ],
+  [
+   "19.008px / lh 25.6608px / w700",
+   11
+  ],
+  [
+   "28.3203px / lh 28.3203px / w800",
+   4
+  ],
+  [
+   "12px / lh normal / w700",
+   4
+  ],
+  [
+   "59.52px / lh 65.472px / w400",
+   4
+  ],
+  [
+   "14.88px / lh normal / w400",
+   3
+  ],
+  [
+   "191.616px / lh 191.616px / w400",
+   2
+  ],
+  [
+   "24.9651px / lh normal / w800",
+   2
+  ],
+  [
+   "81.6px / lh 81.6px / w400",
+   2
+  ],
+  [
+   "12px / lh 20.4px / w400",
+   2
+  ],
+  [
+   "13.92px / lh normal / w800",
+   1
+  ],
+  [
+   "194.4px / lh 194.4px / w400",
+   1
+  ],
+  [
+   "94.08px / lh 94.08px / w400",
+   1
+  ],
+  [
+   "151.987px / lh 151.987px / w400",
+   1
+  ],
+  [
+   "72px / lh 72px / w400",
+   1
+  ],
+  [
+   "12px / lh 21px / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "700",
+   34
+  ],
+  [
+   "400",
+   30
+  ],
+  [
+   "800",
+   7
+  ]
+ ],
+ "raggi": [
+  [
+   "6.375px",
+   4
+  ],
+  [
+   "15.1861px",
+   2
+  ],
+  [
+   "15.1872px",
+   1
+  ]
+ ],
+ "ombre": [],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    132
+   ],
+   [
+    "transform 0.82s cubic-bezier(0.65, 0, 0.25, 1)",
+    3
+   ],
+   [
+    "transform 0.12s, background-color 0.12s, color 0.12s",
+    2
+   ],
+   [
+    "filter 0.25s, transform 0.35s cubic-bezier(0.16, 0.86, 0.3, 1)",
+    1
+   ],
+   [
+    "color 0.25s",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "ag-rise 1.2s cubic-bezier(0.16, 0.86, 0.3, 1)",
+    3
+   ],
+   [
+    "ag-fade 1.4s ease-out",
+    2
+   ],
+   [
+    "ag-zoom 1.7s cubic-bezier(0.16, 0.86, 0.3, 1)",
+    1
+   ]
+  ],
+  "filtri": [
+   [
+    "drop-shadow(rgba(0, 0, 0, 0.55) 0px 11.52px 28.8px) drop-shadow(rgba(0, 0, 0, 0.45) 0px 30.72px 74.88px)",
+    2
+   ],
+   [
+    "drop-shadow(rgba(0, 0, 0, 0.9) 0px 0px 13.44px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    9
+   ],
+   [
+    "matrix(0.992202, 0.124641, -0.124641, 0.992202, 0, 0)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [
+  "AiCreditsEnrollmentModal_module_backdropFadeIn__6d3d95f8",
+  "AiCreditsEnrollmentModal_module_backdropFadeOut__6d3d95f8",
+  "AiCreditsEnrollmentModal_module_modalSlideIn__6d3d95f8",
+  "AiCreditsEnrollmentModal_module_modalSlideOut__6d3d95f8",
+  "AnimatedClock_module_hourHand__8976d762",
+  "AnimatedClock_module_minuteHand__8976d762",
+  "EmbedButton_module_embedPop__dece8678",
+  "LikeButton_module_heartbeat__3908feee",
+  "LinkOutro_module_slideDown__0f1c39e6",
+  "OutroContentWrapper_module_fadeIn__06afa88b",
+  "ShareButton_module_takeoff__26260904",
+  "ShareSheet_module_backdropFadeIn__5ab8a323",
+  "ShareSheet_module_backdropFadeOut__5ab8a323",
+  "ShareSheet_module_modalSlideIn__5ab8a323",
+  "ShareSheet_module_modalSlideOut__5ab8a323",
+  "Spinner_module_buffer__795e5e53",
+  "Spinner_module_dash__795e5e53",
+  "Spinner_module_pulse__795e5e53",
+  "Spinner_module_rotate__795e5e53",
+  "Spinner_module_scaleAnimation__795e5e53",
+  "Spinner_module_throb__795e5e53",
+  "Spinner_module_wiggle__795e5e53",
+  "TinyProgressBar_module_buffer__c04d36b1",
+  "WatchLaterButton_module_pop__238c6c3b",
+  "ag-fade",
+  "ag-rise",
+  "ag-zoom",
+  "buffer",
+  "dash",
+  "pulse",
+  "rotate",
+  "scaleAnimation",
+  "throb",
+  "wiggle"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 86,
+   "text": "Armageddon Armageddon is here"
+  },
+  {
+   "tag": "h2",
+   "y": 1877,
+   "text": "Sei pronto?"
+  },
+  {
+   "tag": "h2",
+   "y": 3895,
+   "text": "Domande"
+  },
+  {
+   "tag": "h2",
+   "y": 0,
+   "text": "Cosa include"
+  }
+ ],
+ "cta": [
+  {
+   "text": "BSNS.IT",
+   "href": "https://bsns.it",
+   "y": 26,
+   "x": 652,
+   "w": 125,
+   "h": 35,
+   "bg": "transparent",
+   "color": "#0000ee",
+   "radius": "0px",
+   "border": "0px none rgb(0, 0, 238)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "COMPRA",
+   "href": "https://buy.stripe.com/00w28s9LA5Y0eIT8N64Ja1O",
+   "y": 2888,
+   "x": 571,
+   "w": 288,
+   "h": 71,
+   "bg": "#ffffff",
+   "color": "#000000",
+   "radius": "15.1861px",
+   "border": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "size": 24.9651,
+   "weight": "800",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "COSA INCLUDE?",
+   "href": null,
+   "y": 2979,
+   "x": 571,
+   "w": 288,
+   "h": 71,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "15.1861px",
+   "border": "3px solid rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 24.9651,
+   "weight": "800",
+   "transform": "none",
+   "padding": "1px 6px"
+  },
+  {
+   "text": "outEmail",
+   "href": "/outemail",
+   "y": 3529,
+   "x": 633,
+   "w": 164,
+   "h": 59,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 59.52,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "outFunnel",
+   "href": "/outfunnel",
+   "y": 3606,
+   "x": 623,
+   "w": 184,
+   "h": 59,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 59.52,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "outHeadline",
+   "href": "/outheadline",
+   "y": 3683,
+   "x": 605,
+   "w": 219,
+   "h": 59,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 59.52,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "outViral",
+   "href": "/outviral",
+   "y": 3760,
+   "x": 639,
+   "w": 151,
+   "h": 59,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 59.52,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "img",
+   "src": "/assets/home/eye-mark.webp",
+   "alt": "",
+   "y": 26,
+   "x": 652,
+   "w": 35,
+   "h": 35
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/splatter-left.webp",
+   "alt": "",
+   "y": 86,
+   "x": 235,
+   "w": 152,
+   "h": 893
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/splatter-right.webp",
+   "alt": "",
+   "y": 301,
+   "x": 732,
+   "w": 462,
+   "h": 653
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/portrait.webp",
+   "alt": "Andrei Pascu",
+   "y": 86,
+   "x": 235,
+   "w": 960,
+   "h": 960
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1166,
+   "x": 614,
+   "w": 202,
+   "h": 121
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1224266050?h=146a86b1fa&title=0&byline=0&portrait=0&dnt=1",
+   "alt": "",
+   "y": 1298,
+   "x": 362,
+   "w": 733,
+   "h": 412
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/ticket-back.webp",
+   "alt": "",
+   "y": 2312,
+   "x": 590,
+   "w": 328,
+   "h": 543
+  },
+  {
+   "tag": "img",
+   "src": "/assets/home/ticket-front.webp",
+   "alt": "Armageddon pack: outEmail, outFunnel, outHeadline, outViral — 199€",
+   "y": 2256,
+   "x": 500,
+   "w": 317,
+   "h": 605
+  }
+ ],
+ "blocchi_testo": 53,
+ "meta": {
+  "description": "Quattro prodotti in un pack solo: outEmail, outFunnel, outHeadline, outViral. 199€ fino a giovedì 10 settembre, più 199€ di sconto su Funnel Operator al lancio.",
+  "og_title": "Armageddon is here",
+  "og_image": "https://armageddon.bsns.it/assets/home/og.jpg",
+  "canonical": null,
+  "jsonld": []
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 86,
+   "h": 960,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "hero",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Armageddon Armageddon is here",
+   "headings": [
+    "Armageddon Armageddon is here"
+   ],
+   "blocchi_testo": 4,
+   "parole": 4,
+   "densita": 0,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|hero|3|M|-|5",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-armageddon-armageddon-is-here.png"
+  },
+  {
+   "i": 2,
+   "y": 1046,
+   "h": 1043,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "stage",
+   "bg": "#000000",
+   "bg_img": true,
+   "heading": "Sei pronto?",
+   "headings": [
+    "Sei pronto?"
+   ],
+   "blocchi_testo": 2,
+   "parole": 5,
+   "densita": 0,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|stage|3|M|-|5",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-sei-pronto.png"
+  },
+  {
+   "i": 3,
+   "y": 2089,
+   "h": 1365,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "offer",
+   "bg": "#000000",
+   "bg_img": true,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 19,
+   "parole": 18,
+   "densita": 1,
+   "media": 2,
+   "cta": 2,
+   "firma": "section|offer|6|M|C|7",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-section.png"
+  },
+  {
+   "i": 4,
+   "y": 3454,
+   "h": 1649,
+   "prof": 2,
+   "tag": "footer",
+   "id": "cosa-include",
+   "classi": "tail",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Domande",
+   "headings": [
+    "Domande"
+   ],
+   "blocchi_testo": 25,
+   "parole": 165,
+   "densita": 10,
+   "media": 0,
+   "cta": 4,
+   "firma": "footer|tail|3|-|C|8",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-domande.png"
+  }
+ ],
+ "sezioni_totali": 4,
+ "sezioni_distinte": 4,
+ "src": [
+  {
+   "file": "src/01-armageddon.css",
+   "url": "https://armageddon.bsns.it/assets/armageddon.css",
+   "bytes": 25447
+  },
+  {
+   "file": "src/02-player.css",
+   "url": "https://f.vimeocdn.com/p/4.46.106/css/player.css",
+   "bytes": 238277
+  },
+  {
+   "file": "src/03-hls-js.module.js",
+   "url": "https://f.vimeocdn.com/p/4.46.106/js/hls-js.module.js",
+   "bytes": 540560
+  },
+  {
+   "file": "src/04-player.module.js",
+   "url": "https://f.vimeocdn.com/p/4.46.106/js/player.module.js",
+   "bytes": 928984
+  },
+  {
+   "file": "src/05-vendor.module.js",
+   "url": "https://f.vimeocdn.com/p/4.46.106/js/vendor.module.js",
+   "bytes": 327636
+  },
+  {
+   "file": "src/06-css2.css",
+   "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap",
+   "bytes": 5016
+  }
+ ],
+ "segmentazione": "ok"
+}

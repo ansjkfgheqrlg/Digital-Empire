@@ -207,10 +207,18 @@ JS_TOKENS = r"""
 JS_SEZIONI = r"""
 (minH) => {
   const vw = window.innerWidth;
+  const H = document.body.scrollHeight;
+  /* Un CONTENITORE non e' una sezione. Su una pagina costruita a mano il nodo
+     piu' alto (.page, main, un wrapper) copre tutto e, se lo si prende, blocca
+     ogni altra scelta: e' esattamente cosi' che il primo giro su armageddon ha
+     trovato "1 sezione". Quindi si squalifica chi copre piu' del 60% della
+     pagina, e si scende. */
+  const TETTO = Math.max(H * 0.6, 2000);
   const candidati = [];
   for (const el of document.querySelectorAll('body *')) {
     const r = el.getBoundingClientRect();
     if (r.height < minH) continue;
+    if (r.height > TETTO) continue;
     if (r.width < vw * 0.55) continue;
     const s = getComputedStyle(el);
     if (s.display === 'none' || s.visibility === 'hidden') continue;
@@ -389,6 +397,10 @@ def capture(url, outdir, slug, max_slices, scarica_src=True, max_sezioni=60, for
 
                 # ---- SEZIONI + screenshot per sezione ------------------------
                 sezioni = pg.evaluate(JS_SEZIONI, 180)
+                if len(sezioni) < 3:
+                    # ripiego dichiarato (dossier 33, tabella dei modi di rottura):
+                    # soglia piu' bassa prima di arrendersi alle fette cieche
+                    sezioni = pg.evaluate(JS_SEZIONI, 90)
                 sezioni = sezioni[:max_sezioni]
                 visti = {}
                 for s in sezioni:

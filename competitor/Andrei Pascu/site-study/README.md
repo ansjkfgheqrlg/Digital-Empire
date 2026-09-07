@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #competitor #andrei-pascu #site-study #design-system #copy-teardown
 Created: 2026-09-01
-Last updated: 2026-09-06
+Last updated: 2026-09-07
 ---
 
 # STUDIO SITI ANDREI PASCU — indice
@@ -14,7 +14,13 @@ Fa parte del **Reparto Competitor Research** di Digital Empire (ecosistema #1: A
 
 ---
 
-## Stato: 10 report su 11 catturate
+> ⚠️ **QUESTO README E' SUPERATO DAL 2026-09-07.** L'enumerazione reale dell'ecosistema
+> (`ECOSISTEMA.md`) ha trovato **187 URL su 7 domini**, non 11 su 4: **76 pagine commerciali** piu'
+> 105 articoli di blog. Le 10 pagine qui sotto sono **il 13% del commerciale**, non il 90%.
+> Il piano dello studio totale e' in `PIANO-MAESTRO/33-PIANO-STUDIO-TOTALE-ANDREI-PASCU.md`.
+> **Lo stato vero si legge in [ECOSISTEMA.md](ECOSISTEMA.md), non qui.**
+
+## Stato: 10 report su 76 pagine commerciali
 
 | # | Pagina | Altezza | Blocchi copy | Report |
 |---|--------|---------|--------------|--------|

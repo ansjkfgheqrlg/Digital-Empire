@@ -1,0 +1,274 @@
+/* fonte: https://armageddon.bsns.it/assets/mirror.css */
+/* ==========================================================================
+   Overlay for the mirrored product pages.
+
+   The pages themselves are the originals from andrei-copy.com, stylesheets and
+   all. This file adds only what the funnel needs on top: the sticky purchase
+   bar, and the marker on the videos that still have to move to Vimeo.
+   Nothing here is a design decision — the Armageddon treatment replaces it.
+   ========================================================================== */
+
+/* The fixed site header is not carried over, so nothing has to clear it. */
+html { --header-height: 0px !important; }
+
+/* --- The bare sections -------------------------------------------------
+   outFunnel, outHeadline and outViral set `body` to #a8a8a8, and roughly a
+   third of each page is sections with no background media, so that mid-grey
+   is what shows through. It is faithful to andrei-copy.com — the live page
+   does the same — but next to the dark textured sections it reads as an
+   unfinished panel rather than a light one, and it drags the near-black body
+   copy down to a muddy 7:1. A clean off-white makes those sections read as
+   deliberate and takes the same text to 15:1. Nothing else about them moves.
+   `tools/contrast.py` re-measures every run against this. */
+
+/* Squarespace paints it through one variable: site.css sets
+   `:root { --siteBackgroundColor: hsla(var(--accent-hsl),1) }` — the 66% grey —
+   and every `.page-section .section-border` plate fills with it. A section that
+   carries its own theme (`[data-section-theme="black"]` and friends) redefines
+   the variable for itself, so overriding the root value moves only the
+   sections that were taking the default, and leaves every deliberately dark or
+   white section exactly as it was. */
+:root { --siteBackgroundColor: #f4f4f3; }
+
+/* --- The washed-out sections -------------------------------------------
+   The sections that do carry a photo put a veil over it so the dark body copy
+   can be read: `.section-background-overlay` filled with
+   `var(--backgroundOverlayColor)` — the same 66% grey — at opacities from 0.15
+   up to 0.83. At the top of that range the photo is gone and what is left is
+   flat dirty grey, which is the "washed out / greyed out" Andrei is pointing
+   at. Same veil in the same place, but in the page's own off-white: the photo
+   reads as texture instead of mud, the section matches the bare ones, and the
+   copy on it gets lighter ground rather than darker. Opacities are untouched —
+   they are his composition. */
+
+:root { --backgroundOverlayColor: #f4f4f3; }
+
+body { padding-bottom: 104px; }
+
+/* --- Sticky purchase bar ------------------------------------------------ */
+
+.ag-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  background: rgba(10, 10, 11, 0.92);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.ag-btn {
+  display: inline-block;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 17px 28px;
+  text-decoration: none;
+  border-radius: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.ag-btn:hover { opacity: 0.85; }
+.ag-btn--buy { background: #bc0807; color: #ffffff; }
+.ag-btn--back {
+  background: transparent;
+  color: #f9f9f9;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* --- GIFs re-encoded as looping MP4 ------------------------------------- */
+/* The Squarespace image rules only ever name `img`, so the stand-in video has
+   to be given the same box by hand. These are those rules verbatim, down to
+   the doubled .fe-block that scopes the last one to nested blocks only —
+   without it the video falls into flow and stretches its grid row. */
+
+.ag-gif { display: block; max-width: 100%; }
+
+.sqs-block[data-definition-name="website.components.imageFluid"]
+  .design-layout-fluid .ag-gif {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.sqs-block[data-definition-name="website.components.imageFluid"]
+  .design-layout-fluid .fluid-image-container .content-fill .ag-gif {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fe-block .fe-block
+  .sqs-block[data-definition-name="website.components.imageFluid"]
+  .design-layout-fluid.image-component-container-fit
+  .fluid-image-container .content-fit .ag-gif {
+  position: static;
+  aspect-ratio: var(--image-component-native-aspect-ratio);
+}
+
+/* --- Videos still to be re-hosted on Vimeo ------------------------------ */
+
+.video--todo { position: relative; }
+
+.video--todo .video__todo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  margin: 0;
+  padding: 10px 16px;
+  text-align: center;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.72);
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  body { padding-bottom: 132px; }
+  .ag-btn { padding: 14px 18px; font-size: 0.92rem; }
+  .ag-sticky { gap: 8px; padding: 12px 14px; }
+}
+
+/* --- Armageddon price treatment ----------------------------------------
+   Every product on these pages is now only sold inside the €199 Armageddon
+   pack, so the standalone price the originals print has to read as history.
+   The prices are baked into the card artwork on outEmail, outFunnel and
+   outHeadline, so the rule is drawn over the artwork at coordinates measured
+   off the source files; outViral prints a real price, so that one is struck
+   with `text-decoration`. `assets/mirror.js` positions the drawn ones and
+   re-measures on resize. Red is the Armageddon red from the homepage. */
+
+.ag-strike {
+  position: absolute;
+  z-index: 9000;
+  background: #bc0807;
+  border-radius: 2px;
+  pointer-events: none;
+  transform-origin: 50% 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.45);
+}
+
+/* outViral prints its price as text. */
+.ag-struck-text {
+  text-decoration: line-through !important;
+  text-decoration-color: #bc0807 !important;
+  text-decoration-thickness: 0.12em !important;
+  opacity: 0.65;
+}
+
+/* Red has to survive both backdrops: these pages put the pricing block on a
+   white card on outEmail and on near-black on the other three. #bc0807 is
+   2.4:1 on black, so `mirror.js` measures the panel and tags it, and the dark
+   panels get the same red lifted until it reads. */
+
+.ag-incluso {
+  display: block;
+  margin: 0 0 14px;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.78rem, 1.5vw, 0.95rem);
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #bc0807 !important;
+  text-wrap: balance;
+}
+
+.ag-on-dark .ag-incluso,
+.ag-incluso.ag-on-dark { color: #ff4f4c !important; }
+
+.ag-on-dark .ag-struck-text { text-decoration-color: #ff4f4c !important; }
+
+/* The originals print the pricing block in a mid-grey that all but vanishes on
+   the dark panels. Same type, same weight — only the ink is lifted. */
+.ag-on-dark .pricing-plan-product-title,
+.ag-on-dark .pricing-plan-price-amount { color: #f2f2f2 !important; }
+
+.ag-on-dark .pricing-plan-price-billing-period { color: #c9c9c9 !important; }
+
+/* --- The disclaimer -----------------------------------------------------
+   Andrei's wording, 5 September, the same paragraph the homepage footer
+   carries. These pages end on their pricing card and have no footer of their
+   own, so it is set as one: quiet, on the page's own off-white, above the
+   sticky bar rather than under it. `mirror.py` writes the markup. */
+
+.ag-legal {
+  padding: clamp(30px, 5vw, 54px) clamp(18px, 5vw, 40px) clamp(34px, 5vw, 58px);
+  background: #101011;
+  text-align: center;
+}
+
+.ag-legal p {
+  max-width: 88ch;
+  margin: 0 auto;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(11px, 1.15vw, 13px);
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ag-legal__id {
+  margin-top: 1.2em !important;
+  padding-top: 1.2em;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ag-legal a {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.ag-legal a:hover,
+.ag-legal a:focus-visible {
+  color: #ff4f4c;
+}
+
+/* --- outViral: the section with the phone -------------------------------
+   The original puts the iPhone mock-up in grid rows 11–26 of a 25-row
+   section, so it starts above the marble band it is meant to be standing on
+   and runs past the last row, where the section's own edge cuts it in half.
+   On a phone it is worse: the block sits entirely below the band, on bare
+   white, and is still clipped. Andrei called it out on 5 September — "the
+   phone going too low… they didn't put the right padding and spacing".
+
+   Only the rows move. The mock-up is set inside the band with a row of air
+   above and below it, and on mobile the band is carried down behind it so the
+   phone is never standing on nothing. It lives here rather than in the page
+   because the page is generated; `body.page-outviral` is what wins over the
+   section's own `<style>`, which comes later in the document. */
+
+/* Both breakpoints are written inside a query on purpose: the section's own
+   grid is 10 columns under 768px and 26 above it, so a mobile row/column pair
+   applied unscoped would put the band in the left 40% of the desktop page. */
+@media (max-width: 767px) {
+  body.page-outviral .fe-block-e8ca6f3fc6d200028285 { grid-area: 30 / 2 / 39 / 10; }
+  body.page-outviral .fe-block-9b46ff576b0caf2765c0 { grid-area: 16 / 1 / 40 / 11; }
+}
+
+@media (min-width: 768px) {
+  body.page-outviral .fe-block-e8ca6f3fc6d200028285 { grid-area: 13 / 17 / 23 / 26; }
+}
+
+/* The marble behind it is a 1600x1000 photograph cropped to a 1440x350 strip,
+   and the middle of that photograph is grey — so at full strength two thirds
+   of the band read as the same dull panel Andrei has been objecting to, with
+   his body copy sitting on top of it. Dropped to a tint, it keeps the marble
+   and lets the section's own off-white through: the band reads as lavender,
+   and the near-black copy on it goes from 4.5:1 to comfortable. */
+body.page-outviral .fe-block-9b46ff576b0caf2765c0 img { opacity: 0.42; }

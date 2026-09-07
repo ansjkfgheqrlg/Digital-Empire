@@ -1,0 +1,2 @@
+/* fonte: https://apsales.eu/assets/useServerFn-C9O_qu9A.js */
+import{a as e,r as t}from"./jsx-runtime-CBeXhfNn.js";import{f as n,m as r}from"./index-CfVXeo8a.js";var i=e(t(),1);function a(e){let t=n();return i.useCallback(async(...n)=>{try{let t=await e(...n);if(r(t))throw t;return t}catch(e){if(r(e))return e.options._fromLocation=t.stores.location.get(),t.navigate(t.resolveRedirect(e).options);throw e}},[t,e])}export{a as t};

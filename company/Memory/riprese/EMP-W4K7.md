@@ -153,6 +153,29 @@ non riguarda questi cinque run.
   `unisci_atomi.py`, che rinumera in `KA-nnn` e **misura da solo** archi rotti, orfani, ancore
   inventate e componenti connesse del grafo.
 
+### 2026-09-07 08:05 — trovato e chiuso un bug reale della pipeline: `v09` era tagliato al 23%
+
+**Cosa si e' scoperto:** `max18-v09` (agenti vocali, 133 minuti) aveva **104 scene indicizzate
+ma coprivano solo 0:00-30:24**, un quarto del video. Causa: `frame_extractor.py` cercava
+`video.*` per capire se il video era gia' scaricato — e un download interrotto lascia
+**`video.mp4.part`**, che quel glob prendeva per un file completo. La durata usata per
+pianificare i frame veniva poi da `ingest.json` (dichiarata da YouTube, sempre giusta), quindi
+tutto sembrava normale finche' non si contavano davvero i minuti coperti.
+
+**Fix nel codice (non aggirato, corretto):** `frame_extractor.py` ora (1) esclude sempre i file
+`.part` dal controllo "video gia' scaricato", (2) confronta la durata REALE del file (ffprobe)
+con quella dichiarata da YouTube e si ferma con errore se sono piu' del 3% diverse, invece di
+proseguire silenzioso su un video troncato.
+
+**Rifatto per `v09`:** video riscaricato per intero (7.990,6s = 133:11, combacia con YouTube),
+1.332 frame estratti su tutta la durata, scene ridotte a **494 uniche** (non piu' 104),
+`_scene_index.json` ricostruito. **Le 24 slice di transcript per v09 sono gia' tagliate.**
+
+**Perche' conta oltre v09:** questo bug colpisce **ogni run interrotto a meta' scaricamento** —
+esattamente cio' che e' successo piu' volte in questa sessione per limite di sessione o rete.
+Va controllato a campione anche sui run gia' "chiusi": se uno di questi ha mai avuto un
+`video.mp4.part` prima di diventare `video.mp4`, la sua copertura andrebbe riverificata.
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte

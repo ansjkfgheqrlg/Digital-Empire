@@ -1,0 +1,32 @@
+[
+ {
+  "file": "src/01-armageddon.css",
+  "url": "https://armageddon.bsns.it/assets/armageddon.css",
+  "bytes": 25447
+ },
+ {
+  "file": "src/02-player.css",
+  "url": "https://f.vimeocdn.com/p/4.46.106/css/player.css",
+  "bytes": 238277
+ },
+ {
+  "file": "src/03-hls-js.module.js",
+  "url": "https://f.vimeocdn.com/p/4.46.106/js/hls-js.module.js",
+  "bytes": 540560
+ },
+ {
+  "file": "src/04-player.module.js",
+  "url": "https://f.vimeocdn.com/p/4.46.106/js/player.module.js",
+  "bytes": 928984
+ },
+ {
+  "file": "src/05-vendor.module.js",
+  "url": "https://f.vimeocdn.com/p/4.46.106/js/vendor.module.js",
+  "bytes": 327636
+ },
+ {
+  "file": "src/06-css2.css",
+  "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap",
+  "bytes": 5016
+ }
+]

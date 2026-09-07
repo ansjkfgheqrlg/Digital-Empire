@@ -1,0 +1,1719 @@
+{
+ "title": "outFunnel — Armageddon",
+ "meta_description": null,
+ "og_title": null,
+ "og_image": null,
+ "canonical": null,
+ "jsonld": [],
+ "lang": "it-IT",
+ "page_height": 26561,
+ "page_width": 1440,
+ "body_bg": "#f4f4f3",
+ "body_font": "sans-serif",
+ "palette_text": [
+  [
+   "#ffffff",
+   103
+  ],
+  [
+   "#a8a8a8",
+   31
+  ],
+  [
+   "#1b1b1d",
+   16
+  ],
+  [
+   "#ffffff @0.5",
+   2
+  ],
+  [
+   "#22c503",
+   1
+  ],
+  [
+   "#141414",
+   1
+  ],
+  [
+   "#bc0807",
+   1
+  ],
+  [
+   "#ffffff @0.72",
+   1
+  ],
+  [
+   "#f9f9f9",
+   1
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#f4f4f3",
+   54
+  ],
+  [
+   "#1b1b1d",
+   38
+  ],
+  [
+   "#ffffff",
+   13
+  ],
+  [
+   "#a8a8a8",
+   3
+  ],
+  [
+   "#bc0807",
+   2
+  ],
+  [
+   "#000000",
+   1
+  ],
+  [
+   "#ff0000",
+   1
+  ],
+  [
+   "#101011",
+   1
+  ],
+  [
+   "#0a0a0b @0.92",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "plus-jakarta-sans-o8l9cc",
+   76
+  ],
+  [
+   "elza-8u3n84",
+   69
+  ],
+  [
+   "\"DM Sans\", system-ui, sans-serif",
+   6
+  ],
+  [
+   "\"DM Sans\"",
+   4
+  ],
+  [
+   "Montserrat, sans-serif",
+   2
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 28.8px / w300",
+   38
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   31
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   22
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   16
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   12
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   10
+  ],
+  [
+   "16px / lh normal / w600",
+   4
+  ],
+  [
+   "24px / lh normal / w700",
+   4
+  ],
+  [
+   "32.4px / lh 32.4px / w700",
+   3
+  ],
+  [
+   "38.4px / lh normal / w700",
+   3
+  ],
+  [
+   "13px / lh 22.75px / w400",
+   3
+  ],
+  [
+   "43.6px / lh 43.6px / w700",
+   2
+  ],
+  [
+   "16px / lh 16px / w700",
+   2
+  ],
+  [
+   "33.9px / lh 33.9px / w700",
+   1
+  ],
+  [
+   "30.2px / lh 30.2px / w700",
+   1
+  ],
+  [
+   "38.6px / lh 38.6px / w700",
+   1
+  ],
+  [
+   "41.5px / lh 41.5px / w700",
+   1
+  ],
+  [
+   "18px / lh 28.8px / w300",
+   1
+  ],
+  [
+   "16px / lh normal / w700",
+   1
+  ],
+  [
+   "15.2px / lh 19px / w700",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "700",
+   111
+  ],
+  [
+   "300",
+   39
+  ],
+  [
+   "600",
+   4
+  ],
+  [
+   "400",
+   3
+  ]
+ ],
+ "radii": [
+  [
+   "10px",
+   6
+  ],
+  [
+   "30px",
+   2
+  ],
+  [
+   "12px",
+   1
+  ],
+  [
+   "8px",
+   1
+  ],
+  [
+   "2px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0.2) 0px 4px 8px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.3) 0px 4px 6px 0px",
+   1
+  ],
+  [
+   "rgba(255, 255, 255, 0.45) 0px 0px 0px 1px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    1459
+   ],
+   [
+    "transform 0.25s",
+    11
+   ],
+   [
+    "opacity 0.1s linear",
+    4
+   ],
+   [
+    "opacity 1s",
+    2
+   ],
+   [
+    "opacity 0.15s ease-out",
+    2
+   ],
+   [
+    "transform 0.2s, box-shadow 0.2s",
+    1
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [
+   [
+    "backdrop: blur(10px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-67997226202b8b278a65798a\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679a4dcf32de7b107a6a1d68\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679a55a2121a82577c3e75bb\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679a59c495fe7e2242b7617c\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679a9a122158a752d2abe759\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679abaf3f466514234e04694\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679ac696901a10565221cd8a\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679ac771bbcfba433c28dfcd\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679acfeeae770029d10e83ee\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679ad088a392676513c40022\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679ad092920b50424b1dfd4d\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679c06ac2ebba30d2bedbba1\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    18
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    4
+   ],
+   [
+    "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, -4.24219)",
+    3
+   ]
+  ]
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 64,
+   "text": "Alcuni fanno questo funnel…"
+  },
+  {
+   "tag": "h1",
+   "y": 461,
+   "text": "…E altri fanno questo…"
+  },
+  {
+   "tag": "h1",
+   "y": 921,
+   "text": "E poi c’è chi fa questo:"
+  },
+  {
+   "tag": "h3",
+   "y": 1333,
+   "text": "Perché non venderai solo perché il funnel è lungo… O corto. Venderai solo se strategizzi:"
+  },
+  {
+   "tag": "h3",
+   "y": 1644,
+   "text": "Talmente tante aziende devono ancora capire questo concetto…"
+  },
+  {
+   "tag": "h3",
+   "y": 2062,
+   "text": "È troppo grave per troppi business…"
+  },
+  {
+   "tag": "h3",
+   "y": 2285,
+   "text": "Troppo grave per loro…"
+  },
+  {
+   "tag": "h1",
+   "y": 2395,
+   "text": "Perfetto per te."
+  },
+  {
+   "tag": "h1",
+   "y": 5725,
+   "text": "Già che ci sei, buttaci sopra benzina ⬇️"
+  },
+  {
+   "tag": "h3",
+   "y": 6289,
+   "text": "Perché se non hai un funnel strategico:"
+  },
+  {
+   "tag": "h3",
+   "y": 6558,
+   "text": "Che vuol dire funnel strategico?"
+  },
+  {
+   "tag": "h3",
+   "y": 7105,
+   "text": "Azienda Italianissima / Marketer Italianissimo (gli altri)"
+  },
+  {
+   "tag": "h3",
+   "y": 7373,
+   "text": "Azienda vincitrice / Marketer vincitore (tu 💕)"
+  },
+  {
+   "tag": "h1",
+   "y": 7755,
+   "text": "La speranza non è una strategia."
+  },
+  {
+   "tag": "h1",
+   "y": 7896,
+   "text": "Incrociare le dita e sperare che il cliente acquisti non ti porterà da nessuna parte."
+  },
+  {
+   "tag": "h2",
+   "y": 10333,
+   "text": "Se fai un funnel standard, i dati sono un gioco d’azzardo. Se fai funnel strategici, i dati sono sotto tuo controllo."
+  },
+  {
+   "tag": "h3",
+   "y": 10882,
+   "text": "Sei qui per bruciare tutto al Crazy Time o per svoltare il marketing tuo o di un’azienda?"
+  },
+  {
+   "tag": "h1",
+   "y": 13987,
+   "text": "…La scienza parla chiaro: funnel personalizzato = più profitto (e quindi meno perdite)"
+  },
+  {
+   "tag": "h1",
+   "y": 17942,
+   "text": "Vuoi complottare"
+  },
+  {
+   "tag": "h1",
+   "y": 18363,
+   "text": "Funnel strategici vincenti, vero??"
+  },
+  {
+   "tag": "h3",
+   "y": 18434,
+   "text": "Lo so. È per quello che ho lanciato outFunnel."
+  },
+  {
+   "tag": "h2",
+   "y": 19029,
+   "text": "Primo videocorso Italiano solo su come fare la strategia di un funnel."
+  },
+  {
+   "tag": "h3",
+   "y": 19538,
+   "text": "Impara esattamente quali step fare per portare una persona da sconosciuto a cliente con marketing."
+  },
+  {
+   "tag": "h2",
+   "y": 20089,
+   "text": "outFunnel serve a questo: aiutarti a rispondere con 100% sicurezza alla domanda “che step bisogna mettere in questo funnel?”"
+  },
+  {
+   "tag": "h2",
+   "y": 20661,
+   "text": "outFunnel 🤝 Copywriter"
+  },
+  {
+   "tag": "h2",
+   "y": 21172,
+   "text": "outFunnel 🤝 Media buyer"
+  },
+  {
+   "tag": "h2",
+   "y": 21581,
+   "text": "outFunnel 🤝 Titolare aziendale"
+  },
+  {
+   "tag": "h2",
+   "y": 22019,
+   "text": "outFunnel 🤝 Project Strategist/Manager"
+  },
+  {
+   "tag": "h2",
+   "y": 22419,
+   "text": "Totale confidence. No dubbi. No insicurezza. No cazzate."
+  },
+  {
+   "tag": "h2",
+   "y": 22948,
+   "text": "outFunnel - benefici"
+  },
+  {
+   "tag": "h3",
+   "y": 23830,
+   "text": "La speranza non è una strategia. Smetti di sperare, inizia a complottare il funnel definitivo."
+  },
+  {
+   "tag": "h2",
+   "y": 24130,
+   "text": "Lista video-lezioni"
+  },
+  {
+   "tag": "h1",
+   "y": 24872,
+   "text": "outFunnel? Probabilmente non è per te. Ma se lo è… Stai per svoltare."
+  },
+  {
+   "tag": "h1",
+   "y": 25634,
+   "text": "FAQ"
+  },
+  {
+   "tag": "h3",
+   "y": 25750,
+   "text": "Come posso accedere al corso?"
+  },
+  {
+   "tag": "h3",
+   "y": 25879,
+   "text": "Quanto dura il corso?"
+  },
+  {
+   "tag": "h3",
+   "y": 25959,
+   "text": "Devo avere esperienza per capirlo?"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Sono un copywriter",
+   "href": "#tp-copywriter",
+   "y": 20389,
+   "x": 471,
+   "w": 195,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Sono un media buyer",
+   "href": "#tp-mediabuyer",
+   "y": 20389,
+   "x": 769,
+   "w": 207,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Sono un titolare aziendale",
+   "href": "#tp-titolare",
+   "y": 20474,
+   "x": 446,
+   "w": 244,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Sono un project manager o simile",
+   "href": "#tp-manager",
+   "y": 20464,
+   "x": 726,
+   "w": 293,
+   "h": 74,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Prossima domanda",
+   "href": null,
+   "y": 22605,
+   "x": 646,
+   "w": 188,
+   "h": 38,
+   "bg": "#ff0000",
+   "color": "#141414",
+   "radius": "8px",
+   "border": "0px none rgb(20, 20, 20)",
+   "shadow": "rgba(0, 0, 0, 0.3) 0px 4px 6px 0px",
+   "size": 16,
+   "weight": "700",
+   "transform": "none",
+   "padding": "10px 20px"
+  },
+  {
+   "text": "📝 Sezione 1 - Le basi",
+   "href": null,
+   "y": 24449,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "📝 Sezione 2 - Esempi strategici",
+   "href": null,
+   "y": 24524,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "📝 Sezione 3 - Strategie avanzate",
+   "href": null,
+   "y": 24599,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "📝 Sezione 4 - Esempi di Funnel completi",
+   "href": null,
+   "y": 24674,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "Come posso accedere al corso?",
+   "href": null,
+   "y": 25750,
+   "x": 429,
+   "w": 581,
+   "h": 128,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Quanto dura il corso?",
+   "href": null,
+   "y": 25879,
+   "x": 429,
+   "w": 581,
+   "h": 79,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Devo avere esperienza per capirlo?",
+   "href": null,
+   "y": 25959,
+   "x": 429,
+   "w": 581,
+   "h": 128,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Prendi l'Armageddon Pack — 199€",
+   "href": "https://buy.stripe.com/00w28s9LA5Y0eIT8N64Ja1O",
+   "y": 22158,
+   "x": 421,
+   "w": 317,
+   "h": 50,
+   "bg": "#bc0807",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "700",
+   "transform": "none",
+   "padding": "17px 28px"
+  },
+  {
+   "text": "Torna alla pagina principale",
+   "href": "/",
+   "y": 22157,
+   "x": 750,
+   "w": 268,
+   "h": 52,
+   "bg": "transparent",
+   "color": "#f9f9f9",
+   "radius": "0px",
+   "border": "1px solid rgba(255, 255, 255, 0.35)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "700",
+   "transform": "none",
+   "padding": "17px 28px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 1240
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/uih-min.webp",
+   "alt": "",
+   "y": 132,
+   "x": 489,
+   "w": 462,
+   "h": 299
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/oihj-min.webp",
+   "alt": "",
+   "y": 527,
+   "x": 489,
+   "w": 462,
+   "h": 355
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/efsdv-min.webp",
+   "alt": "",
+   "y": 992,
+   "x": 455,
+   "w": 530,
+   "h": 172
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 1240
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 1240
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.webp",
+   "alt": "",
+   "y": 1211,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1211,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1211,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 1257,
+   "x": 0,
+   "w": 1440,
+   "h": 696
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/fefvds-min.webp",
+   "alt": "",
+   "y": 1475,
+   "x": 590,
+   "w": 259,
+   "h": 158
+  },
+  {
+   "tag": "video",
+   "src": "/assets/img/outfunnel/output-onlinegiftools.mp4",
+   "alt": "",
+   "y": 1803,
+   "x": 655,
+   "w": 131,
+   "h": 74
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1257,
+   "x": 0,
+   "w": 1440,
+   "h": 696
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1257,
+   "x": 0,
+   "w": 1440,
+   "h": 696
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.webp",
+   "alt": "",
+   "y": 1924,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1924,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1924,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 1970,
+   "x": 0,
+   "w": 1440,
+   "h": 928
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/uihaaa-min.webp",
+   "alt": "",
+   "y": 2486,
+   "x": 489,
+   "w": 462,
+   "h": 346
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/wfsvdd.webp",
+   "alt": "",
+   "y": 2898,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-1-min.webp",
+   "alt": "",
+   "y": 3021,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-2-min.webp",
+   "alt": "",
+   "y": 3387,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-3-min.webp",
+   "alt": "",
+   "y": 3744,
+   "x": 697,
+   "w": 384,
+   "h": 355
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-4-min.webp",
+   "alt": "",
+   "y": 3744,
+   "x": 359,
+   "w": 384,
+   "h": 355
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-5-min.webp",
+   "alt": "",
+   "y": 4120,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-6-min.webp",
+   "alt": "",
+   "y": 4487,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-7-min.webp",
+   "alt": "",
+   "y": 4853,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-8-min.webp",
+   "alt": "",
+   "y": 5219,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/ripped-fumetto-copy.webp",
+   "alt": "",
+   "y": 5520,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 5678,
+   "x": 0,
+   "w": 1440,
+   "h": 1955
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/KREA-Enhanced-min.webp",
+   "alt": "",
+   "y": 5866,
+   "x": 421,
+   "w": 597,
+   "h": 384
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/defrfvdvc-min.webp",
+   "alt": "",
+   "y": 6738,
+   "x": 421,
+   "w": 462,
+   "h": 327
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/efdfv-min.webp",
+   "alt": "",
+   "y": 7223,
+   "x": 421,
+   "w": 90,
+   "h": 90
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/dfvsaxdfv-min.webp",
+   "alt": "",
+   "y": 7420,
+   "x": 421,
+   "w": 90,
+   "h": 90
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5678,
+   "x": 0,
+   "w": 1440,
+   "h": 1955
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5678,
+   "x": 0,
+   "w": 1440,
+   "h": 1955
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.webp",
+   "alt": "",
+   "y": 7604,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7604,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7604,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 7650,
+   "x": 0,
+   "w": 1440,
+   "h": 616
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/Untitled-1-min.webp",
+   "alt": "",
+   "y": 7877,
+   "x": 354,
+   "w": 192,
+   "h": 192
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/wfsvdd.webp",
+   "alt": "",
+   "y": 8267,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-9-min.webp",
+   "alt": "",
+   "y": 8390,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-10-min.webp",
+   "alt": "",
+   "y": 8756,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-11-min.webp",
+   "alt": "",
+   "y": 9122,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-12-min.webp",
+   "alt": "",
+   "y": 9489,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/ripped-fumetto-copy.webp",
+   "alt": "",
+   "y": 9817,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 9975,
+   "x": 0,
+   "w": 1440,
+   "h": 1128
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1053413091?h=1f9bb5f882&app_id=122963",
+   "alt": "",
+   "y": 10042,
+   "x": 489,
+   "w": 462,
+   "h": 260
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/wfsvdd.webp",
+   "alt": "",
+   "y": 11104,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-13.webp",
+   "alt": "",
+   "y": 11255,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-14.webp",
+   "alt": "",
+   "y": 11621,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-15.webp",
+   "alt": "",
+   "y": 11987,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-16.webp",
+   "alt": "",
+   "y": 12354,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-17.webp",
+   "alt": "",
+   "y": 12720,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-18.webp",
+   "alt": "",
+   "y": 13087,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-19.webp",
+   "alt": "",
+   "y": 13453,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/ripped-fumetto-copy.webp",
+   "alt": "",
+   "y": 13782,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 13940,
+   "x": 0,
+   "w": 1440,
+   "h": 2231
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/5-min.webp",
+   "alt": "",
+   "y": 14473,
+   "x": 354,
+   "w": 225,
+   "h": 225
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/4-min.webp",
+   "alt": "",
+   "y": 14830,
+   "x": 354,
+   "w": 225,
+   "h": 225
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/2-min.webp",
+   "alt": "",
+   "y": 15179,
+   "x": 354,
+   "w": 225,
+   "h": 225
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/1-min.webp",
+   "alt": "",
+   "y": 15542,
+   "x": 354,
+   "w": 225,
+   "h": 225
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3-min.webp",
+   "alt": "",
+   "y": 15891,
+   "x": 354,
+   "w": 225,
+   "h": 225
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/wfsvdd.webp",
+   "alt": "",
+   "y": 16171,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-20.webp",
+   "alt": "",
+   "y": 16294,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-21.webp",
+   "alt": "",
+   "y": 16664,
+   "x": 354,
+   "w": 361,
+   "h": 328
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-22.webp",
+   "alt": "",
+   "y": 16664,
+   "x": 726,
+   "w": 361,
+   "h": 328
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-23.webp",
+   "alt": "",
+   "y": 17026,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/comics-24.webp",
+   "alt": "",
+   "y": 17393,
+   "x": 421,
+   "w": 597,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/ripped-fumetto-copy.webp",
+   "alt": "",
+   "y": 17721,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 17880,
+   "x": 0,
+   "w": 1440,
+   "h": 1056
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/andrei-money-graph-copy-min.webp",
+   "alt": "",
+   "y": 17955,
+   "x": 455,
+   "w": 530,
+   "h": 384
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/Soldiers-Bowing-Teal-Flag--281-29-min.webp",
+   "alt": "",
+   "y": 18553,
+   "x": 489,
+   "w": 462,
+   "h": 258
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17880,
+   "x": 0,
+   "w": 1440,
+   "h": 1056
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17880,
+   "x": 0,
+   "w": 1440,
+   "h": 1056
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.webp",
+   "alt": "",
+   "y": 18907,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18907,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18907,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 18953,
+   "x": 0,
+   "w": 1440,
+   "h": 1088
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/MacBook-Pro-16-min.webp",
+   "alt": "",
+   "y": 19199,
+   "x": 455,
+   "w": 530,
+   "h": 327
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1224257782?h=306ceb39fa&app_id=122963",
+   "alt": "",
+   "y": 19747,
+   "x": 523,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.webp",
+   "alt": "",
+   "y": 20041,
+   "x": 0,
+   "w": 1440,
+   "h": 572
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 22343,
+   "x": 0,
+   "w": 1440,
+   "h": 512
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22343,
+   "x": 0,
+   "w": 1440,
+   "h": 512
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22343,
+   "x": 0,
+   "w": 1440,
+   "h": 512
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.webp",
+   "alt": "",
+   "y": 22826,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22826,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22826,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 22872,
+   "x": 0,
+   "w": 1440,
+   "h": 1165
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/1-2.webp",
+   "alt": "",
+   "y": 23125,
+   "x": 489,
+   "w": 462,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/2-2.webp",
+   "alt": "",
+   "y": 23379,
+   "x": 489,
+   "w": 462,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3.webp",
+   "alt": "",
+   "y": 23633,
+   "x": 489,
+   "w": 462,
+   "h": 130
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22872,
+   "x": 0,
+   "w": 1440,
+   "h": 1165
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22872,
+   "x": 0,
+   "w": 1440,
+   "h": 1165
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.webp",
+   "alt": "",
+   "y": 24008,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24008,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24008,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 24054,
+   "x": 0,
+   "w": 1440,
+   "h": 771
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/lezioni-of-min-min.webp",
+   "alt": "",
+   "y": 24205,
+   "x": 455,
+   "w": 530,
+   "h": 221
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.webp",
+   "alt": "",
+   "y": 24825,
+   "x": 0,
+   "w": 1440,
+   "h": 757
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24866,
+   "x": 549,
+   "w": 306,
+   "h": 76
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/Artboard--E2-80-93-99-min.webp",
+   "alt": "",
+   "y": 25207,
+   "x": 557,
+   "w": 327,
+   "h": 243
+  },
+  {
+   "tag": "img",
+   "src": "/assets/img/outfunnel/almost-black-min.webp",
+   "alt": "",
+   "y": 25582,
+   "x": 0,
+   "w": 1440,
+   "h": 617
+  }
+ ],
+ "slices_desktop": 30,
+ "slices_mobile": 32,
+ "mobile_page_height": 26612
+}
