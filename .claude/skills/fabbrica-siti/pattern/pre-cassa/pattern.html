@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; pre-cassa</title>
+<!-- Deroga a nessun articolo: e' l'esempio del pattern, non una pagina di vendita reale.
+     In produzione una vera pre-cassa va marcata noindex per lo stesso motivo scritto in
+     scheda.md, "Il difetto da non copiare": un codice sconto indicizzabile smette di
+     essere uno sconto, diventa il prezzo. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: il gradino fra il bottone di vendita e il pagamento (legge §11, ADR-024).
+   Sei elementi, in quest'ordine, e SOLO questi sei — nessuna prova sociale, nessuna
+   obiezione, nessun secondo prodotto: la decisione e' gia' presa, qui si esegue.
+   Origine misure: capture/28-outfunnel-1 (outFunnel — AP Formazione), larghezza pagina
+   1440px — ogni frazione sotto e' calcolata su quella base, poi applicata a --u. */
+
+.cassa {
+  max-width: min(560px, 100%);
+  margin: 0 auto;
+  padding: calc(var(--u) * 0.10) calc(var(--u) * 0.05);
+  text-align: center;
+}
+
+/* 1. Occhiello in corsivo — origine: copy-integrale.md [y=149] "Stai acquistando…"
+   16px w300, tag <em>. Riafferma l'atto invece di ricominciare a vendere: due parole
+   e tre puntini, l'anti-ripensamento piu' economico che esista (report macchina-del-
+   funnel). Opacita' --t-78: nel canone e' il peso di wordmark/occhiello, stesso ruolo. */
+.cassa__occhiello {
+  margin: 0 0 clamp(10px, calc(var(--u) * 0.012), 16px);
+  font-size: clamp(14px, calc(var(--u) * 0.0111111), 17px);   /* 16/1440, capture/28 */
+  font-style: italic;
+  color: rgba(249, 249, 249, var(--t-78));
+}
+
+/* 2. Nome del prodotto, grande — origine: h1 "outFunnel" [y=189] 68.3px w700.
+   L'accento (§12) si spende UNA VOLTA in tutta la pagina, ed e' qui: non sul bottone
+   (quello e' chrome universale, ogni pagina della Fabbrica ne ha uno arancione) e non
+   sul codice sconto sotto (vedi nota li'). */
+.cassa__prodotto {
+  margin: 0 0 clamp(20px, calc(var(--u) * 0.03), 40px);
+  font-size: clamp(32px, calc(var(--u) * 0.0474306), 68px);   /* 68.3/1440, capture/28 */
+}
+.cassa__accento { color: var(--orange); }
+
+/* 3. Istruzione operativa + codice sconto — origine: [y=261] 16px w300, "Adesso devi
+   solo loggare... Ricorda di usare il codice sconto "CWSHOP" per avere il 20%".
+   Il codice qui NON e' colorato con l'accento. Su outFunnel il codice CWSHOP usa una
+   sfumatura dell'accento (#139699 contro #13989a del nome): tecnicamente due
+   occorrenze, non una — vedi scheda.md, "Le cose che si dimenticano sempre" §1.
+   Qui il codice resta neutro: bordo, monospace, nessun colore d'azione speso due volte. */
+.cassa__istruzione {
+  max-width: 46ch;
+  margin: 0 auto clamp(28px, calc(var(--u) * 0.035), 48px);
+  font-size: clamp(14px, calc(var(--u) * 0.0111111), 17px);   /* 16/1440, capture/28 */
+  line-height: var(--leading-body);
+  color: rgba(249, 249, 249, var(--t-76));
+}
+.cassa__istruzione strong { color: var(--fg); }
+.cassa__codice {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  border: 1px solid var(--line-hair);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.95em;
+  color: var(--fg);
+  letter-spacing: 0.02em;
+}
+
+/* 4+5. La ricevuta: nome del prodotto in piccolo (riusa .label del canone, gia'
+   t-50/maiuscolo — nessun valore nuovo), la cifra isolata, e la condizione attaccata
+   proprio sotto. Origine: [y=460] 24px "outFunnel", [y=500] 35.2px "98,00 €",
+   [y=543] 17.6px "Una tantum". 17,6 e' esattamente meta' di 35,2: la condizione e'
+   la meta' del corpo della cifra, non un numero indipendente. */
+.cassa__ricevuta {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(4px, calc(var(--u) * 0.006), 8px);
+  margin: 0 0 clamp(28px, calc(var(--u) * 0.04), 56px);
+  padding: calc(var(--u) * 0.035) calc(var(--u) * 0.06);
+}
+.cassa__ricevuta-nome { margin: 0; }   /* .label fa gia' tutto il lavoro */
+.cassa__cifra {
+  margin: 0;
+  font-family: var(--font-shout);
+  font-size: clamp(24px, calc(var(--u) * 0.0244444), 35px);   /* 35.2/1440, capture/28 */
+  font-weight: 700;
+  color: var(--fg);
+}
+.num-tabular.cassa__cifra { font-variant-numeric: tabular-nums; }  /* cifra che non balla */
+.cassa__condizione {
+  margin: 0;
+  font-size: clamp(12px, calc(var(--u) * 0.0122222), 18px);   /* 17.6/1440, capture/28 */
+  color: rgba(249, 249, 249, var(--t-55));   /* "riga di valore, didascalia" nel canone */
+}
+
+/* 6. Il bottone — canone .btn/.btn-orange as-is. NON i 195x53px misurati su AP:
+   §1, il canone vince sul gusto, anche sul loro. Nessuna transizione propria da
+   spegnere: .btn e .card-dark sono gia' nel blocco @media di canone.css §14. */
+.cassa__bottone { margin: 0 auto; }
+
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <!-- ESEMPIO: prodotto, prezzo e codice sono dati finti di Digital Empire — non
+       un'offerta reale e non un prodotto di Andrei Pascu. -->
+  <section class="cassa" aria-labelledby="cassa-prodotto">
+
+    <p class="cassa__occhiello">Stai acquistando&hellip;</p>
+
+    <h1 class="cassa__prodotto" id="cassa-prodotto">
+      Manuale Claude <span class="cassa__accento">Code</span>
+    </h1>
+
+    <p class="cassa__istruzione">
+      Accedi con le credenziali che hai appena creato e completa il pagamento. Se hai
+      ricevuto un codice nella tua email di conferma, inseriscilo ora:
+      <code class="cassa__codice">GRAZIE24</code> vale <strong>solo nelle prossime 24
+      ore</strong> e solo per questo acquisto.
+    </p>
+
+    <div class="cassa__ricevuta card-dark">
+      <p class="cassa__ricevuta-nome label">Manuale Claude Code</p>
+      <p class="cassa__cifra num-tabular">47,00&nbsp;&euro;</p>
+      <p class="cassa__condizione">Una tantum</p>
+    </div>
+
+    <a class="btn btn-orange cassa__bottone" href="#">Acquista il Manuale</a>
+
+  </section>
+
+</div>
+</body>
+</html>

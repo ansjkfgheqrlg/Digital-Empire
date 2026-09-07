@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; pagina-ponte</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: una sezione, un video, UN SOLO bottone. Zero prezzo, zero prova
+   sociale, zero obiezioni (report macchina-del-funnel: 35-36 blocchi di testo contro
+   i 259 di una pagina di vendita vera). Serve a SPOSTARE, non a convincere.
+   Origine misure: capture/25-define e capture/24-asa (larghezza pagina 1440px in
+   entrambe) — le due catene che il report chiama "la scala dell'educazione". */
+
+.ponte {
+  max-width: min(760px, 100%);
+  margin: 0 auto;
+  padding: calc(var(--u) * 0.08) calc(var(--u) * 0.05);
+  text-align: center;
+}
+
+/* Titolo — origine: capture/25 [y=165] 60.8px w700 "Cos'è il copywriting e come
+   funziona?" e capture/24 [y=185] stessa taglia "Come funziona monetizzare Il
+   copywriting come autonomo". L'accento (§12) si spende UNA VOLTA: sulla parola
+   che porta i soldi ("monetizzare" su /asa, non "copywriting"), mai sul mestiere. */
+.ponte__titolo {
+  max-width: 26ch;
+  margin: 0 auto clamp(18px, calc(var(--u) * 0.024), 32px);
+  font-size: clamp(28px, calc(var(--u) * 0.0422222), 60px);   /* 60.8/1440, capture/25+24 */
+}
+.ponte__accento { color: var(--orange); }
+
+/* Riga d'ingresso al video — origine: capture/25 [y=327] 16px w300
+   "Te lo spiego in questo video con un esempio pratico". */
+.ponte__intro {
+  max-width: 46ch;
+  margin: 0 auto clamp(24px, calc(var(--u) * 0.03), 40px);
+  font-size: clamp(14px, calc(var(--u) * 0.0111111), 17px);   /* 16/1440, capture/25 */
+  line-height: var(--leading-body);
+  color: rgba(249, 249, 249, var(--t-76));
+}
+
+/* Il video — origine: capture/25, iframe [y=460] w=732 su pagina 1440px = 0.5083.
+   Rapporto 732:413 ≈ 16:9, si usa il valore standard invece di un numero storto.
+   JS SOLO qui, come impone la legge (§ regole del codice, ADR-024): senza JS il
+   <noscript> sotto mostra lo stesso identico video, la pagina funziona lo stesso.
+   Il motivo per farlo (non solo per poterlo fare): un embed Vimeo/YouTube pesa
+   centinaia di KB di script — caricarlo solo al clic tiene la pagina dentro il
+   tetto di peso della Corsia A (canone.json, gate 9_peso: 250kb al primo carico). */
+.ponte__video {
+  max-width: calc(var(--u) * 0.5083333);   /* 732/1440, capture/25 */
+  aspect-ratio: 16 / 9;
+  margin: 0 auto clamp(24px, calc(var(--u) * 0.03), 40px);
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, var(--ink) 0%, #2a2a2a 100%);
+}
+.ponte__video-el { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+.ponte__facade {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* Il cerchio del play riusa --cell del canone (56-85px): e' la stessa soglia
+   "sotto questa misura non si tocca" gia' motivata per la cella del contatore —
+   non se ne inventa una nuova, si applica quella che il canone ha gia'. */
+.ponte__facade-play {
+  width: var(--cell);
+  height: var(--cell);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.14);
+  display: grid;
+  place-items: center;
+  font-size: calc(var(--cell) * 0.32);   /* il triangolo scala col cerchio, non e' fisso */
+  transition: transform var(--t-fast) var(--ease-land),
+              background-color var(--t-base) ease;
+}
+.ponte__facade:hover .ponte__facade-play,
+.ponte__facade:focus-visible .ponte__facade-play {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.22);
+}
+.ponte__facade-play::after {
+  content: "";
+  display: block;
+  width: 0; height: 0;
+  margin-left: 0.15em;
+  border-style: solid;
+  border-width: 0.36em 0 0.36em 0.58em;
+  border-color: transparent transparent transparent var(--fg);
+}
+/* §7: questo e' l'unico posto della pagina con una transizione propria (non gia'
+   coperta dal blocco generale di canone.css), quindi va spenta qui esplicitamente. */
+@media (prefers-reduced-motion: reduce) {
+  .ponte__facade-play { transition: none; }
+}
+
+/* La riga di controllo del consumo — origine: capture/24-asa [y=878] 38.4px w700,
+   h3 nel sorgente. QUI e' <h2>, non <h3>: il sorgente salta un livello (h1 -> h3
+   senza h2 in mezzo), noi no — vedi scheda.md, "Le cose che si dimenticano sempre".
+   E' un ELEMENTO del pattern (report macchina-del-funnel la chiama "controllo del
+   consumo": chiede di spendere il tempo prima del clic), non una nota a margine. */
+.ponte__controllo {
+  max-width: 52ch;
+  margin: 0 auto clamp(24px, calc(var(--u) * 0.032), 44px);
+  font-size: clamp(20px, calc(var(--u) * 0.0266667), 38px);   /* 38.4/1440, capture/24 */
+  line-height: 1.3;
+  color: var(--fg);
+}
+
+.ponte__bottone { margin: 0 auto; }
+
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <!-- ESEMPIO: prodotto e copy sono dati finti di Digital Empire (il "Manuale Claude
+       Code"), non un funnel reale e non un prodotto di Andrei Pascu. -->
+  <section class="ponte" aria-labelledby="ponte-titolo">
+
+    <h1 class="ponte__titolo" id="ponte-titolo">
+      Come funziona il Manuale Claude Code per <span class="ponte__accento">automatizzare</span> il lavoro
+    </h1>
+
+    <p class="ponte__intro">Te lo faccio vedere in questo video, con un caso vero.</p>
+
+    <div class="ponte__video">
+      <!-- Senza JavaScript il video e' comunque qui, comunque guardabile: nessuna
+           dipendenza dal facade sotto. ESEMPIO: sostituire la fonte con il video
+           reale (embed proprio o file); qui e' un video pubblico di prova
+           (Big Buck Bunny, Blender Foundation, dominio pubblico). -->
+      <noscript>
+        <video class="ponte__video-el" controls preload="metadata">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        </video>
+      </noscript>
+      <button type="button" class="ponte__facade" id="ponteFacade" aria-label="Riproduci il video">
+        <span class="ponte__facade-play" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <h2 class="ponte__controllo">
+      Ti consiglio di guardare tutto il video prima di cliccare il pulsante qui
+      sotto: capisci meglio cosa stai per ottenere.
+    </h2>
+
+    <a class="btn btn-orange ponte__bottone" href="#">Scopri il Manuale Claude Code</a>
+
+  </section>
+
+</div>
+<script>
+(function () {
+  "use strict";
+  var wrap = document.querySelector(".ponte__video");
+  var facade = document.getElementById("ponteFacade");
+  if (!wrap || !facade) { return; }
+
+  /* Nessun gemello prefers-reduced-motion da spegnere qui: questo script non muove
+     nulla da solo. Parte SOLO al clic dell'utente (evento esplicito), non e' un
+     autoplay ambientale — §7 riguarda il movimento imposto, non l'azione richiesta. */
+  facade.addEventListener("click", function () {
+    var video = document.createElement("video");
+    video.className = "ponte__video-el";
+    video.controls = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    var fonte = document.createElement("source");
+    fonte.src = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+    fonte.type = "video/mp4";
+    video.appendChild(fonte);
+    wrap.replaceChild(video, facade);
+  });
+})();
+</script>
+</body>
+</html>
