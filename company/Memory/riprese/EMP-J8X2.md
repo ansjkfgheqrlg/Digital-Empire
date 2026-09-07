@@ -27,11 +27,27 @@ Due sentinelle erano in corso alla chiusura della chat precedente e la loro noti
 Cercare questi quattro file:
 
 ```
-competitor/Andrei Pascu/site-study/reports/13-apsales-STACK-E-TOKEN.md
-competitor/Andrei Pascu/site-study/reports/13-apsales-ATLANTE.md
+[FATTI E COMMITTATI 2026-09-07 08:28]
+competitor/Andrei Pascu/site-study/reports/13-apsales-STACK-E-TOKEN.md   266 righe
+competitor/Andrei Pascu/site-study/reports/13-apsales-ATLANTE.md         505 righe
+
+[DA VERIFICARE SUL DISCO — la sentinella era ancora in corso]
 competitor/Andrei Pascu/site-study/reports/14-17-famiglia-out-CONFRONTO.md
 competitor/Andrei Pascu/site-study/reports/14-17-famiglia-out-ATLANTE.md
 ```
+
+**Gia' incassato da apsales.eu** (verificato, non riferito): stack **React + TanStack Start** provato
+dalle stringhe `tanstack_router_reload` e dal pattern `createServerFn(...).handler(...)` nel bundle
+— un gradino sopra `claude-speedrun.com`, che e' solo client. I sei token `--brand-*` convertiti da
+OKLCH: `--brand-void #0a0a0b` · `--brand-pitch #111111` · `--brand-blue #0062ff` ·
+`--brand-paper #f9f9f9` · `--brand-ink #1c1c1e` · `--brand-bone #eae8df` (dichiarata e mai usata).
+**I due neutri coincidono quasi a cifra col nostro canone**, ma il colore d'azione e' **blu**, non
+arancione: qui **nessun rischio di confusione di marca**, al contrario di claude-speedrun.
+**Delta alla Fabbrica da lavorare:** il componente `Ascii` (blend `screen` + `contrast/brightness`
+per immagini bianco-su-nero) e il **doppio bottone con clip-path animato** — una CTA che si fonde
+con la sezione sottostante. **Una discrepanza aperta, non forzata:** `RevealFooter` dichiara
+`bg-blue` su un layer `fixed` dentro `clipPath: inset(0)`, ma lo screenshot mostra fondo nero col
+solo wordmark blu. Da verificare a mano.
 
 Se ci sono: verificarli (i numeri devono essere **misurati**, non stimati) e committare.
 Se mancano o sono a metà: rifarli. **I dati sono già tutti su disco**, non serve ricatturare niente.
