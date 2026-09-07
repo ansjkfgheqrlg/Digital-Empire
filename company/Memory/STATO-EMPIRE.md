@@ -9798,3 +9798,33 @@ Al ritorno: le SENTINELLE di verità sui loro risultati (nessuna riga senza prov
 **Domanda ancora aperta (vale più del resto di L04):** l'API di Fliki espone la libreria propria
 («My Library») e la musica di sottofondo? Se sì, chiude il difetto delle clip stock fuori target
 che la fabbrica aveva archiviato come limite dell'API.
+
+## 2026-09-07, pomeriggio — onde A e B chiuse, la Fabbrica incassa il funnel (CP-20260907-6ZMH)
+
+**Studio totale Andrei Pascu (EMP-J8X2): 17 pagine catturate su 17 fra onda A e B**, 9 rapporti
+nuovi per ~27.000 parole, **debito di teardown di copy azzerato** su entrambe le onde. Ogni numero
+viene da `competitor/Andrei Pascu/site-study/scripts/stato_onde.py`, che conta sul disco.
+
+**Il pre-mortem (obbligo 5 di DOOM, era aperto) ha trovato tre guasti gia' vivi:** zero teardown di
+copy su 16 rapporti, 5 righe assorbite dalla Fabbrica contro 2.400 di rapporti, una tabella di
+stato che dichiarava 0 catture su un'onda che ne aveva 6. Radice unica — il giudizio aveva
+sostituito la misura — e contromisura unica: `stato_onde.py` pretende quattro file per dichiarare
+chiusa una pagina e riscrive lui la sezione STATO.
+
+**La scoperta grossa:** quattro delle otto pagine di onda B non vendono niente, sono i gradini
+verso la cassa (1.750 px medi contro 15.653). **86 parole** portano dall'apertura al clic
+d'acquisto. Il codice sconto vive nella pre-cassa, dopo la decisione. `/vendita` rivela
+`/acquista-v101`, una pre-cassa fuori elenco: **l'Onda D e' piu' grande delle 14 pagine previste**.
+
+**Il travaso (ADR-024):** la legge della Fabbrica prende §11 (la cassa ha un gradino) e §12
+(l'accento si spende una volta), due pattern costruiti e dentro il canone, galleria a 10 con PASS.
+Quattro dei sei controlli nuovi del gate nascono da **difetti del concorrente**. Assorbimento della
+legge: da 5 righe a 14.
+
+**Ordini di Max di oggi, gia' nel libro:** §6.10-bis — in chat 1-3 frasi, e anche gli scagnozzi
+rispondono in massimo 3 righe (il terminale mostra il loro rapporto per intero a Max); §6.11 — il
+battito solo ogni ~10 minuti, dopo una svolta di percentuale, o su richiesta. Vincolo: meno
+crediti, mai meno performance.
+
+**RIPRESA DA:** gli atlanti mancanti di onda A (`12-claude-speedrun-v2`, `18`, `19`, `20`), poi
+**Onda C**. Aperto: B-059, il CRLF che oggi ha bloccato tre commit, fonte non trovata.
