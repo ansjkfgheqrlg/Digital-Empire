@@ -601,6 +601,13 @@ percorso.
 turno con due o tre paragrafi di racconto — «il colpo migliore di questo giro», «due cose che
 meritano una riga» — che nessuno aveva chiesto. Era vanità di consegna travestita da rapporto.
 
+**E vale anche per gli scagnozzi, che è la metà del guasto** *(misurato il 2026-09-07)*: il
+terminale mostra a Max il **rapporto finale di ogni agente per intero**. Un agente che chiude con
+venti righe di riassunto riempie la chat di Max esattamente come lo riempirei io, e Max lo legge
+come testo mio. Quindi **ogni prompt di delega finisce con l'ordine di rispondere in massimo 3
+righe** — percorso del file, numero misurato, la scoperta principale. Tutto il resto sta nel file
+che l'agente ha scritto: è lì che va guardato, non in chat.
+
 *Non derogabile.*
 
 ### 6.11 Il battito dei dieci minuti *(direttiva Max, 2026-09-02)*
