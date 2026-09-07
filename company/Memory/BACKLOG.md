@@ -287,3 +287,15 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   `sentinel-brandvoice`, `sentinel-quality`): dieci punti di errore falsano ogni previsione di
   campagna. **Non toccato**: Fase 1 e' solo studio, si corregge in Fase 2.
   (origine: studio `max18-v07` / `O2IDhISyy8Y`, checkpoint `EMP-W4K7`)
+
+- **B-059 — NUOVA.** Qualcosa riscrive `company/Memory/riprese/EMP-W4K7.md` con fine-riga **CRLF**,
+  e il gate `check_memory.py` blocca il commit successivo. Successo **due volte il 2026-09-07**:
+  la prima aveva lasciato un `SYNC-CONFLICT.txt` e il sync automatico fermo da mezz'ora, la seconda
+  ha bloccato il commit dell'ADR-024. Ogni volta si risolve con `python .githooks/check_memory.py
+  --fix`, ma **la fonte non e' stata trovata**: `scripts/checkpoint.py` scrive gia' in `newline="\n"`
+  (righe 155, 252, 358), quindi il colpevole e' un altro — un'altra sessione, un editor, o uno
+  script che non passa da checkpoint.py. **Non risolto di mia iniziativa** perche' la via rapida
+  (`company/Memory/** text eol=lf` in `.gitattributes`) contraddirrebbe la politica dichiarata
+  `* -text` («i file viaggiano byte-per-byte fra il PC di Max e quello di Gael»): cambiarla e'
+  materia da ADR, non da turno di lavoro. Da fare: trovare chi scrive quel file, e o si aggiusta la
+  fonte o si apre l'ADR | quando ricapita, o prima che blocchi Gael | &#9744;
