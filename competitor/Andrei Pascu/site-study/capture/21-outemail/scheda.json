@@ -1,0 +1,2859 @@
+{
+ "url": "https://www.andrei-copy.com/outemail",
+ "slug": "21-outemail",
+ "catturata": "2026-09-07",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "outEmail — AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 26032,
+ "larghezza": 1440,
+ "altezza_mobile": 24629,
+ "body_bg": "#ffffff",
+ "body_font": "Inter, \"Segoe UI\", -apple-system, BlinkMacSystemFont, sans-serif",
+ "palette_testo": [
+  [
+   "#fafafa",
+   147
+  ],
+  [
+   "#64748b",
+   15
+  ],
+  [
+   "#1b1b1d",
+   9
+  ],
+  [
+   "#1e293b",
+   8
+  ],
+  [
+   "#334155",
+   7
+  ],
+  [
+   "#ebe9e0",
+   4
+  ],
+  [
+   "#000000",
+   4
+  ],
+  [
+   "#555555",
+   4
+  ],
+  [
+   "#2ce711",
+   1
+  ],
+  [
+   "#fd0000",
+   1
+  ],
+  [
+   "#76e631",
+   1
+  ],
+  [
+   "#0cc109",
+   1
+  ],
+  [
+   "#f81208",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#1b1b1d",
+   53
+  ],
+  [
+   "#fafafa",
+   18
+  ],
+  [
+   "#ffffff",
+   16
+  ],
+  [
+   "#a8a8a8",
+   9
+  ],
+  [
+   "#f9fafb",
+   8
+  ],
+  [
+   "#87ceeb",
+   8
+  ],
+  [
+   "#0062ff",
+   7
+  ],
+  [
+   "#87ceeb @0.1",
+   7
+  ],
+  [
+   "#a7ddf4",
+   7
+  ],
+  [
+   "#e2e8f0",
+   6
+  ],
+  [
+   "#f1f5f9",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "Inter, \"Segoe UI\", -apple-system, BlinkMacSystemFont, sans-serif",
+   163
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   35
+  ],
+  [
+   "\"DM Sans\"",
+   4
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   36
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   32
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   23
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   12
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   11
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   10
+  ],
+  [
+   "14px / lh 28.8px / w500",
+   8
+  ],
+  [
+   "16px / lh 28.8px / w600",
+   7
+  ],
+  [
+   "14px / lh 28.8px / w300",
+   7
+  ],
+  [
+   "12px / lh normal / w500",
+   7
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   6
+  ],
+  [
+   "16px / lh normal / w600",
+   5
+  ],
+  [
+   "33.6px / lh 33.6px / w700",
+   4
+  ],
+  [
+   "49.5px / lh 49.5px / w700",
+   4
+  ],
+  [
+   "28.8px / lh 28.8px / w800",
+   4
+  ],
+  [
+   "17.6px / lh 28.8px / w500",
+   4
+  ],
+  [
+   "38.4px / lh normal / w700",
+   4
+  ],
+  [
+   "51.6px / lh 51.6px / w700",
+   3
+  ],
+  [
+   "24px / lh normal / w700",
+   3
+  ],
+  [
+   "40.5px / lh 40.5px / w700",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "71px / lh 71px / w700",
+   1
+  ],
+  [
+   "176.7px / lh 176.7px / w700",
+   1
+  ],
+  [
+   "47.4px / lh 47.4px / w700",
+   1
+  ],
+  [
+   "64.4px / lh 64.4px / w700",
+   1
+  ],
+  [
+   "51.8px / lh 51.8px / w700",
+   1
+  ],
+  [
+   "52.2px / lh 52.2px / w700",
+   1
+  ],
+  [
+   "68.2px / lh 68.2px / w700",
+   1
+  ],
+  [
+   "22px / lh 28.8px / w600",
+   1
+  ],
+  [
+   "44.1px / lh 44.1px / w700",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "700",
+   116
+  ],
+  [
+   "300",
+   49
+  ],
+  [
+   "500",
+   20
+  ],
+  [
+   "600",
+   13
+  ],
+  [
+   "800",
+   4
+  ],
+  [
+   "400",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "50%",
+   16
+  ],
+  [
+   "12px",
+   14
+  ],
+  [
+   "10px",
+   8
+  ],
+  [
+   "4px",
+   7
+  ],
+  [
+   "16px",
+   5
+  ],
+  [
+   "20px",
+   2
+  ],
+  [
+   "30px",
+   2
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(0, 0, 0, 0.05) 0px 2px 8px 0px",
+   6
+  ],
+  [
+   "rgb(135, 206, 235) 0px 0px 15.4725px 0px",
+   4
+  ],
+  [
+   "rgba(0, 0, 0, 0.08) 0px 2px 12px 0px",
+   2
+  ],
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.05) 0px 10px 25px 0px",
+   1
+  ],
+  [
+   "rgba(135, 206, 235, 0.15) 0px 4px 12px 0px",
+   1
+  ],
+  [
+   "rgb(135, 206, 235) 0px 0px 16.6951px 5.02136px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    1384
+   ],
+   [
+    "0.2s",
+    23
+   ],
+   [
+    "transform 0.25s",
+    10
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "0.3s",
+    7
+   ],
+   [
+    "opacity 0.1s linear",
+    6
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    3
+   ],
+   [
+    "opacity 1s",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "pulseShadow 3s ease",
+    4
+   ],
+   [
+    "pulse-shadow 3s ease",
+    1
+   ]
+  ],
+  "filtri": [],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-67e6a52584dc281daa432113\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67e6a9641b10213e422d23f5\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67e6a875dffd011114994f9f\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67e6a9444a667c3efcf2fb6e\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67e6f1edd6c1a75690f5aebb\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67e6f8f878d1f3625f2fcc74\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67eb2f72eb554417ffb5e42b\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67eb3143303f5f3f75243de1\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67ec78e90c47a85666b3fccf\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67ec8375e9199f0eb73e0454\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    62
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -12.5)",
+    7
+   ],
+   [
+    "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, -4.24219)",
+    4
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    3
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -23)",
+    2
+   ],
+   [
+    "matrix(1.3, 0, 0, 1.3, 0, 0)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [
+  "anim-form-post-submit",
+  "animation-form-field-fx-highlight-double-trace",
+  "animation-form-field-fx-highlight-double-trace-bottom",
+  "animation-form-field-fx-highlight-glow",
+  "animation-form-field-fx-highlight-trace",
+  "animation-form-field-fx-highlight-trace-bottom",
+  "bounceIn",
+  "bounceOut",
+  "cart-loader-spin",
+  "clipAnimation",
+  "fa-beat",
+  "fa-beat-fade",
+  "fa-bounce",
+  "fa-fade",
+  "fa-flip",
+  "fa-shake",
+  "fa-spin",
+  "fadeout",
+  "gallery-image-enter-from-left",
+  "gallery-image-enter-from-right",
+  "gallery-image-exit-to-left",
+  "gallery-image-exit-to-right",
+  "hideContent",
+  "image-fade-in",
+  "keyframes-bar",
+  "keyframes-check",
+  "keyframes-circle",
+  "keyframes-circle-check",
+  "keyframes-ellipsis-grow",
+  "keyframes-ellipsis-shift",
+  "keyframes-ellipsis-shrink",
+  "keyframes-spinner",
+  "keyframes-spinner-check",
+  "lightbox-open",
+  "loading-dot-2",
+  "loading-dot-3",
+  "loading-indicator-dash",
+  "loading-indicator-rotate-spinner",
+  "no-image-fade-in",
+  "plyr-fade-in",
+  "plyr-popup",
+  "plyr-progress",
+  "portfolio-index-background-image-mask--mask-down-in",
+  "portfolio-index-background-image-mask--mask-down-out",
+  "portfolio-index-background-image-mask--mask-left-in",
+  "portfolio-index-background-image-mask--mask-left-out",
+  "portfolio-index-background-image-mask--mask-right-in",
+  "portfolio-index-background-image-mask--mask-right-out",
+  "portfolio-index-background-image-mask--mask-up-in",
+  "portfolio-index-background-image-mask--mask-up-out",
+  "product-reviews-loader-flip-square",
+  "pulseBadgeOpacity",
+  "riseandfadein",
+  "shake-three",
+  "shimmy",
+  "shiver",
+  "show-confirmation",
+  "show-confirmation-mobile",
+  "spin",
+  "sqs-spin",
+  "tmpl-anim-clip-horizontal-left",
+  "tmpl-anim-clip-vertical-up",
+  "tmpl-anim-fade-scale-up",
+  "tmpl-anim-fade-stretch-up",
+  "tmpl-anim-fade-up",
+  "underlineSlideIn",
+  "underlineSlideOut",
+  "video-player-settings-popup",
+  "video-player__loading-indicator-dash",
+  "video-player__loading-indicator-rotate-spinner"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 185,
+   "text": "Apriresti questa"
+  },
+  {
+   "tag": "h1",
+   "y": 259,
+   "text": "email?"
+  },
+  {
+   "tag": "h1",
+   "y": 749,
+   "text": "No, non l’apriresti. Anzi, la metteresti in spam."
+  },
+  {
+   "tag": "h3",
+   "y": 975,
+   "text": "Eppure, questo è il livello di email marketing in Italia."
+  },
+  {
+   "tag": "h2",
+   "y": 1425,
+   "text": "Che Dio riposi la sua anima…"
+  },
+  {
+   "tag": "h2",
+   "y": 1492,
+   "text": "L’email marketing “classico” è morto."
+  },
+  {
+   "tag": "h3",
+   "y": 1890,
+   "text": "Ma ora c’è qualcosa di meglio: Email marketing strategico. E qui le vendite sono matematiche."
+  },
+  {
+   "tag": "h3",
+   "y": 2421,
+   "text": "AH, l’hai sentita la news? Leggi"
+  },
+  {
+   "tag": "h2",
+   "y": 2779,
+   "text": "Ho una buona… E una pessima notizia."
+  },
+  {
+   "tag": "h2",
+   "y": 4257,
+   "text": "L’email marketing “classico” è morto."
+  },
+  {
+   "tag": "h2",
+   "y": 4915,
+   "text": "E i killer siamo stati noi… Noi marketer."
+  },
+  {
+   "tag": "h3",
+   "y": 5861,
+   "text": "Abbiamo usato l’email marketing fino allo sfinimento. Adesso gli utenti hanno talmente tante email che non ci fanno più caso… I killer siamo noi…"
+  },
+  {
+   "tag": "h2",
+   "y": 6356,
+   "text": "Ma sai cosa ho capito io e tante altre aziende che vendono a palate con le email?"
+  },
+  {
+   "tag": "h1",
+   "y": 7251,
+   "text": "Guarda come sta messa l’azienda Italiana media con le mail."
+  },
+  {
+   "tag": "h2",
+   "y": 7871,
+   "text": "Ora, è chiaro: nessuno di questi oggetti è persuasivo."
+  },
+  {
+   "tag": "h2",
+   "y": 8128,
+   "text": "Guarda, invece, alcuni degli oggetti che io scrivo:"
+  },
+  {
+   "tag": "h2",
+   "y": 9156,
+   "text": "Come si fa l’email"
+  },
+  {
+   "tag": "h2",
+   "y": 9223,
+   "text": "marketing strategico?"
+  },
+  {
+   "tag": "h2",
+   "y": 11224,
+   "text": "Segui le regole che spiego in outEmail e guarda i tuoi numeri salire come fosse una fottuta stat. di un videogame:"
+  },
+  {
+   "tag": "h1",
+   "y": 13359,
+   "text": "Non è per tutti. Sono serio."
+  },
+  {
+   "tag": "h1",
+   "y": 14101,
+   "text": "🤡: “Ma l’email marketing non funziona più” No. È il tuo email marketing che non funziona."
+  },
+  {
+   "tag": "h2",
+   "y": 15440,
+   "text": "E se non comprano… Cosa stiamo facendo qui???? Siamo qui per vendere."
+  },
+  {
+   "tag": "h1",
+   "y": 15876,
+   "text": "“Ma io so già scrivere email”"
+  },
+  {
+   "tag": "h3",
+   "y": 16619,
+   "text": "Il prossimo livello di pensiero strategico per scrivere email di marketing killer"
+  },
+  {
+   "tag": "h1",
+   "y": 17724,
+   "text": "“Andrei perché dovrei comprare outEmail e non i tuoi competitor?”"
+  },
+  {
+   "tag": "h2",
+   "y": 18166,
+   "text": "Impara dal numero 1 copywriting icon come ribaltare il mercato in tuo favore con email di marketing da museo."
+  },
+  {
+   "tag": "h1",
+   "y": 19072,
+   "text": "outEmail ha un ROI fuori"
+  },
+  {
+   "tag": "h1",
+   "y": 19127,
+   "text": "da questo pianeta"
+  },
+  {
+   "tag": "h1",
+   "y": 20096,
+   "text": "Lista video-lezioni"
+  },
+  {
+   "tag": "h1",
+   "y": 21001,
+   "text": "Il futuro del marketing? Appartiene a chi usa il cervello."
+  },
+  {
+   "tag": "h2",
+   "y": 22455,
+   "text": "I tuoi open rate saranno talmente alti da sembrare finti."
+  },
+  {
+   "tag": "h1",
+   "y": 23381,
+   "text": "adesso disponibile."
+  },
+  {
+   "tag": "h1",
+   "y": 24318,
+   "text": "FAQ"
+  },
+  {
+   "tag": "h3",
+   "y": 24457,
+   "text": "Si parla anche di deliverability e compliance?"
+  },
+  {
+   "tag": "h3",
+   "y": 24641,
+   "text": "Posso prenderlo se sono principiante?"
+  },
+  {
+   "tag": "h3",
+   "y": 24774,
+   "text": "Sei sicuro che mi aiuterà?"
+  },
+  {
+   "tag": "h3",
+   "y": 24856,
+   "text": "Da dove sono prese le strategie nel corso?"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 20901,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 20909,
+   "x": 320,
+   "w": 116,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Impara a scrivere email performanti",
+   "href": "#outemail-price",
+   "y": 1172,
+   "x": 560,
+   "w": 320,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://en.wikipedia.org/wiki/Email_marketing",
+   "y": 5105,
+   "x": 450,
+   "w": 61,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#ebe9e0",
+   "radius": "0px",
+   "border": "0px none rgb(235, 233, 224)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Ottieni accesso ad outEmail",
+   "href": "#outemail-price",
+   "y": 11868,
+   "x": 589,
+   "w": 261,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "✉️ Sezione 1 - Introduzione",
+   "href": null,
+   "y": 20427,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "✉️ Sezione 2 - Scrittura",
+   "href": null,
+   "y": 20502,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "✉️ Sezione 3 - Strategia",
+   "href": null,
+   "y": 20577,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "Ho un cervello 🧠",
+   "href": "#outemail-price",
+   "y": 21430,
+   "x": 630,
+   "w": 180,
+   "h": 54,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Open",
+   "href": null,
+   "y": 21889,
+   "x": 924,
+   "w": 64,
+   "h": 26,
+   "bg": "#a7ddf4",
+   "color": "#334155",
+   "radius": "12px",
+   "border": "0px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "500",
+   "transform": "none",
+   "padding": "5px 10px"
+  },
+  {
+   "text": "Open",
+   "href": null,
+   "y": 21889,
+   "x": 1574,
+   "w": 64,
+   "h": 26,
+   "bg": "#a7ddf4",
+   "color": "#334155",
+   "radius": "12px",
+   "border": "0px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "500",
+   "transform": "none",
+   "padding": "5px 10px"
+  },
+  {
+   "text": "Open",
+   "href": null,
+   "y": 21889,
+   "x": 2224,
+   "w": 64,
+   "h": 26,
+   "bg": "#a7ddf4",
+   "color": "#334155",
+   "radius": "12px",
+   "border": "0px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "500",
+   "transform": "none",
+   "padding": "5px 10px"
+  },
+  {
+   "text": "Open",
+   "href": null,
+   "y": 21889,
+   "x": 2874,
+   "w": 64,
+   "h": 26,
+   "bg": "#a7ddf4",
+   "color": "#334155",
+   "radius": "12px",
+   "border": "0px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "500",
+   "transform": "none",
+   "padding": "5px 10px"
+  },
+  {
+   "text": "Open",
+   "href": null,
+   "y": 21889,
+   "x": 3524,
+   "w": 64,
+   "h": 26,
+   "bg": "#a7ddf4",
+   "color": "#334155",
+   "radius": "12px",
+   "border": "0px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "500",
+   "transform": "none",
+   "padding": "5px 10px"
+  },
+  {
+   "text": "Open",
+   "href": null,
+   "y": 21889,
+   "x": 4174,
+   "w": 64,
+   "h": 26,
+   "bg": "#a7ddf4",
+   "color": "#334155",
+   "radius": "12px",
+   "border": "0px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "500",
+   "transform": "none",
+   "padding": "5px 10px"
+  },
+  {
+   "text": "Open",
+   "href": null,
+   "y": 21889,
+   "x": 4824,
+   "w": 64,
+   "h": 26,
+   "bg": "#a7ddf4",
+   "color": "#334155",
+   "radius": "12px",
+   "border": "0px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "500",
+   "transform": "none",
+   "padding": "5px 10px"
+  },
+  {
+   "text": "Entra in outEmail",
+   "href": null,
+   "y": 24075,
+   "x": 636,
+   "w": 169,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Si parla anche di deliverability e compliance?",
+   "href": null,
+   "y": 24457,
+   "x": 449,
+   "w": 542,
+   "h": 183,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Posso prenderlo se sono principiante?",
+   "href": null,
+   "y": 24641,
+   "x": 449,
+   "w": 542,
+   "h": 132,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Sei sicuro che mi aiuterà?",
+   "href": null,
+   "y": 24774,
+   "x": 449,
+   "w": 542,
+   "h": 81,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Da dove sono prese le strategie nel corso?",
+   "href": null,
+   "y": 24856,
+   "x": 449,
+   "w": 542,
+   "h": 132,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Ok, ok, facciamolo",
+   "href": "#outemail-price",
+   "y": 25169,
+   "x": 627,
+   "w": 185,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 25519,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 25587,
+   "x": 320,
+   "w": 71,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 20894,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 20894,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/586df0a5-912c-4e99-811c-0cc582d862a2/Vivid+Blue+Abstract+Gradient+Wallpaper.jpg",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 1330
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 229,
+   "x": 437,
+   "w": 566,
+   "h": 235
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e171116-2b52-4727-a0f2-fed00340563c/email.png",
+   "alt": "",
+   "y": 528,
+   "x": 388,
+   "w": 665,
+   "h": 204
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 1330,
+   "x": 0,
+   "w": 1440,
+   "h": 1343
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8a594e3f-5574-48e7-8854-5a4de32a5522/Untitled-1.png",
+   "alt": "",
+   "y": 1489,
+   "x": 421,
+   "w": 597,
+   "h": 384
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/06c8b0c4-359f-4ba5-94d1-eef3d36ca595/oe-list.png",
+   "alt": "",
+   "y": 2165,
+   "x": 599,
+   "w": 243,
+   "h": 243
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6881a66c-fafa-4041-82c9-a003668702a0/output-onlinegiftools.gif",
+   "alt": "",
+   "y": 2476,
+   "x": 654,
+   "w": 132,
+   "h": 74
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1330,
+   "x": 0,
+   "w": 1440,
+   "h": 1343
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1330,
+   "x": 0,
+   "w": 1440,
+   "h": 1343
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/73996230-0f41-4ac7-a43e-aab7c663263f/Vintage+Television+Rainbow+Test+Pattern.png",
+   "alt": "",
+   "y": 2909,
+   "x": 354,
+   "w": 732,
+   "h": 637
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6598a0e4-61b9-48d8-ab06-570cf6e5ab6a/ChatGPT+Image+Apr+1+2025.png",
+   "alt": "",
+   "y": 3529,
+   "x": 590,
+   "w": 259,
+   "h": 162
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4c8f2402-c973-4cf4-b8a5-5232d4a4f69d/oijjk.png",
+   "alt": "",
+   "y": 3796,
+   "x": 590,
+   "w": 259,
+   "h": 158
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2644,
+   "x": 0,
+   "w": 1440,
+   "h": 1518
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2644,
+   "x": 0,
+   "w": 1440,
+   "h": 1518
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 4133,
+   "x": 0,
+   "w": 1440,
+   "h": 2082
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c050556b-cd4d-4f0e-84d6-8533c93848f6/marketer-colpevole.png",
+   "alt": "",
+   "y": 4400,
+   "x": 388,
+   "w": 665,
+   "h": 468
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3c41b531-bfc6-4722-bfba-c71878682b95/o%CC%80klkhjgfvc.png",
+   "alt": "",
+   "y": 5048,
+   "x": 759,
+   "w": 327,
+   "h": 327
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/60c06c98-843b-45e6-9fb5-5a64a3428ed4/Untitled-2.png",
+   "alt": "",
+   "y": 5493,
+   "x": 388,
+   "w": 293,
+   "h": 293
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4133,
+   "x": 0,
+   "w": 1440,
+   "h": 2082
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4133,
+   "x": 0,
+   "w": 1440,
+   "h": 2082
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/586df0a5-912c-4e99-811c-0cc582d862a2/Vivid+Blue+Abstract+Gradient+Wallpaper.jpg",
+   "alt": "",
+   "y": 6186,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6186,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6186,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 6232,
+   "x": 0,
+   "w": 1440,
+   "h": 924
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6456,
+   "x": 447,
+   "w": 397,
+   "h": 64
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/70b1d914-b364-48ff-9003-352d932f3628/Video+for+Sales+Page+Icon.gif",
+   "alt": "",
+   "y": 6646,
+   "x": 523,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6232,
+   "x": 0,
+   "w": 1440,
+   "h": 924
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6232,
+   "x": 0,
+   "w": 1440,
+   "h": 924
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/586df0a5-912c-4e99-811c-0cc582d862a2/Vivid+Blue+Abstract+Gradient+Wallpaper.jpg",
+   "alt": "",
+   "y": 7070,
+   "x": 0,
+   "w": 1440,
+   "h": 1931
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/173248ee-a13c-49fc-a65b-25e66153664a/Untitled-4.png",
+   "alt": "",
+   "y": 7364,
+   "x": 389,
+   "w": 661,
+   "h": 496
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/45c68247-7454-4267-b7f2-704f4a0f76d7/sezione-screen-email-2.png",
+   "alt": "",
+   "y": 8266,
+   "x": 684,
+   "w": 274,
+   "h": 440
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ac2cded4-11e0-4631-81a5-b59b894dbe3e/email-andrei-oe.png",
+   "alt": "",
+   "y": 8268,
+   "x": 354,
+   "w": 327,
+   "h": 436
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7070,
+   "x": 0,
+   "w": 1440,
+   "h": 1931
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7070,
+   "x": 0,
+   "w": 1440,
+   "h": 1931
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 8914,
+   "x": 0,
+   "w": 1440,
+   "h": 857
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1072634745?h=74ace96bd1&app_id=122963",
+   "alt": "",
+   "y": 9321,
+   "x": 455,
+   "w": 530,
+   "h": 298
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/432b5148-e6e5-4d64-9c4e-970ee7088fd4/Comic+1+OE+Min.jpg",
+   "alt": "",
+   "y": 9856,
+   "x": 404,
+   "w": 631,
+   "h": 355
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f3b7dd2b-f91d-4d93-9954-d4c934be20d7/ripped-fumetto-min.png",
+   "alt": "",
+   "y": 9772,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6732ecb0-4b30-4ae2-b61d-68bbb4750e8f/Comic+2+OE+Min.jpg",
+   "alt": "",
+   "y": 10223,
+   "x": 404,
+   "w": 631,
+   "h": 355
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/41039cfd-2cab-4662-8fad-8324dfef5469/ripped-fumetto+copy.png",
+   "alt": "",
+   "y": 10505,
+   "x": 0,
+   "w": 1440,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 10663,
+   "x": 0,
+   "w": 1440,
+   "h": 1316
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3f63f1cc-764e-4e15-bebb-7509b20bacdc/Artboard+41_3.png",
+   "alt": "",
+   "y": 10738,
+   "x": 603,
+   "w": 234,
+   "h": 45
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10829,
+   "x": 573,
+   "w": 155,
+   "h": 32
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/72c77aba-6857-4c36-a311-75403338ce0a/Free_MacBook_Pro_1.png",
+   "alt": "",
+   "y": 10929,
+   "x": 388,
+   "w": 293,
+   "h": 220
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d53fa839-518c-4783-8ba3-6a456e264c1c/fps-2-min.png",
+   "alt": "",
+   "y": 11469,
+   "x": 590,
+   "w": 259,
+   "h": 146
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3ee815ec-bb48-4fd3-8021-a919410212d4/fps-8-min.png",
+   "alt": "",
+   "y": 11705,
+   "x": 861,
+   "w": 259,
+   "h": 126
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/643e5a13-b870-4fdd-b926-4f4455d31d65/fps-4-min.png",
+   "alt": "",
+   "y": 11479,
+   "x": 320,
+   "w": 259,
+   "h": 126
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5a8e22ea-c0e0-435b-a4de-8915a6f76d54/fps-7-min.png",
+   "alt": "",
+   "y": 11705,
+   "x": 320,
+   "w": 259,
+   "h": 126
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3e811ba6-5dba-4320-bc0d-23177a2f2a7c/fps-1-min.png",
+   "alt": "",
+   "y": 11469,
+   "x": 861,
+   "w": 259,
+   "h": 146
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6b07feca-7438-4189-ae36-38243fd0aab3/fps-6-min.png",
+   "alt": "",
+   "y": 11705,
+   "x": 590,
+   "w": 259,
+   "h": 126
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/062c2b32-d378-43aa-a469-1158b50fc197/fps-5-min.png",
+   "alt": "",
+   "y": 11592,
+   "x": 726,
+   "w": 259,
+   "h": 126
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/828933d7-84b2-4799-9b2a-5229e520d052/fps-3-min.png",
+   "alt": "",
+   "y": 11582,
+   "x": 455,
+   "w": 259,
+   "h": 146
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6c087bda-b30c-4d7d-a2c2-424cc983d4ee/comic3-min.jpg",
+   "alt": "",
+   "y": 12063,
+   "x": 404,
+   "w": 631,
+   "h": 355
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f3b7dd2b-f91d-4d93-9954-d4c934be20d7/ripped-fumetto-min.png",
+   "alt": "",
+   "y": 11978,
+   "x": 149,
+   "w": 1143,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7279be0f-3185-4b14-99cd-fad1d4c88922/comic4-min.jpg",
+   "alt": "",
+   "y": 12429,
+   "x": 404,
+   "w": 631,
+   "h": 355
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d9fc7605-b670-4c22-8106-a47077ead35b/comic5-min.jpg",
+   "alt": "",
+   "y": 12796,
+   "x": 404,
+   "w": 631,
+   "h": 355
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/41039cfd-2cab-4662-8fad-8324dfef5469/ripped-fumetto+copy.png",
+   "alt": "",
+   "y": 13106,
+   "x": 149,
+   "w": 1143,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 13264,
+   "x": 0,
+   "w": 1440,
+   "h": 743
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a3e43ec5-e5c7-4c70-aa74-f18683382a04/fsdfg.png",
+   "alt": "",
+   "y": 13528,
+   "x": 388,
+   "w": 382,
+   "h": 215
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13264,
+   "x": 0,
+   "w": 1440,
+   "h": 743
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13264,
+   "x": 0,
+   "w": 1440,
+   "h": 743
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/586df0a5-912c-4e99-811c-0cc582d862a2/Vivid+Blue+Abstract+Gradient+Wallpaper.jpg",
+   "alt": "",
+   "y": 13978,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13978,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13978,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 14024,
+   "x": 0,
+   "w": 1440,
+   "h": 833
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/586df0a5-912c-4e99-811c-0cc582d862a2/Vivid+Blue+Abstract+Gradient+Wallpaper.jpg",
+   "alt": "",
+   "y": 14857,
+   "x": 0,
+   "w": 1440,
+   "h": 924
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8c83c8fc-9568-4cc6-9709-d9ba81265a13/Piattaforma.+Brand+voice.+Competitor.+Consapevolezza.+Miglior+approccio.+Gancio.+Messaggio+core.+Reason+why..png",
+   "alt": "",
+   "y": 14933,
+   "x": 523,
+   "w": 394,
+   "h": 552
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f75e74a6-55d5-4655-8a40-af72774bfe97/Title.png",
+   "alt": "",
+   "y": 16186,
+   "x": 523,
+   "w": 394,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 16439,
+   "x": 0,
+   "w": 1440,
+   "h": 1189
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3f63f1cc-764e-4e15-bebb-7509b20bacdc/Artboard+41_3.png",
+   "alt": "",
+   "y": 16546,
+   "x": 590,
+   "w": 259,
+   "h": 50
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/838bc62a-a9a6-4099-8bbd-3def57ab4c5c/Video+File+SVG+Icon.png?format=2500w",
+   "alt": "Video Icon",
+   "y": 16860,
+   "x": 555,
+   "w": 60,
+   "h": 60
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/838bc62a-a9a6-4099-8bbd-3def57ab4c5c/Video+File+SVG+Icon.png?format=2500w",
+   "alt": "Video Icon",
+   "y": 17189,
+   "x": 555,
+   "w": 60,
+   "h": 60
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/838bc62a-a9a6-4099-8bbd-3def57ab4c5c/Video+File+SVG+Icon.png?format=2500w",
+   "alt": "Video Icon",
+   "y": 16889,
+   "x": 825,
+   "w": 60,
+   "h": 60
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/838bc62a-a9a6-4099-8bbd-3def57ab4c5c/Video+File+SVG+Icon.png?format=2500w",
+   "alt": "Video Icon",
+   "y": 17174,
+   "x": 825,
+   "w": 60,
+   "h": 60
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/593fa27b-9565-4701-b2f5-68a306efe1cf/Horizontal+Painting+Frame+in+Royal+Castle.png",
+   "alt": "",
+   "y": 18470,
+   "x": 354,
+   "w": 732,
+   "h": 412
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1743785628905-BF8LE7ZMJLG0SFU1PQN2/unsplash-image-sbcIAn4Mn14.jpg",
+   "alt": "",
+   "y": 18977,
+   "x": 0,
+   "w": 1440,
+   "h": 1025
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6f5b4052-89c1-43fc-ad16-f4da11c70513/Planet+Explosion+Design+Apr+4+2025.png",
+   "alt": "",
+   "y": 19128,
+   "x": 472,
+   "w": 496,
+   "h": 496
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 20001,
+   "x": 0,
+   "w": 1440,
+   "h": 774
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8f5a0af4-53ab-4f49-a712-2d496f608d57/lezioni+of-min-min.png",
+   "alt": "",
+   "y": 20183,
+   "x": 455,
+   "w": 530,
+   "h": 221
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20001,
+   "x": 0,
+   "w": 1440,
+   "h": 774
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20001,
+   "x": 0,
+   "w": 1440,
+   "h": 774
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/586df0a5-912c-4e99-811c-0cc582d862a2/Vivid+Blue+Abstract+Gradient+Wallpaper.jpg",
+   "alt": "",
+   "y": 20747,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20747,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20747,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 20793,
+   "x": 0,
+   "w": 1440,
+   "h": 796
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2b156f19-7fbc-4aa2-8c0e-c74401440914/Brain+Vector+Icon.png",
+   "alt": "",
+   "y": 20917,
+   "x": 683,
+   "w": 74,
+   "h": 74
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/586df0a5-912c-4e99-811c-0cc582d862a2/Vivid+Blue+Abstract+Gradient+Wallpaper.jpg",
+   "alt": "",
+   "y": 22360,
+   "x": 0,
+   "w": 1440,
+   "h": 829
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1072650262?h=aa1a688cb8&app_id=122963",
+   "alt": "",
+   "y": 22795,
+   "x": 489,
+   "w": 462,
+   "h": 260
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d4258eda-07b5-4431-baee-77e7a2da86f2/Artboard+41_2.png",
+   "alt": "",
+   "y": 23296,
+   "x": 590,
+   "w": 259,
+   "h": 50
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 24223,
+   "x": 0,
+   "w": 1440,
+   "h": 1104
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 25344,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 25402,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25454,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25454,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25454,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25454,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 259,
+ "meta": {
+  "description": null,
+  "og_title": "outEmail — AP Formazione",
+  "og_image": null,
+  "canonical": "https://www.andrei-copy.com/outemail",
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 1330,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Apriresti questa",
+   "headings": [
+    "Apriresti questa",
+    "email?",
+    "No, non l’apriresti. Anzi, la metteresti in spam.",
+    "Eppure, questo è il livello di email marketing in Italia.",
+    "Distinguersi è estremamente difficile… Ma anche estremamente profittevole."
+   ],
+   "blocchi_testo": 11,
+   "parole": 34,
+   "densita": 3,
+   "media": 3,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|7",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-apriresti-questa.png"
+  },
+  {
+   "i": 2,
+   "y": 1330,
+   "h": 1343,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Che Dio riposi la sua anima…",
+   "headings": [
+    "Che Dio riposi la sua anima…",
+    "L’email marketing “classico” è morto.",
+    "Ma ora c’è qualcosa di meglio: Email marketing strategico. E qui le vendite sono matematiche.",
+    "AH, l’hai sentita la news? Leggi"
+   ],
+   "blocchi_testo": 9,
+   "parole": 53,
+   "densita": 4,
+   "media": 6,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|7",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-che-dio-riposi-la-sua-anima.png"
+  },
+  {
+   "i": 3,
+   "y": 2673,
+   "h": 1489,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Ho una buona… E una pessima notizia.",
+   "headings": [
+    "Ho una buona… E una pessima notizia."
+   ],
+   "blocchi_testo": 7,
+   "parole": 59,
+   "densita": 4,
+   "media": 5,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|7",
+   "gruppo": 2,
+   "rappresentante": false,
+   "screenshot": "sezioni/03-ho-una-buona-e-una-pessima-notizia.png"
+  },
+  {
+   "i": 4,
+   "y": 4162,
+   "h": 2053,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "L’email marketing “classico” è morto.",
+   "headings": [
+    "L’email marketing “classico” è morto.",
+    "E i killer siamo stati noi… Noi marketer.",
+    "Email marketing? Non è nato ieri. Lo ha inventato Gary Thuerk nel 1978 fonte.",
+    "Esempio: il lavoratore d’ufficio medio riceve 121 email di marketing al giorno. Pazzia. Come cavolo fai a differenziarti in questo casino?",
+    "Abbiamo usato l’email marketing fino allo sfinimento. Adesso gli utenti hanno talmente tante email che non ci fanno più caso… I killer siamo noi…"
+   ],
+   "blocchi_testo": 20,
+   "parole": 120,
+   "densita": 6,
+   "media": 6,
+   "cta": 1,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|C|10",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-l-email-marketing-classico-morto.png"
+  },
+  {
+   "i": 5,
+   "y": 6232,
+   "h": 924,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|5",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-div.png"
+  },
+  {
+   "i": 6,
+   "y": 7156,
+   "h": 1845,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Guarda come sta messa l’azienda Italiana media con le mail.",
+   "headings": [
+    "Guarda come sta messa l’azienda Italiana media con le mail.",
+    "Ora, è chiaro: nessuno di questi oggetti è persuasivo.",
+    "Guarda, invece, alcuni degli oggetti che io scrivo:"
+   ],
+   "blocchi_testo": 7,
+   "parole": 114,
+   "densita": 6,
+   "media": 6,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|9",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-guarda-come-sta-messa-l-azienda-it.png"
+  },
+  {
+   "i": 7,
+   "y": 9001,
+   "h": 771,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Come si fa l’email",
+   "headings": [
+    "Come si fa l’email",
+    "marketing strategico?"
+   ],
+   "blocchi_testo": 4,
+   "parole": 6,
+   "densita": 1,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-come-si-fa-l-email.png"
+  },
+  {
+   "i": 8,
+   "y": 9772,
+   "h": 891,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 7,
+   "rappresentante": false,
+   "screenshot": "sezioni/08-section.png"
+  },
+  {
+   "i": 9,
+   "y": 10663,
+   "h": 1316,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "334 minuti di tutorial che ti mostreranno come scrivere email malatamente persuasive.",
+   "headings": [
+    "334 minuti di tutorial che ti mostreranno come scrivere email malatamente persuasive.",
+    "Segui le regole che spiego in outEmail e guarda i tuoi numeri salire come fosse una fottuta stat. di un videogame:"
+   ],
+   "blocchi_testo": 9,
+   "parole": 96,
+   "densita": 7,
+   "media": 12,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|7",
+   "gruppo": 1,
+   "rappresentante": false,
+   "screenshot": "sezioni/09-334-minuti-di-tutorial-che-ti-most.png"
+  },
+  {
+   "i": 10,
+   "y": 11978,
+   "h": 1286,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 5,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|6",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-section.png"
+  },
+  {
+   "i": 11,
+   "y": 13264,
+   "h": 743,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Non è per tutti. Sono serio.",
+   "headings": [
+    "Non è per tutti. Sono serio.",
+    "outEmail non è per novellini. È il prossimo livello di pensiero strategico nella scrittura di email marketing."
+   ],
+   "blocchi_testo": 5,
+   "parole": 49,
+   "densita": 7,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|4",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-non-per-tutti-sono-serio.png"
+  },
+  {
+   "i": 12,
+   "y": 14024,
+   "h": 833,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|4",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-div.png"
+  },
+  {
+   "i": 13,
+   "y": 14857,
+   "h": 924,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "E se non comprano… Cosa stiamo facendo qui???? Siamo qui per vendere.",
+   "headings": [
+    "E se non comprano… Cosa stiamo facendo qui???? Siamo qui per vendere."
+   ],
+   "blocchi_testo": 1,
+   "parole": 12,
+   "densita": 1,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|5",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-e-se-non-comprano-cosa-stiamo-face.png"
+  },
+  {
+   "i": 14,
+   "y": 15781,
+   "h": 658,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "“Ma io so già scrivere email”",
+   "headings": [
+    "“Ma io so già scrivere email”",
+    "Cosa aspettarti:"
+   ],
+   "blocchi_testo": 3,
+   "parole": 29,
+   "densita": 4,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|3",
+   "gruppo": 14,
+   "rappresentante": true,
+   "screenshot": "sezioni/14-ma-io-so-gi-scrivere-email.png"
+  },
+  {
+   "i": 15,
+   "y": 16439,
+   "h": 1189,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Il prossimo livello di pensiero strategico per scrivere email di marketing killer",
+   "headings": [
+    "Il prossimo livello di pensiero strategico per scrivere email di marketing killer"
+   ],
+   "blocchi_testo": 2,
+   "parole": 53,
+   "densita": 4,
+   "media": 6,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|6",
+   "gruppo": 10,
+   "rappresentante": false,
+   "screenshot": "sezioni/15-il-prossimo-livello-di-pensiero-st.png"
+  },
+  {
+   "i": 16,
+   "y": 17628,
+   "h": 1348,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "“Andrei perché dovrei comprare outEmail e non i tuoi competitor?”",
+   "headings": [
+    "“Andrei perché dovrei comprare outEmail e non i tuoi competitor?”",
+    "Impara dal numero 1 copywriting icon come ribaltare il mercato in tuo favore con email di marketing da museo."
+   ],
+   "blocchi_testo": 6,
+   "parole": 133,
+   "densita": 10,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|7",
+   "gruppo": 16,
+   "rappresentante": true,
+   "screenshot": "sezioni/16-andrei-perch-dovrei-comprare-oute.png"
+  },
+  {
+   "i": 17,
+   "y": 18977,
+   "h": 1025,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "outEmail ha un ROI fuori",
+   "headings": [
+    "outEmail ha un ROI fuori",
+    "da questo pianeta",
+    "E io ho personalmente creato il curriculum di questo corso per permetterti di vendere moooooolto più di 2 extra prodotti.",
+    "Butta n’occhio 🔽"
+   ],
+   "blocchi_testo": 8,
+   "parole": 54,
+   "densita": 5,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|5",
+   "gruppo": 13,
+   "rappresentante": false,
+   "screenshot": "sezioni/17-outemail-ha-un-roi-fuori.png"
+  },
+  {
+   "i": 18,
+   "y": 20001,
+   "h": 774,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Lista video-lezioni",
+   "headings": [
+    "Lista video-lezioni",
+    "✉️ Sezione 1 - Introduzione",
+    "✉️ Sezione 2 - Scrittura",
+    "✉️ Sezione 3 - Strategia"
+   ],
+   "blocchi_testo": 55,
+   "parole": 17,
+   "densita": 2,
+   "media": 4,
+   "cta": 3,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|C|4",
+   "gruppo": 18,
+   "rappresentante": true,
+   "screenshot": "sezioni/18-lista-video-lezioni.png"
+  },
+  {
+   "i": 19,
+   "y": 20793,
+   "h": 796,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|4",
+   "gruppo": 12,
+   "rappresentante": false,
+   "screenshot": "sezioni/19-div.png"
+  },
+  {
+   "i": 20,
+   "y": 21589,
+   "h": 771,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 19,
+   "parole": 141,
+   "densita": 18,
+   "media": 0,
+   "cta": 9,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|-|C|4",
+   "gruppo": 20,
+   "rappresentante": true,
+   "screenshot": "sezioni/20-section.png"
+  },
+  {
+   "i": 21,
+   "y": 22360,
+   "h": 829,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "I tuoi open rate saranno talmente alti da sembrare finti.",
+   "headings": [
+    "I tuoi open rate saranno talmente alti da sembrare finti.",
+    "Informati su outEmail prima di acquistare:"
+   ],
+   "blocchi_testo": 2,
+   "parole": 16,
+   "densita": 2,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 7,
+   "rappresentante": false,
+   "screenshot": "sezioni/21-i-tuoi-open-rate-saranno-talmente.png"
+  },
+  {
+   "i": 22,
+   "y": 23189,
+   "h": 1034,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "adesso disponibile.",
+   "headings": [
+    "adesso disponibile."
+   ],
+   "blocchi_testo": 3,
+   "parole": 5,
+   "densita": 0,
+   "media": 1,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|5",
+   "gruppo": 22,
+   "rappresentante": true,
+   "screenshot": "sezioni/22-adesso-disponibile.png"
+  },
+  {
+   "i": 23,
+   "y": 24223,
+   "h": 1104,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "FAQ",
+   "headings": [
+    "FAQ",
+    "Si parla anche di deliverability e compliance?",
+    "Posso prenderlo se sono principiante?",
+    "Sei sicuro che mi aiuterà?",
+    "Da dove sono prese le strategie nel corso?",
+    "Ti ho praticamente detto tutto. Quindi ho fatto la mia parte. Quindi adesso sta a te. Ribalti ‘ste email o no?"
+   ],
+   "blocchi_testo": 23,
+   "parole": 50,
+   "densita": 5,
+   "media": 1,
+   "cta": 5,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|6",
+   "gruppo": 23,
+   "rappresentante": true,
+   "screenshot": "sezioni/23-faq.png"
+  },
+  {
+   "i": 24,
+   "y": 25327,
+   "h": 705,
+   "prof": 2,
+   "tag": "footer",
+   "id": "footer-sections",
+   "classi": "sections",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 24,
+   "parole": 99,
+   "densita": 14,
+   "media": 7,
+   "cta": 2,
+   "firma": "footer|sections|1|M|C|4",
+   "gruppo": 24,
+   "rappresentante": true,
+   "screenshot": "sezioni/24-footer.png"
+  }
+ ],
+ "sezioni_totali": 24,
+ "sezioni_distinte": 17,
+ "src": [
+  {
+   "file": "src/01-modern.js",
+   "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+   "bytes": 117559
+  },
+  {
+   "file": "src/02-cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "bytes": 153101
+  },
+  {
+   "file": "src/03-common-vendors-3db7fa7f48056cab-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3db7fa7f48056cab-min.it-IT.js",
+   "bytes": 807017
+  },
+  {
+   "file": "src/04-common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "bytes": 246523
+  },
+  {
+   "file": "src/05-extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+   "bytes": 850352
+  },
+  {
+   "file": "src/06-extract-css-runtime-b6c9f1e8b6f4c3e5-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-b6c9f1e8b6f4c3e5-min.it-IT.js",
+   "bytes": 50537
+  },
+  {
+   "file": "src/07-visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "bytes": 3680
+  },
+  {
+   "file": "src/08-commerce-d50e5960dc9fd059-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/commerce-d50e5960dc9fd059-min.it-IT.css",
+   "bytes": 9897
+  },
+  {
+   "file": "src/09-user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "bytes": 2301
+  },
+  {
+   "file": "src/10-all.min.css",
+   "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+   "bytes": 102025
+  },
+  {
+   "file": "src/11-website.components.accordion.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.accordion/c97af1ba-80b4-4c06-b23c-188da2bad194_275/website.components.accordion.styles.css",
+   "bytes": 8079
+  },
+  {
+   "file": "src/12-website.components.accordion.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.accordion/c97af1ba-80b4-4c06-b23c-188da2bad194_275/website.components.accordion.visitor.js",
+   "bytes": 20725
+  },
+  {
+   "file": "src/13-website.components.button.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/15513fd9-cf46-4c19-8e88-ade3dbbf4aad_1052/website.components.button.styles.css",
+   "bytes": 1087
+  },
+  {
+   "file": "src/14-website.components.button.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/15513fd9-cf46-4c19-8e88-ade3dbbf4aad_1052/website.components.button.visitor.js",
+   "bytes": 12176
+  },
+  {
+   "file": "src/15-website.components.code.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/23427567-979d-40ac-b035-c3c2df1c0b01_927/website.components.code.styles.css",
+   "bytes": 102
+  },
+  {
+   "file": "src/16-website.components.code.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/23427567-979d-40ac-b035-c3c2df1c0b01_927/website.components.code.visitor.js",
+   "bytes": 15193
+  },
+  {
+   "file": "src/17-website.components.horizontalrule.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/7a41372a-a2fc-478b-9e43-c34805b2e47e_249/website.components.horizontalrule.styles.css",
+   "bytes": 95
+  },
+  {
+   "file": "src/18-website.components.horizontalrule.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/7a41372a-a2fc-478b-9e43-c34805b2e47e_249/website.components.horizontalrule.visitor.js",
+   "bytes": 12172
+  },
+  {
+   "file": "src/19-website.components.html.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/49aa6ce9-6788-48ef-8046-29522025eafb_882/website.components.html.styles.css",
+   "bytes": 105
+  },
+  {
+   "file": "src/20-website.components.html.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/49aa6ce9-6788-48ef-8046-29522025eafb_882/website.components.html.visitor.js",
+   "bytes": 12095
+  },
+  {
+   "file": "src/21-18018.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/18018.js",
+   "bytes": 12970
+  },
+  {
+   "file": "src/22-39188.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/39188.js",
+   "bytes": 20695
+  },
+  {
+   "file": "src/23-64023.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/64023.js",
+   "bytes": 33127
+  },
+  {
+   "file": "src/24-92452.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/92452.js",
+   "bytes": 38848
+  },
+  {
+   "file": "src/25-image-effect-film-grain.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-film-grain.js",
+   "bytes": 8476
+  },
+  {
+   "file": "src/26-image-effect-liquid.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-liquid.js",
+   "bytes": 8950
+  },
+  {
+   "file": "src/27-image-effect-parallax.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-parallax.js",
+   "bytes": 6211
+  },
+  {
+   "file": "src/28-image-effect-refracted-circles.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-refracted-circles.js",
+   "bytes": 3053
+  },
+  {
+   "file": "src/29-image-effect-refracted-lines.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-refracted-lines.js",
+   "bytes": 12159
+  },
+  {
+   "file": "src/30-website.components.imageFluid.shared.constants.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/website.components.imageFluid.shared.constants.js",
+   "bytes": 945
+  },
+  {
+   "file": "src/31-website.components.imageFluid.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/website.components.imageFluid.styles.css",
+   "bytes": 2671
+  },
+  {
+   "file": "src/32-website.components.imageFluid.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/website.components.imageFluid.visitor.js",
+   "bytes": 29543
+  },
+  {
+   "file": "src/33-website.components.socialLinks.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/7e8a8aa8-b578-4fac-a342-60ec87f8a280_660/website.components.socialLinks.styles.css",
+   "bytes": 12212
+  },
+  {
+   "file": "src/34-website.components.socialLinks.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/7e8a8aa8-b578-4fac-a342-60ec87f8a280_660/website.components.socialLinks.visitor.js",
+   "bytes": 13307
+  },
+  {
+   "file": "src/35-20293.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/15408132-6fbb-418d-bb9e-b56389260a91_627/20293.js",
+   "bytes": 9102
+  },
+  {
+   "file": "src/36-website.components.video.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/15408132-6fbb-418d-bb9e-b56389260a91_627/website.components.video.styles.css",
+   "bytes": 4148
+  },
+  {
+   "file": "src/37-css2.css",
+   "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;800&display=swap",
+   "bytes": 2613
+  },
+  {
+   "file": "src/38-custom.css",
+   "url": "https://static1.squarespace.com/static/custom-css/602126db7a4e4c01fd9babb6/602126db7a4e4c01fd9babd0/0/custom.css",
+   "bytes": 1183
+  },
+  {
+   "file": "src/39-site.css",
+   "url": "https://static1.squarespace.com/static/versioned-site-css/602126db7a4e4c01fd9babb6/177/5c5a519771c10ba3470d8101/602126db7a4e4c01fd9babd0/1822/site.css?nocustom=true",
+   "bytes": 1274296
+  },
+  {
+   "file": "src/40-site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+   "bytes": 128081
+  },
+  {
+   "file": "src/41-static.css",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1787156543145-0MJJPDTBNWE734EUOY27/static.css",
+   "bytes": 481489
+  }
+ ],
+ "segmentazione": "ok"
+}

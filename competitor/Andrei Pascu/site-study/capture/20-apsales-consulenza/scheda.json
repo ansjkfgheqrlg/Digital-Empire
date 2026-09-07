@@ -1,0 +1,1534 @@
+{
+ "url": "https://www.apsales.eu/consulenza",
+ "slug": "20-apsales-consulenza",
+ "catturata": "2026-09-07",
+ "dominio": "www.apsales.eu",
+ "titolo": "Consulenza di problem solving con Andrei Pascu | AP Sales",
+ "lang": "it",
+ "costruzione": "artigianale",
+ "altezza": 16832,
+ "larghezza": 1440,
+ "altezza_mobile": 19753,
+ "body_bg": "oklch(0.9821 0 0)",
+ "body_font": "Elza, Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+ "palette_testo": [
+  [
+   "oklch(0.9821 0 0)",
+   78
+  ],
+  [
+   "oklch(0.2273 0.0038 286.09)",
+   20
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.4)",
+   11
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.55)",
+   11
+  ],
+  [
+   "oklch(0.556 0.2453 261.33)",
+   11
+  ],
+  [
+   "#ffffff",
+   9
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.45)",
+   9
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+   8
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.7)",
+   6
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.6)",
+   5
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.65)",
+   5
+  ],
+  [
+   "oklab(0.2273 0.00105316 -0.00365114 / 0.5)",
+   4
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.85)",
+   4
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.35)",
+   3
+  ],
+  [
+   "oklab(0.2273 0.00105316 -0.00365114 / 0.4)",
+   3
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.5)",
+   3
+  ],
+  [
+   "oklab(0.2273 0.00105316 -0.00365114 / 0.45)",
+   3
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.8)",
+   2
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+   2
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.3)",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "oklch(0.1448 0.002 285)",
+   17
+  ],
+  [
+   "oklch(0.556 0.2453 261.33)",
+   14
+  ],
+  [
+   "oklch(0.1776 0 0)",
+   7
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.08)",
+   5
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.04)",
+   5
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.25)",
+   4
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.35)",
+   4
+  ],
+  [
+   "oklch(0.9821 0 0)",
+   3
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.8)",
+   2
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.08)",
+   2
+  ],
+  [
+   "#ffffff",
+   2
+  ],
+  [
+   "oklab(0.1448 0.000517639 -0.00193185 / 0.85)",
+   1
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.07)",
+   1
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.15)",
+   1
+  ],
+  [
+   "oklab(0.2273 0.00105316 -0.00365114 / 0.05)",
+   1
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.12)",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+   117
+  ],
+  [
+   "Elza, Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   71
+  ],
+  [
+   "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+   10
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "17px / lh 27.2px / w400",
+   36
+  ],
+  [
+   "15px / lh 22.5px / w400",
+   29
+  ],
+  [
+   "17px / lh 27.2px / w500",
+   25
+  ],
+  [
+   "33.9997px / lh 39.0996px / w400",
+   18
+  ],
+  [
+   "33.9997px / lh 39.0996px / w600",
+   18
+  ],
+  [
+   "59.999px / lh 59.999px / w600",
+   14
+  ],
+  [
+   "17px / lh 25.5px / w500",
+   6
+  ],
+  [
+   "59.999px / lh 59.999px / w900",
+   6
+  ],
+  [
+   "25px / lh 35px / w400",
+   5
+  ],
+  [
+   "15px / lh 22.5px / w500",
+   4
+  ],
+  [
+   "80px / lh 76.8px / w600",
+   4
+  ],
+  [
+   "45px / lh 45px / w600",
+   4
+  ],
+  [
+   "25px / lh 31.25px / w700",
+   3
+  ],
+  [
+   "25px / lh 31.25px / w400",
+   3
+  ],
+  [
+   "33.9997px / lh 39.0996px / w700",
+   3
+  ],
+  [
+   "80px / lh 76.8px / w900",
+   2
+  ],
+  [
+   "25px / lh 35px / w700",
+   2
+  ],
+  [
+   "15px / lh 21.4286px / w400",
+   2
+  ],
+  [
+   "17px / lh 27.2px / w700",
+   2
+  ],
+  [
+   "45px / lh 48.6px / w400",
+   2
+  ],
+  [
+   "45px / lh 48.6px / w700",
+   2
+  ],
+  [
+   "16px / lh 24px / w400",
+   2
+  ],
+  [
+   "33.9997px / lh 33.9997px / w400",
+   1
+  ],
+  [
+   "256px / lh 230.4px / w800",
+   1
+  ],
+  [
+   "45px / lh 48.6px / w600",
+   1
+  ],
+  [
+   "112px / lh 67.2px / w700",
+   1
+  ],
+  [
+   "112px / lh 112px / w600",
+   1
+  ],
+  [
+   "17px / lh 27.2px / w600",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "400",
+   98
+  ],
+  [
+   "600",
+   43
+  ],
+  [
+   "500",
+   35
+  ],
+  [
+   "700",
+   13
+  ],
+  [
+   "900",
+   8
+  ],
+  [
+   "800",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "3.35544e+07px",
+   20
+  ],
+  [
+   "8px",
+   3
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    457
+   ],
+   [
+    "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+    46
+   ],
+   [
+    "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+    14
+   ],
+   [
+    "transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), translate 0.2s cubic-bezier(0.4, 0, 0.2, 1), scale 0.2s cubic-bezier(0.4, 0",
+    14
+   ],
+   [
+    "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), translate 0.3s cubic-bezier(0.4, 0, 0.2, 1), scale 0.3s cubic-bezier(0.4, 0",
+    3
+   ],
+   [
+    "0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+    2
+   ],
+   [
+    "0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "node-in 0.42s cubic-bezier(0.16, 1, 0.3, 1)",
+    9
+   ]
+  ],
+  "filtri": [
+   [
+    "backdrop: blur(12px)",
+    1
+   ],
+   [
+    "contrast(1.35) brightness(1.5)",
+    1
+   ]
+  ],
+  "blend": [
+   [
+    "screen",
+    1
+   ]
+  ],
+  "clip": [
+   [
+    "inset(50%)",
+    2
+   ],
+   [
+    "inset(0px)",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    9
+   ]
+  ]
+ },
+ "keyframes": [
+  "accordion-down",
+  "accordion-up",
+  "caret-blink",
+  "enter",
+  "exit",
+  "logo-marquee",
+  "node-in",
+  "pulse",
+  "rail-marquee"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 319,
+   "text": "Consulenza di problem solving con Andrei Pascu"
+  },
+  {
+   "tag": "h2",
+   "y": 1214,
+   "text": "Qualsiasi cosa tu faccia… Hai un processo."
+  },
+  {
+   "tag": "h2",
+   "y": 1858,
+   "text": "E ogni processo ha un limite che gli impedisce di crescere."
+  },
+  {
+   "tag": "h2",
+   "y": 3013,
+   "text": "Ma chi è Andrei Pascu?"
+  },
+  {
+   "tag": "h2",
+   "y": 4246,
+   "text": "Scopri e/o rimuovi il tuo vincolo."
+  },
+  {
+   "tag": "h2",
+   "y": 5941,
+   "text": "I soldi si bloccano in uno di questi punti."
+  },
+  {
+   "tag": "h2",
+   "y": 7271,
+   "text": "Nel 2024 ci sono stati 4,1 milioni di dichiaranti IVA in Italia."
+  },
+  {
+   "tag": "h2",
+   "y": 10460,
+   "text": "Consulenza con Andrei Pascu."
+  },
+  {
+   "tag": "h2",
+   "y": 11299,
+   "text": "Cosa succede dopo il pagamento."
+  },
+  {
+   "tag": "h2",
+   "y": 12147,
+   "text": "Andrei Pascu vs consulente medio."
+  },
+  {
+   "tag": "h2",
+   "y": 13244,
+   "text": "Quello che chiedono prima di pagare."
+  },
+  {
+   "tag": "h3",
+   "y": 13428,
+   "text": "Fate fattura?"
+  },
+  {
+   "tag": "h3",
+   "y": 13524,
+   "text": "Posso pagare con bonifico?"
+  },
+  {
+   "tag": "h3",
+   "y": 13620,
+   "text": "La consulenza è con Andrei Pascu?"
+  },
+  {
+   "tag": "h3",
+   "y": 13716,
+   "text": "Andrei usa l'AI per darmi consigli?"
+  },
+  {
+   "tag": "h3",
+   "y": 13812,
+   "text": "Il riassunto che ricevo entro 48h è fatto dall'AI?"
+  },
+  {
+   "tag": "h3",
+   "y": 13908,
+   "text": "È possibile fare la consulenza in presenza?"
+  },
+  {
+   "tag": "h3",
+   "y": 14005,
+   "text": "In questa call mi verranno venduti servizi?"
+  },
+  {
+   "tag": "h3",
+   "y": 14101,
+   "text": "Cosa devo preparare prima della call?"
+  },
+  {
+   "tag": "h3",
+   "y": 14197,
+   "text": "Chi vede la registrazione della call?"
+  },
+  {
+   "tag": "h3",
+   "y": 14293,
+   "text": "Posso portare un socio o una persona del team?"
+  },
+  {
+   "tag": "h3",
+   "y": 14389,
+   "text": "Devo spostare la consulenza. Si può?"
+  },
+  {
+   "tag": "h3",
+   "y": 14485,
+   "text": "Un'ora basta davvero?"
+  },
+  {
+   "tag": "h3",
+   "y": 14581,
+   "text": "E se il mio problema non rientra nelle aree di Andrei?"
+  },
+  {
+   "tag": "h3",
+   "y": 14716,
+   "text": "Ci sono aree che Andrei non copre?"
+  },
+  {
+   "tag": "h2",
+   "y": 15132,
+   "text": "Sblocca il vincolo. Ottieni il tuo piano."
+  }
+ ],
+ "cta": [
+  {
+   "text": "Carriere",
+   "href": "/carriere",
+   "y": 12692,
+   "x": 1050,
+   "w": 91,
+   "h": 40,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.8)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.2)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 16px"
+  },
+  {
+   "text": "Menu",
+   "href": null,
+   "y": 12692,
+   "x": 1153,
+   "w": 103,
+   "h": 40,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.8)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.2)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 16px"
+  },
+  {
+   "text": "Fai una consulenza adesso →",
+   "href": null,
+   "y": 742,
+   "x": 184,
+   "w": 299,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Funnel di acquisizione",
+   "href": null,
+   "y": 2180,
+   "x": 185,
+   "w": 319,
+   "h": 69,
+   "bg": "oklab(0.556 -0.0369774 -0.242497 / 0.07)",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "20px 24px"
+  },
+  {
+   "text": "Campagna Meta Ads",
+   "href": null,
+   "y": 2249,
+   "x": 185,
+   "w": 319,
+   "h": 69,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "20px 24px"
+  },
+  {
+   "text": "Content organico",
+   "href": null,
+   "y": 2318,
+   "x": 185,
+   "w": 319,
+   "h": 69,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "20px 24px"
+  },
+  {
+   "text": "Onboarding cliente",
+   "href": null,
+   "y": 2387,
+   "x": 185,
+   "w": 319,
+   "h": 69,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "20px 24px"
+  },
+  {
+   "text": "Retention",
+   "href": null,
+   "y": 2456,
+   "x": 185,
+   "w": 319,
+   "h": 69,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "20px 24px"
+  },
+  {
+   "text": "Sistema referral",
+   "href": null,
+   "y": 2525,
+   "x": 185,
+   "w": 319,
+   "h": 68,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklab(0.9821 0 0 / 0.07)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "20px 24px"
+  },
+  {
+   "text": "Non arriva gente dal marketing",
+   "href": null,
+   "y": 6142,
+   "x": 185,
+   "w": 548,
+   "h": 89,
+   "bg": "oklab(0.556 -0.0369774 -0.242497 / 0.08)",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "28px 24px"
+  },
+  {
+   "text": "La gente arriva, ma non compra",
+   "href": null,
+   "y": 6231,
+   "x": 185,
+   "w": 548,
+   "h": 89,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "28px 24px"
+  },
+  {
+   "text": "Hai un team, ma non funziona",
+   "href": null,
+   "y": 6320,
+   "x": 185,
+   "w": 548,
+   "h": 89,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "28px 24px"
+  },
+  {
+   "text": "Non sai cosa fare",
+   "href": null,
+   "y": 6409,
+   "x": 185,
+   "w": 548,
+   "h": 88,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklab(0.9821 0 0 / 0.07)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "28px 24px"
+  },
+  {
+   "text": "Prenota la consulenza",
+   "href": null,
+   "y": 10060,
+   "x": 249,
+   "w": 255,
+   "h": 47,
+   "bg": "transparent",
+   "color": "oklch(0.556 0.2453 261.33)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 25,
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 0px"
+  },
+  {
+   "text": "Paga, poi scegli data e ora →",
+   "href": null,
+   "y": 10862,
+   "x": 843,
+   "w": 293,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Fate fattura?",
+   "href": null,
+   "y": 13428,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Posso pagare con bonifico?",
+   "href": null,
+   "y": 13524,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "La consulenza è con Andrei Pascu?",
+   "href": null,
+   "y": 13620,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Andrei usa l'AI per darmi consigli?",
+   "href": null,
+   "y": 13716,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Il riassunto che ricevo entro 48h è fatto dall'AI?",
+   "href": null,
+   "y": 13812,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "È possibile fare la consulenza in presenza?",
+   "href": null,
+   "y": 13908,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "In questa call mi verranno venduti servizi?",
+   "href": null,
+   "y": 14005,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Cosa devo preparare prima della call?",
+   "href": null,
+   "y": 14101,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Chi vede la registrazione della call?",
+   "href": null,
+   "y": 14197,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Posso portare un socio o una persona del team?",
+   "href": null,
+   "y": 14293,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Devo spostare la consulenza. Si può?",
+   "href": null,
+   "y": 14389,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Un'ora basta davvero?",
+   "href": null,
+   "y": 14485,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "E se il mio problema non rientra nelle aree di Andrei?",
+   "href": null,
+   "y": 14581,
+   "x": 184,
+   "w": 820,
+   "h": 134,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Ci sono aree che Andrei non copre?",
+   "href": null,
+   "y": 14716,
+   "x": 184,
+   "w": 820,
+   "h": 95,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 33.9997,
+   "weight": "600",
+   "transform": "none",
+   "padding": "28px 0px"
+  },
+  {
+   "text": "Prenota adesso →",
+   "href": null,
+   "y": 15417,
+   "x": 184,
+   "w": 212,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Prenota la consulenza →",
+   "href": null,
+   "y": 13494,
+   "x": 1157,
+   "w": 251,
+   "h": 55,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 24px 16px 20px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "img",
+   "src": "/ascii/knight.webp",
+   "alt": "",
+   "y": 178,
+   "x": 937,
+   "w": 318,
+   "h": 425
+  },
+  {
+   "tag": "img",
+   "src": "/team/andrei-consulenza.webp",
+   "alt": "Andrei Pascu",
+   "y": 3138,
+   "x": 785,
+   "w": 470,
+   "h": 588
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15788,
+   "x": 331,
+   "w": 778,
+   "h": 155
+  }
+ ],
+ "blocchi_testo": 246,
+ "meta": {
+  "description": "60 minuti 1:1 con Andrei Pascu per trovare il vincolo della tua impresa. Registrazione e piano PDF inclusi. €610 IVA inclusa.",
+  "og_title": "Consulenza di problem solving con Andrei Pascu | AP Sales",
+  "og_image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cd336771-8410-40ae-bbcf-764fb8baad43/id-preview-9bb40a2b--7478fc2d-006d-4669-95bd-7b45e31d5956.lovable.app-1787155303721.png",
+  "canonical": "https://apsales.eu/consulenza",
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Fate fattura?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Certamente. Dopo il pagamento troverai un modulo per inserire le tue informazioni fiscali o della tua impresa; riceverai la fattura elettronicamente entro 24h dal pagamento.\"}},{\"@type\":\"Question\",\"name\":\"Posso pagare con bonifico?\",\"acceptedAnswer\""
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 65,
+   "h": 1005,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "relative.overflow-hidden.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Consulenza di problem solving con Andrei Pascu",
+   "headings": [
+    "Consulenza di problem solving con Andrei Pascu"
+   ],
+   "blocchi_testo": 8,
+   "parole": 48,
+   "densita": 5,
+   "media": 1,
+   "cta": 1,
+   "firma": "section|relative.overflow-hidden.bg-void|2|M|C|5",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-consulenza-di-problem-solving-con.png"
+  },
+  {
+   "i": 2,
+   "y": 1070,
+   "h": 644,
+   "prof": 3,
+   "tag": "section",
+   "id": "processo",
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Qualsiasi cosa tu faccia… Hai un processo.",
+   "headings": [
+    "Qualsiasi cosa tu faccia… Hai un processo."
+   ],
+   "blocchi_testo": 23,
+   "parole": 13,
+   "densita": 2,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|3",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-qualsiasi-cosa-tu-faccia-hai-un-pr.png"
+  },
+  {
+   "i": 3,
+   "y": 1714,
+   "h": 1155,
+   "prof": 3,
+   "tag": "section",
+   "id": "vincolo",
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "E ogni processo ha un limite che gli impedisce di crescere.",
+   "headings": [
+    "E ogni processo ha un limite che gli impedisce di crescere."
+   ],
+   "blocchi_testo": 44,
+   "parole": 95,
+   "densita": 8,
+   "media": 0,
+   "cta": 6,
+   "firma": "section|scroll-mt-16.bg-void|1|-|C|6",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-e-ogni-processo-ha-un-limite-che-g.png"
+  },
+  {
+   "i": 4,
+   "y": 2869,
+   "h": 1233,
+   "prof": 3,
+   "tag": "section",
+   "id": "andrei",
+   "classi": "scroll-mt-16.theme-paper.bg-paper",
+   "bg": "oklch(0.9821 0 0)",
+   "bg_img": false,
+   "heading": "Ma chi è Andrei Pascu?",
+   "headings": [
+    "Ma chi è Andrei Pascu?"
+   ],
+   "blocchi_testo": 10,
+   "parole": 65,
+   "densita": 5,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.theme-paper.bg-paper|1|M|-|6",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-ma-chi-andrei-pascu.png"
+  },
+  {
+   "i": 5,
+   "y": 4102,
+   "h": 1695,
+   "prof": 3,
+   "tag": "section",
+   "id": "sblocco",
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Scopri e/o rimuovi il tuo vincolo.",
+   "headings": [
+    "Scopri e/o rimuovi il tuo vincolo."
+   ],
+   "blocchi_testo": 19,
+   "parole": 184,
+   "densita": 11,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|8",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-scopri-e-o-rimuovi-il-tuo-vincolo.png"
+  },
+  {
+   "i": 6,
+   "y": 5797,
+   "h": 1022,
+   "prof": 3,
+   "tag": "section",
+   "id": "diagnosi",
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "I soldi si bloccano in uno di questi punti.",
+   "headings": [
+    "I soldi si bloccano in uno di questi punti."
+   ],
+   "blocchi_testo": 27,
+   "parole": 72,
+   "densita": 7,
+   "media": 0,
+   "cta": 4,
+   "firma": "section|scroll-mt-16.bg-void|1|-|C|5",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-i-soldi-si-bloccano-in-uno-di-ques.png"
+  },
+  {
+   "i": 7,
+   "y": 6819,
+   "h": 1323,
+   "prof": 3,
+   "tag": "section",
+   "id": "contesto",
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Nel 2024 ci sono stati 4,1 milioni di dichiaranti IVA in Italia.",
+   "headings": [
+    "Nel 2024 ci sono stati 4,1 milioni di dichiaranti IVA in Italia."
+   ],
+   "blocchi_testo": 8,
+   "parole": 98,
+   "densita": 7,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|7",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-nel-2024-ci-sono-stati-4-1-milioni.png"
+  },
+  {
+   "i": 8,
+   "y": 8142,
+   "h": 1531,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 9,
+   "parole": 147,
+   "densita": 10,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|8",
+   "gruppo": 5,
+   "rappresentante": false,
+   "screenshot": "sezioni/08-section.png"
+  },
+  {
+   "i": 9,
+   "y": 9673,
+   "h": 644,
+   "prof": 3,
+   "tag": "section",
+   "id": "disponibilita",
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 8,
+   "parole": 17,
+   "densita": 3,
+   "media": 0,
+   "cta": 1,
+   "firma": "section|scroll-mt-16.bg-void|1|-|C|3",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-section.png"
+  },
+  {
+   "i": 10,
+   "y": 10316,
+   "h": 839,
+   "prof": 3,
+   "tag": "section",
+   "id": "offerta",
+   "classi": "scroll-mt-16.theme-paper.bg-paper",
+   "bg": "oklch(0.9821 0 0)",
+   "bg_img": false,
+   "heading": "Consulenza con Andrei Pascu.",
+   "headings": [
+    "Consulenza con Andrei Pascu."
+   ],
+   "blocchi_testo": 17,
+   "parole": 52,
+   "densita": 6,
+   "media": 0,
+   "cta": 1,
+   "firma": "section|scroll-mt-16.theme-paper.bg-paper|1|-|C|4",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-consulenza-con-andrei-pascu.png"
+  },
+  {
+   "i": 11,
+   "y": 11155,
+   "h": 847,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Cosa succede dopo il pagamento.",
+   "headings": [
+    "Cosa succede dopo il pagamento."
+   ],
+   "blocchi_testo": 18,
+   "parole": 34,
+   "densita": 4,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|4",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-cosa-succede-dopo-il-pagamento.png"
+  },
+  {
+   "i": 12,
+   "y": 12003,
+   "h": 1097,
+   "prof": 3,
+   "tag": "section",
+   "id": "confronto",
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Andrei Pascu vs consulente medio.",
+   "headings": [
+    "Andrei Pascu vs consulente medio."
+   ],
+   "blocchi_testo": 20,
+   "parole": 88,
+   "densita": 8,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|5",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-andrei-pascu-vs-consulente-medio.png"
+  },
+  {
+   "i": 13,
+   "y": 13100,
+   "h": 1856,
+   "prof": 3,
+   "tag": "section",
+   "id": "faq",
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Quello che chiedono prima di pagare.",
+   "headings": [
+    "Quello che chiedono prima di pagare.",
+    "Fate fattura?",
+    "Posso pagare con bonifico?",
+    "La consulenza è con Andrei Pascu?",
+    "Andrei usa l'AI per darmi consigli?",
+    "Il riassunto che ricevo entro 48h è fatto dall'AI?"
+   ],
+   "blocchi_testo": 29,
+   "parole": 95,
+   "densita": 5,
+   "media": 14,
+   "cta": 14,
+   "firma": "section|scroll-mt-16.bg-void|1|M|C|9",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-quello-che-chiedono-prima-di-pagar.png"
+  },
+  {
+   "i": 14,
+   "y": 14956,
+   "h": 694,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "relative.overflow-hidden.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Sblocca il vincolo. Ottieni il tuo piano.",
+   "headings": [
+    "Sblocca il vincolo. Ottieni il tuo piano."
+   ],
+   "blocchi_testo": 7,
+   "parole": 15,
+   "densita": 2,
+   "media": 0,
+   "cta": 1,
+   "firma": "section|relative.overflow-hidden.bg-void|2|-|C|3",
+   "gruppo": 14,
+   "rappresentante": true,
+   "screenshot": "sezioni/14-sblocca-il-vincolo-ottieni-il-tuo.png"
+  },
+  {
+   "i": 15,
+   "y": 15650,
+   "h": 1182,
+   "prof": 2,
+   "tag": "footer",
+   "id": null,
+   "classi": "relative",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 19,
+   "parole": 32,
+   "densita": 3,
+   "media": 1,
+   "cta": 0,
+   "firma": "footer|relative|2|M|-|6",
+   "gruppo": 15,
+   "rappresentante": true,
+   "screenshot": "sezioni/15-footer.png"
+  }
+ ],
+ "sezioni_totali": 15,
+ "sezioni_distinte": 14,
+ "src": [
+  {
+   "file": "src/01-RevealFooter-B34lvwld.js",
+   "url": "https://apsales.eu/assets/RevealFooter-B34lvwld.js",
+   "bytes": 47460
+  },
+  {
+   "file": "src/02-StickyCta-CHJgR4Y6.js",
+   "url": "https://apsales.eu/assets/StickyCta-CHJgR4Y6.js",
+   "bytes": 1689
+  },
+  {
+   "file": "src/03-accordion-LU6_yz4t.js",
+   "url": "https://apsales.eu/assets/accordion-LU6_yz4t.js",
+   "bytes": 9211
+  },
+  {
+   "file": "src/04-consulenza-C-CPjKX-.js",
+   "url": "https://apsales.eu/assets/consulenza-C-CPjKX-.js",
+   "bytes": 46044
+  },
+  {
+   "file": "src/05-dialog-CKatyLC6.js",
+   "url": "https://apsales.eu/assets/dialog-CKatyLC6.js",
+   "bytes": 35358
+  },
+  {
+   "file": "src/06-forms.functions-DiYx6QCP.js",
+   "url": "https://apsales.eu/assets/forms.functions-DiYx6QCP.js",
+   "bytes": 589
+  },
+  {
+   "file": "src/07-index-CfVXeo8a.js",
+   "url": "https://apsales.eu/assets/index-CfVXeo8a.js",
+   "bytes": 551427
+  },
+  {
+   "file": "src/08-jsx-runtime-CBeXhfNn.js",
+   "url": "https://apsales.eu/assets/jsx-runtime-CBeXhfNn.js",
+   "bytes": 11889
+  },
+  {
+   "file": "src/09-styles-CHG2jDaU.css",
+   "url": "https://apsales.eu/assets/styles-CHG2jDaU.css",
+   "bytes": 127394
+  },
+  {
+   "file": "src/10-useServerFn-C9O_qu9A.js",
+   "url": "https://apsales.eu/assets/useServerFn-C9O_qu9A.js",
+   "bytes": 368
+  },
+  {
+   "file": "src/11-css2.css",
+   "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Inter:wght@400;500;600&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap",
+   "bytes": 15091
+  }
+ ],
+ "segmentazione": "ok"
+}

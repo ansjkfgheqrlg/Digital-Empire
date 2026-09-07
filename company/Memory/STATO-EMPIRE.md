@@ -1,3 +1,11 @@
+## ⚠️ COORDINAMENTO — 2026-09-07, in corso — studio AI TUBE PRO / A6 Viral Mastery
+
+**Max ha ordinato la ripresa ("vai continua").** Costruzione grossa in corso su:
+`SKILL & Agenti/Empire Studio Suite/empire-studio/runs/corso-aitubepro/` (frame + lettura sentinelle
+sulle 10 lezioni A6) e `company/Memory/studi/aitubepro/A6-viral-mastery/` (report in scrittura).
+**Gael/Neri: non toccare questi due percorsi finché questo blocco non sparisce.** Nessun altro
+percorso è coinvolto. Rimuovo il blocco al gate A6 chiuso.
+
 ## ⏸️ 2026-09-07 — PAUSA su ordine di Max — CP-20260907-42V9
 
 **Codice di ripresa: EMP-V6DE (APERTA).** Lavoro sospeso a comando. Fotografia esatta: A6 «Viral

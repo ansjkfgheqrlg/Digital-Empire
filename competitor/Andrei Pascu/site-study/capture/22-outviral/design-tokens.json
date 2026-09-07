@@ -1,0 +1,1425 @@
+{
+ "title": "outViral: no pippe sull'algoritmo di TikTok — AP Formazione",
+ "meta_description": "Non riesci a stare dietro all'algoritmo di TikTok? Non devi, non è quello il gioco. C'è un unico elemento fondamentale che ti farà andare virale: retention rate. Scopri di più, vedi il video.",
+ "og_title": "outViral: no pippe sull'algoritmo di TikTok — AP Formazione",
+ "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/t/668a64e03487e13dd617e2fb/1735479431921/social-image-ov2+%281%29.png?format=1500w",
+ "canonical": "https://www.andrei-copy.com/outviral",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
+ "lang": "it-IT",
+ "page_height": 11555,
+ "page_width": 1440,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_text": [
+  [
+   "#1b1b1d",
+   100
+  ],
+  [
+   "#fafafa",
+   10
+  ],
+  [
+   "#a8a8a8",
+   8
+  ],
+  [
+   "#ffffff",
+   6
+  ],
+  [
+   "#e7e7e7",
+   5
+  ],
+  [
+   "#ffffff @0.35",
+   2
+  ],
+  [
+   "#ebe9e0",
+   2
+  ],
+  [
+   "#9027ff",
+   1
+  ],
+  [
+   "#f30606",
+   1
+  ],
+  [
+   "#fa0606",
+   1
+  ],
+  [
+   "#f21616",
+   1
+  ],
+  [
+   "#63f904",
+   1
+  ],
+  [
+   "#e71111",
+   1
+  ],
+  [
+   "#22bd3e",
+   1
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#1b1b1d",
+   31
+  ],
+  [
+   "#a8a8a8",
+   30
+  ],
+  [
+   "#0062ff",
+   3
+  ],
+  [
+   "#000000 @0.5",
+   2
+  ],
+  [
+   "#a8a8a8 @0.72",
+   1
+  ],
+  [
+   "#fafafa",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "elza-8u3n84",
+   60
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   58
+  ],
+  [
+   "Clarkson, Arial, sans-serif",
+   13
+  ],
+  [
+   "\"DM Sans\"",
+   8
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 28.8px / w300",
+   33
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   25
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   14
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   12
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   12
+  ],
+  [
+   "16px / lh 27.2px / w400",
+   9
+  ],
+  [
+   "16px / lh normal / w600",
+   8
+  ],
+  [
+   "24px / lh normal / w700",
+   5
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   4
+  ],
+  [
+   "12px / lh 20.4px / w400",
+   4
+  ],
+  [
+   "20px / lh 36px / w300",
+   3
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "24px / lh normal / w300",
+   2
+  ],
+  [
+   "35.2px / lh 31.68px / w300",
+   2
+  ],
+  [
+   "17.6px / lh normal / w300",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "700",
+   72
+  ],
+  [
+   "300",
+   45
+  ],
+  [
+   "400",
+   14
+  ],
+  [
+   "600",
+   8
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "10px",
+   9
+  ],
+  [
+   "4px",
+   5
+  ],
+  [
+   "5px",
+   3
+  ],
+  [
+   "100%",
+   2
+  ],
+  [
+   "26px",
+   2
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    979
+   ],
+   [
+    "transform 0.25s",
+    10
+   ],
+   [
+    "opacity 0.1s linear",
+    9
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "0.3s",
+    7
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "box-shadow 0.3s",
+    4
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
+    2
+   ],
+   [
+    "opacity 0.2s",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "transform 0.3s",
+    1
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [
+   [
+    "backdrop: blur(15px)",
+    2
+   ]
+  ],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-65d012f7f0260b341b45ccd5\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-65eafe795c95527ce2ecd933\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-65cde3f4891fcf4b853d3d62\")",
+    1
+   ],
+   [
+    "url(\"#d067c758288e9979524b-system_desktop\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    44
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    4
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1, 0, 0, 1, -40, -40)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -58)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -22, -22)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -45)",
+    1
+   ]
+  ]
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 231,
+   "text": "Ottieni una media di 10K views nei tuoi prossimi video"
+  },
+  {
+   "tag": "h3",
+   "y": 702,
+   "text": "Senza ca**ate."
+  },
+  {
+   "tag": "h2",
+   "y": 1000,
+   "text": "Non devi stare dietro all’algoritmo per andare virale e vendere."
+  },
+  {
+   "tag": "h2",
+   "y": 2075,
+   "text": "Un solo video… E la tua vita cambia per sempre"
+  },
+  {
+   "tag": "h2",
+   "y": 2887,
+   "text": "Ho cambiato la mia vita con dei brevi video"
+  },
+  {
+   "tag": "h3",
+   "y": 3411,
+   "text": "Ti insegnerò gli schemi e le formule che ho usato per fare…"
+  },
+  {
+   "tag": "h1",
+   "y": 3903,
+   "text": "Cosa contiene il corso:"
+  },
+  {
+   "tag": "h2",
+   "y": 4413,
+   "text": "Le video-lezioni"
+  },
+  {
+   "tag": "h3",
+   "y": 4604,
+   "text": "14 video-lezioni su come creare video"
+  },
+  {
+   "tag": "h3",
+   "y": 5075,
+   "text": "7 nuove video-lezioni"
+  },
+  {
+   "tag": "h2",
+   "y": 5934,
+   "text": "Ti beccherai il valore di creator da quasi 1 milione di follower totali."
+  },
+  {
+   "tag": "h3",
+   "y": 6392,
+   "text": "Riccardo Pagano"
+  },
+  {
+   "tag": "h3",
+   "y": 6370,
+   "text": "Not Ordinary Spaghetti"
+  },
+  {
+   "tag": "h3",
+   "y": 6370,
+   "text": "Nicolas Lombardo"
+  },
+  {
+   "tag": "h3",
+   "y": 7013,
+   "text": "Giovanni Pitarresi"
+  },
+  {
+   "tag": "h3",
+   "y": 7013,
+   "text": "Michele De Monte"
+  },
+  {
+   "tag": "h3",
+   "y": 7013,
+   "text": "Manuel Brignacca"
+  },
+  {
+   "tag": "h1",
+   "y": 7651,
+   "text": "Cosa ne pensa Fabiano"
+  },
+  {
+   "tag": "h3",
+   "y": 8281,
+   "text": "“Cosa ca**o sto sbagliando?” - cit. Andrei Pascu, 2020"
+  },
+  {
+   "tag": "h3",
+   "y": 8727,
+   "text": "“Ma… L’ho fatto prima io…” - Cit. Andrei 2020"
+  },
+  {
+   "tag": "h3",
+   "y": 9057,
+   "text": "“Se solo capissi l’algoritmo…” - Cit. Andrei 2020"
+  },
+  {
+   "tag": "h3",
+   "y": 9524,
+   "text": "“Questo va virale” - Cit. Andrei, 2024"
+  },
+  {
+   "tag": "h3",
+   "y": 10178,
+   "text": "La speranza non è una strategia."
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 8501,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 8509,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Riproduci",
+   "href": null,
+   "y": 1367,
+   "x": 680,
+   "w": 80,
+   "h": 80,
+   "bg": "#000000 @0.5",
+   "color": "#ffffff",
+   "radius": "100%",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "15px"
+  },
+  {
+   "text": "Entra in outViral",
+   "href": null,
+   "y": 1786,
+   "x": 636,
+   "w": 169,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "6 lezioni sulle basi",
+   "href": null,
+   "y": 4703,
+   "x": 320,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "2 lezioni su approccio e consigli",
+   "href": null,
+   "y": 4764,
+   "x": 320,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "2 lezioni sul luce e audio",
+   "href": null,
+   "y": 4855,
+   "x": 320,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "4 lezioni su come funziona TikTok e come fare video",
+   "href": null,
+   "y": 4916,
+   "x": 320,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "❗️Lista nuove lezioni",
+   "href": null,
+   "y": 5174,
+   "x": 759,
+   "w": 361,
+   "h": 62,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Vai al profilo",
+   "href": "https://www.youtube.com/@RikPaganoGaming",
+   "y": 6752,
+   "x": 414,
+   "w": 139,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Vai al profilo",
+   "href": "https://www.tiktok.com/@notordinaryspaghetti?is_from_webapp=1&sender_device=pc",
+   "y": 6752,
+   "x": 651,
+   "w": 139,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Vai al profilo",
+   "href": "https://www.instagram.com/nicolasllombardo?igsh=NGIxcnRveGh5ajM1",
+   "y": 6752,
+   "x": 887,
+   "w": 139,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Vai al profilo",
+   "href": "https://www.tiktok.com/@giovanni.pitarresi?is_from_webapp=1&sender_device=pc",
+   "y": 7380,
+   "x": 414,
+   "w": 139,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Vai al profilo",
+   "href": "https://www.tiktok.com/@micheledemonte?is_from_webapp=1&sender_device=pc",
+   "y": 7380,
+   "x": 651,
+   "w": 139,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Vai al profilo",
+   "href": "https://www.tiktok.com/@manuelbrignacca",
+   "y": 7380,
+   "x": 887,
+   "w": 139,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Fai l'account, iscriviti poi impara.",
+   "href": null,
+   "y": 10553,
+   "x": 572,
+   "w": 296,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 11042,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 11111,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 8494,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 8494,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0e191f8e-ce26-41b1-81ba-a7aaf259fcd0/Watercolour.jpg",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 859
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/41615163-9920-41f9-97e5-147ef3e78597/OutEdit.png",
+   "alt": "",
+   "y": 176,
+   "x": 489,
+   "w": 124,
+   "h": 42
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/eaf339d3-44d2-427e-991a-278eb173afb8/mockupov2-v2-min.png",
+   "alt": "",
+   "y": 282,
+   "x": 793,
+   "w": 327,
+   "h": 385
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 859
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 859
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2c66d504-60d5-471e-8f90-4895e5dcbb66/NPC.jpg",
+   "alt": "",
+   "y": 830,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 830,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 830,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/01fd2901-be68-41e9-9e7b-a145a9178b75/sfondo+grunge.png",
+   "alt": "",
+   "y": 876,
+   "x": 0,
+   "w": 1440,
+   "h": 1143
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1383,
+   "x": 696,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1535,
+   "x": 918,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1535,
+   "x": 962,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1535,
+   "x": 1006,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/4a12cc41-142e-4392-82a7-0f3f6b572821",
+   "alt": "",
+   "y": 1221,
+   "x": 389,
+   "w": 661,
+   "h": 372
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1389,
+   "x": 479,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1389,
+   "x": 919,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1221,
+   "x": 389,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3b4ec31d-9a87-4394-a633-d5f4f940fbdb/paypal-visa-applepay-amex-mastercard.png",
+   "alt": "",
+   "y": 1873,
+   "x": 598,
+   "w": 244,
+   "h": 31
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2124,
+   "x": 674,
+   "w": 273,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/bb2f72ef-a46a-4e25-955a-df5e94051b65/NPC.jpg",
+   "alt": "",
+   "y": 2432,
+   "x": 0,
+   "w": 1440,
+   "h": 351
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8725aa65-91dd-424b-b267-7ed3a669d1d2/01-Free-iPhone-15-Pro-Mockup+copy.png",
+   "alt": "",
+   "y": 2431,
+   "x": 827,
+   "w": 293,
+   "h": 408
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ddcda0d7-2a1e-4275-ad72-1180fa773334/Untitled-1.png",
+   "alt": "",
+   "y": 3109,
+   "x": 489,
+   "w": 225,
+   "h": 225
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e2a33c06-58fc-4d90-8629-ac86bab813b4/Untitled-11.png",
+   "alt": "",
+   "y": 3109,
+   "x": 726,
+   "w": 225,
+   "h": 225
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/95bc053f-0136-4510-b82a-b764208ba3b9/7.png",
+   "alt": "",
+   "y": 3516,
+   "x": 388,
+   "w": 192,
+   "h": 144
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/51c192ac-1e05-456b-9654-61375678debf/8.png",
+   "alt": "",
+   "y": 3516,
+   "x": 624,
+   "w": 192,
+   "h": 144
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1c671abe-e5b4-4c28-862d-26082207eb89/9.png",
+   "alt": "",
+   "y": 3516,
+   "x": 861,
+   "w": 192,
+   "h": 144
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/709a4211-18fe-4fbd-a29d-987b63668540/NPC.jpg",
+   "alt": "",
+   "y": 3771,
+   "x": 0,
+   "w": 1440,
+   "h": 594
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/41615163-9920-41f9-97e5-147ef3e78597/OutEdit.png",
+   "alt": "",
+   "y": 3820,
+   "x": 658,
+   "w": 124,
+   "h": 42
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8fe2c226-9b29-4ac9-9ee0-e7a892b65703/4.png",
+   "alt": "",
+   "y": 4088,
+   "x": 421,
+   "w": 259,
+   "h": 186
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d6556de0-7c67-4c57-a42f-5164b17b0195/5.png",
+   "alt": "",
+   "y": 4088,
+   "x": 759,
+   "w": 259,
+   "h": 186
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3771,
+   "x": 0,
+   "w": 1440,
+   "h": 594
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3771,
+   "x": 0,
+   "w": 1440,
+   "h": 594
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1bde87a9-925f-4ee3-bfdb-b2d4de6448f1/NPC3.gif",
+   "alt": "",
+   "y": 5319,
+   "x": 354,
+   "w": 293,
+   "h": 183
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/cc14112b-d8e8-4f0c-aaed-d4e3907dfa1a/NPC.gif",
+   "alt": "",
+   "y": 4684,
+   "x": 726,
+   "w": 394,
+   "h": 246
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d1db54d1-743e-4a0b-8ceb-c1253ab971be/NPC.jpg",
+   "alt": "",
+   "y": 5839,
+   "x": 0,
+   "w": 1440,
+   "h": 1718
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/60a780b0-2aae-4888-a46e-e1fff9aa86b9/pfp-riccardopagano.png",
+   "alt": "",
+   "y": 6229,
+   "x": 419,
+   "w": 130,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6f0ecf78-e111-45dd-8942-95d8fd3ca870/6.png",
+   "alt": "",
+   "y": 6696,
+   "x": 444,
+   "w": 80,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/31fb6ace-56c9-4f57-b2e0-22bc101da86a/pfp-notordinaryspaghetti.png",
+   "alt": "",
+   "y": 6229,
+   "x": 655,
+   "w": 130,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0ed365d4-a174-4e1d-b30b-267e73a56b24/7.png",
+   "alt": "",
+   "y": 6696,
+   "x": 680,
+   "w": 80,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e179cad2-f6e9-4a38-9a25-ad32bc5b978c/pfp-nicolaslombardo.png",
+   "alt": "",
+   "y": 6229,
+   "x": 891,
+   "w": 130,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a8b9ca20-0d5e-496d-a126-2d62fb869dcb/8.png",
+   "alt": "",
+   "y": 6696,
+   "x": 916,
+   "w": 80,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a462252f-3eaa-4a94-8f36-2e2907b386cc/pfp-giovannipitarresi.png",
+   "alt": "",
+   "y": 6872,
+   "x": 419,
+   "w": 130,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/76dea8e0-eb5b-4742-b6dd-646a41c40e7b/9.png",
+   "alt": "",
+   "y": 7324,
+   "x": 444,
+   "w": 80,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ff09e6cf-0fd8-41ac-b66d-6651765637f6/pfp-micheledemonte.png",
+   "alt": "",
+   "y": 6872,
+   "x": 655,
+   "w": 130,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5b95ceaa-64d8-4535-89c7-3c324ce43bbc/4.png",
+   "alt": "",
+   "y": 7324,
+   "x": 680,
+   "w": 80,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f0b62156-5473-43f9-9c4d-fb691826f78d/pfp-manuelbrignacca.png",
+   "alt": "",
+   "y": 6872,
+   "x": 891,
+   "w": 130,
+   "h": 130
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a37afd96-c2cb-4758-8fc1-645fc186501f/181k.png",
+   "alt": "",
+   "y": 7324,
+   "x": 916,
+   "w": 80,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
+   "alt": "",
+   "y": 7556,
+   "x": 0,
+   "w": 1440,
+   "h": 630
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7907,
+   "x": 705,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 8007,
+   "x": 873,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 8007,
+   "x": 917,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/9a2c0f8a-2719-4a85-96aa-1ad4c3177dd1",
+   "alt": "",
+   "y": 7792,
+   "x": 489,
+   "w": 462,
+   "h": 260
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7910,
+   "x": 553,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7910,
+   "x": 861,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7792,
+   "x": 489,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1664894189448-024X7R4FMVR6M4HAY99M/pawel-czerwinski-DmCYKLefqQ4-unsplash.jpg",
+   "alt": "",
+   "y": 8186,
+   "x": 0,
+   "w": 1440,
+   "h": 1243
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5c65504d-8217-41f4-9f7a-3efecc4c3dd0/DSC00197.jpg",
+   "alt": "",
+   "y": 8281,
+   "x": 894,
+   "w": 225,
+   "h": 322
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/41292b6c-2448-4381-9f81-a9b5d22cc6ee/Luce+Pocket+Studio.jpg",
+   "alt": "",
+   "y": 8727,
+   "x": 320,
+   "w": 225,
+   "h": 205
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a2eb5bd7-1dab-4d17-80c0-88b8ec2b96d0/MAD06667.jpg",
+   "alt": "",
+   "y": 9057,
+   "x": 894,
+   "w": 225,
+   "h": 249
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1664894598912-FEI9TRSDXGTQOT77NY3N/james-lee-Jo2keEVcwJw-unsplash.jpg",
+   "alt": "",
+   "y": 9429,
+   "x": 0,
+   "w": 1440,
+   "h": 1422
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b6543897-911b-40d7-9c07-f67163001f2e/MAD01951.jpg",
+   "alt": "",
+   "y": 9645,
+   "x": 579,
+   "w": 283,
+   "h": 189
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3b4ec31d-9a87-4394-a633-d5f4f940fbdb/paypal-visa-applepay-amex-mastercard.png",
+   "alt": "",
+   "y": 10640,
+   "x": 631,
+   "w": 177,
+   "h": 35
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 10868,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 10926,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10978,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10978,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10978,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10978,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "slices_desktop": 13,
+ "slices_mobile": 20,
+ "mobile_page_height": 16559
+}

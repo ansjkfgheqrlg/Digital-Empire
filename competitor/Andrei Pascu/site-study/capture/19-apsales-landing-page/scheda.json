@@ -1,0 +1,1254 @@
+{
+ "url": "https://www.apsales.eu/landing-page",
+ "slug": "19-apsales-landing-page",
+ "catturata": "2026-09-07",
+ "dominio": "www.apsales.eu",
+ "titolo": "Landing page che convertono, per B2B e SaaS | AP Sales",
+ "lang": "it",
+ "costruzione": "artigianale",
+ "altezza": 16039,
+ "larghezza": 1440,
+ "altezza_mobile": 16981,
+ "body_bg": "oklch(0.9821 0 0)",
+ "body_font": "Elza, Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+ "palette_testo": [
+  [
+   "oklch(0.9821 0 0)",
+   69
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.6)",
+   27
+  ],
+  [
+   "oklch(0.556 0.2453 261.33)",
+   22
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.45)",
+   13
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.7)",
+   12
+  ],
+  [
+   "#ffffff",
+   11
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.65)",
+   10
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+   8
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.5)",
+   6
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.85)",
+   6
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.8)",
+   5
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.2)",
+   5
+  ],
+  [
+   "oklab(0.2273 0.00105316 -0.00365114 / 0.75)",
+   5
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.3)",
+   3
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.4)",
+   3
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.8)",
+   3
+  ],
+  [
+   "oklch(0.2273 0.0038 286.09)",
+   2
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.55)",
+   2
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+   2
+  ],
+  [
+   "oklab(0.845 -0.138113 0.0370641 / 0.9)",
+   1
+  ],
+  [
+   "oklab(0.808 0.107414 0.0381871 / 0.9)",
+   1
+  ],
+  [
+   "oklab(0.704 0.176821 0.072217 / 0.7)",
+   1
+  ],
+  [
+   "oklab(0.2273 0.00105316 -0.00365114 / 0.7)",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "oklab(0.9821 0 0 / 0.3)",
+   18
+  ],
+  [
+   "oklch(0.1448 0.002 285)",
+   12
+  ],
+  [
+   "oklch(0.556 0.2453 261.33)",
+   12
+  ],
+  [
+   "oklch(0.1776 0 0)",
+   12
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.04)",
+   8
+  ],
+  [
+   "oklch(0.9821 0 0)",
+   2
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.8)",
+   2
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.06)",
+   2
+  ],
+  [
+   "oklab(0.1448 0.000517639 -0.00193185 / 0.85)",
+   1
+  ],
+  [
+   "#ffffff",
+   1
+  ],
+  [
+   "oklab(0.556 -0.0369774 -0.242497 / 0.08)",
+   1
+  ],
+  [
+   "oklab(0.9821 0 0 / 0.12)",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "Elza, Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   103
+  ],
+  [
+   "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+   99
+  ],
+  [
+   "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+   13
+  ],
+  [
+   "\"DM Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+   3
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "17px / lh 27.2px / w400",
+   45
+  ],
+  [
+   "15px / lh 22.5px / w400",
+   36
+  ],
+  [
+   "15px / lh 22.5px / w500",
+   32
+  ],
+  [
+   "25px / lh 31.25px / w700",
+   28
+  ],
+  [
+   "59.999px / lh 59.999px / w600",
+   15
+  ],
+  [
+   "33.9997px / lh 39.0996px / w600",
+   11
+  ],
+  [
+   "17px / lh 25.5px / w500",
+   9
+  ],
+  [
+   "17px / lh 27.2px / w500",
+   8
+  ],
+  [
+   "25px / lh 35px / w400",
+   6
+  ],
+  [
+   "16px / lh 24px / w400",
+   5
+  ],
+  [
+   "80px / lh 76.8px / w600",
+   3
+  ],
+  [
+   "25px / lh 35px / w700",
+   3
+  ],
+  [
+   "59.999px / lh 59.999px / w900",
+   3
+  ],
+  [
+   "45px / lh 45px / w800",
+   3
+  ],
+  [
+   "11px / lh 14.3px / w500",
+   3
+  ],
+  [
+   "80px / lh 76.8px / w900",
+   2
+  ],
+  [
+   "35.8399px / lh 35.8399px / w500",
+   2
+  ],
+  [
+   "17px / lh 27.2px / w700",
+   1
+  ],
+  [
+   "112px / lh 112px / w800",
+   1
+  ],
+  [
+   "45px / lh 45px / w700",
+   1
+  ],
+  [
+   "17px / lh 27.2px / w600",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "400",
+   92
+  ],
+  [
+   "500",
+   54
+  ],
+  [
+   "700",
+   33
+  ],
+  [
+   "600",
+   30
+  ],
+  [
+   "900",
+   5
+  ],
+  [
+   "800",
+   4
+  ]
+ ],
+ "raggi": [
+  [
+   "3.35544e+07px",
+   14
+  ],
+  [
+   "8px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    434
+   ],
+   [
+    "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+    21
+   ],
+   [
+    "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), translate 0.3s cubic-bezier(0.4, 0, 0.2, 1), scale 0.3s cubic-bezier(0.4, 0",
+    4
+   ],
+   [
+    "0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+    2
+   ],
+   [
+    "0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [
+   [
+    "backdrop: blur(12px)",
+    1
+   ],
+   [
+    "contrast(1.3) brightness(1.45)",
+    1
+   ]
+  ],
+  "blend": [
+   [
+    "screen",
+    1
+   ]
+  ],
+  "clip": [
+   [
+    "inset(0px)",
+    1
+   ],
+   [
+    "inset(50%)",
+    1
+   ]
+  ],
+  "trasformazioni": []
+ },
+ "keyframes": [
+  "accordion-down",
+  "accordion-up",
+  "caret-blink",
+  "enter",
+  "exit",
+  "logo-marquee",
+  "node-in",
+  "pulse",
+  "rail-marquee"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 193,
+   "text": "Il traffico lo paghi con le ads. Ma poi il tuo sito lo perde."
+  },
+  {
+   "tag": "h2",
+   "y": 2179,
+   "text": "Il nostro lavoro è aumentare quante persone comprano."
+  },
+  {
+   "tag": "h2",
+   "y": 3544,
+   "text": "Fai due conti."
+  },
+  {
+   "tag": "h2",
+   "y": 4751,
+   "text": "Come lavoriamo."
+  },
+  {
+   "tag": "h3",
+   "y": 4908,
+   "text": "Installiamo tracciamento compliant"
+  },
+  {
+   "tag": "h3",
+   "y": 5075,
+   "text": "Guardiamo cosa fanno le persone sul tuo sito"
+  },
+  {
+   "tag": "h3",
+   "y": 5242,
+   "text": "Creiamo la nuova landing sui tuoi numeri"
+  },
+  {
+   "tag": "h3",
+   "y": 5410,
+   "text": "Tracciamo le persone che vedono la pagina"
+  },
+  {
+   "tag": "h3",
+   "y": 5577,
+   "text": "Le tue conversioni aumentano"
+  },
+  {
+   "tag": "h2",
+   "y": 5943,
+   "text": "Cosa facciamo."
+  },
+  {
+   "tag": "h3",
+   "y": 6245,
+   "text": "Landing Page AP Sales"
+  },
+  {
+   "tag": "h2",
+   "y": 6962,
+   "text": "Parla con AP Sales subito."
+  },
+  {
+   "tag": "h2",
+   "y": 7758,
+   "text": "AP Sales, o un'altra agenzia?"
+  },
+  {
+   "tag": "h2",
+   "y": 8738,
+   "text": "Cosa succede dopo che ci contatti."
+  },
+  {
+   "tag": "h3",
+   "y": 8862,
+   "text": "Chiamata conoscitiva"
+  },
+  {
+   "tag": "h3",
+   "y": 8995,
+   "text": "Chiamata di preventivo"
+  },
+  {
+   "tag": "h3",
+   "y": 9128,
+   "text": "Contratto, pagamento, fattura"
+  },
+  {
+   "tag": "h3",
+   "y": 9203,
+   "text": "Onboarding"
+  },
+  {
+   "tag": "h3",
+   "y": 9313,
+   "text": "Audit e tracciamento"
+  },
+  {
+   "tag": "h3",
+   "y": 9473,
+   "text": "Analisi statistica e ricerca strategica"
+  },
+  {
+   "tag": "h3",
+   "y": 9611,
+   "text": "Copywriting della pagina"
+  },
+  {
+   "tag": "h3",
+   "y": 9721,
+   "text": "Design della pagina"
+  },
+  {
+   "tag": "h3",
+   "y": 9832,
+   "text": "Sviluppo della pagina"
+  },
+  {
+   "tag": "h3",
+   "y": 9942,
+   "text": "Approvazione"
+  },
+  {
+   "tag": "h3",
+   "y": 10053,
+   "text": "Go live"
+  },
+  {
+   "tag": "h3",
+   "y": 10163,
+   "text": "Analisi dati"
+  },
+  {
+   "tag": "h3",
+   "y": 10274,
+   "text": "CRO (ottimizzazione)"
+  },
+  {
+   "tag": "h3",
+   "y": 10384,
+   "text": "Consegna finale"
+  },
+  {
+   "tag": "h2",
+   "y": 10738,
+   "text": "Tecniche sostenibili."
+  },
+  {
+   "tag": "h3",
+   "y": 11023,
+   "text": "White Hat"
+  },
+  {
+   "tag": "h3",
+   "y": 11023,
+   "text": "Black Hat"
+  },
+  {
+   "tag": "h2",
+   "y": 11908,
+   "text": "Hai un buon prodotto. Noi influenziamo la percezione."
+  },
+  {
+   "tag": "h2",
+   "y": 12808,
+   "text": "Domande frequenti."
+  },
+  {
+   "tag": "h2",
+   "y": 14439,
+   "text": "Fai convertire il tuo traffico."
+  }
+ ],
+ "cta": [
+  {
+   "text": "Carriere",
+   "href": "/carriere",
+   "y": 13045,
+   "x": 1050,
+   "w": 91,
+   "h": 40,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.8)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.2)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 16px"
+  },
+  {
+   "text": "Menu",
+   "href": null,
+   "y": 13045,
+   "x": 1153,
+   "w": 103,
+   "h": 40,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.8)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.2)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 16px"
+  },
+  {
+   "text": "Rifai la tua landing →",
+   "href": "#offerta",
+   "y": 557,
+   "x": 468,
+   "w": 232,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Quanto puoi guadagnare",
+   "href": "#calcolo",
+   "y": 556,
+   "x": 712,
+   "w": 260,
+   "h": 60,
+   "bg": "transparent",
+   "color": "oklch(0.9821 0 0)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.25)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Parla con AP Sales →",
+   "href": "#contatto",
+   "y": 6575,
+   "x": 481,
+   "w": 478,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Sono un'azienda B2B",
+   "href": null,
+   "y": 7173,
+   "x": 440,
+   "w": 560,
+   "h": 61,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.7)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.15)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 20px"
+  },
+  {
+   "text": "Sono una SaaS",
+   "href": null,
+   "y": 7246,
+   "x": 440,
+   "w": 560,
+   "h": 61,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.7)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.15)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 20px"
+  },
+  {
+   "text": "Altro",
+   "href": null,
+   "y": 7319,
+   "x": 440,
+   "w": 560,
+   "h": 61,
+   "bg": "transparent",
+   "color": "oklab(0.9821 0 0 / 0.7)",
+   "radius": "0px",
+   "border": "1px solid oklab(0.9821 0 0 / 0.15)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 20px"
+  },
+  {
+   "text": "Parla con noi →",
+   "href": null,
+   "y": 7413,
+   "x": 440,
+   "w": 191,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Parla con noi →",
+   "href": "#contatto",
+   "y": 14640,
+   "x": 184,
+   "w": 191,
+   "h": 58,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "none",
+   "size": 17,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Rifai la tua landing →",
+   "href": "#contatto",
+   "y": 13847,
+   "x": 1183,
+   "w": 225,
+   "h": 55,
+   "bg": "oklch(0.556 0.2453 261.33)",
+   "color": "#ffffff",
+   "radius": "0px",
+   "border": "0px solid oklch(0.9 0.004 286)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "size": 15,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 24px 16px 20px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10947,
+   "x": 225,
+   "w": 72,
+   "h": 52
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10947,
+   "x": 761,
+   "w": 72,
+   "h": 52
+  },
+  {
+   "tag": "img",
+   "src": "/ascii/mirino-dot.webp",
+   "alt": "",
+   "y": 14488,
+   "x": 1096,
+   "w": 160,
+   "h": 160
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14996,
+   "x": 331,
+   "w": 778,
+   "h": 155
+  }
+ ],
+ "blocchi_testo": 240,
+ "meta": {
+  "description": "Costruiamo o rifacciamo la tua landing page per aumentare le conversioni, con dati e persuasione etica. Solo per B2B e SaaS.",
+  "og_title": "Landing page che convertono, per B2B e SaaS | AP Sales",
+  "og_image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cd336771-8410-40ae-bbcf-764fb8baad43/id-preview-9bb40a2b--7478fc2d-006d-4669-95bd-7b45e31d5956.lovable.app-1787155303721.png",
+  "canonical": "https://apsales.eu/landing-page",
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Che tipo di accordo offrite?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Un accordo una tantum, con riduzione del rischio grazie a operatività basate sulle performance che ti portiamo. Paghi una volta.\"}},{\"@type\":\"Question\",\"name\":\"Quanto tempo passerà dall'accordo al go live?\",\"acceptedAnswer\":{\"@type\":\""
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 65,
+   "h": 885,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "relative.overflow-hidden.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Il traffico lo paghi con le ads. Ma poi il tuo sito lo perde.",
+   "headings": [
+    "Il traffico lo paghi con le ads. Ma poi il tuo sito lo perde."
+   ],
+   "blocchi_testo": 9,
+   "parole": 55,
+   "densita": 6,
+   "media": 0,
+   "cta": 2,
+   "firma": "section|relative.overflow-hidden.bg-void|2|-|C|4",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-il-traffico-lo-paghi-con-le-ads-ma.png"
+  },
+  {
+   "i": 2,
+   "y": 950,
+   "h": 393,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 1,
+   "parole": 29,
+   "densita": 7,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|2",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-section.png"
+  },
+  {
+   "i": 3,
+   "y": 1343,
+   "h": 692,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 6,
+   "parole": 18,
+   "densita": 3,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|3",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-section.png"
+  },
+  {
+   "i": 4,
+   "y": 2035,
+   "h": 609,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Il nostro lavoro è aumentare quante persone comprano.",
+   "headings": [
+    "Il nostro lavoro è aumentare quante persone comprano."
+   ],
+   "blocchi_testo": 4,
+   "parole": 53,
+   "densita": 9,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|3",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-il-nostro-lavoro-aumentare-quante.png"
+  },
+  {
+   "i": 5,
+   "y": 2644,
+   "h": 756,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 6,
+   "parole": 23,
+   "densita": 3,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|4",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-section.png"
+  },
+  {
+   "i": 6,
+   "y": 3400,
+   "h": 805,
+   "prof": 3,
+   "tag": "section",
+   "id": "calcolo",
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Fai due conti.",
+   "headings": [
+    "Fai due conti."
+   ],
+   "blocchi_testo": 9,
+   "parole": 43,
+   "densita": 5,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|4",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-fai-due-conti.png"
+  },
+  {
+   "i": 7,
+   "y": 4205,
+   "h": 402,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 3,
+   "parole": 5,
+   "densita": 1,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|2",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-section.png"
+  },
+  {
+   "i": 8,
+   "y": 4607,
+   "h": 1192,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Come lavoriamo.",
+   "headings": [
+    "Come lavoriamo.",
+    "Installiamo tracciamento compliant",
+    "Guardiamo cosa fanno le persone sul tuo sito",
+    "Creiamo la nuova landing sui tuoi numeri",
+    "Tracciamo le persone che vedono la pagina",
+    "Le tue conversioni aumentano"
+   ],
+   "blocchi_testo": 21,
+   "parole": 82,
+   "densita": 7,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|6",
+   "gruppo": 8,
+   "rappresentante": true,
+   "screenshot": "sezioni/08-come-lavoriamo.png"
+  },
+  {
+   "i": 9,
+   "y": 5799,
+   "h": 1019,
+   "prof": 3,
+   "tag": "section",
+   "id": "offerta",
+   "classi": "scroll-mt-16.theme-paper.bg-paper",
+   "bg": "oklch(0.9821 0 0)",
+   "bg_img": false,
+   "heading": "Cosa facciamo.",
+   "headings": [
+    "Cosa facciamo.",
+    "Landing Page AP Sales"
+   ],
+   "blocchi_testo": 16,
+   "parole": 72,
+   "densita": 7,
+   "media": 0,
+   "cta": 1,
+   "firma": "section|scroll-mt-16.theme-paper.bg-paper|1|-|C|5",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-cosa-facciamo.png"
+  },
+  {
+   "i": 10,
+   "y": 6818,
+   "h": 796,
+   "prof": 3,
+   "tag": "section",
+   "id": "contatto",
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Parla con AP Sales subito.",
+   "headings": [
+    "Parla con AP Sales subito."
+   ],
+   "blocchi_testo": 8,
+   "parole": 24,
+   "densita": 3,
+   "media": 0,
+   "cta": 4,
+   "firma": "section|scroll-mt-16.bg-void|1|-|C|4",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-parla-con-ap-sales-subito.png"
+  },
+  {
+   "i": 11,
+   "y": 7614,
+   "h": 980,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "AP Sales, o un'altra agenzia?",
+   "headings": [
+    "AP Sales, o un'altra agenzia?"
+   ],
+   "blocchi_testo": 35,
+   "parole": 73,
+   "densita": 7,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|5",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-ap-sales-o-un-altra-agenzia.png"
+  },
+  {
+   "i": 12,
+   "y": 8594,
+   "h": 2000,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Cosa succede dopo che ci contatti.",
+   "headings": [
+    "Cosa succede dopo che ci contatti.",
+    "Chiamata conoscitiva",
+    "Chiamata di preventivo",
+    "Contratto, pagamento, fattura",
+    "Onboarding",
+    "Audit e tracciamento"
+   ],
+   "blocchi_testo": 59,
+   "parole": 157,
+   "densita": 8,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|10",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-cosa-succede-dopo-che-ci-contatti.png"
+  },
+  {
+   "i": 13,
+   "y": 10594,
+   "h": 1170,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Tecniche sostenibili.",
+   "headings": [
+    "Tecniche sostenibili.",
+    "White Hat",
+    "Black Hat"
+   ],
+   "blocchi_testo": 29,
+   "parole": 96,
+   "densita": 8,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|M|-|6",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-tecniche-sostenibili.png"
+  },
+  {
+   "i": 14,
+   "y": 11764,
+   "h": 900,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "scroll-mt-16.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Hai un buon prodotto. Noi influenziamo la percezione.",
+   "headings": [
+    "Hai un buon prodotto. Noi influenziamo la percezione."
+   ],
+   "blocchi_testo": 12,
+   "parole": 49,
+   "densita": 5,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-void|1|-|-|5",
+   "gruppo": 14,
+   "rappresentante": true,
+   "screenshot": "sezioni/14-hai-un-buon-prodotto-noi-influenzi.png"
+  },
+  {
+   "i": 15,
+   "y": 12664,
+   "h": 1615,
+   "prof": 3,
+   "tag": "section",
+   "id": "faq",
+   "classi": "scroll-mt-16.bg-pitch",
+   "bg": "oklch(0.1776 0 0)",
+   "bg_img": false,
+   "heading": "Domande frequenti.",
+   "headings": [
+    "Domande frequenti."
+   ],
+   "blocchi_testo": 1,
+   "parole": 182,
+   "densita": 11,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|scroll-mt-16.bg-pitch|1|-|-|8",
+   "gruppo": 15,
+   "rappresentante": true,
+   "screenshot": "sezioni/15-domande-frequenti.png"
+  },
+  {
+   "i": 16,
+   "y": 14279,
+   "h": 579,
+   "prof": 3,
+   "tag": "section",
+   "id": null,
+   "classi": "relative.overflow-hidden.bg-void",
+   "bg": "oklch(0.1448 0.002 285)",
+   "bg_img": false,
+   "heading": "Fai convertire il tuo traffico.",
+   "headings": [
+    "Fai convertire il tuo traffico."
+   ],
+   "blocchi_testo": 4,
+   "parole": 9,
+   "densita": 2,
+   "media": 1,
+   "cta": 1,
+   "firma": "section|relative.overflow-hidden.bg-void|2|M|C|3",
+   "gruppo": 16,
+   "rappresentante": true,
+   "screenshot": "sezioni/16-fai-convertire-il-tuo-traffico.png"
+  },
+  {
+   "i": 17,
+   "y": 14858,
+   "h": 1182,
+   "prof": 2,
+   "tag": "footer",
+   "id": null,
+   "classi": "relative",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 19,
+   "parole": 32,
+   "densita": 3,
+   "media": 1,
+   "cta": 0,
+   "firma": "footer|relative|2|M|-|6",
+   "gruppo": 17,
+   "rappresentante": true,
+   "screenshot": "sezioni/17-footer.png"
+  }
+ ],
+ "sezioni_totali": 17,
+ "sezioni_distinte": 17,
+ "src": [
+  {
+   "file": "src/01-Ascii-BML5uz1H.js",
+   "url": "https://apsales.eu/assets/Ascii-BML5uz1H.js",
+   "bytes": 706
+  },
+  {
+   "file": "src/02-CallDialog-B69m0cou.js",
+   "url": "https://apsales.eu/assets/CallDialog-B69m0cou.js",
+   "bytes": 6063
+  },
+  {
+   "file": "src/03-RevealFooter-B34lvwld.js",
+   "url": "https://apsales.eu/assets/RevealFooter-B34lvwld.js",
+   "bytes": 47460
+  },
+  {
+   "file": "src/04-StickyCta-CHJgR4Y6.js",
+   "url": "https://apsales.eu/assets/StickyCta-CHJgR4Y6.js",
+   "bytes": 1689
+  },
+  {
+   "file": "src/05-dialog-CKatyLC6.js",
+   "url": "https://apsales.eu/assets/dialog-CKatyLC6.js",
+   "bytes": 35358
+  },
+  {
+   "file": "src/06-forms.functions-DiYx6QCP.js",
+   "url": "https://apsales.eu/assets/forms.functions-DiYx6QCP.js",
+   "bytes": 589
+  },
+  {
+   "file": "src/07-index-CfVXeo8a.js",
+   "url": "https://apsales.eu/assets/index-CfVXeo8a.js",
+   "bytes": 551427
+  },
+  {
+   "file": "src/08-jsx-runtime-CBeXhfNn.js",
+   "url": "https://apsales.eu/assets/jsx-runtime-CBeXhfNn.js",
+   "bytes": 11889
+  },
+  {
+   "file": "src/09-landing-page-CRAikniJ.js",
+   "url": "https://apsales.eu/assets/landing-page-CRAikniJ.js",
+   "bytes": 22999
+  },
+  {
+   "file": "src/10-styles-CHG2jDaU.css",
+   "url": "https://apsales.eu/assets/styles-CHG2jDaU.css",
+   "bytes": 127394
+  },
+  {
+   "file": "src/11-useServerFn-C9O_qu9A.js",
+   "url": "https://apsales.eu/assets/useServerFn-C9O_qu9A.js",
+   "bytes": 368
+  },
+  {
+   "file": "src/12-css2.css",
+   "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Inter:wght@400;500;600&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap",
+   "bytes": 15091
+  }
+ ],
+ "segmentazione": "ok"
+}
