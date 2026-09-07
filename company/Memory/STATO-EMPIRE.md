@@ -1,10 +1,12 @@
 ## ⏸️ 2026-09-07 — PAUSA su ordine di Max — CP-20260907-42V9
 
 **Codice di ripresa: EMP-V6DE (APERTA).** Lavoro sospeso a comando. Fotografia esatta: A6 «Viral
-Mastery» a **4/10 lezioni scaricate+trascritte** (nastro in background, nessuna ancora letta).
-Pulizia di igiene fatta in corsa: `SYNC-CONFLICT.txt` (marker orfano di un conflitto già
-auto-risolto alle 08:17, verificato con `git fetch`) rimosso. Non toccata l'altra sessione attiva
-in parallelo sul repo (traccia Andrei Pascu, suoi `CP-ECX7`/`EMP-J8X2`).
+Mastery» **10/10 lezioni scaricate+trascritte, 0 guasti, nastro finito in 35 minuti** (completato
+mentre la sessione era già in pausa — solo registrato l'esito, studio NON ripreso). Nessuna
+lezione ancora letta o a registro. Pulizia di igiene fatta in corsa: `SYNC-CONFLICT.txt` (marker
+orfano di un conflitto già auto-risolto alle 08:17, verificato con `git fetch`) rimosso. Non
+toccata l'altra sessione attiva in parallelo sul repo (traccia Andrei Pascu, suoi
+`CP-ECX7`/`EMP-J8X2`).
 **RIPRESA DA:** lasciar finire il nastro (o verificare `stato.json` se fermo), poi frame + lettura
 via sentinelle su A6 — invariato da CP-PG43. Dettagli: [CP-20260907-42V9](checkpoints/CP-20260907-42V9.md).
 

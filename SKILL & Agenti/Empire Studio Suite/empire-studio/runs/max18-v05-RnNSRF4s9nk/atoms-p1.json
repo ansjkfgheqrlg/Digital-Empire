@@ -675,5 +675,271 @@
    {"verso": "KA-013", "tipo": "parte-di"},
    {"verso": "KA-055", "tipo": "precede"}
   ]
+ },
+ {
+  "id": "KA-053",
+  "tipo": "esempio",
+  "contenuto": "Secondo utilizzo dello slash command `/prompt-contracts`, questa volta per chiarire cosa significhi mettere il bot \"live\": \"/prompt-contracts please put this bot live. What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\". Il presentatore aggiunge in un riquadro: \"always fake money ofc\".",
+  "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, timestamp come riportato nella fonte) + voce 20:12-20:30",
+  "frame": "frame-204.png",
+  "ancora": "/prompt-contracts   please put this bot live.\" [...] \"What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-052", "tipo": "precede"},
+   {"verso": "KA-054", "tipo": "precede"},
+   {"verso": "KA-020", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-054",
+  "tipo": "dato",
+  "contenuto": "Prima di eseguire, Claude Code propone un \"Contract\" formale tramite `/prompt-contracts`: \"Got it -- fake money only, always. Here's the contract:\" seguito dal titolo \"### Contract\", poi \"GOAL: Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\" e \"CONSTRAINTS: Binance Testnet ONLY (sandbox mode, testnet.binance.vision)\" (elenco vincoli parzialmente tagliato dal frame, prosegue con righe troncate \"Run as pe...\" e \"Must veri...\", seguite da una sezione \"FORMAT\").",
+  "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, timestamp come riportato nella fonte) + voce 20:12-20:30",
+  "frame": "frame-204.png",
+  "ancora": "Got it -- fake money only, always. Here's the contract:\" linea separatrice, poi titolo grande \"### Contract\" [...] \"GOAL:** Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-053", "tipo": "parte-di"},
+   {"verso": "KA-041", "tipo": "applica"},
+   {"verso": "KA-058", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-055",
+  "tipo": "dato",
+  "contenuto": "I percorsi file reali mostrati a schermo rivelano il nome utente del computer del presentatore, \"giovannibeggiato\" (es. `/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager/`), e Claude nel Contract generato lo chiama esplicitamente col diminutivo \"Gio\" (\"Gio can see balances, orders, and trade history at testnet.binance.vision\"), coerente col nome di scena \"Jo\" usato nel resto del video.",
+  "fonte": "RnNSRF4s9nk#13:30 (path visibile nei log Bash) e #18:42 (Contract, nome \"Gio\", timestamp come riportato nella fonte) + voce varie",
+  "frame": "frame-136.png, frame-204.png",
+  "ancora": "/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager/\" ... \"Gio can see balances, orders, and trade history at testnet.binance.vision.\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-054", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-056",
+  "tipo": "definizione",
+  "contenuto": "Il presentatore lascia momentaneamente l'IDE per aggiornare la lavagna Excalidraw di riepilogo tappe, scrivendo dal vivo la voce \"3. Implementazione\" come terzo titolo di sezione (dopo \"1. Comprensione del problema\" e \"2. Design del sistema\"), mentre la voce narra esplicitamente di essere arrivati a quella fase del percorso, prima dell'imminente \"go live\".",
+  "fonte": "RnNSRF4s9nk#20:30 (excalidraw.com) + voce 20:30-20:42",
+  "frame": "frame-206.png",
+  "ancora": "il bot perché fino ad ora che cosa abbiamo fatto? Abbiamo semplicemente creato la nostra infrastruttura e quindi questo vuol dire che siamo alla parte di implementazione. Però una volta finita l'implementazione e quindi il nostro bot che sia stato creato, abbiamo la parte di go live.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "parte-di"},
+   {"verso": "KA-017", "tipo": "precede"},
+   {"verso": "KA-057", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-057",
+  "tipo": "esempio",
+  "contenuto": "Prima di eseguire la richiesta \"put this bot live\", Claude Code pone domande di chiarimento invece di agire alla cieca: \"quick questions: 1. Is the bot live? 2. Is it connected and already taking things live, or do I need to deploy it?\" e avvisa: \"Voting will get whipsawed in sideways markets. This is the reality check before going live.\" chiedendo infine: \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\"",
+  "fonte": "RnNSRF4s9nk#20:42 (IDE Antigravity, scroll verso l'alto della chat) + voce 20:42-21:12",
+  "frame": "frame-208.png",
+  "ancora": "quick questions:\" \"1. Is the bot live?\" \"2. Is it connected and already taking things live, or do I need to deploy it?\" [...] \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-054", "tipo": "parte-di"},
+   {"verso": "KA-042", "tipo": "applica", "perche": "Le domande di chiarimento prima di agire seguono la stessa logica del plan mode: proporre/chiarire prima di costruire."},
+   {"verso": "KA-058", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-058",
+  "tipo": "dato",
+  "contenuto": "Al primo tentativo di avvio, la connessione al testnet funziona ma le chiavi API vengono rifiutate: \"Good news: the connection to testnet.binance.vision is working (correct URL). Bad news: the API keys are rejected -- 'Invalid API-key, IP, or permissions for action.'\" Claude spiega: \"This usually means the testnet keys expired or were regenerated. You need to get fresh ones\", precisando anche che \"The public market data works fine (no auth needed) -- that's why backtesting worked. But placing orders requires valid testnet keys.\"",
+  "fonte": "RnNSRF4s9nk#21:12 (IDE Antigravity) e #21:30 (testo completo) + voce 21:00-21:12",
+  "frame": "frame-213.png, frame-216.png",
+  "ancora": "Good news: the connection to testnet.binance.vision is working (correct URL). Bad news: the API keys are rejected -- \"Invalid API-key, IP, or permissions for action.\"\" [...] \"This usually means the testnet keys expired or were regenerated. You need to get fresh ones:\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-057", "tipo": "precede"},
+   {"verso": "KA-047", "tipo": "precede", "perche": "La chiave Spot reale creata sul sito binance.com (KA-047) risulta insufficiente per operare ordini sul Testnet: qui si scopre che serve una chiave distinta, generata direttamente su testnet.binance.vision."},
+   {"verso": "KA-059", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-059",
+  "tipo": "dato",
+  "contenuto": "Lista numerata completa fornita da Claude per procurarsi chiavi testnet aggiornate: \"1. Go to https://testnet.binance.vision. 2. Log in with GitHub. 3. Click 'Generate HMAC_SHA256 Key'. 4. Copy the new API Key and Secret Key. 5. Give them to me and I'll update the .env and start the bot.\" Claude chiede infine: \"Can you grab fresh keys from testnet.binance.vision?\"",
+  "fonte": "RnNSRF4s9nk#21:30 (IDE Antigravity, lista completa) e #21:54 (lista confermata per intero) + voce 21:12-21:36",
+  "frame": "frame-216.png, frame-220.png",
+  "ancora": "1. Go to **https://testnet.binance.vision** (link blu sottolineato) 2. Log in with GitHub 3. Click **\"Generate HMAC_SHA256 Key\"** [...] 4. Copy the new **API Key** and **Secret Key** [...] 5. Give them to me and I'll update the .env and start the bot",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-058", "tipo": "parte-di"},
+   {"verso": "KA-060", "tipo": "precede"},
+   {"verso": "KA-061", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-060",
+  "tipo": "principio",
+  "contenuto": "Alla richiesta di Claude di recuperare da solo le chiavi (\"Can you grab fresh keys from testnet.binance.vision?\"), il presentatore prima chiede all'assistente \"you cando all alone right?\" (refuso per \"you can do it all alone, right?\"), lasciando intravedere un tentativo di automazione via browser (menzionato uno strumento \"Chrome-devt...\" troncato), ma poi decide di recuperare lui stesso le chiavi e mostrarlo al pubblico, invece di lasciare che sia l'AI a operare il browser in autonomia.",
+  "fonte": "RnNSRF4s9nk#21:30 (IDE Antigravity, \"you cando all alone right?\") e #22:06 (decisione confermata a voce) + voce 22:00-22:06",
+  "frame": "frame-216.png, frame-222.png",
+  "ancora": "poi ho deciso di farlo con voi. Perfetto, quindi fatemi pulire. E ora noi una volta fatto premeremo bypass permission e continueremo l'implementazione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-059", "tipo": "precede"},
+   {"verso": "KA-062", "tipo": "precede"},
+   {"verso": "KA-063", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-061",
+  "tipo": "dato",
+  "contenuto": "Sul sito testnet.binance.vision, alla pagina \"Generate HMAC-SHA-256 key\", il presentatore digita il nome descrittivo \"YouTube bot\" e lascia spuntati i tre permessi proposti di default: \"TRADE — Can place/cancel orders\", \"USER_DATA — Can view account information and query trades/orders of the user\", \"USER_STREAM — Can subscribe to the User Data Stream\"; restano non selezionati \"FIX_API\" e \"FIX_API_READ_ONLY\" (riservati a chiavi Ed25519).",
+  "fonte": "RnNSRF4s9nk#21:36 (browser, testnet.binance.vision/key/generate) + voce 21:36-21:54",
+  "frame": "frame-217.png",
+  "ancora": "☑ **TRADE** — \"Can place/cancel orders\" (spuntata, blu) - ☑ **USER_DATA** — \"Can view account information and query trades/orders of the user\" (spuntata, blu) - ☑ **USER_STREAM** — \"Can subscribe to the User Data Stream\" (spuntata, blu)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-059", "tipo": "applica"},
+   {"verso": "KA-062", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-062",
+  "tipo": "regola",
+  "contenuto": "Il sito conferma \"HMAC-SHA-256 Key registered\" con l'avviso \"Save these values right now. They won't be shown again!\" e mostra API Key e Secret Key generate, entrambe perfettamente leggibili a schermo e non oscurate dalla piattaforma. Per policy di sicurezza, pur trattandosi di chiavi Testnet (denaro finto, nessun valore reale), non vengono trascritte carattere per carattere in questo documento: restano trattate come credenziali mascherate.",
+  "fonte": "RnNSRF4s9nk#22:00 (browser, testnet.binance.vision/key/generate) + voce 22:00-22:06",
+  "frame": "frame-221.png",
+  "ancora": "HMAC-SHA-256 Key registered\". Sotto, avviso in grassetto: \"Save these values right now. They won't be shown again!\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-061", "tipo": "precede"},
+   {"verso": "KA-063", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-063",
+  "tipo": "procedura",
+  "contenuto": "Il presentatore incolla lui stesso, nel box di input di Claude Code, la API Key e la Secret Key appena generate su testnet.binance.vision (prima riga \"API: API Key: [chiave]\", seconda riga che inizia con \"Secret\"), poi preme il pulsante rosso \"Bypass permissions\" per lasciare che Claude prosegua l'implementazione senza altre conferme manuali.",
+  "fonte": "RnNSRF4s9nk#22:06 (IDE Antigravity) + voce 22:06-22:24",
+  "frame": "frame-222.png",
+  "ancora": "E ora noi una volta fatto premeremo bypass permission e continueremo l'implementazione. E questo è quindi il nostro bot che ha fatto adesso, come vedete, nell'arco di qualche minuto,",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-060", "tipo": "parte-di"},
+   {"verso": "KA-064", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-064",
+  "tipo": "dato",
+  "contenuto": "Header della dashboard locale del bot su localhost:8501: card scura con titolo \"₿ BTC Trading Bot\", sottotitolo verde \"BINANCE SPOT TESTNET\", indicatore verde \"LIVE\". Sotto, quattro card metriche: \"USDT BALANCE\" → \"$10,000.00\"; \"BTC HOLDINGS\" → \"1.0000 BTC\"; \"BTC/USDT\" → \"$77,440.79\"; \"TOTAL PORTFOLIO\" → \"$87,440.79\" (coerente: $10.000 USDT + 1 BTC a $77.440,79 = $87.440,79).",
+  "fonte": "RnNSRF4s9nk#22:36 (browser, localhost:8501) + voce 22:24-22:36",
+  "frame": "frame-227.png",
+  "ancora": "**\"USDT BALANCE\"** → **\"$10,000.00\"** (testo verde) - **\"BTC HOLDINGS\"** → **\"1.0000 BTC\"** (testo arancione) - **\"BTC/USDT\"** → **\"$77,440.79\"** - **\"TOTAL PORTFOLIO\"** → **\"$87,440.79\"**",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-063", "tipo": "precede"},
+   {"verso": "KA-065", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-065",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Bot Status & Signals\" della dashboard: badge arancione \"Waiting for signal (ADX too low)\", pannello \"Signal\" con valore \"HOLD\", e la griglia degli indicatori tecnici live: EMA FAST 76.767,29 / EMA SLOW 84.707,42, RSI 47,04 / OBV SLOPE -53290,37, BB MID 79.058,66 / ADX 19,87, ATR 2.034,08. Il log del bot conferma: \"STATUS | capital=10000.00 | position=1.000000 | signal=HOLD | ema_fast=76767.29 | ema_slow=84707.42 | obv_slope=-53290.37 | bb_mid=79058.66 | adx=19.87 | atr=2034.08\" e \"Sleeping 46718s until next daily candle...\".",
+  "fonte": "RnNSRF4s9nk#22:24 (browser, localhost:8501) + voce 22:24-22:36",
+  "frame": "frame-225.png",
+  "ancora": "STATUS | capital=10000.00 | position=1.000000 | signal=HOLD | ema_fast=76767.29 | ema_slow=84707.42 |\" [...] \"obv_slope=-53290.37 | bb_mid=79058.66 | adx=19.87 | atr=2034.08\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-034", "tipo": "esempio-di"},
+   {"verso": "KA-066", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-066",
+  "tipo": "dato",
+  "contenuto": "Tabella \"Trade History\" della dashboard, colonne TIME | SIDE | AMOUNT | PRICE | COST, 6 transazioni simulate: 2026-05-25 11:04:31 SELL 0.0030 $77.446,49 $232,34; 2026-05-25 11:04:30 BUY 0.0030 $77.446,50 $232,34; 2026-05-25 11:04:30 SELL 0.0020 $77.446,49 $154,89; 2026-05-25 11:04:30 BUY 0.0020 $77.446,50 $154,89; 2026-05-25 11:04:30 SELL 0.0010 $77.446,49 $77,45; 2026-05-25 11:04:29 BUY 0.0010 $77.446,50 $77,45.",
+  "fonte": "RnNSRF4s9nk#22:24 (browser, localhost:8501, sezione Trade History) + voce 22:24-22:36",
+  "frame": "frame-225.png",
+  "ancora": "| 2026-05-25 11:04:31 | SELL | 0.0030 | $77,446.49 | $232.34 | | 2026-05-25 11:04:30 | BUY | 0.0030 | $77,446.50 | $232.34 |",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-064", "tipo": "parte-di"},
+   {"verso": "KA-067", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-067",
+  "tipo": "principio",
+  "contenuto": "Il presentatore chiarisce che il testnet ufficiale di Binance di per sé non fornisce una dashboard visiva come quella appena mostrata (costruita su misura dal bot, in locale su localhost:8501): se invece si usasse la dashboard reale di Binance con soldi veri, si potrebbe entrare nell'interfaccia principale e vedere le proprie trade come se si stesse facendo trading in prima persona.",
+  "fonte": "RnNSRF4s9nk#22:36 (browser, testnet.binance.vision) e #22:42 (spiegazione) + voce 22:36-23:00",
+  "frame": "frame-227.png, frame-228.png",
+  "ancora": "dashboard visiva, ma se invece poi voi andrete ad utilizzare la dashboard di Binance con soldi veri, allora potrete entrare nell'interfaccia principale e vedere proprio le vostre trade, come se stesse facendo trading voi in prima persona.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-064", "tipo": "contraddice", "perche": "Contrappone esplicitamente la dashboard custom in locale (denaro finto) all'interfaccia reale di Binance (denaro vero), le due facce del capitolo go-live."},
+   {"verso": "KA-069", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-068",
+  "tipo": "dato",
+  "contenuto": "La pagina testnet.binance.vision mostra \"You currently have 1 API Key(s) registered for this user\" con una tabella: Key Type \"HMAC-SHA-256\", Description \"Youtube_Bot_2\", Permissions \"TRADE, USER_DATA, USER_STREAM\". Il nome descrittivo registrato (\"Youtube_Bot_2\", con underscore e suffisso \"_2\") differisce leggermente da quello pronunciato a voce (\"YouTube bot\") nella scena di generazione, probabile normalizzazione automatica del campo o numerazione di un tentativo precedente.",
+  "fonte": "RnNSRF4s9nk#22:42 (browser, testnet.binance.vision) + voce 22:42",
+  "frame": "frame-228.png",
+  "ancora": "You currently have 1 API Key(s) registered for this user:\" e una tabella con colonne \"Key Type\" | \"Description\" | \"Permissions\": riga \"HMAC-SHA-256\" | \"Youtube_Bot_2\" | \"TRADE, USER_DATA, USER_STREAM\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-061", "tipo": "contraddice", "perche": "Il nome digitato a voce ('YouTube bot') non coincide letteralmente col nome che risulta registrato in piattaforma ('Youtube_Bot_2')."}
+  ]
+ },
+ {
+  "id": "KA-069",
+  "tipo": "principio",
+  "contenuto": "Chiusura a schermo intero in webcam: il presentatore chiarisce che l'obiettivo del video non era insegnare il modo migliore di costruire un bot di trading, ma un metodo per affrontare qualsiasi problema con l'AI — la stessa tesi enunciata in apertura, qui ripresa e chiusa esplicitamente.",
+  "fonte": "RnNSRF4s9nk#23:00 (talking head) e #23:06 + voce 23:00-23:12",
+  "frame": "frame-231.png, frame-232.png",
+  "ancora": "qual è il miglior modo di costruire un bot di trading, ma quanto per capire [...] come potete affrontare qualsiasi problema con l'AI e quindi innanzitutto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-002", "tipo": "parte-di"},
+   {"verso": "KA-070", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-070",
+  "tipo": "principio",
+  "contenuto": "Riepilogo esplicito dei tre step del metodo generale insegnato dal video: 1) chiarire il problema che si sta affrontando, facendo \"zoom indietro\" e ottenendo una visione di alto livello; 2) definire una struttura architetturale; 3) solo a quel punto procedere con l'implementazione.",
+  "fonte": "RnNSRF4s9nk#23:12 (talking head) e #23:18 + voce 23:12-23:24",
+  "frame": "frame-233.png, frame-234.png",
+  "ancora": "chiarificando il problema che andrete a fare, zoomando indietro, avendo una visione di alto livello, poi andando [...] dentro e definendo più o meno una struttura architetturale e solo a quel punto procedere con l'implementazione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-069", "tipo": "parte-di"},
+   {"verso": "KA-011", "tipo": "applica"},
+   {"verso": "KA-071", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-071",
+  "tipo": "principio",
+  "contenuto": "Il presentatore avverte che i tre step del metodo (chiarire il problema, definire l'architettura, implementare) non sono sufficienti da soli se non si sa come scrivere prompt efficaci con Claude — apre così il pitch di vendita finale.",
+  "fonte": "RnNSRF4s9nk#23:24 (talking head) + voce 23:24-23:30",
+  "frame": "frame-235.png",
+  "ancora": "Questi tre step però non sono [...] sufficienti se non sapete come scrivere prompticaci con cloud e per farlo ho",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-070", "tipo": "precede"},
+   {"verso": "KA-072", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-072",
+  "tipo": "dato",
+  "contenuto": "Chiusura del video con il pitch di vendita: il presentatore annuncia di aver realizzato \"un corso completo\" segnalato con una card in sovraimpressione (\"qua sopra\"), che porta lo spettatore \"da beginner a completi esperti in come scrivere prompt di successo con Cloud Code [Claude Code] e con Codex\". Nessun prezzo o URL esplicito viene pronunciato; il richiamo è puramente visivo. L'ultima parola pronunciata nel video è \"Yeah.\".",
+  "fonte": "RnNSRF4s9nk#23:30 (talking head) e #23:36 (ultimo fotogramma) + voce 23:30-23:36",
+  "frame": "frame-236.png, frame-237.png",
+  "ancora": "fatto un corso completo che vi lascio qua sopra nel quale vi porto da beginner [...] a completi esperti in come scrivere prompt di successo con Cloud Code e con Codex. Yeah.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-071", "tipo": "parte-di"},
+   {"verso": "KA-005", "tipo": "applica"}
+  ]
  }
 ]
