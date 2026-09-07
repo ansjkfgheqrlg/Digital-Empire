@@ -97,6 +97,62 @@ l'avanzamento della **missione**, non del pezzo: 100% solo a lavoro finito.
 
 ---
 
+---
+
+## 2-quater. AGGIORNAMENTO 2026-09-07 notte - ripresa dopo il limite di sessione
+
+**Cosa e' successo:** il 2026-09-06 verso le 21:45 il limite di sessione dell'account ha ucciso
+**cinque sentinelle nello stesso secondo** (reset all'1:10). Non e' un errore di merito: e' la
+trappola gia' scritta al §6, ricapitata identica. Le tre che scrivevano ogni 5 scene avevano
+gia' messo al sicuro **35 scene**; le due che non avevano ancora scritto hanno perso tutto.
+
+**Il conteggio vero di `v06` alla ripresa: 308/376 = 81,9%** — non 273 come diceva
+CP-20260906-23RG, che era stato scritto prima che tre sentinelle consegnassero. *I numeri si
+contano sul disco, non si ereditano dal checkpoint.*
+
+**Strumenti nuovi costruiti in questa ripresa (in `empire-studio/scripts/`, non dentro i run):**
+- **`taglia_transcript.py`** — taglia da `transcript.md` la sola finestra temporale di un blocco
+  di scene e la scrive in `_slice-<da>-<a>.md`. Chiude alla radice la causa degli stalli al
+  watchdog: la sentinella non apre piu' un file da 117 KB, ne apre uno da 150 righe.
+  `python scripts/taglia_transcript.py --run <run> --da 274 --a 294`
+- **`trascrivi_run.py`** — ricostruisce il parlato di un run **senza sottotitoli**: scarica la
+  sola traccia audio, la porta a 16 kHz mono, la passa a `faster-whisper` e scrive `transcript.md`
+  nello **stesso formato `[HH:MM:SS]`** di `vtt_to_transcript.py`, cosi' slice e sentinelle non
+  si accorgono della differenza. Scrive man mano su `.parziale`: se la macchina cade, il fatto resta.
+
+**Accertato con yt-dlp il 2026-09-06:** `NmoOZVTrTXA` (`v09`, agenti vocali, 133 minuti)
+**"has no automatic captions / has no subtitles"**. Non e' una svista di ingest: quei sottotitoli
+non esistono. Per questo esiste `trascrivi_run.py`.
+
+**Accertato sui frame:** `v04`, `v05`, `v06`, `v08`, `v09` hanno tutti i frame gia' a **1280x720**.
+La trappola del `--height default=360` (`frame_extractor.py:133`) resta aperta **nel codice**, ma
+non riguarda questi cinque run.
+
+**Gia' pronto su disco per i prossimi giri (nessun costo, solo macchina):**
+`v08` 19 slice (1-393), `v05` 5 slice (1-98), `v04` 6 slice (1-120).
+
+**Falso allarme chiuso:** `SYNC-CONFLICT.txt` annunciava un commit bloccato. HEAD era identico a
+`origin/main`, `check_memory.py` passava, niente da rebasare: file rimosso.
+
+### Stato alla pausa del 2026-09-07, ore 07:45 — contato sul disco
+
+- **`v06` CHIUSO come visione: 376/376 = 100%.** `video-analysis.md` unito con
+  `unisci_parti.py`: **1.919 righe, 457 KB, nessuna scena mancante**. Sei fonti su dieci
+  hanno ora la visione completa.
+- **`v06` NON e' chiuso end-to-end:** mancano ancora atomi, saldatura del grafo, pagina wiki e
+  `knowledge/JTn5pqm9ecM/`. **Non dichiararlo fatto.**
+- **`v08` avviato:** tre sentinelle sulle scene 1-21, 22-42, 43-63 (Introduzione, Setup Cowork,
+  Claude Chat vs Code vs Cowork, Demo #1 Report per Direttore Vendite). Scrivono ogni 5 scene su
+  `_parte-*.md`: alla ripresa **si conta il disco**, non si riparte da zero.
+- **`v09`:** trascrizione dall'audio in corso con `trascrivi_run.py` (nessun sottotitolo esiste).
+  Alla ripresa: se `transcript.md` c'e' ed e' pieno, tagliare le slice e schierare; se manca,
+  rilanciare lo script — e' idempotente.
+- **Schema degli atomi, da rispettare** (modello: `knowledge/RnoC5IlOUhs/atoms.json`, 205 atomi):
+  lista JSON di oggetti `{id, tipo, contenuto, fonte, frame, ancora, confidenza, relazioni[]}`,
+  dove ogni relazione e' `{verso, tipo, perche}`. I pezzi si chiamano `atoms-p*.json` e li unisce
+  `unisci_atomi.py`, che rinumera in `KA-nnn` e **misura da solo** archi rotti, orfani, ancore
+  inventate e componenti connesse del grafo.
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte

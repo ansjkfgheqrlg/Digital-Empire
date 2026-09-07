@@ -402,10 +402,18 @@ class TestPianoEditoriale(unittest.TestCase):
     def test_A4_L01_03_esiste_la_colonna_delle_fonti_extra(self):
         """Una fonte senza un posto dove stare non viene mai riusata (A4-L01-03)."""
         import io as _io
-        with _io.open("assemble_piano_editoriale.py", encoding="utf-8") as f:
+        # Percorso assoluto: il test deve passare anche lanciando pytest dalla radice della
+        # fabbrica, non solo da questa cartella.
+        qui = os.path.dirname(os.path.abspath(__file__))
+        with _io.open(os.path.join(qui, "assemble_piano_editoriale.py"), encoding="utf-8") as f:
             sorgente = f.read()
         self.assertIn('"fonti_extra"', sorgente,
                       "il piano editoriale non ha la colonna per il materiale di supporto")
+        # E soprattutto: il campo deve stare nella RIGA, non solo nell'intestazione del CSV.
+        # Una colonna che nessuna riga popola e' una colonna sempre vuota (difetto trovato
+        # dalla verifica indipendente del gate A4, 2026-09-07).
+        self.assertIn('"fonti_extra": c.get("fonti_extra") or []', sorgente,
+                      "fonti_extra e' solo nell'intestazione: nessuna riga la popola mai")
 
 
 if __name__ == "__main__":

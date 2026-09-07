@@ -626,6 +626,13 @@ def main():
                 "hook_3_secondi": creativo["hook"],
                 "caption_descrizione": creativo["caption"],
                 "hashtag_set": creativo["hashtag"],
+                # A4-L01-03: il posto dove atterrano i link del materiale di supporto.
+                # Sta QUI, dentro la riga, non solo nell'intestazione del CSV: un campo che
+                # vive solo nella riga di testata produce una colonna sempre vuota — cioe'
+                # esattamente il buco che la regola doveva chiudere. Arriva dal candidato se la
+                # ricerca ne ha trovate, altrimenti resta una lista vuota, ed e' legittimo:
+                # il punto della regola e' che il posto esista PRIMA che serva.
+                "fonti_extra": c.get("fonti_extra") or [],
                 "note_esecuzione": REGOLE_PERMANENTI_CANALE,
                 "comando_cli": (
                     f"python apex7_orchestrator.py run --canale legamidiamore "
@@ -634,6 +641,8 @@ def main():
             }
             righe.append(riga)
 
+    assert all("fonti_extra" in r for r in righe), (
+        "A4-L01-03: ogni riga del piano deve portare il campo fonti_extra")
     assert len(righe) == 70
     assert len({r["video_id_sorgente"] for r in righe}) == 70, "duplicati rilevati nel piano finale"
 

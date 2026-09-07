@@ -221,6 +221,12 @@ nul
 **/runs/**/*.info.json
 **/runs/**/*.webp
 **/runs/**/video.mp4
+# Audio estratto dai video durante l'ingestione: artefatto generato, si rifa' in un comando.
+# Il 2026-09-07 una run (max18-v09) stava per portare 394 MB di .wav/.m4a nella storia (ADR-013).
+**/runs/**/*.wav
+**/runs/**/*.m4a
+**/runs/**/*.mp3
+**/runs/**/audio-16k.*
 
 # Indice di ricerca della wiki: 88 MB rigenerabili in 10 secondi con
 #   python scripts/cerca_wiki.py --ricostruisci

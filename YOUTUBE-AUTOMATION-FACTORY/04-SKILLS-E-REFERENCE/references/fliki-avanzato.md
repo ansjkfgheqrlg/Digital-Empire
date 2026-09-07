@@ -53,7 +53,7 @@ Le voci sintetiche sbagliano spesso i termini inglesi inseriti in un contesto it
 - [ ] La velocità della voce narrante è impostata in modo confortevole (tra 0.9x e 1.0x)?
 - [ ] Sono state inserite pause di almeno 0.5 secondi dopo ogni punto fermo o cambio di scena?
 - [ ] Le parole straniere o tecniche sono state verificate nell'anteprima audio e corrette nel dizionario pronunce se storpiate?
-- [ ] Il volume della traccia musicale è impostato al 10% - 15% rispetto alla voce (100%) per non sovrastare il parlato?
+- [ ] Il volume della traccia musicale sta nella banda **5% - 15%** rispetto alla voce (100%), con il **5% come valore tipico** e il 15% come massimo? (corretto il 2026-09-06: la vecchia prescrizione 10-15% aveva il pavimento troppo alto, vedi §4)
 
 > **Da dove viene il 10% (A4-L19-03 · 2026-09-06).** Fino a oggi quel numero era una
 > prescrizione senza fonte. Ora ha una prova: nel pannello `More → Background music` di Fliki

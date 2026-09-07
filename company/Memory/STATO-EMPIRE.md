@@ -1,3 +1,30 @@
+## 🟠 2026-09-07 — CATEGORIA A4 CHIUSA: 21 lezioni, 62 regole, e la verifica che mi ha bocciato — CP-20260907-JVY2
+
+**Codice di ripresa: EMP-V6DE (APERTA).** La prima categoria del corso e' **chiusa**: 21 lezioni su
+21, **62 regole tutte applicate**, 7 arbitrati, gate a **6 condizioni su 7**. Studio a 21/167 (12,6%).
+⭐ **Le tre lezioni date per perse non erano perse.** L11, L12, L18 stavano in `1-fallito` da due
+giorni con la diagnosi «HTTP 403, gettone scaduto»: **falsa**. Il gettone era valido, **mancavano le
+intestazioni** verso il CDN. Riparata l'ingestione, sono arrivate tutte e tre con le durate al
+secondo. *Un errore copiato in una nota non e' una diagnosi.*
+**Il motore e' cambiato** (le 3 regole di binario B): la **voce di ogni canale e' fissa** con l'id
+reale letto dall'API (prima si ri-sceglieva a ogni generazione, e bastava che Fliki cambiasse
+l'ordine del suo elenco) · **il formato non e' piu' una costante**: lo dichiara il canale o
+`--formato`, e **la fabbrica ora puo' produrre Shorts** · il piano editoriale ha la colonna
+`fonti_extra`. Test **da 11 a 16**, tutti verdi.
+⚠️ **La verifica indipendente mi ha dato NON PASSA, e aveva ragione.** Due difetti, stesso pattern,
+**miei di ieri**: il registro dichiarava «applicata» una regola perche' la sua `verifica()` trovava
+certe parole nel file, non perche' quelle parole facessero qualcosa. La colonna `fonti_extra`
+esisteva solo nell'intestazione e nessuna riga la popolava; `fliki-avanzato.md` diceva al §4 che la
+banda giusta e' 5-15% e lasciava nella checklist il vecchio 10-15%, **contraddicendosi da solo**.
+Corretti entrambi, con un'assert e un test che guardano il comportamento e non la frase.
+*Un controllo che cerca parole chiave misura la presenza di una frase, non l'esistenza di un
+comportamento.*
+**RIPRESA DA:** categoria **A6 «Viral Mastery» (10 lezioni)**, dove si chiudono anche **D-1** e
+**D-2**. Restano assegnate e non fatte: il **tempo per video**, il campo **`YouTube channel ID(s)`**
+da compilare a mano su Fliki per i due canali (gratis, 5 minuti), tre verifiche contro il payload
+da L20, e il **video di prova** del gate (costa minuti di piano: decide Max).
+Dettagli: [CP-20260907-JVY2](checkpoints/CP-20260907-JVY2.md).
+
 ## 🜂 2026-09-07 — V2: NEXUS non nasce, e la legge del piano cambia — EMP-MCC4
 
 **Scritta `V2-PIANO-AMPLIATO.md`, 1.085 righe.** Non un ritocco di V1: un altro piano, costruito

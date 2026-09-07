@@ -80,8 +80,9 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **149 lezioni su 167 da studiare** (10,8% fatto). Fatte `A4/L00` → `L10`, `L13` → `L17`, `L19`,
-  `L20`; **A4 all'85,7% (18/21)**. Registro: **59 regole, 56 applicate**. Sette lezioni chiuse in
+- **146 lezioni su 167 da studiare** (12,6% fatto). **La categoria A4 e' CHIUSA: 21 su 21.**
+  Registro: **62 regole, tutte a norma, tutte applicate** (0 in attesa). Gate A4: **6 condizioni
+  su 7** — manca solo il **video di prova** della condizione 4, che costa minuti di piano. Sette lezioni chiuse in
   **BRONZO dichiarato** (L07, L08, L10 + L09, L13, L14, L16: tutorial di editor manuali e manovre
   su materiale altrui, parlato letto integralmente, zero frame — piano §10).
 - **In A4 non resta più nulla da leggere: le tre trascritte (L15, L17, L20) sono chiuse** il

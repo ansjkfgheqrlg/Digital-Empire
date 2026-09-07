@@ -1,0 +1,651 @@
+
+[00:00:00] Ciao, e benvenuto al corso completo su agenti vocali con Cloud God per Business.
+[00:00:04] In questo corso ti mostro esattamente come costruire agenti vocali da zero,
+[00:00:08] come integrarli in processi aziendali e qual è il ritorno concreto per le aziende che li adattano
+[00:00:12] e per voi che magari andrete a venderli.
+[00:00:14] Lavoro su questi progetti ogni giorno con consulenze per aziende sopra i 50 milioni,
+[00:00:18] li implemento in piccole medi imprese con la mia agenzia e li insegno nel mio coaching program.
+[00:00:23] Quindi tutto quello che andremo a vedere sono cose che effettivamente implemento ed utilizzo.
+[00:00:27] Detto questo, cominciamo.
+[00:00:28] Questo è quello che andremo a vedere oggi.
+[00:00:30] Allora, innanzitutto partiremo dai concetti base,
+[00:00:33] quindi prima di costruire agenti vocali in Cloud Code,
+[00:00:36] capiremo che cosa è un agenti vocale,
+[00:00:38] poi andremo a costruirlo su Cloud Code
+[00:00:40] e poi parleremo di quali sono le offerte che ad oggi stanno andando
+[00:00:43] e quale sia un ROI per un'azienda
+[00:00:46] o i relativi ritorni sugli investimenti
+[00:00:48] qualunque sia il tipo di agenti che andate poi a creare.
+[00:00:51] Allora, partiremo quindi dalla prima definizione
+[00:00:54] di che cos'è un agenti vocale,
+[00:00:56] andremo a vedere qual è l'anatomia,
+[00:00:57] quali sono i componenti, come funziona, parleremo poi di quale è la struttura di un system
+[00:01:02] prompt corretto o le best practices, vedremo poi quali sono i quattro modi di inserire
+[00:01:09] una knowledge base all'interno del nostro agente vocale, capiremo poi quale è la migliore
+[00:01:13] tra quelle che andremo ad utilizzare, vedremo poi i cinque tipi di tool che possono essere
+[00:01:19] integrati con una gente, capiremo come è possibile customizzare o quindi apportare
+[00:01:24] delle modifiche che noi vogliamo personalizzare un qualsiasi gente vocale e infine parleremo
+[00:01:29] di latency tuning e cioè qualsiasi cosa vi ha a che fare con i e quindi le stesse cose che
+[00:01:34] sto implementando anch'io nelle aziende dei piccole dimensioni o per chiunque voglio venire
+[00:01:38] poi a lavorare con me. Queste sono anche le stesse offerte che le persone dentro al mio
+[00:01:42] coaching program oggi stanno utilizzando quindi saranno delle soluzioni che potranno
+[00:01:47] essere applicate istantanevamente. Allora, prima di cominciare con la parte pratica,
+[00:01:51] due parole solo sulle due piattaforme che io oggi considero quando si parla di
+[00:01:56] voice agent e due parole anche magari su quale usare a seconda dell'azienda che
+[00:02:01] avete se siete un imprenditore o con cui diciamo andrete a lavorare se siete una
+[00:02:06] persona che vuole vendere servizi ai. Queste sono le stesse anche che poi una
+[00:02:10] persona diciamo può andare ad utilizzare quando fa development senza
+[00:02:14] andare in cose molto più complicate come non lo so AWS o cose di questo tipo.
+[00:02:19] Allora, le due piattaforme sono WAPI e RETELL, ok?
+[00:02:23] Quindi queste sono le due GO TO PLATFORMS.
+[00:02:26] Allora, diciamo che, per tenerle molto più semplice, RETELL è molto più beginner-friendly,
+[00:02:34] specialmente per il fatto che, come vedete, se io premo, è una UI, quindi un'interfaccia visiva, molto più pulita, vedete?
+[00:02:42] Ho già le funzioni, qualsiasi cosa, queste cose vogliono dire, lo vedremo dopo,
+[00:02:47] vedete che ce l'ho già tutte belle in ordine, tutte belle pronte e quindi è molto, diciamo,
+[00:02:54] bella anche dal punto di vista visivo. Questo ha un'implicazione e cioè, nonostante sia
+[00:02:59] molto bella dal punto di vista visivo, a livello tecnico hai un po' meno controllo, diciamo,
+[00:03:04] quindi quando farete cose super complesse, per questo corso va benissimo quasi così
+[00:03:08] cosa, anche se implementato un servizio in azienda va benissimo retail, è perfetto,
+[00:03:14] sono mille casistiche con retail che funzionano alla grandissima. Il prompt, quindi le istruzioni
+[00:03:19] saranno gran parte di dove farete la differenza, poi andremo a vedere perché. Diciamo solo che
+[00:03:24] a livello tecnico, soprattutto per quanto riguarda la parte di latenza, quindi questo
+[00:03:28] valore qui, piccolino, no? Quindi diciamo il tempo che un agente ci mette a rispondervi,
+[00:03:36] quindi non lo so, immaginatevi di essere al telefono. Ciao, come stai? Io sto
+[00:03:40] bene tu, tutti quei secondi lì si chiamano la tensa, ok? Diciamo che è un po' meno
+[00:03:45] controllabile da ritel, vapi permette di fare qualcosa di un po' più sofisticato, ecco.
+[00:03:50] Per lo scopo del corso non ci saranno grosse differenze, quindi utilizzate quella che voi
+[00:03:56] volete.
+[00:03:57] Allora, partiamo dal principio, che cos'è un'agente vocale e qual'è l'anatomia
+[00:04:02] di un'agente vocale? Anatomia, sostanzialmente, intendo come è fatto, no? Allora, in
+[00:04:07] parole molto semplici, abbiamo un utente che parla, giusto? Poi dentro alla gente succede
+[00:04:14] qualcosa, tale per cui poi abbiamo una risposta da parte del modello. Allora, che cos'è questo
+[00:04:22] qualcosa? Allora, queste sono delle parti che vengono chiamate, allora STT, giusto? Questa
+[00:04:32] viene chiamata tts e questa come voi già sapete viene chiamato lm allora stt vuol dire speech
+[00:04:42] to text cioè sostanzialmente è un pezzo di modello che traduce sostanzialmente il parlato
+[00:04:50] in testo questo perché perché come sapete le ai tende a capire meglio quello che viene
+[00:04:55] definito testo in particolare tende a capire meglio quello che noi poi vedremo
+[00:05:00] i nostri prompt che viene definito markdown, quindi il testo con dei simboletti che sostanzialmente
+[00:05:05] permettono alle AI di capire un po' meglio ok qual è la gerarchia del testo e in che
+[00:05:10] ordine procedere perché magari un pezzo di testo è più importante di qualcos'altro.
+[00:05:14] Allora, detto questo quindi sappiamo il motivo per cui abbiamo la prima parte, che
+[00:05:19] è questo appunto speech to text, poi qua dentro, quindi sostanzialmente dentro al
+[00:05:24] nostro LLM, l'AI sta cercando di capire cosa l'utente dica, quindi cosa vuol dire il testo
+[00:05:30] in ingresso, capire che task deve fare sulla base del testo in ingresso, che altrimenti non
+[00:05:35] è che un piccolo prompt che abbiamo dato, e poi passeremo alla parte finale in cui l'LLM
+[00:05:40] ha capito e allora genera un output e questo output di nuovo è informato di testo, giusto?
+[00:05:47] Una classica chat con cloud dove semplicemente vediamo che l'output è sempre in una
+[00:05:52] chatbot. Allora, una volta che questo succede, passiamo alla parte tts, quindi text to speech,
+[00:06:00] in cui ci sono delle cose dentro a questi modelli che permettono di trasformare il testo in
+[00:06:06] qualcosa di udibile. Motivo per cui poi noi, alla fine di questo percorso, andiamo a
+[00:06:11] sentire che le AI ci risponde sostanzialmente, ok? Quindi questo in maniera molto semplificata
+[00:06:19] è il processo. Ora, qualcuno si potrà chiedere, benissimo,
+[00:06:23] dato che questo processo è relativamente semplice, chi decide che questa cosa funzioni
+[00:06:29] o osmetta di funzionare quando questo processo parte? Bene, introduciamo un concetto che
+[00:06:34] si chiama End Pointing, che è questo qui, che è diverso dall'End Point, l'End Point
+[00:06:41] è un URL, quindi sostanzialmente una cosa tipo questa, Excalidro.com che è l'app
+[00:06:47] che utilizzo, mentre l'endpointing ci sostanzialmente permette di capire quando questo processo inizio
+[00:06:56] finisce presumerebbe.
+[00:06:57] Quindi l'endpointing sarà, e lo vedremo poi, quello che andrà a decidere, l'utente ha smesso
+[00:07:02] di parlare o l'utente sta parlando.
+[00:07:05] In base alle interazioni che l'endpointing avrà con noi, abbiamo la possibilità di stoppare
+[00:07:13] nostro agente AI, nel momento in cui parliamo, è sempre regolato da questo end-pointing qui,
+[00:07:18] ok?
+[00:07:19] Questo è molto importante.
+[00:07:20] Bene, allora detto questo andiamo a vedere i nostri agenti vocali e cominciamo a partire
+[00:07:25] con magari, non lo so, Riley sono quelli preinseriti e andiamo a vedere le cose che abbiamo appena
+[00:07:33] discusso.
+[00:07:34] Allora, zoomo e vedete che la prima cosa che andiamo a vedere è l'LLM, giusto?
+[00:07:40] quindi abbiamo già detto ok questa parte qui è quella che noi abbiamo definito lm quindi
+[00:07:46] il nostro modello quello che permette di capire insomma che cosa andiamo a fare, poi qui abbiamo
+[00:07:50] la possibilità di selezionare questi modelli quindi avete openai, azier, entropic, bedrock
+[00:07:57] e cose di questo tipo no?
+[00:07:59] quindi poi a seconda poi del provider che andrete ad utilizzare ci sono mille cose
+[00:08:05] sono diverse qui, starei qui 70 anni, però avete il provider, poi avrete i modelli e il
+[00:08:12] modello è sostanzialmente, diciamo, il pezzettino di provider che voi andrete ad utilizzare per
+[00:08:18] fare tutto questo processo di trascrizione e poi di processo delle informazioni, no?
+[00:08:26] Allora, quale modello dovreste scegliere? Beh, allora, qui non c'è una metodologia,
+[00:08:32] diciamo omni comprensiva che dica questo è il migliore o quello è il migliore se qualcuno
+[00:08:36] ve lo dice no. Allora, che cosa andremo a considerare? Bene, allora noi andremo a considerare due
+[00:08:44] cose, allora e vedete che Vapi vi aiuta anche e vi dice che le due cose che andete a considerare
+[00:08:50] sono costo e latenza. Una terza che metterei è importanza della task, ok? Quindi per
+[00:08:57] esempio, se noi decidessimo di usare OpenAI, allora avremmo che questo modello ha una latenza
+[00:09:05] o scusatemi di 600 o 400 e un costo di 0.09 dollari, giusto? Quindi capiamo che se facciamo anche
+[00:09:15] senza saperne molto, no? 1.670, 2.400, 3.90, 5.10, capiamo che uno dei modelli veloci,
+[00:09:24] quindi questo speedometer in inglese è la cosa del cruscotto dell'auto, permette di
+[00:09:32] capire quanto tempo ci mette a risponderci, quindi 400 mili secondi o 390 mili secondi
+[00:09:38] qua un secondo e 45, capite quanto lento sia questo modello. Qui capite però che anche
+[00:09:46] il costo in questo caso è molto più basso di questo, diciamo di questo, che è folle,
+[00:09:54] però questo permette di fare cose in real time. Quindi vedete che abbiamo poi a seconda
+[00:09:58] della tipologia del caso, abbiamo mille modelli insomma che possiamo utilizzare e qui decideremo
+[00:10:06] in base a ok è una cosa real time, non è una cosa real time o possiamo aspettare
+[00:10:11] magari qualche secondo in più perché la task poi non è così importante. Un esempio,
+[00:10:15] se io so che se i miei fornitori sanno che alle 9 di mattina li chiamo per raccogliere
+[00:10:19] dei dati, non sarà importante avere un AI che, non lo so, faccia tuttori al time, no?
+[00:10:26] Perché anche se ci mettono un secondo in più, sì, va bene, un po' un disagio, ma niente
+[00:10:29] di che. Se invece ho un'interfaccia con un utente per fare uno split to lead o cose
+[00:10:34] di questo tipo, allora come ci è diventato complesso, no? Bisogna avere un qualcosa
+[00:10:37] di molto performante, altrimenti il lead se ne va.
+[00:10:40] Quindi avete la possibilità di scegliere insomma quello che volete.
+[00:10:44] Allora, per questo esempio, ma giusto perché così faremo un modello GPT 4.1, no, non ci sono
+[00:10:51] grossi motivazioni, però voglio solo farvi vedere una cosa che ora lo pubblico, ok,
+[00:10:57] skip and publish, e vedete che prima avevamo una latenza che era 1.220, e ora è ancora
+[00:11:03] 1.220, ora se io vado a metterci un modello, invece, super ciccione e faccio skip and
+[00:11:09] publish, quello che succede è che poi la nostra latenza andrà ad essere impattata e lo vedete
+[00:11:15] qui, adesso pian piano si aggionerà anche, ma vedete che la latenza è 1.670, quindi
+[00:11:20] il modello sostanzialmente ci sta dicendo che è peggiorato e tra un po' insomma lo
+[00:11:25] vedremo, lo vedremo anche al riflesso qui. Allora, poi abbiamo detto quindi il modello
+[00:11:32] è questo, quindi l'LLM, poi abbiamo la cosa numero 2 che è il transcriber, quindi trascriviamo,
+[00:11:40] quindi giusto, quindi facciamo lo speech to text e dopo abbiamo il voice, voice configuration
+[00:11:47] facciamo text to speech. Quindi la motivazione per cui siamo partiti è che abbiamo esattamente
+[00:11:53] poi tutte le cose che abbiamo appena detto sarà ora molto più semplice capire che
+[00:11:57] cosa vediamo, no? Perfetto. Ora abbiamo, e poi vi spiegherò cosa sono i tool, abbiamo
+[00:12:03] questa parte qui che è la parte di analisi compliance, vi dicendo, per normative analisi
+[00:12:09] dei dati, e vi dicendo. Allora, detto questo, prima di passare ai tool, abbiamo visto che
+[00:12:16] c'è qualcosa qui. Abbiamo detto che questa è la cosa più importante ed è un prompt,
+[00:12:20] giusto? Se non imprimiamola i, è il system prompt che può essere utilizzato per configurare
+[00:12:26] contesto, ruolo, personalità, istruzioni e via dicendo.
+[00:12:29] Allora, come vedete, questo, come già detto, è Markdown, quindi sostanzialmente è un testo
+[00:12:36] strutturato per quelli di voi che sono nuovi, lo faccio vedere al volo.
+[00:12:40] Sostanzialmente Markdown è una cosa dove se io scrivo tre o quattro volte ciao, ed
+[00:12:46] è un esempio che ho fatto anche in uno dei video scorsi, se io metto un asterischetto
+[00:12:52] vedete che ho una certa tipologia di formatazione, se ne metto 2 ne ho un'altra diversa, se
+[00:12:57] ne metto 4 vedete che ho una cosa diversa ancora, ora vedete che è grigio e addirittura se
+[00:13:02] metto gli asterischi faccio grassetto, quindi sostanzialmente quello che questo linguaggio,
+[00:13:09] questi simboli stanno dicendo non è altro che, guarda che questo è un titolo in
+[00:13:13] grassetto, questo invece è un, come si chiama, un grassetto di un elenco puntato
+[00:13:21] qualunque, no? Quindi, se io ora facessi una cosa così, vedete che adesso lui mi diventerà,
+[00:13:28] insomma, adesso questo può diventerà grassetto, eccetera, eccetera, eccetera. Ok? Perfetto.
+[00:13:34] Allora, quale è la struttura di un buon system prompt? Allora, abbiamo otto componenti,
+[00:13:43] se non sbaglio, anzi, nove, perché ho messo anche gli esempi. Allora, innanzitutto
+[00:13:49] dobbiamo dargli una certa identità, giusto? E una personalità a questo agente. Quindi
+[00:13:55] vi diremo, hey, non sei una persona reale, se è una persona reale, scusate, non sei
+[00:13:59] un AI. Lavori da 8 anni, sei una persona cordiale, suoni come un collega e via dicendo, quindi
+[00:14:05] hai un suono familiare e via dicendo. Poi, secondo, sarà lo stile di parlata. Una
+[00:14:12] cosa che mi piace molto sono frasi corte, parole naturali, evita di andare in, non
+[00:14:17] lo so, frasi corte, seguiti da un mappazzone, quindi una cosa tipo molto AI, non è per
+[00:14:22] questo, ma è per quello. Allora, cose di questo tipo e poi di numeri per esteso, quindi
+[00:14:29] non 23, non è 2-3, giusto? Ma cose di questo tipo, poi una volta che abbiamo inserito
+[00:14:38] lo stile di parlata, abbiamo regole di iterazione, quindi fai una domanda per
+[00:14:44] volta, perché? Perché magari vogliamo raccogliere dei dati, quindi una domanda la volta è una
+[00:14:49] buona prassi, io generalmente cerco di tenere anche le domande corte, massimo due opzioni
+[00:14:56] e via dicendo. Poi, azioni concrete, quindi dettaglio che cosa mi aspetto che la gente
+[00:15:04] faccia in maniera abbastanza pulita, quindi prima di tutto saluta, poi questi d'intelesi
+[00:15:11] si chiama Gathering the Intent of the Call, quindi capisci perché stanno chiamando, per
+[00:15:15] esempio noi faremo una gente per una clinica dentale che è una delle verticali, l'ambito
+[00:15:21] medico è una delle verticali che abbiamo dentro la mia azienda per esempio e in questo
+[00:15:27] caso è ok, perché l'intento è importante, immaginate che un paziente arrivi e vi dica
+[00:15:33] devo fare una pulizia dentale o ho un'urgenza perché mi sta sanguinando la gengiva
+[00:15:38] devo parlare con una persona. Queste sono cose che, per esempio, faccio nelle cliniche, capite
+[00:15:44] bene che, diciamo, l'urgenza e l'intento della chiamata è molto importante, quindi
+[00:15:49] questo è il motivo per cui io generalmente tendo di farlo relativamente presto. Poi raccogli
+[00:15:56] le info, conferma, oppure, quindi in realtà c'è un po' un'articolazione, quindi
+[00:16:00] e fa il reroute, quindi magari se è urgente fa scala a una gente, insomma mille cose,
+[00:16:06] no? Poi qui gli do poi le informazioni aziendali nostre, quindi non lo so, orari, zone, orario
+[00:16:17] attuale, super importante, altrimenti la gente non capisce spe' rerout,
+[00:16:21] co' collegato al contesto di prima avremmo un qualcosa dentro il prompt che ci permette di rilevare l'urgenza
+[00:16:27] quindi come la rilevate l'urgenza? Beh, è difficile chiedere ad un agente, ehi, capisci
+[00:16:32] se la persona sta male. No, gli date parole chiave, quindi non lo so, sanguinante o svenuto
+[00:16:41] o dolore e cose di questo tipo, ovviamente chiariamoci, soprattutto in un mito mericano
+[00:16:48] tutti male, e quindi ecco cose di questo tipo e dopo dipende questo in questo caso da che
+[00:16:55] cosa andate a fare, poi ho messo dei profili della persona chiamante, quindi capire che tipologia
+[00:17:02] di persona è, perché anche sulla base di quello ovviamente vogliamo un grado di cura
+[00:17:09] diverso, ma anche un grado di affidabilità dell'informazione diversa, e benissimo, poi
+[00:17:18] abbiamo tool, guardrail e tutte cose di questo tipo, quindi per esempio una cosa
+[00:17:24] che trovo molto utile o che meglio ho preso diciamo un cefone con il primo agente che
+[00:17:30] ho fatto nove mesi fa era non ho detto non inventare cose e allora mi sono accorto al
+[00:17:37] volo che una delle prime cose che la gente ha fatto era stato inventarsi un prezzo per
+[00:17:40] una cosa che non aveva. Ecco quindi questi sono i tool ai guardrail che ora mettiamo.
+[00:17:44] Questo diventa importante per esempio in una delle consulenze che sto facendo
+[00:17:48] in un'azienda che fa più di 50 milioni abbiamo questa tipologia di cose, i guardrail
+[00:17:53] sono fondamentali, no? Bene, e poi come gestire gli errori, quindi chiedere di ripetere e cose
+[00:18:00] di questo tipo. Bene, ora, detto questo mappazzone, come facciamo nella pratica questa tipologia
+[00:18:08] di prompt? Beh, qui è dove vi ho preparato un po' di cose, un po' di prompt che possiamo
+[00:18:13] utilizzare, quindi andate in community, sezione classi, adesso vedrò se rimpiazzare magari
+[00:18:18] questo corso completo o se potete trovarlo nel template youtube però qui
+[00:18:22] sostanzialmente avrete poi una voce qua sotto cloud code probabilmente con il nome
+[00:18:28] del corso e vi lascio il riferimento ad un notion che ora vado ad aprire e
+[00:18:33] comunque ve lo lascerò anche gratuito per tutti quelli di voi che non hanno alcune
+[00:18:37] intenzioni di entrare in community e qui cominciate a trovare le cose allora
+[00:18:41] questo è una linea guida che io vi ho scritto in cui vi ho messo
+[00:18:47] sostanzialmente un 80-20 di quello che metterai o potete utilizzarla per il vostro agente ok?
+[00:18:54] quindi questa è la linea guida in markdown che avete, quindi quella che potete utilizzare con
+[00:19:00] orario attuale e cose di questo tipo questa è quella che ora vorrei utilizzare con voi quindi
+[00:19:04] prompt per vapi l'abbiamo preso, l'ho semplicemente popolato, di modo tale che anche voi
+[00:19:09] possiate vedere come è un prompt popolato oltre che le linee guida generali quindi vado
+[00:19:15] qua dentro, copio, cancello e incollo. Allora ovviamente non lo leggerò tutto ma volevo farvi
+[00:19:21] vedere velocemente che cosa abbiamo. Identità Marco il receptionist della Giovanni Beggiato
+[00:19:27] clinica dentale, parli come una persona reale, calme, cordiale, stile, frasi corte, scrivi
+[00:19:33] i numeri, quello che vi ho detto prima, linee guida, una domanda per risposta, massimo
+[00:19:37] 15 parole, non ripetere mai informazioni già date, se presenti i rari disponibili
+[00:19:41] massimo due opzioni alla volta, quindi questo è perché quando qualcuno vi chiede ok, quando
+[00:19:46] hai appuntamento, se è una gente vi fa il ma pazzone di da qui al 2000 e mai e quindi
+[00:19:52] uno alla volta, benissimo, poi saluta il paziente calorosamente, ascolta se serve un appuntamento,
+[00:19:58] offre massimo due fasce orari, rileggi e conferma, quindi questo è importante, poi il contesto
+[00:20:05] Qui vi ho lasciato appunto qualcosa di generale, telefono e via dicendo, era attuale, rilevamento
+[00:20:12] d'urgenza, quindi queste sono cose che ho messo per darvi un esempio, quindi dello raccuto,
+[00:20:16] dentro rotto, con fiore, trauma caduta, eccetera, eccetera, eccetera.
+[00:20:20] E poi qui avete un esempio di strumenti e di tool di cui ora vi parlo, ma questo
+[00:20:28] sostanzialmente è un ottimo prompt iniziale.
+[00:20:31] Poi, come facciamo a verificare che questo funzioni?
+[00:20:36] Allora, facciamo publish, skip and publish, ora una volta messo il prompt, abbiamo un paio
+[00:20:45] di cose da sistemare, allora, innanzitutto, abbiamo che ancora il transcriber che dicevamo
+[00:20:51] prima in inglese, quindi ora che capiamo perché lo sistemiamo, andiamo in 11labs
+[00:20:56] e lo mettiamo in italiano, quindi vogliamo qua sotto, perfetto, e ora andiamo a selezionarci
+[00:21:04] la nostra voce, metteremo 11 labs e poi, non lo so, dovrebbe esserci un qualcosa tipo
+[00:21:11] un mario rossi giovane se non mi ricordo male, anzi giovanni rossi giovane, perfetto,
+[00:21:19] E ora possiamo fare pubblica, perfetto, e ora vedremo una cosa, e che, e cioè che
+[00:21:29] l'assistente ancora ci risponderà in inglese.
+[00:21:32] Proviamo.
+[00:21:33] Ciao, vorrei prenotare un appuntamento per le 10 di
+[00:21:53] domani mattina. Certo, capito, come si chiama. Ok, lasciamo
+[00:22:01] perdere allora il fatto di che cosa abbia trascritto, che quello ne parleremo dopo di
+[00:22:06] come trovare un buon transcriber e via dicendo, ma vedete che la prima risposta inglese è
+[00:22:10] la seconda risposta italiana che era l'unica cosa che mi interessava. Perché? Perché
+[00:22:14] ora introduciamo questo e cioè la parte che ho saltato prima volontariamente,
+[00:22:20] ovviamente ho anche preso un modello stupido, quindi giusto per capirci.
+[00:22:24] Allora, questo dice che l'assistente parla per primo, quindi ci dice qualcosa, no?
+[00:22:30] E al posto avremo queste possibilità qui, ma insomma, vogliamo che l'assistente ci parli
+[00:22:35] perché altrimenti non avremo modo di capire che la gente ha preso la chiamata.
+[00:22:40] Ma questo è il primo messaggio che abbiamo, quindi avremo quello che c'ha detto prima,
+[00:22:46] Quindi ciao, sono Giovanni, mi piace YouTube, insegno AI e la applico alle PMI italiane
+[00:23:03] ed estere.
+[00:23:04] Ora, pubblico, skip and publish e ora parliamo e sentiamo il primo messaggio.
+[00:23:13] Ciao, sono Giovanni, mi piace YouTube, insegno AI e l'applico alle PMI italiane ed estere.
+[00:23:23] Perfetto, quindi noi abbiamo capito che ora il sistema funziona e quindi ora abbiamo portato
+[00:23:31] tutto il nostro sistema a parlare in italiano.
+[00:23:34] Grandissima cosa, questa è la Milestone numero uno, ok?
+[00:23:39] Quindi abbiamo fatto questo, abbiamo introdotto che cos'è un system prompt e ora cominciamo
+[00:23:46] ad andare in cose un pochino più articolate e cominciamo a parlare di tool.
+[00:23:52] Allora, i tool sono delle cose che permettono al vostro agente di andare a fare qualcos'altro
+[00:23:59] e perché lo dico?
+[00:24:00] Allora, perfetto, qui ho già solo messo ciao come posso aiutarti, allora al posto
+[00:24:04] che parlarci, voglio andare in una chat. Ciao, come posso aiutarti? Voglio prenotare
+[00:24:10] un appuntamento per domani alle 10. Allora, ora vediamo che cosa succede, no? Quindi
+[00:24:15] il nostro agente poi, certo, mi dice il suo nome per favore, io gli risponderò a Giovanni
+[00:24:20] e di cominciare a dare un po' di informazioni, quindi denti, pulizia, denti, lui mi risponderà
+[00:24:28] a qualcos'altro, ho capito, controllo se abbiamo un posto per domani alle 10 un
+[00:24:31] un attimo. Ora vedete però, ed è una cosa molto importante, e cioè la gente ora ci
+[00:24:37] sta dicendo che lui sta controllando se domani alle 10 ha un appuntamento. E questo però
+[00:24:43] non può farlo, perché al momento noi non gli abbiamo dato nessun modo di accedere ad
+[00:24:49] un'agenda, controllare il CRM, vedere cose, ok? La gente ad ora può solo cattare
+[00:24:57] o parlare. Quindi questo è importante perché? Beh, perché capiamo che a questo punto il
+[00:25:02] nostro agente rimarrà bloccato perché non ha un modo di vedere se abbiamo spazi o no.
+[00:25:09] Quindi l'utilità dei tool è perché adesso bellissimo abbiamo un'agente che ancora parla
+[00:25:15] malissimo e ciatta ancora peggio, ma non abbiamo modo di fargli fare nulla, quindi
+[00:25:20] questo agente è tutt'ora al momento non troppo utile, soprattutto per un'azienda.
+[00:25:25] Allora, quindi, che tipologie di strumenti esistono?
+[00:25:31] Allora, abbiamo quattro tipologie di strumenti, non è importante sapere, diciamo, le tipologie,
+[00:25:38] è più importante perché a nessun reparto amministrativo importerà come si chiama
+[00:25:44] la tipologia di strumenti che voi usiate e nemmeno a voi, a voi però interessa avere
+[00:25:48] una idea di come ragionare per sistemi.
+[00:25:52] Allora, questi tool sono i tool di default, quindi quelli che sono preinstallati, immaginatevi
+[00:25:58] il nostro Riley ora avremo la connessione con, non lo so, Google Sheet, ok, roba preinstallata
+[00:26:05] da Vapi.
+[00:26:06] Poi, custom tool, cioè sono delle cose fatte custom appositamente per noi, quindi i nostri
+[00:26:14] webbook o i nostri sistemi, magari accesso ad una cosa che noi vogliamo.
+[00:26:19] Eh, snippet di codice, quindi sostanzialmente come si differenziano gli snippet di codice
+[00:26:26] o i code tools dai custom tools, la differenza è dove vivono, i custom tools sono cose che
+[00:26:33] si connettono al vostro database, quindi immaginate che avete una cosa vostra in azienda,
+[00:26:38] fatta solo per voi il vostro processo, la vostra CRM, quello che è che avete fatto
+[00:26:44] voi, bene la importate, i code tool vivono dentro vapi, quindi il codice avviene
+[00:26:49] dentro VAPI e dopo avete le integrazioni classiche, quindi non lo so, Mac.com, G.H.L e
+[00:26:55] via dicendo ok? Dove andiamo a trovarle? Bene, allora adesso vediamo l'interfaccia
+[00:27:00] VAPI, quindi qui abbiamo questa, vediamo se volete, perfetto, sì avete questo simboletto
+[00:27:07] qui che è il simboletto tool. Allora, qui forse avrete solo questo, ma sostanzialmente
+[00:27:16] come li create, premete qui. E allora qui cominciamo a vedere, allora custom tool sono
+[00:27:21] delle funzioni particolari, poi avete query che vi permettono di cercare cose dentro di
+[00:27:28] database, quindi non lo so, avete una con una knowledge aziendale che volete mettere dentro
+[00:27:33] un pdf con le vostre FAQs perché magari il chatbot è un chatbot per rispondere all'FAQ,
+[00:27:40] qui la inserirete, avete funzioni prefatte come vi dicevamo prima, quelle di default,
+[00:27:46] quindi finire, iniziare una chiamata, trasferirla e via dicendo, poi avrete integrazioni e
+[00:27:54] quindi avete poi i vostri mcp, il vostro Slack e via così.
+[00:27:59] Quindi questo è solo perché, perché ora avete più o meno un'idea di quello che succede
+[00:28:03] quando e di che tipologia di tool esistono. Come ne creiamo o uno? Beh andiamo in
+[00:28:09] create tool, qui ne selezioniamo uno, per esempio, facciamo ne uno o l'altro al volo che poi
+[00:28:14] utilizziamo, che è query, ok? Allora, noi avremo questo tool qui e qui metteremo, diciamo,
+[00:28:23] F Knowledge, conoscenza aziendale e qui metteremo file che serve per capire quali sono le cose
+[00:28:41] che la clinica dentale belgiato fa. Perfetto, benissimo. E poi qui al momento stiamo solo
+[00:28:49] creando il tool, ora dobbiamo inserire la knowledge qua dentro. Quindi per questo facciamo
+[00:28:55] add knowledge base, new knowledge base, di nuovo, gli andiamo a copiare questa cosa qui,
+[00:29:05] e qui lo chiameremo beggiato clinica dentale, perfetto, e poi che modello utilizziamo,
+[00:29:15] gemini flash fa benissimo, file, adesso noi qui vediamo che non abbiamo modo di selezionare
+[00:29:23] niente, soprattutto se ancora non le avrete inserite, giusto?
+[00:29:27] Quindi dovremmo, e questo è la prima cosa che vediamo, dovremmo avere un modo di inserire
+[00:29:31] qualcosa, questo file era già presente ma diciamo non conta e quindi al momento
+[00:29:35] la cosa buona che possiamo fare è salvare il nostro tool, quindi il nostro tool aziendale
+[00:29:41] e nel mentre andiamo ad inserire questi file.
+[00:29:45] Allora per farlo andiamo qua dentro, quindi questo simboletto qui, premiamo file e qui potremmo
+[00:29:52] inserirli quindi upload a file, andremo nel desktop e ho Giovanni Beggiato Knowledge Base,
+[00:30:02] altro non è, vediamo se riesco a farvelo vedere al volo, che un file che vi lascio sempre
+[00:30:07] in community dove sostanzialmente, anzi fatemelo aprire velocemente, ma altro non ho fatto
+[00:30:13] che creare la mia clinica dentale e gli ho messo dentro un po' di informazioni stino prezzi,
+[00:30:19] FAQ e cose di questo tipo, no? Cose molto banali, niente di che.
+[00:30:24] Allora, andiamo a vedere qualcosa che poi potremmo chiedere al nostro agente, quindi
+[00:30:29] fate la prima visita gratuita, sì, la prima visita di valutazione è sempre gratuita
+[00:30:34] e dura circa 30 minuti. In me di quesame una situazione è necessario
+[00:30:37] il formulo preventivo, ok? Quindi questa è la risposta che ci vogliamo o ci
+[00:30:41] ci aspettiamo di ottenere. Ora, torniamo nei nostri tool, torniamo nel nostro query
+[00:30:46] tool, che si è sminchietti, quindi fatemi al volo ricompilarlo velocemente, perfetto,
+[00:30:53] siamo tornati a noi e ora faremo file e vedremo che Giovanni Beggiato Knowledge è stato inserito.
+[00:31:01] Quindi ora potremmo premere salva, perfetto, salvato, ed una volta salvato, ora
+[00:31:09] questa knowledge base l'abbiamo messa qua dentro, ok? Quindi è dentro al nostro agente.
+[00:31:16] Ora, non è ancora collegata al nostro agente, perché per farlo possiamo andare in Reilly,
+[00:31:23] giusto? E possiamo andare qua sotto in File e poi premeremo Giovanni Beggiato Knowledge
+[00:31:32] base pdf vedremo pubblica salta e pubblica e ora semplicemente andremo di nuovo in chat
+[00:31:40] parlare con nostra gente e gli chiederemo fate la fate la prima visita gratuita in video
+[00:31:50] e quello che ci aspettiamo è certo la prima visita è quanto dura la prima visita e cosa
+[00:31:56] succede dura circa mezz'ora controllo competto e vuoi prenotare ok perfetto allora abbiamo
+[00:32:08] avuto quello che volevamo, ora però che cosa è successo? Beh, io ho detto che abbiamo
+[00:32:13] aggiunto una Knowledge Base, ma perché la inseriamo qua nei file? Perché non possiamo
+[00:32:19] metterla nel prompt? E quali sono le possibilità che noi abbiamo di inserire questa Knowledge
+[00:32:25] Base? Beh, allora, quindi come inseriamo una Knowledge Base ed implicazioni? Allora,
+[00:32:38] Vediamo che cosa succede al nostro agente, perché questo è una delle cose più importanti che un sacco di persone sbagliano.
+[00:32:45] Allora, vediamo la prima cosa.
+[00:32:48] Allora, punto numero uno, e lo metto in nero, nel prompt.
+[00:32:56] Giusto?
+[00:32:57] Quindi, noi otterremo lo stesso risultato senza fare tutto questo casino enorme.
+[00:33:02] Se io andassi qua dentro e cominciassi a prendere, adesso vediamo se riesco a farlo
+[00:33:08] continuous scroll, magari lo prendo così, perdonatemi continuous scroll, vado qui e nella
+[00:33:17] pagina ora tiriamo già tutto, allora perfetto, fino a qui copiamo e se io andassi qua sotto
+[00:33:30] e gli dicessi knowledge, base, giusto?
+[00:33:36] e poi gli la incollassi
+[00:33:38] ora ho incollato tutto questo cazzilliardo di informazioni che voi vedete
+[00:33:43] servizio offerti, orari e vedete che da qua ci siamo, ok?
+[00:33:47] pubblicchiamolo così e vediamo che cosa succede
+[00:33:52] perfetto, chat, eh allora gli chiediamo, fate la prima visita gratuita?
+[00:34:00] certo, la prima visita è gratuita
+[00:34:02] Quindi sappiamo che fa la prima visita gratuita e la vede.
+[00:34:05] Bene, quindi questa è la metodologia numero uno.
+[00:34:08] Ora, cancello tutto, la rimuovo da lì, da dove l'ho appena messa.
+[00:34:15] E ovviamente qui non c'è più, quindi cancelliamo anche questo.
+[00:34:19] La seconda modalità che abbiamo è la inseriamo cramite file.
+[00:34:25] Quindi sostanzialmente è questo.
+[00:34:27] Noi non serve che la riproviamo adesso,
+[00:34:30] ma andremo ad aggiungerla al nostro metodologia inserimento tramite file, giusto?
+[00:34:40] E questa è la metodologia che abbiamo scelto di utilizzare per questo caso.
+[00:34:46] Di nuovo potremmo parlarci, ora vediamo l'impatto.
+[00:34:51] La terza metodologia è utilizzando i tool, quindi ora vi ho tra virgolette ingannati
+[00:34:58] perché la verità è che se io volessi ora tolgo il file che è quello che abbiamo appena
+[00:35:05] fatto giusto che è appena messo dentro perché non l'ho pubblicato e quello che farei è
+[00:35:10] tool seleziona tool e io vado qui e dico knowledge base clinica corretto e se io ora
+[00:35:18] premessi publish e ora ve lo faccio vedere perché quello di prima era in realtà il file
+[00:35:25] Se io vado qui, hey, fate la prima visita gratuita, questa è una esclamazione, più che
+[00:35:31] una domanda.
+[00:35:32] Certo, la prima visita è gratuita, perfetto.
+[00:35:35] E quindi questa è la terza metodologia, la quarta è di dimenticare tutto una funzione
+[00:35:44] custom.
+[00:35:45] Di cui non parlo, ma questo sostanzialmente è quando le cose cominciano a diventare
+[00:35:49] interessanti perché andiamo nel dettaglio di come funzionano, scriviamo cose custom
+[00:35:56] per le aziende, andiamo in, non lo so, ad efficientare anche SuperBase e via dicendo.
+[00:36:03] Allora, andiamo quindi a vedere, l'abbiamo detto, tramite Tool e Funzioni Custom, queste
+[00:36:12] sono le quattro modalità.
+[00:36:15] Ora, noi rimuoviamo questa e vediamo quali sono gli impatti.
+[00:36:19] Allora, per fare questo, disegniamo.
+[00:36:22] Allora, disegniamo un grafico, il primo grafico che voglio disegnarvi è questo, quindi performance,
+[00:36:32] giusto? Quindi qui avremo una P e questo sarà i tokens che andiamo a consumare e noi sappiamo
+[00:36:40] già che il grafico avrà più o meno un andamento di questo tipo, ok? Indiciamo spesso e la
+[00:36:47] La seconda cosa che vogliamo andare a disegnare è il nostro prompt. Ok? Il nostro prompt
+[00:36:53] di sistema. Quindi questa è la nostra conversazione. Ok? Perdonatemi, lo rifaccio al volo, che
+[00:36:59] così non si chiude, siamo a posto. Allora, se io mettessi il nostro file dentro al prompt,
+[00:37:10] quindi casistica numero uno, torno nella gente, abbiamo detto cancello tutto, lo
+[00:37:16] in collo qua sotto, ok, o qua dentro. Che cosa sto facendo? Beh, allora diciamo che
+[00:37:22] la mia conversazione parte con un malloppo di cose che sono inserite tutte dentro al prompt,
+[00:37:32] no? Quindi immaginiamo che la persona sia solo interessata, ad esempio, sciocco a capire
+[00:37:39] come si chiama la clinica dentale, questa informazione è già qua dentro. Quindi non
+[00:37:45] non avrebbe bisogno di prendere tutto il resto del mio prompt e quindi tutto il resto delle
+[00:37:50] informazioni su visite gratuite, preziari e cose di questo tipo. Quindi in questo caso
+[00:37:58] avremmo che la parte blu rimangono un po' di informazioni che non ci servono, quindi
+[00:38:02] sono un po' di informazioni che sono inserite all'interno del prompt iniziale, quindi
+[00:38:07] consumeranno un po' i nostri token, quindi, adesso vi faccio vedere cosa vuol dire, poi
+[00:38:12] la gente ci dirà ciao come stai ma questo ciao come stai o come posso aiutarti diciamo
+[00:38:17] c'è attaccato anche tutto questo malloppo ok quindi questi token consumati non sono solo
+[00:38:24] questi ma sono anche tutti quelli che sono stati attaccati qua dentro che sono tutti quelli
+[00:38:30] che sono qua dentro ok quindi inserirlo dentro al prompt ha questo effetto e poi
+[00:38:35] noi continuiamo a interagire e lui poi richiamerà le informazioni iniziali solamente
+[00:38:40] se, diciamo, ne avrà bisogno. Però, insomma, ha tutto questo contesto. Che cosa vuol dire?
+[00:38:47] Beh, vuol dire che immaginiamo che il prompt sia grosso, ora facciamo casi estremi perché
+[00:38:51] ci capiamo meglio. Se noi sappiamo che l'ottimale è qui, ok, è questo. Ovviamente, questo
+[00:38:58] è un prompt, è una cosa ridicola. Sapiate che formazione aziendale, insomma, 11 pagine
+[00:39:03] vuol dire che è un'azienda di mezzo dipendente, ma di solito sono SOP da 300, 400 pagine
+[00:39:08] con migliaia e migliaia e migliaia di token, quindi ecco, questo è per dire non sono sempre
+[00:39:15] così poche. Quindi se quello è l'ottimale, noi adesso abbiamo il nostro blue e potremmo
+[00:39:21] avere il caso in cui il nostro primo prompt sia proprio qua nell'intorno della perfezione
+[00:39:29] del contesto e quindi capite che con due tre conversazioni con la gente, se non
+[00:39:34] facciamo one shot, stiamo già ascendendo qui e stiamo avendo un'agente che già comincia
+[00:39:40] a peggiorare le proprie condizioni. Però, diciamo, questo è buono perché, a seconda
+[00:39:45] di dove è l'ottimale, potremmo essere in questo intervallo qui e quindi potremmo avere
+[00:39:50] più di qualche conversazione con la gente prima di cominciare a scendere come performance.
+[00:39:54] Ok? Quindi, questo capiamo che diciamo non è ottimale, però non è un disastro.
+[00:40:00] Cosa vuol dire avere inserimento tramite file e lo faremo in rosso?
+[00:40:12] Beh, inserimento tramite file è il peggiore che voi potiate fare, quindi se lo mettete
+[00:40:19] qua dentro dovrebbero lasciarvi a casa subito e voi non capite sostanzialmente
+[00:40:25] Allora, che cosa vuol dire? Vuol dire che, per pulire il disegno, immaginiamo allora
+[00:40:33] di avere e fatemi vedere se riesco a farlo. Immaginiamo, torniamo, che la nostra prima
+[00:40:37] conversazione, quindi questa verde è sempre la solita, no? Quindi è il ciao come posso
+[00:40:44] aiutarti, magari fatemelo fare qui, ok? Quindi questa era l'equivalente della
+[00:40:48] prima conversazione, abbiamo detto prima che la prima conversazione aveva non
+[00:40:52] solo il mallopetto blu, ma aveva anche tutti i token consumati dal prompt iniziale che è
+[00:40:59] questa cosa blu.
+[00:41:00] Allora, qui invece abbiamo i file, quindi cosa vuol dire?
+[00:41:04] Vuol dire che la prima conversazione avrà quello verde più tutte le info del rosso
+[00:41:11] e il rosso è sostanzialmente avere il blu, abbiamo detto, perché sono tutte le info
+[00:41:16] che sono qua dentro, quindi il primo prompt ha ciao come posso aiutarti,
+[00:41:21] tutti questi token consumati. Voi rispondete come si chiama la clinica e avete magari che
+[00:41:27] la clinica di nuovo è Giovanni Beggiato clinica dentale, non mi ricordo cosa abbiamo detto,
+[00:41:32] ok, clinica dentale. Bene, la seconda risposta, quindi come si chiama la clinica, Giovanni Beggiato
+[00:41:39] clinica dentale, ancora tiene di nuovo un'altra volta ricarica tutti i dati perché
+[00:41:47] che averlo qua significa che lo stiamo continuando a ricaricare ogni volta. Quindi capite che
+[00:41:54] ogni conversazione sta ricaricando tutte le effe i cui aziendali, quindi sostanzialmente,
+[00:42:01] ed è un errore che fanno in un sacco, voi alla prima o alla seconda conversazione siete
+[00:42:06] già qua ed è il motivo per cui le aziende perdono un sacco di soldi per cui oggi
+[00:42:10] voi sei ai, non è che sia un fenomeno, ma... o beh, ecco, questo è uno dei motivi
+[00:42:15] più grossi. Bene, se invece andiamo con i tool... Ok, quindi, scusate, questo mi sembra
+[00:42:24] chiaro, voi andrete in questa zona estremamente veloce, ok? Quindi lo ho disegnato in rosso
+[00:42:30] a posta. Bene, adesso cosa succede con i tool? Quindi, questi arancio? Beh, allora pulisco
+[00:42:38] il disegno un'altra volta. Allora, questo lo rimuoviamo, questo lo rimuoviamo, questo
+[00:42:44] lo rimuoviamo, abbiamo fatto il nostro esempio e adesso ve lo rimetto qui al volo dove abbiamo
+[00:42:49] le conversazioni e sappiamo che avere i file significa avere sto maloppone che ce lo riattacchiamo
+[00:42:56] ogni volta? Ora capiamo i tool che cosa succede. Allora, con i tool è una conoscenza che
+[00:43:02] chiamiamo onDemand. Che cosa vuol dire? Che non viene chiamata sempre, viene chiamata
+[00:43:06] solo quando ne abbiamo bisogno. Quindi, nel pratico.
+[00:43:09] Ciao, come posso aiutarti? Consumerà solo questi token.
+[00:43:13] Come si chiama la clinica dentale? Beh, la clinica dentale è già nel prompte iniziale,
+[00:43:20] quindi la mia conoscenza, le mie FQ, non vengono ancora chiamate. Quindi solo questi
+[00:43:25] token. Poi, ah ok, fate la prima visita gratuita, allora chiamo la parte di, diciamo, FQ
+[00:43:36] che mi serve. Super importante, perché con i tool partiamo da qui. Siamo già nella parte
+[00:43:43] diciamo ottimale di performance e quindi diciamo, ovviamente, è magari giusto per avere una
+[00:43:49] compliance del disegno, ok, lo disegno così, poi non è mai così, ma, insomma, ecco, siamo
+[00:43:54] in questo intervallo qui. Quindi va sempre messo con i tool. Poi, in la realtà dei fatti
+[00:44:01] è che con la Custom Function questa cosa qui diventa ancora migliore, ma lì poi si apre
+[00:44:08] un universo, perché posso non solo chiamare la FAQ solamente quando voglio, ma posso addirittura
+[00:44:17] chiamarne solo un pezzo, perché magari ho messo dei metadatta e quindi diventa estremamente
+[00:44:22] complesso, non voglio parlarne perché diventerebbe lunghissimo, però mi basta farvi capire
+[00:44:28] che tra queste tre metodologie, se partite per i vostri primi progetti, qui è dove andiamo,
+[00:44:33] no? Ok, benissimo. Quindi tramite tool è la nostra soluzione. Quindi spero che questo
+[00:44:40] tra l'altro sia una cosa che sia utile per voi perché non tanti ad oggi la sanno. Allora
+[00:44:46] passiamo adesso a parlare dell'ultimo concetto che è sostanzialmente la latenza, prima
+[00:44:50] poi di entrare nel pratico e magari andare in cloud code e cominciare a fare questo
+[00:44:55] un sistema end-to-end. E questo è solo perché ora abbiamo tutte le informazioni che vogliamo
+[00:45:00] per anche interagire con Cloud Code, capire, vedere dopo cosa succede, capire perché le
+[00:45:05] cose vanno bene, vanno male e vi è dicendo. Allora, la latenza abbiamo detto essere la
+[00:45:10] differenza, diciamo, di tempo tra quando la gente parla e quando noi parliamo e
+[00:45:16] viceversa. È l'intervallo di silenzio, chiamiamolo così, ok, per capirci. Bene.
+[00:45:22] Ora, come facciamo a controllarlo e quali sono le variabili che usiamo?
+[00:45:28] Bene, allora questo è importante perché di nuovo varia molto in base allo use case
+[00:45:33] aziendale, non faccio un corso giganorme per parlare di tutto, a vedete tra l'altro
+[00:45:39] ora si è allineata la latenza e capite perché era così lento, per il modello che
+[00:45:43] abbiamo scelto, ma come la controlliamo?
+[00:45:48] abbiamo tre modi di controllarla e allora fatemi andare velocemente qui perché questo ce lo rende
+[00:45:56] molto più semplice. Allora noi sappiamo che sia qui, giusto? Che qui? Che qui? Che cosa abbiamo?
+[00:46:06] Abbiamo un modello che viene utilizzato in una piattaforma di terzi. Quindi non lo so,
+[00:46:12] LLM, Anthropic, qui abbiamo visto varie cose, adesso c'era Deepgram, ci sono tutti questi
+[00:46:18] transcriber, 11labs, Gladia, Google, ci sono un sacco di cose, no?
+[00:46:25] Allora, per farve la semplice, questi modelli qui sono quelli che vanno ad impattare la vostra
+[00:46:30] latenza.
+[00:46:31] Quindi sostanzialmente che cosa succede?
+[00:46:33] Che per migliorare la vostra latenza potete scegliere una combinazione di modelli,
+[00:46:39] nuovo non c'è un o solo questo o solo quello, ma una combinazione di modelli che non vi
+[00:46:44] assassinino, diciamo, il progetto, ma che possano migliorarlo, perché come vedete, allora
+[00:46:54] siamo a due e mezzo, ovviamente ora ci metterà magari un cazzeliardo di tempo ad aggiornarsi,
+[00:47:00] ma ah no ok, ma siamo già scesi di più di un secondo e mezzo solo con un modello,
+[00:47:05] Quindi capite che se noi riusciamo ad avere un buon prompt iniziale, dove se il prompt
+[00:47:12] è buono il modello può essere un po' più scarso, perché comunque tutto è gestito in
+[00:47:17] maniera ottimale dal prompt, lì è dove facciamo agenti di successo ed è lì dove oggi si
+[00:47:25] fa molta fatica perché, non so dei modelli costano, ma perché la qualità dei prompt
+[00:47:30] medie è molto bassa ok quindi detto questo come facciamo beh allora abbiamo alcune cose un
+[00:47:39] po più visibili quindi queste semplicemente vediamo l'impatto di questo su quell'altro
+[00:47:46] via dicendo altre cose invece lo abbiamo ad andare proprio dentro a piattaforme come
+[00:47:50] 11 labs capire quali sono le voci quali sono queste quali sono i transcriber che cosa impattano
+[00:47:58] quali costi ci sono e via dicendo. Quindi, sostanzialmente quello che vi dico è vi rimando
+[00:48:03] alla documentazione ufficiale dei vari pezzi e però la latenza viene controllata in questo
+[00:48:10] modo. Oltretutto, dentro VAPI avete anche la possibilità dentro Ad Advanced, ed è una
+[00:48:17] cosa che anche qui non troppe persone sanno perché ci giocano magari poco con questi
+[00:48:21] strumenti, di controllare la latenza anche tramite cursori, quindi, movendoli, diciamo,
+[00:48:28] ok, quindi questo è quanto un assistente aspetta prima di cominciare a parlare. Allora, questo
+[00:48:35] potete, come vedete, regolarvelo e questo ovviamente andrà ad impattare sulla latenza,
+[00:48:39] quindi non è solo una questione di modelli, ma è anche una questione di impostazione.
+[00:48:43] Di nuovo, non c'è una latenza perfetta, non sempre la menor latenza è la migliore
+[00:48:48] dell'universo, ci sono le varie casistiche aziendali, allora se fate un new receptionist, se fate
+[00:48:53] uno speed to lead, se fate un qualcosa che invece deve raccogliere un sacco di informazioni
+[00:48:58] per varie case aziendali e via dicendo. Endpointing, sapete che cos'è ora, sapete
+[00:49:05] quale scegliere, sapete che è quello che vi permette di iniziare la conversazione
+[00:49:08] no, poi avete quanto si aspetta quando c'è una punteggiatura, quindi punto
+[00:49:15] di domanda, punto esclamativo o niente, che è questa parte qui e on number seconds quindi
+[00:49:23] sostanzialmente è il minimo numero di secondi che devi aspettare prima che si cominci diciamo
+[00:49:28] il processo di trascrizione, quindi sostanzialmente stiamo controllando anche questo endpointing
+[00:49:34] qui che era quello che vi dicevo che è quello che diciamo triggera tutto il processo.
+[00:49:39] Quindi questo è per dirvi avete un sacco di opzioni, avete anche stop speaking quanto aspettiamo,
+[00:49:46] quindi magari per zero due secondi è il tempo che l'utente deve parlare prima che la gente
+[00:49:54] si fermi, quindi per esempio se lui sta parlando io parlo a voi per più di zero due secondi
+[00:49:59] lui si fermerà e aspetterà e poi ricomincerà e quindi avete sotto tutta la parte di impostazioni
+[00:50:05] così e come andiamo a controllare poi la latenza nel pratico. Ora, noi abbiamo appena visto tutta
+[00:50:13] la grossa base di agenti vocali e questo perché solamente perché prima di cominciare a costruirli
+[00:50:19] nel pratico abbiamo diciamo livellato il terreno per tutti, di modo tale che abbiamo un'infarinatura
+[00:50:26] di base di quali sono che cosa sono gli agenti vocali, quali siano i problemi che
+[00:50:33] queste gentili vocali hanno e come in linea di massima possiamo controllarli.
+[00:50:37] Adesso, quello che faremo è andare ad utilizzare Cloud Code per costruire questi, perché?
+[00:50:44] Perché beh, capite che per ora abbiamo fatto un processo estremamente manuale, cioè abbiamo
+[00:50:49] ehm preso, non lo so, vari receptionist, abbiamo messo dei prompt noi, abbiamo cominciato
+[00:50:55] a prendere delle impostazioni eccetera, ma idealmente vorremmo un modello che in
+[00:51:00] qualche modo ci aiuta.
+[00:51:01] In maniera adizionale poi, questa cosa qui per ora vive nel nostro computer, cioè vive
+[00:51:06] letteralmente dentro VAPI, non l'abbiamo ancora pubblicata, non la possiamo dare a nessuno
+[00:51:12] questo voice agent diciamo è ancora qui, quindi diciamo l'utilità per il momento
+[00:51:17] siamo noi che parliamo con questo agente, ma non è una cosa che poi possiamo andare
+[00:51:21] a dire hey azienda top, tieni questo è il voice agent che dovrei andare a fare,
+[00:51:26] ok?
+[00:51:27] Allora, questo per dirvi che noi ora usi, utilizzeremo delle piattaforme, allora premetto
+[00:51:35] che tutto può essere fatto con Cloud Code senza andare ad utilizzare Na10, che io invece
+[00:51:43] ora utilizzerò come sponda perché, perché vi permette di controllare i system prompt,
+[00:51:48] sarà più semplice una volta che entriamo dentro e vedremo quello che andiamo a costruire.
+[00:51:52] Però, questo è per dirvi, generalmente il mio flusso è prendo, comincio con Cloud Code,
+[00:52:01] uso N8n perché mi viene un po' meglio modellare la gente, capire i vari system prompt, dei
+[00:52:07] vari agenti, perché ora ne costruiremo uno ma avremo più flussi e allora lo vedremo
+[00:52:11] con una cosa un po' complessa, faremo nei high receptionist, e una volta che tutti
+[00:52:16] i flussi funzionano, allora chiedo di ricostruire tutto con Cloud Code, ma allora ho già
+[00:52:21] ha controllato magari la tensa varia, il prompt, come risponde, se tutti i flow individuali
+[00:52:27] funzionano e quindi a quel punto Cloud deve semplicemente ricostruire e poi possiamo pubblicare
+[00:52:32] in Vercel queste cose, quindi poi sono accessibili come qualsiasi altra cosa. Vercel, per chi
+[00:52:38] non lo conosce, questa piattaforma qui dove sostanzialmente mettiamo le cose live
+[00:52:43] e per farvi un esempio queste sono magari alcuni progettini che ho fatto, questa
+[00:52:49] era un lead magnet che ho fatto per calcolare l'arro AI degli agenti AI dove se uno preme
+[00:52:56] lo mandavo agli imprenditori e questo è sostanzialmente quando possono salvare, ovviamente
+[00:53:01] ci sono dei conti sotto fatti in un certo modo, ma ok questo è live, quindi come vedete
+[00:53:06] non è più nel mio computer e se volete entrare tra l'altro potete entrarci e ha
+[00:53:11] questo URL qui, quindi poi lo vedrete insomma, ok? Quindi poi per metterlo live lo avremo
+[00:53:16] Detto questo quindi cominciamo ad entrare nelle varie piattaforme.
+[00:53:19] Allora per quelli che di voi sono nuovi velocemente anti-gravity è l'interfaccia che utilizziamo quindi l'IDI e sostanzialmente potete scaricarlo per Mac
+[00:53:31] e per quanto riguarda invece Cloud una sola cosa avete da considerare e cioè noi useremo ora Cloud Code ma mentre anti-gravity avrete diciamo un intervallo per
+[00:53:45] giocare con il modello gratuitamente con i modelli dentro anti-gravity in maniera gratuita, dentro
+[00:53:50] cloud questo risulta un po' più difficile ora nel mentre che si carica perché non tutte
+[00:53:56] le tier permettono di avere cloud code ma anzi sfortunatamente al momento abbiamo solo
+[00:54:01] che la cloud la tier pro e la tier max sono quelle che vi permettono di utilizzarlo e quindi
+[00:54:09] questo è una sfortuna nel senso che poi io lo utilizzo, ma se non pagate l'abbonamento
+[00:54:15] questa cosa qui vi potrebbe non potete utilizzarla. Allora, detto questo quindi andiamo dentro
+[00:54:22] Antigravity e tutti i progetti dentro Antigravity questa sarà l'interfaccia che vi accoglio
+[00:54:27] quando lo scaricate e vivono dentro una cartella. Quindi la prima cosa che andiamo a fare
+[00:54:31] è aprire una cartella dentro nostro desktop e lo chiameremo voiceaicorsocompleto youtube.
+[00:54:41] Allora, ora vediamo che qui non abbiamo sostanzialmente nulla, come facciamo a scaricarci
+[00:54:47] Cloud Code. Comunque, se non sapete che cosa è questa interfaccia, vi rimando velocemente
+[00:54:54] alla mia community, classi, avete un corso di quattro ore qua dentro, avete due corsi
+[00:55:00] da 3 ore e mezza qua dentro, uno per agenti AI, uno per SAS, questo è 3 ore 26, quindi
+[00:55:09] vi rimando lì, ora procediamo in maniera abbastanza più veloce, quindi come scarichiamo
+[00:55:15] cloud code, estensioni, scriviamo cloud code, e qui poi semplicemente andremo a scaricarcela
+[00:55:22] quindi ora questo rumore è perché sta facendo l'update e quindi una volta che l'ha fatto poi
+[00:55:27] continuiamo perfetto abbiamo ristartato tutto quindi estensioni cloud code ora per utilizzarlo
+[00:55:34] avrete questa iconcina qui quindi basta che la premiate oppure se avete un Mac è command shift
+[00:55:41] ed esc la shortcut che potete utilizzare e ora sostanzialmente cominciamo con l'impostare
+[00:55:49] il progetto. Allora, prima cosa è la piattaforma che
+[00:55:54] noi andiamo ad utilizzare come vi ho detto per cominciare a costruire i workflow sarà
+[00:55:59] na10. Quindi qui premiamo semplicemente na10 login, entriamo qua dentro, facciamo sign-in,
+[00:56:07] voi vi registrerete, farete tutte le vostre cose splendide e qui ovviamente troverete
+[00:56:13] questa interfaccia che vi accoglie e sostanzialmente questa è l'interfaccia che andremo ad
+[00:56:17] utilizzare quindi poi qua dentro troverete delle mini cosine che vi permettono e questo sarà
+[00:56:22] sostantemente l'workflow o uno dei workflow che andremo a fare ovviamente li faremo molto più
+[00:56:26] complessi ora questo lo archivio al volo di modo tale che partiamo con la stessa interfaccia a
+[00:56:33] tutti quanti e partiamo tutti da zero bene allora brevemente questi template che potrete
+[00:56:39] utilizzare qua fate semplicemente crea workflow e questa e ce metto 30 secondi ora è semplicemente
+[00:56:46] un'interfaccia nella quale poi noi vedremo apparire dei moduli, quindi quelli che sono
+[00:56:50] chiamati drag and drop, perché li potete semplicemente trascinare e rilasciare, però, diciamo, non
+[00:56:57] sarà questo la sede in cui vi spiego Nei Ten, vi farò un corso magari molto breve
+[00:57:03] per capire quali sono le cose di Nei Ten che dovete sapere oggi, che ci sono piattaforme
+[00:57:08] come Cloud Code, perché alcune cose ancora saranno, diciamo, fate meglio su questa
+[00:57:14] tipologia di piattaforma rispetto che Claude. Allora, ora che abbiamo livellato il terreno
+[00:57:19] che cosa dobbiamo fare? Beh, Claude nativamente non sa come utilizzare
+[00:57:25] N8n e questo è molto importante perché nessuno strumento ha la capacità di capire questo
+[00:57:34] N8n come funziona se non gli diamo che cosa. Un manuale di istruzioni, quindi il nostro
+[00:57:40] manuale di istruzioni sarà un md file, quindi qui avremo il nostro file.md che dovrà far
+[00:57:50] capire al nostro, diciamo, cloud code come funziona na10. Quindi, immaginiamo di avere
+[00:57:57] questo file qui, ok? Bene. Ora, il nostro obiettivo però, qual è? È quello di disegnare
+[00:58:07] anche questi workflow, questi agenti su VAPI, giusto? Avremmo lo stesso problema allora
+[00:58:12] perché qui avremmo che nessuno nativamente sa come VAPI funziona e quindi avremo anche
+[00:58:21] bisogno di fare questa cosa qui, quindi questo file qui ci servirà per spiegare come Netn
+[00:58:27] funziona, questo ci servirà per spiegare come funziona VAPI, ma allora capite che
+[00:58:32] allora noi non abbiamo ancora capito però come costruire questo voice agent, quindi
+[00:58:37] avremo un voiceagent.md che ci spiegherà, che saranno una serie di nuovo distruzioni
+[00:58:46] in lingua naturale, che ci spiegheranno come funziona creare un'agente AI.
+[00:58:53] E una volta che voi saprete questo, di nuovo vi rimando al corso di Cloud nella community
+[00:58:58] nel caso vogliate vederlo, sapete che avremo bisogno di un Cloud.md che sono le istruzioni
+[00:59:03] generali di progetto.
+[00:59:05] Quindi, quando Cloud farà qualcosa, andrà per primo a leggersi questo file, questo file
+[00:59:11] farà capire a Cloud che cosa c'è dentro al progetto, questo file poi andrà a rimandare
+[00:59:17] Cloud a questa cosa qui, giusto che gli dirà come creare dei voice agents, e allora
+[00:59:24] poi il flusso si spezzerà in due parti, una parte che andrà, e lo faremo passo passo
+[00:59:29] è a creare questo file dottem e diciamo in a 10 e creare i workflow e una parte separata
+[00:59:36] che invece andrà a creare questo qua dentro dentro vapi ok questo è il metodo più efficace
+[00:59:42] che all' momento ho visto che vuol dire spezziamo tutto di modo tale che abbiamo delle
+[00:59:47] guide molto precise per tutto quanto perfetto quindi ora pian pianino andremo a crearle
+[00:59:53] quindi fatemi cancellare questi, anzi fatemi lasciare, allora come facciamo tutta questa
+[01:00:00] documentazione, allora perché questo è diciamo la cosa importante, beh dobbiamo cominciare
+[01:00:05] a fare questa documentazione per NA10, allora per NA10 dobbiamo inserirli che cosa, beh
+[01:00:12] dobbiamo inserirli due cose, giusto prima dobbiamo inserirli un MCP e dobbiamo inserirli
+[01:00:18] e poi le skills, anzi forse in questo ordine, ok? Quindi skills, vediamo se voi vedete
+[01:00:25] queste cose velocemente, sì, benissimo, fatemi zoomare, bene. E poi qui dovremmo dargli
+[01:00:31] un mini prompt che ci permette di capire che cos'è che stiamo andando a fare. Allora,
+[01:00:37] dove andiamo a trovare queste? Beh, fortunatamente esiste una repo fenomenale che è shout out
+[01:00:44] a lui non fatemi pronunciare il nome ma sostanzialmente questa è la repo delle skill ok quindi andremo
+[01:00:52] a copiarla troverete tutto sotto vi lascio i link vi ricendo e poi se io qui alla fine
+[01:00:59] al posto che premere skill metto mcp e di nuovo voi dovreste vederlo sì perfetto allora
+[01:01:07] vado nella seconda parte della repositori e quindi abbiamo che, diciamo, la nostra repo
+[01:01:15] è questa per l'MCP. E questo perché? Perché l'MCP dà accesso a i vari strumenti di
+[01:01:22] Anethen. Le skill dicono a Cloud come deve usare questi strumenti. Quindi immaginatevi
+[01:01:28] che io dica ok, questa è la cosa per il T e invece questo è il mouse, all'MCP
+[01:01:36] è, tenete, la skill ti dicono ok, se vuoi bere il tè devi fare questo movimento, se
+[01:01:42] vuoi usare il mouse devi fare questo movimento qui, ok? Quindi questo è quello che gli stiamo
+[01:01:47] dicendo. Il prompt ci dice che cosa fare con queste due informazioni. Allora, diremo
+[01:01:53] qualcosa del genere, allora. Hey, vorrei che tu mi aiutassi a creare un system prompt
+[01:02:01] nel mio file che ho già nominato na10.md e sostanzialmente questo system prompt deve
+[01:02:10] aiutarti a capire come generare workflow tramite na10. Per farlo ti ho messo a disposizione
+[01:02:20] due repositori, una si chiama skills e una si chiama mcp, le trovi sopra e sostanzialmente
+[01:02:26] vorrei che tu mi aiutassi a generare questo system prompt in modo tale che fosse chiaro
+[01:02:32] che quando ti chiedo di generare un workflow, voglio che tu faccia riferimento alle informazioni
+[01:02:39] contenute qua dentro. Per favore, nel momento in cui poi vai a copiarti le informazioni,
+[01:02:44] assicurati di clonare le repository anche all'interno del nostro, o di importarle
+[01:02:50] nel nostro workspace o nel nostro progetto, perché questo sostanzialmente ci permetterà
+[01:02:54] di avere tutte le informazioni contenute in un'unica source of truth.
+[01:02:59] Benissimo, quindi ora gli diamo bypass permissions qua, perché non è una cosa diciamo molto
+[01:03:07] complessa, non richiede thinking, quindi sostanzialmente quello che facciamo ora
+[01:03:12] è premere in bio. Allora, questo è estremamente importante,
+[01:03:16] lo ripeto, il motivo per cui lo stiamo facendo è perché stiamo dando a cloud
+[01:03:22] le one file che rappresenta come utilizzare gli strumenti e come utilizzare na10. Quindi
+[01:03:32] qui noi abbiamo ancora detto che per il nostro voice agent quello è il workflow. Qui gli
