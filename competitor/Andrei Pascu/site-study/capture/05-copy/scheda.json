@@ -1,0 +1,4134 @@
+{
+ "url": "https://www.andrei-copy.com/copy",
+ "slug": "05-copy",
+ "catturata": "2026-09-07",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "Corso Copywriting Online - Con Consulenza Gratuita + Metodi Clienti + Aggiornamenti Gratis a Vita — AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 26952,
+ "larghezza": 1440,
+ "altezza_mobile": 33366,
+ "body_bg": "transparent",
+ "body_font": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+ "palette_testo": [
+  [
+   "#fafafa",
+   233
+  ],
+  [
+   "#ffffff",
+   25
+  ],
+  [
+   "#1b1b1d",
+   24
+  ],
+  [
+   "#e0e0e0",
+   15
+  ],
+  [
+   "#000000",
+   15
+  ],
+  [
+   "#e7e7e7",
+   14
+  ],
+  [
+   "#efab00",
+   9
+  ],
+  [
+   "#ffffff @0.35",
+   7
+  ],
+  [
+   "#343434",
+   6
+  ],
+  [
+   "#333333",
+   4
+  ],
+  [
+   "#888888",
+   2
+  ],
+  [
+   "#ebe9e0",
+   2
+  ],
+  [
+   "#686868",
+   1
+  ],
+  [
+   "#666666",
+   1
+  ],
+  [
+   "#0062ff",
+   1
+  ],
+  [
+   "#a8a8a8",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#fafafa",
+   60
+  ],
+  [
+   "#1b1b1d",
+   50
+  ],
+  [
+   "#efab00",
+   14
+  ],
+  [
+   "#0062ff",
+   9
+  ],
+  [
+   "#000000 @0.5",
+   7
+  ],
+  [
+   "#ffffff",
+   4
+  ],
+  [
+   "#a8a8a8",
+   4
+  ],
+  [
+   "#efab00 @0.1",
+   2
+  ],
+  [
+   "#008000",
+   1
+  ],
+  [
+   "#ffffff @0.08",
+   1
+  ],
+  [
+   "#ffffff @0.1",
+   1
+  ],
+  [
+   "#efab00 @0.08",
+   1
+  ],
+  [
+   "#ffffff @0.05",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "elza-8u3n84",
+   172
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   130
+  ],
+  [
+   "Clarkson, Arial, sans-serif",
+   42
+  ],
+  [
+   "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif",
+   8
+  ],
+  [
+   "\"DM Sans\"",
+   7
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   86
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   45
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   43
+  ],
+  [
+   "16px / lh 27.2px / w400",
+   28
+  ],
+  [
+   "24px / lh normal / w700",
+   20
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   18
+  ],
+  [
+   "12px / lh 20.4px / w400",
+   14
+  ],
+  [
+   "15.2px / lh 28.8px / w300",
+   14
+  ],
+  [
+   "12.8px / lh 28.8px / w600",
+   14
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   13
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   8
+  ],
+  [
+   "16px / lh normal / w600",
+   6
+  ],
+  [
+   "18px / lh 25.2px / w600",
+   4
+  ],
+  [
+   "18px / lh 25.2px / w700",
+   4
+  ],
+  [
+   "47.9px / lh 47.9px / w700",
+   3
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "14.272px / lh normal / w500",
+   2
+  ],
+  [
+   "60.1px / lh 60.1px / w700",
+   2
+  ],
+  [
+   "33.8px / lh 33.8px / w700",
+   2
+  ],
+  [
+   "40.1px / lh 40.1px / w700",
+   2
+  ],
+  [
+   "29.6px / lh 29.6px / w700",
+   2
+  ],
+  [
+   "28.9px / lh 28.9px / w700",
+   2
+  ],
+  [
+   "27.6px / lh 27.6px / w700",
+   2
+  ],
+  [
+   "52.3px / lh 52.3px / w700",
+   2
+  ],
+  [
+   "40px / lh 28.8px / w700",
+   2
+  ],
+  [
+   "14.4px / lh 28.8px / w400",
+   2
+  ],
+  [
+   "16px / lh 28.8px / w600",
+   2
+  ],
+  [
+   "43.2px / lh 43.2px / w700",
+   1
+  ],
+  [
+   "47.6px / lh 47.6px / w700",
+   1
+  ],
+  [
+   "31.2px / lh 31.2px / w700",
+   1
+  ],
+  [
+   "42px / lh 42px / w700",
+   1
+  ],
+  [
+   "31.6px / lh 31.6px / w700",
+   1
+  ],
+  [
+   "20px / lh 36px / w300",
+   1
+  ],
+  [
+   "20px / lh 36px / w700",
+   1
+  ],
+  [
+   "38.5px / lh 38.5px / w700",
+   1
+  ],
+  [
+   "41.4px / lh 41.4px / w700",
+   1
+  ],
+  [
+   "32px / lh 32px / w700",
+   1
+  ],
+  [
+   "17.6px / lh 19.9373px / w600",
+   1
+  ],
+  [
+   "14.4px / lh 21.6px / w300",
+   1
+  ],
+  [
+   "156.7px / lh 156.7px / w700",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "700",
+   181
+  ],
+  [
+   "300",
+   105
+  ],
+  [
+   "400",
+   45
+  ],
+  [
+   "600",
+   27
+  ],
+  [
+   "500",
+   2
+  ]
+ ],
+ "raggi": [
+  [
+   "50%",
+   18
+  ],
+  [
+   "4px",
+   14
+  ],
+  [
+   "10px",
+   7
+  ],
+  [
+   "100%",
+   7
+  ],
+  [
+   "26px",
+   7
+  ],
+  [
+   "16px",
+   4
+  ],
+  [
+   "25px",
+   3
+  ],
+  [
+   "12px",
+   3
+  ],
+  [
+   "20px",
+   2
+  ],
+  [
+   "8px",
+   2
+  ],
+  [
+   "50px",
+   2
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(0, 0, 0, 0.08) 0px 4px 20px 0px",
+   4
+  ],
+  [
+   "rgba(239, 171, 0, 0.3) 0px 4px 15px 0px",
+   4
+  ],
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ],
+  [
+   "rgba(0, 128, 0, 0.7) 0px 0px 15px 0px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    2079
+   ],
+   [
+    "0.3s",
+    33
+   ],
+   [
+    "transform 0.25s",
+    31
+   ],
+   [
+    "box-shadow 0.3s",
+    14
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "opacity 0.1s linear",
+    7
+   ],
+   [
+    "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
+    7
+   ],
+   [
+    "opacity 0.2s",
+    7
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    6
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "opacity 1s",
+    1
+   ],
+   [
+    "transform 0.2s",
+    1
+   ],
+   [
+    "background-color 0.1s linear, color 0.1s linear",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "image-fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    5
+   ],
+   [
+    "pulse 2s ease",
+    2
+   ]
+  ],
+  "filtri": [
+   [
+    "backdrop: blur(15px)",
+    7
+   ],
+   [
+    "backdrop: blur(20px)",
+    2
+   ],
+   [
+    "backdrop: blur(10px)",
+    1
+   ],
+   [
+    "backdrop: blur(6px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-68358a4fe5d07d2016c9cfda\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d2684978302b\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d2684978302e\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d2684978304f\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d26849783060\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6835a930f2787234590ea999\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d26849783069\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d26849783072\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    57
+   ],
+   [
+    "matrix(1, 0, 0, 1, -9999, 0)",
+    37
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    11
+   ],
+   [
+    "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, -4.24219)",
+    9
+   ],
+   [
+    "matrix(1, 0, 0, 1, -22, -22)",
+    7
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -44)",
+    6
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1.08821, 0, 0, 1.08821, 0, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -45)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 495, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 945, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 1395, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -405, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 45, 0)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [
+  "anim-form-post-submit",
+  "animation-form-field-fx-highlight-double-trace",
+  "animation-form-field-fx-highlight-double-trace-bottom",
+  "animation-form-field-fx-highlight-glow",
+  "animation-form-field-fx-highlight-trace",
+  "animation-form-field-fx-highlight-trace-bottom",
+  "bounceIn",
+  "bounceOut",
+  "cart-loader-spin",
+  "clipAnimation",
+  "fadeout",
+  "gallery-image-enter-from-left",
+  "gallery-image-enter-from-right",
+  "gallery-image-exit-to-left",
+  "gallery-image-exit-to-right",
+  "hideContent",
+  "image-fade-in",
+  "keyframes-bar",
+  "keyframes-check",
+  "keyframes-circle",
+  "keyframes-circle-check",
+  "keyframes-ellipsis-grow",
+  "keyframes-ellipsis-shift",
+  "keyframes-ellipsis-shrink",
+  "keyframes-spinner",
+  "keyframes-spinner-check",
+  "lightbox-open",
+  "loading-dot-2",
+  "loading-dot-3",
+  "loading-indicator-dash",
+  "loading-indicator-rotate-spinner",
+  "no-image-fade-in",
+  "plyr-fade-in",
+  "plyr-popup",
+  "plyr-progress",
+  "portfolio-index-background-image-mask--mask-down-in",
+  "portfolio-index-background-image-mask--mask-down-out",
+  "portfolio-index-background-image-mask--mask-left-in",
+  "portfolio-index-background-image-mask--mask-left-out",
+  "portfolio-index-background-image-mask--mask-right-in",
+  "portfolio-index-background-image-mask--mask-right-out",
+  "portfolio-index-background-image-mask--mask-up-in",
+  "portfolio-index-background-image-mask--mask-up-out",
+  "product-reviews-loader-flip-square",
+  "pulseBadgeOpacity",
+  "riseandfadein",
+  "shake-three",
+  "shimmy",
+  "shiver",
+  "show-confirmation",
+  "show-confirmation-mobile",
+  "spin",
+  "sqs-spin",
+  "tmpl-anim-clip-horizontal-left",
+  "tmpl-anim-clip-vertical-up",
+  "tmpl-anim-fade-scale-up",
+  "tmpl-anim-fade-stretch-up",
+  "tmpl-anim-fade-up",
+  "underlineSlideIn",
+  "underlineSlideOut",
+  "video-player-settings-popup",
+  "video-player__loading-indicator-dash",
+  "video-player__loading-indicator-rotate-spinner"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 137,
+   "text": "Raggiungi la libertà finanziaria avviando una carriera da copywriter autonomo."
+  },
+  {
+   "tag": "h2",
+   "y": 1727,
+   "text": "Scopri di cosa si tratta ⬇️"
+  },
+  {
+   "tag": "h1",
+   "y": 2360,
+   "text": "La realtà dei fatti?"
+  },
+  {
+   "tag": "h3",
+   "y": 2861,
+   "text": "E lo afferma anche questo studio:"
+  },
+  {
+   "tag": "h1",
+   "y": 3955,
+   "text": "Ho scelto il copywriting dato che funziona anche durante i periodi di peggiore crisi:"
+  },
+  {
+   "tag": "h1",
+   "y": 4808,
+   "text": "Per chi ho creato Copywriting Mentorship:"
+  },
+  {
+   "tag": "h3",
+   "y": 5408,
+   "text": "Gli altri ti mettono 30 video-recensioni (sicuramente tutte realissime e non pagate 💀💀). Io ti mostro i dati."
+  },
+  {
+   "tag": "h1",
+   "y": 7283,
+   "text": "Cosa troverai in Copywriting Mentorship?"
+  },
+  {
+   "tag": "h3",
+   "y": 7578,
+   "text": "30+ video-lezioni su come scrivere copy"
+  },
+  {
+   "tag": "h3",
+   "y": 7578,
+   "text": "20+ video-lezioni su come trovare clienti"
+  },
+  {
+   "tag": "h3",
+   "y": 8051,
+   "text": "Riassunti e appunti"
+  },
+  {
+   "tag": "h3",
+   "y": 8043,
+   "text": "Quiz"
+  },
+  {
+   "tag": "h3",
+   "y": 8361,
+   "text": "Gruppo telegram privato"
+  },
+  {
+   "tag": "h2",
+   "y": 9001,
+   "text": "Copywriting Mentorship 6: ti insegno cosa funziona… Sulla base dei dati, in lezioni deep."
+  },
+  {
+   "tag": "h2",
+   "y": 9924,
+   "text": "Sono il mentore che cercavi."
+  },
+  {
+   "tag": "h3",
+   "y": 10033,
+   "text": "Dalla scrivania nella casa di un paesino ad un ufficio e azienda in centro a Bologna"
+  },
+  {
+   "tag": "h3",
+   "y": 10393,
+   "text": "Anche se a dire il vero…"
+  },
+  {
+   "tag": "h3",
+   "y": 11334,
+   "text": "Video testimonianze degli studenti"
+  },
+  {
+   "tag": "h3",
+   "y": 11386,
+   "text": "di Copywriting Mentorship."
+  },
+  {
+   "tag": "h1",
+   "y": 12205,
+   "text": "Impara a usare l’AI prima che sia lui a usare te"
+  },
+  {
+   "tag": "h3",
+   "y": 12685,
+   "text": "Come sfruttare l’AI per scrivere copy?"
+  },
+  {
+   "tag": "h2",
+   "y": 13395,
+   "text": "Un corso non è mai stato così completo…"
+  },
+  {
+   "tag": "h3",
+   "y": 13688,
+   "text": "Io ti do le informazioni, tu le sfrutti:"
+  },
+  {
+   "tag": "h1",
+   "y": 14370,
+   "text": "Le video-lezioni"
+  },
+  {
+   "tag": "h3",
+   "y": 14602,
+   "text": "Parte 1: come scrivere copy"
+  },
+  {
+   "tag": "h3",
+   "y": 15377,
+   "text": "Parte 2: come trovare clienti"
+  },
+  {
+   "tag": "h3",
+   "y": 16011,
+   "text": "Parte 3: Intelligenza artificiale"
+  },
+  {
+   "tag": "h2",
+   "y": 16597,
+   "text": "Contenuti per massimizzare il successo"
+  },
+  {
+   "tag": "h1",
+   "y": 17244,
+   "text": "Gruppo telegram privato"
+  },
+  {
+   "tag": "h2",
+   "y": 17837,
+   "text": "Consulenze direttamente con me"
+  },
+  {
+   "tag": "h3",
+   "y": 17909,
+   "text": "Non sei più solo."
+  },
+  {
+   "tag": "h2",
+   "y": 18792,
+   "text": "Diamo peso agli aggiornamenti di mercato:"
+  },
+  {
+   "tag": "h2",
+   "y": 19781,
+   "text": "Ecco il piano"
+  },
+  {
+   "tag": "h1",
+   "y": 20468,
+   "text": "“Non è un business sexy… Ma funziona”"
+  },
+  {
+   "tag": "h2",
+   "y": 20703,
+   "text": "La tua mano."
+  },
+  {
+   "tag": "h2",
+   "y": 21360,
+   "text": "A differenza di tutte le milioni di persone che stanno provando a fare copy…"
+  },
+  {
+   "tag": "h2",
+   "y": 22188,
+   "text": "Questo percorso lo descrivo con una sola frase: cambiare vita."
+  },
+  {
+   "tag": "h2",
+   "y": 23129,
+   "text": "Opinioni e risultati degli studenti di Copywriting Mentorship"
+  },
+  {
+   "tag": "h3",
+   "y": 24867,
+   "text": "Upgrade disponibile"
+  },
+  {
+   "tag": "h2",
+   "y": 25148,
+   "text": "Domande comuni"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 20750,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 20758,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Entra adesso",
+   "href": "#pricing",
+   "y": 1512,
+   "x": 647,
+   "w": 145,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "questo",
+   "href": "https://www.sec.gov/oiea/investor-alerts-and-bulletins/risks-short-term-trading-based-social-media-investor-alert",
+   "y": 2858,
+   "x": 735,
+   "w": 133,
+   "h": 49,
+   "bg": "transparent",
+   "color": "#ebe9e0",
+   "radius": "0px",
+   "border": "0px none rgb(235, 233, 224)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041",
+   "y": 5801,
+   "x": 633,
+   "w": 64,
+   "h": 30,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041",
+   "y": 6118,
+   "x": 633,
+   "w": 64,
+   "h": 30,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041",
+   "y": 6795,
+   "x": 673,
+   "w": 64,
+   "h": 30,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Scopri i fatti sul copywriting",
+   "href": "https://www.andrei-copy.com/ecco-i-fatti-copywriting",
+   "y": 7008,
+   "x": 590,
+   "w": 260,
+   "h": 50,
+   "bg": "#008000",
+   "color": "#ffffff",
+   "radius": "25px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "rgba(0, 128, 0, 0.7) 0px 0px 15px 0px",
+   "size": 16,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Entra in Copywriting Mentorship",
+   "href": "/copy-base#pricing",
+   "y": 8787,
+   "x": 573,
+   "w": 294,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Scopri cosa pensa chi è dentro il mio corso",
+   "href": "/recensioni-copywriting-mentorship",
+   "y": 11052,
+   "x": 548,
+   "w": 343,
+   "h": 52,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 20.8px"
+  },
+  {
+   "text": "Leggi altri pareri degli studenti",
+   "href": "/recensioni-copywriting-mentorship",
+   "y": 11965,
+   "x": 580,
+   "w": 280,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Entra e batti la mediocrità",
+   "href": "/copy-base#pricing",
+   "y": 13150,
+   "x": 597,
+   "w": 246,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Sezione 0: Introduzione",
+   "href": null,
+   "y": 14993,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 1: Fondamenta del copywriting",
+   "href": null,
+   "y": 15064,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 2: Come scrivere copy basilare",
+   "href": null,
+   "y": 15135,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 3: Copywriting avanzato",
+   "href": null,
+   "y": 15206,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 4: Business",
+   "href": null,
+   "y": 15768,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 5: Vendita",
+   "href": null,
+   "y": 15839,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 6: AI",
+   "href": null,
+   "y": 16401,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "💬 Quante consulenze ci sono?",
+   "href": null,
+   "y": 18194,
+   "x": 388,
+   "w": 665,
+   "h": 72,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "💬 Dove si fanno le consulenze?",
+   "href": null,
+   "y": 18267,
+   "x": 388,
+   "w": 665,
+   "h": 72,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "💬 Come fissare una consulenza?",
+   "href": null,
+   "y": 18340,
+   "x": 388,
+   "w": 665,
+   "h": 72,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "💬 A cosa servono?",
+   "href": null,
+   "y": 18413,
+   "x": 388,
+   "w": 665,
+   "h": 72,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Entra, studia e inizia",
+   "href": "/copy-base#pricing",
+   "y": 18539,
+   "x": 621,
+   "w": 198,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Clicca qui",
+   "href": "/copy-base#pricing",
+   "y": 22875,
+   "x": 659,
+   "w": 121,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Acquista Base",
+   "href": "https://www.andrei-copy.com/pre-checkout-cmb",
+   "y": 24657,
+   "x": 454,
+   "w": 225,
+   "h": 63,
+   "bg": "#ffffff @0.1",
+   "color": "#ffffff",
+   "radius": "50px",
+   "border": "1px solid rgba(255, 255, 255, 0.2)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Acquista Completo",
+   "href": "https://www.andrei-copy.com/pre-checkout-cm",
+   "y": 24658,
+   "x": 762,
+   "w": 223,
+   "h": 61,
+   "bg": "transparent",
+   "color": "#000000",
+   "radius": "50px",
+   "border": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Ho sentito che il corso è stato aggiornato, cosa significa?",
+   "href": null,
+   "y": 25231,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Se hai scoperto questo metodo di business perché non te lo tieni per te?",
+   "href": null,
+   "y": 25344,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Posso iniziare il corso se sono principiante assoluto?",
+   "href": null,
+   "y": 25457,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Posso iniziare il corso se sono già esperto in copywriting?",
+   "href": null,
+   "y": 25570,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Nel corso insegni anche come vendere?",
+   "href": null,
+   "y": 25683,
+   "x": 400,
+   "w": 641,
+   "h": 82,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Se mi trovo in difficoltà dopo aver iniziato il corso cosa faccio?",
+   "href": null,
+   "y": 25766,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Mi serve la partita IVA per fare copywriting?",
+   "href": null,
+   "y": 25879,
+   "x": 400,
+   "w": 641,
+   "h": 82,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Le consulenze sono illimitate?",
+   "href": null,
+   "y": 25962,
+   "x": 400,
+   "w": 641,
+   "h": 82,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Ho dei dubbi. Dove posso contattare Andrei?",
+   "href": null,
+   "y": 26045,
+   "x": 400,
+   "w": 641,
+   "h": 82,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 26439,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 26508,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 20743,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 20743,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6d97cdf0-b57b-412a-9fcc-c38c5a00d336/Hero+background+-+SP+CMB.jpg",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 875
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 455,
+   "x": 316,
+   "w": 338,
+   "h": 76
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 520,
+   "x": 316,
+   "w": 316,
+   "h": 76
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/163a9742-bb56-47c4-90a5-09d0a3c6c77a/Aggiornamenti+a+vita+%5Bno+costi+extra%5D.png",
+   "alt": "",
+   "y": 669,
+   "x": 320,
+   "w": 361,
+   "h": 130
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 875
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 875
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 847,
+   "x": 0,
+   "w": 1440,
+   "h": 805
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/84d900b1-251c-49bf-9405-eeb4b8bcd99c/Artboard+24+copy+2.png",
+   "alt": "",
+   "y": 951,
+   "x": 554,
+   "w": 332,
+   "h": 74
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1147,
+   "x": 422,
+   "w": 35,
+   "h": 35
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1147,
+   "x": 784,
+   "w": 35,
+   "h": 35
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1340,
+   "x": 422,
+   "w": 35,
+   "h": 35
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1340,
+   "x": 784,
+   "w": 35,
+   "h": 35
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1099337502?h=34c431827b&app_id=122963",
+   "alt": "",
+   "y": 1816,
+   "x": 455,
+   "w": 530,
+   "h": 298
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1651,
+   "x": 0,
+   "w": 1440,
+   "h": 567
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1651,
+   "x": 0,
+   "w": 1440,
+   "h": 567
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b87e320f-3648-4804-9479-8969581691fd/Grainy+yellow%2Fblack+CM+texture.jpg",
+   "alt": "",
+   "y": 2190,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2190,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2190,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 2236,
+   "x": 0,
+   "w": 1440,
+   "h": 1624
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/265b17d3-c72e-4b60-bf72-7f52cf9ba8b8/SEC+research+card+-+SP+CMB.png",
+   "alt": "",
+   "y": 2915,
+   "x": 388,
+   "w": 665,
+   "h": 412
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f505a1a4-f4fd-4826-9169-676076799639/Hopkins%2FPowers+polaroid+-+SP+CMB.png",
+   "alt": "",
+   "y": 3310,
+   "x": 759,
+   "w": 293,
+   "h": 271
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b5906c3a-687c-4213-bc5f-e07704b09ab2/schema-copy-giallo-frecce.webp",
+   "alt": "",
+   "y": 4225,
+   "x": 564,
+   "w": 311,
+   "h": 440
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 4760,
+   "x": 0,
+   "w": 1440,
+   "h": 600
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3c48e916-a0b9-4d86-bf74-ee7743db6be2/Andrei+with+Phone.jpg",
+   "alt": "",
+   "y": 4948,
+   "x": 320,
+   "w": 394,
+   "h": 336
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/869851fa-88c4-4ca4-8b0e-6e5b94d3a2f3/Grafico+data+1+-+SP+CMB.jpg",
+   "alt": "",
+   "y": 5686,
+   "x": 354,
+   "w": 259,
+   "h": 259
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7a29892b-91f1-4e42-a85f-ad07a034e2d1/Grafico+data+2+-+SP+CMB.jpg",
+   "alt": "",
+   "y": 6032,
+   "x": 354,
+   "w": 259,
+   "h": 259
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/578de53b-a557-4d1b-be48-ffa4cba16c2e/55%25.png",
+   "alt": "",
+   "y": 6638,
+   "x": 354,
+   "w": 259,
+   "h": 259
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6913,
+   "x": 495,
+   "w": 194,
+   "h": 30
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b87e320f-3648-4804-9479-8969581691fd/Grainy+yellow%2Fblack+CM+texture.jpg",
+   "alt": "",
+   "y": 7131,
+   "x": 0,
+   "w": 1440,
+   "h": 1814
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/84d900b1-251c-49bf-9405-eeb4b8bcd99c/Artboard+24+copy+2.png",
+   "alt": "",
+   "y": 7227,
+   "x": 624,
+   "w": 192,
+   "h": 43
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7342,
+   "x": 338,
+   "w": 728,
+   "h": 76
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6d420565-b75f-403a-9d8b-4e08c6acc914/Pen+icon+-+SP+CMB.png",
+   "alt": "",
+   "y": 7452,
+   "x": 388,
+   "w": 102,
+   "h": 102
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d382e9e8-3d5e-4ba4-8f64-50f2961ff589/Handshake+icon+-+SP+CMB.png",
+   "alt": "",
+   "y": 7452,
+   "x": 759,
+   "w": 102,
+   "h": 102
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/249bf5c5-a519-4201-aeab-29f7dbd9d146/PDF+icon+-+SP+CMB.png",
+   "alt": "",
+   "y": 7931,
+   "x": 388,
+   "w": 102,
+   "h": 102
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/61747151-9ee2-4baf-9124-e43c39919707/Quiz+icon+-+SP+CMB.png",
+   "alt": "",
+   "y": 7931,
+   "x": 759,
+   "w": 102,
+   "h": 102
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c19eaaec-9380-4f7b-a28e-e4094adc1336/Telegram+icon+-+SP+CMB.png",
+   "alt": "",
+   "y": 8241,
+   "x": 523,
+   "w": 102,
+   "h": 102
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 8945,
+   "x": 0,
+   "w": 1440,
+   "h": 874
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f27c29f3-3529-40f5-927b-8e8db4b110bf/tablet-side.png",
+   "alt": "",
+   "y": 9129,
+   "x": 863,
+   "w": 577,
+   "h": 577
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b44bc376-cc0b-4517-9c10-6b5424c19277/andrei-copy-mentor-sx.png",
+   "alt": "",
+   "y": 9914,
+   "x": 0,
+   "w": 377,
+   "h": 525
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9917,
+   "x": 577,
+   "w": 165,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0e954f35-6048-4b0d-aaff-773da0609bee/andrei-copy-mentor-dx.png",
+   "alt": "",
+   "y": 9914,
+   "x": 1063,
+   "w": 377,
+   "h": 525
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10880,
+   "x": 705,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10961,
+   "x": 839,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10961,
+   "x": 883,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/4ce5436e-da06-4954-812e-9e54a5debbca",
+   "alt": "",
+   "y": 10784,
+   "x": 523,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10883,
+   "x": 576,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10883,
+   "x": 838,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10784,
+   "x": 523,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9819,
+   "x": 0,
+   "w": 1440,
+   "h": 1420
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9819,
+   "x": 0,
+   "w": 1440,
+   "h": 1420
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 11210,
+   "x": 0,
+   "w": 1440,
+   "h": 920
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11676,
+   "x": 427,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 486,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 530,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/9411583d-0890-424d-bd82-552da0361fa5",
+   "alt": "",
+   "y": 11622,
+   "x": 320,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 348,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 510,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11622,
+   "x": 320,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11847,
+   "x": 427,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 486,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 530,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/e480742e-da6d-410a-a200-b644f72fe3e5",
+   "alt": "",
+   "y": 11793,
+   "x": 320,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11850,
+   "x": 348,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11850,
+   "x": 510,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11793,
+   "x": 320,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11676,
+   "x": 705,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 764,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 808,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/a329e9ae-c89a-40d1-92ce-e2b745d99bbb",
+   "alt": "",
+   "y": 11622,
+   "x": 598,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 626,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 788,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11622,
+   "x": 598,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11847,
+   "x": 705,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 764,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 808,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/b290cc10-478e-4c41-881f-0bd46d069861",
+   "alt": "",
+   "y": 11793,
+   "x": 598,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11850,
+   "x": 626,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11850,
+   "x": 788,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11793,
+   "x": 598,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11676,
+   "x": 983,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 1042,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 1086,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/d1646fab-5b56-4962-a38a-abee3680d47d",
+   "alt": "",
+   "y": 11622,
+   "x": 876,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 904,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 1066,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11622,
+   "x": 876,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11847,
+   "x": 983,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 1042,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 1086,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/d51024bd-3975-4bb2-950d-476797fcfade",
+   "alt": "",
+   "y": 11793,
+   "x": 876,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11850,
+   "x": 904,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11850,
+   "x": 1066,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11793,
+   "x": 876,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f075f123-ea94-425d-b4c4-dd1daa44c91e/9.png",
+   "alt": "",
+   "y": 12843,
+   "x": 529,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c7c1abb8-9870-48f1-a7a8-5152e34709cf/tick-green.png",
+   "alt": "",
+   "y": 12843,
+   "x": 866,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 13289,
+   "x": 0,
+   "w": 1440,
+   "h": 338
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/36d7d1b9-88ab-410c-8375-2959a244bc77/CM6+Logo+AP+Sales.png",
+   "alt": "",
+   "y": 13336,
+   "x": 698,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6881a66c-fafa-4041-82c9-a003668702a0/output-onlinegiftools.gif",
+   "alt": "",
+   "y": 13505,
+   "x": 654,
+   "w": 132,
+   "h": 74
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 13626,
+   "x": 0,
+   "w": 1440,
+   "h": 683
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b773805f-1aee-4248-aefb-81d5aafa49c5/Untitled-1.png",
+   "alt": "",
+   "y": 13841,
+   "x": 827,
+   "w": 225,
+   "h": 338
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/37979af2-e869-40a5-b738-d8d69cc771b7/lezioni+cm6.png",
+   "alt": "",
+   "y": 14738,
+   "x": 428,
+   "w": 583,
+   "h": 243
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/37979af2-e869-40a5-b738-d8d69cc771b7/lezioni+cm6.png",
+   "alt": "",
+   "y": 15513,
+   "x": 428,
+   "w": 583,
+   "h": 243
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/37979af2-e869-40a5-b738-d8d69cc771b7/lezioni+cm6.png",
+   "alt": "",
+   "y": 16147,
+   "x": 428,
+   "w": 583,
+   "h": 243
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e7772441-092d-47e6-9c2d-d296870abb3e/Add+a+heading.png",
+   "alt": "",
+   "y": 16828,
+   "x": 692,
+   "w": 361,
+   "h": 203
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8bb33c6e-e80b-4591-bbd6-43b23f7cde0f/NPC.gif",
+   "alt": "",
+   "y": 16828,
+   "x": 354,
+   "w": 327,
+   "h": 204
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16521,
+   "x": 0,
+   "w": 1440,
+   "h": 620
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16521,
+   "x": 0,
+   "w": 1440,
+   "h": 620
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b87e320f-3648-4804-9479-8969581691fd/Grainy+yellow%2Fblack+CM+texture.jpg",
+   "alt": "",
+   "y": 17113,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17113,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17113,
+   "x": 0,
+   "w": 1440,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 17159,
+   "x": 0,
+   "w": 1440,
+   "h": 570
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/9e2ffffa-412b-40c7-be9f-aa9e1301503b/CM5-telegram-group.png",
+   "alt": "",
+   "y": 17320,
+   "x": 557,
+   "w": 327,
+   "h": 409
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/25b2fb47-1b91-4557-99b6-991da91adfd9/call+andre.png",
+   "alt": "",
+   "y": 17880,
+   "x": 388,
+   "w": 327,
+   "h": 299
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 18697,
+   "x": 0,
+   "w": 1440,
+   "h": 1036
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d402cd48-d007-4946-9f7c-89678a258898/to+comp+8-min.png",
+   "alt": "",
+   "y": 18940,
+   "x": 421,
+   "w": 597,
+   "h": 53
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/930edbb7-c2c2-4480-b982-e5fa540ac9cc/Andrei+parla+al+telefono+-+SP+CMB-min.jpg",
+   "alt": "",
+   "y": 19395,
+   "x": 793,
+   "w": 259,
+   "h": 215
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18697,
+   "x": 0,
+   "w": 1440,
+   "h": 1036
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18697,
+   "x": 0,
+   "w": 1440,
+   "h": 1036
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 19705,
+   "x": 0,
+   "w": 1440,
+   "h": 716
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f88697b8-638b-429e-b109-46f8cad34338/Paper-Mockup2.png",
+   "alt": "",
+   "y": 19849,
+   "x": 523,
+   "w": 394,
+   "h": 478
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19774,
+   "x": 760,
+   "w": 105,
+   "h": 66
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/53d73191-0758-469f-8713-8f383cf49638/Compress+PNG+Image+%281%29.png",
+   "alt": "",
+   "y": 20749,
+   "x": 354,
+   "w": 394,
+   "h": 440
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f64badb4-e0ef-4f4f-88a0-97ec2192c5a9/Compress+PNG+Image+%282%29.png",
+   "alt": "",
+   "y": 20749,
+   "x": 658,
+   "w": 462,
+   "h": 440
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7b5597d9-dc7d-46e7-9675-d2b430c7d080/Glow+grainy+coal+background+SP.png",
+   "alt": "",
+   "y": 21265,
+   "x": 0,
+   "w": 1440,
+   "h": 828
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/47d4d2e5-9421-4143-af62-0fc593f71d5b/Copywriting+Mentorship+Yu-Gi-Oh.png",
+   "alt": "",
+   "y": 21586,
+   "x": 608,
+   "w": 224,
+   "h": 327
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21265,
+   "x": 0,
+   "w": 1440,
+   "h": 828
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21265,
+   "x": 0,
+   "w": 1440,
+   "h": 828
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 22064,
+   "x": 0,
+   "w": 1440,
+   "h": 969
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/87d27011-c542-4ce5-bf9a-e2a23b4510f0/22.png",
+   "alt": "22.png",
+   "y": 23330,
+   "x": 495,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/894d400c-3052-42e5-931c-81cb23fb66ae/24.png",
+   "alt": "24.png",
+   "y": 23330,
+   "x": 945,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6c99d227-3505-4f2c-9b4d-7772e7f04aa8/2.png",
+   "alt": "2.png",
+   "y": 23330,
+   "x": 1395,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7c90cfd7-1fc4-4972-a746-6ae3e1c9a415/9.png",
+   "alt": "9.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c43b7869-2c89-485e-9447-0cb2e5bbc6c8/3.png",
+   "alt": "3.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/da3b8d10-9672-4de6-9840-4c2c3b9ad16e/31.png",
+   "alt": "31.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a3215d04-9b67-4f8b-bbb3-6ffbe1770b35/1.png",
+   "alt": "1.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/27bd17d0-c041-4b10-913d-2a5ac2a128b9/4.png",
+   "alt": "4.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e9bcc822-c9d5-46df-ac2f-f90cdc14fd11/5.png",
+   "alt": "5.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/79bb67ea-48fc-4af4-a799-83d53279efad/6.png",
+   "alt": "6.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/bff4e548-f4ef-4b35-b327-932741cd728f/7.png",
+   "alt": "7.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d59cbd24-beaf-4aba-9a96-64971b4fb4f8/8.png",
+   "alt": "8.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2d0ad5e5-5562-414c-be3b-24c0b107474d/10.png",
+   "alt": "10.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c8381ee8-14ac-4226-b9d0-9a79c0f4146b/11.png",
+   "alt": "11.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/75f01946-83a2-4c88-84d6-df1dd7fee3a6/12.png",
+   "alt": "12.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b6ef701c-a536-4dec-942e-f80a82658c62/13.png",
+   "alt": "13.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/eb2e2a83-90fe-4a03-9b18-f74827b627b0/14.png",
+   "alt": "14.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/10ea4ad9-2c4f-4c78-861f-ca03f9539c67/15.png",
+   "alt": "15.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e850f925-8b4e-43c1-883a-a6d9b79c6259/16.png",
+   "alt": "16.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/31ec453e-f246-487b-8e2b-ea15089d8687/17.png",
+   "alt": "17.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1b0904c3-b45b-47b2-a296-3b38da082124/18.png",
+   "alt": "18.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e42f7d7-7649-43fe-acc7-5f045d4dfef2/19.png",
+   "alt": "19.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/dbffabbe-eca3-4a3f-b1eb-7a2ed87ffc12/20.png",
+   "alt": "20.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e4988af8-be8e-4633-a903-48ab10d21923/21.png",
+   "alt": "21.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0fd40419-04f1-406a-b4cc-6179b9f130a8/23.png",
+   "alt": "23.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/db6697eb-be72-46e1-9714-21eeecdcfba3/25.png",
+   "alt": "25.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/237dbcac-7857-4bef-8716-029252951f51/26.png",
+   "alt": "26.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1631bcde-89f7-4bdf-92ac-c579893b8a40/27.png",
+   "alt": "27.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/02f449ef-e211-4810-b755-8459d5fa72fc/28.png",
+   "alt": "28.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/912e343c-2422-4ff1-b0b1-63e096c2b7e0/29.png",
+   "alt": "29.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/95b74d17-364d-4a58-9b12-343fea729435/30.png",
+   "alt": "30.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3b82b3a6-efb8-43a3-adae-e1cc6257afbe/32.png",
+   "alt": "32.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d322e79c-6b46-4bac-bd20-b45693e0d01f/1.png",
+   "alt": "1.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0fe59014-1ca4-4ba8-b2e2-bc06be385ae0/2.png",
+   "alt": "2.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d877b8f4-c317-4a17-8123-eaa09d9aca3c/3.png",
+   "alt": "3.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e3953782-7e29-4fbd-8408-317e0caf0469/4.png",
+   "alt": "4.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/621675a4-2232-439e-baf4-63bbdcbe4b58/5.png",
+   "alt": "5.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/eaf80484-ac6f-455b-bdf8-d973ff35ca01/6.png",
+   "alt": "6.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/731a2a9c-eff6-4543-b688-1872ce040ec4/7.png",
+   "alt": "7.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/70dca6c4-25f7-44eb-bd80-f2adcf925a1e/8.png",
+   "alt": "8.png",
+   "y": 23330,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5245a0ad-5e58-4ff9-bd5b-9bd1b9eba8f7/9.png",
+   "alt": "9.png",
+   "y": 23330,
+   "x": -405,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8de66f53-15f4-460c-82f4-b43d7af1affe/10.png",
+   "alt": "10.png",
+   "y": 23330,
+   "x": 45,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23541,
+   "x": 23,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23541,
+   "x": 1389,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b87e320f-3648-4804-9479-8969581691fd/Grainy+yellow%2Fblack+CM+texture.jpg",
+   "alt": "",
+   "y": 23780,
+   "x": 0,
+   "w": 1440,
+   "h": 1302
+  },
+  {
+   "tag": "img",
+   "src": "https://i.imgur.com/so6S8dG.png",
+   "alt": "CM Base Logo",
+   "y": 24036,
+   "x": 454,
+   "w": 225,
+   "h": 50
+  },
+  {
+   "tag": "img",
+   "src": "https://i.imgur.com/flMdhZW.png",
+   "alt": "CM Logo",
+   "y": 24037,
+   "x": 762,
+   "w": 223,
+   "h": 50
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
+   "alt": "",
+   "y": 25082,
+   "x": 0,
+   "w": 1440,
+   "h": 1165
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 26265,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 26323,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 26375,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 26375,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 26375,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 26375,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 470,
+ "meta": {
+  "description": "Copywriting Mentorship Base in promozione: corso completo per diventare copywriter freelance. Include 1 consulenza gratuita di 60 min con Andrei, 4 metodi provati per trovare clienti, aggiornamenti gratuiti a vita. Pagamento unico, nessun abbonamento. 60+ videolezioni, community Telegram privata, AI training. Promozione limitata fino al 30 giugno. Inizia subito la tua carriera da copywriter con il mentore che ha aiutato 2000+ studenti.",
+  "og_title": "Corso Copywriting Online - Con Consulenza Gratuita + Metodi Clienti + Aggiornamenti Gratis a Vita — AP Formazione",
+  "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/t/683ed014cc6de75b44d6d8fa/1748946964591/andrei-social-image.jpg?format=1500w",
+  "canonical": "https://www.andrei-copy.com/copy",
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 875,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Raggiungi la libertà finanziaria avviando una carriera da copywriter autonomo.",
+   "headings": [
+    "Raggiungi la libertà finanziaria avviando una carriera da copywriter autonomo.",
+    "Da anni, questa è l’unica Mentorship in Italia che offre:"
+   ],
+   "blocchi_testo": 3,
+   "parole": 20,
+   "densita": 2,
+   "media": 6,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|4",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-raggiungi-la-libert-finanziaria-av.png"
+  },
+  {
+   "i": 2,
+   "y": 875,
+   "h": 776,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 1,
+   "parole": 29,
+   "densita": 4,
+   "media": 6,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|4",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-section.png"
+  },
+  {
+   "i": 3,
+   "y": 1651,
+   "h": 567,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Scopri di cosa si tratta ⬇️",
+   "headings": [
+    "Scopri di cosa si tratta ⬇️"
+   ],
+   "blocchi_testo": 2,
+   "parole": 6,
+   "densita": 1,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|3",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-scopri-di-cosa-si-tratta.png"
+  },
+  {
+   "i": 4,
+   "y": 2236,
+   "h": 1624,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|8",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-div.png"
+  },
+  {
+   "i": 5,
+   "y": 3860,
+   "h": 900,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Ho scelto il copywriting dato che funziona anche durante i periodi di peggiore crisi:",
+   "headings": [
+    "Ho scelto il copywriting dato che funziona anche durante i periodi di peggiore crisi:"
+   ],
+   "blocchi_testo": 1,
+   "parole": 14,
+   "densita": 2,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|5",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-ho-scelto-il-copywriting-dato-che.png"
+  },
+  {
+   "i": 6,
+   "y": 4760,
+   "h": 600,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Per chi ho creato Copywriting Mentorship:",
+   "headings": [
+    "Per chi ho creato Copywriting Mentorship:"
+   ],
+   "blocchi_testo": 13,
+   "parole": 62,
+   "densita": 10,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|3",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-per-chi-ho-creato-copywriting-ment.png"
+  },
+  {
+   "i": 7,
+   "y": 5360,
+   "h": 1771,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Gli altri ti mettono 30 video-recensioni (sicuramente tutte realissime e non pagate 💀💀). Io ti mostro i dati.",
+   "headings": [
+    "Gli altri ti mettono 30 video-recensioni (sicuramente tutte realissime e non pagate 💀💀). Io ti mostro i dati.",
+    "Ecco perché, a mio avviso, dovresti scegliere il copywriting.",
+    "Il mercato globale dei servizi di copywriting ha un valore di $25.29 miliardi nel 2023. Secondo le analisi, arriverà a $42.22 miliardi entro il 2030. (fonte)",
+    "Il mercato globale dei servizi di copywriting ha un valore di $25.29 miliardi nel 2023. Secondo le analisi, arriverà a $42.22 miliardi entro il 2030. (fonte)",
+    "Non ti sto promettendo di fare i milioni e di girare in lambo. Ti sto offrendo l’opportunità di fare i primi passi online con uno dei business più sicuri, sobri ed efficaci. Niente balletti. Niente eventi con la musica per fare hype. Niente promozioni scam. Solo una skill valorosa per il mercato, un corso dannatamente serio e una community di più di 2000 persone.",
+    "Dopo il nord America, l’Europa è il mercato di copywriting più grande al mondo. La crescita proviene dalla richiesta di contenuti di qualità da aziende in settori come IT e salute. (fonte)"
+   ],
+   "blocchi_testo": 28,
+   "parole": 252,
+   "densita": 14,
+   "media": 5,
+   "cta": 4,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|9",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-gli-altri-ti-mettono-30-video-rece.png"
+  },
+  {
+   "i": 8,
+   "y": 7131,
+   "h": 1814,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Cosa troverai in Copywriting Mentorship?",
+   "headings": [
+    "Cosa troverai in Copywriting Mentorship?",
+    "30+ video-lezioni su come scrivere copy",
+    "20+ video-lezioni su come trovare clienti",
+    "Riassunti e appunti",
+    "Quiz",
+    "Gruppo telegram privato"
+   ],
+   "blocchi_testo": 22,
+   "parole": 161,
+   "densita": 9,
+   "media": 8,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|9",
+   "gruppo": 7,
+   "rappresentante": false,
+   "screenshot": "sezioni/08-cosa-troverai-in-copywriting-mento.png"
+  },
+  {
+   "i": 9,
+   "y": 8945,
+   "h": 874,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Copywriting Mentorship 6: ti insegno cosa funziona… Sulla base dei dati, in lezioni deep.",
+   "headings": [
+    "Copywriting Mentorship 6: ti insegno cosa funziona… Sulla base dei dati, in lezioni deep."
+   ],
+   "blocchi_testo": 17,
+   "parole": 125,
+   "densita": 14,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-copywriting-mentorship-6-ti-insegn.png"
+  },
+  {
+   "i": 10,
+   "y": 9819,
+   "h": 1420,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Sono il mentore che cercavi.",
+   "headings": [
+    "Sono il mentore che cercavi.",
+    "Dalla scrivania nella casa di un paesino ad un ufficio e azienda in centro a Bologna",
+    "Anche se a dire il vero…"
+   ],
+   "blocchi_testo": 43,
+   "parole": 195,
+   "densita": 14,
+   "media": 18,
+   "cta": 1,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|C|7",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-sono-il-mentore-che-cercavi.png"
+  },
+  {
+   "i": 11,
+   "y": 11239,
+   "h": 891,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Video testimonianze degli studenti",
+   "headings": [
+    "Video testimonianze degli studenti",
+    "di Copywriting Mentorship.",
+    "Ascolta le recensioni lasciate dai nostri studenti"
+   ],
+   "blocchi_testo": 193,
+   "parole": 79,
+   "densita": 9,
+   "media": 67,
+   "cta": 1,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|M|C|4",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-video-testimonianze-degli-studenti.png"
+  },
+  {
+   "i": 12,
+   "y": 12130,
+   "h": 1159,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Impara a usare l’AI prima che sia lui a usare te",
+   "headings": [
+    "Impara a usare l’AI prima che sia lui a usare te",
+    "Una domanda che molte persone mi fanno è:",
+    "E la risposta da parte mia è sempre la stessa:",
+    "Come sfruttare l’AI per scrivere copy?",
+    "Io ti insegno come rientrare nella seconda categoria"
+   ],
+   "blocchi_testo": 16,
+   "parole": 165,
+   "densita": 14,
+   "media": 2,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|6",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-impara-a-usare-l-ai-prima-che-sia.png"
+  },
+  {
+   "i": 13,
+   "y": 13289,
+   "h": 338,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Un corso non è mai stato così completo…",
+   "headings": [
+    "Un corso non è mai stato così completo…",
+    "Abbiamo davvero pensato a tutto, scopri il nostro ecosistema:"
+   ],
+   "blocchi_testo": 3,
+   "parole": 17,
+   "densita": 5,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|2",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-un-corso-non-mai-stato-cos-complet.png"
+  },
+  {
+   "i": 14,
+   "y": 13626,
+   "h": 683,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Io ti do le informazioni, tu le sfrutti:",
+   "headings": [
+    "Io ti do le informazioni, tu le sfrutti:",
+    "1. Impara da dove imparano i copywriter che fanno +€10K/mese:",
+    "2. Non resterai a secco di clienti…"
+   ],
+   "blocchi_testo": 6,
+   "parole": 95,
+   "densita": 14,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|3",
+   "gruppo": 6,
+   "rappresentante": false,
+   "screenshot": "sezioni/14-io-ti-do-le-informazioni-tu-le-sfr.png"
+  },
+  {
+   "i": 15,
+   "y": 14309,
+   "h": 2212,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Le video-lezioni",
+   "headings": [
+    "Le video-lezioni",
+    "60+ lezioni totali.",
+    "Clicca su una sezione per vedere dettagli.",
+    "Parte 1: come scrivere copy",
+    "Sezione 0: Introduzione",
+    "Sezione 1: Fondamenta del copywriting"
+   ],
+   "blocchi_testo": 60,
+   "parole": 134,
+   "densita": 6,
+   "media": 3,
+   "cta": 7,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|11",
+   "gruppo": 15,
+   "rappresentante": true,
+   "screenshot": "sezioni/15-le-video-lezioni.png"
+  },
+  {
+   "i": 16,
+   "y": 16521,
+   "h": 620,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Contenuti per massimizzare il successo",
+   "headings": [
+    "Contenuti per massimizzare il successo"
+   ],
+   "blocchi_testo": 4,
+   "parole": 27,
+   "densita": 4,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|3",
+   "gruppo": 3,
+   "rappresentante": false,
+   "screenshot": "sezioni/16-contenuti-per-massimizzare-il-succ.png"
+  },
+  {
+   "i": 17,
+   "y": 17159,
+   "h": 570,
+   "prof": 6,
+   "tag": "div",
+   "id": null,
+   "classi": "section-border",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 0,
+   "densita": 0,
+   "media": 1,
+   "cta": 0,
+   "firma": "div|section-border|1|M|-|3",
+   "gruppo": 17,
+   "rappresentante": true,
+   "screenshot": "sezioni/17-div.png"
+  },
+  {
+   "i": 18,
+   "y": 17729,
+   "h": 968,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Consulenze direttamente con me",
+   "headings": [
+    "Consulenze direttamente con me",
+    "Non sei più solo.",
+    "💬 Quante consulenze ci sono?",
+    "💬 Dove si fanno le consulenze?",
+    "💬 Come fissare una consulenza?",
+    "💬 A cosa servono?"
+   ],
+   "blocchi_testo": 31,
+   "parole": 66,
+   "densita": 7,
+   "media": 1,
+   "cta": 5,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|5",
+   "gruppo": 18,
+   "rappresentante": true,
+   "screenshot": "sezioni/18-consulenze-direttamente-con-me.png"
+  },
+  {
+   "i": 19,
+   "y": 18697,
+   "h": 1036,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Diamo peso agli aggiornamenti di mercato:",
+   "headings": [
+    "Diamo peso agli aggiornamenti di mercato:",
+    "Questa frase l’avevo trovata sul sito di un famoso corso di Copywriting",
+    "Abbiamo posto dei questionari ai nostri studenti e abbiamo scoperto che 1/3 di loro ha già trovato dei clienti (E non tutti gli intervistati hanno ancora concluso il corso…)"
+   ],
+   "blocchi_testo": 10,
+   "parole": 136,
+   "densita": 13,
+   "media": 5,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|5",
+   "gruppo": 19,
+   "rappresentante": true,
+   "screenshot": "sezioni/19-diamo-peso-agli-aggiornamenti-di-m.png"
+  },
+  {
+   "i": 20,
+   "y": 19733,
+   "h": 687,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Ecco il piano",
+   "headings": [
+    "Ecco il piano",
+    "Devi leggere per capire come funziona ⬇️"
+   ],
+   "blocchi_testo": 4,
+   "parole": 10,
+   "densita": 1,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|3",
+   "gruppo": 6,
+   "rappresentante": false,
+   "screenshot": "sezioni/20-ecco-il-piano.png"
+  },
+  {
+   "i": 21,
+   "y": 20420,
+   "h": 845,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "“Non è un business sexy… Ma funziona”",
+   "headings": [
+    "“Non è un business sexy… Ma funziona”",
+    "La tua mano."
+   ],
+   "blocchi_testo": 3,
+   "parole": 37,
+   "densita": 4,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 9,
+   "rappresentante": false,
+   "screenshot": "sezioni/21-non-un-business-sexy-ma-funziona.png"
+  },
+  {
+   "i": 22,
+   "y": 21265,
+   "h": 828,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "A differenza di tutte le milioni di persone che stanno provando a fare copy…",
+   "headings": [
+    "A differenza di tutte le milioni di persone che stanno provando a fare copy…",
+    "Tu adesso puoi accedere a una carta leggendaria."
+   ],
+   "blocchi_testo": 2,
+   "parole": 22,
+   "densita": 3,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|4",
+   "gruppo": 1,
+   "rappresentante": false,
+   "screenshot": "sezioni/22-a-differenza-di-tutte-le-milioni-d.png"
+  },
+  {
+   "i": 23,
+   "y": 22093,
+   "h": 940,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Questo percorso lo descrivo con una sola frase: cambiare vita.",
+   "headings": [
+    "Questo percorso lo descrivo con una sola frase: cambiare vita."
+   ],
+   "blocchi_testo": 8,
+   "parole": 130,
+   "densita": 14,
+   "media": 1,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|5",
+   "gruppo": 18,
+   "rappresentante": false,
+   "screenshot": "sezioni/23-questo-percorso-lo-descrivo-con-un.png"
+  },
+  {
+   "i": 24,
+   "y": 23033,
+   "h": 297,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Opinioni e risultati degli studenti di Copywriting Mentorship",
+   "headings": [
+    "Opinioni e risultati degli studenti di Copywriting Mentorship"
+   ],
+   "blocchi_testo": 2,
+   "parole": 8,
+   "densita": 3,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|-|-|1",
+   "gruppo": 24,
+   "rappresentante": true,
+   "screenshot": "sezioni/24-opinioni-e-risultati-degli-student.png"
+  },
+  {
+   "i": 25,
+   "y": 23330,
+   "h": 450,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.gallery-section.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 2,
+   "parole": 0,
+   "densita": 0,
+   "media": 44,
+   "cta": 0,
+   "firma": "section|page-section.gallery-section.full-bleed-section|2|M|-|2",
+   "gruppo": 25,
+   "rappresentante": true,
+   "screenshot": "sezioni/25-section.png"
+  },
+  {
+   "i": 26,
+   "y": 23780,
+   "h": 1302,
+   "prof": 5,
+   "tag": "section",
+   "id": "pricing",
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Upgrade disponibile",
+   "headings": [
+    "Upgrade disponibile",
+    "Pricing"
+   ],
+   "blocchi_testo": 36,
+   "parole": 109,
+   "densita": 8,
+   "media": 3,
+   "cta": 2,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|7",
+   "gruppo": 26,
+   "rappresentante": true,
+   "screenshot": "sezioni/26-upgrade-disponibile.png"
+  },
+  {
+   "i": 27,
+   "y": 25082,
+   "h": 1165,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Domande comuni",
+   "headings": [
+    "Domande comuni",
+    "Ho sentito che il corso è stato aggiornato, cosa significa?",
+    "Se hai scoperto questo metodo di business perché non te lo tieni per te?",
+    "Posso iniziare il corso se sono principiante assoluto?",
+    "Posso iniziare il corso se sono già esperto in copywriting?",
+    "Nel corso insegni anche come vendere?"
+   ],
+   "blocchi_testo": 70,
+   "parole": 81,
+   "densita": 7,
+   "media": 1,
+   "cta": 9,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|6",
+   "gruppo": 12,
+   "rappresentante": false,
+   "screenshot": "sezioni/27-domande-comuni.png"
+  },
+  {
+   "i": 28,
+   "y": 26248,
+   "h": 705,
+   "prof": 2,
+   "tag": "footer",
+   "id": "footer-sections",
+   "classi": "sections",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 24,
+   "parole": 99,
+   "densita": 14,
+   "media": 7,
+   "cta": 2,
+   "firma": "footer|sections|1|M|C|4",
+   "gruppo": 28,
+   "rappresentante": true,
+   "screenshot": "sezioni/28-footer.png"
+  }
+ ],
+ "sezioni_totali": 28,
+ "sezioni_distinte": 20,
+ "src": [
+  {
+   "file": "src/01-modern.js",
+   "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+   "bytes": 117559
+  },
+  {
+   "file": "src/02-cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "bytes": 153101
+  },
+  {
+   "file": "src/03-common-vendors-3db7fa7f48056cab-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3db7fa7f48056cab-min.it-IT.js",
+   "bytes": 807017
+  },
+  {
+   "file": "src/04-common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "bytes": 246523
+  },
+  {
+   "file": "src/05-extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+   "bytes": 850352
+  },
+  {
+   "file": "src/06-extract-css-runtime-3de857b31765d8a6-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-3de857b31765d8a6-min.it-IT.js",
+   "bytes": 50537
+  },
+  {
+   "file": "src/07-performance-eeb29dcf050d4f74-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/performance-eeb29dcf050d4f74-min.it-IT.js",
+   "bytes": 120266
+  },
+  {
+   "file": "src/08-visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "bytes": 3680
+  },
+  {
+   "file": "src/09-commerce-d50e5960dc9fd059-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/commerce-d50e5960dc9fd059-min.it-IT.css",
+   "bytes": 9897
+  },
+  {
+   "file": "src/10-user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "bytes": 2301
+  },
+  {
+   "file": "src/11-website.components.accordion.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.accordion/c8672bbc-bbab-4a93-aa26-dd555a156fd9_277/website.components.accordion.styles.css",
+   "bytes": 8079
+  },
+  {
+   "file": "src/12-website.components.accordion.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.accordion/c8672bbc-bbab-4a93-aa26-dd555a156fd9_277/website.components.accordion.visitor.js",
+   "bytes": 20725
+  },
+  {
+   "file": "src/13-website.components.button.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/60b151e3-e0f4-4e51-958b-ecc7b1969cf2_1054/website.components.button.styles.css",
+   "bytes": 1087
+  },
+  {
+   "file": "src/14-website.components.button.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/60b151e3-e0f4-4e51-958b-ecc7b1969cf2_1054/website.components.button.visitor.js",
+   "bytes": 12176
+  },
+  {
+   "file": "src/15-website.components.code.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/49d1a590-36bc-4051-9d88-c5c6d8514778_929/website.components.code.styles.css",
+   "bytes": 102
+  },
+  {
+   "file": "src/16-website.components.code.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/49d1a590-36bc-4051-9d88-c5c6d8514778_929/website.components.code.visitor.js",
+   "bytes": 15193
+  },
+  {
+   "file": "src/17-website.components.horizontalrule.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/3d674bef-1299-443b-b7b2-928b9c2e6f7c_251/website.components.horizontalrule.styles.css",
+   "bytes": 95
+  },
+  {
+   "file": "src/18-website.components.horizontalrule.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/3d674bef-1299-443b-b7b2-928b9c2e6f7c_251/website.components.horizontalrule.visitor.js",
+   "bytes": 12172
+  },
+  {
+   "file": "src/19-website.components.html.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/1c3e7022-3272-4cc4-b12e-320d47cfc059_884/website.components.html.styles.css",
+   "bytes": 105
+  },
+  {
+   "file": "src/20-website.components.html.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/1c3e7022-3272-4cc4-b12e-320d47cfc059_884/website.components.html.visitor.js",
+   "bytes": 12095
+  },
+  {
+   "file": "src/21-18018.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/18018.js",
+   "bytes": 12970
+  },
+  {
+   "file": "src/22-39188.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/39188.js",
+   "bytes": 20695
+  },
+  {
+   "file": "src/23-39882.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/39882.js",
+   "bytes": 10236
+  },
+  {
+   "file": "src/24-64023.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/64023.js",
+   "bytes": 33127
+  },
+  {
+   "file": "src/25-92452.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/92452.js",
+   "bytes": 38848
+  },
+  {
+   "file": "src/26-image-effect-film-grain.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/image-effect-film-grain.js",
+   "bytes": 8476
+  },
+  {
+   "file": "src/27-image-effect-liquid.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/image-effect-liquid.js",
+   "bytes": 8950
+  },
+  {
+   "file": "src/28-image-effect-parallax.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/image-effect-parallax.js",
+   "bytes": 6211
+  },
+  {
+   "file": "src/29-image-effect-refracted-circles.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/image-effect-refracted-circles.js",
+   "bytes": 3053
+  },
+  {
+   "file": "src/30-image-effect-refracted-lines.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/image-effect-refracted-lines.js",
+   "bytes": 12159
+  },
+  {
+   "file": "src/31-website.components.imageFluid.shared.constants.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/website.components.imageFluid.shared.constants.js",
+   "bytes": 945
+  },
+  {
+   "file": "src/32-website.components.imageFluid.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/website.components.imageFluid.styles.css",
+   "bytes": 2671
+  },
+  {
+   "file": "src/33-website.components.imageFluid.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/d7715b12-6725-4281-bcde-5d14520b85dd_871/website.components.imageFluid.visitor.js",
+   "bytes": 29543
+  },
+  {
+   "file": "src/34-website.components.socialLinks.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/47310e1f-923c-4bbb-9a55-a3997e8eee61_662/website.components.socialLinks.styles.css",
+   "bytes": 12212
+  },
+  {
+   "file": "src/35-website.components.socialLinks.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/47310e1f-923c-4bbb-9a55-a3997e8eee61_662/website.components.socialLinks.visitor.js",
+   "bytes": 13307
+  },
+  {
+   "file": "src/36-website.components.spacer.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/d354e541-3cd3-403f-8885-333aa84f3bcc_1207/website.components.spacer.styles.css",
+   "bytes": 98
+  },
+  {
+   "file": "src/37-website.components.spacer.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/d354e541-3cd3-403f-8885-333aa84f3bcc_1207/website.components.spacer.visitor.js",
+   "bytes": 536
+  },
+  {
+   "file": "src/38-20293.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/450dd0b9-db9b-422a-8a3a-ac6d6084aedc_629/20293.js",
+   "bytes": 9102
+  },
+  {
+   "file": "src/39-website.components.video.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/450dd0b9-db9b-422a-8a3a-ac6d6084aedc_629/website.components.video.styles.css",
+   "bytes": 4148
+  },
+  {
+   "file": "src/40-website.components.video.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/450dd0b9-db9b-422a-8a3a-ac6d6084aedc_629/website.components.video.visitor.js",
+   "bytes": 898862
+  },
+  {
+   "file": "src/41-css2.css",
+   "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
+   "bytes": 12355
+  },
+  {
+   "file": "src/42-custom.css",
+   "url": "https://static1.squarespace.com/static/custom-css/602126db7a4e4c01fd9babb6/602126db7a4e4c01fd9babd0/0/custom.css",
+   "bytes": 1183
+  },
+  {
+   "file": "src/43-site.css",
+   "url": "https://static1.squarespace.com/static/versioned-site-css/602126db7a4e4c01fd9babb6/177/5c5a519771c10ba3470d8101/602126db7a4e4c01fd9babd0/1822/site.css?nocustom=true",
+   "bytes": 1274296
+  },
+  {
+   "file": "src/44-site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+   "bytes": 128081
+  },
+  {
+   "file": "src/45-static.css",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1787156543145-0MJJPDTBNWE734EUOY27/static.css",
+   "bytes": 481489
+  },
+  {
+   "file": "src/46-rdd73ozkqt.js",
+   "url": "https://www.clarity.ms/tag/rdd73ozkqt",
+   "bytes": 919
+  }
+ ],
+ "segmentazione": "ok"
+}

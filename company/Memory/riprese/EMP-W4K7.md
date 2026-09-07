@@ -232,6 +232,12 @@ v05 72 atomi/151 archi/1 componente, zero archi rotti/orfani/ancore inventate su
 completo e aggiornato sta in [CP-20260907-63YC](../checkpoints/CP-20260907-63YC.md) — leggilo
 per intero prima di ripartire, e' piu' fresco di questo file per lo stato numerico esatto.
 
+### CHECKPOINT 2026-09-07 — CP-20260907-96DY
+
+**9 fonti su 10 chiuse come visione: v01,v02,v03,v07,doc Justin Sung,v06,v05,v08,v04.**
+Solo `v09` resta aperto (189/494). Atomi fatti solo su v06 (228) e v05 (72). Wiki/archivio:
+zero, e' il prossimo collo di bottiglia. Dettagli: [CP-20260907-96DY](../checkpoints/CP-20260907-96DY.md).
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte

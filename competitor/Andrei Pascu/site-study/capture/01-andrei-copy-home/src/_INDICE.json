@@ -1,0 +1,227 @@
+[
+ {
+  "file": "src/01-modern.js",
+  "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+  "bytes": 117559
+ },
+ {
+  "file": "src/02-cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+  "bytes": 153101
+ },
+ {
+  "file": "src/03-commerce-1cab9b33cfa5bb57-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/commerce-1cab9b33cfa5bb57-min.it-IT.js",
+  "bytes": 855867
+ },
+ {
+  "file": "src/04-common-9296e3d01c775d66-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/common-9296e3d01c775d66-min.it-IT.js",
+  "bytes": 990927
+ },
+ {
+  "file": "src/05-common-vendors-3db7fa7f48056cab-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3db7fa7f48056cab-min.it-IT.js",
+  "bytes": 807017
+ },
+ {
+  "file": "src/06-common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+  "bytes": 246523
+ },
+ {
+  "file": "src/07-extension-scripts-1f1612d7d747f110-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/extension-scripts-1f1612d7d747f110-min.it-IT.js",
+  "bytes": 114435
+ },
+ {
+  "file": "src/08-extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+  "bytes": 850352
+ },
+ {
+  "file": "src/09-extract-css-runtime-b30a8b08d8a416f9-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-b30a8b08d8a416f9-min.it-IT.js",
+  "bytes": 50534
+ },
+ {
+  "file": "src/10-performance-a102023eb3ecba17-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/performance-a102023eb3ecba17-min.it-IT.js",
+  "bytes": 120266
+ },
+ {
+  "file": "src/11-user-account-core-a7a589e8ab6c1ba7-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/user-account-core-a7a589e8ab6c1ba7-min.it-IT.js",
+  "bytes": 65950
+ },
+ {
+  "file": "src/12-visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+  "url": "https://assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+  "bytes": 3680
+ },
+ {
+  "file": "src/13-commerce-d50e5960dc9fd059-min.it-IT.css",
+  "url": "https://assets.squarespace.com/universal/styles-compressed/commerce-d50e5960dc9fd059-min.it-IT.css",
+  "bytes": 9897
+ },
+ {
+  "file": "src/14-user-account-core-28c1a7b2b603f534-min.it-IT.css",
+  "url": "https://assets.squarespace.com/universal/styles-compressed/user-account-core-28c1a7b2b603f534-min.it-IT.css",
+  "bytes": 2301
+ },
+ {
+  "file": "src/15-fbevents.js",
+  "url": "https://connect.facebook.net/en_US/fbevents.js",
+  "bytes": 415673
+ },
+ {
+  "file": "src/16-website.components.button.styles.css",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/01fe28b5-bfef-44c0-b21c-10622617f6e3_1050/website.components.button.styles.css",
+  "bytes": 1341
+ },
+ {
+  "file": "src/17-website.components.button.visitor.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/01fe28b5-bfef-44c0-b21c-10622617f6e3_1050/website.components.button.visitor.js",
+  "bytes": 12176
+ },
+ {
+  "file": "src/18-website.components.code.styles.css",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/b686ea08-b5c4-42e1-ad6c-dcd1da14d3f2_925/website.components.code.styles.css",
+  "bytes": 115
+ },
+ {
+  "file": "src/19-website.components.code.visitor.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/b686ea08-b5c4-42e1-ad6c-dcd1da14d3f2_925/website.components.code.visitor.js",
+  "bytes": 15193
+ },
+ {
+  "file": "src/20-website.components.horizontalrule.styles.css",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/05591c2d-484e-410b-86b4-0e96d1e81269_247/website.components.horizontalrule.styles.css",
+  "bytes": 108
+ },
+ {
+  "file": "src/21-website.components.horizontalrule.visitor.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/05591c2d-484e-410b-86b4-0e96d1e81269_247/website.components.horizontalrule.visitor.js",
+  "bytes": 12172
+ },
+ {
+  "file": "src/22-website.components.html.styles.css",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/63081d1f-624e-4596-bd66-cbf7d8332a8d_880/website.components.html.styles.css",
+  "bytes": 118
+ },
+ {
+  "file": "src/23-website.components.html.visitor.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/63081d1f-624e-4596-bd66-cbf7d8332a8d_880/website.components.html.visitor.js",
+  "bytes": 12095
+ },
+ {
+  "file": "src/24-18018.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/18018.js",
+  "bytes": 12970
+ },
+ {
+  "file": "src/25-39188.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/39188.js",
+  "bytes": 20695
+ },
+ {
+  "file": "src/26-39882.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/39882.js",
+  "bytes": 10236
+ },
+ {
+  "file": "src/27-64023.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/64023.js",
+  "bytes": 33127
+ },
+ {
+  "file": "src/28-92452.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/92452.js",
+  "bytes": 38848
+ },
+ {
+  "file": "src/29-image-effect-film-grain.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/image-effect-film-grain.js",
+  "bytes": 8476
+ },
+ {
+  "file": "src/30-image-effect-liquid.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/image-effect-liquid.js",
+  "bytes": 8950
+ },
+ {
+  "file": "src/31-image-effect-parallax.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/image-effect-parallax.js",
+  "bytes": 6211
+ },
+ {
+  "file": "src/32-image-effect-refracted-circles.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/image-effect-refracted-circles.js",
+  "bytes": 3053
+ },
+ {
+  "file": "src/33-image-effect-refracted-lines.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/image-effect-refracted-lines.js",
+  "bytes": 12159
+ },
+ {
+  "file": "src/34-website.components.imageFluid.shared.constants.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/website.components.imageFluid.shared.constants.js",
+  "bytes": 945
+ },
+ {
+  "file": "src/35-website.components.imageFluid.styles.css",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/website.components.imageFluid.styles.css",
+  "bytes": 3034
+ },
+ {
+  "file": "src/36-website.components.imageFluid.visitor.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/2a7bd661-c313-4be9-a9f2-14480dabfe97_867/website.components.imageFluid.visitor.js",
+  "bytes": 29543
+ },
+ {
+  "file": "src/37-website.components.socialLinks.styles.css",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/408db6d6-d1b5-4871-9427-63818b0d2f37_658/website.components.socialLinks.styles.css",
+  "bytes": 15249
+ },
+ {
+  "file": "src/38-website.components.socialLinks.visitor.js",
+  "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/408db6d6-d1b5-4871-9427-63818b0d2f37_658/website.components.socialLinks.visitor.js",
+  "bytes": 13307
+ },
+ {
+  "file": "src/39-css2.css",
+  "url": "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap",
+  "bytes": 15321
+ },
+ {
+  "file": "src/40-css2.css",
+  "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Azeret+Mono:wght@400;500&display=swap",
+  "bytes": 6742
+ },
+ {
+  "file": "src/41-custom.css",
+  "url": "https://static1.squarespace.com/static/custom-css/602126db7a4e4c01fd9babb6/602126db7a4e4c01fd9babd0/0/custom.css",
+  "bytes": 1183
+ },
+ {
+  "file": "src/42-site.css",
+  "url": "https://static1.squarespace.com/static/versioned-site-css/602126db7a4e4c01fd9babb6/177/5c5a519771c10ba3470d8101/602126db7a4e4c01fd9babd0/1822/site.css?nocustom=true",
+  "bytes": 1274296
+ },
+ {
+  "file": "src/43-site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+  "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+  "bytes": 128081
+ },
+ {
+  "file": "src/44-static.css",
+  "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1787156543145-0MJJPDTBNWE734EUOY27/static.css",
+  "bytes": 481489
+ },
+ {
+  "file": "src/45-rdd73ozkqt.js",
+  "url": "https://www.clarity.ms/tag/rdd73ozkqt",
+  "bytes": 878
+ }
+]

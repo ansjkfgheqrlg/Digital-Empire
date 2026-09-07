@@ -57,7 +57,7 @@ COSA INCLUDE?
 
 **[y=3099] `div`** — #ffffff / 16px / w400
 
-03 GIORNI 15 ORE 54 MINUTI 36 SECONDI
+03 GIORNI 09 ORE 25 MINUTI 10 SECONDI
 
 **[y=3099] `span`** — #ffffff / 16px / w400
 
@@ -73,11 +73,11 @@ GIORNI
 
 **[y=3099] `span`** — #ffffff / 16px / w400
 
-15 ORE
+09 ORE
 
 **[y=3099] `span`** — #ffffff / 28.3203px / w800
 
-15
+09
 
 **[y=3198] `span`** — #ffffff @0.5 / 12px / w700 / uppercase
 
@@ -85,11 +85,11 @@ ORE
 
 **[y=3099] `span`** — #ffffff / 16px / w400
 
-54 MINUTI
+25 MINUTI
 
 **[y=3099] `span`** — #ffffff / 28.3203px / w800
 
-54
+25
 
 **[y=3198] `span`** — #ffffff @0.5 / 12px / w700 / uppercase
 
@@ -97,11 +97,11 @@ MINUTI
 
 **[y=3099] `span`** — #ffffff / 16px / w400
 
-36 SECONDI
+10 SECONDI
 
 **[y=3099] `span`** — #ffffff / 28.3203px / w800
 
-36
+10
 
 **[y=3198] `span`** — #ffffff @0.5 / 12px / w700 / uppercase
 

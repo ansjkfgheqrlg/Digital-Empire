@@ -1,8 +1,12 @@
 {
- "url": "https://www.andrei-copy.com/manuale-del-copywriter",
  "title": "Libro di Copywriting - Manuale del copywriter di Andrei Pascu - Soldi online — AP Formazione",
  "meta_description": "Si tratta di un libro avanzato che permette a tutti (principianti e non) di sviluppare una delle skill più importanti nel 2022: la vendita scritta.",
  "og_title": "Libro di Copywriting - Manuale del copywriter di Andrei Pascu - Soldi online — AP Formazione",
+ "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/t/636621ab772d857127b0e51f/1741956447668/Manuale+del+copywriter+dell%27autore+Andrei+Pascu.jpg?format=1500w",
+ "canonical": "https://www.andrei-copy.com/manuale-del-copywriter",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
  "lang": "it-IT",
  "page_height": 11067,
  "page_width": 1440,
@@ -232,93 +236,289 @@
    1
   ]
  ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    989
+   ],
+   [
+    "transform 0.25s",
+    52
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "opacity 0.1s linear",
+    6
+   ],
+   [
+    "opacity 0.3s",
+    5
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "0.3s",
+    3
+   ],
+   [
+    "box-shadow 0.3s",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.2s",
+    1
+   ],
+   [
+    "opacity 0.2s ease-out",
+    1
+   ],
+   [
+    "background 0.3s ease-out, border 0.3s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [
+   [
+    "backdrop: blur(15px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    26
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    24
+   ],
+   [
+    "matrix(1, 0, 0, 1, -9999, 0)",
+    4
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1, 0, 0, 1, -22, -22)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -45)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 273, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 546, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 819, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 1092, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 1365, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -546, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -273, 0)",
+    1
+   ]
+  ]
+ },
  "headings": [
   {
    "tag": "h2",
+   "y": 176,
    "text": "Impara la skill più importante: la vendita scritta"
   },
   {
    "tag": "h2",
+   "y": 703,
    "text": "Guarda sto video 👇🏻"
   },
   {
    "tag": "h1",
+   "y": 1242,
    "text": "✨ Libri di business ✨"
   },
   {
    "tag": "h3",
+   "y": 1760,
    "text": "Perché la maggior parte dei libri dicono tanto e nulla?"
   },
   {
    "tag": "h2",
+   "y": 2163,
    "text": "Il copywriting è un business, non un romanzo"
   },
   {
    "tag": "h3",
+   "y": 2587,
    "text": "Pratico"
   },
   {
    "tag": "h3",
+   "y": 2543,
    "text": "Facile da utilizzare"
   },
   {
    "tag": "h3",
+   "y": 2822,
    "text": "Aggiornato al 2025"
   },
   {
    "tag": "h3",
+   "y": 2822,
    "text": "Con strategie innovative"
   },
   {
    "tag": "h2",
+   "y": 3041,
    "text": "Ed è ciò che il Manuale del copywriter offre."
   },
   {
    "tag": "h3",
+   "y": 3690,
    "text": "- Anteprima gratuita -"
   },
   {
    "tag": "h1",
+   "y": 3770,
    "text": "Il manuale ti dice esattamente come/cosa scrivere per vendere…"
   },
   {
    "tag": "h1",
+   "y": 4061,
    "text": "…E se non ci credi, ho le prove."
   },
   {
    "tag": "h3",
+   "y": 4315,
    "text": "La mia promessa per te"
   },
   {
    "tag": "h3",
+   "y": 4554,
    "text": "Per mostrarti che io mantengo le promesse…"
   },
   {
    "tag": "h2",
+   "y": 4864,
    "text": "Ricevi un’anteprima gratuita del manuale"
   },
   {
    "tag": "h3",
+   "y": 5761,
    "text": "Ho sempre odiato sfogliare libri"
   },
   {
    "tag": "h3",
+   "y": 6101,
    "text": "Sarà sempre con te"
   },
   {
    "tag": "h2",
+   "y": 6444,
    "text": "Okay, ma chi sono io per parlarti di copywriting?"
   },
   {
    "tag": "h3",
+   "y": 7534,
    "text": "Quali sono i capitoli del Manuale del copywriter?"
   },
   {
    "tag": "h2",
+   "y": 8853,
    "text": "FAQ"
   }
  ],
  "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 8113,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 8121,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
   {
    "text": "Acquista 🔥 Per accesso istantaneo",
    "href": "https://www.andrei-copy.com/store/p/manuale-del-copywriter",
@@ -331,29 +531,10 @@
    "radius": "10px",
    "border": "0px solid rgb(168, 168, 168)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
-  },
-  {
-   "text": "Riproduci",
-   "href": null,
-   "y": 947,
-   "x": 698,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
-   "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
-   "transform": "none",
-   "padding": "7px"
   },
   {
    "text": "Ricevi l'anteprima",
@@ -367,11 +548,44 @@
    "radius": "10px",
    "border": "0px solid rgb(27, 27, 29)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "22.4px 32px"
+  },
+  {
+   "text": "ANTEPRIMA",
+   "href": null,
+   "y": 5961,
+   "x": 899,
+   "w": 115,
+   "h": 48,
+   "bg": "#c9c9c9",
+   "color": "#1d1d1d",
+   "radius": "0px",
+   "border": "0px none rgb(29, 29, 29)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "400",
+   "transform": "uppercase",
+   "padding": "18px"
+  },
+  {
+   "text": "Manuale del copywriter",
+   "href": "/store/p/manuale-del-copywriter",
+   "y": 6037,
+   "x": 861,
+   "w": 192,
+   "h": 75,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 20.8,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
   },
   {
    "text": "Compralo e scaricalo",
@@ -385,8 +599,7 @@
    "radius": "10px",
    "border": "0px solid rgb(168, 168, 168)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
@@ -403,29 +616,486 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
   },
   {
-   "text": "Passa al contenuto",
-   "href": "#page",
-   "y": 8113,
-   "x": -14272,
-   "w": 188,
-   "h": 53,
-   "bg": "#0062ff",
-   "color": "#fafafa",
-   "radius": "10px",
-   "border": "0px solid rgb(0, 98, 255)",
+   "text": "Parte 1 - Cos'è il copywriting",
+   "href": null,
+   "y": 7907,
+   "x": 320,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
    "shadow": "none",
-   "font": "Poppins",
-   "size": "14.272px",
-   "weight": "500",
+   "size": 24,
+   "weight": "700",
    "transform": "none",
-   "padding": "16px 22.4px"
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Parte 2 - Perché questo libro è importante",
+   "href": null,
+   "y": 7968,
+   "x": 320,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Parte 3 - Come usare questo libro",
+   "href": null,
+   "y": 8059,
+   "x": 320,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Parte 4 - Perché le persone comprano",
+   "href": null,
+   "y": 8150,
+   "x": 320,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Parte 5 - La struttura base del copywriting (APSOC)",
+   "href": null,
+   "y": 8241,
+   "x": 320,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Parte 6 - I tipi di copywriting",
+   "href": null,
+   "y": 8332,
+   "x": 320,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Parte 7 - Componente emotiva nel copywriting",
+   "href": null,
+   "y": 8393,
+   "x": 320,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 0 - Fasi di scrittura di un copy",
+   "href": null,
+   "y": 7907,
+   "x": 759,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 1 - Attenzione",
+   "href": null,
+   "y": 7998,
+   "x": 759,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 2 - Problema",
+   "href": null,
+   "y": 8059,
+   "x": 759,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 3 - Soluzione",
+   "href": null,
+   "y": 8120,
+   "x": 759,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 4 - Obiezioni",
+   "href": null,
+   "y": 8181,
+   "x": 759,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 5 - CTA",
+   "href": null,
+   "y": 8242,
+   "x": 759,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 6 - Target",
+   "href": null,
+   "y": 8303,
+   "x": 759,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 7 - Funnel",
+   "href": null,
+   "y": 8364,
+   "x": 759,
+   "w": 361,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 8 - Storytelling VS Direct response",
+   "href": null,
+   "y": 8425,
+   "x": 759,
+   "w": 361,
+   "h": 90,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 9 - Conseguenza del non agire + urgenza di tempo",
+   "href": null,
+   "y": 8516,
+   "x": 759,
+   "w": 361,
+   "h": 120,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Manuale 10 - Altre strategie, terminologia e regole del copywriting",
+   "href": null,
+   "y": 8637,
+   "x": 759,
+   "w": 361,
+   "h": 120,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Il libro come lo scarico?",
+   "href": null,
+   "y": 8918,
+   "x": 421,
+   "w": 597,
+   "h": 80,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "25px 0px"
+  },
+  {
+   "text": "Quanto è lungo il libro?",
+   "href": null,
+   "y": 8999,
+   "x": 421,
+   "w": 597,
+   "h": 80,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "25px 0px"
+  },
+  {
+   "text": "Quanto costa?",
+   "href": null,
+   "y": 9080,
+   "x": 421,
+   "w": 597,
+   "h": 80,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "25px 0px"
+  },
+  {
+   "text": "Cosa cambia tra il corso e il libro?",
+   "href": null,
+   "y": 9161,
+   "x": 421,
+   "w": 597,
+   "h": 80,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "25px 0px"
+  },
+  {
+   "text": "Questo manuale è adatto anche ai principianti?",
+   "href": null,
+   "y": 9242,
+   "x": 421,
+   "w": 597,
+   "h": 80,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "25px 0px"
+  },
+  {
+   "text": "Posso leggere il manuale su tutti i dispositivi?",
+   "href": null,
+   "y": 9323,
+   "x": 421,
+   "w": 597,
+   "h": 80,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "25px 0px"
+  },
+  {
+   "text": "Questo manuale è solo per chi vuole diventare copywriter professionista?",
+   "href": null,
+   "y": 9404,
+   "x": 421,
+   "w": 597,
+   "h": 110,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "25px 0px"
+  },
+  {
+   "text": "Ho degli amici interessati al libro, possiamo acquistarlo insieme?",
+   "href": null,
+   "y": 9515,
+   "x": 421,
+   "w": 597,
+   "h": 110,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "25px 0px"
+  },
+  {
+   "text": "ANTEPRIMA",
+   "href": null,
+   "y": 9900,
+   "x": 662,
+   "w": 115,
+   "h": 48,
+   "bg": "#c9c9c9",
+   "color": "#1d1d1d",
+   "radius": "0px",
+   "border": "0px none rgb(29, 29, 29)",
+   "shadow": "none",
+   "size": 12,
+   "weight": "400",
+   "transform": "uppercase",
+   "padding": "18px"
+  },
+  {
+   "text": "Manuale del copywriter",
+   "href": "/store/p/manuale-del-copywriter",
+   "y": 9976,
+   "x": 624,
+   "w": 192,
+   "h": 75,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 20.8,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
   },
   {
    "text": "Acquista",
@@ -439,14 +1109,65 @@
    "radius": "10px",
    "border": "0px solid rgb(168, 168, 168)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 10554,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 10623,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
   }
  ],
- "images": [
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 8106,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 8106,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
   {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/988f330d-3c54-4c4c-aa08-b62594965fc3/18788390_Hazy_black_ink_texture_with_brushstrokes.jpg",
@@ -466,24 +1187,6 @@
    "h": 376
   },
   {
-   "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/57b94d2a-c654-4396-9db5-2a49e4451ded",
-   "alt": "",
-   "y": 858,
-   "x": 523,
-   "w": 394,
-   "h": 222
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 858,
-   "x": 523,
-   "w": 300,
-   "h": 150
-  },
-  {
    "tag": "svg",
    "src": "",
    "alt": "",
@@ -491,6 +1194,33 @@
    "x": 705,
    "w": 30,
    "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1035,
+   "x": 839,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1035,
+   "x": 883,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/8213293b-da08-4b43-89c5-c98a71044d75",
+   "alt": "",
+   "y": 858,
+   "x": 523,
+   "w": 394,
+   "h": 222
   },
   {
    "tag": "svg",
@@ -514,19 +1244,10 @@
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 1035,
-   "x": 839,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 1035,
-   "x": 883,
-   "w": 24,
-   "h": 24
+   "y": 858,
+   "x": 523,
+   "w": 300,
+   "h": 150
   },
   {
    "tag": "img",
@@ -602,7 +1323,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/28ccf1b1-c6dd-471b-9171-525df275fa6b/5.jpg",
    "alt": "",
    "y": 3194,
    "x": 1171,
@@ -611,7 +1332,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4ed9e6e5-abb6-43ed-b233-bda7f1675d9d/6.jpg",
    "alt": "",
    "y": 3194,
    "x": 1444,
@@ -620,7 +1341,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a2b10df7-8c32-45c4-a0ec-3db8da6a71c1/7.jpg",
    "alt": "",
    "y": 3194,
    "x": 1717,
@@ -629,7 +1350,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/abfa8454-32ce-49e1-b071-89e30de73d83/2.jpg",
    "alt": "",
    "y": 3194,
    "x": -9647,
@@ -638,7 +1359,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/fb19702b-b0da-4174-b3d4-b442be371b6e/3.jpg",
    "alt": "",
    "y": 3194,
    "x": -9647,
@@ -647,7 +1368,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f25d864f-d0b8-422d-8d90-a618e9bec641/4.jpg",
    "alt": "",
    "y": 3194,
    "x": -9647,
@@ -656,7 +1377,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/28ccf1b1-c6dd-471b-9171-525df275fa6b/5.jpg",
    "alt": "",
    "y": 3194,
    "x": -9647,
@@ -665,7 +1386,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4ed9e6e5-abb6-43ed-b233-bda7f1675d9d/6.jpg",
    "alt": "",
    "y": 3194,
    "x": -194,
@@ -674,7 +1395,7 @@
   },
   {
    "tag": "img",
-   "src": "",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a2b10df7-8c32-45c4-a0ec-3db8da6a71c1/7.jpg",
    "alt": "",
    "y": 3194,
    "x": 79,
@@ -827,15 +1548,6 @@
   },
   {
    "tag": "img",
-   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
-   "alt": "AP Formazione",
-   "y": 8106,
-   "x": 687,
-   "w": 67,
-   "h": 61
-  },
-  {
-   "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/03924ce3-f1a0-4e55-b2f9-f570691da917/back-vlack.jpg",
    "alt": "",
    "y": 9674,
@@ -914,6 +1626,15 @@
    "x": 415,
    "w": 40,
    "h": 40
+  },
+  {
+   "tag": "iframe",
+   "src": "https://www.google.com/recaptcha/enterprise/anchor?ar=1&k=6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv&co=aHR0cHM6Ly93d3cuYW5kcmVpLWNvcHkuY29tOjQ0Mw..&hl=en&v=8x-4t2pegToiW8KmThtO4AQt&size=invisible&anchor-ms=20000&execute-ms=30000&cb=ojjxjc6uyrgi",
+   "alt": "",
+   "y": 8918,
+   "x": 1370,
+   "w": 256,
+   "h": 60
   }
  ],
  "slices_desktop": 13,

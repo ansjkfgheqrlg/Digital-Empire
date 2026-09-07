@@ -5,6 +5,40 @@
 `company/Memory/studi/aitubepro/A6-viral-mastery/`. **Gael/Neri: non toccare questi due percorsi
 finché questo blocco non sparisce.** Rimuovo il blocco al gate A6 chiuso.
 
+## ⚠️ COORDINAMENTO — 2026-09-07, in corso — visione max18-v09 (agenti vocali), 38% → 100%
+
+**Max ha ordinato la ripresa di `CP-20260907-96DY`.** Ondata di sentinelle in scrittura su:
+`SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA/_parte-*.md`.
+**Gael/Neri: non toccare questa cartella** finché il blocco non sparisce. Lo tolgo a `v09`
+chiuso come visione (494/494) e atomi uniti.
+
+## 📚 2026-09-07 — max18: quattro video chiusi come visione, v09 al 38%, checkpoint vuoto riscritto — CP-20260907-96DY
+
+**Codice di ripresa: EMP-W4K7 (APERTA).** Ripresa fatta **ricontando il disco**, non
+ereditando i numeri dei checkpoint. Fotografia vera: `v04` 120/120, `v05` 98/98, `v06`
+376/376, `v07` 126/126, `v08` 393/393 chiusi come visione — `v09` a **189/494 = 38%**.
+Sui sei video grossi: **1302/1607 scene = 81%**. Atomi presenti solo per `v05` (72), `v06`
+(228), `v07` (57): mancano `v04`, `v08`, `v09`. **Wiki + archivio: zero su sei** — e' il
+pezzo piu' arretrato della Fase 1.
+
+⭐ **`CP-20260907-96DY` era un template vuoto**: codice coniato correttamente, corpo mai
+scritto. Riscritto per intero. **Lezione entrata a registro:** il codice si conia prima, ma
+il corpo si scrive nello stesso turno — un checkpoint aperto e non chiuso e' un debito
+silenzioso che dichiara salvato ciò che non lo e'.
+
+**Igiene:** `SYNC-CONFLICT.txt` era di nuovo un **marker orfano** (`git fetch` → 0 dietro,
+1 avanti: nessun conflitto, solo un commit non spinto). Commit `e472c59f` pushato, marker
+rimosso. Seconda volta che succede: candidato a debito, lo script di sync non cancella il
+proprio marker quando il rebase successivo riesce.
+
+**Attenzione su `v08`:** sul disco c'e' `video.mp4.part`, non `video.mp4`. Le 393 scene sono
+state viste, ma il sorgente resta un download interrotto — da ripassare al gate di
+`frame_extractor.py` prima di dichiararlo chiuso davvero.
+
+**RIPRESA DA:** `v09` scene 190→494 a ondate da 6 blocchi (slice gia' tutti ritagliati fino
+a 494, nessun taglio da rifare); poi atomi di `v04`/`v08`/`v09`; poi wiki + archivio per
+tutti e sei. Dettagli: [CP-20260907-96DY](checkpoints/CP-20260907-96DY.md).
+
 ## 🟠 2026-09-07 — A6: 2/10 lezioni chiuse, e un bug reale nel gate SEO — CP-20260907-AF2K
 
 **Codice di ripresa: EMP-V6DE (APERTA).** **Correttivo di metodo prima di iniziare**: il piano

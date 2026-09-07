@@ -1,8 +1,12 @@
 {
- "url": "https://www.andrei-copy.com/copy",
  "title": "Corso Copywriting Online - Con Consulenza Gratuita + Metodi Clienti + Aggiornamenti Gratis a Vita — AP Formazione",
  "meta_description": "Copywriting Mentorship Base in promozione: corso completo per diventare copywriter freelance. Include 1 consulenza gratuita di 60 min con Andrei, 4 metodi provati per trovare clienti, aggiornamenti gratuiti a vita. Pagamento unico, nessun abbonamento. 60+ videolezioni, community Telegram privata, AI training. Promozione limitata fino al 30 giugno. Inizia subito la tua carriera da copywriter con il mentore che ha aiutato 2000+ studenti.",
  "og_title": "Corso Copywriting Online - Con Consulenza Gratuita + Metodi Clienti + Aggiornamenti Gratis a Vita — AP Formazione",
+ "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/t/683ed014cc6de75b44d6d8fa/1748946964591/andrei-social-image.jpg?format=1500w",
+ "canonical": "https://www.andrei-copy.com/copy",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
  "lang": "it-IT",
  "page_height": 26952,
  "page_width": 1440,
@@ -240,11 +244,11 @@
    2
   ],
   [
-   "29px / lh 29px / w700",
+   "28.9px / lh 28.9px / w700",
    2
   ],
   [
-   "27.7px / lh 27.7px / w700",
+   "27.6px / lh 27.6px / w700",
    2
   ],
   [
@@ -313,14 +317,6 @@
   ],
   [
    "156.7px / lh 156.7px / w700",
-   1
-  ],
-  [
-   "91.4px / lh 91.4px / w700",
-   1
-  ],
-  [
-   "12px / lh normal / w400",
    1
   ]
  ],
@@ -392,169 +388,462 @@
    2
   ]
  ],
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0.08) 0px 4px 20px 0px",
+   4
+  ],
+  [
+   "rgba(239, 171, 0, 0.3) 0px 4px 15px 0px",
+   4
+  ],
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ],
+  [
+   "rgba(0, 128, 0, 0.7) 0px 0px 15px 0px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    2079
+   ],
+   [
+    "0.3s",
+    33
+   ],
+   [
+    "transform 0.25s",
+    31
+   ],
+   [
+    "box-shadow 0.3s",
+    14
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "opacity 0.1s linear",
+    7
+   ],
+   [
+    "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
+    7
+   ],
+   [
+    "opacity 0.2s",
+    7
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    6
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "opacity 1s",
+    1
+   ],
+   [
+    "transform 0.2s",
+    1
+   ],
+   [
+    "background-color 0.1s linear, color 0.1s linear",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "image-fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    5
+   ],
+   [
+    "pulse 2s ease",
+    2
+   ]
+  ],
+  "filtri": [
+   [
+    "backdrop: blur(15px)",
+    7
+   ],
+   [
+    "backdrop: blur(20px)",
+    2
+   ],
+   [
+    "backdrop: blur(10px)",
+    1
+   ],
+   [
+    "backdrop: blur(6px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-68358a4fe5d07d2016c9cfda\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d2684978302b\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d2684978302e\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d2684978304f\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d26849783060\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6835a930f2787234590ea999\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d26849783069\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-683458f12140d26849783072\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    57
+   ],
+   [
+    "matrix(1, 0, 0, 1, -9999, 0)",
+    37
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    11
+   ],
+   [
+    "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, -4.24219)",
+    9
+   ],
+   [
+    "matrix(1, 0, 0, 1, -22, -22)",
+    7
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -44)",
+    6
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1.08821, 0, 0, 1.08821, 0, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -45)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 495, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 945, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 1395, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -405, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 45, 0)",
+    1
+   ]
+  ]
+ },
  "headings": [
   {
    "tag": "h1",
+   "y": 137,
    "text": "Raggiungi la libertà finanziaria avviando una carriera da copywriter autonomo."
   },
   {
    "tag": "h2",
+   "y": 1727,
    "text": "Scopri di cosa si tratta ⬇️"
   },
   {
    "tag": "h1",
+   "y": 2360,
    "text": "La realtà dei fatti?"
   },
   {
    "tag": "h3",
+   "y": 2861,
    "text": "E lo afferma anche questo studio:"
   },
   {
    "tag": "h1",
+   "y": 3955,
    "text": "Ho scelto il copywriting dato che funziona anche durante i periodi di peggiore crisi:"
   },
   {
    "tag": "h1",
+   "y": 4808,
    "text": "Per chi ho creato Copywriting Mentorship:"
   },
   {
    "tag": "h3",
+   "y": 5408,
    "text": "Gli altri ti mettono 30 video-recensioni (sicuramente tutte realissime e non pagate 💀💀). Io ti mostro i dati."
   },
   {
    "tag": "h1",
+   "y": 7283,
    "text": "Cosa troverai in Copywriting Mentorship?"
   },
   {
    "tag": "h3",
+   "y": 7578,
    "text": "30+ video-lezioni su come scrivere copy"
   },
   {
    "tag": "h3",
+   "y": 7578,
    "text": "20+ video-lezioni su come trovare clienti"
   },
   {
    "tag": "h3",
+   "y": 8051,
    "text": "Riassunti e appunti"
   },
   {
    "tag": "h3",
+   "y": 8043,
    "text": "Quiz"
   },
   {
    "tag": "h3",
+   "y": 8361,
    "text": "Gruppo telegram privato"
   },
   {
    "tag": "h2",
+   "y": 9001,
    "text": "Copywriting Mentorship 6: ti insegno cosa funziona… Sulla base dei dati, in lezioni deep."
   },
   {
    "tag": "h2",
+   "y": 9924,
    "text": "Sono il mentore che cercavi."
   },
   {
    "tag": "h3",
+   "y": 10033,
    "text": "Dalla scrivania nella casa di un paesino ad un ufficio e azienda in centro a Bologna"
   },
   {
    "tag": "h3",
+   "y": 10393,
    "text": "Anche se a dire il vero…"
   },
   {
    "tag": "h3",
+   "y": 11334,
    "text": "Video testimonianze degli studenti"
   },
   {
    "tag": "h3",
+   "y": 11386,
    "text": "di Copywriting Mentorship."
   },
   {
    "tag": "h1",
+   "y": 12205,
    "text": "Impara a usare l’AI prima che sia lui a usare te"
   },
   {
    "tag": "h3",
+   "y": 12685,
    "text": "Come sfruttare l’AI per scrivere copy?"
   },
   {
    "tag": "h2",
+   "y": 13395,
    "text": "Un corso non è mai stato così completo…"
   },
   {
    "tag": "h3",
+   "y": 13688,
    "text": "Io ti do le informazioni, tu le sfrutti:"
   },
   {
    "tag": "h1",
+   "y": 14370,
    "text": "Le video-lezioni"
   },
   {
    "tag": "h3",
+   "y": 14602,
    "text": "Parte 1: come scrivere copy"
   },
   {
    "tag": "h3",
+   "y": 15377,
    "text": "Parte 2: come trovare clienti"
   },
   {
    "tag": "h3",
+   "y": 16011,
    "text": "Parte 3: Intelligenza artificiale"
   },
   {
    "tag": "h2",
+   "y": 16597,
    "text": "Contenuti per massimizzare il successo"
   },
   {
    "tag": "h1",
+   "y": 17244,
    "text": "Gruppo telegram privato"
   },
   {
    "tag": "h2",
+   "y": 17837,
    "text": "Consulenze direttamente con me"
   },
   {
    "tag": "h3",
+   "y": 17909,
    "text": "Non sei più solo."
   },
   {
    "tag": "h2",
+   "y": 18792,
    "text": "Diamo peso agli aggiornamenti di mercato:"
   },
   {
    "tag": "h2",
+   "y": 19781,
    "text": "Ecco il piano"
   },
   {
    "tag": "h1",
+   "y": 20468,
    "text": "“Non è un business sexy… Ma funziona”"
   },
   {
    "tag": "h2",
+   "y": 20703,
    "text": "La tua mano."
   },
   {
    "tag": "h2",
+   "y": 21360,
    "text": "A differenza di tutte le milioni di persone che stanno provando a fare copy…"
   },
   {
    "tag": "h2",
+   "y": 22188,
    "text": "Questo percorso lo descrivo con una sola frase: cambiare vita."
   },
   {
    "tag": "h2",
+   "y": 23129,
    "text": "Opinioni e risultati degli studenti di Copywriting Mentorship"
   },
   {
    "tag": "h3",
+   "y": 24867,
    "text": "Upgrade disponibile"
   },
   {
    "tag": "h2",
+   "y": 25148,
    "text": "Domande comuni"
   }
  ],
  "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 20750,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 20758,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
   {
    "text": "Entra adesso",
    "href": "#pricing",
@@ -567,11 +856,78 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
+  },
+  {
+   "text": "questo",
+   "href": "https://www.sec.gov/oiea/investor-alerts-and-bulletins/risks-short-term-trading-based-social-media-investor-alert",
+   "y": 2858,
+   "x": 735,
+   "w": 133,
+   "h": 49,
+   "bg": "transparent",
+   "color": "#ebe9e0",
+   "radius": "0px",
+   "border": "0px none rgb(235, 233, 224)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041",
+   "y": 5801,
+   "x": 633,
+   "w": 64,
+   "h": 30,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041",
+   "y": 6118,
+   "x": 633,
+   "w": 64,
+   "h": 30,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041",
+   "y": 6795,
+   "x": 673,
+   "w": 64,
+   "h": 30,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
   },
   {
    "text": "Scopri i fatti sul copywriting",
@@ -585,8 +941,7 @@
    "radius": "25px",
    "border": "0px none rgb(255, 255, 255)",
    "shadow": "rgba(0, 128, 0, 0.7) 0px 0px 15px 0px",
-   "font": "elza-8u3n84",
-   "size": "16px",
+   "size": 16,
    "weight": "700",
    "transform": "none",
    "padding": "0px"
@@ -603,29 +958,10 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
-  },
-  {
-   "text": "Riproduci",
-   "href": null,
-   "y": 10873,
-   "x": 698,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
-   "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
-   "transform": "none",
-   "padding": "7px"
   },
   {
    "text": "Scopri cosa pensa chi è dentro il mio corso",
@@ -639,119 +975,10 @@
    "radius": "0px",
    "border": "",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "14.272px",
+   "size": 14.272,
    "weight": "500",
    "transform": "none",
    "padding": "16px 20.8px"
-  },
-  {
-   "text": "Riproduci",
-   "href": null,
-   "y": 11669,
-   "x": 420,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
-   "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
-   "transform": "none",
-   "padding": "7px"
-  },
-  {
-   "text": "Riproduci",
-   "href": null,
-   "y": 11669,
-   "x": 698,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
-   "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
-   "transform": "none",
-   "padding": "7px"
-  },
-  {
-   "text": "Riproduci",
-   "href": null,
-   "y": 11669,
-   "x": 976,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
-   "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
-   "transform": "none",
-   "padding": "7px"
-  },
-  {
-   "text": "Riproduci",
-   "href": null,
-   "y": 11840,
-   "x": 420,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
-   "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
-   "transform": "none",
-   "padding": "7px"
-  },
-  {
-   "text": "Riproduci",
-   "href": null,
-   "y": 11840,
-   "x": 698,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
-   "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
-   "transform": "none",
-   "padding": "7px"
-  },
-  {
-   "text": "Riproduci",
-   "href": null,
-   "y": 11840,
-   "x": 976,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
-   "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
-   "transform": "none",
-   "padding": "7px"
   },
   {
    "text": "Leggi altri pareri degli studenti",
@@ -765,8 +992,7 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
@@ -783,11 +1009,197 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
+  },
+  {
+   "text": "Sezione 0: Introduzione",
+   "href": null,
+   "y": 14993,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 1: Fondamenta del copywriting",
+   "href": null,
+   "y": 15064,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 2: Come scrivere copy basilare",
+   "href": null,
+   "y": 15135,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 3: Copywriting avanzato",
+   "href": null,
+   "y": 15206,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 4: Business",
+   "href": null,
+   "y": 15768,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 5: Vendita",
+   "href": null,
+   "y": 15839,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "Sezione 6: AI",
+   "href": null,
+   "y": 16401,
+   "x": 421,
+   "w": 597,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 5px"
+  },
+  {
+   "text": "💬 Quante consulenze ci sono?",
+   "href": null,
+   "y": 18194,
+   "x": 388,
+   "w": 665,
+   "h": 72,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "💬 Dove si fanno le consulenze?",
+   "href": null,
+   "y": 18267,
+   "x": 388,
+   "w": 665,
+   "h": 72,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "💬 Come fissare una consulenza?",
+   "href": null,
+   "y": 18340,
+   "x": 388,
+   "w": 665,
+   "h": 72,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "💬 A cosa servono?",
+   "href": null,
+   "y": 18413,
+   "x": 388,
+   "w": 665,
+   "h": 72,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px"
   },
   {
    "text": "Entra, studia e inizia",
@@ -801,27 +1213,8 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
-   "transform": "none",
-   "padding": "16px 22.4px"
-  },
-  {
-   "text": "Passa al contenuto",
-   "href": "#page",
-   "y": 21671,
-   "x": -14272,
-   "w": 188,
-   "h": 53,
-   "bg": "#0062ff",
-   "color": "#fafafa",
-   "radius": "10px",
-   "border": "0px solid rgb(0, 98, 255)",
-   "shadow": "none",
-   "font": "Poppins",
-   "size": "14.272px",
-   "weight": "500",
    "transform": "none",
    "padding": "16px 22.4px"
   },
@@ -837,8 +1230,7 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
@@ -855,35 +1247,238 @@
    "radius": "50px",
    "border": "1px solid rgba(255, 255, 255, 0.2)",
    "shadow": "none",
-   "font": "elza-8u3n84",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 32px"
+  },
+  {
+   "text": "Acquista Completo",
+   "href": "https://www.andrei-copy.com/pre-checkout-cm",
+   "y": 24658,
+   "x": 762,
+   "w": 223,
+   "h": 61,
+   "bg": "transparent",
+   "color": "#000000",
+   "radius": "50px",
+   "border": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Ho sentito che il corso è stato aggiornato, cosa significa?",
+   "href": null,
+   "y": 25231,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Se hai scoperto questo metodo di business perché non te lo tieni per te?",
+   "href": null,
+   "y": 25344,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Posso iniziare il corso se sono principiante assoluto?",
+   "href": null,
+   "y": 25457,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Posso iniziare il corso se sono già esperto in copywriting?",
+   "href": null,
+   "y": 25570,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Nel corso insegni anche come vendere?",
+   "href": null,
+   "y": 25683,
+   "x": 400,
+   "w": 641,
+   "h": 82,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Se mi trovo in difficoltà dopo aver iniziato il corso cosa faccio?",
+   "href": null,
+   "y": 25766,
+   "x": 400,
+   "w": 641,
+   "h": 112,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Mi serve la partita IVA per fare copywriting?",
+   "href": null,
+   "y": 25879,
+   "x": 400,
+   "w": 641,
+   "h": 82,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Le consulenze sono illimitate?",
+   "href": null,
+   "y": 25962,
+   "x": 400,
+   "w": 641,
+   "h": 82,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "Ho dei dubbi. Dove posso contattare Andrei?",
+   "href": null,
+   "y": 26045,
+   "x": 400,
+   "w": 641,
+   "h": 82,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "26px 0px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 26439,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 26508,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
   }
  ],
- "images": [
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 20743,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 20743,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
   {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6d97cdf0-b57b-412a-9fcc-c38c5a00d336/Hero+background+-+SP+CMB.jpg",
-   "alt": "",
-   "y": 0,
-   "x": 0,
-   "w": 1440,
-   "h": 875
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 0,
-   "x": 0,
-   "w": 1440,
-   "h": 875
-  },
-  {
-   "tag": "svg",
-   "src": "",
    "alt": "",
    "y": 0,
    "x": 0,
@@ -916,6 +1511,24 @@
    "x": 320,
    "w": 361,
    "h": 130
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 875
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 875
   },
   {
    "tag": "img",
@@ -970,6 +1583,15 @@
    "x": 784,
    "w": 35,
    "h": 35
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1099337502?h=34c431827b&app_id=122963",
+   "alt": "",
+   "y": 1816,
+   "x": 455,
+   "w": 530,
+   "h": 298
   },
   {
    "tag": "svg",
@@ -1108,15 +1730,6 @@
   },
   {
    "tag": "img",
-   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4d40b736-eb20-42f7-882d-cbf97d692c51/Graph+Vector+Icon+%281%29.png?format=100w",
-   "alt": "Icon",
-   "y": 7023,
-   "x": 602,
-   "w": 20,
-   "h": 20
-  },
-  {
-   "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b87e320f-3648-4804-9479-8969581691fd/Grainy+yellow%2Fblack+CM+texture.jpg",
    "alt": "",
    "y": 7131,
@@ -1206,24 +1819,6 @@
    "h": 577
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 9819,
-   "x": 0,
-   "w": 1440,
-   "h": 1420
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 9819,
-   "x": 0,
-   "w": 1440,
-   "h": 1420
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b44bc376-cc0b-4517-9c10-6b5424c19277/andrei-copy-mentor-sx.png",
    "alt": "",
@@ -1231,6 +1826,15 @@
    "x": 0,
    "w": 377,
    "h": 525
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9917,
+   "x": 577,
+   "w": 165,
+   "h": 61
   },
   {
    "tag": "img",
@@ -1245,37 +1849,37 @@
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 9917,
-   "x": 577,
-   "w": 165,
-   "h": 61
+   "y": 10880,
+   "x": 705,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10961,
+   "x": 839,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10961,
+   "x": 883,
+   "w": 24,
+   "h": 24
   },
   {
    "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/dc68c6be-a492-4f8e-a200-b92aa15c1972",
+   "src": "blob:https://www.andrei-copy.com/4ce5436e-da06-4954-812e-9e54a5debbca",
    "alt": "",
    "y": 10784,
    "x": 523,
    "w": 394,
    "h": 222
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 10784,
-   "x": 523,
-   "w": 300,
-   "h": 150
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 10880,
-   "x": 705,
-   "w": 30,
-   "h": 30
   },
   {
    "tag": "svg",
@@ -1299,19 +1903,28 @@
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 10961,
-   "x": 839,
-   "w": 24,
-   "h": 24
+   "y": 10784,
+   "x": 523,
+   "w": 300,
+   "h": 150
   },
   {
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 10961,
-   "x": 883,
-   "w": 24,
-   "h": 24
+   "y": 9819,
+   "x": 0,
+   "w": 1440,
+   "h": 1420
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9819,
+   "x": 0,
+   "w": 1440,
+   "h": 1420
   },
   {
    "tag": "img",
@@ -1323,60 +1936,6 @@
    "h": 920
   },
   {
-   "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/f4b0703d-6fc3-401e-a403-1f3c355fe18e",
-   "alt": "",
-   "y": 11622,
-   "x": 320,
-   "w": 244,
-   "h": 137
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11622,
-   "x": 320,
-   "w": 300,
-   "h": 150
-  },
-  {
-   "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/0e38b62c-e5a3-4c9d-b8d8-83c780921c29",
-   "alt": "",
-   "y": 11622,
-   "x": 598,
-   "w": 244,
-   "h": 137
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11622,
-   "x": 598,
-   "w": 300,
-   "h": 150
-  },
-  {
-   "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/b98ed861-81ba-4fd1-a189-1e34ca220bbc",
-   "alt": "",
-   "y": 11622,
-   "x": 876,
-   "w": 244,
-   "h": 137
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11622,
-   "x": 876,
-   "w": 300,
-   "h": 150
-  },
-  {
    "tag": "svg",
    "src": "",
    "alt": "",
@@ -1389,19 +1948,28 @@
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 11676,
-   "x": 705,
-   "w": 30,
-   "h": 30
+   "y": 11715,
+   "x": 486,
+   "w": 24,
+   "h": 24
   },
   {
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 11676,
-   "x": 983,
-   "w": 30,
-   "h": 30
+   "y": 11715,
+   "x": 530,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/9411583d-0890-424d-bd82-552da0361fa5",
+   "alt": "",
+   "y": 11622,
+   "x": 320,
+   "w": 244,
+   "h": 137
   },
   {
    "tag": "svg",
@@ -1425,143 +1993,8 @@
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 11679,
-   "x": 626,
-   "w": 30,
-   "h": 30
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11679,
-   "x": 788,
-   "w": 30,
-   "h": 30
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11679,
-   "x": 904,
-   "w": 30,
-   "h": 30
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11679,
-   "x": 1066,
-   "w": 30,
-   "h": 30
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11715,
-   "x": 486,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11715,
-   "x": 530,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11715,
-   "x": 764,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11715,
-   "x": 808,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11715,
-   "x": 1042,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11715,
-   "x": 1086,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/40b09576-bc89-481e-9fff-db28959bf1e0",
-   "alt": "",
-   "y": 11793,
+   "y": 11622,
    "x": 320,
-   "w": 244,
-   "h": 137
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11793,
-   "x": 320,
-   "w": 300,
-   "h": 150
-  },
-  {
-   "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/3128b526-76a3-4f93-a509-be6227ed3590",
-   "alt": "",
-   "y": 11793,
-   "x": 598,
-   "w": 244,
-   "h": 137
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11793,
-   "x": 598,
-   "w": 300,
-   "h": 150
-  },
-  {
-   "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/8488a4df-d401-4c9e-8b02-c62c81ad3771",
-   "alt": "",
-   "y": 11793,
-   "x": 876,
-   "w": 244,
-   "h": 137
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11793,
-   "x": 876,
    "w": 300,
    "h": 150
   },
@@ -1578,19 +2011,28 @@
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 11847,
-   "x": 705,
-   "w": 30,
-   "h": 30
+   "y": 11886,
+   "x": 486,
+   "w": 24,
+   "h": 24
   },
   {
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 11847,
-   "x": 983,
-   "w": 30,
-   "h": 30
+   "y": 11886,
+   "x": 530,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/e480742e-da6d-410a-a200-b644f72fe3e5",
+   "alt": "",
+   "y": 11793,
+   "x": 320,
+   "w": 244,
+   "h": 137
   },
   {
    "tag": "svg",
@@ -1614,6 +2056,114 @@
    "tag": "svg",
    "src": "",
    "alt": "",
+   "y": 11793,
+   "x": 320,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11676,
+   "x": 705,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 764,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 808,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/a329e9ae-c89a-40d1-92ce-e2b745d99bbb",
+   "alt": "",
+   "y": 11622,
+   "x": 598,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 626,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 788,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11622,
+   "x": 598,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11847,
+   "x": 705,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 764,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 808,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/b290cc10-478e-4c41-881f-0bd46d069861",
+   "alt": "",
+   "y": 11793,
+   "x": 598,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
    "y": 11850,
    "x": 626,
    "w": 30,
@@ -1627,6 +2177,114 @@
    "x": 788,
    "w": 30,
    "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11793,
+   "x": 598,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11676,
+   "x": 983,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 1042,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 1086,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/d1646fab-5b56-4962-a38a-abee3680d47d",
+   "alt": "",
+   "y": 11622,
+   "x": 876,
+   "w": 244,
+   "h": 137
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 904,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11679,
+   "x": 1066,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11622,
+   "x": 876,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11847,
+   "x": 983,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 1042,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11886,
+   "x": 1086,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/d51024bd-3975-4bb2-950d-476797fcfade",
+   "alt": "",
+   "y": 11793,
+   "x": 876,
+   "w": 244,
+   "h": 137
   },
   {
    "tag": "svg",
@@ -1650,55 +2308,10 @@
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 11886,
-   "x": 486,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11886,
-   "x": 530,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11886,
-   "x": 764,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11886,
-   "x": 808,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11886,
-   "x": 1042,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 11886,
-   "x": 1086,
-   "w": 24,
-   "h": 24
+   "y": 11793,
+   "x": 876,
+   "w": 300,
+   "h": 150
   },
   {
    "tag": "img",
@@ -1791,24 +2404,6 @@
    "h": 243
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 16521,
-   "x": 0,
-   "w": 1440,
-   "h": 620
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 16521,
-   "x": 0,
-   "w": 1440,
-   "h": 620
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e7772441-092d-47e6-9c2d-d296870abb3e/Add+a+heading.png",
    "alt": "",
@@ -1825,6 +2420,24 @@
    "x": 354,
    "w": 327,
    "h": 204
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16521,
+   "x": 0,
+   "w": 1440,
+   "h": 620
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16521,
+   "x": 0,
+   "w": 1440,
+   "h": 620
   },
   {
    "tag": "img",
@@ -1890,24 +2503,6 @@
    "h": 1036
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 18697,
-   "x": 0,
-   "w": 1440,
-   "h": 1036
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 18697,
-   "x": 0,
-   "w": 1440,
-   "h": 1036
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d402cd48-d007-4946-9f7c-89678a258898/to+comp+8-min.png",
    "alt": "",
@@ -1926,6 +2521,24 @@
    "h": 215
   },
   {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18697,
+   "x": 0,
+   "w": 1440,
+   "h": 1036
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18697,
+   "x": 0,
+   "w": 1440,
+   "h": 1036
+  },
+  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/11b3d275-7ed6-467f-8daf-94dfc1d32bc7/Coal+background+SP.png",
    "alt": "",
@@ -1935,15 +2548,6 @@
    "h": 716
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 19774,
-   "x": 760,
-   "w": 105,
-   "h": 66
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f88697b8-638b-429e-b109-46f8cad34338/Paper-Mockup2.png",
    "alt": "",
@@ -1951,6 +2555,15 @@
    "x": 523,
    "w": 394,
    "h": 478
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19774,
+   "x": 760,
+   "w": 105,
+   "h": 66
   },
   {
    "tag": "img",
@@ -1980,24 +2593,6 @@
    "h": 828
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 21265,
-   "x": 0,
-   "w": 1440,
-   "h": 828
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 21265,
-   "x": 0,
-   "w": 1440,
-   "h": 828
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/47d4d2e5-9421-4143-af62-0fc593f71d5b/Copywriting+Mentorship+Yu-Gi-Oh.png",
    "alt": "",
@@ -2007,13 +2602,22 @@
    "h": 327
   },
   {
-   "tag": "img",
-   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
-   "alt": "AP Formazione",
-   "y": 21664,
-   "x": 687,
-   "w": 67,
-   "h": 61
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21265,
+   "x": 0,
+   "w": 1440,
+   "h": 828
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21265,
+   "x": 0,
+   "w": 1440,
+   "h": 828
   },
   {
    "tag": "img",

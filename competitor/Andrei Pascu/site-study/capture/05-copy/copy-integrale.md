@@ -1,51 +1,85 @@
 # Copy integrale — Corso Copywriting Online - Con Consulenza Gratuita + Metodi Clienti + Aggiornamenti Gratis a Vita — AP Formazione
-**URL:** https://www.andrei-copy.com/copy
-**Altezza pagina:** 26952px  ·  **Blocchi testuali:** 337
+**URL:** https://www.andrei-copy.com/copy  ·  **Catturato:** 2026-09-07  ·  **Costruzione:** squarespace
+**Altezza:** 26952px  ·  **Blocchi:** 470  ·  **Sezioni:** 28 (20 distinte)
 
-> Ogni riga: `[y=posizione verticale px] <tag> (colore / dimensione / peso)` poi il testo esatto.
-> Estratto dal DOM renderizzato, nessuna parola riscritta.
+> Ogni riga: `[y] <tag> (colore / corpo / peso)` poi il testo esatto.
+> Il testo dei paragrafi e' RICOMPOSTO coi figli in linea (fix B-057): niente buchi.
 
 ---
+
+**[y=20750] `a`** — #fafafa / 14.272px / w500 → `#page`
+
+Passa al contenuto
+
+**[y=20758] `div`** — #ffffff / 16px / w300
+
+Claude Speedrun
+
+  *in grassetto/link dentro:* Claude Speedrun
+
+**[y=20759] `div`** — #fafafa / 16px / w300
+
+Accedi
+
+  *in grassetto/link dentro:* Accedi
 
 **[y=137] `h1`** — #fafafa / 60.8px / w700
 
 Raggiungi la libertà finanziaria avviando una carriera da copywriter autonomo.
 
+  *in grassetto/link dentro:* carriera da · copywriter autonomo · .
+
 **[y=390] `strong`** — #fafafa / 60.8px / w700
 
 carriera da
 
-**[y=455] `strong`** — #fafafa / 60.8px / w700
+**[y=455] `span`** — #fafafa / 60.8px / w700
 
 copywriter autonomo
 
-**[y=601] `em`** — #fafafa / 24px / w700
+  *in grassetto/link dentro:* copywriter autonomo
 
-l’unica
+**[y=520] `strong`** — #fafafa / 60.8px / w700
+
+.
 
 **[y=602] `h4`** — #fafafa / 24px / w700
 
 Da anni, questa è l’unica Mentorship in Italia che offre:
 
-**[y=1127] `div`** — #333333 / 18px / w600
+  *in grassetto/link dentro:* l’unica · l’unica
 
-1000+ studenti in Copywriting Mentorship
+**[y=601] `strong`** — #fafafa / 24px / w700
 
-**[y=1127] `strong`** — #efab00 / 18px / w700
+l’unica
 
-1000+
+  *in grassetto/link dentro:* l’unica
 
 **[y=1139] `div`** — #333333 / 18px / w600
 
 3600+ ordini su questo store
 
+  *in grassetto/link dentro:* 3600+
+
 **[y=1139] `strong`** — #efab00 / 18px / w700
 
 3600+
 
+**[y=1127] `div`** — #333333 / 18px / w600
+
+1000+ studenti in Copywriting Mentorship
+
+  *in grassetto/link dentro:* 1000+
+
+**[y=1127] `strong`** — #efab00 / 18px / w700
+
+1000+
+
 **[y=1294] `div`** — #333333 / 18px / w600
 
 Paghi una volta, tuo per sempre (compresi aggiornamenti futuri, gratis)
+
+  *in grassetto/link dentro:* una volta
 
 **[y=1294] `strong`** — #efab00 / 18px / w700
 
@@ -55,29 +89,43 @@ una volta
 
 Community su Telegram altamente moderata per domande
 
+  *in grassetto/link dentro:* Telegram
+
 **[y=1332] `strong`** — #efab00 / 18px / w700
 
 Telegram
 
-**[y=1512] `a`** — #fafafa / 16px / w600 → `#pricing`
+**[y=1512] `div`** — #fafafa / 16px / w300
 
 Entra adesso
+
+  *in grassetto/link dentro:* Entra adesso
+
+**[y=1727] `h2`** — #1b1b1d / 43.2px / w700
+
+Scopri di cosa si tratta ⬇️
+
+  *in grassetto/link dentro:* Scopri di cosa si tratta ⬇️
 
 **[y=1721] `strong`** — #1b1b1d / 43.2px / w700
 
 Scopri di cosa si tratta ⬇️
 
-**[y=2354] `strong`** — #fafafa / 60.8px / w700
-
-realtà
-
 **[y=2360] `h1`** — #fafafa / 60.8px / w700
 
 La realtà dei fatti?
 
+  *in grassetto/link dentro:* realtà
+
+**[y=2354] `strong`** — #fafafa / 60.8px / w700
+
+realtà
+
 **[y=2500] `p`** — #fafafa / 16px / w300
 
 Non diventerai ricco con un software, copiando “trade” di altri o vendendo cineserie su Aliexpress. Lo dico per esperienza. Le ho provate tutte… E per me solo il copywriting si è dimostrato affidabile perché è una vera carriera… Non uno schema “get rich quick”. Ma non devi credere a me, vediamo i fatti.
+
+  *in grassetto/link dentro:* affidabile · “get rich quick”
 
 **[y=2533] `strong`** — #fafafa / 16px / w700
 
@@ -91,6 +139,8 @@ affidabile
 
 Inoltre sono sicuro che hai già sentito parlare di vari business online, ogni 6 mesi salta una nuova tendenza e piano piano se ne sente parlare sempre meno.
 
+  *in grassetto/link dentro:* ogni 6 mesi
+
 **[y=2682] `strong`** — #fafafa / 24px / w700
 
 ogni 6 mesi
@@ -98,6 +148,8 @@ ogni 6 mesi
 **[y=2771] `p`** — #fafafa / 16px / w300
 
 Negli anni passati tutti erano innamorati del dropshipping e poi del trading (business che richiedono tanto budget e competenze avanzate), pessime scelte per iniziare.
+
+  *in grassetto/link dentro:* dropshipping · trading · pessime
 
 **[y=2775] `em`** — #fafafa / 16px / w300
 
@@ -111,13 +163,15 @@ trading
 
 pessime
 
-**[y=2858] `span`** — #efab00 / 38.4px / w700
-
-questo
-
 **[y=2861] `h3`** — #fafafa / 38.4px / w700
 
 E lo afferma anche questo studio:
+
+  *in grassetto/link dentro:* questo
+
+**[y=2858] `a`** — #ebe9e0 / 38.4px / w700 → `https://www.sec.gov/oiea/investor-alerts-and-bulletins/risks-short-term-trading-based-social-media-investor-alert`
+
+questo
 
 **[y=3337] `p`** — #fafafa / 16px / w300
 
@@ -126,6 +180,8 @@ Il copywriting è un lavoro nato più di un secolo fa e per essere svolto si ha 
 **[y=3439] `p`** — #fafafa / 16px / w300
 
 Gli stili e alcune tecniche che fanno parte di questa skill si evolvono assieme al costante progresso tecnologico, ed è questo a rendere il copy un business serio e duraturo.
+
+  *in grassetto/link dentro:* costante · serio · duraturo
 
 **[y=3472] `strong`** — #fafafa / 16px / w700
 
@@ -139,37 +195,47 @@ serio
 
 duraturo
 
-**[y=3591] `strong`** — #fafafa / 24px / w700
-
-1%
-
 **[y=3592] `h4`** — #fafafa / 24px / w700
 
 Nell’era moderna, se tu facessi anche solo l’1% di quello che hanno fatto copywriter come quelli in foto, saresti finanziariamente libero.
 
-**[y=3708] `strong`** — #fafafa / 24px / w700
+  *in grassetto/link dentro:* 1%
 
-ovviamente
+**[y=3591] `strong`** — #fafafa / 24px / w700
+
+1%
 
 **[y=3709] `h4`** — #fafafa / 24px / w700
 
 E sì, adesso ovviamente si usa Intelligenza Artificiale per velocizzare il lavoro. Cose che nella mentorship insegno.
 
+  *in grassetto/link dentro:* ovviamente
+
+**[y=3708] `span`** — #fafafa / 24px / w700
+
+ovviamente
+
+  *in grassetto/link dentro:* ovviamente
+
 **[y=3955] `h1`** — #1b1b1d / 60.8px / w700
 
 Ho scelto il copywriting dato che funziona anche durante i periodi di peggiore crisi:
-
-**[y=4802] `strong`** — #fafafa / 60.8px / w700
-
-Per chi
 
 **[y=4808] `h1`** — #fafafa / 60.8px / w700
 
 Per chi ho creato Copywriting Mentorship:
 
+  *in grassetto/link dentro:* Per chi
+
+**[y=4802] `strong`** — #fafafa / 60.8px / w700
+
+Per chi
+
 **[y=4956] `p`** — #fafafa / 16px / w300
 
 Giovani che vogliono seguire i miei passi per fare soldi
+
+  *in grassetto/link dentro:* i miei passi
 
 **[y=4960] `strong`** — #fafafa / 16px / w700
 
@@ -179,6 +245,8 @@ i miei passi
 
 Copywriter che non riescono a trovare clienti
 
+  *in grassetto/link dentro:* non
+
 **[y=5026] `strong`** — #fafafa / 16px / w700
 
 non
@@ -186,6 +254,8 @@ non
 **[y=5059] `p`** — #fafafa / 16px / w300
 
 Copywriter che vogliono passare al prossimo livello
+
+  *in grassetto/link dentro:* vogliono
 
 **[y=5063] `strong`** — #fafafa / 16px / w700
 
@@ -195,17 +265,29 @@ vogliono
 
 Persone che non vogliono intraprendere un percorso tradizionale e che cercano la reale indipendenza finanziaria
 
+  *in grassetto/link dentro:* non · reale
+
 **[y=5100] `strong`** — #fafafa / 16px / w700
 
 non
 
-**[y=5128] `strong`** — #fafafa / 16px / w700
+**[y=5128] `span`** — #fafafa / 16px / w300
 
 reale
+
+  *in grassetto/link dentro:* reale
 
 **[y=5190] `p`** — #fafafa / 16px / w300
 
 Chiunque abbia ambizione per sviluppare una skill concreta con cui guadagnare sia a breve che lungo termine.
+
+  *in grassetto/link dentro:* lungo termine
+
+**[y=5223] `span`** — #fafafa / 16px / w300
+
+lungo termine.
+
+  *in grassetto/link dentro:* lungo termine
 
 **[y=5223] `strong`** — #fafafa / 16px / w700
 
@@ -214,6 +296,8 @@ lungo termine
 **[y=5408] `h3`** — #1b1b1d / 38.4px / w700
 
 Gli altri ti mettono 30 video-recensioni (sicuramente tutte realissime e non pagate 💀💀). Io ti mostro i dati.
+
+  *in grassetto/link dentro:* (sicuramente tutte realissime e non pagate · ). · Io ti mostro i dati
 
 **[y=5448] `em`** — #1b1b1d / 38.4px / w700
 
@@ -231,17 +315,37 @@ Io ti mostro i dati
 
 Ecco perché, a mio avviso, dovresti scegliere il copywriting.
 
+**[y=5689] `h4`** — #1b1b1d / 24px / w700
+
+Il mercato globale dei servizi di copywriting ha un valore di $25.29 miliardi nel 2023. Secondo le analisi, arriverà a $42.22 miliardi entro il 2030. (fonte)
+
+  *in grassetto/link dentro:* fonte
+
 **[y=5688] `span`** — #686868 / 24px / w700
 
 Il mercato globale dei servizi di copywriting ha un valore di $25.29 miliardi nel 2023. Secondo le analisi, arriverà a $42.22 miliardi entro il 2030.
 
 **[y=5801] `span`** — #343434 / 24px / w700
 
+(
+
+**[y=5801] `a`** — #1b1b1d / 24px / w700 → `https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041`
+
 fonte
+
+**[y=5801] `span`** — #343434 / 24px / w700
+
+)
 
 **[y=5853] `p`** — #1b1b1d / 16px / w300
 
 Questa è una crescita stabile per un mercato in espansione, anche grazie all’ai.
+
+**[y=6006] `h4`** — #1b1b1d / 24px / w700
+
+Il mercato globale dei servizi di copywriting ha un valore di $25.29 miliardi nel 2023. Secondo le analisi, arriverà a $42.22 miliardi entro il 2030. (fonte)
+
+  *in grassetto/link dentro:* fonte
 
 **[y=6005] `span`** — #666666 / 24px / w700
 
@@ -249,11 +353,21 @@ Il mercato globale dei servizi di copywriting ha un valore di $25.29 miliardi ne
 
 **[y=6118] `span`** — #343434 / 24px / w700
 
+(
+
+**[y=6118] `a`** — #1b1b1d / 24px / w700 → `https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041`
+
 fonte
+
+**[y=6118] `span`** — #343434 / 24px / w700
+
+)
 
 **[y=6178] `p`** — #1b1b1d / 16px / w300
 
 Questi sono dati del 2023, quando l’AI era già in piena espansione. Grazie all’AI, i copywriter e writer del futuro se la giocano bene. Questi sono dati per l’USA. Ma sono rilevanti, perché quasi tutti i trend americani arrivano anche in Italia dopo un po’.
+
+  *in grassetto/link dentro:* del futuro
 
 **[y=6210] `strong`** — #1b1b1d / 16px / w700
 
@@ -263,6 +377,8 @@ del futuro
 
 Non ti sto promettendo di fare i milioni e di girare in lambo. Ti sto offrendo l’opportunità di fare i primi passi online con uno dei business più sicuri, sobri ed efficaci. Niente balletti. Niente eventi con la musica per fare hype. Niente promozioni scam. Solo una skill valorosa per il mercato, un corso dannatamente serio e una community di più di 2000 persone.
 
+  *in grassetto/link dentro:* Solo una skill valorosa per il mercato, un corso dannatamente serio e una community di più di 2000 persone.
+
 **[y=6508] `strong`** — #1b1b1d / 24px / w700
 
 Solo una skill valorosa per il mercato, un corso dannatamente serio e una community di più di 2000 persone.
@@ -271,45 +387,95 @@ Solo una skill valorosa per il mercato, un corso dannatamente serio e una commun
 
 Dopo il nord America, l’Europa è il mercato di copywriting più grande al mondo. La crescita proviene dalla richiesta di contenuti di qualità da aziende in settori come IT e salute. (fonte)
 
+  *in grassetto/link dentro:* al mondo. · fonte
+
 **[y=6710] `strong`** — #1b1b1d / 24px / w700
 
 al mondo.
 
-**[y=6795] `span`** — #1b1b1d / 24px / w700
+**[y=6795] `a`** — #1b1b1d / 24px / w700 → `https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041`
 
 fonte
 
-**[y=6913] `strong`** — #1b1b1d / 24px / w700
+**[y=6795] `span`** — #1b1b1d / 24px / w700
 
-oggettivamente
+)
 
 **[y=6914] `h4`** — #1b1b1d / 24px / w700
 
 Ti provo oggettivamente che il copywriting è la migliore carriera da avviare nel 2025.
 
-**[y=7008] `a`** — #ffffff / 16px / w700 → `https://www.andrei-copy.com/ecco-i-fatti-copywriting`
+  *in grassetto/link dentro:* oggettivamente
+
+**[y=6913] `span`** — #1b1b1d / 24px / w700
+
+oggettivamente
+
+  *in grassetto/link dentro:* oggettivamente
+
+**[y=7008] `div`** — #1b1b1d / 16px / w300
 
 Scopri i fatti sul copywriting
+
+  *in grassetto/link dentro:* Scopri i fatti sul copywriting
+
+**[y=7283] `h1`** — #fafafa / 60.8px / w700
+
+Cosa troverai in Copywriting Mentorship?
+
+  *in grassetto/link dentro:* Cosa troverai in · Copywriting Mentorship · ?
 
 **[y=7277] `strong`** — #fafafa / 60.8px / w700
 
 Cosa troverai in
 
-**[y=7341] `strong`** — #fafafa / 60.8px / w700
+**[y=7341] `span`** — #fafafa / 60.8px / w700
 
 Copywriting Mentorship
 
-**[y=7575] `strong`** — #efab00 / 38.4px / w700
+  *in grassetto/link dentro:* Copywriting Mentorship
+
+**[y=7341] `strong`** — #fafafa / 60.8px / w700
+
+?
+
+**[y=7578] `h3`** — #fafafa / 38.4px / w700
+
+30+ video-lezioni su come scrivere copy
+
+  *in grassetto/link dentro:* 30+ · video-lezioni su come scrivere copy
+
+**[y=7575] `span`** — #efab00 / 38.4px / w700
 
 30+
+
+  *in grassetto/link dentro:* 30+
 
 **[y=7575] `strong`** — #fafafa / 38.4px / w700
 
 video-lezioni su come scrivere copy
 
-**[y=7575] `strong`** — #efab00 / 38.4px / w700
+**[y=7705] `p`** — #fafafa / 16px / w300
+
+Saprai come scrivere copy usando l’AI e le più recenti strategie psicologiche provate per generare vendite.
+
+  *in grassetto/link dentro:* psicologiche provate
+
+**[y=7738] `strong`** — #fafafa / 16px / w700
+
+psicologiche provate
+
+**[y=7578] `h3`** — #fafafa / 38.4px / w700
+
+20+ video-lezioni su come trovare clienti
+
+  *in grassetto/link dentro:* 20+ · video-lezioni su come trovare clienti
+
+**[y=7575] `span`** — #efab00 / 38.4px / w700
 
 20+
+
+  *in grassetto/link dentro:* 20+
 
 **[y=7575] `strong`** — #fafafa / 38.4px / w700
 
@@ -317,23 +483,19 @@ video-lezioni su come trovare clienti
 
 **[y=7705] `p`** — #fafafa / 16px / w300
 
-Saprai come scrivere copy usando l’AI e le più recenti strategie psicologiche provate per generare vendite.
-
-**[y=7705] `p`** — #fafafa / 16px / w300
-
 Ti spiegherò come trovare il tuo primo cliente… Dal secondo, terzo e quarto cliente in poi, saprai come fare e alzare i prezzi. Ti farò seguire gli stessi identici step che ho seguito io
 
-**[y=7738] `strong`** — #fafafa / 16px / w700
-
-psicologiche provate
+  *in grassetto/link dentro:* gli stessi identici step che ho seguito io
 
 **[y=7796] `strong`** — #fafafa / 16px / w700
 
 gli stessi identici step che ho seguito io
 
-**[y=8040] `strong`** — #fafafa / 38.4px / w700
+**[y=8051] `h3`** — #fafafa / 38.4px / w700
 
-Quiz
+Riassunti e appunti
+
+  *in grassetto/link dentro:* Riassunti e appunti
 
 **[y=8048] `strong`** — #fafafa / 38.4px / w700
 
@@ -343,9 +505,25 @@ Riassunti e appunti
 
 Abbiamo preso appunti al posto tuo. Ogni lezione ha incluso dei riassunti.
 
+**[y=8043] `h3`** — #fafafa / 38.4px / w700
+
+Quiz
+
+  *in grassetto/link dentro:* Quiz
+
+**[y=8040] `strong`** — #fafafa / 38.4px / w700
+
+Quiz
+
 **[y=8128] `p`** — #fafafa / 16px / w300
 
 Assicurati di aver compreso i concetti usando i quiz che ti daranno un feedback sulla tua performance.
+
+**[y=8361] `h3`** — #fafafa / 38.4px / w700
+
+Gruppo telegram privato
+
+  *in grassetto/link dentro:* Gruppo telegram privato
 
 **[y=8358] `strong`** — #fafafa / 38.4px / w700
 
@@ -371,17 +549,21 @@ Fare domande su qualsiasi passo della carriera
 
 Il gruppo è moderato e non troverai spam o venditori di fuffa. Solo discussioni di valore.
 
-**[y=8787] `a`** — #fafafa / 16px / w600 → `/copy-base#pricing`
+**[y=8787] `div`** — #fafafa / 16px / w300
 
 Entra in Copywriting Mentorship
 
-**[y=8997] `strong`** — #fafafa / 48px / w700
-
-Copywriting Mentorship 6
+  *in grassetto/link dentro:* Entra in Copywriting Mentorship
 
 **[y=9001] `h2`** — #fafafa / 48px / w700
 
 Copywriting Mentorship 6: ti insegno cosa funziona… Sulla base dei dati, in lezioni deep.
+
+  *in grassetto/link dentro:* Copywriting Mentorship 6 · deep
+
+**[y=8997] `strong`** — #fafafa / 48px / w700
+
+Copywriting Mentorship 6
 
 **[y=9103] `strong`** — #fafafa / 48px / w700
 
@@ -395,19 +577,27 @@ Esempio a caso: c’è una lezione dedicata alla specializzazione.
 
 Ma non insegno cose “perché sembrano giuste”. Insegno cose che so che sono giuste oggettivamente.
 
-**[y=9248] `em`** — #fafafa / 16px / w700
+  *in grassetto/link dentro:* so · so · oggettivamente · oggettivamente
+
+**[y=9248] `span`** — #fafafa / 16px / w300
 
 so
 
-**[y=9277] `em`** — #fafafa / 16px / w700
+  *in grassetto/link dentro:* so · so
+
+**[y=9277] `span`** — #fafafa / 16px / w300
 
 oggettivamente
+
+  *in grassetto/link dentro:* oggettivamente · oggettivamente
 
 **[y=9318] `p`** — #fafafa / 16px / w300
 
 Secondo Coherent Market Insights, i copywriter possono fare impatto economico specializzandosi per nicchia.
 
-**[y=9322] `span`** — #0062ff / 16px / w300
+  *in grassetto/link dentro:* Coherent Market Insights
+
+**[y=9322] `a`** — #0062ff / 16px / w300 → `https://www.coherentmarketinsights.com/market-insight/copywriting-services-market-6041`
 
 Coherent Market Insights
 
@@ -415,29 +605,35 @@ Coherent Market Insights
 
 Questo standard informativo è mantenuto per decine e decine di videolezioni. Abbiamo anni di esperienza di formazioni di copywriting, è per quello che conosciamo questi dati di cui quasi nessuno ti parla (e se te ne parla, chissà… Forse hanno copiato da questa pagina).
 
+  *in grassetto/link dentro:* anni · quasi nessuno ti parla · (e se te ne parla, chissà… Forse hanno copiato da questa pagina).
+
 **[y=9424] `strong`** — #fafafa / 16px / w700
 
 anni
-
-**[y=9453] `em`** — #fafafa / 16px / w300
-
-(e se te ne parla, chissà… Forse hanno copiato da questa pagina).
 
 **[y=9453] `strong`** — #fafafa / 16px / w700
 
 quasi nessuno ti parla
 
+**[y=9453] `em`** — #fafafa / 16px / w300
+
+(e se te ne parla, chissà… Forse hanno copiato da questa pagina).
+
 **[y=9523] `p`** — #fafafa / 16px / w300
 
 È proprio perché agiamo sui dati non sulle speranze che abbiamo:
+
+  *in grassetto/link dentro:* agiamo sui dati · non · sulle speranze
 
 **[y=9527] `strong`** — #fafafa / 16px / w700
 
 agiamo sui dati
 
-**[y=9527] `strong`** — #fafafa / 16px / w700
+**[y=9527] `span`** — #fafafa / 16px / w300
 
 non
+
+  *in grassetto/link dentro:* non
 
 **[y=9527] `strong`** — #fafafa / 16px / w700
 
@@ -446,6 +642,8 @@ sulle speranze
 **[y=9567] `p`** — #fafafa / 16px / w300
 
 Più di 3100 ordini sul questo sito
+
+  *in grassetto/link dentro:* 3100 · ordini
 
 **[y=9571] `strong`** — #fafafa / 16px / w700
 
@@ -459,6 +657,8 @@ ordini
 
 Più di 2000 studenti di copy
 
+  *in grassetto/link dentro:* 2000 studenti
+
 **[y=9608] `strong`** — #fafafa / 16px / w700
 
 2000 studenti
@@ -467,17 +667,27 @@ Più di 2000 studenti di copy
 
 500+ copie del mio libro vendute
 
+  *in grassetto/link dentro:* 500+ copie
+
 **[y=9645] `strong`** — #fafafa / 16px / w700
 
 500+ copie
+
+**[y=9924] `h2`** — #fafafa / 47.9px / w700
+
+Sono il mentore che cercavi.
+
+  *in grassetto/link dentro:* Sono il · mentore · che cercavi.
 
 **[y=9917] `strong`** — #fafafa / 47.9px / w700
 
 Sono il
 
-**[y=9917] `strong`** — #fafafa / 47.9px / w700
+**[y=9917] `span`** — #fafafa / 47.9px / w700
 
 mentore
+
+  *in grassetto/link dentro:* mentore
 
 **[y=9917] `strong`** — #fafafa / 47.9px / w700
 
@@ -487,6 +697,8 @@ che cercavi.
 
 Dalla scrivania nella casa di un paesino ad un ufficio e azienda in centro a Bologna
 
+  *in grassetto/link dentro:* ad un ufficio e azienda in centro a Bologna
+
 **[y=10073] `strong`** — #fafafa / 38.4px / w700
 
 ad un ufficio e azienda in centro a Bologna
@@ -494,6 +706,8 @@ ad un ufficio e azienda in centro a Bologna
 **[y=10224] `p`** — #fafafa / 16px / w300
 
 A differenza degli altri, non sono a Dubai (per un giorno) in una Lamborghini (affittata). Sto scrivendo questo dal mio ufficio, nel tempo che mi sono ritagliato tra un progetto e un altro.
+
+  *in grassetto/link dentro:* (per un giorno) · (affittata)
 
 **[y=10228] `em`** — #fafafa / 16px / w300
 
@@ -503,6 +717,12 @@ A differenza degli altri, non sono a Dubai (per un giorno) in una Lamborghini (a
 
 (affittata)
 
+**[y=10393] `h3`** — #fafafa / 38.4px / w700
+
+Anche se a dire il vero…
+
+  *in grassetto/link dentro:* Anche se a dire il vero…
+
 **[y=10390] `em`** — #fafafa / 38.4px / w700
 
 Anche se a dire il vero…
@@ -510,6 +730,8 @@ Anche se a dire il vero…
 **[y=10468] `p`** — #fafafa / 16px / w300
 
 Non ho sempre avuto i mezzi per raggiungere grandi obiettivi: fino a 6 anni fa ero privo di carisma, di personalità e di abilità nell’affrontare e abbattere i problemi.
+
+  *in grassetto/link dentro:* privo
 
 **[y=10472] `strong`** — #fafafa / 16px / w700
 
@@ -523,6 +745,8 @@ abbattere
 
 Sono nato come introverso e insicuro, per questo devo ringraziare il me del 2019 che in quel periodo decise di prendere il controllo della sua vita.
 
+  *in grassetto/link dentro:* introverso · insicuro
+
 **[y=10546] `strong`** — #fafafa / 16px / w700
 
 introverso
@@ -535,6 +759,8 @@ insicuro
 
 Inizialmente nessuno credeva nel mio progetto, neppure i miei professori. Nonostante ciò ho raggiunto ogni singolo obiettivo che mi ero posto, togliendomi ogni sfizio.
 
+  *in grassetto/link dentro:* ogni singolo obiettivo
+
 **[y=10620] `strong`** — #fafafa / 16px / w700
 
 ogni singolo obiettivo
@@ -543,13 +769,13 @@ ogni singolo obiettivo
 
 Ho solo 23 anni, ma nonostante ciò ho +270K follower, clienti da 8 paesi, e sto aiutando più di 3000 ragazzi e ragazze a costruirsi delle entrate e migliorare la propria vita, trovando chiarezza e direzione… Definitivamente.
 
-**[y=10910] `span`** — #ffffff / 16px / w400
+**[y=10873] `button`** — #ffffff / 16px / w400
 
 Riproduci
 
-**[y=10955] `span`** — #000000 / 12px / w400
+**[y=10910] `span`** — #ffffff / 16px / w400
 
-00:00
+Riproduci
 
 **[y=10965] `div`** — #ffffff / 12px / w400
 
@@ -559,41 +785,63 @@ Riproduci
 
 02:10
 
-**[y=10985] `span`** — #e7e7e7 / 16px / w400
+**[y=10961] `div`** — #ffffff / 16px / w400
 
 Disattiva audio
 
 **[y=10985] `span`** — #e7e7e7 / 16px / w400
 
+Disattiva audio
+
+**[y=10961] `button`** — #e7e7e7 / 16px / w400
+
 Attiva modalità schermo intero
 
-**[y=11052] `a`** — #a8a8a8 / 14.272px / w500 → `/recensioni-copywriting-mentorship`
+**[y=10985] `span`** — #e7e7e7 / 16px / w400
+
+Attiva modalità schermo intero
+
+**[y=10988] `div`** — #ffffff / 16px / w400
+
+00:00
+
+**[y=10955] `span`** — #000000 / 12px / w400
+
+00:00
+
+**[y=11052] `div`** — #fafafa / 16px / w300
 
 Scopri cosa pensa chi è dentro il mio corso
+
+  *in grassetto/link dentro:* Scopri cosa pensa chi è dentro il mio corso
 
 **[y=11334] `h3`** — #fafafa / 47.6px / w700
 
 Video testimonianze degli studenti
 
-**[y=11378] `strong`** — #efab00 / 60.1px / w700
-
-Copywriting Mentorship
-
 **[y=11386] `h3`** — #fafafa / 60.1px / w700
 
 di Copywriting Mentorship.
+
+  *in grassetto/link dentro:* Copywriting Mentorship
+
+**[y=11378] `span`** — #efab00 / 60.1px / w700
+
+Copywriting Mentorship
+
+  *in grassetto/link dentro:* Copywriting Mentorship
 
 **[y=11481] `h4`** — #fafafa / 24px / w700
 
 Ascolta le recensioni lasciate dai nostri studenti
 
-**[y=11706] `span`** — #ffffff / 16px / w400
+**[y=11669] `button`** — #ffffff / 16px / w400
 
 Riproduci
 
-**[y=11708] `span`** — #000000 / 12px / w400
+**[y=11706] `span`** — #ffffff / 16px / w400
 
-00:00
+Riproduci
 
 **[y=11719] `div`** — #ffffff / 12px / w400
 
@@ -603,29 +851,37 @@ Riproduci
 
 01:28
 
-**[y=11719] `div`** — #ffffff / 12px / w400
-
-03:07
-
-**[y=11719] `div`** — #ffffff / 12px / w400
-
-03:14
-
-**[y=11739] `span`** — #e7e7e7 / 16px / w400
+**[y=11715] `div`** — #ffffff / 16px / w400
 
 Disattiva audio
 
 **[y=11739] `span`** — #e7e7e7 / 16px / w400
 
+Disattiva audio
+
+**[y=11715] `button`** — #e7e7e7 / 16px / w400
+
 Attiva modalità schermo intero
+
+**[y=11739] `span`** — #e7e7e7 / 16px / w400
+
+Attiva modalità schermo intero
+
+**[y=11742] `div`** — #ffffff / 16px / w400
+
+00:00
+
+**[y=11708] `span`** — #000000 / 12px / w400
+
+00:00
+
+**[y=11840] `button`** — #ffffff / 16px / w400
+
+Riproduci
 
 **[y=11877] `span`** — #ffffff / 16px / w400
 
 Riproduci
-
-**[y=11880] `span`** — #000000 / 12px / w400
-
-00:00
 
 **[y=11890] `div`** — #ffffff / 12px / w400
 
@@ -635,21 +891,53 @@ Riproduci
 
 02:19
 
-**[y=11890] `div`** — #ffffff / 12px / w400
-
-00:48
-
-**[y=11910] `span`** — #e7e7e7 / 16px / w400
+**[y=11886] `div`** — #ffffff / 16px / w400
 
 Disattiva audio
 
 **[y=11910] `span`** — #e7e7e7 / 16px / w400
 
+Disattiva audio
+
+**[y=11886] `button`** — #e7e7e7 / 16px / w400
+
 Attiva modalità schermo intero
 
-**[y=11965] `a`** — #fafafa / 16px / w600 → `/recensioni-copywriting-mentorship`
+**[y=11910] `span`** — #e7e7e7 / 16px / w400
+
+Attiva modalità schermo intero
+
+**[y=11913] `div`** — #ffffff / 16px / w400
+
+00:00
+
+**[y=11880] `span`** — #000000 / 12px / w400
+
+00:00
+
+**[y=11719] `div`** — #ffffff / 12px / w400
+
+03:07
+
+**[y=11890] `div`** — #ffffff / 12px / w400
+
+00:48
+
+**[y=11719] `div`** — #ffffff / 12px / w400
+
+03:14
+
+**[y=11965] `div`** — #fafafa / 16px / w300
 
 Leggi altri pareri degli studenti
+
+  *in grassetto/link dentro:* Leggi altri pareri degli studenti
+
+**[y=12205] `h1`** — #fafafa / 31.2px / w700
+
+Impara a usare l’AI prima che sia lui a usare te
+
+  *in grassetto/link dentro:* Impara a usare l’AI prima che sia lui a usare te
 
 **[y=12201] `strong`** — #fafafa / 31.2px / w700
 
@@ -659,6 +947,12 @@ Impara a usare l’AI prima che sia lui a usare te
 
 Una domanda che molte persone mi fanno è:
 
+**[y=12344] `p`** — #fafafa / 16px / w300
+
+“Ma Andrei, come farai ora che c'è l'intelligenza artificiale a sostituire i copywriter?”
+
+  *in grassetto/link dentro:* “Ma Andrei, come farai ora che c'è l'intelligenza artificiale a sostituire i copywriter?”
+
 **[y=12348] `em`** — #fafafa / 16px / w300
 
 “Ma Andrei, come farai ora che c'è l'intelligenza artificiale a sostituire i copywriter?”
@@ -667,21 +961,35 @@ Una domanda che molte persone mi fanno è:
 
 E la risposta da parte mia è sempre la stessa:
 
+**[y=12465] `p`** — #fafafa / 16px / w300
+
+“Chi fa scrivere i propri copy all’AI perde. Ora lo standard è rappresentato dall’AI, e chi la usa per scrivere i copy si inserisce automaticamente nella media…”
+
+  *in grassetto/link dentro:* “Chi fa scrivere i propri copy all’AI · perde · . Ora lo standard è rappresentato dall’AI, e chi la usa per scrivere i copy si inserisce automaticamente nella media…”
+
 **[y=12469] `em`** — #fafafa / 16px / w300
 
 “Chi fa scrivere i propri copy all’AI
+
+**[y=12469] `span`** — #fafafa / 16px / w300
+
+perde
+
+  *in grassetto/link dentro:* perde
 
 **[y=12469] `em`** — #fafafa / 16px / w300
 
 . Ora lo standard è rappresentato dall’AI, e chi la usa per scrivere i copy si inserisce automaticamente nella media…”
 
-**[y=12469] `em`** — #fafafa / 16px / w300
-
-perde
-
 **[y=12538] `p`** — #fafafa / 16px / w300
 
 Chi sa scrivere dei copy anche leggermente migliori di quelli prodotti dalle Intelligenze Artificiali si posiziona al di sopra della media dei copywriter.
+
+**[y=12685] `h3`** — #fafafa / 38.4px / w700
+
+Come sfruttare l’AI per scrivere copy?
+
+  *in grassetto/link dentro:* Come sfruttare l’AI per scrivere copy?
 
 **[y=12682] `strong`** — #fafafa / 38.4px / w700
 
@@ -695,6 +1003,10 @@ Ci sono 2 tipi di copywriter che utilizzano l’AI…
 
 Quelli che fanno scrivere i copy direttamente a ChatGPT, buttando via i soldi dell’azienda e rendendosi facilmente rimpiazzabili, dato che potrebbe farlo l’azienda da sola.
 
+**[y=12990] `span`** — #fafafa / 16px / w300
+
+rimpiazzabili
+
 **[y=12900] `p`** — #fafafa / 16px / w300
 
 Coloro che sanno come velocizzare e migliorare il lavoro tramite questa tecnologia per sfruttarla (sono rari e desiderati dalle aziende).
@@ -703,41 +1015,45 @@ Coloro che sanno come velocizzare e migliorare il lavoro tramite questa tecnolog
 
 migliorare
 
-**[y=12990] `span`** — #fafafa / 16px / w300
-
-rimpiazzabili
-
 **[y=13083] `h4`** — #fafafa / 24px / w700
 
 Io ti insegno come rientrare nella seconda categoria
 
-**[y=13150] `a`** — #fafafa / 16px / w600 → `/copy-base#pricing`
+**[y=13150] `div`** — #fafafa / 16px / w300
 
 Entra e batti la mediocrità
 
-**[y=13390] `strong`** — #fafafa / 33.8px / w700
-
-mai
+  *in grassetto/link dentro:* Entra e batti la mediocrità
 
 **[y=13395] `h2`** — #fafafa / 33.8px / w700
 
 Un corso non è mai stato così completo…
 
+  *in grassetto/link dentro:* mai
+
+**[y=13390] `strong`** — #fafafa / 33.8px / w700
+
+mai
+
 **[y=13457] `h4`** — #fafafa / 24px / w700
 
 Abbiamo davvero pensato a tutto, scopri il nostro ecosistema:
+
+  *in grassetto/link dentro:* davvero · ecosistema
 
 **[y=13485] `strong`** — #fafafa / 24px / w700
 
 ecosistema
 
-**[y=13682] `strong`** — #fafafa / 40.1px / w700
-
-tu le sfrutti
-
 **[y=13688] `h3`** — #fafafa / 40.1px / w700
 
 Io ti do le informazioni, tu le sfrutti:
+
+  *in grassetto/link dentro:* tu le sfrutti
+
+**[y=13682] `strong`** — #fafafa / 40.1px / w700
+
+tu le sfrutti
 
 **[y=13787] `h4`** — #fafafa / 24px / w700
 
@@ -755,29 +1071,47 @@ Una volta dentro otterrai accesso alle stesse nozioni che mi hanno permesso di s
 
 A differenza di altri corsi, con Copywriting Mentorship non ti ritroverai spaesato quando dovrai cercare i primi clienti. Nella sezione business ti aspettano 4 differenti strategie per la ricerca clienti.
 
+**[y=14370] `h1`** — #fafafa / 42px / w700
+
+Le video-lezioni
+
+  *in grassetto/link dentro:* Le video-lezioni
+
 **[y=14364] `strong`** — #fafafa / 42px / w700
 
 Le video-lezioni
 
-**[y=14440] `strong`** — #fafafa / 24px / w700
+**[y=14441] `h4`** — #fafafa / 24px / w700
 
 60+ lezioni totali.
+
+  *in grassetto/link dentro:* 60+ lezioni totali.
+
+**[y=14440] `span`** — #fafafa / 24px / w700
+
+60+ lezioni totali.
+
+  *in grassetto/link dentro:* 60+ lezioni totali.
 
 **[y=14502] `h4`** — #fafafa / 24px / w700
 
 Clicca su una sezione per vedere dettagli.
 
-**[y=14597] `strong`** — #fafafa / 29.6px / w700
-
-Parte 1
-
 **[y=14602] `h3`** — #fafafa / 29.6px / w700
 
 Parte 1: come scrivere copy
 
+  *in grassetto/link dentro:* Parte 1
+
+**[y=14597] `strong`** — #fafafa / 29.6px / w700
+
+Parte 1
+
 **[y=14662] `p`** — #fafafa / 16px / w300
 
 Questa è la prima parte del corso e contiene tutte le lezioni che ti insegnano come scrivere copy (anche se parti completamente da zero).
+
+  *in grassetto/link dentro:* come scrivere copy · da zero
 
 **[y=14666] `strong`** — #fafafa / 16px / w700
 
@@ -803,17 +1137,21 @@ Sezione 2: Come scrivere copy basilare
 
 Sezione 3: Copywriting avanzato
 
-**[y=15373] `strong`** — #fafafa / 29px / w700
-
-Parte 2
-
-**[y=15377] `h3`** — #fafafa / 29px / w700
+**[y=15377] `h3`** — #fafafa / 28.9px / w700
 
 Parte 2: come trovare clienti
+
+  *in grassetto/link dentro:* Parte 2
+
+**[y=15373] `strong`** — #fafafa / 28.9px / w700
+
+Parte 2
 
 **[y=15437] `p`** — #fafafa / 16px / w300
 
 Questa è la seconda parte del corso e spiega come trovare clienti (con 4 metodi provati), come rapportarsi con le aziende e come creare la propria reputazione online.
+
+  *in grassetto/link dentro:* come trovare clienti · 4 metodi
 
 **[y=15441] `strong`** — #fafafa / 16px / w700
 
@@ -831,13 +1169,15 @@ Sezione 4: Business
 
 Sezione 5: Vendita
 
-**[y=16007] `strong`** — #fafafa / 27.7px / w700
-
-Parte 3
-
-**[y=16011] `h3`** — #fafafa / 27.7px / w700
+**[y=16011] `h3`** — #fafafa / 27.6px / w700
 
 Parte 3: Intelligenza artificiale
+
+  *in grassetto/link dentro:* Parte 3
+
+**[y=16007] `strong`** — #fafafa / 27.6px / w700
+
+Parte 3
 
 **[y=16070] `p`** — #fafafa / 16px / w300
 
@@ -847,6 +1187,12 @@ Questa è la terza e ultima parte del corso ed è riservata all’AI. Ti insegno
 
 Sezione 6: AI
 
+**[y=16597] `h2`** — #fafafa / 31.6px / w700
+
+Contenuti per massimizzare il successo
+
+  *in grassetto/link dentro:* Contenuti per massimizzare il successo
+
 **[y=16592] `strong`** — #fafafa / 31.6px / w700
 
 Contenuti per massimizzare il successo
@@ -855,9 +1201,21 @@ Contenuti per massimizzare il successo
 
 All’interno del corso abbiamo aggiunto contenuti extra che hanno l’obiettivo di aiutarti ad ottenere i migliori risultati possibili.
 
+**[y=16741] `p`** — #fafafa / 20px / w300
+
+Alcuni di questi sono:
+
+  *in grassetto/link dentro:* Alcuni di questi sono:
+
 **[y=16747] `strong`** — #fafafa / 20px / w700
 
 Alcuni di questi sono:
+
+**[y=17244] `h1`** — #fafafa / 38.5px / w700
+
+Gruppo telegram privato
+
+  *in grassetto/link dentro:* Gruppo telegram privato
 
 **[y=17238] `strong`** — #fafafa / 38.5px / w700
 
@@ -867,9 +1225,7 @@ Gruppo telegram privato
 
 Nel corso è compreso l’accesso al gruppo telegram privato con oltre 750+ copywriter.
 
-**[y=17357] `p`** — #fafafa / 16px / w300
-
-Questa è una community di persone unite dalla voglia di cambiare le cose. Persone che vogliono avere pesante influenza sul mercato, vogliono libertà. Persone che vogliono salute fisica e mentale e che sono pronte ad aiutarsi a vicenda.
+  *in grassetto/link dentro:* gruppo telegram · 750+ copywriter
 
 **[y=17389] `strong`** — #fafafa / 16px / w700
 
@@ -891,13 +1247,23 @@ Conoscere altri copywriter
 
 Chiedere feedback sui tuoi copy
 
+**[y=17606] `p`** — #fafafa / 16px / w300
+
+Chiedere aiuto per qualsiasi cosa al team di APS o ad altri studenti
+
+**[y=17357] `p`** — #fafafa / 16px / w300
+
+Questa è una community di persone unite dalla voglia di cambiare le cose. Persone che vogliono avere pesante influenza sul mercato, vogliono libertà. Persone che vogliono salute fisica e mentale e che sono pronte ad aiutarsi a vicenda.
+
 **[y=17603] `p`** — #fafafa / 16px / w300
 
 Non c’è una community del genere in Italia… Quindi, che dici? Vuoi farne parte?
 
-**[y=17606] `p`** — #fafafa / 16px / w300
+**[y=17837] `h2`** — #fafafa / 41.4px / w700
 
-Chiedere aiuto per qualsiasi cosa al team di APS o ad altri studenti
+Consulenze direttamente con me
+
+  *in grassetto/link dentro:* Consulenze direttamente con me
 
 **[y=17831] `strong`** — #fafafa / 41.4px / w700
 
@@ -910,6 +1276,8 @@ Non sei più solo.
 **[y=17965] `p`** — #fafafa / 16px / w300
 
 In Copywriting Mentorship sarai sempre seguito. Questa è la garanzia del nostro corso. Se ti trovi in difficoltà, potrai in qualsiasi momento richiedere una consulenza di 60 minuti del tutto gratuita direttamente con me.
+
+  *in grassetto/link dentro:* sempre
 
 **[y=17969] `strong`** — #fafafa / 16px / w700
 
@@ -931,13 +1299,21 @@ sempre
 
 💬 A cosa servono?
 
-**[y=18539] `a`** — #fafafa / 16px / w600 → `/copy-base#pricing`
+**[y=18539] `div`** — #fafafa / 16px / w300
 
 Entra, studia e inizia
+
+  *in grassetto/link dentro:* Entra, studia e inizia
 
 **[y=18792] `h2`** — #fafafa / 32px / w700
 
 Diamo peso agli aggiornamenti di mercato:
+
+**[y=18848] `h4`** — #fafafa / 24px / w700
+
+Questa frase l’avevo trovata sul sito di un famoso corso di Copywriting
+
+  *in grassetto/link dentro:* Questa frase l’avevo trovata sul sito di un famoso corso di Copywriting
 
 **[y=18847] `strong`** — #fafafa / 24px / w700
 
@@ -946,6 +1322,8 @@ Questa frase l’avevo trovata sul sito di un famoso corso di Copywriting
 **[y=19057] `p`** — #fafafa / 16px / w300
 
 Parlava come se fossimo nel 2020… Quando eravamo già nel 2023.
+
+  *in grassetto/link dentro:* 2020 · 2023
 
 **[y=19061] `strong`** — #fafafa / 16px / w700
 
@@ -959,6 +1337,8 @@ Parlava come se fossimo nel 2020… Quando eravamo già nel 2023.
 
 Se dico questo è per dimostrare come anche corsi rinomatissimi in Italia (da centinaia e centinaia di euro) spesso non si prendono l’impegno di continuare ad aggiornarsi.
 
+  *in grassetto/link dentro:* non
+
 **[y=19134] `strong`** — #fafafa / 16px / w700
 
 non
@@ -967,13 +1347,17 @@ non
 
 Copywriting Mentorship non solo è aggiornato al 2025, ma garantisce (senza alcun pagamento extra) costanti aggiornamenti.
 
+  *in grassetto/link dentro:* non · costanti aggiornamenti.
+
 **[y=19179] `strong`** — #fafafa / 16px / w700
 
 non
 
-**[y=19208] `strong`** — #fafafa / 16px / w700
+**[y=19208] `span`** — #fafafa / 16px / w300
 
 costanti aggiornamenti.
+
+  *in grassetto/link dentro:* costanti aggiornamenti.
 
 **[y=19249] `p`** — #fafafa / 16px / w300
 
@@ -983,33 +1367,55 @@ I corsi devono restare al passo con il mercato.
 
 Ecco perché ho creato Copywriting Mentorship, ecco perché questi nuovi aggiornamenti sono GRATIS per i miei studenti ed ecco perché continuerò a portare aggiornamenti nel futuro.
 
+  *in grassetto/link dentro:* GRATIS · continuerò · continuerò
+
 **[y=19326] `strong`** — #fafafa / 16px / w700
 
 GRATIS
 
-**[y=19326] `em`** — #fafafa / 16px / w700
+**[y=19326] `strong`** — #fafafa / 16px / w700
 
 continuerò
+
+  *in grassetto/link dentro:* continuerò
 
 **[y=19404] `h4`** — #fafafa / 24px / w700
 
 Abbiamo posto dei questionari ai nostri studenti e abbiamo scoperto che 1/3 di loro ha già trovato dei clienti (E non tutti gli intervistati hanno ancora concluso il corso…)
 
+  *in grassetto/link dentro:* (E non tutti gli intervistati hanno ancora concluso il corso…)
+
 **[y=19544] `em`** — #fafafa / 24px / w700
 
 (E non tutti gli intervistati hanno ancora concluso il corso…)
+
+**[y=19781] `h2`** — #fafafa / 52.3px / w700
+
+Ecco il piano
+
+  *in grassetto/link dentro:* Ecco il · piano
 
 **[y=19774] `strong`** — #fafafa / 52.3px / w700
 
 Ecco il
 
-**[y=19774] `strong`** — #fafafa / 52.3px / w700
+**[y=19774] `span`** — #fafafa / 52.3px / w700
 
 piano
+
+  *in grassetto/link dentro:* piano
+
+**[y=20317] `h4`** — #fafafa / 24px / w700
+
+Devi leggere per capire come funziona ⬇️
+
+  *in grassetto/link dentro:* Devi leggere per capire come funziona ⬇️ · Devi leggere per capire come funziona
 
 **[y=20316] `strong`** — #fafafa / 24px / w700
 
 Devi leggere per capire come funziona ⬇️
+
+  *in grassetto/link dentro:* Devi leggere per capire come funziona
 
 **[y=20316] `em`** — #fafafa / 24px / w700
 
@@ -1023,6 +1429,8 @@ Devi leggere per capire come funziona
 
 Vuoi fare cose divertenti o vuoi fare soldi? Sono dell’opinione che per fare successo bisogna conoscere la mano che ti è stata data… E giocarla al meglio.
 
+  *in grassetto/link dentro:* cose divertenti · vuoi fare soldi?
+
 **[y=20613] `em`** — #1b1b1d / 16px / w300
 
 cose divertenti
@@ -1030,6 +1438,12 @@ cose divertenti
 **[y=20613] `em`** — #1b1b1d / 16px / w300
 
 vuoi fare soldi?
+
+**[y=20703] `h2`** — #1b1b1d / 48px / w700
+
+La tua mano.
+
+  *in grassetto/link dentro:* La tua mano.
 
 **[y=20699] `strong`** — #1b1b1d / 48px / w700
 
@@ -1039,29 +1453,21 @@ La tua mano.
 
 A differenza di tutte le milioni di persone che stanno provando a fare copy…
 
-**[y=21671] `a`** — #fafafa / 14.272px / w500 → `#page`
+**[y=21941] `h4`** — #fafafa / 24px / w700
 
-Passa al contenuto
+Tu adesso puoi accedere a una carta leggendaria.
 
-**[y=21679] `a`** — #fafafa / 16px / w300 → `https://claude-speedrun.com`
-
-Claude Speedrun
-
-**[y=21680] `span`** — #fafafa / 16px / w300
-
-Accedi
+  *in grassetto/link dentro:* leggendaria
 
 **[y=21940] `strong`** — #fafafa / 24px / w700
 
 leggendaria
 
-**[y=21941] `h4`** — #fafafa / 24px / w700
-
-Tu adesso puoi accedere a una carta leggendaria.
-
 **[y=22188] `h2`** — #fafafa / 48px / w700
 
 Questo percorso lo descrivo con una sola frase: cambiare vita.
+
+  *in grassetto/link dentro:* cambiare vita
 
 **[y=22290] `em`** — #fafafa / 48px / w700
 
@@ -1074,6 +1480,8 @@ Se potessi trovare la direzione nella tua vita e ottenere molteplici stipendi al
 **[y=22482] `p`** — #fafafa / 16px / w300
 
 So il valore che posso offrire, so le vite che ho cambiato, dai membri del mio team, fino agli studenti del mio corso.
+
+  *in grassetto/link dentro:* cambiato
 
 **[y=22486] `strong`** — #fafafa / 16px / w700
 
@@ -1095,31 +1503,25 @@ Per iniziare questo viaggio devi solo iscriverti.
 
 L’iscrizione richiede un UNICO pagamento.
 
-**[y=22875] `a`** — #fafafa / 16px / w600 → `/copy-base#pricing`
+**[y=22875] `div`** — #fafafa / 16px / w300
 
 Clicca qui
+
+  *in grassetto/link dentro:* Clicca qui
+
+**[y=23129] `h2`** — #1b1b1d / 48px / w700
+
+Opinioni e risultati degli studenti di Copywriting Mentorship
 
 **[y=23125] `span`** — #1b1b1d / 48px / w700
 
 Opinioni e risultati degli studenti di Copywriting Mentorship
 
-**[y=23854] `strong`** — #fafafa / 156.7px / w700
-
-Pricing
-
 **[y=24125] `div`** — #ffffff / 40px / w700
 
 €349 pagamento unico
 
-**[y=24126] `div`** — #ffffff / 40px / w700
-
-€999 pagamento unico
-
 **[y=24154] `span`** — #888888 / 14.4px / w400
-
-pagamento unico
-
-**[y=24155] `span`** — #888888 / 14.4px / w400
 
 pagamento unico
 
@@ -1127,61 +1529,125 @@ pagamento unico
 
 ✓ 40+ lezioni su come fare copywriting
 
-**[y=24208] `li`** — #e0e0e0 / 15.2px / w300
+**[y=24225] `span`** — #000000 / 12.8px / w600
 
-✓ 40+ lezioni su come fare copywriting
+✓
 
 **[y=24280] `li`** — #e0e0e0 / 15.2px / w300
 
 ✓ 20+ lezioni su come trovare clienti
 
-**[y=24281] `li`** — #e0e0e0 / 15.2px / w300
+**[y=24299] `span`** — #000000 / 12.8px / w600
 
-✓ 20+ lezioni su come trovare clienti
+✓
 
 **[y=24354] `li`** — #e0e0e0 / 15.2px / w300
 
 ✓ Accesso al gruppo telegram
 
-**[y=24355] `li`** — #e0e0e0 / 15.2px / w300
+**[y=24358] `span`** — #000000 / 12.8px / w600
 
-✓ Accesso al gruppo telegram
+✓
 
 **[y=24399] `li`** — #e0e0e0 / 15.2px / w300
 
 ✓ PDF, riassunti ed esercitazioni
 
-**[y=24400] `li`** — #e0e0e0 / 15.2px / w300
+**[y=24403] `span`** — #000000 / 12.8px / w600
 
-✓ PDF, riassunti ed esercitazioni
+✓
 
 **[y=24443] `li`** — #e0e0e0 / 15.2px / w300
 
 ✓ Accesso a vita
 
-**[y=24444] `li`** — #e0e0e0 / 15.2px / w300
+**[y=24448] `span`** — #000000 / 12.8px / w600
 
-✓ Accesso a vita
+✓
 
 **[y=24488] `li`** — #e0e0e0 / 15.2px / w300
 
 ✓ Esame conclusivo gratuito
 
-**[y=24489] `li`** — #e0e0e0 / 15.2px / w300
+**[y=24493] `span`** — #000000 / 12.8px / w600
 
-✓ Esame conclusivo gratuito
+✓
 
 **[y=24533] `li`** — #e0e0e0 / 15.2px / w300
 
 ✓ 1 consulenza di 60 min con Andrei P.
 
-**[y=24534] `li`** — #e0e0e0 / 15.2px / w300
+**[y=24564] `span`** — #000000 / 12.8px / w600
 
-✓ Consulenze illimitate con Andrei P.
+✓
 
 **[y=24657] `a`** — #ffffff / 16px / w600 → `https://www.andrei-copy.com/pre-checkout-cmb`
 
 Acquista Base
+
+**[y=24126] `div`** — #ffffff / 40px / w700
+
+€999 pagamento unico
+
+**[y=24155] `span`** — #888888 / 14.4px / w400
+
+pagamento unico
+
+**[y=24208] `li`** — #e0e0e0 / 15.2px / w300
+
+✓ 40+ lezioni su come fare copywriting
+
+**[y=24226] `span`** — #000000 / 12.8px / w600
+
+✓
+
+**[y=24281] `li`** — #e0e0e0 / 15.2px / w300
+
+✓ 20+ lezioni su come trovare clienti
+
+**[y=24300] `span`** — #000000 / 12.8px / w600
+
+✓
+
+**[y=24355] `li`** — #e0e0e0 / 15.2px / w300
+
+✓ Accesso al gruppo telegram
+
+**[y=24359] `span`** — #000000 / 12.8px / w600
+
+✓
+
+**[y=24400] `li`** — #e0e0e0 / 15.2px / w300
+
+✓ PDF, riassunti ed esercitazioni
+
+**[y=24404] `span`** — #000000 / 12.8px / w600
+
+✓
+
+**[y=24444] `li`** — #e0e0e0 / 15.2px / w300
+
+✓ Accesso a vita
+
+**[y=24449] `span`** — #000000 / 12.8px / w600
+
+✓
+
+**[y=24489] `li`** — #e0e0e0 / 15.2px / w300
+
+✓ Esame conclusivo gratuito
+
+**[y=24494] `span`** — #000000 / 12.8px / w600
+
+✓
+
+**[y=24534] `li`** — #e0e0e0 / 15.2px / w300
+
+✓ Consulenze illimitate con Andrei P.
+
+**[y=24565] `span`** — #000000 / 12.8px / w600
+
+✓
 
 **[y=24658] `a`** — #000000 / 16px / w600 → `https://www.andrei-copy.com/pre-checkout-cm`
 
@@ -1194,6 +1660,22 @@ Upgrade disponibile
 **[y=24903] `p`** — #e0e0e0 / 14.4px / w300
 
 Chi acquista la versione BASE può sempre fare l'upgrade al corso completo pagando solo la differenza (€650).
+
+**[y=23875] `h4`** — #fafafa / 156.7px / w700
+
+Pricing
+
+  *in grassetto/link dentro:* Pricing
+
+**[y=23854] `strong`** — #fafafa / 156.7px / w700
+
+Pricing
+
+**[y=25148] `h2`** — #fafafa / 91.4px / w700
+
+Domande comuni
+
+  *in grassetto/link dentro:* Domande comuni
 
 **[y=25136] `strong`** — #fafafa / 91.4px / w700
 
@@ -1235,21 +1717,51 @@ Le consulenze sono illimitate?
 
 Ho dei dubbi. Dove posso contattare Andrei?
 
+**[y=26439] `p`** — #fafafa / 16px / w300
+
+La mia storia
+
+  *in grassetto/link dentro:* La mia storia
+
 **[y=26443] `span`** — #fafafa / 16px / w300
 
 La mia storia
+
+**[y=26474] `p`** — #fafafa / 16px / w300
+
+Store
+
+  *in grassetto/link dentro:* Store
 
 **[y=26478] `span`** — #fafafa / 16px / w300
 
 Store
 
+**[y=26508] `p`** — #fafafa / 16px / w300
+
+Recensioni
+
+  *in grassetto/link dentro:* Recensioni
+
 **[y=26512] `span`** — #fafafa / 16px / w300
 
 Recensioni
 
+**[y=26542] `p`** — #fafafa / 16px / w300
+
+Risorse
+
+  *in grassetto/link dentro:* Risorse
+
 **[y=26546] `span`** — #fafafa / 16px / w300
 
 Risorse
+
+**[y=26577] `p`** — #fafafa / 16px / w300
+
+Blog
+
+  *in grassetto/link dentro:* Blog
 
 **[y=26581] `span`** — #fafafa / 16px / w300
 
@@ -1259,9 +1771,19 @@ Blog
 
 Questo sito e i consigli contenuti al suo interno sono opinioni personali a scopo educativo basate sulla esperienza di Andrei Pascu. I suoi risultati non sono tipici e i tuoi potrebbero variare in base a esperienza, effort, situazione economica e generale contesto. Andrei Pascu e i suoi collaboratori non fanno e non trattano argomenti come crypto, personal finance, fiscalità, risorse umane, recruiting, network marketing o in genere metodi di arricchimento veloce.
 
+**[y=26852] `p`** — #fafafa / 12.544px / w300
+
+Andrei Pascu Sales | FIRENZE (FI) VIALE GIACOMO MATTEOTTI | 15 CAP 50121 P.I. 02001850474 | Privacy, dati, cookie e simili
+
+  *in grassetto/link dentro:* Privacy, dati, cookie e simili
+
 **[y=26855] `span`** — #ebe9e0 / 12.544px / w300
 
 Andrei Pascu Sales | FIRENZE (FI) VIALE GIACOMO MATTEOTTI | 15 CAP 50121 P.I. 02001850474 |
+
+**[y=26875] `a`** — #a8a8a8 / 12.544px / w300 → `/privacy-dati-cookie-simili`
+
+Privacy, dati, cookie e simili
 
 **[y=26878] `span`** — #ebe9e0 / 12.544px / w300
 

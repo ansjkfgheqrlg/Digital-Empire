@@ -1,8 +1,12 @@
 {
- "url": "https://www.andrei-copy.com/outheadline",
  "title": "🧪 outHeadline — AP Formazione",
  "meta_description": null,
  "og_title": "🧪 outHeadline — AP Formazione",
+ "og_image": null,
+ "canonical": "https://www.andrei-copy.com/outheadline",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
  "lang": "it-IT",
  "page_height": 21119,
  "page_width": 1440,
@@ -144,7 +148,7 @@
    3
   ],
   [
-   "112.2px / lh 112.2px / w700",
+   "112.4px / lh 112.4px / w700",
    2
   ],
   [
@@ -192,7 +196,7 @@
    1
   ],
   [
-   "49.9px / lh 49.9px / w700",
+   "50px / lh 50px / w700",
    1
   ],
   [
@@ -256,142 +260,325 @@
    1
   ]
  ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    1289
+   ],
+   [
+    "transform 0.25s",
+    14
+   ],
+   [
+    "background-color 0.3s",
+    9
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.1s linear",
+    3
+   ],
+   [
+    "0.3s",
+    3
+   ],
+   [
+    "box-shadow 0.3s",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.2s",
+    1
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [
+   [
+    "backdrop: blur(15px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-6714364e20a39431ef357bb3\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6715b4ae20a39431ef7cb281\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6715ba478692445dd1fb2286\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67166241da7a1e3ce0b281b0\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67164b89ccf3f03980ac5108\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6715bdf9f2bbe30fd4377dfa\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-671658d95573fd3959c6a77a\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-67165931257c97627604fc92\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    43
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    7
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1, 0, 0, 1, -22, -22)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -85)",
+    1
+   ]
+  ]
+ },
  "headings": [
   {
    "tag": "h1",
+   "y": 185,
    "text": "QUESTA È UNA"
   },
   {
    "tag": "h1",
+   "y": 270,
    "text": "HEADLINE."
   },
   {
    "tag": "h2",
+   "y": 410,
    "text": "E solo i copywriter che scrivono HEADLINE persuasive sono disperatamente richiesti… E guadagnano di più."
   },
   {
    "tag": "h1",
+   "y": 1265,
    "text": "…Ecco cosa succede se 1000"
   },
   {
    "tag": "h1",
+   "y": 1313,
    "text": "persone vedono la tua pagina:"
   },
   {
    "tag": "h1",
+   "y": 1821,
    "text": "Devi scrivere titoli migliori che impediscono ai clienti di skipparti così."
   },
   {
    "tag": "h1",
+   "y": 2750,
    "text": "Perché lasciare"
   },
   {
    "tag": "h1",
+   "y": 2842,
    "text": "soldi sul tavolo?!"
   },
   {
    "tag": "h3",
+   "y": 3644,
    "text": "La sales page te la può scrivere il miglior copy al mondo..."
   },
   {
    "tag": "h3",
+   "y": 3857,
    "text": "ma se il titolo non fa leggere i potenziali clienti... È come non avere la sales page"
   },
   {
    "tag": "h2",
+   "y": 4270,
    "text": "Se scrivi un titolo persuasivo, la gente legge… Se la gente legge, forse compra."
   },
   {
    "tag": "h2",
+   "y": 4493,
    "text": "Se scrivi titolo non persuasivo, la gente non legge… Se la gente non legge, al 100% non compra."
   },
   {
    "tag": "h2",
+   "y": 4927,
    "text": "Se sei un copywriter…"
   },
   {
    "tag": "h2",
+   "y": 5307,
    "text": "Se sei imprenditore che scrive copy da solo…"
   },
   {
    "tag": "h3",
+   "y": 6439,
    "text": "Andare da una versione all’altra di questa headline non è facile… Ci sono specifiche metodologie per farlo."
   },
   {
    "tag": "h2",
+   "y": 6796,
    "text": "Dove troverai tutte le strategie per scrivere headline che i copywriter elite si sono sempre tenuti per sé… Fino ad oggi."
   },
   {
    "tag": "h3",
+   "y": 7849,
    "text": "Le basi del copy sono ovunque… Ma la roba seria dove sta?"
   },
   {
    "tag": "h3",
+   "y": 8973,
    "text": "Hai bisogno di sentirti ripetere la solita formulina per la decima volta?! Naah 🥱"
   },
   {
    "tag": "h3",
+   "y": 9774,
    "text": "Sezioni A & B: introduzione al copy"
   },
   {
    "tag": "h3",
+   "y": 10435,
    "text": "Sezioni 1,2,3,4 & 5: come scrivere headline"
   },
   {
    "tag": "h1",
+   "y": 11426,
    "text": "outHeadline non è per principianti"
   },
   {
    "tag": "h1",
+   "y": 12112,
    "text": "“Per scrivere headline basta usare formule”"
   },
   {
    "tag": "h1",
+   "y": 12906,
    "text": "Gli 8 step per scrivere headline"
   },
   {
    "tag": "h3",
+   "y": 15098,
    "text": "Copywriter : campagna di marketing = cecchino : missione militare"
   },
   {
    "tag": "h3",
+   "y": 15817,
    "text": "“Un corso di più di 3 ore su come scrivere titoli? Ma sei pazzo?”"
   },
   {
    "tag": "h3",
+   "y": 16100,
    "text": "Le persone di successo sono quelle che fanno quello che serve, non quello “che vogliono”. Vale anche per i copywriter, non solo per discorsi motivazionali."
   },
   {
    "tag": "h1",
+   "y": 16924,
    "text": "Entrando in outHeadline e studiandolo… Sei più vicino al lavorare con multinazionali."
   },
   {
    "tag": "h1",
+   "y": 17944,
    "text": "Aggiornato al 2025… Ovviamente."
   },
   {
    "tag": "h1",
+   "y": 19634,
    "text": "outHeadline? Probabilmente non è per te. Ma se lo è… Stai per svoltare."
   }
  ],
  "ctas": [
   {
-   "text": "Riproduci",
-   "href": null,
-   "y": 901,
-   "x": 698,
-   "w": 44,
-   "h": 44,
-   "bg": "#000000 @0.5",
-   "color": "#ffffff",
-   "radius": "100%",
-   "border": "0px none rgb(255, 255, 255)",
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 16113,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
    "shadow": "none",
-   "font": "Clarkson, Arial, sans-serif",
-   "size": "16px",
-   "weight": "400",
+   "size": 14.272,
+   "weight": "500",
    "transform": "none",
-   "padding": "7px"
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 16121,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
   },
   {
    "text": "Clicca qui",
@@ -405,8 +592,7 @@
    "radius": "50px",
    "border": "0px none rgb(255, 255, 255)",
    "shadow": "none",
-   "font": "elza-8u3n84",
-   "size": "24px",
+   "size": 24,
    "weight": "400",
    "transform": "none",
    "padding": "16px 37px"
@@ -423,29 +609,129 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
   },
   {
-   "text": "Passa al contenuto",
-   "href": "#page",
-   "y": 16824,
-   "x": -14272,
-   "w": 188,
-   "h": 53,
-   "bg": "#0062ff",
+   "text": "Sezione A - Intro",
+   "href": null,
+   "y": 10203,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
    "color": "#fafafa",
-   "radius": "10px",
-   "border": "0px solid rgb(0, 98, 255)",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "Poppins",
-   "size": "14.272px",
-   "weight": "500",
+   "size": 24,
+   "weight": "700",
    "transform": "none",
-   "padding": "16px 22.4px"
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione B - Copywriting",
+   "href": null,
+   "y": 10288,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 1 - Le basi degli headline",
+   "href": null,
+   "y": 10864,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 2 - Come scrivere headline",
+   "href": null,
+   "y": 10949,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 3 - La scienza dietro alle headline",
+   "href": null,
+   "y": 11034,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 4 - Andrei scrive headline",
+   "href": null,
+   "y": 11119,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
+  },
+  {
+   "text": "Sezione 5 - Headline checklist",
+   "href": null,
+   "y": 11204,
+   "x": 421,
+   "w": 597,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "7px 0px"
   },
   {
    "text": "Entra ora in outHeadline",
@@ -459,14 +745,82 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 20607,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 20675,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Gestisci Preferenze Cookie",
+   "href": null,
+   "y": 21063,
+   "x": 70,
+   "w": 280,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "50px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
   }
  ],
- "images": [
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 16106,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 16106,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
   {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ae4af529-a96b-4e3c-a813-ab75470c2707/d0006d2a-ef4a-48df-ad57-2f9b7cdf6172.jpg",
@@ -475,51 +829,6 @@
    "x": 0,
    "w": 1440,
    "h": 1161
-  },
-  {
-   "tag": "img",
-   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e7252a93-5f9b-4627-b515-f10b8f36f86d/arrow-red.png",
-   "alt": "",
-   "y": 446,
-   "x": 320,
-   "w": 124,
-   "h": 124
-  },
-  {
-   "tag": "video",
-   "src": "blob:https://www.andrei-copy.com/baf33525-157c-4740-ae84-206c61c414e6",
-   "alt": "",
-   "y": 773,
-   "x": 489,
-   "w": 462,
-   "h": 260
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 773,
-   "x": 489,
-   "w": 300,
-   "h": 150
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 891,
-   "x": 553,
-   "w": 30,
-   "h": 30
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 891,
-   "x": 861,
-   "w": 30,
-   "h": 30
   },
   {
    "tag": "svg",
@@ -549,26 +858,53 @@
    "h": 24
   },
   {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/275b5da0-daf2-424f-b486-eaeef0f387e1",
+   "alt": "",
+   "y": 773,
+   "x": 489,
+   "w": 462,
+   "h": 260
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 891,
+   "x": 553,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 891,
+   "x": 861,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 773,
+   "x": 489,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e7252a93-5f9b-4627-b515-f10b8f36f86d/arrow-red.png",
+   "alt": "",
+   "y": 446,
+   "x": 320,
+   "w": 124,
+   "h": 124
+  },
+  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0d05fec7-073c-4251-9a6d-2179a2aaf0be/Untitled-1.jpg",
-   "alt": "",
-   "y": 1161,
-   "x": 0,
-   "w": 1440,
-   "h": 1467
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 1161,
-   "x": 0,
-   "w": 1440,
-   "h": 1467
-  },
-  {
-   "tag": "svg",
-   "src": "",
    "alt": "",
    "y": 1161,
    "x": 0,
@@ -592,6 +928,24 @@
    "x": 523,
    "w": 394,
    "h": 327
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1161,
+   "x": 0,
+   "w": 1440,
+   "h": 1467
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1161,
+   "x": 0,
+   "w": 1440,
+   "h": 1467
   },
   {
    "tag": "img",
@@ -651,19 +1005,19 @@
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/fb71ae2f-5e51-4156-9899-19dfc5260911/white-arrow.png",
    "alt": "",
-   "y": 4408,
-   "x": 953,
-   "w": 74,
-   "h": 74
+   "y": 4656,
+   "x": 973,
+   "w": 102,
+   "h": 102
   },
   {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/fb71ae2f-5e51-4156-9899-19dfc5260911/white-arrow.png",
    "alt": "",
-   "y": 4656,
-   "x": 973,
-   "w": 102,
-   "h": 102
+   "y": 4408,
+   "x": 953,
+   "w": 74,
+   "h": 74
   },
   {
    "tag": "img",
@@ -738,24 +1092,6 @@
    "h": 1074
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 7768,
-   "x": 0,
-   "w": 1440,
-   "h": 1074
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 7768,
-   "x": 0,
-   "w": 1440,
-   "h": 1074
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/fbcb0b21-41fb-4701-b9dc-62aa95d81c31/baby-andre-oh.png",
    "alt": "",
@@ -772,6 +1108,24 @@
    "x": 1026,
    "w": 414,
    "h": 414
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7768,
+   "x": 0,
+   "w": 1440,
+   "h": 1074
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7768,
+   "x": 0,
+   "w": 1440,
+   "h": 1074
   },
   {
    "tag": "img",
@@ -820,21 +1174,21 @@
   },
   {
    "tag": "img",
-   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0250c42-8991-43b0-adb9-dad33cdbf8e1/outHeadline+Drop+Overview.jpg",
-   "alt": "",
-   "y": 8888,
-   "x": 928,
-   "w": 512,
-   "h": 725
-  },
-  {
-   "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ee2bdfe9-f9b2-4817-a9b9-37402ca3ad15/MacBook+Pro+Mockup.png",
    "alt": "",
    "y": 8998,
    "x": 793,
    "w": 647,
    "h": 478
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0250c42-8991-43b0-adb9-dad33cdbf8e1/outHeadline+Drop+Overview.jpg",
+   "alt": "",
+   "y": 8888,
+   "x": 928,
+   "w": 512,
+   "h": 725
   },
   {
    "tag": "img",
@@ -946,7 +1300,7 @@
   },
   {
    "tag": "img",
-   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/17e15b47-3a22-492d-a2ff-8ef9c212b28f/Piattaforma.+Brand+voice.+Competitor.+Consapevolezza.+Miglior+approccio.+Gancio.+Messaggio+c",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/17e15b47-3a22-492d-a2ff-8ef9c212b28f/Piattaforma.+Brand+voice.+Competitor.+Consapevolezza.+Miglior+approccio.+Gancio.+Messaggio+core.+Reason+why..jpg",
    "alt": "",
    "y": 13111,
    "x": 489,
@@ -979,15 +1333,6 @@
    "x": 765,
    "w": 180,
    "h": 45
-  },
-  {
-   "tag": "img",
-   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
-   "alt": "AP Formazione",
-   "y": 16817,
-   "x": 687,
-   "w": 67,
-   "h": 61
   },
   {
    "tag": "img",

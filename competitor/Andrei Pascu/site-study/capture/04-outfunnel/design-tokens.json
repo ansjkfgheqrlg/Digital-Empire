@@ -1,8 +1,12 @@
 {
- "url": "https://www.andrei-copy.com/outfunnel",
  "title": "📊 outFunnel — AP Formazione",
  "meta_description": null,
  "og_title": "📊 outFunnel — AP Formazione",
+ "og_image": null,
+ "canonical": "https://www.andrei-copy.com/outfunnel",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
  "lang": "it-IT",
  "page_height": 26993,
  "page_width": 1440,
@@ -212,157 +216,369 @@
    1
   ]
  ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.2) 0px 4px 8px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.3) 0px 4px 6px 0px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    1561
+   ],
+   [
+    "transform 0.25s",
+    11
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "opacity 0.1s linear",
+    6
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 1s",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "transform 0.2s, box-shadow 0.2s",
+    1
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-67997226202b8b278a65798a\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679a4dcf32de7b107a6a1d68\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679a55a2121a82577c3e75bb\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679a59c495fe7e2242b7617c\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679a9a122158a752d2abe759\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679abaf3f466514234e04694\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679ac696901a10565221cd8a\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679ac771bbcfba433c28dfcd\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679acfeeae770029d10e83ee\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679ad088a392676513c40022\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679ad092920b50424b1dfd4d\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-679c06ac2ebba30d2bedbba1\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    76
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    4
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, -4.24219)",
+    3
+   ]
+  ]
+ },
  "headings": [
   {
    "tag": "h1",
+   "y": 154,
    "text": "Alcuni fanno questo funnel…"
   },
   {
    "tag": "h1",
+   "y": 550,
    "text": "…E altri fanno questo…"
   },
   {
    "tag": "h1",
+   "y": 1011,
    "text": "E poi c’è chi fa questo:"
   },
   {
    "tag": "h3",
+   "y": 1423,
    "text": "Perché non venderai solo perché il funnel è lungo… O corto. Venderai solo se strategizzi:"
   },
   {
    "tag": "h3",
+   "y": 1734,
    "text": "Talmente tante aziende devono ancora capire questo concetto…"
   },
   {
    "tag": "h3",
+   "y": 2151,
    "text": "È troppo grave per troppi business…"
   },
   {
    "tag": "h3",
+   "y": 2374,
    "text": "Troppo grave per loro…"
   },
   {
    "tag": "h1",
+   "y": 2485,
    "text": "Perfetto per te."
   },
   {
    "tag": "h1",
+   "y": 5815,
    "text": "Già che ci sei, buttaci sopra benzina ⬇️"
   },
   {
    "tag": "h3",
+   "y": 6379,
    "text": "Perché se non hai un funnel strategico:"
   },
   {
    "tag": "h3",
+   "y": 6648,
    "text": "Che vuol dire funnel strategico?"
   },
   {
    "tag": "h3",
+   "y": 7195,
    "text": "Azienda Italianissima / Marketer Italianissimo (gli altri)"
   },
   {
    "tag": "h3",
+   "y": 7462,
    "text": "Azienda vincitrice / Marketer vincitore (tu 💕)"
   },
   {
    "tag": "h1",
+   "y": 7845,
    "text": "La speranza non è una strategia."
   },
   {
    "tag": "h1",
+   "y": 7985,
    "text": "Incrociare le dita e sperare che il cliente acquisti non ti porterà da nessuna parte."
   },
   {
    "tag": "h2",
+   "y": 10423,
    "text": "Se fai un funnel standard, i dati sono un gioco d’azzardo. Se fai funnel strategici, i dati sono sotto tuo controllo."
   },
   {
    "tag": "h3",
+   "y": 10972,
    "text": "Sei qui per bruciare tutto al Crazy Time o per svoltare il marketing tuo o di un’azienda?"
   },
   {
    "tag": "h1",
+   "y": 14077,
    "text": "…La scienza parla chiaro: funnel personalizzato = più profitto (e quindi meno perdite)"
   },
   {
    "tag": "h1",
+   "y": 18032,
    "text": "Vuoi complottare"
   },
   {
    "tag": "h1",
+   "y": 18453,
    "text": "Funnel strategici vincenti, vero??"
   },
   {
    "tag": "h3",
+   "y": 18524,
    "text": "Lo so. È per quello che ho lanciato outFunnel."
   },
   {
    "tag": "h2",
+   "y": 19119,
    "text": "Primo videocorso Italiano solo su come fare la strategia di un funnel."
   },
   {
    "tag": "h3",
+   "y": 19627,
    "text": "Impara esattamente quali step fare per portare una persona da sconosciuto a cliente con marketing."
   },
   {
    "tag": "h2",
+   "y": 20178,
    "text": "outFunnel serve a questo: aiutarti a rispondere con 100% sicurezza alla domanda “che step bisogna mettere in questo funnel?”"
   },
   {
    "tag": "h2",
+   "y": 20750,
    "text": "outFunnel 🤝 Copywriter"
   },
   {
    "tag": "h2",
+   "y": 21262,
    "text": "outFunnel 🤝 Media buyer"
   },
   {
    "tag": "h2",
+   "y": 21671,
    "text": "outFunnel 🤝 Titolare aziendale"
   },
   {
    "tag": "h2",
+   "y": 22109,
    "text": "outFunnel 🤝 Project Strategist/Manager"
   },
   {
    "tag": "h2",
+   "y": 22509,
    "text": "Totale confidence. No dubbi. No insicurezza. No cazzate."
   },
   {
    "tag": "h2",
+   "y": 23038,
    "text": "outFunnel - benefici"
   },
   {
    "tag": "h3",
+   "y": 23920,
    "text": "La speranza non è una strategia. Smetti di sperare, inizia a complottare il funnel definitivo."
   },
   {
    "tag": "h2",
+   "y": 24220,
    "text": "Lista video-lezioni"
   },
   {
    "tag": "h1",
+   "y": 24962,
    "text": "outFunnel? Probabilmente non è per te. Ma se lo è… Stai per svoltare."
   },
   {
    "tag": "h1",
+   "y": 25723,
    "text": "FAQ"
   },
   {
    "tag": "h3",
+   "y": 25840,
    "text": "Come posso accedere al corso?"
   },
   {
    "tag": "h3",
+   "y": 25969,
    "text": "Quanto dura il corso?"
   },
   {
    "tag": "h3",
+   "y": 26049,
    "text": "Devo avere esperienza per capirlo?"
   }
  ],
  "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 20785,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 20793,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
   {
    "text": "Sono un copywriter",
    "href": "#tp-copywriter",
@@ -375,8 +591,7 @@
    "radius": "10px",
    "border": "0px solid rgb(168, 168, 168)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
@@ -393,26 +608,7 @@
    "radius": "10px",
    "border": "0px solid rgb(168, 168, 168)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
-   "weight": "600",
-   "transform": "none",
-   "padding": "16px 22.4px"
-  },
-  {
-   "text": "Sono un project manager o simile",
-   "href": "#tp-manager",
-   "y": 20553,
-   "x": 726,
-   "w": 293,
-   "h": 74,
-   "bg": "#1b1b1d",
-   "color": "#a8a8a8",
-   "radius": "10px",
-   "border": "0px solid rgb(168, 168, 168)",
-   "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
@@ -429,27 +625,25 @@
    "radius": "10px",
    "border": "0px solid rgb(168, 168, 168)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
   },
   {
-   "text": "Passa al contenuto",
-   "href": "#page",
-   "y": 21705,
-   "x": -14272,
-   "w": 188,
-   "h": 53,
-   "bg": "#0062ff",
-   "color": "#fafafa",
+   "text": "Sono un project manager o simile",
+   "href": "#tp-manager",
+   "y": 20553,
+   "x": 726,
+   "w": 293,
+   "h": 74,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
    "radius": "10px",
-   "border": "0px solid rgb(0, 98, 255)",
+   "border": "0px solid rgb(168, 168, 168)",
    "shadow": "none",
-   "font": "Poppins",
-   "size": "14.272px",
-   "weight": "500",
+   "size": 16,
+   "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
   },
@@ -465,11 +659,78 @@
    "radius": "8px",
    "border": "0px none rgb(255, 255, 255)",
    "shadow": "rgba(0, 0, 0, 0.3) 0px 4px 6px 0px",
-   "font": "Montserrat, sans-serif",
-   "size": "16px",
+   "size": 16,
    "weight": "700",
    "transform": "none",
    "padding": "10px 20px"
+  },
+  {
+   "text": "📝 Sezione 1 - Le basi",
+   "href": null,
+   "y": 24539,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "📝 Sezione 2 - Esempi strategici",
+   "href": null,
+   "y": 24614,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "📝 Sezione 3 - Strategie avanzate",
+   "href": null,
+   "y": 24689,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
+  },
+  {
+   "text": "📝 Sezione 4 - Esempi di Funnel completi",
+   "href": null,
+   "y": 24764,
+   "x": 455,
+   "w": 530,
+   "h": 74,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "21px 0px"
   },
   {
    "text": "Entra ora in outFunnel",
@@ -483,35 +744,119 @@
    "radius": "10px",
    "border": "0px solid rgb(168, 168, 168)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
+  },
+  {
+   "text": "Come posso accedere al corso?",
+   "href": null,
+   "y": 25840,
+   "x": 429,
+   "w": 581,
+   "h": 128,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Quanto dura il corso?",
+   "href": null,
+   "y": 25969,
+   "x": 429,
+   "w": 581,
+   "h": 79,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "Devo avere esperienza per capirlo?",
+   "href": null,
+   "y": 26049,
+   "x": 429,
+   "w": 581,
+   "h": 128,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "15px 0px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 26480,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 26549,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
   }
  ],
- "images": [
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 20778,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 20778,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
   {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
-   "alt": "",
-   "y": 0,
-   "x": 0,
-   "w": 1440,
-   "h": 1330
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 0,
-   "x": 0,
-   "w": 1440,
-   "h": 1330
-  },
-  {
-   "tag": "svg",
-   "src": "",
    "alt": "",
    "y": 0,
    "x": 0,
@@ -544,6 +889,24 @@
    "x": 455,
    "w": 530,
    "h": 172
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 1330
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 1330
   },
   {
    "tag": "img",
@@ -582,24 +945,6 @@
    "h": 696
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 1347,
-   "x": 0,
-   "w": 1440,
-   "h": 696
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 1347,
-   "x": 0,
-   "w": 1440,
-   "h": 696
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1c518e2a-37d3-4d7c-8023-56f7a29511b6/fefvds-min.png",
    "alt": "",
@@ -616,6 +961,24 @@
    "x": 654,
    "w": 132,
    "h": 74
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1347,
+   "x": 0,
+   "w": 1440,
+   "h": 696
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1347,
+   "x": 0,
+   "w": 1440,
+   "h": 696
   },
   {
    "tag": "img",
@@ -762,24 +1125,6 @@
    "h": 1955
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 5768,
-   "x": 0,
-   "w": 1440,
-   "h": 1955
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 5768,
-   "x": 0,
-   "w": 1440,
-   "h": 1955
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4e32f8ce-ed72-41bd-8444-48e9fb204e81/KREA+Enhanced-min.jpg",
    "alt": "",
@@ -814,6 +1159,24 @@
    "x": 421,
    "w": 90,
    "h": 90
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5768,
+   "x": 0,
+   "w": 1440,
+   "h": 1955
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5768,
+   "x": 0,
+   "w": 1440,
+   "h": 1955
   },
   {
    "tag": "img",
@@ -922,6 +1285,15 @@
    "x": 0,
    "w": 1440,
    "h": 1128
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1053413091?h=1f9bb5f882&app_id=122963",
+   "alt": "",
+   "y": 10132,
+   "x": 489,
+   "w": 462,
+   "h": 260
   },
   {
    "tag": "img",
@@ -1131,24 +1503,6 @@
    "h": 1056
   },
   {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 17969,
-   "x": 0,
-   "w": 1440,
-   "h": 1056
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 17969,
-   "x": 0,
-   "w": 1440,
-   "h": 1056
-  },
-  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/581e3264-d5e0-4fcb-8fd4-00707621d92f/andrei-money+graph+copy-min.png",
    "alt": "",
@@ -1165,6 +1519,24 @@
    "x": 489,
    "w": 462,
    "h": 258
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17969,
+   "x": 0,
+   "w": 1440,
+   "h": 1056
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17969,
+   "x": 0,
+   "w": 1440,
+   "h": 1056
   },
   {
    "tag": "img",
@@ -1212,6 +1584,15 @@
    "h": 327
   },
   {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/1053450256?h=ba0c8f3d0c&app_id=122963",
+   "alt": "",
+   "y": 19837,
+   "x": 523,
+   "w": 394,
+   "h": 222
+  },
+  {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b9dcaadf-7e51-47d8-b597-efe6c7600f51/3c5a11a0-0d41-40e1-a5c5-8bee4155d576-min.jpg",
    "alt": "",
@@ -1222,15 +1603,6 @@
   },
   {
    "tag": "img",
-   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
-   "alt": "AP Formazione",
-   "y": 21698,
-   "x": 687,
-   "w": 67,
-   "h": 61
-  },
-  {
-   "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
    "alt": "",
    "y": 22433,
@@ -1286,24 +1658,6 @@
   {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e08863d-64f9-47fd-b5b5-51be9fbf6058/almost+black-min.png",
-   "alt": "",
-   "y": 22962,
-   "x": 0,
-   "w": 1440,
-   "h": 1165
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 22962,
-   "x": 0,
-   "w": 1440,
-   "h": 1165
-  },
-  {
-   "tag": "svg",
-   "src": "",
    "alt": "",
    "y": 22962,
    "x": 0,
@@ -1336,6 +1690,24 @@
    "x": 489,
    "w": 462,
    "h": 130
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22962,
+   "x": 0,
+   "w": 1440,
+   "h": 1165
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22962,
+   "x": 0,
+   "w": 1440,
+   "h": 1165
   },
   {
    "tag": "img",

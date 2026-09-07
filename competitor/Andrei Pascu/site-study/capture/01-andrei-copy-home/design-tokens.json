@@ -1,8 +1,12 @@
 {
- "url": "https://www.andrei-copy.com/",
  "title": "AP Formazione",
  "meta_description": "Costruisci una carriera nel marketing, anche se hai poca esperienza e non sai da dove iniziare. Ti fornirò gli strumenti per trovare chiarezza e direzione per raggiungere la tua indipendenza finanziaria grazie al copywriting e alla vendita.",
  "og_title": "AP Formazione",
+ "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/t/6a66b5a9dabc711927447f87/1785116073723/Asset+4-8+2.png?format=1500w",
+ "canonical": "https://www.andrei-copy.com/",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
  "lang": "it-IT",
  "page_height": 3384,
  "page_width": 1440,
@@ -176,40 +180,162 @@
    4
   ]
  ],
+ "shadows": [
+  [
+   "rgb(137, 137, 137) 0px 0px 0px 0.5px inset",
+   3
+  ],
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    284
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "opacity 0.1s linear",
+    4
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "background 0.18s, color 0.18s",
+    3
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-6a677f376d47936d3e042a4b\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-6a67808e3b00283598378f08\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    14
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ]
+  ]
+ },
  "headings": [
   {
    "tag": "h2",
+   "y": 193,
    "text": "Formazione tecnica per professionisti di marketing"
   },
   {
    "tag": "h1",
+   "y": 849,
    "text": "Risorse"
   },
   {
    "tag": "h3",
+   "y": 1267,
    "text": "Le basi del Marketing"
   },
   {
    "tag": "h3",
+   "y": 1267,
    "text": "I software che usiamo"
   },
   {
    "tag": "h3",
+   "y": 1267,
    "text": "L'attrezzatura che usiamo"
   },
   {
    "tag": "h1",
+   "y": 1726,
    "text": "Blog"
   },
   {
    "tag": "h2",
+   "y": 2248,
    "text": "La mia storia"
   }
  ],
  "ctas": [
   {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 846,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 854,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
    "text": "Scopri di più →",
-   "href": "",
+   "href": null,
    "y": 559,
    "x": 320,
    "w": 161,
@@ -219,83 +345,10 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
-  },
-  {
-   "text": "Passa al contenuto",
-   "href": "#page",
-   "y": 679,
-   "x": -14272,
-   "w": 188,
-   "h": 53,
-   "bg": "#0062ff",
-   "color": "#fafafa",
-   "radius": "10px",
-   "border": "0px solid rgb(0, 98, 255)",
-   "shadow": "none",
-   "font": "Poppins",
-   "size": "14.272px",
-   "weight": "500",
-   "transform": "none",
-   "padding": "16px 22.4px"
-  },
-  {
-   "text": "CORSO GRATUITO Le basi del Marketing Il punto di partenza: fondamenta, framework e metriche che ogni marketer deve padro",
-   "href": "https://www.andrei-copy.com/presto-disponibile",
-   "y": 1010,
-   "x": 203,
-   "w": 330,
-   "h": 462,
-   "bg": "#111111",
-   "color": "#fafafa",
-   "radius": "0px",
-   "border": "0px none rgb(250, 250, 250)",
-   "shadow": "none",
-   "font": "\"Plus Jakarta Sans\", system-ui, sans-serif",
-   "size": "16px",
-   "weight": "300",
-   "transform": "none",
-   "padding": "0px"
-  },
-  {
-   "text": "TOOLS & AI I software che usiamo Lo stack di strumenti AI, editing e automazione che sta dietro ogni contenuto e ogni ca",
-   "href": "https://www.andrei-copy.com/presto-disponibile",
-   "y": 1010,
-   "x": 555,
-   "w": 330,
-   "h": 462,
-   "bg": "#111111",
-   "color": "#fafafa",
-   "radius": "0px",
-   "border": "0px none rgb(250, 250, 250)",
-   "shadow": "none",
-   "font": "\"Plus Jakarta Sans\", system-ui, sans-serif",
-   "size": "16px",
-   "weight": "300",
-   "transform": "none",
-   "padding": "0px"
-  },
-  {
-   "text": "ATTREZZATURA L'attrezzatura che usiamo Fotocamere, microfoni e setup con cui produciamo i video e i contenuti che vedi o",
-   "href": "https://www.andrei-copy.com/presto-disponibile",
-   "y": 1010,
-   "x": 907,
-   "w": 330,
-   "h": 462,
-   "bg": "#111111",
-   "color": "#fafafa",
-   "radius": "0px",
-   "border": "0px none rgb(250, 250, 250)",
-   "shadow": "none",
-   "font": "\"Plus Jakarta Sans\", system-ui, sans-serif",
-   "size": "16px",
-   "weight": "300",
-   "transform": "none",
-   "padding": "0px"
   },
   {
    "text": "Leggi gli articoli",
@@ -309,8 +362,7 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
@@ -327,26 +379,68 @@
    "radius": "10px",
    "border": "0px solid rgb(250, 250, 250)",
    "shadow": "none",
-   "font": "\"DM Sans\"",
-   "size": "16px",
+   "size": 16,
    "weight": "600",
    "transform": "none",
    "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 2871,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 2940,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
   }
  ],
- "images": [
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 839,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 839,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
   {
    "tag": "img",
    "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3446c11c-50aa-4ae8-88e5-e7f64fac6cd9/PNG+to+WebP+Converter+Desktop+2.webp",
-   "alt": "",
-   "y": 0,
-   "x": 0,
-   "w": 1440,
-   "h": 749
-  },
-  {
-   "tag": "svg",
-   "src": "",
    "alt": "",
    "y": 0,
    "x": 0,
@@ -372,22 +466,13 @@
    "h": 590
   },
   {
-   "tag": "img",
-   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
-   "alt": "AP Formazione",
-   "y": 672,
-   "x": 687,
-   "w": 67,
-   "h": 61
-  },
-  {
    "tag": "svg",
    "src": "",
    "alt": "",
-   "y": 749,
+   "y": 0,
    "x": 0,
    "w": 1440,
-   "h": 898
+   "h": 749
   },
   {
    "tag": "img",
@@ -415,6 +500,15 @@
    "x": 907,
    "w": 330,
    "h": 186
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 749,
+   "x": 0,
+   "w": 1440,
+   "h": 898
   },
   {
    "tag": "img",
@@ -451,15 +545,6 @@
    "x": 241,
    "w": 446,
    "h": 414
-  },
-  {
-   "tag": "svg",
-   "src": "",
-   "alt": "",
-   "y": 2343,
-   "x": 956,
-   "w": 62,
-   "h": 19
   },
   {
    "tag": "img",
@@ -518,5 +603,5 @@
  ],
  "slices_desktop": 4,
  "slices_mobile": 6,
- "mobile_page_height": 4851
+ "mobile_page_height": 4854
 }
