@@ -5,12 +5,23 @@
 `company/Memory/studi/aitubepro/A6-viral-mastery/`. **Gael/Neri: non toccare questi due percorsi
 finché questo blocco non sparisce.** Rimuovo il blocco al gate A6 chiuso.
 
-## ⚠️ COORDINAMENTO — 2026-09-07, in corso — visione max18-v09 (agenti vocali), 38% → 100%
+## ⏸️ 2026-09-07 sera — PAUSA su ordine di Max: crediti riservati a Gael — CP-20260907-MUPD
 
-**Max ha ordinato la ripresa di `CP-20260907-96DY`.** Ondata di sentinelle in scrittura su:
-`SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA/_parte-*.md`.
-**Gael/Neri: non toccare questa cartella** finché il blocco non sparisce. Lo tolgo a `v09`
-chiuso come visione (494/494) e atomi uniti.
+**Codice di ripresa: EMP-W4K7 (APERTA).** Max ha fermato il lavoro a comando ("fermati
+subito, salva tutto") perche' si e' ricordato di dover lasciare crediti a Gael. **6
+sentinelle fermate con TaskStop, tutte ancora in lettura frame — zero scritture perse,
+nessuno scarto da ripulire.** `max18-v09` fermo a **407/494 = 82%**. Nessun processo in
+background attivo su questo repository.
+
+**RIPRESA DA (87 scene, ordine esatto):** completare in append `_parte-379-399.md` (manca
+394-399), `_parte-400-420.md` (manca 411-420), `_parte-421-441.md` (manca 424-441); poi i
+tre blocchi mai iniziati 442-462, 463-483, 484-494 (ultimo = chiusura/CTA del video). Poi
+atomi di `v04`/`v08`/`v09`, poi wiki+archivio (zero su sei, resta il piu' arretrato).
+Dettagli: [CP-20260907-MUPD](checkpoints/CP-20260907-MUPD.md).
+
+**Gael/Neri: nessun blocco di coordinamento attivo ora** — la cartella
+`max18-v09-NmoOZVTrTXA` e' ferma, libera di essere toccata se necessario, ma il lavoro
+la' dentro riprendera' su ordine di Max.
 
 ## 📚 2026-09-07 — max18: quattro video chiusi come visione, v09 al 38%, checkpoint vuoto riscritto — CP-20260907-96DY
 
