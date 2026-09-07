@@ -649,3 +649,606 @@
 [01:03:16] lo ripeto, il motivo per cui lo stiamo facendo è perché stiamo dando a cloud
 [01:03:22] le one file che rappresenta come utilizzare gli strumenti e come utilizzare na10. Quindi
 [01:03:32] qui noi abbiamo ancora detto che per il nostro voice agent quello è il workflow. Qui gli
+[01:03:38] stiamo dicendo in maniera generale, hey, il workflow si fa con questi strumenti, quindi
+[01:03:45] quando ti chiedo file un workflow dovresti fare riferimento a questo e a questo. Ok,
+[01:03:50] quindi questo è quello che stiamo facendo ora. Quindi il primo dei nostri prompt sarà
+[01:03:55] l'anitn.md. Ora, una volta che questo prompt ha finito, la prima cosa che faremo come sempre
+[01:04:01] sarà andare ad assicurarci che tutto funzioni per il meglio. Quindi la prima verifica
+[01:04:06] che faremo è ok. Detto che ho importato queste informazioni, ora se io chiedessi
+[01:04:11] a Cloud di farmi un workflow, può Cloud farmi effettivamente il workflow che ho
+[01:04:17] chiesto, si o no, e poi verificheremo. La risposta si suppone, sarà sì, però insomma
+[01:04:23] andremo a verificarla insieme. Perfetto, sembra essere andato, quindi vediamo che cosa c'è
+[01:04:27] scritto ad alto livello, eh? Ok, workflow generation, fonti di riferimento, ok, quindi file chiave
+[01:04:34] da consultare, architettura, i 5 partner architetturali, va bene, e quindi abbiamo
+[01:04:42] perfetto. Allora, vedo subito che... e questo è una cosa che vi condivido dall'esperienza.
+[01:04:52] Allora, il file Figo ha importato tutte le informazioni, manca una cosa molto importante,
+[01:04:59] e cioè, qui abbiamo i 5 pattern che ci dicono che è come fare una architettura, no?
+[01:05:05] scopri dei nodi, creazione workflow, validazione, attivazione. Però non vedo che abbia dettagliato
+[01:05:15] in maniera sufficientemente chiara il fatto che bisogna utilizzare MCP e skill. Quindi
+[01:05:23] ora io vi faccio un po' di iterazioni, me le salvo perché magari vado avanti in
+[01:05:30] dietro 3-4 minuti e poi vi lascio un prompt sotto che magari è fatto un po' meglio.
+[01:05:36] Allora, questo è il prompt nuovo, quindi, giusto per farvi vedere, ho messo un processo
+[01:05:42] a 6 step, mi piace molto di più e gli ho messo che step 1 è clarify and plan, quindi
+[01:05:52] ok, abbiamo tenuto le stesse cose di prima, no, ho solo fatto qualche modifichina.
+[01:05:56] La parte 2 è ricercare i nodi, la parte 3 è scrivere espressioni e codice, la parte
+[01:06:05] 4 è costruire, la parte 5 è validare e la parte 6 è attivare e confermare.
+[01:06:11] Diciamo ho aggiunto un layer perché mi piaceva un po' di più e gli ho dettagliato anche come
+[01:06:17] fare magari i modifichi incrementali e cose di questo tipo.
+[01:06:21] È semplicemente un processo iterativo dove ho semplicemente parlato un po'
+[01:06:24] con l'LLM, gli dito guarda ok, alcune cose non mi piacciono, altre mi piacciono di più,
+[01:06:29] credo tu non riuscivi a risolvere eventuali problemi se qualcosa si apparisse, eccetera.
+[01:06:34] Questo prompt, gratuito sotto, prendetelo e è il definitivo, cioè non è che c'è
+[01:06:40] di più, quindi avete il prompt per utilizzare na10 sempre, quindi se lo vorrete è sotto.
+[01:06:47] Ok, quindi detto questo, vorrei testare ora na10 e vorrei vedere se riesco a fare
+[01:06:54] qualcosa di sensato quindi per farlo deve andare ovviamente in modalità plan perché
+[01:06:59] richiede un certo tipo di effort allora possiamo chiedergli qualcosa del tipo hey vorrei ora
+[01:07:05] creare due workflow su n8n uno è un agente ai che deve sostanzialmente confermare la
+[01:07:15] disponibilità del dei miei slot a calendario quindi sostanzialmente è un agente ai che
+[01:07:23] un modello come per esempio Google Anthropi Code OpenAI scegliene uno che più ti piace
+[01:07:30] e Qtel utilizzerà come mente e poi avrà un tool che è un nodo in Google Calendar che poi io
+[01:07:40] connetterò e sostanzialmente questo deve essere, deve interagire con la gente AI di modo tale che
+[01:07:46] si capisca vicendevolmente quando ho uno slot libero no usa pure ora quindi una variabile
+[01:07:53] le dinamiche NOW per capire che giorno è oggi e assicurati di usare variabili dinamiche anche
+[01:08:01] dentro al node in NETAN. La seconda cosa che vorrei invece è un workflow che permetta di
+[01:08:10] capire se un appuntamento è pernotato oppure no. Quindi anche qui vorrei un agent AI collegato
+[01:08:17] a google maps che invece permetta di capire ok l'appuntamento è stato prenotato oppure
+[01:08:24] c'è qualcosa che è andato storto perfetto noi lo lasceremo in plan mod e gli diremo
+[01:08:31] solo magari per farlo ovviamente riferisci ti al file chiamato n8n.md lo dico piano
+[01:08:40] perché di solito mi viene eccolo qua appunto allora ora però prima di premere in video
+[01:08:46] e sbagliare, perché ancora non abbiamo avuto tutti i dati, che cosa ci manca?
+[01:08:51] Beh, ci mancano due cose, uno dobbiamo dirgli ok a che URL devi fare riferimento e due dobbiamo
+[01:08:58] dirgli ok ma quali sono poi le credenziali di accesso che tu hai, quindi questo sostanzialmente
+[01:09:05] significa che dobbiamo dargli ancora lo URL e le API chi, per farlo quindi dobbiamo
+[01:09:10] entrare dentro N8n ora e fatemi muovere un secondo il mio bel faccione di modo
+[01:09:17] tale che poi voi possiate vedere tutto. Quindi ora cosa facciamo? Settings, N8n API,
+[01:09:25] crea API Key e mettiamo YouTube, Italia Voice Agent. Magari mettete No Expiration
+[01:09:38] date, questo è quello che vi consiglio, andiamo in cloud e gli mettiamo che le apik sono queste
+[01:09:45] e ora prendiamo l'url che è sostanzialmente tutto quello che c'è prima di settings. Ok,
+[01:09:52] quindi questo. Quindi lo prendiamo, non dovevo tagliarlo senza dubbio, e poi andiamo a fare
+[01:09:59] plan e ora possiamo far partire il tutto perché gli abbiamo dato ovviamente tutte le
+[01:10:04] credenziali. Giusto, una cortezza, ma giusto così. Guarda, prima di partire assicurati anche
+[01:10:12] che le mie chiavi siano dentro ad un file .imv, te l'ho già creato, può inserirle lì dentro.
+[01:10:24] In nuovo, questo che cosa vuol dire? Può dire che vi rimando al corso di Cloud in
+[01:10:31] in community ma sostanzialmente abbiamo delle API key che sono contenute dentro a un file
+[01:10:38] che è questo .env, una convenzione di software developer dove sostanzialmente evita che le
+[01:10:46] nostre chiavi di accesso vengano pubblicate al pubblico e quindi come in questo caso,
+[01:10:51] se voi avete le mie API key o io mi dimenticassi dopo io di cancellarle, voi potresti usare
+[01:10:56] il mio account e quindi utilizzare il mio abbonamento per fare questo.
+[01:11:01] letteralmente come se io vi stessi dando le chiavi di casa o come se avessi nel mio computer
+[01:11:06] un post-it con scritto il mio username, questa è mia password e questa, vuoi potreste entrare
+[01:11:10] e fare un po' quello che lasciamolo così, potete fare tante cose, potete fare, ma non
+[01:11:18] entrate in casa mia, grazie. Bene, io torno a posto con il faccione e dopo con calma
+[01:11:23] aspettiamo che tutto questo vada a buon fine e una volta fatto vi farò vedere
+[01:11:29] il piano e poi vedremo se effettivamente questo ha funzionato perché che cosa dovremmo aspettarci
+[01:11:35] che qui adesso nella nostra pagina che è vuota sostanzialmente dovremmo avere questi nuovi
+[01:11:42] agenti demo che vengono pubblicati e noi potremmo accedervi e vedere se appunto funziona
+[01:11:48] oppure no. Ok, ora cosa importante dobbiamo riattivare Cloud Code perché per accedere
+[01:11:54] al mcp insomma che è quello che ora si sta scaricando bisogna riattivarlo quindi ora
+[01:12:00] prima di farlo gli dico ok per favore assicurati di salvare il tutto in una memoria di modo
+[01:12:07] tale che appena riapro io posso semplicemente dire ok continua e tu capisci immediatamente
+[01:12:12] da dove devi ripartire perfetto allora una volta che questo è fatto sostanzialmente
+[01:12:19] allora noi possiamo cominciare a chiudere cloud code riaprirlo e poi vediamo insomma
+[01:12:25] che cosa succede. Perfetto quindi ora ok continua, lo abbiamo riavviato quindi ora
+[01:12:31] dovrebbe andare, vediamo se tutto funziona come deve e dopo vediamo solo il risultato finale.
+[01:12:37] Ora questo solo per farvi vedere che sta ancora andando, ma qui mi dice creati e se
+[01:12:43] io infatti vado in Anetern abbiamo che il primo è stato creato e il secondo è stato
+[01:12:51] creato anche, con la differenza che per quello che controlla la disponibilità a calendario
+[01:13:00] abbiamo ovviamente una memoria, quindi stiamo già andando nella direzione giusta. Ora cosa
+[01:13:05] ci dice? Questo è stato creato, che cosa devi fare, variabili dinamiche, via dicendo,
+[01:13:12] ora debbi solo connettere le credenziali, no? Quindi ora lui avrà utilizzato qualche
+[01:13:16] sistema, gemina e via dicendo e quindi sostanzialmente ora il processo che ci serve fare è, oltre
+[01:13:24] che controllare brevemente queste variabili per essere sicuri che lo vogliamo, ma andare
+[01:13:29] qua dentro, creare nuove credenziali e via dicendo cose che per il momento non sono ad
+[01:13:35] estremo valore aggiunto perché poi lo faremo nel workflow finale, quindi per ora volevo
+[01:13:40] solo che voi vedeste che insomma queste cose funzionano, riesce a creare workflow corretti
+[01:13:46] e poi riesce anche a fare lo step di verifica. La cosa che ci rimarrà da fare a noi all'affine
+[01:13:51] sarà semplicemente quella di integrare appunto le credenziali, quindi setup credentials
+[01:13:56] se vi ho dicendo. Ok, quindi questo è stato fatto per validare che su Na10 riusciamo
+[01:14:03] ad interagire utilizzando cloud code. Perché? Perché questo ci permetterà di
+[01:14:08] evitare che tutto quanto venga fatto manualmente tramite noi, no? Perché noi qui avremo dovuto
+[01:14:14] fare chat trigger, poi con l'intercione AI e gente vi è dicendo. Una sola cosa volevo
+[01:14:18] farvi notare, e cioè perché stiamo facendo in anitend? Perché qui quando avremmo workflow
+[01:14:25] più complessi, quindi dopo, avremmo la possibilità di vedere se c'è qualcosa che
+[01:14:32] non va guardando il prompt, quindi se per caso io non volevo la ISO ma avevo una
+[01:14:37] necessitare di avere una formatazione diversa di data, è una cosa che posso fare già da qui,
+[01:14:41] no? Magari dicendogli un qualcosa tipo format e allora qui posso magari fare, non lo so,
+[01:14:48] day, month, year, ok? Magari se ho un CRM con questa data e via dicendo cosa che è estremamente più
+[01:15:00] semplice da fare se io utilizzo questo tipo di interfaccia, quindi lo leggo, vedo e, insomma,
+[01:15:11] capisco quello che faccio, e invece che utilizzare Cloud Code. Io ora non so come mai sono nel
+[01:15:17] futuro con i mesi, ma ok, questo è pubblicato a novembre 2026, non a marzo. Ora possiamo
+[01:15:29] tornare a noi e cosa dobbiamo fare bene. Abbiamo fatto il nostro NA10, ora dobbiamo fare la
+[01:15:36] stessa cosa per VAPI, perché la cosa numero 2 che vogliamo fare ora è semplicemente quella
+[01:15:42] di capire se ora possiamo fare la stessa cosa con VAPI, quindi scrivere ad NA10,
+[01:15:48] hey, voglio, un AI agent che parli in italiano, e NA10 in automatico mi fa questo, mi
+[01:15:55] mette 11 labs e tutte queste cose qui. Perché? Perché come abbiamo detto prima se poi ora
+[01:16:00] che sappiamo cosa è la latency e via dicendo possiamo avere un po' uno sparring partner
+[01:16:05] quindi qualcuno che viene utilizzato magari in sport come la box come il tennis e via dicendo
+[01:16:11] con cui continuare a fare questo back and forth per capire ok stiamo facendo le cose
+[01:16:16] giuste la gente non va qual è il motivo mi puoi dare qualche indicazione in più
+[01:16:20] e cose di questo tipo, ok? Quindi ora facciamo il nostro vapi.md e per fare questo andiamo
+[01:16:28] quindi di nuovo in cloud code e capiamo quali sono ora gli step che servono per il nostro
+[01:16:35] vapi. Allora io farò una cosa come clear conversation perché voglio avere la conversazione
+[01:16:41] pulita, quindi niente più token usage che vi ho dicendo e ora semplicemente procedo
+[01:16:46] in questo modo. Allora io comincio come sempre a far partire il mio prompt perché utilizzerò
+[01:16:52] di nuovo il mio whisper flow e gli dirò qualcosa del genere. Allora mi servirebbe che mi aiutassi
+[01:17:02] ora a popolare il mio vapi.md. Fatemi solo vedere che l'abbia preso bene. Ecco
+[01:17:09] l'ho lì. Già, sapevo io. Ok. E per farlo ti fornirò tutta la documentazione di Vapi.
+[01:17:20] Mi servirebbe che quello che tu facessi è prendere la documentazione che avrai in generale
+[01:17:31] in ingresso e facessi le seguenti cose. Allora, perfetto. Adesso prima di continuare
+[01:17:41] facciamo lì questo, quindi documentazione vapi, fetto introduction e ora in linea generale
+[01:17:54] volevo vedere se gliela togliamo non credo succede da grandi robe, ok sì questa è la core
+[01:18:00] poi abbiamo gli API reference che gli possiamo dare solo per fargli diciamo la vita più
+[01:18:06] semplice no?
+[01:18:07] potrebbe farlo lui, ma documentazione vapi per api reference, perfetto e poi documentazione
+[01:18:25] vapi per mcp se necessaria ok e ora dovremmo avere tutto, non dovrebbe esserci più nulla
+[01:18:37] riguardo, quindi perfetto. Allora, che cosa vogliamo che faccia? Uno, leggi attentamente
+[01:18:45] la documentazione di VAPI, soprattutto quella in ingresso, per capire che cosa c'è al
+[01:18:52] suo interno. Due, salva le informazioni che ritieni importanti per riuscire a creare
+[01:19:01] agenti su WAPI nel file WAPI.md, pre, struttura il file WAPI.md, di modo tale che quando un
+[01:19:13] utente ti chiede di creare un file, tu sappia esattamente cosa cercare e in che sezione
+[01:19:22] della documentazione, di modo tale che tu possa andare a colpo sicuro, e quattro vorrei
+[01:19:27] che per creare un prompt di una gente tu non utilizzassi un prompt fa da te, ma che utilizzassi
+[01:19:35] il prompt che ti fornisco sotto, di modo tale che continuiamo ad avere una struttura di un
+[01:19:41] certo tipo. Perfetto, ora gli mettremo il prompt, ma prima di metterglielo, prompt di
+[01:19:48] riferimento, prima di metterglielo gli diciamo questo di nuovo, in Synthesis questo
+[01:19:54] documento vapi.md deve essere un documento di riferimento, ogni volta che l'utente ti chiede
+[01:20:01] di costruire un'agente vocale, entri dentro, capisci cosa devi fare e se devi creare un
+[01:20:07] prompt, utilizzi il prompt di riferimento, come base per fare un prompt elevato a qualità.
+[01:20:13] Perfetto, e ora che ci chiediamo qual è il prompt di riferimento, e qualcuno di
+[01:20:16] voi l'ha già capito, quindi torniamo su Notion ed è esattamente il primo prompt
+[01:20:21] che abbiamo fatto, quindi ora andiamo qua sotto, glielo incolliamo e ora faremo un
+[01:20:28] bel plan mode, perché anche questo non è esattamente semplicissimo come tipologia di
+[01:20:34] richiesta e quindi poi precederemo con invio. Allora io ora vorrei solo fare una cosa
+[01:20:42] perché mi sta cominciando a dare fastidio, perdonatemi. Allora questo sarà così,
+[01:20:48] lo faremo così e poi gli dirò solo una cosa perfetto e gli dirò hey per favore ora
+[01:20:59] rinomina il documento naten.md in naten.md e aggiorna qualsiasi tipologia di documentazione
+[01:21:09] ci faccia riferimento. Perfetto in… adesso gli dirò… solo perché è una cosa abbastanza
+[01:21:18] sciocca, non necessaria, ma solo perché generalmente questi file.md sono scritti in caps e questa
+[01:21:25] cosa l'avevo scritta all'inizio per farvelo vedere, ma adesso volevo solo rinominarlo
+[01:21:29] di modo tale che insomma fossimo compliant con le convenzioni da software developer.
+[01:21:37] solo perché se qualcuno lo prende poi non capisce
+[01:21:40] magari voi ci state lavorando o qualcun altro dentro del progetto e non capisce che cosa siano questi file.md
+[01:21:46] però insomma questo è fatto benissimo abbiamo riaggiornato tutto e ora
+[01:21:52] siamo a posto, Claude dovrebbe essere ancora vuoto perché non gli ho ancora chiesto di fare niente
+[01:21:57] perfetto questo pianifica e quindi ora una volta finito
+[01:22:01] andremo a vedere insomma che cosa esce nella documentazione vapi e poi da lì
+[01:22:06] continueremo a procedere fino a che poi non dovremmo finalmente fare il nostro ultimo
+[01:22:11] cal voice agent .md che è sostanzialmente quello che ci permetterà poi di fare questi
+[01:22:15] workflow complessivi. Perfetto, quindi qui abbiamo il piano, questo va benissimo, quindi
+[01:22:23] come documento di riferimento abbiamo un contesto, struttura del vappi .md, abbiamo
+[01:22:28] un overview, quick reference, assistenti, voice providers, transcriber, tool, telefono
+[01:22:34] e, bene, squads, server URL, webhook, mcp, quindi abbiamo tutto quello che ci serve.
+[01:22:40] Quindi non semplicemente.
+[01:22:41] Primerò accetta e poi bypass permissions e, ehm, benissimo, poi il resto verrà fatto.
+[01:22:49] Eh, ah, piccola variazione, l'ho chiamato vapi.md.
+[01:22:57] Perfetto, e ora aspettiamo, quindi ora il nostro vapi.md è pronto
+[01:23:03] e al volo abbiamo manuale operativo vocale, ogni volta che viene chiamato, cos'è, come funziona
+[01:23:11] e ora abbiamo vedete endpoint, assistente, configurazione moduli, voice providers, quindi adesso sa qualcosa in più di noi
+[01:23:21] sicuramente molte più cose
+[01:23:23] e ora vedete che ha impostazioni chiave, quindi ora comincia ad avere tutti i dettagli del caso, perfetto
+[01:23:30] quindi ora che cosa ci rimane da provare che tutto funzioni quindi gli chiederemo
+[01:23:37] qualcosa del genere hey per favore potresti crearmi un'agente vocale su vapi che parli
+[01:23:44] in italiano e si chiami agente vocale prova lingua italiana se puoi quindi transcriber
+[01:23:53] italiano una voce italiana magari da 11 labs o qualcosa del genere dimmi se hai
+[01:24:00] bisogno dell'apik di levenlabs per accederci o se puoi farlo direttamente da vapi e una
+[01:24:06] volta che hai fatto questo io andrò a controllare dentro la piattaforma vapi che tutto funzioni.
+[01:24:12] Mi raccomando non fare alcun tipo di workflow, quello lo chiederò a parte e fai sempre riferimento
+[01:24:20] al file e ora gli diremo vapi.md pianifico e ora di nuovo vedremo il piano, ci assicureremo
+[01:24:34] questa cosa è una cosa importante, ci assicureremo ora che nel piano ci sia effettivamente scritto
+[01:24:41] che non deve fare il workflow perché molto spesso quello che succede è che noi gli
+[01:24:45] lo diciamo poi nel piano ci è scritto file workflow tutto esplode e noi comincieremo
+[01:24:49] e continueremo sempre ad utilizzare questo approccio quindi prima disegneremo
+[01:24:53] cosa su VAPI, quando siamo soddisfatti allora lo faremo su NITEN e poi ci sarà il progetto finale.
+[01:24:59] Per creare la gente vocale su VAPI mi serve la tua API key di VAPI, non ne ho trovata una nel
+[01:25:06] file, puoi fornirmela bene. Quindi ora faremo login alla piattaforma, allora suppongo che
+[01:25:14] che siano qua dentro, credo sia una public key, quella di cui abbiamo bisogno, quindi
+[01:25:21] add key, voice agent youtube italia, perfetto, select all, voice agent youtube italia, perfetto
+[01:25:41] e qui gli diamo accesso a tutto o a niente, ma quasi quasi gli diamo accesso a niente
+[01:25:48] gli diciamo che faccia quello che vuole, quindi create public token, quindi incolla la kp allora,
+[01:25:59] quindi vapi public API key e ora gli diremo anche questo, quindi anzi YouTube Italia 2
+[01:26:21] e ora gli diremo questo, quindi WAPI, WAPI, Private API. Chi? Perfetto, ora rimetto il
+[01:26:40] mio faccione apposto e ora valutiamo che tutto sia andando per il meglio, quindi
+[01:26:46] contesto, passi, recupera, verificare la creazione, file di riferimento, verifica,
+[01:26:53] perfetto, qua non vedo in workflow, quindi ora bypass permission e dovremmo
+[01:27:00] esserci. Perfetto, allora, agente creato con successo e proviamo con questo,
+[01:27:06] nome, l'emvoice, allora questa avrà come voce SARA, multilingual, deepgram,
+[01:27:14] lingua italiana, primo messaggio, ciao, sono la gente vocale, come posso aiutarti?
+[01:27:19] Allora, quello che faremo ora sarà andare qui in vapi, dentro nostri
+[01:27:23] assistenti abbiamo agente vocale, prova, quindi ora sappiamo che funziona, le
+[01:27:29] itensi sappiamo che è meglio buttarsi giù da un ponte, perfetto, ciao, sono la
+[01:27:34] gente vocale e ora qui abbiamo un sacco di cosine.
+[01:27:41] Allora, ovviamente non gli abbiamo dato alcun contesto, quindi non ci saranno file, configurazione
+[01:27:46] 11labs, ce l'abbiamo, voce perfetto.
+[01:27:49] Adesso, giusto per sentire, deepgram italiano, giusto per sentire, ora vediamo che cosa
+[01:27:57] succede se, anzi se ci risponde in italiano… Ciao, sono la gente vocale di prova, come
+[01:28:09] posso aiutarti? Ciao, vorrei prenotare un appuntamento.
+[01:28:15] certo perché giorno e ora vorresti prenotare per domani alle 4 capito domani alle 4 per
+[01:28:26] quale servizio vuoi prenotare l'appuntamento va bene ok allora suona un po' robotica ora
+[01:28:33] possiamo provare a fare una cosa di questo tipo giusto per sport hey mi piace ho un
+[01:28:42] problema la latenza è tipo due secondi quindi è lentissimo abbiamo un modo per
+[01:28:49] migliorare questo. Mi piacerebbe essere un po' interativo con la gente e fare in modo
+[01:28:54] tale che magari riesca ad avere una conversazione che è più simile a quella di un umano. Oltretutto,
+[01:29:02] mi sembra che sia un po' robotica la voce, quindi abbiamo qualche modo per migliorarla
+[01:29:08] o per far sì che tutto questo sembri un po' meno AI. E vediamo ora cosa succede sulla
+[01:29:16] basso del feedback che gli abbiamo dato. Perfetto, aggiornato, ecco cos'ho cambiato,
+[01:29:21] LLM prima dopo, ne sposta un momento più rapida, modello voce, siamo a flash, stability,
+[01:29:31] similar boost e proviamo. Va bene, se io vado ora nella gente vocale, vedo che il mio cosa
+[01:29:39] succede, non so perché ci sia questa scritta davanti, ok, che il mio agente vocale
+[01:29:44] prova ora una latenza di 6,65. Ovviamente avrà sicuramente degli impatti, no? Però
+[01:29:50] vediamo, ed è quello che volevo dirgli, prima era un costo di 2 centesimi, ora l'ha anche
+[01:29:54] ridotto, come ora diventi molto più semplice migliorare le cose se capiamo che cos'è
+[01:30:00] che stiamo facendo, cioè noi qui dobbiamo cominciare a pensare che con Cloud Code l'importante
+[01:30:04] riuscire a pensare per sistemi, capire quali sono i building blocks che lo fanno
+[01:30:10] E poi possiamo essere un po' più targeted e quindi andare direttamente a colpire la cosa
+[01:30:15] che ci serve, no?
+[01:30:16] Quindi quello che vogliamo fare è letteralmente anche capire come piattaforme, come Nathan,
+[01:30:21] come Vapi, e via dicendo, solo perché migliorerà la capacità che abbiamo poi di interagire
+[01:30:26] con Cloud e di ottenere poi quello che vogliamo.
+[01:30:28] Ora proviamo a vedere cosa succede.
+[01:30:31] Se noi cominciamo ad iniziare una conversazione e vediamo appunto che cosa succede e
+[01:30:35] la qualità.
+[01:30:36] Ciao, solo la gente vocale di prova, come posso aiutarti?
+[01:30:40] Ciao, vorrei prenotare un appuntamento per domani.
+[01:30:44] Certo, a che ora vorresti prenotare l'appuntamento per domani?
+[01:30:48] No bene, abbiamo visto sostanzialmente che sia un attimo di tutta la latenza, ma possiamo
+[01:30:53] molto migliorare per quanto riguarda il suono e quello semplicemente viene con voce più
+[01:31:02] costose e con punteggiatura dentro alle risposte delle AI, quindi abbiamo dei modi anche un
+[01:31:09] po' subdoli, anzi scusate, di modificarla, però non è il momento giusto per farlo, questo
+[01:31:18] ci serve solo per capire ok, tutto quello che stiamo facendo abbiamo messo i vari blocchi
+[01:31:24] che funzionano e ora quello che ci rimane da fare è pulire la nostra conversazione
+[01:31:29] vedere ora come creare il nostro voiceagent.md. Allora, per farlo, possiamo utilizzare un prompt
+[01:31:38] di questo tipo. Allora, ho scritto qualcosa del genere. Allora,
+[01:31:43] A Cloud crea un file chiamato voiceagent.md, anzi qui potrei dirgli addirittura, l'ho
+[01:31:50] già creato, quindi per favore semplicemente scrivici dentro. Questo file è la tua
+[01:31:59] guida di riferimento per costruire un voice agent, segui sempre gli step in questo ordine.
+[01:32:05] Leggi la richiesta dell'utente, apri vapi.md e carica la documentazione necessaria.
+[01:32:09] Poi, usa l'esempio di prompt dentro vapi per creare il prompt della gente, configura la gente
+[01:32:15] quindi modello, voce, lm, qualsiasi altra cosa richiesta dell'utente, se l'utente fornisce
+[01:32:20] un workflow da costruire apri a naten.md, usa le competenze per crearlo, una volta
+[01:32:25] creato il workflow, recupera il webbook URL dal nodo trigger e poi crea un tool
+[01:32:30] dentro la gente vocale che punta quel webbook per finire collega il tool alla
+[01:32:34] gente. Questo è importante perché ogni volta che faremo un nodo o qualcosa
+[01:32:40] in NETN, avremo un URL, quindi un indirizzo a cui poi dovremmo riferirci,
+[01:32:47] quindi il motivo per cui glielo chiediamo è perché interagiremo e
+[01:32:51] manderemo dati, quindi noi parleremo alla gente, la gente li terrà dentro, magari li porterà
+[01:32:57] in un CRM o cose di questo tipo, tramite N8N, quindi questo ci servirà e lo useremo. Perfetto,
+[01:33:04] quindi ora faremo plan mod e poi semplicemente aspettiamo e vi faccio vedere il risultato
+[01:33:10] qua dentro del voice agent. Perfetto, ora ha finito e quindi questo è il file di riferimento
+[01:33:16] principale, quindi workflow, set step, analizza, crea la gente, configura la gente, insomma
+[01:33:22] tutto quello di cui abbiamo parlato con i riferimenti.
+[01:33:26] Ora quindi l'ultima cosa che ci rimane da fare è quella di andare a crearci il nostro
+[01:33:31] famigerato cloud.md, quindi perché? Perché come sapete, quando io entro in una chat
+[01:33:37] qualunque e chiedo un qualcosa a cloud, la prima cosa che cloud fa, e fatemi cambiare
+[01:33:43] magari colore è andare dentro il cloud.md, dal cloud.md cercherà di capire quali sono le
+[01:33:49] impostazioni corrette e quindi poi farà probabilmente questo e dopo una volta fatto quello capirà
+[01:33:55] che deve andare qui e dopo una volta fatto questo capirà che deve andare qui. Il cloud.md
+[01:34:00] è un qualcosa che il cloud leggerà ad ogni initializzazione quindi bisogna crearla
+[01:34:08] e perché sarà il nostro file di riferimento principale.
+[01:34:10] Allora, detto questo, per farlo c'è una cosa molto molto carina, quindi ve lo faccio
+[01:34:15] vedere al volo, o facciamo un mega prompt o facciamo slash init e quindi questo sostanzialmente
+[01:34:23] permetterà di crearci in automatico il nostro file che si chiama appunto cloud.md e insomma
+[01:34:29] lo vedremo adesso al volo perché è sostanzialmente il file di inizializzazione del progetto,
+[01:34:38] quindi man mano che ci mettiamo queste cose dentro e la gente andrà poi a capire che
+[01:34:44] appunto questo è quello che deve fare e quindi poi creerà il nostro cloud.md ok perfetto
+[01:34:50] infatti qui ora lo vedete e lui ci dice now let me create cloud.md for this project
+[01:34:56] root quindi semplicemente con quello siamo riusciti a crearlo perfetto ora ci dice
+[01:35:02] creato e se noi andiamo abbiamo il what, how e why e oltretutto ci ha creato un altro
+[01:35:08] paio di di cosi interessanti, git ignore, ma giusto per farvi capire, questo è un file
+[01:35:13] di guida per cloud code, creo voice agent, quindi costruisco usando vapi più na10 o tutta
+[01:35:23] la documentazione in italiano e cose di questo tipo, quindi adesso questo è in inglese
+[01:35:28] ovviamente con il comando slash init potrei tradurlo in italiano, però questo è quello
+[01:35:34] che ti dice.
+[01:35:35] Ora, lo lascio così perché stiamo facendo per educational purposes, però questo è un
+[01:35:42] comando molto facile che vi salva un po' di mal di testa perché semplicemente è fatto
+[01:35:48] sulle best practices.
+[01:35:49] Perfetto.
+[01:35:50] Quindi, detto questo, possiamo procedere con la creazione del nostro gente end-to-end
+[01:35:55] E quindi ora possiamo dargli un mega prompt che ci aiute insomma a procedere quindi a
+[01:36:00] creare questo questo grosso voice agent che poi andremo a testare e quindi caleremo nel
+[01:36:05] pratico.
+[01:36:06] Hey Cloud sto cercando di costruire un AI receptionist e sostanzialmente quello che
+[01:36:13] voglio fare è creare un agente che possa ricevere le chiamate da parte dell'utente
+[01:36:22] e possa interagire con l'utente.
+[01:36:24] cose che questi high receptionist può fare sono prenotare gli appuntamenti, cancellare
+[01:36:33] gli appuntamenti, rischidulare gli appuntamenti nel caso in cui fossero stati già presentati
+[01:36:41] precedentemente e per farlo la gente dovrà raccogliere alcune informazioni come per
+[01:36:47] ad esempio un nome, un connome, anzi, scusami, un nome, un email e un... e basta così.
+[01:37:03] Vorrei che queste inf... anzi, e quindi nome, email e ragione del contatto. Poi, vorrei
+[01:37:11] che queste informazioni venissero poi collegati con un CRM. Questo CRM per scopi educativi
+[01:37:21] sarà un Google Sheet che dovrà avere obbligatoriamente la stessa nomenclatura dei campi che utilizziamo
+[01:37:34] dentro VAPI. Assicurati anche poi ovviamente che dentro al CRM venga anche contenuta la data,
+[01:37:41] perché appunto non vorrei mai che poi nel CRM non ci sia la data dell'appuntamento e assicurati
+[01:37:48] che il formato di questa data sia compatibile con quelli che sono contenuti all'interno di
+[01:37:54] Google Sheet e anche che in i ten gli confermi. E quindi una volta pensato a questo vorrei
+[01:38:02] vorrei che tu ragionassi per sistemi, quindi non vorrei che tu facessi un mischiotto di
+[01:38:11] tutto, ma vorrei che tu sostanzialmente dividessi questi workflow con una task ben specifica
+[01:38:17] perché come sai lei ha il lavoro bene con task lineari, quindi uno è per il booking,
+[01:38:23] uno è per la cancellation, uno è per il rescheduling, per esempio, e vorrei poi anche che ci fosse
+[01:38:34] un quarto workflow, magari per delle FAQ aziendali, perché vorrei anche fare in modo che io possa
+[01:38:45] inserire al tuo interno una file che lo utilizzeremo come knowledge base. Ovviamente questi quattro
+[01:38:53] workflow dovranno essere fatti nelle ten e dovranno essere sì fatti nel migliore dei modi
+[01:38:59] e dovranno funzionare tutti. Per quanto riguarda la zona geografica oggi è il 24 di marzo
+[01:39:12] 2026 quindi assicurati di avere questo dato al tuo interno. Per quanto riguarda le date, ti ho dato
+[01:39:19] questo dato solo perché tu possa avere un aggancio ma dovresti a livello teorico utilizzare variabili
+[01:39:24] dinamiche dentro VAPI e di modo tale che tu possa anche averle dentro NITN. Tutto dovrebbe
+[01:39:31] essere interattivo, non dovresti avere niente di hard coded, se non ovviamente i dati all'interno
+[01:39:36] di un CRM. Vorrei che una volta fatto questo tu avessi un processo di verifica e di test
+[01:39:44] iterativo continuo, di modo tale che tu non debba richiedere il mio intervento affinché
+[01:39:49] questo venga fatto e vorrei che tu utilizzassi la funzione chat che c'è interna a VAPI tramite
+[01:39:57] API dove puoi sostanzialmente continuare ad interagire a parlare in autonomia tu con
+[01:40:02] gente vocale, di modo tale che io possa avere un prodotto finito alla fine. Allora, vorrei
+[01:40:09] che procedessimo un'ultima informazione è la gente dovrebbe interagire con me in italiano,
+[01:40:19] tutte le conversazioni verranno fatte in italiano, quindi mi aspetto che tu stia efficientando
+[01:40:23] tutto sia a livello di transcriber, che a livello di voice, che a livello di LLM per
+[01:40:30] far sì che anche i vari prompt sia in italiano e per far sì che tutto sia il più efficiente
+[01:40:35] possibile.
+[01:40:36] Come mi piacerebbe procedere per questo piano è nel seguente modo, vorrei che cominciassimo
+[01:40:44] prima con guardare questo voice agent partissimo da cloud.md, poi a livello teorico dovremmo
+[01:40:55] procedere con creare la gente in VAPI e con successivamente creare il tutto in N8N, utilizzando
+[01:41:02] skill ed mcp. Hai tutta la documentazione all'interno, ora io aggiungerò il file come conoscenza
+[01:41:11] che è il database con le informazioni azientali. Perfetto? E ora gli darò quindi questo
+[01:41:19] file qui, gli lo metterò dentro, lo chiameremo conoscenza.pdf così per sport, perfetto, conoscenza.pdf
+[01:41:30] che è da dovesi informazioni aziendali, assicurati di capire dal file di conoscenza.pdf di che
+[01:41:39] tipologia di agente si tratta, assicurate di capire la clinica, assicurate di capire
+[01:41:44] tutti i servizi, orari e via dicendo. Per favore, un'ulteriore cosa è, siccome so che
+[01:41:53] per avere un prompt scritto in modo efficace per non impattare le performance mi servirebbe
+[01:42:00] avere la knowledge base, quindi conoscenza attaccata come tool, per favore fa sì
+[01:42:09] che tu utilizzi il tool, conoscenza.pdf, che io caricherò dentro ora a WAPI, quindi
+[01:42:18] lo troverai all'interno, e fa sì appunto che questa conoscenza venga appunto pescata
+[01:42:24] come tool. Anzi, anche il CRM dovresti, quindi il Google Sheet, dovresti collegarmelo
+[01:42:31] come tool. Facciamo che, invece che farlo io, fai entrambi queste cose tu, io ora
+[01:42:38] ti do semplicemente l'accesso ad un Google Sheet che è completamente vuoto, di modo
+[01:42:44] tale che tu possa poi agire in autonomia e evitare di chiedermi informazioni. Perfetto,
+[01:42:53] ora gli faccio, vabbè adesso ve lo mostro in questo schermo ma sostanzialmente ho
+[01:42:59] fatto questo file vuoto, quindi gli mettiamo Google Sheet, so che perché questo funzioni
+[01:43:11] che affinché tu possa connetterti, devo condividere questo file con qualcosa, quindi assicurati
+[01:43:20] di farlo solo nel momento in cui questo serve. Ok? Quindi possiamo partire con il prompt
+[01:43:27] che ti ho dato. Va bene, allora un prompt giganorme, sono tipo 8 minuti di brainstorming.
+[01:43:34] Questo perché? Perché a livello teorico voglio essere il più dettagliato possibile
+[01:43:40] con questo prompt perché diciamo che se io ora dovesse dirvi ok, preferite dare l'informazione
+[01:43:49] e spiegarle bene ad un impiegato o a un sistema una volta sola e metterci dieci minuti oppure
+[01:43:56] metterci sei ore e spiegargli alle ventisette volte, beh, io preferisco fare tutto il lavoro
+[01:44:02] upfront, quindi essere quanto più dettagliato possibile all'inizio, dare quante più indicazioni
+[01:44:07] possibile e poi eventualmente solamente verso la fine andare poi a toccare tutto il resto.
+[01:44:12] Bene, ora quindi aspettiamo che il nostro sistema con calma pianifichi e poi procederemo con il resto.
+[01:44:20] Perfetto, quindi siamo arrivati ora al piano finale che rivediamo velocemente assieme,
+[01:44:28] quindi AI Receptionist per la clinica dentale, come costruire un AI Receptionist,
+[01:44:34] cheat d'appuntamenti, ok, ci ha dato un bel po' di cose, vabbè ha fatto un minisiarem,
+[01:44:42] ok, anche eccessivo per quanto mi riguarda. Prompt VAPI, perfetto, segue il nostro prompt
+[01:44:49] standard, configurazione, workflow NA10, perfetto, abbiamo i tool, bene, check availability,
+[01:45:01] appointment, canso, reschedule, search, non vedo end call, ok, quindi non vedo la capacità
+[01:45:10] di chiudere, lo farà all'utente ma sarebbe carino, vabbè dai non complichiamolo troppo,
+[01:45:15] però ecco, una cosa che non vedo è la capacità da parte della gente di chiudere la chiamata,
+[01:45:22] quindi dovrei dirgli ok aggiungi end call ma poi c'è già messo tipo sei anni e quattro
+[01:45:27] l'une a fare questa roba qui quindi ok ordine di esecuzione vapi google auth quindi dovremmo
+[01:45:34] configurarla perché non l'ho ancora fatto con la scienza sequenza di implementazione salvare
+[01:45:40] le chiavi di vapi lì dentro ok setup di google perfetto ci siamo fase test set testing
+[01:45:50] autonomo vipi chat api file critici ci siamo ci siamo e ora caffè allora
+[01:46:10] perfetto lui sta facendo dopo aver fatto questo caziliardo di cose mi dice di
+[01:46:15] andare su neiten aprire uno dei quattro workflow appena creati e clicca su un
+[01:46:23] un nodo e poi fare il collegamento alle credenziali. Perfetto, quindi ora noi andiamo qui, N8N, vediamo
+[01:46:32] dove stiamo andando. Ah, ok, allora aspetta che archivio al volo questi che così li
+[01:46:38] teniamo sotto occhio, uno dei quattro a caso, quindi facciamo Book Appointment. Allora
+[01:46:47] faremo sign-in with Google, perché questo abbiamo un OAuth authentication, quindi andrà
+[01:46:53] via veloci veloci. Perfetto, quindi ora facciamo il nostro login. Queste sono le mie
+[01:47:00] dummy emails, quindi spammatemi. Ok, collegato e ora... Ok, perfetto, quindi ora fatto
+[01:47:13] credenziale creata e fatto, adesso vediamo se la presa, ma mi ha detto uno solo quindi
+[01:47:22] suppongo che ora è tutto perfetto, ora devo preparare, prima verifico che le credenziali
+[01:47:30] funzionino, quindi perfetto, ha visto che il resto dovrebbe andare, perfetto, quindi
+[01:47:43] credo che ora tutto sia andato, tutto va da bene come dovrebbe andare, ok sì
+[01:47:49] si confermo o update all for any 10 workflows, l'ha visto e quindi sta facendo l'update.
+[01:47:56] Perfetto, ora sembra aver finito, quindi il riepilogo e i high receptionist Sara, prompt
+[01:48:04] Sara fatto ed è qua dentro, ok, ok, perfetto, flusso, domande, va bene, poi
+[01:48:19] VAPI ASSISTANT, quindi ora abbiamo su VAPI LOGIN, anzi fatemi vedere se riesco ad accederci
+[01:48:28] al volo così, abbiamo perfetto SARA RECEPTIONIST CLINICA BEGGIATO con il nostro PROMPT, una
+[01:48:38] latenza di un cazziliardo di universi però a un buon costo, poi knowledge base caricato
+[01:48:46] come tool, allora verifichiamolo, non è in files, perfetto, non è dentro al prompt,
+[01:48:58] nella knowledge tool, search knowledge base, quindi nei tool, ora search knowledge base,
+[01:49:09] cerchi informazioni, c'erano che nell'identale usano questo tool per rispondere a domande
+[01:49:12] servizi, protocolli, FAQ, perfetto, quindi ha caricato conoscenza pdf, che è questo, ottimo.
+[01:49:20] Poi c'è che availability, calcola slot, perfetto, scrive nel data sheet, vediamo se il Google
+[01:49:29] sheet ha le robe giuste, quindi nome, email, telefono, perfetto, non l'ha messo, quindi
+[01:49:36] fatto che provi anche a vuoto, stato, confermato e message action. Ok, questa non ha un'azione
+[01:49:46] perché è un cancellato, ottimo, perfetto, data, ok. E dopo cosa ci dice? Segna come
+[01:50:01] cancellato, Google Sheets IRM e 5 tool VAPI. Perfetto. Quindi abbiamo tutto, ora N8N, YouTube
+[01:50:12] A. Ora no, vediamo che tutto vada. Ok. Perfetto. Cancel appointment. Ok. Perché non gli ho
+[01:50:26] ho detto di andare con agenti AI, quindi lui ha fatto con formule molto interessante e codice
+[01:50:37] di modo tale che sia più semplice e quindi lascia fare il direzionamento a VAPI.
+[01:50:43] Va bene, vediamo comunque che tutti questi workflow avremmo dovuto farli da soli in autonomia
+[01:50:48] cosa che sarebbe stata folle e quindi, e quindi, ecco sono tutti pubblicati anche
+[01:50:54] quindi sono live, abbiamo i webbook live e questo era quello che vedevamo, no, quindi
+[01:50:58] qui abbiamo il webbook in ingresso, il URL e dopo abbiamo le varie cose qui.
+[01:51:03] Allora, testiamolo, sapete ora la latency, non perdo un millenio a farlo, se questo
+[01:51:10] funziona vi lascio sotto tutto quanto tutti prompt, tutti workflow in A10, avrete una
+[01:51:15] cartella credo con tutto, per i miei membri della community vabbè, vi lascio con il
+[01:51:21] la nostra classe, vi lascio un altro po' di materiale, per tutti gli altri invece vi lascio
+[01:51:25] una cartella o un Google Form, qualcosa.
+[01:51:28] Vediamo.
+[01:51:29] Allora, voglio capire però, allora, deve prenotarmi l'appuntamento e vorrei però capire
+[01:51:34] magari che tipologia di servizio andare a chiedergli.
+[01:51:38] Allora, perfetto, allora, vogliamo testare innanzitutto che non possiamo prenotare
+[01:51:47] dopo le otto.
+[01:51:48] Cominciamo con questo.
+[01:51:49] Faccio così solo perché è molto più veloce. Vorrei prenotare, vorrei prenotare un appuntamento
+[01:51:57] alle 8 di domani, 8 di sera. Allora Giovanni Beggiato, Esbian Camento, Gio Beggiato at gmail.com,
+[01:52:28] vediamo che cosa succede ora grazie domani alle 20 non siamo aperti, perfetto. Ha un'altra
+[01:52:35] preferenza per una fascia oraria. Ho detto, non mi ricordo più cosa ho detto, credo
+[01:52:42] di aver detto sbiancamento, ok, perfetto. Allora, sbiancamento in studio. Ma prima di
+[01:52:50] dirti la fascia oraria mi dici quanto costa sta cosa? Vabbiamo con un prompt a caso proprio
+[01:52:59] come la gente... in modo preciso per sapere e fare una visita gratuita, vuole fissarla?
+[01:53:05] no vorrei capire il costo di uno sbiancamento ok allora non capiamo innanzitutto il costo
+[01:53:20] dello sbiancamento cosa molto importante quindi questa è una cosa che non riusciamo
+[01:53:25] a vedere perfetto poi vediamo se possiamo capire come paghiamo posso pagare in contanti
+[01:53:40] Allora, qui fino al limite legale, fino al limite legale, ok, quindi capisco che sta
+[01:53:50] avendo problemi nella visualizzazione di tabelle, questo è quello che ho capito, fammi
+[01:53:56] vedere questo, allora chiediamo che tipologie di dottori ci sono in studio, cioè come
+[01:54:02] si chiamano, allora se la teoria è confermata dovremmo avere qualche problema a vedere
+[01:54:08] questi. Ora valuteremo se questo è vero oppure non è vero. Beggiato per Odontoiatria,
+[01:54:16] Generale, Marta Silvestri per Orto Donzia ed Estetica dentale e Dottor Luca. Ok. Allora,
+[01:54:26] forse, allora gli abbiamo detto non quotare mai al telefono senza visita. Allora tutto
+[01:54:37] funziona fenomenale! Già one shot! Cazzo che figo! Che figo! Ok, perfetto, funziona
+[01:54:47] molto meglio di quello che credevo! Ok, vediamo... Allora, vediamo se ho un dolore acuto cosa
+[01:55:01] succede. Io ho un dolore acuto però sei sicuro che non posso fare niente a riguardo. Vediamo
+[01:55:10] se devo per forza fare la visita gratuita. Devo per forza fare la visita gratuita anche
+[01:55:16] se sto male e sto per morire? O mi puoi dare un preventivo?
+[01:55:20] Oh, facciamo stress test per vedere cosa succede.
+[01:55:25] Tipologia di problema? Allora Giovanni e poi la tipologia di problema è il problema è
+[01:55:36] sangue che non si ferma. Non ci sono slot per domani, la passo subito alla segreteria
+[01:55:49] per trovare una soluzione immediata. Perfetto, quindi abbiamo rerouting, corretto.
+[01:55:55] è corretto che domani in uno slot a calendario perché il mio calendario è fottuto. Perfetto.
+[01:56:01] Allora, ora vediamo se riesce a capire che mercoledì ha uno spazio alle 5 e se volessi
+[01:56:13] avere uno spazio mercoledì c'è qualcosa dopo un mezzo giorno come disponibilità.
+[01:56:18] Allora, mercoledì, vediamo orari di apertura, haa, spettacolo, ottimo, e sabato mattina
+[01:56:44] ore dieci, vedete comunque come una conversazione può facilmente deteriorare.
+[01:56:53] Ok, questo è falso invece, non ci sono slot disponibili perché io li ho, quindi fa
+[01:56:59] fatica a vedere gli slot disponibili. Questo perché può succedere? Beh, perché innanzitutto
+[01:57:06] dovrei vedere di avere accesso ad un calendario. Cosa che io qua non vedo per esempio. Quindi
+[01:57:14] ora diamo il feedback a Claude. Funziona tutto, ma non abbiamo accesso al calendario.
+[01:57:21] Vediamo così. No, va bene, voglio cancellare l'appuntamento. Vediamo che cosa succede
+[01:57:30] nel nostro… Quello appena discusso trova le cose dentro alla chat, vediamo che succede.
+[01:57:39] Non ho trattato l'accontamento? No, apposto, grazie. Anzi, frenotami al primo buco disponibile.
+[01:57:50] Ogni giorno va bene e qualsiasi era riva bene, dimmi solo quando. Perfetto. Allora,
+[01:58:07] torniamo a Claude e lo sistemiamo. Hey Claude, allora vedo che la gente è fatto, la Knowledge
+[01:58:15] Base c'è, ma ho dato un occhio a i tuoi check availability book appointment, cancel appointment
+[01:58:23] e tutte quelle cose lì. Allora io non credo che tu abbia oggi accesso ad un Google Calendar
+[01:58:29] per poter verificare la disponibilità. Il motivo in cui te lo dico è perché la
+[01:58:36] la gente non riesce a prenatare uno slot mai e a continuadarmi errori dentro al tool.
+[01:58:44] Tipesto ti incollo anche l'errore che il tool mi sta dando, di modo tale che tu possa magari
+[01:58:53] fare debugging.
+[01:58:54] Per favore entra nella conversazione, cerca nei logs che cosa sta succedendo e cerca
+[01:59:00] di risolverlo.
+[01:59:01] Devi assicurarti che io abbia la possibilità di aver accesso ad un Google Calendar.
+[01:59:05] Per favore è sempre collegato alla stessa e mail e quello che vorrei che tu facessi
+[01:59:12] è fai tutte le verifiche del caso, quindi prima di confermarmelo devi avere un check
+[01:59:21] di availability, book appointment, cancel appointment e rescaggio e io devo
+[01:59:27] vederli anche a calendario, cosa che oggi i tuoi cosi di test non li ho visti.
+[01:59:33] Quindi per favore fallo e una volta fatto tutto conferma, andiamo in plan mode e poi vediamo
+[01:59:44] che cosa succede.
+[01:59:45] Ok, perfetto, è già capito il problema, i tu non rispondono correttamente a Vapi e
+[01:59:50] manca l'integrazione con Google Calendar, analizzo la situazione e ora riparte con il nostro
+[01:59:55] ciclo.
+[01:59:56] Bene, quindi ora sostanzialmente io continuerò a farlo adesso finché tutto non si sistema
+[02:00:00] ma abbiamo capito che sostanzialmente adesso è solo una questione di abbiamo impostato
+[02:00:05] a grandi linee la testa, quindi come impostare questa tipologia di sistemi. Ora andremo semplicemente
+[02:00:13] a callarle nel pratico, quindi continueremo fino a che non abbiamo fatto come si chiama
+[02:00:17] fine tuning della nostra soluzione con le necessità aziendali. Vedete, ora come vedete
+[02:00:23] C'è che avrebbe le abilititi fallisce monte probabilmente dato da questo.
+[02:00:27] L'utente vuole Google Calendar per la disponibilità, non solo Google Sheets, questo è importante.
+[02:00:34] E esistono già tu il Google Calendar Legacy in Vapi che non sono collegati, verifico lo
+[02:00:41] stato attuale e lo faccio.
+[02:00:43] Quindi ora sta verificando lo stato dei logs, ora mi ha fatto un bel piano quindi suppongo
+[02:00:48] abbia trovato il problema o presunto tale.
+[02:00:50] quando va picchiamo al webo che inviede dati informato diverso da quello che il nostro
+[02:00:55] codenode si aspetta tu con l'argument and define devo vedere che dati
+[02:01:00] di vapi effettivamente invia e quindi poi fa tutto le sue cosine quindi ora procediamo
+[02:01:06] aspettiamo e una volta fatto vediamo il risultato fetto allora
+[02:01:11] ora vediamo dovrebbe
+[02:01:14] funzionare
+[02:01:16] anche sul mio calendar. Allora andiamo su Vapi, gli facciamo Assistant, Sara e gli diciamo
+[02:01:26] Hey mi chiamo Giovanni, la mia mail è gino at gmail.com. Vorrei prenotare un appuntamento
+[02:01:39] per domani mattina alle 10 e la ragione della mia visita è un dolore acuto, anzi è un
+[02:01:51] igiene dentale, anzi alle 10 non posso perché ora che ho un appuntamento e quindi vediamo
+[02:02:03] Send, vediamo che succede, si, in generale, perfetto, un attimo che controllò disponibilità
+[02:02:15] per venere di mattina, ora a livello teorico dovremmo avere un tool response, va bene,
+[02:02:24] 27, perfetto, l'ingegnere disponibile alle 8.30 oppure alle 9, Giovanni prene di o disponibile
+[02:02:33] alle 8.30 oppure alle 9, quale preferisce specia alle 10, non si può. Mi dispiace ma le 10
+[02:02:43] non c'è disponibilità, fammi controllare, c'è le susponga perché ragioni quindi alle 8.30 perfetto,
+[02:02:51] Ricapitolando, venerdì, 27 marzo, confermo, yes, va bene, vediamo ora che cosa succede,
+[02:03:10] prenotato a bisogno d'altro, allora Giovanni Gino 27, confermato, perfetto, ora andiamo
+[02:03:21] vedere se è nel calendario e vediamo che alle 8.30 ce l'abbiamo a calendario il venerdì
+[02:03:28] allora vediamo se riusciamo a fare un'oravo del genere ok e gli diciamo sempre qui chat
+[02:03:38] ei ciao queste sono le mie informazioni vorrei cancellare l'appuntamento perfetto
+[02:03:51] vediamo se riusciamo a cancellarlo e vediamo cosa succede anche al CRM perché non abbiamo
+[02:03:58] Dattograndi risposte allora appuntamento cancellato diamo ok serve altro no grazie grazie buona giornata te ora controlliamo
+[02:04:11] E perfetto dirai che ci siamo qui è rimosso non c'è più e quindi fatto il workflow funziona ok ora vorrei controllare solo
+[02:04:22] Uno dei log DNA 10 per capire se abbiamo fatto un buon lavoro vediamo buco appointment
+[02:04:26] Vediamo Execution Logs, vediamo se c'abbiamo qualcosa e ora sono le 8 di sera, perfetto
+[02:04:37] e ora vediamo l'appuntamento è prenotato, Anon confirmed, Peggiato LinkedIn, True e
+[02:04:50] e dovrebbe essere alle 8.30 UTC, perfetto, è l'appuntamento corretto e ora possiamo
+[02:04:57] vederlo anche in JSON, quindi ottimo. Abbiamo che le nostre cose sono state fatte come si
+[02:05:04] deve e che tutto è stato prenotato, giusto? Quindi ora, qui abbiamo fatto la verifica
+[02:05:10] del duplicato che non c'è, perfetto, ottimo. Quindi ora tutto questo funziona, abbiamo
+[02:05:18] fatto un AI receptionist, possiamo anche giocare a rischedulare o a fare altro, o c'è
+[02:05:25] che availability e basta. Direi che ora, beh, abbiamo detto per la latenza, possiamo
+[02:05:32] andare a modificarla con i parametri che abbiamo, interagiamo con Cloud Code fino a quando
+[02:05:36] non gli diciamo, hey, per favore modificare la latenza, fai la voce in italiano, fai
+[02:05:40] questo, fai quello, e quindi sostanzialmente ora, il prossimo passo che ci rimane
+[02:05:45] è andare a vedere quali sono le soluzioni che effettivamente vengono lasciate nel mercato.
+[02:05:50] Quindi ora che ci siamo assicurati che tutto funzioni andiamo a vedere quali sono le varie
+[02:05:53] soluzioni che possiamo fare per le aziende e oggi più o meno che livello di income hanno,
+[02:05:58] che cosa potete aspettarvi e cose di questo tipo.
+[02:06:01] Allora partiamo con AI Receptionist. Allora la difficoltà di questa soluzione è sostanzialmente
+[02:06:08] media, media facile, e anche il costo di sviluppo è basso, ma che per cui l'abbiamo fatto adesso,
+[02:06:17] qualche centinaio di euro no? Cioè abbiamo 30 euro mi pare di Anethen, 30 euro di Cloud
+[02:06:23] Code se vogliamo andare proprio nella low tier, un 10 euro o 20 o 30 non mi ricordo
+[02:06:30] di ClickUp se volessimo un CRM di un certo tipo e poi sostanzialmente questa è la vostra
+[02:06:35] soluzione, giusto? Qualche costo per l'API qua e lì però. Generalmente un
+[02:06:41] introito buono diciamo per queste cose qui, soprattutto considerando valore SAS è
+[02:06:46] tra i 20 e i 120, per fare i conti cosiddetti della serva se abbiamo 20.000
+[02:06:52] euro al mese e abbiamo un retener medio che generalmente è basso,
+[02:06:57] pesterobe, no? È 100, 200 euro proprio quelli molto chip sono qui, generalmente per il mass
+[02:07:06] market, abbiamo che ci servono sostanzialmente un ottantino, un centinaio di clienti. Sconsiglio
+[02:07:14] di andare diciamo così bassi perché generalmente, sì, da indice che il servizio non è molto
+[02:07:23] buono, ma da anche indice che generalmente meno si spende, più i clienti diventano difficili,
+[02:07:29] scusate meno i clienti pagano, più diventano difficili, queste per esperienza perché hanno
+[02:07:34] più aspettative, chiedono in borso più spesso, invece diciamo se ci posizioniamo un segmento
+[02:07:40] un po' più premium, generalmente diventano clienti un po' più semplici.
+[02:07:43] Ok, poi abbiamo, ed è il motivo per cui l'abbiamo costruita, no? Quindi questo
+[02:07:50] è quello che potete aspettarvi. Se poi ovviamente lo fate con nicchie specifiche, quindi ovviamente
+[02:07:55] sono più complesse perché c'è la norma, però immaginatevi, non lo so, insurance o
+[02:07:59] cose di questo tipo, allora l'eachern è molto più basso, l'it-ticket è molto più
+[02:08:04] alto e quindi ovviamente tutto poi cambia, ovviamente ascono il settore, però questa
+[02:08:09] è una buona media, diciamo, ho fatto una cosa media non specifica al farmaceutico
+[02:08:14] che ne so, ok? Poi, customer support per i commerce, generalmente avete un ticket un
+[02:08:20] po' più elevato per questi, ma perché è più monetizzabile anche per un e-commerce,
+[02:08:28] questa tipologia di cosa è molto più utile, no? E spesso avete anche la possibilità di
+[02:08:35] fare il recupero ordini, quindi riuscite anche a monetizzare questa cosa qui con il
+[02:08:40] in receptionist diventa un po' più difficile collegare la monetizzazione con il recupero
+[02:08:46] cliente, anche se questa è una soluzione che per esempio io sto offrendo e va molto bene.
+[02:08:51] Non sono ancora a SAS perché non mi interessa fare SAS ancora, sono ancora in studio del
+[02:08:59] mercato però, insomma, vanno bene come soluzioni.
+[02:09:01] L'Hydreat activation, super sexy, molto molto fica, generalmente difficile a far la voce,
+[02:09:09] un'altra metodologia, email, messaggi, cose di questo tipo. Anche questo, questo è solo
+[02:09:17] difficile da fare in maniera che i lead si riattivino per farvi capire sono i messaggi
+[02:09:22] che ricevete dalle palestre, che vi dicono, ah, scontone! E questa invece ha un enorme
+[02:09:28] potenziale perché generalmente sono prezzate sul revenue che viene fatto o recuperato,
+[02:09:34] quindi è sempre una cosa dove se il vostro cliente pagando vi diciamo guadagna, poi guadagnate
+[02:09:41] su guadagnato, quindi è un win per tutti. E dopo ok, questa è in assoluto la più difficile
+[02:09:47] che è le AI recruitment che quindi sono, cominciamo a fare processi di un certo tipo
+[02:09:51] no? Quindi e con recruitment poi potete vedere quello che volete, quindi che sia
+[02:09:56] link di outreach, che sia outbound, ora non potevo metterle tutte, ma capite
+[02:10:01] bene i modelli vari, diciamo che queste sono le più complesse e con giustamente anche ritorne
+[02:10:08] sull'investimento maggiori, perché per esempio Outbound potrete guadagnare su percentuale
+[02:10:13] di un cliente chiuso, percentuale di un candidato preso e cose di questo tipo.
+[02:10:17] Per farla più semplice e perché voi abbiate magari un'idea di 80-20 di azienda più
+[02:10:22] semplice, se questa è la nostra azienda, quindi... e potrezziamoli avere questo...
+[02:10:27] anzi facciamo in blu questa è la nostra azienda ok è così in questo caso mi va anche bene che
+[02:10:34] sia colorato allora tutte le soluzioni che vanno verso l'esterno quindi che contattano
+[02:10:40] persone che non hanno a che fare con l'azienda quindi quello che chiamiamo generalmente outbound
+[02:10:45] sono le soluzioni dove ci sono i dindini più alti no quindi contattare clienti contattare
+[02:10:53] candidati, trovare, non lo so, l'oro, non lo so. E quindi tutte queste soluzioni di outbound
+[02:11:02] sono quelle dove ci sono i soldi più grandi ma sono estremamente difficili da fare. Poi,
+[02:11:09] invece, ora queste, diciamo, le soluzioni qua dentro, quindi interne ad un processo
+[02:11:16] aziendale se questa ovviamente è la vostra azienda. Questa tipologia di soluzioni sono quelle che,
+[02:11:23] diciamo, rientrano un po' nel dimenticatoio perché, perché tipo sono gli FAQ, cioè sì,
+[02:11:30] va bene, è figo, però diciamo non abbiamo grossi impatti a livello economico. Per quanto riguarda
+[02:11:35] invece le soluzioni borderline, che quindi sono quelle dove un lead vi conosce già per qualche
+[02:11:41] che ragione, no? E quindi abbiamo questo flusso qui, quindi un cliente che chiama dal dentista,
+[02:11:46] sono soluzioni relativamente semplici dove questa volta vi faccio mezza S di Superman con
+[02:11:51] una stanghetta sola e questa ve la tratteggio perché non ce l'avete, però sono soluzioni
+[02:11:56] che comunque possono andare bene ma diciamo dove l'introito è meno rilevante. Quindi
+[02:12:02] questa è generalmente come mi piace immaginarmi le aziende, quindi le cose dentro, le
+[02:12:07] cose nel bordo, le cose fuori, questo vale un po' per tutto. Quindi, motivo per cui in
+[02:12:12] un'azienda normale piaccia o meno, escludiamo i tech che sono sempre ben pagati, ma i commerciali
+[02:12:18] sono quelli che prendono più soldi. Perché? Perché siamo sempre in outbound. Generalmente
+[02:12:25] poi il marketing è un'altra funzione ben pagata, però è una funzione che considero
+[02:12:29] border. Ops, che è dove vero io, diciamo piange, è il motivo anche per cui ho
+[02:12:34] fatto career shift un paio di volte. Detto questo quindi spero che il corso vi sia piaciuto,
+[02:12:40] se siete proprietari di una piccola media impresa e volete soluzioni di questo tipo
+[02:12:44] ho lasciato il link sotto quindi potete scriverlo e contattarmi, il team poi vi risponderà
+[02:12:48] e vi farà sapere non appena possibile se c'è un fit, se invece siete un 9 to 5er e avete
+[02:12:54] voglia di cominciare a vendere questa tipologia di soluzioni, vi lascio anche per voi
+[02:12:57] il secondo link qua sotto che è il link al mio coaching program dove vi aiuto a
+[02:13:01] partire con la vostra AI Agents in i prossimi 90 giorni.
+[02:13:04] Detto questo, è stato fighissimo fare il corso, fatemi sapere cosa ne pensate nei commenti.
+[02:13:09] Un saluto.

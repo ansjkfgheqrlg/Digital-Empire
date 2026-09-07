@@ -150,17 +150,32 @@ def main():
         sys.exit(1)
 
     # 1. download a bassa risoluzione
-    video = next(iter(run_dir.glob("video.*")), None)
+    # ATTENZIONE (trovato su max18-v09, 2026-09-07): un download interrotto a meta'
+    # lascia "video.mp4.part" sul disco. "video.*" lo prendeva per buono, e le scene
+    # venivano tagliate silenziosamente al minuto dell'interruzione mentre il resto
+    # della pipeline (durata dichiarata da YouTube) continuava a credersi completo.
+    # Un file .part NON e' mai un video scaricato: si esclude sempre.
+    video = next((v for v in run_dir.glob("video.*") if v.suffix != ".part"), None)
     if not video:
         print(f"[frame] scarico video a <= {args.height}p ...")
         video, info = download_video(url, run_dir, args.height)
         if not video:
-            print("[frame] ERRORE: download fallito.")
+            print("[frame] ERRORE: download fallito (resta solo un .part: rilancia per riprenderlo).")
             sys.exit(2)
     print(f"[frame] video: {video.name} ({video.stat().st_size//1024} KB)")
 
-    # 2. durata + capitoli
-    duration = ingest.get("duration_sec") or ffprobe_duration(video)
+    # 2. durata: quella vera del file scaricato, non quella dichiarata da YouTube.
+    # Un file troncato ha una sua durata reale piu' corta: usarla evita di pianificare
+    # frame oltre la fine del video (che ffmpeg estrarrebbe come fermo-immagine finale
+    # ripetuto, falsando "copertura totale" senza che nessuno se ne accorga).
+    duration_reale = ffprobe_duration(video)
+    duration_dichiarata = ingest.get("duration_sec")
+    if duration_dichiarata and duration_reale and duration_reale < duration_dichiarata * 0.97:
+        print(f"[frame] ATTENZIONE: video locale {hms(duration_reale)} ma YouTube dichiara "
+              f"{hms(duration_dichiarata)} -> il file scaricato e' incompleto. "
+              f"Cancella {video.name} e rilancia per riscaricarlo per intero.")
+        sys.exit(3)
+    duration = duration_reale or duration_dichiarata
     chapters = ingest.get("chapters") or []
     stamps = plan_timestamps(duration, chapters, args.max_frames, interval=args.interval)
     mode = f"intervallo {args.interval}s (densa)" if args.interval else f"capitoli/max-frames={args.max_frames}"
