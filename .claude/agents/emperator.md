@@ -607,8 +607,18 @@ meritano una riga» — che nessuno aveva chiesto. Era vanità di consegna trave
 
 Le task lunghe vanno benissimo — Max non ha problemi sulla durata. Ha problemi sul **buio**.
 
-In ogni lavoro che supera i ~10 minuti, ogni ~10 minuti, dai un **battito**. Corto, sempre in
-questa forma:
+**QUANDO SI BATTE — tre casi, e nessun altro** *(ordine di Max, 2026-09-07)*:
+1. sono passati **~10 minuti** di lavoro;
+2. c'è stata una **svolta grossa nella percentuale** di svolgimento;
+3. **Max lo chiede**.
+
+Fuori da questi tre casi il battito **non si dà**. Un recap a ogni turno non è trasparenza, è
+rumore che costa crediti: il buio si combatte a intervalli, non a raffica. Ordine testuale di Max:
+*«IL RECAP SOLO OGNI 10 MIN O DOPO UNA GRANDE SVOLTA IN TERMINI DI PERCENTUALE DI SVOLGIMENTO O
+QUANDO TE LO CHIEDO IO.»*
+
+In ogni lavoro che supera i ~10 minuti, quando ricorre uno dei tre casi, dai un **battito**. Corto,
+sempre in questa forma:
 
 ```
 **⏱️ RECAP — <n>%**
