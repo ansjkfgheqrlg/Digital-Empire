@@ -1,0 +1,1286 @@
+{
+ "title": "Vendita 101 - Impara a vendere prodotti & servizi — AP Formazione",
+ "meta_description": "Corso online di Andrei Pascu che insegna come vendere senza dipendere da uno script. Non ci sono frasi e trucchetti, solo psicologia e strategie che funzionano. Ci sono anche invitati speciali, vieni a vedere di cosa si tratta.",
+ "og_title": "Vendita 101 - Impara a vendere prodotti & servizi — AP Formazione",
+ "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/t/64ad0174fe5bd06f48b7bd38/1735479257030/Social+image+vendita+101+corso+andrei+pascu.png?format=1500w",
+ "canonical": "https://www.andrei-copy.com/vendita",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
+ "lang": "it-IT",
+ "page_height": 14905,
+ "page_width": 1440,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_text": [
+  [
+   "#1b1b1d",
+   103
+  ],
+  [
+   "#a8a8a8",
+   16
+  ],
+  [
+   "#fafafa",
+   10
+  ],
+  [
+   "#2f6cf4",
+   4
+  ],
+  [
+   "#ebe9e0",
+   4
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#a8a8a8",
+   32
+  ],
+  [
+   "#1b1b1d",
+   10
+  ],
+  [
+   "#fafafa",
+   8
+  ],
+  [
+   "#0062ff",
+   3
+  ]
+ ],
+ "fonts": [
+  [
+   "elza-8u3n84",
+   81
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   50
+  ],
+  [
+   "\"DM Sans\"",
+   5
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 28.8px / w300",
+   56
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   17
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   16
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   11
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   7
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   6
+  ],
+  [
+   "16px / lh normal / w600",
+   5
+  ],
+  [
+   "20px / lh 36px / w300",
+   4
+  ],
+  [
+   "20px / lh 36px / w700",
+   4
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "24px / lh normal / w300",
+   2
+  ],
+  [
+   "35.2px / lh 31.68px / w300",
+   2
+  ],
+  [
+   "17.6px / lh normal / w300",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "300",
+   69
+  ],
+  [
+   "700",
+   61
+  ],
+  [
+   "600",
+   5
+  ],
+  [
+   "400",
+   1
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "10px",
+   6
+  ],
+  [
+   "5px",
+   2
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    930
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "opacity 0.1s linear",
+    6
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "transform 0.3s",
+    4
+   ],
+   [
+    "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    4
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    2
+   ],
+   [
+    "opacity 1s",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "image-fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    10
+   ]
+  ],
+  "filtri": [],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-64a83d102113c686dd43f565\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-649b1ea2809d41a4c599753d\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-64a575fcb3b72840fa583790\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-649afef199e341714d33e40c\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-64a5817e56238c94e3354974\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    33
+   ],
+   [
+    "matrix(1, 0, 0, 1, -9999, 0)",
+    14
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1, 0, 0, 1, 495, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 945, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 1395, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, -405, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 45, 0)",
+    2
+   ]
+  ]
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 194,
+   "text": "Impara come vendere quello che ti pare a chi ti pare."
+  },
+  {
+   "tag": "h3",
+   "y": 399,
+   "text": "Ti insegno io come si fa."
+  },
+  {
+   "tag": "h1",
+   "y": 945,
+   "text": "La verità sulla vendita."
+  },
+  {
+   "tag": "h2",
+   "y": 1555,
+   "text": "Le 3 categorie di persone che devono saper vendere:"
+  },
+  {
+   "tag": "h2",
+   "y": 2097,
+   "text": "I problemi con la formazione classica"
+  },
+  {
+   "tag": "h2",
+   "y": 3471,
+   "text": "In Vendita101 imparerai la scienza che c’è dietro la vendita"
+  },
+  {
+   "tag": "h3",
+   "y": 4040,
+   "text": "Sono riuscito a diventare chi sono grazie alla scienza della comunicazione."
+  },
+  {
+   "tag": "h2",
+   "y": 4457,
+   "text": "Niente chiacchiere: solo fatti e strategie (vedi l’anteprima)"
+  },
+  {
+   "tag": "h2",
+   "y": 5258,
+   "text": "La vendita è cambiata. Non mi credi? Chiedilo ai miei partner"
+  },
+  {
+   "tag": "h3",
+   "y": 5748,
+   "text": "Stefano De Cubellis"
+  },
+  {
+   "tag": "h3",
+   "y": 5748,
+   "text": "Roberto Fiori Rocco"
+  },
+  {
+   "tag": "h3",
+   "y": 5748,
+   "text": "Manuel Bollino"
+  },
+  {
+   "tag": "h3",
+   "y": 5748,
+   "text": "Hafid El Amrani"
+  },
+  {
+   "tag": "h1",
+   "y": 6925,
+   "text": "Vendita nei film ≠ Vendita nella vita reale"
+  },
+  {
+   "tag": "h3",
+   "y": 7094,
+   "text": "La mia “traumatica” esperienza con la vendita"
+  },
+  {
+   "tag": "h3",
+   "y": 7558,
+   "text": "Hai presente il “cazzo, non so che dire”?"
+  },
+  {
+   "tag": "h3",
+   "y": 8257,
+   "text": "Fare il venditore significa essere il rompi-pa**e che non sa farsi dire di no?"
+  },
+  {
+   "tag": "h2",
+   "y": 9007,
+   "text": "Lo script ti fa sembrare la tipa della Vodafone che vuole vendermi l’offerta “SpeCiAlE soLO PeR Me”"
+  },
+  {
+   "tag": "h2",
+   "y": 9708,
+   "text": "E quindi è il momento di vendere per davvero."
+  },
+  {
+   "tag": "h1",
+   "y": 10214,
+   "text": "Cosa Vendita101 può fare per te:"
+  },
+  {
+   "tag": "h1",
+   "y": 10986,
+   "text": "Cosa imparerai?"
+  },
+  {
+   "tag": "h2",
+   "y": 11597,
+   "text": "Tutto ciò che devi sapere per imparare la skill."
+  },
+  {
+   "tag": "h2",
+   "y": 12486,
+   "text": "Quindi, hai deciso di non entrare?"
+  },
+  {
+   "tag": "h2",
+   "y": 13616,
+   "text": "Alcune recensioni lasciate dagli studenti di Vendita101"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 10600,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 10608,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Entra nel coaching",
+   "href": null,
+   "y": 753,
+   "x": 626,
+   "w": 188,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Leggi la storia di Andrei Pascu",
+   "href": "/story",
+   "y": 1395,
+   "x": 583,
+   "w": 274,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Entra in Vendita101",
+   "href": "/acquista-v101",
+   "y": 3219,
+   "x": 625,
+   "w": 190,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Clicca per acquistare",
+   "href": null,
+   "y": 8859,
+   "x": 615,
+   "w": 210,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Ok, voglio imparare...",
+   "href": null,
+   "y": 13403,
+   "x": 618,
+   "w": 204,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 14392,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 14461,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 10593,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 10593,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/40dc53b0-9889-49e7-a005-f528bc4e0ed9/MAD05907.jpg",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 897
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 897
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 897
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 939,
+   "x": 599,
+   "w": 178,
+   "h": 76
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/839332808?app_id=122963",
+   "alt": "",
+   "y": 1085,
+   "x": 523,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1551,
+   "x": 489,
+   "w": 272,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ab07dc77-4779-4d9a-9616-5c3d37636518/a.png",
+   "alt": "",
+   "y": 1700,
+   "x": 455,
+   "w": 530,
+   "h": 186
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1496,
+   "x": 0,
+   "w": 1440,
+   "h": 507
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1496,
+   "x": 0,
+   "w": 1440,
+   "h": 507
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f57d78f2-11d5-42ea-bdfa-21a62a1a2022/v2-2.png",
+   "alt": "",
+   "y": 1973,
+   "x": 0,
+   "w": 1440,
+   "h": 1422
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/df0608a4-251e-4bef-afc0-587dd9a19785/16.png",
+   "alt": "",
+   "y": 2242,
+   "x": 478,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2a9efbad-b2c2-4333-b681-77e6f6c65e45/17.png",
+   "alt": "",
+   "y": 2242,
+   "x": 917,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3be134b0-2f0e-44cd-b9ff-a36b9739aade/15.png",
+   "alt": "",
+   "y": 2691,
+   "x": 698,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1973,
+   "x": 0,
+   "w": 1440,
+   "h": 1422
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1973,
+   "x": 0,
+   "w": 1440,
+   "h": 1422
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/591cd06a-c509-4dca-8662-7ea72979faca/6.jpg",
+   "alt": "",
+   "y": 3649,
+   "x": 726,
+   "w": 192,
+   "h": 108
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/838d3ce1-e85a-4c93-a2ec-03bfc8a90606/7.jpg",
+   "alt": "",
+   "y": 3846,
+   "x": 726,
+   "w": 192,
+   "h": 108
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3367,
+   "x": 0,
+   "w": 1440,
+   "h": 1043
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3367,
+   "x": 0,
+   "w": 1440,
+   "h": 1043
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5781fd3d-f052-47df-adc7-1599f2333639/background+white+-+sp+cm.png",
+   "alt": "",
+   "y": 4381,
+   "x": 0,
+   "w": 1440,
+   "h": 782
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/692784678?app_id=122963",
+   "alt": "",
+   "y": 4721,
+   "x": 489,
+   "w": 462,
+   "h": 260
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f57d78f2-11d5-42ea-bdfa-21a62a1a2022/v2-2.png",
+   "alt": "",
+   "y": 5163,
+   "x": 0,
+   "w": 1440,
+   "h": 1714
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5807cdca-8ba9-461d-87ea-e27e31c34677/65y653.png",
+   "alt": "",
+   "y": 5565,
+   "x": 320,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/598bdb64-4792-49a3-a3f2-04b22483ee9b/14.png?format=80w",
+   "alt": "Your Image",
+   "y": 6532,
+   "x": 349,
+   "w": 100,
+   "h": 100
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e84af8e6-3347-40f3-9718-a6f3f46cd8fc/2.png",
+   "alt": "",
+   "y": 5565,
+   "x": 523,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c7c12a70-7287-43f4-a82a-804c2098e79e/13.png?format=80w",
+   "alt": "Your Image",
+   "y": 6532,
+   "x": 552,
+   "w": 100,
+   "h": 100
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/9b551a7f-ab5b-470a-9dcb-16d2b326204c/3.png",
+   "alt": "",
+   "y": 5565,
+   "x": 759,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/598bdb64-4792-49a3-a3f2-04b22483ee9b/14.png?format=80w",
+   "alt": "Your Image",
+   "y": 6441,
+   "x": 788,
+   "w": 100,
+   "h": 100
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6741f34e-613c-4eb6-81cc-157c59d85778/hafid-v101.png",
+   "alt": "",
+   "y": 5565,
+   "x": 962,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c7c12a70-7287-43f4-a82a-804c2098e79e/13.png?format=80w",
+   "alt": "Your Image",
+   "y": 6316,
+   "x": 991,
+   "w": 100,
+   "h": 100
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1648391391985-D40K5G2DXWFX9XKF7SS5/william-daigneault-GAF48XT3yn8-unsplash.jpg",
+   "alt": "",
+   "y": 6877,
+   "x": 0,
+   "w": 1440,
+   "h": 2082
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0dc05512-3cd3-47a8-bb7f-0c0c38979188/wolf+of+wall-min.jpg",
+   "alt": "",
+   "y": 7172,
+   "x": 320,
+   "w": 192,
+   "h": 240
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6b3421fb-2467-4fcf-a9e5-b374b8321890/Io.jpg",
+   "alt": "",
+   "y": 7871,
+   "x": 894,
+   "w": 225,
+   "h": 310
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f57d78f2-11d5-42ea-bdfa-21a62a1a2022/v2-2.png",
+   "alt": "",
+   "y": 8960,
+   "x": 0,
+   "w": 1440,
+   "h": 701
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e29069b1-492a-4f15-bdac-e6f77f3ba23d/1.png",
+   "alt": "1.png",
+   "y": 10432,
+   "x": 495,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/bd305d75-84bd-4b27-9e5e-8ee68b02d03a/2.png",
+   "alt": "2.png",
+   "y": 10432,
+   "x": 945,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/34742e0c-b591-4d89-8254-0306b9ee3af7/3.png",
+   "alt": "3.png",
+   "y": 10432,
+   "x": 1395,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/37861740-c069-48b4-bf59-7cf8db9ed347/4.png",
+   "alt": "4.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6deaab1d-20ae-478c-87fa-489f1ac2cba8/5.png",
+   "alt": "5.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a78b8a90-f6b3-4918-84da-721ed6edd505/6.png",
+   "alt": "6.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6406d1dd-efa5-4ada-83c3-0b3b973ca7f2/7.png",
+   "alt": "7.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/82f8ca00-e162-476f-9a10-e9b82312beec/8.png",
+   "alt": "8.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/eeee8d74-e51a-4f66-a924-d1eb2abb36d5/9.png",
+   "alt": "9.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c1f10d3c-b052-45c9-ad77-bc1aba2bd75b/10.png",
+   "alt": "10.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6a904588-72be-4a79-8a03-92f05caa64b6/11.png",
+   "alt": "11.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6ba051cc-68d8-433f-8322-4cb4a7d8ebc5/12.png",
+   "alt": "12.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8bf73fe6-cce5-4962-ae76-25b4ca8352ed/13.png",
+   "alt": "13.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0964ed6-dd1a-445a-9538-0d7098909c20/14.png",
+   "alt": "14.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1c8c49cf-46c3-4a26-b01a-6f3791885144/15.png",
+   "alt": "15.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/03d0bcc4-09b2-4926-ae22-c4265b44c439/16.png",
+   "alt": "16.png",
+   "y": 10432,
+   "x": -405,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/73572bf1-703e-45b7-8143-563214fe16b5/social+proof+v101.png",
+   "alt": "social proof v101.png",
+   "y": 10432,
+   "x": 45,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10643,
+   "x": 23,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10643,
+   "x": 1389,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/422ebfec-1fce-4a2e-a549-1424876edb31/benefitsss.png",
+   "alt": "",
+   "y": 11087,
+   "x": 489,
+   "w": 496,
+   "h": 248
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10882,
+   "x": 0,
+   "w": 1440,
+   "h": 583
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10882,
+   "x": 0,
+   "w": 1440,
+   "h": 583
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5781fd3d-f052-47df-adc7-1599f2333639/background+white+-+sp+cm.png",
+   "alt": "",
+   "y": 11436,
+   "x": 0,
+   "w": 1440,
+   "h": 1002
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2f5d9d71-b37e-4c14-ab9a-524e0ccabd2f/Vendita.png",
+   "alt": "",
+   "y": 11520,
+   "x": 624,
+   "w": 192,
+   "h": 30
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5e742bd5-b606-4e9a-b556-c2678572b4d2/dsfervfd.png",
+   "alt": "",
+   "y": 11859,
+   "x": 726,
+   "w": 394,
+   "h": 433
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4509cdd3-7e60-48bb-a720-f462f51e1295/3.png",
+   "alt": "",
+   "y": 11859,
+   "x": 320,
+   "w": 394,
+   "h": 433
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/493ce52d-f3c2-40e6-839e-b947b0653abb/xnah.png",
+   "alt": "",
+   "y": 12707,
+   "x": 455,
+   "w": 530,
+   "h": 299
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1667463288370-75MUG2Y9UNMWQA1OK04H/metodi+di+pagamento+andrei+pascu.png",
+   "alt": "",
+   "y": 13471,
+   "x": 624,
+   "w": 192,
+   "h": 37
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/aa4389f4-42c3-477c-b374-648a390bebb9/1.png",
+   "alt": "1.png",
+   "y": 13750,
+   "x": 495,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/9bb4050d-7cef-4bf8-b9c1-21763e3d1e45/2.png",
+   "alt": "2.png",
+   "y": 13750,
+   "x": 945,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5efd2406-92ef-44b8-8ff4-170abb3e95f0/3.png",
+   "alt": "3.png",
+   "y": 13750,
+   "x": 1395,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f1df9ccb-9592-48e8-ba49-01eee7e7f388/4.png",
+   "alt": "4.png",
+   "y": 13750,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/327f450b-c3d3-4f47-a0df-56c71d502aa3/5.png",
+   "alt": "5.png",
+   "y": 13750,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ae4eff62-0041-4bc5-aea8-04b7fa6fc302/6.png",
+   "alt": "6.png",
+   "y": 13750,
+   "x": -405,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/02da2744-2175-4564-b4a9-b1e22cc539d2/7.png",
+   "alt": "7.png",
+   "y": 13750,
+   "x": 45,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13961,
+   "x": 23,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13961,
+   "x": 1389,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 14217,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 14276,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14328,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14328,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14328,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14328,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "slices_desktop": 17,
+ "slices_mobile": 23,
+ "mobile_page_height": 18738
+}

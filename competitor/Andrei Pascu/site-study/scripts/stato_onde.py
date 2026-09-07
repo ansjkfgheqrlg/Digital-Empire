@@ -55,14 +55,18 @@ def prefissi_report():
     for nome in os.listdir(REPORTS):
         if not nome.endswith(".md"):
             continue
-        m = re.match(r"^(\d{2})(?:-(\d{2}))?-", nome)
+        m = re.match(r"^((?:\d{2}-)+)", nome)
         if not m:
             continue
-        da = int(m.group(1))
-        a = int(m.group(2)) if m.group(2) else da
+        numeri = [int(x) for x in m.group(1).rstrip("-").split("-")]
+        # due numeri = intervallo (14-17-famiglia); tre o piu' = elenco (24-25-27-28-...)
+        if len(numeri) == 2:
+            coperti = range(numeri[0], numeri[1] + 1)
+        else:
+            coperti = numeri
         up = nome.upper()
         tipo = "atlante" if "ATLANTE" in up else ("copy" if "-COPY" in up else "rapporto")
-        for n in range(da, a + 1):
+        for n in coperti:
             mappa.setdefault(n, set()).add(tipo)
     return mappa
 

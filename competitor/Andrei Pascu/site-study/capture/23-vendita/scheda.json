@@ -1,0 +1,2008 @@
+{
+ "url": "https://www.andrei-copy.com/vendita",
+ "slug": "23-vendita",
+ "catturata": "2026-09-07",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "Vendita 101 - Impara a vendere prodotti & servizi — AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 14905,
+ "larghezza": 1440,
+ "altezza_mobile": 18738,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_testo": [
+  [
+   "#1b1b1d",
+   103
+  ],
+  [
+   "#a8a8a8",
+   16
+  ],
+  [
+   "#fafafa",
+   10
+  ],
+  [
+   "#2f6cf4",
+   4
+  ],
+  [
+   "#ebe9e0",
+   4
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#a8a8a8",
+   32
+  ],
+  [
+   "#1b1b1d",
+   10
+  ],
+  [
+   "#fafafa",
+   8
+  ],
+  [
+   "#0062ff",
+   3
+  ]
+ ],
+ "caratteri": [
+  [
+   "elza-8u3n84",
+   81
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   50
+  ],
+  [
+   "\"DM Sans\"",
+   5
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   56
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   17
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   16
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   11
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   7
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   6
+  ],
+  [
+   "16px / lh normal / w600",
+   5
+  ],
+  [
+   "20px / lh 36px / w300",
+   4
+  ],
+  [
+   "20px / lh 36px / w700",
+   4
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "24px / lh normal / w300",
+   2
+  ],
+  [
+   "35.2px / lh 31.68px / w300",
+   2
+  ],
+  [
+   "17.6px / lh normal / w300",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "300",
+   69
+  ],
+  [
+   "700",
+   61
+  ],
+  [
+   "600",
+   5
+  ],
+  [
+   "400",
+   1
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "10px",
+   6
+  ],
+  [
+   "5px",
+   2
+  ]
+ ],
+ "ombre": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    930
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "opacity 0.1s linear",
+    6
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "transform 0.3s",
+    4
+   ],
+   [
+    "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    4
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    2
+   ],
+   [
+    "opacity 1s",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "image-fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    10
+   ]
+  ],
+  "filtri": [],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-64a83d102113c686dd43f565\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-649b1ea2809d41a4c599753d\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-64a575fcb3b72840fa583790\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-649afef199e341714d33e40c\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-64a5817e56238c94e3354974\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    33
+   ],
+   [
+    "matrix(1, 0, 0, 1, -9999, 0)",
+    14
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1, 0, 0, 1, 495, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 945, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 1395, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, -405, 0)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 45, 0)",
+    2
+   ]
+  ]
+ },
+ "keyframes": [
+  "anim-form-post-submit",
+  "animation-form-field-fx-highlight-double-trace",
+  "animation-form-field-fx-highlight-double-trace-bottom",
+  "animation-form-field-fx-highlight-glow",
+  "animation-form-field-fx-highlight-trace",
+  "animation-form-field-fx-highlight-trace-bottom",
+  "bounceIn",
+  "bounceOut",
+  "cart-loader-spin",
+  "clipAnimation",
+  "fadeout",
+  "gallery-image-enter-from-left",
+  "gallery-image-enter-from-right",
+  "gallery-image-exit-to-left",
+  "gallery-image-exit-to-right",
+  "hideContent",
+  "image-fade-in",
+  "keyframes-bar",
+  "keyframes-check",
+  "keyframes-circle",
+  "keyframes-circle-check",
+  "keyframes-ellipsis-grow",
+  "keyframes-ellipsis-shift",
+  "keyframes-ellipsis-shrink",
+  "keyframes-spinner",
+  "keyframes-spinner-check",
+  "lightbox-open",
+  "loading-dot-2",
+  "loading-dot-3",
+  "loading-indicator-dash",
+  "loading-indicator-rotate-spinner",
+  "no-image-fade-in",
+  "plyr-fade-in",
+  "plyr-popup",
+  "plyr-progress",
+  "portfolio-index-background-image-mask--mask-down-in",
+  "portfolio-index-background-image-mask--mask-down-out",
+  "portfolio-index-background-image-mask--mask-left-in",
+  "portfolio-index-background-image-mask--mask-left-out",
+  "portfolio-index-background-image-mask--mask-right-in",
+  "portfolio-index-background-image-mask--mask-right-out",
+  "portfolio-index-background-image-mask--mask-up-in",
+  "portfolio-index-background-image-mask--mask-up-out",
+  "product-reviews-loader-flip-square",
+  "pulseBadgeOpacity",
+  "riseandfadein",
+  "shake-three",
+  "shimmy",
+  "shiver",
+  "show-confirmation",
+  "show-confirmation-mobile",
+  "spin",
+  "sqs-spin",
+  "tmpl-anim-clip-horizontal-left",
+  "tmpl-anim-clip-vertical-up",
+  "tmpl-anim-fade-scale-up",
+  "tmpl-anim-fade-stretch-up",
+  "tmpl-anim-fade-up",
+  "underlineSlideIn",
+  "underlineSlideOut",
+  "video-player-settings-popup",
+  "video-player__loading-indicator-dash",
+  "video-player__loading-indicator-rotate-spinner"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 194,
+   "text": "Impara come vendere quello che ti pare a chi ti pare."
+  },
+  {
+   "tag": "h3",
+   "y": 399,
+   "text": "Ti insegno io come si fa."
+  },
+  {
+   "tag": "h1",
+   "y": 945,
+   "text": "La verità sulla vendita."
+  },
+  {
+   "tag": "h2",
+   "y": 1555,
+   "text": "Le 3 categorie di persone che devono saper vendere:"
+  },
+  {
+   "tag": "h2",
+   "y": 2097,
+   "text": "I problemi con la formazione classica"
+  },
+  {
+   "tag": "h2",
+   "y": 3471,
+   "text": "In Vendita101 imparerai la scienza che c’è dietro la vendita"
+  },
+  {
+   "tag": "h3",
+   "y": 4040,
+   "text": "Sono riuscito a diventare chi sono grazie alla scienza della comunicazione."
+  },
+  {
+   "tag": "h2",
+   "y": 4457,
+   "text": "Niente chiacchiere: solo fatti e strategie (vedi l’anteprima)"
+  },
+  {
+   "tag": "h2",
+   "y": 5258,
+   "text": "La vendita è cambiata. Non mi credi? Chiedilo ai miei partner"
+  },
+  {
+   "tag": "h3",
+   "y": 5748,
+   "text": "Stefano De Cubellis"
+  },
+  {
+   "tag": "h3",
+   "y": 5748,
+   "text": "Roberto Fiori Rocco"
+  },
+  {
+   "tag": "h3",
+   "y": 5748,
+   "text": "Manuel Bollino"
+  },
+  {
+   "tag": "h3",
+   "y": 5748,
+   "text": "Hafid El Amrani"
+  },
+  {
+   "tag": "h1",
+   "y": 6925,
+   "text": "Vendita nei film ≠ Vendita nella vita reale"
+  },
+  {
+   "tag": "h3",
+   "y": 7094,
+   "text": "La mia “traumatica” esperienza con la vendita"
+  },
+  {
+   "tag": "h3",
+   "y": 7558,
+   "text": "Hai presente il “cazzo, non so che dire”?"
+  },
+  {
+   "tag": "h3",
+   "y": 8257,
+   "text": "Fare il venditore significa essere il rompi-pa**e che non sa farsi dire di no?"
+  },
+  {
+   "tag": "h2",
+   "y": 9007,
+   "text": "Lo script ti fa sembrare la tipa della Vodafone che vuole vendermi l’offerta “SpeCiAlE soLO PeR Me”"
+  },
+  {
+   "tag": "h2",
+   "y": 9708,
+   "text": "E quindi è il momento di vendere per davvero."
+  },
+  {
+   "tag": "h1",
+   "y": 10214,
+   "text": "Cosa Vendita101 può fare per te:"
+  },
+  {
+   "tag": "h1",
+   "y": 10986,
+   "text": "Cosa imparerai?"
+  },
+  {
+   "tag": "h2",
+   "y": 11597,
+   "text": "Tutto ciò che devi sapere per imparare la skill."
+  },
+  {
+   "tag": "h2",
+   "y": 12486,
+   "text": "Quindi, hai deciso di non entrare?"
+  },
+  {
+   "tag": "h2",
+   "y": 13616,
+   "text": "Alcune recensioni lasciate dagli studenti di Vendita101"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 10600,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 10608,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Entra nel coaching",
+   "href": null,
+   "y": 753,
+   "x": 626,
+   "w": 188,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Leggi la storia di Andrei Pascu",
+   "href": "/story",
+   "y": 1395,
+   "x": 583,
+   "w": 274,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Entra in Vendita101",
+   "href": "/acquista-v101",
+   "y": 3219,
+   "x": 625,
+   "w": 190,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Clicca per acquistare",
+   "href": null,
+   "y": 8859,
+   "x": 615,
+   "w": 210,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Ok, voglio imparare...",
+   "href": null,
+   "y": 13403,
+   "x": 618,
+   "w": 204,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 14392,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 14461,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 10593,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 10593,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/40dc53b0-9889-49e7-a005-f528bc4e0ed9/MAD05907.jpg",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 897
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 897
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 897
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 939,
+   "x": 599,
+   "w": 178,
+   "h": 76
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/839332808?app_id=122963",
+   "alt": "",
+   "y": 1085,
+   "x": 523,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1551,
+   "x": 489,
+   "w": 272,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ab07dc77-4779-4d9a-9616-5c3d37636518/a.png",
+   "alt": "",
+   "y": 1700,
+   "x": 455,
+   "w": 530,
+   "h": 186
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1496,
+   "x": 0,
+   "w": 1440,
+   "h": 507
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1496,
+   "x": 0,
+   "w": 1440,
+   "h": 507
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f57d78f2-11d5-42ea-bdfa-21a62a1a2022/v2-2.png",
+   "alt": "",
+   "y": 1973,
+   "x": 0,
+   "w": 1440,
+   "h": 1422
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/df0608a4-251e-4bef-afc0-587dd9a19785/16.png",
+   "alt": "",
+   "y": 2242,
+   "x": 478,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2a9efbad-b2c2-4333-b681-77e6f6c65e45/17.png",
+   "alt": "",
+   "y": 2242,
+   "x": 917,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3be134b0-2f0e-44cd-b9ff-a36b9739aade/15.png",
+   "alt": "",
+   "y": 2691,
+   "x": 698,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1973,
+   "x": 0,
+   "w": 1440,
+   "h": 1422
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1973,
+   "x": 0,
+   "w": 1440,
+   "h": 1422
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/591cd06a-c509-4dca-8662-7ea72979faca/6.jpg",
+   "alt": "",
+   "y": 3649,
+   "x": 726,
+   "w": 192,
+   "h": 108
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/838d3ce1-e85a-4c93-a2ec-03bfc8a90606/7.jpg",
+   "alt": "",
+   "y": 3846,
+   "x": 726,
+   "w": 192,
+   "h": 108
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3367,
+   "x": 0,
+   "w": 1440,
+   "h": 1043
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3367,
+   "x": 0,
+   "w": 1440,
+   "h": 1043
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5781fd3d-f052-47df-adc7-1599f2333639/background+white+-+sp+cm.png",
+   "alt": "",
+   "y": 4381,
+   "x": 0,
+   "w": 1440,
+   "h": 782
+  },
+  {
+   "tag": "iframe",
+   "src": "https://player.vimeo.com/video/692784678?app_id=122963",
+   "alt": "",
+   "y": 4721,
+   "x": 489,
+   "w": 462,
+   "h": 260
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f57d78f2-11d5-42ea-bdfa-21a62a1a2022/v2-2.png",
+   "alt": "",
+   "y": 5163,
+   "x": 0,
+   "w": 1440,
+   "h": 1714
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5807cdca-8ba9-461d-87ea-e27e31c34677/65y653.png",
+   "alt": "",
+   "y": 5565,
+   "x": 320,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/598bdb64-4792-49a3-a3f2-04b22483ee9b/14.png?format=80w",
+   "alt": "Your Image",
+   "y": 6532,
+   "x": 349,
+   "w": 100,
+   "h": 100
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e84af8e6-3347-40f3-9718-a6f3f46cd8fc/2.png",
+   "alt": "",
+   "y": 5565,
+   "x": 523,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c7c12a70-7287-43f4-a82a-804c2098e79e/13.png?format=80w",
+   "alt": "Your Image",
+   "y": 6532,
+   "x": 552,
+   "w": 100,
+   "h": 100
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/9b551a7f-ab5b-470a-9dcb-16d2b326204c/3.png",
+   "alt": "",
+   "y": 5565,
+   "x": 759,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/598bdb64-4792-49a3-a3f2-04b22483ee9b/14.png?format=80w",
+   "alt": "Your Image",
+   "y": 6441,
+   "x": 788,
+   "w": 100,
+   "h": 100
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6741f34e-613c-4eb6-81cc-157c59d85778/hafid-v101.png",
+   "alt": "",
+   "y": 5565,
+   "x": 962,
+   "w": 158,
+   "h": 158
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c7c12a70-7287-43f4-a82a-804c2098e79e/13.png?format=80w",
+   "alt": "Your Image",
+   "y": 6316,
+   "x": 991,
+   "w": 100,
+   "h": 100
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1648391391985-D40K5G2DXWFX9XKF7SS5/william-daigneault-GAF48XT3yn8-unsplash.jpg",
+   "alt": "",
+   "y": 6877,
+   "x": 0,
+   "w": 1440,
+   "h": 2082
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0dc05512-3cd3-47a8-bb7f-0c0c38979188/wolf+of+wall-min.jpg",
+   "alt": "",
+   "y": 7172,
+   "x": 320,
+   "w": 192,
+   "h": 240
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6b3421fb-2467-4fcf-a9e5-b374b8321890/Io.jpg",
+   "alt": "",
+   "y": 7871,
+   "x": 894,
+   "w": 225,
+   "h": 310
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f57d78f2-11d5-42ea-bdfa-21a62a1a2022/v2-2.png",
+   "alt": "",
+   "y": 8960,
+   "x": 0,
+   "w": 1440,
+   "h": 701
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e29069b1-492a-4f15-bdac-e6f77f3ba23d/1.png",
+   "alt": "1.png",
+   "y": 10432,
+   "x": 495,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/bd305d75-84bd-4b27-9e5e-8ee68b02d03a/2.png",
+   "alt": "2.png",
+   "y": 10432,
+   "x": 945,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/34742e0c-b591-4d89-8254-0306b9ee3af7/3.png",
+   "alt": "3.png",
+   "y": 10432,
+   "x": 1395,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/37861740-c069-48b4-bf59-7cf8db9ed347/4.png",
+   "alt": "4.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6deaab1d-20ae-478c-87fa-489f1ac2cba8/5.png",
+   "alt": "5.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a78b8a90-f6b3-4918-84da-721ed6edd505/6.png",
+   "alt": "6.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6406d1dd-efa5-4ada-83c3-0b3b973ca7f2/7.png",
+   "alt": "7.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/82f8ca00-e162-476f-9a10-e9b82312beec/8.png",
+   "alt": "8.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/eeee8d74-e51a-4f66-a924-d1eb2abb36d5/9.png",
+   "alt": "9.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c1f10d3c-b052-45c9-ad77-bc1aba2bd75b/10.png",
+   "alt": "10.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6a904588-72be-4a79-8a03-92f05caa64b6/11.png",
+   "alt": "11.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6ba051cc-68d8-433f-8322-4cb4a7d8ebc5/12.png",
+   "alt": "12.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8bf73fe6-cce5-4962-ae76-25b4ca8352ed/13.png",
+   "alt": "13.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0964ed6-dd1a-445a-9538-0d7098909c20/14.png",
+   "alt": "14.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1c8c49cf-46c3-4a26-b01a-6f3791885144/15.png",
+   "alt": "15.png",
+   "y": 10432,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/03d0bcc4-09b2-4926-ae22-c4265b44c439/16.png",
+   "alt": "16.png",
+   "y": 10432,
+   "x": -405,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/73572bf1-703e-45b7-8143-563214fe16b5/social+proof+v101.png",
+   "alt": "social proof v101.png",
+   "y": 10432,
+   "x": 45,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10643,
+   "x": 23,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10643,
+   "x": 1389,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/422ebfec-1fce-4a2e-a549-1424876edb31/benefitsss.png",
+   "alt": "",
+   "y": 11087,
+   "x": 489,
+   "w": 496,
+   "h": 248
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10882,
+   "x": 0,
+   "w": 1440,
+   "h": 583
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10882,
+   "x": 0,
+   "w": 1440,
+   "h": 583
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5781fd3d-f052-47df-adc7-1599f2333639/background+white+-+sp+cm.png",
+   "alt": "",
+   "y": 11436,
+   "x": 0,
+   "w": 1440,
+   "h": 1002
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2f5d9d71-b37e-4c14-ab9a-524e0ccabd2f/Vendita.png",
+   "alt": "",
+   "y": 11520,
+   "x": 624,
+   "w": 192,
+   "h": 30
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5e742bd5-b606-4e9a-b556-c2678572b4d2/dsfervfd.png",
+   "alt": "",
+   "y": 11859,
+   "x": 726,
+   "w": 394,
+   "h": 433
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4509cdd3-7e60-48bb-a720-f462f51e1295/3.png",
+   "alt": "",
+   "y": 11859,
+   "x": 320,
+   "w": 394,
+   "h": 433
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/493ce52d-f3c2-40e6-839e-b947b0653abb/xnah.png",
+   "alt": "",
+   "y": 12707,
+   "x": 455,
+   "w": 530,
+   "h": 299
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1667463288370-75MUG2Y9UNMWQA1OK04H/metodi+di+pagamento+andrei+pascu.png",
+   "alt": "",
+   "y": 13471,
+   "x": 624,
+   "w": 192,
+   "h": 37
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/aa4389f4-42c3-477c-b374-648a390bebb9/1.png",
+   "alt": "1.png",
+   "y": 13750,
+   "x": 495,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/9bb4050d-7cef-4bf8-b9c1-21763e3d1e45/2.png",
+   "alt": "2.png",
+   "y": 13750,
+   "x": 945,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5efd2406-92ef-44b8-8ff4-170abb3e95f0/3.png",
+   "alt": "3.png",
+   "y": 13750,
+   "x": 1395,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f1df9ccb-9592-48e8-ba49-01eee7e7f388/4.png",
+   "alt": "4.png",
+   "y": 13750,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/327f450b-c3d3-4f47-a0df-56c71d502aa3/5.png",
+   "alt": "5.png",
+   "y": 13750,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ae4eff62-0041-4bc5-aea8-04b7fa6fc302/6.png",
+   "alt": "6.png",
+   "y": 13750,
+   "x": -405,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/02da2744-2175-4564-b4a9-b1e22cc539d2/7.png",
+   "alt": "7.png",
+   "y": 13750,
+   "x": 45,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13961,
+   "x": 23,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13961,
+   "x": 1389,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 14217,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 14276,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14328,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14328,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14328,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14328,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 185,
+ "meta": {
+  "description": "Corso online di Andrei Pascu che insegna come vendere senza dipendere da uno script. Non ci sono frasi e trucchetti, solo psicologia e strategie che funzionano. Ci sono anche invitati speciali, vieni a vedere di cosa si tratta.",
+  "og_title": "Vendita 101 - Impara a vendere prodotti & servizi — AP Formazione",
+  "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/t/64ad0174fe5bd06f48b7bd38/1735479257030/Social+image+vendita+101+corso+andrei+pascu.png?format=1500w",
+  "canonical": "https://www.andrei-copy.com/vendita",
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 897,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Impara come vendere quello che ti pare a chi ti pare.",
+   "headings": [
+    "Impara come vendere quello che ti pare a chi ti pare.",
+    "Ti insegno io come si fa.",
+    "Senza rimanere mai bloccato. Senza sembrare disperato. Senza dover rincorrere i prospect. Senza essere dipendente da uno script."
+   ],
+   "blocchi_testo": 8,
+   "parole": 38,
+   "densita": 4,
+   "media": 4,
+   "cta": 1,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|C|4",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-impara-come-vendere-quello-che-ti.png"
+  },
+  {
+   "i": 2,
+   "y": 897,
+   "h": 599,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "La verità sulla vendita.",
+   "headings": [
+    "La verità sulla vendita."
+   ],
+   "blocchi_testo": 3,
+   "parole": 10,
+   "densita": 2,
+   "media": 2,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|3",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-la-verit-sulla-vendita.png"
+  },
+  {
+   "i": 3,
+   "y": 1496,
+   "h": 507,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Le 3 categorie di persone che devono saper vendere:",
+   "headings": [
+    "Le 3 categorie di persone che devono saper vendere:"
+   ],
+   "blocchi_testo": 2,
+   "parole": 9,
+   "densita": 2,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|3",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-le-3-categorie-di-persone-che-devo.png"
+  },
+  {
+   "i": 4,
+   "y": 2002,
+   "h": 1393,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "I problemi con la formazione classica",
+   "headings": [
+    "I problemi con la formazione classica",
+    "Non ti insegnano a vendere… Ti insegnano frasi ad effetto",
+    "Frasi come…",
+    "Non ti insegnano come gestire obiezioni",
+    "Cose per cui lo script non ti prepara:",
+    "La vendita tradizionale semplicemente non funziona più."
+   ],
+   "blocchi_testo": 19,
+   "parole": 136,
+   "densita": 10,
+   "media": 6,
+   "cta": 1,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|C|7",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-i-problemi-con-la-formazione-class.png"
+  },
+  {
+   "i": 5,
+   "y": 3396,
+   "h": 1014,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "In Vendita101 imparerai la scienza che c’è dietro la vendita",
+   "headings": [
+    "In Vendita101 imparerai la scienza che c’è dietro la vendita",
+    "Sono riuscito a diventare chi sono grazie alla scienza della comunicazione."
+   ],
+   "blocchi_testo": 6,
+   "parole": 107,
+   "densita": 11,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|5",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-in-vendita101-imparerai-la-scienza.png"
+  },
+  {
+   "i": 6,
+   "y": 4410,
+   "h": 753,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Niente chiacchiere: solo fatti e strategie (vedi l’anteprima)",
+   "headings": [
+    "Niente chiacchiere: solo fatti e strategie (vedi l’anteprima)",
+    "Anteprima gratuita di Vendita101. Ecco un piccolo assaggio della lezione sulle obiezioni. Clicca e vedi il video."
+   ],
+   "blocchi_testo": 6,
+   "parole": 68,
+   "densita": 9,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-niente-chiacchiere-solo-fatti-e-st.png"
+  },
+  {
+   "i": 7,
+   "y": 5163,
+   "h": 1714,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "La vendita è cambiata. Non mi credi? Chiedilo ai miei partner",
+   "headings": [
+    "La vendita è cambiata. Non mi credi? Chiedilo ai miei partner",
+    "Stefano De Cubellis",
+    "Roberto Fiori Rocco",
+    "Manuel Bollino",
+    "Hafid El Amrani"
+   ],
+   "blocchi_testo": 18,
+   "parole": 279,
+   "densita": 16,
+   "media": 9,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|9",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-la-vendita-cambiata-non-mi-credi-c.png"
+  },
+  {
+   "i": 8,
+   "y": 6877,
+   "h": 2082,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Vendita nei film ≠ Vendita nella vita reale",
+   "headings": [
+    "Vendita nei film ≠ Vendita nella vita reale",
+    "La mia “traumatica” esperienza con la vendita",
+    "Hai presente il “cazzo, non so che dire”?",
+    "Fare il venditore significa essere il rompi-pa**e che non sa farsi dire di no?"
+   ],
+   "blocchi_testo": 18,
+   "parole": 398,
+   "densita": 19,
+   "media": 3,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|10",
+   "gruppo": 8,
+   "rappresentante": true,
+   "screenshot": "sezioni/08-vendita-nei-film-vendita-nella-vit.png"
+  },
+  {
+   "i": 9,
+   "y": 8960,
+   "h": 701,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Lo script ti fa sembrare la tipa della Vodafone che vuole vendermi l’offerta “SpeCiAlE soLO PeR Me”",
+   "headings": [
+    "Lo script ti fa sembrare la tipa della Vodafone che vuole vendermi l’offerta “SpeCiAlE soLO PeR Me”"
+   ],
+   "blocchi_testo": 8,
+   "parole": 149,
+   "densita": 21,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|M|-|4",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-lo-script-ti-fa-sembrare-la-tipa-d.png"
+  },
+  {
+   "i": 10,
+   "y": 9661,
+   "h": 525,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "E quindi è il momento di vendere per davvero.",
+   "headings": [
+    "E quindi è il momento di vendere per davvero."
+   ],
+   "blocchi_testo": 6,
+   "parole": 117,
+   "densita": 22,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|-|-|3",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-e-quindi-il-momento-di-vendere-per.png"
+  },
+  {
+   "i": 11,
+   "y": 10186,
+   "h": 246,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Cosa Vendita101 può fare per te:",
+   "headings": [
+    "Cosa Vendita101 può fare per te:",
+    "Alcuni messaggi che ho ricevuto su Instagram e Telegram👇🏻"
+   ],
+   "blocchi_testo": 2,
+   "parole": 15,
+   "densita": 6,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|-|-|1",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-cosa-vendita101-pu-fare-per-te.png"
+  },
+  {
+   "i": 12,
+   "y": 10432,
+   "h": 450,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.gallery-section.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 2,
+   "parole": 0,
+   "densita": 0,
+   "media": 19,
+   "cta": 0,
+   "firma": "section|page-section.gallery-section.full-bleed-section|2|M|-|2",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-section.png"
+  },
+  {
+   "i": 13,
+   "y": 10882,
+   "h": 583,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Cosa imparerai?",
+   "headings": [
+    "Cosa imparerai?"
+   ],
+   "blocchi_testo": 1,
+   "parole": 2,
+   "densita": 0,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|3",
+   "gruppo": 3,
+   "rappresentante": false,
+   "screenshot": "sezioni/13-cosa-imparerai.png"
+  },
+  {
+   "i": 14,
+   "y": 11465,
+   "h": 973,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Tutto ciò che devi sapere per imparare la skill.",
+   "headings": [
+    "Tutto ciò che devi sapere per imparare la skill.",
+    "E non solo, altre lezioni usciranno e le riceverai a gratis una volta entrato in Vendita101… ⏱️"
+   ],
+   "blocchi_testo": 4,
+   "parole": 47,
+   "densita": 5,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|5",
+   "gruppo": 14,
+   "rappresentante": true,
+   "screenshot": "sezioni/14-tutto-ci-che-devi-sapere-per-impar.png"
+  },
+  {
+   "i": 15,
+   "y": 12438,
+   "h": 1121,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Quindi, hai deciso di non entrare?",
+   "headings": [
+    "Quindi, hai deciso di non entrare?"
+   ],
+   "blocchi_testo": 9,
+   "parole": 79,
+   "densita": 7,
+   "media": 2,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|6",
+   "gruppo": 15,
+   "rappresentante": true,
+   "screenshot": "sezioni/15-quindi-hai-deciso-di-non-entrare.png"
+  },
+  {
+   "i": 16,
+   "y": 13560,
+   "h": 191,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Alcune recensioni lasciate dagli studenti di Vendita101",
+   "headings": [
+    "Alcune recensioni lasciate dagli studenti di Vendita101"
+   ],
+   "blocchi_testo": 1,
+   "parole": 7,
+   "densita": 4,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|-|-|1",
+   "gruppo": 11,
+   "rappresentante": false,
+   "screenshot": "sezioni/16-alcune-recensioni-lasciate-dagli-s.png"
+  },
+  {
+   "i": 17,
+   "y": 13750,
+   "h": 450,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.gallery-section.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 2,
+   "parole": 0,
+   "densita": 0,
+   "media": 9,
+   "cta": 0,
+   "firma": "section|page-section.gallery-section.full-bleed-section|2|M|-|2",
+   "gruppo": 12,
+   "rappresentante": false,
+   "screenshot": "sezioni/17-section.png"
+  },
+  {
+   "i": 18,
+   "y": 14200,
+   "h": 705,
+   "prof": 2,
+   "tag": "footer",
+   "id": "footer-sections",
+   "classi": "sections",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 24,
+   "parole": 99,
+   "densita": 14,
+   "media": 7,
+   "cta": 2,
+   "firma": "footer|sections|1|M|C|4",
+   "gruppo": 18,
+   "rappresentante": true,
+   "screenshot": "sezioni/18-footer.png"
+  }
+ ],
+ "sezioni_totali": 18,
+ "sezioni_distinte": 15,
+ "src": [
+  {
+   "file": "src/01-modern.js",
+   "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+   "bytes": 117559
+  },
+  {
+   "file": "src/02-cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "bytes": 153101
+  },
+  {
+   "file": "src/03-common-147d172ad0d91fc8-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-147d172ad0d91fc8-min.it-IT.js",
+   "bytes": 991162
+  },
+  {
+   "file": "src/04-common-vendors-3db7fa7f48056cab-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3db7fa7f48056cab-min.it-IT.js",
+   "bytes": 807017
+  },
+  {
+   "file": "src/05-common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "bytes": 246523
+  },
+  {
+   "file": "src/06-extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+   "bytes": 850352
+  },
+  {
+   "file": "src/07-extract-css-runtime-b6c9f1e8b6f4c3e5-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-b6c9f1e8b6f4c3e5-min.it-IT.js",
+   "bytes": 50537
+  },
+  {
+   "file": "src/08-performance-9f27ffc89697350c-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/performance-9f27ffc89697350c-min.it-IT.js",
+   "bytes": 120266
+  },
+  {
+   "file": "src/09-user-account-core-a7a589e8ab6c1ba7-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/user-account-core-a7a589e8ab6c1ba7-min.it-IT.js",
+   "bytes": 65950
+  },
+  {
+   "file": "src/10-visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "bytes": 3680
+  },
+  {
+   "file": "src/11-commerce-d50e5960dc9fd059-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/commerce-d50e5960dc9fd059-min.it-IT.css",
+   "bytes": 9897
+  },
+  {
+   "file": "src/12-user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "bytes": 2301
+  },
+  {
+   "file": "src/13-website.components.button.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/15513fd9-cf46-4c19-8e88-ade3dbbf4aad_1052/website.components.button.styles.css",
+   "bytes": 1087
+  },
+  {
+   "file": "src/14-website.components.button.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/15513fd9-cf46-4c19-8e88-ade3dbbf4aad_1052/website.components.button.visitor.js",
+   "bytes": 12176
+  },
+  {
+   "file": "src/15-website.components.code.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/23427567-979d-40ac-b035-c3c2df1c0b01_927/website.components.code.styles.css",
+   "bytes": 102
+  },
+  {
+   "file": "src/16-website.components.code.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/23427567-979d-40ac-b035-c3c2df1c0b01_927/website.components.code.visitor.js",
+   "bytes": 15193
+  },
+  {
+   "file": "src/17-website.components.horizontalrule.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/7a41372a-a2fc-478b-9e43-c34805b2e47e_249/website.components.horizontalrule.styles.css",
+   "bytes": 95
+  },
+  {
+   "file": "src/18-website.components.horizontalrule.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/7a41372a-a2fc-478b-9e43-c34805b2e47e_249/website.components.horizontalrule.visitor.js",
+   "bytes": 12172
+  },
+  {
+   "file": "src/19-website.components.html.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/49aa6ce9-6788-48ef-8046-29522025eafb_882/website.components.html.styles.css",
+   "bytes": 105
+  },
+  {
+   "file": "src/20-website.components.html.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/49aa6ce9-6788-48ef-8046-29522025eafb_882/website.components.html.visitor.js",
+   "bytes": 12095
+  },
+  {
+   "file": "src/21-18018.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/18018.js",
+   "bytes": 12970
+  },
+  {
+   "file": "src/22-39188.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/39188.js",
+   "bytes": 20695
+  },
+  {
+   "file": "src/23-64023.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/64023.js",
+   "bytes": 33127
+  },
+  {
+   "file": "src/24-92452.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/92452.js",
+   "bytes": 38848
+  },
+  {
+   "file": "src/25-image-effect-film-grain.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-film-grain.js",
+   "bytes": 8476
+  },
+  {
+   "file": "src/26-image-effect-liquid.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-liquid.js",
+   "bytes": 8950
+  },
+  {
+   "file": "src/27-image-effect-parallax.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-parallax.js",
+   "bytes": 6211
+  },
+  {
+   "file": "src/28-image-effect-refracted-circles.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-refracted-circles.js",
+   "bytes": 3053
+  },
+  {
+   "file": "src/29-image-effect-refracted-lines.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-refracted-lines.js",
+   "bytes": 12159
+  },
+  {
+   "file": "src/30-website.components.imageFluid.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/website.components.imageFluid.styles.css",
+   "bytes": 2671
+  },
+  {
+   "file": "src/31-website.components.imageFluid.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/website.components.imageFluid.visitor.js",
+   "bytes": 29543
+  },
+  {
+   "file": "src/32-website.components.socialLinks.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/7e8a8aa8-b578-4fac-a342-60ec87f8a280_660/website.components.socialLinks.styles.css",
+   "bytes": 12212
+  },
+  {
+   "file": "src/33-website.components.socialLinks.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/7e8a8aa8-b578-4fac-a342-60ec87f8a280_660/website.components.socialLinks.visitor.js",
+   "bytes": 13307
+  },
+  {
+   "file": "src/34-20293.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/15408132-6fbb-418d-bb9e-b56389260a91_627/20293.js",
+   "bytes": 9102
+  },
+  {
+   "file": "src/35-website.components.video.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/15408132-6fbb-418d-bb9e-b56389260a91_627/website.components.video.styles.css",
+   "bytes": 4148
+  },
+  {
+   "file": "src/36-custom.css",
+   "url": "https://static1.squarespace.com/static/custom-css/602126db7a4e4c01fd9babb6/602126db7a4e4c01fd9babd0/0/custom.css",
+   "bytes": 1183
+  },
+  {
+   "file": "src/37-site.css",
+   "url": "https://static1.squarespace.com/static/versioned-site-css/602126db7a4e4c01fd9babb6/177/5c5a519771c10ba3470d8101/602126db7a4e4c01fd9babd0/1822/site.css?nocustom=true",
+   "bytes": 1274296
+  },
+  {
+   "file": "src/38-site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+   "bytes": 128081
+  },
+  {
+   "file": "src/39-static.css",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1787156543145-0MJJPDTBNWE734EUOY27/static.css",
+   "bytes": 481489
+  },
+  {
+   "file": "src/40-rdd73ozkqt.js",
+   "url": "https://www.clarity.ms/tag/rdd73ozkqt",
+   "bytes": 878
+  }
+ ],
+ "segmentazione": "ok"
+}

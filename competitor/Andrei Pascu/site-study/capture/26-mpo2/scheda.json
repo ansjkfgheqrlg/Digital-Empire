@@ -1,0 +1,1771 @@
+{
+ "url": "https://www.andrei-copy.com/mpo2",
+ "slug": "26-mpo2",
+ "catturata": "2026-09-07",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "Mindset: Programma Operativo - Formazione sul mindset imprenditoriale e produttività. — AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 10120,
+ "larghezza": 1440,
+ "altezza_mobile": 12554,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_testo": [
+  [
+   "#1b1b1d",
+   42
+  ],
+  [
+   "#a8a8a8",
+   25
+  ],
+  [
+   "#fafafa",
+   14
+  ],
+  [
+   "#ffffff",
+   3
+  ],
+  [
+   "#e7e7e7",
+   3
+  ],
+  [
+   "#ebe9e0",
+   2
+  ],
+  [
+   "#ffffff @0.35",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#a8a8a8",
+   27
+  ],
+  [
+   "#1b1b1d",
+   27
+  ],
+  [
+   "#0062ff",
+   3
+  ],
+  [
+   "#000000 @0.5",
+   1
+  ],
+  [
+   "#fafafa",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "elza-8u3n84",
+   57
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   23
+  ],
+  [
+   "Clarkson, Arial, sans-serif",
+   7
+  ],
+  [
+   "\"DM Sans\"",
+   2
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   32
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   12
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   11
+  ],
+  [
+   "24px / lh normal / w700",
+   7
+  ],
+  [
+   "16px / lh 27.2px / w400",
+   5
+  ],
+  [
+   "20px / lh 36px / w300",
+   5
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   3
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   2
+  ],
+  [
+   "16px / lh normal / w600",
+   2
+  ],
+  [
+   "12px / lh 20.4px / w400",
+   2
+  ],
+  [
+   "20px / lh 36px / w700",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "35.2px / lh 31.68px / w300",
+   1
+  ],
+  [
+   "17.6px / lh normal / w300",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "300",
+   42
+  ],
+  [
+   "700",
+   37
+  ],
+  [
+   "400",
+   8
+  ],
+  [
+   "600",
+   2
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "10px",
+   3
+  ],
+  [
+   "4px",
+   3
+  ],
+  [
+   "20px",
+   2
+  ],
+  [
+   "100%",
+   1
+  ],
+  [
+   "26px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    728
+   ],
+   [
+    "transform 0.25s",
+    14
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "0.3s",
+    4
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.1s linear",
+    3
+   ],
+   [
+    "box-shadow 0.3s",
+    2
+   ],
+   [
+    "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
+    1
+   ],
+   [
+    "transform 0.3s",
+    1
+   ],
+   [
+    "opacity 0.2s",
+    1
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "image-fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+    5
+   ]
+  ],
+  "filtri": [
+   [
+    "backdrop: blur(15px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    28
+   ],
+   [
+    "matrix(1, 0, 0, 1, -9999, 0)",
+    10
+   ],
+   [
+    "matrix(0, 1, -1, 0, 0, 0)",
+    7
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1, 0, 0, 1, -40, -40)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -58)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 495, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 945, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 1395, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -405, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 45, 0)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [
+  "anim-form-post-submit",
+  "animation-form-field-fx-highlight-double-trace",
+  "animation-form-field-fx-highlight-double-trace-bottom",
+  "animation-form-field-fx-highlight-glow",
+  "animation-form-field-fx-highlight-trace",
+  "animation-form-field-fx-highlight-trace-bottom",
+  "bounceIn",
+  "bounceOut",
+  "cart-loader-spin",
+  "clipAnimation",
+  "fadeout",
+  "gallery-image-enter-from-left",
+  "gallery-image-enter-from-right",
+  "gallery-image-exit-to-left",
+  "gallery-image-exit-to-right",
+  "hideContent",
+  "image-fade-in",
+  "keyframes-bar",
+  "keyframes-check",
+  "keyframes-circle",
+  "keyframes-circle-check",
+  "keyframes-ellipsis-grow",
+  "keyframes-ellipsis-shift",
+  "keyframes-ellipsis-shrink",
+  "keyframes-spinner",
+  "keyframes-spinner-check",
+  "lightbox-open",
+  "loading-dot-2",
+  "loading-dot-3",
+  "loading-indicator-dash",
+  "loading-indicator-rotate-spinner",
+  "no-image-fade-in",
+  "plyr-fade-in",
+  "plyr-popup",
+  "plyr-progress",
+  "portfolio-index-background-image-mask--mask-down-in",
+  "portfolio-index-background-image-mask--mask-down-out",
+  "portfolio-index-background-image-mask--mask-left-in",
+  "portfolio-index-background-image-mask--mask-left-out",
+  "portfolio-index-background-image-mask--mask-right-in",
+  "portfolio-index-background-image-mask--mask-right-out",
+  "portfolio-index-background-image-mask--mask-up-in",
+  "portfolio-index-background-image-mask--mask-up-out",
+  "product-reviews-loader-flip-square",
+  "pulseBadgeOpacity",
+  "riseandfadein",
+  "shake-three",
+  "shimmy",
+  "shiver",
+  "show-confirmation",
+  "show-confirmation-mobile",
+  "spin",
+  "sqs-spin",
+  "tmpl-anim-clip-horizontal-left",
+  "tmpl-anim-clip-vertical-up",
+  "tmpl-anim-fade-scale-up",
+  "tmpl-anim-fade-stretch-up",
+  "tmpl-anim-fade-up",
+  "underlineSlideIn",
+  "underlineSlideOut",
+  "video-player-settings-popup",
+  "video-player__loading-indicator-dash",
+  "video-player__loading-indicator-rotate-spinner"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 238,
+   "text": "Ti insegnerò il mindset che ho usato per costruire un’agenzia di marketing a 6 cifre"
+  },
+  {
+   "tag": "h2",
+   "y": 1019,
+   "text": "Non “basta crederci” per avere successo"
+  },
+  {
+   "tag": "h2",
+   "y": 1612,
+   "text": "Avere Mindset non significa guardare video motivazionali"
+  },
+  {
+   "tag": "h2",
+   "y": 2391,
+   "text": "Perché non stai raggiungendo i tuoi risultati?"
+  },
+  {
+   "tag": "h2",
+   "y": 3486,
+   "text": "Il mindset si impara, e io voglio insegnarlo a te"
+  },
+  {
+   "tag": "h2",
+   "y": 4007,
+   "text": "Vali più di quello che pensi"
+  },
+  {
+   "tag": "h2",
+   "y": 4624,
+   "text": "Il vero motivo per cui non sei dove vorresti essere"
+  },
+  {
+   "tag": "h1",
+   "y": 5586,
+   "text": "Argomenti trattati nel percorso"
+  },
+  {
+   "tag": "h2",
+   "y": 6904,
+   "text": "Ecco i pareri di alcuni studenti della prima versione di Mindset: Programma Operativo"
+  },
+  {
+   "tag": "h1",
+   "y": 7629,
+   "text": "Tutto ciò che ti serve"
+  },
+  {
+   "tag": "h2",
+   "y": 8611,
+   "text": "Domande comuni"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 7683,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 7691,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Inizia il percorso 🎯",
+   "href": null,
+   "y": 853,
+   "x": 622,
+   "w": 196,
+   "h": 54,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Riproduci",
+   "href": null,
+   "y": 1266,
+   "x": 680,
+   "w": 80,
+   "h": 80,
+   "bg": "#000000 @0.5",
+   "color": "#ffffff",
+   "radius": "100%",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "15px"
+  },
+  {
+   "text": "Accedi al corso",
+   "href": null,
+   "y": 8303,
+   "x": 638,
+   "w": 163,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Posso fare questo programma anche se non voglio fare copywriting?",
+   "href": null,
+   "y": 8776,
+   "x": 320,
+   "w": 800,
+   "h": 100,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 3px"
+  },
+  {
+   "text": "Quanto durerà il percorso?",
+   "href": null,
+   "y": 8877,
+   "x": 320,
+   "w": 800,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 3px"
+  },
+  {
+   "text": "Devo pagare una volta sola?",
+   "href": null,
+   "y": 8948,
+   "x": 320,
+   "w": 800,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 3px"
+  },
+  {
+   "text": "Cosa succede quando acquisto Mindset: Programma Operativo?",
+   "href": null,
+   "y": 9019,
+   "x": 320,
+   "w": 800,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 3px"
+  },
+  {
+   "text": "Qual è il formato delle lezioni?",
+   "href": null,
+   "y": 9090,
+   "x": 320,
+   "w": 800,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 3px"
+  },
+  {
+   "text": "Devo avere un'idea di business già in testa per iniziare il corso?",
+   "href": null,
+   "y": 9161,
+   "x": 320,
+   "w": 800,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 3px"
+  },
+  {
+   "text": "l corso include anche esercitazioni pratiche, o è solo teoria?",
+   "href": null,
+   "y": 9232,
+   "x": 320,
+   "w": 800,
+   "h": 70,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 24,
+   "weight": "700",
+   "transform": "none",
+   "padding": "20px 0px 20px 3px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 9607,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 9676,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 7676,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 7676,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e4969ed0-dd4b-4af3-9b45-4c0ed9610258/Untitled-1.jpg",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 971
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/893910ad-901b-4c5d-a815-3d7a96b1a3a2/logo+mpo+white.png",
+   "alt": "",
+   "y": 137,
+   "x": 598,
+   "w": 244,
+   "h": 84
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1bec3348-f2ae-4510-859a-2f1867f6047d/image.png",
+   "alt": "",
+   "y": 971,
+   "x": 0,
+   "w": 1440,
+   "h": 546
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1282,
+   "x": 696,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1395,
+   "x": 849,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1395,
+   "x": 893,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1395,
+   "x": 937,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "video",
+   "src": "blob:https://www.andrei-copy.com/ccd9a05f-ae3a-4d39-8c83-c018f88b9004",
+   "alt": "",
+   "y": 1159,
+   "x": 459,
+   "w": 522,
+   "h": 294
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1288,
+   "x": 525,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1288,
+   "x": 873,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1159,
+   "x": 459,
+   "w": 300,
+   "h": 150
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/29d2fb5a-2710-4b4e-be21-80486c466d50/ooos.png",
+   "alt": "",
+   "y": 1612,
+   "x": 320,
+   "w": 259,
+   "h": 637
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5781fd3d-f052-47df-adc7-1599f2333639/background+white+-+sp+cm.png",
+   "alt": "",
+   "y": 2344,
+   "x": 0,
+   "w": 1440,
+   "h": 454
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/52ef952c-d3d8-4659-89f4-c491b8a113be/obiettivi+title.png",
+   "alt": "",
+   "y": 2900,
+   "x": 459,
+   "w": 522,
+   "h": 103
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5781fd3d-f052-47df-adc7-1599f2333639/background+white+-+sp+cm.png",
+   "alt": "",
+   "y": 3391,
+   "x": 0,
+   "w": 1440,
+   "h": 1185
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c5e1bfaf-afae-45f5-82f3-e329ba8947db/1.png",
+   "alt": "",
+   "y": 3486,
+   "x": 793,
+   "w": 327,
+   "h": 453
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0482791b-95a8-40d4-a20d-b082fe22e888/2.png",
+   "alt": "",
+   "y": 4007,
+   "x": 320,
+   "w": 327,
+   "h": 474
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4620,
+   "x": 550,
+   "w": 113,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e03f002e-917a-40b3-b1b1-ec11768781d2/bulletz.png",
+   "alt": "",
+   "y": 5017,
+   "x": 520,
+   "w": 400,
+   "h": 225
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5781fd3d-f052-47df-adc7-1599f2333639/background+white+-+sp+cm.png",
+   "alt": "",
+   "y": 5398,
+   "x": 0,
+   "w": 1440,
+   "h": 1437
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c29b5af4-defb-4945-8a8a-43816dca7c8a/logo+mpo2+red%26black.png",
+   "alt": "",
+   "y": 5456,
+   "x": 557,
+   "w": 327,
+   "h": 108
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3ff6d8dc-a3cb-472f-8759-e580a8ff514b/sez+1.png",
+   "alt": "",
+   "y": 5766,
+   "x": 320,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/31c4d6a7-6204-42f9-bbc8-e6a252becd7e/sez+2.png",
+   "alt": "",
+   "y": 5766,
+   "x": 726,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/85e6f2aa-8c38-41de-9feb-c2e341795c12/sez+3.png",
+   "alt": "",
+   "y": 6019,
+   "x": 320,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e31ed94a-34c9-4df8-94de-aab896978143/sez+4.png",
+   "alt": "",
+   "y": 6019,
+   "x": 726,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/252ae8c7-4f75-4623-96c6-8d7ccb52a7a1/sez+5.png",
+   "alt": "",
+   "y": 6273,
+   "x": 320,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3fa1e571-ec81-4a0c-9efc-3378c06031cd/sez+6.png",
+   "alt": "",
+   "y": 6273,
+   "x": 726,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/544dceae-2506-4f80-9696-05722cea2310/sez+7.png",
+   "alt": "",
+   "y": 6527,
+   "x": 523,
+   "w": 394,
+   "h": 222
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/cc59f536-034e-4bd3-8d94-1d5a623e1ba0/3.png",
+   "alt": "3.png",
+   "y": 7132,
+   "x": 495,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/830285e9-739e-46b7-91e8-8b06491934fa/1.png",
+   "alt": "1.png",
+   "y": 7132,
+   "x": 945,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b14f7ff3-a513-4e89-92dd-5b24154c36f0/2.png",
+   "alt": "2.png",
+   "y": 7132,
+   "x": 1395,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0c626ce5-7145-4f9d-8460-da2e7e3ab8a3/4.png",
+   "alt": "4.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7ca76f49-81aa-4d12-a837-e09e8f8a1a89/1.png",
+   "alt": "1.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a2545bef-9020-42d6-8259-6a7c4150a086/2.png",
+   "alt": "2.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d9731654-0ace-45f8-a46d-bc20aba52b96/Social+Proof+MPO2.png",
+   "alt": "Social Proof MPO2.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7ad16160-231a-4aaf-ae5a-cef37af90382/4.png",
+   "alt": "4.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/41ab5548-9495-4470-a1cb-ae3111ee5926/7.png",
+   "alt": "7.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/706e61d1-0531-4e69-958d-f1be721bfe71/Social+Proof+MPO2.png",
+   "alt": "Social Proof MPO2.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/19fa31a0-8f3e-4663-b392-185c36b0c338/5.png",
+   "alt": "5.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/33fb2b55-a00c-489d-9491-584877bd021d/8.png",
+   "alt": "8.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8ec8918a-b54b-40f0-af43-9a31b48e88d9/9.png",
+   "alt": "9.png",
+   "y": 7132,
+   "x": -9999,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/f98b0b23-6b6a-4518-af3b-2238ef883b3f/6.png",
+   "alt": "6.png",
+   "y": 7132,
+   "x": -405,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a8c0e09b-f6dc-4aab-9dad-56c4626b2541/5.png",
+   "alt": "5.png",
+   "y": 7132,
+   "x": 45,
+   "w": 450,
+   "h": 450
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7343,
+   "x": 23,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7343,
+   "x": 1389,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1bec3348-f2ae-4510-859a-2f1867f6047d/image.png",
+   "alt": "",
+   "y": 7582,
+   "x": 0,
+   "w": 1440,
+   "h": 934
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/9396b882-6e85-4477-be82-42f1c7f70f48/Puoi+vedere+e+rivedere+i+video+quando+vuoi.png",
+   "alt": "",
+   "y": 7711,
+   "x": 388,
+   "w": 259,
+   "h": 146
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8584488a-6db2-4766-a903-16c64ded7d22/vd.png",
+   "alt": "",
+   "y": 7711,
+   "x": 590,
+   "w": 259,
+   "h": 146
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/adb6f53d-495e-4c7c-bbd3-0fe2d26bbca9/4.png",
+   "alt": "",
+   "y": 7880,
+   "x": 489,
+   "w": 259,
+   "h": 146
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b5b8ef99-c6f5-47e7-aa9b-7b24f0c3811a/3.png",
+   "alt": "",
+   "y": 7711,
+   "x": 793,
+   "w": 259,
+   "h": 146
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/171e7a31-2012-4264-a485-1c5ed5278c4e/6.png",
+   "alt": "",
+   "y": 7880,
+   "x": 692,
+   "w": 259,
+   "h": 146
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1667463288370-75MUG2Y9UNMWQA1OK04H/metodi+di+pagamento+andrei+pascu.png",
+   "alt": "",
+   "y": 8385,
+   "x": 624,
+   "w": 192,
+   "h": 37
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 9432,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 9490,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9543,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9543,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9543,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9543,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 132,
+ "meta": {
+  "description": "E' un percorso a cadenza settimanale (e pagamento unico) che include i metodi mentali per costruire una base per raggiungere la libertà finanziaria.\n\nE' probabilmente il primo corso esclusivamente pratico.\n\nIl corso si divide in varie lezioni e argomenti, tutti coloro che sono interessati al business online sono benvenuti. Le lezioni si svolgeranno online.",
+  "og_title": "Mindset: Programma Operativo - Formazione sul mindset imprenditoriale e produttività. — AP Formazione",
+  "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/t/63ffa456eafa23036ed1828e/1735479519863/Mindset+Programma+Operativo%2C+corso.jpg?format=1500w",
+  "canonical": "https://www.andrei-copy.com/mpo2",
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 971,
+   "prof": 5,
+   "tag": "section",
+   "id": "yui_3_17_2_1_1788778422085_104",
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Ti insegnerò il mindset che ho usato per costruire un’agenzia di marketing a 6 cifre",
+   "headings": [
+    "Ti insegnerò il mindset che ho usato per costruire un’agenzia di marketing a 6 cifre",
+    "Impari il mindset imprenditoriale a livello pratico. Niente discorsi motivazionali inutili.",
+    "Le lezioni online sono tutte fuori… Ti unisci a noi?"
+   ],
+   "blocchi_testo": 4,
+   "parole": 40,
+   "densita": 4,
+   "media": 2,
+   "cta": 1,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|M|C|5",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-ti-insegner-il-mindset-che-ho-usat.png"
+  },
+  {
+   "i": 2,
+   "y": 971,
+   "h": 546,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Non “basta crederci” per avere successo",
+   "headings": [
+    "Non “basta crederci” per avere successo"
+   ],
+   "blocchi_testo": 32,
+   "parole": 17,
+   "densita": 3,
+   "media": 12,
+   "cta": 1,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|M|C|3",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-non-basta-crederci-per-avere-succe.png"
+  },
+  {
+   "i": 3,
+   "y": 1517,
+   "h": 827,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Avere Mindset non significa guardare video motivazionali",
+   "headings": [
+    "Avere Mindset non significa guardare video motivazionali"
+   ],
+   "blocchi_testo": 9,
+   "parole": 96,
+   "densita": 12,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-avere-mindset-non-significa-guarda.png"
+  },
+  {
+   "i": 4,
+   "y": 2344,
+   "h": 454,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Perché non stai raggiungendo i tuoi risultati?",
+   "headings": [
+    "Perché non stai raggiungendo i tuoi risultati?"
+   ],
+   "blocchi_testo": 10,
+   "parole": 87,
+   "densita": 19,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|M|-|2",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-perch-non-stai-raggiungendo-i-tuoi.png"
+  },
+  {
+   "i": 5,
+   "y": 2797,
+   "h": 594,
+   "prof": 5,
+   "tag": "section",
+   "id": "yui_3_17_2_1_1788778422085_122",
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 5,
+   "parole": 59,
+   "densita": 10,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|M|-|3",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-section.png"
+  },
+  {
+   "i": 6,
+   "y": 3391,
+   "h": 1185,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Il mindset si impara, e io voglio insegnarlo a te",
+   "headings": [
+    "Il mindset si impara, e io voglio insegnarlo a te",
+    "Vali più di quello che pensi"
+   ],
+   "blocchi_testo": 18,
+   "parole": 175,
+   "densita": 15,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|6",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-il-mindset-si-impara-e-io-voglio-i.png"
+  },
+  {
+   "i": 7,
+   "y": 4576,
+   "h": 822,
+   "prof": 5,
+   "tag": "section",
+   "id": "yui_3_17_2_1_1788778422085_138",
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Il vero motivo per cui non sei dove vorresti essere",
+   "headings": [
+    "Il vero motivo per cui non sei dove vorresti essere"
+   ],
+   "blocchi_testo": 4,
+   "parole": 54,
+   "densita": 7,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|M|-|4",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-il-vero-motivo-per-cui-non-sei-dov.png"
+  },
+  {
+   "i": 8,
+   "y": 5398,
+   "h": 1437,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Argomenti trattati nel percorso",
+   "headings": [
+    "Argomenti trattati nel percorso"
+   ],
+   "blocchi_testo": 3,
+   "parole": 4,
+   "densita": 0,
+   "media": 9,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|7",
+   "gruppo": 8,
+   "rappresentante": true,
+   "screenshot": "sezioni/08-argomenti-trattati-nel-percorso.png"
+  },
+  {
+   "i": 9,
+   "y": 6835,
+   "h": 297,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Ecco i pareri di alcuni studenti della prima versione di Mindset: Programma Operativo",
+   "headings": [
+    "Ecco i pareri di alcuni studenti della prima versione di Mindset: Programma Operativo"
+   ],
+   "blocchi_testo": 1,
+   "parole": 13,
+   "densita": 4,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|-|-|1",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-ecco-i-pareri-di-alcuni-studenti-d.png"
+  },
+  {
+   "i": 10,
+   "y": 7132,
+   "h": 450,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.gallery-section.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 2,
+   "parole": 0,
+   "densita": 0,
+   "media": 17,
+   "cta": 0,
+   "firma": "section|page-section.gallery-section.full-bleed-section|2|M|-|2",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-section.png"
+  },
+  {
+   "i": 11,
+   "y": 7582,
+   "h": 934,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Tutto ciò che ti serve",
+   "headings": [
+    "Tutto ciò che ti serve"
+   ],
+   "blocchi_testo": 8,
+   "parole": 49,
+   "densita": 5,
+   "media": 7,
+   "cta": 1,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|C|5",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-tutto-ci-che-ti-serve.png"
+  },
+  {
+   "i": 12,
+   "y": 8516,
+   "h": 899,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.layout-engine-section.background-width--full-bleed",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Domande comuni",
+   "headings": [
+    "Domande comuni",
+    "Posso fare questo programma anche se non voglio fare copywriting?",
+    "Quanto durerà il percorso?",
+    "Devo pagare una volta sola?",
+    "Cosa succede quando acquisto Mindset: Programma Operativo?",
+    "Qual è il formato delle lezioni?"
+   ],
+   "blocchi_testo": 41,
+   "parole": 56,
+   "densita": 6,
+   "media": 0,
+   "cta": 7,
+   "firma": "section|page-section.layout-engine-section.background-width--full-bleed|2|-|C|4",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-domande-comuni.png"
+  },
+  {
+   "i": 13,
+   "y": 9415,
+   "h": 705,
+   "prof": 2,
+   "tag": "footer",
+   "id": "footer-sections",
+   "classi": "sections",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 24,
+   "parole": 99,
+   "densita": 14,
+   "media": 7,
+   "cta": 2,
+   "firma": "footer|sections|1|M|C|4",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-footer.png"
+  }
+ ],
+ "sezioni_totali": 13,
+ "sezioni_distinte": 13,
+ "src": [
+  {
+   "file": "src/01-modern.js",
+   "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+   "bytes": 117559
+  },
+  {
+   "file": "src/02-cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "bytes": 153101
+  },
+  {
+   "file": "src/03-common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "bytes": 246523
+  },
+  {
+   "file": "src/04-extract-css-runtime-b6c9f1e8b6f4c3e5-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-b6c9f1e8b6f4c3e5-min.it-IT.js",
+   "bytes": 50537
+  },
+  {
+   "file": "src/05-visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "bytes": 3680
+  },
+  {
+   "file": "src/06-commerce-d50e5960dc9fd059-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/commerce-d50e5960dc9fd059-min.it-IT.css",
+   "bytes": 9897
+  },
+  {
+   "file": "src/07-user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/user-account-core-28c1a7b2b603f534-min.it-IT.css",
+   "bytes": 2301
+  },
+  {
+   "file": "src/08-website.components.accordion.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.accordion/c97af1ba-80b4-4c06-b23c-188da2bad194_275/website.components.accordion.styles.css",
+   "bytes": 8079
+  },
+  {
+   "file": "src/09-website.components.accordion.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.accordion/c97af1ba-80b4-4c06-b23c-188da2bad194_275/website.components.accordion.visitor.js",
+   "bytes": 20725
+  },
+  {
+   "file": "src/10-website.components.code.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/23427567-979d-40ac-b035-c3c2df1c0b01_927/website.components.code.styles.css",
+   "bytes": 102
+  },
+  {
+   "file": "src/11-website.components.code.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/23427567-979d-40ac-b035-c3c2df1c0b01_927/website.components.code.visitor.js",
+   "bytes": 15193
+  },
+  {
+   "file": "src/12-website.components.horizontalrule.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/7a41372a-a2fc-478b-9e43-c34805b2e47e_249/website.components.horizontalrule.styles.css",
+   "bytes": 95
+  },
+  {
+   "file": "src/13-website.components.horizontalrule.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/7a41372a-a2fc-478b-9e43-c34805b2e47e_249/website.components.horizontalrule.visitor.js",
+   "bytes": 12172
+  },
+  {
+   "file": "src/14-website.components.html.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/49aa6ce9-6788-48ef-8046-29522025eafb_882/website.components.html.styles.css",
+   "bytes": 105
+  },
+  {
+   "file": "src/15-website.components.html.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/49aa6ce9-6788-48ef-8046-29522025eafb_882/website.components.html.visitor.js",
+   "bytes": 12095
+  },
+  {
+   "file": "src/16-18018.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/18018.js",
+   "bytes": 12970
+  },
+  {
+   "file": "src/17-39188.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/39188.js",
+   "bytes": 20695
+  },
+  {
+   "file": "src/18-39882.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/39882.js",
+   "bytes": 10236
+  },
+  {
+   "file": "src/19-64023.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/64023.js",
+   "bytes": 33127
+  },
+  {
+   "file": "src/20-92452.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/92452.js",
+   "bytes": 38848
+  },
+  {
+   "file": "src/21-image-effect-film-grain.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-film-grain.js",
+   "bytes": 8476
+  },
+  {
+   "file": "src/22-image-effect-liquid.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-liquid.js",
+   "bytes": 8950
+  },
+  {
+   "file": "src/23-image-effect-parallax.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-parallax.js",
+   "bytes": 6211
+  },
+  {
+   "file": "src/24-image-effect-refracted-circles.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-refracted-circles.js",
+   "bytes": 3053
+  },
+  {
+   "file": "src/25-image-effect-refracted-lines.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/image-effect-refracted-lines.js",
+   "bytes": 12159
+  },
+  {
+   "file": "src/26-website.components.imageFluid.shared.constants.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/website.components.imageFluid.shared.constants.js",
+   "bytes": 945
+  },
+  {
+   "file": "src/27-website.components.imageFluid.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/website.components.imageFluid.styles.css",
+   "bytes": 2671
+  },
+  {
+   "file": "src/28-website.components.imageFluid.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/96ff09c1-bed9-4b96-8853-361a9624ce5c_869/website.components.imageFluid.visitor.js",
+   "bytes": 29543
+  },
+  {
+   "file": "src/29-website.components.socialLinks.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/7e8a8aa8-b578-4fac-a342-60ec87f8a280_660/website.components.socialLinks.styles.css",
+   "bytes": 12212
+  },
+  {
+   "file": "src/30-website.components.socialLinks.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/7e8a8aa8-b578-4fac-a342-60ec87f8a280_660/website.components.socialLinks.visitor.js",
+   "bytes": 13307
+  },
+  {
+   "file": "src/31-website.components.spacer.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/179b8ac0-e8f3-474e-94b3-4865bebce923_1205/website.components.spacer.styles.css",
+   "bytes": 98
+  },
+  {
+   "file": "src/32-website.components.spacer.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/179b8ac0-e8f3-474e-94b3-4865bebce923_1205/website.components.spacer.visitor.js",
+   "bytes": 536
+  },
+  {
+   "file": "src/33-20293.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/15408132-6fbb-418d-bb9e-b56389260a91_627/20293.js",
+   "bytes": 9102
+  },
+  {
+   "file": "src/34-website.components.video.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/15408132-6fbb-418d-bb9e-b56389260a91_627/website.components.video.styles.css",
+   "bytes": 4148
+  },
+  {
+   "file": "src/35-website.components.video.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/15408132-6fbb-418d-bb9e-b56389260a91_627/website.components.video.visitor.js",
+   "bytes": 898862
+  },
+  {
+   "file": "src/36-custom.css",
+   "url": "https://static1.squarespace.com/static/custom-css/602126db7a4e4c01fd9babb6/602126db7a4e4c01fd9babd0/0/custom.css",
+   "bytes": 1183
+  },
+  {
+   "file": "src/37-site.css",
+   "url": "https://static1.squarespace.com/static/versioned-site-css/602126db7a4e4c01fd9babb6/177/5c5a519771c10ba3470d8101/602126db7a4e4c01fd9babd0/1822/site.css?nocustom=true",
+   "bytes": 1274296
+  },
+  {
+   "file": "src/38-site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.b23093939d76e70da2635a526b8b0c70.js",
+   "bytes": 128081
+  },
+  {
+   "file": "src/39-static.css",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1787156543145-0MJJPDTBNWE734EUOY27/static.css",
+   "bytes": 481489
+  },
+  {
+   "file": "src/40-rdd73ozkqt.js",
+   "url": "https://www.clarity.ms/tag/rdd73ozkqt",
+   "bytes": 878
+  }
+ ],
+ "segmentazione": "ok"
+}
