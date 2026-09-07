@@ -333,5 +333,347 @@
   "relazioni": [
    {"verso": "KA-022", "tipo": "parte-di"}
   ]
+ },
+ {
+  "id": "KA-027",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Why This Over 20 Other Strategies\" del documento di strategia: sottotitolo \"Single indicators fail predictably:\" con confronto — \"RSI alone: 52-58% win rate but only in ranging markets, destroyed in trends\"; \"EMA crossover alone: 35-42% win rate, great R:R but constant whipsaws in ranges\"; \"MACD alone: 38-45%, lags in fast [markets]\" (riga tagliata nella fonte). In un'altra porzione del documento, letta poco dopo: \"ranges, mean reversion signals (RSI, Bollinger) dominate. No regime detection needed — the voting handles it.\"",
+  "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity) e #13:06 (continuazione scroll) + voce 12:06, 13:06-13:18",
+  "frame": "frame-122.png, frame-132.png",
+  "ancora": "Why This Over 20 Other Strategies\" Sottotitolo \"Single indicators fail predictably:\" - \"RSI alone: 52-58% win rate but only in ranging markets, destroyed in trends\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-022", "tipo": "parte-di"},
+   {"verso": "KA-023", "tipo": "motiva", "perche": "Il fallimento prevedibile dei singoli indicatori è la motivazione dichiarata per usare l'ensemble di 5 segnali non correlati invece di uno solo."}
+  ]
+ },
+ {
+  "id": "KA-028",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Tech Stack (for implementation)\" del documento di strategia: \"ccxt -- Binance Testnet API (testnet.binance.vision)\"; \"pandas + pandas-ta -- indicator calculations\"; \"python-dotenv -- API keys from environment\"; \"Both backtest mode (historical candles) and live mode (daily polling)\".",
+  "fonte": "RnNSRF4s9nk#13:06 (IDE Antigravity, allegato image.png con testo strategia) + voce 13:06-13:30",
+  "frame": "frame-132.png",
+  "ancora": "Tech Stack (for implementation)\" \"ccxt -- Binance Testnet API (testnet.binance.vision)\" \"pandas + pandas-ta -- indicator calculations\" \"python-dotenv -- API keys from environment\" \"Both backtest mode (historical candles) and live mode (daily polling)\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-022", "tipo": "parte-di"},
+   {"verso": "KA-040", "tipo": "precede", "perche": "Questo stack tecnico è ciò che poi si traduce nei moduli elencati nell'Implementation Order del prompt di plan mode."}
+  ]
+ },
+ {
+  "id": "KA-029",
+  "tipo": "procedura",
+  "contenuto": "Per generare il flowchart architetturale, Claude Code prima legge la skill Excalidraw (\"Let me read the excalidraw skill first\" / Read SKILL.md), poi crea il file `.tmp/btc_daily_trading_bot.excalidraw`, ed esegue uno script Python per applicare i colori pastello: comando bash `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager\" && python3 .claude/skills/excalidraw-flowchart/colorize.py .tmp/btc_daily_trad...`. Il file risultante pesa 126.738 byte (~127KB).",
+  "fonte": "RnNSRF4s9nk#13:30 (IDE Antigravity, log Claude Code) e #14:00 + voce 13:30-14:00",
+  "frame": "frame-136.png, frame-141.png",
+  "ancora": "Bash\" \"Apply pastel colors to flowchart\" - riga \"IN\": `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media...` [...] \"Flowchart generato:\" `.tmp/btc_daily_trading_bot.excalidraw` \"(127KB).\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-030", "tipo": "precede"},
+   {"verso": "KA-016", "tipo": "applica", "perche": "Anche questa skill segue lo stesso mental model visivo già dichiarato per /diagram-generator: rappresentare l'architettura prima di implementarla."}
+  ]
+ },
+ {
+  "id": "KA-030",
+  "tipo": "dato",
+  "contenuto": "Riepilogo testuale generato da Claude Code del flowchart appena creato, i 7 step dell'intero ciclo del bot: \"1. Start -- Daily Candle Close (trigger). 2. Fetch + Calculate -- scarica candela BTC/USDT, calcola i 5 indicatori in parallelo (EMA, RSI, OBV, Bollinger, ADX). 3. Voting -- raccoglie i voti, poi filtra: ADX < 25 = HOLD. 4. Decision -- 3+ bullish = LONG, 3+ bearish = SHORT, altrimenti HOLD. 5. Risk Management -- stop-loss 1.5x ATR + trailing stop 2x ATR. 6. Monitor -- loop giornaliero: check signal flip o trailing stop hit, se no aggiorna trailing e continua. 7. Exit -- close position e torna a Wait Next Candle, che riporta al Daily Candle Close.\"",
+  "fonte": "RnNSRF4s9nk#14:00 (IDE Antigravity, log Claude Code) + voce 14:00-14:30",
+  "frame": "frame-141.png",
+  "ancora": "Il flow copre l'intero ciclo:\" seguito da lista numerata completa: 1. **\"Start\"** \"-- Daily Candle Close (trigger)\" [...] 7. **\"Exit\"** \"-- close position e torna a Wait Next Candle, che riporta al Daily Candle Close\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-029", "tipo": "parte-di"},
+   {"verso": "KA-032", "tipo": "precede"},
+   {"verso": "KA-023", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-031",
+  "tipo": "esempio",
+  "contenuto": "Il file `.excalidraw` generato da Claude è in realtà un JSON leggibile: apertura con `\"type\": \"excalidraw\", \"version\": 2, \"source\": \"https://github.com/swiftlysingh/excalidraw-...`, poi un array `\"elements\"` dove ogni forma è un oggetto con proprietà come `\"id\"`, `\"type\": \"ellipse\"`, `\"x\"`, `\"y\"`, `\"width\"`, `\"height\"`, `\"strokeColor\": \"#1e1e1e\"`, `\"backgroundColor\": \"#b2f2bb\"`, `\"roughness\"`, `\"opacity\"`, `\"boundElements\"` (i collegamenti alle frecce), fino a `\"locked\": false`.",
+  "fonte": "RnNSRF4s9nk#14:30 (editor di codice, JSON del file .excalidraw) + voce 14:30-14:36",
+  "frame": "frame-146.png",
+  "ancora": "\"type\": \"excalidraw\", \"version\": 2, \"source\": \"https://github.com/swiftlysingh/excalidraw-... \"elements\": [ { \"id\": \"7YVt5tEnTQ\", \"type\": \"ellipse\",",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-029", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-032",
+  "tipo": "esempio",
+  "contenuto": "Verifica visiva del flowchart aperto su excalidraw.com: dall'ellisse verde \"Wait Next Candle\" una freccia scende a \"Daily Candle Close\" (altra ellisse verde), da qui una freccia ondulata scende al box blu \"Fetch BTC/USDT Daily Candle\", che a sua volta alimenta il box \"Calculate Indicators\". Questa porzione corrisponde esattamente agli step 1 (Start), 6 (Monitor) e 7 (Exit) descritti a testo da Claude.",
+  "fonte": "RnNSRF4s9nk#14:42-15:06 (excalidraw.com, canvas scorso verso il basso) + voce 14:42-15:12",
+  "frame": "frame-148.png, frame-151.png",
+  "ancora": "verde, andiamo a vedere che cosa succede. Perfetto, mi dice questa è la nostra partenza, quindi aspettiamo una candela.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-030", "tipo": "esempio-di"},
+   {"verso": "KA-033", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-033",
+  "tipo": "esempio",
+  "contenuto": "Prima apparizione leggibile per intero dei cinque box degli indicatori tecnici nel flowchart visivo, tutti raggiunti da frecce partite dal box \"Calculate Indicators\" e confluenti in un unico box \"Collect Votes\": \"EMA 50/200 Crossover\", \"RSI 14\", \"OBV Slope 14d\", \"Bollinger Band 20,2\", \"ADX 14\". I nomi coincidono esattamente con quelli del documento di strategia e del riepilogo testuale di Claude, confermando che diagramma visivo e strategia testuale descrivono lo stesso identico sistema.",
+  "fonte": "RnNSRF4s9nk#15:06 (excalidraw.com) + voce 15:06-15:18",
+  "frame": "frame-152.png",
+  "ancora": "cinque box blu pastello affiancati, tutti raggiunti da frecce curve nere partite dal box superiore — \"EMA 50/200 Crossover\", \"RSI 14\", \"OBV Slope 14d\", \"Bollinger Band 20,2\", \"ADX 14\"... tutte e cinque le frecce convergono in un unico box blu pastello più in basso, \"Collect Votes\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-023", "tipo": "esempio-di"},
+   {"verso": "KA-034", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-034",
+  "tipo": "esempio",
+  "contenuto": "Primo nodo di decisione del flowchart (rombo giallo pastello): \"ADX above 25?\", raggiunto da una freccia dal box \"Collect Votes\". Rappresenta la soglia (threshold) di forza del trend sotto la quale il sistema non considera valido nessun segnale di acquisto o vendita.",
+  "fonte": "RnNSRF4s9nk#15:42 (excalidraw.com) + voce 15:42-15:54",
+  "frame": "frame-158.png",
+  "ancora": "E ora ci chiediamo se questo è sopra a 25, che sarà molto probabilmente il nostro eh livello di thold sopra il quale magari compriamo o sotto vendiamo.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-033", "tipo": "precede"},
+   {"verso": "KA-035", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-035",
+  "tipo": "esempio",
+  "contenuto": "Routing del flowchart dopo il filtro ADX: dal rombo \"3+ Bullish?\" un ramo \"Yes\" porta al box \"OPEN LONG\"; il ramo \"No\" porta al secondo rombo \"3+ Bearish?\", che a sua volta si dirama in \"Yes\" → box \"OPEN SHORT\" e \"No\" → box \"HOLD - Mixed Signals\". Un ramo separato \"HOLD - No Trend\" gestisce il caso in cui il filtro ADX iniziale sia negativo. Sia \"OPEN LONG\" sia \"OPEN SHORT\" proseguono verso il box \"Set Stop-Loss 1.5x ATR\".",
+  "fonte": "RnNSRF4s9nk#16:12 (excalidraw.com) + voce 16:12-16:24",
+  "frame": "frame-163.png",
+  "ancora": "Quindi bullish sì. Eh allora apri una posizione di long eh e oppure beish, quindi no. E allora magari vuol dire hold, quindi non prendere niente.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-034", "tipo": "precede"},
+   {"verso": "KA-025", "tipo": "esempio-di"},
+   {"verso": "KA-036", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-036",
+  "tipo": "esempio",
+  "contenuto": "Chiusura visiva del ciclo del flowchart: dal rombo \"Signals Flipped?\" (ramo \"No\") si passa al rombo \"Trailing Stop Hit?\"; da qui il ramo \"Yes\" (insieme al ramo \"Yes\" di \"Signals Flipped?\") porta al box \"Close Position\", il ramo \"No\" porta a \"Update Trailing Stop\". Entrambi i box confluiscono nell'ellisse verde \"Wait Next Candle\", che con una freccia torna a \"Daily Candle Close\": il diagramma chiude così il giro completo sul proprio punto di partenza.",
+  "fonte": "RnNSRF4s9nk#16:42 (excalidraw.com) + voce 16:42-16:54",
+  "frame": "frame-168.png",
+  "ancora": "Allora, vedete quindi che questa è la fase di validazione dell'architettura e questo è quello che vogliamo fare, no? Perché noi vogliamo assicurarci che la nostra architettura sia corretta.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-035", "tipo": "precede"},
+   {"verso": "KA-037", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-037",
+  "tipo": "principio",
+  "contenuto": "Percorrere per intero il flowchart visivo, dal primo box fino alla chiusura del ciclo, è la \"fase di validazione dell'architettura\": serve ad assicurarsi che l'architettura del sistema sia corretta prima di passare all'implementazione vera e propria.",
+  "fonte": "RnNSRF4s9nk#16:42 (excalidraw.com, giro completo del diagramma) + voce 16:42-17:00",
+  "frame": "frame-168.png",
+  "ancora": "questa è la fase di validazione dell'architettura e questo è quello che vogliamo fare, no? Perché noi vogliamo assicurarci che la nostra architettura sia corretta.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "parte-di"},
+   {"verso": "KA-038", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-038",
+  "tipo": "procedura",
+  "contenuto": "Una volta validata l'architettura, il presentatore chiede a Claude di sintetizzare tutto (diagramma + strategia) in un unico prompt completo, da incollare in una nuova sessione di Claude Code in modalità \"plan mode\", per assicurarsi che Claude implementi il sistema secondo un piano approvato invece di procedere alla cieca.",
+  "fonte": "RnNSRF4s9nk#17:00 (IDE Antigravity) e #17:18 (richiesta completa) + voce 17:00-17:24",
+  "frame": "frame-171.png, frame-174.png",
+  "ancora": "perfetto, sintetizzami tutto in un prompt e includi anche tutta la strategia che ti ho incollato, in modo tale che io possa andare ora in una nuova sessione di Claude Code e incollartela in plan mode ed assicurarmi che Claude poi vada ad implementare il mio sistema",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-037", "tipo": "parte-di"},
+   {"verso": "KA-040", "tipo": "precede"},
+   {"verso": "KA-042", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-039",
+  "tipo": "dato",
+  "contenuto": "Menu \"Slash Commands\" apparso in una nuova sessione vuota di Claude Code, lista completa visibile: /pre-mortem (selezionato), /prompt-contracts, /loop, /reverse-prompting, /step-back-prompting, /fewer-permission-prompts, /skool-video-upload, /audit, /deploy-check, /contract.",
+  "fonte": "RnNSRF4s9nk#17:24 (IDE Antigravity, nuova sessione Claude Code) + voce 17:24-17:36",
+  "frame": "frame-175.png",
+  "ancora": "`/pre-mortem` (selezionato) `/prompt-contracts` `/loop` `/reverse-prompting` `/step-back-prompting` `/fewer-permission-prompts` `/skool-video-upload` `/audit` `/deploy-check` `/contract`",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-020", "tipo": "parte-di", "perche": "/prompt-contracts, già usato in scena 31, compare qui nel menu completo dei comandi disponibili nella toolkit del presentatore."}
+  ]
+ },
+ {
+  "id": "KA-040",
+  "tipo": "dato",
+  "contenuto": "Sezione \"## Implementation Order\" del prompt sintetizzato da Claude per il plan mode, lista numerata completa: \"1. config.py + data.py — connect to Binance Testnet, fetch historical daily candles, verify data. 2. indicators.py — implement all 5 indicators with pandas-ta, write unit tests. 3. strategy.py — voting logic + ADX filter, write unit tests for all edge cases. 4. risk.py — position sizing formula, stop-loss, trailing stop logic, write unit tests. 5. backtest.py + report.py — run on 1+ year of historical BTC data, print performance metrics. 6. executor.py — ccxt order placement on testnet (market orders, stop-loss orders). 7. bot.py — main live loop (poll daily, run strategy, execute if signal, monitor position). 8. monitor.py — logging + optional notifications. 9. End-to-end test — run on testnet for several days, verify orders execute correctly.\"",
+  "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity, prompt selezionato in blu) + voce 17:36-17:42",
+  "frame": "frame-177.png",
+  "ancora": "## Implementation Order\" seguito dalla lista numerata 1-9 (tutta selezionata in blu): 1. **config.py + data.py** — connect to Binance Testnet, fetch historical daily candles, verify data [...] 9. **End-to-end test** — run on testnet for several days, verify orders execute correctly",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-028", "tipo": "applica"},
+   {"verso": "KA-041", "tipo": "precede"},
+   {"verso": "KA-053", "tipo": "precede", "perche": "Questo elenco di moduli è ciò che si materializza poi nella struttura di cartelle/file del progetto scaffolded."}
+  ]
+ },
+ {
+  "id": "KA-041",
+  "tipo": "regola",
+  "contenuto": "Sezione \"## Constraints\" del prompt per il plan mode, elenco completo e non negoziabile: \"Python 3.9+ compatible (use `from __future__ import annotations` if needed). All API keys from .env, never hardcoded. Testnet only — never connect to production Binance without explicit confirmation. Each module must be independently testable. Backtest must run before any live trading.\"",
+  "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity, \"## Constraints\" evidenziato in blu) + voce 17:36",
+  "frame": "frame-177.png",
+  "ancora": "## Constraints\" (evidenziato) con elenco puntato (anch'esso in selezione blu): - Python 3.9+ compatible (use `from __future__ import annotations` if needed) - All API keys from .env, never hardcoded - Testnet only — never connect to production Binance without explicit confirmation - Each module must be independently testable - Backtest must run before any live trading",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-040", "tipo": "parte-di"},
+   {"verso": "KA-047", "tipo": "precede", "perche": "Il vincolo 'Testnet only' e 'API keys from .env, never hardcoded' è quello che poi guida in pratica la creazione della chiave API con solo permesso di lettura."}
+  ]
+ },
+ {
+  "id": "KA-042",
+  "tipo": "definizione",
+  "contenuto": "Istruzione d'uso allegata al prompt sintetizzato: \"Copia-incolla tutto in una nuova sessione di Claude Code in plan mode. Claude ti proporrà il piano di implementazione step-by-step, tu approvi e lui costruisce.\" Definisce il funzionamento della modalità \"plan mode\": prima la proposta di piano, poi l'approvazione umana, infine la costruzione.",
+  "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity) + voce 17:36",
+  "frame": "frame-177.png",
+  "ancora": "Copia-incolla tutto in una nuova sessione di Claude Code in plan mode. Claude ti proporrà il piano di implementazione step-by-step, tu approvi e lui costruisce.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-038", "tipo": "parte-di"},
+   {"verso": "KA-043", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-043",
+  "tipo": "dato",
+  "contenuto": "Prima dell'invio, il presentatore aggiunge manualmente in coda al prompt incollato nella nuova sessione Claude Code una sezione con segnaposto vuoti: \"Credenziali Binance: - API: - Link per vedere candele:\", con l'etichetta \"Plan mode\" attiva accanto al pulsante di invio, a conferma che l'invio avverrà in modalità pianificazione e non in esecuzione diretta.",
+  "fonte": "RnNSRF4s9nk#18:12 (IDE Antigravity) e #19:00 (segnaposto ancora vuoti, \"Plan mode\" attivo) + voce 18:12, 19:00-19:06",
+  "frame": "frame-183.png, frame-191.png",
+  "ancora": "Credenziali Binance:\" (riga vuota) \"- API:\" \"- Link per vedere candele:\" Le due voci \"API:\" e \"Link per vedere candele:\" sono ancora vuote, in attesa di essere compilate. [...] etichetta \"Plan mode\" con icona, pulsante di invio blu",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-042", "tipo": "applica"},
+   {"verso": "KA-044", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-044",
+  "tipo": "definizione",
+  "contenuto": "Apertura del capitolo \"Connessione API a Binance\": il presentatore lascia l'IDE e passa al sito reale di Binance per mostrare da dove parte il processo di autenticazione necessario a collegare il bot.",
+  "fonte": "RnNSRF4s9nk#18:12 (browser, dashboard Binance) + voce 18:12-18:18",
+  "frame": "frame-183.png",
+  "ancora": "Quindi come facciamo ad autenticarci nella piattaforma Binance e quindi da qui poi vedremo come come si fa e dove andiamo a prendere i dati delle candele.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-043", "tipo": "precede"},
+   {"verso": "KA-045", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-045",
+  "tipo": "procedura",
+  "contenuto": "Percorso seguito per creare una chiave API su Binance: dalla dashboard (`binance.com/en/my/dashboard`) si apre il menu laterale \"Account\", si seleziona \"API Management\" (`binance.com/en/my/settings/api-management`), poi si clicca il pulsante arancione \"Create API\" e si assegna un'etichetta alla chiave (nel video: \"YouTube bot\") nella finestra modale \"Create API\".",
+  "fonte": "RnNSRF4s9nk#18:12-18:48 (browser, dashboard e api-management Binance) + voce 18:12-18:48",
+  "frame": "frame-183.png, frame-186.png, frame-188.png",
+  "ancora": "API management sotto la sezione account e qui abbiamo create API system generated e quindi label API YouTube bot.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-008", "tipo": "applica"},
+   {"verso": "KA-046", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-046",
+  "tipo": "avvertimento",
+  "contenuto": "Binance blocca la creazione della chiave API finché l'utente non completa 2 verifiche di sicurezza su 2 (\"Security Verification Requirements\", contatore \"0 / 2\"): passkey (biometria o chiave di sicurezza) o verifica facciale.",
+  "fonte": "RnNSRF4s9nk#18:48 (browser, modale Binance) + voce 18:48-18:54",
+  "frame": "frame-189.png",
+  "ancora": "Security verification requirements. You need to complete. Ok, va bene. Ora mi autenticherò.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"},
+   {"verso": "KA-047", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-047",
+  "tipo": "regola",
+  "contenuto": "La chiave API \"YouTube BOT\" creata su Binance ha solo il permesso \"Enable Reading\" attivo; tutti gli altri permessi (Permits Universal Transfer, Enable Spot & Margin Trading, Enable Withdrawals, Enable Margin Loan/Repay & Transfer, Enable Prediction Trading, Enable Symbol Whitelist) restano disattivati. L'accesso IP è impostato su \"Unrestricted (Less Secure)\". La API Key e la Secret Key sono presenti e leggibili nel frame originale ma vengono riportate in questo documento solo in forma mascherata, come nella fonte: API Key \"F4q6…tqJi\", Secret Key \"bfwU…M9cD\".",
+  "fonte": "RnNSRF4s9nk#18:54 (browser, api-management, card chiave creata) + voce 18:54-19:00",
+  "frame": "frame-190.png",
+  "ancora": "API restrictions\" con caselle: ☑ \"Enable Reading\" (unica spuntata), ☐ \"Permits Universal Transfer\", ☐ \"Enable Spot & Margin Trading\" [...] la API Key inizia con \"F4q6…\" e termina con \"…tqJi\"; la Secret Key inizia con \"bfwU…\" e termina con \"…M9cD\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-041", "tipo": "applica"},
+   {"verso": "KA-048", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-048",
+  "tipo": "avvertimento",
+  "contenuto": "Avviso di sicurezza mostrato da Binance sulla chiave appena creata, in rosso: \"This API Key allows access from any IP address. This is not recommended.\" e \"To protect the safety of your funds, if the IP is unrestricted and any permission other than Reading is enabled, this API key will be deleted.\" — cioè Binance stessa cancellerebbe automaticamente la chiave se, con IP non ristretto, venisse attivato un permesso diverso dalla sola lettura.",
+  "fonte": "RnNSRF4s9nk#18:54 (browser, api-management) e #19:06 (stesso avviso, versione completa) + voce 18:54-19:06",
+  "frame": "frame-190.png, frame-192.png",
+  "ancora": "This API Key allows access from any IP address. This is not recommended.\" [...] \"To protect the safety of your funds, if the IP is unrestricted and any permission other than Reading is enabled, this API key will be deleted.\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-047", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-049",
+  "tipo": "dato",
+  "contenuto": "Per trovare il link esatto della documentazione delle candele Binance, il presentatore consiglia due strade: chiedere direttamente a Claude di esplorare, oppure visitare il sito ufficiale della documentazione, `developers.binance.com/docs/binance-spot-api-docs`. Nel video ha trovato il link chiedendolo direttamente a Claude.",
+  "fonte": "RnNSRF4s9nk#19:18 (browser, developers.binance.com) e #19:30 (spiegazione) + voce 19:18-19:36",
+  "frame": "frame-194.png, frame-196.png",
+  "ancora": "candele. Allora, per fare questo potete o chiedere a Cloud di andare e ed esplorare l'universo, oppure potete andare in questo link qui ehm che è la parte di developerinance.com [...] Come l'ho trovata? Ovviamente l'ho trovata utilizzando Cloud e chiedendogli...",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-043", "tipo": "parte-di"},
+   {"verso": "KA-050", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-050",
+  "tipo": "esempio",
+  "contenuto": "Blocco finale \"Credenziali Binance:\" completato e inviato dentro il prompt di plan mode: \"- API: [chiave mascherata: inizia con \"F4q6…\" e termina con \"…rotqJi\"] - Secret: [chiave mascherata: inizia con \"bfwU…\" e termina con \"…M9cD\"] - Link per vedere candele: https://developers.binance.com/docs/binance-spot-api-docs\". Il messaggio completo si chiude con il promemoria esplicito di sicurezza: \"Per favore ricordati che, per questo bot, vorrei farlo funzionare utilizzando soldi falsi e quindi in sandbox, ok?\" Le due chiavi Binance non vengono mai riportate per intero in questo documento, solo mascherate come nella fonte.",
+  "fonte": "RnNSRF4s9nk#19:30 (credenziali complete nel box) e #20:00 (prompt inviato per intero) + voce 19:30, 20:00-20:12",
+  "frame": "frame-196.png, frame-201.png",
+  "ancora": "Per favore ricordati che, per questo bot, vorrei farlo funzionare utilizzando soldi falsi e quindi in sandbox, ok?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-040", "tipo": "parte-di"},
+   {"verso": "KA-041", "tipo": "applica"},
+   {"verso": "KA-049", "tipo": "parte-di"},
+   {"verso": "KA-051", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-051",
+  "tipo": "dato",
+  "contenuto": "Il Finder di macOS mostra la cartella \"btc-trading-bot\" appena creata sul disco (\"Today at 12:53\"), accanto ad altri progetti del presentatore (Social Media Manager, Community Intelligence, Agency, ecc.): è la prova tangibile che l'implementazione richiesta a Claude Code in plan mode è stata avviata.",
+  "fonte": "RnNSRF4s9nk#20:12 (Finder macOS) + voce 20:12-20:30",
+  "frame": "frame-203.png",
+  "ancora": "\"btc-trading-bot\" (riga selezionata, evidenziata in blu) — Today at 12:53 — Folder [...] la cosa che possiamo fare è ora premere plan mode e aspettare che tutto questo venga implementato.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-050", "tipo": "precede"},
+   {"verso": "KA-052", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-052",
+  "tipo": "dato",
+  "contenuto": "Struttura del progetto Python generata da Claude Code per il bot, visibile nell'Explorer sotto la root \"Social Media Manager\": cartelle `__pycache__`, `.claude`, `.pytest_cache`, `.tmp`, `.venv`, `data`, `src`, `tests`, e i file `.env`, `.gitignore`, `CLAUDE.md` — nessuna di queste (tranne le prime tre) era presente prima dell'implementazione.",
+  "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, nuovo albero file, timestamp come da fonte) + voce 20:12-20:30",
+  "frame": "frame-204.png",
+  "ancora": "sotto la root \"Social Media Manager\" compaiono ora le cartelle `__pycache__`, `.claude`, `.pytest_cache`, `.tmp`, `.venv`, `data`, `src`, `tests` e i file `.env`, `.gitignore`, `CLAUDE.md` — la struttura di progetto Python generata per il bot (le cartelle `data`/`src`/`tests` e il file `.env` non erano presenti nelle scene 61-65)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-040", "tipo": "applica"},
+   {"verso": "KA-013", "tipo": "parte-di"},
+   {"verso": "KA-055", "tipo": "precede"}
+  ]
  }
 ]
