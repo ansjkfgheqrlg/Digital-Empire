@@ -92,14 +92,20 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
   nuovo, non si forzano.
 - **Lo stato delle lezioni chiuse oggi è stato allineato** in `runs/corso-aitubepro/*/stato.json`
   (`2-trascritto` → `completata` per L09, L13, L14, L16): il nastro non le ripropone più.
-- **Tre verifiche assegnate al gate A4**: (1) ascoltare un MP4 prodotto e stabilire se contiene
-  musica (`A4-L04-04`); (2) cronometrare una produzione vera end-to-end (`A4-L05-04`) — il corso
-  ha un metro di 5 minuti, noi nessuno; (3) ⭐ **compilare il campo `YouTube channel ID(s)` nel
-  profilo Fliki** per `dosementale` e `legamidiamore` (`A4-L19-01`) — è gratuito, protegge dai
-  reclami sulle clip che Fliki ci fornisce, e **non è mai stato fatto**.
-- **Verifica aperta assegnata al gate A4** (da `A4-L04-04`): ascoltare un MP4 già prodotto in
-  `06-DASHBOARD-E-METRICHE/video-generati/` e stabilire **se i nostri video contengono musica**.
-  Finché non si sa, il criterio «Bilanciamento Volumi» di `qa-audio-video` resta sospeso.
+- **Musica (`A4-L04-04`): CHIUSA il 2026-09-06** — L20 mostra che in Fliki la musica non è
+  automatica e nel payload non c'era un campo musica: criterio «Bilanciamento Volumi» passato da
+  sospeso a **inapplicabile** (`A4-L20-01`). ⚠️ **Sfumatura aggiunta il 2026-09-07** (CP-PG43): la
+  vera API Fliki HA un campo `bgMusicVolume` mai usato dal nostro client — "non possiamo" era
+  "non abbiamo ancora deciso". Candidato binario B in coda al gate A6, non applicato.
+- **Restano da fare:** cronometrare una produzione vera end-to-end (`A4-L05-04`) — il corso ha un
+  metro di 5 minuti, noi nessuno; ⭐ **compilare il campo `YouTube channel ID(s)` nel profilo
+  Fliki** per `dosementale` e `legamidiamore` (`A4-L19-01`) — è gratuito, protegge dai reclami
+  sulle clip che Fliki ci fornisce, e **non è mai stato fatto** (richiede l'interfaccia Fliki, non
+  l'API).
+- **Tre verifiche payload da L20: CHIUSE il 2026-09-07** (CP-PG43, vedi
+  `studi/aitubepro/A4-metodo-ai-tube/VERIFICA-PAYLOAD-L20-GATE-A4.md`): SFX via API **sì**
+  (`generateSfx`) · timing per-media **no** · tetto 50 scene **non verificabile dallo schema**
+  (resta l'unica delle tre non chiusa del tutto — serve una chiamata reale).
 - **La fabbrica oggi non può produrre Shorts**: `aspectRatio` è la costante `"16:9"` a
   `fliki_client.py:258` (regola `A4-L04-02`, binario B).
 - `corso_prepara.py` **eseguito il 2026-09-04**: 6 lezioni di A4 già pronte a nastro.
@@ -120,27 +126,31 @@ I rapporti grezzi degli scagnozzi restano come **materiale d'origine** in
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-**Non c'è più nulla di leggibile in A4.** Restano tre lezioni in `1-fallito` (**L11** Premiere
-SENSEI, **L12** sottotitoli automatici, **L18** voice over con Audacity): si riscaricano con un
-**gettone nuovo** — il vecchio dà HTTP 403 — e non si forzano.
+**A4 CHIUSA** (CP-20260907-JVY2): 21/21, 62 regole, gate 6/7 (manca solo il video di prova, costa
+minuti di piano, decide Max). Le tre verifiche payload di L20 sono state chiuse il giorno dopo
+(CP-PG43), fuori dal conteggio delle 7 condizioni.
+
+**In corso ORA: categoria A6 «Viral Mastery» (10 lezioni)**, dove si chiudono anche **D-1** e
+**D-2**. `corso_prepara.py` per questa categoria è stato lanciato in background il 2026-09-07 e
+scarica+trascrive tutte e 10 le lezioni (nessuna letta prima d'ora, tutte partivano da `da-fare`).
 
 ```bash
 cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"
-# lo stato vero di ogni lezione sta qui (unica fonte, non l'aritmetica):
+# stato vero di ogni lezione (unica fonte, non l'aritmetica):
 #   runs/corso-aitubepro/<lesson_id>/stato.json   -> passo: completata | 2-trascritto | 1-fallito
-PYTHONIOENCODING=utf-8 py -3 corso_prepara.py --categoria "Metodo AI Tube"   # idempotente
+PYTHONIOENCODING=utf-8 py -3 corso_prepara.py --categoria "Viral Mastery"   # idempotente, in corso
+
+# poi, per lezione, i frame (l'URL sta in runs/corso-aitubepro/mappa.json):
+python scripts/frame_extractor.py --run corso-aitubepro/<lesson_id> --input <url> --interval 2
 ```
 
-**Poi il gate di categoria A4 a 7 condizioni** (piano §9), che adesso porta:
-- **2 verifiche vecchie** — il tempo per video (`A4-L05-04`) e **compilare il campo `YouTube
-  channel ID(s)`** nel profilo Fliki per `dosementale` e `legamidiamore` (`A4-L19-01`);
-  *(la terza, la musica `A4-L04-04`, è stata **chiusa** il 2026-09-06: non c'è musica)*
-- **3 verifiche nuove contro il payload reale**, da L20: la generazione **SFX** esiste via API? il
-  **timing per-media in secondi** è supportato o siamo a una scena = un media? il tetto di **50
-  scene** vale anche per i file creati via API?
-- **3 regole di binario B** da applicare al motore: `A4-L01-03`, `A4-L03-02`, `A4-L04-02`.
+Poi lettura via sentinelle (max 2-3 in parallelo — regola di risparmio token, non aggirarla),
+regole a registro, **gate A6 a 7 condizioni** (stesso schema di A4, piano §9) che stavolta include
+anche la chiusura di D-1 (`DURATA_MASSIMA_S` vs `PAROLE_MINIME_SCRIPT` impossibile) e D-2
+(`verifica_qualita()` mai invocata dalla catena).
 
-A fine categoria: `REPORT-CATEGORIA.md`, `APPUNTI-CATEGORIA.md`, e poi **A6 Viral Mastery** (10).
+A fine categoria: `REPORT-CATEGORIA.md`, `APPUNTI-CATEGORIA.md` per A6, poi la categoria successiva
+del piano.
 
 ## 4-bis. IL PEZZO FINALE — come si chiude la missione (ordine di Max, 2026-09-05)
 

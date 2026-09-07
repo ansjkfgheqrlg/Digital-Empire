@@ -122,7 +122,12 @@ gusto di spuntare una casella.
 - **il tempo per video** non è misurato (`A4-L05-04`);
 - **il campo `YouTube channel ID(s)`** va compilato a mano sui due canali (`A4-L19-01`): gratis,
   cinque minuti, mai fatto;
-- **tre verifiche contro il payload** da L20 (SFX via API · timing per-media · tetto di 50 scene);
+- ~~tre verifiche contro il payload da L20~~ **chiuse il 2026-09-07**, vedi
+  [`VERIFICA-PAYLOAD-L20-GATE-A4.md`](VERIFICA-PAYLOAD-L20-GATE-A4.md): SFX via API **sì**
+  (`generateSfx`) · timing per-media **no** · tetto 50 scene **non verificabile dallo schema**.
+  **Scoperta bonus non cercata:** `bgMusicVolume` è un campo reale dell'API, mai usato dal nostro
+  payload — la musica non è impossibile, è una scelta mai fatta. Due candidati binario B in coda
+  al gate A6 (`generateSfx`, `bgMusicVolume`), non applicati per ADR-024;
 - **D-1 e D-2** restano aperti di proposito fino al gate di **A6**.
 
 ---

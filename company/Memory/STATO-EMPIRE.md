@@ -1,3 +1,28 @@
+## 🟠 2026-09-07 — Le tre verifiche payload di L20 chiuse: l'API Fliki sa fare musica e SFX, e non lo sapevamo — CP-20260907-PG43
+
+**Codice di ripresa: EMP-V6DE (APERTA).** Continuazione diretta di CP-20260907-JVY2 ("vai
+continua" di Max). Chiuse le tre verifiche rimaste aperte contro il payload reale di Fliki
+(assegnate al gate A4 da L20): **SFX via API — SÌ** (`generateSfx`, boolean) · **timing
+per-media — NO** (non esiste nello schema) · **tetto 50 scene — non verificabile dallo schema**
+(resta aperta, serve una chiamata reale). Fonte: documentazione ufficiale `developer.fliki.ai`
+letta due volte con riscontro incrociato — non il nostro client, che dice solo cosa facciamo, non
+cosa si può fare.
+⭐ **Scoperta non cercata, leggendo lo schema intero per rispondere alle tre domande:**
+`bgMusicVolume` (0-100) è anch'esso un campo reale del payload, **mai usato da `fliki_client.py`**.
+La regola registrata `A4-L20-01` ("i nostri video non hanno musica: campo inesistente") resta vera
+nella premessa stretta ma la causa è **una scelta mai fatta**, non un limite dell'API — due frasi
+diverse. Nessun codice toccato (ADR-024, motore si tocca solo a gate di categoria): due candidati
+binario B in coda al gate A6, `generateSfx` e `bgMusicVolume` (quest'ultimo con ascolto A/B prima
+di attivarlo su un canale vero, stesso principio di A4-L04-04).
+**Avviato in parallelo, in background:** `corso_prepara.py --categoria "Viral Mastery"`
+(scaricamento+trascrizione delle 10 lezioni di A6), su ordine di Max di procedere: doom bot,
+sentinelle e scagnozzi restano disponibili su qualunque modello, non solo Sonnet di questa chat.
+**RIPRESA DA:** al termine del download in corso, estrazione frame per le 10 lezioni A6 e lettura
+via sentinelle (max 2-3 in parallelo), poi gate A6 a 7 condizioni — chiude anche **D-1** e **D-2**.
+Restano invariate le voci già aperte in JVY2: tempo per video, campo `YouTube channel ID(s)` su
+Fliki (gratis, richiede l'interfaccia — non l'API), video di prova del gate A4 (decide Max).
+Dettagli: [CP-20260907-PG43](checkpoints/CP-20260907-PG43.md).
+
 ## 🟠 2026-09-07 — CATEGORIA A4 CHIUSA: 21 lezioni, 62 regole, e la verifica che mi ha bocciato — CP-20260907-JVY2
 
 **Codice di ripresa: EMP-V6DE (APERTA).** La prima categoria del corso e' **chiusa**: 21 lezioni su
