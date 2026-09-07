@@ -202,6 +202,25 @@ print('$r:', len(f), 'scene scritte')
 done
 ```
 
+### RIPRESA 2026-09-07 09:0x — su ordine di Max ("continua EMP-W4K7"). Conteggio vero sul disco
+
+**v06 e v05 chiusi come visione E come atomi**, entrambi saldati con `unisci_atomi.py`:
+- `v06`: **228 atomi, 427 archi, 1 sola componente connessa** (zero archi rotti, zero orfani,
+  zero ancore inventate).
+- `v05`: **72 atomi, 151 archi, 1 sola componente connessa** (stessa pulizia).
+
+Mancano ancora: wiki + `knowledge/<id>/` per entrambi (non fatto in questo giro, prossimo passo).
+
+**v08**: 189/393 scene viste. Schierata la quarta ondata (190-210, 211-231, 232-252): a
+consegna avvenuta **210/393**.
+**v09**: 63/494 scene viste. Schierata la seconda ondata (64-84, 85-105, 106-126): a
+consegna avvenuta **126/494**. Restano comunque **molte** scene (~368) da vedere su v09: e' il
+video piu' lungo del lotto (133 minuti, 494 scene contro le 376 di v06).
+
+**Falso allarme chiuso di nuovo**: `SYNC-CONFLICT.txt` era ricomparso (rebase pre-commit fallito
+per collisione con un'altra sessione attiva sullo stesso repo — vista in `ListAgents`: sessioni
+`digital-empire-*` multiple, oltre a questa). HEAD tornato identico a origin/main: rimosso.
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte

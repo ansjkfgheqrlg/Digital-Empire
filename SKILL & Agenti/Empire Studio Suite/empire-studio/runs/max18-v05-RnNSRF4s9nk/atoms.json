@@ -1,0 +1,1486 @@
+[
+ {
+  "id": "KA-001",
+  "tipo": "principio",
+  "contenuto": "Apertura diretta del video: il presentatore dichiara di aver costruito un bot che fa trading di Bitcoin con Claude Code (\"Cloudcode\" nella trascrizione automatica) e annuncia che nel video lo ricostruirà insieme allo spettatore, partendo da zero.",
+  "fonte": "RnNSRF4s9nk#0:00 (talking head, apertura) + voce 0:00-0:06",
+  "frame": "frame-001.png",
+  "ancora": "Ho costruito un bot che fa trading di Bitcoin con Cloudcode ed in questo video lo andremo a ricostruire insieme.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-002",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-003",
+    "tipo": "motiva"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-002",
+  "tipo": "principio",
+  "contenuto": "Il presentatore chiarisce subito il vero obiettivo del video: non è una guida per arricchirsi con il trading di Bitcoin, ma un caso di studio su come usare l'intelligenza artificiale per affrontare qualsiasi problema concreto, di cui il bot è solo l'esempio scelto.",
+  "fonte": "RnNSRF4s9nk#0:06 (talking head) + voce 0:06-0:18",
+  "frame": "frame-002.png",
+  "ancora": "Però questo video non è un video su come si diventa ricchi facendo trading di Bitcoin, non sarei qui, eh, però è piuttosto un video su come possiamo utilizzare l'AI per affrontare qualsiasi problema concreto.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-001",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-069",
+    "tipo": "precede",
+    "perche": "La stessa tesi (il video non riguarda il trading ma il metodo con l'AI) apre qui e viene ripresa identica nelle considerazioni conclusive."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-003",
+  "tipo": "principio",
+  "contenuto": "Il video introduce un framework replicabile per affrontare qualsiasi problema con l'aiuto dell'AI, pensato apposta per chi non è esperto del dominio del problema (qui: il trading) e ha bisogno di farsi guidare dagli strumenti passo dopo passo.",
+  "fonte": "RnNSRF4s9nk#0:18-0:24 (talking head) + voce 0:18-0:30",
+  "frame": "frame-004.png, frame-005.png",
+  "ancora": "Quindi andremo a vedere qual è un framework che possiamo utilizzare per affrontare questo problema e come possiamo farci guidare da questi strumenti nel caso in cui noi non siamo degli esperti nel settore.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-004",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-004",
+  "tipo": "definizione",
+  "contenuto": "Il video si divide in tre parti principali, mostrate come schema su Excalidraw con tre riquadri collegati da frecce: \"COMPRENSIONE DEL PROBLEMA\" (icona lampadina, sottotitolo \"Capire cosa si vuole risolvere\"), \"DESIGN DEL SISTEMA\" (icona foglio da progetto con squadra e matita, sottotitolo \"Progettare la soluzione\"), \"IMPLEMENTAZIONE\" (icona \"</>\" sopra un ingranaggio, sottotitolo \"Costruire il sistema\"). Questa mappa in tre fasi corrisponde esattamente alla struttura dell'intero video.",
+  "fonte": "RnNSRF4s9nk#0:30 (schermata Excalidraw) + voce 0:30-0:54",
+  "frame": "frame-006.png",
+  "ancora": "Questo video si dividerà in tre parti principali. Andremo inizialmente a comprendere il problema che dobbiamo analizzare, quindi che cosa vuol dire fare un trading bot di Bitcoin, cioè quali sono i problemi che andiamo a risolvere, quali sono le parti costitutive. Andremo poi a definire come facciamo un design del sistema ed alla fine procederemo all'implementazione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-003",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-006",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-017",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-005",
+  "tipo": "dato",
+  "contenuto": "Presentazione personale del canale: il presentatore gestisce un'azienda di consulenza AI con clienti che vanno da €10.000 al mese fino a 50 milioni di euro all'anno di fatturato, e ha una community privata nella quale insegna a freelancer e imprenditori come applicare l'AI in qualsiasi business e come vendere questi servizi.",
+  "fonte": "RnNSRF4s9nk#1:00-1:06 (talking head) + voce 1:00-1:18",
+  "frame": "frame-011.png, frame-012.png",
+  "ancora": "...artificiale con la quale facciamo consulenza business che vanno dai €10.000 al mese fino ai 50 milioni di euro all'anno ed ho una community... privata nella quale insegno a freelancer ed imprenditori come applicare l'AI in qualsiasi business e come vendere questi servizi.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-072",
+    "tipo": "precede",
+    "perche": "La stessa community/offerta anticipata qui viene richiamata come pitch di vendita nella chiusura del video."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-006",
+  "tipo": "dato",
+  "contenuto": "Schema completo a tre livelli \"TRADING BOT BITCOIN SU BINANCE\" disegnato su Excalidraw, la scomposizione del bot nei suoi building blocks: LIVELLO 1 MONITORAGGIO E ALERT (fascia viola) — Supervisione costante, Notifiche in tempo reale (icona smartphone), Dashboard di controllo (icona ingranaggio); LIVELLO 2 IL BOT (fascia verde) — Lettura Dati (icona candele di borsa, sottotitolo \"Raccoglie candele e prezzi in tempo reale\") → Decisione e Gestione del Rischio (icona cervello, sottotitolo \"Cervello del bot: applica la strategia, decide l'azione, gestisce il rischio\") → Esecuzione Ordini (icona carrello, sottotitolo \"Invia ordini automatici di acquisto e vendita\"); LIVELLO 3 FONDAMENTA (fascia arancione) — Piattaforma Binance (icona banca/edificio, sottotitolo \"Infrastruttura del mercato crittografico\") e Connessione API (icona chiave, sottotitolo \"Interfaccia di comunicazione sicura\"), racchiusi da una graffa col testo \"SI CONFIGURA UNA VOLTA POI FUNZIONA IN AUTOMATICO\".",
+  "fonte": "RnNSRF4s9nk#1:18 (Excalidraw, prima rivelazione) e #12:54 (versione integrale rivelata) + voce 1:18-1:24",
+  "frame": "frame-014.png, frame-130.png",
+  "ancora": "LIVELLO 1: MONITORAGGIO E ALERT... SUPERVISIONE COSTANTE, NOTIFICHE IN TEMPO REALE, DASHBOARD DI CONTROLLO... LIVELLO 2: IL BOT... LETTURA DATI... DECISIONE E GESTIONE DEL RISCHIO... ESECUZIONE ORDINI... LIVELLO 3: FONDAMENTA... PIATTAFORMA BINANCE... CONNESSIONE API... SI CONFIGURA UNA VOLTA POI FUNZIONA IN AUTOMATICO",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-004",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-014",
+    "tipo": "precede",
+    "perche": "Questo stesso schema è l'output che il presentatore mostra generato dalla skill /diagram-generator nella scena 21."
+   },
+   {
+    "verso": "KA-018",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-007",
+  "tipo": "dato",
+  "contenuto": "Il presentatore sceglie Binance come piattaforma di riferimento per il bot e precisa esplicitamente di non avere alcuna associazione o sponsorizzazione con l'azienda: fa il video solo perché qualcuno degli spettatori glielo ha chiesto.",
+  "fonte": "RnNSRF4s9nk#1:30 (Excalidraw, parola \"BINANCE\" sottolineata a mano) + voce 1:30-1:42",
+  "frame": "frame-016.png",
+  "ancora": "...caso useremo Binance. Non ho alcuna associazione, non c'è uno sponsored link, faccio il video solo perché qualcuno di voi me l'ha chiesto.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-006",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-008",
+  "tipo": "principio",
+  "contenuto": "Le chiavi di connessione API sono ciò che permette a Claude (o ad altri strumenti come Codex) di accedere in maniera automatica alla piattaforma Binance; senza quelle chiavi l'AI non può operare sul sistema per conto dell'utente. È questa la ragione per cui \"Connessione API\" fa parte del Livello 3 (Fondamenta) del diagramma.",
+  "fonte": "RnNSRF4s9nk#2:00 (Excalidraw, sottolineatura su \"CONNESSIONE API\") + voce 2:00-2:06",
+  "frame": "frame-021.png",
+  "ancora": "...chiavi che permettono a Cloud di accedere a o a Codex di accedere in maniera automatica, noi non possiamo fare questa cosa qui.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-006",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-045",
+    "tipo": "precede",
+    "perche": "Questo principio motiva l'intero capitolo successivo di creazione delle chiavi API su Binance."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-009",
+  "tipo": "principio",
+  "contenuto": "Dare un ordine vago all'AI (l'esempio usato è \"vai e conquista il mondo\") non è sufficiente perché l'AI possa davvero eseguirlo, perché manca la strategia concreta con cui farlo (con il carro armato, con le spade o con le pistole d'acqua). Bisogna sempre definire la strategia prima di delegare l'esecuzione.",
+  "fonte": "RnNSRF4s9nk#3:18 (Excalidraw, sottolineatura arancione su \"Cervello del bot:\" + freccia arancione) + voce 3:18-3:30",
+  "frame": "frame-034.png",
+  "ancora": "Perché dire a Claud e per favore vai e conquista il mondo non è sufficiente per Claud conquistare questo mondo, cioè con il carro armato, con le spade o con le pistole d'acqua. Quindi dobbiamo definire quella che è la strategia...",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-010",
+    "tipo": "motiva"
+   },
+   {
+    "verso": "KA-018",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-010",
+  "tipo": "principio",
+  "contenuto": "Non tutti sanno qual è la migliore strategia per fare trading: la gran parte della ricerca dello spettatore dovrebbe concentrarsi nel decidere qual è la strategia migliore, prima ancora di capire come costruire il sistema tecnico. Costruire il bot con Claude Code lo sa fare quasi chiunque dopo il video; la vera proprietà intellettuale sta nella strategia.",
+  "fonte": "RnNSRF4s9nk#3:48 (Excalidraw, freccia diagonale arancione verso \"Decisione e Gestione del Rischio\") + voce 3:48-4:00",
+  "frame": "frame-039.png",
+  "ancora": "...Non tanti sapranno qual è la miglior strategia per fare trading, quindi la gran parte della vostra ricerca dovrebbe essere nel decidere qual è la strategia migliore prima ancora di capire come costruire il sistema.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-009",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-022",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-011",
+  "tipo": "procedura",
+  "contenuto": "Per affrontare qualsiasi tipo di problema bisogna sempre procedere nello stesso ordine: prima le Fondamenta (\"possiamo farlo?\"), poi il Bot/nucleo operativo (\"cosa facciamo?\"), infine il Monitoraggio (\"come lo monitoriamo?\"). Nel diagramma questo ordine è illustrato da una grande freccia verde verticale che sale dal Livello 3 (Fondamenta) fino al Livello 1 (Monitoraggio), passando per il Livello 2 (il Bot).",
+  "fonte": "RnNSRF4s9nk#4:48 (Excalidraw, grande freccia verde verticale + sottolineature verdi su Livello 2 e Livello 3) + voce 4:36-4:54",
+  "frame": "frame-049.png",
+  "ancora": "...corretta. Ok? Quindi partiamo sempre da possiamo farlo, dopo andiamo al ok, cosa facciamo e dopo è come lo monitoriamo.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-006",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-070",
+    "tipo": "precede",
+    "perche": "Questo stesso ordine (fondamenta → costruzione → monitoraggio) viene ricondensato nei tre step del metodo enunciato nelle considerazioni conclusive."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-012",
+  "tipo": "principio",
+  "contenuto": "Il presentatore anticipa un'obiezione tipica dello spettatore (\"non è sempre chiaro qual è il problema che sto affrontando, non ho sempre chiaro come farlo\") e risponde che per risolverla consiglia sempre di utilizzare uno strumento come Claude, prima ancora di iniziare a costruire qualsiasi cosa.",
+  "fonte": "RnNSRF4s9nk#4:54-5:00 (talking head) + voce 4:54-5:06",
+  "frame": "frame-050.png, frame-051.png",
+  "ancora": "Ora però noi potremmo chiederci una cosa, voi potreste dirmi: 'Hey Jo, però non è sempre chiaro qual è il problema che sto affrontando, non ho sempre...' [...] non ho sempre chiaro come farlo.\" Bene, per risolvere questo problema vi consiglio sempre di utilizzare uno strumento come cloud.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-014",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-003",
+    "tipo": "applica"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-013",
+  "tipo": "definizione",
+  "contenuto": "\"Antigravity IDE\" è l'ambiente di sviluppo (fork/derivato di VS Code) usato per l'intera sessione di lavoro con Claude Code nel video, riconoscibile dall'etichetta \"Antigravity IDE - Offline\" nella barra di stato in basso a destra, accanto a \"Screen Reader Optimized\". Il progetto radice aperto si chiama \"Social Media Manager\" (cartella preesistente del presentatore, non creata per questo video), dentro cui viene poi generata la sottocartella \"btc-trading-bot\".",
+  "fonte": "RnNSRF4s9nk#5:12 (prima apparizione IDE) + voce varie",
+  "frame": "frame-053.png",
+  "ancora": "Antigravity IDE - Offline",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-014",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-052",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-014",
+  "tipo": "esempio",
+  "contenuto": "Prompt reale usato nell'IDE \"Antigravity\" per generare lo schema a blocchi con la skill /diagram-generator: \"I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on). The goal is to clearly display the building blocks. I will give you an example to help you stay in the right direction. If I say I need to build a trading bot, it should include multiple parts, for example: - API connection or platform choice - API connection and bot strategy - and so on /diagram-generator is the skill\". Da questo prompt è stato generato esattamente lo schema a tre livelli \"TRADING BOT BITCOIN SU BINANCE\".",
+  "fonte": "RnNSRF4s9nk#5:12 (IDE Antigravity, pannello chat) + voce 5:12-5:30",
+  "frame": "frame-053.png",
+  "ancora": "I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on).",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-015",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-006",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-015",
+  "tipo": "definizione",
+  "contenuto": "/diagram-generator è una skill personalizzata del presentatore, richiamata esplicitamente nel prompt (\"/diagram-generator is the skill\"), che genera diagrammi ad alto livello a partire da una descrizione testuale del sistema da costruire, pensati per un pubblico non tecnico.",
+  "fonte": "RnNSRF4s9nk#5:12 (IDE Antigravity) + voce 5:12",
+  "frame": "frame-053.png",
+  "ancora": "/diagram-generator is the skill",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-016",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-016",
+  "tipo": "procedura",
+  "contenuto": "Meccanismo dichiarato dietro la skill /diagram-generator: il presentatore ha istruito il bot a restare ad alto livello, cercare di decomporre il task in micro-sezioni, e solo dopo disegnare il diagramma risultante.",
+  "fonte": "RnNSRF4s9nk#7:00 (IDE Antigravity) + voce 7:00-7:12",
+  "frame": "frame-071.png",
+  "ancora": "...semplicemente questa è una skill nella quale io ho detto al bot, 'Hei, quando ti do un richiesta per farmi un diagramma', stai ad alto livello, cerca di decomporre il task in micro sezioni e dopo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-015",
+    "tipo": "definisce"
+   },
+   {
+    "verso": "KA-014",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-017",
+  "tipo": "definizione",
+  "contenuto": "Apertura letterale del secondo capitolo del video: il titolo \"2. Design del sistema\" viene scritto a mano libera su una nuova sezione della stessa lavagna Excalidraw, subito dopo la domanda retorica \"da dove si parte per fare il design del sistema?\".",
+  "fonte": "RnNSRF4s9nk#7:48 (Excalidraw) + voce 7:48-7:54",
+  "frame": "frame-079.png",
+  "ancora": "parte numero due è fare il design del sistema. Allora, da dove si parte però per fare il design del sistema?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-004",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-018",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-018",
+  "tipo": "principio",
+  "contenuto": "Il presentatore individua il \"blocco core\" da cui partire sempre nel design di un sistema: il riquadro \"Decisione e Gestione del Rischio\" del Livello 2, che cerchia a mano libera con un tratto blu attorno al diagramma esistente. È il blocco da cui dipende la probabilità di successo dell'intero sistema.",
+  "fonte": "RnNSRF4s9nk#8:00 (Excalidraw, cerchiatura blu) e #11:12 (ellisse completata) + voce 8:00-8:06, 11:12-11:24",
+  "frame": "frame-081.png, frame-113.png",
+  "ancora": "dal blocco che io considero il blocco core. Quindi, partiamo sempre da la nostra strategia. E come possiamo andare allora a fare la strategia?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-009",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-019",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-020",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-019",
+  "tipo": "principio",
+  "contenuto": "Il presentatore generalizza il \"blocco core\" (Decisione e Gestione del Rischio) oltre il trading, con due esempi concreti: in un sistema di marketing campaign automatiche, la probabilità di successo dipende da quanto bene il sistema identifica gli outlier; in un sistema di proposal generation automatica per i clienti, il successo dipende da quanto bene si analizzano i transcript e da quanto vengono convertiti nel \"pain\" del cliente. In entrambi i casi lo stesso diagramma cerchiato resta lo sfondo concettuale fisso.",
+  "fonte": "RnNSRF4s9nk#11:12-11:42 (Excalidraw, ellisse blu chiusa) + voce 11:12-11:54",
+  "frame": "frame-113.png, frame-118.png",
+  "ancora": "andiamo a fare una proposal generation, quindi che mandiamo proposte automatiche ai nostri clienti. Gran parte del successo del sistema viene da quanto bene analizziamo i transcript e da quanto questi possono essere convertiti in pain per il nostro cliente",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-018",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-020",
+  "tipo": "esempio",
+  "contenuto": "Prompt reale `/prompt-contracts` usato per generare la strategia di trading tramite ricerca parallela: \"I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades. What I want is a bot that looks at these candles in the Binance app and then trades. I need your help with the following: please come up with a strategy I can use to create this bot successfully. Please know that this is a demo and it will be run in a sandbox with fake money, so no real harm or financial advice will be given. However, I still want the bot to be fully functioning and not biased by the demo. I need you to use agent polling to scrape and find each individual strategy my bot could use\".",
+  "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity) + voce 8:06-8:36",
+  "frame": "frame-082.png",
+  "ancora": "/prompt-contracts I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-021",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-022",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-021",
+  "tipo": "definizione",
+  "contenuto": "\"Agent polling\" è la tecnica per cui Claude lancia più agenti di ricerca in parallelo, ciascuno specializzato su una categoria diversa di strategie, per poi costruire un prompt contract sulla base dei risultati aggregati. Nel video Claude lancia tre agenti: \"Research trend-following strategies\", \"Research mean-reversion + momentum strategies\", \"Research advanced + composite strategies\", ciascuno con il proprio compito di ricerca (IN) e un campo \"1. Strategy name\" da compilare.",
+  "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, tre blocchi Agent) e #9:36-10:36 (sottolineature sui tre agenti) + voce 9:36-10:42",
+  "frame": "frame-082.png, frame-102.png",
+  "ancora": "I'll research trading strategies using multiple agents in parallel, then build a prompt contract for the bot. Let me launch research agents to find strategies across different categories.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-020",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-022",
+    "tipo": "motiva"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-022",
+  "tipo": "dato",
+  "contenuto": "Documento di strategia generato da Claude, \"Bitcoin Daily Trading Bot -- Strategy\": \"Approach: Ensemble/Voting (5 indicators, majority rules). Evaluate 5 uncorrelated signals on each daily BTC/USDT candle. Only trade when 3+ agree on direction. Skip when signals are mixed.\"",
+  "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, pannello destro \"Ready for review\") + voce 8:06-8:12",
+  "frame": "frame-082.png",
+  "ancora": "Approach: Ensemble/Voting (5 indicators, majority rules\" [...] \"Evaluate 5 uncorrelated signals on each daily BTC/USDT candle. Only trad[e] when 3+ agree on direction. Skip when signals are mixed.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-020",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-023",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-023",
+  "tipo": "dato",
+  "contenuto": "I 5 segnali della strategia Ensemble/Voting, elenco completo con soglie: \"1. EMA 50/200 Crossover -- trend direction. EMA50 above EMA200 = bullish, below = bearish. 2. RSI(14) above/below 50 -- momentum. Above 50 = bullish, below = bearish. 3. OBV slope (14-day) -- volume confirmation. Rising OBV = accumulation = bullish, falling OBV = bearish. 4. Bollinger Band position (20, 2 std dev) -- price above middle band = bullish, below = bearish. 5. ADX(14) > 25 -- trend strength filter. Below 25 = no trade at all (no clear trend).\"",
+  "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, \"The 5 Signals\") e #12:00 (versione integrale, non più tagliata) + voce 8:06-8:36",
+  "frame": "frame-082.png, frame-121.png",
+  "ancora": "The 5 Signals\" con lista numerata: 1. \"EMA 50/200 Crossover -- trend direction. EMA50 above EMA200 = [bullish, below = bearish]\" [...] 5. \"ADX(14) > 25 -- trend strength filter. Below 25 = no trade at all (no clear trend)\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-022",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-024",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-033",
+    "tipo": "precede",
+    "perche": "Questi stessi 5 indicatori diventano i 5 box del flowchart visivo generato più avanti."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-024",
+  "tipo": "dato",
+  "contenuto": "Motivazione della scelta dei 5 segnali e tabella comparativa completa \"Signal | Dimension | Fails when\": \"Each covers a different dimension of market behavior. They are uncorrelated -- when one fails, others compensate:\" — EMA crossover | Trend | Ranging/choppy markets; RSI | Momentum | Extended trends (stays overbought); OBV | Volume | Low-volume fakeouts; Bollinger Band | Volatility | Sudden regime changes; ADX | Trend strength | N/A (it's the safety filter).",
+  "fonte": "RnNSRF4s9nk#12:00 (IDE Antigravity, tabella completa a 5 righe) + voce 8:36-9:06",
+  "frame": "frame-121.png",
+  "ancora": "Why these 5\", paragrafo: \"Each covers a different dimension of market behavior. They are uncorrelated -- when one fails, others compensate:\" Segue una tabella a tre colonne \"Signal | Dimension | Fails when\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-023",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-025",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Risk Management\" del documento di strategia, elenco completo: uscita quando \"Signals flip (3+ switch direction)\" OR \"trailing stop hit (2x ATR(14) from highest point since entry)\"; \"Stop-loss: 1.5x ATR(14) below entry price\"; \"Position size: risk max 2% of capital per trade\"; \"Formula: position_size = (capital * 0.02) / (1.5 * ATR)\"; \"Trailing stop: 2x ATR(14), adjusted\".",
+  "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity, sidebar destra strategia) + voce 12:06-12:36",
+  "frame": "frame-122.png",
+  "ancora": "Signals flip (3+ switch direction)\" [...] \"OR trailing stop hit (2x ATR(14) from highest point since entry)\" [...] \"Stop-loss: 1.5x ATR(14) below entry price\" [...] \"Formula: position_size = (capital * 0.02) / (1.5 * ATR)\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-022",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-035",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-026",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Expected Performance\" del documento di strategia: \"Win rate: 55-60%\", \"Risk/reward ratio: 1:1.5\", \"Trade frequency: low (only on strong consensus)\", \"Works across: trending, ranging, and volatile conditions\".",
+  "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity, sidebar destra strategia) + voce 12:06",
+  "frame": "frame-122.png",
+  "ancora": "Expected Performance\" ... \"Win rate: 55-60%\" ... \"Risk/reward ratio: 1:1.5\" ... \"Trade frequency: low (only on strong consensus)\" ... \"Works across: trending, ranging, and volatile conditions\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-022",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-027",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Why This Over 20 Other Strategies\" del documento di strategia: sottotitolo \"Single indicators fail predictably:\" con confronto — \"RSI alone: 52-58% win rate but only in ranging markets, destroyed in trends\"; \"EMA crossover alone: 35-42% win rate, great R:R but constant whipsaws in ranges\"; \"MACD alone: 38-45%, lags in fast [markets]\" (riga tagliata nella fonte). In un'altra porzione del documento, letta poco dopo: \"ranges, mean reversion signals (RSI, Bollinger) dominate. No regime detection needed — the voting handles it.\"",
+  "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity) e #13:06 (continuazione scroll) + voce 12:06, 13:06-13:18",
+  "frame": "frame-122.png, frame-132.png",
+  "ancora": "Why This Over 20 Other Strategies\" Sottotitolo \"Single indicators fail predictably:\" - \"RSI alone: 52-58% win rate but only in ranging markets, destroyed in trends\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-022",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-023",
+    "tipo": "motiva",
+    "perche": "Il fallimento prevedibile dei singoli indicatori è la motivazione dichiarata per usare l'ensemble di 5 segnali non correlati invece di uno solo."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-028",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Tech Stack (for implementation)\" del documento di strategia: \"ccxt -- Binance Testnet API (testnet.binance.vision)\"; \"pandas + pandas-ta -- indicator calculations\"; \"python-dotenv -- API keys from environment\"; \"Both backtest mode (historical candles) and live mode (daily polling)\".",
+  "fonte": "RnNSRF4s9nk#13:06 (IDE Antigravity, allegato image.png con testo strategia) + voce 13:06-13:30",
+  "frame": "frame-132.png",
+  "ancora": "Tech Stack (for implementation)\" \"ccxt -- Binance Testnet API (testnet.binance.vision)\" \"pandas + pandas-ta -- indicator calculations\" \"python-dotenv -- API keys from environment\" \"Both backtest mode (historical candles) and live mode (daily polling)\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-022",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-040",
+    "tipo": "precede",
+    "perche": "Questo stack tecnico è ciò che poi si traduce nei moduli elencati nell'Implementation Order del prompt di plan mode."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-029",
+  "tipo": "procedura",
+  "contenuto": "Per generare il flowchart architetturale, Claude Code prima legge la skill Excalidraw (\"Let me read the excalidraw skill first\" / Read SKILL.md), poi crea il file `.tmp/btc_daily_trading_bot.excalidraw`, ed esegue uno script Python per applicare i colori pastello: comando bash `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager\" && python3 .claude/skills/excalidraw-flowchart/colorize.py .tmp/btc_daily_trad...`. Il file risultante pesa 126.738 byte (~127KB).",
+  "fonte": "RnNSRF4s9nk#13:30 (IDE Antigravity, log Claude Code) e #14:00 + voce 13:30-14:00",
+  "frame": "frame-136.png, frame-141.png",
+  "ancora": "Bash\" \"Apply pastel colors to flowchart\" - riga \"IN\": `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media...` [...] \"Flowchart generato:\" `.tmp/btc_daily_trading_bot.excalidraw` \"(127KB).\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-030",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-016",
+    "tipo": "applica",
+    "perche": "Anche questa skill segue lo stesso mental model visivo già dichiarato per /diagram-generator: rappresentare l'architettura prima di implementarla."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-030",
+  "tipo": "dato",
+  "contenuto": "Riepilogo testuale generato da Claude Code del flowchart appena creato, i 7 step dell'intero ciclo del bot: \"1. Start -- Daily Candle Close (trigger). 2. Fetch + Calculate -- scarica candela BTC/USDT, calcola i 5 indicatori in parallelo (EMA, RSI, OBV, Bollinger, ADX). 3. Voting -- raccoglie i voti, poi filtra: ADX < 25 = HOLD. 4. Decision -- 3+ bullish = LONG, 3+ bearish = SHORT, altrimenti HOLD. 5. Risk Management -- stop-loss 1.5x ATR + trailing stop 2x ATR. 6. Monitor -- loop giornaliero: check signal flip o trailing stop hit, se no aggiorna trailing e continua. 7. Exit -- close position e torna a Wait Next Candle, che riporta al Daily Candle Close.\"",
+  "fonte": "RnNSRF4s9nk#14:00 (IDE Antigravity, log Claude Code) + voce 14:00-14:30",
+  "frame": "frame-141.png",
+  "ancora": "Il flow copre l'intero ciclo:\" seguito da lista numerata completa: 1. **\"Start\"** \"-- Daily Candle Close (trigger)\" [...] 7. **\"Exit\"** \"-- close position e torna a Wait Next Candle, che riporta al Daily Candle Close\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-029",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-032",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-023",
+    "tipo": "applica"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-031",
+  "tipo": "esempio",
+  "contenuto": "Il file `.excalidraw` generato da Claude è in realtà un JSON leggibile: apertura con `\"type\": \"excalidraw\", \"version\": 2, \"source\": \"https://github.com/swiftlysingh/excalidraw-...`, poi un array `\"elements\"` dove ogni forma è un oggetto con proprietà come `\"id\"`, `\"type\": \"ellipse\"`, `\"x\"`, `\"y\"`, `\"width\"`, `\"height\"`, `\"strokeColor\": \"#1e1e1e\"`, `\"backgroundColor\": \"#b2f2bb\"`, `\"roughness\"`, `\"opacity\"`, `\"boundElements\"` (i collegamenti alle frecce), fino a `\"locked\": false`.",
+  "fonte": "RnNSRF4s9nk#14:30 (editor di codice, JSON del file .excalidraw) + voce 14:30-14:36",
+  "frame": "frame-146.png",
+  "ancora": "\"type\": \"excalidraw\", \"version\": 2, \"source\": \"https://github.com/swiftlysingh/excalidraw-... \"elements\": [ { \"id\": \"7YVt5tEnTQ\", \"type\": \"ellipse\",",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-029",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-032",
+  "tipo": "esempio",
+  "contenuto": "Verifica visiva del flowchart aperto su excalidraw.com: dall'ellisse verde \"Wait Next Candle\" una freccia scende a \"Daily Candle Close\" (altra ellisse verde), da qui una freccia ondulata scende al box blu \"Fetch BTC/USDT Daily Candle\", che a sua volta alimenta il box \"Calculate Indicators\". Questa porzione corrisponde esattamente agli step 1 (Start), 6 (Monitor) e 7 (Exit) descritti a testo da Claude.",
+  "fonte": "RnNSRF4s9nk#14:42-15:06 (excalidraw.com, canvas scorso verso il basso) + voce 14:42-15:12",
+  "frame": "frame-148.png, frame-151.png",
+  "ancora": "verde, andiamo a vedere che cosa succede. Perfetto, mi dice questa è la nostra partenza, quindi aspettiamo una candela.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-030",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-033",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-033",
+  "tipo": "esempio",
+  "contenuto": "Prima apparizione leggibile per intero dei cinque box degli indicatori tecnici nel flowchart visivo, tutti raggiunti da frecce partite dal box \"Calculate Indicators\" e confluenti in un unico box \"Collect Votes\": \"EMA 50/200 Crossover\", \"RSI 14\", \"OBV Slope 14d\", \"Bollinger Band 20,2\", \"ADX 14\". I nomi coincidono esattamente con quelli del documento di strategia e del riepilogo testuale di Claude, confermando che diagramma visivo e strategia testuale descrivono lo stesso identico sistema.",
+  "fonte": "RnNSRF4s9nk#15:06 (excalidraw.com) + voce 15:06-15:18",
+  "frame": "frame-152.png",
+  "ancora": "cinque box blu pastello affiancati, tutti raggiunti da frecce curve nere partite dal box superiore — \"EMA 50/200 Crossover\", \"RSI 14\", \"OBV Slope 14d\", \"Bollinger Band 20,2\", \"ADX 14\"... tutte e cinque le frecce convergono in un unico box blu pastello più in basso, \"Collect Votes\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-023",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-034",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-034",
+  "tipo": "esempio",
+  "contenuto": "Primo nodo di decisione del flowchart (rombo giallo pastello): \"ADX above 25?\", raggiunto da una freccia dal box \"Collect Votes\". Rappresenta la soglia (threshold) di forza del trend sotto la quale il sistema non considera valido nessun segnale di acquisto o vendita.",
+  "fonte": "RnNSRF4s9nk#15:42 (excalidraw.com) + voce 15:42-15:54",
+  "frame": "frame-158.png",
+  "ancora": "E ora ci chiediamo se questo è sopra a 25, che sarà molto probabilmente il nostro eh livello di thold sopra il quale magari compriamo o sotto vendiamo.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-033",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-035",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-035",
+  "tipo": "esempio",
+  "contenuto": "Routing del flowchart dopo il filtro ADX: dal rombo \"3+ Bullish?\" un ramo \"Yes\" porta al box \"OPEN LONG\"; il ramo \"No\" porta al secondo rombo \"3+ Bearish?\", che a sua volta si dirama in \"Yes\" → box \"OPEN SHORT\" e \"No\" → box \"HOLD - Mixed Signals\". Un ramo separato \"HOLD - No Trend\" gestisce il caso in cui il filtro ADX iniziale sia negativo. Sia \"OPEN LONG\" sia \"OPEN SHORT\" proseguono verso il box \"Set Stop-Loss 1.5x ATR\".",
+  "fonte": "RnNSRF4s9nk#16:12 (excalidraw.com) + voce 16:12-16:24",
+  "frame": "frame-163.png",
+  "ancora": "Quindi bullish sì. Eh allora apri una posizione di long eh e oppure beish, quindi no. E allora magari vuol dire hold, quindi non prendere niente.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-034",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-025",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-036",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-036",
+  "tipo": "esempio",
+  "contenuto": "Chiusura visiva del ciclo del flowchart: dal rombo \"Signals Flipped?\" (ramo \"No\") si passa al rombo \"Trailing Stop Hit?\"; da qui il ramo \"Yes\" (insieme al ramo \"Yes\" di \"Signals Flipped?\") porta al box \"Close Position\", il ramo \"No\" porta a \"Update Trailing Stop\". Entrambi i box confluiscono nell'ellisse verde \"Wait Next Candle\", che con una freccia torna a \"Daily Candle Close\": il diagramma chiude così il giro completo sul proprio punto di partenza.",
+  "fonte": "RnNSRF4s9nk#16:42 (excalidraw.com) + voce 16:42-16:54",
+  "frame": "frame-168.png",
+  "ancora": "Allora, vedete quindi che questa è la fase di validazione dell'architettura e questo è quello che vogliamo fare, no? Perché noi vogliamo assicurarci che la nostra architettura sia corretta.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-035",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-037",
+    "tipo": "motiva"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-037",
+  "tipo": "principio",
+  "contenuto": "Percorrere per intero il flowchart visivo, dal primo box fino alla chiusura del ciclo, è la \"fase di validazione dell'architettura\": serve ad assicurarsi che l'architettura del sistema sia corretta prima di passare all'implementazione vera e propria.",
+  "fonte": "RnNSRF4s9nk#16:42 (excalidraw.com, giro completo del diagramma) + voce 16:42-17:00",
+  "frame": "frame-168.png",
+  "ancora": "questa è la fase di validazione dell'architettura e questo è quello che vogliamo fare, no? Perché noi vogliamo assicurarci che la nostra architettura sia corretta.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-036",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-038",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-038",
+  "tipo": "procedura",
+  "contenuto": "Una volta validata l'architettura, il presentatore chiede a Claude di sintetizzare tutto (diagramma + strategia) in un unico prompt completo, da incollare in una nuova sessione di Claude Code in modalità \"plan mode\", per assicurarsi che Claude implementi il sistema secondo un piano approvato invece di procedere alla cieca.",
+  "fonte": "RnNSRF4s9nk#17:00 (IDE Antigravity) e #17:18 (richiesta completa) + voce 17:00-17:24",
+  "frame": "frame-171.png, frame-174.png",
+  "ancora": "perfetto, sintetizzami tutto in un prompt e includi anche tutta la strategia che ti ho incollato, in modo tale che io possa andare ora in una nuova sessione di Claude Code e incollartela in plan mode ed assicurarmi che Claude poi vada ad implementare il mio sistema",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-037",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-040",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "motiva"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-039",
+  "tipo": "dato",
+  "contenuto": "Menu \"Slash Commands\" apparso in una nuova sessione vuota di Claude Code, lista completa visibile: /pre-mortem (selezionato), /prompt-contracts, /loop, /reverse-prompting, /step-back-prompting, /fewer-permission-prompts, /skool-video-upload, /audit, /deploy-check, /contract.",
+  "fonte": "RnNSRF4s9nk#17:24 (IDE Antigravity, nuova sessione Claude Code) + voce 17:24-17:36",
+  "frame": "frame-175.png",
+  "ancora": "`/pre-mortem` (selezionato) `/prompt-contracts` `/loop` `/reverse-prompting` `/step-back-prompting` `/fewer-permission-prompts` `/skool-video-upload` `/audit` `/deploy-check` `/contract`",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-020",
+    "tipo": "parte-di",
+    "perche": "/prompt-contracts, già usato in scena 31, compare qui nel menu completo dei comandi disponibili nella toolkit del presentatore."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-040",
+  "tipo": "dato",
+  "contenuto": "Sezione \"## Implementation Order\" del prompt sintetizzato da Claude per il plan mode, lista numerata completa: \"1. config.py + data.py — connect to Binance Testnet, fetch historical daily candles, verify data. 2. indicators.py — implement all 5 indicators with pandas-ta, write unit tests. 3. strategy.py — voting logic + ADX filter, write unit tests for all edge cases. 4. risk.py — position sizing formula, stop-loss, trailing stop logic, write unit tests. 5. backtest.py + report.py — run on 1+ year of historical BTC data, print performance metrics. 6. executor.py — ccxt order placement on testnet (market orders, stop-loss orders). 7. bot.py — main live loop (poll daily, run strategy, execute if signal, monitor position). 8. monitor.py — logging + optional notifications. 9. End-to-end test — run on testnet for several days, verify orders execute correctly.\"",
+  "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity, prompt selezionato in blu) + voce 17:36-17:42",
+  "frame": "frame-177.png",
+  "ancora": "## Implementation Order\" seguito dalla lista numerata 1-9 (tutta selezionata in blu): 1. **config.py + data.py** — connect to Binance Testnet, fetch historical daily candles, verify data [...] 9. **End-to-end test** — run on testnet for several days, verify orders execute correctly",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-028",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-041",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-053",
+    "tipo": "precede",
+    "perche": "Questo elenco di moduli è ciò che si materializza poi nella struttura di cartelle/file del progetto scaffolded."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-041",
+  "tipo": "regola",
+  "contenuto": "Sezione \"## Constraints\" del prompt per il plan mode, elenco completo e non negoziabile: \"Python 3.9+ compatible (use `from __future__ import annotations` if needed). All API keys from .env, never hardcoded. Testnet only — never connect to production Binance without explicit confirmation. Each module must be independently testable. Backtest must run before any live trading.\"",
+  "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity, \"## Constraints\" evidenziato in blu) + voce 17:36",
+  "frame": "frame-177.png",
+  "ancora": "## Constraints\" (evidenziato) con elenco puntato (anch'esso in selezione blu): - Python 3.9+ compatible (use `from __future__ import annotations` if needed) - All API keys from .env, never hardcoded - Testnet only — never connect to production Binance without explicit confirmation - Each module must be independently testable - Backtest must run before any live trading",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-040",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-047",
+    "tipo": "precede",
+    "perche": "Il vincolo 'Testnet only' e 'API keys from .env, never hardcoded' è quello che poi guida in pratica la creazione della chiave API con solo permesso di lettura."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-042",
+  "tipo": "definizione",
+  "contenuto": "Istruzione d'uso allegata al prompt sintetizzato: \"Copia-incolla tutto in una nuova sessione di Claude Code in plan mode. Claude ti proporrà il piano di implementazione step-by-step, tu approvi e lui costruisce.\" Definisce il funzionamento della modalità \"plan mode\": prima la proposta di piano, poi l'approvazione umana, infine la costruzione.",
+  "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity) + voce 17:36",
+  "frame": "frame-177.png",
+  "ancora": "Copia-incolla tutto in una nuova sessione di Claude Code in plan mode. Claude ti proporrà il piano di implementazione step-by-step, tu approvi e lui costruisce.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-038",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-043",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-043",
+  "tipo": "dato",
+  "contenuto": "Prima dell'invio, il presentatore aggiunge manualmente in coda al prompt incollato nella nuova sessione Claude Code una sezione con segnaposto vuoti: \"Credenziali Binance: - API: - Link per vedere candele:\", con l'etichetta \"Plan mode\" attiva accanto al pulsante di invio, a conferma che l'invio avverrà in modalità pianificazione e non in esecuzione diretta.",
+  "fonte": "RnNSRF4s9nk#18:12 (IDE Antigravity) e #19:00 (segnaposto ancora vuoti, \"Plan mode\" attivo) + voce 18:12, 19:00-19:06",
+  "frame": "frame-183.png, frame-191.png",
+  "ancora": "Credenziali Binance:\" (riga vuota) \"- API:\" \"- Link per vedere candele:\" Le due voci \"API:\" e \"Link per vedere candele:\" sono ancora vuote, in attesa di essere compilate. [...] etichetta \"Plan mode\" con icona, pulsante di invio blu",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-042",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-044",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-044",
+  "tipo": "definizione",
+  "contenuto": "Apertura del capitolo \"Connessione API a Binance\": il presentatore lascia l'IDE e passa al sito reale di Binance per mostrare da dove parte il processo di autenticazione necessario a collegare il bot.",
+  "fonte": "RnNSRF4s9nk#18:12 (browser, dashboard Binance) + voce 18:12-18:18",
+  "frame": "frame-183.png",
+  "ancora": "Quindi come facciamo ad autenticarci nella piattaforma Binance e quindi da qui poi vedremo come come si fa e dove andiamo a prendere i dati delle candele.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-043",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-045",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-045",
+  "tipo": "procedura",
+  "contenuto": "Percorso seguito per creare una chiave API su Binance: dalla dashboard (`binance.com/en/my/dashboard`) si apre il menu laterale \"Account\", si seleziona \"API Management\" (`binance.com/en/my/settings/api-management`), poi si clicca il pulsante arancione \"Create API\" e si assegna un'etichetta alla chiave (nel video: \"YouTube bot\") nella finestra modale \"Create API\".",
+  "fonte": "RnNSRF4s9nk#18:12-18:48 (browser, dashboard e api-management Binance) + voce 18:12-18:48",
+  "frame": "frame-183.png, frame-186.png, frame-188.png",
+  "ancora": "API management sotto la sezione account e qui abbiamo create API system generated e quindi label API YouTube bot.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-008",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-046",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-046",
+  "tipo": "avvertimento",
+  "contenuto": "Binance blocca la creazione della chiave API finché l'utente non completa 2 verifiche di sicurezza su 2 (\"Security Verification Requirements\", contatore \"0 / 2\"): passkey (biometria o chiave di sicurezza) o verifica facciale.",
+  "fonte": "RnNSRF4s9nk#18:48 (browser, modale Binance) + voce 18:48-18:54",
+  "frame": "frame-189.png",
+  "ancora": "Security verification requirements. You need to complete. Ok, va bene. Ora mi autenticherò.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-045",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-047",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-047",
+  "tipo": "regola",
+  "contenuto": "La chiave API \"YouTube BOT\" creata su Binance ha solo il permesso \"Enable Reading\" attivo; tutti gli altri permessi (Permits Universal Transfer, Enable Spot & Margin Trading, Enable Withdrawals, Enable Margin Loan/Repay & Transfer, Enable Prediction Trading, Enable Symbol Whitelist) restano disattivati. L'accesso IP è impostato su \"Unrestricted (Less Secure)\". La API Key e la Secret Key sono presenti e leggibili nel frame originale ma vengono riportate in questo documento solo in forma mascherata, come nella fonte: API Key \"F4q6…tqJi\", Secret Key \"bfwU…M9cD\".",
+  "fonte": "RnNSRF4s9nk#18:54 (browser, api-management, card chiave creata) + voce 18:54-19:00",
+  "frame": "frame-190.png",
+  "ancora": "API restrictions\" con caselle: ☑ \"Enable Reading\" (unica spuntata), ☐ \"Permits Universal Transfer\", ☐ \"Enable Spot & Margin Trading\" [...] la API Key inizia con \"F4q6…\" e termina con \"…tqJi\"; la Secret Key inizia con \"bfwU…\" e termina con \"…M9cD\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-041",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-048",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-048",
+  "tipo": "avvertimento",
+  "contenuto": "Avviso di sicurezza mostrato da Binance sulla chiave appena creata, in rosso: \"This API Key allows access from any IP address. This is not recommended.\" e \"To protect the safety of your funds, if the IP is unrestricted and any permission other than Reading is enabled, this API key will be deleted.\" — cioè Binance stessa cancellerebbe automaticamente la chiave se, con IP non ristretto, venisse attivato un permesso diverso dalla sola lettura.",
+  "fonte": "RnNSRF4s9nk#18:54 (browser, api-management) e #19:06 (stesso avviso, versione completa) + voce 18:54-19:06",
+  "frame": "frame-190.png, frame-192.png",
+  "ancora": "This API Key allows access from any IP address. This is not recommended.\" [...] \"To protect the safety of your funds, if the IP is unrestricted and any permission other than Reading is enabled, this API key will be deleted.\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-047",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-049",
+  "tipo": "dato",
+  "contenuto": "Per trovare il link esatto della documentazione delle candele Binance, il presentatore consiglia due strade: chiedere direttamente a Claude di esplorare, oppure visitare il sito ufficiale della documentazione, `developers.binance.com/docs/binance-spot-api-docs`. Nel video ha trovato il link chiedendolo direttamente a Claude.",
+  "fonte": "RnNSRF4s9nk#19:18 (browser, developers.binance.com) e #19:30 (spiegazione) + voce 19:18-19:36",
+  "frame": "frame-194.png, frame-196.png",
+  "ancora": "candele. Allora, per fare questo potete o chiedere a Cloud di andare e ed esplorare l'universo, oppure potete andare in questo link qui ehm che è la parte di developerinance.com [...] Come l'ho trovata? Ovviamente l'ho trovata utilizzando Cloud e chiedendogli...",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-043",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-050",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-050",
+  "tipo": "esempio",
+  "contenuto": "Blocco finale \"Credenziali Binance:\" completato e inviato dentro il prompt di plan mode: \"- API: [chiave mascherata: inizia con \"F4q6…\" e termina con \"…rotqJi\"] - Secret: [chiave mascherata: inizia con \"bfwU…\" e termina con \"…M9cD\"] - Link per vedere candele: https://developers.binance.com/docs/binance-spot-api-docs\". Il messaggio completo si chiude con il promemoria esplicito di sicurezza: \"Per favore ricordati che, per questo bot, vorrei farlo funzionare utilizzando soldi falsi e quindi in sandbox, ok?\" Le due chiavi Binance non vengono mai riportate per intero in questo documento, solo mascherate come nella fonte.",
+  "fonte": "RnNSRF4s9nk#19:30 (credenziali complete nel box) e #20:00 (prompt inviato per intero) + voce 19:30, 20:00-20:12",
+  "frame": "frame-196.png, frame-201.png",
+  "ancora": "Per favore ricordati che, per questo bot, vorrei farlo funzionare utilizzando soldi falsi e quindi in sandbox, ok?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-040",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-041",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-049",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-051",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-051",
+  "tipo": "dato",
+  "contenuto": "Il Finder di macOS mostra la cartella \"btc-trading-bot\" appena creata sul disco (\"Today at 12:53\"), accanto ad altri progetti del presentatore (Social Media Manager, Community Intelligence, Agency, ecc.): è la prova tangibile che l'implementazione richiesta a Claude Code in plan mode è stata avviata.",
+  "fonte": "RnNSRF4s9nk#20:12 (Finder macOS) + voce 20:12-20:30",
+  "frame": "frame-203.png",
+  "ancora": "\"btc-trading-bot\" (riga selezionata, evidenziata in blu) — Today at 12:53 — Folder [...] la cosa che possiamo fare è ora premere plan mode e aspettare che tutto questo venga implementato.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-050",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-052",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-052",
+  "tipo": "dato",
+  "contenuto": "Struttura del progetto Python generata da Claude Code per il bot, visibile nell'Explorer sotto la root \"Social Media Manager\": cartelle `__pycache__`, `.claude`, `.pytest_cache`, `.tmp`, `.venv`, `data`, `src`, `tests`, e i file `.env`, `.gitignore`, `CLAUDE.md` — nessuna di queste (tranne le prime tre) era presente prima dell'implementazione.",
+  "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, nuovo albero file, timestamp come da fonte) + voce 20:12-20:30",
+  "frame": "frame-204.png",
+  "ancora": "sotto la root \"Social Media Manager\" compaiono ora le cartelle `__pycache__`, `.claude`, `.pytest_cache`, `.tmp`, `.venv`, `data`, `src`, `tests` e i file `.env`, `.gitignore`, `CLAUDE.md` — la struttura di progetto Python generata per il bot (le cartelle `data`/`src`/`tests` e il file `.env` non erano presenti nelle scene 61-65)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-040",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-013",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-055",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-053",
+  "tipo": "esempio",
+  "contenuto": "Secondo utilizzo dello slash command `/prompt-contracts`, questa volta per chiarire cosa significhi mettere il bot \"live\": \"/prompt-contracts please put this bot live. What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\". Il presentatore aggiunge in un riquadro: \"always fake money ofc\".",
+  "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, timestamp come riportato nella fonte) + voce 20:12-20:30",
+  "frame": "frame-204.png",
+  "ancora": "/prompt-contracts   please put this bot live.\" [...] \"What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-052",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-054",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-020",
+    "tipo": "esempio-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-054",
+  "tipo": "dato",
+  "contenuto": "Prima di eseguire, Claude Code propone un \"Contract\" formale tramite `/prompt-contracts`: \"Got it -- fake money only, always. Here's the contract:\" seguito dal titolo \"### Contract\", poi \"GOAL: Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\" e \"CONSTRAINTS: Binance Testnet ONLY (sandbox mode, testnet.binance.vision)\" (elenco vincoli parzialmente tagliato dal frame, prosegue con righe troncate \"Run as pe...\" e \"Must veri...\", seguite da una sezione \"FORMAT\").",
+  "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, timestamp come riportato nella fonte) + voce 20:12-20:30",
+  "frame": "frame-204.png",
+  "ancora": "Got it -- fake money only, always. Here's the contract:\" linea separatrice, poi titolo grande \"### Contract\" [...] \"GOAL:** Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-053",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-041",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-058",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-055",
+  "tipo": "dato",
+  "contenuto": "I percorsi file reali mostrati a schermo rivelano il nome utente del computer del presentatore, \"giovannibeggiato\" (es. `/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager/`), e Claude nel Contract generato lo chiama esplicitamente col diminutivo \"Gio\" (\"Gio can see balances, orders, and trade history at testnet.binance.vision\"), coerente col nome di scena \"Jo\" usato nel resto del video.",
+  "fonte": "RnNSRF4s9nk#13:30 (path visibile nei log Bash) e #18:42 (Contract, nome \"Gio\", timestamp come riportato nella fonte) + voce varie",
+  "frame": "frame-136.png, frame-204.png",
+  "ancora": "/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager/\" ... \"Gio can see balances, orders, and trade history at testnet.binance.vision.\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-054",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-056",
+  "tipo": "definizione",
+  "contenuto": "Il presentatore lascia momentaneamente l'IDE per aggiornare la lavagna Excalidraw di riepilogo tappe, scrivendo dal vivo la voce \"3. Implementazione\" come terzo titolo di sezione (dopo \"1. Comprensione del problema\" e \"2. Design del sistema\"), mentre la voce narra esplicitamente di essere arrivati a quella fase del percorso, prima dell'imminente \"go live\".",
+  "fonte": "RnNSRF4s9nk#20:30 (excalidraw.com) + voce 20:30-20:42",
+  "frame": "frame-206.png",
+  "ancora": "il bot perché fino ad ora che cosa abbiamo fatto? Abbiamo semplicemente creato la nostra infrastruttura e quindi questo vuol dire che siamo alla parte di implementazione. Però una volta finita l'implementazione e quindi il nostro bot che sia stato creato, abbiamo la parte di go live.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-004",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-017",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-057",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-057",
+  "tipo": "esempio",
+  "contenuto": "Prima di eseguire la richiesta \"put this bot live\", Claude Code pone domande di chiarimento invece di agire alla cieca: \"quick questions: 1. Is the bot live? 2. Is it connected and already taking things live, or do I need to deploy it?\" e avvisa: \"Voting will get whipsawed in sideways markets. This is the reality check before going live.\" chiedendo infine: \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\"",
+  "fonte": "RnNSRF4s9nk#20:42 (IDE Antigravity, scroll verso l'alto della chat) + voce 20:42-21:12",
+  "frame": "frame-208.png",
+  "ancora": "quick questions:\" \"1. Is the bot live?\" \"2. Is it connected and already taking things live, or do I need to deploy it?\" [...] \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-054",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "applica",
+    "perche": "Le domande di chiarimento prima di agire seguono la stessa logica del plan mode: proporre/chiarire prima di costruire."
+   },
+   {
+    "verso": "KA-058",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-058",
+  "tipo": "dato",
+  "contenuto": "Al primo tentativo di avvio, la connessione al testnet funziona ma le chiavi API vengono rifiutate: \"Good news: the connection to testnet.binance.vision is working (correct URL). Bad news: the API keys are rejected -- 'Invalid API-key, IP, or permissions for action.'\" Claude spiega: \"This usually means the testnet keys expired or were regenerated. You need to get fresh ones\", precisando anche che \"The public market data works fine (no auth needed) -- that's why backtesting worked. But placing orders requires valid testnet keys.\"",
+  "fonte": "RnNSRF4s9nk#21:12 (IDE Antigravity) e #21:30 (testo completo) + voce 21:00-21:12",
+  "frame": "frame-213.png, frame-216.png",
+  "ancora": "Good news: the connection to testnet.binance.vision is working (correct URL). Bad news: the API keys are rejected -- \"Invalid API-key, IP, or permissions for action.\"\" [...] \"This usually means the testnet keys expired or were regenerated. You need to get fresh ones:\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-057",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-047",
+    "tipo": "precede",
+    "perche": "La chiave Spot reale creata sul sito binance.com (KA-047) risulta insufficiente per operare ordini sul Testnet: qui si scopre che serve una chiave distinta, generata direttamente su testnet.binance.vision."
+   },
+   {
+    "verso": "KA-059",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-059",
+  "tipo": "dato",
+  "contenuto": "Lista numerata completa fornita da Claude per procurarsi chiavi testnet aggiornate: \"1. Go to https://testnet.binance.vision. 2. Log in with GitHub. 3. Click 'Generate HMAC_SHA256 Key'. 4. Copy the new API Key and Secret Key. 5. Give them to me and I'll update the .env and start the bot.\" Claude chiede infine: \"Can you grab fresh keys from testnet.binance.vision?\"",
+  "fonte": "RnNSRF4s9nk#21:30 (IDE Antigravity, lista completa) e #21:54 (lista confermata per intero) + voce 21:12-21:36",
+  "frame": "frame-216.png, frame-220.png",
+  "ancora": "1. Go to **https://testnet.binance.vision** (link blu sottolineato) 2. Log in with GitHub 3. Click **\"Generate HMAC_SHA256 Key\"** [...] 4. Copy the new **API Key** and **Secret Key** [...] 5. Give them to me and I'll update the .env and start the bot",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-058",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-060",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-061",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-060",
+  "tipo": "principio",
+  "contenuto": "Alla richiesta di Claude di recuperare da solo le chiavi (\"Can you grab fresh keys from testnet.binance.vision?\"), il presentatore prima chiede all'assistente \"you cando all alone right?\" (refuso per \"you can do it all alone, right?\"), lasciando intravedere un tentativo di automazione via browser (menzionato uno strumento \"Chrome-devt...\" troncato), ma poi decide di recuperare lui stesso le chiavi e mostrarlo al pubblico, invece di lasciare che sia l'AI a operare il browser in autonomia.",
+  "fonte": "RnNSRF4s9nk#21:30 (IDE Antigravity, \"you cando all alone right?\") e #22:06 (decisione confermata a voce) + voce 22:00-22:06",
+  "frame": "frame-216.png, frame-222.png",
+  "ancora": "poi ho deciso di farlo con voi. Perfetto, quindi fatemi pulire. E ora noi una volta fatto premeremo bypass permission e continueremo l'implementazione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-059",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-062",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-063",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-061",
+  "tipo": "dato",
+  "contenuto": "Sul sito testnet.binance.vision, alla pagina \"Generate HMAC-SHA-256 key\", il presentatore digita il nome descrittivo \"YouTube bot\" e lascia spuntati i tre permessi proposti di default: \"TRADE — Can place/cancel orders\", \"USER_DATA — Can view account information and query trades/orders of the user\", \"USER_STREAM — Can subscribe to the User Data Stream\"; restano non selezionati \"FIX_API\" e \"FIX_API_READ_ONLY\" (riservati a chiavi Ed25519).",
+  "fonte": "RnNSRF4s9nk#21:36 (browser, testnet.binance.vision/key/generate) + voce 21:36-21:54",
+  "frame": "frame-217.png",
+  "ancora": "☑ **TRADE** — \"Can place/cancel orders\" (spuntata, blu) - ☑ **USER_DATA** — \"Can view account information and query trades/orders of the user\" (spuntata, blu) - ☑ **USER_STREAM** — \"Can subscribe to the User Data Stream\" (spuntata, blu)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-059",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-062",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-062",
+  "tipo": "regola",
+  "contenuto": "Il sito conferma \"HMAC-SHA-256 Key registered\" con l'avviso \"Save these values right now. They won't be shown again!\" e mostra API Key e Secret Key generate, entrambe perfettamente leggibili a schermo e non oscurate dalla piattaforma. Per policy di sicurezza, pur trattandosi di chiavi Testnet (denaro finto, nessun valore reale), non vengono trascritte carattere per carattere in questo documento: restano trattate come credenziali mascherate.",
+  "fonte": "RnNSRF4s9nk#22:00 (browser, testnet.binance.vision/key/generate) + voce 22:00-22:06",
+  "frame": "frame-221.png",
+  "ancora": "HMAC-SHA-256 Key registered\". Sotto, avviso in grassetto: \"Save these values right now. They won't be shown again!\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-061",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-063",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-063",
+  "tipo": "procedura",
+  "contenuto": "Il presentatore incolla lui stesso, nel box di input di Claude Code, la API Key e la Secret Key appena generate su testnet.binance.vision (prima riga \"API: API Key: [chiave]\", seconda riga che inizia con \"Secret\"), poi preme il pulsante rosso \"Bypass permissions\" per lasciare che Claude prosegua l'implementazione senza altre conferme manuali.",
+  "fonte": "RnNSRF4s9nk#22:06 (IDE Antigravity) + voce 22:06-22:24",
+  "frame": "frame-222.png",
+  "ancora": "E ora noi una volta fatto premeremo bypass permission e continueremo l'implementazione. E questo è quindi il nostro bot che ha fatto adesso, come vedete, nell'arco di qualche minuto,",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-060",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-064",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-064",
+  "tipo": "dato",
+  "contenuto": "Header della dashboard locale del bot su localhost:8501: card scura con titolo \"₿ BTC Trading Bot\", sottotitolo verde \"BINANCE SPOT TESTNET\", indicatore verde \"LIVE\". Sotto, quattro card metriche: \"USDT BALANCE\" → \"$10,000.00\"; \"BTC HOLDINGS\" → \"1.0000 BTC\"; \"BTC/USDT\" → \"$77,440.79\"; \"TOTAL PORTFOLIO\" → \"$87,440.79\" (coerente: $10.000 USDT + 1 BTC a $77.440,79 = $87.440,79).",
+  "fonte": "RnNSRF4s9nk#22:36 (browser, localhost:8501) + voce 22:24-22:36",
+  "frame": "frame-227.png",
+  "ancora": "**\"USDT BALANCE\"** → **\"$10,000.00\"** (testo verde) - **\"BTC HOLDINGS\"** → **\"1.0000 BTC\"** (testo arancione) - **\"BTC/USDT\"** → **\"$77,440.79\"** - **\"TOTAL PORTFOLIO\"** → **\"$87,440.79\"**",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-063",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-065",
+    "tipo": "parte-di"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-065",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Bot Status & Signals\" della dashboard: badge arancione \"Waiting for signal (ADX too low)\", pannello \"Signal\" con valore \"HOLD\", e la griglia degli indicatori tecnici live: EMA FAST 76.767,29 / EMA SLOW 84.707,42, RSI 47,04 / OBV SLOPE -53290,37, BB MID 79.058,66 / ADX 19,87, ATR 2.034,08. Il log del bot conferma: \"STATUS | capital=10000.00 | position=1.000000 | signal=HOLD | ema_fast=76767.29 | ema_slow=84707.42 | obv_slope=-53290.37 | bb_mid=79058.66 | adx=19.87 | atr=2034.08\" e \"Sleeping 46718s until next daily candle...\".",
+  "fonte": "RnNSRF4s9nk#22:24 (browser, localhost:8501) + voce 22:24-22:36",
+  "frame": "frame-225.png",
+  "ancora": "STATUS | capital=10000.00 | position=1.000000 | signal=HOLD | ema_fast=76767.29 | ema_slow=84707.42 |\" [...] \"obv_slope=-53290.37 | bb_mid=79058.66 | adx=19.87 | atr=2034.08\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-034",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-066",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-066",
+  "tipo": "dato",
+  "contenuto": "Tabella \"Trade History\" della dashboard, colonne TIME | SIDE | AMOUNT | PRICE | COST, 6 transazioni simulate: 2026-05-25 11:04:31 SELL 0.0030 $77.446,49 $232,34; 2026-05-25 11:04:30 BUY 0.0030 $77.446,50 $232,34; 2026-05-25 11:04:30 SELL 0.0020 $77.446,49 $154,89; 2026-05-25 11:04:30 BUY 0.0020 $77.446,50 $154,89; 2026-05-25 11:04:30 SELL 0.0010 $77.446,49 $77,45; 2026-05-25 11:04:29 BUY 0.0010 $77.446,50 $77,45.",
+  "fonte": "RnNSRF4s9nk#22:24 (browser, localhost:8501, sezione Trade History) + voce 22:24-22:36",
+  "frame": "frame-225.png",
+  "ancora": "| 2026-05-25 11:04:31 | SELL | 0.0030 | $77,446.49 | $232.34 | | 2026-05-25 11:04:30 | BUY | 0.0030 | $77,446.50 | $232.34 |",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-064",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-067",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-067",
+  "tipo": "principio",
+  "contenuto": "Il presentatore chiarisce che il testnet ufficiale di Binance di per sé non fornisce una dashboard visiva come quella appena mostrata (costruita su misura dal bot, in locale su localhost:8501): se invece si usasse la dashboard reale di Binance con soldi veri, si potrebbe entrare nell'interfaccia principale e vedere le proprie trade come se si stesse facendo trading in prima persona.",
+  "fonte": "RnNSRF4s9nk#22:36 (browser, testnet.binance.vision) e #22:42 (spiegazione) + voce 22:36-23:00",
+  "frame": "frame-227.png, frame-228.png",
+  "ancora": "dashboard visiva, ma se invece poi voi andrete ad utilizzare la dashboard di Binance con soldi veri, allora potrete entrare nell'interfaccia principale e vedere proprio le vostre trade, come se stesse facendo trading voi in prima persona.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-064",
+    "tipo": "contraddice",
+    "perche": "Contrappone esplicitamente la dashboard custom in locale (denaro finto) all'interfaccia reale di Binance (denaro vero), le due facce del capitolo go-live."
+   },
+   {
+    "verso": "KA-069",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-068",
+  "tipo": "dato",
+  "contenuto": "La pagina testnet.binance.vision mostra \"You currently have 1 API Key(s) registered for this user\" con una tabella: Key Type \"HMAC-SHA-256\", Description \"Youtube_Bot_2\", Permissions \"TRADE, USER_DATA, USER_STREAM\". Il nome descrittivo registrato (\"Youtube_Bot_2\", con underscore e suffisso \"_2\") differisce leggermente da quello pronunciato a voce (\"YouTube bot\") nella scena di generazione, probabile normalizzazione automatica del campo o numerazione di un tentativo precedente.",
+  "fonte": "RnNSRF4s9nk#22:42 (browser, testnet.binance.vision) + voce 22:42",
+  "frame": "frame-228.png",
+  "ancora": "You currently have 1 API Key(s) registered for this user:\" e una tabella con colonne \"Key Type\" | \"Description\" | \"Permissions\": riga \"HMAC-SHA-256\" | \"Youtube_Bot_2\" | \"TRADE, USER_DATA, USER_STREAM\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-061",
+    "tipo": "contraddice",
+    "perche": "Il nome digitato a voce ('YouTube bot') non coincide letteralmente col nome che risulta registrato in piattaforma ('Youtube_Bot_2')."
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-069",
+  "tipo": "principio",
+  "contenuto": "Chiusura a schermo intero in webcam: il presentatore chiarisce che l'obiettivo del video non era insegnare il modo migliore di costruire un bot di trading, ma un metodo per affrontare qualsiasi problema con l'AI — la stessa tesi enunciata in apertura, qui ripresa e chiusa esplicitamente.",
+  "fonte": "RnNSRF4s9nk#23:00 (talking head) e #23:06 + voce 23:00-23:12",
+  "frame": "frame-231.png, frame-232.png",
+  "ancora": "qual è il miglior modo di costruire un bot di trading, ma quanto per capire [...] come potete affrontare qualsiasi problema con l'AI e quindi innanzitutto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-002",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-070",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-070",
+  "tipo": "principio",
+  "contenuto": "Riepilogo esplicito dei tre step del metodo generale insegnato dal video: 1) chiarire il problema che si sta affrontando, facendo \"zoom indietro\" e ottenendo una visione di alto livello; 2) definire una struttura architetturale; 3) solo a quel punto procedere con l'implementazione.",
+  "fonte": "RnNSRF4s9nk#23:12 (talking head) e #23:18 + voce 23:12-23:24",
+  "frame": "frame-233.png, frame-234.png",
+  "ancora": "chiarificando il problema che andrete a fare, zoomando indietro, avendo una visione di alto livello, poi andando [...] dentro e definendo più o meno una struttura architetturale e solo a quel punto procedere con l'implementazione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-069",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-011",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-071",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-071",
+  "tipo": "principio",
+  "contenuto": "Il presentatore avverte che i tre step del metodo (chiarire il problema, definire l'architettura, implementare) non sono sufficienti da soli se non si sa come scrivere prompt efficaci con Claude — apre così il pitch di vendita finale.",
+  "fonte": "RnNSRF4s9nk#23:24 (talking head) + voce 23:24-23:30",
+  "frame": "frame-235.png",
+  "ancora": "Questi tre step però non sono [...] sufficienti se non sapete come scrivere prompticaci con cloud e per farlo ho",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-070",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-072",
+    "tipo": "precede"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ },
+ {
+  "id": "KA-072",
+  "tipo": "dato",
+  "contenuto": "Chiusura del video con il pitch di vendita: il presentatore annuncia di aver realizzato \"un corso completo\" segnalato con una card in sovraimpressione (\"qua sopra\"), che porta lo spettatore \"da beginner a completi esperti in come scrivere prompt di successo con Cloud Code [Claude Code] e con Codex\". Nessun prezzo o URL esplicito viene pronunciato; il richiamo è puramente visivo. L'ultima parola pronunciata nel video è \"Yeah.\".",
+  "fonte": "RnNSRF4s9nk#23:30 (talking head) e #23:36 (ultimo fotogramma) + voce 23:30-23:36",
+  "frame": "frame-236.png, frame-237.png",
+  "ancora": "fatto un corso completo che vi lascio qua sopra nel quale vi porto da beginner [...] a completi esperti in come scrivere prompt di successo con Cloud Code e con Codex. Yeah.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-071",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-005",
+    "tipo": "applica"
+   }
+  ],
+  "_origine": "atoms-p1.json"
+ }
+]
