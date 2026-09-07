@@ -2,7 +2,7 @@
  {
   "id": "KA-001",
   "tipo": "principio",
-  "contenuto": "L'autore apre il corso presentandosi: gestisce una community dove insegna agli imprenditori e ai freelancer a costruire e vendere agenti AI ad altri, e attualmente gestisce una propria agenzia AI con clienti che vanno da aziende da 10.000€/mese fino a 50 milioni/anno di fatturato. Questa esperienza pratica (non solo teorica) e' la cornice di credibilita' dentro cui si colloca tutto il corso.",
+  "contenuto": "L'autore apre il corso presentandosi: gestisce una community dove insegna agli imprenditori e ai freelancer a costruire e vendere agenti AI ad altri, e attualmente gestisce una propria agenzia AI con clienti che vanno da aziende da 10.000€/mese fino a 50 milioni/anno di fatturato. Questa esperienza pratica (non solo teorica) è la cornice di credibilità dentro cui si colloca tutto il corso.",
   "fonte": "JTn5pqm9ecM#0:06-0:12 (talking head, apertura) + voce 0:06-0:18",
   "frame": "frame-0002.png, frame-0003.png",
   "ancora": "aziende da 10.000€/mese fino a 50 milioni/anno",
@@ -15,14 +15,14 @@
    {
     "verso": "KA-003",
     "tipo": "motiva",
-    "perche": "La credibilita' pratica dichiarata qui e' il motivo per cui l'indice che segue promette contenuti applicati (demo reali) e non solo teoria."
+    "perche": "La credibilità pratica dichiarata qui è il motivo per cui l'indice che segue promette contenuti applicati (demo reali) e non solo teoria."
    }
   ]
  },
  {
   "id": "KA-002",
   "tipo": "principio",
-  "contenuto": "Il corso e' pensato per essere accessibile a chiunque: non serve background tecnico ne' conoscenza pregressa delle piattaforme usate, perche' tutti i partecipanti partiranno dallo stesso livello di conoscenza di base.",
+  "contenuto": "Il corso è pensato per essere accessibile a chiunque: non serve background tecnico né conoscenza pregressa delle piattaforme usate, perché tutti i partecipanti partiranno dallo stesso livello di conoscenza di base.",
   "fonte": "JTn5pqm9ecM#0:24-0:30 + voce 0:24-0:30",
   "frame": "frame-0005.png, frame-0006.png",
   "ancora": "tutti partiremo dalla stessa conoscenza",
@@ -41,7 +41,7 @@
  {
   "id": "KA-003",
   "tipo": "struttura",
-  "contenuto": "Indice completo del corso, mostrato per intero su lavagna Excalidraw (16 punti, trascrizione integrale lettera per lettera): \"1. Cos'e' un agente AI | 2. Costruzione di un agente AI semplice su n8n | 3. Come svolgono tasks gli agenti AI | 4. Dettagli di task su Antigravity | 5. Il loop di ragionamento Agentico (OTDE) | 6. OTDE in Claude Code | 7. Importanza del prompt negli Agenti AI e quando usare Gemini.MD, Claude.MD, Agents.MD | 8. back prompt engineering: - step-back prompting - reverse prompting | 9. prompt-contracts | 10. pre-morten prompting | 11. self-improving prompts e ne capiremo il ciclo iternativo | 12. i 4 livelli di Specificita' di prompt (e la loro influenza) | 13. Agent polling | 14. Agent debates | 15. Browser swarm | 16. Full workflow Audit your workflow\". Sullo schermo restano due refusi non corretti: \"pre-morten\" invece di \"premortem\" e \"iternativo\" invece di \"iterativo\" (a voce l'autore dice correttamente \"iterativo\"). Il blocco scene 1-126 qui atomizzato copre solo i punti 1-3 dell'indice (Cos'e' un agente AI, costruzione su n8n, come svolgono i task) piu' l'inizio dei punti 4-5 (loop di ragionamento agentico e OTDE).",
+  "contenuto": "Indice completo del corso, mostrato per intero su lavagna Excalidraw (16 punti, trascrizione integrale lettera per lettera): \"1. Cos'è un agente AI | 2. Costruzione di un agente AI semplice su n8n | 3. Come svolgono tasks gli agenti AI | 4. Dettagli di task su Antigravity | 5. Il loop di ragionamento Agentico (OTDE) | 6. OTDE in Claude Code | 7. Importanza del prompt negli Agenti AI e quando usare Gemini.MD, Claude.MD, Agents.MD | 8. back prompt engineering: - step-back prompting - reverse prompting | 9. prompt-contracts | 10. pre-morten prompting | 11. self-improving prompts e ne capiremo il ciclo iternativo | 12. i 4 livelli di Specificità di prompt (e la loro influenza) | 13. Agent polling | 14. Agent debates | 15. Browser swarm | 16. Full workflow Audit your workflow\". Sullo schermo restano due refusi non corretti: \"pre-morten\" invece di \"premortem\" e \"iternativo\" invece di \"iterativo\" (a voce l'autore dice correttamente \"iterativo\"). Il blocco scene 1-126 qui atomizzato copre solo i punti 1-3 dell'indice (Cos'è un agente AI, costruzione su n8n, come svolgono i task) più l'inizio dei punti 4-5 (loop di ragionamento agentico e OTDE).",
   "fonte": "JTn5pqm9ecM#0:42 (prima comparsa) e #1:42 (indice completo leggibile) + voce 0:42-3:12",
   "frame": "frame-0008.png, frame-0018.png",
   "ancora": "2. Costruzione di un agente AI semplice su n8n",
@@ -56,7 +56,7 @@
  {
   "id": "KA-004",
   "tipo": "struttura",
-  "contenuto": "Fine dell'overview e inizio del capitolo 2 del corso (\"Cos'e' un agente AI\", architettura e componenti): l'istante coincide con l'inizio del capitolo dichiarato in ingest.json (start 222s = 3:42). Da qui l'autore smette di ripercorrere l'indice e comincia a costruire lo schema canonico di cosa sia un agente AI.",
+  "contenuto": "Fine dell'overview e inizio del capitolo 2 del corso (\"Cos'è un agente AI\", architettura e componenti): l'istante coincide con l'inizio del capitolo dichiarato in ingest.json (start 222s = 3:42). Da qui l'autore smette di ripercorrere l'indice e comincia a costruire lo schema canonico di cosa sia un agente AI.",
   "fonte": "JTn5pqm9ecM#3:42 + voce 3:42",
   "frame": "frame-0038.png",
   "ancora": "Cominciamo quindi dalle cose un po' più",
@@ -75,7 +75,7 @@
  {
   "id": "KA-005",
   "tipo": "definizione",
-  "contenuto": "Schema canonico di \"Cos'e' un Agente AI\", costruito per intero su Excalidraw: in alto un box \"Istruzioni\" (\"Un template di prompt\") con una freccia verticale che scende fino al box centrale viola \"Agente AI\". A sinistra un omino stilizzato etichettato \"Utente\", collegato all'Agente AI da due frecce orizzontali: \"Richiesta\" (utente -> agente) e \"Risposta\" (agente -> utente). A destra dell'Agente AI, una freccia doppia (<->) verso un box \"Strumenti\" che elenca quattro esempi con icona: Google (lente), WolframAlpha (stella), Python (logo), API Meteo (nuvola). Sotto l'Agente AI, due frecce scendono verso due box affiancati: \"LLM (ragionamento)\" e \"Memoria\". Questo schema a sei componenti (Istruzioni, Utente, Agente AI, Strumenti, LLM, Memoria) resta la lavagna di riferimento a cui l'autore torna ripetutamente per tutto il capitolo.",
+  "contenuto": "Schema canonico di \"Cos'è un Agente AI\", costruito per intero su Excalidraw: in alto un box \"Istruzioni\" (\"Un template di prompt\") con una freccia verticale che scende fino al box centrale viola \"Agente AI\". A sinistra un omino stilizzato etichettato \"Utente\", collegato all'Agente AI da due frecce orizzontali: \"Richiesta\" (utente -> agente) e \"Risposta\" (agente -> utente). A destra dell'Agente AI, una freccia doppia (<->) verso un box \"Strumenti\" che elenca quattro esempi con icona: Google (lente), WolframAlpha (stella), Python (logo), API Meteo (nuvola). Sotto l'Agente AI, due frecce scendono verso due box affiancati: \"LLM (ragionamento)\" e \"Memoria\". Questo schema a sei componenti (Istruzioni, Utente, Agente AI, Strumenti, LLM, Memoria) resta la lavagna di riferimento a cui l'autore torna ripetutamente per tutto il capitolo.",
   "fonte": "JTn5pqm9ecM#3:48 (stato base) + voce 3:48",
   "frame": "frame-0039.png",
   "ancora": "due frecce verso il basso che portano a due box affiancati",
@@ -106,7 +106,7 @@
  {
   "id": "KA-006",
   "tipo": "dato",
-  "contenuto": "Le tre modalita' con cui un Utente puo' interagire con un Agente AI, aggiunte come annotazione allo schema base e raggruppate da una parentesi graffa: CHAT, VOCALI (es. il microfono del telefono), FORM.",
+  "contenuto": "Le tre modalità con cui un Utente può interagire con un Agente AI, aggiunte come annotazione allo schema base e raggruppate da una parentesi graffa: CHAT, VOCALI (es. il microfono del telefono), FORM.",
   "fonte": "JTn5pqm9ecM#4:18-4:48 + voce 4:18-4:48",
   "frame": "frame-0044.png, frame-0049.png",
   "ancora": "del telefono o qualsiasi cosa vogliamo",
@@ -121,7 +121,7 @@
  {
   "id": "KA-007",
   "tipo": "principio",
-  "contenuto": "Il template di prompt dentro il box \"Istruzioni\" viene marcato con un cerchio arancione etichettato \"IP\": l'autore chiarisce che il prompt/le istruzioni saranno, a livello effettivo, l'unica vera proprieta' intellettuale del progetto — l'unica skill che non cambiera' anche quando gli agenti e le piattaforme sottostanti evolveranno.",
+  "contenuto": "Il template di prompt dentro il box \"Istruzioni\" viene marcato con un cerchio arancione etichettato \"IP\": l'autore chiarisce che il prompt/le istruzioni saranno, a livello effettivo, l'unica vera proprietà intellettuale del progetto — l'unica skill che non cambierà anche quando gli agenti e le piattaforme sottostanti evolveranno.",
   "fonte": "JTn5pqm9ecM#5:18-6:00 + voce 5:20-6:00",
   "frame": "frame-0054.png, frame-0059.png",
   "ancora": "questo sarà a livello effettivo l'unica vostra proprietà intellettuale",
@@ -134,14 +134,14 @@
    {
     "verso": "KA-008",
     "tipo": "motiva",
-    "perche": "Se il prompt e' l'unica IP che conta, allora la sua qualita' (essere ben direzionato) diventa la variabile decisiva spiegata subito dopo con la metafora dei coni."
+    "perche": "Se il prompt è l'unica IP che conta, allora la sua qualità (essere ben direzionato) diventa la variabile decisiva spiegata subito dopo con la metafora dei coni."
    }
   ]
  },
  {
   "id": "KA-008",
   "tipo": "principio",
-  "contenuto": "Metafora dei due coni per spiegare cosa significa che un agente e' \"direzionato\" dal proprio prompt verso un obiettivo (rappresentato da una bandierina): un prompt ben direzionato produce una traiettoria stretta (cono blu) che punta dritta all'obiettivo e lo colpisce; un prompt mal direzionato produce una traiettoria larga (cono rosso) che diverge, manca l'obiettivo e puo' continuare a iterare all'infinito senza mai centrarlo (visualizzato con una linea a zig-zag rossa che rimbalza dentro il cono senza mai raggiungere la bandiera).",
+  "contenuto": "Metafora dei due coni per spiegare cosa significa che un agente è \"direzionato\" dal proprio prompt verso un obiettivo (rappresentato da una bandierina): un prompt ben direzionato produce una traiettoria stretta (cono blu) che punta dritta all'obiettivo e lo colpisce; un prompt mal direzionato produce una traiettoria larga (cono rosso) che diverge, manca l'obiettivo e può continuare a iterare all'infinito senza mai centrarlo (visualizzato con una linea a zig-zag rossa che rimbalza dentro il cono senza mai raggiungere la bandiera).",
   "fonte": "JTn5pqm9ecM#6:36-7:06 + voce 6:36-7:06",
   "frame": "frame-0067.png, frame-0072.png",
   "ancora": "il mio agente è direzionato male",
@@ -160,7 +160,7 @@
  {
   "id": "KA-009",
   "tipo": "principio",
-  "contenuto": "Le due variabili con cui si misura se un prompt/agente e' efficace, cioe' se sta davvero aiutando il business o no: (1) l'investimento in dollari che rientra dall'utilizzo dell'agente (o il fatturato aumentato grazie ad esso); (2) i token consumati, che rappresentano il costo diretto e vanno minimizzati. Sulla lavagna vengono annotate come \"$, token\" seguito da \"costo ↓↓\".",
+  "contenuto": "Le due variabili con cui si misura se un prompt/agente è efficace, cioè se sta davvero aiutando il business o no: (1) l'investimento in dollari che rientra dall'utilizzo dell'agente (o il fatturato aumentato grazie ad esso); (2) i token consumati, che rappresentano il costo diretto e vanno minimizzati. Sulla lavagna vengono annotate come \"$, token\" seguito da \"costo ↓↓\".",
   "fonte": "JTn5pqm9ecM#7:06-7:48 + voce 7:06-7:48",
   "frame": "frame-0072.png, frame-0077.png",
   "ancora": "le due variabili che noi abbiamo per decidere quanto un prompt sia efficace",
@@ -179,7 +179,7 @@
  {
   "id": "KA-010",
   "tipo": "definizione",
-  "contenuto": "Il box \"LLM (ragionamento)\" dello schema viene sottolineato ed esplicitato: ogni agente viene collegato a un modello linguistico specifico — GPT, Claude, Gemini \"o chi per esso\", a seconda del caso — che gli fornisce la capacita' di ragionamento. (Nota: la trascrizione automatica del parlato rende i nomi dei modelli in modo distorto, come \"CVT\" per GPT e \"Clod\" per Claude; il senso resta comunque chiaro dal contesto.)",
+  "contenuto": "Il box \"LLM (ragionamento)\" dello schema viene sottolineato ed esplicitato: ogni agente viene collegato a un modello linguistico specifico — GPT, Claude, Gemini \"o chi per esso\", a seconda del caso — che gli fornisce la capacità di ragionamento. (Nota: la trascrizione automatica del parlato rende i nomi dei modelli in modo distorto, come \"CVT\" per GPT e \"Clod\" per Claude; il senso resta comunque chiaro dal contesto.)",
   "fonte": "JTn5pqm9ecM#8:18 + voce 8:18",
   "frame": "frame-0084.png",
   "ancora": "andremo a collegare un LM, quindi c'è CVT, Clod, Gemini",
@@ -213,7 +213,7 @@
  {
   "id": "KA-012",
   "tipo": "principio",
-  "contenuto": "Ogni chiamata a un servizio esterno via API (sia per il ragionamento LLM, sia per l'uso di un tool) ha un costo economico: piu' un servizio terzo viene chiamato, piu' aumenta la spesa in token/denaro. Sulla lavagna questo viene annotato con \"API\" seguito dal simbolo \"$\" accanto al box Strumenti.",
+  "contenuto": "Ogni chiamata a un servizio esterno via API (sia per il ragionamento LLM, sia per l'uso di un tool) ha un costo economico: più un servizio terzo viene chiamato, più aumenta la spesa in token/denaro. Sulla lavagna questo viene annotato con \"API\" seguito dal simbolo \"$\" accanto al box Strumenti.",
   "fonte": "JTn5pqm9ecM#9:48-10:18 + voce 10:18",
   "frame": "frame-0099.png, frame-0104.png",
   "ancora": "più chiamiamo un servizio terzo, quindi più volte lo utilizziamo, peggio è per noi perché pagheremo molto di più",
@@ -233,7 +233,7 @@
  {
   "id": "KA-013",
   "tipo": "struttura",
-  "contenuto": "Completamento finale dello schema \"Cos'e' un Agente AI\": viene aggiunta una seconda freccia arancione curva che parte dal box \"Memoria\" e sale dentro l'\"Agente AI\" (simmetrica a quella gia' presente da \"LLM\"), a rappresentare che l'agente deve avere una memoria collegata per potersi ricordare le cose e svolgere determinati compiti. Lo schema risulta cosi' completo con entrambe le frecce (LLM e Memoria) entranti nell'agente.",
+  "contenuto": "Completamento finale dello schema \"Cos'è un Agente AI\": viene aggiunta una seconda freccia arancione curva che parte dal box \"Memoria\" e sale dentro l'\"Agente AI\" (simmetrica a quella già presente da \"LLM\"), a rappresentare che l'agente deve avere una memoria collegata per potersi ricordare le cose e svolgere determinati compiti. Lo schema risulta così completo con entrambe le frecce (LLM e Memoria) entranti nell'agente.",
   "fonte": "JTn5pqm9ecM#10:48 + voce 10:48",
   "frame": "frame-0109.png",
   "ancora": "noi dobbiamo inserire una memoria all'interno di questo agente per permettergli di fare determinate cose",
@@ -252,7 +252,7 @@
  {
   "id": "KA-014",
   "tipo": "struttura",
-  "contenuto": "Passaggio dalla teoria (Excalidraw) alla pratica: apertura della piattaforma n8n cloud (account \"giovannib\", coerente con l'autore Giovanni Beggiato) su un workflow vuoto, per replicare dal vivo lo schema \"Cos'e' un Agente AI\" appena disegnato. L'autore precisa che non e' un corso su n8n in se': lo strumento serve solo a mostrare il parallelismo pratico con la teoria. (La trascrizione automatica del parlato rende \"n8n\" come \"NA10\"/\"NA dieci\".)",
+  "contenuto": "Passaggio dalla teoria (Excalidraw) alla pratica: apertura della piattaforma n8n cloud (account \"giovannib\", coerente con l'autore Giovanni Beggiato) su un workflow vuoto, per replicare dal vivo lo schema \"Cos'è un Agente AI\" appena disegnato. L'autore precisa che non è un corso su n8n in sé: lo strumento serve solo a mostrare il parallelismo pratico con la teoria. (La trascrizione automatica del parlato rende \"n8n\" come \"NA10\"/\"NA dieci\".)",
   "fonte": "JTn5pqm9ecM#11:00-11:18 + voce 11:00, 11:18-11:24",
   "frame": "frame-0111.png, frame-0113.png",
   "ancora": "Una volta discusso questo, quindi, andiamo dentro NA10 e vediamo nella pratica",
@@ -290,7 +290,7 @@
  {
   "id": "KA-016",
   "tipo": "procedura",
-  "contenuto": "Secondo passo: collegare il connettore \"Chat Model*\" (obbligatorio) del nodo AI Agent — corrisponde al box \"LLM\" dello schema. Viene scelto \"OpenAI Chat Model\" tra l'elenco dei Language Model disponibili (Google Vertex, Groq, Mistral, MiniMax, Moonshot Kimi, Ollama, OpenRouter, Vercel AI Gateway, xAI Grok, OpenAI...). Nel pannello di configurazione, la credenziale usata non e' una API key OpenAI propria ma \"n8n Connect\" (crediti gratuiti forniti da n8n, badge \"$3.98 remaining\" visibile in quel momento).",
+  "contenuto": "Secondo passo: collegare il connettore \"Chat Model*\" (obbligatorio) del nodo AI Agent — corrisponde al box \"LLM\" dello schema. Viene scelto \"OpenAI Chat Model\" tra l'elenco dei Language Model disponibili (Google Vertex, Groq, Mistral, MiniMax, Moonshot Kimi, Ollama, OpenRouter, Vercel AI Gateway, xAI Grok, OpenAI...). Nel pannello di configurazione, la credenziale usata non è una API key OpenAI propria ma \"n8n Connect\" (crediti gratuiti forniti da n8n, badge \"$3.98 remaining\" visibile in quel momento).",
   "fonte": "JTn5pqm9ecM#11:42-11:54 + voce 11:48",
   "frame": "frame-0118.png, frame-0119.png, frame-0120.png",
   "ancora": "gli dirò le mie credenziali che ho già connesso ovviamente al mio ehm al mio NA10",
@@ -416,7 +416,7 @@
  {
   "id": "KA-022",
   "tipo": "dato",
-  "contenuto": "Dettaglio dell'albero di esecuzione (Logs) della prima run: il nodo AI Agent chiama in sequenza Simple Memory -> OpenAI Chat Model -> Send a message in Gmail -> Simple Memory -> OpenAI Chat Model — cioe' il modello e la memoria vengono richiamati due volte, prima e dopo la chiamata al tool Gmail. Esecuzione completa: \"Success in 10.263s\"; il nodo AI Agent da solo: \"Success in 2.689s · ~348 Tokens\".",
+  "contenuto": "Dettaglio dell'albero di esecuzione (Logs) della prima run: il nodo AI Agent chiama in sequenza Simple Memory -> OpenAI Chat Model -> Send a message in Gmail -> Simple Memory -> OpenAI Chat Model — cioè il modello e la memoria vengono richiamati due volte, prima e dopo la chiamata al tool Gmail. Esecuzione completa: \"Success in 10.263s\"; il nodo AI Agent da solo: \"Success in 2.689s · ~348 Tokens\".",
   "fonte": "JTn5pqm9ecM#14:30 + voce 14:30-15:00",
   "frame": "frame-0146.png",
   "ancora": "il modello e la memoria vengono richiamati due volte: prima e dopo la chiamata al tool Gmail",
@@ -492,7 +492,7 @@
  {
   "id": "KA-026",
   "tipo": "principio",
-  "contenuto": "L'agente decide autonomamente, in base al proprio ragionamento sull'obiettivo, se invocare o no un tool: nella seconda esecuzione (una domanda sulla memoria, non sull'invio di email) il tool Gmail non viene mai chiamato, e il workflow ha comunque successo. L'autore lo sottolinea esplicitamente come dimostrazione della \"potenza\" dell'agente: l'uso di uno strumento non e' automatico ma condizionato.",
+  "contenuto": "L'agente decide autonomamente, in base al proprio ragionamento sull'obiettivo, se invocare o no un tool: nella seconda esecuzione (una domanda sulla memoria, non sull'invio di email) il tool Gmail non viene mai chiamato, e il workflow ha comunque successo. L'autore lo sottolinea esplicitamente come dimostrazione della \"potenza\" dell'agente: l'uso di uno strumento non è automatico ma condizionato.",
   "fonte": "JTn5pqm9ecM#16:54-18:06 + voce 18:06",
   "frame": "frame-0170.png, frame-0182.png",
   "ancora": "questo strumento non è stato mai chiamato, quindi vedete la potenza",
@@ -505,7 +505,7 @@
    {
     "verso": "KA-034",
     "tipo": "precede",
-    "perche": "Questo stesso principio (l'agente sceglie da solo se chiamare il tool) e' quello che il diagramma teorico del capitolo successivo formalizza nel rombo 'Obiettivo raggiunto?'."
+    "perche": "Questo stesso principio (l'agente sceglie da solo se chiamare il tool) è quello che il diagramma teorico del capitolo successivo formalizza nel rombo 'Obiettivo raggiunto?'."
    }
   ]
  },
@@ -527,7 +527,7 @@
  {
   "id": "KA-028",
   "tipo": "avvertimento",
-  "contenuto": "n8n avvisa esplicitamente, nel pannello del nodo Simple Memory, che questo tipo di memoria e' limitato: \"This node stores memory locally in the n8n instance. It is not compatible with Queue Mode or Multi-Main setups, as memory will not be shared across workers. For production use cases such as scaling, consider using an external memory store such as Redis, Postgres, or another persistent memory node.\"",
+  "contenuto": "n8n avvisa esplicitamente, nel pannello del nodo Simple Memory, che questo tipo di memoria è limitato: \"This node stores memory locally in the n8n instance. It is not compatible with Queue Mode or Multi-Main setups, as memory will not be shared across workers. For production use cases such as scaling, consider using an external memory store such as Redis, Postgres, or another persistent memory node.\"",
   "fonte": "JTn5pqm9ecM#17:24 + voce 17:24 (box informativo a schermo)",
   "frame": "frame-0175.png",
   "ancora": "This node stores memory locally in the n8n instance. It is not compatible with Queue Mode or Multi-Main setups",
@@ -542,7 +542,7 @@
  {
   "id": "KA-029",
   "tipo": "avvertimento",
-  "contenuto": "Quando in un'esecuzione l'agente non usa alcun tool, n8n mostra un warning esplicito sul nodo AI Agent (icona triangolo arancione): \"None of your tools were used in this run. Try giving your tools clearer names and descriptions to help the AI\" — un suggerimento pratico: dare ai tool nomi e descrizioni piu' chiare aiuta l'AI a capire quando usarli.",
+  "contenuto": "Quando in un'esecuzione l'agente non usa alcun tool, n8n mostra un warning esplicito sul nodo AI Agent (icona triangolo arancione): \"None of your tools were used in this run. Try giving your tools clearer names and descriptions to help the AI\" — un suggerimento pratico: dare ai tool nomi e descrizioni più chiare aiuta l'AI a capire quando usarli.",
   "fonte": "JTn5pqm9ecM#17:30-17:42 + voce 17:42",
   "frame": "frame-0176.png, frame-0178.png",
   "ancora": "None of your tools were used in this run. Try giving your tools clearer names and descriptions to help the AI",
@@ -557,7 +557,7 @@
  {
   "id": "KA-030",
   "tipo": "procedura",
-  "contenuto": "Per scrivere un prompt complesso a mano invece di lasciarlo estratto automaticamente dalla chat, si cambia il campo \"Source for Prompt (User Message)\" da \"Connected Chat Trigger Node\" a \"Define below\", il che apre un editor \"Expression\" con l'avviso \"Anything inside {{ }} is JavaScript\": tutto cio' che sta dentro le doppie graffe viene valutato come JavaScript.",
+  "contenuto": "Per scrivere un prompt complesso a mano invece di lasciarlo estratto automaticamente dalla chat, si cambia il campo \"Source for Prompt (User Message)\" da \"Connected Chat Trigger Node\" a \"Define below\", il che apre un editor \"Expression\" con l'avviso \"Anything inside {{ }} is JavaScript\": tutto ciò che sta dentro le doppie graffe viene valutato come JavaScript.",
   "fonte": "JTn5pqm9ecM#17:42-17:48 + voce 17:48",
   "frame": "frame-0178.png, frame-0179.png",
   "ancora": "Anything inside {{ }} is JavaScript",
@@ -566,11 +566,637 @@
    {
     "verso": "KA-020",
     "tipo": "contraddice",
-    "perche": "E' l'alternativa esplicita al comportamento di default (prompt auto-estratto dalla chat) descritto in KA-020: qui il prompt viene invece scritto/definito manualmente."
+    "perche": "È l'alternativa esplicita al comportamento di default (prompt auto-estratto dalla chat) descritto in KA-020: qui il prompt viene invece scritto/definito manualmente."
    },
    {
     "verso": "KA-035",
     "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-031",
+  "tipo": "struttura",
+  "contenuto": "Nuova lavagna Excalidraw, titolo \"Come svolgono tasks gli agenti AI\". A sinistra un riquadro \"Stato dell'Agente\" contiene il box \"Finestra di contesto\" con cinque voci elencate (tutte poi confermate con spunta arancione): Obiettivo, Strumenti, Conversazione di esempio, Istruzioni di contesto, Storico conversazione. A destra, un flowchart verticale ad anello: \"Assemblare la finestra di contesto iniziale\" -> \"Invocare LLM\" (annotato \"API ⟹ $\", con chiamata esterna verso un box \"LLM\") -> rombo \"Obiettivo raggiunto?\" con due uscite: \"sì\" -> esci dal loop, restituisci risultato; \"no\" -> \"Preparare l'esecuzione dello strumento\" -> \"Invocare Strumento\" (annotato \"API, $\", chiamata esterna verso un box \"Tool API\") -> \"Aggiornare la finestra di contesto\", che rientra con una linea tratteggiata etichettata \"turno successivo\" di nuovo su \"Invocare LLM\", chiudendo il loop.",
+  "fonte": "JTn5pqm9ecM#18:42-22:18 (costruzione progressiva del diagramma) + voce 18:48-22:18",
+  "frame": "frame-0188.png, frame-0196.png, frame-0201.png, frame-0223.png",
+  "ancora": "Assemblare la finestra di contesto iniziale",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-004",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-005",
+    "tipo": "esempio-di",
+    "perche": "Questo flowchart formalizza in un ciclo esplicito lo stesso schema statico Utente/Agente/LLM/Strumenti/Memoria già visto nel capitolo 'Cos'e un Agente AI'."
+   },
+   {
+    "verso": "KA-012",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-032",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-034",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-032",
+  "tipo": "definizione",
+  "contenuto": "I cinque elementi che compongono la \"finestra di contesto\" assemblata da un agente come primo passo del loop, con la spiegazione data a voce mentre vengono spuntati uno a uno: (1) Obiettivo — che cosa sta chiedendo l'utente; (2) Strumenti; (3) Conversazione di esempio; (4) Istruzioni di contesto — esempio concreto dato dall'autore: se l'obiettivo era \"mandare un'email\", le istruzioni possono dire esplicitamente \"non farlo\", e prevalgono sull'obiettivo (stesso comportamento già dimostrato nella demo n8n con il prompt \"non mandare mai un'email\"); (5) Storico della conversazione.",
+  "fonte": "JTn5pqm9ecM#20:00-20:30 + voce 20:00-20:30",
+  "frame": "frame-0201.png, frame-0206.png",
+  "ancora": "Poi raccoglie le istruzioni del contesto, quindi se qui aveva l'obiettivo di mandare un email, qui le istruzioni gli dicono non farlo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-031",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-035",
+    "tipo": "esempio-di",
+    "perche": "L'esempio 'istruzioni che dicono non farlo' fatto qui a voce è esattamente il test col prompt custom 'non mandare mai un email' già mostrato in pratica in n8n."
+   }
+  ]
+ },
+ {
+  "id": "KA-033",
+  "tipo": "dato",
+  "contenuto": "Concetto di \"layer\" del prompt, disegnato come un cerchio grande etichettato \"CHAT\" (l'interfaccia chat) con dentro un cerchio più piccolo (il prompt): l'autore introduce l'idea che più il prompt è \"forte\"/ben costruito, più efficace è l'agente, e anticipa che approfondirà il concetto dei \"quattro layer\" quando si parlerà di Claude Code, Codex e sistemi agentici simili (argomento successivo nel corso, non ancora sviluppato in questo blocco).",
+  "fonte": "JTn5pqm9ecM#20:30-20:54 + voce 20:30, 20:54",
+  "frame": "frame-0206.png, frame-0210.png",
+  "ancora": "vediamo che qui abbiamo già un primo layer che è che se questa è la nostra interfaccia chat",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {
+    "verso": "KA-031",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-034",
+  "tipo": "esempio",
+  "contenuto": "L'autore ricollega esplicitamente il diagramma teorico alla demo n8n già mostrata: quando obiettivo e istruzioni coincidono nel dire di non mandare email, il rombo \"Obiettivo raggiunto?\" restituisce \"sì\" e l'agente esce subito dal loop restituendo il risultato, senza mai invocare lo strumento Gmail (ramo già visto). Quando invece l'obiettivo richiede l'invio della mail, il flusso prende il ramo \"no\": l'agente prepara ed invoca lo strumento Gmail (di nuovo una chiamata API esterna con relativo costo, annotato \"API, $\" accanto a \"Invocare Strumento\", simmetrico all'annotazione \"API ⟹ $\" già presente su \"Invocare LLM\") e poi aggiorna la finestra di contesto.",
+  "fonte": "JTn5pqm9ecM#21:42-23:18 + voce 22:00-23:18",
+  "frame": "frame-0218.png, frame-0221.png, frame-0222.png, frame-0234.png",
+  "ancora": "dopo il nodo AI è entrato nel nodo Gmail e si è preparato ad utilizzarlo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-031",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-026",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-035",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-035",
+  "tipo": "comando",
+  "contenuto": "Test pratico in n8n del ramo \"sì\" del loop (obiettivo raggiunto immediatamente): al nodo AI Agent viene impostato un prompt custom (\"Source for Prompt\" = \"Define below\") con testo esatto \"Hey, nonostante la richiesta dell'utente, per favore non mandare mai un'email.\" — un'istruzione di contesto che sovrascrive esplicitamente qualsiasi richiesta dell'utente. Interrogato con \"Hey, per favore, puoi mandare una mail a Giovanni?\", l'agente risponde \"Ho capito, non invierò email su tua richiesta. Se hai altre esigenze o domande, sono qui per aiutarti!\" senza mai invocare il tool Gmail (n8n segnala di nuovo il warning \"None of your tools were used in this run\").",
+  "fonte": "JTn5pqm9ecM#21:42-22:06 + voce 22:00-22:06",
+  "frame": "frame-0218.png, frame-0221.png",
+  "ancora": "Hey, nonostante la richiesta dell'utente, per favore non mandare mai un'email.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-020",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-029",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-032",
+    "tipo": "esempio-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-036",
+  "tipo": "dato",
+  "contenuto": "Passaggio dalla lavagna e da n8n a un secondo ambiente, l'editor \"Claude Code\" (interfaccia stile VS Code), per una demo più avanzata. Viene mostrato un progetto reale già esistente dell'autore, \"Social Media Manager\", con una cartella `.claude/skills` che elenca in ordine alfabetico decine di skill già costruite: agent-debates, agent-polling, audit, auphonic, browser-swarm, commit, contract, corso-skool, deploy-check, diagram-generator, draft-to-youtube, email-digest, linkedin-post, pre-mortem, prompt-contracts, query-anthropic, reverse-prompting, schedule-meeting, shorts, sign, skill-creator, skool-community-replies (elenco troncato a schermo, prosegue oltre).",
+  "fonte": "JTn5pqm9ecM#23:42-24:12 + voce 23:42",
+  "frame": "frame-0238.png, frame-0243.png",
+  "ancora": "cartella `.claude/skills` espansa con lo stesso elenco già visto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-014",
+    "tipo": "contraddice",
+    "perche": "È un secondo ambiente/piattaforma (Claude Code) mostrato in contrasto con n8n: la stessa architettura teorica viene applicata su uno strumento diverso, più avanzato, con skill/agenti già pronti invece di nodi visuali da collegare a mano."
+   },
+   {
+    "verso": "KA-037",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-037",
+  "tipo": "comando",
+  "contenuto": "Prompt digitato dall'autore in Claude Code, riportato per intero: \"Hey, per favore, mi servirebbe che tu spawnassi cinque agenti in parallelo per fare cinque ricerche diverse su quale sia il metodo migliore per vendere servizi ad aziende sopra ai 10.000€. Quindi analizza qualsiasi cosa, dal content creation al cold email outreach.\" — l'obiettivo dichiarato della demo è mostrare in pratica lo spawn di più agenti paralleli per una ricerca reale.",
+  "fonte": "JTn5pqm9ecM#24:12-24:30 + voce 24:12-24:24",
+  "frame": "frame-0243.png, frame-0246.png",
+  "ancora": "Quindi analizza qualsiasi cosa, dal content creation al cold email outreach.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-036",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-038",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-038",
+  "tipo": "dato",
+  "contenuto": "In risposta al prompt, Claude Code ragiona brevemente (\"Thought for 2s\") poi lancia cinque agenti paralleli, ciascuno su un diverso canale di vendita B2B high-ticket: \"Research: Content marketing B2B high-ticket\", \"Research: Cold email outreach B2B high-ticket\", \"Research: LinkedIn social selling B2B\", \"Research: Referrals and partnerships B2B\", oltre a un quinto filone; in parallelo vengono eseguiti anche comandi Bash diretti (es. `curl` su Google Search) e tool di Web Search per raccogliere dati grezzi da fonti esterne.",
+  "fonte": "JTn5pqm9ecM#24:30-25:18 + voce 24:30-25:18",
+  "frame": "frame-0246.png, frame-0251.png",
+  "ancora": "Lancio 5 agenti in parallelo, ognuno su un angolo diverso della vendita B2B high-ticket",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-037",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-039",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-040",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-039",
+  "tipo": "dato",
+  "contenuto": "Mentre gli agenti/tool lavorano, l'interfaccia permette di aprire un pannello secondario e ispezionare live il contenuto grezzo che un singolo tool sta processando (es. il pannello \"WebSearch tool output\" con il testo integrale dei risultati su compliance GDPR per il cold email B2B) — una funzionalità di trasparenza/debug sul lavoro interno degli agenti.",
+  "fonte": "JTn5pqm9ecM#25:18 + voce 25:18",
+  "frame": "frame-0254.png",
+  "ancora": "Se poi voi premete avete anche la possibilità di vedere dentro al tool che cosa sta processando",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-038",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-040",
+  "tipo": "dato",
+  "contenuto": "Sintesi del canale \"1. Content Marketing & Thought Leadership\" prodotta dai 5 agenti: \"Priorità: LinkedIn >> YouTube per revenue immediata.\" — con 50K follower LinkedIn è un asset sottoutilizzato; i contenuti che convertono a high-ticket sono case study con numeri e post di metodologia, non tutorial. Regola chiave data dal report: \"insegna il COSA e il PERCHÉ pubblicamente, vendi il COME e il DONE-FOR-YOU. A €10K+ i clienti pagano velocità e certezza, non informazione.\" Timeline: 3-6 mesi di posting costante (3-5x/settimana su LinkedIn) prima che la pipeline si riempia.",
+  "fonte": "JTn5pqm9ecM#25:48 + voce 26:00 ca.",
+  "frame": "frame-0259.png",
+  "ancora": "insegna il COSA e il PERCHÉ pubblicamente, vendi il COME e il DONE-FOR-YOU",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-038",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-045",
+    "tipo": "contraddice",
+    "perche": "Questo canale (content marketing) risulterà NON prioritario quando lo stesso prompt viene rifatto con il vincolo esplicito 'come se partissi da zero': i due risultati si contraddicono, ed è proprio questa discrepanza a rivelare il bias."
+   }
+  ]
+ },
+ {
+  "id": "KA-041",
+  "tipo": "dato",
+  "contenuto": "Sintesi del canale \"2. Cold Email Outreach\" prodotta dai 5 agenti, con numeri concreti: reply rate medio 3-5%, 1-2 meeting ogni 100 email (per 10 meeting/mese servono 500-1000 email mirate). Infrastruttura obbligatoria: 3-5 domini secondari, SPF/DKIM/DMARC, warm-up di 3-4 settimane, max 30-40 email/giorno per mailbox; tool citati: Smartlead ($39/mo), Apollo ($49/mo), Clay ($134/mo) per personalizzazione AI. Sequenza consigliata: 4 touch in 14 giorni, con il tocco finale \"Should I close the file?\" che da solo genera il 30% delle risposte totali. Nota di compliance: GDPR ok per B2B con legitimate interest documentato.",
+  "fonte": "JTn5pqm9ecM#25:48 + voce 26:00 ca.",
+  "frame": "frame-0259.png",
+  "ancora": "3-5% reply rate medio, 1-2 meeting ogni 100 email",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-038",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-047",
+    "tipo": "esempio-di",
+    "perche": "Questo stesso canale, cold email, diventerà il canale #1 raccomandato nella versione 'unbiased' della ricerca: i dati tecnici restano identici, cambia solo la priorità assegnata."
+   }
+  ]
+ },
+ {
+  "id": "KA-042",
+  "tipo": "avvertimento",
+  "contenuto": "L'autore nota a voce, ridendo, che il risultato appena ottenuto (priorità a content marketing e cold email) è logicamente sospetto: annota sulla lavagna/schermo \"M&A ⇒ outbound\", osservando che nessuno si aspetta che un deal da 5 milioni di euro (o i grandi capitali di operatori come \"Alex Ormosi\", probabile refuso della trascrizione per Alex Hormozi) avvenga tramite content creation. Anticipa che la ricerca è \"biased\", introducendo così il tema centrale del capitolo (il bias nascosto nei risultati di un agente AI).",
+  "fonte": "JTn5pqm9ecM#26:48-27:00 + voce 26:48-27:00",
+  "frame": "frame-0269.png",
+  "ancora": "non ci aspettiamo che un deal da 5 milioni [risate] avvenga tramite content creation",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-040",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-048",
+    "tipo": "motiva"
+   }
+  ]
+ },
+ {
+  "id": "KA-043",
+  "tipo": "dato",
+  "contenuto": "Sintesi del canale \"4. Referral & Partnership\": partner ideali per l'automazione AI sono commercialisti (vedono i P&L dei clienti), business coach, web agency, vendor SaaS (es. programma partner Make.com, HubSpot). Fee structure: 10-15% sul primo contratto; approccio consigliato: mandare un case study e proporre un pilot (\"mandami un cliente, se chiudo e consegno, formalizziamo\"). Target realistico: 10-15 partner attivi che generano il 40-60% della pipeline entro 12 mesi.",
+  "fonte": "JTn5pqm9ecM#27:00 + voce 27:00 ca.",
+  "frame": "frame-0271.png",
+  "ancora": "Partner ideali per AI automation",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-038",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-044",
+  "tipo": "dato",
+  "contenuto": "Sintesi del canale \"5. Webinar / Workshop\": formato ideale = workshop live da 90 minuti con demo reale di automazione AI. Benchmark citato: 200 iscritti -> 90 presenti -> 12 prenotano una call -> 5 chiudono = €50K da un singolo webinar, riempibile organicamente con LinkedIn + YouTube senza ads. Struttura consigliata: 60 minuti di framework + demo live, poi 15 minuti di risultati before/after, poi 15 minuti di pitch (application-only, posti limitati).",
+  "fonte": "JTn5pqm9ecM#27:00 + voce 27:00 ca.",
+  "frame": "frame-0271.png",
+  "ancora": "200 iscritti → 90 presenti → 12 prenotate call → 5 chiudono = €50K da un singolo webinar",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-038",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-045",
+  "tipo": "dato",
+  "contenuto": "\"La mia raccomandazione\" finale del primo prompt (quello che NON specifica di partire da zero): \"Il ROI più alto nel breve termine è LinkedIn social selling (hai già 50K follower, non servono investimenti) combinato con workshop mensile come meccanismo di conversione. Cold email e referral sono buoni canali paralleli da costruire nel tempo, ma LinkedIn è la leva più immediata.\" L'agente chiude chiedendo: \"Vuoi che approfondiamo uno di questi canali o che creiamo un piano d'azione concreto?\"",
+  "fonte": "JTn5pqm9ecM#27:00-27:24 + voce 27:00-27:18",
+  "frame": "frame-0271.png, frame-0274.png",
+  "ancora": "Il ROI più alto nel breve termine è",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-040",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-041",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-043",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-044",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-047",
+    "tipo": "contraddice"
+   }
+  ]
+ },
+ {
+  "id": "KA-046",
+  "tipo": "comando",
+  "contenuto": "Tecnica dimostrata per neutralizzare il bias di un agente: aggiungere allo stesso prompt originale un vincolo esplicito che rimuove il contesto specifico dell'utente, testo esatto aggiunto: \"Fai una ricerca unbiased come se io partissi da zero e non avessi media presence.\" L'autore la definisce \"una ricerca unbiased\" e la confronta direttamente con il risultato precedente per mostrare quanto cambi.",
+  "fonte": "JTn5pqm9ecM#27:24-27:54 + voce 27:54, 28:24",
+  "frame": "frame-0275.png, frame-0280.png, frame-0285.png",
+  "ancora": "Fai una ricerca unbiased come se io partissi da zero e non avessi media presence",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-045",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-047",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-047",
+  "tipo": "dato",
+  "contenuto": "Risultato della ricerca \"unbiased\": sezione \"5. Paid Ads\" — costo iniziale €3-5K/mese minimo per 3 mesi di test (€9-15K totali), timeline alla profittabilità 3-6 mesi, CPA €1.500-5.000; pro: scalabile, volume controllabile; contro: \"il peggiore canale partendo da zero\" (senza social proof/testimonial le conversioni sono 2-5x peggiori) — \"Consensus unanime: è un tool di scaling, non di partenza.\" \"Verdetto complessivo\": partendo da zero senza media presence, la combinazione più efficace secondo le 5 ricerche è: (1) Cold email + LinkedIn outreach come motore primario nei primi 2-4 mesi — costo bassissimo, volume controllabile, porta i primi 2-3 clienti; (2) Referral come canale parallelo da costruire dal giorno 1 — lento ma con il conversion rate più alto in assoluto (50-70%); (3) Eventi locali come acceleratore di trust se il mercato è geograficamente concentrato; (4) Paid ads solo dopo aver chiuso i primi clienti e avere case study da mostrare.",
+  "fonte": "JTn5pqm9ecM#27:24-27:54 + voce 27:24, 27:54",
+  "frame": "frame-0275.png",
+  "ancora": "Partendo da zero senza media presence, la combinazione più efficace secondo le 5 ricerche:",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-046",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-045",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-040",
+    "tipo": "contraddice"
+   }
+  ]
+ },
+ {
+  "id": "KA-048",
+  "tipo": "principio",
+  "contenuto": "Gli LLM tendono ad essere \"pigri\" e a farsi condizionare (bias) da elementi interni al proprio contesto/conversazione, se non vengono esplicitamente istruiti a ignorarli: è il principio generale che spiega perché il primo prompt (senza il vincolo \"da zero\") abbia prodotto una raccomandazione diversa e più comoda, ancorata a ciò che l'utente aveva già (i 50K follower LinkedIn), invece di una valutazione oggettiva.",
+  "fonte": "JTn5pqm9ecM#28:54-29:12 + voce 28:54-29:12",
+  "frame": "frame-0290.png",
+  "ancora": "biased da cose interne a se stesso. Quindi tendono a essere un po' pigri questi LLM",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-042",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-045",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-049",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-049",
+  "tipo": "esempio",
+  "contenuto": "Dimostrazione concreta del bias da auto-riferimento (\"self-reference bias\"): cercando su Google \"giovanni beggiato\", tutti i primi risultati parlano solo dell'autore stesso — YouTube (10,4K+ follower, video come \"Claude Changed SEO Forever\" e \"The 5 Skills That Took My AI Agency From $0 to $10K/Month\"), LinkedIn (10,3K+ follower, \"CEO at GentesAI... Won the CEO Award 2024... $30M in combined cost savings\"), Skool, un AMA su Reddit r/LLMeng, il gruppo Skool \"Avanguardia\". L'autore commenta: \"non c'è nessuno sulla prima pagina di Google\" a parte lui — un LLM che avesse questi risultati nel proprio contesto sarebbe inevitabilmente influenzato dalla fama pre-esistente dell'utente.",
+  "fonte": "JTn5pqm9ecM#29:12-29:24 + voce 29:12, 29:24, 29:30",
+  "frame": "frame-0293.png, frame-0294.png, frame-0295.png",
+  "ancora": "cioè se io cerco Giovanni Beggiato adesso e chiedo chi è, io ho un profilo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-048",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-051",
+    "tipo": "precede",
+    "perche": "Questo stesso fenomeno (bias da ciò che l'AI sa già sull'utente/ambiente) è esattamente ciò che la 'Memoria Semantica' formalizza teoricamente nel diagramma successivo, dove viene esplicitamente etichettato 'LinkedIn bias'."
+   }
+  ]
+ },
+ {
+  "id": "KA-050",
+  "tipo": "struttura",
+  "contenuto": "Nuova lavagna Excalidraw, titolo \"Il Loop di Ragionamento Agentico\". Schema simmetrico a cinque zone attorno a un cerchio centrale: a sinistra due box viola, \"Memoria Semantica\" (sopra) e \"Memoria Episodica\" (sotto), collegati con freccia \"Recupera\" al box centrale azzurro \"LLM\"; a sinistra dell'LLM due frecce orizzontali \"Input utente ->\" (entrante) e \"<- Risposta agente\" (uscente). A destra, speculari, due box verdi \"Memoria Procedurale\" (sopra) e \"Memoria di Lavoro\" (sotto), collegati con frecce \"Recupera\"/\"Interroga\"/\"Risolvi\"/\"Ancora\" al box verde scuro \"Strumenti\". Al centro, un grande cerchio blu con quattro tappe disposte in croce e collegate da frecce curve in senso orario: \"Pianifica\" -> \"Esegui\" -> \"Valuta\" -> \"Feedback\" -> di nuovo \"Pianifica\"; una freccia diagonale \"Osserva\" entra nel cerchio dal basso a destra, collegandosi da \"Strumenti\"/Memoria di Lavoro verso \"Valuta\".",
+  "fonte": "JTn5pqm9ecM#29:36-30:12 (comparsa) + voce 29:36-30:12",
+  "frame": "frame-0297.png, frame-0303.png",
+  "ancora": "quattro tappe disposte in croce e collegate da frecce curve in senso orario",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-049",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-031",
+    "tipo": "esempio-di",
+    "perche": "È un secondo livello di dettaglio dello stesso loop già visto in 'Come svolgono tasks gli agenti AI': lì il ciclo era Assemblare/Invocare LLM/Obiettivo raggiunto/Invocare Strumento; qui lo stesso ciclo viene riletto attraverso quattro tipi di memoria e le quattro fasi Pianifica/Esegui/Valuta/Feedback."
+   },
+   {
+    "verso": "KA-051",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-052",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-053",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-054",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-059",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-051",
+  "tipo": "definizione",
+  "contenuto": "Memoria Semantica, definita testualmente sullo schema come \"Conoscenza dell'utente e dell'ambiente per comprendere meglio l'input\". L'autore la collega direttamente all'esempio appena mostrato con un'annotazione scritta a mano \"LinkedIn bias\": è proprio in questa memoria che si introducono i bias legati a ciò che l'AI già sa dell'utente. Cita il caso concreto: è sbagliato dire indistintamente a una persona che \"deve fare outbound perché è l'unico modello che si scala sopra i 10.000€ al mese\" senza considerare che quella persona potrebbe già avere un asset (es. un grande seguito LinkedIn) che cambierebbe la strategia migliore.",
+  "fonte": "JTn5pqm9ecM#30:24-31:00 + voce 30:24, 30:54",
+  "frame": "frame-0305.png, frame-0310.png",
+  "ancora": "E capite bene quanto sbagliato sia dire ad una persona",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-050",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-049",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-045",
+    "tipo": "esempio-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-052",
+  "tipo": "definizione",
+  "contenuto": "Memoria Episodica, definita testualmente sullo schema come \"Raccolta di interazioni e processi di pensiero\": l'autore la descrive come la memoria di cui \"non molti parlano perché non molti la conoscono\", cioè la raccolta delle interazioni già avvenute tra AI e utente e dei processi di pensiero intermedi — se qualcosa è già successo in una conversazione, l'AI deve in qualche modo ricordarselo.",
+  "fonte": "JTn5pqm9ecM#31:00-31:06 + voce 31:00",
+  "frame": "frame-0311.png, frame-0312.png",
+  "ancora": "La seconda cosa che abbiamo di cui non molti parlano perché non molti conoscono, è memoria episodica",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-050",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-025",
+    "tipo": "esempio-di",
+    "perche": "La cronologia Human/AI salvata da 'Simple Memory' nella demo n8n (KA-025) è un esempio concreto e già visto di cosa sia in pratica una memoria episodica."
+   }
+  ]
+ },
+ {
+  "id": "KA-053",
+  "tipo": "definizione",
+  "contenuto": "Memoria Procedurale, definita testualmente sullo schema come \"Conoscenza di cosa si può fare... e come eseguirlo\": l'autore la collega esplicitamente al concetto di \"skill\" degli agenti (workflow già automatizzati), annotando sullo schema una scritta corsiva vicino al box (letta come probabile \"/skill\"). Rimanda per l'approfondimento a un proprio corso dedicato di 40 minuti sulle skill, disponibile sul suo canale.",
+  "fonte": "JTn5pqm9ecM#31:36-32:00 + voce 31:36-32:00",
+  "frame": "frame-0317.png, frame-0321.png",
+  "ancora": "ho fatto un corso di 40 minuti dove vi spiego in dettaglio che cosa sono le skill",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-050",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-011",
+    "tipo": "esempio-di",
+    "perche": "I tool nativi come Read/Bash già visti nello schema base sono un caso particolare di ciò che la memoria procedurale rappresenta in astratto: conoscenza di cosa si può fare e come eseguirlo."
+   }
+  ]
+ },
+ {
+  "id": "KA-054",
+  "tipo": "definizione",
+  "contenuto": "Memoria di Lavoro, definita testualmente sullo schema come \"Stati interni da mantenere; Fatti risolti e verificati\": l'autore la descrive a voce come i vari stati interni da mantenere, cose da non modificare e concetti simili.",
+  "fonte": "JTn5pqm9ecM#32:30-32:42 + voce 32:30-32:42",
+  "frame": "frame-0326.png",
+  "ancora": "Stati interni da mantenere; Fatti risolti e verificati",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-050",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-055",
+  "tipo": "esempio",
+  "contenuto": "Ritornando alla ricerca sui canali di vendita B2B, l'autore chiede direttamente all'agente in Claude Code: \"Hey, ho una domanda per te. Per caso il tuo output è biased dal fatto che io ho un LinkedIn con più di 50.000 persone? Per caso, se partissi da zero, avresti un'altra raccomandazione da darmi?\". L'agente ammette esplicitamente: \"Sì, assolutamente. Il mio output è biased dal tuo asset esistente.\" e spiega il motivo: \"il content marketing ha un delay di 3-6 mesi prima di generare pipeline. Cold email ti porta meeting in 4-6 settimane dall'infrastruttura pronta. E i referral hanno il close rate più alto in assoluto (le intro calde chiudono al 30-50% vs 1-2% del cold).\" Conclusione dell'agente: \"Da zero, il canale #1 sarebbe cold email + referral, non content.\"",
+  "fonte": "JTn5pqm9ecM#33:18 + voce 33:18",
+  "frame": "frame-0334.png",
+  "ancora": "Sì, assolutamente. Il mio output è biased dal tuo asset esistente.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-051",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-048",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-047",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-056",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-056",
+  "tipo": "procedura",
+  "contenuto": "Roadmap \"da zero\" alternativa proposta dall'agente stesso, dopo aver confessato il bias, in tre fasi: (1) Settimane 1-4: infrastruttura cold email (domini, warm-up) + 2-3 case study scritti (es. Amazon, P&G); (2) Settimane 4-8: cold email attivo (500-1000 email/mese) + identificare 10 partner strategici (commercialisti, business coach); (3) Mesi 3+: i primi clienti chiusi alimentano nuovi case study e referral — solo a questo punto il content marketing ha senso come acceleratore, non come canale primario.",
+  "fonte": "JTn5pqm9ecM#33:18 + voce 33:18",
+  "frame": "frame-0334.png",
+  "ancora": "Settimane 1-4: infrastruttura cold email (domini, warmup) + 2-3 case study scritti (Amazon, P&G)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-055",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-057",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-057",
+  "tipo": "principio",
+  "contenuto": "Conclusione dell'agente sul rapporto tra content marketing e canali diretti: \"Il content è un moltiplicatore, non un punto di partenza. Senza audience, stai parlando al vuoto per mesi. Con cold email e referral stai parlando direttamente a decision-maker dal giorno uno.\" Raccomandazione finale, che integra entrambe le versioni della ricerca: dato che l'utente in questo caso NON parte da zero (ha già un LinkedIn da 50K follower), la risposta migliore è probabilmente sfruttare entrambi i canali in parallelo — LinkedIn per il breve termine, cold email + referral come secondo motore.",
+  "fonte": "JTn5pqm9ecM#33:18-33:24 + voce 33:24",
+  "frame": "frame-0334.png, frame-0335.png",
+  "ancora": "Il content è un moltiplicatore, non un punto di partenza.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-056",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-045",
+    "tipo": "contraddice"
+   },
+   {
+    "verso": "KA-058",
+    "tipo": "motiva"
+   }
+  ]
+ },
+ {
+  "id": "KA-058",
+  "tipo": "regola",
+  "contenuto": "Regola pratica conclusiva sul bias, ripetuta a più riprese guardando in camera (nessun materiale a schermo, solo webcam): se non si è consapevoli che un bias del genere esiste, si sta già direzionando il proprio agente nella direzione sbagliata. Bisogna quindi assicurarsi sempre, nel proprio prompt, di aver eliminato i bias — tutti quei piccoli \"pezzettini di memoria\" che possono condizionare silenziosamente l'output — soprattutto prima di usare l'agente per processi che hanno un ritorno economico reale.",
+  "fonte": "JTn5pqm9ecM#33:30-34:00 + voce 33:30-34:00",
+  "frame": "frame-0336.png, frame-0338.png, frame-0340.png",
+  "ancora": "consapevoli che questo bias esiste, state già direzionando il vostro agente nella direzione sbagliata",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-057",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-048",
+    "tipo": "applica"
+   }
+  ]
+ },
+ {
+  "id": "KA-059",
+  "tipo": "struttura",
+  "contenuto": "Nuova lavagna Excalidraw, titolo \"Observe - Think - Do - Evaluate (OTDE)\": un framework a quattro fasi disposte in cerchio e collegate da frecce curve in senso orario, già completo sullo schermo (non in costruzione). \"OSSERVA\" (box viola): \"Riceve input dall'ambiente: messaggi utente, output strumenti, risposte API, segnali errori.\" / \"Parsing input, aggiunta alla traiettoria, lettura dalla memoria a lungo termine.\" \"PENSA\" (box verde): \"Il LLM processa tutto il contesto: prompt, memoria, traiettoria, osservazione attuale.\" / \"Ragionamento chain-of-thought, decomposizione obiettivi, selezione piano, auto-critica.\" / \"Basato sul paradigma ReAct.\" \"RIFLESSIONE\" (box giallo): \"Auto-valutazione, feedback verbale scritto in memoria.\" Il quarto box (arancione, presumibilmente \"AGISCI\"/\"DO\" per completare l'acronimo OTDE) è quasi del tutto tagliato dal bordo inferiore dello schermo e non leggibile in questo blocco di scene. Questo diagramma corrisponde al punto 5 dell'indice del corso (\"Il loop di ragionamento Agentico (OTDE)\") e resta il punto in cui si interrompe il blocco di scene 1-126 qui atomizzato.",
+  "fonte": "JTn5pqm9ecM#34:24 + voce 34:18-34:24",
+  "frame": "frame-0345.png",
+  "ancora": "Observe - Think - Do - Evaluate (OTDE)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-050",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-003",
+    "tipo": "esempio-di",
+    "perche": "È l'apertura concreta del punto 5 dell'indice del corso mostrato all'inizio del video."
+   },
+   {
+    "verso": "KA-031",
+    "tipo": "esempio-di",
+    "perche": "OSSERVA/PENSA/RIFLESSIONE/(AGISCI) è una riformulazione più fine-grained dello stesso ciclo Assemblare/Invocare LLM/Obiettivo raggiunto/Invocare Strumento già visto: 'Osserva' assorbe l'assemblaggio della finestra di contesto, 'Pensa' corrisponde a 'Invocare LLM', 'Riflessione' corrisponde alla valutazione dell'obiettivo raggiunto."
    }
   ]
  }
