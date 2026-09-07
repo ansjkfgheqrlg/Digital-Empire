@@ -1,7 +1,7 @@
 ---
 Type: PROJECT
 Status: Proposta — versione 4
-Tags: #lanci #ecosistema-15 #reparti #gerarchia #organigramma #ADR-023
+Tags: #lanci #ecosistema-15 #reparti #gerarchia #organigramma #ADR-lanci
 Created: 2026-09-05
 Last updated: 2026-09-05
 Versione: 4

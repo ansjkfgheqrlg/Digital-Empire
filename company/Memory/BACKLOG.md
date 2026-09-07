@@ -307,3 +307,14 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   LF): usa lo strumento di scrittura diretto su Windows. Il rimedio non e' in casa mia — o quella
   sessione scrive in LF, oppure si apre l'ADR per `company/Memory/** text eol=lf`. Fino ad allora,
   a ogni blocco: `python .githooks/check_memory.py --fix`.
+
+- **B-060 — NUOVA.** `company/Memory/decisions/` ha **due numeri ADR usati due volte**:
+  `ADR-012` (orchestration-layer-canonico *e* ponte-memory-wiki) e `ADR-016`
+  (dottrina-integrale-all-apertura *e* ultimo-metro). Trovati il 2026-09-07 da
+  `python scripts/adr.py verifica`, che ora esce **1** finche' restano. **Non li ho
+  rinumerati di mia iniziativa**: un ADR e' citato per numero in checkpoint, task,
+  piani e frontmatter, e rinumerarlo rompe in silenzio ogni puntatore che lo nomina.
+  Va deciso da chi ha firmato le due decisioni. La causa e' rimossa da oggi
+  (`scripts/adr.py` conia il numero occupando il file), quindi il difetto non cresce
+  piu': restano solo queste due cicatrici. *Quando:* quando Max decide quale delle due
+  coppie rinumerare, oppure alla prossima potatura della Memory.

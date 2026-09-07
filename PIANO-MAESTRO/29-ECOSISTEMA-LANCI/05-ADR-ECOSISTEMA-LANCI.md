@@ -1,15 +1,34 @@
 ## Come si usa questo file
 
 Max legge la decisione qui sotto e la approva o la respinge (rispondendo in chat, o con un
-comando che porti la firma). Approvata, il corpo — dalla riga `# ADR-023` in poi — si copia
-integralmente in `company/Memory/decisions/ADR-023-ecosistema-lanci.md`, senza modifiche.
-**La cartella `company/Ecosistemi/15-LANCI/` non può nascere prima**: lo impone ADR-009
+comando che porti la firma).
+
+**Il numero non e' scritto qui, e non deve esserlo.** Approvata la decisione, il numero si
+conia nell'istante in cui il file nasce:
+
+```bash
+python scripts/adr.py conia --slug ecosistema-lanci     --titolo "Nasce l'ecosistema LANCI: l'artefatto e' il centro, non il reparto"     --stato ATTIVA --ordinato-da "Max"
+```
+
+Il comando occupa il numero creando il file in modo atomico e lo stampa. Poi il corpo qui
+sotto — dalla riga `# ADR-XXX` in poi — si copia integralmente nel file appena creato,
+sostituendo `XXX` col numero coniato, senza altre modifiche.
+
+> **Perche' cosi'.** Questo documento ha prenotato un numero tre volte scrivendolo nella
+> prosa, e se l'e' visto scippare tre volte da sessioni parallele che non lo potevano
+> vedere: **ADR-022** (05/09), poi **ADR-023** (06/09, preso da "fabbrica siti"), poi
+> **ADR-024** (07/09, preso da "canone v2"). Un numero scritto in un documento non e'
+> prenotato: e' un desiderio. La cartella `company/Memory/decisions/` porta gia' due numeri
+> usati due volte (ADR-012 e ADR-016). E' la stessa collisione di B-009 sui checkpoint, e si
+> risolve allo stesso modo: il numero si conia occupando il file, non si sceglie leggendo.
+
+**La cartella `company/Ecosistemi/15-LANCI/` non puo' nascere prima**: lo impone ADR-009
 (ogni ecosistema dal 14 in su richiede un nuovo ADR prima di essere inserito), e il numero
-15 risulta già prenotato e non libero in `company/Ecosistemi/REGISTRO-NUMERI.md`.
+15 risulta gia' prenotato e non libero in `company/Ecosistemi/REGISTRO-NUMERI.md`.
 
 ---
 
-# ADR-023 — Nasce l'ecosistema LANCI: l'artefatto è il centro, non il reparto
+# ADR-XXX — Nasce l'ecosistema LANCI: l'artefatto è il centro, non il reparto
 
 - **Stato:** proposto — in attesa di approvazione di Max
 - **Data:** 2026-09-05
