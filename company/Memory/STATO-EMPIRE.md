@@ -59,8 +59,14 @@ gradienti, curve, **e i commenti dell'autore**).
 piu' un'impressione, una misura. ⭐⭐ **I nomi dei suoi componenti sono la sua architettura, servita
 in chiaro** (Vite li mette nel file): **21 sezioni numerate**, solo 6 con nome proprio
 (`OfferSection`, `LessonList`, `ReviewsWall`, `SkillsGrid`, `FAQ`, `Disclaimer`) — le sei che fanno
-un lavoro. E **il funnel attraversa due stack**: `armageddon.bsns.it` e' vanilla scritto a mano, le
-sue 4 pagine figlie sono **Squarespace** sotto lo stesso dominio.
+un lavoro. ⚠️ **CORREZIONE, dalla seconda sentinella:** avevo scritto che "il funnel attraversa
+due stack". **Impreciso.** Le 4 pagine figlie sono un **mirror statico** delle pagine originali di
+`andrei-copy.com`: il commento di `mirror.js` lo dice in chiaro — *"the pages are the originals from
+andrei-copy.com with every Squarespace script removed"* — e il file e' identico byte per byte sulle
+quattro. Il JavaScript della piattaforma e' stato tolto e **ricostruito a mano**, e tutte e quattro
+puntano a **un solo link Stripe** (verificato: `buy.stripe.com/00w28s9LA5Y0eIT8N64Ja1O`, univoco).
+E' una mossa di metodo migliore di quella che avevo capito: **si specchia il proprio negozio, si
+spoglia della piattaforma e si ripunta a una cassa sola per il lancio.**
 **Corretto un mio errore:** avevo classificato `claude-speedrun` come "artigianale" come armageddon.
 Falso: e' Vite+React+Tailwind+shadcn+Radix (**Corsia B**), armageddon e' vanilla (**Corsia A**).
 **La lezione scomoda:** quel sito da 249 €, concorrente diretto di CCM, **non usa un solo effetto

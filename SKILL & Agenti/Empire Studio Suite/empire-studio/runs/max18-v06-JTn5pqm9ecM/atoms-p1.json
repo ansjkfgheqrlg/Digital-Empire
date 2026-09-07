@@ -1,0 +1,577 @@
+[
+ {
+  "id": "KA-001",
+  "tipo": "principio",
+  "contenuto": "L'autore apre il corso presentandosi: gestisce una community dove insegna agli imprenditori e ai freelancer a costruire e vendere agenti AI ad altri, e attualmente gestisce una propria agenzia AI con clienti che vanno da aziende da 10.000€/mese fino a 50 milioni/anno di fatturato. Questa esperienza pratica (non solo teorica) e' la cornice di credibilita' dentro cui si colloca tutto il corso.",
+  "fonte": "JTn5pqm9ecM#0:06-0:12 (talking head, apertura) + voce 0:06-0:18",
+  "frame": "frame-0002.png, frame-0003.png",
+  "ancora": "aziende da 10.000€/mese fino a 50 milioni/anno",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-002",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-003",
+    "tipo": "motiva",
+    "perche": "La credibilita' pratica dichiarata qui e' il motivo per cui l'indice che segue promette contenuti applicati (demo reali) e non solo teoria."
+   }
+  ]
+ },
+ {
+  "id": "KA-002",
+  "tipo": "principio",
+  "contenuto": "Il corso e' pensato per essere accessibile a chiunque: non serve background tecnico ne' conoscenza pregressa delle piattaforme usate, perche' tutti i partecipanti partiranno dallo stesso livello di conoscenza di base.",
+  "fonte": "JTn5pqm9ecM#0:24-0:30 + voce 0:24-0:30",
+  "frame": "frame-0005.png, frame-0006.png",
+  "ancora": "tutti partiremo dalla stessa conoscenza",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-001",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-003",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-003",
+  "tipo": "struttura",
+  "contenuto": "Indice completo del corso, mostrato per intero su lavagna Excalidraw (16 punti, trascrizione integrale lettera per lettera): \"1. Cos'e' un agente AI | 2. Costruzione di un agente AI semplice su n8n | 3. Come svolgono tasks gli agenti AI | 4. Dettagli di task su Antigravity | 5. Il loop di ragionamento Agentico (OTDE) | 6. OTDE in Claude Code | 7. Importanza del prompt negli Agenti AI e quando usare Gemini.MD, Claude.MD, Agents.MD | 8. back prompt engineering: - step-back prompting - reverse prompting | 9. prompt-contracts | 10. pre-morten prompting | 11. self-improving prompts e ne capiremo il ciclo iternativo | 12. i 4 livelli di Specificita' di prompt (e la loro influenza) | 13. Agent polling | 14. Agent debates | 15. Browser swarm | 16. Full workflow Audit your workflow\". Sullo schermo restano due refusi non corretti: \"pre-morten\" invece di \"premortem\" e \"iternativo\" invece di \"iterativo\" (a voce l'autore dice correttamente \"iterativo\"). Il blocco scene 1-126 qui atomizzato copre solo i punti 1-3 dell'indice (Cos'e' un agente AI, costruzione su n8n, come svolgono i task) piu' l'inizio dei punti 4-5 (loop di ragionamento agentico e OTDE).",
+  "fonte": "JTn5pqm9ecM#0:42 (prima comparsa) e #1:42 (indice completo leggibile) + voce 0:42-3:12",
+  "frame": "frame-0008.png, frame-0018.png",
+  "ancora": "2. Costruzione di un agente AI semplice su n8n",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-004",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-004",
+  "tipo": "struttura",
+  "contenuto": "Fine dell'overview e inizio del capitolo 2 del corso (\"Cos'e' un agente AI\", architettura e componenti): l'istante coincide con l'inizio del capitolo dichiarato in ingest.json (start 222s = 3:42). Da qui l'autore smette di ripercorrere l'indice e comincia a costruire lo schema canonico di cosa sia un agente AI.",
+  "fonte": "JTn5pqm9ecM#3:42 + voce 3:42",
+  "frame": "frame-0038.png",
+  "ancora": "Cominciamo quindi dalle cose un po' più",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-003",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-005",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-005",
+  "tipo": "definizione",
+  "contenuto": "Schema canonico di \"Cos'e' un Agente AI\", costruito per intero su Excalidraw: in alto un box \"Istruzioni\" (\"Un template di prompt\") con una freccia verticale che scende fino al box centrale viola \"Agente AI\". A sinistra un omino stilizzato etichettato \"Utente\", collegato all'Agente AI da due frecce orizzontali: \"Richiesta\" (utente -> agente) e \"Risposta\" (agente -> utente). A destra dell'Agente AI, una freccia doppia (<->) verso un box \"Strumenti\" che elenca quattro esempi con icona: Google (lente), WolframAlpha (stella), Python (logo), API Meteo (nuvola). Sotto l'Agente AI, due frecce scendono verso due box affiancati: \"LLM (ragionamento)\" e \"Memoria\". Questo schema a sei componenti (Istruzioni, Utente, Agente AI, Strumenti, LLM, Memoria) resta la lavagna di riferimento a cui l'autore torna ripetutamente per tutto il capitolo.",
+  "fonte": "JTn5pqm9ecM#3:48 (stato base) + voce 3:48",
+  "frame": "frame-0039.png",
+  "ancora": "due frecce verso il basso che portano a due box affiancati",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-004",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-006",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-010",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-011",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-013",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-006",
+  "tipo": "dato",
+  "contenuto": "Le tre modalita' con cui un Utente puo' interagire con un Agente AI, aggiunte come annotazione allo schema base e raggruppate da una parentesi graffa: CHAT, VOCALI (es. il microfono del telefono), FORM.",
+  "fonte": "JTn5pqm9ecM#4:18-4:48 + voce 4:18-4:48",
+  "frame": "frame-0044.png, frame-0049.png",
+  "ancora": "del telefono o qualsiasi cosa vogliamo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-005",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-007",
+  "tipo": "principio",
+  "contenuto": "Il template di prompt dentro il box \"Istruzioni\" viene marcato con un cerchio arancione etichettato \"IP\": l'autore chiarisce che il prompt/le istruzioni saranno, a livello effettivo, l'unica vera proprieta' intellettuale del progetto — l'unica skill che non cambiera' anche quando gli agenti e le piattaforme sottostanti evolveranno.",
+  "fonte": "JTn5pqm9ecM#5:18-6:00 + voce 5:20-6:00",
+  "frame": "frame-0054.png, frame-0059.png",
+  "ancora": "questo sarà a livello effettivo l'unica vostra proprietà intellettuale",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-005",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-008",
+    "tipo": "motiva",
+    "perche": "Se il prompt e' l'unica IP che conta, allora la sua qualita' (essere ben direzionato) diventa la variabile decisiva spiegata subito dopo con la metafora dei coni."
+   }
+  ]
+ },
+ {
+  "id": "KA-008",
+  "tipo": "principio",
+  "contenuto": "Metafora dei due coni per spiegare cosa significa che un agente e' \"direzionato\" dal proprio prompt verso un obiettivo (rappresentato da una bandierina): un prompt ben direzionato produce una traiettoria stretta (cono blu) che punta dritta all'obiettivo e lo colpisce; un prompt mal direzionato produce una traiettoria larga (cono rosso) che diverge, manca l'obiettivo e puo' continuare a iterare all'infinito senza mai centrarlo (visualizzato con una linea a zig-zag rossa che rimbalza dentro il cono senza mai raggiungere la bandiera).",
+  "fonte": "JTn5pqm9ecM#6:36-7:06 + voce 6:36-7:06",
+  "frame": "frame-0067.png, frame-0072.png",
+  "ancora": "il mio agente è direzionato male",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-007",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-009",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-009",
+  "tipo": "principio",
+  "contenuto": "Le due variabili con cui si misura se un prompt/agente e' efficace, cioe' se sta davvero aiutando il business o no: (1) l'investimento in dollari che rientra dall'utilizzo dell'agente (o il fatturato aumentato grazie ad esso); (2) i token consumati, che rappresentano il costo diretto e vanno minimizzati. Sulla lavagna vengono annotate come \"$, token\" seguito da \"costo ↓↓\".",
+  "fonte": "JTn5pqm9ecM#7:06-7:48 + voce 7:06-7:48",
+  "frame": "frame-0072.png, frame-0077.png",
+  "ancora": "le due variabili che noi abbiamo per decidere quanto un prompt sia efficace",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-008",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-012",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-010",
+  "tipo": "definizione",
+  "contenuto": "Il box \"LLM (ragionamento)\" dello schema viene sottolineato ed esplicitato: ogni agente viene collegato a un modello linguistico specifico — GPT, Claude, Gemini \"o chi per esso\", a seconda del caso — che gli fornisce la capacita' di ragionamento. (Nota: la trascrizione automatica del parlato rende i nomi dei modelli in modo distorto, come \"CVT\" per GPT e \"Clod\" per Claude; il senso resta comunque chiaro dal contesto.)",
+  "fonte": "JTn5pqm9ecM#8:18 + voce 8:18",
+  "frame": "frame-0084.png",
+  "ancora": "andremo a collegare un LM, quindi c'è CVT, Clod, Gemini",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-005",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-011",
+  "tipo": "dato",
+  "contenuto": "Oltre agli strumenti esterni (Google, WolframAlpha, Python, API Meteo), un agente AI ha a disposizione anche tool nativi forniti direttamente dall'infrastruttura del provider (Anthropic, OpenAI, ecc.) — l'autore cita esplicitamente \"Read\" e \"Bash\" come esempio di questi strumenti nativi (lo stesso tipo di tool che si trovano in Claude Code), annotati sulla lavagna sotto la scritta \"Tool\" aggiunta accanto al box Strumenti.",
+  "fonte": "JTn5pqm9ecM#8:48-9:18 + voce 9:18",
+  "frame": "frame-0089.png, frame-0094.png",
+  "ancora": "abbiamo anche la possibilità di avere uno strumento che si chiama read, uno strumento che si chiama bash",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-005",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-012",
+    "tipo": "motiva"
+   }
+  ]
+ },
+ {
+  "id": "KA-012",
+  "tipo": "principio",
+  "contenuto": "Ogni chiamata a un servizio esterno via API (sia per il ragionamento LLM, sia per l'uso di un tool) ha un costo economico: piu' un servizio terzo viene chiamato, piu' aumenta la spesa in token/denaro. Sulla lavagna questo viene annotato con \"API\" seguito dal simbolo \"$\" accanto al box Strumenti.",
+  "fonte": "JTn5pqm9ecM#9:48-10:18 + voce 10:18",
+  "frame": "frame-0099.png, frame-0104.png",
+  "ancora": "più chiamiamo un servizio terzo, quindi più volte lo utilizziamo, peggio è per noi perché pagheremo molto di più",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-009",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-035",
+    "tipo": "precede",
+    "perche": "Questo stesso principio (chiamata esterna = costo) viene ridisegnato identico, con la stessa annotazione API+$, sul nuovo diagramma del loop dei task (\"Invocare LLM\"/\"Invocare Strumento\")."
+   }
+  ]
+ },
+ {
+  "id": "KA-013",
+  "tipo": "struttura",
+  "contenuto": "Completamento finale dello schema \"Cos'e' un Agente AI\": viene aggiunta una seconda freccia arancione curva che parte dal box \"Memoria\" e sale dentro l'\"Agente AI\" (simmetrica a quella gia' presente da \"LLM\"), a rappresentare che l'agente deve avere una memoria collegata per potersi ricordare le cose e svolgere determinati compiti. Lo schema risulta cosi' completo con entrambe le frecce (LLM e Memoria) entranti nell'agente.",
+  "fonte": "JTn5pqm9ecM#10:48 + voce 10:48",
+  "frame": "frame-0109.png",
+  "ancora": "noi dobbiamo inserire una memoria all'interno di questo agente per permettergli di fare determinate cose",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-005",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-014",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-014",
+  "tipo": "struttura",
+  "contenuto": "Passaggio dalla teoria (Excalidraw) alla pratica: apertura della piattaforma n8n cloud (account \"giovannib\", coerente con l'autore Giovanni Beggiato) su un workflow vuoto, per replicare dal vivo lo schema \"Cos'e' un Agente AI\" appena disegnato. L'autore precisa che non e' un corso su n8n in se': lo strumento serve solo a mostrare il parallelismo pratico con la teoria. (La trascrizione automatica del parlato rende \"n8n\" come \"NA10\"/\"NA dieci\".)",
+  "fonte": "JTn5pqm9ecM#11:00-11:18 + voce 11:00, 11:18-11:24",
+  "frame": "frame-0111.png, frame-0113.png",
+  "ancora": "Una volta discusso questo, quindi, andiamo dentro NA10 e vediamo nella pratica",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-005",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-015",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-015",
+  "tipo": "procedura",
+  "contenuto": "Primo passo pratico per costruire l'agente in n8n: cercare il nodo \"AI Agent\" nel pannello di ricerca dei trigger/nodi e importarlo nel workflow — corrisponde al box centrale \"Agente AI\" dello schema teorico.",
+  "fonte": "JTn5pqm9ecM#11:18 + voce 11:18",
+  "frame": "frame-0114.png",
+  "ancora": "abbiamo detto che inizialmente dobbiamo avere questo, quindi un agente AI, quindi quello che andremo a fare sarà andare a premere AI agent",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-005",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-016",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-016",
+  "tipo": "procedura",
+  "contenuto": "Secondo passo: collegare il connettore \"Chat Model*\" (obbligatorio) del nodo AI Agent — corrisponde al box \"LLM\" dello schema. Viene scelto \"OpenAI Chat Model\" tra l'elenco dei Language Model disponibili (Google Vertex, Groq, Mistral, MiniMax, Moonshot Kimi, Ollama, OpenRouter, Vercel AI Gateway, xAI Grok, OpenAI...). Nel pannello di configurazione, la credenziale usata non e' una API key OpenAI propria ma \"n8n Connect\" (crediti gratuiti forniti da n8n, badge \"$3.98 remaining\" visibile in quel momento).",
+  "fonte": "JTn5pqm9ecM#11:42-11:54 + voce 11:48",
+  "frame": "frame-0118.png, frame-0119.png, frame-0120.png",
+  "ancora": "gli dirò le mie credenziali che ho già connesso ovviamente al mio ehm al mio NA10",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-015",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-010",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-017",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-017",
+  "tipo": "procedura",
+  "contenuto": "Terzo passo: collegare il connettore \"Memory\" del nodo AI Agent — corrisponde al box \"Memoria\" dello schema. Viene aggiunto il nodo \"Simple Memory\".",
+  "fonte": "JTn5pqm9ecM#12:06 + voce 12:06",
+  "frame": "frame-0122.png",
+  "ancora": "mini-toolbar a comparsa sopra il nodo che mostra tre icone",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-013",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-016",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-019",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-018",
+  "tipo": "dato",
+  "contenuto": "Cercando un nodo da collegare al connettore \"Tool\" in n8n, il pannello di ricerca mostra tra i risultati una sezione in evidenza \"Human in the Loop\" con tre nodi che richiedono approvazione umana per l'esecuzione: \"Send Email\", \"Microsoft Teams\", \"WhatsApp Business Cloud\" (tutti con sottotitolo \"Request human approval for tools\"); sotto, una sezione \"Vector Stores\" elenca: Simple Vector Store, Supabase Vector Store, Postgres PGVector Store, Redis Vector Store, Milvus Vector Store, Azure AI Search Vector Store.",
+  "fonte": "JTn5pqm9ecM#12:18 + voce 12:18-12:24",
+  "frame": "frame-0124.png",
+  "ancora": "Request human approval for tools",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-017",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-019",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-019",
+  "tipo": "procedura",
+  "contenuto": "Quarto passo: collegare al connettore \"Tool\" del nodo AI Agent lo strumento \"Send a message in Gmail\" — corrisponde a una voce del box \"Strumenti\" dello schema (l'autore lo introduce parlando di \"Google\"/Gmail). Nel pannello di configurazione, il campo \"Tool Description\" viene lasciato su \"Set Automatically\" (impostazione automatica, non scritta a mano), Resource=\"Message\", Operation=\"Send\".",
+  "fonte": "JTn5pqm9ecM#12:24 + voce 12:24-12:48",
+  "frame": "frame-0125.png",
+  "ancora": "Tool description fatta automaticamente e diciamo che vogliamo mandare una mail a",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-018",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-020",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-020",
+  "tipo": "dato",
+  "contenuto": "Nel nodo AI Agent, il campo \"Prompt (User Message)\" viene lasciato con \"Source for Prompt (User Message)\" = \"Connected Chat Trigger Node\" e valore espressione {{ $json.chatInput }}: per task semplici come questa demo, il prompt non viene scritto a mano ma estratto automaticamente dalla richiesta digitata dall'utente in chat. L'autore collega questo comportamento al box \"Richiesta\" dello schema teorico.",
+  "fonte": "JTn5pqm9ecM#13:06-13:24 + voce 13:06-13:24",
+  "frame": "frame-0132.png, frame-0135.png",
+  "ancora": "il mio prompt viene, diciamo, estratto dalla richiesta dell'utente",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-019",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-005",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-021",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-021",
+  "tipo": "esempio",
+  "contenuto": "Prima esecuzione reale dell'agente appena costruito: l'utente scrive in chat \"Hey, per favore, manda un'email a Giovanni salutandolo. Capisci tu in maniera automatica oggetto e testo della mail per raggiungere il mio [obiettivo]\", senza specificare oggetto o testo. L'agente genera autonomamente Subject=\"Un saluto\" e Message=\"Ciao Giovanni,\\n\\nSpero tu stia bene! Volevo solo prendermi un momento per salutarti.\\n\\nUn caro saluto,\\n\\n[Il Tuo Nome]\", invia realmente la mail (confermata anche sul telefono del relatore) e risponde in chat: \"L'email è stata inviata a Giovanni con un saluto. Se hai bisogno di ulteriori modifiche o di inviare un'altra email, fammi sapere.\"",
+  "fonte": "JTn5pqm9ecM#13:54-15:42 (chat + log di esecuzione) + voce 13:54-15:42",
+  "frame": "frame-0140.png, frame-0146.png, frame-0156.png",
+  "ancora": "L'email è stata inviata a Giovanni con un saluto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-020",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-022",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-022",
+  "tipo": "dato",
+  "contenuto": "Dettaglio dell'albero di esecuzione (Logs) della prima run: il nodo AI Agent chiama in sequenza Simple Memory -> OpenAI Chat Model -> Send a message in Gmail -> Simple Memory -> OpenAI Chat Model — cioe' il modello e la memoria vengono richiamati due volte, prima e dopo la chiamata al tool Gmail. Esecuzione completa: \"Success in 10.263s\"; il nodo AI Agent da solo: \"Success in 2.689s · ~348 Tokens\".",
+  "fonte": "JTn5pqm9ecM#14:30 + voce 14:30-15:00",
+  "frame": "frame-0146.png",
+  "ancora": "il modello e la memoria vengono richiamati due volte: prima e dopo la chiamata al tool Gmail",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-021",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-023",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-023",
+  "tipo": "dato",
+  "contenuto": "Alla prima interrogazione della memoria in questa esecuzione, l'output mostra \"chatHistory\": [] (array vuoto, \"[empty array]\"): la memoria era vuota, quindi l'agente non trova nulla di pregresso e deve elaborare la richiesta rivolgendosi da zero al modello OpenAI.",
+  "fonte": "JTn5pqm9ecM#15:00-16:06 + voce 15:00",
+  "frame": "frame-0151.png, frame-0162.png",
+  "ancora": "perché non ha trovato niente in memoria e ha processato poi la nostra",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-022",
+    "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-024",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-024",
+  "tipo": "esempio",
+  "contenuto": "Seconda interazione in chat, per testare la memoria conversazionale: l'utente chiede \"Hey, sapresti dirmi qual è l'ultima richiesta che ti ho fatto in questa chat?\" e l'agente risponde correttamente \"L'ultima richiesta che mi hai fatto è stata di inviare un'email a Giovanni per salutarlo. Se hai bisogno di ulteriori informazioni o aiuto, fammi sapere!\" — dimostrando che ricorda lo scambio precedente. Esecuzione: \"Success in 2.279s · ~384 Tokens\"; questa volta l'albero dei log chiama solo Simple Memory -> OpenAI Chat Model -> Simple Memory, senza mai richiamare il tool Gmail.",
+  "fonte": "JTn5pqm9ecM#16:24 + voce 16:24",
+  "frame": "frame-0165.png",
+  "ancora": "L'ultima richiesta che mi hai fatto è stata di inviare un'email a Giovanni",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-023",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-025",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-026",
+    "tipo": "precede"
+   }
+  ]
+ },
+ {
+  "id": "KA-025",
+  "tipo": "dato",
+  "contenuto": "Formato con cui \"Simple Memory\" salva la cronologia della conversazione (visibile nell'output della seconda esecuzione): turni alternati \"Human:\"/\"AI:\", incluso il momento in cui l'AI ha invocato il tool Gmail — registrato letteralmente come 'Calling Send_a_message_in_Gmail with input: {\"Subject\":\"Un saluto\",\"Message\":\"...\",\"id\":\"call_...\"}' seguito dal risultato grezzo del tool (id, threadId, labelIds) e infine dalla risposta in linguaggio naturale dell'AI all'utente.",
+  "fonte": "JTn5pqm9ecM#16:24 + voce 16:24",
+  "frame": "frame-0165.png",
+  "ancora": "Calling Send_a_message_in_Gmail with input",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-024",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-026",
+  "tipo": "principio",
+  "contenuto": "L'agente decide autonomamente, in base al proprio ragionamento sull'obiettivo, se invocare o no un tool: nella seconda esecuzione (una domanda sulla memoria, non sull'invio di email) il tool Gmail non viene mai chiamato, e il workflow ha comunque successo. L'autore lo sottolinea esplicitamente come dimostrazione della \"potenza\" dell'agente: l'uso di uno strumento non e' automatico ma condizionato.",
+  "fonte": "JTn5pqm9ecM#16:54-18:06 + voce 18:06",
+  "frame": "frame-0170.png, frame-0182.png",
+  "ancora": "questo strumento non è stato mai chiamato, quindi vedete la potenza",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-024",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-034",
+    "tipo": "precede",
+    "perche": "Questo stesso principio (l'agente sceglie da solo se chiamare il tool) e' quello che il diagramma teorico del capitolo successivo formalizza nel rombo 'Obiettivo raggiunto?'."
+   }
+  ]
+ },
+ {
+  "id": "KA-027",
+  "tipo": "dato",
+  "contenuto": "Il nodo \"Simple Memory\" espone un parametro \"Context Window Length\" impostato su 5, definito a schermo come \"how many past interactions the model receives as context\": in pratica la memoria conserva al massimo le ultime 5 interazioni/conversazioni.",
+  "fonte": "JTn5pqm9ecM#17:24-17:30 + voce 17:30",
+  "frame": "frame-0175.png",
+  "ancora": "5, vuol dire teniamo al massimo cinque conversazioni",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-017",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-028",
+  "tipo": "avvertimento",
+  "contenuto": "n8n avvisa esplicitamente, nel pannello del nodo Simple Memory, che questo tipo di memoria e' limitato: \"This node stores memory locally in the n8n instance. It is not compatible with Queue Mode or Multi-Main setups, as memory will not be shared across workers. For production use cases such as scaling, consider using an external memory store such as Redis, Postgres, or another persistent memory node.\"",
+  "fonte": "JTn5pqm9ecM#17:24 + voce 17:24 (box informativo a schermo)",
+  "frame": "frame-0175.png",
+  "ancora": "This node stores memory locally in the n8n instance. It is not compatible with Queue Mode or Multi-Main setups",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-027",
+    "tipo": "parte-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-029",
+  "tipo": "avvertimento",
+  "contenuto": "Quando in un'esecuzione l'agente non usa alcun tool, n8n mostra un warning esplicito sul nodo AI Agent (icona triangolo arancione): \"None of your tools were used in this run. Try giving your tools clearer names and descriptions to help the AI\" — un suggerimento pratico: dare ai tool nomi e descrizioni piu' chiare aiuta l'AI a capire quando usarli.",
+  "fonte": "JTn5pqm9ecM#17:30-17:42 + voce 17:42",
+  "frame": "frame-0176.png, frame-0178.png",
+  "ancora": "None of your tools were used in this run. Try giving your tools clearer names and descriptions to help the AI",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-026",
+    "tipo": "esempio-di"
+   }
+  ]
+ },
+ {
+  "id": "KA-030",
+  "tipo": "procedura",
+  "contenuto": "Per scrivere un prompt complesso a mano invece di lasciarlo estratto automaticamente dalla chat, si cambia il campo \"Source for Prompt (User Message)\" da \"Connected Chat Trigger Node\" a \"Define below\", il che apre un editor \"Expression\" con l'avviso \"Anything inside {{ }} is JavaScript\": tutto cio' che sta dentro le doppie graffe viene valutato come JavaScript.",
+  "fonte": "JTn5pqm9ecM#17:42-17:48 + voce 17:48",
+  "frame": "frame-0178.png, frame-0179.png",
+  "ancora": "Anything inside {{ }} is JavaScript",
+  "confidenza": "osservato",
+  "relazioni": [
+   {
+    "verso": "KA-020",
+    "tipo": "contraddice",
+    "perche": "E' l'alternativa esplicita al comportamento di default (prompt auto-estratto dalla chat) descritto in KA-020: qui il prompt viene invece scritto/definito manualmente."
+   },
+   {
+    "verso": "KA-035",
+    "tipo": "precede"
+   }
+  ]
+ }
+]

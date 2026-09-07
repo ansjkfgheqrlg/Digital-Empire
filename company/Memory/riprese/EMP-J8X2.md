@@ -23,17 +23,17 @@ Onda A catturata (6 pagine), 1 rapporto scritto su 9.
 ## LA PRIMA COSA DA FARE ALLA RIPRESA
 
 **Misurare sul disco.** Non fidarsi di questa riga — vale anche per lei.
-Due sentinelle erano in corso alla chiusura della chat precedente e la loro notifica è andata persa.
-Cercare questi quattro file:
+**Entrambe le sentinelle hanno consegnato prima della chiusura**: i quattro file ci sono e sono
+committati (verificati sul disco, non riferiti). Restano da rileggere quando servono:
 
 ```
 [FATTI E COMMITTATI 2026-09-07 08:28]
 competitor/Andrei Pascu/site-study/reports/13-apsales-STACK-E-TOKEN.md   266 righe
 competitor/Andrei Pascu/site-study/reports/13-apsales-ATLANTE.md         505 righe
 
-[DA VERIFICARE SUL DISCO — la sentinella era ancora in corso]
-competitor/Andrei Pascu/site-study/reports/14-17-famiglia-out-CONFRONTO.md
-competitor/Andrei Pascu/site-study/reports/14-17-famiglia-out-ATLANTE.md
+[FATTI E COMMITTATI 2026-09-07 — tutti e quattro consegnati]
+competitor/Andrei Pascu/site-study/reports/14-17-famiglia-out-CONFRONTO.md  327 righe
+competitor/Andrei Pascu/site-study/reports/14-17-famiglia-out-ATLANTE.md    425 righe
 ```
 
 **Gia' incassato da apsales.eu** (verificato, non riferito): stack **React + TanStack Start** provato
