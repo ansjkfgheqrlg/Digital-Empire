@@ -1,0 +1,38 @@
+{
+  "slug": "the-midnight-ledger",
+  "eventi": [
+    {
+      "quando": "2026-09-06T10:16:35",
+      "cosa": "progetto_creato",
+      "nicchia": "paranormal bookshop cozy mystery",
+      "autore": "Maren Ashcroft"
+    },
+    {
+      "quando": "2026-09-06T19:55:15",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 8,
+      "parole": 13529,
+      "media_per_capitolo": 1691
+    },
+    {
+      "quando": "2026-09-06T20:05:40",
+      "cosa": "blocco",
+      "esito": "bocciato",
+      "capitoli": 16,
+      "parole": 26043,
+      "media_per_capitolo": 1628,
+      "motivi": [
+        "3 righe con lineette lunghe fuori dal dialogo. Toglile ora: a fine libro sono state 193 righe da riscrivere a mano."
+      ]
+    },
+    {
+      "quando": "2026-09-06T20:05:53",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 16,
+      "parole": 26043,
+      "media_per_capitolo": 1628
+    }
+  ]
+}
