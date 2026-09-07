@@ -193,6 +193,47 @@ Empire ha 25 pezzi finiti mai pubblicati: la Fabbrica Siti non ne aggiunge un ve
 
 ---
 
+## §11 — La cassa ha un gradino
+
+Un prodotto one-shot **non manda mai** dal bottone di vendita direttamente al pagamento. In mezzo
+sta una **pre-cassa**: meno di uno schermo e mezzo, sei elementi in quest'ordine —
+
+1. occhiello in corsivo che riafferma l'atto (*«Stai acquistando…»*)
+2. nome del prodotto, grande
+3. istruzione operativa **e codice sconto, se c'è**
+4. la cifra, isolata
+5. la condizione attaccata alla cifra (*«Una tantum»*)
+6. il bottone
+
+**Il codice sconto vive lì e non prima.** Nella pagina di vendita abbassa il prezzo percepito mentre
+il lettore sta ancora decidendo; nella pre-cassa toglie attrito quando ha già deciso. E il codice è
+**a scadenza o legato alla sessione**: uno sconto permanente non è uno sconto, è il prezzo.
+
+*Origine: `andrei-copy.com/outfunnel-1` e `/armadeggon-strp`, misurate il 2026-09-07 — ADR-024.*
+
+*Non derogabile.*
+
+---
+
+## §12 — L'accento si spende una volta
+
+Una pagina accende **un solo** colore d'azione e lo spende su **una sola** parola: quella che porta
+i soldi, non quella che descrive il mestiere.
+
+Misurato su quattro pagine dello stesso guscio: conteggio d'uso dell'accento nel DOM pari a **1**
+per pagina — su `/asa` è evidenziato *monetizzare*, non *copywriting*. Un'occorrenza su quattordici,
+il **7%**, e regge più di qualunque bottone acceso.
+
+Il guscio (fondo, testo, piede) **non cambia mai** fra le pagine di uno stesso sito: cambia solo
+l'accento, e cambia per prodotto.
+
+*Origine: `/define` `#efab00` · `/asa` `#06a506` · `/outfunnel-1` `#13989a`, misurate il 2026-09-07
+— ADR-024.*
+
+*Non derogabile.*
+
+---
+
 ## Come si cambia questa legge
 
 Non si cambia in una conversazione. Si cambia con un **ADR** in `company/Memory/decisions/`, che
@@ -207,5 +248,13 @@ contraddicevano e nessuna aveva torto.
 - `canone/canone.css` · `canone/canone.json` — i valori
 - `PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md` — l'architettura completa, 6 livelli, 5 fasi
 - `company/Memory/decisions/ADR-023-fabbrica-siti-due-corsie.md` — la decisione delle corsie
+- `company/Memory/decisions/ADR-024-canone-v2-primo-strato.md` — §11 e §12, i pattern `pre-cassa` e
+  `pagina-ponte`, i quattro controlli in attesa del gate
 - `competitor/Andrei Pascu/site-study/reports/11-armageddon-ATLANTE-VISIVO.md` — le misure da cui
   nasce metà di questo canone
+- `competitor/Andrei Pascu/site-study/reports/24-25-27-28-macchina-del-funnel.md` — la macchina del
+  funnel: da qui §11 e §12
+- `competitor/Andrei Pascu/site-study/reports/18-20-apsales-servizi-COSTRUZIONE.md` — il kit
+  condiviso e i due difetti che diventano controlli del gate
+- `competitor/Andrei Pascu/site-study/reports/18-20-apsales-servizi-COPY.md` — l'asimmetria di
+  prezzo fra prodotto a listino e prodotto su misura
