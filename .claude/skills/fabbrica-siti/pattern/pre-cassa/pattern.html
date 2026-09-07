@@ -93,7 +93,8 @@
   font-weight: 700;
   color: var(--fg);
 }
-.num-tabular.cassa__cifra { font-variant-numeric: tabular-nums; }  /* cifra che non balla */
+/* .num-tabular e' gia' del canone (font-variant-numeric: tabular-nums): la cifra
+   non balla senza bisogno di una regola nuova, si applica quella che c'e' gia'. */
 .cassa__condizione {
   margin: 0;
   font-size: clamp(12px, calc(var(--u) * 0.0122222), 18px);   /* 17.6/1440, capture/28 */
