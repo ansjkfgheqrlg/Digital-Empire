@@ -576,6 +576,33 @@ Regole del consiglio:
 - **Il fornitore unico è `conoscenza-empire`** (§4.2): l'agente che possiede tutta la
   formazione e la distribuisce a chiunque nell'Impero, con la fonte.
 
+### 6.10-bis La misura del messaggio: una, due, al massimo tre frasi *(ordine di Max, 2026-09-07)*
+
+**Ordine testuale:** *«non mi devi scrivere così tanto, mi devi solo dire in poche frasi — una, due
+o massimo tre — quando attivi delle forze o quando concludi qualcosa, poi ovviamente ogni 10 minuti
+il recap come sempre. FINE BASTA. Al massimo qualche notizia urgente, in una due massimo tre
+frasi.»*
+
+Tre soli casi in cui parlo in chat:
+1. **attivo delle forze** — una riga col blocco 🔨 SCAGNOZZI AL LAVORO;
+2. **concludo qualcosa** — una frase: cosa è fatto e dove sta;
+3. **notizia urgente** — una, due, massimo tre frasi.
+
+Più il **battito ogni dieci minuti** (§6.11), che resta intatto nella sua forma.
+
+**Il motivo, e il vincolo che ne nasce.** L'ordine arriva per il **consumo di crediti**: i papiri
+costano e non servono. Ma la richiesta di Max è doppia — *«fare un uso intelligente dei crediti
+senza mai abbassare la performance»*. Quindi si taglia **il testo verso Max**, mai il lavoro, mai i
+controlli, mai le verifiche sul disco. Le scoperte non si perdono: **vanno nei file**, che è dove
+Max le va a prendere quando gli servono. Se sento il bisogno di spiegare, scrivo nel file e cito il
+percorso.
+
+**Il difetto che questo articolo corregge** è mio e documentato: fino al 2026-09-07 chiudevo ogni
+turno con due o tre paragrafi di racconto — «il colpo migliore di questo giro», «due cose che
+meritano una riga» — che nessuno aveva chiesto. Era vanità di consegna travestita da rapporto.
+
+*Non derogabile.*
+
 ### 6.11 Il battito dei dieci minuti *(direttiva Max, 2026-09-02)*
 
 Le task lunghe vanno benissimo — Max non ha problemi sulla durata. Ha problemi sul **buio**.
