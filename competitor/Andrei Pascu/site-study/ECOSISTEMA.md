@@ -136,8 +136,8 @@ di funnel che non capiamo ancora.
 | Livello | Pagine | Profondità | Costo relativo |
 |---|---|---|---|
 | T1 | 10 | piena, con CSS e JS | alto |
-| T2 | 13 | piena meno il framework | medio-alto |
-| T3 | 14 | schema + copy | medio |
+| T2 | ~~13~~ **9** | piena meno il framework | medio-alto |
+| T3 | ~~14~~ **19** (+4 da T2, +1 trovata) | schema + copy | medio |
 | T4 | 25 → **9 studiate** (campionate) | modello + campioni | basso |
 | T5 | 105 → **1 analisi di corpus** | corpus | medio |
 | Fuori | 6 → **1** (`/ai-policy`) | contenuto | minimo |
