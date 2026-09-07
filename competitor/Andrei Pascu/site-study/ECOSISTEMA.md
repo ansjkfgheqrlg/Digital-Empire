@@ -147,24 +147,19 @@ di funnel che non capiamo ancora.
 
 ---
 
-## STATO — aggiornato ad ogni chiusura
+## STATO — contato sul disco da `scripts/stato_onde.py`
 
-| | Fatte | Totale onda |
-|---|---|---|
-| Onda A | 0 | 9 |
-| Onda B | 0 | 8 |
-| Onda C | 0 | 7 |
-| Onda D | 0 | 14 |
-| Onda E | 0 | 9 |
-| Onda F | 0 | 1 |
-| Onda G | 0 | 4 |
+> Non si scrive a mano. Una pagina e' **chiusa** solo con `scheda.json` + rapporto + ATLANTE + COPY.
 
-**Già a disposizione da prima:** 10 catture, 10 rapporti (2.362 righe), 1 studio pieno (armageddon).
-
-**Prossima azione:** `site_capture.py` **v2** (Passo 1 del dossier 33) — prima di correre, si aggiusta
-la macchina. Poi Onda A.
-
----
+| Onda | Catturate | Chiuse (4 file) | Attese |
+|---|---|---|---|
+| Onda A | 9 | 0 | 9 |
+| Onda B | 1 | 0 | 8 |
+| Onda C | 0 | 0 | 7 |
+| Onda D | 0 | 0 | 14 |
+| Onda E | 0 | 0 | 9 |
+| Onda F | 0 | 0 | 1 |
+| Onda G | 0 | 0 | 4 |
 
 ## Connessioni
 - `PIANO-MAESTRO/33-PIANO-STUDIO-TOTALE-ANDREI-PASCU.md` — il piano, con i sette giri di critica
