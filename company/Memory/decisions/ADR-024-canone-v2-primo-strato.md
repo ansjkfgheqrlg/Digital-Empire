@@ -83,6 +83,13 @@ La legge §10 dice: *due usi = pattern*. Entrambi lo soddisfano.
 | `pre-cassa` | `/outfunnel-1` · `/armadeggon-strp` | il gradino di §11, in forma costruibile |
 | `pagina-ponte` | `/define` · `/asa` | una sezione, un video, **un solo bottone**, zero prezzo, zero prova (35-36 blocchi di testo contro i 259 di una pagina di vendita). Serve a spostare, non a convincere. Porta dentro la riga di controllo del consumo: *«Ti consiglio di vedere e finire il video prima di cliccare il pulsante per capirne i contenuti.»* |
 
+**Terzo pattern, deciso e da costruire:** `badge-incluso-nel-pacchetto` — misurato su
+`14-arma-outemail` `[y=23953]` e `17-arma-outviral` `[y=1290, y=9408]`, quindi due usi. È un `<p>`
+maiuscolo, 15,2 px, peso 700, colore `#bc0807` — **lo stesso identico colore della barra sticky di
+acquisto e di nient'altro nella pagina**. Il colore fa da filo fra «questo è incluso» e «compra
+qui», ed è §12 applicato a un bundle: un accento, due punti, zero dispersione. Sostituisce il
+bottone-prezzo del prodotto singolo quando il prodotto entra in un pacchetto.
+
 Restano **in attesa di un secondo uso** (registrati, non ancora pattern): il calcolatore/diagnostico
 data-driven di `apsales.eu` — struttura `{title, steps, constraint, effect}`, la Teoria dei Vincoli
 resa componente — e il blocco di copy *«Lavori da solo? Vale lo stesso. Al posto del team, il
@@ -103,8 +110,23 @@ tratta come pezzo di libreria).
 4. **Onestà dell'input:** una sezione con campi editabili in cui un campo non entra nel calcolo
    mostrato → FAIL. *(difetto misurato nel calcolatore ROI di `apsales.eu/landing-page`.)*
 
-I controlli 3 e 4 nascono da **difetti veri trovati addosso a un concorrente**, non da teoria: è la
-regola dei quattro strati — anche i difetti degli altri diventano gate.
+5. **Anni scritti a mano nel copy:** un'espressione tipo «nel 2025» dentro il testo di una pagina di
+   vendita → WARN con il numero di riga, sempre. *(difetto misurato il 2026-09-07: `/outemail` sul
+   negozio vivo dice «E adesso, nel **2025**… L'email marketing è troppo usato», mentre la sua copia
+   di lancio su armageddon — catturata lo stesso giorno, stessa frase — dice «nel **2026**».
+   Qualcuno ha aperto l'editor e ha aggiornato solo la copia: **la pagina che vende tutto l'anno è
+   rimasta indietro di un anno**, e si ripresenterà a ogni capodanno.)*
+
+6. **Numero critico dentro un'immagine:** un prezzo, una scadenza o una garanzia resi come immagine
+   con `alt` vuoto → FAIL. *(difetto misurato: il prezzo di outEmail, 139 €, è un'immagine con
+   `alt=""` **su entrambe le versioni**, originale e copia. Un lettore di schermo non lo sente, un
+   motore di ricerca non lo indicizza, e nessun test automatico se ne accorge.)*
+
+I controlli dal 3 al 6 nascono da **difetti veri trovati addosso a un concorrente**, non da teoria:
+è la regola dei quattro strati — anche i difetti degli altri diventano gate.
+
+*Controlli 5 e 6 aggiunti il 2026-09-07 pomeriggio, stesso giorno dell'ADR, appena misurati: un ADR
+si allarga il giorno in cui il fatto arriva, non alla revisione successiva.*
 
 ---
 

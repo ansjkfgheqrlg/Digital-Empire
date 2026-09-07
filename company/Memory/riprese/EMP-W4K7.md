@@ -221,6 +221,17 @@ video piu' lungo del lotto (133 minuti, 494 scene contro le 376 di v06).
 per collisione con un'altra sessione attiva sullo stesso repo — vista in `ListAgents`: sessioni
 `digital-empire-*` multiple, oltre a questa). HEAD tornato identico a origin/main: rimosso.
 
+### CHECKPOINT 2026-09-07 13:0x — contesto chat saturo, Max ordina checkpoint. CP-20260907-63YC
+
+**Atomi v06 e v05 saldati e puliti** (`unisci_atomi.py`): v06 228 atomi/427 archi/1 componente,
+v05 72 atomi/151 archi/1 componente, zero archi rotti/orfani/ancore inventate su entrambi.
+`v08` 252/393, `v09` 126/494, **6 sentinelle in volo al momento di questo checkpoint** (v08
+253-273/274-294/295-315, v09 127-147/148-168/169-189).
+
+**Se questa chat continua a saturarsi:** apri una chat NUOVA e di' `EMP-W4K7`. Il dettaglio
+completo e aggiornato sta in [CP-20260907-63YC](../checkpoints/CP-20260907-63YC.md) — leggilo
+per intero prima di ripartire, e' piu' fresco di questo file per lo stato numerico esatto.
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte
