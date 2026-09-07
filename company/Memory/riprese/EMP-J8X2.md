@@ -20,6 +20,43 @@ Onda A catturata (6 pagine), 1 rapporto scritto su 9.
 
 ---
 
+## AGGIORNAMENTO — 2026-09-07 pomeriggio (tutto misurato sul disco)
+
+**Onda A: 9/9 catturate. Onda B: 8/8 catturate.** Comando che dice sempre la verità, perché conta
+sul disco e non si fida di nessuna riga scritta a mano:
+
+```
+python "competitor/Andrei Pascu/site-study/scripts/stato_onde.py"
+```
+
+Fatto in questo giro, tutto committato:
+- **Pre-mortem dell'esecuzione** (`site-study/PRE-MORTEM-ESECUZIONE.md`) — chiude l'obbligo 5 di
+  GOD EMPEROR DOOM. Tre cause di fallimento già vive, non previste: zero teardown di copy su 16
+  rapporti, 5 righe assorbite dalla Fabbrica contro ~2.400 di rapporti, tabella di stato che
+  dichiarava 0 catture su un'onda che ne aveva 6.
+- **`scripts/stato_onde.py`** — la contromisura unica: una pagina è "chiusa" solo con quattro file
+  (scheda + rapporto + ATLANTE + COPY), e la sezione STATO di `ECOSISTEMA.md` la riscrive lui.
+- **La macchina del funnel** (`reports/24-25-27-28-macchina-del-funnel.md`): quattro pagine di
+  Onda B non vendono niente, sono i gradini verso la cassa. Triage corretta in `ECOSISTEMA.md`
+  nello stesso turno. `/acquista-v101` è una pre-cassa nuova, non era in elenco: **l'Onda D va
+  riaperta più grande di 14 pagine**.
+- **ADR-024** — la legge della Fabbrica incassa §11 (la cassa ha un gradino) e §12 (l'accento si
+  spende una volta), più due pattern decisi e quattro controlli per `gate_siti.py`.
+  Assorbimento della legge: **da 5 righe a 14**.
+- Rapporti nuovi: `18-20-apsales-servizi-COPY.md` (3.514 parole) e
+  `18-20-apsales-servizi-COSTRUZIONE.md` (4.844 parole).
+
+**✅ CHIUSA la discrepanza `RevealFooter`** (era «da verificare a mano»): letto il codice di
+`RevealFooter-B34lvwld.js`, il wordmark blu è un `div` in flusso normale sempre visibile; il
+pannello `bg-blue` `fixed` dentro `clipPath: inset(0)` è uno sticky reveal che si scopre con
+`a = 1 - top/innerHeight` mentre si scorre. Lo screenshot coglie il fotogramma `a≈0`: **non era un
+bug di cattura, era una foto di un'animazione legata allo scroll.**
+
+**Debito aperto e misurato:** teardown di copy mancanti — 6 pagine di Onda A, 8 di Onda B (lo
+elenca `stato_onde.py` da solo, sezione DEBITO DI COPY).
+
+---
+
 ## LA PRIMA COSA DA FARE ALLA RIPRESA
 
 **Misurare sul disco.** Non fidarsi di questa riga — vale anche per lei.
