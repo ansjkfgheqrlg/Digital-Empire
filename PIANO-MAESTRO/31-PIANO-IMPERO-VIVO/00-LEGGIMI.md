@@ -2,7 +2,7 @@
 
 > **Aperto:** 2026-09-06 · **Committente:** Max · **Esecutore:** EMPERATOR
 > **Assetto:** GOD EMPEROR DOOM · **Ripresa:** EMP-MCC4
-> **Stato:** V1 in costruzione
+> **Stato:** V2 scritta (2026-09-07) — in attesa della critica 2
 
 ---
 
@@ -128,17 +128,17 @@ domanda «perché il piano dice questo e non quello».
 | `dati/censimento-01c-sintesi-organi.md` | **7 organi che nessuno chiama · 0 sentinelle automatiche su 5 · due gate con verdetti opposti · il gate pre-commit che mente** | ✅ 468 righe |
 | `dati/censimento-02-collegamenti.md` | l'infrastruttura dei collegamenti: bus, contratti, registri, flow, tracce | ✅ §1-4 · §5-6 passate a `02b` |
 | `dati/censimento-02b-mappa-collegamenti.md` | la mappa dei passaggi di consegne: 12 fonti spogliate, ~349 righe di tabella | ✅ 619 righe |
-| `dati/censimento-02d-sintesi-collegamenti.md` | matrice, ecosistemi isolati, i 10 da accendere, le bugie dell'architettura | 🔄 |
+| `dati/censimento-02d-sintesi-collegamenti.md` | **328 passaggi · 21 con contratto · 0 INTER mai avvenuti · 10 schemi · i 10 da accendere per primi** | ✅ 622 righe |
 | `dati/censimento-03a-popolazione.md` | **popolazione agenti, specifica C4 esatta, 5 ondate, un guasto vero in `census.py`** | ✅ 1.426 righe |
 | `dati/censimento-03b-regolamento-forze.md` | la gerarchia delle forze già in vigore (ADR-015) | ✅ §1 |
 | `dati/censimento-03c-addestramento.md` | **19 fonti · minimo comune 10 righe · modulo d'ingaggio in 3 varianti · costo 180-550 token per forza** | ✅ 1.064 righe |
 | `dati/censimento-03b2-cadute.md` | **33 cadute reali · 6 famiglie di recidiva · 29 regole, 12 da rendere meccaniche** | ✅ |
 | `dati/censimento-04-motori.md` | i motori della famiglia `Outreach/` | ✅ parziale |
-| `dati/censimento-04b-motori.md` | tutti gli altri motori fuori da `company/` | 🔄 462 righe |
+| `dati/censimento-04b-motori.md` | **25 motori: 9 vivi, 3 rotti dallo stesso guasto, 8 orfani · due involucri gia' vivi** | ✅ 613 righe |
 | `dati/censimento-01-vivo.md` · `dati/censimento-03-forze.md` | resti dei due doom bot caduti alla prima ondata — conservati, non cancellati (L1) | ⚠️ 12 e 3 righe |
 | `V1-PIANO-GENERALE.md` | prima versione | ✅ |
 | `_critica-v1/` | **41 rilievi, 10 FATALI** — architettura (13) · esecuzione (12) · verità e omissioni (16) | ✅ |
-| `V2-PIANO-AMPLIATO.md` | seconda versione | ⬜ |
+| `V2-PIANO-AMPLIATO.md` | **seconda versione: 5 inversioni, legge del consumatore quotidiano, NEXUS smontato in 5 funzioni innestate, 10 FATALI su 10 recepiti** | ✅ 1.085 righe |
 | `_critica-v2/` | i rapporti su V2 | ⬜ |
 | `V3-PIANO-ASSESTATO.md` | terza versione | ⬜ |
 | `V4-ESECUTIVO/` | il piano esecutivo espanso, in più documenti | ⬜ |
@@ -208,11 +208,11 @@ meno, e quando cade perde meno.
 | Tappa | Stato | Data |
 |---|---|---|
 | Leggi e metodo fissati | ✅ | 2026-09-06 |
-| Quattro censimenti | 🔄 in corso | 2026-09-06 |
+| Otto censimenti | ✅ 8.120 righe | 2026-09-06 |
 | V1 — piano generale | ✅ | 2026-09-06 |
 | **Critica 1** | ✅ **41 rilievi, 10 FATALI** | 2026-09-06 |
-| **V2 — piano ampliato** | ⬜ **<- SI RIPRENDE DA QUI** | |
-| Critica 2 | ⬜ | |
+| **V2 — piano ampliato** | ✅ **1.085 righe · 41 rilievi recepiti** | 2026-09-07 |
+| **Critica 2** | ⬜ **<- SI RIPRENDE DA QUI** (piu' dura della prima, sulle scelte architetturali) | |
 | V3 — piano assestato | ⬜ | |
 | V4 — piano esecutivo | ⬜ | |
 | **Via alla costruzione** | ⬜ | **solo dopo V4, per ordine di Max** |

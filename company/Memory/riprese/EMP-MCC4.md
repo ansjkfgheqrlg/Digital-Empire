@@ -1,8 +1,8 @@
 # EMP-MCC4 — PIANO IMPERO VIVO (dal 18% vivo al 100%, tutto collegato)
 
-- **Aperto:** 2026-09-05 · **Aggiornato:** 2026-09-06 · **Stato:** APERTO
+- **Aperto:** 2026-09-05 · **Aggiornato:** 2026-09-07 · **Stato:** APERTO
 - **Assetto:** GOD EMPEROR DOOM
-- **Ultimo checkpoint:** [CP-20260906-J8EV](../checkpoints/CP-20260906-J8EV.md)
+- **Ultimo checkpoint:** [CP-20260907-7JDX](../checkpoints/CP-20260907-7JDX.md)
 
 ---
 
@@ -26,35 +26,55 @@ misura, si progetta. Non si tocca. Ordine esplicito di Max del 2026-09-06.
 
 ## 2. DOVE SI RIPRENDE — SUBITO
 
-**Il prossimo lavoro è scrivere `V2-PIANO-AMPLIATO.md`.**
+**Il prossimo lavoro è la CRITICA 2 su `V2-PIANO-AMPLIATO.md`** — per ordine di Max: **più dura
+della prima, e sulle scelte architetturali, non sulle sviste**. Revisori indipendenti su modello
+diverso (ADR-017), scrittura incrementale un rilievo per volta.
 
 Leggi in quest'ordine:
 1. `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/00-LEGGIMI.md` — le **sette leggi** e il metodo
-2. `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/V1-PIANO-GENERALE.md` — il piano da superare
-3. `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/_critica-v1/` — **41 rilievi, 10 fatali**: sono l'ordine del giorno di V2
-4. `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/dati/` — **7.700 righe di censimento misurato**, la materia prima
+2. `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/V2-PIANO-AMPLIATO.md` — **il piano da attaccare** (1.085 righe)
+3. `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/_critica-v1/` — i 41 rilievi: servono per verificare che V2 non li abbia recepiti **a parole**
+4. `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/dati/` — **8.120 righe di censimento misurato**, la materia prima
+5. `V1-PIANO-GENERALE.md` — solo per confronto: **non è più il piano**
 
-**V2 non è un ritocco di V1: è un altro piano**, che parte dai dieci fatali.
-
----
+**Regola della critica 2:** ogni giro attacca **il giro prima**, non l'originale (§6.20 dottrina).
+Le tre domande che V2 lascia in eredità sono in coda al documento e vanno aggredite per prime.
 
 ## 3. LO STATO DEL LAVORO
 
 | Tappa | Stato |
 |---|---|
 | Leggi e metodo fissati | ✅ |
-| Otto censimenti | ✅ 7.700 righe |
-| V1 — piano generale | ✅ scritta |
-| **Critica 1** | ✅ **41 rilievi, 10 FATALI** |
-| **V2 — piano ampliato** | ⬜ **← SI RIPRENDE DA QUI** |
-| Critica 2 | ⬜ |
+| Otto censimenti | ✅ 8.120 righe |
+| V1 — piano generale | ✅ 522 righe |
+| Critica 1 | ✅ 41 rilievi, 10 FATALI |
+| **V2 — piano ampliato** | ✅ **1.085 righe · 41 su 41 recepiti · 10 FATALI su 10** |
+| **Critica 2** | ⬜ **← SI RIPRENDE DA QUI** |
 | V3 — piano assestato | ⬜ |
 | V4 — esecutivo | ⬜ |
 | Via alla costruzione | ⬜ solo dopo V4 |
 
-**9.264 righe** prodotte in totale nella cartella del piano.
+**10.349 righe** prodotte in totale nella cartella del piano.
 
----
+### Le cinque inversioni che V2 ha imposto a V1
+
+1. **NEXUS non nasce**: cinque **funzioni innestate** su organi già vivi (trace.py, tesoreria.py,
+   registro.yaml+INV-20, Backbone/Bus, settings.json). Da 25-40 h a **12-20 h**, nessun ecosistema
+   nuovo, il numero 16 resta libero.
+2. **Legge centrale nuova — il consumatore quotidiano** (LC): un proprietario non basta, l'ha
+   dimostrato l'Ispettorato con 87 rapporti da un solo backfill. Più il **divieto di backfill a
+   macchina** sulle telemetrie che alimentano i gate.
+3. **La fetta verticale strumenta Preventa** (1.045 lead, 22 contattati davvero), non costruisce un
+   flusso accanto a quello che gira.
+4. **Il denaro è la merce che esce**: 30 pezzi fermi, 26 caricabili oggi, 6 libri pronti — dentro E0,
+   giorno uno.
+5. **Il ponte agenti va in due direzioni**: anagrafe unica, C7 col grado, guardia anti-divergenza,
+   e **E5-bis, l'adozione dei 162 esecutori senza scheda**.
+
+Più tre leggi nuove (**L8** ARCHIVIO è uno stato · **L9** un gate è comando+condizione+exit code ·
+**L10** ogni cardinale porta i nomi), la **formula del 100% come comando**, i **12 hook anticipati
+a E0.7**, i **nomi** (Max/Gael/Neri/EMPERATOR) su ogni scaglione, il **cruscotto quotidiano** e i
+**tetti d'ore**.
 
 ## 4. I DIECI RILIEVI FATALI — l'ordine del giorno di V2
 
@@ -110,4 +130,4 @@ tracce senza prova — manca solo il punto di aggancio) · `scripts/tesoreria.py
 - Piano: `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/`
 - Misura di partenza: `PIANO-MAESTRO/30-PIANO-COMPLETAMENTO-IMPERO.md` (92% carta / 18% vivo)
 - Task madre: `company/Memory/tasks/TASK-MAX-20260831-IMPERO-OPERATIVO.md` (B0..B8)
-- Checkpoint: `CP-20260905-NUJJ` (la misura) · `CP-20260906-J8EV` (censimenti + V1 + critica 1)
+- Checkpoint: `CP-20260905-NUJJ` (la misura) · `CP-20260906-J8EV` (censimenti + V1 + critica 1) · `CP-20260907-7JDX` (**V2**)

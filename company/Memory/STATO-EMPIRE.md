@@ -1,3 +1,46 @@
+## 🜂 2026-09-07 — V2: NEXUS non nasce, e la legge del piano cambia — EMP-MCC4
+
+**Scritta `V2-PIANO-AMPLIATO.md`, 1.085 righe.** Non un ritocco di V1: un altro piano, costruito
+sui **10 rilievi FATALI** della critica 1 e sulle **3.078 righe di censimento che V1 non aveva mai
+letto** (era nata alle 19:23; cinque censimenti si sono chiusi fra le 19:38 e le 20:01, e sono
+proprio quelli che ne ribaltano l'ordine). **41 rilievi su 41 recepiti, 10 FATALI su 10.**
+
+**Le cinque inversioni:**
+① **NEXUS non nasce.** Nessun sedicesimo ecosistema: **cinque funzioni innestate** su organi già
+vivi — `empire/trace.py` (219 righe, testato), `scripts/tesoreria.py` (completo, mai acceso),
+`registro.yaml`+INV-20 (17 passaggi già sorvegliati), `company/Backbone/Bus/`,
+`.claude/settings.json` (5 hook attivi). Da **25-40 h a 12-20 h**, e il numero 16 resta libero.
+② **La legge centrale cambia: non «un proprietario», ma un CONSUMATORE QUOTIDIANO GIÀ
+ESISTENTE.** Lo ha imposto l'Ispettorato — proprietario vero, comando reale, 30 test verdi, e
+**87 rapporti generati da un solo backfill con 44 giorni scoperti**. Aggiunto il **divieto di
+backfill a macchina** sulle telemetrie che alimentano i gate.
+③ **La fetta verticale strumenta Preventa** — 1.045 lead, **22 contattati davvero**, 1.023 in coda —
+invece di costruire un flusso nuovo accanto al motore concessionari che già gira.
+④ **Il denaro non è un Payment Link: è la merce che esce.** Misurato stamattina: **30 pezzi finiti
+mai usciti, 26 caricabili subito, il più vecchio da 139 giorni**, più **6 libri pronti** (V1 ne
+contava 4). Il magazzino è **cresciuto** mentre scrivevamo il piano.
+⑤ **Il ponte agenti va in due direzioni:** anagrafe unica dei nomi, `C7` col grado (le 5 sentinelle
+prescritte Sonnet/Opus girano tutte a `haiku`), guardia anti-divergenza, e **E5-bis: l'adozione dei
+162 esecutori senza scheda** — gli unici agenti che lavorano davvero.
+
+**Il pericolo che V1 creava e che V2 disinnesca:** E0 ruotava la chiave OpenRouter senza dire di
+riscriverla nei **3 `.env`** che la portano, consumata da **20+ file** dell'outreach — cioè uno dei
+2 workflow su 6 che oggi partono. I gate di V1 lo avrebbero *confermato*, non impedito.
+
+**Anche entrato:** tre leggi nuove (**L8** ARCHIVIO è uno stato · **L9** un gate è comando +
+condizione + exit code · **L10** ogni cardinale porta i nomi) · la **formula del 100% come
+comando** · **C-d** (ha servito un consumatore reale) e **R-a** (i reattivi scattano da soli) · i
+**12 hook anticipati a E0.7**, prima di ogni lavoro di massa · i **nomi** su ogni scaglione
+(Max/Gael/Neri/EMPERATOR — V1 non nominava Gael né Neri una sola volta su 130-190 ore) · il
+**cruscotto quotidiano a 6 numeri** · i **tetti d'ore ×1,5** · **sette decisioni con default
+dichiarato**.
+
+**Divieto ancora in vigore:** nessuna modifica costruttiva al repository fino a V4.
+
+**RIPRESA DA:** **critica 2 su V2** — più dura della prima, sulle scelte architetturali e non sulle
+sviste. Tutto in [EMP-MCC4](riprese/EMP-MCC4.md) · dettagli in
+[CP-20260907-7JDX](checkpoints/CP-20260907-7JDX.md).
+
 ## 🜂 2026-09-06 — PIANO IMPERO VIVO: otto censimenti, V1 scritta, e 41 rilievi che la demoliscono — EMP-MCC4
 
 **Ordine di Max:** portare l'Impero **dal 18% vivo al 100%, senza eliminare niente, con tutto
