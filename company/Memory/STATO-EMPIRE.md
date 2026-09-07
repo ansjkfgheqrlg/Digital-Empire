@@ -8,6 +8,70 @@ in parallelo sul repo (traccia Andrei Pascu, suoi `CP-ECX7`/`EMP-J8X2`).
 **RIPRESA DA:** lasciar finire il nastro (o verificare `stato.json` se fermo), poi frame + lettura
 via sentinelle su A6 — invariato da CP-PG43. Dettagli: [CP-20260907-42V9](checkpoints/CP-20260907-42V9.md).
 
+## 📚 2026-09-07 mattina — max18: v06 e v05 chiusi come visione, bug .part risolto — CP-20260907-ZAYA
+
+**Codice di ripresa: EMP-W4K7 (APERTA).** Dopo il reset crediti: `v06` (corso Agenti AI) portato a
+**376/376 scene = 100%**, `v05` (bot crypto trading) studiato per intero **98/98 = 100%**, entrambi
+uniti senza buchi. `v08` (Claude Cowork) a 131/393, `v09` (agenti vocali) a 51/494.
+
+**Trovato e chiuso un bug reale**: `frame_extractor.py` prendeva un `video.mp4.part` (download
+interrotto) per un video completo, usando poi la durata dichiarata da YouTube invece di quella
+vera del file. `v09` era tagliato silenziosamente al 23% (30 minuti su 133) senza nessun errore.
+Fix nel codice: un `.part` non conta mai come scaricato, e uno scarto oltre il 3% fra durata
+dichiarata e reale blocca con errore. `v09` riscaricato e ricostruito per intero: 494 scene reali.
+
+**Nuovo strumento**: `taglia_analisi.py`, stessa logica anti-watchdog di `taglia_transcript.py`
+ma per `video-analysis.md` (v06 pesava 457 KB, avrebbe ucciso gli atomizzatori come il transcript
+uccideva le sentinelle). Atomizzazione avviata su v06 (114/376 atomi scritti, 2 blocchi su 3) e v05.
+
+**RIPRESA DA:** unire gli atomi rimasti (v06 blocco 1-126, v05 intero), wiki + archivio per v06/v05,
+poi finire v08 e v09, poi v04 (mai iniziato). **Agenti lasciati in volo alla pausa: ricontare il
+disco prima di ripartire**, non fidarsi dei numeri di questo checkpoint come definitivi.
+Dettagli: [CP-20260907-ZAYA](checkpoints/CP-20260907-ZAYA.md).
+
+## 🟠 2026-09-07 — Studiavamo il 13% credendo fosse il 90%: l'ecosistema Andrei Pascu ha 187 URL, non 11 — CP-20260907-ECX7
+
+**Codice di ripresa: EMP-J8X2 (APERTA).** Chiuso su ordine di Max (contesto della chat pieno).
+⭐ **Tre principi entrati nel libro**, non nella memoria di un turno: `emperator.md` **§6.22 SI
+PRENDE TUTTO DA TUTTI** (quattro strati — resa, schema, logica, **metodo** — e il metodo vale piu'
+degli altri tre; si prendono anche i difetti, che diventano gate; uno studio e' finito quando
+potresti ricostruire senza riguardare), **§6.23 TI MODIFICHI DA SOLO** (un principio va nel libro
+nello stesso turno; il segno che ho sbagliato e' Max che ripete), e **§6.20 alzata**: il criterio
+d'arresto del piano non e' un numero, e' **un giro a vuoto** — *se il fare e' difficile, il piano non
+era finito*.
+**Il piano (dossier 33) e' stato criticato SETTE volte, e il sesto giro ha salvato l'opera:** ha
+imposto di contare invece di credere. L'ecosistema non ha 11 pagine, ne ha **187 su 7 domini** (76
+commerciali + 105 articoli di blog). **Avevamo studiato il 13% di cio' che credevamo fosse il 90%.**
+Senza quel giro avrei chiuso lo "studio totale" con 66 pagine mai aperte senza saperlo. Triage in
+5 livelli → **58 pagine da aprire davvero**, in 7 onde (`site-study/ECOSISTEMA.md`).
+**Scoperto dai soli nomi delle pagine:** ogni prodotto ha una pagina **`-pre` prima della cassa**
+(`/pre-copy`, `/outemail-pre`, `/pre-checkout-cm`...) — un gradino di funnel sistematico mai visto.
+**Macchina costruita prima di correrla:** `site_capture2.py` (fix B-057, scarica CSS e JS serviti,
+riconosce la costruzione per misura, **segmenta in sezioni con uno screenshot per sezione**, firma
+strutturale che deduplica cosa guardare, inventario effetti, `scheda.json` a schema fisso) e
+`analizza_css.py` (96 KB di CSS → 19 KB di estratto: variabili, keyframes col corpo, maschere,
+gradienti, curve, **e i commenti dell'autore**).
+**Onda A catturata — 6 pagine.** ⭐ **La prova numerica sull'arancione:** nei token di
+`claude-speedrun.com` c'e' `--brand-orange: 16 97% 50%` = **#fb4604**, il nostro esatto, e
+`--brand-grey` = **#f9f9f9**, identico al nostro `--fg`. **Tre valori su cinque coincidono** — non
+piu' un'impressione, una misura. ⭐⭐ **I nomi dei suoi componenti sono la sua architettura, servita
+in chiaro** (Vite li mette nel file): **21 sezioni numerate**, solo 6 con nome proprio
+(`OfferSection`, `LessonList`, `ReviewsWall`, `SkillsGrid`, `FAQ`, `Disclaimer`) — le sei che fanno
+un lavoro. E **il funnel attraversa due stack**: `armageddon.bsns.it` e' vanilla scritto a mano, le
+sue 4 pagine figlie sono **Squarespace** sotto lo stesso dominio.
+**Corretto un mio errore:** avevo classificato `claude-speedrun` come "artigianale" come armageddon.
+Falso: e' Vite+React+Tailwind+shadcn+Radix (**Corsia B**), armageddon e' vanilla (**Corsia A**).
+**La lezione scomoda:** quel sito da 249 €, concorrente diretto di CCM, **non usa un solo effetto
+grafico proprio** — ne' grana, ne' maschere, ne' testo argentato. Vende con tipografia, colore e tre
+movimenti. La nostra firma visiva non e' l'argomento di vendita: e' una firma.
+**⚡ GOD EMPEROR DOOM** attivato a ordine di Max e chiuso subito dopo, sempre a suo ordine.
+⚠️ **DUE SENTINELLE ERANO ANCORA IN CORSO ALLA CHIUSURA** (apsales + famiglia `out*`): la loro
+notifica e' persa. Alla ripresa si **misura sul disco** se i 4 file attesi ci sono — elenco esatto
+in EMP-J8X2.
+**RIPRESA DA:** EMP-J8X2 — verificare i 4 file delle sentinelle, poi pre-mortem, poi **Onda B** (le 8
+pagine T2 mai viste), Onde C-D-E-F, le tre sintesi, la fusione di `empire-premium-style` e il canone v2.
+Dettagli: [CP-20260907-ECX7](checkpoints/CP-20260907-ECX7.md) · ripresa [EMP-J8X2](riprese/EMP-J8X2.md).
+
 ## 🟠 2026-09-07 — Le tre verifiche payload di L20 chiuse: l'API Fliki sa fare musica e SFX, e non lo sapevamo — CP-20260907-PG43
 
 **Codice di ripresa: EMP-V6DE (APERTA).** Continuazione diretta di CP-20260907-JVY2 ("vai

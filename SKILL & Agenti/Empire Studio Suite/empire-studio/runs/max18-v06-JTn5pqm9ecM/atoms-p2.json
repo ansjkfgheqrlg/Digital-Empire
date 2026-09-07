@@ -572,7 +572,7 @@
   "contenuto": "Per rispondere al conflitto GEMINI.md-vs-inline, il relatore presenta un diagramma a quattro cerchi concentrici che rappresenta la gerarchia di specificità dei prompt, dall'esterno all'interno: Global CLAUDE.md (viola) → Project CLAUDE.md (blu) → Matched Skills (verde) → Inline Prompt (arancione/pesca, al centro). A destra, fuori dal cerchio, una freccia punta verso il centro con l'annotazione \"Più specifico = Vince\".",
   "fonte": "JTn5pqm9ecM#53:42 (diagramma a cerchi concentrici completo) + voce 53:42",
   "frame": "frame-0538.png",
-  "ancora": "Più specifico = Vince",
+  "ancora": "una freccia nera punta verso il centro con l'annotazione scritta a mano",
   "confidenza": "osservato",
   "relazioni": [
    {"verso": "KA-044", "tipo": "applica"},
@@ -685,7 +685,7 @@
   "contenuto": "Nuovo diagramma Excalidraw a tre riquadri collegati da frecce: in alto, box viola \"BACK PROMPT ENGINEERING\" (icona lampadina), da cui si diramano due tecniche — a sinistra (freccia verde) box verde-acqua \"STEP BACK PROMPTING\" (\"TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE\", refuso \"INIETRO\" per \"INDIETRO\" riportato com'è a schermo); a destra (freccia rosa/salmone) box arancione \"REVERSE PROMPTING\" (\"TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE\").",
   "fonte": "JTn5pqm9ecM#56:18 (diagramma BACK PROMPT ENGINEERING con le due tecniche) + voce 56:18",
   "frame": "frame-0564.png",
-  "ancora": "BACK PROMPT ENGINEERING",
+  "ancora": "box **viola** con icona a lampadina: **\"BACK PROMPT ENGINEERING\"**.",
   "confidenza": "osservato",
   "relazioni": [
    {"verso": "KA-053", "tipo": "applica"},
@@ -743,6 +743,410 @@
   "relazioni": [
    {"verso": "KA-057", "tipo": "parte-di"},
    {"verso": "KA-080", "tipo": "motiva", "perche": "la stessa idea — capire il principio invece di limitarsi a un output superficiale — motiva la clausola FALLIMENTO dei Prompt Contracts mostrata molte scene più avanti"}
+  ]
+ },
+ {
+  "id": "KA-059",
+  "tipo": "esempio",
+  "contenuto": "Demo pratica di Step-Back Prompting in Claude Code: da una sessione nuova e vuota, il relatore invoca il comando \"/step-back-prompting creami un bel sito web\".",
+  "fonte": "JTn5pqm9ecM#58:36 (comando inviato per intero, header \"Step-Back\" in arrivo) + voce 58:36",
+  "frame": "frame-0587.png",
+  "ancora": "/step-back-prompting creami un bel sito web",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-055", "tipo": "applica"},
+   {"verso": "KA-060", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-060",
+  "tipo": "principio",
+  "contenuto": "Risposta \"Step-Back\" alla richiesta \"creami un bel sito web\" — sezione \"The principle\": \"A website is a tool with a job. The governing question isn't 'what should it look like?' but 'what should it do?' — specifically, what's the single conversion action a visitor should take? For a solo founder with coaching + agency + community + YouTube, the website is either a (1) lead capture funnel, (2) credibility/authority page, or (3) content hub. Each implies a radically different design.\"",
+  "fonte": "JTn5pqm9ecM#58:36-59:48 (sezione \"The principle\" della risposta Step-Back, ripresa e sottolineata in scena 211) + voce 58:36-59:48",
+  "frame": "frame-0587.png, frame-0599.png",
+  "ancora": "A website is a tool with a job.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-059", "tipo": "parte-di"},
+   {"verso": "KA-058", "tipo": "esempio-di"},
+   {"verso": "KA-061", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-061",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Reframed approach: Before touching code, we need to answer:\" della risposta Step-Back, elenco completo con sottolineature progressive nelle scene successive: 1. \"Who lands here?\" -- \"Cold traffic from YouTube? LinkedIn connections checking you out? Potential coaching clients sent a link? Each audience needs different messaging.\" 2. \"What's the ONE action?\" -- \"Book a call? Join Avanguardia? Subscribe to YouTube? A page that tries to do all three converts on none.\" 3. \"Which entity?\" -- \"Gentes AI (agency)? Giovanni Beggiato (personal brand)? Avanguardia (community)? These could be the same site or different ones.\" 4. \"What's the maintenance budget?\" -- \"A static landing page lives forever. A blog/content site needs feeding. Given your time constraint, simpler is better.\"",
+  "fonte": "JTn5pqm9ecM#59:06 (elenco 1-4 per intero) e #1:00:18-1:01:30 (sottolineature progressive nelle scene 212-214) + voce 59:06-1:01:18",
+  "frame": "frame-0592.png, frame-0604.png, frame-0609.png, frame-0614.png",
+  "ancora": "Cold traffic from YouTube? LinkedIn connections checking you out?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-059", "tipo": "parte-di"},
+   {"verso": "KA-062", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-062",
+  "tipo": "avvertimento",
+  "contenuto": "Sezione \"What this avoids\" della risposta Step-Back: \"Building a generic multi-page portfolio site with About/Services/Blog/Contact that looks professional but doesn't convert -- the most common 'technically correct but wrong' outcome for personal brand websites.\"",
+  "fonte": "JTn5pqm9ecM#1:01:30 (paragrafo \"What this avoids\" per intero) + voce 1:01:30",
+  "frame": "frame-0616.png",
+  "ancora": "Building a generic multi-page portfolio site with About/Services/Blog/Contact that looks professional but doesn't convert",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-059", "tipo": "parte-di"},
+   {"verso": "KA-063", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-063",
+  "tipo": "procedura",
+  "contenuto": "Chiusura della risposta Step-Back, tre domande dirette in italiano: \"Dimmi: — Per chi e il sito? (il tuo ICP coaching? aziende per Gentes AI? entrambi?) — Cosa deve fare chi atterra sulla pagina? (prenotare una call? iscriversi alla community?) — Sotto quale brand? (Giovanni Beggiato, Gentes AI, Avanguardia?) — Con queste tre risposte posso costruire qualcosa di mirato, non generico.\"",
+  "fonte": "JTn5pqm9ecM#1:02:00 (sezione \"Dimmi:\" selezionata per intero) + voce 1:02:00",
+  "frame": "frame-0621.png",
+  "ancora": "Con queste tre risposte posso costruire qualcosa di mirato, non generico.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-059", "tipo": "parte-di"},
+   {"verso": "KA-064", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-064",
+  "tipo": "dato",
+  "contenuto": "Risposta dell'utente alle tre domande dello Step-Back, scritta per intero nel campo di input: \"Hey, fammi un bel sito web per AvanguardiaPlus. È la mia community a pagamento nella quale insegno a imprenditori e freelancer come utilizzare le AI e vendere agenti AI alle aziende o come implementarli. Questo sito deve far sì che le persone capiscano il valore della community e che quindi poi acquistino magari il mio programma. Sotto quale brand utilizza pure AvanguardiaPlus?\"",
+  "fonte": "JTn5pqm9ecM#1:02:30 (prompt di risposta scritto per intero nel campo di input) + voce 1:02:30-1:02:48",
+  "frame": "frame-0626.png",
+  "ancora": "Hey, fammi un bel sito web per AvanguardiaPlus.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-063", "tipo": "applica"},
+   {"verso": "KA-065", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-065",
+  "tipo": "dato",
+  "contenuto": "Recap completo in italiano generato dall'agente dopo la risposta dell'utente: \"Brand: Avanguardia+ (community a pagamento)\"; \"Target: Imprenditori e freelancer che vogliono usare AI praticamente -- per il proprio business o per vendere agenti AI alle aziende\"; \"Obiettivo conversione: Far capire il valore della community -> spingere all'acquisto del programma di coaching\"; \"Il principio guida: Questo non è un sito 'informativo' -- è una sales page. Una singola pagina lunga, verticale, costruita per portare il visitatore da 'chi è questo?' a 'voglio entrare'.\"",
+  "fonte": "JTn5pqm9ecM#1:02:48 (recap completo in italiano generato dall'agente) + voce 1:02:48",
+  "frame": "frame-0629.png",
+  "ancora": "Il principio guida**: Questo non è un sito \"informativo\" -- è una **sales page**.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-060", "tipo": "applica"},
+   {"verso": "KA-064", "tipo": "applica"},
+   {"verso": "KA-066", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-066",
+  "tipo": "procedura",
+  "contenuto": "Struttura in 7 sezioni proposta per la sales page di Avanguardia+, elenco integrale: \"1. Hero -- headline che parla al desiderio (non al prodotto), CTA immediata\"; \"2. Problema -- il dolore che il target sente (tutti parlano di AI, nessuno ti dice come farci soldi)\"; \"3. Soluzione -- cos'è Avanguardia+ e perché funziona\"; \"4. Cosa ottieni -- breakdown concreto di cosa c'è dentro (moduli, community, coaching)\"; \"5. Proof -- risultati, testimonianze, numeri\"; \"6. Chi sono -- credibilità di Gio (Amazon, P&G, solo se rilevante)\"; \"7. Pricing/CTA finale -- prezzo, cosa include, ultimo push\".",
+  "fonte": "JTn5pqm9ecM#1:02:48 (elenco numerato 1-7 nel recap) + voce 1:02:48",
+  "frame": "frame-0629.png",
+  "ancora": "1. Hero** -- headline che parla al desiderio (non al prodotto), CTA immediata",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-065", "tipo": "parte-di"},
+   {"verso": "KA-067", "tipo": "precede"},
+   {"verso": "KA-087", "tipo": "precede", "perche": "la stessa sequenza di sezioni ricompare, quasi identica, nel campo CONSTRAINTS del prompt contract generato molte scene più avanti"}
+  ]
+ },
+ {
+  "id": "KA-067",
+  "tipo": "regola",
+  "contenuto": "Chiusura del recap: \"Cosa evito: Un sito multi-pagina con About/Blog/Contact che disperde l'attenzione. Una sola pagina, un solo obiettivo: convertire.\"",
+  "fonte": "JTn5pqm9ecM#1:02:48 (riga di chiusura del recap) + voce 1:02:48",
+  "frame": "frame-0629.png",
+  "ancora": "Cosa evito**: Un sito multi-pagina con About/Blog/Contact che disperde l'attenzione. Una sola pagina, un solo obiettivo: convertire.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-065", "tipo": "parte-di"},
+   {"verso": "KA-062", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-068",
+  "tipo": "definizione",
+  "contenuto": "Diagramma Excalidraw \"Reverse Prompting\": percorso superiore (X rossa) — box viola \"Tu\" → box verde \"Agente AI\" (fumetto \"(Assumo di sapere cosa vuoi...)\") → box arancione/rosso \"Output sbagliato -- costruito su assunzioni invisibili\"; percorso inferiore (✓ verde) — box viola \"Tu\" ↔ box azzurro \"INTERROGATORIO PREVENTIVO\" con elenco puntato \"Qual è il contesto?\", \"Ci sono vincoli?\", \"Cosa significherebbe fallire?\" → box verde \"Output preciso -- costruito su fatti, non assunzioni\". Una freccia curva collega il box \"Output sbagliato\" al box \"INTERROGATORIO PREVENTIVO\", a suggerire il percorso di correzione.",
+  "fonte": "JTn5pqm9ecM#1:03:18 (diagramma Reverse Prompting completo) + voce 1:03:18",
+  "frame": "frame-0634.png",
+  "ancora": "(Assumo di sapere cosa vuoi...)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-056", "tipo": "applica"},
+   {"verso": "KA-069", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-069",
+  "tipo": "principio",
+  "contenuto": "Didascalia sotto il diagramma Reverse Prompting: \"Le assunzioni invisibili sono la causa #1 di output sbagliati. Meglio 5 minuti di domande che 5 ore di lavoro buttato.\"",
+  "fonte": "JTn5pqm9ecM#1:03:18 (didascalia sotto i due schemi) + voce 1:03:18",
+  "frame": "frame-0634.png",
+  "ancora": "Le assunzioni invisibili sono la causa #1 di output sbagliati.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-068", "tipo": "parte-di"},
+   {"verso": "KA-070", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-070",
+  "tipo": "procedura",
+  "contenuto": "Demo pratica di Reverse Prompting in Claude Code: il relatore invoca il comando \"/reverse-prompting su questo output\", applicandolo al recap Step-Back sulla sales page di Avanguardia+ appena generato.",
+  "fonte": "JTn5pqm9ecM#1:04:30 (comando \"/reverse-prompting\" evidenziato nel menu Slash Commands) e #1:05:00 (comando inviato per intero) + voce 1:04:30",
+  "frame": "frame-0646.png, frame-0651.png",
+  "ancora": "/reverse-prompting su questo output",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-056", "tipo": "applica"},
+   {"verso": "KA-065", "tipo": "precede", "perche": "il reverse-prompting viene lanciato sull'output del recap Step-Back appena generato, per metterlo alla prova"},
+   {"verso": "KA-071", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-071",
+  "tipo": "dato",
+  "contenuto": "Le cinque domande di chiarimento generate dal comando /reverse-prompting, ciascuna con Default e Perché conta: \"Q1 (impatto massimo): Dove punta il CTA -- Skool direttamente o una call con te?\" (Default: link diretto alla pagina Skool, acquisto self-service; Perché conta: se punta a una call di vendita la struttura cambia in funnel di qualificazione). \"Q2: Hai testimonianze, risultati o numeri concreti da usare?\" (Default: placeholder generici; Perché conta: proof reale vs placeholder cambia la credibilità del 90%). \"Q3: Stack tecnico -- HTML/CSS statico, o vuoi un framework (React, Next.js, etc.)?\" (Default: singolo file HTML+CSS+JS minimale, zero dipendenze; Perché conta: un framework aggiunge complessità di build e manutenzione). \"Q4: Pricing visibile sulla pagina o lo scoprono solo su Skool?\" (Default: prezzo visibile con breakdown, la trasparenza filtra i lead non qualificati; Perché conta: nascondere il prezzo trasforma la sezione in 'cosa include' senza cifre). \"Q5: Stile visivo -- quale vibe?\" (Default: dark mode, moderno, tech-forward, accent color vivace; Perché conta: uno stile più caldo/accessibile cambia completamente il design). Chiusura: \"Rispondimi anche con una parola per ognuna -- 'ok' o la correzione. Poi parto.\"",
+  "fonte": "JTn5pqm9ecM#1:05:00 (Q3-Q5 scrollate) e #1:05:06 (Q1-Q2 per intero) + voce 1:05:00-1:05:06",
+  "frame": "frame-0651.png, frame-0652.png",
+  "ancora": "Rispondimi anche con una parola per ognuna -- \"ok\" o la correzione. Poi parto.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-070", "tipo": "parte-di"},
+   {"verso": "KA-068", "tipo": "esempio-di"},
+   {"verso": "KA-072", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-072",
+  "tipo": "principio",
+  "contenuto": "Le cinque domande del Reverse Prompting seguono tutte lo stesso pattern strutturale a due parti: un \"Default\" (la scelta che l'agente farebbe se l'utente non rispondesse) seguito da \"Perché conta\" (la spiegazione dell'impatto di quella scelta sul risultato finale) — un formato ripetuto identicamente su Q1-Q5.",
+  "fonte": "JTn5pqm9ecM#1:05:00-1:05:06 (struttura Default/Perché conta ripetuta su tutte e cinque le domande) + voce 1:05:00-1:05:30",
+  "frame": "frame-0651.png, frame-0652.png",
+  "ancora": "Perché conta: Proof reale vs placeholder cambia la credibilità della pagina del 90%.",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {"verso": "KA-071", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-073",
+  "tipo": "dato",
+  "contenuto": "Invece di rispondere punto per punto alle cinque domande, l'utente scrive: \"hey per favore, decidi tu perché questa è una demo, però aspetta prima di procedere con l'esecuzione\" — delegando le decisioni all'agente ma mantenendo un gate esplicito prima dell'esecuzione.",
+  "fonte": "JTn5pqm9ecM#1:08:24 (campo di input attivo, pronto a ricevere il messaggio) + voce 1:08:54",
+  "frame": "frame-0685.png",
+  "ancora": "decidi tu, eh perché questa è una demo, però ehm aspetta prima di procedere con l'esecuzione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-071", "tipo": "applica"},
+   {"verso": "KA-074", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-074",
+  "tipo": "esempio",
+  "contenuto": "L'agente risponde alla delega dell'utente con cinque decisioni autonome, una per ciascuna domanda: \"Perfetto, ecco le decisioni: 1. CTA: Link diretto a Skool -- acquisto self-service, niente call di vendita. 2. Proof: Placeholder realistici -- li sostituirai con dati veri dopo. 3. Stack: HTML + CSS statico, file singolo, zero dipendenze. 4. Pricing: Visibile sulla pagina con breakdown di cosa include. 5. Stile: Dark mode, tech-forward, accent color vivace su sfondo scuro.\" Chiusura: \"Aspetto il tuo via libera per partire.\"",
+  "fonte": "JTn5pqm9ecM#1:10:24 (risposta \"Perfetto, ecco le decisioni\" con elenco 1-5 per intero) + voce 1:10:24",
+  "frame": "frame-0705.png",
+  "ancora": "Aspetto il tuo via libera per partire.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-073", "tipo": "applica"},
+   {"verso": "KA-075", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-075",
+  "tipo": "dato",
+  "contenuto": "Sulla lavagna Excalidraw il relatore riepiloga a mano gli elementi già forniti all'agente: icona freccia + \"CTA\", icona freccia + \"Stile\", poi \"- 3\", \"- 4\", \"- 5\", \"- 6\", \"- 7\", raggruppati da un'unica grande parentesi graffa nera, mentre dice a voce: \"abbiamo dato uno stile, abbiamo dato i un chiamiamolo elemento 3, abbiamo dato un elemento 4, un 5, un 6, un 7, abbiamo fatto tutta una serie di step infiniti.\"",
+  "fonte": "JTn5pqm9ecM#1:09:30 (elenco CTA/Stile/3-7 con parentesi graffa) + voce 1:09:30",
+  "frame": "frame-0696.png",
+  "ancora": "abbiamo dato uno stile, abbiamo dato i un chiamiamolo elemento 3, abbiamo dato un elemento 4, un 5, un 6, un 7",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-074", "tipo": "esempio-di"},
+   {"verso": "KA-076", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-076",
+  "tipo": "dato",
+  "contenuto": "Dopo il riepilogo degli elementi già forniti, il relatore scrive sulla lavagna una nuova domanda aperta: \"CONDIZIONI PER IL SUCCESSO?\" seguita da una freccia verso il basso e dalla scritta \"DEFINIZIONE DI SUCCESSO\", ponendo il problema di come definire in modo esplicito e verificabile quando un task è davvero completato.",
+  "fonte": "JTn5pqm9ecM#1:10:00 (scrittura in corso di \"CONDIZIONI PER IL SUCCESSO?\"/\"DEFINI...\") e #1:10:36 (scritta completa \"DEFINIZIONE DI SUCCESSO\") + voce 1:10:00-1:10:36",
+  "frame": "frame-0701.png, frame-0707.png",
+  "ancora": "CONDIZIONI PER IL SUCCESSO?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-075", "tipo": "precede"},
+   {"verso": "KA-077", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-077",
+  "tipo": "definizione",
+  "contenuto": "Per rispondere alla domanda su come definire il successo di un task, il relatore introduce un nuovo concetto: \"Allora, per farlo introduciamo un ulteriore concetto che è un prompt contract.\"",
+  "fonte": "JTn5pqm9ecM#1:10:48 (stacco netto sul diagramma \"Prompt Contracts\") + voce 1:10:48",
+  "frame": "frame-0709.png",
+  "ancora": "Allora, per farlo introduciamo un ulteriore concetto che è un prompt contract.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-076", "tipo": "applica"},
+   {"verso": "KA-078", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-078",
+  "tipo": "definizione",
+  "contenuto": "Diagramma \"Prompt Contracts\": riquadro centrale con bordo crema contenente 4 componenti impilati, ciascuno con icona — verde, icona bersaglio: \"OBIETTIVO -- Metrica di successo quantificabile\"; azzurro, icona lucchetto: \"VINCOLI -- Limiti rigidi e confini\"; viola, icona documento: \"FORMATO -- Forma esatta dell'output\"; rosa/rosso, icona triangolo di allerta: \"FALLIMENTO -- Condizioni esplicite di fallimento\". A sinistra una nuvoletta con X rossa \"Compito vago: Costruisci un rate limiter\" si dirama verso i 4 box; a destra le frecce dai 4 box convergono in un box verde acqua con ✓ verde \"Output preciso, qualità professionale\".",
+  "fonte": "JTn5pqm9ecM#1:10:48 (diagramma Prompt Contracts completo) + voce 1:10:48",
+  "frame": "frame-0709.png",
+  "ancora": "OBIETTIVO -- Metrica di successo quantificabile",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-077", "tipo": "parte-di"},
+   {"verso": "KA-079", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-079",
+  "tipo": "esempio",
+  "contenuto": "Esempio guida del diagramma Prompt Contracts: un \"Compito vago: Costruisci un rate limiter\" attraversa i quattro componenti (OBIETTIVO, VINCOLI, FORMATO, FALLIMENTO) e ne esce come \"Output preciso, qualità professionale\", a differenza di un compito lasciato vago che produrrebbe un risultato generico.",
+  "fonte": "JTn5pqm9ecM#1:10:48 (nuvoletta \"Compito vago\" e box finale \"Output preciso, qualità professionale\") + voce 1:10:48-1:10:54",
+  "frame": "frame-0709.png",
+  "ancora": "Compito vago: Costruisci un rate limiter",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-078", "tipo": "esempio-di"},
+   {"verso": "KA-080", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-080",
+  "tipo": "principio",
+  "contenuto": "Didascalia sotto il diagramma Prompt Contracts: \"La clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.\" Il componente FALLIMENTO non è quindi decorativo: costringe l'agente a dichiarare esplicitamente cosa NON sarebbe accettabile come risultato.",
+  "fonte": "JTn5pqm9ecM#1:10:48 (didascalia sotto lo schema) + voce 1:10:54-1:11:24",
+  "frame": "frame-0709.png",
+  "ancora": "La clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-078", "tipo": "parte-di"},
+   {"verso": "KA-058", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-081",
+  "tipo": "dato",
+  "contenuto": "Accanto al titolo del diagramma Prompt Contracts il relatore aggiunge a mano una doppia freccia \"<=>\" seguita dalla scritta in stampatello \"PLAN MODE\", tracciando un parallelo esplicito tra il concetto di prompt contract appena introdotto e la plan mode di Claude Code, mentre commenta: \"ora noi abbiamo ancora un compito vago con un perimetro definito.\"",
+  "fonte": "JTn5pqm9ecM#1:11:24 (annotazione \"PLAN MODE\" accanto al titolo) + voce 1:11:24",
+  "frame": "frame-0715.png",
+  "ancora": "posizionata in alto a destra del titolo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-078", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-082",
+  "tipo": "esempio",
+  "contenuto": "Esempio concreto di OBIETTIVO quantificabile nel Prompt Contract: una piccola nota manoscritta \"10 PX\" vicino al riquadro OBIETTIVO, riferita all'esempio verbale di un vincolo di design misurabile — il padding o lo spazio bianco tra due elementi del sito deve essere un massimo di 10 pixel, altrimenti il risultato non è accettabile.",
+  "fonte": "JTn5pqm9ecM#1:12:24 (annotazione \"10 PX\" vicino al riquadro OBIETTIVO) + voce 1:12:24",
+  "frame": "frame-0725.png",
+  "ancora": "deve essere un massimo di 10 pixel, altrimenti non sono contento",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-078", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-083",
+  "tipo": "esempio",
+  "contenuto": "Esempio concreto di VINCOLI nel Prompt Contract: un cerchio verde manoscritto con dentro \"< 5€\", posizionato tra il box OBIETTIVO/VINCOLI e il box verde \"Output preciso\" e collegato da una freccia verde al box VINCOLI, a rappresentare un vincolo di budget massimo esplicito.",
+  "fonte": "JTn5pqm9ecM#1:13:24 (annotazione \"< 5€\" con freccia verde verso VINCOLI) + voce 1:13:24",
+  "frame": "frame-0735.png",
+  "ancora": "posizionato tra il box OBIETTIVO/VINCOLI e il box verde",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-078", "tipo": "esempio-di"},
+   {"verso": "KA-084", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-084",
+  "tipo": "dato",
+  "contenuto": "Mentre introduce il concetto di VINCOLI come \"tunnel\" entro cui l'agente deve restare, il relatore disegna sulla lavagna una lunga linea ondulata a mano libera, senza forma definita e senza testo associato: un probabile scarabocchio illustrativo del percorso di un prompt \"che va dove vuole\" quando non ci sono vincoli espliciti, in contrapposizione al concetto di tunnel appena introdotto a voce.",
+  "fonte": "JTn5pqm9ecM#1:13:30 (linea ondulata isolata a sinistra del diagramma) + voce 1:13:30",
+  "frame": "frame-0736.png",
+  "ancora": "avere un un tunnel che rappresentano i miei vincoli.",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {"verso": "KA-078", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-085",
+  "tipo": "procedura",
+  "contenuto": "Demo pratica di Prompt Contracts in Claude Code: il relatore invoca il comando \"/prompt-contracts sull'output appena prodotto\", applicandolo al piano già deciso per la sales page di Avanguardia+ (dopo Step-Back e Reverse Prompting).",
+  "fonte": "JTn5pqm9ecM#1:14:18 (menu comandi aperto, digitazione \"/\") e #1:14:48 (comando inviato per intero) + voce 1:14:18-1:14:48",
+  "frame": "frame-0744.png, frame-0749.png",
+  "ancora": "/prompt-contracts sull'output appena prodotto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-077", "tipo": "applica"},
+   {"verso": "KA-086", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-086",
+  "tipo": "esempio",
+  "contenuto": "Componente GOAL del contratto generato da /prompt-contracts: \"Sales page singola per Avanguardia+ che porta il visitatore da 'chi è questo?' a click sul CTA Skool. Deve caricare in <2s, essere mobile-first, e avere un flow visivo che guida lo scroll senza distrazioni.\"",
+  "fonte": "JTn5pqm9ecM#1:14:48 (sezione \"GOAL:\" del contratto) + voce 1:14:48",
+  "frame": "frame-0749.png",
+  "ancora": "Deve caricare in <2s, essere mobile-first, e avere un flow visivo che guida lo scroll senza distrazioni.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-085", "tipo": "parte-di"},
+   {"verso": "KA-078", "tipo": "esempio-di"},
+   {"verso": "KA-087", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-087",
+  "tipo": "esempio",
+  "contenuto": "Componente CONSTRAINTS del contratto generato da /prompt-contracts, elenco integrale: \"File singolo HTML + CSS inline/embedded + JS minimale (no framework, no build step, no dipendenze esterne)\"; \"Dark mode, palette scura con accent vivace\"; \"Font da Google Fonts (max 2 font)\"; \"Immagini: solo placeholder o icone inline (SVG/emoji) -- niente asset esterni da scaricare\"; \"Sezioni obbligate in ordine: Hero -> Problema -> Soluzione -> Cosa Ottieni -> Proof -> Chi Sono -> Pricing -> CTA finale\".",
+  "fonte": "JTn5pqm9ecM#1:14:48 (sezione \"CONSTRAINTS:\" del contratto, elenco per intero) + voce 1:14:48",
+  "frame": "frame-0749.png",
+  "ancora": "Sezioni obbligate in ordine: Hero -> Problema -> Soluzione -> Cosa Ottieni -> Proof -> Chi Sono -> Pricing -> CTA finale",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-085", "tipo": "parte-di"},
+   {"verso": "KA-078", "tipo": "esempio-di"},
+   {"verso": "KA-066", "tipo": "applica", "perche": "riusa quasi verbatim la sequenza di sezioni Hero->Problema->Soluzione->Cosa Ottieni->Proof->Chi Sono->Pricing->CTA finale del recap Step-Back, a dimostrare la continuità del progetto Avanguardia+ tra le tre tecniche di prompting mostrate nel video"}
+  ]
+ },
+ {
+  "id": "KA-088",
+  "tipo": "dato",
+  "contenuto": "Prima di invocare la skill Prompt Contracts, si apre il menu comandi di Claude Code/Antigravity con le opzioni disponibili per la sessione: \"Context\", \"Attach file...\", \"Mention file from this project...\", \"Clear conversation\", \"Rewind\", \"Switch model...\" (con il modello attivo mostrato come \"Opus 4.6 (1M context)\" e toggle blu attivo), \"Effort (Medium)\" (toggle blu attivo), \"Thinking\" (toggle blu attivo), \"Account & usage...\".",
+  "fonte": "JTn5pqm9ecM#1:14:18 (menu a tendina di comando aperto) + voce 1:14:18",
+  "frame": "frame-0744.png",
+  "ancora": "in chiaro: **\"Opus 4.6 (1M context)\"** con toggle blu attivo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-085", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-089",
+  "tipo": "avvertimento",
+  "contenuto": "Nel prompt vocale con cui viene lanciata la demo dei 5 agenti paralleli, il testo a schermo riporta letteralmente \"spaventassi cinque agenti\", un verosimile refuso di dettatura vocale per \"spawnassi\" pronunciato dal relatore poco prima: un esempio concreto di come la dettatura vocale possa trascrivere in modo errato termini tecnici in inglese (come \"spawn\") quando si danno comandi a voce agli agenti AI.",
+  "fonte": "JTn5pqm9ecM#37:06 (testo del prompt con \"spaventassi\" nel box \"Agent tool input\") + voce 37:06",
+  "frame": "frame-0372.png",
+  "ancora": "verosimile refuso di dettatura vocale per \"spawnassi\" pronunciato poco prima",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {"verso": "KA-019", "tipo": "esempio-di"}
   ]
  }
 ]

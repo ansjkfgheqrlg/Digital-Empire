@@ -1,0 +1,630 @@
+[
+ {
+  "id": "KA-001",
+  "tipo": "regola",
+  "contenuto": "Il Prompt Contract dettato per la sales page di Avanguardia+ elenca otto CONSTRAINTS vincolanti, lette ad alta voce mentre vengono sottolineate in arancione sullo schermo: file singolo HTML + CSS inline/embedded + JS minimale (no framework, no build step, no dipendenze esterne); dark mode, palette scura con accento vivace; font da Google Fonts (max 2 font); immagini solo placeholder o icone inline (SVG/emoji), niente asset esterni da scaricare; sezioni obbligate in ordine Hero -> Problema -> Soluzione -> Cosa Ottieni -> Proof -> Chi Sono -> Pricing -> CTA finale; CTA che punta a URL Skool (placeholder per ora); testo in italiano; pricing visibile con breakdown.",
+  "fonte": "JTn5pqm9ecM#75:48 (Claude Code, box comando /prompt-contracts, sezione CONSTRAINTS del contract per la sales page Avanguardia+) + voce 75:48-76:00",
+  "frame": "frame-0759.png",
+  "ancora": "Sezioni obbligate in ordine: Hero -> Problema -> Soluzione -> Cosa Ottieni -> Proof -> Chi Sono -> Pricing -> CTA finale",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-002",
+  "tipo": "regola",
+  "contenuto": "La sezione FORMAT del contract specifica la forma esatta dell'output: un file solo (site/index.html), responsive mobile-first con breakpoint a 768px per desktop, smooth scroll tra le sezioni, animazioni CSS leggere (fade-in on scroll via Intersection Observer), nessun file separato (CSS e JS embedded nello stesso file).",
+  "fonte": "JTn5pqm9ecM#76:18 (Claude Code, sezione FORMAT del contract per la sales page Avanguardia+) + voce 76:18-76:30",
+  "frame": "frame-0764.png",
+  "ancora": "Responsive: mobile-first, breakpoint a 768px per desktop",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "parte-di"},
+   {"verso": "KA-001", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-003",
+  "tipo": "regola",
+  "contenuto": "La sezione FAILURE del contract elenca nove condizioni esplicite di fallimento (qualsiasi vera = non finito): non è responsive, rotto su mobile (viewport < 400px); CTA non visibile senza scrollare nel hero; più di un file generato; dipendenze esterne (npm, CDN JS libraries) oltre a Google Fonts; testo in inglese invece che italiano; manca una delle 8 sezioni obbligate; font size < 16px sul body text (illeggibile su mobile); nessuna animazione, la pagina è un muro statico di testo; il JS supera le 50 righe, perché è una sales page, non un'app. Sotto una linea divisoria, il contract si chiude con: 'Aspetto il tuo OK per eseguire contro questo contract.'",
+  "fonte": "JTn5pqm9ecM#76:18 (Claude Code, sezione FAILURE del contract per la sales page Avanguardia+) + voce 76:18-76:48",
+  "frame": "frame-0764.png",
+  "ancora": "Il JS supera le 50 righe -- è una sales page, non un'app",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "parte-di"},
+   {"verso": "KA-002", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-004",
+  "tipo": "definizione",
+  "contenuto": "Diagramma di ricapitolazione 'Prompt Contracts' su lavagna Excalidraw (con annotazione manoscritta 'PLAN MODE' accanto al titolo): quattro riquadri impilati definiscono la tecnica - verde 'OBIETTIVO -- Metrica di successo quantificabile', blu 'VINCOLI -- Limiti rigidi e confini', viola 'FORMATO -- Forma esatta dell'output', rosa 'FALLIMENTO -- Condizioni esplicite di fallimento'. A sinistra una nuvoletta 'Compito vago: Costruisci un rate limiter' con una X rossa entra nel box a quattro riquadri; a destra ne esce un box verde scuro 'Output preciso, qualità professionale' con un segno di spunta, e sopra un'annotazione manoscritta verde cerchiata '< 5 €'. Didascalia: 'la clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.'",
+  "fonte": "JTn5pqm9ecM#77:24 (lavagna Excalidraw, diagramma di ricapitolazione Prompt Contracts) + voce 77:20-77:30",
+  "frame": "frame-0775.png",
+  "ancora": "la clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "precede", "perche": "Il diagramma di ricapitolazione dei Prompt Contracts chiude quel capitolo e fa da cerniera visiva subito prima che il relatore introduca il Pre-Mortem."}
+  ]
+ },
+ {
+  "id": "KA-005",
+  "tipo": "procedura",
+  "contenuto": "Nel corso della demo pratica, il relatore applica in sequenza tre skill/prompt distinti sullo stesso output generato (la sales page Avanguardia+): prima lo step-back prompting (tecnica introdotta in un capitolo precedente del corso), poi /prompt-contracts sull'output appena prodotto, poi /pre-mortem sull'ultimo output. Il relatore chiude il racconto della dimostrazione riepilogando esplicitamente questa catena di quattro prompt/skill.",
+  "fonte": "JTn5pqm9ecM#82:30 (Claude Code, schermata riscrollata con entrambi i comandi /prompt-contracts e /pre-mortem visibili in sequenza) + voce 82:24-82:36",
+  "frame": "frame-0826.png",
+  "ancora": "chiude il racconto della dimostrazione pratica (dal prompt iniziale ai quattro prompt/skill usati: step-back, prompt-contracts, pre-mortem)",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "applica"},
+   {"verso": "KA-009", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-006",
+  "tipo": "definizione",
+  "contenuto": "Diagramma 'Pre-Mortem' su lavagna Excalidraw: box viola 'OGGI -- Prima di iniziare', freccia tratteggiata etichettata 'Viaggio mentale nel futuro' verso box rosso 'FUTURO IMMAGINARIO -- Il progetto e FALLITO'. Da questo box scendono tre frecce verso tre domande: box giallo 'Perche e fallito?', box blu 'Cosa non avevamo previsto?', box rosa 'Quali segnali abbiamo ignorato?'. Una freccia curva riporta dal blocco domande al box verde 'Piano migliorato -- con difesa contro ogni rischio' con un segno di spunta. Didascalia: 'Il post-mortem arriva troppo tardi. Il pre-mortem trova gli stessi problemi PRIMA che costino tempo e denaro.'",
+  "fonte": "JTn5pqm9ecM#77:30 (lavagna Excalidraw, diagramma Pre-Mortem) + voce 77:27-78:00",
+  "frame": "frame-0776.png",
+  "ancora": "Il post-mortem arriva troppo tardi. Il pre-mortem trova gli stessi problemi PRIMA che costino tempo e denaro.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "precede"},
+   {"verso": "KA-009", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-007",
+  "tipo": "principio",
+  "contenuto": "Metafora disegnata a mano per spiegare perché il pre-mortem serve: un campo coltivato a monocoltura (rettangolo pieno di tratteggi verdi fitti) rappresenta un progetto che ha proseguito senza diversificare i rischi; una X rossa lo cancella per intero e uno scarabocchio a forma di fiamma/mano lo minaccia dall'alto, a illustrare lo scenario di fallimento improvviso ('l'incendio ti brucia tutto in un colpo solo').",
+  "fonte": "JTn5pqm9ecM#79:18 (lavagna Excalidraw, disegno campo monocoltura/raccoglitore) + voce 79:18-80:00",
+  "frame": "frame-0799.png",
+  "ancora": "l'incendio ti brucia tutto in un colpo solo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-008",
+  "tipo": "dato",
+  "contenuto": "Esempio numerico usato per giustificare il pre-mortem: se il sistema va giù per l'1% del tempo (downtime), e un cliente arriva a fare l'acquisto/firmare esattamente in quella finestra, quell'1% di downtime equivale al 100% del fatturato perso per quell'occasione - annotato sulla lavagna come '1% dT' con freccia verso '1% = 100%'.",
+  "fonte": "JTn5pqm9ecM#80:30 (lavagna Excalidraw, annotazione 1% = 100%) + voce 80:00-80:42",
+  "frame": "frame-0806.png",
+  "ancora": "una seconda riga **\"1% = 100%\"** (il segno \"=\" racchiuso in un piccolo ovale)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-009",
+  "tipo": "esempio",
+  "contenuto": "Live demo: sull'ultimo output generato (la sales page Avanguardia+, già passata per il contract), il relatore lancia il comando '/pre-mortem sull'ultimo output'. La risposta si apre con l'intestazione 'Pre-Mortem: Sales Page Avanguardia+' e il testo: 'Il task è completato. È considerato un fallimento. Ecco le 3 cause più probabili.'",
+  "fonte": "JTn5pqm9ecM#81:12 (Claude Code, comando /pre-mortem sull'ultimo output) + voce 81:12-81:42",
+  "frame": "frame-0813.png",
+  "ancora": "Il task è completato. È considerato un fallimento. Ecco le 3 cause più probabili.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "applica"},
+   {"verso": "KA-010", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-010",
+  "tipo": "dato",
+  "contenuto": "Prima causa di fallimento individuata dal pre-mortem, classificata TIGER: 'Copy generica da template -- il testo suona come ogni altra sales page AI. \"Impara a usare l'AI\", \"il futuro è adesso\", frasi che il target ha già letto 100 volte. Il visitatore chiude in 5 secondi perché non sente la voce di Gio.' Mitigazione proposta: 'Scrivere il copy nello stile di Gio (diretto, pratico, zero guru energy). Usare i reference files dello stile e il CREATOR_PROFILE. Parlare di soldi concreti, non di \"potenziale\".'",
+  "fonte": "JTn5pqm9ecM#81:42 (Claude Code, tabella Pre-Mortem riga 1) + voce 81:42-81:54",
+  "frame": "frame-0818.png",
+  "ancora": "frasi che il target ha già letto 100 volte",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-009", "tipo": "parte-di"},
+   {"verso": "KA-013", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-011",
+  "tipo": "dato",
+  "contenuto": "Seconda causa di fallimento individuata dal pre-mortem, classificata PAPER TIGER (rischio gestibile): 'Dark mode illeggibile -- contrasto insufficiente tra testo e sfondo. Il testo grigio su sfondo quasi-nero sembra elegante sullo schermo del developer ma è illeggibile su un telefono Android al sole.' Mitigazione: 'Manageable: basta usare #f5f5f5 minimo sul body text e testare con un contrast checker. Problema di 2 minuti se catturato.'",
+  "fonte": "JTn5pqm9ecM#81:42 (Claude Code, tabella Pre-Mortem riga 2) + voce 81:54-82:12",
+  "frame": "frame-0818.png",
+  "ancora": "illeggibile su un telefono Android al sole",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-009", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-012",
+  "tipo": "dato",
+  "contenuto": "Terza causa di fallimento individuata dal pre-mortem, classificata TIGER: 'Muro di testo senza respiro visivo -- 8 sezioni obbligate in un file singolo. Senza immagini reali (solo placeholder/SVG), il rischio è una pagina che sembra un documento Word con sfondo nero. Nessun elemento visivo spezza la monotonia, il visitatore smette di scrollare a metà.' Mitigazione: 'Usare separatori visivi forti tra sezioni (gradient dividers, cambio colore di sfondo alternato, icone SVG grandi, spacing generoso). Ogni sezione deve sembrare un \"nuovo schermo\", non un nuovo paragrafo.'",
+  "fonte": "JTn5pqm9ecM#81:54 (Claude Code, tabella Pre-Mortem riga 3 completa) + voce 82:12-82:24",
+  "frame": "frame-0820.png",
+  "ancora": "il rischio è una pagina che sembra un documento Word con sfondo nero",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-009", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-013",
+  "tipo": "principio",
+  "contenuto": "Il pre-mortem non si limita a elencare i rischi ma li ordina per priorità: 'Rischio più alto: Il #1 -- Copy generica. Il design si può aggiustare in 10 minuti, ma se il testo non suona come Gio il sito non converte indipendentemente da quanto è bello.' Il rischio sulla voce/copy batte quello visivo perché nessun restyling salva un testo che non converte.",
+  "fonte": "JTn5pqm9ecM#82:12 (Claude Code, sezione Rischio più alto) + voce 82:12-82:18",
+  "frame": "frame-0823.png",
+  "ancora": "Rischio più alto: Il #1 -- Copy generica. Il design si può aggiustare in 10 minuti, ma se il testo non suona come Gio il sito non converte indipendentemente da quanto è bello.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-010", "tipo": "applica"},
+   {"verso": "KA-014", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-014",
+  "tipo": "regola",
+  "contenuto": "In base al pre-mortem, il relatore propone tre nuove condizioni FAILURE da aggiungere al contract originale della sales page: 'FAILURE: Il copy usa frasi generiche da template AI (\"sblocca il potenziale\", \"il futuro è adesso\", \"rivoluziona il tuo business\")'; 'FAILURE: Il contrasto testo/sfondo non rispetta WCAG AA (4.5:1 minimo)'; 'FAILURE: Non c'è variazione visiva tra sezioni adiacenti (tutte stesso sfondo)'.",
+  "fonte": "JTn5pqm9ecM#82:12 (Claude Code, sezione Mitigazioni che aggiungerei al contract) + voce 82:12-82:24",
+  "frame": "frame-0823.png",
+  "ancora": "FAILURE: Il contrasto testo/sfondo non rispetta WCAG AA (4.5:1 minimo)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-013", "tipo": "parte-di"},
+   {"verso": "KA-003", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-015",
+  "tipo": "procedura",
+  "contenuto": "Il pre-mortem si chiude offrendo tre opzioni operative all'utente, invece di agire da solo: '1. Procedi -- accetta i rischi, li tengo a mente durante l'esecuzione', '2. Aggiungi le 3 mitigazioni al contract e poi procedi', '3. Aggiorna il contract con nuove FAILURE conditions via /prompt-contracts'. La decisione finale resta dell'utente, non dell'agente.",
+  "fonte": "JTn5pqm9ecM#82:36 (VS Code/Antigravity, sezione Opzioni completa) + voce 82:24-82:36",
+  "frame": "frame-0827.png",
+  "ancora": "Aggiorna il contract** con nuove FAILURE conditions via `/prompt-contracts`",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-014", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-016",
+  "tipo": "definizione",
+  "contenuto": "Diagramma 'Agent Polling - Ricerca / Decisioni strategiche' su lavagna Excalidraw: un riquadro giallo in alto con icona megafono, 'UNA DOMANDA' e sotto l'esempio 'Come dovremmo progettare il database?'; da qui frecce si diramano verso cinque riquadri colorati affiancati, ciascuno con icona persona e fumetto '...': 'Esperto 1 -- Indipendente' (viola), 'Esperto 2 -- Indipendente' (verde), 'Esperto 3 -- Indipendente' (arancione), 'Esperto 4 -- Indipendente' (azzurro), 'Esperto 5 -- Indipendente' (rosa). Tutti e cinque convergono in un riquadro verde con icona bilancia, 'AGGREGAZIONE', con sotto: '3 su 5 concordano -> alta confidenza.' e 'Idee uniche -> spunti innovativi.'",
+  "fonte": "JTn5pqm9ecM#83:18 (lavagna Excalidraw, diagramma Agent Polling) + voce 83:07-83:48",
+  "frame": "frame-0834.png",
+  "ancora": "3 su 5 concordano -> alta confidenza.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-017", "tipo": "motiva"},
+   {"verso": "KA-024", "tipo": "precede"},
+   {"verso": "KA-004", "tipo": "precede", "perche": "Nel percorso del corso Agent Polling è la tecnica introdotta subito dopo la chiusura del blocco Prompt Contracts/Pre-Mortem."}
+  ]
+ },
+ {
+  "id": "KA-017",
+  "tipo": "principio",
+  "contenuto": "Regola scritta a mano sotto il diagramma Agent Polling, principio cardine della tecnica: 'Opinioni indipendenti si rafforzano a vicenda. Opinioni di gruppo si contaminano.'",
+  "fonte": "JTn5pqm9ecM#83:18 (lavagna Excalidraw, riga finale sotto il diagramma Agent Polling) + voce 83:18-83:48",
+  "frame": "frame-0834.png",
+  "ancora": "Opinioni indipendenti si rafforzano a vicenda. Opinioni di gruppo si contaminano.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-016", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-018",
+  "tipo": "definizione",
+  "contenuto": "Definizione a voce dell'Agent Polling: un framework che serve nel momento in cui si fanno decisioni strategiche o ricerche di qualsiasi tipo che richiedono l'intervento di più di una mente (più agenti indipendenti invece di uno solo).",
+  "fonte": "JTn5pqm9ecM#83:18 (voce sopra il diagramma Agent Polling appena disegnato) + voce 83:07-83:18",
+  "frame": "frame-0834.png",
+  "ancora": "questo è un framework che serve nel momento in cui facciamo ehm decisioni strategiche",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-016", "tipo": "definisce"}
+  ]
+ },
+ {
+  "id": "KA-019",
+  "tipo": "esempio",
+  "contenuto": "Meccanismo esplicativo disegnato a mano sulla lavagna: cinque agenti numerati (1-5) trovano ciascuno delle risposte-lettera. Agente 1 trova A, B, C; Agente 2 trova B, C, D; Agente 3 trova A, B ed E; Agente 4 trova B, C, D; Agente 5 trova A, D, F. Si formano così cinque set di risposte diverse (A-F) proposte da cinque agenti indipendenti sulla stessa domanda.",
+  "fonte": "JTn5pqm9ecM#86:06 (lavagna Excalidraw, cinque cerchi numerati con lettere di risposta) + voce 86:06-86:36",
+  "frame": "frame-0862.png",
+  "ancora": "Se io guardo il mio agente numero uno, il mio agente numero uno mi troverà tre risposte.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-016", "tipo": "esempio-di"},
+   {"verso": "KA-020", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-020",
+  "tipo": "procedura",
+  "contenuto": "Dalle risposte dei cinque agenti si costruisce una tabella di conteggio a sei colonne (A, B, C, D, E, F): il numero sotto ogni lettera è un coefficiente che dice quante volte quella risposta è stata presa dagli agenti. Conteggio finale: A=3, B=4, C=3, D=3, E=1, F=1. Il coefficiente più alto (B=4) indica la soluzione più probabile.",
+  "fonte": "JTn5pqm9ecM#87:06 (lavagna Excalidraw, tabella conteggio A-F completa) + voce 87:06-87:36",
+  "frame": "frame-0872.png",
+  "ancora": "Ed è un coefficiente che ti dice quante volte una risposta è stata presa.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-019", "tipo": "parte-di"},
+   {"verso": "KA-021", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-021",
+  "tipo": "principio",
+  "contenuto": "Sui conteggi delle risposte (A=3, B=4, C=3, D=3, E=1, F=1) si costruisce un grafico a campana/distribuzione: il valore più alto (B) tende a essere il più probabile, ma la domanda successiva è se sia anche il più giusto.",
+  "fonte": "JTn5pqm9ecM#88:06 (lavagna Excalidraw, grafico a campana sotto la tabella A-F) + voce 88:06-88:36",
+  "frame": "frame-0882.png",
+  "ancora": "Il valore più alto tende ad essere il più probabile.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-020", "tipo": "applica"},
+   {"verso": "KA-022", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-022",
+  "tipo": "principio",
+  "contenuto": "Il valore più alto della distribuzione (il consenso di maggioranza) non è necessariamente la soluzione giusta: un valore basso e isolato nella curva (annotato con un cerchio rosso e una freccia sul grafico) può essere un outlier - una soluzione rara ma corretta che il metodo permette comunque di individuare leggendo il report di consenso, invece di scartarla.",
+  "fonte": "JTn5pqm9ecM#88:36 (lavagna Excalidraw, cerchio rosso sull'outlier nel grafico a campana) + voce 88:36-88:42",
+  "frame": "frame-0887.png",
+  "ancora": "questa ci permette di fare è che ci permette di andare a leggere il nostro dov'è report di consenso",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-021", "tipo": "contraddice", "perche": "Ribalta l'assunzione ovvia che 'più votato = più giusto', introducendo il concetto di outlier come correzione al conteggio a maggioranza."}
+  ]
+ },
+ {
+  "id": "KA-023",
+  "tipo": "dato",
+  "contenuto": "Analogia numerica usata per giustificare perché il polling con più agenti indipendenti funziona anche se ciascun agente singolarmente è 'meno intelligente' del miglior esperto umano: si ipotizza un gruppo con QI collettivo di 50 contro l'uomo migliore al mondo con QI 60 - un numero sufficiente di pensatori indipendenti converge sulla stessa soluzione del singolo più bravo, ma più in fretta.",
+  "fonte": "JTn5pqm9ecM#90:00 (lavagna Excalidraw, cerchio a spicchi colorati) + voce 90:00-90:30",
+  "frame": "frame-0901.png",
+  "ancora": "abbia un Q di 50 e l'uomo migliore al mondo ha un Qi di 60",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-021", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-024",
+  "tipo": "esempio",
+  "contenuto": "Live demo dell'Agent Polling: il relatore lancia il comando con la domanda reale: '/agent-polling Hey! Vorrei capire, dato il mio profilo e il mio canale YouTube, qual è la soluzione migliore che io possa implementare quest'anno per raggiungere 100.000 sottoscrittori su YouTube. Puoi aiutarmi?'",
+  "fonte": "JTn5pqm9ecM#91:06 (Claude Code/Antigravity, messaggio utente con comando /agent-polling) + voce 91:06-91:24",
+  "frame": "frame-0912.png",
+  "ancora": "Vorrei capire, dato il mio profilo e il mio canale YouTube, qual è la soluzione migliore",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-016", "tipo": "applica"},
+   {"verso": "KA-025", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-025",
+  "tipo": "dato",
+  "contenuto": "In risposta al comando /agent-polling, il sistema annuncia: 'I'll poll 10 independent analysts on your YouTube growth strategy. Let me load the references first' (legge framing-variations.md e report-template.md), poi: 'Launching 10 agents in parallel, each with a different analytical lens. This will cost ~$0.30-0.50 with Sonnet.'",
+  "fonte": "JTn5pqm9ecM#91:06 (Claude Code/Antigravity, risposta con lancio dei 10 agenti) + voce 91:06-91:24",
+  "frame": "frame-0912.png",
+  "ancora": "Launching 10 agents in parallel, each with a different analytical lens. This will cost ~$0.30-0.50 with Sonnet.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "parte-di"},
+   {"verso": "KA-026", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-026",
+  "tipo": "dato",
+  "contenuto": "Il sistema annuncia che tutti e 10 gli agenti stanno girando in parallelo, ciascuno con una angolazione diversa: 'Each is analyzing your question from a different angle -- neutral, risk-averse, growth-oriented, contrarian, first-principles, user-empathy, resource-constrained, long-term, data-driven, and systems thinking.' Dieci prospettive indipendenti sulla stessa domanda di crescita YouTube.",
+  "fonte": "JTn5pqm9ecM#92:00 (Claude Code/Antigravity, elenco dei 10 agenti di polling) + voce 92:00-92:06",
+  "frame": "frame-0921.png",
+  "ancora": "neutral, risk-averse, growth-oriented, contrarian, first-principles, user-empathy, resource-constrained, long-term, data-driven, and systems thinking.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "parte-di"},
+   {"verso": "KA-027", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-027",
+  "tipo": "dato",
+  "contenuto": "Ogni agente di polling riceve lo stesso blocco CONTEXT con i dati reali del canale di Giovanni Beggiato: creator italiano di Vicenza, canale in italiano su Claude Code/agentic AI workflows/AI agents/'Make Money', statistiche correnti 2.700 iscritti, 40K visualizzazioni/28 giorni, 380K impression, stile pratico e imprenditoriale, corso di punta su Claude Code e Agentic AI, ICP chi vuole guadagnare con l'AI e imprenditori, team: solo creator + 1 thumbnail designer, revenue: coaching program con 6 clienti (~4-8K€/mese), anche 50K follower LinkedIn (in inglese), il tempo è il collo di bottiglia primario, obiettivo dichiarato: dominare la ricerca italiana su Claude Code/agentic AI. L'obiettivo posto è 100.000 iscritti entro fine 2026, pari a circa 37x di crescita.",
+  "fonte": "JTn5pqm9ecM#91:42 (Claude Code/Antigravity, pannello 'Agent tool input' con il CONTEXT completo dell'Agente 3) + voce 91:42-92:00",
+  "frame": "frame-0918.png",
+  "ancora": "Team: solo creator + 1 thumbnail designer",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "parte-di"},
+   {"verso": "KA-028", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-028",
+  "tipo": "procedura",
+  "contenuto": "Ogni agente di polling deve restituire un output nello stesso formato in quattro punti: (1) la strategia/soluzione singola raccomandata; (2) un livello di confidenza da 1 a 10 sulla probabilità che quella strategia raggiunga 100K iscritti entro dicembre 2026; (3) i punti di ragionamento chiave (specifici e concreti -- numeri, tempistiche); (4) avvertenze o considerazioni discordanti.",
+  "fonte": "JTn5pqm9ecM#91:42 (Claude Code/Antigravity, pannello 'Agent tool input', sezione Return dell'Agente 3) + voce 91:42-92:00",
+  "frame": "frame-0918.png",
+  "ancora": "(1) Your recommended single best strategy/solution",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-024", "tipo": "parte-di"},
+   {"verso": "KA-029", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-029",
+  "tipo": "dato",
+  "contenuto": "Primi risultati parziali degli agenti di polling che arrivano in streaming nella chat: Agent 1 (Neutral Baseline) consiglia dominanza nella ricerca con 2-3 video/settimana, ma dà solo 3/10 di confidenza sul raggiungere 100K. Agent 4 (Contrarian) dà 4/10 di confidenza, con l'insight chiave che il problema è la distribuzione, non la qualità dei contenuti, e raccomanda di ingegnerizzare un unico video 'proof-of-income' come investimento creativo primario. Agent 6 (User-Empathy) dà 4/10, evidenziando le collab con creator italiani più grandi (100K-500K iscritti) come possibile leva più alta di qualsiasi strategia di contenuto da sola.",
+  "fonte": "JTn5pqm9ecM#92:36 (Claude Code/Antigravity, risultati parziali Agent 1/4/6 in arrivo) + voce 92:36-93:06",
+  "frame": "frame-0927.png",
+  "ancora": "Agent 4 (Contrarian) is in -- 4/10 confidence. Key contrarian insight: the problem is distribution, not content quality.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-025", "tipo": "parte-di"},
+   {"verso": "KA-030", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-030",
+  "tipo": "dato",
+  "contenuto": "Altri risultati parziali degli agenti di polling: Agent 5 (First-Principles) dà 3/10, individuando come collo di bottiglia il traffico Browse (l'algoritmo che spinge verso audience fredde) e non la ricerca, e segnala un problema di conversione iscritti: 40K visualizzazioni/mese ma solo 2.700 iscritti totali. Agent 9 (Data-Driven) dà la confidenza più bassa vista finora, 2/10 per 100K ma 3-4/10 per 50-70K, e spinge più fortemente per le collab come singola azione a valore atteso più alto. Agent 8 (Long-Term) dà 3/10 e raccomanda di diventare IL canale 'demo dal vivo di Claude Code' con 1 video di alta qualità/settimana più cross-posting su LinkedIn, notando che i video registrati ora sono asset di ricerca che si accumulano per anni.",
+  "fonte": "JTn5pqm9ecM#93:06 (Claude Code/Antigravity, risultati parziali Agent 5/9/8 in arrivo) + voce 93:06-93:24",
+  "frame": "frame-0932.png",
+  "ancora": "Also flags a sub conversion problem: 40K views/month but only 2,700 total subs.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-025", "tipo": "parte-di"},
+   {"verso": "KA-032", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-031",
+  "tipo": "principio",
+  "contenuto": "Regola operativa chiave enunciata mentre arrivano i risultati del polling: si può fare outsourcing del pensiero con agenti AI, ma non si può fare outsourcing della propria comprensione -- l'input umano resta necessario nel momento in cui si modella quello che si vuole che sia l'output finale di tutto il processo.",
+  "fonte": "JTn5pqm9ecM#93:06 (voce sopra i risultati parziali degli agenti di polling) + voce 93:06-93:24",
+  "frame": "frame-0932.png",
+  "ancora": "possiamo fare outsourcing del pensiero con questi agenti AI, ma non possiamo eh a fare outsourcing della nostra comprensione",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-016", "tipo": "applica", "perche": "Ribadisce a metà flusso il limite intrinseco del polling: aggrega pareri indipendenti ma non sostituisce il giudizio umano finale."}
+  ]
+ },
+ {
+  "id": "KA-032",
+  "tipo": "dato",
+  "contenuto": "Key Takeaway del polling report finale: 'All 10 agents agree: 100K by Dec 2026 is a moonshot (avg confidence 3.2/10). The math requires 3,200 new subs/week for 30 weeks straight -- a 10-15x acceleration from your current pace. But your metrics (6% CTR, 11-min duration) are genuinely elite. The problem isn't content quality -- it's distribution to cold audiences.'",
+  "fonte": "JTn5pqm9ecM#93:24 (Claude Code/Antigravity, sezione Key Takeaway del polling_report.md) + voce 93:24-93:54",
+  "frame": "frame-0935.png",
+  "ancora": "All 10 agents agree: 100K by Dec 2026 is a moonshot (avg confidence 3.2/10).",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-030", "tipo": "parte-di"},
+   {"verso": "KA-033", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-033",
+  "tipo": "dato",
+  "contenuto": "I tre Top Agreement Points del polling report: (1) 'Italian AI search is a land grab. You have 12-18 months before the window closes. Every video you plant now is a search asset that compounds for years.' (2) 'Collabs with larger Italian creators (100K-500K subs) are the single highest-leverage action. One well-placed collab can deliver more subs in a week than 3 months of solo publishing.' (3) 'LinkedIn 50K is free seeding. Cross-posting every video gives early velocity signals that trigger YouTube's broader distribution.'",
+  "fonte": "JTn5pqm9ecM#93:24 (Claude Code/Antigravity, sezione Top 3 Agreement Points del polling_report.md) + voce 93:24-93:54",
+  "frame": "frame-0935.png",
+  "ancora": "Italian AI search is a land grab. You have 12-18 months before the window closes.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-032", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-034",
+  "tipo": "dato",
+  "contenuto": "Most Interesting Split del polling report: 'Volume (3-4 videos/week) vs. Engineered Breakouts (1 every 2-3 weeks). Given your time constraint (solo + 6 clients), the breakout camp is probably more realistic -- but this is a judgment call only you can make based on sustainable output.'",
+  "fonte": "JTn5pqm9ecM#93:54 (Claude Code/Antigravity, sezione Most Interesting Split del polling_report.md) + voce 93:54-94:24",
+  "frame": "frame-0940.png",
+  "ancora": "Volume (3-4 videos/week) vs. Engineered Breakouts (1 every 2-3 weeks).",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-032", "tipo": "parte-di"},
+   {"verso": "KA-046", "tipo": "contraddice", "perche": "Il dilemma volume-vs-breakout sollevato qui dal polling non viene scelto in modo netto ma sequenziato nel tempo dal verdetto di Agent Debates nel Piano Integrato."}
+  ]
+ },
+ {
+  "id": "KA-035",
+  "tipo": "esempio",
+  "contenuto": "Most Interesting Standout Idea del polling report: 'Agent 4 (Contrarian): Engineer one \"proof-of-income\" video -- \"Ho guadagnato X euro in 30 giorni usando solo AI agents\" with real numbers and screen recordings. Italian audiences respond strongly to income-proof content. Seed it via LinkedIn. This single video is the highest-probability path to a breakout event. Make it your primary creative investment in the next 60 days.'",
+  "fonte": "JTn5pqm9ecM#93:54 (Claude Code/Antigravity, sezione Most Interesting Standout Idea del polling_report.md) + voce 93:54-94:24",
+  "frame": "frame-0940.png",
+  "ancora": "Engineer one \"proof-of-income\" video",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-032", "tipo": "parte-di"},
+   {"verso": "KA-046", "tipo": "precede", "perche": "L'idea del video proof-of-income, segnalata come standout dal polling, diventa il primo passo concreto del Piano Integrato prodotto dall'Agent Debates."}
+  ]
+ },
+ {
+  "id": "KA-036",
+  "tipo": "definizione",
+  "contenuto": "Diagramma 'Agent Debates' su lavagna Excalidraw: tre colonne 'ROUND 1', 'ROUND 2', 'ROUND 3'. In ciascun round un riquadro rosso con icona spada 'SOSTENITORE -- Idea A è la migliore' e un riquadro azzurro con icona scudo 'CRITICO -- Idea A ha problemi', collegati da una doppia freccia verticale. I tre round si susseguono con frecce orizzontali e convergono in un riquadro verde finale con icona diamante: 'SINTESI FINALE -- Il meglio di entrambe le posizioni. Nessun punto debole sopravvive a 3 round di critica.'",
+  "fonte": "JTn5pqm9ecM#94:36 (lavagna Excalidraw, diagramma Agent Debates) + voce 94:33-95:06",
+  "frame": "frame-0947.png",
+  "ancora": "SINTESI FINALE -- Il meglio di entrambe le posizioni. Nessun punto debole sopravvive a 3 round di critica.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-016", "tipo": "precede", "perche": "Nel percorso del corso Agent Debates è la tecnica introdotta subito dopo Agent Polling."},
+   {"verso": "KA-041", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-037",
+  "tipo": "principio",
+  "contenuto": "Due note gialle sotto il diagramma Agent Debates spiegano il meccanismo: 'Il sostenitore rafforza i punti deboli. Il critico riconosce i punti forti.' e 'Entrambi aggiornano la propria posizione con le critiche ricevute.'",
+  "fonte": "JTn5pqm9ecM#94:36 (lavagna Excalidraw, due post-it gialli sotto il diagramma Agent Debates) + voce 94:36-95:06",
+  "frame": "frame-0947.png",
+  "ancora": "Il sostenitore rafforza i punti deboli. Il critico riconosce i punti forti.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-038",
+  "tipo": "principio",
+  "contenuto": "Sottotitolo del video sovrimpresso sul diagramma Agent Debates, tesi centrale della tecnica: 'dibattito strutturato produce idee che nessun singolo punto di vista avrebbe raggiunto da solo.'",
+  "fonte": "JTn5pqm9ecM#94:36 (sottotitolo sovrimpresso sul diagramma Agent Debates) + voce 94:33-94:36",
+  "frame": "frame-0947.png",
+  "ancora": "dibattito strutturato produce idee che nessun singolo punto di vista avrebbe raggiunto da solo.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-039",
+  "tipo": "regola",
+  "contenuto": "Regola di base degli Agent Debates spiegata a voce: il sostenitore (in questo caso ce ne sono due) troverà ogni ragione possibile per sostenere un'idea, il critico ogni ragione possibile per buttarla giù -- ciascuno dei due ruoli è deliberatamente sbilanciato in una direzione, non neutrale.",
+  "fonte": "JTn5pqm9ecM#96:18 (lavagna Excalidraw, diagramma Agent Debates) + voce 96:18-96:30",
+  "frame": "frame-0964.png",
+  "ancora": "il sostenitore, in questo caso sono due, troverà ogni idea che o ogni ragione per sostenere un'idea, il critico per buttarla giù",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "definisce"}
+  ]
+ },
+ {
+  "id": "KA-040",
+  "tipo": "principio",
+  "contenuto": "Metafora del diamante grezzo per spiegare la convergenza degli Agent Debates: sopra il titolo del diagramma vengono disegnate in sequenza tre forme -- un cerchio irregolare, poi una forma poligonale grezza e frastagliata, poi una forma a diamante sfaccettato -- a rappresentare come l'idea iniziale, raffinata round dopo round dal confronto Sostenitore/Critico, arrivi alla forma finale che il relatore chiama 'convergenza'.",
+  "fonte": "JTn5pqm9ecM#95:36 (lavagna Excalidraw, sequenza cerchio-forma grezza-diamante sopra il titolo Agent Debates) + voce 95:36-95:54",
+  "frame": "frame-0957.png",
+  "ancora": "che è quella che noi chiamiamo convergenza.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-041",
+  "tipo": "esempio",
+  "contenuto": "Live demo degli Agent Debates: sul report di polling appena prodotto, il relatore digita il comando 'hey, usa /agent-debates per capire la migliore'. La skill risponde: 'Launching a 3-agent, 3-round debate on the three strategies from the polling. Let me set up the arena.'",
+  "fonte": "JTn5pqm9ecM#97:00 (Claude Code/Antigravity, comando /agent-debates e risposta di lancio) + voce 96:48-97:18",
+  "frame": "frame-0971.png",
+  "ancora": "Launching a 3-agent, 3-round debate on the three strategies from the polling. Let me set up the arena.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-035", "tipo": "applica", "perche": "Il dibattito viene lanciato esplicitamente sulle tre strategie emerse dal report di polling, non su un'idea nuova."},
+   {"verso": "KA-042", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-042",
+  "tipo": "dato",
+  "contenuto": "Il Round 1 dell'Agent Debates si apre con 'Round 1 -- opening positions. Launching all 3 agents in parallel.' I tre agenti-dibattito, ciascuno con la propria posizione di partenza, sono: Volume Machine, Breakout Engineer, Collab Strategist.",
+  "fonte": "JTn5pqm9ecM#98:18 (Claude Code/Antigravity, apertura Round 1 con i tre agenti) + voce 98:18-98:30",
+  "frame": "frame-0984.png",
+  "ancora": "Round 1 -- opening positions. Launching all 3 agents in parallel.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-041", "tipo": "parte-di"},
+   {"verso": "KA-043", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-043",
+  "tipo": "dato",
+  "contenuto": "I tre ruoli/system prompt del Round 1: 'Agent: Debate R1: Volume Machine' -- 'You are the \"Volume Machine\" -- a High-Volume Publishing Advocate. Your role: Defend publishing 3-4 videos/week to dominate Italian AI search. More surface area = more algorithm lottery tickets.' 'Agent: Debate R1: Breakout Engineer' -- 'You are the \"Breakout Engineer\" -- an Engineered Viral Content Advocate. Your role: Defend producing fewer but highly-engineered breakout videos (1 every 2-3 weeks) designed for cold audience discovery.' 'Agent: Debate R1: Collab Strategist' -- 'a Strategic Collaborations Advocate.'",
+  "fonte": "JTn5pqm9ecM#98:18 (Claude Code/Antigravity, i tre system prompt del Round 1) + voce 98:18-98:30",
+  "frame": "frame-0984.png",
+  "ancora": "Your role: Defend publishing 3-4 videos/week to dominate Italian AI search.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-042", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-044",
+  "tipo": "principio",
+  "contenuto": "Ogni nuovo round dell'Agent Debates eredita sia il contesto delle conversazioni precedenti sia tutto quanto è stato discusso tra i vari agenti nei round già svolti -- il dibattito si accumula, non riparte da zero a ogni round.",
+  "fonte": "JTn5pqm9ecM#98:54 (webcam, spiegazione del meccanismo di ereditarietà del contesto tra round) + voce 98:54-99:00",
+  "frame": "frame-0990.png",
+  "ancora": "avremo il contesto di quella che sono le conversazioni precedenti più avremo tutto quanto quello che è stato discusso tra i vari agenti.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-045",
+  "tipo": "dato",
+  "contenuto": "Verdetto del dibattito dopo 3 round: 'I tre agenti sono partiti da posizioni opposte e sono convergiti su un unico piano sequenziale entro il Round 3. L'insight chiave, del Breakout Engineer: \"il sequencing conta piu della scelta della strategia.\" Tutte e tre le strategie sono corrette -- ma applicate in fasi diverse.'",
+  "fonte": "JTn5pqm9ecM#99:24 (Claude Code/Antigravity, sezione Verdetto del dibattito) + voce 99:24-99:30",
+  "frame": "frame-0995.png",
+  "ancora": "il sequencing conta piu della scelta della strategia.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-042", "tipo": "precede"},
+   {"verso": "KA-046", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-046",
+  "tipo": "dato",
+  "contenuto": "Piano Integrato prodotto dal verdetto dell'Agent Debates, in tre fasi sequenziali: 'Mese 1: Un video proof-of-income, nient'altro di critico.' -- \"Ho guadagnato X euro con l'AI questo mese -- ecco come.\" Numeri reali, screenshot reali, metodo passo passo. LinkedIn spike il giorno stesso. In parallelo: costruisci la lista di 15 creator italiani (10K-100K subs) per la collab. A/B testa il thumbnail su LinkedIn prima di produrre il video. 'Mese 2: Sblocca le collab con quel video come biglietto da visita.' -- 10 pitch personalizzati a creator 10K-50K in nicchie adiacenti (finanza personale, freelancing, produttivita). Lead con l'11-min di watch time medio, non il numero di iscritti. Intanto: 1 video/settimana search-optimized per costruire il catalogo. 'Mese 3+: Volume su formati provati + 1 collab/mese.' -- 1 long-form/settimana + 1-2 Shorts tagliati dal long-form + collab mensili scalando verso creator 100K+.",
+  "fonte": "JTn5pqm9ecM#99:24 (Claude Code/Antigravity, sezione Il Piano Integrato completa) + voce 99:24-99:36",
+  "frame": "frame-0995.png",
+  "ancora": "Un video proof-of-income, nient'altro di critico.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"},
+   {"verso": "KA-035", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-047",
+  "tipo": "regola",
+  "contenuto": "Decision gate inserito nel Piano Integrato: 'Se il video proof-of-income fa < 5K views in 30 giorni, salta le collab e defaulta a 2 video search/settimana.' Una condizione di uscita esplicita che ridefinisce il piano se il primo esperimento non funziona.",
+  "fonte": "JTn5pqm9ecM#99:30 (Claude Code/Antigravity, riga Decision gate) + voce 99:30-99:36",
+  "frame": "frame-0996.png",
+  "ancora": "Decision gate: Se il video proof-of-income fa < 5K views in 30 giorni, salta le collab e defaulta a 2 video search/settimana.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-046", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-048",
+  "tipo": "dato",
+  "contenuto": "Il disagreement più interessante rimasto dopo il dibattito: 'Micro-collab (10K-50K) come stepping stone vs. andare diretti ai 100K+. Il mio take: parti dai 10K-50K. A 2,700 iscritti, anche un creator da 20K e un moltiplicatore 7x. E la prima collab diventa materiale per pitchare la successiva.'",
+  "fonte": "JTn5pqm9ecM#99:30 (Claude Code/Antigravity, sezione Il disagreement piu interessante) + voce 99:30-99:36",
+  "frame": "frame-0996.png",
+  "ancora": "Micro-collab (10K-50K) come stepping stone vs. andare diretti ai 100K+.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-049",
+  "tipo": "avvertimento",
+  "contenuto": "Rischio più grande segnalato dal verdetto del dibattito: 'Il buco motivazionale del Mese 2. Il Mese 1 e eccitante. Il Mese 2 e la grind. Pre-scrivi gli script del Mese 2 prima di finire il Mese 1.' Un avvertimento operativo su come il piano rischia di arenarsi psicologicamente, non tecnicamente.",
+  "fonte": "JTn5pqm9ecM#99:36 (Claude Code/Antigravity, sezione Il rischio piu grande) + voce 99:36-99:42",
+  "frame": "frame-0997.png",
+  "ancora": "Il buco motivazionale del Mese 2. Il Mese 1 e eccitante. Il Mese 2 e la grind.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-045", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-050",
+  "tipo": "dato",
+  "contenuto": "Risultato atteso finale del Piano Integrato: 'Con esecuzione forte: 20K-40K iscritti entro dicembre 2026. Con un video breakout: 40K-70K. 100K richiede 2+ eventi virali o una collab con un canale 200K+ -- possibile ma non pianificabile.' Un ridimensionamento esplicito rispetto all'obiettivo iniziale di 100K, con link a debate_report.md e polling_report.md.",
+  "fonte": "JTn5pqm9ecM#99:42 (Claude Code/Antigravity, sezione Risultato atteso) + voce 99:42-100:06",
+  "frame": "frame-0998.png",
+  "ancora": "Con esecuzione forte: 20K-40K iscritti entro dicembre 2026. Con un video breakout: 40K-70K.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-046", "tipo": "parte-di"}
+  ]
+ }
+]

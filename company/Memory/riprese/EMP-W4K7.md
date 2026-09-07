@@ -176,6 +176,32 @@ esattamente cio' che e' successo piu' volte in questa sessione per limite di ses
 Va controllato a campione anche sui run gia' "chiusi": se uno di questi ha mai avuto un
 `video.mp4.part` prima di diventare `video.mp4`, la sua copertura andrebbe riverificata.
 
+### PAUSA 2026-09-07 08:2x — a comando di Max. Checkpoint: CP-20260907-ZAYA
+
+**v06 e v05 chiusi come visione (100%), atomizzazione in corso su entrambi.**
+`v08` a 131/393, `v09` (ricostruito dopo il bug .part) a 51/494. Dettaglio completo, bug fix
+e prossimo passo esatto in [CP-20260907-ZAYA](../checkpoints/CP-20260907-ZAYA.md) — leggerlo
+per intero prima di ripartire, questo file resta la mappa generale.
+
+**Agenti lasciati in volo alla pausa** (non fermati, scrivono su disco ogni 5 scene/atomi):
+atomizzatore v06 (1-126), atomizzatore v05 (intero), 3 sentinelle v08 (127-189), 2 sentinelle
+v09 (22-63). **Alla ripresa: ricontare il disco per ognuno prima di schierare altro** — potrebbero
+aver gia' finito, o essere caduti a meta' lasciando un file parziale da completare.
+
+**Comando per ricontare v06/v05/v08/v09 in un colpo:**
+```bash
+cd "SKILL & Agenti/Empire Studio Suite/empire-studio/runs"
+for r in max18-v06-JTn5pqm9ecM max18-v05-RnNSRF4s9nk max18-v08-DI5aWJiFAt8 max18-v09-NmoOZVTrTXA; do
+  python -c "
+import re,glob,sys
+f=set()
+for x in glob.glob('$r/_parte-*.md'):
+    for m in re.finditer(r'^### Scena (\d+)',open(x,encoding='utf-8').read(),re.M): f.add(int(m.group(1)))
+print('$r:', len(f), 'scene scritte')
+"
+done
+```
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte
