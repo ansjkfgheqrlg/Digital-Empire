@@ -82,17 +82,24 @@ la **palette** e gli **effetti scritti a mano** (custom.css) sì.
 > `static1.squarespace.com/static/custom-css/602126db7a4e4c01fd9babb6/...`
 > **Quello va letto**: è l'unica parte di questi siti che è sua.
 
-### T3 — LA MACCHINA DEL FUNNEL: schema e copy, niente atlante visivo *(14 pagine)*
+### T3 — LA MACCHINA DEL FUNNEL: schema e copy, niente atlante visivo *(19 pagine)*
 Sono i gradini fra una pagina e il pagamento. Il loro valore è **la sequenza**, non l'aspetto.
 
 `/pre-copy` · `/pre-checkout-cm` · `/pre-checkout-cmb` · `/outemail-pre` · `/outheadline-pre` ·
 `/vendita101-pre` · `/pre-outviral-shop` · `/stripe-claude-speedrun` · `/presto-disponibile` ·
 `/ricevi-email-di-andrei-pascu` · `/ecco-i-fatti-copywriting` · `/aps-assistenza` ·
 `chiamata-formazione.netlify.app` · `apsales.eu/promozione`
+**+ arrivate da T2 e già catturate:** `/asa` ✅ · `/define` ✅ · `/armadeggon-strp` ✅ · `/outfunnel-1` ✅
+**+ trovata studiando:** `/acquista-v101` ⬜ (ci porta `/vendita` a `[y=3219]`, non era in elenco)
 
 > **Scoperta già visibile dai soli nomi:** ogni prodotto ha una pagina `-pre` prima della cassa.
 > È un gradino di funnel sistematico che non avevamo mai visto, perché non avevamo mai guardato
 > l'elenco delle pagine.
+>
+> **Confermata sul campo il 2026-09-07** (rapporto `24-25-27-28-macchina-del-funnel.md`): la
+> pre-cassa esiste davvero, ha una forma fissa — occhiello «Stai acquistando…», nome del prodotto,
+> cifra isolata, «Una tantum», bottone — e **il codice sconto vive lì, non nella pagina di vendita**.
+> L'elenco delle pagine `-pre` **non è chiuso**: un solo campione ne ha rivelata una nuova.
 
 ### T4 — PROVA, STORIA E NEGOZIO: campione, non tutte *(19 + 6 pagine)*
 `/recensioni-andrei-pascu` · `/recensioni-copywriting-mentorship` · `/story` · `/storyvideo` ·
@@ -161,7 +168,7 @@ di funnel che non capiamo ancora.
 | Onda | Catturate | Chiuse (4 file) | Attese |
 |---|---|---|---|
 | Onda A | 9 | 0 | 9 |
-| Onda B | 1 | 0 | 8 |
+| Onda B | 8 | 0 | 8 |
 | Onda C | 0 | 0 | 7 |
 | Onda D | 0 | 0 | 14 |
 | Onda E | 0 | 0 | 9 |
