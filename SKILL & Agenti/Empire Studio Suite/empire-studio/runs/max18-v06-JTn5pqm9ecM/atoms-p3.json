@@ -626,5 +626,379 @@
   "relazioni": [
    {"verso": "KA-046", "tipo": "parte-di"}
   ]
+ },
+ {
+  "id": "KA-051",
+  "tipo": "definizione",
+  "contenuto": "Diagramma 'Browser Swarm' su lavagna Excalidraw: a sinistra un riquadro viola 'UN COMPITO -- Compila 50 moduli di contatto' con sotto 'Tempo sequenziale: 5 ore'; una freccia porta a un riquadro giallo 'ORCHESTRATORE'; da qui cinque frecce verso cinque riquadri colorati impilati: 'Browser 1 -- Moduli 1-10' (verde), 'Browser 2 -- Moduli 11-20' (arancione), 'Browser 3 -- Moduli 21-30' (blu), 'Browser 4 -- Moduli 31-40' (rosa/rosso), 'Browser 5 -- Moduli 41-50' (viola); tutte le frecce convergono verso 'Tutti simultanei' e poi in un riquadro finale verde 'COMPLETATO -- Tempo reale: 1 ora (5x piu veloce)'.",
+  "fonte": "JTn5pqm9ecM#100:06 (lavagna Excalidraw, diagramma Browser Swarm) + voce 100:33-100:48",
+  "frame": "frame-1002.png",
+  "ancora": "COMPLETATO -- Tempo reale: 1 ora (5x piu veloce)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-036", "tipo": "precede", "perche": "Nel percorso del corso Browser Swarm è la tecnica introdotta subito dopo Agent Debates."},
+   {"verso": "KA-056", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-052",
+  "tipo": "principio",
+  "contenuto": "Didascalia sotto il diagramma Browser Swarm, principio cardine della tecnica: 'Lo stesso compito, diviso tra N browser indipendenti, finisce N volte piu in fretta.'",
+  "fonte": "JTn5pqm9ecM#100:06 (lavagna Excalidraw, didascalia sotto il diagramma Browser Swarm) + voce 100:06-100:12",
+  "frame": "frame-1002.png",
+  "ancora": "Lo stesso compito, diviso tra N browser indipendenti, finisce N volte piu in fretta.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-051", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-053",
+  "tipo": "definizione",
+  "contenuto": "Baseline concettuale da cui parte il Browser Swarm: la browser automation classica a cui si è abituati consiste in un solo agente (Claude Code, Codex o altro) che usa un singolo browser per andare a cercare le cose sul web, uno alla volta.",
+  "fonte": "JTn5pqm9ecM#100:12 (lavagna Excalidraw, diagramma Browser Swarm ingrandito) + voce 100:12-100:18",
+  "frame": "frame-1003.png",
+  "ancora": "siamo abituati ad utilizzare gli agenti facendo le cosiddette browser automation.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-051", "tipo": "definisce", "perche": "Spiega il concetto di base (un solo browser, un solo agente) da cui il diagramma Browser Swarm si differenzia moltiplicando i browser in parallelo."}
+  ]
+ },
+ {
+  "id": "KA-054",
+  "tipo": "dato",
+  "contenuto": "Esempio matematico disegnato a mano per introdurre il guadagno del parallelismo: tre task fatte da un browser, ciascuna da 10 minuti, sommano a 30 minuti in sequenza (linea del tempo con tacche 10-20-30). Se le stesse tre task vengono fatte in parallelo, tutte e tre finiscono nello stesso tempo in cui ne è fatta una sola: un guadagno di tre volte in termini di tempo.",
+  "fonte": "JTn5pqm9ecM#101:36 (lavagna Excalidraw, tre frecce verdi e linea del tempo 10-20-30) + voce 101:36-102:06",
+  "frame": "frame-1017.png",
+  "ancora": "abbiamo fatto tre task in 30 minuti",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-052", "tipo": "esempio-di"},
+   {"verso": "KA-055", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-055",
+  "tipo": "dato",
+  "contenuto": "Estensione dell'esempio: se lo stesso processo da 3x di guadagno va ripetuto 5 volte, si moltiplica 5 x 3 = 15 unità di tempo (150 minuti se l'unità è 10 minuti). Spawnando -- a livello logico, con un costo in token -- 15 agenti in parallelo invece di farli in sequenza, si ottiene un risparmio di tempo per 15.",
+  "fonte": "JTn5pqm9ecM#102:36 (lavagna Excalidraw, annotazione '5 x 3 = 15' e diagramma a forcella) + voce 102:36-103:00",
+  "frame": "frame-1027.png",
+  "ancora": "\"5 x 3\" seguita da un segno \"=\" e \"15\" racchiuso in un cerchio arancione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-054", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-056",
+  "tipo": "esempio",
+  "contenuto": "Live demo del Browser Swarm: il relatore detta il comando (trascritto integralmente in chat.md): 'Hey, per favore, ehm, spawna tre browser con il nostro Chrome Swarm. Vorrei che tu entrassi con tutti e tre nella pagina iniziale di Google, poi inserissi tre diverse query (magari una per andare su LinkedIn, una su YouTube e una su Instagram), e poi andassi lì'.",
+  "fonte": "JTn5pqm9ecM#103:30 (Claude Code, messaggio chat.md con il comando dettato) + voce 103:00-103:30",
+  "frame": "frame-1036.png",
+  "ancora": "spawna tre browser con il nostro Chrome Swarm",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-051", "tipo": "applica"},
+   {"verso": "KA-057", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-057",
+  "tipo": "dato",
+  "contenuto": "Prova tecnica reale del Browser Swarm: la skill lancia lo script swarm_driver.py con il blocco Bash 'Run swarm driver: 3 browsers search Google in parallel then follow first result', output 'Launching 3 browsers simultaneously...' con navigazione su porte reali distinte -- '[1] port 9223: navigating -> https://google.com/search?q=LinkedIn', '[2] port 9224: navigating -> https://google.com/search?q=YouTube' (e una terza porta per Instagram). Tutti e 3 i browser hanno completato in ~11 secondi.",
+  "fonte": "JTn5pqm9ecM#104:00 (VS Code, blocco Bash Run swarm driver con porte reali) + voce 103:48-104:00",
+  "frame": "frame-1041.png",
+  "ancora": "hanno completato in ~11 secondi",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-056", "tipo": "parte-di"},
+   {"verso": "KA-058", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-058",
+  "tipo": "dato",
+  "contenuto": "Tabella dei risultati reali del Browser Swarm, letta dal file /tmp/swarm_results.json: '1 (porta 9223) | Linkedin | it.linkedin.com -- pagina di benvenuto italiana'; '2 (porta 9224) | YouTube | youtube.com -- homepage con consent banner'; '3 (porta 9225) | Instagram | instagram.com -- pagina di login'. I browser restano aperti al termine, con l'opzione di chiuderli con lo script kill_chrome.sh.",
+  "fonte": "JTn5pqm9ecM#104:24 (VS Code, tabella Browser/Query/Destinazione selezionata) + voce 104:00-104:24",
+  "frame": "frame-1045.png",
+  "ancora": "3 (porta 9225) | Instagram | instagram.com -- pagina di login",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-057", "tipo": "parte-di"},
+   {"verso": "KA-059", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-059",
+  "tipo": "esempio",
+  "contenuto": "Uso pratico del Browser Swarm citato esplicitamente in webcam, richiamando le schermate di consenso cookie appena viste durante la demo: è utile in siti in cui è richiesta l'autenticazione umana o la selezione cookie, come visto pochi secondi prima nella dimostrazione.",
+  "fonte": "JTn5pqm9ecM#104:30 (solo webcam, nessuna finestra applicativa) + voce 104:30-104:48",
+  "frame": "frame-1046.png",
+  "ancora": "l'autenticazione umana o selezione cookie, come avete visto 2 secondi fa.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-058", "tipo": "esempio-di"},
+   {"verso": "KA-060", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-060",
+  "tipo": "avvertimento",
+  "contenuto": "Disclaimer etico sul caso limite del Browser Swarm applicato a studi medici come nicchia: uno swarm di agenti può identificarsi come l'utente per raccogliere email da siti che richiedono autenticazione. Il relatore lo descrive ma lo accompagna esplicitamente con un disclaimer: 'Io non sto incitando niente' e, a chiusura dell'esempio: 'Ovviamente io non lo raccomando.'",
+  "fonte": "JTn5pqm9ecM#105:18 (solo webcam) + voce 105:06-105:24",
+  "frame": "frame-1054.png",
+  "ancora": "Ovviamente io non lo raccomando.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-059", "tipo": "contraddice", "perche": "Il caso d'uso descritto (uno swarm che si autentica come l'utente per raccogliere email) estende l'esempio della selezione cookie appena illustrato, ma qui il relatore lo sconsiglia esplicitamente invece di proporlo come buona pratica."}
+  ]
+ },
+ {
+  "id": "KA-061",
+  "tipo": "dato",
+  "contenuto": "Catalogo reale delle skill Claude Code installate nel progetto 'Social Media Manager' di Giovanni Beggiato, visibile ripetutamente nella sidebar .claude/skills durante tutto il blocco di scene: agent-debates, agent-polling, audit, auphonic, browser-swarm, commit, contract, corso-skool, deploy-check, diagram-generator, draft-to-youtube, email-digest, linkedin-post, pre-mortem, prompt-contracts, query-anthropic, reverse-prompting, schedule-meeting, shorts, sign, skool-community-replies, skool-video-upload, step-back-prompting, video-to-action.",
+  "fonte": "JTn5pqm9ecM#92:06 e 104:24 (Claude Code/VS Code, sidebar Explorer .claude/skills espansa) + voce assente (solo screen-share)",
+  "frame": "frame-1045.png",
+  "ancora": "\"agent-debates\", \"agent-polling\", \"audit\", \"auphonic\", \"browser-swarm\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-070", "tipo": "motiva", "perche": "Il catalogo mostra che browser-swarm e audit sono due delle 24 skill reali già installate nello stesso progetto, coerenti con l'uso pratico dimostrato dal vivo in entrambi i capitoli."}
+  ]
+ },
+ {
+  "id": "KA-062",
+  "tipo": "definizione",
+  "contenuto": "Diagramma 'Audit' su lavagna Excalidraw: box viola 'IL TUO PROGETTO' da cui partono tre frecce verso tre colonne di ispettori paralleli -- azzurro 'ISPETTORE CODICE -- Qualità, bug, pattern errati', verde 'ISPETTORE CONFIGURAZIONE -- Drift, file mancanti, coerenza', arancione 'ISPETTORE SICUREZZA -- Vulnerabilità, segreti esposti, permessi'. Ciascuno produce un risultato: '3 problemi trovati' (Codice), '1 drift rilevato' (Configurazione), 'Nessuna vulnerabilità' (Sicurezza). Tutti e tre convergono in un box giallo finale: 'REPORT UNIFICATO -- Stato di salute completo, priorità di intervento'.",
+  "fonte": "JTn5pqm9ecM#105:36 (lavagna Excalidraw, diagramma Audit completo) + voce 105:36-106:06",
+  "frame": "frame-1057.png",
+  "ancora": "REPORT UNIFICATO -- Stato di salute completo, priorità di intervento",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-051", "tipo": "precede", "perche": "Nel percorso del corso Audit è la tecnica finale, introdotta subito dopo Browser Swarm a chiusura dell'arco delle tecniche insegnate."},
+   {"verso": "KA-070", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-063",
+  "tipo": "principio",
+  "contenuto": "Didascalia sotto il diagramma Audit, principio cardine della tecnica: 'Un singolo punto di vista trova solo i problemi che sa cercare. Specialisti multipli coprono gli angoli ciechi.'",
+  "fonte": "JTn5pqm9ecM#105:36 (lavagna Excalidraw, didascalia sotto il diagramma Audit) + voce 105:36-106:06",
+  "frame": "frame-1057.png",
+  "ancora": "Un singolo punto di vista trova solo i problemi che sa cercare. Specialisti multipli coprono gli angoli ciechi.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-062", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-064",
+  "tipo": "principio",
+  "contenuto": "Annotazione manoscritta arancione '0 contesto!' con freccia verso l'Ispettore Codice: il primo agente di audit deve lavorare a zero contesto pregresso, altrimenti diventa biased dalle informazioni di contorno accumulate durante il progetto e da tutte le memorie discusse nel corso.",
+  "fonte": "JTn5pqm9ecM#106:06 (lavagna Excalidraw, annotazione '0 contesto!' verso Ispettore Codice) + voce 106:06-106:36",
+  "frame": "frame-1062.png",
+  "ancora": "diventa abbastanza biased sulle informazioni di contorno che ha per tutte le varie memorie di cui abbiamo discusso.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-062", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-065",
+  "tipo": "esempio",
+  "contenuto": "Annotazione manoscritta arancione 'CLAUDE.md' collegata con freccia all'Ispettore Configurazione: richiama l'esempio, fatto poco prima a voce, del file di regole del progetto non aggiornato -- 'nel mio eh cloud dot MD non sono riuscito a scrivere tutte le regole' -- come caso concreto del tipo di drift/incoerenza che questo secondo ispettore deve individuare.",
+  "fonte": "JTn5pqm9ecM#107:06 (lavagna Excalidraw, annotazione CLAUDE.md verso Ispettore Configurazione) + voce 106:36-107:06",
+  "frame": "frame-1072.png",
+  "ancora": "eh cloud dot MD non sono riuscito a scrivere tutte le regole",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-062", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-066",
+  "tipo": "dato",
+  "contenuto": "Frontmatter reale del file SKILL.md della skill audit del progetto (visibile con numeri di riga, autore confermato via git blame): name: audit; description: 'Run a comprehensive 3-agent project health audit covering code quality, skill compliance, chain documentation, configuration drift, rules freshness, hooks integrity, and environment completeness. Use when the user says \"audit\", \"code review\", \"check the code\", \"review everything\", \"full audit\", \"project health\", or \"/audit\".'; allowed-tools: Bash, Read, Grep, Glob, Task.",
+  "fonte": "JTn5pqm9ecM#107:42 (VS Code, file .claude/skills/audit/SKILL.md aperto, righe 1-13) + voce assente (solo screen-share, poi voce 107:36-107:42)",
+  "frame": "frame-1078.png",
+  "ancora": "Run a comprehensive 3-agent project health audit covering code quality,",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-067", "tipo": "precede"},
+   {"verso": "KA-062", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-067",
+  "tipo": "regola",
+  "contenuto": "Goal dichiarato nel file SKILL.md reale della skill audit: 'Catch everything -- code bugs, skill drift, broken chains, stale rules, missing hooks, env gaps -- in one pass with 3 parallel agents. No manual checklist needed.'",
+  "fonte": "JTn5pqm9ecM#107:42 (VS Code, sezione ## Goal di SKILL.md) + voce assente (solo screen-share)",
+  "frame": "frame-1078.png",
+  "ancora": "Catch everything -- code bugs, skill drift, broken chains, stale rules, missing hooks, env gaps",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-066", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-068",
+  "tipo": "avvertimento",
+  "contenuto": "Sezione Gotchas del file SKILL.md reale della skill audit, tre avvertenze operative: 'Scripts must run from project root. All check_*.py scripts use Path(__file__).resolve().parents[4] to find the project root. Run them with python3 .claude/skills/audit/scripts/<script>.'; 'check_skill_chains.py has hardcoded KNOWN_CHAINS. When adding a new skill chain, update the KNOWN_CHAINS dict in the script or the chain won't be verified.'; 'check_env_completeness.py won't find env vars used in browser automation. Loom/n8n vars are used via Chrome DevTools MCP, not Python os.environ.'",
+  "fonte": "JTn5pqm9ecM#107:42 (VS Code, sezione ## Gotchas di SKILL.md) + voce assente (solo screen-share)",
+  "frame": "frame-1078.png",
+  "ancora": "Scripts must run from project root.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-066", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-069",
+  "tipo": "dato",
+  "contenuto": "La barra di stato dell'editor conferma via git blame che l'autore del file SKILL.md della skill audit è proprio il relatore del corso: 'Giovanni Beggiato (2 months ago)' sulla riga selezionata -- prova diretta che la skill mostrata è materiale di produzione reale, non un esempio costruito per il video.",
+  "fonte": "JTn5pqm9ecM#107:42 (VS Code, barra di stato con git blame su SKILL.md) + voce assente (solo screen-share)",
+  "frame": "frame-1078.png",
+  "ancora": "Giovanni Beggiato (2 months ago)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-066", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-070",
+  "tipo": "esempio",
+  "contenuto": "Live demo reale dell'Audit: lanciato sul progetto Social Media Manager, il comando /audit apre tre agenti paralleli con ruoli distinti: 'Agent 1 (Research): code inventory, skill compliance, chain integrity, project drift, orphan detection'; 'Agent 2 (Reviewer): zero-context code review, rules freshness, hooks check, memory staleness'; 'Agent 3 (QA): module imports, env completeness, reference validation, git state, tests, self-check'.",
+  "fonte": "JTn5pqm9ecM#109:00 (Antigravity, prompt /audit con i tre agenti Research/Reviewer/QA) + voce 108:30-109:00",
+  "frame": "frame-1091.png",
+  "ancora": "Agent 1 (Research): code inventory, skill compliance, chain integrity, project drift, orphan detection",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-062", "tipo": "applica"},
+   {"verso": "KA-071", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-071",
+  "tipo": "procedura",
+  "contenuto": "Il comando /audit reale genera una checklist Todos che struttura l'intero processo oltre alla sola raccolta dati: '[x] Collect results from 3 audit agents', '[ ] Compile and prioritize findings', '[ ] Auto-fix what can be fixed', '[ ] Update audit_log.md memory', '[ ] Run /commit pipeline'.",
+  "fonte": "JTn5pqm9ecM#109:00 (Antigravity, blocco Update Todos del comando /audit) + voce 109:00-109:30",
+  "frame": "frame-1091.png",
+  "ancora": "Collect results from 3 audit agents",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-070", "tipo": "parte-di"},
+   {"verso": "KA-072", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-072",
+  "tipo": "dato",
+  "contenuto": "Primo risultato reale dell'audit lanciato dal vivo sul progetto: 'Agent 3 (QA) is done -- 5/6 checks pass, 1 FAIL on stale script references in SKILL.md files. Still waiting for Agents 1 and 2.'",
+  "fonte": "JTn5pqm9ecM#109:30 (Antigravity, Source Control view, primo risultato reale di Agent 3 QA) + voce 109:30-109:42",
+  "frame": "frame-1096.png",
+  "ancora": "Agent 3 (QA) is done -- 5/6 checks pass, 1 FAIL on stale script references in SKILL.md files.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-071", "tipo": "parte-di"},
+   {"verso": "KA-073", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-073",
+  "tipo": "dato",
+  "contenuto": "Prova reale dello stato del progetto al momento della demo: il pannello Source Control mostra 'Changes 28' -- 28 modifiche pending, la stessa cifra che il relatore cita a voce ('io qui ora ho ehm 28 cose pending su GitHub').",
+  "fonte": "JTn5pqm9ecM#109:30 (Antigravity, sidebar Source Control con badge 'Changes 28') + voce 109:30-109:42",
+  "frame": "frame-1096.png",
+  "ancora": "Changes 28",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-070", "tipo": "parte-di"},
+   {"verso": "KA-074", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-074",
+  "tipo": "procedura",
+  "contenuto": "Dopo che la skill di audit ha finito di girare, le modifiche pending vengono tutte committate e pushate automaticamente su GitHub, cosi' che il progetto rimanga pulito -- collegando esplicitamente l'ultimo step della checklist Todos ('Run /commit pipeline') al reale stato Git a schermo.",
+  "fonte": "JTn5pqm9ecM#109:42 (solo webcam) + voce 109:42-109:48",
+  "frame": "frame-1098.png",
+  "ancora": "verranno tutti committati, verrà tutto pushato in GitHub e quindi poi il mio progetto eh rimarrà pulito.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-072", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-075",
+  "tipo": "dato",
+  "contenuto": "Durante la ricerca dal vivo del comando giusto, il menu 'Slash Commands' di Claude Code mostra quattro comandi reali disponibili nel progetto: /review, /reverse-prompting, /security-review, /simplify. Il relatore cercava 'security audit' ma corregge dal vivo: il comando che esiste davvero è /security-review, non un ipotetico security audit.",
+  "fonte": "JTn5pqm9ecM#108:30 (Claude Code, menu a tendina Slash Commands) + voce 108:30-108:36",
+  "frame": "frame-1086.png",
+  "ancora": "/security-review` (riga evidenziata con sfondo blu, selezionata)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-070", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-076",
+  "tipo": "dato",
+  "contenuto": "Elenco reale dei file toccati nel commit pending relativo alle skill browser-swarm e audit, visibile nel pannello Source Control: CLAUDE.md, skool_dm_campaign.py, check_env_completeness.py, check_hooks.py (.claude/skills/audit), check_project_drift.py, check_rules_freshness.py, check_skill_chains.py, check_skill_compliance.py, chat.md (.claude/skills/browser-swarm), kill_chrome.sh, launch_chrome.sh, launch_workers.sh, SKILL.md (.claude/skills/browser-swarm), swarm_driver.py, verify_swarm.sh, .mcp.json.",
+  "fonte": "JTn5pqm9ecM#109:30 (Antigravity, elenco file in Source Control 'Changes 28') + voce assente (solo screen-share)",
+  "frame": "frame-1096.png",
+  "ancora": "check_project_drift.py .cla... — U",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-073", "tipo": "esempio-di"},
+   {"verso": "KA-068", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-077",
+  "tipo": "principio",
+  "contenuto": "Il blocco Audit si apre con una domanda retorica che chiude idealmente l'arco delle tecniche insegnate nel corso: ipotizzando di aver costruito un progetto perfetto usando tutte le tecniche precedenti (prompt contracts, pre-mortem, agent polling, agent debates, browser swarm), come ci si assicura di averlo davvero fatto bene? La risposta sviluppata subito dopo è la tecnica di Audit a tre agenti paralleli.",
+  "fonte": "JTn5pqm9ecM#105:30 (solo webcam, domanda retorica di apertura del blocco Audit) + voce 105:30-105:36",
+  "frame": "frame-1056.png",
+  "ancora": "come facciamo ad assicurarci che facciamo un audit?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-062", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-078",
+  "tipo": "dato",
+  "contenuto": "Il relatore annuncia che lascerà la skill di audit a disposizione del pubblico, cosi' che chiunque la voglia importare nei propri progetti possa farlo in tutta libertà.",
+  "fonte": "JTn5pqm9ecM#109:48 (solo webcam) + voce 109:48-109:54",
+  "frame": "frame-1099.png",
+  "ancora": "lascerò anche questa skill di audit sotto in modo tale che se poi vogliate importarla",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-074", "tipo": "precede"},
+   {"verso": "KA-066", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-079",
+  "tipo": "dato",
+  "contenuto": "Chiusura del video con un'offerta commerciale esplicita: invito a chi è interessato a un programma strutturato per cominciare a vendere servizi AI o per implementare servizi AI nella propria azienda, con link lasciato in descrizione ('vi lascio il primo link qua sotto').",
+  "fonte": "JTn5pqm9ecM#110:00 (solo webcam) + voce 110:00-110:06",
+  "frame": "frame-1101.png",
+  "ancora": "se siete interessati ad un programma strutturato per cominciare a vendere servizi AI o ad implementare servizi",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-078", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-080",
+  "tipo": "procedura",
+  "contenuto": "CTA di chiusura canale, in due tempi: 'mettete like al video se vi è piaciuto, commentate, ditemi qualcosa. Aiuta il canale' seguito, nell'ultima inquadratura del video, dal saluto conclusivo 'iscrivetevi e ci vediamo alla prossima. Tchau.' -- ultima battuta pronunciata nel video, che chiude l'intero corso.",
+  "fonte": "JTn5pqm9ecM#110:12 (solo webcam, inquadratura finale) + voce 110:12-110:18",
+  "frame": "frame-1104.png",
+  "ancora": "mettete like al video se vi è piaciuto, commentate, ditemi qualcosa. Aiuta il canale",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-079", "tipo": "precede"}
+  ]
  }
 ]

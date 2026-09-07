@@ -1,0 +1,337 @@
+[
+ {
+  "id": "KA-001",
+  "tipo": "principio",
+  "contenuto": "Apertura diretta del video: il presentatore dichiara di aver costruito un bot che fa trading di Bitcoin con Claude Code (\"Cloudcode\" nella trascrizione automatica) e annuncia che nel video lo ricostruirà insieme allo spettatore, partendo da zero.",
+  "fonte": "RnNSRF4s9nk#0:00 (talking head, apertura) + voce 0:00-0:06",
+  "frame": "frame-001.png",
+  "ancora": "Ho costruito un bot che fa trading di Bitcoin con Cloudcode ed in questo video lo andremo a ricostruire insieme.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-002", "tipo": "precede"},
+   {"verso": "KA-003", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-002",
+  "tipo": "principio",
+  "contenuto": "Il presentatore chiarisce subito il vero obiettivo del video: non è una guida per arricchirsi con il trading di Bitcoin, ma un caso di studio su come usare l'intelligenza artificiale per affrontare qualsiasi problema concreto, di cui il bot è solo l'esempio scelto.",
+  "fonte": "RnNSRF4s9nk#0:06 (talking head) + voce 0:06-0:18",
+  "frame": "frame-002.png",
+  "ancora": "Però questo video non è un video su come si diventa ricchi facendo trading di Bitcoin, non sarei qui, eh, però è piuttosto un video su come possiamo utilizzare l'AI per affrontare qualsiasi problema concreto.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-001", "tipo": "parte-di"},
+   {"verso": "KA-069", "tipo": "precede", "perche": "La stessa tesi (il video non riguarda il trading ma il metodo con l'AI) apre qui e viene ripresa identica nelle considerazioni conclusive."}
+  ]
+ },
+ {
+  "id": "KA-003",
+  "tipo": "principio",
+  "contenuto": "Il video introduce un framework replicabile per affrontare qualsiasi problema con l'aiuto dell'AI, pensato apposta per chi non è esperto del dominio del problema (qui: il trading) e ha bisogno di farsi guidare dagli strumenti passo dopo passo.",
+  "fonte": "RnNSRF4s9nk#0:18-0:24 (talking head) + voce 0:18-0:30",
+  "frame": "frame-004.png, frame-005.png",
+  "ancora": "Quindi andremo a vedere qual è un framework che possiamo utilizzare per affrontare questo problema e come possiamo farci guidare da questi strumenti nel caso in cui noi non siamo degli esperti nel settore.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-004",
+  "tipo": "definizione",
+  "contenuto": "Il video si divide in tre parti principali, mostrate come schema su Excalidraw con tre riquadri collegati da frecce: \"COMPRENSIONE DEL PROBLEMA\" (icona lampadina, sottotitolo \"Capire cosa si vuole risolvere\"), \"DESIGN DEL SISTEMA\" (icona foglio da progetto con squadra e matita, sottotitolo \"Progettare la soluzione\"), \"IMPLEMENTAZIONE\" (icona \"</>\" sopra un ingranaggio, sottotitolo \"Costruire il sistema\"). Questa mappa in tre fasi corrisponde esattamente alla struttura dell'intero video.",
+  "fonte": "RnNSRF4s9nk#0:30 (schermata Excalidraw) + voce 0:30-0:54",
+  "frame": "frame-006.png",
+  "ancora": "Questo video si dividerà in tre parti principali. Andremo inizialmente a comprendere il problema che dobbiamo analizzare, quindi che cosa vuol dire fare un trading bot di Bitcoin, cioè quali sono i problemi che andiamo a risolvere, quali sono le parti costitutive. Andremo poi a definire come facciamo un design del sistema ed alla fine procederemo all'implementazione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-003", "tipo": "applica"},
+   {"verso": "KA-006", "tipo": "precede"},
+   {"verso": "KA-017", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-005",
+  "tipo": "dato",
+  "contenuto": "Presentazione personale del canale: il presentatore gestisce un'azienda di consulenza AI con clienti che vanno da €10.000 al mese fino a 50 milioni di euro all'anno di fatturato, e ha una community privata nella quale insegna a freelancer e imprenditori come applicare l'AI in qualsiasi business e come vendere questi servizi.",
+  "fonte": "RnNSRF4s9nk#1:00-1:06 (talking head) + voce 1:00-1:18",
+  "frame": "frame-011.png, frame-012.png",
+  "ancora": "...artificiale con la quale facciamo consulenza business che vanno dai €10.000 al mese fino ai 50 milioni di euro all'anno ed ho una community... privata nella quale insegno a freelancer ed imprenditori come applicare l'AI in qualsiasi business e come vendere questi servizi.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-072", "tipo": "precede", "perche": "La stessa community/offerta anticipata qui viene richiamata come pitch di vendita nella chiusura del video."}
+  ]
+ },
+ {
+  "id": "KA-006",
+  "tipo": "dato",
+  "contenuto": "Schema completo a tre livelli \"TRADING BOT BITCOIN SU BINANCE\" disegnato su Excalidraw, la scomposizione del bot nei suoi building blocks: LIVELLO 1 MONITORAGGIO E ALERT (fascia viola) — Supervisione costante, Notifiche in tempo reale (icona smartphone), Dashboard di controllo (icona ingranaggio); LIVELLO 2 IL BOT (fascia verde) — Lettura Dati (icona candele di borsa, sottotitolo \"Raccoglie candele e prezzi in tempo reale\") → Decisione e Gestione del Rischio (icona cervello, sottotitolo \"Cervello del bot: applica la strategia, decide l'azione, gestisce il rischio\") → Esecuzione Ordini (icona carrello, sottotitolo \"Invia ordini automatici di acquisto e vendita\"); LIVELLO 3 FONDAMENTA (fascia arancione) — Piattaforma Binance (icona banca/edificio, sottotitolo \"Infrastruttura del mercato crittografico\") e Connessione API (icona chiave, sottotitolo \"Interfaccia di comunicazione sicura\"), racchiusi da una graffa col testo \"SI CONFIGURA UNA VOLTA POI FUNZIONA IN AUTOMATICO\".",
+  "fonte": "RnNSRF4s9nk#1:18 (Excalidraw, prima rivelazione) e #12:54 (versione integrale rivelata) + voce 1:18-1:24",
+  "frame": "frame-014.png, frame-130.png",
+  "ancora": "LIVELLO 1: MONITORAGGIO E ALERT... SUPERVISIONE COSTANTE, NOTIFICHE IN TEMPO REALE, DASHBOARD DI CONTROLLO... LIVELLO 2: IL BOT... LETTURA DATI... DECISIONE E GESTIONE DEL RISCHIO... ESECUZIONE ORDINI... LIVELLO 3: FONDAMENTA... PIATTAFORMA BINANCE... CONNESSIONE API... SI CONFIGURA UNA VOLTA POI FUNZIONA IN AUTOMATICO",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "parte-di"},
+   {"verso": "KA-014", "tipo": "precede", "perche": "Questo stesso schema è l'output che il presentatore mostra generato dalla skill /diagram-generator nella scena 21."},
+   {"verso": "KA-018", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-007",
+  "tipo": "dato",
+  "contenuto": "Il presentatore sceglie Binance come piattaforma di riferimento per il bot e precisa esplicitamente di non avere alcuna associazione o sponsorizzazione con l'azienda: fa il video solo perché qualcuno degli spettatori glielo ha chiesto.",
+  "fonte": "RnNSRF4s9nk#1:30 (Excalidraw, parola \"BINANCE\" sottolineata a mano) + voce 1:30-1:42",
+  "frame": "frame-016.png",
+  "ancora": "...caso useremo Binance. Non ho alcuna associazione, non c'è uno sponsored link, faccio il video solo perché qualcuno di voi me l'ha chiesto.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-008",
+  "tipo": "principio",
+  "contenuto": "Le chiavi di connessione API sono ciò che permette a Claude (o ad altri strumenti come Codex) di accedere in maniera automatica alla piattaforma Binance; senza quelle chiavi l'AI non può operare sul sistema per conto dell'utente. È questa la ragione per cui \"Connessione API\" fa parte del Livello 3 (Fondamenta) del diagramma.",
+  "fonte": "RnNSRF4s9nk#2:00 (Excalidraw, sottolineatura su \"CONNESSIONE API\") + voce 2:00-2:06",
+  "frame": "frame-021.png",
+  "ancora": "...chiavi che permettono a Cloud di accedere a o a Codex di accedere in maniera automatica, noi non possiamo fare questa cosa qui.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "parte-di"},
+   {"verso": "KA-045", "tipo": "precede", "perche": "Questo principio motiva l'intero capitolo successivo di creazione delle chiavi API su Binance."}
+  ]
+ },
+ {
+  "id": "KA-009",
+  "tipo": "principio",
+  "contenuto": "Dare un ordine vago all'AI (l'esempio usato è \"vai e conquista il mondo\") non è sufficiente perché l'AI possa davvero eseguirlo, perché manca la strategia concreta con cui farlo (con il carro armato, con le spade o con le pistole d'acqua). Bisogna sempre definire la strategia prima di delegare l'esecuzione.",
+  "fonte": "RnNSRF4s9nk#3:18 (Excalidraw, sottolineatura arancione su \"Cervello del bot:\" + freccia arancione) + voce 3:18-3:30",
+  "frame": "frame-034.png",
+  "ancora": "Perché dire a Claud e per favore vai e conquista il mondo non è sufficiente per Claud conquistare questo mondo, cioè con il carro armato, con le spade o con le pistole d'acqua. Quindi dobbiamo definire quella che è la strategia...",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-010", "tipo": "motiva"},
+   {"verso": "KA-018", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-010",
+  "tipo": "principio",
+  "contenuto": "Non tutti sanno qual è la migliore strategia per fare trading: la gran parte della ricerca dello spettatore dovrebbe concentrarsi nel decidere qual è la strategia migliore, prima ancora di capire come costruire il sistema tecnico. Costruire il bot con Claude Code lo sa fare quasi chiunque dopo il video; la vera proprietà intellettuale sta nella strategia.",
+  "fonte": "RnNSRF4s9nk#3:48 (Excalidraw, freccia diagonale arancione verso \"Decisione e Gestione del Rischio\") + voce 3:48-4:00",
+  "frame": "frame-039.png",
+  "ancora": "...Non tanti sapranno qual è la miglior strategia per fare trading, quindi la gran parte della vostra ricerca dovrebbe essere nel decidere qual è la strategia migliore prima ancora di capire come costruire il sistema.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-009", "tipo": "applica"},
+   {"verso": "KA-022", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-011",
+  "tipo": "procedura",
+  "contenuto": "Per affrontare qualsiasi tipo di problema bisogna sempre procedere nello stesso ordine: prima le Fondamenta (\"possiamo farlo?\"), poi il Bot/nucleo operativo (\"cosa facciamo?\"), infine il Monitoraggio (\"come lo monitoriamo?\"). Nel diagramma questo ordine è illustrato da una grande freccia verde verticale che sale dal Livello 3 (Fondamenta) fino al Livello 1 (Monitoraggio), passando per il Livello 2 (il Bot).",
+  "fonte": "RnNSRF4s9nk#4:48 (Excalidraw, grande freccia verde verticale + sottolineature verdi su Livello 2 e Livello 3) + voce 4:36-4:54",
+  "frame": "frame-049.png",
+  "ancora": "...corretta. Ok? Quindi partiamo sempre da possiamo farlo, dopo andiamo al ok, cosa facciamo e dopo è come lo monitoriamo.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-006", "tipo": "applica"},
+   {"verso": "KA-070", "tipo": "precede", "perche": "Questo stesso ordine (fondamenta → costruzione → monitoraggio) viene ricondensato nei tre step del metodo enunciato nelle considerazioni conclusive."}
+  ]
+ },
+ {
+  "id": "KA-012",
+  "tipo": "principio",
+  "contenuto": "Il presentatore anticipa un'obiezione tipica dello spettatore (\"non è sempre chiaro qual è il problema che sto affrontando, non ho sempre chiaro come farlo\") e risponde che per risolverla consiglia sempre di utilizzare uno strumento come Claude, prima ancora di iniziare a costruire qualsiasi cosa.",
+  "fonte": "RnNSRF4s9nk#4:54-5:00 (talking head) + voce 4:54-5:06",
+  "frame": "frame-050.png, frame-051.png",
+  "ancora": "Ora però noi potremmo chiederci una cosa, voi potreste dirmi: 'Hey Jo, però non è sempre chiaro qual è il problema che sto affrontando, non ho sempre...' [...] non ho sempre chiaro come farlo.\" Bene, per risolvere questo problema vi consiglio sempre di utilizzare uno strumento come cloud.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-014", "tipo": "precede"},
+   {"verso": "KA-003", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-013",
+  "tipo": "definizione",
+  "contenuto": "\"Antigravity IDE\" è l'ambiente di sviluppo (fork/derivato di VS Code) usato per l'intera sessione di lavoro con Claude Code nel video, riconoscibile dall'etichetta \"Antigravity IDE - Offline\" nella barra di stato in basso a destra, accanto a \"Screen Reader Optimized\". Il progetto radice aperto si chiama \"Social Media Manager\" (cartella preesistente del presentatore, non creata per questo video), dentro cui viene poi generata la sottocartella \"btc-trading-bot\".",
+  "fonte": "RnNSRF4s9nk#5:12 (prima apparizione IDE) + voce varie",
+  "frame": "frame-053.png",
+  "ancora": "Antigravity IDE - Offline",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-014", "tipo": "parte-di"},
+   {"verso": "KA-052", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-014",
+  "tipo": "esempio",
+  "contenuto": "Prompt reale usato nell'IDE \"Antigravity\" per generare lo schema a blocchi con la skill /diagram-generator: \"I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on). The goal is to clearly display the building blocks. I will give you an example to help you stay in the right direction. If I say I need to build a trading bot, it should include multiple parts, for example: - API connection or platform choice - API connection and bot strategy - and so on /diagram-generator is the skill\". Da questo prompt è stato generato esattamente lo schema a tre livelli \"TRADING BOT BITCOIN SU BINANCE\".",
+  "fonte": "RnNSRF4s9nk#5:12 (IDE Antigravity, pannello chat) + voce 5:12-5:30",
+  "frame": "frame-053.png",
+  "ancora": "I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on).",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-015", "tipo": "esempio-di"},
+   {"verso": "KA-006", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-015",
+  "tipo": "definizione",
+  "contenuto": "/diagram-generator è una skill personalizzata del presentatore, richiamata esplicitamente nel prompt (\"/diagram-generator is the skill\"), che genera diagrammi ad alto livello a partire da una descrizione testuale del sistema da costruire, pensati per un pubblico non tecnico.",
+  "fonte": "RnNSRF4s9nk#5:12 (IDE Antigravity) + voce 5:12",
+  "frame": "frame-053.png",
+  "ancora": "/diagram-generator is the skill",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-016", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-016",
+  "tipo": "procedura",
+  "contenuto": "Meccanismo dichiarato dietro la skill /diagram-generator: il presentatore ha istruito il bot a restare ad alto livello, cercare di decomporre il task in micro-sezioni, e solo dopo disegnare il diagramma risultante.",
+  "fonte": "RnNSRF4s9nk#7:00 (IDE Antigravity) + voce 7:00-7:12",
+  "frame": "frame-071.png",
+  "ancora": "...semplicemente questa è una skill nella quale io ho detto al bot, 'Hei, quando ti do un richiesta per farmi un diagramma', stai ad alto livello, cerca di decomporre il task in micro sezioni e dopo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-015", "tipo": "definisce"},
+   {"verso": "KA-014", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-017",
+  "tipo": "definizione",
+  "contenuto": "Apertura letterale del secondo capitolo del video: il titolo \"2. Design del sistema\" viene scritto a mano libera su una nuova sezione della stessa lavagna Excalidraw, subito dopo la domanda retorica \"da dove si parte per fare il design del sistema?\".",
+  "fonte": "RnNSRF4s9nk#7:48 (Excalidraw) + voce 7:48-7:54",
+  "frame": "frame-079.png",
+  "ancora": "parte numero due è fare il design del sistema. Allora, da dove si parte però per fare il design del sistema?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-004", "tipo": "parte-di"},
+   {"verso": "KA-018", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-018",
+  "tipo": "principio",
+  "contenuto": "Il presentatore individua il \"blocco core\" da cui partire sempre nel design di un sistema: il riquadro \"Decisione e Gestione del Rischio\" del Livello 2, che cerchia a mano libera con un tratto blu attorno al diagramma esistente. È il blocco da cui dipende la probabilità di successo dell'intero sistema.",
+  "fonte": "RnNSRF4s9nk#8:00 (Excalidraw, cerchiatura blu) e #11:12 (ellisse completata) + voce 8:00-8:06, 11:12-11:24",
+  "frame": "frame-081.png, frame-113.png",
+  "ancora": "dal blocco che io considero il blocco core. Quindi, partiamo sempre da la nostra strategia. E come possiamo andare allora a fare la strategia?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-009", "tipo": "applica"},
+   {"verso": "KA-019", "tipo": "precede"},
+   {"verso": "KA-020", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-019",
+  "tipo": "principio",
+  "contenuto": "Il presentatore generalizza il \"blocco core\" (Decisione e Gestione del Rischio) oltre il trading, con due esempi concreti: in un sistema di marketing campaign automatiche, la probabilità di successo dipende da quanto bene il sistema identifica gli outlier; in un sistema di proposal generation automatica per i clienti, il successo dipende da quanto bene si analizzano i transcript e da quanto vengono convertiti nel \"pain\" del cliente. In entrambi i casi lo stesso diagramma cerchiato resta lo sfondo concettuale fisso.",
+  "fonte": "RnNSRF4s9nk#11:12-11:42 (Excalidraw, ellisse blu chiusa) + voce 11:12-11:54",
+  "frame": "frame-113.png, frame-118.png",
+  "ancora": "andiamo a fare una proposal generation, quindi che mandiamo proposte automatiche ai nostri clienti. Gran parte del successo del sistema viene da quanto bene analizziamo i transcript e da quanto questi possono essere convertiti in pain per il nostro cliente",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-018", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-020",
+  "tipo": "esempio",
+  "contenuto": "Prompt reale `/prompt-contracts` usato per generare la strategia di trading tramite ricerca parallela: \"I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades. What I want is a bot that looks at these candles in the Binance app and then trades. I need your help with the following: please come up with a strategy I can use to create this bot successfully. Please know that this is a demo and it will be run in a sandbox with fake money, so no real harm or financial advice will be given. However, I still want the bot to be fully functioning and not biased by the demo. I need you to use agent polling to scrape and find each individual strategy my bot could use\".",
+  "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity) + voce 8:06-8:36",
+  "frame": "frame-082.png",
+  "ancora": "/prompt-contracts I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-021", "tipo": "esempio-di"},
+   {"verso": "KA-022", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-021",
+  "tipo": "definizione",
+  "contenuto": "\"Agent polling\" è la tecnica per cui Claude lancia più agenti di ricerca in parallelo, ciascuno specializzato su una categoria diversa di strategie, per poi costruire un prompt contract sulla base dei risultati aggregati. Nel video Claude lancia tre agenti: \"Research trend-following strategies\", \"Research mean-reversion + momentum strategies\", \"Research advanced + composite strategies\", ciascuno con il proprio compito di ricerca (IN) e un campo \"1. Strategy name\" da compilare.",
+  "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, tre blocchi Agent) e #9:36-10:36 (sottolineature sui tre agenti) + voce 9:36-10:42",
+  "frame": "frame-082.png, frame-102.png",
+  "ancora": "I'll research trading strategies using multiple agents in parallel, then build a prompt contract for the bot. Let me launch research agents to find strategies across different categories.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-020", "tipo": "parte-di"},
+   {"verso": "KA-022", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-022",
+  "tipo": "dato",
+  "contenuto": "Documento di strategia generato da Claude, \"Bitcoin Daily Trading Bot -- Strategy\": \"Approach: Ensemble/Voting (5 indicators, majority rules). Evaluate 5 uncorrelated signals on each daily BTC/USDT candle. Only trade when 3+ agree on direction. Skip when signals are mixed.\"",
+  "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, pannello destro \"Ready for review\") + voce 8:06-8:12",
+  "frame": "frame-082.png",
+  "ancora": "Approach: Ensemble/Voting (5 indicators, majority rules\" [...] \"Evaluate 5 uncorrelated signals on each daily BTC/USDT candle. Only trad[e] when 3+ agree on direction. Skip when signals are mixed.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-020", "tipo": "parte-di"},
+   {"verso": "KA-023", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-023",
+  "tipo": "dato",
+  "contenuto": "I 5 segnali della strategia Ensemble/Voting, elenco completo con soglie: \"1. EMA 50/200 Crossover -- trend direction. EMA50 above EMA200 = bullish, below = bearish. 2. RSI(14) above/below 50 -- momentum. Above 50 = bullish, below = bearish. 3. OBV slope (14-day) -- volume confirmation. Rising OBV = accumulation = bullish, falling OBV = bearish. 4. Bollinger Band position (20, 2 std dev) -- price above middle band = bullish, below = bearish. 5. ADX(14) > 25 -- trend strength filter. Below 25 = no trade at all (no clear trend).\"",
+  "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, \"The 5 Signals\") e #12:00 (versione integrale, non più tagliata) + voce 8:06-8:36",
+  "frame": "frame-082.png, frame-121.png",
+  "ancora": "The 5 Signals\" con lista numerata: 1. \"EMA 50/200 Crossover -- trend direction. EMA50 above EMA200 = [bullish, below = bearish]\" [...] 5. \"ADX(14) > 25 -- trend strength filter. Below 25 = no trade at all (no clear trend)\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-022", "tipo": "parte-di"},
+   {"verso": "KA-024", "tipo": "precede"},
+   {"verso": "KA-033", "tipo": "precede", "perche": "Questi stessi 5 indicatori diventano i 5 box del flowchart visivo generato più avanti."}
+  ]
+ },
+ {
+  "id": "KA-024",
+  "tipo": "dato",
+  "contenuto": "Motivazione della scelta dei 5 segnali e tabella comparativa completa \"Signal | Dimension | Fails when\": \"Each covers a different dimension of market behavior. They are uncorrelated -- when one fails, others compensate:\" — EMA crossover | Trend | Ranging/choppy markets; RSI | Momentum | Extended trends (stays overbought); OBV | Volume | Low-volume fakeouts; Bollinger Band | Volatility | Sudden regime changes; ADX | Trend strength | N/A (it's the safety filter).",
+  "fonte": "RnNSRF4s9nk#12:00 (IDE Antigravity, tabella completa a 5 righe) + voce 8:36-9:06",
+  "frame": "frame-121.png",
+  "ancora": "Why these 5\", paragrafo: \"Each covers a different dimension of market behavior. They are uncorrelated -- when one fails, others compensate:\" Segue una tabella a tre colonne \"Signal | Dimension | Fails when\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-023", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-025",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Risk Management\" del documento di strategia, elenco completo: uscita quando \"Signals flip (3+ switch direction)\" OR \"trailing stop hit (2x ATR(14) from highest point since entry)\"; \"Stop-loss: 1.5x ATR(14) below entry price\"; \"Position size: risk max 2% of capital per trade\"; \"Formula: position_size = (capital * 0.02) / (1.5 * ATR)\"; \"Trailing stop: 2x ATR(14), adjusted\".",
+  "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity, sidebar destra strategia) + voce 12:06-12:36",
+  "frame": "frame-122.png",
+  "ancora": "Signals flip (3+ switch direction)\" [...] \"OR trailing stop hit (2x ATR(14) from highest point since entry)\" [...] \"Stop-loss: 1.5x ATR(14) below entry price\" [...] \"Formula: position_size = (capital * 0.02) / (1.5 * ATR)\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-022", "tipo": "parte-di"},
+   {"verso": "KA-035", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-026",
+  "tipo": "dato",
+  "contenuto": "Sezione \"Expected Performance\" del documento di strategia: \"Win rate: 55-60%\", \"Risk/reward ratio: 1:1.5\", \"Trade frequency: low (only on strong consensus)\", \"Works across: trending, ranging, and volatile conditions\".",
+  "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity, sidebar destra strategia) + voce 12:06",
+  "frame": "frame-122.png",
+  "ancora": "Expected Performance\" ... \"Win rate: 55-60%\" ... \"Risk/reward ratio: 1:1.5\" ... \"Trade frequency: low (only on strong consensus)\" ... \"Works across: trending, ranging, and volatile conditions\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-022", "tipo": "parte-di"}
+  ]
+ }
+]
