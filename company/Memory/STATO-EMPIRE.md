@@ -1,10 +1,41 @@
-## ⚠️ COORDINAMENTO — 2026-09-07, in corso — studio AI TUBE PRO / A6 Viral Mastery
+## ⚠️ COORDINAMENTO — 2026-09-07, in corso — studio AI TUBE PRO / A6 Viral Mastery (2/10)
 
 **Max ha ordinato la ripresa ("vai continua").** Costruzione grossa in corso su:
-`SKILL & Agenti/Empire Studio Suite/empire-studio/runs/corso-aitubepro/` (frame + lettura sentinelle
-sulle 10 lezioni A6) e `company/Memory/studi/aitubepro/A6-viral-mastery/` (report in scrittura).
-**Gael/Neri: non toccare questi due percorsi finché questo blocco non sparisce.** Nessun altro
-percorso è coinvolto. Rimuovo il blocco al gate A6 chiuso.
+`SKILL & Agenti/Empire Studio Suite/empire-studio/runs/corso-aitubepro/` e
+`company/Memory/studi/aitubepro/A6-viral-mastery/`. **Gael/Neri: non toccare questi due percorsi
+finché questo blocco non sparisce.** Rimuovo il blocco al gate A6 chiuso.
+
+## 🟠 2026-09-07 — A6: 2/10 lezioni chiuse, e un bug reale nel gate SEO — CP-20260907-AF2K
+
+**Codice di ripresa: EMP-V6DE (APERTA).** **Correttivo di metodo prima di iniziare**: il piano
+dice "non delego mai la visione dei frame" (self-report = non prova, EMP-QQ2R) — stavo per
+spawnare sub-agenti a leggere le lezioni, corretto leggendo il piano: le processo io, di persona,
+con visione nativa sui frame reali. **L00 chiusa** (wizard di pubblicazione: sottotitoli nativi,
+schermata finale, schede, playlist mai automatizzati — verificato in due lingue dopo un mio primo
+grep sbagliato). **L01 chiusa**: ⭐ **bug reale trovato** — `seo_score.py` pesa 15/100 punti i
+sottotitoli "indicizzati da YouTube", `apex7_orchestrator.py:1515` scrive `subtitles: True`
+**sempre**, senza verifica: ogni video riceve 15 punti falsi, sposta `pass_soglia_70` su video
+borderline. Registro **62 → 69 regole**, 65 applicate, **4 in coda al gate A6** (binario B,
+motore — ADR-024).
+**RIPRESA DA:** 8 lezioni restanti, frame già dedup (30·54·33·27·69·38·22 unici). Stesso metodo:
+parlato integrale + frame con visione mia, non delegata. Poi gate A6 a 7 condizioni (chiude anche
+D-1/D-2). Dettagli: [CP-20260907-AF2K](checkpoints/CP-20260907-AF2K.md).
+
+## 📚 2026-09-07 pomeriggio — max18: v06+v05 atomi saldati, v08/v09 avanzano — CP-20260907-63YC
+
+**Codice di ripresa: EMP-W4K7 (APERTA).** Saldati con `unisci_atomi.py` gli atomi di `v06`
+(**228 atomi, 427 archi, 1 sola componente connessa**) e `v05` (**72 atomi, 151 archi, 1 sola
+componente**): zero archi rotti, zero orfani, zero ancore inventate su entrambi — 300 atomi
+totali, la regola anti-invenzione regge alla prova su due video interi.
+
+**Visione**: `v08` (Claude Cowork) a **252/393 = 64%**, `v09` (agenti vocali) a **126/494 = 26%**.
+Un'ondata di 6 sentinelle e' caduta tutta insieme per rate-limit di sessione condiviso (stesso
+schema gia' visto): rilanciate come "completamento" (leggono il proprio file parziale e ripartono
+dalla scena successiva), **zero scene perse**. Nuova ondata di 6 gia' in volo al checkpoint.
+
+**RIPRESA DA:** ricontare il disco per v08 (da 253 o dove le sentinelle in volo si sono fermate)
+e v09 (da 127), continuare a blocchi da 21 scene; poi wiki+archivio per v06/v05 (gia' pronti,
+solo rimandati); poi `v04` (mai iniziato). Dettagli: [CP-20260907-63YC](checkpoints/CP-20260907-63YC.md).
 
 ## ⏸️ 2026-09-07 — PAUSA su ordine di Max — CP-20260907-42V9
 

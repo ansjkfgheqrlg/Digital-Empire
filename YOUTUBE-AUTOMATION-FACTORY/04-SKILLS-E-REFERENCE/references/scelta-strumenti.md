@@ -39,6 +39,12 @@ e la quasi totalità non arriva a sei mesi.
 esattamente da lì che è arrivato ogni guasto della giornata del 2026-09-04. La domanda 4 non
 è pignoleria: è il riassunto di quella giornata.
 
+## Candidati non ancora valutati
+
+| Strumento | A cosa servirebbe | Regola | Stato |
+|---|---|---|---|
+| **vidIQ** (estensione browser) | leggere punteggio SEO e tag dei video competitor via overlay su YouTube | `A6-L01-04` | non valutato con le 5 domande sopra — solo osservato in uso nel corso |
+
 ## La sorveglianza — regola `A4-L00-02`
 
 **Una volta a settimana, 15-20 minuti, con il cronometro.** Mai «finché uno vuole».

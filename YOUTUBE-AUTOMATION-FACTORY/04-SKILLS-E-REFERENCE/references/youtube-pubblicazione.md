@@ -29,7 +29,8 @@ tutto il reparto:
 **E una assegnazione che non facciamo mai:** nessun video viene messo in una playlist. Le
 playlist raggruppano sessioni di visione per tema — YouTube le premia in watch-time complessivo
 del canale, non del singolo video — e si creano/gestiscono **una volta per canale**, non ad ogni
-pubblicazione.
+pubblicazione. Il numero preciso, dichiarato dal corso come raccomandazione di YouTube stesso
+(`A6-L01-02`, L01 @ 13:18): **almeno due playlist per video**, non una generica.
 
 ## Non ancora deciso
 
