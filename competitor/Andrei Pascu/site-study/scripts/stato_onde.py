@@ -39,6 +39,7 @@ ONDE = [
     ("C", "T2 gia' catturate: integrazione delle vecchie", 7, [
         "01-andrei-copy-home", "02-funnel-operator", "03-outheadline",
         "04-outfunnel", "05-copy", "06-manuale-del-copywriter",
+        "11-armageddon",
     ]),
     ("D", "T3 la macchina del funnel (le pagine -pre)", 14, []),
     ("E", "T4 campioni di prova e negozio", 9, []),

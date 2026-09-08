@@ -168,8 +168,8 @@ di funnel che non capiamo ancora.
 | Onda | Catturate | Chiuse (4 file) | Attese |
 |---|---|---|---|
 | Onda A | 9 | 9 | 9 |
-| Onda B | 8 | 0 | 8 |
-| Onda C | 6 | 0 | 7 |
+| Onda B | 8 | 8 | 8 |
+| Onda C | 7 | 2 | 7 |
 | Onda D | 0 | 0 | 14 |
 | Onda E | 0 | 0 | 9 |
 | Onda F | 0 | 0 | 1 |
