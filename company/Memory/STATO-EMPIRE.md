@@ -1,3 +1,13 @@
+## 🔨 2026-09-08 — Emperator si auto-implementa: nasce /frantuma — CP-20260908-9GQM
+
+**Nuova funzione permanente, come il battito.** Ordine di Max: dividere task grandi in
+micro-task ufficiali eseguibili in piu' chat in parallelo. Costruito `scripts/frantuma.py`
+(conio atomico per-padre, verifica di sovrapposizione di scope, calcolo onde dai file reali —
+14 test verdi), documentato in `emperator.md` §6.24, schema di risposta fisso "Onde ad albero"
+(scelto da Max fra 3 anteprime). **Provato dal vivo**: TASK-LANCI-BUILD-W3 spaccata per davvero
+in 4 micro-task (`company/Memory/tasks/micro/TASK-LANCI-BUILD-W3/`) — MT-01 (chiave Brevo
+B-020) e MT-02 (catena incasso S0) disponibili subito, apribili in due chat separate.
+
 ## 📋 2026-09-08 — TASK GAEL SETTIMANA 3 emesse: 6 task ufficiali, scadenza 15/09 — TASK-GAEL-20260908-SETTIMANA-03
 
 **Ordine vocale di Max, dettato per intero.** 6 task ufficiali, in ordine: 1️⃣ costruzione completa
