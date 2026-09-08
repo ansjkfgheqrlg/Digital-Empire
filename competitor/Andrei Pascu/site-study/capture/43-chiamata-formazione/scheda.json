@@ -1,0 +1,1623 @@
+{
+ "url": "https://chiamata-formazione.netlify.app/",
+ "slug": "43-chiamata-formazione",
+ "catturata": "2026-09-08",
+ "dominio": "chiamata-formazione.netlify.app",
+ "titolo": "Call Strategica 1:1 | Claude Code Mastery · Digital Empire",
+ "lang": "it",
+ "costruzione": "next",
+ "altezza": 18770,
+ "larghezza": 1440,
+ "altezza_mobile": 27974,
+ "body_bg": "#2a2a2a",
+ "body_font": "Onest, \"Onest Fallback\"",
+ "palette_testo": [
+  [
+   "#1c1c1c",
+   108
+  ],
+  [
+   "#c9370a",
+   52
+  ],
+  [
+   "transparent",
+   50
+  ],
+  [
+   "#fb4604",
+   43
+  ],
+  [
+   "#2a2a2a",
+   37
+  ],
+  [
+   "#ffffff",
+   35
+  ],
+  [
+   "#3a3a3a",
+   31
+  ],
+  [
+   "#8a8a8a",
+   11
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+   7
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+   7
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+   7
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+   6
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.65)",
+   6
+  ],
+  [
+   "#131313",
+   5
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)",
+   5
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.45)",
+   3
+  ],
+  [
+   "#5a5560",
+   3
+  ],
+  [
+   "#f9f9f9",
+   3
+  ],
+  [
+   "#ff8a4a",
+   1
+  ],
+  [
+   "#8a2a05",
+   1
+  ],
+  [
+   "lab(10.2682 0 -0.00000596046 / 0.5)",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#ffffff",
+   15
+  ],
+  [
+   "#fb4604",
+   12
+  ],
+  [
+   "#1c1c1c",
+   12
+  ],
+  [
+   "#fafafa",
+   10
+  ],
+  [
+   "#f4f1f7 (+img)",
+   10
+  ],
+  [
+   "#0a0a0a",
+   5
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   3
+  ],
+  [
+   "#e8e8e6",
+   2
+  ],
+  [
+   "#2a2a2a",
+   1
+  ],
+  [
+   "lab(5.88233 0 0 / 0.9)",
+   1
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.04)",
+   1
+  ],
+  [
+   "#f4e7e0 (+img)",
+   1
+  ],
+  [
+   "lab(10.2682 0 -0.00000596046 / 0.05)",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "Onest, \"Onest Fallback\"",
+   422
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "12px / lh 16px / w700",
+   99
+  ],
+  [
+   "16px / lh 26px / w400",
+   30
+  ],
+  [
+   "16px / lh 24px / w400",
+   29
+  ],
+  [
+   "18px / lh 29.25px / w400",
+   18
+  ],
+  [
+   "14px / lh 21px / w600",
+   16
+  ],
+  [
+   "14px / lh 22.75px / w400",
+   15
+  ],
+  [
+   "24px / lh 32px / w600",
+   13
+  ],
+  [
+   "20px / lh 28px / w600",
+   12
+  ],
+  [
+   "48px / lh 60px / w700",
+   10
+  ],
+  [
+   "18px / lh 28px / w600",
+   10
+  ],
+  [
+   "52px / lh 65px / w700",
+   9
+  ],
+  [
+   "18px / lh 28px / w700",
+   9
+  ],
+  [
+   "20px / lh 30px / w800",
+   8
+  ],
+  [
+   "14px / lh 20px / w600",
+   7
+  ],
+  [
+   "18px / lh 29.25px / w700",
+   7
+  ],
+  [
+   "14px / lh 20px / w400",
+   6
+  ],
+  [
+   "16px / lh 24px / w800",
+   6
+  ],
+  [
+   "15px / lh 22.5px / w500",
+   6
+  ],
+  [
+   "15px / lh 22.5px / w400",
+   6
+  ],
+  [
+   "15px / lh 22.5px / w600",
+   6
+  ],
+  [
+   "16px / lh 28px / w600",
+   5
+  ],
+  [
+   "20px / lh 32.5px / w400",
+   5
+  ],
+  [
+   "16px / lh 24px / w500",
+   5
+  ],
+  [
+   "16px / lh 24px / w700",
+   5
+  ],
+  [
+   "30px / lh 36px / w700",
+   5
+  ],
+  [
+   "16px / lh 24px / w600",
+   4
+  ],
+  [
+   "12.48px / lh 18.72px / w600",
+   4
+  ],
+  [
+   "12.48px / lh 18.72px / w700",
+   4
+  ],
+  [
+   "17px / lh 25.5px / w600",
+   4
+  ],
+  [
+   "15px / lh 18.75px / w600",
+   4
+  ],
+  [
+   "10px / lh 12.5px / w700",
+   4
+  ],
+  [
+   "44px / lh 55px / w700",
+   4
+  ],
+  [
+   "18px / lh 29.25px / w600",
+   4
+  ],
+  [
+   "16px / lh 26px / w700",
+   4
+  ],
+  [
+   "12px / lh 16px / w400",
+   4
+  ],
+  [
+   "60px / lh 60px / w700",
+   3
+  ],
+  [
+   "52px / lh 65px / w500",
+   3
+  ],
+  [
+   "18px / lh 28px / w400",
+   3
+  ],
+  [
+   "30px / lh 30px / w400",
+   3
+  ],
+  [
+   "64px / lh 67.2px / w700",
+   2
+  ]
+ ],
+ "pesi": [
+  [
+   "700",
+   176
+  ],
+  [
+   "400",
+   123
+  ],
+  [
+   "600",
+   91
+  ],
+  [
+   "500",
+   18
+  ],
+  [
+   "800",
+   14
+  ]
+ ],
+ "raggi": [
+  [
+   "22px",
+   30
+  ],
+  [
+   "12px",
+   23
+  ],
+  [
+   "9999px",
+   20
+  ],
+  [
+   "20px",
+   11
+  ],
+  [
+   "2px",
+   5
+  ],
+  [
+   "14px",
+   4
+  ],
+  [
+   "16.8px",
+   3
+  ],
+  [
+   "3.35544e+07px",
+   1
+  ],
+  [
+   "16px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(19, 19, 19, 0.22) 0px 40px 70px -32px, rgba(255, 255, 255, 0.65) 0px 2px 0px 0px inset, rgba(19, 19, 19, 0.04) 0px ",
+   15
+  ],
+  [
+   "rgba(251, 70, 4, 0.5) 0px 10px 30px -10px",
+   14
+  ],
+  [
+   "rgba(0, 0, 0, 0.9) 0px 40px 80px -40px, rgba(255, 255, 255, 0.04) 0px 2px 0px 0px inset, rgba(0, 0, 0, 0.5) 0px -1px 0px",
+   11
+  ],
+  [
+   "rgba(0, 0, 0, 0.6) 0px 40px 80px -32px, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset, rgba(201, 55, 10, 0.25) 0px -2px",
+   11
+  ],
+  [
+   "rgba(251, 70, 4, 0.6) 0px 8px 24px -10px",
+   9
+  ],
+  [
+   "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   5
+  ],
+  [
+   "rgba(251, 70, 4, 0.55) 0px 8px 30px -10px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   5
+  ],
+  [
+   "rgba(0, 0, 0, 0.6) 0px 24px 50px -22px, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset, rgba(138, 133, 148, 0.22) 0px -1",
+   4
+  ],
+  [
+   "rgba(251, 70, 4, 0.7) 0px 0px 10px 0px",
+   4
+  ],
+  [
+   "rgba(0, 0, 0, 0.55) 0px 40px 80px -32px, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset, rgba(138, 133, 148, 0.22) 0px -",
+   4
+  ],
+  [
+   "rgba(255, 255, 255, 0.6) 0px 2px 0px 0px inset, rgba(201, 55, 10, 0.25) 0px -2px 0px 0px inset",
+   1
+  ],
+  [
+   "rgba(251, 70, 4, 0.5) 0px 20px 60px -20px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    813
+   ],
+   [
+    "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1)",
+    15
+   ],
+   [
+    "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.5s",
+    15
+   ],
+   [
+    "border-color 0.35s, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1)",
+    11
+   ],
+   [
+    "transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), translate 0.15s cubic-bezier(0.4, 0, 0.2, 1), scale 0.15s cubic-bezier(0.4",
+    10
+   ],
+   [
+    "transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s, filter 0.25s",
+    5
+   ],
+   [
+    "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)",
+    4
+   ],
+   [
+    "0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+    4
+   ],
+   [
+    "0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "marquee 30s linear",
+    1
+   ],
+   [
+    "chip-float 5.5s ease-in-out",
+    1
+   ],
+   [
+    "chip-float 6.5s ease-in-out",
+    1
+   ],
+   [
+    "chip-float 7s ease-in-out",
+    1
+   ],
+   [
+    "chip-float 6s ease-in-out",
+    1
+   ]
+  ],
+  "filtri": [
+   [
+    "backdrop: blur(12px)",
+    1
+   ],
+   [
+    "backdrop: blur(8px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 79.9119)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -3932.71, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -4.01167)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -0.00261035)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -4.14633)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -0.028646)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 296,
+   "text": "Ti formo su Claude Code. 45 minuti. Gratis."
+  },
+  {
+   "tag": "h2",
+   "y": 1382,
+   "text": "ASCOLTA BENE."
+  },
+  {
+   "tag": "h2",
+   "y": 2004,
+   "text": "Tutti ti vendono corsi. Nessuno ti fa vedere come fa."
+  },
+  {
+   "tag": "h3",
+   "y": 2186,
+   "text": "Il corso tipico"
+  },
+  {
+   "tag": "h3",
+   "y": 2173,
+   "text": "Questa call"
+  },
+  {
+   "tag": "h2",
+   "y": 2678,
+   "text": "Non parliamo di AI. Costruiamo qualcosa con l'AI."
+  },
+  {
+   "tag": "h3",
+   "y": 2897,
+   "text": "Capisco dove sei oggi"
+  },
+  {
+   "tag": "h3",
+   "y": 3063,
+   "text": "Ti mostro come lavoro io"
+  },
+  {
+   "tag": "h3",
+   "y": 3255,
+   "text": "Costruiamo il tuo primo pezzo"
+  },
+  {
+   "tag": "h2",
+   "y": 3579,
+   "text": "Per chi è questa call (e per chi non è)."
+  },
+  {
+   "tag": "h2",
+   "y": 4512,
+   "text": "Esattamente cosa succede nei prossimi giorni."
+  },
+  {
+   "tag": "h3",
+   "y": 4704,
+   "text": "Subito — Conferma + mini-form"
+  },
+  {
+   "tag": "h3",
+   "y": 4816,
+   "text": "24h prima — Promemoria + preparazione"
+  },
+  {
+   "tag": "h3",
+   "y": 4954,
+   "text": "Il giorno della call — 45 min live"
+  },
+  {
+   "tag": "h3",
+   "y": 5066,
+   "text": "Subito dopo — Registrazione + note"
+  },
+  {
+   "tag": "h3",
+   "y": 5204,
+   "text": "7 giorni dopo — Check rapido"
+  },
+  {
+   "tag": "h2",
+   "y": 5511,
+   "text": "La differenza in 45 minuti."
+  },
+  {
+   "tag": "h3",
+   "y": 5754,
+   "text": "Il loop infinito"
+  },
+  {
+   "tag": "h3",
+   "y": 5754,
+   "text": "La chiarezza"
+  },
+  {
+   "tag": "h2",
+   "y": 6208,
+   "text": "Quanto vale davvero questa sessione."
+  },
+  {
+   "tag": "h2",
+   "y": 7123,
+   "text": "Ancora scettico?"
+  },
+  {
+   "tag": "h2",
+   "y": 7705,
+   "text": "\"Ok ma perché me la date gratis?\""
+  },
+  {
+   "tag": "h2",
+   "y": 8452,
+   "text": "Faccio max 8 call a settimana."
+  },
+  {
+   "tag": "h2",
+   "y": 8931,
+   "text": "Le 3 obiezioni che ricevo sempre."
+  },
+  {
+   "tag": "h3",
+   "y": 9060,
+   "text": "\"Non so se ho il livello giusto\""
+  },
+  {
+   "tag": "h3",
+   "y": 9219,
+   "text": "\"Sembra troppo bello per essere gratis\""
+  },
+  {
+   "tag": "h3",
+   "y": 9408,
+   "text": "\"Ho paura di perdere tempo\""
+  },
+  {
+   "tag": "h2",
+   "y": 9813,
+   "text": "\"Ok ma tu chi sei?\""
+  },
+  {
+   "tag": "h2",
+   "y": 10343,
+   "text": "Cosa esci con, dopo 45 minuti."
+  },
+  {
+   "tag": "h3",
+   "y": 10556,
+   "text": "Un workflow tuo"
+  },
+  {
+   "tag": "h3",
+   "y": 10556,
+   "text": "Ore recuperate"
+  },
+  {
+   "tag": "h3",
+   "y": 10556,
+   "text": "Chiarezza brutale"
+  },
+  {
+   "tag": "h2",
+   "y": 10930,
+   "text": "Cosa dicono chi ha già fatto la call"
+  },
+  {
+   "tag": "h2",
+   "y": 11648,
+   "text": "Se dopo 10 minuti non ti sto dando valore, chiudi la call."
+  },
+  {
+   "tag": "h2",
+   "y": 12071,
+   "text": "Domande che mi fanno spesso"
+  },
+  {
+   "tag": "h3",
+   "y": 12196,
+   "text": "Serve che abbia già Claude installato?"
+  },
+  {
+   "tag": "h3",
+   "y": 12307,
+   "text": "Registri la call?"
+  },
+  {
+   "tag": "h3",
+   "y": 12418,
+   "text": "Che tool serve?"
+  },
+  {
+   "tag": "h3",
+   "y": 12529,
+   "text": "Devo saper programmare?"
+  },
+  {
+   "tag": "h3",
+   "y": 12692,
+   "text": "Si parla solo di Claude Code?"
+  },
+  {
+   "tag": "h3",
+   "y": 12855,
+   "text": "Posso portare un mio progetto?"
+  },
+  {
+   "tag": "h3",
+   "y": 12966,
+   "text": "Cosa NON facciamo in 45 minuti?"
+  },
+  {
+   "tag": "h2",
+   "y": 13352,
+   "text": "Niente tool segreti. Solo quelli che uso davvero."
+  },
+  {
+   "tag": "h2",
+   "y": 14472,
+   "text": "Marco, founder SaaS. Da 3 ore a 20 minuti."
+  },
+  {
+   "tag": "h2",
+   "y": 15052,
+   "text": "Esci dalla call con sei cose molto concrete."
+  },
+  {
+   "tag": "h3",
+   "y": 15309,
+   "text": "Un workflow funzionante"
+  },
+  {
+   "tag": "h3",
+   "y": 15309,
+   "text": "Una mappa mentale chiara"
+  },
+  {
+   "tag": "h3",
+   "y": 15491,
+   "text": "2-3 prompt pattern riutilizzabili"
+  },
+  {
+   "tag": "h3",
+   "y": 15491,
+   "text": "La registrazione completa"
+  },
+  {
+   "tag": "h3",
+   "y": 15672,
+   "text": "Un ordine di priorità"
+  },
+  {
+   "tag": "h3",
+   "y": 15672,
+   "text": "Accesso diretto per domande"
+  },
+  {
+   "tag": "h2",
+   "y": 16068,
+   "text": "Corso da 800€ vs questa call gratis."
+  },
+  {
+   "tag": "h2",
+   "y": 16949,
+   "text": "Max, founder di Digital Empire. Builder, non formatore."
+  },
+  {
+   "tag": "h2",
+   "y": 17720,
+   "text": "“Se è gratis, dov'è la fregatura?”"
+  },
+  {
+   "tag": "h2",
+   "y": 18270,
+   "text": "45 minuti. Gratis. Per davvero."
+  }
+ ],
+ "cta": [
+  {
+   "text": "Prenota la Tua Call Gratis",
+   "href": "https://clinquant-pie-aab8d2.netlify.app/",
+   "y": 910,
+   "x": 453,
+   "w": 276,
+   "h": 58,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Diventa System Architect",
+   "href": "https://formazione-systemarchitect.netlify.app/",
+   "y": 910,
+   "x": 742,
+   "w": 245,
+   "h": 58,
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.04)",
+   "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+   "radius": "3.35544e+07px",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+   "shadow": "none",
+   "size": 14,
+   "weight": "600",
+   "transform": "none",
+   "padding": "12px 24px"
+  },
+  {
+   "text": "Prenota la Tua Call Gratis",
+   "href": "https://clinquant-pie-aab8d2.netlify.app/",
+   "y": 666,
+   "x": 425,
+   "w": 294,
+   "h": 64,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0",
+   "size": 17,
+   "weight": "600",
+   "transform": "none",
+   "padding": "18.4px 35.2px"
+  },
+  {
+   "text": "Scopri il corso completo CLAUDE CODE MASTERY · €397",
+   "href": "https://formazione-systemarchitect.netlify.app/",
+   "y": 667,
+   "x": 736,
+   "w": 279,
+   "h": 63,
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.25)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  },
+  {
+   "text": "Prenota la Tua Call Gratis",
+   "href": "https://clinquant-pie-aab8d2.netlify.app/",
+   "y": 7366,
+   "x": 427,
+   "w": 294,
+   "h": 64,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0",
+   "size": 17,
+   "weight": "600",
+   "transform": "none",
+   "padding": "18.4px 35.2px"
+  },
+  {
+   "text": "Scopri il corso completo CLAUDE CODE MASTERY · €397",
+   "href": "https://formazione-systemarchitect.netlify.app/",
+   "y": 7367,
+   "x": 734,
+   "w": 279,
+   "h": 63,
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.25)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  },
+  {
+   "text": "Prendi il Tuo Slot",
+   "href": "https://clinquant-pie-aab8d2.netlify.app/",
+   "y": 8673,
+   "x": 460,
+   "w": 229,
+   "h": 64,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0",
+   "size": 17,
+   "weight": "600",
+   "transform": "none",
+   "padding": "18.4px 35.2px"
+  },
+  {
+   "text": "Scopri il corso completo CLAUDE CODE MASTERY · €397",
+   "href": "https://formazione-systemarchitect.netlify.app/",
+   "y": 8674,
+   "x": 701,
+   "w": 279,
+   "h": 63,
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.25)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  },
+  {
+   "text": "Prenota la Tua Call Gratis",
+   "href": "https://clinquant-pie-aab8d2.netlify.app/",
+   "y": 18509,
+   "x": 427,
+   "w": 294,
+   "h": 64,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0",
+   "size": 17,
+   "weight": "600",
+   "transform": "none",
+   "padding": "18.4px 35.2px"
+  },
+  {
+   "text": "Scopri il corso completo CLAUDE CODE MASTERY · €397",
+   "href": "https://formazione-systemarchitect.netlify.app/",
+   "y": 18510,
+   "x": 734,
+   "w": 279,
+   "h": 63,
+   "bg": "lab(10.2682 0 -0.00000596046 / 0.05)",
+   "color": "#1c1c1c",
+   "radius": "12px",
+   "border": "1px solid lab(10.2682 0 -0.00000596046 / 0.25)",
+   "shadow": "none",
+   "size": 15,
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  }
+ ],
+ "media": [],
+ "blocchi_testo": 506,
+ "meta": {
+  "description": "45 minuti di formazione 1:1 su Claude Code con Digital Empire. 90% formazione, 10% pitch — carte scoperte.",
+  "og_title": "Call Strategica 1:1 | Claude Code Mastery · Digital Empire",
+  "og_image": null,
+  "canonical": null,
+  "jsonld": []
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 907,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.relative.overflow-hidden",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": "Ti formo su Claude Code. 45 minuti. Gratis.",
+   "headings": [
+    "Ti formo su Claude Code. 45 minuti. Gratis."
+   ],
+   "blocchi_testo": 128,
+   "parole": 320,
+   "densita": 35,
+   "media": 4,
+   "cta": 2,
+   "firma": "section|bg-ink.relative.overflow-hidden|2|M|C|5",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-ti-formo-su-claude-code-45-minuti.png"
+  },
+  {
+   "i": 2,
+   "y": 907,
+   "h": 378,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.section",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 3,
+   "parole": 10,
+   "densita": 3,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-ink.section|1|-|-|2",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-section.png"
+  },
+  {
+   "i": 3,
+   "y": 1285,
+   "h": 539,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.section.section-border-t",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": "ASCOLTA BENE.",
+   "headings": [
+    "ASCOLTA BENE."
+   ],
+   "blocchi_testo": 8,
+   "parole": 81,
+   "densita": 15,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-ink.section.section-border-t|1|-|-|3",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-ascolta-bene.png"
+  },
+  {
+   "i": 4,
+   "y": 1824,
+   "h": 676,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Tutti ti vendono corsi. Nessuno ti fa vedere come fa.",
+   "headings": [
+    "Tutti ti vendono corsi. Nessuno ti fa vedere come fa.",
+    "Il corso tipico",
+    "Questa call"
+   ],
+   "blocchi_testo": 14,
+   "parole": 62,
+   "densita": 9,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|M|-|3",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-tutti-ti-vendono-corsi-nessuno-ti.png"
+  },
+  {
+   "i": 5,
+   "y": 2499,
+   "h": 983,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Non parliamo di AI. Costruiamo qualcosa con l'AI.",
+   "headings": [
+    "Non parliamo di AI. Costruiamo qualcosa con l'AI.",
+    "Capisco dove sei oggi",
+    "Ti mostro come lavoro io",
+    "Costruiamo il tuo primo pezzo"
+   ],
+   "blocchi_testo": 10,
+   "parole": 93,
+   "densita": 9,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|-|-|5",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-non-parliamo-di-ai-costruiamo-qual.png"
+  },
+  {
+   "i": 6,
+   "y": 3482,
+   "h": 851,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.section.section-border-t",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": "Per chi è questa call (e per chi non è).",
+   "headings": [
+    "Per chi è questa call (e per chi non è)."
+   ],
+   "blocchi_testo": 21,
+   "parole": 143,
+   "densita": 17,
+   "media": 11,
+   "cta": 0,
+   "firma": "section|bg-ink.section.section-border-t|1|M|-|4",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-per-chi-questa-call-e-per-chi-non.png"
+  },
+  {
+   "i": 7,
+   "y": 4333,
+   "h": 1081,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Esattamente cosa succede nei prossimi giorni.",
+   "headings": [
+    "Esattamente cosa succede nei prossimi giorni.",
+    "Subito — Conferma + mini-form",
+    "24h prima — Promemoria + preparazione",
+    "Il giorno della call — 45 min live",
+    "Subito dopo — Registrazione + note",
+    "7 giorni dopo — Check rapido"
+   ],
+   "blocchi_testo": 14,
+   "parole": 146,
+   "densita": 14,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|-|-|5",
+   "gruppo": 5,
+   "rappresentante": false,
+   "screenshot": "sezioni/07-esattamente-cosa-succede-nei-pross.png"
+  },
+  {
+   "i": 8,
+   "y": 5414,
+   "h": 697,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink-2.section.section-border-t",
+   "bg": "#0a0a0a",
+   "bg_img": false,
+   "heading": "La differenza in 45 minuti.",
+   "headings": [
+    "La differenza in 45 minuti.",
+    "Il loop infinito",
+    "La chiarezza"
+   ],
+   "blocchi_testo": 15,
+   "parole": 118,
+   "densita": 17,
+   "media": 5,
+   "cta": 0,
+   "firma": "section|bg-ink-2.section.section-border-t|1|M|-|3",
+   "gruppo": 8,
+   "rappresentante": true,
+   "screenshot": "sezioni/08-la-differenza-in-45-minuti.png"
+  },
+  {
+   "i": 9,
+   "y": 6111,
+   "h": 915,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Quanto vale davvero questa sessione.",
+   "headings": [
+    "Quanto vale davvero questa sessione."
+   ],
+   "blocchi_testo": 18,
+   "parole": 75,
+   "densita": 8,
+   "media": 5,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|M|-|5",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-quanto-vale-davvero-questa-session.png"
+  },
+  {
+   "i": 10,
+   "y": 7026,
+   "h": 500,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.section.section-border-t",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": "Ancora scettico?",
+   "headings": [
+    "Ancora scettico?"
+   ],
+   "blocchi_testo": 12,
+   "parole": 84,
+   "densita": 17,
+   "media": 2,
+   "cta": 2,
+   "firma": "section|bg-ink.section.section-border-t|1|M|C|3",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-ancora-scettico.png"
+  },
+  {
+   "i": 11,
+   "y": 7526,
+   "h": 747,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-grey.section.section-border-t",
+   "bg": "#e8e8e6",
+   "bg_img": false,
+   "heading": "\"Ok ma perché me la date gratis?\"",
+   "headings": [
+    "\"Ok ma perché me la date gratis?\""
+   ],
+   "blocchi_testo": 9,
+   "parole": 144,
+   "densita": 19,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-grey.section.section-border-t|1|-|-|4",
+   "gruppo": 11,
+   "rappresentante": true,
+   "screenshot": "sezioni/11-ok-ma-perch-me-la-date-gratis.png"
+  },
+  {
+   "i": 12,
+   "y": 8274,
+   "h": 560,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink-2.section.section-border-t",
+   "bg": "#0a0a0a",
+   "bg_img": false,
+   "heading": "Faccio max 8 call a settimana.",
+   "headings": [
+    "Faccio max 8 call a settimana."
+   ],
+   "blocchi_testo": 10,
+   "parole": 55,
+   "densita": 10,
+   "media": 2,
+   "cta": 2,
+   "firma": "section|bg-ink-2.section.section-border-t|1|M|C|3",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-faccio-max-8-call-a-settimana.png"
+  },
+  {
+   "i": 13,
+   "y": 8834,
+   "h": 801,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Le 3 obiezioni che ricevo sempre.",
+   "headings": [
+    "Le 3 obiezioni che ricevo sempre.",
+    "\"Non so se ho il livello giusto\"",
+    "\"Sembra troppo bello per essere gratis\"",
+    "\"Ho paura di perdere tempo\""
+   ],
+   "blocchi_testo": 8,
+   "parole": 118,
+   "densita": 15,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|-|-|4",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-le-3-obiezioni-che-ricevo-sempre.png"
+  },
+  {
+   "i": 14,
+   "y": 9634,
+   "h": 612,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.section.section-border-t",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": "\"Ok ma tu chi sei?\"",
+   "headings": [
+    "\"Ok ma tu chi sei?\""
+   ],
+   "blocchi_testo": 9,
+   "parole": 96,
+   "densita": 16,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-ink.section.section-border-t|1|-|-|3",
+   "gruppo": 3,
+   "rappresentante": false,
+   "screenshot": "sezioni/14-ok-ma-tu-chi-sei.png"
+  },
+  {
+   "i": 15,
+   "y": 10246,
+   "h": 587,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-grey.section.section-border-t",
+   "bg": "#e8e8e6",
+   "bg_img": false,
+   "heading": "Cosa esci con, dopo 45 minuti.",
+   "headings": [
+    "Cosa esci con, dopo 45 minuti.",
+    "Un workflow tuo",
+    "Ore recuperate",
+    "Chiarezza brutale"
+   ],
+   "blocchi_testo": 8,
+   "parole": 56,
+   "densita": 10,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|bg-grey.section.section-border-t|1|M|-|3",
+   "gruppo": 15,
+   "rappresentante": true,
+   "screenshot": "sezioni/15-cosa-esci-con-dopo-45-minuti.png"
+  },
+  {
+   "i": 16,
+   "y": 10833,
+   "h": 636,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Cosa dicono chi ha già fatto la call",
+   "headings": [
+    "Cosa dicono chi ha già fatto la call"
+   ],
+   "blocchi_testo": 6,
+   "parole": 84,
+   "densita": 13,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|-|-|3",
+   "gruppo": 16,
+   "rappresentante": true,
+   "screenshot": "sezioni/16-cosa-dicono-chi-ha-gi-fatto-la-cal.png"
+  },
+  {
+   "i": 17,
+   "y": 11469,
+   "h": 505,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.section.section-border-t",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": "Se dopo 10 minuti non ti sto dando valore, chiudi la call.",
+   "headings": [
+    "Se dopo 10 minuti non ti sto dando valore, chiudi la call."
+   ],
+   "blocchi_testo": 5,
+   "parole": 39,
+   "densita": 8,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-ink.section.section-border-t|1|-|-|3",
+   "gruppo": 3,
+   "rappresentante": false,
+   "screenshot": "sezioni/17-se-dopo-10-minuti-non-ti-sto-dando.png"
+  },
+  {
+   "i": 18,
+   "y": 11974,
+   "h": 1200,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Domande che mi fanno spesso",
+   "headings": [
+    "Domande che mi fanno spesso",
+    "Serve che abbia già Claude installato?",
+    "Registri la call?",
+    "Che tool serve?",
+    "Devo saper programmare?",
+    "Si parla solo di Claude Code?"
+   ],
+   "blocchi_testo": 16,
+   "parole": 199,
+   "densita": 17,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|-|-|6",
+   "gruppo": 18,
+   "rappresentante": true,
+   "screenshot": "sezioni/18-domande-che-mi-fanno-spesso.png"
+  },
+  {
+   "i": 19,
+   "y": 13174,
+   "h": 1118,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.section.section-border-t",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": "Niente tool segreti. Solo quelli che uso davvero.",
+   "headings": [
+    "Niente tool segreti. Solo quelli che uso davvero."
+   ],
+   "blocchi_testo": 5,
+   "parole": 167,
+   "densita": 15,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-ink.section.section-border-t|1|-|-|6",
+   "gruppo": 19,
+   "rappresentante": true,
+   "screenshot": "sezioni/19-niente-tool-segreti-solo-quelli-ch.png"
+  },
+  {
+   "i": 20,
+   "y": 14292,
+   "h": 664,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Marco, founder SaaS. Da 3 ore a 20 minuti.",
+   "headings": [
+    "Marco, founder SaaS. Da 3 ore a 20 minuti."
+   ],
+   "blocchi_testo": 7,
+   "parole": 64,
+   "densita": 10,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|-|-|3",
+   "gruppo": 16,
+   "rappresentante": false,
+   "screenshot": "sezioni/20-marco-founder-saas-da-3-ore-a-20-m.png"
+  },
+  {
+   "i": 21,
+   "y": 14955,
+   "h": 934,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink-2.section.section-border-t",
+   "bg": "#0a0a0a",
+   "bg_img": false,
+   "heading": "Esci dalla call con sei cose molto concrete.",
+   "headings": [
+    "Esci dalla call con sei cose molto concrete.",
+    "Un workflow funzionante",
+    "Una mappa mentale chiara",
+    "2-3 prompt pattern riutilizzabili",
+    "La registrazione completa",
+    "Un ordine di priorità"
+   ],
+   "blocchi_testo": 16,
+   "parole": 127,
+   "densita": 14,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-ink-2.section.section-border-t|1|-|-|5",
+   "gruppo": 21,
+   "rappresentante": true,
+   "screenshot": "sezioni/21-esci-dalla-call-con-sei-cose-molto.png"
+  },
+  {
+   "i": 22,
+   "y": 15889,
+   "h": 882,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "Corso da 800€ vs questa call gratis.",
+   "headings": [
+    "Corso da 800€ vs questa call gratis."
+   ],
+   "blocchi_testo": 4,
+   "parole": 64,
+   "densita": 7,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-paper.section.section-border-t|1|-|-|4",
+   "gruppo": 13,
+   "rappresentante": false,
+   "screenshot": "sezioni/22-corso-da-800-vs-questa-call-gratis.png"
+  },
+  {
+   "i": 23,
+   "y": 16771,
+   "h": 771,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink.section.section-border-t",
+   "bg": "#1c1c1c",
+   "bg_img": false,
+   "heading": "Max, founder di Digital Empire. Builder, non formatore.",
+   "headings": [
+    "Max, founder di Digital Empire. Builder, non formatore."
+   ],
+   "blocchi_testo": 7,
+   "parole": 122,
+   "densita": 16,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-ink.section.section-border-t|1|-|-|4",
+   "gruppo": 23,
+   "rappresentante": true,
+   "screenshot": "sezioni/23-max-founder-di-digital-empire-buil.png"
+  },
+  {
+   "i": 24,
+   "y": 17541,
+   "h": 532,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-ink-2.section.section-border-t",
+   "bg": "#0a0a0a",
+   "bg_img": false,
+   "heading": "“Se è gratis, dov'è la fregatura?”",
+   "headings": [
+    "“Se è gratis, dov'è la fregatura?”"
+   ],
+   "blocchi_testo": 7,
+   "parole": 76,
+   "densita": 14,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-ink-2.section.section-border-t|1|-|-|3",
+   "gruppo": 24,
+   "rappresentante": true,
+   "screenshot": "sezioni/24-se-gratis-dov-la-fregatura.png"
+  },
+  {
+   "i": 25,
+   "y": 18073,
+   "h": 596,
+   "prof": 2,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-paper.section.section-border-t",
+   "bg": "#fafafa",
+   "bg_img": false,
+   "heading": "45 minuti. Gratis. Per davvero.",
+   "headings": [
+    "45 minuti. Gratis. Per davvero."
+   ],
+   "blocchi_testo": 10,
+   "parole": 31,
+   "densita": 5,
+   "media": 2,
+   "cta": 2,
+   "firma": "section|bg-paper.section.section-border-t|1|M|C|3",
+   "gruppo": 25,
+   "rappresentante": true,
+   "screenshot": "sezioni/25-45-minuti-gratis-per-davvero.png"
+  }
+ ],
+ "sezioni_totali": 25,
+ "sezioni_distinte": 20,
+ "src": [],
+ "segmentazione": "ok"
+}

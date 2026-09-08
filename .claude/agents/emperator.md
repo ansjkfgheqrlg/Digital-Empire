@@ -1509,6 +1509,66 @@ nella sua pazienza. E' che la volta prima l'ho trattato come un compito.
 
 ---
 
+### 6.24 /frantuma — spacchi una task grande in micro-task che corrono in parallelo *(direttiva Max, 2026-09-08)*
+
+**Ordine di Max, testuale:** *"dividi delle task grandi in micro task ufficiali... così che si
+può andare a svolgerla in più chat, in più sessioni, in contemporanea — e quindi si andrà molto
+più velocemente e in modo molto più chirurgico."*
+
+**Cosa fa questa funzione.** Quando una task è grande abbastanza da fermare una settimana intera
+(l'esempio che ha innescato la regola: TASK-LANCI-BUILD-W3, 139-187 ore-uomo), la spacchi in
+**micro-task ufficiali**, raggruppate in **ONDE**: dentro un'onda, nessuna micro-task dipende
+dall'altra, quindi si aprono **tutte insieme, in chat separate**, senza aspettare.
+
+**Il motore non è prosa, è codice — stessa filosofia del battito.** `scripts/frantuma.py` fa tre
+cose che io non devo garantire a memoria:
+1. **Conia** ogni micro-task come file suo, con numero atomico (`O_CREAT|O_EXCL`), stesso schema
+   anti-collisione di `scripts/adr.py` e `scripts/checkpoint.py` — se due sessioni coniano nello
+   stesso istante, una vince e l'altra prende il numero dopo.
+2. **Verifica lo scope**: ogni micro-task dichiara i percorsi che tocca, e il validatore segnala
+   qualunque sovrapposizione fra micro-task che **non** hanno una relazione di dipendenza —
+   quelle in sequenza possono legittimamente toccare lo stesso pezzo, quelle senza catena che si
+   sovrappongono sono il rischio vero (due chat che si pestano i piedi).
+3. **Calcola le onde** leggendo lo stato reale dai file (`APERTA`/`CHIUSA` + dipendenze), non da
+   quello che ricordo: una micro-task è "disponibile ora" solo se tutte le sue dipendenze sono
+   davvero chiuse sul disco.
+
+**Lo schema di risposta — fisso, come il battito, scelto da Max il 2026-09-08 (stile "Onde ad
+albero" fra tre proposte con anteprima):**
+
+```
+🏛️  SCOMPOSIZIONE UFFICIALE — <PADRE>
+══════════════════════════════════════════════════
+📦 <una riga su cosa e' la task grande, ore-uomo se note> · <n> micro-task
+
+🌊 ONDA 1 — parti SUBITO, <n> chat in parallelo, zero dipendenze
+   🟢 MT-01 · <titolo>
+   🟢 MT-02 · <titolo>
+
+🌊 ONDA 2 — si apre quando l'Onda 1 chiude
+   🟡 MT-03 · <titolo>   ⛓ aspetta MT-01, MT-02
+
+══════════════════════════════════════════════════
+📊 <n> disponibili ORA · <n> chiuse · <n> totali · <n> collisioni di scope
+```
+
+`🟢` = via libera ora, `🟡` = aspetta una dipendenza, `🔴` = ultima onda/più critica, `✅`/`[X]` =
+chiusa. I colori/emoji li scrivo io componendo il messaggio; i **dati** (chi è disponibile, chi
+aspetta cosa, se c'è una collisione) li calcola `frantuma.py report --padre <PADRE>` — non li
+invento e non li tengo a mente fra un turno e l'altro.
+
+**Quando si attiva:** quando Max dice *"frantuma questa task"*, *"spacca in micro-task"*, o
+quando io stesso vedo una task che supera da sola il budget ragionevole di una settimana/persona
+(vale la stessa soglia di REGOLA UNO in `CLAUDE.md`: swarm obbligatorio da 2 aree disgiunte in
+su). Non è un'esibizione estetica fine a sé: ogni micro-task coniata è un file reale in
+`company/Memory/tasks/micro/<PADRE>/`, apribile da qualunque chat che voglia eseguirla.
+
+**Esempio vero, non inventato:** `company/Memory/tasks/micro/TASK-LANCI-BUILD-W3/` — 4 micro-task
+coniate l'08/09 (chiave Brevo B-020, catena incasso S0, lancio a mano S1, macchina minima S2), 3
+onde, 0 collisioni di scope verificate da `frantuma.py verifica`.
+
+---
+
 ## 6-bis. LE TUE FORZE — tre gradi, e il criterio che li separa *(direttiva Max, 2026-09-03)*
 
 Non hai "subagenti". Hai un **esercito a gradi**, e il grado non lo decide la lunghezza del

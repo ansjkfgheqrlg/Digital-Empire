@@ -1,0 +1,765 @@
+{
+ "title": "I fatti sul copywriting — AP Formazione",
+ "meta_description": null,
+ "og_title": "I fatti sul copywriting — AP Formazione",
+ "og_image": null,
+ "canonical": "https://www.andrei-copy.com/ecco-i-fatti-copywriting",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
+ "lang": "it-IT",
+ "page_height": 16175,
+ "page_width": 1440,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_text": [
+  [
+   "#fafafa",
+   162
+  ],
+  [
+   "#1b1b1d",
+   55
+  ],
+  [
+   "#ebe9e0",
+   3
+  ],
+  [
+   "#0062ff",
+   2
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#1b1b1d",
+   26
+  ],
+  [
+   "#fafafa",
+   10
+  ],
+  [
+   "#0062ff",
+   6
+  ],
+  [
+   "#a8a8a8",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "elza-8u3n84",
+   153
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   64
+  ],
+  [
+   "\"DM Sans\"",
+   4
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 28.8px / w300",
+   94
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   39
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   29
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   17
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   15
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   10
+  ],
+  [
+   "20px / lh 36px / w300",
+   5
+  ],
+  [
+   "16px / lh normal / w600",
+   4
+  ],
+  [
+   "20px / lh 36px / w700",
+   4
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   3
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "300",
+   109
+  ],
+  [
+   "700",
+   107
+  ],
+  [
+   "600",
+   4
+  ],
+  [
+   "400",
+   1
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "10px",
+   7
+  ],
+  [
+   "20px",
+   2
+  ],
+  [
+   "15px",
+   2
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    860
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "opacity 0.1s linear",
+    5
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    4
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "opacity 1s",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    27
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ]
+  ]
+ },
+ "headings": [
+  {
+   "tag": "h2",
+   "y": 149,
+   "text": "Scopri perché sempre più persone ambiziose trovano la loro strada ed indipendenza economica grazie al Copywriting."
+  },
+  {
+   "tag": "h3",
+   "y": 1724,
+   "text": "Il 60,4% delle aziende italiane fattura meno di 100mila euro l’anno… Mentre lo 0,21% fattura +50 MILIONI di euro (fonte)"
+  },
+  {
+   "tag": "h3",
+   "y": 2338,
+   "text": "Lo strumento per aumentare fatturati? Il marketing."
+  },
+  {
+   "tag": "h1",
+   "y": 4151,
+   "text": "In 5 minuti ti spiego perché il copywriting è il migliore modello di business per iniziare"
+  },
+  {
+   "tag": "h2",
+   "y": 4966,
+   "text": "Gli esperti del digital marketing sono tra le professioni più ricercate per il 2024 (fonte)"
+  },
+  {
+   "tag": "h1",
+   "y": 5992,
+   "text": "Google rivela come il copywriting stia diventando più popolare che mai"
+  },
+  {
+   "tag": "h2",
+   "y": 7234,
+   "text": "Chiunque, se lo vuole, può fare copywriting."
+  },
+  {
+   "tag": "h2",
+   "y": 8707,
+   "text": "Ma com'è possibile che le aziende paghino così tanto per delle frasi scritte su un foglio?"
+  },
+  {
+   "tag": "h2",
+   "y": 9995,
+   "text": "Okay, ma chi sono io per parlarti di Copywriting?"
+  },
+  {
+   "tag": "h2",
+   "y": 10959,
+   "text": "Quale è il problema con (quasi) tutti i percorsi di formazione sul Copywriting?"
+  },
+  {
+   "tag": "h3",
+   "y": 11493,
+   "text": "Poi ci sono altri percorsi online di altre persone…"
+  },
+  {
+   "tag": "h3",
+   "y": 12660,
+   "text": "Copywriting Mentorship è il primo corso italiano di copywriting che ti segue passo-passo fino a trovare il primo cliente."
+  },
+  {
+   "tag": "h3",
+   "y": 13356,
+   "text": "Conosco quel sentimento"
+  },
+  {
+   "tag": "h2",
+   "y": 14074,
+   "text": "Copywriting Mentorship a confronto con altri percorsi"
+  },
+  {
+   "tag": "h2",
+   "y": 14935,
+   "text": "Quale è la conclusione?"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 12708,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 12716,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://www.truenumbers.it/aziende-italiane-fatturato/#:~:text=Come%20si%20vede%20nella%20nostra,che%20hanno%20prodotto%20una%20dichiarazione.",
+   "y": 1808,
+   "x": 844,
+   "w": 102,
+   "h": 49,
+   "bg": "transparent",
+   "color": "#ebe9e0",
+   "radius": "0px",
+   "border": "0px none rgb(235, 233, 224)",
+   "shadow": "none",
+   "size": 38.4,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "fonte",
+   "href": "https://www.wordstream.com/blog/ws/2022/04/19/digital-marketing-statistics",
+   "y": 5068,
+   "x": 810,
+   "w": 128,
+   "h": 61,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 48,
+   "weight": "700",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Voglio imparare questa professione per vivere libero",
+   "href": "/copy-base",
+   "y": 8425,
+   "x": 590,
+   "w": 446,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Scopri il corso",
+   "href": "/copywriting",
+   "y": 12322,
+   "x": 643,
+   "w": 154,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Dimmi di più sul percorso",
+   "href": "/copy-base",
+   "y": 13136,
+   "x": 600,
+   "w": 240,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Clicca qui per scoprire Copywriting Mentorship",
+   "href": "/copy-base",
+   "y": 15312,
+   "x": 515,
+   "w": 409,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 15662,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 15731,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 12701,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 12701,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 357,
+   "x": 661,
+   "w": 299,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3fbefeee-2e6f-49b0-8ed8-959b27e150a7/pattern-black+copy.jpg",
+   "alt": "",
+   "y": 710,
+   "x": 0,
+   "w": 1440,
+   "h": 919
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ef352e45-075b-4a7e-99be-bf8313cefc66/MAD03051.jpg",
+   "alt": "",
+   "y": 400,
+   "x": 320,
+   "w": 800,
+   "h": 412
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2379,
+   "x": 317,
+   "w": 196,
+   "h": 49
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6ed612b7-20cd-4920-b857-095bef89ed3a/1.png",
+   "alt": "",
+   "y": 2621,
+   "x": 320,
+   "w": 259,
+   "h": 259
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/46389147-6f2e-4888-9b39-31d9b9c64257/2.png",
+   "alt": "",
+   "y": 2931,
+   "x": 320,
+   "w": 259,
+   "h": 259
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3502,
+   "x": 416,
+   "w": 133,
+   "h": 30
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/01fd2901-be68-41e9-9e7b-a145a9178b75/sfondo+grunge.png",
+   "alt": "",
+   "y": 4055,
+   "x": 0,
+   "w": 1440,
+   "h": 816
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4210,
+   "x": 669,
+   "w": 366,
+   "h": 76
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8e45f72d-936f-495d-b3ac-fdb955af2529/copy-dati-thumb.jpg?format=750w",
+   "alt": "",
+   "y": 4449,
+   "x": 454,
+   "w": 532,
+   "h": 298
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e17678fd-5685-4ebb-9d12-9caed087f86e/pattern-banner-2.jpg",
+   "alt": "",
+   "y": 4871,
+   "x": 0,
+   "w": 1440,
+   "h": 1026
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/01ffefa7-d026-4d0d-b797-5f4c9d3424d4/One+Closed+Icon.png",
+   "alt": "",
+   "y": 5232,
+   "x": 354,
+   "w": 56,
+   "h": 56
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b58944cc-56fd-4407-8e70-751720685653/Two+Closed+Icon.png",
+   "alt": "",
+   "y": 5559,
+   "x": 360,
+   "w": 45,
+   "h": 45
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/509757cf-8d33-4529-acd7-d72717540997/graph-google-trends",
+   "alt": "graph-google-trends",
+   "y": 6469,
+   "x": 381,
+   "w": 678,
+   "h": 271
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/550660dc-5271-473f-aaee-3a1fc5156958/Andrei+Jump.png",
+   "alt": "",
+   "y": 7680,
+   "x": 523,
+   "w": 394,
+   "h": 271
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6adc9989-60c9-4c99-887b-648c053122cb/IMG_0379.jpg",
+   "alt": "",
+   "y": 8171,
+   "x": 320,
+   "w": 225,
+   "h": 346
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c37d89ee-a57a-4d0f-9005-52ddde777edc/The+tale+of+the+two+young+men.png",
+   "alt": "",
+   "y": 8966,
+   "x": 827,
+   "w": 259,
+   "h": 271
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4803d57b-3928-496b-9c34-e3e130bd6c63/MAD07167.jpg",
+   "alt": "",
+   "y": 10140,
+   "x": 320,
+   "w": 394,
+   "h": 390
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3fbefeee-2e6f-49b0-8ed8-959b27e150a7/pattern-black+copy.jpg",
+   "alt": "",
+   "y": 10863,
+   "x": 0,
+   "w": 1440,
+   "h": 1617
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0f93144e-b0fe-4e9e-9e31-44a0026dbcaf/Competitors.png",
+   "alt": "",
+   "y": 11821,
+   "x": 388,
+   "w": 665,
+   "h": 69
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2fb98248-e983-40d4-ba65-256b23f9d967/sfondo+grunge+bianco.png",
+   "alt": "",
+   "y": 12480,
+   "x": 0,
+   "w": 1440,
+   "h": 828
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a8899cc3-9a17-4201-886a-c34747fa47c6/Logo+CMB+-+black.png",
+   "alt": "",
+   "y": 12576,
+   "x": 624,
+   "w": 192,
+   "h": 43
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/03924ce3-f1a0-4e55-b2f9-f570691da917/back-vlack.jpg",
+   "alt": "",
+   "y": 13308,
+   "x": 0,
+   "w": 1440,
+   "h": 718
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8b7a26a6-d297-46a0-9af6-bf8f277b56b4/Blue+Modern+Pie+Chart+Trending+Graph.png",
+   "alt": "",
+   "y": 14222,
+   "x": 339,
+   "w": 761,
+   "h": 571
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 15488,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 15546,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15598,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15598,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15598,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15598,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "slices_desktop": 18,
+ "slices_mobile": 24,
+ "mobile_page_height": 20185
+}
