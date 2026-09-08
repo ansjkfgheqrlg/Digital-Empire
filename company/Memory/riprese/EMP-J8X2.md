@@ -3,6 +3,13 @@
 - **Aperto:** 2026-09-07
 - **Stato:** APERTA
 - **Task:** Onde B-G del dossier 33, poi fusione `empire-premium-style` nella Fabbrica e canone v2
+- **⚠️ SECONDO SCOPO, aggiunto da Max il 2026-09-08 — di pari rango:** finito lo studio dei siti,
+  si smonta **come Andrei Pascu fa i lanci** (fasi, funnel, offerta, ricorrenze, metodo, assenze) e
+  si produce un documento ufficiale in **tre forme — Markdown, Python, PDF** — che va **consegnato
+  alla sessione che costruisce l'infrastruttura dei lanci** (ecosistema 15-LANCI, ADR-025).
+  Dettaglio: dossier 33 PARTE VI · consegna:
+  [TASK-LANCI-20260908](../tasks/TASK-LANCI-20260908-ANATOMIA-ANDREI-PASCU.md).
+  **Ordine di esecuzione: prima si finisce lo studio dei siti. Nessuna deroga.**
 - **Checkpoint di origine:** [CP-20260907-ECX7](../checkpoints/CP-20260907-ECX7.md) — leggilo per primo
 
 ---

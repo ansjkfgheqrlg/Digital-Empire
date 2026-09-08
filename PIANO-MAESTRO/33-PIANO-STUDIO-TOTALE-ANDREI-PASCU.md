@@ -387,3 +387,54 @@ successiva.** Nessuna riga si apre se la precedente non è verde.
 - `competitor/Andrei Pascu/site-study/README.md` — lo stato dello studio siti
 - `emperator.md §6.20` (il piano si critica finché un giro non trova più niente) · `§6.22` (si prende
   tutto da tutti) · `§6.23` (ti modifichi da solo)
+
+---
+
+## PARTE VI — IL SECONDO SCOPO: L'ANATOMIA DEI LANCI *(ordine di Max, 2026-09-08)*
+
+Questo studio nasce per la **Fabbrica Siti**. Da oggi ha un **secondo scopo, di pari rango**, e
+arriva da un fatto nuovo: Gael sta costruendo **l'infrastruttura dei lanci** ([ADR-025](../company/Memory/decisions/ADR-025-ecosistema-lanci.md),
+piano in `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`), e Digital Empire comincera' a lanciare davvero.
+
+**Ordine testuale di Max:**
+> *"Noi conosciamo una persona che sa fare molto bene i lanci, li fa spesso, e ne ha uno aperto in
+> questo momento: Andrei Pascu. E' ora di analizzare le sue strategie. Capire come ragiona, come
+> struttura un lancio, come fa il funnel, tutto il suo funnel, la sua strategia, il suo modo di
+> fare i lanci, e le cose che i suoi lanci hanno in comune. Poi un intero documento, documentato
+> in documentazione."*
+
+### L'ordine di esecuzione, che non cambia
+
+1. **Prima si finisce lo studio dei siti** — onde A→G come da PARTE V. **Nessuna deroga**: il
+   materiale dei lanci si legge sui dati gia' catturati, e catturare a meta' significa concludere
+   su meta' delle prove.
+2. **Poi** parte l'analisi dei lanci.
+
+### Cosa deve rispondere l'analisi dei lanci
+
+| # | Domanda | Dove si trovano le prove, gia' sul disco |
+|---|---|---|
+| 1 | **Come struttura un lancio** — le fasi, in che ordine, con che tempi | `armageddon.bsns.it` + le 4 figlie (mirror statico di un lancio **vivo**), le pagine `-pre`, il negozio |
+| 2 | **Come fa il funnel** — ogni gradino, dall'ignaro alla cassa | catene `/define → /asa → /copy-base`; pre-casse `/outfunnel-1`, `/armadeggon-strp`, `/acquista-v101`; T3 al completo (onda D) |
+| 3 | **Come costruisce l'offerta** — bundle, voucher, prezzo barrato, scarsita' | 585 EUR listino + 199 di voucher venduti a 199; il badge «INCLUSO NEL PACCHETTO»; la scala 98 → 434 → 999 EUR |
+| 4 | **Cosa hanno in comune i suoi lanci** — il modello ripetibile | il confronto fra il lancio Armageddon e il negozio permanente, piu' i contenuti gia' ingeriti (29 video, ecosistema 1 del reparto Competitor) |
+| 5 | **Come ragiona** — il metodo, non l'estetica | lo strato 4: CSS commentati, mirror ripuliti a mano, refusi lasciati sui gradini e cura solo dove si convince |
+| 6 | **Cosa NON fa mai** — le assenze, che in un lancio pesano quanto le presenze | tutti i teardown di copy gia' scritti hanno la voce «COSA NON DICE MAI» |
+
+### Il deliverable — tre forme, una sola verita'
+
+| Forma | File | Regola |
+|---|---|---|
+| **Markdown** — la forma originale | `competitor/Andrei Pascu/ANATOMIA-DEI-LANCI.md` | e' la fonte: tutto nasce e si corregge qui |
+| **Python** — la forma eseguibile | `competitor/Andrei Pascu/anatomia_lanci.py` | i dati del lancio in struttura interrogabile + il generatore del PDF; chi costruisce LANCI ci deve poter chiamare dentro |
+| **PDF** — la forma che si consegna | `documentazione Empire/` (doppione obbligatorio, §6.17) | standard-oro del dossier 28, motore `pdf_engine_empire.py` (§6.19). Stile minimal AP Sales, mai massimalista |
+
+### La consegna — la parte nuova
+
+Il documento **non finisce in un cassetto**: va **consegnato alla sessione che costruisce
+l'infrastruttura dei lanci**. Il passaggio e' scritto in
+`company/Memory/tasks/TASK-LANCI-20260908-ANATOMIA-ANDREI-PASCU.md`, che dichiara cosa arriva,
+in che forma, e a chi.
+
+**Regola dell'Ultimo Metro applicata allo studio** (ADR-016): questo lavoro e' «fatto» solo quando
+la sessione LANCI lo ha **ricevuto e puo' usarlo**, non quando il PDF esiste.

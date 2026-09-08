@@ -9926,3 +9926,27 @@ crediti, mai meno performance.
 
 **RIPRESA DA:** gli atlanti mancanti di onda A (`12-claude-speedrun-v2`, `18`, `19`, `20`), poi
 **Onda C**. Aperto: B-059, il CRLF che oggi ha bloccato tre commit, fonte non trovata.
+
+## 2026-09-08 — SECONDO SCOPO allo studio Andrei Pascu: l'anatomia dei lanci (ordine di Max)
+
+Lo studio totale di Andrei Pascu (EMP-J8X2) da oggi ha **due scopi di pari rango**: la Fabbrica
+Siti, e **capire come lui fa i lanci** — fasi, funnel intero, costruzione dell'offerta, cosa hanno
+in comune i suoi lanci, come ragiona, cosa non fa mai. Motivo: Gael sta costruendo l'infrastruttura
+dei lanci (ADR-025, ecosistema 15-LANCI) e Digital Empire comincera' a lanciare; Andrei Pascu ne ha
+**uno aperto adesso** ed e' gia' sotto studio nel dettaglio piu' piccolo.
+
+**Deliverable in tre forme:** Markdown (`competitor/Andrei Pascu/ANATOMIA-DEI-LANCI.md`, la fonte),
+Python (`anatomia_lanci.py`, dati interrogabili + generatore), PDF (standard-oro dossier 28, con
+doppione in `documentazione Empire/`).
+
+**La parte nuova: la consegna.** Il documento non resta nello studio, va **passato alla sessione che
+costruisce LANCI**. Il passaggio e' scritto in
+`company/Memory/tasks/TASK-LANCI-20260908-ANATOMIA-ANDREI-PASCU.md` — ed e' "fatto" solo quando
+quella sessione l'ha ricevuto e puo' usarlo (ADR-016, Ultimo Metro).
+
+**Ordine di esecuzione, senza deroga: prima si chiude lo studio dei siti** (onde A-G). Stato contato
+sul disco: onda A 9/9 chiusa a quattro file, onda B 8/8 catturata, onda C 6/7 catturata, 23 catture
+su 52 pagine attese.
+
+**Nota di trasparenza:** uno scagnozzo (atlanti di onda B) e' stato ucciso dal limite di sessione,
+non da un difetto suo. Va rilanciato.
