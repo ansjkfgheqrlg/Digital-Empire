@@ -122,7 +122,14 @@ tratta come pezzo di libreria).
    `alt=""` **su entrambe le versioni**, originale e copia. Un lettore di schermo non lo sente, un
    motore di ricerca non lo indicizza, e nessun test automatico se ne accorge.)*
 
-I controlli dal 3 al 6 nascono da **difetti veri trovati addosso a un concorrente**, non da teoria:
+7. **La cifra che si paga non è mai la più piccola:** su una pagina d'offerta, il corpo del
+   **prezzo effettivo** deve essere ≥ del corpo del testo di servizio (FAQ, note, legale) → altrimenti
+   FAIL. *(difetto misurato sulla pagina madre del lancio Armageddon: il prezzo pagabile è a
+   **14,88 px**, più piccolo del corpo delle FAQ a **16,5 px**, mentre «Risparmi €585» sta a
+   **81,6 px** — la cifra che eccita è 5,5 volte quella che addebita. Non è un caso: è la scelta
+   tipografica che rende l'offerta più bella del contratto.)*
+
+I controlli dal 3 al 7 nascono da **difetti veri trovati addosso a un concorrente**, non da teoria:
 è la regola dei quattro strati — anche i difetti degli altri diventano gate.
 
 *Controlli 5 e 6 aggiunti il 2026-09-07 pomeriggio, stesso giorno dell'ADR, appena misurati: un ADR
