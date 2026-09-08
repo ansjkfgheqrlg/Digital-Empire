@@ -1,0 +1,789 @@
+{
+ "url": "https://www.andrei-copy.com/risorse",
+ "slug": "53-risorse",
+ "catturata": "2026-09-09",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "Risorse — AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 4039,
+ "larghezza": 1440,
+ "altezza_mobile": 3982,
+ "body_bg": "#f9fafb",
+ "body_font": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif",
+ "palette_testo": [
+  [
+   "#fafafa",
+   30
+  ],
+  [
+   "#ffffff",
+   8
+  ],
+  [
+   "#d1d5db",
+   4
+  ],
+  [
+   "#ebe9e0",
+   2
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#1b1b1d",
+   9
+  ],
+  [
+   "#28282b",
+   4
+  ],
+  [
+   "#f3f4f6",
+   4
+  ],
+  [
+   "#ff0000",
+   4
+  ],
+  [
+   "#ef4444",
+   4
+  ],
+  [
+   "#0062ff",
+   3
+  ],
+  [
+   "#fafafa",
+   2
+  ],
+  [
+   "#f9fafb",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "plus-jakarta-sans-o8l9cc",
+   24
+  ],
+  [
+   "elza-8u3n84",
+   19
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "24px / lh 33.6px / w700",
+   10
+  ],
+  [
+   "16px / lh 28.8px / w300",
+   7
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   4
+  ],
+  [
+   "24px / lh 31.2px / w700",
+   4
+  ],
+  [
+   "15px / lh 24px / w300",
+   4
+  ],
+  [
+   "13px / lh 28.8px / w500",
+   4
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "87.3px / lh 87.3px / w700",
+   2
+  ],
+  [
+   "78.5px / lh 78.5px / w700",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "137.3px / lh 137.3px / w700",
+   1
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "700",
+   24
+  ],
+  [
+   "300",
+   14
+  ],
+  [
+   "500",
+   5
+  ],
+  [
+   "400",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "12px",
+   8
+  ],
+  [
+   "20px",
+   4
+  ],
+  [
+   "50px",
+   4
+  ],
+  [
+   "10px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(0, 0, 0, 0.1) 0px 10px 30px 0px",
+   4
+  ],
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    282
+   ],
+   [
+    "0.2s",
+    8
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "0.3s",
+    4
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.1s linear",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [
+   [
+    "url(\"#section-divider-69860fa91876e9537cbf9ea0\")",
+    1
+   ],
+   [
+    "url(\"#section-divider-698768d2ce63e161d66d0e73\")",
+    1
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    13
+   ],
+   [
+    "matrix(1, 0, 0, 1, -34, -24)",
+    4
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, 3.4)",
+    2
+   ],
+   [
+    "matrix(1, 0, 0, 1, 0, -5.627)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 141,
+   "text": "RISORSE"
+  },
+  {
+   "tag": "h3",
+   "y": 279,
+   "text": "Una raccolta di contenuti gratuiti di AP Formazione."
+  },
+  {
+   "tag": "h1",
+   "y": 873,
+   "text": "YouTube videos"
+  },
+  {
+   "tag": "h2",
+   "y": 1202,
+   "text": "Nel 2026 il marketing avrà questi 9 cambiamenti"
+  },
+  {
+   "tag": "h2",
+   "y": 1514,
+   "text": "Come i RICCHI gestiscono il loro TEMPO"
+  },
+  {
+   "tag": "h2",
+   "y": 1851,
+   "text": "Usa questi 10 lead magnet per generare contatti (gratis)"
+  },
+  {
+   "tag": "h2",
+   "y": 2163,
+   "text": "Come vendere in call e chiudere TUTTI"
+  },
+  {
+   "tag": "h1",
+   "y": 2605,
+   "text": "Presto disponibile⏱️Presto disponibile⏱️Presto disponibile⏱️Presto disponibile⏱️Presto disponibile Presto disponibile ⏱️"
+  },
+  {
+   "tag": "h1",
+   "y": 2694,
+   "text": "Corso di business"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 1193,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 1201,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Guarda su YouTube",
+   "href": "https://youtu.be/nvl28y1T6xI",
+   "y": 1375,
+   "x": 735,
+   "w": 140,
+   "h": 45,
+   "bg": "#ef4444",
+   "color": "#ffffff",
+   "radius": "50px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 13,
+   "weight": "500",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Guarda su YouTube",
+   "href": "https://youtu.be/f9ddn7AZdZI",
+   "y": 1712,
+   "x": 735,
+   "w": 140,
+   "h": 45,
+   "bg": "#ef4444",
+   "color": "#ffffff",
+   "radius": "50px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 13,
+   "weight": "500",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Guarda su YouTube",
+   "href": "https://youtu.be/j4UInmM9kKA",
+   "y": 2024,
+   "x": 735,
+   "w": 140,
+   "h": 45,
+   "bg": "#ef4444",
+   "color": "#ffffff",
+   "radius": "50px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 13,
+   "weight": "500",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Guarda su YouTube",
+   "href": "https://youtu.be/URS89smw38w",
+   "y": 2329,
+   "x": 735,
+   "w": 140,
+   "h": 45,
+   "bg": "#ef4444",
+   "color": "#ffffff",
+   "radius": "50px",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "size": 13,
+   "weight": "500",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 3526,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 3595,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 1186,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 1186,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7b5597d9-dc7d-46e7-9675-d2b430c7d080/Glow+grainy+coal+background+SP.png",
+   "alt": "",
+   "y": 0,
+   "x": 147,
+   "w": 1145,
+   "h": 761
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6f8a4d92-3263-47ec-a6c0-ad566c596c85/Risorse+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 337,
+   "x": 387,
+   "w": 667,
+   "h": 424
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d767f3a9-115c-454a-92c8-527680b359ca/Coal%2Bbackground%2BSP.webp",
+   "alt": "",
+   "y": 761,
+   "x": 147,
+   "w": 1145,
+   "h": 1797
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 861,
+   "x": 420,
+   "w": 301,
+   "h": 110
+  },
+  {
+   "tag": "img",
+   "src": "https://i.imgur.com/M5rO5xl.jpeg",
+   "alt": "Video thumbnail",
+   "y": 1214,
+   "x": 418,
+   "w": 287,
+   "h": 162
+  },
+  {
+   "tag": "img",
+   "src": "https://i.imgur.com/PdkFGR7.jpeg",
+   "alt": "Video thumbnail",
+   "y": 1539,
+   "x": 418,
+   "w": 287,
+   "h": 162
+  },
+  {
+   "tag": "img",
+   "src": "https://i.imgur.com/kqfRaGZ.png",
+   "alt": "Video thumbnail",
+   "y": 1863,
+   "x": 418,
+   "w": 287,
+   "h": 162
+  },
+  {
+   "tag": "img",
+   "src": "https://i.imgur.com/DyvVOHa.png",
+   "alt": "Video thumbnail",
+   "y": 2172,
+   "x": 418,
+   "w": 287,
+   "h": 162
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 761,
+   "x": 147,
+   "w": 1145,
+   "h": 1797
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 761,
+   "x": 147,
+   "w": 1145,
+   "h": 1797
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d767f3a9-115c-454a-92c8-527680b359ca/Coal%2Bbackground%2BSP.webp",
+   "alt": "",
+   "y": 2500,
+   "x": 147,
+   "w": 1145,
+   "h": 834
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2609,
+   "x": 387,
+   "w": 667,
+   "h": 34
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2684,
+   "x": 749,
+   "w": 276,
+   "h": 98
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/155736ef-47c3-4705-bb2d-3bc046f790a3/Wafes+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 2881,
+   "x": 453,
+   "w": 533,
+   "h": 300
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2500,
+   "x": 147,
+   "w": 1145,
+   "h": 834
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2500,
+   "x": 147,
+   "w": 1145,
+   "h": 834
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 3351,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 3409,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3462,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3462,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3462,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3462,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 56,
+ "meta": {
+  "description": null,
+  "og_title": "Risorse — AP Formazione",
+  "og_image": null,
+  "canonical": "https://www.andrei-copy.com/risorse",
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 761,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.full-bleed-section.layout-engine-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "RISORSE",
+   "headings": [
+    "RISORSE",
+    "Una raccolta di contenuti gratuiti di AP Formazione."
+   ],
+   "blocchi_testo": 3,
+   "parole": 9,
+   "densita": 1,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|page-section.full-bleed-section.layout-engine-section|2|M|-|4",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-risorse.png"
+  },
+  {
+   "i": 2,
+   "y": 761,
+   "h": 1797,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "YouTube videos",
+   "headings": [
+    "YouTube videos",
+    "Una top 4 dei video più utili che abbia mai creato. Dacci un’occhiata.",
+    "Nel 2026 il marketing avrà questi 9 cambiamenti",
+    "Come i RICCHI gestiscono il loro TEMPO",
+    "Usa questi 10 lead magnet per generare contatti (gratis)",
+    "Come vendere in call e chiudere TUTTI"
+   ],
+   "blocchi_testo": 20,
+   "parole": 128,
+   "densita": 7,
+   "media": 8,
+   "cta": 8,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|C|9",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-youtube-videos.png"
+  },
+  {
+   "i": 3,
+   "y": 2558,
+   "h": 776,
+   "prof": 5,
+   "tag": "section",
+   "id": null,
+   "classi": "page-section.has-section-divider.full-bleed-section",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Presto disponibile⏱️Presto disponibile⏱️Presto disponibile⏱️Presto disponibile⏱️Presto disponibile Presto disponibile ⏱️",
+   "headings": [
+    "Presto disponibile⏱️Presto disponibile⏱️Presto disponibile⏱️Presto disponibile⏱️Presto disponibile Presto disponibile ⏱️",
+    "Corso di business",
+    "40 minuti di corso gratuito per chi non sa da dove partire in questo mondo."
+   ],
+   "blocchi_testo": 8,
+   "parole": 27,
+   "densita": 3,
+   "media": 6,
+   "cta": 0,
+   "firma": "section|page-section.has-section-divider.full-bleed-section|3|M|-|4",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-presto-disponibile-presto-disponib.png"
+  },
+  {
+   "i": 4,
+   "y": 3334,
+   "h": 705,
+   "prof": 2,
+   "tag": "footer",
+   "id": "footer-sections",
+   "classi": "sections",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 24,
+   "parole": 99,
+   "densita": 14,
+   "media": 7,
+   "cta": 2,
+   "firma": "footer|sections|1|M|C|4",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-footer.png"
+  }
+ ],
+ "sezioni_totali": 4,
+ "sezioni_distinte": 4,
+ "src": [],
+ "segmentazione": "ok"
+}

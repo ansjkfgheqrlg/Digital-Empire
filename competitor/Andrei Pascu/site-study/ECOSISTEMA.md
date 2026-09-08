@@ -42,8 +42,30 @@ avrei chiuso lo "studio totale" con 66 pagine commerciali mai aperte e non l'avr
 | `claude-speedrun.com` | il corso su Claude, 249 € | **2** | artigianale, `#fb4604` + Onest |
 | `armageddon.bsns.it` | il lancio, 199 € | **5** (home + 4 figlie) | artigianale, vanilla, **studiato** |
 | `bsns.it` | **redirige** su `andrei-copy.com` | — | — |
-| `chiamata-formazione.netlify.app` | pagina di prenotazione chiamata | 1 | Netlify, da vedere |
+| ~~`chiamata-formazione.netlify.app`~~ | **NON È SUA — È NOSTRA.** Vedi la correzione qui sotto | — | — |
 | `linktr.ee/andrei.bsns` | il bio-link | 1 | Linktree stock, **studiato** |
+
+---
+
+## ⚠️ CORREZIONE — una pagina censita nel suo ecosistema era NOSTRA *(2026-09-09)*
+
+`chiamata-formazione.netlify.app` è stata contata per sette giorni come pagina di Andrei Pascu.
+**Non lo è.** Catturata e letta: **zero occorrenze** della parola «Andrei» in tutta la pagina, e il
+testo dice *«Digital Empire — la mia agenzia, appena nata — sta lanciando Claude Code Mastery»*
+`[y=704]`, firmato Max. È **una nostra bozza di funnel** su un dominio Netlify di staging: una call
+1:1 gratuita che porta al corso da **397 €**.
+
+**Come c'è finita:** l'enumerazione del Passo 0 ha raccolto i domini dai link, e questo compariva
+fra i nostri stessi appunti. Nessuno l'ha aperto: è entrato in elenco per il nome.
+
+**Cosa insegna, e vale più della correzione:** anche l'elenco «misurato» del Passo 0 conteneva un
+falso, e il falso è sopravvissuto perché *sembrava plausibile*. **Un URL non è un fatto finché la
+pagina non è aperta.** L'errore si è chiuso da solo solo perché l'onda D l'ha catturata davvero.
+
+**Effetto collaterale utile:** quella pagina è comunque materiale prezioso — è la nostra offerta a
+impegno alto, mai finita e mai lanciata. Il rapporto
+[`reports/40-43-44-pagine-anomale.md`](reports/40-43-44-pagine-anomale.md) la studia lo stesso, e va
+girata all'ecosistema **LANCI**: è già un pezzo di funnel scritto, fermo su uno staging.
 
 ---
 

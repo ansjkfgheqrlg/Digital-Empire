@@ -129,8 +129,18 @@ tratta come pezzo di libreria).
    **81,6 px** — la cifra che eccita è 5,5 volte quella che addebita. Non è un caso: è la scelta
    tipografica che rende l'offerta più bella del contratto.)*
 
-I controlli dal 3 al 7 nascono da **difetti veri trovati addosso a un concorrente**, non da teoria:
-è la regola dei quattro strati — anche i difetti degli altri diventano gate.
+8. **Ogni gradino del funnel deve risolvere:** ogni CTA che porta a una pagina interna deve
+   rispondere **200**, e ogni pagina di cassa deve avere **almeno un link che ci arriva** → altrimenti
+   FAIL. *(difetto misurato il 2026-09-09, ed è il più costoso trovato addosso a un concorrente:
+   `/vendita` — pagina di vendita di Vendita101 — manda a `/acquista-v101`, che è un **404**. La
+   cassa vera, `/vendita101-pre` a 400 €, **non è linkata da nessuna parte**. Un lancio con una
+   pagina di vendita viva e una cassa irraggiungibile perde ogni euro che il copy ha guadagnato,
+   e nessuno se ne accorge perché la pagina di vendita funziona benissimo.)*
+
+I controlli dal 3 all'8 nascono da **difetti veri trovati addosso a un concorrente**, non da teoria:
+è la regola dei quattro strati — anche i difetti degli altri diventano gate. Il controllo 8 non è
+solo per la Fabbrica Siti: **è il primo gate obbligatorio dell'ecosistema LANCI** (ADR-025) — nessun
+lancio parte senza che la catena dall'annuncio alla cassa sia stata percorsa a macchina.
 
 *Controlli 5 e 6 aggiunti il 2026-09-07 pomeriggio, stesso giorno dell'ADR, appena misurati: un ADR
 si allarga il giorno in cui il fatto arriva, non alla revisione successiva.*
