@@ -48,7 +48,10 @@ ONDE = [
         "40-ecco-i-fatti", "41-aps-assistenza", "42-acquista-v101",
         "43-chiamata-formazione", "44-apsales-promozione",
     ]),
-    ("E", "T4 campioni di prova e negozio", 9, []),
+    ("E", "T4 campioni di prova e negozio", 9, [
+        "50-recensioni", "51-recensioni-mentorship", "52-story", "53-risorse",
+        "54-attrezzatura", "55-negozio", "56-store", "57-store-aps", "58-ai-policy",
+    ]),
     ("F", "T5 corpus del blog", 1, []),
     ("G", "le tre sintesi + fusione empire-premium-style", 4, []),
 ]

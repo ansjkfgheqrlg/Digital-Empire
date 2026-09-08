@@ -1,0 +1,630 @@
+{
+ "url": "https://www.andrei-copy.com/ai-policy",
+ "slug": "58-ai-policy",
+ "catturata": "2026-09-09",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "AI policy — AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 12569,
+ "larghezza": 1440,
+ "altezza_mobile": 22350,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_testo": [
+  [
+   "#1b1b1d",
+   192
+  ],
+  [
+   "#fafafa",
+   10
+  ],
+  [
+   "#ebe9e0",
+   2
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#a8a8a8",
+   3
+  ],
+  [
+   "#0062ff",
+   3
+  ],
+  [
+   "#1b1b1d",
+   2
+  ],
+  [
+   "#fafafa",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "elza-8u3n84",
+   184
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   19
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   116
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   64
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   18
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "300",
+   119
+  ],
+  [
+   "700",
+   83
+  ],
+  [
+   "400",
+   1
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "10px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    330
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.1s linear",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    7
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ]
+  ]
+ },
+ "keyframes": [],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 185,
+   "text": "Informativa Privacy e Condizioni d'Uso dell'Assistente Virtuale AP Sales"
+  },
+  {
+   "tag": "h2",
+   "y": 554,
+   "text": "🟡 In breve (TL;DR)"
+  },
+  {
+   "tag": "h2",
+   "y": 1415,
+   "text": "AVVISO PRELIMINARE — VERSIONE BETA E LIMITI DEL SERVIZIO"
+  },
+  {
+   "tag": "h2",
+   "y": 1828,
+   "text": "1. Titolare del Trattamento"
+  },
+  {
+   "tag": "h2",
+   "y": 2207,
+   "text": "2. Natura e finalità del Servizio"
+  },
+  {
+   "tag": "h2",
+   "y": 2823,
+   "text": "3. Categorie di dati personali trattati"
+  },
+  {
+   "tag": "h2",
+   "y": 3662,
+   "text": "4. Base giuridica del trattamento"
+  },
+  {
+   "tag": "h2",
+   "y": 5046,
+   "text": "5. Modalità del trattamento e processo decisionale automatizzato"
+  },
+  {
+   "tag": "h2",
+   "y": 5589,
+   "text": "6. Comunicazione dei dati a terzi e trasferimento extra-UE"
+  },
+  {
+   "tag": "h2",
+   "y": 6488,
+   "text": "7. Periodo di conservazione dei dati"
+  },
+  {
+   "tag": "h2",
+   "y": 7020,
+   "text": "8. Diritti dell'interessato"
+  },
+  {
+   "tag": "h2",
+   "y": 7803,
+   "text": "9. Misure di sicurezza"
+  },
+  {
+   "tag": "h2",
+   "y": 8166,
+   "text": "10. Condizioni d'uso del Servizio"
+  },
+  {
+   "tag": "h2",
+   "y": 9089,
+   "text": "11. Limitazione di responsabilità e natura sperimentale del Servizio"
+  },
+  {
+   "tag": "h2",
+   "y": 10232,
+   "text": "12. Cookie e tecnologie analoghe"
+  },
+  {
+   "tag": "h2",
+   "y": 10464,
+   "text": "13. Capacità di agire"
+  },
+  {
+   "tag": "h2",
+   "y": 10667,
+   "text": "14. Modifiche"
+  },
+  {
+   "tag": "h2",
+   "y": 10928,
+   "text": "15. Legge applicabile e foro competente"
+  },
+  {
+   "tag": "h2",
+   "y": 11214,
+   "text": "16. Dichiarazione di accettazione"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 9712,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 9720,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 12056,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 12124,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 9705,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 9705,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 11881,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 11939,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11991,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11991,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11991,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11991,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 222,
+ "meta": {
+  "description": null,
+  "og_title": "AI policy — AP Formazione",
+  "og_image": null,
+  "canonical": "https://www.andrei-copy.com/ai-policy",
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 185,
+   "h": 259,
+   "prof": 13,
+   "tag": "h1",
+   "id": null,
+   "classi": "",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 9,
+   "densita": 3,
+   "media": 0,
+   "cta": 0,
+   "firma": "h1||0|-|-|1",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-h1.png"
+  },
+  {
+   "i": 2,
+   "y": 639,
+   "h": 461,
+   "prof": 13,
+   "tag": "ul",
+   "id": null,
+   "classi": "",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 9,
+   "parole": 201,
+   "densita": 44,
+   "media": 0,
+   "cta": 0,
+   "firma": "ul||8|-|-|2",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-ul.png"
+  },
+  {
+   "i": 3,
+   "y": 3006,
+   "h": 230,
+   "prof": 13,
+   "tag": "ul",
+   "id": null,
+   "classi": "",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 6,
+   "parole": 81,
+   "densita": 35,
+   "media": 0,
+   "cta": 0,
+   "firma": "ul||6|-|-|1",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-ul.png"
+  },
+  {
+   "i": 4,
+   "y": 4521,
+   "h": 230,
+   "prof": 13,
+   "tag": "ul",
+   "id": null,
+   "classi": "",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 5,
+   "parole": 82,
+   "densita": 36,
+   "media": 0,
+   "cta": 0,
+   "firma": "ul||5|-|-|1",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-ul.png"
+  },
+  {
+   "i": 5,
+   "y": 6700,
+   "h": 288,
+   "prof": 13,
+   "tag": "ul",
+   "id": null,
+   "classi": "",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 4,
+   "parole": 135,
+   "densita": 47,
+   "media": 0,
+   "cta": 0,
+   "firma": "ul||4|-|-|1",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-ul.png"
+  },
+  {
+   "i": 6,
+   "y": 7179,
+   "h": 461,
+   "prof": 13,
+   "tag": "ul",
+   "id": null,
+   "classi": "",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 10,
+   "parole": 200,
+   "densita": 43,
+   "media": 0,
+   "cta": 0,
+   "firma": "ul||9|-|-|2",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-ul.png"
+  },
+  {
+   "i": 7,
+   "y": 9490,
+   "h": 346,
+   "prof": 13,
+   "tag": "p",
+   "id": null,
+   "classi": "",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 0,
+   "parole": 172,
+   "densita": 50,
+   "media": 0,
+   "cta": 0,
+   "firma": "p||1|-|-|2",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-p.png"
+  },
+  {
+   "i": 8,
+   "y": 9896,
+   "h": 202,
+   "prof": 13,
+   "tag": "ul",
+   "id": null,
+   "classi": "",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 5,
+   "parole": 74,
+   "densita": 37,
+   "media": 0,
+   "cta": 0,
+   "firma": "ul||5|-|-|1",
+   "gruppo": 4,
+   "rappresentante": false,
+   "screenshot": "sezioni/08-ul.png"
+  },
+  {
+   "i": 9,
+   "y": 11864,
+   "h": 705,
+   "prof": 2,
+   "tag": "footer",
+   "id": "footer-sections",
+   "classi": "sections",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 24,
+   "parole": 99,
+   "densita": 14,
+   "media": 7,
+   "cta": 2,
+   "firma": "footer|sections|1|M|C|4",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-footer.png"
+  }
+ ],
+ "sezioni_totali": 9,
+ "sezioni_distinte": 8,
+ "src": [],
+ "segmentazione": "ok"
+}
