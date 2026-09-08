@@ -1,3 +1,19 @@
+## 📋 2026-09-08 — TASK GAEL SETTIMANA 3 emesse: 6 task ufficiali, scadenza 15/09 — TASK-GAEL-20260908-SETTIMANA-03
+
+**Ordine vocale di Max, dettato per intero.** 6 task ufficiali, in ordine: 1️⃣ costruzione completa
+`15-LANCI` (ADR-025) · 2️⃣ piano definitivo del primo lancio (il Manuale), a giri di critica fino a
+zero difetti · 3️⃣ piano d'azione (contenuti + email marketing) · 4️⃣ il funnel intero, costruito e
+online, rivalutato ai limiti · 5️⃣ piano di automazione delle 42 fasi (nessun motore nuovo, vietato
+da ADR-025) · 6️⃣ 3 libri KDP restanti (chiude TASK-KDP-5LIBRI-W2 a 5/5) — **indipendente, in
+parallelo, non aspetta le prime cinque**.
+
+**⚠️ Nota data a Max in chiaro:** la sola costruzione di 1️⃣ è stimata 139-187 ore-uomo in ADR-025;
+sommata alle altre quattro task LANCI, il totale supera aritmeticamente i 7 giorni per una persona
+sola. Gate reale della settimana: ogni task ha un checkpoint con lo stato vero raggiunto, mai un
+"fatto" dichiarato che non regge a una riesecuzione — stessa disciplina di W2.
+
+Dettagli: [TASK-GAEL-20260908-SETTIMANA-03](tasks/TASK-GAEL-20260908-SETTIMANA-03.md).
+
 ## 👑 2026-09-08 — ADR-025 (nasce LANCI) firmato da Max + ADR-026 (blocchi mai silenziosi, Gael 100% autorita') — CP-20260908-RZC2
 
 **Errore riconosciuto e corretto in diretta con Max.** Il piano LANCI (v4) era pronto e coerente
