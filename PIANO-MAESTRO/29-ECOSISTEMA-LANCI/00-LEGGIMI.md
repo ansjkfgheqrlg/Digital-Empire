@@ -1,6 +1,6 @@
 ---
 Type: PROJECT
-Status: Proposta — versione 4, in attesa di ok Max
+Status: Attivo — versione 4, ADR-025 firmato da Max 08/09/2026
 Tags: #lanci #ecosistema-15 #architettura #TASK-LANCI-ECO-W2 #piano-di-costruzione
 Created: 2026-09-05
 Last updated: 2026-09-05
@@ -296,7 +296,7 @@ Sono **quattro**, e la prima blocca tutto il resto.
 | # | Decisione | Dove sono gli elementi | Costo dell'attesa |
 |---|---|---|---|
 | **1** | **Il Manuale si vende o è un regalo?** | `03-FLUSSO-OFFERTA.md` §3 — le due strade con le conseguenze, e quale è reversibile | **sei mesi finora.** Adesso ha una scadenza di 7 giorni e un default reversibile: se non arriva risposta si procede con "vendita" e si può tornare indietro |
-| 2 | Approvare l'**ADR dei lanci** (il numero si conia alla firma) | `05-ADR-ECOSISTEMA-LANCI.md`, pronto da copiare | senza, la cartella dell'ecosistema non può nascere: lo impone ADR-009 |
+| ~~2~~ | ✅ **Approvato 08/09/2026** — `ADR-025-ecosistema-lanci.md` | firmato, `15-LANCI/` può nascere | chiuso |
 | 3 | Riaprire o no **ADR-019** | `01-ARCHITETTURA.md` §6 | nessuno: la risposta è già misurata, serve solo che sia registrata |
 | 4 | Sostituire la chiave di posta esposta | §3.1 gesto 0 | **cresce ogni giorno**: è pubblica dal repository, e la storia resta leggibile anche dopo |
 

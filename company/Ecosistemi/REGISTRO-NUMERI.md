@@ -28,17 +28,12 @@ Nato il 2026-09-04 perché due numeri erano già collisi senza che nessuno se ne
 | 12 | STREAM-S7-BOT | (esiste anche come 08 — stessa nota) |
 | 13 | ARENA-APEX | |
 | 14 | TESORERIA | |
+| 15 | LANCI | ✅ ADR-025 firmato da Max (08/09) — Gael puo' creare `15-LANCI/` e partire con S0 |
 
 ## Riservati (piano approvato, cartella non ancora creata)
 
-| # | Nome | Stato | Riferimento |
-|---|---|---|---|
-| **15** | **LANCI** | ⏳ **piano versione 4 consegnato, in attesa dell'ok di Max** — la cartella **non** va creata prima che l'ADR sia registrato | `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` (si comincia da `00-LEGGIMI.md`) · ADR **da coniare alla firma** con `python scripts/adr.py conia --slug ecosistema-lanci` — il numero non e' piu' scritto nel piano perche' e' stato scippato tre volte (022, 023, 024) |
-
-⚠️ **Attenzione a chi prende il prossimo numero:** il 15 è **prenotato**, non libero. Chi crea un
-ecosistema nuovo prima che i LANCI nascano prenda il **16** e lo scriva qui.
+_nessuno — LANCI e' passato a "occupati" l'08/09 con ADR-025._
 
 ## Prossimo libero
 
-**15** — assegnalo al primo ecosistema nuovo che si costruisce davvero (candidato: LANCI,
-in attesa che Gael chiuda L4→L6 con Emperator).
+**16** — assegnalo al primo ecosistema nuovo dopo LANCI.

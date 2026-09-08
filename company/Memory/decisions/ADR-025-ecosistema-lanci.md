@@ -1,49 +1,9 @@
-## ✅ FIRMATO — 2026-09-08
+# ADR-025 — Nasce l'ecosistema LANCI: l'artefatto e' il centro, non il reparto
 
-Max ha approvato. Il numero coniato è **ADR-025**, il corpo è copiato per intero in
-`company/Memory/decisions/ADR-025-ecosistema-lanci.md` — quello è ora il documento vivo,
-non questo. `company/Ecosistemi/15-LANCI/` può nascere: Gael parte con S0.
-
-Questo file resta come bozza storica del piano. Non modificarlo per riflettere lo stato
-firmato: lo stato vive in ADR-025.
-
----
-
-## Come si usa questo file (bozza — superata dalla firma sopra)
-
-Max legge la decisione qui sotto e la approva o la respinge (rispondendo in chat, o con un
-comando che porti la firma).
-
-**Il numero non e' scritto qui, e non deve esserlo.** Approvata la decisione, il numero si
-conia nell'istante in cui il file nasce:
-
-```bash
-python scripts/adr.py conia --slug ecosistema-lanci     --titolo "Nasce l'ecosistema LANCI: l'artefatto e' il centro, non il reparto"     --stato ATTIVA --ordinato-da "Max"
-```
-
-Il comando occupa il numero creando il file in modo atomico e lo stampa. Poi il corpo qui
-sotto — dalla riga `# ADR-XXX` in poi — si copia integralmente nel file appena creato,
-sostituendo `XXX` col numero coniato, senza altre modifiche.
-
-> **Perche' cosi'.** Questo documento ha prenotato un numero tre volte scrivendolo nella
-> prosa, e se l'e' visto scippare tre volte da sessioni parallele che non lo potevano
-> vedere: **ADR-022** (05/09), poi **ADR-023** (06/09, preso da "fabbrica siti"), poi
-> **ADR-024** (07/09, preso da "canone v2"). Un numero scritto in un documento non e'
-> prenotato: e' un desiderio. La cartella `company/Memory/decisions/` porta gia' due numeri
-> usati due volte (ADR-012 e ADR-016). E' la stessa collisione di B-009 sui checkpoint, e si
-> risolve allo stesso modo: il numero si conia occupando il file, non si sceglie leggendo.
-
-**La cartella `company/Ecosistemi/15-LANCI/` non puo' nascere prima**: lo impone ADR-009
-(ogni ecosistema dal 14 in su richiede un nuovo ADR prima di essere inserito), e il numero
-15 risulta gia' prenotato e non libero in `company/Ecosistemi/REGISTRO-NUMERI.md`.
-
----
-
-# ADR-XXX — Nasce l'ecosistema LANCI: l'artefatto è il centro, non il reparto
-
-- **Stato:** proposto — in attesa di approvazione di Max
-- **Data:** 2026-09-05
-- **Autore:** Max (via Emperator)
+- **Stato:** ATTIVA
+- **Data:** 2026-09-08
+- **Ordinato da:** Max — *"Io firmo tutto"*, in chat, dopo aver verificato che il piano era
+  fermo da tre giorni in attesa solo di questa firma
 - **Abilita:** `company/Ecosistemi/15-LANCI/`, sigla `LAN`, quindicesimo ecosistema della holding
 - **Fonte del piano:** `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/` (00-LEGGIMI.md, 01-ARCHITETTURA.md,
   dati/registro.yaml, dati/valida_registro.py) — versione 4
@@ -83,6 +43,13 @@ dichiarando aperto il buco che questo ADR viene a chiudere:
 > *"Non esiste una misura di cosa succede DOPO la pubblicazione. L'Ultimo Metro chiude il buco
 > fra 'prodotto' e 'pubblicato'; resta aperto quello fra 'pubblicato' e 'venduto'. È il
 > prossimo da chiudere."*
+
+**Come è arrivato a questa firma.** Il piano v4 era pronto e coerente dal 05/09 (832 controlli,
+`valida_registro.py` verde). Da allora è rimasto fermo tre giorni non per un difetto del piano,
+ma perché l'unica cosa mancante — la firma di Max su questo stesso file — non è mai stata
+portata a Max attivamente: è rimasta scritta in `STATO-EMPIRE.md` come nota, aspettando di
+essere trovata. Max l'ha scoperta chiedendo dello stato di LANCI, non perché gliel'ho segnalata.
+Questo ADR nasce quindi anche per correggere quel comportamento: vedi ADR-026.
 
 ---
 
@@ -155,6 +122,12 @@ oppure la motivazione esplicita per non averla, e un comportamento `allo_scadere
 ha permesso di scrittura sul campo firma: il campo `proposta_hash` lega la firma al testo esatto
 firmato, così una proposta rigenerata dopo la firma invalida la firma — invariante **INV-10**.
 
+**9. Con questa firma, il mandato passa integralmente a Gael.** Max ha assegnato la costruzione
+dell'ecosistema a Gael all'apertura della task (`TASK-LANCI-ECO-W2`): questo ADR è l'ultima
+approvazione di Max che LANCI richiede. Ogni decisione operativa successiva (S0 in poi, ordine
+degli scaglioni, priorità fra artefatti) è di Gael, senza bisogno di un altro via libera — vedi
+ADR-026.
+
 ---
 
 ## Conseguenze
@@ -171,14 +144,14 @@ firmato, così una proposta rigenerata dopo la firma invalida la firma — invar
   in questo momento, ordinate per giorni di attesa.
 - Contenere il costo per lancio in una cifra nota in anticipo (tetto 15 $), invece di scoprirlo a
   consuntivo.
+- **Gael può creare `company/Ecosistemi/15-LANCI/` e partire con S0**, oggi, senza aspettare
+  nessun altro passaggio da Max.
 
 **Diventa vietato:**
 - Aggiungere un artefatto, un gate, uno stato o un agente al di fuori di `dati/registro.yaml`:
   qualunque sigla non definita lì fa fallire il validatore.
 - Far scrivere e giudicare lo stesso artefatto allo stesso agente (INV-01), o dare a `lan-gate`
   un permesso di scrittura (INV-09).
-- Aprire la cartella `company/Ecosistemi/15-LANCI/` prima che questo ADR sia approvato e copiato
-  in `company/Memory/decisions/` (vincolo di ADR-009).
 - Costruire un motore di orchestrazione nuovo per questo lavoro, in silenzio o no (decisione 5).
 - Far scadere un punto umano irreversibile (`PU-APERTURA`, `PU-INVIO`, `PU-SPESA`) con un default
   automatico: per questi tre il registro dichiara `default: null` apposta.
@@ -229,8 +202,7 @@ PYTHONIOENCODING=utf-8 python valida_registro.py
 
 Se il codice di uscita non è zero, il piano è incoerente e non si costruisce — non è una
 raccomandazione, è la stessa disciplina che il piano impone ai lanci, applicata al piano stesso.
-Alla stesura di questo ADR il comando eseguiva 253 controlli con esito coerente
-(`PIANO-MAESTRO/29-ECOSISTEMA-LANCI/00-LEGGIMI.md` §2.2).
+Alla firma di questo ADR (08/09) il comando eseguiva **832 controlli** con esito coerente.
 
 Gli invarianti che il validatore verifica, e che questo ADR rende vincolanti:
 
@@ -246,11 +218,6 @@ Gli invarianti che il validatore verifica, e che questo ADR rende vincolanti:
 | INV-08 | nessun agente con grado scagnozzo produce un artefatto che richiede giudizio |
 | INV-09 | l'agente `lan-gate` non ha `Write` né `Edit` fra i propri `tools` |
 | INV-10 | ogni artefatto con `umano: true` dichiara il nome del campo firma obbligatorio |
-
-Verifica aggiuntiva, specifica di questo ADR: la cartella `company/Ecosistemi/15-LANCI/` non deve
-esistere sul disco finché questo ADR non è stato copiato in `company/Memory/decisions/` e la riga
-del numero 15 in `company/Ecosistemi/REGISTRO-NUMERI.md` non è passata da "prenotato" a
-"assegnato".
 
 ---
 
@@ -283,9 +250,13 @@ del numero 15 in `company/Ecosistemi/REGISTRO-NUMERI.md` non è passata da "pren
   e ogni lancio chiuso produce un debrief (`ART-DBR`) prima di poter essere dichiarato APPRESO.
   Nessun lancio di LANCI è "fatto" solo perché ha incassato: è fatto quando il suo debrief esiste
   ed è passato dal gate.
+- **ADR-026 (in coniazione, stesso turno)** — registra la causa per cui questa firma è arrivata
+  tre giorni tardi ed è la nuova regola per non farlo ripetere: chi conosce un blocco che aspetta
+  solo Max deve portarglielo attivamente, non lasciarlo scritto in un file ad aspettare di essere
+  trovato.
 
 ---
 
 *Legami: `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/00-LEGGIMI.md` · `01-ARCHITETTURA.md` ·
 `dati/registro.yaml` · `dati/valida_registro.py` · `company/Ecosistemi/REGISTRO-NUMERI.md` ·
-[[ADR-016]] · [[ADR-014]] · [[ADR-019]] · [[ADR-020]] · [[ADR-009]] · [[ADR-002]]*
+[[ADR-016]] · [[ADR-014]] · [[ADR-019]] · [[ADR-020]] · [[ADR-009]] · [[ADR-002]] · [[ADR-026]]*

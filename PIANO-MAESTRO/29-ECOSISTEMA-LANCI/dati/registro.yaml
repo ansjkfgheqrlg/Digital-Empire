@@ -32,8 +32,8 @@ ecosistema:
   nome: "LANCI"
   cartella: "company/Ecosistemi/15-LANCI"
   registrato_in: "company/Ecosistemi/REGISTRO-NUMERI.md"
-  adr_abilitante: "da coniare alla firma (python scripts/adr.py conia --slug ecosistema-lanci)"
-  stato_adr: "da_registrare_prima_della_cartella"
+  adr_abilitante: "company/Memory/decisions/ADR-025-ecosistema-lanci.md"
+  stato_adr: "ATTIVA — firmato da Max 08/09/2026"
 
 # -----------------------------------------------------------------------------
 # 1. IL MANDATO — dove sta questo ecosistema nella catena degli organi

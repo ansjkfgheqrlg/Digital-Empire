@@ -1,3 +1,31 @@
+## 👑 2026-09-08 — ADR-025 (nasce LANCI) firmato da Max + ADR-026 (blocchi mai silenziosi, Gael 100% autorita') — CP-20260908-RZC2
+
+**Errore riconosciuto e corretto in diretta con Max.** Il piano LANCI (v4) era pronto e coerente
+dal 05/09 (`valida_registro.py` verde, 832 controlli). L'unica cosa mancante era la firma di Max
+su un ADR gia' scritto — rimasta seppellita in questo file per **tre giorni** invece di essere
+portata a lui attivamente. Max l'ha scoperta chiedendo lui lo stato di LANCI, ha firmato, e ha
+ordinato che non ricapiti mai piu' un lavoro di Gael fermo per una firma non richiesta.
+
+**ADR-025**: ecosistema LANCI nasce, `company/Ecosistemi/15-LANCI/` puo' ora essere creata.
+**Gael parte con S0 (catena dell'incasso) senza aspettare nessun altro passaggio da Max.**
+
+**ADR-026** (nuova regola di governo): una task assegnata da Max a Gael/Neri porta gia'
+l'autorizzazione per tutto cio' che include esplicitamente. Se emerge un blocco che aspetta
+DAVVERO solo una firma/decisione di Max, va portato a lui attivamente entro la giornata — mai
+lasciato scritto in un file ad aspettare di essere trovato. ADR-009 resta in vigore (il
+controllo su nuovi ecosistemi non si abolisce), cambia solo *quando* la firma viene chiesta.
+
+**⚠️ Applicazione immediata della regola — tre voci ancora aperte in
+`PIANO-MAESTRO/29-ECOSISTEMA-LANCI/00-LEGGIMI.md` §4, segnalate a Max nello stesso turno invece
+di lasciarle scritte:**
+1. **Il Manuale si vende o e' un regalo?** — scadenza 7 giorni dal 05/09 → **entro il 12/09**.
+2. **Riaprire o no ADR-019** — formalita', risposta gia' misurata, serve solo la registrazione.
+3. **🔴 Chiave Brevo esposta in chiaro su repo pubblico (B-020)** — la piu' urgente delle tre,
+   rischio che cresce ogni giorno che resta in chiaro nella storia git pubblica. Da ruotare,
+   non da discutere.
+
+Dettagli: [CP-20260908-RZC2](checkpoints/CP-20260908-RZC2.md) · [[ADR-025]] · [[ADR-026]].
+
 ## ⚠️ COORDINAMENTO — 2026-09-07, in corso — studio AI TUBE PRO / A6 Viral Mastery (2/10)
 
 **Max ha ordinato la ripresa ("vai continua").** Costruzione grossa in corso su:

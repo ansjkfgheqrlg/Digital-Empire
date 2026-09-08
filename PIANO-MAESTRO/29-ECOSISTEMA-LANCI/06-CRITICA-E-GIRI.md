@@ -1,6 +1,6 @@
 ---
 Type: PROJECT
-Status: Proposta — versione 4, in attesa di ok Max
+Status: Attivo — versione 4, ADR-025 firmato da Max 08/09/2026
 Tags: #lanci #ecosistema-15 #critica #TASK-LANCI-ECO-W2 #piano-di-costruzione
 Created: 2026-09-05
 Last updated: 2026-09-05
