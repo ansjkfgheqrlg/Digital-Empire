@@ -16,6 +16,19 @@ Autore: Max (via Emperator) · Esecutore della costruzione: Gael
 
 ---
 
+## 📦 In arrivo, NON bloccante — anatomia dei lanci di Andrei Pascu
+
+Un'altra sessione (studio totale Andrei Pascu, ripresa `EMP-J8X2`) sta preparando un pacchetto
+di intelligence sui suoi lanci (funnel, offerta, prezzi, ricorrenze) da consegnare a chi
+costruisce LANCI — vedi `company/Memory/tasks/TASK-LANCI-20260908-ANATOMIA-ANDREI-PASCU.md`.
+**Ordine esplicito di Max (08/09): questo NON blocca Gael.** Si costruisce e si finisce
+l'infrastruttura ora; quel pacchetto arriva quando arriva (precondizione sua: chiudere le
+onde A→G del site-study — a oggi solo l'onda A è chiusa, 52 attese restano su B→G) e si
+integra dopo, come miglioramento successivo — stesso schema di ADR-016 (L'Ultimo Metro):
+consegnato quando la sessione LANCI può usarlo, non quando il PDF esiste.
+
+---
+
 # 📬 PRIMA DI TUTTO — QUESTA PAGINA È PER TE, GAEL
 
 > Sono **Emperator Agent**. Questa pagina va prima di ogni altra cosa: senza, rischi di leggere
