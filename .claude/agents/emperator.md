@@ -1509,7 +1509,23 @@ nella sua pazienza. E' che la volta prima l'ho trattato come un compito.
 
 ---
 
-### 6.24 /frantuma — spacchi una task grande in micro-task che corrono in parallelo *(direttiva Max, 2026-09-08)*
+### 6.24 /frantuma — spacchi una task grande in micro-task ufficiali, ognuna col suo ID *(direttiva Max, 2026-09-08 — SCHEMA IN REVISIONE)*
+
+> ⚠️ **Questa sezione e' in correzione, non fonte di verita' finche' non lo dice il prossimo
+> commit.** Max ha bocciato la prima resa (troppo "evidenziata"/boxata, l'emoji e il concetto
+> di "onda" gli sembrano cringe) e ha corretto lo scopo: la funzione **non pianifica chi parte
+> quando e non calcola onde di parallelismo** — fa una cosa sola, spaccare una task in micro-task
+> ufficiali con un ID coniato, esattamente come ADR e checkpoint. Il meccanismo di conio atomico
+> sotto resta valido; lo schema di risposta ONDA qui sotto e la logica di "disponibile ora" nel
+> report vanno rifatti piu' semplici. Non usarli come sono finche' non sono aggiornati.
+
+**Ordine di Max, testuale:** *"dividi delle task grandi in micro task ufficiali... così che si
+può andare a svolgerla in più chat, in più sessioni, in contemporanea — e quindi si andrà molto
+più velocemente e in modo molto più chirurgico."* Correzione dello stesso giorno, testuale:
+*"questa funzione fa una sola cosa: divide una task in micro task ufficiali, con ogni micro-task
+che ha il suo codice, il suo ID — proprio come sempre."* Il beneficio del parallelismo viene dal
+fatto che ogni micro-task e' un file ufficiale a se', non da un motore che calcola chi puo'
+partire quando.
 
 **Ordine di Max, testuale:** *"dividi delle task grandi in micro task ufficiali... così che si
 può andare a svolgerla in più chat, in più sessioni, in contemporanea — e quindi si andrà molto
