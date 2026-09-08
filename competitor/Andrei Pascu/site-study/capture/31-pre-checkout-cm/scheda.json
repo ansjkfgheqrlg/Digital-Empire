@@ -1,0 +1,503 @@
+{
+ "url": "https://www.andrei-copy.com/pre-checkout-cm",
+ "slug": "31-pre-checkout-cm",
+ "catturata": "2026-09-08",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "Pre-checkout - CM — AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 2062,
+ "larghezza": 1440,
+ "altezza_mobile": 1985,
+ "body_bg": "transparent",
+ "body_font": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+ "palette_testo": [
+  [
+   "#fafafa",
+   14
+  ],
+  [
+   "#e0e0e0",
+   7
+  ],
+  [
+   "#000000",
+   7
+  ],
+  [
+   "#ebe9e0",
+   2
+  ],
+  [
+   "#ffffff",
+   1
+  ],
+  [
+   "#888888",
+   1
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#efab00",
+   7
+  ],
+  [
+   "#1b1b1d",
+   5
+  ],
+  [
+   "#0062ff",
+   4
+  ],
+  [
+   "#efab00 @0.08",
+   1
+  ],
+  [
+   "#efab00 @0.1",
+   1
+  ],
+  [
+   "#fafafa",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "elza-8u3n84",
+   27
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   3
+  ],
+  [
+   "Poppins",
+   1
+  ],
+  [
+   "\"DM Sans\"",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   7
+  ],
+  [
+   "15.2px / lh 28.8px / w300",
+   7
+  ],
+  [
+   "12.8px / lh 28.8px / w600",
+   7
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "33.3px / lh 33.3px / w700",
+   1
+  ],
+  [
+   "40px / lh 28.8px / w700",
+   1
+  ],
+  [
+   "14.4px / lh 28.8px / w400",
+   1
+  ],
+  [
+   "16px / lh normal / w600",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "300",
+   17
+  ],
+  [
+   "600",
+   8
+  ],
+  [
+   "700",
+   4
+  ],
+  [
+   "400",
+   2
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "50%",
+   7
+  ],
+  [
+   "10px",
+   2
+  ],
+  [
+   "20px",
+   1
+  ],
+  [
+   "12px",
+   1
+  ],
+  [
+   "8px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    174
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.1s linear",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "0.3s",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "pulse 2s ease",
+    1
+   ]
+  ],
+  "filtri": [
+   [
+    "backdrop: blur(20px)",
+    1
+   ]
+  ],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    7
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(1.00754, 0, 0, 1.00754, 0, 0)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 241,
+   "text": "Copywriting Mentorship"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 158,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 166,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Entra in CM",
+   "href": null,
+   "y": 1210,
+   "x": 653,
+   "w": 133,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 1549,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 1618,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 151,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 151,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b87e320f-3648-4804-9479-8969581691fd/Grainy+yellow%2Fblack+CM+texture.jpg",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 1358
+  },
+  {
+   "tag": "img",
+   "src": "https://i.imgur.com/flMdhZW.png",
+   "alt": "CM Logo",
+   "y": 429,
+   "x": 624,
+   "w": 191,
+   "h": 43
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 1375,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 1433,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1485,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1485,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1485,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1485,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 48,
+ "meta": {
+  "description": null,
+  "og_title": "Pre-checkout - CM — AP Formazione",
+  "og_image": null,
+  "canonical": "https://www.andrei-copy.com/pre-checkout-cm",
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 1358,
+   "prof": 2,
+   "tag": "main",
+   "id": "page",
+   "classi": "container",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Stai acquistando",
+   "headings": [
+    "Stai acquistando",
+    "Copywriting Mentorship",
+    "Questa versione del corso contiene:"
+   ],
+   "blocchi_testo": 20,
+   "parole": 53,
+   "densita": 4,
+   "media": 2,
+   "cta": 1,
+   "firma": "main|container|1|M|C|7",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-stai-acquistando.png"
+  },
+  {
+   "i": 2,
+   "y": 1358,
+   "h": 705,
+   "prof": 2,
+   "tag": "footer",
+   "id": "footer-sections",
+   "classi": "sections",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 24,
+   "parole": 99,
+   "densita": 14,
+   "media": 7,
+   "cta": 2,
+   "firma": "footer|sections|1|M|C|4",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-footer.png"
+  }
+ ],
+ "sezioni_totali": 2,
+ "sezioni_distinte": 2,
+ "src": [],
+ "segmentazione": "ok"
+}
