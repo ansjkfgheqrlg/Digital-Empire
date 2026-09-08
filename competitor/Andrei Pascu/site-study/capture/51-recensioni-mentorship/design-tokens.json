@@ -1,0 +1,708 @@
+{
+ "title": "Recensioni Copywriting Mentorship — AP Formazione",
+ "meta_description": null,
+ "og_title": "Recensioni Copywriting Mentorship — AP Formazione",
+ "og_image": null,
+ "canonical": "https://www.andrei-copy.com/recensioni-copywriting-mentorship",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
+ "lang": "it-IT",
+ "page_height": 6326,
+ "page_width": 1440,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_text": [
+  [
+   "#fafafa",
+   12
+  ],
+  [
+   "#ebe9e0",
+   2
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#1b1b1d",
+   7
+  ],
+  [
+   "#0062ff",
+   3
+  ],
+  [
+   "#a8a8a8",
+   1
+  ],
+  [
+   "#fafafa",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "elza-8u3n84",
+   11
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   2
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 28.8px / w300",
+   7
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   1
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "300",
+   10
+  ],
+  [
+   "700",
+   2
+  ],
+  [
+   "400",
+   1
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "10px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    482
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.1s linear",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    49
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ]
+  ]
+ },
+ "headings": [
+  {
+   "tag": "h2",
+   "y": 259,
+   "text": "Alcune recensioni di Copywriting Mentorship."
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 3363,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 3371,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 5813,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 5882,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 3356,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 3356,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/bb081631-5df2-4c95-8659-e3cbd60ebe45/nick-night-1wfTFsTM_ag-unsplash.jpg",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 594
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/d561baa0-6344-48df-8e4e-5e2894ef45a2/1.png",
+   "alt": "",
+   "y": 734,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e69155f1-519a-4398-a1d2-fc2393434382/2.png",
+   "alt": "",
+   "y": 734,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/704e3c74-271a-435c-8c43-9f6c3fc46791/3.png",
+   "alt": "",
+   "y": 932,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/75fb43dd-332b-426b-8977-13a3d823d153/4.png",
+   "alt": "",
+   "y": 960,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/837fc7f8-6729-4848-bea7-20817deac71a/5.png",
+   "alt": "",
+   "y": 1157,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/73d541b8-5406-45b5-984e-0f7dc105a1ff/6.png",
+   "alt": "",
+   "y": 1185,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e04d6df9-300c-4b11-901d-f9e90f95680b/7.png",
+   "alt": "",
+   "y": 1354,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1e79174f-861c-4eb7-a8d7-8299d14b7712/8.png",
+   "alt": "",
+   "y": 1439,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/92613be3-b261-459e-82c0-957e0abf075e/10.png",
+   "alt": "",
+   "y": 1628,
+   "x": 523,
+   "w": 394,
+   "h": 197
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/3f0b2ff9-4434-46b8-a27e-e1d11594c5de/11.png",
+   "alt": "",
+   "y": 1862,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b5e4f8b6-d3fb-462d-b259-50484015ca05/12.png",
+   "alt": "",
+   "y": 1918,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7163b21e-b31a-4ea0-95f6-0bd74b7bb1c6/13.png",
+   "alt": "",
+   "y": 2115,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e98c86b4-20c7-432f-92f1-a6d597b64604/14.png",
+   "alt": "",
+   "y": 2144,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2e330948-e96f-43e7-a3b9-e12c9a4a2981/15.png",
+   "alt": "",
+   "y": 2313,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/7b131ab0-0e11-43ef-9939-e596a5ffc725/16.png",
+   "alt": "",
+   "y": 2341,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/ecefcb5f-7e93-4ac3-ab70-e2271678a770/34.png",
+   "alt": "",
+   "y": 4201,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a381cb14-dd31-447f-863b-82848b99cea0/35.png",
+   "alt": "",
+   "y": 4427,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/de797041-e2cd-4c01-9c53-bf680654c0a7/31.png",
+   "alt": "",
+   "y": 3976,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/fb2b2d81-9e6b-48a7-94a4-6373377d1629/32.png",
+   "alt": "",
+   "y": 4004,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/25315695-5401-45c2-8fc8-fb2c8770e826/17.png",
+   "alt": "",
+   "y": 2454,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2472abc1-712a-4b1d-8fef-429ccfc2d108/29.png",
+   "alt": "",
+   "y": 3750,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/64aae3a2-0d16-4591-9144-acd3e36dc257/33.png",
+   "alt": "",
+   "y": 4173,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4dd88cbc-8749-40c1-a0b3-19a59d679b96/27.png",
+   "alt": "",
+   "y": 3525,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/e29d6d9d-9631-423c-aabf-6600208c5d46/20.png",
+   "alt": "",
+   "y": 2595,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1db0cfb1-f407-428c-ae13-8e9648d29142/25.png",
+   "alt": "",
+   "y": 3299,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c54d9be7-51ea-4e09-8fba-207e5830667b/24.png",
+   "alt": "",
+   "y": 3046,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/409ccc7c-96e9-4684-b70d-8abea442a6d2/21.png",
+   "alt": "",
+   "y": 2820,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/857f870e-aecf-430a-b89b-9539ef664ebc/26.png",
+   "alt": "",
+   "y": 3299,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/12887de4-6745-4bad-bbad-734fda9ebe95/19.png",
+   "alt": "",
+   "y": 2623,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/bcb533ce-827a-4e3b-85f3-17e1b25dd876/28.png",
+   "alt": "",
+   "y": 3497,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/86700606-ae2d-4329-b87f-0861ce35dfb8/23.png",
+   "alt": "",
+   "y": 3074,
+   "x": 354,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/fb30812c-676d-4973-8eca-8a6c08bb07ce/22.png",
+   "alt": "",
+   "y": 2792,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/03869ca5-4aa8-4a65-8cd8-438a1d5148ca/30.png",
+   "alt": "",
+   "y": 3750,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6267e439-463f-4d6b-ae72-82780d554c33/36.png",
+   "alt": "",
+   "y": 4410,
+   "x": 354,
+   "w": 361,
+   "h": 186
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/edc062dc-ab2c-4b9c-ab4b-b568f1956460/37.png",
+   "alt": "",
+   "y": 4663,
+   "x": 726,
+   "w": 361,
+   "h": 186
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b6fa67bb-3a39-457d-96fa-930b2799af11/38.png",
+   "alt": "",
+   "y": 4551,
+   "x": 354,
+   "w": 361,
+   "h": 215
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c96f189a-eb82-4c22-a265-c5fa06c5309f/39.png",
+   "alt": "",
+   "y": 4850,
+   "x": 726,
+   "w": 361,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/387add90-18ba-4348-9300-728f0c5fdffc/40.png",
+   "alt": "",
+   "y": 4776,
+   "x": 354,
+   "w": 361,
+   "h": 186
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a44dd4a1-f9aa-4c50-96a6-cef24e1e83db/41.png",
+   "alt": "",
+   "y": 5058,
+   "x": 726,
+   "w": 361,
+   "h": 215
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2551a906-978f-4211-85ca-6bba8d61880a/42.png",
+   "alt": "",
+   "y": 5002,
+   "x": 354,
+   "w": 361,
+   "h": 186
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c898f297-dca2-41d9-9388-b4e73ffcd59f/43.png",
+   "alt": "",
+   "y": 5312,
+   "x": 726,
+   "w": 361,
+   "h": 215
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/12918007-49f4-4662-b525-9632b31904b4/44.png",
+   "alt": "",
+   "y": 5199,
+   "x": 354,
+   "w": 361,
+   "h": 186
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 5639,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 5697,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5749,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5749,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5749,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5749,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "slices_desktop": 8,
+ "slices_mobile": 11,
+ "mobile_page_height": 8801
+}

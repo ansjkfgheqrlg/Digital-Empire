@@ -1,0 +1,649 @@
+{
+ "title": "La mia storia — AP Formazione",
+ "meta_description": null,
+ "og_title": "La mia storia — AP Formazione",
+ "og_image": null,
+ "canonical": "https://www.andrei-copy.com/story",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
+ "lang": "it-IT",
+ "page_height": 14646,
+ "page_width": 1440,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_text": [
+  [
+   "#fafafa",
+   109
+  ],
+  [
+   "#1b1b1d",
+   63
+  ],
+  [
+   "#ebe9e0",
+   2
+  ],
+  [
+   "#ffffff @0.95",
+   1
+  ],
+  [
+   "#ffffff @0.5",
+   1
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#1b1b1d",
+   21
+  ],
+  [
+   "#ebe9e0",
+   10
+  ],
+  [
+   "#fafafa",
+   8
+  ],
+  [
+   "#0062ff",
+   5
+  ],
+  [
+   "#a8a8a8",
+   1
+  ],
+  [
+   "#181818",
+   1
+  ],
+  [
+   "#ffffff @0.1",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "elza-8u3n84",
+   151
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   23
+  ],
+  [
+   "Poppins",
+   1
+  ],
+  [
+   "\"DM Sans\"",
+   1
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 28.8px / w300",
+   80
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   45
+  ],
+  [
+   "20px / lh 36px / w700",
+   11
+  ],
+  [
+   "20px / lh 36px / w300",
+   9
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   9
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   7
+  ],
+  [
+   "24px / lh 28.224px / w700",
+   6
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   1
+  ],
+  [
+   "15.6px / lh 18.2px / w400",
+   1
+  ],
+  [
+   "13px / lh 18.2px / w400",
+   1
+  ],
+  [
+   "16px / lh normal / w600",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "300",
+   92
+  ],
+  [
+   "700",
+   79
+  ],
+  [
+   "400",
+   3
+  ],
+  [
+   "500",
+   1
+  ],
+  [
+   "600",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "10px",
+   2
+  ],
+  [
+   "5px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    735
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.1s linear",
+    2
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ],
+   [
+    "background-color 0.3s ease-out",
+    1
+   ],
+   [
+    "0.2s ease-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    25
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ],
+   [
+    "matrix(0.999, 0, 0, 0.999, 0, 0)",
+    1
+   ]
+  ]
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 314,
+   "text": "La mia storia."
+  },
+  {
+   "tag": "h3",
+   "y": 933,
+   "text": "Come sono diventato indipendente guadagnando migliaia di euro online."
+  },
+  {
+   "tag": "h3",
+   "y": 1764,
+   "text": "Come tutto è iniziato."
+  },
+  {
+   "tag": "h2",
+   "y": 2561,
+   "text": "Hai presente questo sentimento?"
+  },
+  {
+   "tag": "h2",
+   "y": 3668,
+   "text": "Il mio primo progetto imprenditoriale"
+  },
+  {
+   "tag": "h2",
+   "y": 4913,
+   "text": "Come ho iniziato"
+  },
+  {
+   "tag": "h3",
+   "y": 7258,
+   "text": "“Ca**o… Questa è la mia opportunità”"
+  },
+  {
+   "tag": "h3",
+   "y": 8008,
+   "text": "Il mio obiettivo era chiaro: creare il corso di copy più completo in Italia."
+  },
+  {
+   "tag": "h2",
+   "y": 8887,
+   "text": "Bologna"
+  },
+  {
+   "tag": "h2",
+   "y": 10207,
+   "text": "Per il mio futuro"
+  },
+  {
+   "tag": "h2",
+   "y": 10730,
+   "text": "Perché ho scelto il copywriting"
+  },
+  {
+   "tag": "h2",
+   "y": 11791,
+   "text": "Come iniziare (velocemente)"
+  },
+  {
+   "tag": "h2",
+   "y": 12362,
+   "text": "Vuoi imparare direttamente da me?"
+  },
+  {
+   "tag": "h3",
+   "y": 13605,
+   "text": "Se non sai proprio da dove iniziare, clicca qui e dai un’occhiata👇"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 11444,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 11452,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "Sì, voglio avviare una carriera online",
+   "href": "/copy-base",
+   "y": 13767,
+   "x": 561,
+   "w": 318,
+   "h": 53,
+   "bg": "#fafafa",
+   "color": "#1b1b1d",
+   "radius": "10px",
+   "border": "0px solid rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 14133,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 14202,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 11437,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 11437,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/9b5c2519-d73b-440d-9daa-b5beea10e00d/andrei+guarda+bologna+da+aemilia+top+mentre+svapa.JPG",
+   "alt": "",
+   "y": 0,
+   "x": 0,
+   "w": 1440,
+   "h": 564
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1612818279794-DBWX60CEKS7G3K44KIGR/Andrei+Giovanotto.gif",
+   "alt": "",
+   "y": 2172,
+   "x": 420,
+   "w": 233,
+   "h": 233
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1635572436836-ZOEN9LOI2085TXHWG6S7/Baird+Logo.png",
+   "alt": "",
+   "y": 3287,
+   "x": 420,
+   "w": 233,
+   "h": 233
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4488,
+   "x": 657,
+   "w": 146,
+   "h": 30
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/8d4a0e93-b8a5-44d9-a8d9-c0592060cac2/image00001.jpeg",
+   "alt": "",
+   "y": 5560,
+   "x": 420,
+   "w": 567,
+   "h": 309
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/20d53dc7-fb0e-487a-914e-51843dd09d73/l.png",
+   "alt": "",
+   "y": 6620,
+   "x": 587,
+   "w": 267,
+   "h": 76
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6742,
+   "x": 715,
+   "w": 232,
+   "h": 24
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/68d496a1-e44c-48f4-9ff2-f7e2857d3594/Clienti+risultati+June+15+Screenshot.png",
+   "alt": "",
+   "y": 7383,
+   "x": 687,
+   "w": 267,
+   "h": 78
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/710b189d-9b83-4562-bdeb-f888e0364cf9/Chiusi+10K.jpg",
+   "alt": "",
+   "y": 7362,
+   "x": 436,
+   "w": 201,
+   "h": 120
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/632161de-9576-4ad6-baac-57e573d455a2/MAD07171.jpg",
+   "alt": "",
+   "y": 8211,
+   "x": 753,
+   "w": 267,
+   "h": 189
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1635572657948-4KN869DM2AS60XI3FQBI/IMG_20210815_002728.jpg",
+   "alt": "",
+   "y": 8975,
+   "x": 787,
+   "w": 233,
+   "h": 189
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1617112354149-VE9HNG0W5NP77IMXKNR7/Untitled+design.png",
+   "alt": "Untitled design.png",
+   "y": 9422,
+   "x": 420,
+   "w": 267,
+   "h": 155
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1618623790947-UKJHFWMMWQYIZE25OPF7/WhatsApp%2BImage%2B2021-04-17%2Bat%2B03.36.27.jpg",
+   "alt": "WhatsApp+Image+2021-04-17+at+03.36.27.jpg",
+   "y": 9594,
+   "x": 420,
+   "w": 267,
+   "h": 155
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1618624191919-W5QSO5BQ8IM48IZ16WI5/ezgif.com-gif-maker+%283%29.gif",
+   "alt": "ezgif.com-gif-maker (3).gif",
+   "y": 9594,
+   "x": 753,
+   "w": 267,
+   "h": 155
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1617111958418-XRE3N6OWDR1F01LKCQ9J/Sunset+and+moody+lifestyle.gif",
+   "alt": "Sunset and moody lifestyle.gif",
+   "y": 9422,
+   "x": 753,
+   "w": 267,
+   "h": 155
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1625641025251-76I64I5REYC9X8QPUU58/G0040336.JPG",
+   "alt": "G0040336.JPG",
+   "y": 9891,
+   "x": 753,
+   "w": 267,
+   "h": 172
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1625640883851-UC36WFJTA44XXYESU82W/P1040859-min.png",
+   "alt": "P1040859-min.png",
+   "y": 11386,
+   "x": 420,
+   "w": 600,
+   "h": 258
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1635573358393-SAOEFYIKHQAI8AM9MJRZ/Screenshot_20211028-184007_Instagram.jpg",
+   "alt": "",
+   "y": 12502,
+   "x": 753,
+   "w": 267,
+   "h": 447
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 13958,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 14017,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14069,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14069,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14069,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14069,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "slices_desktop": 17,
+ "slices_mobile": 21,
+ "mobile_page_height": 17455
+}
