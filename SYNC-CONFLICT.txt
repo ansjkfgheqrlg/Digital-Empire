@@ -1,7 +1,7 @@
-[2026-09-09 19:59:04] CONFLITTO DI SYNC
+[2026-09-09 20:00:56] CONFLITTO DI SYNC
 Rebase pre-push fallito:
 
-Created autostash: 3f2b53f0
+
 Il tuo lavoro e' al sicuro (committato in locale).
 Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
 Poi cancella questo file.
