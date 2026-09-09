@@ -1,3 +1,20 @@
+## 📚 2026-09-09 sera — max18 quasi chiuso: v09 100%, atomi 6/6, mancano 5 wiki page — CP-20260909-2CWF
+
+**Codice di ripresa: EMP-W4K7 (APERTA).** Checkpoint di passaggio-chat (contesto saturo,
+ordine di Max). `v09` chiuso **494/494** (era 189/494 a inizio sessione). **Atomi 6/6 sul
+lotto** (987 totali): `v04` 78, `v05` 72, `v06` 228, `v07` 57, `v08` 229, `v09` 323. Grafo
+saldato dove serviva: `v09` da 83 isole/37 orfani a **5/0**, `v08` da 87/56 a **18/1**
+(confermato finito). ⭐ **Corretto un mio errore**: i checkpoint precedenti dicevano "wiki
++ archivio zero su sei" — falso, **`v07` era gia' chiuso dal 2026-09-06**. Vero conto:
+**1/6 fatto, 5/6 mancanti** (v04, v05, v06, v08, v09 hanno solo l'archivio meccanico, non
+la pagina wiki). Trovato e registrato **B-061** (bug id-collision in `unisci_atomi.py`).
+Sync reale risolto (2 dietro/5 avanti, rebase pulito, lavoro di un'altra sessione su
+`verifica_recap.py`/`gate_battito_hook.py` protetto e restituito intatto, mai firmato da
+me). **RIPRESA DA:** rigenerare i due manifest di v08/v09, scrivere le 5 pagine wiki
+mancanti (stesso rigore di `Source_Giovanni_Beggiato_LinkedIn_Generare_Clienti.md`), poi
+`max17` (fermo a 9/17), poi Fase 2 solo su ordine di Max. Dettagli:
+[CP-20260909-2CWF](checkpoints/CP-20260909-2CWF.md).
+
 ## 🟣 2026-09-09 — RIPRESA: battito settimo giro, il fence e' bocciato (era il 6º giro) — CP-20260909-VEVW
 
 **RIPRESA DA:** mandare a Max un battito di prova nella forma nuova e aspettare la sua
