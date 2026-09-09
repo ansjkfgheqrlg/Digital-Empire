@@ -1,4 +1,4 @@
-# EMP-V6DE — Studio corso AI TUBE PRO: 167 lezioni → regole dentro la fabbrica YouTube
+# EMP-V6DE — Studio corso AI TUBE PRO: 167 lezioni → fabbrica YouTube migliorata in tutto
 
 - **Codice di ripresa:** `EMP-V6DE`
 - **Aperto:** 2026-09-04
@@ -10,9 +10,43 @@
 ## 1. IL LAVORO IN UNA FRASE
 
 Studiare **167 lezioni** (AI TUBE PRO 116 + Bonus Esclusivi 51, portale
-`corsi.muccarossa.com`, autore Mirko Delfino) e trasformare ogni lezione in **regole
-eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max il
+`corsi.muccarossa.com`, autore Mirko Delfino) e usarle per **migliorare la
+`YOUTUBE-AUTOMATION-FACTORY` in tutto cio' che serve**. Piano approvato da Max il
 2026-09-04: [PIANO-STUDIO-AITUBEPRO](../plans/PIANO-STUDIO-AITUBEPRO.md).
+
+## ⚠️ MANDATO CORRETTO DA MAX — 2026-09-10. Vale sopra ogni riga precedente di questo file.
+
+**Ordine testuale di Max:** *"non solo delle regole, ma proprio delle vere implementazioni...
+sulla base dello studio e di tutto il corso deve migliorare il workflow tutto — non soltanto
+mettere delle regole, anche fare agenti se servono, skill, flussi, miglioramento dei flussi,
+miglioramento di funzionalita' o funzioni, script, Python, tutto: miglioramento generale di
+tutto il workflow YOUTUBE AUTOMATION FACTORY."*
+
+**Perche' l'ordine e' arrivato — il numero che lo ha fatto scattare:** al 2026-09-10 il registro
+contava **69 regole, di cui 64 su file `.md` e 5 sul codice; zero agenti nuovi, zero skill nuove,
+zero script nuovi, zero flussi ridisegnati.** Lo studio stava producendo documentazione, non
+fabbrica.
+
+**Causa strutturale, gia' rimossa:** `regole/schema.py` ammetteva solo
+`TIPI = parametro|procedura|vincolo|euristica|strumento` e
+`AZIONI = modifica|nuovo|conferma|scarta`. Non esisteva la casella per «qui manca un agente»,
+«qui serve uno script», «questo flusso va rifatto»: chi studiava poteva solo chiedersi *quale
+documento cambio*. Il contratto ora ammette anche `agente|skill|flusso|script|funzione` come
+tipi e `costruisci|ridisegna` come azioni, e pretende che un tipo costruttivo dichiari quale
+file NASCE. Le 69 regole vecchie restano valide (verificato: 69/69 a norma).
+
+**La domanda che ogni lezione deve ricevere da adesso, tutte e sei:**
+1. Cambia un parametro o una procedura? *(era l'unica che facevamo)*
+2. **Ci manca un agente** che questa lezione dimostra necessario?
+3. **Ci manca una skill** o un comando?
+4. **Un flusso va ridisegnato**, non ritoccato?
+5. **Serve codice** — script nuovo, funzione nuova, funzione esistente da rifare?
+6. Contraddice qualcosa che facciamo? → `CONFLITTI.md`
+
+**Debito aperto da questo cambio:** le **21 lezioni di A4 gia' chiuse** sono state lette con
+il contratto vecchio, quindi le domande 2-5 non gliele ha mai poste nessuno. Vanno **ripassate
+all'indietro** sui report e sugli appunti gia' su disco — **senza riguardare i video**, il
+materiale c'e' tutto. E' il primo lavoro alla ripresa.
 
 ---
 

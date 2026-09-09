@@ -26,9 +26,19 @@ CAMPI_OBBLIGATORI = (
     "misura",    # come si vede se ha funzionato: senza, non e' verificabile
 )
 
-TIPI = ("parametro", "procedura", "vincolo", "euristica", "strumento")
+# I primi cinque tipi sono quelli originari: cambiano cio' che gia' esiste.
+# Gli ultimi cinque sono stati aggiunti il 2026-09-10 su ordine di Max, perche' lo studio
+# stava producendo SOLO regole documentali (64 su 69) e zero costruzione: nessun agente
+# nuovo, nessuna skill, nessuno script, nessun flusso ridisegnato. Una lezione che ci dice
+# "vi manca un pezzo di fabbrica" non aveva dove essere scritta, e finiva schiacciata in
+# una modifica a un .md. Il mandato non e' "estrarre regole": e' MIGLIORARE LA FABBRICA
+# con tutto cio' che serve.
+TIPI = ("parametro", "procedura", "vincolo", "euristica", "strumento",
+        "agente", "skill", "flusso", "script", "funzione")
 FONTI = ("schermo", "parlato", "entrambi")
-AZIONI = ("modifica", "nuovo", "conferma", "scarta")
+AZIONI = ("modifica", "nuovo", "conferma", "scarta",
+          "costruisci",   # un pezzo di fabbrica che oggi NON esiste (agente/skill/script)
+          "ridisegna")    # un flusso o una funzione che esiste ma va rifatto, non ritoccato
 BINARI = ("A", "B")
 RISCHI = ("basso", "medio", "alto")
 
@@ -71,5 +81,16 @@ def valida(regola, contesto=""):
     if "02-AUTOMAZIONI-E-SCRIPTS" in tocca and regola.get("binario") != "B":
         errori.append("%s: tocca il motore in produzione (%s) ma e' sul binario A. "
                       "Il motore si tocca solo a gate di categoria (ADR-024)." % (contesto, tocca))
+
+    # Un tipo costruttivo deve dire COSA nasce e DOVE: "costruisci" senza destinazione
+    # e' un desiderio, non un lavoro. (aggiunto 2026-09-10)
+    TIPI_COSTRUTTIVI = ("agente", "skill", "flusso", "script", "funzione")
+    if regola.get("tipo") in TIPI_COSTRUTTIVI:
+        if regola.get("azione") not in ("costruisci", "ridisegna", "nuovo"):
+            errori.append("%s: tipo=%s pretende azione 'costruisci'/'ridisegna'/'nuovo', "
+                          "trovato %r" % (contesto, regola.get("tipo"), regola.get("azione")))
+        if tocca in ("", "-"):
+            errori.append("%s: tipo=%s ma 'tocca' e' vuoto: va detto quale file NASCE"
+                          % (contesto, regola.get("tipo")))
 
     return errori
