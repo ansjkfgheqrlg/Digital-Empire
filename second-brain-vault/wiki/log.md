@@ -2252,3 +2252,19 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   di root per errore — trovato il precedente vincolante (`cs2online-001`, "password mai su file
   salvato") e corretto nello stesso turno; sessione autenticata spostata fuori dal repo.
 - Prossimo nel bundle: outHeadline → outEmail → outViral 2.
+
+## 2026-09-09 (EMPERATOR — EMP-W4K7, ripresa da CP-20260909-2CWF: 5 pagine wiki mancanti max18)
+- Rigenerati i manifest `ingest-manifest.json` di v08 (`DI5aWJiFAt8`) e v09 (`NmoOZVTrTXA`) con i
+  numeri di grafo veri ricalcolati sul disco: v08 226 archi/18 componenti/1 orfano (era
+  146/87/56), v09 360 archi/5 componenti/0 orfani (era 273/83/37) — la saldatura del grafo di
+  entrambi era finita ma i manifest portavano ancora i numeri di quando erano isole.
+- Schierati 5 scagnozzi in parallelo (agenti general-purpose) per le 5 pagine wiki mancanti del
+  lotto max18 (v04, v05, v06, v08, v09), a modello di `Source_Giovanni_Beggiato_LinkedIn_Generare_Clienti.md`.
+- INGEST: **Source_Jim_Rohn_Seminario_4_Emozioni.md** creata (v04, 140FuW7b9pk) — 313 righe,
+  78/78 KA citati con ancora+timestamp verificati. Framework delle 4 emozioni
+  (Disgusto→Decisione→Desiderio→Determinazione) + 4 domande di riflessione, seminario motivazionale
+  del canale "Imprenditor Tips" (non un video tech, dichiarato). Gap analysis: nessuna
+  sovrapposizione con materiale DE esistente, solo `pillar-09-mindset.md` di `agency-scalping`
+  tocca lo stesso tema in modo complementare — materiale nuovo per l'Impero. Nuovo header wiki
+  creato: "### Mindset & Sviluppo Personale" (nessuno esistente calzava).
+- v05, v06, v08, v09 ancora in corso presso i rispettivi scagnozzi.
