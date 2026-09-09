@@ -1,3 +1,29 @@
+## 🟣 2026-09-09 sera — ⚠️ COORDINAMENTO: fase implementazione miglioramenti Andrei Pascu (EMP-APIMPL1)
+
+**EMP-APDOC1 chiusa** (CP-20260909-2N8Q): i 4 documenti ufficiali su Andrei Pascu sono completi —
+vedi `competitor/Andrei Pascu/MIGLIORAMENTI-DIGITAL-EMPIRE.md` (33 candidati AP-001..033, stile
+BACKLOG). Max ha dato il via alla fase 2: implementare i miglioramenti proposti nelle skill DE.
+
+**Build in corso ora** (4 agenti paralleli, aree disgiunte, arricchimento additivo — nessuna
+riscrittura, nessun file toccato fuori da questo elenco):
+- `.claude/skills/cro-copy-architect/SKILL.md`
+- `.claude/skills/popups/SKILL.md`, `lead-magnets/SKILL.md`, `ads/SKILL.md`, `ad-creative/SKILL.md`
+- `.claude/skills/emails/SKILL.md`, `cold-email/SKILL.md`
+- `.claude/skills/sales-enablement/SKILL.md`, `discovery-call-brief/SKILL.md`,
+  `proposal-gate/SKILL.md`, `preventivo-auto/SKILL.md`, `revops/SKILL.md`, `beast-preventivi/SKILL.md`
+
+**Non tocca** l'ecosistema LANCI attivo (`PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`) né i gate Fabbrica
+Siti — quei candidati (AP-004, 005, 008, 033) restano dichiarati nel documento per chi lavora là.
+
+Se stai per toccare uno dei file sopra: aspetta la chiusura di questo blocco (il prossimo
+checkpoint CP-20260909-* lo toglie).
+
+**RIPRESA DA:** se questa sessione si ferma a metà, verificare quali file sopra hanno già la
+sezione "Andrei Pascu"/fonte citata, completare i mancanti, poi aggiornare lo stato in
+`MIGLIORAMENTI-DIGITAL-EMPIRE.md` (🟡→🟢) e chiudere con checkpoint + togliere questo blocco.
+
+---
+
 ## 📚 2026-09-09 sera — max18 quasi chiuso: v09 100%, atomi 6/6, mancano 5 wiki page — CP-20260909-2CWF
 
 **Codice di ripresa: EMP-W4K7 (APERTA).** Checkpoint di passaggio-chat (contesto saturo,
