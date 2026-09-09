@@ -1,4 +1,4 @@
-## 🟠 2026-09-09 — battito a quadrati: due giri di correzione + un bug che spegneva il gate — CP-20260909-RWR2
+## 🟠 2026-09-09 — battito a quadrati: tre giri di correzione, causa vera trovata (spazi ASCII che collassano) — CP-20260909-RWR2
 
 Contenuto invariato (le sei voci restano quelle), cambiata solo la resa: titolo, poi cinque
 riquadri markdown chiusi su tutti e quattro i lati (`┌─...─┐`/`│ 🟠 <Nome>`/`└─...─┘`),
@@ -21,7 +21,18 @@ silenzio") → **il gate intero si spegneva senza avviso**. Scoperto perche' la 
 passata da 8/8 a 5/8. Corretto isolando quella generazione (facoltativa) in un try proprio.
 
 `verifica_recap.py` — `costruisci()` a due passate (larghezza naturale poi centraggio),
-rifiuta ora righe troppo lunghe invece di produrle storte. 10/10 test verdi.
+rifiuta ora righe troppo lunghe invece di produrle storte.
+
+**3° giro (causa vera):** Max ha guardato lo SCHERMO del battito vero appena mandato (non
+un altro screenshot) — *"tu li fai tutti verso il lato di sinistra"*, *"le linee sono
+sfalsate, messe a caso"*. La stringa era giusta (verificata con `valida()`); il difetto era
+nel passaggio testo→schermo: gli spazi ASCII ripetuti fuori da un blocco di codice
+collassano nel rendering (standard CommonMark/HTML), in modo incoerente riga per riga —
+spiega sia "tutto a sinistra" sia "sfalsato". Corretto: ogni spazio STRUTTURALE (rientro,
+margine, indentazione freccia) e' ora NBSP (U+00A0, non collassa — stesso trucco di
+`&nbsp;`), mai spazio ASCII. Lezione per la dottrina: un test che valida solo la stringa
+generata non basta quando il difetto nasce nel passaggio verso lo schermo che il test non
+attraversa. 10/10 test verdi.
 Dettagli: [CP-20260909-RWR2](checkpoints/CP-20260909-RWR2.md).
 
 ## 🟣 2026-09-09 — /frantuma: codice sorteggiato tipo-checkpoint (MT-XXXX), non un percorso — CP-20260909-JX89

@@ -630,32 +630,32 @@ sempre in questa forma:
 ```
 **⏱️ RECAP — <n>%**
 
-       ┌──────────────────────────┐
-       │ 🟠 Fatto                  │
-       │ <riga, max 44 caratteri> │
-       └──────────────────────────┘
-                     ↓
-       ┌──────────────────────────┐
-       │ 🟠 Sto facendo            │
-       │ <riga, max 44 caratteri> │
-       └──────────────────────────┘
-                     ↓
-       ┌──────────────────────────┐
-       │ 🟠 Farò                   │
-       │ <riga, max 44 caratteri> │
-       └──────────────────────────┘
-                     ↓
+       ┌──────────────────────────┐
+       │ 🟠 Fatto                  │
+       │ <riga, max 44 caratteri> │
+       └──────────────────────────┘
+                     ↓
+       ┌──────────────────────────┐
+       │ 🟠 Sto facendo            │
+       │ <riga, max 44 caratteri> │
+       └──────────────────────────┘
+                     ↓
+       ┌──────────────────────────┐
+       │ 🟠 Farò                   │
+       │ <riga, max 44 caratteri> │
+       └──────────────────────────┘
+                     ↓
 ┌────────────────────────────────────────┐
-│ 🟠 Forze                                │
-│ <GRADO> <nome> <cosa fa>               │
-│ oppure: nessuna, sto lavorando da solo │
+│ 🟠 Forze                                │
+│ <GRADO> <nome> <cosa fa>               │
+│ oppure: nessuna, sto lavorando da solo │
 └────────────────────────────────────────┘
-                     ↓
-             ┌──────────────┐
-             │ 🟠 Assetto    │
-             │ normale      │
-             │ 🟠 Potere: 0% │
-             └──────────────┘
+                     ↓
+             ┌──────────────┐
+             │ 🟠 Assetto    │
+             │ normale      │
+             │ 🟠 Potere: 0% │
+             └──────────────┘
 ```
 
 (numeri a 0% qui solo perché è l'output letterale di `costruisci(...)` con argomenti
@@ -713,6 +713,13 @@ nessuna facoltativa:
    — e un rettangolo con una riga spezzata non è più un rettangolo, indipendentemente da
    quanto sia giusta la matematica del centraggio. `costruisci()` rifiuta di generare un
    riquadro che lo sfora invece di produrlo storto in silenzio.
+10. **Ogni spazio strutturale è NBSP (U+00A0), mai spazio ASCII.** Il rientro che centra un
+    riquadro, il margine fra `│` e il testo, l'indentazione della freccia `↓` — tutti NBSP.
+    Solo gli spazi FRA LE PAROLE dentro una frase restano spazio normale. Il motivo è tecnico
+    (vedi il terzo giro qui sotto): gli spazi ASCII ripetuti fuori da un blocco di codice
+    collassano nel rendering, l'NBSP no — è lo stesso trucco di `&nbsp;` in HTML.
+    `costruisci()` lo fa da solo: non c'è niente da ricordare a mano, tranne che *non si
+    disegna mai il riquadro battendo la barra spaziatrice*.
 
 > ⚠️ **Il primo giro di correzione (regole 3-6 sopra) non bastava, e un bug l'ha pure
 > nascosto.** Max ha mandato un secondo screenshot — stesso identico difetto della prima
@@ -728,6 +735,22 @@ nessuna facoltativa:
 > Corretto isolando la generazione dell'esempio (facoltativo, solo per chiarezza) in un
 > try proprio: se fallisce, il blocco vero — deciso PRIMA, sui `problemi` reali — resta in
 > piedi lo stesso.
+
+> ⚠️ **Terzo giro, quello che ha trovato la causa vera.** Dopo il secondo giro ho mandato
+> un battito vero a Max — chiuso, centrato per matematica, verificato con `valida()` — e Max
+> ha guardato lo SCHERMO, non il codice: *"tu li fai tutti verso il lato di sinistra"*, e
+> *"le linee sono tutte sfalsate, messe a caso"*. Il codice era corretto: la stringa che
+> generava aveva il rientro giusto, carattere per carattere. Il problema era un passo dopo,
+> fuori dal mio controllo diretto — il renderer che mostra il messaggio a Max **collassa le
+> sequenze di spazi ASCII** in testo non dentro un blocco di codice (comportamento standard
+> di CommonMark/HTML: righe diverse collassano un numero diverso di spazi, il che spiega
+> ANCHE il "sfalsato/a caso", non solo il "tutto a sinistra"). Corretto passando a NBSP
+> (U+00A0, lo spazio non-interrompibile) per ogni spazio strutturale — regola 10 sopra.
+> **Lezione:** una verifica che controlla solo la STRINGA generata (`valida()` legge lo
+> stesso testo che scrivo, non quello che Max vede renderizzato) non basta quando il difetto
+> nasce nel passaggio testo→schermo che il mio controllo non attraversa. Il giudice finale
+> di un formato visivo è sempre l'occhio di chi lo legge, non il test che ne certifica la
+> stringa.
 
 **PRIMA DI MANDARE OGNI BATTITO: verificalo, e ripeti finché non è perfetto** *(ordine di
 Max, 2026-09-09, testuale: "questa perfezzione deve rimanere per tutto il recap prima di

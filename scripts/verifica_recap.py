@@ -50,6 +50,23 @@ centraggio. `LARGHEZZA_MASSIMA_RIGA` (44 caratteri) e' il tetto duro per ogni ri
 contenuto: `costruisci()` rifiuta di generare un riquadro che lo sfora (eccezione, non un
 riquadro storto silenzioso) e `valida()` lo controlla comunque, per i battiti scritti a mano.
 
+**SPAZI VERI, NON SPAZI ASCII (2026-09-09, terzo giro — quello decisivo).** Max ha guardato
+il battito VERO che avevo appena mandato (non un altro screenshot: il mio) e ha detto la cosa
+che serviva: *"tu li fai tutti verso il lato di sinistra"* — il centraggio che il codice
+calcolava (rientro a spazi ASCII prima di `┌`) non arrivava sullo schermo. Causa tecnica: i
+renderer markdown collassano le sequenze di spazi ASCII normali in prosa non-fenced (regola
+CommonMark/HTML standard) — il rientro veniva scritto correttamente nella stringa, ma
+spariva o si accorciava in modo incoerente da un riquadro all'altro nel momento in cui Max
+lo leggeva, e quello e' anche il motivo delle "linee sfalsate, messe a caso": ogni riga
+collassava un numero diverso di spazi. Lo spazio non-interrompibile (` `, NBSP) NON
+collassa — e' cosi' che l'HTML preserva spaziature multiple (`&nbsp;` e' lo stesso trucco).
+Da questo giro, OGNI spazio strutturale del battito — il rientro di centraggio, il margine
+dentro i riquadri fra `│` e il testo, l'indentazione della freccia — e' NBSP, mai spazio
+ASCII. Solo gli spazi FRA LE PAROLE dentro le frasi restano ASCII normali (li' va bene che
+si comportino da spazi qualunque). `valida()` accetta entrambi in lettura (compatibilita'
+con un battito scritto a mano con spazi normali), ma `costruisci()` da ora genera solo NBSP
+per la struttura.
+
 USO (prima di inviare OGNI battito):
     printf '%s' "<testo del battito>" | py -3 scripts/verifica_recap.py
     py -3 scripts/verifica_recap.py --file percorso\\al\\battito.txt
@@ -77,10 +94,13 @@ RIQUADRI = [
 
 LARGHEZZA_MASSIMA_RIGA = 44  # caratteri per riga di contenuto (non il bordo) — vedi nota sopra
 
+NBSP = " "  # spazio non-interrompibile: non collassa nel rendering, a differenza di " "
+_SP = "  "  # entrambi accettati in lettura (vedi nota "SPAZI VERI" sopra)
+
 TITOLO_RE = re.compile(r"^\*\*⏱️ RECAP — (\d{1,3})%\*\*$")
 TOP_RE = re.compile(r"^┌─+┐$")
 BOTTOM_RE = re.compile(r"^└─+┘$")
-RIGA_RE = re.compile(r"^│ (.*?) *│$")
+RIGA_RE = re.compile(r"^│[  ](.*?)[  ]*│$")
 FRECCIA = "↓"
 ASSETTO_RE = re.compile(r"^(\*\*GOD EMPEROR DOOM\*\*|normale)$")
 POTERE_RE = re.compile(r"^🟠 Potere: (\d{1,3})%$")
@@ -101,23 +121,25 @@ def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
     nasconde gli errori di quelli dopo.
     """
     def _rientro(riga):
-        return len(riga) - len(riga.lstrip(" "))
+        # senza argomenti: strippa QUALUNQUE whitespace, spazio ASCII o NBSP (entrambi
+        # accettati in lettura, vedi nota "SPAZI VERI" — `costruisci()` scrive solo NBSP).
+        return len(riga) - len(riga.lstrip())
 
-    if idx >= len(righe) or not TOP_RE.match(righe[idx].lstrip(" ")):
+    if idx >= len(righe) or not TOP_RE.match(righe[idx].lstrip()):
         problemi.append(
             "riga %d: atteso il bordo superiore del riquadro '%s' (`┌─...─┐`), trovato: %r"
             % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
         )
         return idx + 1
     rientro_box = _rientro(righe[idx])
-    larghezza_box = len(righe[idx].lstrip(" "))
+    larghezza_box = len(righe[idx].lstrip())
     idx += 1
 
     if idx >= len(righe):
         problemi.append("riquadro '%s': troncato subito dopo il bordo superiore" % etichetta)
         return idx
 
-    m = RIGA_RE.match(righe[idx].lstrip(" "))
+    m = RIGA_RE.match(righe[idx].lstrip())
     if not m or m.group(1) != "🟠 %s" % etichetta:
         problemi.append(
             "riga %d: attesa l'etichetta `🟠 %s` dentro il riquadro, trovato: %r"
@@ -128,7 +150,7 @@ def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
 
     contenuto = []
     while idx < len(righe):
-        spoglia = righe[idx].lstrip(" ")
+        spoglia = righe[idx].lstrip()
         if BOTTOM_RE.match(spoglia):
             break
         m = RIGA_RE.match(spoglia)
@@ -193,13 +215,13 @@ def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
                 if n > 100:
                     problemi.append("riga %d: potere %d%% impossibile (>100)" % (contenuto[1][0] + 1, n))
 
-    if idx >= len(righe) or not BOTTOM_RE.match(righe[idx].lstrip(" ")):
+    if idx >= len(righe) or not BOTTOM_RE.match(righe[idx].lstrip()):
         problemi.append(
             "riga %d: atteso il bordo inferiore del riquadro '%s' (`└─...─┘`), trovato: %r"
             % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
         )
         return idx + 1
-    if _rientro(righe[idx]) != rientro_box or len(righe[idx].lstrip(" ")) != larghezza_box:
+    if _rientro(righe[idx]) != rientro_box or len(righe[idx].lstrip()) != larghezza_box:
         problemi.append(
             "riga %d: il bordo inferiore del riquadro '%s' non e' allineato al bordo "
             "superiore — stesso rientro, stessa larghezza" % (idx + 1, etichetta)
@@ -299,10 +321,12 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
                     % (etichetta, len(r), LARGHEZZA_MASSIMA_RIGA, r)
                 )
         contenuto = ["🟠 %s" % etichetta] + righe
-        interno = max(len(r) for r in contenuto) + 2  # 1 spazio di margine per lato
+        interno = max(len(r) for r in contenuto) + 2  # 1 NBSP di margine per lato
         righe_box = ["┌" + "─" * interno + "┐"]
         for r in contenuto:
-            righe_box.append("│ " + r.ljust(interno - 2) + " │")
+            # NBSP, non spazio ASCII: il margine e il riempimento sono struttura, non
+            # prosa — devono arrivare intatti sullo schermo (vedi nota "SPAZI VERI" sopra).
+            righe_box.append("│" + NBSP + r.ljust(interno - 2, NBSP) + NBSP + "│")
         righe_box.append("└" + "─" * interno + "┘")
         riquadri.append((righe_box, interno + 2))  # +2 = i due caratteri │/┌└┐┘
 
@@ -312,9 +336,9 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
     for i, (righe_box, larghezza) in enumerate(riquadri):
         rientro = (canvas - larghezza) // 2
         for r in righe_box:
-            out.append(" " * rientro + r)
+            out.append(NBSP * rientro + r)
         if i < len(riquadri) - 1:
-            out.append(" " * (canvas // 2) + FRECCIA)
+            out.append(NBSP * (canvas // 2) + FRECCIA)
     return "\n".join(out)
 
 
