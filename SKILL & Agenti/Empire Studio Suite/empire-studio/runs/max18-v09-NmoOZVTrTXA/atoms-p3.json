@@ -1,0 +1,1130 @@
+[
+ {
+  "id": "KA-201",
+  "tipo": "principio",
+  "contenuto": "Quando si costruisce un agente vocale multi-funzione, conviene ragionare per sistemi separati: dividere il lavoro in workflow indipendenti, ciascuno con una task ben specifica, invece di un unico flusso che mischia tutto, perche' il modello lavora meglio con task lineari.",
+  "fonte": "NmoOZVTrTXA#98:24 (dettatura del prompt, prima della digitazione) + voce 01:38:24",
+  "frame": "frame-0985.png",
+  "ancora": "vorrei che tu ragionassi per sistemi, quindi non vorrei che tu facessi un mischiotto di tutto",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-202",
+  "tipo": "struttura",
+  "contenuto": "Un AI receptionist per una clinica si costruisce come 4 workflow separati: uno per il booking (prenotazione), uno per la cancellazione, uno per il rescheduling (spostamento) e uno per le FAQ.",
+  "fonte": "NmoOZVTrTXA#101:24 (prompt digitato in Claude Code) + voce 01:41:19",
+  "frame": "frame-1015.png",
+  "ancora": "Quattro workflow dovranno essere fatti: - uno e' per il booking - uno e' per la cancellazione - uno e' per il scheduling",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-201", "tipo": "parte-di", "perche": "i 4 workflow sono l'applicazione concreta del principio di dividere per sistemi"}
+  ]
+ },
+ {
+  "id": "KA-203",
+  "tipo": "anti-pattern",
+  "contenuto": "Non inserire date fisse ('hard coded') nel prompt o nei workflow di un agente vocale, anche se servono come esempio momentaneo: a livello teorico vanno sempre sostituite con variabili dinamiche generate da VAPI/n8n, cosi' il sistema resta valido nel tempo.",
+  "fonte": "NmoOZVTrTXA#99:24 (dettatura del prompt) + voce 01:39:19",
+  "frame": "frame-0995.png",
+  "ancora": "questo dato solo perche' tu possa avere un aggancio ma dovresti a livello teorico utilizzare variabili",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-204",
+  "tipo": "procedura",
+  "contenuto": "Per validare un agente vocale prima del rilascio, si usa la funzione di chat testuale interna all'API di VAPI: il sistema di sviluppo puo' 'parlare' direttamente con l'agente per testarne il comportamento in autonomia, senza bisogno di chiamate vocali reali.",
+  "fonte": "NmoOZVTrTXA#99:54 (dettatura del prompt) + voce 01:39:49",
+  "frame": "frame-1000.png",
+  "ancora": "vorrei che tu utilizzassi la funzione chat che c'e' interna a VAPI",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-260", "tipo": "precede", "perche": "il requisito dichiarato qui viene poi applicato concretamente durante i test in chat"}
+  ]
+ },
+ {
+  "id": "KA-205",
+  "tipo": "regola",
+  "contenuto": "In un agente vocale destinato a un pubblico italiano, transcriber, voice model e LLM vanno impostati tutti in lingua italiana, per rendere l'intera pipeline il piu' efficiente possibile.",
+  "fonte": "NmoOZVTrTXA#100:24 (dettatura del prompt) + voce 01:40:23",
+  "frame": "frame-1005.png",
+  "ancora": "far si' che anche i vari prompt sia in italiano e per far si' che tutto sia il piu' efficiente",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-206",
+  "tipo": "procedura",
+  "contenuto": "L'ordine di lavoro corretto per costruire un agente vocale con questo stack e' creare prima l'agente in VAPI e solo successivamente costruire l'automazione che lo supporta in n8n.",
+  "fonte": "NmoOZVTrTXA#100:54 (dettatura del prompt) + voce 01:40:55",
+  "frame": "frame-1010.png",
+  "ancora": "procedere con creare la gente in VAPI e con successivamente creare il tutto in N8N",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-207",
+  "tipo": "esempio",
+  "contenuto": "Le informazioni aziendali di un cliente (servizi, orari, prezzi, regole) vengono raccolte in un unico documento PDF, caricato nel progetto con un nome descrittivo (es. 'conoscenza.pdf'), che serve da knowledge base per l'agente vocale.",
+  "fonte": "NmoOZVTrTXA#101:30 (rinomina file + apertura PDF in Claude Code) + voce 01:41:30",
+  "frame": "frame-1016.png",
+  "ancora": "Ora io aggiungero' il file come CONOSCENZA.pdf, che e' il database con informazioni aziendali",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-208",
+  "tipo": "struttura",
+  "contenuto": "Una knowledge base aziendale ben fatta si apre con una sezione introduttiva di identita' dell'attivita' (es. 'IDENTITA' DELLA CLINICA'), con i dati anagrafici essenziali organizzati in tabella.",
+  "fonte": "NmoOZVTrTXA#101:24 (PDF conoscenza.pdf aperto, pagina 1-2) + voce 01:41:19",
+  "frame": "frame-1015.png",
+  "ancora": "1. IDENTITA' DELLA CLINICA con una tabella che elenca campi come Nome, Titolare, Via",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-209",
+  "tipo": "struttura",
+  "contenuto": "La sezione servizi di una knowledge base va organizzata per categoria operativa (es. per una clinica dentale: prevenzione e igiene, conservativa ed endodonzia, protesi, implantologia, ortodonzia, chirurgia orale, urgenze), ciascuna con un elenco puntato dei trattamenti offerti.",
+  "fonte": "NmoOZVTrTXA#101:48 (PDF conoscenza.pdf, pagina 3) + voce 01:41:44",
+  "frame": "frame-1019.png",
+  "ancora": "sezione Prevenzione e igiene ... Conservativa ed endodonzia ... Protesi ... Implantologia ... Ortodonzia",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-210",
+  "tipo": "principio",
+  "contenuto": "Una knowledge base caricata per un agente vocale deve essere collegata come tool interrogabile durante la conversazione ('pescato' a runtime), non semplicemente allegata come riferimento statico.",
+  "fonte": "NmoOZVTrTXA#102:18 (Claude Code, PDF ancora aperto) + voce 01:42:18",
+  "frame": "frame-1024.png",
+  "ancora": "fa si' appunto che questa conoscenza venga appunto pescata",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-234", "tipo": "precede", "perche": "il principio viene poi implementato come tool nativo search_knowledge_base"}
+  ]
+ },
+ {
+  "id": "KA-211",
+  "tipo": "principio",
+  "contenuto": "Per far agire un agente AI in autonomia, conviene dargli accesso diretto a una risorsa vuota (es. un foglio di calcolo) invece di inserire i dati manualmente al posto suo: cosi' l'agente puo' collegarsi da solo alla risorsa ed evitare di dover chiedere informazioni all'operatore.",
+  "fonte": "NmoOZVTrTXA#103:12 (prompt su CRM/Google Sheet) + voce 01:43:11",
+  "frame": "frame-1032.png",
+  "ancora": "di modo tale che tu possa poi agire in autonomia e evitare di chiedermi informazioni",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-212", "tipo": "precede"},
+   {"verso": "KA-243", "tipo": "precede"},
+   {"verso": "KA-281", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-212",
+  "tipo": "esempio",
+  "contenuto": "Come CRM iniziale per un nuovo agente vocale si puo' usare un Google Sheet completamente vuoto, il cui link viene incollato direttamente nel prompt dato all'assistente di coding, lasciando che sia lui a strutturarlo e collegarlo.",
+  "fonte": "NmoOZVTrTXA#103:00 (Google Sheet vuoto aperto nel browser) + voce 01:42:59",
+  "frame": "frame-1031.png",
+  "ancora": "fatto questo file vuoto, quindi gli mettiamo Google Sheet",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-211", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-213",
+  "tipo": "regola",
+  "contenuto": "L'accesso a un file esterno (es. un Google Sheet) va condiviso con l'agente/sistema solo nel momento in cui serve davvero, non lasciato aperto in anticipo senza motivo.",
+  "fonte": "NmoOZVTrTXA#103:18 (Google Sheet ancora vuoto) + voce 01:43:20",
+  "frame": "frame-1034.png",
+  "ancora": "di farlo solo nel momento in cui questo serve",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-214",
+  "tipo": "esempio",
+  "contenuto": "Un prompt di avvio per un progetto complesso puo' nascere da una dettatura vocale lunga (nell'esempio circa 8 minuti) confluita in un unico messaggio monolitico inviato all'assistente di coding, contenente tutti i requisiti insieme invece di istruzioni separate.",
+  "fonte": "NmoOZVTrTXA#103:24 (prompt completo, prima dell'invio) + voce 01:43:27",
+  "frame": "frame-1035.png",
+  "ancora": "Va bene, allora un prompt giganorme, sono tipo 8 minuti di brainstorming",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-216", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-215",
+  "tipo": "dato",
+  "contenuto": "Ricevuto un prompt complesso, un assistente di coding come Claude Code esplora autonomamente il filesystem del progetto (comandi find/glob) per individuare i file di documentazione gia' presenti, prima di iniziare a pianificare la soluzione.",
+  "fonte": "NmoOZVTrTXA#103:42 (log azioni automatiche dopo invio prompt) + voce 01:43:40",
+  "frame": "frame-1038.png",
+  "ancora": "find ... -name \"VOICE_AGENT.md\" -o -name \"VAPI.md\" ... Glob pattern: \"**/conoscenza*\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-217", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-216",
+  "tipo": "principio",
+  "contenuto": "Conviene investire tempo a spiegare un compito in modo estremamente dettagliato una volta sola all'inizio, piuttosto che darlo in modo incompleto e correggerlo molte volte in seguito: dieci minuti spesi bene battono sei ore ripetute per ventisette volte.",
+  "fonte": "NmoOZVTrTXA#104:00-104:06 (riflessione a webcam prima di tornare sullo schermo) + voce 01:43:40-01:44:02",
+  "frame": "frame-1041.png",
+  "ancora": "preferite dare l'informazione e spiegarla bene ... una volta sola e metterci dieci minuti oppure metterci sei ore",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-217",
+  "tipo": "procedura",
+  "contenuto": "Prima di implementare un progetto complesso, un assistente di coding in 'plan mode' presenta prima un piano scritto da rivedere, con opzioni tipo 'accetta e auto-approva ogni modifica successiva', 'accetta ma approva ogni modifica manualmente' o 'continua a pianificare'.",
+  "fonte": "NmoOZVTrTXA#104:24 (piano generato, dialogo Accept this plan?) + voce 01:44:28",
+  "frame": "frame-1045.png",
+  "ancora": "Accept this plan? 1 Yes, and auto-accept ... 2 Yes, and manually approve edits ... 3 No, keep planning",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-236", "tipo": "precede"},
+   {"verso": "KA-280", "tipo": "alternativa-a", "perche": "lo stesso meccanismo di piano-da-approvare viene riusato piu' avanti anche per un bugfix"}
+  ]
+ },
+ {
+  "id": "KA-218",
+  "tipo": "avvertimento",
+  "contenuto": "Durante lo sviluppo in diretta, aprire il file .env nell'editor puo' esporre in chiaro sullo schermo chiavi API reali (es. chiave privata e pubblica VAPI): un rischio di esposizione accidentale a cui prestare attenzione quando si condivide lo schermo o si registra.",
+  "fonte": "NmoOZVTrTXA#104:24 (file .env aperto nell'Explorer) + voce 01:44:28",
+  "frame": "frame-1045.png",
+  "ancora": "Private vapi: ... public vapi ...",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-245", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-219",
+  "tipo": "struttura",
+  "contenuto": "Lo schema minimo di un Google Sheet usato come CRM per un agente vocale include colonne come nome, email, telefono, motivo_visita, dottore, data_appuntamento (formato italiano dd/MM/yyyy) e ora_appuntamento (formato 24 ore HH:mm).",
+  "fonte": "NmoOZVTrTXA#104:30 (piano, tabella Google Sheet CRM) + voce 01:44:34",
+  "frame": "frame-1046.png",
+  "ancora": "data_appuntamento formato \"dd/MM/yyyy\" (Formato italiano) e ora_appuntamento formato \"HH:mm\" (24h)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-212", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-220",
+  "tipo": "struttura",
+  "contenuto": "Il system prompt di un agente vocale professionale segue uno standard fisso di 12 sezioni obbligatorie: IDENTITA', STILE, LINEE GUIDA RISPOSTA, TASK, CONTESTO, RILEVAMENTO URGENZA, TIPI DI CHIAMANTE, TOOL, GUARDRAIL, GESTIONE ERRORI, ESEMPIO DI CONVERSAZIONE, NOTE.",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, struttura completa del prompt Section 11) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "Tutte le 12 sezioni obbligatorie di Section 11",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-221",
+  "tipo": "regola",
+  "contenuto": "Nello stile di un prompt vocale vanno imposte frasi corte, numeri scritti per esteso (mai cifre), nessun elenco puntato nella risposta parlata, e il divieto assoluto di dire 'sono un'intelligenza artificiale' o simili.",
+  "fonte": "NmoOZVTrTXA#104:48 / 109:00 (sezione STILE del piano; GUARDRAIL nel prompt reale) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "STILE: frasi corte, numeri per esteso, niente elenchi, niente 'sono un AI'",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-220", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-222",
+  "tipo": "regola",
+  "contenuto": "Le linee guida di risposta di un agente vocale devono limitare ogni turno a una sola domanda per volta e a un massimo di circa 15 parole, per restare naturale al telefono.",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, sezione LINEE GUIDA RISPOSTA) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "LINEE GUIDA RISPOSTA: 1 domanda per risposta, max 15 parole",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-220", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-223",
+  "tipo": "struttura",
+  "contenuto": "I 4 flussi conversazionali di un AI receptionist hanno lunghezze diverse in base alla complessita': prenotazione 11 step, cancellazione 3 step, spostamento (rescheduling) 5 step, FAQ 4 step.",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, sezione TASK) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "TASK: 4 flussi (prenotazione 11 step, cancellazione 3 step, spostamento 5 step, FAQ 4 step)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-220", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-224",
+  "tipo": "procedura",
+  "contenuto": "Nel prompt di un agente vocale si usa una variabile dinamica (es. {{now}}) per riferirsi sempre alla data/ora corrente della conversazione, invece di un valore fisso scritto nel testo.",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, sezione CONTESTO) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "CONTESTO: indirizzo, orari (scritti per esteso), {{now}} per data/ora dinamica",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-203", "tipo": "applica"},
+   {"verso": "KA-220", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-225",
+  "tipo": "struttura",
+  "contenuto": "La sezione di rilevamento urgenza del prompt vocale si basa su un elenco di parole chiave (nell'esempio 8) collegate a un protocollo di gestione strutturato in step (nell'esempio 5).",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, sezione RILEVAMENTO URGENZA) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "RILEVAMENTO URGENZA: 8 keyword + protocollo 5 step",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-220", "tipo": "parte-di"},
+   {"verso": "KA-268", "tipo": "alternativa-a", "perche": "un protocollo urgenze molto simile, con keyword e azioni proprie, esiste anche nel documento di knowledge base separato dal prompt"}
+  ]
+ },
+ {
+  "id": "KA-226",
+  "tipo": "struttura",
+  "contenuto": "Il prompt di un buon AI receptionist prevede la gestione esplicita di piu' profili tipici di chiamante (nell'esempio 8: chi chiede solo il prezzo, l'ansioso, l'anziano, chi ha dolore, chi chiede un consiglio medico, l'arrabbiato, il sospettoso, i genitori con bambini).",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, sezione TIPI DI CHIAMANTE) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "TIPI DI CHIAMANTE: 8 profili (prezzo, ansioso, anziano, dolore, consiglio medico, arrabbiato, sospetto, bambini)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-220", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-227",
+  "tipo": "struttura",
+  "contenuto": "Un AI receptionist completo si appoggia su 5 tool con condizioni d'uso precise e non sovrapponibili: check_availability, book_appointment, cancel_appointment, reschedule_appointment, search_knowledge_base.",
+  "fonte": "NmoOZVTrTXA#104:48 / 109:00 (piano e prompt reale, sezione TOOL) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "TOOL: 5 tool con condizioni d'uso precise (check_availability, book_appointment, cancel_appointment, reschedule_appointment, search_knowledge_base)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-220", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-228",
+  "tipo": "struttura",
+  "contenuto": "Il prompt di un agente vocale deve avere una sezione guardrail dedicata (nell'esempio 8 regole) che vieta esplicitamente comportamenti rischiosi come inventare prezzi o prenotare senza conferma.",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, sezione GUARDRAIL) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "GUARDRAIL: 8 regole (mai inventare prezzi, mai prenotare senza conferma, ecc.)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-220", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-229",
+  "tipo": "struttura",
+  "contenuto": "La gestione errori di un agente vocale deve coprire piu' scenari tipici in modo esplicito (nell'esempio 6: non aver capito, silenzio del chiamante, errore del tool, slot pieno, paziente non trovato).",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, sezione GESTIONE ERRORI) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "GESTIONE ERRORI: 6 scenari (non capito, silenzio, tool error, slot pieno, paziente non trovato)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-220", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-230",
+  "tipo": "dato",
+  "contenuto": "Una configurazione tipica per il modello linguistico di un agente vocale in produzione e' OpenAI gpt-4o con temperature 0.4, mostrato nella dashboard come 'GPT 4o Cluster'.",
+  "fonte": "NmoOZVTrTXA#104:48 / 109:00 (piano e dashboard VAPI, sezione MODEL) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "model: OpenAI gpt-4o, temperature 0.4",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-231",
+  "tipo": "dato",
+  "contenuto": "Una configurazione tipica per la voce di un agente vocale italiano e' ElevenLabs (11labs), voce femminile italiana, con parametri stability 0.5 e similarityBoost 0.75.",
+  "fonte": "NmoOZVTrTXA#104:48 (piano, sezione voice) + voce 01:44:49",
+  "frame": "frame-1049.png",
+  "ancora": "voice: ElevenLabs (11labs), voce femminile italiana, stability 0.5, similarityBoost 0.75",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-257", "tipo": "quantificato-da", "perche": "la scelta di modello e voce si riflette nel costo/minuto e nella latenza mostrati in dashboard"}
+  ]
+ },
+ {
+  "id": "KA-232",
+  "tipo": "struttura",
+  "contenuto": "Ogni tool custom di tipo webhook in VAPI viene collegato a un workflow n8n dedicato tramite un Server URL specifico, e dichiara i campi obbligatori che deve ricevere (es. book_appointment richiede nome, motivo_visita, data_appuntamento, ora_appuntamento).",
+  "fonte": "NmoOZVTrTXA#105:18 (piano, tabella tool/webhook) + voce 01:45:15",
+  "frame": "frame-1054.png",
+  "ancora": "book_appointment — custom webhook — WF2 webhook — nome, motivo_visita, data_appuntamento, ora_appuntamento",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-227", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-233",
+  "tipo": "regola",
+  "contenuto": "Ogni tool di un agente vocale dovrebbe avere messaggi dedicati per l'inizio dell'esecuzione e per il fallimento (request-start / request-failed), scritti come frasi naturali in italiano da pronunciare mentre il tool lavora.",
+  "fonte": "NmoOZVTrTXA#105:18 (piano, nota sotto la tabella tool) + voce 01:45:15",
+  "frame": "frame-1054.png",
+  "ancora": "Ogni tool ha messages per request-start e request-failed (frasi naturali in italiano)",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-234",
+  "tipo": "definizione",
+  "contenuto": "search_knowledge_base e' un tool nativo di VAPI (interrogazione diretta della knowledge base caricata), diverso concettualmente dagli altri tool che sono invece webhook custom verso workflow n8n esterni.",
+  "fonte": "NmoOZVTrTXA#105:18 / 109:06 (piano; dashboard Tools) + voce 01:45:15",
+  "frame": "frame-1054.png",
+  "ancora": "search_knowledge_base — VAPI KB tool — (VAPI nativo) — query",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-227", "tipo": "parte-di"},
+   {"verso": "KA-210", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-235",
+  "tipo": "avvertimento",
+  "contenuto": "Nella pianificazione di un AI receptionist telefonico va verificato che esista un modo per terminare esplicitamente la chiamata (tool end_call): la sua assenza in un piano generato automaticamente e' una lacuna reale da controllare sempre.",
+  "fonte": "NmoOZVTrTXA#105:18-105:48 (review del piano) + voce 01:45:15",
+  "frame": "frame-1054.png",
+  "ancora": "pero' ecco, una cosa che non vedo e' la capacita' da parte della gente di chiudere la chiamata",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-236",
+  "tipo": "procedura",
+  "contenuto": "L'ordine di esecuzione consigliato per costruire un AI receptionist e': configurare l'OAuth Google necessario, creare i tool custom in VAPI collegati ai webhook n8n, creare il tool knowledge base, creare l'assistant con prompt e tool collegati, poi eseguire un test autonomo via chat API e iterare sugli errori trovati.",
+  "fonte": "NmoOZVTrTXA#105:48 (piano, Fase 6 Ordine Esecuzione) + voce 01:45:22",
+  "frame": "frame-1059.png",
+  "ancora": "7. Creare 4 tool custom VAPI ... 8. Creare KB tool VAPI ... 9. Creare assistant VAPI ... 10. Test autonomo ... 11. Iterare",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-217", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-237",
+  "tipo": "procedura",
+  "contenuto": "Prima ancora di costruire i tool, conviene pianificare in anticipo una batteria di scenari di test concreti (nell'esempio 8: nuova prenotazione, domanda sui prezzi, urgenza, cancellazione, spostamento, giorno chiuso, orario non disponibile, domanda su convenzioni) per validare ogni funzionalita' una volta pronta.",
+  "fonte": "NmoOZVTrTXA#105:48 (piano, Fase 7 Testing) + voce 01:45:22",
+  "frame": "frame-1059.png",
+  "ancora": "T1 Nuova prenotazione prima visita ... T8 'Accettate mutue?' — search_knowledge_base",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-236", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-238",
+  "tipo": "struttura",
+  "contenuto": "Un assistente di coding come Claude Code offre piu' modalita' di autonomia selezionabili durante il lavoro: 'Ask before edits' (chiede conferma per ogni modifica), 'Edit automatically' (modifica da solo), 'Plan mode' (presenta un piano prima di agire), 'Bypass permissions' (nessuna richiesta di permesso), oltre a un controllo di livello di ragionamento ('Effort').",
+  "fonte": "NmoOZVTrTXA#105:54 (menu Modes in Claude Code) + voce 01:45:34",
+  "frame": "frame-1061.png",
+  "ancora": "Ask before edits ... Edit automatically ... Plan mode ... Bypass permissions ... Effort (Medium)",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-239",
+  "tipo": "procedura",
+  "contenuto": "Quando un passaggio richiede necessariamente un intervento umano che il sistema non puo' completare da solo (es. autorizzare un accesso OAuth), l'assistente di coding deve fermarsi e porre una domanda esplicita con opzioni chiare, invece di procedere alla cieca o inventare un dato.",
+  "fonte": "NmoOZVTrTXA#106:12 (popup AskUserQuestion 'Google Auth') + voce 01:46:10",
+  "frame": "frame-1063.png",
+  "ancora": "Per far funzionare i workflow devo collegare Google Sheets a n8n ... Hai completato questo step?",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-240",
+  "tipo": "procedura",
+  "contenuto": "Un assistente di coding traccia l'avanzamento di un lavoro multi-step con una todo list aggiornata in tempo reale: voci completate spuntate e barrate, la voce corrente evidenziata, le voci future ancora vuote.",
+  "fonte": "NmoOZVTrTXA#106:12 / 107:18 (Update Todos) + voce 01:46:10",
+  "frame": "frame-1063.png",
+  "ancora": "Update Todos ... Salvare VAPI keys in .env ... Costruire WF4: Reschedule Appointment in n8n",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-241",
+  "tipo": "principio",
+  "contenuto": "Prima di iniziare un nuovo progetto su un account condiviso (es. VAPI o n8n), conviene verificare e mettere da parte le configurazioni residue di progetti precedenti, per non confonderle con quelle nuove durante lo sviluppo.",
+  "fonte": "NmoOZVTrTXA#106:30 (tool VAPI legacy intravisti sull'account) + voce 01:46:32",
+  "frame": "frame-1066.png",
+  "ancora": "aspetta che archivio al volo questi che cosi' li teniamo sotto occhio",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {"verso": "KA-242", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-242",
+  "tipo": "dato",
+  "contenuto": "In n8n, ogni workflow nella lista mostra la data di creazione e il timestamp dell'ultimo aggiornamento, utile per distinguere a colpo d'occhio i workflow appena creati da quelli piu' vecchi (legacy).",
+  "fonte": "NmoOZVTrTXA#106:36 (lista workflow n8n con Last updated) + voce 01:46:38",
+  "frame": "frame-1067.png",
+  "ancora": "Voice Agent - Book Appointment (Last updated 2 minutes ago) ... AI Agent - Check Calendar Availability (1 hour ago)",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-243",
+  "tipo": "procedura",
+  "contenuto": "In n8n, collegare la credenziale Google OAuth2 su un singolo nodo di un workflow la rende automaticamente disponibile per tutti gli altri workflow dello stesso progetto, senza doverla ripetere.",
+  "fonte": "NmoOZVTrTXA#106:48 (nodo con pulsante Sign in with Google) + voce 01:46:47",
+  "frame": "frame-1069.png",
+  "ancora": "Fatto questo, la stessa credenziale sara' disponibile per tutti i workflow",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-211", "tipo": "applica"},
+   {"verso": "KA-244", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-244",
+  "tipo": "procedura",
+  "contenuto": "Un assistente di coding puo' interrogare l'API REST di n8n (endpoint /api/v1/credentials, con API key) per elencare le credenziali gia' configurate, trovare l'id di quella corretta e assegnarla in automatico ai nodi di piu' workflow in parallelo, evitando il lavoro manuale ripetuto.",
+  "fonte": "NmoOZVTrTXA#107:48 (comando curl per listare credenziali n8n) + voce 01:47:49",
+  "frame": "frame-1079.png",
+  "ancora": "List n8n credentials to find the Google Sheets credential ... Faccio tutto in parallelo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-243", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-245",
+  "tipo": "avvertimento",
+  "contenuto": "Durante lo sviluppo dal vivo di un'integrazione con piu' servizi esterni, e' molto facile che segreti reali (chiavi API VAPI, API key n8n in formato JWT, id di Google Sheet, id di credenziali, id dell'assistant) compaiano in chiaro sullo schermo piu' volte: vanno sempre trattati come dati sensibili da non condividere ne' trascrivere.",
+  "fonte": "NmoOZVTrTXA#107:06 / 119:18 / 120:36 (chiavi/token visibili in piu' scene) + voce 01:47:00",
+  "frame": "frame-1072.png",
+  "ancora": "⚠️ valore NON trascritto — segreto di terzi",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-246",
+  "tipo": "procedura",
+  "contenuto": "Il system prompt finale di un agente vocale conviene salvarlo come file Markdown a parte nel progetto (es. prompt-sara.md), cosi' resta versionabile e consultabile indipendentemente dalla chat che lo ha generato.",
+  "fonte": "NmoOZVTrTXA#108:04 (file prompt-sara.md aperto) + voce 01:48:04",
+  "frame": "frame-1083.png",
+  "ancora": "File: Prompt salvato come prompt-sara.md per riferimento",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-247",
+  "tipo": "regola",
+  "contenuto": "Nel prompt di un agente vocale, contatti come telefono ed email vanno scritti sciogliendo numeri e simboli in lettere (es. 'zero quarantanove' invece di '049', 'chiocciola' invece di '@', 'punto' invece di '.') per essere pronunciati correttamente dal motore text-to-speech.",
+  "fonte": "NmoOZVTrTXA#108:04 (sezione CONTESTO di prompt-sara.md) + voce 01:48:04",
+  "frame": "frame-1083.png",
+  "ancora": "Telefono: zero quarantanove, uno due tre, quattro cinque sei sette ... Email: info chiocciola clinicabeggiato punto it",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-221", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-248",
+  "tipo": "struttura",
+  "contenuto": "Un flusso di spostamento appuntamento ben progettato segue 5 step: chiedere nome e data dell'appuntamento attuale, chiedere nuova data e fascia oraria preferita, verificare la disponibilita', proporre al massimo due slot alternativi, e solo dopo conferma esplicita eseguire lo spostamento.",
+  "fonte": "NmoOZVTrTXA#108:04 (prompt-sara.md, Flusso spostamento) + voce 01:48:04",
+  "frame": "frame-1083.png",
+  "ancora": "Step 1 – Chiedi nome e data dell'appuntamento attuale ... Step 5 – Dopo conferma esplicita, usa reschedule_appointment",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-223", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-249",
+  "tipo": "struttura",
+  "contenuto": "Un flusso FAQ ben progettato segue 4 step: ascoltare la domanda del chiamante, cercare la risposta nella knowledge base con il tool dedicato, rispondere in modo chiaro e breve, poi chiedere se serve altro o se si vuole prenotare.",
+  "fonte": "NmoOZVTrTXA#108:04 (prompt-sara.md, Flusso domande) + voce 01:48:04",
+  "frame": "frame-1083.png",
+  "ancora": "Step 2 – Usa search_knowledge_base per cercare la risposta nella documentazione della clinica",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-223", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-250",
+  "tipo": "esempio",
+  "contenuto": "A fine costruzione, un buon riepilogo elenca ogni componente creato (prompt, assistant, knowledge base, ciascun workflow, CRM, tool) con uno stato chiaro ('Fatto' / 'Testato OK') e una lista numerata di istruzioni per eseguire un test end-to-end manuale.",
+  "fonte": "NmoOZVTrTXA#108:18 (Riepilogo: AI Receptionist Sara - Completato) + voce 01:48:19",
+  "frame": "frame-1084.png",
+  "ancora": "Per testare end-to-end: 1. Vai sulla VAPI Dashboard ... 5. Controlla il Google Sheet per vedere se la prenotazione appare",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-236", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-251",
+  "tipo": "regola",
+  "contenuto": "Tra i guardrail di un agente vocale professionale vanno inclusi: non citare mai cliniche o attivita' concorrenti, non dare consigli medici o diagnosi di alcun tipo, e avere una frase pronta per chiudere educatamente una chiamata con un interlocutore abusivo o offensivo.",
+  "fonte": "NmoOZVTrTXA#109:00 (system prompt reale, sezione GUARDRAIL) + voce 01:48:38",
+  "frame": "frame-1091.png",
+  "ancora": "Non citare altre cliniche o concorrenti ... Non continuare la chiamata se il paziente e' abusivo o offensivo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-228", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-252",
+  "tipo": "regola",
+  "contenuto": "Un agente vocale che gestisce prenotazioni non deve mai quotare un prezzo esatto al telefono, anche se lo conosce dalla knowledge base: deve sempre guidare il chiamante verso una visita di valutazione gratuita per avere un preventivo preciso.",
+  "fonte": "NmoOZVTrTXA#109:00 / 113:36 (guardrail nel prompt; verifica dal vivo in chat) + voce 01:48:38",
+  "frame": "frame-1091.png",
+  "ancora": "Non quotare prezzi al telefono. Sempre guidare verso la prima visita gratuita",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-228", "tipo": "esempio-di"},
+   {"verso": "KA-262", "tipo": "quantificato-da", "perche": "il comportamento reale in chat conferma che la regola viene rispettata"}
+  ]
+ },
+ {
+  "id": "KA-253",
+  "tipo": "definizione",
+  "contenuto": "In VAPI, i 'Tools' sono oggetti di configurazione separati dal testo del system prompt: vengono definiti a parte (nome, descrizione, parametri, opzioni) e poi collegati all'assistant per riferimento, non scritti dentro al prompt stesso.",
+  "fonte": "NmoOZVTrTXA#109:06 (pagina Tools di VAPI) + voce 01:49:09",
+  "frame": "frame-1092.png",
+  "ancora": "Tools 9 ... Tool Settings — Configure the basic settings for this tool",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-227", "tipo": "definisce"}
+  ]
+ },
+ {
+  "id": "KA-254",
+  "tipo": "struttura",
+  "contenuto": "Ogni tool in VAPI ha due opzioni indipendenti configurabili: 'Async' (esecuzione asincrona, senza attendere la risposta prima di continuare) e 'Strict' (validazione rigida dei parametri, richiede che tutte le proprieta' siano dichiarate obbligatorie e lo schema bloccato).",
+  "fonte": "NmoOZVTrTXA#109:06 (pagina Tools, sezione Options) + voce 01:49:09",
+  "frame": "frame-1092.png",
+  "ancora": "Async — Tool executes asynchronously ... Strict — Enforces strict parameter validation",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-253", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-255",
+  "tipo": "principio",
+  "contenuto": "Un workflow di automazione che deve solo eseguire operazioni deterministiche (scrivere/leggere dati, verificare condizioni) puo' essere costruito con nodi a formule e codice invece che con un agente AI, ottenendo un sistema piu' semplice, prevedibile ed economico da far girare.",
+  "fonte": "NmoOZVTrTXA#110:42 (canvas del workflow Book Appointment) + voce 01:50:26",
+  "frame": "frame-1108.png",
+  "ancora": "perche' non gli ho detto di andare con agenti AI, quindi lui ha fatto con formule molto interessante e codice di modo tale che sia piu' semplice",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-256", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-256",
+  "tipo": "esempio",
+  "contenuto": "Un workflow di prenotazione affidabile applica un controllo duplicati esplicito prima di scrivere: legge il foglio, verifica se esiste gia' un appuntamento uguale, si dirama (true/false) e solo nel ramo negativo procede ad aggiungere la nuova riga.",
+  "fonte": "NmoOZVTrTXA#110:42 (canvas nodi: Controlla Duplicati, Verifica Duplicato, Duplicato?) + voce 01:50:26",
+  "frame": "frame-1108.png",
+  "ancora": "Controlla Duplicati (read: sheet) → Verifica Duplicato → Duplicato? → ramo vero/falso",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-255", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-257",
+  "tipo": "numero",
+  "contenuto": "La dashboard di un assistant VAPI mostra in tempo reale una stima di costo per minuto di conversazione (nell'esempio circa $0,17/min) e una stima di latenza media (nell'esempio circa 2000 ms), calcolate in base alla combinazione di modello, voce e transcriber scelti.",
+  "fonte": "NmoOZVTrTXA#111:06 (schede Cost/Latency della dashboard) + voce 01:51:03",
+  "frame": "frame-1112.png",
+  "ancora": "Cost — ~$0.17 /min ... Latency — ~2000 ms",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-258",
+  "tipo": "procedura",
+  "contenuto": "Prima di lanciare un test su un agente vocale, conviene tenere a portata di mano il documento sorgente (es. orari o listino prezzi) per poter verificare a colpo d'occhio se la risposta data e' effettivamente corretta.",
+  "fonte": "NmoOZVTrTXA#111:42 (tabella orari consultata prima del test) + voce 01:51:38",
+  "frame": "frame-1118.png",
+  "ancora": "vogliamo testare innanzitutto che non possiamo prenotare dopo le otto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-259", "tipo": "precede"},
+   {"verso": "KA-264", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-259",
+  "tipo": "esempio",
+  "contenuto": "Un test tipico di validazione orari consiste nel chiedere una prenotazione in un orario fuori apertura (es. le 20:00): l'agente corretto deve rifiutarla, incrociando la richiesta con la tabella degli orari della clinica, e chiedere un'alternativa.",
+  "fonte": "NmoOZVTrTXA#112:54 (risposta completa in chat) + voce 112:54",
+  "frame": "frame-1130.png",
+  "ancora": "Domani sera alle venti non siamo aperti. Ha un'altra preferenza di giorno o fascia oraria?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-258", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-260",
+  "tipo": "procedura",
+  "contenuto": "Testare un assistant tramite la chat testuale integrata di VAPI ('Chat with Assistant') e' piu' veloce che testare con una chiamata vocale reale, ed e' quindi preferibile per iterare rapidamente durante lo sviluppo.",
+  "fonte": "NmoOZVTrTXA#111:54 (pannello Chat with Assistant) + voce 01:51:49",
+  "frame": "frame-1120.png",
+  "ancora": "Faccio cosi' solo perche' e' molto piu' veloce",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-261", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-261",
+  "tipo": "esempio",
+  "contenuto": "In un flusso di prenotazione ben progettato, l'agente raccoglie i dati in sequenza logica: prima il nome completo, poi il tipo di visita, poi l'indirizzo email, infine data e fascia oraria preferite.",
+  "fonte": "NmoOZVTrTXA#112:24 (scambio chat nome→tipo visita→email) + voce 01:51:57",
+  "frame": "frame-1125.png",
+  "ancora": "Perfetto, Giovanni. Che tipo di visita desidera prenotare? ... Mi lascia il suo indirizzo email per favore?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-260", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-262",
+  "tipo": "esempio",
+  "contenuto": "Messo alla prova con insistenza a dare un prezzo esatto, un agente vocale ben istruito continua a rifiutarsi e ripete che il modo piu' preciso per saperlo e' fissare la visita di valutazione gratuita.",
+  "fonte": "NmoOZVTrTXA#113:36 (risposta dell'assistente dopo insistenza) + voce 113:25",
+  "frame": "frame-1137.png",
+  "ancora": "Il modo migliore per avere un costo preciso e' fare una visita di valutazione gratuita. Posso fissarla per lei?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-252", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-263",
+  "tipo": "dato",
+  "contenuto": "Una sezione tipica di modalita' di pagamento in una knowledge base clinica elenca: contanti (fino al limite legale), bancomat e carte, bonifico bancario, finanziamento rateale tramite finanziarie esterne (fino a un tetto di rate), e uno sconto per pagamento in unica soluzione al momento del preventivo.",
+  "fonte": "NmoOZVTrTXA#113:42 (documento, Modalita' di pagamento) + voce 113:40",
+  "frame": "frame-1138.png",
+  "ancora": "Contanti (fino al limite legale) ... Finanziamento rateale tramite Cofidis e Findomestic (fino a 48 rate) ... Sconto del 5%",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-264",
+  "tipo": "esempio",
+  "contenuto": "Un'ipotesi plausibile ma sbagliata da verificare sempre con un test reale: si puo' temere che un agente vocale abbia difficolta' a leggere dati organizzati in tabelle dentro un PDF di knowledge base, ma un test diretto (chiedere nomi e specializzazioni di uno staff da una tabella) puo' smentirla, mostrando che l'agente restituisce i dati tabellari correttamente.",
+  "fonte": "NmoOZVTrTXA#114:06-114:24 (verifica sulla tabella TEAM MEDICO) + voce 114:02",
+  "frame": "frame-1142.png",
+  "ancora": "se la teoria e' confermata dovremmo avere qualche problema a vedere ... come si chiamano",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-265",
+  "tipo": "dato",
+  "contenuto": "Una tabella del team medico in una knowledge base clinica associa a ogni professionista nome, specializzazione e i giorni di presenza in studio.",
+  "fonte": "NmoOZVTrTXA#113:54 (sezione TEAM MEDICO) + voce 113:50",
+  "frame": "frame-1140.png",
+  "ancora": "Dott. Giovanni Beggiato — Odontoiatria generale, implantologia — Lun/Mar/Gio/Ven",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-266",
+  "tipo": "procedura",
+  "contenuto": "Una sezione 'Gestione prenotazioni' in una knowledge base clinica descrive un flusso standard a 7 step: raccogliere nome e cognome, capire il tipo di visita, verificare disponibilita' con il tool dedicato, proporre al massimo due fasce orarie, riepilogare e chiedere conferma esplicita, confermare solo dopo il si', informare sui documenti da portare.",
+  "fonte": "NmoOZVTrTXA#114:48 (sezione Gestione prenotazioni, Flusso standard) + voce 114:47",
+  "frame": "frame-1149.png",
+  "ancora": "Step 6 — Confermare la prenotazione con book_appointment solo dopo la conferma",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-267",
+  "tipo": "regola",
+  "contenuto": "Le regole di prenotazione operative di una clinica tipicamente fissano: prima visita sempre gratuita (30 minuti), visita urgente in uno slot dedicato entro 24 ore, disdetta con almeno 24 ore di preavviso, segnalazione dei no-show ripetuti alla segreteria, e la presenza di un genitore/tutore obbligatoria per i pazienti pediatrici.",
+  "fonte": "NmoOZVTrTXA#114:54 (elenco Regole di prenotazione) + voce 114:47",
+  "frame": "frame-1150.png",
+  "ancora": "No-show ripetuto (piu' di due volte): segnalare alla segreteria",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-268",
+  "tipo": "procedura",
+  "contenuto": "Un protocollo urgenze ben scritto in una knowledge base definisce sia le parole chiave che lo attivano (es. dolore acuto, ascesso, trauma, sangue che non si ferma, febbre alta con dolore) sia la sequenza di azioni da eseguire: rassicurare con tono calmo, saltare il small talk, cercare il primo slot disponibile, trasferire alla segreteria se non ce ne sono.",
+  "fonte": "NmoOZVTrTXA#114:54 (sezione PROTOCOLLO URGENZE) + voce 114:47",
+  "frame": "frame-1150.png",
+  "ancora": "Parole chiave che attivano il protocollo urgente ... 4 — Se non ci sono slot: trasferire subito alla segreteria o al medico di turno",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di"},
+   {"verso": "KA-270", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-269",
+  "tipo": "regola",
+  "contenuto": "Anche dentro un protocollo urgenze, va prevista un'eccezione esplicita: in caso di gonfiore al collo o difficolta' respiratoria, la procedura corretta non e' fissare una visita ma indirizzare subito il chiamante al Pronto Soccorso.",
+  "fonte": "NmoOZVTrTXA#115:12 (frammento di pagina intravisto) + voce 115:10",
+  "frame": "frame-1153.png",
+  "ancora": "gonfiore al collo o difficolta' respiratoria: indicare il Pronto Soccorso",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-268", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-270",
+  "tipo": "esempio",
+  "contenuto": "Quando il tool di verifica disponibilita' non restituisce alcun risultato utile, un agente vocale ben progettato applica comunque il passo finale del protocollo urgenza (trasferire alla segreteria) invece di bloccarsi o inventare uno slot inesistente.",
+  "fonte": "NmoOZVTrTXA#115:48 (risposta finale dopo Tool Response senza risultato) + voce 115:36",
+  "frame": "frame-1159.png",
+  "ancora": "Non ci sono slot disponibili domani. Le passo subito la segreteria per trovare una soluzione immediata",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-268", "tipo": "applica"},
+   {"verso": "KA-229", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-271",
+  "tipo": "avvertimento",
+  "contenuto": "Un bug tipico nei workflow di disponibilita' e' che il sistema risponda 'nessuno slot disponibile' anche quando in realta' esistono slot liberi nella fonte dati reale: prima di fidarsi della risposta dell'agente, va sempre verificato il dato sorgente per capire se il rifiuto e' corretto o e' un errore del workflow.",
+  "fonte": "NmoOZVTrTXA#117:00 (verifica manuale sulla cella orario) + voce 01:56:53",
+  "frame": "frame-1171.png",
+  "ancora": "questo e' falso invece, non ci sono slot disponibili perche' io li ho",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-278", "tipo": "corretto-da"}
+  ]
+ },
+ {
+  "id": "KA-272",
+  "tipo": "avvertimento",
+  "contenuto": "Un errore comune nella prima versione di un workflow di prenotazione e' scrivere l'appuntamento solo su un foglio di calcolo (Google Sheet) senza alcun collegamento a un calendario reale (Google Calendar): un gap facilmente identificabile controllando i campi disponibili nel nodo che scrive i dati.",
+  "fonte": "NmoOZVTrTXA#117:06 (nodo Prenota Appuntamento, solo Google Sheets) + voce 01:57:06",
+  "frame": "frame-1172.png",
+  "ancora": "dovrei vedere di avere accesso ad un calendario. Cosa che io qua non vedo per esempio",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-282", "tipo": "corretto-da"}
+  ]
+ },
+ {
+  "id": "KA-273",
+  "tipo": "struttura",
+  "contenuto": "Una sezione FAQ in una knowledge base clinica raccoglie domande e risposte pronte all'uso (es. gratuita' della prima visita, mutue non accettate ma assicurazioni private si', igiene senza visita solo per pazienti gia' in cura, durata media di un impianto), pensate per essere recuperate parola per parola dal tool di ricerca.",
+  "fonte": "NmoOZVTrTXA#116:30 (sezione DOMANDE FREQUENTI) + voce 01:56:18",
+  "frame": "frame-1166.png",
+  "ancora": "D: Accettate convenzioni o mutue? — R: Al momento la clinica non aderisce al Servizio Sanitario Nazionale",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-274",
+  "tipo": "procedura",
+  "contenuto": "Quando un test in produzione rivela un problema reale, la procedura corretta e' comunicarlo all'assistente di coding incollando l'errore osservato cosi' com'e' (non riassunto), chiedendogli esplicitamente di analizzarlo e fare debugging.",
+  "fonte": "NmoOZVTrTXA#117:18 / 118:36 (ritorno su Claude Code col riepilogo, richiesta di debugging) + voce 01:57:14",
+  "frame": "frame-1174.png",
+  "ancora": "ti incollo anche l'errore che il tool mi sta dando, di modo tale che tu possa magari fare debugging",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-275", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-275",
+  "tipo": "procedura",
+  "contenuto": "Davanti a un problema con piu' cause potenziali, un assistente di coding puo' lanciare piu' sub-agenti in parallelo, ciascuno incaricato di investigare una fonte diversa (es. uno i log del workflow n8n, un altro lo stato dell'assistant VAPI), invece di indagare tutto in sequenza.",
+  "fonte": "NmoOZVTrTXA#119:48 (due blocchi Agent lanciati in parallelo) + voce 01:59:45",
+  "frame": "frame-1199.png",
+  "ancora": "Agent: Debug n8n workflow executions ... Agent: Explore VAPI assistant and tools",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-274", "tipo": "applica"},
+   {"verso": "KA-276", "tipo": "precede"},
+   {"verso": "KA-277", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-276",
+  "tipo": "comando",
+  "contenuto": "Per fare debugging lato VAPI, si interroga direttamente l'API con l'endpoint delle chiamate recenti (es. GET /call con limite risultati e token Bearer di autenticazione) per ottenere i log delle ultime chiamate reali.",
+  "fonte": "NmoOZVTrTXA#120:06 (comando curl Get recent call logs) + voce 02:00:05",
+  "frame": "frame-1202.png",
+  "ancora": "curl -s \"https://api.vapi.ai/call?limit=5\" -H \"Authorization: Bearer [...]\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-275", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-277",
+  "tipo": "comando",
+  "contenuto": "Per fare debugging lato n8n, si interroga l'API REST con l'endpoint delle esecuzioni recenti (es. GET /executions con limite risultati, includeData e API key) per leggere gli errori esatti registrati nelle ultime run dei workflow.",
+  "fonte": "NmoOZVTrTXA#120:36 (comando curl Check recent n8n executions) + voce 02:00:34",
+  "frame": "frame-1207.png",
+  "ancora": "curl -s \"https://.../api/v1/executions?limit=10&includeData=true\" -H \"X-N8N-API-KEY: [...]\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-275", "tipo": "parte-di"},
+   {"verso": "KA-278", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-278",
+  "tipo": "anti-pattern",
+  "contenuto": "Un bug classico nell'integrazione tra un servizio esterno (VAPI) e un'automazione (n8n) e' un mismatch nel path della struttura dati: VAPI invia gli argomenti del tool in toolCallList[0].function.arguments, ma il codice del workflow cercava toolCallList[0].arguments (senza il livello 'function'), facendo fallire sistematicamente ogni chiamata di tool.",
+  "fonte": "NmoOZVTrTXA#120:48 / 121:06 (Piano di fix; spiegazione del bug) + voce 02:01:00",
+  "frame": "frame-1212.png",
+  "ancora": "VAPI invia toolCallList[0].function.arguments ... ma i nostri Code node cercano toolCallList[0].arguments (manca .function. nel path)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-279", "tipo": "esempio-di"},
+   {"verso": "KA-280", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-279",
+  "tipo": "principio",
+  "contenuto": "Quando un servizio esterno invia dati con una struttura precisa, va sempre verificato il path esatto dei campi ricevuti invece di assumerlo per analogia: un livello di annidamento mancante o in piu' fa fallire silenziosamente l'intera integrazione.",
+  "fonte": "NmoOZVTrTXA#121:06 (spiegazione del bug toolCallList) + voce 02:01:00",
+  "frame": "frame-1212.png",
+  "ancora": "Questo e' il bug che causa tutti gli errori",
+  "confidenza": "dedotto",
+  "relazioni": []
+ },
+ {
+  "id": "KA-280",
+  "tipo": "procedura",
+  "contenuto": "Anche per una semplice correzione di bug (non solo per una feature nuova), conviene far produrre prima all'assistente di coding un piano che spiega la causa del problema e il fix proposto, da rivedere e approvare prima che venga applicato.",
+  "fonte": "NmoOZVTrTXA#120:48 (Piano: Fix AI Receptionist + Google Calendar Integration) + voce 02:00:43",
+  "frame": "frame-1209.png",
+  "ancora": "Piano: Fix AI Receptionist + Google Calendar Integration ... Ready for review",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-217", "tipo": "applica"},
+   {"verso": "KA-281", "tipo": "precede"},
+   {"verso": "KA-282", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-281",
+  "tipo": "principio",
+  "contenuto": "Quando serve aggiungere una nuova integrazione (es. Google Calendar), conviene prima verificare se una credenziale adatta esiste gia' nell'ambiente e riusarla, invece di crearne una nuova da zero.",
+  "fonte": "NmoOZVTrTXA#121:06 (credenziale Google Calendar gia' presente in n8n) + voce 02:01:00",
+  "frame": "frame-1212.png",
+  "ancora": "Aggiungere Google Calendar a tutti i workflow (credenziale gia' presente in n8n)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-211", "tipo": "applica"},
+   {"verso": "KA-282", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-282",
+  "tipo": "esempio",
+  "contenuto": "Dopo un fix architetturale, ciascuno dei 4 workflow di un AI receptionist (check/book/cancel/reschedule) puo' essere esteso per interagire sia con il Google Sheet (CRM) sia con Google Calendar, cosicche' ogni azione sull'appuntamento si rifletta in entrambi i sistemi contemporaneamente.",
+  "fonte": "NmoOZVTrTXA#125:18 (riepilogo Fix Completati) + voce 02:05:18",
+  "frame": "frame-1254.png",
+  "ancora": "Book Appointment: scrive nel Sheet e crea evento in Calendar",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-283", "tipo": "precede"},
+   {"verso": "KA-286", "tipo": "precede"}
+  ]
+ },
+ {
+  "id": "KA-283",
+  "tipo": "esempio",
+  "contenuto": "Testato dopo il fix, un appuntamento prenotato via chat con l'agente vocale compare correttamente sia come nuova riga nel Google Sheet CRM sia come evento nel Google Calendar collegato, con lo stesso account autenticato via OAuth come creatore dell'evento.",
+  "fonte": "NmoOZVTrTXA#123:18 / 124:24 (riga confermata sul foglio; evento su Calendar) + voce 02:03:10",
+  "frame": "frame-1234.png",
+  "ancora": "riga 6 (selezionata): 8:30, confermato ... toolCallId call_xCZrP0gmx5rgg3IRGPpQy4Wt",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-282", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-284",
+  "tipo": "procedura",
+  "contenuto": "n8n permette di ispezionare le esecuzioni passate di un workflow (tab Executions) nodo per nodo, mostrando l'input e l'output esatti che sono stati processati in quella specifica run, utile per verificare o fare debugging a posteriori.",
+  "fonte": "NmoOZVTrTXA#125:12 (lista Executions con dettaglio canvas) + voce 02:05:04",
+  "frame": "frame-1253.png",
+  "ancora": "Mar 24, 20:33:28 — Succeeded in 5.313s ... ID#40",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-285", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-285",
+  "tipo": "esempio",
+  "contenuto": "Il messaggio di risposta di un tool puo' essere costruito dinamicamente in n8n con un'espressione che compone la frase leggendo i dati raccolti dal nodo precedente (nome, data, ora), invece di un testo fisso identico per ogni caso.",
+  "fonte": "NmoOZVTrTXA#124:42 (nodo Conferma Prenotazione, Response Body) + voce 02:04:50",
+  "frame": "frame-1248.png",
+  "ancora": "'Appuntamento confermato per ' + $('Verifica Duplicato').first().json.nome + ' il ' + ...",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-286",
+  "tipo": "esempio",
+  "contenuto": "Testato dopo il fix, cancellare un appuntamento tramite la chat con l'agente vocale rimuove correttamente sia la riga corrispondente nel Google Sheet sia l'evento gemello dal Google Calendar collegato.",
+  "fonte": "NmoOZVTrTXA#124:06 / 124:12 (conferma cancellazione in chat; calendario ripulito) + voce 02:03:58",
+  "frame": "frame-1242.png",
+  "ancora": "Appuntamento del 27/03/2026 alle 8:30 cancellato con successo. Rimosso anche dal calendario",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-282", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-287",
+  "tipo": "procedura",
+  "contenuto": "Una volta che il sistema funziona end-to-end, si possono continuare a chiedere piccoli aggiustamenti (cambiare voce, ridurre latenza, cambiare lingua) all'assistente di coding con semplici istruzioni testuali successive, senza dover ripartire da zero.",
+  "fonte": "NmoOZVTrTXA#125:48 (bug risolto evidenziato, esempio di iterazione) + voce 02:05:36",
+  "frame": "frame-1259.png",
+  "ancora": "non gli diciamo, hey, per favore modificare la latenza, fai la voce in italiano",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-288",
+  "tipo": "struttura",
+  "contenuto": "I modelli di business per soluzioni di voice/AI agentic si possono classificare per potenziale di reddito annuo: AI Recruitment $200k-700k (costo medio, difficolta' medio-alta), Lead Reactivation $150k-500k (costo basso-medio, difficolta' media), AI Customer Support $120k-400k (costo medio, difficolta' medio-alta), AI Receptionist $20k-120k (costo di realizzazione il piu' basso di tutti, poche centinaia di euro, difficolta' media).",
+  "fonte": "NmoOZVTrTXA#126:24 (lavagna Offerte per aziende) + voce 02:05:50",
+  "frame": "frame-1265.png",
+  "ancora": "01 AI Recruitment ... $200k - $700k ... 05 AI Receptionist — Few $100 ... $20k - $120k",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-289", "tipo": "precede"},
+   {"verso": "KA-291", "tipo": "precede"},
+   {"verso": "KA-294", "tipo": "precede"},
+   {"verso": "KA-295", "tipo": "precede"},
+   {"verso": "KA-292", "tipo": "alternativa-a", "perche": "e' una seconda lente di classificazione (dentro/bordo/fuori) sugli stessi modelli di business"}
+  ]
+ },
+ {
+  "id": "KA-289",
+  "tipo": "principio",
+  "contenuto": "Tra i modelli di business voice-AI, l'AI Receptionist ha il potenziale di reddito piu' basso perche' si vende tipicamente con un retainer mensile contenuto: per arrivare a circa 20.000 euro al mese servono all'incirca 80-100 clienti attivi.",
+  "fonte": "NmoOZVTrTXA#126:24 / 127:18 (cifra 'Few $100' e conto clienti necessari) + voce 02:07:14",
+  "frame": "frame-1274.png",
+  "ancora": "ci servono sostanzialmente un ottantino, un centinaio di clienti",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-288", "tipo": "applica"},
+   {"verso": "KA-290", "tipo": "motiva"}
+  ]
+ },
+ {
+  "id": "KA-290",
+  "tipo": "principio",
+  "contenuto": "Posizionarsi con prezzi troppo bassi tende ad attirare clienti piu' difficili da gestire; posizionarsi su un segmento piu' premium porta tipicamente clienti piu' semplici da seguire nel tempo.",
+  "fonte": "NmoOZVTrTXA#127:24 / 127:36 (argomentazione su clienti low-cost vs premium) + voce 02:07:40",
+  "frame": "frame-1277.png",
+  "ancora": "se ci posizioniamo un segmento un po' piu' premium, generalmente diventano clienti un po' piu' semplici",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-291",
+  "tipo": "principio",
+  "contenuto": "Scegliere una nicchia con un ticket medio piu' alto (es. e-commerce, dove un AI Customer Support puo' anche recuperare ordini abbandonati) sposta il valore di un servizio verso la fascia piu' alta del suo intervallo di reddito potenziale.",
+  "fonte": "NmoOZVTrTXA#128:36 (evidenziazione a mano su $120k-$400k) + voce 02:08:35",
+  "frame": "frame-1287.png",
+  "ancora": "fare il recupero ordini, quindi riuscite anche a monetizzare questa cosa qui",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-288", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-292",
+  "tipo": "struttura",
+  "contenuto": "Le funzioni/soluzioni aziendali si possono classificare con un framework a tre livelli per valore economico: 'dentro' l'azienda (processi interni come le FAQ, basso impatto economico), 'di bordo' (riguardano lead che gia' conoscono l'azienda, es. un cliente che chiama direttamente, valore medio), 'fuori'/outbound (si contattano persone che non conoscono l'azienda, valore economico piu' alto ma esecuzione piu' difficile).",
+  "fonte": "NmoOZVTrTXA#131:24 (disegno rettangolo azienda con zone) + voce 02:11:23",
+  "frame": "frame-1315.png",
+  "ancora": "le cose dentro, le cose nel bordo, le cose fuori, questo vale un po' per tutto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-288", "tipo": "alternativa-a"}
+  ]
+ },
+ {
+  "id": "KA-293",
+  "tipo": "principio",
+  "contenuto": "Nelle aziende, le funzioni orientate all'outbound (vendite/commerciale, tech) sono generalmente le meglio retribuite; il marketing e' considerato tipicamente una funzione 'di bordo', con impatto economico percepito minore rispetto a vendite e tech.",
+  "fonte": "NmoOZVTrTXA#132:18 (chiusura del framework dentro/bordo/fuori) + voce 02:12:18",
+  "frame": "frame-1324.png",
+  "ancora": "sono quelli che prendono piu' soldi. Perche'? Perche' siamo sempre in outbound",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-292", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-294",
+  "tipo": "principio",
+  "contenuto": "Il modello di business Lead Reactivation si prezza tipicamente come percentuale sul revenue effettivamente recuperato per il cliente, non come retainer fisso: un modello win-win perche' il fornitore guadagna solo se il cliente guadagna a sua volta.",
+  "fonte": "NmoOZVTrTXA#129:36 (spiegazione del modello Lead Reactivation) + voce 02:09:34",
+  "frame": "frame-1297.png",
+  "ancora": "se il vostro cliente pagando vi diciamo guadagna, poi guadagnate su guadagnato, quindi e' un win per tutti",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-288", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-295",
+  "tipo": "principio",
+  "contenuto": "Il modello AI Recruitment/outbound e' il piu' difficile da eseguire tra quelli elencati, ma offre il ritorno economico piu' alto, tipicamente pagato a percentuale sul risultato ottenuto (es. percentuale su un candidato piazzato o su un cliente chiuso).",
+  "fonte": "NmoOZVTrTXA#130:06 (sottolineatura su AI Recruitment) + voce 02:09:51",
+  "frame": "frame-1302.png",
+  "ancora": "Outbound potrete guadagnare su percentuale di un cliente chiuso, percentuale di un candidato preso",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-288", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-296",
+  "tipo": "struttura",
+  "contenuto": "Il corso si chiude con una doppia call-to-action: un primo link per le piccole/medie imprese interessate a farsi costruire una soluzione voice-AI su misura (contatto diretto, risposta dal team se c'e' un fit), e un secondo link per chi lavora ancora a tempo pieno e vuole imparare a vendere questo tipo di soluzioni tramite un coaching program dedicato di 90 giorni.",
+  "fonte": "NmoOZVTrTXA#132:42 (chiusura a webcam, fine screen-share) + voce 02:12:44",
+  "frame": "frame-1328.png",
+  "ancora": "vi lascio anche per voi il secondo link qua sotto che e' il link al mio coaching program dove vi aiuto a partire con la vostra AI Agents in i prossimi 90 giorni",
+  "confidenza": "osservato",
+  "relazioni": []
+ }
+]

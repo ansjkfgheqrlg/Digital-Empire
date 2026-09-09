@@ -1149,5 +1149,404 @@
   "frame": "frame-0774.png",
   "ancora": "utilizzerò di nuovo il mio whisper flow... Allora mi servirebbe che mi aiutassi ora a popolare il mio vapi.md (testo che compare dettato in tempo reale)",
   "confidenza": "osservato"
+ },
+ {
+  "id": "KA-205",
+  "tipo": "definizione",
+  "contenuto": "VAPI si definisce come una piattaforma per sviluppatori dedicata alla costruzione di agenti vocali AI: gestisce l'infrastruttura complessa (telefonia, riconoscimento vocale, modello linguistico, sintesi vocale) così lo sviluppatore può concentrarsi sulla logica e l'esperienza dell'agente.",
+  "fonte": "NmoOZVTrTXA#77:30 (docs.vapi.ai/quickstart/introduction) + voce 77:20",
+  "frame": "frame-0776.png",
+  "ancora": "Vapi is the developer platform for building voice AI agents. We handle the complex infrastructure so you can focus on creating great voice experiences.",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-206",
+  "tipo": "procedura",
+  "contenuto": "Per costruire un documento di riferimento operativo (es. vapi.md) tramite Claude Code, si può fornire in un unico prompt: più link alla documentazione ufficiale della piattaforma (introduzione, API reference, MCP), istruzioni esplicite su come leggere e strutturare le informazioni nel file, e un \"prompt di riferimento\" già collaudato incollato per intero, da usare come base di qualità per ogni futuro prompt di agente generato a partire da quel documento.",
+  "fonte": "NmoOZVTrTXA#78:42-80:24 (prompt completo con 3 link + 4 istruzioni + \"PROMPT DI RIFERIMENTO\") + voce 78:45-79:48",
+  "frame": "frame-0805.png",
+  "ancora": "4. Vorrei che per creare un prompt di un agente tu non utilizzassi un prompt fai-da-te ma che utilizzassi il prompt che ti fornisco sotto... PROMPT DI RIFERIMENTO:",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-151", "tipo": "applica", "perche": "è un'applicazione più ricca dello stesso pattern usato per n8n.md"}
+  ]
+ },
+ {
+  "id": "KA-207",
+  "tipo": "struttura",
+  "contenuto": "Il template di riferimento per system prompt di agenti vocali, oltre ai quattro blocchi IDENTITÀ/STILE/LINEE GUIDA RISPOSTA/TASK, include ulteriori sezioni standard: CONTESTO (tutto ciò che l'agente deve sapere sull'azienda: servizi, prezzi, orari, zone operative), RILEVAMENTO URGENZA (parole chiave che attivano un protocollo di urgenza), TIPI DI CHIAMATA (comportamenti diversi per chi chiede prezzi, anziani/lenti, frustrati, sospetti/competitor), e TOOL.",
+  "fonte": "NmoOZVTrTXA#80:18 (documento Notion con il primo prompt del corso, sezioni # CONTESTO, # RILEVAMENTO URGENZA, # TIPI DI CHIAMATA, # TOOL) + voce 80:13",
+  "frame": "frame-0804.png",
+  "ancora": "# CONTESTO: Tutto ciò che l'agente deve sapere sull'azienda... # RILEVAMENTO URGENZA... # TIPI DI CHIAMATA... # TOOL",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-103", "tipo": "parte-di", "perche": "estende con altre sezioni la stessa struttura a blocchi già definita"}
+  ]
+ },
+ {
+  "id": "KA-208",
+  "tipo": "regola",
+  "contenuto": "Le linee guida di risposta di un buon system prompt per agente vocale includono regole conversazionali precise: una sola domanda per risposta (aspettando la risposta prima di continuare), massimo quindici parole per risposta quando possibile, riconoscere sempre quanto detto dal chiamante prima della domanda successiva, non ripetere informazioni già date, e presentare al massimo due opzioni alla volta.",
+  "fonte": "NmoOZVTrTXA#80:18 (template Notion, sezione # LINEE GUIDA RISPOSTA) + voce 80:13",
+  "frame": "frame-0804.png",
+  "ancora": "Una domanda per risposta. Aspetta la risposta prima di continuare. Massimo quindici parole per risposta quando possibile... Se presenti opzioni, massimo due alla volta.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di", "perche": "è il dettaglio della sezione LINEE GUIDA RISPOSTA dello stesso template"}
+  ]
+ },
+ {
+  "id": "KA-209",
+  "tipo": "regola",
+  "contenuto": "Nel template di riferimento per prompt di agenti vocali, l'orario attuale va sempre passato come variabile dinamica (es. {{now}}) invece di un valore statico, a prescindere da quale piattaforma vocale (VAPI, n8n, ecc.) la ospiti.",
+  "fonte": "NmoOZVTrTXA#80:18 (sezione \"## Orario attuale\" del template Notion) + osservazione schermo",
+  "frame": "frame-0804.png",
+  "ancora": "## Orario attuale: {{now}} — usa SEMPRE variabile dinamica per questo, a prescindere dalla piattaforma (VAPI...)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-181", "tipo": "parte-di", "perche": "generalizza a qualunque piattaforma la stessa regola sulle variabili dinamiche"}
+  ]
+ },
+ {
+  "id": "KA-210",
+  "tipo": "procedura",
+  "contenuto": "Prima di rinominare un file referenziato altrove nel progetto, un comportamento sicuro è cercare con grep tutti i riferimenti al suo nome in ogni documento (inclusi i file di istruzioni e di memoria) per verificare quali vadano aggiornati, prima di eseguire la rinomina effettiva.",
+  "fonte": "NmoOZVTrTXA#81:36-81:48 (sequenza Grep \"n8n\\.md\" prima del comando \"mv\") + voce 81:09",
+  "frame": "frame-0819.png",
+  "ancora": "Let me find any references to n8n.md first. ... No references to update in the project docs. Now let me rename the file.",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-211",
+  "tipo": "principio",
+  "contenuto": "Per convenzione, i file markdown di istruzioni/riferimento di un progetto vengono spesso scritti con il nome tutto in maiuscolo (es. N8N.md, VAPI.md, CLAUDE.md), anche solo per renderli immediatamente riconoscibili a chiunque entri nel progetto.",
+  "fonte": "NmoOZVTrTXA#81:54 + voce 81:37 (e scena 313, 81:09: \"generalmente questi file.md sono scritti in caps\")",
+  "frame": "frame-0820.png",
+  "ancora": "generalmente questi file.md sono scritti in caps",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-210", "tipo": "motiva", "perche": "è la convenzione che giustifica la rinomina appena eseguita con verifica preventiva"}
+  ]
+ },
+ {
+  "id": "KA-212",
+  "tipo": "avvertimento",
+  "contenuto": "Quando un agente come Claude Code recupera automaticamente pagine di documentazione esterna (WebFetch), alcuni URL possono restituire errore 404 se la pagina è stata spostata o rinominata dal fornitore: è normale dover verificare quali fetch sono realmente andati a buon fine prima di fidarsi del risultato.",
+  "fonte": "NmoOZVTrTXA#81:54 (tentativi \"Web Fetch\" con esito \"Request failed with status code 404\" su più URL vapi.ai) + osservazione schermo",
+  "frame": "frame-0820.png",
+  "ancora": "Web Fetch https://docs.vapi.ai/quickstart/phone/inbound — Request failed with status code 404",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-213",
+  "tipo": "struttura",
+  "contenuto": "Il piano generato da Claude Code per il documento di riferimento vapi.md lo struttura in 12 sezioni: Overview, Quick Reference API, Assistente, Voice Providers, Transcriber, Tools (4 categorie: Default/Custom/Code/MCP), Telefono, Squads, Server URL & Webhook, MCP, Prompt Template, Checklist creazione agente.",
+  "fonte": "NmoOZVTrTXA#82:42 (piano \"Il file vapi.md sarà strutturato in 12 sezioni\") + voce 82:15-82:34",
+  "frame": "frame-0828.png",
+  "ancora": "1. OVERVIEW... 12. CHECKLIST CREAZIONE AGENTE — Passi operativi step-by-step",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-214",
+  "tipo": "dato",
+  "contenuto": "I webhook di VAPI (Server URL) gestiscono 19 tipi di eventi diversi durante una chiamata, con un vincolo di tempo critico: l'evento \"assistant-request\" deve ricevere risposta entro 7,5 secondi.",
+  "fonte": "NmoOZVTrTXA#82:42 (sezione 9 del piano, \"SERVER URL & WEBHOOK — 19 eventi, timing critico (7.5s per as...)\") + osservazione schermo",
+  "frame": "frame-0828.png",
+  "ancora": "9. SERVER URL & WEBHOOK — 19 eventi, timing critico (7.5s per as...",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-213", "tipo": "parte-di", "perche": "è il dettaglio della nona delle 12 sezioni pianificate"}
+  ]
+ },
+ {
+  "id": "KA-215",
+  "tipo": "struttura",
+  "contenuto": "Il documento vapi.md generato definisce sei concetti chiave della piattaforma: Assistant (un singolo agente vocale con prompt/voce/modello/tool), Squad (più assistenti specializzati che si passano la chiamata), Tool (funzione richiamabile durante la conversazione), Phone Number (numero collegato per chiamate inbound/outbound), Server URL (endpoint webhook per eventi in tempo reale), e Call (una singola sessione vocale, telefonica o web).",
+  "fonte": "NmoOZVTrTXA#83:06 (VAPI.md, sezione \"Concetti chiave\") + voce 82:57-83:21",
+  "frame": "frame-0832.png",
+  "ancora": "Assistant — Un singolo agente vocale con prompt, voce, modello e tools ... Call — Una singola sessione vocale (telefono o web)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-213", "tipo": "parte-di", "perche": "è il contenuto generato per la prima delle 12 sezioni pianificate"}
+  ]
+ },
+ {
+  "id": "KA-216",
+  "tipo": "dato",
+  "contenuto": "Tra le caratteristiche dichiarate di VAPI nella propria documentazione: latenza sotto i 600 millisecondi, gestione naturale del turn-taking (incluse le interruzioni), chiamate telefoniche sia inbound che outbound, un widget web per l'embedding in app, e integrazione con API/database tramite tool.",
+  "fonte": "NmoOZVTrTXA#83:06 (VAPI.md, sezione \"Caratteristiche\") + voce 83:11",
+  "frame": "frame-0832.png",
+  "ancora": "Latenza sotto 600ms - Turn-taking naturale (gestione interruzioni) - Chiamate telefoniche inbound e outbound - Widget web per embedding in app",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-215", "tipo": "parte-di", "perche": "è la seconda parte della stessa sezione Overview di vapi.md"}
+  ]
+ },
+ {
+  "id": "KA-217",
+  "tipo": "principio",
+  "contenuto": "Quando manca una credenziale necessaria (es. una API key non trovata nel file .env), un agente ben progettato come Claude Code non blocca silenziosamente né la inventa: pone esplicitamente una domanda strutturata all'utente con opzioni chiare (es. \"la fornisco ora\" / \"la aggiungo io al .env\") prima di proseguire.",
+  "fonte": "NmoOZVTrTXA#85:00 (popup \"AskUserQuestion\" — \"VAPI API Key\") + voce 84:59-85:06",
+  "frame": "frame-0851.png",
+  "ancora": "Non ho trovato una API Key VAPI nel file .env. Per creare l'agente via API ho bisogno di alcune informazioni. AskUserQuestion",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-218",
+  "tipo": "dato",
+  "contenuto": "VAPI distingue due tipi di API key nella sezione \"API Keys\" della dashboard: la Private API Key (accesso server-side, usata per chiamate dirette all'API come la creazione di un assistente) e la Public API Key (accesso client-side per SDK, configurabile con restrizioni su domini, assistenti consentiti e assistenti transient).",
+  "fonte": "NmoOZVTrTXA#85:18 (dashboard.vapi.ai/org/api-keys) + voce 85:14-85:21",
+  "frame": "frame-0854.png",
+  "ancora": "Private API Keys — Server-side API access ... Public API Keys — Client-side SDK access ... Origins: All domains allowed",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-219",
+  "tipo": "esempio",
+  "contenuto": "Claude Code può creare un assistente VAPI interamente via API, senza passare dalla dashboard: esegue una richiesta curl POST a https://api.vapi.ai/assistant con header \"Authorization: Bearer <private key>\" e un body JSON di configurazione, ottenendo in risposta l'id univoco del nuovo assistente creato.",
+  "fonte": "NmoOZVTrTXA#88:42 (comando Bash \"Create VAPI assistant\" con curl POST) + osservazione schermo",
+  "frame": "frame-0888.png",
+  "ancora": "curl -s -X POST \"https://api.vapi.ai/assistant\" -H \"Authorization: Bearer 58168a0a-...\" -H \"Content-Type: application/json\" ... { \"id\": \"dfc195a5-de61-432a-a4d2-7e53f2941b2b\", ...}",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-218", "tipo": "applica", "perche": "usa concretamente la Private API Key per una chiamata server-side"}
+  ]
+ },
+ {
+  "id": "KA-220",
+  "tipo": "esempio",
+  "contenuto": "Configurazione concreta scelta in autonomia da Claude Code per un agente vocale italiano di prova: modello linguistico GPT-4o (OpenAI), voce ElevenLabs \"Sarah\" (modello multilingual v2, con supporto italiano), transcriber Deepgram nova-3 con lingua impostata su \"it\" ed endpointing a 300ms.",
+  "fonte": "NmoOZVTrTXA#88:42 (tabella \"Componente | Configurazione\" nel riepilogo di Claude Code) + voce 88:33",
+  "frame": "frame-0888.png",
+  "ancora": "LLM | GPT-4o (OpenAI) — Voce | ElevenLabs - Sarah (multilingual v2, supporto italiano) — Transcriber | Deepgram nova-3, lingua it, endpointing 300ms",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-219", "tipo": "parte-di", "perche": "è il contenuto della configurazione inviata nella stessa chiamata API"}
+  ]
+ },
+ {
+  "id": "KA-221",
+  "tipo": "esempio",
+  "contenuto": "Un buon system prompt per agente vocale prevede risposte pronte per la gestione degli errori conversazionali: una frase per quando non si capisce l'utente (\"Scusa, non ho sentito bene. Puoi ripetere?\") e una per il silenzio prolungato (\"Ehi, sei ancora lì?\"), oltre a parole di riempimento naturali come \"certo\", \"capito\", \"nessun problema\" per suonare meno robotico.",
+  "fonte": "NmoOZVTrTXA#87:36 (System Prompt generato per \"Agente vocale prova\") + voce 87:34-87:46",
+  "frame": "frame-0877.png",
+  "ancora": "Se non capisci: \"Scusa, non ho sentito bene. Puoi ripetere?\" — Se c'è silenzio lungo: \"Ehi, sei ancora lì?\" ... Usa parole di riempimento naturali come \"certo\", \"capito\", \"nessun problema\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "esempio-di", "perche": "è un'istanza concreta delle sezioni GESTIONE ERRORI/STILE del template"}
+  ]
+ },
+ {
+  "id": "KA-222",
+  "tipo": "dato",
+  "contenuto": "Un assistente VAPI di prova configurato con GPT-4o Cluster, voce ElevenLabs Sarah e transcriber Deepgram mostra nella dashboard un costo dichiarato di circa $0,12 al minuto e una latenza dichiarata di circa 2000 millisecondi.",
+  "fonte": "NmoOZVTrTXA#88:00 (dashboard, indicatori Cost/Latency) + osservazione schermo",
+  "frame": "frame-0881.png",
+  "ancora": "Cost — ~$0.12 /min ... Latency — ~2000 ms",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-223",
+  "tipo": "principio",
+  "contenuto": "Testare un agente vocale con una chiamata reale subito dopo averlo creato permette di scoprire in diretta difetti percepibili non evidenti dalla sola configurazione, come una latenza di circa due secondi giudicata \"lentissima\" o un tono di voce giudicato \"un po' robotico\".",
+  "fonte": "NmoOZVTrTXA#88:24-89:12 (trascrizione live della chiamata di prova) + voce 88:33-89:08",
+  "frame": "frame-0885.png",
+  "ancora": "mi piace ho un problema la latenza è tipo due secondi quindi è lentissimo... mi sembra che sia un po' robotica la voce",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-222", "tipo": "quantificato-da", "perche": "i numeri di costo/latenza già mostrati sono la base tecnica del giudizio dato durante la chiamata"}
+  ]
+ },
+ {
+  "id": "KA-224",
+  "tipo": "regola",
+  "contenuto": "Quando si chiede a Claude Code di creare un singolo agente/assistente, conviene specificare esplicitamente di non creare anche un workflow collegato (se non richiesto) e verificare che il piano proposto non lo includa comunque, perché capita che l'agente aggiunga un workflow non richiesto espandendo eccessivamente lo scope del compito.",
+  "fonte": "NmoOZVTrTXA#84:36-85:00 (istruzione \"Mi raccomando non fare alcun tipo di workflow\" + verifica nel piano) + voce 84:12, 84:41-84:45",
+  "frame": "frame-0847.png",
+  "ancora": "Mi raccomando non fare alcun tipo di workflow, quello lo chiederò a parte / molto spesso quello che succede è che noi glielo diciamo poi nel piano c'è scritto file workflow tutto esplode",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-225",
+  "tipo": "dato",
+  "contenuto": "Dopo un primo giro di ottimizzazione (cambio di modello LLM e di voce), lo stesso assistente vocale di prova passa da un costo di ~$0,12/min e una latenza di ~2000ms a un costo di ~$0,11/min e una latenza di ~665ms.",
+  "fonte": "NmoOZVTrTXA#89:36 (dashboard VAPI, indicatori Cost/Latency aggiornati) + voce 89:44",
+  "frame": "frame-0897.png",
+  "ancora": "Cost — ~$0.11 /min ... Latency — ~665 ms / il mio agente vocale prova ora una latenza di 6,65... prima era un costo di 2 centesimi, ora l'ha anche ridotto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-222", "tipo": "contraddice", "perche": "mostra gli stessi indicatori dopo l'ottimizzazione, con valori molto più bassi"}
+  ]
+ },
+ {
+  "id": "KA-226",
+  "tipo": "esempio",
+  "contenuto": "Per ridurre latenza e \"roboticità\" di un assistente vocale VAPI già pubblicato, Claude Code applica una PATCH diretta via API (curl -X PATCH su /assistant/<id>) che cambia quattro parametri insieme: modello LLM da GPT-4o a GPT-4o-mini (risposta più rapida), modello voce ElevenLabs da eleven_multilingual_v2 a eleven_flash_v2_5 (ottimizzato per bassa latenza, supporta italiano), Stability da 0,5 a 0,3 (voce più espressiva e meno robotica), Similarity Boost da 0,75 a 0,85 (timbro più ricco e definito).",
+  "fonte": "NmoOZVTrTXA#91:18 (blocco \"Bash — Update VAPI assistant with faster model and more natural voice\", tabella Cosa/Prima/Dopo/Perché) + voce 91:09",
+  "frame": "frame-0914.png",
+  "ancora": "LLM: GPT-4o → GPT-4o-mini — Risposta molto più rapida... Modello voce: eleven_multilingual_v2 → eleven_flash_v2_5 — Modello ottimizzato per bassa latenza... Stability: 0.5 → 0.3 — Più bassa = voce espressiva e meno robotica",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-225", "tipo": "motiva", "perche": "è la modifica concreta che produce i nuovi valori di costo/latenza osservati"},
+   {"verso": "KA-223", "tipo": "applica", "perche": "risponde direttamente ai due difetti (latenza, voce robotica) notati durante il test dal vivo"}
+  ]
+ },
+ {
+  "id": "KA-227",
+  "tipo": "dato",
+  "contenuto": "Tra i voice provider alternativi suggeriti da Claude Code per ridurre ulteriormente la latenza di un agente vocale, Cartesia viene indicato con una latenza dichiarata ultra-bassa di circa 100 millisecondi.",
+  "fonte": "NmoOZVTrTXA#91:18 (suggerimento successivo alla PATCH: \"Provare Cartesia come voice provider (latenza ultra-bassa, ~100ms)\") + osservazione schermo",
+  "frame": "frame-0914.png",
+  "ancora": "Provare Cartesia come voice provider (latenza ultra-bassa, ~100ms)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-226", "tipo": "alternativa-a", "perche": "è un'ulteriore opzione di riduzione latenza oltre alla PATCH già applicata"}
+  ]
+ },
+ {
+  "id": "KA-228",
+  "tipo": "struttura",
+  "contenuto": "Il file VOICE_AGENT.md viene scritto come guida operativa master per costruire un intero agente vocale end-to-end, organizzata in un \"WORKFLOW a 7 Step\": (1) Analizza la richiesta e carica la documentazione, (2) Crea il prompt dell'agente, (3) Configura l'agente, (4) Se serve un workflow apri N8N.md e usa MCP n8n, (5) Recupera il webhook URL dal nodo trigger, (6) Crea un tool nell'agente vocale che punta a quel webhook, (7) Collega il tool all'agente.",
+  "fonte": "NmoOZVTrTXA#93:18 (VOICE_AGENT.md generato, \"## WORKFLOW — 7 Step\") + voce 91:43-92:34, 93:10",
+  "frame": "frame-0934.png",
+  "ancora": "## WORKFLOW — 7 Step ### Step 1 — Analizza la richiesta e carica la documentazione ... 7. Collega il tool all'agente.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-152", "tipo": "parte-di", "perche": "è il contenuto operativo del quarto dei quattro file di progetto già definiti"}
+  ]
+ },
+ {
+  "id": "KA-229",
+  "tipo": "procedura",
+  "contenuto": "Quando un agente vocale deve anche eseguire un'azione esterna (es. prenotare qualcosa), il collegamento tra le due piattaforme (VAPI e n8n) avviene tramite webhook: si costruisce prima il workflow n8n, si recupera l'URL del suo webhook dal nodo trigger, poi si crea nell'agente vocale un tool che punta a quell'URL, e infine si collega il tool all'agente.",
+  "fonte": "NmoOZVTrTXA#92:42 (VOICE_AGENT.md, step 5-7 del prompt) + voce 92:20-92:34",
+  "frame": "frame-0928.png",
+  "ancora": "5. Una volta creato il workflow, recupera il webhook URL dal nodo trigger. 6. Crea un tool dentro l'agente vocale che punta a quel webhook. 7. Collega il tool all'agente.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-228", "tipo": "parte-di", "perche": "è il dettaglio degli step 5-7 dello stesso workflow a 7 step"}
+  ]
+ },
+ {
+  "id": "KA-230",
+  "tipo": "struttura",
+  "contenuto": "Il template di prompt \"definitivo\" per un agente vocale (Sezione 11 di VAPI.md, richiamato da VOICE_AGENT.md) prevede dodici sezioni obbligatorie da compilare sempre tutte, senza saltarne nessuna: IDENTITÀ, STILE, LINEE GUIDA RISPOSTA, TASK, CONTESTO, RILEVAMENTO URGENZA, TIPI DI CHIAMANTE, TOOL, GUARDRAIL, GESTIONE ERRORI, ESEMPIO DI CONVERSAZIONE, NOTE.",
+  "fonte": "NmoOZVTrTXA#93:18 (VOICE_AGENT.md, Step 2 \"Crea il prompt dell'agente\") + osservazione schermo",
+  "frame": "frame-0934.png",
+  "ancora": "Compila TUTTE le sezioni del template — non saltarne nessuna: IDENTITA'... GUARDRAIL... GESTIONE ERRORI... ESEMPIO DI CONVERSAZIONE... NOTE.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-207", "tipo": "parte-di", "perche": "è l'elenco completo e definitivo delle sezioni del template già introdotto"},
+   {"verso": "KA-229", "tipo": "precede", "perche": "creare il prompt (step 2) avviene prima di configurare e collegare i tool (step 3-7)"}
+  ]
+ },
+ {
+  "id": "KA-231",
+  "tipo": "principio",
+  "contenuto": "Il prompt di un agente vocale, anche se segue un template rigido a sezioni fisse, deve suonare come una persona reale e non come un chatbot: la forma del contenuto (frasi corte, parole naturali, niente elenchi puntati) resta più importante della sola presenza delle sezioni.",
+  "fonte": "NmoOZVTrTXA#93:18 (VOICE_AGENT.md, \"Il prompt deve suonare come una persona reale, non un chatbot.\") + osservazione schermo",
+  "frame": "frame-0934.png",
+  "ancora": "Il prompt deve suonare come una persona reale, non un chatbot.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-230", "tipo": "parte-di", "perche": "è il criterio qualitativo che accompagna il template a 12 sezioni"}
+  ]
+ },
+ {
+  "id": "KA-232",
+  "tipo": "comando",
+  "contenuto": "Il comando \"/init\" dentro Claude Code analizza automaticamente l'intero progetto (file .md esistenti, file di configurazione, cartelle) e genera in autonomia il file CLAUDE.md alla radice, come alternativa più rapida a scrivere un mega-prompt manuale.",
+  "fonte": "NmoOZVTrTXA#94:42 (comando \"/init\" digitato, sequenza di analisi automatica del progetto) + voce 94:10",
+  "frame": "frame-0948.png",
+  "ancora": "o facciamo un mega prompt o facciamo slash init e quindi questo sostanzialmente permetterà di crearci in automatico il nostro file che si chiama appunto cloud.md",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-233",
+  "tipo": "avvertimento",
+  "contenuto": "Durante l'analisi automatica del progetto con /init, Claude Code può rilevare e segnalare da solo un problema di sicurezza reale non richiesto esplicitamente: nel caso osservato, una API key n8n presente in chiaro sia nel file .env sia in .claude/settings.json, con la raccomandazione di aggiungere .env a .gitignore e di sostituire la chiave in settings.json con un riferimento a variabile d'ambiente invece del valore diretto.",
+  "fonte": "NmoOZVTrTXA#95:06 (output di /init: \"Security warning: Your .env file and .claude/settings.json both contain your n8n API key in plain text...\") + osservazione schermo (non menzionato a voce)",
+  "frame": "frame-0952.png",
+  "ancora": "Security warning: Your .env file and .claude/settings.json both contain your n8n API key in plain text. The .env should be added to .gitignore if not already, and the API key should be removed from settings.json (use environment variable references instead).",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-232", "tipo": "parte-di", "perche": "è un effetto collaterale osservato durante la stessa esecuzione di /init"},
+   {"verso": "KA-186", "tipo": "applica", "perche": "applica la stessa convenzione .env già definita, notando che qui non viene rispettata del tutto"}
+  ]
+ },
+ {
+  "id": "KA-234",
+  "tipo": "struttura",
+  "contenuto": "Il file CLAUDE.md generato da /init per questo progetto si organizza in tre macro-sezioni: \"WHAT\" (cos'è il progetto, lo stack tecnico, la struttura dei file), \"HOW\" (come costruire un agente vocale, come funzionano i workflow n8n, i default di configurazione voce italiana), \"WHY\" (le insidie tecniche critiche da conoscere).",
+  "fonte": "NmoOZVTrTXA#95:12-95:36 (CLAUDE.md, sezioni ## WHAT / ## HOW / ## WHY) + voce 95:02, 95:34",
+  "frame": "frame-0953.png",
+  "ancora": "## WHAT ... ## HOW ... ## WHY / abbiamo il what, how e why",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-232", "tipo": "esempio-di", "perche": "è il risultato concreto generato dal comando /init in questo progetto"}
+  ]
+ },
+ {
+  "id": "KA-235",
+  "tipo": "avvertimento",
+  "contenuto": "Nei workflow n8n collegati a un webhook, i dati ricevuti si trovano nidificati sotto `$json.body.*` e non direttamente sotto `$json.*`: è indicato come l'errore più comune in assoluto quando si scrivono espressioni o codice che leggono l'input di un webhook.",
+  "fonte": "NmoOZVTrTXA#95:36 (CLAUDE.md, sezione \"## WHY\") + osservazione schermo (non menzionato a voce)",
+  "frame": "frame-0957.png",
+  "ancora": "Webhook data gotcha — n8n webhook data lives under $json.body.*, NOT $json.* directly. This is the #1 error.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-234", "tipo": "parte-di", "perche": "è la prima delle insidie tecniche elencate nella sezione WHY"}
+  ]
+ },
+ {
+  "id": "KA-236",
+  "tipo": "dato",
+  "contenuto": "In n8n esiste una dualità nel formato dei nomi dei tipi di nodo (nodeType): i tool MCP di ricerca e validazione (search_nodes, validate_node) si aspettano il formato senza prefisso (es. `nodes-base.httpRequest`), mentre il JSON effettivo del workflow richiede il formato con prefisso (es. `n8n-nodes-base.httpRequest`); i nodi della famiglia LangChain usano invece sempre il formato `@n8n/n8n-nodes-langchain.*`.",
+  "fonte": "NmoOZVTrTXA#95:36 (CLAUDE.md, sezione \"## WHY\") + osservazione schermo (non menzionato a voce)",
+  "frame": "frame-0957.png",
+  "ancora": "nodeType format duality — search_nodes/validate_node use nodes-base.httpRequest (no prefix), but workflow JSON uses n8n-nodes-base.httpRequest (with prefix). LangChain nodes always use @n8n/n8n-nodes-langchain.*.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-234", "tipo": "parte-di", "perche": "è la seconda insidia tecnica elencata nella sezione WHY"},
+   {"verso": "KA-172", "tipo": "applica", "perche": "chiarisce un dettaglio pratico dell'uso dei tool MCP search_nodes/get_node già introdotti"}
+  ]
+ },
+ {
+  "id": "KA-237",
+  "tipo": "regola",
+  "contenuto": "Il nome di un tool dichiarato nel prompt di un agente vocale VAPI deve corrispondere esattamente (stessa stringa) al campo `function.name` nella configurazione del tool: una minima discrepanza tra i due produce un fallimento silenzioso, senza errori visibili.",
+  "fonte": "NmoOZVTrTXA#95:36 (CLAUDE.md, sezione \"## WHY\") + osservazione schermo (non menzionato a voce)",
+  "frame": "frame-0957.png",
+  "ancora": "Tool name matching is critical — The tool name in the VAPI prompt must be IDENTICAL to function.name in the tool config. Mismatch = silent failure.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-234", "tipo": "parte-di", "perche": "è la quarta insidia tecnica elencata nella sezione WHY"},
+   {"verso": "KA-229", "tipo": "applica", "perche": "è la condizione di correttezza necessaria perché il collegamento tool-webhook funzioni davvero"}
+  ]
+ },
+ {
+  "id": "KA-238",
+  "tipo": "regola",
+  "contenuto": "Il template di prompt definito nella Sezione 11 di VAPI.md è obbligatorio: un agente che salta o abbrevia una delle sue sezioni produce una qualità conversazionale scadente.",
+  "fonte": "NmoOZVTrTXA#95:36 (CLAUDE.md, sezione \"## WHY\") + osservazione schermo (non menzionato a voce)",
+  "frame": "frame-0957.png",
+  "ancora": "VAPI prompt template is mandatory — Section 11 of VAPI.md defines the exact structure. Every section must be filled. Agents that skip sections produce poor conversational quality.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-234", "tipo": "parte-di", "perche": "è la prima insidia tecnica elencata nella sezione WHY"},
+   {"verso": "KA-230", "tipo": "applica", "perche": "ribadisce come vincolo esplicito l'obbligo di compilare tutte le 12 sezioni del template"}
+  ]
+ },
+ {
+  "id": "KA-239",
+  "tipo": "dato",
+  "contenuto": "Il file CLAUDE.md generato automaticamente da /init si apre sempre con una riga di intestazione standard che ne dichiara lo scopo: fornire indicazioni a Claude Code quando lavora con il codice in quel repository.",
+  "fonte": "NmoOZVTrTXA#95:12 (CLAUDE.md, prima riga del file) + osservazione schermo",
+  "frame": "frame-0953.png",
+  "ancora": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-232", "tipo": "parte-di", "perche": "è l'intestazione standard prodotta da ogni esecuzione di /init"}
+  ]
  }
 ]

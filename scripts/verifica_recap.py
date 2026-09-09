@@ -12,71 +12,44 @@ disciplina del turno in corso, che un contesto lungo o una riga scritta di frett
 Questo script e' il controllo che non dipende dalla memoria del momento: legge un battito
 e dice SI o NO, con la riga esatta che non torna.
 
-FORMA A QUADRATI (2026-09-09, ordine di Max — solo estetica, il contenuto delle sei voci
-non cambia). Il vecchio elenco piatto a sei righe con pallino era corretto ma illeggibile
-di corsa. Max ha chiesto esplicitamente un formato diverso da quello di `frantuma.py`
-(niente albero con rami `├──`): titolo, poi cinque riquadri in markdown puro (mai dentro
-```: un blocco di codice sparisce dal controllo, vedi `righe_reali` in
-gate_battito_hook.py), uno per Fatto / Sto facendo / Farò / Forze / Assetto+Potere,
-uniti da una freccia `↓` su riga propria.
+FORMA A BLOCCHI CENTRATI, SENZA BORDO (2026-09-09, ordine di Max — solo estetica, il
+contenuto delle sei voci non cambia). Storia dei tentativi, in ordine — tenuta per intero
+perche' ogni giro ha smentito un'ipotesi tecnica plausibile che sembrava corretta:
 
-**Chiusi e centrati** (correzione di Max, 2026-09-09, sul primo giro — il primo tentativo
-aveva i riquadri aperti a destra: sbagliato, Max li vuole un rettangolo vero). `costruisci()`
-misura ogni riquadro (larghezza = riga di contenuto piu' lunga, incluso `🟠 <Etichetta>`),
-poi li chiude tutti e quattro i lati (`┌─...─┐` / `│ testo │` / `└─...─┘`), e li rientra
-tutti sullo stesso "canvas" — largo quanto il riquadro piu' largo — cosi' ogni riquadro piu'
-stretto risulta centrato rispetto agli altri invece che accostato a sinistra. Le frecce `↓`
-fra un riquadro e il successivo stanno sullo stesso asse centrale del canvas, non a colonna 0.
-Un riquadro rimane comunque piu' stretto del canvas quando il suo contenuto e' piu' corto:
-e' voluto, e' quello che lo fa apparire centrato invece che a tutta larghezza.
+  1º giro — riquadri con bordo (┌─┐/│/└─┘) aperti a destra. Bocciato: Max li voleva chiusi
+     e centrati ("i quadratini devono essere al centro... completamente chiusi").
+  2º giro — riquadri chiusi, centrati con rientro a spazi ASCII. Bocciato di nuovo sulla
+     stessa base (visto su un'altra sessione, EMP-LAN1): la regola non bastava da sola.
+     Aggiunte in quel giro, e rimaste valide: mai dentro un blocco ``` (vedi
+     gate_battito_hook.py), tetto di `LARGHEZZA_MASSIMA_RIGA` caratteri per riga.
+  3º giro — ipotesi: gli spazi ASCII ripetuti collassano nel rendering, l'NBSP no (stesso
+     trucco di `&nbsp;` in HTML). Sbagliata: la NBSP e' whitespace quanto lo spazio ASCII,
+     e questo renderer non fa distinzioni.
+  4º giro — diagnosi corretta: non conta il TIPO di carattere di spaziatura, conta la
+     RIPETIZIONE. Un carattere di spaziatura isolato sopravvive sempre; un TRATTO di 2+
+     dello stesso carattere collassa sempre, spazio o NBSP indifferentemente — prova diretta:
+     gli spazi singoli fra le parole di una frase arrivavano intatti, i trattini del bordo
+     (`─`, mai spaziatura) arrivavano a piena larghezza, solo i tratti di riempimento/rientro
+     sparivano. Soluzione: PUNTO (`·`) per ogni tratto di 2+ caratteri strutturali — un
+     carattere NON di spaziatura, ripetuto, non ha nulla da collassare.
+  5º giro — il 4º giro FUNZIONAVA (Max l'ha confermato mandando indietro il testo
+     renderizzato: perfettamente centrato) ma ha rivelato che il BORDO (┌─┐/│/└─┘) non serve
+     e non regge comunque nel suo client — le righe con solo `🟠 <Etichetta>` + contenuto,
+     centrate col rientro a `·`, bastano da sole. Rimosso il bordo per intero. Aggiunto il
+     formato AD ALBERO per la voce Forze quando ci sono più unità nominate (sentinelle, doom
+     bot, ecc.) — mostrato da Max con un esempio scritto a mano, non generato: `🟠 <NOME>`,
+     poi `│`, poi `├─🟠→ <voce>` per ognuna tranne l'ultima che è `└─🟠→ <voce>`.
 
-**MAI DENTRO UN BLOCCO ``` (2026-09-09, secondo giro di correzione).** Uno screenshot
-mandato da Max — battito con riquadri gia' chiusi/centrati, ma renderizzato a pezzi, testo
-che esce dal bordo, freccia storta — ha mostrato il guasto vero: il battito era dentro un
-blocco di codice. Un blocco ``` (a) e' "il formato apposta per copiare" (parole di Max): non
-e' come si consegna un rapporto, e (b) SPARISCE dal controllo del gate — `righe_reali` in
-gate_battito_hook.py lo esclude apposta, cosi' un ESEMPIO di battito dentro la dottrina non
-blocca la consegna quando ne parlo con Max. Se il battito VERO finisce per errore dentro un
-blocco di codice, il gate non lo vede: non lo blocca, ma non lo valida nemmeno — passa senza
-controllo, ed e' esattamente il buco che ha lasciato passare quel battito storto. Il battito
-vero e' SEMPRE testo semplice, mai fra ```. `gate_battito_hook.py` ora rileva anche il caso
-"tutto il messaggio e' un unico blocco di codice che contiene un battito" e lo blocca con un
-motivo dedicato, invece di lasciarlo passare come se fosse solo un esempio di dottrina.
+**MAI DENTRO UN BLOCCO ``` .** Il battito vero è sempre testo semplice. Un blocco di codice
+è "il formato apposta per copiare" (parole di Max) — non è come si consegna un rapporto — e
+SPARISCE dal controllo del gate (`righe_reali` in gate_battito_hook.py lo esclude apposta,
+per non bloccarmi quando *spiego* il formato a Max con un esempio dentro la dottrina).
 
-**RIGHE CORTE, SEMPRE (stesso giro).** Una riga di contenuto troppo lunga si spezza da sola
-quando lo spazio dove Max legge e' piu' stretto della riga — e un rettangolo con una riga
-spezzata non e' piu' un rettangolo, indipendentemente da quanto sia giusta la matematica del
-centraggio. `LARGHEZZA_MASSIMA_RIGA` (44 caratteri) e' il tetto duro per ogni riga di
-contenuto: `costruisci()` rifiuta di generare un riquadro che lo sfora (eccezione, non un
-riquadro storto silenzioso) e `valida()` lo controlla comunque, per i battiti scritti a mano.
-
-**SPAZI VERI, NON SPAZI ASCII (2026-09-09, terzo giro — tentativo, poi smentito).** Max ha
-guardato il battito VERO che avevo mandato e ha detto: "tu li fai tutti verso il lato di
-sinistra", "le linee sono sfalsate, messe a caso". Ipotesi di allora: gli spazi ASCII
-ripetuti collassano fuori da un blocco di codice, e lo spazio non-interrompibile (NBSP,
-&nbsp; in HTML) non dovrebbe collassare. Sbagliata: vedi il quarto giro sotto — anche
-la NBSP collassa quando ripetuta. Sezione lasciata per la cronaca del ragionamento, non
-perche' la soluzione sia questa.
-
-RIEMPIMENTO NON-SPAZIO (2026-09-09, quarto giro — quello che ha retto). Max ha rimandato
-lo screenshot del battito con NBSP: identico difetto. La NBSP e' whitespace quanto lo spazio
-ASCII — un rendering che collassa "sequenze di spazio" tratta l'uno e l'altro allo stesso
-modo; il fatto che non debba farlo per specifica CSS non vuol dire che questo renderer lo
-rispetti. Prova diretta dallo screenshot: gli spazi SINGOLI fra le parole di una frase
-arrivavano intatti (si leggeva "causa vera trovata" spaziato giusto); il bordo dei riquadri
-(pura sequenza di trattini, zero spazi) arrivava alla larghezza piena; solo i TRATTI DI 2+
-spazi/NBSP consecutivi (il riempimento per chiudere il rettangolo, il rientro per centrare)
-sparivano. Diagnosi precisa: non e' "NBSP fallisce", e' "un carattere di spaziatura, ripetuto
-2+ volte di fila, collassa — qualunque sia il tipo". Un singolo spazio isolato sopravvive
-sempre; un carattere NON di spaziatura, ripetuto, non collassa mai (i trattini del bordo ne
-sono la prova gia' vista). Quindi: ogni tratto di 2+ caratteri — riempimento interno per
-chiudere il riquadro, rientro per centrarlo, indentazione della freccia — usa il punto medio
-"·", mai spazio ripetuto. Il singolo margine fra la barra verticale e il testo resta uno
-spazio vero (un carattere solo, sempre sopravvissuto). Il prezzo: dove prima ci sarebbe
-stato vuoto ora si vede una fila di puntini leggeri — mai piu' bello del vuoto, ma vuoto che
-si accorcia da solo non e' un rettangolo. valida() accetta anche run di spazi/NBSP in
-lettura (per un battito scritto a mano prima di questa regola), ma costruisci() da ora
-genera solo punti.
+**RIGHE CORTE, SEMPRE.** Una riga di contenuto troppo lunga si spezza da sola quando lo
+spazio dove Max legge e' piu' stretto della riga, rompendo il centraggio per quella riga.
+`LARGHEZZA_MASSIMA_RIGA` (44 caratteri) e' il tetto duro: `costruisci()` rifiuta di generare
+una voce che lo sfora (eccezione, non una riga storta silenziosa) e `valida()` lo controlla
+comunque, per un battito scritto a mano.
 
 USO (prima di inviare OGNI battito):
     printf '%s' "<testo del battito>" | py -3 scripts/verifica_recap.py
@@ -91,11 +64,12 @@ import io
 import re
 import sys
 
-# I cinque riquadri, in ordine fisso (emperator.md §6.11). Il secondo elemento e' il
-# numero di righe di contenuto ammesse dopo l'etichetta (min, max) — "MAX quattro frasi"
-# per le prime quattro (ordine di Max, 2026-09-09); il quinto e' Assetto+Potere insieme,
-# sempre esattamente due righe (l'assetto, poi il potere).
-RIQUADRI = [
+# Le cinque voci, in ordine fisso (emperator.md §6.11). Il secondo/terzo elemento e' il
+# numero di righe di contenuto ammesse (min, max) in forma PIATTA — "MAX quattro frasi" per
+# le prime quattro (ordine di Max, 2026-09-09); Assetto+Potere ne ha sempre esattamente due.
+# Forze puo' anche essere in forma AD ALBERO (vedi _albero_forze / _leggi_albero_forze):
+# in quel caso min/max non si applicano alle righe piatte, si applica la grammatica ad albero.
+VOCI = [
     ("Fatto", 1, 4),
     ("Sto facendo", 1, 4),
     ("Farò", 1, 4),
@@ -103,18 +77,20 @@ RIQUADRI = [
     ("Assetto", 2, 2),
 ]
 
-LARGHEZZA_MASSIMA_RIGA = 44  # caratteri per riga di contenuto (non il bordo) — vedi nota sopra
+LARGHEZZA_MASSIMA_RIGA = 44  # caratteri per riga di contenuto — vedi nota "RIGHE CORTE"
 
-PUNTO = "·"  # riempimento non-spazio: mai collassato, a differenza di run di spazi/NBSP
+# Riempimento strutturale: MAI uno spazio ripetuto (spazio ASCII o NBSP, collassano
+# entrambi appena sono 2+ di fila — vedi nota del 4º giro sopra). Un punto medio ripetuto
+# non e' whitespace: non collassa mai, come i trattini di un bordo non collassano mai.
+PUNTO = "·"
 _RIENTRO_CHARS = "  ·"  # tollerati in lettura: spazio, NBSP, punto (storia del formato)
 
 TITOLO_RE = re.compile(r"^\*\*⏱️ RECAP — (\d{1,3})%\*\*$")
-TOP_RE = re.compile(r"^┌─+┐$")
-BOTTOM_RE = re.compile(r"^└─+┘$")
-RIGA_RE = re.compile(r"^│[  ](.*?)[  ·]*│$")
 FRECCIA = "↓"
 ASSETTO_RE = re.compile(r"^(\*\*GOD EMPEROR DOOM\*\*|normale)$")
 POTERE_RE = re.compile(r"^🟠 Potere: (\d{1,3})%$")
+RAMO_RE = re.compile(r"^(├─🟠→|└─🟠→) (.+)$")
+GRUPPO_RE = re.compile(r"^🟠 (.+)$")
 
 
 def _leggi_stdin():
@@ -122,89 +98,161 @@ def _leggi_stdin():
     return grezzo.decode("utf-8", "replace")
 
 
-def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
-    """Legge un riquadro a partire da `idx` (che deve puntare al bordo superiore).
+def _rientro(riga):
+    return len(riga) - len(riga.lstrip(_RIENTRO_CHARS))
 
-    Tollera un rientro qualunque (il centraggio in `costruisci`) purche' sia LO STESSO
-    su ogni riga del riquadro — un rettangolo chiuso non puo' avere lati storti. Ritorna
-    l'indice subito dopo il bordo inferiore. Non solleva mai — accumula i problemi e
-    prova comunque a ripartire dalla riga successiva, cosi' un solo riquadro rotto non
-    nasconde gli errori di quelli dopo.
+
+def _spoglia(riga):
+    return riga.lstrip(_RIENTRO_CHARS)
+
+
+def _e_gruppi_forze(v):
+    """True se `v` e' una lista di gruppi [(nome, [voce, ...]), ...] invece di righe piatte
+    — il formato ad albero per Forze quando ci sono più unità nominate (5º giro)."""
+    return isinstance(v, list) and len(v) > 0 and all(
+        isinstance(x, tuple) and len(x) == 2 and isinstance(x[0], str) and isinstance(x[1], list)
+        for x in v
+    )
+
+
+def _albero_forze(gruppi):
+    """Genera le righe (piatte, senza rientro) dell'albero Forze da una lista di gruppi
+    [(nome, [voce, ...]), ...]. `None` = riga vuota VERA fra un gruppo e l'altro (mai
+    rientrata a punti: una riga vuota vera non collassa, non e' un tratto di spaziatura
+    dentro una riga)."""
+    righe = []
+    for i, (nome, voci) in enumerate(gruppi):
+        if not voci:
+            raise ValueError("gruppo Forze '%s': nessuna voce" % nome)
+        righe.append("🟠 %s" % nome.upper())
+        righe.append("│")
+        for j, v in enumerate(voci):
+            ramo = "└─🟠→" if j == len(voci) - 1 else "├─🟠→"
+            righe.append("%s %s" % (ramo, v))
+        if i < len(gruppi) - 1:
+            righe.append(None)
+    return righe
+
+
+def _leggi_albero_forze(righe, idx, problemi):
+    """Legge un albero Forze a partire da `idx` (che deve puntare alla prima etichetta di
+    gruppo `🟠 <NOME>`). Ritorna l'indice subito dopo l'ultimo ramo `└─...` (o dopo l'ultima
+    riga vuota fra gruppi, se il testo continua con un altro gruppo).
+
+    Non prova a indovinare quanti gruppi ci sono: continua finche' vede altre etichette di
+    gruppo dopo una riga vuota, si ferma alla prima riga che non e' ne' vuota ne' un'altra
+    etichetta di gruppo (tipicamente la freccia verso la voce successiva).
     """
-    def _rientro(riga):
-        # strippa spazio, NBSP o punto — `costruisci()` scrive solo PUNTO per il rientro,
-        # ma un battito scritto a mano prima di questa regola puo' avere ancora spazi.
-        return len(riga) - len(riga.lstrip(_RIENTRO_CHARS))
+    rientro_atteso = None
+    while idx < len(righe):
+        spoglia = _spoglia(righe[idx])
+        if not GRUPPO_RE.match(spoglia) or spoglia == FRECCIA:
+            break
+        if rientro_atteso is None:
+            rientro_atteso = _rientro(righe[idx])
+        elif _rientro(righe[idx]) != rientro_atteso:
+            problemi.append(
+                "riga %d: rientro diverso dal resto dell'albero Forze — dev'essere lo "
+                "stesso su ogni riga del blocco" % (idx + 1)
+            )
+        idx += 1  # etichetta di gruppo
 
-    if idx >= len(righe) or not TOP_RE.match(righe[idx].lstrip(_RIENTRO_CHARS)):
+        if idx >= len(righe) or _spoglia(righe[idx]) != "│":
+            problemi.append(
+                "riga %d: dopo l'etichetta di un gruppo Forze serve la riga `│` da sola"
+                % (idx + 1)
+            )
+        else:
+            idx += 1
+
+        rami = []
+        while idx < len(righe):
+            spoglia = _spoglia(righe[idx])
+            m = RAMO_RE.match(spoglia)
+            if not m:
+                break
+            rami.append((idx, m.group(1), m.group(2)))
+            idx += 1
+
+        if not rami:
+            problemi.append("gruppo Forze: nessuna voce sotto `│` (serve almeno un ramo)")
+        else:
+            for riga_num, simbolo, voce in rami[:-1]:
+                if simbolo != "├─🟠→":
+                    problemi.append(
+                        "riga %d: ramo non finale dev'essere `├─🟠→`, trovato `%s`"
+                        % (riga_num + 1, simbolo)
+                    )
+            ultimo_num, ultimo_simbolo, _ = rami[-1]
+            if ultimo_simbolo != "└─🟠→":
+                problemi.append(
+                    "riga %d: l'ultimo ramo del gruppo dev'essere `└─🟠→`, trovato `%s`"
+                    % (ultimo_num + 1, ultimo_simbolo)
+                )
+            for riga_num, _, voce in rami:
+                if len(voce) > LARGHEZZA_MASSIMA_RIGA:
+                    problemi.append(
+                        "riga %d: voce lunga %d caratteri, il tetto e' %d — accorciala"
+                        % (riga_num + 1, len(voce), LARGHEZZA_MASSIMA_RIGA)
+                    )
+
+        # riga vuota VERA fra un gruppo e il successivo (mai rientrata)
+        if idx < len(righe) and righe[idx] == "":
+            idx += 1
+            continue
+        break
+
+    return idx
+
+
+def _leggi_voce_piatta(righe, idx, etichetta, min_righe, max_righe, problemi):
+    """Legge una voce in forma piatta: etichetta + 1..N righe di contenuto, tutte con lo
+    stesso rientro. Ritorna l'indice subito dopo l'ultima riga di contenuto."""
+    attesa = "🟠 %s:" % etichetta
+    if idx >= len(righe) or _spoglia(righe[idx]) != attesa:
         problemi.append(
-            "riga %d: atteso il bordo superiore del riquadro '%s' (`┌─...─┐`), trovato: %r"
-            % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
+            "riga %d: attesa l'etichetta `%s`, trovato: %r"
+            % (idx + 1, attesa, righe[idx] if idx < len(righe) else "<fine testo>")
         )
         return idx + 1
-    rientro_box = _rientro(righe[idx])
-    larghezza_box = len(righe[idx].lstrip(_RIENTRO_CHARS))
+    rientro_voce = _rientro(righe[idx])
     idx += 1
-
-    if idx >= len(righe):
-        problemi.append("riquadro '%s': troncato subito dopo il bordo superiore" % etichetta)
-        return idx
-
-    m = RIGA_RE.match(righe[idx].lstrip(_RIENTRO_CHARS))
-    if not m or m.group(1) != "🟠 %s" % etichetta:
-        problemi.append(
-            "riga %d: attesa l'etichetta `🟠 %s` dentro il riquadro, trovato: %r"
-            % (idx + 1, etichetta, righe[idx])
-        )
-    else:
-        idx += 1
 
     contenuto = []
     while idx < len(righe):
-        spoglia = righe[idx].lstrip(_RIENTRO_CHARS)
-        if BOTTOM_RE.match(spoglia):
+        spoglia = _spoglia(righe[idx])
+        if spoglia == FRECCIA or spoglia == "":
             break
-        m = RIGA_RE.match(spoglia)
-        if not m:
-            break
-        contenuto.append((idx, m.group(1)))
+        contenuto.append((idx, spoglia))
         idx += 1
-
-    for riga_num, _ in contenuto:
-        if _rientro(righe[riga_num]) != rientro_box:
-            problemi.append(
-                "riga %d: rientro diverso dal resto del riquadro '%s' — il rettangolo "
-                "e' storto, dev'essere lo stesso rientro su ogni riga" % (riga_num + 1, etichetta)
-            )
-        if len(righe[riga_num].rstrip("\n")) != larghezza_box + rientro_box:
-            problemi.append(
-                "riga %d: il riquadro '%s' non e' chiuso — questa riga non arriva al bordo "
-                "destro `│` alla stessa colonna del bordo superiore" % (riga_num + 1, etichetta)
-            )
 
     if len(contenuto) < min_righe:
         problemi.append(
-            "riquadro '%s': servono almeno %d riga/e di contenuto, trovate %d"
+            "voce '%s': servono almeno %d riga/e di contenuto, trovate %d"
             % (etichetta, min_righe, len(contenuto))
         )
     if len(contenuto) > max_righe:
         problemi.append(
-            "riquadro '%s': massimo %d riga/e di contenuto (ordine di Max, 2026-09-09), "
-            "trovate %d — accorcia" % (etichetta, max_righe, len(contenuto))
+            "voce '%s': massimo %d riga/e di contenuto, trovate %d — accorcia"
+            % (etichetta, max_righe, len(contenuto))
         )
     for riga_num, valore in contenuto:
+        if _rientro(righe[riga_num]) != rientro_voce:
+            problemi.append(
+                "riga %d: rientro diverso dall'etichetta della voce '%s' — dev'essere lo "
+                "stesso rientro su ogni riga della voce" % (riga_num + 1, etichetta)
+            )
         if not valore.strip():
-            problemi.append("riga %d: riga del riquadro '%s' vuota" % (riga_num + 1, etichetta))
+            problemi.append("riga %d: riga della voce '%s' vuota" % (riga_num + 1, etichetta))
         elif "**" in valore and valore.strip() != "**GOD EMPEROR DOOM**":
             problemi.append(
-                "riga %d: il contenuto del riquadro '%s' non va in grassetto (eccezione unica: "
-                "`**GOD EMPEROR DOOM**` nel riquadro Assetto)" % (riga_num + 1, etichetta)
+                "riga %d: il contenuto della voce '%s' non va in grassetto (eccezione unica: "
+                "`**GOD EMPEROR DOOM**` nella voce Assetto)" % (riga_num + 1, etichetta)
             )
         if len(valore) > LARGHEZZA_MASSIMA_RIGA:
             problemi.append(
-                "riga %d: riga del riquadro '%s' lunga %d caratteri, il tetto e' %d — "
-                "una riga troppo lunga si spezza da sola nello spazio dove Max legge e rompe "
-                "il rettangolo, accorciala" % (riga_num + 1, etichetta, len(valore), LARGHEZZA_MASSIMA_RIGA)
+                "riga %d: riga della voce '%s' lunga %d caratteri, il tetto e' %d — accorciala"
+                % (riga_num + 1, etichetta, len(valore), LARGHEZZA_MASSIMA_RIGA)
             )
 
     if etichetta == "Assetto" and len(contenuto) >= 1:
@@ -226,18 +274,7 @@ def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
                 if n > 100:
                     problemi.append("riga %d: potere %d%% impossibile (>100)" % (contenuto[1][0] + 1, n))
 
-    if idx >= len(righe) or not BOTTOM_RE.match(righe[idx].lstrip(_RIENTRO_CHARS)):
-        problemi.append(
-            "riga %d: atteso il bordo inferiore del riquadro '%s' (`└─...─┘`), trovato: %r"
-            % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
-        )
-        return idx + 1
-    if _rientro(righe[idx]) != rientro_box or len(righe[idx].lstrip(_RIENTRO_CHARS)) != larghezza_box:
-        problemi.append(
-            "riga %d: il bordo inferiore del riquadro '%s' non e' allineato al bordo "
-            "superiore — stesso rientro, stessa larghezza" % (idx + 1, etichetta)
-        )
-    return idx + 1
+    return idx
 
 
 def valida(testo):
@@ -259,7 +296,7 @@ def valida(testo):
     if not m:
         problemi.append(
             "riga %d: titolo non conforme — atteso `**⏱️ RECAP — <n>%%**` "
-            "in grassetto da solo, trovato: %r" % (riga_num, righe[idx])
+            "in grassetto da solo, allineato a sinistra, trovato: %r" % (riga_num, righe[idx])
         )
     else:
         n = int(m.group(1))
@@ -267,46 +304,94 @@ def valida(testo):
             problemi.append("riga %d: percentuale %d%% impossibile (>100)" % (riga_num, n))
     idx += 1
 
-    # riga vuota fra il titolo e il primo riquadro (stessa regola di sempre)
     if idx >= len(righe) or righe[idx].strip() != "":
-        problemi.append("riga %d: manca la riga vuota fra il titolo e il primo riquadro" % (idx + 1))
+        problemi.append("riga %d: manca la riga vuota fra il titolo e la prima voce" % (idx + 1))
     else:
         idx += 1
 
-    # i cinque riquadri, in ordine, separati da una riga con solo la freccia ↓
-    for i, (etichetta, mn, mx) in enumerate(RIQUADRI):
-        idx = _riquadro(righe, idx, etichetta, mn, mx, problemi)
-        e_ultimo = i == len(RIQUADRI) - 1
-        if not e_ultimo:
+    for i, (etichetta, mn, mx) in enumerate(VOCI):
+        if etichetta == "Forze":
+            attesa = "🟠 Forze:"
+            if idx >= len(righe) or _spoglia(righe[idx]) != attesa:
+                problemi.append(
+                    "riga %d: attesa l'etichetta `%s`, trovato: %r"
+                    % (idx + 1, attesa, righe[idx] if idx < len(righe) else "<fine testo>")
+                )
+                idx += 1
+            else:
+                idx += 1
+                # dopo l'etichetta: o e' un albero (la riga dopo e' un'altra etichetta
+                # `🟠 <NOME>`, non la freccia) o e' testo piatto — si decide guardando la
+                # riga successiva, senza consumarla.
+                if idx < len(righe) and GRUPPO_RE.match(_spoglia(righe[idx])) and _spoglia(righe[idx]) != FRECCIA:
+                    idx = _leggi_albero_forze(righe, idx, problemi)
+                else:
+                    # forma piatta: stesso schema delle altre voci, ma l'etichetta e'
+                    # gia' stata consumata sopra — si legge solo il contenuto qui.
+                    rientro_voce = None
+                    contenuto = []
+                    while idx < len(righe):
+                        spoglia = _spoglia(righe[idx])
+                        if spoglia == FRECCIA or spoglia == "":
+                            break
+                        if rientro_voce is None:
+                            rientro_voce = _rientro(righe[idx])
+                        contenuto.append((idx, spoglia))
+                        idx += 1
+                    if len(contenuto) < mn:
+                        problemi.append(
+                            "voce 'Forze': servono almeno %d riga/e di contenuto, trovate %d"
+                            % (mn, len(contenuto))
+                        )
+                    if len(contenuto) > mx:
+                        problemi.append(
+                            "voce 'Forze': massimo %d riga/e di contenuto, trovate %d — accorcia"
+                            % (mx, len(contenuto))
+                        )
+                    for riga_num, valore in contenuto:
+                        if len(valore) > LARGHEZZA_MASSIMA_RIGA:
+                            problemi.append(
+                                "riga %d: riga della voce 'Forze' lunga %d caratteri, il "
+                                "tetto e' %d — accorciala" % (riga_num + 1, len(valore), LARGHEZZA_MASSIMA_RIGA)
+                            )
+        else:
+            idx = _leggi_voce_piatta(righe, idx, etichetta, mn, mx, problemi)
+
+        e_ultima = i == len(VOCI) - 1
+        if not e_ultima:
             if idx >= len(righe) or righe[idx].strip(_RIENTRO_CHARS) != FRECCIA:
                 problemi.append(
-                    "riga %d: manca la freccia `%s` su riga propria fra i riquadri '%s' e '%s'"
-                    % (idx + 1, FRECCIA, etichetta, RIQUADRI[i + 1][0])
+                    "riga %d: manca la freccia `%s` su riga propria fra le voci '%s' e '%s'"
+                    % (idx + 1, FRECCIA, etichetta, VOCI[i + 1][0])
                 )
             else:
                 idx += 1
 
-    # righe residue non vuote dopo l'ultimo riquadro = testo attaccato al battito
     if idx < len(righe) and righe[idx].strip() != "":
         problemi.append(
-            "riga %d: contenuto extra subito dopo l'ultimo riquadro (%r) — il battito finisce "
-            "col bordo di Assetto/Potere" % (idx + 1, righe[idx])
+            "riga %d: contenuto extra dopo l'ultima voce (%r) — il battito finisce con "
+            "la riga del Potere" % (idx + 1, righe[idx])
         )
 
     return problemi
 
 
 def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
-    """Genera il testo del battito a partire dai valori — cosi' non si disegnano i
-    riquadri a mano (stesso principio di frantuma.py: generato dal codice, mai scritto
-    a mano). Ogni argomento voce e' una stringa o una lista di 1-4 righe; `assetto` e'
-    "normale" oppure "GOD EMPEROR DOOM" (senza asterischi, li aggiunge la funzione).
+    """Genera il testo del battito a partire dai valori — cosi' non si disegna a mano
+    (stesso principio di frantuma.py). Ogni argomento voce e' una stringa o una lista di
+    1-4 righe; `assetto` e' "normale" oppure "GOD EMPEROR DOOM" (senza asterischi, li
+    aggiunge la funzione).
 
-    I riquadri escono CHIUSI su tutti e quattro i lati e CENTRATI su un asse comune —
-    largo quanto il riquadro piu' largo (`canvas`) — cosi' quelli piu' stretti non
-    restano accostati a sinistra. Le frecce fra un riquadro e il successivo stanno
-    sullo stesso asse centrale, non a colonna 0 (ordine di Max, 2026-09-09, corretto
-    dopo un primo giro con riquadri aperti a destra e frecce a sinistra: sbagliato)."""
+    `forze` accetta anche una lista di GRUPPI — [(nome_gruppo, [voce, voce, ...]), ...] —
+    per il formato ad albero quando Forze ha più unità nominate (5º giro, esempio di Max:
+    sentinelle/doom bot). Con una lista di stringhe semplici resta la forma piatta.
+
+    Ogni voce e' un blocco: etichetta `🟠 <Nome>:` + le sue righe, tutte con LO STESSO
+    rientro — calcolato dalla larghezza del blocco stesso, centrato su un "canvas" comune
+    (largo quanto il blocco piu' largo di tutto il battito), cosi' i blocchi piu' stretti
+    appaiono centrati invece che accostati a sinistra. Frecce `↓` fra un blocco e il
+    successivo, centrate sullo stesso asse. NESSUN bordo (niente `┌│└─┐┘`): non serve e non
+    regge nel rendering di Max (5º giro) — il rientro a `·` da solo centra tutto."""
     def _righe(v):
         return v if isinstance(v, list) else [v]
 
@@ -314,43 +399,40 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
         ("Fatto", _righe(fatto)),
         ("Sto facendo", _righe(sto_facendo)),
         ("Farò", _righe(farò)),
-        ("Forze", _righe(forze)),
-        ("Assetto", [
-            "**GOD EMPEROR DOOM**" if assetto == "GOD EMPEROR DOOM" else "normale",
-            "🟠 Potere: %d%%" % potere,
-        ]),
     ]
 
-    # 1a passata: ogni riquadro chiuso alla sua larghezza naturale, senza rientro.
-    riquadri = []
+    if _e_gruppi_forze(forze):
+        blocchi.append(("Forze", _albero_forze(forze)))
+    else:
+        blocchi.append(("Forze", _righe(forze)))
+
+    blocchi.append(("Assetto", [
+        "**GOD EMPEROR DOOM**" if assetto == "GOD EMPEROR DOOM" else "normale",
+        "🟠 Potere: %d%%" % potere,
+    ]))
+
     for etichetta, righe in blocchi:
         for r in righe:
-            if len(r) > LARGHEZZA_MASSIMA_RIGA:
+            if r is not None and len(r) > LARGHEZZA_MASSIMA_RIGA:
                 raise ValueError(
-                    "riquadro '%s': riga di %d caratteri sfora il tetto di %d — accorciala "
-                    "(una riga troppo lunga si spezza da sola e rompe il rettangolo): %r"
+                    "voce '%s': riga di %d caratteri sfora il tetto di %d — accorciala: %r"
                     % (etichetta, len(r), LARGHEZZA_MASSIMA_RIGA, r)
                 )
-        contenuto = ["🟠 %s" % etichetta] + righe
-        interno = max(len(r) for r in contenuto) + 2  # 1 spazio vero di margine per lato
-        righe_box = ["┌" + "─" * interno + "┐"]
-        for r in contenuto:
-            # Margine: UN spazio vero (singolo, sopravvive sempre). Riempimento oltre il
-            # margine (quando questa riga e' piu' corta della piu' lunga del riquadro):
-            # PUNTO, mai spazio ripetuto — vedi nota "RIEMPIMENTO NON-SPAZIO" sopra.
-            riempi = interno - 2 - len(r)
-            righe_box.append("│ " + r + (PUNTO * riempi if riempi > 0 else "") + " │")
-        righe_box.append("└" + "─" * interno + "┘")
-        riquadri.append((righe_box, interno + 2))  # +2 = i due caratteri │/┌└┐┘
 
-    canvas = max(larghezza for _, larghezza in riquadri)
+    render = []
+    for etichetta, righe in blocchi:
+        linee = ["🟠 %s:" % etichetta] + righe
+        larghezza = max(len(l) for l in linee if l is not None)
+        render.append((linee, larghezza))
+
+    canvas = max(larghezza for _, larghezza in render)
 
     out = ["**⏱️ RECAP — %d%%**" % percentuale, ""]
-    for i, (righe_box, larghezza) in enumerate(riquadri):
+    for i, (linee, larghezza) in enumerate(render):
         rientro = (canvas - larghezza) // 2
-        for r in righe_box:
-            out.append(PUNTO * rientro + r)
-        if i < len(riquadri) - 1:
+        for l in linee:
+            out.append("" if l is None else PUNTO * rientro + l)
+        if i < len(render) - 1:
             out.append(PUNTO * (canvas // 2) + FRECCIA)
     return "\n".join(out)
 

@@ -28,12 +28,12 @@ TRE PROTEZIONI, tutte necessarie:
 Lo schema NON e' duplicato qui: si importa da `verifica_recap.py`, che resta l'unica fonte
 di verita' della forma (lezione §6.13 -- non esistono due corpi da tenere allineati).
 
-FORMA A QUADRATI (2026-09-09). Il battito e' passato da sei righe piatte a un titolo +
-cinque riquadri variabili in altezza (1-4 righe di contenuto ciascuno, tranne l'ultimo
-che ne ha sempre due) uniti da frecce `↓`. Non esiste piu' una lunghezza fissa da
-tagliare (le vecchie "8 righe"): `trova_battito` ora scorre riquadro per riquadro finche'
-non chiude l'ultimo (Assetto+Potere), o si arrende dopo un tetto di righe a prova di
-input rotto/infinito.
+FORMA A BLOCCHI CENTRATI, SENZA BORDO (2026-09-09, 5º giro). Il battito e' un titolo +
+cinque blocchi (etichetta `🟠 <Nome>:` + contenuto, centrati col rientro a `·`) uniti da
+frecce `↓` — nessun bordo (`┌│└─┐┘` sono spariti, vedi verifica_recap.py). Senza bordo non
+c'e' piu' un "quinto bordo inferiore" da contare: il confine del battito si trova dalla
+prima riga `🟠 Potere: <n>%` incontrata dopo il titolo (l'ultima riga di qualunque battito
+valido, per costruzione — Assetto+Potere e' sempre l'ultima voce).
 """
 
 import io
@@ -49,7 +49,8 @@ if QUI not in sys.path:
 # Segnali che il testo CONTIENE un tentativo di battito. Se non ce n'e' nessuno,
 # l'hook non ha niente da dire: non si impone un battito dove non serve.
 SEGNALE_TITOLO = re.compile(r"^\s*\*\*.{0,3}\s*RECAP\s*[—-]", re.IGNORECASE)
-SEGNALE_VOCE = re.compile(r"^[  ·]*│\s*🟠\s")  # fallback: l'etichetta, anche se il riquadro e' centrato (rientro a punti)
+SEGNALE_VOCE = re.compile(r"^[  ·]*🟠 [^:]+:$")  # fallback: un'etichetta di voce, es. `🟠 Fatto:`
+SEGNALE_POTERE = re.compile(r"^[  ·]*🟠 Potere: \d{1,3}%$")  # ultima riga di ogni battito valido
 TETTO_RIGHE_BLOCCO = 60  # protezione anti-input-rotto: nessun battito reale supera questo
 
 
