@@ -1,4 +1,4 @@
-## 🟠 2026-09-09 — battito a quadrati: tre giri di correzione, causa vera trovata (spazi ASCII che collassano) — CP-20260909-RWR2
+## 🟠 2026-09-09 — battito a quadrati: quattro giri, causa vera (run di spazi ripetuti collassano, NBSP inclusa) — CP-20260909-RWR2
 
 Contenuto invariato (le sei voci restano quelle), cambiata solo la resa: titolo, poi cinque
 riquadri markdown chiusi su tutti e quattro i lati (`┌─...─┐`/`│ 🟠 <Nome>`/`└─...─┘`),
@@ -32,7 +32,20 @@ spiega sia "tutto a sinistra" sia "sfalsato". Corretto: ogni spazio STRUTTURALE 
 margine, indentazione freccia) e' ora NBSP (U+00A0, non collassa — stesso trucco di
 `&nbsp;`), mai spazio ASCII. Lezione per la dottrina: un test che valida solo la stringa
 generata non basta quando il difetto nasce nel passaggio verso lo schermo che il test non
-attraversa. 10/10 test verdi.
+attraversa.
+
+**4° giro: la NBSP non bastava.** Max ha rimandato lo screenshot — identico difetto. La NBSP
+e' whitespace quanto lo spazio ASCII, nessun renderer e' obbligato a trattarla diversamente.
+Guardando meglio: spazi SINGOLI fra parole intatti, bordo (solo trattini) a piena larghezza,
+solo i TRATTI di 2+ spazi/NBSP consecutivi sparivano. Non conta il tipo di carattere, conta
+la ripetizione. Corretto con `·` (punto medio, non e' whitespace, non collassa mai) per ogni
+tratto di 2+ caratteri; resta 1 solo spazio vero per i margini singoli. Corretti anche due
+bug esposti dal cambio: il check della freccia usava `.strip()` (non toglie `·`) e
+`trova_battito` cercava `┌─`/`└─` a colonna 0 esatta (rotto dal rientro a punti). Incidente
+minore: un tentativo di `\uXXXX` a coppie surrogate ha troncato `gate_battito_hook.py` a 0
+byte — recuperato da `git checkout HEAD --` (sync daemon l'aveva gia' committato pochi minuti
+prima). Verificato con scansione regex: zero run di 2+ spazi/NBSP in tutto l'output. 10/10
+test verdi.
 Dettagli: [CP-20260909-RWR2](checkpoints/CP-20260909-RWR2.md).
 
 ## 🟣 2026-09-09 — /frantuma: codice sorteggiato tipo-checkpoint (MT-XXXX), non un percorso — CP-20260909-JX89
