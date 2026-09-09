@@ -94,12 +94,19 @@ def main():
             dati = json.load(f)
     else:
         urls = raccogli()
+        # DIFETTO TROVATO IL 2026-09-09: la prima versione contava come "articoli" anche
+        # /blog/category/... e /blog/tag/... -- 67 su 104. Il numero era falso del 64%,
+        # e un numero falso e' peggio di nessun numero: le misure sui titoli finivano
+        # calcolate su nomi di categoria. Ora si separano.
         blog = [u for u in urls if "/blog/" in u]
+        indici = [u for u in blog if "/blog/category/" in u or "/blog/tag/" in u]
+        articoli = [u for u in blog if u not in indici]
         altro = [u for u in urls if "/blog/" not in u]
         dati = {
             "preso_il": "2026-09-09",
             "url_totali": len(urls),
-            "articoli": [{"url": u, "titolo": slug_titolo(u)} for u in blog],
+            "articoli": [{"url": u, "titolo": slug_titolo(u)} for u in articoli],
+            "indici_tag_e_categoria": indici,
             "non_blog": altro,
         }
         dati["misure"] = misura(dati["articoli"])
@@ -110,7 +117,9 @@ def main():
     print("\nCORPUS DEL BLOG - contato sulla sitemap viva")
     print("=" * 60)
     print("  url totali nella sitemap : {}".format(dati["url_totali"]))
-    print("  articoli di blog         : {}".format(m["totale"]))
+    print("  articoli di blog VERI    : {}".format(m["totale"]))
+    print("  indici tag/categoria     : {}  (NON sono articoli)".format(
+        len(dati.get("indici_tag_e_categoria", []))))
     print("  pagine non-blog          : {}".format(len(dati["non_blog"])))
     print("  titoli con un numero     : {} ({:.0f}%)".format(
         m["con_numero"], 100.0 * m["con_numero"] / max(m["totale"], 1)))
