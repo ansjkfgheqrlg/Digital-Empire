@@ -123,3 +123,57 @@ def test_report_ha_lo_schema_fisso_viola_con_frecce(base_finta):
 def test_report_su_task_senza_micro_task_lo_dice_chiaro(base_finta):
     testo = frantuma.report("TASK-INESISTENTE")
     assert "Nessuna micro-task" in testo
+
+
+# ---------------------------------------------------------------------------
+# L'ORDINE (2026-09-09). Il codice e' sorteggiato: ordinare i file per nome
+# significa ordinare a caso. Al primo uso reale su TASK-LANCI-BUILD-W3 il report
+# ha messo S0.1 in cima e S0.0 in nona posizione, cioe' ha perso proprio cio' che
+# ADR-025 chiama non negoziabile: il gesto zero viene prima di tutto.
+# ---------------------------------------------------------------------------
+
+def test_il_report_segue_l_ordine_di_conio_non_l_alfabeto(base_finta, monkeypatch):
+    codici = iter(["ZZZZ", "AAAA", "MMMM"])
+    monkeypatch.setattr(frantuma, "_sorteggia", lambda n=4: next(codici))
+    frantuma.conia("PADRE", "primo", "il primo, coniato per primo")
+    frantuma.conia("PADRE", "secondo", "il secondo")
+    frantuma.conia("PADRE", "terzo", "il terzo")
+
+    righe = [r for r in frantuma.report("PADRE").splitlines() if "MT-" in r]
+    assert "MT-ZZZZ" in righe[0], "il primo coniato deve restare primo"
+    assert "MT-AAAA" in righe[1]
+    assert "MT-MMMM" in righe[2]
+
+
+def test_conia_scrive_l_ordine_nel_file(base_finta):
+    frantuma.conia("PADRE", "uno", "primo")
+    codice = frantuma.conia("PADRE", "due", "secondo")
+    testo = open(frantuma.trova_percorso(codice), encoding="utf-8").read()
+    assert "- **Ordine:** 2" in testo
+
+
+def test_una_micro_task_senza_ordine_finisce_in_fondo(base_finta, monkeypatch):
+    """Le micro-task coniate prima di questo campo non devono far saltare il report."""
+    monkeypatch.setattr(frantuma, "_sorteggia", lambda n=4: "OLDX")
+    vecchia = frantuma.conia("PADRE", "vecchia", "coniata prima del campo Ordine")
+    percorso = frantuma.trova_percorso(vecchia)
+    testo = open(percorso, encoding="utf-8").read()
+    righe = [r for r in testo.splitlines() if not r.startswith("- **Ordine:**")]
+    open(percorso, "w", encoding="utf-8", newline=chr(10)).write(chr(10).join(righe))
+
+    monkeypatch.setattr(frantuma, "_sorteggia", lambda n=4: "NEWX")
+    frantuma.conia("PADRE", "nuova", "coniata dopo")
+
+    righe = [r for r in frantuma.report("PADRE").splitlines() if "MT-" in r]
+    assert "MT-NEWX" in righe[0]
+    assert "MT-OLDX" in righe[-1]
+
+
+def test_il_report_si_stampa_anche_su_uno_stdout_che_non_regge_il_viola(base_finta, capsysbinary, monkeypatch):
+    """Su Windows stdout e' cp1252 e il carattere viola lo faceva morire con
+    UnicodeEncodeError prima di stampare una riga: il comando non funzionava
+    sulla macchina su cui gira."""
+    frantuma.conia("PADRE", "uno", "primo")
+    monkeypatch.setattr(sys, "argv", ["frantuma.py", "report", "--padre", "PADRE"])
+    assert frantuma.main() == 0
+    assert b"MT-" in capsysbinary.readouterr().out

@@ -113,6 +113,12 @@ def conia(padre: str, slug: str, titolo: str) -> str:
     cart = _cartella(padre)
     os.makedirs(cart, exist_ok=True)
     oggi = datetime.now().strftime("%Y-%m-%d")
+    # L'ORDINE DI CONIO, e perche' serve (2026-09-09). Il codice e' sorteggiato,
+    # quindi ordinare per nome di file significa ordinare a caso: il primo report
+    # reale metteva S0.1 in cima e S0.0 in nona posizione, cioe' perdeva proprio
+    # l'informazione che ADR-025 chiama non negoziabile (il gesto zero viene prima).
+    # Chi conia le micro-task le conia nell'ordine in cui vanno fatte: si registra quello.
+    ordine = len(leggi_tutte(padre)) + 1
 
     for _ in range(2000):
         codice = nuovo_codice()
@@ -121,11 +127,12 @@ def conia(padre: str, slug: str, titolo: str) -> str:
         corpo = (
             "# %s — %s\n\n"
             "- **Padre:** %s\n"
-            "- **Data:** %s\n\n"
+            "- **Data:** %s\n"
+            "- **Ordine:** %d\n\n"
             "## Cosa fa\n\n_da scrivere nello stesso turno in cui la micro-task e' coniata_\n\n"
             "## Gate di chiusura\n\n\n"
             "## Output\n\n"
-        ) % (codice, titolo, padre, oggi)
+        ) % (codice, titolo, padre, oggi, ordine)
         try:
             fd = os.open(percorso, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
         except FileExistsError:
@@ -176,6 +183,9 @@ def trova_percorso(codice: str) -> str | None:
     return None
 
 
+_RE_ORDINE = re.compile(r"^- \*\*Ordine:\*\* *(\d+)", re.M)
+
+
 def leggi_tutte(padre: str) -> list[dict]:
     cart = _cartella(padre)
     if not os.path.isdir(cart):
@@ -189,10 +199,17 @@ def leggi_tutte(padre: str) -> list[dict]:
             continue
         testo = io.open(os.path.join(cart, nome), encoding="utf-8").read()
         titolo_m = _RE_TITOLO.search(testo)
+        ordine_m = _RE_ORDINE.search(testo)
         righe.append({
             "codice": m.group(1),
             "titolo": titolo_m.group(1).strip() if titolo_m else m.group(2),
+            "ordine": int(ordine_m.group(1)) if ordine_m else None,
+            "_nome": nome,
         })
+    # Ordine di conio, non alfabetico: il codice e' sorteggiato e ordinare per
+    # nome e' ordinare a caso. Una micro-task senza il campo (coniata prima del
+    # 2026-09-09) va in fondo, stabile per nome, invece di far saltare tutto.
+    righe.sort(key=lambda r: (r["ordine"] is None, r["ordine"] or 0, r["_nome"]))
     return righe
 
 
@@ -223,6 +240,14 @@ def report(padre: str) -> str:
 
 
 def main() -> int:
+    # Su Windows stdout e' cp1252 e il carattere viola non ci sta: `report`
+    # moriva con UnicodeEncodeError prima di stampare una riga, cioe' il comando
+    # non funzionava sulla macchina su cui gira (trovato il 2026-09-09, al primo
+    # uso reale). Lo schema viola e' tutto il punto della funzione: senza questo
+    # la FASE 2 di /frantuma non e' eseguibile.
+    if hasattr(sys.stdout, "buffer"):
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8",
+                                      errors="replace", line_buffering=True)
     ap = argparse.ArgumentParser(
         description="Spacca una task grande in micro-task con codice (/frantuma).")
     sub = ap.add_subparsers(dest="azione", required=True)
