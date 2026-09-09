@@ -2267,4 +2267,31 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   sovrapposizione con materiale DE esistente, solo `pillar-09-mindset.md` di `agency-scalping`
   tocca lo stesso tema in modo complementare — materiale nuovo per l'Impero. Nuovo header wiki
   creato: "### Mindset & Sviluppo Personale" (nessuno esistente calzava).
-- v05, v06, v08, v09 ancora in corso presso i rispettivi scagnozzi.
+- INGEST: **Source_Giovanni_Beggiato_Bot_Crypto_Trading.md** creata (v05, RnNSRF4s9nk) — 402
+  righe, 72/72 KA citati (151 archi, 1 componente, 0 orfani). Framework a 3 fasi (Comprensione →
+  Design → Implementazione), bot Bitcoin su Binance Testnet costruito con Claude Code in plan
+  mode, strategia ensemble a 5 indicatori (EMA/RSI/OBV/Bollinger/ADX), risk management 2%/trade.
+  GAP ANALYSIS: DE ha già un bot di trading (`12-STREAM-S7-BOT`/APEX-7, NFT/Solana, gate L5,
+  paper-trading forzato) **più rigoroso** di quello del video (6 gate a rubrica vs nessun gate
+  formale) — ma mancano le due skill personali dell'autore `/diagram-generator` e
+  `/prompt-contracts`, verificate assenti su 172 SKILL.md censiti. Nuovo header wiki creato:
+  "### Automazione & Trading AI".
+- INGEST: **Source_Giovanni_Beggiato_Agenti_Vocali.md** creata (v09, NmoOZVTrTXA) — 259 righe,
+  55/323 KA citati con rigore pieno (video più lungo del lotto, 133m). Corso Vapi/Retell/n8n:
+  anatomia a 3 blocchi (ASR→LLM→TTS), system prompt a 9 componenti, 3 metodi Knowledge Base,
+  latency tuning, AI Receptionist end-to-end, 4 offerte aziendali ($20k-700k/anno). Due
+  discrepanze titolo-vs-contenuto verificate (5→4 tool, 4→3 metodi KB, mai corrette a voce).
+  GAP ANALYSIS: zero occorrenze precedenti di "agente vocale"/Vapi/Retell in tutta `company/Memory`
+  e nella wiki — DE non ha nessun canale outreach vocale oggi (solo WhatsApp/email/LinkedIn),
+  candidato diretto per un nuovo servizio produttizzato, stesso pattern di scalabilità già
+  validato su PreventivoForge. Nuovo header wiki creato: "### Voice AI & Agenti Vocali".
+- INGEST: **Source_Giovanni_Beggiato_Claude_Cowork_Corso.md** creata (v08, DI5aWJiFAt8) — 304
+  righe, 52/229 KA citati con rigore pieno (18 capitoli, 4 demo dal vivo: report CRM, fatture,
+  proposta commerciale, PowerPoint brand guidelines). Tre volti di Claude (Chat/Code/Cowork),
+  ciclo FAI-VERIFICARE-GAP, subagenti pipeline vs paralleli (12s→7s misurato).
+  SCOPERTA: DE aveva già 3 pagine stub superficiali su Cowork/Skills/Connectors da un corso
+  diverso (`Source_CS2_Bonus_05_Projects_Cowork`, Claude Speedrun 2 di Andrei Pascu) — questa e'
+  la prima documentazione approfondita del prodotto. Conferma cross-fonte (4ª occorrenza) del gap
+  già noto in `beast-preventivi` (assenza pattern "rifiutati se mancano dati obbligatori"). Nuovo
+  header wiki creato: "### Claude Cowork & Produttività AI".
+- v06 ancora in corso presso lo scagnozzo assegnato (il piu' denso: 228 atomi, 110 min).

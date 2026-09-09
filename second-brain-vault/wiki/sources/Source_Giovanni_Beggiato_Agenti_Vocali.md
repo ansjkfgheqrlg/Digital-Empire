@@ -59,9 +59,9 @@ po' più sofisticato"* (più tipi di tool, provider e opzioni) ma con latenza me
 dall'interfaccia — NmoOZVTrTXA#3:48 (KA-007). Sul lato modelli, il corso mostra a schermo un intero
 listino latenza/costo per fascia OpenAI dentro Vapi, dalla fascia più lenta a quella più rapida:
 *"GPT 4o Mini Cluster — 390 ms · $ 0.01"* contro *"GPT o3 Mini Cluster"* a 2400ms nella fascia
-reasoning — NmoOZVTrTXA#10:18 (KA-020) — con l'osservazione pratica che un agente per chiamate
-schedulate non real-time (es. *"se i miei fornitori sanno che alle 9 di mattina li chiamo per
-raccogliere dei dati"*) non ha bisogno del modello più veloce — NmoOZVTrTXA#10:18 (KA-021).
+reasoning — NmoOZVTrTXA#10:18 (KA-020), con l'osservazione pratica che un agente per chiamate
+schedulate non real-time (es. fornitori contattati sempre alle 9 del mattino) non ha bisogno del
+modello più veloce.
 
 ## Il system prompt: "la cosa più importante"
 
@@ -170,8 +170,9 @@ Il debugging in produzione è documentato con la stessa onestà del resto del co
 mismatch di path (*"VAPI invia toolCallList[0].function.arguments ... ma i nostri Code node cercano
 toolCallList[0].arguments (manca .function. nel path)"* — NmoOZVTrTXA#120:48, KA-305) viene trovato
 lanciando **due sub-agenti Claude Code in parallelo**, uno sui log n8n e uno sullo stato
-dell'assistant Vapi — NmoOZVTrTXA#119:48 (KA-302) — e risolto insieme a un secondo bug (booking
-scritto solo su Google Sheet, senza Google Calendar collegato, KA-299). Dopo il fix, il test
+dell'assistant Vapi — NmoOZVTrTXA#119:48 (KA-302) — e risolto insieme a un secondo bug di
+integrazione mancante (booking scritto solo su Google Sheet, senza Google Calendar collegato).
+Dopo il fix, il test
 end-to-end conferma la doppia scrittura funzionante: una prenotazione via chat appare sia come riga
 nel foglio sia come evento su Calendar — NmoOZVTrTXA#123:18 (KA-310) — e una cancellazione rimuove
 entrambi correttamente — NmoOZVTrTXA#124:06 (KA-313).

@@ -113,7 +113,7 @@ e le incolla per l'aggiunta con *"Add to memory"* — DI5aWJiFAt8#33:12 (KA-058)
 
 Task: riorganizzare fatture PDF con nomi file casuali. Il prompt integrale chiede sottocartelle per
 cliente, un formato di rinomina esatto, una cartella `da-verificare` per i casi dubbi, e due
-divieti espliciti — DI5aWJiFAt8#36:12 (KA-064). Da questo prompt il corso estrae tre best practice
+divieti espliciti (KA-064). Da questo prompt il corso estrae tre best practice
 mostrate a colori sulla lavagna: **(1) Siate precisi** — *"Non ho scritto 'metti ordine' o
 'pulisci'. Ho detto esattamente cosa fare [...] Più siete specifici, meno margine di
 interpretazione lasciate."* — DI5aWJiFAt8#36:42 (KA-065); **(2) Dite cosa non fare** — *"'Non
@@ -157,10 +157,11 @@ Code, un doppio parallelismo: `CLAUDE.md` di progetto sta alle "Project Instruct
 Cowork, come il "Global CLAUDE.md" sta alle "Global Instructions" di Cowork — DI5aWJiFAt8#56:24
 (KA-110). Un `CLAUDE.md` ben scritto, mostrato integralmente in editor, si organizza in tre sezioni
 — *"## WHAT ... ## HOW ... ## WHY"* — DI5aWJiFAt8#54:12 (KA-101). Il livello globale personale del
-relatore contiene regole di stile molto specifiche, tra cui *"No m-dashes (also — not allowed)"* —
-DI5aWJiFAt8#55:12 (KA-107). Sul perché scrivere regole "DOs & DON'Ts" abbia valore, la metafora
-usata è quella di uno schermo
-di dimensioni limitate su cui si può delimitare in anticipo una "zona rossa" da evitare —
+relatore contiene anche regole di stile molto specifiche e insolite per un file di configurazione
+(fino al divieto letterale dell'em-dash nel testo generato, KA-107). Sul perché scrivere regole
+"DOs & DON'Ts" abbia valore, la metafora
+usata è quella di uno schermo di dimensioni limitate su cui si può delimitare in anticipo una
+"zona rossa" da evitare —
 *"nella 1000 soluzioni che tu puoi fare [...] questa parte qui evitala perché so già che non va
 bene"* — DI5aWJiFAt8#57:36 (KA-114) — collegata al concetto di token come *"moneta"* di ogni
 interazione, il cui spreco costa *"tempo e denaro"* — DI5aWJiFAt8#58:06 (KA-115).
@@ -169,8 +170,8 @@ interazione, il cui spreco costa *"tempo e denaro"* — DI5aWJiFAt8#58:06 (KA-11
 
 Prima di generare una proposta commerciale, l'istruzione esplicita è: *"Per favore, prima di
 procedere, leggi tutta la documentazione che hai a disposizione."* — DI5aWJiFAt8#62:18 (KA-120),
-seguita dal principio metodologico *"cominciamo a fare brainstorming, che è quello che consiglio
-sempre"* prima di produrre un deliverable definitivo — DI5aWJiFAt8#63:18 (KA-123). Il capitolo
+seguita dal principio metodologico di far sempre fare a Claude un giro di brainstorming di opzioni
+alternative prima di produrre un deliverable definitivo (KA-123). Il capitolo
 dedicato ai subagenti introduce il concetto con una lavagna: quando una task è difficile, *"quello
 che Cowork fa sostanzialmente è spezzare questa task in più agenti"* — DI5aWJiFAt8#67:42 (KA-126),
 ciascuno dei quali *"riparte con contesto vuoto"* perché tecnicamente è una nuova conversazione,
@@ -279,7 +280,7 @@ ai clienti in una forma equivalente. Ho cercato riscontri diretti e non ne ho tr
 in `.claude/skills/` oltre a `beast-preventivi` (preventivi, non proposte commerciali generiche) e
 `client-handover`/`delivery-playbook` (consegna, non produzione di report interni per il cliente):
 non è un gap che dichiaro chiuso né aperto con certezza, è un'area che richiede una lettura mirata
-di `01-AGENCY` che questa sessione di studio non copriva.
+di `company/01-agency` che questa sessione di studio non copriva.
 
 ## Connessioni
 
