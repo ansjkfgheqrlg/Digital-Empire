@@ -1,0 +1,73 @@
+{
+ "video_id": "RnNSRF4s9nk",
+ "titolo": "Ho Creato un Bot Crypto che Fa Trading 24/7 con Claude Code",
+ "autore": "Giovanni Beggiato",
+ "durata_sec": 1417,
+ "url": "https://www.youtube.com/watch?v=RnNSRF4s9nk",
+ "run": "empire-studio/runs/max18-v05-RnNSRF4s9nk",
+ "lotto": "max18",
+ "checkpoint": "EMP-W4K7",
+ "ingerito_il": "2026-09-05T21:03:39",
+ "studio_chiuso_il": "2026-09-09",
+ "video_guardato": true,
+ "frame_risoluzione_visione": "1280x720",
+ "scene_uniche": 98,
+ "scene_analizzate": 98,
+ "copertura": "98/98 = 100%, contata sul disco",
+ "atomi": 72,
+ "archi": 151,
+ "componenti_connesse": 1,
+ "orfani": 0,
+ "ancore_non_verificabili": 0,
+ "atomi_per_tipo": {
+  "principio": 15,
+  "definizione": 8,
+  "dato": 27,
+  "procedura": 6,
+  "esempio": 11,
+  "regola": 3,
+  "avvertimento": 2
+ },
+ "atomi_per_confidenza": {
+  "osservato": 72
+ },
+ "capitoli": [
+  {
+   "start": 0,
+   "title": "Introduzione"
+  },
+  {
+   "start": 74,
+   "title": "Comprensione del problema: i building blocks del bot"
+  },
+  {
+   "start": 290,
+   "title": "Come usare Claude per decomporre qualsiasi problema"
+  },
+  {
+   "start": 469,
+   "title": "Design del sistema: dalla strategia all'architettura"
+  },
+  {
+   "start": 776,
+   "title": "Visualizzare l'architettura con Excalidraw"
+  },
+  {
+   "start": 1012,
+   "title": "Implementazione con Claude Code in plan mode"
+  },
+  {
+   "start": 1083,
+   "title": "Connessione API a Binance"
+  },
+  {
+   "start": 1200,
+   "title": "Go live: bot in esecuzione su testnet"
+  },
+  {
+   "start": 1377,
+   "title": "Considerazioni conclusive"
+  }
+ ],
+ "note": []
+}

@@ -1,0 +1,40 @@
+{
+ "video_id": "140FuW7b9pk",
+ "titolo": "Come Trasformare Completamente la Tua Vita in un Solo Giorno (Seminario di Jim Rohn)",
+ "autore": "Imprenditor Tips",
+ "durata_sec": 845,
+ "url": "https://www.youtube.com/watch?v=140FuW7b9pk",
+ "run": "empire-studio/runs/max18-v04-140FuW7b9pk",
+ "lotto": "max18",
+ "checkpoint": "EMP-W4K7",
+ "ingerito_il": "2026-09-05T21:00:02",
+ "studio_chiuso_il": "2026-09-09",
+ "video_guardato": true,
+ "frame_risoluzione_visione": "1280x720",
+ "scene_uniche": 120,
+ "scene_analizzate": 120,
+ "copertura": "120/120 = 100%, contata sul disco",
+ "atomi": 78,
+ "archi": 105,
+ "componenti_connesse": 1,
+ "orfani": 0,
+ "ancore_non_verificabili": 0,
+ "atomi_per_tipo": {
+  "struttura": 12,
+  "definizione": 4,
+  "principio": 30,
+  "esempio": 21,
+  "procedura": 1,
+  "regola": 2,
+  "dato": 4,
+  "avvertimento": 1,
+  "anti-pattern": 1,
+  "comando": 2
+ },
+ "atomi_per_confidenza": {
+  "osservato": 76,
+  "dedotto": 2
+ },
+ "capitoli": [],
+ "note": []
+}

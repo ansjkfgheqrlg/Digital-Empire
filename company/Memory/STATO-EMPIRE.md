@@ -1,4 +1,4 @@
-## 🟠 2026-09-09 — battito a quadrati: quattro giri, causa vera (run di spazi ripetuti collassano, NBSP inclusa) — CP-20260909-RWR2
+## 🟠 2026-09-09 — battito ristilizzato: cinque giri, via il bordo, albero per Forze — CP-20260909-RWR2
 
 Contenuto invariato (le sei voci restano quelle), cambiata solo la resa: titolo, poi cinque
 riquadri markdown chiusi su tutti e quattro i lati (`┌─...─┐`/`│ 🟠 <Nome>`/`└─...─┘`),
@@ -46,6 +46,17 @@ minore: un tentativo di `\uXXXX` a coppie surrogate ha troncato `gate_battito_ho
 byte — recuperato da `git checkout HEAD --` (sync daemon l'aveva gia' committato pochi minuti
 prima). Verificato con scansione regex: zero run di 2+ spazi/NBSP in tutto l'output. 10/10
 test verdi.
+
+**5° giro: il 4° funzionava, mancava un pezzo.** Max ha rimandato il testo del battito col
+rientro a `·` — questa volta renderizzato bene, centrato correttamente. Ma senza i caratteri
+di bordo (`┌│└─┐┘`), e con un esempio disegnato a mano del formato AD ALBERO per Forze
+quando ci sono piu' unita' nominate (sentinelle, doom bot — stessi connettori di
+`frantuma.py`, escluso per la forma generale ma voluto qui). Tolto il bordo per intero da
+`verifica_recap.py`: ogni voce e' ora solo `🟠 <Nome>:` + contenuto, centrati sullo stesso
+asse. Aggiunto il ramo ad albero (`_albero_forze`/`_leggi_albero_forze`) — `forze` accetta
+ora anche `[(nome, [voce,...]), ...]`. `trova_battito` in `gate_battito_hook.py` non conta
+piu' bordi (non esistono): il confine del battito e' la prima riga `Potere: <n>%`, sempre
+l'ultima per costruzione. 11/11 test verdi (nuovo: caso albero).
 Dettagli: [CP-20260909-RWR2](checkpoints/CP-20260909-RWR2.md).
 
 ## 🟣 2026-09-09 — /frantuma: codice sorteggiato tipo-checkpoint (MT-XXXX), non un percorso — CP-20260909-JX89

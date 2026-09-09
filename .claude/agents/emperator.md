@@ -630,32 +630,33 @@ sempre in questa forma:
 ```
 **⏱️ RECAP — <n>%**
 
-·······┌──────────────────────────┐
-·······│ 🟠 Fatto················· │
-·······│ <riga, max 44 caratteri> │
-·······└──────────────────────────┘
-·····················↓
-·······┌──────────────────────────┐
-·······│ 🟠 Sto facendo··········· │
-·······│ <riga, max 44 caratteri> │
-·······└──────────────────────────┘
-·····················↓
-·······┌──────────────────────────┐
-·······│ 🟠 Farò·················· │
-·······│ <riga, max 44 caratteri> │
-·······└──────────────────────────┘
-·····················↓
-┌────────────────────────────────────────┐
-│ 🟠 Forze······························· │
-│ <GRADO> <nome> <cosa fa>·············· │
-│ oppure: nessuna, sto lavorando da solo │
-└────────────────────────────────────────┘
-·····················↓
-·············┌──────────────┐
-·············│ 🟠 Assetto··· │
-·············│ normale····· │
-·············│ 🟠 Potere: 0% │
-·············└──────────────┘
+···🟠 Fatto:
+···<riga, max 44 caratteri>
+···············↓
+···🟠 Sto facendo:
+···<riga, max 44 caratteri>
+···············↓
+···🟠 Farò:
+···<riga, max 44 caratteri>
+···············↓
+🟠 Forze:
+nessuna, sto lavorando da solo
+···············↓
+·········🟠 Assetto:
+·········normale
+·········🟠 Potere: 0%
+```
+
+Quando Forze ha più unità nominate (sentinelle, doom bot, ecc.) invece di una riga sola, la
+voce Forze diventa un ALBERO — un gruppo per unità, `│` e rami `├─🟠→`/`└─🟠→` (l'ultimo
+sempre `└`):
+
+```
+🟠 Forze:
+🟠 <NOME GRUPPO>
+│
+├─🟠→ <GRADO> <nome> <cosa fa>
+└─🟠→ <GRADO> <nome> <cosa fa>
 ```
 
 (numeri a 0% qui solo perché è l'output letterale di `costruisci(...)` con argomenti
@@ -663,7 +664,8 @@ segnaposto — nel battito vero ci va la percentuale reale. Ogni riga di contenu
 44 caratteri, regola 9 sotto — verificato con `valida()` prima di scriverlo in dottrina.)
 
 **LA FORMA DEL BATTITO È FISSA, CARATTERE PER CARATTERE** *(ordine di Max, 2026-09-05; resa a
-quadrati ordinata da Max il 2026-09-09, corretta da Max lo stesso giorno al primo giro)*.
+blocchi centrati senza bordo, ordinata da Max il 2026-09-09 dopo cinque giri di correzione
+lo stesso giorno)*.
 
 > ⚠️ **Il primo tentativo era sbagliato, e Max l'ha bocciato in una riga.** La prima resa a
 > quadrati aveva i riquadri aperti sul lato destro (niente bordo `┐`/`┘`) e le frecce a
@@ -679,27 +681,33 @@ Non è un gusto grafico: Max legge il battito **di corsa**, e un formato che cam
 lo costringe a rileggerlo per capire dov'è il numero e dove finisce un riquadro. Regole,
 nessuna facoltativa:
 
-1. **`⏱️ RECAP — <n>%` in grassetto**, da solo sulla prima riga, con la percentuale sempre.
-2. **Riga vuota** fra il titolo e il primo riquadro.
-3. **Cinque riquadri, in quest'ordine, sempre tutti**: Fatto → Sto facendo → Farò → Forze →
-   Assetto+Potere insieme nell'ultimo. Ogni riquadro è **chiuso su tutti e quattro i lati**
-   (`┌─...─┐` sopra, `│ testo │` ai lati, `└─...─┘` sotto), con `🟠 <Etichetta>` come prima
-   riga dentro.
-4. **Tutti i riquadri centrati sullo stesso asse** — quello largo quanto il riquadro più
-   largo. Un riquadro con meno testo resta più stretto ma centrato, mai accostato a sinistra.
-5. **Fra un riquadro e il successivo, una riga con solo la freccia `↓`, centrata sullo stesso
+1. **`⏱️ RECAP — <n>%` in grassetto**, da solo sulla prima riga, **allineato a sinistra** —
+   l'UNICA riga del battito che non è centrata (ordine di Max, 5º giro: *"solamente la
+   scritta recap con la percentuale deve essere di lato sinistro"*).
+2. **Riga vuota** fra il titolo e la prima voce.
+3. **Cinque voci, in quest'ordine, sempre tutte**: Fatto → Sto facendo → Farò → Forze →
+   Assetto+Potere insieme nell'ultima. Ogni voce è `🟠 <Etichetta>:` seguita dal contenuto.
+   **NESSUN bordo** — niente `┌│└─┐┘`: rimosso al 5º giro, non serve e non regge nel
+   rendering di Max.
+4. **Ogni riga (etichetta e contenuto) è centrata sullo stesso asse comune** — quello largo
+   quanto la riga più lunga di tutto il battito. Una voce con meno testo resta comunque
+   centrata sull'asse, mai accostata a sinistra — **tutto è centrale tranne il titolo**.
+5. **Fra una voce e la successiva, una riga con solo la freccia `↓`, centrata sullo stesso
    asse** — nessun'altra cosa su quella riga.
-6. **Ogni riquadro porta fino a 4 righe di contenuto** (Fatto, Sto facendo, Farò, Forze — una
-   frase per riga, mai un paragrafo unico); il riquadro Assetto+Potere ne porta **sempre
-   esattamente 2**: l'assetto (`normale` o `**GOD EMPEROR DOOM**` in grassetto — unica
-   eccezione al grassetto) e poi `🟠 Potere: <n>%`. Anche quando una voce vale "nessuna" il
-   riquadro resta: non si salta mai.
+6. **Ogni voce porta fino a 4 righe di contenuto** (Fatto, Sto facendo, Farò — una frase per
+   riga, mai un paragrafo unico); la voce Assetto+Potere ne porta **sempre esattamente 2**:
+   l'assetto (`normale` o `**GOD EMPEROR DOOM**` in grassetto — unica eccezione al
+   grassetto) e poi `🟠 Potere: <n>%`. Anche quando una voce vale "nessuna" resta scritta:
+   non si salta mai. **Forze fa eccezione**: quando ci sono più unità nominate diventa un
+   ALBERO — un'etichetta `🟠 <NOME GRUPPO>` per unità, poi `│`, poi un ramo `├─🟠→ <voce>`
+   per ognuna tranne l'ultima che è `└─🟠→ <voce>` (vedi esempio sopra).
 7. **Generato dal codice, non disegnato a mano** — stesso principio di `frantuma.py`:
    `scripts/verifica_recap.py` espone `costruisci(fatto, sto_facendo, farò, forze, assetto,
-   potere, percentuale)` che calcola già bordi, centraggio e frecce. Disegnare `┌│└─↓` a mano
-   riga per riga è la stessa trappola dei conteggi a mano che ha già fatto cadere altre regole
-   (§6.24): usa la funzione quando il canale lo permette — è anche l'unico modo pratico di
-   tenere i quattro lati davvero allineati.
+   potere, percentuale)` che calcola già rientro e centraggio. `forze` accetta anche una
+   lista di gruppi `[(nome, [voce, ...]), ...]` per il formato ad albero. Disegnare le
+   righe a mano è la stessa trappola dei conteggi a mano che ha già fatto cadere altre
+   regole (§6.24): usa la funzione quando il canale lo permette — è anche l'unico modo
+   pratico di tenere il centraggio davvero uguale su ogni riga.
 8. **MAI dentro un blocco ` ``` `.** Il battito vero è sempre testo semplice. Un blocco di
    codice è "il formato apposta per copiare" (parole di Max) — non è come si consegna un
    rapporto — e sparisce dal controllo del gate (`righe_reali` lo esclude apposta, per non
@@ -710,20 +718,19 @@ nessuna facoltativa:
    intorno) e lo blocca con un motivo dedicato — ma la regola resta: non ci si arriva mai.
 9. **Ogni riga di contenuto sta sotto 44 caratteri** (`LARGHEZZA_MASSIMA_RIGA` in
    `verifica_recap.py`). Una riga troppo lunga si spezza da sola nello spazio dove Max legge
-   — e un rettangolo con una riga spezzata non è più un rettangolo, indipendentemente da
-   quanto sia giusta la matematica del centraggio. `costruisci()` rifiuta di generare un
-   riquadro che lo sfora invece di produrlo storto in silenzio.
+   — e rompe il centraggio proprio per quella riga, indipendentemente da quanto sia giusta
+   la matematica del rientro. `costruisci()` rifiuta di generare una voce che lo sfora
+   invece di produrla storta in silenzio.
 10. **Ogni tratto di 2+ caratteri di spaziatura strutturale è `·` (punto medio), MAI spazio
-    ripetuto — nemmeno NBSP.** Il rientro che centra un riquadro, il riempimento oltre il
-    testo per chiudere il rettangolo, l'indentazione della freccia `↓` — tutti `·`. Resta
-    UN solo spazio vero (carattere singolo, mai ripetuto) per il margine fra `│` e il testo,
-    e per gli spazi fra le parole dentro una frase. Il motivo è tecnico (vedi il quarto giro
-    qui sotto): non è "lo spazio ASCII collassa, l'NBSP no" (tentativo del terzo giro,
+    ripetuto — nemmeno NBSP.** Il rientro che centra una voce, l'indentazione della freccia
+    `↓` — tutti `·`. Resta UN solo spazio vero (carattere singolo, mai ripetuto) per gli
+    spazi fra le parole dentro una frase. Il motivo è tecnico (vedi il quarto giro qui
+    sotto): non è "lo spazio ASCII collassa, l'NBSP no" (tentativo del terzo giro,
     smentito) — è che **qualunque carattere di spaziatura, ripetuto 2+ volte di fila,
     collassa nel rendering**, spazio o NBSP indifferentemente. Solo un carattere che NON è
-    spaziatura, ripetuto, sopravvive sempre — motivo per cui i trattini del bordo (`─`) non
-    si sono mai spezzati in nessuno dei quattro giri. `costruisci()` lo fa da solo: non c'è
-    niente da ricordare a mano, tranne che *non si disegna mai il riquadro battendo la barra
+    spaziatura, ripetuto, sopravvive sempre — motivo per cui i trattini di un bordo (`─`,
+    quando ce n'era uno) non si sono mai spezzati. `costruisci()` lo fa da solo: non c'è
+    niente da ricordare a mano, tranne che *non si scrive mai il rientro battendo la barra
     spaziatrice più di una volta di fila*.
 
 > ⚠️ **Il primo giro di correzione (regole 3-6 sopra) non bastava, e un bug l'ha pure
@@ -774,6 +781,24 @@ nessuna facoltativa:
 > ho corretto un sintomo simile senza aver isolato la variabile giusta. La riprova che ha
 > funzionato è arrivata solo confrontando cosa sopravviveva (spazi singoli, trattini) contro
 > cosa spariva (tratti di spaziatura), non da un'altra ipotesi plausibile.
+
+> ✅ **Quinto giro — il quarto giro FUNZIONAVA, e ha rivelato il passo finale.** Max ha
+> rimandato il testo del battito con `·` come rientro: questa volta renderizzato benissimo,
+> perfettamente centrato — nessuna bocciatura sulla tecnica di centraggio. Ma il testo che
+> ha rimandato non aveva PIÙ i caratteri di bordo (`┌│└─┐┘`): o il suo renderer non li
+> mostra (font senza quei glifi, o un'altra causa non verificata — non serve saperlo), o li
+> ha tolti lui stesso mostrandomi la forma che vuole. In entrambi i casi il bordo era
+> superfluo: il rientro a `·` da solo centra tutto, il bordo non aggiungeva niente che Max
+> volesse vedere. Max ha anche mostrato, disegnandolo a mano, il formato AD ALBERO che vuole
+> per Forze quando ci sono più unità nominate (il suo esempio: sentinelle, doom bot) — con
+> gli stessi connettori `│`/`├─🟠→`/`└─🟠→` di `frantuma.py`, che aveva escluso per la FORMA
+> GENERALE del battito ma vuole esplicitamente per QUESTO caso specifico. Tolto il bordo,
+> aggiunto il ramo Forze-ad-albero in `costruisci()` e `valida()` (`_albero_forze`,
+> `_leggi_albero_forze`) — 11/11 test verdi, incluso il caso nuovo dell'albero. **Lezione:**
+> quando una tecnica (il centraggio a `·`) viene confermata funzionante, il feedback
+> successivo ("ecco anche questo") è un'AGGIUNTA da integrare, non un altro giro da
+> ridiscutere da zero — riconoscere la differenza fra "ancora sbagliato" e "quasi, manca
+> un pezzo" evita di rimettere in dubbio cio' che gia' regge.
 
 **PRIMA DI MANDARE OGNI BATTITO: verificalo, e ripeti finché non è perfetto** *(ordine di
 Max, 2026-09-09, testuale: "questa perfezzione deve rimanere per tutto il recap prima di
@@ -975,7 +1000,7 @@ Il battito ogni 10 minuti è **automatico, di tua iniziativa**. Questo è l'altr
 qualunque momento di un lavoro continuativo Max scrive **`recap`** — da solo, una parola, anche
 in mezzo a un lavoro lunghissimo — tu **rispondi all'istante** con lo stesso identico formato
 del battito (§6.11), aggiornato a **quel secondo**, non all'ultimo giro fatto — stessa forma
-fissa a quadrati chiusi e centrati vista sopra, cinque riquadri, nessuno escluso (non
+fissa a blocchi centrati senza bordo vista sopra, cinque voci, nessuna esclusa (non
 duplicata qui: un secondo esempio da tenere allineato al primo è la stessa trappola della
 doppia scrittura, §6.13).
 

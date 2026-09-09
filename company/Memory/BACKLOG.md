@@ -318,3 +318,19 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   (`scripts/adr.py` conia il numero occupando il file), quindi il difetto non cresce
   piu': restano solo queste due cicatrici. *Quando:* quando Max decide quale delle due
   coppie rinumerare, oppure alla prossima potatura della Memory.
+
+- **B-061 — NUOVA.** `SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/unisci_atomi.py`
+  ha un bug reale di collisione id: la mappa vecchio-id→nuovo-id (riga 55, `mappa = {}`) e'
+  **una sola, globale su tutti gli `atoms-p*.json`**, indicizzata solo sull'id originale
+  (es. `"KA-101"`). Se due parti diverse dello stesso run riusano lo stesso id originale —
+  successo il 2026-09-09 su `max18-v09` e `max18-v08`, dove le sentinelle di atomizzazione
+  partivano da `KA-101`/`KA-201` in ogni terzo per lasciare margine — la voce piu' recente
+  **sovrascrive silenziosamente** quella precedente nella mappa, e le relazioni della prima
+  parte che puntavano a quell'id finiscono rimappate sull'atomo sbagliato (della parte
+  successiva) invece di essere segnalate come rotte. Non individuato dal proprio controllo
+  "archi rotti" perche' l'id RISULTA trovato — solo punta al posto sbagliato.
+  **Non ho girato lo script**: per `v08`/`v09` ho scritto ed eseguito un merge equivalente
+  con mappa **per-file** (`unisci_atomi_video.py`, script d'appoggio, non ancora nel
+  repository), verificato a zero collisioni. **Fix suggerito**: la mappa dev'essere
+  `{(nome_file, id_vecchio): id_nuovo}`, non `{id_vecchio: id_nuovo}`. *Quando:* prima del
+  prossimo run che atomizza in piu' parti con numerazioni che si sovrappongono fra loro.

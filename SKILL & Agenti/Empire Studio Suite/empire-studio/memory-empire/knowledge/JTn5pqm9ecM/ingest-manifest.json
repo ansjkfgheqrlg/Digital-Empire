@@ -1,0 +1,96 @@
+{
+ "video_id": "JTn5pqm9ecM",
+ "titolo": "CORSO COMPLETO AGENTI AI: le tecniche che NESSUNO ti spiega (2026)",
+ "autore": "Giovanni Beggiato",
+ "durata_sec": 6620,
+ "url": "https://www.youtube.com/watch?v=JTn5pqm9ecM",
+ "run": "empire-studio/runs/max18-v06-JTn5pqm9ecM",
+ "lotto": "max18",
+ "checkpoint": "EMP-W4K7",
+ "ingerito_il": "2026-09-05T21:04:40",
+ "studio_chiuso_il": "2026-09-09",
+ "video_guardato": true,
+ "frame_risoluzione_visione": "1280x720",
+ "scene_uniche": 376,
+ "scene_analizzate": 376,
+ "copertura": "376/376 = 100%, contata sul disco",
+ "atomi": 228,
+ "archi": 427,
+ "componenti_connesse": 1,
+ "orfani": 0,
+ "ancore_non_verificabili": 0,
+ "atomi_per_tipo": {
+  "principio": 35,
+  "struttura": 7,
+  "definizione": 40,
+  "dato": 68,
+  "procedura": 20,
+  "esempio": 35,
+  "avvertimento": 9,
+  "comando": 3,
+  "regola": 11
+ },
+ "atomi_per_confidenza": {
+  "osservato": 221,
+  "dedotto": 7
+ },
+ "capitoli": [
+  {
+   "start": 0,
+   "title": "Introduzione e overview del corso"
+  },
+  {
+   "start": 222,
+   "title": "Cos'è un agente AI (architettura e componenti)"
+  },
+  {
+   "start": 654,
+   "title": "DEMO in n8n: costruire un agente ai"
+  },
+  {
+   "start": 1118,
+   "title": "Come gli agenti svolgono le task (finestra di contesto)"
+  },
+  {
+   "start": 1409,
+   "title": "DEMO in Claude Code: come agenti ai svolgono tasks"
+  },
+  {
+   "start": 2423,
+   "title": "Adaptive Guardrails e self-improving prompts"
+  },
+  {
+   "start": 3124,
+   "title": "I quattro livelli di specificità del prompt"
+  },
+  {
+   "start": 3342,
+   "title": "Back prompt engineering (Step Back e Reverse Prompting)"
+  },
+  {
+   "start": 4246,
+   "title": "Prompt Contracts e definizione del successo"
+  },
+  {
+   "start": 4647,
+   "title": "Premortem prompting"
+  },
+  {
+   "start": 4987,
+   "title": "Agent Polling"
+  },
+  {
+   "start": 5673,
+   "title": "Agent Debates"
+  },
+  {
+   "start": 6033,
+   "title": "Broswer Swarm"
+  },
+  {
+   "start": 6336,
+   "title": "Audit"
+  }
+ ],
+ "note": []
+}

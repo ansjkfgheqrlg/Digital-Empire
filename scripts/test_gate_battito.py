@@ -32,25 +32,17 @@ BATTITO_OK = costruisci(
 )
 
 BATTITO_ROTTO = """**⏱️ RECAP — 40%**
-┌───
-│ 🟠 Fatto
-│ letto il libro
-└───
+🟠 Fatto:
+letto il libro
 - Sto facendo: costruisco il controllo
-┌───
-│ 🟠 Farò
-│ lo provo
-└───
-┌───
-│ 🟠 Forze
-│ nessuna
-└───
+🟠 Farò:
+lo provo
+🟠 Forze:
+nessuna
 ↓
-┌───
-│ 🟠 Assetto
-│ acceso
-│ 🟠 Potere: tanto%
-└───"""
+🟠 Assetto:
+acceso
+🟠 Potere: tanto%"""
 
 
 def transcript(testo_assistente):
@@ -131,6 +123,15 @@ CASI = [
 
     ("10. stesso battito dentro ``` ma con prosa vera intorno -> passa (e' una spiegazione)",
      "Ecco come deve venire:\n\n```\n" + BATTITO_OK + "\n```\n\nChiaro, Max?", False, False),
+
+    # --- il caso pagato in produzione, 2026-09-09 (quinto giro: niente piu' bordo) ---
+    ("11. battito con Forze ad albero (gruppi nominati) -> passa",
+     costruisci(
+         "chiuso il lavoro sui gruppi", "niente altro", "niente in sospeso",
+         [("sentinelle", ["controlla budget", "controlla secret"]),
+          ("doom bot", ["autoripara i test"])],
+         "GOD EMPEROR DOOM", 100, 90,
+     ) + "\n\nFatto.", False, False),
 ]
 
 

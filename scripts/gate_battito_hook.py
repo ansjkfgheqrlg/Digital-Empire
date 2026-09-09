@@ -79,13 +79,14 @@ def righe_reali(testo):
 def trova_battito(testo):
     """Ritorna (indice_prima_riga, blocco) del battito, o (None, None).
 
-    Il battito e' titolo + riga vuota + cinque riquadri (§6.11, forma a quadrati,
-    2026-09-09): altezza variabile, non piu' un numero fisso di righe. Si scorre dal
-    titolo (o, in mancanza, dalla prima etichetta `│ 🟠 ...` trovata) fino a chiudere il
-    quinto bordo inferiore `└─...`, contando i bordi superiori `┌─...` incontrati — quello
-    e' il segnale strutturale che non dipende dal contenuto delle righe in mezzo, che
-    `verifica_recap.valida` giudichera' nel dettaglio. Un tetto di righe protegge da un
-    input senza mai un bordo inferiore (rotto o non un battito affatto).
+    Il battito e' titolo + riga vuota + cinque voci (blocchi centrati senza bordo, 5o
+    giro) unite da frecce. Senza bordo non c'e' piu' un segnale strutturale di chiusura
+    da contare: si scorre dal titolo (o, in mancanza, dalla prima etichetta di voce
+    trovata) fino alla PRIMA riga "Potere: <n>%" incontrata -- che per costruzione e'
+    sempre l'ultima riga di un battito valido (Assetto+Potere e' sempre l'ultima voce).
+    Un tetto di righe protegge da un input senza mai quella riga (rotto o non un battito
+    affatto): in quel caso si prende tutta la finestra, cosi' valida() ha comunque
+    materiale su cui dire cosa manca.
     """
     righe = testo.replace("\r\n", "\n").split("\n")
     utili = {i: r for i, r in righe_reali(testo) if r is not None}
@@ -103,17 +104,9 @@ def trova_battito(testo):
     if inizio is None:
         return None, None
 
-    bordi_superiori_attesi = 5
-    trovati = 0
     fine = min(len(righe), inizio + TETTO_RIGHE_BLOCCO)
     for i in range(inizio, fine):
-        # un riquadro centrato ha punti (rientro) prima di ┌/└, non piu' colonna 0 —
-        # si toglie il rientro prima di guardare il bordo (§6.11, "SPAZI VERI"/"RIEMPIMENTO
-        # NON-SPAZIO": il rientro e' spazio, NBSP o punto, mai altro).
-        spoglia = righe[i].lstrip("  ·")
-        if spoglia.startswith("┌─"):
-            trovati += 1
-        if trovati >= bordi_superiori_attesi and spoglia.startswith("└─"):
+        if SEGNALE_POTERE.match(righe[i]):
             fine = i + 1
             break
 
@@ -266,11 +259,12 @@ def main():
     motivo = (
         "GATE BATTITO — la forma non torna, il messaggio non parte cosi'.\n\n"
         + "\n".join("  - " + p for p in problemi)
-        + "\n\nRiscrivi il battito nella forma fissa a quadrati (emperator.md 6.11) — chiusi "
-        "su tutti i lati, centrati sullo stesso asse, freccia `↓` centrata fra un riquadro e "
-        "il successivo. Ogni riquadro porta max 4 righe di contenuto, tranne Assetto+Potere "
-        "che ne porta sempre 2. Non disegnarlo a mano: chiama `verifica_recap.costruisci(...)` "
-        "con i sei valori, che genera gia' bordi e centraggio corretti. Mai dentro un blocco "
+        + "\n\nRiscrivi il battito nella forma fissa a blocchi centrati (emperator.md 6.11) — "
+        "nessun bordo, solo `🟠 <Nome>:` + contenuto, tutto centrato sullo stesso asse via "
+        "rientro a `·`, freccia `↓` centrata fra una voce e la successiva. Ogni voce porta "
+        "max 4 righe di contenuto, tranne Assetto+Potere che ne porta sempre 2. Non "
+        "disegnarlo a mano: chiama `verifica_recap.costruisci(...)` con i sei valori, che "
+        "genera gia' rientro e centraggio corretti. Mai dentro un blocco "
         "```: sparisce dal controllo e si spezza nel renderer." + esempio
     )
 

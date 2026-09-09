@@ -1,0 +1,94 @@
+{
+ "video_id": "NmoOZVTrTXA",
+ "titolo": "AGENTI VOCALI IN CLAUDE CODE: Costruisci e Vendi",
+ "autore": "Giovanni Beggiato",
+ "durata_sec": 7991,
+ "url": "https://www.youtube.com/watch?v=NmoOZVTrTXA",
+ "run": "empire-studio/runs/max18-v09-NmoOZVTrTXA",
+ "lotto": "max18",
+ "checkpoint": "EMP-W4K7",
+ "ingerito_il": "2026-09-05T21:17:33",
+ "studio_chiuso_il": "2026-09-09",
+ "video_guardato": true,
+ "frame_risoluzione_visione": "1280x720",
+ "scene_uniche": 494,
+ "scene_analizzate": 494,
+ "copertura": "494/494 = 100%, contata sul disco",
+ "atomi": 323,
+ "archi": 273,
+ "componenti_connesse": 83,
+ "orfani": 37,
+ "ancore_non_verificabili": 0,
+ "atomi_per_tipo": {
+  "principio": 55,
+  "struttura": 59,
+  "dato": 52,
+  "esempio": 33,
+  "definizione": 17,
+  "numero": 7,
+  "avvertimento": 14,
+  "regola": 35,
+  "procedura": 43,
+  "comando": 4,
+  "anti-pattern": 4
+ },
+ "atomi_per_confidenza": {
+  "osservato": 321,
+  "dedotto": 2
+ },
+ "capitoli": [
+  {
+   "start": 0,
+   "title": "Introduzione"
+  },
+  {
+   "start": 28,
+   "title": "Argomenti del corso"
+  },
+  {
+   "start": 110,
+   "title": "Piattaforme per agenti vocali: Vapi & Retell"
+  },
+  {
+   "start": 237,
+   "title": "Anatomia di un agente vocale + parte pratica"
+  },
+  {
+   "start": 818,
+   "title": "Struttura di un system prompt + File Notion"
+  },
+  {
+   "start": 1518,
+   "title": "Le 4 tipologie di Tool"
+  },
+  {
+   "start": 1955,
+   "title": "Le 4 tipologie di inserimento della Knowledge Base aziendale"
+  },
+  {
+   "start": 2749,
+   "title": "Come controllare la Latenza (latency tuning)"
+  },
+  {
+   "start": 3224,
+   "title": "Dentro a Claude Code ed n8n"
+  },
+  {
+   "start": 3464,
+   "title": "Setup in Claude Code ed i 4 file.md"
+  },
+  {
+   "start": 5754,
+   "title": "Creazione dell'AI Receptionist in Claude Code (con n8n workflows)"
+  },
+  {
+   "start": 7550,
+   "title": "Offerte per aziende (le 4 soluzioni che raccomando)"
+  },
+  {
+   "start": 7960,
+   "title": "Come lavorare assieme"
+  }
+ ],
+ "note": []
+}
