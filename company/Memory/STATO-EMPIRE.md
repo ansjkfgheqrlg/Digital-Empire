@@ -1,13 +1,16 @@
-## 🟠 2026-09-09 — battito ristilizzato a quadrati, ordine estetico di Max — CP-20260909-RWR2
+## 🟠 2026-09-09 — battito ristilizzato a quadrati chiusi e centrati, corretto in diretta da Max — CP-20260909-RWR2
 
 Contenuto invariato (le sei voci restano quelle), cambiata solo la resa: titolo, poi cinque
-riquadri markdown (`┌─`/`│ 🟠 <Nome>`/`└─`) uniti da frecce `↓`, Assetto+Potere insieme
-nell'ultimo, max 4 frasi per riquadro. Rifiutato esplicitamente lo stile ad albero di
-`/frantuma` — Max ne voleva uno diverso, dettato a voce. `verifica_recap.py` riscritto (nuova
-`costruisci()` che genera il testo, mai piu' disegnato a mano) e `gate_battito_hook.py`
-adattato a un battito di altezza variabile (non piu' 8 righe fisse). Box aperto sul lato
-destro apposta: un bordo allineato userebbe spazi multipli, comprimibili dal renderer fuori da
-un blocco di codice. 8/8 test verdi. Dettagli: [CP-20260909-RWR2](checkpoints/CP-20260909-RWR2.md).
+riquadri markdown chiusi su tutti e quattro i lati (`┌─...─┐`/`│ 🟠 <Nome>`/`└─...─┘`),
+centrati su uno stesso asse (largo quanto il piu' largo), uniti da frecce `↓` centrate,
+Assetto+Potere insieme nell'ultimo, max 4 frasi per riquadro. Rifiutato lo stile ad albero di
+`/frantuma`. **Un giro di correzione**: il primo tentativo aveva riquadri aperti a destra
+(paura di spazi compressi dal renderer) — Max ha mandato lo screenshot del battito vero (il
+renderer allinea benissimo) e ha rifiutato: *"i quadratini devono essere al centro e devono
+essere completamente chiusi e anche le frecce devono essere centrali"*. Rifatto.
+`verifica_recap.py` — nuova `costruisci()` a due passate (larghezza naturale poi centraggio);
+`gate_battito_hook.py` a lunghezza variabile. 8/8 test verdi.
+Dettagli: [CP-20260909-RWR2](checkpoints/CP-20260909-RWR2.md).
 
 ## 🟣 2026-09-09 — /frantuma: codice sorteggiato tipo-checkpoint (MT-XXXX), non un percorso — CP-20260909-JX89
 
@@ -10073,3 +10076,20 @@ quella sessione l'ha ricevuta (ADR-016).
 
 **RIPRESA DA:** dire **`EMP-LAN1`** in una chat nuova. Dentro ci sono i numeri gia' misurati,
 l'interfaccia del motore PDF e le trappole pagate: non si rifa' niente.
+
+## 2026-09-09 — EMP-LAN1 CHIUSA: le tre forme dell'anatomia dei lanci sono tutte fatte
+
+**Restava la forma Python e il PDF, ora ci sono entrambe.** `anatomia_lanci.py` porta tutti i dati
+misurati in strutture interrogabili (pacchetto, sei mosse, funnel a 86 parole, stampo di pre-cassa
+a sei variabili, otto costanti, sette difetti/sei controlli, i dodici passi del modello) piu'
+`build_pdf()` che chiama `pdf_engine_empire.py`. Il PDF e' uscito in standard-oro (10 pagine,
+0,41 MB), verificato pagina per pagina, doppione gia' in `documentazione Empire/Lanci/`.
+
+**Resta un solo punto, non bloccante:** la riga "Consegnato a LANCI" in
+`TASK-LANCI-20260908-ANATOMIA-ANDREI-PASCU.md` — materiale pronto sul disco, Gael lo prende quando
+apre 1️⃣/2️⃣ di `TASK-GAEL-20260908-SETTIMANA-03.md` (lo dichiara lui stesso "non bloccante"). Si
+spunta quando conferma di averlo usato (ADR-016).
+
+**RIPRESA DA:** nessun lavoro aperto su questo filone (lo studio dei siti resta 56/56, chiuso in
+`CP-20260909-GRVC`). Prossimo lavoro libero: attesa della conferma di Gael su LANCI, oppure nuovo
+ordine di Max.

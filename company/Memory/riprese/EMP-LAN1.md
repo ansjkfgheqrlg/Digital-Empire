@@ -1,7 +1,8 @@
 # EMP-LAN1 — ANATOMIA DEI LANCI: restano la forma Python e il PDF
 
 - **Aperto:** 2026-09-09
-- **Stato:** APERTA
+- **Chiuso:** 2026-09-09 — le tre forme sono tutte fatte; resta solo la ricezione da LANCI (non bloccante)
+- **Stato:** CHIUSA
 - **Come si riprende:** basta dire `EMP-LAN1` in una chat nuova dentro Digital Empire.
 - **Checkpoint di origine:** [CP-20260909-J2TJ](../checkpoints/CP-20260909-J2TJ.md)
 - **Checkpoint precedente (studio chiuso):** [CP-20260909-GRVC](../checkpoints/CP-20260909-GRVC.md)

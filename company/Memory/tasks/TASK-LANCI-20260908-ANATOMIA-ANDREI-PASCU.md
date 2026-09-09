@@ -61,10 +61,15 @@ Concludere sui lanci con metà ecosistema mai aperto significherebbe concludere 
 Non quando il PDF esiste: **quando la sessione LANCI l'ha ricevuta e può usarla** (ADR-016,
 l'Ultimo Metro). Chi chiude questa task scrive qui sotto la data e chi ha ricevuto.
 
-- [ ] Markdown scritto
-- [ ] Python scritto e funzionante
-- [ ] PDF generato + doppione in `documentazione Empire/`
+- [x] Markdown scritto — `competitor/Andrei Pascu/ANATOMIA-DEI-LANCI.md`, dieci parti
+- [x] Python scritto e funzionante — `competitor/Andrei Pascu/anatomia_lanci.py`
+      (dati interrogabili + `build_pdf()`; `python anatomia_lanci.py --check` verificato)
+- [x] PDF generato + doppione in `documentazione Empire/` — `ANATOMIA-DEI-LANCI.pdf`, 10 pagine,
+      doppione in `documentazione Empire/Lanci/`, generato 2026-09-09
 - [ ] **Consegnato a LANCI** — data: ______ · ricevuto da: ______
+      Materiale pronto sul disco dal 2026-09-09 nelle tre forme. `TASK-GAEL-20260908-SETTIMANA-03.md`
+      dichiara l'arrivo "non bloccante": Gael lo prende quando apre 1️⃣/2️⃣. Questa riga si spunta
+      quando la sessione LANCI conferma di averlo usato (ADR-016, l'Ultimo Metro).
 
 ---
 
