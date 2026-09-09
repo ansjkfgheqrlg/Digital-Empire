@@ -1,4 +1,19 @@
-## 🔴 2026-09-09 sera — ⚠️ ORDINE A MAX — 3 gesti "mani umane" fermano Gael su LANCI, servono oggi — CP-20260909-DA2P
+## 🟢 2026-09-09 sera — CORREZIONE di Max: S0 non ferma la costruzione di LANCI — ADR-027
+
+**Max, testuale:** *"chissene frega di questi problemi, sono importanti ma Gael può costruire
+tutta l'infrastruttura comunque senza problemi."* Avevo applicato ADR-025 decisione 6 alla
+lettera (sotto) trattando le 3 mani-umane come blocco dell'INTERA task 1️⃣. Sbagliato: erano
+blocco del solo gate finale (prova S0 vera), non della scrittura di codice/agenti/gate.
+
+**ADR-027 corregge ADR-025 decisione 6:** `TASK-LANCI-BUILD-W3` da `MT-F37C` in giù (9 delle 12
+micro-task — tutto tranne le 3 mani-umane) **procede subito**, in parallelo, senza aspettare
+Brevo/cassa/carta. Resta fermo solo un punto: **non si dichiara "S0 chiuso" senza la prova vera**
+(euro entrato, consegnato, rimborsato, visibile in un pannello) — quello sì resta non negoziabile.
+
+**Gael: riprendi `TASK-LANCI-BUILD-W3` da `MT-F37C` in giù, oggi.** Le 3 mani-umane sotto restano
+aperte e restano solo di Max, ma non ti fermano più. Dettagli: [ADR-027](decisions/ADR-027-s0-non-blocca-costruzione-lanci.md).
+
+## 🔴 2026-09-09 sera — ⚠️ ORDINE A MAX — 3 gesti "mani umane" (Brevo/cassa/carta), non fermano la costruzione (vedi ADR-027 sopra) — CP-20260909-DA2P
 
 **Max ha segnalato (di nuovo) che Gael è fermo su tutta la task 1️⃣ della Settimana 3.** Causa
 reale verificata: `MT-FJF6`, `MT-32RU`, `MT-CV7N` (le prime 3 delle 12 micro-task di
@@ -19,6 +34,13 @@ sostanza: corretto mettendole qui, in cima, dove REGOLA ZERO impone di leggere p
 **Gael NON è fermo su tutto**, gliel'ho reso esplicito: `TASK-KDP-3LIBRI-W3` (0/3, indipendente)
 e le micro-task da `MT-F37C` in giù sono apribili subito, non aspettano queste tre. Dettagli:
 [CP-20260909-DA2P](checkpoints/CP-20260909-DA2P.md).
+
+**Correzione di Max, stessa sera:** questa riga sopra vale MENO di quanto scritto —
+*"Gael puo' costruire tutta l'infrastruttura comunque senza problemi"*. I 3 gesti restano
+importanti e restano suoi (Brevo, cassa vera, consegna+rimborso), ma **non fermano la
+costruzione di 1️⃣** (l'ecosistema `15-LANCI`, scaglioni S0→S5): S0.0-S0.4 sono verifica di
+gate, non prerequisito per scrivere l'infrastruttura. Gael costruisce, i 3 gesti restano un
+BACKLOG per Max quando può, non un blocco.
 
 ## 🟣 2026-09-09 sera — EMP-APIMPL1 chiusa: 12 skill DE arricchite dallo studio Andrei Pascu
 
@@ -10290,3 +10312,17 @@ candidati AP-001..033 consolidati dai `lesson-analysis.md` di outFunnel e cs2onl
 
 **RIPRESA DA:** nessuna su questo filone. `outHeadline`/`outEmail`/`outViral 2` restano in pausa
 per ordine di Max (priorità più bassa, non toccati).
+
+## 2026-09-09 — lotto max18 CHIUSO end-to-end 9/9 (CP-20260909-DDQY)
+
+Ripresa da `CP-20260909-2CWF`: rigenerati i 2 manifest v08/v09 con i numeri di grafo veri
+(v08 226 archi/18 componenti/1 orfano, v09 360 archi/5 componenti/0 orfani), poi schierati 5
+scagnozzi in parallelo per le 5 pagine wiki mancanti (v04, v05, v06, v08, v09), tutte scritte e
+agganciate in `wiki/index.md`/`wiki/log.md`. **Il lotto `max18` è ora chiuso end-to-end, 9 fonti
+su 9.** Scoperte migliori: DE ha già un bot trading più rigoroso di quello mostrato in v05
+(`12-STREAM-S7-BOT`/APEX-7); il Pre-Mortem del corso v06 è già `ADR-006`; v09 apre un gap vero,
+nessun canale outreach vocale esiste oggi in DE. Dettaglio completo in
+[CP-20260909-DDQY](checkpoints/CP-20260909-DDQY.md).
+
+**RIPRESA DA:** `EMP-W4K7` — resta il debito `max17` (`EMP-QQ2R`, fermo a 9/17), poi la Fase 2
+(implementazione dei consigli raccolti) solo su ordine esplicito di Max.

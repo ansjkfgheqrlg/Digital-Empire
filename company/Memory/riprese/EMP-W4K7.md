@@ -238,6 +238,21 @@ per intero prima di ripartire, e' piu' fresco di questo file per lo stato numeri
 Solo `v09` resta aperto (189/494). Atomi fatti solo su v06 (228) e v05 (72). Wiki/archivio:
 zero, e' il prossimo collo di bottiglia. Dettagli: [CP-20260907-96DY](../checkpoints/CP-20260907-96DY.md).
 
+## 2-quinquies. AGGIORNAMENTO 2026-09-09 — lotto max18 CHIUSO end-to-end 9/9 (CP-20260909-DDQY)
+
+**Ripresa da `CP-20260909-2CWF`, portata a chiusura.** Rigenerati i 2 manifest v08/v09 (numeri di
+grafo veri: v08 226 archi/18 componenti/1 orfano, v09 360 archi/5 componenti/0 orfani), poi
+schierati 5 scagnozzi in parallelo per le 5 pagine wiki mancanti (v04, v05, v06, v08, v09), tutte
+scritte e agganciate in `wiki/index.md`/`wiki/log.md` dal coordinatore (mai i 5 agenti in
+contemporanea, per evitare collisioni sugli stessi due file). **Il lotto `max18` e' ora chiuso
+end-to-end, 9 fonti su 9** (doc Justin Sung + v01..v09). Dettaglio completo, incluse le scoperte
+di gap-analysis piu' rilevanti (bot trading gia' piu' rigoroso in `12-STREAM-S7-BOT`, Pre-Mortem
+gia' `ADR-006`, gap vero sul canale outreach vocale), in
+[CP-20260909-DDQY](../checkpoints/CP-20260909-DDQY.md).
+
+**RIPRENDI DA QUI:** resta solo il debito `max17` (§3 sotto, invariato — 8 video mai iniziati/
+parziali), poi la Fase 2 (§4-5, solo su ordine esplicito di Max), poi il Libro dell'Agency (§4-bis).
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte
