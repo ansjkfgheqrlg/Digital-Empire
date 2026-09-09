@@ -1509,33 +1509,42 @@ nella sua pazienza. E' che la volta prima l'ho trattato come un compito.
 
 ---
 
-### 6.24 /frantuma — spacchi una task grande in micro-task ufficiali, ognuna col suo ID *(direttiva Max, 2026-09-08)*
+### 6.24 /frantuma — spacchi una task grande in micro-task, ognuna con un codice come un checkpoint *(direttiva Max, 2026-09-08/09)*
 
-**Ordine di Max, testuale — e la sua stessa correzione nello stesso giorno:** *"dividi delle task
+**Ordine di Max, testuale — e due correzioni sue nei giorni successivi:** *"dividi delle task
 grandi in micro task ufficiali... così che si può andare a svolgerla in più chat, in più sessioni,
-in contemporanea."* Poi, dopo che una prima versione ci aveva messo dentro onde e calcolo di
-parallelismo non richiesti: *"questa funzione fa una sola cosa: divide una task in micro task
-ufficiali, con ogni micro-task che ha il suo codice, il suo ID — proprio come sempre."*
+in contemporanea."* Poi: *"questa funzione fa una sola cosa: divide una task in micro task
+ufficiali, con ogni micro-task che ha il suo codice, il suo ID — proprio come sempre."* Poi,
+davanti a un percorso di file al posto di un codice: *"con ID intendo il checkpoint, capisci?
+sono la stessa cosa. Lo copio, lo metto in un'altra chat, e quella parte subito facendo la micro
+task."*
 
-**Cosa fa, e SOLO questo.** Prende una task grande e la spacca in micro-task, ognuna con un ID
-coniato — `MT-01`, `MT-02`, ... — esattamente come un ADR o un checkpoint. **Non pianifica chi
-parte quando, non calcola onde, non decide un ordine.** Il beneficio del parallelismo viene dal
-fatto che ogni micro-task è un file ufficiale a sé, apribile da qualunque chat — non da un motore
-che calcola disponibilità.
+**Cosa fa, e SOLO questo.** Prende una task grande e la spacca in micro-task, ognuna con un
+**codice sorteggiato** — `MT-XXXX` — esattamente come un checkpoint di ripresa (`EMP-XXXX`,
+`scripts/checkpoint.py`). **Non pianifica chi parte quando, non calcola onde, non decide un
+ordine.** Il beneficio del parallelismo viene dal codice stesso: lo si copia, lo si incolla in
+una chat nuova, e quella chat lo usa per trovare ed eseguire proprio quella micro-task — nessun
+altro contesto necessario.
 
-**Il motore non è prosa, è codice — stessa filosofia del battito.** `scripts/frantuma.py`:
-1. **Conia** ogni micro-task come file suo, numero atomico (`O_CREAT|O_EXCL`), per-padre (ogni
-   task grande riparte da MT-01) — stesso schema anti-collisione di `scripts/adr.py` e
-   `scripts/checkpoint.py` (B-009): se due sessioni coniano nello stesso istante, una vince e
-   l'altra prende il numero dopo.
-2. **Genera il report** leggendo i titoli veri dai file coniati — mai scritto a mano, mai a
-   memoria.
+**Il codice, e perché non è progressivo.** Forma `MT-XXXX`, quattro caratteri dallo stesso
+alfabeto senza ambiguità di `checkpoint.py` (niente O/0, I/1/L, S/5, B/8 — si detta a voce).
+**Non un numero progressivo per-padre** (la prima versione usava `MT-01`, `MT-02`... ed era
+sbagliata: incollato in una chat nuova senza dire anche quale fosse il padre, un `MT-01` non
+porta da nessuna parte — due task diverse avrebbero avuto entrambe un `MT-01`). Il codice è
+**sorteggiato e univoco da solo**, verificato contro ogni micro-task mai esistita — disco e
+storia git, ogni ramo, stessa legge anti-collisione di `adr.py`/`checkpoint.py` (B-009) — e il
+file nasce subito (`O_CREAT|O_EXCL`) per occuparlo.
+
+**`scripts/frantuma.py` fa tre cose, mai a memoria:**
+1. **`conia`** — sorteggia il codice, crea il file in `company/Memory/tasks/micro/<PADRE>/`.
+2. **`trova <codice>`** — cerca quel codice in TUTTE le task padre e stampa il file: è il comando
+   che una chat nuova lancia ricevendo solo il codice, senza sapere altro.
+3. **`report --padre <PADRE>`** — genera lo schema fisso leggendo i titoli veri dai file coniati.
 
 **Colore dominante VIOLA (🟣)** — sistema di un colore per funzione: l'arancione (🟠) è di
-`/recap`, il viola è di `/frantuma`. Tre giri per arrivare allo schema (bocciati: un albero ASCII
-boxato con "onde" — troppo evidenziato, l'onda "cringe"; un Artifact — vietato esplicitamente,
-Max lo vuole in chat). Frecce vere, in markdown puro, mai dentro un blocco di codice (altrimenti
-risulta "evidenziato"/piatto).
+`/recap`, il viola è di `/frantuma`. Frecce vere, in markdown puro, mai dentro un blocco di
+codice (risulterebbe "evidenziato"/piatto — bocciato in un giro precedente, insieme a un albero
+ASCII con "onde" e a un Artifact, entrambi bocciati per motivi diversi).
 
 **⚠️ Vincolo tecnico non negoziabile:** nessuna riga di questo schema, o di qualunque altro
 output, può iniziare con `🟠` — quel carattere a inizio riga è il segnale che l'hook
@@ -1545,14 +1554,14 @@ bullet 🟠 è stato bloccato dal gate esattamente per questo).
 
 ### Due fasi, mai una sola — *(correzione di Max, 2026-09-09)*
 
-**Non si conia mai nulla al primo giro.** La funzione ha sempre due passaggi separati, e il
-secondo parte SOLO se qualcuno con l'autorità di farlo — **Max, Gael o Neri** — accetta la
-proposta esplicitamente. È la stessa lezione dell'08/09 (demo dal vivo non richiesta, bocciata)
-resa protocollo fisso invece che una cosa da ricordare a braccio.
+**Non si conia mai nulla al primo giro.** Il secondo passaggio parte SOLO se qualcuno con
+l'autorità di farlo — **Max, Gael o Neri** — accetta la proposta esplicitamente. È la stessa
+lezione dell'08/09 (demo dal vivo non richiesta, bocciata) resa protocollo fisso invece che una
+cosa da ricordare a braccio.
 
-**FASE 1 — PROPOSTA.** Nessun file viene creato, nessun ID viene coniato. Compongo lo schema a
-mano sugli stessi titoli, con numerazione provvisoria (MT-01, MT-02... — ma sono etichette di
-bozza, non ID reali), e **chiudo sempre chiedendo il via libera**:
+**FASE 1 — PROPOSTA.** Nessun file viene creato, nessun codice viene coniato. Compongo lo schema
+a mano sugli stessi titoli, con etichette provvisorie (`MT-01`, `MT-02`... — bozza, non codici
+reali), e **chiudo sempre chiedendo il via libera**:
 
 ```
 🟣 **<PADRE>**
@@ -1566,34 +1575,29 @@ bozza, non ID reali), e **chiudo sempre chiedendo il via libera**:
 seguito da una domanda esplicita — *"Va bene questa scomposizione? Confermi?"* o equivalente —
 mai dato per scontato che il silenzio sia un sì.
 
-**FASE 2 — CONFERMA.** Solo dopo un sì esplicito di Max, Gael o Neri: conio per davvero, una
-chiamata `python scripts/frantuma.py conia --padre <PADRE> --slug <slug> --titolo "<titolo>"` per
-ogni micro-task, poi stampo `python scripts/frantuma.py report --padre <PADRE>` — che, leggendo
-solo file già coniati, produce sempre e solo questa forma, con **il percorso vero del file**, non
-una frase generica *(correzione di Max, 2026-09-09: "ID ufficiale" scritto come frase non è un
-ID — un ID è qualcosa che si apre davvero)*:
+**FASE 2 — CONFERMA.** Solo dopo un sì esplicito di Max, Gael o Neri: `frantuma.py conia` per
+ogni micro-task (un codice vero per ognuna), poi `frantuma.py report --padre <PADRE>` — che,
+leggendo solo file già coniati, produce sempre e solo questa forma, col **codice vero** al posto
+dell'etichetta di bozza:
 
 ```
 🟣 **<PADRE>**
 🟣 divisa in <n> micro-task ufficiali
    │
-   ├──🟣→ **MT-01** · <titolo> — `company/Memory/tasks/micro/<PADRE>/MT-01-<slug>.md`
-   ├──🟣→ **MT-02** · <titolo> — `company/Memory/tasks/micro/<PADRE>/MT-02-<slug>.md`
-   └──🟣→ **MT-0n** · <titolo> — `company/Memory/tasks/micro/<PADRE>/MT-0n-<slug>.md`
+   ├──🟣→ **MT-6R2M** · <titolo>
+   ├──🟣→ **MT-AVNW** · <titolo>
+   └──🟣→ **MT-NNA6** · <titolo>
 ```
 
-Il percorso è l'ID vero: è quello che un'altra chat/sessione apre per eseguire proprio quella
-micro-task, non un'etichetta rassicurante. Copio l'output di `report`, non lo ricreo a mano: la
-forma di FASE 2 è garantita dal codice, esattamente come `verifica_recap.py` garantisce quella
-del battito. La FASE 1 non passa da nessuno script — è per forza scritta a mano, perché prima
-dell'accettazione non esiste ancora nessun file su cui `report` possa leggere (e quindi, in FASE
-1, non c'è nessun percorso da mostrare: solo titolo e numerazione provvisoria).
+Copio l'output di `report`, non lo ricreo a mano: la forma di FASE 2 è garantita dal codice,
+esattamente come `verifica_recap.py` garantisce quella del battito. La FASE 1 non passa da
+nessuno script — prima dell'accettazione non esiste ancora nessun file su cui `report` possa
+leggere, quindi in FASE 1 le etichette restano per forza provvisorie.
 
 **Quando si attiva:** quando Max, Gael o Neri dice *"frantuma questa task"* o equivalenti. **Non
 si esegue mai di iniziativa su una task reale** senza che qualcuno lo chieda esplicitamente E poi
 accetti la proposta — lezione pagata l'08/09: una prima dimostrazione dal vivo su
-`TASK-LANCI-BUILD-W3` (4 micro-task reali coniate senza passare dalla fase 1) è stata bocciata e
-rimossa perché non richiesta.
+`TASK-LANCI-BUILD-W3` è stata bocciata e rimossa perché non richiesta.
 
 ---
 

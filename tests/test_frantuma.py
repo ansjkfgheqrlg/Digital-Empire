@@ -2,12 +2,15 @@
 """Lo spaccatore di task grandi in micro-task (scripts/frantuma.py).
 
 PERCHE' ESISTE. Max ha chiesto una funzione che spacchi una task grande in
-micro-task ufficiali, ognuna col suo ID -- esattamente come ADR e checkpoint.
-Prima versione ci aveva messo dentro onde/parallelismo/verifica di scope non
-richiesti: corretta il 2026-09-08, resta solo split + conio atomico + lo
-schema fisso viola-con-frecce.
+micro-task ufficiali, ognuna con un CODICE -- la stessa cosa di un checkpoint
+di ripresa (scripts/checkpoint.py): breve, sorteggiato, non progressivo, tale
+che copiarlo in una chat nuova basta da solo per trovare ed eseguire proprio
+quella micro-task. Prima versione usava numeri progressivi per-padre
+(MT-01, MT-02): ambigui, perche' incollati senza dire anche il padre non
+portano da nessuna parte. Corretta il 2026-09-09.
 """
 import os
+import re
 import sys
 
 import pytest
@@ -21,31 +24,60 @@ import frantuma  # noqa: E402
 @pytest.fixture
 def base_finta(tmp_path, monkeypatch):
     monkeypatch.setattr(frantuma, "CARTELLA_BASE", str(tmp_path))
+    monkeypatch.setattr(frantuma, "_codici_nella_storia", lambda: set())
     return tmp_path
 
 
-def test_numerazione_e_per_padre_non_globale(base_finta):
-    """Due task grandi diverse partono ognuna da MT-01: il numero deve dire
-    'il pezzo N-esimo DI QUESTA task', non essere un ID globale."""
-    frantuma.conia("TASK-A", "primo", "Primo pezzo di A")
-    codice_b = frantuma.conia("TASK-B", "primo", "Primo pezzo di B")
-    assert codice_b == "MT-01"
+def test_conia_produce_un_codice_nella_forma_mt_xxxx(base_finta):
+    codice = frantuma.conia("TASK-A", "primo", "Primo pezzo")
+    assert re.match(r"^MT-[A-Z0-9]{4}$", codice)
 
 
-def test_coniare_occupa_il_numero_creando_il_file(base_finta):
+def test_il_codice_non_e_progressivo_ed_e_univoco_globalmente(base_finta):
+    """Due task grandi diverse: i codici non si assomigliano ne' si ripetono
+    -- non c'e' un contatore da azzerare per padre, e' un sorteggio globale."""
+    a = frantuma.conia("TASK-A", "uno", "Uno")
+    b = frantuma.conia("TASK-B", "uno", "Uno")
+    assert a != b
+
+
+def test_coniare_crea_il_file_con_quel_codice_nel_nome(base_finta):
     codice = frantuma.conia("TASK-LANCI-BUILD-W3", "s0-incasso", "Giorno zero")
-    assert codice == "MT-01"
-    assert (base_finta / "TASK-LANCI-BUILD-W3" / "MT-01-s0-incasso.md").exists()
-    assert frantuma.conia("TASK-LANCI-BUILD-W3", "seconda", "Seconda") == "MT-02"
+    atteso = base_finta / "TASK-LANCI-BUILD-W3" / ("%s-s0-incasso.md" % codice)
+    assert atteso.exists()
 
 
-def test_un_file_gia_presente_non_viene_sovrascritto(base_finta):
-    frantuma.conia("TASK-A", "prima", "Prima")
-    prima = (base_finta / "TASK-A" / "MT-01-prima.md").read_text(encoding="utf-8")
-    (base_finta / "TASK-A" / "MT-02-altro.md").write_text("# stub\n", encoding="utf-8")
-    codice = frantuma.conia("TASK-A", "terza", "Terza")
-    assert codice == "MT-03"
-    assert (base_finta / "TASK-A" / "MT-01-prima.md").read_text(encoding="utf-8") == prima
+def test_un_codice_gia_occupato_non_viene_sovrascritto(base_finta, monkeypatch):
+    """O_EXCL e' il punto di tutta la funzione: se il sorteggio ripete un
+    codice gia' su disco, si risorteggia invece di scrivere sopra."""
+    primo = frantuma.conia("TASK-A", "prima", "Prima")
+    contenuto_primo = (base_finta / "TASK-A" / ("%s-prima.md" % primo)).read_text(
+        encoding="utf-8")
+
+    sequenza = iter([primo[3:], "9Q2K"])  # il primo sorteggio ripete un codice occupato
+    monkeypatch.setattr(frantuma, "_sorteggia", lambda n=4: next(sequenza))
+    secondo = frantuma.conia("TASK-A", "seconda", "Seconda")
+
+    assert secondo != primo
+    assert (base_finta / "TASK-A" / ("%s-prima.md" % primo)).read_text(
+        encoding="utf-8") == contenuto_primo
+
+
+def test_trova_cerca_in_tutte_le_task_padre(base_finta):
+    """Il senso del codice: non serve sapere il padre per trovarla."""
+    codice = frantuma.conia("TASK-LANCI-BUILD-W3", "chiave-brevo", "Sostituire la chiave")
+    percorso = frantuma.trova_percorso(codice)
+    assert percorso is not None
+    assert "TASK-LANCI-BUILD-W3" in percorso
+
+
+def test_trova_accetta_il_codice_senza_prefisso_mt(base_finta):
+    codice = frantuma.conia("TASK-A", "uno", "Uno")
+    assert frantuma.trova_percorso(codice[3:]) == frantuma.trova_percorso(codice)
+
+
+def test_trova_un_codice_inesistente_da_none(base_finta):
+    assert frantuma.trova_percorso("MT-ZZZZ") is None
 
 
 def test_uno_slug_sporco_viene_rifiutato(base_finta):
@@ -63,26 +95,29 @@ def test_report_legge_i_titoli_veri_dai_file(base_finta):
     frantuma.conia("TASK-A", "uno", "Sostituire la chiave Brevo esposta")
     frantuma.conia("TASK-A", "due", "Catena dell'incasso")
     testo = frantuma.report("TASK-A")
-    assert "MT-01" in testo and "Sostituire la chiave Brevo esposta" in testo
-    assert "MT-02" in testo and "Catena dell'incasso" in testo
+    assert "Sostituire la chiave Brevo esposta" in testo
+    assert "Catena dell'incasso" in testo
+
+
+def test_report_mostra_il_codice_non_il_percorso(base_finta):
+    """Correzione di Max, 2026-09-09: un ID e' qualcosa che si copia e si
+    incolla altrove, un percorso non lo e'."""
+    frantuma.conia("TASK-A", "uno", "Prima")
+    testo = frantuma.report("TASK-A")
+    assert "company/Memory/tasks/micro" not in testo
+    assert re.search(r"\*\*MT-[A-Z0-9]{4}\*\*", testo)
 
 
 def test_report_ha_lo_schema_fisso_viola_con_frecce(base_finta):
-    """La forma esatta approvata da Max 08-09/09: titolo, sottotitolo col
-    conteggio, un ramo per micro-task (└── sull'ultima), tutte col marcatore
-    🟣. report() e' sempre la FASE 2 (conferma): ogni riga porta il percorso
-    REALE del file -- l'ID vero, non una frase generica (correzione di Max:
-    "ID ufficiale" da solo non e' un ID, serve il percorso vero) -- la FASE 1
-    (proposta) non passa da qui, si compone a mano prima di coniare nulla."""
+    """La forma esatta approvata da Max: titolo, sottotitolo col conteggio,
+    un ramo per micro-task (└── sull'ultima), tutte col marcatore 🟣."""
     frantuma.conia("TASK-A", "uno", "Prima")
     frantuma.conia("TASK-A", "due", "Seconda")
     righe = frantuma.report("TASK-A").split("\n")
     assert righe[0] == "🟣 **TASK-A**"
     assert righe[1] == "🟣 divisa in 2 micro-task ufficiali"
-    assert righe[3].startswith("   ├──🟣→ **MT-01**")
-    assert righe[3].endswith("`company/Memory/tasks/micro/TASK-A/MT-01-uno.md`")
-    assert righe[4].startswith("   └──🟣→ **MT-02**")
-    assert righe[4].endswith("`company/Memory/tasks/micro/TASK-A/MT-02-due.md`")
+    assert righe[3].startswith("   ├──🟣→ **MT-")
+    assert righe[4].startswith("   └──🟣→ **MT-")
 
 
 def test_report_su_task_senza_micro_task_lo_dice_chiaro(base_finta):

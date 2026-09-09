@@ -1,36 +1,29 @@
 # -*- coding: utf-8 -*-
 """
-frantuma.py -- spacca una task grande in micro-task ufficiali, ognuna col suo ID.
+frantuma.py -- spacca una task grande in micro-task ufficiali, ognuna col suo
+codice -- esattamente come un checkpoint di ripresa (scripts/checkpoint.py).
 
-Cosa fa questa funzione, e SOLO questa (corretto da Max il 2026-09-08, dopo una
-prima versione che ci aveva messo dentro onde/parallelismo/verifica di scope
-che nessuno aveva chiesto): prende una task grande e la spacca in micro-task,
-ognuna con un ID coniato -- MT-01, MT-02, ... -- esattamente come un ADR o un
-checkpoint. Non pianifica chi la esegue, non calcola parallelismo, non decide
-un ordine. Divide, e basta.
+Cosa fa questa funzione, e SOLO questa (corretta due volte da Max lo stesso
+giorno: prima tolte onde/parallelismo/scope non richiesti, poi corretto l'ID
+stesso -- non un percorso di file, un CODICE BREVE, la stessa cosa di un
+checkpoint. "Con ID intendo il checkpoint, capisci? sono la stessa cosa. Lo
+copio, lo metto in un'altra chat, e quella parte subito facendo la micro
+task.").
 
-Il problema che risolve
-------------------------
-Due sessioni non devono mai coniare la stessa micro-task nello stesso istante.
-Stessa legge anti-collisione di scripts/adr.py e scripts/checkpoint.py (B-009):
-il numero si occupa creando il FILE, in modo atomico (O_CREAT|O_EXCL), non
-leggendo la cartella e scrivendo il successivo.
-
-La numerazione e' per-padre: ogni task grande ha la sua sequenza MT-01, MT-02...
-che riparte da 1 per una task diversa, perche' il numero deve dire "il pezzo
-N-esimo DI QUESTA task", non un ID globale senza significato.
-
-Lo schema di risposta
-----------------------
-Fisso, scelto da Max il 2026-09-08 dopo tre giri (bocciati: un albero ASCII
-boxato/evidenziato con "onde" — cringe; un Artifact — vietato, vuole la chat).
-Colore dominante VIOLA (🟣), come l'arancione (🟠) e' di /recap. Generato da
-`report()`, mai scritto a mano: stessa filosofia del battito
-(verifica_recap.py) -- la forma la garantisce il codice, non la mia memoria.
+Il codice
+---------
+Forma: MT-XXXX (quattro caratteri). Stesso alfabeto senza caratteri ambigui di
+scripts/checkpoint.py (niente O/0, I/1/L, S/5, B/8) -- un codice si detta a
+voce. NON e' progressivo: e' sorteggiato e verificato contro ogni micro-task
+mai esistita (disco + storia git, ogni ramo), stessa legge anti-collisione di
+checkpoint.py e adr.py (B-009). Un numero progressivo per-padre (MT-01, MT-02)
+sarebbe stato ambiguo: incollato in una chat nuova senza dire anche il padre,
+non porta da nessuna parte. Un codice sorteggiato e' gia' univoco da solo.
 
 Uso:
     python scripts/frantuma.py conia --padre TASK-LANCI-BUILD-W3 \
         --slug chiave-brevo --titolo "Sostituire la chiave Brevo esposta"
+    python scripts/frantuma.py trova MT-6R2M
     python scripts/frantuma.py report --padre TASK-LANCI-BUILD-W3
 """
 from __future__ import annotations
@@ -38,42 +31,80 @@ from __future__ import annotations
 import argparse
 import io
 import os
+import random
 import re
+import subprocess
 import sys
 from datetime import datetime
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CARTELLA_BASE = os.path.join(RADICE, "company", "Memory", "tasks", "micro")
+SOTTOCARTELLA_GIT = "company/Memory/tasks/micro"
 
-_RE_MT = re.compile(r"^MT-(\d{2,4})-(.*)$")
-_RE_TITOLO = re.compile(r"^#\s*MT-\d+\s*[—-]\s*(.+)$", re.MULTILINE)
+# stesso alfabeto di scripts/checkpoint.py: si detta a voce senza ambiguita'
+ALFABETO = "ACDEFGHJKMNPQRTUVWXYZ2346789"
+
+_RE_MT = re.compile(r"^(MT-[A-Z0-9]{4})-(.*)$")
+_RE_TITOLO = re.compile(r"^#\s*MT-[A-Z0-9]{4}\s*[—-]\s*(.+)$", re.MULTILINE)
 
 
 def _cartella(padre: str) -> str:
     return os.path.join(CARTELLA_BASE, padre)
 
 
-def _numeri_su_disco(padre: str) -> dict[int, list[str]]:
-    trovati: dict[int, list[str]] = {}
-    cart = _cartella(padre)
-    if not os.path.isdir(cart):
+def _sorteggia(n: int = 4) -> str:
+    return "".join(random.choice(ALFABETO) for _ in range(n))
+
+
+def _codici_su_disco() -> set[str]:
+    trovati: set[str] = set()
+    if not os.path.isdir(CARTELLA_BASE):
         return trovati
-    for nome in sorted(os.listdir(cart)):
-        if not nome.endswith(".md"):
-            continue
-        m = _RE_MT.match(nome[:-3])
-        if m:
-            trovati.setdefault(int(m.group(1)), []).append(nome)
+    for radice, _dirs, nomi in os.walk(CARTELLA_BASE):
+        for nome in nomi:
+            if not nome.endswith(".md"):
+                continue
+            m = _RE_MT.match(nome[:-3])
+            if m:
+                trovati.add(m.group(1))
     return trovati
 
 
-def prossimo_numero(padre: str) -> int:
-    disco = _numeri_su_disco(padre)
-    return (max(disco) + 1) if disco else 1
+def _codici_nella_storia() -> set[str]:
+    """Ogni codice MT mai aggiunto al repo, su qualunque ramo -- stessa
+    ragione di adr.py/checkpoint.py: un codice nato in una sessione parallela
+    e poi rinominato sparisce dal disco e resta occupato."""
+    codici: set[str] = set()
+    try:
+        out = subprocess.run(
+            ["git", "log", "--all", "--diff-filter=A", "--name-only",
+             "--pretty=format:", "--", SOTTOCARTELLA_GIT],
+            cwd=RADICE, capture_output=True, text=True, timeout=60)
+        for riga in out.stdout.splitlines():
+            riga = riga.strip()
+            if not riga.endswith(".md"):
+                continue
+            m = _RE_MT.match(os.path.basename(riga)[:-3])
+            if m:
+                codici.add(m.group(1))
+    except Exception:
+        pass  # senza git si lavora lo stesso, con meno memoria
+    return codici
+
+
+def nuovo_codice() -> str:
+    occupati = _codici_su_disco() | _codici_nella_storia()
+    for _ in range(2000):
+        c = "MT-" + _sorteggia(4)
+        if c not in occupati:
+            return c
+    raise RuntimeError("Nessun codice MT libero: alfabeto esaurito o cartella rotta.")
 
 
 def conia(padre: str, slug: str, titolo: str) -> str:
-    """Occupa il prossimo numero MT-NN dentro la cartella del padre, atomico."""
+    """Sorteggia il codice e crea il file in modo atomico (O_CREAT|O_EXCL):
+    se due sessioni coniano nello stesso istante, una vince e l'altra
+    risorteggia, invece di scriversi sopra."""
     if not re.match(r"^[a-z0-9]+(-[a-z0-9]+)*$", slug):
         raise SystemExit("slug non valido: minuscole, cifre e trattini")
     if not re.match(r"^[A-Za-z0-9_-]+$", padre):
@@ -83,36 +114,66 @@ def conia(padre: str, slug: str, titolo: str) -> str:
     os.makedirs(cart, exist_ok=True)
     oggi = datetime.now().strftime("%Y-%m-%d")
 
-    numero = prossimo_numero(padre)
-    for _ in range(200):
-        nome = "MT-%02d-%s.md" % (numero, slug)
+    for _ in range(2000):
+        codice = nuovo_codice()
+        nome = "%s-%s.md" % (codice, slug)
         percorso = os.path.join(cart, nome)
         corpo = (
-            "# MT-%02d — %s\n\n"
+            "# %s — %s\n\n"
             "- **Padre:** %s\n"
             "- **Data:** %s\n\n"
             "## Cosa fa\n\n_da scrivere nello stesso turno in cui la micro-task e' coniata_\n\n"
             "## Gate di chiusura\n\n\n"
             "## Output\n\n"
-        ) % (numero, titolo, padre, oggi)
+        ) % (codice, titolo, padre, oggi)
         try:
             fd = os.open(percorso, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
         except FileExistsError:
-            numero += 1
             continue
         with io.open(fd, "w", encoding="utf-8", newline="\n") as f:
             f.write(corpo)
-        codice = "MT-%02d" % numero
         print("")
-        print("  MICRO-TASK CONIATA (numero occupato sul disco)")
+        print("  MICRO-TASK CONIATA (codice irripetibile, mai progressivo)")
         print("")
         print("     CODICE:  %s" % codice)
         print("     Padre:   %s" % padre)
         print("     Titolo:  %s" % titolo)
         print("     File:    company/Memory/tasks/micro/%s/%s" % (padre, nome))
         print("")
+        print("  Basta dire %s in un'altra chat: la trova con `frantuma.py trova`." % codice)
+        print("")
         return codice
-    raise RuntimeError("Nessun numero MT libero nei 200 successivi: cartella rotta.")
+    raise RuntimeError("Non riesco a coniare: nessun codice libero dopo 2000 tentativi.")
+
+
+def _tutti_i_file() -> list[tuple[str, str, str]]:
+    """(codice, padre, nome_file) per ogni micro-task su disco."""
+    risultato = []
+    if not os.path.isdir(CARTELLA_BASE):
+        return risultato
+    for padre in sorted(os.listdir(CARTELLA_BASE)):
+        cart = _cartella(padre)
+        if not os.path.isdir(cart):
+            continue
+        for nome in sorted(os.listdir(cart)):
+            if not nome.endswith(".md"):
+                continue
+            m = _RE_MT.match(nome[:-3])
+            if m:
+                risultato.append((m.group(1), padre, nome))
+    return risultato
+
+
+def trova_percorso(codice: str) -> str | None:
+    """Il percorso del file di una micro-task, cercando in TUTTE le task
+    padre -- e' il senso stesso del codice: non serve sapere altro."""
+    codice = codice.upper()
+    if not codice.startswith("MT-"):
+        codice = "MT-" + codice
+    for c, padre, nome in _tutti_i_file():
+        if c == codice:
+            return os.path.join(CARTELLA_BASE, padre, nome)
+    return None
 
 
 def leggi_tutte(padre: str) -> list[dict]:
@@ -129,26 +190,23 @@ def leggi_tutte(padre: str) -> list[dict]:
         testo = io.open(os.path.join(cart, nome), encoding="utf-8").read()
         titolo_m = _RE_TITOLO.search(testo)
         righe.append({
-            "codice": "MT-%02d" % int(m.group(1)),
-            "numero": int(m.group(1)),
+            "codice": m.group(1),
             "titolo": titolo_m.group(1).strip() if titolo_m else m.group(2),
-            "percorso": "company/Memory/tasks/micro/%s/%s" % (padre, nome),
         })
-    return sorted(righe, key=lambda r: r["numero"])
+    return righe
 
 
 def report(padre: str) -> str:
     """Schema fisso viola-con-frecce, scelto da Max il 2026-09-08/09. Calcolato
     dai file reali (titolo incluso), mai scritto a mano.
 
-    Questa funzione legge SOLO file gia' coniati -- non esiste un "report" su
-    micro-task che non sono ancora state create. Per questo il suo output e'
-    sempre la FASE 2 (conferma): ogni riga porta il percorso REALE del file
-    coniato -- l'ID vero, non una frase generica -- perche' e' quello che
-    un'altra chat/sessione apre per eseguire proprio quella micro-task. La
-    FASE 1 (proposta, prima che Max/Gael/Neri accettino) non passa da qui: si
-    compone a mano, sugli stessi titoli, SENZA coniare nulla e SENZA percorso
-    (non esiste ancora) -- vedi emperator.md 6.24.
+    Legge SOLO file gia' coniati -- non esiste un "report" su micro-task che
+    non sono ancora state create. Per questo il suo output e' sempre la
+    FASE 2 (conferma): ogni riga porta il CODICE -- lo stesso di un
+    checkpoint -- non un percorso: e' quello che si copia e si incolla in
+    un'altra chat. La FASE 1 (proposta, prima che Max/Gael/Neri accettino)
+    non passa da qui: si compone a mano, sugli stessi titoli, SENZA coniare
+    nulla -- vedi emperator.md 6.24.
     """
     tutte = leggi_tutte(padre)
     if not tutte:
@@ -160,20 +218,22 @@ def report(padre: str) -> str:
     righe.append("   │")
     for i, m in enumerate(tutte):
         ramo = "└──" if i == len(tutte) - 1 else "├──"
-        righe.append("   %s🟣→ **%s** · %s — `%s`"
-                      % (ramo, m["codice"], m["titolo"], m["percorso"]))
+        righe.append("   %s🟣→ **%s** · %s" % (ramo, m["codice"], m["titolo"]))
     return "\n".join(righe)
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(
-        description="Spacca una task grande in micro-task con ID (/frantuma).")
+        description="Spacca una task grande in micro-task con codice (/frantuma).")
     sub = ap.add_subparsers(dest="azione", required=True)
 
-    c = sub.add_parser("conia", help="crea una micro-task nuova, numero atomico")
+    c = sub.add_parser("conia", help="crea una micro-task nuova, codice sorteggiato")
     c.add_argument("--padre", required=True)
     c.add_argument("--slug", required=True)
     c.add_argument("--titolo", required=True)
+
+    t = sub.add_parser("trova", help="trova e stampa una micro-task dal suo codice")
+    t.add_argument("codice")
 
     r = sub.add_parser("report", help="stampa lo schema fisso viola-con-frecce")
     r.add_argument("--padre", required=True)
@@ -181,6 +241,13 @@ def main() -> int:
     a = ap.parse_args()
     if a.azione == "conia":
         conia(a.padre, a.slug, a.titolo)
+        return 0
+    if a.azione == "trova":
+        p = trova_percorso(a.codice)
+        if not p:
+            print("Nessuna micro-task con codice %s." % a.codice)
+            return 1
+        sys.stdout.write(io.open(p, encoding="utf-8").read())
         return 0
     if a.azione == "report":
         print(report(a.padre))

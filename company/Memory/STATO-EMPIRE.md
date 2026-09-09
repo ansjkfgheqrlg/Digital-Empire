@@ -1,3 +1,14 @@
+## 🟣 2026-09-09 — /frantuma: codice sorteggiato tipo-checkpoint (MT-XXXX), non un percorso — CP-20260909-JX89
+
+Ultima correzione: Max ha rifiutato anche il percorso. *"Con ID intendo il checkpoint, capisci?
+sono la stessa cosa. Lo copio, lo metto in un'altra chat, e quella parte subito facendo la
+micro task."* Il codice ora e' identico nel meccanismo a `EMP-XXXX`: quattro caratteri
+sorteggiati (stesso alfabeto senza ambiguita' di `checkpoint.py`), verificato contro disco+storia
+git, **non progressivo per-padre** (`MT-01` era ambiguo fra task diverse). Aggiunto
+`frantuma.py trova <codice>`: cerca in tutte le task padre e stampa il file — il comando che una
+chat nuova lancia ricevendo solo il codice. 13 test, suite 27/27 verde.
+Dettagli: [CP-20260909-JX89](checkpoints/CP-20260909-JX89.md).
+
 ## 🟣 2026-09-09 — /frantuma: l'ID di fase 2 e' il percorso vero, non una frase — CP-20260909-6R2M
 
 Durante una prova a vuoto ("fingi", nessun file reale), Max ha colto un difetto vero nello
