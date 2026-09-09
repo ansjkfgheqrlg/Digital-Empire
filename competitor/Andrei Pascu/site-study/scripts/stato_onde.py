@@ -52,7 +52,10 @@ ONDE = [
         "50-recensioni", "51-recensioni-mentorship", "52-story", "53-risorse",
         "54-attrezzatura", "55-negozio", "56-store", "57-store-aps", "58-ai-policy",
     ]),
-    ("F", "T5 corpus del blog", 1, []),
+    ("F", "T5 corpus del blog (37 articoli veri, 4 campioni aperti)", 4, [
+        "60-blog-numero-91", "60-blog-domanda-funnel",
+        "60-blog-titolo-lungo", "60-blog-commerciale-corsi",
+    ]),
     ("G", "le tre sintesi + fusione empire-premium-style", 4, []),
 ]
 

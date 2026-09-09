@@ -23,7 +23,7 @@ di verificarlo invece di crederci.
 |---|---|---|
 | Pagine dell'ecosistema | ~11-12 | **187 URL** |
 | Pagine commerciali (non blog) | ~11 | **76** |
-| Articoli di blog | 0 conosciuti | **105** |
+| Articoli di blog | 0 conosciuti | ~~105~~ **37** (i 105 contavano gli indici tag/categoria — vedi correzione) |
 | Domini | 4 | **7** |
 | Pagine catturate | 10 | 10 — **il 13% del commerciale** |
 
@@ -36,7 +36,7 @@ avrei chiuso lo "studio totale" con 66 pagine commerciali mai aperte e non l'avr
 
 | Dominio | Cosa è | Pagine | Costruzione |
 |---|---|---|---|
-| `andrei-copy.com` | il negozio storico, l'hub | **165** (60 commerciali + 105 blog) | **Squarespace** (`static1.squarespace.com`, `sqspcdn`) |
+| `andrei-copy.com` | il negozio storico, l'hub | **165** (61 commerciali + 37 articoli + 67 indici tag/categoria) | **Squarespace** (`static1.squarespace.com`, `sqspcdn`) |
 | `apsales.eu` | l'agenzia CRO | **8** | artigianale (design system vero) |
 | `apsales.info` | **alias di `apsales.eu`** — stessa sitemap | — | idem |
 | `claude-speedrun.com` | il corso su Claude, 249 € | **2** | artigianale, `#fb4604` + Onest |
@@ -215,7 +215,7 @@ di funnel che non capiamo ancora.
 | Onda C | 7 | 4 | 7 |
 | Onda D | 15 | 0 | 15 |
 | Onda E | 9 | 0 | 9 |
-| Onda F | 0 | 0 | 1 |
+| Onda F | 4 | 0 | 4 |
 | Onda G | 0 | 0 | 4 |
 
 ## Connessioni
