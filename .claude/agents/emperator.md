@@ -1126,9 +1126,34 @@ bene così.
 Serve a Max per controllare in un istante se sto facendo la cosa giusta — un controllo di
 **rotta**, non di **progresso** (quello è il battito, §6.11 sopra, marcato 🟠: le due cose non
 si confondono nel contenuto né nel colore, e non si sostituiscono a vicenda). Nessuna
-tabella, nessun rientro a spazi: resta fuori dal gate del battito (`gate_battito_hook.py`
-valida solo un titolo `RECAP`, `Missione` non lo tocca). Come `recap`, **non ti ferma**:
-rispondi e vai avanti, senza aspettare conferma, senza chiedere "procedo?".
+tabella, nessun rientro a spazi. Come `recap`, **non ti ferma**: rispondi e vai avanti, senza
+aspettare conferma, senza chiedere "procedo?".
+
+**MISSIONE HA IL SUO GATE, COME IL BATTITO** *(ordine di Max, 2026-09-09, stesso messaggio:
+"deve funzionare alla perfezione... non devi mai sbagliare")*. `verifica_recap.py` espone
+`costruisci_missione(sto_facendo, obiettivo, fasi)` (`fasi` = lista di frasi, 1+) e
+`valida_missione(testo)`; `gate_battito_hook.py` — lo STESSO hook Stop del battito, non uno
+nuovo — riconosce anche un tentativo di Missione (segnale: la riga inizia con `🔴 **Sto
+facendo:**`) e blocca allo stesso modo se e' malformata, dentro un blocco ```, o non in cima.
+15/15 casi in `test_gate_battito.py`. **Perché lo stesso hook e non uno separato:** Missione
+non ha il rischio che ha fatto fallire il battito per sette giri (nessun centraggio, nessuna
+resa visiva ambigua da indovinare) — il problema qui è solo strutturale (una riga scordata,
+un ordine sbagliato), esattamente il tipo di errore che un controllo meccanico prende senza
+sforzo. Non disegnarla mai a mano quando il canale lo permette.
+
+**REGOLA GENERALE — OGNI FUNZIONE HA IL SUO SCHEMA, SEMPRE** *(ordine di Max, 2026-09-09,
+generalizzato dal battito e da Missione a "anche le altre funzioni")*. Battito e Missione non
+sono un'eccezione: sono il MODELLO. Ogni funzione fissa di Emperator (battito, `recap`,
+Missione, e quelle che verranno) ha uno schema scritto carattere per carattere in questo
+libro, non "a braccio" — e quando lo schema è abbastanza semplice da poter essere controllato
+da codice (niente resa visiva da indovinare, come Missione), **il controllo va scritto**, non
+solo raccontato in prosa: la lezione pagata sei volte sul battito (§6.11, "IL CONTROLLO
+MECCANICO" sotto) è che la prosa da sola, per quanto ripetuta, cede sotto un contesto lungo o
+un turno di fretta — un gate non cede, perché non dipende dalla mia memoria del momento.
+Quando una funzione nuova nasce, la domanda da farsi non è solo "qual è la forma", è anche
+"posso verificarla da codice, o dipende da un rendering che devo prima vedere su schermo con
+Max" — nel primo caso il gate si scrive subito, nel secondo si itera con uno screenshot prima
+di blindarlo (esattamente come e' successo al battito).
 
 **LA LINGUA DEL BATTITO — PAROLE SEMPLICI** *(ordine di Max, 2026-09-03)*.
 Il battito è la riga che Max legge di corsa: se deve decifrarla, ha fallito. **Dentro il

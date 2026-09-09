@@ -29,7 +29,20 @@ QUI = os.path.dirname(os.path.abspath(__file__))
 HOOK = os.path.join(QUI, "gate_battito_hook.py")
 if QUI not in sys.path:
     sys.path.insert(0, QUI)
-from verifica_recap import costruisci  # noqa: E402  (dopo l'import di sys/os sopra)
+from verifica_recap import costruisci, costruisci_missione  # noqa: E402
+
+MISSIONE_OK = costruisci_missione(
+    "scrivo il modulo di export PDF",
+    "PDF pronto senza passare da Canva",
+    ["motore HTML->PDF", "template con logo", "test su 3 preventivi veri"],
+)
+
+MISSIONE_ROTTA = """🔴 **Sto facendo:** scrivo il modulo
+🔴 **Obiettivo:**
+🔴 Fasi:
+│
+├─🔴→ fase 1
+├─🔴→ fase 2"""
 
 BATTITO_OK = costruisci(
     "letto il libro, trovato il punto che cede",
@@ -145,6 +158,19 @@ CASI = [
           ("doom bot", ["autoripara i test"])],
          "GOD EMPEROR DOOM", 100, 90,
      ) + "\n\nFatto.", False, False),
+
+    # --- Missione (§6.11, ordine di Max 2026-09-09) ---
+    ("12. Missione conforme, in cima, no fence -> passa",
+     MISSIONE_OK + "\n\nDettagli sopra.", False, False),
+
+    ("13. Missione rotta (Obiettivo vuoto, manca l'ultima fase) -> BLOCCA",
+     MISSIONE_ROTTA, False, True),
+
+    ("14. Missione conforme ma dentro ``` -> BLOCCA (stesso motivo del battito)",
+     "```\n" + MISSIONE_OK + "\n```", False, True),
+
+    ("15. Missione conforme ma NON in cima -> BLOCCA (posizione)",
+     "Prima ti dico una cosa.\n\n" + MISSIONE_OK, False, True),
 ]
 
 

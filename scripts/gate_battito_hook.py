@@ -62,6 +62,11 @@ SEGNALE_VOCE = re.compile(r"^🟠 \*\*[^:]+:\*\*")  # fallback: una voce bullet,
 SEGNALE_POTERE = re.compile(r"^🟠 \*\*Potere:\*\* \d{1,3}%$")  # ultima riga di ogni battito valido
 TETTO_RIGHE_BLOCCO = 60  # protezione anti-input-rotto: nessun battito reale supera questo
 
+# Segnale di un tentativo di Missione (§6.11, 🔴): stessa filosofia del battito ma piu'
+# semplice — niente centraggio, niente rendering ambiguo, quindi niente saga di giri.
+SEGNALE_MISSIONE = re.compile(r"^🔴 \*\*Sto facendo:\*\*")
+TETTO_RIGHE_MISSIONE = 30  # una Missione e' sempre corta: 2 righe + poche fasi
+
 
 def righe_reali(testo):
     """Le righe di prosa vera: fuori dai blocchi di codice, non citate, non indentate.
@@ -179,6 +184,57 @@ def trova_battito(testo):
     return inizio, "\n".join(righe[inizio:fine]), False
 
 
+def trova_missione(testo):
+    """Ritorna (indice_prima_riga, blocco, dentro_fence) di un tentativo di Missione, o
+    (None, None, None). Stessa filosofia di `trova_battito()` ma piu' semplice: niente
+    centraggio da preservare, quindi niente bisogno della doppia ricerca fence/plain — un
+    fence in cima che apre con `🔴 **Sto facendo:**` e' vietato allo stesso modo del
+    battito (stesso motivo: mai il widget blu copiabile); altrimenti si cerca in chiaro.
+    """
+    righe = testo.replace("\r\n", "\n").split("\n")
+
+    idx = 0
+    while idx < len(righe) and righe[idx].strip() == "":
+        idx += 1
+    if idx >= len(righe):
+        return None, None, None
+
+    prima_riga = righe[idx].strip()
+    if prima_riga.startswith("```") or prima_riga.startswith("~~~"):
+        marcatore = prima_riga[:3]
+        k = idx + 1
+        while k < len(righe) and righe[k].strip() == "":
+            k += 1
+        if k < len(righe) and SEGNALE_MISSIONE.match(righe[k]):
+            limite = min(len(righe), k + TETTO_RIGHE_MISSIONE)
+            fine = limite
+            for m in range(k, limite):
+                if righe[m].strip().startswith(marcatore):
+                    fine = m
+                    break
+            return idx, "\n".join(righe[k:fine]), True
+        return None, None, None  # fence che non apre con Missione: non e' un suo tentativo
+
+    # Niente fence: si cerca un tentativo scritto in chiaro OVUNQUE nel messaggio (non solo
+    # in cima) — se non e' in cima, `main()` lo segnala come problema di posizione, ma va
+    # comunque TROVATO per poterlo segnalare (stessa logica del fallback di `trova_battito`).
+    utili = {i: r for i, r in righe_reali(testo) if r is not None}
+    inizio = None
+    for i in sorted(utili):
+        if SEGNALE_MISSIONE.match(utili[i]):
+            inizio = i
+            break
+    if inizio is None:
+        return None, None, None
+
+    fine = min(len(righe), inizio + TETTO_RIGHE_MISSIONE)
+    for i in range(inizio, fine):
+        if righe[i].strip() == "":
+            fine = i
+            break
+    return inizio, "\n".join(righe[inizio:fine]), False
+
+
 def blocchi_testo_del_turno(percorso):
     """I blocchi `text` dell'ultimo turno, SEPARATI — non concatenati.
 
@@ -249,35 +305,58 @@ def main():
     if not messaggi:
         return 0
 
-    from verifica_recap import valida  # unica fonte di verita' della forma
+    from verifica_recap import valida, valida_missione  # unica fonte di verita' della forma
 
     problemi = []
+    problemi_battito = []
+    problemi_missione = []
     for testo in messaggi:
         inizio, blocco, dentro_fence = trova_battito(testo)
-        if blocco is None:
-            continue  # questo messaggio non porta un tentativo di battito
+        if blocco is not None:
+            guai = []
+            if dentro_fence:
+                guai.append(
+                    "il battito e' dentro un blocco di codice ``` — VIETATO dal 7º giro "
+                    "(§6.11): nel renderer di Max un blocco di codice e' un widget blu con "
+                    "pulsante copia, non testo semplice, e Max l'ha bocciato. Il battito ora "
+                    "sono bullet semplici (`🟠 **<Etichetta>:** <contenuto>`) scritti in "
+                    "chiaro, MAI dentro ```. Togli il fence."
+                )
+            guai.extend(valida(blocco))
 
-        guai = []
-        if dentro_fence:
-            guai.append(
-                "il battito e' dentro un blocco di codice ``` — VIETATO dal 7º giro "
-                "(§6.11): nel renderer di Max un blocco di codice e' un widget blu con "
-                "pulsante copia, non testo semplice, e Max l'ha bocciato. Il battito ora "
-                "sono bullet semplici (`🟠 **<Etichetta>:** <contenuto>`) scritti in "
-                "chiaro, MAI dentro ```. Togli il fence."
+            # La posizione e' parte della regola (§6.11: il battito va IN CIMA) e si giudica
+            # DENTRO il messaggio che lo contiene — mai sulla somma del turno (vedi la nota in
+            # blocchi_testo_del_turno: quella confusione bloccava messaggi corretti).
+            prima = "\n".join(testo.split("\n")[:inizio]).strip()
+            if prima:
+                guai = ["il battito non e' in cima al messaggio: prima di esso ci sono gia' "
+                        "%d caratteri di testo (§6.11 -- mai in fondo, mai dopo l'analisi)"
+                        % len(prima)] + guai
+
+            problemi.extend(guai)
+            problemi_battito.extend(guai)
+            continue  # un messaggio porta un battito O una Missione, mai tutti e due
+
+        inizio_m, blocco_m, dentro_fence_m = trova_missione(testo)
+        if blocco_m is None:
+            continue  # questo messaggio non porta ne' un battito ne' una Missione
+
+        guai_m = []
+        if dentro_fence_m:
+            guai_m.append(
+                "la Missione e' dentro un blocco di codice ``` — vietato per lo stesso "
+                "motivo del battito (§6.11): niente widget blu copiabile. Scrivila in "
+                "chiaro, MAI dentro ```."
             )
-        guai.extend(valida(blocco))
+        guai_m.extend(valida_missione(blocco_m))
 
-        # La posizione e' parte della regola (§6.11: il battito va IN CIMA) e si giudica
-        # DENTRO il messaggio che lo contiene — mai sulla somma del turno (vedi la nota in
-        # blocchi_testo_del_turno: quella confusione bloccava messaggi corretti).
-        prima = "\n".join(testo.split("\n")[:inizio]).strip()
-        if prima:
-            guai = ["il battito non e' in cima al messaggio: prima di esso ci sono gia' "
-                    "%d caratteri di testo (§6.11 -- mai in fondo, mai dopo l'analisi)"
-                    % len(prima)] + guai
+        prima_m = "\n".join(testo.split("\n")[:inizio_m]).strip()
+        if prima_m:
+            guai_m = ["la Missione non e' in cima al messaggio: prima di essa ci sono gia' "
+                      "%d caratteri di testo" % len(prima_m)] + guai_m
 
-        problemi.extend(guai)
+        problemi.extend(guai_m)
+        problemi_missione.extend(guai_m)
 
     if not problemi:
         return 0
@@ -286,27 +365,51 @@ def main():
     # generazione fallisce, il BLOCCO VERO (deciso sopra, basato su `problemi`) non deve
     # sparire con lui — lezione pagata il 2026-09-09 (un placeholder troppo lungo aveva
     # spento il gate intero attraverso la PROTEZIONE 3). Isolato in un try proprio.
-    esempio = ""
-    try:
-        from verifica_recap import costruisci  # stesso principio: una sola fonte di verita'
-        esempio = "\n\nEsempio di forma (valori segnaposto):\n\n" + costruisci(
-            "<una frase libera>", "<una frase libera>", "<una frase libera>",
-            "nessuna, sto lavorando da solo",
-            "normale", 100, 0,
+    istruzioni = []
+    if problemi_battito:
+        esempio = ""
+        try:
+            from verifica_recap import costruisci  # stesso principio: una sola fonte di verita'
+            esempio = "\n\nEsempio di forma (valori segnaposto):\n\n" + costruisci(
+                "<una frase libera>", "<una frase libera>", "<una frase libera>",
+                "nessuna, sto lavorando da solo",
+                "normale", 100, 0,
+            )
+        except Exception:
+            pass
+        istruzioni.append(
+            "BATTITO — riscrivilo nella forma fissa (emperator.md 6.11, 8º giro) — bullet "
+            "semplici, NIENTE centraggio: titolo in chiaro, riga vuota, poi `🟠 **<Etichetta>:** "
+            "<contenuto libero>` con una riga vuota dopo ognuno (Fatto, Sto facendo, Farò, "
+            "Forze, Assetto, Potere). MAI dentro un blocco di codice ```, MAI in tabella. Unica "
+            "eccezione: Forze con più unità nominate resta ad ALBERO (`🟠 **Forze:**` da sola, "
+            "poi `🟠 <NOME>` / `│` / `├─🟠→`/`└─🟠→`). Non disegnarlo a mano: chiama "
+            "`verifica_recap.costruisci(...)` con i sei valori." + esempio
         )
-    except Exception:
-        pass
+    if problemi_missione:
+        esempio_m = ""
+        try:
+            from verifica_recap import costruisci_missione
+            esempio_m = "\n\nEsempio di forma (valori segnaposto):\n\n" + costruisci_missione(
+                "<l'azione concreta di questo momento>",
+                "<perché lo sto facendo, cosa vuol dire finito>",
+                ["<fase 1>", "<fase 2>"],
+            )
+        except Exception:
+            pass
+        istruzioni.append(
+            "MISSIONE — riscrivila nella forma fissa (emperator.md 6.11): `🔴 **Sto "
+            "facendo:** <contenuto>`, poi `🔴 **Obiettivo:** <contenuto>`, poi `🔴 Fasi:` "
+            "da sola, poi `│`, poi una fase per riga `├─🔴→ <fase>` (l'ultima `└─🔴→`). "
+            "Nessuna riga vuota in mezzo, MAI dentro un blocco di codice ```. Non "
+            "disegnarla a mano: chiama `verifica_recap.costruisci_missione(...)`."
+            + esempio_m
+        )
 
     motivo = (
         "GATE BATTITO — la forma non torna, il messaggio non parte cosi'.\n\n"
         + "\n".join("  - " + p for p in problemi)
-        + "\n\nRiscrivi il battito nella forma fissa (emperator.md 6.11, 8º giro) — bullet "
-        "semplici, NIENTE centraggio: titolo in chiaro, riga vuota, poi `🟠 **<Etichetta>:** "
-        "<contenuto libero>` con una riga vuota dopo ognuno (Fatto, Sto facendo, Farò, "
-        "Forze, Assetto, Potere). MAI dentro un blocco di codice ```, MAI in tabella. Unica "
-        "eccezione: Forze con più unità nominate resta ad ALBERO (`🟠 **Forze:**` da sola, "
-        "poi `🟠 <NOME>` / `│` / `├─🟠→`/`└─🟠→`). Non disegnarlo a mano: chiama "
-        "`verifica_recap.costruisci(...)` con i sei valori." + esempio
+        + "\n\n" + "\n\n".join(istruzioni)
     )
 
     risposta = {"decision": "block", "reason": motivo}

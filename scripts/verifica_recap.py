@@ -289,6 +289,98 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
     return "\n".join(out)
 
 
+# --- Missione (§6.11, ordine di Max 2026-09-09): controllo di rotta, non di progresso.
+# Stesso principio del battito — schema fisso, verificabile da codice, non a braccio — ma
+# marcato 🔴 rosso apposta per non confondersi col battito 🟠 a colpo d'occhio. Le "Fasi"
+# sono la STESSA grammatica ad albero di Forze (│ / ├─→ / └─→), qui in rosso, un solo
+# livello (nessun nome di gruppo): sono un'opinione di Emperator, non un impegno.
+RAMO_ROSSO_RE = re.compile(r"^(├─🔴→|└─🔴→) (.+)$")
+
+
+def costruisci_missione(sto_facendo, obiettivo, fasi):
+    """`sto_facendo`/`obiettivo` sono stringhe (una frase libera). `fasi` e' una lista di
+    1+ stringhe, una per fase, nell'ordine in cui Emperator pensa di percorrerle — una
+    previsione, non un piano vincolante."""
+    if not fasi:
+        raise ValueError("Missione: serve almeno una fase")
+    out = [
+        "🔴 **Sto facendo:** %s" % sto_facendo,
+        "🔴 **Obiettivo:** %s" % obiettivo,
+        "🔴 Fasi:",
+        "│",
+    ]
+    for i, f in enumerate(fasi):
+        ramo = "└─🔴→" if i == len(fasi) - 1 else "├─🔴→"
+        out.append("%s %s" % (ramo, f))
+    return "\n".join(out)
+
+
+def valida_missione(testo):
+    """Ritorna una lista di problemi. Lista vuota = Missione conforme."""
+    problemi = []
+    righe = testo.replace("\r\n", "\n").split("\n")
+
+    idx = 0
+    while idx < len(righe) and righe[idx].strip() == "":
+        idx += 1
+    if idx >= len(righe):
+        return ["blocco vuoto: nessuna Missione trovata nel testo passato"]
+
+    for prefisso, nome in (("🔴 **Sto facendo:** ", "Sto facendo"), ("🔴 **Obiettivo:** ", "Obiettivo")):
+        if idx >= len(righe) or not righe[idx].startswith(prefisso):
+            problemi.append(
+                "riga %d: attesa `%s<contenuto>`, trovato: %r"
+                % (idx + 1, prefisso, righe[idx] if idx < len(righe) else "<fine testo>")
+            )
+        elif not righe[idx][len(prefisso):].strip():
+            problemi.append("riga %d: '%s' senza contenuto" % (idx + 1, nome))
+        idx += 1
+
+    if idx >= len(righe) or righe[idx] != "🔴 Fasi:":
+        problemi.append(
+            "riga %d: attesa `🔴 Fasi:`, trovato: %r"
+            % (idx + 1, righe[idx] if idx < len(righe) else "<fine testo>")
+        )
+        return problemi
+    idx += 1
+
+    if idx >= len(righe) or righe[idx] != "│":
+        problemi.append("riga %d: dopo `🔴 Fasi:` serve la riga `│` da sola" % (idx + 1))
+    else:
+        idx += 1
+
+    rami = []
+    while idx < len(righe):
+        m = RAMO_ROSSO_RE.match(righe[idx])
+        if not m:
+            break
+        rami.append((idx, m.group(1), m.group(2)))
+        idx += 1
+
+    if not rami:
+        problemi.append("Fasi: nessuna fase sotto `│` (serve almeno una)")
+    else:
+        for riga_num, simbolo, _ in rami[:-1]:
+            if simbolo != "├─🔴→":
+                problemi.append(
+                    "riga %d: fase non finale dev'essere `├─🔴→`, trovato `%s`"
+                    % (riga_num + 1, simbolo)
+                )
+        ultimo_num, ultimo_simbolo, _ = rami[-1]
+        if ultimo_simbolo != "└─🔴→":
+            problemi.append(
+                "riga %d: l'ultima fase dev'essere `└─🔴→`, trovato `%s`"
+                % (ultimo_num + 1, ultimo_simbolo)
+            )
+
+    if idx < len(righe) and righe[idx].strip() != "":
+        problemi.append(
+            "riga %d: contenuto extra dopo l'ultima fase (%r)" % (idx + 1, righe[idx])
+        )
+
+    return problemi
+
+
 def main():
     args = sys.argv[1:]
     if args and args[0] == "--file":
