@@ -1,3 +1,19 @@
+## 🔵 2026-09-09 notte — PAUSA contesto saturo (ordine di Max) — RIPRESA: `EMP-APPLAN1` — CP-20260909-98ZG
+
+Chat chiusa a metà del piano chirurgico Andrei Pascu. **P0 chiuso**: i due DRAFT V1 sono su disco
+in `competitor/Andrei Pascu/piano-implementazione/` (`DRAFT-V1-A-lanci.md`, 27 azioni sull'ecosistema
+LANCI; `DRAFT-V1-B-capacita.md`, 4 verdetti go/no-go su capacità e tool). **P1 perso con la chat**:
+le 2 Sentinelle erano lanciate in background e gli agenti non sopravvivono alla chiusura — vanno
+rilanciate, i loro prompt esatti sono scritti dentro la ripresa.
+
+**Chiuso oggi, prima di questo:** EMP-APDOC1 (CP-20260909-2N8Q, i 4 documenti ufficiali su Andrei
+Pascu con PDF e doppioni) ed EMP-APIMPL1 (CP-20260909-4RZV, 12 candidati applicati su 13 SKILL.md).
+
+**RIPRESA DA:** `EMP-APPLAN1` (`company/Memory/riprese/EMP-APPLAN1.md`) — rilanciare il giro P1
+(2 Sentinelle), poi P2 (Fable), poi assemblaggio (Scagnozzo), poi esecutivo P3 di Emperator + PDF.
+
+---
+
 ## 🟣 2026-09-09 sera — ⚠️ ATTIVAZIONE FORZE (ADR-015): piano chirurgico implementazione Andrei Pascu (EMP-APPLAN1)
 
 **Dichiarazione per iscritto (ADR-015), ordine di Max: usa doom bot + sentinelle + scagnozzo +
