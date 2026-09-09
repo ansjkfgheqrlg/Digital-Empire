@@ -1,0 +1,42 @@
+{
+  "lesson_id": "outfunnel-lezione-07",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 7,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-07#\"struttura-di-base\"",
+      "atom": "Struttura di esempio a 4 step: Ads → Sales page → Popup con opt-in (es. 15% sconto per la mail) → Email di follow-up dopo 48 ore."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-07#\"popup\"",
+      "atom": "4 tipologie di trigger per popup: Time on page (dopo X secondi), Scroll percentage, Exit intent (solo desktop), On element (a un punto preciso della pagina)."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-07#\"opt-in-e-thank-you-page\"",
+      "atom": "Thank you page ha 3 funzioni: ringrazia, consegna il lead magnet promesso, include CTA aggiuntive per aumentare l'engagement."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-07#\"tipologie-di-email\"",
+      "atom": "4 tipologie di email nel funnel: marketing (sequenze automatiche), blast (una tantum a tutti), conferma (migliora deliverability), carrello abbandonato."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-07#\"checkout-e-strategie-di-vendita\"",
+      "atom": "Order bump = piccola offerta extra aggiunta DENTRO il checkout stesso (distinta da upsell/cross-sell, che avvengono prima o dopo)."
+    },
+    {
+      "id": "KA-06",
+      "source": "outfunnel-lezione-07#\"automazioni-con-condizioni\"",
+      "atom": "Automazioni con condizioni: personalizzare le email in base al comportamento (es. non inviare a chi ha già comprato) — primo accenno al tema ripreso in dettaglio in Lezione 15 (Behaviour-Based Tags)."
+    },
+    {
+      "id": "KA-07",
+      "source": "outfunnel-lezione-07#\"landing-page-e-opt-in-page\"",
+      "atom": "Distinzione terminologica: landing page = qualsiasi pagina di atterraggio; opt-in page = landing page specificamente dedicata alla raccolta contatti (sottoinsieme, non sinonimo)."
+    }
+  ]
+}

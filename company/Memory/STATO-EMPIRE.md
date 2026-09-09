@@ -10132,3 +10132,29 @@ dati Python ma non erano mai arrivati sulla pagina — dato dichiarato, mai rend
 11 pagine, rigenerato, doppione aggiornato.
 
 **RIPRESA DA:** nessuna. Lavoro chiuso, tutte le forme allineate.
+
+## 2026-09-09 — outFunnel ingerito per intero: primo dei 4 corsi di Armageddon Bundle
+
+Max ha comprato l'Armageddon Bundle e ordinato l'ingestione totale dei 4 corsi (outFunnel,
+outHeadline, outEmail, outViral 2), partendo da outFunnel: *"prendere tutta la formazione, ogni
+singolo atomo"*. **20/20 lezioni catturate e analizzate**, tutte classificate TEORIA (corso di
+puro framework/strategia, zero linguaggio da demo schermo — diverso da `cs2online`, il corso
+gemello di Claude Speedrun 2 che aveva lezioni pratiche vere). 114 knowledge atom estratti, Memory
+Empire attivato per tutte e 20 (schema a 4 file, stesso standard di `cs2online`), 1 pagina wiki di
+sintesi.
+
+**Scoperta che chiude un cerchio:** il difetto più costoso mai misurato sul sito reale di Andrei
+Pascu (`ANATOMIA-DEI-LANCI.md`, la cassa che manda a un 404) è esattamente l'errore che la
+Lezione 13 del suo stesso corso insegna a non fare — l'autore vende il controllo che lo avrebbe
+salvato dal proprio difetto più grave.
+
+**Incidente di sicurezza corretto nello stesso turno:** le credenziali del login (date da Max in
+chat) sono finite per un istante nel `.env` di root. Trovato il precedente vincolante
+(`runs/andrei-pascu-cs2online-001/MASTER-RUN-TRACKER.md`, "password mai su file salvato, solo
+variabile d'ambiente di sessione") e corretto subito: password tolta dal `.env`, sessione
+autenticata spostata fuori dal repo (scratchpad locale, non `%LOCALAPPDATA%` — sandbox non
+scrivibile lì in questa sessione).
+
+**RIPRESA DA:** `outHeadline` (`/outheadlinedash-1`), poi `outEmail`, poi `outViral 2` — stessa
+pipeline di `SKILL & Agenti/Empire Studio Suite/empire-studio/runs/andrei-pascu-armageddon-outfunnel-001/`,
+riattivare la sessione membri (richiedere di nuovo le credenziali a Max, mai cercarle salvate).

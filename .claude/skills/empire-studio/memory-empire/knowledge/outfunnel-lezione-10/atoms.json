@@ -1,0 +1,37 @@
+{
+  "lesson_id": "outfunnel-lezione-10",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 6,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-10#intero-riassunto",
+      "atom": "3 strategie email distinte: Blast (invio singolo a tutta la lista, non ripetuto), Sequenza automatica di vendita (3-4 email ravvicinate post-iscrizione), Sequenza di follow-up (per chi non ha comprato dopo la prima sequenza)."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-10#\"1.-email-blast\"",
+      "atom": "Regola operativa per il Blast: evitare di inviarlo a chi sta già ricevendo un'automazione, per non sovraccaricare — strategia avanzata: liste separate per chi ha completato la sequenza automatica prima di iniziare a inviargli blast."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-10#\"2.-sequenza-automatica-per-la-vendita\"",
+      "atom": "La sequenza automatica di vendita ha un timing tipico: 3-4 email, una al giorno; ogni email tratta un aspetto specifico (presentazione, dubbi, benefici) senza ripetizioni."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-10#\"3.-sequenza-di-follow-up\"",
+      "atom": "Timing del follow-up: intervalli più lunghi (7, 15, 30 giorni), obiettivo riproporre l'offerta con angolazioni DIVERSE (non ripetere lo stesso messaggio) e gestire obiezioni non ancora trattate."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-10#\"strategie-per-rendere-il-follow-up-efficace\"",
+      "atom": "4 tattiche per un follow-up efficace: nuovi pain point non usati prima, cambio di targeting (es. da un genere all'altro), risoluzione di obiezioni secondarie (tempo/soldi/paura di sbagliare), test di messaggi diversi."
+    },
+    {
+      "id": "KA-06",
+      "source": "outfunnel-lezione-10#\"strategie\"",
+      "atom": "Vincolo temporale esplicito: il follow-up non deve durare oltre 1-2 mesi, per non risultare invadente o incoerente con i contenuti pubblicati sui social nel frattempo."
+    }
+  ]
+}

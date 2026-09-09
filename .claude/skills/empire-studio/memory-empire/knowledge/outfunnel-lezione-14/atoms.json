@@ -1,0 +1,47 @@
+{
+  "lesson_id": "outfunnel-lezione-14",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 8,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-14#\"tasso-di-conversione\"",
+      "atom": "CR (Conversion Rate) = (conversioni / visitatori) × 100."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-14#\"costo-per-click\"",
+      "atom": "CPC (Cost per Click) = budget speso ÷ numero di click."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-14#\"costo-per-acquisizione\"",
+      "atom": "CPA (Cost per Acquisition) = budget speso ÷ numero di acquisti."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-14#\"costo-per-lead\"",
+      "atom": "CPL (Cost per Lead) = budget speso ÷ numero di lead."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-14#\"ritorno-sull'investimento\"",
+      "atom": "ROI (Return on Investment) = (entrate - spese) ÷ spese × 100."
+    },
+    {
+      "id": "KA-06",
+      "source": "outfunnel-lezione-14#\"customer-lifetime-value\"",
+      "atom": "CLV (Customer Lifetime Value) = quanto un cliente spende in totale nel tempo (nessuna formula esplicita data, solo definizione)."
+    },
+    {
+      "id": "KA-07",
+      "source": "outfunnel-lezione-14#sezione-2,-coda",
+      "atom": "Altri KPI nominati senza formula: tasso di abbandono carrello, AOV (Average Order Value = spesa media per ordine), tempo medio sulla pagina, frequenza di rimbalzo, open rate email, CTR email."
+    },
+    {
+      "id": "KA-08",
+      "source": "outfunnel-lezione-14#\"3.-come-usare-i-kpi\"",
+      "atom": "Metodo d'uso: identificare lo step con CR basso → guardare i KPI collegati a quello step specifico → eseguire test mirati → rimonitorare i KPI dopo ogni test. Esplicitamente: NON monitorare tutti i KPI sempre, solo quelli rilevanti al problema che si sta affrontando."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "lesson_id": "outfunnel-lezione-18",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 5,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-18#\"1.-struttura-base\"",
+      "atom": "Struttura base minima: Ad → Sales Page diretta, senza passaggi intermedi — non è \"sbagliata\" ma raramente ottimale in termini di costi/risultati."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-18#\"2.-agenzie-e-ottimizzazione-base\"",
+      "atom": "Primo livello di ottimizzazione (tipico delle agenzie): A/B testing delle ads con set diversi per target diversi, poi fase di testing di 7-30 giorni prima di tagliare le ads meno efficaci e aumentare budget su quelle migliori."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-18#\"3.-aggiunta-del-retargeting\"",
+      "atom": "Secondo livello: Retargeting Ads verso chi ha già visitato la Sales Page, segmentato per tempo di permanenza (permanenza lunga = interesse alto) e per gestione delle obiezioni più comuni."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-18#\"4.-ottimizzazione-della-sales-page\"",
+      "atom": "Terzo livello: una SECONDA Sales Page dedicata ai visitatori di ritorno (dal retargeting), con FAQ/obiezioni spostate in cima e headline riscritta per chi ha già visto l'offerta la prima volta."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-18#\"5.-conclusione\"",
+      "atom": "Conclusione esplicita: un funnel corto non è un errore automatico, ma va sempre valutato se testing + retargeting + personalizzazione lo migliorano — mai standardizzare lo stesso funnel su aziende diverse."
+    }
+  ]
+}

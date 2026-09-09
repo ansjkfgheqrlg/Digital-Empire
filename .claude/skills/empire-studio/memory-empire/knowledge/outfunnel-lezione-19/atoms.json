@@ -1,0 +1,27 @@
+{
+  "lesson_id": "outfunnel-lezione-19",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 4,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-19#\"panoramica\"",
+      "atom": "Soglia di prezzo esplicita per passare da vendita self-service a team di vendita: oltre 3.000€ circa (aggiorna/precisa la soglia più generica \"sopra 1.000€\" data in Lezione 3)."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-19#\"1.-struttura-del-funnel\"",
+      "atom": "Blueprint a 3 step: Lead Generation (ad o altra fonte) → Sales Page (informazioni complete prima della call) → Opt-in con 3 varianti possibili (calendario integrato per auto-prenotarsi, form dati con ricontatto del team, o combinazione dati+calendario)."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-19#\"2.-perché-inserire-una-sales-page\"",
+      "atom": "4 motivi per cui la Sales Page PRIMA della call è necessaria: qualifica i lead (filtra chi non è in target), aumenta la consapevolezza (arriva già informato), facilita il lavoro del venditore (meno obiezioni da gestire), evita lead non qualificati (chi non ha budget abbandona prima)."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-19#\"3.-alternative\"",
+      "atom": "Alternative/complementi alla Sales Page per qualificare: quiz di qualificazione (domande su reddito, età, necessità) e filtri più stretti direttamente nel targeting delle ads."
+    }
+  ]
+}

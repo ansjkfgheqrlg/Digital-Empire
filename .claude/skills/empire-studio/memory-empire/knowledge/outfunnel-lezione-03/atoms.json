@@ -1,0 +1,42 @@
+{
+  "lesson_id": "outfunnel-lezione-03",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 7,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-03#\"1️⃣-tipologie-di-funnel\"",
+      "atom": "4 obiettivi possibili di un funnel: (1) generare contatti per email marketing, (2) generare contatti per un team di vendita, (3) vendita diretta, (4) awareness/brand."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-03#\"generare-contatti-per-venditori\"",
+      "atom": "Il funnel a contatti-per-venditori si usa quando il prezzo è alto (indicativamente sopra 1.000€) o quando il copywriting da solo non basta a chiudere — si raccoglie il telefono, poi chiama un umano."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-03#\"generare-contatti-per-email-marketing\"",
+      "atom": "Due varianti di email marketing: Automazione (sequenza automatica post-iscrizione) vs Blast (invio manuale a tutta la lista)."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-03#\"vendita-diretta\"",
+      "atom": "La vendita diretta (Ad → Pagina prodotto → Checkout) funziona bene con prodotti d'impulso o basso costo — nessun passaggio intermedio."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-03#\"creazione-di-awareness\"",
+      "atom": "L'awareness (es. Coca-Cola) è l'obiettivo più difficile da misurare perché il risultato non è immediato; può essere combinato con un funnel di iscrizione a valle."
+    },
+    {
+      "id": "KA-06",
+      "source": "outfunnel-lezione-03#\"2️⃣-struttura-base-di-un-funnel\"",
+      "atom": "Struttura base generalizzata: Ads/traffico organico → Opt-in Page → Email o chiamate → Pagina di vendita o sales call."
+    },
+    {
+      "id": "KA-07",
+      "source": "outfunnel-lezione-03#\"3️⃣-quando-usare-ogni-funnel\"",
+      "atom": "Regola di scelta: email marketing se serve retargeting a costo zero; sales call se prezzo alto/prodotto complesso; vendita diretta se prodotto semplice/economico; awareness se l'obiettivo è brand nel tempo."
+    }
+  ]
+}

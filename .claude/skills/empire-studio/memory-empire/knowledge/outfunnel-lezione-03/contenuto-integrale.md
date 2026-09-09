@@ -1,0 +1,165 @@
+# Contenuto integrale — Lezione 3 - Obiettivi che un funnel può avere
+
+**URL:** https://www.andrei-copy.com/bjrkfv9/lezione-3-obiettivi-che-un-funnel-puo-avere-9zlsg  
+**Vimeo:** 1047962962  
+**Tipo:** TEORIA
+
+---
+
+Passa al contenuto
+Link utili
+Account
+0%
+Avanzamento
+Sezione 1 - Le basi
+8 lezioni
+Lezione 1 - Cos'è un funnel (Copy)
+Lezione 2 - Livelli di consapevolezza (Copy)
+Lezione 3 - Obiettivi che un funnel può avere (Copy)
+Lezione 4 - Come creare un funnel (Copy)
+Lezione 5 - Funnel reali: la situazione interessante delle vere pubblicità (Copy)
+Lezione 6 - Tipi di funnel (Copy)
+Lezione 7 - Pezzi del puzzle (Copy)
+Lezione 8 - Step di un funnel completo (Copy)
+Sezione 2 - Esempi strategici
+3 lezioni
+Lezione 9 - Opzioni per il lead magnet (Copy)
+Lezione 10 - Tipi di sequenze automatiche e come fare follow up (Copy)
+Lezione 11 - Opzioni per upsell/xell base (Copy)
+Sezione 3 - Strategie avanzate
+5 lezioni
+Lezione 12 - Considerazioni tra gli step del funnel (Copy)
+Lezione 13 - Quello che non misuri, non cresce: funnel troubleshooting (Copy)
+Lezione 14 - KPIs (Copy)
+Lezione 15 - Segmentazione Audience (Copy)
+Lezione 16 - Come i funnel si evolvono col tempo (Copy)
+Sezione 4 - Esempi di Funnel completi
+4 lezioni
+Lezione 17 - Funnel base: Lead Magnet Funnel (Copy)
+Lezione 18 - Funnel base: Sales Page Funnel (Copy)
+Lezione 19 - High-price sales team Funnel (Copy)
+Lezione 20 - Full funnel example (Copy)
+outFunnel - Armageddon
+Completa e continua
+SEZIONE 1 - LE BASI
+Lezione 3 - Obiettivi che un funnel può avere (Copy)
+
+ In questa lezione…
+
+Esploriamo la definizione di Funnel.
+
+-
+
+ Riassunto lezione
+1️⃣ Tipologie di Funnel
+
+I funnel di marketing non servono solo per vendere subito, ma possono avere diversi scopi:
+
+Generare contatti per Email Marketing
+
+Si ottiene la mail del potenziale cliente tramite una opt-in page.
+
+Successivamente, si inviano email per convertirlo in cliente.
+
+Vantaggi:
+
+Costo zero per il retargeting (a differenza delle ads a pagamento).
+
+Possibilità di costruire una relazione nel tempo.
+
+Due tipi di email marketing:
+
+Automazione → Sequenza di email inviate automaticamente dopo l’iscrizione.
+
+Blast → Email inviate manualmente a tutta la lista iscritti.
+
+Generare contatti per Venditori (Sales Team)
+
+Simile alla strategia delle email, ma si raccoglie il numero di telefono.
+
+Dopo la raccolta del contatto, il team di vendita chiama per convertire il cliente.
+
+Utile quando:
+
+Il prezzo del prodotto è molto alto (es. sopra i 1000€).
+
+Il copywriting da solo non è sufficiente a chiudere la vendita.
+
+Esempio tipico:
+
+Landing page con opt-in per il numero.
+
+Dopo pochi giorni, il team di vendita chiama per proporre un’offerta.
+
+Vendita Diretta
+
+Si spinge l’utente ad acquistare subito, senza passaggi intermedi.
+
+Funziona bene con prodotti di impulso o basso costo.
+
+Struttura:
+
+Annuncio pubblicitario → Pagina prodotto → Checkout.
+
+Creazione di Awareness (Brand Awareness)
+
+L’obiettivo non è vendere direttamente, ma rendere il brand noto.
+
+Esempio: pubblicità della Coca-Cola che non dice di comprare, ma mostra scene felici con il brand visibile.
+
+Difficile da misurare, perché il risultato non è immediato.
+
+Può essere combinato con un funnel di iscrizione (es. l’utente clicca su un ad e finisce su una pagina opt-in).
+
+
+2️⃣ Struttura Base di un Funnel
+
+Un funnel può avere più passaggi, ma in generale segue una struttura simile:
+
+Ads o traffico organico → Per attirare utenti.
+
+Opt-in Page → Per raccogliere email o numeri di telefono.
+
+Email o chiamate → Per convertire il lead in cliente.
+
+Pagina di vendita o sales call → Chiusura della vendita.
+
+Ogni step del funnel può essere ottimizzato per massimizzare le conversioni.
+
+
+3️⃣ Quando Usare Ogni Funnel
+
+Email Marketing → Se vuoi fare retargeting senza costi aggiuntivi.
+
+Venditori (Sales Call) → Se il prezzo è alto o il prodotto è complesso.
+
+Vendita Diretta → Se il prodotto è semplice e ha un prezzo basso.
+
+Awareness → Se vuoi costruire un brand forte nel tempo.
+
+Ogni azienda può combinare più funnel in base alle proprie esigenze strategiche.
+
+
+Conclusione
+
+Non esiste un unico funnel giusto, ma dipende dall’obiettivo. Un’azienda deve scegliere il tipo di funnel in base al proprio modello di business, al prezzo del prodotto e al livello di consapevolezza del pubblico.
+
+Completa e continua
+
+La mia storia
+
+Store
+
+Recensioni
+
+Risorse
+
+Blog
+
+Questo sito e i consigli contenuti al suo interno sono opinioni personali a scopo educativo basate sulla esperienza di Andrei Pascu. I suoi risultati non sono tipici e i tuoi potrebbero variare in base a esperienza, effort, situazione economica e generale contesto. Andrei Pascu e i suoi collaboratori non fanno e non trattano argomenti come crypto, personal finance, fiscalità, risorse umane, recruiting, network marketing o in genere metodi di arricchimento veloce.
+
+Andrei Pascu Sales |  FIRENZE (FI) VIALE GIACOMO MATTEOTTI | 15 CAP 50121
+P.I. 02001850474  |  Privacy, dati, cookie e simili
+
+
+Gestisci Preferenze Cookie

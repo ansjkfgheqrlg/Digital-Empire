@@ -1,0 +1,37 @@
+{
+  "lesson_id": "outfunnel-lezione-02",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 6,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-02#\"introduzione\"",
+      "atom": "Principio cardine: se il potenziale cliente non sa di avere un problema o non conosce il prodotto, non comprerà mai — ogni fase del funnel va adattata al livello di consapevolezza del target."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-02#\"errore-comune-delle-aziende\"",
+      "atom": "Errore comune: proporre direttamente il prodotto (\"Compra ora, 50% di sconto!\") funziona solo su chi è già consapevole; su chi non sa nulla la proposta viene ignorata."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-02#\"i-5-livelli-di-consapevolezza\"",
+      "atom": "I 5 Livelli di Consapevolezza (framework Eugene Schwartz, non attribuito esplicitamente nel video): Non consapevole → Consapevole del problema → Consapevole della soluzione → Consapevole del prodotto → Completamente consapevole."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-02#\"esempio-pratico\"",
+      "atom": "Esempio applicato (Dental Spray per cani) mostra due target diversi (proprietario medio vs dog trainer) che richiedono messaggi opposti sullo stesso prodotto, in base a cosa già sanno."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-02#\"esempio-di-processo-di-consapevolezza\"",
+      "atom": "Sequenza di copy che fa avanzare un lettore lungo i 5 livelli, frase per frase: \"Lo sapevi che il 90%...\" (crea consapevolezza del problema) → \"Esistono prodotti per...\" (soluzione) → \"Abbiamo creato...\" (prodotto) → \"Costa solo 19,99€...\" (spinta all'acquisto)."
+    },
+    {
+      "id": "KA-06",
+      "source": "outfunnel-lezione-02#\"impatto-sui-funnel\"",
+      "atom": "Applicazione strategica: creare più varianti di ads per ogni livello di consapevolezza del pubblico invece di un unico annuncio generico."
+    }
+  ]
+}

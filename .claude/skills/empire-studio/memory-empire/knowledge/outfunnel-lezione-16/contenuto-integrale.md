@@ -1,0 +1,147 @@
+# Contenuto integrale — Lezione 16 - Come i funnel si evolvono col tempo
+
+**URL:** https://www.andrei-copy.com/bjrkfv9/lezione-16-come-i-funnel-si-evolvono-col-tempo-dhxde  
+**Vimeo:** 1048624950  
+**Tipo:** TEORIA
+
+---
+
+Passa al contenuto
+Link utili
+Account
+0%
+Avanzamento
+Sezione 1 - Le basi
+8 lezioni
+Lezione 1 - Cos'è un funnel (Copy)
+Lezione 2 - Livelli di consapevolezza (Copy)
+Lezione 3 - Obiettivi che un funnel può avere (Copy)
+Lezione 4 - Come creare un funnel (Copy)
+Lezione 5 - Funnel reali: la situazione interessante delle vere pubblicità (Copy)
+Lezione 6 - Tipi di funnel (Copy)
+Lezione 7 - Pezzi del puzzle (Copy)
+Lezione 8 - Step di un funnel completo (Copy)
+Sezione 2 - Esempi strategici
+3 lezioni
+Lezione 9 - Opzioni per il lead magnet (Copy)
+Lezione 10 - Tipi di sequenze automatiche e come fare follow up (Copy)
+Lezione 11 - Opzioni per upsell/xell base (Copy)
+Sezione 3 - Strategie avanzate
+5 lezioni
+Lezione 12 - Considerazioni tra gli step del funnel (Copy)
+Lezione 13 - Quello che non misuri, non cresce: funnel troubleshooting (Copy)
+Lezione 14 - KPIs (Copy)
+Lezione 15 - Segmentazione Audience (Copy)
+Lezione 16 - Come i funnel si evolvono col tempo (Copy)
+Sezione 4 - Esempi di Funnel completi
+4 lezioni
+Lezione 17 - Funnel base: Lead Magnet Funnel (Copy)
+Lezione 18 - Funnel base: Sales Page Funnel (Copy)
+Lezione 19 - High-price sales team Funnel (Copy)
+Lezione 20 - Full funnel example (Copy)
+outFunnel - Armageddon
+Completa e continua
+SEZIONE 3 - STRATEGIE AVANZATE
+Lezione 16 - Come i funnel si evolvono col tempo (Copy)
+
+ In questa lezione…
+
+Vediamo come i funnel si evolvono col tempo.
+
+Nel marketing esistono due tipi principali di funnel:
+
+Funnel Evergreen → usati per prodotti che vengono venduti continuamente nel tempo.
+
+Funnel per Promozioni → creati per offerte limitate nel tempo, come lanci, prevendite o sconti a tempo.
+
+ Riassunto lezione
+1. Funnel Evergreen
+
+È un funnel stabile, ottimizzato per vendere un prodotto nel lungo periodo.
+
+Dopo i primi test e miglioramenti, non viene modificato frequentemente.
+
+Esempio: Un’azienda vende lo stesso tablet per anni con lo stesso funnel e solo piccole ottimizzazioni.
+
+
+2. Funnel per Promozioni
+
+Ha una scadenza precisa e viene costruito per un’offerta temporanea.
+
+Viene usato per sconti a tempo, lanci, preordini, offerte speciali.
+
+L’urgenza è fondamentale: più ci si avvicina alla fine della promozione, più la comunicazione deve cambiare.
+
+Esempio di promozione di 30 giorni per un videogioco:
+
+Fase iniziale (Pre-ordine): focus sulla novità e il valore del prodotto.
+
+Fase centrale: continua la promozione, ma si rinforza la scarsità.
+
+Ultimi giorni: massimo senso di urgenza ("Mancano solo 3 giorni!").
+
+
+3. Strategia per Ads e Sales Page in un Funnel Promozionale
+
+1. Ads dinamiche
+
+Durante i 30 giorni, si possono creare 30 versioni dello stesso annuncio cambiando solo la data dell’offerta.
+
+Esempio:
+
+Giorno 30: "Mancano 30 giorni alla fine dell’offerta!"
+
+Giorno 29: "Mancano 29 giorni alla fine dell’offerta!"
+
+…
+
+Giorno 1: "Ultimo giorno per approfittare dello sconto!"
+
+Il copy e il video rimangono gli stessi, cambia solo la parte della data.
+
+2. Sales Page adattabile
+
+Si possono creare più versioni della stessa sales page con piccole modifiche:
+
+Versione 1 (inizio promo): focus sul valore del prodotto.
+
+Versione 2 (a metà promo): rinforza l’acquisto con social proof.
+
+Versione 3 (ultimi giorni): timer con conto alla rovescia e forte call to action.
+
+3. Adattamento alle festività
+
+Se hai un funnel evergreen, puoi modificarlo temporaneamente per adattarlo a eventi stagionali (es. Natale).
+
+Esempio: Cambiare il design dell’ad o della sales page con elementi natalizi senza modificare tutto il funnel.
+
+
+Conclusione
+
+I funnel evergreen rimangono stabili nel tempo, mentre i funnel promozionali cambiano in base all’offerta.
+
+Ads e sales page devono adattarsi al tempo che manca alla fine dell’offerta.
+
+Piccole modifiche strategiche (testo, immagini, timer) possono aumentare le conversioni.
+
+Sfrutta le festività per rendere il funnel più efficace.
+
+Completa e continua
+
+La mia storia
+
+Store
+
+Recensioni
+
+Risorse
+
+Blog
+
+Questo sito e i consigli contenuti al suo interno sono opinioni personali a scopo educativo basate sulla esperienza di Andrei Pascu. I suoi risultati non sono tipici e i tuoi potrebbero variare in base a esperienza, effort, situazione economica e generale contesto. Andrei Pascu e i suoi collaboratori non fanno e non trattano argomenti come crypto, personal finance, fiscalità, risorse umane, recruiting, network marketing o in genere metodi di arricchimento veloce.
+
+Andrei Pascu Sales |  FIRENZE (FI) VIALE GIACOMO MATTEOTTI | 15 CAP 50121
+P.I. 02001850474  |  Privacy, dati, cookie e simili
+
+
+Gestisci Preferenze Cookie

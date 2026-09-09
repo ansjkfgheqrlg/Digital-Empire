@@ -2234,3 +2234,21 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   P3 ha tagliato da 20 a 8 perché 20 violavano il nostro stesso §10. Il gate ha bocciato il suo
   autore alla prima esecuzione (contatore senza ramo reduced-motion) — corretto, poi PASS.
   → CP-20260906-GUCC.
+
+## 2026-09-09 (EMPERATOR — outFunnel: primo corso di Armageddon Bundle ingerito per intero)
+- INGEST: **corso outFunnel** (Armageddon Bundle, Andrei Pascu, area membri andrei-copy.com) —
+  Max ha comprato il bundle e ordinato l'ingestione integrale dei 4 corsi, partendo da outFunnel.
+  20/20 lezioni catturate (testo ufficiale "Riassunto lezione" integrale), tutte classificate
+  TEORIA (zero linguaggio da demo schermo, verificato lezione per lezione — corso di puro
+  framework/strategia, diverso da cs2online che aveva lezioni pratiche con screen-recording).
+  114 knowledge atom estratti, schema Memory Empire a 4 file per lezione
+  (`.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-01..20/`).
+- SCOPERTA MAGGIORE: il difetto più costoso misurato sul sito reale di Andrei Pascu (cassa 404,
+  `ANATOMIA-DEI-LANCI.md`) è esattamente l'errore che la Lezione 13 del suo stesso corso insegna
+  a non fare ("non dare per scontato che il problema sia sempre nell'ultimo step del funnel").
+- → 1 pagina wiki creata (sources/Source_OutFunnel_Corso_Completo.md), run completo in
+  `SKILL & Agenti/Empire Studio Suite/empire-studio/runs/andrei-pascu-armageddon-outfunnel-001/`.
+- SICUREZZA: credenziali dell'account (fornite da Max in chat) per un istante finite nel `.env`
+  di root per errore — trovato il precedente vincolante (`cs2online-001`, "password mai su file
+  salvato") e corretto nello stesso turno; sessione autenticata spostata fuori dal repo.
+- Prossimo nel bundle: outHeadline → outEmail → outViral 2.

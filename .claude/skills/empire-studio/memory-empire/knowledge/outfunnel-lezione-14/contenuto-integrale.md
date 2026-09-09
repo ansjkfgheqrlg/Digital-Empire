@@ -1,0 +1,154 @@
+# Contenuto integrale — Lezione 14 - KPIs
+
+**URL:** https://www.andrei-copy.com/bjrkfv9/lezione-14-kpis-3jzth  
+**Vimeo:** 1048336880  
+**Tipo:** TEORIA
+
+---
+
+Passa al contenuto
+Link utili
+Account
+0%
+Avanzamento
+Sezione 1 - Le basi
+8 lezioni
+Lezione 1 - Cos'è un funnel (Copy)
+Lezione 2 - Livelli di consapevolezza (Copy)
+Lezione 3 - Obiettivi che un funnel può avere (Copy)
+Lezione 4 - Come creare un funnel (Copy)
+Lezione 5 - Funnel reali: la situazione interessante delle vere pubblicità (Copy)
+Lezione 6 - Tipi di funnel (Copy)
+Lezione 7 - Pezzi del puzzle (Copy)
+Lezione 8 - Step di un funnel completo (Copy)
+Sezione 2 - Esempi strategici
+3 lezioni
+Lezione 9 - Opzioni per il lead magnet (Copy)
+Lezione 10 - Tipi di sequenze automatiche e come fare follow up (Copy)
+Lezione 11 - Opzioni per upsell/xell base (Copy)
+Sezione 3 - Strategie avanzate
+5 lezioni
+Lezione 12 - Considerazioni tra gli step del funnel (Copy)
+Lezione 13 - Quello che non misuri, non cresce: funnel troubleshooting (Copy)
+Lezione 14 - KPIs (Copy)
+Lezione 15 - Segmentazione Audience (Copy)
+Lezione 16 - Come i funnel si evolvono col tempo (Copy)
+Sezione 4 - Esempi di Funnel completi
+4 lezioni
+Lezione 17 - Funnel base: Lead Magnet Funnel (Copy)
+Lezione 18 - Funnel base: Sales Page Funnel (Copy)
+Lezione 19 - High-price sales team Funnel (Copy)
+Lezione 20 - Full funnel example (Copy)
+outFunnel - Armageddon
+Completa e continua
+SEZIONE 3 - STRATEGIE AVANZATE
+Lezione 14 - KPIs (Copy)
+
+ In questa lezione…
+
+Ti spiego cosa sono i KPIs e come usarli.
+
+I KPI (Key Performance Indicators) sono i numeri chiave che devi monitorare per capire se il tuo funnel sta funzionando. Se qualcosa non va, invece di modificare elementi a caso, devi guardare i KPI per individuare il vero problema.
+
+ Riassunto lezione
+1. Perché i KPI sono importanti?
+
+Se non misuri, non puoi migliorare.
+
+Aiutano a identificare dove si trova il problema in un funnel o in una campagna di marketing.
+
+Evitano errori come cambiare il copy o il design senza sapere se è davvero la causa del problema.
+
+
+2. I KPI più importanti nel marketing
+Tasso di Conversione (CR - Conversion Rate)
+
+Percentuale di persone che compiono un'azione (es. clic su un pulsante, acquisto).
+
+Formula: (Numero di conversioni / Numero di visitatori) × 100
+
+Costo per Click (CPC - Cost per Click)
+
+Quanto costa ottenere un click su un’adv.
+
+Formula: Budget speso ÷ Numero di click
+
+Costo per Acquisizione (CPA - Cost per Acquisition)
+
+Quanto costa ottenere un cliente pagante.
+
+Formula: Budget speso ÷ Numero di acquisti
+
+Costo per Lead (CPL - Cost per Lead)
+
+Quanto costa ottenere un contatto (lead).
+
+Formula: Budget speso ÷ Numero di lead
+
+Ritorno sull’Investimento (ROI - Return on Investment)
+
+Quanto hai guadagnato rispetto a quanto hai speso.
+
+Formula: (Entrate - Spese) ÷ Spese × 100
+
+Customer Lifetime Value (CLV - Valore a Vita del Cliente)
+
+Quanto un cliente spende in totale nel tempo.
+
+Tasso di Abbandono del Carrello
+
+Percentuale di persone che aggiungono prodotti al carrello ma non completano l’acquisto.
+
+Valore Medio dell’Ordine (AOV - Average Order Value)
+
+Quanto spende in media un cliente in un singolo ordine.
+
+Tempo Medio sulla Pagina e Frequenza di Rimbalzo
+
+Indicano quanto tempo un utente rimane su una pagina e quanti escono subito senza interagire.
+
+Tasso di Apertura e Clic delle Email
+
+Open Rate: percentuale di email aperte.
+
+CTR Email: percentuale di click sui link all’interno delle email.
+
+
+3. Come usare i KPI per ottimizzare il funnel
+
+Identifica lo step con problemi di conversione (es. una pagina con un CR basso).
+
+Guarda i KPI collegati a quello step per capire cosa non sta funzionando.
+
+Esegui test mirati (modifica copy, targeting, design, ecc.).
+
+Monitora i KPI dopo ogni test per vedere se ci sono miglioramenti.
+
+
+Conclusione
+
+I KPI sono essenziali per prendere decisioni basate su dati reali.
+
+Non devi monitorare tutti i KPI, ma solo quelli rilevanti per il problema che stai affrontando.
+
+Se vuoi migliorare il tuo marketing, misura sempre i risultati prima di cambiare qualcosa.
+
+Completa e continua
+
+La mia storia
+
+Store
+
+Recensioni
+
+Risorse
+
+Blog
+
+Questo sito e i consigli contenuti al suo interno sono opinioni personali a scopo educativo basate sulla esperienza di Andrei Pascu. I suoi risultati non sono tipici e i tuoi potrebbero variare in base a esperienza, effort, situazione economica e generale contesto. Andrei Pascu e i suoi collaboratori non fanno e non trattano argomenti come crypto, personal finance, fiscalità, risorse umane, recruiting, network marketing o in genere metodi di arricchimento veloce.
+
+Andrei Pascu Sales |  FIRENZE (FI) VIALE GIACOMO MATTEOTTI | 15 CAP 50121
+P.I. 02001850474  |  Privacy, dati, cookie e simili
+
+
+Gestisci Preferenze Cookie

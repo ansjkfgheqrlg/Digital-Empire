@@ -1,0 +1,37 @@
+{
+  "lesson_id": "outfunnel-lezione-06",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 6,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-06#intero-riassunto",
+      "atom": "8 tipologie di funnel per contenuto: Vendita Diretta, Lead Generation con Lead Magnet, Webinar, Free Shipping (libro gratis + spedizione a pagamento), Educativo, Challenge, Tripwire, Consulenza Gratuita."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-06#\"funnel-per-webinar\"",
+      "atom": "Funnel Webinar: ad → opt-in → link accesso → webinar con CTA finale. Nota temporale esplicita: \"molto utilizzato fino al 2022, ancora valido ma meno efficace rispetto al passato\" — segnale di erosione dell'efficacia di un formato una volta dominante."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-06#\"funnel-free-shipping\"",
+      "atom": "Funnel \"Free Shipping\": libro fisico gratis, cliente paga solo la spedizione — usato per costruire fiducia ed educare prima di vendite più costose (stesso principio del Tripwire, KA-05)."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-06#\"funnel-challenge\"",
+      "atom": "Funnel Challenge: sfida gratuita a tempo (es. 14 giorni) con contenuti giornalieri, offerta proposta alla fine — funziona su engagement e fidelizzazione pre-vendita."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-06#\"funnel-tripwire\"",
+      "atom": "Funnel Tripwire: prima offerta a bassissimo prezzo (es. 5€) per abbassare la resistenza psicologica all'acquisto — chi ha già pagato una volta spende più facilmente la volta dopo (stesso principio di Lezione 11, KA-01, e ripreso in dettaglio in Lezione 20)."
+    },
+    {
+      "id": "KA-06",
+      "source": "outfunnel-lezione-06#\"funnel-per-consulenza-gratuita\"",
+      "atom": "Funnel Consulenza Gratuita: applicabile a molti settori (finanza, salute, investimenti, estetica) — l'autore la descrive esplicitamente come \"spesso una call di vendita mascherata da consulenza\", onestà sul meccanismo dietro l'etichetta."
+    }
+  ]
+}

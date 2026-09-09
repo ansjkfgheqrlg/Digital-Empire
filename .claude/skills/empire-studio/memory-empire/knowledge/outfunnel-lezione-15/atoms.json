@@ -1,0 +1,42 @@
+{
+  "lesson_id": "outfunnel-lezione-15",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 7,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-15#\"1.-perché-la-segmentazione-è-fondamentale\"",
+      "atom": "Principio guida: \"parlare a tutti equivale a non parlare a nessuno\" — parlare a ogni singola persona individualmente sarebbe ideale ma non scalabile; la segmentazione è il compromesso pratico."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-15#\"2.-come-segmentare\"",
+      "atom": "Distinzione centrale: copy \"apparente\" (sembra specifico ma è dicibile a chiunque, es. \"Questo prodotto è perfetto per te\") vs copy \"specifico\" (dettagli concreti legati a un segmento reale, es. \"Se sei uno studente, questo tablet ti aiuta a prendere appunti senza perdere tempo\")."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-15#\"strategie-per-segmentare\"",
+      "atom": "Strategie di segmentazione nel funnel: funnel separati per segmento, ads diverse per target diversi (stessa pagina o pagine personalizzate), sales page con stessa struttura ma headline diversa per segmento, budget distribuito in proporzione alla grandezza di ciascun segmento."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-15#\"1.-behaviour-based-tags\"",
+      "atom": "**Behaviour-Based Tags**: etichette assegnate agli utenti in base alle azioni compiute (es. visita alla sales page del \"Prodotto 2\" → tag \"P2-SP\" → email personalizzate su quel prodotto); regole condizionali esemplificate: visto ma non cliccato → follow-up mirato; cliccato ma non comprato → urgenza/scarcity."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-15#\"2.-lead-scoring\"",
+      "atom": "**Lead Scoring**: sistema a punti che identifica i lead più \"caldi\" — esempio: 1ª visita sales page = +1, 2ª visita = +1, 3ª visita + visita Instagram + click su un link = lead molto interessato → email personalizzate più aggressive; permette di concentrare budget/attenzione solo sui lead a punteggio alto."
+    },
+    {
+      "id": "KA-06",
+      "source": "outfunnel-lezione-15#\"3.-custom-audience-journey\"",
+      "atom": "**Custom Audience Journey**: percorsi email differenziati in base al comportamento specifico (prima visita → sequenza standard; ritorni multipli → offerta speciale; visita ad altra pagina → email con suggerimenti personalizzati)."
+    },
+    {
+      "id": "KA-07",
+      "source": "outfunnel-lezione-15#\"4.-implementazione-pratica\"",
+      "atom": "Avvertenza esplicita sui limiti: queste 3 tecniche (KA-04, KA-05, KA-06) sono avanzate e richiedono esperienza — un principiante dovrebbe iniziare con tag e segmentazioni semplici; non personalizzare OGNI step, va trovato un equilibrio con tempo/budget disponibili."
+    }
+  ]
+}

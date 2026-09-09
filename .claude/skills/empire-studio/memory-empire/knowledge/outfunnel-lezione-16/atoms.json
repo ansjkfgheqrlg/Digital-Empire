@@ -1,0 +1,32 @@
+{
+  "lesson_id": "outfunnel-lezione-16",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 5,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-16#\"1.-funnel-evergreen\"",
+      "atom": "Funnel Evergreen: stabile nel lungo periodo, dopo i primi test non viene modificato spesso — esempio: stesso tablet venduto per anni con lo stesso funnel e solo piccole ottimizzazioni."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-16#\"2.-funnel-per-promozioni\"",
+      "atom": "Funnel per Promozioni: ha scadenza precisa, l'urgenza è centrale e DEVE crescere man mano che ci si avvicina alla fine — esempio a 3 fasi (pre-ordine → centrale con scarsità rinforzata → ultimi giorni con urgenza massima)."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-16#\"1.-ads-dinamiche\"",
+      "atom": "Tecnica \"Ads dinamiche\": durante una promo di 30 giorni si creano fino a 30 varianti dello stesso annuncio, cambiando SOLO la cifra dei giorni rimanenti nel copy (\"Mancano 30 giorni\" → ... → \"Ultimo giorno\") — copy e video restano identici, cambia solo la data."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-16#\"2.-sales-page-adattabile\"",
+      "atom": "Sales Page adattabile in 3 versioni sequenziali: v1 focus sul valore (inizio promo), v2 rinforzo con social proof (metà promo), v3 timer/countdown con CTA forte (ultimi giorni)."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-16#\"3.-adattamento-alle-festività\"",
+      "atom": "Adattamento stagionale: un funnel evergreen può essere temporaneamente modificato per eventi (es. Natale) cambiando solo elementi di design/copy superficiali, senza rifare l'intero funnel."
+    }
+  ]
+}

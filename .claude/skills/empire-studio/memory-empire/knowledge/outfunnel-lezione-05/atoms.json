@@ -1,0 +1,37 @@
+{
+  "lesson_id": "outfunnel-lezione-05",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 6,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-05#\"analisi-di-esempi-di-funnel\"",
+      "atom": "Metodo di analisi dichiarato: Paese (Italy) + Categoria (ADS) + Keyword (es. orologio, panino, consulenza) — probabile riferimento a Facebook Ads Library (strumento citato esplicitamente in Lezione 8)."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-05#\"esempio-1\"",
+      "atom": "Esempio 1 (Awareness): un brano musicale sponsorizzato = funnel a 2 step (ad di awareness → ascolto), nessuna vendita diretta."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-05#\"esempio-2\"",
+      "atom": "Esempio 2 (Just Eat): funnel diretto a 2 step (ad → pagina d'acquisto), il modello più breve possibile per acquisti d'impulso."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-05#\"esempio-3\"",
+      "atom": "Esempio 3 (consulenza lavorativa): funnel a 4 step (ad con storia personale → landing/sales page → opt-in per Open Day → possibile call di consulenza) — più elaborato perché il prodotto richiede più fiducia."
+    },
+    {
+      "id": "KA-05",
+      "source": "outfunnel-lezione-05#\"struttura-comune-nei-funnel-analizzati\"",
+      "atom": "Tassonomia di sintesi a 3 pattern: Funnel diretto (2 step, es. Just Eat), Funnel con opt-in (3+ step, es. consulenza), Funnel di Awareness (1-2 step, nessuna CTA immediata)."
+    },
+    {
+      "id": "KA-06",
+      "source": "outfunnel-lezione-05#\"conclusione\"",
+      "atom": "Osservazione chiave: funnel che sembrano semplici in superficie spesso nascondono elementi non visibili a un primo sguardo (opt-in, email marketing, retargeting) — l'analisi competitor va fatta seguendo il percorso reale, non giudicando dalla sola ad."
+    }
+  ]
+}

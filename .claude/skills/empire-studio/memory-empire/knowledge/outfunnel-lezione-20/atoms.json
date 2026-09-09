@@ -1,0 +1,27 @@
+{
+  "lesson_id": "outfunnel-lezione-20",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 4,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-20#\"1.-il-problema\"",
+      "atom": "Problema risolto: prodotti costosi (es. 500€) sono difficili da vendere direttamente via ads — soluzione: introdurre un primo acquisto economico (Tripwire) per abbassare la resistenza; esempio Apple (iPhone come porta d'ingresso verso Mac/iPad più costosi)."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-20#\"2.-struttura-del-funnel\"",
+      "atom": "Blueprint completo a 6 step: Traffico (ads + organico) → Lead Magnet multi-opt-in (PDF/libro/software gratis) → Email di consegna con redirect immediato → Sequenza email per vendere il Tripwire (es. 50€) → Se acquista, upsell al prodotto principale (es. 500€) → Se non acquista, follow-up a lungo termine (es. ogni 7 giorni)."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-20#\"3.-punti-chiave\"",
+      "atom": "\"Multi opt-in\": più lead magnet diversi permettono di attrarre segmenti di pubblico diversi con lo stesso funnel a valle."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-20#\"considerazioni-finali\"",
+      "atom": "Nota di onestà metodologica: questo funnel NON è obbligatorio, elementi come le email di transizione sono opzionali e possono essere rimossi per semplificare; con un funnel così complesso servono KPI per individuare rapidamente i colli di bottiglia (collegamento esplicito a Lezione 13/14)."
+    }
+  ]
+}

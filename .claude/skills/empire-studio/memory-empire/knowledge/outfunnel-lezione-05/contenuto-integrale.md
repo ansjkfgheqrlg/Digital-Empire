@@ -1,0 +1,158 @@
+# Contenuto integrale — Lezione 5 - Funnel reali: la situazione interessante delle vere pubblicità
+
+**URL:** https://www.andrei-copy.com/bjrkfv9/lezione-5-funnel-reali-la-situazione-interessante-delle-vere-pubblicita-x8pza  
+**Vimeo:** 1048078940  
+**Tipo:** TEORIA
+
+---
+
+Passa al contenuto
+Link utili
+Account
+0%
+Avanzamento
+Sezione 1 - Le basi
+8 lezioni
+Lezione 1 - Cos'è un funnel (Copy)
+Lezione 2 - Livelli di consapevolezza (Copy)
+Lezione 3 - Obiettivi che un funnel può avere (Copy)
+Lezione 4 - Come creare un funnel (Copy)
+Lezione 5 - Funnel reali: la situazione interessante delle vere pubblicità (Copy)
+Lezione 6 - Tipi di funnel (Copy)
+Lezione 7 - Pezzi del puzzle (Copy)
+Lezione 8 - Step di un funnel completo (Copy)
+Sezione 2 - Esempi strategici
+3 lezioni
+Lezione 9 - Opzioni per il lead magnet (Copy)
+Lezione 10 - Tipi di sequenze automatiche e come fare follow up (Copy)
+Lezione 11 - Opzioni per upsell/xell base (Copy)
+Sezione 3 - Strategie avanzate
+5 lezioni
+Lezione 12 - Considerazioni tra gli step del funnel (Copy)
+Lezione 13 - Quello che non misuri, non cresce: funnel troubleshooting (Copy)
+Lezione 14 - KPIs (Copy)
+Lezione 15 - Segmentazione Audience (Copy)
+Lezione 16 - Come i funnel si evolvono col tempo (Copy)
+Sezione 4 - Esempi di Funnel completi
+4 lezioni
+Lezione 17 - Funnel base: Lead Magnet Funnel (Copy)
+Lezione 18 - Funnel base: Sales Page Funnel (Copy)
+Lezione 19 - High-price sales team Funnel (Copy)
+Lezione 20 - Full funnel example (Copy)
+outFunnel - Armageddon
+Completa e continua
+SEZIONE 1 - LE BASI
+Lezione 5 - Funnel reali: la situazione interessante delle vere pubblicità (Copy)
+
+ In questa lezione…
+
+Analizziamo diversi esempi di funnel reali.
+
+Esploriamo il modo in cui le aziende strutturano le loro campagne pubblicitarie per portare il pubblico verso l’acquisto o altre azioni desiderate.
+
+ Riassunto lezione
+Analisi di Esempi di Funnel
+
+L’analisi si basa su tre variabili principali:
+
+Paese: Italy
+
+Categoria: ADS
+
+Keyword: Orologio, panino, consulenza
+
+Durante l’analisi emergono diversi tipi di funnel, che possono essere più o meno complessi.
+
+Esempio 1: Annuncio di Awareness (Brand Awareness)
+
+Alcune ads hanno come unico scopo quello di far conoscere il brand e non vendere subito.
+
+Un esempio è una canzone sponsorizzata: l’artista paga per far ascoltare il brano al pubblico.
+
+Questo tipo di funnel è molto semplice, con solo due step:
+
+Ad di awareness (pubblicità della canzone).
+
+Visualizzazione del contenuto (ascolto del brano).
+
+
+Esempio 2: Funnel di Just Eat
+
+Qui il funnel è estremamente diretto:
+
+Ad pubblicitaria (panino pubblicizzato).
+
+Pagina Just Eat dove acquistare il panino.
+
+Funnel molto breve ed efficace per acquisti immediati.
+
+
+Esempio 3: Funnel per Consulenze
+
+Un altro esempio analizzato riguarda un funnel per una consulenza lavorativa.
+
+Il percorso utente è più articolato:
+
+Ad pubblicitaria (racconta una storia personale per coinvolgere l’utente).
+
+Landing Page / Sales Page (spiega il servizio).
+
+Opt-in Page (dove l’utente si iscrive a un Open Day).
+
+Possibile chiamata di consulenza dopo l’iscrizione.
+
+Questo funnel è più elaborato perché coinvolge l’utente in più fasi prima di una vendita diretta.
+
+Struttura comune nei funnel analizzati
+
+Dall’analisi emerge che la maggior parte dei funnel segue un modello abbastanza semplice, ma con alcune varianti:
+
+Funnel diretto (2 step):
+
+Ad → Sales Page → Acquisto.
+
+Esempio: Just Eat (dove l’utente va direttamente alla pagina d’acquisto).
+
+Funnel con opt-in (3+ step):
+
+Ad → Sales Page → Opt-in → Email marketing / Chiamata di consulenza.
+
+Esempio: il funnel della consulenza lavorativa.
+
+Funnel di Awareness (1-2 step):
+
+Ad → Contenuto gratuito (musica, video, blog).
+
+Nessuna call to action immediata, solo esposizione al brand.
+
+Conclusione
+
+Molti funnel sembrano semplici, ma spesso hanno elementi nascosti (opt-in, email marketing, retargeting).
+
+I funnel più efficaci sono quelli costruiti su misura e non copiati da modelli standard.
+
+Anche un funnel base può avere un impatto, ma è importante adattarlo al tipo di prodotto e pubblico.
+
+La scelta del tipo di funnel dipende dall’obiettivo dell’azienda: vendita immediata, acquisizione contatti, awareness.
+
+Questa lezione mostra come analizzare funnel esistenti per prendere ispirazione e migliorare le proprie strategie di marketing.
+
+Completa e continua
+
+La mia storia
+
+Store
+
+Recensioni
+
+Risorse
+
+Blog
+
+Questo sito e i consigli contenuti al suo interno sono opinioni personali a scopo educativo basate sulla esperienza di Andrei Pascu. I suoi risultati non sono tipici e i tuoi potrebbero variare in base a esperienza, effort, situazione economica e generale contesto. Andrei Pascu e i suoi collaboratori non fanno e non trattano argomenti come crypto, personal finance, fiscalità, risorse umane, recruiting, network marketing o in genere metodi di arricchimento veloce.
+
+Andrei Pascu Sales |  FIRENZE (FI) VIALE GIACOMO MATTEOTTI | 15 CAP 50121
+P.I. 02001850474  |  Privacy, dati, cookie e simili
+
+
+Gestisci Preferenze Cookie

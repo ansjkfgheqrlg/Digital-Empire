@@ -1,0 +1,27 @@
+{
+  "lesson_id": "outfunnel-lezione-17",
+  "corso": "outFunnel (Armageddon Bundle)",
+  "total_atoms": 4,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "outfunnel-lezione-17#\"1.-come-funziona\"",
+      "atom": "Meccanica base: contenuto desiderato dal pubblico (report, PDF, video, guida) → l'utente inserisce l'email in un opt-in per ottenerlo → consegna doppia (redirect immediato + email di conferma con link), per evitare che problemi tecnici blocchino la consegna."
+    },
+    {
+      "id": "KA-02",
+      "source": "outfunnel-lezione-17#\"2.-struttura\"",
+      "atom": "Blueprint a 5 step: Opt-in → Redirect istantaneo alla pagina di consegna → Email di consegna (backup) → Pagina di consegna (contenuto o video) → Email Marketing/Follow-up (nurturing, scoring, vendita)."
+    },
+    {
+      "id": "KA-03",
+      "source": "outfunnel-lezione-17#\"3.-perché-il-redirect-istantaneo\"",
+      "atom": "Motivazione esplicita del redirect istantaneo: evita perdita di utenti per problemi tecnici (spam, errori di digitazione email, ritardi CRM); mantiene il tasso di conversione alto perché l'esperienza continua senza interruzioni."
+    },
+    {
+      "id": "KA-04",
+      "source": "outfunnel-lezione-17#\"4.-personalizzazione\"",
+      "atom": "Il lead magnet può essere qualsiasi formato (ebook, webinar, report, sconto esclusivo, quiz) — la scelta della strategia dipende dall'obiettivo finale: acquisizione contatti, lead scoring, o funnel di vendita diretta."
+    }
+  ]
+}
