@@ -1,7 +1,8 @@
 # EMP-APPLAN1 — Piano chirurgico Andrei Pascu: P0 chiuso, P1 da rilanciare
 
 - **Aperto:** 2026-09-09
-- **Stato:** APERTA
+- **Stato:** ✅ **CHIUSA il 2026-09-10** — documento finale + PDF consegnati, vedi CP-20260910-K6C2.
+  Non si riprende piu': il seguito sono le cinque azioni della prima pagina del piano.
 - **Come si riprende:** dire `EMP-APPLAN1` in una chat nuova dentro Digital Empire.
 - **Checkpoint di origine:** [CP-20260909-98ZG](../checkpoints/CP-20260909-98ZG.md)
 - **Ordine di Max (testuale, 2026-09-09):** *«forse è il momento di fare un piano chirurgico…

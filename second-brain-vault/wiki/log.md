@@ -2320,3 +2320,12 @@ in `wiki/index.md` — proprio la fonte da cui viene la regola "puntatore stale"
 `CLAUDE.md`. Agganciata in questo turno sotto "Second Brain & Knowledge Architecture". Con
 questo, **sia max17 che max18 sono chiusi end-to-end** — resta solo la Fase 2 (implementazione
 dei consigli raccolti), su ordine esplicito di Max.
+
+## 2026-09-10
+- SYNTHESIS: piano di implementazione Andrei Pascu chiuso (`EMP-APPLAN1`, CP-20260910-K6C2) ->
+  1 pagina nuova `synthesis/Piano_Implementazione_Andrei_Pascu.md`. Metodo: tre giri di critica
+  (2 Doom Bot -> 3 Sentinelle indipendenti -> Fable -> assemblaggio -> decisioni di Emperator).
+  Ritrovamento portante: l'Impero possiede gia' il codice per incassare (`checkout.py` +
+  `checkout.config.json` col prezzo 67/97/27 gia' fissato da DEC-EST-001 + `email-agent/main.py`)
+  e non l'ha mai acceso. 7 decisioni chiuse, fra cui la correzione della scala prezzi 98->400->999
+  contro il 434 oggi in esecuzione nella task di Gael.

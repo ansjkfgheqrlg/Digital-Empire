@@ -1,12 +1,27 @@
-## 🟠 2026-09-09 notte — RIPRESA `EMP-APPLAN1`: giro P1 rilanciato (2 Sentinelle in parallelo)
+## 🟢 2026-09-10 notte — ✅ `EMP-APPLAN1` CHIUSO: piano implementazione Andrei Pascu consegnato — CP-20260910-K6C2
 
-Chat nuova, ripresa da CP-20260909-98ZG. **P0 verificato sul disco** (2 draft, 1.352 righe totali in
-`competitor/Andrei Pascu/piano-implementazione/`). **P1 rilanciato adesso**: 2× Sentinella (sonnet,
-background) — S1 angolo governo/coerenza/collisione → `P1-CRITICA-S1-governo.md`; S2 angolo denaro e
-verità → `P1-CRITICA-S2-denaro.md`. A seguire: P2 (Fable), assemblaggio (Scagnozzo), P3 esecutivo di
-Emperator + PDF standard-oro.
+Il piano è finito, criticato tre volte come voleva Max: **P0** 2 Doom Bot → **P1** 3 Sentinelle
+indipendenti → **P2** Fable → assemblaggio Scagnozzo → **P3** decisioni mie, non delegate.
+Documento + PDF standard-oro (8 pagine) + doppione in `documentazione Empire/`:
+`competitor/Andrei Pascu/piano-implementazione/PIANO-IMPLEMENTAZIONE-ANDREI-PASCU.md|.pdf`.
 
-**RIPRESA DA:** `EMP-APPLAN1` (`company/Memory/riprese/EMP-APPLAN1.md`).
+**IL RITROVAMENTO CHE CAMBIA LE PRIORITÀ:** Digital Empire **possiede già il codice per incassare e
+non l'ha mai acceso** — `empire/tools/checkout.py` + `Crea siti/Siti CCM/checkout.config.json`
+(prezzo Manuale **67/97/27 già impostato** da `DEC-EST-001`, tutti i rail spenti,
+`scadenza_lancio: 2026-07-31` scaduta) + `KDP - prodottti digitali/Leanding Page/email-agent/main.py`
+(webhook Stripe→PDF via Gmail, già funzionante per un altro ebook). Nessuna delle 34 azioni del piano
+lo toccava. `catena.py` è sceso dal rango 1: uno strumento non chiude un gate finché nessuna riga li
+collega (verificato in `dati/registro.yaml`).
+
+**⚠️ DUE GESTI SOLO DI MAX (ADR-026) — non fermano nient'altro (ADR-028):**
+1. **Payment Link Stripe** del Manuale a 67 € (+ bump 27 €): 10 minuti, sblocca il primo euro.
+2. **Ruotare la chiave Brevo** esposta in chiaro sul repo (B-020, da mesi): 10 minuti, rischio aperto.
+
+**⚠️ PER CHI LAVORA SU LANCI:** `TASK-GAEL-20260908-SETTIMANA-03.md` righe 144-146 istruisce la scala
+prezzi come **98→434→999**. Il 434 non coincide con nessuna misura: **la scala corretta è 98→400→999**,
+soglia prova sociale **349** (decisione D4 del piano). Va corretto prima che diventi codice.
+
+**Prossimo passo:** le cinque azioni della prima pagina del piano, in ordine.
 
 ---
 
@@ -23,28 +38,6 @@ Pascu con PDF e doppioni) ed EMP-APIMPL1 (CP-20260909-4RZV, 12 candidati applica
 
 **RIPRESA DA:** `EMP-APPLAN1` (`company/Memory/riprese/EMP-APPLAN1.md`) — rilanciare il giro P1
 (2 Sentinelle), poi P2 (Fable), poi assemblaggio (Scagnozzo), poi esecutivo P3 di Emperator + PDF.
-
----
-
-## 🟣 2026-09-09 sera — ⚠️ ATTIVAZIONE FORZE (ADR-015): piano chirurgico implementazione Andrei Pascu (EMP-APPLAN1)
-
-**Dichiarazione per iscritto (ADR-015), ordine di Max: usa doom bot + sentinelle + scagnozzo +
-fable per un piano vero, non solo la checklist.** Oggetto: gli 8 candidati mai costruiti
-(AP-004/005/008/017/018/019/020/033 in `competitor/Andrei Pascu/MIGLIORAMENTI-DIGITAL-EMPIRE.md`)
-più — soprattutto — un piano di sintesi che nessuno aveva ancora scritto: cosa cambia davvero in
-Digital Empire guardando TUTTO lo studio insieme (metodo + visivo + copy + lanci), non lezione
-per lezione.
-
-**Forze attivate ora:**
-- 2× **Doom Bot** (opus) in parallelo — A: LANCI/lanci reali, B: nuove capacità/tool
-- poi 2× **Sentinella** (sonnet) — critica adversariale di A e B contro ADR-024/025/026/028 e
-  contro vaghezza/Barnum
-- poi **Fable** — secondo occhio indipendente su tutto
-- poi 1× **Scagnozzo** (haiku) — assemblaggio meccanico del documento finale
-- chiusura esecutiva: Emperator (io), non delegata
-
-**Non tocca file di produzione** in questo giro — è un documento di piano
-(`competitor/Andrei Pascu/PIANO-IMPLEMENTAZIONE-*.md`), nessun rischio di collisione con Gael.
 
 ---
 
