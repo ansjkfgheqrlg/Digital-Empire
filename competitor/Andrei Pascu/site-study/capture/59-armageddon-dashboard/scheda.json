@@ -1,0 +1,695 @@
+{
+ "url": "https://www.andrei-copy.com/armageddon-dashboard",
+ "slug": "59-armageddon-dashboard",
+ "catturata": "2026-09-09",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 1918,
+ "larghezza": 1440,
+ "altezza_mobile": 1884,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_testo": [
+  [
+   "#fafafa",
+   10
+  ],
+  [
+   "#1b1b1d",
+   10
+  ],
+  [
+   "#a8a8a8",
+   2
+  ],
+  [
+   "#ebe9e0",
+   2
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#1b1b1d",
+   4
+  ],
+  [
+   "#0062ff",
+   3
+  ],
+  [
+   "#a8a8a8",
+   1
+  ],
+  [
+   "#fafafa",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "elza-8u3n84",
+   20
+  ],
+  [
+   "\"DM Sans\"",
+   2
+  ],
+  [
+   "Poppins",
+   1
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   12
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "16px / lh normal / w600",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   1
+  ],
+  [
+   "24px / lh normal / w300",
+   1
+  ],
+  [
+   "35.2px / lh 31.68px / w300",
+   1
+  ],
+  [
+   "17.6px / lh normal / w300",
+   1
+  ],
+  [
+   "16px / lh normal / w300",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "300",
+   19
+  ],
+  [
+   "600",
+   2
+  ],
+  [
+   "400",
+   1
+  ],
+  [
+   "500",
+   1
+  ],
+  [
+   "700",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "10px",
+   4
+  ]
+ ],
+ "ombre": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    131
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.1s linear",
+    3
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    7
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ]
+  ]
+ },
+ "keyframes": [
+  "anim-form-post-submit",
+  "animation-form-field-fx-highlight-double-trace",
+  "animation-form-field-fx-highlight-double-trace-bottom",
+  "animation-form-field-fx-highlight-glow",
+  "animation-form-field-fx-highlight-trace",
+  "animation-form-field-fx-highlight-trace-bottom",
+  "bounceIn",
+  "bounceOut",
+  "cart-loader-spin",
+  "clipAnimation",
+  "fadeout",
+  "gallery-image-enter-from-left",
+  "gallery-image-enter-from-right",
+  "gallery-image-exit-to-left",
+  "gallery-image-exit-to-right",
+  "hideContent",
+  "image-fade-in",
+  "keyframes-bar",
+  "keyframes-check",
+  "keyframes-circle",
+  "keyframes-circle-check",
+  "keyframes-ellipsis-grow",
+  "keyframes-ellipsis-shift",
+  "keyframes-ellipsis-shrink",
+  "keyframes-spinner",
+  "keyframes-spinner-check",
+  "lightbox-open",
+  "loading-dot-2",
+  "loading-dot-3",
+  "loading-indicator-dash",
+  "loading-indicator-rotate-spinner",
+  "no-image-fade-in",
+  "plyr-fade-in",
+  "plyr-popup",
+  "plyr-progress",
+  "portfolio-index-background-image-mask--mask-down-in",
+  "portfolio-index-background-image-mask--mask-down-out",
+  "portfolio-index-background-image-mask--mask-left-in",
+  "portfolio-index-background-image-mask--mask-left-out",
+  "portfolio-index-background-image-mask--mask-right-in",
+  "portfolio-index-background-image-mask--mask-right-out",
+  "portfolio-index-background-image-mask--mask-up-in",
+  "portfolio-index-background-image-mask--mask-up-out",
+  "product-reviews-loader-flip-square",
+  "pulseBadgeOpacity",
+  "riseandfadein",
+  "shake-three",
+  "shimmy",
+  "shiver",
+  "show-confirmation",
+  "show-confirmation-mobile",
+  "spin",
+  "sqs-spin",
+  "tmpl-anim-clip-horizontal-left",
+  "tmpl-anim-clip-vertical-up",
+  "tmpl-anim-fade-scale-up",
+  "tmpl-anim-fade-stretch-up",
+  "tmpl-anim-fade-up",
+  "underlineSlideIn",
+  "underlineSlideOut",
+  "video-player-settings-popup",
+  "video-player__loading-indicator-dash",
+  "video-player__loading-indicator-rotate-spinner"
+ ],
+ "headings": [
+  {
+   "tag": "h2",
+   "y": 274,
+   "text": "Ti diamo il benvenuto su Armageddon Bundle"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 138,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Iscriviti",
+   "href": null,
+   "y": 612,
+   "x": 669,
+   "w": 102,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Accedi",
+   "href": null,
+   "y": 983,
+   "x": 671,
+   "w": 99,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 1406,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 1474,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 131,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 131,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 453,
+   "x": 786,
+   "w": 54,
+   "h": 54
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 299,
+   "x": 2041,
+   "w": 54,
+   "h": 54
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 1231,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 1289,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1341,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1341,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1341,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1341,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 39,
+ "meta": {
+  "description": null,
+  "og_title": "AP Formazione",
+  "og_image": "http://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+  "canonical": null,
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 0,
+   "h": 1918,
+   "prof": 1,
+   "tag": "div",
+   "id": "siteWrapper",
+   "classi": "clearfix.site-wrapper",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": "Ti diamo il benvenuto su Armageddon Bundle",
+   "headings": [
+    "Ti diamo il benvenuto su Armageddon Bundle"
+   ],
+   "blocchi_testo": 76,
+   "parole": 157,
+   "densita": 8,
+   "media": 19,
+   "cta": 13,
+   "firma": "div|clearfix.site-wrapper|6|M|C|10",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-ti-diamo-il-benvenuto-su-armageddo.png"
+  }
+ ],
+ "sezioni_totali": 1,
+ "sezioni_distinte": 1,
+ "src": [
+  {
+   "file": "src/01-modern.js",
+   "url": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+   "bytes": 117559
+  },
+  {
+   "file": "src/02-cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-8db8ebfa2cddd364-min.it-IT.js",
+   "bytes": 153101
+  },
+  {
+   "file": "src/03-commerce-d0a2418b1401af5a-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/commerce-d0a2418b1401af5a-min.it-IT.js",
+   "bytes": 856095
+  },
+  {
+   "file": "src/04-common-6c4da0ebc675dd67-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-6c4da0ebc675dd67-min.it-IT.js",
+   "bytes": 991150
+  },
+  {
+   "file": "src/05-common-vendors-3db7fa7f48056cab-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3db7fa7f48056cab-min.it-IT.js",
+   "bytes": 807017
+  },
+  {
+   "file": "src/06-common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-cb34c3e512a7f804-min.it-IT.js",
+   "bytes": 246523
+  },
+  {
+   "file": "src/07-extension-scripts-1f1612d7d747f110-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extension-scripts-1f1612d7d747f110-min.it-IT.js",
+   "bytes": 114435
+  },
+  {
+   "file": "src/08-extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-3f785b7832ab9a66-min.it-IT.js",
+   "bytes": 850352
+  },
+  {
+   "file": "src/09-extract-css-runtime-2bf5725b0b41107e-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-2bf5725b0b41107e-min.it-IT.js",
+   "bytes": 50590
+  },
+  {
+   "file": "src/10-paywall-page-34e04cca70b001ae-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/paywall-page-34e04cca70b001ae-min.it-IT.js",
+   "bytes": 8356
+  },
+  {
+   "file": "src/11-user-account-core-f86f8785ca867aba-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/user-account-core-f86f8785ca867aba-min.it-IT.js",
+   "bytes": 65950
+  },
+  {
+   "file": "src/12-visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "url": "https://assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-934c9d1bc8674350-min.it-IT.js",
+   "bytes": 3680
+  },
+  {
+   "file": "src/13-commerce-d50e5960dc9fd059-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/commerce-d50e5960dc9fd059-min.it-IT.css",
+   "bytes": 9897
+  },
+  {
+   "file": "src/15-user-account-core-51872f14848f466d-min.it-IT.css",
+   "url": "https://assets.squarespace.com/universal/styles-compressed/user-account-core-51872f14848f466d-min.it-IT.css",
+   "bytes": 2301
+  },
+  {
+   "file": "src/16-fbevents.js",
+   "url": "https://connect.facebook.net/en_US/fbevents.js",
+   "bytes": 419246
+  },
+  {
+   "file": "src/17-website.components.horizontalrule.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/a6a48c7b-e76f-4f06-81b8-b01eebd9116f_258/website.components.horizontalrule.styles.css",
+   "bytes": 95
+  },
+  {
+   "file": "src/18-website.components.horizontalrule.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/a6a48c7b-e76f-4f06-81b8-b01eebd9116f_258/website.components.horizontalrule.visitor.js",
+   "bytes": 12172
+  },
+  {
+   "file": "src/19-website.components.html.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/f6628344-0f75-4f89-ac19-0fbf06fcb09d_891/website.components.html.styles.css",
+   "bytes": 105
+  },
+  {
+   "file": "src/20-website.components.html.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/f6628344-0f75-4f89-ac19-0fbf06fcb09d_891/website.components.html.visitor.js",
+   "bytes": 12095
+  },
+  {
+   "file": "src/21-18018.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/18018.js",
+   "bytes": 12970
+  },
+  {
+   "file": "src/22-39188.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/39188.js",
+   "bytes": 20695
+  },
+  {
+   "file": "src/23-39882.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/39882.js",
+   "bytes": 10236
+  },
+  {
+   "file": "src/24-64023.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/64023.js",
+   "bytes": 33127
+  },
+  {
+   "file": "src/25-92452.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/92452.js",
+   "bytes": 38848
+  },
+  {
+   "file": "src/26-image-effect-film-grain.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/image-effect-film-grain.js",
+   "bytes": 8476
+  },
+  {
+   "file": "src/27-image-effect-liquid.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/image-effect-liquid.js",
+   "bytes": 8950
+  },
+  {
+   "file": "src/28-image-effect-parallax.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/image-effect-parallax.js",
+   "bytes": 6211
+  },
+  {
+   "file": "src/29-image-effect-refracted-circles.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/image-effect-refracted-circles.js",
+   "bytes": 3053
+  },
+  {
+   "file": "src/30-image-effect-refracted-lines.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/image-effect-refracted-lines.js",
+   "bytes": 12159
+  },
+  {
+   "file": "src/31-website.components.imageFluid.shared.constants.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/website.components.imageFluid.shared.constants.js",
+   "bytes": 945
+  },
+  {
+   "file": "src/32-website.components.imageFluid.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/website.components.imageFluid.styles.css",
+   "bytes": 2671
+  },
+  {
+   "file": "src/33-website.components.imageFluid.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/1e2f3879-4b57-4f9b-b24e-6148c296f96e_878/website.components.imageFluid.visitor.js",
+   "bytes": 29543
+  },
+  {
+   "file": "src/34-website.components.socialLinks.styles.css",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/b4ca3d13-7216-4696-8bd2-c0311c6a2e4b_669/website.components.socialLinks.styles.css",
+   "bytes": 12212
+  },
+  {
+   "file": "src/35-website.components.socialLinks.visitor.js",
+   "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/b4ca3d13-7216-4696-8bd2-c0311c6a2e4b_669/website.components.socialLinks.visitor.js",
+   "bytes": 13307
+  },
+  {
+   "file": "src/36-custom.css",
+   "url": "https://static1.squarespace.com/static/custom-css/602126db7a4e4c01fd9babb6/602126db7a4e4c01fd9babd0/0/custom.css",
+   "bytes": 1183
+  },
+  {
+   "file": "src/37-site.css",
+   "url": "https://static1.squarespace.com/static/versioned-site-css/602126db7a4e4c01fd9babb6/177/5c5a519771c10ba3470d8101/602126db7a4e4c01fd9babd0/1823/site.css?nocustom=true",
+   "bytes": 1273353
+  },
+  {
+   "file": "src/38-site-bundle.5126e46abbeb1b3d5455e7207db09a76.js",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.5126e46abbeb1b3d5455e7207db09a76.js",
+   "bytes": 128081
+  },
+  {
+   "file": "src/39-static.css",
+   "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1787156543145-0MJJPDTBNWE734EUOY27/static.css",
+   "bytes": 481489
+  },
+  {
+   "file": "src/40-rdd73ozkqt.js",
+   "url": "https://www.clarity.ms/tag/rdd73ozkqt",
+   "bytes": 878
+  },
+  {
+   "file": "src/41-js.js",
+   "url": "https://www.googletagmanager.com/gtag/js?id=G-HFX4CY3C4J",
+   "bytes": 486123
+  },
+  {
+   "file": "src/42-gtm.js",
+   "url": "https://www.googletagmanager.com/gtm.js?id=GTM-WJFCQJZ9",
+   "bytes": 331217
+  }
+ ],
+ "segmentazione": "fallita"
+}

@@ -1,0 +1,388 @@
+{
+ "title": "AP Formazione",
+ "meta_description": null,
+ "og_title": "AP Formazione",
+ "og_image": "http://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+ "canonical": null,
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+ ],
+ "lang": "it-IT",
+ "page_height": 1918,
+ "page_width": 1440,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_text": [
+  [
+   "#fafafa",
+   10
+  ],
+  [
+   "#1b1b1d",
+   10
+  ],
+  [
+   "#a8a8a8",
+   2
+  ],
+  [
+   "#ebe9e0",
+   2
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#1b1b1d",
+   4
+  ],
+  [
+   "#0062ff",
+   3
+  ],
+  [
+   "#a8a8a8",
+   1
+  ],
+  [
+   "#fafafa",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "elza-8u3n84",
+   20
+  ],
+  [
+   "\"DM Sans\"",
+   2
+  ],
+  [
+   "Poppins",
+   1
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   1
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 28.8px / w300",
+   12
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "16px / lh normal / w600",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   1
+  ],
+  [
+   "24px / lh normal / w300",
+   1
+  ],
+  [
+   "35.2px / lh 31.68px / w300",
+   1
+  ],
+  [
+   "17.6px / lh normal / w300",
+   1
+  ],
+  [
+   "16px / lh normal / w300",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "300",
+   19
+  ],
+  [
+   "600",
+   2
+  ],
+  [
+   "400",
+   1
+  ],
+  [
+   "500",
+   1
+  ],
+  [
+   "700",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "10px",
+   4
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    131
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.1s linear",
+    3
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    7
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ]
+  ]
+ },
+ "headings": [
+  {
+   "tag": "h2",
+   "y": 274,
+   "text": "Ti diamo il benvenuto su Armageddon Bundle"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 138,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Iscriviti",
+   "href": null,
+   "y": 612,
+   "x": 669,
+   "w": 102,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Accedi",
+   "href": null,
+   "y": 983,
+   "x": 671,
+   "w": 99,
+   "h": 53,
+   "bg": "#1b1b1d",
+   "color": "#a8a8a8",
+   "radius": "10px",
+   "border": "0px solid rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 1406,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 1474,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 131,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 131,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 453,
+   "x": 786,
+   "w": 54,
+   "h": 54
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 299,
+   "x": 2041,
+   "w": 54,
+   "h": 54
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 1231,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 1289,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1341,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1341,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1341,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1341,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "slices_desktop": 3,
+ "slices_mobile": 3,
+ "mobile_page_height": 1884
+}

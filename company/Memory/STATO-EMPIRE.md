@@ -10105,3 +10105,19 @@ spunta quando conferma di averlo usato (ADR-016).
 **RIPRESA DA:** nessun lavoro aperto su questo filone (lo studio dei siti resta 56/56, chiuso in
 `CP-20260909-GRVC`). Prossimo lavoro libero: attesa della conferma di Gael su LANCI, oppure nuovo
 ordine di Max.
+
+## 2026-09-09 — cattura 59 fuori onda: cosa vede chi ha già pagato Armageddon (CP-20260909-R3WT)
+
+Max ha passato `andrei-copy.com/armageddon-dashboard` — mai vista, arrivata dopo la chiusura 56/56.
+**Meccanismo diverso da tutto il resto del lancio:** consegna via Member Areas nativo di
+Squarespace, non il mirror artigianale. Due scoperte vere: uno **sconto bloccato su un prodotto
+futuro** («Funnel Operator», non ancora uscito) come leva-regalo alternativa al voucher; e un
+**difetto di gerarchia** — l'unico blu di brand della pagina è sul bottone che chiude l'avviso
+"stiamo aggiornando il brand", non su "Iscriviti". Aggiunta PARTE XI all'ANATOMIA-DEI-LANCI.
+
+**Corretto anche un buco nel PDF**, segnalato da Max: "i gradini che non sono casse" (le pagine di
+parcheggio, e il dead-end di `/presto-disponibile` nel footer) erano nella fonte Markdown e nei
+dati Python ma non erano mai arrivati sulla pagina — dato dichiarato, mai renderizzato. PDF ora a
+11 pagine, rigenerato, doppione aggiornato.
+
+**RIPRESA DA:** nessuna. Lavoro chiuso, tutte le forme allineate.

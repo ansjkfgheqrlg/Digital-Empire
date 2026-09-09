@@ -255,7 +255,30 @@ CONSEGNA_A_LANCI = [
     "Otto controlli di gate, di cui il numero 8 e' il primo gate obbligatorio di LANCI.",
     "Un funnel nostro gia' scritto e mai lanciato: chiamata-formazione.netlify.app "
     "(call 1:1 gratuita verso Claude Code Mastery a 397€, 18.770px, 25 sezioni, 506 blocchi, ferma su staging).",
+    "L'addendum sul post-acquisto (vedi ADDENDUM_POST_ACQUISTO): cosa NON fare nella pagina di consegna.",
 ]
+
+
+# =============================================================================================
+# ADDENDUM (2026-09-09) — cosa succede dopo il pagamento, cattura 59 fuori onda
+# =============================================================================================
+
+ADDENDUM_POST_ACQUISTO = {
+    "cattura_n": 59,
+    "url": "https://www.andrei-copy.com/armageddon-dashboard",
+    "report": "competitor/Andrei Pascu/site-study/reports/59-armageddon-dashboard.md",
+    "meccanismo": "Squarespace Member Areas nativo, sul negozio storico - non il mirror artigianale del lancio",
+    "leva_nuova": "sconto di 199 EUR su Funnel Operator (non ancora uscito), bloccato all'acquisto di Armageddon",
+    "difetto_gerarchia": (
+        "unico uso del blu di brand (#0062ff) e' sul bottone che chiude l'avviso "
+        "'Stiamo aggiornando il brand', non sul bottone Iscriviti (grigio su nero, zero accento)"
+    ),
+    "dead_end_confermato": "/presto-disponibile vive nel footer standard del sito, non solo nelle pagine-ponte",
+    "regola_aggiunta": (
+        "il colore di brand va sempre sulla CTA che converte, mai sul messaggio di sistema, "
+        "nemmeno nella pagina di consegna"
+    ),
+}
 
 
 # =============================================================================================
@@ -291,6 +314,8 @@ def check() -> None:
     print(f"Modello per Digital Empire: {len(MODELLO_12_PASSI)} passi "
           f"(critico: #{PASSO_CRITICO_N} - {get_passo(PASSO_CRITICO_N)['passo']})")
     print(f"Consegna a LANCI: {len(CONSEGNA_A_LANCI)} elementi")
+    print(f"Addendum post-acquisto: cattura {ADDENDUM_POST_ACQUISTO['cattura_n']} - "
+          f"{ADDENDUM_POST_ACQUISTO['meccanismo']}")
 
 
 # =============================================================================================
@@ -367,7 +392,7 @@ def build_pdf(out_html: str, out_pdf: str, html_only: bool = False) -> None:
 
     # 04 · C — il funnel freddo + il costo in parole -------------------------------------------
     doc.page(
-        head("C", "Funnel", "Il percorso freddo, <span class='soft'>due domande e un prodotto.</span>",
+        head("C", "Funnel · percorso freddo", "Due domande, <span class='soft'>poi il prodotto.</span>",
              "Ogni pagina-ponte ha una sola decisione possibile. Il prodotto compare al terzo passo.")
         + "<div class='body stack'><div class='unit'>"
         + tab(
@@ -388,7 +413,7 @@ def build_pdf(out_html: str, out_pdf: str, html_only: bool = False) -> None:
 
     # 05 · D — lo stampo della pre-cassa ---------------------------------------------------------
     doc.page(
-        head("D", "Pre-cassa", "Non e' una pagina, <span class='soft'>e' un generatore.</span>",
+        head("D", "Funnel · percorso caldo", "Non e' una pagina, <span class='soft'>e' un generatore.</span>",
              f"{STAMPO_PRECASSA_CATTURE} catture, un unico stampo: cornice identica al pixel, cambia "
              "solo il riquadro centrale.")
         + "<div class='body stack'><div class='unit'>"
@@ -400,6 +425,13 @@ def build_pdf(out_html: str, out_pdf: str, html_only: bool = False) -> None:
         + "</div><div class='unit'>"
         + "<div class='kicker'><span class='n'>—</span>Le tre decisioni dentro lo stampo</div>"
         + "<ul class='clean'>" + "".join(f"<li>{d}</li>" for d in TRE_DECISIONI_STAMPO) + "</ul>"
+        + "</div><div class='unit push'>"
+        + "<div class='kicker'><span class='n'>—</span>E i gradini che non sono casse</div>"
+        + "<p class='note'>" + ", ".join(f"<span class='mono'>{g}</span>" for g in GRADINI_NON_CASSA)
+        + ": pagine di parcheggio. Il link «Recensioni» nel piede di tutte e quattro le "
+        "pagine-ponte punta a <span class='mono'>/presto-disponibile</span> — "
+        "<strong>la prova sociale non manca per scelta: manca perche' la pagina non esiste "
+        "ancora</strong>, e il link e' stato lasciato li'.</p>"
         + "</div></div>"
     )
 
@@ -482,6 +514,32 @@ def build_pdf(out_html: str, out_pdf: str, html_only: bool = False) -> None:
         + "<li><strong>PDF:</strong> documentazione Empire/Lanci/ANATOMIA-DEI-LANCI.pdf</li>"
         + "<li><strong>Consegna:</strong> company/Memory/tasks/TASK-LANCI-20260908-ANATOMIA-ANDREI-PASCU.md</li>"
         + "</ul></div></div>"
+    )
+
+    # 11 · J — addendum: dopo il pagamento -------------------------------------------------------
+    doc.page(
+        head("J", "Addendum · 9 settembre", "Dopo il pagamento, <span class='soft'>un meccanismo diverso.</span>",
+             "Cattura fuori onda, arrivata dopo la chiusura dello studio: la prima e unica vista sul "
+             "lato consegna, non sul lato vendita.")
+        + "<div class='body stack'><div class='unit'>"
+        + "<div class='kicker'><span class='n'>—</span>Cosa cambia</div>"
+        + "<p class='note'>La consegna non usa il mirror artigianale del lancio: usa il blocco nativo "
+        f"<strong>Member Areas di Squarespace</strong>, sul negozio storico "
+        f"(<span class='mono'>{ADDENDUM_POST_ACQUISTO['url']}</span>), non su armageddon.bsns.it.</p>"
+        + "</div><div class='unit fix'>"
+        + "<div class='tag'>Leva nuova, distinta dal voucher</div>"
+        + f"<h3>Uno sconto bloccato su un prodotto che non esiste ancora</h3>"
+        + f"<p class='note'>{ADDENDUM_POST_ACQUISTO['leva_nuova']}. Costo marginale zero per lui oggi, "
+        "motivo concreto per restare in lista fino al prossimo lancio.</p>"
+        + "</div><div class='unit fix mute'>"
+        + "<div class='tag'>Difetto di gerarchia, misurato</div>"
+        + f"<p class='note'>{ADDENDUM_POST_ACQUISTO['difetto_gerarchia']}. Regola aggiunta: "
+        f"{ADDENDUM_POST_ACQUISTO['regola_aggiunta']}.</p>"
+        + "</div><div class='unit'>"
+        + "<div class='kicker'><span class='n'>—</span>Dead-end confermato piu' largo</div>"
+        + f"<p class='note'>{ADDENDUM_POST_ACQUISTO['dead_end_confermato']}. Controllo 8 esteso: si "
+        "verificano i link del footer una volta alla fonte, non pagina per pagina.</p>"
+        + "</div></div>"
     )
 
     doc.build(html_only=html_only)

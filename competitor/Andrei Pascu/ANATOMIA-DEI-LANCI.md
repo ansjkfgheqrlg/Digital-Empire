@@ -294,6 +294,38 @@ Non «facciamo come lui»: **facciamo il suo modello senza i suoi difetti.** Dod
 
 ---
 
+## PARTE XI — ADDENDUM: cosa succede dopo il pagamento (aggiunto 2026-09-09, cattura 59)
+
+Le nove parti sopra coprono il funnel **fino alla cassa**. Il 9 settembre, dopo la chiusura dello
+studio, è arrivata una cattura fuori onda che risponde alla domanda che restava aperta: cosa vede
+chi ha già pagato. Rapporto completo:
+`competitor/Andrei Pascu/site-study/reports/59-armageddon-dashboard.md`.
+
+**Il meccanismo cambia.** La consegna non usa il mirror artigianale del lancio: usa il blocco
+nativo **Member Areas di Squarespace**, sullo stesso dominio del negozio storico
+(`andrei-copy.com/armageddon-dashboard`), non su `armageddon.bsns.it`.
+
+**Una leva nuova, distinta dal voucher:** *«Accesso istantaneo a 4 corsi di Andrei Pascu. Sconto
+di €199 su Funnel Operator alla sua uscita.»* — uno sconto **bloccato su un prodotto che non è
+ancora uscito**. Costo marginale zero per lui oggi, motivo concreto per restare nella sua lista
+fino al prossimo lancio. Va aggiunto come nona costante accanto alle otto di Parte V: **il regalo
+non deve per forza esistere già — può essere un'opzione su un lancio futuro.**
+
+**Un difetto di gerarchia, misurato:** l'unico uso del blu di brand (`#0062ff`) in tutta la pagina
+di consegna è sul bottone che chiude l'avviso *«Stiamo aggiornando il brand»* — non sul bottone
+«Iscriviti», grigio su nero, zero accento. Il colore che dovrebbe guidare all'accesso guida invece
+a scusarsi. **Regola aggiunta al passo 6 del modello (Parte IX): il colore di brand va sempre sulla
+CTA che converte, mai sul messaggio di sistema, nemmeno nella pagina di consegna.**
+
+**Un dead-end confermato più largo del previsto:** il link «Recensioni» che punta a
+`/presto-disponibile` (Parte III, difetto già noto sulle pagine-ponte) vive nel **footer
+standard del sito**: questa cattura lo trova anche nella pagina di consegna, quindi il difetto non
+è locale alle quattro pagine-ponte — è nel footer condiviso, e si propaga ovunque quel footer sia
+incluso. **Controllo 8 esteso: verificare i link del footer una volta alla fonte, non pagina per
+pagina.**
+
+---
+
 ## Connessioni
 - [[SINTESI-METODO]] · [[SINTESI-SISTEMA-VISIVO]] · [[SINTESI-SISTEMA-COPY]] — le tre sintesi
 - [[ECOSISTEMA]] — l'elenco vero e le correzioni
