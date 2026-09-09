@@ -1531,11 +1531,28 @@ che calcola disponibilità.
 2. **Genera il report** leggendo i titoli veri dai file coniati — mai scritto a mano, mai a
    memoria.
 
-**Lo schema di risposta — fisso, come il battito. Tre giri per arrivarci** (bocciati: un albero
-ASCII boxato con "onde" — troppo evidenziato, l'onda "cringe"; un Artifact — vietato esplicitamente,
-Max lo vuole in chat). **Colore dominante VIOLA (🟣)** — sistema di un colore per funzione:
-l'arancione (🟠) è di `/recap`, il viola è di `/frantuma`. Frecce vere, in markdown puro, mai
-dentro un blocco di codice (altrimenti risulta "evidenziato"/piatto):
+**Colore dominante VIOLA (🟣)** — sistema di un colore per funzione: l'arancione (🟠) è di
+`/recap`, il viola è di `/frantuma`. Tre giri per arrivare allo schema (bocciati: un albero ASCII
+boxato con "onde" — troppo evidenziato, l'onda "cringe"; un Artifact — vietato esplicitamente,
+Max lo vuole in chat). Frecce vere, in markdown puro, mai dentro un blocco di codice (altrimenti
+risulta "evidenziato"/piatto).
+
+**⚠️ Vincolo tecnico non negoziabile:** nessuna riga di questo schema, o di qualunque altro
+output, può iniziare con `🟠` — quel carattere a inizio riga è il segnale che l'hook
+`gate_battito_hook.py` usa per riconoscere un tentativo di battito, e lo giudicherebbe con lo
+schema del recap invece che lasciarlo passare (scoperto in produzione l'08/09: un mockup con
+bullet 🟠 è stato bloccato dal gate esattamente per questo).
+
+### Due fasi, mai una sola — *(correzione di Max, 2026-09-09)*
+
+**Non si conia mai nulla al primo giro.** La funzione ha sempre due passaggi separati, e il
+secondo parte SOLO se qualcuno con l'autorità di farlo — **Max, Gael o Neri** — accetta la
+proposta esplicitamente. È la stessa lezione dell'08/09 (demo dal vivo non richiesta, bocciata)
+resa protocollo fisso invece che una cosa da ricordare a braccio.
+
+**FASE 1 — PROPOSTA.** Nessun file viene creato, nessun ID viene coniato. Compongo lo schema a
+mano sugli stessi titoli, con numerazione provvisoria (MT-01, MT-02... — ma sono etichette di
+bozza, non ID reali), e **chiudo sempre chiedendo il via libera**:
 
 ```
 🟣 **<PADRE>**
@@ -1546,21 +1563,33 @@ dentro un blocco di codice (altrimenti risulta "evidenziato"/piatto):
    └──🟣→ **MT-0n** · <titolo>          (l'ultima riga usa └── invece di ├──)
 ```
 
-Generato da `python scripts/frantuma.py report --padre <PADRE>` — copio l'output, non lo ricreo
-a mano: la forma è garantita dal codice, esattamente come `verifica_recap.py` garantisce quella
-del battito.
+seguito da una domanda esplicita — *"Va bene questa scomposizione? Confermi?"* o equivalente —
+mai dato per scontato che il silenzio sia un sì.
 
-**⚠️ Vincolo tecnico non negoziabile:** nessuna riga di questo schema, o di qualunque altro
-output, può iniziare con `🟠` — quel carattere a inizio riga è il segnale che l'hook
-`gate_battito_hook.py` usa per riconoscere un tentativo di battito, e lo giudicherebbe con lo
-schema del recap invece che lasciarlo passare (scoperto in produzione l'08/09: un mockup con
-bullet 🟠 è stato bloccato dal gate esattamente per questo).
+**FASE 2 — CONFERMA.** Solo dopo un sì esplicito di Max, Gael o Neri: conio per davvero, una
+chiamata `python scripts/frantuma.py conia --padre <PADRE> --slug <slug> --titolo "<titolo>"` per
+ogni micro-task, poi stampo `python scripts/frantuma.py report --padre <PADRE>` — che, leggendo
+solo file già coniati, produce sempre e solo questa forma, con il richiamo che l'ID è ufficiale:
 
-**Quando si attiva:** quando Max dice *"frantuma questa task"* o equivalenti. **Non si esegue mai
-di iniziativa su una task reale** senza che Max lo chieda esplicitamente — lezione pagata l'08/09:
-una prima dimostrazione dal vivo su `TASK-LANCI-BUILD-W3` (4 micro-task reali coniate) è stata
-bocciata e rimossa perché non richiesta. Un'anteprima dello schema si mostra con dati d'esempio
-dichiarati come tali; il conio vero si fa solo a comando.
+```
+🟣 **<PADRE>**
+🟣 divisa in <n> micro-task ufficiali
+   │
+   ├──🟣→ **MT-01** · <titolo> — ID ufficiale, usabile in altre chat/sessioni
+   ├──🟣→ **MT-02** · <titolo> — ID ufficiale, usabile in altre chat/sessioni
+   └──🟣→ **MT-0n** · <titolo> — ID ufficiale, usabile in altre chat/sessioni
+```
+
+Copio l'output di `report`, non lo ricreo a mano: la forma di FASE 2 è garantita dal codice,
+esattamente come `verifica_recap.py` garantisce quella del battito. La FASE 1 non passa da
+nessuno script — è per forza scritta a mano, perché prima dell'accettazione non esiste ancora
+nessun file su cui `report` possa leggere.
+
+**Quando si attiva:** quando Max, Gael o Neri dice *"frantuma questa task"* o equivalenti. **Non
+si esegue mai di iniziativa su una task reale** senza che qualcuno lo chieda esplicitamente E poi
+accetti la proposta — lezione pagata l'08/09: una prima dimostrazione dal vivo su
+`TASK-LANCI-BUILD-W3` (4 micro-task reali coniate senza passare dalla fase 1) è stata bocciata e
+rimossa perché non richiesta.
 
 ---
 

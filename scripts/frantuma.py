@@ -137,8 +137,16 @@ def leggi_tutte(padre: str) -> list[dict]:
 
 
 def report(padre: str) -> str:
-    """Schema fisso viola-con-frecce, scelto da Max il 2026-09-08. Calcolato
-    dai file reali (titolo incluso), mai scritto a mano."""
+    """Schema fisso viola-con-frecce, scelto da Max il 2026-09-08/09. Calcolato
+    dai file reali (titolo incluso), mai scritto a mano.
+
+    Questa funzione legge SOLO file gia' coniati -- non esiste un "report" su
+    micro-task che non sono ancora state create. Per questo il suo output e'
+    sempre la FASE 2 (conferma): ogni riga porta il richiamo che l'ID e'
+    ufficiale e usabile in un'altra chat/sessione. La FASE 1 (proposta, prima
+    che Max/Gael/Neri accettino) non passa da qui: si compone a mano, sugli
+    stessi titoli, SENZA coniare nulla -- vedi emperator.md 6.24.
+    """
     tutte = leggi_tutte(padre)
     if not tutte:
         return "Nessuna micro-task coniata per %s. Usa `frantuma.py conia`." % padre
@@ -149,7 +157,8 @@ def report(padre: str) -> str:
     righe.append("   │")
     for i, m in enumerate(tutte):
         ramo = "└──" if i == len(tutte) - 1 else "├──"
-        righe.append("   %s🟣→ **%s** · %s" % (ramo, m["codice"], m["titolo"]))
+        righe.append("   %s🟣→ **%s** · %s — ID ufficiale, usabile in altre chat/sessioni"
+                      % (ramo, m["codice"], m["titolo"]))
     return "\n".join(righe)
 
 

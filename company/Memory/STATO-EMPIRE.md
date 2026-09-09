@@ -1,3 +1,13 @@
+## 🟣 2026-09-09 — /frantuma a due fasi: proposta poi conferma, accetta Max/Gael/Neri — CP-20260909-Y79R
+
+Ultima correzione sul filone: la funzione **non conia mai al primo giro**. FASE 1 (proposta):
+schema a mano, numerazione provvisoria, nessun file creato, chiude sempre chiedendo il via
+libera. FASE 2 (conferma): solo dopo un sì esplicito di **Max, Gael o Neri**, si conia per
+davvero e si stampa il report reale — ogni riga ora con "ID ufficiale, usabile in altre
+chat/sessioni". `report()` legge solo file già coniati: per costruzione non può mai rappresentare
+la fase 1, quindi l'esecuzione precoce è impossibile a livello di codice, non solo di regola.
+8 test verdi, suite 22/22. Dettagli: [CP-20260909-Y79R](checkpoints/CP-20260909-Y79R.md).
+
 ## 🟣 2026-09-09 — /frantuma chiuso e approvato: schema viola con frecce, semplificato a split+ID — CP-20260909-DR9X
 
 **Tre giri di correzione di Max sullo stesso filone, tutti reali, tutti applicati.** Bocciata la
