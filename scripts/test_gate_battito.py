@@ -4,10 +4,11 @@
 test_gate_battito.py — prova vera del gate del battito (scripts/gate_battito_hook.py).
 
 Non verifica che il file esista: gli costruisce sotto un transcript finto per ogni caso e
-guarda cosa risponde davvero. Dal 6º giro (2026-09-09) la regola sul blocco di codice si e'
-invertita: il battito vero DEVE stare dentro ``` in cima al messaggio (prima girava il
-contrario). I casi 6 e 9-10 sono quelli che decidono se il gate distingue bene una
-CONSEGNA vera da un ESEMPIO di documentazione.
+guarda cosa risponde davvero. Dal 7º giro (2026-09-09) la regola sul blocco di codice si e'
+invertita di nuovo: il battito vero e' una TABELLA markdown, MAI dentro ``` (il 6º giro
+voleva il contrario, bocciato da Max sull'aspetto — vedi verifica_recap.py). I casi 4, 5 e
+9-10 sono quelli che decidono se il gate distingue bene una CONSEGNA vera da un ESEMPIO di
+documentazione, e se blocca davvero un fence.
 
     py -3 scripts/test_gate_battito.py
 """
@@ -18,6 +19,11 @@ import os
 import subprocess
 import sys
 import tempfile
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass  # console senza reconfigure (Python vecchio): meglio provarci che bloccare il test
 
 QUI = os.path.dirname(os.path.abspath(__file__))
 HOOK = os.path.join(QUI, "gate_battito_hook.py")
@@ -34,17 +40,20 @@ BATTITO_OK = costruisci(
 )
 
 BATTITO_ROTTO = """**⏱️ RECAP — 40%**
-🟠 Fatto:
-letto il libro
-- Sto facendo: costruisco il controllo
-🟠 Farò:
-lo provo
-🟠 Forze:
-nessuna
-↓
-🟠 Assetto:
-acceso
-🟠 Potere: tanto%"""
+
+| |
+|:---:|
+| 🟠 Fatto: |
+| letto il libro |
+| - Sto facendo: costruisco il controllo |
+| 🟠 Farò: |
+| lo provo |
+| 🟠 Forze: |
+| nessuna |
+| ↓ |
+| 🟠 Assetto: |
+| acceso |
+| 🟠 Potere: tanto% |"""
 
 
 def transcript(testo_assistente):
@@ -94,48 +103,48 @@ CASI = [
     ("1. messaggio senza battito -> passa",
      "Max, ho finito il lavoro. Il file e' salvato e pushato.", False, False),
 
-    ("2. battito conforme, dentro ``` in cima -> passa",
-     "```\n" + BATTITO_OK + "\n```\n\nDettagli sotto, come sempre.", False, False),
+    ("2. battito conforme, tabella, in cima, NESSUN fence -> passa",
+     BATTITO_OK + "\n\nDettagli sotto, come sempre.", False, False),
 
-    ("3. battito rotto, dentro ``` in cima -> BLOCCA (problemi di forma)",
-     "```\n" + BATTITO_ROTTO + "\n```", False, True),
+    ("3. battito rotto (tabella malformata), in cima -> BLOCCA (problemi di forma)",
+     BATTITO_ROTTO, False, True),
 
-    ("4. battito conforme ma NON dentro ``` -> BLOCCA (manca il blocco di codice)",
-     BATTITO_OK, False, True),
+    ("4. battito conforme ma dentro ``` -> BLOCCA (vietato dal 7º giro)",
+     "```\n" + BATTITO_OK + "\n```\n\nDettagli sotto.", False, True),
 
-    ("5. battito conforme dentro ``` ma NON in cima -> BLOCCA (posizione)",
-     "Prima ti racconto la bella notizia, poi il battito.\n\n```\n" + BATTITO_OK + "\n```",
+    ("5. battito conforme (tabella) ma NON in cima -> BLOCCA (posizione)",
+     "Prima ti racconto la bella notizia, poi il battito.\n\n" + BATTITO_OK,
      False, True),
 
     ("6. esempio dentro ``` con prosa PRIMA E DOPO (documentazione) -> passa",
      "Lo schema del battito e' questo:\n\n```\n" + BATTITO_ROTTO + "\n```\n\nChiaro?", False, False),
 
     ("7. battito rotto ma stop_hook_active -> passa (anti-loop)",
-     "```\n" + BATTITO_ROTTO + "\n```", True, False),
+     BATTITO_ROTTO, True, False),
 
     # --- il caso pagato in produzione, 2026-09-05 sera ---
-    ("8. turno lungo: messaggi intermedi + battito dentro ``` in cima all'ultimo -> passa",
+    ("8. turno lungo: messaggi intermedi + battito (tabella, no fence) in cima all'ultimo -> passa",
      ["Ricevuto, Max. Parto col lavoro.",
       "Ho finito la prima parte, ora salvo.",
-      "```\n" + BATTITO_OK + "\n```\n\nChiuso, il codice e' EMP-RWKX."], False, False),
+      BATTITO_OK + "\n\nChiuso, il codice e' EMP-RWKX."], False, False),
 
     ("9. turno lungo ma il battito e' sotto la prosa nel SUO messaggio -> BLOCCA",
      ["Parto col lavoro.",
-      "Ti racconto prima com'e' andata, poi il battito.\n\n```\n" + BATTITO_OK + "\n```"],
+      "Ti racconto prima com'e' andata, poi il battito.\n\n" + BATTITO_OK],
      False, True),
 
-    # --- il caso pagato in produzione, 2026-09-09 (6º giro: la regola si e' invertita) ---
-    ("10. battito vero dentro ``` senza altro testo -> passa (ORA e' il formato giusto)",
-     "```\n" + BATTITO_OK + "\n```", False, False),
+    # --- il caso pagato in produzione, 2026-09-09 (7º giro: la regola del fence si e' invertita) ---
+    ("10. battito vero come tabella, senza altro testo -> passa (ORA e' il formato giusto)",
+     BATTITO_OK, False, False),
 
     # --- il caso pagato in produzione, 2026-09-09 (5º giro: niente piu' bordo) ---
-    ("11. battito con Forze ad albero (gruppi nominati), dentro ``` -> passa",
-     "```\n" + costruisci(
+    ("11. battito con Forze ad albero (gruppi nominati), tabella, no fence -> passa",
+     costruisci(
          "chiuso il lavoro sui gruppi", "niente altro", "niente in sospeso",
          [("sentinelle", ["controlla budget", "controlla secret"]),
           ("doom bot", ["autoripara i test"])],
          "GOD EMPEROR DOOM", 100, 90,
-     ) + "\n```\n\nFatto.", False, False),
+     ) + "\n\nFatto.", False, False),
 ]
 
 

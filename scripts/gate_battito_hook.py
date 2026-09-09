@@ -29,18 +29,22 @@ TRE PROTEZIONI, tutte necessarie:
 Lo schema NON e' duplicato qui: si importa da `verifica_recap.py`, che resta l'unica fonte
 di verita' della forma (lezione §6.13 -- non esistono due corpi da tenere allineati).
 
-IL BATTITO VERO STA DENTRO UN BLOCCO DI CODICE (2026-09-09, 6º giro — REGOLA INVERTITA
-rispetto ai giri 2-5). Per quattro giri si e' creduto che un blocco ``` facesse sparire il
-battito dal rendering e dal controllo del gate, e la regola era "mai dentro un blocco di
-codice". Max ha chiarito la causa vera: il TESTO SCRITTO DA ME fuori da un blocco di codice
-passa da un motore che collassa gli spazi ripetuti; dentro un blocco di codice lo spazio
-resta esatto. Max vuole gli spazi esatti (il suo stesso esempio, scritto a mano, si legge
-perfetto proprio perche' non passa dallo stesso motore) — quindi ORA il battito vero DEVE
-stare dentro un blocco ``` in cima al messaggio, altrimenti gli spazi di centraggio si
-rompono. Questo hook cerca il battito PRIMA dentro un fence in cima; se lo trova, lo valida;
-se il messaggio porta un tentativo di battito ma NON e' dentro un fence, blocca con quel
-motivo specifico. Un fence che non e' in cima, o che non apre con un titolo di battito come
-prima riga, resta un ESEMPIO di documentazione e non viene toccato.
+IL BATTITO VERO NON STA PIU' DENTRO UN BLOCCO DI CODICE (2026-09-09, 7º giro — REGOLA
+INVERTITA rispetto al 6º). Il 6º giro aveva messo il battito dentro ``` perche' li' lo
+spazio di centraggio non collassa. Funzionava per gli spazi, ma Max ha bocciato l'effetto
+collaterale mai controllato: nel suo renderer (VSCode) un blocco di codice e' un widget a
+se' — sfondo/testo blu, pulsante "copia" — non testo semplice, e resta comunque allineato a
+sinistra dentro quel rettangolo. Ordine di Max, testuale: *"non deve mai essere con quel
+formato da copiare e tutto di colori azzurri... dev'essere tutto centrato"*. Il battito ora
+e' una TABELLA markdown (intestazione vuota `| |`, separatore centrato `|:---:|`, una riga
+`| ... |` per cella) — il centraggio lo fa il renderer via CSS sulla colonna, non un
+conteggio di spazi mio, quindi non serve piu' nessun blocco di codice. Il titolo resta
+testo semplice fuori dalla tabella (e' l'unica riga a sinistra). Questo hook cerca il
+battito PRIMA dentro un fence in cima: se lo trova, e' VIETATO (era la regola del 6º giro,
+ora abrogata) e blocca con quel motivo specifico. Se il messaggio porta un tentativo di
+battito fuori da un fence (il formato giusto ora), lo valida come tabella. Un fence che non
+e' in cima, o che non apre con un titolo di battito come prima riga, o che ha prosa vera
+anche DOPO la sua chiusura, resta un ESEMPIO di documentazione e non viene toccato.
 """
 
 import io
@@ -56,8 +60,8 @@ if QUI not in sys.path:
 # Segnali che il testo CONTIENE un tentativo di battito. Se non ce n'e' nessuno,
 # l'hook non ha niente da dire: non si impone un battito dove non serve.
 SEGNALE_TITOLO = re.compile(r"^\s*\*\*.{0,3}\s*RECAP\s*[—-]", re.IGNORECASE)
-SEGNALE_VOCE = re.compile(r"^[  ·]*🟠 [^:]+:$")  # fallback: un'etichetta di voce, es. `🟠 Fatto:`
-SEGNALE_POTERE = re.compile(r"^[  ·]*🟠 Potere: \d{1,3}%$")  # ultima riga di ogni battito valido
+SEGNALE_VOCE = re.compile(r"^\s*\|?\s*🟠 [^:]+:\s*\|?\s*$")  # fallback: `🟠 Fatto:` nuda o in cella `| 🟠 Fatto: |`
+SEGNALE_POTERE = re.compile(r"^\s*\|?\s*🟠 Potere: \d{1,3}%\s*\|?\s*$")  # ultima riga di ogni battito valido
 TETTO_RIGHE_BLOCCO = 60  # protezione anti-input-rotto: nessun battito reale supera questo
 
 
@@ -93,9 +97,9 @@ def trova_battito(testo):
     Un fence che contiene un titolo ma non e' in cima (c'e' prosa vera prima) e' un esempio
     di documentazione: ignorato anche lui, non e' un tentativo di consegna.
 
-    Se non c'e' nessun fence in cima, cerca comunque un tentativo di battito scritto in
-    chiaro (vecchio formato, o un errore) per poterlo bloccare con il motivo giusto — "manca
-    il blocco di codice" — invece di lasciarlo passare in silenzio.
+    Se non c'e' nessun fence in cima, cerca un tentativo di battito scritto in chiaro — dal
+    7º giro e' il formato GIUSTO (tabella markdown, niente fence): se lo trova lo valida
+    come tabella; se il testo e' comunque malformato, `valida()` dira' dove.
     """
     righe = testo.replace("\r\n", "\n").split("\n")
 
@@ -152,8 +156,8 @@ def trova_battito(testo):
             continue
         i += 1
 
-    # nessun fence, in cima o altrove: si cerca un tentativo scritto in chiaro, da
-    # bloccare col motivo "manca il blocco di codice" invece di ignorarlo in silenzio.
+    # nessun fence, in cima o altrove: si cerca un tentativo scritto in chiaro — il
+    # formato giusto dal 7º giro (tabella markdown, niente fence).
     utili = {i: r for i, r in righe_reali(testo) if r is not None}
     inizio = None
     for i in sorted(utili):
@@ -256,11 +260,13 @@ def main():
             continue  # questo messaggio non porta un tentativo di battito
 
         guai = []
-        if not dentro_fence:
+        if dentro_fence:
             guai.append(
-                "il battito non e' dentro un blocco di codice ``` — ora e' obbligatorio "
-                "(§6.11, 6º giro): fuori da un blocco di codice gli spazi di centraggio "
-                "collassano nel rendering. Avvolgilo in ``` ... ```"
+                "il battito e' dentro un blocco di codice ``` — VIETATO dal 7º giro "
+                "(§6.11): nel renderer di Max un blocco di codice e' un widget blu con "
+                "pulsante copia, non testo semplice, e Max l'ha bocciato. Il battito ora "
+                "e' una TABELLA markdown (intestazione `| |`, separatore `|:---:|`, celle "
+                "`| ... |`) scritta in chiaro, MAI dentro ```. Togli il fence."
             )
         guai.extend(valida(blocco))
 
@@ -285,24 +291,24 @@ def main():
     esempio = ""
     try:
         from verifica_recap import costruisci  # stesso principio: una sola fonte di verita'
-        esempio = "\n\nEsempio di forma (valori segnaposto):\n\n```\n" + costruisci(
+        esempio = "\n\nEsempio di forma (valori segnaposto):\n\n" + costruisci(
             "<riga, max 44 caratteri>", "<riga, max 44 caratteri>", "<riga, max 44 caratteri>",
             ["<GRADO> <nome> <cosa fa>", "oppure: nessuna, sto lavorando da solo"],
             "normale", 100, 0,
-        ) + "\n```"
+        )
     except Exception:
         pass
 
     motivo = (
         "GATE BATTITO — la forma non torna, il messaggio non parte cosi'.\n\n"
         + "\n".join("  - " + p for p in problemi)
-        + "\n\nRiscrivi il battito nella forma fissa (emperator.md 6.11) — DENTRO un blocco "
-        "``` in cima al messaggio (gli spazi di centraggio reggono solo li' dentro), `🟠 "
-        "<Nome>:` + contenuto, tutto centrato sullo stesso asse via rientro a spazi veri, "
-        "freccia `↓` centrata fra una voce e la successiva. Ogni voce porta max 4 righe di "
-        "contenuto, tranne Assetto+Potere che ne porta sempre 2. Non disegnarlo a mano: "
-        "chiama `verifica_recap.costruisci(...)` con i sei valori, che genera gia' rientro "
-        "e centraggio corretti — poi avvolgi il risultato in ``` ... ```." + esempio
+        + "\n\nRiscrivi il battito nella forma fissa (emperator.md 6.11) — una TABELLA "
+        "markdown centrata: titolo in chiaro fuori dalla tabella, riga vuota, poi `| |` / "
+        "`|:---:|` / una riga `| ... |` per etichetta, contenuto e freccia `↓`. MAI dentro "
+        "un blocco di codice ```. Ogni voce porta max 4 righe di contenuto, tranne "
+        "Assetto+Potere che ne porta sempre 2. Non disegnarla a mano: chiama "
+        "`verifica_recap.costruisci(...)` con i sei valori, che genera gia' la tabella "
+        "corretta." + esempio
     )
 
     risposta = {"decision": "block", "reason": motivo}

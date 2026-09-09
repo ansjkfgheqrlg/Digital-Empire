@@ -12,9 +12,10 @@ disciplina del turno in corso, che un contesto lungo o una riga scritta di frett
 Questo script e' il controllo che non dipende dalla memoria del momento: legge un battito
 e dice SI o NO, con la riga esatta che non torna.
 
-FORMA A BLOCCHI CENTRATI, DENTRO UN BLOCCO DI CODICE (2026-09-09, ordine di Max — solo
-estetica, il contenuto delle sei voci non cambia). Storia dei tentativi, in ordine — tenuta
-per intero perche' ogni giro ha smentito un'ipotesi tecnica plausibile che sembrava corretta:
+FORMA A TABELLA MARKDOWN CENTRATA, FUORI DA QUALSIASI BLOCCO DI CODICE (2026-09-09, 7º giro
+— solo estetica, il contenuto delle sei voci non cambia). Storia dei tentativi, in ordine —
+tenuta per intero perche' ogni giro ha smentito un'ipotesi tecnica plausibile che sembrava
+corretta:
 
   1º giro — riquadri con bordo (┌─┐/│/└─┘) aperti a destra. Bocciato: Max li voleva chiusi
      e centrati ("i quadratini devono essere al centro... completamente chiusi").
@@ -34,17 +35,32 @@ per intero perche' ogni giro ha smentito un'ipotesi tecnica plausibile che sembr
      il formato AD ALBERO per la voce Forze quando ci sono più unità nominate (sentinelle,
      doom bot, ecc.) — mostrato da Max con un esempio scritto a mano: `🟠 <NOME>`, poi `│`,
      poi `├─🟠→ <voce>` per ognuna tranne l'ultima che è `└─🟠→ <voce>`. Questo pezzo resta.
-  6º giro — la svolta. Il vero motivo per cui gli spazi ripetuti sparivano non era "dentro
-     o fuori da un blocco di codice" in astratto: era che il TESTO CHE SCRIVO IO passa da
-     un motore che collassa gli spazi ripetuti in prosa normale, mentre un blocco di codice
-     li preserva ESATTI — la stessa ragione per cui l'esempio scritto a mano da MAX (fuori
-     da qualunque controllo mio) si leggeva perfetto: lui non passa dallo stesso motore.
-     Max ha scelto esplicitamente: dentro un blocco di codice, spazi veri. Il divieto dei
-     giri 2-5 ("mai dentro un blocco ```") è ABROGATO: ora e' l'opposto, il battito vero
-     DEVE stare dentro un blocco di codice, altrimenti gli spazi non reggono. Il bordo non
-     torna (il 5º giro l'aveva tolto per altre ragioni, restano valide); il riempimento
-     torna a essere SPAZIO VERO, non piu' `·` (dentro un blocco di codice lo spazio non
-     collassa, il punto non serve più).
+  6º giro — il TESTO CHE SCRIVO IO passa da un motore che collassa gli spazi ripetuti in
+     prosa normale, mentre un blocco di codice li preserva ESATTI. Soluzione di allora:
+     spazio vero, ma dentro un blocco ```. FUNZIONAVA per il centraggio, ma introduceva un
+     difetto nuovo che nessuno aveva ancora visto — vedi 7º giro.
+  7º giro — Max ha mandato lo screenshot del battito dentro ```: nel suo renderer (VSCode)
+     un blocco di codice non è testo semplice, è un WIDGET — sfondo/testo colorati diversi
+     dal resto della chat (blu/ciano), pulsante "copia" in alto a destra, e il contenuto
+     resta comunque allineato a SINISTRA dentro quel widget (il centraggio a spazi funziona
+     sull'ASSE ma il widget stesso non è "la pagina", è un rettangolo a sé). Max l'ha
+     bocciato in una riga: *"non deve mai essere con quel formato da copiare e tutto di
+     colori azzurri... dev'essere tutto centrato"*. Il blocco di codice risolveva il
+     problema degli spazi che si mangiava il rendering, ma ne creava uno peggiore (l'aspetto
+     del messaggio) — un'AGGIUNTA che sembrava solo tecnica aveva in realtà un costo
+     estetico che nessuno aveva verificato guardando lo schermo vero. **Soluzione nuova, non
+     un'altra variante della stessa idea**: una TABELLA markdown (GFM) a una colonna, con
+     l'allineamento dichiarato nel separatore (`|:---:|` = centrato). Il centraggio lo fa il
+     RENDERER via CSS `text-align:center`, non più un conteggio di spazi mio — quindi è
+     immune al difetto dei giri 2-6 (il motore che collassa gli spazi ripetuti non tocca
+     l'allineamento delle celle, che è una proprietà della tabella, non dello spazio bianco)
+     — e una tabella non è un blocco di codice: nessun widget blu, nessun pulsante copia.
+     Il titolo (`**⏱️ RECAP — <n>%**`) resta FUORI dalla tabella, testo semplice: è l'unica
+     riga che deve restare a sinistra (regola 1 sotto), e fuori dalla tabella lo è
+     naturalmente, senza bisogno di alcun trucco. **Lezione:** una tecnica che risolve il
+     sintomo che sto guardando (gli spazi) può introdurre un difetto in una dimensione che
+     non stavo controllando (l'aspetto del contenitore) — verificare vuol dire guardare TUTTO
+     lo schermo, non solo la riga che stavo correggendo.
 
 **RIGHE CORTE, SEMPRE.** Una riga di contenuto troppo lunga puo' comunque risultare scomoda
 da leggere o forzare uno scroll orizzontale. `LARGHEZZA_MASSIMA_RIGA` (44 caratteri) resta il
@@ -80,11 +96,6 @@ VOCI = [
 
 LARGHEZZA_MASSIMA_RIGA = 44  # caratteri per riga di contenuto — vedi nota "RIGHE CORTE"
 
-# Riempimento strutturale: spazio vero (6º giro, dentro un blocco di codice non collassa).
-# Restano tollerati in lettura NBSP e punto medio: un battito scritto a mano prima di
-# questa regola (o da un’altra sessione non ancora sincronizzata) puo’ ancora averli.
-_RIENTRO_CHARS = "  ·"
-
 TITOLO_RE = re.compile(r"^\*\*⏱️ RECAP — (\d{1,3})%\*\*$")
 FRECCIA = "↓"
 ASSETTO_RE = re.compile(r"^(\*\*GOD EMPEROR DOOM\*\*|normale)$")
@@ -92,18 +103,15 @@ POTERE_RE = re.compile(r"^🟠 Potere: (\d{1,3})%$")
 RAMO_RE = re.compile(r"^(├─🟠→|└─🟠→) (.+)$")
 GRUPPO_RE = re.compile(r"^🟠 (.+)$")
 
+# La tabella: intestazione vuota, separatore centrato, poi una riga `| ... |` per cella
+# (7º giro — vedi il docstring sopra per il perché).
+RIGA_TABELLA_RE = re.compile(r"^\|(.*)\|$")
+SEPARATORE_RE = re.compile(r"^\|\s*:?-{2,}:?\s*\|$")
+
 
 def _leggi_stdin():
     grezzo = sys.stdin.buffer.read()
     return grezzo.decode("utf-8", "replace")
-
-
-def _rientro(riga):
-    return len(riga) - len(riga.lstrip(_RIENTRO_CHARS))
-
-
-def _spoglia(riga):
-    return riga.lstrip(_RIENTRO_CHARS)
 
 
 def _e_gruppi_forze(v):
@@ -117,9 +125,9 @@ def _e_gruppi_forze(v):
 
 def _albero_forze(gruppi):
     """Genera le righe (piatte, senza rientro) dell'albero Forze da una lista di gruppi
-    [(nome, [voce, ...]), ...]. `None` = riga vuota VERA fra un gruppo e l'altro (mai
-    rientrata a punti: una riga vuota vera non collassa, non e' un tratto di spaziatura
-    dentro una riga)."""
+    [(nome, [voce, ...]), ...]. `None` = separatore fra un gruppo e l'altro — diventa una
+    cella vuota `| |` nella tabella (`costruisci()`), letta come cella vuota vera da
+    `_leggi_albero_forze()`."""
     righe = []
     for i, (nome, voci) in enumerate(gruppi):
         if not voci:
@@ -134,44 +142,39 @@ def _albero_forze(gruppi):
     return righe
 
 
-def _leggi_albero_forze(righe, idx, problemi):
-    """Legge un albero Forze a partire da `idx` (che deve puntare alla prima etichetta di
-    gruppo `🟠 <NOME>`). Ritorna l'indice subito dopo l'ultimo ramo `└─...` (o dopo l'ultima
-    riga vuota fra gruppi, se il testo continua con un altro gruppo).
+def _leggi_albero_forze(celle, idx, problemi):
+    """Legge un albero Forze a partire da `idx` (indice dentro `celle`, la lista di celle
+    `(numero_riga, testo)` della tabella) — deve puntare alla prima etichetta di gruppo
+    `🟠 <NOME>`. Ritorna l'indice subito dopo l'ultimo ramo `└─...` (o dopo l'ultima cella
+    vuota fra gruppi, se la tabella continua con un altro gruppo).
 
     Non prova a indovinare quanti gruppi ci sono: continua finche' vede altre etichette di
-    gruppo dopo una riga vuota, si ferma alla prima riga che non e' ne' vuota ne' un'altra
-    etichetta di gruppo (tipicamente la freccia verso la voce successiva).
+    gruppo dopo una cella vuota, si ferma alla prima cella che non e' ne' vuota ne' un'altra
+    etichetta di gruppo (tipicamente la freccia verso la voce successiva). Niente controllo
+    di rientro: la tabella allinea da sola, non c'e' piu' niente da confrontare riga per riga
+    (7º giro — l'intera classe di errori "rientro diverso" sparisce con lo spazio a mano).
     """
-    rientro_atteso = None
-    while idx < len(righe):
-        spoglia = _spoglia(righe[idx])
-        if not GRUPPO_RE.match(spoglia) or spoglia == FRECCIA:
+    while idx < len(celle):
+        testo = celle[idx][1]
+        if not GRUPPO_RE.match(testo) or testo == FRECCIA:
             break
-        if rientro_atteso is None:
-            rientro_atteso = _rientro(righe[idx])
-        elif _rientro(righe[idx]) != rientro_atteso:
-            problemi.append(
-                "riga %d: rientro diverso dal resto dell'albero Forze — dev'essere lo "
-                "stesso su ogni riga del blocco" % (idx + 1)
-            )
         idx += 1  # etichetta di gruppo
 
-        if idx >= len(righe) or _spoglia(righe[idx]) != "│":
+        if idx >= len(celle) or celle[idx][1] != "│":
             problemi.append(
-                "riga %d: dopo l'etichetta di un gruppo Forze serve la riga `│` da sola"
-                % (idx + 1)
+                "riga %d: dopo l'etichetta di un gruppo Forze serve una cella `| │ |` da sola"
+                % ((celle[idx][0] + 1) if idx < len(celle) else (celle[-1][0] + 2))
             )
         else:
             idx += 1
 
         rami = []
-        while idx < len(righe):
-            spoglia = _spoglia(righe[idx])
-            m = RAMO_RE.match(spoglia)
+        while idx < len(celle):
+            testo2 = celle[idx][1]
+            m = RAMO_RE.match(testo2)
             if not m:
                 break
-            rami.append((idx, m.group(1), m.group(2)))
+            rami.append((celle[idx][0], m.group(1), m.group(2)))
             idx += 1
 
         if not rami:
@@ -196,8 +199,8 @@ def _leggi_albero_forze(righe, idx, problemi):
                         % (riga_num + 1, len(voce), LARGHEZZA_MASSIMA_RIGA)
                     )
 
-        # riga vuota VERA fra un gruppo e il successivo (mai rientrata)
-        if idx < len(righe) and righe[idx] == "":
+        # cella vuota VERA fra un gruppo e il successivo (riga `| |`, contenuto "")
+        if idx < len(celle) and celle[idx][1] == "":
             idx += 1
             continue
         break
@@ -205,25 +208,25 @@ def _leggi_albero_forze(righe, idx, problemi):
     return idx
 
 
-def _leggi_voce_piatta(righe, idx, etichetta, min_righe, max_righe, problemi):
-    """Legge una voce in forma piatta: etichetta + 1..N righe di contenuto, tutte con lo
-    stesso rientro. Ritorna l'indice subito dopo l'ultima riga di contenuto."""
+def _leggi_voce_piatta(celle, idx, etichetta, min_righe, max_righe, problemi):
+    """Legge una voce in forma piatta: cella-etichetta + 1..N celle di contenuto. Ritorna
+    l'indice subito dopo l'ultima cella di contenuto."""
     attesa = "🟠 %s:" % etichetta
-    if idx >= len(righe) or _spoglia(righe[idx]) != attesa:
+    if idx >= len(celle) or celle[idx][1] != attesa:
         problemi.append(
-            "riga %d: attesa l'etichetta `%s`, trovato: %r"
-            % (idx + 1, attesa, righe[idx] if idx < len(righe) else "<fine testo>")
+            "riga %s: attesa la cella `%s`, trovato: %r"
+            % ((celle[idx][0] + 1) if idx < len(celle) else "<fine tabella>", attesa,
+               celle[idx][1] if idx < len(celle) else "<fine tabella>")
         )
         return idx + 1
-    rientro_voce = _rientro(righe[idx])
     idx += 1
 
     contenuto = []
-    while idx < len(righe):
-        spoglia = _spoglia(righe[idx])
-        if spoglia == FRECCIA or spoglia == "":
+    while idx < len(celle):
+        testo = celle[idx][1]
+        if testo == FRECCIA or testo == "":
             break
-        contenuto.append((idx, spoglia))
+        contenuto.append(celle[idx])
         idx += 1
 
     if len(contenuto) < min_righe:
@@ -237,13 +240,8 @@ def _leggi_voce_piatta(righe, idx, etichetta, min_righe, max_righe, problemi):
             % (etichetta, max_righe, len(contenuto))
         )
     for riga_num, valore in contenuto:
-        if _rientro(righe[riga_num]) != rientro_voce:
-            problemi.append(
-                "riga %d: rientro diverso dall'etichetta della voce '%s' — dev'essere lo "
-                "stesso rientro su ogni riga della voce" % (riga_num + 1, etichetta)
-            )
         if not valore.strip():
-            problemi.append("riga %d: riga della voce '%s' vuota" % (riga_num + 1, etichetta))
+            problemi.append("riga %d: cella della voce '%s' vuota" % (riga_num + 1, etichetta))
         elif "**" in valore and valore.strip() != "**GOD EMPEROR DOOM**":
             problemi.append(
                 "riga %d: il contenuto della voce '%s' non va in grassetto (eccezione unica: "
@@ -296,7 +294,8 @@ def valida(testo):
     if not m:
         problemi.append(
             "riga %d: titolo non conforme — atteso `**⏱️ RECAP — <n>%%**` "
-            "in grassetto da solo, allineato a sinistra, trovato: %r" % (riga_num, righe[idx])
+            "in grassetto da solo, allineato a sinistra, FUORI da qualunque tabella o "
+            "blocco di codice, trovato: %r" % (riga_num, righe[idx])
         )
     else:
         n = int(m.group(1))
@@ -305,39 +304,67 @@ def valida(testo):
     idx += 1
 
     if idx >= len(righe) or righe[idx].strip() != "":
-        problemi.append("riga %d: manca la riga vuota fra il titolo e la prima voce" % (idx + 1))
+        problemi.append("riga %d: manca la riga vuota fra il titolo e la tabella" % (idx + 1))
     else:
         idx += 1
 
+    # Intestazione della tabella (vuota) e separatore centrato — 7º giro: il battito e'
+    # una tabella markdown, non piu' testo rientrato a mano.
+    if idx >= len(righe) or not RIGA_TABELLA_RE.match(righe[idx].strip()):
+        problemi.append(
+            "riga %d: manca l'intestazione della tabella `| |` — il battito ora e' una "
+            "TABELLA markdown centrata (7º giro), non piu' testo rientrato a spazi"
+            % (idx + 1)
+        )
+        return problemi
+    idx += 1
+    if idx >= len(righe) or not SEPARATORE_RE.match(righe[idx].strip()):
+        problemi.append(
+            "riga %d: manca il separatore centrato `|:---:|` sotto l'intestazione della "
+            "tabella" % (idx + 1)
+        )
+        return problemi
+    idx += 1
+
+    celle = []
+    while idx < len(righe):
+        r = righe[idx].strip()
+        mm = RIGA_TABELLA_RE.match(r)
+        if not mm:
+            break
+        celle.append((idx, mm.group(1).strip()))
+        idx += 1
+
+    if not celle:
+        problemi.append("la tabella non ha righe di contenuto dopo il separatore")
+        return problemi
+
+    j = 0
     for i, (etichetta, mn, mx) in enumerate(VOCI):
         if etichetta == "Forze":
             attesa = "🟠 Forze:"
-            if idx >= len(righe) or _spoglia(righe[idx]) != attesa:
+            if j >= len(celle) or celle[j][1] != attesa:
                 problemi.append(
-                    "riga %d: attesa l'etichetta `%s`, trovato: %r"
-                    % (idx + 1, attesa, righe[idx] if idx < len(righe) else "<fine testo>")
+                    "riga %s: attesa la cella `%s`, trovato: %r"
+                    % ((celle[j][0] + 1) if j < len(celle) else "<fine tabella>", attesa,
+                       celle[j][1] if j < len(celle) else "<fine tabella>")
                 )
-                idx += 1
+                j += 1
             else:
-                idx += 1
-                # dopo l'etichetta: o e' un albero (la riga dopo e' un'altra etichetta
+                j += 1
+                # dopo l'etichetta: o e' un albero (la cella dopo e' un'altra etichetta
                 # `🟠 <NOME>`, non la freccia) o e' testo piatto — si decide guardando la
-                # riga successiva, senza consumarla.
-                if idx < len(righe) and GRUPPO_RE.match(_spoglia(righe[idx])) and _spoglia(righe[idx]) != FRECCIA:
-                    idx = _leggi_albero_forze(righe, idx, problemi)
+                # cella successiva, senza consumarla.
+                if j < len(celle) and GRUPPO_RE.match(celle[j][1]) and celle[j][1] != FRECCIA:
+                    j = _leggi_albero_forze(celle, j, problemi)
                 else:
-                    # forma piatta: stesso schema delle altre voci, ma l'etichetta e'
-                    # gia' stata consumata sopra — si legge solo il contenuto qui.
-                    rientro_voce = None
                     contenuto = []
-                    while idx < len(righe):
-                        spoglia = _spoglia(righe[idx])
-                        if spoglia == FRECCIA or spoglia == "":
+                    while j < len(celle):
+                        testo = celle[j][1]
+                        if testo == FRECCIA or testo == "":
                             break
-                        if rientro_voce is None:
-                            rientro_voce = _rientro(righe[idx])
-                        contenuto.append((idx, spoglia))
-                        idx += 1
+                        contenuto.append(celle[j])
+                        j += 1
                     if len(contenuto) < mn:
                         problemi.append(
                             "voce 'Forze': servono almeno %d riga/e di contenuto, trovate %d"
@@ -355,22 +382,23 @@ def valida(testo):
                                 "tetto e' %d — accorciala" % (riga_num + 1, len(valore), LARGHEZZA_MASSIMA_RIGA)
                             )
         else:
-            idx = _leggi_voce_piatta(righe, idx, etichetta, mn, mx, problemi)
+            j = _leggi_voce_piatta(celle, j, etichetta, mn, mx, problemi)
 
         e_ultima = i == len(VOCI) - 1
         if not e_ultima:
-            if idx >= len(righe) or righe[idx].strip(_RIENTRO_CHARS) != FRECCIA:
+            if j >= len(celle) or celle[j][1] != FRECCIA:
                 problemi.append(
-                    "riga %d: manca la freccia `%s` su riga propria fra le voci '%s' e '%s'"
-                    % (idx + 1, FRECCIA, etichetta, VOCI[i + 1][0])
+                    "riga %s: manca la cella freccia `| %s |` fra le voci '%s' e '%s'"
+                    % ((celle[j][0] + 1) if j < len(celle) else "<fine tabella>", FRECCIA,
+                       etichetta, VOCI[i + 1][0])
                 )
             else:
-                idx += 1
+                j += 1
 
-    if idx < len(righe) and righe[idx].strip() != "":
+    if j < len(celle):
         problemi.append(
-            "riga %d: contenuto extra dopo l'ultima voce (%r) — il battito finisce con "
-            "la riga del Potere" % (idx + 1, righe[idx])
+            "riga %d: contenuto extra nella tabella dopo l'ultima voce (%r) — il battito "
+            "finisce con la cella del Potere" % (celle[j][0] + 1, celle[j][1])
         )
 
     return problemi
@@ -386,12 +414,11 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
     per il formato ad albero quando Forze ha più unità nominate (5º giro, esempio di Max:
     sentinelle/doom bot). Con una lista di stringhe semplici resta la forma piatta.
 
-    Ogni voce e' un blocco: etichetta `🟠 <Nome>:` + le sue righe, tutte con LO STESSO
-    rientro — calcolato dalla larghezza del blocco stesso, centrato su un "canvas" comune
-    (largo quanto il blocco piu' largo di tutto il battito), cosi' i blocchi piu' stretti
-    appaiono centrati invece che accostati a sinistra. Frecce `↓` fra un blocco e il
-    successivo, centrate sullo stesso asse. NESSUN bordo (niente `┌│└─┐┘`): non serve e non
-    regge nel rendering di Max (5º giro) — il rientro a `·` da solo centra tutto."""
+    Il titolo resta testo semplice, fuori dalla tabella (allineato a sinistra di suo). Ogni
+    voce e le frecce `↓` fra un blocco e il successivo diventano righe `| ... |` di una
+    TABELLA markdown a una colonna, con separatore `|:---:|` (centrato) — il renderer
+    centra da solo via CSS, non serve più calcolare rientri a mano (7º giro, vedi il
+    docstring del modulo per il perché)."""
     def _righe(v):
         return v if isinstance(v, list) else [v]
 
@@ -419,21 +446,18 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
                     % (etichetta, len(r), LARGHEZZA_MASSIMA_RIGA, r)
                 )
 
-    render = []
-    for etichetta, righe in blocchi:
-        linee = ["🟠 %s:" % etichetta] + righe
-        larghezza = max(len(l) for l in linee if l is not None)
-        render.append((linee, larghezza))
+    corpo = []
+    for i, (etichetta, righe) in enumerate(blocchi):
+        corpo.append("🟠 %s:" % etichetta)
+        corpo.extend(righe)
+        if i < len(blocchi) - 1:
+            corpo.append(FRECCIA)
 
-    canvas = max(larghezza for _, larghezza in render)
+    righe_tabella = ["| |", "|:---:|"]
+    for cella in corpo:
+        righe_tabella.append("| |" if cella is None else "| %s |" % cella)
 
-    out = ["**⏱️ RECAP — %d%%**" % percentuale, ""]
-    for i, (linee, larghezza) in enumerate(render):
-        rientro = (canvas - larghezza) // 2
-        for l in linee:
-            out.append("" if l is None else " " * rientro + l)
-        if i < len(render) - 1:
-            out.append(" " * (canvas // 2) + FRECCIA)
+    out = ["**⏱️ RECAP — %d%%**" % percentuale, ""] + righe_tabella
     return "\n".join(out)
 
 

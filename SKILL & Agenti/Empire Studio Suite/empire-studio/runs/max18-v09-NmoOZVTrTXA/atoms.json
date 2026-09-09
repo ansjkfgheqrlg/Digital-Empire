@@ -70,6 +70,11 @@
     "verso": "KA-007",
     "tipo": "alternativa-a",
     "perche": "le due piattaforme incarnano due filosofie di prodotto contrapposte"
+   },
+   {
+    "verso": "KA-004",
+    "tipo": "parte-di",
+    "perche": "elabora il confronto Retell/Vapi appena introdotto come le due go-to platform"
    }
   ]
  },
@@ -112,6 +117,11 @@
     "verso": "KA-010",
     "tipo": "alternativa-a",
     "perche": "organizzazione dell'interfaccia a confronto con quella di Vapi"
+   },
+   {
+    "verso": "KA-004",
+    "tipo": "esempio-di",
+    "perche": "la sidebar di Retell e' la vista concreta di una delle due go-to platform appena nominate"
    }
   ]
  },
@@ -123,7 +133,13 @@
   "frame": "frame-0025.png",
   "ancora": "tipo \"Single Prompt\" ... tipo \"Conversation Flow\"",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-008",
+    "tipo": "parte-di",
+    "perche": "stessa schermata (2:24): la colonna Agent Type della tabella agenti Retell fa parte della stessa vista che la sidebar organizza"
+   }
+  ]
  },
  {
   "id": "KA-010",
@@ -211,7 +227,13 @@
   "frame": "frame-0075.png",
   "ancora": "Cost = ~$ 0.09 /min ... Latency = ~ 840 ms",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-006",
+    "tipo": "alternativa-a",
+    "perche": "stessa metrica cost/latency mostrata su un assistente demo, qui su Vapi invece che su Retell"
+   }
+  ]
  },
  {
   "id": "KA-017",
@@ -221,7 +243,23 @@
   "frame": "frame-0079.png",
   "ancora": "avete openai, azier, entropic, bedrock",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-018",
+    "tipo": "precede",
+    "perche": "scelto il provider OpenAI nel campo Model, il menu si apre sulla fascia di modelli standard"
+   },
+   {
+    "verso": "KA-007",
+    "tipo": "esempio-di",
+    "perche": "il campo Provider e' la configurazione concreta dietro alla maggiore sofisticazione di Vapi appena descritta"
+   },
+   {
+    "verso": "KA-025",
+    "tipo": "parte-di",
+    "perche": "il campo Provider fa parte della sezione Model, una delle tre sezioni Model/Voice/Transcriber qui descritte"
+   }
+  ]
  },
  {
   "id": "KA-018",
@@ -231,7 +269,13 @@
   "frame": "frame-0084.png",
   "ancora": "GPT 4.1 Mini — 770 ms · $ 0.01",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-019",
+    "tipo": "precede",
+    "perche": "stesso menu modelli Vapi: dopo la fascia standard, il presentatore scorre alla fascia reasoning"
+   }
+  ]
  },
  {
   "id": "KA-019",
@@ -246,6 +290,11 @@
     "verso": "KA-024",
     "tipo": "quantifica",
     "perche": "i valori del tier reasoning spiegano numericamente il salto di latenza osservato dopo il cambio modello"
+   },
+   {
+    "verso": "KA-020",
+    "tipo": "precede",
+    "perche": "stesso menu modelli Vapi: dopo la fascia reasoning, il presentatore scorre alla fascia piu' veloce"
    }
   ]
  },
@@ -309,7 +358,13 @@
   "frame": "frame-0113.png",
   "ancora": "vedete che la latenza è 1.670",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-022",
+    "tipo": "applica",
+    "perche": "il salto di latenza osservato e' l'effetto di una ripubblicazione, il flusso Publish Assistant appena descritto"
+   }
+  ]
  },
  {
   "id": "KA-025",
@@ -351,7 +406,13 @@
   "frame": "frame-0020.png",
   "ancora": "deepgram · openai · vapi",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-010",
+    "tipo": "parte-di",
+    "perche": "l'etichetta transcriber-llm-voice e' visibile nella stessa lista assistenti organizzata dalla sidebar Vapi"
+   }
+  ]
  },
  {
   "id": "KA-028",
@@ -392,6 +453,11 @@
     "verso": "KA-043",
     "tipo": "alternativa-a",
     "perche": "secondo esempio reale di prompt aziendale in verticale diversa (e-commerce) con lo stesso schema a sezioni"
+   },
+   {
+    "verso": "KA-014",
+    "tipo": "esempio-di",
+    "perche": "il prompt Riley/ShopEase e' un esempio concreto di testo Markdown strutturato con ## e **...**"
    }
   ]
  },
@@ -584,6 +650,11 @@
     "verso": "KA-031",
     "tipo": "alternativa-a",
     "perche": "versione condensata in 5 macro-sezioni degli stessi 9 componenti spiegati sulla lavagna"
+   },
+   {
+    "verso": "KA-042",
+    "tipo": "parte-di",
+    "perche": "le 5 sezioni Markdown sono il dettaglio concreto dello stesso documento Notion appena introdotto"
    }
   ]
  },
@@ -614,6 +685,11 @@
    {
     "verso": "KA-044",
     "tipo": "applica"
+   },
+   {
+    "verso": "KA-046",
+    "tipo": "precede",
+    "perche": "subito dopo aver incollato il prompt italiano, il primo test rivela che l'assistente risponde ancora in inglese"
    }
   ]
  },
@@ -640,7 +716,13 @@
   "frame": "frame-0212.png",
   "ancora": "la nostra voce, metteremo 11 labs",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-028",
+    "tipo": "applica",
+    "perche": "la scelta di 11labs per risolvere il problema di lingua applica una delle voci dell'elenco provider vocali appena mostrato"
+   }
+  ]
  },
  {
   "id": "KA-048",
@@ -650,7 +732,13 @@
   "frame": "frame-0242.png",
   "ancora": "voglio andare in una chat",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-049",
+    "tipo": "precede",
+    "perche": "introdotta la chat testuale come alternativa alla chiamata vocale, il test mostrato subito dopo la usa"
+   }
+  ]
  },
  {
   "id": "KA-049",
@@ -796,6 +884,11 @@
    {
     "verso": "KA-057",
     "tipo": "applica"
+   },
+   {
+    "verso": "KA-068",
+    "tipo": "precede",
+    "perche": "si crea prima il tool con un nome esatto, poi quello stesso nome va richiamato identico nella sezione TOOL del prompt"
    }
   ]
  },
@@ -1152,6 +1245,11 @@
    {
     "verso": "KA-074",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-062",
+    "tipo": "applica",
+    "perche": "il Metodo 3 riusa esplicitamente il tool knowledge_base_clinica costruito in precedenza"
    }
   ]
  },
@@ -1230,6 +1328,11 @@
    {
     "verso": "KA-074",
     "tipo": "quantifica"
+   },
+   {
+    "verso": "KA-089",
+    "tipo": "precede",
+    "perche": "l'ultimo fotogramma del grafico P/T coi tre metodi colorati precede immediatamente la slide di riepilogo delle 3 metodologie"
    }
   ]
  },
@@ -1271,6 +1374,11 @@
     "verso": "KA-089",
     "tipo": "applica",
     "perche": "sceglie una delle tre opzioni definite come raccomandazione operativa"
+   },
+   {
+    "verso": "KA-084",
+    "tipo": "applica",
+    "perche": "la raccomandazione 'tramite tool e' la nostra soluzione' applica la stessa conclusione gia' data poco prima"
    }
   ]
  },
@@ -1324,7 +1432,13 @@
   "frame": "frame-0448.png",
   "ancora": "l'assistente in lista si chiama \"Riley\", ma il prompt lo identifica come \"Marco, il receptionist\"",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-091",
+    "tipo": "parte-di",
+    "perche": "stessa schermata (44:42): il disallineamento tra nome assistente e nome nel prompt si osserva sullo stesso system prompt appena descritto"
+   }
+  ]
  },
  {
   "id": "KA-095",
@@ -1334,7 +1448,13 @@
   "frame": "frame-0453.png",
   "ancora": "È l'intervallo di silenzio, chiamiamolo così, ok, per capirci",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-096",
+    "tipo": "precede",
+    "perche": "definita la latenza, il capitolo prosegue mostrando come il modello scelto la influenza"
+   }
+  ]
  },
  {
   "id": "KA-096",
@@ -1344,7 +1464,13 @@
   "frame": "frame-0457.png",
   "ancora": "ora si è allineata la latenza e capite perché era così lento, per il modello che abbiamo scelto",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-099",
+    "tipo": "esempio-di",
+    "perche": "il modello LLM che rallenta la latenza e' uno dei tre punti di controllo (ASR/LLM/TTS) appena enunciati"
+   }
+  ]
  },
  {
   "id": "KA-097",
@@ -1354,7 +1480,13 @@
   "frame": "frame-0461.png",
   "ancora": "1. Riconoscimento Vocale (ASR) ... 2. Modello Linguistico di Grandi Dimensioni (LLM) ... 3. Sintesi Vocale (TTS) ... Output Utente: Ascolta la Risposta",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-011",
+    "tipo": "applica",
+    "perche": "la pipeline ASR/LLM/TTS richiamata per il latency tuning e' la stessa anatomia definita all'inizio, qui riapplicata"
+   }
+  ]
  },
  {
   "id": "KA-098",
@@ -1433,7 +1565,13 @@
   "frame": "frame-0473.png",
   "ancora": "se noi riusciamo ad avere un buon prompt iniziale, dove se il prompt è buono il modello può essere un po' più scarso",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-101",
+    "tipo": "motiva",
+    "perche": "il principio 'con un prompt solido il modello puo' essere piu' scarso' spiega perche' il downgrade di modello non ha peggiorato la qualita'"
+   }
+  ]
  },
  {
   "id": "KA-103",
@@ -1475,7 +1613,13 @@
   "frame": "frame-0488.png",
   "ancora": "Smart Endpointing — Enable for more accurate speech endpoint detection. LiveKit is only available in English",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-104",
+    "tipo": "parte-di",
+    "perche": "Smart Endpointing e' una delle opzioni dello stesso pannello Start Speaking Plan"
+   }
+  ]
  },
  {
   "id": "KA-106",
@@ -1506,6 +1650,16 @@
     "verso": "KA-099",
     "tipo": "parte-di",
     "perche": "è il meccanismo sotteso al controllo della latenza lato ASR"
+   },
+   {
+    "verso": "KA-108",
+    "tipo": "precede",
+    "perche": "dopo la nota sull'endpointing, il tour del pannello Advanced continua con altre impostazioni"
+   },
+   {
+    "verso": "KA-012",
+    "tipo": "applica",
+    "perche": "la stessa nota manoscritta sull'endpointing, identica citazione, viene ripresa piu' avanti nel capitolo latenza"
    }
   ]
  },
@@ -1527,7 +1681,13 @@
   "frame": "frame-0503.png",
   "ancora": "1. Cos'è un agente vocale ... 7. Costruiremo un Agente e2e su Claude Code (3/4 integrazioni e workflows) ... 8. ROI per aziende, e tipologie di soluzioni che esistono",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-002",
+    "tipo": "applica",
+    "perche": "il riepilogo a 8 blocchi ripropone la stessa agenda promessa in apertura del corso"
+   }
+  ]
  },
  {
   "id": "KA-110",
@@ -1542,6 +1702,11 @@
     "verso": "KA-109",
     "tipo": "applica",
     "perche": "motiva il passaggio al punto 7 della roadmap del corso"
+   },
+   {
+    "verso": "KA-115",
+    "tipo": "precede",
+    "perche": "il limite del processo manuale appena dichiarato e' il motivo per cui si passa subito a Claude Code"
    }
   ]
  },
@@ -1553,7 +1718,13 @@
   "frame": "frame-0509.png",
   "ancora": "questa cosa qui per ora vive nel nostro computer, cioè vive letteralmente dentro VAPI, non l'abbiamo ancora pubblicata, non la possiamo dare a nessuno",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-113",
+    "tipo": "motiva",
+    "perche": "il principio che un assistente non pubblicato non e' condivisibile spiega perche' Fast Receptionist non e' pronto per un cliente"
+   }
+  ]
  },
  {
   "id": "KA-112",
@@ -1605,7 +1776,13 @@
   "frame": "frame-0519.png",
   "ancora": "tutto può essere fatto con Cloud Code senza andare ad utilizzare Na10, che io invece ora utilizzerò come sponda perché... vi permette di controllare i system prompt",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-139",
+    "tipo": "precede",
+    "perche": "deciso di usare n8n come sponda, il primo passo concreto e' creare il file n8n.md che lo documenta a Claude"
+   }
+  ]
  },
  {
   "id": "KA-116",
@@ -1710,6 +1887,11 @@
     "verso": "KA-121",
     "tipo": "parte-di",
     "perche": "descrive dove e come scaricare il prodotto appena definito"
+   },
+   {
+    "verso": "KA-123",
+    "tipo": "precede",
+    "perche": "dopo la pagina di download di Antigravity, il confronto si sposta sul costo di Claude Code"
    }
   ]
  },
@@ -1721,7 +1903,13 @@
   "frame": "frame-0537.png",
   "ancora": "per quanto riguarda invece Cloud una sola cosa avete da considerare... mentre anti-gravity avrete diciamo un intervallo per giocare con il modello gratuitamente",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-124",
+    "tipo": "precede",
+    "perche": "subito dopo aver detto che Claude richiede un abbonamento, si apre la pagina prezzi ufficiale"
+   }
+  ]
  },
  {
   "id": "KA-124",
@@ -1762,6 +1950,11 @@
     "verso": "KA-124",
     "tipo": "parte-di",
     "perche": "dettaglia i vantaggi aggiuntivi del piano Max rispetto ai prezzi già indicati"
+   },
+   {
+    "verso": "KA-127",
+    "tipo": "precede",
+    "perche": "conclusa la pagina prezzi Claude, si torna su Antigravity con la sua schermata di benvenuto"
    }
   ]
  },
@@ -1788,6 +1981,11 @@
     "verso": "KA-127",
     "tipo": "parte-di",
     "perche": "è un dettaglio del pannello Agent nella stessa schermata di benvenuto"
+   },
+   {
+    "verso": "KA-129",
+    "tipo": "precede",
+    "perche": "dal pannello Agent della schermata di benvenuto si passa al marketplace delle estensioni"
    }
   ]
  },
@@ -1814,6 +2012,11 @@
     "verso": "KA-129",
     "tipo": "applica",
     "perche": "descrive l'azione pratica di installazione dell'estensione appena definita"
+   },
+   {
+    "verso": "KA-133",
+    "tipo": "precede",
+    "perche": "installata l'estensione Claude Code, il primo passo pratico e' aprire un progetto e il suo pannello"
    }
   ]
  },
@@ -1857,7 +2060,13 @@
   "frame": "frame-0558.png",
   "ancora": "ora sostanzialmente cominciamo con l'impostare il progetto ... prima cosa è la piattaforma che noi andiamo ad utilizzare",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-135",
+    "tipo": "precede",
+    "perche": "aperto il pannello di Claude Code, si passa subito al login sulla piattaforma scelta come sponda, n8n"
+   }
+  ]
  },
  {
   "id": "KA-134",
@@ -1877,7 +2086,13 @@
   "frame": "frame-0562.png",
   "ancora": "n8n account name precompilato con \"giovanniyoutube\" seguito dal suffisso fisso \".app.n8n.cloud\"",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-136",
+    "tipo": "precede",
+    "perche": "effettuato il login, si apre la dashboard Overview di n8n cloud"
+   }
+  ]
  },
  {
   "id": "KA-136",
@@ -1887,7 +2102,13 @@
   "frame": "frame-0563.png",
   "ancora": "Workflows (attiva), Credentials, Executions, Variables, Data tables / Prod. executions 13 ... Failure rate 46.2% ... Run time (avg.) 4.5s",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-137",
+    "tipo": "precede",
+    "perche": "dalla dashboard si apre un nuovo workflow vuoto"
+   }
+  ]
  },
  {
   "id": "KA-137",
@@ -1897,7 +2118,13 @@
   "frame": "frame-0568.png",
   "ancora": "+ Add first step... e ✨ Build with AI",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-139",
+    "tipo": "precede",
+    "perche": "davanti al canvas vuoto di n8n nasce l'esigenza di documentare la piattaforma a Claude Code nel file n8n.md"
+   }
+  ]
  },
  {
   "id": "KA-138",
@@ -2294,7 +2521,13 @@
   "frame": "frame-0665.png",
   "ancora": "NON usare espressioni {{ }} dentro Code node — sono due sistemi separati",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-164",
+    "tipo": "parte-di",
+    "perche": "la regola sulle doppie graffe nel Code node fa parte dello stesso Step 4 Build, stessa fonte 66:24"
+   }
+  ]
  },
  {
   "id": "KA-163",
@@ -2357,7 +2590,13 @@
   "frame": "frame-0665.png",
   "ancora": "Questo prompt, gratuito sotto, prendetelo e è il definitivo, cioè non è che c'è di più",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-155",
+    "tipo": "parte-di",
+    "perche": "il prompt n8n.md reso gratuito e' lo stesso Processo a 6 Step appena riscritto"
+   }
+  ]
  },
  {
   "id": "KA-167",
@@ -2430,6 +2669,11 @@
     "verso": "KA-170",
     "tipo": "parte-di",
     "perche": "descrive i campi del modale di creazione già richiamato"
+   },
+   {
+    "verso": "KA-172",
+    "tipo": "precede",
+    "perche": "lo stesso modale di creazione API key n8n mostrato pochi secondi dopo, col token ora visibile in chiaro"
    }
   ]
  },
@@ -2483,7 +2727,13 @@
   "frame": "frame-0711.png",
   "ancora": "Agent: Explore n8n.md and project — Plan: 1. List all files... 2. Read the file n8n.md (search for it if not at root)",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-176",
+    "tipo": "precede",
+    "perche": "l'esplorazione autonoma del progetto precede la creazione del file di configurazione MCP"
+   }
+  ]
  },
  {
   "id": "KA-176",
@@ -2551,7 +2801,13 @@
   "frame": "frame-0734.png",
   "ancora": "Chat Trigger → AI Agent, e sotto AI Agent tre rami Chat Model, Memory, Tool tutti collegati: Google Gemini, Get Calendar Events, e Window Buffer Memory",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-168",
+    "tipo": "esempio-di",
+    "perche": "il workflow AI Agent - Check Calendar Availability e' la realizzazione concreta di uno dei due workflow richiesti nel prompt"
+   }
+  ]
  },
  {
   "id": "KA-181",
@@ -2710,6 +2966,11 @@
     "verso": "KA-138",
     "tipo": "esempio-di",
     "perche": "è un caso concreto di compito che si fa meglio su n8n che su Claude Code"
+   },
+   {
+    "verso": "KA-191",
+    "tipo": "precede",
+    "perche": "dopo aver preferito modificare a mano dentro n8n, si chiude la sessione e se ne apre una pulita per passare a VAPI"
    }
   ]
  },
@@ -2721,7 +2982,13 @@
   "frame": "frame-0769.png",
   "ancora": "pulita, quindi niente più token usage che vi ho dicendo e ora semplicemente procedo in questo modo",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-192",
+    "tipo": "precede",
+    "perche": "aperta la nuova sessione per VAPI, la dettatura del prompt riparte con whisper flow"
+   }
+  ]
  },
  {
   "id": "KA-192",
@@ -2731,7 +2998,13 @@
   "frame": "frame-0774.png",
   "ancora": "utilizzerò di nuovo il mio whisper flow... Allora mi servirebbe che mi aiutassi ora a popolare il mio vapi.md (testo che compare dettato in tempo reale)",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-193",
+    "tipo": "precede",
+    "perche": "dettato l'inizio del prompt per vapi.md, la prima fonte recuperata e' la definizione ufficiale di VAPI"
+   }
+  ]
  },
  {
   "id": "KA-193",
@@ -2741,7 +3014,13 @@
   "frame": "frame-0776.png",
   "ancora": "Vapi is the developer platform for building voice AI agents. We handle the complex infrastructure so you can focus on creating great voice experiences.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-194",
+    "tipo": "precede",
+    "perche": "recuperata la definizione di VAPI, il prompt completo con i link alla documentazione viene fornito subito dopo"
+   }
+  ]
  },
  {
   "id": "KA-194",
@@ -2756,6 +3035,11 @@
     "verso": "KA-139",
     "tipo": "applica",
     "perche": "è un'applicazione più ricca dello stesso pattern usato per n8n.md"
+   },
+   {
+    "verso": "KA-200",
+    "tipo": "precede",
+    "perche": "tra i link di documentazione forniti, alcuni WebFetch tornano 404"
    }
   ]
  },
@@ -2815,7 +3099,13 @@
   "frame": "frame-0819.png",
   "ancora": "Let me find any references to n8n.md first. ... No references to update in the project docs. Now let me rename the file.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-201",
+    "tipo": "precede",
+    "perche": "rinominato il file secondo la convenzione caps, il passo successivo e' pianificare la struttura di vapi.md"
+   }
+  ]
  },
  {
   "id": "KA-199",
@@ -2909,7 +3199,13 @@
   "frame": "frame-0851.png",
   "ancora": "Non ho trovato una API Key VAPI nel file .env. Per creare l'agente via API ho bisogno di alcune informazioni. AskUserQuestion",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-206",
+    "tipo": "precede",
+    "perche": "non trovata la chiave nel .env, la domanda esplicita precede l'apertura della pagina delle API key di VAPI"
+   }
+  ]
  },
  {
   "id": "KA-206",
@@ -2966,6 +3262,11 @@
     "verso": "KA-195",
     "tipo": "esempio-di",
     "perche": "è un'istanza concreta delle sezioni GESTIONE ERRORI/STILE del template"
+   },
+   {
+    "verso": "KA-207",
+    "tipo": "precede",
+    "perche": "scritto il system prompt con le frasi di gestione errori, l'assistente viene creato via API con quel prompt"
    }
   ]
  },
@@ -2977,7 +3278,13 @@
   "frame": "frame-0881.png",
   "ancora": "Cost — ~$0.12 /min ... Latency — ~2000 ms",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-207",
+    "tipo": "esempio-di",
+    "perche": "le metriche di costo e latenza mostrate sono quelle dell'assistente appena creato via API"
+   }
+  ]
  },
  {
   "id": "KA-211",
@@ -3003,7 +3310,13 @@
   "frame": "frame-0847.png",
   "ancora": "Mi raccomando non fare alcun tipo di workflow, quello lo chiederò a parte / molto spesso quello che succede è che noi glielo diciamo poi nel piano c'è scritto file workflow tutto esplode",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-205",
+    "tipo": "precede",
+    "perche": "l'istruzione di non creare workflow non richiesti precede il tentativo di creazione dell'assistente che si blocca sulla chiave mancante"
+   }
+  ]
  },
  {
   "id": "KA-213",
@@ -3108,6 +3421,11 @@
     "verso": "KA-217",
     "tipo": "precede",
     "perche": "creare il prompt (step 2) avviene prima di configurare e collegare i tool (step 3-7)"
+   },
+   {
+    "verso": "KA-201",
+    "tipo": "applica",
+    "perche": "la Sezione 11 di VAPI.md richiamata qui e' la sezione Prompt Template pianificata nella struttura a 12 sezioni di vapi.md"
    }
   ]
  },
@@ -3277,7 +3595,13 @@
   "frame": "frame-0985.png",
   "ancora": "vorrei che tu ragionassi per sistemi, quindi non vorrei che tu facessi un mischiotto di tutto",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-230",
+    "tipo": "precede",
+    "perche": "dichiarato il principio di ragionare per sistemi, la dettatura prosegue con l'istruzione di non usare date hard-coded"
+   }
+  ]
  },
  {
   "id": "KA-229",
@@ -3292,6 +3616,11 @@
     "verso": "KA-228",
     "tipo": "parte-di",
     "perche": "i 4 workflow sono l'applicazione concreta del principio di dividere per sistemi"
+   },
+   {
+    "verso": "KA-234",
+    "tipo": "precede",
+    "perche": "definiti i 4 workflow, la dettatura passa al caricamento del PDF di conoscenza aziendale"
    }
   ]
  },
@@ -3303,7 +3632,13 @@
   "frame": "frame-0995.png",
   "ancora": "questo dato solo perche' tu possa avere un aggancio ma dovresti a livello teorico utilizzare variabili",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-231",
+    "tipo": "precede",
+    "perche": "la dettatura prosegue dal divieto di date fisse all'uso della chat VAPI per validare"
+   }
+  ]
  },
  {
   "id": "KA-231",
@@ -3318,6 +3653,11 @@
     "verso": "KA-287",
     "tipo": "precede",
     "perche": "il requisito dichiarato qui viene poi applicato concretamente durante i test in chat"
+   },
+   {
+    "verso": "KA-232",
+    "tipo": "precede",
+    "perche": "la dettatura prosegue dalla chat di validazione all'obbligo di tutto in italiano"
    }
   ]
  },
@@ -3329,7 +3669,13 @@
   "frame": "frame-1005.png",
   "ancora": "far si' che anche i vari prompt sia in italiano e per far si' che tutto sia il piu' efficiente",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-233",
+    "tipo": "precede",
+    "perche": "la dettatura prosegue dall'italiano all'ordine di lavoro VAPI-poi-n8n"
+   }
+  ]
  },
  {
   "id": "KA-233",
@@ -3339,7 +3685,13 @@
   "frame": "frame-1010.png",
   "ancora": "procedere con creare la gente in VAPI e con successivamente creare il tutto in N8N",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-229",
+    "tipo": "precede",
+    "perche": "la dettatura prosegue dall'ordine di lavoro alla struttura in 4 workflow separati"
+   }
+  ]
  },
  {
   "id": "KA-234",
@@ -3394,6 +3746,11 @@
     "verso": "KA-261",
     "tipo": "precede",
     "perche": "il principio viene poi implementato come tool nativo search_knowledge_base"
+   },
+   {
+    "verso": "KA-238",
+    "tipo": "precede",
+    "perche": "stabilito che la KB va resa interrogabile come tool, la dettatura prosegue con l'accesso a una risorsa CRM vuota"
    }
   ]
  },
@@ -3417,6 +3774,11 @@
    {
     "verso": "KA-308",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-240",
+    "tipo": "precede",
+    "perche": "introdotto il Google Sheet vuoto come CRM, la dettatura chiarisce che va condiviso solo quando serve"
    }
   ]
  },
@@ -3443,7 +3805,13 @@
   "frame": "frame-1034.png",
   "ancora": "di farlo solo nel momento in cui questo serve",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-241",
+    "tipo": "precede",
+    "perche": "conclusa la dettatura, il presentatore la definisce lui stesso un prompt gigante di 8 minuti"
+   }
+  ]
  },
  {
   "id": "KA-241",
@@ -3472,6 +3840,11 @@
    {
     "verso": "KA-244",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-243",
+    "tipo": "precede",
+    "perche": "dopo aver visto Claude esplorare il progetto, arriva la riflessione sul valore di un prompt dettagliato dato una sola volta"
    }
   ]
  },
@@ -3483,7 +3856,13 @@
   "frame": "frame-1041.png",
   "ancora": "preferite dare l'informazione e spiegarla bene ... una volta sola e metterci dieci minuti oppure metterci sei ore",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-244",
+    "tipo": "precede",
+    "perche": "la riflessione precede la presentazione del piano generato in plan mode"
+   }
+  ]
  },
  {
   "id": "KA-244",
@@ -3502,6 +3881,11 @@
     "verso": "KA-307",
     "tipo": "alternativa-a",
     "perche": "lo stesso meccanismo di piano-da-approvare viene riusato piu' avanti anche per un bugfix"
+   },
+   {
+    "verso": "KA-245",
+    "tipo": "precede",
+    "perche": "mentre si rivede il piano, il file .env viene aperto nell'editor ed espone le chiavi"
    }
   ]
  },
@@ -3532,6 +3916,11 @@
    {
     "verso": "KA-239",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-247",
+    "tipo": "precede",
+    "perche": "dallo schema del CRM nel piano, il piano prosegue con la struttura a 12 sezioni del prompt"
    }
   ]
  },
@@ -3543,7 +3932,13 @@
   "frame": "frame-1049.png",
   "ancora": "Tutte le 12 sezioni obbligatorie di Section 11",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-218",
+    "tipo": "applica",
+    "perche": "le 12 sezioni del prompt di Sara sono identiche, nello stesso ordine, al template Sezione 11 di VAPI.md definito nella build precedente"
+   }
+  ]
  },
  {
   "id": "KA-248",
@@ -3686,6 +4081,11 @@
    {
     "verso": "KA-247",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-257",
+    "tipo": "precede",
+    "perche": "concluse le sezioni del prompt nel piano, il piano prosegue con la scelta del modello linguistico"
    }
   ]
  },
@@ -3697,7 +4097,13 @@
   "frame": "frame-1049.png",
   "ancora": "model: OpenAI gpt-4o, temperature 0.4",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-258",
+    "tipo": "precede",
+    "perche": "dal modello linguistico, il piano prosegue con la scelta della voce italiana"
+   }
+  ]
  },
  {
   "id": "KA-258",
@@ -3727,6 +4133,11 @@
    {
     "verso": "KA-254",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-260",
+    "tipo": "precede",
+    "perche": "definita la mappa tool-webhook, il piano aggiunge i messaggi di request-start e request-failed per ogni tool"
    }
   ]
  },
@@ -3756,6 +4167,11 @@
    {
     "verso": "KA-237",
     "tipo": "applica"
+   },
+   {
+    "verso": "KA-262",
+    "tipo": "precede",
+    "perche": "descritto il tool nativo di ricerca KB, la revisione del piano nota l'assenza di un modo per chiudere la chiamata"
    }
   ]
  },
@@ -3767,7 +4183,13 @@
   "frame": "frame-1054.png",
   "ancora": "pero' ecco, una cosa che non vedo e' la capacita' da parte della gente di chiudere la chiamata",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-263",
+    "tipo": "precede",
+    "perche": "notata la lacuna sull'end_call, il piano passa all'ordine di esecuzione"
+   }
+  ]
  },
  {
   "id": "KA-263",
@@ -3796,6 +4218,11 @@
    {
     "verso": "KA-263",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-265",
+    "tipo": "precede",
+    "perche": "definita la batteria di test, si passa alle modalita' di autonomia di Claude Code"
    }
   ]
  },
@@ -3807,7 +4234,13 @@
   "frame": "frame-1061.png",
   "ancora": "Ask before edits ... Edit automatically ... Plan mode ... Bypass permissions ... Effort (Medium)",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-266",
+    "tipo": "precede",
+    "perche": "scelta la modalita' di lavoro, arriva la richiesta di autorizzare Google Auth"
+   }
+  ]
  },
  {
   "id": "KA-266",
@@ -3817,7 +4250,13 @@
   "frame": "frame-1063.png",
   "ancora": "Per far funzionare i workflow devo collegare Google Sheets a n8n ... Hai completato questo step?",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-267",
+    "tipo": "precede",
+    "perche": "posta la domanda su Google Auth, l'avanzamento del lavoro viene tracciato nella todo list"
+   }
+  ]
  },
  {
   "id": "KA-267",
@@ -3827,7 +4266,13 @@
   "frame": "frame-1063.png",
   "ancora": "Update Todos ... Salvare VAPI keys in .env ... Costruire WF4: Reschedule Appointment in n8n",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-268",
+    "tipo": "precede",
+    "perche": "aggiornata la todo list, si passa ad archiviare le configurazioni residue di progetti precedenti"
+   }
+  ]
  },
  {
   "id": "KA-268",
@@ -3920,6 +4365,11 @@
    {
     "verso": "KA-248",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-273",
+    "tipo": "parte-di",
+    "perche": "la sezione CONTESTO fa parte dello stesso file prompt-sara.md appena salvato"
    }
   ]
  },
@@ -4045,6 +4495,11 @@
    {
     "verso": "KA-283",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-259",
+    "tipo": "applica",
+    "perche": "il workflow Book Appointment costruito con formule invece che con un agente AI e' lo stesso tool book_appointment mappato al webhook WF2"
    }
   ]
  },
@@ -4071,7 +4526,13 @@
   "frame": "frame-1112.png",
   "ancora": "Cost — ~$0.17 /min ... Latency — ~2000 ms",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-285",
+    "tipo": "precede",
+    "perche": "mostrate le metriche costo-latenza dell'assistente Sara, si prepara il test sugli orari"
+   }
+  ]
  },
  {
   "id": "KA-285",
@@ -4494,6 +4955,11 @@
    {
     "verso": "KA-309",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-312",
+    "tipo": "precede",
+    "perche": "verificata la prenotazione a doppia scrittura, si osserva come il messaggio di conferma viene costruito dinamicamente"
    }
   ]
  },
@@ -4534,6 +5000,11 @@
    {
     "verso": "KA-309",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-314",
+    "tipo": "motiva",
+    "perche": "il test di cancellazione riuscito su entrambi i sistemi mostra che ora si puo' iterare con piccoli aggiustamenti successivi"
    }
   ]
  },
@@ -4545,7 +5016,13 @@
   "frame": "frame-1259.png",
   "ancora": "non gli diciamo, hey, per favore modificare la latenza, fai la voce in italiano",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-315",
+    "tipo": "precede",
+    "perche": "conclusa la parte tecnica, il corso passa al capitolo sui modelli di business"
+   }
+  ]
  },
  {
   "id": "KA-315",
@@ -4650,6 +5127,11 @@
    {
     "verso": "KA-319",
     "tipo": "applica"
+   },
+   {
+    "verso": "KA-323",
+    "tipo": "precede",
+    "perche": "concluso il framework dentro-bordo-fuori, il corso chiude con la doppia call-to-action finale"
    }
   ]
  },

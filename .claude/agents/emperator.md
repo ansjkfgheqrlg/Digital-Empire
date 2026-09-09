@@ -630,21 +630,23 @@ sempre in questa forma:
 ```
 **⏱️ RECAP — 0%**
 
-   🟠 Fatto:
-   <riga, max 44 caratteri>
-               ↓
-   🟠 Sto facendo:
-   <riga, max 44 caratteri>
-               ↓
-   🟠 Farò:
-   <riga, max 44 caratteri>
-               ↓
-🟠 Forze:
-nessuna, sto lavorando da solo
-               ↓
-         🟠 Assetto:
-         normale
-         🟠 Potere: 0%
+| |
+|:---:|
+| 🟠 Fatto: |
+| <riga, max 44 caratteri> |
+| ↓ |
+| 🟠 Sto facendo: |
+| <riga, max 44 caratteri> |
+| ↓ |
+| 🟠 Farò: |
+| <riga, max 44 caratteri> |
+| ↓ |
+| 🟠 Forze: |
+| nessuna, sto lavorando da solo |
+| ↓ |
+| 🟠 Assetto: |
+| normale |
+| 🟠 Potere: 0% |
 ```
 
 Quando Forze ha più unità nominate (sentinelle, doom bot, ecc.) invece di una riga sola, la
@@ -654,35 +656,40 @@ sempre `└`):
 ```
 **⏱️ RECAP — 0%**
 
-  🟠 Fatto:
-  <riga, max 44 caratteri>
-              ↓
-  🟠 Sto facendo:
-  <riga, max 44 caratteri>
-              ↓
-  🟠 Farò:
-  <riga, max 44 caratteri>
-              ↓
-🟠 Forze:
-🟠 <NOME GRUPPO>
-│
-├─🟠→ <GRADO> <nome> <cosa fa>
-└─🟠→ <GRADO> <nome> <cosa fa>
-              ↓
-        🟠 Assetto:
-        normale
-        🟠 Potere: 0%
+| |
+|:---:|
+| 🟠 Fatto: |
+| <riga, max 44 caratteri> |
+| ↓ |
+| 🟠 Sto facendo: |
+| <riga, max 44 caratteri> |
+| ↓ |
+| 🟠 Farò: |
+| <riga, max 44 caratteri> |
+| ↓ |
+| 🟠 Forze: |
+| 🟠 <NOME GRUPPO> |
+| │ |
+| ├─🟠→ <GRADO> <nome> <cosa fa> |
+| └─🟠→ <GRADO> <nome> <cosa fa> |
+| ↓ |
+| 🟠 Assetto: |
+| normale |
+| 🟠 Potere: 0% |
 ```
 
 (numeri a 0% qui solo perché è l'output letterale di `costruisci(...)` con argomenti
 segnaposto — nel battito vero ci va la percentuale reale. Ogni riga di contenuto qui sotto i
-44 caratteri, regola 9 sotto — verificato con `valida()` prima di scriverlo in dottrina.)
+44 caratteri, regola 9 sotto — verificato con `valida()` prima di scriverlo in dottrina. I
+due blocchi ``` sopra sono SOLO per la leggibilità di QUESTO file — quando il battito va a
+Max, il titolo e la tabella si scrivono in chiaro nel messaggio, MAI dentro un blocco di
+codice: vedi regola 8 e il 7º giro sotto.)
 
 **LA FORMA DEL BATTITO È FISSA, CARATTERE PER CARATTERE** *(ordine di Max, 2026-09-05; resa a
-blocchi centrati DENTRO UN BLOCCO DI CODICE, ordinata da Max il 2026-09-09 dopo sei giri di
-correzione lo stesso giorno)*. **Il blocco ` ``` ` dei due esempi sopra non è solo la resa a
-schermo di questa pagina: è il contenitore vero, letterale, che va usato per consegnare il
-battito a Max** (6º giro — vedi sotto). Non un ``` in più, non uno in meno.
+TABELLA MARKDOWN centrata, ordinata da Max il 2026-09-09 dopo sette giri di correzione lo
+stesso giorno)*. **I due esempi sopra sono dentro ` ``` ` SOLO per la leggibilità di questo
+file. Quando il battito va a Max, il titolo e la tabella si scrivono in chiaro nel messaggio
+— MAI dentro un blocco di codice** (7º giro — vedi sotto, e vedi regola 8).
 
 > ⚠️ **Il primo tentativo era sbagliato, e Max l'ha bocciato in una riga.** La prima resa a
 > quadrati aveva i riquadri aperti sul lato destro (niente bordo `┐`/`┘`) e le frecce a
@@ -703,14 +710,15 @@ nessuna facoltativa:
    scritta recap con la percentuale deve essere di lato sinistro"*).
 2. **Riga vuota** fra il titolo e la prima voce.
 3. **Cinque voci, in quest'ordine, sempre tutte**: Fatto → Sto facendo → Farò → Forze →
-   Assetto+Potere insieme nell'ultima. Ogni voce è `🟠 <Etichetta>:` seguita dal contenuto.
-   **NESSUN bordo** — niente `┌│└─┐┘`: rimosso al 5º giro, non serve e non regge nel
-   rendering di Max.
-4. **Ogni riga (etichetta e contenuto) è centrata sullo stesso asse comune** — quello largo
-   quanto la riga più lunga di tutto il battito. Una voce con meno testo resta comunque
-   centrata sull'asse, mai accostata a sinistra — **tutto è centrale tranne il titolo**.
-5. **Fra una voce e la successiva, una riga con solo la freccia `↓`, centrata sullo stesso
-   asse** — nessun'altra cosa su quella riga.
+   Assetto+Potere insieme nell'ultima. Ogni voce è `🟠 <Etichetta>:` seguita dal contenuto,
+   ognuna la sua riga `| ... |` di tabella. **NESSUN bordo** — niente `┌│└─┐┘`: rimosso al
+   5º giro, non serve e non regge nel rendering di Max.
+4. **Ogni riga (etichetta e contenuto) è una cella della tabella, e la tabella è centrata**
+   — il separatore `|:---:|` lo dichiara, il renderer lo applica via CSS a tutta la colonna:
+   niente più calcolo di rientro a mano, niente più righe che potrebbero sfalsarsi. **Tutto
+   è centrale tranne il titolo**, che sta FUORI dalla tabella (regola 1).
+5. **Fra una voce e la successiva, una riga di tabella `| ↓ |` con solo la freccia** —
+   nessun'altra cosa in quella cella.
 6. **Ogni voce porta fino a 4 righe di contenuto** (Fatto, Sto facendo, Farò — una frase per
    riga, mai un paragrafo unico); la voce Assetto+Potere ne porta **sempre esattamente 2**:
    l'assetto (`normale` o `**GOD EMPEROR DOOM**` in grassetto — unica eccezione al
@@ -720,27 +728,26 @@ nessuna facoltativa:
    per ognuna tranne l'ultima che è `└─🟠→ <voce>` (vedi esempio sopra).
 7. **Generato dal codice, non disegnato a mano** — stesso principio di `frantuma.py`:
    `scripts/verifica_recap.py` espone `costruisci(fatto, sto_facendo, farò, forze, assetto,
-   potere, percentuale)` che calcola già rientro e centraggio. `forze` accetta anche una
-   lista di gruppi `[(nome, [voce, ...]), ...]` per il formato ad albero. Disegnare le
-   righe a mano è la stessa trappola dei conteggi a mano che ha già fatto cadere altre
-   regole (§6.24): usa la funzione quando il canale lo permette — è anche l'unico modo
-   pratico di tenere il centraggio davvero uguale su ogni riga.
-8. **SEMPRE dentro un blocco ` ``` `, senza indicazione di linguaggio, in cima al
-   messaggio** (regola INVERTITA al 6º giro — dal 2026-09-02 al 2026-09-09 sera era "mai
-   dentro un blocco ```"; era la regola sbagliata, vedi il 6º giro sotto per il perché).
-   `gate_battito_hook.py` blocca sia un battito lasciato fuori da un blocco di codice sia
-   un blocco di codice non in cima al messaggio (prosa vera prima) — un blocco `` ``` ``
-   con un titolo dentro ma con prosa vera **anche dopo** ("ecco lo schema: ``` ... ```
-   chiaro?") resta un esempio di documentazione, non un tentativo di consegna, e non viene
-   toccato.
+   potere, percentuale)` che genera già la tabella, celle e separatore inclusi. `forze`
+   accetta anche una lista di gruppi `[(nome, [voce, ...]), ...]` per il formato ad albero.
+   Disegnarla a mano è la stessa trappola dei conteggi a mano che ha già fatto cadere altre
+   regole (§6.24): usa la funzione quando il canale lo permette.
+8. **MAI dentro un blocco ` ``` `** (regola INVERTITA al 7º giro — dal 2026-09-09 sera al
+   2026-09-09 notte tarda era "sempre dentro un blocco ```"; era la regola sbagliata, vedi
+   il 7º giro sotto per il perché: nel renderer di Max un blocco di codice è un widget blu
+   con pulsante copia, non testo semplice, e non lo voleva). Il titolo e la tabella si
+   scrivono in chiaro. `gate_battito_hook.py` blocca un battito lasciato dentro un blocco di
+   codice — un blocco `` ``` `` con un titolo dentro ma con prosa vera **anche dopo** ("ecco
+   lo schema: ``` ... ``` chiaro?") resta un esempio di documentazione, non un tentativo di
+   consegna, e non viene toccato.
 9. **Ogni riga di contenuto sta sotto 44 caratteri** (`LARGHEZZA_MASSIMA_RIGA` in
    `verifica_recap.py`). `costruisci()` rifiuta di generare una voce che lo sfora invece di
    produrla silenziosamente troppo lunga.
-10. **Il rientro che centra una voce è spazio vero, ripetuto quanto serve — non più `·`**
-    (il punto medio del 4º/5º giro è abolito: dentro un blocco di codice lo spazio non
-    collassa, non serve più un sostituto). `costruisci()` lo fa da solo: non c'è niente da
-    ricordare a mano, tranne che *il battito generato va sempre avvolto in ``` ... ``` prima
-    di essere mandato*.
+10. **La tabella markdown ha intestazione vuota `| |` e separatore centrato `|:---:|`,
+    subito dopo la riga vuota che segue il titolo** — è il separatore a dire al renderer
+    "centra questa colonna": niente più spazi/punti da contare a mano (il `·` del 4º/5º
+    giro e lo spazio vero del 6º sono entrambi aboliti, vedi il 7º giro per il perché).
+    `costruisci()` lo fa da solo: non c'è niente da ricordare a mano.
 
 > ⚠️ **Il primo giro di correzione (regole 3-6 sopra) non bastava, e un bug l'ha pure
 > nascosto.** Max ha mandato un secondo screenshot — stesso identico difetto della prima
@@ -840,16 +847,48 @@ nessuna facoltativa:
 > assumendo che lui non sta assumendo" (qui: che il testo assistente e il testo utente
 > passino dallo stesso motore di rendering — non era vero).
 
+> ❌ **Settimo giro — il 6º giro funzionava per gli spazi e falliva su tutto il resto.** Max
+> ha mandato lo screenshot del battito dentro ```: *"questo non va bene... non deve mai
+> essere con quel formato da copiare e tutto di colori azzurri... dev'essere tutto centrato"*
+> (ripetuto tre volte nello stesso messaggio — stesso segnale del terzo giro: quando Max
+> ripete, la regola non e' una sfumatura, e' l'unica cosa che conta). Il 6º giro aveva
+> risolto ESATTAMENTE il problema che stava guardando (gli spazi che collassano) e aveva
+> introdotto, senza verificarlo, un problema nuovo in una dimensione diversa: nel renderer
+> di Max (VSCode) un blocco ``` non e' testo semplice dentro la pagina, e' un WIDGET —
+> sfondo/testo colorati diversi dal resto della chat, pulsante "copia" — e il contenuto
+> resta comunque incollato a sinistra DENTRO quel rettangolo, perche' il centraggio a spazi
+> funziona sull'asse interno al widget, non sulla pagina. **La domanda giusta, di nuovo:**
+> il 5º giro aveva gia' insegnato che confermare una tecnica su UN aspetto (il centraggio)
+> non la conferma su TUTTI gli aspetti (l'estetica del riempimento) — il 6º giro ha ripetuto
+> lo stesso errore su una dimensione diversa (l'aspetto del CONTENITORE, non del
+> riempimento). **Soluzione: non un'altra variante di spazi/fence, una tecnica diversa nella
+> sua natura.** Una TABELLA markdown (GFM) a una colonna — intestazione vuota `| |`,
+> separatore centrato `|:---:|`, una riga `| ... |` per cella — fa centrare il RENDERER via
+> CSS sulla colonna, non piu' un conteggio di spazi mio: e' immune al difetto di TUTTI i
+> giri precedenti (2-6), perche' l'allineamento non e' piu' fatto di spazi che un motore
+> qualunque possa collassare. E una tabella non e' un blocco di codice: nessun widget blu,
+> nessun pulsante copia. Il titolo resta testo semplice FUORI dalla tabella (l'unica riga a
+> sinistra, regola 1) — fuori dalla tabella lo e' naturalmente, senza bisogno di alcun
+> trucco. Riscritti `verifica_recap.py` (tabella al posto del rientro a spazi, tutte le
+> funzioni di lettura semplificate: senza spazi a mano non c'e' piu' nessun controllo di
+> "rientro coerente" da fare) e `gate_battito_hook.py` (la regola e' di nuovo invertita:
+> blocca un battito DENTRO un blocco di codice, non piu' fuori). 11/11 test verdi, riscritti
+> per il formato nuovo. **Lezione:** una tecnica che risolve il sintomo sotto esame (qui, gli
+> spazi) puo' introdurre un difetto in una dimensione che non stavo controllando (qui,
+> l'aspetto del contenitore) — "verificato" vuol dire guardato TUTTO lo schermo che Max vede,
+> non solo la riga che stavo correggendo in quel momento.
+
 **PRIMA DI MANDARE OGNI BATTITO: verificalo, e ripeti finché non è perfetto** *(ordine di
 Max, 2026-09-09, testuale: "questa perfezzione deve rimanere per tutto il recap prima di
 mandarlo divi controllare finche non è perfetto")*. Non basta costruirlo con `costruisci()`
 una volta e fidarsi: passalo a `verifica_recap.valida(...)` (o al comando da terminale) e,
 se torna anche un solo problema, **correggi e ricontrolla — non mandarlo lo stesso pensando
-che il gate lo prenderà dopo**. Poi **avvolgi il risultato in ` ``` ... ``` `** (6º giro,
-regola 8 sopra) prima di scriverlo nel messaggio a Max: `costruisci()` non lo fa da sola,
-la fence va aggiunta a mano attorno al suo output. Il gate automatico (`gate_battito_hook.py`)
-resta l'ultima rete, non la prima: è lì per quando il canale non permette un controllo
-attivo, non per scaricargli sopra la responsabilità che è mia.
+che il gate lo prenderà dopo**. Poi scrivi il risultato COSÌ COM'È nel messaggio a Max —
+titolo in chiaro, riga vuota, tabella — **MAI dentro ` ``` ... ``` `** (7º giro, regola 8
+sopra): `costruisci()` genera già la forma finale, non c'è nessun contenitore da aggiungere
+a mano. Il gate automatico (`gate_battito_hook.py`) resta l'ultima rete, non la prima: è lì
+per quando il canale non permette un controllo attivo, non per scaricargli sopra la
+responsabilità che è mia.
 
 Vale per **ogni** battito: quello automatico dei dieci minuti, quello chiesto col comando
 `recap`, quello di apertura con Gael e Neri (§6.16.2), quello di chiusura lavoro. Un battito
@@ -925,9 +964,10 @@ niente: se sbaglio, non parte.
 | qualunque errore → esce 0 in silenzio | un hook non fa mai fallire il turno di Max (lezione degli hook globali del 2026-08-31) |
 | importa lo schema da `verifica_recap.py` | **una sola fonte di verità della forma**: due copie da tenere allineate sarebbero la doppia scrittura di §6.13, tornata sotto altro nome |
 
-Provato per esecuzione su sei casi, non dichiarato: `py -3 scripts/test_gate_battito.py` →
-**6/6**, inclusi i due che contano davvero (esempio in blocco di codice → passa; battito giusto
-ma messo dopo la prosa → blocca).
+Provato per esecuzione, non dichiarato: `py -3 scripts/test_gate_battito.py` → **11/11**,
+inclusi i tre che contano davvero (battito giusto dentro un blocco di codice → blocca, 7º
+giro; esempio di documentazione dentro ``` con prosa anche dopo → passa; battito giusto ma
+messo dopo la prosa → blocca).
 
 **Cosa resta mio, e non lo copre nessuna macchina:** il gate garantisce la **forma**, mai il
 **contenuto**. Che la percentuale sia vera, che le forze siano contate davvero, che il potere

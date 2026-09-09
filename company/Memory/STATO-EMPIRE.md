@@ -1,16 +1,27 @@
-## 🟣 2026-09-09 — RIPRESA: battito sesto giro, regola fence invertita — CP-20260909-6T6J
+## 🟣 2026-09-09 — RIPRESA: battito settimo giro, il fence e' bocciato (era il 6º giro) — CP-20260909-VEVW
 
-**Chat satura, checkpoint su ordine di Max — riprendere da qui.** Codice CHIUSO e verde
-(11/11): il battito vero va ora DENTRO un blocco ` ``` ` in cima al messaggio (regola
-invertita — dal 2026-09-02 era "mai dentro un blocco di codice", scoperto sbagliato: fuori
-da un blocco di codice il testo dell'ASSISTENTE passa da un motore che collassa gli spazi
-ripetuti, il testo che MAX digita lui stesso no — solo un blocco di codice preserva lo
-spazio esatto). Spazio vero per il rientro (niente più `·`), nessun bordo, Forze piatta o
-ad albero. Vedi `scripts/verifica_recap.py` e `scripts/gate_battito_hook.py`.
-**Resta da fare**: 1) controllare che "IL CONTROLLO MECCANICO" in emperator.md §6.11 non
-abbia ancora frasi "mai dentro un blocco di codice" scritte prima di questo giro
-(contraddittorie); 2) mandare a Max un battito di prova nella forma nuova per conferma —
-non ancora fatto. Dettagli/incidente-git: [CP-20260909-6T6J](checkpoints/CP-20260909-6T6J.md).
+**RIPRESA DA:** mandare a Max un battito di prova nella forma nuova e aspettare la sua
+conferma visiva — nessun giro precedente si e' mai chiuso senza quella conferma, non chiudere
+neanche questo prima di riceverla.
+
+Max ha bocciato il 6º giro con uno screenshot: il battito dentro ``` gli arrivava come un
+widget BLU con pulsante "copia", allineato a sinistra dentro il riquadro — *"mai quel formato
+da copiare e tutto di colori azzurri... dev'essere tutto centrato"* (ripetuto 3 volte). Il 6º
+giro risolveva il problema degli spazi che collassavano ma introduceva un difetto mai
+controllato: l'aspetto del CONTENITORE, non del riempimento. 7º giro: tolto il blocco di
+codice, il battito ora e' una TABELLA markdown a una colonna (intestazione `| |`, separatore
+centrato `|:---:|`, righe `| ... |`) — il renderer centra via CSS sulla colonna, immune al
+difetto di spazi che ha fatto cadere i giri 2-6. Codice CHIUSO e verde (11/11):
+`scripts/verifica_recap.py` (tabella al posto del rientro a spazi) e
+`scripts/gate_battito_hook.py` (blocca DENTRO un fence, non piu' fuori) riscritti; dottrina
+`.claude/agents/emperator.md` §6.11 aggiornata (esempi, regola 8, blockquote 7º giro).
+Dettagli/lezioni: [CP-20260909-VEVW](checkpoints/CP-20260909-VEVW.md).
+
+## 🟣 2026-09-09 — battito sesto giro, regola fence invertita (SUPERATO dal 7º giro) — CP-20260909-6T6J
+
+Codice del 6º giro (battito DENTRO un blocco ``` in cima al messaggio) — Max l'ha bocciato
+subito dopo su base estetica, vedi la voce del 7º giro sopra. Lasciata per la cronologia dei
+giri, non e' piu' lo stato attuale. Dettagli: [CP-20260909-6T6J](checkpoints/CP-20260909-6T6J.md).
 
 ## 🟠 2026-09-09 — battito ristilizzato: cinque giri, via il bordo, albero per Forze — CP-20260909-RWR2
 
