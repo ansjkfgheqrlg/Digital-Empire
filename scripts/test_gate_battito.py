@@ -24,9 +24,9 @@ if QUI not in sys.path:
 from verifica_recap import costruisci  # noqa: E402  (dopo l'import di sys/os sopra)
 
 BATTITO_OK = costruisci(
-    "letto il libro e trovato il punto che cede",
-    "costruisco il controllo che scatta da solo",
-    "lo provo su sei casi veri prima di dirlo fatto",
+    "letto il libro, trovato il punto che cede",
+    "costruisco il controllo automatico",
+    "lo provo su sei casi veri",
     "nessuna, sto lavorando da solo",
     "normale", 100, 40,
 )
@@ -124,6 +124,13 @@ CASI = [
     ("8. turno lungo ma il battito e' sotto la prosa nel SUO messaggio -> BLOCCA",
      ["Parto col lavoro.",
       "Ti racconto prima com'e' andata, poi il battito.\n\n" + BATTITO_OK], False, True),
+
+    # --- il caso pagato in produzione, 2026-09-09 (secondo giro) ---
+    ("9. battito vero incollato dentro ``` senza altro testo -> BLOCCA",
+     "```\n" + BATTITO_OK + "\n```", False, True),
+
+    ("10. stesso battito dentro ``` ma con prosa vera intorno -> passa (e' una spiegazione)",
+     "Ecco come deve venire:\n\n```\n" + BATTITO_OK + "\n```\n\nChiaro, Max?", False, False),
 ]
 
 

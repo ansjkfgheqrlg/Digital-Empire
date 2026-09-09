@@ -30,6 +30,26 @@ fra un riquadro e il successivo stanno sullo stesso asse centrale del canvas, no
 Un riquadro rimane comunque piu' stretto del canvas quando il suo contenuto e' piu' corto:
 e' voluto, e' quello che lo fa apparire centrato invece che a tutta larghezza.
 
+**MAI DENTRO UN BLOCCO ``` (2026-09-09, secondo giro di correzione).** Uno screenshot
+mandato da Max — battito con riquadri gia' chiusi/centrati, ma renderizzato a pezzi, testo
+che esce dal bordo, freccia storta — ha mostrato il guasto vero: il battito era dentro un
+blocco di codice. Un blocco ``` (a) e' "il formato apposta per copiare" (parole di Max): non
+e' come si consegna un rapporto, e (b) SPARISCE dal controllo del gate — `righe_reali` in
+gate_battito_hook.py lo esclude apposta, cosi' un ESEMPIO di battito dentro la dottrina non
+blocca la consegna quando ne parlo con Max. Se il battito VERO finisce per errore dentro un
+blocco di codice, il gate non lo vede: non lo blocca, ma non lo valida nemmeno — passa senza
+controllo, ed e' esattamente il buco che ha lasciato passare quel battito storto. Il battito
+vero e' SEMPRE testo semplice, mai fra ```. `gate_battito_hook.py` ora rileva anche il caso
+"tutto il messaggio e' un unico blocco di codice che contiene un battito" e lo blocca con un
+motivo dedicato, invece di lasciarlo passare come se fosse solo un esempio di dottrina.
+
+**RIGHE CORTE, SEMPRE (stesso giro).** Una riga di contenuto troppo lunga si spezza da sola
+quando lo spazio dove Max legge e' piu' stretto della riga — e un rettangolo con una riga
+spezzata non e' piu' un rettangolo, indipendentemente da quanto sia giusta la matematica del
+centraggio. `LARGHEZZA_MASSIMA_RIGA` (44 caratteri) e' il tetto duro per ogni riga di
+contenuto: `costruisci()` rifiuta di generare un riquadro che lo sfora (eccezione, non un
+riquadro storto silenzioso) e `valida()` lo controlla comunque, per i battiti scritti a mano.
+
 USO (prima di inviare OGNI battito):
     printf '%s' "<testo del battito>" | py -3 scripts/verifica_recap.py
     py -3 scripts/verifica_recap.py --file percorso\\al\\battito.txt
@@ -54,6 +74,8 @@ RIQUADRI = [
     ("Forze", 1, 4),
     ("Assetto", 2, 2),
 ]
+
+LARGHEZZA_MASSIMA_RIGA = 44  # caratteri per riga di contenuto (non il bordo) — vedi nota sopra
 
 TITOLO_RE = re.compile(r"^\*\*⏱️ RECAP — (\d{1,3})%\*\*$")
 TOP_RE = re.compile(r"^┌─+┐$")
@@ -144,6 +166,12 @@ def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
             problemi.append(
                 "riga %d: il contenuto del riquadro '%s' non va in grassetto (eccezione unica: "
                 "`**GOD EMPEROR DOOM**` nel riquadro Assetto)" % (riga_num + 1, etichetta)
+            )
+        if len(valore) > LARGHEZZA_MASSIMA_RIGA:
+            problemi.append(
+                "riga %d: riga del riquadro '%s' lunga %d caratteri, il tetto e' %d — "
+                "una riga troppo lunga si spezza da sola nello spazio dove Max legge e rompe "
+                "il rettangolo, accorciala" % (riga_num + 1, etichetta, len(valore), LARGHEZZA_MASSIMA_RIGA)
             )
 
     if etichetta == "Assetto" and len(contenuto) >= 1:
@@ -263,6 +291,13 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
     # 1a passata: ogni riquadro chiuso alla sua larghezza naturale, senza rientro.
     riquadri = []
     for etichetta, righe in blocchi:
+        for r in righe:
+            if len(r) > LARGHEZZA_MASSIMA_RIGA:
+                raise ValueError(
+                    "riquadro '%s': riga di %d caratteri sfora il tetto di %d — accorciala "
+                    "(una riga troppo lunga si spezza da sola e rompe il rettangolo): %r"
+                    % (etichetta, len(r), LARGHEZZA_MASSIMA_RIGA, r)
+                )
         contenuto = ["🟠 %s" % etichetta] + righe
         interno = max(len(r) for r in contenuto) + 2  # 1 spazio di margine per lato
         righe_box = ["┌" + "─" * interno + "┐"]

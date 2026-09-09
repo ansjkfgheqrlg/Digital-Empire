@@ -630,35 +630,37 @@ sempre in questa forma:
 ```
 **⏱️ RECAP — <n>%**
 
-                   ┌────────────────────┐
-                   │ 🟠 Fatto            │
-                   │ <riga 1, fino a 4> │
-                   └────────────────────┘
-                              ↓
-                   ┌────────────────────┐
-                   │ 🟠 Sto facendo      │
-                   │ <riga 1, fino a 4> │
-                   └────────────────────┘
-                              ↓
-                   ┌────────────────────┐
-                   │ 🟠 Farò             │
-                   │ <riga 1, fino a 4> │
-                   └────────────────────┘
-                              ↓
-┌──────────────────────────────────────────────────────────┐
-│ 🟠 Forze                                                  │
-│ <GRADO> <nome> <cosa fa>  (una riga per forza, fino a 4) │
-└──────────────────────────────────────────────────────────┘
-                              ↓
-                      ┌──────────────┐
-                      │ 🟠 Assetto    │
-                      │ normale      │
-                      │ 🟠 Potere: 0% │
-                      └──────────────┘
+       ┌──────────────────────────┐
+       │ 🟠 Fatto                  │
+       │ <riga, max 44 caratteri> │
+       └──────────────────────────┘
+                     ↓
+       ┌──────────────────────────┐
+       │ 🟠 Sto facendo            │
+       │ <riga, max 44 caratteri> │
+       └──────────────────────────┘
+                     ↓
+       ┌──────────────────────────┐
+       │ 🟠 Farò                   │
+       │ <riga, max 44 caratteri> │
+       └──────────────────────────┘
+                     ↓
+┌────────────────────────────────────────┐
+│ 🟠 Forze                                │
+│ <GRADO> <nome> <cosa fa>               │
+│ oppure: nessuna, sto lavorando da solo │
+└────────────────────────────────────────┘
+                     ↓
+             ┌──────────────┐
+             │ 🟠 Assetto    │
+             │ normale      │
+             │ 🟠 Potere: 0% │
+             └──────────────┘
 ```
 
 (numeri a 0% qui solo perché è l'output letterale di `costruisci(...)` con argomenti
-segnaposto — nel battito vero ci va la percentuale reale.)
+segnaposto — nel battito vero ci va la percentuale reale. Ogni riga di contenuto qui sotto i
+44 caratteri, regola 9 sotto — verificato con `valida()` prima di scriverlo in dottrina.)
 
 **LA FORMA DEL BATTITO È FISSA, CARATTERE PER CARATTERE** *(ordine di Max, 2026-09-05; resa a
 quadrati ordinata da Max il 2026-09-09, corretta da Max lo stesso giorno al primo giro)*.
@@ -698,6 +700,43 @@ nessuna facoltativa:
    riga per riga è la stessa trappola dei conteggi a mano che ha già fatto cadere altre regole
    (§6.24): usa la funzione quando il canale lo permette — è anche l'unico modo pratico di
    tenere i quattro lati davvero allineati.
+8. **MAI dentro un blocco ` ``` `.** Il battito vero è sempre testo semplice. Un blocco di
+   codice è "il formato apposta per copiare" (parole di Max) — non è come si consegna un
+   rapporto — e sparisce dal controllo del gate (`righe_reali` lo esclude apposta, per non
+   bloccarmi quando *spiego* il formato a Max con un esempio). Se il battito vero finisce
+   per errore dentro un blocco di codice, il gate non lo blocca ma non lo valida nemmeno:
+   passa senza controllo. `gate_battito_hook.py` ora rileva anche questo caso specifico
+   (un messaggio che è *solo* un blocco di codice contenente un battito, senza altro testo
+   intorno) e lo blocca con un motivo dedicato — ma la regola resta: non ci si arriva mai.
+9. **Ogni riga di contenuto sta sotto 44 caratteri** (`LARGHEZZA_MASSIMA_RIGA` in
+   `verifica_recap.py`). Una riga troppo lunga si spezza da sola nello spazio dove Max legge
+   — e un rettangolo con una riga spezzata non è più un rettangolo, indipendentemente da
+   quanto sia giusta la matematica del centraggio. `costruisci()` rifiuta di generare un
+   riquadro che lo sfora invece di produrlo storto in silenzio.
+
+> ⚠️ **Il primo giro di correzione (regole 3-6 sopra) non bastava, e un bug l'ha pure
+> nascosto.** Max ha mandato un secondo screenshot — stesso identico difetto della prima
+> volta, quadrati non chiusi/non centrati — su un battito di un'ALTRA sessione (EMP-LAN1),
+> segno che la regola non era ancora blindata ovunque. Nel sistemare anche il caso del
+> blocco ``` e il tetto di 44 caratteri, ho scritto un placeholder di esempio (dentro
+> `gate_battito_hook.py`, nel messaggio di blocco stesso) che sforava il tetto appena
+> creato: `costruisci()` sollevava un'eccezione, la PROTEZIONE 3 del gate ("qualunque
+> errore → esce 0 in silenzio") la inghiottiva, e il risultato era un gate che **non
+> bloccava più niente**, di nascosto, proprio mentre lo stavo rendendo più severo. Trovato
+> solo perché la suite di test è passata da "8/8 verde" a "5/8" — la prova viva del perché
+> ogni modifica al gate va sempre riprovata su tutti i casi, mai solo su quello nuovo.
+> Corretto isolando la generazione dell'esempio (facoltativo, solo per chiarezza) in un
+> try proprio: se fallisce, il blocco vero — deciso PRIMA, sui `problemi` reali — resta in
+> piedi lo stesso.
+
+**PRIMA DI MANDARE OGNI BATTITO: verificalo, e ripeti finché non è perfetto** *(ordine di
+Max, 2026-09-09, testuale: "questa perfezzione deve rimanere per tutto il recap prima di
+mandarlo divi controllare finche non è perfetto")*. Non basta costruirlo con `costruisci()`
+una volta e fidarsi: passalo a `verifica_recap.valida(...)` (o al comando da terminale) e,
+se torna anche un solo problema, **correggi e ricontrolla — non mandarlo lo stesso pensando
+che il gate lo prenderà dopo**. Il gate automatico (`gate_battito_hook.py`) resta l'ultima
+rete, non la prima: è lì per quando il canale non permette un controllo attivo, non per
+scaricargli sopra la responsabilità che è mia.
 
 Vale per **ogni** battito: quello automatico dei dieci minuti, quello chiesto col comando
 `recap`, quello di apertura con Gael e Neri (§6.16.2), quello di chiusura lavoro. Un battito

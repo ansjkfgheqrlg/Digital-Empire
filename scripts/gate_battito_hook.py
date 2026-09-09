@@ -115,6 +115,32 @@ def trova_battito(testo):
     return inizio, "\n".join(righe[inizio:fine])
 
 
+def battito_nascosto_in_fence(testo):
+    """True se il messaggio, tolti gli spazi, e' fatto SOLO da uno o piu' blocchi ``` e
+    uno di quei blocchi contiene un battito — nessuna prosa vera fuori dal blocco.
+
+    Caso pagato il 2026-09-09 (secondo giro): un battito consegnato a Max dentro un
+    blocco di codice, invisibile a `righe_reali` (che esclude il codice apposta, per non
+    bloccarmi quando SPIEGO il formato a Max). Se il blocco fosse ANCHE circondato da
+    prosa vera ("lo schema e' questo: ``` ... ``` chiaro?"), sarebbe legittimamente una
+    spiegazione — questa funzione lo lascia passare. Solo quando non c'e' NIENT'ALTRO nel
+    messaggio scatta il sospetto: qualcuno ha incollato il battito vero dentro un fence
+    invece di scriverlo come testo semplice.
+    """
+    dentro = False
+    dentro_fence = []
+    fuori_fence = []
+    for riga in testo.replace("\r\n", "\n").split("\n"):
+        spoglia = riga.strip()
+        if spoglia.startswith("```") or spoglia.startswith("~~~"):
+            dentro = not dentro
+            continue
+        (dentro_fence if dentro else fuori_fence).append(riga)
+    if any(r.strip() for r in fuori_fence):
+        return False  # c'e' prosa vera fuori: e' una spiegazione, non un battito nascosto
+    return any(SEGNALE_TITOLO.match(r) or SEGNALE_VOCE.match(r) for r in dentro_fence)
+
+
 def blocchi_testo_del_turno(percorso):
     """I blocchi `text` dell'ultimo turno, SEPARATI — non concatenati.
 
@@ -191,7 +217,14 @@ def main():
     for testo in messaggi:
         inizio, blocco = trova_battito(testo)
         if blocco is None:
-            continue  # questo messaggio non porta un battito: niente da sorvegliare
+            if battito_nascosto_in_fence(testo):
+                problemi.append(
+                    "il battito e' dentro un blocco di codice ``` — vietato (§6.11, "
+                    "2026-09-09): quel formato e' 'apposta per copiare' (parole di Max), "
+                    "si spezza nel renderer, e sparisce dal controllo di questo stesso gate. "
+                    "Riscrivilo come testo semplice, mai fra ```"
+                )
+            continue  # questo messaggio non porta un battito vero: niente altro da sorvegliare
 
         guai = valida(blocco)
 
@@ -209,13 +242,22 @@ def main():
     if not problemi:
         return 0
 
-    from verifica_recap import costruisci  # stesso principio: una sola fonte di verita'
+    # L'esempio e' un extra per rendere il messaggio di blocco piu' chiaro: se la sua
+    # generazione fallisce (es. un placeholder troppo lungo, come e' successo davvero il
+    # 2026-09-09 — bug che aveva SPENTO il gate intero, protetto dalla protezione 3), il
+    # BLOCCO VERO (deciso sopra, basato su `problemi`) non deve sparire con lui. Isolato
+    # apposta in un try proprio, cosi' un guaio qui non e' piu' un guaio ovunque.
+    esempio = ""
+    try:
+        from verifica_recap import costruisci  # stesso principio: una sola fonte di verita'
+        esempio = "\n\nEsempio di forma (valori segnaposto):\n\n" + costruisci(
+            "<riga, max 44 caratteri>", "<riga, max 44 caratteri>", "<riga, max 44 caratteri>",
+            ["<GRADO> <nome> <cosa fa>", "oppure: nessuna, sto lavorando da solo"],
+            "normale", 100, 0,
+        )
+    except Exception:
+        pass
 
-    esempio = costruisci(
-        "<una riga, fino a 4>", "<una riga, fino a 4>", "<una riga, fino a 4>",
-        ["<GRADO> <nome> <cosa fa> — una riga per forza, o \"nessuna, sto lavorando da solo\""],
-        "normale", 100, 0,
-    )
     motivo = (
         "GATE BATTITO — la forma non torna, il messaggio non parte cosi'.\n\n"
         + "\n".join("  - " + p for p in problemi)
@@ -223,8 +265,8 @@ def main():
         "su tutti i lati, centrati sullo stesso asse, freccia `↓` centrata fra un riquadro e "
         "il successivo. Ogni riquadro porta max 4 righe di contenuto, tranne Assetto+Potere "
         "che ne porta sempre 2. Non disegnarlo a mano: chiama `verifica_recap.costruisci(...)` "
-        "con i sei valori, che genera gia' bordi e centraggio corretti. Esempio di forma "
-        "(valori segnaposto):\n\n" + esempio
+        "con i sei valori, che genera gia' bordi e centraggio corretti. Mai dentro un blocco "
+        "```: sparisce dal controllo e si spezza nel renderer." + esempio
     )
 
     risposta = {"decision": "block", "reason": motivo}

@@ -1,15 +1,27 @@
-## 🟠 2026-09-09 — battito ristilizzato a quadrati chiusi e centrati, corretto in diretta da Max — CP-20260909-RWR2
+## 🟠 2026-09-09 — battito a quadrati: due giri di correzione + un bug che spegneva il gate — CP-20260909-RWR2
 
 Contenuto invariato (le sei voci restano quelle), cambiata solo la resa: titolo, poi cinque
 riquadri markdown chiusi su tutti e quattro i lati (`┌─...─┐`/`│ 🟠 <Nome>`/`└─...─┘`),
-centrati su uno stesso asse (largo quanto il piu' largo), uniti da frecce `↓` centrate,
-Assetto+Potere insieme nell'ultimo, max 4 frasi per riquadro. Rifiutato lo stile ad albero di
-`/frantuma`. **Un giro di correzione**: il primo tentativo aveva riquadri aperti a destra
-(paura di spazi compressi dal renderer) — Max ha mandato lo screenshot del battito vero (il
-renderer allinea benissimo) e ha rifiutato: *"i quadratini devono essere al centro e devono
-essere completamente chiusi e anche le frecce devono essere centrali"*. Rifatto.
-`verifica_recap.py` — nuova `costruisci()` a due passate (larghezza naturale poi centraggio);
-`gate_battito_hook.py` a lunghezza variabile. 8/8 test verdi.
+centrati su uno stesso asse, frecce `↓` centrate, Assetto+Potere insieme nell'ultimo, max 4
+frasi per riquadro. Rifiutato lo stile ad albero di `/frantuma`.
+
+**Due giri di correzione, stesso turno.** 1° giro: riquadri aperti a destra → Max ha mandato
+lo screenshot del battito vero (il renderer allinea benissimo) e ha rifiutato: *"i quadratini
+devono essere al centro e devono essere completamente chiusi e anche le frecce devono essere
+centrali"*. 2° giro: stesso identico difetto visto su un'ALTRA sessione (EMP-LAN1) — la
+regola da sola non bastava. Aggiunte due protezioni: **mai dentro un blocco ` ``` `**
+("apposta per copiare", parole di Max — e sparisce dal controllo del gate) e **tetto di 44
+caratteri per riga** (una riga troppo lunga si spezza da sola e rompe il rettangolo).
+`gate_battito_hook.py` ora rileva anche un battito incollato dentro un fence senza altro testo
+intorno.
+
+**Bug trovato nello stesso lavoro:** un placeholder d'esempio dentro il gate sforava il tetto
+appena creato → eccezione inghiottita dalla PROTEZIONE 3 ("qualunque errore esce 0 in
+silenzio") → **il gate intero si spegneva senza avviso**. Scoperto perche' la suite e'
+passata da 8/8 a 5/8. Corretto isolando quella generazione (facoltativa) in un try proprio.
+
+`verifica_recap.py` — `costruisci()` a due passate (larghezza naturale poi centraggio),
+rifiuta ora righe troppo lunghe invece di produrle storte. 10/10 test verdi.
 Dettagli: [CP-20260909-RWR2](checkpoints/CP-20260909-RWR2.md).
 
 ## 🟣 2026-09-09 — /frantuma: codice sorteggiato tipo-checkpoint (MT-XXXX), non un percorso — CP-20260909-JX89
