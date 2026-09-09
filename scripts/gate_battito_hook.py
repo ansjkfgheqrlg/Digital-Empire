@@ -29,22 +29,20 @@ TRE PROTEZIONI, tutte necessarie:
 Lo schema NON e' duplicato qui: si importa da `verifica_recap.py`, che resta l'unica fonte
 di verita' della forma (lezione §6.13 -- non esistono due corpi da tenere allineati).
 
-IL BATTITO VERO NON STA PIU' DENTRO UN BLOCCO DI CODICE (2026-09-09, 7º giro — REGOLA
-INVERTITA rispetto al 6º). Il 6º giro aveva messo il battito dentro ``` perche' li' lo
-spazio di centraggio non collassa. Funzionava per gli spazi, ma Max ha bocciato l'effetto
-collaterale mai controllato: nel suo renderer (VSCode) un blocco di codice e' un widget a
-se' — sfondo/testo blu, pulsante "copia" — non testo semplice, e resta comunque allineato a
-sinistra dentro quel rettangolo. Ordine di Max, testuale: *"non deve mai essere con quel
-formato da copiare e tutto di colori azzurri... dev'essere tutto centrato"*. Il battito ora
-e' una TABELLA markdown (intestazione vuota `| |`, separatore centrato `|:---:|`, una riga
-`| ... |` per cella) — il centraggio lo fa il renderer via CSS sulla colonna, non un
-conteggio di spazi mio, quindi non serve piu' nessun blocco di codice. Il titolo resta
-testo semplice fuori dalla tabella (e' l'unica riga a sinistra). Questo hook cerca il
-battito PRIMA dentro un fence in cima: se lo trova, e' VIETATO (era la regola del 6º giro,
-ora abrogata) e blocca con quel motivo specifico. Se il messaggio porta un tentativo di
-battito fuori da un fence (il formato giusto ora), lo valida come tabella. Un fence che non
-e' in cima, o che non apre con un titolo di battito come prima riga, o che ha prosa vera
-anche DOPO la sua chiusura, resta un ESEMPIO di documentazione e non viene toccato.
+IL BATTITO VERO NON STA MAI DENTRO UN BLOCCO DI CODICE (2026-09-09, fermo dal 7º giro). Il
+6º giro aveva messo il battito dentro ``` perche' li' lo spazio di centraggio non collassa.
+Funzionava per gli spazi, ma Max ha bocciato l'effetto collaterale mai controllato: nel suo
+renderer (VSCode) un blocco di codice e' un widget a se' — sfondo/testo blu, pulsante
+"copia" — non testo semplice. Ordine di Max, testuale: *"non deve mai essere con quel
+formato da copiare e tutto di colori azzurri"*. Questo divieto e' rimasto fermo anche
+all'8º giro (2026-09-09, piu' tardi): Max ha chiesto di tornare al formato SEMPLICE
+pre-centraggio — bullet `🟠 **<Etichetta>:** <contenuto libero>`, senza tabella e senza
+rientro a mano (vedi `verifica_recap.py` per la storia completa). Questo hook cerca il
+battito PRIMA dentro un fence in cima: se lo trova, e' VIETATO e blocca con quel motivo
+specifico. Se il messaggio porta un tentativo di battito fuori da un fence (il formato
+giusto), lo valida come bullet. Un fence che non e' in cima, o che non apre con un titolo
+di battito come prima riga, o che ha prosa vera anche DOPO la sua chiusura, resta un
+ESEMPIO di documentazione e non viene toccato.
 """
 
 import io
@@ -60,8 +58,8 @@ if QUI not in sys.path:
 # Segnali che il testo CONTIENE un tentativo di battito. Se non ce n'e' nessuno,
 # l'hook non ha niente da dire: non si impone un battito dove non serve.
 SEGNALE_TITOLO = re.compile(r"^\s*\*\*.{0,3}\s*RECAP\s*[—-]", re.IGNORECASE)
-SEGNALE_VOCE = re.compile(r"^\s*\|?\s*🟠 [^:]+:\s*\|?\s*$")  # fallback: `🟠 Fatto:` nuda o in cella `| 🟠 Fatto: |`
-SEGNALE_POTERE = re.compile(r"^\s*\|?\s*🟠 Potere: \d{1,3}%\s*\|?\s*$")  # ultima riga di ogni battito valido
+SEGNALE_VOCE = re.compile(r"^🟠 \*\*[^:]+:\*\*")  # fallback: una voce bullet, es. `🟠 **Fatto:** ...`
+SEGNALE_POTERE = re.compile(r"^🟠 \*\*Potere:\*\* \d{1,3}%$")  # ultima riga di ogni battito valido
 TETTO_RIGHE_BLOCCO = 60  # protezione anti-input-rotto: nessun battito reale supera questo
 
 
@@ -265,8 +263,8 @@ def main():
                 "il battito e' dentro un blocco di codice ``` — VIETATO dal 7º giro "
                 "(§6.11): nel renderer di Max un blocco di codice e' un widget blu con "
                 "pulsante copia, non testo semplice, e Max l'ha bocciato. Il battito ora "
-                "e' una TABELLA markdown (intestazione `| |`, separatore `|:---:|`, celle "
-                "`| ... |`) scritta in chiaro, MAI dentro ```. Togli il fence."
+                "sono bullet semplici (`🟠 **<Etichetta>:** <contenuto>`) scritti in "
+                "chiaro, MAI dentro ```. Togli il fence."
             )
         guai.extend(valida(blocco))
 
@@ -292,8 +290,8 @@ def main():
     try:
         from verifica_recap import costruisci  # stesso principio: una sola fonte di verita'
         esempio = "\n\nEsempio di forma (valori segnaposto):\n\n" + costruisci(
-            "<riga, max 44 caratteri>", "<riga, max 44 caratteri>", "<riga, max 44 caratteri>",
-            ["<GRADO> <nome> <cosa fa>", "oppure: nessuna, sto lavorando da solo"],
+            "<una frase libera>", "<una frase libera>", "<una frase libera>",
+            "nessuna, sto lavorando da solo",
             "normale", 100, 0,
         )
     except Exception:
@@ -302,13 +300,13 @@ def main():
     motivo = (
         "GATE BATTITO — la forma non torna, il messaggio non parte cosi'.\n\n"
         + "\n".join("  - " + p for p in problemi)
-        + "\n\nRiscrivi il battito nella forma fissa (emperator.md 6.11) — una TABELLA "
-        "markdown centrata: titolo in chiaro fuori dalla tabella, riga vuota, poi `| |` / "
-        "`|:---:|` / una riga `| ... |` per etichetta, contenuto e freccia `↓`. MAI dentro "
-        "un blocco di codice ```. Ogni voce porta max 4 righe di contenuto, tranne "
-        "Assetto+Potere che ne porta sempre 2. Non disegnarla a mano: chiama "
-        "`verifica_recap.costruisci(...)` con i sei valori, che genera gia' la tabella "
-        "corretta." + esempio
+        + "\n\nRiscrivi il battito nella forma fissa (emperator.md 6.11, 8º giro) — bullet "
+        "semplici, NIENTE centraggio: titolo in chiaro, riga vuota, poi `🟠 **<Etichetta>:** "
+        "<contenuto libero>` con una riga vuota dopo ognuno (Fatto, Sto facendo, Farò, "
+        "Forze, Assetto, Potere). MAI dentro un blocco di codice ```, MAI in tabella. Unica "
+        "eccezione: Forze con più unità nominate resta ad ALBERO (`🟠 **Forze:**` da sola, "
+        "poi `🟠 <NOME>` / `│` / `├─🟠→`/`└─🟠→`). Non disegnarlo a mano: chiama "
+        "`verifica_recap.costruisci(...)` con i sei valori." + esempio
     )
 
     risposta = {"decision": "block", "reason": motivo}
