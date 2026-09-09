@@ -10324,5 +10324,13 @@ su 9.** Scoperte migliori: DE ha già un bot trading più rigoroso di quello mos
 nessun canale outreach vocale esiste oggi in DE. Dettaglio completo in
 [CP-20260909-DDQY](checkpoints/CP-20260909-DDQY.md).
 
-**RIPRESA DA:** `EMP-W4K7` — resta il debito `max17` (`EMP-QQ2R`, fermo a 9/17), poi la Fase 2
-(implementazione dei consigli raccolti) solo su ordine esplicito di Max.
+**CORREZIONE nello stesso turno**: la riga sopra diceva "resta il debito max17, fermo a 9/17" —
+cifra vecchia ereditata da un checkpoint mai riverificato sul disco. **Falso**: `max17` è chiuso
+dal 2026-09-04 (vedi entry "FASE 1 EMP-QQ2R COMPLETA" più sopra in questo file). Verificato ora
+file per file: tutti i 14 video unici del lotto + il doc Justin Sung hanno video-analysis/atoms/
+wiki. Trovato un solo buco reale: `Source_Jay_E_Agentic_OS_Claude5.md` esisteva ma era orfana
+dall'index — agganciata in questo turno.
+
+**RIPRESA DA:** `EMP-W4K7` — sia `max17` che `max18` sono ora chiusi end-to-end. Resta solo la
+Fase 2 (implementazione dei consigli raccolti negli studi), che parte solo su ordine esplicito
+di Max.

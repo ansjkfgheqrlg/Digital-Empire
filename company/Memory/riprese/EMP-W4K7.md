@@ -250,8 +250,16 @@ di gap-analysis piu' rilevanti (bot trading gia' piu' rigoroso in `12-STREAM-S7-
 gia' `ADR-006`, gap vero sul canale outreach vocale), in
 [CP-20260909-DDQY](../checkpoints/CP-20260909-DDQY.md).
 
-**RIPRENDI DA QUI:** resta solo il debito `max17` (§3 sotto, invariato — 8 video mai iniziati/
-parziali), poi la Fase 2 (§4-5, solo su ordine esplicito di Max), poi il Libro dell'Agency (§4-bis).
+**CORREZIONE, stesso turno:** avevo scritto sopra "resta solo il debito max17 (8 video mai
+iniziati/parziali)" — falso, cifra ereditata senza riverificare. `max17` (`EMP-QQ2R`) e' chiuso
+dal 2026-09-04 (vedi `STATO-EMPIRE.md`, "FASE 1 EMP-QQ2R COMPLETA"): 14/14 video unici + doc
+Justin Sung hanno video-analysis/atoms/wiki, verificato file per file. Unico buco reale trovato:
+`Source_Jay_E_Agentic_OS_Claude5.md` orfana dall'index, agganciata in questo turno. Il §3 sotto
+(scritto 2026-09-04, prima di questa verifica) resta come cronaca ma non descrive piu' lo stato
+vero — non fidarsi del suo riepilogo senza rileggere `EMP-QQ2R.md` §3-4 per intero.
+
+**RIPRENDI DA QUI:** sia `max17` che `max18` sono chiusi end-to-end. Prossimo passo: la Fase 2
+(§4-5 sotto, solo su ordine esplicito di Max), poi il Libro dell'Agency (§4-bis).
 
 ## 3. COSA E' RIMASTO A META'
 

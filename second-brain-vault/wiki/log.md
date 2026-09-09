@@ -2309,5 +2309,14 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 
 **LOTTO max18 — FASE 1 CHIUSA: 6/6 pagine wiki scritte (v04, v05, v06, v07, v08, v09).** Tutte le
 9 fonti del lotto sono ora chiuse end-to-end (visione + atomi + grafo saldato + wiki + archivio).
-Resta solo `max17` (`EMP-QQ2R`, fermo a 9/17) come debito residuo della Fase 1 complessiva, poi la
-Fase 2 (implementazione dei consigli raccolti) su ordine esplicito di Max.
+
+**CORREZIONE, stesso turno**: avevo scritto sopra "resta il debito max17 (EMP-QQ2R, fermo a
+9/17)" — **falso**, cifra vecchia ereditata senza riverificare sul disco. `max17` è chiuso dal
+2026-09-04 (`STATO-EMPIRE.md` riga 1228, "FASE 1 EMP-QQ2R COMPLETA"): tutti i 14 video unici del
+lotto (v01-v08, v10, v11, v14, v15, v16, v17 — v09/v12/v13 sono doppioni già chiusi) + il doc
+Justin Sung hanno `video-analysis.md`/`atoms.json`/pagina wiki, verificato file per file. **Unico
+buco reale trovato**: `Source_Jay_E_Agentic_OS_Claude5.md` esisteva ma era orfana, mai agganciata
+in `wiki/index.md` — proprio la fonte da cui viene la regola "puntatore stale" ora in
+`CLAUDE.md`. Agganciata in questo turno sotto "Second Brain & Knowledge Architecture". Con
+questo, **sia max17 che max18 sono chiusi end-to-end** — resta solo la Fase 2 (implementazione
+dei consigli raccolti), su ordine esplicito di Max.

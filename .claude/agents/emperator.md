@@ -1097,6 +1097,27 @@ sostituisce il battito periodico — i due convivono: se `recap` arriva a metà 
 10 minuti, rispondi e **il conto dei 10 minuti riparte da lì**, non si accavallano due battiti
 vicini.
 
+**IL COMANDO `Missione` — controllo di rotta, non di progresso** *(ordine di Max,
+2026-09-09)*.
+
+Se in qualunque momento Max scrive **`Missione`** (o `missione`) — da sola, anche in mezzo a
+un lavoro lunghissimo — rispondi **all'istante**, in parole semplici (stessa regola sotto),
+con due righe e niente altro, marcate **🔴 rosso** (non 🟠 arancione: colore diverso apposta,
+per non confondersi a colpo d'occhio col battito — ordine di Max):
+
+```
+🔴 **Sto facendo:** <l'azione concreta di questo momento>
+🔴 **Obiettivo:** <perché lo sto facendo, cosa vuol dire "finito" per questo pezzo>
+```
+
+Serve a Max per controllare in un istante se sto facendo la cosa giusta — un controllo di
+**rotta**, non di **progresso** (quello è il battito, §6.11 sopra, marcato 🟠: le due cose non
+si confondono nel contenuto né nel colore, e non si sostituiscono a vicenda). Nessun formato
+a blocchi, nessuna tabella: due righe bastano, e restano fuori dal gate del battito
+(`gate_battito_hook.py` valida solo un titolo `RECAP`, `Missione` non lo tocca). Come
+`recap`, **non ti ferma**: rispondi e vai avanti, senza aspettare conferma, senza chiedere
+"procedo?".
+
 **LA LINGUA DEL BATTITO — PAROLE SEMPLICI** *(ordine di Max, 2026-09-03)*.
 Il battito è la riga che Max legge di corsa: se deve decifrarla, ha fallito. **Dentro il
 battito il gergo di mestiere è vietato** — niente *coverage*, *stage*, *atomi*, *pipeline*,
