@@ -630,30 +630,60 @@ sempre in questa forma:
 ```
 **⏱️ RECAP — <n>%**
 
-🟠 **Fatto:** <una riga>
-🟠 **Sto facendo:** <una riga>
-🟠 **Farò:** <una riga>
-🟠 **Forze:** <n> attive — <GRADO> <nome> <cosa fa> | <GRADO> <nome> <cosa fa>
-🟠 **Assetto:** **GOD EMPEROR DOOM** | normale
-🟠 **Potere:** <n>%
+┌───
+│ 🟠 Fatto
+│ <riga 1, fino a 4 righe>
+└───
+↓
+┌───
+│ 🟠 Sto facendo
+│ <riga 1, fino a 4 righe>
+└───
+↓
+┌───
+│ 🟠 Farò
+│ <riga 1, fino a 4 righe>
+└───
+↓
+┌───
+│ 🟠 Forze
+│ <n> attive — <GRADO> <nome> <cosa fa>   (una riga per forza, fino a 4)
+└───
+↓
+┌───
+│ 🟠 Assetto
+│ normale  |  **GOD EMPEROR DOOM**
+│ 🟠 Potere: <n>%
+└───
 ```
 
-**LA FORMA DEL BATTITO È FISSA, CARATTERE PER CARATTERE** *(ordine di Max, 2026-09-05)*.
+**LA FORMA DEL BATTITO È FISSA, CARATTERE PER CARATTERE** *(ordine di Max, 2026-09-05; resa a
+quadrati ordinata da Max il 2026-09-09)*.
 
 Non è un gusto grafico: Max legge il battito **di corsa**, e un formato che cambia ogni volta
-lo costringe a rileggerlo per capire dov'è il numero e dove finisce una riga. Sei regole,
+lo costringe a rileggerlo per capire dov'è il numero e dove finisce un riquadro. Regole,
 nessuna facoltativa:
 
 1. **`⏱️ RECAP — <n>%` in grassetto**, da solo sulla prima riga, con la percentuale sempre.
-2. **Riga vuota** fra il titolo e le sei voci.
-3. **Ogni voce comincia con il pallino arancione 🟠** — il punto elenco grande e colorato,
-   arancione perché è il colore dell'Impero (`#fb4604`). Mai un trattino, mai un `•`,
-   mai una voce senza pallino.
-4. **Le sei etichette sono in grassetto e coi due punti**: **Fatto:** · **Sto facendo:** ·
-   **Farò:** · **Forze:** · **Assetto:** · **Potere:**. Sempre queste sei, sempre in
-   quest'ordine, sempre tutte — anche quando una vale "nessuna".
-5. **`GOD EMPEROR DOOM` si scrive in grassetto** dentro la riga Assetto; `normale` no.
-6. **Il testo dopo l'etichetta è normale** (non grassetto) e sta su **una riga sola**.
+2. **Riga vuota** fra il titolo e il primo riquadro.
+3. **Cinque riquadri, in quest'ordine, sempre tutti**: Fatto → Sto facendo → Farò → Forze →
+   Assetto+Potere insieme nell'ultimo. Ogni riquadro è `┌───` sulla riga sopra, `│ 🟠
+   <Etichetta>` come prima riga dentro, poi il contenuto, poi `└───` sotto. **Aperto sul lato
+   destro** — niente bordo destro allineato: imbottire il testo con spazi multipli per farlo
+   quadrare rischia di essere compresso dal renderer che mostra il messaggio a Max, e un bordo
+   storto è peggio di nessun bordo (lezione tecnica del 2026-09-09, vedi `verifica_recap.py`).
+4. **Fra un riquadro e il successivo, una riga con solo la freccia `↓`** — nessun'altra cosa su
+   quella riga.
+5. **Ogni riquadro porta fino a 4 righe di contenuto** (Fatto, Sto facendo, Farò, Forze — una
+   frase per riga, mai un paragrafo unico); il riquadro Assetto+Potere ne porta **sempre
+   esattamente 2**: l'assetto (`normale` o `**GOD EMPEROR DOOM**` in grassetto — unica
+   eccezione al grassetto) e poi `🟠 Potere: <n>%`. Anche quando una voce vale "nessuna" il
+   riquadro resta: non si salta mai.
+6. **Generato dal codice, non disegnato a mano** — stesso principio di `frantuma.py`:
+   `scripts/verifica_recap.py` espone `costruisci(fatto, sto_facendo, farò, forze, assetto,
+   potere, percentuale)` che restituisce il testo già corretto. Disegnare `┌│└─↓` a mano riga
+   per riga è la stessa trappola dei conteggi a mano che ha già fatto cadere altre regole
+   (§6.24): usa la funzione quando il canale lo permette.
 
 Vale per **ogni** battito: quello automatico dei dieci minuti, quello chiesto col comando
 `recap`, quello di apertura con Gael e Neri (§6.16.2), quello di chiusura lavoro. Un battito
@@ -850,15 +880,34 @@ del battito (§6.11), aggiornato a **quel secondo**, non all'ultimo giro fatto:
 ```
 **⏱️ RECAP — <n>%**
 
-🟠 **Fatto:** <una riga>
-🟠 **Sto facendo:** <una riga>
-🟠 **Farò:** <una riga>
-🟠 **Forze:** <n> attive — <GRADO> <nome> <cosa fa> | ...
-🟠 **Assetto:** **GOD EMPEROR DOOM** | normale
-🟠 **Potere:** <n>%
+┌───
+│ 🟠 Fatto
+│ <riga>
+└───
+↓
+┌───
+│ 🟠 Sto facendo
+│ <riga>
+└───
+↓
+┌───
+│ 🟠 Farò
+│ <riga>
+└───
+↓
+┌───
+│ 🟠 Forze
+│ <riga>
+└───
+↓
+┌───
+│ 🟠 Assetto
+│ normale  |  **GOD EMPEROR DOOM**
+│ 🟠 Potere: <n>%
+└───
 ```
 
-— stessa forma fissa di §6.11, sei voci col pallino arancione, nessuna esclusa.
+— stessa forma fissa di §6.11, cinque riquadri a quadrati, nessuno escluso.
 
 **Vale sempre**, non solo sopra i ~15 minuti: `recap` è una richiesta diretta di Max, e una
 richiesta diretta non si misura con la soglia che governa la tua iniziativa. Se il lavoro è

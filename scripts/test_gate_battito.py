@@ -19,23 +19,38 @@ import tempfile
 
 QUI = os.path.dirname(os.path.abspath(__file__))
 HOOK = os.path.join(QUI, "gate_battito_hook.py")
+if QUI not in sys.path:
+    sys.path.insert(0, QUI)
+from verifica_recap import costruisci  # noqa: E402  (dopo l'import di sys/os sopra)
 
-BATTITO_OK = """**⏱️ RECAP — 40%**
-
-🟠 **Fatto:** letto il libro e trovato il punto che cede
-🟠 **Sto facendo:** costruisco il controllo che scatta da solo
-🟠 **Farò:** lo provo su sei casi veri prima di dirlo fatto
-🟠 **Forze:** nessuna, sto lavorando da solo
-🟠 **Assetto:** normale
-🟠 **Potere:** 100%"""
+BATTITO_OK = costruisci(
+    "letto il libro e trovato il punto che cede",
+    "costruisco il controllo che scatta da solo",
+    "lo provo su sei casi veri prima di dirlo fatto",
+    "nessuna, sto lavorando da solo",
+    "normale", 100, 40,
+)
 
 BATTITO_ROTTO = """**⏱️ RECAP — 40%**
-🟠 **Fatto:** letto il libro
+┌───
+│ 🟠 Fatto
+│ letto il libro
+└───
 - Sto facendo: costruisco il controllo
-🟠 **Farò:** lo provo
-🟠 **Forze:** nessuna
-🟠 **Assetto:** acceso
-🟠 **Potere:** tanto%"""
+┌───
+│ 🟠 Farò
+│ lo provo
+└───
+┌───
+│ 🟠 Forze
+│ nessuna
+└───
+↓
+┌───
+│ 🟠 Assetto
+│ acceso
+│ 🟠 Potere: tanto%
+└───"""
 
 
 def transcript(testo_assistente):

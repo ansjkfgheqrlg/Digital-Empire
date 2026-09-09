@@ -27,6 +27,13 @@ TRE PROTEZIONI, tutte necessarie:
 
 Lo schema NON e' duplicato qui: si importa da `verifica_recap.py`, che resta l'unica fonte
 di verita' della forma (lezione §6.13 -- non esistono due corpi da tenere allineati).
+
+FORMA A QUADRATI (2026-09-09). Il battito e' passato da sei righe piatte a un titolo +
+cinque riquadri variabili in altezza (1-4 righe di contenuto ciascuno, tranne l'ultimo
+che ne ha sempre due) uniti da frecce `↓`. Non esiste piu' una lunghezza fissa da
+tagliare (le vecchie "8 righe"): `trova_battito` ora scorre riquadro per riquadro finche'
+non chiude l'ultimo (Assetto+Potere), o si arrende dopo un tetto di righe a prova di
+input rotto/infinito.
 """
 
 import io
@@ -42,7 +49,8 @@ if QUI not in sys.path:
 # Segnali che il testo CONTIENE un tentativo di battito. Se non ce n'e' nessuno,
 # l'hook non ha niente da dire: non si impone un battito dove non serve.
 SEGNALE_TITOLO = re.compile(r"^\s*\*\*.{0,3}\s*RECAP\s*[—-]", re.IGNORECASE)
-SEGNALE_VOCE = re.compile(r"^🟠")
+SEGNALE_VOCE = re.compile(r"^│\s*🟠\s")  # fallback: l'etichetta dentro un riquadro
+TETTO_RIGHE_BLOCCO = 60  # protezione anti-input-rotto: nessun battito reale supera questo
 
 
 def righe_reali(testo):
@@ -68,11 +76,15 @@ def righe_reali(testo):
 
 
 def trova_battito(testo):
-    """Ritorna (indice_prima_riga, blocco_di_8_righe) del battito, o (None, None).
+    """Ritorna (indice_prima_riga, blocco) del battito, o (None, None).
 
-    Il battito e' titolo + riga vuota + sei voci: si prende quella finestra e la si passa
-    al validatore vero. Se c'e' solo un troncone (voci senza titolo), si passa quello: il
-    validatore dira' esattamente cosa manca.
+    Il battito e' titolo + riga vuota + cinque riquadri (§6.11, forma a quadrati,
+    2026-09-09): altezza variabile, non piu' un numero fisso di righe. Si scorre dal
+    titolo (o, in mancanza, dalla prima etichetta `│ 🟠 ...` trovata) fino a chiudere il
+    quinto bordo inferiore `└─...`, contando i bordi superiori `┌─...` incontrati — quello
+    e' il segnale strutturale che non dipende dal contenuto delle righe in mezzo, che
+    `verifica_recap.valida` giudichera' nel dettaglio. Un tetto di righe protegge da un
+    input senza mai un bordo inferiore (rotto o non un battito affatto).
     """
     righe = testo.replace("\r\n", "\n").split("\n")
     utili = {i: r for i, r in righe_reali(testo) if r is not None}
@@ -90,7 +102,17 @@ def trova_battito(testo):
     if inizio is None:
         return None, None
 
-    return inizio, "\n".join(righe[inizio:inizio + 8])
+    bordi_superiori_attesi = 5
+    trovati = 0
+    fine = min(len(righe), inizio + TETTO_RIGHE_BLOCCO)
+    for i in range(inizio, fine):
+        if righe[i].startswith("┌─"):
+            trovati += 1
+        if trovati >= bordi_superiori_attesi and righe[i].startswith("└─"):
+            fine = i + 1
+            break
+
+    return inizio, "\n".join(righe[inizio:fine])
 
 
 def blocchi_testo_del_turno(percorso):
@@ -190,14 +212,35 @@ def main():
     motivo = (
         "GATE BATTITO — la forma non torna, il messaggio non parte cosi'.\n\n"
         + "\n".join("  - " + p for p in problemi)
-        + "\n\nRiscrivi il battito nella forma fissa (emperator.md 6.11), poi consegna:\n\n"
+        + "\n\nRiscrivi il battito nella forma fissa a quadrati (emperator.md 6.11), poi "
+        "consegna (ogni riquadro max 4 righe di contenuto, tranne Assetto+Potere che ne ha "
+        "sempre 2; usa verifica_recap.costruisci(...) invece di disegnarlo a mano):\n\n"
         "**⏱️ RECAP — <n>%**\n\n"
-        "\U0001f7e0 **Fatto:** <una riga>\n"
-        "\U0001f7e0 **Sto facendo:** <una riga>\n"
-        "\U0001f7e0 **Farò:** <una riga>\n"
-        "\U0001f7e0 **Forze:** <n> attive — <GRADO> <nome> <cosa fa>  |  nessuna, sto lavorando da solo\n"
-        "\U0001f7e0 **Assetto:** **GOD EMPEROR DOOM**  |  normale\n"
-        "\U0001f7e0 **Potere:** <n>%\n"
+        "┌───\n"
+        "│ \U0001f7e0 Fatto\n"
+        "│ <riga>\n"
+        "└───\n"
+        "↓\n"
+        "┌───\n"
+        "│ \U0001f7e0 Sto facendo\n"
+        "│ <riga>\n"
+        "└───\n"
+        "↓\n"
+        "┌───\n"
+        "│ \U0001f7e0 Farò\n"
+        "│ <riga>\n"
+        "└───\n"
+        "↓\n"
+        "┌───\n"
+        "│ \U0001f7e0 Forze\n"
+        "│ <riga>  (una per forza, o \"nessuna, sto lavorando da solo\")\n"
+        "└───\n"
+        "↓\n"
+        "┌───\n"
+        "│ \U0001f7e0 Assetto\n"
+        "│ normale  |  **GOD EMPEROR DOOM**\n"
+        "│ \U0001f7e0 Potere: <n>%\n"
+        "└───\n"
     )
 
     risposta = {"decision": "block", "reason": motivo}
