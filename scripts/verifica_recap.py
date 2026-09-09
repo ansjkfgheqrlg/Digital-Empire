@@ -12,6 +12,19 @@ disciplina del turno in corso, che un contesto lungo o una riga scritta di frett
 Questo script e' il controllo che non dipende dalla memoria del momento: legge un battito
 e dice SI o NO, con la riga esatta che non torna.
 
+FORMA A QUADRATI (2026-09-09, ordine di Max — solo estetica, il contenuto delle sei voci
+non cambia). Il vecchio elenco piatto a sei righe con pallino era corretto ma illeggibile
+di corsa. Max ha chiesto esplicitamente un formato diverso da quello di `frantuma.py`
+(niente albero con rami `├──`): titolo, poi cinque riquadri in markdown puro (mai dentro
+```: un blocco di codice sparisce dal controllo, vedi `righe_reali` in
+gate_battito_hook.py), uno per Fatto / Sto facendo / Farò / Forze / Assetto+Potere,
+uniti da una freccia `↓` su riga propria. Ogni riquadro e' aperto sul lato destro (solo
+`┌─...`, `│ testo`, `└─...`) apposta: un bordo destro allineato richiederebbe imbottire
+il testo con spazi multipli, e gli spazi multipli fuori da un blocco di codice possono
+essere compressi dal renderer che mostra il messaggio a Max — un bordo destro storto
+sarebbe peggio di nessun bordo destro. Nessuna larghezza va quindi confrontata fra
+riquadri: si controlla solo che i caratteri giusti (┌ │ └ ─ ↓) siano nei punti giusti.
+
 USO (prima di inviare OGNI battito):
     printf '%s' "<testo del battito>" | py -3 scripts/verifica_recap.py
     py -3 scripts/verifica_recap.py --file percorso\\al\\battito.txt
@@ -25,23 +38,105 @@ import io
 import re
 import sys
 
-# Le sei voci, sempre in quest'ordine (emperator.md §6.11, regola 4).
-# Il secondo elemento, se presente, e' il vincolo sul VALORE dopo l'etichetta.
-VOCI = [
-    ("Fatto", None),
-    ("Sto facendo", None),
-    ("Farò", None),
-    ("Forze", None),
-    ("Assetto", r"(\*\*GOD EMPEROR DOOM\*\*|normale)"),
-    ("Potere", r"\d{1,3}%"),
+# I cinque riquadri, in ordine fisso (emperator.md §6.11). Il secondo elemento e' il
+# numero di righe di contenuto ammesse dopo l'etichetta (min, max) — "MAX quattro frasi"
+# per le prime quattro (ordine di Max, 2026-09-09); il quinto e' Assetto+Potere insieme,
+# sempre esattamente due righe (l'assetto, poi il potere).
+RIQUADRI = [
+    ("Fatto", 1, 4),
+    ("Sto facendo", 1, 4),
+    ("Farò", 1, 4),
+    ("Forze", 1, 4),
+    ("Assetto", 2, 2),
 ]
 
 TITOLO_RE = re.compile(r"^\*\*⏱️ RECAP — (\d{1,3})%\*\*$")
+TOP_RE = re.compile(r"^┌─+$")
+BOTTOM_RE = re.compile(r"^└─+$")
+RIGA_RE = re.compile(r"^│ (.+)$")
+FRECCIA = "↓"
+ASSETTO_RE = re.compile(r"^(\*\*GOD EMPEROR DOOM\*\*|normale)$")
+POTERE_RE = re.compile(r"^🟠 Potere: (\d{1,3})%$")
 
 
 def _leggi_stdin():
     grezzo = sys.stdin.buffer.read()
     return grezzo.decode("utf-8", "replace")
+
+
+def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
+    """Legge un riquadro a partire da `idx` (che deve puntare a `┌─...`).
+
+    Ritorna l'indice subito dopo `└─...`. Non solleva mai — accumula i problemi
+    e prova comunque a ripartire dalla riga successiva, cosi' un solo riquadro
+    rotto non nasconde gli errori di quelli dopo.
+    """
+    if idx >= len(righe) or not TOP_RE.match(righe[idx]):
+        problemi.append(
+            "riga %d: atteso il bordo superiore del riquadro '%s' (`┌─...`), trovato: %r"
+            % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
+        )
+        return idx + 1
+    idx += 1
+
+    if idx >= len(righe) or righe[idx] != "│ 🟠 %s" % etichetta:
+        problemi.append(
+            "riga %d: attesa l'etichetta `│ 🟠 %s`, trovato: %r"
+            % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
+        )
+    else:
+        idx += 1
+
+    contenuto = []
+    while idx < len(righe) and RIGA_RE.match(righe[idx]) and not BOTTOM_RE.match(righe[idx]):
+        contenuto.append((idx, RIGA_RE.match(righe[idx]).group(1)))
+        idx += 1
+
+    if len(contenuto) < min_righe:
+        problemi.append(
+            "riquadro '%s': servono almeno %d riga/e di contenuto, trovate %d"
+            % (etichetta, min_righe, len(contenuto))
+        )
+    if len(contenuto) > max_righe:
+        problemi.append(
+            "riquadro '%s': massimo %d riga/e di contenuto (ordine di Max, 2026-09-09), "
+            "trovate %d — accorcia" % (etichetta, max_righe, len(contenuto))
+        )
+    for riga_num, valore in contenuto:
+        if not valore.strip():
+            problemi.append("riga %d: riga del riquadro '%s' vuota" % (riga_num + 1, etichetta))
+        elif "**" in valore and valore.strip() != "**GOD EMPEROR DOOM**":
+            problemi.append(
+                "riga %d: il contenuto del riquadro '%s' non va in grassetto (eccezione unica: "
+                "`**GOD EMPEROR DOOM**` nel riquadro Assetto)" % (riga_num + 1, etichetta)
+            )
+
+    if etichetta == "Assetto" and len(contenuto) >= 1:
+        valore_assetto = contenuto[0][1]
+        if not ASSETTO_RE.match(valore_assetto):
+            problemi.append(
+                "riga %d: valore di Assetto non valido (%r) — atteso `normale` oppure "
+                "`**GOD EMPEROR DOOM**`" % (contenuto[0][0] + 1, valore_assetto)
+            )
+        if len(contenuto) >= 2:
+            valore_potere = contenuto[1][1]
+            if not POTERE_RE.match(valore_potere):
+                problemi.append(
+                    "riga %d: attesa `🟠 Potere: <n>%%`, trovato: %r"
+                    % (contenuto[1][0] + 1, valore_potere)
+                )
+            else:
+                n = int(POTERE_RE.match(valore_potere).group(1))
+                if n > 100:
+                    problemi.append("riga %d: potere %d%% impossibile (>100)" % (contenuto[1][0] + 1, n))
+
+    if idx >= len(righe) or not BOTTOM_RE.match(righe[idx]):
+        problemi.append(
+            "riga %d: atteso il bordo inferiore del riquadro '%s' (`└─...`), trovato: %r"
+            % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
+        )
+        return idx + 1
+    return idx + 1
 
 
 def valida(testo):
@@ -62,7 +157,7 @@ def valida(testo):
     m = TITOLO_RE.match(titolo)
     if not m:
         problemi.append(
-            "riga %d: titolo non conforme — atteso `**\u23f1\ufe0f RECAP \u2014 <n>%%**` "
+            "riga %d: titolo non conforme — atteso `**⏱️ RECAP — <n>%%**` "
             "in grassetto da solo, trovato: %r" % (riga_num, righe[idx])
         )
     else:
@@ -71,50 +166,65 @@ def valida(testo):
             problemi.append("riga %d: percentuale %d%% impossibile (>100)" % (riga_num, n))
     idx += 1
 
-    # riga vuota fra titolo e le sei voci (regola 2)
+    # riga vuota fra il titolo e il primo riquadro (stessa regola di sempre)
     if idx >= len(righe) or righe[idx].strip() != "":
-        riga_num = idx + 1
-        problemi.append("riga %d: manca la riga vuota fra il titolo e le sei voci" % riga_num)
+        problemi.append("riga %d: manca la riga vuota fra il titolo e il primo riquadro" % (idx + 1))
     else:
         idx += 1
 
-    # le sei voci, in ordine, nessuna esclusa (regola 4)
-    for label, vincolo_valore in VOCI:
-        riga_num = idx + 1
-        if idx >= len(righe):
-            problemi.append("manca la voce '%s:' — il battito è troncato" % label)
-            continue
-        riga = righe[idx]
-        pattern = r"^🟠 \*\*%s:\*\* (.+)$" % re.escape(label)
-        m = re.match(pattern, riga)
-        if not m:
-            problemi.append(
-                "riga %d: attesa `🟠 **%s:** ...`, trovato: %r" % (riga_num, label, riga)
-            )
-        else:
-            valore = m.group(1).strip()
-            if not valore:
-                problemi.append("riga %d: voce '%s' senza contenuto dopo i due punti" % (riga_num, label))
-            elif vincolo_valore and not re.fullmatch(vincolo_valore, valore):
+    # i cinque riquadri, in ordine, separati da una riga con solo la freccia ↓
+    for i, (etichetta, mn, mx) in enumerate(RIQUADRI):
+        idx = _riquadro(righe, idx, etichetta, mn, mx, problemi)
+        e_ultimo = i == len(RIQUADRI) - 1
+        if not e_ultimo:
+            if idx >= len(righe) or righe[idx].strip() != FRECCIA:
                 problemi.append(
-                    "riga %d: valore di '%s' non valido (%r) — atteso uno fra %s"
-                    % (riga_num, label, valore, vincolo_valore)
+                    "riga %d: manca la freccia `%s` su riga propria fra i riquadri '%s' e '%s'"
+                    % (idx + 1, FRECCIA, etichetta, RIQUADRI[i + 1][0])
                 )
-            # regola 6: niente grassetto sparso nel valore, tranne GOD EMPEROR DOOM in Assetto
-            if label != "Assetto" and "**" in valore:
-                problemi.append(
-                    "riga %d: il testo dopo l'etichetta '%s' non va in grassetto" % (riga_num, label)
-                )
-        idx += 1
+            else:
+                idx += 1
 
-    # righe residue non vuote subito dopo le sei voci = settima voce o testo attaccato
+    # righe residue non vuote dopo l'ultimo riquadro = testo attaccato al battito
     if idx < len(righe) and righe[idx].strip() != "":
         problemi.append(
-            "riga %d: contenuto extra subito dopo le sei voci (%r) — il battito è tre blocchi, "
-            "non uno più lungo" % (idx + 1, righe[idx])
+            "riga %d: contenuto extra subito dopo l'ultimo riquadro (%r) — il battito finisce "
+            "col bordo di Assetto/Potere" % (idx + 1, righe[idx])
         )
 
     return problemi
+
+
+def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
+    """Genera il testo del battito a partire dai valori — cosi' non si disegnano i
+    riquadri a mano (stesso principio di frantuma.py: generato dal codice, mai scritto
+    a mano). Ogni argomento voce e' una stringa o una lista di 1-4 righe; `assetto` e'
+    "normale" oppure "GOD EMPEROR DOOM" (senza asterischi, li aggiunge la funzione)."""
+    def _righe(v):
+        return v if isinstance(v, list) else [v]
+
+    blocchi = [
+        ("Fatto", _righe(fatto)),
+        ("Sto facendo", _righe(sto_facendo)),
+        ("Farò", _righe(farò)),
+        ("Forze", _righe(forze)),
+        ("Assetto", [
+            "**GOD EMPEROR DOOM**" if assetto == "GOD EMPEROR DOOM" else "normale",
+            "🟠 Potere: %d%%" % potere,
+        ]),
+    ]
+
+    out = ["**⏱️ RECAP — %d%%**" % percentuale, ""]
+    for i, (etichetta, righe) in enumerate(blocchi):
+        larghezza = max([len(etichetta) + 3] + [len(r) for r in righe]) + 2
+        out.append("┌" + "─" * larghezza)
+        out.append("│ 🟠 %s" % etichetta)
+        for r in righe:
+            out.append("│ %s" % r)
+        out.append("└" + "─" * larghezza)
+        if i < len(blocchi) - 1:
+            out.append(FRECCIA)
+    return "\n".join(out)
 
 
 def main():

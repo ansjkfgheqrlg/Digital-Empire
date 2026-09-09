@@ -10048,3 +10048,17 @@ puntatori su 17 stale, la vecchia skill e' un ingresso legacy).
 Markdown + Python + PDF, e consegna alla sessione che costruisce LANCI
 (`company/Memory/tasks/TASK-LANCI-20260908-ANATOMIA-ANDREI-PASCU.md`). E' "fatta" solo quando quella
 sessione l'ha ricevuta e puo' usarla.
+
+## 2026-09-09 — PAUSA su ordine di Max (contesto saturo) — RIPRESA: EMP-LAN1 (CP-20260909-J2TJ)
+
+**Studio dei siti: CHIUSO, 56 su 56.** Subito dopo e' partita la PARTE VI, l'anatomia dei lanci per
+l'ecosistema LANCI, e ne e' stata scritta **la prima delle tre forme**:
+`competitor/Andrei Pascu/ANATOMIA-DEI-LANCI.md` (dieci parti, tutte su misure reali).
+
+**RESTANO due forme su tre**, come da ordine di Max: la forma **Python** (`anatomia_lanci.py`, dati
+interrogabili + generatore) e il **PDF** con `pdf_engine_empire.py`, col doppione obbligatorio in
+`documentazione Empire/Lanci/`. Poi la consegna alla sessione LANCI, che e' "fatta" solo quando
+quella sessione l'ha ricevuta (ADR-016).
+
+**RIPRESA DA:** dire **`EMP-LAN1`** in una chat nuova. Dentro ci sono i numeri gia' misurati,
+l'interfaccia del motore PDF e le trappole pagate: non si rifa' niente.
