@@ -13,6 +13,11 @@ Riferimenti: TASK-GAEL-20260831-SETTIMANA-02.md (chiusa) · TASK-LANCI-ECO-W2 (i
 
 ## 0. Cosa è cambiato da lunedì, prima di leggere le task
 
+- **⚠️ 09/09 — se sei fermo su 1️⃣: leggi [CP-20260909-DA2P](../checkpoints/CP-20260909-DA2P.md)
+  e la voce in cima a `STATO-EMPIRE.md`.** `MT-FJF6`/`MT-32RU`/`MT-CV7N` sono "mani umane",
+  aspettano un gesto reale di Max (già chiesto). **Tu non sei fermo su tutto**: prendi
+  `TASK-KDP-3LIBRI-W3` (6️⃣, 0/3, indipendente) o le micro-task da `MT-F37C` in giù — non
+  aspettare le prime tre per muoverti.
 - **ADR-025 firmato da Max l'08/09.** `company/Ecosistemi/15-LANCI/` può nascere. Nessun altro
   passaggio da Max è richiesto per costruire.
 - **ADR-026, regola permanente:** una task che ti assegna Max è già la tua autorizzazione

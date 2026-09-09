@@ -15,9 +15,9 @@
  "scene_analizzate": 494,
  "copertura": "494/494 = 100%, contata sul disco",
  "atomi": 323,
- "archi": 273,
- "componenti_connesse": 83,
- "orfani": 37,
+ "archi": 360,
+ "componenti_connesse": 5,
+ "orfani": 0,
  "ancore_non_verificabili": 0,
  "atomi_per_tipo": {
   "principio": 55,

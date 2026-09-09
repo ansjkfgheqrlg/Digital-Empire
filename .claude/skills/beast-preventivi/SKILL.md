@@ -120,6 +120,16 @@ Landing page agency → cliente e-commerce fashion: `assets/examples/landing-pag
 
 ---
 
+## Riferimento futuro (non applicato)
+
+Lo studio competitor su Andrei Pascu (cs2online Bonus 6) documenta un sistema maturo di generazione
+preventivi via AI con struttura a pagine (flowchart + SOP + skill Obsidian), osservato per intero in
+un corso a pagamento — utile come secondo caso di studio se in futuro si decide di estendere questa
+skill con automazione AI. Non risolve la tensione aperta su breakdown prezzi sì/no (segnalata a Max
+nel run YouTube, mai decisa) — resta una scelta di Max.
+
+---
+
 ## Routing rapido
 
 | Se vuoi... | File |

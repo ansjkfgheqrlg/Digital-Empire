@@ -60,6 +60,15 @@ Before providing recommendations, understand:
 
 ## Trigger Strategies
 
+### Default Operativo: 4 Tipologie di Trigger
+Prima di sceglierne uno ad hoc per ogni progetto, valuta questi 4 trigger come base standard:
+- **Time on page** — il popup appare dopo X secondi sulla pagina
+- **Scroll percentage** — il popup appare dopo che il lettore ha scrollato una % della pagina
+- **Exit intent** — il popup appare quando il mouse esce verso la barra del browser (solo desktop, non rilevabile su mobile)
+- **On element** — il popup appare quando il lettore raggiunge un punto preciso della pagina (es. dopo una sezione specifica)
+
+*(Fonte: Andrei Pascu, outFunnel Lezione 7, KA-02.)*
+
 ### Time-Based
 - **Not recommended**: "Show after 5 seconds"
 - **Better**: "Show after 30-60 seconds" (proven engagement)

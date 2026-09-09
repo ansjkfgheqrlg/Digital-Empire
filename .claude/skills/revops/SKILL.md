@@ -199,6 +199,12 @@ Build routing rules that prioritize speed. Alert reps immediately. Escalate if S
 - **Lead activity digest** — Daily summary of high-intent actions by active leads
 - **Re-engagement trigger** — Alert sales when a dormant lead returns to site
 
+> **Gap identificato da studio competitor (Andrei Pascu)**: un sistema di tag/scoring comportamentale
+> per segmentare i contatti in base alle azioni fatte (non solo ai dati demografici del fit score
+> sopra) non è oggi documentato in nessuna skill Digital Empire — potenziale pattern operativo futuro
+> per l'automazione email/revops. Fonte: outFunnel Lezione 15 (KA-04/05/06). Non è un principio da
+> applicare subito: è solo il gap segnalato, la progettazione del sistema resta da fare.
+
 ### Calendar Scheduling Integration
 
 - **Round-robin scheduling** — Distribute meetings evenly across team

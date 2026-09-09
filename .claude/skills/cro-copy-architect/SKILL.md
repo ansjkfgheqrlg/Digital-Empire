@@ -20,7 +20,7 @@ Il tuo metro di giudizio non è MAI "suona bene?" — è SEMPRE "questo farà ag
 4. **LA VENDITA È GESTIONE DELLE OBIEZIONI** — Ogni dubbio non gestito è una vendita persa. Le obiezioni sono il nemico #1.
 5. **SHOW, DON'T TELL** — Non DIRE come si sente il lettore. MOSTRA la scena che genera quell'emozione.
 6. **BENEFICI, NON FEATURE** — Usa il test "E QUINDI?" dopo ogni feature fino ad arrivare a qualcosa che impatta la vita del lettore.
-7. **SPECIFICO BATTE GENERICO** — "Da 1.1% a 3.2% in 21 giorni" batte "migliora le conversioni".
+7. **SPECIFICO BATTE GENERICO** — "Da 1.1% a 3.2% in 21 giorni" batte "migliora le conversioni". Test rapido per stanare copy apparente: "questa frase potrebbe essere detta a chiunque?" Se sì, è apparente (generica); se descrive solo il tuo lettore specifico, è specifica. Usalo su ogni frase della sezione Attenzione/Problema prima di consegnare. Fonte: studio Andrei Pascu, outFunnel Lezione 15.
 8. **LINGUAGGIO DEL TARGET, NON GERGO TECNICO** — Se dicono "sto buttando soldi", scrivi quello, non "investimento subottimale".
 9. **NON GENERARE OBIEZIONI CHE NON GESTISCI** — Rileggi tutto il copy, ogni frase che genera un dubbio deve essere gestita subito dopo.
 10. **UNA CTA PER PEZZO DI COPY** — Più CTA nella pagina = stessa azione, framing diverso.
@@ -28,6 +28,7 @@ Il tuo metro di giudizio non è MAI "suona bene?" — è SEMPRE "questo farà ag
 12. **COPY NON FINITO SENZA VARIANTI E TEST** — 3+ varianti headline, 2+ varianti CTA, suggerimenti A/B test.
 13. **COPY NON FINITO SENZA AUDIT** — Checklist 40 punti. Score sotto 28 = non pronto.
 14. **OBIEZIONI IN ORDINE DI IMPORTANZA** — Dalla più forte alla più debole, usando CPB (Claim-Proof-Benefit).
+15. **L'AI ACCELERA L'ESECUZIONE, NON SOSTITUISCE LA STRATEGIA** — Usa l'AI per varianti, angoli e derivati di un pezzo già strategicamente definito (dati raccolti in STEP 0, framework scelto in STEP 1). Mai far scrivere all'AI una sales page intera "di sana pianta": strategia, voce del target e prove restano lavoro umano, l'AI accelera solo l'esecuzione a valle. Fonte: studio Andrei Pascu, cs2online (Claude Speedrun 2) Lezione 4.
 
 ## REFERENCE FILES — COSA LEGGERE E QUANDO
 
@@ -66,7 +67,7 @@ Se mancano dati obbligatori → CHIEDI. Se mancano dati ricerca → AVVERTI con 
 Prima di scegliere il framework, analizza:
 
 1. **Posizione nel funnel** — Primo touchpoint? Retargeting? Determina quanti elementi APSOC includere.
-2. **Livello di consapevolezza** — Unaware = più tempo su A+P. Problem-aware = meno P, più soluzione. Product-aware = focus obiezioni+CTA. Most-aware = quasi solo CTA+offerta.
+2. **Livello di consapevolezza** — Unaware = più tempo su A+P. Problem-aware = meno P, più soluzione. Product-aware = focus obiezioni+CTA. Most-aware = quasi solo CTA+offerta. Diagnostica questo livello SEMPRE prima di applicare APSOC: i 5 livelli di Eugene Schwartz sono un passaggio di granularità precedente ad APSOC (che presuppone già un target almeno problem-aware) — critico per copy freddo (ads, prime email di una sequenza), dove un lettore unaware va educato prima di essere agitato, mentre un most-aware può saltare dritto a prezzo/CTA. Fonte: studio Andrei Pascu, outFunnel Lezione 2.
 3. **Complessità decisione** — Prezzo alto = funnel lungo, più proof. Prezzo basso = può essere impulsivo.
 4. **Storytelling vs Direct Response** — Best practice: usa entrambi. Storytelling per emozione, DR per giustificazione logica.
 5. **Pain point esplicito o implicito?** — Esplicito quando il target ammette il problema. Implicito quando il problema è reale ma non lo ammettono. Nel dubbio: implicito.

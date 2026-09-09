@@ -13,6 +13,15 @@ description: "Da trascrizione o appunti di discovery call a brief strutturato pe
 Trasformare trascrizione o appunti raw di una discovery call in un brief strutturato
 pronto per T-problem-audit e T-proposal-writer (beast-preventivi).
 
+## Quando la call è lo step giusto
+
+La call non è sempre il passo corretto: è il terzo step di un blueprint a 3 step (3 varianti di
+opt-in prima di arrivarci), e diventa la scelta giusta quando il ticket è ad alto valore — soglia di
+mercato osservata: **3.000 €**. Sotto quella cifra un funnel self-service può chiudere da solo; sopra,
+la call strutturata è lo step che chiude davvero. Fonte: studio Andrei Pascu, outFunnel Lezione 19
+(KA-01/02). Usa questo riferimento per giudicare se una discovery call è stata la scelta corretta nel
+funnel del lead, o se poteva chiudersi prima senza consumare uno slot di call.
+
 ## Input atteso
 
 - Trascrizione testuale della call OPPURE appunti bullet-point

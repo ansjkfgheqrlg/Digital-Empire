@@ -324,7 +324,7 @@ For large-scale creative production (Anthropic's growth team generates 100+ vari
 - **Generic descriptions** — "Learn more about our solution" wastes the slot
 - **Iterating without data** — Gut feelings are less reliable than metrics
 - **Testing too many things at once** — Change one variable per test cycle
-- **Retiring creative too early** — Allow 1,000+ impressions before judging
+- **Retiring creative too early** — Allow 1,000+ impressions before judging. In assenza di un dato proprietario più preciso, usa 7-30 giorni come finestra di default prima di giudicare una variazione: meno rischia un campione troppo piccolo, di più significa lasciar vivere troppo a lungo un angle debole. *(Fonte: Andrei Pascu, outFunnel Lezione 18, KA-02.)*
 
 ---
 

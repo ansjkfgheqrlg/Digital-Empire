@@ -105,6 +105,9 @@ Each follow-up should add something new — a different angle, fresh proof, a us
 - 3-5 total emails, increasing gaps between them
 - Each email should stand alone (they may not have read the previous ones)
 - The breakup email is your last touch — honor it
+- Tetto di durata (default): l'intera sequenza non dovrebbe superare 1-2 mesi totali — oltre quella finestra il tasso di risposta crolla e la sequenza diventa rumore. Usalo come default quando manca un dato proprietario più preciso sul segmento.
+
+Fonte: studio Andrei Pascu, outFunnel Lezione 10 (KA-06)
 
 See [follow-up-sequences.md](references/follow-up-sequences.md) for cadence, angle rotation, and breakup email templates.
 

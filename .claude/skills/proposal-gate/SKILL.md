@@ -56,6 +56,14 @@ Il documento preventivo completo (testo o markdown) + brief discovery call.
 ### 9. Timing [BLOCCA se scaduto]
 - Il preventivo viene inviato entro 48h dalla discovery call
 
+### 10. Soglia ticket alto — gate umano [WARN — riferimento di mercato]
+- Se il prezzo del preventivo è **sopra 3.000 €**: verifica che il percorso del prospect sia passato
+  da una vera sales call (non solo da un checkout/form automatico) — sopra questa soglia non basta
+  l'automazione, serve un gate umano prima dell'invio. Il catalogo prezzi DE (EUR 2.500-8.000) è
+  quasi sempre sopra soglia: questo punto conferma che il Gate Preventivo stesso, con la discovery
+  call obbligatoria a monte, è già allineato al riferimento di mercato. Fonte: studio Andrei Pascu,
+  outFunnel Lezione 19 (KA-01/02).
+
 ## Output
 
 ```

@@ -101,6 +101,12 @@ Alternativa operativa alla sola fase testing/scaling: strutturare l'intero accou
 
 *(Fonte: caso studio singolo — Andrei Pascu, consulenza reale settore fotovoltaico, 2026-08-26. Framework consolidato nel dominio media buying, non una speculazione isolata, applicato qui direttamente.)*
 
+### Finestra di test di default: 7-30 giorni
+
+In assenza di un dato proprietario più preciso (storico di conversione per quell'audience/creative), usa 7-30 giorni come finestra di default prima di tagliare un ad: sotto i 7 giorni il campione è troppo piccolo per giudicare, oltre i 30 si accumula spesa senza decidere. Questa finestra dice *quando* iniziare a guardare i dati con fiducia — il criterio di spegnimento resta il ritorno generato (vedi sopra), non un numero di giorni fisso da solo.
+
+*(Fonte: Andrei Pascu, outFunnel Lezione 18, KA-02.)*
+
 ---
 
 ## Ad Copy Frameworks

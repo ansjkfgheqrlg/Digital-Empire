@@ -1,3 +1,25 @@
+## 🔴 2026-09-09 sera — ⚠️ ORDINE A MAX — 3 gesti "mani umane" fermano Gael su LANCI, servono oggi — CP-20260909-DA2P
+
+**Max ha segnalato (di nuovo) che Gael è fermo su tutta la task 1️⃣ della Settimana 3.** Causa
+reale verificata: `MT-FJF6`, `MT-32RU`, `MT-CV7N` (le prime 3 delle 12 micro-task di
+`TASK-LANCI-BUILD-W3`) sono "mani umane" — nessuna sessione le può chiudere — e ADR-025 le
+rende non negoziabili: finché restano aperte, 1️⃣/2️⃣/3️⃣/4️⃣ sono fermi. Erano già scritte oggi in
+CP-20260909-HV8Q ma mai consegnate a Max come richiesta diretta — errore di forma, non di
+sostanza: corretto mettendole qui, in cima, dove REGOLA ZERO impone di leggere per prime.
+
+**Le tre cose, esatte, solo tue:**
+1. **Brevo** — revoca sul pannello Brevo la chiave `xkeysib-1b440a32…4J8p0TDOcRTChJz9` ed
+   emettine una nuova (il fix per non farla ri-esporre dal browser lo scrive una sessione, non
+   serve a te).
+2. **Cassa vera** — apri un conto su un fornitore di pagamento, collegalo a una pagina, paga
+   con una carta vera.
+3. **Consegna + rimborso** — sullo stesso pagamento del punto 2: fatti consegnare il prodotto
+   senza intervento umano, poi rimborsa.
+
+**Gael NON è fermo su tutto**, gliel'ho reso esplicito: `TASK-KDP-3LIBRI-W3` (0/3, indipendente)
+e le micro-task da `MT-F37C` in giù sono apribili subito, non aspettano queste tre. Dettagli:
+[CP-20260909-DA2P](checkpoints/CP-20260909-DA2P.md).
+
 ## 🟣 2026-09-09 sera — ⚠️ COORDINAMENTO: fase implementazione miglioramenti Andrei Pascu (EMP-APIMPL1)
 
 **EMP-APDOC1 chiusa** (CP-20260909-2N8Q): i 4 documenti ufficiali su Andrei Pascu sono completi —

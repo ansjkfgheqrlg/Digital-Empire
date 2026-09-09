@@ -310,6 +310,17 @@ Playbooks die when they're not updated. Review quarterly, get input from top rep
 
 ---
 
+## Soglie di Prezzo — Quando Serve una Sales Call (studio competitor)
+
+Due soglie distinte per due decisioni distinte, emerse dallo studio competitor su Andrei Pascu (outFunnel):
+
+- **Sopra 1.000 €** — serve un umano nel loop. Il funnel non può chiudersi solo con il copy/checkout self-service: a questa cifra il copy da solo non basta più a portare la decisione a termine. Fonte: studio Andrei Pascu, outFunnel Lezione 3. Vedi anche `preventivo-auto` per il criterio di routing gemello.
+- **Sopra 3.000 €** — serve una sales call strutturata a 3 step (blueprint con 3 varianti di opt-in), non solo "un umano disponibile": è la soglia di mercato osservata per passare da funnel self-service a funnel ad alto ticket con call. Fonte: studio Andrei Pascu, outFunnel Lezione 19 (KA-01/02). Applicabile a qualunque offerta Digital Empire ad alto ticket (sprint agency CRO, mentorship, corsi premium): sopra questa cifra, il deck/one-pager da soli non chiudono — la call diventa lo step che chiude davvero.
+
+Le due soglie sono correlate ma non sovrapposte: 1.000 € è il punto in cui l'automazione pura smette di bastare, 3.000 € è il punto in cui serve una call strutturata, non solo un contatto umano generico.
+
+---
+
 ## Output Format
 
 Deliver the right format for each asset type:

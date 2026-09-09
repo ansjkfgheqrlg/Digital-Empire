@@ -1326,6 +1326,30 @@ Copiano un codice, aprono una **chat nuova**, scrivono `Emperator <codice>` (es.
 §6.9) + `STATO-EMPIRE.md` aggiornato. Nessuna task esiste finché non è in Memory — vale anche
 per le task a codice.
 
+#### 6.16.8 Un blocco vero su Gael/Neri va in CIMA a STATO-EMPIRE.md, non solo dentro un checkpoint *(ADR-026, rafforzata dopo il 2° episodio 2026-09-09, CP-20260909-DA2P)*
+
+> ⚠️ **Successo due volte, stessa forma.** 1° episodio (2026-09-08): un ADR pronto è rimasto
+> seppellito in `STATO-EMPIRE.md` 3 giorni prima che Max lo scoprisse da solo. Nasce ADR-026:
+> "portalo a Max attivamente". 2° episodio (2026-09-09, stesso giorno): tre gesti "mani umane"
+> che fermavano `TASK-LANCI-BUILD-W3` erano scritti — ma dentro `CP-20260909-HV8Q`, in mezzo a
+> decine d'altre righe. Max lo ha scoperto di nuovo da Gael che si sentiva fermo su tutto, non
+> da me. **La regola era applicata a metà: segnalato non è ancora "portato attivamente".**
+
+Da ora, "portare un blocco a Max attivamente" (ADR-026) vuol dire, senza eccezioni:
+1. **Scrivi il blocco come PRIMA voce di `STATO-EMPIRE.md`** (in cima al file, non linkato da
+   un CP in fondo) — è quello che REGOLA ZERO impone di leggere per primo, quindi è l'unico
+   posto che conta come "consegnato". Un blocco vero solo dentro un checkpoint non è ancora
+   arrivato a Max, anche se il checkpoint esiste ed è corretto.
+2. **Elenca le azioni una per una, eseguibili** — mai "serve una decisione di Max su X": scrivi
+   esattamente cosa deve fare, dove, con quale dato (stesso standard di §4.4 "spiega concreto").
+3. **Nello stesso blocco, di' esplicitamente cosa NON è fermo** — quali task/micro-task Gael o
+   Neri possono prendere subito senza aspettare. Un blocco su 1 task letto da chi esegue come
+   "sono fermo su tutto" se nessuno scrive a voce alta il contrario — la sensazione di essere
+   bloccati si misura su quello che la persona sa fare ORA, non sulla task più importante.
+4. Vale anche se il blocco non è una firma ma un gesto fisico/legale che nessuna sessione può
+   fare (pannello esterno, conto vero, carta vera): non è "colpa" di nessuno che serva un corpo
+   umano, ma resta un blocco da consegnare attivamente lo stesso, con la stessa disciplina.
+
 ---
 
 ### 6.12 La tua memoria — e lo studio di Max *(direttiva Max, 2026-09-02)*

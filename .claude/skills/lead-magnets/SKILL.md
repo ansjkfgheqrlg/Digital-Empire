@@ -101,6 +101,8 @@ Gather this context (ask if not provided):
 
 **Anti-pattern: l'ebook lungo.** Se il contenuto previsto e' un documento da 10+ pagine scritte, non farlo: nessuno legge 10 pagine di uno sconosciuto. Trasformalo in un webinar (intrattiene, si consuma piu' facilmente) oppure comprimilo in checklist / cheat guide / manualetto. L'"ebook" che funziona come lead magnet e' quello breve e operativo - es. un Google Sheets con la checklist delle azioni da fare prima di pubblicare una campagna ads. *(Fonte: Andrei Pascu, video "Usa questi 10 lead magnet" `j4UInmM9kKA`, 2026-09-01 - caso singolo, non validato su altre fonti.)*
 
+**Check di validazione pre-pubblicazione: breve e consumabile.** Prima di pubblicare un lead magnet, verificare che sia breve e completamente consumabile in una sola seduta (non un mini-corso, non un PDF di 40 pagine). Un lead magnet troppo lungo abbassa il completion rate e quindi la percezione di valore del passo successivo del funnel — chi non finisce di consumarlo non arriva mai a vedere la promessa mantenuta. *(Fonte: Andrei Pascu, outFunnel Lezione 9, KA-01/KA-06.)*
+
 ---
 
 ## Matching Lead Magnets to Buyer Stage

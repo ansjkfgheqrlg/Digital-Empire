@@ -76,6 +76,9 @@ Depends on:
 - Product complexity
 - Relationship stage
 
+**Tetto di durata (default):** una sequenza di follow-up non dovrebbe superare 1-2 mesi di durata totale — oltre quella finestra il tasso di risposta crolla e la sequenza diventa rumore. Usa questo tetto come default quando manca un dato proprietario più preciso sul segmento/prodotto specifico.
+Fonte: studio Andrei Pascu, outFunnel Lezione 10 (KA-06)
+
 ### Timing/Delays
 - Welcome email: Immediately
 - Early sequence: 1-2 days apart
@@ -162,6 +165,20 @@ Key emails:
 5. Check-in (day 7)
 6. Advanced tip (day 10-12)
 7. Upgrade/expand (day 14+)
+
+### Cart Abandonment Sequence
+**Length**: 3-4 email a step ravvicinati (non un singolo reminder tardivo)
+**Trigger**: Carrello abbandonato senza checkout completato
+**Goal**: Recuperare la vendita prima che l'intento si raffreddi
+
+Key emails:
+1. Reminder immediato (entro 1-3 ore — "hai dimenticato qualcosa?")
+2. Rinforzo con social proof/obiezioni (entro 24h)
+3. Incentivo/urgenza (entro 48-72h)
+4. Ultima chiamata (se applicabile)
+
+Default operativo per qualsiasi funnel Digital Empire in assenza di un dato proprietario misurato su quel segmento.
+Fonte: studio Andrei Pascu, outFunnel Lezione 8 (KA-07)
 
 **For detailed templates**: See [references/sequence-templates.md](references/sequence-templates.md)
 
