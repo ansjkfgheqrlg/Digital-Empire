@@ -1,0 +1,981 @@
+[
+ {
+ "id": "KA-101",
+ "tipo": "regola",
+ "contenuto": "Nel dare istruzioni a Claude Cowork per operazioni su file, va specificato esplicitamente 'non cancellare niente' e 'non sovrascrivere' — anche se sembra ridondante, questo elimina lo spazio di interpretazione che parole generiche come 'pulisci' lascerebbero aperto.",
+ "fonte": "DI5aWJiFAt8#38:48 (lavagna Excalidraw, riepilogo best practice prompt Cowork) + voce 38:42-38:48",
+ "frame": "frame-0389.png",
+ "ancora": "Non cancellare niente. Non sovrascrivere.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-102",
+ "tipo": "esempio",
+ "contenuto": "Caso reale citato come monito: uno YouTuber ha chiesto a Cowork di 'pulire' una cartella e Cowork ha cancellato 11 giga di file, perché il verbo 'pulisci' lasciava troppo spazio di interpretazione rispetto a un'istruzione esplicita come 'non cancellare'.",
+ "fonte": "DI5aWJiFAt8#38:48 (lavagna Excalidraw) + voce 38:42-38:48",
+ "frame": "frame-0389.png",
+ "ancora": "Vi ricordate la storia dello YouTuber che ha chiesto di 'pulire' una cartella e Cowork ha cancellato 11 giga di file?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-101", "tipo": "motiva"}
+ ]
+ },
+ {
+ "id": "KA-103",
+ "tipo": "regola",
+ "contenuto": "Quando Claude Cowork non riesce a classificare un file o un dato con certezza, l'istruzione corretta è dirgli di mettere l'elemento dubbio in una cartella o stato 'da-verificare', invece di lasciare che forzi una classificazione a caso.",
+ "fonte": "DI5aWJiFAt8#38:48 (lavagna Excalidraw, sezione PREVEDETE L'INCERTEZZA) + voce 38:42-38:48",
+ "frame": "frame-0389.png",
+ "ancora": "Metti in 'da-verificare' quello che non riesci a classificare.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-104",
+ "tipo": "principio",
+ "contenuto": "La ragione per prevedere una via d'uscita nei casi incerti è che Cowork non può sempre sapere con certezza cosa sia un file solo dal suo nome; dandogli un'uscita sicura per i casi dubbi si evita che forzi una classificazione sbagliata.",
+ "fonte": "DI5aWJiFAt8#38:48 (lavagna Excalidraw) + voce 38:42-38:48",
+ "frame": "frame-0389.png",
+ "ancora": "Cowork non puo' sempre sapere cosa sia un file dal nome. Dandogli un'uscita sicura per i casi dubbi, evitate che forzi una classificazione sbagliata.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-103", "tipo": "motiva"}
+ ]
+ },
+ {
+ "id": "KA-105",
+ "tipo": "struttura",
+ "contenuto": "Le tre best practice per scrivere prompt efficaci a Claude Cowork, evidenziate a colori su un prompt reale: in rosso la specificità della richiesta (nomi cartelle, formato file), in arancione la gestione dell'incertezza (cosa fare nei casi dubbi), in blu le regole di cosa NON fare (non cancellare, non sovrascrivere).",
+ "fonte": "DI5aWJiFAt8#39:06 (lavagna Excalidraw, prompt annotato a tre colori) + voce 39:06-39:18",
+ "frame": "frame-0392.png",
+ "ancora": "Queste sono, diciamo, delle tre best practices per fare prompting di cork.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-101", "tipo": "parte-di"},
+ {"verso": "KA-103", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-106",
+ "tipo": "principio",
+ "contenuto": "Un prompt per Cowork non deve essere per forza perfetto al primo colpo: è possibile raffinarlo continuamente mentre si interagisce con l'agente, integrando via via le correzioni necessarie.",
+ "fonte": "DI5aWJiFAt8#39:18 (lavagna Excalidraw) + voce 39:18",
+ "frame": "frame-0394.png",
+ "ancora": "abbiamo la possibilità di raffinare continuamente questo prompt mano che interagiamo",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-107",
+ "tipo": "dato",
+ "contenuto": "Nel task dimostrativo di riorganizzazione fatture, Claude Cowork ha analizzato 20 PDF, identificato 3 clienti distinti, creato le sottocartelle corrispondenti e non ha lasciato nessun file nella cartella 'da-verificare' perché tutti i PDF risultavano leggibili.",
+ "fonte": "DI5aWJiFAt8#39:42 (chat Cowork, task Organize invoices by client folder) + voce 39:42-40:00",
+ "frame": "frame-0398.png",
+ "ancora": "3 clienti trovati, 20 fatture organizzate, 0 file nella cartella \"da-verificare\" (tutti i PDF erano leggibili).",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-108",
+ "tipo": "principio",
+ "contenuto": "Se non viene esplicitamente richiesto di eliminare i file originali, Claude Cowork li lascia intatti accanto alla nuova struttura organizzata: la regola contro la cancellazione viene rispettata anche quando l'utente non la ribadisce ad ogni turno.",
+ "fonte": "DI5aWJiFAt8#40:00 (Finder, cartella con vecchi PDF e nuove sottocartelle) + voce 40:00",
+ "frame": "frame-0401.png",
+ "ancora": "i file di prima sono rimasti lì perché non gli ho chiesto di eliminarli",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-101", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-109",
+ "tipo": "procedura",
+ "contenuto": "Per validare l'affidabilità di una classificazione automatica di file fatta da Cowork, si può aprire il documento originale e confrontare manualmente cliente e data reali con quelli assegnati nel nome del file generato.",
+ "fonte": "DI5aWJiFAt8#40:30 (anteprima PDF fattura Bianchi Impianti) + voce 40:30",
+ "frame": "frame-0406.png",
+ "ancora": "vediamo se questo è 15 gennaio 24 bianchi impianti srl",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-110",
+ "tipo": "esempio",
+ "contenuto": "Un'AI potentissima ma senza memoria persistente è paragonabile a un collega con un QI altissimo che va però reintrodotto da zero ogni giorno: bisogna rispiegargli ogni volta il contesto, gli argomenti e il lavoro già fatto.",
+ "fonte": "DI5aWJiFAt8#42:30 (webcam a piena inquadratura) + voce 42:06-42:48",
+ "frame": "frame-0426.png",
+ "ancora": "un IQ di 8 milioni, ma realisticamente",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-111",
+ "tipo": "principio",
+ "contenuto": "Senza memoria tra le sessioni, un'intelligenza artificiale per quanto capace non porta un ROI aziendale reale, perché il tempo e il denaro spesi per rifare l'onboarding da capo ad ogni conversazione annullano il vantaggio della sua intelligenza.",
+ "fonte": "DI5aWJiFAt8#42:42 (webcam) + voce 42:36-42:48",
+ "frame": "frame-0428.png",
+ "ancora": "un sacco per rifargli tutto l'onboarding",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-110", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-112",
+ "tipo": "esempio",
+ "contenuto": "Aprendo un task già concluso in passato e chiedendo a Claude Cowork se ricorda come aveva sistemato dei file, la risposta è esplicita: non ha memoria delle conversazioni precedenti perché ogni sessione riparte da zero — al più può dedurre indizi ispezionando lo stato attuale delle cartelle.",
+ "fonte": "DI5aWJiFAt8#42:54 (chat Cowork, task Organize PDF files in folder) + voce 42:54",
+ "frame": "frame-0430.png",
+ "ancora": "Purtroppo no, non ho memoria delle conversazioni precedenti. Ogni sessione riparte da zero.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-111", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-113",
+ "tipo": "definizione",
+ "contenuto": "'Projects' è una funzionalità che sposta la memoria di lavoro di Claude da una logica 'per singola chat' a una logica 'per progetto', permettendo di accumulare contesto persistente legato a un ambito di lavoro invece che a una singola conversazione.",
+ "fonte": "DI5aWJiFAt8#43:18 (apertura modale Start a new project) + voce 43:18",
+ "frame": "frame-0434.png",
+ "ancora": "projects adesso sostanzialmente ci permetterà di muoverci... da una memoria che va per chat ad una memoria che va per progetto",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-111", "tipo": "corretto-da"}
+ ]
+ },
+ {
+ "id": "KA-114",
+ "tipo": "procedura",
+ "contenuto": "Per creare un nuovo progetto in Claude Cowork: cliccare '+ New project', scegliere 'Start from scratch', inserire un nome (obbligatorio), opzionalmente delle Instructions, opzionalmente dei file, e scegliere la cartella di destinazione sul computer, poi confermare con 'Create'.",
+ "fonte": "DI5aWJiFAt8#43:18 (modale Start a new project) + voce 43:18-43:54",
+ "frame": "frame-0434.png",
+ "ancora": "premiamo un nuovo progetto... facciamo start from scratch",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-115",
+ "tipo": "definizione",
+ "contenuto": "Il campo 'Instructions' di un progetto Cowork contiene le istruzioni permanenti che regolano il modo in cui Claude deve lavorare all'interno di quello specifico progetto.",
+ "fonte": "DI5aWJiFAt8#43:54 (pagina progetto DEMO YOUTUBE CLAUDE COWORK) + voce 43:54",
+ "frame": "frame-0440.png",
+ "ancora": "abbiamo delle istruzioni che stiamo dando al nostro... cloud cowork",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-116",
+ "tipo": "definizione",
+ "contenuto": "La sezione 'Scheduled' di un progetto Cowork serve a impostare task che si ripetono automaticamente in modo periodico nel tempo.",
+ "fonte": "DI5aWJiFAt8#44:24 (pagina progetto, sezione Scheduled) + voce 44:24",
+ "frame": "frame-0445.png",
+ "ancora": "serve per avere task che vanno in maniera ripetitiva durante il giorno",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-117",
+ "tipo": "definizione",
+ "contenuto": "La sezione 'Context' di un progetto Cowork elenca le risorse collegate al progetto: cartelle/file presenti sul computer e la funzione 'Memory', che insieme costituiscono il materiale di contesto che Claude userà in quel progetto.",
+ "fonte": "DI5aWJiFAt8#44:54 (pagina progetto, sezione Context) + voce 44:54",
+ "frame": "frame-0450.png",
+ "ancora": "questo è sostanzialmente il contesto che noi stiamo dando",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-118",
+ "tipo": "regola",
+ "contenuto": "Chi usa Claude Cowork per lavorare con più clienti dovrebbe creare un progetto separato per ciascun cliente, invece di mescolare il lavoro di clienti diversi in un unico contesto.",
+ "fonte": "DI5aWJiFAt8#45:48 (lavagna Excalidraw, tre rettangoli Progetto A/B/C) + voce 45:48",
+ "frame": "frame-0459.png",
+ "ancora": "dividete i vari clienti come se fossero un progetto a sante... qui avrete cliente B e qui avrete cliente C",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-119",
+ "tipo": "principio",
+ "contenuto": "All'interno di ogni progetto-cliente va inserita la sezione 'Instructions', cioè le istruzioni specifiche di quel singolo cliente o progetto.",
+ "fonte": "DI5aWJiFAt8#46:18 (lavagna Excalidraw, riquadro B con scritta Instructions) + voce 46:18",
+ "frame": "frame-0464.png",
+ "ancora": "abbiamo una cosa che si chiama instructions e quindi che sono le istruzioni",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-118", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-120",
+ "tipo": "esempio",
+ "contenuto": "Esempio reale di Instructions per un progetto-cliente di consulenza: descrive chi è il consulente, il tipo di clienti seguiti (PMI nord-est Italia, manifatturiero e servizi, 50-200 dipendenti), il tono di voce richiesto (professionale ma diretto, niente burocratese, uso del 'lei' formale ma registro concreto) e vincoli sui dati mancanti.",
+ "fonte": "DI5aWJiFAt8#46:54 (modale Edit instructions, progetto Cliente Giovanni) + voce 46:54",
+ "frame": "frame-0470.png",
+ "ancora": "Sono un consulente che implementa servizi AI in azienda e fa formazione aziendale. Lavoro con PMI del nord-est Italia, settore manifatturiero e servizi, 50-200 dipendenti.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-119", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-121",
+ "tipo": "regola",
+ "contenuto": "Una regola utile da includere nelle istruzioni di un progetto-cliente è vietare all'assistente di proporre soluzioni senza dati a supporto, imponendogli di dichiarare esplicitamente quando un dato non è disponibile invece di inventarlo.",
+ "fonte": "DI5aWJiFAt8#50:30 (modale Edit instructions, continuazione testo) + voce 46:54",
+ "frame": "frame-0506.png",
+ "ancora": "Non proporre mai soluzioni senza dati a supporto. Se non hai un dato, dillo -- non inventarlo.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-120", "tipo": "parte-di"},
+ {"verso": "KA-103", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-122",
+ "tipo": "esempio",
+ "contenuto": "Per dimostrare l'isolamento tra progetti, viene creato un secondo progetto ('Cliente B') lasciando deliberatamente vuoto il campo Instructions, poi si chiede la stessa domanda già fatta al progetto 'Cliente Giovanni' per vedere se la risposta cambia.",
+ "fonte": "DI5aWJiFAt8#48:24 (pagina progetto Cliente B, Instructions vuote) + voce 48:24",
+ "frame": "frame-0485.png",
+ "ancora": "non metto alcun tipo di istruzione con che aziende lavoro io, quanti dipendenti hanno",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-123",
+ "tipo": "principio",
+ "contenuto": "Ogni progetto Cowork funziona come un silo indipendente: il contesto (istruzioni, file, cronologia) creato in un progetto non è visibile né accessibile da un altro progetto diverso.",
+ "fonte": "DI5aWJiFAt8#49:24 (pagina Projects, elenco Cliente B / Cliente Giovanni con percorsi separati) + voce 49:24",
+ "frame": "frame-0495.png",
+ "ancora": "il contesto rimane poi limitato a il cliente B e poi al cliente Giovanni... queste vanno in silos",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-122", "tipo": "quantificato-da"}
+ ]
+ },
+ {
+ "id": "KA-124",
+ "tipo": "avvertimento",
+ "contenuto": "È preferibile organizzare i progetti Cowork per cliente piuttosto che per funzione aziendale (es. marketing, sales), perché organizzare per funzione porta a moltiplicare eccessivamente il numero di contesti da gestire.",
+ "fonte": "DI5aWJiFAt8#49:24 (pagina Projects) + voce 49:24",
+ "frame": "frame-0495.png",
+ "ancora": "è molto molto utile organizzare il vostro contesto per cliente piuttosto che per funzione... perché altrimenti vi esplode l'universo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-123", "tipo": "motiva"}
+ ]
+ },
+ {
+ "id": "KA-125",
+ "tipo": "definizione",
+ "contenuto": "Le 'Instructions' di un progetto Cowork sono l'equivalente, per chi conosce Claude Code, del file CLAUDE.md: entrambi rappresentano le istruzioni locali specifiche di quel singolo progetto.",
+ "fonte": "DI5aWJiFAt8#49:54 (annotazione LOCALI/CLAUDE su pagina Cliente Giovanni) + voce 49:54",
+ "frame": "frame-0500.png",
+ "ancora": "questo è il parallelo per quello che noi chiameremo il nostro cloud. MD",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-126",
+ "tipo": "definizione",
+ "contenuto": "Oltre alle istruzioni di singolo progetto esiste un livello superiore, unico per l'intero account: le 'Global instructions', che si applicano a prescindere dal progetto in cui ci si trova.",
+ "fonte": "DI5aWJiFAt8#50:36 (chat, domanda su un livello superiore) + voce 50:36",
+ "frame": "frame-0507.png",
+ "ancora": "ma esiste un livello più sopra a questo?",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-127",
+ "tipo": "procedura",
+ "contenuto": "Le Global Instructions di Claude Cowork si configurano in Settings > Cowork, scorrendo fino alla sezione 'Global instructions'; da lì valgono per tutte le sessioni Cowork dell'account.",
+ "fonte": "DI5aWJiFAt8#52:48 (pagina Settings > Cowork > Global instructions) + voce 52:48",
+ "frame": "frame-0529.png",
+ "ancora": "abbiamo il nostro cowork e abbiamo il global instruction",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-126", "tipo": "definisce"}
+ ]
+ },
+ {
+ "id": "KA-128",
+ "tipo": "principio",
+ "contenuto": "Le Global Instructions si applicano automaticamente anche ai progetti che non hanno istruzioni locali proprie: raggiungono qualunque progetto dell'account, non solo quello in cui sono state scritte.",
+ "fonte": "DI5aWJiFAt8#53:12 (pagina progetto Cliente B, Instructions vuote) + voce 53:12",
+ "frame": "frame-0533.png",
+ "ancora": "qua chiederò qual è il mio colore preferito a cliente B",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-126", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-129",
+ "tipo": "esempio",
+ "contenuto": "Test dimostrativo delle Global Instructions: dopo aver scritto a livello globale che il colore preferito è il verde, la domanda 'qual è il mio colore preferito?' ottiene la stessa risposta ('Il tuo colore preferito è il verde') sia nel progetto Cliente B sia nel progetto Cliente Giovanni, pur essendo due progetti isolati tra loro.",
+ "fonte": "DI5aWJiFAt8#53:42 (chat, task Discover personal color preference) + voce 53:42",
+ "frame": "frame-0538.png",
+ "ancora": "Il tuo colore preferito è il verde.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-128", "tipo": "esempio-di"},
+ {"verso": "KA-123", "tipo": "contraddice", "perche": "dimostra che le Global Instructions, a differenza delle Instructions locali, attraversano i silos di progetto"}
+ ]
+ },
+ {
+ "id": "KA-130",
+ "tipo": "dato",
+ "contenuto": "In un progetto locale di Claude Code coesistono sia una cartella nascosta '.claude' sia un file 'CLAUDE.md' visibile in chiaro nella root del progetto.",
+ "fonte": "DI5aWJiFAt8#53:54 (Finder, cartella Social Media Manager) + voce 53:54",
+ "frame": "frame-0540.png",
+ "ancora": "vedete che qui ho il mio cloud.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-131",
+ "tipo": "struttura",
+ "contenuto": "Un file CLAUDE.md di progetto ben scritto tipicamente si organizza in sezioni: WHAT (cosa fa il progetto, stack tecnologico, struttura cartelle), HOW (comandi per eseguire, testare, installare dipendenze) e WHY (motivazioni delle scelte architetturali, pattern da seguire).",
+ "fonte": "DI5aWJiFAt8#54:12 (editor, CLAUDE.md sezioni WHAT/HOW/WHY) + voce 54:06-54:18",
+ "frame": "frame-0543.png",
+ "ancora": "## WHAT ... ## HOW ... ## WHY",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-132",
+ "tipo": "procedura",
+ "contenuto": "Regola operativa 'VERIFY-OR-REDO LOOP': ogni correzione o modifica deve seguire un ciclo obbligatorio che inizia sempre con la fase 'Understand' — leggere il codice rilevante e capire cosa è rotto e come dovrebbe apparire un risultato corretto dal punto di vista dell'utente.",
+ "fonte": "DI5aWJiFAt8#54:12 (editor, CLAUDE.md sezione VERIFY-OR-REDO LOOP) + voce 54:12",
+ "frame": "frame-0543.png",
+ "ancora": "Every fix/change MUST follow this loop — no exceptions... 1. Understand: Read the relevant code.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-133",
+ "tipo": "struttura",
+ "contenuto": "Il 'Global Claude.md' personale (a livello di utente, non di singolo progetto) contiene sezioni come 'Agency Capabilities', 'Reasoning Rules' e 'Communication Style', che valgono trasversalmente su tutti i progetti Claude Code dell'utente.",
+ "fonte": "DI5aWJiFAt8#54:42 (editor, file Global Claude.md) + voce 54:42",
+ "frame": "frame-0548.png",
+ "ancora": "## Agency Capabilities ... ## Reasoning Rules ... ## Communication Style",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-125", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-134",
+ "tipo": "regola",
+ "contenuto": "Regola operativa personale di editing: quando si modifica un file, prima leggerlo per intero, riscriverlo mentalmente, poi eseguire un'unica scrittura complessiva — mai modificarlo riga per riga con più chiamate sequenziali separate.",
+ "fonte": "DI5aWJiFAt8#54:42 (Global Claude.md, sezione Reasoning Rules) + voce 55:12",
+ "frame": "frame-0548.png",
+ "ancora": "When editing a file: read it fully, rewrite in your head, then do one single write — never edit line by line across multiple sequential calls",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-133", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-135",
+ "tipo": "regola",
+ "contenuto": "Regola operativa personale di ragionamento: non spiegare eccessivamente, non ingegnerizzare oltre il necessario e non aggiungere miglioramenti non richiesti dall'utente.",
+ "fonte": "DI5aWJiFAt8#54:42 (Global Claude.md, sezione Reasoning Rules) + voce 54:42",
+ "frame": "frame-0548.png",
+ "ancora": "Do not overexplain, overengineer, or add unrequested improvements",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-133", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-136",
+ "tipo": "regola",
+ "contenuto": "Regola personale di stile comunicativo per Claude: risposte laconiche, senza fronzoli, senza filler e senza linguaggio da marketing.",
+ "fonte": "DI5aWJiFAt8#54:42 (Global Claude.md, sezione Communication Style) + voce 54:42",
+ "frame": "frame-0548.png",
+ "ancora": "Laconic. No fluff, no filler, no marketing language",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-133", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-137",
+ "tipo": "regola",
+ "contenuto": "Regola personale di stile comunicativo: mai usare trattini lunghi (em-dash) nel testo generato da Claude.",
+ "fonte": "DI5aWJiFAt8#55:12 (Global Claude.md) + voce 55:12",
+ "frame": "frame-0553.png",
+ "ancora": "No m-dashes (also — not allowed)",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-133", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-138",
+ "tipo": "principio",
+ "contenuto": "Nella sezione 'Agency Capabilities' del Global Claude.md si dichiara esplicitamente che l'assistente non deve chiedere il permesso per azioni come automazione browser, chiamate API, gestione file o scrittura codice: se pensa di non poter fare qualcosa, deve prima tentarlo.",
+ "fonte": "DI5aWJiFAt8#54:42 (Global Claude.md, sezione Agency Capabilities) + voce 54:42",
+ "frame": "frame-0548.png",
+ "ancora": "You do not need to ask Gio to do these things manually. If you think you cannot do something, attempt it first.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-133", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-139",
+ "tipo": "definizione",
+ "contenuto": "Parallelismo concettuale a livello locale: il file CLAUDE.md sta a Claude Code come le 'Project Instructions' stanno a Claude Cowork — entrambi rappresentano le istruzioni specifiche di un singolo progetto.",
+ "fonte": "DI5aWJiFAt8#55:24 (lavagna Excalidraw, etichette CLAUDE.md / PROJECT INTRUCTIONS) + voce 55:24",
+ "frame": "frame-0555.png",
+ "ancora": "abbiamo in... un parallelo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-125", "tipo": "definisce"}
+ ]
+ },
+ {
+ "id": "KA-140",
+ "tipo": "definizione",
+ "contenuto": "Parallelismo concettuale a livello globale: il 'Global CLAUDE.md' sta a Claude Code come le 'Global Instructions' stanno a Claude Cowork — entrambi valgono su tutti i progetti dell'utente.",
+ "fonte": "DI5aWJiFAt8#56:24 (lavagna Excalidraw, riga CLAUDE.md GLOBAL / PROJECT INTRUCTIONS GLOBAL) + voce 55:54-56:24",
+ "frame": "frame-0565.png",
+ "ancora": "CLAUDE.md (GLOBAL) collegato a PROJECT INTRUCTIONS (GLOBAL)",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-126", "tipo": "definisce"},
+ {"verso": "KA-139", "tipo": "alternativa-a", "perche": "stesso parallelismo ma a livello globale invece che locale"}
+ ]
+ },
+ {
+ "id": "KA-141",
+ "tipo": "struttura",
+ "contenuto": "Le istruzioni locali (CLAUDE.md di progetto / Project Instructions) contengono le informazioni specifiche per un determinato cliente o progetto.",
+ "fonte": "DI5aWJiFAt8#56:24 (lavagna Excalidraw, sotto CLAUDE.md) + voce 55:54-56:24",
+ "frame": "frame-0565.png",
+ "ancora": "Info Specifiche x cliente o progetto.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-139", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-142",
+ "tipo": "struttura",
+ "contenuto": "Le istruzioni globali (Global CLAUDE.md / Global Instructions) contengono tre tipi di contenuto trasversale: convinzioni personali ('belief personali'), obiettivi generali di alto livello ('overarching goal') e regole di cosa fare e non fare ('DOs & DON'Ts').",
+ "fonte": "DI5aWJiFAt8#56:54 (lavagna Excalidraw, elenco sotto CLAUDE.md GLOBAL) + voce 56:24-56:54",
+ "frame": "frame-0570.png",
+ "ancora": "Belief personali / overarching goal / DOs & DONTs",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-140", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-143",
+ "tipo": "principio",
+ "contenuto": "Metafora didattica: il contesto disponibile a Claude va immaginato come uno schermo o una lavagna di dimensioni limitate — non tutto lo spazio è utilizzabile allo stesso modo, alcune zone al suo interno vanno evitate.",
+ "fonte": "DI5aWJiFAt8#57:06 (lavagna Excalidraw, disegno rettangolo/schermo) + voce 56:54-57:06",
+ "frame": "frame-0572.png",
+ "ancora": "immaginate che questo sia uno schermo o una lavagna, no? e il vostro contesto, diciamo, è questo",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-144",
+ "tipo": "principio",
+ "contenuto": "Scrivere regole 'DOs & DON'Ts' nelle istruzioni equivale, tra le mille soluzioni possibili che l'IA potrebbe generare per un compito, a delimitare in anticipo delle 'zone rosse' da evitare perché già note come non valide.",
+ "fonte": "DI5aWJiFAt8#57:36 (lavagna Excalidraw, macchia rossa nel rettangolo) + voce 57:36",
+ "frame": "frame-0577.png",
+ "ancora": "nella 1000 soluzioni che tu puoi fare per trovare per il mio cliente, mi raccomando, questa parte qui evitala perché so già che non va bene... è la zona che io chiamo rossa",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-143", "tipo": "applica"},
+ {"verso": "KA-142", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-145",
+ "tipo": "dato",
+ "contenuto": "I token sono l'unità di scambio (la 'moneta') con cui si misura ogni interazione con Claude, equivalenti approssimativamente a gruppi di circa tre lettere ciascuno; ogni token consumato comporta un costo sia in tempo sia in denaro.",
+ "fonte": "DI5aWJiFAt8#58:06 (lavagna Excalidraw, schema Token / $ / Time) + voce 58:06",
+ "frame": "frame-0582.png",
+ "ancora": "ogni volta che voi interagite con Cloud voi spendete Token... sono, diciamo, delle parole, in realtà sono circa tre lettere e questo ha... ripercussioni sulle due cose che sono tempo e denaro",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-146",
+ "tipo": "principio",
+ "contenuto": "Delimitare con precisione il contesto corretto (la 'zona verde') tramite istruzioni chiare riduce lo spreco di token che Claude altrimenti consumerebbe esplorando soluzioni sbagliate, risparmiando così sia tempo sia denaro.",
+ "fonte": "DI5aWJiFAt8#58:06 (lavagna Excalidraw) + voce 58:06",
+ "frame": "frame-0582.png",
+ "ancora": "la tua parte a disposizione quando fai la soluzione è solo questa",
+ "confidenza": "dedotto",
+ "relazioni": [
+ {"verso": "KA-144", "tipo": "applica"},
+ {"verso": "KA-145", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-147",
+ "tipo": "esempio",
+ "contenuto": "Esempio pratico di progetto-cliente: creazione del progetto 'TechnoService' con istruzioni che riassumono l'intero ambito di attività gestite per l'azienda (dalla creazione di proposte commerciali ai report per il CEO, alla comunicazione con la direzione marketing).",
+ "fonte": "DI5aWJiFAt8#59:12 (modale Start a new project, nome TechnoService) + voce 59:12",
+ "frame": "frame-0593.png",
+ "ancora": "sostanzialmente regola tutte le attività che faccio per l'azienda, dalla creazione di... proposte commerciali a report dal CEO, a comunicazione con direzione marketing",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-118", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-148",
+ "tipo": "procedura",
+ "contenuto": "Alla sezione 'Context' di un progetto Cowork è possibile aggiungere una cartella esistente sul computer, in aggiunta alla cartella base del progetto, per estendere il materiale che Claude può consultare.",
+ "fonte": "DI5aWJiFAt8#59:42 (picker file macOS, selezione cartella) + voce 59:42",
+ "frame": "frame-0598.png",
+ "ancora": "posso scegliermi un folder e cominciare a mettere dentro delle cose",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-149",
+ "tipo": "principio",
+ "contenuto": "Prima di affidarsi a documenti aggiunti al contesto in un formato particolare (es. markdown), conviene verificare con un test rapido se Claude Cowork riesce effettivamente a leggerli, invece di darlo per scontato.",
+ "fonte": "DI5aWJiFAt8#60:00 (pannello Context, aggiunta demo3_proposta commerciale) + voce 60:00",
+ "frame": "frame-0601.png",
+ "ancora": "potrebbe essere che Cowork non li legga",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-148", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-150",
+ "tipo": "comando",
+ "contenuto": "Prima di far eseguire un compito complesso basato su documentazione caricata, conviene chiedere esplicitamente a Claude di leggere prima tutta la documentazione disponibile, in modo che la risposta successiva sia informata.",
+ "fonte": "DI5aWJiFAt8#62:18 (chat, richiesta proposta commerciale) + voce 61:30-62:00",
+ "frame": "frame-0624.png",
+ "ancora": "Per favore, prima di procedere, leggi tutta la documentazione che hai a disposizione.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-151",
+ "tipo": "principio",
+ "contenuto": "Quando riceve un'istruzione che dipende da documentazione di contesto, Claude Cowork esplora autonomamente le cartelle del progetto, individua i file rilevanti e li legge tutti prima di produrre una risposta.",
+ "fonte": "DI5aWJiFAt8#62:18 (chat, Read 3 files) + voce 62:18",
+ "frame": "frame-0624.png",
+ "ancora": "Ho letto tutto. Ecco quello che ho capito e le mie proposte.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-150", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-152",
+ "tipo": "esempio",
+ "contenuto": "Di fronte a una richiesta aperta su come strutturare una proposta commerciale, Claude Cowork ha proposto tre opzioni di formato (Word, PowerPoint, o combinazione dei due) motivando ciascuna in base al profilo e alle esigenze del destinatario finale.",
+ "fonte": "DI5aWJiFAt8#62:18 (chat, Quale formato per la proposta?) + voce 62:18-63:18",
+ "frame": "frame-0624.png",
+ "ancora": "Ti propongo tre opzioni, ognuna con vantaggi diversi per un interlocutore come Marco",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-153",
+ "tipo": "principio",
+ "contenuto": "Prima di produrre un deliverable definitivo conviene sempre far fare a Claude un giro di brainstorming di opzioni alternative, piuttosto che chiedere direttamente un unico output finale.",
+ "fonte": "DI5aWJiFAt8#63:18 (chat, elenco opzioni proposta) + voce 63:18",
+ "frame": "frame-0634.png",
+ "ancora": "cominciamo a fare brainstorming, che è quello che consiglio sempre",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-152", "tipo": "motiva"}
+ ]
+ },
+ {
+ "id": "KA-154",
+ "tipo": "struttura",
+ "contenuto": "Il pannello 'Progress' di Claude Cowork mostra la lista dei passi pianificati per completare una task complessa, ciascuno numerato, con indicazione visiva di quali sono già completati (spuntati) e quale è ancora in corso.",
+ "fonte": "DI5aWJiFAt8#64:18 (pannello Progress, tre passi Word/PowerPoint/QA) + voce 64:18",
+ "frame": "frame-0644.png",
+ "ancora": "1 Creare il documento Word... 2 Creare la presentazione PowerPoint... 3 QA visivo",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-155",
+ "tipo": "principio",
+ "contenuto": "Quando affronta una task complessa, Claude Cowork carica automaticamente nel proprio contesto le 'Skills' pertinenti al tipo di output richiesto (es. le skill 'docx' e 'pptx' quando deve generare un documento Word e una presentazione PowerPoint).",
+ "fonte": "DI5aWJiFAt8#64:18 (pannello Context > Skills: docx, pptx) + voce 64:18",
+ "frame": "frame-0644.png",
+ "ancora": "carica nel suo contesto le skill... una è creazione di un documento... di un doc e l'altra è di un PowerPoint",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-154", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-156",
+ "tipo": "definizione",
+ "contenuto": "Quando una task assegnata a Cowork è complessa, l'agente principale la spezza in più 'subagents' (sotto-agenti) paralleli, ciascuno responsabile di un compito specifico all'interno della task complessiva.",
+ "fonte": "DI5aWJiFAt8#67:42 (lavagna Excalidraw, schema TASK con rami WORD/PPT/QA) + voce 67:12-67:42",
+ "frame": "frame-0678.png",
+ "ancora": "il concetto di subagents... nel momento in cui io do una task e la task è difficile, quello che cowork fa sostanzialmente è spezzare questa task in più agenti",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-154", "tipo": "definisce"}
+ ]
+ },
+ {
+ "id": "KA-157",
+ "tipo": "principio",
+ "contenuto": "Ogni subagent lavora sulla propria 'lavagna' (il proprio contesto dedicato), scrivendo progressivamente fino a completare il proprio compito, poi passa il risultato ottenuto all'agente successivo nella catena.",
+ "fonte": "DI5aWJiFAt8#68:42 (lavagna Excalidraw, omino+lavagna, frecce tra riquadri) + voce 68:12-69:12",
+ "frame": "frame-0688.png",
+ "ancora": "quello che questo agente sta facendo ora è semplicemente andare dentro la sua lavagna e cominciare a scrivere qualcosa",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-156", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-158",
+ "tipo": "principio",
+ "contenuto": "Ogni subagent nella catena riparte con un contesto completamente vuoto, perché tecnicamente è una conversazione nuova: non eredita la cronologia del subagent precedente, riceve solo il risultato che gli viene passato.",
+ "fonte": "DI5aWJiFAt8#69:12 (lavagna Excalidraw, riquadro ripulito + freccia) + voce 69:12-69:42",
+ "frame": "frame-0693.png",
+ "ancora": "poi l'agente cancella quello prima... sono conversazioni nuove e quindi il nostro agente riparte con contesto vuoto",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-157", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-159",
+ "tipo": "principio",
+ "contenuto": "L'output finale prodotto dall'ultimo subagent della catena viene passato alla conversazione principale, nella quale l'utente vede solo il risultato finale e non i passaggi di lavoro interni di ciascun subagent.",
+ "fonte": "DI5aWJiFAt8#69:54 (Claude Cowork, task principale) + voce 69:54-70:18",
+ "frame": "frame-0700.png",
+ "ancora": "l'output finale poi verrà passato alla conversazione principale... vedremo solo il risultato",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-158", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-160",
+ "tipo": "definizione",
+ "contenuto": "Nella modalità 'Pipeline', i subagent lavorano in sequenza stretta, uno dopo l'altro: il task si spezza in A, poi B, poi C, e ciascuno step deve attendere il completamento di quello precedente.",
+ "fonte": "DI5aWJiFAt8#71:18 (lavagna Excalidraw, schema T-A-B-C) + voce 70:18-71:18",
+ "frame": "frame-0714.png",
+ "ancora": "questo è quello che viene definito lavorare in pipeline... perché abbiamo gli step in sequenza",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-156", "tipo": "alternativa-a"}
+ ]
+ },
+ {
+ "id": "KA-161",
+ "tipo": "definizione",
+ "contenuto": "Nella modalità 'Parallelo', il task si dirama subito in due o più subagent (A e B) che lavorano contemporaneamente; solo dopo che entrambi hanno finito, un ultimo subagent (C) prosegue con il passo successivo.",
+ "fonte": "DI5aWJiFAt8#71:18 (lavagna Excalidraw, schema T con rami A/B poi C) + voce 71:18",
+ "frame": "frame-0714.png",
+ "ancora": "Parallelo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-160", "tipo": "alternativa-a"}
+ ]
+ },
+ {
+ "id": "KA-162",
+ "tipo": "esempio",
+ "contenuto": "Esempio numerico del vantaggio del lavoro in parallelo: tre step da 5, 5 e 2 secondi eseguiti tutti in sequenza (pipeline) sommano un totale di 12 secondi; eseguendo invece i due step da 5 secondi in parallelo, il tempo totale scende a 7 secondi.",
+ "fonte": "DI5aWJiFAt8#72:18 (lavagna Excalidraw, cerchi 12 e 7) + voce 71:48-72:18",
+ "frame": "frame-0724.png",
+ "ancora": "avremmo un totale di 12 secondi... questo ce ne metterà cinque, questo ce ne metterà due",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-160", "tipo": "quantifica"},
+ {"verso": "KA-161", "tipo": "quantifica"}
+ ]
+ },
+ {
+ "id": "KA-163",
+ "tipo": "principio",
+ "contenuto": "Scrivendo prompt in modo accorto per far lavorare i subagent in parallelo quando possibile, invece che sempre in sequenza, le task vengono completate molto più velocemente.",
+ "fonte": "DI5aWJiFAt8#72:24 (lavagna Excalidraw) + voce 72:24",
+ "frame": "frame-0725.png",
+ "ancora": "se anche quando scrivete prompt siete un po' ingegnosi nell'andare in parallelo... le task si vanno... a compimento in maniera molto molto veloce",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-162", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-164",
+ "tipo": "definizione",
+ "contenuto": "Tutto ciò che Claude Cowork esegue (comandi, letture, scritture di file) avviene dentro una 'virtual machine', una sandbox isolata e sicura dedicata a quella sessione di lavoro.",
+ "fonte": "DI5aWJiFAt8#72:30 (Claude Cowork, chat TechnoService) + voce 72:30",
+ "frame": "frame-0726.png",
+ "ancora": "Tutto questo avviene in quella che noi definiamo virtual machine... questa scatola sicura dentro la quale letteralmente tutto succede",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-165",
+ "tipo": "principio",
+ "contenuto": "Anche l'intera conversazione va immaginata come una 'scatola sicura' annidata dentro la virtual machine: qualunque cosa venga fatta o cancellata resta confinata dentro quella conversazione/progetto e non tocca file al di fuori di essa.",
+ "fonte": "DI5aWJiFAt8#73:00 (Claude Cowork, annotazione rettangolo verde attorno alla pagina) + voce 73:00",
+ "frame": "frame-0731.png",
+ "ancora": "tutta questa conversazione sia un'altra scatola sicura... se qualcosa viene cancellato o fatto... avviene solo all'interno di questa conversazione",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-164", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-166",
+ "tipo": "dato",
+ "contenuto": "Nella cronologia reale di una chat Cowork, la riga di sistema 'Ran 2 agents' è la prova testuale che l'agente principale ha effettivamente lanciato dei subagent per eseguire un compito specifico, come il controllo qualità visivo di due documenti.",
+ "fonte": "DI5aWJiFAt8#73:30 (chat, Ran 2 agents) + voce 73:30",
+ "frame": "frame-0736.png",
+ "ancora": "Ran 2 agents",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-156", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-167",
+ "tipo": "regola",
+ "contenuto": "Buona pratica di organizzazione di un progetto Cowork: ridurre le cartelle a poche sottocartelle standard con ruoli chiari, ad esempio 'client_context' (per il materiale di contesto/input) e 'output' (per i risultati generati), invece di accumulare molte cartelle diverse senza criterio.",
+ "fonte": "DI5aWJiFAt8#76:00 (Finder, cartella Techno Service ridotta a client_context/output) + voce 76:00",
+ "frame": "frame-0761.png",
+ "ancora": "avremo tutto pulito ed organizzato",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-168",
+ "tipo": "comando",
+ "contenuto": "Per mantenere un progetto sempre pulito conviene istruire esplicitamente Claude a salvare ogni output generato dentro la sottocartella 'output' dedicata, invece di lasciare i file sparsi nella cartella principale del progetto.",
+ "fonte": "DI5aWJiFAt8#76:00 (Finder, cartella Techno Service) + voce 76:00",
+ "frame": "frame-0761.png",
+ "ancora": "gli diremo metti l'output dentro la cartella output",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-167", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-169",
+ "tipo": "procedura",
+ "contenuto": "È possibile creare un progetto Cowork puntandolo direttamente su una cartella già esistente sul computer, tramite l'opzione 'Use an existing folder', invece di creare una cartella nuova da zero.",
+ "fonte": "DI5aWJiFAt8#75:12 (modale Use an existing folder) + voce 75:06-75:12",
+ "frame": "frame-0753.png",
+ "ancora": "Pick a folder and Claude will treat its files as project context.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-170",
+ "tipo": "definizione",
+ "contenuto": "Una 'skill' per Claude non è altro che un semplice file (SKILL.md) in cui sono scritte le specifiche di un compito o comportamento che si vuole rendere ripetibile.",
+ "fonte": "DI5aWJiFAt8#77:54 (pannello Customize > Skills > eli5) + voce 77:54",
+ "frame": "frame-0780.png",
+ "ancora": "vedete che queste skill non sono altro che dei semplici file in cui noi andiamo a dare delle specifiche di che cos'è che vogliamo fare",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-171",
+ "tipo": "struttura",
+ "contenuto": "Il file di una skill è composto da una 'Description' che elenca le parole o situazioni che devono far scattare (trigger) automaticamente la skill, e da un corpo con istruzioni operative organizzate in punti numerati che guidano il comportamento da tenere.",
+ "fonte": "DI5aWJiFAt8#77:54 (dettaglio skill eli5, Description + How to explain) + voce 77:54",
+ "frame": "frame-0780.png",
+ "ancora": "Use this skill whenever the user says 'eli5', 'explain like I'm 5', 'explain it simply', 'dumb it down'",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-170", "tipo": "definisce"}
+ ]
+ },
+ {
+ "id": "KA-172",
+ "tipo": "struttura",
+ "contenuto": "Esistono due tipologie di skill per Claude: le skill 'native' già integrate e fornite da Anthropic, e le skill personalizzate che l'utente può creare su misura per i propri processi.",
+ "fonte": "DI5aWJiFAt8#79:12 (pagina Customize Claude, tre percorsi) + voce 79:12",
+ "frame": "frame-0793.png",
+ "ancora": "esistono varie tipologie di skill. Uno sono quelle che... sono già qua dentro, quindi quelle native di Antropic. esistono poi delle skill che noi andremo a fare che sono... customizzate",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-170", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-173",
+ "tipo": "comando",
+ "contenuto": "Per invocare esplicitamente una skill in una conversazione Cowork si scrive il simbolo '/' seguito dal nome della skill all'inizio del prompt (slash-command).",
+ "fonte": "DI5aWJiFAt8#78:42 (chat, badge /eli5) + voce 78:42",
+ "frame": "frame-0788.png",
+ "ancora": "per chiamare una skill ho utilizzato il forward slash",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-174",
+ "tipo": "struttura",
+ "contenuto": "La sezione 'Customize' di Claude Cowork si articola in tre categorie che modellano il comportamento dell'assistente: Connectors (collegamento alle app che si usano già), Skills (insegnare processi e competenze specifiche) e Plugins (pacchetti di conoscenza preconfezionata per un determinato settore).",
+ "fonte": "DI5aWJiFAt8#79:12 (pagina Customize Claude) + voce 79:12",
+ "frame": "frame-0793.png",
+ "ancora": "Connect your apps / Create new skills / Browse plugins",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-175",
+ "tipo": "dato",
+ "contenuto": "Nella Directory delle skill di Anthropic, ogni skill mostra autore, numero di download e descrizione; le skill non ancora aggiunte all'account sono contrassegnate da un'icona '+' per installarle, mentre quelle già configurate mostrano un'icona a ingranaggio.",
+ "fonte": "DI5aWJiFAt8#79:42 (modale Directory, griglia skill) + voce 79:42",
+ "frame": "frame-0798.png",
+ "ancora": "/brand-guidelines — Anthropic — 42.3K download — icona a ingranaggio",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-176",
+ "tipo": "definizione",
+ "contenuto": "La skill 'brand-guidelines' applica automaticamente i colori e la tipografia ufficiali di un brand a qualunque artifact prodotto (documenti, presentazioni, ecc.) che possa beneficiare di quello stile visivo.",
+ "fonte": "DI5aWJiFAt8#80:12 (tooltip descrizione brand-guidelines) + voce 79:42-80:12",
+ "frame": "frame-0803.png",
+ "ancora": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-172", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-177",
+ "tipo": "avvertimento",
+ "contenuto": "Prima di applicare la skill brand-guidelines a un documento destinato a un cliente, Claude segnala che le uniche linee guida di brand disponibili sono quelle di Anthropic (l'azienda che fornisce l'assistente), non quelle del cliente finale, e chiede conferma esplicita prima di procedere.",
+ "fonte": "DI5aWJiFAt8#80:42 (chat, richiesta conferma brand guidelines) + voce 80:42",
+ "frame": "frame-0808.png",
+ "ancora": "le brand guidelines che ho a disposizione sono quelle di Anthropic (la mia azienda, per così dire), non quelle di TechnoService",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-176", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-178",
+ "tipo": "dato",
+ "contenuto": "Specifica concreta delle brand guidelines Anthropic applicate nella demo: sfondo scuro #141413, sfondo chiaro crema #FAF9F5, colori di accento arancione #D97757, blu #6A9BCC e verde #788C5D, font Poppins per i titoli e Lora per il corpo del testo, con fallback ad Arial se questi font non sono installati.",
+ "fonte": "DI5aWJiFAt8#81:00 (chat, elenco colori e font applicati) + voce 81:00",
+ "frame": "frame-0811.png",
+ "ancora": "sfondo scuro (quasi nero) #141413... Sfondo chiaro #FAF9F5 (crema)... Font: Poppins per tutti i titoli... Lora per il corpo del testo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-176", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-179",
+ "tipo": "principio",
+ "contenuto": "Anche l'applicazione di una skill di stile a un documento già esistente attiva un ciclo di subagent: uno rigenera il file con le nuove regole visive, un altro esegue un controllo qualità visivo, correggendo eventuali dettagli finché il risultato non è corretto.",
+ "fonte": "DI5aWJiFAt8#80:42 (chat, Ricreando il PPTX / QA visivo) + voce 80:42",
+ "frame": "frame-0808.png",
+ "ancora": "avrà i nostri due subagents che abbiamo già introdotto. Quindi uno ricrea il PowerPoint con brand guidelines e l'altro fa il QA visivo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-156", "tipo": "applica"},
+ {"verso": "KA-177", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-180",
+ "tipo": "principio",
+ "contenuto": "Il lavoro necessario per costruire correttamente una skill di brand è impegnativo, ma una volta creata il suo riutilizzo successivo è immediato: basta un singolo comando per riapplicare colori e font aziendali coerenti a qualsiasi documento nuovo.",
+ "fonte": "DI5aWJiFAt8#81:36 (chat, dopo revisione slide) + voce 81:36",
+ "frame": "frame-0817.png",
+ "ancora": "la parte difficile... è creare questa skill, ma una volta creata l'utilizzo è estremamente semplice",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-181",
+ "tipo": "procedura",
+ "contenuto": "Per creare una nuova skill personalizzata si può usare la skill nativa 'skill-creator', che avvia il processo chiedendo per prima cosa all'utente cosa deve fare la nuova skill.",
+ "fonte": "DI5aWJiFAt8#82:06 (home, prompt con skill-creator) + voce 82:06",
+ "frame": "frame-0822.png",
+ "ancora": "Let's create a skill together using your skill-creator skill. First ask me what the skill should do.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-172", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-182",
+ "tipo": "procedura",
+ "contenuto": "In alternativa al percorso 'Customize > + > Create new skills', si può avviare la creazione di una skill digitando direttamente lo slash-command '/skill-creator' nella casella del prompt.",
+ "fonte": "DI5aWJiFAt8#83:06 (home, badge /skill-creator) + voce 83:06",
+ "frame": "frame-0832.png",
+ "ancora": "l'altro modo è esattamente fare questo, quindi skill creator",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-181", "tipo": "alternativa-a"},
+ {"verso": "KA-173", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-183",
+ "tipo": "dato",
+ "contenuto": "Fisicamente, quando Claude crea una nuova skill esegue un comando di sistema che genera una cartella dedicata dentro il percorso .claude/skills/<nome-skill>/, confermando che ogni skill è, alla base, semplicemente una cartella con dentro un file di istruzioni.",
+ "fonte": "DI5aWJiFAt8#83:36 (chat, comando mkdir) + voce 83:36",
+ "frame": "frame-0837.png",
+ "ancora": "mkdir -p /sessions/festive-eager-dirac/mnt/.claude/skills/saluto",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-170", "tipo": "quantificato-da"}
+ ]
+ },
+ {
+ "id": "KA-184",
+ "tipo": "esempio",
+ "contenuto": "Esempio minimo di skill personalizzata creata da zero ('saluto'): la Description elenca le parole-trigger che la attivano ('saluto', 'salutami', 'ciao'), e il corpo blinda rigidamente il comportamento imponendo di rispondere con una frase esatta senza aggiungere o modificare nulla.",
+ "fonte": "DI5aWJiFAt8#84:06 (pannello SKILL.md generato) + voce 84:06",
+ "frame": "frame-0842.png",
+ "ancora": "Non aggiungere altro. Non modificare il messaggio. Rispondi solo con quella frase esatta.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-171", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-185",
+ "tipo": "avvertimento",
+ "contenuto": "Se la cartella di sistema delle skill risulta in sola lettura, Claude salva il file della nuova skill in una cartella di output alternativa; per attivarla davvero, l'utente deve poi copiare manualmente quella cartella dentro ~/.claude/skills/ (o nella cartella skill del progetto).",
+ "fonte": "DI5aWJiFAt8#84:06 (chat, avviso cartella sola lettura) + voce 84:06",
+ "frame": "frame-0842.png",
+ "ancora": "la cartella delle skill di sistema era in sola lettura, quindi ho salvato la skill nella tua cartella di output. Per installarla, dovrai copiare la cartella 'saluto' dentro '~/.claude/skills/'",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-183", "tipo": "corretto-da"}
+ ]
+ },
+ {
+ "id": "KA-186",
+ "tipo": "principio",
+ "contenuto": "Il processo di creazione di una skill è iterativo: si parte da un output semplice, si valuta il risultato, e se non soddisfa si continua a raffinarlo nella stessa chat finché non risulta corretto.",
+ "fonte": "DI5aWJiFAt8#83:36 (chat, dopo creazione skill saluto) + voce 83:36",
+ "frame": "frame-0837.png",
+ "ancora": "cominciamo con qualcosa, abbiamo un output, lui ci darà un output, a noi non piace, lo andiamo a raffinare e continuiamo a parlare in questa chat",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-106", "tipo": "applica"}
+ ]
+ }
+]

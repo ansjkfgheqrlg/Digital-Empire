@@ -212,5 +212,942 @@
   "frame": "frame-0498.png",
   "ancora": "Voicemail Detection ... Stop Speaking Plan ... Call Timeout Settings ... Keypad Input Settings ... Messaging",
   "confidenza": "osservato"
+ },
+ {
+  "id": "KA-121",
+  "tipo": "struttura",
+  "contenuto": "Il percorso completo del corso sugli agenti vocali si articola in 8 blocchi tematici: cos'è un agente vocale, la struttura di un system prompt corretto, i modi di inserire una knowledge base, i tipi di tool integrabili, come customizzare l'agente vocale, il latency tuning, la costruzione di un agente end-to-end su Claude Code con integrazioni/workflow, e il ROI per le aziende con le tipologie di soluzioni esistenti.",
+  "fonte": "NmoOZVTrTXA#50:12 (slide Excalidraw di riepilogo corso) + voce 50:05-50:33",
+  "frame": "frame-0503.png",
+  "ancora": "1. Cos'è un agente vocale ... 7. Costruiremo un Agente e2e su Claude Code (3/4 integrazioni e workflows) ... 8. ROI per aziende, e tipologie di soluzioni che esistono",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-122",
+  "tipo": "principio",
+  "contenuto": "Il motivo per passare a costruire gli agenti vocali con Claude Code, dopo averne visto le basi dentro le dashboard delle piattaforme vocali, è che il processo svolto fino a quel punto è stato interamente manuale.",
+  "fonte": "NmoOZVTrTXA#50:18 (slide di riepilogo corso) + voce 50:37-50:44",
+  "frame": "frame-0504.png",
+  "ancora": "capite che per ora abbiamo fatto un processo estremamente manuale",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-121", "tipo": "applica", "perche": "motiva il passaggio al punto 7 della roadmap del corso"}
+  ]
+ },
+ {
+  "id": "KA-123",
+  "tipo": "avvertimento",
+  "contenuto": "Finché un assistente vocale costruito manualmente in una dashboard come VAPI non viene pubblicato, resta confinato dentro quella piattaforma e non può essere consegnato o condiviso con un cliente.",
+  "fonte": "NmoOZVTrTXA#50:48 (popup \"Unsaved Changes\" di VAPI) + voce 50:49-51:06",
+  "frame": "frame-0509.png",
+  "ancora": "questa cosa qui per ora vive nel nostro computer, cioè vive letteralmente dentro VAPI, non l'abbiamo ancora pubblicata, non la possiamo dare a nessuno",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-124",
+  "tipo": "dato",
+  "contenuto": "Un secondo assistente di esempio dentro VAPI, \"Fast Receptionist\" (provider OpenAI, modello GPT 4o Cluster), mostra un costo dichiarato di circa $0,1 al minuto e una latenza dichiarata di circa 1050 millisecondi.",
+  "fonte": "NmoOZVTrTXA#51:18 (dashboard VAPI, assistente \"Fast Receptionist\") + voce 51:12-51:26",
+  "frame": "frame-0514.png",
+  "ancora": "Cost ~$0.1 /min ... Latency ~1050 ms",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-125",
+  "tipo": "principio",
+  "contenuto": "Un assistente vocale generico costruito solo per provare personalmente la conversazione durante lo sviluppo non è automaticamente pronto per essere consegnato a un'azienda cliente reale.",
+  "fonte": "NmoOZVTrTXA#51:18 (dashboard VAPI, assistente \"Fast Receptionist\") + voce 51:12-51:26",
+  "frame": "frame-0514.png",
+  "ancora": "ma non è una cosa che poi possiamo andare a dire hey azienda top, tieni questo è il voice agent che dovrei andare a fare",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-124", "tipo": "parte-di", "perche": "la valutazione riguarda proprio l'assistente di esempio appena descritto"}
+  ]
+ },
+ {
+  "id": "KA-126",
+  "tipo": "esempio",
+  "contenuto": "Esempio completo di system prompt generico per un receptionist AI telefonico, strutturato in quattro sezioni: [Identity] (ruolo e contesto generico), [Style] (tono caldo e professionale, risposte di 1-2 frasi), [Response Guidelines] (risposte concise, niente gergo tecnico), [Task & Goals] (5 passi: saluto, gestione richieste generiche, conferma orario per appuntamenti, indirizzamento al reparto giusto, verifica finale).",
+  "fonte": "NmoOZVTrTXA#51:48 (system prompt completo di \"Fast Receptionist\" in VAPI) + voce 51:27-51:48",
+  "frame": "frame-0519.png",
+  "ancora": "[Identity] You are a friendly and professional AI receptionist at a generic business... [Task & Goals] 1. Greet callers warmly and ask how you can assist them.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-103", "tipo": "esempio-di", "perche": "è un'istanza concreta della stessa struttura a blocchi (identità/stile/linee guida/task)"}
+  ]
+ },
+ {
+  "id": "KA-127",
+  "tipo": "principio",
+  "contenuto": "È possibile costruire un intero agente vocale usando solo Claude Code, senza ricorrere a una piattaforma di orchestrazione come n8n; n8n viene comunque scelto come supporto (sponda) perché rende più semplice controllare e modellare i vari system prompt degli agenti.",
+  "fonte": "NmoOZVTrTXA#51:48 (transizione verso le piattaforme) + voce 51:27-51:48",
+  "frame": "frame-0519.png",
+  "ancora": "tutto può essere fatto con Cloud Code senza andare ad utilizzare Na10, che io invece ora utilizzerò come sponda perché... vi permette di controllare i system prompt",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-128",
+  "tipo": "procedura",
+  "contenuto": "Il flusso di lavoro dichiarato per costruire un sistema di agenti vocali comincia con Claude Code, poi passa a n8n per modellare e mettere a punto i system prompt dei singoli agenti, soprattutto quando il progetto prevede più flussi/agenti collegati tra loro.",
+  "fonte": "NmoOZVTrTXA#52:18 (System Prompt di \"Fast Receptionist\" ancora a schermo) + voce 51:52-52:07",
+  "frame": "frame-0524.png",
+  "ancora": "il mio flusso è prendo, comincio con Cloud Code, uso N8n perché mi viene un po' meglio modellare la gente, capire i vari system prompt",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-127", "tipo": "parte-di", "perche": "descrive nel dettaglio l'ordine pratico del flusso Claude Code + n8n"}
+  ]
+ },
+ {
+  "id": "KA-129",
+  "tipo": "procedura",
+  "contenuto": "Dopo aver validato singolarmente ogni flusso/agente (latenza, prompt, risposte) nelle rispettive piattaforme, il passo successivo è chiedere a Claude Code di ricostruire l'intero sistema in un progetto unico e pubblicarlo su Vercel, rendendolo accessibile pubblicamente come qualsiasi altro sito.",
+  "fonte": "NmoOZVTrTXA#52:42 (dashboard Vercel con storico deployment) + voce 52:16-52:32",
+  "frame": "frame-0528.png",
+  "ancora": "chiedo di ricostruire tutto con Cloud Code... e poi possiamo pubblicare in Vercel queste cose, quindi poi sono accessibili come qualsiasi altra cosa",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-128", "tipo": "parte-di", "perche": "è l'ultimo passo del flusso Claude Code + n8n descritto in precedenza"}
+  ]
+ },
+ {
+  "id": "KA-130",
+  "tipo": "esempio",
+  "contenuto": "Esempio concreto di lead magnet pubblicato live: un \"ROI Calculator\" per agenti vocali (roi-voice-ai-calculator.vercel.app) che chiede volume mensile di chiamate, durata media chiamata, stipendio medio annuo del personale e ricavo medio per lavoro, per stimare il risparmio annuo ottenibile passando a un agente vocale AI.",
+  "fonte": "NmoOZVTrTXA#52:54 (sito live roi-voice-ai-calculator.vercel.app) + voce 52:32-52:56",
+  "frame": "frame-0530.png",
+  "ancora": "Calculate Your ROI ... See how much your business could save by switching to a Voice AI Agent that answers calls 24/7",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-129", "tipo": "esempio-di", "perche": "è un esempio concreto di progetto pubblicato su Vercel"}
+  ]
+ },
+ {
+  "id": "KA-131",
+  "tipo": "dato",
+  "contenuto": "Con input di esempio (500 chiamate/mese, durata media 3 minuti, stipendio medio annuo $40.000, ricavo medio per lavoro $5.000), il calcolatore ROI per agenti vocali stima: risparmio netto annuo $160.300, risparmio sul costo del personale $28.000, profitto aggiuntivo da chiamate perse recuperate $135.000, costo della soluzione AI $2.700, ROI del 5937%, tempo di recupero dell'investimento (payback period) di 6 giorni.",
+  "fonte": "NmoOZVTrTXA#53:00 (sezione risultati del ROI calculator) + voce 52:56-53:06",
+  "frame": "frame-0531.png",
+  "ancora": "By switching to a Voice AI Agent, you could save $160,300/year ... ROI 5937% ... PAYBACK PERIOD 6 days",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-130", "tipo": "quantifica", "perche": "fornisce i numeri concreti prodotti dal calcolatore descritto"}
+  ]
+ },
+ {
+  "id": "KA-132",
+  "tipo": "dato",
+  "contenuto": "Le stime del ROI calculator per agenti vocali si basano su quattro assunzioni dichiarate esplicitamente in pagina: tasso di automazione delle chiamate al 70%, conversione da chiamata persa a prenotazione al 15%, margine di profitto sui lavori al 30%, costo dell'AI di $0,15 al minuto per tutte le chiamate.",
+  "fonte": "NmoOZVTrTXA#53:00 (nota \"Assumptions\" a piè pagina del ROI calculator) + voce 52:56-53:06",
+  "frame": "frame-0531.png",
+  "ancora": "Assumptions: 70% call automation rate · 15% missed-call-to-booking conversion · 30% profit margin on jobs · $0.15/min AI cost",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-131", "tipo": "motiva", "perche": "sono le assunzioni che generano i numeri di risparmio e ROI dichiarati"}
+  ]
+ },
+ {
+  "id": "KA-133",
+  "tipo": "dato",
+  "contenuto": "Google Antigravity è un IDE (integrated development environment) potenziato da AI sviluppato da Google, con data di rilascio iniziale 18 novembre 2025 e licenza proprietaria, pensato per dare priorità agli agenti AI nello sviluppo software.",
+  "fonte": "NmoOZVTrTXA#53:24 (Google Knowledge Panel per \"Google Antigravity\") + voce 53:19",
+  "frame": "frame-0535.png",
+  "ancora": "Google Antigravity is an AI-powered integrated development environment developed by Google... Initial release date: November 18, 2025... License: Proprietary software",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-134",
+  "tipo": "dato",
+  "contenuto": "Antigravity si scarica dal sito ufficiale antigravity.google, che offre un pulsante di download dedicato per MacOS oltre a sezioni Product, Use Cases, Pricing, Blog, Resources.",
+  "fonte": "NmoOZVTrTXA#53:30 (homepage antigravity.google) + voce 53:19-53:31",
+  "frame": "frame-0536.png",
+  "ancora": "Experience liftoff with the next-generation IDE ... Download for MacOS",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-133", "tipo": "parte-di", "perche": "descrive dove e come scaricare il prodotto appena definito"}
+  ]
+ },
+ {
+  "id": "KA-135",
+  "tipo": "principio",
+  "contenuto": "A differenza di Antigravity, che offre un margine d'uso gratuito per provare il modello, l'utilizzo di Claude Code richiede un abbonamento a pagamento: è l'unica vera differenza da considerare prima di iniziare a usarlo rispetto ad Antigravity.",
+  "fonte": "NmoOZVTrTXA#53:36 (ricerca Google \"claude\" prima di aprire la pagina prezzi) + voce 53:31-53:50",
+  "frame": "frame-0537.png",
+  "ancora": "per quanto riguarda invece Cloud una sola cosa avete da considerare... mentre anti-gravity avrete diciamo un intervallo per giocare con il modello gratuitamente",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-136",
+  "tipo": "dato",
+  "contenuto": "Sul sito ufficiale claude.com/pricing, il piano Free costa $0, il piano Pro costa $17 al mese con abbonamento annuale (o $20 al mese se fatturato mensilmente), e il piano Max parte da $100 al mese.",
+  "fonte": "NmoOZVTrTXA#54:00 (pagina claude.com/pricing) + voce 54:01",
+  "frame": "frame-0541.png",
+  "ancora": "Free — $0 — Free for everyone ... Pro — $17 — Per month with annual subscription discount... $20 if billed monthly ... Max — From $100 — Per month",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-137",
+  "tipo": "regola",
+  "contenuto": "Solo i piani a pagamento Pro e Max di Claude includono l'accesso a Claude Code (e a \"Cowork\"): il piano Free non lo include, quindi senza un abbonamento Pro o superiore non è possibile utilizzare Claude Code.",
+  "fonte": "NmoOZVTrTXA#54:00 (pagina claude.com/pricing, elenco funzionalità del piano Pro) + voce 54:01",
+  "frame": "frame-0541.png",
+  "ancora": "la cloud la tier pro e la tier max sono quelle che vi permettono di utilizzarlo... se non pagate l'abbonamento questa cosa qui... non potete utilizzarla / Includes Claude Code and Cowork",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-136", "tipo": "parte-di", "perche": "specifica quale dei tre piani di prezzo dà accesso a Claude Code"}
+  ]
+ },
+ {
+  "id": "KA-138",
+  "tipo": "dato",
+  "contenuto": "Il piano Max di Claude offre, rispetto al piano Pro, la scelta tra 5 volte o 20 volte più utilizzo, limiti di output più alti per tutti i task, accesso anticipato alle funzionalità avanzate e accesso prioritario nelle fasce orarie di alto traffico.",
+  "fonte": "NmoOZVTrTXA#54:00 (pagina claude.com/pricing, elenco funzionalità del piano Max) + voce 54:01",
+  "frame": "frame-0541.png",
+  "ancora": "Choose 5x or 20x more usage than Pro* ... Higher output limits for all tasks ... Priority access at high traffic times",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-136", "tipo": "parte-di", "perche": "dettaglia i vantaggi aggiuntivi del piano Max rispetto ai prezzi già indicati"}
+  ]
+ },
+ {
+  "id": "KA-139",
+  "tipo": "struttura",
+  "contenuto": "La schermata di benvenuto di Antigravity offre tre punti di ingresso per iniziare un progetto — \"Open Folder\", \"Open Agent Manager\", \"Clone Repository\" — più un elenco \"Workspaces\" dei progetti già aperti in precedenza, organizzati per cartella sul computer.",
+  "fonte": "NmoOZVTrTXA#54:24 (schermata di benvenuto di Antigravity) + voce 54:22",
+  "frame": "frame-0545.png",
+  "ancora": "Open Folder ... Open Agent Manager ... Clone Repository ... tutti i progetti dentro Antigravity... vivono dentro una cartella",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-140",
+  "tipo": "dato",
+  "contenuto": "Nel pannello \"Agent\" della schermata di benvenuto di Antigravity, il modello di default preimpostato è Claude Sonnet, con una modalità \"Planning\" selezionabile accanto alla scelta del modello.",
+  "fonte": "NmoOZVTrTXA#54:24 (pannello Agent di Antigravity) + voce 54:22",
+  "frame": "frame-0545.png",
+  "ancora": "menu a tendina \"Planning\" e \"Claude So...\" (Claude Sonnet)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-139", "tipo": "parte-di", "perche": "è un dettaglio del pannello Agent nella stessa schermata di benvenuto"}
+  ]
+ },
+ {
+  "id": "KA-141",
+  "tipo": "dato",
+  "contenuto": "Antigravity utilizza di default il marketplace \"Open VSX\" per le estensioni (impostazione modificabile), e al suo interno è disponibile l'estensione ufficiale \"Claude Code for VS Code\" pubblicata da Anthropic.",
+  "fonte": "NmoOZVTrTXA#55:18 (pannello Extensions Marketplace di Antigravity) + voce 55:15-55:22",
+  "frame": "frame-0554.png",
+  "ancora": "By default, Antigravity uses Open VSX as a marketplace. This can be changed in Antigravity settings. / Claude Code for VS Code, editore Anthropic",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-142",
+  "tipo": "procedura",
+  "contenuto": "Per usare Claude Code dentro un IDE come Antigravity (basato su VS Code), si cerca \"Claude Code\" nel marketplace delle estensioni e la si installa: al termine dell'installazione appare un'icona dedicata nell'editor per aprire il pannello di chat.",
+  "fonte": "NmoOZVTrTXA#55:24-55:36 (installazione dell'estensione \"Claude Code for VS Code\") + voce 55:22-55:34",
+  "frame": "frame-0555.png",
+  "ancora": "estensioni cloud code ora per utilizzarlo avrete questa iconcina qui quindi basta che la premiate",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-141", "tipo": "applica", "perche": "descrive l'azione pratica di installazione dell'estensione appena definita"}
+  ]
+ },
+ {
+  "id": "KA-143",
+  "tipo": "dato",
+  "contenuto": "Su Mac, la scorciatoia da tastiera per aprire il pannello di Claude Code dentro l'estensione VS Code/Antigravity è Command+Shift+Esc.",
+  "fonte": "NmoOZVTrTXA#55:36 (pagina estensione \"Claude Code for VS Code\") + voce 55:34",
+  "frame": "frame-0557.png",
+  "ancora": "oppure se avete un Mac è command shift ed esc la shortcut che potete utilizzare",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-142", "tipo": "alternativa-a", "perche": "è un modo alternativo al click sull'icona per aprire lo stesso pannello"}
+  ]
+ },
+ {
+  "id": "KA-144",
+  "tipo": "dato",
+  "contenuto": "Al momento della registrazione del corso, l'estensione ufficiale \"Claude Code for VS Code\" (versione 2.1.76) contava circa 5,38 milioni di installazioni, era stata pubblicata 7 mesi prima con un ultimo rilascio risalente a 3 giorni prima, per una dimensione di circa 228,53MB.",
+  "fonte": "NmoOZVTrTXA#55:24 (pagina dettaglio estensione \"Claude Code for VS Code\") + voce 55:22",
+  "frame": "frame-0555.png",
+  "ancora": "5,378,633 ... Version: 2.1.76 ... Published: 7 months ago ... Last Released: 3 days ago ... Size: 228.53MB",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-141", "tipo": "quantifica", "perche": "fornisce i numeri precisi dell'estensione già definita"}
+  ]
+ },
+ {
+  "id": "KA-145",
+  "tipo": "procedura",
+  "contenuto": "Il primo passo pratico per costruire un agente vocale end-to-end con Claude Code è impostare un progetto dedicato: aprire una cartella di lavoro e, al suo interno, il pannello di chat di Claude Code, prima ancora di scegliere quale piattaforma vocale (n8n, VAPI, ecc.) utilizzare.",
+  "fonte": "NmoOZVTrTXA#55:42 (primo pannello Claude Code aperto in Antigravity) + voce 55:41-55:49",
+  "frame": "frame-0558.png",
+  "ancora": "ora sostanzialmente cominciamo con l'impostare il progetto ... prima cosa è la piattaforma che noi andiamo ad utilizzare",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-146",
+  "tipo": "dato",
+  "contenuto": "Nella barra di input della chat di Claude Code (anche nella variante estensione VS Code/Antigravity) è presente un interruttore \"Bypass permissions\" che, se attivato, permette all'agente di eseguire azioni senza chiedere conferma ad ogni passo.",
+  "fonte": "NmoOZVTrTXA#55:48 (barra di input di Claude Code in Antigravity) + osservazione visiva",
+  "frame": "frame-0559.png",
+  "ancora": "interruttore rosso \"Bypass permissions\"",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-147",
+  "tipo": "dato",
+  "contenuto": "L'accesso a n8n cloud avviene tramite un nome account personalizzato a cui si aggiunge automaticamente il suffisso fisso \".app.n8n.cloud\" per formare l'URL della propria istanza.",
+  "fonte": "NmoOZVTrTXA#56:06 (pagina di login n8n cloud) + voce 55:59-56:07",
+  "frame": "frame-0562.png",
+  "ancora": "n8n account name precompilato con \"giovanniyoutube\" seguito dal suffisso fisso \".app.n8n.cloud\"",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-148",
+  "tipo": "struttura",
+  "contenuto": "La dashboard \"Overview\" di n8n cloud organizza il lavoro in tab distinte — Workflows, Credentials, Executions, Variables, Data tables — ed espone in cima alcune metriche riassuntive come numero di esecuzioni in produzione, tasso di fallimento e tempo medio di esecuzione.",
+  "fonte": "NmoOZVTrTXA#56:12 (dashboard n8n cloud \"Overview\") + voce 56:07",
+  "frame": "frame-0563.png",
+  "ancora": "Workflows (attiva), Credentials, Executions, Variables, Data tables / Prod. executions 13 ... Failure rate 46.2% ... Run time (avg.) 4.5s",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-149",
+  "tipo": "struttura",
+  "contenuto": "Un nuovo workflow vuoto in n8n offre due punti di partenza alternativi sul canvas: aggiungere manualmente il primo nodo (\"+ Add first step...\") oppure generare la struttura iniziale con l'AI (\"✨ Build with AI\").",
+  "fonte": "NmoOZVTrTXA#56:42 (canvas di un nuovo workflow n8n vuoto) + voce 56:33",
+  "frame": "frame-0568.png",
+  "ancora": "+ Add first step... e ✨ Build with AI",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-150",
+  "tipo": "principio",
+  "contenuto": "Anche disponendo di Claude Code, esistono ancora compiti che si svolgono meglio dentro una piattaforma di orchestrazione visuale come n8n piuttosto che direttamente in Claude Code.",
+  "fonte": "NmoOZVTrTXA#57:12 (canvas n8n vuoto, nessuna azione compiuta) + voce 57:03",
+  "frame": "frame-0573.png",
+  "ancora": "alcune cose ancora saranno, diciamo, fate meglio su questa tipologia di piattaforma rispetto che Claude",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-127", "tipo": "parte-di", "perche": "precisa il ruolo di n8n accanto a Claude Code già introdotto in precedenza"}
+  ]
+ },
+ {
+  "id": "KA-151",
+  "tipo": "procedura",
+  "contenuto": "Per insegnare a Claude Code come funziona una piattaforma esterna (es. n8n), si crea un file markdown dedicato dentro il progetto (es. \"n8n.md\") che funge da manuale di istruzioni per quella piattaforma.",
+  "fonte": "NmoOZVTrTXA#57:42 (Explorer con cartella progetto vuota, tooltip \"New File...\") + voce 57:40",
+  "frame": "frame-0578.png",
+  "ancora": "manuale di istruzioni sarà un md file, quindi qui avremo il nostro file.md che dovrà far capire al nostro, diciamo, cloud code come funziona na10",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-152",
+  "tipo": "struttura",
+  "contenuto": "Il progetto di un agente vocale costruito con Claude Code si organizza attorno a quattro file markdown di istruzioni nella cartella principale: \"CLAUDE.md\" (istruzioni generali di progetto), \"n8n.md\" (come funziona n8n), \"vapi.md\" (come funziona VAPI), \"voice_agent.md\" (istruzioni in linguaggio naturale su come costruire un agente vocale).",
+  "fonte": "NmoOZVTrTXA#59:12 (Explorer con i quattro file creati, CLAUDE.md evidenziato) + voce 58:37-58:58",
+  "frame": "frame-0593.png",
+  "ancora": "CLAUDE.md, n8n.md, vapi.md, voice_agent.md / avremo bisogno di un Cloud.md che sono le istruzioni generali di progetto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-151", "tipo": "parte-di", "perche": "n8n.md è uno dei quattro file della struttura completa qui descritta"}
+  ]
+ },
+ {
+  "id": "KA-153",
+  "tipo": "struttura",
+  "contenuto": "I quattro file di istruzioni del progetto (CLAUDE.md, n8n.md, vapi.md, voice_agent.md) sono pensati per collegarsi tra loro in un ciclo di riferimenti incrociati, non come documenti isolati: ciascuno rimanda agli altri per costruire una conoscenza di progetto coerente.",
+  "fonte": "NmoOZVTrTXA#59:42 (Explorer con frecce disegnate a mano che collegano i 4 file in un anello) + voce 59:53",
+  "frame": "frame-0598.png",
+  "ancora": "quindi ora pian pianino andremo a crearle (frecce arancione/viola/ciano/verde che collegano CLAUDE.md, n8n.md, vapi.md, voice_agent.md in un anello)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-152", "tipo": "parte-di", "perche": "descrive la relazione tra i quattro file già elencati"}
+  ]
+ },
+ {
+  "id": "KA-154",
+  "tipo": "principio",
+  "contenuto": "Per documentare a Claude come lavorare con n8n, gli ingredienti da inserire nel file di istruzioni sono due: un MCP dedicato e delle skill dedicate.",
+  "fonte": "NmoOZVTrTXA#60:12 (n8n.md vuoto in editor) + voce 60:05",
+  "frame": "frame-0603.png",
+  "ancora": "dobbiamo cominciare a fare questa documentazione per NA10... dobbiamo inserirli un MCP e dobbiamo inserirli e poi le skills",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-153", "tipo": "applica", "perche": "è il primo contenuto concreto che va scritto in uno dei quattro file collegati"}
+  ]
+ },
+ {
+  "id": "KA-155",
+  "tipo": "dato",
+  "contenuto": "Esiste una repository GitHub pubblica di terze parti, \"czlonkowski/n8n-skills\" (circa 3,8 mila star, 651 fork), che fornisce skill Claude Code già pronte per costruire workflow n8n corretti appoggiandosi al server MCP \"n8n-mcp\".",
+  "fonte": "NmoOZVTrTXA#60:42 (pagina GitHub czlonkowski/n8n-skills) + voce 60:37",
+  "frame": "frame-0608.png",
+  "ancora": "n8n-skills — Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server / Stars 3.8k",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-154", "tipo": "applica", "perche": "è la fonte concreta della skill richiesta per documentare n8n"}
+  ]
+ },
+ {
+  "id": "KA-156",
+  "tipo": "struttura",
+  "contenuto": "Lo scheletro minimo di un file di istruzioni per una piattaforma esterna (es. n8n.md) si compone di tre campi in quest'ordine: \"Skills:\" (link alla repo di skill), \"MCP:\" (link al server MCP), \"PROMPT:\" (un mini prompt descrittivo aggiuntivo).",
+  "fonte": "NmoOZVTrTXA#60:54 (input di Claude Code con i tre campi \"Skills:\", \"MCP:\", \"PROMPT:\") + voce 60:18",
+  "frame": "frame-0610.png",
+  "ancora": "Skills: ... MCP: ... PROMPT:",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-154", "tipo": "applica", "perche": "traduce in uno scheletro scrivibile i due ingredienti (MCP e skill) appena richiesti"}
+  ]
+ },
+ {
+  "id": "KA-157",
+  "tipo": "definizione",
+  "contenuto": "In questo contesto, un MCP dà accesso agli strumenti/tool sottostanti di una piattaforma, mentre le skill dicono all'agente (Claude) come e quando usare correttamente quegli strumenti: sono due livelli complementari, non intercambiabili.",
+  "fonte": "NmoOZVTrTXA#61:18 (compilazione dei campi Skills/MCP in Claude Code) + voce 61:15",
+  "frame": "frame-0614.png",
+  "ancora": "l'MCP dà accesso a i vari strumenti di Anethen [Anthropic]. Le skill dicono a Cloud come deve usare questi strumenti.",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-158",
+  "tipo": "dato",
+  "contenuto": "Per n8n, l'autore czlonkowski pubblica due repository GitHub distinte e complementari: \"n8n-skills\" (le skill) e \"n8n-mcp\" (il server MCP).",
+  "fonte": "NmoOZVTrTXA#61:18 (campi compilati \"Skills: .../n8n-skills\" e \"MCP: .../n8n-mcp\") + voce 61:07-61:15",
+  "frame": "frame-0614.png",
+  "ancora": "Skills: https://github.com/czlonkowski/n8n-skills ... MCP: https://github.com/czlonkowski/n8n-mcp",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-157", "tipo": "esempio-di", "perche": "è l'esempio concreto della coppia MCP+skill appena definita"},
+   {"verso": "KA-155", "tipo": "parte-di", "perche": "conferma l'autore e completa la coppia di repository già citata"}
+  ]
+ },
+ {
+  "id": "KA-159",
+  "tipo": "principio",
+  "contenuto": "Quando si fa riferimento a repository esterne di skill/MCP dentro un prompt per Claude, conviene chiedere esplicitamente di clonare (o importare) quelle repository dentro il workspace del progetto stesso, così tutte le informazioni restano contenute in un'unica fonte di verità (source of truth) invece di restare sparse fuori dal progetto.",
+  "fonte": "NmoOZVTrTXA#63:18 (prompt dettato in Claude Code) + voce 62:44",
+  "frame": "frame-0634.png",
+  "ancora": "assicurati di clonare le repository anche all'interno del nostro, o di importarle nel nostro workspace o nel nostro progetto, perché questo... ci permetterà di avere tutte le informazioni contenute in un'unica source of truth",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-157", "tipo": "applica", "perche": "applica il principio MCP/skill imponendo che le fonti restino dentro il progetto"}
+  ]
+ },
+ {
+  "id": "KA-160",
+  "tipo": "esempio",
+  "contenuto": "Esecuzione concreta della clonazione delle repository dentro il progetto: Claude Code lancia due comandi \"git clone\" (per \"n8n-skills\" e per \"n8n-mcp\") e le due cartelle risultanti compaiono nell'Explorer del progetto accanto ai file di istruzioni.",
+  "fonte": "NmoOZVTrTXA#63:36 (output dei comandi Bash \"Clone n8n-skills repository\" e \"Clone n8n-mcp repository\") + voce 62:50",
+  "frame": "frame-0637.png",
+  "ancora": "Bash → Clone n8n-skills repository — git clone https://github.com/czlonkowski/n8n-skills.g... / Bash → Clone n8n-mcp repository",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-159", "tipo": "esempio-di", "perche": "mostra l'istruzione appena dettata effettivamente eseguita"}
+  ]
+ },
+ {
+  "id": "KA-161",
+  "tipo": "principio",
+  "contenuto": "Dopo aver importato conoscenza esterna (skill+MCP) in un progetto Claude, il primo test di validazione consiste nel chiedere direttamente all'agente di produrre l'artefatto target (in questo caso un workflow n8n) e verificare se il risultato è effettivamente corretto, prima di fidarsi del setup.",
+  "fonte": "NmoOZVTrTXA#64:06-64:24 (sequenza a camera fissa) + voce 64:06-64:23",
+  "frame": "frame-0643.png",
+  "ancora": "la prima verifica che faremo è ok. Detto che ho importato queste informazioni, ora se io chiedessi a Cloud di farmi un workflow... può Cloud farmi effettivamente il workflow che ho chiesto, si o no, e poi verificheremo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-160", "tipo": "applica", "perche": "definisce il criterio di verifica da applicare subito dopo l'importazione appena eseguita"}
+  ]
+ },
+ {
+  "id": "KA-162",
+  "tipo": "struttura",
+  "contenuto": "Il primo system prompt generato da Claude per n8n organizza le \"fonti di riferimento locali\" in una tabella con tre colonne — Repository, Path locale, Scopo — mappando \"n8n-skills\" (7 skill che insegnano a costruire workflow) e \"n8n-mcp\" (server MCP con accesso a nodi, validazione, template) alle rispettive cartelle locali clonate.",
+  "fonte": "NmoOZVTrTXA#64:30 (file n8n.md generato, sezione \"Fonti di riferimento locali\") + voce 64:27",
+  "frame": "frame-0646.png",
+  "ancora": "| Repository | Path locale | Scopo | ... | n8n-mcp | `n8n-mcp/` | MCP server che fornisce accesso a 1.084 nodi, validazione, template |",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-160", "tipo": "applica", "perche": "documenta i path locali delle repository appena clonate"},
+   {"verso": "KA-167", "tipo": "corretto-da", "perche": "questa prima versione del prompt viene riscritta poco dopo con una struttura a 6 step più esplicita"}
+  ]
+ },
+ {
+  "id": "KA-163",
+  "tipo": "dato",
+  "contenuto": "Il server MCP \"n8n-mcp\" dà accesso, tra le altre cose, a 1.084 nodi n8n documentati e a 2.709 template di workflow.",
+  "fonte": "NmoOZVTrTXA#64:30 (tabella \"Fonti di riferimento locali\" in n8n.md) + voce 64:27",
+  "frame": "frame-0646.png",
+  "ancora": "MCP server che fornisce accesso a 1.084 nodi, validazione, template (dettaglio esteso nella scena 250: \"n8n-mcp MCP Server (dati: 1.084 nodi, 2.709 template, validazione)\")",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-162", "tipo": "parte-di", "perche": "quantifica lo scopo del server MCP già descritto nella tabella"}
+  ]
+ },
+ {
+  "id": "KA-164",
+  "tipo": "struttura",
+  "contenuto": "Il prompt n8n generato mappa ogni tipo di attività (capire quale tool MCP usare, struttura/pattern del workflow, scrivere espressioni n8n, configurare un nodo, validare, scrivere codice JavaScript o Python nei Code node, gestire il ciclo create/update/deploy, ricerca nodi, guida alla validazione, workflow AI Agent) al file SKILL.md specifico dentro \"n8n-skills/skills/\" da consultare per quel compito.",
+  "fonte": "NmoOZVTrTXA#64:30 (tabella \"File chiave da consultare per tipo di attività\") + voce 64:27",
+  "frame": "frame-0646.png",
+  "ancora": "Capire quale tool MCP usare → n8n-skills/skills/n8n-mcp-tools-expert/SKILL.md ... AI Agent workflow → n8n-skills/skills/n8n-workflow-patterns/ai_agent_workflow.md",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-162", "tipo": "parte-di", "perche": "è la seconda tabella dello stesso file di prompt n8n"}
+  ]
+ },
+ {
+  "id": "KA-165",
+  "tipo": "principio",
+  "contenuto": "Anche se un file di istruzioni importa correttamente sia l'MCP sia le skill di una piattaforma, questo non basta: bisogna verificare che il testo generato spieghi in modo sufficientemente chiaro COME MCP e skill vanno usati insieme, altrimenti il prompt va riscritto.",
+  "fonte": "NmoOZVTrTXA#65:30 (rilettura critica del primo n8n.md) + voce 65:05",
+  "frame": "frame-0656.png",
+  "ancora": "non vedo che abbia dettagliato in maniera sufficientemente chiara il fatto che bisogna utilizzare MCP e skill",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-162", "tipo": "contraddice", "perche": "mette in discussione la completezza della prima versione del prompt appena mostrata"}
+  ]
+ },
+ {
+  "id": "KA-166",
+  "tipo": "principio",
+  "contenuto": "La combinazione concettuale di un MCP server (dati e strumenti) con delle skill (guida esperta su come usare quegli strumenti) produce un \"workflow builder\" completo basato sul principio della progressive disclosure, cioè rivelare la complessità solo quando serve.",
+  "fonte": "NmoOZVTrTXA#65:30 (blocco di sintesi in n8n.md) + voce 65:05",
+  "frame": "frame-0656.png",
+  "ancora": "n8n-mcp MCP Server (dati: 1.084 nodi, 2.709 template, validazione) + n8n-skills (guida esperta su COME usare gli MCP tools) = Workflow builder completo con progressive disclosure",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-157", "tipo": "applica", "perche": "riformula in chiave di progressive disclosure la stessa distinzione MCP/skill già definita"}
+  ]
+ },
+ {
+  "id": "KA-167",
+  "tipo": "struttura",
+  "contenuto": "Il prompt n8n riscritto definisce un processo obbligatorio a 6 step da seguire per OGNI richiesta di costruzione di un workflow, da non saltare mai: Step 1 Clarify & Plan, Step 2 Research Nodes, e altri 4 step successivi (scrittura di espressioni/codice, costruzione, validazione, attivazione).",
+  "fonte": "NmoOZVTrTXA#65:42 (n8n.md riscritto, \"## Processo a 6 Step\") + voce 65:36-65:52",
+  "frame": "frame-0658.png",
+  "ancora": "## Processo a 6 Step / Per OGNI richiesta di workflow, segui questi 6 step in ordine. Non saltarne nessuno.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-165", "tipo": "applica", "perche": "la riscrittura risponde direttamente alla critica sulla mancanza di dettaglio nella versione precedente"}
+  ]
+ },
+ {
+  "id": "KA-168",
+  "tipo": "procedura",
+  "contenuto": "Lo Step 1 (\"Clarify & Plan\") del processo di costruzione di un workflow n8n richiede tre azioni: identificare il trigger (webhook, schedule, evento, manuale, chat), mappare il flusso dati (origine → trasformazioni → destinazione), e usare la skill \"n8n-workflow-patterns\" per scegliere il pattern architetturale corretto.",
+  "fonte": "NmoOZVTrTXA#65:42 (n8n.md, \"### Step 1: Clarify & Plan\") + voce 65:36",
+  "frame": "frame-0658.png",
+  "ancora": "1. Identifica il trigger (webhook, schedule, evento, manuale, chat) ... 2. Mappa il flusso dati... 3. Usa la skill n8n-workflow-patterns per selezionare il pattern",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-167", "tipo": "parte-di", "perche": "è il dettaglio operativo del primo dei 6 step definiti"}
+  ]
+ },
+ {
+  "id": "KA-169",
+  "tipo": "struttura",
+  "contenuto": "Esistono tre modi distinti e documentati per costruire un agente vocale con n8n, ciascuno con un trade-off diverso: \"Voice Agent (Twilio)\" dà controllo totale su STT/TTS/telefonia; \"Voice Agent (Vapi)\" lascia che sia Vapi a gestire la voce mentre n8n gestisce solo la logica di business (voce gestita/managed); \"Voice Agent (ElevenLabs)\" usa ElevenLabs come tool provider per la conversazione.",
+  "fonte": "NmoOZVTrTXA#65:42 (tabella pattern in n8n.md riscritto, righe \"Voice Agent\") + voce 65:36",
+  "frame": "frame-0658.png",
+  "ancora": "Voice Agent (Twilio) → Controllo totale STT/TTS/telefonia → Full control / Voice Agent (Vapi) → Vapi gestisce voce, n8n logica business → Managed voice / Voice Agent (ElevenLabs) → ElevenLabs gestisce conversazione → Tool provider",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-168", "tipo": "parte-di", "perche": "è parte della tabella dei pattern usata al punto 3 dello Step 1"}
+  ]
+ },
+ {
+  "id": "KA-170",
+  "tipo": "struttura",
+  "contenuto": "Oltre ai tre pattern per agenti vocali, il prompt n8n riscritto elenca altri pattern architetturali con la relativa frequenza d'uso osservata: Webhook Processing (35% dei trigger), HTTP API Integration (molto comune), Database Operations (con schedule), AI Agent Workflow (per agenti con LLM/tool/memoria), Scheduled Tasks (28% dei trigger, per polling/report periodici).",
+  "fonte": "NmoOZVTrTXA#65:42 (tabella pattern completa in n8n.md riscritto) + voce 65:36",
+  "frame": "frame-0658.png",
+  "ancora": "Webhook Processing — Ricevi dati via HTTP e rispondi — 35% dei trigger / Scheduled Tasks — Polling, report periodici, sync — 28% dei trigger",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-169", "tipo": "parte-di", "perche": "sono le altre righe della stessa tabella di pattern"}
+  ]
+ },
+ {
+  "id": "KA-171",
+  "tipo": "regola",
+  "contenuto": "Il prompt n8n riscritto impone di cercare sempre un template esistente prima di costruire un workflow da zero, usando lo strumento MCP \"search_templates\" che dà accesso a oltre 2.709 template disponibili.",
+  "fonte": "NmoOZVTrTXA#65:42 (n8n.md, punto 4 dello Step 1) + voce 65:36",
+  "frame": "frame-0658.png",
+  "ancora": "SEMPRE cerca template prima di costruire da zero: usa MCP search_templates — ci sono 2.709+ template disponibili",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-168", "tipo": "parte-di", "perche": "è il quarto punto operativo dello Step 1"},
+   {"verso": "KA-163", "tipo": "applica", "perche": "usa concretamente la libreria di template già quantificata nel server MCP"}
+  ]
+ },
+ {
+  "id": "KA-172",
+  "tipo": "procedura",
+  "contenuto": "Lo Step 2 (\"Research Nodes\") del processo n8n impone di conoscere la configurazione esatta di ogni nodo PRIMA di scrivere il JSON del workflow, usando il tool MCP \"search_nodes\" (con modalità di ricerca OR, AND o FUZZY) e poi il tool MCP \"get_node\" per ottenerne i parametri.",
+  "fonte": "NmoOZVTrTXA#65:54 (n8n.md, \"### Step 2: Research Nodes\") + voce 65:52",
+  "frame": "frame-0660.png",
+  "ancora": "Obiettivo: Conoscere la configurazione esatta di ogni nodo PRIMA di scrivere JSON. / Usa MCP search_nodes per trovare i nodi (supporta mode OR, AND, FUZZY)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-167", "tipo": "parte-di", "perche": "è il dettaglio operativo del secondo dei 6 step definiti"}
+  ]
+ },
+ {
+  "id": "KA-173",
+  "tipo": "dato",
+  "contenuto": "Il tool MCP \"get_node\" per ispezionare un nodo n8n offre tre livelli di dettaglio selezionabili: \"minimal\" (circa 200 token, panoramica veloce), \"standard\" (circa 1-2K token, il default sufficiente per la maggior parte dei casi), \"full\" (circa 3-8K token, tutti i parametri e le opzioni).",
+  "fonte": "NmoOZVTrTXA#65:54 (n8n.md, dettaglio dei tre livelli di get_node) + voce 65:52",
+  "frame": "frame-0660.png",
+  "ancora": "minimal (~200 token) — panoramica veloce / standard (~1-2K token) — default, sufficiente per la maggior parte dei casi / full (~3-8K token) — tutti i parametri e opzioni",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-172", "tipo": "parte-di", "perche": "è il dettaglio del secondo strumento MCP usato nello Step 2"}
+  ]
+ },
+ {
+  "id": "KA-174",
+  "tipo": "regola",
+  "contenuto": "Nel codice JavaScript di un Code node in n8n, le espressioni tra doppie graffe {{ }} non vanno mai usate: sono due sistemi separati, il linguaggio delle espressioni n8n e il codice JavaScript del Code node.",
+  "fonte": "NmoOZVTrTXA#66:24 (n8n.md, Step 4 Build) + voce 66:34",
+  "frame": "frame-0665.png",
+  "ancora": "NON usare espressioni {{ }} dentro Code node — sono due sistemi separati",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-175",
+  "tipo": "struttura",
+  "contenuto": "Le convenzioni di scrittura di un Code node n8n includono: il formato di ritorno `return [{ json: { ... } }]`, l'accesso ai dati in input tramite `$input.all()`, `$input.first()`, `$input.item`, e per le chiamate HTTP dentro al codice l'uso di `await $helpers.httpRequest({ url, method })`.",
+  "fonte": "NmoOZVTrTXA#66:24 (n8n.md, Step 4 Build) + osservazione schermo",
+  "frame": "frame-0665.png",
+  "ancora": "Return format: return [{ json: { ... } }] ... Accesso input: $input.all(), $input.first(), $input.item ... Per HTTP nel codice: await $helpers.httpRequest({ url, method })",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-174", "tipo": "parte-di", "perche": "sono le altre convenzioni dello stesso blocco sui Code node"}
+  ]
+ },
+ {
+  "id": "KA-176",
+  "tipo": "procedura",
+  "contenuto": "Lo Step 4 (\"Build\") del processo n8n prevede di creare il workflow tramite MCP: prima cercare un template adatto con `search_templates` e, se trovato, deployarlo con `n8n_deploy_template` e personalizzarlo con `n8n_update_partial_workflow`; altrimenti costruire da zero con `n8n_create_workflow`, specificando un nome descrittivo, l'array completo dei nodi e le connessioni con i tipi corretti. Il workflow viene sempre creato inattivo.",
+  "fonte": "NmoOZVTrTXA#66:24 (n8n.md, \"### Step 4: Build\") + voce 66:34",
+  "frame": "frame-0665.png",
+  "ancora": "Obiettivo: Creare il workflow su n8n via MCP. ... crea da zero con n8n_create_workflow ... Il workflow viene creato SEMPRE inattivo",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-167", "tipo": "parte-di", "perche": "è il dettaglio operativo del quarto dei 6 step definiti"},
+   {"verso": "KA-171", "tipo": "applica", "perche": "applica la regola di cercare sempre un template prima di costruire da zero"}
+  ]
+ },
+ {
+  "id": "KA-177",
+  "tipo": "struttura",
+  "contenuto": "Per modifiche incrementali a un workflow n8n già esistente, il tool MCP `n8n_update_partial_workflow` espone operazioni dedicate a coppie: addNode/removeNode, updateNode, moveNode, enableNode/disableNode, addConnection/removeConnection, updateSettings/updateName, addTag/removeTag, activateWorkflow/deactivateWorkflow.",
+  "fonte": "NmoOZVTrTXA#66:24 (n8n.md, tabella delle operazioni di n8n_update_partial_workflow) + osservazione schermo",
+  "frame": "frame-0665.png",
+  "ancora": "addNode | Aggiungi nodo ... activateWorkflow / deactivateWorkflow | Attiva/disattiva",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-176", "tipo": "parte-di", "perche": "è il dettaglio del terzo punto operativo dello Step 4"}
+  ]
+ },
+ {
+  "id": "KA-178",
+  "tipo": "dato",
+  "contenuto": "Il system prompt completo per costruire workflow n8n (n8n.md) viene reso disponibile gratuitamente come risorsa del corso, dichiarato dal presentatore come versione \"definitiva\" pronta all'uso.",
+  "fonte": "NmoOZVTrTXA#66:24 + voce 66:34",
+  "frame": "frame-0665.png",
+  "ancora": "Questo prompt, gratuito sotto, prendetelo e è il definitivo, cioè non è che c'è di più",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-179",
+  "tipo": "dato",
+  "contenuto": "Nell'interfaccia di Claude Code, il controllo in basso a destra della barra di input può alternare tra due modalità: \"Bypass permissions\" (esegue subito) e \"Plan mode\" (elabora prima un piano, consigliato per richieste che richiedono un ragionamento più corposo).",
+  "fonte": "NmoOZVTrTXA#67:24 (toggle passato da Bypass permissions a Plan mode) + voce 66:54",
+  "frame": "frame-0675.png",
+  "ancora": "il pulsante in basso a destra è ora cambiato da Bypass permissions a Plan mode ... deve andare ovviamente in modalità plan perché richiede un certo tipo di effort",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-146", "tipo": "alternativa-a", "perche": "è l'altra modalità dello stesso controllo già descritto per Bypass permissions"}
+  ]
+ },
+ {
+  "id": "KA-180",
+  "tipo": "esempio",
+  "contenuto": "Esempio di richiesta in linguaggio naturale per generare due workflow n8n tramite Claude Code: un agente AI collegato a Google Calendar che usa una variabile dinamica (\"now\") per sapere che giorno è oggi e determinare gli slot liberi, e un secondo agente AI che verifica se un appuntamento specifico risulta prenotato o meno, entrambi con l'istruzione esplicita di fare riferimento al file n8n.md per l'esecuzione.",
+  "fonte": "NmoOZVTrTXA#68:54 (prompt dettato in Claude Code) + voce 67:53",
+  "frame": "frame-0690.png",
+  "ancora": "Usa pure ora quindi una variabile dinamica now per capire che giorno è oggi... Per farlo ovviamente, riferisciti al file chiamato n8n.md",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-151", "tipo": "applica", "perche": "usa concretamente il file n8n.md come riferimento richiesto nel prompt"}
+  ]
+ },
+ {
+  "id": "KA-181",
+  "tipo": "regola",
+  "contenuto": "Quando si scrive un prompt per generare un workflow n8n con Claude Code, conviene usare esplicitamente variabili dinamiche (come una variabile \"now\" per la data corrente) invece di valori statici, sia nel testo del prompt che dentro ai nodi n8n stessi.",
+  "fonte": "NmoOZVTrTXA#68:54 + voce 67:53",
+  "frame": "frame-0690.png",
+  "ancora": "assicurati di utilizzare variabili dinamiche anche dentro al nodo in n8n",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-180", "tipo": "parte-di", "perche": "è una delle istruzioni contenute nello stesso prompt di esempio"}
+  ]
+ },
+ {
+  "id": "KA-182",
+  "tipo": "procedura",
+  "contenuto": "Per collegare Claude Code a un'istanza n8n reale tramite MCP, occorre generare una API key dedicata dal pannello n8n (percorso: Settings → n8n API → \"Create an API Key\"), da fornire insieme all'URL dell'istanza.",
+  "fonte": "NmoOZVTrTXA#69:24 (pagina Settings > n8n API) + voce 69:17",
+  "frame": "frame-0695.png",
+  "ancora": "Settings, N8n API, crea API Key",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-183",
+  "tipo": "dato",
+  "contenuto": "Nel modale di creazione di una API key su n8n cloud si può impostare un'etichetta identificativa, una scadenza (es. 30 giorni oppure nessuna scadenza) e un ampio elenco di permessi granulari (scope) per risorsa (credential, dataTable, ecc.), anche se sul piano gratuito la modifica dettagliata degli scope resta bloccata dietro un upgrade.",
+  "fonte": "NmoOZVTrTXA#69:30 (modale \"Create API Key\") + voce 69:25",
+  "frame": "frame-0696.png",
+  "ancora": "Expiration: 30 days ... Scopes: credential:create, credential:delete... +43 ... Upgrade to unlock the ability to modify API key scopes",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-182", "tipo": "parte-di", "perche": "descrive i campi del modale di creazione già richiamato"}
+  ]
+ },
+ {
+  "id": "KA-184",
+  "tipo": "avvertimento",
+  "contenuto": "Quando si crea una API key su una piattaforma come n8n, il valore completo del token viene mostrato una sola volta in chiaro subito dopo la creazione (con avviso esplicito \"copiala ora perché non potrai più vederla\"): se lo schermo è condiviso o registrato in quel momento, il segreto resta esposto per intero.",
+  "fonte": "NmoOZVTrTXA#69:48 (modale \"API Key Created\" con token JWT interamente leggibile) + voce 69:52",
+  "frame": "frame-0699.png",
+  "ancora": "Make sure to copy your API key now as you will not be able to see this again.",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-185",
+  "tipo": "anti-pattern",
+  "contenuto": "Dichiarare l'intenzione di mettere una chiave API in un file .env per sicurezza, e poi incollarla per intero in chiaro direttamente dentro il prompt di chat inviato all'agente, è un anti-pattern: il testo del prompt non è un posto sicuro per un segreto quanto un file .env dedicato, specialmente se la sessione è condivisa o registrata.",
+  "fonte": "NmoOZVTrTXA#70:00 (chiave JWT incollata per intero nel prompt di Claude Code) + voce 70:04",
+  "frame": "frame-0701.png",
+  "ancora": "prima di partire assicurati anche che le mie chiavi siano dentro ad un file .env, te l'ho già creato, può inserirle lì dentro (mentre lo schermo mostra la chiave già incollata in chiaro nel prompt)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-184", "tipo": "parte-di", "perche": "è una conseguenza pratica dell'esposizione del segreto già osservata"}
+  ]
+ },
+ {
+  "id": "KA-186",
+  "tipo": "principio",
+  "contenuto": "La convenzione standard tra sviluppatori software per gestire le chiavi segrete/API key di un progetto è tenerle in un file dedicato chiamato \".env\", separato dal codice e dai prompt.",
+  "fonte": "NmoOZVTrTXA#70:30 (comparsa del file .env nell'Explorer) + voce 70:12",
+  "frame": "frame-0706.png",
+  "ancora": "abbiamo delle API key che sono contenute dentro a un file che è questo .env... una convenzione di software developer",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-185", "tipo": "contraddice", "perche": "è la buona pratica che l'anti-pattern osservato non rispetta nell'immediato"}
+  ]
+ },
+ {
+  "id": "KA-187",
+  "tipo": "principio",
+  "contenuto": "Quando riceve un compito, Claude Code esplora autonomamente la struttura del progetto (liste di file, ricerca di file specifici, lettura di CLAUDE.md) per orientarsi, invece di richiedere che gli vengano indicati manualmente tutti i percorsi esatti.",
+  "fonte": "NmoOZVTrTXA#71:00 (sequenza \"Explore n8n.md and project\" con comandi find/ls) + voce 70:24",
+  "frame": "frame-0711.png",
+  "ancora": "Agent: Explore n8n.md and project — Plan: 1. List all files... 2. Read the file n8n.md (search for it if not at root)",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-188",
+  "tipo": "procedura",
+  "contenuto": "Per attivare un server MCP dentro Claude Code, l'agente crea una cartella \".claude\" nel progetto con un file \"settings.json\" contenente la configurazione \"mcpServers\"; dopo questa modifica è necessario ricaricare la sessione di Claude Code (chiudendo e riaprendo, oppure con il comando /restart) prima che i nuovi tool MCP diventino disponibili.",
+  "fonte": "NmoOZVTrTXA#71:54 (creazione di .claude/settings.json e messaggio \"Setup completato... ricaricare Claude Code\") + osservazione schermo",
+  "frame": "frame-0720.png",
+  "ancora": "Write settings.json (20 lines)... { \"mcpServers\": { \"chrome-devtools\": { ... Setup completato. Ora devo chiederti di ricaricare Claude Code per attivare il server n8n-mcp",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-189",
+  "tipo": "principio",
+  "contenuto": "Anche dopo aver dato istruzioni scritte per usare un MCP specifico, può essere necessario intervenire di persona con un messaggio esplicito e insistito (del tipo \"assicurati di usare davvero l'MCP\") per forzare l'agente a impiegare concretamente il tool invece di procedere in altro modo.",
+  "fonte": "NmoOZVTrTXA#71:54 (messaggio dell'autore \"ensure you use the MCP and you get it right? stupid but just to make sure\") + osservazione schermo",
+  "frame": "frame-0720.png",
+  "ancora": "ensure you use the MCP and you get it right? stupid but just to make sure",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-188", "tipo": "parte-di", "perche": "avviene nella stessa sequenza di attivazione del server MCP"}
+  ]
+ },
+ {
+  "id": "KA-190",
+  "tipo": "procedura",
+  "contenuto": "Per mantenere continuità di lavoro tra una sessione di Claude Code e la successiva (es. dopo un riavvio necessario per attivare un MCP), si può chiedere esplicitamente all'agente di salvare lo stato di avanzamento in una cartella di memoria persistente, così che al rientro sia sufficiente un comando breve (es. \"ok continua\") perché l'agente recuperi da solo il contesto e sappia da dove ripartire.",
+  "fonte": "NmoOZVTrTXA#72:24-72:30 (richiesta \"salva il tutto in una memoria\" + creazione di MEMORY.md) + voce 72:00",
+  "frame": "frame-0726.png",
+  "ancora": "assicurati di salvare il tutto in una memoria in modo tale che appena riapro io possa semplicemente dire \"ok continua\" e tu capisci immediatamente da dove devi ripartire",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-188", "tipo": "motiva", "perche": "il riavvio richiesto per attivare l'MCP è ciò che rende necessaria una memoria persistente"}
+  ]
+ },
+ {
+  "id": "KA-191",
+  "tipo": "esempio",
+  "contenuto": "Esempio concreto di implementazione della memoria persistente in Claude Code: viene creata una cartella dedicata sotto la home dell'utente (`.claude/projects/<progetto>/memory`) con un file \"MEMORY.md\" che funge da indice puntando ad altri file di dettaglio (es. \"project_n8n_workflows.md\"), più un messaggio di riepilogo con i passi esatti da riprendere al comando \"ok continua\".",
+  "fonte": "NmoOZVTrTXA#72:30 (Write MEMORY.md, messaggio finale con i 4 passi da riprendere) + voce 72:19",
+  "frame": "frame-0726.png",
+  "ancora": "# Memory Index — [project_n8n_workflows.md]... Fatto. Memoria salvata. Quando riapri Claude Code e dici \"ok continua\", saprò esattamente che devo: 1. Usare i tool MCP... 4. Validare entrambi.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-190", "tipo": "esempio-di", "perche": "è l'attuazione concreta del principio di continuità appena richiesto"}
+  ]
+ },
+ {
+  "id": "KA-192",
+  "tipo": "struttura",
+  "contenuto": "Un workflow n8n \"AI Agent\" generato da Claude Code segue una struttura a nodi tipica: un nodo trigger (es. Chat Trigger) collegato a un nodo \"AI Agent\" centrale, che a sua volta si ramifica in tre collegamenti opzionali — Chat Model (es. Google Gemini), Memory (es. Window Buffer Memory) e Tool (es. ricerca eventi calendario) — dove la Memory può essere presente o assente a seconda che il caso d'uso richieda di ricordare lo stato tra un messaggio e l'altro.",
+  "fonte": "NmoOZVTrTXA#73:18 (canvas del workflow \"AI Agent - Check Calendar Availability\" con Chat Model/Memory/Tool tutti collegati) + voce 73:05",
+  "frame": "frame-0734.png",
+  "ancora": "Chat Trigger → AI Agent, e sotto AI Agent tre rami Chat Model, Memory, Tool tutti collegati: Google Gemini, Get Calendar Events, e Window Buffer Memory",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-193",
+  "tipo": "principio",
+  "contenuto": "Un agente AI che deve solo verificare un fatto puntuale in una singola interazione (es. \"questo appuntamento è confermato?\") può fare a meno del nodo Memory, mentre un agente che deve ragionare su uno stato/contesto che si accumula (es. \"controlla la disponibilità di calendario\") beneficia di un nodo Memory collegato.",
+  "fonte": "NmoOZVTrTXA#72:48 (workflow \"Confirm Appointment Booking\" senza nodo Memory) + voce 72:37",
+  "frame": "frame-0729.png",
+  "ancora": "per quello che controlla la disponibilità a calendario abbiamo ovviamente una memoria... (a differenza del workflow di conferma appuntamento, privo del nodo Memory)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-192", "tipo": "esempio-di", "perche": "è un'applicazione pratica della struttura a nodi appena definita"}
+  ]
+ },
+ {
+  "id": "KA-194",
+  "tipo": "dato",
+  "contenuto": "Il riepilogo generato da Claude Code dopo aver creato due workflow n8n specifica anche le espressioni dinamiche usate al loro interno: `{{ $now.toISO() }}` nel system prompt per la data corrente, e `$fromAI('timeMin')` / `$fromAI('timeMax')` nel nodo Calendar per lasciare che sia il modello AI a decidere dinamicamente l'intervallo di tempo da interrogare.",
+  "fonte": "NmoOZVTrTXA#73:06 (riepilogo di Claude Code, Workflow 1) + voce 73:00",
+  "frame": "frame-0732.png",
+  "ancora": "Variabili dinamiche: {{ $now.toISO() }} nel system prompt + $fromAI('timeMin') / $fromAI('timeMax') nel nodo Calendar",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-181", "tipo": "esempio-di", "perche": "è l'applicazione concreta della regola sulle variabili dinamiche"}
+  ]
+ },
+ {
+  "id": "KA-195",
+  "tipo": "regola",
+  "contenuto": "Anche quando un agente come Claude Code costruisce un intero workflow n8n in autonomia via MCP, restano sempre almeno tre azioni manuali da completare a mano dall'utente: collegare le credenziali OAuth2 dei servizi esterni (es. Google Calendar), inserire le API key dei modelli AI usati (es. Google Gemini), e attivare il workflow quando si è pronti — i workflow vengono creati sempre disattivati.",
+  "fonte": "NmoOZVTrTXA#73:06 (checklist \"Cosa devi fare tu su n8n\") + voce 73:00",
+  "frame": "frame-0732.png",
+  "ancora": "1. Connetti le credenziali Google Calendar OAuth2... 2. Connetti le credenziali Google Gemini API Key... 3. Attiva i workflow quando sei pronto. Entrambi i workflow sono inattivi e pronti per la configurazione.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-176", "tipo": "applica", "perche": "conferma che il workflow creato via MCP resta sempre inattivo fino a un intervento manuale"}
+  ]
+ },
+ {
+  "id": "KA-196",
+  "tipo": "esempio",
+  "contenuto": "Nel nodo \"Get Calendar Events\" generato per il workflow di disponibilità calendario, l'intervallo di ricerca non è una data fissa ma un'espressione dinamica: campo \"After\" = `{{ $now }}` e campo \"Before\" = `{{ $now.plus({ week: 1 }) }}`, così l'agente calcola sempre \"questa settimana da oggi\" senza che nessuno debba aggiornare manualmente le date.",
+  "fonte": "NmoOZVTrTXA#73:24 (pannello parametri del nodo \"Get Calendar Events\") + voce 73:16",
+  "frame": "frame-0735.png",
+  "ancora": "After — {{ $now }} ... Before — {{ $now.plus({ week: 1 }) }}",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-194", "tipo": "esempio-di", "perche": "mostra nel dettaglio le variabili dinamiche già riassunte da Claude Code"}
+  ]
+ },
+ {
+  "id": "KA-197",
+  "tipo": "principio",
+  "contenuto": "Il collegamento delle credenziali OAuth2 di un servizio esterno (es. Google Calendar) dentro n8n richiede necessariamente un'autorizzazione umana manuale tramite login: è l'unico step che un agente come Claude Code non può compiere al posto dell'utente.",
+  "fonte": "NmoOZVTrTXA#73:42 (popup \"Google Calendar account\" OAuth2) + voce 73:24",
+  "frame": "frame-0737.png",
+  "ancora": "la finestra OAuth2 di Google Calendar che va autorizzata a mano, unico step che Claude Code non può fare al posto dell'utente",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-195", "tipo": "parte-di", "perche": "è il dettaglio del primo dei tre step manuali elencati"}
+  ]
+ },
+ {
+  "id": "KA-198",
+  "tipo": "principio",
+  "contenuto": "L'editor delle espressioni di n8n mostra in un pannello \"Result\" separato il valore concreto a cui si risolve dal vivo un'espressione dinamica (es. una data), permettendo di verificarne subito la correttezza senza dover eseguire l'intero workflow.",
+  "fonte": "NmoOZVTrTXA#74:24-74:54 (pannello \"Expression\"/\"Result\" del nodo AI Agent) + voce 74:08-75:11",
+  "frame": "frame-0745.png",
+  "ancora": "pannello Result... stesso testo con la riga dinamica risolta in verde: Data e ora corrente: 2026-03-24T18:10:58.757+01:00 (poi 24/11/2026 dopo il cambio di formato)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-196", "tipo": "applica", "perche": "è lo stesso meccanismo di verifica applicato all'espressione della data corrente"}
+  ]
+ },
+ {
+  "id": "KA-199",
+  "tipo": "esempio",
+  "contenuto": "Esempio completo di system prompt generato per un agente AI che verifica disponibilità di calendario: include la data corrente dinamica, istruzioni numerate su come usare il tool Google Calendar, come classificare gli slot (occupati vs liberi), un orario lavorativo di default (9:00-18:00) da usare salvo diversa indicazione, e l'istruzione esplicita di rispondere sempre in italiano.",
+  "fonte": "NmoOZVTrTXA#74:24 (system prompt completo del nodo AI Agent) + voce 74:08",
+  "frame": "frame-0745.png",
+  "ancora": "5. Considera l'orario lavorativo standard dalle 9:00 alle 18:00 salvo diversa indicazione. 6. Rispondi sempre in italiano.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-176", "tipo": "esempio-di", "perche": "è il risultato concreto del processo di build applicato al caso della disponibilità calendario"}
+  ]
+ },
+ {
+  "id": "KA-200",
+  "tipo": "principio",
+  "contenuto": "Anche quando la logica di business (fasce orarie di lavoro, formato delle risposte, lingua forzata) non viene dettata riga per riga dall'utente, un agente come Claude Code può dedurla e scriverla in autonomia dentro il system prompt generato, partendo dal contesto della richiesta originale.",
+  "fonte": "NmoOZVTrTXA#74:24 + voce 74:08",
+  "frame": "frame-0745.png",
+  "ancora": "questo system prompt completo a 6 regole numerate (mai pronunciato a voce, solo mostrato) è la prova diretta di cosa Claude Code ha scritto da solo... tutto generato senza che Max lo dettasse riga per riga",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-199", "tipo": "parte-di", "perche": "riguarda esattamente il prompt di esempio appena descritto"}
+  ]
+ },
+ {
+  "id": "KA-201",
+  "tipo": "dato",
+  "contenuto": "Il linguaggio di espressioni di n8n offre un metodo `.format(fmt)` sui valori DateTime per convertirli in stringa con un formato personalizzato (es. `dt.format('dd/LL/yyyy')` produce \"30/04/2024\"), alternativo al formato ISO prodotto da `.toISO()`.",
+  "fonte": "NmoOZVTrTXA#74:54 (tooltip di autocompletamento su \"format (fmt)\") + voce 75:11",
+  "frame": "frame-0750.png",
+  "ancora": "format (fmt) — Converts the DateTime to a string, using the format specified. ... dt.format('dd/LL/yyyy') // -> '30/04/2024'",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-198", "tipo": "applica", "perche": "usa il pannello Result per verificare il valore prodotto da questo metodo"}
+  ]
+ },
+ {
+  "id": "KA-202",
+  "tipo": "principio",
+  "contenuto": "Per un aggiustamento piccolo e visivo come cambiare il formato di una data dentro un'espressione già scritta, è più immediato modificare direttamente il nodo dentro l'interfaccia n8n (dove si legge e si vede subito il risultato) piuttosto che tornare a chiedere la modifica a Claude Code.",
+  "fonte": "NmoOZVTrTXA#75:24-76:00 (sequenza webcam + editor su n8n) + voce 75:29-76:00",
+  "frame": "frame-0761.png",
+  "ancora": "è estremamente più semplice da fare se io utilizzo questo tipo di interfaccia, quindi lo leggo, vedo e, insomma, capisco quello che faccio, e invece che utilizzare Cloud Code",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-150", "tipo": "esempio-di", "perche": "è un caso concreto di compito che si fa meglio su n8n che su Claude Code"}
+  ]
+ },
+ {
+  "id": "KA-203",
+  "tipo": "principio",
+  "contenuto": "Conviene iniziare una nuova sessione pulita di Claude Code (invece di continuare la stessa conversazione lunga) quando si passa a un compito nuovo e scorrelato (es. da n8n a VAPI), per azzerare il consumo di token accumulato dalla conversazione precedente.",
+  "fonte": "NmoOZVTrTXA#76:48 (nuova sessione Claude Code \"Untitled\") + voce 76:35",
+  "frame": "frame-0769.png",
+  "ancora": "pulita, quindi niente più token usage che vi ho dicendo e ora semplicemente procedo in questo modo",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-204",
+  "tipo": "dato",
+  "contenuto": "Il presentatore detta i prompt a Claude Code tramite uno strumento di trascrizione vocale in tempo reale (\"whisper flow\"): mentre parla, il testo dettato compare progressivamente nel campo di input, con un indicatore a schermo (forma d'onda + pallino rosso di registrazione).",
+  "fonte": "NmoOZVTrTXA#77:18 (overlay di dettatura vocale nel campo prompt) + voce 76:35-77:02",
+  "frame": "frame-0774.png",
+  "ancora": "utilizzerò di nuovo il mio whisper flow... Allora mi servirebbe che mi aiutassi ora a popolare il mio vapi.md (testo che compare dettato in tempo reale)",
+  "confidenza": "osservato"
  }
 ]
