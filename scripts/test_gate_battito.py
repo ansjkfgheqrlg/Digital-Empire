@@ -4,8 +4,10 @@
 test_gate_battito.py — prova vera del gate del battito (scripts/gate_battito_hook.py).
 
 Non verifica che il file esista: gli costruisce sotto un transcript finto per ogni caso e
-guarda cosa risponde davvero. I sei casi sono quelli che decidono se il gate e' utile o
-dannoso -- soprattutto il quinto, che e' quello che lo renderebbe insopportabile se sbagliato.
+guarda cosa risponde davvero. Dal 6º giro (2026-09-09) la regola sul blocco di codice si e'
+invertita: il battito vero DEVE stare dentro ``` in cima al messaggio (prima girava il
+contrario). I casi 6 e 9-10 sono quelli che decidono se il gate distingue bene una
+CONSEGNA vera da un ESEMPIO di documentazione.
 
     py -3 scripts/test_gate_battito.py
 """
@@ -92,46 +94,48 @@ CASI = [
     ("1. messaggio senza battito -> passa",
      "Max, ho finito il lavoro. Il file e' salvato e pushato.", False, False),
 
-    ("2. battito conforme in cima -> passa",
-     BATTITO_OK + "\n\nDettagli sotto, come sempre.", False, False),
+    ("2. battito conforme, dentro ``` in cima -> passa",
+     "```\n" + BATTITO_OK + "\n```\n\nDettagli sotto, come sempre.", False, False),
 
-    ("3. battito rotto -> BLOCCA",
-     BATTITO_ROTTO, False, True),
+    ("3. battito rotto, dentro ``` in cima -> BLOCCA (problemi di forma)",
+     "```\n" + BATTITO_ROTTO + "\n```", False, True),
 
-    ("4. battito conforme ma NON in cima -> BLOCCA",
-     "Prima ti racconto la bella notizia, poi il battito.\n\n" + BATTITO_OK, False, True),
+    ("4. battito conforme ma NON dentro ``` -> BLOCCA (manca il blocco di codice)",
+     BATTITO_OK, False, True),
 
-    ("5. esempio dentro ``` (documentazione) -> passa",
+    ("5. battito conforme dentro ``` ma NON in cima -> BLOCCA (posizione)",
+     "Prima ti racconto la bella notizia, poi il battito.\n\n```\n" + BATTITO_OK + "\n```",
+     False, True),
+
+    ("6. esempio dentro ``` con prosa PRIMA E DOPO (documentazione) -> passa",
      "Lo schema del battito e' questo:\n\n```\n" + BATTITO_ROTTO + "\n```\n\nChiaro?", False, False),
 
-    ("6. battito rotto ma stop_hook_active -> passa (anti-loop)",
-     BATTITO_ROTTO, True, False),
+    ("7. battito rotto ma stop_hook_active -> passa (anti-loop)",
+     "```\n" + BATTITO_ROTTO + "\n```", True, False),
 
     # --- il caso pagato in produzione, 2026-09-05 sera ---
-    ("7. turno lungo: messaggi intermedi + battito in cima all'ultimo -> passa",
+    ("8. turno lungo: messaggi intermedi + battito dentro ``` in cima all'ultimo -> passa",
      ["Ricevuto, Max. Parto col lavoro.",
       "Ho finito la prima parte, ora salvo.",
-      BATTITO_OK + "\n\nChiuso, il codice e' EMP-RWKX."], False, False),
+      "```\n" + BATTITO_OK + "\n```\n\nChiuso, il codice e' EMP-RWKX."], False, False),
 
-    ("8. turno lungo ma il battito e' sotto la prosa nel SUO messaggio -> BLOCCA",
+    ("9. turno lungo ma il battito e' sotto la prosa nel SUO messaggio -> BLOCCA",
      ["Parto col lavoro.",
-      "Ti racconto prima com'e' andata, poi il battito.\n\n" + BATTITO_OK], False, True),
+      "Ti racconto prima com'e' andata, poi il battito.\n\n```\n" + BATTITO_OK + "\n```"],
+     False, True),
 
-    # --- il caso pagato in produzione, 2026-09-09 (secondo giro) ---
-    ("9. battito vero incollato dentro ``` senza altro testo -> BLOCCA",
-     "```\n" + BATTITO_OK + "\n```", False, True),
+    # --- il caso pagato in produzione, 2026-09-09 (6º giro: la regola si e' invertita) ---
+    ("10. battito vero dentro ``` senza altro testo -> passa (ORA e' il formato giusto)",
+     "```\n" + BATTITO_OK + "\n```", False, False),
 
-    ("10. stesso battito dentro ``` ma con prosa vera intorno -> passa (e' una spiegazione)",
-     "Ecco come deve venire:\n\n```\n" + BATTITO_OK + "\n```\n\nChiaro, Max?", False, False),
-
-    # --- il caso pagato in produzione, 2026-09-09 (quinto giro: niente piu' bordo) ---
-    ("11. battito con Forze ad albero (gruppi nominati) -> passa",
-     costruisci(
+    # --- il caso pagato in produzione, 2026-09-09 (5º giro: niente piu' bordo) ---
+    ("11. battito con Forze ad albero (gruppi nominati), dentro ``` -> passa",
+     "```\n" + costruisci(
          "chiuso il lavoro sui gruppi", "niente altro", "niente in sospeso",
          [("sentinelle", ["controlla budget", "controlla secret"]),
           ("doom bot", ["autoripara i test"])],
          "GOD EMPEROR DOOM", 100, 90,
-     ) + "\n\nFatto.", False, False),
+     ) + "\n```\n\nFatto.", False, False),
 ]
 
 

@@ -1,3 +1,17 @@
+## 🟣 2026-09-09 — RIPRESA: battito sesto giro, regola fence invertita — CP-20260909-6T6J
+
+**Chat satura, checkpoint su ordine di Max — riprendere da qui.** Codice CHIUSO e verde
+(11/11): il battito vero va ora DENTRO un blocco ` ``` ` in cima al messaggio (regola
+invertita — dal 2026-09-02 era "mai dentro un blocco di codice", scoperto sbagliato: fuori
+da un blocco di codice il testo dell'ASSISTENTE passa da un motore che collassa gli spazi
+ripetuti, il testo che MAX digita lui stesso no — solo un blocco di codice preserva lo
+spazio esatto). Spazio vero per il rientro (niente più `·`), nessun bordo, Forze piatta o
+ad albero. Vedi `scripts/verifica_recap.py` e `scripts/gate_battito_hook.py`.
+**Resta da fare**: 1) controllare che "IL CONTROLLO MECCANICO" in emperator.md §6.11 non
+abbia ancora frasi "mai dentro un blocco di codice" scritte prima di questo giro
+(contraddittorie); 2) mandare a Max un battito di prova nella forma nuova per conferma —
+non ancora fatto. Dettagli/incidente-git: [CP-20260909-6T6J](checkpoints/CP-20260909-6T6J.md).
+
 ## 🟠 2026-09-09 — battito ristilizzato: cinque giri, via il bordo, albero per Forze — CP-20260909-RWR2
 
 Contenuto invariato (le sei voci restano quelle), cambiata solo la resa: titolo, poi cinque

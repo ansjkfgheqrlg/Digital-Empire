@@ -16,9 +16,10 @@ che sto per consegnare a Max, e se contiene un battito fuori forma BLOCCA la con
 ordinandomi di riscriverlo. Non dipende piu' dalla mia memoria del momento.
 
 TRE PROTEZIONI, tutte necessarie:
-  1. FALSI POSITIVI. Le righe dentro blocchi ``` , le citazioni `>` e le righe indentate
-     sono ESEMPI (documentazione, dottrina, spiegazioni a Max) e non vengono mai validate.
-     Senza questo, ogni volta che scrivo del formato del battito mi bloccherei da solo.
+  1. FALSI POSITIVI. Un blocco di codice che non e' IN CIMA al messaggio, o che non
+     contiene un titolo di battito come sua prima riga, e' un ESEMPIO (documentazione,
+     spiegazione a Max) e non viene mai validato — altrimenti mi bloccherei da solo ogni
+     volta che discuto il formato con un esempio incorporato nella prosa.
   2. ANTI-LOOP. Se `stop_hook_active` e' vero il blocco e' gia' scattato una volta in questo
      turno: si esce senza bloccare. Un gate che intrappola la sessione e' peggio del difetto
      che sorveglia.
@@ -28,12 +29,18 @@ TRE PROTEZIONI, tutte necessarie:
 Lo schema NON e' duplicato qui: si importa da `verifica_recap.py`, che resta l'unica fonte
 di verita' della forma (lezione §6.13 -- non esistono due corpi da tenere allineati).
 
-FORMA A BLOCCHI CENTRATI, SENZA BORDO (2026-09-09, 5º giro). Il battito e' un titolo +
-cinque blocchi (etichetta `🟠 <Nome>:` + contenuto, centrati col rientro a `·`) uniti da
-frecce `↓` — nessun bordo (`┌│└─┐┘` sono spariti, vedi verifica_recap.py). Senza bordo non
-c'e' piu' un "quinto bordo inferiore" da contare: il confine del battito si trova dalla
-prima riga `🟠 Potere: <n>%` incontrata dopo il titolo (l'ultima riga di qualunque battito
-valido, per costruzione — Assetto+Potere e' sempre l'ultima voce).
+IL BATTITO VERO STA DENTRO UN BLOCCO DI CODICE (2026-09-09, 6º giro — REGOLA INVERTITA
+rispetto ai giri 2-5). Per quattro giri si e' creduto che un blocco ``` facesse sparire il
+battito dal rendering e dal controllo del gate, e la regola era "mai dentro un blocco di
+codice". Max ha chiarito la causa vera: il TESTO SCRITTO DA ME fuori da un blocco di codice
+passa da un motore che collassa gli spazi ripetuti; dentro un blocco di codice lo spazio
+resta esatto. Max vuole gli spazi esatti (il suo stesso esempio, scritto a mano, si legge
+perfetto proprio perche' non passa dallo stesso motore) — quindi ORA il battito vero DEVE
+stare dentro un blocco ``` in cima al messaggio, altrimenti gli spazi di centraggio si
+rompono. Questo hook cerca il battito PRIMA dentro un fence in cima; se lo trova, lo valida;
+se il messaggio porta un tentativo di battito ma NON e' dentro un fence, blocca con quel
+motivo specifico. Un fence che non e' in cima, o che non apre con un titolo di battito come
+prima riga, resta un ESEMPIO di documentazione e non viene toccato.
 """
 
 import io
@@ -49,17 +56,17 @@ if QUI not in sys.path:
 # Segnali che il testo CONTIENE un tentativo di battito. Se non ce n'e' nessuno,
 # l'hook non ha niente da dire: non si impone un battito dove non serve.
 SEGNALE_TITOLO = re.compile(r"^\s*\*\*.{0,3}\s*RECAP\s*[—-]", re.IGNORECASE)
-SEGNALE_VOCE = re.compile(r"^[  ·]*🟠 [^:]+:$")  # fallback: un'etichetta di voce, es. `🟠 Fatto:`
-SEGNALE_POTERE = re.compile(r"^[  ·]*🟠 Potere: \d{1,3}%$")  # ultima riga di ogni battito valido
+SEGNALE_VOCE = re.compile(r"^[  ·]*🟠 [^:]+:$")  # fallback: un'etichetta di voce, es. `🟠 Fatto:`
+SEGNALE_POTERE = re.compile(r"^[  ·]*🟠 Potere: \d{1,3}%$")  # ultima riga di ogni battito valido
 TETTO_RIGHE_BLOCCO = 60  # protezione anti-input-rotto: nessun battito reale supera questo
 
 
 def righe_reali(testo):
     """Le righe di prosa vera: fuori dai blocchi di codice, non citate, non indentate.
 
-    Serve a distinguere UN BATTITO da un ESEMPIO di battito. Documentazione, dottrina e
-    spiegazioni mostrano il formato dentro ``` o dopo `>`: quelle righe non sono un battito
-    consegnato a Max, sono un discorso sul battito, e non vanno mai giudicate.
+    Usata SOLO per il ramo di fallback (un tentativo di battito scritto fuori da un fence,
+    da bloccare col motivo "manca il blocco di codice"): serve a non confondere un esempio
+    di documentazione dentro un ``` con un tentativo di consegna vero fuori da un fence.
     """
     dentro_codice = False
     fuori = []
@@ -77,20 +84,77 @@ def righe_reali(testo):
 
 
 def trova_battito(testo):
-    """Ritorna (indice_prima_riga, blocco) del battito, o (None, None).
+    """Ritorna (indice_prima_riga, blocco, dentro_fence) del battito, o (None, None, None).
 
-    Il battito e' titolo + riga vuota + cinque voci (blocchi centrati senza bordo, 5o
-    giro) unite da frecce. Senza bordo non c'e' piu' un segnale strutturale di chiusura
-    da contare: si scorre dal titolo (o, in mancanza, dalla prima etichetta di voce
-    trovata) fino alla PRIMA riga "Potere: <n>%" incontrata -- che per costruzione e'
-    sempre l'ultima riga di un battito valido (Assetto+Potere e' sempre l'ultima voce).
-    Un tetto di righe protegge da un input senza mai quella riga (rotto o non un battito
-    affatto): in quel caso si prende tutta la finestra, cosi' valida() ha comunque
-    materiale su cui dire cosa manca.
+    Prima cerca un blocco ``` IN CIMA al messaggio (dopo eventuali righe vuote) la cui
+    prima riga di contenuto e' un titolo di battito: se lo trova, il battito e' quello,
+    `dentro_fence=True`, e `blocco` e' il testo fra le due righe di fence (titolo incluso).
+    Un fence in cima che NON apre con un titolo e' un blocco di codice qualunque: ignorato.
+    Un fence che contiene un titolo ma non e' in cima (c'e' prosa vera prima) e' un esempio
+    di documentazione: ignorato anche lui, non e' un tentativo di consegna.
+
+    Se non c'e' nessun fence in cima, cerca comunque un tentativo di battito scritto in
+    chiaro (vecchio formato, o un errore) per poterlo bloccare con il motivo giusto — "manca
+    il blocco di codice" — invece di lasciarlo passare in silenzio.
     """
     righe = testo.replace("\r\n", "\n").split("\n")
-    utili = {i: r for i, r in righe_reali(testo) if r is not None}
 
+    idx = 0
+    while idx < len(righe) and righe[idx].strip() == "":
+        idx += 1
+    if idx < len(righe):
+        prima_riga = righe[idx].strip()
+        if prima_riga.startswith("```") or prima_riga.startswith("~~~"):
+            marcatore = prima_riga[:3]
+            k = idx + 1
+            while k < len(righe) and righe[k].strip() == "":
+                k += 1
+            if k < len(righe) and SEGNALE_TITOLO.match(righe[k]):
+                limite = min(len(righe), k + TETTO_RIGHE_BLOCCO)
+                fine = limite
+                for m in range(k, limite):
+                    if righe[m].strip().startswith(marcatore):
+                        fine = m
+                        break
+                return idx, "\n".join(righe[k:fine]), True
+            # un fence in cima che non apre con un battito: non e' un suo tentativo,
+            # non c'e' altro da controllare in questo messaggio.
+            return None, None, None
+
+    # Nessun fence in cima. Prima di arrendersi, si cerca un fence PIU' AVANTI nel
+    # messaggio che apra con un titolo di battito: se dopo la sua chiusura non c'e' PIU'
+    # nessun testo vero, e' un tentativo di consegna con della prosa incollata prima per
+    # errore (§6.11: mai in fondo, mai dopo l'analisi) — si blocca per posizione. Se invece
+    # dopo la chiusura c'e' ancora prosa vera, e' un "panino" di documentazione ("ecco lo
+    # schema: ``` ... ``` chiaro?") e si lascia stare, come sempre.
+    i = 0
+    while i < len(righe):
+        spoglia = righe[i].strip()
+        if spoglia.startswith("```") or spoglia.startswith("~~~"):
+            marcatore = spoglia[:3]
+            k = i + 1
+            while k < len(righe) and righe[k].strip() == "":
+                k += 1
+            if k < len(righe) and SEGNALE_TITOLO.match(righe[k]):
+                limite = min(len(righe), k + TETTO_RIGHE_BLOCCO)
+                fine = limite
+                chiusa_a = None
+                for m in range(k, limite):
+                    if righe[m].strip().startswith(marcatore):
+                        fine = m
+                        chiusa_a = m
+                        break
+                dopo = "\n".join(righe[(chiusa_a + 1):]).strip() if chiusa_a is not None else ""
+                if not dopo:
+                    return i, "\n".join(righe[k:fine]), True  # posizione sbagliata, valida() giudica il resto
+                return None, None, None  # panino di documentazione: ignorato
+            i = k
+            continue
+        i += 1
+
+    # nessun fence, in cima o altrove: si cerca un tentativo scritto in chiaro, da
+    # bloccare col motivo "manca il blocco di codice" invece di ignorarlo in silenzio.
+    utili = {i: r for i, r in righe_reali(testo) if r is not None}
     inizio = None
     for i in sorted(utili):
         if SEGNALE_TITOLO.match(utili[i]):
@@ -102,7 +166,7 @@ def trova_battito(testo):
                 inizio = i
                 break
     if inizio is None:
-        return None, None
+        return None, None, None
 
     fine = min(len(righe), inizio + TETTO_RIGHE_BLOCCO)
     for i in range(inizio, fine):
@@ -110,33 +174,7 @@ def trova_battito(testo):
             fine = i + 1
             break
 
-    return inizio, "\n".join(righe[inizio:fine])
-
-
-def battito_nascosto_in_fence(testo):
-    """True se il messaggio, tolti gli spazi, e' fatto SOLO da uno o piu' blocchi ``` e
-    uno di quei blocchi contiene un battito — nessuna prosa vera fuori dal blocco.
-
-    Caso pagato il 2026-09-09 (secondo giro): un battito consegnato a Max dentro un
-    blocco di codice, invisibile a `righe_reali` (che esclude il codice apposta, per non
-    bloccarmi quando SPIEGO il formato a Max). Se il blocco fosse ANCHE circondato da
-    prosa vera ("lo schema e' questo: ``` ... ``` chiaro?"), sarebbe legittimamente una
-    spiegazione — questa funzione lo lascia passare. Solo quando non c'e' NIENT'ALTRO nel
-    messaggio scatta il sospetto: qualcuno ha incollato il battito vero dentro un fence
-    invece di scriverlo come testo semplice.
-    """
-    dentro = False
-    dentro_fence = []
-    fuori_fence = []
-    for riga in testo.replace("\r\n", "\n").split("\n"):
-        spoglia = riga.strip()
-        if spoglia.startswith("```") or spoglia.startswith("~~~"):
-            dentro = not dentro
-            continue
-        (dentro_fence if dentro else fuori_fence).append(riga)
-    if any(r.strip() for r in fuori_fence):
-        return False  # c'e' prosa vera fuori: e' una spiegazione, non un battito nascosto
-    return any(SEGNALE_TITOLO.match(r) or SEGNALE_VOCE.match(r) for r in dentro_fence)
+    return inizio, "\n".join(righe[inizio:fine]), False
 
 
 def blocchi_testo_del_turno(percorso):
@@ -213,18 +251,18 @@ def main():
 
     problemi = []
     for testo in messaggi:
-        inizio, blocco = trova_battito(testo)
+        inizio, blocco, dentro_fence = trova_battito(testo)
         if blocco is None:
-            if battito_nascosto_in_fence(testo):
-                problemi.append(
-                    "il battito e' dentro un blocco di codice ``` — vietato (§6.11, "
-                    "2026-09-09): quel formato e' 'apposta per copiare' (parole di Max), "
-                    "si spezza nel renderer, e sparisce dal controllo di questo stesso gate. "
-                    "Riscrivilo come testo semplice, mai fra ```"
-                )
-            continue  # questo messaggio non porta un battito vero: niente altro da sorvegliare
+            continue  # questo messaggio non porta un tentativo di battito
 
-        guai = valida(blocco)
+        guai = []
+        if not dentro_fence:
+            guai.append(
+                "il battito non e' dentro un blocco di codice ``` — ora e' obbligatorio "
+                "(§6.11, 6º giro): fuori da un blocco di codice gli spazi di centraggio "
+                "collassano nel rendering. Avvolgilo in ``` ... ```"
+            )
+        guai.extend(valida(blocco))
 
         # La posizione e' parte della regola (§6.11: il battito va IN CIMA) e si giudica
         # DENTRO il messaggio che lo contiene — mai sulla somma del turno (vedi la nota in
@@ -241,31 +279,30 @@ def main():
         return 0
 
     # L'esempio e' un extra per rendere il messaggio di blocco piu' chiaro: se la sua
-    # generazione fallisce (es. un placeholder troppo lungo, come e' successo davvero il
-    # 2026-09-09 — bug che aveva SPENTO il gate intero, protetto dalla protezione 3), il
-    # BLOCCO VERO (deciso sopra, basato su `problemi`) non deve sparire con lui. Isolato
-    # apposta in un try proprio, cosi' un guaio qui non e' piu' un guaio ovunque.
+    # generazione fallisce, il BLOCCO VERO (deciso sopra, basato su `problemi`) non deve
+    # sparire con lui — lezione pagata il 2026-09-09 (un placeholder troppo lungo aveva
+    # spento il gate intero attraverso la PROTEZIONE 3). Isolato in un try proprio.
     esempio = ""
     try:
         from verifica_recap import costruisci  # stesso principio: una sola fonte di verita'
-        esempio = "\n\nEsempio di forma (valori segnaposto):\n\n" + costruisci(
+        esempio = "\n\nEsempio di forma (valori segnaposto):\n\n```\n" + costruisci(
             "<riga, max 44 caratteri>", "<riga, max 44 caratteri>", "<riga, max 44 caratteri>",
             ["<GRADO> <nome> <cosa fa>", "oppure: nessuna, sto lavorando da solo"],
             "normale", 100, 0,
-        )
+        ) + "\n```"
     except Exception:
         pass
 
     motivo = (
         "GATE BATTITO — la forma non torna, il messaggio non parte cosi'.\n\n"
         + "\n".join("  - " + p for p in problemi)
-        + "\n\nRiscrivi il battito nella forma fissa a blocchi centrati (emperator.md 6.11) — "
-        "nessun bordo, solo `🟠 <Nome>:` + contenuto, tutto centrato sullo stesso asse via "
-        "rientro a `·`, freccia `↓` centrata fra una voce e la successiva. Ogni voce porta "
-        "max 4 righe di contenuto, tranne Assetto+Potere che ne porta sempre 2. Non "
-        "disegnarlo a mano: chiama `verifica_recap.costruisci(...)` con i sei valori, che "
-        "genera gia' rientro e centraggio corretti. Mai dentro un blocco "
-        "```: sparisce dal controllo e si spezza nel renderer." + esempio
+        + "\n\nRiscrivi il battito nella forma fissa (emperator.md 6.11) — DENTRO un blocco "
+        "``` in cima al messaggio (gli spazi di centraggio reggono solo li' dentro), `🟠 "
+        "<Nome>:` + contenuto, tutto centrato sullo stesso asse via rientro a spazi veri, "
+        "freccia `↓` centrata fra una voce e la successiva. Ogni voce porta max 4 righe di "
+        "contenuto, tranne Assetto+Potere che ne porta sempre 2. Non disegnarlo a mano: "
+        "chiama `verifica_recap.costruisci(...)` con i sei valori, che genera gia' rientro "
+        "e centraggio corretti — poi avvolgi il risultato in ``` ... ```." + esempio
     )
 
     risposta = {"decision": "block", "reason": motivo}

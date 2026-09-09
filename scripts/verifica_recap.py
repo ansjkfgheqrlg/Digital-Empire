@@ -12,44 +12,45 @@ disciplina del turno in corso, che un contesto lungo o una riga scritta di frett
 Questo script e' il controllo che non dipende dalla memoria del momento: legge un battito
 e dice SI o NO, con la riga esatta che non torna.
 
-FORMA A BLOCCHI CENTRATI, SENZA BORDO (2026-09-09, ordine di Max — solo estetica, il
-contenuto delle sei voci non cambia). Storia dei tentativi, in ordine — tenuta per intero
-perche' ogni giro ha smentito un'ipotesi tecnica plausibile che sembrava corretta:
+FORMA A BLOCCHI CENTRATI, DENTRO UN BLOCCO DI CODICE (2026-09-09, ordine di Max — solo
+estetica, il contenuto delle sei voci non cambia). Storia dei tentativi, in ordine — tenuta
+per intero perche' ogni giro ha smentito un'ipotesi tecnica plausibile che sembrava corretta:
 
   1º giro — riquadri con bordo (┌─┐/│/└─┘) aperti a destra. Bocciato: Max li voleva chiusi
      e centrati ("i quadratini devono essere al centro... completamente chiusi").
-  2º giro — riquadri chiusi, centrati con rientro a spazi ASCII. Bocciato di nuovo sulla
-     stessa base (visto su un'altra sessione, EMP-LAN1): la regola non bastava da sola.
-     Aggiunte in quel giro, e rimaste valide: mai dentro un blocco ``` (vedi
-     gate_battito_hook.py), tetto di `LARGHEZZA_MASSIMA_RIGA` caratteri per riga.
-  3º giro — ipotesi: gli spazi ASCII ripetuti collassano nel rendering, l'NBSP no (stesso
-     trucco di `&nbsp;` in HTML). Sbagliata: la NBSP e' whitespace quanto lo spazio ASCII,
-     e questo renderer non fa distinzioni.
-  4º giro — diagnosi corretta: non conta il TIPO di carattere di spaziatura, conta la
-     RIPETIZIONE. Un carattere di spaziatura isolato sopravvive sempre; un TRATTO di 2+
-     dello stesso carattere collassa sempre, spazio o NBSP indifferentemente — prova diretta:
-     gli spazi singoli fra le parole di una frase arrivavano intatti, i trattini del bordo
-     (`─`, mai spaziatura) arrivavano a piena larghezza, solo i tratti di riempimento/rientro
-     sparivano. Soluzione: PUNTO (`·`) per ogni tratto di 2+ caratteri strutturali — un
-     carattere NON di spaziatura, ripetuto, non ha nulla da collassare.
-  5º giro — il 4º giro FUNZIONAVA (Max l'ha confermato mandando indietro il testo
-     renderizzato: perfettamente centrato) ma ha rivelato che il BORDO (┌─┐/│/└─┘) non serve
-     e non regge comunque nel suo client — le righe con solo `🟠 <Etichetta>` + contenuto,
-     centrate col rientro a `·`, bastano da sole. Rimosso il bordo per intero. Aggiunto il
-     formato AD ALBERO per la voce Forze quando ci sono più unità nominate (sentinelle, doom
-     bot, ecc.) — mostrato da Max con un esempio scritto a mano, non generato: `🟠 <NOME>`,
-     poi `│`, poi `├─🟠→ <voce>` per ognuna tranne l'ultima che è `└─🟠→ <voce>`.
+  2º giro — riquadri chiusi, centrati con rientro a spazi ASCII, fuori da un blocco di
+     codice (si credeva, allora, che dentro un blocco di codice il battito sparisse dal
+     controllo del gate — vedi 6º giro, era vero ma la soluzione era un'altra). Bocciato di
+     nuovo sulla stessa base (visto su un'altra sessione, EMP-LAN1): la regola non bastava.
+  3º giro — ipotesi: gli spazi ASCII ripetuti collassano nel rendering fuori da un blocco
+     di codice, l'NBSP no (stesso trucco di `&nbsp;` in HTML). Sbagliata: la NBSP e'
+     whitespace quanto lo spazio ASCII, questo renderer non fa distinzioni.
+  4º giro — diagnosi tecnica corretta ma soluzione poi abbandonata: non conta il TIPO di
+     carattere di spaziatura, conta la RIPETIZIONE — un carattere isolato sopravvive, un
+     TRATTO di 2+ dello stesso carattere collassa sempre, fuori da un blocco di codice.
+     Soluzione di allora: PUNTO (`·`) per ogni tratto di 2+ caratteri strutturali.
+  5º giro — il 4º giro RENDEVA bene (centrato per davvero) ma Max ha bocciato l'ESTETICA:
+     i puntini si vedono, "che schifo". Tolto anche il bordo (non serviva). Aggiunto pero'
+     il formato AD ALBERO per la voce Forze quando ci sono più unità nominate (sentinelle,
+     doom bot, ecc.) — mostrato da Max con un esempio scritto a mano: `🟠 <NOME>`, poi `│`,
+     poi `├─🟠→ <voce>` per ognuna tranne l'ultima che è `└─🟠→ <voce>`. Questo pezzo resta.
+  6º giro — la svolta. Il vero motivo per cui gli spazi ripetuti sparivano non era "dentro
+     o fuori da un blocco di codice" in astratto: era che il TESTO CHE SCRIVO IO passa da
+     un motore che collassa gli spazi ripetuti in prosa normale, mentre un blocco di codice
+     li preserva ESATTI — la stessa ragione per cui l'esempio scritto a mano da MAX (fuori
+     da qualunque controllo mio) si leggeva perfetto: lui non passa dallo stesso motore.
+     Max ha scelto esplicitamente: dentro un blocco di codice, spazi veri. Il divieto dei
+     giri 2-5 ("mai dentro un blocco ```") è ABROGATO: ora e' l'opposto, il battito vero
+     DEVE stare dentro un blocco di codice, altrimenti gli spazi non reggono. Il bordo non
+     torna (il 5º giro l'aveva tolto per altre ragioni, restano valide); il riempimento
+     torna a essere SPAZIO VERO, non piu' `·` (dentro un blocco di codice lo spazio non
+     collassa, il punto non serve più).
 
-**MAI DENTRO UN BLOCCO ``` .** Il battito vero è sempre testo semplice. Un blocco di codice
-è "il formato apposta per copiare" (parole di Max) — non è come si consegna un rapporto — e
-SPARISCE dal controllo del gate (`righe_reali` in gate_battito_hook.py lo esclude apposta,
-per non bloccarmi quando *spiego* il formato a Max con un esempio dentro la dottrina).
-
-**RIGHE CORTE, SEMPRE.** Una riga di contenuto troppo lunga si spezza da sola quando lo
-spazio dove Max legge e' piu' stretto della riga, rompendo il centraggio per quella riga.
-`LARGHEZZA_MASSIMA_RIGA` (44 caratteri) e' il tetto duro: `costruisci()` rifiuta di generare
-una voce che lo sfora (eccezione, non una riga storta silenziosa) e `valida()` lo controlla
-comunque, per un battito scritto a mano.
+**RIGHE CORTE, SEMPRE.** Una riga di contenuto troppo lunga puo' comunque risultare scomoda
+da leggere o forzare uno scroll orizzontale. `LARGHEZZA_MASSIMA_RIGA` (44 caratteri) resta il
+tetto duro: `costruisci()` rifiuta di generare una voce che lo sfora (eccezione, non una riga
+silenziosamente troppo lunga) e `valida()` lo controlla comunque, per un battito scritto a
+mano.
 
 USO (prima di inviare OGNI battito):
     printf '%s' "<testo del battito>" | py -3 scripts/verifica_recap.py
@@ -79,11 +80,10 @@ VOCI = [
 
 LARGHEZZA_MASSIMA_RIGA = 44  # caratteri per riga di contenuto — vedi nota "RIGHE CORTE"
 
-# Riempimento strutturale: MAI uno spazio ripetuto (spazio ASCII o NBSP, collassano
-# entrambi appena sono 2+ di fila — vedi nota del 4º giro sopra). Un punto medio ripetuto
-# non e' whitespace: non collassa mai, come i trattini di un bordo non collassano mai.
-PUNTO = "·"
-_RIENTRO_CHARS = "  ·"  # tollerati in lettura: spazio, NBSP, punto (storia del formato)
+# Riempimento strutturale: spazio vero (6º giro, dentro un blocco di codice non collassa).
+# Restano tollerati in lettura NBSP e punto medio: un battito scritto a mano prima di
+# questa regola (o da un’altra sessione non ancora sincronizzata) puo’ ancora averli.
+_RIENTRO_CHARS = "  ·"
 
 TITOLO_RE = re.compile(r"^\*\*⏱️ RECAP — (\d{1,3})%\*\*$")
 FRECCIA = "↓"
@@ -431,9 +431,9 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
     for i, (linee, larghezza) in enumerate(render):
         rientro = (canvas - larghezza) // 2
         for l in linee:
-            out.append("" if l is None else PUNTO * rientro + l)
+            out.append("" if l is None else " " * rientro + l)
         if i < len(render) - 1:
-            out.append(PUNTO * (canvas // 2) + FRECCIA)
+            out.append(" " * (canvas // 2) + FRECCIA)
     return "\n".join(out)
 
 

@@ -628,23 +628,23 @@ In ogni lavoro che supera i ~10 minuti, quando ricorre uno dei tre casi, dai un 
 sempre in questa forma:
 
 ```
-**⏱️ RECAP — <n>%**
+**⏱️ RECAP — 0%**
 
-···🟠 Fatto:
-···<riga, max 44 caratteri>
-···············↓
-···🟠 Sto facendo:
-···<riga, max 44 caratteri>
-···············↓
-···🟠 Farò:
-···<riga, max 44 caratteri>
-···············↓
+   🟠 Fatto:
+   <riga, max 44 caratteri>
+               ↓
+   🟠 Sto facendo:
+   <riga, max 44 caratteri>
+               ↓
+   🟠 Farò:
+   <riga, max 44 caratteri>
+               ↓
 🟠 Forze:
 nessuna, sto lavorando da solo
-···············↓
-·········🟠 Assetto:
-·········normale
-·········🟠 Potere: 0%
+               ↓
+         🟠 Assetto:
+         normale
+         🟠 Potere: 0%
 ```
 
 Quando Forze ha più unità nominate (sentinelle, doom bot, ecc.) invece di una riga sola, la
@@ -652,11 +652,26 @@ voce Forze diventa un ALBERO — un gruppo per unità, `│` e rami `├─🟠�
 sempre `└`):
 
 ```
+**⏱️ RECAP — 0%**
+
+  🟠 Fatto:
+  <riga, max 44 caratteri>
+              ↓
+  🟠 Sto facendo:
+  <riga, max 44 caratteri>
+              ↓
+  🟠 Farò:
+  <riga, max 44 caratteri>
+              ↓
 🟠 Forze:
 🟠 <NOME GRUPPO>
 │
 ├─🟠→ <GRADO> <nome> <cosa fa>
 └─🟠→ <GRADO> <nome> <cosa fa>
+              ↓
+        🟠 Assetto:
+        normale
+        🟠 Potere: 0%
 ```
 
 (numeri a 0% qui solo perché è l'output letterale di `costruisci(...)` con argomenti
@@ -664,8 +679,10 @@ segnaposto — nel battito vero ci va la percentuale reale. Ogni riga di contenu
 44 caratteri, regola 9 sotto — verificato con `valida()` prima di scriverlo in dottrina.)
 
 **LA FORMA DEL BATTITO È FISSA, CARATTERE PER CARATTERE** *(ordine di Max, 2026-09-05; resa a
-blocchi centrati senza bordo, ordinata da Max il 2026-09-09 dopo cinque giri di correzione
-lo stesso giorno)*.
+blocchi centrati DENTRO UN BLOCCO DI CODICE, ordinata da Max il 2026-09-09 dopo sei giri di
+correzione lo stesso giorno)*. **Il blocco ` ``` ` dei due esempi sopra non è solo la resa a
+schermo di questa pagina: è il contenitore vero, letterale, che va usato per consegnare il
+battito a Max** (6º giro — vedi sotto). Non un ``` in più, non uno in meno.
 
 > ⚠️ **Il primo tentativo era sbagliato, e Max l'ha bocciato in una riga.** La prima resa a
 > quadrati aveva i riquadri aperti sul lato destro (niente bordo `┐`/`┘`) e le frecce a
@@ -708,30 +725,22 @@ nessuna facoltativa:
    righe a mano è la stessa trappola dei conteggi a mano che ha già fatto cadere altre
    regole (§6.24): usa la funzione quando il canale lo permette — è anche l'unico modo
    pratico di tenere il centraggio davvero uguale su ogni riga.
-8. **MAI dentro un blocco ` ``` `.** Il battito vero è sempre testo semplice. Un blocco di
-   codice è "il formato apposta per copiare" (parole di Max) — non è come si consegna un
-   rapporto — e sparisce dal controllo del gate (`righe_reali` lo esclude apposta, per non
-   bloccarmi quando *spiego* il formato a Max con un esempio). Se il battito vero finisce
-   per errore dentro un blocco di codice, il gate non lo blocca ma non lo valida nemmeno:
-   passa senza controllo. `gate_battito_hook.py` ora rileva anche questo caso specifico
-   (un messaggio che è *solo* un blocco di codice contenente un battito, senza altro testo
-   intorno) e lo blocca con un motivo dedicato — ma la regola resta: non ci si arriva mai.
+8. **SEMPRE dentro un blocco ` ``` `, senza indicazione di linguaggio, in cima al
+   messaggio** (regola INVERTITA al 6º giro — dal 2026-09-02 al 2026-09-09 sera era "mai
+   dentro un blocco ```"; era la regola sbagliata, vedi il 6º giro sotto per il perché).
+   `gate_battito_hook.py` blocca sia un battito lasciato fuori da un blocco di codice sia
+   un blocco di codice non in cima al messaggio (prosa vera prima) — un blocco `` ``` ``
+   con un titolo dentro ma con prosa vera **anche dopo** ("ecco lo schema: ``` ... ```
+   chiaro?") resta un esempio di documentazione, non un tentativo di consegna, e non viene
+   toccato.
 9. **Ogni riga di contenuto sta sotto 44 caratteri** (`LARGHEZZA_MASSIMA_RIGA` in
-   `verifica_recap.py`). Una riga troppo lunga si spezza da sola nello spazio dove Max legge
-   — e rompe il centraggio proprio per quella riga, indipendentemente da quanto sia giusta
-   la matematica del rientro. `costruisci()` rifiuta di generare una voce che lo sfora
-   invece di produrla storta in silenzio.
-10. **Ogni tratto di 2+ caratteri di spaziatura strutturale è `·` (punto medio), MAI spazio
-    ripetuto — nemmeno NBSP.** Il rientro che centra una voce, l'indentazione della freccia
-    `↓` — tutti `·`. Resta UN solo spazio vero (carattere singolo, mai ripetuto) per gli
-    spazi fra le parole dentro una frase. Il motivo è tecnico (vedi il quarto giro qui
-    sotto): non è "lo spazio ASCII collassa, l'NBSP no" (tentativo del terzo giro,
-    smentito) — è che **qualunque carattere di spaziatura, ripetuto 2+ volte di fila,
-    collassa nel rendering**, spazio o NBSP indifferentemente. Solo un carattere che NON è
-    spaziatura, ripetuto, sopravvive sempre — motivo per cui i trattini di un bordo (`─`,
-    quando ce n'era uno) non si sono mai spezzati. `costruisci()` lo fa da solo: non c'è
-    niente da ricordare a mano, tranne che *non si scrive mai il rientro battendo la barra
-    spaziatrice più di una volta di fila*.
+   `verifica_recap.py`). `costruisci()` rifiuta di generare una voce che lo sfora invece di
+   produrla silenziosamente troppo lunga.
+10. **Il rientro che centra una voce è spazio vero, ripetuto quanto serve — non più `·`**
+    (il punto medio del 4º/5º giro è abolito: dentro un blocco di codice lo spazio non
+    collassa, non serve più un sostituto). `costruisci()` lo fa da solo: non c'è niente da
+    ricordare a mano, tranne che *il battito generato va sempre avvolto in ``` ... ``` prima
+    di essere mandato*.
 
 > ⚠️ **Il primo giro di correzione (regole 3-6 sopra) non bastava, e un bug l'ha pure
 > nascosto.** Max ha mandato un secondo screenshot — stesso identico difetto della prima
@@ -799,15 +808,48 @@ nessuna facoltativa:
 > successivo ("ecco anche questo") è un'AGGIUNTA da integrare, non un altro giro da
 > ridiscutere da zero — riconoscere la differenza fra "ancora sbagliato" e "quasi, manca
 > un pezzo" evita di rimettere in dubbio cio' che gia' regge.
+>
+> **Correzione sul giro stesso:** "nessuna bocciatura sulla tecnica di centraggio" sopra
+> era vero solo sulla matematica del rientro (i blocchi erano davvero centrati). Il giro
+> successivo ha mostrato che l'ESTETICA del `·` stesso — visibile come una fila di puntini
+> — era un problema separato, non coperto da quella conferma. Confermare una tecnica sulla
+> base di UN aspetto (il centraggio) non e' confermarla su TUTTI gli aspetti (anche come si
+> vede il riempimento).
+
+> ❌ **Sesto giro — Max ha bocciato l'estetica del punto, non il centraggio.** *"che schifo,
+> i puntini si vedono"*: il rientro a `·` centrava benissimo (matematicamente confermato dal
+> 5º giro) ma si vedeva come una fila di puntini, non come vuoto. Max ha rimandato per la
+> terza volta il SUO esempio scritto a mano — identico ai giri precedenti — insistendo che
+> deve venire esattamente cosi'. La domanda giusta stavolta: perche' il SUO testo, digitato
+> a mano, si legge perfetto con spazi veri, mentre il MIO testo generato non regge nemmeno
+> con NBSP? Risposta: non e' il renderer in generale a collassare gli spazi — e' il motore
+> che processa IL TESTO SCRITTO DALL'ASSISTENTE (markdown normale) a farlo, mentre il testo
+> che Max digita lui stesso non passa da quel motore. L'UNICO contenitore, dentro un
+> messaggio dell'assistente, che preserva lo spazio esatto e' un blocco `` ``` ``. Max ha
+> scelto esplicitamente questa strada (fra due opzioni proposte: blocco di codice con spazi
+> veri, oppure testo pulito senza centraggio) — **il divieto "mai dentro un blocco di
+> codice" dei giri 2-5 era la regola sbagliata fin dall'inizio**, nata da una paura
+> (comprimere/spezzare) mai verificata contro l'alternativa vera (niente affatto centrato).
+> Riscritti `verifica_recap.py` (rientro a spazio vero, non piu' `·`) e `gate_battito_hook.py`
+> (la regola e' ora invertita: blocca un battito FUORI da un blocco di codice, non piu'
+> dentro; distingue una consegna vera da un esempio di documentazione guardando se c'e'
+> prosa vera anche DOPO la chiusura del blocco, non solo prima). 11/11 test verdi, riscritti
+> per la regola opposta. **Lezione:** quando la stessa persona mostra la STESSA prova tre
+> volte di fila, il problema non e' nella prova — e' nell'ipotesi con cui la sto leggendo.
+> Alla terza volta la domanda da farsi non e' "come miglioro il tentativo", e' "cosa sto
+> assumendo che lui non sta assumendo" (qui: che il testo assistente e il testo utente
+> passino dallo stesso motore di rendering — non era vero).
 
 **PRIMA DI MANDARE OGNI BATTITO: verificalo, e ripeti finché non è perfetto** *(ordine di
 Max, 2026-09-09, testuale: "questa perfezzione deve rimanere per tutto il recap prima di
 mandarlo divi controllare finche non è perfetto")*. Non basta costruirlo con `costruisci()`
 una volta e fidarsi: passalo a `verifica_recap.valida(...)` (o al comando da terminale) e,
 se torna anche un solo problema, **correggi e ricontrolla — non mandarlo lo stesso pensando
-che il gate lo prenderà dopo**. Il gate automatico (`gate_battito_hook.py`) resta l'ultima
-rete, non la prima: è lì per quando il canale non permette un controllo attivo, non per
-scaricargli sopra la responsabilità che è mia.
+che il gate lo prenderà dopo**. Poi **avvolgi il risultato in ` ``` ... ``` `** (6º giro,
+regola 8 sopra) prima di scriverlo nel messaggio a Max: `costruisci()` non lo fa da sola,
+la fence va aggiunta a mano attorno al suo output. Il gate automatico (`gate_battito_hook.py`)
+resta l'ultima rete, non la prima: è lì per quando il canale non permette un controllo
+attivo, non per scaricargli sopra la responsabilità che è mia.
 
 Vale per **ogni** battito: quello automatico dei dieci minuti, quello chiesto col comando
 `recap`, quello di apertura con Gael e Neri (§6.16.2), quello di chiusura lavoro. Un battito
