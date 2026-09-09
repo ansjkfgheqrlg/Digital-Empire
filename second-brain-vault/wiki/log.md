@@ -2294,4 +2294,20 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   la prima documentazione approfondita del prodotto. Conferma cross-fonte (4ª occorrenza) del gap
   già noto in `beast-preventivi` (assenza pattern "rifiutati se mancano dati obbligatori"). Nuovo
   header wiki creato: "### Claude Cowork & Produttività AI".
-- v06 ancora in corso presso lo scagnozzo assegnato (il piu' denso: 228 atomi, 110 min).
+- INGEST: **Source_Giovanni_Beggiato_Corso_Agenti_AI.md** creata (v06, JTn5pqm9ecM) — 394 righe,
+  47/228 KA citati (il video più denso del lotto: 427 archi, 1 componente/0 orfani). Otto
+  tecniche di prompt engineering/orchestrazione documentate: Adaptive Guardrails, 4 livelli di
+  specificità del prompt, Step-Back/Reverse Prompting, Prompt Contracts, Pre-Mortem, Agent
+  Polling, Agent Debates, Browser Swarm, Audit a 3 ispettori zero-contesto.
+  GAP ANALYSIS verificata con Grep contro agent-factory/master-build-architecture/
+  sparc-methodology/swarm-orchestration + PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md: match diretto
+  su Pre-Mortem (già `ADR-006`, step obbligatorio) e sulla gerarchia di specificità dei prompt
+  (già l'architettura reale di questa sessione, mai nominata come principio); gap reali su Agent
+  Polling e Prompt Contracts leggero (nessun equivalente in DE); su Audit DE è già avanti (5
+  Sentinelle più granulari dei 3 ispettori del corso). Agganciata sotto l'header esistente
+  "### Metodologie di Sviluppo".
+
+**LOTTO max18 — FASE 1 CHIUSA: 6/6 pagine wiki scritte (v04, v05, v06, v07, v08, v09).** Tutte le
+9 fonti del lotto sono ora chiuse end-to-end (visione + atomi + grafo saldato + wiki + archivio).
+Resta solo `max17` (`EMP-QQ2R`, fermo a 9/17) come debito residuo della Fase 1 complessiva, poi la
+Fase 2 (implementazione dei consigli raccolti) su ordine esplicito di Max.
