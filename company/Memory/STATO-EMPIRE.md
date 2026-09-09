@@ -10196,3 +10196,18 @@ scrivibile lì in questa sessione).
 **RIPRESA DA:** `outHeadline` (`/outheadlinedash-1`), poi `outEmail`, poi `outViral 2` — stessa
 pipeline di `SKILL & Agenti/Empire Studio Suite/empire-studio/runs/andrei-pascu-armageddon-outfunnel-001/`,
 riattivare la sessione membri (richiedere di nuovo le credenziali a Max, mai cercarle salvate).
+
+## 2026-09-09 — Max cambia priorità: documentazione ufficiale prima dei corsi restanti (CP-20260909-22YQ)
+
+Mentre l'ingestione di outHeadline era a metà (30/30 lezioni catturate come testo, non ancora
+classificate), Max ha chiesto 4 documenti diversi, con priorità sopra i corsi restanti del bundle:
+(1) documentazione ufficiale per corso (dentro `documentazione Empire/competitor/Andrei Pascu/`),
+partendo da outFunnel poi Claude Speedrun 2; (2) un documento-mondo su tutto Andrei Pascu; (3) un
+documento sui miglioramenti/implementazioni per Digital Empire nati dallo studio.
+**outHeadline/outEmail/outViral 2 restano in pausa**, priorità dichiarata più bassa.
+
+**Fatto:** pezzo 1 (outFunnel) chiuso — MD + PDF a 6 pagine + doppione. Pezzo 2 (Claude Speedrun
+2) a metà — MD scritto e onesto sullo stato reale del corso (20/40 lezioni, 50%), manca il PDF.
+
+**RIPRESA DA:** `EMP-APDOC1` (`company/Memory/riprese/EMP-APDOC1.md`) — PDF del pezzo 2, poi
+pezzo 3 (dossier completo su Andrei Pascu), poi pezzo 4 (miglioramenti per Digital Empire).
