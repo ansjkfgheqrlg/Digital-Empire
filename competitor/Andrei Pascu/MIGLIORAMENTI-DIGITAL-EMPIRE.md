@@ -25,18 +25,27 @@ corretto in casa).
 | # | Candidato | Fonte | Dove |
 |---|---|---|---|
 | AP-001 | Sezione **"Customer Language Over Company Language"** — ricerca voice-of-customer da recensioni YouTube prima di scrivere copy | Convergenza a 3 fonti indipendenti: 2 video YouTube gratuiti (run `andrei-pascu-001`) + cs2online Lezione 13 | `.claude/skills/copywriting/SKILL.md`, patch reale del 2026-08-29 — l'unico caso di tutto lo studio in cui una lezione ha già modificato una skill, non solo segnalato un candidato |
+| AP-002 | Test operativo **"questa frase potrebbe essere detta a chiunque? allora è apparente"** per diagnosticare copy generico | outFunnel Lezione 15 (KA-02) | `.claude/skills/cro-copy-architect/SKILL.md`, principio 7 esteso (2026-09-09) |
+| AP-003 | **Mai far scrivere una sales page intera all'AI, solo derivati** | cs2online Lezione 4 (KA-03) | `.claude/skills/cro-copy-architect/SKILL.md`, nuovo principio 15 (2026-09-09) |
+| AP-006 | **Sistema di generazione preventivi via AI** — pointer/riferimento futuro, non un'automazione costruita | cs2online Bonus 6 | `.claude/skills/beast-preventivi/SKILL.md`, sezione "Riferimento futuro (non applicato)" (2026-09-09) — non risolve la tensione breakdown-prezzi, resta scelta di Max |
+| AP-007 | Diagnosi del **livello di consapevolezza** (5 livelli di Schwartz) come step precedente all'applicazione di APSOC | outFunnel Lezione 2 | `.claude/skills/cro-copy-architect/SKILL.md`, STEP 1 punto 2 esteso (2026-09-09) |
+| AP-009 | **4 trigger di popup** (Time on page, Scroll percentage, Exit intent, On element) come default operativo | outFunnel Lezione 7 (KA-02) | `.claude/skills/popups/SKILL.md`, sottosezione "Default Operativo" (2026-09-09) |
+| AP-010 | Check pre-pubblicazione **"breve e consumabile"** per ogni lead magnet | outFunnel Lezione 9 (KA-01/06) | `.claude/skills/lead-magnets/SKILL.md` (2026-09-09) |
+| AP-011 | **Tetto di 1-2 mesi** per una sequenza di follow-up | outFunnel Lezione 10 (KA-06) | `.claude/skills/emails/SKILL.md` + `.claude/skills/cold-email/SKILL.md` (2026-09-09) |
+| AP-012 | Gap **tag/scoring comportamentale** in automazione email — documentato, non costruito | outFunnel Lezione 15 (KA-04/05/06) | `.claude/skills/revops/SKILL.md`, callout "Gap identificato" (2026-09-09) |
+| AP-013 | Blueprint a 3-step + soglia **3.000 €** per passare da self-service a sales call | outFunnel Lezione 19 (KA-01/02) | `.claude/skills/sales-enablement/SKILL.md`, `discovery-call-brief/SKILL.md`, `proposal-gate/SKILL.md` (2026-09-09) |
+| AP-014 | Soglia **"sopra 1.000 € serve un umano, non basta il copy"** | outFunnel Lezione 3 | `.claude/skills/preventivo-auto/SKILL.md`, `sales-enablement/SKILL.md` (2026-09-09) |
+| AP-015 | Finestra di test **7-30 giorni** prima di tagliare un ad | outFunnel Lezione 18 (KA-02) | `.claude/skills/ads/SKILL.md`, `ad-creative/SKILL.md` (2026-09-09) |
+| AP-016 | Tempistiche di **recupero carrello** a step ravvicinati | outFunnel Lezione 8 (KA-07) | `.claude/skills/emails/SKILL.md`, sezione "Cart Abandonment Sequence" (2026-09-09) |
 
 ---
 
-## 🟡 PROPOSTI — alta priorità (soglia di conferma raggiunta o candidato diretto per un task aperto)
+## 🟡 PROPOSTI — alta priorità, non ancora applicati (ecosistema LANCI attivo, fuori scope della build del 2026-09-09)
 
 | # | Candidato | Fonte | Area/Skill target |
 |---|---|---|---|
-| AP-002 | Test operativo **"questa frase potrebbe essere detta a chiunque? allora è apparente"** per diagnosticare copy generico | outFunnel Lezione 15 (KA-02) | `cro-copy-architect` — arricchimento sezione Attenzione/Problema (APSOC) |
-| AP-003 | **Mai far scrivere una sales page intera all'AI, solo derivati** — raggiunge la terza conferma indipendente nel corso (dopo run YouTube + scetticismo già presente in `cro-copy-architect`) | cs2online Lezione 4 (KA-03) | `cro-copy-architect` — nota esplicita da aggiungere |
 | AP-004 | **Blueprint Lezione 20 (Tripwire → prodotto principale)** — strutturalmente applicabile al primo lancio Digital Empire (Manuale Claude Code, prodotto finito, prezzo intermedio) | outFunnel Lezione 20 (KA-02) | `TASK-LANCI-PIANO-DEFINITIVO-W3` |
 | AP-005 | **Ads dinamiche a countdown** (30 varianti di ad, 3 versioni di sales page) — implementazione tattica di un principio che LANCI ha già come regola ma non come procedura | outFunnel Lezione 16 (KA-02/03/04) | `TASK-LANCI-PIANO-AZIONE-W3`, ecosistema LANCI |
-| AP-006 | **Sistema di generazione preventivi via AI** con struttura a pagine (`struttura-preventivo.md`, flowchart+SOP+skill Obsidian) — secondo riferimento concreto per la tensione mai risolta su `beast-preventivi` (breakdown prezzi sì/no, AP-05 nel run YouTube) | cs2online Bonus 6 — **MOLTO RILEVANTE** | `beast-preventivi` — non risolve la tensione, ma offre un caso di studio maturo se si estende con automazione AI |
 
 ---
 
@@ -44,18 +53,9 @@ corretto in casa).
 
 | # | Candidato | Fonte | Area/Skill target |
 |---|---|---|---|
-| AP-007 | Diagnosi del **livello di consapevolezza** (5 livelli di Schwartz) come step precedente all'applicazione di APSOC, specialmente su copy freddo | outFunnel Lezione 2 (KA-...) | `cro-copy-architect` |
-| AP-008 | **Checklist a 7 fattori diagnostici** fra step di un funnel — nessuno dei 7 è oggi nei controlli di gate della Fabbrica Siti (che coprono correttezza tecnica, non coerenza temporale/emotiva) | outFunnel Lezione 12 (KA-01) | Gate Fabbrica Siti / ecosistema LANCI |
-| AP-009 | **4 trigger di popup** nominati esplicitamente come default operativo, invece di sceglierne uno ad hoc ogni volta | outFunnel Lezione 7 (KA-02) | skill `popups` |
-| AP-010 | Catalogo **10 tipologie di lead magnet** + vincolo "breve e consumabile" come checklist di validazione | outFunnel Lezione 9 (KA-01/06) | skill `lead-magnets` |
-| AP-011 | **Tetto di 1-2 mesi** per il follow-up email — vincolo che il reparto Outreach non ha ancora formalizzato esplicitamente | outFunnel Lezione 10 (KA-06) | `emails`, `cold-email`, reparto Outreach |
-| AP-012 | Sistemi di **tag/scoring comportamentale** in automazione email — non documentati oggi in nessuna skill dell'Impero | outFunnel Lezione 15 (KA-04/05/06) | `revops`, `emails` — potenziale nuovo pattern per LANCI |
-| AP-013 | Blueprint a 3-step con 3 varianti di opt-in per funnel ad alto ticket + soglia **3.000 €** come riferimento per passare da self-service a sales call | outFunnel Lezione 19 (KA-01/02) | `sales-enablement`, `discovery-call-brief`, `proposal-gate` |
-| AP-014 | Soglia **"sopra 1.000 € serve un umano, non basta il copy"** — criterio per decidere quando un funnel deve terminare su call invece che checkout self-service | outFunnel Lezione 3 | `preventivo-auto`, `sales-enablement`, ecosistema LANCI |
-| AP-015 | Fase di testing **7-30 giorni** prima di tagliare un ad — timing di default in assenza di dato proprietario | outFunnel Lezione 18 (KA-02) | `ads`, `ad-creative` |
-| AP-016 | Tempistiche di **recupero carrello/follow-up** come default operativo quando manca un dato proprietario misurato | outFunnel Lezione 8 (KA-07) | pattern email-automation, ecosistema LANCI |
+| AP-008 | **Checklist a 7 fattori diagnostici** fra step di un funnel — nessuno dei 7 è oggi nei controlli di gate della Fabbrica Siti (che coprono correttezza tecnica, non coerenza temporale/emotiva) | outFunnel Lezione 12 (KA-01) | Gate Fabbrica Siti / ecosistema LANCI — non toccato (build 2026-09-09 esclude l'ecosistema LANCI attivo) |
 | AP-017 | Vincolo su upsell: **verificare sempre che il primo prodotto resti percepito come completo** | outFunnel Lezione 11 (KA-05/07) | check qualitativo per un futuro gate offerte/upsell |
-| AP-018 | Framework a **10 livelli** di maturità AI come possibile tool di diagnosi/onboarding clienti agency ("a che livello AI sei") | cs2online Lezione 3 (KA-01) | valutazione strategica — nessuna skill lo copre oggi |
+| AP-018 | Framework a **10 livelli** di maturità AI come possibile tool di diagnosi/onboarding clienti agency ("a che livello AI sei") | cs2online Lezione 3 (KA-01) | valutazione strategica — nessuna skill lo copre oggi, decisione di Max |
 | AP-019 | Pattern **PDF→JSON con Opus Extended Thinking** per documenti riusati, osservato per intero (non solo raccontato) | cs2online Lezione 6 (KA-04) | valutare applicabilità a content-forge / skill-forge |
 | AP-020 | Regola anti-hallucination: **l'AI rifiuta se mancano dati obbligatori**, invece di inventarli — pattern di prompt engineering difensivo | cs2online Bonus 2 (KA-04) | qualunque skill DE che genera output strutturati da dati esterni (report, dashboard) |
 

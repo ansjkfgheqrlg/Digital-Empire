@@ -72,13 +72,15 @@ non solo segnalato un candidato.
 
 ---
 
-## Anomalie aperte, mai risolte
+## Anomalie aperte — RISOLTA il 2026-09-09
 
-Due skill elencate come disponibili nel sistema ma **non trovate su disco**:
-`prompt-engegniring-skill` (Lezione 2) e `client-handover` (Lezione 10) — 2 occorrenze dello
-stesso problema, possibile disallineamento sistemico fra il roster dichiarato e le skill
-realmente installate in `C:\Users\Utente\.claude\skills\`. Segnalato a Max entrambe le volte, mai
-risolto. **Riportato qui perché non vada perso** nel passaggio da run a documentazione ufficiale.
+Due skill elencate come disponibili nel sistema erano state cercate come **"non trovate su
+disco"**: `prompt-engegniring-skill` (Lezione 2) e `client-handover` (Lezione 10). Verificato il
+2026-09-09: esistono entrambe, ma nel roster **locale di questo progetto**
+(`.claude/skills/prompt-engegniring-skill/`, `.claude/skills/client-handover/`), non nel roster
+globale (`C:\Users\Utente\.claude\skills\`) dove erano state cercate le due volte precedenti. Non
+era un disallineamento nel sistema — era il raggio di ricerca incompleto. Chiusa, nessuna azione
+ulteriore.
 
 ---
 

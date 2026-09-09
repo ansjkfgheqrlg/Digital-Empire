@@ -184,10 +184,12 @@ prezioso ma va girato all'ecosistema LANCI, non allo studio del concorrente
 | outEmail, outViral 2 | ⬜ non iniziati | — |
 | Studio dei siti (`site-study/`) | ✅ 52 pagine catturate e chiuse su 187 URL totali (~58 pagine "da aprire davvero" nella triage) | `site-study/ECOSISTEMA.md` |
 
-**Due anomalie mai risolte, riportate qui perché non vadano perse**: due skill dichiarate come
-disponibili nel roster ma non trovate su disco — `prompt-engegniring-skill` (cs2online L2) e
-`client-handover` (cs2online L10) — possibile disallineamento fra il roster dichiarato e le skill
-realmente installate in `C:\Users\Utente\.claude\skills\`. Segnalato a Max due volte.
+**Due anomalie segnalate due volte, risolte il 2026-09-09**: `prompt-engegniring-skill`
+(cs2online L2) e `client-handover` (cs2online L10) erano state cercate solo in
+`C:\Users\Utente\.claude\skills\` (roster globale) e dichiarate "non trovate su disco". In realtà
+esistono entrambe, ma nel roster **locale del progetto**: `.claude/skills/prompt-engegniring-skill/`
+e `.claude/skills/client-handover/` (dentro questo repo). Non era un disallineamento del roster di
+Andrei Pascu — era un raggio di ricerca incompleto da parte nostra. Nessuna azione ulteriore.
 
 ---
 

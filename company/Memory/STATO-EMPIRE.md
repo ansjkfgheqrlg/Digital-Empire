@@ -20,29 +20,21 @@ sostanza: corretto mettendole qui, in cima, dove REGOLA ZERO impone di leggere p
 e le micro-task da `MT-F37C` in giù sono apribili subito, non aspettano queste tre. Dettagli:
 [CP-20260909-DA2P](checkpoints/CP-20260909-DA2P.md).
 
-## 🟣 2026-09-09 sera — ⚠️ COORDINAMENTO: fase implementazione miglioramenti Andrei Pascu (EMP-APIMPL1)
+## 🟣 2026-09-09 sera — EMP-APIMPL1 chiusa: 12 skill DE arricchite dallo studio Andrei Pascu
 
-**EMP-APDOC1 chiusa** (CP-20260909-2N8Q): i 4 documenti ufficiali su Andrei Pascu sono completi —
-vedi `competitor/Andrei Pascu/MIGLIORAMENTI-DIGITAL-EMPIRE.md` (33 candidati AP-001..033, stile
-BACKLOG). Max ha dato il via alla fase 2: implementare i miglioramenti proposti nelle skill DE.
+Blocco COORDINAMENTO tolto — build finita, nessuna collisione. 4 agenti paralleli, 13 file
+`SKILL.md` toccati (1 doppio: `sales-enablement` per AP-013 e AP-014), tutti arricchimento
+additivo, fonte citata riga per riga. Applicati: AP-002, 003, 006, 007, 009, 010, 011, 012, 013,
+014, 015, 016 (dettaglio e "Dove" esatto in `competitor/Andrei Pascu/MIGLIORAMENTI-DIGITAL-EMPIRE.md`,
+tabella 🟢 APPLICATO). Non toccati per scelta di scope: AP-004/005/008/033 (ecosistema LANCI
+attivo, fuori da questa build), AP-017..020 (da valutare, non urgenti).
 
-**Build in corso ora** (4 agenti paralleli, aree disgiunte, arricchimento additivo — nessuna
-riscrittura, nessun file toccato fuori da questo elenco):
-- `.claude/skills/cro-copy-architect/SKILL.md`
-- `.claude/skills/popups/SKILL.md`, `lead-magnets/SKILL.md`, `ads/SKILL.md`, `ad-creative/SKILL.md`
-- `.claude/skills/emails/SKILL.md`, `cold-email/SKILL.md`
-- `.claude/skills/sales-enablement/SKILL.md`, `discovery-call-brief/SKILL.md`,
-  `proposal-gate/SKILL.md`, `preventivo-auto/SKILL.md`, `revops/SKILL.md`, `beast-preventivi/SKILL.md`
+**Trovata e chiusa un'anomalia da 2 run**: `prompt-engegniring-skill` e `client-handover`,
+segnalate "non trovate su disco" due volte nel run cs2online, esistono entrambe — ma nel roster
+**locale del progetto** (`.claude/skills/`), cercate solo nel roster globale
+(`C:\Users\Utente\.claude\skills\`). Corretto nei due documenti ufficiali + PDF rigenerati.
 
-**Non tocca** l'ecosistema LANCI attivo (`PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`) né i gate Fabbrica
-Siti — quei candidati (AP-004, 005, 008, 033) restano dichiarati nel documento per chi lavora là.
-
-Se stai per toccare uno dei file sopra: aspetta la chiusura di questo blocco (il prossimo
-checkpoint CP-20260909-* lo toglie).
-
-**RIPRESA DA:** se questa sessione si ferma a metà, verificare quali file sopra hanno già la
-sezione "Andrei Pascu"/fonte citata, completare i mancanti, poi aggiornare lo stato in
-`MIGLIORAMENTI-DIGITAL-EMPIRE.md` (🟡→🟢) e chiudere con checkpoint + togliere questo blocco.
+Checkpoint: CP-20260909-4RZV. Commit + push fatti.
 
 ---
 

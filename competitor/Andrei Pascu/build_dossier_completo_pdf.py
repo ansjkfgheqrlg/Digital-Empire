@@ -212,10 +212,11 @@ doc.page(
     + """
 <div class='body' style='margin-top:12px'>
   <div class='unit'>
-    <div class='kicker'><span class='n'>—</span>Due anomalie mai risolte</div>
+    <div class='kicker'><span class='n'>—</span>Un'anomalia chiusa il 2026-09-09</div>
     <p class='note'><span class='mono'>prompt-engegniring-skill</span> e
-    <span class='mono'>client-handover</span> — dichiarate nel roster del corso, non trovate su
-    disco. Segnalato a Max due volte.</p>
+    <span class='mono'>client-handover</span> — dichiarate nel roster del corso, cercate solo nel
+    roster globale. Esistono entrambe nel roster locale del progetto
+    (<span class='mono'>.claude/skills/</span>). Non era un disallineamento reale.</p>
   </div>
 </div>
 """

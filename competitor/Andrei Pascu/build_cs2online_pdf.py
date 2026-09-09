@@ -115,19 +115,19 @@ doc.page(
 
 # 05 · D — anomalie + resta da fare
 doc.page(
-    head("D", "Aperto", "Due anomalie, <span class='soft'>cinque blocchi da finire.</span>",
+    head("D", "Aperto", "Un'anomalia chiusa, <span class='soft'>cinque blocchi da finire.</span>",
          "Cio' che resta, dichiarato senza arrotondare per non perderlo nel passaggio da run a "
          "documentazione ufficiale.")
     + """
 <div class='body stack'>
   <div class='unit fix'>
-    <div class='tag'>Anomalia</div>
-    <h3>2 skill dichiarate, non trovate su disco</h3>
+    <div class='tag'>Anomalia — risolta 2026-09-09</div>
+    <h3>2 skill cercate nel roster sbagliato</h3>
     <p class='note'><span class='mono'>prompt-engegniring-skill</span> (Lezione 2) e
-    <span class='mono'>client-handover</span> (Lezione 10) — possibile disallineamento fra il
-    roster dichiarato e le skill realmente installate in
-    <span class='mono'>C:\\Users\\Utente\\.claude\\skills\\</span>. Segnalato a Max due volte, mai
-    risolto.</p>
+    <span class='mono'>client-handover</span> (Lezione 10) erano state cercate solo nel roster
+    globale <span class='mono'>C:\\Users\\Utente\\.claude\\skills\\</span>. Esistono entrambe nel
+    roster locale di questo progetto (<span class='mono'>.claude/skills/</span>). Non era un
+    disallineamento: era il raggio di ricerca incompleto.</p>
   </div>
   <div class='unit'>
     <div class='kicker'><span class='n'>—</span>Resta da fare (20/40)</div>
