@@ -1,0 +1,805 @@
+[
+ {
+  "id": "KA-201",
+  "tipo": "procedura",
+  "contenuto": "La skill skill-creator permette di generare una skill completamente nuova a partire da una descrizione in linguaggio naturale del comportamento desiderato (es. \"ogni volta che la chiamo, la skill mi dice: Ciao Giovanni, come stai?\"), producendo in automatico un file SKILL.md pronto all'uso.",
+  "fonte": "DI5aWJiFAt8#84:12 (creazione della skill \"saluto\" via skill-creator) + voce 84:12-84:42",
+  "frame": "frame-0843.png",
+  "ancora": "/skill-creator Creo una skill tale per cui, ogni volta che la chiamo... la skill mi dice: \"Ciao Giovanni, come stai? Che bella giornata oggi\".",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-202",
+  "tipo": "regola",
+  "contenuto": "La cartella delle skill di sistema è in sola lettura: quando skill-creator genera una nuova skill, questa viene salvata nella cartella di output dell'utente invece che installata direttamente nel percorso ufficiale delle skill.",
+  "fonte": "DI5aWJiFAt8#84:12 (limite sandbox segnalato da skill-creator) + voce 84:12-84:42",
+  "frame": "frame-0843.png",
+  "ancora": "la cartella delle skill di sistema era in sola lettura, quindi ho salvato la skill nella tua cartella di output",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-201", "tipo": "parte-di", "perche": "è un limite tecnico del flusso di generazione descritto in KA-201"}
+  ]
+ },
+ {
+  "id": "KA-203",
+  "tipo": "procedura",
+  "contenuto": "Per rendere effettivamente utilizzabile una skill personalizzata salvata nella cartella di output, bisogna copiarne manualmente la cartella dentro ~/.claude/skills/ (oppure nella cartella skills del progetto corrente).",
+  "fonte": "DI5aWJiFAt8#84:12 (istruzioni di installazione della skill saluto) + voce 84:12-84:42",
+  "frame": "frame-0843.png",
+  "ancora": "Per installarla, dovrai copiare la cartella saluto dentro ~/.claude/skills/ (o nella cartella skills del tuo progetto).",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-202", "tipo": "applica", "perche": "è la soluzione pratica al limite di sola lettura"}
+  ]
+ },
+ {
+  "id": "KA-204",
+  "tipo": "dato",
+  "contenuto": "In alternativa alla copia manuale della cartella, una skill può essere impacchettata in un file .skill per semplificarne la distribuzione e l'installazione altrove.",
+  "fonte": "DI5aWJiFAt8#84:12 (proposta di pacchettizzazione della skill saluto) + voce 84:12-84:42",
+  "frame": "frame-0843.png",
+  "ancora": "Vuoi che la impacchetti come file .skill per facilitare l'installazione?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-203", "tipo": "alternativa-a", "perche": "offre un altro modo di installare la skill oltre alla copia manuale della cartella"}
+  ]
+ },
+ {
+  "id": "KA-205",
+  "tipo": "dato",
+  "contenuto": "Cowork rinomina automaticamente il titolo di una task in base al contenuto della conversazione, non appena questo diventa più chiaro (es. \"Create custom greeting skill\" diventa poi \"Greeting and initial conversation\").",
+  "fonte": "DI5aWJiFAt8#85:12 (rinomina automatica del titolo task) + voce 85:12-85:42",
+  "frame": "frame-0853.png",
+  "ancora": "il titolo della task in alto è cambiato automaticamente in \"Greeting and initial conversation\" (rinominata dal sistema in base al contenuto della conversazione)",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-206",
+  "tipo": "dato",
+  "contenuto": "Il prodotto dimostrato nel corso si chiama \"Cowork\" (Claude Cowork) ed è etichettato in interfaccia come \"research preview\".",
+  "fonte": "DI5aWJiFAt8#85:42 (home page di Cowork) + voce 85:42-86:12",
+  "frame": "frame-0858.png",
+  "ancora": "Cowork is in research preview. Learn how to use it safely.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-207",
+  "tipo": "principio",
+  "contenuto": "Cowork permette di lanciare ed eseguire più task/agenti indipendenti in parallelo, ciascuno visibile come voce separata nella lista \"Active tasks\", senza dover attendere il completamento del primo prima di avviarne un altro.",
+  "fonte": "DI5aWJiFAt8#85:42 (avvio di un secondo agente in parallelo) + voce 85:42-86:12",
+  "frame": "frame-0858.png",
+  "ancora": "mando un altro agente in parallelo, quindi una nuova task",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-208",
+  "tipo": "dato",
+  "contenuto": "La funzione \"Guest pass\" di Cowork permette di regalare a un amico una settimana gratuita del prodotto; se l'invitato si abbona, chi ha invitato riceve 10 euro di utilizzo extra.",
+  "fonte": "DI5aWJiFAt8#85:42 (riquadro Guest pass in home page) + voce 85:42-86:12",
+  "frame": "frame-0858.png",
+  "ancora": "Send a friend a free week of Cowork. If they love it and subscribe, you'll get €10 of extra usage.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-209",
+  "tipo": "principio",
+  "contenuto": "Quando l'utente chiede esplicitamente di non usare nessuna skill, il modello sopprime deliberatamente anche i trigger impliciti presenti nel messaggio (es. la parola \"ciao\" che normalmente attiverebbe una skill di saluto) e risponde direttamente senza alcuna skill.",
+  "fonte": "DI5aWJiFAt8#86:12 (blocco Thinking, richiesta post LinkedIn senza skill) + voce 86:12-86:42",
+  "frame": "frame-0863.png",
+  "ancora": "They said \"ciao\" but also said not to use any skill, so I won't trigger the saluto skill either.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-210",
+  "tipo": "principio",
+  "contenuto": "Una skill ben progettata può interrogare l'utente con domande a scelta multipla mirate (es. punti chiave, tono, presenza di una CTA) prima di generare l'output, invece di produrre subito un contenuto generico.",
+  "fonte": "DI5aWJiFAt8#86:42 (modale a scelta multipla della skill /linkedin-post) + voce 86:42-87:12",
+  "frame": "frame-0868.png",
+  "ancora": "Quali sono i punti chiave che vuoi toccare nel post sulla vita?",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-209", "tipo": "alternativa-a", "perche": "mostra il comportamento opposto rispetto alla generazione diretta senza skill del caso precedente"}
+  ]
+ },
+ {
+  "id": "KA-211",
+  "tipo": "struttura",
+  "contenuto": "Un file SKILL.md dichiara un campo \"Description\" che specifica le condizioni di attivazione e i casi d'uso della skill, e un campo \"Allowed tools\" che limita quali strumenti la skill può effettivamente invocare durante l'esecuzione.",
+  "fonte": "DI5aWJiFAt8#87:36 (contenuto integrale di SKILL.md per linkedin-post) + voce 87:36-87:42",
+  "frame": "frame-0877.png",
+  "ancora": "Description ⓘ\": \"Generate a LinkedIn post in Gio's writing style...\" / \"Allowed tools\": \"Bash, Read, Write, Edit, AskUserQuestion\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-212",
+  "tipo": "esempio",
+  "contenuto": "Un elenco \"Allowed tools\" concreto per una skill può comprendere Bash, Read, Write, Edit e AskUserQuestion.",
+  "fonte": "DI5aWJiFAt8#87:36 (campo Allowed tools di linkedin-post) + voce 87:36-87:42",
+  "frame": "frame-0877.png",
+  "ancora": "Allowed tools\": \"Bash, Read, Write, Edit, AskUserQuestion\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-211", "tipo": "esempio-di", "perche": "è un'istanza concreta del campo Allowed tools definito in KA-211"}
+  ]
+ },
+ {
+  "id": "KA-213",
+  "tipo": "dato",
+  "contenuto": "Lo strumento AskUserQuestion, quando elencato tra gli \"Allowed tools\" di una skill, è ciò che genera concretamente il modale a scelta multipla mostrato all'utente durante l'esecuzione.",
+  "fonte": "DI5aWJiFAt8#87:36 (SKILL.md di linkedin-post, Allowed tools) + voce 87:36-87:42",
+  "frame": "frame-0877.png",
+  "ancora": "è lo strumento AskUserQuestion a spiegare tecnicamente da dove nasce il modale a scelta multipla",
+  "confidenza": "dedotto",
+  "relazioni": [
+   {"verso": "KA-210", "tipo": "definisce", "perche": "spiega il meccanismo tecnico dietro il comportamento osservato in KA-210"}
+  ]
+ },
+ {
+  "id": "KA-214",
+  "tipo": "esempio",
+  "contenuto": "Una skill può racchiudere ed eseguire uno script backend Python esterno (es. generate.py, invocato via Bash), e richiedere che l'utente imposti in anticipo una variabile d'ambiente come ANTHROPIC_API_KEY prima del primo utilizzo.",
+  "fonte": "DI5aWJiFAt8#87:36 (sezione First-Time Setup di SKILL.md) + voce 87:36-87:42",
+  "frame": "frame-0877.png",
+  "ancora": "Ensure the ANTHROPIC_API_KEY environment variable is set. If not, ask the user for it and export it",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-215",
+  "tipo": "principio",
+  "contenuto": "Una skill di generazione contenuti personalizza l'output usando il contesto già noto dell'utente (es. scrive il post in inglese perché il profilo LinkedIn dell'utente è in inglese) anche quando la richiesta stessa è stata formulata in un'altra lingua.",
+  "fonte": "DI5aWJiFAt8#87:42 (post LinkedIn generato in inglese) + voce 87:42-88:12",
+  "frame": "frame-0878.png",
+  "ancora": "il post è in inglese perché il mio LinkedIn è in inglese prima di tutto e non è in italiano",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-216",
+  "tipo": "principio",
+  "contenuto": "Una skill di scrittura può apprendere e riprodurre uno stile di formattazione personale (es. spaziatura corta ad effetto \"scannability\") analizzando un insieme di post di riferimento dell'utente caricati al momento dell'esecuzione.",
+  "fonte": "DI5aWJiFAt8#86:42 (caricamento dei post di riferimento) + voce 86:42-87:12",
+  "frame": "frame-0873.png",
+  "ancora": "I have the reference posts loaded (18 posts, plenty of style data).",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-217",
+  "tipo": "principio",
+  "contenuto": "Dopo aver generato un contenuto, il modello propone di norma di iterare ulteriormente su di esso (cambiare tono, accorciare, allungare, riscrivere parti specifiche) invece di trattare la prima bozza come definitiva.",
+  "fonte": "DI5aWJiFAt8#88:12 (fine del post LinkedIn generato) + voce 88:12-88:42",
+  "frame": "frame-0883.png",
+  "ancora": "Vuoi che cambi qualcosa? Posso aggiustare il tono, accorciare, allungare, o riscrivere parti specifiche.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-218",
+  "tipo": "struttura",
+  "contenuto": "Cowork include un marketplace interno (\"Directory\") dove le skill possono essere cercate, filtrate e ordinate (es. per popolarità o novità), con una distinzione visiva chiara tra skill già installate (icona a ingranaggio) e skill disponibili da aggiungere (icona \"+\").",
+  "fonte": "DI5aWJiFAt8#88:42 (modale Directory, marketplace skill) + voce 88:42-89:00",
+  "frame": "frame-0888.png",
+  "ancora": "potete anche vedere quali avete installato e quali no... ordinarle, insomma, tra le più popolari, le più nuove",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-219",
+  "tipo": "struttura",
+  "contenuto": "La scheda di dettaglio di ogni skill installata mostra sempre chi l'ha aggiunta (\"Added by\"), quando è stata aggiornata l'ultima volta (\"Last updated\") e chi può invocarla (\"Invoked by\": User or Claude).",
+  "fonte": "DI5aWJiFAt8#89:00 (dettaglio della skill saluto in Customize) + voce 89:00-89:30",
+  "frame": "frame-0891.png",
+  "ancora": "\"Added by\" → \"You\"; \"Last updated\" → \"Apr 7, 2026\"; \"Invoked by\" → \"User or Claude\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-220",
+  "tipo": "definizione",
+  "contenuto": "Le skill disponibili in Cowork sono raggruppate in \"Personal skills\" (create dall'utente, es. saluto) e \"Built-in skills\" (preinstallate dalla piattaforma, es. schedule, context).",
+  "fonte": "DI5aWJiFAt8#89:30 (colonna Skills, sezione Built-in skills) + voce 89:30-90:00",
+  "frame": "frame-0896.png",
+  "ancora": "abbiamo queste built in skills, ok? Quindi cose che sono già dentro.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-221",
+  "tipo": "principio",
+  "contenuto": "Un comando e una skill si invocano esattamente allo stesso modo, tramite lo stesso simbolo \"/\" digitato all'inizio del messaggio, senza alcuna distinzione visiva al momento della chiamata.",
+  "fonte": "DI5aWJiFAt8#90:00 (digitazione di /schedule in home page) + voce 90:00-90:30",
+  "frame": "frame-0901.png",
+  "ancora": "un comando e una skill vengono chiamati allo stesso modo perché è sempre questo forward slash qui",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-222",
+  "tipo": "definizione",
+  "contenuto": "Concettualmente una skill è un file scritto in markdown con istruzioni (tipicamente creato dall'utente), mentre un comando è una funzionalità built-in già automatizzata dalla piattaforma (es. /schedule).",
+  "fonte": "DI5aWJiFAt8#90:30 (menu a tendina con skill e comandi mescolati) + voce 90:30-91:00",
+  "frame": "frame-0906.png",
+  "ancora": "quando parliamo di skill, noi parliamo di un file... scritto in markdown... Quando parliamo di un comando, parliamo di una serie di istruzioni che sono già state automatizzate",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-221", "tipo": "precede", "perche": "la distinzione concettuale viene spiegata subito dopo aver mostrato che si invocano allo stesso modo"}
+  ]
+ },
+ {
+  "id": "KA-223",
+  "tipo": "dato",
+  "contenuto": "La descrizione ufficiale del comando /schedule, mostrata in un tooltip dell'interfaccia, è: \"Create a scheduled task that can be run on demand or automatically on an interval.\"",
+  "fonte": "DI5aWJiFAt8#91:00 (tooltip del comando /schedule) + voce 91:00-91:30",
+  "frame": "frame-0911.png",
+  "ancora": "Create a scheduled task that can be run on demand or automatically on an interval.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-222", "tipo": "esempio-di", "perche": "è l'esempio concreto del lato \"comando\" della distinzione"}
+  ]
+ },
+ {
+  "id": "KA-224",
+  "tipo": "procedura",
+  "contenuto": "Digitare \"/schedule\" seguito dal nome di una skill esistente (es. \"/schedule la skill /saluto\") avvia il flusso di pianificazione di quella skill, e il sistema chiede in automatico con quale frequenza deve girare, proponendo opzioni come \"Every morning\", \"On demand only\", \"Once, right now\" o \"Something else\".",
+  "fonte": "DI5aWJiFAt8#91:30 (modale \"When should the saluto skill run?\") + voce 91:30-91:42",
+  "frame": "frame-0916.png",
+  "ancora": "\"When should the saluto skill run?\" ... 1 — \"Every morning\" ... 2 — \"On demand only\" ... 3 — \"Once, right now\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-223", "tipo": "applica", "perche": "applica concretamente la funzione dichiarata nella descrizione ufficiale del comando"}
+  ]
+ },
+ {
+  "id": "KA-225",
+  "tipo": "struttura",
+  "contenuto": "Creare una scheduled task dalla pagina dedicata \"Scheduled tasks\" richiede di compilare i campi obbligatori Name, Description e Prompt, con in più una Frequency opzionale (default \"Manual\") e una sezione \"More options\" comprimibile.",
+  "fonte": "DI5aWJiFAt8#91:42 (modale Create scheduled task) + voce 91:42-92:12",
+  "frame": "frame-0918.png",
+  "ancora": "\"Name *\" ... \"Description *\" ... \"Prompt *\" ... \"Frequency\" — menu a tendina impostato su \"Manual\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-226",
+  "tipo": "dato",
+  "contenuto": "Il Name assegnato a una scheduled task viene convertito automaticamente in uno slug adatto a un identificativo/URL (es. \"Post su LinkedIn.\" diventa \"post-su-linkedin\").",
+  "fonte": "DI5aWJiFAt8#92:12 (campo Name compilato) + voce 92:12-92:18",
+  "frame": "frame-0923.png",
+  "ancora": "Will be saved as \"post-su-linkedin\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-227",
+  "tipo": "procedura",
+  "contenuto": "Il campo Prompt di una scheduled task può richiamare direttamente una skill esistente citando il suo comando slash all'interno del testo (es. \"utilizza la skill /linkedin-post\").",
+  "fonte": "DI5aWJiFAt8#92:12 (campo Prompt in composizione) + voce 92:12-92:18",
+  "frame": "frame-0923.png",
+  "ancora": "utilizza la skill /linkedin-post",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-228",
+  "tipo": "avvertimento",
+  "contenuto": "Le scheduled task girano solo mentre il computer dell'utente è acceso; per questo l'interfaccia espone un interruttore dedicato \"Keep awake\" per impedire che la macchina vada in stand-by durante un'esecuzione programmata.",
+  "fonte": "DI5aWJiFAt8#92:18 (toast di conferma + banner informativo) + voce 92:18-92:30",
+  "frame": "frame-0924.png",
+  "ancora": "Scheduled tasks only run while your computer is awake.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-229",
+  "tipo": "dato",
+  "contenuto": "Una volta che una skill referenziata in una scheduled task fa parte di un plugin installato, il suo riferimento a comando slash si aggiorna automaticamente in forma con namespace (es. \"/linkedin-post\" diventa \"/social-media-manager:linkedin-post\").",
+  "fonte": "DI5aWJiFAt8#92:30 (modale Edit scheduled task, campo Prompt) + voce 92:30-92:42",
+  "frame": "frame-0926.png",
+  "ancora": "utilizza la skill /social-media-manager:linkedin-post per cerare un post su LinkedIn sulla vita.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-230",
+  "tipo": "dato",
+  "contenuto": "Le scheduled task supportano una frequenza \"Daily\" con un orario fisso di esecuzione impostabile (es. 09:00).",
+  "fonte": "DI5aWJiFAt8#92:30 (campi Frequency e orario nel modale Edit) + voce 92:30-92:42",
+  "frame": "frame-0926.png",
+  "ancora": "\"Frequency\": cambiato in \"Daily\" ... Campo orario sotto la frequenza: \"09:00\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-231",
+  "tipo": "avvertimento",
+  "contenuto": "Le scheduled task vengono eseguite con un ritardo casuale di alcuni minuti rispetto all'orario impostato, introdotto deliberatamente per motivi di performance del server.",
+  "fonte": "DI5aWJiFAt8#92:30 (testo di aiuto sotto il campo orario) + voce 92:30-92:42",
+  "frame": "frame-0926.png",
+  "ancora": "Scheduled tasks use a randomized delay of several minutes for server performance.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-232",
+  "tipo": "struttura",
+  "contenuto": "La pagina di dettaglio di una scheduled task mostra il suo stato (es. \"Active\"), la sezione \"Instructions\" con il prompt configurato, l'impostazione \"Repeats\" e una sezione \"Always allowed\" con le autorizzazioni concesse durante le esecuzioni passate.",
+  "fonte": "DI5aWJiFAt8#92:42 (pagina di dettaglio \"Post su linkedin\") + voce 92:42-93:12",
+  "frame": "frame-0928.png",
+  "ancora": "\"Repeats\": \"Manual only\" in grassetto. Sezione \"Always allowed\"... \"Approvals you grant during a run appear here.\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-233",
+  "tipo": "principio",
+  "contenuto": "Conviene perfezionare la qualità di una skill prima di trasformarla in una task pianificata/automatizzata, perché la pianificazione si limita a ripetere fedelmente ciò che la skill già fa.",
+  "fonte": "DI5aWJiFAt8#93:12 (chiusura del discorso sullo scheduling) + voce 93:12-93:42",
+  "frame": "frame-0933.png",
+  "ancora": "quanto importante è avere una skill di qualità prima di fare queste cose",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-224", "tipo": "motiva", "perche": "il rischio di ripetere errori su scala motiva la cura della qualità prima di schedulare"}
+  ]
+ },
+ {
+  "id": "KA-234",
+  "tipo": "definizione",
+  "contenuto": "I \"Connectors\" permettono a Claude di leggere e scrivere direttamente sugli strumenti e le app esterne che l'utente già usa (es. Canva, Google Drive, Gmail, Google Calendar, GitHub), invece di limitarsi alla sola conversazione testuale.",
+  "fonte": "DI5aWJiFAt8#93:42 (pannello Customize, introduzione ai Connectors) + voce 93:42-94:12",
+  "frame": "frame-0938.png",
+  "ancora": "Let Claude read and write to the tools you already use.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-235",
+  "tipo": "struttura",
+  "contenuto": "Il pannello \"Customize\" di Cowork offre tre punti d'ingresso per estendere le capacità di Claude: collegare le proprie app (connectors), creare nuove skill, e sfogliare i plugin già pronti.",
+  "fonte": "DI5aWJiFAt8#93:42 (pannello Customize Claude, tre card) + voce 93:42-94:12",
+  "frame": "frame-0938.png",
+  "ancora": "\"Connect your apps\" ... \"Create new skills\" ... \"Browse plugins\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-236",
+  "tipo": "struttura",
+  "contenuto": "Ogni connector espone permessi granulari (\"Tool permissions\") divisi in strumenti \"Interactive\" (azioni che modificano qualcosa, es. generare un design) e strumenti \"Read-only\" (es. leggere le informazioni di un design), ciascuno impostabile a un livello di autorizzazione come \"Always allow\".",
+  "fonte": "DI5aWJiFAt8#94:12 (dettaglio del connector Canva, Tool permissions) + voce 94:12-94:36",
+  "frame": "frame-0943.png",
+  "ancora": "\"Interactive tools [4]\"... \"Read-only tools [14]\"... \"🛡 Always allow ⌄\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-234", "tipo": "parte-di", "perche": "i permessi granulari fanno parte del funzionamento generale dei connector"}
+  ]
+ },
+ {
+  "id": "KA-237",
+  "tipo": "procedura",
+  "contenuto": "Collegare un nuovo connector (es. Google Calendar) segue un flusso di autenticazione OAuth standard: cliccare \"Connetti\", scegliere l'account Google da un elenco, e prendere visione di privacy policy e termini di servizio.",
+  "fonte": "DI5aWJiFAt8#94:36 (pagina di login Google per Claude for Google Calendar) + voce 94:36-94:42",
+  "frame": "frame-0947.png",
+  "ancora": "andiamo qua dentro, premiamo connetti e quindi questo è un normalissimo processo... connettiamo un paio di passaggi e questo è connesso",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-234", "tipo": "esempio-di", "perche": "è l'esempio pratico di come si collega un connector"}
+  ]
+ },
+ {
+  "id": "KA-238",
+  "tipo": "dato",
+  "contenuto": "Durante questa demo live di collegamento a Google, viene rivelato il nome del relatore del corso: Giovanni Beggiato.",
+  "fonte": "DI5aWJiFAt8#94:36 (schermata di scelta account Google) + voce 94:36-94:42",
+  "frame": "frame-0947.png",
+  "ancora": "\"Giovanni Beggiato\" — beggiato.linkedin@gmail.com",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-239",
+  "tipo": "principio",
+  "contenuto": "La pagina di un connector non ancora collegato elenca esplicitamente quali plugin installati lo richiedono per funzionare (es. Google Calendar richiesto dai plugin Productivity, Sales e Marketing), rendendo visibile la dipendenza prima ancora di connetterlo.",
+  "fonte": "DI5aWJiFAt8#94:42 (dettaglio Google Calendar non connesso) + voce 94:42-95:12",
+  "frame": "frame-0948.png",
+  "ancora": "This connector is required by the following plugins: Productivity, Sales, Marketing",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-240",
+  "tipo": "principio",
+  "contenuto": "Un'unica richiesta può combinare esplicitamente un connector e una skill insieme (es. \"Utilizza Canva, il connettore,... guardati la skill /brand-guidelines\"), permettendo a Claude di usare entrambe le capacità nello stesso task.",
+  "fonte": "DI5aWJiFAt8#95:42 (prompt che combina Canva e /brand-guidelines) + voce 95:42-96:12",
+  "frame": "frame-0958.png",
+  "ancora": "Utilizza Canva, il connettore, per crearmi un PDF su Canva... Per farlo, puoi guardarti la skill /brand-guidelines",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-234", "tipo": "applica"},
+   {"verso": "KA-211", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-241",
+  "tipo": "procedura",
+  "contenuto": "Generare un design tramite un connector come Canva segue una pipeline a tre passi resa visibile nel pannello \"Progress\": generare le opzioni di design, far scegliere all'utente la candidata preferita, esportare quella scelta (es. in PDF).",
+  "fonte": "DI5aWJiFAt8#96:42 (pannello Progress con i 3 step della pipeline Canva) + voce 96:42-97:12",
+  "frame": "frame-0968.png",
+  "ancora": "1. \"Generating the one-page design on Canva\" 2. \"Let user pick the preferred candidate design\" 3. \"Export the design as PDF\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-242",
+  "tipo": "principio",
+  "contenuto": "Nella generazione di design visuali tramite connector, Claude produce più opzioni candidate (in questo esempio 4) tra cui l'utente può scegliere in anteprima, invece di consegnare direttamente un risultato unico.",
+  "fonte": "DI5aWJiFAt8#97:12 (4 opzioni generate da Canva) + voce 97:12-97:18",
+  "frame": "frame-0973.png",
+  "ancora": "Ecco 4 opzioni generate da Canva. Dai un'occhiata alle anteprime:",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-241", "tipo": "parte-di", "perche": "è il dettaglio del primo passo della pipeline a 3 step"}
+  ]
+ },
+ {
+  "id": "KA-243",
+  "tipo": "principio",
+  "contenuto": "Un design generato tramite un connector come Canva può essere aperto e verificato direttamente sul sito del provider (canva.com), a conferma che si tratta di un file reale e modificabile, non di una semplice anteprima interna a Cowork.",
+  "fonte": "DI5aWJiFAt8#97:18 (documento aperto realmente su canva.com) + voce 97:18-97:24",
+  "frame": "frame-0974.png",
+  "ancora": "Open link, verifichiamo effettivamente che questo sia su Canva. Eccoci qua.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-244",
+  "tipo": "definizione",
+  "contenuto": "Un \"plugin\" è un pacchetto che racchiude più elementi costitutivi — skill e comandi, ed eventualmente anche connector — in un unico insieme installabile, pensato per uno scopo o un ruolo specifico.",
+  "fonte": "DI5aWJiFAt8#99:48 (diagramma manoscritto PLUGIN → skill/comandi) + voce 99:48-100:12",
+  "frame": "frame-0999.png",
+  "ancora": "hanno al loro interno... delle skill... hanno al loro interno dei comandi e possono avere al loro interno anche",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-211", "tipo": "parte-di", "perche": "un plugin è un contenitore che include skill definite come in KA-211"}
+  ]
+ },
+ {
+  "id": "KA-245",
+  "tipo": "dato",
+  "contenuto": "Oltre alle skill personali, Anthropic pubblica un catalogo di plugin ufficiali organizzati per funzione aziendale (Productivity, Marketing, Sales, Design, Data, Engineering, Finance, Product management, Operations, Legal), ciascuno scaricato centinaia di migliaia di volte.",
+  "fonte": "DI5aWJiFAt8#100:12 (Directory, tab Anthropic & Partners, tab Plugins) + voce 100:12-100:42",
+  "frame": "frame-1003.png",
+  "ancora": "\"Productivity\" — Anthropic • ⬇401.5K ... \"Marketing\" — Anthropic • ⬇304.7K ... \"Sales\" — Anthropic • ⬇200.3K",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-244", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-246",
+  "tipo": "esempio",
+  "contenuto": "Il plugin ufficiale \"Sales\" di Anthropic bundla 9 skill (es. /call-prep, /forecast, /draft-outreach, /account-research) e 14 connector esterni (Slack, HubSpot, Clay, ZoomInfo, Notion, Atlassian, Fireflies, ecc.) collegati tramite Model Context Protocol (MCP).",
+  "fonte": "DI5aWJiFAt8#100:42 (dettaglio plugin Sales nella Directory) + voce 100:42-100:54",
+  "frame": "frame-1008.png",
+  "ancora": "Sezione \"Skills\" con badge numerico \"9\"... Sezione \"Connectors\" con badge numerico \"14\"... connected via the Model Context Protocol (MCP)",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-245", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-247",
+  "tipo": "struttura",
+  "contenuto": "La scheda di dettaglio di un plugin installato mostra metadati (Source, Version, Author, Last updated) e una descrizione, oltre a una griglia delle skill che racchiude, ciascuna invocabile singolarmente tramite il proprio comando slash.",
+  "fonte": "DI5aWJiFAt8#100:54 (dettaglio plugin \"Social media manager\") + voce 100:54-101:24",
+  "frame": "frame-1010.png",
+  "ancora": "\"Source\" → \"Uploaded from file\", \"Version\" → \"0.1.0\", \"Author\" → \"Gio\", \"Last updated\" → \"12 days ago\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-244", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-248",
+  "tipo": "principio",
+  "contenuto": "Importare un plugin equivale, metaforicamente, a infilare la chiavetta USB di un amico nel proprio computer: si eredita immediatamente un insieme di capacità/skill già pronte, costruite da qualcun altro.",
+  "fonte": "DI5aWJiFAt8#101:54 (scrittura del file daily-briefing-demo.html) + voce 101:54-102:24",
+  "frame": "frame-1020.png",
+  "ancora": "immaginatevi letteralmente come se voi aveste preso la chiavetta di un amico e l'aveste infilata nel vostro computer",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-244", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-249",
+  "tipo": "esempio",
+  "contenuto": "Una skill di tipo \"daily briefing\" eseguita senza fonti dati collegate genera comunque un report demo completo con dati fittizi, così l'utente vede subito il formato esatto dell'output prima di collegare dati reali.",
+  "fonte": "DI5aWJiFAt8#102:24 (anteprima HTML del Daily Sales Briefing demo) + voce 102:24-102:30",
+  "frame": "frame-1025.png",
+  "ancora": "Here's the demo with fictional data so you can see the full format in action.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-250",
+  "tipo": "struttura",
+  "contenuto": "Un report di daily briefing vendite si struttura in: priorità principale in evidenza, numeri di pipeline a colpo d'occhio, riunioni del giorno con note di preparazione, trattative che richiedono attenzione, priorità email (da rispondere / in attesa di risposta) e una lista numerata di azioni consigliate.",
+  "fonte": "DI5aWJiFAt8#102:24 (descrizione delle sezioni del daily briefing) + voce 102:24-102:30",
+  "frame": "frame-1025.png",
+  "ancora": "priority call-out, pipeline numbers at a glance, meetings with prep notes, deal alerts, email priorities, and a ranked action list",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-249", "tipo": "parte-di", "perche": "descrive la struttura interna del report demo di KA-249"}
+  ]
+ },
+ {
+  "id": "KA-251",
+  "tipo": "principio",
+  "contenuto": "Una volta collegati gli strumenti reali (calendario, CRM, email), le sezioni generate da una skill di tipo briefing si popolano automaticamente con dati veri invece di richiedere digitazione manuale da parte dell'utente.",
+  "fonte": "DI5aWJiFAt8#102:24 (nota finale sulla versione demo del briefing) + voce 102:24-102:30",
+  "frame": "frame-1025.png",
+  "ancora": "When you connect real tools (calendar, CRM, email), these sections fill in automatically instead of you having to type anything.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-249", "tipo": "alternativa-a", "perche": "descrive la modalità con dati reali, alternativa alla modalità demo con dati fittizi"}
+  ]
+ },
+ {
+  "id": "KA-252",
+  "tipo": "procedura",
+  "contenuto": "Un nuovo plugin può essere creato in due modi equivalenti: descrivendolo in linguaggio naturale a Claude (come per una skill) oppure tramite il comando dedicato \"Create plugin\".",
+  "fonte": "DI5aWJiFAt8#102:36 (menu Browse plugins / Create plugin nel pannello Customize) + voce 102:36-102:48",
+  "frame": "frame-1027.png",
+  "ancora": "avete la possibilità di crearvi il vostro sempre... parlando con cloud... o con lo slash create plugin",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-244", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-253",
+  "tipo": "procedura",
+  "contenuto": "Oltre al catalogo ufficiale, si può aggiungere un marketplace di plugin personalizzato indicando un repository GitHub nel formato \"owner/repo\" oppure un URL git generico.",
+  "fonte": "DI5aWJiFAt8#102:48 (modale Add marketplace) + voce 102:48-102:54",
+  "frame": "frame-1029.png",
+  "ancora": "A GitHub `owner/repo` or a git repository URL.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-254",
+  "tipo": "avvertimento",
+  "contenuto": "I plugin installati da marketplace di terzi non sono controllati da Anthropic, che non può verificare che funzionino come previsto o che non cambino nel tempo: vanno quindi valutati con fiducia prima di installarli, aggiornarli o usarli.",
+  "fonte": "DI5aWJiFAt8#102:48 (riquadro di avviso rosso nel modale Add marketplace) + voce 102:48-102:54",
+  "frame": "frame-1029.png",
+  "ancora": "Plugins installed from marketplaces are not controlled by Anthropic, and Anthropic cannot verify that they will work as intended or that they won't change.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-253", "tipo": "motiva", "perche": "il rischio descritto qui è il motivo per cui la procedura va usata con cautela"}
+  ]
+ },
+ {
+  "id": "KA-255",
+  "tipo": "dato",
+  "contenuto": "Anthropic mantiene un repository GitHub ufficiale (\"claude-plugins-official\") come catalogo curato di plugin di qualità per Claude Code, distinguendo i plugin \"interni\" sviluppati da Anthropic dai plugin di terze parti/community (\"external_plugins\").",
+  "fonte": "DI5aWJiFAt8#103:06 (README del repository anthropics/claude-plugins-official) + voce 103:06-103:12",
+  "frame": "frame-1032.png",
+  "ancora": "Internal plugins developed and maintained by Anthropic / external_plugins - Third-party plugins from partners and the community",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-254", "tipo": "alternativa-a", "perche": "è la fonte curata e più affidabile rispetto a un marketplace di terzi non verificato"}
+  ]
+ },
+ {
+  "id": "KA-256",
+  "tipo": "principio",
+  "contenuto": "Claude opera dentro una sandbox, una \"scatola sicura\" con confini ben definiti: questa separazione conta soprattutto quando si lavora con più clienti diversi (es. cliente A e cliente B) i cui dati e accessi devono restare isolati tra loro.",
+  "fonte": "DI5aWJiFAt8#104:18 (annotazione grafica che racchiude l'intera interfaccia) + voce 104:18-104:48",
+  "frame": "frame-1044.png",
+  "ancora": "questa è la nostra ehm sandbox... la nostra scatola sicura dentro la quale Cloud opera e opera dentro dei confini ben definiti",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-257",
+  "tipo": "definizione",
+  "contenuto": "\"Computer Use\" è una modalità in cui Claude prende il controllo diretto del mouse e della tastiera del computer reale dell'utente, uscendo dal normale ambiente conversazionale per interagire con il sistema operativo e le applicazioni installate.",
+  "fonte": "DI5aWJiFAt8#107:00 (Claude clicca col mouse reale nel Finder) + voce 107:00-107:12",
+  "frame": "frame-1071.png",
+  "ancora": "cloud sta cliccando letteralmente con il mio mouse",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-258",
+  "tipo": "regola",
+  "contenuto": "Per attivare Computer Use su una richiesta, bisogna anteporre o posporre alla richiesta stessa la frase letterale \"computer use\".",
+  "fonte": "DI5aWJiFAt8#106:12 (richiesta di aprire un file nei download via computer use) + voce 106:12-106:30",
+  "frame": "frame-1063.png",
+  "ancora": "dovete preporre o postporre la la frase computer use alla vostra alla vostra richiesta per poterlo utilizzare",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-257", "tipo": "parte-di", "perche": "è la regola operativa per attivare la modalità definita in KA-257"}
+  ]
+ },
+ {
+  "id": "KA-259",
+  "tipo": "dato",
+  "contenuto": "Mentre Computer Use è attivo, l'interfaccia mostra un indicatore visivo arancione acceso con l'etichetta \"Claude is using your computer\" e un pulsante \"Stop\" per interromperlo in qualunque momento.",
+  "fonte": "DI5aWJiFAt8#106:30 (barra arancione di stato durante Computer Use) + voce 106:30-107:00",
+  "frame": "frame-1066.png",
+  "ancora": "\"Claude is using your computer\" e un pulsante \"Stop\" in alto a destra",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-257", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-260",
+  "tipo": "avvertimento",
+  "contenuto": "Computer Use è considerato ancora troppo acerbo per un uso aziendale serio, perché richiede che il computer resti sempre acceso, l'app sempre aperta e funzionante, e impedisce all'utente di fare altro sul computer mentre è in esecuzione.",
+  "fonte": "DI5aWJiFAt8#107:00 (commento sui limiti di Computer Use) + voce 107:00-107:12",
+  "frame": "frame-1071.png",
+  "ancora": "richiede il computer sempre acceso, l'app sempre funzionante e aperta ed inoltre non potete fare grandi altre cose con il computer",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-261",
+  "tipo": "esempio",
+  "contenuto": "Poiché Computer Use guida realmente il cursore e la tastiera, un'altra applicazione in esecuzione può rubare il focus della finestra durante il task e interferire con l'automazione, costringendo Claude a fermarsi, recuperare e ritentare.",
+  "fonte": "DI5aWJiFAt8#107:00 (log: un'app chiamata Presentify interferisce) + voce 107:00-107:12",
+  "frame": "frame-1071.png",
+  "ancora": "Sembra che un'app chiamata \"Presentify\" abbia preso",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-257", "tipo": "parte-di", "perche": "mostra un effetto collaterale reale del controllo diretto di mouse e tastiera definito in KA-257"}
+  ]
+ },
+ {
+  "id": "KA-262",
+  "tipo": "regola",
+  "contenuto": "La prima volta che Computer Use deve agire dentro una determinata applicazione non ancora autorizzata (es. Preview), Claude si ferma e chiede esplicitamente l'accesso invece di procedere senza permesso.",
+  "fonte": "DI5aWJiFAt8#107:54 (Claude blocca l'apertura in Preview per mancata autorizzazione) + voce 107:54-108:12",
+  "frame": "frame-1080.png",
+  "ancora": "Il file si è aperto in Preview, ma Preview non è tra le app autorizzate. Devo chiedere l'accesso.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-257", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-263",
+  "tipo": "esempio",
+  "contenuto": "Un caso d'uso pratico è essersi dimenticati di caricare un file (es. una thumbnail o un video) in una cartella condivisa con un collaboratore: più tardi si può chiedere a Claude di recuperare quel file, caricarlo su cloud storage e notificare il collaboratore, ma serve comunque il computer acceso, l'app aperta e non in sleep mode.",
+  "fonte": "DI5aWJiFAt8#107:42 (esempio di utilizzo remoto raccontato a voce) + voce 107:42-108:54",
+  "frame": "frame-1085.png",
+  "ancora": "vai prendi nella cartella X il mio video Y, caricamelo nel Drive e poi notifica l'editor che tutto è fatto.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-264", "tipo": "motiva", "perche": "questo scenario di necessità introduce e motiva la funzione Dispatch spiegata subito dopo"}
+  ]
+ },
+ {
+  "id": "KA-264",
+  "tipo": "definizione",
+  "contenuto": "\"Dispatch\" è una funzione che permette di controllare Claude e verificarne lo stato da qualunque posto (es. dal telefono), proseguendo una task o una sessione di codice in un unico filo continuo.",
+  "fonte": "DI5aWJiFAt8#109:18 (pannello Dispatch aperto per la prima volta) + voce 109:18-109:36",
+  "frame": "frame-1094.png",
+  "ancora": "Dispatch to Claude and check in from anywhere—a task, a code session, in one continuous thread.",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-265",
+  "tipo": "struttura",
+  "contenuto": "Una sessione Dispatch espone impostazioni configurabili: \"Keep awake\" (evita lo stand-by della macchina), \"Allow all browser actions\", \"Computer use\" (attiva/disattiva) e \"Code permissions\" (es. \"Auto accept edits\" oppure \"Bypass permissions\").",
+  "fonte": "DI5aWJiFAt8#109:18 (impostazioni della sessione Dispatch) + voce 109:18-109:36",
+  "frame": "frame-1094.png",
+  "ancora": "\"Keep awake\"... \"Allow all browser actions\"... \"Computer use\"... \"Code permissions\"... \"Auto accept edits\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-264", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-266",
+  "tipo": "dato",
+  "contenuto": "Dispatch può inviare una notifica push sul telefono dell'utente ogni volta che Claude scrive un nuovo messaggio nel filo di conversazione.",
+  "fonte": "DI5aWJiFAt8#109:18 (banner di notifica push nel pannello Dispatch) + voce 109:18-109:36",
+  "frame": "frame-1094.png",
+  "ancora": "Get a push notification on your phone when Claude messages you here.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-264", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-267",
+  "tipo": "numero",
+  "contenuto": "Al momento della registrazione del corso, i piani Individual di Claude sono: Free; Pro a 17$/mese con sconto per abbonamento annuale (200$ pagati in anticipo, 20$/mese se fatturato mensilmente), che include Claude Code e Claude Cowork; Max a partire da 100$/mese con 5x o 20x più utilizzo rispetto a Pro e limiti di output più alti.",
+  "fonte": "DI5aWJiFAt8#109:48 (pagina claude.com/pricing) + voce 109:48-109:54",
+  "frame": "frame-1099.png",
+  "ancora": "\"Pro\"... prezzo \"$17\"... \"Max\"... prezzo \"From $100\"... \"Choose 5x or 20x more usage than Pro*\"",
+  "confidenza": "osservato",
+  "relazioni": []
+ },
+ {
+  "id": "KA-268",
+  "tipo": "dato",
+  "contenuto": "L'app desktop di Claude è disponibile per macOS, Windows e Windows (ARM64); quella mobile per iOS e Android; l'abbinamento tra le due app è ciò che rende possibile il controllo del computer da telefono tramite Dispatch.",
+  "fonte": "DI5aWJiFAt8#110:12 (pagina claude.com/download, sezione Get started) + voce 110:12-110:24",
+  "frame": "frame-1103.png",
+  "ancora": "\"macOS\" — \"Download\", \"Windows\" — \"Download\", \"Windows (arm 64)\" — \"Download\"... \"iOS\" — \"Download\" e \"Android\" — \"Download\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-264", "tipo": "parte-di", "perche": "l'abbinamento desktop-mobile è la base tecnica che rende possibile Dispatch"}
+  ]
+ },
+ {
+  "id": "KA-269",
+  "tipo": "principio",
+  "contenuto": "Se il computer di destinazione risulta offline o irraggiungibile quando arriva un comando Dispatch dal telefono, il sistema mette il comando in coda con il messaggio \"Desktop appears offline. Will run when it reconnects.\" invece di farlo fallire immediatamente.",
+  "fonte": "DI5aWJiFAt8#111:48 (messaggio di stato nel pannello Dispatch mobile) + voce 111:48-112:00",
+  "frame": "frame-1119.png",
+  "ancora": "Desktop appears offline. Will run when it reconnects.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-264", "tipo": "parte-di"}
+  ]
+ },
+ {
+  "id": "KA-270",
+  "tipo": "esempio",
+  "contenuto": "Un flusso Dispatch end-to-end funziona così: un comando dettato dal telefono attiva Computer Use sul desktop reale, che esegue l'azione richiesta (es. aprire un file specifico), e Claude restituisce infine una conferma testuale che descrive cosa ha trovato o fatto.",
+  "fonte": "DI5aWJiFAt8#112:42 (risposta di Claude nel pannello Dispatch dopo l'esecuzione remota) + voce 112:42-112:48",
+  "frame": "frame-1128.png",
+  "ancora": "Fatto! Ho aperto \"thumbnail (12).jpeg\" in Preview. E' la thumbnail \"FULL CONTROL.\" con il logo Cowork e le icone delle app intorno.",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-264", "tipo": "esempio-di"}
+  ]
+ },
+ {
+  "id": "KA-271",
+  "tipo": "avvertimento",
+  "contenuto": "La limitazione più grande attuale del Computer Use pilotato da telefono via Dispatch è che il computer desktop deve restare acceso perché tutto funzioni; il relatore prevede che in futuro questo limite verrà probabilmente risolto.",
+  "fonte": "DI5aWJiFAt8#112:30 (commento sui limiti dopo l'apertura riuscita della thumbnail) + voce 112:30-112:42",
+  "frame": "frame-1126.png",
+  "ancora": "computer deve essere acceso e questa è la più grossa limitazione di adesso. Probabilmente nel futuro verrà risolto",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-260", "tipo": "applica", "perche": "riapplica e restringe al caso Dispatch/mobile la limitazione generale già osservata per Computer Use"}
+  ]
+ },
+ {
+  "id": "KA-272",
+  "tipo": "principio",
+  "contenuto": "Un'istruzione di Computer Use/Dispatch non è limitata a una singola azione fissa: può essere estesa in una catena di più passaggi dentro un'unica richiesta (es. non solo \"apri questo file\" ma \"aprilo, caricalo e mandalo per email\").",
+  "fonte": "DI5aWJiFAt8#112:54 (chiusura dell'esempio della thumbnail) + voce 112:54-113:06",
+  "frame": "frame-1130.png",
+  "ancora": "potuto dire \"Ok, caricala e manda un'email\".",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-257", "tipo": "applica"}
+  ]
+ },
+ {
+  "id": "KA-273",
+  "tipo": "struttura",
+  "contenuto": "Il corso si chiude con una doppia call-to-action su due link distinti: un coaching program 1-1 per imparare a vendere questi servizi AI alle aziende e avviare una propria AI agency nei prossimi 90 giorni, e una risorsa separata per chi vuole invece applicare direttamente queste tecnologie nella propria azienda.",
+  "fonte": "DI5aWJiFAt8#113:30 (chiusura finale del corso in webcam) + voce 112:54-113:30",
+  "frame": "frame-1136.png",
+  "ancora": "il primo link in descrizione che è il link per lavorare in un coaching program 1-1 con me... vi aiuto a cominciare a vendere questi servizi nei prossimi 90 giorni",
+  "confidenza": "osservato",
+  "relazioni": []
+ }
+]

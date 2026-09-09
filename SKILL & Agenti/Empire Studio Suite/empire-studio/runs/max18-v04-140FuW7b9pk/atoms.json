@@ -1,0 +1,962 @@
+[
+ {
+ "id": "KA-001",
+ "tipo": "struttura",
+ "contenuto": "L'intero discorso è incorniciato da una promessa iniziale: una lista di sole quattro emozioni, se attraversate fino in fondo, può cambiare la direzione di un'intera vita in un solo giorno.",
+ "fonte": "140FuW7b9pk#0:00 (talking-head B/N, Jim Rohn davanti a lavagna a fogli) + voce 0:00-0:18",
+ "frame": "frame-001.png",
+ "ancora": "Lasciate che vi dia rapidamente una lista di quattro emozioni che possono cambiare la vostra vita in un giorno... completamente la direzione della tua vita.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-002", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-002",
+ "tipo": "struttura",
+ "contenuto": "La prima delle quattro emozioni annunciate è il Disgusto.",
+ "fonte": "140FuW7b9pk#0:18 (slide pagina di quaderno, elenco emozioni) + voce 0:18",
+ "frame": "frame-004.png",
+ "ancora": "Bene, eccole. Numero uno, disgusto.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-001", "tipo": "parte-di"},
+ {"verso": "KA-014", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-003",
+ "tipo": "definizione",
+ "contenuto": "Il disgusto, nella sua forma più pura, si esprime con la frase «ne ho avuto abbastanza»: è il punto in cui una persona dichiara di non poter più tollerare la propria situazione.",
+ "fonte": "140FuW7b9pk#0:24 (b-roll palude/paesaggio cupo desaturato) + voce 0:24-0:30",
+ "frame": "frame-005.png",
+ "ancora": "Il disgusto dice: 'Ne ho avuto abbastanza.'",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-002", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-004",
+ "tipo": "principio",
+ "contenuto": "Ciò di cui si è «avuto abbastanza» può essere un dettaglio piccolo tanto quanto un dramma enorme: il disgusto non ha bisogno di una causa proporzionata all'effetto che scatena.",
+ "fonte": "140FuW7b9pk#0:36 (b-roll pozza d'acqua sotto la pioggia) + voce 0:36",
+ "frame": "frame-007.png",
+ "ancora": "ciò di cui hai avuto abbastanza può essere qualcosa di piccolo o qualcosa di grande.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-003", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-005",
+ "tipo": "principio",
+ "contenuto": "Il giorno in cui scatta il disgusto e si dice «ne ho avuto abbastanza» non è il giorno in cui qualcosa finisce, ma il giorno in cui qualcosa inizia: è un ribaltamento del punto più basso in un punto di partenza.",
+ "fonte": "140FuW7b9pk#0:42 (b-roll pozza d'acqua sotto la pioggia) + voce 0:42-0:48",
+ "frame": "frame-008.png",
+ "ancora": "Il giorno in cui puoi dire 'Ne ho avuto abbastanza' potrebbe non essere il giorno in cui finisce, ma il giorno in cui inizia.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-003", "tipo": "applica", "perche": "ribalta il senso della frase-simbolo di disgusto"}
+ ]
+ },
+ {
+ "id": "KA-006",
+ "tipo": "esempio",
+ "contenuto": "Aneddoto autobiografico: a 25 anni, dopo aver detto una grande bugia che ha fatto allontanare la propria compagna, il relatore ha toccato il proprio punto personale di disgusto.",
+ "fonte": "140FuW7b9pk#0:48 (b-roll fiume e cascata sotto cielo drammatico) + voce 0:48-1:00",
+ "frame": "frame-009.png",
+ "ancora": "Avevo 25 anni. Le dico una grande bugia, lei se ne va",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-003", "tipo": "esempio-di"},
+ {"verso": "KA-007", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-007",
+ "tipo": "esempio",
+ "contenuto": "La sintesi di quel momento personale di fondo toccato è una frase-manifesto: «ne ho avuto abbastanza di mentire e di essere in bancarotta» — bugie e fallimento economico/morale insieme.",
+ "fonte": "140FuW7b9pk#1:00 (b-roll spiaggia al crepuscolo, sagoma solitaria) + voce 1:00",
+ "frame": "frame-011.png",
+ "ancora": "Ne ho avuto abbastanza di mentire e di essere in bancarotta.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-006", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-008",
+ "tipo": "principio",
+ "contenuto": "Dal racconto personale il discorso si generalizza in una parabola: esiste un «uomo» universale che, come chiunque tocchi il fondo, finalmente ha avuto abbastanza — della mediocrità e di sentirsi un perdente.",
+ "fonte": "140FuW7b9pk#1:06 (b-roll spiaggia crepuscolo + primo piano uomo in controluce) + voce 1:06-1:18",
+ "frame": "frame-012.png",
+ "ancora": "ha avuto abbastanza della mediocrità, ha avuto abbastanza di essere un perdente,",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-007", "tipo": "alternativa-a", "perche": "stesso punto di rottura, passato dal racconto personale alla parabola generalizzata"}
+ ]
+ },
+ {
+ "id": "KA-009",
+ "tipo": "esempio",
+ "contenuto": "Esempio dei due barattoli di fagioli: un uomo sa che sua moglie è al supermercato a scegliere fra due marche di fagioli a prezzo diverso, e finirà per comprare quella più economica pur non piacendole affatto.",
+ "fonte": "140FuW7b9pk#1:18 (b-roll interno supermercato, corsie di scaffali) + voce 1:18-1:30",
+ "frame": "frame-014.png",
+ "ancora": "sua moglie comprerà il barattolo da 37 e non le piace nemmeno quella marca.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-008", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-010",
+ "tipo": "principio",
+ "contenuto": "La misura di quanto in basso può spingersi la mediocrità accettata è simboleggiata da un risparmio ridicolo — due centesimi — ottenuto rinunciando persino al proprio gusto personale.",
+ "fonte": "140FuW7b9pk#1:36 (b-roll ripiano frigorifero supermercato) + voce 1:36",
+ "frame": "frame-017.png",
+ "ancora": "Sai perché comprerà il barattolo da 37 per risparmiare due centesimi.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-009", "tipo": "quantificato-da"}
+ ]
+ },
+ {
+ "id": "KA-011",
+ "tipo": "esempio",
+ "contenuto": "Il grido conclusivo della parabola dell'uomo mediocre viene pronunciato proprio nel supermercato che ha innescato tutto: «ne ho avuto abbastanza».",
+ "fonte": "140FuW7b9pk#1:42 (b-roll corridoio supermercato, insegne tedesche) + voce 1:42-1:48",
+ "frame": "frame-018.png",
+ "ancora": "E l'uomo malato dentro finalmente dice: 'Ne ho avuto abbastanza. Stare in",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-009", "tipo": "parte-di"},
+ {"verso": "KA-012", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-012",
+ "tipo": "principio",
+ "contenuto": "Rifiuto categorico di continuare a vivere in miseria e umiliazione, espresso come dichiarazione diretta al pubblico: «noi non vivremo così mai più» — riferito a stare in ginocchio nella polvere a cercare monete.",
+ "fonte": "140FuW7b9pk#1:48 (talking-head B/N, Jim Rohn con indice puntato) + voce 1:48-1:54",
+ "frame": "frame-019.png",
+ "ancora": "Stare in ginocchio nella polvere a cercare monete? No, noi non vivremo così mai più.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-011", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-013",
+ "tipo": "principio",
+ "contenuto": "Il blocco dedicato al disgusto si chiude riportando un'ultima volta la frase-simbolo «ne ho avuto abbastanza» come sintesi di tutto il ragionamento, con l'augurio esplicito che chiunque ascolti arrivi un giorno a pronunciarla.",
+ "fonte": "140FuW7b9pk#2:06 (b-roll catena montuosa scura) + voce 2:06",
+ "frame": "frame-022.png",
+ "ancora": "Conto che ti faccia dire ne ho avuto abbastanza, potente.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-003", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-014",
+ "tipo": "struttura",
+ "contenuto": "La seconda delle quattro emozioni annunciate è la Decisione.",
+ "fonte": "140FuW7b9pk#2:12 (b-roll interno scuro, sagoma seduta) + voce 2:12",
+ "frame": "frame-023.png",
+ "ancora": "Ecco il prossimo, decisione.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-001", "tipo": "parte-di"},
+ {"verso": "KA-020", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-015",
+ "tipo": "principio",
+ "contenuto": "Prendere decisioni è un atto potente e carico di emotività, non un semplice calcolo razionale.",
+ "fonte": "140FuW7b9pk#2:18 (b-roll interno scuro, sagoma alla finestra) + voce 2:18",
+ "frame": "frame-024.png",
+ "ancora": "E prendere decisioni è potente ed è emotivo.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-014", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-016",
+ "tipo": "definizione",
+ "contenuto": "Il conflitto interiore del decidere viene definito «guerra civile interiore»: un'immagine per descrivere i nodi allo stomaco e le notti insonni che accompagnano una decisione difficile.",
+ "fonte": "140FuW7b9pk#2:24 (primo piano mani intrecciate in controluce) + voce 2:24-2:30",
+ "frame": "frame-025.png",
+ "ancora": "Sono quei nodi allo stomaco, giusto? Svegliarsi nel mezzo della notte, sudato freddo... A volte lo chiamiamo guerra civile interiore.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-015", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-017",
+ "tipo": "principio",
+ "contenuto": "Per progredire nella vita è necessario decidere: la decisione è la condizione che precede ogni avanzamento.",
+ "fonte": "140FuW7b9pk#2:42 (b-roll conifere notturne nebbiose) + voce 2:42",
+ "frame": "frame-028.png",
+ "ancora": "Per progredire devi decidere.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-014", "tipo": "parte-di"},
+ {"verso": "KA-018", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-018",
+ "tipo": "procedura",
+ "contenuto": "Consiglio in tre passaggi ricevuto da un amico ricco per affrontare qualunque compito: se è facile, farlo facilmente; se è difficile, farlo con difficoltà; e comunque farlo, senza rimandare.",
+ "fonte": "140FuW7b9pk#2:48 (b-roll superficie d'acqua scura sotto la pioggia) + voce 2:48-2:54",
+ "frame": "frame-029.png",
+ "ancora": "se è facile fallo facilmente, se è difficile fallo con difficoltà, fallo e basta.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-017", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-019",
+ "tipo": "esempio",
+ "contenuto": "Applicazione pratica del consiglio in tre passaggi: risolvere in pochi giorni un'intera lista di decisioni rimaste in sospeso, invece di trascinarle per anni.",
+ "fonte": "140FuW7b9pk#3:00 (b-roll scala metallica notturna) + voce 3:00-3:06",
+ "frame": "frame-031.png",
+ "ancora": "risolvessi un'intera lista di decisioni, questo potrebbe",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-018", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-020",
+ "tipo": "struttura",
+ "contenuto": "La terza delle quattro emozioni annunciate è il Desiderio, definito subito come «volerlo con abbastanza intensità».",
+ "fonte": "140FuW7b9pk#3:18 (slide pagina di quaderno, tre voci elencate) + voce 3:18",
+ "frame": "frame-034.png",
+ "ancora": "Desiderio, volerlo con abbastanza intensità.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-001", "tipo": "parte-di"},
+ {"verso": "KA-030", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-021",
+ "tipo": "principio",
+ "contenuto": "A differenza delle altre emozioni, il relatore ammette apertamente di non sapere insegnare a desiderare: è qualcosa che ognuno deve scoprire da solo.",
+ "fonte": "140FuW7b9pk#3:24 (b-roll alberi bruciati al tramonto) + voce 3:24",
+ "frame": "frame-035.png",
+ "ancora": "E non so come dirti di desiderare. È qualcosa che devi scoprire da solo.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-020", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-022",
+ "tipo": "principio",
+ "contenuto": "Prima legge del desiderio: nasce dall'interno, non dall'esterno — non si può «ordinare per posta».",
+ "fonte": "140FuW7b9pk#3:48 (b-roll uomo che pesca al tramonto) + voce 3:48",
+ "frame": "frame-039.png",
+ "ancora": "Numero uno, viene da dentro, non da fuori. Non si ordina per posta.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-020", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-023",
+ "tipo": "principio",
+ "contenuto": "Seconda legge del desiderio: può restare dormiente per lungo tempo, finché non viene innescato da qualcosa di imprevedibile.",
+ "fonte": "140FuW7b9pk#3:48 (b-roll uomo che pesca al tramonto) + voce 3:48",
+ "frame": "frame-039.png",
+ "ancora": "il desiderio può essere innescato da qualcosa. Chissà cosa può essere. A volte il desiderio aspetta e dorme finché qualcosa non accade.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-020", "tipo": "parte-di"},
+ {"verso": "KA-024", "tipo": "quantificato-da"}
+ ]
+ },
+ {
+ "id": "KA-024",
+ "tipo": "esempio",
+ "contenuto": "Elenco dei possibili inneschi del desiderio: un libro, una canzone, un sermone, una conferenza, un seminario, una conversazione con un amico, un evento qualsiasi — sette esempi diversi per dire che l'innesco può arrivare da ovunque.",
+ "fonte": "140FuW7b9pk#3:54 (b-roll aula scolastica vuota / gruppo di amici al tramonto) + voce 3:54-4:06",
+ "frame": "frame-040.png",
+ "ancora": "Forse è un libro. Forse è una canzone, forse è un sermone, forse una conferenza, un seminario, forse una conversazione con un amico, qualcosa che accade, un evento.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-023", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-025",
+ "tipo": "regola",
+ "contenuto": "Il miglior consiglio che il relatore dà al proprio team è dare il benvenuto a ogni esperienza umana, qualunque essa sia.",
+ "fonte": "140FuW7b9pk#4:06 (b-roll corridoio domestico) + voce 4:06-4:12",
+ "frame": "frame-042.png",
+ "ancora": "dai il benvenuto a ogni esperienza umana.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-023", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-026",
+ "tipo": "principio",
+ "contenuto": "Non si può sapere in anticipo quale esperienza accenderà il desiderio: anche le esperienze negative possono farlo.",
+ "fonte": "140FuW7b9pk#4:12 (b-roll corridoio, ragazzo con bicicletta) + voce 4:12-4:18",
+ "frame": "frame-043.png",
+ "ancora": "Non sai mai quale di esse potrà accendere tutto, anche le esperienze negative.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-025", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-027",
+ "tipo": "principio",
+ "contenuto": "Dall'esperienza più amara nasce il più grande risveglio: da qui l'invito a abbassare le proprie barriere emotive.",
+ "fonte": "140FuW7b9pk#4:24 (macro occhio umano) + voce 4:24",
+ "frame": "frame-045.png",
+ "ancora": "dall'esperienza più amara nasce il più grande risveglio. Quindi abbassa le barriere, abbatti i",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-026", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-028",
+ "tipo": "principio",
+ "contenuto": "Lo stesso muro emotivo che protegge dalla delusione impedisce anche alla felicità di entrare: non si può filtrare selettivamente solo il dolore.",
+ "fonte": "140FuW7b9pk#4:30 (sagoma sfocata contro cielo al tramonto) + voce 4:30",
+ "frame": "frame-046.png",
+ "ancora": "Lo stesso muro che tiene fuori la delusione tiene fuori anche la nostra felicità.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-027", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-029",
+ "tipo": "principio",
+ "contenuto": "Invito a lasciarsi toccare dalla vita senza lasciarsi distruggere da essa.",
+ "fonte": "140FuW7b9pk#4:36 (silhouette in fiamme) + voce 4:36",
+ "frame": "frame-047.png",
+ "ancora": "Lascia che la vita ti tocchi. Non lasciare che ti distrugga, ma lascia che ti tocchi.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-028", "tipo": "parte-di"},
+ {"verso": "KA-030", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-030",
+ "tipo": "struttura",
+ "contenuto": "La quarta e ultima delle emozioni annunciate è la Determinazione, introdotta come «potente».",
+ "fonte": "140FuW7b9pk#4:42 (slide pagina di quaderno, quarta voce in sospeso) + voce 4:42",
+ "frame": "frame-048.png",
+ "ancora": "Ecco l'ultima. Questa è potente. Determinazione.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-001", "tipo": "parte-di"},
+ {"verso": "KA-039", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-031",
+ "tipo": "definizione",
+ "contenuto": "La determinazione si riassume in due delle parole più potenti del linguaggio: «lo farò».",
+ "fonte": "140FuW7b9pk#4:48 (b-roll campo d'erba dorata in controluce) + voce 4:48",
+ "frame": "frame-049.png",
+ "ancora": "La determinazione dice lo farò. Due delle parole più potenti del linguaggio,",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-030", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-032",
+ "tipo": "dato",
+ "contenuto": "Citazione di Benjamin Disraeli usata a sostegno della determinazione: nulla può resistere alla volontà umana disposta a scommettere persino la propria esistenza sul raggiungimento del proprio scopo — «lo farò, oppure morirò».",
+ "fonte": "140FuW7b9pk#4:54 (b-roll campo di grano dorato) + voce 4:54-5:06",
+ "frame": "frame-050.png",
+ "ancora": "Nulla può resistere alla volontà umana che sia disposta a scommettere persino la propria esistenza sul raggiungimento del proprio scopo... In breve lo farò oppure morirò.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-033",
+ "tipo": "principio",
+ "contenuto": "Il mondo tende a farsi da parte per chi mostra una determinazione assoluta del tipo «lo farò o morirò».",
+ "fonte": "140FuW7b9pk#5:12 (b-roll paesaggio montano nebbioso) + voce 5:12-5:18",
+ "frame": "frame-053.png",
+ "ancora": "Il mondo ha un modo strano di farsi da parte quando qualcuno dice \"Lo farò o morirò\".",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-032", "tipo": "applica"},
+ {"verso": "KA-034", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-034",
+ "tipo": "esempio",
+ "contenuto": "Racconto/poesia dello scalatore: nonostante gli venga detto che la montagna è troppo alta, troppo lontana, troppo rocciosa, troppo difficile, l'uomo dichiara «è la mia montagna e la scalerò», promette di salutare presto dalla cima, e afferma che non tornerà indietro.",
+ "fonte": "140FuW7b9pk#5:18 (b-roll cima innevata, toni blu scuri) + voce 5:18-5:36",
+ "frame": "frame-054.png",
+ "ancora": "Mi hanno detto che è troppo alta, troppo lontana, troppo rocciosa, troppo difficile... ma è la mia montagna e la scalerò. Molto presto mi vedrete salutare dalla cima... perché non tornerò indietro.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-033", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-035",
+ "tipo": "dato",
+ "contenuto": "La «migliore definizione mai sentita» della parola determinazione, secondo il relatore, venne da una studentessa liceale di Foster City, nel nord della California.",
+ "fonte": "140FuW7b9pk#5:36 (b-roll ripresa aerea torrente tra le rocce) + voce 5:36-5:48",
+ "frame": "frame-057.png",
+ "ancora": "La migliore definizione che abbia mai sentito della parola determinazione venne da una ragazza delle superiori a Foster City, California del Nord.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-037", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-036",
+ "tipo": "principio",
+ "contenuto": "Interpellare direttamente gli studenti sulle definizioni dei concetti fa emergere risposte più autentiche e preziose («vere gemme») rispetto a una lezione frontale.",
+ "fonte": "140FuW7b9pk#5:48 (b-roll collina erbosa sotto cielo nuvoloso) + voce 5:48-6:06",
+ "frame": "frame-059.png",
+ "ancora": "Mi piace chiedere ai ragazzi le definizioni. Tirano fuori delle vere gemme... tutte erano abbastanza buone, ma l'ultima fu la migliore.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-035", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-037",
+ "tipo": "definizione",
+ "contenuto": "Definizione di determinazione data da una studentessa e adottata dal relatore al posto di quella del dizionario: «promettere a te stesso».",
+ "fonte": "140FuW7b9pk#6:06 (filmato d'archivio B/N, Jim Rohn al leggio) + voce 6:06-6:36",
+ "frame": "frame-062.png",
+ "ancora": "\"Signor Ron, credo di sapere cosa significhi determinazione\"... Credo che significhi promettere [musica] a te stesso... Le dissi: \"Esatto, Webster, fatti da parte. Questa è la definizione.\"",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-038",
+ "tipo": "esempio",
+ "contenuto": "Seconda illustrazione della determinazione: nessuna madre metterebbe un limite di tempo a un bambino che sta imparando a camminare — prova e riprova finché non ci riesce, senza mai considerare la resa.",
+ "fonte": "140FuW7b9pk#6:36 (b-roll trattore arrugginito accanto a uno stagno) + voce 6:36-6:54",
+ "frame": "frame-067.png",
+ "ancora": "Quanto tempo dovrebbe provare un bambino per imparare a camminare?... Quanto tempo daresti a un bambino prima di arrenderti con lui?... Che formula magica.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "esempio-di"},
+ {"verso": "KA-037", "tipo": "alternativa-a", "perche": "stessa idea di determinazione illustrata da un angolo diverso: l'istinto del bambino invece della promessa consapevole"}
+ ]
+ },
+ {
+ "id": "KA-039",
+ "tipo": "struttura",
+ "contenuto": "Dopo aver definito le quattro emozioni, il discorso introduce un concetto-ponte che le trasforma in pratica: l'azione, ciò che «attiva tutte le emozioni per mettersi in moto».",
+ "fonte": "140FuW7b9pk#6:54 (b-roll campo di grano con fiordalisi) + voce 6:54-7:06",
+ "frame": "frame-070.png",
+ "ancora": "lascia che ti mostri cosa attiva tutte le emozioni per mettersi in azione... Ecco qui, azione. Alla fine devi fare qualcosa",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "applica", "perche": "trasforma il \"lo farò\" della determinazione in atto pratico"},
+ {"verso": "KA-046", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-040",
+ "tipo": "dato",
+ "contenuto": "Citazione biblica attribuita a Gesù, usata per sostenere il valore dell'agire: «non limitatevi ad ascoltare, siate esecutori. Il mondo ammira chi agisce».",
+ "fonte": "140FuW7b9pk#7:24 (b-roll ripresa aerea paesaggio agricolo-forestale) + voce 7:24",
+ "frame": "frame-075.png",
+ "ancora": "Non limitatevi ad ascoltare, siate esecutori. Il mondo ammira chi agisce.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-039", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-041",
+ "tipo": "dato",
+ "contenuto": "Seconda citazione biblica riportata: «la fede senza azione è inutile».",
+ "fonte": "140FuW7b9pk#7:30 (b-roll piante acquatiche sulla riva) + voce 7:30",
+ "frame": "frame-076.png",
+ "ancora": "Un'altra frase biblica dice: \"La fede senza azione è inutile\".",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-039", "tipo": "parte-di"},
+ {"verso": "KA-040", "tipo": "alternativa-a", "perche": "seconda fonte citata a sostegno dello stesso principio dell'agire"}
+ ]
+ },
+ {
+ "id": "KA-042",
+ "tipo": "avvertimento",
+ "contenuto": "Le affermazioni (dichiarazioni positive su di sé) vanno maneggiate con attenzione: esiste una linea molto sottile tra fede e insensatezza.",
+ "fonte": "140FuW7b9pk#7:42 (b-roll piante acquatiche sulla riva) + voce 7:36-7:48",
+ "frame": "frame-078.png",
+ "ancora": "Bisogna stare molto attenti alle affermazioni. C'è una linea molto sottile tra fede e insensatezza.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-043", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-043",
+ "tipo": "principio",
+ "contenuto": "Aforisma centrale sul rischio delle affermazioni: «l'affermazione senza disciplina è l'inizio dell'illusione».",
+ "fonte": "140FuW7b9pk#7:48 (b-roll cielo al tramonto, sagoma che cammina su una duna) + voce 7:48",
+ "frame": "frame-079.png",
+ "ancora": "l'affermazione senza disciplina è l'inizio dell'illusione.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-042", "tipo": "parte-di"},
+ {"verso": "KA-044", "tipo": "quantificato-da"}
+ ]
+ },
+ {
+ "id": "KA-044",
+ "tipo": "anti-pattern",
+ "contenuto": "Parabola dell'uomo che continua a camminare verso ovest cercando l'alba, che sorge invece a est: immagine dell'affermazione senza disciplina, cioè dell'illusione inseguita senza mai poterla raggiungere.",
+ "fonte": "140FuW7b9pk#7:54 (b-roll cielo crepuscolare, sagoma che cammina in salita) + voce 7:54",
+ "frame": "frame-080.png",
+ "ancora": "Il tipo continua a camminare verso ovest cercando l'alba.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-043", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-045",
+ "tipo": "principio",
+ "contenuto": "In contrasto con l'illusione, l'affermazione accompagnata dalla disciplina richiede sempre un piano d'azione concreto all'altezza dei propri desideri: senza di esso, i desideri restano soltanto desideri.",
+ "fonte": "140FuW7b9pk#8:18 (b-roll cima montuosa in controluce dorato) + voce 8:06-8:18",
+ "frame": "frame-084.png",
+ "ancora": "Assicurati di avere sempre un piano d'azione all'altezza dei tuoi desideri, altrimenti saranno sempre solo desideri.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-043", "tipo": "alternativa-a", "perche": "lato positivo dello stesso concetto: disciplina con affermazione invece di affermazione senza disciplina"}
+ ]
+ },
+ {
+ "id": "KA-046",
+ "tipo": "struttura",
+ "contenuto": "Il seminario si chiude con quattro «domande di riflessione» da portare a casa: Perché? / Perché no? / Perché non tu? / Perché non adesso?",
+ "fonte": "140FuW7b9pk#8:36 (filmato d'archivio B/N, Jim Rohn a mezzobusto) + voce 8:36-8:48",
+ "frame": "frame-087.png",
+ "ancora": "Lascia che ti dia quattro domande da portarti a casa quando finiremo. Si chiamano domande di riflessione",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-039", "tipo": "parte-di"},
+ {"verso": "KA-047", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-047",
+ "tipo": "esempio",
+ "contenuto": "Prima domanda di riflessione, «Perché?», illustrata dall'esempio «perché leggere così tanti libri?».",
+ "fonte": "140FuW7b9pk#8:48 (b-roll valle alpina, sentiero sterrato) + voce 8:48",
+ "frame": "frame-089.png",
+ "ancora": "Perché leggere così tanti libri?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-046", "tipo": "parte-di"},
+ {"verso": "KA-048", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-048",
+ "tipo": "esempio",
+ "contenuto": "Seconda domanda di riflessione, «Perché no?», accompagnata da: cos'altro farai nella tua vita? Quante cose puoi realizzare? Quanto lontano puoi arrivare? Cosa puoi vedere?",
+ "fonte": "140FuW7b9pk#9:12 (b-roll sagoma su guglia rocciosa) + voce 9:12-9:24",
+ "frame": "frame-093.png",
+ "ancora": "Perché no? Cos'altro farai nella tua vita?... Quante cose puoi realizzare? Quanto lontano puoi arrivare? Cosa puoi vedere?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-046", "tipo": "parte-di"},
+ {"verso": "KA-049", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-049",
+ "tipo": "esempio",
+ "contenuto": "Terza domanda di riflessione, «Perché non tu?», introdotta osservando che alcune persone hanno realizzato cose incredibili partendo da pochissimo, e possono goderne.",
+ "fonte": "140FuW7b9pk#9:36 (slide corsivo manoscritto, tre domande rivelate) + voce 9:36-9:54",
+ "frame": "frame-097.png",
+ "ancora": "La terza domanda è perché non tu?... Alcune persone hanno fatto cose incredibili partendo da pochissimo... Possono averlo, possono goderne. Perché non tu?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-046", "tipo": "parte-di"},
+ {"verso": "KA-060", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-050",
+ "tipo": "esempio",
+ "contenuto": "Esempi di esperienze da vivere sotto «perché non tu»: osservare la nebbia del mattino sulle montagne della Scozia, esplorare la Spagna, assorbire la storia a Londra.",
+ "fonte": "140FuW7b9pk#10:00 (b-roll aereo campagna costiera scozzese) + voce 10:00-10:06",
+ "frame": "frame-101.png",
+ "ancora": "Perché non dovresti essere tu a osservare la nebbia del mattino sollevarsi sulle montagne della Scozia?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-051",
+ "tipo": "esempio",
+ "contenuto": "Altre esperienze elencate sotto «perché non tu»: passeggiare nel palazzo di Versailles e pranzare in un caffè sul marciapiede di Parigi.",
+ "fonte": "140FuW7b9pk#10:12 (b-roll palazzo barocco con vasca d'acqua) + voce 10:12-10:18",
+ "frame": "frame-103.png",
+ "ancora": "tu devi fare una passeggiata nel palazzo di Varsaille?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-052",
+ "tipo": "esempio",
+ "contenuto": "Guardare dritto negli occhi la Gioconda, come immagine dell'esperienza culturale da vivere di persona.",
+ "fonte": "140FuW7b9pk#10:24 (macro volto della Gioconda) + voce 10:24",
+ "frame": "frame-105.png",
+ "ancora": "Un giorno devi guardare dritto negli occhi la mona Lisa.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "esempio-di"},
+ {"verso": "KA-076", "tipo": "esempio-di", "perche": "caso più diretto ed evocativo di abbinamento immagine-parola letterale"}
+ ]
+ },
+ {
+ "id": "KA-053",
+ "tipo": "esempio",
+ "contenuto": "Trovare le conchiglie più raffinate a Miami e alle Bahamas, come ulteriore esperienza sotto «perché non tu».",
+ "fonte": "140FuW7b9pk#10:36 (b-roll aereo costa oceanica) + voce 10:36",
+ "frame": "frame-107.png",
+ "ancora": "Posso mostrarti dove trovare le conchiglie più raffinate a Miami e alle Bamas.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-054",
+ "tipo": "esempio",
+ "contenuto": "Fare shopping sulla Quinta Strada a New York e soggiornare al Waldorf Astoria.",
+ "fonte": "140FuW7b9pk#10:42 (b-roll aereo Manhattan/Central Park) + voce 10:42-10:48",
+ "frame": "frame-108.png",
+ "ancora": "Devi fare shopping sulla quinta strada a New York... Devi soggiornare al Waldorf Astoria.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-055",
+ "tipo": "esempio",
+ "contenuto": "Cenare con oca arrosto a fette e strudel di mele, come esperienza gastronomica sotto «perché non tu».",
+ "fonte": "140FuW7b9pk#10:54 (primo piano tavolo da ristorante) + voce 10:54",
+ "frame": "frame-110.png",
+ "ancora": "Cenare da Luciaus con oca arrosto a fette e un po' di strudel di mele.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-056",
+ "tipo": "esempio",
+ "contenuto": "Immergersi in un tramonto in Arizona, tra i cactus del deserto.",
+ "fonte": "140FuW7b9pk#11:00 (b-roll deserto, cactus saguaro in controluce) + voce 11:00",
+ "frame": "frame-111.png",
+ "ancora": "Perché non tu devi immergerti in un tramonto in Arizona?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-057",
+ "tipo": "comando",
+ "contenuto": "Elenco imperativo di ambiti da esplorare nella vita: vedere il mondo, leggere libri, intraprendere progetti, coinvolgersi nel commercio, nell'amore, nei viaggi e nelle esperienze.",
+ "fonte": "140FuW7b9pk#11:06 (b-roll deserto al tramonto / grattacieli al crepuscolo) + voce 11:06-11:18",
+ "frame": "frame-112.png",
+ "ancora": "Devi vedere il mondo, devi leggere i libri, devi intraprendere progetti, devi coinvolgerti nel commercio, nell'amore, nei viaggi e nelle esperienze.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-058",
+ "tipo": "principio",
+ "contenuto": "I risultati mostrati — viaggi, traguardi, esperienze — derivano da una «disciplina splendida», non sono casuali.",
+ "fonte": "140FuW7b9pk#11:18 (b-roll grattacieli in vetro al crepuscolo) + voce 11:18",
+ "frame": "frame-114.png",
+ "ancora": "Devi conoscere i risultati che derivano da una disciplina splendida.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-045", "tipo": "alternativa-a", "perche": "richiama lo stesso legame tra disciplina e risultato concreto"}
+ ]
+ },
+ {
+ "id": "KA-059",
+ "tipo": "principio",
+ "contenuto": "Chiusura della sezione «perché non tu»: non c'è niente come la vista dalla cima.",
+ "fonte": "140FuW7b9pk#11:24 (b-roll grattacieli, sagoma sul tetto) + voce 11:24",
+ "frame": "frame-115.png",
+ "ancora": "Non c'è niente come la vista dalla cima.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-049", "tipo": "parte-di"},
+ {"verso": "KA-060", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-060",
+ "tipo": "struttura",
+ "contenuto": "Rivelazione della quarta e ultima domanda di riflessione: «perché non adesso?», accompagnata da una card che riepiloga tutte e quattro le domande insieme.",
+ "fonte": "140FuW7b9pk#11:30 (slide manoscritta, quattro domande complete) + voce 11:30-11:36",
+ "frame": "frame-116.png",
+ "ancora": "Perché?\nPerché no?\nPerché non tu?\nPerché non adesso?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-046", "tipo": "parte-di"},
+ {"verso": "KA-061", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-061",
+ "tipo": "principio",
+ "contenuto": "La domanda «perché non adesso?» si traduce nell'invito a non rimandare più il proprio futuro migliore.",
+ "fonte": "140FuW7b9pk#11:36 (b-roll skyline di Manhattan con Ponte di Brooklyn) + voce 11:36-11:42",
+ "frame": "frame-117.png",
+ "ancora": "il tuo futuro migliore.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-060", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-062",
+ "tipo": "comando",
+ "contenuto": "Elenco di azioni concrete e immediate proposte in risposta a «perché non adesso»: rimboccarsi le maniche con nuovo vigore, comprare libri nuovi, iniziare un quaderno dei progetti, leggere di più, fare cambiamenti, fare conversazioni, creare contatti — e farlo subito.",
+ "fonte": "140FuW7b9pk#11:42 (macro mano che scrive su un quaderno con pennino) + voce 11:42-12:06",
+ "frame": "frame-118.png",
+ "ancora": "Comprati alcuni libri nuovi,... Inizia il tuo quaderno dei progetti,... fai conversazioni,... crea contatti e fallo adesso.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-060", "tipo": "parte-di"},
+ {"verso": "KA-045", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-063",
+ "tipo": "principio",
+ "contenuto": "Chi mette in pratica questi consigli finirà per avere una storia da raccontare, tale da spingerlo a farsi sentire da chi lo ha ispirato.",
+ "fonte": "140FuW7b9pk#12:00 (macro mano che scrive su un quaderno) + voce 12:00-12:12",
+ "frame": "frame-121.png",
+ "ancora": "E se lo farai, ho la sensazione che uno di questi giorni ascolteremo la tua storia.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-062", "tipo": "precede"},
+ {"verso": "KA-064", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-064",
+ "tipo": "principio",
+ "contenuto": "Nel congedo, il relatore condivide un pensiero personale fuori dal tono commerciale del seminario: chiedere l'aiuto di Dio.",
+ "fonte": "140FuW7b9pk#12:18 (filmato d'archivio B/N, Jim Rohn al leggio) + voce 12:18-12:30",
+ "frame": "frame-124.png",
+ "ancora": "Il mio commento finale sarebbe 'Chiedi l'aiuto di Dio'.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-065",
+ "tipo": "principio",
+ "contenuto": "Gli esseri umani sono unici, ma a tutti serve un po' d'aiuto esterno: la crescita personale non è un percorso puramente solitario.",
+ "fonte": "140FuW7b9pk#12:30 (b-roll aereo montagne avvolte da nubi) + voce 12:30",
+ "frame": "frame-126.png",
+ "ancora": "Credo che gli esseri umani siano unici, ma a tutti servirebbe un po' d'aiuto.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-064", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-066",
+ "tipo": "principio",
+ "contenuto": "La responsabilità è comunque reciproca e bidirezionale: ognuno deve fare la propria parte, e il resto farà la sua.",
+ "fonte": "140FuW7b9pk#12:36 (b-roll aereo montagne avvolte da nubi) + voce 12:36",
+ "frame": "frame-127.png",
+ "ancora": "Naturalmente devi fare la tua parte... e credo che Dio farà la sua. È una strada a doppio senso,",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-065", "tipo": "parte-di"},
+ {"verso": "KA-067", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-067",
+ "tipo": "esempio",
+ "contenuto": "Parabola del giardiniere: un uomo prese un mucchio di rocce e in due anni lo trasformò in un giardino meraviglioso, tanto che la gente veniva da ogni parte per vederlo.",
+ "fonte": "140FuW7b9pk#12:42 (b-roll giardino fiorito con pergolato) + voce 12:42-12:54",
+ "frame": "frame-128.png",
+ "ancora": "C'è la storia di un uomo che prese un mucchio di rocce e in due anni lo trasformò in un giardino meraviglioso. La gente veniva da ogni parte per vederlo.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-066", "tipo": "esempio-di"},
+ {"verso": "KA-068", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-068",
+ "tipo": "esempio",
+ "contenuto": "Dialogo centrale della parabola: un passante, dopo aver conosciuto il giardiniere, gli dice «lei e il buon Signore insieme avete creato questo bellissimo giardino», attribuendo il merito anche al divino.",
+ "fonte": "140FuW7b9pk#12:54 (b-roll fontana in pietra tra le rose) + voce 12:54-13:06",
+ "frame": "frame-130.png",
+ "ancora": "Signor giardiniere, ricordi che lei e il buon Signore insieme avete creato questo bellissimo giardino?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-067", "tipo": "parte-di"},
+ {"verso": "KA-069", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-069",
+ "tipo": "esempio",
+ "contenuto": "Risposta arguta del giardiniere: concorda sul ruolo del sole, della pioggia e del «miracolo del seme, della terra e delle stagioni», ma ribatte che il passante avrebbe dovuto vedere quel luogo quando Dio lo aveva tutto per sé, prima del suo intervento.",
+ "fonte": "140FuW7b9pk#13:06 (b-roll sotto chioma d'albero, spruzzo d'acqua retroilluminato) + voce 13:06-13:24",
+ "frame": "frame-132.png",
+ "ancora": "Se non ci fosse il sole, la pioggia, il miracolo del seme, della terra e delle stagioni... avresti dovuto vedere questo posto un paio di anni fa, quando Dio lo aveva tutto per sé.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-068", "tipo": "precede"},
+ {"verso": "KA-070", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-070",
+ "tipo": "principio",
+ "contenuto": "Morale della parabola del giardiniere: anche l'uomo ha un ruolo reale nella propria crescita, non è tutto merito di fattori esterni o del caso.",
+ "fonte": "140FuW7b9pk#13:24 (b-roll prato fiorito ripreso dall'alto) + voce 13:24-13:30",
+ "frame": "frame-135.png",
+ "ancora": "E credo che sia vero, anche noi abbiamo un ruolo.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-066", "tipo": "applica"},
+ {"verso": "KA-069", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-071",
+ "tipo": "principio",
+ "contenuto": "Chiosa personale e scherzosa a chiusura della parabola: il relatore è contento di non essere stato creato come un angelo, perché crede che gli esseri umani si divertano molto di più.",
+ "fonte": "140FuW7b9pk#13:30 (b-roll controluce tra erba e trifoglio) + voce 13:30-13:36",
+ "frame": "frame-136.png",
+ "ancora": "Sono contento di non essere stato un angelo. Credo che gli esseri umani si divertano molto di più.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-070", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-072",
+ "tipo": "struttura",
+ "contenuto": "Il seminario si chiude con un commiato diretto al pubblico: ringraziamento per la serata, augurio di rivedersi nel fine settimana, invito a prendere il modulo di contatto e restare in contatto, saluto finale «buonanotte».",
+ "fonte": "140FuW7b9pk#12:12 (filmato d'archivio B/N, Jim Rohn al leggio) + voce 12:12-13:48",
+ "frame": "frame-123.png",
+ "ancora": "Io voglio ringraziarti per essere qui... Spero di vedervi nel fine settimana... Assicuratevi di ricevere il piccolo foglio bianco e restiamo in contatto. Vi auguro tutto il meglio. Buonanotte.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-064", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-073",
+ "tipo": "struttura",
+ "contenuto": "Tecnica di montaggio ricorrente: il video alterna un filmato d'archivio in bianco e nero del relatore a una sequenza patinata di b-roll a colori, con sottotitoli centrali bianchi che scandiscono la frase pronunciata in quel momento.",
+ "fonte": "140FuW7b9pk#10:00 (nota di apertura del blocco scene 81-120) + voce continua",
+ "frame": "frame-101.png",
+ "ancora": "il montaggio alterna frammenti del relatore... a una lunga sequenza di b-roll turistico... con sottotitoli centrali bianchi che scandiscono la frase pronunciata in quel momento.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-074",
+ "tipo": "struttura",
+ "contenuto": "La slide in stile «pagina di quaderno» funziona da tracker visivo progressivo della lista delle quattro emozioni: ogni volta che il relatore ne annuncia una nuova, la slide ricompare con una voce numerata in più rispetto alla comparsa precedente.",
+ "fonte": "140FuW7b9pk#4:42 (slide pagina di quaderno, elenco a metà animazione) + testo a schermo",
+ "frame": "frame-048.png",
+ "ancora": "1) Disgusto. — 2) Decisione. — 3) Desiderio.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-001", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-075",
+ "tipo": "struttura",
+ "contenuto": "La stessa tecnica di rivelazione progressiva viene riapplicata alla slide delle quattro domande di riflessione: i termini compaiono prima in filigrana pallida, poi vengono «attivati» graficamente in nero uno alla volta man mano che il relatore li pronuncia, fino al riepilogo completo.",
+ "fonte": "140FuW7b9pk#11:30 (slide manoscritta, quattro domande complete) + testo a schermo",
+ "frame": "frame-116.png",
+ "ancora": "Perché?\nPerché no?\nPerché non tu?\nPerché non adesso?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-046", "tipo": "parte-di"},
+ {"verso": "KA-074", "tipo": "alternativa-a", "perche": "stessa tecnica di reveal progressivo applicata a un'altra lista (le domande invece delle emozioni)"}
+ ]
+ },
+ {
+ "id": "KA-076",
+ "tipo": "principio",
+ "contenuto": "Tecnica ricorrente di scrittura per immagini: ogni citazione chiave viene abbinata a un'inquadratura che la illustra in modo letterale, spesso nell'istante esatto in cui la parola chiave viene pronunciata, rinforzando il messaggio sia a livello uditivo che visivo.",
+ "fonte": "140FuW7b9pk#10:24 (macro volto della Gioconda) + voce 10:24",
+ "frame": "frame-105.png",
+ "ancora": "Un giorno devi guardare dritto negli occhi la mona Lisa.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-077",
+ "tipo": "regola",
+ "contenuto": "Economia di montaggio: quando l'elenco verbale di azioni si allunga, lo stesso spezzone visivo (ad esempio una mano che scrive su un quaderno) viene riutilizzato per accompagnare più battute consecutive, anche quando il contenuto parlato non riguarda più letteralmente l'immagine mostrata.",
+ "fonte": "140FuW7b9pk#11:54 (macro mano che scrive su un quaderno) + testo a schermo",
+ "frame": "frame-119.png",
+ "ancora": "Inizia il tuo quaderno dei progetti,",
+ "confidenza": "dedotto",
+ "relazioni": [
+ {"verso": "KA-062", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-078",
+ "tipo": "principio",
+ "contenuto": "Il filmato d'archivio autentico in bianco e nero viene riservato ai momenti di massima autenticità e autorevolezza del discorso (la citazione esatta della studentessa, il ringraziamento e il commiato finale), mentre il resto del video usa b-roll patinato a colori.",
+ "fonte": "140FuW7b9pk#6:06 (prima ricomparsa del filmato reale dopo solo b-roll simbolico) + testo a schermo",
+ "frame": "frame-062.png",
+ "ancora": "credo di sapere cosa significhi determinazione",
+ "confidenza": "dedotto",
+ "relazioni": [
+ {"verso": "KA-037", "tipo": "parte-di"},
+ {"verso": "KA-073", "tipo": "alternativa-a", "perche": "specifica quando, all'interno dell'alternanza generale, viene scelto il filmato reale invece del b-roll"}
+ ]
+ }
+]

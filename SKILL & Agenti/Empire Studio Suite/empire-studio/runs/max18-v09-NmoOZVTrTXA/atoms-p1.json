@@ -1,0 +1,1020 @@
+[
+ {
+ "id": "KA-001",
+ "tipo": "principio",
+ "contenuto": "La promessa di apertura del corso è mostrare come costruire agenti vocali da zero, come integrarli in processi aziendali reali, e qual è il ritorno economico concreto sia per le aziende che li adottano sia per chi li vende come servizio.",
+ "fonte": "NmoOZVTrTXA#0:06 (webcam apertura) + voce 0:06-0:24",
+ "frame": "frame-0002.png",
+ "ancora": "come costruire agenti vocali da zero, come integrarli in processi aziendali e qual è il ritorno concreto per le aziende",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-002", "tipo": "precede", "perche": "la promessa introduttiva anticipa l'agenda dettagliata mostrata subito dopo"}
+ ]
+ },
+ {
+ "id": "KA-002",
+ "tipo": "struttura",
+ "contenuto": "L'agenda del corso, presentata su una lavagna Excalidraw, copre: definizione di agente vocale, anatomia di un agente vocale, struttura di un system prompt corretto, i modi di inserire una knowledge base, i tipi di tool integrabili, la personalizzazione dell'agente, il latency tuning, la costruzione di un agente end-to-end su Claude Code, e infine le offerte per aziende con il relativo ROI.",
+ "fonte": "NmoOZVTrTXA#0:30 (lavagna Excalidraw, agenda del corso) + voce 0:30-1:36",
+ "frame": "frame-0006.png",
+ "ancora": "Questo è quello che andremo a vedere oggi.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-003", "tipo": "contraddice", "perche": "l'agenda promette 5 tipi di tool ma il contenuto reale ne mostra 4"}
+ ]
+ },
+ {
+ "id": "KA-003",
+ "tipo": "dato",
+ "contenuto": "L'agenda iniziale del corso annuncia esplicitamente 'i 5 tipi di tool che puoi integrare', ma il diagramma realmente mostrato più avanti nel corso si intitola '4 Tipi di tool' e classifica solo 4 categorie (Default, Custom, Code, Integration Tools) — una discrepanza osservabile tra quanto promesso in apertura e quanto effettivamente erogato in questa prima terza del video.",
+ "fonte": "NmoOZVTrTXA#0:30 (agenda) e #25:18 (diagramma reale) + voce 1:24 e 25:18",
+ "frame": "frame-0254.png",
+ "ancora": "4. Vedremo i 5 tipi di tool che puoi integrare / titolo canvas \"4 Tipi di tool\"",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-051", "tipo": "quantificato-da", "perche": "KA-051 è il diagramma reale con soli 4 tipi di tool mostrato nel corso"}
+ ]
+ },
+ {
+ "id": "KA-004",
+ "tipo": "dato",
+ "contenuto": "Vapi e Retell sono le due piattaforme di riferimento (\"go to platforms\") che il presentatore considera quando si parla di costruire agenti vocali.",
+ "fonte": "NmoOZVTrTXA#2:24 (dashboard Retell) + voce 2:24-2:30",
+ "frame": "frame-0025.png",
+ "ancora": "Quindi queste sono le due GO TO PLATFORMS.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-005",
+ "tipo": "principio",
+ "contenuto": "Tra le due piattaforme di riferimento, Retell viene giudicata più adatta ai principianti (\"beginner-friendly\") rispetto a Vapi.",
+ "fonte": "NmoOZVTrTXA#2:24 (dashboard Retell) + voce 2:24-2:36",
+ "frame": "frame-0025.png",
+ "ancora": "RETELL è molto più beginner-friendly",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-007", "tipo": "alternativa-a", "perche": "le due piattaforme incarnano due filosofie di prodotto contrapposte"}
+ ]
+ },
+ {
+ "id": "KA-006",
+ "tipo": "esempio",
+ "contenuto": "Un agente di esempio su Retell, di tipo Healthcare Check-In basato su un system prompt in stile Markdown, mostra nell'interfaccia le seguenti metriche operative: costo $0.115 al minuto, latenza compresa tra 820 e 1150 millisecondi, consumo tra 670 e 940 token per chiamata.",
+ "fonte": "NmoOZVTrTXA#2:42 (agente Healthcare Check-In, Retell) + voce 2:42-2:54",
+ "frame": "frame-0028.png",
+ "ancora": "$0.115/min · 820-1150ms latency · 670-940 tokens",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-004", "tipo": "esempio-di", "perche": "metriche reali di un agente Retell citate a supporto del confronto tra piattaforme"}
+ ]
+ },
+ {
+ "id": "KA-007",
+ "tipo": "principio",
+ "contenuto": "Rispetto a Retell, Vapi permette configurazioni più sofisticate (più tipi di tool, provider e opzioni), ma la sua latenza risulta meno controllabile/prevedibile direttamente dall'interfaccia.",
+ "fonte": "NmoOZVTrTXA#3:48 (dashboard Vapi, tab Tools) + voce 3:42-3:54",
+ "frame": "frame-0039.png",
+ "ancora": "vapi permette di fare qualcosa di un po' più sofisticato",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-008",
+ "tipo": "struttura",
+ "contenuto": "La dashboard di Retell organizza le proprie funzioni in tre gruppi principali nella sidebar: BUILD (Agents, Knowledge Base), DEPLOY (Phone Numbers, Batch Call), MONITOR (Call History, Chat History, Analytics, AI Quality Assurance).",
+ "fonte": "NmoOZVTrTXA#2:24 (sidebar Retell)",
+ "frame": "frame-0025.png",
+ "ancora": "BUILD ... Agents ... Knowledge Base ... DEPLOY ... Phone Numbers ... Batch Call ... MONITOR",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-010", "tipo": "alternativa-a", "perche": "organizzazione dell'interfaccia a confronto con quella di Vapi"}
+ ]
+ },
+ {
+ "id": "KA-009",
+ "tipo": "dato",
+ "contenuto": "In Retell gli agenti possono essere di due tipi, visibili nella colonna \"Agent Type\" della lista: \"Single Prompt\" (comportamento governato da un unico system prompt) oppure \"Conversation Flow\" (comportamento strutturato a flusso/nodi).",
+ "fonte": "NmoOZVTrTXA#2:24 (tabella agenti Retell)",
+ "frame": "frame-0025.png",
+ "ancora": "tipo \"Single Prompt\" ... tipo \"Conversation Flow\"",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-010",
+ "tipo": "struttura",
+ "contenuto": "La dashboard di Vapi organizza le proprie funzioni in tre gruppi principali nella sidebar: BUILD (Assistants, Squads, Tools, Phone Numbers, Resources), TEST (Evaluations), OBSERVED (Logs).",
+ "fonte": "NmoOZVTrTXA#1:54 (sidebar Vapi)",
+ "frame": "frame-0020.png",
+ "ancora": "BUILD ... Assistants ... TEST ... Evaluations ... OBSERVED ... Logs",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-011",
+ "tipo": "struttura",
+ "contenuto": "L'anatomia di un agente vocale è composta da tre blocchi in sequenza collegati da frecce: 1) Riconoscimento Vocale (ASR/Speech-to-Text), che converte il parlato dell'utente in testo; 2) Modello Linguistico di Grandi Dimensioni (LLM), che analizza intento, significato e contesto; 3) Sintesi Vocale (TTS/Text-to-Speech), che genera un parlato dal suono naturale a partire dal testo di risposta. Il flusso completo si riassume come: utente parla, trascrizione, l'LLM genera una risposta, viene generato l'audio, l'utente sente la voce.",
+ "fonte": "NmoOZVTrTXA#4:00 (canvas Excalidraw, Anatomia di un Agente Vocale) + voce 4:00-4:24",
+ "frame": "frame-0041.png",
+ "ancora": "utente parla -> trascrizione -> LLM genera risposta -> generazione audio -> utente sente la voce",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-012",
+ "tipo": "definizione",
+ "contenuto": "L'Endpointing è il meccanismo che decide quando il processo di ascolto/risposta dell'agente vocale parte e quando si ferma, cioè quando il turno dell'utente è considerato concluso e l'agente può iniziare a elaborare/rispondere.",
+ "fonte": "NmoOZVTrTXA#4:00 (diagramma Anatomia) + voce 6:54-7:00",
+ "frame": "frame-0070.png",
+ "ancora": "l'ENDPOINTING decide quando il processo parte / si ferma",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-011", "tipo": "parte-di", "perche": "l'endpointing regola il passaggio tra i blocchi della pipeline"}
+ ]
+ },
+ {
+ "id": "KA-013",
+ "tipo": "principio",
+ "contenuto": "Il motivo per cui la pipeline di un agente vocale converte prima il parlato in testo (invece di far elaborare l'audio grezzo direttamente all'LLM) è che l'AI tende a comprendere meglio un testo strutturato rispetto al parlato non elaborato.",
+ "fonte": "NmoOZVTrTXA#4:54 (webcam) + voce 4:54-5:00",
+ "frame": "frame-0050.png",
+ "ancora": "definito testo in particolare tende a capire meglio quello che noi poi vedremo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-011", "tipo": "motiva", "perche": "spiega perché la pipeline converte prima il parlato in testo (blocco ASR)"}
+ ]
+ },
+ {
+ "id": "KA-014",
+ "tipo": "definizione",
+ "contenuto": "Markdown è testo strutturato con simboli di formattazione (es. \"##\" per le intestazioni, \"**...**\" per il grassetto) che permette all'AI di riconoscere la gerarchia delle informazioni in un prompt e capire quali parti contano di più.",
+ "fonte": "NmoOZVTrTXA#5:00 (webcam) + voce 5:00-5:12",
+ "frame": "frame-0052.png",
+ "ancora": "permettono alle AI di capire un po' meglio ok qual è la gerarchia del testo",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-015",
+ "tipo": "esempio",
+ "contenuto": "Incollando testo Markdown (contenente \"##\" e \"**...**\") dentro un documento Google Docs, l'intestazione \"##\" viene automaticamente interpretata e convertita in un vero Heading, mentre i doppi asterischi \"**\" attorno a una parola restano caratteri letterali visibili e non diventano grassetto reale — a dimostrazione che Markdown è solo sintassi testuale, interpretata correttamente solo da chi/cosa è progettato per farlo (come un LLM), non un formato universalmente auto-applicato.",
+ "fonte": "NmoOZVTrTXA#13:24 (Google Docs, incolla da Vapi) + voce 13:20-13:32",
+ "frame": "frame-0135.png",
+ "ancora": "**Standard Shipping:** 5–7 business days — **$5.99**",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-014", "tipo": "esempio-di", "perche": "dimostrazione pratica di cosa significhi che Markdown è solo sintassi testuale"}
+ ]
+ },
+ {
+ "id": "KA-016",
+ "tipo": "dato",
+ "contenuto": "Nella pagina di un assistente Vapi vengono mostrate in evidenza due card statistiche per ogni configurazione: \"Cost\" (costo stimato per minuto di chiamata) e \"Latency\" (latenza media stimata in millisecondi).",
+ "fonte": "NmoOZVTrTXA#7:24 (pagina assistente YouTube Voice Agent, Vapi) + voce 7:24-7:36",
+ "frame": "frame-0075.png",
+ "ancora": "Cost = ~$ 0.09 /min ... Latency = ~ 840 ms",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-017",
+ "tipo": "dato",
+ "contenuto": "Nel campo \"Provider\" della sezione Model di un assistente Vapi sono selezionabili diversi fornitori di modelli LLM, tra cui OpenAI, Azure, Anthropic e Bedrock.",
+ "fonte": "NmoOZVTrTXA#7:48 (pagina assistente Riley, Vapi) + voce 7:48-8:00",
+ "frame": "frame-0079.png",
+ "ancora": "avete openai, azier, entropic, bedrock",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-018",
+ "tipo": "numero",
+ "contenuto": "Nel menu di selezione modello di Vapi, la fascia di modelli OpenAI \"standard/balanced\" mostra: GPT 5 Mini a 1450ms/$0.02 al minuto, GPT 5 Nano a 1350ms/$0.01, GPT 4.1 a 700ms/$0.02, GPT 4.1 Mini a 770ms/$0.01.",
+ "fonte": "NmoOZVTrTXA#8:18 (menu modelli Vapi)",
+ "frame": "frame-0084.png",
+ "ancora": "GPT 4.1 Mini — 770 ms · $ 0.01",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-019",
+ "tipo": "numero",
+ "contenuto": "Nel menu di selezione modello di Vapi, la fascia di modelli OpenAI \"reasoning\" (più lenti) mostra: GPT o3 Cluster a 1670ms/$0.02 al minuto, GPT o3 Mini Cluster a 2400ms/$0.01, GPT o4 Mini Cluster a 1460ms/$0.04.",
+ "fonte": "NmoOZVTrTXA#9:18 (menu modelli Vapi) + voce 9:18-9:24",
+ "frame": "frame-0094.png",
+ "ancora": "1.670, 2.400, 3.90, 5.10",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-024", "tipo": "quantifica", "perche": "i valori del tier reasoning spiegano numericamente il salto di latenza osservato dopo il cambio modello"}
+ ]
+ },
+ {
+ "id": "KA-020",
+ "tipo": "numero",
+ "contenuto": "Nel menu di selezione modello di Vapi, la fascia di modelli OpenAI più veloci (\"Fastest\"/\"Realtime\") mostra: GPT 4o Mini Cluster a 390ms/$0.01 al minuto, GPT 4.1 Nano a 510ms/$0.01, GPT 4o Cluster a 600ms/$0.02, GPT Realtime Cluster a 450ms/$0.27, GPT Realtime Mini a 400ms/$0.09.",
+ "fonte": "NmoOZVTrTXA#10:18 e #10:48 (menu modelli Vapi)",
+ "frame": "frame-0104.png",
+ "ancora": "GPT 4o Mini Cluster — 390 ms · $ 0.01 ... GPT 4.1 Nano — 510 ms · $ 0.01",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-021",
+ "tipo": "esempio",
+ "contenuto": "Esempio pratico di quando NON serve un modello LLM ultra-veloce: se l'agente deve effettuare chiamate schedulate (es. contattare fornitori alle 9 del mattino per raccogliere dati), la velocità di risposta non è un fattore critico, a differenza di uno scenario di customer service in tempo reale.",
+ "fonte": "NmoOZVTrTXA#10:18 (menu modelli Vapi) + voce 10:12-10:24",
+ "frame": "frame-0104.png",
+ "ancora": "se i miei fornitori sanno che alle 9 di mattina li chiamo per raccogliere dei dati, non sarà importante avere un AI che... faccia tutto real time",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-020", "tipo": "esempio-di", "perche": "caso pratico in cui non serve un modello del tier più veloce"}
+ ]
+ },
+ {
+ "id": "KA-022",
+ "tipo": "struttura",
+ "contenuto": "In Vapi, il flusso di pubblicazione di un assistente (\"Publish Assistant\") è composto da 3 step in sequenza: 1) Review Changes (confronto diff con la versione già pubblicata), 2) Configure Structured Output (tracciamento performance delle chiamate), 3) Scorecard (valutazione automatica delle chiamate) — ciascuno step può essere saltato con il pulsante/scorciatoia \"Skip & Publish\".",
+ "fonte": "NmoOZVTrTXA#11:00 (modale Publish Assistant, Vapi) + voce 11:00-11:06",
+ "frame": "frame-0111.png",
+ "ancora": "Step 1 of 3 ... Review Changes ... Configure Structured Output ... Scorecard",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-023",
+ "tipo": "definizione",
+ "contenuto": "Gli \"Structured Outputs\" in Vapi permettono di estrarre automaticamente dati strutturati dalle conversazioni (secondo uno schema tipizzato) per analizzarne la qualità in produzione; la piattaforma consiglia di configurarne almeno 5, con esempi predefiniti come \"Booking Status\" (stringa), \"Appointment Booked\" (booleano), \"Success Evaluation\" (numero) e \"Date\" (stringa).",
+ "fonte": "NmoOZVTrTXA#11:00 (modale Publish Assistant, Vapi)",
+ "frame": "frame-0111.png",
+ "ancora": "We recommend you add at least 5 structured outputs",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-022", "tipo": "parte-di", "perche": "è il secondo dei tre step del flusso di pubblicazione"}
+ ]
+ },
+ {
+ "id": "KA-024",
+ "tipo": "numero",
+ "contenuto": "Cambiare il modello LLM di un assistente Vapi da GPT 4.1 Mini a GPT o3 Cluster e ripubblicare fa salire la latenza reale mostrata nella card \"Latency\" dell'assistente da circa 1220ms a circa 1670ms.",
+ "fonte": "NmoOZVTrTXA#11:12 (pagina Riley dopo publish) + voce 11:12-11:22",
+ "frame": "frame-0113.png",
+ "ancora": "vedete che la latenza è 1.670",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-025",
+ "tipo": "struttura",
+ "contenuto": "Nell'interfaccia di un assistente Vapi, la sezione \"Model\" governa l'LLM (comprensione ed elaborazione della risposta), la sezione \"Voice\" governa il TTS (sintesi vocale in output), e la sezione \"Transcriber\" governa l'ASR/STT (trascrizione dell'input vocale) — una corrispondenza diretta con i tre blocchi dell'anatomia teorica dell'agente vocale.",
+ "fonte": "NmoOZVTrTXA#11:48 (tab Voice/Transcriber, Riley) + voce 11:48-11:54",
+ "frame": "frame-0119.png",
+ "ancora": "facciamo text to speech ... 🔊 VOICE ... ☰ TRANSCRIBER",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-011", "tipo": "applica", "perche": "mappa le sezioni concrete della dashboard Vapi sui 3 blocchi teorici dell'anatomia"}
+ ]
+ },
+ {
+ "id": "KA-026",
+ "tipo": "principio",
+ "contenuto": "Il presentatore dichiara esplicitamente che il System Prompt è \"la cosa più importante\" dell'intero agente vocale, più determinante della scelta del modello LLM, della voce o del transcriber.",
+ "fonte": "NmoOZVTrTXA#12:18 (pagina Riley, tab Model) + voce 12:12-12:24",
+ "frame": "frame-0124.png",
+ "ancora": "Abbiamo detto che questa è la cosa più importante ed è un prompt",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "motiva", "perche": "giustifica l'approfondimento sulla struttura del system prompt che segue subito dopo"}
+ ]
+ },
+ {
+ "id": "KA-027",
+ "tipo": "dato",
+ "contenuto": "In Vapi, ogni assistente mostra nella lista un'etichetta compatta con il proprio stack tecnologico nel formato \"transcriber · llm · voice\" (ad esempio \"deepgram · openai · vapi\" oppure \"deepgram · openai · 11labs\"), che riassume a colpo d'occhio la configurazione tecnica scelta per quell'assistente.",
+ "fonte": "NmoOZVTrTXA#1:54 (elenco assistenti Vapi)",
+ "frame": "frame-0020.png",
+ "ancora": "deepgram · openai · vapi",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-028",
+ "tipo": "dato",
+ "contenuto": "Tra i provider vocali (TTS) selezionabili in Vapi per un assistente figurano: Vapi (nativo), Cartesia, 11labs, Rime AI, LMNT, Deepgram, OpenAI, Azure, MiniMax, Neuphonic.",
+ "fonte": "NmoOZVTrTXA#21:06 (menu provider voce, Riley) + voce 21:06-21:12",
+ "frame": "frame-0212.png",
+ "ancora": "Vapi ... Cartesia, 11labs, Rime AI, LMNT, Deepgram, OpenAI, Azure, MiniMax, Neuphonic",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-029", "tipo": "precede", "perche": "la lista dei provider vocali precede il problema pratico di compatibilità lingua/voce"}
+ ]
+ },
+ {
+ "id": "KA-029",
+ "tipo": "avvertimento",
+ "contenuto": "Quando si imposta la lingua del transcriber di un assistente Vapi (es. italiano), l'interfaccia mostra un avviso esplicito che invita a verificare che anche la voce (TTS) selezionata sia compatibile con quella lingua, per evitare errori di sintesi vocale.",
+ "fonte": "NmoOZVTrTXA#31:30 (tab Model, Riley, sezione Voice)",
+ "frame": "frame-0316.png",
+ "ancora": "You are using it language for your transcriber. Make sure you choose a voice compatible with it.",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-030",
+ "tipo": "esempio",
+ "contenuto": "Un secondo esempio di prompt aziendale strutturato in Markdown (assistente demo \"Riley\" per il negozio fittizio \"ShopEase Online Store\") organizza le informazioni in sezioni: \"## General Information\" (nome azienda, sede, contatti), \"## Ordering & Payment\" (metodi di pagamento accettati, conferma ordine via email, policy su promo code e gift card, finestra di modifica ordine di 1 ora), \"## Shipping & Delivery\" (tariffe per fascia di spedizione, tracking, spedizione internazionale), \"## Returns & Refunds\" (finestra di reso di 30 giorni e condizioni).",
+ "fonte": "NmoOZVTrTXA#12:30 e #11:30 (system prompt Riley/ShopEase, Vapi)",
+ "frame": "frame-0126.png",
+ "ancora": "## General Information ... ## Ordering & Payment",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-043", "tipo": "alternativa-a", "perche": "secondo esempio reale di prompt aziendale in verticale diversa (e-commerce) con lo stesso schema a sezioni"}
+ ]
+ },
+ {
+ "id": "KA-031",
+ "tipo": "struttura",
+ "contenuto": "La struttura di un buon system prompt per agente vocale, secondo il presentatore, è composta da 9 componenti (8 concettuali più gli esempi): 1) Identità & Personalità, 2) Stile di Parlata, 3) Regole di Interazione (Guidelines), 4) Azioni Concrete (Flusso Task), 5) Informazioni Aziendali (Contesto), 6) Rilevamento Urgenza, 7) Profili Chiamante, 8) Tool & Guardrail, 9) Gestione Errori & Esempio.",
+ "fonte": "NmoOZVTrTXA#13:42 (canvas Excalidraw, Struttura di un system prompt) + voce 13:36-13:48",
+ "frame": "frame-0138.png",
+ "ancora": "abbiamo otto componenti, se non sbaglio, anzi, nove, perché ho messo anche gli esempi",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-032",
+ "tipo": "definizione",
+ "contenuto": "Componente 1 \"Identità & Personalità\" del system prompt: definisce che l'agente è una persona reale (non un'AI) che lavora lì da anni, con un nome proprio, cordiale, che suona come un collega dell'azienda.",
+ "fonte": "NmoOZVTrTXA#13:54 (riquadro 1, canvas) + voce 13:48-14:00",
+ "frame": "frame-0140.png",
+ "ancora": "Persona reale (non AI). Lavora da anni.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-033",
+ "tipo": "regola",
+ "contenuto": "Componente 2 \"Stile di Parlata\" del system prompt: prescrive frasi corte, parole naturali di riempimento (es. \"certo\", \"capito\"), numeri scritti per esteso (es. \"ventitré\" invece di \"23\"), e nessun elenco puntato, perché l'agente sta parlando ad alta voce e non scrivendo.",
+ "fonte": "NmoOZVTrTXA#14:24 (riquadro 2, canvas) + voce 14:12-14:30",
+ "frame": "frame-0145.png",
+ "ancora": "Frasi corte. Parole naturali (es. certo, capito).",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-034",
+ "tipo": "regola",
+ "contenuto": "Componente 3 \"Regole di Interazione (Guidelines)\" del system prompt: una sola domanda per turno, massimo 15 parole per risposta quando possibile, riconoscere sempre quanto detto in precedenza dall'utente prima di proseguire, presentare al massimo 2 opzioni alla volta.",
+ "fonte": "NmoOZVTrTXA#15:12 (riquadro 3, canvas) + voce 14:42-14:54",
+ "frame": "frame-0153.png",
+ "ancora": "Una domanda per volta. Max 15 parole.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-035",
+ "tipo": "procedura",
+ "contenuto": "Componente 4 \"Azioni Concrete (Flusso Task)\" del system prompt: una sequenza di step numerati che l'agente deve seguire in ordine, ad esempio Step 1 Saluto, Step 2 Chiedi il motivo/intento della chiamata, Step 3 Raccogli i dati necessari (nome, informazioni), Step 4 Conferma finale.",
+ "fonte": "NmoOZVTrTXA#15:12 (riquadro 4, canvas) + voce 15:12-15:24",
+ "frame": "frame-0153.png",
+ "ancora": "Step 1: Saluto. Step 2: Chiedi motivo.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-036",
+ "tipo": "definizione",
+ "contenuto": "Componente 5 \"Informazioni Aziendali (Contesto)\" del system prompt: contiene servizi offerti, orari, zone operative, prezzi solo se effettivamente noti, e una variabile dinamica per l'orario corrente (es. \"Orario Attuale: {{now}}\").",
+ "fonte": "NmoOZVTrTXA#16:12 (riquadro 5, canvas) + voce 16:12-16:30",
+ "frame": "frame-0163.png",
+ "ancora": "Servizi, orari, zone. Prezzi solo se noti. Orario Attuale: {{now}}.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-037",
+ "tipo": "regola",
+ "contenuto": "Componente 6 \"Rilevamento Urgenza\" del system prompt: un elenco di parole chiave che segnalano un'urgenza (es. \"allagamento\" per un idraulico), con l'istruzione di saltare il small talk, offrire il primo slot disponibile e trasferire la chiamata a un umano se non c'è disponibilità immediata.",
+ "fonte": "NmoOZVTrTXA#14:36 (riquadro 6, canvas) + voce 16:42-16:54",
+ "frame": "frame-0147.png",
+ "ancora": "Keywords (es. allagamento). Salta small talk.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-038",
+ "tipo": "regola",
+ "contenuto": "Componente 7 \"Profili Chiamante\" del system prompt: adatta il comportamento dell'agente al tipo di persona al telefono — a chi chiede il prezzo si guida verso un preventivo/visita, con una persona anziana o lenta si rallenta e si ripete, con una persona frustrata si usa empatia prima della soluzione, con un sospetto competitor si forniscono solo informazioni di prenotazione.",
+ "fonte": "NmoOZVTrTXA#16:12 (riquadro 7, canvas) + voce 16:54-17:06",
+ "frame": "frame-0163.png",
+ "ancora": "Prezzi: guida a preventivo locale. Anziano/lento: rallenta, ripeti. Frustrato: empatia prima. Competitor: solo info prenotazione.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-039",
+ "tipo": "regola",
+ "contenuto": "Componente 8 \"Tool & Guardrail\" del system prompt: impone che il nome di ogni tool richiamato nel prompt sia identico al nome della funzione realmente creata sulla piattaforma (es. \"check_availability\"), vieta di inventare informazioni, vieta di effettuare prenotazioni senza conferma esplicita, e prescrive di chiudere la chiamata se il chiamante è abusivo.",
+ "fonte": "NmoOZVTrTXA#16:54 (riquadro 8, canvas) + voce 16:54-17:06",
+ "frame": "frame-0170.png",
+ "ancora": "Nomi identici (`check_availability`). Non inventare. No prenotazioni senza conferma. Chiudi se abusivo.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-040",
+ "tipo": "procedura",
+ "contenuto": "Componente 9 \"Gestione Errori & Esempio\" del system prompt: definisce le reazioni standard nei casi limite — se l'agente non capisce (ripeti la domanda), se l'utente è confuso (torna indietro nel discorso), se c'è silenzio prolungato (chiedi \"ci sei ancora?\") — e include un esempio concreto di scambio Utente-Agente-Tool per illustrare il flusso atteso.",
+ "fonte": "NmoOZVTrTXA#16:54 (riquadro 9, canvas) + voce 18:00-18:06",
+ "frame": "frame-0170.png",
+ "ancora": "Non capito: ripeti. Confuso: torna indietro. Silenzio: ehi, ci sei?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-041",
+ "tipo": "avvertimento",
+ "contenuto": "Un errore imparato \"a proprie spese\" dal presentatore sul suo primo agente vocale (circa nove mesi prima) è stato non includere nel prompt la regola esplicita \"non inventare cose\": da quell'esperienza deriva il guardrail \"Non inventare\" oggi presente nel componente Tool & Guardrail.",
+ "fonte": "NmoOZVTrTXA#17:30 (canvas, riquadro 8 sottolineato) + voce 17:24-17:36",
+ "frame": "frame-0176.png",
+ "ancora": "il primo agente che ho fatto nove mesi fa era non ho detto non inventare cose",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-039", "tipo": "motiva", "perche": "l'esperienza negativa personale ha originato la regola del guardrail anti-invenzione"}
+ ]
+ },
+ {
+ "id": "KA-042",
+ "tipo": "dato",
+ "contenuto": "Il presentatore mette a disposizione gratuitamente, su un documento Notion pubblico (accessibile anche senza iscrizione alla community a pagamento), un \"Prompt Generale\" linea guida basato su un principio 80-20, riutilizzabile come base per costruire il proprio agente vocale.",
+ "fonte": "NmoOZVTrTXA#18:42 (pagina Notion, Prompt Generale) + voce 18:42-19:00",
+ "frame": "frame-0188.png",
+ "ancora": "vi ho messo sostanzialmente un 80-20 di quello che metterai",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-044", "tipo": "precede"}
+ ]
+ },
+ {
+ "id": "KA-043",
+ "tipo": "struttura",
+ "contenuto": "Il prompt generale template su Notion è organizzato in 5 macro-sezioni Markdown, in ordine: # IDENTITÀ, # STILE, # LINEE GUIDA RISPOSTA, # TASK, # CONTESTO — una versione condensata dei componenti spiegati sulla lavagna.",
+ "fonte": "NmoOZVTrTXA#18:42 (pagina Notion, Prompt Generale)",
+ "frame": "frame-0188.png",
+ "ancora": "# IDENTITÀ ... # STILE ... # LINEE GUIDA RISPOSTA ... # TASK ... # CONTESTO",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-031", "tipo": "alternativa-a", "perche": "versione condensata in 5 macro-sezioni degli stessi 9 componenti spiegati sulla lavagna"}
+ ]
+ },
+ {
+ "id": "KA-044",
+ "tipo": "esempio",
+ "contenuto": "Il caso di studio usato come esempio ricorrente per il resto del corso è un agente vocale receptionist di nome \"Marco\", per una clinica dentale fittizia chiamata \"Giovanni Beggiato Clinica Dentale\", costruito popolando il template generale con questo caso specifico.",
+ "fonte": "NmoOZVTrTXA#19:12 (pagina Notion, Prompt for VAPI) + voce 18:53-19:12",
+ "frame": "frame-0193.png",
+ "ancora": "Sei Marco, il receptionist della Giovanni Beggiato Clinica Dentale.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-042", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-045",
+ "tipo": "procedura",
+ "contenuto": "Per applicare un prompt scritto su Notion a un assistente Vapi, la procedura è: copiare il testo dal documento Notion, aprire il campo \"System Prompt\" dell'assistente nella dashboard Vapi, cancellare il contenuto placeholder esistente e incollare il nuovo testo.",
+ "fonte": "NmoOZVTrTXA#19:24 (dashboard Vapi, Riley) + voce 19:18-19:24",
+ "frame": "frame-0195.png",
+ "ancora": "qua dentro, copio, cancello e incollo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-044", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-046",
+ "tipo": "avvertimento",
+ "contenuto": "Dopo aver incollato nell'assistente Vapi \"Riley\" un prompt italiano (il caso \"Marco\") e aver pubblicato, il primo test vocale mostra che l'assistente risponde ancora in inglese con il messaggio di apertura originale (\"Thank you for calling...\"), anche se l'utente parla in italiano — perché il campo \"First Message\" e la configurazione Voice/Transcriber non erano ancora state aggiornate insieme al System Prompt.",
+ "fonte": "NmoOZVTrTXA#21:54 (chiamata di test dal vivo, Riley) + voce 21:54-22:06",
+ "frame": "frame-0220.png",
+ "ancora": "Thank you for calling Shopee's online store. This is Riley, your online assistant.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-047", "tipo": "corretto-da"}
+ ]
+ },
+ {
+ "id": "KA-047",
+ "tipo": "procedura",
+ "contenuto": "Per far rispondere correttamente in italiano un assistente Vapi non basta cambiare il System Prompt: bisogna anche impostare un provider vocale compatibile nella sezione Voice (es. passare da Vapi/OpenAI a 11labs) e riscrivere il campo \"First Message\" con un testo nella lingua desiderata.",
+ "fonte": "NmoOZVTrTXA#21:06 (Riley, menu provider voce) + voce 21:06-21:12",
+ "frame": "frame-0212.png",
+ "ancora": "la nostra voce, metteremo 11 labs",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-048",
+ "tipo": "comando",
+ "contenuto": "L'interfaccia \"Chat with Assistant\" di Vapi permette di testare il comportamento di un assistente in forma scritta (conversazione testuale) invece che tramite una chiamata vocale reale, utile per iterare più rapidamente sul comportamento del prompt.",
+ "fonte": "NmoOZVTrTXA#24:06 (pannello Chat with Assistant, Riley) + voce 23:54-24:06",
+ "frame": "frame-0242.png",
+ "ancora": "voglio andare in una chat",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-049",
+ "tipo": "avvertimento",
+ "contenuto": "Testando l'assistente \"Marco\" con una richiesta di prenotazione, l'agente dichiara di voler verificare la disponibilità (\"controllo se abbiamo posto per domani alle dieci\") pur non avendo, in quel momento, alcun accesso reale ad agenda, CRM o altro sistema esterno: l'agente sta simulando un'azione che non può realmente compiere.",
+ "fonte": "NmoOZVTrTXA#24:42 (webcam, riflessione post-test) + voce 24:42-24:54",
+ "frame": "frame-0248.png",
+ "ancora": "questo però non può farlo, perché al momento noi non gli abbiamo dato nessun modo di accedere ad un'agenda, controllare il CRM",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-050", "tipo": "motiva"}
+ ]
+ },
+ {
+ "id": "KA-050",
+ "tipo": "principio",
+ "contenuto": "Senza tool collegati, un agente vocale può soltanto conversare (parlare/scrivere) ma non può compiere azioni reali come verificare una disponibilità, accedere a un CRM o effettuare una prenotazione — il che lo rende di utilità limitata per un'azienda reale, per quanto ben scritto sia il suo prompt.",
+ "fonte": "NmoOZVTrTXA#24:48 (webcam) + voce 24:48-25:00",
+ "frame": "frame-0249.png",
+ "ancora": "La gente ad ora può solo cattare o parlare.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-051", "tipo": "motiva", "perche": "il limite osservato è la ragione per cui il corso introduce i tool"}
+ ]
+ },
+ {
+ "id": "KA-051",
+ "tipo": "struttura",
+ "contenuto": "Esistono 4 tipologie concettuali di tool integrabili in un agente vocale, secondo la classificazione del presentatore: Default Tools, Custom Tools, Code Tools, Integration Tools — non è importante ricordarne i nomi esatti, quanto avere un modello mentale di come ragionare per sistemi.",
+ "fonte": "NmoOZVTrTXA#25:18 (canvas Excalidraw, 4 Tipi di tool) + voce 25:18-25:30",
+ "frame": "frame-0254.png",
+ "ancora": "Allora, abbiamo quattro tipologie di strumenti",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-052",
+ "tipo": "definizione",
+ "contenuto": "I Default Tools sono funzionalità preinstallate direttamente dalla piattaforma (es. Vapi), come il controllo e il trasferimento della chiamata, senza bisogno di configurazione esterna.",
+ "fonte": "NmoOZVTrTXA#25:24 (canvas, riquadro Default Tools) + voce 25:24-25:30",
+ "frame": "frame-0255.png",
+ "ancora": "Built-in Vapi. Control and transfer.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-051", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-053",
+ "tipo": "definizione",
+ "contenuto": "I Custom Tools sono integrazioni costruite su misura per l'azienda, che si connettono a sistemi propri (es. un CRM aziendale) tramite webhook verso il proprio backend.",
+ "fonte": "NmoOZVTrTXA#25:30 (canvas, riquadro Custom Tools) + voce 25:30-25:36",
+ "frame": "frame-0256.png",
+ "ancora": "Your logic. Webhooks to your system.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-051", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-054",
+ "tipo": "principio",
+ "contenuto": "La differenza principale tra Custom Tools e Code Tools è dove \"vivono\": i Custom Tools si connettono a un sistema/database esterno alla piattaforma (il proprio), mentre i Code Tools eseguono codice (TypeScript) direttamente dentro la piattaforma stessa (es. Vapi), senza bisogno di un backend esterno.",
+ "fonte": "NmoOZVTrTXA#26:30 (canvas, frecce Custom/Code Tools) + voce 26:00-26:30",
+ "frame": "frame-0266.png",
+ "ancora": "la differenza è dove vivono, i custom tools sono cose che si connettono al vostro database... i code tool vivono dentro vapi",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-051", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-055",
+ "tipo": "definizione",
+ "contenuto": "Gli Integration Tools collegano l'agente vocale a workflow di automazione già esistenti su piattaforme terze come Make.com o GHL (Go High Level).",
+ "fonte": "NmoOZVTrTXA#25:18 (canvas, riquadro Integration Tools)",
+ "frame": "frame-0254.png",
+ "ancora": "Automated workflows. (e.g., Make, GHL).",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-051", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-056",
+ "tipo": "dato",
+ "contenuto": "Nella creazione pratica di un nuovo tool, Vapi offre queste tipologie predefinite tra cui scegliere: Custom Tool, DTMF, SIP Request, Query, End Call, Voicemail, Transfer Call, Handoff, Send Text — una classificazione tecnica della piattaforma, distinta dalla classificazione concettuale a 4 tipi usata a scopo didattico.",
+ "fonte": "NmoOZVTrTXA#27:30 (sidebar creazione tool, Vapi) + voce 27:30-27:42",
+ "frame": "frame-0276.png",
+ "ancora": "Custom Tool ... DTMF ... SIP Request ... Query ... End Call ... Voicemail ... Transfer Call ... Handoff ... Send Text",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-051", "tipo": "alternativa-a", "perche": "classificazione pratica della piattaforma Vapi, diversa dalla classificazione concettuale a 4 tipi del presentatore"}
+ ]
+ },
+ {
+ "id": "KA-057",
+ "tipo": "definizione",
+ "contenuto": "In Vapi, un tool di tipo \"Query\" permette di collegare una o più Knowledge Base basate su file caricati, che l'assistente può interrogare per rispondere a domande specifiche (es. una FAQ aziendale).",
+ "fonte": "NmoOZVTrTXA#27:30 (pagina knowledge_tool, Vapi) + voce 27:30-27:42",
+ "frame": "frame-0276.png",
+ "ancora": "avete query che vi permettono di cercare cose dentro di database",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-056", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-058",
+ "tipo": "procedura",
+ "contenuto": "Procedura per creare un tool \"Query\" collegato a una knowledge base in Vapi: creare il tool, assegnargli nome e descrizione, poi aggiungere una Knowledge Base specificando nome, descrizione, il modello AI da usare per interrogarla (es. Gemini 2.0 Flash) e i file sorgente da cui deve attingere.",
+ "fonte": "NmoOZVTrTXA#29:00 (pagina tool, sezione Knowledge Base) + voce 28:47-29:03",
+ "frame": "frame-0291.png",
+ "ancora": "add knowledge base, new knowledge base... e poi che modello utilizziamo, gemini flash fa benissimo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-057", "tipo": "applica"}
+ ]
+ },
+ {
+ "id": "KA-059",
+ "tipo": "regola",
+ "contenuto": "Vapi richiede obbligatoriamente sia una \"Description\" sia almeno un file selezionato per poter salvare una Knowledge Base collegata a un tool Query: in loro assenza mostra gli errori di validazione \"Description is required\" e \"At least one file ID is required\".",
+ "fonte": "NmoOZVTrTXA#29:00 (card Knowledge Base #1, Vapi)",
+ "frame": "frame-0291.png",
+ "ancora": "Description is required ... At least one file ID is required",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-058", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-060",
+ "tipo": "regola",
+ "contenuto": "In Vapi, il campo \"Name\" di una Knowledge Base deve iniziare con una lettera e può contenere solo lettere, numeri e underscore (niente spazi o altri caratteri speciali).",
+ "fonte": "NmoOZVTrTXA#29:00 (card Knowledge Base #1, Vapi)",
+ "frame": "frame-0291.png",
+ "ancora": "Must start with a letter and contain only letters, numbers, and underscores.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-058", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-061",
+ "tipo": "procedura",
+ "contenuto": "I file da usare come Knowledge Base in Vapi si caricano tramite la sezione dedicata \"Files\" della dashboard (upload diretto, es. di un PDF); una volta caricati diventano selezionabili sia nel campo Files di un tool Query sia direttamente nella sezione Files di un assistente.",
+ "fonte": "NmoOZVTrTXA#30:00 (sezione Files, Vapi) + voce 29:54-30:06",
+ "frame": "frame-0301.png",
+ "ancora": "upload a file, andremo nel desktop e ho Giovanni Beggiato Knowledge Base",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-058", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-062",
+ "tipo": "esempio",
+ "contenuto": "Esempio concreto costruito nel corso: un tool Query chiamato \"knowledge_base_clinica\", con una Knowledge Base interna chiamata \"beggiato_knowledge_base\" basata sul modello \"Gemini 2.0 Flash\", alimentata dal file \"giovanni_beggiato_knowledge_base.pdf\".",
+ "fonte": "NmoOZVTrTXA#31:06 (pagina tool knowledge_base_clinica, Vapi)",
+ "frame": "frame-0312.png",
+ "ancora": "knowledge_base_clinica ... beggiato_knowledge_base ... Gemini 2.0 Flash",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-058", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-063",
+ "tipo": "struttura",
+ "contenuto": "Il documento PDF di esempio usato come knowledge base della clinica dentale fittizia è organizzato in sezioni numerate progressive: 1. Identità della clinica, 2. Orari e Contatti, 3. Team Medico, 4. Servizi Offerti, poi Regole di prenotazione, 7. Protocollo Urgenze, 8. Domande Frequenti (FAQ) — un modello di documento aziendale strutturato riutilizzabile come knowledge base per un agente vocale.",
+ "fonte": "NmoOZVTrTXA#30:18 (PDF Giovanni Beggiato Knowledge Base) + voce 30:24-30:36",
+ "frame": "frame-0304.png",
+ "ancora": "1. IDENTITA DELLA CLINICA ... 3. TEAM MEDICO ... 4. SERVIZI OFFERTI ... 7. PROTOCOLLO URGENZE ... 8. DOMANDE FREQUENTI (FAQ)",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-062", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-064",
+ "tipo": "regola",
+ "contenuto": "La sezione \"Regole di prenotazione\" del documento di esempio definisce policy operative concrete: la prima visita è sempre gratuita (durata 30 minuti), una visita urgente ha uno slot dedicato ogni giorno entro 24 ore, la disdetta va comunicata almeno 24 ore prima, un no-show ripetuto oltre due volte va segnalato alla segreteria.",
+ "fonte": "NmoOZVTrTXA#30:18 (PDF, sezione Regole di prenotazione)",
+ "frame": "frame-0304.png",
+ "ancora": "Prima visita: sempre gratuita, durata 30 minuti. ... Disdetta: il paziente deve disdire almeno 24 ore prima.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-063", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-065",
+ "tipo": "esempio",
+ "contenuto": "La sezione \"Protocollo Urgenze\" del documento elenca le parole chiave che attivano una gestione prioritaria della chiamata: dolore acuto o pulsante, ascesso o gonfiore al viso/collo, trauma al dente, dente rotto con dolore, sangue che non si ferma.",
+ "fonte": "NmoOZVTrTXA#30:18 (PDF, barra 7. PROTOCOLLO URGENZE)",
+ "frame": "frame-0304.png",
+ "ancora": "Dolore acuto o pulsante ... Ascesso o gonfiore al viso / collo",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-063", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-066",
+ "tipo": "principio",
+ "contenuto": "Collegare un file a un tool di tipo Query (es. \"knowledge_base_clinica\") non equivale automaticamente a renderlo disponibile all'assistente vocale: il file/tool va comunque associato esplicitamente all'assistente (tramite la sua sezione Files) perché la conoscenza sia effettivamente utilizzabile in conversazione.",
+ "fonte": "NmoOZVTrTXA#31:24 (pagina Riley, dopo salvataggio tool) + voce 31:16-31:23",
+ "frame": "frame-0315.png",
+ "ancora": "non è ancora collegata al nostro agente, perché per farlo possiamo andare in Reilly",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-058", "tipo": "corregge", "perche": "chiarisce che collegare il file al tool non basta: va collegato anche all'assistente"}
+ ]
+ },
+ {
+ "id": "KA-067",
+ "tipo": "dato",
+ "contenuto": "Quando si collega un file come Knowledge Base direttamente a un assistente Vapi, il diff mostrato prima della pubblicazione include nel JSON del modello un campo model.knowledgeBase con un array fileIds (l'ID del file caricato) e \"provider\": \"google\" — a conferma che la Knowledge Base è tecnicamente gestita da un modello Google Gemini, non nativamente da Vapi.",
+ "fonte": "NmoOZVTrTXA#31:36 (modale Publish Assistant, diff JSON)",
+ "frame": "frame-0317.png",
+ "ancora": "\"fileIds\": [\"78cd9ce2-b99e-478c-9a96-6388b5dd071b\"], \"provider\": \"google\"",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-066", "tipo": "quantifica"}
+ ]
+ },
+ {
+ "id": "KA-068",
+ "tipo": "regola",
+ "contenuto": "Nella sezione \"TOOL\" del system prompt, il nome di ogni funzione richiamata deve essere identico al nome della funzione realmente creata sulla piattaforma, e va accompagnato dalla condizione/motivo per cui va chiamata (es. check_availability - solo dopo aver raccolto nome e tipo di visita richiesta).",
+ "fonte": "NmoOZVTrTXA#31:24 (system prompt Riley, sezione TOOL)",
+ "frame": "frame-0315.png",
+ "ancora": "Il nome deve essere IDENTICO al nome della funzione creata in Vapi.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-039", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-069",
+ "tipo": "esempio",
+ "contenuto": "Un log di esempio di chiamata riuscita mostra la sequenza di tool invocati durante la conversazione: check_availability (per verificare gli orari disponibili), book_appointment (dopo la conferma esplicita del paziente), end_call (chiusura naturale della chiamata), client_database (salvataggio dei dati del paziente a fine chiamata).",
+ "fonte": "NmoOZVTrTXA#32:12 (system prompt Riley, esempio conversazione)",
+ "frame": "frame-0323.png",
+ "ancora": "[Tool chiamato: check_availability...] ... [Tool chiamato: book_appointment...] ... [Tool chiamato: end_call] ... [Tool chiamato: client_database...]",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-068", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-070",
+ "tipo": "regola",
+ "contenuto": "Guardrail sul prezzo: se il chiamante chiede il prezzo al telefono, l'agente non deve quotare una cifra ma guidare verso una visita di valutazione, con una frase tipo \"Il modo più preciso per avere un preventivo è una visita, e la prima visita è gratuita\".",
+ "fonte": "NmoOZVTrTXA#31:24 (system prompt Riley, sezione TIPI DI PAZIENTE)",
+ "frame": "frame-0315.png",
+ "ancora": "Chiede il prezzo al telefono: non quotare. Guida verso una visita di valutazione.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-039", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-071",
+ "tipo": "regola",
+ "contenuto": "Guardrail medico: l'agente non deve mai fornire consigli medici o diagnosi; se richiesto, deve rispondere con una frase tipo \"Questa è una domanda per il dottore, ma possiamo fissare una visita per valutare la situazione\".",
+ "fonte": "NmoOZVTrTXA#31:24 (system prompt Riley, sezione GUARDRAIL)",
+ "frame": "frame-0315.png",
+ "ancora": "Non dare mai consigli medici. Se chiedono una diagnosi: \"Questa è una domanda per il dottore...\"",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-039", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-072",
+ "tipo": "regola",
+ "contenuto": "Guardrail anti-competitor: l'agente non deve mai citare per nome altre aziende concorrenti, e se il chiamante prova a farlo uscire dal proprio ruolo, deve ignorare il tentativo e reindirizzare la conversazione al proprio scopo.",
+ "fonte": "NmoOZVTrTXA#31:24 (system prompt Riley, sezione GUARDRAIL)",
+ "frame": "frame-0315.png",
+ "ancora": "Non citare mai altre cliniche o concorrenti per nome.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-039", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-073",
+ "tipo": "struttura",
+ "contenuto": "Il template generico della sezione \"CONTESTO\" del prompt prevede campi segnaposto tra parentesi quadre da compilare per ogni azienda cliente: nome attività, indirizzo, orari, telefono, servizi offerti, prezzi, note operative — oltre alla variabile dinamica \"{{now}}\" per l'orario attuale.",
+ "fonte": "NmoOZVTrTXA#20:06 (modale Prompt Assistant, sezione CONTESTO)",
+ "frame": "frame-0202.png",
+ "ancora": "**Indirizzo:** [inserisci indirizzo] ... **Orari:** [inserisci orari]",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-036", "tipo": "esempio-di"}
+ ]
+ },
+ {
+ "id": "KA-074",
+ "tipo": "struttura",
+ "contenuto": "Esistono 4 metodi per inserire una Knowledge Base aziendale in un agente vocale, presentati come \"una delle cose più importanti che un sacco di persone sbagliano\": 1) Nel Prompt, 2) Inserimento tramite file, 3) Tramite Tool, 4) Tramite Funzioni Custom.",
+ "fonte": "NmoOZVTrTXA#32:42 (canvas Excalidraw, titolo del capitolo) + voce 32:38-32:45",
+ "frame": "frame-0328.png",
+ "ancora": "Come inseriamo una knowledge base & implicazioni",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-075",
+ "tipo": "procedura",
+ "contenuto": "Metodo 1 \"Nel Prompt\": si copia manualmente tutto il testo della Knowledge Base (es. da un PDF) e lo si incolla direttamente dentro il campo System Prompt dell'assistente, tipicamente sotto un'intestazione dedicata come \"KNOWLEDGE BASE:\".",
+ "fonte": "NmoOZVTrTXA#33:30 (system prompt Riley, cursore dopo NOTE) + voce 33:30-33:38",
+ "frame": "frame-0336.png",
+ "ancora": "e gli dicessi knowledge, base, giusto?",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-074", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-076",
+ "tipo": "anti-pattern",
+ "contenuto": "Incollare il contenuto di un PDF direttamente nel system prompt senza pulizia porta con sé anche gli elementi di impaginazione del documento originale (es. \"Documento riservato - uso interno Pagina 2\", intestazioni ripetute), che possono anche rompere la numerazione degli step propri del prompt quando si mescola con la numerazione interna del documento incollato.",
+ "fonte": "NmoOZVTrTXA#33:42 (system prompt Riley, testo incollato dal PDF) + voce 34:02-34:05",
+ "frame": "frame-0338.png",
+ "ancora": "Documento riservato - uso interno Pagina 2",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-075", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-077",
+ "tipo": "dato",
+ "contenuto": "Testato con la stessa domanda (\"Fate la prima visita gratuita?\"), il Metodo 1 (Nel Prompt) produce lo stesso risultato funzionale corretto del Metodo 2 (tramite file): l'assistente risponde in entrambi i casi con l'informazione corretta recuperata dalla Knowledge Base.",
+ "fonte": "NmoOZVTrTXA#33:54 (chat Riley, test post-pubblicazione) + voce 33:52-34:00",
+ "frame": "frame-0340.png",
+ "ancora": "gli chiediamo, fate la prima visita gratuita? certo, la prima visita è gratuita",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-075", "tipo": "quantifica"}
+ ]
+ },
+ {
+ "id": "KA-078",
+ "tipo": "principio",
+ "contenuto": "Il vantaggio del Metodo 1 (tutto nel prompt) è che informazioni come il nome dell'azienda sono presenti fin dalla primissima sezione del prompt (IDENTITÀ), quindi immediatamente disponibili all'agente senza dover richiamare nulla da una fonte esterna.",
+ "fonte": "NmoOZVTrTXA#37:48 (system prompt Riley, sezione IDENTITÀ evidenziata) + voce 37:39-37:45",
+ "frame": "frame-0379.png",
+ "ancora": "come si chiama la clinica dentale, questa informazione è già qua dentro",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-075", "tipo": "motiva"}
+ ]
+ },
+ {
+ "id": "KA-079",
+ "tipo": "procedura",
+ "contenuto": "Metodo 2 \"Inserimento tramite file\": si collega un PDF direttamente nella sezione \"Files\" dell'assistente Vapi (tramite il menu a tendina \"Select Files\"), senza incollarne il contenuto testuale nel prompt.",
+ "fonte": "NmoOZVTrTXA#34:24 (sezione Files, Riley) + voce 34:19-34:25",
+ "frame": "frame-0345.png",
+ "ancora": "La seconda modalità che abbiamo è la inseriamo tramite file.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-074", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-080",
+ "tipo": "principio",
+ "contenuto": "Il presentatore giudica esplicitamente il Metodo 2 (inserimento tramite file collegato all'assistente) come \"il peggiore\" tra i modi per inserire una knowledge base in un agente vocale.",
+ "fonte": "NmoOZVTrTXA#40:12 (canvas, lista metodi colorata) + voce 40:06-40:18",
+ "frame": "frame-0403.png",
+ "ancora": "inserimento tramite file è il peggiore che voi potiate fare",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-079", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-081",
+ "tipo": "principio",
+ "contenuto": "Il problema del Metodo 2 (file collegato all'assistente) è che l'intero contenuto del file viene ricaricato e conteggiato nei token consumati ad ogni singolo turno di conversazione, indipendentemente dal fatto che l'informazione richiesta in quel turno sia effettivamente contenuta in quella parte del file.",
+ "fonte": "NmoOZVTrTXA#41:48 (canvas, scarabocchi rossi sul blocco file) + voce 41:41-41:48",
+ "frame": "frame-0419.png",
+ "ancora": "che averlo qua significa che lo stiamo continuando a ricaricare ogni volta",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-080", "tipo": "motiva"}
+ ]
+ },
+ {
+ "id": "KA-082",
+ "tipo": "procedura",
+ "contenuto": "Metodo 3 \"Tramite Tool\": si collega la Knowledge Base a un tool di tipo Query (come il knowledge_base_clinica costruito in precedenza) invece che direttamente ai File dell'assistente.",
+ "fonte": "NmoOZVTrTXA#35:42 (pagina tool knowledge_base_clinica, Vapi) + voce 35:10-35:18",
+ "frame": "frame-0358.png",
+ "ancora": "tool seleziona tool e io vado qui e dico knowledge base clinica",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-074", "tipo": "parte-di"}
+ ]
+ },
+ {
+ "id": "KA-083",
+ "tipo": "definizione",
+ "contenuto": "Il vantaggio chiave del Metodo 3 (tramite tool) è che la Knowledge Base viene interrogata \"onDemand\" (a chiamata): non viene ricaricata automaticamente a ogni turno di conversazione, ma solo nel momento in cui l'agente ne ha effettivamente bisogno per rispondere.",
+ "fonte": "NmoOZVTrTXA#43:06 (canvas, pulizia scarabocchi) + voce 42:59-43:06",
+ "frame": "frame-0432.png",
+ "ancora": "chiamiamo onDemand. Che cosa vuol dire? Che non viene chiamata sempre, viene chiamata solo quando ne abbiamo bisogno.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-082", "tipo": "definisce"}
+ ]
+ },
+ {
+ "id": "KA-084",
+ "tipo": "regola",
+ "contenuto": "La raccomandazione operativa esplicita, a chiusura del confronto tra i tre metodi di inserimento della Knowledge Base, è: la conoscenza aziendale \"va sempre messo con i tool\" (Metodo 3), non incollata nel prompt né collegata come file diretto all'assistente.",
+ "fonte": "NmoOZVTrTXA#43:54 (canvas, grafico P/T completo) + voce 43:48-43:54",
+ "frame": "frame-0440.png",
+ "ancora": "Quindi va sempre messo con i tool.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-074", "tipo": "parte-di"},
+ {"verso": "KA-087", "tipo": "quantificato-da"}
+ ]
+ },
+ {
+ "id": "KA-085",
+ "tipo": "numero",
+ "contenuto": "Un documento di formazione aziendale di sole 11 pagine (come quello della clinica dentale di esempio) è indicativo di un'azienda molto piccola; le SOP (procedure operative standard) reali di aziende più strutturate arrivano invece tipicamente a 300-400 pagine, con migliaia di token di contenuto.",
+ "fonte": "NmoOZVTrTXA#39:00 (visualizzatore PDF, pagina 9) + voce 38:58-39:08",
+ "frame": "frame-0391.png",
+ "ancora": "formazione aziendale, insomma, 11 pagine ... di solito sono SOP da 300, 400 pagine",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-081", "tipo": "motiva"}
+ ]
+ },
+ {
+ "id": "KA-086",
+ "tipo": "struttura",
+ "contenuto": "Il grafico Performance (asse P) / Token consumati (asse T) disegnato dal presentatore rappresenta una curva che sale, raggiunge un picco — la \"perfezione del contesto\", cioè il punto con il minimo di token necessario per la massima efficacia — e poi degrada progressivamente se il contesto/prompt continua ad accumulare informazioni non necessarie con l'avanzare della conversazione.",
+ "fonte": "NmoOZVTrTXA#39:24 (canvas, grafico P/T) + voce 39:24-39:36",
+ "frame": "frame-0395.png",
+ "ancora": "il nostro primo prompt sia proprio qua nell'intorno della perfezione del contesto",
+ "confidenza": "osservato",
+ "relazioni": []
+ },
+ {
+ "id": "KA-087",
+ "tipo": "struttura",
+ "contenuto": "Nel grafico Performance/Token completo, i tre metodi di inserimento della Knowledge Base sono marcati con tre colori in punti diversi della curva: arancione (Metodo 3, Tramite Tool) sulla salita, prima del picco; verde sul picco stesso; rosso (Metodo 2, tramite file) sulla discesa, a rappresentare il degrado più marcato con l'aumentare dei turni di conversazione.",
+ "fonte": "NmoOZVTrTXA#44:00 (canvas, grafico P/T completo con 3 zone colorate) + voce 43:54-44:00",
+ "frame": "frame-0441.png",
+ "ancora": "in questo intervallo qui. Quindi va sempre messo con i tool.",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-086", "tipo": "parte-di"},
+ {"verso": "KA-074", "tipo": "quantifica"}
+ ]
+ },
+ {
+ "id": "KA-088",
+ "tipo": "numero",
+ "contenuto": "Nell'esempio dell'assistente \"Riley\"/\"Marco\" costruito nel corso, il campo \"Max Tokens\" è impostato al valore di default 250.",
+ "fonte": "NmoOZVTrTXA#32:12 (pagina Riley, tab Model)",
+ "frame": "frame-0323.png",
+ "ancora": "Max Tokens ... 250",
+ "confidenza": "osservato",
+ "relazioni": [
+ {"verso": "KA-062", "tipo": "parte-di"}
+ ]
+ }
+]

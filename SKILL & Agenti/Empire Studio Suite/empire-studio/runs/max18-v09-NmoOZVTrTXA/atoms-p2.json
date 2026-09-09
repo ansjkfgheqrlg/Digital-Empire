@@ -1,0 +1,216 @@
+[
+ {
+  "id": "KA-101",
+  "tipo": "definizione",
+  "contenuto": "Esistono tre metodologie per collegare una base di conoscenza (knowledge base) a un agente AI: inserirla direttamente nel prompt, inserirla tramite file allegato, oppure renderla accessibile tramite un tool dedicato.",
+  "fonte": "NmoOZVTrTXA#44:36 (riepilogo Excalidraw sulle 3 metodologie knowledge base) + voce 44:28-44:33",
+  "frame": "frame-0447.png",
+  "ancora": "1. Nel Prompt / 2. Inserimento tramite file / 3. Tramite Tool",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-102",
+  "tipo": "principio",
+  "contenuto": "Tra le tre metodologie per collegare una knowledge base a un agente (nel prompt, tramite file, tramite tool), \"tramite tool\" è la soluzione raccomandata per chi parte con i propri primi progetti.",
+  "fonte": "NmoOZVTrTXA#44:36 (sottolineatura arancione su \"Tramite Tool\" in Excalidraw) + voce 44:28-44:33",
+  "frame": "frame-0447.png",
+  "ancora": "tra queste tre metodologie, se partite per i vostri primi progetti, qui è dove andiamo... tramite tool è la nostra soluzione",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-101", "tipo": "applica", "perche": "sceglie una delle tre opzioni definite come raccomandazione operativa"}
+  ]
+ },
+ {
+  "id": "KA-103",
+  "tipo": "struttura",
+  "contenuto": "Un system prompt per un agente vocale ben strutturato si organizza in blocchi distinti con intestazioni dedicate: IDENTITÀ (chi è l'agente), STILE (come deve suonare), LINEE GUIDA RISPOSTA (come gestire il turno di conversazione) e TASK (il flusso passo-passo da seguire).",
+  "fonte": "NmoOZVTrTXA#44:42 (system prompt di \"Riley\"/\"Marco\" nella dashboard VAPI) + voce 44:33-44:40",
+  "frame": "frame-0448.png",
+  "ancora": "# IDENTITÀ ... # STILE ... # LINEE GUIDA RISPOSTA ... # TASK",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-104",
+  "tipo": "regola",
+  "contenuto": "In un prompt per agente vocale, i numeri vanno scritti per esteso (es. \"ventitre\" e non \"23\", \"le quattro e un quarto\" e non \"16:15\") perché il testo verrà letto ad alta voce da un sintetizzatore vocale.",
+  "fonte": "NmoOZVTrTXA#44:42 (system prompt di \"Riley\"/\"Marco\", sezione STILE) + voce 44:33-44:40",
+  "frame": "frame-0448.png",
+  "ancora": "Scrivi i numeri per esteso: \"ventitre\" non \"23\"",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-103", "tipo": "parte-di", "perche": "è una regola dentro la sezione STILE del template"}
+  ]
+ },
+ {
+  "id": "KA-105",
+  "tipo": "regola",
+  "contenuto": "Un agente vocale non deve mai dichiarare esplicitamente di essere un'intelligenza artificiale o un assistente AI: deve comportarsi e presentarsi come una persona reale che lavora lì da anni.",
+  "fonte": "NmoOZVTrTXA#44:42 (system prompt di \"Riley\"/\"Marco\", sezioni IDENTITÀ e STILE) + voce 44:33-44:40",
+  "frame": "frame-0448.png",
+  "ancora": "Non sei \"un assistente AI\". Sei Marco, il receptionist. ... Non dire mai \"sono un'intelligenza artificiale\" o simili",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-103", "tipo": "parte-di", "perche": "è una regola dentro le sezioni IDENTITÀ/STILE del template"}
+  ]
+ },
+ {
+  "id": "KA-106",
+  "tipo": "dato",
+  "contenuto": "Il nome interno del personaggio scritto dentro il testo di un system prompt (es. \"Marco, il receptionist\") può non coincidere con il nome configurato per l'assistente nel pannello della piattaforma (es. \"Riley\"), senza che questo comprometta il funzionamento dell'agente.",
+  "fonte": "NmoOZVTrTXA#44:42 (dashboard VAPI, assistente \"Riley\" con prompt che dice \"Sei Marco\") + voce 44:33-44:40",
+  "frame": "frame-0448.png",
+  "ancora": "l'assistente in lista si chiama \"Riley\", ma il prompt lo identifica come \"Marco, il receptionist\"",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-107",
+  "tipo": "definizione",
+  "contenuto": "La latenza di un agente vocale si definisce come l'intervallo di silenzio tra il momento in cui l'utente smette di parlare e il momento in cui l'agente inizia a rispondere, e viceversa tra la fine della risposta dell'agente e la ripresa del turno dell'utente.",
+  "fonte": "NmoOZVTrTXA#45:12 (webcam, introduzione al concetto di latenza) + voce 45:10-45:16",
+  "frame": "frame-0453.png",
+  "ancora": "È l'intervallo di silenzio, chiamiamolo così, ok, per capirci",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-108",
+  "tipo": "principio",
+  "contenuto": "Il modello LLM scelto per un assistente vocale è responsabile in modo diretto del livello di latenza complessiva della conversazione: modelli di reasoning più pesanti generano latenze molto più alte di modelli leggeri.",
+  "fonte": "NmoOZVTrTXA#45:36 (dashboard VAPI, card Latency ~2970ms con modello GPT o3 Cluster) + voce 45:33-45:43",
+  "frame": "frame-0457.png",
+  "ancora": "ora si è allineata la latenza e capite perché era così lento, per il modello che abbiamo scelto",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-109",
+  "tipo": "struttura",
+  "contenuto": "La pipeline di un agente vocale si compone di quattro stadi in sequenza: riconoscimento vocale/ASR (converte il parlato dell'utente in testo), modello linguistico/LLM (analizza intento, significato e contesto), sintesi vocale/TTS (genera un parlato dal suono naturale a partire dal testo di risposta), e l'ascolto della risposta da parte dell'utente.",
+  "fonte": "NmoOZVTrTXA#46:00 (diagramma Excalidraw \"Anatomia di un Agente Vocale\") + voce 45:48-45:56",
+  "frame": "frame-0461.png",
+  "ancora": "1. Riconoscimento Vocale (ASR) ... 2. Modello Linguistico di Grandi Dimensioni (LLM) ... 3. Sintesi Vocale (TTS) ... Output Utente: Ascolta la Risposta",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-110",
+  "tipo": "principio",
+  "contenuto": "Ognuno dei tre stadi tecnici della pipeline vocale (ASR, LLM, TTS) è un modello ospitato su una piattaforma di terze parti, e da quella scelta dipende la latenza specifica di quello stadio.",
+  "fonte": "NmoOZVTrTXA#46:00 (diagramma \"Anatomia di un Agente Vocale\") + voce 45:56-46:06",
+  "frame": "frame-0461.png",
+  "ancora": "Abbiamo un modello che viene utilizzato in una piattaforma di terzi",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-109", "tipo": "parte-di", "perche": "spiega la natura tecnica di ciascuno dei tre stadi della pipeline"}
+  ]
+ },
+ {
+  "id": "KA-111",
+  "tipo": "principio",
+  "contenuto": "La latenza totale di un agente vocale si controlla agendo su tre punti distinti della pipeline: il provider del riconoscimento vocale (ASR), il provider del modello linguistico (LLM), il provider della sintesi vocale (TTS).",
+  "fonte": "NmoOZVTrTXA#46:30 (tre frecce arancioni disegnate a mano su ASR/LLM/TTS in Excalidraw) + voce 46:25-46:30",
+  "frame": "frame-0466.png",
+  "ancora": "questi modelli qui sono quelli che vanno ad impattare la vostra latenza",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-109", "tipo": "applica", "perche": "identifica i tre stadi della pipeline come leve di controllo della latenza"},
+   {"verso": "KA-110", "tipo": "applica", "perche": "ogni leva corrisponde a un modello di terze parti sostituibile"}
+  ]
+ },
+ {
+  "id": "KA-112",
+  "tipo": "dato",
+  "contenuto": "Uno stesso provider di modelli (es. OpenAI) può offrire versioni con latenza dichiarata molto diversa a parità di piattaforma vocale: da circa 390-400ms per i modelli più leggeri fino a oltre 2400ms per i modelli di reasoning più pesanti, con prezzo al minuto inversamente correlato.",
+  "fonte": "NmoOZVTrTXA#46:42 (tendina Model nella dashboard VAPI con badge latenza e prezzo) + voce 46:33-46:44",
+  "frame": "frame-0468.png",
+  "ancora": "GPT 4o Mini Realtime Preview Cluster — 400ms · $0.54 ... GPT o3 Mini Cluster — 2400ms · $0.06",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-111", "tipo": "quantifica", "perche": "fornisce i numeri concreti dietro la leva \"provider del LLM\""}
+  ]
+ },
+ {
+  "id": "KA-113",
+  "tipo": "principio",
+  "contenuto": "Passare a un modello LLM più veloce all'interno dello stesso provider può ridurre la latenza percepita di oltre un secondo, mantenendo una qualità di risposta sufficiente se il resto della configurazione (prompt compreso) è solido.",
+  "fonte": "NmoOZVTrTXA#47:12 (cambio da GPT o3 Cluster 1670ms a GPT 4o Mini Cluster 390ms) + voce 47:00-47:12",
+  "frame": "frame-0473.png",
+  "ancora": "ma siamo già scesi di più di un secondo e mezzo solo con un modello",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-112", "tipo": "esempio-di", "perche": "mostra in pratica lo scarto di latenza fra modelli dello stesso provider"}
+  ]
+ },
+ {
+  "id": "KA-114",
+  "tipo": "principio",
+  "contenuto": "Se il prompt di un agente vocale è scritto in modo solido, il modello linguistico sottostante può essere più economico o meno potente senza una perdita di qualità percepibile nella conversazione, perché gran parte del comportamento è già gestito dal prompt.",
+  "fonte": "NmoOZVTrTXA#47:12 (tendina Model, scelta di GPT 4o Mini Cluster) + voce 47:05-47:12",
+  "frame": "frame-0473.png",
+  "ancora": "se noi riusciamo ad avere un buon prompt iniziale, dove se il prompt è buono il modello può essere un po' più scarso",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-115",
+  "tipo": "principio",
+  "contenuto": "Non esiste un valore di latenza ottimale universale per un agente vocale: il livello accettabile dipende dal caso d'uso aziendale specifico (es. un receptionist, uno speed-to-lead, oppure un agente che deve raccogliere molte informazioni hanno esigenze diverse).",
+  "fonte": "NmoOZVTrTXA#49:12 (pannello Advanced di VAPI, Start Speaking Plan) + voce 48:43-48:53",
+  "frame": "frame-0493.png",
+  "ancora": "non sempre la menor latenza è la migliore dell'universo, ci sono le varie casistiche aziendali",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-108", "tipo": "contraddice", "perche": "corregge l'idea semplicistica che minore latenza sia sempre meglio"}
+  ]
+ },
+ {
+  "id": "KA-116",
+  "tipo": "dato",
+  "contenuto": "VAPI permette di impostare, tramite un cursore dedicato (\"Wait seconds\", range 0-5 secondi), quanti secondi un assistente deve aspettare prima di iniziare a parlare dopo che l'utente ha smesso.",
+  "fonte": "NmoOZVTrTXA#48:42 (pannello Advanced > Start Speaking Plan di VAPI) + voce 48:28-48:35",
+  "frame": "frame-0488.png",
+  "ancora": "Wait seconds — This is how long assistant waits before speaking",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-111", "tipo": "applica", "perche": "è uno dei controlli concreti di latenza lato piattaforma"}
+  ]
+ },
+ {
+  "id": "KA-117",
+  "tipo": "dato",
+  "contenuto": "VAPI offre un'opzione \"Smart Endpointing\" per un rilevamento più accurato del fine-turno del parlato, ma il provider che la implementa (LiveKit) è disponibile solo per la lingua inglese.",
+  "fonte": "NmoOZVTrTXA#48:42 (pannello Advanced > Start Speaking Plan di VAPI) + voce 48:28-48:35",
+  "frame": "frame-0488.png",
+  "ancora": "Smart Endpointing — Enable for more accurate speech endpoint detection. LiveKit is only available in English",
+  "confidenza": "osservato"
+ },
+ {
+  "id": "KA-118",
+  "tipo": "struttura",
+  "contenuto": "VAPI permette di configurare tempi minimi di attesa differenziati a seconda di come termina la trascrizione dell'utente: dopo una frase con punteggiatura, dopo una frase senza punteggiatura, oppure dopo una frase che termina con un numero, ciascuno con un proprio valore in secondi.",
+  "fonte": "NmoOZVTrTXA#48:42 (pannello Advanced > Start Speaking Plan di VAPI) + voce 48:28-48:35",
+  "frame": "frame-0488.png",
+  "ancora": "On Punctuation Seconds ... On No Punctuation Seconds ... On Number Seconds",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-116", "tipo": "parte-di", "perche": "fa parte dello stesso pannello Start Speaking Plan"}
+  ]
+ },
+ {
+  "id": "KA-119",
+  "tipo": "definizione",
+  "contenuto": "L'endpointing è il meccanismo che decide quando il turno di parlato dell'utente è concluso e il processo di trascrizione e generazione della risposta viene attivato: è letteralmente ciò che fa partire l'intero processo della pipeline vocale.",
+  "fonte": "NmoOZVTrTXA#49:36 (nota manoscritta su Excalidraw, \"l'ENDPOINTING decide quando il processo parte / si ferma\") + voce 48:58-49:34",
+  "frame": "frame-0497.png",
+  "ancora": "l'ENDPOINTING decide quando il processo parte / si ferma",
+  "confidenza": "osservato",
+  "relazioni": [
+   {"verso": "KA-111", "tipo": "parte-di", "perche": "è il meccanismo sotteso al controllo della latenza lato ASR"}
+  ]
+ },
+ {
+  "id": "KA-120",
+  "tipo": "struttura",
+  "contenuto": "Oltre ai controlli sul parlato, una piattaforma vocale come VAPI può offrire impostazioni avanzate aggiuntive per: rilevamento segreteria telefonica, condizioni di fine chiamata per silenzio o durata, gestione dell'input da tastierino numerico, e configurazione della messaggistica.",
+  "fonte": "NmoOZVTrTXA#49:42 (pannello Advanced di VAPI, card successive al Start Speaking Plan) + voce 49:39-50:05",
+  "frame": "frame-0498.png",
+  "ancora": "Voicemail Detection ... Stop Speaking Plan ... Call Timeout Settings ... Keypad Input Settings ... Messaging",
+  "confidenza": "osservato"
+ }
+]
