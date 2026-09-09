@@ -56,17 +56,17 @@ BATTITO_ROTTO = """**⏱️ RECAP — 40%**
 
 | |
 |:---:|
-| 🟠 Fatto: |
+| 🟢 Fatto: |
 | letto il libro |
 | - Sto facendo: costruisco il controllo |
-| 🟠 Farò: |
+| 🟢 Farò: |
 | lo provo |
-| 🟠 Forze: |
+| 🟢 Forze: |
 | nessuna |
 | ↓ |
-| 🟠 Assetto: |
+| 🟢 Assetto: |
 | acceso |
-| 🟠 Potere: tanto% |"""
+| 🟢 Potere: tanto% |"""
 
 
 def transcript(testo_assistente):

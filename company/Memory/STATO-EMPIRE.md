@@ -1,3 +1,25 @@
+## 🟣 2026-09-09 sera — ⚠️ ATTIVAZIONE FORZE (ADR-015): piano chirurgico implementazione Andrei Pascu (EMP-APPLAN1)
+
+**Dichiarazione per iscritto (ADR-015), ordine di Max: usa doom bot + sentinelle + scagnozzo +
+fable per un piano vero, non solo la checklist.** Oggetto: gli 8 candidati mai costruiti
+(AP-004/005/008/017/018/019/020/033 in `competitor/Andrei Pascu/MIGLIORAMENTI-DIGITAL-EMPIRE.md`)
+più — soprattutto — un piano di sintesi che nessuno aveva ancora scritto: cosa cambia davvero in
+Digital Empire guardando TUTTO lo studio insieme (metodo + visivo + copy + lanci), non lezione
+per lezione.
+
+**Forze attivate ora:**
+- 2× **Doom Bot** (opus) in parallelo — A: LANCI/lanci reali, B: nuove capacità/tool
+- poi 2× **Sentinella** (sonnet) — critica adversariale di A e B contro ADR-024/025/026/028 e
+  contro vaghezza/Barnum
+- poi **Fable** — secondo occhio indipendente su tutto
+- poi 1× **Scagnozzo** (haiku) — assemblaggio meccanico del documento finale
+- chiusura esecutiva: Emperator (io), non delegata
+
+**Non tocca file di produzione** in questo giro — è un documento di piano
+(`competitor/Andrei Pascu/PIANO-IMPLEMENTAZIONE-*.md`), nessun rischio di collisione con Gael.
+
+---
+
 ## 👑 2026-09-09 sera — ADR-028: LEGGE PERMANENTE "niente blocca tutto" — CP-20260909-7Z4G
 
 **Max ha alzato ADR-027 (il caso LANCI) a principio generale, ordine diretto:** *"non ci deve

@@ -36,7 +36,7 @@ renderer (VSCode) un blocco di codice e' un widget a se' — sfondo/testo blu, p
 "copia" — non testo semplice. Ordine di Max, testuale: *"non deve mai essere con quel
 formato da copiare e tutto di colori azzurri"*. Questo divieto e' rimasto fermo anche
 all'8º giro (2026-09-09, piu' tardi): Max ha chiesto di tornare al formato SEMPLICE
-pre-centraggio — bullet `🟠 **<Etichetta>:** <contenuto libero>`, senza tabella e senza
+pre-centraggio — bullet `🟢 **<Etichetta>:** <contenuto libero>`, senza tabella e senza
 rientro a mano (vedi `verifica_recap.py` per la storia completa). Questo hook cerca il
 battito PRIMA dentro un fence in cima: se lo trova, e' VIETATO e blocca con quel motivo
 specifico. Se il messaggio porta un tentativo di battito fuori da un fence (il formato
@@ -58,8 +58,8 @@ if QUI not in sys.path:
 # Segnali che il testo CONTIENE un tentativo di battito. Se non ce n'e' nessuno,
 # l'hook non ha niente da dire: non si impone un battito dove non serve.
 SEGNALE_TITOLO = re.compile(r"^\s*\*\*.{0,3}\s*RECAP\s*[—-]", re.IGNORECASE)
-SEGNALE_VOCE = re.compile(r"^🟠 \*\*[^:]+:\*\*")  # fallback: una voce bullet, es. `🟠 **Fatto:** ...`
-SEGNALE_POTERE = re.compile(r"^🟠 \*\*Potere:\*\* \d{1,3}%$")  # ultima riga di ogni battito valido
+SEGNALE_VOCE = re.compile(r"^🟢 \*\*[^:]+:\*\*")  # fallback: una voce bullet, es. `🟢 **Fatto:** ...`
+SEGNALE_POTERE = re.compile(r"^🟢 \*\*Potere:\*\* \d{1,3}%$")  # ultima riga di ogni battito valido
 TETTO_RIGHE_BLOCCO = 60  # protezione anti-input-rotto: nessun battito reale supera questo
 
 # Segnale di un tentativo di Missione (§6.11, 🔴): stessa filosofia del battito ma piu'
@@ -319,7 +319,7 @@ def main():
                     "il battito e' dentro un blocco di codice ``` — VIETATO dal 7º giro "
                     "(§6.11): nel renderer di Max un blocco di codice e' un widget blu con "
                     "pulsante copia, non testo semplice, e Max l'ha bocciato. Il battito ora "
-                    "sono bullet semplici (`🟠 **<Etichetta>:** <contenuto>`) scritti in "
+                    "sono bullet semplici (`🟢 **<Etichetta>:** <contenuto>`) scritti in "
                     "chiaro, MAI dentro ```. Togli il fence."
                 )
             guai.extend(valida(blocco))
@@ -379,11 +379,11 @@ def main():
             pass
         istruzioni.append(
             "BATTITO — riscrivilo nella forma fissa (emperator.md 6.11, 8º giro) — bullet "
-            "semplici, NIENTE centraggio: titolo in chiaro, riga vuota, poi `🟠 **<Etichetta>:** "
+            "semplici, NIENTE centraggio: titolo in chiaro, riga vuota, poi `🟢 **<Etichetta>:** "
             "<contenuto libero>` con una riga vuota dopo ognuno (Fatto, Sto facendo, Farò, "
             "Forze, Assetto, Potere). MAI dentro un blocco di codice ```, MAI in tabella. Unica "
-            "eccezione: Forze con più unità nominate resta ad ALBERO (`🟠 **Forze:**` da sola, "
-            "poi `🟠 <NOME>` / `│` / `├─🟠→`/`└─🟠→`). Non disegnarlo a mano: chiama "
+            "eccezione: Forze con più unità nominate resta ad ALBERO (`🟢 **Forze:**` da sola, "
+            "poi `🟢 <NOME>` / `│` / `├─🟢→`/`└─🟢→`). Non disegnarlo a mano: chiama "
             "`verifica_recap.costruisci(...)` con i sei valori." + esempio
         )
     if problemi_missione:
