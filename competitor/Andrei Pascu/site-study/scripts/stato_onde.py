@@ -84,6 +84,22 @@ def prefissi_report():
     return mappa
 
 
+# Quali artefatti pretende ogni onda. NON e' uniforme, e non deve esserlo: il dossier 33
+# (Passo 3 + triage) da' a T1/T2 lo studio pieno con atlante, a T3 "schema + copy, niente
+# atlante visivo", a T4 il campione, a T5 la sola analisi di corpus. La prima versione di
+# questo script pretendeva quattro file dappertutto: era piu' severa del piano, e una
+# severita' fuori posto produce un debito falso, che e' un numero falso come gli altri.
+PRETESE = {
+    "A": ("scheda", "rapporto", "atlante", "copy"),
+    "B": ("scheda", "rapporto", "atlante", "copy"),
+    "C": ("scheda", "rapporto", "atlante", "copy"),
+    "D": ("scheda", "rapporto"),          # il copy di T3 vive dentro il rapporto di sequenza
+    "E": ("scheda", "rapporto"),
+    "F": ("scheda", "rapporto"),          # il corpus e' un documento solo, non uno per pagina
+    "G": ("rapporto",),
+}
+
+
 def stato_pagina(slug, rep):
     num = int(slug[:2]) if slug[:2].isdigit() else -1
     tipi = rep.get(num, set())
@@ -102,10 +118,12 @@ def righe_tabella():
     fuori = []
     righe = []
     for lettera, cosa, atteso, slugs in ONDE:
+        pretese = PRETESE.get(lettera, ("scheda", "rapporto", "atlante", "copy"))
         pagine = [stato_pagina(s, rep) for s in slugs]
         catturate = sum(1 for p in pagine if p["scheda"])
-        chiuse = sum(1 for p in pagine if all((p["scheda"], p["rapporto"], p["atlante"], p["copy"])))
-        senza_copy = [p["slug"] for p in pagine if p["scheda"] and not p["copy"]]
+        chiuse = sum(1 for p in pagine if all(p[k] for k in pretese))
+        senza_copy = ([p["slug"] for p in pagine if p["scheda"] and not p["copy"]]
+                      if "copy" in pretese else [])
         righe.append({
             "onda": lettera, "cosa": cosa, "atteso": atteso, "mappate": len(slugs),
             "catturate": catturate, "chiuse": chiuse, "senza_copy": senza_copy,

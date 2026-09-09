@@ -213,9 +213,9 @@ di funnel che non capiamo ancora.
 | Onda A | 9 | 9 | 9 |
 | Onda B | 8 | 8 | 8 |
 | Onda C | 7 | 4 | 7 |
-| Onda D | 15 | 0 | 15 |
-| Onda E | 9 | 0 | 9 |
-| Onda F | 4 | 0 | 4 |
+| Onda D | 15 | 15 | 15 |
+| Onda E | 9 | 3 | 9 |
+| Onda F | 4 | 4 | 4 |
 | Onda G | 0 | 0 | 4 |
 
 ## Connessioni
