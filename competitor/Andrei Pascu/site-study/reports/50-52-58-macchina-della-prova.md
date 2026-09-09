@@ -1,7 +1,7 @@
 ---
 Type: SYNTHESIS
 Status: Active
-Tags: #competitor #andrei-pascu #site-study #squarespace #recensioni #social-proof #story #ai-policy #teardown
+Tags: #competitor #andrei-pascu #site-study #squarespace #recensioni #trustpilot #social-proof #story #ai-policy #teardown
 Created: 2026-09-09
 Last updated: 2026-09-09
 ---
@@ -11,33 +11,40 @@ Last updated: 2026-09-09
 **Pagine studiate:** `50-recensioni` (4.389px, 27 blocchi, 9 media, 1 sezione — segmentazione **fallita**) ·
 `51-recensioni-mentorship` (6.326px, 30 blocchi, **51 media**, 2 sezioni) · `52-story` (14.646px, 203
 blocchi, 19 sezioni/13 distinte) · `58-ai-policy` (12.569px, 222 blocchi, 9 sezioni/8 distinte).
-Fonti: `copy-integrale.md` e `scheda.json` di ognuna delle quattro cartelle in
-`site-study/capture/`, più due screenshot aperti direttamente (`50-recensioni/desktop-02.png` e
-`51-recensioni-mentorship/desktop-02.png` e `.../sezioni/01-alcune-recensioni-di-copywriting-m.png`)
-per verificare a occhio quello che il DOM da solo non poteva provare.
+Fonti: `copy-integrale.md`, `scheda.json` e `dom-blocks.json` di ognuna delle quattro cartelle in
+`site-study/capture/`, più otto screenshot aperti direttamente per verificare a occhio quello che il
+DOM da solo non poteva provare o aveva provato in modo fuorviante — vedi nota di metodo qui sotto.
+
+**Nota di metodo, scritta perché è successa durante la stesura di questo stesso documento:** una prima
+lettura di `50-recensioni`, basata su un'unica schermata parziale (`desktop-02.png`), aveva concluso che
+l'intera pagina fosse un'immagine piatta senza alcuna prova verificabile. Aprendo l'intera sequenza
+(`desktop-01.png` per primo) è emerso che quella lettura era sbagliata: la sezione contiene un vero
+widget Trustpilot, non uno screenshot statico. Il documento che segue riporta la versione corretta, e la
+correzione stessa è diventata un gate per la Fabbrica (vedi sotto). Questo per dire in apertura, con
+tutta la trasparenza dovuta: **il verdetto finale su "sono verificabili le recensioni" è "dipende da
+quale pagina" — sì su `50`, no su `51` — non una risposta unica come l'ordine di lavoro dava per
+scontato.**
 
 ---
 
 ## DELTA ALLA FABBRICA
 
-**CANONE:** va codificato un anti-pattern, non un pattern da copiare: la **testimonianza-raster con
-segnali di fiducia cotti dentro il pixel**. Sulla pagina `50-recensioni` ogni singola "recensione"
-visibile (nome, 5 stelle, badge verde "VERIFICATA", tag di prodotto "CLAUDE SPEEDRUN") non è un nodo
-DOM: è pittura dentro un'unica immagine `PNG+to+WebP+Converter+Desktop+2.webp`, `alt=""`, larga
-1440px e alta **3684px** — l'84% dell'intera altezza della pagina (4.389px totali) è quell'unica
-immagine (verificato: `media[2]`, `y=0, w=1440, h=3684` in `scheda.json`; per questo
-`"segmentazione": "fallita"` — lo script di sezionamento non trova nulla da sezionare perché non c'è
-struttura, c'è un disegno). Su `51-recensioni-mentorship` il pattern si ripete in forma leggermente
-diversa ma nella sostanza identica: **42 immagini numerate** (`1.png`...`44.png`, mancano `9` e `18`),
-ciascuna `alt=""`, disposte in griglia a due colonne da y=734 a y=5312, ognuna delle quali — verificato
-visivamente su `desktop-02.png` — è una singola card di chat (bolla bianca, spunta blu di verifica,
-nome+iniziale, 1-5 stelle) fotografata e incollata come immagine fissa. **Regola per la Fabbrica: mai
-un componente `testimonial-card` che sia un'immagine raster con dentro nome, stelle o badge di verifica
-— quei tre elementi devono sempre essere markup vero (testo, `<img alt="Nome Cognome, foto profilo">`,
-un componente `rating` accessibile), altrimenti la prova sociale non è indicizzabile, non è
-selezionabile, non è verificabile e — punto tecnico non trascurabile — non può mai generare un rich
-snippet `Review`/`AggregateRating` in un motore di ricerca, a differenza di quanto accadrebbe con
-markup reale + JSON-LD.**
+**CANONE:** questo sito usa **due meccanismi opposti sotto la stessa etichetta "recensioni".**
+`50-recensioni` incorpora un **widget Trustpilot reale** — verificato aprendo `desktop-01.png`: un
+badge con 5 stelle blu, *"4,9 su 5 stelle su_Trustpilot ↗"* (link esterno cliccabile), *"98 RECENSIONI
+VERIFICATE"*, un contatore *"98 recensioni"*, un bottone *"Filtri"*, e più sotto singole card con nome
+del recensore (alcuni nome+cognome reali: *"Simone Maiolino"*, *"David Marcan"*, *"Riki Signo"*), da 1 a
+5 stelle, badge verde *"✓ VERIFICATA"* per ogni singola recensione, tag di prodotto a destra (osservati
+sia *"CLAUDE SPEEDRUN"* sia *"VENDITA 101"* — il widget aggrega e filtra le recensioni di più prodotti
+Andrei Pascu in un unico posto), un link *"Leggi di più"* per i testi lunghi, e in fondo un bottone
+*"Mostra altre 12 recensioni"* (paginazione, quindi più delle sole recensioni visibili negli screenshot
+catturati). `51-recensioni-mentorship`, al contrario, mostra **42 file immagine caricati singolarmente**
+(`1.png`...`44.png`), senza alcun collegamento a una piattaforma esterna, zero rating aggregato, zero
+badge di verifica indipendente — solo un checkmark blu disegnato dentro il pixel stesso dell'immagine.
+**Per la Fabbrica: il primo è il modello da imitare quando costruiamo una pagina di prova sociale**
+(piattaforma indipendente e verificabile pubblicamente, badge di verifica reale, aggregato pubblico,
+filtro per prodotto, paginazione); **il secondo è l'anti-pattern da evitare** (screenshot incollati a
+mano, nessun link, nessuna fonte controllabile, `alt=""` su tutti e 42).
 
 **PATTERN:** la pagina `52-story` (14.646px, 19 sezioni) usa **l'alternanza di sfondo chiaro/scuro come
 metronomo emotivo** di un racconto in prima persona lungo: sezioni con testo `#fafafa` (bianco, quindi
@@ -51,155 +58,177 @@ occorrenze, `#1b1b1d` 63). La Fabbrica deve trattare l'alternanza cromatica non 
 estetica libera ma come **una leva di ritmo narrativo da assegnare deliberatamente per capitolo**,
 prima di scrivere il copy, non dopo.
 
-**GATE:** due controlli nuovi, misurati su prove concrete di questo stesso documento. 1) *Nessuna
-prova sociale (recensione, testimonianza, badge "verificato") può essere pubblicata come immagine con
-`alt` vuoto o assente* — su `50-recensioni` e `51-recensioni-mentorship` **43 immagini su 43** (1 su
-`50`, 42 su `51`) violano questa regola, zero eccezioni, verificato con ricerca diretta nei due
-`scheda.json`. 2) *Il nome-slug e il titolo SEO di una pagina legale vanno verificati contro il testo
-reale prima di taggarla per argomento* — lo slug è `58-ai-policy`, il titolo SEO (`og_title`) è "AI
-policy — AP Formazione", ma il vero `<h1>` della pagina recita *"Informativa Privacy e Condizioni d'Uso
-dell'Assistente Virtuale AP Sales"* [y=185]: non è una presa di posizione editoriale sull'uso
-dell'intelligenza artificiale nel copywriting o nella formazione, è il regolamento legale del chatbot
-di vendita del sito. Chi cercasse "cosa pensa Andrei Pascu dell'AI nel copywriting" partendo dallo slug
-prenderebbe un abbaglio — ed è esattamente l'abbaglio che l'ordine di lavoro di questo studio
-inizialmente assumeva.
+**GATE:** tre controlli, il primo dei quali nato da un errore fatto e corretto dentro questo stesso
+documento. 1) *Mai dichiarare "immagine piatta, quindi non verificabile" basandosi su una sola
+schermata o sul solo conteggio di `scheda.json`* — va sempre aperta l'intera sequenza `desktop-NN.png`
+della sezione sospetta prima di scrivere il verdetto. Prova diretta: la prima lettura di questo stesso
+studio ha scambiato un widget Trustpilot reale (visibile fin da `desktop-01.png`) per contenuto piatto,
+fermandosi a `desktop-02.png`. 2) *Nessuna immagine-recensione senza attribuzione minima (nome + fonte
+esterna verificabile)* — su `51-recensioni-mentorship`, **42 immagini su 42** hanno `alt=""` e zero
+link verso una fonte esterna, verificato per intero in `scheda.json/media[]`. 3) *Il nome-slug e il
+titolo SEO di una pagina legale vanno verificati contro il testo reale prima di taggarla per
+argomento* — lo slug è `58-ai-policy`, ma il vero `<h1>` recita *"Informativa Privacy e Condizioni
+d'Uso dell'Assistente Virtuale AP Sales"* [y=185]: non è una presa di posizione editoriale sull'AI,
+è il regolamento legale del chatbot di vendita del sito — l'abbaglio di partenza di questo stesso ordine
+di lavoro, corretto qui.
 
 ---
 
-## 50-RECENSIONI: LA PAGINA CHE NON HA UNA SOLA RECENSIONE NEL DOM
+## 50-RECENSIONI: UN WIDGET TRUSTPILOT REALE, INVISIBILE AL NOSTRO SCRAPER DI TESTO
 
-Il file `copy-integrale.md` di questa pagina è la prova più diretta possibile di cosa significhi
-"schermata invece di markup": **27 blocchi di testo totali, e non uno di questi è una recensione.**
-Sono, in ordine: la barra di navigazione ("Passa al contenuto" [y=1621], "Claude Speedrun" [y=1629],
-"Accedi" [y=1630]) e il footer per intero (link "La mia storia"/"Store"/"Recensioni"/"Risorse"/"Blog"
-[y=3876-4017], disclaimer sui risultati non tipici [y=4183], ragione sociale e P.IVA [y=4289], link
-privacy [y=4311], bottone cookie [y=4367]). Zero nomi, zero stelle, zero testo di recensione compare
-mai come testo in questo file. Il corpo effettivo della pagina — dove dovrebbero stare le recensioni —
-è un'unica `<img>` (`media[2]` in `scheda.json`: `src` termina in
-`PNG+to+WebP+Converter+Desktop+2.webp`, `alt=""`, `y=0`, `x=0`, `w=1440`, `h=3684`). Fa da conferma
-anche il campo `"segmentazione": "fallita"` — lo script che normalmente spezza la pagina in sezioni
-riconoscibili qui trova **una sola sezione**, il footer, perché sopra di esso non c'è altro che
-un'immagine piatta senza struttura HTML da segmentare.
+Il file `copy-integrale.md` di questa pagina contiene **27 blocchi di testo, e nessuno di questi è una
+recensione**: sono, in ordine, la barra di navigazione ("Passa al contenuto" [y=1621], "Claude
+Speedrun" [y=1629], "Accedi" [y=1630]) e il footer per intero (link di menu, disclaimer, ragione
+sociale, link privacy, bottone cookie). `dom-blocks.json` — il dump grezzo pre-filtro — conferma la
+stessa lista, riga per riga identica: **anche a livello di estrazione più bassa, zero nodi DOM
+contengono testo di recensione.** `scheda.json` segnala `"segmentazione": "fallita"` e un'unica
+immagine fallback (`media[2]`: `PNG+to+WebP+Converter+Desktop+2.webp`, `alt=""`, `y=0`, `w=1440`,
+`h=3684` — l'84% dell'altezza totale della pagina). Fin qui, i fatti tecnici puntano tutti nella stessa
+direzione: "contenuto non estraibile come testo".
 
-Aprendo lo screenshot (`desktop-02.png`) si vede cosa quell'immagine contiene davvero: una sequenza di
-card in stile "recensione app-store" — sfondo scuro, un'icona utente generica, il nome in grassetto
-bianco ("**Donato**"), cinque stelle blu, il testo della recensione, una linea divisoria, un badge
-verde con spunta *"✓ VERIFICATA"* a sinistra e l'etichetta grigia *"CLAUDE SPEEDRUN"* a destra. Tre
-card sono leggibili nello screenshot studiato: **Donato** ("Sei un folle! Costo bassissimo, valore
-infinito!... Corso fatto molto bene, diretto e pratico!... grazie Andrei!"), e due recensioni firmate
-"**Anonimo**" ("vale il triplo" e "Andrei e il suo team hanno fatto un lavoro top. Livello super alto,
-uno dei pochi corsi che dà valore concreto."). Tutte e tre portano lo stesso badge "VERIFICATA" e lo
-stesso tag di prodotto "CLAUDE SPEEDRUN" — un dato visivo, non testuale, quindi non ricercabile né
-citabile con coordinata `y` di un nodo DOM, ma osservabile e riproducibile aprendo il file immagine
-citato sopra. Sullo stesso screenshot compare anche un banner fluttuante *"Stiamo aggiornando il
-brand… Potresti trovare colori strani, font sbagliati, o simili."* con bottone *"Capito"* — un
-disclaimer di cantiere aperto che ammette lo stato di transizione visiva del sito, coerente con quanto
-già osservato in altri dossier di questo studio.
+**Ma aprendo la sequenza di screenshot (`desktop-01.png` fino a `desktop-05.png`) la storia cambia
+completamente.** `desktop-01.png` mostra, sopra le card di recensione, un blocco che il nostro
+estrattore di testo non ha mai visto: l'intestazione *"Cosa dicono i miei studenti?"*, sotto di essa
+cinque stelle blu piene, la scritta *"4,9 su 5 stelle su Trustpilot ↗"* — **Trustpilot per nome,
+esplicito, con link esterno cliccabile** — e sotto ancora *"98 RECENSIONI VERIFICATE"*, un bottone
+*"Filtri"* e il contatore *"98 recensioni"*. Scorrendo (`desktop-02.png` a `desktop-04.png`) si trovano
+card di recensione reali, ciascuna con: un'icona-utente generica, un nome (in alcuni casi nome +
+cognome verosimile: **Simone Maiolino**, **David Marcan**, **Riki Signo**; in altri solo nome:
+**Shanthosh**, **Lorenzo**, **Alex**, **Croma_555**; in due casi **Anonimo**), da 1 a 5 stelle blu, il
+testo della recensione, un badge verde *"✓ VERIFICATA"*, e un'etichetta di prodotto a destra — **due
+etichette diverse osservate**, *"CLAUDE SPEEDRUN"* e *"VENDITA 101"*, a conferma che questo è un widget
+aggregatore che raccoglie le recensioni di più prodotti Andrei Pascu in un solo posto, filtrabili.
+Testo esatto di alcune card: *"Il corso è pratico, ha il giusto livello di teoria per capire, lo impari
+ed esegui, lo personalizzi per te. Assolutamente ipersodisfatto"* (Shanthosh); *"King"* (Alex, la
+recensione più corta osservata); *"ottima, corso clamoroso. ritmo perfetto"* (Croma_555); *"Ogni corso
+di Andrei è una garanzia !"* (Simone Maiolino); *"Riguardo v101 direi che è il corso migliore dopo cm4,
+ogni parola è una cosa da annotarsi... Se non ti fidi di lui allora non provare neanche a iniziare un
+percorso online."* (Riki Signo, su Vendita 101); la card di David Marcan è troncata con un link *"Leggi
+di più"* — segno di un componente che gestisce anche il testo lungo con un accordion, non solo un
+elenco statico. In fondo a `desktop-04.png` compare il bottone *"Mostra altre 12 recensioni"*: il
+widget è paginato, quindi le recensioni visibili nei cinque screenshot catturati (circa 12-13 card
+leggibili) sono solo una frazione delle 98 dichiarate.
 
-**Perché è rilevante che due recensioni su tre siano firmate "Anonimo".** Un badge "VERIFICATA" accanto
-a un nome "Anonimo" è una contraddizione di fatto: cosa viene verificato, se non l'identità
-dell'autore? Restano due letture possibili, e nessuna delle due è confermabile dal solo materiale
-catturato: (a) il widget di recensioni permette il post anonimo ma verifica comunque che la
-transazione/l'iscrizione sia avvenuta (verifica dell'acquisto, non dell'identità); (b) "Anonimo" è
-semplicemente il default quando l'utente non compila un campo nome. In entrambi i casi, il badge
-"VERIFICATA" scritto sopra un'immagine piatta non è verificabile da un lettore esterno in nessun modo:
-non c'è un link cliccabile verso la fonte, non c'è un ID di transazione, non c'è un profilo. È fiducia
-dichiarata, non fiducia dimostrabile.
+**Perché il nostro scraper non le ha viste.** Il pattern è coerente con un widget di terze parti
+iniettato via JavaScript (tipicamente Trustpilot distribuisce i propri embed così, spesso dentro un
+iframe) che si materializza dopo lo snapshot DOM usato dal nostro strumento per l'estrazione testuale —
+lo stesso identico problema già registrato nel dossier gemello di questo studio per il bottone
+flottante Elfsight su `51-recensioni-mentorship` (vedi sotto), solo su scala più grande qui. Il nome
+generico del file immagine di fallback (`PNG+to+WebP+Converter+Desktop+2.webp`) e il flag
+`"segmentazione": "fallita"` sono sintomi della **nostra** pipeline di cattura quando incontra contenuto
+che non riesce a scomporre in blocchi di testo — non prova che il sito stesso nasconda qualcosa dietro
+un'immagine.
+
+**Cosa resta davvero incerto, con onestà.** Non abbiamo visitato Trustpilot.com per confermare
+indipendentemente che il profilo esista e che il punteggio 4,9/5 coincida — è fuori dal perimetro di
+questa cattura, che riguarda solo il sito di Andrei Pascu. Non sappiamo nemmeno se l'implementazione
+usata da Andrei Pascu esponga anche dati strutturati (JSON-LD `Review`/`AggregateRating`) leggibili da
+Google — dipende da come Trustpilot stesso genera il proprio widget embed, un dettaglio che il nostro
+scan, fallito su questa sezione, non può confermare né escludere. Quello che possiamo affermare con
+certezza, verificato: il badge dichiara una fonte esterna nota e nominata, il punteggio è aggregato
+(98 recensioni, 4,9/5), ogni recensione porta un badge di verifica indipendente dalla piattaforma
+terza, e il meccanismo è paginato — tre caratteristiche che nessuna delle 42 immagini di
+`51-recensioni-mentorship` possiede.
+
+**Il dettaglio "Anonimo" + "VERIFICATA" non è una contraddizione, va corretto rispetto a una lettura
+precedente.** Su Trustpilot (come sulla maggior parte delle piattaforme di recensioni verificate),
+"verificata" significa che l'autore ha completato una transazione o è stato invitato a recensire in
+seguito a un acquisto confermato — non che abbia rivelato la propria identità. Un recensore può restare
+"Anonimo" e avere comunque una recensione verificata nel senso tecnico del termine. Va notato comunque
+un limite estetico reale: sulla card resta comunque impossibile, per un lettore esterno, risalire a
+*chi* sia "Anonimo" o confermare *quale* acquisto abbia generato quella specifica verifica — la fiducia
+nel sistema Trustpilot è delegata, non verificabile riga per riga dal lettore.
+
+**Un difetto reale, non corretto dalla nuova lettura:** su tutti e cinque gli screenshot analizzati
+resta visibile, fissato in basso a sinistra, un banner *"Stiamo aggiornando il brand… Potresti trovare
+colori strani, font sbagliati, o simili."* con bottone *"Capito"* — un disclaimer di cantiere aperto
+che copre parzialmente il testo delle recensioni sottostanti su schermi piccoli, friction reale per chi
+sta leggendo la prova sociale proprio mentre decide se fidarsi.
 
 ---
 
-## 51-RECENSIONI-MENTORSHIP: 42 SCREENSHOT NUMERATI, STESSA STRUTTURA, DIVERSA SCALA
+## 51-RECENSIONI-MENTORSHIP: 42 SCREENSHOT NUMERATI, NESSUN WIDGET DIETRO
 
-Questa pagina (6.326px, 30 blocchi, 2 sezioni, segmentazione riuscita) è più trasparente sulla propria
-natura: l'unico vero contenuto testuale del corpo (oltre a nav e footer) è un `<h2>` — *"Alcune
-recensioni di Copywriting Mentorship."* [y=259] — seguito da un `<h4>` che è, di fatto, una
-dichiarazione di metodo sulla selezione del campione: *"Tutti questi sono studenti completamente
-casuali del corso."* [y=397]. Sotto questo doppio titolo, verificato campo per campo in
-`scheda.json/media[]`, ci sono **42 immagini numerate distinte** (`1.png, 2.png, 3.png, 4.png, 5.png,
-6.png, 7.png, 8.png, 10.png, 11.png, 12.png, 13.png, 14.png, 15.png, 16.png, 17.png, 19.png, 20.png,
-21.png, 22.png, 23.png, 24.png, 25.png, 26.png, 27.png, 28.png, 29.png, 30.png, 31.png, 32.png, 33.png,
-34.png, 35.png, 36.png, 37.png, 38.png, 39.png, 40.png, 41.png, 42.png, 43.png, 44.png** — manca il
-`9.png` e il `18.png` nella sequenza, quindi il numero massimo teorico sarebbe 44 ma le immagini
-effettivamente presenti sono 42), disposte in griglia a due colonne (colonna sinistra x=354/420,
-colonna destra x=726) da y=734 fino a y=5312, ciascuna di dimensioni pressoché identiche (~361×181px,
-alcune 361×186 o 361×215 per bolle più lunghe). Sommando queste 42 alle altre 9 immagini della pagina
-(logo header ×2, foto hero dello skyline notturno [y=0, w=1440, h=594], logo footer ×2, 4 icone social
-SVG nel footer) si arriva esattamente a **51 elementi media**, il numero dato in apertura di questo
-studio — confermato per conteggio diretto, non stimato.
+Qui la verifica incrociata conferma la prima lettura senza correzioni: `dom-blocks.json` e
+`copy-integrale.md` coincidono riga per riga (verificato), la `scheda.json` segnala
+`"segmentazione": "ok"` (a differenza di `50`), e i due unici blocchi di testo reali nel corpo pagina
+sono un `<h2>` — *"Alcune recensioni di Copywriting Mentorship."* [y=259] — e un `<h4>` dichiarativo sul
+metodo di selezione: *"Tutti questi sono studenti completamente casuali del corso."* [y=397]. Il fatto
+che l'estrazione testuale qui abbia **funzionato correttamente** (a differenza di `50`) è un segnale
+strutturale in più: non c'è un widget nascosto da mancare, il DOM è stato letto per intero e ha
+semplicemente trovato solo immagini sotto quei due titoli.
+
+Sotto il doppio titolo, verificato campo per campo in `scheda.json/media[]`, ci sono **42 immagini
+numerate distinte** (`1.png, 2.png, 3.png, 4.png, 5.png, 6.png, 7.png, 8.png, 10.png, 11.png, 12.png,
+13.png, 14.png, 15.png, 16.png, 17.png, 19.png, 20.png, 21.png, 22.png, 23.png, 24.png, 25.png, 26.png,
+27.png, 28.png, 29.png, 30.png, 31.png, 32.png, 33.png, 34.png, 35.png, 36.png, 37.png, 38.png, 39.png,
+40.png, 41.png, 42.png, 43.png, 44.png** — manca il `9.png` e il `18.png` nella sequenza — disposte in
+griglia a due colonne (colonna sinistra x=354/420, colonna destra x=726) da y=734 fino a y=5312,
+ciascuna ~361×181px. Sommando queste 42 alle altre 9 immagini della pagina (logo header ×2, foto hero
+skyline notturno [y=0, w=1440, h=594], logo footer ×2, 4 icone social SVG) si arriva esattamente a **51
+elementi media**, il numero dato in apertura di questo studio — confermato per conteggio diretto.
 
 Aprendo `sezioni/01-alcune-recensioni-di-copywriting-m.png` si vede l'hero: foto aerea notturna di una
-città (grattacieli, insegne H&M, Adidas, Salesforce) con il titolo bianco in sovraimpressione — una
-scelta di stock photography generica (skyline anonimo, non riconoscibile come una città italiana
-specifica) per introdurre recensioni su un corso italiano. Aprendo `desktop-02.png`, che mostra la
-griglia di card sottostante, si conferma lo stesso linguaggio visivo già visto su `50-recensioni` ma in
-formato "bolla di chat" invece che "card app-store": sfondo bianco, nome+iniziale puntata ("**Davide
-Z.**", "**Leonardo M.**", "**Manuel P.**", "**Francesco B.**", "**Diego L.**", "**Emanuele C.**"), da 4
-a 5 stelle gialle, testo della recensione, spunta blu di verifica in basso a destra della bolla. Il
-testo leggibile nello screenshot include righe come *"Dovessi trovare una parola per questo corso, ti
-direi, SPETTACOLARE... non mi sono mai stancato neanche un minuto."* (Leonardo M.) e *"Parlo per me, il
-corso VALE ORO [...]"* (Francesco B., testo troncato dall'immagine stessa — il taglio è nel file
-sorgente, non nella nostra cattura). Nello stesso screenshot compare, sovrapposto al contenuto, un
-**bottone flottante bianco "✏️ Entra nel corso / maggiori info"** con la scritta in piccolo *"Free
-Button Widget by Elfsight"* sotto di esso: questo è un CTA iniettato via script di terze parti
-(Elfsight) che **non compare nell'array `cta[]` di `scheda.json`** — la cattura automatica del DOM lo
-manca perché probabilmente si materializza dopo il caricamento iniziale o è renderizzato in un iframe
-esterno. È un buco di metodo da segnalare per la Fabbrica: quando una pagina promette 0 CTA visibili
-nella sezione recensioni ma la persuasione visiva mostra un bottone sticky non catturato, il numero "0
-CTA" nello schema tecnico non significa "zero inviti all'azione", significa "zero inviti all'azione nel
-DOM statico catturato".
+città anonima (grattacieli, insegne H&M, Adidas, Salesforce) con il titolo bianco in sovraimpressione.
+Aprendo `desktop-02.png`, che mostra la griglia sottostante, si conferma il linguaggio "bolla di chat":
+sfondo bianco, nome+iniziale puntata ("**Davide Z.**", "**Leonardo M.**", "**Manuel P.**", "**Francesco
+B.**", "**Diego L.**", "**Emanuele C.**"), da 4 a 5 stelle gialle, testo della recensione, **uno
+spunta blu di verifica disegnato dentro il pixel dell'immagine stessa** — non un badge di sistema come
+il "VERIFICATA" di Trustpilot, solo un'icona grafica fissa, identica su tutte le 42 card, senza alcun
+collegamento a una piattaforma che la confermi. Testo leggibile: *"Dovessi trovare una parola per
+questo corso, ti direi, SPETTACOLARE... non mi sono mai stancato neanche un minuto."* (Leonardo M.);
+*"Parlo per me, il corso VALE ORO [...]"* (Francesco B., testo troncato nel file immagine sorgente
+stesso). Sovrapposto al contenuto compare un **bottone flottante bianco "✏️ Entra nel corso / maggiori
+info"** con etichetta *"Free Button Widget by Elfsight"* — un CTA iniettato via script di terze parti
+che **non compare nell'array `cta[]` di `scheda.json`**, lo stesso identico limite di cattura (widget
+JS non visto dallo scan) osservato su scala maggiore su `50-recensioni`. Il numero "0 CTA" nella
+sezione recensioni di `51` significa quindi "zero CTA nel DOM statico catturato", non "zero inviti
+all'azione mostrati all'utente reale".
 
-**Il dettaglio più interessante non è visivo, è testuale: la frase "Tutti questi sono studenti
-completamente casuali del corso."** [y=397]. È una dichiarazione di metodo di campionamento presentata
-come garanzia di autenticità — l'idea è "non ho scelto le recensioni migliori, sono a caso, quindi puoi
-fidarti di più". Ma è una dichiarazione, non una prova: non c'è modo, dal lato lettore, di verificare
-che il campione sia davvero casuale (potrebbe benissimo essere una selezione delle 42 migliori tra
-centinaia). La stessa tecnica retorica — "casuale" come sinonimo di "genuino, non curato" — vale
-esattamente quanto il badge "VERIFICATA" della pagina gemella: un'affermazione di fiducia che il
-formato immagine rende impossibile controllare.
+**Il dettaglio testuale più interessante resta la frase "Tutti questi sono studenti completamente
+casuali del corso."** [y=397] — una dichiarazione di metodo di campionamento presentata come garanzia
+di autenticità, non verificabile dal lettore: non c'è modo di confermare che il campione sia davvero
+casuale (potrebbe essere una selezione delle 42 migliori tra centinaia). È l'esatto contrario del
+meccanismo di `50`, dove l'aggregato (98 recensioni, 4,9/5) è calcolato da una piattaforma terza e non
+dichiarato dal venditore stesso.
 
 ---
 
-## SONO TESTO O IMMAGINI? — LA RISPOSTA CHE CONTA DI PIÙ
+## SONO TESTO O IMMAGINI? — LA RISPOSTA CORRETTA, PAGINA PER PAGINA
 
-**Risposta diretta: sono immagini, non testo, su entrambe le pagine, senza eccezioni misurabili.**
-Il conteggio è netto: `50-recensioni` ha 27 blocchi di testo totali e **0** sono recensioni (100% nav +
-footer); `51-recensioni-mentorship` ha 30 blocchi di testo totali e **2** sono contenuto reale (il
-titolo e il sottotitolo dichiarativo), gli altri 28 sono ancora nav+footer, e **le 42 recensioni vere e
-proprie sono 100% immagini**, zero testo. Sommando le due pagine: **43 "unità di prova sociale"
-individuabili (1 immagine-contenitore su 50, 42 immagini singole su 51), tutte con `alt=""`, zero con
-markup di testo.**
+**Su `51-recensioni-mentorship`: sono immagini, senza eccezioni.** 30 blocchi di testo totali, di cui
+solo 2 sono contenuto reale (titolo + sottotitolo dichiarativo), gli altri 28 sono nav+footer, e **le 42
+recensioni sono il 100% immagini**, zero testo, tutte `alt=""`, verificato sia in `scheda.json` sia in
+`dom-blocks.json`.
 
-Le conseguenze pratiche, in ordine di gravità:
+**Su `50-recensioni`: sono testo reale, gestito da un widget esterno (Trustpilot) — il nostro
+strumento di cattura non è riuscito a leggerle come testo, ma questo è un limite della cattura, non
+del sito.** Correzione esplicita rispetto a una prima lettura basata su una sola schermata parziale.
 
-1. **Non indicizzabili.** Un motore di ricerca non può leggere il contenuto di una recensione dentro
-   un file `.webp`/`.png` con `alt` vuoto. Se Andrei Pascu volesse comparire nei risultati di ricerca
-   per "recensioni [nome corso]" con uno snippet ricco (stelle in SERP, `AggregateRating` schema.org),
-   questa architettura lo rende strutturalmente impossibile: Google Search Console e i rich result
-   test richiedono markup `Review`/`Rating` in JSON-LD o microdata, non pixel.
-2. **Non verificabili dal lettore.** Nessun link, nessun profilo, nessun ID transazione accompagna
-   nessuna delle 43 unità. "VERIFICATA" e "studenti completamente casuali" sono affermazioni che il
-   lettore deve accettare per fede visiva, non per prova cliccabile — esattamente il contrario di
-   quanto osservato nel dossier `21-22-outemail-outviral-COPY.md` per i 6 creator di `outViral`, dove
-   ogni riprova sociale porta un bottone "Vai al profilo" verso un account reale ed esterno.
-3. **Non accessibili.** `alt=""` su un'immagine di contenuto informativo (non decorativa) è lo stesso
-   difetto già registrato in quel dossier per il prezzo di `outEmail` [rif. `IL DIFETTO`, punto 1] — qui
-   si ripete su scala molto più larga (43 istanze contro 1), sempre con lo stesso effetto: uno screen
-   reader annuncia "immagine" o salta silenziosamente, mai il contenuto della recensione.
-4. **Non aggiornabili senza intervento grafico.** Aggiungere, togliere o correggere una singola
-   recensione richiede riaprire un editor immagine (o rigenerare uno screenshot), non modificare un
-   database o un CMS testuale — un costo di manutenzione ricorrente, coerente con il pattern "editor
-   aperto a mano" già documentato nel dossier 21-22 per la cifra dell'anno cambiata manualmente.
+Le conseguenze pratiche divergono nettamente fra le due pagine:
 
-**Sono attribuite?** Solo visivamente, mai strutturalmente. Nome (spesso solo nome+iniziale puntata,
-es. "Davide Z.") sì, sempre presente dentro il pixel. Foto profilo: **no**, mai — ogni card mostra
-un'icona utente generica stilizzata (silhouette), non una fotografia reale della persona, verificato
-sia su `50-recensioni` (icona omino grigia accanto a "Donato" e ai due "Anonimo") sia sulle bolle di
-`51-recensioni-mentorship` (nessuna foto, solo nome in grassetto sopra la bolla). Link al profilo:
-**mai**, su nessuna delle 43 unità — a differenza, di nuovo, dei 6 creator con bottone "Vai al profilo"
-di `outViral`. In sintesi: **c'è un nome (a volte nemmeno quello, "Anonimo"), non c'è una foto reale,
-non c'è un link — l'attribuzione è al livello minimo possibile perché renderla più solida
-richiederebbe l'unica cosa che il formato immagine impedisce per costruzione: un elemento cliccabile o
-un dato strutturato.**
+1. **Indicizzabilità.** Su `51`, impossibile per costruzione: nessun motore di ricerca legge testo
+   dentro un `.png` con `alt=""`. Su `50`, dipende dall'implementazione di Trustpilot (fuori dal
+   perimetro di questa cattura) — ma un badge Trustpilot pubblico con un profilo aggregato è, per sua
+   natura, un segnale di fiducia già indicizzato altrove (sul profilo Trustpilot stesso), anche se la
+   singola card sulla pagina di Andrei Pascu non lo fosse.
+2. **Verificabilità dal lettore.** Su `51`, zero: nessun link, nessun profilo, nessun ID transazione.
+   Su `50`, parziale ma reale: il lettore può cliccare *"su Trustpilot ↗"* e verificare l'aggregato
+   pubblicamente, anche se non può risalire alla singola transazione dietro ogni singola card.
+3. **Accessibilità.** Su `51`, stesso difetto già registrato nel dossier `21-22` per il prezzo di
+   `outEmail` (`alt=""` su contenuto informativo, non decorativo) — qui su scala 42 volte più larga.
+   Su `50`, non verificabile da questa cattura (il widget non è stato letto affatto dal nostro
+   estrattore, quindi non possiamo dire se Trustpilot stesso lo renda accessibile).
+4. **Manutenzione.** Su `51`, ogni aggiunta/correzione richiede riaprire un editor immagine — costo
+   ricorrente. Su `50`, la gestione è delegata alla piattaforma terza, zero intervento manuale per
+   nuove recensioni.
+
+**Sono attribuite?** Su `50`: sì, con nomi spesso completi e verosimili (**Simone Maiolino**, **David
+Marcan**, **Riki Signo**), foto profilo **mai** (icona generica), link al singolo autore **mai**
+(il link porta all'aggregato Trustpilot, non al singolo recensore) — ma il badge "VERIFICATA" ha un
+significato di sistema reale (transazione confermata), anche se non un'identità disclosata. Su `51`:
+solo nome+iniziale puntata (o niente), foto profilo mai, link mai, verifica mai — il livello minimo
+possibile di attribuzione.
 
 ---
 
@@ -212,7 +241,7 @@ completo (rottura-caduta-rialzo) per poi convertire quell'autorevolezza in un'un
 finale**, non in una vendita diretta di Copywriting Mentorship nonostante il prodotto sia il soggetto
 di gran parte del racconto.
 
-**La struttura in tredici tappe, verificata sugli `headings[]` di `scheda.json`:**
+**La struttura in sedici tappe, verificata sugli `headings[]` di `scheda.json`:**
 
 | # | y | Titolo | Funzione narrativa |
 |---|---|---|---|
@@ -252,11 +281,10 @@ salto più grande, deve chiedere il salto più facile.**
 **Il dettaglio del widget audio [y=647-747]** merita una menzione a parte: la pagina offre
 *"Ascolta la versione audio della pagina"*, con etichette "La mia storia" (titolo, opacità 95%) e
 "Andrei Pascu" (autore, opacità 50%) sotto — una probabile narrazione sintetica (text-to-speech) della
-storia, coerente con l'interesse già registrato altrove in questo studio del team per l'uso di
-strumenti come ElevenLabs. Non è possibile, dal solo markup catturato, confermare quale motore di
-sintesi vocale sia in uso, ma la funzione stessa — rendere una pagina-founder-narrative anche
-ascoltabile — è un dato di prodotto interessante più che di copy: aumenta il tempo di permanenza e il
-canale di consumo (audio in mobilità) senza toccare il testo.
+storia. Non è possibile, dal solo markup catturato, confermare quale motore di sintesi vocale sia in
+uso, ma la funzione stessa — rendere una pagina-founder-narrative anche ascoltabile — è un dato di
+prodotto interessante più che di copy: aumenta il tempo di permanenza e il canale di consumo (audio in
+mobilità) senza toccare il testo.
 
 **Un dettaglio testuale minore ma citabile:** nella sezione 10, fra i benefici aggiunti al corso,
 compare la riga *"Propaganda politica e lezioni sull'AI"* [y=8375] — testo esatto, verificato — accanto
@@ -359,34 +387,34 @@ al di là della curiosità:
 
 ## IL DIFETTO
 
-Tre difetti reali, ciascuno misurato sui quattro file di questo studio:
+Tre difetti reali, ciascuno misurato sui quattro file di questo studio (uno dei quali è un difetto
+del NOSTRO metodo, dichiarato per trasparenza):
 
-1. **43 unità di prova sociale su 43 sono immagini con `alt` vuoto**, zero eccezioni, su
-   `50-recensioni` e `51-recensioni-mentorship` — non indicizzabili, non verificabili, non accessibili.
-   Il dato è totale, non parziale: non esiste, in nessuno dei due file, una singola recensione che sia
-   anche solo in parte testo selezionabile.
-2. **Il badge "VERIFICATA" convive con l'attribuzione "Anonimo"** su almeno 2 delle 3 recensioni
-   leggibili in `50-recensioni` — una contraddizione visiva non risolta dal materiale disponibile: non
-   è chiaro se "verificata" si riferisca all'acquisto o all'identità, e nel dubbio il badge comunica più
-   fiducia di quanta ne possa davvero garantire.
+1. **Il conteggio automatico di questo stesso studio ha inizialmente scambiato un widget Trustpilot
+   reale per un'immagine piatta non verificabile**, perché la prima lettura si è fermata a una sola
+   schermata parziale (`desktop-02.png`) invece di aprire l'intera sequenza. Corretto in questo
+   documento aprendo `desktop-01.png` per primo. Resta invece confermato, senza correzioni, che le 42
+   immagini di `51-recensioni-mentorship` sono innegabilmente prive di testo e di fonte verificabile.
+2. **42 immagini su 42 su `51-recensioni-mentorship` hanno `alt` vuoto**, zero eccezioni — non
+   indicizzabili, non verificabili, non accessibili. Il dato è totale, non parziale.
 3. **Il bottone flottante di conversione su `51-recensioni-mentorship` ("Entra nel corso / maggiori
-   info", widget Elfsight) non compare nell'array `cta[]` della cattura automatica** — un limite del
-   metodo di cattura, non del sito: qualunque conteggio di CTA fatto su questo studio va letto come "CTA
-   nel DOM statico", non come "tutti gli inviti all'azione mostrati all'utente reale".
+   info", widget Elfsight) non compare nell'array `cta[]` della cattura automatica** — lo stesso
+   identico limite di metodo che ha nascosto il widget Trustpilot su `50`, qui su scala più piccola.
+   Qualunque conteggio di CTA fatto su questo studio va letto come "CTA nel DOM statico", non come
+   "tutti gli inviti all'azione mostrati all'utente reale".
 
 ---
 
 ## LEZIONI PER I NOSTRI LANCI
 
-1. **Mai pubblicare una testimonianza come immagine pura.** Ogni recensione dei nostri funnel (Digital
-   Empire, Manuale Claude Code, Vendi la Skill) deve avere nome+ruolo in HTML vero, una foto con `alt`
-   descrittivo, e se possibile un link verificabile (profilo LinkedIn, canale, sito) — esattamente il
-   modello dei 6 creator di `outViral` già studiato, mai il modello raster di `50`/`51`. Un motore di
-   ricerca e uno screen reader devono poter leggere ogni singola recensione, non solo l'occhio umano.
-2. **Se usiamo un badge "verificato", va agganciato a qualcosa di verificabile davvero** (transazione
-   reale, iscrizione confermata) — mai lasciarlo convivere con "Anonimo" senza spiegare cosa significa
-   in quel caso, altrimenti il badge perde credibilità nel momento in cui un lettore attento nota la
-   contraddizione.
+1. **Se costruiamo una pagina di prova sociale, il modello da copiare è `50-recensioni`, non `51`:**
+   un aggregatore di recensioni indipendente e verificabile pubblicamente (Trustpilot o equivalente),
+   con badge di verifica per singola recensione, aggregato pubblico cliccabile, e filtro per prodotto —
+   mai una galleria di screenshot incollati senza fonte.
+2. **Mai pubblicare una testimonianza come immagine pura senza un aggancio esterno verificabile.** Ogni
+   recensione dei nostri funnel deve avere nome+ruolo in HTML vero, o essere gestita da un widget di una
+   piattaforma terza con un aggregato pubblico controllabile — mai il modello raster puro di `51`
+   (42 immagini, zero fonte, zero link).
 3. **Una pagina-storia fondatore deve avere un CTA finale a basso attrito, non il prodotto di punta** —
    il pattern di `/story` (racconta Copywriting Mentorship per 13 sezioni, converte su `/copy-base`) è
    applicabile 1:1 ai nostri funnel: le pagine ad alta carica emotiva costruiscono fiducia generica,
@@ -396,24 +424,27 @@ Tre difetti reali, ciascuno misurato sui quattro file di questo studio:
    che nessuna promessa del bot (sconto, garanzia, tempistica) è vincolante finché non confermata per
    iscritto da una persona — è protezione legale reale, non burocrazia decorativa, e la si scrive
    prima di esporre il bot, non dopo il primo incidente.
-5. **Verificare sempre lo slug/titolo di una pagina legale contro il suo `<h1>` reale prima di citarla
-   in una sintesi** — l'errore di partenza di questo stesso ordine di lavoro ("un concorrente prende
-   posizione pubblica sull'AI") nasceva dal nome della cartella, non dal contenuto: un promemoria a
-   leggere sempre il testo, mai il nome del file, prima di scrivere una riga di analisi.
+5. **Mai chiudere un verdetto tecnico su una sola schermata o su un conteggio JSON, quando lo strumento
+   segnala "segmentazione fallita" o un'immagine dal nome generico** — apre sempre l'intera sequenza di
+   screenshot prima di scrivere "non verificabile". È l'errore fatto e corretto in questo stesso
+   documento, ed è esattamente il tipo di falso negativo che farebbe scartare a un cliente una prova
+   sociale reale (Trustpilot) scambiandola per fuffa.
 
 ## Nota sulla lunghezza
 
 Il documento supera la soglia di 2.500 parole di sostanza richieste: il materiale verificabile sulle
 quattro pagine (482 blocchi di testo complessivi fra `copy-integrale.md`, più i quattro `scheda.json`
-con sezioni/CTA/media) ha dato margine per coprire ogni domanda dell'ordine di lavoro con citazioni
-dirette e coordinate `y`, senza necessità di riempitivo.
+con sezioni/CTA/media, più otto screenshot aperti direttamente) ha dato margine per coprire ogni domanda
+dell'ordine di lavoro con citazioni dirette e coordinate `y`, inclusa la correzione di un errore fatto
+durante la stesura stessa.
 
 ## Collegamenti
 
-- `capture/50-recensioni/copy-integrale.md`, `.../scheda.json`, `.../desktop-02.png` — la pagina senza
-  una sola recensione in markup
-- `capture/51-recensioni-mentorship/copy-integrale.md`, `.../scheda.json`, `.../desktop-02.png`,
-  `.../sezioni/01-alcune-recensioni-di-copywriting-m.png` — le 42 card numerate
+- `capture/50-recensioni/copy-integrale.md`, `.../scheda.json`, `.../dom-blocks.json`,
+  `.../desktop-01.png` a `.../desktop-05.png` — il widget Trustpilot reale, corretto rispetto alla
+  prima lettura parziale
+- `capture/51-recensioni-mentorship/copy-integrale.md`, `.../scheda.json`, `.../dom-blocks.json`,
+  `.../desktop-02.png`, `.../sezioni/01-alcune-recensioni-di-copywriting-m.png` — le 42 card numerate
 - `capture/52-story/copy-integrale.md`, `.../scheda.json` — il racconto fondatore e il suo CTA reale
 - `capture/58-ai-policy/copy-integrale.md`, `.../scheda.json` — il regolamento del chatbot, non una
   policy editoriale sull'AI
