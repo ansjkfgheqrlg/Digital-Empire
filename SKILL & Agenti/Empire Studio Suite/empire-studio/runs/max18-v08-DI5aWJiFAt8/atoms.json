@@ -32,7 +32,12 @@
   "frame": "frame-0005.png",
   "ancora": "Io ci gestisco consulenze per aziende che vanno da €10.000.000 al mese fino ai 50 milioni l'anno e lo insegno anche alle persone nel mio coaching program.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-229",
+    "tipo": "motiva"
+   }
+  ]
  },
  {
   "id": "KA-004",
@@ -42,7 +47,48 @@
   "frame": "frame-0007.png",
   "ancora": "CLAUDE COWORK CORSO COMPLETO / 1. Come scaricare Cowork",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-137",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-084",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-096",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-093",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-126",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-113",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-213",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-181",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-184",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-220",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-005",
@@ -56,6 +102,10 @@
    {
     "verso": "KA-001",
     "tipo": "quantifica"
+   },
+   {
+    "verso": "KA-229",
+    "tipo": "precede"
    }
   ]
  },
@@ -67,7 +117,12 @@
   "frame": "frame-0031.png",
   "ancora": "vi servirà in un momento successivo anche la parte mobile",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-224",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-007",
@@ -92,7 +147,12 @@
   "frame": "frame-0037.png",
   "ancora": "Pro ... $17 ... Includes Claude Code and Claude Cowork ... Max ... From $100",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-223",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-009",
@@ -102,7 +162,12 @@
   "frame": "frame-0043.png",
   "ancora": "avrete la possibilità di entrare nelle tre modalità, quindi chat, cowork e code",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-010",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-010",
@@ -212,7 +277,12 @@
   "frame": "frame-0046.png",
   "ancora": "Web, app, telefono | Terminale (web, VS Code, app iOS..) | Claude Desktop (Mac + Windows)",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-220",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-018",
@@ -272,6 +342,10 @@
     "verso": "KA-012",
     "tipo": "esempio-di",
     "perche": "mostra fisicamente dove Cowork esegue le sue azioni sul computer"
+   },
+   {
+    "verso": "KA-134",
+    "tipo": "precede"
    }
   ]
  },
@@ -287,6 +361,10 @@
    {
     "verso": "KA-011",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-100",
+    "tipo": "precede"
    }
   ]
  },
@@ -312,6 +390,10 @@
    {
     "verso": "KA-023",
     "tipo": "applica"
+   },
+   {
+    "verso": "KA-108",
+    "tipo": "precede"
    }
   ]
  },
@@ -323,7 +405,12 @@
   "frame": "frame-0055.png",
   "ancora": "Cloud Code era stato sviluppato prevalentemente pensando che sviluppatori lo avrebbero utilizzato.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-013",
+    "tipo": "motiva"
+   }
+  ]
  },
  {
   "id": "KA-026",
@@ -392,6 +479,10 @@
    {
     "verso": "KA-033",
     "tipo": "precede"
+   },
+   {
+    "verso": "KA-124",
+    "tipo": "precede"
    }
   ]
  },
@@ -407,6 +498,10 @@
    {
     "verso": "KA-030",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-140",
+    "tipo": "precede"
    }
   ]
  },
@@ -418,7 +513,12 @@
   "frame": "frame-0140.png",
   "ancora": "Use this to give Claude instructions for working in this folder.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-085",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-033",
@@ -477,6 +577,10 @@
    {
     "verso": "KA-033",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-199",
+    "tipo": "precede"
    }
   ]
  },
@@ -548,7 +652,12 @@
   "frame": "frame-0170.png",
   "ancora": "riferimento cella G8 ... Redistribuire 3-4 deal di Bruno a Diego.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-033",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-042",
@@ -573,7 +682,12 @@
   "frame": "frame-0203.png",
   "ancora": "il valore di cowork, quindi, è tanto più elevato per un'azienda quanto ... più chiaro è l'obiettivo che dovete andare a raggiungere",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-016",
+    "tipo": "motiva"
+   }
+  ]
  },
  {
   "id": "KA-044",
@@ -602,6 +716,10 @@
    {
     "verso": "KA-044",
     "tipo": "parte-di"
+   },
+   {
+    "verso": "KA-102",
+    "tipo": "alternativa-a"
    }
   ]
  },
@@ -668,7 +786,12 @@
   "frame": "frame-0296.png",
   "ancora": "ancora in fase, diciamo, di preview, beta, quello che volete",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-162",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-051",
@@ -712,7 +835,12 @@
   "frame": "frame-0302.png",
   "ancora": "+ New task ... Search ... Scheduled ... Projects ... Dispatch ... Ideas ... Customize",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-144",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-054",
@@ -722,7 +850,12 @@
   "frame": "frame-0307.png",
   "ancora": "i nostri output e le nostre chat",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-053",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-055",
@@ -732,7 +865,20 @@
   "frame": "frame-0312.png",
   "ancora": "Add files or photos ... Skills ... Connectors ... Plugins",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-140",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-190",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-200",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-056",
@@ -767,7 +913,12 @@
   "frame": "frame-0333.png",
   "ancora": "Export all of my stored memories and any context you've learned about me from past conversations. Preserve my words verbatim where possible ... Paste results below to add to Claude's memory",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-087",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-059",
@@ -791,6 +942,14 @@
    {
     "verso": "KA-059",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-106",
+    "tipo": "precede"
+   },
+   {
+    "verso": "KA-107",
+    "tipo": "precede"
    }
   ]
  },
@@ -802,7 +961,12 @@
   "frame": "frame-0348.png",
   "ancora": "Current session ... Weekly limits ... All models ... Sonnet only ... Extra usage",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-008",
+    "tipo": "esempio-di"
+   }
+  ]
  },
  {
   "id": "KA-062",
@@ -812,7 +976,12 @@
   "frame": "frame-0322.png",
   "ancora": "strumenti di traduzione come il mio che questo in",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-028",
+    "tipo": "motiva"
+   }
+  ]
  },
  {
   "id": "KA-063",
@@ -822,7 +991,12 @@
   "frame": "frame-0352.png",
   "ancora": "sono nominati a caso, non hanno alcun tipo di senso e cose di questo tipo",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-064",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-064",
@@ -844,6 +1018,10 @@
    {
     "verso": "KA-069",
     "tipo": "applica"
+   },
+   {
+    "verso": "KA-077",
+    "tipo": "precede"
    }
   ]
  },
@@ -855,7 +1033,12 @@
   "frame": "frame-0368.png",
   "ancora": "Non ho scritto \"metti ordine\" o \"pulisci\". Ho detto esattamente cosa fare ... Piu' siete specifici, meno margine di interpretazione lasciate.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-075",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-066",
@@ -865,7 +1048,12 @@
   "frame": "frame-0364.png",
   "ancora": "\"Non cancellare niente. Non sovrascrivere.\" Sembra ridondante? Non lo e'.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-071",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-067",
@@ -883,6 +1071,10 @@
    {
     "verso": "KA-068",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-072",
+    "tipo": "precede"
    }
   ]
  },
@@ -904,7 +1096,12 @@
   "frame": "frame-0387.png",
   "ancora": "Metti in 'da-verificare' quello che non riesci a classificare. Cowork non puo' sempre sapere cosa sia un file dal nome.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-073",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-070",
@@ -1008,7 +1205,12 @@
   "frame": "frame-0398.png",
   "ancora": "3 clienti trovati, 20 fatture organizzate, 0 file nella cartella \"da-verificare\" (tutti i PDF erano leggibili).",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-079",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-078",
@@ -1118,7 +1320,12 @@
   "frame": "frame-0445.png",
   "ancora": "serve per avere task che vanno in maniera ripetitiva durante il giorno",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-181",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-087",
@@ -1128,7 +1335,12 @@
   "frame": "frame-0450.png",
   "ancora": "questo è sostanzialmente il contesto che noi stiamo dando",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-083",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-088",
@@ -1211,6 +1423,10 @@
    {
     "verso": "KA-092",
     "tipo": "quantificato-da"
+   },
+   {
+    "verso": "KA-212",
+    "tipo": "esempio-di"
    }
   ]
  },
@@ -1317,7 +1533,12 @@
   "frame": "frame-0543.png",
   "ancora": "## WHAT ... ## HOW ... ## WHY",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-103",
+    "tipo": "alternativa-a"
+   }
+  ]
  },
  {
   "id": "KA-102",
@@ -1789,7 +2010,12 @@
   "frame": "frame-0726.png",
   "ancora": "Tutto questo avviene in quella che noi definiamo virtual machine... questa scatola sicura dentro la quale letteralmente tutto succede",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-212",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-135",
@@ -1854,7 +2080,12 @@
   "frame": "frame-0753.png",
   "ancora": "Pick a folder and Claude will treat its files as project context.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-084",
+    "tipo": "alternativa-a"
+   }
+  ]
  },
  {
   "id": "KA-140",
@@ -1914,7 +2145,12 @@
   "frame": "frame-0793.png",
   "ancora": "Connect your apps / Create new skills / Browse plugins",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-191",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-145",
@@ -1924,7 +2160,12 @@
   "frame": "frame-0798.png",
   "ancora": "/brand-guidelines — Anthropic — 42.3K download — icona a ingranaggio",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-174",
+    "tipo": "precede"
+   }
+  ]
  },
  {
   "id": "KA-146",
@@ -1998,7 +2239,12 @@
   "frame": "frame-0817.png",
   "ancora": "la parte difficile... è creare questa skill, ma una volta creata l'utilizzo è estremamente semplice",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-204",
+    "tipo": "alternativa-a"
+   }
+  ]
  },
  {
   "id": "KA-151",
@@ -2061,6 +2307,10 @@
    {
     "verso": "KA-141",
     "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-157",
+    "tipo": "esempio-di"
    }
   ]
  },
@@ -2076,6 +2326,10 @@
    {
     "verso": "KA-153",
     "tipo": "corretto-da"
+   },
+   {
+    "verso": "KA-158",
+    "tipo": "precede"
    }
   ]
  },
@@ -2160,7 +2414,12 @@
   "frame": "frame-0853.png",
   "ancora": "il titolo della task in alto è cambiato automaticamente in \"Greeting and initial conversation\" (rinominata dal sistema in base al contenuto della conversazione)",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-157",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-162",
@@ -2180,7 +2439,12 @@
   "frame": "frame-0858.png",
   "ancora": "mando un altro agente in parallelo, quindi una nuova task",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-131",
+    "tipo": "alternativa-a"
+   }
+  ]
  },
  {
   "id": "KA-164",
@@ -2200,7 +2464,12 @@
   "frame": "frame-0863.png",
   "ancora": "They said \"ciao\" but also said not to use any skill, so I won't trigger the saluto skill either.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-154",
+    "tipo": "esempio-di"
+   }
+  ]
  },
  {
   "id": "KA-166",
@@ -2215,6 +2484,10 @@
     "verso": "KA-165",
     "tipo": "alternativa-a",
     "perche": "mostra il comportamento opposto rispetto alla generazione diretta senza skill del caso precedente"
+   },
+   {
+    "verso": "KA-123",
+    "tipo": "esempio-di"
    }
   ]
  },
@@ -2268,7 +2541,12 @@
   "frame": "frame-0877.png",
   "ancora": "Ensure the ANTHROPIC_API_KEY environment variable is set. If not, ask the user for it and export it",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-167",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-171",
@@ -2278,7 +2556,12 @@
   "frame": "frame-0878.png",
   "ancora": "il post è in inglese perché il mio LinkedIn è in inglese prima di tutto e non è in italiano",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-166",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-172",
@@ -2288,7 +2571,12 @@
   "frame": "frame-0873.png",
   "ancora": "I have the reference posts loaded (18 posts, plenty of style data).",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-166",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-173",
@@ -2298,7 +2586,12 @@
   "frame": "frame-0883.png",
   "ancora": "Vuoi che cambi qualcosa? Posso aggiustare il tono, accorciare, allungare, o riscrivere parti specifiche.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-076",
+    "tipo": "applica"
+   }
+  ]
  },
  {
   "id": "KA-174",
@@ -2318,7 +2611,12 @@
   "frame": "frame-0891.png",
   "ancora": "\"Added by\" → \"You\"; \"Last updated\" → \"Apr 7, 2026\"; \"Invoked by\" → \"User or Claude\"",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-174",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-176",
@@ -2328,7 +2626,16 @@
   "frame": "frame-0896.png",
   "ancora": "abbiamo queste built in skills, ok? Quindi cose che sono già dentro.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-154",
+    "tipo": "esempio-di"
+   },
+   {
+    "verso": "KA-174",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-177",
@@ -2385,6 +2692,10 @@
     "verso": "KA-179",
     "tipo": "applica",
     "perche": "applica concretamente la funzione dichiarata nella descrizione ufficiale del comando"
+   },
+   {
+    "verso": "KA-154",
+    "tipo": "esempio-di"
    }
   ]
  },
@@ -2406,7 +2717,12 @@
   "frame": "frame-0923.png",
   "ancora": "Will be saved as \"post-su-linkedin\"",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-181",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-183",
@@ -2416,7 +2732,16 @@
   "frame": "frame-0923.png",
   "ancora": "utilizza la skill /linkedin-post",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-143",
+    "tipo": "applica"
+   },
+   {
+    "verso": "KA-181",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-184",
@@ -2426,7 +2751,12 @@
   "frame": "frame-0924.png",
   "ancora": "Scheduled tasks only run while your computer is awake.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-181",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-185",
@@ -2436,7 +2766,12 @@
   "frame": "frame-0926.png",
   "ancora": "utilizza la skill /social-media-manager:linkedin-post per cerare un post su LinkedIn sulla vita.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-183",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-186",
@@ -2446,7 +2781,12 @@
   "frame": "frame-0926.png",
   "ancora": "\"Frequency\": cambiato in \"Daily\" ... Campo orario sotto la frequenza: \"09:00\"",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-181",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-187",
@@ -2456,7 +2796,12 @@
   "frame": "frame-0926.png",
   "ancora": "Scheduled tasks use a randomized delay of several minutes for server performance.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-186",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-188",
@@ -2466,7 +2811,12 @@
   "frame": "frame-0928.png",
   "ancora": "\"Repeats\": \"Manual only\" in grassetto. Sezione \"Always allowed\"... \"Approvals you grant during a run appear here.\"",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-181",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-189",
@@ -2544,7 +2894,12 @@
   "frame": "frame-0947.png",
   "ancora": "\"Giovanni Beggiato\" — beggiato.linkedin@gmail.com",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-092",
+    "tipo": "motiva"
+   }
+  ]
  },
  {
   "id": "KA-195",
@@ -2554,7 +2909,12 @@
   "frame": "frame-0948.png",
   "ancora": "This connector is required by the following plugins: Productivity, Sales, Marketing",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-201",
+    "tipo": "parte-di"
+   }
+  ]
  },
  {
   "id": "KA-196",
@@ -2598,6 +2958,10 @@
     "verso": "KA-197",
     "tipo": "parte-di",
     "perche": "è il dettaglio del primo passo della pipeline a 3 step"
+   },
+   {
+    "verso": "KA-123",
+    "tipo": "esempio-di"
    }
   ]
  },
@@ -2695,7 +3059,12 @@
   "frame": "frame-1025.png",
   "ancora": "Here's the demo with fictional data so you can see the full format in action.",
   "confidenza": "osservato",
-  "relazioni": []
+  "relazioni": [
+   {
+    "verso": "KA-091",
+    "tipo": "contraddice"
+   }
+  ]
  },
  {
   "id": "KA-206",
