@@ -209,38 +209,22 @@ def main():
     if not problemi:
         return 0
 
+    from verifica_recap import costruisci  # stesso principio: una sola fonte di verita'
+
+    esempio = costruisci(
+        "<una riga, fino a 4>", "<una riga, fino a 4>", "<una riga, fino a 4>",
+        ["<GRADO> <nome> <cosa fa> — una riga per forza, o \"nessuna, sto lavorando da solo\""],
+        "normale", 100, 0,
+    )
     motivo = (
         "GATE BATTITO — la forma non torna, il messaggio non parte cosi'.\n\n"
         + "\n".join("  - " + p for p in problemi)
-        + "\n\nRiscrivi il battito nella forma fissa a quadrati (emperator.md 6.11), poi "
-        "consegna (ogni riquadro max 4 righe di contenuto, tranne Assetto+Potere che ne ha "
-        "sempre 2; usa verifica_recap.costruisci(...) invece di disegnarlo a mano):\n\n"
-        "**⏱️ RECAP — <n>%**\n\n"
-        "┌───\n"
-        "│ \U0001f7e0 Fatto\n"
-        "│ <riga>\n"
-        "└───\n"
-        "↓\n"
-        "┌───\n"
-        "│ \U0001f7e0 Sto facendo\n"
-        "│ <riga>\n"
-        "└───\n"
-        "↓\n"
-        "┌───\n"
-        "│ \U0001f7e0 Farò\n"
-        "│ <riga>\n"
-        "└───\n"
-        "↓\n"
-        "┌───\n"
-        "│ \U0001f7e0 Forze\n"
-        "│ <riga>  (una per forza, o \"nessuna, sto lavorando da solo\")\n"
-        "└───\n"
-        "↓\n"
-        "┌───\n"
-        "│ \U0001f7e0 Assetto\n"
-        "│ normale  |  **GOD EMPEROR DOOM**\n"
-        "│ \U0001f7e0 Potere: <n>%\n"
-        "└───\n"
+        + "\n\nRiscrivi il battito nella forma fissa a quadrati (emperator.md 6.11) — chiusi "
+        "su tutti i lati, centrati sullo stesso asse, freccia `↓` centrata fra un riquadro e "
+        "il successivo. Ogni riquadro porta max 4 righe di contenuto, tranne Assetto+Potere "
+        "che ne porta sempre 2. Non disegnarlo a mano: chiama `verifica_recap.costruisci(...)` "
+        "con i sei valori, che genera gia' bordi e centraggio corretti. Esempio di forma "
+        "(valori segnaposto):\n\n" + esempio
     )
 
     risposta = {"decision": "block", "reason": motivo}

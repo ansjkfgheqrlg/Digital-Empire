@@ -630,35 +630,48 @@ sempre in questa forma:
 ```
 **⏱️ RECAP — <n>%**
 
-┌───
-│ 🟠 Fatto
-│ <riga 1, fino a 4 righe>
-└───
-↓
-┌───
-│ 🟠 Sto facendo
-│ <riga 1, fino a 4 righe>
-└───
-↓
-┌───
-│ 🟠 Farò
-│ <riga 1, fino a 4 righe>
-└───
-↓
-┌───
-│ 🟠 Forze
-│ <n> attive — <GRADO> <nome> <cosa fa>   (una riga per forza, fino a 4)
-└───
-↓
-┌───
-│ 🟠 Assetto
-│ normale  |  **GOD EMPEROR DOOM**
-│ 🟠 Potere: <n>%
-└───
+                   ┌────────────────────┐
+                   │ 🟠 Fatto            │
+                   │ <riga 1, fino a 4> │
+                   └────────────────────┘
+                              ↓
+                   ┌────────────────────┐
+                   │ 🟠 Sto facendo      │
+                   │ <riga 1, fino a 4> │
+                   └────────────────────┘
+                              ↓
+                   ┌────────────────────┐
+                   │ 🟠 Farò             │
+                   │ <riga 1, fino a 4> │
+                   └────────────────────┘
+                              ↓
+┌──────────────────────────────────────────────────────────┐
+│ 🟠 Forze                                                  │
+│ <GRADO> <nome> <cosa fa>  (una riga per forza, fino a 4) │
+└──────────────────────────────────────────────────────────┘
+                              ↓
+                      ┌──────────────┐
+                      │ 🟠 Assetto    │
+                      │ normale      │
+                      │ 🟠 Potere: 0% │
+                      └──────────────┘
 ```
 
+(numeri a 0% qui solo perché è l'output letterale di `costruisci(...)` con argomenti
+segnaposto — nel battito vero ci va la percentuale reale.)
+
 **LA FORMA DEL BATTITO È FISSA, CARATTERE PER CARATTERE** *(ordine di Max, 2026-09-05; resa a
-quadrati ordinata da Max il 2026-09-09)*.
+quadrati ordinata da Max il 2026-09-09, corretta da Max lo stesso giorno al primo giro)*.
+
+> ⚠️ **Il primo tentativo era sbagliato, e Max l'ha bocciato in una riga.** La prima resa a
+> quadrati aveva i riquadri aperti sul lato destro (niente bordo `┐`/`┘`) e le frecce a
+> colonna 0, non centrate — una scelta tecnica presa per paura che gli spazi multipli fuori
+> da un blocco di codice venissero compressi dal renderer. Max ha risposto con lo screenshot
+> del battito vero: il suo renderer allinea i caratteri perfettamente, spazi multipli inclusi
+> — la paura era infondata, e la resa aperta era comunque quella che *lui* non voleva:
+> *«i quadratini devono essere al centro e devono essere completamente chiusi e anche le
+> frecce devono essere centrali»*. Lezione: uno screenshot del rendering vero vale piu' di
+> un'ipotesi tecnica non verificata sul renderer.
 
 Non è un gusto grafico: Max legge il battito **di corsa**, e un formato che cambia ogni volta
 lo costringe a rileggerlo per capire dov'è il numero e dove finisce un riquadro. Regole,
@@ -667,23 +680,24 @@ nessuna facoltativa:
 1. **`⏱️ RECAP — <n>%` in grassetto**, da solo sulla prima riga, con la percentuale sempre.
 2. **Riga vuota** fra il titolo e il primo riquadro.
 3. **Cinque riquadri, in quest'ordine, sempre tutti**: Fatto → Sto facendo → Farò → Forze →
-   Assetto+Potere insieme nell'ultimo. Ogni riquadro è `┌───` sulla riga sopra, `│ 🟠
-   <Etichetta>` come prima riga dentro, poi il contenuto, poi `└───` sotto. **Aperto sul lato
-   destro** — niente bordo destro allineato: imbottire il testo con spazi multipli per farlo
-   quadrare rischia di essere compresso dal renderer che mostra il messaggio a Max, e un bordo
-   storto è peggio di nessun bordo (lezione tecnica del 2026-09-09, vedi `verifica_recap.py`).
-4. **Fra un riquadro e il successivo, una riga con solo la freccia `↓`** — nessun'altra cosa su
-   quella riga.
-5. **Ogni riquadro porta fino a 4 righe di contenuto** (Fatto, Sto facendo, Farò, Forze — una
+   Assetto+Potere insieme nell'ultimo. Ogni riquadro è **chiuso su tutti e quattro i lati**
+   (`┌─...─┐` sopra, `│ testo │` ai lati, `└─...─┘` sotto), con `🟠 <Etichetta>` come prima
+   riga dentro.
+4. **Tutti i riquadri centrati sullo stesso asse** — quello largo quanto il riquadro più
+   largo. Un riquadro con meno testo resta più stretto ma centrato, mai accostato a sinistra.
+5. **Fra un riquadro e il successivo, una riga con solo la freccia `↓`, centrata sullo stesso
+   asse** — nessun'altra cosa su quella riga.
+6. **Ogni riquadro porta fino a 4 righe di contenuto** (Fatto, Sto facendo, Farò, Forze — una
    frase per riga, mai un paragrafo unico); il riquadro Assetto+Potere ne porta **sempre
    esattamente 2**: l'assetto (`normale` o `**GOD EMPEROR DOOM**` in grassetto — unica
    eccezione al grassetto) e poi `🟠 Potere: <n>%`. Anche quando una voce vale "nessuna" il
    riquadro resta: non si salta mai.
-6. **Generato dal codice, non disegnato a mano** — stesso principio di `frantuma.py`:
+7. **Generato dal codice, non disegnato a mano** — stesso principio di `frantuma.py`:
    `scripts/verifica_recap.py` espone `costruisci(fatto, sto_facendo, farò, forze, assetto,
-   potere, percentuale)` che restituisce il testo già corretto. Disegnare `┌│└─↓` a mano riga
-   per riga è la stessa trappola dei conteggi a mano che ha già fatto cadere altre regole
-   (§6.24): usa la funzione quando il canale lo permette.
+   potere, percentuale)` che calcola già bordi, centraggio e frecce. Disegnare `┌│└─↓` a mano
+   riga per riga è la stessa trappola dei conteggi a mano che ha già fatto cadere altre regole
+   (§6.24): usa la funzione quando il canale lo permette — è anche l'unico modo pratico di
+   tenere i quattro lati davvero allineati.
 
 Vale per **ogni** battito: quello automatico dei dieci minuti, quello chiesto col comando
 `recap`, quello di apertura con Gael e Neri (§6.16.2), quello di chiusura lavoro. Un battito
@@ -875,39 +889,10 @@ Max, 2026-09-03)*.
 Il battito ogni 10 minuti è **automatico, di tua iniziativa**. Questo è l'altro senso: se in
 qualunque momento di un lavoro continuativo Max scrive **`recap`** — da solo, una parola, anche
 in mezzo a un lavoro lunghissimo — tu **rispondi all'istante** con lo stesso identico formato
-del battito (§6.11), aggiornato a **quel secondo**, non all'ultimo giro fatto:
-
-```
-**⏱️ RECAP — <n>%**
-
-┌───
-│ 🟠 Fatto
-│ <riga>
-└───
-↓
-┌───
-│ 🟠 Sto facendo
-│ <riga>
-└───
-↓
-┌───
-│ 🟠 Farò
-│ <riga>
-└───
-↓
-┌───
-│ 🟠 Forze
-│ <riga>
-└───
-↓
-┌───
-│ 🟠 Assetto
-│ normale  |  **GOD EMPEROR DOOM**
-│ 🟠 Potere: <n>%
-└───
-```
-
-— stessa forma fissa di §6.11, cinque riquadri a quadrati, nessuno escluso.
+del battito (§6.11), aggiornato a **quel secondo**, non all'ultimo giro fatto — stessa forma
+fissa a quadrati chiusi e centrati vista sopra, cinque riquadri, nessuno escluso (non
+duplicata qui: un secondo esempio da tenere allineato al primo è la stessa trappola della
+doppia scrittura, §6.13).
 
 **Vale sempre**, non solo sopra i ~15 minuti: `recap` è una richiesta diretta di Max, e una
 richiesta diretta non si misura con la soglia che governa la tua iniziativa. Se il lavoro è

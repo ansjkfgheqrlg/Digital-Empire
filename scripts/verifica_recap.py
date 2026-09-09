@@ -18,12 +18,17 @@ di corsa. Max ha chiesto esplicitamente un formato diverso da quello di `frantum
 (niente albero con rami `├──`): titolo, poi cinque riquadri in markdown puro (mai dentro
 ```: un blocco di codice sparisce dal controllo, vedi `righe_reali` in
 gate_battito_hook.py), uno per Fatto / Sto facendo / Farò / Forze / Assetto+Potere,
-uniti da una freccia `↓` su riga propria. Ogni riquadro e' aperto sul lato destro (solo
-`┌─...`, `│ testo`, `└─...`) apposta: un bordo destro allineato richiederebbe imbottire
-il testo con spazi multipli, e gli spazi multipli fuori da un blocco di codice possono
-essere compressi dal renderer che mostra il messaggio a Max — un bordo destro storto
-sarebbe peggio di nessun bordo destro. Nessuna larghezza va quindi confrontata fra
-riquadri: si controlla solo che i caratteri giusti (┌ │ └ ─ ↓) siano nei punti giusti.
+uniti da una freccia `↓` su riga propria.
+
+**Chiusi e centrati** (correzione di Max, 2026-09-09, sul primo giro — il primo tentativo
+aveva i riquadri aperti a destra: sbagliato, Max li vuole un rettangolo vero). `costruisci()`
+misura ogni riquadro (larghezza = riga di contenuto piu' lunga, incluso `🟠 <Etichetta>`),
+poi li chiude tutti e quattro i lati (`┌─...─┐` / `│ testo │` / `└─...─┘`), e li rientra
+tutti sullo stesso "canvas" — largo quanto il riquadro piu' largo — cosi' ogni riquadro piu'
+stretto risulta centrato rispetto agli altri invece che accostato a sinistra. Le frecce `↓`
+fra un riquadro e il successivo stanno sullo stesso asse centrale del canvas, non a colonna 0.
+Un riquadro rimane comunque piu' stretto del canvas quando il suo contenuto e' piu' corto:
+e' voluto, e' quello che lo fa apparire centrato invece che a tutta larghezza.
 
 USO (prima di inviare OGNI battito):
     printf '%s' "<testo del battito>" | py -3 scripts/verifica_recap.py
@@ -51,9 +56,9 @@ RIQUADRI = [
 ]
 
 TITOLO_RE = re.compile(r"^\*\*⏱️ RECAP — (\d{1,3})%\*\*$")
-TOP_RE = re.compile(r"^┌─+$")
-BOTTOM_RE = re.compile(r"^└─+$")
-RIGA_RE = re.compile(r"^│ (.+)$")
+TOP_RE = re.compile(r"^┌─+┐$")
+BOTTOM_RE = re.compile(r"^└─+┘$")
+RIGA_RE = re.compile(r"^│ (.*?) *│$")
 FRECCIA = "↓"
 ASSETTO_RE = re.compile(r"^(\*\*GOD EMPEROR DOOM\*\*|normale)$")
 POTERE_RE = re.compile(r"^🟠 Potere: (\d{1,3})%$")
@@ -65,32 +70,62 @@ def _leggi_stdin():
 
 
 def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
-    """Legge un riquadro a partire da `idx` (che deve puntare a `┌─...`).
+    """Legge un riquadro a partire da `idx` (che deve puntare al bordo superiore).
 
-    Ritorna l'indice subito dopo `└─...`. Non solleva mai — accumula i problemi
-    e prova comunque a ripartire dalla riga successiva, cosi' un solo riquadro
-    rotto non nasconde gli errori di quelli dopo.
+    Tollera un rientro qualunque (il centraggio in `costruisci`) purche' sia LO STESSO
+    su ogni riga del riquadro — un rettangolo chiuso non puo' avere lati storti. Ritorna
+    l'indice subito dopo il bordo inferiore. Non solleva mai — accumula i problemi e
+    prova comunque a ripartire dalla riga successiva, cosi' un solo riquadro rotto non
+    nasconde gli errori di quelli dopo.
     """
-    if idx >= len(righe) or not TOP_RE.match(righe[idx]):
+    def _rientro(riga):
+        return len(riga) - len(riga.lstrip(" "))
+
+    if idx >= len(righe) or not TOP_RE.match(righe[idx].lstrip(" ")):
         problemi.append(
-            "riga %d: atteso il bordo superiore del riquadro '%s' (`┌─...`), trovato: %r"
+            "riga %d: atteso il bordo superiore del riquadro '%s' (`┌─...─┐`), trovato: %r"
             % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
         )
         return idx + 1
+    rientro_box = _rientro(righe[idx])
+    larghezza_box = len(righe[idx].lstrip(" "))
     idx += 1
 
-    if idx >= len(righe) or righe[idx] != "│ 🟠 %s" % etichetta:
+    if idx >= len(righe):
+        problemi.append("riquadro '%s': troncato subito dopo il bordo superiore" % etichetta)
+        return idx
+
+    m = RIGA_RE.match(righe[idx].lstrip(" "))
+    if not m or m.group(1) != "🟠 %s" % etichetta:
         problemi.append(
-            "riga %d: attesa l'etichetta `│ 🟠 %s`, trovato: %r"
-            % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
+            "riga %d: attesa l'etichetta `🟠 %s` dentro il riquadro, trovato: %r"
+            % (idx + 1, etichetta, righe[idx])
         )
     else:
         idx += 1
 
     contenuto = []
-    while idx < len(righe) and RIGA_RE.match(righe[idx]) and not BOTTOM_RE.match(righe[idx]):
-        contenuto.append((idx, RIGA_RE.match(righe[idx]).group(1)))
+    while idx < len(righe):
+        spoglia = righe[idx].lstrip(" ")
+        if BOTTOM_RE.match(spoglia):
+            break
+        m = RIGA_RE.match(spoglia)
+        if not m:
+            break
+        contenuto.append((idx, m.group(1)))
         idx += 1
+
+    for riga_num, _ in contenuto:
+        if _rientro(righe[riga_num]) != rientro_box:
+            problemi.append(
+                "riga %d: rientro diverso dal resto del riquadro '%s' — il rettangolo "
+                "e' storto, dev'essere lo stesso rientro su ogni riga" % (riga_num + 1, etichetta)
+            )
+        if len(righe[riga_num].rstrip("\n")) != larghezza_box + rientro_box:
+            problemi.append(
+                "riga %d: il riquadro '%s' non e' chiuso — questa riga non arriva al bordo "
+                "destro `│` alla stessa colonna del bordo superiore" % (riga_num + 1, etichetta)
+            )
 
     if len(contenuto) < min_righe:
         problemi.append(
@@ -130,12 +165,17 @@ def _riquadro(righe, idx, etichetta, min_righe, max_righe, problemi):
                 if n > 100:
                     problemi.append("riga %d: potere %d%% impossibile (>100)" % (contenuto[1][0] + 1, n))
 
-    if idx >= len(righe) or not BOTTOM_RE.match(righe[idx]):
+    if idx >= len(righe) or not BOTTOM_RE.match(righe[idx].lstrip(" ")):
         problemi.append(
-            "riga %d: atteso il bordo inferiore del riquadro '%s' (`└─...`), trovato: %r"
+            "riga %d: atteso il bordo inferiore del riquadro '%s' (`└─...─┘`), trovato: %r"
             % (idx + 1, etichetta, righe[idx] if idx < len(righe) else "<fine testo>")
         )
         return idx + 1
+    if _rientro(righe[idx]) != rientro_box or len(righe[idx].lstrip(" ")) != larghezza_box:
+        problemi.append(
+            "riga %d: il bordo inferiore del riquadro '%s' non e' allineato al bordo "
+            "superiore — stesso rientro, stessa larghezza" % (idx + 1, etichetta)
+        )
     return idx + 1
 
 
@@ -199,7 +239,13 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
     """Genera il testo del battito a partire dai valori — cosi' non si disegnano i
     riquadri a mano (stesso principio di frantuma.py: generato dal codice, mai scritto
     a mano). Ogni argomento voce e' una stringa o una lista di 1-4 righe; `assetto` e'
-    "normale" oppure "GOD EMPEROR DOOM" (senza asterischi, li aggiunge la funzione)."""
+    "normale" oppure "GOD EMPEROR DOOM" (senza asterischi, li aggiunge la funzione).
+
+    I riquadri escono CHIUSI su tutti e quattro i lati e CENTRATI su un asse comune —
+    largo quanto il riquadro piu' largo (`canvas`) — cosi' quelli piu' stretti non
+    restano accostati a sinistra. Le frecce fra un riquadro e il successivo stanno
+    sullo stesso asse centrale, non a colonna 0 (ordine di Max, 2026-09-09, corretto
+    dopo un primo giro con riquadri aperti a destra e frecce a sinistra: sbagliato)."""
     def _righe(v):
         return v if isinstance(v, list) else [v]
 
@@ -214,16 +260,26 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
         ]),
     ]
 
+    # 1a passata: ogni riquadro chiuso alla sua larghezza naturale, senza rientro.
+    riquadri = []
+    for etichetta, righe in blocchi:
+        contenuto = ["🟠 %s" % etichetta] + righe
+        interno = max(len(r) for r in contenuto) + 2  # 1 spazio di margine per lato
+        righe_box = ["┌" + "─" * interno + "┐"]
+        for r in contenuto:
+            righe_box.append("│ " + r.ljust(interno - 2) + " │")
+        righe_box.append("└" + "─" * interno + "┘")
+        riquadri.append((righe_box, interno + 2))  # +2 = i due caratteri │/┌└┐┘
+
+    canvas = max(larghezza for _, larghezza in riquadri)
+
     out = ["**⏱️ RECAP — %d%%**" % percentuale, ""]
-    for i, (etichetta, righe) in enumerate(blocchi):
-        larghezza = max([len(etichetta) + 3] + [len(r) for r in righe]) + 2
-        out.append("┌" + "─" * larghezza)
-        out.append("│ 🟠 %s" % etichetta)
-        for r in righe:
-            out.append("│ %s" % r)
-        out.append("└" + "─" * larghezza)
-        if i < len(blocchi) - 1:
-            out.append(FRECCIA)
+    for i, (righe_box, larghezza) in enumerate(riquadri):
+        rientro = (canvas - larghezza) // 2
+        for r in righe_box:
+            out.append(" " * rientro + r)
+        if i < len(riquadri) - 1:
+            out.append(" " * (canvas // 2) + FRECCIA)
     return "\n".join(out)
 
 
