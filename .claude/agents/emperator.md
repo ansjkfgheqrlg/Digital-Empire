@@ -1569,21 +1569,25 @@ mai dato per scontato che il silenzio sia un sì.
 **FASE 2 — CONFERMA.** Solo dopo un sì esplicito di Max, Gael o Neri: conio per davvero, una
 chiamata `python scripts/frantuma.py conia --padre <PADRE> --slug <slug> --titolo "<titolo>"` per
 ogni micro-task, poi stampo `python scripts/frantuma.py report --padre <PADRE>` — che, leggendo
-solo file già coniati, produce sempre e solo questa forma, con il richiamo che l'ID è ufficiale:
+solo file già coniati, produce sempre e solo questa forma, con **il percorso vero del file**, non
+una frase generica *(correzione di Max, 2026-09-09: "ID ufficiale" scritto come frase non è un
+ID — un ID è qualcosa che si apre davvero)*:
 
 ```
 🟣 **<PADRE>**
 🟣 divisa in <n> micro-task ufficiali
    │
-   ├──🟣→ **MT-01** · <titolo> — ID ufficiale, usabile in altre chat/sessioni
-   ├──🟣→ **MT-02** · <titolo> — ID ufficiale, usabile in altre chat/sessioni
-   └──🟣→ **MT-0n** · <titolo> — ID ufficiale, usabile in altre chat/sessioni
+   ├──🟣→ **MT-01** · <titolo> — `company/Memory/tasks/micro/<PADRE>/MT-01-<slug>.md`
+   ├──🟣→ **MT-02** · <titolo> — `company/Memory/tasks/micro/<PADRE>/MT-02-<slug>.md`
+   └──🟣→ **MT-0n** · <titolo> — `company/Memory/tasks/micro/<PADRE>/MT-0n-<slug>.md`
 ```
 
-Copio l'output di `report`, non lo ricreo a mano: la forma di FASE 2 è garantita dal codice,
-esattamente come `verifica_recap.py` garantisce quella del battito. La FASE 1 non passa da
-nessuno script — è per forza scritta a mano, perché prima dell'accettazione non esiste ancora
-nessun file su cui `report` possa leggere.
+Il percorso è l'ID vero: è quello che un'altra chat/sessione apre per eseguire proprio quella
+micro-task, non un'etichetta rassicurante. Copio l'output di `report`, non lo ricreo a mano: la
+forma di FASE 2 è garantita dal codice, esattamente come `verifica_recap.py` garantisce quella
+del battito. La FASE 1 non passa da nessuno script — è per forza scritta a mano, perché prima
+dell'accettazione non esiste ancora nessun file su cui `report` possa leggere (e quindi, in FASE
+1, non c'è nessun percorso da mostrare: solo titolo e numerazione provvisoria).
 
 **Quando si attiva:** quando Max, Gael o Neri dice *"frantuma questa task"* o equivalenti. **Non
 si esegue mai di iniziativa su una task reale** senza che qualcuno lo chieda esplicitamente E poi

@@ -70,18 +70,19 @@ def test_report_legge_i_titoli_veri_dai_file(base_finta):
 def test_report_ha_lo_schema_fisso_viola_con_frecce(base_finta):
     """La forma esatta approvata da Max 08-09/09: titolo, sottotitolo col
     conteggio, un ramo per micro-task (└── sull'ultima), tutte col marcatore
-    🟣. report() e' sempre la FASE 2 (conferma): ogni riga richiama che l'ID
-    e' ufficiale e usabile in un'altra chat/sessione -- la FASE 1 (proposta)
-    non passa da qui, si compone a mano prima di coniare nulla."""
+    🟣. report() e' sempre la FASE 2 (conferma): ogni riga porta il percorso
+    REALE del file -- l'ID vero, non una frase generica (correzione di Max:
+    "ID ufficiale" da solo non e' un ID, serve il percorso vero) -- la FASE 1
+    (proposta) non passa da qui, si compone a mano prima di coniare nulla."""
     frantuma.conia("TASK-A", "uno", "Prima")
     frantuma.conia("TASK-A", "due", "Seconda")
     righe = frantuma.report("TASK-A").split("\n")
     assert righe[0] == "🟣 **TASK-A**"
     assert righe[1] == "🟣 divisa in 2 micro-task ufficiali"
     assert righe[3].startswith("   ├──🟣→ **MT-01**")
-    assert righe[3].endswith("ID ufficiale, usabile in altre chat/sessioni")
+    assert righe[3].endswith("`company/Memory/tasks/micro/TASK-A/MT-01-uno.md`")
     assert righe[4].startswith("   └──🟣→ **MT-02**")
-    assert righe[4].endswith("ID ufficiale, usabile in altre chat/sessioni")
+    assert righe[4].endswith("`company/Memory/tasks/micro/TASK-A/MT-02-due.md`")
 
 
 def test_report_su_task_senza_micro_task_lo_dice_chiaro(base_finta):

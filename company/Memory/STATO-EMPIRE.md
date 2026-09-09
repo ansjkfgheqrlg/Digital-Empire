@@ -1,3 +1,13 @@
+## 🟣 2026-09-09 — /frantuma: l'ID di fase 2 e' il percorso vero, non una frase — CP-20260909-6R2M
+
+Durante una prova a vuoto ("fingi", nessun file reale), Max ha colto un difetto vero nello
+schema: la riga finiva con la frase "ID ufficiale, usabile in altre chat/sessioni" — parole,
+non un ID. Corretto: `report()` ora stampa il **percorso reale del file**
+(`company/Memory/tasks/micro/<PADRE>/MT-0N-<slug>.md`) — quello si apre, quindi e' l'ID vero.
+Stesso principio dei "PASS finti" gia' visto altrove (push_social.py): un segnale che descrive
+una proprieta' senza portare il dato che la rende vera non e' quella proprieta'. 8 test verdi,
+suite 22/22. Dettagli: [CP-20260909-6R2M](checkpoints/CP-20260909-6R2M.md).
+
 ## 🟣 2026-09-09 — /frantuma a due fasi: proposta poi conferma, accetta Max/Gael/Neri — CP-20260909-Y79R
 
 Ultima correzione sul filone: la funzione **non conia mai al primo giro**. FASE 1 (proposta):
