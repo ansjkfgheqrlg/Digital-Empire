@@ -216,7 +216,7 @@ di funnel che non capiamo ancora.
 | Onda D | 15 | 15 | 15 |
 | Onda E | 9 | 9 | 9 |
 | Onda F | 4 | 4 | 4 |
-| Onda G | 0 | 0 | 4 |
+| Onda G | 4 | 4 | 4 |
 
 ## Connessioni
 - `PIANO-MAESTRO/33-PIANO-STUDIO-TOTALE-ANDREI-PASCU.md` — il piano, con i sette giri di critica

@@ -10022,3 +10022,29 @@ su 52 pagine attese.
 
 **Nota di trasparenza:** uno scagnozzo (atlanti di onda B) e' stato ucciso dal limite di sessione,
 non da un difetto suo. Va rilanciato.
+
+## 2026-09-09 — STUDIO TOTALE ANDREI PASCU CHIUSO: 56 su 56 (CP-20260909-GRVC)
+
+**Tutte e sette le onde chiuse.** 52 pagine catturate su 7 domini, ~50 rapporti, oltre 100.000
+parole, tre sintesi, una fusione di skill eseguita. Il conto si rifa' a comando:
+`python "competitor/Andrei Pascu/site-study/scripts/stato_onde.py"`.
+
+**Quattro fatti creduti e falsi, corretti**: il blog ha 37 articoli e non 105 (67 erano indici di
+tag) · `chiamata-formazione.netlify.app` non e' sua, e' NOSTRA (un funnel verso Claude Code Mastery
+a 397 EUR fermo su staging) · il prezzo non governa la lunghezza della pagina, la governa la
+temperatura del traffico (1.593px freddo, 17.531px caldo, una CTA ogni ~1.100px) · quattro pagine su
+otto dell'onda B erano classificate male. **Due erano bugie dei miei stessi strumenti**, corrette
+alla fonte.
+
+**Incassato dalla Fabbrica:** legge da 211 a 260 righe con §11 (la cassa ha un gradino) e §12
+(l'accento si spende una volta); **otto controlli** per `gate_siti.py`, sei nati da difetti veri del
+concorrente — il piu' costoso: `/vendita` manda a un 404 e la cassa vera da 400 EUR non e' linkata
+da nessuna parte, che diventa **il primo gate obbligatorio di LANCI**; tre pattern nuovi, galleria a
+10 con PASS; **fusione di `empire-premium-style` eseguita** (i nove colori erano gia' identici: la
+struttura e' passata in `fabbrica-siti/corsia-b/`, `section-patterns.md` ucciso perche' aveva 10
+puntatori su 17 stale, la vecchia skill e' un ingresso legacy).
+
+**RIPRESA DA:** la precondizione e' caduta, parte l'**ANATOMIA DEI LANCI** (dossier 33 PARTE VI):
+Markdown + Python + PDF, e consegna alla sessione che costruisce LANCI
+(`company/Memory/tasks/TASK-LANCI-20260908-ANATOMIA-ANDREI-PASCU.md`). E' "fatta" solo quando quella
+sessione l'ha ricevuta e puo' usarla.

@@ -123,6 +123,21 @@ def stato_pagina(slug, rep):
     }
 
 
+def stato_onda_g():
+    """L'onda G non ha pagine: ha quattro documenti. Si conta guardando se esistono."""
+    pezzi = [
+        ("SINTESI-SISTEMA-VISIVO.md", os.path.join(BASE, "SINTESI-SISTEMA-VISIVO.md")),
+        ("SINTESI-SISTEMA-COPY.md", os.path.join(BASE, "SINTESI-SISTEMA-COPY.md")),
+        ("SINTESI-METODO.md", os.path.join(BASE, "SINTESI-METODO.md")),
+        ("fusione empire-premium-style", os.path.join(
+            os.path.dirname(BASE), "..", "..", ".claude", "skills", "fabbrica-siti",
+            "corsia-b", "LEGGIMI.md")),
+    ]
+    fatti = [nome for nome, p in pezzi if os.path.isfile(p)]
+    manca = [nome for nome, p in pezzi if not os.path.isfile(p)]
+    return fatti, manca
+
+
 def righe_tabella():
     rep = prefissi_report()
     fuori = []
@@ -132,6 +147,9 @@ def righe_tabella():
         pagine = [stato_pagina(s, rep) for s in slugs]
         catturate = sum(1 for p in pagine if p["scheda"])
         chiuse = sum(1 for p in pagine if all(p[k] for k in pretese))
+        if lettera == "G":          # l'onda G si conta a documenti, non a pagine
+            fatti, _ = stato_onda_g()
+            catturate = chiuse = len(fatti)
         senza_copy = ([p["slug"] for p in pagine if p["scheda"] and not p["copy"]]
                       if "copy" in pretese else [])
         righe.append({
