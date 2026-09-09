@@ -1,3 +1,14 @@
+## 🟠 2026-09-09 — battito ristilizzato a quadrati, ordine estetico di Max — CP-20260909-RWR2
+
+Contenuto invariato (le sei voci restano quelle), cambiata solo la resa: titolo, poi cinque
+riquadri markdown (`┌─`/`│ 🟠 <Nome>`/`└─`) uniti da frecce `↓`, Assetto+Potere insieme
+nell'ultimo, max 4 frasi per riquadro. Rifiutato esplicitamente lo stile ad albero di
+`/frantuma` — Max ne voleva uno diverso, dettato a voce. `verifica_recap.py` riscritto (nuova
+`costruisci()` che genera il testo, mai piu' disegnato a mano) e `gate_battito_hook.py`
+adattato a un battito di altezza variabile (non piu' 8 righe fisse). Box aperto sul lato
+destro apposta: un bordo allineato userebbe spazi multipli, comprimibili dal renderer fuori da
+un blocco di codice. 8/8 test verdi. Dettagli: [CP-20260909-RWR2](checkpoints/CP-20260909-RWR2.md).
+
 ## 🟣 2026-09-09 — /frantuma: codice sorteggiato tipo-checkpoint (MT-XXXX), non un percorso — CP-20260909-JX89
 
 Ultima correzione: Max ha rifiutato anche il percorso. *"Con ID intendo il checkpoint, capisci?
