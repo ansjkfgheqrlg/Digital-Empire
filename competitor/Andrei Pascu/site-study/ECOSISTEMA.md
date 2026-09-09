@@ -47,6 +47,27 @@ avrei chiuso lo "studio totale" con 66 pagine commerciali mai aperte e non l'avr
 
 ---
 
+## ⚠️ CORREZIONE — gli articoli del blog sono 37, non 105 *(2026-09-09)*
+
+Il Passo 0 dichiarava **105 articoli di blog** e li chiamava *"il suo motore di posizionamento
+organico"*. Preso l'elenco dalla sitemap viva e salvato (`capture/_corpus-blog/corpus.json`,
+prodotto da `scripts/corpus_blog.py`): **165 URL totali, di cui 37 articoli veri**. Gli altri 67
+`/blog/...` sono **pagine di tag e categoria** — indici senza contenuto proprio.
+
+**Il primo giro dello script sbagliava anche lui**, contandoli come articoli: 104 invece di 37, un
+errore del 64%. Corretto alla fonte, non solo nel rapporto. E le misure cambiano di segno:
+
+| | prima (falso) | **vero** |
+|---|---|---|
+| Articoli | 104 | **37** |
+| Titoli con un numero | 17% | **41%** |
+| Parole per titolo | 3,4 | **7,8** |
+| Parola più usata | «online» (21) | **«copywriting» (9)** |
+
+**Cosa cambia per lo studio:** il blog **non è** un motore da 105 pezzi. Sono 37 articoli, con
+titoli lunghi e quasi la metà costruiti su un numero. Il gonfiaggio veniva dalle pagine di indice
+che Squarespace genera da solo — cioè da un conteggio automatico creduto sulla parola.
+
 ## ⚠️ CORREZIONE — una pagina censita nel suo ecosistema era NOSTRA *(2026-09-09)*
 
 `chiamata-formazione.netlify.app` è stata contata per sette giorni come pagina di Andrei Pascu.
@@ -191,9 +212,9 @@ di funnel che non capiamo ancora.
 |---|---|---|---|
 | Onda A | 9 | 9 | 9 |
 | Onda B | 8 | 8 | 8 |
-| Onda C | 7 | 3 | 7 |
-| Onda D | 0 | 0 | 14 |
-| Onda E | 0 | 0 | 9 |
+| Onda C | 7 | 4 | 7 |
+| Onda D | 15 | 0 | 15 |
+| Onda E | 9 | 0 | 9 |
 | Onda F | 0 | 0 | 1 |
 | Onda G | 0 | 0 | 4 |
 
