@@ -1,8 +1,8 @@
-# EMP-APDOC1 — Documentazione ufficiale Andrei Pascu: 1 di 4 pezzi fatta
+# EMP-APDOC1 — Documentazione ufficiale Andrei Pascu: 4 di 4 pezzi fatti
 
 - **Aperto:** 2026-09-09
-- **Stato:** APERTA
-- **Come si riprende:** dire `EMP-APDOC1` in una chat nuova dentro Digital Empire.
+- **Stato:** ✅ CHIUSA 2026-09-09 — vedi [CP-20260909-2N8Q](../checkpoints/CP-20260909-2N8Q.md)
+- **Come si riprende:** non si riprende, chiusa. Lasciata per lo storico della decisione.
 - **Checkpoint di origine:** [CP-20260909-22YQ](../checkpoints/CP-20260909-22YQ.md)
 - **Ordine di Max (testuale, 2026-09-09):** *"voglio un documento documentazione ufficiale per
   ogni corso di Andrei Pascu... deve esserci all'interno della documentazione una cartella

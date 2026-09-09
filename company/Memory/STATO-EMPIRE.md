@@ -10222,3 +10222,14 @@ documento sui miglioramenti/implementazioni per Digital Empire nati dallo studio
 
 **RIPRESA DA:** `EMP-APDOC1` (`company/Memory/riprese/EMP-APDOC1.md`) — PDF del pezzo 2, poi
 pezzo 3 (dossier completo su Andrei Pascu), poi pezzo 4 (miglioramenti per Digital Empire).
+
+## 2026-09-09 — EMP-APDOC1 chiusa: 4/4 documenti ufficiali Andrei Pascu (CP-20260909-2N8Q)
+
+Ripresa da CP-20260909-22YQ portata a termine: pezzo 2 (Claude Speedrun 2, PDF a 5 pagine +
+doppione), pezzo 3 (`ANDREI-PASCU-DOSSIER-COMPLETO.md` + PDF a 7 pagine + doppione — profilo
+integrale, sintesi delle tre SINTESI-*.md e di `ANATOMIA-DEI-LANCI.md`, nessun contenuto
+ri-derivato), pezzo 4 (`MIGLIORAMENTI-DIGITAL-EMPIRE.md`, MD vivo stile `BACKLOG.md`, 33
+candidati AP-001..033 consolidati dai `lesson-analysis.md` di outFunnel e cs2online).
+
+**RIPRESA DA:** nessuna su questo filone. `outHeadline`/`outEmail`/`outViral 2` restano in pausa
+per ordine di Max (priorità più bassa, non toccati).
