@@ -1,16 +1,39 @@
 # PESO SKILL - quanto costa ogni strumento a ogni accensione
 
-> Rigenerato da `scripts/peso_skill.py` il 2026-09-03 12:40
+> Rigenerato da `scripts/peso_skill.py` il 2026-09-09 23:28
 > Non modificare a mano: si riscrive a ogni esecuzione.
 
 ## Il conto
 
 | | |
 |---|---|
-| Skill in tutto | **377** |
+| Skill in tutto | **378** |
 | Sopra le 150 righe | **129** (34%) |
-| Gettoni stimati in tutto | **859.425** |
-| Di cui nelle skill sopra soglia | **697.241** (81%) |
+| Gettoni stimati in tutto | **864.109** |
+| Di cui nelle skill sopra soglia | **699.120** (80%) |
+| Gettoni nelle `description` (pagati **ogni sessione**, tutte le skill) | **29.856** |
+
+## Le description piu' pesanti
+
+Costo fisso di ogni sessione — si paga anche se la skill non si attiva mai.
+
+| Skill | Caratteri | Gettoni |
+|---|---|---|
+| `prd-architect-os` | 1341 | 335 |
+| `agency-scalping` | 1218 | 304 |
+| `empire-premium-style` | 1155 | 288 |
+| `empire-premium-style` | 1155 | 288 |
+| `master-build-architecture` | 1133 | 283 |
+| `objection-handler` | 1083 | 270 |
+| `objection-handler` | 1083 | 270 |
+| `objection-handler` | 1083 | 270 |
+| `objection-handler` | 1083 | 270 |
+| `apex-7` | 1044 | 261 |
+| `content-forge` | 990 | 247 |
+| `content-forge` | 990 | 247 |
+| `content-forge2.0` | 990 | 247 |
+| `content-forge` | 990 | 247 |
+| `content-forge` | 990 | 247 |
 
 ## Le piu' pesanti
 
@@ -19,7 +42,7 @@
 | `printing-press` | 3640 | 61.672 | 31% | enorme | spezzare in indice + file per argomento: si carica solo cio' che serve |
 | `cro-youtube-lead-magnet` | 5161 | 43.517 | 77% | piena di materiale | spostare esempi e tabelle in file a parte, lasciare l'indice |
 | `cro-strategy-social-(ig-tiktok)` | 3943 | 40.257 | 2% | enorme | spezzare in indice + file per argomento: si carica solo cio' che serve |
-| `cro-call` | 5147 | 39.773 | 68% | piena di materiale | spostare esempi e tabelle in file a parte, lasciare l'indice |
+| `cro-call` | 5171 | 40.140 | 68% | piena di materiale | spostare esempi e tabelle in file a parte, lasciare l'indice |
 | `cro-funnel-architect.md` | 2772 | 28.182 | 3% | enorme | spezzare in indice + file per argomento: si carica solo cio' che serve |
 | `cro-copy-architect-knowledge-files` | 1563 | 19.882 | 0% | enorme | spezzare in indice + file per argomento: si carica solo cio' che serve |
 | `cro-ricerca` | 1623 | 18.377 | 0% | enorme | spezzare in indice + file per argomento: si carica solo cio' che serve |
@@ -56,4 +79,6 @@
 - "Materiale" = righe di codice e di tabella. Una skill piena di materiale non
   e' disordinata: contiene conoscenza vera, che va **spostata** in file a parte,
   non buttata.
+- La `description` si estrae dal frontmatter YAML (forma inline o block scalar
+  `>-`/`|`), non e' un parser YAML completo ma basta per contare i caratteri.
 

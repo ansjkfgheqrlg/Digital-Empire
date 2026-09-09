@@ -52,21 +52,32 @@ def main():
     if not pezzi:
         print("nessun atoms-p*.json in", d); return 1
 
+    # B-061: la mappa vecchio-id -> nuovo-id deve essere PER-FILE, non globale.
+    # Ogni pezzo (atoms-p*.json) viene scritto da un atomizzatore diverso che
+    # numera da solo, da KA-001: due pezzi diversi possono avere entrambi un
+    # "KA-005", e sono ID DIVERSI. Una mappa unica sovrascriveva la voce del
+    # primo pezzo con quella del secondo, e le relazioni del primo pezzo
+    # finivano rinumerate secondo l'atomo sbagliato. Le relazioni dichiarate
+    # da un pezzo puntano SEMPRE dentro lo stesso pezzo (gli atomizzatori in
+    # parallelo non si vedono fra loro: i collegamenti fra pezzi diversi sono
+    # compito della saldatura successiva, non di questa unione).
     mappa, uniti = {}, []
     for nome, lista in pezzi:
         for at in lista:
             nuovo = "KA-%03d" % (len(uniti) + 1)
-            mappa[at["id"]] = nuovo
+            mappa[(nome, at["id"])] = nuovo
             b = dict(at); b["id"] = nuovo; b["_origine"] = nome
             uniti.append(b)
 
     rotti = []
     for at in uniti:
+        origine = at["_origine"]
         rel = []
         for r in at.get("relazioni", []):
             v = r.get("verso")
-            if v in mappa:
-                r2 = {"verso": mappa[v], "tipo": r.get("tipo", "collegato-a")}
+            chiave = (origine, v)
+            if chiave in mappa:
+                r2 = {"verso": mappa[chiave], "tipo": r.get("tipo", "collegato-a")}
                 if r.get("perche"):
                     r2["perche"] = r["perche"]
                 rel.append(r2)

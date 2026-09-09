@@ -51,6 +51,54 @@ def gettoni(caratteri):
     return int(caratteri / CARATTERI_PER_GETTONE)
 
 
+def estrai_descrizione(testo):
+    """Isola il valore del campo `description:` nel frontmatter YAML.
+
+    E' il campo che si paga a OGNI sessione per OGNI skill installata (il
+    corpo del file si carica solo quando la skill si attiva) - eppure prima
+    di questa funzione `peso_skill.py` non lo misurava mai: la parola
+    "description" aveva 0 occorrenze in questo file (trovato studiando
+    `8NSyI-npJCU`/max18-v06, Fase 2 di EMP-W4K7).
+
+    Gestisce sia la forma inline (`description: "..."`) sia i due block
+    scalar YAML (`description: >-` folded, `description: |` literal): non e'
+    un parser YAML completo, basta per contare i caratteri con buona
+    approssimazione.
+    """
+    righe = testo.split("\n")
+    if not righe or righe[0].strip() != "---":
+        return ""
+    fine = None
+    for i in range(1, len(righe)):
+        if righe[i].strip() == "---":
+            fine = i
+            break
+    if fine is None:
+        return ""
+    frontmatter = righe[1:fine]
+
+    for i, r in enumerate(frontmatter):
+        if not r.startswith("description:"):
+            continue
+        resto = r[len("description:"):].strip()
+        if resto in (">-", ">", "|-", "|", ""):
+            # block scalar: le righe indentate successive, fino al primo
+            # rientro tornato a colonna 0 (prossima chiave top-level) o alla
+            # fine del frontmatter.
+            blocco = []
+            for succ in frontmatter[i + 1:]:
+                if succ.strip() == "" or succ.startswith(" ") or succ.startswith("\t"):
+                    blocco.append(succ.strip())
+                else:
+                    break
+            return " ".join(x for x in blocco if x)
+        # forma inline, eventualmente fra virgolette
+        if len(resto) >= 2 and resto[0] in "\"'" and resto[-1] == resto[0]:
+            return resto[1:-1]
+        return resto
+    return ""
+
+
 def analizza_una(percorso):
     try:
         with io.open(percorso, encoding="utf-8", errors="ignore") as f:
@@ -60,6 +108,8 @@ def analizza_una(percorso):
 
     righe = testo.count("\n") + 1
     caratteri = len(testo)
+    descrizione = estrai_descrizione(testo)
+    descrizione_caratteri = len(descrizione)
 
     # quanto di questo file e' conoscenza vera (esempi, tabelle, blocchi di
     # codice) e quanto e' istruzione? La conoscenza va spostata in file a parte,
@@ -87,6 +137,8 @@ def analizza_una(percorso):
         "righe_codice": righe_codice,
         "righe_tabella": righe_tabella,
         "quota_materiale": quota_materiale,
+        "descrizione_caratteri": descrizione_caratteri,
+        "descrizione_gettoni": gettoni(descrizione_caratteri),
     }
 
 
@@ -151,6 +203,22 @@ def stampa(tutte, mostra_tutte):
              "{:,}".format(gettoni_sopra).replace(",", "."),
              int(100.0 * gettoni_sopra / max(tot_gettoni, 1))))
     print("")
+    print("  IL CONTO DESCRIPTION - pagato a OGNI sessione, per TUTTE le skill")
+    print("  installate (il corpo si carica solo quando la skill si attiva, la")
+    print("  description no: e' sempre in memoria):")
+    tot_descr_gettoni = sum(t["descrizione_gettoni"] for t in tutte)
+    print("    %s gettoni stimati in tutte le %d description"
+          % ("{:,}".format(tot_descr_gettoni).replace(",", "."), len(tutte)))
+    print("")
+    print("-" * 78)
+    print("")
+    print("  LE 10 DESCRIPTION PIU' PESANTI - il costo fisso di ogni sessione:")
+    print("")
+    per_descrizione = sorted(tutte, key=lambda x: -x["descrizione_gettoni"])
+    for t in per_descrizione[:10]:
+        print("  %-38s %6d car. %6d gettoni"
+              % (t["nome"][:38], t["descrizione_caratteri"], t["descrizione_gettoni"]))
+    print("")
     print("-" * 78)
     print("")
     print("  %-38s %6s %9s  %s" % ("SKILL", "RIGHE", "GETTONI", "PERCHE'"))
@@ -213,6 +281,20 @@ def scrivi_rapporto(tutte):
     r.append("| Di cui nelle skill sopra soglia | **%s** (%d%%) |"
              % ("{:,}".format(tot_sopra).replace(",", "."),
                 int(100.0 * tot_sopra / max(tot, 1))))
+    tot_descr = sum(t["descrizione_gettoni"] for t in tutte)
+    r.append("| Gettoni nelle `description` (pagati **ogni sessione**, tutte le skill) | **%s** |"
+             % "{:,}".format(tot_descr).replace(",", "."))
+    r.append("")
+    r.append("## Le description piu' pesanti")
+    r.append("")
+    r.append("Costo fisso di ogni sessione — si paga anche se la skill non si attiva mai.")
+    r.append("")
+    r.append("| Skill | Caratteri | Gettoni |")
+    r.append("|---|---|---|")
+    for t in sorted(tutte, key=lambda x: -x["descrizione_gettoni"])[:15]:
+        r.append("| `%s` | %d | %s |"
+                 % (t["nome"], t["descrizione_caratteri"],
+                    "{:,}".format(t["descrizione_gettoni"]).replace(",", ".")))
     r.append("")
     r.append("## Le piu' pesanti")
     r.append("")
@@ -233,6 +315,8 @@ def scrivi_rapporto(tutte):
     r.append("- \"Materiale\" = righe di codice e di tabella. Una skill piena di materiale non")
     r.append("  e' disordinata: contiene conoscenza vera, che va **spostata** in file a parte,")
     r.append("  non buttata.")
+    r.append("- La `description` si estrae dal frontmatter YAML (forma inline o block scalar")
+    r.append("  `>-`/`|`), non e' un parser YAML completo ma basta per contare i caratteri.")
     r.append("")
 
     # newline="\n" obbligatorio: su Windows la scrittura di testo tradurrebbe in

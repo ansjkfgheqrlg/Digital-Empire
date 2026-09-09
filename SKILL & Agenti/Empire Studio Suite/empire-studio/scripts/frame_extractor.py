@@ -13,7 +13,7 @@ I PNG risultanti vengono poi LETTI DA CLAUDE (visione nativa) per descrivere i
 "passaggi mostrati". Lo script NON descrive nulla: estrae solo frame veri.
 
 Uso:
-  python scripts/frame_extractor.py --run <run-id> [--max-frames 12] [--height 360]
+  python scripts/frame_extractor.py --run <run-id> [--max-frames 12] [--height 720]
   python scripts/frame_extractor.py --run <run-id> --input <url>   (se manca ingest.json)
 
 Dipendenze: yt-dlp + ffmpeg/ffprobe.
@@ -130,7 +130,7 @@ def main():
     ap.add_argument("--run", required=True, help="run-id sotto runs/")
     ap.add_argument("--input", default=None, help="URL (se manca ingest.json)")
     ap.add_argument("--max-frames", type=int, default=12)
-    ap.add_argument("--height", type=int, default=360)
+    ap.add_argument("--height", type=int, default=720)
     ap.add_argument("--interval", type=float, default=None,
                     help="Estrai 1 frame ogni N secondi (modalita' densa). "
                          "Es: --interval 2 per ~1 frame/2s. Sovrascrive --max-frames.")
