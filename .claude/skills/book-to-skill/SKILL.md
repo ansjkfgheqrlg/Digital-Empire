@@ -13,6 +13,14 @@ argument-hint: <path-to-document> [skill-name-slug]
 
 # Book-to-Skill Converter
 
+> **Nota Digital Empire** *(aggiunta 2026-09-09, Fase 2 di `EMP-W4K7`, B-062)*: questo strumento
+> **riassume di proposito** (vedi "Generate chapter summaries" e "always synthesize, summarize,
+> extract signal" sotto) — e' corretto per il suo scopo, una skill compatta pensata per essere
+> ricaricata ad ogni sessione. E' l'**opposto** della regola di casa di Empire Studio ("mai
+> riassunti", archivio integrale) usata per costruire la wiki e la Memory di Digital Empire. Per
+> ingerire un video/documento nella conoscenza propria dell'Impero usa **Empire Studio** /
+> **Memory Empire**, non questa skill: qui sotto e' lo strumento originale, invariato.
+
 Transform written knowledge into actionable agent skills by extracting structure — not producing summaries.
 
 ## Philosophy

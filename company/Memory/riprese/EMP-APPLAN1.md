@@ -32,8 +32,8 @@ Il piano si critica tre volte (dottrina Max: ogni giro attacca il giro prima, no
 | Giro | Cosa | Chi | Stato |
 |---|---|---|---|
 | **P0** | I due draft V1 | 2 Doom Bot (opus), in parallelo | ✅ **FATTO**, su disco |
-| **P1** | Critica dei due draft | 2 Sentinelle (sonnet) | ⬜ **lanciato e perso con la chat — DA RIFARE** |
-| **P2** | Critica della critica | Fable | ⬜ non iniziato |
+| **P1** | Critica dei due draft | 2 Sentinelle (sonnet) | ✅ **FATTO 2026-09-09 notte** — `P1-CRITICA-S1-governo.md` (157 righe) + `P1-CRITICA-S2-denaro.md` (187 righe), entrambe su disco |
+| **P2** | Critica della critica | Fable | 🔁 **in corso** — `P2-FABLE-critica-della-critica.md` |
 | **Assemblaggio** | Documento unico | 1 Scagnozzo (haiku) | ⬜ non iniziato |
 | **P3** | Esecutivo finale + PDF | Emperator, non delegato | ⬜ non iniziato |
 
@@ -94,6 +94,41 @@ azioni da uccidere, azioni da fondere, **la sua obiezione più forte**.
 
 **Regola per entrambe:** verifica sul disco, mai a memoria; «non verificabile da qui» invece di
 assumere; ogni colpo con una prova, non un'impressione.
+
+> ✅ **GIRO P1 CHIUSO (2026-09-09 notte).** Entrambe le Sentinelle sono rientrate. Le istruzioni qui
+> sopra restano solo come traccia di cosa è stato chiesto.
+>
+> ⚠️ **ATTENZIONE — sul disco ci sono TRE file di critica P1, non due, e non sono intercambiabili.**
+> `P1-CRITICA-S1-governo.md` (157 righe) e `P1-CRITICA-S2-denaro.md` (187 righe) sono stati salvati
+> da una chat; **`P1-CRITICA-sentinella-verita.md` (198 righe) è stato salvato dalla chat originale
+> e contiene i quattro ritrovamenti più gravi, che in `S2-denaro` NON ci sono** — verificato con
+> grep: `checkout.py` 0 occorrenze in S2 contro 3, `DEC-EST-001` 0 contro 2, `B-020` 0 contro 3,
+> `email-agent` 0 contro 3. **Il piano V2 va costruito leggendo tutti e tre**, e il terzo è quello
+> che cambia la sequenza. Una versione precedente di questa riga diceva che quel file «non è mai
+> esistito»: era sbagliata, il file c'è ed è il più importante dei tre.
+
+### I quattro colpi che la Sentinella 2 ha già portato — il piano V2 deve rispondere a questi
+
+1. **Zero azioni su 33 producono un euro.** 52% infrastruttura, 30% documento. Il piano è il
+   «pezzo 26» di ULTIMO METRO, con l'aggravante che entrambi i draft usano ULTIMO METRO per bocciare
+   le idee altrui e non applicano lo stesso esame a sé stessi.
+2. **Il prezzo del Manuale è già deciso e nessuno l'ha visto**: `DEC-EST-001` (2026-07-21, silenzio-
+   assenso) fissa **67 € lancio / 97 € listino**, ed è già live in
+   `Crea siti/Siti CCM/checkout.config.json`. La fascia «27-47 €» di Draft A viene da
+   `_v3-superata/04-WF-OFFERTA.md` — **un documento che il governo ha già dichiarato superato**.
+3. **IL BUCO — la strada più corta al primo euro esiste già sul disco e nessuno dei due draft la
+   cita**: `empire/tools/checkout.py` (375 righe, quattro rail di pagamento pronti, campo
+   `"richiede": "MAX: crea Payment Link su Stripe"`) + `KDP - prodottti digitali/Leanding Page/
+   email-agent/main.py` (81 righe, webhook FastAPI Stripe→consegna PDF via Gmail, **chiave Stripe
+   live nel .env**). Collegarli è lavoro di ore, non 28-46. Più l'audit `_critica-v3/INCASSO.md`,
+   mai citato.
+4. **L'ordine è sbagliato**: `catena.py` protegge un percorso di incasso che non esiste ancora.
+   Sequenza proposta: B-020 (chiave Brevo esposta, «🔴 subito», nessuna delle 33 azioni la tocca) →
+   Payment Link Stripe + adattare l'email-agent → chiudere PU-PREZZO sul serio → AP-054 → AP-004
+   (solo il testo) → **solo allora** `catena.py` → il resto in BACKLOG.
+
+**Conseguenza per il giro P2 e per l'esecutivo P3:** il piano V2 non può essere «i due draft messi
+insieme». Deve nascere dalla sequenza del punto 4, con i 27+4 candidati subordinati a essa.
 
 ---
 

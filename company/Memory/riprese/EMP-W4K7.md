@@ -261,6 +261,20 @@ vero — non fidarsi del suo riepilogo senza rileggere `EMP-QQ2R.md` §3-4 per i
 **RIPRENDI DA QUI:** sia `max17` che `max18` sono chiusi end-to-end. Prossimo passo: la Fase 2
 (§4-5 sotto, solo su ordine esplicito di Max), poi il Libro dell'Agency (§4-bis).
 
+## 2-sexies. AGGIORNAMENTO 2026-09-09/10 — Fase 2 CHIUSA (CP-20260909-9K46)
+
+Max ha dato l'ordine esplicito ("vai avanti procedi"). Applicati e testati tutti e 5 gli
+interventi di §5: `frame_extractor.py` 720p di default, `peso_skill.py` pesa anche
+`description` (29.856 gettoni/sessione, mai misurati prima), `unisci_atomi.py` B-061
+risolto (mappa per-file, testata con fixture sintetica, produzione non toccata), audit
+capacita' dichiarate (`cf-knowledge-graph-agent` funziona davvero — claim precedente era
+sbagliata, corretta; `book-to-skill` ha nota di disambiguazione nuova), schema `atoms.json`
+ora in `CONVENTIONS.md` §10. Non toccato: autocompact, decisione che spetta a Max. Dettaglio
+completo in [CP-20260909-9K46](../checkpoints/CP-20260909-9K46.md).
+
+**RIPRENDI DA QUI:** resta solo il Libro dell'Agency (§4-bis) per chiudere `EMP-W4K7` per
+intero. Non parte senza conferma di Max.
+
 ## 3. COSA E' RIMASTO A META'
 
 **Due run con i frame gia' estratti e l'analisi solo parziale.** Le sentinelle sono morte

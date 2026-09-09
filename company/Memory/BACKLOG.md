@@ -334,3 +334,36 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   repository), verificato a zero collisioni. **Fix suggerito**: la mappa dev'essere
   `{(nome_file, id_vecchio): id_nuovo}`, non `{id_vecchio: id_nuovo}`. *Quando:* prima del
   prossimo run che atomizza in piu' parti con numerazioni che si sovrappongono fra loro.
+
+  **RISOLTA 2026-09-09 (Fase 2 di `EMP-W4K7`).** Applicato esattamente il fix suggerito:
+  mappa ora `{(nome_file, id_vecchio): id_nuovo}` in `unisci_atomi.py`. Testato con un
+  run sintetico nello scratchpad (2 pezzi, entrambi con `KA-001`/`KA-002`, relazioni
+  interne a ciascun pezzo): risultato 4 atomi, 2 archi, 0 rotti, 2 componenti — ogni
+  relazione punta dentro il proprio pezzo di origine, non piu' in quello sbagliato.
+  Cartella di test rimossa dopo la verifica, `atoms.json` gia' prodotti (v06/v08/v09)
+  NON ritoccati (erano gia' corretti dal merge manuale con `unisci_atomi_video.py`,
+  citato in questa stessa voce). Aggiunta anche la documentazione mancante dello schema
+  `atoms.json` in `references/CONVENTIONS.md` §10 (relazioni obbligatorie dal primo
+  passaggio, non piu' solo saldatura a posteriori).
+
+- **B-062 — NUOVA/CHIUSA in parte.** Audit "capacita' dichiarate ma mai implementate" su
+  `cf-knowledge-graph-agent` e `book-to-skill`, ordinato da `EMP-W4K7.md` §5 dopo lo studio
+  di max18-v06 ("cf-knowledge-graph-agent dichiara di costruire edges/cluster che nel
+  codice non esistono").
+  **Verificato falso su `cf-knowledge-graph-agent`**: il suo system-prompt (`.claude/agents/
+  cf-knowledge-graph-agent.md`) specifica per intero schema, algoritmo di dedup ed edge
+  inference, e uno **run reale** (`.claude/skills/content-forge2.0/phase7-run/stage-03/
+  kg.json`) dimostra 18 atomi/22 archi/4 cluster prodotti davvero — non e' vaporware, la
+  claim originale non era stata verificata a fondo prima di scriverla. Corretto qui perche'
+  un errore non va lasciato scritto silenziosamente (stesso principio del "puntatore
+  stale", vedi CP-20260909-DDQY).
+  **Verificato vero, ma non un bug, su `book-to-skill`**: la skill (`.claude/skills/
+  book-to-skill/SKILL.md:16,314,520`) istruisce esplicitamente "always synthesize,
+  summarize, extract signal" e produce riassunti per capitolo — l'opposto della regola
+  di casa "mai riassunti" (Empire Studio). Non e' un difetto della skill: e' uno strumento
+  generico (skill compatta, pensata per essere ricaricata ad ogni sessione) con uno scopo
+  diverso da Empire Studio (archivio integrale + wiki). Il rischio reale e' la confusione
+  fra i due: nessun testo nella skill segnalava il confine. **RISOLTA 2026-09-09**: aggiunta
+  nota di disambiguazione in cima a `book-to-skill/SKILL.md` (rimando a Empire Studio/Memory
+  Empire per l'ingestione di conoscenza propria di Digital Empire), contenuto originale
+  della skill invariato.

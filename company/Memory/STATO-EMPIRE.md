@@ -1,3 +1,15 @@
+## 🟠 2026-09-09 notte — RIPRESA `EMP-APPLAN1`: giro P1 rilanciato (2 Sentinelle in parallelo)
+
+Chat nuova, ripresa da CP-20260909-98ZG. **P0 verificato sul disco** (2 draft, 1.352 righe totali in
+`competitor/Andrei Pascu/piano-implementazione/`). **P1 rilanciato adesso**: 2× Sentinella (sonnet,
+background) — S1 angolo governo/coerenza/collisione → `P1-CRITICA-S1-governo.md`; S2 angolo denaro e
+verità → `P1-CRITICA-S2-denaro.md`. A seguire: P2 (Fable), assemblaggio (Scagnozzo), P3 esecutivo di
+Emperator + PDF standard-oro.
+
+**RIPRESA DA:** `EMP-APPLAN1` (`company/Memory/riprese/EMP-APPLAN1.md`).
+
+---
+
 ## 🔵 2026-09-09 notte — PAUSA contesto saturo (ordine di Max) — RIPRESA: `EMP-APPLAN1` — CP-20260909-98ZG
 
 Chat chiusa a metà del piano chirurgico Andrei Pascu. **P0 chiuso**: i due DRAFT V1 sono su disco
@@ -10383,3 +10395,17 @@ dall'index — agganciata in questo turno.
 **RIPRESA DA:** `EMP-W4K7` — sia `max17` che `max18` sono ora chiusi end-to-end. Resta solo la
 Fase 2 (implementazione dei consigli raccolti negli studi), che parte solo su ordine esplicito
 di Max.
+
+## 2026-09-09/10 — Fase 2 EMP-W4K7 chiusa: 5 interventi di codice applicati e testati (CP-20260909-9K46)
+
+Su ordine esplicito di Max ("vai avanti procedi") applicati e verificati i 5 interventi gia'
+misurati negli studi: `frame_extractor.py` a 720p di default, `peso_skill.py` ora pesa anche
+`description` (29.856 gettoni/sessione mai contati prima), `unisci_atomi.py` corregge la
+collisione id B-061 (mappa per-file, testata con fixture sintetica), audit capacita' dichiarate
+su `cf-knowledge-graph-agent` (claim originale era falsa, corretta) e `book-to-skill` (nota di
+disambiguazione aggiunta), schema `atoms.json` ora documentato in `CONVENTIONS.md` §10 con
+obbligo di relazioni dal primo passaggio. Dettaglio completo in
+[CP-20260909-9K46](checkpoints/CP-20260909-9K46.md).
+
+**RIPRESA DA:** `EMP-W4K7` — resta solo il Libro dell'Agency (§4-bis) per chiudere la missione
+per intero. Non parte senza conferma di Max (task grosso, giorni dichiarati nel piano).

@@ -71,3 +71,46 @@ Ogni atomo di conoscenza nell'output porta una trace:
   tipo: `sources/` per materiale ingerito, `concepts/`, `tools/`, `synthesis/`).
 - Si aggiorna `wiki/log.md` (riga `## data` + `- INGEST: ...`) e si linka in
   `wiki/index.md` quando rilevante.
+
+## 10. Schema `atoms.json` (Stage 4) — relazioni obbligatorie dal primo passaggio
+
+*(aggiunto in Fase 2 di `EMP-W4K7`, 2026-09-09: prima d'ora questo schema non era
+scritto in nessun documento canonico — si copiava a occhio da un run precedente,
+es. "modello: `knowledge/RnoC5IlOUhs/atoms.json`" citato nei checkpoint. Risultato:
+gli atomizzatori in parallelo producevano isole senza archi, e serviva sempre una
+"saldatura" a posteriori per collegarle. Questa sezione chiude il buco.)*
+
+Ogni atomo, in ogni `atoms-p*.json` e nel `atoms.json` finale, e' un oggetto:
+```json
+{
+  "id": "KA-001",
+  "tipo": "principio | regola | definizione | struttura | procedura | esempio | dato | numero | comando | avvertimento | anti-pattern",
+  "contenuto": "<affermazione autosufficiente, mai un frammento>",
+  "fonte": "<video-id>#MM:SS",
+  "frame": "frame-NNN.png oppure null (fonte testuale)",
+  "ancora": "<citazione letterale verificabile nel transcript/testo>",
+  "confidenza": "osservato | dedotto",
+  "relazioni": [
+    {"verso": "KA-NNN", "tipo": "prerequisito | esempio-di | contraddice | deriva-da | applica | vedi-anche", "perche": "<1 riga>"}
+  ]
+}
+```
+
+**Obbligo, non opzione**: chi atomizza un blocco (`atoms-pN.json`) collega FRA
+LORO gli atomi che scrive nello stesso blocco (`relazioni` non vuoto quando esiste
+un legame reale) — non si consegna un pezzo di isole scommettendo su una
+saldatura successiva. Un atomo senza nessuna relazione in tutto il suo pezzo e'
+un campanello d'allarme, non la norma.
+
+**Limite noto, non un difetto**: un atomizzatore vede solo il proprio pezzo — non
+puo' collegare i suoi atomi a quelli di un pezzo scritto da un'altra sentinella in
+parallelo. Quei collegamenti fra pezzi diversi sono compito della **saldatura**
+(passo successivo, dopo `unisci_atomi.py`), non di questo stage. `unisci_atomi.py`
+risolve le `relazioni` di ogni atomo **dentro il pezzo di origine** (mappa
+vecchio-id -> nuovo-id **per-file**, mai globale — due pezzi diversi possono
+avere entrambi un "KA-001": sono atomi diversi. Bug storico corretto in
+Fase 2, vedi `BACKLOG.md` B-061).
+
+Quality bar minima allo Stage 4 (misurabile con lo stesso script che unisce):
+almeno 1 arco ogni 2 atomi nello stesso pezzo, zero archi rotti, zero atomi con
+`ancora` non trovabile nel testo sorgente (`unisci_atomi.py` misura tutti e tre).
