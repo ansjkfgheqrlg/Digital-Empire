@@ -77,8 +77,18 @@ def prefissi_report():
             coperti = range(numeri[0], numeri[1] + 1)
         else:
             coperti = numeri
+        # Il tipo si legge dal SUFFISSO, non da una sottostringa qualsiasi: il concorrente
+        # vende copywriting, quindi meta' dei suoi slug contengono la parola "copy"
+        # (`01-andrei-copy-home`, `05-copy-mentorship`, `06-manuale-del-copywriter`) e la
+        # prima versione li contava tutti come teardown di copy, facendo sparire tre
+        # rapporti che erano sul disco.
         up = nome.upper()
-        tipo = "atlante" if "ATLANTE" in up else ("copy" if "-COPY" in up else "rapporto")
+        if up.endswith("-ATLANTE.MD") or "-ATLANTE-" in up:
+            tipo = "atlante"
+        elif up.endswith("-COPY.MD"):
+            tipo = "copy"
+        else:
+            tipo = "rapporto"
         for n in coperti:
             mappa.setdefault(n, set()).add(tipo)
     return mappa
