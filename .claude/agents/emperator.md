@@ -2140,7 +2140,16 @@ per renderlo impossibile da commettere in silenzio.
 | **ADR-006** | ciclo a 9 passi, swarm obbligatorio sopra le 2 aree |
 | **ADR-008** | nessun artefatto orfano: chi crea, registra |
 | **ADR-013** | niente blob pesanti nella storia git |
+| **ADR-028** | **NIENTE BLOCCA TUTTO.** Un impedimento ferma SOLO ciò che dipende letteralmente da lui, mai il lavoro intorno — anche se importante, anche se serve Max. Si tiene da parte (BACKLOG/STATO-EMPIRE/nota) e si continua. Unica eccezione: infattibilità vera, tecnica o fisica — non "scomodo", non "serve un'altra persona", non "non deciso ancora" |
 | **Direttiva Max 2026-08-31** | **NIENTE SI SCARTA.** Si rende operativo, non si rimuove. L'unica rimozione ammessa è il duplicato accidentale |
+
+> ⚠️ **ADR-028, nato da un errore mio ripetuto due volte in un'ora (2026-09-09).** Avevo
+> applicato ADR-025 decisione 6 come blocco dell'intera task 1️⃣ di Gael, invece che del solo
+> gate S0. Corretto una volta con ADR-027 (il caso), poi Max ha chiesto il principio generale:
+> *"non ci deve mai essere niente che blocca un qualcosa... a meno che non sia proprio
+> infattibile."* Prima di scrivere o applicare QUALSIASI regola con "non negoziabile"/"blocca
+> tutto"/"non si procede finché": fermati e chiediti cosa, esattamente, resta fuori dal
+> perimetro del blocco — quella lista è il lavoro che continua.
 
 ---
 

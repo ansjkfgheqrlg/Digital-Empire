@@ -24,6 +24,23 @@ Ogni fase di costruzione segue `PIANO-MAESTRO/10-METODO-CICLO-FASE.md`:
 - Budget-guard: <20% risorse sessione → chiudere con COMMIT, non aprire build nuovi.
 - Item minori → `company/Memory/BACKLOG.md` (ADR-005), mai fermare la costruzione.
 
+## REGOLA DUE: NIENTE BLOCCA TUTTO (ADR-028 — legge permanente, vale per chiunque)
+
+**Un impedimento ferma SOLO ciò che dipende letteralmente da lui, mai il lavoro intorno** —
+anche se importante, anche se serve una firma/gesto di Max, anche se è "non negoziabile".
+Prima di dichiarare qualcosa "bloccato": chiediti cosa esattamente non puoi fare senza quello, e
+cosa invece puoi fare benissimo lo stesso — la seconda lista è il lavoro che continua.
+
+- Manca un gesto/decisione solo di Max → ADR-026: portalo attivamente in cima a
+  `STATO-EMPIRE.md`, e continua a lavorare intorno.
+- È minore o rimandabile → ADR-005: `BACKLOG.md`.
+- È importante ma non lo si vuole fare ORA → si segna dove va segnato, non è un blocco, è una
+  priorità — e una priorità non ferma nient'altro.
+- **Unica eccezione: infattibilità vera** (tecnica o fisica, qui e ora) — non "scomodo", non
+  "serve un'altra persona", non "non deciso ancora".
+- Chi scrive un gate/ADR/regola con "non negoziabile"/"blocca tutto" deve nominare ESATTAMENTE
+  cosa blocca — mai lasciarlo implicito. Dettagli: [ADR-028](company/Memory/decisions/ADR-028-niente-blocca-tutto.md).
+
 ## REGOLA FONDAMENTALE: WIKI-FIRST
 
 **Questa directory è il quartier generale di Digital Empire.**

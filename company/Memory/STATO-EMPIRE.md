@@ -1,3 +1,14 @@
+## 👑 2026-09-09 sera — ADR-028: LEGGE PERMANENTE "niente blocca tutto" — CP-20260909-7Z4G
+
+**Max ha alzato ADR-027 (il caso LANCI) a principio generale, ordine diretto:** *"non ci deve
+mai essere niente che blocca un qualcosa... a meno che non sia proprio infattibile — sia legge
+tua Emperator, sia legge dell'azienda."* Scritta in `ADR-028`, in `CLAUDE.md` (nuova REGOLA
+DUE, stesso rango di memory-first e ciclo-9-passi) e in `emperator.md` §7 (tabella leggi
+vincolanti). Da ora, ogni impedimento — anche importante, anche se serve Max — ferma solo se
+stesso, mai il lavoro intorno; si tiene da parte (BACKLOG/STATO-EMPIRE/nota) e si continua.
+Unica eccezione: infattibilità tecnica/fisica vera, non "scomodo" o "non deciso ancora".
+Dettagli: [ADR-028](decisions/ADR-028-niente-blocca-tutto.md).
+
 ## 🟢 2026-09-09 sera — CORREZIONE di Max: S0 non ferma la costruzione di LANCI — ADR-027
 
 **Max, testuale:** *"chissene frega di questi problemi, sono importanti ma Gael può costruire

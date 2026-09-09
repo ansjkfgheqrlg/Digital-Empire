@@ -9,6 +9,7 @@
 - 🎯 **[DOSSIER 30 — Piano di completamento dell'Impero](../../PIANO-MAESTRO/30-PIANO-COMPLETAMENTO-IMPERO.md)** — quanto è costruita l'azienda (92% carta / **18% viva**, misurato 2026-09-05), i sette scaglioni S1..S7 per chiuderla, 127-189 ore. Ripresa: [EMP-MCC4](riprese/EMP-MCC4.md)
 
 ## Decisioni attive (ADR)
+- [ADR-028](decisions/ADR-028-niente-blocca-tutto.md) — **LEGGE PERMANENTE — niente blocca tutto**: un impedimento ferma solo ciò che dipende letteralmente da lui, mai il lavoro intorno, salvo vera infattibilità. Vale per Emperator e per la holding (`CLAUDE.md` REGOLA DUE, `emperator.md` §7). Ordine diretto di Max, 2026-09-09
 - [ADR-027](decisions/ADR-027-s0-non-blocca-costruzione-lanci.md) — **S0 non blocca la costruzione di LANCI**: corregge ADR-025 decisione 6 — le 3 "mani umane" (Brevo/cassa/carta) fermano solo il gate finale "S0 chiuso con prova vera", non la scrittura di codice/agenti/gate. Gael costruisce da `MT-F37C` in giù senza aspettare Max (ordine diretto di Max, 2026-09-09)
 - [ADR-001](decisions/ADR-001-empire-os-10-ecosistemi.md) — EMPIRE OS: holding di 10 ecosistemi su modello AION GROUP
 - [ADR-002](decisions/ADR-002-memory-first.md) — Pattern memory-first: interroga prima, checkpoint dopo, sempre
