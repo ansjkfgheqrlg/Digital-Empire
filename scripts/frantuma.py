@@ -132,6 +132,7 @@ def leggi_tutte(padre: str) -> list[dict]:
             "codice": "MT-%02d" % int(m.group(1)),
             "numero": int(m.group(1)),
             "titolo": titolo_m.group(1).strip() if titolo_m else m.group(2),
+            "percorso": "company/Memory/tasks/micro/%s/%s" % (padre, nome),
         })
     return sorted(righe, key=lambda r: r["numero"])
 
@@ -142,10 +143,12 @@ def report(padre: str) -> str:
 
     Questa funzione legge SOLO file gia' coniati -- non esiste un "report" su
     micro-task che non sono ancora state create. Per questo il suo output e'
-    sempre la FASE 2 (conferma): ogni riga porta il richiamo che l'ID e'
-    ufficiale e usabile in un'altra chat/sessione. La FASE 1 (proposta, prima
-    che Max/Gael/Neri accettino) non passa da qui: si compone a mano, sugli
-    stessi titoli, SENZA coniare nulla -- vedi emperator.md 6.24.
+    sempre la FASE 2 (conferma): ogni riga porta il percorso REALE del file
+    coniato -- l'ID vero, non una frase generica -- perche' e' quello che
+    un'altra chat/sessione apre per eseguire proprio quella micro-task. La
+    FASE 1 (proposta, prima che Max/Gael/Neri accettino) non passa da qui: si
+    compone a mano, sugli stessi titoli, SENZA coniare nulla e SENZA percorso
+    (non esiste ancora) -- vedi emperator.md 6.24.
     """
     tutte = leggi_tutte(padre)
     if not tutte:
@@ -157,8 +160,8 @@ def report(padre: str) -> str:
     righe.append("   │")
     for i, m in enumerate(tutte):
         ramo = "└──" if i == len(tutte) - 1 else "├──"
-        righe.append("   %s🟣→ **%s** · %s — ID ufficiale, usabile in altre chat/sessioni"
-                      % (ramo, m["codice"], m["titolo"]))
+        righe.append("   %s🟣→ **%s** · %s — `%s`"
+                      % (ramo, m["codice"], m["titolo"], m["percorso"]))
     return "\n".join(righe)
 
 
