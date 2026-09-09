@@ -50,22 +50,33 @@ centraggio. `LARGHEZZA_MASSIMA_RIGA` (44 caratteri) e' il tetto duro per ogni ri
 contenuto: `costruisci()` rifiuta di generare un riquadro che lo sfora (eccezione, non un
 riquadro storto silenzioso) e `valida()` lo controlla comunque, per i battiti scritti a mano.
 
-**SPAZI VERI, NON SPAZI ASCII (2026-09-09, terzo giro — quello decisivo).** Max ha guardato
-il battito VERO che avevo appena mandato (non un altro screenshot: il mio) e ha detto la cosa
-che serviva: *"tu li fai tutti verso il lato di sinistra"* — il centraggio che il codice
-calcolava (rientro a spazi ASCII prima di `┌`) non arrivava sullo schermo. Causa tecnica: i
-renderer markdown collassano le sequenze di spazi ASCII normali in prosa non-fenced (regola
-CommonMark/HTML standard) — il rientro veniva scritto correttamente nella stringa, ma
-spariva o si accorciava in modo incoerente da un riquadro all'altro nel momento in cui Max
-lo leggeva, e quello e' anche il motivo delle "linee sfalsate, messe a caso": ogni riga
-collassava un numero diverso di spazi. Lo spazio non-interrompibile (` `, NBSP) NON
-collassa — e' cosi' che l'HTML preserva spaziature multiple (`&nbsp;` e' lo stesso trucco).
-Da questo giro, OGNI spazio strutturale del battito — il rientro di centraggio, il margine
-dentro i riquadri fra `│` e il testo, l'indentazione della freccia — e' NBSP, mai spazio
-ASCII. Solo gli spazi FRA LE PAROLE dentro le frasi restano ASCII normali (li' va bene che
-si comportino da spazi qualunque). `valida()` accetta entrambi in lettura (compatibilita'
-con un battito scritto a mano con spazi normali), ma `costruisci()` da ora genera solo NBSP
-per la struttura.
+**SPAZI VERI, NON SPAZI ASCII (2026-09-09, terzo giro — tentativo, poi smentito).** Max ha
+guardato il battito VERO che avevo mandato e ha detto: "tu li fai tutti verso il lato di
+sinistra", "le linee sono sfalsate, messe a caso". Ipotesi di allora: gli spazi ASCII
+ripetuti collassano fuori da un blocco di codice, e lo spazio non-interrompibile (NBSP,
+&nbsp; in HTML) non dovrebbe collassare. Sbagliata: vedi il quarto giro sotto — anche
+la NBSP collassa quando ripetuta. Sezione lasciata per la cronaca del ragionamento, non
+perche' la soluzione sia questa.
+
+RIEMPIMENTO NON-SPAZIO (2026-09-09, quarto giro — quello che ha retto). Max ha rimandato
+lo screenshot del battito con NBSP: identico difetto. La NBSP e' whitespace quanto lo spazio
+ASCII — un rendering che collassa "sequenze di spazio" tratta l'uno e l'altro allo stesso
+modo; il fatto che non debba farlo per specifica CSS non vuol dire che questo renderer lo
+rispetti. Prova diretta dallo screenshot: gli spazi SINGOLI fra le parole di una frase
+arrivavano intatti (si leggeva "causa vera trovata" spaziato giusto); il bordo dei riquadri
+(pura sequenza di trattini, zero spazi) arrivava alla larghezza piena; solo i TRATTI DI 2+
+spazi/NBSP consecutivi (il riempimento per chiudere il rettangolo, il rientro per centrare)
+sparivano. Diagnosi precisa: non e' "NBSP fallisce", e' "un carattere di spaziatura, ripetuto
+2+ volte di fila, collassa — qualunque sia il tipo". Un singolo spazio isolato sopravvive
+sempre; un carattere NON di spaziatura, ripetuto, non collassa mai (i trattini del bordo ne
+sono la prova gia' vista). Quindi: ogni tratto di 2+ caratteri — riempimento interno per
+chiudere il riquadro, rientro per centrarlo, indentazione della freccia — usa il punto medio
+"·", mai spazio ripetuto. Il singolo margine fra la barra verticale e il testo resta uno
+spazio vero (un carattere solo, sempre sopravvissuto). Il prezzo: dove prima ci sarebbe
+stato vuoto ora si vede una fila di puntini leggeri — mai piu' bello del vuoto, ma vuoto che
+si accorcia da solo non e' un rettangolo. valida() accetta anche run di spazi/NBSP in
+lettura (per un battito scritto a mano prima di questa regola), ma costruisci() da ora
+genera solo punti.
 
 USO (prima di inviare OGNI battito):
     printf '%s' "<testo del battito>" | py -3 scripts/verifica_recap.py
