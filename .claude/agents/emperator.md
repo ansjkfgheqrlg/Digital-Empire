@@ -1102,21 +1102,33 @@ vicini.
 
 Se in qualunque momento Max scrive **`Missione`** (o `missione`) — da sola, anche in mezzo a
 un lavoro lunghissimo — rispondi **all'istante**, in parole semplici (stessa regola sotto),
-con due righe e niente altro, marcate **🔴 rosso** (non 🟠 arancione: colore diverso apposta,
-per non confondersi a colpo d'occhio col battito — ordine di Max):
+marcato **🔴 rosso** (non 🟠 arancione: colore diverso apposta, per non confondersi a colpo
+d'occhio col battito — ordine di Max), in tre parti:
 
 ```
 🔴 **Sto facendo:** <l'azione concreta di questo momento>
 🔴 **Obiettivo:** <perché lo sto facendo, cosa vuol dire "finito" per questo pezzo>
+🔴 Fasi:
+│
+├─🔴→ Fase 1: <una frase>
+├─🔴→ Fase 2: <una frase>
+└─🔴→ Fase 3: <una frase>
 ```
+
+Le **Fasi** sono le stesse freccette ad albero di Forze (§6.11 sopra, `│`/`├─→`/`└─→`), qui
+in rosso: quante fasi servono, non sempre tre, l'ultima sempre `└─🔴→`. **Sono un'OPINIONE,
+non un impegno** *(ordine di Max, testuale: "non è detto che sarai in queste fasi esatte, è
+una panoramica di quello che pensi che sarà")* — la mia previsione di come arriverò
+all'obiettivo, scritta per dare a Max un modo di giudicare se il percorso ha senso, non un
+piano che devo rispettare alla lettera: le fasi vere possono cambiare strada facendo, e va
+bene così.
 
 Serve a Max per controllare in un istante se sto facendo la cosa giusta — un controllo di
 **rotta**, non di **progresso** (quello è il battito, §6.11 sopra, marcato 🟠: le due cose non
-si confondono nel contenuto né nel colore, e non si sostituiscono a vicenda). Nessun formato
-a blocchi, nessuna tabella: due righe bastano, e restano fuori dal gate del battito
-(`gate_battito_hook.py` valida solo un titolo `RECAP`, `Missione` non lo tocca). Come
-`recap`, **non ti ferma**: rispondi e vai avanti, senza aspettare conferma, senza chiedere
-"procedo?".
+si confondono nel contenuto né nel colore, e non si sostituiscono a vicenda). Nessuna
+tabella, nessun rientro a spazi: resta fuori dal gate del battito (`gate_battito_hook.py`
+valida solo un titolo `RECAP`, `Missione` non lo tocca). Come `recap`, **non ti ferma**:
+rispondi e vai avanti, senza aspettare conferma, senza chiedere "procedo?".
 
 **LA LINGUA DEL BATTITO — PAROLE SEMPLICI** *(ordine di Max, 2026-09-03)*.
 Il battito è la riga che Max legge di corsa: se deve decifrarla, ha fallito. **Dentro il
