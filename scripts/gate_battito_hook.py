@@ -49,7 +49,7 @@ if QUI not in sys.path:
 # Segnali che il testo CONTIENE un tentativo di battito. Se non ce n'e' nessuno,
 # l'hook non ha niente da dire: non si impone un battito dove non serve.
 SEGNALE_TITOLO = re.compile(r"^\s*\*\*.{0,3}\s*RECAP\s*[—-]", re.IGNORECASE)
-SEGNALE_VOCE = re.compile(r"^│\s*🟠\s")  # fallback: l'etichetta dentro un riquadro
+SEGNALE_VOCE = re.compile(r"^[  ·]*│\s*🟠\s")  # fallback: l'etichetta, anche se il riquadro e' centrato (rientro a punti)
 TETTO_RIGHE_BLOCCO = 60  # protezione anti-input-rotto: nessun battito reale supera questo
 
 
@@ -106,9 +106,13 @@ def trova_battito(testo):
     trovati = 0
     fine = min(len(righe), inizio + TETTO_RIGHE_BLOCCO)
     for i in range(inizio, fine):
-        if righe[i].startswith("┌─"):
+        # un riquadro centrato ha punti (rientro) prima di ┌/└, non piu' colonna 0 —
+        # si toglie il rientro prima di guardare il bordo (§6.11, "SPAZI VERI"/"RIEMPIMENTO
+        # NON-SPAZIO": il rientro e' spazio, NBSP o punto, mai altro).
+        spoglia = righe[i].lstrip("  ·")
+        if spoglia.startswith("┌─"):
             trovati += 1
-        if trovati >= bordi_superiori_attesi and righe[i].startswith("└─"):
+        if trovati >= bordi_superiori_attesi and spoglia.startswith("└─"):
             fine = i + 1
             break
 
