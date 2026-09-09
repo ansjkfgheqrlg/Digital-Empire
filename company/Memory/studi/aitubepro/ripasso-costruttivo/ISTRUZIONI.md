@@ -21,7 +21,7 @@ grezzi — **NON i video, non servono**) e porre le QUATTRO domande che non sono
 - **Non riscrivere le 69 regole gia' fatte.** Sono in `../regole/<categoria>/L*.py`. Leggile per
   sapere cosa e' gia' coperto, mai per copiarle.
 - **Non applicare niente.** Tu proponi e provi. Applica il coordinatore, dopo la validazione.
-- **Non toccare `02-AUTOMAZIONI-E-SCRIPTS/`** — e' il motore in produzione (ADR-003/ADR-024):
+- **Non toccare `02-AUTOMAZIONI-E-SCRIPTS/`** — e' il motore in produzione (ADR-003/ADR-029):
   ogni proposta che lo tocca nasce sul **binario B**, che si applica solo a gate di categoria.
 
 ## La legge sulla prova (non negoziabile)

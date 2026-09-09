@@ -100,7 +100,7 @@ def verifica(fabbrica):
     ST = "04-SKILLS-E-REFERENCE/references/scelta-strumenti.md"
     return {
         # binario B: non applicate al motore oggi, per costruzione false finche' il gate A6
-        # non le applica davvero (ADR-024) — dichiarato qui, non nascosto in un True comodo.
+        # non le applica davvero (ADR-029) — dichiarato qui, non nascosto in un True comodo.
         "A6-L01-01": False,
         "A6-L01-02": contiene(YP, ["almeno due playlist"]),
         "A6-L01-03": False,

@@ -43,7 +43,7 @@ scelta non ancora fatta, non un limite dell'API.** La sfumatura conta: "non poss
 abbiamo ancora deciso" sono due frasi diverse, e la seconda va scritta prima che qualcuno la legga
 come la prima.
 
-**Non toccato `fliki_client.py` oggi** — ADR-024 (citato in `schema.py`): *"il motore si tocca
+**Non toccato `fliki_client.py` oggi** — ADR-029 (citato in `schema.py`): *"il motore si tocca
 solo a gate di categoria."* A6 non è ancora chiuso. Due candidati nuovi in coda al prossimo gate
 binario B, non applicati ora:
 

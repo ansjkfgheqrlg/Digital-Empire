@@ -90,13 +90,23 @@ Trasversali a tutti i reparti, potere di blocco.
 |---|---|
 | [`regolatore-nicchia`](regolatori/regolatore-nicchia.md) | il contenuto esce dalla nicchia, o qualcuno prova a cambiare canale target |
 | [`regolatore-originalita`](regolatori/regolatore-originalita.md) | lo script somiglia troppo al transcript sorgente (copia mascherata) |
+| [`regolatore-fatti`](regolatori/regolatore-fatti.md) | un fatto della fonte (nome, data, cifra, citazione) risulta storpiato nello script riscritto |
 | [`regolatore-qualita`](regolatori/regolatore-qualita.md) | durata < 12 min, voce sbagliata, sottotitoli assenti — verificato sul file vero |
 | [`regolatore-configurazione`](regolatori/regolatore-configurazione.md) | qualcuno modifica la configurazione Fliki approvata da Gael |
 | [`regolatore-copy`](regolatori/regolatore-copy.md) | un testo non è passato dal settore copy di Digital Empire |
+| [`regolatore-capacita-fliki`](regolatori/regolatore-capacita-fliki.md) | **non blocca** — a cadenza dichiarata confronta il payload con l'API Fliki reale e propone le leve mai usate; l'applicazione resta al gate di categoria |
 
 **Gate storici** (restano, sono regolatori a tutti gli effetti): [`niche-gate`](controllo/niche-gate.md),
 [`seo-gate`](controllo/seo-gate.md), [`qa-audio-video`](controllo/qa-audio-video.md),
 [`performance-auditor`](controllo/performance-auditor.md).
+
+**Nuovo gate (2026-09-10):** [`compliance-gate`](controllo/compliance-gate.md) — legge lo **script**
+prima della generazione video e blocca su nomi reali con dichiarazioni inventate, personaggi
+protetti, richieste di materiale di terzi (porte chiuse di
+`04-SKILLS-E-REFERENCE/references/monetizzazione-compliance.md` §5-§9). Non va confuso con l'agente
+omonimo in `.claude/skills/youtube-compliance-shield/agents/controllo/compliance-gate.md`, che
+verifica invece il **video già montato** (punteggi di originalità/copyright/policy sugli asset), su
+un percorso separato non agganciato a questo organigramma.
 
 ### 🧠 SUPPORTO
 [`memory-keeper`](supporto/memory-keeper.md) · [`self-improver`](supporto/self-improver.md)
@@ -119,6 +129,10 @@ Trasversali a tutti i reparti, potere di blocco.
 [L2 script-writer] script originale e migliore
         ↓
 [L3 regolatore-originalita] 🛡️ è una copia? ──sì──→ BLOCCO, riscrivi
+        ↓ no
+[L3 regolatore-fatti] 🛡️ un fatto è storpiato? ──sì──→ BLOCCO, correggi
+        ↓ no
+[L2 compliance-gate] 🛡️ nome reale/personaggio protetto/materiale terzi? ──sì──→ BLOCCO, riscrivi
         ↓ no
 [L1 capo-copy] ⚖️ FIRMA i testi (via settore copy Digital Empire)
         ↓

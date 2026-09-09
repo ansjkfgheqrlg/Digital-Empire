@@ -80,5 +80,5 @@ una traccia sottotitoli nativa esista davvero. **Il nostro gate SEO assegna semp
 **dichiaratamente un mock** ("dati finti, non usare in produzione") — non è lo stesso difetto,
 è un simulatore che deve barare per definizione.
 
-Non toccato il codice oggi (ADR-024, binario B solo a gate categoria) — regola registrata,
+Non toccato il codice oggi (ADR-029, binario B solo a gate categoria) — regola registrata,
 candidato per il gate A6.

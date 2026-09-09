@@ -127,7 +127,7 @@ gusto di spuntare una casella.
   (`generateSfx`) · timing per-media **no** · tetto 50 scene **non verificabile dallo schema**.
   **Scoperta bonus non cercata:** `bgMusicVolume` è un campo reale dell'API, mai usato dal nostro
   payload — la musica non è impossibile, è una scelta mai fatta. Due candidati binario B in coda
-  al gate A6 (`generateSfx`, `bgMusicVolume`), non applicati per ADR-024;
+  al gate A6 (`generateSfx`, `bgMusicVolume`), non applicati per ADR-029;
 - **D-1 e D-2** restano aperti di proposito fino al gate di **A6**.
 
 ---

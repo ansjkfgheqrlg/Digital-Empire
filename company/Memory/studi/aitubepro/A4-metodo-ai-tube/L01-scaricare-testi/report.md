@@ -102,7 +102,7 @@ Quattro, nel registro: `regole/A4-metodo-ai-tube/L01_scaricare_testi.py`.
   produzione. `transcript-collector.md` cambia da «raccogli il transcript» a «raccogli e
   **dichiara se basta**».
 - **A4-L01-03 registrata e NON applicata**: tocca `assemble_piano_editoriale.py`, che è motore in
-  produzione. Entra al gate della categoria A4, con test verdi e un video di prova (ADR-024,
+  produzione. Entra al gate della categoria A4, con test verdi e un video di prova (ADR-029,
   doppio binario). Applicarla oggi vorrebbe dire cambiare lo schema del piano mentre la fabbrica
   ci sta pubblicando sopra.
 - **A4-L01-04 applicata come nota di strategia**, non come automazione: `capo-strategia` deve

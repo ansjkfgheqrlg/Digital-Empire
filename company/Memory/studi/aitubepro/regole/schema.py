@@ -80,7 +80,7 @@ def valida(regola, contesto=""):
     tocca = str(regola.get("tocca", ""))
     if "02-AUTOMAZIONI-E-SCRIPTS" in tocca and regola.get("binario") != "B":
         errori.append("%s: tocca il motore in produzione (%s) ma e' sul binario A. "
-                      "Il motore si tocca solo a gate di categoria (ADR-024)." % (contesto, tocca))
+                      "Il motore si tocca solo a gate di categoria (ADR-029)." % (contesto, tocca))
 
     # Un tipo costruttivo deve dire COSA nasce e DOVE: "costruisci" senza destinazione
     # e' un desiderio, non un lavoro. (aggiunto 2026-09-10)

@@ -31,7 +31,7 @@
   `fliki_client.py`, e produce un elenco di leve mai usate — con la stessa disciplina di doppia
   lettura indipendente vista in `VERIFICA-PAYLOAD-L20-GATE-A4.md` («ogni campo... letto due volte,
   con prompt diversi, su pagine diverse»). Non applica nulla di persona: propone, il binario B resta
-  al gate di categoria (ADR-024).
+  al gate di categoria (ADR-029).
 - **Perché vale:** chiude un buco strutturale, non un fatto isolato. Senza questo ruolo, una leva
   gratuita come `bgMusicVolume` (musica di sottofondo, oggi assente per scelta mai dichiarata come
   tale — non per limite tecnico) può restare invisibile per mesi, esattamente come è già successo.
@@ -95,7 +95,7 @@
   premiato nell'algoritmo) e i sottotitoli nativi (indicizzazione — vedi anche P-B3-04, che dipende
   da questo passo per essere vero e non solo corretto).
 - **Binario:** B (tocca `youtube_uploader_playwright.py` in `02-AUTOMAZIONI-E-SCRIPTS/`, motore in
-  produzione — ADR-003/ADR-024) — nasce qui, si applica solo al gate di categoria A6.
+  produzione — ADR-003/ADR-029) — nasce qui, si applica solo al gate di categoria A6.
 - **Misura:** `youtube_uploader_playwright.py` contiene una funzione dedicata (es.
   `_gestisci_step_elementi_video`) sul modello di `_gestisci_step_monetization` già esistente; un
   video pubblicato dopo l'applicazione ha almeno 2 playlist verificabili da YouTube Studio e una

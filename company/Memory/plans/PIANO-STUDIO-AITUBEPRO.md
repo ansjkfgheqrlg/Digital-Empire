@@ -312,7 +312,7 @@ primo video e non al centesimo.** Solo dopo questi tre, e col tuo via, parte lo 
 |---|---|
 | **ADR-022** | Nasce `corso-lab`: ingest per piattaforme a login con flusso protetto, **affiancato** a `yt_ingest.py`, mai sostitutivo (ADR-003) |
 | **ADR-023** | Le conoscenze da corso entrano nella fabbrica **solo** come regole a contratto (§6.3). Niente prosa applicata a mano |
-| **ADR-024** | Doppio binario A/B (§8): il motore in produzione si tocca solo a gate di categoria superato |
+| **ADR-029** | Doppio binario A/B (§8): il motore in produzione si tocca solo a gate di categoria superato |
 
 ## 14. L'obiezione più forte contro questo piano — e cosa rispondo
 

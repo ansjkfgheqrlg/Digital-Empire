@@ -40,7 +40,10 @@ Regole di struttura:
 3. Scrivi Hook → Intro (con valore proposto) → Corpo (punti in ordine di retention) → 3 CTA.
 4. Inserisci le keyword target nel parlato (per i sottotitoli SEO).
 5. Marca con `➕` ciò che aggiungi rispetto all'originale (non è nel sorgente copiato).
-6. Consegna `script.md` al `video-producer`.
+6. Consegna `script.md` a `capo-copy` — che prima di firmare aspetta tre verdetti indipendenti:
+   `regolatore-originalita` (somiglianza), `regolatore-fatti` (i fatti sono ancora veri) e
+   `compliance-gate` (nessuna porta chiusa di `monetizzazione-compliance.md` violata). Solo dopo
+   la firma lo script raggiunge `video-producer`.
 
 ## 5. Evals
 - Hook nei primi 10s, chiaro e pertinente.
@@ -97,6 +100,15 @@ Nel consegnare lo script dichiara: **quanti fatti hai riverificato e quanti ne h
 > **Debito dichiarato:** il controllo giusto sarebbe un regolatore automatico dei fatti, gemello
 > di quello dell'originalità. È un organo nuovo dell'architettura e si apre con un ADR, non
 > dentro una lezione: annotato in `BACKLOG.md`. Finché non esiste, questo controllo è tuo.
+
+> **Aggiornamento 2026-09-10 — il debito è chiuso:** l'agente esiste,
+> `03-AGENTI-E-RUOLI/regolatori/regolatore-fatti.md`. Da adesso il controllo non è più solo tuo:
+> tu continui a dichiarare quanti fatti hai riverificato e tolti (resta utile, e resta il tuo primo
+> filtro), ma il verdetto che blocca prima della firma di `capo-copy` è il suo. Nello stesso
+> passaggio è nato anche `03-AGENTI-E-RUOLI/controllo/compliance-gate.md`, che legge lo stesso
+> script cercando nomi reali con dichiarazioni inventate, personaggi protetti e richieste di
+> materiale di terzi (le porte chiuse di `monetizzazione-compliance.md` §5-§9) — un asse diverso
+> dai fatti, stesso punto della catena. Vedi il playbook §4 punto 6.
 
 Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L02-riscrivere-testi/`.
 
