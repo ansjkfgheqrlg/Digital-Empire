@@ -13,10 +13,10 @@ FORMA A BULLET SEMPLICI, NIENTE CENTRAGGIO (2026-09-09, 8º giro). Sette giri av
 a centrare il battito (riquadri, spazi, punti, blocchi di codice, tabelle markdown — vedi la
 cronologia completa nella storia di git di questo file, troppo lunga per stare qui). L'8º giro
 e' la resa dei conti: Max ha chiuso il filone chiedendo di tornare al formato SEMPLICE di
-prima di tutta la saga del centraggio — un bullet `🟢 **<Etichetta>:** <contenuto libero>`
+prima di tutta la saga del centraggio — un bullet `🟩 **<Etichetta>:** <contenuto libero>`
 per voce, testo che va a capo da solo (nessun conteggio di 44 caratteri, nessun rientro,
 nessuna tabella) — con UNA sola eccezione: la voce Forze, quando ha piu' unita' nominate,
-resta ad ALBERO con le frecce `├─🟢→`/`└─🟢→` (5º giro, mai contestata). **Lezione della
+resta ad ALBERO con le frecce `├─🟩→`/`└─🟩→` (5º giro, mai contestata). **Lezione della
 saga intera:** sette giri di soluzioni via via piu' sofisticate (spazi, punti, fence, tabelle)
 stavano tutti risolvendo un problema — il centraggio — che alla fine Max non voleva piu'.
 La tecnica giusta per un requisito sbagliato resta una soluzione sbagliata: prima di
@@ -40,10 +40,10 @@ TITOLO_RE = re.compile(r"^\*\*⏱️ RECAP — (\d{1,3})%\*\*$")
 ASSETTO_RE = re.compile(r"^(\*\*GOD EMPEROR DOOM\*\*|normale)$")
 POTERE_RE = re.compile(r"^(\d{1,3})%$")
 
-# Etichetta ad albero (nome di un GRUPPO Forze): `🟢 <NOME>`, MA non un'altra voce bold tipo
-# `🟢 **Assetto:**` — l'esclusione (?!\*\*) e' quello che li distingue.
-GRUPPO_RE = re.compile(r"^🟢 (?!\*\*)(.+)$")
-RAMO_RE = re.compile(r"^(├─🟢→|└─🟢→) (.+)$")
+# Etichetta ad albero (nome di un GRUPPO Forze): `🟩 <NOME>`, MA non un'altra voce bold tipo
+# `🟩 **Assetto:**` — l'esclusione (?!\*\*) e' quello che li distingue.
+GRUPPO_RE = re.compile(r"^🟩 (?!\*\*)(.+)$")
+RAMO_RE = re.compile(r"^(├─🟩→|└─🟩→) (.+)$")
 
 VOCI_SEMPLICI = ["Fatto", "Sto facendo", "Farò"]
 
@@ -69,10 +69,10 @@ def _albero_forze(gruppi):
     for i, (nome, voci) in enumerate(gruppi):
         if not voci:
             raise ValueError("gruppo Forze '%s': nessuna voce" % nome)
-        righe.append("🟢 %s" % nome.upper())
+        righe.append("🟩 %s" % nome.upper())
         righe.append("│")
         for j, v in enumerate(voci):
-            ramo = "└─🟢→" if j == len(voci) - 1 else "├─🟢→"
+            ramo = "└─🟩→" if j == len(voci) - 1 else "├─🟩→"
             righe.append("%s %s" % (ramo, v))
         if i < len(gruppi) - 1:
             righe.append(None)
@@ -81,7 +81,7 @@ def _albero_forze(gruppi):
 
 def _leggi_albero_forze(righe, idx, problemi):
     """Legge un albero Forze a partire da `idx` — deve puntare alla prima etichetta di
-    gruppo `🟢 <NOME>`. Ritorna l'indice subito dopo l'ultimo ramo `└─...` (o dopo l'ultima
+    gruppo `🟩 <NOME>`. Ritorna l'indice subito dopo l'ultimo ramo `└─...` (o dopo l'ultima
     riga vuota fra gruppi, se il testo continua con un altro gruppo)."""
     while idx < len(righe):
         if not GRUPPO_RE.match(righe[idx]):
@@ -108,15 +108,15 @@ def _leggi_albero_forze(righe, idx, problemi):
             problemi.append("gruppo Forze: nessuna voce sotto `│` (serve almeno un ramo)")
         else:
             for riga_num, simbolo, _ in rami[:-1]:
-                if simbolo != "├─🟢→":
+                if simbolo != "├─🟩→":
                     problemi.append(
-                        "riga %d: ramo non finale dev'essere `├─🟢→`, trovato `%s`"
+                        "riga %d: ramo non finale dev'essere `├─🟩→`, trovato `%s`"
                         % (riga_num + 1, simbolo)
                     )
             ultimo_num, ultimo_simbolo, _ = rami[-1]
-            if ultimo_simbolo != "└─🟢→":
+            if ultimo_simbolo != "└─🟩→":
                 problemi.append(
-                    "riga %d: l'ultimo ramo del gruppo dev'essere `└─🟢→`, trovato `%s`"
+                    "riga %d: l'ultimo ramo del gruppo dev'essere `└─🟩→`, trovato `%s`"
                     % (ultimo_num + 1, ultimo_simbolo)
                 )
 
@@ -163,7 +163,7 @@ def valida(testo):
         idx += 1
 
     for etichetta in VOCI_SEMPLICI:
-        prefisso = "🟢 **%s:** " % etichetta
+        prefisso = "🟩 **%s:** " % etichetta
         if idx >= len(righe) or not righe[idx].startswith(prefisso) or righe[idx] == prefisso.rstrip():
             problemi.append(
                 "riga %d: attesa `%s<contenuto>`, trovato: %r"
@@ -180,14 +180,14 @@ def valida(testo):
         else:
             idx += 1
 
-    # Forze — flat (`🟢 **Forze:** <contenuto>`) oppure ad albero (`🟢 **Forze:**` da sola
+    # Forze — flat (`🟩 **Forze:** <contenuto>`) oppure ad albero (`🟩 **Forze:**` da sola
     # seguita dai gruppi).
-    prefisso_forze = "🟢 **Forze:** "
-    if idx < len(righe) and righe[idx] == "🟢 **Forze:**":
+    prefisso_forze = "🟩 **Forze:** "
+    if idx < len(righe) and righe[idx] == "🟩 **Forze:**":
         idx += 1
         if idx >= len(righe) or not GRUPPO_RE.match(righe[idx]):
             problemi.append(
-                "riga %d: dopo `🟢 **Forze:**` da sola serve almeno un gruppo `🟢 <NOME>`"
+                "riga %d: dopo `🟩 **Forze:**` da sola serve almeno un gruppo `🟩 <NOME>`"
                 % (idx + 1)
             )
         else:
@@ -198,7 +198,7 @@ def valida(testo):
         idx += 1
     else:
         problemi.append(
-            "riga %d: attesa la voce `🟢 **Forze:** <contenuto>` (o `🟢 **Forze:**` da sola "
+            "riga %d: attesa la voce `🟩 **Forze:** <contenuto>` (o `🟩 **Forze:**` da sola "
             "per l'albero), trovato: %r" % (idx + 1, righe[idx] if idx < len(righe) else "<fine testo>")
         )
         idx += 1
@@ -209,7 +209,7 @@ def valida(testo):
         idx += 1
 
     # Assetto
-    prefisso_assetto = "🟢 **Assetto:** "
+    prefisso_assetto = "🟩 **Assetto:** "
     if idx < len(righe) and righe[idx].startswith(prefisso_assetto):
         valore = righe[idx][len(prefisso_assetto):]
         if not ASSETTO_RE.match(valore):
@@ -231,7 +231,7 @@ def valida(testo):
         idx += 1
 
     # Potere
-    prefisso_potere = "🟢 **Potere:** "
+    prefisso_potere = "🟩 **Potere:** "
     if idx < len(righe) and righe[idx].startswith(prefisso_potere):
         valore = righe[idx][len(prefisso_potere):]
         mm = POTERE_RE.match(valore)
@@ -270,28 +270,28 @@ def costruisci(fatto, sto_facendo, farò, forze, assetto, potere, percentuale):
     out = ["**⏱️ RECAP — %d%%**" % percentuale, ""]
 
     for etichetta, contenuto in (("Fatto", fatto), ("Sto facendo", sto_facendo), ("Farò", farò)):
-        out.append("🟢 **%s:** %s" % (etichetta, contenuto))
+        out.append("🟩 **%s:** %s" % (etichetta, contenuto))
         out.append("")
 
     if _e_gruppi_forze(forze):
-        out.append("🟢 **Forze:**")
+        out.append("🟩 **Forze:**")
         for r in _albero_forze(forze):
             out.append("" if r is None else r)
         out.append("")
     else:
-        out.append("🟢 **Forze:** %s" % forze)
+        out.append("🟩 **Forze:** %s" % forze)
         out.append("")
 
-    out.append("🟢 **Assetto:** %s" % ("**GOD EMPEROR DOOM**" if assetto == "GOD EMPEROR DOOM" else "normale"))
+    out.append("🟩 **Assetto:** %s" % ("**GOD EMPEROR DOOM**" if assetto == "GOD EMPEROR DOOM" else "normale"))
     out.append("")
-    out.append("🟢 **Potere:** %d%%" % potere)
+    out.append("🟩 **Potere:** %d%%" % potere)
 
     return "\n".join(out)
 
 
 # --- Missione (§6.11, ordine di Max 2026-09-09): controllo di rotta, non di progresso.
 # Stesso principio del battito — schema fisso, verificabile da codice, non a braccio — ma
-# marcato 🔴 rosso apposta per non confondersi col battito 🟢 a colpo d'occhio. Le "Fasi"
+# marcato 🔴 rosso apposta per non confondersi col battito 🟩 a colpo d'occhio. Le "Fasi"
 # sono la STESSA grammatica ad albero di Forze (│ / ├─→ / └─→), qui in rosso, un solo
 # livello (nessun nome di gruppo): sono un'opinione di Emperator, non un impegno.
 RAMO_ROSSO_RE = re.compile(r"^(├─🔴→|└─🔴→) (.+)$")

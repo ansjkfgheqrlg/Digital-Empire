@@ -632,25 +632,25 @@ sempre in questa forma:
 
 | |
 |:---:|
-| 🟢 Fatto: |
+| 🟩 Fatto: |
 | <riga, max 44 caratteri> |
 | ↓ |
-| 🟢 Sto facendo: |
+| 🟩 Sto facendo: |
 | <riga, max 44 caratteri> |
 | ↓ |
-| 🟢 Farò: |
+| 🟩 Farò: |
 | <riga, max 44 caratteri> |
 | ↓ |
-| 🟢 Forze: |
+| 🟩 Forze: |
 | nessuna, sto lavorando da solo |
 | ↓ |
-| 🟢 Assetto: |
+| 🟩 Assetto: |
 | normale |
-| 🟢 Potere: 0% |
+| 🟩 Potere: 0% |
 ```
 
 Quando Forze ha più unità nominate (sentinelle, doom bot, ecc.) invece di una riga sola, la
-voce Forze diventa un ALBERO — un gruppo per unità, `│` e rami `├─🟢→`/`└─🟢→` (l'ultimo
+voce Forze diventa un ALBERO — un gruppo per unità, `│` e rami `├─🟩→`/`└─🟩→` (l'ultimo
 sempre `└`):
 
 ```
@@ -658,24 +658,24 @@ sempre `└`):
 
 | |
 |:---:|
-| 🟢 Fatto: |
+| 🟩 Fatto: |
 | <riga, max 44 caratteri> |
 | ↓ |
-| 🟢 Sto facendo: |
+| 🟩 Sto facendo: |
 | <riga, max 44 caratteri> |
 | ↓ |
-| 🟢 Farò: |
+| 🟩 Farò: |
 | <riga, max 44 caratteri> |
 | ↓ |
-| 🟢 Forze: |
-| 🟢 <NOME GRUPPO> |
+| 🟩 Forze: |
+| 🟩 <NOME GRUPPO> |
 | │ |
-| ├─🟢→ <GRADO> <nome> <cosa fa> |
-| └─🟢→ <GRADO> <nome> <cosa fa> |
+| ├─🟩→ <GRADO> <nome> <cosa fa> |
+| └─🟩→ <GRADO> <nome> <cosa fa> |
 | ↓ |
-| 🟢 Assetto: |
+| 🟩 Assetto: |
 | normale |
-| 🟢 Potere: 0% |
+| 🟩 Potere: 0% |
 ```
 
 (numeri a 0% qui solo perché è l'output letterale di `costruisci(...)` con argomenti
@@ -710,7 +710,7 @@ nessuna facoltativa:
    scritta recap con la percentuale deve essere di lato sinistro"*).
 2. **Riga vuota** fra il titolo e la prima voce.
 3. **Cinque voci, in quest'ordine, sempre tutte**: Fatto → Sto facendo → Farò → Forze →
-   Assetto+Potere insieme nell'ultima. Ogni voce è `🟢 <Etichetta>:` seguita dal contenuto,
+   Assetto+Potere insieme nell'ultima. Ogni voce è `🟩 <Etichetta>:` seguita dal contenuto,
    ognuna la sua riga `| ... |` di tabella. **NESSUN bordo** — niente `┌│└─┐┘`: rimosso al
    5º giro, non serve e non regge nel rendering di Max.
 4. **Ogni riga (etichetta e contenuto) è una cella della tabella, e la tabella è centrata**
@@ -722,10 +722,10 @@ nessuna facoltativa:
 6. **Ogni voce porta fino a 4 righe di contenuto** (Fatto, Sto facendo, Farò — una frase per
    riga, mai un paragrafo unico); la voce Assetto+Potere ne porta **sempre esattamente 2**:
    l'assetto (`normale` o `**GOD EMPEROR DOOM**` in grassetto — unica eccezione al
-   grassetto) e poi `🟢 Potere: <n>%`. Anche quando una voce vale "nessuna" resta scritta:
+   grassetto) e poi `🟩 Potere: <n>%`. Anche quando una voce vale "nessuna" resta scritta:
    non si salta mai. **Forze fa eccezione**: quando ci sono più unità nominate diventa un
-   ALBERO — un'etichetta `🟢 <NOME GRUPPO>` per unità, poi `│`, poi un ramo `├─🟢→ <voce>`
-   per ognuna tranne l'ultima che è `└─🟢→ <voce>` (vedi esempio sopra).
+   ALBERO — un'etichetta `🟩 <NOME GRUPPO>` per unità, poi `│`, poi un ramo `├─🟩→ <voce>`
+   per ognuna tranne l'ultima che è `└─🟩→ <voce>` (vedi esempio sopra).
 7. **Generato dal codice, non disegnato a mano** — stesso principio di `frantuma.py`:
    `scripts/verifica_recap.py` espone `costruisci(fatto, sto_facendo, farò, forze, assetto,
    potere, percentuale)` che genera già la tabella, celle e separatore inclusi. `forze`
@@ -807,7 +807,7 @@ nessuna facoltativa:
 > superfluo: il rientro a `·` da solo centra tutto, il bordo non aggiungeva niente che Max
 > volesse vedere. Max ha anche mostrato, disegnandolo a mano, il formato AD ALBERO che vuole
 > per Forze quando ci sono più unità nominate (il suo esempio: sentinelle, doom bot) — con
-> gli stessi connettori `│`/`├─🟢→`/`└─🟢→` di `frantuma.py`, che aveva escluso per la FORMA
+> gli stessi connettori `│`/`├─🟩→`/`└─🟩→` di `frantuma.py`, che aveva escluso per la FORMA
 > GENERALE del battito ma vuole esplicitamente per QUESTO caso specifico. Tolto il bordo,
 > aggiunto il ramo Forze-ad-albero in `costruisci()` e `valida()` (`_albero_forze`,
 > `_leggi_albero_forze`) — 11/11 test verdi, incluso il caso nuovo dell'albero. **Lezione:**
@@ -1102,7 +1102,7 @@ vicini.
 
 Se in qualunque momento Max scrive **`Missione`** (o `missione`) — da sola, anche in mezzo a
 un lavoro lunghissimo — rispondi **all'istante**, in parole semplici (stessa regola sotto),
-marcato **🔴 rosso** (non 🟢 verde: colore diverso apposta, per non confondersi a colpo
+marcato **🔴 rosso** (non 🟩 verde: colore diverso apposta, per non confondersi a colpo
 d'occhio col battito — ordine di Max), in tre parti:
 
 ```
@@ -1124,7 +1124,7 @@ piano che devo rispettare alla lettera: le fasi vere possono cambiare strada fac
 bene così.
 
 Serve a Max per controllare in un istante se sto facendo la cosa giusta — un controllo di
-**rotta**, non di **progresso** (quello è il battito, §6.11 sopra, marcato 🟢: le due cose non
+**rotta**, non di **progresso** (quello è il battito, §6.11 sopra, marcato 🟩: le due cose non
 si confondono nel contenuto né nel colore, e non si sostituiscono a vicenda). Nessuna
 tabella, nessun rientro a spazi. Come `recap`, **non ti ferma**: rispondi e vai avanti, senza
 aspettare conferma, senza chiedere "procedo?".
@@ -1849,17 +1849,17 @@ file nasce subito (`O_CREAT|O_EXCL`) per occuparlo.
    che una chat nuova lancia ricevendo solo il codice, senza sapere altro.
 3. **`report --padre <PADRE>`** — genera lo schema fisso leggendo i titoli veri dai file coniati.
 
-**Colore dominante VIOLA (🟣)** — sistema di un colore per funzione: il verde (🟢) è di
+**Colore dominante VIOLA (🟣)** — sistema di un colore per funzione: il verde (🟩) è di
 `/recap`, il rosso (🔴) è di `Missione`, il viola è di `/frantuma`. Frecce vere, in markdown
 puro, mai dentro un blocco di codice (risulterebbe "evidenziato"/piatto — bocciato in un giro
 precedente, insieme a un albero ASCII con "onde" e a un Artifact, entrambi bocciati per motivi
 diversi).
 
 **⚠️ Vincolo tecnico non negoziabile:** nessuna riga di questo schema, o di qualunque altro
-output, può iniziare con `🟢` o con `🔴` — quei caratteri a inizio riga sono il segnale che
+output, può iniziare con `🟩` o con `🔴` — quei caratteri a inizio riga sono il segnale che
 l'hook `gate_battito_hook.py` usa per riconoscere un tentativo di battito o di Missione, e li
 giudicherebbe con quello schema invece di lasciarli passare (scoperto in produzione l'08/09:
-un mockup con bullet 🟠 — colore di allora, ora 🟢 — è stato bloccato dal gate esattamente per
+un mockup con bullet 🟠 — colore di allora, ora 🟩 — è stato bloccato dal gate esattamente per
 questo; vale identico oggi).
 
 ### Due fasi, mai una sola — *(correzione di Max, 2026-09-09)*

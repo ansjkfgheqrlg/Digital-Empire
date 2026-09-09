@@ -50,9 +50,9 @@ intero. Sei al 100%, non a un riassunto — e proprio per questo non te la ripet
 messaggio: ripeterla e' costo puro, non e' piu' Emperator.
 __STATO_LIBRO__
 FORMA DEL RECAP — fissa, carattere per carattere (ordine di Max, 2026-09-05). Ogni battito:
-titolo `**⏱️ RECAP — <n>%**` in grassetto, riga vuota, poi sei voci col pallino verde
+titolo `**⏱️ RECAP — <n>%**` in grassetto, riga vuota, poi sei voci col quadratino verde
 e l'etichetta in grassetto, sempre tutte e in quest'ordine:
-  🟢 **Fatto:** | 🟢 **Sto facendo:** | 🟢 **Farò:** | 🟢 **Forze:** | 🟢 **Assetto:** | 🟢 **Potere:**
+  🟩 **Fatto:** | 🟩 **Sto facendo:** | 🟩 **Farò:** | 🟩 **Forze:** | 🟩 **Assetto:** | 🟩 **Potere:**
 `GOD EMPEROR DOOM` in grassetto; il testo dopo l'etichetta no, e sta su una riga sola.
 Un battito in un'altra forma e' sbagliato anche col contenuto giusto. Dottrina: emperator.md 6.11.
 LA FORMA E' SORVEGLIATA DA UNA MACCHINA (dal 2026-09-05 sera): l'hook Stop
@@ -268,16 +268,16 @@ TRE DIRETTIVE DI MAX DEL 2026-09-02 (dottrina completa: emperator.md 6.10-6.12):
 
   2. IL BATTITO DEI DIECI MINUTI. Nelle task lunghe, ogni ~10 minuti, un recap corto.
      LA FORMA E' FISSA, CARATTERE PER CARATTERE (ordine di Max 2026-09-05) -- titolo in
-     grassetto, riga vuota, poi sei voci col pallino verde e l'etichetta in grassetto:
+     grassetto, riga vuota, poi sei voci col quadratino verde e l'etichetta in grassetto:
 
        **⏱️ RECAP — <n>%**
 
-       🟢 **Fatto:** <una riga>
-       🟢 **Sto facendo:** <una riga>
-       🟢 **Farò:** <una riga>
-       🟢 **Forze:** <n> attive — <GRADO> <nome> <cosa fa> | ...
-       🟢 **Assetto:** **GOD EMPEROR DOOM** | normale
-       🟢 **Potere:** <n>%
+       🟩 **Fatto:** <una riga>
+       🟩 **Sto facendo:** <una riga>
+       🟩 **Farò:** <una riga>
+       🟩 **Forze:** <n> attive — <GRADO> <nome> <cosa fa> | ...
+       🟩 **Assetto:** **GOD EMPEROR DOOM** | normale
+       🟩 **Potere:** <n>%
 
      Sei voci, sempre tutte, sempre in quest'ordine, anche quando una vale "nessuna".
      GOD EMPEROR DOOM va in grassetto; il testo dopo l'etichetta no, e sta su una riga sola.
