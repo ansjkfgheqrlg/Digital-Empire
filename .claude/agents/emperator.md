@@ -1509,79 +1509,58 @@ nella sua pazienza. E' che la volta prima l'ho trattato come un compito.
 
 ---
 
-### 6.24 /frantuma — spacchi una task grande in micro-task ufficiali, ognuna col suo ID *(direttiva Max, 2026-09-08 — SCHEMA IN REVISIONE)*
+### 6.24 /frantuma — spacchi una task grande in micro-task ufficiali, ognuna col suo ID *(direttiva Max, 2026-09-08)*
 
-> ⚠️ **Questa sezione e' in correzione, non fonte di verita' finche' non lo dice il prossimo
-> commit.** Max ha bocciato la prima resa (troppo "evidenziata"/boxata, l'emoji e il concetto
-> di "onda" gli sembrano cringe) e ha corretto lo scopo: la funzione **non pianifica chi parte
-> quando e non calcola onde di parallelismo** — fa una cosa sola, spaccare una task in micro-task
-> ufficiali con un ID coniato, esattamente come ADR e checkpoint. Il meccanismo di conio atomico
-> sotto resta valido; lo schema di risposta ONDA qui sotto e la logica di "disponibile ora" nel
-> report vanno rifatti piu' semplici. Non usarli come sono finche' non sono aggiornati.
+**Ordine di Max, testuale — e la sua stessa correzione nello stesso giorno:** *"dividi delle task
+grandi in micro task ufficiali... così che si può andare a svolgerla in più chat, in più sessioni,
+in contemporanea."* Poi, dopo che una prima versione ci aveva messo dentro onde e calcolo di
+parallelismo non richiesti: *"questa funzione fa una sola cosa: divide una task in micro task
+ufficiali, con ogni micro-task che ha il suo codice, il suo ID — proprio come sempre."*
 
-**Ordine di Max, testuale:** *"dividi delle task grandi in micro task ufficiali... così che si
-può andare a svolgerla in più chat, in più sessioni, in contemporanea — e quindi si andrà molto
-più velocemente e in modo molto più chirurgico."* Correzione dello stesso giorno, testuale:
-*"questa funzione fa una sola cosa: divide una task in micro task ufficiali, con ogni micro-task
-che ha il suo codice, il suo ID — proprio come sempre."* Il beneficio del parallelismo viene dal
-fatto che ogni micro-task e' un file ufficiale a se', non da un motore che calcola chi puo'
-partire quando.
+**Cosa fa, e SOLO questo.** Prende una task grande e la spacca in micro-task, ognuna con un ID
+coniato — `MT-01`, `MT-02`, ... — esattamente come un ADR o un checkpoint. **Non pianifica chi
+parte quando, non calcola onde, non decide un ordine.** Il beneficio del parallelismo viene dal
+fatto che ogni micro-task è un file ufficiale a sé, apribile da qualunque chat — non da un motore
+che calcola disponibilità.
 
-**Ordine di Max, testuale:** *"dividi delle task grandi in micro task ufficiali... così che si
-può andare a svolgerla in più chat, in più sessioni, in contemporanea — e quindi si andrà molto
-più velocemente e in modo molto più chirurgico."*
+**Il motore non è prosa, è codice — stessa filosofia del battito.** `scripts/frantuma.py`:
+1. **Conia** ogni micro-task come file suo, numero atomico (`O_CREAT|O_EXCL`), per-padre (ogni
+   task grande riparte da MT-01) — stesso schema anti-collisione di `scripts/adr.py` e
+   `scripts/checkpoint.py` (B-009): se due sessioni coniano nello stesso istante, una vince e
+   l'altra prende il numero dopo.
+2. **Genera il report** leggendo i titoli veri dai file coniati — mai scritto a mano, mai a
+   memoria.
 
-**Cosa fa questa funzione.** Quando una task è grande abbastanza da fermare una settimana intera
-(l'esempio che ha innescato la regola: TASK-LANCI-BUILD-W3, 139-187 ore-uomo), la spacchi in
-**micro-task ufficiali**, raggruppate in **ONDE**: dentro un'onda, nessuna micro-task dipende
-dall'altra, quindi si aprono **tutte insieme, in chat separate**, senza aspettare.
-
-**Il motore non è prosa, è codice — stessa filosofia del battito.** `scripts/frantuma.py` fa tre
-cose che io non devo garantire a memoria:
-1. **Conia** ogni micro-task come file suo, con numero atomico (`O_CREAT|O_EXCL`), stesso schema
-   anti-collisione di `scripts/adr.py` e `scripts/checkpoint.py` — se due sessioni coniano nello
-   stesso istante, una vince e l'altra prende il numero dopo.
-2. **Verifica lo scope**: ogni micro-task dichiara i percorsi che tocca, e il validatore segnala
-   qualunque sovrapposizione fra micro-task che **non** hanno una relazione di dipendenza —
-   quelle in sequenza possono legittimamente toccare lo stesso pezzo, quelle senza catena che si
-   sovrappongono sono il rischio vero (due chat che si pestano i piedi).
-3. **Calcola le onde** leggendo lo stato reale dai file (`APERTA`/`CHIUSA` + dipendenze), non da
-   quello che ricordo: una micro-task è "disponibile ora" solo se tutte le sue dipendenze sono
-   davvero chiuse sul disco.
-
-**Lo schema di risposta — fisso, come il battito, scelto da Max il 2026-09-08 (stile "Onde ad
-albero" fra tre proposte con anteprima):**
+**Lo schema di risposta — fisso, come il battito. Tre giri per arrivarci** (bocciati: un albero
+ASCII boxato con "onde" — troppo evidenziato, l'onda "cringe"; un Artifact — vietato esplicitamente,
+Max lo vuole in chat). **Colore dominante VIOLA (🟣)** — sistema di un colore per funzione:
+l'arancione (🟠) è di `/recap`, il viola è di `/frantuma`. Frecce vere, in markdown puro, mai
+dentro un blocco di codice (altrimenti risulta "evidenziato"/piatto):
 
 ```
-🏛️  SCOMPOSIZIONE UFFICIALE — <PADRE>
-══════════════════════════════════════════════════
-📦 <una riga su cosa e' la task grande, ore-uomo se note> · <n> micro-task
-
-🌊 ONDA 1 — parti SUBITO, <n> chat in parallelo, zero dipendenze
-   🟢 MT-01 · <titolo>
-   🟢 MT-02 · <titolo>
-
-🌊 ONDA 2 — si apre quando l'Onda 1 chiude
-   🟡 MT-03 · <titolo>   ⛓ aspetta MT-01, MT-02
-
-══════════════════════════════════════════════════
-📊 <n> disponibili ORA · <n> chiuse · <n> totali · <n> collisioni di scope
+🟣 **<PADRE>**
+🟣 divisa in <n> micro-task ufficiali
+   │
+   ├──🟣→ **MT-01** · <titolo>
+   ├──🟣→ **MT-02** · <titolo>
+   └──🟣→ **MT-0n** · <titolo>          (l'ultima riga usa └── invece di ├──)
 ```
 
-`🟢` = via libera ora, `🟡` = aspetta una dipendenza, `🔴` = ultima onda/più critica, `✅`/`[X]` =
-chiusa. I colori/emoji li scrivo io componendo il messaggio; i **dati** (chi è disponibile, chi
-aspetta cosa, se c'è una collisione) li calcola `frantuma.py report --padre <PADRE>` — non li
-invento e non li tengo a mente fra un turno e l'altro.
+Generato da `python scripts/frantuma.py report --padre <PADRE>` — copio l'output, non lo ricreo
+a mano: la forma è garantita dal codice, esattamente come `verifica_recap.py` garantisce quella
+del battito.
 
-**Quando si attiva:** quando Max dice *"frantuma questa task"*, *"spacca in micro-task"*, o
-quando io stesso vedo una task che supera da sola il budget ragionevole di una settimana/persona
-(vale la stessa soglia di REGOLA UNO in `CLAUDE.md`: swarm obbligatorio da 2 aree disgiunte in
-su). Non è un'esibizione estetica fine a sé: ogni micro-task coniata è un file reale in
-`company/Memory/tasks/micro/<PADRE>/`, apribile da qualunque chat che voglia eseguirla.
+**⚠️ Vincolo tecnico non negoziabile:** nessuna riga di questo schema, o di qualunque altro
+output, può iniziare con `🟠` — quel carattere a inizio riga è il segnale che l'hook
+`gate_battito_hook.py` usa per riconoscere un tentativo di battito, e lo giudicherebbe con lo
+schema del recap invece che lasciarlo passare (scoperto in produzione l'08/09: un mockup con
+bullet 🟠 è stato bloccato dal gate esattamente per questo).
 
-**Esempio vero, non inventato:** `company/Memory/tasks/micro/TASK-LANCI-BUILD-W3/` — 4 micro-task
-coniate l'08/09 (chiave Brevo B-020, catena incasso S0, lancio a mano S1, macchina minima S2), 3
-onde, 0 collisioni di scope verificate da `frantuma.py verifica`.
+**Quando si attiva:** quando Max dice *"frantuma questa task"* o equivalenti. **Non si esegue mai
+di iniziativa su una task reale** senza che Max lo chieda esplicitamente — lezione pagata l'08/09:
+una prima dimostrazione dal vivo su `TASK-LANCI-BUILD-W3` (4 micro-task reali coniate) è stata
+bocciata e rimossa perché non richiesta. Un'anteprima dello schema si mostra con dati d'esempio
+dichiarati come tali; il conio vero si fa solo a comando.
 
 ---
 

@@ -1,3 +1,18 @@
+## 🟣 2026-09-09 — /frantuma chiuso e approvato: schema viola con frecce, semplificato a split+ID — CP-20260909-DR9X
+
+**Tre giri di correzione di Max sullo stesso filone, tutti reali, tutti applicati.** Bocciata la
+demo dal vivo non richiesta, bocciato lo schema "Onde ad albero" (boxato, "onda" cringe), bocciato
+l'Artifact (vuole tutto in chat), corretto lo scopo stesso: `/frantuma` **non** pianifica onde o
+parallelismo, spacca solo una task in micro-task con ID coniato — come ADR e checkpoint.
+
+`scripts/frantuma.py` riscritto piu' semplice (via onda/dipendenze/scope-check), resta solo
+`conia` + `report`. Schema finale, generato dal codice: viola (🟣) dominante, frecce in markdown
+puro (`├──🟣→`), mai dentro un blocco di codice. **Scoperta tecnica reale**: una riga che inizia
+con `🟠` viene sempre intercettata da `gate_battito_hook.py` come tentativo di recap — vincolo
+documentato in `emperator.md` §6.24 per qualunque schema futuro. 8 test verdi, suite 22/22.
+
+Dettagli: [CP-20260909-DR9X](checkpoints/CP-20260909-DR9X.md).
+
 ## 🔨 2026-09-08 — Emperator si auto-implementa: nasce /frantuma — CP-20260908-9GQM
 
 **Nuova funzione permanente, come il battito.** Ordine di Max: dividere task grandi in
