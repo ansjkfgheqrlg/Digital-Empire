@@ -1,0 +1,620 @@
+{
+ "title": "Cos’è un Funnel Operator? Significato, ruolo e cosa fa — AP Formazione",
+ "meta_description": "Un Funnel Operator è un professionista del marketing specializzato in funnel pubblicitari. Analizza ads, landing page ed email per migliorare conversioni e aumentare il ritorno economico delle aziende. Termine coniato da Andrei Pascu, titolare dell'agenzia di marketing AP Sales.",
+ "og_title": "Cos’è un Funnel Operator? Significato, ruolo e cosa fa — AP Formazione",
+ "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/60212c5d9d65656e20a3e029/694a12b083832e740ff4123f/1766508057353/Funnel+Operator+%283%29.jpg?format=1500w",
+ "canonical": "https://www.andrei-copy.com/blog/cosa-un-funnel-operator",
+ "jsonld": [
+  "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
+  "{\"name\":\"Cos\\u2019\\u00E8 un Funnel Operator? Significato, ruolo e cosa fa \\u2014 AP Formazione\",\"url\":\"https://www.andrei-copy.com/blog/cosa-un-funnel-operator\",\"datePublished\":\"2025-12-23T17:00:28+0100\",\"dateModified\":\"2025-12-23T17:40:57+0100\",\"headline\":\"Cos\\u2019\\u00E8 un Funnel Operator?\",\"author\":\"Andrei Pascu\",\"publisher\":{\"name\":\"AP Formazione\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://"
+ ],
+ "lang": "it-IT",
+ "page_height": 8288,
+ "page_width": 1440,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_text": [
+  [
+   "#fafafa",
+   74
+  ],
+  [
+   "#0062ff",
+   5
+  ],
+  [
+   "#1e9cd7",
+   2
+  ],
+  [
+   "#1b1b1d",
+   2
+  ],
+  [
+   "#ebe9e0",
+   2
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#fafafa",
+   7
+  ],
+  [
+   "#1b1b1d",
+   5
+  ],
+  [
+   "#0062ff",
+   4
+  ],
+  [
+   "#a8a8a8",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "elza-8u3n84",
+   61
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   22
+  ],
+  [
+   "Poppins",
+   1
+  ],
+  [
+   "\"DM Sans\"",
+   1
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 28.8px / w300",
+   47
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   11
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   9
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   6
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   2
+  ],
+  [
+   "38.4px / lh 38.4px / w700",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "60.8px / lh 72.96px / w700",
+   1
+  ],
+  [
+   "16px / lh normal / w600",
+   1
+  ],
+  [
+   "16px / lh 19.2px / w400",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "300",
+   50
+  ],
+  [
+   "700",
+   31
+  ],
+  [
+   "400",
+   2
+  ],
+  [
+   "500",
+   1
+  ],
+  [
+   "600",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "10px",
+   2
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    343
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "opacity 0.25s ease-out, visibility 0.25s ease-out",
+    5
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "opacity 0.1s linear",
+    2
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    17
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ]
+  ]
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 263,
+   "text": "Cos’è un Funnel Operator?"
+  },
+  {
+   "tag": "h2",
+   "y": 663,
+   "text": "Risposta breve, se non vuoi leggere tutto."
+  },
+  {
+   "tag": "h1",
+   "y": 1178,
+   "text": "Da dove proviene il termine “Funnel Operator”?"
+  },
+  {
+   "tag": "h1",
+   "y": 1812,
+   "text": "Che cosa fa il Funnel Operator?"
+  },
+  {
+   "tag": "h1",
+   "y": 3621,
+   "text": "Cosa cambia tra Funnel Operator e full stack marketer?"
+  },
+  {
+   "tag": "h2",
+   "y": 3973,
+   "text": "Funnel Operator"
+  },
+  {
+   "tag": "h2",
+   "y": 4177,
+   "text": "Full stack marketer"
+  },
+  {
+   "tag": "h2",
+   "y": 4351,
+   "text": "Quindi cosa cambia?"
+  },
+  {
+   "tag": "h1",
+   "y": 4579,
+   "text": "E’ possibile diventare un Funnel Operator senza soldi?"
+  },
+  {
+   "tag": "h2",
+   "y": 5078,
+   "text": "Come diventare un Funnel Operator"
+  },
+  {
+   "tag": "h1",
+   "y": 5551,
+   "text": "Corso online per diventare Funnel Operator"
+  },
+  {
+   "tag": "h1",
+   "y": 6006,
+   "text": "Differenza tra Funnel Operator e Copywriter?"
+  },
+  {
+   "tag": "h3",
+   "y": 6711,
+   "text": "Funnel Operator non è un copywriter glorificato?"
+  },
+  {
+   "tag": "h3",
+   "y": 6891,
+   "text": "E’ facile fare il Funnel Operator?"
+  },
+  {
+   "tag": "h2",
+   "y": 7464,
+   "text": "Stai parlando davvero con Andrei Pascu?"
+  },
+  {
+   "tag": "h2",
+   "y": 7464,
+   "text": "Copywriting: come trovare clienti"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 5650,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 5658,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "AP Sales",
+   "href": "https://www.apsales.eu",
+   "y": 1408,
+   "x": 446,
+   "w": 533,
+   "h": 48,
+   "bg": "transparent",
+   "color": "#0062ff",
+   "radius": "0px",
+   "border": "0px none rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "attività di servizi autonoma",
+   "href": "/blog/come-fare-soldi-online-la-strategia-che-non-conosci",
+   "y": 5220,
+   "x": 446,
+   "w": 533,
+   "h": 48,
+   "bg": "transparent",
+   "color": "#0062ff",
+   "radius": "0px",
+   "border": "0px none rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Informazioni su Funnel Operator",
+   "href": "/funnel-operator",
+   "y": 5868,
+   "x": 446,
+   "w": 291,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Indietro Stai parlando davvero con Andrei Pascu?",
+   "href": "/blog/stai-parlando-davvero-con-andrei-pascu",
+   "y": 7464,
+   "x": 173,
+   "w": 547,
+   "h": 77,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Avanti Copywriting: come trovare clienti",
+   "href": "/blog/copywriting-come-trovare-clienti",
+   "y": 7464,
+   "x": 720,
+   "w": 547,
+   "h": 77,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 7775,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 7844,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 5643,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 5643,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/b8a59b62-c330-4aff-bd0d-df7eceec8e48/funnel-operator-come-funziona.png",
+   "alt": "Funnel Operator: cos’è e come funziona, spiegazione del ruolo nel marketing dei funnel pubblicitari",
+   "y": 458,
+   "x": 446,
+   "w": 547,
+   "h": 171
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/26d19cb9-fe34-4fc2-bfed-43e1d1165191/funnel-operator-logo-marketing-funnel.png",
+   "alt": "Logo Funnel Operator con professionista al lavoro su strategie di marketing e funnel pubblicitari",
+   "y": 973,
+   "x": 446,
+   "w": 547,
+   "h": 171
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1237,
+   "x": 759,
+   "w": 202,
+   "h": 76
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1302,
+   "x": 443,
+   "w": 282,
+   "h": 76
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1871,
+   "x": 443,
+   "w": 489,
+   "h": 76
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/9d3d11c2-67e0-462f-a1cd-f4285c8cae7b/cosa-fa-funnel-operator-mappa-competenze.png",
+   "alt": "Schema che mostra cosa fa un Funnel Operator: strategia, copywriting, media buying, email marketing, sviluppo landing e consulenza",
+   "y": 1976,
+   "x": 446,
+   "w": 547,
+   "h": 308
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/430a8099-02fd-4853-8969-359ca7f8c644/funnel-operator-vs-full-stack-marketer.png",
+   "alt": "Confronto tra Funnel Operator e Full Stack Marketer: differenze di ruolo e competenze nel marketing",
+   "y": 3087,
+   "x": 470,
+   "w": 500,
+   "h": 500
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3680,
+   "x": 440,
+   "w": 495,
+   "h": 76
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 5127,
+   "x": 444,
+   "w": 386,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/5aeefcf0-2d88-4ae5-ab82-1d4dbdd2e938/copywriter-vs-funnel-operator-differenze.png",
+   "alt": "Differenza tra copywriter e funnel operator: il copywriter scrive testi, il funnel operator fa ads, landing ed email marketing",
+   "y": 6235,
+   "x": 446,
+   "w": 547,
+   "h": 308
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 7601,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 7659,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7711,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7711,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7711,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7711,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "slices_desktop": 10,
+ "slices_mobile": 10,
+ "mobile_page_height": 8439
+}

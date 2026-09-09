@@ -1,0 +1,698 @@
+{
+ "url": "https://www.andrei-copy.com/blog/le-regole-con-cui-costruiamo-i-nostri-corsi",
+ "slug": "60-blog-commerciale-corsi",
+ "catturata": "2026-09-09",
+ "dominio": "www.andrei-copy.com",
+ "titolo": "Andrei Pascu Corsi: come funziona la sua formazione — AP Formazione",
+ "lang": "it-IT",
+ "costruzione": "squarespace",
+ "altezza": 10333,
+ "larghezza": 1440,
+ "altezza_mobile": 9166,
+ "body_bg": "#a8a8a8",
+ "body_font": "sans-serif",
+ "palette_testo": [
+  [
+   "#fafafa",
+   72
+  ],
+  [
+   "#1b1b1d",
+   2
+  ],
+  [
+   "#ebe9e0",
+   2
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "#1b1b1d",
+   5
+  ],
+  [
+   "#0062ff",
+   3
+  ],
+  [
+   "#fafafa",
+   2
+  ],
+  [
+   "#a8a8a8",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "elza-8u3n84",
+   55
+  ],
+  [
+   "plus-jakarta-sans-o8l9cc",
+   20
+  ],
+  [
+   "Poppins",
+   1
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "16px / lh 28.8px / w300",
+   26
+  ],
+  [
+   "16px / lh 28.8px / w700",
+   14
+  ],
+  [
+   "60.8px / lh 64.7885px / w700",
+   12
+  ],
+  [
+   "16px / lh 19.2px / w400",
+   11
+  ],
+  [
+   "48px / lh 52.992px / w700",
+   3
+  ],
+  [
+   "12.544px / lh 22.5792px / w300",
+   3
+  ],
+  [
+   "38.4px / lh 43.4995px / w700",
+   2
+  ],
+  [
+   "38.4px / lh 38.4px / w700",
+   2
+  ],
+  [
+   "14.272px / lh normal / w500",
+   1
+  ],
+  [
+   "60.8px / lh 72.96px / w700",
+   1
+  ],
+  [
+   "12px / lh normal / w400",
+   1
+  ]
+ ],
+ "pesi": [
+  [
+   "700",
+   34
+  ],
+  [
+   "300",
+   29
+  ],
+  [
+   "400",
+   12
+  ],
+  [
+   "500",
+   1
+  ]
+ ],
+ "raggi": [
+  [
+   "10px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgb(27, 27, 29) 0px 12px 48px 12px",
+   1
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    390
+   ],
+   [
+    "fill 0.17s ease-in-out",
+    8
+   ],
+   [
+    "none",
+    5
+   ],
+   [
+    "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+    4
+   ],
+   [
+    "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+    1
+   ],
+   [
+    "padding 0.14s ease-in-out",
+    1
+   ],
+   [
+    "opacity 0.1s linear",
+    1
+   ],
+   [
+    "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.1s ease-in-out",
+    1
+   ]
+  ],
+  "animazioni": [],
+  "filtri": [],
+  "blend": [],
+  "clip": [],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, 0, 0)",
+    20
+   ],
+   [
+    "matrix(2, 0, 0, 2, 0, 0)",
+    4
+   ]
+  ]
+ },
+ "keyframes": [],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 263,
+   "text": "Andrei Pascu Corsi: le regole con cui costruiamo formazione ad alto standard"
+  },
+  {
+   "tag": "h1",
+   "y": 1356,
+   "text": "Problema prima, soluzione dopo."
+  },
+  {
+   "tag": "h1",
+   "y": 1786,
+   "text": "Primi principi, non nozioni."
+  },
+  {
+   "tag": "h1",
+   "y": 2344,
+   "text": "Tree of knowledge."
+  },
+  {
+   "tag": "h1",
+   "y": 2910,
+   "text": "Applicare, non memorizzare."
+  },
+  {
+   "tag": "h1",
+   "y": 3340,
+   "text": "Mettere in discussione il \"si è sempre fatto così\"."
+  },
+  {
+   "tag": "h1",
+   "y": 3999,
+   "text": "Una lezione, un risultato."
+  },
+  {
+   "tag": "h1",
+   "y": 4399,
+   "text": "Prima il risultato, poi il come."
+  },
+  {
+   "tag": "h1",
+   "y": 4929,
+   "text": "Corsi brevi, corsi completati."
+  },
+  {
+   "tag": "h1",
+   "y": 5387,
+   "text": "Come strutturiamo ogni lezione."
+  },
+  {
+   "tag": "h1",
+   "y": 6334,
+   "text": "Come ordiniamo le lezioni."
+  },
+  {
+   "tag": "h1",
+   "y": 6937,
+   "text": "Cosa entra e cosa no."
+  },
+  {
+   "tag": "h1",
+   "y": 7274,
+   "text": "Le regole valgono ovunque."
+  },
+  {
+   "tag": "h3",
+   "y": 7725,
+   "text": "Niente storie inutili Niente cross-selling"
+  },
+  {
+   "tag": "h2",
+   "y": 8008,
+   "text": "Tono e stile"
+  },
+  {
+   "tag": "h2",
+   "y": 8211,
+   "text": "Titoli delle lezioni:"
+  },
+  {
+   "tag": "h2",
+   "y": 8639,
+   "text": "Engagement"
+  },
+  {
+   "tag": "h2",
+   "y": 9509,
+   "text": "Tier list dei modi per fare soldi online"
+  },
+  {
+   "tag": "h2",
+   "y": 9509,
+   "text": "Stai parlando davvero con Andrei Pascu?"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Passa al contenuto",
+   "href": "#page",
+   "y": 7529,
+   "x": -14272,
+   "w": 188,
+   "h": 53,
+   "bg": "#0062ff",
+   "color": "#fafafa",
+   "radius": "10px",
+   "border": "0px solid rgb(0, 98, 255)",
+   "shadow": "none",
+   "size": 14.272,
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 22.4px"
+  },
+  {
+   "text": "Claude Speedrun",
+   "href": "https://claude-speedrun.com",
+   "y": 7537,
+   "x": 320,
+   "w": 118,
+   "h": 32,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "1.6px 0px"
+  },
+  {
+   "text": "andrei pascu formazione",
+   "href": "/blog/tag/andrei+pascu+formazione",
+   "y": 9173,
+   "x": 446,
+   "w": 525,
+   "h": 38,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "corsi online",
+   "href": "/blog/tag/corsi+online",
+   "y": 9192,
+   "x": 446,
+   "w": 490,
+   "h": 38,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "formazione pratica",
+   "href": "/blog/tag/formazione+pratica",
+   "y": 9211,
+   "x": 446,
+   "w": 531,
+   "h": 38,
+   "bg": "transparent",
+   "color": "#fafafa",
+   "radius": "0px",
+   "border": "0px none rgb(250, 250, 250)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Indietro Tier list dei modi per fare soldi online",
+   "href": "/blog/tier-list-32-modi-per-fare-soldi-online",
+   "y": 9509,
+   "x": 173,
+   "w": 547,
+   "h": 77,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Avanti Stai parlando davvero con Andrei Pascu?",
+   "href": "/blog/stai-parlando-davvero-con-andrei-pascu",
+   "y": 9509,
+   "x": 720,
+   "w": 547,
+   "h": 77,
+   "bg": "transparent",
+   "color": "#1b1b1d",
+   "radius": "0px",
+   "border": "0px none rgb(27, 27, 29)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "La mia storia",
+   "href": "/story",
+   "y": 9821,
+   "x": 320,
+   "w": 85,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Recensioni",
+   "href": "/presto-disponibile",
+   "y": 9889,
+   "x": 320,
+   "w": 75,
+   "h": 29,
+   "bg": "transparent",
+   "color": "#a8a8a8",
+   "radius": "0px",
+   "border": "0px none rgb(168, 168, 168)",
+   "shadow": "none",
+   "size": 16,
+   "weight": "300",
+   "transform": "none",
+   "padding": "0px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 7522,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png?format=1500w",
+   "alt": "AP Formazione",
+   "y": 7522,
+   "x": 687,
+   "w": 67,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/40765c33-b082-45bc-874f-9ebe28bc45d6/BANNER-BLOG-ANDREI-AL-COMPUTER-APFORMAZIONE-CORSI-ONLINE.jpg",
+   "alt": "",
+   "y": 750,
+   "x": 446,
+   "w": 547,
+   "h": 344
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/675857c8-97c3-4b74-821b-00ca0a387f07/1.png",
+   "alt": "Tre opzioni a confronto: \"Imparare\" e \"Formarsi\" con bordo rosso e testo barrato, \"Fare\" con bordo verde — l'unico approccio valido secondo il metodo Andrei Pascu.",
+   "y": 1179,
+   "x": 446,
+   "w": 547,
+   "h": 143
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/976eb6b6-0cac-4ef3-a11a-4549865b2271/2.png",
+   "alt": "Freccia da \"Problema reale\" a \"Soluzione pratica\": schema visivo del principio base della formazione orientata all'azione.",
+   "y": 1609,
+   "x": 446,
+   "w": 547,
+   "h": 143
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/782e2a58-7117-4cca-bea0-bdd0c074f402/3.png",
+   "alt": "Diagramma verticale: \"Principio fondamentale\" (bordo viola) con freccia verso \"Tecnica specifica\" (bordo verde) — la struttura corretta per insegnare.",
+   "y": 2068,
+   "x": 446,
+   "w": 547,
+   "h": 242
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/6b68a9ae-4dca-4967-a674-150a171d96bf/4.png",
+   "alt": "Diagramma verticale: \"Principio fondamentale\" (bordo viola) con freccia verso \"Tecnica specifica\" (bordo verde) — la struttura corretta per insegnare.",
+   "y": 2568,
+   "x": 446,
+   "w": 547,
+   "h": 308
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/2c8e585a-6cee-4daf-8421-5e7a0bcb7a66/5.png",
+   "alt": "Freccia da \"cosa ricordi\" (testo barrato, box grigio) a \"Cosa fai ✅\" (box verde) — il vero obiettivo di una lezione efficace.",
+   "y": 3163,
+   "x": 446,
+   "w": 547,
+   "h": 143
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/4b9c5dfb-8650-42fc-9177-e3d710548ff7/6.png",
+   "alt": "Due percorsi da A a B: quello superiore con linea tratteggiata e scritta \"Si è sempre fatto così\", quello inferiore con linea verde dritta e scritta \"Funziona meglio\".",
+   "y": 3722,
+   "x": 446,
+   "w": 547,
+   "h": 242
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/97896b42-dd02-443a-bee0-886f6901c4b0/7.png",
+   "alt": "Equazione visiva: \"1 lezione\" (box azzurro) uguale \"1 risultato\" (box verde) — il principio di densità e focalizzazione della formazione.",
+   "y": 4223,
+   "x": 446,
+   "w": 547,
+   "h": 143
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/aa5d5ea9-cbce-46e9-8a99-fb89be48c476/8.png",
+   "alt": "Confronto tra approccio sbagliato (Step 1 → Step 1 → … → Risultato lontano, box grigi) e approccio corretto (Risultato → Step 1 → Step 2 → Step 3, box verdi) — la logica outcome-first.",
+   "y": 4653,
+   "x": 446,
+   "w": 547,
+   "h": 242
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/1287a252-632d-45b3-bd68-231ace7ecace/9.png",
+   "alt": "Barre di completamento a confronto: \"Corso da 80 ore\" al 12% (rosso), \"Corso denso e breve\" al 94% (verde) — dati visivi sul completamento reale dei corsi.",
+   "y": 5211,
+   "x": 446,
+   "w": 547,
+   "h": 143
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0fb482af-2673-4136-a4b1-2fa6af358f76/10.png",
+   "alt": "Diagramma verticale con la struttura di una lezione: Problema concreto → Perché conta → Soluzione → Concetto centrale → Applicazione pratica → Errori comuni → Action item finale.",
+   "y": 5616,
+   "x": 446,
+   "w": 547,
+   "h": 684
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/a75d4e84-6f67-42ca-a133-5df512aa8791/11.png",
+   "alt": "Grafico a barre con complessità crescente: Fondamenta, Lezione 2, Lezione 3, Lezione 4, Lezione 5, Recap — la progressione didattica del corso.",
+   "y": 6660,
+   "x": 446,
+   "w": 547,
+   "h": 242
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/80122a34-0784-41ba-bb48-03208123bfb7/12.png",
+   "alt": "Confronto titoli: ❌ \"Ottimizzazione funnel\" (box rosso) vs ✅ \"Perché i tuoi funnel non convertono\" (box verde) — esempio di titolo sbagliato contro titolo orientato al problema.",
+   "y": 8359,
+   "x": 446,
+   "w": 547,
+   "h": 185
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/0eddfaac-1579-4eb2-9666-3118b283966d/Group+1+PNG+to+WebP+Converter.webp",
+   "alt": "",
+   "y": 9646,
+   "x": 631,
+   "w": 412,
+   "h": 413
+  },
+  {
+   "tag": "img",
+   "src": "https://images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/545dcf52-be50-4d47-b8ed-6fe87962c87a/full-logo-apsales-white.png",
+   "alt": "",
+   "y": 9704,
+   "x": 320,
+   "w": 200,
+   "h": 38
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9756,
+   "x": 319,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9756,
+   "x": 351,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9756,
+   "x": 383,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9756,
+   "x": 415,
+   "w": 40,
+   "h": 40
+  }
+ ],
+ "blocchi_testo": 119,
+ "meta": {
+  "description": "Andrei Pascu costruisce i suoi corsi seguendo regole precise: problema prima della soluzione, una lezione un risultato, corsi brevi e completati. Chi cerca formazione affidabile trova qui il metodo concreto dietro i suoi contenuti — dalla struttura delle lezioni alla selezione degli argomenti, fino ai principi che rendono la sua formazione diversa dalla media.",
+  "og_title": "Andrei Pascu Corsi: come funziona la sua formazione — AP Formazione",
+  "og_image": "http://static1.squarespace.com/static/602126db7a4e4c01fd9babb6/60212c5d9d65656e20a3e029/69ee3abb03fff270ee874d29/1786624218728/Untitled-2.jpg?format=1500w",
+  "canonical": "https://www.andrei-copy.com/blog/le-regole-con-cui-costruiamo-i-nostri-corsi",
+  "jsonld": [
+   "{\"url\":\"https://www.andrei-copy.com\",\"name\":\"AP Formazione\",\"description\":\"\",\"image\":\"//images.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c0b5d09c-d49d-4166-b726-867867e9a915/Asset+4-8+2.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
+   "{\"name\":\"Andrei Pascu Corsi: come funziona la sua formazione \\u2014 AP Formazione\",\"url\":\"https://www.andrei-copy.com/blog/le-regole-con-cui-costruiamo-i-nostri-corsi\",\"datePublished\":\"2026-04-26T18:18:03+0200\",\"dateModified\":\"2026-08-13T14:30:18+0200\",\"headline\":\"Andrei Pascu Corsi: le regole con cui costruiamo formazione ad alto standard\",\"author\":\"Andrei Pascu\",\"publisher\":{\"name\":\"AP Formazion"
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 9465,
+   "h": 163,
+   "prof": 3,
+   "tag": "section",
+   "id": "itemPagination",
+   "classi": "item-pagination.item-pagination--prev-next",
+   "bg": "#1b1b1d",
+   "bg_img": false,
+   "heading": "Tier list dei modi per fare soldi online",
+   "headings": [
+    "Tier list dei modi per fare soldi online",
+    "Stai parlando davvero con Andrei Pascu?"
+   ],
+   "blocchi_testo": 5,
+   "parole": 16,
+   "densita": 10,
+   "media": 2,
+   "cta": 2,
+   "firma": "section|item-pagination.item-pagination--prev-next|2|M|C|1",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-tier-list-dei-modi-per-fare-soldi.png"
+  },
+  {
+   "i": 2,
+   "y": 9629,
+   "h": 705,
+   "prof": 2,
+   "tag": "footer",
+   "id": "footer-sections",
+   "classi": "sections",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 24,
+   "parole": 99,
+   "densita": 14,
+   "media": 7,
+   "cta": 2,
+   "firma": "footer|sections|1|M|C|4",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-footer.png"
+  }
+ ],
+ "sezioni_totali": 2,
+ "sezioni_distinte": 2,
+ "src": [],
+ "segmentazione": "ok"
+}
