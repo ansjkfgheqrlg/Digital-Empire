@@ -1,3 +1,23 @@
+## 🟣 2026-09-10 — ⚠️ ATTIVAZIONE FORZE (ADR-015): la formazione Andrei Pascu entra DENTRO skill, agenti e workflow
+
+**Ordine di Max, testuale:** *"devi migliorare workflow skill e agenti esistenti aggiungendo regole
+principi formazione e conoscenza, poi creare nuove skill agenti workflows o ecosistemi o anche
+infrastrutture se servono"* — tutto sulla base dello studio Andrei Pascu (video, siti, analisi).
+
+**Forze:**
+- 1× **Doom Bot** (opus) — innesto dei candidati residui mai applicati (AP-008/012/017/019/020 e la
+  patch A di AP-006) dentro le skill vere, con fonte e data, idempotente.
+- 1× **Doom Bot** (opus) — il metodo dei suoi siti dentro la **Fabbrica Siti**: delta reali, le cinque
+  cose da rubare, le tre da fare meglio di lui. Puo' creare **al massimo 2 pezzi nuovi**, e ogni pezzo
+  deve nominare chi lo invoca (regola del piano: un pezzo che nessuno consuma e' ULTIMO METRO).
+- 1× **Sentinella** (sonnet) — sistema di copy e sistema visivo dentro le skill di copy e design, e
+  il corpus Andrei Pascu dato in possesso all'agente `conoscenza-empire`.
+
+**Vincolo dato a tutte e tre:** l'ecosistema LANCI non si tocca (ci lavora Gael adesso); i 13
+candidati gia' applicati non si ritoccano; nessun numero senza fonte.
+
+---
+
 ## 🟣 2026-09-10 — Critica 2 chiusa: 15 rilievi, 4 FATALI — EMP-MCC4 riprende con V3 — CP-20260910-YFE9
 
 **2 sentinelle fable rientrate** (dichiarazione sopra, ora chiusa). V2 **non va invertita**: le
