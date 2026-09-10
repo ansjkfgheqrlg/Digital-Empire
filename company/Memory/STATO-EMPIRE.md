@@ -1,3 +1,42 @@
+## 🔨 2026-09-10 — `EMP-V6DE`: MANDATO CORRETTO DA MAX — uno studio migliora la fabbrica, non deposita regole — CP-20260910-EVX2
+
+**Ordine di Max:** *"non solo delle regole, ma proprio delle vere implementazioni... anche fare
+agenti se servono, skill, flussi, funzioni, script, Python, tutto."* La misura gli ha dato ragione
+prima che rispondessi: **69 regole prodotte dal corso AI TUBE PRO, 64 su file `.md`, 5 sul codice,
+zero agenti nuovi, zero skill, zero script, zero flussi ridisegnati.**
+
+**Causa strutturale rimossa:** `studi/aitubepro/regole/schema.py` ammetteva solo
+`modifica|nuovo|conferma|scarta` su un file esistente — non c'era la casella per «qui manca un
+pezzo di fabbrica». Ora ammette i tipi `agente|skill|flusso|script|funzione` e le azioni
+`costruisci|ridisegna`, e pretende che un tipo costruttivo dichiari quale file NASCE.
+Le 69 regole vecchie restano valide (69/69 a norma).
+
+**Ripasso all'indietro** delle **23 lezioni gia' chiuse** (21 A4 + 2 A6), 3 sentinelle in
+parallelo sul materiale testuale gia' su disco — **nessun video riguardato**: **19 regole
+costruttive**, registro da 69 a **88, 0 non a norma**. Ripartizione: 3 agenti, 2 skill, 6 script,
+5 funzioni, 3 flussi (binario A 5, binario B 14).
+
+**5 pezzi di binario A costruiti e agganciati** (nessuno orfano): `regolatore-fatti.md`
+(l'organo che mancava sulla verita' dei fatti), `compliance-gate.md` (legge lo script prima della
+generazione), `regolatore-capacita-fliki.md`, skill `scan-strumenti-ai` e `fliki-capability-audit`.
+
+**Debito sanato fuori dallo studio — [ADR-029](decisions/ADR-029-doppio-binario-studio-fabbrica.md):**
+la legge del doppio binario («il motore si tocca solo a gate di categoria») **non aveva nessun
+ADR**: era attribuita ad ADR-024, che invece e' *Canone v2, primo strato* (Fabbrica Siti). Il piano
+aveva promesso un ADR mai scritto e quel numero e' stato poi occupato da altro. 10 citazioni
+corrette. **Legge nuova: chi scrive un piano che prevede una decisione la conia nello stesso
+turno**, mai un numero non ancora esistente.
+
+**⚠️ Difetto piu' grave trovato, ancora aperto:** `apex7_orchestrator.py:1515` scrive
+`"subtitles": True` **incondizionatamente** e `seo_score.py:30` gli assegna **15 punti su 100**,
+per sottotitoli nativi che **non abbiamo mai creato** (l'uploader non tocca nemmeno quel tab).
+Il gate SEO si auto-approva su un sesto del punteggio. Regole `A6-RC-01`/`A6-RC-02`, binario B.
+
+**RIPRESA DA:** le 14 regole di binario B al gate A6, poi le 8 lezioni A6 rimaste — che partono
+gia' col contratto nuovo, senza debito da ripassare.
+
+---
+
 ## 🟢 2026-09-10 notte — ✅ `EMP-APPLAN1` CHIUSO: piano implementazione Andrei Pascu consegnato — CP-20260910-K6C2
 
 Il piano è finito, criticato tre volte come voleva Max: **P0** 2 Doom Bot → **P1** 3 Sentinelle

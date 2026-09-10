@@ -50,6 +50,36 @@ materiale c'e' tutto. E' il primo lavoro alla ripresa.
 
 ---
 
+
+## 2-bis. AGGIORNAMENTO 2026-09-10 — ripasso costruttivo CHIUSO (CP-20260910-EVX2)
+
+**Il debito del mandato vecchio e' saldato.** Le 23 lezioni gia' chiuse (21 A4 + 2 A6) sono state
+ripassate all'indietro con le quattro domande nuove, sul materiale testuale gia' su disco —
+nessun video riguardato, 3 sentinelle in parallelo.
+
+- **19 regole costruttive** a registro in `regole/*/RIPASSO_COSTRUTTIVO.py` (file separati dalle
+  regole per lezione, di proposito: non sono cio' che la lezione diede la prima volta, sono cio'
+  che avrebbe dato se le avessimo fatto la domanda giusta — mescolarle cancellerebbe la prova).
+- **Registro da 69 a 88 regole, 0 non a norma.** Binario A 5, binario B 14.
+- **I 5 pezzi di binario A sono costruiti**: `regolatore-fatti.md`, `compliance-gate.md`,
+  `regolatore-capacita-fliki.md`, skill `scan-strumenti-ai` e `fliki-capability-audit`. Agganciati
+  in `ORGANIGRAMMA.md` e `script-writer.md`.
+- **[ADR-029](../decisions/ADR-029-doppio-binario-studio-fabbrica.md)** scritto: la legge del
+  doppio binario non aveva ADR, era attribuita ad ADR-024 (che e' Fabbrica Siti). 10 citazioni
+  corrette in blocco.
+
+**Le 12 lezioni BRONZO ri-giudicate hanno prodotto 5 script e 1 agente** — erano archiviate come
+«non si trasferisce nulla». Una sola, L07, e' rimasta a vuoto, dichiarata onestamente.
+
+**Trappola nuova, da non ripetere:** due sentinelle sono cadute di fila sullo stesso compito (le
+due skill) perche' invitavano a navigare cataloghi esterni e si sono appese provando a ESEGUIRE
+il lavoro invece di scriverne le istruzioni. **Un compito che tocca fonti esterne non si delega,
+se il prodotto atteso e' un documento.**
+
+**RIPRENDI DA QUI:** le 14 regole di binario B al gate A6 (le tre piu' gravi: `A6-RC-02` i 15
+punti SEO falsi, `A4-RC-01`+`A4-RC-02` la verifica dei fatti, `A4-RC-11` il livello audio), poi
+le 8 lezioni A6 rimaste — che partono gia' col contratto nuovo, senza debito.
+
 ## 2. DOVE SIAMO — cosa è FATTO davvero
 
 **Passo zero: CHIUSO.** La catena regge su una lezione vera, quindi regge su 167.
