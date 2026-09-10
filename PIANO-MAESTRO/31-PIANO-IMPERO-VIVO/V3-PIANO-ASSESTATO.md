@@ -294,9 +294,10 @@ nuovo, ma **numeri mai nati esibiti come misure**.
    per nome in coda all'output. Un comando che sa dire «non lo so» è l'unica versione compatibile
    con L7 (*«si scrive ciò che si è misurato»*).
 
-**Gate di §7:** `python -m empire vivo --json | jq '.non_valutati | length'` → 0 dopo che
-l'Appendice B è stata prodotta e integrata nel registro; fino ad allora, il numero compare e non
-mente sommandosi al numeratore.
+**Gate di §7 (corretto dopo l'esecuzione dell'Appendice B — vedi sotto):** non
+`non_valutati=0` (irraggiungibile: 6 NON VALUTATO su 120 esiti sono definizioni mancanti, non
+misure omesse) ma **`ogni NON VALUTATO ha una riga scritta che dice perché`** — soddisfatta oggi
+6/6 dall'Appendice B stessa.
 
 ---
 
@@ -466,12 +467,52 @@ vendiamo, a chi»** — non più il criterio «0 byte» aggirabile da una riga d
 
 ---
 
-# APPENDICE B — LE OTTO CONDIZIONI SUI 15 ECOSISTEMI (chiusura di §7)
+# APPENDICE B — LE OTTO CONDIZIONI SUI 15 ECOSISTEMI (chiusura di §7) — ✅ FATTA
 
-**🔄 In corso** — sentinella indipendente (fable) in background, scrittura incrementale in
+**Completata il 2026-09-10** (sentinella opus, 507 righe) —
 [`_critica-v2/APPENDICE-B-7-CONDIZIONI-15-ECOSISTEMI.md`](_critica-v2/APPENDICE-B-7-CONDIZIONI-15-ECOSISTEMI.md).
-Quando rientra, il risultato va integrato in `empire vivo --json` (E0.5) prima che quel comando
-vada in costruzione — è la lista che decide quali nodi partono `PASSA`/`NON PASSA`/`NON VALUTATO`.
+
+**Il risultato, misurato: 0 ecosistemi su 15 passano tutte e otto le condizioni.** Su 120 esiti
+(15×8): **28 PASSA · 86 NON PASSA · 6 NON VALUTATO**. I due nodi che il censimento dava per
+"vivi" (11-APEX-7-CORE, 12-STREAM-S7-BOT) lo sono davvero su V-a..V-d (4/4), ma **nessuno dei due
+supera COLLEGATO**: 11 fa 1/4, 12 fa **0/4**. Il "13% vivo" diventa **0% chiuso** quando si
+contano anche i fili — è la misura esatta di L3, dichiarata da V2 §3 ma mai verificata riga per
+riga fino ad ora.
+
+**Cinque cose che né V2 né le prime 13 correzioni di V3 sapevano — integrate qui come sesta e
+settima area di correzione:**
+
+1. **Il gate di §1/§7 (`trace stato --origine hook`) non è eseguibile oggi**: `empire` ha 7
+   sottocomandi, nessuno è `trace`; il campo `origine` non esiste ancora nella dataclass
+   `Traccia`. Non è pigrizia, è che lo strumento di misura stesso manca — **E0.7/E4-F3 deve
+   costruire campo e comando PRIMA che §1/§7 abbiano un gate reale**, non in parallelo.
+2. **`13-ARENA-APEX` non è "a metà", è rotta**: `orchestrator.py --help` → **exit 1**,
+   `UnicodeEncodeError` cp1252 (misurato, non dedotto dal censimento). `11-APEX-7-CORE` ha già la
+   riga che risolve lo stesso difetto — è un fix di un file, non uno scaglione.
+3. **C-a passa 10 volte su 15 per un motivo che non regge**: lo stesso template JSON con
+   `"payload": {}` vuoto, copiato in ogni `BACKBONE.md`. Se V4 lo lascia così, `empire vivo
+   --json` mostrerà 10 nodi "collegati in ingresso" che non sanno cosa ricevono — un C-a vero
+   richiede il payload compilato, non solo il campo presente.
+4. **`ultimo_metro.py` ha reso C-d misurabile invece che opinabile per 2 ecosistemi**: NON PASSA
+   (non NON VALUTATO) per `02-INFO-BUSINESS` (7 libri pronti, `libri_pubblicati/` vuota) e
+   `05-MULTI-BUSINESS` (video-01/02/03 fra i pezzi mai usciti).
+5. **`15-LANCI`, nata da 4 giorni e fuori dal censimento originale, fa meglio di APEX-7 sui
+   collegamenti** (5/8, 2/4 su COLLEGATO): il suo schema — artefatto tipizzato, 13 JSON Schema,
+   verbale automatico a ogni transizione — è codice funzionante oggi, ed è il modello da
+   generalizzare per F1 (V2 §9), non solo un ecosistema da misurare come gli altri 14.
+6. **Il perimetro "15 ecosistemi" è scaduto**: sul disco ce ne sono **16**, e il numero **08 è
+   occupato due volte** — violazione REGOLA PUNTATORI (`CLAUDE.md`). Un comando che indirizza i
+   nodi per numero (`empire vivo --json`, per costruzione) non può nascere prima che
+   `REGISTRO-NUMERI.md` sia sanato, o produce due righe con la stessa chiave.
+7. **6 dei 6 NON VALUTATO sono C-d** (5) **o V-b** (1), non per misura mancata ma per definizione
+   mancante (*"un consumatore interno conta come reale?"*) — il gate di §7 (*"non_valutati=0"*)
+   **non è raggiungibile da nessuna ricognizione**: si riscrive come *«ogni NON VALUTATO ha una
+   riga che dice perché»* (qui soddisfatta 6/6). Corretto in §7 sopra.
+
+**Limite dichiarato (L7):** nessun test è stato rilanciato in questa ricognizione (sola lettura
+pura); i due PASSA su V-d (11, 12) poggiano su verdi datati e citati (ADR-012 26/08, `STATO-
+RIPRESA.md` 03/08), non su un'esecuzione di oggi — se V4 vuole quel numero a prova di errore,
+servono due `pytest` veri, gli unici due comandi che questa ricognizione non poteva permettersi.
 
 # APPENDICE C — LE DESTINAZIONI MANCANTI NELLE 174 SCHEDE (chiusura di §9.2) — ✅ FATTA
 
@@ -524,7 +565,7 @@ istanze vive dei contratti reali oggi). **HC-v2 in V4 nasce a 13 campi**, non 11
 | Tappa | Stato |
 |---|---|
 | Le 13 correzioni scritte | ✅ |
-| Appendice B (8×15 condizioni) | 🔄 sentinella in corso (2° tentativo, fable era rate-limited) |
+| Appendice B (8×15 condizioni) | ✅ 0/15 ecosistemi passano tutto; 28/86/6 su 120 esiti; 7 correzioni nuove integrate |
 | Appendice C (conteggio destinazioni) | ✅ 235/391 senza destinazione, E2 aggiornata |
 | Appendice D (mappa 10 schemi) | ✅ HC-v2 serve 13 campi, non 11 (`due_at` + `costi`) |
 | **Critica 3** (opzionale — si salta se V3 regge) | ⬜ |

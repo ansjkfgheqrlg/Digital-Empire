@@ -1,3 +1,48 @@
+## 🏭 2026-09-10 — I TRE PEZZI MANCANTI DELLA FABBRICA COSTRUITI — CP-20260910-ZYPW
+
+Seguito di CP-20260910-Q6CH. **10 script nuovi in tutto oggi, 130 test verdi**, 2 sole modifiche a
+file esistenti (entrambe dopo il gate A6, suite riprovata dopo ognuna: 16 test OK).
+
+**(a) `pubblica_video.py` — il secondo tempo della pubblicazione.** La fabbrica non aveva NESSUN
+modo di portare un video da Privato a Pubblico dopo l'approvazione di Max. **31 pezzi finiti mai
+usciti, il piu' vecchio da 142 giorni.** Costruito senza toccare l'uploader. Tre protezioni: un id
+per volta (mai batch), `--prova` come default assoluto (arriva alla schermata, non clicca), log in
+append. 22/22 test. ⚠️ **Il selettore PUBLIC e' dedotto per analogia, mai cliccato dal vivo** — si
+calibra con un `--prova` su un video vero, zero rischio.
+
+**(b) `youtube_studio_reader.py` — un file, tre buchi.** CTR/retention sempre `null`, motore di
+apprendimento cieco, zero euro YouTube in Tesoreria: tutti e tre perche' non leggevamo mai Studio,
+pur avendo il login persistente gia' funzionante. 30/30 test, con fixture prese dal testo REALE
+gia' catturato in `memory/_report_analytics_overview.txt` il 03-09 e mai usato. Retention resta
+`null` col motivo (e' un SVG) e rimanda a `youtube_analytics_client.py` via OAuth.
+
+**(c) Il brief copertina.** `brief-miniatura.json` — testo gia' spezzato riga per riga + copertina
+reale del video sorgente gia' scaricata — esisteva da luglio e lo leggeva **solo il generatore
+automatico spento**. Ora `consegna_a_max()` lo usa: Max riceve le righe pronte e il percorso
+dell'immagine di riferimento. Se il file manca, degrada esattamente al brief di prima. 6/6 test.
+`thumbnail_analyzer.py` NON agganciato di proposito: la copertina resta di Max, e' solo un
+controllo su richiesta.
+
+**Lezione di metodo:** 8 delle 14 regole di binario B chiedevano **file nuovi**, non modifiche.
+Un file che nessuno importa non puo' rompere niente — costruirli prima del gate lascia al gate solo
+l'aggancio. Distinzione da scrivere nel contratto per ogni studio futuro.
+
+**RIPRESA DA:** il dry-run reale di `pubblica_video.py` su uno dei 31 pezzi fermi (serve il profilo
+Chrome loggato + un id), poi il run di `youtube_studio_reader.py` per calibrare gli URL, poi la
+categoria `Intelligenza Artificiale` (12 lezioni, mai iniziata).
+
+---
+
+## ✅ 2026-09-10 — V3-PIANO-ASSESTATO CHIUSA per intero: 0/15 ecosistemi passano le 8 condizioni — CP-20260910-RYHK
+
+**Le 3 appendici sono chiuse.** Appendice B (opus, 507 righe): **0 ecosistemi su 15 passano
+tutte le 8 condizioni** — 28 PASSA/86 NON PASSA/6 NON VALUTATO su 120 esiti misurati. 7
+correzioni nuove integrate in V3: il comando `trace --origine hook` non esiste ancora (va
+costruito prima del gate, non insieme), `13-ARENA-APEX` è rotta (non "a metà"), il perimetro
+"15 ecosistemi" è scaduto (sono 16, il numero 08 duplicato — REGOLA PUNTATORI), `15-LANCI`
+batte APEX-7 sui collegamenti ed è il modello da generalizzare. Nessun nuovo FATALE: **Critica 3
+si salta, prossimo passo è V4** (il piano esecutivo).
+
 ## 🟣 2026-09-10 notte — ⚠️ ATTIVAZIONE FORZE (ADR-015): studio dei VSL di Andrei Pascu → agente «DIO DELL'EDITING» (`EMP-DIOEDIT`)
 
 **Ordine di Max:** studiare nel minimo dettaglio tutti i VSL di Andrei — priorità **Armageddon

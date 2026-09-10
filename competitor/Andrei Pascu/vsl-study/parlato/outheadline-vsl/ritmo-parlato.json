@@ -1,0 +1,403 @@
+{
+ "slug": "outheadline-vsl",
+ "fonte": "sorgenti/outheadline-vsl/video.mp4",
+ "generato": "2026-09-10 23:42",
+ "strumento_trascrizione": "faster-whisper small, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "durata_video_s": 46.25,
+ "densita": {
+  "segmenti_vocali": 11,
+  "secondi_di_parlato": 43.88,
+  "percentuale_di_parlato": 94.9,
+  "segmenti_al_minuto": 14.27,
+  "durata_media_segmento_s": 3.99
+ },
+ "parole_totali": 126,
+ "parole_al_minuto_medie": 163.5,
+ "parole_al_minuto_sul_solo_parlato": 172.3,
+ "wpm_per_minuto": [
+  {
+   "minuto": 0,
+   "da": 0.0,
+   "a": 46.25,
+   "parole": 126,
+   "parole_al_minuto": 163.5,
+   "secondi_di_voce": 40.42,
+   "densita_voce_pct": 87.4
+  }
+ ],
+ "pause_sopra_0_5s": 2,
+ "pause_dal_parlato": [
+  {
+   "inizio": 1.88,
+   "fine": 2.06,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "vendita,",
+   "prima_di": "copy,"
+  },
+  {
+   "inizio": 2.36,
+   "fine": 2.56,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "copy,",
+   "prima_di": "design,"
+  },
+  {
+   "inizio": 3.0,
+   "fine": 3.22,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "design,",
+   "prima_di": "eccetera,"
+  },
+  {
+   "inizio": 7.06,
+   "fine": 7.16,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "prodotto,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 7.9,
+   "fine": 9.01,
+   "durata": 1.11,
+   "tipo": "interna",
+   "dopo": "differenzi?",
+   "prima_di": "Probabilmente"
+  },
+  {
+   "inizio": 9.79,
+   "fine": 10.09,
+   "durata": 0.3,
+   "tipo": "interna",
+   "dopo": "no.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 10.49,
+   "fine": 10.71,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "no,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 12.51,
+   "fine": 12.77,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "design,",
+   "prima_di": "sto"
+  },
+  {
+   "inizio": 17.05,
+   "fine": 17.41,
+   "durata": 0.36,
+   "tipo": "interna",
+   "dopo": "ok,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 18.93,
+   "fine": 19.09,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "eccezionali,",
+   "prima_di": "ok."
+  },
+  {
+   "inizio": 19.43,
+   "fine": 19.71,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "ok.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 28.19,
+   "fine": 28.33,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "'attenzione,",
+   "prima_di": "subito,"
+  },
+  {
+   "inizio": 28.85,
+   "fine": 28.93,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "subito,",
+   "prima_di": "sempre."
+  },
+  {
+   "inizio": 34.07,
+   "fine": 34.37,
+   "durata": 0.3,
+   "tipo": "interna",
+   "dopo": "ok.",
+   "prima_di": "Ok,"
+  },
+  {
+   "inizio": 34.77,
+   "fine": 35.09,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "Ok,",
+   "prima_di": "nel"
+  },
+  {
+   "inizio": 35.87,
+   "fine": 36.43,
+   "durata": 0.56,
+   "tipo": "interna",
+   "dopo": "2024,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 36.99,
+   "fine": 37.25,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "basta.",
+   "prima_di": "Ho"
+  },
+  {
+   "inizio": 42.81,
+   "fine": 42.99,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "copywriter.",
+   "prima_di": "Reggi"
+  },
+  {
+   "inizio": 44.21,
+   "fine": 44.47,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "sotto,",
+   "prima_di": "potresti"
+  },
+  {
+   "inizio": 46.09,
+   "fine": 46.25,
+   "durata": 0.16,
+   "tipo": "coda"
+  }
+ ],
+ "volume_medio_dBFS": -19.0,
+ "volume_massimo_dBFS": -0.5,
+ "silenzi_-30dB": [],
+ "silenzi_-40dB": [],
+ "soglia_relativa_dB": -37,
+ "silenzi_soglia_relativa": [],
+ "nota_silenzi": "silencedetect di ffmpeg, durata minima 0,30 s, tre soglie: due assolute (-30 e -40 dBFS) e una relativa a questo audio (volume medio meno 18 dB). Sotto una base musicale continua le soglie assolute possono restituire zero silenzi: e' un dato, non un errore, e per questo c'e' la soglia relativa.",
+ "loudness": {
+  "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
+  "campioni": 462,
+  "mediana_segmenti_LUFS_M": -19.8,
+  "picco_momentaneo_LUFS_M": -12.3,
+  "picco_a_secondo": 9.3,
+  "sopra_mediana_3LU": [
+   {
+    "i": 2,
+    "inizio": 9.01,
+    "fine": 9.79,
+    "LUFS_M": -14.2,
+    "delta_LU": 5.6,
+    "testo": "Probabilmente no."
+   }
+  ],
+  "profilo_per_secondo": [
+   {
+    "t": 0.0,
+    "M": -70.0
+   },
+   {
+    "t": 1.0,
+    "M": -18.4
+   },
+   {
+    "t": 2.0,
+    "M": -20.9
+   },
+   {
+    "t": 3.0,
+    "M": -20.0
+   },
+   {
+    "t": 4.0,
+    "M": -15.2
+   },
+   {
+    "t": 5.0,
+    "M": -17.6
+   },
+   {
+    "t": 6.0,
+    "M": -16.8
+   },
+   {
+    "t": 7.0,
+    "M": -19.0
+   },
+   {
+    "t": 8.0,
+    "M": -25.0
+   },
+   {
+    "t": 9.0,
+    "M": -18.4
+   },
+   {
+    "t": 10.0,
+    "M": -21.2
+   },
+   {
+    "t": 11.0,
+    "M": -20.8
+   },
+   {
+    "t": 12.0,
+    "M": -21.1
+   },
+   {
+    "t": 13.0,
+    "M": -21.4
+   },
+   {
+    "t": 14.0,
+    "M": -21.0
+   },
+   {
+    "t": 15.0,
+    "M": -19.5
+   },
+   {
+    "t": 16.0,
+    "M": -18.8
+   },
+   {
+    "t": 17.0,
+    "M": -20.1
+   },
+   {
+    "t": 18.0,
+    "M": -19.6
+   },
+   {
+    "t": 19.0,
+    "M": -20.3
+   },
+   {
+    "t": 20.0,
+    "M": -18.1
+   },
+   {
+    "t": 21.0,
+    "M": -18.5
+   },
+   {
+    "t": 22.0,
+    "M": -20.6
+   },
+   {
+    "t": 23.0,
+    "M": -18.6
+   },
+   {
+    "t": 24.0,
+    "M": -17.2
+   },
+   {
+    "t": 25.0,
+    "M": -21.6
+   },
+   {
+    "t": 26.0,
+    "M": -16.6
+   },
+   {
+    "t": 27.0,
+    "M": -22.1
+   },
+   {
+    "t": 28.0,
+    "M": -22.6
+   },
+   {
+    "t": 29.0,
+    "M": -17.5
+   },
+   {
+    "t": 30.0,
+    "M": -18.2
+   },
+   {
+    "t": 31.0,
+    "M": -17.6
+   },
+   {
+    "t": 32.0,
+    "M": -16.9
+   },
+   {
+    "t": 33.0,
+    "M": -18.6
+   },
+   {
+    "t": 34.0,
+    "M": -19.7
+   },
+   {
+    "t": 35.0,
+    "M": -19.3
+   },
+   {
+    "t": 36.0,
+    "M": -21.9
+   },
+   {
+    "t": 37.0,
+    "M": -20.6
+   },
+   {
+    "t": 38.0,
+    "M": -19.8
+   },
+   {
+    "t": 39.0,
+    "M": -20.4
+   },
+   {
+    "t": 40.0,
+    "M": -20.5
+   },
+   {
+    "t": 41.0,
+    "M": -20.3
+   },
+   {
+    "t": 42.0,
+    "M": -20.0
+   },
+   {
+    "t": 43.0,
+    "M": -20.9
+   },
+   {
+    "t": 44.0,
+    "M": -19.6
+   },
+   {
+    "t": 45.0,
+    "M": -20.3
+   },
+   {
+    "t": 46.0,
+    "M": -23.5
+   }
+  ]
+ }
+}
