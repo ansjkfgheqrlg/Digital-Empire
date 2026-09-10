@@ -28,7 +28,7 @@ Nato il 2026-09-04 perché due numeri erano già collisi senza che nessuno se ne
 | 12 | STREAM-S7-BOT | (esiste anche come 08 — stessa nota) |
 | 13 | ARENA-APEX | |
 | 14 | TESORERIA | |
-| 15 | LANCI | ✅ ADR-025 firmato da Max (08/09) — Gael puo' creare `15-LANCI/` e partire con S0 |
+| 15 | LANCI | ✅ **NATO il 2026-09-10** — cartella creata con i sei pilastri Art.8, registrata in `empire/conform.py` (dove mancava anche il 14). Scaglione **S0 aperto**: la catena dell'incasso non e' chiusa, e finche' non lo e' non si costruisce altro |
 
 ## Riservati (piano approvato, cartella non ancora creata)
 

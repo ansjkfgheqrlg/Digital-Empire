@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "manuale-claude-code",
+  "modalita": "retroattiva",
+  "file_prodotto": {
+    "percorso": "Formazzione/Claude code/MANUALE COMPLETO DI CLAUDE CODE PER IL BUSINESS.pdf",
+    "byte": 2931882,
+    "formato": "application/pdf",
+    "pagine": 203
+  },
+  "bandiere_rosse": [
+    {
+      "id": "RF1-nessun-output-pratico",
+      "presente": false,
+      "come_verificata": "Contati sul sorgente markdown (435.918 byte, 9.206 righe, 55.680 parole): 257 titoli, 194 blocchi indentati, 37 riquadri RISULTATO/ESEMPIO/OUTPUT, 31 prompt dichiarati come pronti da copiare. Comando: conteggio con espressioni regolari su 'MANUALE COMPLETO DI CLAUDE CODE PER IL BUSINESS.md' il 2026-09-10.",
+      "dettaglio": "Il libro produce cose: non e' teoria pura."
+    },
+    {
+      "id": "RF2-template-senza-esempio",
+      "presente": false,
+      "come_verificata": "Stesso conteggio: 31 prompt sono accompagnati da 37 riquadri di risultato. Rapporto oltre 1:1, quindi ogni modello proposto mostra almeno un esito.",
+      "dettaglio": "Nota di forma, non bloccante: zero blocchi di codice recintati, tutto e' indentato a quattro spazi. Su PDF regge; se un giorno il testo va sul web, i blocchi vanno recintati."
+    },
+    {
+      "id": "RF3-promessa-non-mantenuta",
+      "presente": true,
+      "come_verificata": "Non verificabile: la promessa di vendita non esiste ancora in forma scritta e approvata. ART-CPY non e' stato prodotto (e' lo scaglione S3) e la landing attuale promette 'il framework gratuito', non il manuale a pagamento. Confrontato il 2026-09-10 il titolo della landing in 'Landing Page/ccm-empire/src/app/page.tsx' con il contenuto del manuale.",
+      "dettaglio": "Non e' un difetto del prodotto: e' che non c'e' ancora niente contro cui misurarlo. Si chiude quando ART-CPY esiste. Resta presente perche' lo schema non ammette 'non applicabile' e fingere di aver verificato sarebbe peggio."
+    },
+    {
+      "id": "RF4-contenuto-non-originale",
+      "presente": true,
+      "come_verificata": "Cercato il 2026-09-10 sul sorgente markdown: 21 occorrenze del nome proprio 'Giovanni', fra cui 'Giovanni ha', 'Giovanni ho', 'Giovanni YouTube', e l'indirizzo 'https://giovanni-beggiato--linkedin-post-generator.modal.run' presentato come RISULTATO di un esercizio del manuale.",
+      "dettaglio": "BLOCCANTE E DA VERIFICARE DA UNA PERSONA. Il nome di un terzo e un suo servizio personale compaiono ventuno volte dentro un prodotto che vogliamo vendere. O il materiale deriva da una fonte di terzi e va attribuito o riscritto, oppure e' un residuo di lavorazione e va tolto. In nessuno dei due casi si vende cosi'."
+    },
+    {
+      "id": "RF5-link-morti",
+      "presente": true,
+      "come_verificata": "Estratti tutti gli URL dal sorgente il 2026-09-10: 5 in tutto. Tre sono segnaposto didattici (blablabla, xxx.supabase.co) e sono legittimi in un manuale. Due sono servizi personali di un terzo su modal.run, cioe' distribuzioni effimere. Uno e' anche un collegamento markdown malformato a riga 8689: [https://blablabla](https://blablabla/).",
+      "dettaglio": "I due modal.run non sono stati raggiunti da questa sessione (nessuna verifica di rete eseguita): sono dichiarati come non verificati, non come funzionanti."
+    },
+    {
+      "id": "RF6-consegna-non-provata",
+      "presente": true,
+      "come_verificata": "Verificato lo stato dello scaglione S0 il 2026-09-10: i gesti 1-4 (cassa collegata, pagamento vero, consegna automatica, rimborso) sono micro-task ancora aperte (MT-32RU, MT-CV7N). Nessuna transazione di prova risulta in nessun pannello.",
+      "dettaglio": "Nessuno ha mai comprato questo file e visto arrivare il file. La consegna e' un'ipotesi."
+    }
+  ],
+  "link_testati": [
+    {
+      "url": "https://giovanni-beggiato--linkedin-post-generator.modal.run",
+      "codice": null
+    },
+    {
+      "url": "https://giovanni.modal.run",
+      "codice": null
+    }
+  ],
+  "debito_collaudo": "Tre bandiere su sei sono presenti e due di esse (RF4 e RF6) sono sostanziali. Il prodotto NON e' consegnabile finche': (1) una persona non stabilisce l'origine del materiale in cui compare il nome di un terzo ventuno volte, e lo attribuisce o lo riscrive; (2) la catena di consegna non e' provata almeno una volta con un pagamento vero; (3) i due indirizzi modal.run non sono aperti e sostituiti o tolti. RF3 si chiude da solo quando esiste ART-CPY. La modalita' e' retroattiva perche' il prodotto e' finito da mesi e non ha mai attraversato un flusso di produzione: questo certificato serve a dire cosa gli manca, non a fingere che l'abbia attraversato.",
+  "esito": "non-consegnabile",
+  "non_misurato": [
+    "I due link del prodotto risultano con codice null, cioe' NON testati: nessuna chiamata di rete e' stata eseguita da questa sessione. Vanno aperti in una sessione pulita prima di considerare RF5 chiusa.",
+    "L'originalita' del testo rispetto a fonti esterne: non e' stato eseguito nessun confronto automatico contro corsi o materiali di terzi.",
+    "La raggiungibilita' effettiva dei due indirizzi modal.run: nessuna chiamata di rete eseguita da questa sessione.",
+    "La corrispondenza fra il PDF (203 pagine) e il markdown: i due file non sono stati confrontati riga per riga."
+  ]
+}

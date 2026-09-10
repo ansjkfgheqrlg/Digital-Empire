@@ -1,0 +1,93 @@
+{
+  "_nota": "QUESTO NON E' offerta.json E NON DEVE ESSERLO FINCHE' NON E' FIRMATO. Lo schema di ART-OFF mette 'firma' fra i campi obbligatori, e nessun agente ha permesso di scrittura su quell'oggetto (INV-10, decisione 8 di ADR-025). Un file di nome offerta.json prodotto da una sessione sarebbe un prezzo che nessuno ha approvato con l'aspetto di un prezzo approvato. Quando Max firma, si aggiunge l'oggetto 'firma' con la sua impronta, si toglie questa nota, e il file si rinomina offerta.json.",
+  "schema_version": "1.0.0",
+  "lancio_id": "manuale-claude-code",
+  "ruolo_prodotto": "vendita",
+  "ruolo_scelto_per_silenzio": false,
+  "ruolo_revisione_il": null,
+  "prezzo": 67,
+  "valuta": "EUR",
+  "prezzi_precedenti_trovati": [
+    {
+      "fonte": "DEC-EST-001 - B-003 Prezzo Manuale Claude Code (SBLOCCO)",
+      "valore": 67,
+      "data": "2026-07-21",
+      "perche_ci_discostiamo": "Non ce ne discostiamo: e' il prezzo proposto. Ma la decisione diceva '67 di lancio FINO AL 31/07' e quella finestra e' scaduta da oltre un mese. Il numero va riconfermato, non ereditato in silenzio."
+    },
+    {
+      "fonte": "DEC-EST-001, prezzo di listino",
+      "valore": 97,
+      "data": "2026-07-21",
+      "perche_ci_discostiamo": "Il listino resta 97. Si propone 67 come prezzo di apertura con una scadenza vera e nuova, non come sconto permanente."
+    },
+    {
+      "fonte": "Catalogo prodotti",
+      "valore": "NON LO SO",
+      "data": "2026-03-07",
+      "perche_ci_discostiamo": "Il catalogo dichiarava esplicitamente di non sapere il prezzo. Riconciliato qui: adesso lo sappiamo, ed e' scritto in un posto solo."
+    },
+    {
+      "fonte": "Wiki, pagina prodotto",
+      "valore": "297-497",
+      "data": "2026-04-29",
+      "perche_ci_discostiamo": "Fascia mai giustificata da un confronto di mercato e mai approvata da nessuno. Se ne prende atto e la si scarta: alzare a 297 un prodotto che nessuno ha mai comprato significa non poterlo misurare."
+    },
+    {
+      "fonte": "Piano LANCI v3, prezzo proposto",
+      "valore": 47,
+      "data": "2026-09-05",
+      "perche_ci_discostiamo": "Superato: la versione 4 del piano non lo eredita, e scendere sotto una decisione gia' presa e non revocata (67) senza un motivo misurato sarebbe arbitrario."
+    }
+  ],
+  "livello_listino": null,
+  "data_apertura": "2026-09-22",
+  "durata_carrello_gg": 7,
+  "data_chiusura": "2026-09-29",
+  "struttura": {
+    "valore_dichiarato": 67,
+    "rapporto_valore_prezzo": 1.0,
+    "soglia_rapporto_minima": 3,
+    "ancoraggio": null,
+    "bonus": [
+      {
+        "nome": "Pack template",
+        "valore": 27,
+        "fonte_valore": null,
+        "riferimento_fonte": "DEC-EST-001 lo prevede come order-bump a 27 EUR, ma non risulta prodotto da nessuna parte. Valore null finche' il file non esiste: un bonus che non esiste vale zero, ed e' il vincolo che impedisce di raggiungere il rapporto inventando."
+      }
+    ],
+    "garanzia": {
+      "giorni": 14,
+      "condizioni": "Rimborso integrale entro 14 giorni dall'acquisto, senza motivazione, su richiesta a un indirizzo di posta indicato nella pagina d'acquisto.",
+      "rinuncia_recesso_raccolta": false
+    },
+    "motivo_per_agire_adesso": "Il prezzo di apertura di 67 EUR vale per i sette giorni del carrello, dal 22 al 29 settembre. Dal 30 settembre il prodotto sta a listino a 97 EUR. E' una scadenza vera perche' e' scritta qui e il listino esiste gia' come decisione.",
+    "azione_richiesta": "Comprare il Manuale Claude Code a 67 EUR."
+  },
+  "previsione_riferimento": {
+    "file": "previsione.json",
+    "ricavo_atteso": 0
+  },
+  "alternative_scartate": [
+    {
+      "prezzo": 97,
+      "ricavo_atteso": 0,
+      "perche_no": "E' il listino. Aprire direttamente a listino toglie il motivo per agire adesso, che e' l'unica leva disponibile visto che su un file digitale non esiste scarsita' vera."
+    },
+    {
+      "prezzo": 297,
+      "ricavo_atteso": 0,
+      "perche_no": "La fascia 297-497 della wiki non e' mai stata giustificata da un confronto di mercato. Su un prodotto con zero vendite storiche un prezzo alto non produce dati: produce silenzio, che e' esattamente cio' che abbiamo gia'."
+    },
+    {
+      "prezzo": 47,
+      "ricavo_atteso": 0,
+      "perche_no": "Proposto dalla v3 del piano. Scendere sotto una decisione gia' presa e mai revocata (67) senza un motivo misurato e' arbitrario, ed e' l'errore piu' invisibile: un prezzo basso vende e quindi sembra aver funzionato."
+    }
+  ],
+  "non_misurato": [
+    "Il rapporto valore/prezzo e' 1,0 contro una soglia minima di 3. Non e' un errore di calcolo: e' che l'unico bonus previsto (pack template a 27 EUR) non esiste come file e quindi vale zero per costruzione. GATE-OFF-1 fallira' su questo, ed e' giusto che fallisca.",
+    "La rinuncia al recesso non e' raccolta al checkout, perche' il checkout non esiste (gesto 1 di S0). Finche' e' false, il rimborso resta dovuto per 14 giorni su ogni copia: va saputo prima di fare i conti, non dopo il primo rimborso.",
+    "La data di apertura del 22/09 e' una proposta, non una decisione: PU-APERTURA non ha default e non ce l'avra' mai."
+  ]
+}

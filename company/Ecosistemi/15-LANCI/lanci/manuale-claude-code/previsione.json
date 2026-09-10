@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "manuale-claude-code",
+  "calcolata_il": "2026-09-10T21:45:00+02:00",
+  "formula": "ricavo_lordo = pubblico_raggiungibile * tasso_visita * tasso_acquisto * prezzo",
+  "ingressi": {
+    "pubblico_raggiungibile": 0,
+    "prezzo": 67,
+    "fonte_pubblico": "ART-PUB",
+    "fonte_prezzo": "proposta-in-corso"
+  },
+  "scenari": {
+    "pessimista": {
+      "tasso_visita": 0.05,
+      "tasso_acquisto": 0.01,
+      "ricavo_lordo": 0,
+      "copie": 0,
+      "perche_questo_scenario": "Lista fredda da mesi, nessun contenuto pubblicato a sostegno, offerta mai vista prima. Con pubblico verificato zero il ricavo e' zero qualunque tasso si scelga: 0 * 0,05 * 0,01 * 67 = 0."
+    },
+    "atteso": {
+      "tasso_visita": 0.15,
+      "tasso_acquisto": 0.03,
+      "ricavo_lordo": 0,
+      "copie": 0,
+      "perche_questo_scenario": "Tassi di riferimento per una lista posseduta e tiepida con una sequenza di lancio decente. Restano assunzioni: l'azienda non ha mai misurato un proprio tasso di acquisto, perche' non ha mai venduto. 0 * 0,15 * 0,03 * 67 = 0."
+    },
+    "ottimista": {
+      "tasso_visita": 0.3,
+      "tasso_acquisto": 0.06,
+      "ricavo_lordo": 0,
+      "copie": 0,
+      "perche_questo_scenario": "Lista calda, contenuto di sostegno pubblicato, prezzo di lancio con scadenza vera. 0 * 0,3 * 0,06 * 67 = 0."
+    }
+  },
+  "assunzioni": [
+    {
+      "nome": "tasso_visita_atteso",
+      "valore": 0.15,
+      "stato": "assunto",
+      "fonte": null,
+      "da_dove_viene_se_assunto": "Riferimento di settore per una lista posseduta e tiepida. Digital Empire non ha mai misurato un proprio tasso di visita, perche' non ha mai aperto un carrello."
+    },
+    {
+      "nome": "tasso_acquisto_atteso",
+      "valore": 0.03,
+      "stato": "assunto",
+      "fonte": null,
+      "da_dove_viene_se_assunto": "Riferimento di settore. Va sostituito col numero vero dopo il primo lancio: fino ad allora e' un'assunzione, e va letta come tale."
+    },
+    {
+      "nome": "prezzo",
+      "valore": 67,
+      "stato": "misurato",
+      "fonte": "DIGITAL-EMPIRE/00-MEMORY/decisions/DEC-EST-001-b-003-prezzo-manuale-claude-code-sblocco.md",
+      "da_dove_viene_se_assunto": null
+    },
+    {
+      "nome": "pubblico_raggiungibile",
+      "valore": 0,
+      "stato": "misurato",
+      "fonte": "company/Ecosistemi/15-LANCI/lanci/manuale-claude-code/pubblico.json",
+      "da_dove_viene_se_assunto": null
+    }
+  ],
+  "pareggio": {
+    "copie_per_pareggio": 1,
+    "costo_totale_previsto": 0,
+    "include_costo_macchina": false
+  },
+  "confronto_alternative_prezzo": [
+    {
+      "prezzo": 67,
+      "ricavo_atteso": 0,
+      "tasso_acquisto_ipotizzato": 0.03,
+      "nota": "Prezzo di lancio da DEC-EST-001, finestra scaduta il 31/07/2026."
+    },
+    {
+      "prezzo": 97,
+      "ricavo_atteso": 0,
+      "tasso_acquisto_ipotizzato": 0.03,
+      "nota": "Prezzo di listino da DEC-EST-001."
+    },
+    {
+      "prezzo": 47,
+      "ricavo_atteso": 0,
+      "tasso_acquisto_ipotizzato": 0.03,
+      "nota": "Proposto dalla versione 3 del piano e non ereditato dalla v4."
+    }
+  ],
+  "non_misurato": [
+    "Il tasso di apertura e di clic della lista Brevo: nessun accesso al pannello.",
+    "Il traffico attuale delle landing gia' pubblicate: nessuno strumento di misura installato (gesto 5 di S0).",
+    "Le commissioni del fornitore di pagamento: si leggono sulla prima transazione vera (gesto 6 di S0), e finche' non esistono il pareggio e' calcolato senza di esse.",
+    "Il costo totale previsto e' zero e `include_costo_macchina` e' false: il costo delle chiamate ai modelli non e' contato, perche' finora questo lancio non ne ha fatta nessuna. Va ricalcolato quando la macchina di S2 gira."
+  ]
+}

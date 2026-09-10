@@ -32,3 +32,8 @@ La vecchia chiave non risponde piu' **sul pannello Brevo**, e nessun file servit
 
 ## Output
 
+## Stato
+
+**Lato codice: chiuso il 2026-09-10** (CP-20260910-9VWK). Zero file di codice nel repository contengono ancora la chiave intera; la chiamata a Brevo passa da una funzione Netlify su tre siti, 18 casi di prova ciascuno.
+
+**Resta aperta la parte umana, e senza quella B-020 non e' chiuso:** revocare la vecchia chiave sul pannello Brevo, impostare `BREVO_API_KEY` sui tre siti, ripubblicare.

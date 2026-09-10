@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "manuale-claude-code",
+  "misurato_il": "2026-09-10T21:30:00+02:00",
+  "scade_il": "2026-10-10",
+  "canali": [
+    {
+      "id": "lista-brevo-3",
+      "tipo": "lista-email",
+      "posseduto": true,
+      "raggiungibili_verificati": 0,
+      "raggiungibili_dichiarati": null,
+      "prova": {
+        "tipo": "nessuna",
+        "riferimento": "company/Memory/checkpoints/CP-20260910-9VWK.md",
+        "data": "2026-09-10"
+      },
+      "stato_tecnico": "credenziale-scaduta",
+      "note": "La lista 3 di Brevo e' quella a cui puntano i form di opt-in. Non e' stato possibile contare i contatti: nessun accesso al pannello da questa sessione. Peggio: fino al 2026-09-10 la chiave d'API viaggiava nel bundle servito al browser (B-020), quindi va considerata bruciata e revocata. Finche' non e' revocata e sostituita, questo canale non e' raggiungibile in modo affidabile. Un numero senza prova vale zero: dichiarato zero."
+    },
+    {
+      "id": "youtube-canale-manuale",
+      "tipo": "canale-video",
+      "posseduto": false,
+      "raggiungibili_verificati": 0,
+      "raggiungibili_dichiarati": null,
+      "prova": {
+        "tipo": "nessuna",
+        "riferimento": "second-brain-vault/wiki/log.md:1054-1063",
+        "data": "2026-07-29"
+      },
+      "stato_tecnico": "dirottato",
+      "note": "Il canale che doveva portare pubblico al Manuale e' stato dichiarato funnel morto e dirottato su @dosementale il 2026-07-29. E' il fatto che ha fatto nascere questo artefatto: la versione 3 del piano progettava il lancio senza saperlo."
+    },
+    {
+      "id": "instagram-mentalita-brutale",
+      "tipo": "profilo-social",
+      "posseduto": false,
+      "raggiungibili_verificati": 0,
+      "raggiungibili_dichiarati": null,
+      "prova": {
+        "tipo": "nessuna",
+        "riferimento": "SKILL & Agenti/Workflow agency creative/carousel-factory/brands/mentalita-brutale/config.json",
+        "data": "2026-09-10"
+      },
+      "stato_tecnico": "sconosciuto",
+      "note": "Il marchio esiste come configurazione della fabbrica caroselli. Nessun conteggio di seguaci risulta misurato in Memory, e la password del profilo e' fra le credenziali esposte (B-023). Zero finche' qualcuno non apre il profilo e conta."
+    }
+  ],
+  "totale_raggiungibile_verificato": 0,
+  "non_misurato": [
+    "I contatti della lista Brevo: nessun accesso al pannello da questa sessione. Serve un esporto della lista o una schermata del conteggio.",
+    "I seguaci di Instagram: nessuna misura in Memory, credenziale esposta (B-023).",
+    "Il pubblico della community/chat, se ne esiste una: non risulta nessun canale di quel tipo in Memory.",
+    "Il traffico organico delle landing gia' pubblicate: nessuno strumento di misura risulta installato, ed e' il gesto 5 di S0."
+  ]
+}

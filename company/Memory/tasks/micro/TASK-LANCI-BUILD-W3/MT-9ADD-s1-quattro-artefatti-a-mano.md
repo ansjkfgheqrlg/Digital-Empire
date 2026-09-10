@@ -29,3 +29,8 @@ I quattro file passano la validazione contro i propri schemi, **e** c'e' la firm
 
 ## Output
 
+## Stato
+
+**Compilata il 2026-09-10.** Tre artefatti su quattro validi contro i propri schemi (`pubblico.json`, `certificato.json`, `previsione.json`). Il quarto e' `offerta.PROPOSTA.json` e fallisce su un solo campo: `firma`, che nessun agente puo' scrivere (INV-10). **Resta aperta in attesa della firma di Max sul prezzo.**
+
+Esito del collaudo: **il lancio non passa S1.** Pubblico raggiungibile verificato **0**, ricavo atteso **0 EUR** in tutti e tre gli scenari, certificato **non-consegnabile** con 4 bandiere rosse su 6. Dettaglio in `company/Ecosistemi/15-LANCI/lanci/manuale-claude-code/LEGGIMI.md`.

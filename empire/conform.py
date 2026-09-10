@@ -30,7 +30,13 @@ ADR001_ECOSYSTEMS = (
     "01-AGENCY", "02-INFO-BUSINESS", "03-CONTENT-FACTORY", "04-MARKETING",
     "05-MULTI-BUSINESS", "06-PLATFORM", "07-FORGE", "08-INTELLIGENCE",
     "09-OPERATIONS", "10-MEMORY", "11-APEX-7-CORE", "12-STREAM-S7-BOT",
-    "13-ARENA-APEX"
+    "13-ARENA-APEX",
+    # ADR-009 impone un ADR per ogni ecosistema dal 14 in su. Questi due ce l'hanno,
+    # e questo elenco era rimasto indietro rispetto al disco (14-TESORERIA esisteva
+    # gia' e non era qui: un elenco canonico che non conosce una cartella canonica
+    # non e' un controllo, e' un falso negativo).
+    "14-TESORERIA",   # ADR-020, 2026-09-03
+    "15-LANCI",       # ADR-025, firmato da Max l'08/09/2026
 )
 
 # Mandato Art.8 §8.2 — i 6 pilastri obbligatori di ogni cartella-workflow
