@@ -184,3 +184,35 @@ numero** — altrimenti il delta si discute invece di leggerlo. Vale per la pros
   durata ottimale. Non si tappano con una toppa scelta a caso.
 - **Il tempo per video resta NON MISURATO** (§1-bis). È la sola condizione del gate A4 che si
   chiude con un'azione di produzione, non di studio.
+
+## ⭐ D-1 — letta la lezione attesa (A6/L05, 2026-09-10) — NON si chiude con un numero
+
+`A6/L05` («Quanti video pubblicare, quanto devono durare e proporzione trend evergreen»,
+`company/Memory/studi/aitubepro/A6-viral-mastery/L05-durata-e-frequenza/`) è la lezione che
+questo documento indicava come quella attesa per chiudere D-1. Letta integralmente, parlato +
+schermo: **non dà un numero unico di durata ottimale**. Lo dice a voce (*"non c'è una durata
+prestabilita che noi dobbiamo fare"*, 03:37-03:57) e lo conferma a schermo in modo decisivo — il
+docente scrive lui stesso in diretta le risposte alle quattro domande della lezione, e la voce
+«Quanto devono durare i video?» resta **senza risposta scritta per tutti i 14:22**, mentre le
+altre tre domande ricevono tutte un numero (`frame-350.png @ 11:38`, `frame-410.png @ 13:38`).
+
+**D-1 resta aperto, ma non per mancanza di studio: perché il numero che si aspettava non esiste
+nel corso.** Dichiararlo (invece di forzare uno dei due numeri disponibili — floor 4 minuti,
+soglia opzionale 8 minuti — a fare da sostituto) è la scelta che questo stesso documento impone
+al §3. La correzione proposta (`A6-L05-02`/`A6-L05-03`, in coda al gate categoria) non è "cambia
+la costante": è sostituire `DURATA_MASSIMA_S`/`DURATA_MINIMA_S` fissi con un range **per
+tipo di nicchia**, usando i due numeri reali della lezione (4 min floor, 8 min soglia
+monetizzazione) come parametri di quella funzione — chiudendo comunque la contraddizione tecnica
+con `PAROLE_MINIME_SCRIPT` (nessun video sarà più matematicamente impossibile da produrre), senza
+inventare un "numero ottimale" che la lezione non dà. Dettaglio completo: `report.md` §7 nella
+stessa cartella.
+
+**D-2 resta aperto**, riverificato lo stesso giorno con lo stesso grep: `verifica_qualita()`
+continua a essere invocata solo da CLI (`regolatori.py:468`), mai dalla catena di produzione.
+
+**Trovato nello stesso giro, un terzo difetto non ancora numerato**: `A6/L06` («Automazione della
+pubblicazione») ha verificato che `youtube_uploader_playwright.py` imposta **sempre** "Privato" —
+non solo prima dell'approvazione di Max (corretto, è il gate voluto, vedi `CONFLITTI.md` C-008),
+ma **anche dopo**: non esiste nessun percorso automatico che porti un video già approvato a
+diventare pubblico/programmato. È la stessa ferita di `ADR-016` (Ultimo Metro) vista da un angolo
+tecnico preciso — registrato come regola `A6-L06-01`, candidato al gate A6.
