@@ -134,6 +134,34 @@ For each page in the funnel, score these dimensions:
 | No urgency | No reason to buy now | Add limited stock, countdown, or bonus |
 | No guarantee | No return policy visible | Add money-back guarantee near CTA |
 
+### 2.2-bis Coerenza fra step: i 7 fattori diagnostici
+
+Le tabelle di §2.2 diagnosticano il drop-off **dentro** una pagina. Questo controllo diagnostica il
+rapporto **fra** due step consecutivi: e' l'unico punto in cui emergono i problemi di coerenza
+temporale ed emotiva, che non si vedono analizzando le pagine una per una e che nessun check tecnico
+intercetta.
+
+Per ogni coppia di step consecutivi del funnel mappato in Phase 1, verifica:
+
+1. **Tempo trascorso fra i due step** — se passano giorni, il lettore ha dimenticato. Vanno ripetuti
+   i messaggi chiave e le obiezioni gia' gestite nello step precedente, invece di darle per acquisite.
+2. **Transizione emotiva** — in quale stato emotivo arriva chi ha appena finito lo step precedente, e
+   lo step successivo parla a quello stato o a un altro?
+3. **Contenuti esterni visti nel frattempo** — fra uno step e l'altro il lettore vede altro, incluse le
+   ads dei competitor. Lo step successivo non parla a una mente rimasta ferma.
+4. **Coerenza del tono di voce** fra i due step.
+5. **Aspettative create nello step precedente** — esempio della fonte: il copy promette "prenota oggi"
+   ma la prima data disponibile a calendario e' fra una settimana, e la conversione crolla. Le
+   tempistiche reali vanno comunicate esplicitamente.
+6. **Eventi esterni e stagionalita'** nel periodo in cui il funnel gira.
+7. **Cambiamenti nella percezione generale del mercato** — la ricettivita' del pubblico cambia per
+   ragioni fuori dal funnel (esempio della fonte: l'interesse per i corsi online durante il lockdown).
+
+Ogni fattore che risulta rotto va riportato in FUNNEL-ANALYSIS.md come finding di coppia
+("Step 2 -> Step 3"), non come finding di pagina: altrimenti finisce assegnato alla pagina sbagliata.
+
+Fonte: studio Andrei Pascu, outFunnel Lezione 12 (KA-01/02/03/04) — candidato AP-008, innestato 2026-09-10.
+
 ### 2.3 Lead Magnet Effectiveness
 
 If the funnel includes a lead magnet, evaluate:

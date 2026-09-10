@@ -31,6 +31,34 @@ Lead diversi meritano trattamenti diversi. Chi compra il mini-corso è più cald
 
 Ogni biforcazione ha due rami definiti. Mai abbandonare un lead: chi non converte entra in un percorso alternativo (nurture), non nel nulla.
 
+### Coerenza fra step: i 7 fattori
+
+Il principio "ogni step vende solo lo step successivo" descrive cosa fa uno step. Questo descrive
+cosa succede nello spazio **fra** due step — dove il prospect vive davvero, e dove il funnel perde
+persone senza che nessuna pagina risulti sbagliata.
+
+Quando progetti una transizione, o quando diagnostichi un funnel esistente, passa ogni coppia di step
+consecutivi per questi sette fattori:
+
+1. **Tempo trascorso fra i due step** — se passano giorni, il lettore ha dimenticato. Vanno ripetuti
+   i messaggi chiave e le obiezioni gia' gestite nello step precedente, invece di darle per acquisite.
+2. **Transizione emotiva** — in quale stato emotivo arriva chi ha appena finito lo step precedente, e
+   lo step successivo parla a quello stato o a un altro?
+3. **Contenuti esterni visti nel frattempo** — fra uno step e l'altro il lettore vede altro, incluse le
+   ads dei competitor. Lo step successivo non parla a una mente rimasta ferma.
+4. **Coerenza del tono di voce** fra i due step.
+5. **Aspettative create nello step precedente** — esempio della fonte: il copy promette "prenota oggi"
+   ma la prima data disponibile a calendario e' fra una settimana, e la conversione crolla. Le
+   tempistiche reali vanno comunicate esplicitamente.
+6. **Eventi esterni e stagionalita'** nel periodo in cui il funnel gira.
+7. **Cambiamenti nella percezione generale del mercato** — la ricettivita' del pubblico cambia per
+   ragioni fuori dal funnel (esempio della fonte: l'interesse per i corsi online durante il lockdown).
+
+Questi controlli sono di coerenza temporale ed emotiva, non di correttezza tecnica: un funnel puo'
+passare tutti i gate tecnici e perdere lo stesso il prospect fra uno step e l'altro.
+
+Fonte: studio Andrei Pascu, outFunnel Lezione 12 (KA-01/02/03/04) — candidato AP-008, innestato 2026-09-10.
+
 
 ## Protocollo di intervista
 

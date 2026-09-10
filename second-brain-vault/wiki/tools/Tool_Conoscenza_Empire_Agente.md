@@ -92,6 +92,24 @@ Ordine di Max: gli agenti di gerarchia alta devono possedere tanta conoscenza, n
 Regola di alimentazione: solo aggiunte, mai cancellazioni, ogni aggiunta con la fonte in linea, e lo
 stile del file di destinazione rispettato.
 
+## Corpus Andrei Pascu — competitor primario (aggiornato 2026-09-10)
+
+Quattro strati in `competitor/Andrei Pascu/`, da citare col file esatto:
+1. **Documenti ufficiali**: `ANDREI-PASCU-DOSSIER-COMPLETO.md`, `OUTFUNNEL-DOCUMENTAZIONE-UFFICIALE.md`,
+   `CLAUDE-SPEEDRUN-2-DOCUMENTAZIONE-UFFICIALE.md`, `ANATOMIA-DEI-LANCI.md`.
+2. **Site-study** (`site-study/`): `SINTESI-SISTEMA-COPY.md`, `SINTESI-SISTEMA-VISIVO.md`,
+   `SINTESI-METODO.md`, `ECOSISTEMA.md`, `PRE-MORTEM-ESECUZIONE.md` — chiusura onda G, 2026-09-09.
+3. **Piano di implementazione** (`piano-implementazione/PIANO-IMPLEMENTAZIONE-ANDREI-PASCU.md`),
+   versione wiki in [[Piano_Implementazione_Andrei_Pascu]].
+4. **Registro vivo dei candidati** `MIGLIORAMENTI-DIGITAL-EMPIRE.md` — 🟢 applicato / 🟡 proposto /
+   🔵 conferma, da consultare prima di riproporre un innesto già fatto.
+
+Già innestato nelle skill di casa: `cro-copy-architect` (+ `references/formule-andrei-pascu.md`,
+nuovo 2026-09-10), `copywriting`, `copy-editing`, `market-copy` sul lato copy;
+`fabbrica-siti/CLAUDE-SITI.md` §8/§11/§12 sul lato visivo. Il canone Empire (#fb4604 sotto il 10%,
+firma argento/grana) resta intoccato dove il metodo Andrei lo confermerebbe solo dall'esterno, non
+lo sostituisce.
+
 ## Limiti dichiarati
 
 **Trappola nota — B-033**: esistono **tre** cartelle `memory-empire/knowledge/`. Due sono **morte**,

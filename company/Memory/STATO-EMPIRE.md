@@ -1,3 +1,21 @@
+## 🟣 2026-09-10 — V3-PIANO-ASSESTATO scritta: 13 correzioni, garanzia esplicita a Gael — CP-20260910-J2WY
+
+**Ordine di Max: "via finisci tutto facendo in modo che Gael possa lavorare sempre senza
+problemi".** `V3-PIANO-ASSESTATO.md` chiude i 13 rilievi rimasti di Critica 2 (non riscrive V2,
+lo corregge). **§19 riscritta per intero** per rispondere all'ordine: i 3 carichi reali di Gael
+(EMPIRE DESK, LANCI attivo, E5b di questo piano) messi per iscritto — **E5b è l'unico scaglione
+di tutto il piano che dipende da lui, e nessun altro scaglione dipende da E5b**: aspettarlo non
+ferma nient'altro (ADR-028 applicata dentro il piano stesso). Default con scadenza se Gael non
+risponde: E5b non si costruisce, il resto procede comunque.
+
+**Appendice C fatta in sola lettura, in questo turno**: le destinazioni mancanti nelle schede
+sono **235 su 391, non ~87 come V2 assumeva** — costo reale 39-59 h, non 15-22. Stima di E2
+corretta, calendario passa da 10-20 a 12-24 settimane. **Appendice B (8 condizioni × 15
+ecosistemi) e D (mappa dei 10 schemi) in corso**, 2 sentinelle fable in background.
+
+**Prossimo, quando rientrano:** se non aprono nuovi FATALI, Critica 3 si salta (opzionale) e si
+passa a **V4 — il piano esecutivo**, l'ultima versione prima della costruzione vera.
+
 ## 🟣 2026-09-10 — ⚠️ ATTIVAZIONE FORZE (ADR-015): la formazione Andrei Pascu entra DENTRO skill, agenti e workflow
 
 **Ordine di Max, testuale:** *"devi migliorare workflow skill e agenti esistenti aggiungendo regole

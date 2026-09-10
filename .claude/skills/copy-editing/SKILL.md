@@ -138,6 +138,9 @@ For every statement, ask "Okay, so what?" If the copy doesn't answer that questi
 - "Industry-leading" (according to whom?)
 - "Customers love us" (show them saying it)
 - Results claims without specifics
+- A "verified reviews" label that doesn't actually link to a verifiable external source (source: Andrei Pascu site-study, 2026-09-09 — same site had two "reviews" pages under the same label, one with a real linked Trustpilot widget, one with 42 screenshots carrying empty `alt=""` and zero external link; only opening every screenshot revealed which was which)
+
+**Proof-depth should scale with how concrete the product is** (same source): a verifiable tool/technique needs the fewest external sources (authority + before/after is enough); a broad transformation promise needs the most. If a claim is for a mindset/identity-level promise and has zero external proof, don't patch the gap with a "you're not alone, everyone struggles with X" universal diagnosis (Barnum effect) — flag it and push for at least one real, minimal verifiable source instead.
 
 **Process:**
 1. Identify every claim that needs proof

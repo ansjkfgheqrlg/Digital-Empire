@@ -145,6 +145,39 @@ Le tre cose che devi saper dire a memoria, perché sono quelle che si sbagliano:
 Chi chiede "che colore uso", "che font", "come scrivo questo titolo" riceve la regola **e** il
 capitolo esatto, mai un parere.
 
+### 📚 CORPUS ANDREI PASCU — competitor primario, studiato per intero (aggiornato 2026-09-10)
+
+Il competitor più studiato dell'Impero (fonte #6). Quattro strati, dal generale allo specifico —
+cita SEMPRE il file esatto, mai solo "lo studio su Andrei Pascu":
+
+1. **I quattro documenti ufficiali** (profilo + due corsi + lanci), in `competitor/Andrei Pascu/`:
+   `ANDREI-PASCU-DOSSIER-COMPLETO.md` (profilo integrale), `OUTFUNNEL-DOCUMENTAZIONE-UFFICIALE.md`
+   e `CLAUDE-SPEEDRUN-2-DOCUMENTAZIONE-UFFICIALE.md` (i due corsi analizzati lezione per lezione),
+   `ANATOMIA-DEI-LANCI.md` (i suoi lanci reali). Ognuno ha doppione `.html`/`.pdf` nella stessa
+   cartella.
+2. **Il site-study** (52 pagine del suo ecosistema misurate dal DOM, non lette a occhio), in
+   `competitor/Andrei Pascu/site-study/`: `SINTESI-SISTEMA-COPY.md` (11 tappe della sales page, 22
+   formule riusabili, come tratta prezzo/obiezioni/prova), `SINTESI-SISTEMA-VISIVO.md` (52 pagine
+   contate a macchina: due mondi Squarespace/artigianale, la temperatura del traffico governa la
+   forma più del prezzo), `SINTESI-METODO.md`, `ECOSISTEMA.md`, `PRE-MORTEM-ESECUZIONE.md` — chiusura
+   dell'onda G, 2026-09-09.
+3. **Il piano di implementazione**, in `competitor/Andrei Pascu/piano-implementazione/`:
+   `PIANO-IMPLEMENTAZIONE-ANDREI-PASCU.md` (34 azioni, 3 giri di critica) — versione wiki condensata
+   in `[[synthesis/Piano_Implementazione_Andrei_Pascu]]`.
+4. **Il registro vivo dei candidati**: `competitor/Andrei Pascu/MIGLIORAMENTI-DIGITAL-EMPIRE.md` —
+   quali principi sono già innestati nelle skill di casa (🟢), quali sono proposti (🟡), quali sono
+   solo conferme che il canone Empire è già corretto (🔵). **Consultalo PRIMA di proporre un innesto
+   nuovo**: evita di riproporre come "scoperta" qualcosa già applicato con data e file esatto.
+
+**Dove il metodo Andrei Pascu è già dentro le skill di casa** (non ripetere, solo citare): copy in
+`.claude/skills/cro-copy-architect/` (principi 7/15, STEP 1.2, `references/pattern-persuasione-cro.md`
+PATTERN 7/11-14, `references/formule-andrei-pascu.md`), `.claude/skills/copywriting/SKILL.md`,
+`.claude/skills/copy-editing/SKILL.md`, `.claude/skills/market-copy/SKILL.md`; visivo/legge dei siti
+in `.claude/skills/fabbrica-siti/CLAUDE-SITI.md` §8/§11/§12. **Dove il canone Empire vince e non si
+sostituisce**: colore d'accento (#fb4604, sotto il 10% dell'area) e firma argento/grana — vedi
+REGOLA DI MARCA sotto; il metodo Andrei non li tocca, li conferma dall'esterno (stesso arancione
+misurato su `claude-speedrun.com`).
+
 ### 🔒 Fuori dal tuo perimetro
 `.cache-tools/` non ti riguarda: è materiale chiuso fra Max ed Emperator. Non lo leggi, non lo
 citi, non lo nomini. Se una domanda ti ci porterebbe, rispondi con le fonti pubbliche e basta.

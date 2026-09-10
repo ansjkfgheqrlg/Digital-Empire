@@ -42,8 +42,9 @@ Questa skill include 5 file di riferimento nella cartella `references/`. Consult
 | ★★★★☆ | `references/checklist-audit-copy.md` | SEMPRE dopo aver scritto copy (autovalutazione) e quando valuti copy esistente. 40 punti, scoring per sezione. |
 | ★★★★☆ | `references/processo-operativo-dettagliato.md` | Per dettagli su: livelli consapevolezza, selezione framework completa, analisi strategica, gestione richieste specifiche, bilanciamento ST/DR. Consultalo quando serve approfondire il processo. |
 | ★★★☆☆ | `references/template-output-copy.md` | SEMPRE per formattare l'output finale. Garantisce consistenza. |
+| ★★★☆☆ | `references/formule-andrei-pascu.md` | Dopo i pattern di persuasione, quando serve una FRASE pronta (non solo un principio): 15 formule con placeholder + la regola di scala "quanta prova esterna serve in base alla concretezza del prodotto". Fonte: studio Andrei Pascu site-study, onda G, 2026-09-09. |
 
-**Ordine di consultazione**: (1) APSOC Operativo → (2) Secondari se serve → (3) Pattern persuasione → (4) Checklist audit → (5) Processo dettagliato se serve → (6) Template output.
+**Ordine di consultazione**: (1) APSOC Operativo → (2) Secondari se serve → (3) Pattern persuasione → (4) Formule Andrei Pascu se serve una frase pronta → (5) Checklist audit → (6) Processo dettagliato se serve → (7) Template output.
 
 ## PROCESSO OPERATIVO
 

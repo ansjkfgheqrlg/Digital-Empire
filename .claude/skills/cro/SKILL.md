@@ -104,6 +104,34 @@ Analyze the page across these dimensions, in order of impact:
 
 ---
 
+### 8. Coerenza fra step (solo se la pagina vive dentro un funnel multi-step)
+
+I sette controlli sopra guardano la singola pagina. Se la pagina analizzata ha uno step prima o uno
+step dopo, il rapporto **fra** i due step va diagnosticato a parte: non e' correttezza tecnica, e'
+coerenza temporale ed emotiva, e non emerge mai guardando le pagine una per una.
+
+Per ogni coppia di step consecutivi, verifica:
+
+1. **Tempo trascorso fra i due step** — se passano giorni, il lettore ha dimenticato. Vanno ripetuti
+   i messaggi chiave e le obiezioni gia' gestite nello step precedente, invece di darle per acquisite.
+2. **Transizione emotiva** — in quale stato emotivo arriva chi ha appena finito lo step precedente, e
+   lo step successivo parla a quello stato o a un altro?
+3. **Contenuti esterni visti nel frattempo** — fra uno step e l'altro il lettore vede altro, incluse le
+   ads dei competitor. Lo step successivo non parla a una mente rimasta ferma.
+4. **Coerenza del tono di voce** fra i due step.
+5. **Aspettative create nello step precedente** — esempio della fonte: il copy promette "prenota oggi"
+   ma la prima data disponibile a calendario e' fra una settimana, e la conversione crolla. Le
+   tempistiche reali vanno comunicate esplicitamente.
+6. **Eventi esterni e stagionalita'** nel periodo in cui il funnel gira.
+7. **Cambiamenti nella percezione generale del mercato** — la ricettivita' del pubblico cambia per
+   ragioni fuori dal funnel (esempio della fonte: l'interesse per i corsi online durante il lockdown).
+
+Se un fattore non e' verificabile con i dati che hai, dichiaralo come tale invece di darlo per buono.
+
+Fonte: studio Andrei Pascu, outFunnel Lezione 12 (KA-01/02/03/04) — candidato AP-008, innestato 2026-09-10.
+
+---
+
 ## Output Format
 
 Structure your recommendations as:

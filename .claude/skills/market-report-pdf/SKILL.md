@@ -45,6 +45,35 @@ Gather data from all previous skill runs. Check for these files in the project d
 2. If the user insists on generating a report without prior audits, analyze the provided URL directly and build the data structure from scratch
 3. Use the analyze_page.py script to gather automated data: `python scripts/analyze_page.py <url>`
 
+### Step 1-bis: Validazione a monte — prima di costruire il JSON
+
+Verifica che i dati obbligatori ci siano **prima** di assemblare il JSON e di invocare
+`scripts/generate_pdf_report.py`. Se manca un dato obbligatorio: fermati, dichiara esattamente quale
+manca e da quale fonte dovrebbe arrivare, e chiedilo. Non generare un report parziale e non riempire
+un buco con una stima presentata come misura.
+
+**Obbligatori — senza questi il PDF non si genera:**
+- dominio / nome cliente e data del report;
+- punteggio complessivo e punteggi per categoria, ciascuno derivato da un audit realmente eseguito
+  (mai un numero scelto per riempire il gauge);
+- almeno un finding per ogni categoria che riceve un punteggio;
+- il piano d'azione prioritizzato.
+
+**Opzionali — se mancano si omette la sezione, non si inventa:** dati competitor, snapshot SEO
+dettagliato, dati di advertising.
+
+Un report a un cliente con un numero inventato costa piu' di un report che arriva un'ora dopo — e
+questo e' il deliverable piu' client-facing di tutta la suite.
+
+Questo controllo e' **preventivo** e viene prima della diagnosi reattiva: la riga "Script produces
+empty PDF -> Check that JSON data has all required fields" in §Troubleshooting resta come rete di
+sicurezza, non e' il posto in cui ci si accorge di un dato mancante.
+
+Fonte: studio Andrei Pascu, cs2online Bonus 2 (KA-04 — lo step "Validate all 4 required
+information pieces" completato PRIMA della generazione del PDF, frame t12m15s) e cs2online
+Bonus 6 (KA-05 — SKILL.md scritto per "rifiutarsi categoricamente di procedere" senza i documenti
+obbligatori, frame t14m00s) — candidato AP-020, innestato 2026-09-10.
+
 ### Step 2: Build the JSON Data Structure
 The `scripts/generate_pdf_report.py` script expects a JSON file as input with this exact structure:
 

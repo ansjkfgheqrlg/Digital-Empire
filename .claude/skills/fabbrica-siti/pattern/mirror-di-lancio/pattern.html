@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; mirror-di-lancio</title>
+
+<!-- IL PATTERN: la pagina prodotto del negozio, rispecchiata dentro un lancio.
+     Origine misurata: armageddon.bsns.it e le sue quattro figlie (/outemail,
+     /outfunnel, /outheadline, /outviral) — SINTESI-METODO.md §3, 2026-09-09.
+     Il meccanismo, in quattro mosse: si prende la pagina prodotto ORIGINALE, se ne
+     fa un mirror statico senza gli script della piattaforma, si sostituisce il
+     bottone-prezzo del prodotto singolo con il badge di inclusione, e TUTTE le
+     pagine puntano a UNA sola cassa.
+     Realizza anche il pattern `badge-incluso-nel-pacchetto` deciso in ADR-024 §3
+     (due usi misurati: 14-arma-outemail [y=23953], 17-arma-outviral [y=1290, y=9408]).
+
+     SCELTA DI DIGITAL EMPIRE, non sua: il canonical qui sotto punta all'ORIGINALE.
+     Un mirror senza canonical mette due pagine con lo stesso testo in concorrenza
+     fra loro nell'indice. Il mirror serve a vendere, non a farsi indicizzare. -->
+<link rel="canonical" href="https://negozio.esempio.it/prodotto">
+
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* La colonna del mirror: la pagina originale resta com'e' nel corpo (e' lei il
+   prodotto), qui si disegnano solo i TRE pezzi che il mirror aggiunge o sostituisce:
+   il nastro d'origine, il badge al posto del prezzo, la barra unica d'acquisto. */
+
+.mirror { max-width: min(760px, 100%); margin: 0 auto;
+  padding: calc(var(--u) * 0.08) calc(var(--u) * 0.05) calc(var(--u) * 0.16); }
+
+/* 1. NASTRO D'ORIGINE — non e' nel suo mirror: e' nostro.
+   Chi arriva qui da un annuncio deve capire in una riga che sta leggendo la scheda
+   di UN pezzo dentro un pacchetto, non la pagina di vendita del pacchetto. Senza
+   questa riga il mirror e' una pagina prodotto normale che nega il proprio prezzo. */
+.mirror__nastro {
+  margin: 0 0 clamp(20px, calc(var(--u) * 0.03), 40px);
+  padding: 0 0 clamp(14px, calc(var(--u) * 0.02), 24px);
+  border-bottom: 1px solid var(--line-hair);
+  font-size: clamp(13px, calc(var(--u) * 0.0104167), 16px);  /* 15/1440, scala di servizio del canone */
+  color: rgba(249, 249, 249, var(--t-62));
+}
+.mirror__nastro a { color: var(--fg); }
+
+.mirror__titolo { margin: 0 0 clamp(16px, calc(var(--u) * 0.024), 32px);
+  font-size: clamp(30px, calc(var(--u) * 0.0422222), 61px); }  /* 60.8/1440, stessa taglia di pagina-ponte */
+.mirror__corpo { max-width: var(--measure-body); margin: 0 0 calc(var(--u) * 0.05);
+  line-height: var(--leading-body); color: rgba(249, 249, 249, var(--t-76)); }
+
+/* 2. IL BADGE — sostituisce il bottone-prezzo del prodotto singolo.
+   Misura sua: <p> maiuscolo, 15.2px, peso 700, colore #bc0807 — lo stesso identico
+   colore della barra sticky d'acquisto e di nient'altro nella pagina (ADR-024 §3).
+   Il suo hex NON entra: §1, il canone vince sul gusto anche quando il gusto e' del
+   concorrente studiato. Qui il filo cromatico e' --orange, il nostro colore
+   dell'azione, speso sugli stessi DUE punti che lui collega: "questo e' incluso"
+   e "compra qui". E' §12 applicato a un pacchetto — un accento, uno scopo. */
+.mirror__badge {
+  display: inline-block;
+  margin: 0 0 clamp(18px, calc(var(--u) * 0.028), 36px);
+  padding: 0.5em 1em;
+  border: 1px solid var(--orange);
+  border-radius: var(--radius-sm);
+  background: rgba(251, 70, 4, 0.10);
+  font-size: clamp(13px, calc(var(--u) * 0.0105556), 16px);   /* 15.2/1440, capture 14-arma-outemail */
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange-bright);
+}
+
+/* 3. LA BARRA UNICA D'ACQUISTO — una sola cassa per tutte le figlie.
+   Non e' decorazione: e' il pezzo che rende il mirror un lancio invece che un
+   catalogo. Sta ferma in fondo, non si chiude, e il suo href NON e' scritto qui:
+   arriva da un dato solo (§8), vedi lo script in fondo. */
+.mirror__barra {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  display: flex; flex-wrap: wrap; gap: clamp(10px, calc(var(--u) * 0.014), 20px);
+  align-items: center; justify-content: center;
+  padding: clamp(12px, calc(var(--u) * 0.016), 22px) clamp(14px, calc(var(--u) * 0.02), 28px);
+  border-top: 1px solid var(--line-hair);
+  background: var(--ink-2);
+}
+.mirror__barra-testo { margin: 0; font-size: clamp(13px, calc(var(--u) * 0.0104167), 16px);
+  color: rgba(249, 249, 249, var(--t-76)); }
+.mirror__barra-testo strong { color: var(--fg); }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Niente da spegnere in CSS: il pattern non anima nulla di proprio (.btn e
+     .card-dark hanno gia' il loro ramo in canone.css §14). La regola vive nel JS
+     qui sotto, che senza questa preferenza fa comparire la barra con una
+     transizione: §7 chiede che il blocco spenga ANCHE il JavaScript. */
+  .mirror__barra { transition: none; }
+}
+
+</style>
+</head>
+<body class="grain-fine">
+<div class="page">
+
+  <!-- ESEMPIO: prodotto, pacchetto e prezzi sono dati finti di Digital Empire.
+       La pagina reale e' il mirror della scheda prodotto ORIGINALE: qui sotto ne
+       resta lo scheletro, spogliato di ogni script della piattaforma. -->
+  <article class="mirror">
+
+    <p class="mirror__nastro">
+      Stai leggendo la scheda di <strong>uno dei corsi</strong> inclusi in
+      <a data-cassa href="#">Pacchetto Empire</a>.
+      Il pacchetto si compra una volta sola, da un solo posto.
+    </p>
+
+    <h1 class="mirror__titolo">Manuale Claude Code</h1>
+
+    <p class="mirror__badge">Incluso nel Pacchetto Empire</p>
+
+    <p class="mirror__corpo">
+      Da qui in gi&ugrave; il testo &egrave; quello della scheda originale, parola per parola:
+      il mirror non riscrive il prodotto, lo rispecchia. Cambiano tre cose e solo tre —
+      il nastro d&rsquo;origine sopra, il badge al posto del prezzo, la barra unica qui sotto.
+    </p>
+
+    <p class="mirror__corpo">
+      Quello che il mirror <strong>toglie</strong> vale quanto quello che aggiunge: via gli
+      script della piattaforma, via i widget di terze parti, via il carrello del negozio.
+      Resta una pagina che si apre in fretta e ha una sola uscita.
+    </p>
+
+  </article>
+
+  <div class="mirror__barra" role="region" aria-label="Acquisto del pacchetto">
+    <p class="mirror__barra-testo">
+      Nel pacchetto ci sono <strong>quattro corsi</strong>. Il prezzo &egrave; uno solo.
+    </p>
+    <a class="btn btn-orange" data-cassa href="#">Vai al pacchetto</a>
+  </div>
+
+</div>
+
+<script>
+/* UN DATO SOLO (§8). L'indirizzo della cassa e' scritto QUI e in nessun altro punto
+   del sito: ogni link del mirror — nastro, barra, bottoni nel corpo — lo prende da
+   questa riga. E' la correzione strutturale del difetto piu' caro trovato addosso
+   al concorrente (ADR-024, controllo 8): su Vendita101 la pagina di vendita manda a
+   una pagina 404 e la cassa vera non e' linkata da nessuna parte. Con una sola
+   sorgente, un indirizzo sbagliato e' sbagliato in un posto solo — e si vede subito
+   su tutte e quattro le figlie invece che su una.
+   In produzione questa riga sta in un file condiviso incluso da ogni figlia, e
+   l'href statico nell'HTML resta comunque scritto: se il JS non gira, si compra lo stesso. */
+(function () {
+  var CASSA = 'https://cassa.esempio.it/pacchetto-empire';
+  var link = document.querySelectorAll('[data-cassa]');
+  for (var i = 0; i < link.length; i++) { link[i].setAttribute('href', CASSA); }
+
+  /* §7: il movimento e' solo per chi lo vuole. Senza la preferenza, la barra entra
+     dal basso al primo caricamento; con la preferenza, e' gia' li' e ferma. */
+  var barra = document.querySelector('.mirror__barra');
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && barra) {
+    barra.style.transition = 'transform var(--t-base) var(--ease-land)';
+    barra.style.transform = 'translateY(100%)';
+    requestAnimationFrame(function () { barra.style.transform = 'translateY(0)'; });
+  }
+})();
+</script>
+</body>
+</html>

@@ -175,9 +175,10 @@ If any element is missing or weak in the current copy, flag it.
 2. Plan names: Aspirational or audience-based, not "Basic/Pro/Enterprise"
 3. Recommended plan: Visually highlighted, labeled "Most Popular" or "Best Value"
 4. Feature descriptions: Benefit-oriented, not feature lists
-5. Anchoring: Show the most expensive plan first or use annual/monthly toggle
+5. Anchoring: Show the most expensive plan first or use annual/monthly toggle. On high-ticket single offers, ask readers to self-estimate the value ("what would this be worth to you?") right before the reveal instead of only anchoring against a competitor price (source: Andrei Pascu site-study, 2026-09-09)
 6. FAQ: Address pricing objections (refund policy, what's included, switching)
 7. Guarantee: Risk reversal (free trial, money-back, cancel anytime)
+8. If the price is a bundle, flag whether the sum of its parts is shown anywhere in the page/funnel — a bundle total shown only as one opaque block (never broken down component by component) is a measured trust cost, not just a style choice (same source)
 
 **About Page Copy Structure:**
 1. Mission statement: Why this company exists (not what it does)

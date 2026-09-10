@@ -192,6 +192,8 @@ Examples:
 - Address "which is right for me?" anxiety
 - Make recommended plan obvious
 
+**Self-anchoring before the reveal (source: Andrei Pascu site-study, 2026-09-09):** on high-ticket offers, ask the reader to estimate the value themselves ("if you could achieve [outcome], what would that be worth to you?") immediately BEFORE showing the price — measured on the highest-price page in the corpus, done before any figure appears. If the price is a bundle, always show the sum of the parts somewhere in the funnel (one line is enough) — a bundle total shown only as a single block, never broken down, was the measured defect (784€ never explained as 139+98+98+250+199).
+
 ### Feature Page
 - Connect feature → benefit → outcome
 - Show use cases and examples

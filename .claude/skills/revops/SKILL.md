@@ -199,11 +199,45 @@ Build routing rules that prioritize speed. Alert reps immediately. Escalate if S
 - **Lead activity digest** — Daily summary of high-intent actions by active leads
 - **Re-engagement trigger** — Alert sales when a dormant lead returns to site
 
-> **Gap identificato da studio competitor (Andrei Pascu)**: un sistema di tag/scoring comportamentale
-> per segmentare i contatti in base alle azioni fatte (non solo ai dati demografici del fit score
-> sopra) non è oggi documentato in nessuna skill Digital Empire — potenziale pattern operativo futuro
-> per l'automazione email/revops. Fonte: outFunnel Lezione 15 (KA-04/05/06). Non è un principio da
-> applicare subito: è solo il gap segnalato, la progettazione del sistema resta da fare.
+### Behavioral Tags e ramificazione — convenzione operativa Digital Empire
+
+Fit ed engagement scoring sono gia' documentati sopra (§Lead Scoring): il punteggio comportamentale
+**non** e' un gap di Digital Empire. Quello che mancava — e che questa sezione chiude — e' il **tag**
+come artefatto nominato assegnato su una singola azione, e la **ramificazione** che quel tag alimenta.
+
+**1. Convenzione di nome del tag** — `<PRODOTTO>-<TAPPA>-<EVENTO>`, tutto maiuscolo, separatore
+trattino, mai spazi ne' underscore. Esempi: `CCM-SP-VIEW`, `CCM-CHECKOUT-START`,
+`CCM-CHECKOUT-ABANDON`, `CCM-BUY`. Un tag registra un'AZIONE COMPIUTA, mai un giudizio sul contatto
+("caldo", "interessato"): il giudizio e' compito dello scoring, che e' un numero e si ricalibra; il
+tag e' un fatto e non si ricalibra.
+
+**2. Regola di esistenza** — un tag si crea SOLO insieme al messaggio che lo consuma. Nessun tag
+senza consumatore nominato. Un tag che nessuna email legge e' dato raccolto e mai usato: sporca la
+lista e non produce niente. *(Scelta Digital Empire, non presente nella fonte.)*
+
+**3. Le tre ramificazioni canoniche** — queste vengono dalla fonte:
+- **visto ma non cliccato** -> follow-up mirato sullo stesso contenuto;
+- **cliccato ma non comprato** -> gestione dell'obiezione + urgenza/scarsita';
+- **ritorni multipli** sulla stessa pagina -> percorso dedicato (offerta speciale o contatto umano).
+
+**4. Tetto: massimo 3 ramificazioni per sequenza al primo giro.** *(Scelta Digital Empire — il numero
+3 NON e' nella fonte e non va attribuito ad Andrei Pascu.)* La fonte dice soltanto che queste tecniche
+sono avanzate, che chi comincia deve partire da tag e segmentazioni semplici, che non si personalizza
+ogni step e che va trovato un equilibrio con il tempo e il budget disponibili (KA-07). Il tetto
+numerico e' la traduzione operativa che Digital Empire da' a quel freno, per avere una soglia
+verificabile invece di un'esortazione. Si alza solo dopo che una sequenza a 3 rami e' stata misurata.
+
+**5. Nessuna seconda scala di punteggio.** Il comportamento raccolto dai tag alimenta lo scoring gia'
+definito sopra (soglia MQL 50-80 su 100, ricalibrazione trimestrale). Non si inventa un punteggio
+parallelo: due numeri che dicono cose diverse sullo stesso contatto rendono inutilizzabili entrambi.
+
+**6. Fuori scope:** questa sezione non raccomanda alcuna piattaforma. La convenzione vale identica su
+qualunque strumento di automazione.
+
+Fonte: studio Andrei Pascu, outFunnel Lezione 15 (KA-04 Behaviour-Based Tags, KA-05 Lead Scoring,
+KA-06 Custom Audience Journey, KA-07 l'avvertenza sui limiti) — candidato AP-012, reso operativo il
+2026-09-10. I punti marcati come *scelta Digital Empire* sono decisioni interne, non contenuto della
+fonte.
 
 ### Calendar Scheduling Integration
 

@@ -17,6 +17,34 @@ Fondamenta teoriche + applicazione pratica: `references/concepts/problem-centric
 
 ---
 
+## Contratto d'ingresso — senza questi, il documento non si scrive
+
+Tre elementi sono obbligatori. Se ne manca anche uno solo: **chiedilo e rifiuta di produrre il
+documento completo**. L'outline si puo' fare comunque (serve proprio a far emergere cosa manca); il
+documento no.
+
+1. **Brief di discovery** — output della skill `discovery-call-brief`, oppure la trascrizione o gli
+   appunti grezzi della call.
+2. **Il prezzo a catalogo applicabile** — uno dei quattro di `proposal-gate` punto 3
+   (EUR 4.000 Outreach Factory / EUR 3.500 Content Factory / EUR 2.500 Second Brain /
+   EUR 8.000 Engine Room). Mai un prezzo improvvisato.
+3. **Il problema del cliente con le parole del cliente** — non una riformulazione di marketing. E' il
+   punto 1 di `proposal-gate`, e senza di esso il documento nasce gia' bocciato.
+
+**Perche' il rifiuto e non un semplice avviso:** `proposal-gate` blocca comunque a valle, ma solo
+DOPO che il documento e' stato scritto. Bloccare a monte risparmia l'intera scrittura. Digital Empire
+applica gia' questa disciplina ai gate di uscita (`proposal-gate` blocca, Content Forge Stage 8
+blocca, i gate YouTube bloccano) e quasi mai ai contratti d'ingresso: questa e' la correzione di
+quell'asimmetria, nel punto in cui costa di piu'.
+
+Fonte: studio Andrei Pascu, cs2online Bonus 6 (KA-05 — SKILL.md scritto per "rifiutarsi
+categoricamente di procedere" senza i documenti obbligatori) e cs2online Bonus 2 (KA-04 —
+validazione dei dati obbligatori completata prima della generazione) — candidati AP-006 (patch A) e
+AP-020, innestati 2026-09-10. L'automazione AI dei preventivi resta NO-GO
+(`competitor/Andrei Pascu/piano-implementazione/DRAFT-V1-B-capacita.md` §3.3).
+
+---
+
 ## Come usare questa skill
 
 **Step 1 — Fornisci il contesto cliente**

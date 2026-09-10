@@ -36,6 +36,25 @@ If no previous data exists, inform the user and offer to:
 2. Generate a report based on available information (website URL, user-provided data)
 3. Create a report template they can fill in
 
+### Step 1-bis: Validazione a monte — dati obbligatori prima di scrivere
+
+Prima di calcolare la scorecard, verifica che i dati obbligatori esistano. Se ne manca uno: fermati,
+dichiara quale manca e da dove dovrebbe arrivare, e chiedilo.
+
+- Una categoria che non e' stata realmente auditata si dichiara **"non valutata"** e viene esclusa dal
+  calcolo del punteggio complessivo: non riceve un numero di comodo.
+- Nessuna stima presentata come misura. Una stima si puo' fare, ma va etichettata come stima nel
+  report, con il metodo con cui e' stata ottenuta.
+- Nessun competitor, benchmark o metrica citata senza fonte verificabile.
+
+Il punteggio e' l'unica cosa che il cliente ricorda: un solo numero inventato squalifica tutto il
+documento.
+
+Fonte: studio Andrei Pascu, cs2online Bonus 2 (KA-04 — lo step "Validate all 4 required
+information pieces" completato PRIMA della generazione del PDF, frame t12m15s) e cs2online
+Bonus 6 (KA-05 — SKILL.md scritto per "rifiutarsi categoricamente di procedere" senza i documenti
+obbligatori, frame t14m00s) — candidato AP-020, innestato 2026-09-10.
+
 ### Step 2: Calculate the Marketing Scorecard
 
 Score across 6 categories, each worth up to 100 points. The overall score is the weighted average.

@@ -196,6 +196,79 @@ Sono 9.6 vendite in più al giorno × €50 = €480/giorno in più.
 
 ---
 
+## PATTERN 11: QUALIFICAZIONE NEGATIVA SELETTIVA
+
+**Scopo:** Usare "non è per tutti" come leva di esclusività su un prodotto digitale a scorta
+infinita, senza ricorrere a scarsità artificiale.
+
+**Fonte:** `competitor/Andrei Pascu/site-study/SINTESI-SISTEMA-COPY.md` §5, misurato su 4 pagine
+comparabili: presente solo sui 2 prodotti "tecnici avanzati" della famiglia, **assente** sui prodotti
+di massa e sul prodotto di puro mindset (0 occorrenze di "non è per" come filtro d'ingresso).
+
+**REGOLA:** riserva la qualificazione negativa ("non è per principianti", "non è per chi cerca X")
+ai prodotti **verticali/premium/tecnici avanzati**. Non usarla su un prodotto di massa (diluisce
+l'effetto) né su un prodotto-mindset generalista (suona incoerente con una promessa "per tutti").
+
+**Esempio:**
+✅ "Non prendere [PRODOTTO TECNICO] se sei alle prime armi. È pensato per chi già [CRITERIO
+SPECIFICO DI SKILL]."
+❌ Usarlo su un prodotto entry-level o su un lead magnet — lì la qualificazione negativa scoraggia
+proprio il traffico che il pezzo deve convertire.
+
+---
+
+## PATTERN 12: PROVA CHE SCALA CON LA CONCRETEZZA DEL PRODOTTO
+
+**Scopo:** Decidere QUANTA prova esterna (link, dati, fonti terze) serve prima di scrivere la
+sezione Prova — non è un numero fisso.
+
+**Fonte:** `SINTESI-SISTEMA-COPY.md` §1 e §4 — misurato in scala su tutto il corpus: strumento
+tecnico verificabile → 0 fonti esterne (basta il prima/dopo); percorso/carriera reale → 2 fonti;
+promessa ampia di trasformazione → 5 fonti (il massimo misurato); puro mindset senza strumento
+consegnato → torna a 0 fonti, e lì il gap viene spesso coperto con diagnosi Barnum (vedi sotto).
+
+**REGOLA OPERATIVA:** prima di scrivere Social Proof / Prove, classifica il prodotto su questa scala
+e imposta il numero di fonti di conseguenza. **Su un prodotto-mindset, il canone Digital Empire non
+sostituisce con Barnum**: inserisce comunque almeno una fonte verificabile, anche minima — differenza
+esplicita rispetto al comportamento misurato nel corpus studiato (dettaglio completo in
+`references/formule-andrei-pascu.md`).
+
+---
+
+## PATTERN 13: AUTO-ANCORAGGIO DEL VALORE PRIMA DEL PREZZO
+
+**Scopo:** Far stimare al lettore il valore PRIMA di rivelare il prezzo, invece di rivelare il
+prezzo e poi giustificarlo.
+
+**Fonte:** `SINTESI-SISTEMA-COPY.md` §3 — regola 1 delle "dieci regole del suo copy": sulla pagina
+a prezzo più alto del corpus, il lettore stima da solo il valore ("quanto pagheresti per [risultato
+desiderato]?") prima che compaiano le cifre.
+
+**Applicazione:** su offerte ad alto ticket, inserisci una domanda di auto-stima del valore
+immediatamente PRIMA del reveal di prezzo:
+`"Se potessi [OTTENERE IL RISULTATO PRINCIPALE], quanto varrebbe per te?"`
+poi rivela il prezzo. Diverso dall'Anchoring del PATTERN 7 (che ancora a un costo alternativo
+esterno): qui l'ancora è generata dal lettore stesso, non fornita da te — più forte perché il numero
+di riferimento nella sua testa è già alto prima che tu dica la cifra.
+
+---
+
+## PATTERN 14: NEGAZIONE TRIPLA/QUADRUPLA + AFFERMAZIONE RIASSUNTIVA
+
+**Scopo:** Unità retorica ad alta densità per distinguersi da pratiche losche del settore o definire
+un valore per sottrazione.
+
+**Fonte:** `SINTESI-SISTEMA-COPY.md` §2 e §8 regola 9 — l'unità retorica più riusata di tutto il
+corpus, confermata indipendentemente in almeno 4 dossier diversi, in registri diversi (rifiuto di
+promesse, rifiuto di garanzia, definizione per sottrazione, anti-fuffa).
+
+**Formula:** `"Niente [X]. Niente [Y]. Niente [Z]. Solo [UNICA COSA VERA, in positivo]."`
+
+**Quando usarla:** apertura di sezione Offerta o gestione obiezione "è l'ennesimo corso di fuffa" —
+mai più di una volta per pezzo (perde forza se ripetuta).
+
+---
+
 ## REGOLA UNIVERSALE PER TUTTI I PATTERN
 
 Ogni pattern deve essere:

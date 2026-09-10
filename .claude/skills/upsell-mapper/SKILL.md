@@ -35,6 +35,32 @@ Se una di queste condizioni non e' soddisfatta: NON generare proposta upsell.
 Il prezzo presentato e' SEMPRE il prezzo Engine Room meno quanto gia' pagato.
 Logica: "hai gia' X — ti mancano Y e Z per avere il sistema completo".
 
+## Vincolo bloccante: il primo acquisto deve restare percepito come completo
+
+Da verificare PRIMA di scrivere il pitch. Se non e' soddisfatto, l'upsell non si manda: si
+riprogetta.
+
+**La regola.** Un upsell non deve mai far sembrare il primo acquisto incompleto o mutilato. Se il
+cliente percepisce che gli e' stata "tolta" una parte del prodotto originale per poi rivendergliela,
+si sente ingannato — e la fiducia costruita in 90 giorni di delivery si perde in una frase.
+
+**I due errori nominati dalla fonte:**
+1. Vendere lo stesso prodotto con variazioni cosmetiche minime (non converte).
+2. Svalutare il primo acquisto con un secondo prodotto che conteneva informazioni gia' "dovute" nel
+   primo.
+
+**Attenzione specifica a questa skill.** Il pitch canonico qui e' *"hai gia' X — ti mancano Y e Z per
+avere il sistema completo"* (vedi §Come calcolare il delta upsell). E' una frase a un passo dal
+violare la regola: detta male, dichiara al cliente che quello che ha comprato non era completo. Il
+taglio corretto e' **additivo, non sottrattivo** — X ha fatto quello che aveva promesso e continua a
+farlo; Y e Z risolvono un problema DIVERSO che il cliente ha adesso, non un buco lasciato aperto da X.
+
+**Check da superare prima di emettere `pitch_personalizzato`:** rileggi il pitch e chiediti — un
+cliente che lo legge puo' concludere "quindi mi avevate venduto meta' prodotto"? Se si', si riscrive.
+
+Fonte: studio Andrei Pascu, outFunnel Lezione 11 (KA-05 e KA-07 punto 2 — la stessa regola
+vista da due angoli, il vincolo piu' insistito della lezione) — candidato AP-017, innestato 2026-09-10.
+
 ## Struttura proposta upsell
 
 1. **Riconosci il risultato** (usa metrica reale del case study)

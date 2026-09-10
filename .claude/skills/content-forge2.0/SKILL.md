@@ -22,6 +22,7 @@ description: 'Transforms raw, long, messy textual content (YouTube transcripts, 
 6. **Progressive disclosure.** Questo kernel rimane snello: il dettaglio sta in `references/`. Carica solo ciò che serve quando serve.
 
 Catalogo completo anti-pattern: `references/conventions/anti-patterns.md`.
+Budget di sforzo per step (quanto vale spendere, e dove): `references/conventions/effort-budget.md` — candidato AP-019, 2026-09-10.
 
 ---
 

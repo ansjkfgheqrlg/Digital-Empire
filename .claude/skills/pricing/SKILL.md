@@ -113,6 +113,14 @@ Ask: "As a customer uses more of [metric], do they get more value?"
 - **Support level** — Email → Priority → Dedicated
 - **Access** — API, SSO, custom branding
 
+**Vincolo sul gating (vale identico per upsell e add-on):** il tier d'ingresso deve restare
+percepito come **completo per il lavoro che promette di fare**. Un gating che toglie dal tier basso
+qualcosa che gli era dovuto, per poi rivenderlo piu' in alto, fa sentire ingannato chi ha gia'
+comprato: il tier superiore deve aggiungere un lavoro nuovo, non restituire un pezzo mancante. Stesso
+errore in forma diversa: vendere il tier superiore come variazione cosmetica del precedente.
+Fonte: studio Andrei Pascu, outFunnel Lezione 11 (KA-05 e KA-07 punto 2 — la stessa regola
+vista da due angoli, il vincolo piu' insistito della lezione) — candidato AP-017, innestato 2026-09-10.
+
 **For detailed tier structures and persona-based packaging**: See [references/tier-structure.md](references/tier-structure.md)
 
 ---

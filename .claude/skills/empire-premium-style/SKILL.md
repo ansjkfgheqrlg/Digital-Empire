@@ -1,136 +1,71 @@
 ---
 name: empire-premium-style
-description: "Trasforma QUALSIASI sito esistente (HTML statico, Next.js, React, Vue, WordPress export, ecc.) nello stile ultra-premium di Digital Empire — stesso design system di ccm-premium: palette ink/paper/grey + orange #fb4604 + silver-mixed gradients, tipografia Onest variabile, grana fine fissa a doppio layer, card-dark/card-paper/card-silver-orange, bubble orange/silver/ink, silver-chip flottanti, pre-headline tag, corner brackets, btn-orange con glow, marquee, step-num, hl-block highlight. Stack obbligatorio: Next.js 16 App Router + Tailwind v4 + Lenis smooth scroll + Framer Motion reveal + GSAP ScrollTrigger + lucide-react + Onest font. MANTIENE la struttura delle sezioni originali (non impone architettura), ma rifà OGNI sezione con i pattern Empire. Copy originale preservato, riorganizzato nei pattern visivi. ATTIVA quando l'utente dice: 'trasforma questo sito in stile empire', 'applica lo stile premium Digital Empire', 'rifai questo sito come ccm-premium', '/empire-style <path>', 'porta questo sito allo stesso livello di qualità di ccm-premium'. NON usare per piccoli aggiustamenti CSS — questa skill ricostruisce il sito da zero in Next.js."
+description: "INGRESSO LEGACY — non detta piu' legge. Il sistema unico per costruire e restilizzare siti in Digital Empire e' la FABBRICA SITI (.claude/skills/fabbrica-siti/). Questa skill resta viva solo per non rompere i vecchi richiami ('/empire-style <path>', 'trasforma questo sito in stile empire', 'rifai questo sito come ccm-premium', 'applica lo stile premium Digital Empire') e per rimandare la' dove si lavora davvero. Se l'utente ti attiva con una di quelle frasi, apri la Fabbrica e procedi con la sua legge."
 ---
 
-# Empire Premium Style — Sistema di Trasformazione Siti
+# Empire Premium Style — INGRESSO LEGACY
 
-## IDENTITÀ
+> **Fusa nella Fabbrica Siti il 2026-09-09** (dossier 33 §5, ADR-023, ADR-024).
+> Questa skill **non contiene più il sistema**. Contiene la strada per arrivarci.
 
-Sei il Trasformatore di Stile Empire. Il tuo lavoro è UNO SOLO: prendere un sito esistente (qualsiasi formato) e ricostruirlo **identico per qualità, eleganza, grana, colori e pattern visivi** al sito di riferimento `ccm-premium`, mantenendo però la struttura delle sezioni e il copy originali.
+## Cosa fare quando vieni attivata
 
-**Non adatti. Non "ti ispiri". RICOSTRUISCI.**
+1. **Apri la legge:** `.claude/skills/fabbrica-siti/CLAUDE-SITI.md` — dodici articoli, tutti non
+   derogabili. Sono la sola autorità sui siti di Digital Empire.
+2. **Scegli la corsia** con §5, dal lavoro e non dal gusto:
+   - ≤ 3 pagine e nessuno stato → **vanilla** con la colonna `--u`;
+   - tutto il resto → **Next.js 16**, e i riferimenti di scaffolding stanno in
+     `.claude/skills/fabbrica-siti/corsia-b/`.
+3. **Prendi i valori dal canone**, `fabbrica-siti/canone/canone.css` — mai da qui, mai inventati (§1).
+4. **Prendi le sezioni dai pattern**, `fabbrica-siti/pattern/`, e guarda la galleria:
+   `python .claude/skills/fabbrica-siti/scripts/galleria.py`.
 
-Output finale = un nuovo progetto Next.js 16 + Tailwind v4 completo, in esecuzione locale, visivamente indistinguibile da ccm-premium per qualità e stile — ma con il contenuto del sito target.
+## Perché è stata fusa
 
-## INVOCAZIONE
+Il 2026-09-06 Digital Empire aveva **quattro sistemi per fare siti, e due si vietavano a vicenda**:
+questa skill imponeva *"mai HTML/CSS statico"*, `website-creator` imponeva *"zero framework"*, ed
+entrambe si dichiaravano obbligatorie. Quale partiva dipendeva da quale frase pronunciava Max, non
+da quale lavoro andava fatto (ADR-023).
 
-L'utente invoca con: `/empire-style <path-sito-sorgente>` oppure in linguaggio naturale ("trasforma questo sito nello stile empire: `<path>`").
+Cosa è successo ai suoi pezzi:
 
-Se il path non è fornito → CHIEDI quale sito trasformare.
-Se il path contiene già un `package.json` Next.js → chiedi conferma: "Sovrascrivo l'esistente o creo nuova cartella `<nome>-empire/`?". Default: nuova cartella.
-
-## PRINCIPI NON NEGOZIABILI
-
-1. **STACK OBBLIGATORIO** — Next.js 16 App Router + Tailwind v4 + Lenis + Framer Motion + GSAP + lucide-react + font Onest. Mai HTML/CSS statico. Mai Pages Router.
-2. **TOKEN FROZEN** — Palette, gradient, shadow, radius, keyframes, classi utility SONO ESATTAMENTE quelle di `references/design-tokens.css`. Non modificarli mai (l'utente chiederà modifiche manuali successivamente).
-3. **GRANA SEMPRE** — `.grain-fine` sul body è OBBLIGATORIO. Doppio layer SVG turbulence con blend overlay + hard-light. Mai rimuoverla.
-4. **SEZIONI ALTERNATE** — Il fondo alterna bg-ink (#1c1c1c) → bg-paper (#fafafa) → bg-grey (#e8e8e6) → bg-ink-2 (#0a0a0a). Ogni sezione separata da `section-border-t`.
-5. **STRUTTURA ORIGINALE RISPETTATA** — L'ordine e il contenuto delle sezioni del sito source rimane. NON forzare APSOC, NON forzare sezioni che non esistono nel source.
-6. **COPY PRESERVATO** — Non riscrivere il copy. Al massimo adatta microcopy di CTA/eyebrow per coerenza (es: bubble "Sparkles · Eyebrow text").
-7. **OGNI SEZIONE = UN PATTERN EMPIRE** — Mappa ogni sezione source al pattern più affine in `references/section-patterns.md` (hero, stats, per-chi-è, timeline, value-stack, chi-sono, cosa-esci-con, testimonials, FAQ, garanzia/CTA-finale, footer).
-8. **REVEAL OVUNQUE** — Ogni blocco principale wrappato in `<Reveal>` con delay crescenti 0 → 0.1 → 0.2 → 0.3.
-9. **LENIS + GSAP** — Smooth scroll via `<SmoothScrollProvider>` nel layout. Sempre.
-10. **TIPO = ONEST VARIABILE** — Pesi 300-800, feature settings ss01 cv11. H1/H2 tracking -0.025em, line-height 1.08.
-11. **H1/H2 SEMPRE SILVER-MIXED** — Pattern standard: `<span className="text-silver-white">…</span><br/><span className="text-silver-orange">…</span>` su dark, `text-silver-black` + `text-orange-pure italic` su paper/grey.
-12. **CTA = btn-orange con ArrowRight** — Il pattern CTA è uno solo in tutto il sito. 2+ CTA per pagina, stessa azione, framing diverso.
-13. **NON GENERARE IMMAGINI** — Se il source ha immagini, referenziale. Se mancano, usa placeholder lucide-react + bubble/card. Mai inventare URL.
-14. **VERIFICA BUILD** — Dopo generazione: `cd <dest> && npm install && npm run build` deve passare. Se fallisce, fixa PRIMA di consegnare.
-
-## PROCESSO OPERATIVO (8 STEP)
-
-### STEP 0 — ACQUISIZIONE SOURCE
-- Leggi TUTTO il sito sorgente: HTML, CSS, JS, componenti, assets.
-- Se è HTML statico multi-pagina: identifica homepage + pagine interne.
-- Se è Next.js/React: mappa le rotte.
-- Estrai: struttura sezioni (ordine + tipo), copy (headline, body, CTA, FAQ, testimonial), asset paths, meta.
-- Output interno: `SITE-MAP.md` mentale con array `[{sezione, tipo, copy, assets}]`.
-
-### STEP 1 — CLASSIFICAZIONE SEZIONI
-Per ogni sezione del source, assegna UNO dei pattern Empire (vedi `references/section-patterns.md`):
-
-| Tipo source | Pattern Empire |
+| Pezzo | Destino |
 |---|---|
-| Hero / header | `hero-dark-chips` |
-| Stats / numeri | `stats-3-cards-dark` |
-| Features / benefici | `features-cards-paper` |
-| Come funziona / step | `timeline-paper` |
-| Pricing / value stack | `value-stack-dark` |
-| Chi siamo | `chi-sono-split-dark` |
-| Testimonial | `testimonials-3-paper` |
-| FAQ | `faq-accordion-paper` |
-| Per chi è / non è | `is-for-dual-dark` |
-| CTA finale / garanzia | `cta-final-dark-bracketed` |
-| Footer | `footer-ink-2` |
-| (sezione non mappabile) | `generic-card-section` + ragionamento |
+| I nove colori di `design-tokens.css` | **erano già identici** a quelli del canone, carattere per carattere: niente da fondere |
+| I 53 token `--color-*` (ponte Tailwind/shadcn) | restano di Corsia B, non entrano nella legge |
+| `reference-page-full.tsx` (837 righe, 17 sezioni) | → `fabbrica-siti/corsia-b/riferimenti/` |
+| `build-playbook`, `layout-template`, `package.json`, `components` | → `fabbrica-siti/corsia-b/riferimenti/` |
+| `section-patterns.md` (10 puntatori su 17 stale) | **morto**, sostituito dalla galleria generata |
+| Questa `SKILL.md` | ingresso legacy: rimanda e basta |
 
-### STEP 2 — SCAFFOLD NEXT.JS
-Crea cartella `<source-name>-empire/`. Genera:
-- `package.json` (copia da `references/package.json.md`, adatta name)
-- `next.config.ts`, `tsconfig.json`, `postcss.config.mjs`, `eslint.config.mjs`
-- `src/app/globals.css` (copia INTEGRALE da `references/design-tokens.css`)
-- `src/app/layout.tsx` (da `references/layout-template.md`, adatta metadata)
-- `src/lib/utils.ts` (`cn` helper)
-- `src/components/smooth-scroll-provider.tsx`, `reveal.tsx`, `count-up.tsx`, `sticky-cta.tsx` (da `references/components/`)
+## Le due regole che questa skill sbagliava, e che la legge ha corretto
 
-### STEP 3 — GENERAZIONE PAGINE
-- Homepage: `src/app/page.tsx` con struttura sezioni del source, ogni sezione scritta nel pattern Empire assegnato.
-- Pagine interne: `src/app/<slug>/page.tsx` ciascuna con hero + sezioni pertinenti.
-- Ogni sezione wrappata in `<Reveal>`. Ogni sezione rispetta il bg alternato.
-- Hero SEMPRE contiene: marquee border-b, silver-chip flottanti (4), bubble-orange eyebrow, pre-headline, H1 silver-mixed, subtitle con `<strong className="text-silver-orange">` + `hl-block` su frase chiave, CTA large + shield.
+1. **Imponeva uno stack unico** (*"Next.js 16 obbligatorio, mai HTML statico"*). La legge sceglie
+   dalla vita del pezzo: una pagina di cassa da 1.500 px in Next.js è un motore acceso per spostare
+   una sedia.
+2. **Congelava i pattern in un file di prosa.** Una prosa non si accorge di diventare falsa: dieci
+   dei suoi diciassette puntatori erano già sbagliati quando è stata fusa. La galleria si rigenera
+   dal disco.
 
-### STEP 4 — APPLICAZIONE PATTERN
-Per ogni pattern usato, consulta `references/section-patterns.md` e copia il codice esatto, sostituendo solo il copy/contenuti con quelli del source.
+---
 
-### STEP 5 — MICROCOPY COHESION
-- Bubble eyebrow in ogni sezione (es. "CTA · Prenota", "Cosa otteni", "Come funziona").
-- "Sparkles", "Zap", "Clock", "Shield", "Check", "X", "ArrowRight" da `lucide-react` come icone di default.
-- Step numbers nelle timeline/come-funziona.
+## Connessioni
+- `.claude/skills/fabbrica-siti/CLAUDE-SITI.md` — la legge
+- `.claude/skills/fabbrica-siti/corsia-b/LEGGIMI.md` — dove sono finiti i riferimenti
+- `PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md` · `PIANO-MAESTRO/33-...` §5
+- `company/Memory/decisions/ADR-023-fabbrica-siti-due-corsie.md` · `ADR-024-canone-v2-primo-strato.md`
 
-### STEP 6 — METADATA + SEO
-- `layout.tsx`: title, description, openGraph, viewport themeColor "#2a2a2a", `robots: { index: false, follow: false }` di default (override se source è pubblico).
-- Lang da source (default "it").
+---
 
-### STEP 7 — BUILD + VERIFICA
-```bash
-cd <dest> && npm install --silent && npm run build
-```
-Se errori di tipo/lint → fixa. Se errori di import shadcn → rimuovi `@import "shadcn/tailwind.css"` da globals e adatta.
+## Nota per chi cerca il canone visivo di Andrei Pascu (Sentinella, 2026-09-10)
 
-### STEP 8 — REPORT FINALE
-Al termine produci un report sintetico:
-- Path del nuovo progetto
-- Mapping sezione source → pattern Empire usato
-- Comando per avviare: `cd <path> && npm run dev`
-- Lista di cose che l'utente dovrà decidere manualmente (asset mancanti, link esterni da rimpiazzare, form handlers)
-
-## REFERENCE FILES — COSA LEGGERE
-
-| File | Quando |
-|---|---|
-| `references/design-tokens.css` | STEP 2. Copialo INTEGRALE come `globals.css`. |
-| `references/layout-template.md` | STEP 2. Template `layout.tsx`. |
-| `references/components.md` | STEP 2. Codice completo di Reveal, CountUp, StickyCTA, SmoothScrollProvider, cn. |
-| `references/section-patterns.md` | STEP 3-4. Codice esatto per ogni pattern sezione. |
-| `references/package.json.md` | STEP 2. Deps frozen. |
-| `references/build-playbook.md` | STEP 7. Troubleshooting build. |
-
-## TONE & VOICE
-
-Preservato dal source. Non alterare il TOV del sito originale. La skill trasforma lo STILE VISIVO, non la voce.
-
-## STANDARD DI QUALITÀ MINIMO
-
-Ogni trasformazione DEVE:
-- Compilare senza errori (`npm run build` OK)
-- Avere grana `.grain-fine` visibile sul body
-- Avere almeno 1 marquee, 4 silver-chip (se hero ampia), 2+ card-paper, 2+ card-dark, 3+ bubble diverse
-- Avere Lenis attivo via SmoothScrollProvider
-- Avere Reveal su ogni h2/paragrafo principale
-- Usare text-silver-white/silver-orange/silver-black su TUTTE le H1/H2
-- Usare font Onest con weights 300-800
-- Avere viewport themeColor "#2a2a2a"
-- Mantenere fedelmente il copy source (zero parafrasi)
-- Mantenere fedelmente l'ordine delle sezioni source
-
-Se uno di questi fallisce, NON consegnare. Fixa prima.
+Chi cerca dove innestare i risultati del site-study visivo di Andrei Pascu
+(`competitor/Andrei Pascu/site-study/SINTESI-SISTEMA-VISIVO.md`) **non trova qui la destinazione
+giusta**: questa skill non porta più contenuto proprio. La legge vera (`fabbrica-siti/CLAUDE-SITI.md`)
+già incorpora buona parte dello studio Andrei Pascu (§8, §11, §12 citano
+`site-study/reports/11-armageddon...`, `24-25-27-28-macchina-del-funnel...`). Ciò che resta NUOVO
+nella sintesi dell'onda G del 2026-09-09 (temperatura del traffico che governa la forma della
+pagina, densità immagini/1.000px come gate, carattere sempre dichiarato) non è stato ancora
+proposto come articolo di legge qui: farlo richiede un ADR (vedi "Come si cambia questa legge" in
+`CLAUDE-SITI.md`), fuori dal perimetro di questa patch — segnalato a Max/Emperator, non applicato
+in silenzio.

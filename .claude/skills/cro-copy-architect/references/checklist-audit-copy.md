@@ -116,6 +116,28 @@ Punteggio sezione: ___/5
 
 ---
 
+## GATE PREZZO E PROVA (bonus check, non a punteggio — fonte: studio Andrei Pascu site-study, onda
+G, `SINTESI-SISTEMA-COPY.md` §3/§6/§8, 2026-09-09)
+
+Prima di consegnare copy che include un prezzo o una prova sociale, verifica:
+
+- [ ] Se il prezzo è un **bundle/pacchetto**, la somma delle parti è mostrata da qualche parte nel
+  funnel (anche solo in una riga) — mai solo il totale come blocco unico. Il difetto misurato
+  (784€ mai spiegato come 139+98+98+250+199) è un costo di fiducia che si paga zero a scriverlo.
+- [ ] Su un'offerta ad alto ticket, c'è una domanda di auto-stima del valore ("quanto pagheresti
+  per [risultato]?") PRIMA del reveal del prezzo (PATTERN 13).
+- [ ] Ogni "recensione verificata"/"testimonial" citata **linka una fonte esterna reale**
+  (Trustpilot, Google Review, post pubblico) oppure è dichiarata esplicitamente come interna — mai
+  presentata come verificabile quando non lo è. Il caso misurato: stesso sito, stessa etichetta
+  "recensioni", due pagine con verificabilità opposta (widget Trustpilot reale vs 42 screenshot con
+  `alt=""` e zero link).
+- [ ] Il numero di fonti esterne nella sezione Prova è coerente con la concretezza del prodotto
+  (PATTERN 12) — non è stato lasciato a 0 solo perché il prodotto è un mindset/percorso.
+- [ ] La qualificazione negativa ("non è per tutti"), se presente, è su un prodotto
+  verticale/tecnico avanzato — non su un prodotto di massa (PATTERN 11).
+
+---
+
 ## PUNTEGGIO TOTALE: ___/40
 
 ### INTERPRETAZIONE

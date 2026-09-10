@@ -2,7 +2,8 @@
 
 > **Aperto:** 2026-09-06 · **Committente:** Max · **Esecutore:** EMPERATOR
 > **Assetto:** GOD EMPEROR DOOM · **Ripresa:** EMP-MCC4
-> **Stato:** Critica 2 chiusa (2026-09-10) — 15 rilievi, 4 FATALI. Si riprende con V3.
+> **Stato:** V3 scritta (2026-09-10) — 13 correzioni, §19 riscritta per garantire che Gael non sia
+> mai bloccato (ordine di Max). 2 appendici di ricognizione in corso.
 
 ---
 
@@ -185,6 +186,8 @@ Ogni attivazione è dichiarata per iscritto (ADR-015). Questa tabella si aggiorn
 
 | 2026-09-10 | SENTINELLA (fable) | CRITICA2-EREDITA | le 3 domande in eredità di V2 (§28 finale): consumatore quotidiano, innesto vs fondazione, E0 vendita-vs-pubblicazione | `_critica-v2/CRITICA-2-1-DOMANDE-EREDITA.md` | ✅ 4 rilievi (3 FATALI, 1 GRAVE) |
 | 2026-09-10 | SENTINELLA (fable) | CRITICA2-SCELTE | le 5 inversioni V1→V2 e i 7 punti di §28 non coperti: reggono come scelte architetturali o sono rattoppi? | `_critica-v2/CRITICA-2-2-SCELTE-ARCHITETTURALI.md` | ✅ 11 rilievi (1 FATALE, 6 GRAVI, 4 MEDI), 2 reggono |
+| 2026-09-10 | SENTINELLA (fable) | V3-APPENDICE-B | le 8 condizioni V/C su ciascuno dei 15 ecosistemi, PASSA/NON PASSA/NON VALUTATO | `_critica-v2/APPENDICE-B-7-CONDIZIONI-15-ECOSISTEMI.md` | 🔄 |
+| 2026-09-10 | SENTINELLA (fable) | V3-APPENDICE-D | i dieci schemi di comunicazione confrontati campo-per-campo con HC-v2 | `_critica-v2/APPENDICE-D-MAPPA-DIECI-SCHEMI.md` | 🔄 |
 
 ### ⚠️ Prima lezione del piano, pagata sul campo (2026-09-06)
 
@@ -219,8 +222,8 @@ meno, e quando cade perde meno.
 | **Critica 1** | ✅ **41 rilievi, 10 FATALI** | 2026-09-06 |
 | **V2 — piano ampliato** | ✅ **1.085 righe · 41 rilievi recepiti** | 2026-09-07 |
 | **Critica 2** | ✅ **15 rilievi (4 FATALI · 7 GRAVI · 4 MEDI), 2 REGGE** — `_critica-v2/` | 2026-09-10 |
-| **V3 — piano assestato** | ⬜ **← SI RIPRENDE DA QUI** | |
-| V4 — piano esecutivo | ⬜ | |
+| **V3 — piano assestato** | ✅ **13 correzioni scritte** (`V3-PIANO-ASSESTATO.md`), 2 appendici in corso | 2026-09-10 |
+| V4 — piano esecutivo | ⬜ **← SI RIPRENDE DA QUI** | |
 | **Via alla costruzione** | ⬜ | **solo dopo V4, per ordine di Max** |
 
 **Divieto in vigore fino a V4:** nessuna modifica costruttiva al repository. Ordine esplicito
