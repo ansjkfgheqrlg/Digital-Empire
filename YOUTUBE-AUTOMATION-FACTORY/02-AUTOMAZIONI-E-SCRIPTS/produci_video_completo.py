@@ -290,6 +290,65 @@ def _prossima_cartella_pronti() -> str:
     return os.path.join(VIDEO_PRONTI_DIR, "video-%02d" % ((max(usati) + 1) if usati else 1))
 
 
+def _leggi_brief_miniatura() -> dict | None:
+    """Il brief RICCO scritto da apex7_orchestrator.run_phase_5 (F5) e validato da
+    validate_schemas.py: testo gia' spezzato riga per riga (leggibile in miniatura piccola,
+    non una frase unica) + riferimento alla copertina REALE del video sorgente, scaricata da
+    _ensure_source_thumbnail in 05-TEMPLATES-E-KIT/source-thumbnail/. Oggi lo leggeva solo
+    arena_thumbnail.py (il generatore automatico, spento di default): consegna_a_max non lo
+    apriva nemmeno, e Max riceveva un brief povero mentre uno ricco stava gia' su disco.
+
+    Se il file non c'e' (produzione lanciata con --skip-thumbnail in F5, o per un'altra strada)
+    o e' illeggibile/corrotto, si ritorna None: il chiamante deve degradare al brief generico,
+    MAI far fallire la consegna per un file di contorno mancante."""
+    brief = _leggi_json(os.path.join(TEMPLATES_DIR, "brief-miniatura.json"), None)
+    return brief if isinstance(brief, dict) else None
+
+
+def _righe_brief_copertina(titolo_finale: str) -> list[str]:
+    """Sezione 'Copertina' di copy.md. REGOLA PERMANENTE DI MAX: la copertina la fa lui a mano,
+    questa funzione non genera nessuna immagine — prepara solo il materiale che gli arriva
+    davanti, cosi' non deve ricostruirlo a mente da un titolo e una frase generica.
+
+    Con brief-miniatura.json su disco: righe di testo GIA' spezzate (non riscritte qui) +
+    percorso assoluto della copertina reale del video sorgente, se il file e' davvero presente.
+    Senza: il testo generico di sempre, invariato — degradare non deve MAI rompere la consegna."""
+    righe = [
+        '**Titolo:** "%s"' % titolo_finale,
+        "**Formato:** 16:9, stampo Legami d'Amore, testo oro/ambra.",
+        "**Leggibilita':** il titolo deve leggersi anche in miniatura piccola.",
+    ]
+    brief = _leggi_brief_miniatura()
+    if brief:
+        linee = brief.get("text_overlay_lines") or []
+        evidenziate = brief.get("text_overlay_highlight_lines") or []
+        if linee and all(isinstance(r, str) for r in linee):
+            righe.append("")
+            righe.append("**Testo in copertina (gia' spezzato riga per riga, non riscrivere):**")
+            marca_evidenza = bool(evidenziate) and evidenziate != linee
+            for r in linee:
+                suffisso = "  <- evidenziata" if marca_evidenza and r in evidenziate else ""
+                righe.append("  %s%s" % (r, suffisso))
+        rel = brief.get("source_thumbnail")
+        if isinstance(rel, str) and rel:
+            assoluto = os.path.join(TEMPLATES_DIR, rel)
+            if os.path.exists(assoluto):
+                righe.append("")
+                righe.append("**Riferimento visivo reale (copertina del video sorgente, da adattare):**")
+                righe.append("  %s" % assoluto)
+        stile = brief.get("source_style")
+        if isinstance(stile, str) and stile:
+            righe.append("")
+            righe.append("**Stile da mantenere:** %s" % stile)
+        concept = brief.get("concept")
+        if isinstance(concept, str) and concept:
+            righe.append("**Scena/concept:** %s" % concept)
+    righe.append("")
+    righe.append("**Dove:** il file .png va messo dentro questa stessa cartella.")
+    righe.append("**Dopo:** upload in privato con le pubblicita' attive.")
+    return righe
+
+
 def consegna_a_max(mp4: str, titolo: str, lavoro: dict) -> str | None:
     """Il pezzo che finora NON esisteva nel codice e veniva rifatto a mano ogni volta con
     script usa-e-getta (_finish_video02.py, _resume_video05_*.py ...): mettere il lavoro
@@ -332,11 +391,7 @@ def consegna_a_max(mp4: str, titolo: str, lavoro: dict) -> str | None:
         "",
         "## Copertina - LA FA MAX (brief completo, da consegnare SEMPRE senza che lo chieda)",
         "",
-        '**Titolo:** "%s"' % titolo_finale,
-        "**Formato:** 16:9, stampo Legami d'Amore, testo oro/ambra.",
-        "**Leggibilita':** il titolo deve leggersi anche in miniatura piccola.",
-        "**Dove:** il file .png va messo dentro questa stessa cartella.",
-        "**Dopo:** upload in privato con le pubblicita' attive.",
+    ] + _righe_brief_copertina(titolo_finale) + [
         "",
         "## Upload",
         "Quando la copertina e' in cartella, l'upload parte con:",
@@ -356,7 +411,17 @@ def consegna_a_max(mp4: str, titolo: str, lavoro: dict) -> str | None:
     print("  --- BRIEF COPERTINA PER MAX (la fa lui, sempre) ---")
     print("  Titolo:    %s" % titolo_finale)
     print("  Formato:   16:9, stampo Legami d'Amore, testo oro/ambra")
-    print("  Leggibile: il titolo deve leggersi anche in miniatura piccola")
+    brief_ricco = _leggi_brief_miniatura()
+    if brief_ricco:
+        linee = brief_ricco.get("text_overlay_lines") or []
+        if linee:
+            print("  Testo:     " + " / ".join(linee))
+        rel = brief_ricco.get("source_thumbnail")
+        assoluto = os.path.join(TEMPLATES_DIR, rel) if isinstance(rel, str) and rel else None
+        if assoluto and os.path.exists(assoluto):
+            print("  Riferimento reale: %s" % assoluto)
+    else:
+        print("  Leggibile: il titolo deve leggersi anche in miniatura piccola")
     print("  Dove:      il .png va messo in questa stessa cartella")
     print("  Poi:       avvisa e parte l'upload in privato con le pubblicita' attive")
     try:
