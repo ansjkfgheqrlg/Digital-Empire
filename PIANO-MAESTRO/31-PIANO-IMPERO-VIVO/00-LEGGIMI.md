@@ -2,7 +2,7 @@
 
 > **Aperto:** 2026-09-06 · **Committente:** Max · **Esecutore:** EMPERATOR
 > **Assetto:** GOD EMPEROR DOOM · **Ripresa:** EMP-MCC4
-> **Stato:** Critica 2 in corso (avviata 2026-09-10, 2 sentinelle fable indipendenti)
+> **Stato:** Critica 2 chiusa (2026-09-10) — 15 rilievi, 4 FATALI. Si riprende con V3.
 
 ---
 
@@ -183,8 +183,8 @@ Ogni attivazione è dichiarata per iscritto (ADR-015). Questa tabella si aggiorn
 | 2026-09-06 | DOOM BOT (opus) | 03A-POPOLAZIONE | i due censimenti agenti, la specifica C1..C6, le ondate | `dati/censimento-03a-popolazione.md` | 🔄 |
 | 2026-09-06 | DOOM BOT (opus) | 03B-REGOLAMENTO | cadute reali → regolamento, addestramento, modulo d'ingaggio | `dati/censimento-03b-regolamento-forze.md` | 🔄 |
 
-| 2026-09-10 | SENTINELLA (fable) | CRITICA2-EREDITA | le 3 domande in eredità di V2 (§28 finale): consumatore quotidiano, innesto vs fondazione, E0 vendita-vs-pubblicazione | `_critica-v2/CRITICA-2-1-DOMANDE-EREDITA.md` | 🔄 |
-| 2026-09-10 | SENTINELLA (fable) | CRITICA2-SCELTE | le 5 inversioni V1→V2 e i 7 punti di §28 non coperti: reggono come scelte architetturali o sono rattoppi? | `_critica-v2/CRITICA-2-2-SCELTE-ARCHITETTURALI.md` | 🔄 |
+| 2026-09-10 | SENTINELLA (fable) | CRITICA2-EREDITA | le 3 domande in eredità di V2 (§28 finale): consumatore quotidiano, innesto vs fondazione, E0 vendita-vs-pubblicazione | `_critica-v2/CRITICA-2-1-DOMANDE-EREDITA.md` | ✅ 4 rilievi (3 FATALI, 1 GRAVE) |
+| 2026-09-10 | SENTINELLA (fable) | CRITICA2-SCELTE | le 5 inversioni V1→V2 e i 7 punti di §28 non coperti: reggono come scelte architetturali o sono rattoppi? | `_critica-v2/CRITICA-2-2-SCELTE-ARCHITETTURALI.md` | ✅ 11 rilievi (1 FATALE, 6 GRAVI, 4 MEDI), 2 reggono |
 
 ### ⚠️ Prima lezione del piano, pagata sul campo (2026-09-06)
 
@@ -225,4 +225,5 @@ meno, e quando cade perde meno.
 
 **Divieto in vigore fino a V4:** nessuna modifica costruttiva al repository. Ordine esplicito
 di Max del 2026-09-06 — *«non puoi adesso iniziare a modificare, fare piccole cose, quando poi
-nel complesso magari andranno a intralcio»*. Si scrive il piano. Si legge, si misur
+nel complesso magari andranno a intralcio»*. Si scrive il piano. Si legge, si misura, si
+progetta. **Non si tocca.**
