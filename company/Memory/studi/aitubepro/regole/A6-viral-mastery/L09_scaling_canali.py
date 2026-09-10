@@ -47,8 +47,11 @@ REGOLE = [
                    "canale — oggi e' implicitamente sempre italiano (voice_id/voice_gender sono "
                    "gia' per-canale, la lingua no) — prerequisito tecnico diretto per "
                    "A6-L09-01."),
-        "prova": "codice: apex7_orchestrator.py:84-114 (dict CANALI, esempio dosementale) non ha nessun campo 'lingua'",
-        "fonte": "schermo",
+        "prova": ("parlato @ 02:52-05:30 (spagnolo, francese, portoghese, inglese trattati come "
+                  "variabile esplicita del canale); verificato nel codice, non a schermo nel "
+                  "video: apex7_orchestrator.py:84-114 (dict CANALI, esempio dosementale) non "
+                  "ha nessun campo 'lingua'"),
+        "fonte": "parlato",
         "tocca": "02-AUTOMAZIONI-E-SCRIPTS/apex7_orchestrator.py",
         "azione": "costruisci",
         "binario": "B",

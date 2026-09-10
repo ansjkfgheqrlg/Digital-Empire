@@ -1,3 +1,29 @@
+## 🟣 2026-09-10 — Critica 2 chiusa: 15 rilievi, 4 FATALI — EMP-MCC4 riprende con V3 — CP-20260910-YFE9
+
+**2 sentinelle fable rientrate** (dichiarazione sopra, ora chiusa). V2 **non va invertita**: le
+5 scelte architetturali reggono in entrambi i giudizi indipendenti, ma sono specificate a metà.
+15 rilievi in `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/_critica-v2/`: **4 FATALI** — (1) la legge del
+consumatore quotidiano è oggi inapplicabile per 2 funzioni su 3 (la riga richiesta è vietata
+dalla forma fissa del battito) *e* misura la freschezza del rapporto, non il servizio del flusso
+(due angoli, stesso vizio); (2) l'innesto non ha mai scelto fail-open/fail-closed, e Preventa —
+il "flusso che già corre" — è ferma dal 22/8; (3) il fusibile R5 scatterebbe per costruzione: 23
+dei 26 pezzi caricabili non hanno prezzo per natura, il prezzo del Manuale è sparito fra V1 e V2.
+Dettagli e le altre 11 (7 GRAVI, 4 MEDI, 2 reggono): checkpoint + i due file di critica.
+
+**⚠️ Un rilievo non aspetta V3 — B-7, il più pericoloso dei 15 per chi lo ha trovato:**
+`29-ECOSISTEMA-LANCI` è **Attivo, firmato il giorno DOPO V2** (08/09), esecutore Gael. V2 §19
+conosce solo 2 dei 3 carichi di Gael (EMPIRE DESK vs questo piano) — LANCI manca, e V2 chiede ai
+motori di EmpireDesk `register(sub)`, un disegno mai confrontato col suo. **Gael: quando apri
+questo file — leggi `_critica-v2/CRITICA-2-2-SCELTE-ARCHITETTURALI.md` rilievo B-7 e dimmi se
+`register(sub)` collide con B0-B4 di EMPIRE DESK.** Non è un blocco: se non rispondi, il default
+è che E5b (questo piano) non si costruisce finché non rispondi — il tuo lavoro su LANCI e
+EMPIRE DESK non aspetta nessuno (ADR-028).
+
+**Puntatore corretto nello stesso turno**: `31-PIANO-IMPERO-VIVO/00-LEGGIMI.md` §5 diceva
+ancora "LANCI in attesa di ADR-023" — stantio da 2 giorni, trovato dalla critica.
+
+**Prossimo passo:** V3 — chiudere i 13 rilievi rimanenti nel piano assestato.
+
 ## ⚠️ COORDINAMENTO — 2026-09-10, IN CORSO — chiusura categoria A6 + 8 script nuovi della fabbrica YouTube
 
 **Gael, Neri: non toccate queste cartelle finche' questo blocco e' qui.**
