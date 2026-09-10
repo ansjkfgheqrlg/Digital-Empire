@@ -5,8 +5,5 @@
   # i file statici e `/api/iscrizione` risponde 404 (B-020, 2026-09-09).
   functions = "netlify/functions"
 
-[build.environment]
-  NPM_FLAGS = "--legacy-peer-deps"
-
 # La chiave di Brevo NON sta nel codice: si imposta nel pannello del sito,
 # Site settings -> Environment variables, come BREVO_API_KEY.

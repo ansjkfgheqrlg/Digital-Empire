@@ -1638,7 +1638,7 @@
       }
 
       /* === Brevo Integration (shared logic for both forms) === */
-      var API_KEY = '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';
+      // chiave rimossa: si passa da /api/iscrizione (B-020)
       var LIST_ID = 3;
       var BTN_TEXT = 'scarica il framework gratuito';
 
@@ -1673,19 +1673,13 @@
           status.className = 'form-status';
 
           try {
-            var response = await fetch('https://api.brevo.com/v3/contacts', {
+            var response = await fetch('/api/iscrizione', {
               method: 'POST',
               headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'api-key': API_KEY
               },
-              body: JSON.stringify({
-                email: email,
-                attributes: { FIRSTNAME: nome },
-                listIds: [LIST_ID],
-                updateEnabled: true
-              })
+              body: JSON.stringify({ nome, email })
             });
 
             if (response.ok || response.status === 204) {

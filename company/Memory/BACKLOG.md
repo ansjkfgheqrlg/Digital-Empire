@@ -398,3 +398,12 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   scadenze): il gate li stampa in chiaro come debito a ogni esecuzione, quindi non e' un buco
   silenzioso — ma resta un debito. Provato su `Crea siti/Siti CCM/manuale.html`: PASS con 3 WARN
   veri (anno 2026 scritto a mano due volte, prezzo non dichiarato con `data-prezzo`).
+
+- **B-061 — NUOVA.** `ccm-webinar/index.html` (due copie: `Crea siti/Siti CCM/` e
+  `Lancio corso skill beast/Sale pag/Siti CCM/`) chiama `api.brevo.com` dal browser con
+  il segnaposto letterale `TUA_API_KEY_BREVO`. **Non e' una falla** (non c'e' nessuna
+  chiave vera), e' un **form che non ha mai funzionato**: chiunque l'abbia compilato non
+  e' mai finito in nessuna lista. Trovato il 2026-09-10 mentre si chiudeva B-020, e non
+  toccato li' per non allargare il lavoro. Il rimedio e' lo stesso gia' costruito:
+  puntarlo a `/api/iscrizione` e portargli accanto `netlify/functions/iscrizione.mjs`.
+  *Quando:* prima di mandare traffico a quella pagina, o alla prossima passata sui form.

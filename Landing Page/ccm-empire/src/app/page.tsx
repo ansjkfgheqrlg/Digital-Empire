@@ -29,10 +29,10 @@ import { StickyCTA } from "@/components/sticky-cta";
 import { FormEvent, useState } from "react";
 
 const COURSE_URL = "https://formazione-systemarchitect.netlify.app/";
-const API_KEY =
-  "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";
-const LIST_ID = 3;
-
+// La chiave non sta piu' qui: la chiamata passa da /api/iscrizione,
+// dove la chiave e' una variabile d'ambiente del sito (B-020).
+// LIST_ID vive adesso dentro la funzione /api/iscrizione: la lista di
+// destinazione e' una scelta del server, non del browser.
 function BrevoForm() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
@@ -60,19 +60,13 @@ function BrevoForm() {
     setStatusType("loading");
 
     try {
-      const response = await fetch("https://api.brevo.com/v3/contacts", {
+      const response = await fetch("/api/iscrizione", {
         method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
-          "api-key": API_KEY,
         },
-        body: JSON.stringify({
-          email,
-          attributes: { FIRSTNAME: nome, SELECTED_GUIDE: "Claude Code Mastery" },
-          listIds: [LIST_ID],
-          updateEnabled: true,
-        }),
+        body: JSON.stringify({ nome, email }),
       });
 
       if (response.ok || response.status === 204) {

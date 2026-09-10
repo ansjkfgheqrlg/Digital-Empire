@@ -5,7 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { StickyCTA } from "@/components/sticky-cta";
 import { useState, FormEvent, useRef } from "react";
 
-const API_KEY = "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";
+// chiave rimossa: si passa da /api/iscrizione (B-020)
 const LIST_ID = 3;
 
 function BrevoForm({ product, redirect }: { product: string; redirect: string }) {
@@ -34,19 +34,13 @@ function BrevoForm({ product, redirect }: { product: string; redirect: string })
     setStatusType("loading");
 
     try {
-      const response = await fetch("https://api.brevo.com/v3/contacts", {
+      const response = await fetch("/api/iscrizione", {
         method: "POST",
         headers: {
           "Accept": "application/json",
           "Content-Type": "application/json",
-          "api-key": API_KEY
         },
-        body: JSON.stringify({
-          email: email,
-          attributes: { FIRSTNAME: nome, SELECTED_GUIDE: product },
-          listIds: [LIST_ID],
-          updateEnabled: true
-        })
+        body: JSON.stringify({ nome, email })
       });
 
       if (response.ok || response.status === 204) {

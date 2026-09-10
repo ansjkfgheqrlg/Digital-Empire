@@ -726,19 +726,13 @@
         statusMsg.textContent = "";
 
         try {
-          const response = await fetch("https://api.brevo.com/v3/contacts", {
+          const response = await fetch("/api/iscrizione", {
             method: "POST",
             headers: {
               "Accept": "application/json",
               "Content-Type": "application/json",
-              "api-key": "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"
             },
-            body: JSON.stringify({
-              email: femail,
-              attributes: { FIRSTNAME: fname, SELECTED_GUIDE: productSelected },
-              listIds: [3],
-              updateEnabled: true
-            })
+            body: JSON.stringify({ nome, email })
           });
 
           if (response.ok || response.status === 204) {

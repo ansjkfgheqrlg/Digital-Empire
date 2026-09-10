@@ -450,7 +450,7 @@
     }, {passive:true});
 
     // Brevo form
-    const API_KEY='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', LIST_ID=3;
+    // chiave rimossa: si passa da /api/iscrizione (B-020), LIST_ID=3;
     const msg = document.getElementById('form-msg'), sbtn = document.getElementById('sub-btn');
     document.getElementById('brevo-form').addEventListener('submit', async e => {
       e.preventDefault();
@@ -460,9 +460,9 @@
       if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){msg.textContent='email non valida.';msg.style.color='#dc2626';return;}
       sbtn.disabled=true; msg.textContent='invio in corso...'; msg.style.color='#888';
       try {
-        const r = await fetch('https://api.brevo.com/v3/contacts',{
-          method:'POST', headers:{Accept:'application/json','Content-Type':'application/json','api-key':API_KEY},
-          body:JSON.stringify({email,attributes:{FIRSTNAME:nome,SELECTED_GUIDE:'Claude Code Mastery'},listIds:[LIST_ID],updateEnabled:true})
+        const r = await fetch('/api/iscrizione',{
+          method:'POST', headers:{Accept:'application/json','Content-Type':'application/json',},
+          body:JSON.stringify({ nome, email })
         });
         if(r.ok||r.status===204){
           try{localStorage.setItem('ccm_offer_start',String(Date.now()));}catch{}

@@ -1,2 +1,9 @@
 [build]
   publish = "dist"
+  # La cartella delle funzioni va dichiarata, altrimenti Netlify pubblica solo
+  # i file statici e `/api/iscrizione` risponde 404 (B-020, 2026-09-09).
+  functions = "netlify/functions"
+
+# La chiave di Brevo NON sta qui e non sta nel codice: si imposta nel pannello
+# del sito, Site settings -> Environment variables, come BREVO_API_KEY.
+# Prima del 2026-09-09 era scritta dentro il bundle servito al pubblico.
