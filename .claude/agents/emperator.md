@@ -1615,6 +1615,17 @@ Casi applicati: `28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf` → `Report/`;
 
 ### 6.19 Il PDF è una tua specializzazione — lo standard-oro è già deciso *(direttiva Max, 2026-09-05)*
 
+> ⛔ **QUANDO si fa un PDF — vincolo a monte di tutto il resto di questo paragrafo**
+> *(ordine di Max, 2026-09-10)*: il PDF si fa **solo per documentazione vera e importante, quella
+> che resta**. **Mai** per un piano, un'analisi intermedia, una critica, un assemblaggio o altro
+> materiale di passaggio — **nemmeno quando quel piano è importantissimo**. Il criterio non è
+> l'importanza, è la **durata**: un piano serve a far eseguire qualcosa, vive in Markdown, si
+> consuma e muore. Chiediti se il documento sarà ancora vero fra un mese e se qualcuno lo rileggerà
+> come riferimento; se no, resta `.md`, niente PDF e niente doppione in `documentazione Empire/`
+> (§6.17). Occasione dell'ordine: avevo fatto il PDF del piano di implementazione Andrei Pascu —
+> rimosso insieme al doppione. Il resto di questo paragrafo dice **come** si fa un PDF, e vale solo
+> dopo che questa domanda ha risposto sì.
+
 **Ordine di Max, testuale:** *"il report [...] è veramente fatto bene [...] voglio che questo
 report [...] lo metti come esempio perfetto [...] d'ora in poi quando ti chiedo di fare un PDF
 [...] non voglio starti a dire come voglio lo stile, i colori, la qualità — lo standard è
