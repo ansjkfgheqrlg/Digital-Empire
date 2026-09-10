@@ -44,6 +44,17 @@ corretto in casa).
 
 ---
 
+## 🟢 APPLICATO — dal site-study, onda del 2026-09-10
+
+| # | Candidato | Fonte | Dove |
+|---|---|---|---|
+| AP-065 | **Il gate dei siti esiste davvero.** `CLAUDE-SITI.md` §9 dice dal 06/09 che una consegna che non passa `gate_siti.py` non è consegnata: quel file non esisteva. Ora esiste con 5 controlli vivi (CASSA, PREZZO, IMMAGINE, PROVE, ANNO), gli altri 8 stampati come debito | `site-study/SINTESI-METODO.md` §5 + "le tre cose da fare meglio di lui" | `.claude/skills/fabbrica-siti/scripts/gate_siti.py` — provato su una pagina vera |
+| AP-066 | **La pre-cassa si stampa, non si scrive.** Sei elementi sempre uguali sono uno stampo; rifiuta un codice sconto senza scadenza | `SINTESI-METODO.md` §4 ("tutto ciò che si ripete diventa uno stampo") | `.claude/skills/fabbrica-siti/scripts/precassa.py`, invocato da `CLAUDE-SITI.md` §11 |
+| AP-067 | **Sistema di copy** — 15 formule, 4 pattern di persuasione, gate prezzo/prova | `site-study/SINTESI-SISTEMA-COPY.md` | `.claude/skills/cro-copy-architect/references/formule-andrei-pascu.md` + innesti in `copywriting`, `copy-editing`, `market-copy` |
+| AP-068 | **Il corpus è in biblioteca**: `conoscenza-empire` possiede e sa citare i 4 documenti ufficiali, il site-study e il piano | tutto lo studio | `.claude/agents/conoscenza-empire.md` |
+
+---
+
 ## 🟡 PROPOSTI — alta priorità, non ancora applicati (ecosistema LANCI attivo, fuori scope della build del 2026-09-09)
 
 | # | Candidato | Fonte | Area/Skill target |

@@ -147,3 +147,103 @@ a campi — ma con `from`/`to` piatti e un campo che gli altri due HC non hanno:
 | regola 2-reject→escalation | `retry`/`escalation_count` |
 | **`type`** (`directive|handoff|result|escalation`) | **NESSUN POSTO.** Non è `payload.type` di HC-v1 (quello è il tipo del *carico*: `lead_batch`; questo è il tipo del *messaggio*). `escalation` si ricava da `escalation_count`, ma `directive`/`result` no: il «contratto di risposta» (es. MARKETING `{copy_finale, ...}`, Schema 9) viaggerebbe come `type: result` e HC-v2 non ha il campo per dirlo. Adattatore = un campo `type` in più, o la decisione dichiarata che le risposte sono handoff a ruoli invertiti |
 
+## Schema 4 — la traccia dell'AGENCY (`agency/trace.jsonl`, 10 campi)
+
+**Dove vive:** `company/Memory/state/agency/trace.jsonl` (22 righe, tutte del 2026-06-11,
+tutte del ciclo dry-run `CY-20260611-001`), scritto da `scripts/agency-trace.ps1` a mano.
+File aperto: le prime righe confermano i campi.
+
+**I suoi campi (dal file):** `ts` · `cycle_id` · `step` · `event`
+(`started`/`completed`/`handoff_sent`/`handoff_received`/`gate_passed`) · `from_reparto` ·
+`to_reparto` · `hc` (l'id del contratto: `HC-A1-A2-leads`) · `agent` · `payload_summary` · `notes`.
+
+**Perché è distinto:** non è un contratto ma il **diario di vita** dei contratti — l'unico posto
+dell'Impero dove un handoff sia mai stato *percorso* (4 `handoff_sent` + 4 `handoff_received`).
+Nessuno dei suoi campi coincide per nome con HC-v1, e `cp_id` non c'è (è il fatto che invalida i
+328 per la legge MEMORY, `02d` §D.5).
+
+**Verdetto: CONVERTIBILE CON ADATTATORE** — l'adattatore è già deciso da V1 §10: le tracce
+diventano **viste** del contratto unico. Ogni riga del jsonl è una transizione di stato di
+un'istanza HC-v2, non un documento a sé. Più un campo senza casa: `cycle_id`.
+
+**Mappa campo→campo (riga di traccia → istanza HC-v2):**
+
+| trace.jsonl | HC-v2 |
+|---|---|
+| `hc` | `_id` del contratto; la riga individua l'istanza (`_instance_id`) |
+| `ts` | timestamp della transizione di `status` (il primo = `created_at`) |
+| `event: handoff_sent` / `handoff_received` | `status: pending` / `accepted` |
+| `event: gate_passed` | esito del criterio di accettazione valutato |
+| `from_reparto` / `to_reparto` | `from.reparto` / `to.reparto` |
+| `agent` (chi ha agito) | **firma di chi ha accettato** — la mappa più pulita delle dieci sezioni |
+| `payload_summary` | riassunto del `payload` (vista, non sorgente) |
+| `notes` | `note_correttive` quando l'evento è un rifiuto; altrimenti contesto libero |
+| **`cycle_id`** (`CY-20260611-001`) | **NESSUN POSTO**: è l'id di correlazione che lega i 4 handoff di un ciclo. Non è `_instance_id` (id del singolo messaggio), non è `cp_id` (puntatore MEMORY), non è `from.task_id` (id del workflow, non della corsa). Vedi conclusione |
+
+## Schema 5 — le 5 tracce di `empire/trace.py` (8 campi)
+
+**Dove vive:** `empire/trace.py` (219 righe), dataclass `Traccia`, righe 57-66. File aperto.
+Scrive JSON in `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/{decisions,errors,performances,reasoning-bank,sessions}/` — 25 file reali (`censimento-02:285-292`).
+
+**I suoi campi (dal codice):** `tipo` (`decisione|errore|prestazione|lezione|sessione`) ·
+`titolo` · `autore` · `prova` · `quando` · `contesto` · `tags` · `id` — 8, come il censimento
+conta. Due regole cablate: `autore` vuoto → `ValueError`; `prova` vuota → `ValueError`
+(`trace.py:92-95`).
+
+**Perché è distinto:** non ha `from` né `to` né payload: registra **fatti unilaterali** con un
+autore e una prova. È l'unico dei dieci con validazione d'obbligo *eseguita* (le due ValueError)
+e l'unico con idempotenza (stesso tipo+titolo+giorno non duplica, `trace.py:102`).
+
+**Verdetto: CONVERTIBILE CON ADATTATORE** — e solo per la parte che è davvero comunicazione.
+
+**Mappa campo→campo:**
+
+| trace.py | HC-v2 |
+|---|---|
+| `quando` | `created_at` |
+| `id` | `_instance_id` (già id d'istanza, generato per messaggio) |
+| `autore` | firma (semantica compatibile: chi risponde dell'atto) |
+| `prova` | l'evidenza che il criterio di accettazione valutato a macchina deve produrre |
+| `titolo` / `contesto` | `description` / `payload.context_refs` della base HC-v1 |
+| `tags` | metadata (la base HC-v1 ha già un blocco `metadata` estendibile) |
+| `tipo: prestazione` | la transizione `status: done` di un HC-v2 (una fase chiusa = una consegna chiusa) |
+| `tipo: errore` | la transizione `status: rejected` + `note_correttive` |
+| `tipo: decisione`, `lezione`, `sessione` | **fuori perimetro dichiarato**: non sono comunicazioni fra due parti, sono memoria. Non chiedono un posto in HC-v2 e non lo ricevono — restano tracce |
+
+**L'adattatore, esplicito:** la chiamata a `trace.scrivi()` dentro il ciclo di stato di HC-v2
+(quando uno `status` passa a `done`/`rejected`) — è esattamente il «punto di aggancio» già
+diagnosticato in `censimento-02` §4.5 punto 1. Senza, i due archivi restano paralleli
+(2 transizioni da una parte, 25 tracce dall'altra, nessun ponte).
+
+## Schema 6 — l'evento Observability (13 campi, 9 tipi)
+
+**Dove vive:** `company/Backbone/Observability/README.md:14-31` («Schema evento standard») —
+destinazione dichiarata `company/metrics/runs.jsonl`, che **non esiste** (la cartella
+`company/metrics/` non esiste; zero emettitori nel repo, `censimento-02` §4.4). File aperto.
+
+**I suoi campi (dal README):** `ts` · `tipo` (9 valori: `run_done`, `gate_passed`, `gate_failed`,
+`handoff_rejected`, `swarm_done`, `lead_generated`, `content_published`, `sale_closed`,
+`evolution`) · `eco` · `reparto` · `team` · `agente` · `brand_kit` · `tier_modello` ·
+`costo_usd` · `durata_sec` · `output_size` · `gate_result` · `note` — 13, come il censimento conta.
+
+**Perché è distinto:** è telemetria, non contratto — ha un solo lato (`eco/reparto/team/agente`
+sono *chi ha agito*, non mittente→destinatario) e porta quattro campi di misura che nessun altro
+schema dei dieci ha: `costo_usd`, `durata_sec`, `tier_modello`, `output_size`.
+
+**Verdetto: CONVERTIBILE CON ADATTATORE** — nel senso di V1 §10 (vista del formato unico), con
+un avviso pesante sul costo.
+
+**Mappa campo→campo:**
+
+| Observability | HC-v2 |
+|---|---|
+| `ts` | timestamp della transizione |
+| `tipo: handoff_rejected` | `status: rejected` (+ `note` → `note_correttive`) |
+| `tipo: gate_passed`/`gate_failed` | esito del criterio di accettazione valutabile a macchina |
+| `eco`/`reparto`/`team`/`agente` | `from.{ecosystem,reparto,agent}` (+ firma per chi accetta) |
+| `brand_kit` | `brand_kit` — identico |
+| `gate_result` | ridondante col `tipo`, si fonde nell'esito del criterio |
+| `note` | contesto libero / `note_correttive` |
+| `tipo: run_done`, `swarm_done`, `lead_generated`, `content_published`, `sale_closed`, `evolution` | **non sono handoff**: sono eventi di lavoro e di business. Restano nel formato-evento; l'adattatore è l'emettitore che li deriva (per i 3 tipi-handoff) dalle transizioni HC-v2 |
+| **`costo_usd` · `durata_sec` · `tier_modello` · `output_size`** | **NESSUN POSTO** negli 11 né nella base HC-v1. Fintanto che l'evento resta un formato separato non è un difetto di HC-v2 — ma vedi conclusione: la legge MEMORY (`HC-ME-POST.costi`, Schema 7) pretende che il *costo* viaggi anche nel contratto, e lì il posto non c'è |
+

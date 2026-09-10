@@ -130,7 +130,11 @@
 
     <div class="cassa__ricevuta card-dark">
       <p class="cassa__ricevuta-nome label">Manuale Claude Code</p>
-      <p class="cassa__cifra num-tabular">47,00&nbsp;&euro;</p>
+      <!-- data-prezzo: la cifra che si PAGA si dichiara. Non e' decorazione di
+           markup: e' quello che permette a scripts/gate_siti.py di verificare
+           §14.2 — il prezzo non e' mai il testo piu' piccolo della pagina.
+           Aggiunto il 2026-09-10 con il gate. -->
+      <p class="cassa__cifra num-tabular" data-prezzo>47,00&nbsp;&euro;</p>
       <p class="cassa__condizione">Una tantum</p>
     </div>
 

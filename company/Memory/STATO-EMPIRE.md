@@ -1,3 +1,27 @@
+## 🟢 2026-09-10 — ✅ La formazione Andrei Pascu è DENTRO le skill, non più in un documento — CP-20260910-HYDJ
+
+Ordine di Max eseguito: migliorare skill/agenti/workflow esistenti con lo studio, creare il nuovo
+solo dove serviva. **Sei candidati residui innestati in 15 file** (`cro`, `market-funnel`,
+`cro-funnel-architect`, `upsell-mapper`, `pricing`, `content-forge`, `market-report`,
+`market-report-pdf`, `beast-preventivi`, `revops`), **15 formule di copy** in `cro-copy-architect`,
+e il corpus dato in possesso a `conoscenza-empire`.
+
+**Due pezzi nuovi, entrambi con un padrone che li invoca:**
+- `.claude/skills/fabbrica-siti/scripts/gate_siti.py` — **il giudice che la legge nominava e non
+  esisteva**: `CLAUDE-SITI.md` §9 dal 06/09 diceva "una consegna che non passa gate_siti.py non è
+  consegnata" e il file non c'era. Cinque controlli vivi, gli altri otto stampati come debito
+  (B-066). Provato su una pagina vera: PASS con 3 WARN reali.
+- `.claude/skills/fabbrica-siti/scripts/precassa.py` — lo stampo a sei variabili della pre-cassa,
+  rifiuta un codice sconto senza scadenza. Agganciato a `CLAUDE-SITI.md` §11.
+
+**Ritrovamento più utile:** `upsell-mapper` insegnava il pitch che il vincolo AP-017 vieta — «hai
+già X, ti mancano Y e Z». Corretto.
+
+**LANCI non toccato** (perimetro di Gael). Nuovi debiti a backlog: B-065 (repo git annidato in
+`content-forge`), B-066 (8 controlli del gate siti).
+
+---
+
 ## 🟣 2026-09-10 — V3-PIANO-ASSESTATO scritta: 13 correzioni, garanzia esplicita a Gael — CP-20260910-J2WY
 
 **Ordine di Max: "via finisci tutto facendo in modo che Gael possa lavorare sempre senza

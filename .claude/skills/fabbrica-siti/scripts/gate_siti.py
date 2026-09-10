@@ -79,7 +79,10 @@ def testo_visibile(html):
     h = SCRIPT.sub(" ", h)
     h = re.sub(r"<style\b.*?</style>", " ", h, flags=re.S | re.I)
     h = TAG.sub(" ", h)
-    return h
+    # Le entita' si sciolgono: "47,00&nbsp;&euro;" e' un prezzo per chi legge, e
+    # deve esserlo anche per il gate. Senza questo passo il controllo PREZZO
+    # guarda una pagina diversa da quella che vede il cliente.
+    return unescape(h)
 
 
 def righe_visibili(html):
@@ -90,7 +93,7 @@ def righe_visibili(html):
                lambda m: "\n" * m.group(0).count("\n"), h, flags=re.S | re.I)
     fuori = []
     for i, r in enumerate(h.split("\n"), 1):
-        fuori.append((i, TAG.sub(" ", r)))
+        fuori.append((i, unescape(TAG.sub(" ", r))))
     return fuori
 
 
@@ -189,6 +192,10 @@ def controllo_prezzo(path, html, radice):
     """
     errori, avvisi = [], []
     rel = os.path.relpath(path, radice)
+    # I commenti si tolgono PRIMA di cercare il marcatore: un commento che spiega
+    # data-prezzo non e' un elemento marcato, ed e' il primo modo in cui questo
+    # controllo si prende in giro da solo (trovato al collaudo, 2026-09-10).
+    html = COMMENTI.sub(" ", html)
     ha_marcatore = "data-prezzo" in html
     testo = testo_visibile(html)
     ha_cifra = bool(VALUTA.search(testo))

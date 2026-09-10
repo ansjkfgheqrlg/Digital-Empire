@@ -381,3 +381,20 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   il 56% dell'arretrato e' non classificabile senza aprirli uno per uno. Da guardare e rinominare
   quando si costruisce pubblico, altrimenti quel materiale e' perso di fatto anche se e' su disco.
   Fonte: stesso inventario di B-063.
+
+- **B-065 — NUOVA, trovata innestando lo studio Andrei Pascu (2026-09-10).**
+  `.claude/skills/content-forge/` e' un **repository git annidato** dentro il repo dell'Impero:
+  verificato, `.claude/skills/content-forge/.git` esiste. Conseguenza reale: **le modifiche fatte a
+  quella skill non entrano nei commit di Digital Empire** e non arrivano a nessun altro. E' successo
+  proprio oggi con l'innesto AP-019 (budget di sforzo proporzionato al riuso). Da decidere: o si
+  assorbe la skill nel repo (togliendo il `.git` annidato), o la si dichiara esplicitamente esterna
+  e si scrive dove vive la sua verita'. Oggi non e' ne' l'una ne' l'altra: e' un buco silenzioso.
+
+- **B-066 — NUOVA (2026-09-10).** `scripts/gate_siti.py` **adesso esiste** (prima la legge
+  `CLAUDE-SITI.md` §9 nominava un giudice mai nato: "una consegna che non passa gate_siti.py non
+  e' consegnata", e il file non c'era). Ne vivono **cinque** controlli: CASSA, PREZZO, IMMAGINE,
+  PROVE, ANNO. **Restano otto controlli del canone dichiarati e non implementati** (colori fuori
+  canone, misure assolute, breakpoint non motivati, dato duplicato, motion, colori default, peso,
+  scadenze): il gate li stampa in chiaro come debito a ogni esecuzione, quindi non e' un buco
+  silenzioso — ma resta un debito. Provato su `Crea siti/Siti CCM/manuale.html`: PASS con 3 WARN
+  veri (anno 2026 scritto a mano due volte, prezzo non dichiarato con `data-prezzo`).

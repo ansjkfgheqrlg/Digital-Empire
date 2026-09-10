@@ -209,7 +209,21 @@ sta una **pre-cassa**: meno di uno schermo e mezzo, sei elementi in quest'ordine
 il lettore sta ancora decidendo; nella pre-cassa toglie attrito quando ha già deciso. E il codice è
 **a scadenza o legato alla sessione**: uno sconto permanente non è uno sconto, è il prezzo.
 
-*Origine: `andrei-copy.com/outfunnel-1` e `/armadeggon-strp`, misurate il 2026-09-07 — ADR-024.*
+**La pre-cassa non si scrive a mano: si stampa.** Sei elementi sempre uguali sono uno stampo, non
+una pagina — e ciò che si ripete diventa uno stampo (`SINTESI-METODO.md` §4). Il comando è:
+
+```
+python .claude/skills/fabbrica-siti/scripts/precassa.py \
+  --prodotto "..." --accento "..." --prezzo "..." --bottone "..." --cassa "<url>" \
+  [--codice "..." --scadenza "..."] --out <file.html>
+```
+
+Rifiuta un codice sconto senza finestra di scadenza — la regola qui sopra, applicata dalla macchina
+e non dalla buona volontà. L'uscita passa da `scripts/gate_siti.py` come qualunque altra consegna.
+Scrivere una pre-cassa a mano quando lo stampo esiste è una deroga, e va motivata.
+
+*Origine: `andrei-copy.com/outfunnel-1` e `/armadeggon-strp`, misurate il 2026-09-07 — ADR-024.
+Lo stampo `precassa.py` è del 2026-09-10, dallo studio del metodo (`SINTESI-METODO.md` §4).*
 
 *Non derogabile.*
 
