@@ -285,3 +285,223 @@ dipende da lui per essere misurato**, `empire vivo --json` incluso.
 V-c sia C-d. Ciò che manca è dichiarare *dentro il nodo* il comando che tutti già usano.
 
 ---
+
+## 11-APEX-7-CORE
+
+| | Esito | Prova |
+|---|---|---|
+| V-a | **PASSA** | Tre punti d'ingresso dichiarati nel `README.md` e nell'`EXECUTION_REPORT.md`, tutti già eseguiti: `python main.py "<richiesta>"`, `python run_demo.py`, `python arena_generator.py --model "GPT-4o" --demo`. `main.py` gestisce esplicitamente il cp1252 di Windows con `sys.stdout.reconfigure` — cioè il difetto che uccide 13-ARENA-APEX qui è stato risolto. *Non rilanciati: `main.py` spende crediti API, fuori dal perimetro di sola lettura.* |
+| V-b | **PASSA** | Contratti come **JSON Schema veri**: `orchestration-layer/contracts/schemas/v1/` + `contracts/fixtures/` (verificati presenti). Più il quality gate a 5 dimensioni con soglie numeriche (Completezza ≥8, Precisione ≥8, Creatività ≥7, Actionability ≥8, Coerenza ≥9), 3 gate YAML del builder swarm e **2 policy OPA in Rego** (`policies/authorization.rego` + `authorization_test.rego`). |
+| V-c | **PASSA** | `outputs/` contiene **10 file prodotti davvero** (verificati uno per uno): 7 PNG in `outputs/carousel/`, `outputs/skill-forge/SKILL_20260723_075817.md`, `SKILL_20260813_111030.md` e il suo `.gate.json`. Più `memory/data/decision_log.db` (SQLite, 45.056 byte, 23/08). |
+| V-d | **PASSA** | **27 file di test** (3 di radice + 24 in `orchestration-layer/tests/`, inclusi `integration/test_postgres_real.py`, `test_opa_real.py`, `test_api_worker_real.py`) e **una CI reale**: `orchestration-layer/.github/workflows/ci.yml` (verificato presente). *Non rieseguiti: il verde è quello dichiarato da **ADR-012 del 2026-08-26**, citato per esteso nel `README.md` riga 5 («148 test verdi») — fonte datata, non mia misura di oggi.* |
+| C-a | **PASSA** | `BACKBONE.md` dichiara gli inbound; `ECOSISTEMA.md` dichiara inoltre che tutti gli ecosistemi «DEVONO obbligatoriamente interfacciarsi con la Skill Ufficiale APEX-7». |
+| C-b | **NON PASSA** | Verdetto trasversale: nessuna casella su disco per i destinatari nominati. |
+| C-c | **NON PASSA** | I due `decision_log.db` **sono** tracce automatiche — ed è precisamente il caso che V2 §4.2 cita per irrigidire C-c: log privato, fuori dal formato unico e assente dal registro dell'Impero (le 25 tracce non ne contengono una sola). |
+| C-d | **NON VALUTATO** | Le 10 uscite esistono, ma i nomi dicono «riferimento», non «consegna» (`example_slide_1.png`, `ref_v2_slide_*.png`), e **non esiste registro che leghi una di esse a un consumatore**. In direzione opposta è misurato il vuoto: *nessuno degli altri 14 ecosistemi lo invoca* — nei nodi 01-10 e 12-14 non c'è una sola chiamata a `main.py`. Non posso escludere che le 2 skill forgiate siano state adottate: non posso provarlo. |
+
+**4 PASSA su 4 in VIVO — è, con 12, uno dei due soli ecosistemi vivi del perimetro.** Il lavoro
+qui non è costruire: è che gli altri 14 lo chiamino, e chiudere la migrazione dei tre orchestratori
+che ADR-012 tiene deliberatamente in vita insieme.
+
+---
+
+## 12-STREAM-S7-BOT
+
+| | Esito | Prova |
+|---|---|---|
+| V-a | **PASSA** | Due punti d'ingresso, e uno è documentato **verde con exit code**: `STATO-RIPRESA.md` riga 46 — «`python test_apex7.py` → **exit 0**, gate finale L6→L7 PASSED 7/7, score 1.0» (riverificato dal nodo il 2026-08-03). Più `python main.py` (paper trading). ⚠️ **Il `LEGGIMI.md` di questo nodo manda nella cartella sbagliata** («`cd company/Ecosistemi/08-STREAM-S7-BOT`», dove il codice è compresso e il comando fallisce): puntatore stale copiato col file, da correggere prima di ogni altra cosa. |
+| V-b | **PASSA** | `quality_gates.py` + `gate_verifiers.py` + `apex7_workflow.ruflo.yaml` definiscono e verificano i gate; `STATO-RIPRESA.md` righe 54/73 citano **89/89 controlli reali** sul layer NFT su dati Magic Eden veri. |
+| V-c | **PASSA** | Percorsi dichiarati e file presenti: `paper_trade_log.csv` (**7 righe**) e `paper_trade_log_nft.csv` (**3 righe**), verificati con `wc -l`; più `memory/{architectures,checkpoints,decisions,nft_cache}` con checkpoint e decisioni proprie. *Volumi da prova, non da esercizio — ma la condizione chiede che l'uscita finisca in un posto stabilito, e ci finisce.* |
+| V-d | **PASSA** | 6 file di test (`test_apex7.py`, `test_level_1.py`, `test_nft_s7.py`, `test_nft_ondata2/3/4.py`), con il gate finale documentato **7/7, score 1.0**. *Non rieseguito: il verde è quello dichiarato da `STATO-RIPRESA.md`, datato 2026-08-03.* |
+| C-a | **NON PASSA** | `BACKBONE.md` di 12 **non dichiara alcun ingresso**: contiene «Infrastruttura Tecnica», «Dati», «Controllo Rischio» — nessuna sezione inbound, nessun mittente, nessun contratto (`grep -ci "in ingresso\|ricev\|inbound\|entrata"` → **0**). L'unico ingresso reale è una RPC Solana esterna. |
+| C-b | **NON PASSA** | Nessun destinatario dichiarato nel `BACKBONE.md`, quindi nessuna casella. |
+| C-c | **NON PASSA** | Verdetto trasversale. |
+| C-d | **NON PASSA** | 10 trade complessivi, **tutti simulati**, zero euro. E il nodo lo scrive da solo: `report-studio.md` → expectancy **NEGATIVA**, «>85% di perdere il capitale entro il primo mese»; `CP-20260730-007` → layer NFT **bocciato per live** con 89/89 controlli. Prerequisito bloccante economico (B-010: RPC Solana a pagamento, l'endpoint pubblico risponde `429` dopo 2 chiamate). |
+
+**4 PASSA su 4 in VIVO, 0 su 4 in COLLEGATO** — la dimostrazione più netta della legge L3: un
+ecosistema può essere tecnicamente perfetto e non essere collegato a niente. *«Non manca codice,
+manca una decisione»* (`STATO-RIPRESA.md`).
+
+---
+
+## 13-ARENA-APEX
+
+| | Esito | Prova |
+|---|---|---|
+| V-a | **NON PASSA** | **Misurato oggi, in sola lettura:** `python orchestrator.py --help` dentro `13-ARENA-APEX/` → **exit 1**, `UnicodeEncodeError: 'charmap' codec can't encode character '→' in position 245` (`orchestrator.py:449`, `print(__doc__)` su console cp1252). **Il comando dichiarato dal README non arriva nemmeno a stampare il proprio uso su questa macchina.** In più il README fa entrare in `cd digital-empire`, cartella che nel repo non esiste. Il censimento 01a dava (a) come «soddisfatta a metà»: la misura di oggi dice che non è soddisfatta affatto. |
+| V-b | **NON PASSA** | *(giudizio, dichiarato come tale)* Esistono 3 workflow in JSON (`carousel-workflow.json`, `cold-outreach-workflow.json`, `skill-forge-workflow.json`) e una soglia di gate ≥7,5/10. Ma **un file JSON che definisce un workflow non è uno schema contro cui l'uscita valida**, e una soglia non è un validatore: non esiste in `13-ARENA-APEX/` alcun JSON Schema né alcuna funzione di validazione. |
+| V-c | **PASSA** | Percorso dichiarato e file presente, benché minimo: `output/outreach-concessionari-20260723/sequenza-email.md` — **un solo prodotto** (verificato: `find output -type f` → 1). I 5 file di memoria (`memory/decisions/log.json`, `knowledge/base.json`, `strategies/store.json`, `architecture/snapshots.json`, `working/context.json`) esistono e sono **tutti fermi al 25 luglio 2026**. |
+| V-d | **NON PASSA** | **Zero test** (verificato), a differenza dei fratelli 11 (27) e 12 (6). |
+| C-a | **NON PASSA** | `BACKBONE.md` non dichiara alcun ingresso (`grep -ci "in ingresso\|ricev\|inbound\|entrata"` → **0**). |
+| C-b | **NON PASSA** | Nessun destinatario dichiarato. |
+| C-c | **NON PASSA** | Verdetto trasversale. `memory/decisions/log.json` è traccia privata, fuori formato e fuori registro. |
+| C-d | **NON VALUTATO** | L'unico prodotto è `sequenza-email.md` per l'outreach concessionari (23/07). I concessionari **sono** stati contattati davvero — ma via **WhatsApp** dal flusso Preventa (22 `CONTACTED`), non via email, e nulla lega quella sequenza a un invio. Non posso attribuire né escludere. *Aggravante di contesto: il motore esterno di questo nodo (Arena.ai) è dichiarato **fermo su questa macchina dal 2026-08-25** dall'ordine `CF-2026-PREVENTA-002` — `playwright_stealth` non installato, sessione assente.* |
+
+---
+
+## 14-TESORERIA
+
+> Il nodo è **un guscio**: contiene **1 solo file** (`README.md`) più due cartelle vuote
+> (`agenti/`, `workflow/`, create il 03/09 e mai riempite). `ECOSISTEMA.md` e `BACKBONE.md`
+> **ASSENTI**. Tutto ciò che vive sta altrove.
+
+| | Esito | Prova |
+|---|---|---|
+| V-a | **PASSA** | **Misurato oggi:** `python scripts/tesoreria.py --help` → **exit 0**, stampa i 4 sottocomandi (`entrata`, `spesa`, `incassa`, `report`). Motore verificato: `scripts/tesoreria.py`, 18.443 byte, 03/09, `argparse` a riga 45, `def main()` a riga 422. Il `README.md` del nodo dichiara i cinque comandi con la sintassi completa, e la skill `.claude/skills/tesoreria/SKILL.md` è presente. **È il puntatore più pulito di tutto il perimetro.** |
+| V-b | **NON VALUTATO** | Il formato è dichiarato (una riga JSON per movimento in `entrate.jsonl`/`spese.jsonl`) e le tre leggi sono un contratto scritto («Previsto non è incassato. Mai.», «Un numero che non esiste si dichiara, non si stima»). Ma **non esiste alcuna uscita da validare**: i due `.jsonl` sono di **0 byte**. Non posso provare la conformità di un'uscita che non c'è. |
+| V-c | **NON PASSA** | *(giudizio, dichiarato come tale)* Letteralmente i file ci sono — `company/Memory/tesoreria/entrate.jsonl` e `spese.jsonl`, creati il **2026-09-03 alle 13:03** — e sono entrambi di **0 byte** (`wc -l` → 0, `ls -la` → 0). Leggere V-c come soddisfatta da un contenitore vuoto renderebbe la condizione inutile: **nessuna uscita vi è mai finita**. `company/Memory/TESORERIA.md` lo certifica da solo: *«Nessun movimento registrato»*. |
+| V-d | **NON PASSA** | Nessun `test_tesoreria.py`: `scripts/` contiene `test_emperator_isolamento.py` e `test_gate_battito.py`, nessun test per la tesoreria (verificato). |
+| C-a | **NON PASSA** | Senza `ECOSISTEMA.md` e senza `BACKBONE.md`, il nodo **non dichiara alcun ingresso**: né mittenti, né formato, né contratto. |
+| C-b | **PASSA** | **L'unica eccezione del perimetro.** Il `README.md` dichiara che `report --scrivi` produce `company/Memory/TESORERIA.md` — e **quel file esiste su disco** (441 byte, 03/09, verificato). Contratto che nomina la destinazione + destinazione che esiste come casella: è esattamente ciò che C-b chiede, e nessun altro dei 15 lo soddisfa. |
+| C-c | **NON PASSA** | Verdetto trasversale. |
+| C-d | **NON PASSA** | Zero euro registrati, in entrata o in uscita: i due `.jsonl` sono a 0 byte dalla nascita. **Vivo come macchina, morto come organo** — il vero ostacolo non è informatico, serve che qualcuno registri il primo euro. |
+
+---
+
+## 15-LANCI — *scheda 16, fuori quota*
+
+> **Non entra nel totale di 120.** Nasce il **2026-09-10** (ADR-025, firmato l'08/09), quattro
+> giorni *dopo* il censimento 01a: valutarla dentro la quota falserebbe il denominatore che V3 §7
+> si aspetta. Si scheda comunque, per L1 e perché è il nodo più giovane e già il secondo meglio
+> messo del perimetro.
+
+| | Esito | Prova |
+|---|---|---|
+| V-a | **PASSA** | **Misurato oggi:** `python .../15-LANCI/02-AUTOMAZIONI-E-SCRIPTS/scripts/lancio.py --help` → **exit 0**, stampa 12 sottocomandi. Quattro costruiti (`crea`, `stato`, `elenco`, `valida`), otto dichiarati «non ancora costruito» **con lo scaglione che li porta** (`avanza` → S2b/MT-3XWC, `firma` → S3): un CLI che dice cosa non sa ancora fare invece di fingere. |
+| V-b | **PASSA** | **13 schemi JSON reali** in `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/dati/schemi/` (`apertura`, `budget`, `certificato`, `consuntivo`, `copy`, `debrief`, `decisione`, `editoriale`, `funnel`, `offerta`, `previsione`, `pubblico`, `ricerca`), e il validatore li risolve davvero: `stato_lancio.py:223` → `os.path.join(SCHEMI, ARTEFATTI[nome])`. Gli artefatti su disco portano `"schema_version": "1.0.0"`, e `offerta.PROPOSTA.sha256` firma il proprio artefatto. |
+| V-c | **PASSA** | `lanci/manuale-claude-code/` contiene 7 file (`stato.json`, `certificato.json`, `offerta.PROPOSTA.json` + `.sha256`, `previsione.json`, `pubblico.json`, `LEGGIMI.md`) più `verbali/20260910T185500-creazione.json`. Percorso dichiarato dal `BACKBONE.md` §2 e popolato. |
+| V-d | **NON VALUTATO** | `02-AUTOMAZIONI-E-SCRIPTS/tests/test_stato_lancio.py` esiste ed è scritto bene (pytest, con la ragione in testa: *«se il lock non tiene o la validazione si fida di un campo salvato, il gate di S2b sarà verde per il motivo sbagliato»*). **Non eseguito in questa ricognizione e nessun verde documentato trovato** — per la regola dichiarata in testa, un test senza verde non è un PASSA. |
+| C-a | **PASSA** | L'ingresso è un artefatto tipizzato con schema proprio: `certificato.json` (`"modalita": "retroattiva"`, `file_prodotto` con percorso, byte, formato, pagine) validato contro `certificato.schema.json`. `ECOSISTEMA.md` riga 123 nomina l'ecosistema a monte (ULTIMO METRO, ADR-016). |
+| C-b | **PASSA** *(lettura letterale)* | `ECOSISTEMA.md` riga 124 nomina il destinatario a valle — TESORERIA, ADR-020 — e **la sua casella esiste**: `company/Memory/tesoreria/` con `entrate.jsonl`, `spese.jsonl`, `README.md`. *Caveat scritto: manca l'artefatto di consegna — nulla di `lanci/<slug>/` è oggi scritto verso quella cartella.* |
+| C-c | **NON PASSA** | Verdetto trasversale. **Ma è il nodo che ci va più vicino di tutti**: `BACKBONE.md` §2 impone «Verbale sempre — a ogni transizione, anche quando il gate blocca», e `verbali/20260910T185500-creazione.json` esiste già. La traccia **nasce da sola**; non è nel formato unico né nel registro dell'Impero. È il modello da cui copiare per E0.7. |
+| C-d | **NON PASSA** | `stato.json`: `"stato": "IDEA"`, `creato_il: 2026-09-10T18:55:00`, `storia` con **una sola transizione** (`null → IDEA`, «creazione»). Zero venduto, zero euro, zero consumatori — il lancio ha poche ore di vita. |
+
+**5 PASSA · 1 NON VALUTATO · 2 NON PASSA in quattro giorni di vita.** Se fosse in quota sarebbe il
+**secondo miglior punteggio dei quindici**, dietro solo a 11-APEX-7-CORE — e con un vantaggio che
+11 non ha: passa **due** condizioni di COLLEGATO su quattro. È la prova che il modo di costruire
+descritto da V2/V3 (artefatto tipizzato + schema + verbale automatico + comando che dichiara ciò
+che non sa fare) produce nodi vivi *e* collegati fin dal primo giorno — e va detto che **non è
+stato costruito da questo piano**, ma da ADR-025 in parallelo.
+
+---
+
+# SINTESI
+
+## A. Il quadro per ecosistema
+
+| # | Ecosistema | V-a | V-b | V-c | V-d | C-a | C-b | C-c | C-d | PASSA | NON PASSA | NON VAL. |
+|---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|--:|--:|--:|
+| 01 | AGENCY | NO | NO | NO | NO | **SI** | NO | NO | **SI** | 2 | 6 | 0 |
+| 02 | INFO-BUSINESS | NO | NO | NO | NO | **SI** | NO | NO | NO | 1 | 7 | 0 |
+| 03 | CONTENT-FACTORY | NO | NO | NO | NO | **SI** | NO | NO | **SI** | 2 | 6 | 0 |
+| 04 | MARKETING | NO | NO | NO | NO | **SI** | NO | NO | *?* | 1 | 6 | 1 |
+| 05 | MULTI-BUSINESS | NO | NO | NO | NO | **SI** | NO | NO | NO | 1 | 7 | 0 |
+| 06 | PLATFORM | NO | NO | NO | NO | **SI** | NO | NO | *?* | 1 | 6 | 1 |
+| 07 | FORGE | NO | NO | NO | NO | **SI** | NO | NO | *?* | 1 | 6 | 1 |
+| 08 | INTELLIGENCE | NO | NO | **SI** | NO | **SI** | NO | NO | **SI** | 3 | 5 | 0 |
+| 08 | STREAM-S7-BOT | NO | NO | NO | NO | NO | NO | NO | NO | 0 | 8 | 0 |
+| 09 | OPERATIONS | NO | NO | NO | NO | **SI** | NO | NO | NO | 1 | 7 | 0 |
+| 10 | MEMORY | NO | NO | **SI** | NO | **SI** | NO | NO | **SI** | 3 | 5 | 0 |
+| 11 | APEX-7-CORE | **SI** | **SI** | **SI** | **SI** | **SI** | NO | NO | *?* | 5 | 2 | 1 |
+| 12 | STREAM-S7-BOT | **SI** | **SI** | **SI** | **SI** | NO | NO | NO | NO | 4 | 4 | 0 |
+| 13 | ARENA-APEX | NO | NO | **SI** | NO | NO | NO | NO | *?* | 1 | 6 | 1 |
+| 14 | TESORERIA | **SI** | *?* | NO | NO | NO | **SI** | NO | NO | 2 | 5 | 1 |
+| | **TOTALE (120)** | **3** | **2** | **5** | **2** | **10** | **1** | **0** | **5** | **28** | **86** | **6** |
+| *(16)* | *LANCI — fuori quota* | *SI* | *SI* | *SI* | *?* | *SI* | *SI* | *NO* | *NO* | *5* | *2* | *1* |
+
+Legenda: **SI** = PASSA · NO = NON PASSA · *?* = NON VALUTATO.
+Le colonne di totale contano quante volte quella condizione passa sui 15.
+
+## B. I tre esiti, come li chiede V3 §7
+
+| | Ecosistemi (su 15) | Condizioni (su 120 = 15×8) |
+|---|---:|---:|
+| **Passano tutte e otto** | **0** | — |
+| **Hanno almeno un NON PASSA** | **15** | — |
+| **Hanno almeno un NON VALUTATO** | **6** — 04, 06, 07, 11, 13, 14 | — |
+| **PASSA** | — | **28** (23,3%) |
+| **NON PASSA** | — | **86** (71,7%) |
+| **NON VALUTATO** | — | **6** (5,0%) |
+
+**Nessun ecosistema su 15 passa tutte e otto le condizioni.** I due che il censimento 01a dava
+come «vivi» — **11-APEX-7-CORE** e **12-STREAM-S7-BOT** — lo sono davvero: passano V-a..V-d, 4 su 4.
+Ma **nessuno dei due supera COLLEGATO**: 11 ottiene 1 su 4 (solo C-a), 12 **zero su quattro**. È la
+misura esatta della legge L3 (*«collegato è parte di vivo, non un extra»*) e la ragione per cui
+questo piano esiste: il 13% «vivo» del censimento diventa **0% chiuso** quando si contano anche i
+fili.
+
+## C. Le otto condizioni ordinate per quanto sono lontane
+
+| Condizione | PASSA | Lettura |
+|---|---:|---|
+| **C-a** *ingresso dichiarato* | **10/15** | La più facile e la più svuotata: passa perché ogni `BACKBONE.md` ha una riga «Inbound (riceve)» e un template JSON con `"payload": {}`. **Un contratto d'ingresso che non specifica il payload è un contratto solo di nome** — V4 dovrebbe alzare questa asticella, o C-a resta una firma di presenza. |
+| **V-c** *uscita in un posto stabilito* | **5/15** | Passa dove esiste un motore reale che scrive: 08-INTELLIGENCE (wiki), 10-MEMORY (358 CP), 11, 12, 13. |
+| **C-d** *ha servito qualcuno* | **5/15** | 01 (22 lead contattati), 03 (3 caroselli consegnati), 08 (wiki letta ogni sessione), 10 (358 CP + 32 ADR) — e nient'altro. |
+| **V-a** *comando che esce 0* | **3/15** | 11, 12, 14. **Tre comandi su quindici ecosistemi.** |
+| **V-b** *contratto validato* | **2/15** | Solo 11 (JSON Schema + policy OPA) e 12 (`quality_gates.py`). |
+| **V-d** *test verde* | **2/15** | Solo 11 (27 test + CI) e 12 (7/7). **Undici nodi su quindici non hanno un solo file di test.** |
+| **C-b** *casella del destinatario* | **1/15** | Solo 14-TESORERIA, e per un file da 441 byte. |
+| **C-c** *traccia automatica* | **0/15** | Zero. Il comando che dovrebbe provarla non esiste. |
+
+## D. Sette cose che questa ricognizione ha trovato e che V3 non sapeva
+
+1. **`13-ARENA-APEX` non è «soddisfatta a metà» su V-a: è rotta.** `python orchestrator.py --help`
+   → **exit 1**, `UnicodeEncodeError` su console cp1252 (`orchestrator.py:449`). Il censimento 01a
+   la dava come «CLI esiste e funziona, solo il README indirizza male». **Non funziona su questa
+   macchina**, e 11-APEX-7-CORE risolve lo stesso difetto con una riga (`sys.stdout.reconfigure`
+   in `main.py`): la correzione è nota, è nel repo, e non è stata portata qui.
+2. **`C-c` non è «da fare»: è impossibile da provare oggi.** Il comando `trace stato --origine hook`
+   che V2 §4.2 usa come prova **non esiste** (`empire` ha 7 sottocomandi, nessuno è `trace`) e il
+   campo `origine` **non esiste** nella dataclass `Traccia` di `empire/trace.py`. Prima di poter
+   *misurare* C-c su qualunque nodo, E0.7 deve costruire sia il campo sia il comando. **Il gate di
+   §7 non è eseguibile finché quel comando non nasce.**
+3. **C-a passa 10 volte su 15 per un motivo che non regge.** Il «contratto d'ingresso» è lo stesso
+   blocco JSON copiato in ogni `BACKBONE.md`, con `"payload": {}` letteralmente vuoto. Se V4 lascia
+   C-a così, `empire vivo --json` mostrerà 10 nodi «collegati in ingresso» che non sanno cosa
+   ricevono. **Suggerimento: C-a dovrebbe esigere che il payload sia tipizzato**, come fa
+   15-LANCI con i suoi 13 schemi.
+4. **L'ULTIMO METRO è misurabile per ecosistema, e nessuno lo stava facendo.**
+   `company/Memory/ULTIMO-METRO.md` (rigenerato da `scripts/ultimo_metro.py`) permette di decidere
+   C-d con una misura invece che con un'opinione: ha reso **NON PASSA** (non «non valutato») il C-d
+   di 02 (7 libri pronti, `libri_pubblicati/` vuota) e di 05 (`video-01/02/03` fra i 25 pezzi mai
+   usciti, il più vecchio fermo da 135 giorni). **Aggancio suggerito: `empire vivo --json` legga
+   `ultimo_metro.py` per la colonna C-d.**
+5. **`15-LANCI` è la controprova del piano, e non è del piano.** Nata il 10/09 da ADR-025, in
+   quattro giorni ha 5 PASSA su 8 e **2 su 4 in COLLEGATO** — meglio di 11-APEX-7-CORE su quel
+   fronte. Il modo in cui è costruita (artefatto tipizzato + schema che lo valida + verbale
+   automatico a ogni transizione + CLI che dichiara quali sottocomandi non esistono ancora) è
+   esattamente ciò che V4 dovrebbe generalizzare, e **esiste già come codice funzionante da
+   copiare**, non come progetto.
+6. **Il censimento 01a ha un errore di puntatore.** Dà `.claude/skills/skill-creator/` come
+   presente: sul disco non c'è (`find .claude/skills -maxdepth 1 -name "skill*"` → solo
+   `skill-builder`, `skill-contradiction-analyzer`). `skill-creator` è **globale**
+   (`C:/Users/Utente/.claude/skills/skill-creator`). Non cambia il verdetto su 07-FORGE, ma è un
+   puntatore da correggere (REGOLA PUNTATORI del `CLAUDE.md`).
+7. **Il perimetro «15» è già scaduto.** Sul disco gli ecosistemi sono **16**, e il numero **08 è
+   occupato due volte**. Un comando che indirizza i nodi per numero — `empire vivo --json` è
+   esattamente quello — **non può nascere prima che `REGISTRO-NUMERI.md` sia sanato**, o produrrà
+   due righe con la stessa chiave.
+
+## E. Cosa consegna questa appendice a `empire vivo --json` (E0.5)
+
+- **28 righe partono `PASSA`**, **86 `NON PASSA`**, **6 `NON VALUTATO`** — e i 6 hanno un nome:
+  `04-MARKETING/C-d`, `06-PLATFORM/C-d`, `07-FORGE/C-d`, `11-APEX-7-CORE/C-d`,
+  `13-ARENA-APEX/C-d`, `14-TESORERIA/V-b`. **Cinque su sei sono C-d**: la condizione più difficile
+  da misurare non è tecnica, è *«chi è il consumatore reale, e vale se è interno?»* — una
+  definizione che V4 deve chiudere, non una misura che manca.
+- Il gate di V3 §7 (`jq '.non_valutati | length'` → 0) **non è raggiungibile con questa appendice
+  sola**: 6 restano aperti per definizione mancante, non per pigrizia. Il gate va riscritto come
+  *«ogni NON VALUTATO ha una riga scritta che dice perché»* — condizione che qui è soddisfatta 6
+  volte su 6.
+- **Limite dichiarato del metodo (L7):** nessun test è stato eseguito. I due V-d marcati PASSA
+  (11 e 12) poggiano su verdi **dichiarati da fonti datate e citate** — ADR-012 del 26/08 nel
+  `README.md` di 11 («148 test verdi») e `STATO-RIPRESA.md` del 03/08 in 12 («exit 0, PASSED
+  7/7») — non su una mia esecuzione di oggi. Se V4 vuole quel numero a prova di errore, servono
+  due `pytest` lanciati, e sono gli unici due comandi che questa ricognizione non poteva
+  permettersi di lanciare restando in sola lettura.
+- **Comandi eseguiti in questa ricognizione, per intero** (tutti in sola lettura, nessuna
+  scrittura — `git status --short` verificato immutato a metà lavoro):
+  `ls` · `find` · `wc -l` · `grep -c` · `head`/`cat` su file di documentazione ·
+  `python .../13-ARENA-APEX/orchestrator.py --help` (exit 1) ·
+  `python scripts/tesoreria.py --help` (exit 0) ·
+  `python .../15-LANCI/.../scripts/lancio.py --help` (exit 0).
