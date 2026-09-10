@@ -245,5 +245,180 @@ un avviso pesante sul costo.
 | `gate_result` | ridondante col `tipo`, si fonde nell'esito del criterio |
 | `note` | contesto libero / `note_correttive` |
 | `tipo: run_done`, `swarm_done`, `lead_generated`, `content_published`, `sale_closed`, `evolution` | **non sono handoff**: sono eventi di lavoro e di business. Restano nel formato-evento; l'adattatore è l'emettitore che li deriva (per i 3 tipi-handoff) dalle transizioni HC-v2 |
-| **`costo_usd` · `durata_sec` · `tier_modello` · `output_size`** | **NESSUN POSTO** negli 11 né nella base HC-v1. Fintanto che l'evento resta un formato separato non è un difetto di HC-v2 — ma vedi conclusione: la legge MEMORY (`HC-ME-POST.costi`, Schema 7) pretende che il *costo* viaggi anche nel contratto, e lì il posto non c'è |
+| **`costo_usd` · `durata_sec` · `tier_modello` · `output_size`** | **NESSUN POSTO** negli 11 né nella base HC-v1. Fintanto che l'evento resta un formato separato non è un difetto di HC-v2 — ma vedi conclusione: la legge MEMORY (`HC-ME-POST.costi`, Schema 9) pretende che il *costo* viaggi anche nel contratto, e lì il posto non c'è |
+
+## Schema 7 — la transizione di `empire/flow` (il settimo modo di passare lavoro)
+
+**Dove vive:** `empire/flow/state.py:26-33`, dataclass `Transition`, letta/scritta da
+`record()`/`history()` (righe 41-73) su `empire/.data/flow/state/<step_id>.json`, una lista di
+transizioni append-only — *«lo stato corrente è sempre DERIVATO dal log, mai un campo mutato in
+place»* (docstring, righe 6-8). File aperto.
+
+**I suoi campi (dal codice):** `ts` · `step` · `from_status` · `to_status` · `actor` ·
+`evidence` (default `""`) · `note` (default `""`) — 7 campi.
+
+**Perché è distinto:** non ha `from`/`to` fra DUE PARTI (mittente/destinatario) — ha
+`from_status`/`to_status`, cioè registra il **movimento di UNA cosa sola** (lo step) attraverso
+stati, non uno scambio fra agenti. `censimento-02:233-242` lo conferma: *«non sa nulla dei
+contratti HC»*. È l'unico dei dieci il cui unico consumatore reale oggi è `done_step()` con un
+solo chiamante (`empire/flow/cli.py:115`, il fatto che ha generato tutta la diagnosi di V1 §11).
+
+**Verdetto: CONVERTIBILE CON ADATTATORE** — la conversione è di *ruolo*, non di campo: uno step
+di flow diventa un HC-v2 il cui `from`/`to` sono lo stesso nodo (il proprietario dello step) nei
+due stati adiacenti.
+
+**Mappa campo→campo:**
+
+| Transition (flow) | HC-v2 |
+|---|---|
+| `ts` | `created_at` della transizione |
+| `step` | `_id` del contratto (lo step stesso è l'unità di lavoro) |
+| `from_status` → `to_status` | `status` — ma l'enum di flow (`OPEN`, e valori liberi come `to_status`) non coincide con `pending→accepted→done→rejected`: serve una tabella di traduzione, non automatica |
+| `actor` | firma di chi ha accettato |
+| `evidence` | l'evidenza che il criterio di accettazione deve produrre (stesso ruolo di `prova` in Schema 5) |
+| `note` | `note_correttive` quando la transizione è un rifiuto |
+| — (assente) | `from`/`to` come DUE PARTI: **non esistono**. L'adattatore deve decidere chi è "mittente" e chi "destinatario" di un movimento a una parte sola — non è una conversione, è una scelta di modellazione, e va dichiarata (non dedotta) prima di scrivere il codice |
+
+## Schema 8 — i passaggi del registro LANCI (`registro.yaml`, sorvegliati da INV-20)
+
+**Dove vive:** `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/dati/registro.yaml:1741` in giù, chiave
+`passaggi:` — **17 righe** (contate: righe 1743-1834+, un blocco per passaggio), sorvegliate a
+macchina da `dati/valida_registro.py:479-501` (INV-20: *«ogni passaggio cita due reparti, un
+artefatto e un criterio»*). File aperto, non censimento riportato a memoria.
+
+**I suoi campi (da un passaggio reale, riga 1743):** `da` · `a` · `passa` (l'artefatto, non un
+payload libero: punta a un `id` della sezione `artefatti:` dello stesso file) · `criterio_
+accettazione` (prosa, ma verificata dal gate del registro) · `se_rifiutato` · un flag opzionale
+`esterno: true` (righe 1827, 1834 — passaggi verso un fornitore esterno, non fra due reparti
+dell'Impero).
+
+**Perché è distinto:** è l'**unico dei dieci schemi verificato da una macchina in produzione**
+(`valida_registro.py` gira prima di ogni build LANCI, V2 §9-F1) — non un formato dichiarato e
+mai controllato come gli altri nove. E `passa` non porta un payload libero: punta per id a un
+**artefatto tipizzato** (13 tipi in `registro.yaml`, es. `ART-OFF`, `ART-CPY`), cioè lo schema del
+contenuto è un contratto a parte, più rigido di `payload.type` degli altri schemi.
+
+**Verdetto: CONVERTIBILE** — è il più vicino a HC-v2 fra i dieci, non il più lontano.
+
+**Mappa campo→campo:**
+
+| registro.yaml (passaggi) | HC-v2 |
+|---|---|
+| `da` / `a` | `from.reparto` / `to.reparto` (dentro `scope: intra`, sono entrambi in `15-LANCI`) |
+| `passa` (id artefatto) | `payload.type` = l'id dell'artefatto; `payload.data` = il contenuto validato dallo schema artefatto |
+| `criterio_accettazione` | il criterio di accettazione valutabile a macchina — **già lo è**, INV-20 lo pretende per costruzione (V2 L9 applicata qui prima che V2 esistesse) |
+| `se_rifiutato` | `failure_handling.on_reject` |
+| `esterno: true` | `scope: inter`, con il caso limite che l'altra parte non è un reparto dell'Impero — la sentinella A-4 (Critica 2) ha già trovato che `valida_registro.py:483` **non sorveglia** i passaggi con `esterno: true` allo stesso modo (`if p.get("esterno"): continue`, il buco che V2 §9-F1 promette di chiudere) |
+| — (assente) | `_instance_id`, `retry`/`escalation_count`, `cp_id`: nessun passaggio del registro ne ha bisogno finché resta un contratto di *fase* (17 righe fisse), non un flusso di *messaggi* (N istanze al giorno) — la conversione vera comincerebbe se e quando F1 (V2 §9) generalizza questo schema a scala d'Impero |
+
+## Schema 9 — i contratti `HC-ME-*` della MEMORY (dichiarati, mai file)
+
+**Dove vive:** `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md:42-47`, tabella con 4 righe: `HC-ME-PRE`,
+`HC-ME-POST`, `HC-ME-ADR`, `HC-ME-PLAN`. File aperto. **Nessuno dei quattro esiste come file
+JSON** — sono righe di una tabella markdown, mai istanziate (stessa malattia di Schema 2).
+
+**I suoi campi (dalla tabella, colonne Direzione/Payload/Acceptance criteria):**
+- `HC-ME-PRE`: payload `{task_id, ecosistema, descrizione, keywords}` → criterio: *«context-pack
+  restituito: stato + CP/ADR/piani rilevanti + pattern AgentDB»*
+- `HC-ME-POST`: payload `{task_id, esito, output_paths, lezioni, **costi**}` → criterio: *«CP
+  scritto + INDEX aggiornato + STATO aggiornato»*
+- `HC-ME-ADR`: payload `{decisione, contesto, alternative, conseguenze}` → criterio: *«ADR-NNN
+  registrato + contradiction-check passato»*
+- `HC-ME-PLAN`: payload `{nuovo piano o revisione}` → criterio: *«versionato in plans/ + STATO
+  aggiornato»*
+
+**Perché è distinto:** è l'unico dei dieci con **quattro varianti di payload nominate per
+scopo** (non un payload libero) e l'unico il cui criterio di accettazione è già scritto come
+**azione verificabile su disco** (*"CP scritto"*, *"ADR-NNN registrato"*) invece che come
+prosa di giudizio — il più vicino a L9 insieme a Schema 8.
+
+**Verdetto: CONVERTIBILE** — con il campo `costi` di `HC-ME-POST` che è la prova diretta,
+citata nel piano stesso (V2 §12 nota: *«un handoff senza `cp_id` è invalido per contratto»*, e
+qui il quarto campo di payload conferma che la MEMORY si aspettava da sempre un contratto vero,
+non solo una regola scritta).
+
+**Mappa campo→campo (`HC-ME-POST`, il caso più ricco):**
+
+| HC-ME-POST | HC-v2 |
+|---|---|
+| `task_id` | `from.task_id` (già in HC-v1) |
+| `esito` | `status` finale (`done`/`rejected`) |
+| `output_paths` | `payload.files` (già in HC-v1) |
+| `lezioni` | `payload.context_refs` o `note_correttive` a seconda che sia lezione neutra o correzione |
+| **`costi`** | **stesso buco di Schema 6**: nessun campo negli 11 lo ospita. Qui però la legge MEMORY lo rende non facoltativo — *«senza CP-id il task NON è chiuso»* (`09-ECOSISTEMA-MEMORY.md:160`) lega esplicitamente costo e chiusura contrattuale. È la prova più forte fra le dieci sezioni che **manchi un dodicesimo campo** (vedi conclusione) |
+| criterio *"CP scritto + INDEX aggiornato + STATO aggiornato"* | il criterio di accettazione valutabile a macchina — tre condizioni **and**, già nella forma L9 |
+| — (assente) | `cp_id` **esiste già come concetto** nel payload implicito (il CP che nasce), ma non come campo esplicito di HC-ME-POST: la scheda lo produce, non lo dichiara come proprio campo — coerente col buco che V2 §12 ha già trovato e chiuso aggiungendo `cp_id` a HC-v2 |
+
+## Schema 10 — APEX-7 pub/sub (il decimo, senza `from` né `to`)
+
+**Dove vive:** già censito per intero da V2 §3 e dal censimento `02d` §B.3 — non riaperto qui
+oltre la verifica che la citazione di V2 sia fedele. `censimento-02d` lo chiama testualmente **«il
+decimo schema di comunicazione dell'Impero»**, confermando che l'elenco di questa appendice
+(D.0) e quello del doom bot originale contano allo stesso modo.
+
+**I suoi campi:** un Event Bus dichiarato **«Publisher NON SA chi riceve. Subscriber NON SA chi ha
+inviato → zero coupling»** (V2 §3, citazione diretta dal codice di APEX-7) — cioè non ha `from`
+né `to` per design, non per omissione. Due archivi `decision_log.db` fanno da traccia automatica,
+ma senza le due parti di un handoff.
+
+**Verdetto: NON CONVERTIBILE, ESCLUSIONE MOTIVATA (confermato)** — non un verdetto nuovo, la
+conferma indipendente di quello che V2 §13 aveva già scritto: *«APEX-7 resta motore interno fuori
+perimetro di collegamento, esce dal denominatore del 100% come nodo ARCHIVIO-funzionale, con la
+ragione scritta»* — oppure l'alternativa dichiarata, l'adattatore pub/sub→HC-v2 con le sue ore
+(V2 §26 decisione 6, in E6). **Questa appendice non trova un terzo caso di esclusione fra i dieci
+schemi**: APEX-7 resta l'unico, e la sua unicità (zero coupling per design) è precisamente ciò che
+lo rende incompatibile — non un difetto di censimento, un fatto architetturale del motore stesso.
+
+---
+
+## CONCLUSIONE — HC-v2 A UNDICI CAMPI: REGGE PER OTTO SCHEMI SU DIECI, NE MANCA UN DODICESIMO
+
+**Bilancio dei dieci verdetti:**
+
+| # | Schema | Verdetto |
+|---|---|---|
+| 1 | HC-v1 (4 contratti AGENCY) | CONVERTIBILE |
+| 2 | `empire-handoff-contract-v1` (template Bus) | CONVERTIBILE |
+| 3 | README Bus (terzo dialetto) | CONVERTIBILE CON ADATTATORE (`type`) |
+| 4 | `agency/trace.jsonl` | CONVERTIBILE CON ADATTATORE (`cycle_id`) |
+| 5 | `empire/trace.py` | CONVERTIBILE CON ADATTATORE (perimetro: solo 2 dei 5 `tipo`) |
+| 6 | Evento Observability | CONVERTIBILE CON ADATTATORE (4 campi di misura senza posto) |
+| 7 | Transizione `empire/flow` | CONVERTIBILE CON ADATTATORE (manca `from`/`to` a due parti) |
+| 8 | Passaggi registro LANCI (INV-20) | CONVERTIBILE |
+| 9 | `HC-ME-*` (MEMORY) | CONVERTIBILE (con lo stesso buco `costi` di #6) |
+| 10 | APEX-7 pub/sub | ESCLUSIONE MOTIVATA (confermata, non nuova) |
+
+**8 convertibili (3 lisci, 5 con adattatore) su 10. 1 esclusione già nota e confermata. Zero
+sorprese fatali**: nessuno schema costringe a riaprire la forma di HC-v2 — la sentinella gemella
+di Critica 2 (§B-3) aveva ipotizzato *«se uno degli otto porta un fan-out uno-a-molti o un
+destinatario condizionale, il dodicesimo campo si scopre dopo la costruzione»*: **non è successo**,
+nessuno dei dieci ha quella forma.
+
+**Ma un dodicesimo campo serve lo stesso, e la prova converge da TRE schemi indipendenti, non
+uno:**
+
+> **`costo` (o `due_at`, vedi sotto — sono DUE buchi distinti, non uno):**
+> - Schema 2 (`empire-handoff-contract-v1`): campo `due_at` — **nessun posto per la scadenza**.
+> - Schema 6 (Observability): `costo_usd`/`durata_sec`/`tier_modello`/`output_size` — **nessun
+>   posto per il costo/misura dell'esecuzione**.
+> - Schema 9 (`HC-ME-POST`): campo `costi` — **stesso buco di Schema 6**, e qui la legge MEMORY
+>   lo rende un requisito di chiusura del contratto, non un extra.
+>
+> **Due campi mancanti distinti, confermati da fonti indipendenti:**
+> 1. **`due_at`** (quando scade, se nessuno accetta/completa entro una data) — visto in Schema 2.
+>    Nessun altro schema lo nomina esplicitamente, ma `failure_handling.on_timeout` di HC-v1
+>    (Schema 1) già presuppone un tempo di riferimento che oggi non ha campo.
+> 2. **`costo`** (quanto è costato produrre questa istanza: token, tempo, tier del modello) — visto
+>    in Schema 6 E Schema 9, **due fonti indipendenti**, la prova più forte fra tutte e dieci.
+
+**Raccomandazione per V4 (non una costruzione, una specifica da portare in V4):** HC-v2 diventa a
+**tredici** campi, non undici: i dieci originali di V2 §12 **più** `due_at` (scadenza,
+opzionale — non tutti gli handoff hanno un timeout reale, es. gli intra-AGENCY di Schema 1 oggi
+non ne hanno uno dichiarato) **più** `costi` (oggetto `{token, usd, tier_modello, durata_sec}` —
+obbligatorio quando l'esecutore è un agente, perché la legge MEMORY (Schema 9) e la legge
+Osservabilità (Schema 6) lo pretendono entrambe, indipendentemente). **Non è un rilievo FATALE
+né GRAVE**: è esattamente il tipo di correzione a basso costo che questa ricognizione esiste per
+trovare PRIMA di E4-F3, non dopo — due righe nello schema, zero migrazioni già scritte da disfare
+(nessuno dei quattro contratti reali di Schema 1 ha ancora un'istanza viva).
+
 

@@ -1,3 +1,41 @@
+## ✅ 2026-09-10 — A6 CHIUSA 10/10 + 8 script nuovi nella fabbrica + gate A6 superato — CP-20260910-Q6CH
+
+**Ordine di Max:** *"via finisci risolvi TUTTO"*. 5 sentinelle schierate, 5 rientrate.
+
+**Categoria A6 «Viral Mastery» chiusa, 10 lezioni su 10** (erano 2/10, ferme dal 07-09). Le 8
+restanti avevano gia' frame, scene e parlato su disco: **zero download**. Registro **da 88 a 124
+regole, tutte a norma** + arbitrato `C-008`.
+
+**8 script NUOVI nella fabbrica, 72 test verdi** — `verifica_fatti`, `audio_level_check`,
+`verifica_pronuncia`, `transcript_fallback`, `misura_tempo_produzione`, `reframe_shorts`,
+`intro_outro_stitcher`, `youtube_analytics_client`. **Nessun file di produzione toccato**
+(verificato con git log sui 6 file protetti), nessuna credenziale nel repo.
+
+**Gate A6 superato:** applicato `A6-RC-02` — `"subtitles": True` non e' piu' una costante. Ogni
+video prendeva **15 punti su 100** di SEO per sottotitoli **mai creati**. `test_youtube_apex7.py`:
+16 test OK.
+
+**⚠️ IL RITROVAMENTO CHE VALE SOLDI:** la fabbrica **non ha nessun modo di rendere pubblico un
+video**. `apex7_orchestrator.py:1546` — visibilita' PRIVATE hardcoded, non parametro. Dopo
+l'approvazione di Max non esiste nessuno script per pubblicare. **Ultimo Metro oggi: 31 pezzi
+finiti mai usciti, 3.067 MB, il piu' vecchio da 142 giorni** (erano 25 una settimana fa).
+ADR-016 non e' disciplina che manca: e' codice mai scritto.
+
+**Altri due:** (a) un solo file — un lettore Playwright di YouTube Studio che riusi il login gia'
+collaudato — chiuderebbe insieme CTR/retention `null`, il motore di apprendimento cieco e **zero
+ricavi YouTube in Tesoreria**; (b) il brief copertina che arriva a Max e' generico mentre
+`brief-miniatura.json`, ricco e gia' validato, resta su disco letto da nessuno.
+
+**D-1 NON si chiude**, ed e' la risposta giusta: la lezione attesa non da' una durata ottimale, e
+lo prova a schermo (la casella «Quanto devono durare i video?» resta vuota per 14:22 mentre le
+altre tre ricevono un numero). Si sostituiscono le costanti con una funzione per-nicchia, senza
+inventare cifre.
+
+**RIPRESA DA:** il percorso di pubblicazione mancante (vale 31 pezzi fermi), poi il lettore
+YouTube Studio, poi il brief copertina, poi il resto del binario B.
+
+---
+
 ## 🟢 2026-09-10 — ✅ La formazione Andrei Pascu è DENTRO le skill, non più in un documento — CP-20260910-HYDJ
 
 Ordine di Max eseguito: migliorare skill/agenti/workflow esistenti con lo studio, creare il nuovo
@@ -85,23 +123,6 @@ EMPIRE DESK non aspetta nessuno (ADR-028).
 ancora "LANCI in attesa di ADR-023" — stantio da 2 giorni, trovato dalla critica.
 
 **Prossimo passo:** V3 — chiudere i 13 rilievi rimanenti nel piano assestato.
-
-## ⚠️ COORDINAMENTO — 2026-09-10, IN CORSO — chiusura categoria A6 + 8 script nuovi della fabbrica YouTube
-
-**Gael, Neri: non toccate queste cartelle finche' questo blocco e' qui.**
-
-- `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/` — nascono 8 file NUOVI
-  (`verifica_fatti.py`, `audio_level_check.py`, `verifica_pronuncia.py`, `transcript_fallback.py`,
-  `misura_tempo_produzione.py`, `reframe_shorts.py`, `intro_outro_stitcher.py`,
-  `youtube_analytics_client.py`) piu' i loro test. **Nessun file esistente viene modificato**:
-  la produzione non cambia comportamento, l'aggancio alla catena avviene al gate (ADR-029).
-- `company/Memory/studi/aitubepro/A6-viral-mastery/` e `regole/A6-viral-mastery/` — le 8 lezioni
-  ferme dal 07-09 vengono studiate e chiuse.
-
-**5 sentinelle in volo** (3 su lezioni con frame, 2 su codice). Ordine di Max: *"via finisci
-risolvi TUTTO"*. Chiude: gate A6, e con esso le 14 regole di binario B ferme.
-
----
 
 ## 🟣 2026-09-10 — ⚠️ ATTIVAZIONE FORZE (ADR-015): Critica 2 su V2-PIANO-AMPLIATO (EMP-MCC4)
 

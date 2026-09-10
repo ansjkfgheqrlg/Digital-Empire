@@ -186,8 +186,9 @@ Ogni attivazione è dichiarata per iscritto (ADR-015). Questa tabella si aggiorn
 
 | 2026-09-10 | SENTINELLA (fable) | CRITICA2-EREDITA | le 3 domande in eredità di V2 (§28 finale): consumatore quotidiano, innesto vs fondazione, E0 vendita-vs-pubblicazione | `_critica-v2/CRITICA-2-1-DOMANDE-EREDITA.md` | ✅ 4 rilievi (3 FATALI, 1 GRAVE) |
 | 2026-09-10 | SENTINELLA (fable) | CRITICA2-SCELTE | le 5 inversioni V1→V2 e i 7 punti di §28 non coperti: reggono come scelte architetturali o sono rattoppi? | `_critica-v2/CRITICA-2-2-SCELTE-ARCHITETTURALI.md` | ✅ 11 rilievi (1 FATALE, 6 GRAVI, 4 MEDI), 2 reggono |
-| 2026-09-10 | SENTINELLA (fable) | V3-APPENDICE-B | le 8 condizioni V/C su ciascuno dei 15 ecosistemi, PASSA/NON PASSA/NON VALUTATO | `_critica-v2/APPENDICE-B-7-CONDIZIONI-15-ECOSISTEMI.md` | 🔄 |
-| 2026-09-10 | SENTINELLA (fable) | V3-APPENDICE-D | i dieci schemi di comunicazione confrontati campo-per-campo con HC-v2 | `_critica-v2/APPENDICE-D-MAPPA-DIECI-SCHEMI.md` | 🔄 |
+| 2026-09-10 | SENTINELLA (fable) | V3-APPENDICE-B | le 8 condizioni V/C su ciascuno dei 15 ecosistemi, PASSA/NON PASSA/NON VALUTATO | `_critica-v2/APPENDICE-B-7-CONDIZIONI-15-ECOSISTEMI.md` | ❌ **CADUTA** (rate-limit sessione fable, zero righe scritte) |
+| 2026-09-10 | SENTINELLA (opus, 2° tentativo) | V3-APPENDICE-B | stesso mandato, rilanciata dopo la caduta | stesso file | 🔄 |
+| 2026-09-10 | SENTINELLA (fable) | V3-APPENDICE-D | i dieci schemi di comunicazione confrontati campo-per-campo con HC-v2 | `_critica-v2/APPENDICE-D-MAPPA-DIECI-SCHEMI.md` | ⚠️ caduta a 6/10 schemi (stesso rate-limit) — **finita da EMPERATOR nello stesso turno**: ✅ 10/10, HC-v2 serve 13 campi non 11 |
 
 ### ⚠️ Prima lezione del piano, pagata sul campo (2026-09-06)
 

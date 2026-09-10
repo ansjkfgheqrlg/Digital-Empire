@@ -407,9 +407,11 @@ sorgente (solo APEX-7 è stato confrontato, ed è risultato non convertibile sen
 1). L'ordine giusto di un'unificazione è censire prima, congelare dopo; V2 ha fatto l'inverso.
 
 **Correzione:** la mappa 10→1 (schema · campi · conversione o esclusione motivata) si scrive **in
-V3**, leggendo `02d` §C.1 (già censito, nessuna costruzione). *(Risultato: Appendice D.)* Se il
-confronto conferma 11 campi bastano, HC-v2 si congela con certezza comprata a mezza giornata; se ne
-serve un dodicesimo, si evita una migrazione a schema già costruito.
+V3**, leggendo `02d` §C.1 (già censito, nessuna costruzione). **Fatta — Appendice D**: 8 dei 10
+schemi convertibili, 1 esclusione confermata (APEX-7), e **HC-v2 non regge a 11 campi**: servono
+**13**, `due_at` (scadenza) e `costi` (oggetto costo/token/tier, confermato da due fonti
+indipendenti — Observability e i contratti `HC-ME-*` della MEMORY). Zero migrazioni da disfare:
+nessuna istanza viva dei 4 contratti reali oggi. La certezza è comprata prima di E4-F3, non dopo.
 
 ---
 
@@ -495,12 +497,20 @@ superiore difendibile, non un conteggio a prova di errore: **235 va trattato com
 stima più grande prodotto da questa critica — e la ragione per cui B-1 era un MEDIO ben speso: 30
 minuti di script hanno chiuso un'incognita da 40+ ore prima che lo scaglione partisse, non a metà.
 
-# APPENDICE D — LA MAPPA DEI DIECI SCHEMI (chiusura di §9.4)
+# APPENDICE D — LA MAPPA DEI DIECI SCHEMI (chiusura di §9.4) — ✅ FATTA
 
-**🔄 In corso** — sentinella indipendente (fable) in background, scrittura incrementale in
+**Completata il 2026-09-10** (sentinella fable, interrotta a metà da rate-limit di sessione e
+finita da EMPERATOR nello stesso turno, stessa disciplina di fonte-citata) —
 [`_critica-v2/APPENDICE-D-MAPPA-DIECI-SCHEMI.md`](_critica-v2/APPENDICE-D-MAPPA-DIECI-SCHEMI.md).
-Quando rientra, il risultato decide se HC-v2 (V2 §12, undici campi) regge com'è o serve un
-dodicesimo campo prima di congelarlo in E4-F3.
+
+**Risultato: HC-v2 non regge a 11 campi — servono 13, non 12.** 8 dei 10 schemi sono convertibili
+(3 lisci, 5 con adattatore già mappato campo-per-campo), 1 esclusione confermata (APEX-7, già
+nota da V2). Ma **due campi mancano**, trovati da fonti indipendenti: **`due_at`** (scadenza —
+Schema 2, il template del Bus) e **`costi`** (oggetto costo/token/tier — visto in DUE schemi
+indipendenti: l'evento Observability e i contratti `HC-ME-*` della MEMORY, che lo rende
+obbligatorio per legge propria). Correzione a basso costo, nessuna migrazione da disfare (zero
+istanze vive dei contratti reali oggi). **HC-v2 in V4 nasce a 13 campi**, non 11: i dieci di V2
+§12 più `due_at` (opzionale) e `costi` (obbligatorio per esecutori-agente).
 
 > **Nota di metodo sulle tre appendici:** sono dichiarate qui come lavoro aperto, non finto chiuso —
 > è la stessa regola che il piano stesso impone (L5, L9): un gate non si dichiara, si esegue. Le tre
@@ -514,9 +524,9 @@ dodicesimo campo prima di congelarlo in E4-F3.
 | Tappa | Stato |
 |---|---|
 | Le 13 correzioni scritte | ✅ |
-| Appendice B (7×15 condizioni) | 🔄 sentinella in corso |
+| Appendice B (8×15 condizioni) | 🔄 sentinella in corso (2° tentativo, fable era rate-limited) |
 | Appendice C (conteggio destinazioni) | ✅ 235/391 senza destinazione, E2 aggiornata |
-| Appendice D (mappa 10 schemi) | 🔄 sentinella in corso |
+| Appendice D (mappa 10 schemi) | ✅ HC-v2 serve 13 campi, non 11 (`due_at` + `costi`) |
 | **Critica 3** (opzionale — si salta se V3 regge) | ⬜ |
 | V4 — piano esecutivo | ⬜ |
 
