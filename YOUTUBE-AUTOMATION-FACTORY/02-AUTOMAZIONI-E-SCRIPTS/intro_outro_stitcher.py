@@ -160,11 +160,34 @@ def concatena(
                 os.unlink(lista_path)
 
     if metodo is None:
-        filtro_parti = "".join(f"[{i}:v:0][{i}:a:0]" for i in range(3))
+        # Il filtro concat di ffmpeg NON scala da solo: se le risoluzioni non combaciano
+        # (caso comune: intro/outro fissi di canale contro un export Fliki di risoluzione
+        # diversa) va normalizzato tutto prima, altrimenti "Input link parameters do not
+        # match the corresponding output link parameters" e la concatenazione fallisce.
+        # Si normalizza sulla risoluzione del video principale (e' quella che conta),
+        # con letterbox se l'aspect ratio di intro/outro e' diverso, e si riallinea anche
+        # il formato audio (sample rate/canali), stesso motivo lato audio.
+        ancora = info_main["video"] or info_intro["video"] or info_outro["video"]
+        larghezza_target = (ancora or {}).get("width") or 1280
+        altezza_target = (ancora or {}).get("height") or 720
+
+        parti_filtro = []
+        etichette = []
+        for i in range(3):
+            parti_filtro.append(
+                f"[{i}:v:0]scale={larghezza_target}:{altezza_target}:"
+                f"force_original_aspect_ratio=decrease,pad={larghezza_target}:{altezza_target}:"
+                f"(ow-iw)/2:(oh-ih)/2,setsar=1[v{i}]"
+            )
+            parti_filtro.append(f"[{i}:a:0]aformat=sample_rates=44100:channel_layouts=stereo[a{i}]")
+            etichette.append(f"[v{i}][a{i}]")
+        parti_filtro.append("".join(etichette) + "concat=n=3:v=1:a=1[v][a]")
+        filtro_complesso = ";".join(parti_filtro)
+
         comando = [
             "ffmpeg", "-y",
             "-i", intro_path, "-i", main_path, "-i", outro_path,
-            "-filter_complex", f"{filtro_parti}concat=n=3:v=1:a=1[v][a]",
+            "-filter_complex", filtro_complesso,
             "-map", "[v]", "-map", "[a]",
             "-c:v", "libx264", "-preset", "medium", "-crf", "20",
             "-c:a", "aac", "-b:a", "128k",

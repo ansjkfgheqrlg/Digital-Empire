@@ -129,7 +129,7 @@ def test_reframe_verticale_su_sorgente_senza_volti_ripiega_su_centro_fisso(tmp_p
     assert uscita.exists()
 
 
-@pytest.mark.skipif(not ha_ffmpeg, reason="richiede ffmpeg installato")
+@pytest.mark.skipif(not ha_ffmpeg or not ha_cv2, reason="richiede ffmpeg e opencv installati")
 def test_reframe_verticale_su_file_inesistente_solleva_errore_chiaro(tmp_path):
     with pytest.raises(FileNotFoundError):
         rf.reframe_verticale(str(tmp_path / "non-esiste.mp4"), str(tmp_path / "out.mp4"))
