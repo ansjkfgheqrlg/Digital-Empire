@@ -310,6 +310,12 @@ def run_check(base_dir: Path | None = None, cfg_path: Path | None = None) -> int
     else:
         print("  (nessuno)")
 
+    scaduta = _scadenza_passata(config)
+    if scaduta:
+        print(f"ATTENZIONE: scadenza_lancio {scaduta} e' gia' passata -- il conto alla rovescia "
+              f"e la nota di prezzo in pagamento.html sono sbagliati. "
+              f"Correggi con --scadenza AAAA-MM-GG quando la data di lancio esiste.")
+
     print(f"tier {tier} - {label}")
     if tier == 1:
         print("Pagamento automatico live: Stripe e' collegato.")
@@ -346,6 +352,85 @@ def run_apply(base_dir: Path | None = None, cfg_path: Path | None = None) -> int
     return 0
 
 
+def _scadenza_passata(config: dict[str, Any], today: date | None = None) -> str | None:
+    """Ritorna la scadenza se e' gia' passata, altrimenti None. Non decide nulla: segnala."""
+    raw = str(config.get("scadenza_lancio") or "").strip()
+    if not raw:
+        return None
+    try:
+        scad = date.fromisoformat(raw)
+    except ValueError:
+        return raw
+    return raw if scad < (today or date.today()) else None
+
+
+def _valida_link_stripe(url: str, quale: str) -> str:
+    """Un Payment Link vero o niente: mai accendere un rail su un URL inventato."""
+    u = (url or "").strip()
+    if not u.startswith("https://"):
+        raise CheckoutConfigError(f"{quale}: serve un URL https, ricevuto {u!r}")
+    if "stripe.com" not in u:
+        raise CheckoutConfigError(
+            f"{quale}: non sembra un Payment Link Stripe ({u!r}). "
+            "Atteso qualcosa come https://buy.stripe.com/..."
+        )
+    return u
+
+
+def run_accendi_stripe(base_url: str, bump_url: str, base_dir: Path | None = None,
+                       cfg_path: Path | None = None) -> int:
+    """Accende i due rail Stripe e propaga tutto nelle pagine. Idempotente."""
+    d = base_dir if base_dir is not None else site_dir()
+    p_cfg = cfg_path if cfg_path is not None else (d / CONFIG_FILENAME)
+    try:
+        config = load_config(p_cfg)
+        base_ok = _valida_link_stripe(base_url, "stripe_base")
+        bump_ok = _valida_link_stripe(bump_url, "stripe_bump")
+    except CheckoutConfigError as e:
+        print(f"ERRORE: {e}")
+        return 1
+
+    rails = config.setdefault("rails", {})
+    rails.setdefault("stripe_base", {}).update({"url": base_ok, "attivo": True})
+    rails.setdefault("stripe_bump", {}).update({"url": bump_ok, "attivo": True})
+    p_cfg.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"=== STRIPE ACCESO -- {config.get('prodotto', 'prodotto')} ===")
+    print(f"  stripe_base: {base_ok}")
+    print(f"  stripe_bump: {bump_ok}")
+
+    scaduta = _scadenza_passata(config)
+    if scaduta:
+        print(f"  ATTENZIONE: scadenza_lancio {scaduta} e' gia' passata -- "
+              f"il conto alla rovescia in pagamento.html sara' sbagliato. "
+              f"Correggi con --scadenza AAAA-MM-GG.")
+    return run_apply(base_dir=d, cfg_path=p_cfg)
+
+
+def run_scadenza(nuova: str, base_dir: Path | None = None, cfg_path: Path | None = None) -> int:
+    """Sposta la scadenza del prezzo di lancio e la propaga nelle pagine."""
+    d = base_dir if base_dir is not None else site_dir()
+    p_cfg = cfg_path if cfg_path is not None else (d / CONFIG_FILENAME)
+    try:
+        config = load_config(p_cfg)
+        scad = date.fromisoformat(nuova.strip())
+    except CheckoutConfigError as e:
+        print(f"ERRORE CONFIG: {e}")
+        return 1
+    except ValueError:
+        print(f"ERRORE: data non valida {nuova!r}, attesa AAAA-MM-GG")
+        return 1
+
+    if scad < date.today():
+        print(f"ERRORE: {scad.isoformat()} e' nel passato. Una scadenza gia' scaduta "
+              f"rompe il conto alla rovescia invece di ripararlo.")
+        return 1
+
+    config["scadenza_lancio"] = scad.isoformat()
+    p_cfg.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"scadenza_lancio -> {scad.isoformat()}")
+    return run_apply(base_dir=d, cfg_path=p_cfg)
+
+
 def main(argv: list[str] | None = None) -> int:
     _safe_stdout()
     parser = argparse.ArgumentParser(
@@ -363,10 +448,25 @@ def main(argv: list[str] | None = None) -> int:
         "--apply", action="store_true",
         help="Inietta i link dal config in manuale.html/pagamento.html (idempotente).",
     )
+    group.add_argument(
+        "--accendi-stripe", nargs=2, metavar=("URL_BASE", "URL_BUMP"),
+        help=(
+            "Accende i due rail Stripe con i Payment Link veri e propaga tutto nelle pagine "
+            "(scrive il config e lancia --apply). E' il comando che porta dal tier 2 al tier 1."
+        ),
+    )
+    group.add_argument(
+        "--scadenza", metavar="AAAA-MM-GG",
+        help="Sposta la scadenza del prezzo di lancio e la propaga nelle pagine (rifiuta date passate).",
+    )
     args = parser.parse_args(argv)
 
     if args.check:
         return run_check()
+    if args.accendi_stripe:
+        return run_accendi_stripe(args.accendi_stripe[0], args.accendi_stripe[1])
+    if args.scadenza:
+        return run_scadenza(args.scadenza)
     return run_apply()
 
 

@@ -365,13 +365,17 @@ def main():
     # e' un guasto come lo e' una forma sbagliata. (2026-09-10, vedi missione_richiesta)
     if missione_richiesta(percorso):
         if not any(trova_missione(t)[1] is not None for t in messaggi):
-            problemi_missione.append(
+            # `problemi` e' cio' su cui si decide il blocco (vedi `if not problemi: return 0`
+            # piu' sotto); `problemi_missione` serve solo a scegliere le istruzioni giuste.
+            # Riempirne uno solo lascia il gate muto: preso in prova il 2026-09-10, caso 16.
+            mancante = (
                 "Max ha scritto `Missione` e questo messaggio non ne porta nessuna. "
                 "Missione non e' una domanda sullo stato: e' un comando con uno schema "
                 "fisso (§6.11 del libro), marcato 🔴 e mai 🟩, in cima al messaggio. "
                 "Costruiscila con verifica_recap.costruisci_missione(sto_facendo, "
-                "obiettivo, fasi) — mai a mano — e rispondi con quella."
-            )
+                "obiettivo, fasi) — mai a mano — e rispondi con quella.")
+            problemi.append(mancante)
+            problemi_missione.append(mancante)
 
     for testo in messaggi:
         inizio, blocco, dentro_fence = trova_battito(testo)

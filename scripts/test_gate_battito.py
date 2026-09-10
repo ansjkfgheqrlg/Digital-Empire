@@ -69,7 +69,7 @@ BATTITO_ROTTO = """**⏱️ RECAP — 40%**
 | 🟩 Potere: tanto% |"""
 
 
-def transcript(testo_assistente):
+def transcript(testo_assistente, chiesto="vai"):
     """`testo_assistente` puo' essere una stringa o una LISTA di blocchi di testo.
 
     La lista serve a riprodurre un turno lungo: piu' messaggi dell'assistente intervallati
@@ -78,7 +78,7 @@ def transcript(testo_assistente):
     fd, percorso = tempfile.mkstemp(suffix=".jsonl")
     os.close(fd)
     pezzi = testo_assistente if isinstance(testo_assistente, list) else [testo_assistente]
-    righe = [{"type": "user", "message": {"role": "user", "content": "vai"}}]
+    righe = [{"type": "user", "message": {"role": "user", "content": chiesto}}]
     for i, t in enumerate(pezzi):
         righe.append({"type": "assistant", "message": {"role": "assistant",
                                                        "content": [{"type": "text", "text": t}]}})
@@ -94,8 +94,8 @@ def transcript(testo_assistente):
     return percorso
 
 
-def esegui(testo, stop_attivo=False):
-    percorso = transcript(testo)
+def esegui(testo, stop_attivo=False, chiesto="vai"):
+    percorso = transcript(testo, chiesto)
     try:
         payload = {"transcript_path": percorso, "stop_hook_active": stop_attivo}
         p = subprocess.run([sys.executable, HOOK],
@@ -171,13 +171,26 @@ CASI = [
 
     ("15. Missione conforme ma NON in cima -> BLOCCA (posizione)",
      "Prima ti dico una cosa.\n\n" + MISSIONE_OK, False, True),
+
+    # --- casi 16-17, aggiunti il 2026-09-10 dopo un fallimento in produzione ---
+    # Max ha scritto `Missione`, Emperator ha risposto a braccio, e il gate ha taciuto:
+    # sapeva validare una Missione malfatta, non accorgersi di una Missione MANCANTE.
+    ("16. Max chiede `Missione` e la risposta non ne porta nessuna -> BLOCCA (era dovuta)",
+     "Ti riassumo lo stato del lavoro in una tabella, con le percentuali.", False, True,
+     "Missione"),
+
+    ("17. `missione` dentro una frase (non e' il comando) -> passa",
+     "Ti riassumo lo stato del lavoro.", False, False,
+     "a che punto e' la missione secondo te?"),
 ]
 
 
 def main():
     esiti = []
-    for nome, testo, stop_attivo, deve_bloccare in CASI:
-        r = esegui(testo, stop_attivo)
+    for caso in CASI:
+        nome, testo, stop_attivo, deve_bloccare = caso[:4]
+        chiesto = caso[4] if len(caso) > 4 else "vai"
+        r = esegui(testo, stop_attivo, chiesto)
         ha_bloccato = bool(r and r.get("decision") == "block")
         ok = (ha_bloccato == deve_bloccare)
         esiti.append(ok)

@@ -1,0 +1,31 @@
+{
+  "_schema": "catalogo-consegna-v1",
+  "_nota": "Catalogo prodotti per la consegna automatica post-pagamento. NESSUN SEGRETO QUI DENTRO: i link di download stanno nel .env, qui c'e' solo il NOME della variabile (campo 'download_env'). Vedi LEGGIMI-CONSEGNA.md.",
+  "_riconoscimento": "Ordine di risoluzione, dal piu' certo al meno certo: 1) metadata.prodotto della sessione Stripe, 2) id del Payment Link (plink_...), 3) price id (solo se i line_items arrivano gia' dentro l'evento). L'importo pagato NON e' mai un criterio: due prodotti possono costare uguale.",
+  "prodotti": {
+    "48-leggi": {
+      "nome": "Le 48 Leggi dei Maestri Dimenticati",
+      "oggetto": "Ecco il tuo manuale \ud83d\udcd6",
+      "corpo": "Ciao {nome},\n\ngrazie per l'acquisto \u2014 apprezzo davvero.\n\nEcco il link per scaricare il tuo PDF de \"Le 48 Leggi dei Maestri Dimenticati\":\n\n{link}\n\nLeggilo con calma, non \u00e8 un libro da divorare tutto di un fiato \u2014 ogni legge merita riflessione.\n\nSe hai domande o vuoi dirmi com'\u00e8 andata, rispondi pure a questa email.\n\nMax",
+      "download_env": "EBOOK_DOWNLOAD_URL",
+      "fallback": true,
+      "riconoscimento": {
+        "metadata_prodotto": ["48-leggi", "48 leggi", "le 48 leggi dei maestri dimenticati"],
+        "payment_link_ids": [],
+        "price_ids": []
+      }
+    },
+    "manuale-claude-code": {
+      "nome": "Manuale Claude Code",
+      "oggetto": "Il tuo Manuale Claude Code",
+      "corpo": "Ciao {nome},\n\necco il Manuale Claude Code:\n\n{link}\n\nUn consiglio: non leggerlo tutto in una volta. Aprilo accanto a un progetto vero e usalo mentre lavori \u2014 serve a quello.\n\nSe qualcosa non ti torna, rispondi a questa email.\n\nMax",
+      "download_env": "MANUALE_CC_DOWNLOAD_URL",
+      "fallback": false,
+      "riconoscimento": {
+        "metadata_prodotto": ["manuale-claude-code", "manuale claude code"],
+        "payment_link_ids": [],
+        "price_ids": []
+      }
+    }
+  }
+}

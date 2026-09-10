@@ -1,3 +1,48 @@
+## 🔴 2026-09-10 — ⚠️ ORDINE A MAX — due gesti da dieci minuti, e la cassa del Manuale si accende
+
+Il piano `EMP-APPLAN1` è in esecuzione. Tutto ciò che si poteva fare senza Max è in corso; queste
+due cose **può farle solo lui** (ADR-026) e **non fermano nient'altro** (ADR-028).
+
+**1 · I due Payment Link Stripe del Manuale** — uno base a **67 €**, uno bump a **27 €**.
+Poi basta un comando, l'ho appena costruito io perché non tocchi nessun file a mano:
+
+```
+python empire/tools/checkout.py --accendi-stripe "URL_BASE" "URL_BUMP"
+```
+
+Scrive il config, accende i due rail, propaga i link in `manuale.html` e `pagamento.html`, aggiorna
+`CHECKOUT-STATO.md` e porta la cassa dal tier 2 (ordine via email, oggi) al **tier 1 (carta, vero)**.
+È idempotente e rifiuta URL che non siano Payment Link Stripe veri.
+
+**2 · Ruotare la chiave Brevo** esposta in chiaro sul repo (B-020, da mesi, marcata rossa).
+Revoca sul pannello Brevo ed emetti la nuova. Non è un incasso, è un rischio aperto.
+
+**Nota tecnica trovata eseguendo:** `scadenza_lancio` nel checkout è ferma al **31/07/2026, già
+passata** — il conto alla rovescia e la nota di prezzo in `pagamento.html` sono sbagliati. Non ho
+inventato una data nuova: `--check` adesso lo segnala, e si corregge con
+`python empire/tools/checkout.py --scadenza AAAA-MM-GG` quando la data di lancio esiste davvero.
+
+---
+
+## 🟣 2026-09-10 — ⚠️ ATTIVAZIONE FORZE (ADR-015): esecuzione del piano Andrei Pascu (`EMP-APPLAN1`)
+
+**Ordine di Max, testuale:** *"ok via parti"* — con mandato di massimo impegno. Il piano chiuso
+stanotte (CP-20260910-K6C2) passa da documento a esecuzione.
+
+**Forze in campo:**
+- 1× **Doom Bot** (opus) — azione 3: consegna automatica del Manuale dopo il pagamento, riusando
+  il webhook Stripe→Gmail già funzionante (`KDP - prodottti digitali/Leanding Page/email-agent/`),
+  parametrizzato per prodotto senza rompere l'ebook che serve oggi.
+- 1× **Sentinella** (sonnet) — azione 5: la conta del pubblico vero, con numeri presi dal disco.
+  Decide se si lancia o se si costruisce pubblico prima (`04-COSTRUZIONE.md` riga 251).
+- **Emperator** — azione 2, fatta: `empire/tools/checkout.py` ha due comandi nuovi
+  (`--accendi-stripe`, `--scadenza`) e `--check` ora segnala la scadenza passata.
+
+**Non toccato in questo giro:** la corsia C2 (perimetro di Gael). Le decisioni D4/D5/D6 del piano
+restano consegnate a lui, non eseguite da qui.
+
+---
+
 ## 🔨 2026-09-10 — `EMP-V6DE`: MANDATO CORRETTO DA MAX — uno studio migliora la fabbrica, non deposita regole — CP-20260910-EVX2
 
 **Ordine di Max:** *"non solo delle regole, ma proprio delle vere implementazioni... anche fare
