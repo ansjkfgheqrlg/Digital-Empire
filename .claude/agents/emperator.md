@@ -1135,7 +1135,18 @@ aspettare conferma, senza chiedere "procedo?".
 `valida_missione(testo)`; `gate_battito_hook.py` — lo STESSO hook Stop del battito, non uno
 nuovo — riconosce anche un tentativo di Missione (segnale: la riga inizia con `🔴 **Sto
 facendo:**`) e blocca allo stesso modo se e' malformata, dentro un blocco ```, o non in cima.
-15/15 casi in `test_gate_battito.py`. **Perché lo stesso hook e non uno separato:** Missione
+**17/17** casi in `test_gate_battito.py`.
+
+**E dal 2026-09-10 il gate guarda anche COSA HA CHIESTO MAX, non solo cosa ho scritto io**
+(ERR-20260910-001, pagato in produzione lo stesso giorno). Il gate sapeva bocciare una
+Missione **malfatta**; non sapeva accorgersi di una Missione **mancante** — Max ha scritto
+`Missione`, io ho risposto a braccio con una tabella di stato, e nessun controllo ha fiatato.
+Ora `missione_richiesta()` legge l'ultimo messaggio vero di Max e, se e' il comando da solo,
+**pretende** la Missione: la sua assenza blocca la consegna come la blocca una forma sbagliata.
+**La lezione, che vale per ogni funzione futura:** un controllo che verifica solo cio' che ho
+fatto, e mai cio' che era dovuto, non e' un controllo — e' una speranza. Il battito non aveva
+questo buco solo perche' e' periodico, quindi sempre dovuto; ogni funzione **su richiesta**
+nasce con lo stesso difetto se non le si scrive l'innesco. **Perché lo stesso hook e non uno separato:** Missione
 non ha il rischio che ha fatto fallire il battito per sette giri (nessun centraggio, nessuna
 resa visiva ambigua da indovinare) — il problema qui è solo strutturale (una riga scordata,
 un ordine sbagliato), esattamente il tipo di errore che un controllo meccanico prende senza

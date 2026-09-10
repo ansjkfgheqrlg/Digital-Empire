@@ -2329,3 +2329,13 @@ dei consigli raccolti), su ordine esplicito di Max.
   `checkout.config.json` col prezzo 67/97/27 gia' fissato da DEC-EST-001 + `email-agent/main.py`)
   e non l'ha mai acceso. 7 decisioni chiuse, fra cui la correzione della scala prezzi 98->400->999
   contro il 434 oggi in esecuzione nella task di Gael.
+
+## 2026-09-10 (EMPERATOR — EMP-W4K7 chiusa per intero)
+- MISSIONE CHIUSA (CP-20260910-QK2M): dopo la Fase 2 (5 interventi di codice, vedi entry
+  precedente) e' stato scritto **Il Libro dell'Agency**, il passo finale della missione —
+  documento pubblico in `.md`+`.py`+`.pdf` (`PIANO-MAESTRO/34-LIBRO-AGENCY.*`), doppione in
+  `documentazione Empire/Piani/Agency/`. Non e' una pagina wiki (e' un deliverable di
+  PIANO-MAESTRO, non un video studiato), loggato qui solo per tracciabilita' della missione
+  che ha chiuso il lotto max18/max17.
+- Con questo `EMP-W4K7` e' chiuso: max18 (9 fonti), max17 (verificato gia' chiuso), Fase 2,
+  Libro dell'Agency — tutte e quattro le fasi fatte.

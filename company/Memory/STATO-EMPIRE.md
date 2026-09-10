@@ -10486,3 +10486,21 @@ obbligo di relazioni dal primo passaggio. Dettaglio completo in
 
 **RIPRESA DA:** `EMP-W4K7` — resta solo il Libro dell'Agency (§4-bis) per chiudere la missione
 per intero. Non parte senza conferma di Max (task grosso, giorni dichiarati nel piano).
+
+## 2026-09-10 — EMP-W4K7 CHIUSO: Il Libro dell'Agency, missione completa (CP-20260910-QK2M)
+
+Su ordine di Max ("via continua") scritto il passo finale della missione: **Il Libro dell'Agency**,
+documento pubblico ufficiale in tre formati — `PIANO-MAESTRO/34-LIBRO-AGENCY.md` (1.627 righe,
+fonte di verita', due parti: il metodo operativo DE + la formazione esterna da 7 fonti in 3
+capitoli), `PIANO-MAESTRO/scripts/build_libro_agency_pdf.py` (sopra `pdf_engine_empire.py`,
+standard-oro), `PIANO-MAESTRO/34-LIBRO-AGENCY.pdf` (11 pagine, 0,42 MB, generato e verificato).
+Doppione in `documentazione Empire/Piani/Agency/`. Parte Prima scritta a mano leggendo 9 skill di
+produzione reali; Parte Seconda (3 capitoli) scritta da 3 scagnozzi in parallelo mentre la Parte
+Prima veniva scritta. Vagliato per marker NO-STUB e fughe di dati prima di dichiararlo pubblico:
+pulito. Dettaglio completo in [CP-20260910-QK2M](checkpoints/CP-20260910-QK2M.md).
+
+**Con questo, `EMP-W4K7` e' chiuso per intero**: lotto max18 (9 fonti), debito max17 verificato
+gia' chiuso, Fase 2 (5 interventi di codice), Libro dell'Agency. Tutte e quattro le fasi fatte.
+
+**RIPRESA DA:** nessuna. Nessun lavoro aperto su questa missione — in attesa del prossimo ordine
+di Max.
