@@ -1,5 +1,28 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-10 (Sentinella — corpus Andrei Pascu: copy + visivo dentro le skill di casa)
+- INGEST: `competitor/Andrei Pascu/site-study/SINTESI-SISTEMA-COPY.md` e
+  `SINTESI-SISTEMA-VISIVO.md` (onda G, 2026-09-09) -> 2 pagine sintesi nuove
+  (`synthesis/Synthesis_Sistema_Copy_Andrei_Pascu.md`, `synthesis/Synthesis_Sistema_Visivo_Andrei_Pascu.md`)
+  + `index.md` aggiornato.
+- INNESTO COPY: `.claude/skills/cro-copy-architect/` — nuovo file
+  `references/formule-andrei-pascu.md` (15 formule + regola di scala prova/concretezza), 4 pattern
+  nuovi in `references/pattern-persuasione-cro.md` (11-14), gate prezzo/prova in
+  `references/checklist-audit-copy.md`. Innesti minori mirati in `.claude/skills/copywriting/`,
+  `copy-editing/`, `market-copy/` (self-anchoring prezzo, scomposizione bundle, verificabilita'
+  prova). Non ripete AP-001..028 (gia' 🟢 in `MIGLIORAMENTI-DIGITAL-EMPIRE.md`, fonte diversa:
+  video-lezioni, non site-study).
+- INNESTO VISIVO: nessuno nelle 3 skill generiche (`frontend-design`, `brand-guidelines`,
+  `theme-factory`) — verificate essere toolkit Anthropic generici, non canone Digital Empire:
+  innestarci sarebbe inquinamento, non arricchimento. Trovato e corretto un puntatore stale:
+  `.claude/skills/empire-premium-style/SKILL.md` (copia di progetto) era ancora alla versione
+  pre-fusione Fabbrica Siti (ADR-023/024, 2026-09-09), mentre la copia globale utente gia'
+  rimandava correttamente — risincronizzate, con nota su cosa resta aperto (richiede ADR).
+- BIBLIOTECA: `.claude/agents/conoscenza-empire.md` + mirror wiki
+  `tools/Tool_Conoscenza_Empire_Agente.md` — nuovo blocco "Corpus Andrei Pascu" con puntatori
+  esatti ai 4 documenti ufficiali, al site-study, al piano di implementazione e al registro
+  candidati, tutti verificati esistenti su disco.
+
 ## 2026-09-05 (EMPERATOR — LANCI: reparti, gerarchia e workflow)
 - INGEST: nessuno. Costruzione del livello di organizzazione, su rilievo di Max: la v4 non
   mostrava reparti ne' gerarchie ne' workflow.
