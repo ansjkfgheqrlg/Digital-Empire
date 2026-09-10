@@ -1,3 +1,20 @@
+## ⚠️ COORDINAMENTO — 2026-09-10, IN CORSO — chiusura categoria A6 + 8 script nuovi della fabbrica YouTube
+
+**Gael, Neri: non toccate queste cartelle finche' questo blocco e' qui.**
+
+- `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/` — nascono 8 file NUOVI
+  (`verifica_fatti.py`, `audio_level_check.py`, `verifica_pronuncia.py`, `transcript_fallback.py`,
+  `misura_tempo_produzione.py`, `reframe_shorts.py`, `intro_outro_stitcher.py`,
+  `youtube_analytics_client.py`) piu' i loro test. **Nessun file esistente viene modificato**:
+  la produzione non cambia comportamento, l'aggancio alla catena avviene al gate (ADR-029).
+- `company/Memory/studi/aitubepro/A6-viral-mastery/` e `regole/A6-viral-mastery/` — le 8 lezioni
+  ferme dal 07-09 vengono studiate e chiuse.
+
+**5 sentinelle in volo** (3 su lezioni con frame, 2 su codice). Ordine di Max: *"via finisci
+risolvi TUTTO"*. Chiude: gate A6, e con esso le 14 regole di binario B ferme.
+
+---
+
 ## 🟣 2026-09-10 — ⚠️ ATTIVAZIONE FORZE (ADR-015): Critica 2 su V2-PIANO-AMPLIATO (EMP-MCC4)
 
 **Ordine di Max: "missione" — riprendo EMP-MCC4 da dove si era fermato (`31-PIANO-IMPERO-VIVO/00-LEGGIMI.md`).**
