@@ -277,3 +277,41 @@ dettaglio — e quando c'è di mezzo una licenza, non si prende né l'uno né l'
 leggere i termini del fornitore.*
 
 Regola che ne nasce: **`A4-L17-01`** (binario A).
+
+---
+
+## C-008 · Scheduling automatico — **il corso lo insegna, noi abbiamo un gate voluto che oggi lascia comunque tutto fermo**
+
+| | |
+|---|---|
+| **Chi** | `A6/L06` («Automazione della pubblicazione», 03:44-04:26) contro `youtube_uploader_playwright.py:432-451` e `YOUTUBE-AUTOMATION-FACTORY/.claude/commands/avvia-yt.md:82` |
+| **Aperto** | 2026-09-10 |
+| **Esito** | **ARBITRATO — nessuno vince del tutto: il gate resta, ma dietro il gate manca la funzione** |
+
+**Cosa dice il corso.** Programmare la pubblicazione con lo scheduling nativo di YouTube Studio,
+scegliendo data e ora in base agli analytics reali del pubblico del canale, in batch (2-3 ore a
+settimana), senza intervento umano al momento esatto della messa online.
+
+**Cosa facciamo noi.** `youtube_uploader_playwright.py:432-451` imposta **sempre** la visibilità a
+"Privato", per una policy dichiarata altrove e non per una svista: *"Visibilità sempre Private,
+mai pubblico senza conferma esplicita di Max per quel video"* (`avvia-yt.md:82`).
+
+**Arbitrato — non è "chi ha ragione", è che i due argomenti vivono a livelli diversi.** Il gate di
+conferma umana prima della pubblicazione **non è in discussione**: su un canale reale, con crediti
+e reputazione in gioco, un controllo umano prima del "pubblico" è una scelta corretta e va
+mantenuta — il corso stesso non insegna a bypassare una revisione, insegna solo *come si
+programma un video già pronto a uscire*. **Il problema vero, misurato leggendo il codice, è un
+altro**: anche i video che Max **ha già approvato** non hanno nessun percorso automatico per
+diventare pubblici a un orario scelto — restano "Privato" fino a un secondo intervento manuale
+identico a quello che il corso automatizza. La fabbrica non ha *rifiutato* lo scheduling per
+scelta: semplicemente non l'ha mai costruito, nemmeno per il tratto di percorso che sta *dopo* il
+gate di Max, dove non ci sarebbe nulla da bypassare.
+
+**Decisione: il gate di Max resta identico.** Si costruisce lo scheduling come **passo successivo
+all'approvazione**, non alternativo ad essa: quando Max dice sì a un video, quel sì può diventare
+"programma per l'orario X" invece di "resta privato finché qualcuno non se ne ricorda" — che è
+lo stato reale oggi per 6 degli 8 video prodotti (BASELINE.md §4, ADR-016 Ultimo Metro).
+
+Regola che ne nasce: **`A6-L06-01`** (binario B).
+
+---

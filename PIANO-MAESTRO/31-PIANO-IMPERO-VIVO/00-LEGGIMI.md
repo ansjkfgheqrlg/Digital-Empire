@@ -158,8 +158,11 @@ Questo piano **non cancella niente** (L1) e non riparte da zero:
   riga:** ha già mentito una volta (la «cartella vuota» che non era vuota).
 - **[Dossier 08 — Roadmap F1..F12](../08-ROADMAP-FASI.md)** — la roadmap originale. F1-F3 sono
   la carta (fatta), F4-F12 sono la vita (da fare). Questo piano è il modo di attraversare F4-F12.
-- **[Dossier 29 — ECOSISTEMA LANCI](../29-ECOSISTEMA-LANCI/00-LEGGIMI.md)** — piano v4 pronto,
-  in attesa di ADR-023. Non parte prima che un flusso vero abbia chiuso un ciclo.
+- **[Dossier 29 — ECOSISTEMA LANCI](../29-ECOSISTEMA-LANCI/00-LEGGIMI.md)** — **Attivo, non più
+  in attesa**: ADR-025 firmato 08/09, esecutore Gael (puntatore corretto il 10/09, era stantio —
+  trovato dalla Critica 2, rilievo A-4/B-7). Costruzione in corso in parallelo a questo piano,
+  sulla stessa merce (i pezzi che E0/E8 mettono fuori) — riconciliazione ancora da fare, vedi
+  `_critica-v2/CRITICA-2-2-SCELTE-ARCHITETTURALI.md` rilievo B-7.
 - **ADR attivi** — nessuno viene contraddetto. Se il piano avesse bisogno di superarne uno, lo
   dichiara e propone l'ADR nuovo: mai in silenzio.
 
@@ -215,12 +218,11 @@ meno, e quando cade perde meno.
 | V1 — piano generale | ✅ | 2026-09-06 |
 | **Critica 1** | ✅ **41 rilievi, 10 FATALI** | 2026-09-06 |
 | **V2 — piano ampliato** | ✅ **1.085 righe · 41 rilievi recepiti** | 2026-09-07 |
-| **Critica 2** | 🔄 **avviata** (2 sentinelle fable, indipendenti, un rilievo per volta) | 2026-09-10 |
-| V3 — piano assestato | ⬜ | |
+| **Critica 2** | ✅ **15 rilievi (4 FATALI · 7 GRAVI · 4 MEDI), 2 REGGE** — `_critica-v2/` | 2026-09-10 |
+| **V3 — piano assestato** | ⬜ **← SI RIPRENDE DA QUI** | |
 | V4 — piano esecutivo | ⬜ | |
 | **Via alla costruzione** | ⬜ | **solo dopo V4, per ordine di Max** |
 
 **Divieto in vigore fino a V4:** nessuna modifica costruttiva al repository. Ordine esplicito
 di Max del 2026-09-06 — *«non puoi adesso iniziare a modificare, fare piccole cose, quando poi
-nel complesso magari andranno a intralcio»*. Si scrive il piano. Si legge, si misura, si
-progetta. **Non si tocca.**
+nel complesso magari andranno a intralcio»*. Si scrive il piano. Si legge, si misur

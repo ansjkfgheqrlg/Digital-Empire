@@ -106,4 +106,45 @@ Criterio applicato a ciascuno: è un rimando legittimo a V3 (limite ammesso e co
 
 ### B-4 — E9 senza gate, dichiarato: REGGE — rimando legittimo, forma onesta prevista da L9, nessun lavoro a monte ci costruisce sopra. Nessun rilievo.
 
-*(in scrittura)*
+### B-5 — Il costo di calendario di E8 (review KDP, tempi dei negozi): REGGE — dipende da terzi, non è misurabile in anticipo, e il piano distingue correttamente tempo di lavoro da tempo di calendario (§21-E8). Rimando legittimo. Nessun rilievo.
+
+### B-6 — Le sette condizioni mai provate sui 15 ecosistemi: il rimando a V3 è onesto, ma E0.5 punto 7 costruisce `empire vivo --json` SOPRA i dati che questo punto dichiara inesistenti — il numero centrale del cruscotto nascerebbe non valutato  [GRAVE]
+
+- **Grado:** GRAVE
+- **Dove si romperebbe:** la collisione è interna a V2 e si legge in due righe: §28.6 ammette *«non ho la lista di cosa manca a ciascuno [dei 15]»* e la rimanda a V3; E0.5 punto 7 consegna in 2-3 ore il comando che *«legge lo stato dei nodi dal registro»* (§3) e lo mette nel gate finale del piano E nel cruscotto quotidiano («vivo%», §23). Ma lo *stato dei nodi nel registro* è esattamente il dato che §28.6 dichiara mai valutato: per 15 nodi su 54 del denominatore (15 ecosistemi + 25 motori + 14 organi, §3) nessuno ha stabilito quali condizioni passino. Il comando quindi o inventa (legge un registro che nessuno ha compilato con una valutazione vera) o stampa un numero costruito su valutazioni implicite di chi lo scrive — e quel numero finisce **ogni giorno** sotto gli occhi di Max come misura del piano. È la definizione esatta del pericolo che LC-3 chiude sul backfill, riaperta sul fronte opposto: non numeri vecchi rimessi a nuovo, ma **numeri mai nati esibiti come misure**. La versione a scala d'Impero dei «61 lead reali» che non esistevano come file (H3).
+- **Con quale conseguenza:** dal giorno di E0.5, il cruscotto §23 porta un «vivo%» che nessuna valutazione per-nodo sostiene; le decisioni quotidiane (la regola dei due giorni fermi, i rapporti a Max) si calibrano su di esso; quando in V3-o-dopo la lista vera arriva, il numero salta — e con lui la fiducia nel cruscotto, che è lo strumento nato per ridarla.
+- **Correzione proposta:** doppio vincolo, entrambi in V3: (1) la lista per-nodo delle sette condizioni sui 15 ecosistemi è **condizione di chiusura di V3** — V3 non si dichiara finita senza (è ricognizione in sola lettura: il divieto non la tocca); (2) `empire vivo --json` nasce con **tre** esiti per nodo, non due: `PASSA | NON PASSA | NON VALUTATO` — e i NON VALUTATO **non entrano né al numeratore né al denominatore**, ma si stampano per nome in coda all'output. Un comando che sa dire «non lo so» è l'unica versione di quel comando compatibile con L7.
+
+### B-7 — La riconciliazione con Gael «dichiarata ma non negoziata»: NON è un rimando, è un rischio già pagato lasciato armato — ed è IL PIÙ PERICOLOSO DEI SETTE  [GRAVE]
+
+- **Grado:** GRAVE
+- **Dove si romperebbe:** §28.7 (*«finché non la legge, resta una decisione unilaterale scritta»*) contro §25.2, che è legge dello stesso piano: *«le decisioni hanno una scadenza e un default. Nessuna decisione lasciata aperta»*. Ogni altra pendenza di V2 sta nella tabella §26 con default e momento («prima di E1», «prima di E4»...). L'unica decisione che coinvolge **l'altra testa piena dell'azienda** non ha riga, non ha scadenza, non ha default, e — a differenza di tutte le altre — **non può essere chiusa da un default di Max**, perché richiede un atto di un terzo: che Gael la legga.
+  Quattro aggravanti, tutte misurate:
+  1. **Il modo di fallire è già stato pagato, per nome.** La memoria di questo repo registra: un blocco «solo firma» lasciato scritto ad aspettare ha tenuto **LANCI fermo 3 giorni** (ADR-025/026; voce MEMORY `feedback_gael_piena_autorita_blocchi_mai_silenziosi`: *«un blocco va portato attivamente, mai lasciato scritto ad aspettare»*). §28.7 è, alla lettera, un blocco lasciato scritto ad aspettare.
+  2. **Il mondo di Gael è già diverso da quello che §19 descrive.** §19 riconcilia un solo conflitto («due lavori #1»: EMPIRE DESK contro il piano) e lo risolve pro EMPIRE DESK. Ma `29-ECOSISTEMA-LANCI/00-LEGGIMI.md` (aperto oggi) dice: *«Status: Attivo — versione 4, ADR-025 firmato da Max 08/09/2026 · Esecutore della costruzione: Gael»* — firmato **il giorno dopo** V2. Gael ha quindi **tre** carichi (EMPIRE DESK, la costruzione di LANCI, E5b di questo piano) e il documento che dovrebbe ordinarli ne conosce due. La riconciliazione non è solo «non negoziata»: è **già stantia**.
+  3. **Dietro la mancata lettura c'è un fork architetturale vero, non una firma di cortesia.** V2 chiede ai motori di EmpireDesk di esporre `register(sub)` (§19, §15 classe A) — cioè di servire **due involucri**: EmpireDesk (che li lancia come subprocess ed *«è lui l'involucro»*, §15) e `empire/` (che li vuole plugin). Se il disegno B0-B4 di Gael è incompatibile o solo diverso, lo si scopre a E5b aperto — 15-45 ore stimate, con Gael dentro — invece che con un messaggio oggi.
+  4. **È l'unico dei sette punti che non si chiude scrivendo meglio V3.** Gli altri sei sono carta che V3 può produrre da sola; questo richiede un atto di coordinamento umano che costa minuti e non è nel calendario di nessuno.
+- **Con quale conseguenza:** caso concreto, ricalcato sul precedente pagato: V3 e V4 si chiudono; E5b apre; Gael legge per la prima volta che il piano gli assegna E5b e pretende `register(sub)` dai suoi motori, mentre lui è a metà della costruzione LANCI con un'altra priorità firmata da Max — e o si ferma il piano (giorni, come LANCI), o Gael cede la sua tabella di marcia (e la lezione «ordini su Gael» dice che eseguirà, pagando LANCI), o si biforca l'involucro. In tutti e tre i casi il costo nasce da un messaggio non mandato a settembre.
+- **Correzione proposta:** trasformare §28.7 in una riga della tabella §26, oggi: «§19 + E5b portati a Gael per lettura e risposta — scadenza: prima della chiusura di V3 — default se non risponde: NON si procede su E5b (unico default ammissibile verso chi ha piena autorità sul proprio terreno), e E5b si ripianifica in V4 col suo input». E V3 riscrive §19 con i **tre** carichi di Gael, LANCI incluso, con l'ordine fra loro firmato da Max — non dedotto da EMPERATOR.
+
+---
+
+## Bilancio del revisore
+
+| Voce | Verdetto | Grado |
+|---|---|---|
+| A-1 · Innesto su organi vivi | direzione giusta, manca il contratto d'innesto (regressione, rientro, migrazione chiamanti; contesa E3/E4 su `trace.py`) | **GRAVE** |
+| A-2 · Consumatore quotidiano | la legge centrale certifica la freschezza del rapporto, non il servizio del flusso: l'Ispettorato può rimorire senza backfill | **FATALE** |
+| A-3 · Preventa strumentata | «stato prima dell'invio» crea il lead perso in silenzio, mai nominato; primo collaudo in produzione su clienti veri | **GRAVE** |
+| A-4 · Denaro in E0 | E0 usa gate che nascono in E0.5; merce fuori senza riconciliazione con LANCI v4, attivo dal giorno dopo V2 | **GRAVE** |
+| A-5 · Ponte bidirezionale | «fonte di verità» è diventata proprietà della coppia e nessun campo la registra; denominatore mobile 439→601 | **GRAVE** |
+| A-6 (nota) · Hook a E0.7 | manca il protocollo di deroga puntuale, firmata, a scadenza | MEDIO |
+| B-1 · Destinazioni nelle 174 | misurabile oggi in sola lettura: va chiuso in V3, non in E2 | MEDIO |
+| B-2 · E6 senza ore | unico scaglione senza tetto; il gate APSOC potrebbe non essere calcolabile a macchina — decisione, non stima | MEDIO |
+| B-3 · Mappa dei 10 schemi | HC-v2 congelato prima del censimento delle sorgenti; la mappa è lettura di `02d`, va in V3 | MEDIO |
+| B-4 · E9 senza gate | **REGGE** — rimando onesto, niente ci costruisce sopra | — |
+| B-5 · Calendario di E8 | **REGGE** — dipendenza da terzi, correttamente separata dal lavoro | — |
+| B-6 · Le 7 condizioni sui 15 | `empire vivo` (E0.5) nasce sopra dati mai valutati: serve l'esito NON VALUTATO e la lista come condizione di chiusura di V3 | **GRAVE** |
+| B-7 · Riconciliazione con Gael | **il più pericoloso dei sette**: rischio già pagato (LANCI fermo 3 gg), riconciliazione già stantia (LANCI attivo dal 08/09), fork `register(sub)`/subprocess dietro — si chiude con un messaggio, oggi | **GRAVE** |
+
+**Totale: 1 FATALE · 6 GRAVI · 4 MEDI · 2 REGGE.** Nessuna delle cinque inversioni va invertita di nuovo: la direzione di V2 è giusta in tutti e cinque i casi, e va detto con la stessa nettezza dei rilievi. Il filo comune dei difetti è un altro: **V2 ha scelto bene e ha specificato a metà** — l'innesto senza il contratto d'innesto, la legge del consumo senza la misura del servito, lo stato-prima-dell'invio senza il suo danno gemello, la merce fuori senza il venditore, le due frecce senza il campo della direzione. Sono tutti difetti da chiudere in V3 **prima** che una riga si costruisca; nessuno richiede di riaprire l'impianto.

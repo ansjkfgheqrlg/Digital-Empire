@@ -367,3 +367,17 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   nota di disambiguazione in cima a `book-to-skill/SKILL.md` (rimando a Empire Studio/Memory
   Empire per l'ingestione di conoscenza propria di Digital Empire), contenuto originale
   della skill invariato.
+
+- **B-063 — NUOVA.** **ULTIMO METRO non ha un registro.** `company/Memory/pubblicati.json` non
+  esiste: nessun pezzo e' mai stato segnato come uscito, quindi il difetto che ADR-016 denuncia
+  (produrre e non pubblicare) non e' nemmeno misurato. Misurato oggi in
+  `competitor/Andrei Pascu/piano-implementazione/AZIONE-5B-INVENTARIO-MAGAZZINO.md`: il magazzino
+  e' passato da 25 pezzi / 2.137 MB a **31 pezzi / 3.067 MB**. Serve un registro minimo (pezzo,
+  data di uscita, canale, link) e un conteggio che qualcuno guardi. Non urgente di per se', ma
+  senza di esso non sapremo mai se ULTIMO METRO si sta chiudendo o allargando.
+
+- **B-064 — NUOVA.** **Quattordici pezzi del magazzino hanno nomi muti** (`video oggi.mp4`, `ce`,
+  `mb`, `cl`, «Il nuovissimo pronto per la pubblicazione CE/CL/MB») e nessuno sa piu' cosa siano:
+  il 56% dell'arretrato e' non classificabile senza aprirli uno per uno. Da guardare e rinominare
+  quando si costruisce pubblico, altrimenti quel materiale e' perso di fatto anche se e' su disco.
+  Fonte: stesso inventario di B-063.

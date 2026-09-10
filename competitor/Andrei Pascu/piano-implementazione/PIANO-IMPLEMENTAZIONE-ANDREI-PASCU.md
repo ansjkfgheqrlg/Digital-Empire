@@ -50,6 +50,30 @@ lancio, ma la via più corta al pubblico con ciò che è già in casa — i pezz
 ULTIMO METRO, a partire da quelli davvero a tema Claude Code (inventario in corso:
 `AZIONE-5B-INVENTARIO-MAGAZZINO.md`).
 
+### L'inventario del magazzino (azione 5B) — la via corta è più stretta di quanto sembrava
+
+`AZIONE-5B-INVENTARIO-MAGAZZINO.md`, misurato sul disco:
+
+- I 25 pezzi di ADR-016 **esistono ancora tutti**, nessuno perso. Ma il magazzino è **cresciuto**:
+  oggi sono **31 pezzi / 3.067 MB**, non 25 / 2.137. Continuiamo a produrre senza pubblicare.
+- `company/Memory/pubblicati.json` **non esiste**: nessun pezzo è mai stato segnato come uscito.
+  ULTIMO METRO non ha un registro — il difetto che denuncia non è nemmeno misurato.
+- **Solo 2 dei 25 sono a tema Claude Code** (8%). Nove sono di un'altra nicchia, e **quattordici
+  hanno nomi muti** (`video oggi.mp4`, `ce`, `mb`, `cl`) e nessuno sa più cosa siano.
+- **Correzione a un errore dell'azione 5:** dei tre video "pronti e a tema" che aveva indicato, uno
+  solo è davvero nel deposito sorvegliato e completo (`youtube page claude code.mp4`, 97 MB, fermo
+  da 140 giorni). Gli altri due stanno un livello sopra, in mezzo a decine di grezzi non montati.
+  Il puntatore era sbagliato, ed è corretto qui.
+- Quell'unico pezzo pronto **non ha titolo, descrizione, copertina né `metadata.json`**: il flusso
+  standard `video.mp4 + copy.md + metadata.json` non gli è mai stato applicato.
+- **Canali: zero attivi a tema.** L'unico canale vivo con pubblico vero è quello di un'altra
+  nicchia; il funnel del Manuale è dichiarato morto dal 29/07; la pagina personale di Gael non è
+  aziendale ed è a zero.
+
+**Cosa significa, detto secco:** la via corta esiste ma è un sentiero, non un'autostrada — **un
+pezzo pronto, non tre**, e nessun posto dove pubblicarlo. Costruire pubblico da qui non è "pubblica
+l'arretrato": è aprire un canale e alimentarlo, e il primo mattone è quel pezzo lì.
+
 **La decisione che resta di Max:** su quale canale escono. Quello previsto è stato dichiarato morto
 e dirottato; senza un canale vivo, i pezzi restano fermi qualunque cosa faccia una sessione.
 
