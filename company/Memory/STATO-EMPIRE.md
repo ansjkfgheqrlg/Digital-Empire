@@ -1,3 +1,16 @@
+## 🟣 2026-09-10 — ⚠️ ATTIVAZIONE FORZE (ADR-015): Critica 2 su V2-PIANO-AMPLIATO (EMP-MCC4)
+
+**Ordine di Max: "missione" — riprendo EMP-MCC4 da dove si era fermato (`31-PIANO-IMPERO-VIVO/00-LEGGIMI.md`).**
+2× **Sentinella** (fable, modello diverso da chi ha scritto V1/V2 — ADR-017) in parallelo:
+- CRITICA2-EREDITA → `_critica-v2/CRITICA-2-1-DOMANDE-EREDITA.md` (le 3 domande che V2 lascia
+  in eredità: consumatore quotidiano, innesto vs fondazione, E0 vendita-vs-pubblicazione)
+- CRITICA2-SCELTE → `_critica-v2/CRITICA-2-2-SCELTE-ARCHITETTURALI.md` (le 5 inversioni
+  V1→V2 e i 7 punti di §28 non coperti: scelte vere o rattoppi?)
+
+**Tocca solo `PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/`** — nessun file di produzione, zero rischio
+di collisione con Gael o con la sessione gemella su EMP-APPLAN1 (sotto). Chiusura esecutiva:
+Emperator (io), sintesi dopo il rientro delle due sentinelle.
+
 ## 🔴 2026-09-10 — ⚠️ ORDINE A MAX — due gesti da dieci minuti, e la cassa del Manuale si accende
 
 Il piano `EMP-APPLAN1` è in esecuzione. Tutto ciò che si poteva fare senza Max è in corso; queste
@@ -13,6 +26,14 @@ python empire/tools/checkout.py --accendi-stripe "URL_BASE" "URL_BUMP"
 Scrive il config, accende i due rail, propaga i link in `manuale.html` e `pagamento.html`, aggiorna
 `CHECKOUT-STATO.md` e porta la cassa dal tier 2 (ordine via email, oggi) al **tier 1 (carta, vero)**.
 È idempotente e rifiuta URL che non siano Payment Link Stripe veri.
+
+**1-bis · ATTENZIONE, trappola vera sulle 48 Leggi.** La consegna automatica adesso riconosce due
+prodotti. Finche' nessun Payment Link e' registrato, le 48 Leggi partono come sempre. **Nel momento
+in cui registri quello del Manuale, le 48 Leggi smettono di avere il fallback**: se non registri
+anche il loro `plink_...` in `KDP - prodottti digitali/Leanding Page/email-agent/prodotti.json`,
+i loro clienti non ricevono piu' niente (nessuna email sbagliata: nessuna email, e una riga nel log
+`consegne-fallite.log`). I due id si incollano nella stessa passata, mai uno solo.
+Serve anche `MANUALE_CC_DOWNLOAD_URL` nel `.env`: il PDF del Manuale non ha ancora un link.
 
 **2 · Ruotare la chiave Brevo** esposta in chiaro sul repo (B-020, da mesi, marcata rossa).
 Revoca sul pannello Brevo ed emetti la nuova. Non è un incasso, è un rischio aperto.

@@ -2,7 +2,7 @@
 
 > **Aperto:** 2026-09-06 · **Committente:** Max · **Esecutore:** EMPERATOR
 > **Assetto:** GOD EMPEROR DOOM · **Ripresa:** EMP-MCC4
-> **Stato:** V2 scritta (2026-09-07) — in attesa della critica 2
+> **Stato:** Critica 2 in corso (avviata 2026-09-10, 2 sentinelle fable indipendenti)
 
 ---
 
@@ -180,6 +180,9 @@ Ogni attivazione è dichiarata per iscritto (ADR-015). Questa tabella si aggiorn
 | 2026-09-06 | DOOM BOT (opus) | 03A-POPOLAZIONE | i due censimenti agenti, la specifica C1..C6, le ondate | `dati/censimento-03a-popolazione.md` | 🔄 |
 | 2026-09-06 | DOOM BOT (opus) | 03B-REGOLAMENTO | cadute reali → regolamento, addestramento, modulo d'ingaggio | `dati/censimento-03b-regolamento-forze.md` | 🔄 |
 
+| 2026-09-10 | SENTINELLA (fable) | CRITICA2-EREDITA | le 3 domande in eredità di V2 (§28 finale): consumatore quotidiano, innesto vs fondazione, E0 vendita-vs-pubblicazione | `_critica-v2/CRITICA-2-1-DOMANDE-EREDITA.md` | 🔄 |
+| 2026-09-10 | SENTINELLA (fable) | CRITICA2-SCELTE | le 5 inversioni V1→V2 e i 7 punti di §28 non coperti: reggono come scelte architetturali o sono rattoppi? | `_critica-v2/CRITICA-2-2-SCELTE-ARCHITETTURALI.md` | 🔄 |
+
 ### ⚠️ Prima lezione del piano, pagata sul campo (2026-09-06)
 
 Due doom bot su quattro sono caduti per un guasto di rete (`server_error` e `ECONNRESET`)
@@ -212,7 +215,7 @@ meno, e quando cade perde meno.
 | V1 — piano generale | ✅ | 2026-09-06 |
 | **Critica 1** | ✅ **41 rilievi, 10 FATALI** | 2026-09-06 |
 | **V2 — piano ampliato** | ✅ **1.085 righe · 41 rilievi recepiti** | 2026-09-07 |
-| **Critica 2** | ⬜ **<- SI RIPRENDE DA QUI** (piu' dura della prima, sulle scelte architetturali) | |
+| **Critica 2** | 🔄 **avviata** (2 sentinelle fable, indipendenti, un rilievo per volta) | 2026-09-10 |
 | V3 — piano assestato | ⬜ | |
 | V4 — piano esecutivo | ⬜ | |
 | **Via alla costruzione** | ⬜ | **solo dopo V4, per ordine di Max** |
