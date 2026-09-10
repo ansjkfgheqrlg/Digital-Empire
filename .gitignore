@@ -256,3 +256,9 @@ modelli/
 # File di prova del controllo anti-blob (6 MB generati per verificare che il
 # gancio pre-commit blocchi davvero i file pesanti). Non e' un sorgente.
 _PROVA-BLOB-TEMPORANEA.bin
+
+# Studio VSL (EMP-DIOEDIT): i frame estratti sono migliaia di PNG rigenerabili
+# con `vsl-study/scripts/misura_vsl.py`. I video sono gia' coperti da *.mp4.
+competitor/Andrei Pascu/vsl-study/misure/**/frames/
+competitor/Andrei Pascu/vsl-study/sorgenti/**/*.m4a
+competitor/Andrei Pascu/vsl-study/sorgenti/**/*.wav
