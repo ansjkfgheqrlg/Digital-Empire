@@ -235,6 +235,56 @@ def trova_missione(testo):
     return inizio, "\n".join(righe[inizio:fine]), False
 
 
+# ---------------------------------------------------------------------------
+# INNESCO DI MISSIONE — aggiunto il 2026-09-10 dopo un fallimento in produzione.
+#
+# Il gate sapeva gia' validare una Missione MALFATTA. Non sapeva accorgersi di una
+# Missione MANCANTE: `trova_missione` restituiva None e il gate passava in silenzio
+# (riga "questo messaggio non porta ne' un battito ne' una Missione"). Max ha scritto
+# `Missione`, io ho risposto a braccio, e nessun controllo ha fiatato.
+#
+# Il battito non aveva questo buco perche' e' periodico: e' sempre dovuto, quindi la sua
+# assenza si vede. Missione e' su richiesta — e nessuno guardava la richiesta.
+# Un controllo a valle senza innesco a monte non e' un controllo: e' una speranza.
+# ---------------------------------------------------------------------------
+
+def missione_richiesta(percorso):
+    """True se l'ultimo messaggio di Max e' il comando `Missione` (§6.11 del libro).
+
+    Lettura stretta, per scelta: il libro dice «`Missione` (o `missione`) — DA SOLA».
+    Si accetta la parola sola, con eventuale punteggiatura o emoji attorno; non si accetta
+    dentro una frase, dove «la missione e' al 10%» non e' un comando ma un discorso.
+    In dubbio si lascia passare: un gate che blocca a sproposito viene disattivato, e un
+    gate disattivato non protegge piu' niente.
+    """
+    try:
+        righe = io.open(percorso, encoding="utf-8", errors="replace").read().splitlines()
+    except Exception:
+        return False
+
+    for riga in reversed(righe):
+        try:
+            d = json.loads(riga)
+        except Exception:
+            continue
+        if d.get("type") != "user":
+            continue
+        contenuto = (d.get("message") or {}).get("content")
+        if isinstance(contenuto, list):
+            tipi = [b.get("type") for b in contenuto if isinstance(b, dict)]
+            if tipi and all(t == "tool_result" for t in tipi):
+                continue  # la macchina che risponde a me, non Max che parla
+            testo = " ".join(b.get("text", "") for b in contenuto
+                             if isinstance(b, dict) and b.get("type") == "text")
+        else:
+            testo = contenuto or ""
+        # i promemoria di sistema non sono parole di Max
+        testo = re.sub(r"<system-reminder>.*?</system-reminder>", " ", testo, flags=re.S)
+        pulito = re.sub(r"[^\w\s]", " ", testo, flags=re.U).strip().lower()
+        return pulito in ("missione",)
+    return False
+
+
 def blocchi_testo_del_turno(percorso):
     """I blocchi `text` dell'ultimo turno, SEPARATI — non concatenati.
 
@@ -310,6 +360,19 @@ def main():
     problemi = []
     problemi_battito = []
     problemi_missione = []
+
+    # INNESCO — Max ha chiesto `Missione`? Allora una Missione e' DOVUTA, e la sua assenza
+    # e' un guasto come lo e' una forma sbagliata. (2026-09-10, vedi missione_richiesta)
+    if missione_richiesta(percorso):
+        if not any(trova_missione(t)[1] is not None for t in messaggi):
+            problemi_missione.append(
+                "Max ha scritto `Missione` e questo messaggio non ne porta nessuna. "
+                "Missione non e' una domanda sullo stato: e' un comando con uno schema "
+                "fisso (§6.11 del libro), marcato 🔴 e mai 🟩, in cima al messaggio. "
+                "Costruiscila con verifica_recap.costruisci_missione(sto_facendo, "
+                "obiettivo, fasi) — mai a mano — e rispondi con quella."
+            )
+
     for testo in messaggi:
         inizio, blocco, dentro_fence = trova_battito(testo)
         if blocco is not None:
