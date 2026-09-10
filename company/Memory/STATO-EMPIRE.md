@@ -1,3 +1,37 @@
+## 🟣 2026-09-10 notte — ⚠️ ATTIVAZIONE FORZE (ADR-015): studio dei VSL di Andrei Pascu → agente «DIO DELL'EDITING» (`EMP-DIOEDIT`)
+
+**Ordine di Max:** studiare nel minimo dettaglio tutti i VSL di Andrei — priorità **Armageddon
+(ultimo lancio)** e **Claude Speedrun** — non per il contenuto ma per **il montaggio**: ogni effetto,
+ogni suono e il momento in cui entra, ogni font, colore, stacco, il tono, le leve psicologiche. Poi
+critica e miglioramento integrale, poi un **piano migliorato cinque volte**, poi la costruzione
+dell'agente ufficiale **«Dio dell'Editing»**, che risponde solo a Emperator.
+
+**Impianto in 7 fasi:** `competitor/Andrei Pascu/vsl-study/PIANO-OPERATIVO-STUDIO-VSL.md`.
+Regola madre dello studio: **la macchina misura, l'occhio giudica** — niente impressioni dove esiste
+una misura, niente script dove serve un giudizio.
+
+**Stato:** FASE 0 (approvvigionamento) in corso — 1× Doom Bot (opus) sta procurando i file veri dei
+VSL dalle pagine pubbliche (player HLS). **È il collo di bottiglia:** senza i video non esiste studio
+del montaggio. Strumenti verificati presenti: ffmpeg/ffprobe, yt-dlp (modulo), Playwright, più
+`frame_extractor.py` e `scene_detector.py` di Empire Studio.
+
+**Perimetro:** LANCI non si tocca. Solo materiale pubblicamente accessibile: ciò che sta dietro un
+acquisto si dichiara e non si aggira.
+
+---
+
+## 🟣 2026-09-10 — Appendice D finita (HC-v2 serve 13 campi, non 11), Appendice B rilanciata — CP-20260910-XQGV
+
+**Le 2 sentinelle fable di V3 sono cadute per rate-limit di sessione** (`claude-fable-5`, reset
+17:30 Europe/Rome) — non un blocco che riguarda Gael, solo il modello usato per la ricognizione.
+Applicato ADR-028: non aspetto il reset, continuo su modello diverso/a mano.
+
+**Appendice D (mappa dei 10 schemi) finita da Emperator**, dai 6/10 salvati dalla sentinella
+prima di cadere: **HC-v2 non regge a 11 campi, servono 13** — mancano `due_at` (scadenza) e
+`costi` (costo/token/tier, confermato da due fonti indipendenti). Zero migrazioni da disfare.
+Propagato in `V3-PIANO-ASSESTATO.md`. **Appendice B (8 condizioni × 15 ecosistemi) rilanciata su
+opus**, in corso.
+
 ## ✅ 2026-09-10 — A6 CHIUSA 10/10 + 8 script nuovi nella fabbrica + gate A6 superato — CP-20260910-Q6CH
 
 **Ordine di Max:** *"via finisci risolvi TUTTO"*. 5 sentinelle schierate, 5 rientrate.
