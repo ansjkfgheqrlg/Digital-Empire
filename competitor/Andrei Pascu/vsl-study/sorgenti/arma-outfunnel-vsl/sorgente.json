@@ -1,0 +1,28 @@
+{
+ "slug": "arma-outfunnel-vsl",
+ "url_pagina": "https://armageddon.bsns.it/outfunnel",
+ "url_flusso": "https://player.vimeo.com/video/1224257782?h=306ceb39fa",
+ "data_prelievo": "2026-09-10",
+ "come_preso": "yt-dlp (python -m yt_dlp) sul flusso HLS, formato migliore <=1080p con traccia audio, merge in mp4 con ffmpeg",
+ "durata_secondi": 99.136,
+ "durata_hms": "0:01:39",
+ "peso_byte": 61624870,
+ "peso_mb": 58.8,
+ "risoluzione": "1920x1080",
+ "fps": 29.97,
+ "bitrate_totale_bps": 4972955,
+ "video": {
+  "codec": "h264",
+  "profilo": "High",
+  "bitrate_bps": 4774841,
+  "pix_fmt": "yuv420p"
+ },
+ "audio": {
+  "codec": "aac",
+  "canali": 2,
+  "sample_rate": "48000",
+  "bitrate_bps": 189375,
+  "lingua": "und"
+ },
+ "misurato_con": "ffprobe"
+}

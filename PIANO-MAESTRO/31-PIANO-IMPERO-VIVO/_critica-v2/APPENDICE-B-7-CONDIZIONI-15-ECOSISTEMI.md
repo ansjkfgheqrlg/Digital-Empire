@@ -78,7 +78,9 @@ uniche cartelle `handoffs/` di tutto `company/` sono cinque:
 già scriveva V2 §5 causa 2.
 
 Conseguenza: ogni nodo che dichiara un'uscita verso un altro ecosistema la dichiara **verso una
-casella che non c'è**. C-b è NON PASSA ovunque, con una sola eccezione discussa nella scheda 15.
+casella che non c'è**. C-b è NON PASSA ovunque, **con una sola eccezione: 14-TESORERIA**, il cui
+`README.md` dichiara `report --scrivi` verso `company/Memory/TESORERIA.md` — e quel file esiste
+(441 byte, verificato). Un solo contratto su quindici nomina una destinazione che c'è davvero.
 
 ### Nota di metodo su C-d — quando è NON VALUTATO e non NON PASSA
 

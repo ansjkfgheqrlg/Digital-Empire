@@ -1,0 +1,28 @@
+{
+ "slug": "arma-outemail-secondo",
+ "url_pagina": "https://armageddon.bsns.it/outemail",
+ "url_flusso": "https://player.vimeo.com/video/1072634745?h=74ace96bd1",
+ "data_prelievo": "2026-09-10",
+ "come_preso": "yt-dlp (python -m yt_dlp) sul flusso HLS, formato migliore <=1080p con traccia audio, merge in mp4 con ffmpeg",
+ "durata_secondi": 106.347,
+ "durata_hms": "0:01:46",
+ "peso_byte": 47910021,
+ "peso_mb": 45.7,
+ "risoluzione": "1920x1080",
+ "fps": 29.97,
+ "bitrate_totale_bps": 3604052,
+ "video": {
+  "codec": "h264",
+  "profilo": "High",
+  "bitrate_bps": 3406026,
+  "pix_fmt": "yuv420p"
+ },
+ "audio": {
+  "codec": "aac",
+  "canali": 2,
+  "sample_rate": "48000",
+  "bitrate_bps": 189375,
+  "lingua": "und"
+ },
+ "misurato_con": "ffprobe"
+}

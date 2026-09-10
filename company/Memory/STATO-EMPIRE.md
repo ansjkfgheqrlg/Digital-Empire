@@ -10705,3 +10705,29 @@ gia' chiuso, Fase 2 (5 interventi di codice), Libro dell'Agency. Tutte e quattro
 
 **RIPRESA DA:** nessuna. Nessun lavoro aperto su questa missione — in attesa del prossimo ordine
 di Max.
+
+## 2026-09-10 — ⚠️ LIBRO AGENCY BOCCIATO DA MAX: piano V2 da 700 pagine pronto (CP-20260910-YPRQ)
+
+**Max ha bocciato la prima edizione del Libro dell'Agency**: *"schifoso a livello di contenuti
+[...] deve esserci tutta la formazione acquisita [...] minimo 100 pagine, ma questo come
+minimo."* Estetica e design **approvati**, il difetto è tutto nel contenuto.
+
+**Il numero che condanna:** censimento fatto sul disco → **2.128 atomi di conoscenza** e
+**≈1,5 milioni di parole** di formazione acquisita (753.606 di contenuto integrale + 413.292 di
+studio Andrei Pascu + 79.737 di wiki + 254.732 di skill CRO). Il libro consegnato ne conteneva
+14.000: **l'1,8%**, per giunta ricompresso.
+
+**Causa madre trovata: mancava il gate.** Come il battito prima di `verifica_recap.py`, senza una
+macchina che rifiuta la versione corta passa sempre. Più altri quattro errori (target di
+lunghezza invece che di copertura, doppia compressione dalle sole pagine wiki, formato scelto
+prima del contenuto, perimetro ristretto con una scusa metodologica).
+
+**Fatto in questa sessione:** censimento completo, **motore PDF in flusso provato per davvero**
+(609 parole/pagina, 12,4 KB/pagina, grana e font incorporati), e il **piano V4** dopo tre giri di
+critica in `PIANO-MAESTRO/35-PIANO-LIBRO-AGENCY-V2.md` — 8 Libri, ≥700 pagine, 2.128/2.128 atomi,
+`gate_densita_libro.py` che rifiuta i capitoli magri, costo dichiarato ≈6M token.
+
+**RIPRESA DA:** **`EMP-8M9F`** (`company/Memory/riprese/EMP-8M9F.md`) — dentro c'è tutto: numeri,
+ricetta tecnica del motore, tassonomia degli 8 Libri, le 4 fasi, le trappole. Primo atto: il via
+di Max, poi la **Fase 0** (indicizzazione dei 2.128 atomi). Nessun capitolo si scrive prima che
+`atomi-index.json` esista.

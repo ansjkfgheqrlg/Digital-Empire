@@ -1,0 +1,28 @@
+{
+ "slug": "outheadline-vsl",
+ "url_pagina": "https://www.andrei-copy.com/outheadline",
+ "url_flusso": "https://video.squarespace-cdn.com/content/v1/602126db7a4e4c01fd9babb6/c2dfdc89-bd6c-493b-a967-f88c1996a310/playlist.m3u8",
+ "data_prelievo": "2026-09-10",
+ "come_preso": "yt-dlp (python -m yt_dlp) sul flusso HLS, formato migliore <=1080p con traccia audio, merge in mp4 con ffmpeg",
+ "durata_secondi": 46.251,
+ "durata_hms": "0:00:46",
+ "peso_byte": 17854198,
+ "peso_mb": 17.0,
+ "risoluzione": "1920x1080",
+ "fps": 24.0,
+ "bitrate_totale_bps": 3088249,
+ "video": {
+  "codec": "h264",
+  "profilo": "High",
+  "bitrate_bps": 2953831,
+  "pix_fmt": "yuv420p"
+ },
+ "audio": {
+  "codec": "aac",
+  "canali": 2,
+  "sample_rate": "48000",
+  "bitrate_bps": 128836,
+  "lingua": "und"
+ },
+ "misurato_con": "ffprobe"
+}
