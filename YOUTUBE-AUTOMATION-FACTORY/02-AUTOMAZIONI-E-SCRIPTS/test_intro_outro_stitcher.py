@@ -104,3 +104,40 @@ def test_sonda_legge_codec_e_risoluzione(tmp_path):
     assert info["video"]["height"] == 240
     assert info["video"]["codec"] is not None
     assert info["audio"]["codec"] is not None
+
+
+# ---------------------------------------------------------------------------
+# Runner autonomo (aggiunto 2026-09-10). Senza questo, `python test_<nome>.py`
+# usciva 0 SENZA ESEGUIRE NIENTE: i test in stile pytest sono sole funzioni, e un
+# file che esce 0 in silenzio sembra un test verde mentre non ha provato nulla.
+# Un test silente e' peggio di nessun test, perche' rassicura. Ora gira in
+# entrambi i modi: `pytest` e `python test_<nome>.py`.
+# ---------------------------------------------------------------------------
+if __name__ == "__main__":
+    import sys as _sys, traceback as _tb
+    _falliti = 0
+    _casi = [(_n, _f) for _n, _f in sorted(globals().items())
+             if _n.startswith("test_") and callable(_f)]
+    import inspect as _ins
+    _saltati = 0
+    for _n, _f in _casi:
+        # I casi che chiedono una fixture di pytest (tmp_path, monkeypatch...) non possono
+        # girare qui: si dichiarano SALTATI, non falliti. Chiamarli "falliti" farebbe
+        # scattare un allarme falso ogni volta, e un allarme che grida sempre viene spento.
+        if _ins.signature(_f).parameters:
+            _saltati += 1
+            print("SALTATO %s  (richiede pytest: %s)"
+                  % (_n, ", ".join(_ins.signature(_f).parameters)))
+            continue
+        try:
+            _f()
+            print("OK      %s" % _n)
+        except Exception:
+            _falliti += 1
+            print("FALLITO %s" % _n)
+            _tb.print_exc()
+    _eseguiti = len(_casi) - _saltati
+    print("")
+    print("%d/%d test passati (%d saltati, girano con: python -m pytest %s)"
+          % (_eseguiti - _falliti, _eseguiti, _saltati, __file__.rsplit("\\", 1)[-1]))
+    _sys.exit(1 if _falliti else 0)

@@ -1505,6 +1505,12 @@ class Apex7Orchestrator:
             f"Iscriviti per altri contenuti su {keyword}: consigli basati su studi reali, non su mode."
         )
 
+        # Stato reale dei sottotitoli nativi YouTube (A6-RC-02). Oggi e' sempre False, e
+        # dev'esserlo: nessun passo della catena li crea. Diventera' vero il giorno in cui
+        # A6-RC-01 aggiunge il tab "Elementi video" all'uploader, e allora questa riga
+        # leggera' l'esito di quel passo invece di una costante.
+        sottotitoli_nativi_creati = False
+
         metadata_path = os.path.join(TEMPLATES_DIR, "metadati.json")
         metadata = {
             "title": idea_title,
@@ -1512,7 +1518,16 @@ class Apex7Orchestrator:
             "tags": tags,
             "keyword": keyword,
             "thumbnail": not skip_thumbnail,
-            "subtitles": True
+            # A6-RC-02 (gate A6, 2026-09-10) — prima qui c'era `True` FISSO, e seo_score.py
+            # assegna a questa voce 15 punti su 100: ogni video prendeva un sesto del
+            # punteggio SEO per sottotitoli nativi MAI CREATI (l'uploader non tocca nemmeno
+            # il tab dove si attivano — grep: zero occorrenze di caption/subtitle in
+            # youtube_uploader_playwright.py). Un video mediocre a 55 punti onesti passava
+            # gonfiato a 70. Finche' A6-RC-01 non costruisce davvero quel passo, la risposta
+            # onesta e' False: il punteggio medio scende, ma diventa vero. Stessa logica gia'
+            # accettata per il criterio musica in qa-audio-video.md §10 (inapplicabile
+            # dichiarato, non taciuto).
+            "subtitles": bool(sottotitoli_nativi_creati)
         }
         self.save_json(metadata_path, metadata)
 
