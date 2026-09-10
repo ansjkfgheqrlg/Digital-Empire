@@ -28,6 +28,26 @@ risolvi TUTTO"*. Chiude: gate A6, e con esso le 14 regole di binario B ferme.
 di collisione con Gael o con la sessione gemella su EMP-APPLAN1 (sotto). Chiusura esecutiva:
 Emperator (io), sintesi dopo il rientro delle due sentinelle.
 
+## 🚨 2026-09-10 — LA CONTA DEL PUBBLICO HA DATO **ZERO**: non si lancia, si costruisce pubblico
+
+Azione 5 del piano `EMP-APPLAN1`, misurata sul disco, non stimata
+(`competitor/Andrei Pascu/piano-implementazione/AZIONE-5-CONTA-DEL-PUBBLICO.md`):
+nessuna lista email, canale YouTube dichiarato morto e dirottato il 29/07 su una nicchia non nostra,
+Instagram a zero, traffico del sito mai misurato, 1.439 contatti di outreach freddi e fuori target.
+L'unico numero grande — 198.000 iscritti — è di un canale spirituale destinato alla rivendita:
+**vanità, non pubblico del Manuale**.
+
+Per `04-COSTRUZIONE.md` riga 251, con pubblico zero **il lancio non si apre**. Cassa e consegna
+(azioni 2 e 3, fatte oggi) restano lavoro giusto: servono il giorno che il pubblico esiste.
+Quello che cambia è cosa viene dopo — **la via più corta al pubblico è ciò che è già finito in casa**:
+i pezzi di ULTIMO METRO a tema Claude Code, fermi da oltre 140 giorni. Inventario in corso.
+
+**⚠️ DECISIONE CHE SOLO MAX PUÒ PRENDERE: su quale canale escono.** Quello previsto è morto e
+dirottato. Senza un canale vivo i pezzi restano fermi qualunque cosa faccia una sessione — e questo
+sì blocca la costruzione del pubblico, non altro (ADR-028).
+
+---
+
 ## 🔴 2026-09-10 — ⚠️ ORDINE A MAX — due gesti da dieci minuti, e la cassa del Manuale si accende
 
 Il piano `EMP-APPLAN1` è in esecuzione. Tutto ciò che si poteva fare senza Max è in corso; queste

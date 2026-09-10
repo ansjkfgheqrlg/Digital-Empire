@@ -20,6 +20,41 @@ un mese non è entrato un euro e il documento è ancora bello, è fallito (ADR-0
 
 ---
 
+## 0. Stato di esecuzione — aggiornato 2026-09-10
+
+Il piano è **in esecuzione**, non più solo scritto. Ordine di Max: *"ok via parti"*.
+
+| Azione | Stato | Esito reale |
+|---|---|---|
+| **1** — Payment Link Stripe | ⏸ **solo Max** | il gesto è suo; ora basta un comando, vedi sotto |
+| **2** — accendere il rail | ✅ **fatto** | `empire/tools/checkout.py --accendi-stripe URL_BASE URL_BUMP` scrive i rail, valida i link, propaga nelle pagine, porta dal tier 2 al tier 1. Idempotente, provato su copia. Nuovo anche `--scadenza`; `--check` segnala che `scadenza_lancio 2026-07-31` è passata |
+| **3** — consegna automatica | ✅ **fatto** | webhook parametrizzato per prodotto (catalogo + `.env`), 25 test verdi offline, testo delle 48 Leggi identico byte a byte all'originale. **Trappola:** registrando il link del Manuale, le 48 Leggi perdono il fallback e serve registrare anche il loro id nella stessa passata |
+| **4** — chiave Brevo | ⏸ **solo Max** | rischio aperto, non blocca nulla |
+| **5** — conta del pubblico | ✅ **fatto** | `AZIONE-5-CONTA-DEL-PUBBLICO.md` |
+
+### ⚠️ IL VERDETTO DELL'AZIONE 5 CAMBIA L'ORDINE DEL PIANO
+
+**Pubblico raggiungibile verificato: ZERO.** Nessuna lista email, canale YouTube dichiarato morto e
+dirottato il 29/07 su una nicchia che non è nostra, Instagram a zero, traffico del sito mai
+misurato, e 1.439 contatti di outreach che sono freddi e fuori target (dentisti, concessionari).
+L'unico numero grande sul disco — 198.000 iscritti — è di un canale spirituale destinato alla
+rivendita: vanità pura rispetto al Manuale.
+
+Per `04-COSTRUZIONE.md` riga 251, con pubblico verificato zero **non si lancia: si costruisce
+pubblico prima**. Non è un rinvio del piano, è il piano che funziona: prezzo firmato, cassa accesa e
+pagina viva, moltiplicati per zero visitatori, fanno zero euro.
+
+**La cassa e la consegna restano lavoro giusto e fatto** — servono il giorno che il pubblico esiste,
+e costavano poche ore. Quello che cambia è **cosa viene dopo**: non altre azioni sull'apparato di
+lancio, ma la via più corta al pubblico con ciò che è già in casa — i pezzi finiti e mai usciti di
+ULTIMO METRO, a partire da quelli davvero a tema Claude Code (inventario in corso:
+`AZIONE-5B-INVENTARIO-MAGAZZINO.md`).
+
+**La decisione che resta di Max:** su quale canale escono. Quello previsto è stato dichiarato morto
+e dirottato; senza un canale vivo, i pezzi restano fermi qualunque cosa faccia una sessione.
+
+---
+
 ## 1. La pagina che conta
 
 Se leggi solo questa pagina, hai il piano. **Le altre 34 azioni vengono dopo queste cinque, non
