@@ -1,0 +1,2138 @@
+{
+ "run": "max18-v05-RnNSRF4s9nk",
+ "totale": 72,
+ "atomi": [
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-001",
+   "ka_id": "KA-001",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Apertura diretta del video: il presentatore dichiara di aver costruito un bot che fa trading di Bitcoin con Claude Code (\"Cloudcode\" nella trascrizione automatica) e annuncia che nel video lo ricostruirà insieme allo spettatore, partendo da zero.",
+   "ancora": "Ho costruito un bot che fa trading di Bitcoin con Cloudcode ed in questo video lo andremo a ricostruire insieme.",
+   "fonte": "RnNSRF4s9nk#0:00 (talking head, apertura) + voce 0:00-0:06",
+   "frame": "frame-001.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-002",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-003",
+     "tipo": "motiva"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 37,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "4e2ee2054172b4ccbce126abaca4d474"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-002",
+   "ka_id": "KA-002",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Il presentatore chiarisce subito il vero obiettivo del video: non è una guida per arricchirsi con il trading di Bitcoin, ma un caso di studio su come usare l'intelligenza artificiale per affrontare qualsiasi problema concreto, di cui il bot è solo l'esempio scelto.",
+   "ancora": "Però questo video non è un video su come si diventa ricchi facendo trading di Bitcoin, non sarei qui, eh, però è piuttosto un video su come possiamo utilizzare l'AI per affrontare qualsiasi problema concreto.",
+   "fonte": "RnNSRF4s9nk#0:06 (talking head) + voce 0:06-0:18",
+   "frame": "frame-002.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-001",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-069",
+     "tipo": "precede",
+     "perche": "La stessa tesi (il video non riguarda il trading ma il metodo con l'AI) apre qui e viene ripresa identica nelle considerazioni conclusive."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 43,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "5526f504567339f4c4aac1b62c207088"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-003",
+   "ka_id": "KA-003",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Il video introduce un framework replicabile per affrontare qualsiasi problema con l'aiuto dell'AI, pensato apposta per chi non è esperto del dominio del problema (qui: il trading) e ha bisogno di farsi guidare dagli strumenti passo dopo passo.",
+   "ancora": "Quindi andremo a vedere qual è un framework che possiamo utilizzare per affrontare questo problema e come possiamo farci guidare da questi strumenti nel caso in cui noi non siamo degli esperti nel settore.",
+   "fonte": "RnNSRF4s9nk#0:18-0:24 (talking head) + voce 0:18-0:30",
+   "frame": "frame-004.png, frame-005.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-004",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 38,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "f9839b05218c2e3eac28b2eeecce877e"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-004",
+   "ka_id": "KA-004",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "contenuto": "Il video si divide in tre parti principali, mostrate come schema su Excalidraw con tre riquadri collegati da frecce: \"COMPRENSIONE DEL PROBLEMA\" (icona lampadina, sottotitolo \"Capire cosa si vuole risolvere\"), \"DESIGN DEL SISTEMA\" (icona foglio da progetto con squadra e matita, sottotitolo \"Progettare la soluzione\"), \"IMPLEMENTAZIONE\" (icona \"</>\" sopra un ingranaggio, sottotitolo \"Costruire il sistema\"). Questa mappa in tre fasi corrisponde esattamente alla struttura dell'intero video.",
+   "ancora": "Questo video si dividerà in tre parti principali. Andremo inizialmente a comprendere il problema che dobbiamo analizzare, quindi che cosa vuol dire fare un trading bot di Bitcoin, cioè quali sono i problemi che andiamo a risolvere, quali sono le parti costitutive. Andremo poi a definire come facciamo un design del sistema ed alla fine procederemo all'implementazione.",
+   "fonte": "RnNSRF4s9nk#0:30 (schermata Excalidraw) + voce 0:30-0:54",
+   "frame": "frame-006.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-003",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-006",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-017",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 66,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "1bbfffd180470148d1e5a71c1b206669"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-005",
+   "ka_id": "KA-005",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Presentazione personale del canale: il presentatore gestisce un'azienda di consulenza AI con clienti che vanno da €10.000 al mese fino a 50 milioni di euro all'anno di fatturato, e ha una community privata nella quale insegna a freelancer e imprenditori come applicare l'AI in qualsiasi business e come vendere questi servizi.",
+   "ancora": "...artificiale con la quale facciamo consulenza business che vanno dai €10.000 al mese fino ai 50 milioni di euro all'anno ed ho una community... privata nella quale insegno a freelancer ed imprenditori come applicare l'AI in qualsiasi business e come vendere questi servizi.",
+   "fonte": "RnNSRF4s9nk#1:00-1:06 (talking head) + voce 1:00-1:18",
+   "frame": "frame-011.png, frame-012.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-072",
+     "tipo": "precede",
+     "perche": "La stessa community/offerta anticipata qui viene richiamata come pitch di vendita nella chiusura del video."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 51,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "2ae2c288acad895343645ff440d8725b"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-006",
+   "ka_id": "KA-006",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Schema completo a tre livelli \"TRADING BOT BITCOIN SU BINANCE\" disegnato su Excalidraw, la scomposizione del bot nei suoi building blocks: LIVELLO 1 MONITORAGGIO E ALERT (fascia viola) — Supervisione costante, Notifiche in tempo reale (icona smartphone), Dashboard di controllo (icona ingranaggio); LIVELLO 2 IL BOT (fascia verde) — Lettura Dati (icona candele di borsa, sottotitolo \"Raccoglie candele e prezzi in tempo reale\") → Decisione e Gestione del Rischio (icona cervello, sottotitolo \"Cervello del bot: applica la strategia, decide l'azione, gestisce il rischio\") → Esecuzione Ordini (icona carrello, sottotitolo \"Invia ordini automatici di acquisto e vendita\"); LIVELLO 3 FONDAMENTA (fascia arancione) — Piattaforma Binance (icona banca/edificio, sottotitolo \"Infrastruttura del mercato crittografico\") e Connessione API (icona chiave, sottotitolo \"Interfaccia di comunicazione sicura\"), racchiusi da una graffa col testo \"SI CONFIGURA UNA VOLTA POI FUNZIONA IN AUTOMATICO\".",
+   "ancora": "LIVELLO 1: MONITORAGGIO E ALERT... SUPERVISIONE COSTANTE, NOTIFICHE IN TEMPO REALE, DASHBOARD DI CONTROLLO... LIVELLO 2: IL BOT... LETTURA DATI... DECISIONE E GESTIONE DEL RISCHIO... ESECUZIONE ORDINI... LIVELLO 3: FONDAMENTA... PIATTAFORMA BINANCE... CONNESSIONE API... SI CONFIGURA UNA VOLTA POI FUNZIONA IN AUTOMATICO",
+   "fonte": "RnNSRF4s9nk#1:18 (Excalidraw, prima rivelazione) e #12:54 (versione integrale rivelata) + voce 1:18-1:24",
+   "frame": "frame-014.png, frame-130.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-004",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-014",
+     "tipo": "precede",
+     "perche": "Questo stesso schema è l'output che il presentatore mostra generato dalla skill /diagram-generator nella scena 21."
+    },
+    {
+     "verso": "KA-018",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 135,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "0cf292f055b544d5dd5d5124dbe46388"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-007",
+   "ka_id": "KA-007",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Il presentatore sceglie Binance come piattaforma di riferimento per il bot e precisa esplicitamente di non avere alcuna associazione o sponsorizzazione con l'azienda: fa il video solo perché qualcuno degli spettatori glielo ha chiesto.",
+   "ancora": "...caso useremo Binance. Non ho alcuna associazione, non c'è uno sponsored link, faccio il video solo perché qualcuno di voi me l'ha chiesto.",
+   "fonte": "RnNSRF4s9nk#1:30 (Excalidraw, parola \"BINANCE\" sottolineata a mano) + voce 1:30-1:42",
+   "frame": "frame-016.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-006",
+     "tipo": "parte-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 34,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "38cd821cc0c35d4223f278c5cd3d8b4f"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-008",
+   "ka_id": "KA-008",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Le chiavi di connessione API sono ciò che permette a Claude (o ad altri strumenti come Codex) di accedere in maniera automatica alla piattaforma Binance; senza quelle chiavi l'AI non può operare sul sistema per conto dell'utente. È questa la ragione per cui \"Connessione API\" fa parte del Livello 3 (Fondamenta) del diagramma.",
+   "ancora": "...chiavi che permettono a Cloud di accedere a o a Codex di accedere in maniera automatica, noi non possiamo fare questa cosa qui.",
+   "fonte": "RnNSRF4s9nk#2:00 (Excalidraw, sottolineatura su \"CONNESSIONE API\") + voce 2:00-2:06",
+   "frame": "frame-021.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-006",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-045",
+     "tipo": "precede",
+     "perche": "Questo principio motiva l'intero capitolo successivo di creazione delle chiavi API su Binance."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 53,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "44a12bc438ef66bd80ca0f032f1c162f"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-009",
+   "ka_id": "KA-009",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Dare un ordine vago all'AI (l'esempio usato è \"vai e conquista il mondo\") non è sufficiente perché l'AI possa davvero eseguirlo, perché manca la strategia concreta con cui farlo (con il carro armato, con le spade o con le pistole d'acqua). Bisogna sempre definire la strategia prima di delegare l'esecuzione.",
+   "ancora": "Perché dire a Claud e per favore vai e conquista il mondo non è sufficiente per Claud conquistare questo mondo, cioè con il carro armato, con le spade o con le pistole d'acqua. Quindi dobbiamo definire quella che è la strategia...",
+   "fonte": "RnNSRF4s9nk#3:18 (Excalidraw, sottolineatura arancione su \"Cervello del bot:\" + freccia arancione) + voce 3:18-3:30",
+   "frame": "frame-034.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-010",
+     "tipo": "motiva"
+    },
+    {
+     "verso": "KA-018",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 50,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "a07b05f082a8506ed3a4d833abb409cd"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-010",
+   "ka_id": "KA-010",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Non tutti sanno qual è la migliore strategia per fare trading: la gran parte della ricerca dello spettatore dovrebbe concentrarsi nel decidere qual è la strategia migliore, prima ancora di capire come costruire il sistema tecnico. Costruire il bot con Claude Code lo sa fare quasi chiunque dopo il video; la vera proprietà intellettuale sta nella strategia.",
+   "ancora": "...Non tanti sapranno qual è la miglior strategia per fare trading, quindi la gran parte della vostra ricerca dovrebbe essere nel decidere qual è la strategia migliore prima ancora di capire come costruire il sistema.",
+   "fonte": "RnNSRF4s9nk#3:48 (Excalidraw, freccia diagonale arancione verso \"Decisione e Gestione del Rischio\") + voce 3:48-4:00",
+   "frame": "frame-039.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-009",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-022",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 57,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "77fb133bee571170ad5939fc139584c6"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-011",
+   "ka_id": "KA-011",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "contenuto": "Per affrontare qualsiasi tipo di problema bisogna sempre procedere nello stesso ordine: prima le Fondamenta (\"possiamo farlo?\"), poi il Bot/nucleo operativo (\"cosa facciamo?\"), infine il Monitoraggio (\"come lo monitoriamo?\"). Nel diagramma questo ordine è illustrato da una grande freccia verde verticale che sale dal Livello 3 (Fondamenta) fino al Livello 1 (Monitoraggio), passando per il Livello 2 (il Bot).",
+   "ancora": "...corretta. Ok? Quindi partiamo sempre da possiamo farlo, dopo andiamo al ok, cosa facciamo e dopo è come lo monitoriamo.",
+   "fonte": "RnNSRF4s9nk#4:48 (Excalidraw, grande freccia verde verticale + sottolineature verdi su Livello 2 e Livello 3) + voce 4:36-4:54",
+   "frame": "frame-049.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-006",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-070",
+     "tipo": "precede",
+     "perche": "Questo stesso ordine (fondamenta → costruzione → monitoraggio) viene ricondensato nei tre step del metodo enunciato nelle considerazioni conclusive."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 59,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "6481ade67509b465e665ff5c054aca73"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-012",
+   "ka_id": "KA-012",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Il presentatore anticipa un'obiezione tipica dello spettatore (\"non è sempre chiaro qual è il problema che sto affrontando, non ho sempre chiaro come farlo\") e risponde che per risolverla consiglia sempre di utilizzare uno strumento come Claude, prima ancora di iniziare a costruire qualsiasi cosa.",
+   "ancora": "Ora però noi potremmo chiederci una cosa, voi potreste dirmi: 'Hey Jo, però non è sempre chiaro qual è il problema che sto affrontando, non ho sempre...' [...] non ho sempre chiaro come farlo.\" Bene, per risolvere questo problema vi consiglio sempre di utilizzare uno strumento come cloud.",
+   "fonte": "RnNSRF4s9nk#4:54-5:00 (talking head) + voce 4:54-5:06",
+   "frame": "frame-050.png, frame-051.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-014",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-003",
+     "tipo": "applica"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 45,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "04963914c35d06daacd1b2483220613b"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-013",
+   "ka_id": "KA-013",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "contenuto": "\"Antigravity IDE\" è l'ambiente di sviluppo (fork/derivato di VS Code) usato per l'intera sessione di lavoro con Claude Code nel video, riconoscibile dall'etichetta \"Antigravity IDE - Offline\" nella barra di stato in basso a destra, accanto a \"Screen Reader Optimized\". Il progetto radice aperto si chiama \"Social Media Manager\" (cartella preesistente del presentatore, non creata per questo video), dentro cui viene poi generata la sottocartella \"btc-trading-bot\".",
+   "ancora": "Antigravity IDE - Offline",
+   "fonte": "RnNSRF4s9nk#5:12 (prima apparizione IDE) + voce varie",
+   "frame": "frame-053.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-014",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-052",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 66,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "d4763642d5aace349b7a8181ac509220"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-014",
+   "ka_id": "KA-014",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Prompt reale usato nell'IDE \"Antigravity\" per generare lo schema a blocchi con la skill /diagram-generator: \"I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on). The goal is to clearly display the building blocks. I will give you an example to help you stay in the right direction. If I say I need to build a trading bot, it should include multiple parts, for example: - API connection or platform choice - API connection and bot strategy - and so on /diagram-generator is the skill\". Da questo prompt è stato generato esattamente lo schema a tre livelli \"TRADING BOT BITCOIN SU BINANCE\".",
+   "ancora": "I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on).",
+   "fonte": "RnNSRF4s9nk#5:12 (IDE Antigravity, pannello chat) + voce 5:12-5:30",
+   "frame": "frame-053.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-015",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-006",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 152,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "37afe897009c72882538efcc448c1377"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-015",
+   "ka_id": "KA-015",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "contenuto": "/diagram-generator è una skill personalizzata del presentatore, richiamata esplicitamente nel prompt (\"/diagram-generator is the skill\"), che genera diagrammi ad alto livello a partire da una descrizione testuale del sistema da costruire, pensati per un pubblico non tecnico.",
+   "ancora": "/diagram-generator is the skill",
+   "fonte": "RnNSRF4s9nk#5:12 (IDE Antigravity) + voce 5:12",
+   "frame": "frame-053.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-016",
+     "tipo": "parte-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 37,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "8e1f4fdc0c8e025a89433de519c490f2"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-016",
+   "ka_id": "KA-016",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "contenuto": "Meccanismo dichiarato dietro la skill /diagram-generator: il presentatore ha istruito il bot a restare ad alto livello, cercare di decomporre il task in micro-sezioni, e solo dopo disegnare il diagramma risultante.",
+   "ancora": "...semplicemente questa è una skill nella quale io ho detto al bot, 'Hei, quando ti do un richiesta per farmi un diagramma', stai ad alto livello, cerca di decomporre il task in micro sezioni e dopo",
+   "fonte": "RnNSRF4s9nk#7:00 (IDE Antigravity) + voce 7:00-7:12",
+   "frame": "frame-071.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-015",
+     "tipo": "definisce"
+    },
+    {
+     "verso": "KA-014",
+     "tipo": "esempio-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 31,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "f35954ae780dbdb44676bea9d01287ad"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-017",
+   "ka_id": "KA-017",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "contenuto": "Apertura letterale del secondo capitolo del video: il titolo \"2. Design del sistema\" viene scritto a mano libera su una nuova sezione della stessa lavagna Excalidraw, subito dopo la domanda retorica \"da dove si parte per fare il design del sistema?\".",
+   "ancora": "parte numero due è fare il design del sistema. Allora, da dove si parte però per fare il design del sistema?",
+   "fonte": "RnNSRF4s9nk#7:48 (Excalidraw) + voce 7:48-7:54",
+   "frame": "frame-079.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-004",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-018",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 41,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "35c4ccbb3779a613ccc588b025161922"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-018",
+   "ka_id": "KA-018",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Il presentatore individua il \"blocco core\" da cui partire sempre nel design di un sistema: il riquadro \"Decisione e Gestione del Rischio\" del Livello 2, che cerchia a mano libera con un tratto blu attorno al diagramma esistente. È il blocco da cui dipende la probabilità di successo dell'intero sistema.",
+   "ancora": "dal blocco che io considero il blocco core. Quindi, partiamo sempre da la nostra strategia. E come possiamo andare allora a fare la strategia?",
+   "fonte": "RnNSRF4s9nk#8:00 (Excalidraw, cerchiatura blu) e #11:12 (ellisse completata) + voce 8:00-8:06, 11:12-11:24",
+   "frame": "frame-081.png, frame-113.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-009",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-019",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-020",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 50,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "1ea93a9e87bd3834939fb0a0a49b1bc6"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-019",
+   "ka_id": "KA-019",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Il presentatore generalizza il \"blocco core\" (Decisione e Gestione del Rischio) oltre il trading, con due esempi concreti: in un sistema di marketing campaign automatiche, la probabilità di successo dipende da quanto bene il sistema identifica gli outlier; in un sistema di proposal generation automatica per i clienti, il successo dipende da quanto bene si analizzano i transcript e da quanto vengono convertiti nel \"pain\" del cliente. In entrambi i casi lo stesso diagramma cerchiato resta lo sfondo concettuale fisso.",
+   "ancora": "andiamo a fare una proposal generation, quindi che mandiamo proposte automatiche ai nostri clienti. Gran parte del successo del sistema viene da quanto bene analizziamo i transcript e da quanto questi possono essere convertiti in pain per il nostro cliente",
+   "fonte": "RnNSRF4s9nk#11:12-11:42 (Excalidraw, ellisse blu chiusa) + voce 11:12-11:54",
+   "frame": "frame-113.png, frame-118.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-018",
+     "tipo": "esempio-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 80,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "add5147b00002651be227a34c1faafca"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-020",
+   "ka_id": "KA-020",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Prompt reale `/prompt-contracts` usato per generare la strategia di trading tramite ricerca parallela: \"I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades. What I want is a bot that looks at these candles in the Binance app and then trades. I need your help with the following: please come up with a strategy I can use to create this bot successfully. Please know that this is a demo and it will be run in a sandbox with fake money, so no real harm or financial advice will be given. However, I still want the bot to be fully functioning and not biased by the demo. I need you to use agent polling to scrape and find each individual strategy my bot could use\".",
+   "ancora": "/prompt-contracts I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades.",
+   "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity) + voce 8:06-8:36",
+   "frame": "frame-082.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-021",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-022",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 133,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "2666d2b2333aa201aa25fd8f698cc077"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-021",
+   "ka_id": "KA-021",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "contenuto": "\"Agent polling\" è la tecnica per cui Claude lancia più agenti di ricerca in parallelo, ciascuno specializzato su una categoria diversa di strategie, per poi costruire un prompt contract sulla base dei risultati aggregati. Nel video Claude lancia tre agenti: \"Research trend-following strategies\", \"Research mean-reversion + momentum strategies\", \"Research advanced + composite strategies\", ciascuno con il proprio compito di ricerca (IN) e un campo \"1. Strategy name\" da compilare.",
+   "ancora": "I'll research trading strategies using multiple agents in parallel, then build a prompt contract for the bot. Let me launch research agents to find strategies across different categories.",
+   "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, tre blocchi Agent) e #9:36-10:36 (sottolineature sui tre agenti) + voce 9:36-10:42",
+   "frame": "frame-082.png, frame-102.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-020",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-022",
+     "tipo": "motiva"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 69,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "728315ec09debf0990f2851ff6a94e63"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-022",
+   "ka_id": "KA-022",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Documento di strategia generato da Claude, \"Bitcoin Daily Trading Bot -- Strategy\": \"Approach: Ensemble/Voting (5 indicators, majority rules). Evaluate 5 uncorrelated signals on each daily BTC/USDT candle. Only trade when 3+ agree on direction. Skip when signals are mixed.\"",
+   "ancora": "Approach: Ensemble/Voting (5 indicators, majority rules\" [...] \"Evaluate 5 uncorrelated signals on each daily BTC/USDT candle. Only trad[e] when 3+ agree on direction. Skip when signals are mixed.",
+   "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, pannello destro \"Ready for review\") + voce 8:06-8:12",
+   "frame": "frame-082.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-020",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-023",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 39,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "20b92c4c84a5e44a2f4f883800ede936"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-023",
+   "ka_id": "KA-023",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "I 5 segnali della strategia Ensemble/Voting, elenco completo con soglie: \"1. EMA 50/200 Crossover -- trend direction. EMA50 above EMA200 = bullish, below = bearish. 2. RSI(14) above/below 50 -- momentum. Above 50 = bullish, below = bearish. 3. OBV slope (14-day) -- volume confirmation. Rising OBV = accumulation = bullish, falling OBV = bearish. 4. Bollinger Band position (20, 2 std dev) -- price above middle band = bullish, below = bearish. 5. ADX(14) > 25 -- trend strength filter. Below 25 = no trade at all (no clear trend).\"",
+   "ancora": "The 5 Signals\" con lista numerata: 1. \"EMA 50/200 Crossover -- trend direction. EMA50 above EMA200 = [bullish, below = bearish]\" [...] 5. \"ADX(14) > 25 -- trend strength filter. Below 25 = no trade at all (no clear trend)\"",
+   "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity, \"The 5 Signals\") e #12:00 (versione integrale, non più tagliata) + voce 8:06-8:36",
+   "frame": "frame-082.png, frame-121.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-022",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-024",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-033",
+     "tipo": "precede",
+     "perche": "Questi stessi 5 indicatori diventano i 5 box del flowchart visivo generato più avanti."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 91,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "fe6daf2d9a19e23c1c3228fda4765a64"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-024",
+   "ka_id": "KA-024",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Motivazione della scelta dei 5 segnali e tabella comparativa completa \"Signal | Dimension | Fails when\": \"Each covers a different dimension of market behavior. They are uncorrelated -- when one fails, others compensate:\" — EMA crossover | Trend | Ranging/choppy markets; RSI | Momentum | Extended trends (stays overbought); OBV | Volume | Low-volume fakeouts; Bollinger Band | Volatility | Sudden regime changes; ADX | Trend strength | N/A (it's the safety filter).",
+   "ancora": "Why these 5\", paragrafo: \"Each covers a different dimension of market behavior. They are uncorrelated -- when one fails, others compensate:\" Segue una tabella a tre colonne \"Signal | Dimension | Fails when\"",
+   "fonte": "RnNSRF4s9nk#12:00 (IDE Antigravity, tabella completa a 5 righe) + voce 8:36-9:06",
+   "frame": "frame-121.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-023",
+     "tipo": "parte-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 73,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "ab3e8f06402e136c9f5985da5b996172"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-025",
+   "ka_id": "KA-025",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Sezione \"Risk Management\" del documento di strategia, elenco completo: uscita quando \"Signals flip (3+ switch direction)\" OR \"trailing stop hit (2x ATR(14) from highest point since entry)\"; \"Stop-loss: 1.5x ATR(14) below entry price\"; \"Position size: risk max 2% of capital per trade\"; \"Formula: position_size = (capital * 0.02) / (1.5 * ATR)\"; \"Trailing stop: 2x ATR(14), adjusted\".",
+   "ancora": "Signals flip (3+ switch direction)\" [...] \"OR trailing stop hit (2x ATR(14) from highest point since entry)\" [...] \"Stop-loss: 1.5x ATR(14) below entry price\" [...] \"Formula: position_size = (capital * 0.02) / (1.5 * ATR)\"",
+   "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity, sidebar destra strategia) + voce 12:06-12:36",
+   "frame": "frame-122.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-022",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-035",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 57,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "cdc54af05528a6d25a5d9a6baaec33d3"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-026",
+   "ka_id": "KA-026",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Sezione \"Expected Performance\" del documento di strategia: \"Win rate: 55-60%\", \"Risk/reward ratio: 1:1.5\", \"Trade frequency: low (only on strong consensus)\", \"Works across: trending, ranging, and volatile conditions\".",
+   "ancora": "Expected Performance\" ... \"Win rate: 55-60%\" ... \"Risk/reward ratio: 1:1.5\" ... \"Trade frequency: low (only on strong consensus)\" ... \"Works across: trending, ranging, and volatile conditions\"",
+   "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity, sidebar destra strategia) + voce 12:06",
+   "frame": "frame-122.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-022",
+     "tipo": "parte-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 27,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "c3c481e5ff51014dd9cf0acee7b90b0b"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-027",
+   "ka_id": "KA-027",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Sezione \"Why This Over 20 Other Strategies\" del documento di strategia: sottotitolo \"Single indicators fail predictably:\" con confronto — \"RSI alone: 52-58% win rate but only in ranging markets, destroyed in trends\"; \"EMA crossover alone: 35-42% win rate, great R:R but constant whipsaws in ranges\"; \"MACD alone: 38-45%, lags in fast [markets]\" (riga tagliata nella fonte). In un'altra porzione del documento, letta poco dopo: \"ranges, mean reversion signals (RSI, Bollinger) dominate. No regime detection needed — the voting handles it.\"",
+   "ancora": "Why This Over 20 Other Strategies\" Sottotitolo \"Single indicators fail predictably:\" - \"RSI alone: 52-58% win rate but only in ranging markets, destroyed in trends\"",
+   "fonte": "RnNSRF4s9nk#12:06 (IDE Antigravity) e #13:06 (continuazione scroll) + voce 12:06, 13:06-13:18",
+   "frame": "frame-122.png, frame-132.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-022",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-023",
+     "tipo": "motiva",
+     "perche": "Il fallimento prevedibile dei singoli indicatori è la motivazione dichiarata per usare l'ensemble di 5 segnali non correlati invece di uno solo."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 80,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "af78d71870e7e0ac81f390430e46f9af"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-028",
+   "ka_id": "KA-028",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Sezione \"Tech Stack (for implementation)\" del documento di strategia: \"ccxt -- Binance Testnet API (testnet.binance.vision)\"; \"pandas + pandas-ta -- indicator calculations\"; \"python-dotenv -- API keys from environment\"; \"Both backtest mode (historical candles) and live mode (daily polling)\".",
+   "ancora": "Tech Stack (for implementation)\" \"ccxt -- Binance Testnet API (testnet.binance.vision)\" \"pandas + pandas-ta -- indicator calculations\" \"python-dotenv -- API keys from environment\" \"Both backtest mode (historical candles) and live mode (daily polling)\"",
+   "fonte": "RnNSRF4s9nk#13:06 (IDE Antigravity, allegato image.png con testo strategia) + voce 13:06-13:30",
+   "frame": "frame-132.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-022",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-040",
+     "tipo": "precede",
+     "perche": "Questo stack tecnico è ciò che poi si traduce nei moduli elencati nell'Implementation Order del prompt di plan mode."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 37,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "534869fe34146edc43c517246c387bf3"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-029",
+   "ka_id": "KA-029",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "contenuto": "Per generare il flowchart architetturale, Claude Code prima legge la skill Excalidraw (\"Let me read the excalidraw skill first\" / Read SKILL.md), poi crea il file `.tmp/btc_daily_trading_bot.excalidraw`, ed esegue uno script Python per applicare i colori pastello: comando bash `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager\" && python3 .claude/skills/excalidraw-flowchart/colorize.py .tmp/btc_daily_trad...`. Il file risultante pesa 126.738 byte (~127KB).",
+   "ancora": "Bash\" \"Apply pastel colors to flowchart\" - riga \"IN\": `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media...` [...] \"Flowchart generato:\" `.tmp/btc_daily_trading_bot.excalidraw` \"(127KB).\"",
+   "fonte": "RnNSRF4s9nk#13:30 (IDE Antigravity, log Claude Code) e #14:00 + voce 13:30-14:00",
+   "frame": "frame-136.png, frame-141.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-030",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-016",
+     "tipo": "applica",
+     "perche": "Anche questa skill segue lo stesso mental model visivo già dichiarato per /diagram-generator: rappresentare l'architettura prima di implementarla."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 55,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "d777675b0d2fd3ec87f7ff7f208c2190"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-030",
+   "ka_id": "KA-030",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Riepilogo testuale generato da Claude Code del flowchart appena creato, i 7 step dell'intero ciclo del bot: \"1. Start -- Daily Candle Close (trigger). 2. Fetch + Calculate -- scarica candela BTC/USDT, calcola i 5 indicatori in parallelo (EMA, RSI, OBV, Bollinger, ADX). 3. Voting -- raccoglie i voti, poi filtra: ADX < 25 = HOLD. 4. Decision -- 3+ bullish = LONG, 3+ bearish = SHORT, altrimenti HOLD. 5. Risk Management -- stop-loss 1.5x ATR + trailing stop 2x ATR. 6. Monitor -- loop giornaliero: check signal flip o trailing stop hit, se no aggiorna trailing e continua. 7. Exit -- close position e torna a Wait Next Candle, che riporta al Daily Candle Close.\"",
+   "ancora": "Il flow copre l'intero ciclo:\" seguito da lista numerata completa: 1. **\"Start\"** \"-- Daily Candle Close (trigger)\" [...] 7. **\"Exit\"** \"-- close position e torna a Wait Next Candle, che riporta al Daily Candle Close\"",
+   "fonte": "RnNSRF4s9nk#14:00 (IDE Antigravity, log Claude Code) + voce 14:00-14:30",
+   "frame": "frame-141.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-029",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-032",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-023",
+     "tipo": "applica"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 116,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "f9c5713b839985fb2d82cbfb696b89ba"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-031",
+   "ka_id": "KA-031",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Il file `.excalidraw` generato da Claude è in realtà un JSON leggibile: apertura con `\"type\": \"excalidraw\", \"version\": 2, \"source\": \"https://github.com/swiftlysingh/excalidraw-...`, poi un array `\"elements\"` dove ogni forma è un oggetto con proprietà come `\"id\"`, `\"type\": \"ellipse\"`, `\"x\"`, `\"y\"`, `\"width\"`, `\"height\"`, `\"strokeColor\": \"#1e1e1e\"`, `\"backgroundColor\": \"#b2f2bb\"`, `\"roughness\"`, `\"opacity\"`, `\"boundElements\"` (i collegamenti alle frecce), fino a `\"locked\": false`.",
+   "ancora": "\"type\": \"excalidraw\", \"version\": 2, \"source\": \"https://github.com/swiftlysingh/excalidraw-... \"elements\": [ { \"id\": \"7YVt5tEnTQ\", \"type\": \"ellipse\",",
+   "fonte": "RnNSRF4s9nk#14:30 (editor di codice, JSON del file .excalidraw) + voce 14:30-14:36",
+   "frame": "frame-146.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-029",
+     "tipo": "esempio-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 55,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "205cefeaf647e769d40c4dede68170e2"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-032",
+   "ka_id": "KA-032",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Verifica visiva del flowchart aperto su excalidraw.com: dall'ellisse verde \"Wait Next Candle\" una freccia scende a \"Daily Candle Close\" (altra ellisse verde), da qui una freccia ondulata scende al box blu \"Fetch BTC/USDT Daily Candle\", che a sua volta alimenta il box \"Calculate Indicators\". Questa porzione corrisponde esattamente agli step 1 (Start), 6 (Monitor) e 7 (Exit) descritti a testo da Claude.",
+   "ancora": "verde, andiamo a vedere che cosa succede. Perfetto, mi dice questa è la nostra partenza, quindi aspettiamo una candela.",
+   "fonte": "RnNSRF4s9nk#14:42-15:06 (excalidraw.com, canvas scorso verso il basso) + voce 14:42-15:12",
+   "frame": "frame-148.png, frame-151.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-030",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-033",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 62,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "333fa1291191afa6d9833260933632ec"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-033",
+   "ka_id": "KA-033",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Prima apparizione leggibile per intero dei cinque box degli indicatori tecnici nel flowchart visivo, tutti raggiunti da frecce partite dal box \"Calculate Indicators\" e confluenti in un unico box \"Collect Votes\": \"EMA 50/200 Crossover\", \"RSI 14\", \"OBV Slope 14d\", \"Bollinger Band 20,2\", \"ADX 14\". I nomi coincidono esattamente con quelli del documento di strategia e del riepilogo testuale di Claude, confermando che diagramma visivo e strategia testuale descrivono lo stesso identico sistema.",
+   "ancora": "cinque box blu pastello affiancati, tutti raggiunti da frecce curve nere partite dal box superiore — \"EMA 50/200 Crossover\", \"RSI 14\", \"OBV Slope 14d\", \"Bollinger Band 20,2\", \"ADX 14\"... tutte e cinque le frecce convergono in un unico box blu pastello più in basso, \"Collect Votes\"",
+   "fonte": "RnNSRF4s9nk#15:06 (excalidraw.com) + voce 15:06-15:18",
+   "frame": "frame-152.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-023",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-034",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 72,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "84931023fef3be443b29ca8628bda86c"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-034",
+   "ka_id": "KA-034",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Primo nodo di decisione del flowchart (rombo giallo pastello): \"ADX above 25?\", raggiunto da una freccia dal box \"Collect Votes\". Rappresenta la soglia (threshold) di forza del trend sotto la quale il sistema non considera valido nessun segnale di acquisto o vendita.",
+   "ancora": "E ora ci chiediamo se questo è sopra a 25, che sarà molto probabilmente il nostro eh livello di thold sopra il quale magari compriamo o sotto vendiamo.",
+   "fonte": "RnNSRF4s9nk#15:42 (excalidraw.com) + voce 15:42-15:54",
+   "frame": "frame-158.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-033",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-035",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 42,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "a36da18ef8be33757f2415ded2a065dd"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-035",
+   "ka_id": "KA-035",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Routing del flowchart dopo il filtro ADX: dal rombo \"3+ Bullish?\" un ramo \"Yes\" porta al box \"OPEN LONG\"; il ramo \"No\" porta al secondo rombo \"3+ Bearish?\", che a sua volta si dirama in \"Yes\" → box \"OPEN SHORT\" e \"No\" → box \"HOLD - Mixed Signals\". Un ramo separato \"HOLD - No Trend\" gestisce il caso in cui il filtro ADX iniziale sia negativo. Sia \"OPEN LONG\" sia \"OPEN SHORT\" proseguono verso il box \"Set Stop-Loss 1.5x ATR\".",
+   "ancora": "Quindi bullish sì. Eh allora apri una posizione di long eh e oppure beish, quindi no. E allora magari vuol dire hold, quindi non prendere niente.",
+   "fonte": "RnNSRF4s9nk#16:12 (excalidraw.com) + voce 16:12-16:24",
+   "frame": "frame-163.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-034",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-025",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-036",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 80,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "585f05d9d4ad1f058a65edb6212783bc"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-036",
+   "ka_id": "KA-036",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Chiusura visiva del ciclo del flowchart: dal rombo \"Signals Flipped?\" (ramo \"No\") si passa al rombo \"Trailing Stop Hit?\"; da qui il ramo \"Yes\" (insieme al ramo \"Yes\" di \"Signals Flipped?\") porta al box \"Close Position\", il ramo \"No\" porta a \"Update Trailing Stop\". Entrambi i box confluiscono nell'ellisse verde \"Wait Next Candle\", che con una freccia torna a \"Daily Candle Close\": il diagramma chiude così il giro completo sul proprio punto di partenza.",
+   "ancora": "Allora, vedete quindi che questa è la fase di validazione dell'architettura e questo è quello che vogliamo fare, no? Perché noi vogliamo assicurarci che la nostra architettura sia corretta.",
+   "fonte": "RnNSRF4s9nk#16:42 (excalidraw.com) + voce 16:42-16:54",
+   "frame": "frame-168.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-035",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-037",
+     "tipo": "motiva"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 74,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "5d5a4eb4d9847be75713d7e528c52448"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-037",
+   "ka_id": "KA-037",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Percorrere per intero il flowchart visivo, dal primo box fino alla chiusura del ciclo, è la \"fase di validazione dell'architettura\": serve ad assicurarsi che l'architettura del sistema sia corretta prima di passare all'implementazione vera e propria.",
+   "ancora": "questa è la fase di validazione dell'architettura e questo è quello che vogliamo fare, no? Perché noi vogliamo assicurarci che la nostra architettura sia corretta.",
+   "fonte": "RnNSRF4s9nk#16:42 (excalidraw.com, giro completo del diagramma) + voce 16:42-17:00",
+   "frame": "frame-168.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-036",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-038",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 36,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "3afc5b49b15586d81e43cb671170cb08"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-038",
+   "ka_id": "KA-038",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "contenuto": "Una volta validata l'architettura, il presentatore chiede a Claude di sintetizzare tutto (diagramma + strategia) in un unico prompt completo, da incollare in una nuova sessione di Claude Code in modalità \"plan mode\", per assicurarsi che Claude implementi il sistema secondo un piano approvato invece di procedere alla cieca.",
+   "ancora": "perfetto, sintetizzami tutto in un prompt e includi anche tutta la strategia che ti ho incollato, in modo tale che io possa andare ora in una nuova sessione di Claude Code e incollartela in plan mode ed assicurarmi che Claude poi vada ad implementare il mio sistema",
+   "fonte": "RnNSRF4s9nk#17:00 (IDE Antigravity) e #17:18 (richiesta completa) + voce 17:00-17:24",
+   "frame": "frame-171.png, frame-174.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-037",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-040",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-042",
+     "tipo": "motiva"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 49,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "3c6e5711802114b3e40d3311a8c97909"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-039",
+   "ka_id": "KA-039",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Menu \"Slash Commands\" apparso in una nuova sessione vuota di Claude Code, lista completa visibile: /pre-mortem (selezionato), /prompt-contracts, /loop, /reverse-prompting, /step-back-prompting, /fewer-permission-prompts, /skool-video-upload, /audit, /deploy-check, /contract.",
+   "ancora": "`/pre-mortem` (selezionato) `/prompt-contracts` `/loop` `/reverse-prompting` `/step-back-prompting` `/fewer-permission-prompts` `/skool-video-upload` `/audit` `/deploy-check` `/contract`",
+   "fonte": "RnNSRF4s9nk#17:24 (IDE Antigravity, nuova sessione Claude Code) + voce 17:24-17:36",
+   "frame": "frame-175.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-020",
+     "tipo": "parte-di",
+     "perche": "/prompt-contracts, già usato in scena 31, compare qui nel menu completo dei comandi disponibili nella toolkit del presentatore."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 26,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "b1e359d2bf33d76e8595d347cade1555"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-040",
+   "ka_id": "KA-040",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Sezione \"## Implementation Order\" del prompt sintetizzato da Claude per il plan mode, lista numerata completa: \"1. config.py + data.py — connect to Binance Testnet, fetch historical daily candles, verify data. 2. indicators.py — implement all 5 indicators with pandas-ta, write unit tests. 3. strategy.py — voting logic + ADX filter, write unit tests for all edge cases. 4. risk.py — position sizing formula, stop-loss, trailing stop logic, write unit tests. 5. backtest.py + report.py — run on 1+ year of historical BTC data, print performance metrics. 6. executor.py — ccxt order placement on testnet (market orders, stop-loss orders). 7. bot.py — main live loop (poll daily, run strategy, execute if signal, monitor position). 8. monitor.py — logging + optional notifications. 9. End-to-end test — run on testnet for several days, verify orders execute correctly.\"",
+   "ancora": "## Implementation Order\" seguito dalla lista numerata 1-9 (tutta selezionata in blu): 1. **config.py + data.py** — connect to Binance Testnet, fetch historical daily candles, verify data [...] 9. **End-to-end test** — run on testnet for several days, verify orders execute correctly",
+   "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity, prompt selezionato in blu) + voce 17:36-17:42",
+   "frame": "frame-177.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-028",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-041",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-053",
+     "tipo": "precede",
+     "perche": "Questo elenco di moduli è ciò che si materializza poi nella struttura di cartelle/file del progetto scaffolded."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 135,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "48abe1b821fab3527ea023aeb49892ff"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-041",
+   "ka_id": "KA-041",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "regola",
+   "contenuto": "Sezione \"## Constraints\" del prompt per il plan mode, elenco completo e non negoziabile: \"Python 3.9+ compatible (use `from __future__ import annotations` if needed). All API keys from .env, never hardcoded. Testnet only — never connect to production Binance without explicit confirmation. Each module must be independently testable. Backtest must run before any live trading.\"",
+   "ancora": "## Constraints\" (evidenziato) con elenco puntato (anch'esso in selezione blu): - Python 3.9+ compatible (use `from __future__ import annotations` if needed) - All API keys from .env, never hardcoded - Testnet only — never connect to production Binance without explicit confirmation - Each module must be independently testable - Backtest must run before any live trading",
+   "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity, \"## Constraints\" evidenziato in blu) + voce 17:36",
+   "frame": "frame-177.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-040",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-047",
+     "tipo": "precede",
+     "perche": "Il vincolo 'Testnet only' e 'API keys from .env, never hardcoded' è quello che poi guida in pratica la creazione della chiave API con solo permesso di lettura."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 55,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "fb138b06cf86b2031d058f63646c2fb4"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-042",
+   "ka_id": "KA-042",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "contenuto": "Istruzione d'uso allegata al prompt sintetizzato: \"Copia-incolla tutto in una nuova sessione di Claude Code in plan mode. Claude ti proporrà il piano di implementazione step-by-step, tu approvi e lui costruisce.\" Definisce il funzionamento della modalità \"plan mode\": prima la proposta di piano, poi l'approvazione umana, infine la costruzione.",
+   "ancora": "Copia-incolla tutto in una nuova sessione di Claude Code in plan mode. Claude ti proporrà il piano di implementazione step-by-step, tu approvi e lui costruisce.",
+   "fonte": "RnNSRF4s9nk#17:36 (IDE Antigravity) + voce 17:36",
+   "frame": "frame-177.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-038",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-043",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 49,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "2e5ea15a90b83ae4ac617f4bb73272bf"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-043",
+   "ka_id": "KA-043",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Prima dell'invio, il presentatore aggiunge manualmente in coda al prompt incollato nella nuova sessione Claude Code una sezione con segnaposto vuoti: \"Credenziali Binance: - API: - Link per vedere candele:\", con l'etichetta \"Plan mode\" attiva accanto al pulsante di invio, a conferma che l'invio avverrà in modalità pianificazione e non in esecuzione diretta.",
+   "ancora": "Credenziali Binance:\" (riga vuota) \"- API:\" \"- Link per vedere candele:\" Le due voci \"API:\" e \"Link per vedere candele:\" sono ancora vuote, in attesa di essere compilate. [...] etichetta \"Plan mode\" con icona, pulsante di invio blu",
+   "fonte": "RnNSRF4s9nk#18:12 (IDE Antigravity) e #19:00 (segnaposto ancora vuoti, \"Plan mode\" attivo) + voce 18:12, 19:00-19:06",
+   "frame": "frame-183.png, frame-191.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-042",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-044",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 53,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "493aa8875188aa9c1ad15033b8921d38"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-044",
+   "ka_id": "KA-044",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "contenuto": "Apertura del capitolo \"Connessione API a Binance\": il presentatore lascia l'IDE e passa al sito reale di Binance per mostrare da dove parte il processo di autenticazione necessario a collegare il bot.",
+   "ancora": "Quindi come facciamo ad autenticarci nella piattaforma Binance e quindi da qui poi vedremo come come si fa e dove andiamo a prendere i dati delle candele.",
+   "fonte": "RnNSRF4s9nk#18:12 (browser, dashboard Binance) + voce 18:12-18:18",
+   "frame": "frame-183.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-043",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-045",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 32,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "8ae55b3c8be43f8a80f63815e3f088e3"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-045",
+   "ka_id": "KA-045",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "contenuto": "Percorso seguito per creare una chiave API su Binance: dalla dashboard (`binance.com/en/my/dashboard`) si apre il menu laterale \"Account\", si seleziona \"API Management\" (`binance.com/en/my/settings/api-management`), poi si clicca il pulsante arancione \"Create API\" e si assegna un'etichetta alla chiave (nel video: \"YouTube bot\") nella finestra modale \"Create API\".",
+   "ancora": "API management sotto la sezione account e qui abbiamo create API system generated e quindi label API YouTube bot.",
+   "fonte": "RnNSRF4s9nk#18:12-18:48 (browser, dashboard e api-management Binance) + voce 18:12-18:48",
+   "frame": "frame-183.png, frame-186.png, frame-188.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-008",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-046",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 46,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "76f5412e3d5b0ff49a032b39e3ffa7a1"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-046",
+   "ka_id": "KA-046",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "avvertimento",
+   "contenuto": "Binance blocca la creazione della chiave API finché l'utente non completa 2 verifiche di sicurezza su 2 (\"Security Verification Requirements\", contatore \"0 / 2\"): passkey (biometria o chiave di sicurezza) o verifica facciale.",
+   "ancora": "Security verification requirements. You need to complete. Ok, va bene. Ora mi autenticherò.",
+   "fonte": "RnNSRF4s9nk#18:48 (browser, modale Binance) + voce 18:48-18:54",
+   "frame": "frame-189.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-045",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-047",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 33,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "5a0b39126f302c8c7fb673b9dfb69b7e"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-047",
+   "ka_id": "KA-047",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "regola",
+   "contenuto": "La chiave API \"YouTube BOT\" creata su Binance ha solo il permesso \"Enable Reading\" attivo; tutti gli altri permessi (Permits Universal Transfer, Enable Spot & Margin Trading, Enable Withdrawals, Enable Margin Loan/Repay & Transfer, Enable Prediction Trading, Enable Symbol Whitelist) restano disattivati. L'accesso IP è impostato su \"Unrestricted (Less Secure)\". La API Key e la Secret Key sono presenti e leggibili nel frame originale ma vengono riportate in questo documento solo in forma mascherata, come nella fonte: API Key \"F4q6…tqJi\", Secret Key \"bfwU…M9cD\".",
+   "ancora": "API restrictions\" con caselle: ☑ \"Enable Reading\" (unica spuntata), ☐ \"Permits Universal Transfer\", ☐ \"Enable Spot & Margin Trading\" [...] la API Key inizia con \"F4q6…\" e termina con \"…tqJi\"; la Secret Key inizia con \"bfwU…\" e termina con \"…M9cD\"",
+   "fonte": "RnNSRF4s9nk#18:54 (browser, api-management, card chiave creata) + voce 18:54-19:00",
+   "frame": "frame-190.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-041",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-048",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 83,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "4c9b28daa781437e3c1efaace0eccc50"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-048",
+   "ka_id": "KA-048",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "avvertimento",
+   "contenuto": "Avviso di sicurezza mostrato da Binance sulla chiave appena creata, in rosso: \"This API Key allows access from any IP address. This is not recommended.\" e \"To protect the safety of your funds, if the IP is unrestricted and any permission other than Reading is enabled, this API key will be deleted.\" — cioè Binance stessa cancellerebbe automaticamente la chiave se, con IP non ristretto, venisse attivato un permesso diverso dalla sola lettura.",
+   "ancora": "This API Key allows access from any IP address. This is not recommended.\" [...] \"To protect the safety of your funds, if the IP is unrestricted and any permission other than Reading is enabled, this API key will be deleted.\"",
+   "fonte": "RnNSRF4s9nk#18:54 (browser, api-management) e #19:06 (stesso avviso, versione completa) + voce 18:54-19:06",
+   "frame": "frame-190.png, frame-192.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-047",
+     "tipo": "parte-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 73,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "0c07d1abd192d4d731b653048727f94c"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-049",
+   "ka_id": "KA-049",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Per trovare il link esatto della documentazione delle candele Binance, il presentatore consiglia due strade: chiedere direttamente a Claude di esplorare, oppure visitare il sito ufficiale della documentazione, `developers.binance.com/docs/binance-spot-api-docs`. Nel video ha trovato il link chiedendolo direttamente a Claude.",
+   "ancora": "candele. Allora, per fare questo potete o chiedere a Cloud di andare e ed esplorare l'universo, oppure potete andare in questo link qui ehm che è la parte di developerinance.com [...] Come l'ho trovata? Ovviamente l'ho trovata utilizzando Cloud e chiedendogli...",
+   "fonte": "RnNSRF4s9nk#19:18 (browser, developers.binance.com) e #19:30 (spiegazione) + voce 19:18-19:36",
+   "frame": "frame-194.png, frame-196.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-043",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-050",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 39,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "272efa8f0e09ae97f78285d1414ecfdb"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-050",
+   "ka_id": "KA-050",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Blocco finale \"Credenziali Binance:\" completato e inviato dentro il prompt di plan mode: \"- API: [chiave mascherata: inizia con \"F4q6…\" e termina con \"…rotqJi\"] - Secret: [chiave mascherata: inizia con \"bfwU…\" e termina con \"…M9cD\"] - Link per vedere candele: https://developers.binance.com/docs/binance-spot-api-docs\". Il messaggio completo si chiude con il promemoria esplicito di sicurezza: \"Per favore ricordati che, per questo bot, vorrei farlo funzionare utilizzando soldi falsi e quindi in sandbox, ok?\" Le due chiavi Binance non vengono mai riportate per intero in questo documento, solo mascherate come nella fonte.",
+   "ancora": "Per favore ricordati che, per questo bot, vorrei farlo funzionare utilizzando soldi falsi e quindi in sandbox, ok?",
+   "fonte": "RnNSRF4s9nk#19:30 (credenziali complete nel box) e #20:00 (prompt inviato per intero) + voce 19:30, 20:00-20:12",
+   "frame": "frame-196.png, frame-201.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-040",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-041",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-049",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-051",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 88,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "6e735c676160640dc901482645767ac3"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-051",
+   "ka_id": "KA-051",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Il Finder di macOS mostra la cartella \"btc-trading-bot\" appena creata sul disco (\"Today at 12:53\"), accanto ad altri progetti del presentatore (Social Media Manager, Community Intelligence, Agency, ecc.): è la prova tangibile che l'implementazione richiesta a Claude Code in plan mode è stata avviata.",
+   "ancora": "\"btc-trading-bot\" (riga selezionata, evidenziata in blu) — Today at 12:53 — Folder [...] la cosa che possiamo fare è ora premere plan mode e aspettare che tutto questo venga implementato.",
+   "fonte": "RnNSRF4s9nk#20:12 (Finder macOS) + voce 20:12-20:30",
+   "frame": "frame-203.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-050",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-052",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 44,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "12fd2bf81f2716755216e7a1daf7b545"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-052",
+   "ka_id": "KA-052",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Struttura del progetto Python generata da Claude Code per il bot, visibile nell'Explorer sotto la root \"Social Media Manager\": cartelle `__pycache__`, `.claude`, `.pytest_cache`, `.tmp`, `.venv`, `data`, `src`, `tests`, e i file `.env`, `.gitignore`, `CLAUDE.md` — nessuna di queste (tranne le prime tre) era presente prima dell'implementazione.",
+   "ancora": "sotto la root \"Social Media Manager\" compaiono ora le cartelle `__pycache__`, `.claude`, `.pytest_cache`, `.tmp`, `.venv`, `data`, `src`, `tests` e i file `.env`, `.gitignore`, `CLAUDE.md` — la struttura di progetto Python generata per il bot (le cartelle `data`/`src`/`tests` e il file `.env` non erano presenti nelle scene 61-65)",
+   "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, nuovo albero file, timestamp come da fonte) + voce 20:12-20:30",
+   "frame": "frame-204.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-040",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-013",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-055",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 46,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "1bca1cad6068e1199674ae70642ac880"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-053",
+   "ka_id": "KA-053",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Secondo utilizzo dello slash command `/prompt-contracts`, questa volta per chiarire cosa significhi mettere il bot \"live\": \"/prompt-contracts please put this bot live. What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\". Il presentatore aggiunge in un riquadro: \"always fake money ofc\".",
+   "ancora": "/prompt-contracts   please put this bot live.\" [...] \"What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\"",
+   "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, timestamp come riportato nella fonte) + voce 20:12-20:30",
+   "frame": "frame-204.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-052",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-054",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-020",
+     "tipo": "esempio-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 91,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "66a7776bb0b03b615e203eb1aa3aeb6c"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-054",
+   "ka_id": "KA-054",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Prima di eseguire, Claude Code propone un \"Contract\" formale tramite `/prompt-contracts`: \"Got it -- fake money only, always. Here's the contract:\" seguito dal titolo \"### Contract\", poi \"GOAL: Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\" e \"CONSTRAINTS: Binance Testnet ONLY (sandbox mode, testnet.binance.vision)\" (elenco vincoli parzialmente tagliato dal frame, prosegue con righe troncate \"Run as pe...\" e \"Must veri...\", seguite da una sezione \"FORMAT\").",
+   "ancora": "Got it -- fake money only, always. Here's the contract:\" linea separatrice, poi titolo grande \"### Contract\" [...] \"GOAL:** Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\"",
+   "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, timestamp come riportato nella fonte) + voce 20:12-20:30",
+   "frame": "frame-204.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-053",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-041",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-058",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 84,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "0992529afa44d335c6d3c42bba62e3a0"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-055",
+   "ka_id": "KA-055",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "I percorsi file reali mostrati a schermo rivelano il nome utente del computer del presentatore, \"giovannibeggiato\" (es. `/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager/`), e Claude nel Contract generato lo chiama esplicitamente col diminutivo \"Gio\" (\"Gio can see balances, orders, and trade history at testnet.binance.vision\"), coerente col nome di scena \"Jo\" usato nel resto del video.",
+   "ancora": "/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager/\" ... \"Gio can see balances, orders, and trade history at testnet.binance.vision.\"",
+   "fonte": "RnNSRF4s9nk#13:30 (path visibile nei log Bash) e #18:42 (Contract, nome \"Gio\", timestamp come riportato nella fonte) + voce varie",
+   "frame": "frame-136.png, frame-204.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-054",
+     "tipo": "parte-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 53,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "e50c47d25bd28555d1fa5033b4cb0ff8"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-056",
+   "ka_id": "KA-056",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "contenuto": "Il presentatore lascia momentaneamente l'IDE per aggiornare la lavagna Excalidraw di riepilogo tappe, scrivendo dal vivo la voce \"3. Implementazione\" come terzo titolo di sezione (dopo \"1. Comprensione del problema\" e \"2. Design del sistema\"), mentre la voce narra esplicitamente di essere arrivati a quella fase del percorso, prima dell'imminente \"go live\".",
+   "ancora": "il bot perché fino ad ora che cosa abbiamo fatto? Abbiamo semplicemente creato la nostra infrastruttura e quindi questo vuol dire che siamo alla parte di implementazione. Però una volta finita l'implementazione e quindi il nostro bot che sia stato creato, abbiamo la parte di go live.",
+   "fonte": "RnNSRF4s9nk#20:30 (excalidraw.com) + voce 20:30-20:42",
+   "frame": "frame-206.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-004",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-017",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-057",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 52,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "f33c70b45dd1870f568bf9dd0501435e"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-057",
+   "ka_id": "KA-057",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "contenuto": "Prima di eseguire la richiesta \"put this bot live\", Claude Code pone domande di chiarimento invece di agire alla cieca: \"quick questions: 1. Is the bot live? 2. Is it connected and already taking things live, or do I need to deploy it?\" e avvisa: \"Voting will get whipsawed in sideways markets. This is the reality check before going live.\" chiedendo infine: \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\"",
+   "ancora": "quick questions:\" \"1. Is the bot live?\" \"2. Is it connected and already taking things live, or do I need to deploy it?\" [...] \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\"",
+   "fonte": "RnNSRF4s9nk#20:42 (IDE Antigravity, scroll verso l'alto della chat) + voce 20:42-21:12",
+   "frame": "frame-208.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-054",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-042",
+     "tipo": "applica",
+     "perche": "Le domande di chiarimento prima di agire seguono la stessa logica del plan mode: proporre/chiarire prima di costruire."
+    },
+    {
+     "verso": "KA-058",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 83,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "1976396463b4e5d53b20a492bb11f64c"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-058",
+   "ka_id": "KA-058",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Al primo tentativo di avvio, la connessione al testnet funziona ma le chiavi API vengono rifiutate: \"Good news: the connection to testnet.binance.vision is working (correct URL). Bad news: the API keys are rejected -- 'Invalid API-key, IP, or permissions for action.'\" Claude spiega: \"This usually means the testnet keys expired or were regenerated. You need to get fresh ones\", precisando anche che \"The public market data works fine (no auth needed) -- that's why backtesting worked. But placing orders requires valid testnet keys.\"",
+   "ancora": "Good news: the connection to testnet.binance.vision is working (correct URL). Bad news: the API keys are rejected -- \"Invalid API-key, IP, or permissions for action.\"\" [...] \"This usually means the testnet keys expired or were regenerated. You need to get fresh ones:\"",
+   "fonte": "RnNSRF4s9nk#21:12 (IDE Antigravity) e #21:30 (testo completo) + voce 21:00-21:12",
+   "frame": "frame-213.png, frame-216.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-057",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-047",
+     "tipo": "precede",
+     "perche": "La chiave Spot reale creata sul sito binance.com (KA-047) risulta insufficiente per operare ordini sul Testnet: qui si scopre che serve una chiave distinta, generata direttamente su testnet.binance.vision."
+    },
+    {
+     "verso": "KA-059",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 83,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "981bf12ac3f512edc500dd599c63058d"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-059",
+   "ka_id": "KA-059",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Lista numerata completa fornita da Claude per procurarsi chiavi testnet aggiornate: \"1. Go to https://testnet.binance.vision. 2. Log in with GitHub. 3. Click 'Generate HMAC_SHA256 Key'. 4. Copy the new API Key and Secret Key. 5. Give them to me and I'll update the .env and start the bot.\" Claude chiede infine: \"Can you grab fresh keys from testnet.binance.vision?\"",
+   "ancora": "1. Go to **https://testnet.binance.vision** (link blu sottolineato) 2. Log in with GitHub 3. Click **\"Generate HMAC_SHA256 Key\"** [...] 4. Copy the new **API Key** and **Secret Key** [...] 5. Give them to me and I'll update the .env and start the bot",
+   "fonte": "RnNSRF4s9nk#21:30 (IDE Antigravity, lista completa) e #21:54 (lista confermata per intero) + voce 21:12-21:36",
+   "frame": "frame-216.png, frame-220.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-058",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-060",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-061",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 58,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "37d910af647222f5daa464b9d341fb72"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-060",
+   "ka_id": "KA-060",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Alla richiesta di Claude di recuperare da solo le chiavi (\"Can you grab fresh keys from testnet.binance.vision?\"), il presentatore prima chiede all'assistente \"you cando all alone right?\" (refuso per \"you can do it all alone, right?\"), lasciando intravedere un tentativo di automazione via browser (menzionato uno strumento \"Chrome-devt...\" troncato), ma poi decide di recuperare lui stesso le chiavi e mostrarlo al pubblico, invece di lasciare che sia l'AI a operare il browser in autonomia.",
+   "ancora": "poi ho deciso di farlo con voi. Perfetto, quindi fatemi pulire. E ora noi una volta fatto premeremo bypass permission e continueremo l'implementazione.",
+   "fonte": "RnNSRF4s9nk#21:30 (IDE Antigravity, \"you cando all alone right?\") e #22:06 (decisione confermata a voce) + voce 22:00-22:06",
+   "frame": "frame-216.png, frame-222.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-059",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-062",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-063",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 74,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "a10c16c1f8cc28bca3a705a4ba257a85"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-061",
+   "ka_id": "KA-061",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Sul sito testnet.binance.vision, alla pagina \"Generate HMAC-SHA-256 key\", il presentatore digita il nome descrittivo \"YouTube bot\" e lascia spuntati i tre permessi proposti di default: \"TRADE — Can place/cancel orders\", \"USER_DATA — Can view account information and query trades/orders of the user\", \"USER_STREAM — Can subscribe to the User Data Stream\"; restano non selezionati \"FIX_API\" e \"FIX_API_READ_ONLY\" (riservati a chiavi Ed25519).",
+   "ancora": "☑ **TRADE** — \"Can place/cancel orders\" (spuntata, blu) - ☑ **USER_DATA** — \"Can view account information and query trades/orders of the user\" (spuntata, blu) - ☑ **USER_STREAM** — \"Can subscribe to the User Data Stream\" (spuntata, blu)",
+   "fonte": "RnNSRF4s9nk#21:36 (browser, testnet.binance.vision/key/generate) + voce 21:36-21:54",
+   "frame": "frame-217.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-059",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-062",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 61,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "9f894da8e1782f205eac5b51e77a4d47"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-062",
+   "ka_id": "KA-062",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "regola",
+   "contenuto": "Il sito conferma \"HMAC-SHA-256 Key registered\" con l'avviso \"Save these values right now. They won't be shown again!\" e mostra API Key e Secret Key generate, entrambe perfettamente leggibili a schermo e non oscurate dalla piattaforma. Per policy di sicurezza, pur trattandosi di chiavi Testnet (denaro finto, nessun valore reale), non vengono trascritte carattere per carattere in questo documento: restano trattate come credenziali mascherate.",
+   "ancora": "HMAC-SHA-256 Key registered\". Sotto, avviso in grassetto: \"Save these values right now. They won't be shown again!\"",
+   "fonte": "RnNSRF4s9nk#22:00 (browser, testnet.binance.vision/key/generate) + voce 22:00-22:06",
+   "frame": "frame-221.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-061",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-063",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 64,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "1e5efd66f1c3b30af67b416224ebdbe8"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-063",
+   "ka_id": "KA-063",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "contenuto": "Il presentatore incolla lui stesso, nel box di input di Claude Code, la API Key e la Secret Key appena generate su testnet.binance.vision (prima riga \"API: API Key: [chiave]\", seconda riga che inizia con \"Secret\"), poi preme il pulsante rosso \"Bypass permissions\" per lasciare che Claude prosegua l'implementazione senza altre conferme manuali.",
+   "ancora": "E ora noi una volta fatto premeremo bypass permission e continueremo l'implementazione. E questo è quindi il nostro bot che ha fatto adesso, come vedete, nell'arco di qualche minuto,",
+   "fonte": "RnNSRF4s9nk#22:06 (IDE Antigravity) + voce 22:06-22:24",
+   "frame": "frame-222.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-060",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-064",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 52,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "d94ee8ac0e61a6fa99bf47de4b8b127f"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-064",
+   "ka_id": "KA-064",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Header della dashboard locale del bot su localhost:8501: card scura con titolo \"₿ BTC Trading Bot\", sottotitolo verde \"BINANCE SPOT TESTNET\", indicatore verde \"LIVE\". Sotto, quattro card metriche: \"USDT BALANCE\" → \"$10,000.00\"; \"BTC HOLDINGS\" → \"1.0000 BTC\"; \"BTC/USDT\" → \"$77,440.79\"; \"TOTAL PORTFOLIO\" → \"$87,440.79\" (coerente: $10.000 USDT + 1 BTC a $77.440,79 = $87.440,79).",
+   "ancora": "**\"USDT BALANCE\"** → **\"$10,000.00\"** (testo verde) - **\"BTC HOLDINGS\"** → **\"1.0000 BTC\"** (testo arancione) - **\"BTC/USDT\"** → **\"$77,440.79\"** - **\"TOTAL PORTFOLIO\"** → **\"$87,440.79\"**",
+   "fonte": "RnNSRF4s9nk#22:36 (browser, localhost:8501) + voce 22:24-22:36",
+   "frame": "frame-227.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-063",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-065",
+     "tipo": "parte-di"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 54,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "c01432c581d5a1df6aa7b4e59830b126"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-065",
+   "ka_id": "KA-065",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Sezione \"Bot Status & Signals\" della dashboard: badge arancione \"Waiting for signal (ADX too low)\", pannello \"Signal\" con valore \"HOLD\", e la griglia degli indicatori tecnici live: EMA FAST 76.767,29 / EMA SLOW 84.707,42, RSI 47,04 / OBV SLOPE -53290,37, BB MID 79.058,66 / ADX 19,87, ATR 2.034,08. Il log del bot conferma: \"STATUS | capital=10000.00 | position=1.000000 | signal=HOLD | ema_fast=76767.29 | ema_slow=84707.42 | obv_slope=-53290.37 | bb_mid=79058.66 | adx=19.87 | atr=2034.08\" e \"Sleeping 46718s until next daily candle...\".",
+   "ancora": "STATUS | capital=10000.00 | position=1.000000 | signal=HOLD | ema_fast=76767.29 | ema_slow=84707.42 |\" [...] \"obv_slope=-53290.37 | bb_mid=79058.66 | adx=19.87 | atr=2034.08\"",
+   "fonte": "RnNSRF4s9nk#22:24 (browser, localhost:8501) + voce 22:24-22:36",
+   "frame": "frame-225.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-034",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-066",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 79,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "104b20b0c79d454c04b8fa939729e784"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-066",
+   "ka_id": "KA-066",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Tabella \"Trade History\" della dashboard, colonne TIME | SIDE | AMOUNT | PRICE | COST, 6 transazioni simulate: 2026-05-25 11:04:31 SELL 0.0030 $77.446,49 $232,34; 2026-05-25 11:04:30 BUY 0.0030 $77.446,50 $232,34; 2026-05-25 11:04:30 SELL 0.0020 $77.446,49 $154,89; 2026-05-25 11:04:30 BUY 0.0020 $77.446,50 $154,89; 2026-05-25 11:04:30 SELL 0.0010 $77.446,49 $77,45; 2026-05-25 11:04:29 BUY 0.0010 $77.446,50 $77,45.",
+   "ancora": "| 2026-05-25 11:04:31 | SELL | 0.0030 | $77,446.49 | $232.34 | | 2026-05-25 11:04:30 | BUY | 0.0030 | $77,446.50 | $232.34 |",
+   "fonte": "RnNSRF4s9nk#22:24 (browser, localhost:8501, sezione Trade History) + voce 22:24-22:36",
+   "frame": "frame-225.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-064",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-067",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 54,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "a56d7ed7702bf7813c431e30fb603dca"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-067",
+   "ka_id": "KA-067",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Il presentatore chiarisce che il testnet ufficiale di Binance di per sé non fornisce una dashboard visiva come quella appena mostrata (costruita su misura dal bot, in locale su localhost:8501): se invece si usasse la dashboard reale di Binance con soldi veri, si potrebbe entrare nell'interfaccia principale e vedere le proprie trade come se si stesse facendo trading in prima persona.",
+   "ancora": "dashboard visiva, ma se invece poi voi andrete ad utilizzare la dashboard di Binance con soldi veri, allora potrete entrare nell'interfaccia principale e vedere proprio le vostre trade, come se stesse facendo trading voi in prima persona.",
+   "fonte": "RnNSRF4s9nk#22:36 (browser, testnet.binance.vision) e #22:42 (spiegazione) + voce 22:36-23:00",
+   "frame": "frame-227.png, frame-228.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-064",
+     "tipo": "contraddice",
+     "perche": "Contrappone esplicitamente la dashboard custom in locale (denaro finto) all'interfaccia reale di Binance (denaro vero), le due facce del capitolo go-live."
+    },
+    {
+     "verso": "KA-069",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 61,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "1139854fd46f1a89a3d6d92581007f22"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-068",
+   "ka_id": "KA-068",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "La pagina testnet.binance.vision mostra \"You currently have 1 API Key(s) registered for this user\" con una tabella: Key Type \"HMAC-SHA-256\", Description \"Youtube_Bot_2\", Permissions \"TRADE, USER_DATA, USER_STREAM\". Il nome descrittivo registrato (\"Youtube_Bot_2\", con underscore e suffisso \"_2\") differisce leggermente da quello pronunciato a voce (\"YouTube bot\") nella scena di generazione, probabile normalizzazione automatica del campo o numerazione di un tentativo precedente.",
+   "ancora": "You currently have 1 API Key(s) registered for this user:\" e una tabella con colonne \"Key Type\" | \"Description\" | \"Permissions\": riga \"HMAC-SHA-256\" | \"Youtube_Bot_2\" | \"TRADE, USER_DATA, USER_STREAM\"",
+   "fonte": "RnNSRF4s9nk#22:42 (browser, testnet.binance.vision) + voce 22:42",
+   "frame": "frame-228.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-061",
+     "tipo": "contraddice",
+     "perche": "Il nome digitato a voce ('YouTube bot') non coincide letteralmente col nome che risulta registrato in piattaforma ('Youtube_Bot_2')."
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 60,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "491f66cc3acc96728957e805f18dc4d2"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-069",
+   "ka_id": "KA-069",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Chiusura a schermo intero in webcam: il presentatore chiarisce che l'obiettivo del video non era insegnare il modo migliore di costruire un bot di trading, ma un metodo per affrontare qualsiasi problema con l'AI — la stessa tesi enunciata in apertura, qui ripresa e chiusa esplicitamente.",
+   "ancora": "qual è il miglior modo di costruire un bot di trading, ma quanto per capire [...] come potete affrontare qualsiasi problema con l'AI e quindi innanzitutto",
+   "fonte": "RnNSRF4s9nk#23:00 (talking head) e #23:06 + voce 23:00-23:12",
+   "frame": "frame-231.png, frame-232.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-002",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-070",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 46,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "a22f6541ecf4b841f2992531e13bbdf5"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-070",
+   "ka_id": "KA-070",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Riepilogo esplicito dei tre step del metodo generale insegnato dal video: 1) chiarire il problema che si sta affrontando, facendo \"zoom indietro\" e ottenendo una visione di alto livello; 2) definire una struttura architetturale; 3) solo a quel punto procedere con l'implementazione.",
+   "ancora": "chiarificando il problema che andrete a fare, zoomando indietro, avendo una visione di alto livello, poi andando [...] dentro e definendo più o meno una struttura architetturale e solo a quel punto procedere con l'implementazione.",
+   "fonte": "RnNSRF4s9nk#23:12 (talking head) e #23:18 + voce 23:12-23:24",
+   "frame": "frame-233.png, frame-234.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-069",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-011",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-071",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 42,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "e2d1c2000d5e165415f46cbb904811db"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-071",
+   "ka_id": "KA-071",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "contenuto": "Il presentatore avverte che i tre step del metodo (chiarire il problema, definire l'architettura, implementare) non sono sufficienti da soli se non si sa come scrivere prompt efficaci con Claude — apre così il pitch di vendita finale.",
+   "ancora": "Questi tre step però non sono [...] sufficienti se non sapete come scrivere prompticaci con cloud e per farlo ho",
+   "fonte": "RnNSRF4s9nk#23:24 (talking head) + voce 23:24-23:30",
+   "frame": "frame-235.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-070",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-072",
+     "tipo": "precede"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 38,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "025162ddd35258fbb6a2de08f9690b1e"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-072",
+   "ka_id": "KA-072",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "contenuto": "Chiusura del video con il pitch di vendita: il presentatore annuncia di aver realizzato \"un corso completo\" segnalato con una card in sovraimpressione (\"qua sopra\"), che porta lo spettatore \"da beginner a completi esperti in come scrivere prompt di successo con Cloud Code [Claude Code] e con Codex\". Nessun prezzo o URL esplicito viene pronunciato; il richiamo è puramente visivo. L'ultima parola pronunciata nel video è \"Yeah.\".",
+   "ancora": "fatto un corso completo che vi lascio qua sopra nel quale vi porto da beginner [...] a completi esperti in come scrivere prompt di successo con Cloud Code e con Codex. Yeah.",
+   "fonte": "RnNSRF4s9nk#23:30 (talking head) e #23:36 (ultimo fotogramma) + voce 23:30-23:36",
+   "frame": "frame-236.png, frame-237.png",
+   "confidenza": "osservato",
+   "tags": [],
+   "relazioni": [
+    {
+     "verso": "KA-071",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-005",
+     "tipo": "applica"
+    }
+   ],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk/atoms.json",
+   "parole": 67,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "688097dd31c759a4e6db13307497ef95"
+  }
+ ]
+}

@@ -1,3 +1,15 @@
+## 🟣 2026-09-10 — Collisione EVITATA su EMP-8M9F: un'altra sessione lo sta già costruendo
+
+**Ordine di Max: "prendi in considerazione tutta la conoscenza di EMP-8M9F, migliora/implementa
+quello che ritieni giusto."** Ho scritto `PIANO-MAESTRO/scripts/indicizza_atomi.py` (Fase 0) ed
+è stato **sovrascritto sul disco mentre lo eseguivo** da una versione più completa (dedup vero fra
+`runs/`/`knowledge/`, shard per agente, `CENSIMENTO.md`) — un'altra sessione di Max sta già
+lavorando EMP-8M9F in questo momento, non dichiarato ancora qui. **Non tocco più quei file**:
+`PIANO-MAESTRO/scripts/indicizza_atomi.py`, `PIANO-MAESTRO/36-LIBRO-AGENCY-INTEGRALE/` sono suoi.
+Risultato che ha già prodotto (verificato sul disco): ~3.467-4.581 atomi su 96 run, indice +
+shard pronti per la classificazione. **Io resto sul filone Piano Impero Vivo** (V3 chiusa, V4
+prossimo) — zero collisione di file con EMP-8M9F.
+
 ## 🏭 2026-09-10 — I TRE PEZZI MANCANTI DELLA FABBRICA COSTRUITI — CP-20260910-ZYPW
 
 Seguito di CP-20260910-Q6CH. **10 script nuovi in tutto oggi, 130 test verdi**, 2 sole modifiche a

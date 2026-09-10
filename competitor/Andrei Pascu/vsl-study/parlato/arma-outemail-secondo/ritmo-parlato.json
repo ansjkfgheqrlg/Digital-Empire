@@ -1,0 +1,830 @@
+{
+ "slug": "arma-outemail-secondo",
+ "fonte": "sorgenti/arma-outemail-secondo/video.mp4",
+ "generato": "2026-09-10 23:46",
+ "strumento_trascrizione": "faster-whisper small, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "durata_video_s": 106.35,
+ "densita": {
+  "segmenti_vocali": 27,
+  "secondi_di_parlato": 96.44,
+  "percentuale_di_parlato": 90.7,
+  "segmenti_al_minuto": 15.23,
+  "durata_media_segmento_s": 3.57
+ },
+ "parole_totali": 287,
+ "parole_al_minuto_medie": 161.9,
+ "parole_al_minuto_sul_solo_parlato": 178.6,
+ "wpm_per_minuto": [
+  {
+   "minuto": 0,
+   "da": 0.0,
+   "a": 60.0,
+   "parole": 171,
+   "parole_al_minuto": 171.0,
+   "secondi_di_voce": 54.2,
+   "densita_voce_pct": 90.3
+  },
+  {
+   "minuto": 1,
+   "da": 60.0,
+   "a": 106.35,
+   "parole": 116,
+   "parole_al_minuto": 150.2,
+   "secondi_di_voce": 35.34,
+   "densita_voce_pct": 76.3
+  }
+ ],
+ "pause_sopra_0_5s": 1,
+ "pause_dal_parlato": [
+  {
+   "inizio": 0.52,
+   "fine": 0.78,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "sei,",
+   "prima_di": "esattamente,"
+  },
+  {
+   "inizio": 1.48,
+   "fine": 1.66,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "esattamente,",
+   "prima_di": "un"
+  },
+  {
+   "inizio": 2.42,
+   "fine": 2.48,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "marketer,",
+   "prima_di": "imprenditore,"
+  },
+  {
+   "inizio": 3.14,
+   "fine": 3.52,
+   "durata": 0.38,
+   "tipo": "interna",
+   "dopo": "imprenditore,",
+   "prima_di": "copywriter,"
+  },
+  {
+   "inizio": 3.92,
+   "fine": 4.18,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "copywriter,",
+   "prima_di": "chiunque"
+  },
+  {
+   "inizio": 4.76,
+   "fine": 5.14,
+   "durata": 0.38,
+   "tipo": "interna",
+   "dopo": "sia,",
+   "prima_di": "se"
+  },
+  {
+   "inizio": 7.32,
+   "fine": 7.46,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "strategiche.",
+   "prima_di": "Non"
+  },
+  {
+   "inizio": 8.22,
+   "fine": 8.38,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "me,",
+   "prima_di": "fidati"
+  },
+  {
+   "inizio": 9.32,
+   "fine": 9.44,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "numeri.",
+   "prima_di": "Le"
+  },
+  {
+   "inizio": 16.46,
+   "fine": 16.58,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "alto.",
+   "prima_di": "Ma"
+  },
+  {
+   "inizio": 19.42,
+   "fine": 19.62,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "strategico?",
+   "prima_di": "Te"
+  },
+  {
+   "inizio": 20.64,
+   "fine": 20.92,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "esempio.",
+   "prima_di": "Austo"
+  },
+  {
+   "inizio": 22.24,
+   "fine": 22.56,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "imprenditore.",
+   "prima_di": "Ha"
+  },
+  {
+   "inizio": 25.84,
+   "fine": 26.0,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "lui.",
+   "prima_di": "Antonio"
+  },
+  {
+   "inizio": 31.3,
+   "fine": 31.38,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "diversi.",
+   "prima_di": "Imposta"
+  },
+  {
+   "inizio": 33.16,
+   "fine": 33.26,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "finito.",
+   "prima_di": "Questo"
+  },
+  {
+   "inizio": 36.42,
+   "fine": 36.6,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "strategico.",
+   "prima_di": "Quindi"
+  },
+  {
+   "inizio": 38.04,
+   "fine": 38.28,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "licenziato,",
+   "prima_di": "messo"
+  },
+  {
+   "inizio": 39.2,
+   "fine": 39.48,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "'astronave,",
+   "prima_di": "mandato"
+  },
+  {
+   "inizio": 43.18,
+   "fine": 43.56,
+   "durata": 0.38,
+   "tipo": "interna",
+   "dopo": "quanto.",
+   "prima_di": "Fausto"
+  },
+  {
+   "inizio": 44.32,
+   "fine": 44.54,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "quindi,",
+   "prima_di": "assumo"
+  },
+  {
+   "inizio": 45.46,
+   "fine": 45.62,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "Gianfranco.",
+   "prima_di": "Gianfranco"
+  },
+  {
+   "inizio": 47.98,
+   "fine": 48.16,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "mail,",
+   "prima_di": "decidere"
+  },
+  {
+   "inizio": 48.88,
+   "fine": 49.28,
+   "durata": 0.4,
+   "tipo": "interna",
+   "dopo": "painpoint,",
+   "prima_di": "cosa"
+  },
+  {
+   "inizio": 50.5,
+   "fine": 50.96,
+   "durata": 0.46,
+   "tipo": "interna",
+   "dopo": "quando,",
+   "prima_di": "le"
+  },
+  {
+   "inizio": 56.0,
+   "fine": 56.1,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "specifiche,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 61.86,
+   "fine": 62.32,
+   "durata": 0.46,
+   "tipo": "interna",
+   "dopo": "Fausto.",
+   "prima_di": "Ora"
+  },
+  {
+   "inizio": 63.58,
+   "fine": 63.72,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "stupido,",
+   "prima_di": "l"
+  },
+  {
+   "inizio": 65.5,
+   "fine": 65.82,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "'attenzione,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 66.46,
+   "fine": 66.52,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "così.",
+   "prima_di": "90"
+  },
+  {
+   "inizio": 73.94,
+   "fine": 74.0,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "ricordi,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 76.1,
+   "fine": 76.28,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "No,",
+   "prima_di": "probabilmente"
+  },
+  {
+   "inizio": 76.9,
+   "fine": 77.0,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "no.",
+   "prima_di": "Eppure"
+  },
+  {
+   "inizio": 78.1,
+   "fine": 78.24,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "marketing,",
+   "prima_di": "strategico"
+  },
+  {
+   "inizio": 81.22,
+   "fine": 81.4,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "informati,",
+   "prima_di": "seguire"
+  },
+  {
+   "inizio": 83.68,
+   "fine": 84.04,
+   "durata": 0.36,
+   "tipo": "interna",
+   "dopo": "psicologiche,",
+   "prima_di": "provate,"
+  },
+  {
+   "inizio": 84.64,
+   "fine": 84.94,
+   "durata": 0.3,
+   "tipo": "interna",
+   "dopo": "provate,",
+   "prima_di": "scientifiche,"
+  },
+  {
+   "inizio": 85.78,
+   "fine": 85.86,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "scientifiche,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 87.62,
+   "fine": 87.92,
+   "durata": 0.3,
+   "tipo": "interna",
+   "dopo": "blog,",
+   "prima_di": "copi"
+  },
+  {
+   "inizio": 90.36,
+   "fine": 90.52,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "competitor.",
+   "prima_di": "Continua"
+  },
+  {
+   "inizio": 96.86,
+   "fine": 97.14,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "strategica.",
+   "prima_di": "Sarai"
+  },
+  {
+   "inizio": 98.84,
+   "fine": 106.35,
+   "durata": 7.51,
+   "tipo": "coda"
+  }
+ ],
+ "volume_medio_dBFS": -22.9,
+ "volume_massimo_dBFS": -0.0,
+ "silenzi_-30dB": [
+  {
+   "inizio": 75.64,
+   "fine": 75.96,
+   "durata": 0.32
+  },
+  {
+   "inizio": 106.03,
+   "fine": 106.35,
+   "durata": 0.31
+  }
+ ],
+ "silenzi_-40dB": [],
+ "soglia_relativa_dB": -41,
+ "silenzi_soglia_relativa": [],
+ "nota_silenzi": "silencedetect di ffmpeg, durata minima 0,30 s, tre soglie: due assolute (-30 e -40 dBFS) e una relativa a questo audio (volume medio meno 18 dB). Sotto una base musicale continua le soglie assolute possono restituire zero silenzi: e' un dato, non un errore, e per questo c'e' la soglia relativa.",
+ "loudness": {
+  "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
+  "campioni": 1063,
+  "mediana_segmenti_LUFS_M": -24.9,
+  "picco_momentaneo_LUFS_M": -12.1,
+  "picco_a_secondo": 20.9,
+  "sopra_mediana_3LU": [],
+  "profilo_per_secondo": [
+   {
+    "t": 0.0,
+    "M": -70.0
+   },
+   {
+    "t": 1.0,
+    "M": -27.1
+   },
+   {
+    "t": 2.0,
+    "M": -23.8
+   },
+   {
+    "t": 3.0,
+    "M": -23.6
+   },
+   {
+    "t": 4.0,
+    "M": -25.3
+   },
+   {
+    "t": 5.0,
+    "M": -27.3
+   },
+   {
+    "t": 6.0,
+    "M": -25.3
+   },
+   {
+    "t": 7.0,
+    "M": -25.0
+   },
+   {
+    "t": 8.0,
+    "M": -22.3
+   },
+   {
+    "t": 9.0,
+    "M": -23.4
+   },
+   {
+    "t": 10.0,
+    "M": -23.8
+   },
+   {
+    "t": 11.0,
+    "M": -23.6
+   },
+   {
+    "t": 12.0,
+    "M": -25.3
+   },
+   {
+    "t": 13.0,
+    "M": -21.8
+   },
+   {
+    "t": 14.0,
+    "M": -22.3
+   },
+   {
+    "t": 15.0,
+    "M": -20.9
+   },
+   {
+    "t": 16.0,
+    "M": -22.4
+   },
+   {
+    "t": 17.0,
+    "M": -21.1
+   },
+   {
+    "t": 18.0,
+    "M": -25.2
+   },
+   {
+    "t": 19.0,
+    "M": -26.0
+   },
+   {
+    "t": 20.0,
+    "M": -22.2
+   },
+   {
+    "t": 21.0,
+    "M": -12.2
+   },
+   {
+    "t": 22.0,
+    "M": -26.7
+   },
+   {
+    "t": 23.0,
+    "M": -24.6
+   },
+   {
+    "t": 24.0,
+    "M": -26.3
+   },
+   {
+    "t": 25.0,
+    "M": -22.9
+   },
+   {
+    "t": 26.0,
+    "M": -26.1
+   },
+   {
+    "t": 27.0,
+    "M": -24.3
+   },
+   {
+    "t": 28.0,
+    "M": -24.8
+   },
+   {
+    "t": 29.0,
+    "M": -26.7
+   },
+   {
+    "t": 30.0,
+    "M": -25.7
+   },
+   {
+    "t": 31.0,
+    "M": -26.2
+   },
+   {
+    "t": 32.0,
+    "M": -23.0
+   },
+   {
+    "t": 33.0,
+    "M": -25.8
+   },
+   {
+    "t": 34.0,
+    "M": -22.9
+   },
+   {
+    "t": 35.0,
+    "M": -28.5
+   },
+   {
+    "t": 36.0,
+    "M": -28.0
+   },
+   {
+    "t": 37.0,
+    "M": -23.7
+   },
+   {
+    "t": 38.0,
+    "M": -26.8
+   },
+   {
+    "t": 39.0,
+    "M": -25.8
+   },
+   {
+    "t": 40.0,
+    "M": -23.2
+   },
+   {
+    "t": 41.0,
+    "M": -22.5
+   },
+   {
+    "t": 42.0,
+    "M": -23.7
+   },
+   {
+    "t": 43.0,
+    "M": -21.7
+   },
+   {
+    "t": 44.0,
+    "M": -22.7
+   },
+   {
+    "t": 45.0,
+    "M": -24.7
+   },
+   {
+    "t": 46.0,
+    "M": -23.3
+   },
+   {
+    "t": 47.0,
+    "M": -23.8
+   },
+   {
+    "t": 48.0,
+    "M": -24.0
+   },
+   {
+    "t": 49.0,
+    "M": -27.6
+   },
+   {
+    "t": 50.0,
+    "M": -24.0
+   },
+   {
+    "t": 51.0,
+    "M": -28.0
+   },
+   {
+    "t": 52.0,
+    "M": -27.9
+   },
+   {
+    "t": 53.0,
+    "M": -24.3
+   },
+   {
+    "t": 54.0,
+    "M": -26.6
+   },
+   {
+    "t": 55.0,
+    "M": -21.8
+   },
+   {
+    "t": 56.0,
+    "M": -34.5
+   },
+   {
+    "t": 57.0,
+    "M": -26.2
+   },
+   {
+    "t": 58.0,
+    "M": -24.1
+   },
+   {
+    "t": 59.0,
+    "M": -24.1
+   },
+   {
+    "t": 60.0,
+    "M": -26.6
+   },
+   {
+    "t": 61.0,
+    "M": -25.1
+   },
+   {
+    "t": 62.0,
+    "M": -35.3
+   },
+   {
+    "t": 63.0,
+    "M": -23.8
+   },
+   {
+    "t": 64.0,
+    "M": -26.4
+   },
+   {
+    "t": 65.0,
+    "M": -25.7
+   },
+   {
+    "t": 66.0,
+    "M": -26.1
+   },
+   {
+    "t": 67.0,
+    "M": -24.8
+   },
+   {
+    "t": 68.0,
+    "M": -24.4
+   },
+   {
+    "t": 69.0,
+    "M": -24.8
+   },
+   {
+    "t": 70.0,
+    "M": -23.1
+   },
+   {
+    "t": 71.0,
+    "M": -26.5
+   },
+   {
+    "t": 72.0,
+    "M": -23.5
+   },
+   {
+    "t": 73.0,
+    "M": -25.3
+   },
+   {
+    "t": 74.0,
+    "M": -24.8
+   },
+   {
+    "t": 75.0,
+    "M": -23.8
+   },
+   {
+    "t": 76.0,
+    "M": -27.2
+   },
+   {
+    "t": 77.0,
+    "M": -23.8
+   },
+   {
+    "t": 78.0,
+    "M": -25.0
+   },
+   {
+    "t": 79.0,
+    "M": -24.9
+   },
+   {
+    "t": 80.0,
+    "M": -28.1
+   },
+   {
+    "t": 81.0,
+    "M": -25.0
+   },
+   {
+    "t": 82.0,
+    "M": -24.5
+   },
+   {
+    "t": 83.0,
+    "M": -22.9
+   },
+   {
+    "t": 84.0,
+    "M": -28.8
+   },
+   {
+    "t": 85.0,
+    "M": -23.2
+   },
+   {
+    "t": 86.0,
+    "M": -22.8
+   },
+   {
+    "t": 87.0,
+    "M": -24.0
+   },
+   {
+    "t": 88.0,
+    "M": -22.3
+   },
+   {
+    "t": 89.0,
+    "M": -26.1
+   },
+   {
+    "t": 90.0,
+    "M": -24.1
+   },
+   {
+    "t": 91.0,
+    "M": -22.5
+   },
+   {
+    "t": 92.0,
+    "M": -24.0
+   },
+   {
+    "t": 93.0,
+    "M": -24.9
+   },
+   {
+    "t": 94.0,
+    "M": -29.1
+   },
+   {
+    "t": 95.0,
+    "M": -31.5
+   },
+   {
+    "t": 96.0,
+    "M": -31.4
+   },
+   {
+    "t": 97.0,
+    "M": -37.2
+   },
+   {
+    "t": 98.0,
+    "M": -26.2
+   },
+   {
+    "t": 99.0,
+    "M": -35.8
+   },
+   {
+    "t": 100.0,
+    "M": -25.4
+   },
+   {
+    "t": 101.0,
+    "M": -24.0
+   },
+   {
+    "t": 102.0,
+    "M": -22.1
+   },
+   {
+    "t": 103.0,
+    "M": -22.6
+   },
+   {
+    "t": 104.0,
+    "M": -21.8
+   },
+   {
+    "t": 105.0,
+    "M": -24.5
+   },
+   {
+    "t": 106.0,
+    "M": -34.9
+   }
+  ]
+ }
+}

@@ -1,0 +1,5660 @@
+{
+ "slug": "armageddon-home",
+ "fonte": "sorgenti/armageddon-home/video.mp4",
+ "generato": "2026-09-10 23:45",
+ "strumento_trascrizione": "faster-whisper small, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "durata_video_s": 808.73,
+ "densita": {
+  "segmenti_vocali": 225,
+  "secondi_di_parlato": 791.54,
+  "percentuale_di_parlato": 97.9,
+  "segmenti_al_minuto": 16.69,
+  "durata_media_segmento_s": 3.52
+ },
+ "parole_totali": 2959,
+ "parole_al_minuto_medie": 219.5,
+ "parole_al_minuto_sul_solo_parlato": 224.3,
+ "wpm_per_minuto": [
+  {
+   "minuto": 0,
+   "da": 0.0,
+   "a": 60.0,
+   "parole": 161,
+   "parole_al_minuto": 161.0,
+   "secondi_di_voce": 52.21,
+   "densita_voce_pct": 87.0
+  },
+  {
+   "minuto": 1,
+   "da": 60.0,
+   "a": 120.0,
+   "parole": 220,
+   "parole_al_minuto": 220.0,
+   "secondi_di_voce": 53.99,
+   "densita_voce_pct": 90.0
+  },
+  {
+   "minuto": 2,
+   "da": 120.0,
+   "a": 180.0,
+   "parole": 237,
+   "parole_al_minuto": 237.0,
+   "secondi_di_voce": 56.44,
+   "densita_voce_pct": 94.1
+  },
+  {
+   "minuto": 3,
+   "da": 180.0,
+   "a": 240.0,
+   "parole": 246,
+   "parole_al_minuto": 246.0,
+   "secondi_di_voce": 55.4,
+   "densita_voce_pct": 92.3
+  },
+  {
+   "minuto": 4,
+   "da": 240.0,
+   "a": 300.0,
+   "parole": 232,
+   "parole_al_minuto": 232.0,
+   "secondi_di_voce": 59.16,
+   "densita_voce_pct": 98.6
+  },
+  {
+   "minuto": 5,
+   "da": 300.0,
+   "a": 360.0,
+   "parole": 229,
+   "parole_al_minuto": 229.0,
+   "secondi_di_voce": 55.92,
+   "densita_voce_pct": 93.2
+  },
+  {
+   "minuto": 6,
+   "da": 360.0,
+   "a": 420.0,
+   "parole": 231,
+   "parole_al_minuto": 231.0,
+   "secondi_di_voce": 53.71,
+   "densita_voce_pct": 89.5
+  },
+  {
+   "minuto": 7,
+   "da": 420.0,
+   "a": 480.0,
+   "parole": 222,
+   "parole_al_minuto": 222.0,
+   "secondi_di_voce": 56.91,
+   "densita_voce_pct": 94.8
+  },
+  {
+   "minuto": 8,
+   "da": 480.0,
+   "a": 540.0,
+   "parole": 219,
+   "parole_al_minuto": 219.0,
+   "secondi_di_voce": 56.71,
+   "densita_voce_pct": 94.5
+  },
+  {
+   "minuto": 9,
+   "da": 540.0,
+   "a": 600.0,
+   "parole": 201,
+   "parole_al_minuto": 201.0,
+   "secondi_di_voce": 57.33,
+   "densita_voce_pct": 95.6
+  },
+  {
+   "minuto": 10,
+   "da": 600.0,
+   "a": 660.0,
+   "parole": 234,
+   "parole_al_minuto": 234.0,
+   "secondi_di_voce": 55.23,
+   "densita_voce_pct": 92.0
+  },
+  {
+   "minuto": 11,
+   "da": 660.0,
+   "a": 720.0,
+   "parole": 223,
+   "parole_al_minuto": 223.0,
+   "secondi_di_voce": 57.65,
+   "densita_voce_pct": 96.1
+  },
+  {
+   "minuto": 12,
+   "da": 720.0,
+   "a": 780.0,
+   "parole": 201,
+   "parole_al_minuto": 201.0,
+   "secondi_di_voce": 58.1,
+   "densita_voce_pct": 96.8
+  },
+  {
+   "minuto": 13,
+   "da": 780.0,
+   "a": 808.73,
+   "parole": 103,
+   "parole_al_minuto": 215.1,
+   "secondi_di_voce": 26.92,
+   "densita_voce_pct": 93.7
+  }
+ ],
+ "pause_sopra_0_5s": 13,
+ "pause_dal_parlato": [
+  {
+   "inizio": 1.08,
+   "fine": 1.4,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "intorno,",
+   "prima_di": "tutti"
+  },
+  {
+   "inizio": 2.56,
+   "fine": 2.8,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "AI,",
+   "prima_di": "tutti"
+  },
+  {
+   "inizio": 5.2,
+   "fine": 5.58,
+   "durata": 0.38,
+   "tipo": "interna",
+   "dopo": "Eppure,",
+   "prima_di": "sono"
+  },
+  {
+   "inizio": 8.44,
+   "fine": 8.62,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "E'",
+   "prima_di": "totale"
+  },
+  {
+   "inizio": 17.94,
+   "fine": 18.26,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "Amore,",
+   "prima_di": "penso"
+  },
+  {
+   "inizio": 21.82,
+   "fine": 22.04,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "2026,",
+   "prima_di": "si"
+  },
+  {
+   "inizio": 24.56,
+   "fine": 24.74,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "WIFE,",
+   "prima_di": "King"
+  },
+  {
+   "inizio": 26.82,
+   "fine": 27.1,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "tutti,",
+   "prima_di": "fai"
+  },
+  {
+   "inizio": 30.46,
+   "fine": 33.46,
+   "durata": 3.0,
+   "tipo": "interna",
+   "dopo": "lanciati!",
+   "prima_di": "Rilassati."
+  },
+  {
+   "inizio": 33.86,
+   "fine": 34.4,
+   "durata": 0.54,
+   "tipo": "interna",
+   "dopo": "Rilassati.",
+   "prima_di": "Benvenuto,"
+  },
+  {
+   "inizio": 34.8,
+   "fine": 34.94,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "Benvenuto,",
+   "prima_di": "se"
+  },
+  {
+   "inizio": 37.6,
+   "fine": 37.74,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "marketing.",
+   "prima_di": "Social"
+  },
+  {
+   "inizio": 38.5,
+   "fine": 38.78,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "Management,",
+   "prima_di": "Landing"
+  },
+  {
+   "inizio": 39.44,
+   "fine": 39.52,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "Pages,",
+   "prima_di": "Copywriting"
+  },
+  {
+   "inizio": 40.86,
+   "fine": 40.92,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "simile.",
+   "prima_di": "Le"
+  },
+  {
+   "inizio": 42.06,
+   "fine": 42.22,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "cose,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 43.98,
+   "fine": 44.06,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "pensano.",
+   "prima_di": "Guarda"
+  },
+  {
+   "inizio": 46.74,
+   "fine": 46.88,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "crazy.",
+   "prima_di": "Secondo"
+  },
+  {
+   "inizio": 47.32,
+   "fine": 47.4,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "te,",
+   "prima_di": "tutto"
+  },
+  {
+   "inizio": 49.22,
+   "fine": 49.28,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "umano.",
+   "prima_di": "La"
+  },
+  {
+   "inizio": 50.18,
+   "fine": 50.47,
+   "durata": 0.29,
+   "tipo": "interna",
+   "dopo": "è",
+   "prima_di": "entrambe."
+  },
+  {
+   "inizio": 51.91,
+   "fine": 52.09,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "entrambe.",
+   "prima_di": "Il"
+  },
+  {
+   "inizio": 55.03,
+   "fine": 55.17,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "'altro.",
+   "prima_di": "Ti"
+  },
+  {
+   "inizio": 55.37,
+   "fine": 55.59,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "piace?",
+   "prima_di": "C"
+  },
+  {
+   "inizio": 62.17,
+   "fine": 62.37,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "AI.",
+   "prima_di": "Io"
+  },
+  {
+   "inizio": 63.05,
+   "fine": 63.21,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "design,",
+   "prima_di": "l"
+  },
+  {
+   "inizio": 65.05,
+   "fine": 65.11,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "sito.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 67.59,
+   "fine": 67.69,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "umani.",
+   "prima_di": "Tipo,"
+  },
+  {
+   "inizio": 68.05,
+   "fine": 68.21,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "Tipo,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 69.53,
+   "fine": 69.67,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "proprio.",
+   "prima_di": "Sono"
+  },
+  {
+   "inizio": 73.37,
+   "fine": 74.19,
+   "durata": 0.82,
+   "tipo": "interna",
+   "dopo": "Knowledge.",
+   "prima_di": "Knowledge,"
+  },
+  {
+   "inizio": 75.67,
+   "fine": 75.77,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "meme,",
+   "prima_di": "questo"
+  },
+  {
+   "inizio": 76.23,
+   "fine": 76.31,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "poco.",
+   "prima_di": "E'"
+  },
+  {
+   "inizio": 76.41,
+   "fine": 76.55,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "E'",
+   "prima_di": "però"
+  },
+  {
+   "inizio": 77.57,
+   "fine": 77.65,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "Knowledge,",
+   "prima_di": "mentre"
+  },
+  {
+   "inizio": 79.47,
+   "fine": 79.83,
+   "durata": 0.36,
+   "tipo": "interna",
+   "dopo": "chaos,",
+   "prima_di": "Armageddon."
+  },
+  {
+   "inizio": 80.61,
+   "fine": 80.75,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "Armageddon.",
+   "prima_di": "Chi"
+  },
+  {
+   "inizio": 81.51,
+   "fine": 81.73,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "vince?",
+   "prima_di": "Chi"
+  },
+  {
+   "inizio": 83.69,
+   "fine": 83.89,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "Knowledge,",
+   "prima_di": "ovvero"
+  },
+  {
+   "inizio": 85.11,
+   "fine": 85.43,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "'industria.",
+   "prima_di": "In"
+  },
+  {
+   "inizio": 87.97,
+   "fine": 88.07,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "knowledge?",
+   "prima_di": "Perché"
+  },
+  {
+   "inizio": 89.57,
+   "fine": 89.73,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "chiave?",
+   "prima_di": "Perché"
+  },
+  {
+   "inizio": 91.75,
+   "fine": 91.89,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "euro?",
+   "prima_di": "Come"
+  },
+  {
+   "inizio": 92.49,
+   "fine": 92.59,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "sempre?",
+   "prima_di": "Come"
+  },
+  {
+   "inizio": 95.97,
+   "fine": 96.11,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "sempre.",
+   "prima_di": "È"
+  },
+  {
+   "inizio": 97.43,
+   "fine": 97.61,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "pazienza.",
+   "prima_di": "Domain"
+  },
+  {
+   "inizio": 99.21,
+   "fine": 99.47,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "knowledge.",
+   "prima_di": "Sapere"
+  },
+  {
+   "inizio": 100.87,
+   "fine": 101.03,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "'ambiente.",
+   "prima_di": "Conoscere"
+  },
+  {
+   "inizio": 102.03,
+   "fine": 102.11,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "'industria.",
+   "prima_di": "Ad"
+  },
+  {
+   "inizio": 104.87,
+   "fine": 104.99,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "design,",
+   "prima_di": "se"
+  },
+  {
+   "inizio": 107.23,
+   "fine": 107.43,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "editor.",
+   "prima_di": "Ora"
+  },
+  {
+   "inizio": 108.15,
+   "fine": 108.33,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "questo,",
+   "prima_di": "addiamo"
+  },
+  {
+   "inizio": 109.21,
+   "fine": 109.63,
+   "durata": 0.42,
+   "tipo": "interna",
+   "dopo": "persone.",
+   "prima_di": "A"
+  },
+  {
+   "inizio": 109.97,
+   "fine": 110.03,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "B.",
+   "prima_di": "A"
+  },
+  {
+   "inizio": 111.71,
+   "fine": 111.87,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "AI.",
+   "prima_di": "B"
+  },
+  {
+   "inizio": 140.23,
+   "fine": 140.31,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "vai,",
+   "prima_di": "capisci"
+  },
+  {
+   "inizio": 141.17,
+   "fine": 141.27,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "knowledge,",
+   "prima_di": "scusa"
+  },
+  {
+   "inizio": 143.31,
+   "fine": 143.49,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "knowledge,",
+   "prima_di": "pensaci"
+  },
+  {
+   "inizio": 147.43,
+   "fine": 148.1,
+   "durata": 0.67,
+   "tipo": "interna",
+   "dopo": "perché",
+   "prima_di": "so"
+  },
+  {
+   "inizio": 152.04,
+   "fine": 152.1,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "attenzione,",
+   "prima_di": "capisci"
+  },
+  {
+   "inizio": 152.88,
+   "fine": 153.02,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "intendo?",
+   "prima_di": "vince"
+  },
+  {
+   "inizio": 159.42,
+   "fine": 159.56,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "'altro,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 160.24,
+   "fine": 160.36,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "knowledge,",
+   "prima_di": "hai"
+  },
+  {
+   "inizio": 163.08,
+   "fine": 163.16,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "già,",
+   "prima_di": "forse"
+  },
+  {
+   "inizio": 163.92,
+   "fine": 164.06,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "copywriter,",
+   "prima_di": "hai"
+  },
+  {
+   "inizio": 165.14,
+   "fine": 165.28,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "copywriting,",
+   "prima_di": "forse"
+  },
+  {
+   "inizio": 167.7,
+   "fine": 167.82,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "virale.",
+   "prima_di": "Se"
+  },
+  {
+   "inizio": 169.62,
+   "fine": 169.8,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "web,",
+   "prima_di": "come"
+  },
+  {
+   "inizio": 170.36,
+   "fine": 170.52,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "landing,",
+   "prima_di": "fare"
+  },
+  {
+   "inizio": 170.88,
+   "fine": 171.02,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "carina.",
+   "prima_di": "Il"
+  },
+  {
+   "inizio": 175.1,
+   "fine": 175.6,
+   "durata": 0.5,
+   "tipo": "interna",
+   "dopo": "slope,",
+   "prima_di": "l"
+  },
+  {
+   "inizio": 176.74,
+   "fine": 176.88,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "risultati,",
+   "prima_di": "vince"
+  },
+  {
+   "inizio": 178.96,
+   "fine": 179.3,
+   "durata": 0.34,
+   "tipo": "interna",
+   "dopo": "skill.",
+   "prima_di": "Cioè"
+  },
+  {
+   "inizio": 180.04,
+   "fine": 180.18,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "pagina,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 182.0,
+   "fine": 182.26,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "principiante.",
+   "prima_di": "No,"
+  },
+  {
+   "inizio": 182.38,
+   "fine": 182.48,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "No,",
+   "prima_di": "è"
+  },
+  {
+   "inizio": 186.24,
+   "fine": 186.38,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "design,",
+   "prima_di": "per"
+  },
+  {
+   "inizio": 187.12,
+   "fine": 187.32,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "copy,",
+   "prima_di": "fare"
+  },
+  {
+   "inizio": 187.96,
+   "fine": 188.06,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "video.",
+   "prima_di": "Tutto"
+  },
+  {
+   "inizio": 188.36,
+   "fine": 188.42,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "questo,",
+   "prima_di": "tutto"
+  },
+  {
+   "inizio": 189.0,
+   "fine": 189.1,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "vedi,",
+   "prima_di": "è"
+  },
+  {
+   "inizio": 190.52,
+   "fine": 190.6,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "lei.",
+   "prima_di": "Però"
+  },
+  {
+   "inizio": 192.54,
+   "fine": 192.66,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "umano,",
+   "prima_di": "ce"
+  },
+  {
+   "inizio": 194.16,
+   "fine": 194.26,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "io,",
+   "prima_di": "capisci"
+  },
+  {
+   "inizio": 194.98,
+   "fine": 195.04,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "intendo.",
+   "prima_di": "Quindi"
+  },
+  {
+   "inizio": 195.92,
+   "fine": 196.0,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "me,",
+   "prima_di": "io"
+  },
+  {
+   "inizio": 197.8,
+   "fine": 197.88,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "'azienda,",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 198.82,
+   "fine": 198.92,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "tendere,",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 203.08,
+   "fine": 203.14,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "scorciatoie.",
+   "prima_di": "Vi"
+  },
+  {
+   "inizio": 203.84,
+   "fine": 204.08,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "2.",
+   "prima_di": "Perché"
+  },
+  {
+   "inizio": 205.76,
+   "fine": 206.02,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "knowledge?",
+   "prima_di": "Io"
+  },
+  {
+   "inizio": 206.94,
+   "fine": 207.1,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "sei.",
+   "prima_di": "Ti"
+  },
+  {
+   "inizio": 207.56,
+   "fine": 207.66,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "conosco,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 208.42,
+   "fine": 210.12,
+   "durata": 1.7,
+   "tipo": "interna",
+   "dopo": "notte.",
+   "prima_di": "Questo"
+  },
+  {
+   "inizio": 211.0,
+   "fine": 211.16,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "dire.",
+   "prima_di": "Filing"
+  },
+  {
+   "inizio": 214.22,
+   "fine": 214.28,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "farlo,",
+   "prima_di": "magari"
+  },
+  {
+   "inizio": 223.44,
+   "fine": 223.5,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "bene.",
+   "prima_di": "Vedi,"
+  },
+  {
+   "inizio": 249.16,
+   "fine": 249.34,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "tutto.",
+   "prima_di": "Ad"
+  },
+  {
+   "inizio": 275.02,
+   "fine": 275.66,
+   "durata": 0.64,
+   "tipo": "interna",
+   "dopo": "'arma",
+   "prima_di": "Meglioni"
+  },
+  {
+   "inizio": 301.36,
+   "fine": 301.46,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "2,",
+   "prima_di": "lo"
+  },
+  {
+   "inizio": 308.44,
+   "fine": 308.52,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "design,",
+   "prima_di": "compreso"
+  },
+  {
+   "inizio": 309.26,
+   "fine": 309.34,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "sviluppo,",
+   "prima_di": "compreso"
+  },
+  {
+   "inizio": 317.7,
+   "fine": 317.84,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "confuso,",
+   "prima_di": "ve"
+  },
+  {
+   "inizio": 331.46,
+   "fine": 331.56,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "guy,",
+   "prima_di": "dovrei"
+  },
+  {
+   "inizio": 334.36,
+   "fine": 334.42,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "strategie.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 335.38,
+   "fine": 335.5,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "chiedi,",
+   "prima_di": "se"
+  },
+  {
+   "inizio": 337.78,
+   "fine": 337.98,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "fantastica,",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 340.18,
+   "fine": 340.32,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "te?",
+   "prima_di": "Tre"
+  },
+  {
+   "inizio": 341.42,
+   "fine": 341.5,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "uno,",
+   "prima_di": "soddisfazione"
+  },
+  {
+   "inizio": 342.34,
+   "fine": 342.42,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "personale,",
+   "prima_di": "mi"
+  },
+  {
+   "inizio": 343.44,
+   "fine": 343.58,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "stroba,",
+   "prima_di": "mi"
+  },
+  {
+   "inizio": 345.24,
+   "fine": 345.3,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "corsi,",
+   "prima_di": "mi"
+  },
+  {
+   "inizio": 346.0,
+   "fine": 346.4,
+   "durata": 0.4,
+   "tipo": "interna",
+   "dopo": "appassiona.",
+   "prima_di": "Numero"
+  },
+  {
+   "inizio": 346.84,
+   "fine": 347.14,
+   "durata": 0.3,
+   "tipo": "interna",
+   "dopo": "due,",
+   "prima_di": "soldi,"
+  },
+  {
+   "inizio": 347.58,
+   "fine": 347.64,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "soldi,",
+   "prima_di": "tu"
+  },
+  {
+   "inizio": 348.14,
+   "fine": 348.24,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "paghi,",
+   "prima_di": "ci"
+  },
+  {
+   "inizio": 349.58,
+   "fine": 349.74,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "guadagno,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 350.46,
+   "fine": 350.7,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "cosa,",
+   "prima_di": "tu"
+  },
+  {
+   "inizio": 351.14,
+   "fine": 351.32,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "paghi,",
+   "prima_di": "no."
+  },
+  {
+   "inizio": 351.4,
+   "fine": 351.54,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "no.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 352.12,
+   "fine": 352.44,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "tre,",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 355.3,
+   "fine": 355.52,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "Italia.",
+   "prima_di": "Quindi"
+  },
+  {
+   "inizio": 355.88,
+   "fine": 356.08,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "sì,",
+   "prima_di": "potrei"
+  },
+  {
+   "inizio": 358.86,
+   "fine": 358.94,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "soldi,",
+   "prima_di": "però"
+  },
+  {
+   "inizio": 360.4,
+   "fine": 360.56,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "Cristo.",
+   "prima_di": "5"
+  },
+  {
+   "inizio": 362.08,
+   "fine": 362.42,
+   "durata": 0.34,
+   "tipo": "interna",
+   "dopo": "Italia,",
+   "prima_di": "se"
+  },
+  {
+   "inizio": 364.3,
+   "fine": 364.36,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "studenti,",
+   "prima_di": "cosa"
+  },
+  {
+   "inizio": 365.62,
+   "fine": 365.7,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "'opretore,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 366.9,
+   "fine": 367.06,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "anni,",
+   "prima_di": "ci"
+  },
+  {
+   "inizio": 368.18,
+   "fine": 368.24,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "migliaia,",
+   "prima_di": "sumigliaia,"
+  },
+  {
+   "inizio": 368.64,
+   "fine": 368.7,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "sumigliaia,",
+   "prima_di": "sumigliaia"
+  },
+  {
+   "inizio": 369.84,
+   "fine": 370.0,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "ogni",
+   "prima_di": "Ora"
+  },
+  {
+   "inizio": 370.94,
+   "fine": 371.02,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "fraintendermi,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 372.58,
+   "fine": 372.66,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "facili,",
+   "prima_di": "penso"
+  },
+  {
+   "inizio": 373.8,
+   "fine": 373.86,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "ormai,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 377.38,
+   "fine": 377.54,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "no,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 378.06,
+   "fine": 378.16,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "così.",
+   "prima_di": "È"
+  },
+  {
+   "inizio": 378.76,
+   "fine": 379.22,
+   "durata": 0.46,
+   "tipo": "interna",
+   "dopo": "business,",
+   "prima_di": "è"
+  },
+  {
+   "inizio": 380.16,
+   "fine": 380.26,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "business,",
+   "prima_di": "qualsiasi"
+  },
+  {
+   "inizio": 381.24,
+   "fine": 381.48,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "business,",
+   "prima_di": "al"
+  },
+  {
+   "inizio": 383.64,
+   "fine": 384.04,
+   "durata": 0.4,
+   "tipo": "interna",
+   "dopo": "dovrai",
+   "prima_di": "faticare,"
+  },
+  {
+   "inizio": 384.4,
+   "fine": 384.52,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "faticare,",
+   "prima_di": "se"
+  },
+  {
+   "inizio": 386.2,
+   "fine": 386.34,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "business,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 388.76,
+   "fine": 388.84,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "business,",
+   "prima_di": "semplicemente"
+  },
+  {
+   "inizio": 390.32,
+   "fine": 390.5,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "consapevole,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 391.02,
+   "fine": 391.1,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "me,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 392.24,
+   "fine": 392.3,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "'altro,",
+   "prima_di": "ed"
+  },
+  {
+   "inizio": 392.86,
+   "fine": 392.96,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "ok,",
+   "prima_di": "però"
+  },
+  {
+   "inizio": 395.24,
+   "fine": 396.57,
+   "durata": 1.33,
+   "tipo": "interna",
+   "dopo": "provarci",
+   "prima_di": "eccoci"
+  },
+  {
+   "inizio": 397.05,
+   "fine": 397.15,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "qua,",
+   "prima_di": "in"
+  },
+  {
+   "inizio": 398.95,
+   "fine": 399.01,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "so,",
+   "prima_di": "state"
+  },
+  {
+   "inizio": 401.19,
+   "fine": 401.85,
+   "durata": 0.66,
+   "tipo": "interna",
+   "dopo": "cedendo",
+   "prima_di": "199"
+  },
+  {
+   "inizio": 402.49,
+   "fine": 402.55,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "euro?",
+   "prima_di": "Quando"
+  },
+  {
+   "inizio": 406.77,
+   "fine": 406.83,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "alto,",
+   "prima_di": "te"
+  },
+  {
+   "inizio": 410.87,
+   "fine": 410.97,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "incluso,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 419.25,
+   "fine": 419.45,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "marketing.",
+   "prima_di": "Questo"
+  },
+  {
+   "inizio": 428.95,
+   "fine": 429.09,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "Esatto,",
+   "prima_di": "capito?"
+  },
+  {
+   "inizio": 429.37,
+   "fine": 429.63,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "capito?",
+   "prima_di": "Se"
+  },
+  {
+   "inizio": 434.81,
+   "fine": 435.01,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "euro,",
+   "prima_di": "avrai"
+  },
+  {
+   "inizio": 465.13,
+   "fine": 465.81,
+   "durata": 0.68,
+   "tipo": "interna",
+   "dopo": "chiama",
+   "prima_di": "bandellarmageddon,"
+  },
+  {
+   "inizio": 468.37,
+   "fine": 468.43,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "bene.",
+   "prima_di": "Cosa"
+  },
+  {
+   "inizio": 469.89,
+   "fine": 470.67,
+   "durata": 0.78,
+   "tipo": "interna",
+   "dopo": "'operato?",
+   "prima_di": "Fanno"
+  },
+  {
+   "inizio": 471.39,
+   "fine": 471.47,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "'operato,",
+   "prima_di": "due"
+  },
+  {
+   "inizio": 471.91,
+   "fine": 472.01,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "parti,",
+   "prima_di": "come"
+  },
+  {
+   "inizio": 472.41,
+   "fine": 472.55,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "scrivere,",
+   "prima_di": "landing"
+  },
+  {
+   "inizio": 473.63,
+   "fine": 473.69,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "clienti.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 474.69,
+   "fine": 474.83,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "clienti,",
+   "prima_di": "dopo"
+  },
+  {
+   "inizio": 477.69,
+   "fine": 477.81,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "corso,",
+   "prima_di": "puoi"
+  },
+  {
+   "inizio": 483.57,
+   "fine": 483.63,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "vita.",
+   "prima_di": "Ora,"
+  },
+  {
+   "inizio": 483.85,
+   "fine": 483.97,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "Ora,",
+   "prima_di": "tra"
+  },
+  {
+   "inizio": 485.45,
+   "fine": 485.55,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "anni,",
+   "prima_di": "hai"
+  },
+  {
+   "inizio": 488.77,
+   "fine": 488.89,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "corso,",
+   "prima_di": "ho"
+  },
+  {
+   "inizio": 491.13,
+   "fine": 491.23,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "più,",
+   "prima_di": "è"
+  },
+  {
+   "inizio": 494.01,
+   "fine": 494.17,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "cui.",
+   "prima_di": "Gruppo"
+  },
+  {
+   "inizio": 495.67,
+   "fine": 495.81,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "community,",
+   "prima_di": "strumento"
+  },
+  {
+   "inizio": 497.81,
+   "fine": 497.87,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "pages,",
+   "prima_di": "più"
+  },
+  {
+   "inizio": 504.25,
+   "fine": 504.31,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "livello,",
+   "prima_di": "sono"
+  },
+  {
+   "inizio": 504.87,
+   "fine": 504.95,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "belle,",
+   "prima_di": "testate"
+  },
+  {
+   "inizio": 512.39,
+   "fine": 512.45,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "cosa,",
+   "prima_di": "questo"
+  },
+  {
+   "inizio": 516.39,
+   "fine": 516.49,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "cazzo,",
+   "prima_di": "usavo"
+  },
+  {
+   "inizio": 518.57,
+   "fine": 519.19,
+   "durata": 0.62,
+   "tipo": "interna",
+   "dopo": "non",
+   "prima_di": "sapevo"
+  },
+  {
+   "inizio": 523.77,
+   "fine": 523.83,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "qualità.",
+   "prima_di": "Mi"
+  },
+  {
+   "inizio": 530.17,
+   "fine": 530.29,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "clienti.",
+   "prima_di": "La"
+  },
+  {
+   "inizio": 533.91,
+   "fine": 534.03,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "sanno,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 534.35,
+   "fine": 534.53,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "so,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 534.87,
+   "fine": 535.51,
+   "durata": 0.64,
+   "tipo": "interna",
+   "dopo": "insegnerò.",
+   "prima_di": "Ti"
+  },
+  {
+   "inizio": 537.03,
+   "fine": 537.17,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "lavoro,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 537.75,
+   "fine": 537.91,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "funziona.",
+   "prima_di": "Il"
+  },
+  {
+   "inizio": 540.73,
+   "fine": 540.95,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "prepotente.",
+   "prima_di": "Fanno"
+  },
+  {
+   "inizio": 541.49,
+   "fine": 541.87,
+   "durata": 0.38,
+   "tipo": "interna",
+   "dopo": "operator,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 544.11,
+   "fine": 544.17,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "ore,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 553.07,
+   "fine": 553.15,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "Pages,",
+   "prima_di": "per"
+  },
+  {
+   "inizio": 555.19,
+   "fine": 555.25,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "pacchetti.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 557.51,
+   "fine": 557.63,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "cose,",
+   "prima_di": "Out"
+  },
+  {
+   "inizio": 558.37,
+   "fine": 558.57,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "Funnel,",
+   "prima_di": "Out"
+  },
+  {
+   "inizio": 559.31,
+   "fine": 559.57,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "Headline,",
+   "prima_di": "Out"
+  },
+  {
+   "inizio": 563.67,
+   "fine": 563.75,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "subito.",
+   "prima_di": "Qui"
+  },
+  {
+   "inizio": 567.19,
+   "fine": 567.41,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "pronto.",
+   "prima_di": "Considera"
+  },
+  {
+   "inizio": 570.51,
+   "fine": 570.75,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "operator.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 579.51,
+   "fine": 579.61,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "Ricorda,",
+   "prima_di": "se"
+  },
+  {
+   "inizio": 580.55,
+   "fine": 580.75,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "bundle,",
+   "prima_di": "adesso"
+  },
+  {
+   "inizio": 593.13,
+   "fine": 593.29,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "opportunità,",
+   "prima_di": "no?"
+  },
+  {
+   "inizio": 593.35,
+   "fine": 593.41,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "no?",
+   "prima_di": "Però"
+  },
+  {
+   "inizio": 610.09,
+   "fine": 610.17,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "esperienza.",
+   "prima_di": "Negli"
+  },
+  {
+   "inizio": 613.75,
+   "fine": 613.85,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "corsi.",
+   "prima_di": "Ho"
+  },
+  {
+   "inizio": 615.09,
+   "fine": 615.55,
+   "durata": 0.46,
+   "tipo": "interna",
+   "dopo": "piattaforme",
+   "prima_di": "prefatte"
+  },
+  {
+   "inizio": 618.25,
+   "fine": 618.35,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "qualità,",
+   "prima_di": "i"
+  },
+  {
+   "inizio": 619.17,
+   "fine": 619.25,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "belli,",
+   "prima_di": "però"
+  },
+  {
+   "inizio": 621.61,
+   "fine": 621.69,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "cose.",
+   "prima_di": "Con"
+  },
+  {
+   "inizio": 623.41,
+   "fine": 623.51,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "fanculo,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 624.27,
+   "fine": 624.45,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "spese,",
+   "prima_di": "tiriamo"
+  },
+  {
+   "inizio": 627.09,
+   "fine": 627.15,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "fuori.",
+   "prima_di": "Ho"
+  },
+  {
+   "inizio": 629.11,
+   "fine": 629.27,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "video,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 630.09,
+   "fine": 630.27,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "caso,",
+   "prima_di": "con"
+  },
+  {
+   "inizio": 631.39,
+   "fine": 631.57,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "powerpoint.",
+   "prima_di": "Il"
+  },
+  {
+   "inizio": 633.11,
+   "fine": 633.17,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "livello,",
+   "prima_di": "con"
+  },
+  {
+   "inizio": 634.27,
+   "fine": 634.41,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "schermo,",
+   "prima_di": "così"
+  },
+  {
+   "inizio": 634.93,
+   "fine": 634.99,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "capisci.",
+   "prima_di": "Le"
+  },
+  {
+   "inizio": 636.75,
+   "fine": 636.87,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "scaricare,",
+   "prima_di": "la"
+  },
+  {
+   "inizio": 637.55,
+   "fine": 637.67,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "descrizione,",
+   "prima_di": "così"
+  },
+  {
+   "inizio": 640.99,
+   "fine": 641.05,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "video.",
+   "prima_di": "Il"
+  },
+  {
+   "inizio": 641.39,
+   "fine": 641.71,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "quiz,",
+   "prima_di": "la"
+  },
+  {
+   "inizio": 642.63,
+   "fine": 642.71,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "pettaforma,",
+   "prima_di": "è"
+  },
+  {
+   "inizio": 643.93,
+   "fine": 644.35,
+   "durata": 0.42,
+   "tipo": "interna",
+   "dopo": "custom,",
+   "prima_di": "quindi"
+  },
+  {
+   "inizio": 645.33,
+   "fine": 645.53,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "'account,",
+   "prima_di": "quindi"
+  },
+  {
+   "inizio": 647.67,
+   "fine": 647.79,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "tolto,",
+   "prima_di": "questi"
+  },
+  {
+   "inizio": 648.27,
+   "fine": 648.35,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "problemi,",
+   "prima_di": "è"
+  },
+  {
+   "inizio": 649.85,
+   "fine": 649.91,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "smulta.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 650.29,
+   "fine": 650.45,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "dici,",
+   "prima_di": "andrò"
+  },
+  {
+   "inizio": 651.03,
+   "fine": 651.17,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "frega,",
+   "prima_di": "mi"
+  },
+  {
+   "inizio": 652.31,
+   "fine": 652.45,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "informazioni,",
+   "prima_di": "lo"
+  },
+  {
+   "inizio": 652.81,
+   "fine": 652.95,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "so,",
+   "prima_di": "però"
+  },
+  {
+   "inizio": 656.77,
+   "fine": 656.89,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "piccolezza,",
+   "prima_di": "immagina"
+  },
+  {
+   "inizio": 658.69,
+   "fine": 658.85,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "resto.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 661.63,
+   "fine": 661.85,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "avere,",
+   "prima_di": "quindi"
+  },
+  {
+   "inizio": 664.23,
+   "fine": 664.49,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "tutto,",
+   "prima_di": "conspiegazioni"
+  },
+  {
+   "inizio": 680.89,
+   "fine": 681.35,
+   "durata": 0.46,
+   "tipo": "interna",
+   "dopo": "così",
+   "prima_di": "semplice"
+  },
+  {
+   "inizio": 692.67,
+   "fine": 692.89,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "codice,",
+   "prima_di": "usando"
+  },
+  {
+   "inizio": 695.91,
+   "fine": 696.03,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "web,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 701.21,
+   "fine": 701.37,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "serve,",
+   "prima_di": "la"
+  },
+  {
+   "inizio": 703.39,
+   "fine": 703.57,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "avere,",
+   "prima_di": "erano"
+  },
+  {
+   "inizio": 713.33,
+   "fine": 713.77,
+   "durata": 0.44,
+   "tipo": "interna",
+   "dopo": "K47,",
+   "prima_di": "è"
+  },
+  {
+   "inizio": 720.11,
+   "fine": 720.27,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "tutto.",
+   "prima_di": "La"
+  },
+  {
+   "inizio": 726.41,
+   "fine": 726.53,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "GPT.",
+   "prima_di": "Questi"
+  },
+  {
+   "inizio": 729.59,
+   "fine": 729.67,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "secondi,",
+   "prima_di": "aziende"
+  },
+  {
+   "inizio": 735.59,
+   "fine": 735.69,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "tutti.",
+   "prima_di": "Io"
+  },
+  {
+   "inizio": 736.43,
+   "fine": 736.63,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "AI,",
+   "prima_di": "vedi"
+  },
+  {
+   "inizio": 742.33,
+   "fine": 742.57,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "cose.",
+   "prima_di": "Il"
+  },
+  {
+   "inizio": 744.55,
+   "fine": 744.65,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "adesso.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 771.71,
+   "fine": 772.05,
+   "durata": 0.34,
+   "tipo": "interna",
+   "dopo": "Instagram,",
+   "prima_di": "nel"
+  },
+  {
+   "inizio": 775.97,
+   "fine": 776.09,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "più.",
+   "prima_di": "Questi"
+  },
+  {
+   "inizio": 778.93,
+   "fine": 779.07,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "mai,",
+   "prima_di": "quindi"
+  },
+  {
+   "inizio": 779.81,
+   "fine": 780.07,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "quattro,",
+   "prima_di": "dell"
+  },
+  {
+   "inizio": 780.69,
+   "fine": 780.85,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "'ArmaGaddon.",
+   "prima_di": "Poi"
+  },
+  {
+   "inizio": 782.35,
+   "fine": 782.47,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "'Operator,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 784.05,
+   "fine": 784.11,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "'anno.",
+   "prima_di": "Quello"
+  },
+  {
+   "inizio": 788.31,
+   "fine": 788.37,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "usarlo,",
+   "prima_di": "quindi"
+  },
+  {
+   "inizio": 789.11,
+   "fine": 789.27,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "tempo.",
+   "prima_di": "C"
+  },
+  {
+   "inizio": 792.63,
+   "fine": 792.75,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "interrate.",
+   "prima_di": "Se"
+  },
+  {
+   "inizio": 793.41,
+   "fine": 793.55,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "dettagli,",
+   "prima_di": "scrivimi"
+  },
+  {
+   "inizio": 795.53,
+   "fine": 795.81,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "informazioni,",
+   "prima_di": "clicca"
+  },
+  {
+   "inizio": 796.47,
+   "fine": 796.85,
+   "durata": 0.38,
+   "tipo": "interna",
+   "dopo": "sotto,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 800.35,
+   "fine": 800.43,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "'Operator.",
+   "prima_di": "Chiaramente"
+  },
+  {
+   "inizio": 808.59,
+   "fine": 808.73,
+   "durata": 0.13,
+   "tipo": "coda"
+  }
+ ],
+ "volume_medio_dBFS": -20.6,
+ "volume_massimo_dBFS": -0.0,
+ "silenzi_-30dB": [
+  {
+   "inizio": 6.65,
+   "fine": 7.05,
+   "durata": 0.39
+  },
+  {
+   "inizio": 50.27,
+   "fine": 51.42,
+   "durata": 1.15
+  },
+  {
+   "inizio": 146.59,
+   "fine": 147.97,
+   "durata": 1.37
+  },
+  {
+   "inizio": 208.46,
+   "fine": 210.26,
+   "durata": 1.8
+  },
+  {
+   "inizio": 395.22,
+   "fine": 396.36,
+   "durata": 1.15
+  },
+  {
+   "inizio": 396.36,
+   "fine": 396.69,
+   "durata": 0.33
+  },
+  {
+   "inizio": 604.2,
+   "fine": 604.52,
+   "durata": 0.33
+  }
+ ],
+ "silenzi_-40dB": [
+  {
+   "inizio": 6.68,
+   "fine": 7.05,
+   "durata": 0.37
+  },
+  {
+   "inizio": 50.29,
+   "fine": 51.42,
+   "durata": 1.12
+  },
+  {
+   "inizio": 146.76,
+   "fine": 147.95,
+   "durata": 1.19
+  },
+  {
+   "inizio": 208.49,
+   "fine": 210.25,
+   "durata": 1.77
+  },
+  {
+   "inizio": 395.24,
+   "fine": 395.73,
+   "durata": 0.49
+  },
+  {
+   "inizio": 395.73,
+   "fine": 396.36,
+   "durata": 0.63
+  },
+  {
+   "inizio": 396.38,
+   "fine": 396.69,
+   "durata": 0.31
+  }
+ ],
+ "soglia_relativa_dB": -39,
+ "silenzi_soglia_relativa": [
+  {
+   "inizio": 6.68,
+   "fine": 7.05,
+   "durata": 0.37
+  },
+  {
+   "inizio": 50.29,
+   "fine": 51.42,
+   "durata": 1.13
+  },
+  {
+   "inizio": 146.76,
+   "fine": 147.95,
+   "durata": 1.19
+  },
+  {
+   "inizio": 208.49,
+   "fine": 210.25,
+   "durata": 1.77
+  },
+  {
+   "inizio": 395.24,
+   "fine": 395.73,
+   "durata": 0.49
+  },
+  {
+   "inizio": 395.73,
+   "fine": 396.36,
+   "durata": 0.63
+  },
+  {
+   "inizio": 396.38,
+   "fine": 396.69,
+   "durata": 0.32
+  }
+ ],
+ "nota_silenzi": "silencedetect di ffmpeg, durata minima 0,30 s, tre soglie: due assolute (-30 e -40 dBFS) e una relativa a questo audio (volume medio meno 18 dB). Sotto una base musicale continua le soglie assolute possono restituire zero silenzi: e' un dato, non un errore, e per questo c'e' la soglia relativa.",
+ "loudness": {
+  "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
+  "campioni": 8087,
+  "mediana_segmenti_LUFS_M": -21.7,
+  "picco_momentaneo_LUFS_M": -11.1,
+  "picco_a_secondo": 8.7,
+  "sopra_mediana_3LU": [
+   {
+    "i": 2,
+    "inizio": 8.12,
+    "fine": 9.34,
+    "LUFS_M": -15.2,
+    "delta_LU": 6.5,
+    "testo": "E' totale pausa"
+   },
+   {
+    "i": 3,
+    "inizio": 9.34,
+    "fine": 11.44,
+    "LUFS_M": -17.9,
+    "delta_LU": 3.8,
+    "testo": "Assieme disperate dall'implementare le AI"
+   },
+   {
+    "i": 8,
+    "inizio": 23.86,
+    "fine": 26.1,
+    "LUFS_M": -18.6,
+    "delta_LU": 3.1,
+    "testo": "WIFE, King Armageddon"
+   },
+   {
+    "i": 9,
+    "inizio": 26.1,
+    "fine": 27.82,
+    "LUFS_M": -18.5,
+    "delta_LU": 3.2,
+    "testo": "Fermi tutti, fai un respiro"
+   },
+   {
+    "i": 10,
+    "inizio": 27.82,
+    "fine": 30.46,
+    "LUFS_M": -16.3,
+    "delta_LU": 5.4,
+    "testo": "Adesso cambia tutta a tutti, che gli hanno appena lanciati!"
+   }
+  ],
+  "profilo_per_secondo": [
+   {
+    "t": 0.0,
+    "M": -70.0
+   },
+   {
+    "t": 1.0,
+    "M": -18.8
+   },
+   {
+    "t": 2.0,
+    "M": -17.3
+   },
+   {
+    "t": 3.0,
+    "M": -17.6
+   },
+   {
+    "t": 4.0,
+    "M": -17.0
+   },
+   {
+    "t": 5.0,
+    "M": -14.5
+   },
+   {
+    "t": 6.0,
+    "M": -23.3
+   },
+   {
+    "t": 7.0,
+    "M": -32.6
+   },
+   {
+    "t": 8.0,
+    "M": -24.2
+   },
+   {
+    "t": 9.0,
+    "M": -13.1
+   },
+   {
+    "t": 10.0,
+    "M": -18.3
+   },
+   {
+    "t": 11.0,
+    "M": -18.5
+   },
+   {
+    "t": 12.0,
+    "M": -19.1
+   },
+   {
+    "t": 13.0,
+    "M": -20.8
+   },
+   {
+    "t": 14.0,
+    "M": -22.3
+   },
+   {
+    "t": 15.0,
+    "M": -27.7
+   },
+   {
+    "t": 16.0,
+    "M": -20.4
+   },
+   {
+    "t": 17.0,
+    "M": -21.5
+   },
+   {
+    "t": 18.0,
+    "M": -21.6
+   },
+   {
+    "t": 19.0,
+    "M": -24.9
+   },
+   {
+    "t": 20.0,
+    "M": -20.9
+   },
+   {
+    "t": 21.0,
+    "M": -17.1
+   },
+   {
+    "t": 22.0,
+    "M": -18.5
+   },
+   {
+    "t": 23.0,
+    "M": -21.6
+   },
+   {
+    "t": 24.0,
+    "M": -21.4
+   },
+   {
+    "t": 25.0,
+    "M": -18.2
+   },
+   {
+    "t": 26.0,
+    "M": -19.1
+   },
+   {
+    "t": 27.0,
+    "M": -21.5
+   },
+   {
+    "t": 28.0,
+    "M": -17.7
+   },
+   {
+    "t": 29.0,
+    "M": -16.1
+   },
+   {
+    "t": 30.0,
+    "M": -16.4
+   },
+   {
+    "t": 31.0,
+    "M": -34.8
+   },
+   {
+    "t": 32.0,
+    "M": -23.9
+   },
+   {
+    "t": 33.0,
+    "M": -17.4
+   },
+   {
+    "t": 34.0,
+    "M": -19.4
+   },
+   {
+    "t": 35.0,
+    "M": -20.0
+   },
+   {
+    "t": 36.0,
+    "M": -20.4
+   },
+   {
+    "t": 37.0,
+    "M": -22.5
+   },
+   {
+    "t": 38.0,
+    "M": -18.4
+   },
+   {
+    "t": 39.0,
+    "M": -20.3
+   },
+   {
+    "t": 40.0,
+    "M": -20.4
+   },
+   {
+    "t": 41.0,
+    "M": -20.7
+   },
+   {
+    "t": 42.0,
+    "M": -22.0
+   },
+   {
+    "t": 43.0,
+    "M": -18.5
+   },
+   {
+    "t": 44.0,
+    "M": -26.4
+   },
+   {
+    "t": 45.0,
+    "M": -20.1
+   },
+   {
+    "t": 46.0,
+    "M": -19.2
+   },
+   {
+    "t": 47.0,
+    "M": -19.1
+   },
+   {
+    "t": 48.0,
+    "M": -23.9
+   },
+   {
+    "t": 49.0,
+    "M": -23.6
+   },
+   {
+    "t": 50.0,
+    "M": -20.6
+   },
+   {
+    "t": 51.0,
+    "M": -70.0
+   },
+   {
+    "t": 52.0,
+    "M": -24.1
+   },
+   {
+    "t": 53.0,
+    "M": -19.0
+   },
+   {
+    "t": 54.0,
+    "M": -17.9
+   },
+   {
+    "t": 55.0,
+    "M": -35.2
+   },
+   {
+    "t": 56.0,
+    "M": -23.0
+   },
+   {
+    "t": 57.0,
+    "M": -19.6
+   },
+   {
+    "t": 58.0,
+    "M": -20.6
+   },
+   {
+    "t": 59.0,
+    "M": -21.0
+   },
+   {
+    "t": 60.0,
+    "M": -19.8
+   },
+   {
+    "t": 61.0,
+    "M": -22.6
+   },
+   {
+    "t": 62.0,
+    "M": -22.0
+   },
+   {
+    "t": 63.0,
+    "M": -17.8
+   },
+   {
+    "t": 64.0,
+    "M": -22.9
+   },
+   {
+    "t": 65.0,
+    "M": -26.9
+   },
+   {
+    "t": 66.0,
+    "M": -21.0
+   },
+   {
+    "t": 67.0,
+    "M": -22.6
+   },
+   {
+    "t": 68.0,
+    "M": -19.5
+   },
+   {
+    "t": 69.0,
+    "M": -23.6
+   },
+   {
+    "t": 70.0,
+    "M": -19.3
+   },
+   {
+    "t": 71.0,
+    "M": -21.1
+   },
+   {
+    "t": 72.0,
+    "M": -14.3
+   },
+   {
+    "t": 73.0,
+    "M": -17.7
+   },
+   {
+    "t": 74.0,
+    "M": -17.1
+   },
+   {
+    "t": 75.0,
+    "M": -23.8
+   },
+   {
+    "t": 76.0,
+    "M": -21.4
+   },
+   {
+    "t": 77.0,
+    "M": -18.8
+   },
+   {
+    "t": 78.0,
+    "M": -19.2
+   },
+   {
+    "t": 79.0,
+    "M": -20.3
+   },
+   {
+    "t": 80.0,
+    "M": -19.0
+   },
+   {
+    "t": 81.0,
+    "M": -19.6
+   },
+   {
+    "t": 82.0,
+    "M": -18.7
+   },
+   {
+    "t": 83.0,
+    "M": -17.7
+   },
+   {
+    "t": 84.0,
+    "M": -15.6
+   },
+   {
+    "t": 85.0,
+    "M": -27.0
+   },
+   {
+    "t": 86.0,
+    "M": -20.3
+   },
+   {
+    "t": 87.0,
+    "M": -20.8
+   },
+   {
+    "t": 88.0,
+    "M": -18.7
+   },
+   {
+    "t": 89.0,
+    "M": -20.4
+   },
+   {
+    "t": 90.0,
+    "M": -19.7
+   },
+   {
+    "t": 91.0,
+    "M": -20.2
+   },
+   {
+    "t": 92.0,
+    "M": -27.3
+   },
+   {
+    "t": 93.0,
+    "M": -20.7
+   },
+   {
+    "t": 94.0,
+    "M": -20.5
+   },
+   {
+    "t": 95.0,
+    "M": -19.8
+   },
+   {
+    "t": 96.0,
+    "M": -26.4
+   },
+   {
+    "t": 97.0,
+    "M": -22.0
+   },
+   {
+    "t": 98.0,
+    "M": -15.5
+   },
+   {
+    "t": 99.0,
+    "M": -13.9
+   },
+   {
+    "t": 100.0,
+    "M": -19.7
+   },
+   {
+    "t": 101.0,
+    "M": -21.9
+   },
+   {
+    "t": 102.0,
+    "M": -23.7
+   },
+   {
+    "t": 103.0,
+    "M": -20.1
+   },
+   {
+    "t": 104.0,
+    "M": -20.5
+   },
+   {
+    "t": 105.0,
+    "M": -20.6
+   },
+   {
+    "t": 106.0,
+    "M": -22.3
+   },
+   {
+    "t": 107.0,
+    "M": -25.6
+   },
+   {
+    "t": 108.0,
+    "M": -23.0
+   },
+   {
+    "t": 109.0,
+    "M": -21.5
+   },
+   {
+    "t": 110.0,
+    "M": -20.7
+   },
+   {
+    "t": 111.0,
+    "M": -20.3
+   },
+   {
+    "t": 112.0,
+    "M": -20.8
+   },
+   {
+    "t": 113.0,
+    "M": -20.1
+   },
+   {
+    "t": 114.0,
+    "M": -25.4
+   },
+   {
+    "t": 115.0,
+    "M": -17.4
+   },
+   {
+    "t": 116.0,
+    "M": -20.7
+   },
+   {
+    "t": 117.0,
+    "M": -24.0
+   },
+   {
+    "t": 118.0,
+    "M": -19.2
+   },
+   {
+    "t": 119.0,
+    "M": -19.3
+   },
+   {
+    "t": 120.0,
+    "M": -20.4
+   },
+   {
+    "t": 121.0,
+    "M": -21.1
+   },
+   {
+    "t": 122.0,
+    "M": -21.7
+   },
+   {
+    "t": 123.0,
+    "M": -20.2
+   },
+   {
+    "t": 124.0,
+    "M": -21.5
+   },
+   {
+    "t": 125.0,
+    "M": -20.3
+   },
+   {
+    "t": 126.0,
+    "M": -18.8
+   },
+   {
+    "t": 127.0,
+    "M": -23.8
+   },
+   {
+    "t": 128.0,
+    "M": -18.7
+   },
+   {
+    "t": 129.0,
+    "M": -23.2
+   },
+   {
+    "t": 130.0,
+    "M": -20.2
+   },
+   {
+    "t": 131.0,
+    "M": -20.6
+   },
+   {
+    "t": 132.0,
+    "M": -23.8
+   },
+   {
+    "t": 133.0,
+    "M": -22.1
+   },
+   {
+    "t": 134.0,
+    "M": -25.0
+   },
+   {
+    "t": 135.0,
+    "M": -21.9
+   },
+   {
+    "t": 136.0,
+    "M": -27.7
+   },
+   {
+    "t": 137.0,
+    "M": -21.8
+   },
+   {
+    "t": 138.0,
+    "M": -20.9
+   },
+   {
+    "t": 139.0,
+    "M": -24.3
+   },
+   {
+    "t": 140.0,
+    "M": -21.9
+   },
+   {
+    "t": 141.0,
+    "M": -19.5
+   },
+   {
+    "t": 142.0,
+    "M": -24.7
+   },
+   {
+    "t": 143.0,
+    "M": -15.1
+   },
+   {
+    "t": 144.0,
+    "M": -18.9
+   },
+   {
+    "t": 145.0,
+    "M": -19.7
+   },
+   {
+    "t": 146.0,
+    "M": -26.4
+   },
+   {
+    "t": 147.0,
+    "M": -50.7
+   },
+   {
+    "t": 148.0,
+    "M": -23.4
+   },
+   {
+    "t": 149.0,
+    "M": -17.8
+   },
+   {
+    "t": 150.0,
+    "M": -20.4
+   },
+   {
+    "t": 151.0,
+    "M": -19.8
+   },
+   {
+    "t": 152.0,
+    "M": -22.2
+   },
+   {
+    "t": 153.0,
+    "M": -20.4
+   },
+   {
+    "t": 154.0,
+    "M": -21.0
+   },
+   {
+    "t": 155.0,
+    "M": -20.7
+   },
+   {
+    "t": 156.0,
+    "M": -21.8
+   },
+   {
+    "t": 157.0,
+    "M": -22.2
+   },
+   {
+    "t": 158.0,
+    "M": -18.6
+   },
+   {
+    "t": 159.0,
+    "M": -18.7
+   },
+   {
+    "t": 160.0,
+    "M": -25.8
+   },
+   {
+    "t": 161.0,
+    "M": -20.3
+   },
+   {
+    "t": 162.0,
+    "M": -22.3
+   },
+   {
+    "t": 163.0,
+    "M": -19.0
+   },
+   {
+    "t": 164.0,
+    "M": -20.3
+   },
+   {
+    "t": 165.0,
+    "M": -18.6
+   },
+   {
+    "t": 166.0,
+    "M": -21.1
+   },
+   {
+    "t": 167.0,
+    "M": -22.7
+   },
+   {
+    "t": 168.0,
+    "M": -19.2
+   },
+   {
+    "t": 169.0,
+    "M": -21.2
+   },
+   {
+    "t": 170.0,
+    "M": -23.7
+   },
+   {
+    "t": 171.0,
+    "M": -19.2
+   },
+   {
+    "t": 172.0,
+    "M": -16.7
+   },
+   {
+    "t": 173.0,
+    "M": -25.0
+   },
+   {
+    "t": 174.0,
+    "M": -19.0
+   },
+   {
+    "t": 175.0,
+    "M": -22.4
+   },
+   {
+    "t": 176.0,
+    "M": -24.6
+   },
+   {
+    "t": 177.0,
+    "M": -21.1
+   },
+   {
+    "t": 178.0,
+    "M": -17.8
+   },
+   {
+    "t": 179.0,
+    "M": -25.6
+   },
+   {
+    "t": 180.0,
+    "M": -22.5
+   },
+   {
+    "t": 181.0,
+    "M": -20.5
+   },
+   {
+    "t": 182.0,
+    "M": -22.5
+   },
+   {
+    "t": 183.0,
+    "M": -20.5
+   },
+   {
+    "t": 184.0,
+    "M": -21.0
+   },
+   {
+    "t": 185.0,
+    "M": -24.7
+   },
+   {
+    "t": 186.0,
+    "M": -22.2
+   },
+   {
+    "t": 187.0,
+    "M": -21.1
+   },
+   {
+    "t": 188.0,
+    "M": -19.8
+   },
+   {
+    "t": 189.0,
+    "M": -20.5
+   },
+   {
+    "t": 190.0,
+    "M": -22.6
+   },
+   {
+    "t": 191.0,
+    "M": -18.9
+   },
+   {
+    "t": 192.0,
+    "M": -24.3
+   },
+   {
+    "t": 193.0,
+    "M": -17.9
+   },
+   {
+    "t": 194.0,
+    "M": -25.5
+   },
+   {
+    "t": 195.0,
+    "M": -22.0
+   },
+   {
+    "t": 196.0,
+    "M": -17.5
+   },
+   {
+    "t": 197.0,
+    "M": -21.1
+   },
+   {
+    "t": 198.0,
+    "M": -26.0
+   },
+   {
+    "t": 199.0,
+    "M": -21.3
+   },
+   {
+    "t": 200.0,
+    "M": -22.5
+   },
+   {
+    "t": 201.0,
+    "M": -22.9
+   },
+   {
+    "t": 202.0,
+    "M": -22.6
+   },
+   {
+    "t": 203.0,
+    "M": -25.0
+   },
+   {
+    "t": 204.0,
+    "M": -21.8
+   },
+   {
+    "t": 205.0,
+    "M": -21.1
+   },
+   {
+    "t": 206.0,
+    "M": -21.8
+   },
+   {
+    "t": 207.0,
+    "M": -30.1
+   },
+   {
+    "t": 208.0,
+    "M": -18.4
+   },
+   {
+    "t": 209.0,
+    "M": -70.0
+   },
+   {
+    "t": 210.0,
+    "M": -70.0
+   },
+   {
+    "t": 211.0,
+    "M": -20.0
+   },
+   {
+    "t": 212.0,
+    "M": -18.6
+   },
+   {
+    "t": 213.0,
+    "M": -20.3
+   },
+   {
+    "t": 214.0,
+    "M": -26.3
+   },
+   {
+    "t": 215.0,
+    "M": -19.8
+   },
+   {
+    "t": 216.0,
+    "M": -22.6
+   },
+   {
+    "t": 217.0,
+    "M": -20.2
+   },
+   {
+    "t": 218.0,
+    "M": -19.8
+   },
+   {
+    "t": 219.0,
+    "M": -22.1
+   },
+   {
+    "t": 220.0,
+    "M": -20.0
+   },
+   {
+    "t": 221.0,
+    "M": -34.2
+   },
+   {
+    "t": 222.0,
+    "M": -18.4
+   },
+   {
+    "t": 223.0,
+    "M": -20.4
+   },
+   {
+    "t": 224.0,
+    "M": -17.8
+   },
+   {
+    "t": 225.0,
+    "M": -20.6
+   },
+   {
+    "t": 226.0,
+    "M": -23.2
+   },
+   {
+    "t": 227.0,
+    "M": -19.4
+   },
+   {
+    "t": 228.0,
+    "M": -22.2
+   },
+   {
+    "t": 229.0,
+    "M": -20.3
+   },
+   {
+    "t": 230.0,
+    "M": -22.5
+   },
+   {
+    "t": 231.0,
+    "M": -26.8
+   },
+   {
+    "t": 232.0,
+    "M": -20.2
+   },
+   {
+    "t": 233.0,
+    "M": -21.6
+   },
+   {
+    "t": 234.0,
+    "M": -21.9
+   },
+   {
+    "t": 235.0,
+    "M": -18.1
+   },
+   {
+    "t": 236.0,
+    "M": -20.7
+   },
+   {
+    "t": 237.0,
+    "M": -18.6
+   },
+   {
+    "t": 238.0,
+    "M": -24.3
+   },
+   {
+    "t": 239.0,
+    "M": -20.3
+   },
+   {
+    "t": 240.0,
+    "M": -22.5
+   },
+   {
+    "t": 241.0,
+    "M": -25.2
+   },
+   {
+    "t": 242.0,
+    "M": -22.9
+   },
+   {
+    "t": 243.0,
+    "M": -23.1
+   },
+   {
+    "t": 244.0,
+    "M": -29.5
+   },
+   {
+    "t": 245.0,
+    "M": -24.3
+   },
+   {
+    "t": 246.0,
+    "M": -21.0
+   },
+   {
+    "t": 247.0,
+    "M": -24.8
+   },
+   {
+    "t": 248.0,
+    "M": -21.6
+   },
+   {
+    "t": 249.0,
+    "M": -29.0
+   },
+   {
+    "t": 250.0,
+    "M": -20.2
+   },
+   {
+    "t": 251.0,
+    "M": -21.5
+   },
+   {
+    "t": 252.0,
+    "M": -24.2
+   },
+   {
+    "t": 253.0,
+    "M": -21.4
+   },
+   {
+    "t": 254.0,
+    "M": -20.3
+   },
+   {
+    "t": 255.0,
+    "M": -26.2
+   },
+   {
+    "t": 256.0,
+    "M": -22.0
+   },
+   {
+    "t": 257.0,
+    "M": -21.0
+   },
+   {
+    "t": 258.0,
+    "M": -31.2
+   },
+   {
+    "t": 259.0,
+    "M": -21.4
+   },
+   {
+    "t": 260.0,
+    "M": -24.3
+   },
+   {
+    "t": 261.0,
+    "M": -18.8
+   },
+   {
+    "t": 262.0,
+    "M": -21.0
+   },
+   {
+    "t": 263.0,
+    "M": -20.7
+   },
+   {
+    "t": 264.0,
+    "M": -20.7
+   },
+   {
+    "t": 265.0,
+    "M": -20.2
+   },
+   {
+    "t": 266.0,
+    "M": -20.4
+   },
+   {
+    "t": 267.0,
+    "M": -20.2
+   },
+   {
+    "t": 268.0,
+    "M": -19.1
+   },
+   {
+    "t": 269.0,
+    "M": -22.1
+   },
+   {
+    "t": 270.0,
+    "M": -20.3
+   },
+   {
+    "t": 271.0,
+    "M": -21.8
+   },
+   {
+    "t": 272.0,
+    "M": -23.0
+   },
+   {
+    "t": 273.0,
+    "M": -23.6
+   },
+   {
+    "t": 274.0,
+    "M": -17.7
+   },
+   {
+    "t": 275.0,
+    "M": -24.7
+   },
+   {
+    "t": 276.0,
+    "M": -19.3
+   },
+   {
+    "t": 277.0,
+    "M": -18.5
+   },
+   {
+    "t": 278.0,
+    "M": -22.8
+   },
+   {
+    "t": 279.0,
+    "M": -22.7
+   },
+   {
+    "t": 280.0,
+    "M": -21.4
+   },
+   {
+    "t": 281.0,
+    "M": -21.0
+   },
+   {
+    "t": 282.0,
+    "M": -21.2
+   },
+   {
+    "t": 283.0,
+    "M": -22.6
+   },
+   {
+    "t": 284.0,
+    "M": -21.8
+   },
+   {
+    "t": 285.0,
+    "M": -20.6
+   },
+   {
+    "t": 286.0,
+    "M": -22.6
+   },
+   {
+    "t": 287.0,
+    "M": -24.7
+   },
+   {
+    "t": 288.0,
+    "M": -19.2
+   },
+   {
+    "t": 289.0,
+    "M": -23.5
+   },
+   {
+    "t": 290.0,
+    "M": -25.5
+   },
+   {
+    "t": 291.0,
+    "M": -22.2
+   },
+   {
+    "t": 292.0,
+    "M": -19.8
+   },
+   {
+    "t": 293.0,
+    "M": -19.9
+   },
+   {
+    "t": 294.0,
+    "M": -20.3
+   },
+   {
+    "t": 295.0,
+    "M": -21.4
+   },
+   {
+    "t": 296.0,
+    "M": -23.6
+   },
+   {
+    "t": 297.0,
+    "M": -17.6
+   },
+   {
+    "t": 298.0,
+    "M": -21.2
+   },
+   {
+    "t": 299.0,
+    "M": -21.1
+   },
+   {
+    "t": 300.0,
+    "M": -19.2
+   },
+   {
+    "t": 301.0,
+    "M": -20.9
+   },
+   {
+    "t": 302.0,
+    "M": -19.6
+   },
+   {
+    "t": 303.0,
+    "M": -19.3
+   },
+   {
+    "t": 304.0,
+    "M": -20.7
+   },
+   {
+    "t": 305.0,
+    "M": -20.3
+   },
+   {
+    "t": 306.0,
+    "M": -22.1
+   },
+   {
+    "t": 307.0,
+    "M": -25.7
+   },
+   {
+    "t": 308.0,
+    "M": -19.1
+   },
+   {
+    "t": 309.0,
+    "M": -18.8
+   },
+   {
+    "t": 310.0,
+    "M": -27.0
+   },
+   {
+    "t": 311.0,
+    "M": -20.7
+   },
+   {
+    "t": 312.0,
+    "M": -19.7
+   },
+   {
+    "t": 313.0,
+    "M": -19.7
+   },
+   {
+    "t": 314.0,
+    "M": -23.1
+   },
+   {
+    "t": 315.0,
+    "M": -21.1
+   },
+   {
+    "t": 316.0,
+    "M": -20.7
+   },
+   {
+    "t": 317.0,
+    "M": -21.0
+   },
+   {
+    "t": 318.0,
+    "M": -21.5
+   },
+   {
+    "t": 319.0,
+    "M": -21.0
+   },
+   {
+    "t": 320.0,
+    "M": -23.2
+   },
+   {
+    "t": 321.0,
+    "M": -19.0
+   },
+   {
+    "t": 322.0,
+    "M": -25.6
+   },
+   {
+    "t": 323.0,
+    "M": -24.4
+   },
+   {
+    "t": 324.0,
+    "M": -17.9
+   },
+   {
+    "t": 325.0,
+    "M": -23.3
+   },
+   {
+    "t": 326.0,
+    "M": -25.6
+   },
+   {
+    "t": 327.0,
+    "M": -25.7
+   },
+   {
+    "t": 328.0,
+    "M": -20.6
+   },
+   {
+    "t": 329.0,
+    "M": -19.3
+   },
+   {
+    "t": 330.0,
+    "M": -19.6
+   },
+   {
+    "t": 331.0,
+    "M": -21.5
+   },
+   {
+    "t": 332.0,
+    "M": -22.1
+   },
+   {
+    "t": 333.0,
+    "M": -20.7
+   },
+   {
+    "t": 334.0,
+    "M": -24.5
+   },
+   {
+    "t": 335.0,
+    "M": -20.3
+   },
+   {
+    "t": 336.0,
+    "M": -19.1
+   },
+   {
+    "t": 337.0,
+    "M": -21.0
+   },
+   {
+    "t": 338.0,
+    "M": -23.4
+   },
+   {
+    "t": 339.0,
+    "M": -21.1
+   },
+   {
+    "t": 340.0,
+    "M": -29.6
+   },
+   {
+    "t": 341.0,
+    "M": -21.4
+   },
+   {
+    "t": 342.0,
+    "M": -21.0
+   },
+   {
+    "t": 343.0,
+    "M": -21.8
+   },
+   {
+    "t": 344.0,
+    "M": -23.4
+   },
+   {
+    "t": 345.0,
+    "M": -22.1
+   },
+   {
+    "t": 346.0,
+    "M": -19.6
+   },
+   {
+    "t": 347.0,
+    "M": -18.7
+   },
+   {
+    "t": 348.0,
+    "M": -18.5
+   },
+   {
+    "t": 349.0,
+    "M": -22.6
+   },
+   {
+    "t": 350.0,
+    "M": -22.5
+   },
+   {
+    "t": 351.0,
+    "M": -24.7
+   },
+   {
+    "t": 352.0,
+    "M": -17.8
+   },
+   {
+    "t": 353.0,
+    "M": -20.9
+   },
+   {
+    "t": 354.0,
+    "M": -22.8
+   },
+   {
+    "t": 355.0,
+    "M": -25.0
+   },
+   {
+    "t": 356.0,
+    "M": -21.6
+   },
+   {
+    "t": 357.0,
+    "M": -17.8
+   },
+   {
+    "t": 358.0,
+    "M": -21.2
+   },
+   {
+    "t": 359.0,
+    "M": -25.1
+   },
+   {
+    "t": 360.0,
+    "M": -25.2
+   },
+   {
+    "t": 361.0,
+    "M": -17.3
+   },
+   {
+    "t": 362.0,
+    "M": -20.9
+   },
+   {
+    "t": 363.0,
+    "M": -19.8
+   },
+   {
+    "t": 364.0,
+    "M": -21.8
+   },
+   {
+    "t": 365.0,
+    "M": -19.3
+   },
+   {
+    "t": 366.0,
+    "M": -23.1
+   },
+   {
+    "t": 367.0,
+    "M": -22.0
+   },
+   {
+    "t": 368.0,
+    "M": -18.9
+   },
+   {
+    "t": 369.0,
+    "M": -20.0
+   },
+   {
+    "t": 370.0,
+    "M": -18.9
+   },
+   {
+    "t": 371.0,
+    "M": -24.1
+   },
+   {
+    "t": 372.0,
+    "M": -24.3
+   },
+   {
+    "t": 373.0,
+    "M": -22.9
+   },
+   {
+    "t": 374.0,
+    "M": -22.5
+   },
+   {
+    "t": 375.0,
+    "M": -19.9
+   },
+   {
+    "t": 376.0,
+    "M": -31.2
+   },
+   {
+    "t": 377.0,
+    "M": -22.0
+   },
+   {
+    "t": 378.0,
+    "M": -22.6
+   },
+   {
+    "t": 379.0,
+    "M": -28.4
+   },
+   {
+    "t": 380.0,
+    "M": -18.6
+   },
+   {
+    "t": 381.0,
+    "M": -22.0
+   },
+   {
+    "t": 382.0,
+    "M": -22.8
+   },
+   {
+    "t": 383.0,
+    "M": -18.2
+   },
+   {
+    "t": 384.0,
+    "M": -22.7
+   },
+   {
+    "t": 385.0,
+    "M": -20.2
+   },
+   {
+    "t": 386.0,
+    "M": -24.9
+   },
+   {
+    "t": 387.0,
+    "M": -23.1
+   },
+   {
+    "t": 388.0,
+    "M": -17.3
+   },
+   {
+    "t": 389.0,
+    "M": -26.5
+   },
+   {
+    "t": 390.0,
+    "M": -22.4
+   },
+   {
+    "t": 391.0,
+    "M": -31.0
+   },
+   {
+    "t": 392.0,
+    "M": -23.2
+   },
+   {
+    "t": 393.0,
+    "M": -23.2
+   },
+   {
+    "t": 394.0,
+    "M": -19.6
+   },
+   {
+    "t": 395.0,
+    "M": -21.0
+   },
+   {
+    "t": 396.0,
+    "M": -66.0
+   },
+   {
+    "t": 397.0,
+    "M": -27.0
+   },
+   {
+    "t": 398.0,
+    "M": -20.5
+   },
+   {
+    "t": 399.0,
+    "M": -25.3
+   },
+   {
+    "t": 400.0,
+    "M": -17.9
+   },
+   {
+    "t": 401.0,
+    "M": -21.7
+   },
+   {
+    "t": 402.0,
+    "M": -21.8
+   },
+   {
+    "t": 403.0,
+    "M": -19.8
+   },
+   {
+    "t": 404.0,
+    "M": -21.3
+   },
+   {
+    "t": 405.0,
+    "M": -23.8
+   },
+   {
+    "t": 406.0,
+    "M": -26.4
+   },
+   {
+    "t": 407.0,
+    "M": -22.6
+   },
+   {
+    "t": 408.0,
+    "M": -19.6
+   },
+   {
+    "t": 409.0,
+    "M": -20.9
+   },
+   {
+    "t": 410.0,
+    "M": -21.1
+   },
+   {
+    "t": 411.0,
+    "M": -22.8
+   },
+   {
+    "t": 412.0,
+    "M": -20.8
+   },
+   {
+    "t": 413.0,
+    "M": -19.9
+   },
+   {
+    "t": 414.0,
+    "M": -20.1
+   },
+   {
+    "t": 415.0,
+    "M": -20.9
+   },
+   {
+    "t": 416.0,
+    "M": -18.0
+   },
+   {
+    "t": 417.0,
+    "M": -23.1
+   },
+   {
+    "t": 418.0,
+    "M": -20.5
+   },
+   {
+    "t": 419.0,
+    "M": -24.5
+   },
+   {
+    "t": 420.0,
+    "M": -17.3
+   },
+   {
+    "t": 421.0,
+    "M": -20.4
+   },
+   {
+    "t": 422.0,
+    "M": -23.2
+   },
+   {
+    "t": 423.0,
+    "M": -23.3
+   },
+   {
+    "t": 424.0,
+    "M": -20.0
+   },
+   {
+    "t": 425.0,
+    "M": -20.1
+   },
+   {
+    "t": 426.0,
+    "M": -21.2
+   },
+   {
+    "t": 427.0,
+    "M": -21.5
+   },
+   {
+    "t": 428.0,
+    "M": -19.0
+   },
+   {
+    "t": 429.0,
+    "M": -21.5
+   },
+   {
+    "t": 430.0,
+    "M": -20.4
+   },
+   {
+    "t": 431.0,
+    "M": -20.0
+   },
+   {
+    "t": 432.0,
+    "M": -20.0
+   },
+   {
+    "t": 433.0,
+    "M": -22.7
+   },
+   {
+    "t": 434.0,
+    "M": -22.8
+   },
+   {
+    "t": 435.0,
+    "M": -17.9
+   },
+   {
+    "t": 436.0,
+    "M": -21.6
+   },
+   {
+    "t": 437.0,
+    "M": -20.7
+   },
+   {
+    "t": 438.0,
+    "M": -18.8
+   },
+   {
+    "t": 439.0,
+    "M": -23.2
+   },
+   {
+    "t": 440.0,
+    "M": -21.2
+   },
+   {
+    "t": 441.0,
+    "M": -20.6
+   },
+   {
+    "t": 442.0,
+    "M": -25.7
+   },
+   {
+    "t": 443.0,
+    "M": -19.7
+   },
+   {
+    "t": 444.0,
+    "M": -22.8
+   },
+   {
+    "t": 445.0,
+    "M": -25.9
+   },
+   {
+    "t": 446.0,
+    "M": -20.5
+   },
+   {
+    "t": 447.0,
+    "M": -19.7
+   },
+   {
+    "t": 448.0,
+    "M": -16.7
+   },
+   {
+    "t": 449.0,
+    "M": -19.8
+   },
+   {
+    "t": 450.0,
+    "M": -22.2
+   },
+   {
+    "t": 451.0,
+    "M": -21.5
+   },
+   {
+    "t": 452.0,
+    "M": -26.4
+   },
+   {
+    "t": 453.0,
+    "M": -21.8
+   },
+   {
+    "t": 454.0,
+    "M": -21.2
+   },
+   {
+    "t": 455.0,
+    "M": -19.2
+   },
+   {
+    "t": 456.0,
+    "M": -29.6
+   },
+   {
+    "t": 457.0,
+    "M": -27.5
+   },
+   {
+    "t": 458.0,
+    "M": -20.4
+   },
+   {
+    "t": 459.0,
+    "M": -20.5
+   },
+   {
+    "t": 460.0,
+    "M": -19.7
+   },
+   {
+    "t": 461.0,
+    "M": -22.2
+   },
+   {
+    "t": 462.0,
+    "M": -22.8
+   },
+   {
+    "t": 463.0,
+    "M": -20.8
+   },
+   {
+    "t": 464.0,
+    "M": -23.1
+   },
+   {
+    "t": 465.0,
+    "M": -21.3
+   },
+   {
+    "t": 466.0,
+    "M": -26.4
+   },
+   {
+    "t": 467.0,
+    "M": -19.8
+   },
+   {
+    "t": 468.0,
+    "M": -24.7
+   },
+   {
+    "t": 469.0,
+    "M": -18.5
+   },
+   {
+    "t": 470.0,
+    "M": -18.3
+   },
+   {
+    "t": 471.0,
+    "M": -19.4
+   },
+   {
+    "t": 472.0,
+    "M": -20.1
+   },
+   {
+    "t": 473.0,
+    "M": -19.9
+   },
+   {
+    "t": 474.0,
+    "M": -19.8
+   },
+   {
+    "t": 475.0,
+    "M": -21.8
+   },
+   {
+    "t": 476.0,
+    "M": -20.7
+   },
+   {
+    "t": 477.0,
+    "M": -20.0
+   },
+   {
+    "t": 478.0,
+    "M": -21.5
+   },
+   {
+    "t": 479.0,
+    "M": -23.7
+   },
+   {
+    "t": 480.0,
+    "M": -20.1
+   },
+   {
+    "t": 481.0,
+    "M": -26.5
+   },
+   {
+    "t": 482.0,
+    "M": -20.6
+   },
+   {
+    "t": 483.0,
+    "M": -23.8
+   },
+   {
+    "t": 484.0,
+    "M": -19.0
+   },
+   {
+    "t": 485.0,
+    "M": -24.0
+   },
+   {
+    "t": 486.0,
+    "M": -20.2
+   },
+   {
+    "t": 487.0,
+    "M": -23.4
+   },
+   {
+    "t": 488.0,
+    "M": -17.9
+   },
+   {
+    "t": 489.0,
+    "M": -20.0
+   },
+   {
+    "t": 490.0,
+    "M": -24.3
+   },
+   {
+    "t": 491.0,
+    "M": -25.2
+   },
+   {
+    "t": 492.0,
+    "M": -20.3
+   },
+   {
+    "t": 493.0,
+    "M": -21.9
+   },
+   {
+    "t": 494.0,
+    "M": -22.1
+   },
+   {
+    "t": 495.0,
+    "M": -19.9
+   },
+   {
+    "t": 496.0,
+    "M": -21.3
+   },
+   {
+    "t": 497.0,
+    "M": -20.7
+   },
+   {
+    "t": 498.0,
+    "M": -26.1
+   },
+   {
+    "t": 499.0,
+    "M": -19.5
+   },
+   {
+    "t": 500.0,
+    "M": -21.0
+   },
+   {
+    "t": 501.0,
+    "M": -22.1
+   },
+   {
+    "t": 502.0,
+    "M": -18.7
+   },
+   {
+    "t": 503.0,
+    "M": -26.7
+   },
+   {
+    "t": 504.0,
+    "M": -18.1
+   },
+   {
+    "t": 505.0,
+    "M": -22.3
+   },
+   {
+    "t": 506.0,
+    "M": -23.8
+   },
+   {
+    "t": 507.0,
+    "M": -21.1
+   },
+   {
+    "t": 508.0,
+    "M": -19.1
+   },
+   {
+    "t": 509.0,
+    "M": -21.1
+   },
+   {
+    "t": 510.0,
+    "M": -24.9
+   },
+   {
+    "t": 511.0,
+    "M": -23.1
+   },
+   {
+    "t": 512.0,
+    "M": -20.4
+   },
+   {
+    "t": 513.0,
+    "M": -20.8
+   },
+   {
+    "t": 514.0,
+    "M": -18.9
+   },
+   {
+    "t": 515.0,
+    "M": -19.8
+   },
+   {
+    "t": 516.0,
+    "M": -24.3
+   },
+   {
+    "t": 517.0,
+    "M": -24.5
+   },
+   {
+    "t": 518.0,
+    "M": -22.3
+   },
+   {
+    "t": 519.0,
+    "M": -28.7
+   },
+   {
+    "t": 520.0,
+    "M": -26.7
+   },
+   {
+    "t": 521.0,
+    "M": -18.4
+   },
+   {
+    "t": 522.0,
+    "M": -18.7
+   },
+   {
+    "t": 523.0,
+    "M": -23.3
+   },
+   {
+    "t": 524.0,
+    "M": -25.0
+   },
+   {
+    "t": 525.0,
+    "M": -20.7
+   },
+   {
+    "t": 526.0,
+    "M": -22.0
+   },
+   {
+    "t": 527.0,
+    "M": -19.9
+   },
+   {
+    "t": 528.0,
+    "M": -27.8
+   },
+   {
+    "t": 529.0,
+    "M": -19.2
+   },
+   {
+    "t": 530.0,
+    "M": -25.1
+   },
+   {
+    "t": 531.0,
+    "M": -24.6
+   },
+   {
+    "t": 532.0,
+    "M": -19.7
+   },
+   {
+    "t": 533.0,
+    "M": -21.7
+   },
+   {
+    "t": 534.0,
+    "M": -22.9
+   },
+   {
+    "t": 535.0,
+    "M": -29.2
+   },
+   {
+    "t": 536.0,
+    "M": -19.6
+   },
+   {
+    "t": 537.0,
+    "M": -21.8
+   },
+   {
+    "t": 538.0,
+    "M": -21.6
+   },
+   {
+    "t": 539.0,
+    "M": -24.2
+   },
+   {
+    "t": 540.0,
+    "M": -24.0
+   },
+   {
+    "t": 541.0,
+    "M": -22.7
+   },
+   {
+    "t": 542.0,
+    "M": -20.8
+   },
+   {
+    "t": 543.0,
+    "M": -20.4
+   },
+   {
+    "t": 544.0,
+    "M": -24.2
+   },
+   {
+    "t": 545.0,
+    "M": -18.1
+   },
+   {
+    "t": 546.0,
+    "M": -20.4
+   },
+   {
+    "t": 547.0,
+    "M": -20.9
+   },
+   {
+    "t": 548.0,
+    "M": -24.3
+   },
+   {
+    "t": 549.0,
+    "M": -29.6
+   },
+   {
+    "t": 550.0,
+    "M": -21.4
+   },
+   {
+    "t": 551.0,
+    "M": -21.9
+   },
+   {
+    "t": 552.0,
+    "M": -19.3
+   },
+   {
+    "t": 553.0,
+    "M": -27.5
+   },
+   {
+    "t": 554.0,
+    "M": -19.3
+   },
+   {
+    "t": 555.0,
+    "M": -29.4
+   },
+   {
+    "t": 556.0,
+    "M": -19.9
+   },
+   {
+    "t": 557.0,
+    "M": -20.8
+   },
+   {
+    "t": 558.0,
+    "M": -21.6
+   },
+   {
+    "t": 559.0,
+    "M": -25.3
+   },
+   {
+    "t": 560.0,
+    "M": -25.5
+   },
+   {
+    "t": 561.0,
+    "M": -20.7
+   },
+   {
+    "t": 562.0,
+    "M": -21.6
+   },
+   {
+    "t": 563.0,
+    "M": -20.9
+   },
+   {
+    "t": 564.0,
+    "M": -18.6
+   },
+   {
+    "t": 565.0,
+    "M": -21.2
+   },
+   {
+    "t": 566.0,
+    "M": -23.3
+   },
+   {
+    "t": 567.0,
+    "M": -25.1
+   },
+   {
+    "t": 568.0,
+    "M": -22.7
+   },
+   {
+    "t": 569.0,
+    "M": -18.8
+   },
+   {
+    "t": 570.0,
+    "M": -21.8
+   },
+   {
+    "t": 571.0,
+    "M": -19.2
+   },
+   {
+    "t": 572.0,
+    "M": -19.8
+   },
+   {
+    "t": 573.0,
+    "M": -20.8
+   },
+   {
+    "t": 574.0,
+    "M": -22.4
+   },
+   {
+    "t": 575.0,
+    "M": -18.6
+   },
+   {
+    "t": 576.0,
+    "M": -21.0
+   },
+   {
+    "t": 577.0,
+    "M": -20.9
+   },
+   {
+    "t": 578.0,
+    "M": -21.3
+   },
+   {
+    "t": 579.0,
+    "M": -27.1
+   },
+   {
+    "t": 580.0,
+    "M": -20.9
+   },
+   {
+    "t": 581.0,
+    "M": -20.8
+   },
+   {
+    "t": 582.0,
+    "M": -22.9
+   },
+   {
+    "t": 583.0,
+    "M": -22.3
+   },
+   {
+    "t": 584.0,
+    "M": -27.5
+   },
+   {
+    "t": 585.0,
+    "M": -22.8
+   },
+   {
+    "t": 586.0,
+    "M": -19.8
+   },
+   {
+    "t": 587.0,
+    "M": -20.2
+   },
+   {
+    "t": 588.0,
+    "M": -22.0
+   },
+   {
+    "t": 589.0,
+    "M": -29.1
+   },
+   {
+    "t": 590.0,
+    "M": -22.5
+   },
+   {
+    "t": 591.0,
+    "M": -20.5
+   },
+   {
+    "t": 592.0,
+    "M": -31.2
+   },
+   {
+    "t": 593.0,
+    "M": -26.1
+   },
+   {
+    "t": 594.0,
+    "M": -21.2
+   },
+   {
+    "t": 595.0,
+    "M": -26.9
+   },
+   {
+    "t": 596.0,
+    "M": -17.9
+   },
+   {
+    "t": 597.0,
+    "M": -23.6
+   },
+   {
+    "t": 598.0,
+    "M": -21.4
+   },
+   {
+    "t": 599.0,
+    "M": -22.1
+   },
+   {
+    "t": 600.0,
+    "M": -21.2
+   },
+   {
+    "t": 601.0,
+    "M": -21.3
+   },
+   {
+    "t": 602.0,
+    "M": -20.9
+   },
+   {
+    "t": 603.0,
+    "M": -22.0
+   },
+   {
+    "t": 604.0,
+    "M": -27.0
+   },
+   {
+    "t": 605.0,
+    "M": -25.6
+   },
+   {
+    "t": 606.0,
+    "M": -19.8
+   },
+   {
+    "t": 607.0,
+    "M": -24.9
+   },
+   {
+    "t": 608.0,
+    "M": -20.6
+   },
+   {
+    "t": 609.0,
+    "M": -22.3
+   },
+   {
+    "t": 610.0,
+    "M": -31.3
+   },
+   {
+    "t": 611.0,
+    "M": -19.8
+   },
+   {
+    "t": 612.0,
+    "M": -23.8
+   },
+   {
+    "t": 613.0,
+    "M": -23.0
+   },
+   {
+    "t": 614.0,
+    "M": -20.2
+   },
+   {
+    "t": 615.0,
+    "M": -21.6
+   },
+   {
+    "t": 616.0,
+    "M": -24.0
+   },
+   {
+    "t": 617.0,
+    "M": -23.1
+   },
+   {
+    "t": 618.0,
+    "M": -23.5
+   },
+   {
+    "t": 619.0,
+    "M": -23.5
+   },
+   {
+    "t": 620.0,
+    "M": -21.0
+   },
+   {
+    "t": 621.0,
+    "M": -20.7
+   },
+   {
+    "t": 622.0,
+    "M": -19.6
+   },
+   {
+    "t": 623.0,
+    "M": -23.2
+   },
+   {
+    "t": 624.0,
+    "M": -20.7
+   },
+   {
+    "t": 625.0,
+    "M": -20.9
+   },
+   {
+    "t": 626.0,
+    "M": -21.0
+   },
+   {
+    "t": 627.0,
+    "M": -29.8
+   },
+   {
+    "t": 628.0,
+    "M": -18.1
+   },
+   {
+    "t": 629.0,
+    "M": -18.0
+   },
+   {
+    "t": 630.0,
+    "M": -25.4
+   },
+   {
+    "t": 631.0,
+    "M": -23.4
+   },
+   {
+    "t": 632.0,
+    "M": -17.1
+   },
+   {
+    "t": 633.0,
+    "M": -18.3
+   },
+   {
+    "t": 634.0,
+    "M": -21.2
+   },
+   {
+    "t": 635.0,
+    "M": -20.3
+   },
+   {
+    "t": 636.0,
+    "M": -20.4
+   },
+   {
+    "t": 637.0,
+    "M": -23.8
+   },
+   {
+    "t": 638.0,
+    "M": -18.9
+   },
+   {
+    "t": 639.0,
+    "M": -22.7
+   },
+   {
+    "t": 640.0,
+    "M": -19.4
+   },
+   {
+    "t": 641.0,
+    "M": -20.6
+   },
+   {
+    "t": 642.0,
+    "M": -20.2
+   },
+   {
+    "t": 643.0,
+    "M": -22.1
+   },
+   {
+    "t": 644.0,
+    "M": -23.6
+   },
+   {
+    "t": 645.0,
+    "M": -19.8
+   },
+   {
+    "t": 646.0,
+    "M": -21.6
+   },
+   {
+    "t": 647.0,
+    "M": -21.5
+   },
+   {
+    "t": 648.0,
+    "M": -24.3
+   },
+   {
+    "t": 649.0,
+    "M": -22.4
+   },
+   {
+    "t": 650.0,
+    "M": -20.8
+   },
+   {
+    "t": 651.0,
+    "M": -23.7
+   },
+   {
+    "t": 652.0,
+    "M": -24.6
+   },
+   {
+    "t": 653.0,
+    "M": -18.0
+   },
+   {
+    "t": 654.0,
+    "M": -21.6
+   },
+   {
+    "t": 655.0,
+    "M": -19.5
+   },
+   {
+    "t": 656.0,
+    "M": -20.4
+   },
+   {
+    "t": 657.0,
+    "M": -19.8
+   },
+   {
+    "t": 658.0,
+    "M": -24.5
+   },
+   {
+    "t": 659.0,
+    "M": -18.9
+   },
+   {
+    "t": 660.0,
+    "M": -19.8
+   },
+   {
+    "t": 661.0,
+    "M": -20.8
+   },
+   {
+    "t": 662.0,
+    "M": -19.9
+   },
+   {
+    "t": 663.0,
+    "M": -21.8
+   },
+   {
+    "t": 664.0,
+    "M": -23.1
+   },
+   {
+    "t": 665.0,
+    "M": -23.0
+   },
+   {
+    "t": 666.0,
+    "M": -18.3
+   },
+   {
+    "t": 667.0,
+    "M": -22.1
+   },
+   {
+    "t": 668.0,
+    "M": -19.3
+   },
+   {
+    "t": 669.0,
+    "M": -21.8
+   },
+   {
+    "t": 670.0,
+    "M": -24.9
+   },
+   {
+    "t": 671.0,
+    "M": -19.4
+   },
+   {
+    "t": 672.0,
+    "M": -21.6
+   },
+   {
+    "t": 673.0,
+    "M": -18.3
+   },
+   {
+    "t": 674.0,
+    "M": -21.4
+   },
+   {
+    "t": 675.0,
+    "M": -22.8
+   },
+   {
+    "t": 676.0,
+    "M": -23.3
+   },
+   {
+    "t": 677.0,
+    "M": -20.9
+   },
+   {
+    "t": 678.0,
+    "M": -17.5
+   },
+   {
+    "t": 679.0,
+    "M": -21.3
+   },
+   {
+    "t": 680.0,
+    "M": -19.0
+   },
+   {
+    "t": 681.0,
+    "M": -21.4
+   },
+   {
+    "t": 682.0,
+    "M": -22.7
+   },
+   {
+    "t": 683.0,
+    "M": -19.0
+   },
+   {
+    "t": 684.0,
+    "M": -18.8
+   },
+   {
+    "t": 685.0,
+    "M": -21.5
+   },
+   {
+    "t": 686.0,
+    "M": -25.3
+   },
+   {
+    "t": 687.0,
+    "M": -19.3
+   },
+   {
+    "t": 688.0,
+    "M": -26.2
+   },
+   {
+    "t": 689.0,
+    "M": -22.3
+   },
+   {
+    "t": 690.0,
+    "M": -19.4
+   },
+   {
+    "t": 691.0,
+    "M": -22.1
+   },
+   {
+    "t": 692.0,
+    "M": -25.9
+   },
+   {
+    "t": 693.0,
+    "M": -22.5
+   },
+   {
+    "t": 694.0,
+    "M": -23.7
+   },
+   {
+    "t": 695.0,
+    "M": -19.8
+   },
+   {
+    "t": 696.0,
+    "M": -19.6
+   },
+   {
+    "t": 697.0,
+    "M": -18.5
+   },
+   {
+    "t": 698.0,
+    "M": -20.5
+   },
+   {
+    "t": 699.0,
+    "M": -19.4
+   },
+   {
+    "t": 700.0,
+    "M": -20.7
+   },
+   {
+    "t": 701.0,
+    "M": -25.8
+   },
+   {
+    "t": 702.0,
+    "M": -23.7
+   },
+   {
+    "t": 703.0,
+    "M": -19.8
+   },
+   {
+    "t": 704.0,
+    "M": -19.3
+   },
+   {
+    "t": 705.0,
+    "M": -22.3
+   },
+   {
+    "t": 706.0,
+    "M": -19.9
+   },
+   {
+    "t": 707.0,
+    "M": -25.0
+   },
+   {
+    "t": 708.0,
+    "M": -19.2
+   },
+   {
+    "t": 709.0,
+    "M": -22.6
+   },
+   {
+    "t": 710.0,
+    "M": -20.1
+   },
+   {
+    "t": 711.0,
+    "M": -23.8
+   },
+   {
+    "t": 712.0,
+    "M": -22.6
+   },
+   {
+    "t": 713.0,
+    "M": -20.5
+   },
+   {
+    "t": 714.0,
+    "M": -18.2
+   },
+   {
+    "t": 715.0,
+    "M": -21.9
+   },
+   {
+    "t": 716.0,
+    "M": -30.2
+   },
+   {
+    "t": 717.0,
+    "M": -22.8
+   },
+   {
+    "t": 718.0,
+    "M": -28.2
+   },
+   {
+    "t": 719.0,
+    "M": -21.3
+   },
+   {
+    "t": 720.0,
+    "M": -27.2
+   },
+   {
+    "t": 721.0,
+    "M": -21.2
+   },
+   {
+    "t": 722.0,
+    "M": -21.3
+   },
+   {
+    "t": 723.0,
+    "M": -25.2
+   },
+   {
+    "t": 724.0,
+    "M": -19.9
+   },
+   {
+    "t": 725.0,
+    "M": -24.5
+   },
+   {
+    "t": 726.0,
+    "M": -21.9
+   },
+   {
+    "t": 727.0,
+    "M": -23.2
+   },
+   {
+    "t": 728.0,
+    "M": -20.4
+   },
+   {
+    "t": 729.0,
+    "M": -25.0
+   },
+   {
+    "t": 730.0,
+    "M": -20.9
+   },
+   {
+    "t": 731.0,
+    "M": -18.6
+   },
+   {
+    "t": 732.0,
+    "M": -19.4
+   },
+   {
+    "t": 733.0,
+    "M": -20.4
+   },
+   {
+    "t": 734.0,
+    "M": -23.3
+   },
+   {
+    "t": 735.0,
+    "M": -22.8
+   },
+   {
+    "t": 736.0,
+    "M": -18.3
+   },
+   {
+    "t": 737.0,
+    "M": -21.5
+   },
+   {
+    "t": 738.0,
+    "M": -25.8
+   },
+   {
+    "t": 739.0,
+    "M": -17.5
+   },
+   {
+    "t": 740.0,
+    "M": -22.9
+   },
+   {
+    "t": 741.0,
+    "M": -24.0
+   },
+   {
+    "t": 742.0,
+    "M": -22.9
+   },
+   {
+    "t": 743.0,
+    "M": -18.6
+   },
+   {
+    "t": 744.0,
+    "M": -23.8
+   },
+   {
+    "t": 745.0,
+    "M": -17.8
+   },
+   {
+    "t": 746.0,
+    "M": -22.4
+   },
+   {
+    "t": 747.0,
+    "M": -23.3
+   },
+   {
+    "t": 748.0,
+    "M": -19.2
+   },
+   {
+    "t": 749.0,
+    "M": -24.1
+   },
+   {
+    "t": 750.0,
+    "M": -21.9
+   },
+   {
+    "t": 751.0,
+    "M": -21.5
+   },
+   {
+    "t": 752.0,
+    "M": -18.3
+   },
+   {
+    "t": 753.0,
+    "M": -24.3
+   },
+   {
+    "t": 754.0,
+    "M": -19.0
+   },
+   {
+    "t": 755.0,
+    "M": -22.1
+   },
+   {
+    "t": 756.0,
+    "M": -22.4
+   },
+   {
+    "t": 757.0,
+    "M": -22.1
+   },
+   {
+    "t": 758.0,
+    "M": -19.0
+   },
+   {
+    "t": 759.0,
+    "M": -21.5
+   },
+   {
+    "t": 760.0,
+    "M": -24.7
+   },
+   {
+    "t": 761.0,
+    "M": -23.8
+   },
+   {
+    "t": 762.0,
+    "M": -29.7
+   },
+   {
+    "t": 763.0,
+    "M": -21.1
+   },
+   {
+    "t": 764.0,
+    "M": -20.6
+   },
+   {
+    "t": 765.0,
+    "M": -23.0
+   },
+   {
+    "t": 766.0,
+    "M": -19.7
+   },
+   {
+    "t": 767.0,
+    "M": -24.1
+   },
+   {
+    "t": 768.0,
+    "M": -22.7
+   },
+   {
+    "t": 769.0,
+    "M": -25.1
+   },
+   {
+    "t": 770.0,
+    "M": -19.9
+   },
+   {
+    "t": 771.0,
+    "M": -22.2
+   },
+   {
+    "t": 772.0,
+    "M": -21.6
+   },
+   {
+    "t": 773.0,
+    "M": -22.6
+   },
+   {
+    "t": 774.0,
+    "M": -21.0
+   },
+   {
+    "t": 775.0,
+    "M": -22.3
+   },
+   {
+    "t": 776.0,
+    "M": -21.1
+   },
+   {
+    "t": 777.0,
+    "M": -21.6
+   },
+   {
+    "t": 778.0,
+    "M": -19.2
+   },
+   {
+    "t": 779.0,
+    "M": -22.4
+   },
+   {
+    "t": 780.0,
+    "M": -23.8
+   },
+   {
+    "t": 781.0,
+    "M": -17.5
+   },
+   {
+    "t": 782.0,
+    "M": -21.8
+   },
+   {
+    "t": 783.0,
+    "M": -21.3
+   },
+   {
+    "t": 784.0,
+    "M": -29.8
+   },
+   {
+    "t": 785.0,
+    "M": -17.5
+   },
+   {
+    "t": 786.0,
+    "M": -18.9
+   },
+   {
+    "t": 787.0,
+    "M": -21.8
+   },
+   {
+    "t": 788.0,
+    "M": -25.5
+   },
+   {
+    "t": 789.0,
+    "M": -28.2
+   },
+   {
+    "t": 790.0,
+    "M": -17.2
+   },
+   {
+    "t": 791.0,
+    "M": -19.6
+   },
+   {
+    "t": 792.0,
+    "M": -23.3
+   },
+   {
+    "t": 793.0,
+    "M": -20.3
+   },
+   {
+    "t": 794.0,
+    "M": -20.7
+   },
+   {
+    "t": 795.0,
+    "M": -25.1
+   },
+   {
+    "t": 796.0,
+    "M": -19.9
+   },
+   {
+    "t": 797.0,
+    "M": -25.9
+   },
+   {
+    "t": 798.0,
+    "M": -20.0
+   },
+   {
+    "t": 799.0,
+    "M": -20.1
+   },
+   {
+    "t": 800.0,
+    "M": -22.1
+   },
+   {
+    "t": 801.0,
+    "M": -19.3
+   },
+   {
+    "t": 802.0,
+    "M": -25.0
+   },
+   {
+    "t": 803.0,
+    "M": -18.7
+   },
+   {
+    "t": 804.0,
+    "M": -20.1
+   },
+   {
+    "t": 805.0,
+    "M": -24.6
+   },
+   {
+    "t": 806.0,
+    "M": -17.8
+   },
+   {
+    "t": 807.0,
+    "M": -17.8
+   },
+   {
+    "t": 808.0,
+    "M": -23.4
+   }
+  ]
+ }
+}

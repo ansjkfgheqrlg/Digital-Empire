@@ -1,0 +1,1714 @@
+{
+ "slug": "arma-outemail-secondo",
+ "strumento": "faster-whisper small, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "lingua": "it",
+ "lingua_probabilita": 1,
+ "durata_video_s": 106.35,
+ "segmenti": [
+  {
+   "i": 0,
+   "inizio": 0.0,
+   "fine": 5.78,
+   "durata": 5.78,
+   "testo": "Chi sei, esattamente, un marketer, imprenditore, copywriter, chiunque tu sia, se scrivi email",
+   "parole": [
+    {
+     "p": "Chi",
+     "inizio": 0.0,
+     "fine": 0.12
+    },
+    {
+     "p": "sei,",
+     "inizio": 0.12,
+     "fine": 0.52
+    },
+    {
+     "p": "esattamente,",
+     "inizio": 0.78,
+     "fine": 1.48
+    },
+    {
+     "p": "un",
+     "inizio": 1.66,
+     "fine": 1.78
+    },
+    {
+     "p": "marketer,",
+     "inizio": 1.78,
+     "fine": 2.42
+    },
+    {
+     "p": "imprenditore,",
+     "inizio": 2.48,
+     "fine": 3.14
+    },
+    {
+     "p": "copywriter,",
+     "inizio": 3.52,
+     "fine": 3.92
+    },
+    {
+     "p": "chiunque",
+     "inizio": 4.18,
+     "fine": 4.38
+    },
+    {
+     "p": "tu",
+     "inizio": 4.38,
+     "fine": 4.52
+    },
+    {
+     "p": "sia,",
+     "inizio": 4.52,
+     "fine": 4.76
+    },
+    {
+     "p": "se",
+     "inizio": 5.14,
+     "fine": 5.22
+    },
+    {
+     "p": "scrivi",
+     "inizio": 5.22,
+     "fine": 5.52
+    },
+    {
+     "p": "email",
+     "inizio": 5.52,
+     "fine": 5.78
+    }
+   ],
+   "loudness_M_media": -27.4
+  },
+  {
+   "i": 1,
+   "inizio": 5.78,
+   "fine": 10.26,
+   "durata": 4.48,
+   "testo": "devi scrivere le strategiche. Non fidarti di me, fidati dei numeri. Le aziende che prendono",
+   "parole": [
+    {
+     "p": "devi",
+     "inizio": 5.78,
+     "fine": 6.14
+    },
+    {
+     "p": "scrivere",
+     "inizio": 6.14,
+     "fine": 6.48
+    },
+    {
+     "p": "le",
+     "inizio": 6.48,
+     "fine": 6.66
+    },
+    {
+     "p": "strategiche.",
+     "inizio": 6.66,
+     "fine": 7.32
+    },
+    {
+     "p": "Non",
+     "inizio": 7.46,
+     "fine": 7.6
+    },
+    {
+     "p": "fidarti",
+     "inizio": 7.6,
+     "fine": 7.92
+    },
+    {
+     "p": "di",
+     "inizio": 7.92,
+     "fine": 8.12
+    },
+    {
+     "p": "me,",
+     "inizio": 8.12,
+     "fine": 8.22
+    },
+    {
+     "p": "fidati",
+     "inizio": 8.38,
+     "fine": 8.68
+    },
+    {
+     "p": "dei",
+     "inizio": 8.68,
+     "fine": 8.92
+    },
+    {
+     "p": "numeri.",
+     "inizio": 8.92,
+     "fine": 9.32
+    },
+    {
+     "p": "Le",
+     "inizio": 9.44,
+     "fine": 9.46
+    },
+    {
+     "p": "aziende",
+     "inizio": 9.46,
+     "fine": 9.7
+    },
+    {
+     "p": "che",
+     "inizio": 9.7,
+     "fine": 9.88
+    },
+    {
+     "p": "prendono",
+     "inizio": 9.88,
+     "fine": 10.26
+    }
+   ],
+   "loudness_M_media": -24.6
+  },
+  {
+   "i": 2,
+   "inizio": 10.26,
+   "fine": 16.46,
+   "durata": 6.2,
+   "testo": "decisioni basate e solidati vedono un roi più alto fino a 5-8 volte più alto.",
+   "parole": [
+    {
+     "p": "decisioni",
+     "inizio": 10.26,
+     "fine": 10.72
+    },
+    {
+     "p": "basate",
+     "inizio": 10.72,
+     "fine": 11.28
+    },
+    {
+     "p": "e",
+     "inizio": 11.28,
+     "fine": 11.5
+    },
+    {
+     "p": "solidati",
+     "inizio": 11.5,
+     "fine": 12.04
+    },
+    {
+     "p": "vedono",
+     "inizio": 12.04,
+     "fine": 12.52
+    },
+    {
+     "p": "un",
+     "inizio": 12.52,
+     "fine": 12.66
+    },
+    {
+     "p": "roi",
+     "inizio": 12.66,
+     "fine": 12.94
+    },
+    {
+     "p": "più",
+     "inizio": 12.94,
+     "fine": 13.08
+    },
+    {
+     "p": "alto",
+     "inizio": 13.08,
+     "fine": 13.44
+    },
+    {
+     "p": "fino",
+     "inizio": 13.44,
+     "fine": 13.7
+    },
+    {
+     "p": "a",
+     "inizio": 13.7,
+     "fine": 13.86
+    },
+    {
+     "p": "5",
+     "inizio": 13.86,
+     "fine": 14.28
+    },
+    {
+     "p": "-8",
+     "inizio": 14.28,
+     "fine": 15.12
+    },
+    {
+     "p": "volte",
+     "inizio": 15.12,
+     "fine": 15.52
+    },
+    {
+     "p": "più",
+     "inizio": 15.52,
+     "fine": 16.06
+    },
+    {
+     "p": "alto.",
+     "inizio": 16.06,
+     "fine": 16.46
+    }
+   ],
+   "loudness_M_media": -23.1
+  },
+  {
+   "i": 3,
+   "inizio": 16.58,
+   "fine": 20.64,
+   "durata": 4.06,
+   "testo": "Ma cosa significa fare il mail marketing strategico? Te lo spiego con un esempio.",
+   "parole": [
+    {
+     "p": "Ma",
+     "inizio": 16.58,
+     "fine": 16.64
+    },
+    {
+     "p": "cosa",
+     "inizio": 16.64,
+     "fine": 16.78
+    },
+    {
+     "p": "significa",
+     "inizio": 16.78,
+     "fine": 17.36
+    },
+    {
+     "p": "fare",
+     "inizio": 17.36,
+     "fine": 18.08
+    },
+    {
+     "p": "il",
+     "inizio": 18.08,
+     "fine": 18.28
+    },
+    {
+     "p": "mail",
+     "inizio": 18.28,
+     "fine": 18.3
+    },
+    {
+     "p": "marketing",
+     "inizio": 18.3,
+     "fine": 18.62
+    },
+    {
+     "p": "strategico?",
+     "inizio": 18.62,
+     "fine": 19.42
+    },
+    {
+     "p": "Te",
+     "inizio": 19.62,
+     "fine": 19.68
+    },
+    {
+     "p": "lo",
+     "inizio": 19.68,
+     "fine": 19.74
+    },
+    {
+     "p": "spiego",
+     "inizio": 19.74,
+     "fine": 20.0
+    },
+    {
+     "p": "con",
+     "inizio": 20.0,
+     "fine": 20.22
+    },
+    {
+     "p": "un",
+     "inizio": 20.22,
+     "fine": 20.32
+    },
+    {
+     "p": "esempio.",
+     "inizio": 20.32,
+     "fine": 20.64
+    }
+   ],
+   "loudness_M_media": -23.6
+  },
+  {
+   "i": 4,
+   "inizio": 20.92,
+   "fine": 25.46,
+   "durata": 4.54,
+   "testo": "Austo è un imprenditore. Ha assunto Antonio per farsi scrivere le mail di marketing",
+   "parole": [
+    {
+     "p": "Austo",
+     "inizio": 20.92,
+     "fine": 21.22
+    },
+    {
+     "p": "è",
+     "inizio": 21.22,
+     "fine": 21.58
+    },
+    {
+     "p": "un",
+     "inizio": 21.58,
+     "fine": 21.66
+    },
+    {
+     "p": "imprenditore.",
+     "inizio": 21.66,
+     "fine": 22.24
+    },
+    {
+     "p": "Ha",
+     "inizio": 22.56,
+     "fine": 22.62
+    },
+    {
+     "p": "assunto",
+     "inizio": 22.62,
+     "fine": 22.94
+    },
+    {
+     "p": "Antonio",
+     "inizio": 22.94,
+     "fine": 23.68
+    },
+    {
+     "p": "per",
+     "inizio": 23.68,
+     "fine": 23.98
+    },
+    {
+     "p": "farsi",
+     "inizio": 23.98,
+     "fine": 24.28
+    },
+    {
+     "p": "scrivere",
+     "inizio": 24.28,
+     "fine": 24.64
+    },
+    {
+     "p": "le",
+     "inizio": 24.64,
+     "fine": 24.8
+    },
+    {
+     "p": "mail",
+     "inizio": 24.8,
+     "fine": 24.94
+    },
+    {
+     "p": "di",
+     "inizio": 24.94,
+     "fine": 25.06
+    },
+    {
+     "p": "marketing",
+     "inizio": 25.06,
+     "fine": 25.46
+    }
+   ],
+   "loudness_M_media": -24.6
+  },
+  {
+   "i": 5,
+   "inizio": 25.46,
+   "fine": 28.18,
+   "durata": 2.72,
+   "testo": "da lui. Antonio deve scrivere un flusso di 10 email.",
+   "parole": [
+    {
+     "p": "da",
+     "inizio": 25.46,
+     "fine": 25.66
+    },
+    {
+     "p": "lui.",
+     "inizio": 25.66,
+     "fine": 25.84
+    },
+    {
+     "p": "Antonio",
+     "inizio": 26.0,
+     "fine": 26.36
+    },
+    {
+     "p": "deve",
+     "inizio": 26.36,
+     "fine": 26.62
+    },
+    {
+     "p": "scrivere",
+     "inizio": 26.62,
+     "fine": 26.9
+    },
+    {
+     "p": "un",
+     "inizio": 26.9,
+     "fine": 27.04
+    },
+    {
+     "p": "flusso",
+     "inizio": 27.04,
+     "fine": 27.44
+    },
+    {
+     "p": "di",
+     "inizio": 27.44,
+     "fine": 27.54
+    },
+    {
+     "p": "10",
+     "inizio": 27.54,
+     "fine": 27.76
+    },
+    {
+     "p": "email.",
+     "inizio": 27.76,
+     "fine": 28.18
+    }
+   ],
+   "loudness_M_media": -24.0
+  },
+  {
+   "i": 6,
+   "inizio": 28.18,
+   "fine": 31.3,
+   "durata": 3.12,
+   "testo": "Quindi prende e ne scrive dieci su dieci argomenti diversi.",
+   "parole": [
+    {
+     "p": "Quindi",
+     "inizio": 28.18,
+     "fine": 28.36
+    },
+    {
+     "p": "prende",
+     "inizio": 28.36,
+     "fine": 28.94
+    },
+    {
+     "p": "e",
+     "inizio": 28.94,
+     "fine": 29.1
+    },
+    {
+     "p": "ne",
+     "inizio": 29.1,
+     "fine": 29.12
+    },
+    {
+     "p": "scrive",
+     "inizio": 29.12,
+     "fine": 29.4
+    },
+    {
+     "p": "dieci",
+     "inizio": 29.4,
+     "fine": 29.82
+    },
+    {
+     "p": "su",
+     "inizio": 29.82,
+     "fine": 30.12
+    },
+    {
+     "p": "dieci",
+     "inizio": 30.12,
+     "fine": 30.36
+    },
+    {
+     "p": "argomenti",
+     "inizio": 30.36,
+     "fine": 30.7
+    },
+    {
+     "p": "diversi.",
+     "inizio": 30.7,
+     "fine": 31.3
+    }
+   ],
+   "loudness_M_media": -24.8
+  },
+  {
+   "i": 7,
+   "inizio": 31.38,
+   "fine": 33.16,
+   "durata": 1.78,
+   "testo": "Imposta l'automazione e è finito.",
+   "parole": [
+    {
+     "p": "Imposta",
+     "inizio": 31.38,
+     "fine": 31.76
+    },
+    {
+     "p": "l",
+     "inizio": 31.76,
+     "fine": 31.94
+    },
+    {
+     "p": "'automazione",
+     "inizio": 31.94,
+     "fine": 32.42
+    },
+    {
+     "p": "e",
+     "inizio": 32.42,
+     "fine": 32.76
+    },
+    {
+     "p": "è",
+     "inizio": 32.76,
+     "fine": 32.8
+    },
+    {
+     "p": "finito.",
+     "inizio": 32.8,
+     "fine": 33.16
+    }
+   ],
+   "loudness_M_media": -24.6
+  },
+  {
+   "i": 8,
+   "inizio": 33.26,
+   "fine": 36.42,
+   "durata": 3.16,
+   "testo": "Questo non è un approccio strategico.",
+   "parole": [
+    {
+     "p": "Questo",
+     "inizio": 33.26,
+     "fine": 33.56
+    },
+    {
+     "p": "non",
+     "inizio": 33.56,
+     "fine": 34.08
+    },
+    {
+     "p": "è",
+     "inizio": 34.08,
+     "fine": 34.7
+    },
+    {
+     "p": "un",
+     "inizio": 34.7,
+     "fine": 35.1
+    },
+    {
+     "p": "approccio",
+     "inizio": 35.1,
+     "fine": 35.56
+    },
+    {
+     "p": "strategico.",
+     "inizio": 35.56,
+     "fine": 36.42
+    }
+   ],
+   "loudness_M_media": -26.3
+  },
+  {
+   "i": 9,
+   "inizio": 36.6,
+   "fine": 41.2,
+   "durata": 4.6,
+   "testo": "Quindi Antonio viene licenziato, messo in un'astronave, mandato su Marte e poi Marte",
+   "parole": [
+    {
+     "p": "Quindi",
+     "inizio": 36.6,
+     "fine": 36.82
+    },
+    {
+     "p": "Antonio",
+     "inizio": 36.82,
+     "fine": 37.2
+    },
+    {
+     "p": "viene",
+     "inizio": 37.2,
+     "fine": 37.4
+    },
+    {
+     "p": "licenziato,",
+     "inizio": 37.4,
+     "fine": 38.04
+    },
+    {
+     "p": "messo",
+     "inizio": 38.28,
+     "fine": 38.54
+    },
+    {
+     "p": "in",
+     "inizio": 38.54,
+     "fine": 38.62
+    },
+    {
+     "p": "un",
+     "inizio": 38.62,
+     "fine": 38.72
+    },
+    {
+     "p": "'astronave,",
+     "inizio": 38.72,
+     "fine": 39.2
+    },
+    {
+     "p": "mandato",
+     "inizio": 39.48,
+     "fine": 39.74
+    },
+    {
+     "p": "su",
+     "inizio": 39.74,
+     "fine": 39.92
+    },
+    {
+     "p": "Marte",
+     "inizio": 39.92,
+     "fine": 40.46
+    },
+    {
+     "p": "e",
+     "inizio": 40.46,
+     "fine": 40.64
+    },
+    {
+     "p": "poi",
+     "inizio": 40.64,
+     "fine": 40.76
+    },
+    {
+     "p": "Marte",
+     "inizio": 40.76,
+     "fine": 41.2
+    }
+   ],
+   "loudness_M_media": -25.3
+  },
+  {
+   "i": 10,
+   "inizio": 41.2,
+   "fine": 43.18,
+   "durata": 1.98,
+   "testo": "viene bombardata e niente per quanto.",
+   "parole": [
+    {
+     "p": "viene",
+     "inizio": 41.2,
+     "fine": 41.32
+    },
+    {
+     "p": "bombardata",
+     "inizio": 41.32,
+     "fine": 42.2
+    },
+    {
+     "p": "e",
+     "inizio": 42.2,
+     "fine": 42.58
+    },
+    {
+     "p": "niente",
+     "inizio": 42.58,
+     "fine": 42.76
+    },
+    {
+     "p": "per",
+     "inizio": 42.76,
+     "fine": 42.96
+    },
+    {
+     "p": "quanto.",
+     "inizio": 42.96,
+     "fine": 43.18
+    }
+   ],
+   "loudness_M_media": -23.5
+  },
+  {
+   "i": 11,
+   "inizio": 43.56,
+   "fine": 45.46,
+   "durata": 1.9,
+   "testo": "Fausto quindi, assumo Gianfranco.",
+   "parole": [
+    {
+     "p": "Fausto",
+     "inizio": 43.56,
+     "fine": 44.0
+    },
+    {
+     "p": "quindi,",
+     "inizio": 44.0,
+     "fine": 44.32
+    },
+    {
+     "p": "assumo",
+     "inizio": 44.54,
+     "fine": 44.86
+    },
+    {
+     "p": "Gianfranco.",
+     "inizio": 44.86,
+     "fine": 45.46
+    }
+   ],
+   "loudness_M_media": -26.6
+  },
+  {
+   "i": 12,
+   "inizio": 45.62,
+   "fine": 50.06,
+   "durata": 4.44,
+   "testo": "Gianfranco prima di decidere cosa scrivere nella mail, decidere i painpoint, cosa trattare",
+   "parole": [
+    {
+     "p": "Gianfranco",
+     "inizio": 45.62,
+     "fine": 46.16
+    },
+    {
+     "p": "prima",
+     "inizio": 46.16,
+     "fine": 46.3
+    },
+    {
+     "p": "di",
+     "inizio": 46.3,
+     "fine": 46.5
+    },
+    {
+     "p": "decidere",
+     "inizio": 46.5,
+     "fine": 46.82
+    },
+    {
+     "p": "cosa",
+     "inizio": 46.82,
+     "fine": 47.02
+    },
+    {
+     "p": "scrivere",
+     "inizio": 47.02,
+     "fine": 47.48
+    },
+    {
+     "p": "nella",
+     "inizio": 47.48,
+     "fine": 47.74
+    },
+    {
+     "p": "mail,",
+     "inizio": 47.74,
+     "fine": 47.98
+    },
+    {
+     "p": "decidere",
+     "inizio": 48.16,
+     "fine": 48.44
+    },
+    {
+     "p": "i",
+     "inizio": 48.44,
+     "fine": 48.52
+    },
+    {
+     "p": "painpoint,",
+     "inizio": 48.52,
+     "fine": 48.88
+    },
+    {
+     "p": "cosa",
+     "inizio": 49.28,
+     "fine": 49.56
+    },
+    {
+     "p": "trattare",
+     "inizio": 49.56,
+     "fine": 50.06
+    }
+   ],
+   "loudness_M_media": -24.6
+  },
+  {
+   "i": 13,
+   "inizio": 50.06,
+   "fine": 54.82,
+   "durata": 4.76,
+   "testo": "quando, le obiezioni che ordine scrivere in base alla costa e pevolezza scrive",
+   "parole": [
+    {
+     "p": "quando,",
+     "inizio": 50.06,
+     "fine": 50.5
+    },
+    {
+     "p": "le",
+     "inizio": 50.96,
+     "fine": 51.06
+    },
+    {
+     "p": "obiezioni",
+     "inizio": 51.06,
+     "fine": 51.64
+    },
+    {
+     "p": "che",
+     "inizio": 51.64,
+     "fine": 52.1
+    },
+    {
+     "p": "ordine",
+     "inizio": 52.1,
+     "fine": 52.54
+    },
+    {
+     "p": "scrivere",
+     "inizio": 52.54,
+     "fine": 53.02
+    },
+    {
+     "p": "in",
+     "inizio": 53.02,
+     "fine": 53.18
+    },
+    {
+     "p": "base",
+     "inizio": 53.18,
+     "fine": 53.36
+    },
+    {
+     "p": "alla",
+     "inizio": 53.36,
+     "fine": 53.52
+    },
+    {
+     "p": "costa",
+     "inizio": 53.52,
+     "fine": 53.76
+    },
+    {
+     "p": "e",
+     "inizio": 53.76,
+     "fine": 53.84
+    },
+    {
+     "p": "pevolezza",
+     "inizio": 53.84,
+     "fine": 54.28
+    },
+    {
+     "p": "scrive",
+     "inizio": 54.28,
+     "fine": 54.82
+    }
+   ],
+   "loudness_M_media": -25.5
+  },
+  {
+   "i": 14,
+   "inizio": 54.82,
+   "fine": 57.36,
+   "durata": 2.54,
+   "testo": "i mail specifiche, non uguali a quelli dei competitor.",
+   "parole": [
+    {
+     "p": "i",
+     "inizio": 54.82,
+     "fine": 54.96
+    },
+    {
+     "p": "mail",
+     "inizio": 54.96,
+     "fine": 55.12
+    },
+    {
+     "p": "specifiche,",
+     "inizio": 55.12,
+     "fine": 56.0
+    },
+    {
+     "p": "non",
+     "inizio": 56.1,
+     "fine": 56.28
+    },
+    {
+     "p": "uguali",
+     "inizio": 56.28,
+     "fine": 56.58
+    },
+    {
+     "p": "a",
+     "inizio": 56.58,
+     "fine": 56.7
+    },
+    {
+     "p": "quelli",
+     "inizio": 56.7,
+     "fine": 56.86
+    },
+    {
+     "p": "dei",
+     "inizio": 56.86,
+     "fine": 57.0
+    },
+    {
+     "p": "competitor.",
+     "inizio": 57.0,
+     "fine": 57.36
+    }
+   ],
+   "loudness_M_media": -25.6
+  },
+  {
+   "i": 15,
+   "inizio": 57.36,
+   "fine": 61.86,
+   "durata": 4.5,
+   "testo": "E questo è un approccio strategico che multiplica le vendite di Fausto.",
+   "parole": [
+    {
+     "p": "E",
+     "inizio": 57.36,
+     "fine": 57.8
+    },
+    {
+     "p": "questo",
+     "inizio": 57.8,
+     "fine": 58.06
+    },
+    {
+     "p": "è",
+     "inizio": 58.06,
+     "fine": 58.16
+    },
+    {
+     "p": "un",
+     "inizio": 58.16,
+     "fine": 58.22
+    },
+    {
+     "p": "approccio",
+     "inizio": 58.22,
+     "fine": 58.48
+    },
+    {
+     "p": "strategico",
+     "inizio": 58.48,
+     "fine": 59.16
+    },
+    {
+     "p": "che",
+     "inizio": 59.16,
+     "fine": 59.54
+    },
+    {
+     "p": "multiplica",
+     "inizio": 59.54,
+     "fine": 60.3
+    },
+    {
+     "p": "le",
+     "inizio": 60.3,
+     "fine": 60.66
+    },
+    {
+     "p": "vendite",
+     "inizio": 60.66,
+     "fine": 61.02
+    },
+    {
+     "p": "di",
+     "inizio": 61.02,
+     "fine": 61.5
+    },
+    {
+     "p": "Fausto.",
+     "inizio": 61.5,
+     "fine": 61.86
+    }
+   ],
+   "loudness_M_media": -26.9
+  },
+  {
+   "i": 16,
+   "inizio": 62.32,
+   "fine": 66.26,
+   "durata": 3.94,
+   "testo": "Ora so che l'esempio è stupido, l'ho fatto così per attirarti l'attenzione, ma è davvero",
+   "parole": [
+    {
+     "p": "Ora",
+     "inizio": 62.32,
+     "fine": 62.5
+    },
+    {
+     "p": "so",
+     "inizio": 62.5,
+     "fine": 62.64
+    },
+    {
+     "p": "che",
+     "inizio": 62.64,
+     "fine": 62.76
+    },
+    {
+     "p": "l",
+     "inizio": 62.76,
+     "fine": 62.84
+    },
+    {
+     "p": "'esempio",
+     "inizio": 62.84,
+     "fine": 63.14
+    },
+    {
+     "p": "è",
+     "inizio": 63.14,
+     "fine": 63.22
+    },
+    {
+     "p": "stupido,",
+     "inizio": 63.22,
+     "fine": 63.58
+    },
+    {
+     "p": "l",
+     "inizio": 63.72,
+     "fine": 63.82
+    },
+    {
+     "p": "'ho",
+     "inizio": 63.82,
+     "fine": 63.82
+    },
+    {
+     "p": "fatto",
+     "inizio": 63.82,
+     "fine": 63.98
+    },
+    {
+     "p": "così",
+     "inizio": 63.98,
+     "fine": 64.38
+    },
+    {
+     "p": "per",
+     "inizio": 64.38,
+     "fine": 64.66
+    },
+    {
+     "p": "attirarti",
+     "inizio": 64.66,
+     "fine": 64.98
+    },
+    {
+     "p": "l",
+     "inizio": 64.98,
+     "fine": 65.08
+    },
+    {
+     "p": "'attenzione,",
+     "inizio": 65.08,
+     "fine": 65.5
+    },
+    {
+     "p": "ma",
+     "inizio": 65.82,
+     "fine": 65.92
+    },
+    {
+     "p": "è",
+     "inizio": 65.92,
+     "fine": 65.98
+    },
+    {
+     "p": "davvero",
+     "inizio": 65.98,
+     "fine": 66.26
+    }
+   ],
+   "loudness_M_media": -26.2
+  },
+  {
+   "i": 17,
+   "inizio": 66.26,
+   "fine": 66.46,
+   "durata": 0.2,
+   "testo": "così.",
+   "parole": [
+    {
+     "p": "così.",
+     "inizio": 66.26,
+     "fine": 66.46
+    }
+   ],
+   "loudness_M_media": -26.3
+  },
+  {
+   "i": 18,
+   "inizio": 66.52,
+   "fine": 70.22,
+   "durata": 3.7,
+   "testo": "90% delle aziende italiane scrivono e-mail generiche in questo modo, ti vengono in mente",
+   "parole": [
+    {
+     "p": "90",
+     "inizio": 66.52,
+     "fine": 66.68
+    },
+    {
+     "p": "%",
+     "inizio": 66.68,
+     "fine": 67.04
+    },
+    {
+     "p": "delle",
+     "inizio": 67.04,
+     "fine": 67.26
+    },
+    {
+     "p": "aziende",
+     "inizio": 67.26,
+     "fine": 67.4
+    },
+    {
+     "p": "italiane",
+     "inizio": 67.4,
+     "fine": 67.84
+    },
+    {
+     "p": "scrivono",
+     "inizio": 67.84,
+     "fine": 68.28
+    },
+    {
+     "p": "e",
+     "inizio": 68.28,
+     "fine": 68.5
+    },
+    {
+     "p": "-mail",
+     "inizio": 68.5,
+     "fine": 68.7
+    },
+    {
+     "p": "generiche",
+     "inizio": 68.7,
+     "fine": 69.22
+    },
+    {
+     "p": "in",
+     "inizio": 69.22,
+     "fine": 69.32
+    },
+    {
+     "p": "questo",
+     "inizio": 69.32,
+     "fine": 69.5
+    },
+    {
+     "p": "modo,",
+     "inizio": 69.5,
+     "fine": 69.66
+    },
+    {
+     "p": "ti",
+     "inizio": 69.7,
+     "fine": 69.76
+    },
+    {
+     "p": "vengono",
+     "inizio": 69.76,
+     "fine": 69.98
+    },
+    {
+     "p": "in",
+     "inizio": 69.98,
+     "fine": 70.08
+    },
+    {
+     "p": "mente",
+     "inizio": 70.08,
+     "fine": 70.22
+    }
+   ],
+   "loudness_M_media": -24.6
+  },
+  {
+   "i": 19,
+   "inizio": 70.22,
+   "fine": 74.86,
+   "durata": 4.64,
+   "testo": "più di tre aziende che fanno buon e-mail marketing che ti lo ricordi, che dici wow che bella",
+   "parole": [
+    {
+     "p": "più",
+     "inizio": 70.22,
+     "fine": 70.44
+    },
+    {
+     "p": "di",
+     "inizio": 70.44,
+     "fine": 70.58
+    },
+    {
+     "p": "tre",
+     "inizio": 70.58,
+     "fine": 70.82
+    },
+    {
+     "p": "aziende",
+     "inizio": 70.82,
+     "fine": 71.48
+    },
+    {
+     "p": "che",
+     "inizio": 71.48,
+     "fine": 71.8
+    },
+    {
+     "p": "fanno",
+     "inizio": 71.8,
+     "fine": 72.18
+    },
+    {
+     "p": "buon",
+     "inizio": 72.18,
+     "fine": 72.48
+    },
+    {
+     "p": "e",
+     "inizio": 72.48,
+     "fine": 72.54
+    },
+    {
+     "p": "-mail",
+     "inizio": 72.54,
+     "fine": 72.66
+    },
+    {
+     "p": "marketing",
+     "inizio": 72.66,
+     "fine": 73.02
+    },
+    {
+     "p": "che",
+     "inizio": 73.02,
+     "fine": 73.26
+    },
+    {
+     "p": "ti",
+     "inizio": 73.26,
+     "fine": 73.36
+    },
+    {
+     "p": "lo",
+     "inizio": 73.36,
+     "fine": 73.42
+    },
+    {
+     "p": "ricordi,",
+     "inizio": 73.42,
+     "fine": 73.94
+    },
+    {
+     "p": "che",
+     "inizio": 74.0,
+     "fine": 74.02
+    },
+    {
+     "p": "dici",
+     "inizio": 74.02,
+     "fine": 74.2
+    },
+    {
+     "p": "wow",
+     "inizio": 74.2,
+     "fine": 74.48
+    },
+    {
+     "p": "che",
+     "inizio": 74.48,
+     "fine": 74.64
+    },
+    {
+     "p": "bella",
+     "inizio": 74.64,
+     "fine": 74.86
+    }
+   ],
+   "loudness_M_media": -24.9
+  },
+  {
+   "i": 20,
+   "inizio": 74.86,
+   "fine": 75.84,
+   "durata": 0.98,
+   "testo": "e-mail?",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 74.86,
+     "fine": 74.96
+    },
+    {
+     "p": "-mail?",
+     "inizio": 74.96,
+     "fine": 75.84
+    }
+   ],
+   "loudness_M_media": -31.3
+  },
+  {
+   "i": 21,
+   "inizio": 75.88,
+   "fine": 76.9,
+   "durata": 1.02,
+   "testo": "No, probabilmente no.",
+   "parole": [
+    {
+     "p": "No,",
+     "inizio": 75.88,
+     "fine": 76.1
+    },
+    {
+     "p": "probabilmente",
+     "inizio": 76.28,
+     "fine": 76.74
+    },
+    {
+     "p": "no.",
+     "inizio": 76.74,
+     "fine": 76.9
+    }
+   ],
+   "loudness_M_media": -27.7
+  },
+  {
+   "i": 22,
+   "inizio": 77.0,
+   "fine": 81.58,
+   "durata": 4.58,
+   "testo": "Eppure tu lavori il marketing, strategico significa prendere decisioni informati, seguire",
+   "parole": [
+    {
+     "p": "Eppure",
+     "inizio": 77.0,
+     "fine": 77.16
+    },
+    {
+     "p": "tu",
+     "inizio": 77.16,
+     "fine": 77.34
+    },
+    {
+     "p": "lavori",
+     "inizio": 77.34,
+     "fine": 77.62
+    },
+    {
+     "p": "il",
+     "inizio": 77.62,
+     "fine": 77.76
+    },
+    {
+     "p": "marketing,",
+     "inizio": 77.76,
+     "fine": 78.1
+    },
+    {
+     "p": "strategico",
+     "inizio": 78.24,
+     "fine": 78.84
+    },
+    {
+     "p": "significa",
+     "inizio": 78.84,
+     "fine": 79.06
+    },
+    {
+     "p": "prendere",
+     "inizio": 79.06,
+     "fine": 79.84
+    },
+    {
+     "p": "decisioni",
+     "inizio": 79.84,
+     "fine": 80.68
+    },
+    {
+     "p": "informati,",
+     "inizio": 80.68,
+     "fine": 81.22
+    },
+    {
+     "p": "seguire",
+     "inizio": 81.4,
+     "fine": 81.58
+    }
+   ],
+   "loudness_M_media": -24.9
+  },
+  {
+   "i": 23,
+   "inizio": 81.58,
+   "fine": 86.68,
+   "durata": 5.1,
+   "testo": "tecniche e leve psicologiche, provate, scientifiche, non cose che hai visto",
+   "parole": [
+    {
+     "p": "tecniche",
+     "inizio": 81.58,
+     "fine": 82.22
+    },
+    {
+     "p": "e",
+     "inizio": 82.22,
+     "fine": 82.5
+    },
+    {
+     "p": "leve",
+     "inizio": 82.5,
+     "fine": 82.76
+    },
+    {
+     "p": "psicologiche,",
+     "inizio": 82.76,
+     "fine": 83.68
+    },
+    {
+     "p": "provate,",
+     "inizio": 84.04,
+     "fine": 84.64
+    },
+    {
+     "p": "scientifiche,",
+     "inizio": 84.94,
+     "fine": 85.78
+    },
+    {
+     "p": "non",
+     "inizio": 85.86,
+     "fine": 85.94
+    },
+    {
+     "p": "cose",
+     "inizio": 85.94,
+     "fine": 86.24
+    },
+    {
+     "p": "che",
+     "inizio": 86.24,
+     "fine": 86.4
+    },
+    {
+     "p": "hai",
+     "inizio": 86.4,
+     "fine": 86.48
+    },
+    {
+     "p": "visto",
+     "inizio": 86.48,
+     "fine": 86.68
+    }
+   ],
+   "loudness_M_media": -24.5
+  },
+  {
+   "i": 24,
+   "inizio": 86.68,
+   "fine": 90.36,
+   "durata": 3.68,
+   "testo": "in cinque blog, copi incollate da GPT o copetere il competitor.",
+   "parole": [
+    {
+     "p": "in",
+     "inizio": 86.68,
+     "fine": 86.88
+    },
+    {
+     "p": "cinque",
+     "inizio": 86.88,
+     "fine": 87.24
+    },
+    {
+     "p": "blog,",
+     "inizio": 87.24,
+     "fine": 87.62
+    },
+    {
+     "p": "copi",
+     "inizio": 87.92,
+     "fine": 88.1
+    },
+    {
+     "p": "incollate",
+     "inizio": 88.1,
+     "fine": 88.56
+    },
+    {
+     "p": "da",
+     "inizio": 88.56,
+     "fine": 88.66
+    },
+    {
+     "p": "GPT",
+     "inizio": 88.66,
+     "fine": 89.4
+    },
+    {
+     "p": "o",
+     "inizio": 89.4,
+     "fine": 89.62
+    },
+    {
+     "p": "copetere",
+     "inizio": 89.62,
+     "fine": 89.9
+    },
+    {
+     "p": "il",
+     "inizio": 89.9,
+     "fine": 90.02
+    },
+    {
+     "p": "competitor.",
+     "inizio": 90.02,
+     "fine": 90.36
+    }
+   ],
+   "loudness_M_media": -24.2
+  },
+  {
+   "i": 25,
+   "inizio": 90.52,
+   "fine": 96.86,
+   "durata": 6.34,
+   "testo": "Continua a leggere questa pagina per vedere come scriverla tua prima vera e mail strategica.",
+   "parole": [
+    {
+     "p": "Continua",
+     "inizio": 90.52,
+     "fine": 90.86
+    },
+    {
+     "p": "a",
+     "inizio": 90.86,
+     "fine": 90.88
+    },
+    {
+     "p": "leggere",
+     "inizio": 90.88,
+     "fine": 91.1
+    },
+    {
+     "p": "questa",
+     "inizio": 91.1,
+     "fine": 91.3
+    },
+    {
+     "p": "pagina",
+     "inizio": 91.3,
+     "fine": 91.72
+    },
+    {
+     "p": "per",
+     "inizio": 91.72,
+     "fine": 91.84
+    },
+    {
+     "p": "vedere",
+     "inizio": 91.84,
+     "fine": 92.06
+    },
+    {
+     "p": "come",
+     "inizio": 92.06,
+     "fine": 92.36
+    },
+    {
+     "p": "scriverla",
+     "inizio": 92.36,
+     "fine": 93.02
+    },
+    {
+     "p": "tua",
+     "inizio": 93.02,
+     "fine": 93.2
+    },
+    {
+     "p": "prima",
+     "inizio": 93.2,
+     "fine": 93.68
+    },
+    {
+     "p": "vera",
+     "inizio": 93.68,
+     "fine": 95.1
+    },
+    {
+     "p": "e",
+     "inizio": 95.1,
+     "fine": 95.48
+    },
+    {
+     "p": "mail",
+     "inizio": 95.48,
+     "fine": 95.8
+    },
+    {
+     "p": "strategica.",
+     "inizio": 95.8,
+     "fine": 96.86
+    }
+   ],
+   "loudness_M_media": -26.5
+  },
+  {
+   "i": 26,
+   "inizio": 97.14,
+   "fine": 98.84,
+   "durata": 1.7,
+   "testo": "Sarai sorpreso da quanto venderà.",
+   "parole": [
+    {
+     "p": "Sarai",
+     "inizio": 97.14,
+     "fine": 97.52
+    },
+    {
+     "p": "sorpreso",
+     "inizio": 97.52,
+     "fine": 98.04
+    },
+    {
+     "p": "da",
+     "inizio": 98.04,
+     "fine": 98.12
+    },
+    {
+     "p": "quanto",
+     "inizio": 98.12,
+     "fine": 98.3
+    },
+    {
+     "p": "venderà.",
+     "inizio": 98.3,
+     "fine": 98.84
+    }
+   ],
+   "loudness_M_media": -27.5
+  }
+ ]
+}

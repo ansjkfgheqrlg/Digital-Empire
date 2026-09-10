@@ -1,0 +1,148 @@
+{
+ "run": "eze4oqwb6aw",
+ "totale": 6,
+ "atomi": [
+  {
+   "uid": "eze4oqwb6aw::KA-01",
+   "ka_id": "KA-01",
+   "run": "eze4oqwb6aw",
+   "tipo": "Formato / Reel identitario - struttura anaforica",
+   "contenuto": "Reel di personal branding costruito su una struttura anaforica ripetuta ('Sono un copywriter, e' ovvio che...') applicata a 5 vignette diverse, girate in luoghi/momenti reali differenti - montaggio di micro-scene con la stessa cornice verbale.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:00",
+   "frame": "frame-001,002",
+   "confidenza": "",
+   "tags": [
+    "formato",
+    "anafora",
+    "personal-branding"
+   ],
+   "relazioni": [],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/eze4oqwb6aw/atoms.json",
+   "parole": 35,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "619c508572b3a4b0e137130f0de2daa9"
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-02",
+   "ka_id": "KA-02",
+   "run": "eze4oqwb6aw",
+   "tipo": "Copy / Mix credenziali professionali autentiche",
+   "contenuto": "Lista di comportamenti professionali concreti (sales page preferita, lettura quotidiana, analisi eventi Apple, analisi copy incontrati per caso) presentati come naturali conseguenze dell'identita' dichiarata, ognuno mostrato fisicamente (show don't tell) invece di solo narrato.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:04",
+   "frame": "frame-003,005,007,010",
+   "confidenza": "",
+   "tags": [
+    "credenziali",
+    "show-dont-tell"
+   ],
+   "relazioni": [],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/eze4oqwb6aw/atoms.json",
+   "parole": 34,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "ff329868320b04f79c5c16a062c08371"
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-03",
+   "ka_id": "KA-03",
+   "run": "eze4oqwb6aw",
+   "tipo": "Copy / Punchline auto-ironica",
+   "contenuto": "Chiusura anticlimatica: 'sono in chiamata col cliente perche' devo chiuderlo - sono 500 euro comunque' - rompe il pattern impressionante con un dettaglio modesto, tecnica di umanizzazione/bilanciamento credibilita-simpatia.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:22",
+   "frame": "frame-012,013",
+   "confidenza": "",
+   "tags": [
+    "punchline",
+    "umanizzazione",
+    "anticlimax"
+   ],
+   "relazioni": [],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/eze4oqwb6aw/atoms.json",
+   "parole": 28,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": null,
+   "impronta": "c5d0194f7852d342b115e3553f69172c"
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-01",
+   "ka_id": "KA-01",
+   "run": "eze4oqwb6aw",
+   "tipo": "Formato / Reel identitario - struttura anaforica",
+   "contenuto": "Reel di personal branding costruito su una struttura anaforica ripetuta ('Sono un copywriter, e' ovvio che...') applicata a 5 vignette diverse, girate in luoghi/momenti reali differenti - montaggio di micro-scene con la stessa cornice verbale.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:00",
+   "frame": "frame-001,002",
+   "confidenza": "",
+   "tags": [
+    "formato",
+    "anafora",
+    "personal-branding"
+   ],
+   "relazioni": [],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/memory-empire/knowledge/eze4oqwb6aw/atoms.json",
+   "parole": 35,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": "eze4oqwb6aw::KA-01",
+   "impronta": "619c508572b3a4b0e137130f0de2daa9"
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-02",
+   "ka_id": "KA-02",
+   "run": "eze4oqwb6aw",
+   "tipo": "Copy / Mix credenziali professionali autentiche",
+   "contenuto": "Lista di comportamenti professionali concreti (sales page preferita, lettura quotidiana, analisi eventi Apple, analisi copy incontrati per caso) presentati come naturali conseguenze dell'identita' dichiarata, ognuno mostrato fisicamente (show don't tell) invece di solo narrato.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:04",
+   "frame": "frame-003,005,007,010",
+   "confidenza": "",
+   "tags": [
+    "credenziali",
+    "show-dont-tell"
+   ],
+   "relazioni": [],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/memory-empire/knowledge/eze4oqwb6aw/atoms.json",
+   "parole": 34,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": "eze4oqwb6aw::KA-02",
+   "impronta": "ff329868320b04f79c5c16a062c08371"
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-03",
+   "ka_id": "KA-03",
+   "run": "eze4oqwb6aw",
+   "tipo": "Copy / Punchline auto-ironica",
+   "contenuto": "Chiusura anticlimatica: 'sono in chiamata col cliente perche' devo chiuderlo - sono 500 euro comunque' - rompe il pattern impressionante con un dettaglio modesto, tecnica di umanizzazione/bilanciamento credibilita-simpatia.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:22",
+   "frame": "frame-012,013",
+   "confidenza": "",
+   "tags": [
+    "punchline",
+    "umanizzazione",
+    "anticlimax"
+   ],
+   "relazioni": [],
+   "file_sorgente": "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/memory-empire/knowledge/eze4oqwb6aw/atoms.json",
+   "parole": 28,
+   "libro": null,
+   "capitolo": null,
+   "peso": null,
+   "principale_di": "eze4oqwb6aw::KA-03",
+   "impronta": "c5d0194f7852d342b115e3553f69172c"
+  }
+ ]
+}
