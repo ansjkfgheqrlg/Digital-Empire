@@ -331,3 +331,8 @@ details.sv-dett p { margin-top: 10px; font-size: var(--fs-small); line-height: 1
 .sv-container { width: var(--u); max-width: 100%; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
 .sv-section { padding: 88px 0; }
 @media (max-width: 767px) { .sv-section { padding: 64px 0; } }
+
+/* marquee dell'hero: scorre piano; con reduced-motion sta fermo */
+@keyframes marquee-scorri { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee { animation: marquee-scorri 60s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .marquee { animation: none; } }

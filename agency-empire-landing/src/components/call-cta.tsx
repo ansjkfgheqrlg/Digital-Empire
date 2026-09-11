@@ -4,7 +4,7 @@ import { PRENOTA, prenotaDa } from "@/lib/contatti";
 
 /**
  * CTA di sezione (Dossier 37 v2, C1.1): SEMPRE verso /prenota/ (pagina nostra) via <Link>,
- * con `?da=<sezione>` per sapere da dove si prenota. Mai un dominio esterno, mai `#prenota`.
+ * con `?da=<sezione>` per sapere da dove si prenota. Mai un dominio esterno, mai un'ancora al listino.
  */
 /** @deprecated solo per le sezioni v1 in attesa di rimozione (F7): oggi è la pagina nostra, non il dominio del corso */
 export const CALL_URL = PRENOTA;
