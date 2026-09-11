@@ -482,10 +482,14 @@ riga fino ad ora.
 **Cinque cose che né V2 né le prime 13 correzioni di V3 sapevano — integrate qui come sesta e
 settima area di correzione:**
 
-1. **Il gate di §1/§7 (`trace stato --origine hook`) non è eseguibile oggi**: `empire` ha 7
-   sottocomandi, nessuno è `trace`; il campo `origine` non esiste ancora nella dataclass
-   `Traccia`. Non è pigrizia, è che lo strumento di misura stesso manca — **E0.7/E4-F3 deve
-   costruire campo e comando PRIMA che §1/§7 abbiano un gate reale**, non in parallelo.
+1. **Il gate di §1/§7 (`trace stato --origine hook`) non è eseguibile oggi** — corretto il
+   2026-09-11 rimisurando: `python -m empire trace` **esiste** (sottocomandi `scrivi`, `elenco`,
+   `cerca`, `stato`; `trace stato` stampa 25 tracce per tipo). L'Appendice B lo dava assente:
+   errore di misura della sentinella, il disco vince. Quello che **manca davvero** è più stretto:
+   il campo `origine` nella dataclass `Traccia` (`empire/trace.py:57-66`: tipo, titolo, autore,
+   prova, quando, contesto, tags, id — nessun `origine`) e i filtri `--origine`/`--finestra`/
+   `--json` su `trace stato`. **F3 (`09-F3-EMETTITORE.md`) costruisce campo e filtri PRIMA che
+   §1/§7 abbiano un gate reale** — è un innesto su un comando vivo, non un comando da zero.
 2. **`13-ARENA-APEX` non è "a metà", è rotta**: `orchestrator.py --help` → **exit 1**,
    `UnicodeEncodeError` cp1252 (misurato, non dedotto dal censimento). `11-APEX-7-CORE` ha già la
    riga che risolve lo stesso difetto — è un fix di un file, non uno scaglione.
