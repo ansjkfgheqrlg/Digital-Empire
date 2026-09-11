@@ -28,6 +28,21 @@ al watchdog (stream sub-agenti morto dopo un ENOTFOUND). Conformi: 00-INDICE, 01
 correzioni al piano fatte misurando (trace esiste; ultimo_metro senza --json; REGISTRO-NUMERI in
 Ecosistemi/). **Il blocco ⚠️ COORDINAMENTO V4 sotto resta valido.** Divieto costruttivo in vigore.
 
+## 🌐 2026-09-11 sera — DOSSIER 37: Piano Sito Agency Vivo scritto (4 giri), build in attesa del «vai» — CP-20260911-D9EP
+
+Ordine di Max: si torna sui siti, si parte da quello dell'Agenzia (`agency-empire/`, live
+`agency-empire-kohl.vercel.app`). Ci mancano tono, elementi vivi e immagini che i lanci di Andrei Pascu
+(Claude Speedrun, Armageddon) hanno. **Scritto il piano, non toccato il sito:**
+`PIANO-MAESTRO/37-PIANO-SITO-AGENCY-VIVO.md` — diagnosi misurata con lo stesso strumento usato su Pascu
+(noi 43.359 px, 11 CTA, **0 foto**, 195 dimensioni tipografiche; lui 33.756 px, 40 CTA), Voce DE in 10
+regole, 23 elementi mappati ai pattern della Fabbrica, casting 14/41 immagini AURA, 21+16 divider → 19
+sezioni, P0 → 3 critiche → V4 esecutivo (≈70 h). **Ripresa: `EMP-ZP2J`.**
+**Dipendono da Max e NON bloccano (ADR-026/028):** il «vai»; il suo ritratto per l'hero; le foto del
+team; l'acquisto Higgsfield Plus (dossier 28) per le immagini generate. **Decisione dichiarata:** gli
+still di film della cartella AURA non vanno mai su un deploy pubblico (diritto d'autore/immagine) —
+servono da brief; in produzione immagini generate nello stesso registro + facce vere + screenshot reali.
+Quando parte il build: blocco ⚠️ COORDINAMENTO su `agency-empire/` + `fabbrica-siti/pattern/`.
+
 ## ⚠️ COORDINAMENTO — 2026-09-11 — V4 ESECUTIVO del Piano Impero Vivo (EMP-MCC4) IN SCRITTURA
 
 **Chi:** Emperator, su "vai" di Max (segue CP-20260910-RYHK: V3 chiusa, Critica 3 saltata — nessun FATALE nuovo).

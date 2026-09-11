@@ -78,6 +78,7 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 ### Analisi e Sintesi
 - [[synthesis/Piano_Implementazione_Andrei_Pascu|Piano di Implementazione — Andrei Pascu]] — lo studio del competitor trasformato in azioni, criticato tre volte; il ritrovamento: l'Impero possiede gia' il codice per incassare e non l'ha mai acceso.
 - [[synthesis/Synthesis_Sistema_Copy_Andrei_Pascu|Il Sistema di Copy di Andrei Pascu]] — 11 tappe, 22 formule, la prova che scala con la concretezza del prodotto; innestato in `cro-copy-architect`/`copywriting`/`copy-editing`/`market-copy` il 2026-09-10.
+- [[projects/Agency/Progetto_Sito_Agency_Vivo|Sito Agency Vivo — dossier 37]] — piano in 4 giri (2026-09-11) per dare al sito dell'agenzia tono, elementi vivi e immagini AURA presi dai lanci di Andrei Pascu; diagnosi misurata (43.359 px, 11 CTA, 0 foto vs Speedrun 33.756/40), 19 sezioni, ≈70 h, build su «vai». Ripresa EMP-ZP2J.
 - [[synthesis/Synthesis_Sistema_Visivo_Andrei_Pascu|Il Sistema Visivo di Andrei Pascu]] — 52 pagine misurate a macchina: la temperatura del traffico governa la forma, non il prezzo; dove il canone Empire vince e non si tocca.
 - [[synthesis/ClaudeFlow_Exponium_Applications|Claude-Flow → Exponium: Mapping Completo]] — Come ogni pattern claude-flow si applica ai 3 prodotti Exponium.
 
