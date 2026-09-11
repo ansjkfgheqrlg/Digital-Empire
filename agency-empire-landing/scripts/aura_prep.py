@@ -12,8 +12,16 @@ Per ogni immagine in pagina (posto != null):
     neutro cosi' lo swap generata/originale non cambia la resa
   - scrive accanto un `.json` con alt e didascalia, letti dal componente <Aura/>
 
+Composizione B (Dossier 37 v2, C3.1): il componente <Aura/> NON controlla il 404 a runtime, legge
+`src/lib/aura-presenti.json` scritto qui. Un posto senza file sparisce dal layout (colonna chiusa),
+gia' nell'HTML statico: niente cornice vuota, niente salto al mount.
+  - default        : presenti = solo i file che stanno davvero in public/aura/ (quello che va online)
+  - --pieno        : presenti += i file di preview (misura "manifest pieno" in locale, con
+                     NEXT_PUBLIC_AURA_BASE=http://localhost:8787/ e `npx serve cantiere/aura-preview -l 8787`)
+
 Uso:
-  python scripts/aura_prep.py                      # tutte le immagini in pagina
+  python scripts/aura_prep.py                      # tutte le immagini in pagina + presenti.json (produzione)
+  python scripts/aura_prep.py --pieno              # idem, presenti.json include la preview
   python scripts/aura_prep.py --check              # solo il gate: originali in public/ = FAIL
 """
 import json, sys, pathlib, argparse, io
@@ -26,6 +34,7 @@ MANIFEST = ROOT / "public" / "aura" / "manifest.json"
 SRC = pathlib.Path(r"C:\Users\Utente\Desktop\qui tutto\Digital Empire\Caroselli Style\immagini AURA")
 PREVIEW = ROOT / "cantiere" / "aura-preview"
 PUBLIC = ROOT / "public" / "aura"
+PRESENTI = ROOT / "src" / "lib" / "aura-presenti.json"
 MAX_KB = 250
 LATO = 1600
 
@@ -48,6 +57,7 @@ def salva_webp(im: Image.Image, dest: pathlib.Path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--pieno", action="store_true", help="presenti.json include la preview locale")
     a = ap.parse_args()
     m = json.loads(MANIFEST.read_text(encoding="utf-8"))
     in_pagina = [r for r in m["immagini"] if r.get("posto") and r.get("file_pubblico")]
@@ -84,6 +94,14 @@ def main():
         (PREVIEW if dove == "preview" else PUBLIC).joinpath(nome).with_suffix(".json").write_text(
             json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"  [{dove:7}] {nome:32} {size[0]}x{size[1]}  {kb} KB  q{q}")
+
+    # composizione B: la lista dei file che esistono davvero, letta dal componente a build time
+    presenti = sorted(p.name for p in PUBLIC.glob("*.webp"))
+    if a.pieno and PREVIEW.exists():
+        presenti = sorted(set(presenti) | {p.name for p in PREVIEW.glob("*.webp")})
+    PRESENTI.parent.mkdir(parents=True, exist_ok=True)
+    PRESENTI.write_text(json.dumps({"pieno": bool(a.pieno), "file": presenti}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"  presenti.json: {len(presenti)} file ({'pieno: con preview' if a.pieno else 'produzione: solo public/'})")
 
     if errori:
         print("GATE IMMAGINI -- FAIL"); [print("  [X]", e) for e in errori]; sys.exit(1)

@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <main className="relative">
       <Header />
-      <StickyCTA href="#prenota" label="Prenota una Chiamata" />
+      <StickyCTA />
       
       <Hero />
       <VSL />

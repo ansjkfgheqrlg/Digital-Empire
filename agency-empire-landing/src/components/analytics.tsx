@@ -38,7 +38,9 @@ export function EmpireAnalytics() {
         e.data &&
         (e.data as { event?: string }).event === "calendly.event_scheduled"
       ) {
-        track("call_prenotata");
+        // C3.2: `?da=Nxx` sull'URL di /prenota/ dice da quale sezione si e' arrivati alla prenotazione
+        const da = new URLSearchParams(window.location.search).get("da") ?? "diretto";
+        track("call_prenotata", { da });
       }
     };
 

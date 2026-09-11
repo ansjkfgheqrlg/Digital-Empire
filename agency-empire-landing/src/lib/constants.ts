@@ -1,6 +1,9 @@
-export const BOOKING_URL = "#prenota";
-export const PRICE = "€2.500";
-export const DISCOUNTED_PRICE = "€8.000"; // Engine Room — tutti e 3 i sistemi (anziché €10.000)
-export const SITE_TITLE = "Digital Empire | Sistemi AI Proprietari per la Tua Operatività";
+// Compatibilità con le sezioni v1 (in sections/_v1 fino alla rimozione dopo F7).
+// Le fonti vere sono listino.ts / contatti.ts / fatti.ts (Dossier 37 v2).
+import { LISTINO, eur } from "./listino";
+export { PRENOTA as BOOKING_URL } from "./contatti";
+export const PRICE = eur(LISTINO.brain);
+export const DISCOUNTED_PRICE = eur(LISTINO.engine);
+export const SITE_TITLE = "Digital Empire | Sistemi AI installati sui tuoi server";
 export const SITE_DESCRIPTION =
-  "Installiamo sistemi AI sul tuo server: Outreach Factory, Content Factory e Second Brain. Zero canoni mensili. Codice tuo per sempre. Setup in 7 giorni.";
+  "Outreach Factory, Content Factory e Second Brain: tre sistemi AI installati sul tuo server in 7 giorni. Zero canoni, codice tuo. Prenota 30 minuti: il sistema in live, niente slide.";

@@ -1,43 +1,39 @@
-"use client";
-
-import { Phone } from "lucide-react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { PRENOTA, prenotaDa } from "@/lib/contatti";
 
-export const CALL_URL = "https://chiamata-formazione.netlify.app/";
+/**
+ * CTA di sezione (Dossier 37 v2, C1.1): SEMPRE verso /prenota/ (pagina nostra) via <Link>,
+ * con `?da=<sezione>` per sapere da dove si prenota. Mai un dominio esterno, mai `#prenota`.
+ */
+/** @deprecated solo per le sezioni v1 in attesa di rimozione (F7): oggi è la pagina nostra, non il dominio del corso */
+export const CALL_URL = PRENOTA;
 
 export function CallCTA({
-  variant = "dark",
-  label = "Prenota una Chiamata Gratuita",
-  sublabel = "30 min · Gratuita · Zero impegno",
+  da = "v1",
+  label = "Prenota la chiamata →",
+  sublabel,
+  principale = false,
   className,
 }: {
-  variant?: "dark" | "light";
+  da?: string;
   label?: string;
   sublabel?: string;
+  principale?: boolean;
   className?: string;
+  /** ignorato: compatibilità con le sezioni v1 */
+  variant?: "dark" | "light";
 }) {
-  const base =
-    "group inline-flex items-center gap-2.5 px-6 py-[14px] rounded-xl font-semibold text-[15px] transition-all duration-300";
-
-  const styles =
-    variant === "dark"
-      ? "bg-white/5 text-white border border-white/20 hover:bg-white/10 hover:border-white/35 backdrop-blur-sm"
-      : "bg-ink/5 text-ink border border-ink/25 hover:bg-ink/10 hover:border-ink/45";
-
   return (
-    <a
-      href={CALL_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={cn(base, styles, className)}
+    <Link
+      href={prenotaDa(da)}
+      data-cta
+      className={cn("sv-btn", principale && "sv-btn--bagliore", className)}
     >
-      <Phone className="h-4 w-4 opacity-80 group-hover:opacity-100" strokeWidth={2} />
-      <span className="flex flex-col items-start leading-tight text-left">
-        <span>{label}</span>
-        <span className={cn("text-[10px] uppercase tracking-[0.18em] font-bold mt-0.5", variant === "dark" ? "text-white/60" : "text-ink/50")}>
-          {sublabel}
-        </span>
+      <span>
+        {label}
+        {sublabel && <small>{sublabel}</small>}
       </span>
-    </a>
+    </Link>
   );
 }
