@@ -390,6 +390,11 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   assorbe la skill nel repo (togliendo il `.git` annidato), o la si dichiara esplicitamente esterna
   e si scrive dove vive la sua verita'. Oggi non e' ne' l'una ne' l'altra: e' un buco silenzioso.
 
+- **B-067 — NUOVA (2026-09-11).** `engine/piano.py` (libri KDP) scrive il piano settimanale solo in
+  `LIBRI/_piani/`; il doppione ufficiale in `documentazione Empire/Piani/KDP/` oggi si fa a mano
+  (fatto per il piano del 31/08, CP-20260911-F4FV, nove giorni dopo la nascita del piano). Da fare:
+  `/piano-libri` copia da solo `.md`+`.json` nella cartella ufficiale e aggiunge la riga al `LEGGIMI.md`.
+
 - **B-066 — NUOVA (2026-09-10).** `scripts/gate_siti.py` **adesso esiste** (prima la legge
   `CLAUDE-SITI.md` §9 nominava un giudice mai nato: "una consegna che non passa gate_siti.py non
   e' consegnata", e il file non c'era). Ne vivono **cinque** controlli: CASSA, PREZZO, IMMAGINE,

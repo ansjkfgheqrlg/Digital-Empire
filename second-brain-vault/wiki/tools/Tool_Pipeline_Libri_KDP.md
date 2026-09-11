@@ -3,7 +3,7 @@ Type: TOOL
 Status: Active
 Tags: #kdp #libri #publishing #pipeline #arena #niche-finder
 Created: 2026-08-23
-Last updated: 2026-08-24
+Last updated: 2026-09-11
 ---
 
 # Tool: Pipeline Produzione Libri KDP
@@ -122,6 +122,12 @@ Prova reale: **"The Winter Term"** (dark academia mystery), 24/24 capitoli, 39.6
 Due conferme di calibrazione: il gate di blocco ha bocciato **2 volte su 7** per capitoli
 scritti corti (1.440 e 1.467 parole contro il bersaglio 1.600), e la stima a 320 parole/pagina
 ha sbagliato di nuovo (120,9 stimate contro **113 reali** alla prima consegna). Solo il PDF conta.
+
+## 2026-09-02 — Piano editoriale settimanale (Gael) + doppione ufficiale (2026-09-11)
+
+- Gael costruisce `engine/piano.py` + skill `/piano-libri` e `/libro-del-giorno` + 3 agenti (KDP-SCOUT, KDP-EDITOR, KDP-GATE): un piano di 7 libri a settimana, una riga per giorno, eseguibile cosi' com'e' (nicchia con punteggio Amazon, premessa, angolo differenziante, comando `engine.kdp nuovo`).
+- Primo piano: settimana 31/08→06/09/2026, nicchia di catalogo *witch bookshop cozy fantasy*, autore Maren Ashcroft. Originale in `LIBRI/_piani/piano_2026-08-31.{md,json}`.
+- 2026-09-11: copia ufficiale in `documentazione Empire/Piani/KDP/` con `LEGGIMI.md` (tabella dei piani). Regola: copia, mai spostamento; niente PDF per i piani settimanali. CP-20260911-F4FV.
 
 ## Connessioni
 - [[Entity_The_Quiet_Hours_Libro_KDP]]

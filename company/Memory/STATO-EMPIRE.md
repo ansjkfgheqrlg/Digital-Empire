@@ -1,3 +1,36 @@
+## ⚠️ COORDINAMENTO — 2026-09-10 notte — EMP-8M9F, Libro dell'Agency Edizione Integrale (FASE 0 IN CORSO)
+
+**Chi:** Emperator, su ordine di Max (`EMP-8M9F` + "vai" = via alla Fase 0 del piano 35).
+
+**Perimetro toccato — nessun altro ci scriva finche' questo blocco resta:**
+- `PIANO-MAESTRO/36-LIBRO-AGENCY-INTEGRALE/` (cartella nuova: indice atomi, tassonomia, lotti, assegnazioni)
+- `PIANO-MAESTRO/scripts/indicizza_atomi.py`, `prepara_lotti_atomi.py`, `valida_assegnazioni.py` (nuovi)
+- In seguito: `PIANO-MAESTRO/scripts/pdf_engine_libro.py`, `build_libro_integrale_pdf.py`, `gate_densita_libro.py`
+
+**Non toccato:** LANCI, APEX-7, fabbrica YouTube, Outreach, 31-PIANO-IMPERO-VIVO. Zero collisione.
+
+**IL NUMERO DEL PIANO ERA SBAGLIATO — corretto sul disco.** Il piano 35 dichiarava
+**2.128 atomi su 24 run**. Il censimento vero (`36-LIBRO-AGENCY-INTEGRALE/CENSIMENTO.md`) dice:
+**3.467 record su 96 run, 2.877 atomi unici** (590 sono lo stesso atomo detto da due run diverse,
+marcati e non cancellati). Il giacimento e' **+35%** di quanto il piano prometteva. Solo **1.327
+atomi (38%) hanno l'ancora verbatim**: il gate di densita' potra' pretenderla solo su quelli, e lo
+dichiarera' invece di fingere.
+
+**Stato:** Fase 0 passo 1 chiuso (indice + 19 lotti). Passo 2 in corso: 7 classificatori sonnet
+sui lotti 01-11. Poi lotti 12-19, poi deduplica, poi Fase 1 (motore PDF a flusso).
+
+---
+
+## 📚 2026-09-11 — Piano editoriale KDP di Gael nella documentazione ufficiale — CP-20260911-F4FV
+
+Ordine di Max: "Gael ha fatto il piano editoriale per i KDP? se si mettilo nella documentazione ufficiale".
+Verificato: si', Gael lo ha fatto il 2026-09-02 (commit `66389b58`): 7 libri per la settimana 31/08→06/09,
+nicchia *witch bookshop cozy fantasy*, autore Maren Ashcroft. Copiato (mai spostato) in
+`documentazione Empire/Piani/KDP/` con `LEGGIMI.md` che tiene la tabella dei piani. Niente PDF (piano
+settimanale = temporaneo). Wiki `Tool_Pipeline_Libri_KDP.md` + log aggiornati. B-067: far copiare il
+doppione a `/piano-libri` da solo. Dei 7 libri del piano, 2 sono in `libri_pronti/` (Midnight Ledger,
+Coven of Lost Ember); gli altri 5 ancora da produrre.
+
 ## 🟣 2026-09-10 — Collisione EVITATA su EMP-8M9F: un'altra sessione lo sta già costruendo
 
 **Ordine di Max: "prendi in considerazione tutta la conoscenza di EMP-8M9F, migliora/implementa
