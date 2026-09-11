@@ -1,3 +1,15 @@
+## ⚠️ COORDINAMENTO — 2026-09-12 — SITO AGENCY VIVO v2 IN COSTRUZIONE (EMP-2AW3, «vai» di Max)
+
+**Chi:** Emperator, su «vai» di Max (Dossier 37 v2 chiuso, CP-20260911-MX8A).
+**Perimetro toccato — nessun altro ci scriva finché questo blocco resta:**
+`agency-empire-landing/` (tutto) · `.claude/skills/fabbrica-siti/scripts/gate_fatti.py` (nuovo) ·
+`.claude/skills/fabbrica-siti/cantieri/agency-empire-landing-vivo/` (nuova).
+**Forze (ADR-015):** Emperator + scagnozzi sonnet in F1/F4 (dichiarati nel battito quando partono).
+**Non toccato:** `agency-empire/` (CHIUSO, resta alla v1), V4 Piano Impero Vivo, EMP-8M9F, Outreach, fabbrica YouTube.
+**Gesti di Max che NON bloccano (ADR-026/028):** ritratto suo · ritratti Gael/Leonardo · Higgsfield · `src` video ·
+P.IVA/sede/PEC · consenso Novacar/Preventa · Vercel Web Analytics · Calendly attivo.
+**Cosa chiude il blocco:** F7 (H1 nuovo online, `netlify.app` = 0, noindex via, agency-empire-kohl intatto) + F8 (CP).
+
 ## 🌐 2026-09-12 — DOSSIER 37 v2 CHIUSO: 3 critiche + V4 sul sito vero, build in attesa del «vai» — CP-20260911-MX8A
 
 **Ripresa `EMP-2AW3` (APERTA), prossimo = «vai» di Max → F0.** Chiuse per esteso Critica 1→P1, 2→P2, 3→P3 e il V4
