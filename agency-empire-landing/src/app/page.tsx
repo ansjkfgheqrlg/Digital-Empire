@@ -27,6 +27,10 @@ import { FAQ } from "@/components/sections/faq";
 import { FinalCTA } from "@/components/sections/final-cta";
 import { FinalOffer } from "@/components/sections/final-offer";
 import { AboutStory } from "@/components/sections/about-story";
+// Sezioni AGGIUNTE il 2026-09-12 (ordine di Max: solo aggiungere, mai modificare l'esistente)
+import { Specchio } from "@/sezioni-aggiunte/specchio";
+import { ProveVere } from "@/sezioni-aggiunte/prove-vere";
+import { CosaOttieni } from "@/sezioni-aggiunte/cosa-ottieni";
 import { StickyCTA } from "@/components/sticky-cta";
 import { Header } from "@/components/header";
 import { Results } from "@/components/sections/results";
@@ -42,6 +46,7 @@ export default function Home() {
       <ScienceStats />
       <Audience />
       <Problems />
+      <Specchio />
       <Competitors />
       <ListenUp />
       <div className="divider-silver-orange" aria-hidden="true" />
@@ -57,6 +62,7 @@ export default function Home() {
       <BrainDeep />
       <SecondBrainInside />
       <Results />
+      <ProveVere />
       <NoFluff />
       <ToolStack />
       <div className="divider-silver-orange" aria-hidden="true" />
@@ -71,6 +77,7 @@ export default function Home() {
       <Objections />
       <FAQ />
       <div className="divider-silver-orange" aria-hidden="true" />
+      <CosaOttieni />
       <FinalCTA />
       <FinalOffer />
       <AboutStory />
