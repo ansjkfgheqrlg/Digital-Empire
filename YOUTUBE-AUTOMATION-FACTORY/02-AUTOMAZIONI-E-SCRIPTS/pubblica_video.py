@@ -191,6 +191,18 @@ def scrivi_log(video_id, stato_prima, stato_dopo, modalita, dettaglio="", log_pa
 
 def leggi_stato_visibilita(page):
     """Legge lo stato attuale mostrato da Studio SENZA cliccare niente."""
+    # 2026-09-11, visto dal vivo su RUg6TgSd79s: un video puo' essere in BOZZA — «This video
+    # is in a draft state» — cioe' un caricamento mai completato nel wizard. Una bozza non ha
+    # visibilita' da cambiare: prima di questo controllo usciva "sconosciuto", che e' falso.
+    # La bozza si dichiara per nome, cosi' chi legge sa che il lavoro da fare e' un altro
+    # (finire il wizard), non questo script.
+    for frase in ("This video is in a draft state", "Questo video e' in stato di bozza",
+                  "Questo video è in stato di bozza"):
+        try:
+            if page.get_by_text(frase, exact=False).count() > 0:
+                return "bozza"
+        except Exception:
+            continue
     for etichetta, stato in STATI_VISIBILITA:
         try:
             if page.get_by_text(etichetta, exact=True).count() > 0:
@@ -311,9 +323,23 @@ def esegui_pubblicazione(piano, page, log_path=DEFAULT_LOG):
     video_id = piano["video_id"]
     modalita = piano["modalita"]
 
+    # 2026-09-11, primo dry-run reale: con 45s di goto e 4s fissi di attesa il DOM catturato
+    # era la SHELL di Studio (299 KB di JavaScript di avvio, zero elementi renderizzati), e lo
+    # stato usciva "sconosciuto". Studio e' un'app che si disegna DOPO domcontentloaded: un
+    # cronometro fisso non e' un'attesa, e' una scommessa. Si aspetta un elemento vero
+    # dell'editor; il cronometro resta solo come margine dopo che l'elemento c'e'.
     page.goto("https://studio.youtube.com/video/%s/edit" % video_id,
-              wait_until="domcontentloaded", timeout=45000)
-    page.wait_for_timeout(4000)
+              wait_until="domcontentloaded", timeout=90000)
+    try:
+        page.wait_for_selector(
+            "ytcp-video-metadata-editor, ytcp-video-info, #video-title, "
+            "ytcp-video-visibility-select, tp-yt-paper-radio-button",
+            timeout=40000)
+    except Exception:
+        # Non e' comparso niente dell'editor: la lettura sotto dira' "sconosciuto" e in
+        # prova si porta a casa il DOM. Non si solleva qui, per non perdere la diagnostica.
+        pass
+    page.wait_for_timeout(2500)
     stato_prima = leggi_stato_visibilita(page)
 
     intenzione = ("PUBBLICO adesso" if modalita == "pubblica"
@@ -340,6 +366,18 @@ def esegui_pubblicazione(piano, page, log_path=DEFAULT_LOG):
                 "prova": True}
 
     # Da qui in poi: esecuzione REALE, irreversibile.
+    if stato_prima == "bozza":
+        # Non si tenta nemmeno il popup: una bozza non ha visibilita'. Cliccare a caso su
+        # una pagina che dice "Feature unavailable while video is in a draft state" e'
+        # esattamente il tipo di azione cieca che questo script esiste per impedire.
+        dettaglio = ("Il video e' in BOZZA (caricamento mai completato nel wizard): non ha una "
+                     "visibilita' da cambiare. Nessun clic eseguito. Va completato il wizard di "
+                     "caricamento, non usato questo script.")
+        print("[FERMATO] %s" % dettaglio)
+        scrivi_log(video_id, stato_prima, stato_prima, modalita, dettaglio, log_path)
+        return {"eseguito": False, "errore": dettaglio,
+                "stato_prima": stato_prima, "stato_dopo": stato_prima}
+
     if not _apri_popup_visibilita(page):
         dettaglio = "Popup Visibilita' non trovato/apribile: nessun clic eseguito, va fatta a mano."
         print("[ERRORE] %s" % dettaglio)

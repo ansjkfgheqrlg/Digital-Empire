@@ -6,7 +6,7 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 ---
 
 # 📊 DASHBOARD OPERATIVA — Digital Empire
-> Generato automaticamente il: **2026-09-05 23:22:28**
+> Generato automaticamente il: **2026-09-11 10:30:48**
 
 ---
 
@@ -31,9 +31,9 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 |---|---|---|---|---|
 | Agenti Progettati | `443` | 🟢 | GAEL | `-` |
 | Agenti CF-Grade | `0` | 🟢 | GAEL | `>= 10` |
-| Ecosistemi Completi | `13` | 🟡 | CLAUDE | `== 10` |
+| Ecosistemi Completi | `14` | 🟡 | CLAUDE | `== 10` |
 | Conformi ADR-008 | `7` | 🟢 | FORGE | `-` |
-| Link Rotti | `6369` | 🔴 | FORGE | `== 0` |
+| Link Rotti | `6547` | 🔴 | FORGE | `== 0` |
 | Workflow Art. 8 | `1` | 🟢 | FORGE | `>= 1` |
 | Spazio Duplicato | `n/d (errore: 'str' object has no attribute 'get')` | ⚪ | FORGE | `< 1.0` |
 

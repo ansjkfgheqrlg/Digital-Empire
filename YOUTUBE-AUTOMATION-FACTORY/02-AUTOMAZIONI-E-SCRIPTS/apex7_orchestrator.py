@@ -714,6 +714,19 @@ class Apex7Orchestrator:
             print(f"[!] Attenzione: Stai rieseguendo la fase {target_phase} (già completata fino alla {current_phase})")
             current_phase = target_phase
 
+        # 2026-09-11 — trovato costruendo carica_pronti.py. Il comando documentato in
+        # avvia-yt.md §6 («--phase 5 --upload --video-folder ...») senza --resume partiva da
+        # QUI con current_phase=1, e --phase e' un limite superiore (il ciclo sotto va da
+        # current_phase a target_phase): eseguiva 1-2-3-4-5, riscrivendo lo script e RIFACENDO
+        # il video su Fliki a pagamento, per un video che era gia' finito nella cartella.
+        # Con --video-folder le fasi 1-4 non hanno senso per definizione (regola permanente
+        # 2026-08-18: si usa <cartella>/video.mp4): si parte dalla fase chiesta.
+        # Sette video con la copertina di Max erano fermi per questo.
+        if getattr(self, "video_folder", None) and target_phase >= 5 and current_phase < target_phase:
+            print(f"[*] --video-folder presente: il video e' gia' prodotto, salto le fasi "
+                  f"{current_phase}-{target_phase - 1} e parto dalla fase {target_phase}.")
+            current_phase = target_phase
+
         phases = {
             1: self.run_phase_1,
             2: self.run_phase_2,
