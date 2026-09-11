@@ -22,7 +22,7 @@
 | **Stato a due tempi** | V3 §5 | `NEW → SENDING → CONTACTED`; il lead in `SENDING` alla ripresa va a riconciliazione umana, mai risolto d'ufficio |
 | **`fonte_di_verita` per coppia** | V3 §6 | ogni coppia scheda↔esecutore dichiara quale lato è la fonte; la guardia blocca l'edit del lato generato |
 | **Tre esiti** | V3 §7 | `PASSA / NON PASSA / NON VALUTATO` — i NON VALUTATO non entrano né al numeratore né al denominatore, e ognuno ha la riga che dice perché |
-| **HC-v2 a 13 campi** | V3 Appendice D | i 10 di V2 §12 + `due_at` (opzionale) + `costi` (obbligatorio per esecutori-agente) |
+| **HC-v2 a 13 campi** | V3 Appendice D | gli 11 di V2 §12 (`cp_id` incluso, V2 riga 393) + `due_at` (opzionale) + `costi` (obbligatorio per esecutori-agente) = 13 |
 | **H13 — legge di nascita** | V3 §3 | ogni artefatto nuovo nelle classi censite nasce con `Consumatore quotidiano` + ingresso in anagrafe, o il pre-commit lo respinge |
 | **ADR-028 — niente blocca tutto** | `CLAUDE.md` REGOLA DUE | un impedimento ferma solo ciò che dipende letteralmente da lui; ogni «bloccato» nel documento elenca anche cosa NON è bloccato |
 | **INV-GAEL** | V3 §8 / §19 | **E5b è l'unico scaglione che aspetta Gael, e nessun altro scaglione dipende da E5b.** Nessun documento di V4 può introdurre una dipendenza nuova da Gael. Chi la trova, la scrive come violazione e la toglie |
@@ -148,7 +148,7 @@ V4 è chiusa quando **tutte** queste righe sono vere, e la costruzione parte sol
 | Documento | Stato | Chi lo ha scritto |
 |---|---|---|
 | `00-INDICE.md` | ✅ | EMPERATOR |
-| `01`–`05` (E0a, E0.5, E0b, E0.9, E0.6) | 🔄 | sentinella opus A |
+| `01`–`05` (E0a, E0.5, E0b, E0.9, E0.6) | ✅ | EMPERATOR a mano (le sentinelle sono cadute l'11/09) |
 | `06`–`08` (E0.7, E1, E2) | 🔄 | sentinella opus B |
 | `09`–`12` (F3, E3.0, E3, E4) | 🔄 | sentinella opus C |
 | `13`–`20` (E5a, E5-bis, E5b, E5c, E6, E7, E8, E9) | 🔄 | sentinella opus D |
