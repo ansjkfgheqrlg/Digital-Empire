@@ -5,14 +5,17 @@ import { FATTI } from "@/lib/fatti";
 const NUMERI = [
   {
     n: `${FATTI.giorniSetup} giorni`,
+    fonte: "contratto: 7 giorni lavorativi dal contratto firmato al go-live (FATTI.md)",
     t: `— lavorativi, dal contratto firmato al go-live. Se il tuo caso è su misura te lo diciamo prima di firmare, non dopo.`,
   },
   {
     n: `${FATTI.messaggiGiorno} al giorno`,
+    fonte: "Outreach Factory di Digital Empire, dashboard mostrata in chiamata (FATTI.md)",
     t: `— messaggi che l'Outreach Factory manda da sola: email e DM Instagram, da sessioni browser vere. Non API che ti fanno bannare.`,
   },
   {
     n: `${FATTI.canoneMese} € al mese`,
+    fonte: "listino: pagamento una tantum, nessun canone; VPS del cliente (FATTI.md)",
     t: `— nessun canone. Il codice gira sul tuo server (${FATTI.vpsMeseMin}-${FATTI.vpsMeseMax} € al mese, tuo) ed è tuo. Se ci licenzi, resta lì.`,
   },
 ];
@@ -27,7 +30,7 @@ export function Numeri() {
         </h2>
         <div className="mt-10 grid md:grid-cols-3 gap-6">
           {NUMERI.map((x) => (
-            <div key={x.n} className="prova">
+            <div key={x.n} className="prova" data-fonte={x.fonte}>
               <b className="sv-stat">{x.n}</b>
               <p className="sv-body sv-muted mt-2">{x.t}</p>
             </div>

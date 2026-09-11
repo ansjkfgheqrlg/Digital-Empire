@@ -19,15 +19,15 @@ export function AscoltaBene() {
               riesci.
             </p>
             <div className="grid grid-cols-3 gap-3 mt-8 max-w-[560px]">
-              <div className="prova">
+              <div className="prova" data-fonte="Outreach Factory di Digital Empire, dashboard mostrata in chiamata (FATTI.md)">
                 <b>{FATTI.messaggiGiorno}</b>
                 <span>messaggi al giorno, il sistema</span>
               </div>
-              <div className="prova">
+              <div className="prova" data-fonte="aritmetica dichiarata: 30 DM × 5 minuti = 2,5 ore (FATTI.md)">
                 <b>{FATTI.dmAMano}</b>
                 <span>a mano, {FATTI.orePerDm.toLocaleString("it-IT")} ore tue</span>
               </div>
-              <div className="prova">
+              <div className="prova" data-fonte="aritmetica dichiarata: 300 / 30 (FATTI.md)">
                 <b>10×</b>
                 <span>fai tu la divisione</span>
               </div>
