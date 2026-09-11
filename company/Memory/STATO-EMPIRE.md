@@ -1,3 +1,12 @@
+## ⚠️ COORDINAMENTO — 2026-09-11 — V4 ESECUTIVO del Piano Impero Vivo (EMP-MCC4) IN SCRITTURA
+
+**Chi:** Emperator, su "vai" di Max (segue CP-20260910-RYHK: V3 chiusa, Critica 3 saltata — nessun FATALE nuovo).
+**Perimetro toccato — nessun altro ci scriva finche' questo blocco resta:**
+`PIANO-MAESTRO/31-PIANO-IMPERO-VIVO/V4-ESECUTIVO/` (cartella nuova, un documento per scaglione) + `00-LEGGIMI.md` della stessa cartella.
+**Forze (ADR-015):** 4 sentinelle opus in parallelo, aree disgiunte (E0a→E0.6 · E0.7→E2 · E3.0→E4 · E5a→E9), scrittura incrementale un documento per volta. Chiusura esecutiva: Emperator.
+**Non toccato:** nessun file di produzione (il divieto costruttivo resta fino a V4 chiusa), EMP-8M9F, LANCI, fabbrica YouTube, Outreach. Zero collisione.
+**Cosa chiude V4:** ogni scaglione ha comandi esatti, file esatti, gate L9 (comando+condizione+exit code), politica di guasto, prompt d'ingaggio. Dopo: **via alla costruzione, solo su ordine di Max.**
+
 ## ⚠️ COORDINAMENTO — 2026-09-10 notte — EMP-8M9F, Libro dell'Agency Edizione Integrale (FASE 0 IN CORSO)
 
 **Chi:** Emperator, su ordine di Max (`EMP-8M9F` + "vai" = via alla Fase 0 del piano 35).

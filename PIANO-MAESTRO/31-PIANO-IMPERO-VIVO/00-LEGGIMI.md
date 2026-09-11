@@ -2,8 +2,8 @@
 
 > **Aperto:** 2026-09-06 · **Committente:** Max · **Esecutore:** EMPERATOR
 > **Assetto:** GOD EMPEROR DOOM · **Ripresa:** EMP-MCC4
-> **Stato:** V3 chiusa (2026-09-10) — 13 correzioni + 7 dall'Appendice B + HC-v2 a 13 campi
-> (Appendice D). §19 garantisce che Gael non sia mai bloccato. Prossimo: V4.
+> **Stato:** V4 in scrittura (2026-09-11) — indice e template fissati, 20 documenti di scaglione
+> in corso, gate meccanico `scripts/verifica_v4.py`. Divieto costruttivo ancora in vigore.
 
 ---
 
@@ -224,7 +224,7 @@ meno, e quando cade perde meno.
 | **V2 — piano ampliato** | ✅ **1.085 righe · 41 rilievi recepiti** | 2026-09-07 |
 | **Critica 2** | ✅ **15 rilievi (4 FATALI · 7 GRAVI · 4 MEDI), 2 REGGE** — `_critica-v2/` | 2026-09-10 |
 | **V3 — piano assestato** | ✅ **CHIUSA** — 13 correzioni + 3 appendici (B: 0/15 ecosistemi passano tutto; C: 235/391 destinazioni mancanti; D: HC-v2 a 13 campi) | 2026-09-10 |
-| V4 — piano esecutivo | ⬜ **← SI RIPRENDE DA QUI** | |
+| V4 — piano esecutivo | 🔄 **in scrittura** — `V4-ESECUTIVO/00-INDICE.md` ✅, 20 documenti di scaglione in corso (4 sentinelle opus), `scripts/verifica_v4.py` pronto | 2026-09-11 |
 | **Via alla costruzione** | ⬜ | **solo dopo V4, per ordine di Max** |
 
 **Divieto in vigore fino a V4:** nessuna modifica costruttiva al repository. Ordine esplicito

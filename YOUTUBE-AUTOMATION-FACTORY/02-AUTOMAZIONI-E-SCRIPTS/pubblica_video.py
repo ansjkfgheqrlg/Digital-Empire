@@ -324,6 +324,17 @@ def esegui_pubblicazione(piano, page, log_path=DEFAULT_LOG):
         dettaglio = ("PROVA (dry-run): nessun clic eseguito. Stato attuale letto: %s. "
                      "Azione che verrebbe eseguita con --conferma: %s." % (stato_prima, intenzione))
         print("[PROVA] %s" % dettaglio)
+        if stato_prima == "sconosciuto":
+            # 2026-09-11, primo dry-run reale: lo stato era "sconosciuto" e la prova
+            # NON aveva salvato il DOM — quindi non si poteva calibrare niente. Un dry-run
+            # che non legge la schermata e non lascia traccia non ha provato nulla:
+            # e' proprio in prova che il DOM serve di piu', perche' e' l'unico momento
+            # in cui si puo' guardare la pagina vera senza rischiare un clic.
+            _dump_dom_diagnostico(page, "prova-stato-sconosciuto")
+            try:
+                print("[DIAGNOSTICA] url=%s titolo=%r" % (page.url, page.title()))
+            except Exception:
+                pass
         scrivi_log(video_id, stato_prima, stato_prima, "prova", dettaglio, log_path)
         return {"eseguito": False, "stato_prima": stato_prima, "stato_dopo": stato_prima,
                 "prova": True}
