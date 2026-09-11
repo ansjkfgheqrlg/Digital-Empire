@@ -1,13 +1,14 @@
-﻿import type { Metadata, Viewport } from "next";
-import { Onest, Cinzel, Playfair_Display } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Onest, Cinzel, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 import { GrainLayers } from "@/components/grain-layers";
+import { EmpireAnalytics } from "@/components/analytics";
 
 const onest = Onest({
   variable: "--font-onest",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -15,6 +16,13 @@ const cinzel = Cinzel({
   variable: "--font-cinzel",
   subsets: ["latin"],
   weight: ["400", "700", "900"],
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  weight: ["400", "500"],
   display: "swap",
 });
 
@@ -54,7 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="it"
-      className={`${onest.variable} ${cinzel.variable} ${playfair.variable} h-full antialiased dark`}
+      className={`${onest.variable} ${cinzel.variable} ${playfair.variable} ${jetbrains.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col bg-ink text-white font-sans grain-fine">
         <a
@@ -65,6 +73,7 @@ export default function RootLayout({
         </a>
         <GrainLayers />
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <EmpireAnalytics />
       </body>
     </html>
   );

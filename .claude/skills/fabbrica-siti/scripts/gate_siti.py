@@ -161,7 +161,13 @@ def controllo_cassa(pagine, radice):
             pulito = h.split("#")[0].split("?")[0]
             if not pulito:
                 continue
-            bersaglio = os.path.normcase(os.path.abspath(os.path.join(base, pulito)))
+            # 2026-09-11: un href che inizia con "/" e' relativo alla RADICE del sito, non alla
+            # cartella della pagina (os.path.join lo mandava alla radice del disco: C:\cookie).
+            # Corsia B esporta sempre link root-relative: senza questo il gate bocciava ogni sito Next.
+            if pulito.startswith("/"):
+                bersaglio = os.path.normcase(os.path.abspath(os.path.join(radice, pulito.lstrip("/"))))
+            else:
+                bersaglio = os.path.normcase(os.path.abspath(os.path.join(base, pulito)))
             if os.path.isdir(bersaglio):
                 bersaglio = os.path.normcase(os.path.join(bersaglio, "index.html"))
             if not os.path.exists(bersaglio):

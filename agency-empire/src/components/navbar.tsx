@@ -5,12 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 
 const NAV_ITEMS = [
-  { href: "#servizi", label: "Servizi" },
-  { href: "#preventa", label: "Preventa" },
-  { href: "#metodo", label: "Metodo" },
+  { href: "#fabbriche", label: "Le fabbriche" },
+  { href: "#casi", label: "Casi" },
   { href: "#processo", label: "Processo" },
-  { href: "#lavori", label: "Lavori" },
-  { href: "#prove", label: "Prove" },
+  { href: "#chi-siamo", label: "Chi siamo" },
+  { href: "#garanzia", label: "Garanzia" },
   { href: "#faq", label: "FAQ" },
 ];
 

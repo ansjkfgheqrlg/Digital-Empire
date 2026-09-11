@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./vivo.css";   /* canone v3 — Sito Agency Vivo (Dossier 37) */
 
 /* ============================================================
    TOKENS — palette brand Agency (cream-navy gradient + purple)
@@ -48,6 +49,7 @@
   --font-sans: var(--font-onest);
   --font-display: var(--font-cinzel);
   --font-accent: var(--font-playfair);
+  --font-mono: var(--font-jetbrains);
 }
 
 /* ============================================================
