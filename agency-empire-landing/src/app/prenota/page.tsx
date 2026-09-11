@@ -37,10 +37,12 @@ export default function PrenotaPage() {
           <p className="sv-small sv-muted mt-10 max-w-[46ch]">
             La prenotazione passa da Calendly, che usa i suoi cookie: li descriviamo nella pagina <Link href="/cookie/" className="underline">Cookie</Link>.
           </p>
-          <p className="sv-small sv-muted mt-3 max-w-[46ch]">
-            Se il calendario non si carica: scrivici a <a href={`mailto:${EMAIL}`} className="underline">{EMAIL}</a> e ti rispondiamo noi,
-            non un modulo.
-          </p>
+          {EMAIL && (
+            <p className="sv-small sv-muted mt-3 max-w-[46ch]">
+              Se il calendario non si carica: scrivici a <a href={`mailto:${EMAIL}`} className="underline">{EMAIL}</a> e ti rispondiamo
+              noi, non un modulo.
+            </p>
+          )}
         </div>
         <Calendario />
       </div>

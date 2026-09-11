@@ -18,7 +18,8 @@ export default function PrivacyPage() {
           <p>
             <b className="text-white">Titolare.</b> {LEGAL.ragioneSociale}
             {LEGAL.piva ? `, P.IVA ${LEGAL.piva}` : ""}
-            {LEGAL.sede ? `, ${LEGAL.sede}` : ""}. Contatto: <a className="underline" href={`mailto:${contatto}`}>{contatto}</a>.
+            {LEGAL.sede ? `, ${LEGAL.sede}` : ""}.
+            {contatto ? <> Contatto: <a className="underline" href={`mailto:${contatto}`}>{contatto}</a>.</> : null}
           </p>
           <p>
             <b className="text-white">Navigazione.</b> Usiamo Vercel Web Analytics: conta le visite e i clic sui bottoni senza cookie e
@@ -31,8 +32,8 @@ export default function PrivacyPage() {
             newsletter senza il tuo consenso.
           </p>
           <p>
-            <b className="text-white">I tuoi diritti.</b> Accesso, rettifica, cancellazione, opposizione (artt. 15-22 GDPR): scrivi a{" "}
-            {contatto}, rispondiamo entro 30 giorni.
+            <b className="text-white">I tuoi diritti.</b> Accesso, rettifica, cancellazione, opposizione (artt. 15-22 GDPR):
+            {contatto ? ` scrivi a ${contatto}, rispondiamo entro 30 giorni.` : " scrivici dalla pagina Prenota, rispondiamo entro 30 giorni."}
           </p>
           <p>
             <b className="text-white">Aggiornamenti.</b> Questa pagina cambia quando cambia il sito. Ultimo aggiornamento: settembre 2026.
