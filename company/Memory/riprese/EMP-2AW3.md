@@ -2,7 +2,7 @@
 
 - **Codice di ripresa:** `EMP-2AW3`
 - **Aperto:** 2026-09-11 22:30
-- **Stato:** APERTO — piano v2 in BOZZA, build fermo
+- **Stato:** APERTO — piano v2 CHIUSO (CP-20260911-MX8A), build fermo fino al «vai»
 - **Chi riprende:** basta dire `EMP-2AW3` in una chat nuova dentro Digital Empire.
 
 ---
@@ -26,22 +26,30 @@ poi costruire **solo su «vai»**. **Mai più toccare `agency-empire/`** (altro 
   `cantieri/agency-empire-vivo/LEZIONE.md`; nel branch wip: `vivo.css`, `aura.tsx`, manifest, `aura_prep.py`,
   `analytics.tsx`, `VOCE.md`, `COPY-V2.md`.
 
+## 2b. FATTO IL 2026-09-12 (chat nuova)
+- Dossier 37 v2 **chiuso**: FATTI NUOVI (noindex `layout.tsx:31`; chiamata in 3 salti col brand "Claude Code
+  Mastery" → Calendly `max-infoproducer/30min`; `#prenota` = ancora del listino; `output: "export"`; prezzi in 3
+  file; `/prenota/`+`/privacy/`+`/cookie/` nel wip), CRITICA 1→P1, 2→P2, 3→P3, V4 (10 fasi, ≈53 h, pesi), politica
+  di guasto, PM0-PM12, 9 dipendenze da Max, 4 domande. Nessuna riga di codice toccata.
+
 ## 3. COSA È RIMASTO A METÀ
-- Il Dossier v2 è **bozza**: le tre critiche (P1/P2/P3) sono abbozzate come "decisioni già prese", non
-  scritte per esteso; il V4 esecutivo è la tabella delle fasi, senza politica di guasto dettagliata.
-- Memoria di sessione (`~/.claude/.../memory/project_sito_agency_vivo_dossier37.md`) dice ancora
-  "deployato": va corretta (sito sbagliato, ripristinato) — fatto? vedi §8.
+- Niente: il piano è chiuso. Resta solo il «vai» di Max. Memoria di sessione corretta il 12/09.
 
 ## 4. IL PROSSIMO PASSO ESATTO
-1. Leggere `PIANO-MAESTRO/37-PIANO-SITO-AGENCY-VIVO.md` (v2) per intero.
-2. Scrivere per esteso Critica 1 → P1, Critica 2 → P2, Critica 3 → P3, V4 esecutivo con politica di guasto
-   (le decisioni sono già elencate in fondo alla Parte IV) — **piano, non build**.
-3. Presentare a Max; al «vai»: F0 = `cd agency-empire-landing && cat .vercel/project.json && npx vercel
-   project ls` → URL nel BRIEF con la frase di Max citata → tag `agency-empire-landing-v1-<data>` → …
+1. Leggere `PIANO-MAESTRO/37-PIANO-SITO-AGENCY-VIVO.md` da "# V4 ESECUTIVO" in giù (righe 280-373).
+2. Al «vai» di Max: blocco ⚠️ COORDINAMENTO in STATO-EMPIRE + push → **F0** (`cat agency-empire-landing/.vercel/project.json`
+   = `agency-empire-landing`; `npx vercel project ls`; curl Calendly; tag `agency-empire-landing-v1-20260912`; zip fuori
+   repo; BRIEF con URL + frase di Max delle 22:05; manifest 15 posti; `analytics.tsx` dal wip) → F1 …
+3. Senza «vai»: niente. Il piano non si ridiscute; si eseguono le fasi nell'ordine del V4.
 
 ## 5. DECISIONI GIÀ PRESE — non ridiscuterle
 - **Il sito è `agency-empire-landing`.** `agency-empire/` non si tocca. F7 controlla ANCHE che
   agency-empire-kohl resti intatto.
+- **Dal 12/09 (critiche chiuse):** `/prenota/` nostra (Calendly inline dal wip) e tutte e 10 le CTA lì via `<Link>`;
+  `#prenota` e `netlify.app` spariscono (grep = 0); noindex tolto nel commit di F7 e legato a `GH_PAGES_BASE`;
+  `listino.ts` + `fatti.ts` + `contatti.ts` unici (grep `€ x.xxx` = 0); `FATTI.md` + `gate_fatti.py`; composizione B
+  senza foto su ogni posto + gate F5 doppio (manifest pieno/vuoto); prove N11 a 3 livelli, nomi solo con consenso;
+  misura servendo `out/` (mai `next dev`); F4 in due metà; 53 h con pesi F0 5·F1 20·F2 5·F3 15·F4a 18·F4b 17·F5 6·F6 5·F7 5·F8 4.
 - Tutte quelle della v1 (still originali mai in deploy; lista nera; 10 CTA a temperatura; niente countdown/???)
   + le nuove: VSL solo con video reale; hero a due composizioni (mai segnaposto nell'hero); listino in
   `src/lib/listino.ts` unico; tre sistemi distinti con etichetta mono, non con tre colori; storia in prima

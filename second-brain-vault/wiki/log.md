@@ -2371,3 +2371,8 @@ dei consigli raccolti), su ordine esplicito di Max.
   che ha chiuso il lotto max18/max17.
 - Con questo `EMP-W4K7` e' chiuso: max18 (9 fonti), max17 (verificato gia' chiuso), Fase 2,
   Libro dell'Agency — tutte e quattro le fasi fatte.
+
+## 2026-09-12 (EMPERATOR — EMP-2AW3, Dossier 37 v2 chiuso)
+- UPDATE: `projects/Agency/Progetto_Sito_Agency_Vivo` → 1 pagina aggiornata. Piano chiuso (3 critiche + V4, ≈53 h),
+  fatti nuovi dal codice del sito vero (noindex, prenotazione in 3 salti col brand del corso, `#prenota` ancora del listino).
+  Nessun build: si aspetta il «vai». CP-20260911-MX8A.

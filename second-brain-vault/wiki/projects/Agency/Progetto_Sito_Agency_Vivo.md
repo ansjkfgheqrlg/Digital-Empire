@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #agency #sito #andrei-pascu #tono #immagini-aura #fabbrica-siti
 Created: 2026-09-11
-Last updated: 2026-09-11
+Last updated: 2026-09-12
 ---
 
 # Sito Agency Vivo — dossier 37
@@ -16,6 +16,11 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **2026-09-12 — v2 CHIUSA (CP-20260911-MX8A):** critiche P1/P2/P3 + V4 esecutivo (10 fasi, ≈53 h, pesi) sul sito vero
+  `agency-empire-landing`. Fatti nuovi dal codice: sito **noindex**; CTA chiamata in 3 salti col brand "Claude Code Mastery"
+  fino a Calendly `max-infoproducer/30min`; `#prenota` = ancora del listino; `output: "export"`. Decisioni: `/prenota/` nostra
+  con Calendly, noindex via in F7 con gate `netlify.app = 0`, listino/fatti/contatti in un file con grep = 0, `gate_fatti.py`,
+  composizione B senza foto su ogni posto (gate doppio pieno/vuoto), prove a 3 livelli. Build fermo fino al «vai».
 - **⛔ 2026-09-11 22:40 — ERRORE:** il build/deploy delle 22:00 era su `agency-empire/` (sito sbagliato), ripristinato alla v1.
   **Il sito dell'Agenzia è `agency-empire-landing` → https://agency-empire-landing.vercel.app.** Dossier 37 riscritto in v2
   (bozza) sul sito vero; ripresa `EMP-2AW3`; prototipo nel branch `agency-empire-vivo-wip`. CP-20260911-JF6H.

@@ -1,3 +1,14 @@
+## 🌐 2026-09-12 — DOSSIER 37 v2 CHIUSO: 3 critiche + V4 sul sito vero, build in attesa del «vai» — CP-20260911-MX8A
+
+**Ripresa `EMP-2AW3` (APERTA), prossimo = «vai» di Max → F0.** Chiuse per esteso Critica 1→P1, 2→P2, 3→P3 e il V4
+(10 fasi, comandi esatti, gate exit 0, ≈53 h, pesi per il battito, politica di guasto, PM0-PM12).
+**Fatti nuovi letti nel codice del sito vero:** il sito è **NOINDEX** (`layout.tsx:31`); la chiamata si prenota in
+**3 salti col brand del corso** ("Claude Code Mastery" → "Ci vediamo il 20 Maggio" → Calendly): l'ultimo metro non
+esiste; metà delle CTA vanno all'ancora del listino. Il V4 chiude tutto dentro il cantiere (`/prenota/` nostra, noindex
+via in F7 con gate). **Dipendono da Max e NON bloccano (ADR-026/028):** «vai» · ritratto suo · ritratti Gael/Leonardo ·
+Higgsfield · `src` video · P.IVA/sede/PEC · consenso Novacar/Preventa per il nome · Vercel Web Analytics acceso ·
+Calendly attivo. Nessuna riga di codice toccata. `agency-empire/` resta chiuso.
+
 ## 🔄 2026-09-11 sera — V4 ESECUTIVO 7/20: 04-E0.9, 05-E0.6, 07-E1 scritti a mano — CP-20260911-H448
 
 **Ripresa `EMP-D9HD` (APERTA), prossimo `08-E2-RINOMINA.md`.** Tre documenti conformi in più, ogni
