@@ -1,0 +1,992 @@
+{
+ "url": "http://127.0.0.1:3011/",
+ "title": "Digital Empire · AI Workflow Agency · Outreach & Content Automation",
+ "meta_description": "Implementiamo AI Workflow per imprenditori e agenzie. Outreach automatizzato, content al 100%, zero operatività manuale. Demo gratuita in 30 minuti.",
+ "og_title": "Digital Empire · AI Workflow Agency",
+ "lang": "it",
+ "page_height": 14827,
+ "page_width": 1440,
+ "body_bg": "transparent",
+ "body_font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+ "palette_text": [
+  [
+   "#1c1c1c",
+   73
+  ],
+  [
+   "#ffffff",
+   71
+  ],
+  [
+   "#fb4604",
+   64
+  ],
+  [
+   "#8f8a99",
+   52
+  ],
+  [
+   "#d9d4e1",
+   36
+  ],
+  [
+   "#4a4640",
+   26
+  ],
+  [
+   "#6f6a62",
+   15
+  ],
+  [
+   "lab(13.7181 8.47237 -35.0971 / 0.75)",
+   6
+  ],
+  [
+   "#000000",
+   6
+  ],
+  [
+   "#ffffff @0.06",
+   4
+  ],
+  [
+   "#8a8478",
+   2
+  ],
+  [
+   "#36d46a",
+   2
+  ],
+  [
+   "#edeebe",
+   1
+  ],
+  [
+   "#062155",
+   1
+  ],
+  [
+   "transparent",
+   1
+  ],
+  [
+   "#222222",
+   1
+  ],
+  [
+   "#1a0a04",
+   1
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#fb4604",
+   21
+  ],
+  [
+   "#0d0d0d",
+   15
+  ],
+  [
+   "#000000",
+   12
+  ],
+  [
+   "#faf6ee",
+   6
+  ],
+  [
+   "#1c1c1c @0.12",
+   4
+  ],
+  [
+   "#d9d4e1 @0.16",
+   3
+  ],
+  [
+   "#131313",
+   3
+  ],
+  [
+   "#3a3a3a",
+   3
+  ],
+  [
+   "#ffffff @0.25",
+   3
+  ],
+  [
+   "#ffffff @0.08",
+   2
+  ],
+  [
+   "#ffffff @0.05",
+   2
+  ],
+  [
+   "#ffffff",
+   1
+  ],
+  [
+   "#f1eee6",
+   1
+  ],
+  [
+   "#161616",
+   1
+  ],
+  [
+   "#6f6a62",
+   1
+  ],
+  [
+   "#1c1c1c",
+   1
+  ],
+  [
+   "#ffffff @0.02",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   179
+  ],
+  [
+   "\"JetBrains Mono\", \"JetBrains Mono Fallback\"",
+   141
+  ],
+  [
+   "Onest, \"Onest Fallback\", sans-serif",
+   22
+  ],
+  [
+   "\"Playfair Display\", \"Playfair Display Fallback\", Georgia, serif",
+   18
+  ],
+  [
+   "Cinzel, \"Cinzel Fallback\", serif",
+   2
+  ]
+ ],
+ "type_scale": [
+  [
+   "11px / lh 18.15px / w400",
+   71
+  ],
+  [
+   "11px / lh 18.15px / w800",
+   64
+  ],
+  [
+   "16px / lh 26.4px / w400",
+   51
+  ],
+  [
+   "16px / lh 26.4px / w700",
+   33
+  ],
+  [
+   "46px / lh 48.76px / w900",
+   16
+  ],
+  [
+   "18px / lh 25.2px / w600",
+   11
+  ],
+  [
+   "13.5px / lh 20.925px / w400",
+   9
+  ],
+  [
+   "28px / lh 32.2px / w700",
+   9
+  ],
+  [
+   "15px / lh 24.75px / w600",
+   8
+  ],
+  [
+   "16px / lh 26.56px / w400",
+   8
+  ],
+  [
+   "18px / lh 28.8px / w400",
+   7
+  ],
+  [
+   "46px / lh 48.76px / w600",
+   7
+  ],
+  [
+   "46px / lh 48.76px / w400",
+   7
+  ],
+  [
+   "40px / lh 40px / w900",
+   7
+  ],
+  [
+   "14px / lh 23.1px / w500",
+   6
+  ],
+  [
+   "92.16px / lh 92.16px / w900",
+   6
+  ],
+  [
+   "16px / lh 26.4px / w900",
+   6
+  ],
+  [
+   "11px / lh 18.15px / w500",
+   4
+  ],
+  [
+   "18px / lh 18px / w900",
+   4
+  ],
+  [
+   "18px / lh 28.8px / w700",
+   3
+  ],
+  [
+   "40px / lh 66px / w900",
+   3
+  ],
+  [
+   "50px / lh 53px / w900",
+   2
+  ],
+  [
+   "13.5px / lh 22.275px / w600",
+   2
+  ],
+  [
+   "16px / lh 26.4px / w600",
+   2
+  ],
+  [
+   "15.2px / lh 25.08px / w700",
+   1
+  ],
+  [
+   "12.48px / lh 20.592px / w700",
+   1
+  ],
+  [
+   "14px / lh 23.1px / w600",
+   1
+  ],
+  [
+   "50px / lh 52.5px / w900",
+   1
+  ],
+  [
+   "51px / lh 53.55px / w400",
+   1
+  ],
+  [
+   "16px / lh 23.2px / w400",
+   1
+  ],
+  [
+   "13.5px / lh 22.275px / w400",
+   1
+  ],
+  [
+   "32px / lh 36.8px / w700",
+   1
+  ],
+  [
+   "32px / lh 36.8px / w400",
+   1
+  ],
+  [
+   "8.8px / lh 14.52px / w400",
+   1
+  ],
+  [
+   "46.4px / lh 51.04px / w700",
+   1
+  ],
+  [
+   "64px / lh 64px / w900",
+   1
+  ],
+  [
+   "11px / lh 18.7px / w400",
+   1
+  ],
+  [
+   "54px / lh 57.24px / w900",
+   1
+  ],
+  [
+   "54px / lh 57.24px / w400",
+   1
+  ],
+  [
+   "13.5px / lh 23.625px / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "400",
+   161
+  ],
+  [
+   "800",
+   64
+  ],
+  [
+   "700",
+   49
+  ],
+  [
+   "900",
+   47
+  ],
+  [
+   "600",
+   31
+  ],
+  [
+   "500",
+   10
+  ]
+ ],
+ "radii": [
+  [
+   "12px",
+   15
+  ],
+  [
+   "4px",
+   15
+  ],
+  [
+   "3.35544e+07px",
+   13
+  ],
+  [
+   "8px",
+   9
+  ],
+  [
+   "3px",
+   6
+  ],
+  [
+   "16px",
+   2
+  ],
+  [
+   "6px",
+   2
+  ],
+  [
+   "14px",
+   1
+  ],
+  [
+   "10px",
+   1
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Ti costa uno stipendio un lavoro che si fa da solo."
+  },
+  {
+   "tag": "h2",
+   "text": "Ti voglio bene, ma lo stai facendo a mano."
+  },
+  {
+   "tag": "h2",
+   "text": "Quello che installiamo, misurato."
+  },
+  {
+   "tag": "h2",
+   "text": "Alle 7:40 ha già mandato 300 messaggi."
+  },
+  {
+   "tag": "h3",
+   "text": "Un argomento entra. Carosello, reel, caption escono."
+  },
+  {
+   "tag": "h2",
+   "text": "Novacar: 65 preventivi in dieci giorni."
+  },
+  {
+   "tag": "h2",
+   "text": "Hai competitor e non lo sai."
+  },
+  {
+   "tag": "h3",
+   "text": "Stessi limiti tuoi. Il primo che li risolve non lo raggiungi più."
+  },
+  {
+   "tag": "h2",
+   "text": "I quattro segnali che la tua operatività ti sta mangiando."
+  },
+  {
+   "tag": "h2",
+   "text": "Ascolta bene: chi ti passa davanti ha un sistema, non più talento"
+  },
+  {
+   "tag": "h2",
+   "text": "Produttività = cose utili fatte / ore tue."
+  },
+  {
+   "tag": "h2",
+   "text": "Dal briefing al go-live senza mesi di sviluppo."
+  },
+  {
+   "tag": "h2",
+   "text": "Parli con chi ha le mani sui workflow. Per scelta, non per limite."
+  },
+  {
+   "tag": "h2",
+   "text": "Lavoriamo solo con chi ha già qualcosa che funziona."
+  },
+  {
+   "tag": "h2",
+   "text": "Due casi con nome. Le facce le stiamo raccogliendo."
+  },
+  {
+   "tag": "h2",
+   "text": "Funziona come scritto nel contratto, o lo rifacciamo noi."
+  },
+  {
+   "tag": "h2",
+   "text": "Le sei cose che stai pensando. In ordine."
+  },
+  {
+   "tag": "h2",
+   "text": "Cosa ottieni se prenoti adesso."
+  },
+  {
+   "tag": "h2",
+   "text": "Domande che ci fanno davvero."
+  },
+  {
+   "tag": "h2",
+   "text": "In chiamata la vedi girare."
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Salta al contenuto",
+   "href": "#main",
+   "y": 15,
+   "x": 15,
+   "w": 58,
+   "h": 30,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "DE DIGITAL EMPIRE",
+   "href": "#",
+   "y": 20,
+   "x": 104,
+   "w": 217,
+   "h": 52,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "16px",
+   "border": "1px solid rgba(255, 255, 255, 0.85)",
+   "shadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.06) 0px -1px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px 8px 22px -10px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "transform": "none",
+   "padding": "7.2px 13.6px"
+  },
+  {
+   "text": "Demo gratuita",
+   "href": "/prenota",
+   "y": 26,
+   "x": 1188,
+   "w": 148,
+   "h": 41,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Prenota la chiamata",
+   "href": "/prenota",
+   "y": 661,
+   "x": 725,
+   "w": 220,
+   "h": 55,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "Vediamo la tua, in chiamata",
+   "href": "/prenota",
+   "y": 3336,
+   "x": 232,
+   "w": 271,
+   "h": 55,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "",
+   "href": null,
+   "y": 4197,
+   "x": 1131,
+   "w": 44,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#1c1c1c",
+   "radius": "12px",
+   "border": "1px solid rgba(28, 28, 28, 0.3)",
+   "shadow": "none",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "13.5px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "",
+   "href": null,
+   "y": 4321,
+   "x": 1131,
+   "w": 44,
+   "h": 44,
+   "bg": "transparent",
+   "color": "#1c1c1c",
+   "radius": "12px",
+   "border": "1px solid rgba(28, 28, 28, 0.3)",
+   "shadow": "none",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "13.5px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Voglio un sistema così",
+   "href": "/prenota",
+   "y": 4467,
+   "x": 232,
+   "w": 236,
+   "h": 55,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "Sì, mi ritrovo",
+   "href": null,
+   "y": 6093,
+   "x": 640,
+   "w": 121,
+   "h": 48,
+   "bg": "transparent",
+   "color": "#1c1c1c",
+   "radius": "12px",
+   "border": "1px solid rgba(28, 28, 28, 0.3)",
+   "shadow": "none",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "13.5px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "12px 20px"
+  },
+  {
+   "text": "Non mi ritrovo",
+   "href": null,
+   "y": 6093,
+   "x": 777,
+   "w": 131,
+   "h": 48,
+   "bg": "transparent",
+   "color": "#1c1c1c",
+   "radius": "12px",
+   "border": "1px solid rgba(28, 28, 28, 0.3)",
+   "shadow": "none",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "13.5px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "12px 20px"
+  },
+  {
+   "text": "Fammi vedere il sistema",
+   "href": "/prenota",
+   "y": 6750,
+   "x": 232,
+   "w": 247,
+   "h": 55,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "Partiamo dal briefing",
+   "href": "/prenota",
+   "y": 8431,
+   "x": 232,
+   "w": 226,
+   "h": 55,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "Se sei nella prima colonna, prenota",
+   "href": "/prenota",
+   "y": 10032,
+   "x": 232,
+   "w": 324,
+   "h": 55,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "Va bene, vediamolo",
+   "href": "/prenota",
+   "y": 11328,
+   "x": 740,
+   "w": 217,
+   "h": 55,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "Prenota la chiamata",
+   "href": "/prenota",
+   "y": 13068,
+   "x": 401,
+   "w": 234,
+   "h": 60,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 30.4px"
+  },
+  {
+   "text": "Prenota la chiamata",
+   "href": "/prenota",
+   "y": 14402,
+   "x": 603,
+   "w": 234,
+   "h": 60,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 30.4px"
+  }
+ ],
+ "images": [
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 39,
+   "x": 1305,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n1-hero.webp",
+   "alt": "Ritratto in luce di taglio, sguardo dritto — chi ha costruito il sistema",
+   "y": 137,
+   "x": 0,
+   "w": 662,
+   "h": 663
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 680,
+   "x": 899,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n2-specchio.webp",
+   "alt": "Uomo in giacca seduto con la mano sul viso",
+   "y": 969,
+   "x": 232,
+   "w": 300,
+   "h": 300
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n4-content.webp",
+   "alt": "Uomo con occhiali al lavoro, braccia conserte, luce fredda",
+   "y": 2947,
+   "x": 888,
+   "w": 320,
+   "h": 427
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3355,
+   "x": 458,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4211,
+   "x": 1145,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4335,
+   "x": 1145,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4487,
+   "x": 423,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n6-fascia.webp",
+   "alt": "Silhouette in controluce davanti a tre finestre, senza volto",
+   "y": 4982,
+   "x": 232,
+   "w": 336,
+   "h": 420
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n8-ascolta-bene.webp",
+   "alt": "Pugile in piedi sopra l'avversario a terra, sul ring",
+   "y": 6343,
+   "x": 868,
+   "w": 340,
+   "h": 453
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6770,
+   "x": 434,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n9-formula.webp",
+   "alt": "Uomo che conta banconote dentro un'asciugatrice",
+   "y": 7049,
+   "x": 908,
+   "w": 300,
+   "h": 400
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n10-processo.webp",
+   "alt": "Uomo con un bicchiere, fine giornata, luce calda",
+   "y": 7864,
+   "x": 928,
+   "w": 280,
+   "h": 373
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 8450,
+   "x": 413,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n11-max.webp",
+   "alt": "Max, ritratto in luce di taglio",
+   "y": 8790,
+   "x": 232,
+   "w": 228,
+   "h": 285
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n11-gael.webp",
+   "alt": "Gael, ritratto in luce di taglio",
+   "y": 8790,
+   "x": 472,
+   "w": 228,
+   "h": 285
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n12-per-chi.webp",
+   "alt": "Uomo in camicia e bretelle, mani giunte, in ufficio",
+   "y": 9379,
+   "x": 928,
+   "w": 280,
+   "h": 280
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10052,
+   "x": 511,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n14-garanzia.webp",
+   "alt": "Elmo da cavaliere medievale, visiera abbassata, luce laterale",
+   "y": 10924,
+   "x": 232,
+   "w": 368,
+   "h": 460
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11347,
+   "x": 912,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "http://127.0.0.1:8787/n15-obiezioni.webp",
+   "alt": "Uomo con occhiali da sole che saluta dal finestrino di un'auto",
+   "y": 11782,
+   "x": 848,
+   "w": 360,
+   "h": 360
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13090,
+   "x": 587,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14424,
+   "x": 790,
+   "w": 16,
+   "h": 16
+  }
+ ],
+ "slices_desktop": 17,
+ "slices_mobile": 26,
+ "mobile_page_height": 21335
+}

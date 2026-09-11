@@ -1,0 +1,2231 @@
+{
+ "url": "https://agency-empire-kohl.vercel.app/",
+ "title": "Digital Empire · AI Workflow Agency · Outreach & Content Automation",
+ "meta_description": "Implementiamo AI Workflow per imprenditori e agenzie. Outreach automatizzato, content al 100%, zero operatività manuale. Demo gratuita in 30 minuti.",
+ "og_title": "Digital Empire · AI Workflow Agency",
+ "lang": "it",
+ "page_height": 21215,
+ "page_width": 1440,
+ "body_bg": "transparent",
+ "body_font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+ "palette_text": [
+  [
+   "#ffffff",
+   71
+  ],
+  [
+   "#1c1c1c",
+   70
+  ],
+  [
+   "#fb4604",
+   62
+  ],
+  [
+   "transparent",
+   54
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.9)",
+   45
+  ],
+  [
+   "#0a0a0a",
+   30
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+   25
+  ],
+  [
+   "#fb4604 @0.75",
+   15
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.8)",
+   15
+  ],
+  [
+   "#fb4604 @0.06",
+   15
+  ],
+  [
+   "#0a0a0a @0.82",
+   12
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.65)",
+   11
+  ],
+  [
+   "#111111",
+   11
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+   9
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.45)",
+   6
+  ],
+  [
+   "lab(13.7181 8.47237 -35.0971 / 0.75)",
+   5
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+   5
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)",
+   5
+  ],
+  [
+   "#fb4604 @0.9",
+   5
+  ],
+  [
+   "lab(57.9055 67.6615 69.3065 / 0.8)",
+   5
+  ],
+  [
+   "lab(57.9055 67.6615 69.3065 / 0.9)",
+   5
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+   4
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+   4
+  ],
+  [
+   "#ffffff @0.65",
+   4
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+   3
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.6)",
+   3
+  ],
+  [
+   "#d4aaff",
+   3
+  ],
+  [
+   "#90c0ff",
+   3
+  ],
+  [
+   "#88e8b8",
+   3
+  ],
+  [
+   "#f0c84a",
+   3
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.55)",
+   3
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.7)",
+   2
+  ],
+  [
+   "#ffffff @0.5",
+   2
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.35)",
+   2
+  ],
+  [
+   "#edeebe",
+   1
+  ],
+  [
+   "#062155",
+   1
+  ],
+  [
+   "#ffffff @0.75",
+   1
+  ],
+  [
+   "#7b4fb0",
+   1
+  ],
+  [
+   "lab(65.0976 40.5542 -51.7263 / 0.85)",
+   1
+  ],
+  [
+   "#dc2f37",
+   1
+  ],
+  [
+   "lab(2.74175 0 0.00000596046 / 0.65)",
+   1
+  ],
+  [
+   "lab(2.74175 0 0.00000596046 / 0.75)",
+   1
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.25)",
+   1
+  ],
+  [
+   "#c93a0a",
+   1
+  ],
+  [
+   "#ff8a4a",
+   1
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.65)",
+   1
+  ],
+  [
+   "lab(57.9055 67.6615 69.3065 / 0.85)",
+   1
+  ],
+  [
+   "#0a0a0a @0.75",
+   1
+  ],
+  [
+   "lab(75.0771 -60.7313 19.4147)",
+   1
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#fb4604",
+   26
+  ],
+  [
+   "#ffffff",
+   11
+  ],
+  [
+   "#fb4604 @0.08",
+   6
+  ],
+  [
+   "#ffffff @0.04",
+   4
+  ],
+  [
+   "#ffffff @0.14",
+   4
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.04)",
+   3
+  ],
+  [
+   "#dc2f37 @0.15",
+   2
+  ],
+  [
+   "#0d0d0d",
+   1
+  ],
+  [
+   "#ffffff @0.04 (+img)",
+   1
+  ],
+  [
+   "lab(2.74175 0 0.00000596046 / 0.95)",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   370
+  ],
+  [
+   "Onest, \"Onest Fallback\", sans-serif",
+   85
+  ],
+  [
+   "\"Playfair Display\", \"Playfair Display Fallback\", serif",
+   51
+  ],
+  [
+   "Cinzel, \"Cinzel Fallback\", serif",
+   22
+  ],
+  [
+   "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+   7
+  ]
+ ],
+ "type_scale": [
+  [
+   "11px / lh 18.15px / w800",
+   80
+  ],
+  [
+   "46.4px / lh 51.04px / w700",
+   38
+  ],
+  [
+   "14.72px / lh 24.288px / w400",
+   27
+  ],
+  [
+   "30px / lh 36px / w600",
+   22
+  ],
+  [
+   "20.8px / lh 27.04px / w600",
+   21
+  ],
+  [
+   "13px / lh 21.45px / w600",
+   20
+  ],
+  [
+   "10.56px / lh 17.424px / w700",
+   15
+  ],
+  [
+   "138px / lh 138px / w700",
+   15
+  ],
+  [
+   "15.68px / lh 18.816px / w600",
+   12
+  ],
+  [
+   "13.12px / lh 21.32px / w400",
+   12
+  ],
+  [
+   "16px / lh 26.4px / w600",
+   11
+  ],
+  [
+   "15.36px / lh 24.96px / w300",
+   11
+  ],
+  [
+   "15.36px / lh 24.96px / w500",
+   10
+  ],
+  [
+   "11.2px / lh 18.48px / w600",
+   9
+  ],
+  [
+   "15.36px / lh 24.96px / w400",
+   9
+  ],
+  [
+   "11.2px / lh 18.48px / w700",
+   9
+  ],
+  [
+   "12.48px / lh 20.592px / w600",
+   8
+  ],
+  [
+   "56px / lh 56px / w700",
+   8
+  ],
+  [
+   "12.48px / lh 20.592px / w400",
+   8
+  ],
+  [
+   "13.6px / lh 22.44px / w400",
+   7
+  ],
+  [
+   "16.8px / lh 27.3px / w300",
+   7
+  ],
+  [
+   "11.2px / lh 18.48px / w400",
+   7
+  ],
+  [
+   "19.2px / lh 35.52px / w400",
+   6
+  ],
+  [
+   "9.6px / lh 15.84px / w700",
+   6
+  ],
+  [
+   "14.4px / lh 23.4px / w400",
+   6
+  ],
+  [
+   "18px / lh 33.3px / w400",
+   6
+  ],
+  [
+   "14px / lh 23.1px / w500",
+   5
+  ],
+  [
+   "17px / lh 27.625px / w300",
+   5
+  ],
+  [
+   "15.2px / lh 25.08px / w400",
+   5
+  ],
+  [
+   "14.72px / lh 23.92px / w400",
+   5
+  ],
+  [
+   "10.88px / lh 17.952px / w700",
+   5
+  ],
+  [
+   "18px / lh 33.3px / w700",
+   5
+  ],
+  [
+   "150px / lh 150px / w400",
+   5
+  ],
+  [
+   "30px / lh 36px / w500",
+   5
+  ],
+  [
+   "15.36px / lh 25.344px / w700",
+   5
+  ],
+  [
+   "12.48px / lh 20.592px / w800",
+   4
+  ],
+  [
+   "15.36px / lh 25.344px / w400",
+   4
+  ],
+  [
+   "24px / lh 39.6px / w700",
+   4
+  ],
+  [
+   "20.8px / lh 27.04px / w700",
+   4
+  ],
+  [
+   "18px / lh 29.7px / w700",
+   4
+  ],
+  [
+   "11px / lh 18.15px / w700",
+   4
+  ],
+  [
+   "18px / lh 32.4px / w600",
+   3
+  ],
+  [
+   "19.2px / lh 35.52px / w600",
+   3
+  ],
+  [
+   "10.4px / lh 17.16px / w600",
+   3
+  ],
+  [
+   "14.08px / lh 22.88px / w300",
+   3
+  ],
+  [
+   "11px / lh 18.15px / w900",
+   3
+  ],
+  [
+   "9.92px / lh 16.368px / w600",
+   3
+  ],
+  [
+   "10px / lh 16.5px / w900",
+   3
+  ],
+  [
+   "17px / lh 27.625px / w400",
+   3
+  ],
+  [
+   "13.6px / lh 22.44px / w700",
+   3
+  ],
+  [
+   "14.72px / lh 18.4px / w600",
+   3
+  ],
+  [
+   "12.48px / lh 15.6px / w400",
+   3
+  ],
+  [
+   "14.72px / lh 23.92px / w300",
+   2
+  ],
+  [
+   "14.72px / lh 24.288px / w600",
+   2
+  ],
+  [
+   "30px / lh 36px / w800",
+   2
+  ],
+  [
+   "14px / lh 22.75px / w400",
+   2
+  ],
+  [
+   "29.6px / lh 38.48px / w700",
+   2
+  ],
+  [
+   "15px / lh 24.75px / w600",
+   1
+  ],
+  [
+   "15.2px / lh 25.08px / w700",
+   1
+  ],
+  [
+   "12.48px / lh 20.592px / w700",
+   1
+  ],
+  [
+   "14px / lh 23.1px / w600",
+   1
+  ],
+  [
+   "52px / lh 54.08px / w700",
+   1
+  ],
+  [
+   "92.8px / lh 97.44px / w700",
+   1
+  ],
+  [
+   "18px / lh 32.4px / w300",
+   1
+  ],
+  [
+   "15px / lh 24.75px / w500",
+   1
+  ],
+  [
+   "14px / lh 23.1px / w400",
+   1
+  ],
+  [
+   "16.8px / lh 27.72px / w400",
+   1
+  ],
+  [
+   "15.2px / lh 25.08px / w600",
+   1
+  ],
+  [
+   "16.8px / lh 27.3px / w600",
+   1
+  ],
+  [
+   "13.6px / lh 22.44px / w600",
+   1
+  ],
+  [
+   "13.6px / lh 22.44px / w500",
+   1
+  ],
+  [
+   "8px / lh 13.2px / w600",
+   1
+  ],
+  [
+   "10px / lh 16.5px / w700",
+   1
+  ],
+  [
+   "48px / lh 79.2px / w700",
+   1
+  ],
+  [
+   "24.8px / lh 24.8px / w700",
+   1
+  ],
+  [
+   "13.12px / lh 21.648px / w400",
+   1
+  ],
+  [
+   "16px / lh 26px / w400",
+   1
+  ],
+  [
+   "16px / lh 26px / w700",
+   1
+  ],
+  [
+   "14px / lh 22.75px / w700",
+   1
+  ],
+  [
+   "14.4px / lh 23.76px / w600",
+   1
+  ],
+  [
+   "18px / lh 33.3px / w600",
+   1
+  ],
+  [
+   "17.6px / lh 28.6px / w300",
+   1
+  ],
+  [
+   "15px / lh 24.75px / w300",
+   1
+  ],
+  [
+   "11.52px / lh 19.008px / w600",
+   1
+  ],
+  [
+   "16px / lh 24px / w700",
+   1
+  ],
+  [
+   "13.6px / lh 13.6px / w700",
+   1
+  ],
+  [
+   "10.4px / lh 10.4px / w400",
+   1
+  ],
+  [
+   "12px / lh 16px / w600",
+   1
+  ],
+  [
+   "14px / lh 20px / w400",
+   1
+  ],
+  [
+   "14px / lh 20px / w600",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "700",
+   138
+  ],
+  [
+   "600",
+   131
+  ],
+  [
+   "400",
+   121
+  ],
+  [
+   "800",
+   86
+  ],
+  [
+   "300",
+   31
+  ],
+  [
+   "500",
+   22
+  ],
+  [
+   "900",
+   6
+  ]
+ ],
+ "radii": [
+  [
+   "22px",
+   43
+  ],
+  [
+   "12px",
+   41
+  ],
+  [
+   "16px",
+   37
+  ],
+  [
+   "3.35544e+07px",
+   35
+  ],
+  [
+   "9999px",
+   27
+  ],
+  [
+   "8px",
+   13
+  ],
+  [
+   "14px",
+   4
+  ],
+  [
+   "50%",
+   4
+  ],
+  [
+   "6px",
+   4
+  ],
+  [
+   "10px",
+   4
+  ],
+  [
+   "3px",
+   3
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Automatizziamo la tua operatività con AI Workflows."
+  },
+  {
+   "tag": "h2",
+   "text": "Quello che automatizziamo, funziona."
+  },
+  {
+   "tag": "h2",
+   "text": "Due workflow. Un solo obiettivo: liberarti dall'operatività."
+  },
+  {
+   "tag": "h3",
+   "text": "Outreach Workflow"
+  },
+  {
+   "tag": "h3",
+   "text": "Content Workflow"
+  },
+  {
+   "tag": "h3",
+   "text": "Landing Page Premium + CRO Engineering"
+  },
+  {
+   "tag": "h2",
+   "text": "Il problema che blocca il 90% dei business."
+  },
+  {
+   "tag": "h3",
+   "text": "La tua giornata senza workflow"
+  },
+  {
+   "tag": "h3",
+   "text": "La tua giornata con i workflow"
+  },
+  {
+   "tag": "h2",
+   "text": "I 4 segnali che la tua operatività ti sta costando clienti."
+  },
+  {
+   "tag": "h2",
+   "text": "Se riconosci anche solo uno di quei 4 segnali..."
+  },
+  {
+   "tag": "h2",
+   "text": "Framework F.L.O.W."
+  },
+  {
+   "tag": "h3",
+   "text": "Flusso. Mappiamo tutto."
+  },
+  {
+   "tag": "h3",
+   "text": "Logica. Progettiamo il sistema."
+  },
+  {
+   "tag": "h3",
+   "text": "Output. Costruiamo e testiamo."
+  },
+  {
+   "tag": "h3",
+   "text": "Watch. Monitoriamo e ottimizziamo."
+  },
+  {
+   "tag": "h2",
+   "text": "Un workflow è una pipeline intelligente."
+  },
+  {
+   "tag": "h2",
+   "text": "Cinque step, zero ambiguità."
+  },
+  {
+   "tag": "h3",
+   "text": "Demo Call"
+  },
+  {
+   "tag": "h3",
+   "text": "Blueprint"
+  },
+  {
+   "tag": "h3",
+   "text": "Build"
+  },
+  {
+   "tag": "h3",
+   "text": "Go Live"
+  },
+  {
+   "tag": "h3",
+   "text": "Ottimizzazione"
+  },
+  {
+   "tag": "h2",
+   "text": "Nessun tool segreto. Solo quelli che usiamo ogni giorno."
+  },
+  {
+   "tag": "h3",
+   "text": "Make (Integromat)"
+  },
+  {
+   "tag": "h3",
+   "text": "n8n"
+  },
+  {
+   "tag": "h3",
+   "text": "Clay"
+  },
+  {
+   "tag": "h3",
+   "text": "Apollo.io"
+  },
+  {
+   "tag": "h3",
+   "text": "Claude AI"
+  },
+  {
+   "tag": "h3",
+   "text": "Instantly"
+  },
+  {
+   "tag": "h3",
+   "text": "HeyReach"
+  },
+  {
+   "tag": "h3",
+   "text": "Airtable"
+  },
+  {
+   "tag": "h3",
+   "text": "Notion"
+  },
+  {
+   "tag": "h3",
+   "text": "PhantomBuster"
+  },
+  {
+   "tag": "h3",
+   "text": "Buffer / Later"
+  },
+  {
+   "tag": "h3",
+   "text": "ElevenLabs"
+  },
+  {
+   "tag": "h2",
+   "text": "Non solo teoria. Lavori reali."
+  },
+  {
+   "tag": "h2",
+   "text": "Siamo Digital Empire. Costruiamo, non promettiamo."
+  },
+  {
+   "tag": "h2",
+   "text": "Tre persone. Zero filtri tra te e chi costruisce."
+  },
+  {
+   "tag": "h3",
+   "text": "Maximilian"
+  },
+  {
+   "tag": "h3",
+   "text": "Gael"
+  },
+  {
+   "tag": "h3",
+   "text": "Leonardo"
+  },
+  {
+   "tag": "h2",
+   "text": "Lavoriamo solo con chi possiamo davvero aiutare."
+  },
+  {
+   "tag": "h3",
+   "text": "Lavoriamo con te se..."
+  },
+  {
+   "tag": "h3",
+   "text": "Non lavoriamo con te se..."
+  },
+  {
+   "tag": "h2",
+   "text": "Quello che dicono di noi."
+  },
+  {
+   "tag": "h2",
+   "text": "“Ok, ma cosa include davvero il workflow?”"
+  },
+  {
+   "tag": "h2",
+   "text": "Se non funziona, lo sistemiamo gratis."
+  },
+  {
+   "tag": "h2",
+   "text": "Le 5 obiezioni che demoliamo prima di iniziare."
+  },
+  {
+   "tag": "h3",
+   "text": "“Costa troppo per quello che fa.”"
+  },
+  {
+   "tag": "h3",
+   "text": "“Ho già provato strumenti AI, non funzionano davvero.”"
+  },
+  {
+   "tag": "h3",
+   "text": "“Non vi conosco abbastanza per fidarmi.”"
+  },
+  {
+   "tag": "h3",
+   "text": "“Non ho tempo per implementare qualcosa di nuovo.”"
+  },
+  {
+   "tag": "h3",
+   "text": "“E se il workflow smette di funzionare dopo 2 mesi?”"
+  },
+  {
+   "tag": "h2",
+   "text": "Quello che ci chiedono."
+  },
+  {
+   "tag": "h2",
+   "text": "Automatizza ciò che ti blocca. Adesso."
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Salta al contenuto",
+   "href": "#main",
+   "y": 15,
+   "x": 15,
+   "w": 58,
+   "h": 30,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "DE DIGITAL EMPIRE",
+   "href": "#",
+   "y": 20,
+   "x": 104,
+   "w": 217,
+   "h": 52,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "16px",
+   "border": "1px solid rgba(255, 255, 255, 0.85)",
+   "shadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.06) 0px -1px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px 8px 22px -10px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "transform": "none",
+   "padding": "7.2px 13.6px"
+  },
+  {
+   "text": "Demo gratuita",
+   "href": "/prenota",
+   "y": 26,
+   "x": 1188,
+   "w": 148,
+   "h": 41,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Vedi come funziona",
+   "href": "#servizi",
+   "y": 671,
+   "x": 730,
+   "w": 219,
+   "h": 55,
+   "bg": "#ffffff @0.04",
+   "color": "#ffffff @0.75",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.18)",
+   "shadow": "none",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "15px",
+   "weight": "500",
+   "transform": "none",
+   "padding": "14px 28px"
+  },
+  {
+   "text": "Prenota Ora",
+   "href": "/prenota",
+   "y": 926,
+   "x": 1063,
+   "w": 145,
+   "h": 42,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "10px 20px"
+  },
+  {
+   "text": "CCM CASE STUDY LIVE INFO-BUSINESS · FORMAZIONE AI Claude Code Mastery Da AI User a System Architect Sales page lanciata ",
+   "href": "https://formazione-systemarchitect.netlify.app/",
+   "y": 10110,
+   "x": 104,
+   "w": 395,
+   "h": 672,
+   "bg": "transparent",
+   "color": "#ffffff",
+   "radius": "22px",
+   "border": "1px solid rgba(251, 70, 4, 0.45)",
+   "shadow": "rgba(255, 255, 255, 0.52) 0px 2px 0px 0px inset, rgba(0, 0, 30, 0.45) 0px -2px 0px 0px inset, rgba(0, 0, 0, 0.65) 0px 45px 80px -24px",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "transform": "none",
+   "padding": "26.4px 24px"
+  },
+  {
+   "text": "Prenota la demo gratuita",
+   "href": null,
+   "y": 20514,
+   "x": 909,
+   "w": 270,
+   "h": 60,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, \"Onest Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 30.4px"
+  }
+ ],
+ "images": [
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 39,
+   "x": 1305,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 254,
+   "x": 537,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 690,
+   "x": 667,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 690,
+   "x": 904,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 752,
+   "x": 487,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 939,
+   "x": 1171,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 941,
+   "x": 243,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1842,
+   "x": 900,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1844,
+   "x": 151,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2059,
+   "x": 886,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2083,
+   "x": 139,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2095,
+   "x": 886,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2120,
+   "x": 139,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2131,
+   "x": 886,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2157,
+   "x": 139,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2168,
+   "x": 886,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2194,
+   "x": 139,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2204,
+   "x": 886,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2232,
+   "x": 139,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2287,
+   "x": 310,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2289,
+   "x": 1002,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2412,
+   "x": 411,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2550,
+   "x": 594,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2581,
+   "x": 594,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2611,
+   "x": 594,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3168,
+   "x": 271,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3168,
+   "x": 770,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3242,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3242,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3280,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3280,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3319,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3344,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3358,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3383,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3397,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3422,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4050,
+   "x": 346,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4050,
+   "x": 659,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4050,
+   "x": 972,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4050,
+   "x": 1285,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6755,
+   "x": 560,
+   "w": 320,
+   "h": 360
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6759,
+   "x": 179,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6869,
+   "x": 974,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 6980,
+   "x": 179,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7679,
+   "x": 387,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7895,
+   "x": 387,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 8111,
+   "x": 387,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 8327,
+   "x": 387,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 8543,
+   "x": 387,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9876,
+   "x": 646,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10231,
+   "x": 706,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10231,
+   "x": 1125,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10732,
+   "x": 458,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 147,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 564,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11715,
+   "x": 982,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 12493,
+   "x": 799,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13030,
+   "x": 275,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13030,
+   "x": 773,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13090,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13090,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13154,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13154,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13217,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13217,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13281,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13281,
+   "x": 761,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13320,
+   "x": 263,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13750,
+   "x": 135,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13750,
+   "x": 553,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13750,
+   "x": 972,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 135,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 151,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 167,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 183,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 199,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 553,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 569,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 585,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 601,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 617,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 972,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 988,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 1004,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 1020,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13924,
+   "x": 1036,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14215,
+   "x": 375,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15199,
+   "x": 653,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15777,
+   "x": 599,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16087,
+   "x": 598,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16287,
+   "x": 269,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16287,
+   "x": 601,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16287,
+   "x": 933,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16695,
+   "x": 622,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16895,
+   "x": 269,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16895,
+   "x": 601,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16895,
+   "x": 933,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17304,
+   "x": 592,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17504,
+   "x": 269,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17504,
+   "x": 601,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17504,
+   "x": 933,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17912,
+   "x": 600,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18112,
+   "x": 269,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18112,
+   "x": 601,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18112,
+   "x": 933,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18520,
+   "x": 576,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18720,
+   "x": 269,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18720,
+   "x": 601,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 18720,
+   "x": 933,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19398,
+   "x": 1060,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19539,
+   "x": 1060,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19606,
+   "x": 1060,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19674,
+   "x": 1060,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19741,
+   "x": 1060,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19809,
+   "x": 1060,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20109,
+   "x": 119,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20450,
+   "x": 109,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20488,
+   "x": 109,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20526,
+   "x": 109,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20536,
+   "x": 1132,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20589,
+   "x": 104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20914,
+   "x": 744,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20915,
+   "x": 1064,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20950,
+   "x": 744,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20980,
+   "x": 744,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21023,
+   "x": 1074,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21023,
+   "x": 1118,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21023,
+   "x": 1162,
+   "w": 16,
+   "h": 16
+  }
+ ],
+ "slices_desktop": 24,
+ "slices_mobile": 39,
+ "mobile_page_height": 32482
+}
