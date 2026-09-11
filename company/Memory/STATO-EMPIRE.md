@@ -1,3 +1,33 @@
+## ⏸️ 2026-09-11 — EMP-V6DE IN PAUSA (si riprende in chat nuova) — CP-20260911-FHFZ
+
+**5 video con la copertina di Max pronti al primo caricamento vero** (`video-02,03,04,06,07`,
+fermi da 7-19 gg). Trovato **perche'** nessuno li ha mai caricati: il comando documentato
+(`--phase 5 --upload --video-folder`) **rifaceva il video su Fliki a pagamento** invece di
+caricare quello pronto — `--phase` era un tetto, non una partenza, e l'help mentiva. **Corretto e
+provato** (16 test OK). Nuovo `carica_pronti.py` (17 test): scansiona VIDEO-PRONTI, uno per volta,
+`--prova` default. **Il caricamento vero si fa solo con il si' di Max.**
+
+Tre dry-run reali su YouTube Studio senza un clic: l'ipotesi «31 privati da pubblicare» era
+sbagliata (sono 7 mai caricati + 16 mp4 di aprile + 3 libri); un video puo' essere in **bozza**,
+non in privato; il lettore di stato funziona (`QwtZ2e2MY1c` letto come pubblico).
+
+**Bilancio EMP-V6DE da ieri:** A6 chiusa 10/10, 11 script nuovi, ~147 test, 4 bug di produzione
+corretti, ADR-029, gate Missione con innesco. Missione al 21%.
+
+**Coordinamento:** nessun file in comune con EMP-8M9F (Libro Agency): le due chat corrono insieme.
+
+**RIPRESA DA:** `EMP-V6DE` in chat nuova → primo caricamento vero su ordine di Max.
+
+---
+
+## ⏸️ 2026-09-11 — CHECKPOINT D'URGENZA (chat satura): V4 ESECUTIVO 4/20, ripresa EMP-D9HD — CP-20260911-TVMY
+
+**Codice di ripresa: `EMP-D9HD` (APERTA).** V4 in scrittura A MANO: 11 sentinelle su 11 stallate
+al watchdog (stream sub-agenti morto dopo un ENOTFOUND). Conformi: 00-INDICE, 01-E0a, 02-E0.5,
+03-E0b, 06-E0.7 + `scripts/verifica_v4.py` (il gate). Scheletri 04/05/07/08 su disco. Tre
+correzioni al piano fatte misurando (trace esiste; ultimo_metro senza --json; REGISTRO-NUMERI in
+Ecosistemi/). **Il blocco ⚠️ COORDINAMENTO V4 sotto resta valido.** Divieto costruttivo in vigore.
+
 ## ⚠️ COORDINAMENTO — 2026-09-11 — V4 ESECUTIVO del Piano Impero Vivo (EMP-MCC4) IN SCRITTURA
 
 **Chi:** Emperator, su "vai" di Max (segue CP-20260910-RYHK: V3 chiusa, Critica 3 saltata — nessun FATALE nuovo).
@@ -702,13 +732,6 @@ di lasciarle scritte:**
    non da discutere.
 
 Dettagli: [CP-20260908-RZC2](checkpoints/CP-20260908-RZC2.md) · [[ADR-025]] · [[ADR-026]].
-
-## ⚠️ COORDINAMENTO — 2026-09-07, in corso — studio AI TUBE PRO / A6 Viral Mastery (2/10)
-
-**Max ha ordinato la ripresa ("vai continua").** Costruzione grossa in corso su:
-`SKILL & Agenti/Empire Studio Suite/empire-studio/runs/corso-aitubepro/` e
-`company/Memory/studi/aitubepro/A6-viral-mastery/`. **Gael/Neri: non toccare questi due percorsi
-finché questo blocco non sparisce.** Rimuovo il blocco al gate A6 chiuso.
 
 ## 📕 2026-09-07 — The Midnight Ledger finito (118 pagine, zero avvisi) — CP-20260907-EN82
 

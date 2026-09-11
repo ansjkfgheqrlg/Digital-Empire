@@ -14,6 +14,20 @@ Studiare **167 lezioni** (AI TUBE PRO 116 + Bonus Esclusivi 51, portale
 `YOUTUBE-AUTOMATION-FACTORY` in tutto cio' che serve**. Piano approvato da Max il
 2026-09-04: [PIANO-STUDIO-AITUBEPRO](../plans/PIANO-STUDIO-AITUBEPRO.md).
 
+## ▶️ RIPRESA — leggi prima [CP-20260911-FHFZ](../checkpoints/CP-20260911-FHFZ.md), poi torna qui
+
+**Stato al 2026-09-11 sera:** missione al **21%**. A4 e A6 chiuse (33/167 lezioni). **11 script
+nuovi** nella fabbrica, 4 bug di produzione corretti e provati, 3 agenti e 2 skill nuovi.
+
+**LA PRIMA COSA DA FARE:** il primo caricamento vero dei 5 video pronti (`video-02,03,04,06,07`,
+copertina di Max, fermi da 7-19 giorni). Il comando era rotto — rifaceva il video su Fliki invece
+di caricarlo — ed e' **riparato e provato**. Si fa con `carica_pronti.py --conferma`, uno per
+volta, **solo con il si' esplicito di Max** perche' tocca il canale. Dettaglio completo, tabella
+dei video, trappole nuove e ordine dei passi successivi: nel checkpoint.
+
+**Poi:** run reale di `youtube_studio_reader.py` (primi euro in Tesoreria), regole di binario B
+rimaste, categoria `Intelligenza Artificiale` (12 lezioni, mai iniziata).
+
 ## ⚠️ MANDATO CORRETTO DA MAX — 2026-09-10. Vale sopra ogni riga precedente di questo file.
 
 **Ordine testuale di Max:** *"non solo delle regole, ma proprio delle vere implementazioni...
