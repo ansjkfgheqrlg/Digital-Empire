@@ -6,4 +6,4 @@ due cantieri diventa pattern; un errore accaduto due volte diventa controllo del
 | Cantiere | Data | Corsia | URL vivo | Stato | Lezione |
 |---|---|---|---|---|---|
 | agency-empire-vivo | 2026-09-11 | B | https://agency-empire-kohl.vercel.app | ⛔ SITO SBAGLIATO — ripristinato alla v1 (tag `agency-empire-v1-20260911`); il lavoro vive nel branch `agency-empire-vivo-wip` come prototipo | [LEZIONE.md](agency-empire-vivo/LEZIONE.md) |
-| agency-empire-landing-vivo | 2026-09-12 | B | https://agency-empire-landing.vercel.app | ✅ deployato — 20 sezioni + `/prenota/` nostra, noindex tolto, composizione B (foto/ritratti/email/P.IVA da Max, non bloccano) | [LEZIONE.md](agency-empire-landing-vivo/LEZIONE.md) · [MISURA-DOPO.md](agency-empire-landing-vivo/MISURA-DOPO.md) |
+| agency-empire-landing-vivo | 2026-09-12 | B | https://agency-empire-landing.vercel.app | ⛔ v2 BOCCIATA da Max dopo un'ora online → sito riportato a giugno + **solo 3 sezioni aggiunte** e `/prenota/` (CSS scopato `.vivo`). Legge: su un sito online si aggiunge soltanto | [LEZIONE.md](agency-empire-landing-vivo/LEZIONE.md) · [MISURA-DOPO.md](agency-empire-landing-vivo/MISURA-DOPO.md) |

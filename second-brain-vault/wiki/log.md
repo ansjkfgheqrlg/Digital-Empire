@@ -2381,3 +2381,7 @@ dei consigli raccolti), su ordine esplicito di Max.
 - UPDATE: `projects/Agency/Progetto_Sito_Agency_Vivo` → Shipped. Sito nuovo su https://agency-empire-landing.vercel.app (20 sezioni,
   /prenota/ nostra, noindex tolto, 14.893 px, 12 dimensioni, Lighthouse 88/100/96/100). Nuovo gate `gate_fatti.py` nella Fabbrica Siti.
   CP-20260911-92MC. BACKLOG B-073…B-079.
+
+## 2026-09-12 sera (EMPERATOR — Sito Agency: v2 bocciata, ripristino + solo aggiunte)
+- UPDATE: `projects/Agency/Progetto_Sito_Agency_Vivo` → Archive. Max ha bocciato la riscrittura (20 sezioni al posto di 37): sito
+  riportato al live di giugno byte per byte, poi 3 sezioni aggiunte + /prenota/, senza toccare l'esistente. Legge nuova in memoria. CP-20260912-7ZNY.

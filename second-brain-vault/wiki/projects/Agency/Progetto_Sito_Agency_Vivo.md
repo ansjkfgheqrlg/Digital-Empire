@@ -1,6 +1,6 @@
 ---
 Type: PROJECT
-Status: Shipped
+Status: Archive
 Tags: #agency #sito #andrei-pascu #tono #immagini-aura #fabbrica-siti
 Created: 2026-09-11
 Last updated: 2026-09-12
@@ -16,6 +16,10 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **2026-09-12 sera — v2 BOCCIATA da Max, sito ripristinato + solo aggiunte (CP-20260912-7ZNY):** «hai rovinato tutto il sito, riportalo
+  esattamente com'era, poi aggiungi senza modificare». Live riportato al deploy di giugno, codice a `57a0ba0b`; aggiunte 3 sezioni
+  (`specchio`, `prove-vere`, `cosa-ottieni`) + `/prenota/` `/privacy/` `/cookie/`, CSS scopato `.vivo`, 0 righe esistenti toccate.
+  **Legge:** su un sito online di Max si aggiunge soltanto; riscritture solo su ordine esplicito e prima in anteprima. La v2 resta in `6565545f`.
 - **2026-09-12 — ONLINE (CP-20260911-92MC, EMP-2AW3 chiusa):** https://agency-empire-landing.vercel.app — 20 sezioni (N4 video esclusa),
   `/prenota/` nostra con Calendly on demand e `?da=` per sezione, noindex tolto, privacy/cookie, sitemap 4 URL. Misure: 38.683 → 14.893 px
   desktop (17.063 con le foto), 64 → 12 dimensioni, 5 → 0 gradienti-card, 0 placeholder, Lighthouse mobile 88/100/96/100. Costruito in una

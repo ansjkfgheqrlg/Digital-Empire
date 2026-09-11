@@ -1,18 +1,12 @@
-## 🟢 2026-09-12 — SITO AGENCY VIVO v2 ONLINE su agency-empire-landing — EMP-2AW3 CHIUSA — CP-20260911-92MC
+## ⛔ 2026-09-12 — SITO AGENCY: la v2 è BOCCIATA da Max; sito RIPRISTINATO com'era + 3 sezioni SOLO AGGIUNTE — CP-20260912-7ZNY
 
-**https://agency-empire-landing.vercel.app** è il sito nuovo: 20 sezioni (N4 video esclusa), **`/prenota/` nostra** con Calendly
-(1 salto, brand agenzia, mai più «Claude Code Mastery»), **noindex tolto**, 38.683 → 14.893 px, 64 → 12 dimensioni, 0 placeholder,
-Lighthouse mobile 88/100/96/100. `agency-empire-kohl` intatto. Blocco COORDINAMENTO rimosso. Nuovo gate della Fabbrica: `gate_fatti.py`.
-
-**⬆️ GESTI DI MAX — nessuno blocca (ADR-026/028), ognuno accende una parte del sito senza toccare codice:**
-1. **Ritratto suo** → `agency-empire-landing/public/aura/n1-hero.webp` (hero a due colonne) e `n13-max.webp`.
-2. **Ritratti Gael e Leonardo** → `n13-gael.webp`, `n13-leonardo.webp`.
-3. **Higgsfield Plus** (dossier 28) → 10 immagini generate coi brief in `public/aura/manifest.json` (`brief_generazione`).
-4. **Screenshot vero della dashboard Outreach** → `n8-dashboard.webp` (N8 + filigrana N19).
-5. **P.IVA / sede / PEC** → `src/lib/legal.ts`. 6. **Email pubblica di contatto** → `src/lib/contatti.ts` (oggi vuota, riga non renderizzata).
-7. **Consenso scritto Novacar / Preventa** per il nome in N11. 8. **Vercel Web Analytics** acceso dal cruscotto del progetto.
-9. **`src` del video** per N4 (finché manca, la sezione non esiste).
-Dopo ogni file: `python agency-empire-landing/scripts/aura_prep.py && cd agency-empire-landing && npx vercel --prod --yes`.
+Max: *«hai rovinato tutto il sito: riportalo esattamente com'era, poi aggiungi senza modificare niente di ciò che c'è»*. Fatto:
+live riportato al deploy di giugno (byte identici), codice al sorgente di giugno `57a0ba0b` (= il live; il restyling del 2 settembre non
+era mai stato online e resta in git), poi **solo aggiunte**: `specchio`, `prove-vere`, `cosa-ottieni` (in `src/sezioni-aggiunte/`, CSS
+scopato sotto `.vivo`), pagine `/prenota/` `/privacy/` `/cookie/`. `page.tsx` +7, `layout.tsx` +1, 0 righe rimosse; il testo di prima è
+intatto nel live (verificato). **LEGGE da oggi:** su un sito di Max online si AGGIUNGE soltanto; una riscrittura si fa solo se Max la
+ordina con quelle parole, e comunque prima in anteprima, mai in produzione al primo colpo. La v2 (20 sezioni) vive nel commit `6565545f`.
+Restano com'erano per ordine di Max: noindex, CTA vecchie verso netlify, footer `href="#"`.
 
 ## 🌐 2026-09-12 — DOSSIER 37 v2 CHIUSO: 3 critiche + V4 sul sito vero, build in attesa del «vai» — CP-20260911-MX8A
 

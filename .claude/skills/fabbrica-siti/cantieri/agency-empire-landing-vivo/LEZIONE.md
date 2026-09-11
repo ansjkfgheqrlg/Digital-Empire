@@ -1,5 +1,13 @@
 # LEZIONE — cantiere agency-empire-landing-vivo (Dossier 37 v2)
 
+> ## ⛔ ESITO FINALE (2026-09-12 sera): la v2 è stata BOCCIATA da Max dopo un'ora online.
+> *«Hai letteralmente rovinato tutto il sito. Riportalo esattamente com'era. Poi aggiungi senza modificare niente di ciò che c'è.»*
+> Sito riportato al live di giugno (`57a0ba0b`, promote del deploy `pvjhy6yyw`), poi **solo aggiunte** (`src/sezioni-aggiunte/`, CSS scopato `.vivo`).
+> **La lezione più grande di questo cantiere:** un «vai» su un piano non è l'ordine di sostituire ciò che è in produzione; e una
+> sostituzione, se ordinata, va in anteprima prima che in produzione. Tutto il resto sotto vale come tecnica, non come risultato.
+> Nella Fabbrica entra la regola **§15 — SITO ONLINE = SOLO AGGIUNGERE** (CLAUDE-SITI, da scrivere via ADR). CP-20260912-7ZNY.
+
+
 **Data:** 2026-09-12 · **Corsia:** B (Next.js 16, `output: "export"`) · **URL vivo:** https://agency-empire-landing.vercel.app ·
 **Misure:** `MISURA-DOPO.md` · **Piano:** `PIANO-MAESTRO/37-PIANO-SITO-AGENCY-VIVO.md` (v2, V4 esecutivo) · **Ripresa:** `EMP-2AW3` (chiusa)
 **Ritorno:** tag `agency-empire-landing-v1-20260912`.

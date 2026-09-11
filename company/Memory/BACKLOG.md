@@ -426,7 +426,7 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   puntarlo a `/api/iscrizione` e portargli accanto `netlify/functions/iscrizione.mjs`.
   *Quando:* prima di mandare traffico a quella pagina, o alla prossima passata sui form.
 
-## Dal cantiere Sito Agency Vivo v2 (agency-empire-landing, EMP-2AW3) — 2026-09-12
+## Dal cantiere Sito Agency Vivo v2 (agency-empire-landing, EMP-2AW3) — 2026-09-12 — **NB: la v2 è stata bocciata da Max la sera stessa (CP-20260912-7ZNY): il sito è quello di giugno + 3 sezioni aggiunte. Le voci sotto restano come strumenti della Fabbrica, non come lavori sul sito.**
 - **B-073 — NUOVA (2026-09-12).** Gate «porta d'uscita» dentro `fabbrica-siti/scripts/gate_siti.py`: per ogni pagina con CTA,
   `href="#"` = 0, 0 domini terzi col brand sbagliato (lista: `netlify.app` del corso), ≥ 1 link a una prenotazione nostra. ADR-016 meccanico.
 - **B-074 — NUOVA (2026-09-12).** `gate_fatti.py` esteso a email / telefono / P.IVA (stringhe con `@`, `+39`, `IT[0-9]{11}`): un dato di
