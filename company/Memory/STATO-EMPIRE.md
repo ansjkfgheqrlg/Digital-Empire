@@ -1,14 +1,18 @@
-## ⚠️ COORDINAMENTO — 2026-09-12 — SITO AGENCY VIVO v2 IN COSTRUZIONE (EMP-2AW3, «vai» di Max)
+## 🟢 2026-09-12 — SITO AGENCY VIVO v2 ONLINE su agency-empire-landing — EMP-2AW3 CHIUSA — CP-20260911-92MC
 
-**Chi:** Emperator, su «vai» di Max (Dossier 37 v2 chiuso, CP-20260911-MX8A).
-**Perimetro toccato — nessun altro ci scriva finché questo blocco resta:**
-`agency-empire-landing/` (tutto) · `.claude/skills/fabbrica-siti/scripts/gate_fatti.py` (nuovo) ·
-`.claude/skills/fabbrica-siti/cantieri/agency-empire-landing-vivo/` (nuova).
-**Forze (ADR-015):** Emperator + scagnozzi sonnet in F1/F4 (dichiarati nel battito quando partono).
-**Non toccato:** `agency-empire/` (CHIUSO, resta alla v1), V4 Piano Impero Vivo, EMP-8M9F, Outreach, fabbrica YouTube.
-**Gesti di Max che NON bloccano (ADR-026/028):** ritratto suo · ritratti Gael/Leonardo · Higgsfield · `src` video ·
-P.IVA/sede/PEC · consenso Novacar/Preventa · Vercel Web Analytics · Calendly attivo.
-**Cosa chiude il blocco:** F7 (H1 nuovo online, `netlify.app` = 0, noindex via, agency-empire-kohl intatto) + F8 (CP).
+**https://agency-empire-landing.vercel.app** è il sito nuovo: 20 sezioni (N4 video esclusa), **`/prenota/` nostra** con Calendly
+(1 salto, brand agenzia, mai più «Claude Code Mastery»), **noindex tolto**, 38.683 → 14.893 px, 64 → 12 dimensioni, 0 placeholder,
+Lighthouse mobile 88/100/96/100. `agency-empire-kohl` intatto. Blocco COORDINAMENTO rimosso. Nuovo gate della Fabbrica: `gate_fatti.py`.
+
+**⬆️ GESTI DI MAX — nessuno blocca (ADR-026/028), ognuno accende una parte del sito senza toccare codice:**
+1. **Ritratto suo** → `agency-empire-landing/public/aura/n1-hero.webp` (hero a due colonne) e `n13-max.webp`.
+2. **Ritratti Gael e Leonardo** → `n13-gael.webp`, `n13-leonardo.webp`.
+3. **Higgsfield Plus** (dossier 28) → 10 immagini generate coi brief in `public/aura/manifest.json` (`brief_generazione`).
+4. **Screenshot vero della dashboard Outreach** → `n8-dashboard.webp` (N8 + filigrana N19).
+5. **P.IVA / sede / PEC** → `src/lib/legal.ts`. 6. **Email pubblica di contatto** → `src/lib/contatti.ts` (oggi vuota, riga non renderizzata).
+7. **Consenso scritto Novacar / Preventa** per il nome in N11. 8. **Vercel Web Analytics** acceso dal cruscotto del progetto.
+9. **`src` del video** per N4 (finché manca, la sezione non esiste).
+Dopo ogni file: `python agency-empire-landing/scripts/aura_prep.py && cd agency-empire-landing && npx vercel --prod --yes`.
 
 ## 🌐 2026-09-12 — DOSSIER 37 v2 CHIUSO: 3 critiche + V4 sul sito vero, build in attesa del «vai» — CP-20260911-MX8A
 

@@ -1,6 +1,6 @@
 ---
 Type: PROJECT
-Status: Active
+Status: Shipped
 Tags: #agency #sito #andrei-pascu #tono #immagini-aura #fabbrica-siti
 Created: 2026-09-11
 Last updated: 2026-09-12
@@ -16,6 +16,12 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **2026-09-12 — ONLINE (CP-20260911-92MC, EMP-2AW3 chiusa):** https://agency-empire-landing.vercel.app — 20 sezioni (N4 video esclusa),
+  `/prenota/` nostra con Calendly on demand e `?da=` per sezione, noindex tolto, privacy/cookie, sitemap 4 URL. Misure: 38.683 → 14.893 px
+  desktop (17.063 con le foto), 64 → 12 dimensioni, 5 → 0 gradienti-card, 0 placeholder, Lighthouse mobile 88/100/96/100. Costruito in una
+  sessione dal «vai» (F0-F8), 2 scagnozzi sonnet sulle sezioni di struttura. Nuovo gate `gate_fatti.py`. Composizione B: online senza foto,
+  i file di Max (ritratti, Higgsfield, dashboard, P.IVA, email) accendono le parti senza toccare codice. Lezione: mai inventare un contatto.
+  `cantieri/agency-empire-landing-vivo/{BRIEF,VOCE,FATTI,COPY,MISURA-DOPO,LEZIONE}.md`.
 - **2026-09-12 — v2 CHIUSA (CP-20260911-MX8A):** critiche P1/P2/P3 + V4 esecutivo (10 fasi, ≈53 h, pesi) sul sito vero
   `agency-empire-landing`. Fatti nuovi dal codice: sito **noindex**; CTA chiamata in 3 salti col brand "Claude Code Mastery"
   fino a Calendly `max-infoproducer/30min`; `#prenota` = ancora del listino; `output: "export"`. Decisioni: `/prenota/` nostra

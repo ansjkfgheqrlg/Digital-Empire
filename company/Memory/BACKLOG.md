@@ -425,3 +425,19 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   toccato li' per non allargare il lavoro. Il rimedio e' lo stesso gia' costruito:
   puntarlo a `/api/iscrizione` e portargli accanto `netlify/functions/iscrizione.mjs`.
   *Quando:* prima di mandare traffico a quella pagina, o alla prossima passata sui form.
+
+## Dal cantiere Sito Agency Vivo v2 (agency-empire-landing, EMP-2AW3) — 2026-09-12
+- **B-073 — NUOVA (2026-09-12).** Gate «porta d'uscita» dentro `fabbrica-siti/scripts/gate_siti.py`: per ogni pagina con CTA,
+  `href="#"` = 0, 0 domini terzi col brand sbagliato (lista: `netlify.app` del corso), ≥ 1 link a una prenotazione nostra. ADR-016 meccanico.
+- **B-074 — NUOVA (2026-09-12).** `gate_fatti.py` esteso a email / telefono / P.IVA (stringhe con `@`, `+39`, `IT[0-9]{11}`): un dato di
+  contatto inventato è passato in deploy per 10 minuti (`info@digitalempire.it`). Oggi `contatti.ts` è vuoto = riga non renderizzata.
+- **B-075 — NUOVA (2026-09-12).** `scripts/apri_cantiere.py <cartella>`: stampa `project.json`, `npx vercel project ls`, URL live, ultimo
+  deploy, ultimo commit, e si ferma finché nel BRIEF non c'è la frase del proprietario (PM0, Dossier 37 v2 consiglio 1). Candidata ADR-030 §13 CLAUDE-SITI.
+- **B-076 — NUOVA (2026-09-12).** Pattern `hero-due-composizioni` e `aura-composizione-b` nella Fabbrica (secondo cantiere → pattern, §10).
+- **B-077 — NUOVA (2026-09-12).** Riga nella Bibbia dei Messaggi: link `https://agency-empire-landing.vercel.app/prenota/?da=outreach`
+  (oggi nessun template dell'Outreach linka alcun sito). Sostituisce B-070 (pagina-ponte) finché non serve.
+- **B-078 — NUOVA (2026-09-12).** `company/offerta.md` canonico da cui i siti generano `listino.ts` (il listino DE è copiato in 68 file, studio Beggiato).
+- **B-079 — NUOVA (2026-09-12).** N4 (VSL) sul sito dell'agenzia: si costruisce solo quando esiste il `src` del video registrato sulla dashboard vera.
+- **B-071 → aggiornata:** vale per `agency-empire-landing` N11 (`n11-prove.tsx`), non più per il sito sbagliato.
+- **B-072 → aggiornata:** i posti sono 15 nel manifest di `agency-empire-landing/public/aura/manifest.json` (10 generati + 4 ritratti + 1 screenshot);
+  senza file la composizione B tiene il layout, nessun segnaposto.

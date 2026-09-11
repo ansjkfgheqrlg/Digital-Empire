@@ -2,7 +2,7 @@
 
 - **Codice di ripresa:** `EMP-2AW3`
 - **Aperto:** 2026-09-11 22:30
-- **Stato:** APERTO — piano v2 CHIUSO (CP-20260911-MX8A), build fermo fino al «vai»
+- **Stato:** CHIUSO il 2026-09-11 23:56 — piano v2 CHIUSO (CP-20260911-MX8A), build fermo fino al «vai»
 - **Chi riprende:** basta dire `EMP-2AW3` in una chat nuova dentro Digital Empire.
 
 ---

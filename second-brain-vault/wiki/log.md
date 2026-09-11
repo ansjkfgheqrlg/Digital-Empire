@@ -2376,3 +2376,8 @@ dei consigli raccolti), su ordine esplicito di Max.
 - UPDATE: `projects/Agency/Progetto_Sito_Agency_Vivo` → 1 pagina aggiornata. Piano chiuso (3 critiche + V4, ≈53 h),
   fatti nuovi dal codice del sito vero (noindex, prenotazione in 3 salti col brand del corso, `#prenota` ancora del listino).
   Nessun build: si aspetta il «vai». CP-20260911-MX8A.
+
+## 2026-09-12 (EMPERATOR — EMP-2AW3 CHIUSA: Sito Agency Vivo v2 online)
+- UPDATE: `projects/Agency/Progetto_Sito_Agency_Vivo` → Shipped. Sito nuovo su https://agency-empire-landing.vercel.app (20 sezioni,
+  /prenota/ nostra, noindex tolto, 14.893 px, 12 dimensioni, Lighthouse 88/100/96/100). Nuovo gate `gate_fatti.py` nella Fabbrica Siti.
+  CP-20260911-92MC. BACKLOG B-073…B-079.
