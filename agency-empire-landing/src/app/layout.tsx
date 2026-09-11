@@ -1,10 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Onest, Instrument_Serif } from "next/font/google";
 import "./globals.css";
-import "./vivo.css";
-import { GrainLayers } from "@/components/grain-layers";
-import { EmpireAnalytics } from "@/components/analytics";
-import { SITE_TITLE, SITE_DESCRIPTION } from "@/lib/constants";
+import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 const onest = Onest({
   variable: "--font-sans",
@@ -20,19 +17,18 @@ const instrumentSerif = Instrument_Serif({
 });
 
 const SITE_URL = "https://agency-empire-landing.vercel.app";
-const TITLE = SITE_TITLE;
-const DESCRIPTION = SITE_DESCRIPTION;
-// Dossier 37 v2, C2.2: l'anteprima GitHub Pages (GH_PAGES_BASE valorizzato) non si indicizza mai —
-// sarebbe contenuto duplicato. Su Vercel (base vuota) il sito si indicizza: la porta d'uscita è /prenota/,
-// col brand giusto, quindi il vecchio TODO(F1-E4) è chiuso.
-const ANTEPRIMA = Boolean(process.env.GH_PAGES_BASE);
+const TITLE = "Digital Empire | Sistemi AI Proprietari per la Tua Operatività";
+const DESCRIPTION =
+  "Installiamo sistemi AI sul tuo server: Outreach Factory, Content Factory e Second Brain. Zero canoni mensili. Codice tuo per sempre. Setup in 7 giorni.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: "/" },
-  robots: ANTEPRIMA ? { index: false, follow: false } : { index: true, follow: true },
+  // TODO(F1-E4): togliere `robots` quando la pagina di prenotazione avra' il brand
+  // giusto. Indicizzare prima manderebbe traffico su "Claude Code Mastery".
+  robots: { index: false, follow: false },
   openGraph: {
     type: "website",
     locale: "it_IT",
@@ -48,7 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = { themeColor: "#0a0a0a", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#2a2a2a" };
 
 export default function RootLayout({
   children,
@@ -59,9 +55,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${onest.variable} ${instrumentSerif.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col bg-[#0a0a0a] text-white font-sans grain-fine">
-        <a href="#main" className="sr-only focus:not-sr-only fixed top-4 left-4 z-[400] sv-btn">Salta al contenuto</a>
-        <GrainLayers />
+      <body className="min-h-full flex flex-col bg-[#2a2a2a] text-[#f9f9f9] font-sans grain-fine">
         {/* Enable scroll-reveal animations only when JS is running.
             Runs before paint so content never flashes; if JS is
             disabled/paused the page stays fully visible. */}
@@ -70,8 +64,7 @@ export default function RootLayout({
             __html: "document.documentElement.classList.add('js')",
           }}
         />
-        {children}
-        <EmpireAnalytics />
+        <SmoothScrollProvider>{children}</SmoothScrollProvider>
       </body>
     </html>
   );

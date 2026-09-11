@@ -1,9 +1,0 @@
-{
-  "_": "Utility ammesse nelle sezioni nuove (Dossier 37 v2, C3.1 v1). Classi di vivo.css + poche utility Tailwind di layout. Chi ha bisogno di altro la chiede a Emperator, che la mette QUI, mai nella sezione.",
-  "superfici": ["sv", "sv-ink", "sv-ink-piatto", "sv-carta", "sv-stanza", "sv-chiusura", "sv-fascia", "cuc", "cuc-a", "cuc-b"],
-  "tipografia": ["sv-eyebrow", "sv-h1", "sv-h2", "sv-h3", "sv-it", "sv-lead", "sv-body", "sv-small", "sv-mono", "sv-stat", "sv-muted", "manifesto", "word", "word--pieno", "word--contorno", "sv-etichetta"],
-  "foto": ["foto", "foto--carta", "foto--acciaio", "foto--negativo", "foto--filigrana", "riga", "riga--bassa", "riga--media", "riga--sinistra", "riga--libera", "hero-foto", "due-col", "due-col--foto-sx"],
-  "oggetti": ["sv-hair", "sv-btn", "sv-btn--bagliore", "sv-btn-ghost", "sv-card", "sv-card--engine", "dm", "prova", "linea", "tu", "av", "dash", "sv-check", "sv-x", "sv-faq", "sv-dett", "sv-container", "sv-section"],
-  "tailwind_layout": ["relative", "absolute", "inset-0", "flex", "grid", "items-*", "justify-*", "gap-*", "mt-*", "mb-*", "pt-*", "pb-*", "max-w-*", "w-full", "hidden", "md:*", "sm:*", "lg:*", "text-center", "text-left", "sr-only", "overflow-hidden", "order-*", "col-span-*", "grid-cols-*"],
-  "vietato": ["qualsiasi colore hex nella sezione", "bg-gradient-*", "from-* via-* to-*", "text-[Npx]", "font-[N]", "style={{ background: ... }} con gradiente", "href=\"#prenota\"", "href=\"#\"", "netlify.app", "<a href=\"/", "cifre di prezzo scritte a mano"]
-}

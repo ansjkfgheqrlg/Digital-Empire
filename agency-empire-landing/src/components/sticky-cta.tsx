@@ -1,11 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { prenotaDa } from "@/lib/contatti";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { CALL_URL } from "@/components/call-cta";
 
-/** Barra fissa in basso: compare dopo il primo schermo, una sola CTA verso /prenota/. */
-export function StickyCTA({ label = "Prenota la chiamata →" }: { label?: string }) {
+/** Barra fissa in basso. B8: su mobile occupava troppa altezza e copriva il contenuto —
+ *  padding e testo ridotti sotto sm, label piena solo da sm in su.
+ *  File riformattato senza cambi di logica (era su riga singola). */
+export function StickyCTA({
+  href,
+  label = "Prenota una Chiamata",
+}: {
+  href: string;
+  label?: string;
+}) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -16,18 +25,36 @@ export function StickyCTA({ label = "Prenota la chiamata →" }: { label?: strin
   }, []);
 
   return (
-    <div
-          data-visibile={visible ? "1" : "0"}
-          className="barra-fissa fixed bottom-0 inset-x-0 z-[200] bg-[#0a0a0a]/90 backdrop-blur-md"
-          style={{ borderTop: "1px solid var(--sv-hair)", paddingBottom: "env(safe-area-inset-bottom, 0)" }}
+    <AnimatePresence>
+      {visible && (
+        <motion.div
+          initial={{ y: 80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 80, opacity: 0 }}
+          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          className="fixed bottom-0 inset-x-0 z-[200] border-t border-white/10 bg-[#131313]/90 backdrop-blur-md"
+          style={{ paddingBottom: "env(safe-area-inset-bottom, 0)" }}
         >
-          <div className="sv-container py-2 sm:py-3 flex items-center justify-center gap-4">
-            <span className="hidden sm:inline sv-small" style={{ color: "var(--sv-silver-dim)" }}>30 minuti · il sistema in live · niente slide</span>
-            <Link href={prenotaDa("sticky")} data-cta className="sv-btn" style={{ padding: "11px 20px", fontSize: "var(--fs-small)" }}>
+          <div className="max-w-4xl mx-auto px-4 py-2 sm:px-5 sm:py-3 flex items-center justify-center gap-4">
+            <a
+              href={href}
+              className="hidden sm:inline-flex text-sm font-medium text-white/60 hover:text-white transition-colors"
+            >
+              Prezzi
+            </a>
+            <a
+              href={CALL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-orange group !px-5 !py-3 !text-[13px] sm:!px-7 sm:!py-4 sm:!text-[15px]"
+            >
               <span className="sm:hidden">Prenota</span>
               <span className="hidden sm:inline">{label}</span>
-            </Link>
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </a>
           </div>
-        </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
