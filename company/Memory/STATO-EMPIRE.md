@@ -36,16 +36,15 @@ al watchdog (stream sub-agenti morto dopo un ENOTFOUND). Conformi: 00-INDICE, 01
 correzioni al piano fatte misurando (trace esiste; ultimo_metro senza --json; REGISTRO-NUMERI in
 Ecosistemi/). **Il blocco ⚠️ COORDINAMENTO V4 sotto resta valido.** Divieto costruttivo in vigore.
 
-## ✅ 2026-09-11 22:00 — SITO AGENCY VIVO COSTRUITO E DEPLOYATO — CP-20260911-XZCR
+## ⛔ 2026-09-11 22:40 — ERRORE: il cantiere Sito Agency Vivo era sul SITO SBAGLIATO — riparato, piano da rifare — CP-20260911-JF6H
 
-**https://agency-empire-kohl.vercel.app** ha la versione nuova (Dossier 37, F0→F8 chiuse in una sessione):
-19 sezioni cucite, canone v3, copy intero nella voce nuova (gate_voce PASS), grana su tutto, righe su foto
-sempre leggibili, 10 CTA, 14.798 px (prima 21.215), Lighthouse a11y/SEO 100. Versione precedente al sicuro:
-tag `agency-empire-v1-20260911`. Il blocco COORDINAMENTO è chiuso: `agency-empire/` è di nuovo libero.
-**Dipendono da Max, non bloccano (ADR-026):** (1) 12 foto generate + ritratti suo e di Gael in
-`public/aura/` coi nomi del manifest — finché mancano il sito mostra segnaposto eleganti (B-072);
-(2) P.IVA e indirizzo in `agency-empire/src/lib/legal.ts`; (3) Higgsfield Plus (dossier 28).
-Backlog: B-068 perf mobile 77→85, B-069 navbar/sticky al canone, B-070 pagina-ponte, B-071 testimonianze.
+**Il sito dell'Agenzia è `agency-empire-landing/` → https://agency-empire-landing.vercel.app** (Max, 22:05).
+Il build e il deploy delle 19:40-22:00 erano su `agency-empire/` (agency-empire-kohl): **ripristinato alla v1**
+dal tag `agency-empire-v1-20260911` (diff vuoto) e ridistribuito; il lavoro vive nel branch
+`agency-empire-vivo-wip` come prototipo riusabile. Dossier 37 **riscritto in v2 (bozza)** sul sito vero
+(37 sezioni, 38.683 px, 0 foto, placeholder nei risultati). **Ripresa: `EMP-2AW3`** — chiudere critiche + V4,
+poi «vai». Regola nuova: un puntatore in memoria vince sulla deduzione; prima di un deploy si conferma l'URL con Max.
+**`agency-empire/` è chiuso: nessuno ci scrive.**
 
 ## 🌐 2026-09-11 sera — DOSSIER 37: Piano Sito Agency Vivo scritto (4 giri), build in attesa del «vai» — CP-20260911-D9EP
 

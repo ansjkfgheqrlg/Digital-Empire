@@ -1,6 +1,6 @@
 ---
 Type: PROJECT
-Status: Shipped
+Status: Active
 Tags: #agency #sito #andrei-pascu #tono #immagini-aura #fabbrica-siti
 Created: 2026-09-11
 Last updated: 2026-09-11
@@ -16,6 +16,9 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **⛔ 2026-09-11 22:40 — ERRORE:** il build/deploy delle 22:00 era su `agency-empire/` (sito sbagliato), ripristinato alla v1.
+  **Il sito dell'Agenzia è `agency-empire-landing` → https://agency-empire-landing.vercel.app.** Dossier 37 riscritto in v2
+  (bozza) sul sito vero; ripresa `EMP-2AW3`; prototipo nel branch `agency-empire-vivo-wip`. CP-20260911-JF6H.
 - **2026-09-11 22:00 — COSTRUITO E DEPLOYATO:** https://agency-empire-kohl.vercel.app (CP-20260911-XZCR). 14.798 px, 10 CTA,
   gate_voce/gate_siti PASS, Lighthouse a11y 100. Restano da Max: 12 foto generate + 2 ritratti (B-072), P.IVA. Lezione:
   `.claude/skills/fabbrica-siti/cantieri/agency-empire-vivo/LEZIONE.md`. Versione v1 nel tag `agency-empire-v1-20260911`.
