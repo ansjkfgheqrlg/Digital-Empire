@@ -1,6 +1,6 @@
 ---
 Type: PROJECT
-Status: Active
+Status: Shipped
 Tags: #agency #sito #andrei-pascu #tono #immagini-aura #fabbrica-siti
 Created: 2026-09-11
 Last updated: 2026-09-11
@@ -16,6 +16,9 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **2026-09-11 22:00 — COSTRUITO E DEPLOYATO:** https://agency-empire-kohl.vercel.app (CP-20260911-XZCR). 14.798 px, 10 CTA,
+  gate_voce/gate_siti PASS, Lighthouse a11y 100. Restano da Max: 12 foto generate + 2 ritratti (B-072), P.IVA. Lezione:
+  `.claude/skills/fabbrica-siti/cantieri/agency-empire-vivo/LEZIONE.md`. Versione v1 nel tag `agency-empire-v1-20260911`.
 - **Documento:** `PIANO-MAESTRO/37-PIANO-SITO-AGENCY-VIVO.md` · ripresa `EMP-ZP2J` · CP-20260911-D9EP
 - **Diagnosi misurata** (stesso `site_capture.py` usato su Pascu): noi 43.359 px, 11 CTA (1/3.940 px),
   0 fotografie, 195 dimensioni tipografiche, 48 sfondi; Claude Speedrun 33.756 px / 40 CTA; Armageddon 5.103 px.

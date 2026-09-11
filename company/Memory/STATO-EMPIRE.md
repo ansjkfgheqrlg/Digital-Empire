@@ -36,20 +36,16 @@ al watchdog (stream sub-agenti morto dopo un ENOTFOUND). Conformi: 00-INDICE, 01
 correzioni al piano fatte misurando (trace esiste; ultimo_metro senza --json; REGISTRO-NUMERI in
 Ecosistemi/). **Il blocco ⚠️ COORDINAMENTO V4 sotto resta valido.** Divieto costruttivo in vigore.
 
-## ⚠️ COORDINAMENTO — 2026-09-11 sera — CANTIERE SITO AGENCY VIVO (Dossier 37, EMP-ZP2J) IN COSTRUZIONE
+## ✅ 2026-09-11 22:00 — SITO AGENCY VIVO COSTRUITO E DEPLOYATO — CP-20260911-XZCR
 
-**Chi:** Emperator, su «vai» di Max (2026-09-11 ~19:40). **Versione precedente salvata:** tag `agency-empire-v1-20260911`,
-branch `agency-empire-v1` (entrambi su origin), zip `../agency-empire-SNAPSHOT-v1-2026-09-11.zip` (fuori repo).
-Ripristino in un comando: `git checkout agency-empire-v1-20260911 -- agency-empire/`.
-**Perimetro toccato — nessun altro ci scriva finché questo blocco resta:**
-`agency-empire/` (tutto: `src/`, `public/aura/`, `cantiere/`, `globals.css`, `page.tsx`) ·
-`.claude/skills/fabbrica-siti/pattern/` (8 pattern nuovi) · `.claude/skills/fabbrica-siti/scripts/gate_voce.py` (nuovo) ·
-`.claude/skills/fabbrica-siti/canone/` (canone v3, tag `canone-v3`).
-**Non toccato:** `PIANO-MAESTRO/31-*/V4-ESECUTIVO/` (EMP-D9HD, altra sessione), EMP-8M9F, LANCI, Outreach, YouTube. Zero collisione.
-**Forze (ADR-015):** F1 Emperator scrive il copy; F3 2 scagnozzi sonnet (4 pattern ciascuno) + 1 sentinella opus; F4 3 scagnozzi sonnet su
-N1-N6 · N7-N13 · N14-N19, solo file di sezione. `globals.css`/`page.tsx`/canone: solo Emperator. Ogni attivazione dichiarata nel battito.
-**Cosa chiude il cantiere:** URL vivo `agency-empire-kohl.vercel.app` con la versione nuova + `MISURA-DOPO.md` + `LEZIONE.md` (ADR-016).
-**Dipendono da Max, NON bloccano:** ritratto suo per l'hero, foto team per N11, acquisto Higgsfield (dossier 28).
+**https://agency-empire-kohl.vercel.app** ha la versione nuova (Dossier 37, F0→F8 chiuse in una sessione):
+19 sezioni cucite, canone v3, copy intero nella voce nuova (gate_voce PASS), grana su tutto, righe su foto
+sempre leggibili, 10 CTA, 14.798 px (prima 21.215), Lighthouse a11y/SEO 100. Versione precedente al sicuro:
+tag `agency-empire-v1-20260911`. Il blocco COORDINAMENTO è chiuso: `agency-empire/` è di nuovo libero.
+**Dipendono da Max, non bloccano (ADR-026):** (1) 12 foto generate + ritratti suo e di Gael in
+`public/aura/` coi nomi del manifest — finché mancano il sito mostra segnaposto eleganti (B-072);
+(2) P.IVA e indirizzo in `agency-empire/src/lib/legal.ts`; (3) Higgsfield Plus (dossier 28).
+Backlog: B-068 perf mobile 77→85, B-069 navbar/sticky al canone, B-070 pagina-ponte, B-071 testimonianze.
 
 ## 🌐 2026-09-11 sera — DOSSIER 37: Piano Sito Agency Vivo scritto (4 giri), build in attesa del «vai» — CP-20260911-D9EP
 

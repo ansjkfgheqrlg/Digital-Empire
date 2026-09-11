@@ -2,7 +2,7 @@
 
 - **Codice di ripresa:** `EMP-ZP2J`
 - **Aperto:** 2026-09-11 18:49
-- **Stato:** APERTO — **in attesa del «vai» di Max** (il piano è chiuso, il build no)
+- **Stato:** CHIUSO il 2026-09-11 21:59 — **COSTRUITO E DEPLOYATO** (F0-F8 chiuse, F7.5 ponte in backlog B-070)
 - **Chi riprende:** basta dire `EMP-ZP2J` in una chat nuova dentro Digital Empire.
 
 ---
@@ -13,6 +13,10 @@ Eseguire il V4 esecutivo di `PIANO-MAESTRO/37-PIANO-SITO-AGENCY-VIVO.md` su `age
 (Next.js 16.2.3, live `agency-empire-kohl.vercel.app`), fase per fase F0→F8, **solo dopo il «vai»**.
 
 ## 2. DOVE SIAMO — cosa è FATTO davvero
+
+- **[2026-09-11 22:00] Build chiuso e deployato:** https://agency-empire-kohl.vercel.app — 19 sezioni, canone v3
+  (`src/app/vivo.css`), `<Aura/>` + manifest, gate_voce PASS, gate_siti PASS, MISURA-DOPO.md, LEZIONE.md, CP-20260911-XZCR.
+  Restano da Max: 12 foto generate + 2 ritratti in `public/aura/` (B-072), P.IVA in `src/lib/legal.ts`.
 
 - Il dossier 37 è scritto per intero: diagnosi misurata, 3 assi, casting 14/41 immagini, struttura
   19 sezioni, fasi, tre critiche, V4 esecutivo con comandi/gate/forze/ore, pre-mortem, consigli.

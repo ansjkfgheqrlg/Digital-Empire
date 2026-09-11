@@ -2,6 +2,7 @@
 
 ## 2026-09-11 (sera)
 - INGEST: Dossier 37 — Piano Sito Agency Vivo (tono + elementi + immagini AURA da Andrei Pascu, in ottica nostra), P0→P3→V4 esecutivo; nessun file del sito toccato → 1 pagina creata (projects/Agency/Progetto_Sito_Agency_Vivo), index aggiornato. CP-20260911-D9EP, ripresa EMP-ZP2J.
+- BUILD+DEPLOY: Sito Agency Vivo costruito e messo in produzione (19 sezioni, canone v3, 8 pattern nuovi in Fabbrica, gate_voce.py) → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo: Shipped). CP-20260911-XZCR.
 - AGG: Tavola Estetica pubblicata (10 tavole, foto AURA nel canone) + Asse D nel dossier 37; due leggi di Max scritte: grana su tutto anche nelle sfumature, scritte su foto sempre leggibili con banda scura.
 
 ## 2026-09-11 (Emperator — piano editoriale KDP in documentazione ufficiale)
