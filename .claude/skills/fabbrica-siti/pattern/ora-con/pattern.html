@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; ora-con</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: il riepilogo visivo prima/dopo. Due colonne senza una parola di
+   troppo — un pallino vuoto e testo argento contro un pallino pieno arancione
+   e testo pieno — poi un riquadro che fa il conto, cosi' il lettore non deve
+   crederci sulla parola: puo' sommare.
+   Origine: claude-speedrun.com, Tavola 20 (report
+   competitor/Andrei Pascu/site-study/reports/12-claude-speedrun-ATLANTE.md,
+   "TAVOLA 20 — Il confronto sintetico ORA / CON Claude"): "Colonna sinistra
+   grigia 'ORA' (pallino vuoto)... colonna destra arancione 'CON claude'
+   (pallino pieno)... Effetti attivi: nessuno oltre al colore (grigio vs
+   arancione) a marcare i due stati". */
+.oracon {
+  padding: calc(var(--u) * 0.05) 7%;
+  display: grid;
+  gap: calc(var(--u) * 0.035);
+}
+
+.oracon__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--u) * 0.04);
+}
+@media (max-width: 860px) {
+  .oracon__grid { grid-template-columns: 1fr; }   /* stessa soglia di .fascia/.spec, tavola_template.html:205-207 */
+}
+
+.oracon__col h4 {
+  font-family: var(--font-explain);
+  font-size: clamp(12px, calc(var(--cell) * 0.16), 14px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 calc(var(--u) * 0.018);
+}
+.oracon__ora h4 { color: var(--silver-dim); }
+.oracon__con h4 { color: var(--orange); }
+
+.oracon__col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.8em; }
+.oracon__col li { position: relative; padding-left: 1.6em; line-height: 1.5; }
+.oracon__col li::before {
+  content: "";
+  position: absolute; left: 0; top: 0.45em;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+}
+
+/* ORA — pallino vuoto, testo argento */
+.oracon__ora li { color: var(--silver); }
+.oracon__ora li::before { background: transparent; border: 1px solid var(--silver-dim); }
+
+/* CON IL SISTEMA — pallino pieno arancione, testo pieno */
+.oracon__con li { color: var(--fg); }
+.oracon__con li::before { background: var(--orange); }
+
+/* il riquadro calcolo — mono nel senso che il canone lo intende: non un
+   font-family nuovo (canone.css §3 ne definisce solo due, entrambi Onest, e
+   §1 vieta di inventarne un terzo), ma .num-tabular — la cifra che non
+   "balla" perche' le colonne restano allineate (canone.css §12). */
+.oracon__calcolo {
+  position: relative;
+  overflow: hidden;
+  background: var(--ink-2);
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  padding: calc(var(--u) * 0.025) calc(var(--u) * 0.03);
+  max-width: 60ch;
+}
+.oracon__calcolo > * { position: relative; z-index: 2; }
+
+/* GRANA — legge di Max: --ink-2 qui e' un colore pieno, porta una grana
+   locale. Stessa ricetta di .spec__foto in pattern/specchio/pattern.html,
+   origine .frame::after in tavola_template.html:19. */
+.oracon__calcolo::after {
+  content: "";
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  mix-blend-mode: overlay; opacity: 0.5;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='2'/><feColorMatrix values='0 0 0 0 0.80 0 0 0 0 0.78 0 0 0 0 0.76 0 0 0 0.65 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 240px 240px;
+}
+
+.oracon__cifra {
+  margin: 0.4em 0 0;
+  font-size: clamp(15px, calc(var(--u) * 0.014), 19px);
+  letter-spacing: 0.01em;
+  color: rgba(249, 249, 249, var(--t-76));
+}
+.oracon__cifra:first-of-type { margin-top: 0.6em; }
+</style>
+</head>
+<body class="page grain-fine">
+
+  <section class="oracon">
+    <div class="oracon__grid">
+      <div class="oracon__col oracon__ora">
+        <h4>Ora</h4>
+        <ul>
+          <li>Mandi un preventivo e aspetti, senza sapere se arriva.</li>
+          <li>Rifai il sito ogni anno, il fatturato resta lo stesso.</li>
+          <li>Il cliente sceglie il competitor che ha risposto prima.</li>
+        </ul>
+      </div>
+      <div class="oracon__col oracon__con">
+        <h4>Con il sistema</h4>
+        <ul>
+          <li>Il preventivo parte da solo, appena il lead &egrave; pronto.</li>
+          <li>Il sito cambia in base ai dati, non al gusto di qualcuno.</li>
+          <li>Rispondi per primo, sempre &mdash; anche quando dormi.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="oracon__calcolo">
+      <p class="label">Il calcolo</p>
+      <p class="oracon__cifra"><span class="num-tabular">12</span> &rarr; <span class="num-tabular text-orange-pure">41</span> lead lavorati a settimana</p>
+      <p class="oracon__cifra"><span class="num-tabular text-orange-pure">9,5</span> ore recuperate, ogni settimana</p>
+    </div>
+  </section>
+
+</body>
+</html>

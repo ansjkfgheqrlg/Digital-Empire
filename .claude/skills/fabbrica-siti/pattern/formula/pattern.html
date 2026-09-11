@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; formula</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: la promessa vaga ("lavori meglio") diventa un'equazione
+   verificabile. Una formula grande, un grafico a due barre (ORA grigia, CON
+   IL SISTEMA arancione) le cui larghezze si calcolano da data-valore, e un
+   riquadro di calcolo che mostra il passaggio. Nessun numero e' scritto due
+   volte: entrano UNA sola volta nei data-* del blocco .formula__dati (hidden)
+   e tutto il resto — barre, cifre, testo — lo legge da li' (§8).
+   Origine: competitor/Andrei Pascu/site-study/reports/12-claude-speedrun-ATLANTE.md,
+   Tavola 26 ("La produttivita' e' questa: Produttivita' = robe utili che fai
+   / unita' di tempo", grafico a barre Giorno1/Giorno2, calcolo 6/2=3 -> 10/2=5,
+   +66%). I numeri della demo (6, 2, 10, 2) sono quelli misurati li'. */
+
+/* GRANA locale (legge di Max, 2026-09-11): la sezione e' su fondo pieno
+   (var(--ink)) e le due barre sono colore pieno: ognuna porta la sua grana,
+   perche' la grana fissa del body si perde sopra un fondo composto. Ricetta
+   copiata da .frame::after in tavola_template.html:19. */
+.grana-scura { position: relative; }
+.grana-scura::after {
+  content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  mix-blend-mode: overlay; opacity: .5;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='2'/><feColorMatrix values='0 0 0 0 0.80 0 0 0 0 0.76 0 0 0 0 0.76 0 0 0 0.65 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 240px 240px;
+}
+
+.formula { padding: calc(var(--u) * 0.06) 0; }
+.formula__eyebrow { text-align: center; }
+
+.formula__eq {
+  text-align: center; margin: calc(var(--u) * 0.012) auto 0; max-width: 22ch;
+  font-family: var(--font-shout); font-weight: 900; letter-spacing: var(--tracking-display);
+  font-size: clamp(24px, calc(var(--u) * 0.04), 46px); line-height: 1.15; color: var(--fg);
+}
+.formula__eq b { color: var(--orange); font-weight: 900; }
+
+.formula__grafico {
+  max-width: calc(var(--u) * 0.56); margin: calc(var(--u) * 0.045) auto 0;
+  display: grid; gap: calc(var(--u) * 0.018); position: relative; z-index: 3;
+}
+
+.formula__barra { display: grid; grid-template-columns: 8.5em 1fr 4.5em; align-items: center; gap: calc(var(--u) * 0.014); }
+.formula__nome { font-size: 13.5px; letter-spacing: .04em; color: var(--silver); text-align: right; }
+.formula__barra--acc .formula__nome { color: var(--fg); font-weight: 600; }
+
+.formula__pista {
+  position: relative; height: calc(var(--u) * 0.026); min-height: 14px;
+  background: rgba(249, 249, 249, .07); border-radius: var(--radius-sm); overflow: hidden;
+}
+.formula__riempi {
+  position: relative; display: block; height: 100%; width: 0%;
+  background: var(--silver-dim);
+  border-radius: var(--radius-sm);
+  transition: width 900ms var(--ease-heavy);
+}
+.formula__barra--acc .formula__riempi { background: var(--orange); }
+@media (prefers-reduced-motion: reduce) { .formula__riempi { transition: none; } }
+
+/* la grana entra anche sulla barra riempita: e' un colore pieno (Max, §GRANA) */
+.formula__riempi::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  mix-blend-mode: overlay; opacity: .45;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='3' stitchTiles='stitch' seed='9'/><feColorMatrix values='0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 .8 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 60px 60px;
+}
+
+.formula__cifra { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--fg); font-size: 14px; }
+
+/* il riquadro di calcolo, "mono" per allineare le cifre in colonna.
+   Deroga minima §1: il canone non definisce una famiglia monospace (solo
+   Onest, §3). Qui serve solo ad allineare cifre in una tabella di calcolo,
+   non e' un carattere di marchio: stack di sistema generico, nessun colore
+   o misura nuova. */
+.formula__calcolo {
+  max-width: calc(var(--u) * 0.56); margin: calc(var(--u) * 0.033) auto 0;
+  border-left: 2px solid var(--orange);
+  padding: calc(var(--u) * 0.014) 0 calc(var(--u) * 0.014) calc(var(--u) * 0.022);
+  font-family: ui-monospace, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  font-size: 13.5px; line-height: 1.9; color: var(--silver);
+  position: relative; z-index: 3;
+}
+.formula__calcolo b { color: var(--fg); font-variant-numeric: tabular-nums; }
+.formula__calcolo b.acc { color: var(--orange); }
+
+@media (max-width: 720px) {
+  /* A 390px 8.5em di etichetta + 4.5em di cifra non lasciano spazio alla
+     barra: misurato, la colonna etichetta scende sopra la barra. */
+  .formula__barra { grid-template-columns: 1fr; gap: calc(var(--u) * 0.008); }
+  .formula__nome { text-align: left; }
+  .formula__barra--acc .formula__nome { text-align: left; }
+}
+</style>
+</head>
+<body class="page grain-fine">
+
+  <section class="formula bg-ink grana-scura">
+
+    <p class="formula__eyebrow eyebrow label" style="text-align:center">Il conto, non l&rsquo;aggettivo</p>
+    <p class="formula__eq">Produttività = <b>cose utili fatte</b> / <b>ore tue</b></p>
+
+    <!-- §8: le sole due cifre sorgente. Tutto il resto (barre, percentuali,
+         testo del calcolo) si legge da qui, non si riscrive. -->
+    <div id="dati" hidden>
+      <div data-riga="ora" data-pezzi="6" data-ore="2"></div>
+      <div data-riga="sistema" data-pezzi="10" data-ore="2"></div>
+    </div>
+
+    <div class="formula__grafico" id="grafico">
+      <div class="formula__barra" id="barra-ora">
+        <span class="formula__nome">Ora</span>
+        <span class="formula__pista"><span class="formula__riempi" id="riempi-ora"></span></span>
+        <span class="formula__cifra num-tabular" id="cifra-ora"></span>
+      </div>
+      <div class="formula__barra formula__barra--acc" id="barra-sistema">
+        <span class="formula__nome">Con il sistema</span>
+        <span class="formula__pista"><span class="formula__riempi" id="riempi-sistema"></span></span>
+        <span class="formula__cifra num-tabular" id="cifra-sistema"></span>
+      </div>
+    </div>
+
+    <div class="formula__calcolo" id="calcolo" aria-live="polite"></div>
+
+  </section>
+
+<script>
+(function () {
+  'use strict';
+  var dati = document.getElementById('dati');
+  if (!dati) { return; }
+  var righe = dati.querySelectorAll('[data-riga]');
+  var voci = {};
+  Array.prototype.forEach.call(righe, function (r) {
+    var pezzi = Number(r.getAttribute('data-pezzi'));
+    var ore = Number(r.getAttribute('data-ore'));
+    voci[r.getAttribute('data-riga')] = { pezzi: pezzi, ore: ore, tasso: pezzi / ore };
+  });
+
+  var ora = voci.ora, sistema = voci.sistema;
+  var max = Math.max(ora.tasso, sistema.tasso);
+  var virgola = function (n) { return n.toFixed(1).replace('.', ','); };
+
+  /* le barre: SOLO da data-valore, mai un numero scritto qui dentro */
+  document.getElementById('riempi-ora').style.width = (ora.tasso / max * 100) + '%';
+  document.getElementById('riempi-sistema').style.width = (sistema.tasso / max * 100) + '%';
+  document.getElementById('cifra-ora').textContent = virgola(ora.tasso) + '/ora';
+  document.getElementById('cifra-sistema').textContent = virgola(sistema.tasso) + '/ora';
+
+  var differenza = Math.round((sistema.tasso - ora.tasso) / ora.tasso * 100);
+
+  document.getElementById('calcolo').innerHTML =
+    '<div>Ora &nbsp;&nbsp;<b>' + ora.pezzi + '</b> pezzi &divide; <b>' + ora.ore + '</b> ore &nbsp;=&nbsp; <b>' + virgola(ora.tasso) + '</b>/ora</div>' +
+    '<div>Sistema&nbsp;<b>' + sistema.pezzi + '</b> pezzi &divide; <b>' + sistema.ore + '</b> ore &nbsp;=&nbsp; <b>' + virgola(sistema.tasso) + '</b>/ora</div>' +
+    '<div>Differenza &nbsp;<b class="acc">+' + differenza + '%</b> &mdash; fai tu la divisione</div>';
+})();
+</script>
+</body>
+</html>

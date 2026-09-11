@@ -390,6 +390,19 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   assorbe la skill nel repo (togliendo il `.git` annidato), o la si dichiara esplicitamente esterna
   e si scrive dove vive la sua verita'. Oggi non e' ne' l'una ne' l'altra: e' un buco silenzioso.
 
+- **B-068 — NUOVA (2026-09-11).** Sito Agency Vivo: Lighthouse mobile performance **77** (obiettivo ≥ 85,
+  LCP 3,9 s). Cause: Onest 900 + Playfair, motion (framer/GSAP/Lenis), e i 404 delle 12 foto non ancora
+  generate. Rivalutare quando i file sono in `public/aura/`. Dove: `agency-empire/`.
+- **B-069 — NUOVA (2026-09-11).** `navbar.tsx`, `sticky-cta.tsx`, `prenota/page.tsx` sono componenti v1:
+  portarli alla scala del canone v3 (`vivo.css`) — oggi 16 dimensioni tipografiche invece di ≤ 12.
+- **B-070 — NUOVA (2026-09-11).** Pagina-ponte `/ponte` per il traffico dell'outreach (Dossier 37, F7.5):
+  si costruisce SOLO insieme alla riga nella Bibbia dei Messaggi che la linka (C2.1), altrimenti è il
+  ventiseiesimo pezzo mai usato.
+- **B-071 — NUOVA (2026-09-11).** N13 "Prove": testimonianze con nome, foto e link quando esistono — mai
+  screenshot muti (difetto delle 42 immagini di Pascu).
+- **B-072 — NUOVA (2026-09-11).** Le 12 immagini generate (brief in `public/aura/manifest.json`,
+  `brief_generazione`) + ritratti di Max e Gael + screenshot vero della dashboard: quando arrivano in
+  `public/aura/` coi nomi del manifest, le foto compaiono senza toccare codice. Dipende da Max (Higgsfield).
 - **B-067 — NUOVA (2026-09-11).** `engine/piano.py` (libri KDP) scrive il piano settimanale solo in
   `LIBRI/_piani/` (md+json); il PDF e il doppione in `documentazione Empire/Piani/KDP/` oggi si fanno
   a mano con `PIANO-MAESTRO/scripts/build_piano_kdp_pdf.py` (fatto per il piano del 31/08,

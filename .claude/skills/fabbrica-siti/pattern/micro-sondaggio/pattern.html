@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; micro-sondaggio</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: un finto sondaggio. Non raccoglie un voto reale — entrambe le
+   risposte portano allo STESSO ancoraggio — ma fa compiere un clic fisico, e
+   un clic fisico aumenta l'investimento psicologico nella pagina piu' di
+   qualunque frase: micro-commitment, non un bivio di navigazione.
+   Origine: claude-speedrun.com, Tavola 7 (report
+   competitor/Andrei Pascu/site-study/reports/12-claude-speedrun-ATLANTE.md,
+   "TAVOLA 7 — Il micro-sondaggio 'Dimmi se ti ritrovi'"): "Entrambi i
+   pulsanti hanno lo stesso bg: transparent... nessuna gerarchia visiva fra le
+   due opzioni... entrambe le risposte portano probabilmente allo stesso
+   scroll, non a un ramo diverso del contenuto". */
+.sondaggio {
+  padding: calc(var(--u) * 0.05) 7%;
+}
+
+.sondaggio__segnali {
+  list-style: none;
+  margin: 0 0 calc(var(--u) * 0.03);
+  padding: 0;
+  max-width: 60ch;
+  display: grid;
+  gap: 0.7em;
+}
+.sondaggio__segnali li {
+  position: relative;
+  padding-left: 1.4em;
+  /* fondo chiaro: canale RGB di --fg-on-light + scala di opacita' canone,
+     stesso principio usato in pattern/specchio/pattern.html */
+  color: rgba(28, 28, 28, var(--t-76));
+}
+.sondaggio__segnali li::before {
+  content: "";
+  position: absolute; left: 0; top: 0.55em;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+.sondaggio__istruzione {
+  font-weight: 700;
+  font-size: clamp(17px, calc(var(--u) * 0.016), 22px);
+  margin: 0 0 calc(var(--u) * 0.02);
+  color: var(--fg-on-light);
+}
+
+.sondaggio__voti {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--u) * 0.015);
+}
+
+/* i due pulsanti fantasma — identici, nessuna gerarchia fra le due opzioni.
+   bg transparent, bordo argento al 30%: --silver e' #d9d4e1 (canone.css §2),
+   qui il suo canale RGB (217,212,225) composto con l'opacita' che il pattern
+   richiede — non un hex nuovo, la stessa tecnica di rgba(28,28,28,var(--t-*))
+   usata sopra. */
+.voto-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: calc(var(--u) * 0.14);
+  padding: 0.8em 1.6em;
+  background: transparent;
+  border: 1px solid rgba(217, 212, 225, 0.3);
+  border-radius: var(--radius-pill);
+  color: rgba(28, 28, 28, var(--t-76));
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color var(--t-base) ease, background var(--t-base) ease, color var(--t-base) ease;
+}
+.voto-btn:hover,
+.voto-btn:focus-visible {
+  border-color: rgba(217, 212, 225, 0.55);
+  background: rgba(28, 28, 28, 0.03);
+}
+
+/* il feedback dopo il clic: l'unico segnale che il voto e' stato registrato.
+   Non e' un'animazione (nessun transform, nessun keyframe) quindi non deve
+   spegnersi con prefers-reduced-motion: §7 riguarda il movimento, non un
+   cambio di colore istantaneo — la transizione qui sotto e' solo un comfort
+   visivo e si spegne comunque, per coerenza con .btn nel canone. */
+.voto-btn[data-voto] {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voto-btn { transition: none; }
+}
+</style>
+</head>
+<body class="page grain-fine bg-paper">
+
+  <section class="sondaggio">
+    <ul class="sondaggio__segnali">
+      <li>Il sito cambia ogni mese, il fatturato no.</li>
+      <li>Il traffico sale, i preventivi restano fermi.</li>
+      <li>L&rsquo;agenzia manda un report che nessuno legge fino in fondo.</li>
+      <li>Sai che qualcosa non converte, ma non sai cosa esattamente.</li>
+    </ul>
+    <p class="sondaggio__istruzione">Leggi e poi vota: ti ritrovi o no?</p>
+    <div class="sondaggio__voti">
+      <a href="#ascolta-bene" class="voto-btn">S&igrave;, mi ritrovo</a>
+      <a href="#ascolta-bene" class="voto-btn">Non mi ritrovo</a>
+    </div>
+  </section>
+
+  <section id="ascolta-bene" class="sondaggio__seguito">
+    <p class="label" style="color:rgba(28,28,28,var(--t-50))">continua qui, per entrambe le risposte</p>
+  </section>
+
+<script>
+/* Il "voto" non raccoglie un dato: registra il clic sull'elemento stesso.
+   5 righe, nessuna animazione — resta attivo anche con prefers-reduced-motion
+   (§7 spegne il movimento, non questo). */
+document.querySelectorAll('.voto-btn').forEach(function (bottone) {
+  bottone.addEventListener('click', function () {
+    bottone.setAttribute('data-voto', bottone.textContent.trim());
+  });
+});
+</script>
+</body>
+</html>

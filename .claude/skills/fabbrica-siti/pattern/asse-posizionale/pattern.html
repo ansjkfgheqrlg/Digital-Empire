@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; asse-posizionale</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: un asse orizzontale a tre nodi che colloca il lettore fra "come
+   fa oggi" e "come farebbe automatizzato", con "TU" fermo al centro. Non è un
+   grafico: è una riga sola che il lettore legge come una posizione, non come
+   un dato (Tavola 18: il diagramma BROKIE->TU->COMPETITOR è l'unica
+   visualizzazione posizionale, non numerica, di tutta la pagina studiata).
+   Origine: competitor/Andrei Pascu/site-study/reports/12-claude-speedrun-ATLANTE.md,
+   Tavola 18. CSS di riferimento: .asse / .linea in
+   agency-empire/cantiere/aura-preview/tavola_template.html:135-145. */
+
+/* GRANA locale (legge di Max, 2026-09-11): ogni superficie a gradiente o
+   colore pieno porta una grana propria, perché la grana fissa del body
+   (.grain-fine) si perde sopra un fondo composto. Ricetta copiata da
+   .frame::after in tavola_template.html:19 (overlay, feTurbulence 0.85). */
+.grana-scura { position: relative; }
+.grana-scura::after {
+  content: ""; position: absolute; inset: 0; z-index: 5; pointer-events: none;
+  mix-blend-mode: overlay; opacity: .5;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='2'/><feColorMatrix values='0 0 0 0 0.80 0 0 0 0 0.78 0 0 0 0 0.76 0 0 0 0.65 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 240px 240px;
+}
+
+.asse {
+  padding: calc(var(--u) * 0.04576) 0 calc(var(--u) * 0.05085);   /* origine: .asse, 54px/60px su --u 1180 */
+  display: grid;
+  grid-template-columns: 1fr 1fr;                                 /* rapporto di composizione, non una misura */
+  gap: calc(var(--u) * 0.0339);                                   /* origine: .asse gap 40px/1180 */
+  align-items: center;
+}
+
+/* --- colonna sinistra: la foto verticale 4:5 -------------------------- */
+.asse__foto { position: relative; aspect-ratio: 4 / 5; max-height: calc(var(--u) * 0.3051); overflow: hidden; border-radius: var(--radius-sm); }
+
+/* segnaposto: nessuna immagine esterna, un gradiente scuro fa la foto
+   (stessa logica di --foto in cucitura-fotografica/pattern.html). */
+.asse__foto {
+  background:
+    radial-gradient(70% 55% at 32% 30%, rgba(217, 212, 225, 0.20), transparent 68%),
+    radial-gradient(55% 40% at 70% 70%, rgba(251, 70, 4, 0.16), transparent 70%),
+    linear-gradient(165deg, #3a3a3a, var(--ink-2) 74%);
+}
+
+/* TESTO SU FOTO (legge di Max): banda scura sfumata sopra/sotto + ombra
+   tripla. Ricetta: .riga in tavola_template.html:58-62. Qui la banda sta in
+   ALTO invece che in basso — la posizione cambia, la ricetta no. */
+.riga {
+  position: absolute; left: 0; right: 0; top: 0; z-index: 6;
+  text-align: center; color: var(--fg); font-weight: 600;
+  font-size: clamp(13px, calc(var(--u) * 0.0114), 16px);
+  line-height: 1.4; margin: 0;
+  padding: calc(var(--u) * 0.0186) 7%;
+  background: linear-gradient(180deg,
+    rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, .86) 20%,
+    rgba(10, 10, 10, .86) 62%, rgba(10, 10, 10, 0) 100%);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1), 0 2px 6px rgba(0, 0, 0, .95), 0 0 24px rgba(0, 0, 0, .9);
+}
+
+/* --- colonna destra: eyebrow, titolo, asse ----------------------------- */
+.asse__testo h2 { font-size: clamp(22px, calc(var(--u) * 0.02203), 32px); color: var(--fg); max-width: 14ch; }
+.asse__testo h2 .it { font-style: italic; font-weight: 400; color: var(--silver); }
+
+.linea {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center;
+  position: relative; margin-top: calc(var(--u) * 0.02203);         /* origine: .linea margin-top 26px/1180 */
+}
+
+/* il filo: argento -> arancione. Origine: .linea::before, tavola_template:140 */
+.linea::before {
+  content: ""; position: absolute; left: 8%; right: 8%;
+  top: calc(var(--u) * 0.01186);                                    /* allineato al centro dei nodi, 14px/1180 */
+  height: 1px;
+  background: linear-gradient(90deg, var(--silver-dim), var(--orange));
+}
+
+.linea div {
+  text-align: center; position: relative;
+  font-family: var(--font-shout);
+  font-size: clamp(10px, calc(var(--u) * 0.0093), 13px);
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--silver-dim);
+}
+
+/* il nodo, un cerchio vuoto sul filo. Origine: .linea div::before, tavola_template:142 */
+.linea div::before {
+  content: ""; display: block;
+  width: calc(var(--u) * 0.01186); height: calc(var(--u) * 0.01186); /* 14px/1180 */
+  border-radius: 50%; margin: 0 auto calc(var(--u) * 0.01017);       /* 12px/1180 */
+  border: 1px solid var(--silver-dim); background: var(--ink);
+  position: relative; z-index: 1;
+}
+
+/* il nodo centrale "TU": piu' grande, cerchiato bianco. Origine: .linea .tu, tavola_template:143-144 */
+.nodo--tu {
+  color: var(--fg); font-weight: 600;
+}
+.nodo--tu::before {
+  width: calc(var(--u) * 0.02373); height: calc(var(--u) * 0.02373); /* 28px/1180 */
+  border: max(1.5px, calc(var(--u) * 0.0017)) solid var(--silver-bright);
+  margin-top: max(1px, calc(var(--u) * 0.0008));                     /* compensa lo spessore extra del bordo */
+}
+.nodo--tu small {
+  display: block; margin-top: calc(var(--u) * 0.0051);               /* 6px/1180 */
+  color: var(--orange); letter-spacing: .1em; text-transform: none;
+  font-size: clamp(9px, calc(var(--u) * 0.0081), 11px);
+}
+
+/* il nodo di destra: pieno arancione. Origine: .linea .av, tavola_template:145 */
+.nodo--auto::before { background: var(--orange); border-color: var(--orange); }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+@media (max-width: 720px) {
+  /* A 390px due colonne da 1fr comprimono la foto sotto i 4:5 leggibili e il
+     titolo va in coda: si impila. Misurato a 390px. */
+  .asse { grid-template-columns: 1fr; }
+  .asse__foto { max-height: calc(var(--u) * 0.9); }
+}
+</style>
+</head>
+<body class="page grain-fine">
+
+  <section class="asse bg-ink grana-scura">
+
+    <div class="asse__foto" aria-hidden="true">
+      <p class="riga">Non ha un nome. Ha un sistema. E ha i tuoi clienti.</p>
+    </div>
+
+    <div class="asse__testo">
+      <p class="eyebrow label">Dove sei adesso</p>
+      <h2>Stessi limiti tuoi.<br><span class="it">Il primo che li risolve non lo raggiungi più.</span></h2>
+
+      <div class="linea">
+        <div>A mano</div>
+        <div class="nodo--tu">Tu<small>sei qui</small></div>
+        <div class="nodo--auto">Automatizzato</div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

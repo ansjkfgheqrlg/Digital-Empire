@@ -54,6 +54,20 @@ export function Aura({
     );
   }
 
+  // file non ancora in public/ (la generata arriva da Higgsfield): la composizione resta,
+  // con il fondo AURA vuoto e la riga al suo posto — mai un'icona rotta, mai uno still non nostro
+  if (manca) {
+    return (
+      <figure className={cn("foto foto--vuota", className)} role="img" aria-label={alt}>
+        {riga && (
+          <figcaption className={cn("riga", rigaPos === "media" ? "riga--media" : "riga--bassa", rigaPos === "sinistra" && "riga--sinistra")}>
+            {riga}
+          </figcaption>
+        )}
+      </figure>
+    );
+  }
+
   return (
     <figure
       className={cn(

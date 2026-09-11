@@ -101,7 +101,7 @@
 /* ----------------------------------------------------------------------------
    FOTO — trattamento B (AURA) e D (filigrana). Il file resta neutro: qui il CSS.
    ---------------------------------------------------------------------------- */
-.foto { position: relative; overflow: hidden; background: #000; }
+.foto { position: relative; overflow: hidden; background: #0a0a0a; }  /* mai #000: sfrangia il testo (armageddon T5) */
 .foto > img { width: 100%; height: 100%; object-fit: cover; display: block;
   filter: saturate(.78) contrast(1.08) brightness(.9); }
 .foto--carta > img { filter: saturate(.6) contrast(1.1) brightness(.8); }   /* su carta resta un blocco d'inchiostro */
@@ -283,3 +283,10 @@ details.sv-faq p { margin-top: 10px; max-width: 64ch; color: #4a4640; font-size:
 /* la riga "libera": stessa banda e stessa ombra, ma come blocco nel flusso (N4 cucitura) */
 .riga--libera { position: relative; left: auto; right: auto; top: auto; display: inline-block;
   max-width: 560px; text-align: left; padding: 14px 22px; border-radius: 4px; }
+
+/* foto non ancora arrivata: fondo AURA vuoto (luce di taglio + grana), la riga resta al suo posto */
+.foto--vuota { min-height: 240px;
+  background:
+    radial-gradient(70% 60% at 30% 25%, rgba(255, 255, 255, .10), transparent 60%),
+    radial-gradient(60% 50% at 75% 70%, rgba(251, 70, 4, .10), transparent 65%),
+    linear-gradient(160deg, #2a2a2c, #0d0d0d 70%); }

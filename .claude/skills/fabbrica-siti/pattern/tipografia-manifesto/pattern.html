@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; tipografia-manifesto</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: una parola-manifesto dentro una casella arancione piena, FUORI
+   dalla gerarchia dei titoli — a differenza dell'originale studiato, dove
+   "ASCOLTA BENE." e' marcato H1 (un secondo H1 deliberato a meta' pagina).
+   Qui la casella e' decorazione tipografica (aria-hidden), e il vero titolo
+   accessibile e' un h2 visivamente nascosto accanto: la gerarchia dei titoli
+   della pagina non si spezza per un effetto grafico.
+   Origine: competitor/Andrei Pascu/site-study/reports/12-claude-speedrun-ATLANTE.md,
+   Tavola 3 ("GET. SHIT. DONE.", li' decorazione non-H1) e Tavola 8
+   ("ASCOLTA BENE." su casella arancione piena, li' H1 deliberato — la
+   differenza fra le due e' commentata nel report stesso, riga 289-290).
+   CSS di riferimento: .asc .box, .prova in tavola_template.html:148,151-153. */
+
+/* GRANA locale (legge di Max, 2026-09-11): la casella e' colore pieno
+   arancione, e serve la sua grana — la grana fissa del body si perde sopra
+   un fondo composto. Ricetta copiata da .fascia in tavola_template.html:131
+   (feTurbulence scuro in multiply dentro il colore pieno: l'arancione
+   respira, non brucia). */
+.grana-arancio { position: relative; }
+.grana-arancio::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  mix-blend-mode: multiply; opacity: .55;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch' seed='13'/><feColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.08 0 0 0 0 0.12 0 0 0 0.26 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 260px 260px;
+}
+
+/* GRANA locale sul fondo scuro della sezione (colore pieno var(--ink)) */
+.grana-scura { position: relative; }
+.grana-scura::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  mix-blend-mode: overlay; opacity: .5;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='2'/><feColorMatrix values='0 0 0 0 0.80 0 0 0 0 0.78 0 0 0 0 0.76 0 0 0 0.65 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 240px 240px;
+}
+
+/* utility di accessibilita': non e' un valore del canone (colore/misura), e'
+   il tecnicismo standard per nascondere visivamente senza nascondere allo
+   screen reader — nessuna alternativa canone esiste per questo. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; padding: 0; margin: -1px;
+}
+
+.manifesto { padding: calc(var(--u) * 0.05) 0; position: relative; }
+.manifesto__in { position: relative; z-index: 2; max-width: calc(var(--u) * 0.6); margin: 0 auto; text-align: center; }
+
+/* la casella: Onest 900, clamp fissato dal brief, letter-spacing -.03em.
+   Origine misure: .asc .box, tavola_template.html:148. */
+.manifesto__box {
+  display: inline-block;
+  background: var(--orange); color: var(--ink);
+  font-family: var(--font-shout); font-weight: 900;
+  font-size: clamp(34px, calc(var(--u) * 0.053), 64px);
+  letter-spacing: -.03em; line-height: 1;
+  padding: calc(var(--u) * 0.00508) calc(var(--u) * 0.01525);   /* 6px/18px su --u 1180, origine tavola_template */
+  position: relative; z-index: 2;
+}
+
+.manifesto__prova {
+  margin: calc(var(--u) * 0.033) auto 0;
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--u) * 0.0085); max-width: calc(var(--u) * 0.44);
+  position: relative; z-index: 2;
+}
+.collaudo {
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-sm);
+  padding: calc(var(--u) * 0.012);
+  font-size: 11px; color: var(--silver-dim);
+}
+.collaudo b {
+  display: block; font-family: var(--font-shout);
+  font-size: clamp(20px, calc(var(--u) * 0.022), 27px);
+  color: var(--fg); font-weight: 900; letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;                             /* §12 del canone: le cifre non ballano */
+  margin-bottom: 4px;
+}
+
+@media (max-width: 720px) {
+  /* A 390px tre celle da 1fr scendono sotto i 100px, il numero a 3 cifre non
+     ci sta piu' su una riga sola: misurato, si impilano a una colonna. */
+  .manifesto__prova { grid-template-columns: 1fr; max-width: calc(var(--u) * 0.7); }
+}
+</style>
+</head>
+<body class="page grain-fine">
+
+  <section class="manifesto bg-ink grana-scura">
+    <div class="manifesto__in">
+
+      <!-- il titolo VERO, accessibile, fuori dalla gerarchia visiva -->
+      <h2 class="sr-only">Ascolta bene.</h2>
+
+      <!-- la parola-manifesto: decorazione tipografica, non un titolo.
+           <div aria-hidden> (non <p role="presentation">): cosi' esce del
+           tutto dall'albero di accessibilita' e non rischia di essere letta
+           due volte insieme all'h2 sr-only qui sopra. -->
+      <div class="manifesto__box grana-arancio" aria-hidden="true">ASCOLTA BENE.</div>
+
+      <div class="manifesto__prova">
+        <div class="collaudo"><b>300</b>messaggi/giorno, il sistema</div>
+        <div class="collaudo"><b>30</b>a mano, in due ore tue</div>
+        <div class="collaudo"><b>10&times;</b>la differenza, fanne il conto</div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

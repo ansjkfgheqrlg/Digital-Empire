@@ -33,20 +33,20 @@ export function Navbar() {
           <a
             href="#"
             className="glass-block flex items-center gap-2.5 group pointer-events-auto"
-            aria-label="Digital Empire — Home"
+            aria-label="Digital Empire, torna in cima — Home"
           >
             <span
-              className="grid place-items-center rounded-lg w-9 h-9 font-display font-bold text-[0.95rem] tracking-[0.08em]"
+              className="grid place-items-center rounded-lg w-9 h-9 font-sans font-black font-bold text-[0.95rem] tracking-[0.08em]"
               style={{
                 color: "#edeebe",
-                background: "linear-gradient(180deg, #1a4090 0%, #062155 100%)",
+                background: "linear-gradient(180deg, #1a4090 0%, #1c1c1c 100%)",
                 boxShadow:
                   "0 0 18px rgba(6,33,85,0.40), inset 0 1px 0 rgba(237,238,190,0.30), inset 0 -1px 0 rgba(0,0,20,0.35)",
               }}
             >
               DE
             </span>
-            <span className="hidden sm:block font-display tracking-[0.18em] text-[0.78rem] font-bold text-[#062155] pr-1">
+            <span className="hidden sm:block font-sans font-black tracking-[0.18em] text-[0.78rem] font-bold text-[#1c1c1c] pr-1">
               DIGITAL EMPIRE
             </span>
           </a>
@@ -57,7 +57,7 @@ export function Navbar() {
               <li key={it.href}>
                 <a
                   href={it.href}
-                  className="px-2.5 xl:px-3.5 py-2 text-[0.875rem] font-medium rounded-lg text-[#062155]/75 hover:text-[#062155] hover:bg-[#062155]/8 transition-colors"
+                  className="px-2.5 xl:px-3.5 py-2 text-[0.875rem] font-medium rounded-lg text-[#1c1c1c]/75 hover:text-[#1c1c1c] hover:bg-[#1c1c1c]/8 transition-colors"
                 >
                   {it.label}
                 </a>
@@ -72,7 +72,7 @@ export function Navbar() {
               href="/prenota"
               className="hidden lg:inline-flex btn-gold !py-2 !px-4 !text-[0.875rem] group"
             >
-              Demo gratuita
+              Prenota la chiamata
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
             </a>
 
@@ -82,7 +82,7 @@ export function Navbar() {
               aria-label={open ? "Chiudi menu" : "Apri menu"}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
-              className="lg:hidden glass-block !p-0 grid place-items-center w-10 h-10 text-[#062155]/80 hover:text-[#062155]"
+              className="lg:hidden glass-block !p-0 grid place-items-center w-10 h-10 text-[#1c1c1c]/80 hover:text-[#1c1c1c]"
             >
               <AnimatePresence mode="wait" initial={false}>
                 <motion.span
@@ -135,10 +135,10 @@ export function Navbar() {
                       <a
                         href={it.href}
                         onClick={() => setOpen(false)}
-                        className="flex items-center justify-between py-4 text-[1.4rem] font-semibold tracking-[-0.01em] text-[#062155] border-b border-[#062155]/8 group"
+                        className="flex items-center justify-between py-4 text-[1.4rem] font-semibold tracking-[-0.01em] text-[#1c1c1c] border-b border-[#1c1c1c]/8 group"
                       >
                         <span>{it.label}</span>
-                        <ArrowRight className="h-4 w-4 text-[#062155]/25 transition-transform group-hover:translate-x-0.5 group-hover:text-[#062155]/55" />
+                        <ArrowRight className="h-4 w-4 text-[#1c1c1c]/25 transition-transform group-hover:translate-x-0.5 group-hover:text-[#1c1c1c]/55" />
                       </a>
                     </motion.li>
                   ))}
@@ -159,7 +159,7 @@ export function Navbar() {
                   Prenota Demo Gratuita
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </a>
-                <p className="text-center text-[0.8rem] text-[#062155]/40">
+                <p className="text-center text-[0.8rem] text-[#1c1c1c]/40">
                   Gratuita · 30 min · Risposta entro 24h
                 </p>
               </motion.div>

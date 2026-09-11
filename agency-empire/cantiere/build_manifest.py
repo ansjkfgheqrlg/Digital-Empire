@@ -63,7 +63,7 @@ CAST = {
     14: (3, "N4", "outreach", "Alle 7:40 ha gia' mandato 300 messaggi. Tu stai facendo colazione."),
     21: (4, "N4", "content", "Un argomento entra. Carosello, reel, caption escono. Senza toccare niente."),
     16: (5, "N6", "fascia", "Non ha un nome. Ha un sistema. E ha i tuoi clienti."),
-    15: (6, "N6", "asse", "Stessi limiti tuoi. Il primo che li risolve non lo raggiungi piu'."),
+    # 15 (folla): era il posto 6 sull'asse; tolto in build per la regola "mai due foto di fila" -> riserva
     30: (7, "N8", "ascolta-bene", "Non e' piu' forte. E' arrivato prima."),
     1: (8, "N9", "formula", "Dodici canoni all'anno per un tool che non sa chi sei."),
     35: (9, "N10", "processo", "Il giorno dopo il go-live: 30 giorni di monitoraggio nostri. Le serate tue."),

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern &mdash; specchio</title>
+<link rel="stylesheet" href="../../canone/canone.css">
+<style>
+
+/* IL PATTERN: una "prova d'imbarazzo". Non si descrive il problema del
+   lettore, gli si mette davanti uno specchio: una foto (il destinatario) e
+   accanto un messaggio vero, banale, uguale a quaranta altri arrivati quella
+   settimana. Il lettore si riconosce prima ancora di leggere una promessa.
+   Origine: claude-speedrun.com, Tavola 6 (report
+   competitor/Andrei Pascu/site-study/reports/12-claude-speedrun-ATLANTE.md,
+   "TAVOLA 6 — Il primo confronto ChatGPT vs realta'"): "la prova d'imbarazzo
+   funziona come specchio: il lettore riconosce se stesso nell'esempio
+   ridicolo prima ancora di leggere una singola promessa". CSS di riferimento:
+   .spec, .dm in agency-empire/cantiere/aura-preview/tavola_template.html. */
+.spec {
+  --foto-lato: calc(var(--u) * 0.25);   /* 300px a --u:1200 — tavola_template.html:104 */
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--foto-lato) 1fr;
+  gap: calc(var(--u) * 0.04);            /* 48px — tavola_template.html:104 */
+  align-items: center;
+  padding: calc(var(--u) * 0.0467) 7%;   /* 56px — tavola_template.html:104 */
+}
+
+/* sotto 860px .spec passa a colonna singola — stessa soglia di .fascia nella
+   stessa fonte, origine: tavola_template.html:205-207 */
+@media (max-width: 860px) {
+  .spec { grid-template-columns: 1fr; }
+  .spec__foto { max-width: var(--foto-lato); }
+}
+
+/* la foto — quadrata, senza asset esterno (Corsia A: zero dipendenze). Un
+   gradiente al posto dello scatto vero, stessa tecnica di --foto in
+   pattern/cucitura-fotografica/pattern.html: quando lo scatto reale entra in
+   produzione, questo div diventa un tag immagine vero con lo stesso alt. */
+.spec__foto {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background-image:
+    radial-gradient(66% 50% at 32% 30%, rgba(138, 133, 148, 0.55), transparent 68%),
+    radial-gradient(54% 42% at 72% 68%, rgba(28, 28, 28, 0.5), transparent 70%),
+    linear-gradient(160deg, #3a3a3a, #0a0a0a 72%);
+  filter: contrast(1.1) saturate(0.6) brightness(0.8);   /* tavola_template.html:106 */
+}
+
+/* GRANA — legge di Max: la foto e' un gradiente pieno, porta una grana
+   locale. Ricetta da .frame::after, tavola_template.html:19 (feTurbulence
+   baseFrequency 0.85, overlay). */
+.spec__foto::after {
+  content: "";
+  position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  mix-blend-mode: overlay; opacity: 0.5;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='2'/><feColorMatrix values='0 0 0 0 0.80 0 0 0 0 0.78 0 0 0 0 0.76 0 0 0 0.65 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 240px 240px;
+}
+
+.spec h3 {
+  font-size: clamp(26px, calc(var(--u) * 0.025), 40px);  /* tavola_template.html:108 */
+  max-width: 14ch;
+  margin: 0;
+}
+.spec h3 .it { color: var(--orange); font-weight: 600; }  /* tavola_template.html:109 */
+
+/* testo su sfondo chiaro: canale RGB di --fg-on-light (#1c1c1c = 28,28,28)
+   composto con la scala di opacita' del canone — nessun hex nuovo, solo la
+   coppia di token gia' in canone.css §2 usata sull'altro fondo. */
+.spec p.corpo {
+  max-width: 52ch;
+  margin: 0.9em 0 0;
+  color: rgba(28, 28, 28, var(--t-76));
+}
+
+.spec .label { color: rgba(28, 28, 28, var(--t-50)); }  /* .label canone e' tarato per fondo scuro */
+
+/* la bolla — bianca (--silver-bright: gia' canone, non un hex nuovo), con
+   etichetta mono sopra e riga in corsivo con i numeri sotto.
+   Origine: tavola_template.html:111-114. */
+.dm {
+  margin-top: calc(var(--u) * 0.0183);   /* 22px — tavola_template.html:111 */
+  max-width: 440px;
+  position: relative;
+  background: var(--silver-bright);
+  border: 1px solid var(--line-light);
+  border-radius: var(--radius-lg);
+  padding: calc(var(--u) * 0.0117) calc(var(--u) * 0.0133);  /* 14px 16px */
+  font-size: 13.5px;
+  color: rgba(28, 28, 28, var(--t-100));
+}
+.dm__label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(28, 28, 28, var(--t-55));
+  margin: 0 0 8px;
+}
+.dm__msg {
+  margin: 0;
+  background: var(--grey);              /* origine usava #f1eee6, qui il grigio canone */
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  line-height: 1.45;
+}
+.dm__nota {
+  margin: 8px 0 0;
+  font-style: italic;
+  color: rgba(28, 28, 28, var(--t-55));
+  font-size: 13px;
+}
+</style>
+</head>
+<body class="page grain-fine bg-paper">
+
+  <section class="spec">
+    <div class="spec__foto" role="img" aria-label="Foto del titolare del concessionario, ritratto sul luogo di lavoro"></div>
+    <div class="spec__corpo">
+      <p class="label">Prova d&rsquo;imbarazzo</p>
+      <h3>Hai letto bene: <span class="it">non risponde</span> da tre giorni.</h3>
+      <p class="corpo">Non &egrave; pigrizia. &Egrave; che il messaggio che gli hai mandato assomigliava ad altri quaranta ricevuti quella settimana &mdash; e lui li cancella tutti allo stesso modo, senza leggerli fino in fondo.</p>
+      <div class="dm">
+        <p class="dm__label">DM di oggi &middot; concessionario, Veneto</p>
+        <p class="dm__msg">Salve, vendiamo servizi di marketing per concessionari auto. Vi interessa una consulenza gratuita?</p>
+        <p class="dm__nota">41 messaggi identici ricevuti questo mese. Risposte date: 0.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

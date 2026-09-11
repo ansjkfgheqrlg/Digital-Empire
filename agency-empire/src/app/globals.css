@@ -47,7 +47,7 @@
 
   /* Fonts */
   --font-sans: var(--font-onest);
-  --font-display: var(--font-cinzel);
+  --font-display: var(--font-onest);   /* Cinzel tolto il 2026-09-11: un font in meno, LCP mobile */
   --font-accent: var(--font-playfair);
   --font-mono: var(--font-jetbrains);
 }
