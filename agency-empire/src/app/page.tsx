@@ -1,54 +1,98 @@
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import { StickyCTA } from "@/components/sticky-cta";
 
-import { Hero } from "@/sections-vivo/n01-hero";
-import { Specchio } from "@/sections-vivo/n02-specchio";
-import { Numeri } from "@/sections-vivo/n03-numeri";
-import { Fabbriche } from "@/sections-vivo/n04-fabbriche";
-import { Casi } from "@/sections-vivo/n05-casi";
-import { Competitor } from "@/sections-vivo/n06-competitor";
-import { Diagnosi } from "@/sections-vivo/n07-diagnosi";
-import { AscoltaBene } from "@/sections-vivo/n08-ascolta-bene";
-import { Formula } from "@/sections-vivo/n09-formula";
-import { Processo } from "@/sections-vivo/n10-processo";
-import { ChiSiamo } from "@/sections-vivo/n11-chi-siamo";
-import { PerChi } from "@/sections-vivo/n12-per-chi";
-import { Prove } from "@/sections-vivo/n13-prove";
-import { Garanzia } from "@/sections-vivo/n14-garanzia";
-import { Obiezioni } from "@/sections-vivo/n15-obiezioni";
-import { CosaOttieni } from "@/sections-vivo/n16-cosa-ottieni";
-import { Faq } from "@/sections-vivo/n17-faq";
-import { Chiusura } from "@/sections-vivo/n18-chiusura";
-import { Legale } from "@/sections-vivo/n19-legale";
+import { Hero } from "@/sections/01-hero";
+import { Stats } from "@/sections/02-stats";
+import { Servizi } from "@/sections/03-servizi";
+import { Preventa } from "@/sections/03b-preventa";
+import { Problema } from "@/sections/04-problema";
+import { DiagnosiCRO } from "@/sections/05-diagnosi-cro";
+import { AscoltaBene } from "@/sections/05b-ascolta-bene";
+import { MetodoAPSOC } from "@/sections/06-metodo-apsoc";
+import { FunnelViz } from "@/sections/07-funnel-viz";
+import { Processo } from "@/sections/08-processo";
+import { Stack } from "@/sections/17-stack";
+import { Portfolio } from "@/sections/09-portfolio";
+import { ProveNovacar } from "@/sections/09b-prove-novacar";
+import { ChiSiamo } from "@/sections/16-chi-siamo";
+import { PerChi } from "@/sections/10-per-chi";
+import { Testimonial } from "@/sections/11-testimonial";
+import { CarteScoperte } from "@/sections/11b-carte-scoperte";
+import { Garanzia } from "@/sections/12-garanzia";
+import { FAQSection } from "@/sections/13-faq";
+import { CTAFinale } from "@/sections/14-cta-finale";
+import { Objections } from "@/sections/15-objections";
 
-/* Sito Agency Vivo — Dossier 37, Parte III: 19 sezioni cucite, nessun divider.
-   L'ordine segue la temperatura: specchio e agitazione, poi prova, metodo, chi siamo, il sì.
-   Le 10 CTA "a temperatura" stanno dentro N1, N4, N5, N7, N8, N10, N12, N14, N16, N18. */
+function Divider() {
+  return <div className="divider-silver-navy" aria-hidden="true" />;
+}
+
 export default function HomePage() {
   return (
     <>
       <Navbar />
       <main id="main" className="relative">
+        {/* Sezioni 1-3 fluide, stesso sfondo bianco, nessun divider */}
         <Hero />
-        <Specchio />
-        <Numeri />
-        <Fabbriche />
-        <Casi />
-        <Competitor />
-        <Diagnosi />
+        <Stats />
+        <Divider />
+        <Servizi />
+
+        <Preventa />
+        <Divider />
+
+        <Problema />
+        <Divider />
+
+        <DiagnosiCRO />
+        <Divider />
+
         <AscoltaBene />
-        <Formula />
+        <Divider />
+
+        <MetodoAPSOC />
+        <Divider />
+
+        <FunnelViz />
+        <Divider />
+
         <Processo />
+        <Divider />
+
+        <Stack />
+        <Divider />
+
+        <Portfolio />
+        <Divider />
+
+        <ProveNovacar />
+        <Divider />
+
         <ChiSiamo />
+        <Divider />
+
         <PerChi />
-        <Prove />
+        <Divider />
+
+        <Testimonial />
+        <CarteScoperte />
+        <Divider />
+
         <Garanzia />
-        <Obiezioni />
-        <CosaOttieni />
-        <Faq />
-        <Chiusura />
+        <Divider />
+
+        <Objections />
+        <Divider />
+
+        <FAQSection />
+        <Divider />
+
+        <CTAFinale />
       </main>
-      <Legale />
+
+      <Footer />
+
       <StickyCTA />
     </>
   );
