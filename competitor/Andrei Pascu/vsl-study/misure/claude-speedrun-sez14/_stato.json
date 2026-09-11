@@ -1,0 +1,30 @@
+{
+ "slug": "claude-speedrun-sez14",
+ "completo": true,
+ "con_frame": true,
+ "parametri": {
+  "versione": "1.2.0",
+  "soglia_scena": 0.04,
+  "finestra_fusione": 0.2,
+  "larghezza_analisi": 320,
+  "finestra_audio": 0.5,
+  "silenzio_a": [
+   "-40dB",
+   0.3
+  ],
+  "silenzio_b": [
+   "-30dB",
+   0.25
+  ],
+  "silenzio_c_sotto_dB": 12.0,
+  "regime_blocco_s": 5.0,
+  "regime_rms_min_dB": 3.0,
+  "regime_zcr_min": 0.05,
+  "regime_percentile": 0.9,
+  "passo_frame": 2.0,
+  "larghezza_frame": 960,
+  "dedup_soglia": 3.0
+ },
+ "secondi": 63.2,
+ "quando": "2026-09-11T00:14:44+02:00"
+}

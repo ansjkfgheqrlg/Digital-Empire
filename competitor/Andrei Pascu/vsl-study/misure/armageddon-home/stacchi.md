@@ -13,6 +13,8 @@ Misura a macchina. Nessuna interpretazione.
 | durata mediana | 1.84 s |
 | minima / massima | 0.2 s / 31.6 s |
 | deviazione standard | 3.9 s |
+| punteggio di scena mediano (moto dell'immagine) | 0.0018 |
+| frame sopra soglia | 1.71% |
 
 Comando: `ffmpeg -v error -nostdin -i "C:\Users\Utente\Desktop\qui tutto\Digital Empire\competitor\Andrei Pascu\vsl-study\sorgenti\armageddon-home\video.mp4" -an -vf "scale=320:-2,select='gte(scene,0)',metadata=print:file=-" -f null -`
 

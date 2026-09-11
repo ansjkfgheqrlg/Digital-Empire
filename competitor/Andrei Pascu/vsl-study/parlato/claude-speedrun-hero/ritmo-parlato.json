@@ -1,0 +1,603 @@
+{
+ "slug": "claude-speedrun-hero",
+ "fonte": "sorgenti/claude-speedrun-hero/video.mp4",
+ "generato": "2026-09-11 00:16",
+ "strumento_trascrizione": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "durata_video_s": 81.3,
+ "densita": {
+  "segmenti_vocali": 27,
+  "secondi_di_parlato": 68.66,
+  "percentuale_di_parlato": 84.5,
+  "segmenti_al_minuto": 19.93,
+  "durata_media_segmento_s": 2.54
+ },
+ "parole_totali": 199,
+ "parole_al_minuto_medie": 146.9,
+ "parole_al_minuto_sul_solo_parlato": 173.9,
+ "wpm_per_minuto": [
+  {
+   "minuto": 0,
+   "da": 0.0,
+   "a": 60.0,
+   "parole": 134,
+   "parole_al_minuto": 134.0,
+   "secondi_di_voce": 47.85,
+   "densita_voce_pct": 79.8
+  },
+  {
+   "minuto": 1,
+   "da": 60.0,
+   "a": 81.3,
+   "parole": 65,
+   "parole_al_minuto": 183.1,
+   "secondi_di_voce": 18.76,
+   "densita_voce_pct": 88.1
+  }
+ ],
+ "pause_sopra_0_5s": 6,
+ "pause_dal_parlato": [
+  {
+   "inizio": 0.0,
+   "fine": 0.82,
+   "durata": 0.82,
+   "tipo": "attacco"
+  },
+  {
+   "inizio": 1.96,
+   "fine": 5.14,
+   "durata": 3.18,
+   "tipo": "interna",
+   "dopo": "mio",
+   "prima_di": "Sto"
+  },
+  {
+   "inizio": 7.64,
+   "fine": 7.98,
+   "durata": 0.34,
+   "tipo": "interna",
+   "dopo": "nuovo,",
+   "prima_di": "stava"
+  },
+  {
+   "inizio": 11.6,
+   "fine": 13.94,
+   "durata": 2.34,
+   "tipo": "interna",
+   "dopo": "voi?",
+   "prima_di": "Lui"
+  },
+  {
+   "inizio": 15.54,
+   "fine": 18.3,
+   "durata": 2.76,
+   "tipo": "interna",
+   "dopo": "pensato",
+   "prima_di": "Brutto"
+  },
+  {
+   "inizio": 19.5,
+   "fine": 19.56,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "capitalista,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 21.48,
+   "fine": 22.12,
+   "durata": 0.64,
+   "tipo": "interna",
+   "dopo": "eh?",
+   "prima_di": "Ma"
+  },
+  {
+   "inizio": 35.74,
+   "fine": 35.94,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "velocemente.",
+   "prima_di": "Lasciacciate"
+  },
+  {
+   "inizio": 38.58,
+   "fine": 38.8,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "ricette.",
+   "prima_di": "Inizia"
+  },
+  {
+   "inizio": 42.24,
+   "fine": 42.46,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "aspetta.",
+   "prima_di": "Pensi"
+  },
+  {
+   "inizio": 44.38,
+   "fine": 44.64,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "giocattolo?",
+   "prima_di": "Andrej"
+  },
+  {
+   "inizio": 47.18,
+   "fine": 47.48,
+   "durata": 0.3,
+   "tipo": "interna",
+   "dopo": "giornate,",
+   "prima_di": "creare"
+  },
+  {
+   "inizio": 48.88,
+   "fine": 49.06,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "clienti,",
+   "prima_di": "scrivere"
+  },
+  {
+   "inizio": 50.4,
+   "fine": 50.46,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "clienti.",
+   "prima_di": "Non"
+  },
+  {
+   "inizio": 51.16,
+   "fine": 51.34,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "hype.",
+   "prima_di": "Qui"
+  },
+  {
+   "inizio": 52.44,
+   "fine": 52.58,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "davvero.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 54.08,
+   "fine": 54.26,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "indietro.",
+   "prima_di": "Pensaci."
+  },
+  {
+   "inizio": 54.78,
+   "fine": 54.85,
+   "durata": 0.07,
+   "tipo": "interna",
+   "dopo": "Pensaci.",
+   "prima_di": "Questi"
+  },
+  {
+   "inizio": 62.53,
+   "fine": 63.23,
+   "durata": 0.7,
+   "tipo": "interna",
+   "dopo": "utile?",
+   "prima_di": "No,"
+  },
+  {
+   "inizio": 63.31,
+   "fine": 63.77,
+   "durata": 0.46,
+   "tipo": "interna",
+   "dopo": "No,",
+   "prima_di": "sei"
+  },
+  {
+   "inizio": 70.69,
+   "fine": 71.13,
+   "durata": 0.44,
+   "tipo": "interna",
+   "dopo": "business.",
+   "prima_di": "Oggi"
+  },
+  {
+   "inizio": 72.37,
+   "fine": 72.53,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "Speedrun,",
+   "prima_di": "costa"
+  },
+  {
+   "inizio": 75.63,
+   "fine": 75.75,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "'agenzia.",
+   "prima_di": "Usa"
+  },
+  {
+   "inizio": 77.73,
+   "fine": 77.79,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "azienda.",
+   "prima_di": "Continua"
+  }
+ ],
+ "volume_medio_dBFS": -13.5,
+ "volume_massimo_dBFS": 0.0,
+ "silenzi_-30dB": [
+  {
+   "inizio": 21.26,
+   "fine": 22.08,
+   "durata": 0.82
+  },
+  {
+   "inizio": 41.82,
+   "fine": 42.4,
+   "durata": 0.58
+  }
+ ],
+ "silenzi_-40dB": [
+  {
+   "inizio": 42.01,
+   "fine": 42.4,
+   "durata": 0.39
+  }
+ ],
+ "soglia_relativa_dB": -32,
+ "silenzi_soglia_relativa": [
+  {
+   "inizio": 21.4,
+   "fine": 22.08,
+   "durata": 0.68
+  },
+  {
+   "inizio": 41.83,
+   "fine": 42.4,
+   "durata": 0.57
+  }
+ ],
+ "nota_silenzi": "silencedetect di ffmpeg, durata minima 0,30 s, tre soglie: due assolute (-30 e -40 dBFS) e una relativa a questo audio (volume medio meno 18 dB). Sotto una base musicale continua le soglie assolute possono restituire zero silenzi: e' un dato, non un errore, e per questo c'e' la soglia relativa.",
+ "loudness": {
+  "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
+  "campioni": 813,
+  "mediana_segmenti_LUFS_M": -18.0,
+  "picco_momentaneo_LUFS_M": -7.9,
+  "picco_a_secondo": 12.0,
+  "sopra_mediana_3LU": [],
+  "profilo_per_secondo": [
+   {
+    "t": 0.0,
+    "M": -70.0
+   },
+   {
+    "t": 1.0,
+    "M": -14.6
+   },
+   {
+    "t": 2.0,
+    "M": -25.5
+   },
+   {
+    "t": 3.0,
+    "M": -9.9
+   },
+   {
+    "t": 4.0,
+    "M": -9.7
+   },
+   {
+    "t": 5.0,
+    "M": -10.7
+   },
+   {
+    "t": 6.0,
+    "M": -18.4
+   },
+   {
+    "t": 7.0,
+    "M": -15.4
+   },
+   {
+    "t": 8.0,
+    "M": -13.4
+   },
+   {
+    "t": 9.0,
+    "M": -14.1
+   },
+   {
+    "t": 10.0,
+    "M": -14.7
+   },
+   {
+    "t": 11.0,
+    "M": -18.5
+   },
+   {
+    "t": 12.0,
+    "M": -7.9
+   },
+   {
+    "t": 13.0,
+    "M": -8.9
+   },
+   {
+    "t": 14.0,
+    "M": -10.0
+   },
+   {
+    "t": 15.0,
+    "M": -17.9
+   },
+   {
+    "t": 16.0,
+    "M": -18.6
+   },
+   {
+    "t": 17.0,
+    "M": -22.4
+   },
+   {
+    "t": 18.0,
+    "M": -19.4
+   },
+   {
+    "t": 19.0,
+    "M": -17.1
+   },
+   {
+    "t": 20.0,
+    "M": -16.2
+   },
+   {
+    "t": 21.0,
+    "M": -15.8
+   },
+   {
+    "t": 22.0,
+    "M": -46.0
+   },
+   {
+    "t": 23.0,
+    "M": -21.7
+   },
+   {
+    "t": 24.0,
+    "M": -13.1
+   },
+   {
+    "t": 25.0,
+    "M": -17.1
+   },
+   {
+    "t": 26.0,
+    "M": -18.3
+   },
+   {
+    "t": 27.0,
+    "M": -18.1
+   },
+   {
+    "t": 28.0,
+    "M": -20.7
+   },
+   {
+    "t": 29.0,
+    "M": -15.7
+   },
+   {
+    "t": 30.0,
+    "M": -18.2
+   },
+   {
+    "t": 31.0,
+    "M": -18.3
+   },
+   {
+    "t": 32.0,
+    "M": -17.7
+   },
+   {
+    "t": 33.0,
+    "M": -19.5
+   },
+   {
+    "t": 34.0,
+    "M": -17.2
+   },
+   {
+    "t": 35.0,
+    "M": -20.5
+   },
+   {
+    "t": 36.0,
+    "M": -14.5
+   },
+   {
+    "t": 37.0,
+    "M": -19.5
+   },
+   {
+    "t": 38.0,
+    "M": -20.4
+   },
+   {
+    "t": 39.0,
+    "M": -17.4
+   },
+   {
+    "t": 40.0,
+    "M": -24.7
+   },
+   {
+    "t": 41.0,
+    "M": -24.8
+   },
+   {
+    "t": 42.0,
+    "M": -31.8
+   },
+   {
+    "t": 43.0,
+    "M": -18.4
+   },
+   {
+    "t": 44.0,
+    "M": -20.8
+   },
+   {
+    "t": 45.0,
+    "M": -18.4
+   },
+   {
+    "t": 46.0,
+    "M": -17.4
+   },
+   {
+    "t": 47.0,
+    "M": -16.6
+   },
+   {
+    "t": 48.0,
+    "M": -13.6
+   },
+   {
+    "t": 49.0,
+    "M": -21.2
+   },
+   {
+    "t": 50.0,
+    "M": -14.0
+   },
+   {
+    "t": 51.0,
+    "M": -19.2
+   },
+   {
+    "t": 52.0,
+    "M": -19.8
+   },
+   {
+    "t": 53.0,
+    "M": -17.4
+   },
+   {
+    "t": 54.0,
+    "M": -20.2
+   },
+   {
+    "t": 55.0,
+    "M": -20.3
+   },
+   {
+    "t": 56.0,
+    "M": -17.2
+   },
+   {
+    "t": 57.0,
+    "M": -17.9
+   },
+   {
+    "t": 58.0,
+    "M": -20.4
+   },
+   {
+    "t": 59.0,
+    "M": -17.7
+   },
+   {
+    "t": 60.0,
+    "M": -19.1
+   },
+   {
+    "t": 61.0,
+    "M": -21.9
+   },
+   {
+    "t": 62.0,
+    "M": -20.6
+   },
+   {
+    "t": 63.0,
+    "M": -20.1
+   },
+   {
+    "t": 64.0,
+    "M": -17.2
+   },
+   {
+    "t": 65.0,
+    "M": -15.8
+   },
+   {
+    "t": 66.0,
+    "M": -14.2
+   },
+   {
+    "t": 67.0,
+    "M": -19.4
+   },
+   {
+    "t": 68.0,
+    "M": -18.4
+   },
+   {
+    "t": 69.0,
+    "M": -18.0
+   },
+   {
+    "t": 70.0,
+    "M": -16.6
+   },
+   {
+    "t": 71.0,
+    "M": -12.2
+   },
+   {
+    "t": 72.0,
+    "M": -17.5
+   },
+   {
+    "t": 73.0,
+    "M": -16.3
+   },
+   {
+    "t": 74.0,
+    "M": -17.6
+   },
+   {
+    "t": 75.0,
+    "M": -17.2
+   },
+   {
+    "t": 76.0,
+    "M": -16.1
+   },
+   {
+    "t": 77.0,
+    "M": -18.2
+   },
+   {
+    "t": 78.0,
+    "M": -16.2
+   },
+   {
+    "t": 79.0,
+    "M": -18.5
+   },
+   {
+    "t": 80.0,
+    "M": -18.3
+   },
+   {
+    "t": 81.0,
+    "M": -21.9
+   }
+  ]
+ }
+}

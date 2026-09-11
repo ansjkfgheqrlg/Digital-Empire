@@ -1,2257 +1,2673 @@
 {
  "slug": "armageddon-home",
  "fonte": "sorgenti/armageddon-home/video.mp4",
- "generato": "2026-09-10 23:45",
- "strumento_trascrizione": "faster-whisper small, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "generato": "2026-09-11 00:14",
+ "strumento_trascrizione": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
  "durata_video_s": 808.73,
  "densita": {
-  "segmenti_vocali": 225,
-  "secondi_di_parlato": 791.54,
-  "percentuale_di_parlato": 97.9,
-  "segmenti_al_minuto": 16.69,
-  "durata_media_segmento_s": 3.52
+  "segmenti_vocali": 250,
+  "secondi_di_parlato": 778.45,
+  "percentuale_di_parlato": 96.3,
+  "segmenti_al_minuto": 18.55,
+  "durata_media_segmento_s": 3.11
  },
- "parole_totali": 2959,
- "parole_al_minuto_medie": 219.5,
- "parole_al_minuto_sul_solo_parlato": 224.3,
+ "parole_totali": 3007,
+ "parole_al_minuto_medie": 223.1,
+ "parole_al_minuto_sul_solo_parlato": 231.8,
  "wpm_per_minuto": [
   {
    "minuto": 0,
    "da": 0.0,
    "a": 60.0,
-   "parole": 161,
-   "parole_al_minuto": 161.0,
-   "secondi_di_voce": 52.21,
-   "densita_voce_pct": 87.0
+   "parole": 165,
+   "parole_al_minuto": 165.0,
+   "secondi_di_voce": 48.88,
+   "densita_voce_pct": 81.5
   },
   {
    "minuto": 1,
    "da": 60.0,
    "a": 120.0,
-   "parole": 220,
-   "parole_al_minuto": 220.0,
-   "secondi_di_voce": 53.99,
-   "densita_voce_pct": 90.0
+   "parole": 223,
+   "parole_al_minuto": 223.0,
+   "secondi_di_voce": 53.34,
+   "densita_voce_pct": 88.9
   },
   {
    "minuto": 2,
    "da": 120.0,
    "a": 180.0,
-   "parole": 237,
-   "parole_al_minuto": 237.0,
-   "secondi_di_voce": 56.44,
-   "densita_voce_pct": 94.1
+   "parole": 239,
+   "parole_al_minuto": 239.0,
+   "secondi_di_voce": 55.09,
+   "densita_voce_pct": 91.8
   },
   {
    "minuto": 3,
    "da": 180.0,
    "a": 240.0,
-   "parole": 246,
-   "parole_al_minuto": 246.0,
-   "secondi_di_voce": 55.4,
-   "densita_voce_pct": 92.3
+   "parole": 251,
+   "parole_al_minuto": 251.0,
+   "secondi_di_voce": 54.59,
+   "densita_voce_pct": 91.0
   },
   {
    "minuto": 4,
    "da": 240.0,
    "a": 300.0,
-   "parole": 232,
-   "parole_al_minuto": 232.0,
-   "secondi_di_voce": 59.16,
-   "densita_voce_pct": 98.6
+   "parole": 246,
+   "parole_al_minuto": 246.0,
+   "secondi_di_voce": 55.95,
+   "densita_voce_pct": 93.3
   },
   {
    "minuto": 5,
    "da": 300.0,
    "a": 360.0,
-   "parole": 229,
-   "parole_al_minuto": 229.0,
-   "secondi_di_voce": 55.92,
-   "densita_voce_pct": 93.2
+   "parole": 228,
+   "parole_al_minuto": 228.0,
+   "secondi_di_voce": 53.41,
+   "densita_voce_pct": 89.0
   },
   {
    "minuto": 6,
    "da": 360.0,
    "a": 420.0,
-   "parole": 231,
-   "parole_al_minuto": 231.0,
-   "secondi_di_voce": 53.71,
-   "densita_voce_pct": 89.5
+   "parole": 234,
+   "parole_al_minuto": 234.0,
+   "secondi_di_voce": 56.06,
+   "densita_voce_pct": 93.4
   },
   {
    "minuto": 7,
    "da": 420.0,
    "a": 480.0,
-   "parole": 222,
-   "parole_al_minuto": 222.0,
-   "secondi_di_voce": 56.91,
-   "densita_voce_pct": 94.8
+   "parole": 220,
+   "parole_al_minuto": 220.0,
+   "secondi_di_voce": 57.84,
+   "densita_voce_pct": 96.4
   },
   {
    "minuto": 8,
    "da": 480.0,
    "a": 540.0,
-   "parole": 219,
-   "parole_al_minuto": 219.0,
-   "secondi_di_voce": 56.71,
-   "densita_voce_pct": 94.5
+   "parole": 230,
+   "parole_al_minuto": 230.0,
+   "secondi_di_voce": 56.54,
+   "densita_voce_pct": 94.2
   },
   {
    "minuto": 9,
    "da": 540.0,
    "a": 600.0,
-   "parole": 201,
-   "parole_al_minuto": 201.0,
-   "secondi_di_voce": 57.33,
-   "densita_voce_pct": 95.6
+   "parole": 206,
+   "parole_al_minuto": 206.0,
+   "secondi_di_voce": 56.76,
+   "densita_voce_pct": 94.6
   },
   {
    "minuto": 10,
    "da": 600.0,
    "a": 660.0,
-   "parole": 234,
-   "parole_al_minuto": 234.0,
-   "secondi_di_voce": 55.23,
-   "densita_voce_pct": 92.0
+   "parole": 238,
+   "parole_al_minuto": 238.0,
+   "secondi_di_voce": 55.4,
+   "densita_voce_pct": 92.3
   },
   {
    "minuto": 11,
    "da": 660.0,
    "a": 720.0,
-   "parole": 223,
-   "parole_al_minuto": 223.0,
-   "secondi_di_voce": 57.65,
-   "densita_voce_pct": 96.1
+   "parole": 227,
+   "parole_al_minuto": 227.0,
+   "secondi_di_voce": 57.14,
+   "densita_voce_pct": 95.2
   },
   {
    "minuto": 12,
    "da": 720.0,
    "a": 780.0,
-   "parole": 201,
-   "parole_al_minuto": 201.0,
-   "secondi_di_voce": 58.1,
-   "densita_voce_pct": 96.8
+   "parole": 200,
+   "parole_al_minuto": 200.0,
+   "secondi_di_voce": 58.32,
+   "densita_voce_pct": 97.2
   },
   {
    "minuto": 13,
    "da": 780.0,
    "a": 808.73,
-   "parole": 103,
-   "parole_al_minuto": 215.1,
-   "secondi_di_voce": 26.92,
-   "densita_voce_pct": 93.7
+   "parole": 100,
+   "parole_al_minuto": 208.9,
+   "secondi_di_voce": 27.64,
+   "densita_voce_pct": 96.2
   }
  ],
- "pause_sopra_0_5s": 13,
+ "pause_sopra_0_5s": 11,
  "pause_dal_parlato": [
   {
-   "inizio": 1.08,
-   "fine": 1.4,
-   "durata": 0.32,
+   "inizio": 1.34,
+   "fine": 1.44,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "intorno,",
    "prima_di": "tutti"
   },
   {
-   "inizio": 2.56,
-   "fine": 2.8,
-   "durata": 0.24,
-   "tipo": "interna",
-   "dopo": "AI,",
-   "prima_di": "tutti"
-  },
-  {
-   "inizio": 5.2,
-   "fine": 5.58,
-   "durata": 0.38,
-   "tipo": "interna",
-   "dopo": "Eppure,",
-   "prima_di": "sono"
-  },
-  {
-   "inizio": 8.44,
-   "fine": 8.62,
+   "inizio": 4.86,
+   "fine": 5.04,
    "durata": 0.18,
    "tipo": "interna",
-   "dopo": "E'",
+   "dopo": "tutto,",
+   "prima_di": "eppure"
+  },
+  {
+   "inizio": 6.51,
+   "fine": 7.12,
+   "durata": 0.61,
+   "tipo": "interna",
+   "dopo": "quanti",
+   "prima_di": "ugualmente"
+  },
+  {
+   "inizio": 8.36,
+   "fine": 8.52,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "verde,",
    "prima_di": "totale"
   },
   {
-   "inizio": 17.94,
-   "fine": 18.26,
-   "durata": 0.32,
+   "inizio": 9.4,
+   "fine": 9.54,
+   "durata": 0.14,
    "tipo": "interna",
-   "dopo": "Amore,",
-   "prima_di": "penso"
+   "dopo": "caos,",
+   "prima_di": "aziende"
   },
   {
-   "inizio": 21.82,
-   "fine": 22.04,
-   "durata": 0.22,
+   "inizio": 11.48,
+   "fine": 11.6,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "2026,",
-   "prima_di": "si"
+   "dopo": "AI,",
+   "prima_di": "eppure"
   },
   {
-   "inizio": 24.56,
-   "fine": 24.74,
-   "durata": 0.18,
+   "inizio": 17.34,
+   "fine": 20.24,
+   "durata": 2.9,
    "tipo": "interna",
-   "dopo": "WIFE,",
-   "prima_di": "King"
+   "dopo": "terrorizzata",
+   "prima_di": "Venuto"
   },
   {
-   "inizio": 26.82,
-   "fine": 27.1,
-   "durata": 0.28,
+   "inizio": 25.47,
+   "fine": 26.25,
+   "durata": 0.78,
+   "tipo": "interna",
+   "dopo": "Armageddon",
+   "prima_di": "Permi"
+  },
+  {
+   "inizio": 27.05,
+   "fine": 27.15,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "tutti,",
    "prima_di": "fai"
   },
   {
-   "inizio": 30.46,
-   "fine": 33.46,
-   "durata": 3.0,
+   "inizio": 27.95,
+   "fine": 28.11,
+   "durata": 0.16,
    "tipo": "interna",
-   "dopo": "lanciati!",
+   "dopo": "respiro.",
+   "prima_di": "Adesso"
+  },
+  {
+   "inizio": 29.29,
+   "fine": 29.35,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "tutti,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 30.47,
+   "fine": 34.11,
+   "durata": 3.64,
+   "tipo": "interna",
+   "dopo": "lanciato!",
    "prima_di": "Rilassati."
   },
   {
-   "inizio": 33.86,
-   "fine": 34.4,
-   "durata": 0.54,
-   "tipo": "interna",
-   "dopo": "Rilassati.",
-   "prima_di": "Benvenuto,"
-  },
-  {
-   "inizio": 34.8,
-   "fine": 34.94,
-   "durata": 0.14,
+   "inizio": 34.91,
+   "fine": 34.99,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "Benvenuto,",
    "prima_di": "se"
   },
   {
-   "inizio": 37.6,
-   "fine": 37.74,
+   "inizio": 37.69,
+   "fine": 37.85,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "marketing,",
+   "prima_di": "social"
+  },
+  {
+   "inizio": 38.69,
+   "fine": 38.83,
    "durata": 0.14,
    "tipo": "interna",
-   "dopo": "marketing.",
-   "prima_di": "Social"
+   "dopo": "management,",
+   "prima_di": "landing"
   },
   {
-   "inizio": 38.5,
-   "fine": 38.78,
-   "durata": 0.28,
+   "inizio": 39.45,
+   "fine": 39.63,
+   "durata": 0.18,
    "tipo": "interna",
-   "dopo": "Management,",
-   "prima_di": "Landing"
+   "dopo": "pages,",
+   "prima_di": "copyrighting"
   },
   {
-   "inizio": 39.44,
-   "fine": 39.52,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "Pages,",
-   "prima_di": "Copywriting"
-  },
-  {
-   "inizio": 40.86,
-   "fine": 40.92,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "simile.",
-   "prima_di": "Le"
-  },
-  {
-   "inizio": 42.06,
-   "fine": 42.22,
-   "durata": 0.16,
+   "inizio": 42.15,
+   "fine": 42.25,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "cose,",
    "prima_di": "ma"
   },
   {
-   "inizio": 43.98,
-   "fine": 44.06,
-   "durata": 0.08,
+   "inizio": 44.01,
+   "fine": 44.19,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "pensano.",
    "prima_di": "Guarda"
   },
   {
-   "inizio": 46.74,
-   "fine": 46.88,
-   "durata": 0.14,
+   "inizio": 45.75,
+   "fine": 45.87,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "trovi.",
+   "prima_di": "So"
+  },
+  {
+   "inizio": 46.87,
+   "fine": 46.95,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "crazy.",
    "prima_di": "Secondo"
   },
   {
-   "inizio": 47.32,
-   "fine": 47.4,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "te,",
-   "prima_di": "tutto"
-  },
-  {
-   "inizio": 49.22,
-   "fine": 49.28,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "umano.",
-   "prima_di": "La"
-  },
-  {
-   "inizio": 50.18,
-   "fine": 50.47,
+   "inizio": 51.03,
+   "fine": 51.32,
    "durata": 0.29,
    "tipo": "interna",
    "dopo": "è",
    "prima_di": "entrambe."
   },
   {
-   "inizio": 51.91,
-   "fine": 52.09,
-   "durata": 0.18,
+   "inizio": 51.98,
+   "fine": 52.12,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "entrambe.",
    "prima_di": "Il"
   },
   {
-   "inizio": 55.03,
-   "fine": 55.17,
-   "durata": 0.14,
+   "inizio": 55.12,
+   "fine": 55.2,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "'altro.",
    "prima_di": "Ti"
   },
   {
-   "inizio": 55.37,
-   "fine": 55.59,
-   "durata": 0.22,
+   "inizio": 55.5,
+   "fine": 55.64,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "piace?",
-   "prima_di": "C"
+   "prima_di": "Ci"
   },
   {
-   "inizio": 62.17,
-   "fine": 62.37,
+   "inizio": 57.02,
+   "fine": 57.08,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "immagini,",
+   "prima_di": "come"
+  },
+  {
+   "inizio": 58.8,
+   "fine": 59.0,
    "durata": 0.2,
    "tipo": "interna",
-   "dopo": "AI.",
-   "prima_di": "Io"
+   "dopo": "texture,",
+   "prima_di": "le"
   },
   {
-   "inizio": 63.05,
-   "fine": 63.21,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "design,",
-   "prima_di": "l"
-  },
-  {
-   "inizio": 65.05,
-   "fine": 65.11,
+   "inizio": 59.64,
+   "fine": 59.7,
    "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "'AI.",
+   "prima_di": "Ci"
+  },
+  {
+   "inizio": 61.84,
+   "fine": 61.92,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "volevo,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 64.16,
+   "fine": 64.26,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "Code,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 65.06,
+   "fine": 65.14,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "sito.",
    "prima_di": "E"
   },
   {
-   "inizio": 67.59,
-   "fine": 67.69,
-   "durata": 0.1,
+   "inizio": 67.66,
+   "fine": 67.82,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "umani.",
    "prima_di": "Tipo,"
   },
   {
-   "inizio": 68.05,
-   "fine": 68.21,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "Tipo,",
-   "prima_di": "ma"
-  },
-  {
-   "inizio": 69.53,
-   "fine": 69.67,
-   "durata": 0.14,
+   "inizio": 69.64,
+   "fine": 69.74,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "proprio.",
    "prima_di": "Sono"
   },
   {
-   "inizio": 73.37,
-   "fine": 74.19,
-   "durata": 0.82,
+   "inizio": 73.66,
+   "fine": 74.12,
+   "durata": 0.46,
    "tipo": "interna",
    "dopo": "Knowledge.",
    "prima_di": "Knowledge,"
   },
   {
-   "inizio": 75.67,
-   "fine": 75.77,
-   "durata": 0.1,
+   "inizio": 74.48,
+   "fine": 74.86,
+   "durata": 0.38,
    "tipo": "interna",
-   "dopo": "meme,",
-   "prima_di": "questo"
+   "dopo": "Knowledge,",
+   "prima_di": "come"
   },
   {
-   "inizio": 76.23,
-   "fine": 76.31,
-   "durata": 0.08,
+   "inizio": 75.22,
+   "fine": 75.28,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "quello.",
+   "prima_di": "Fucking"
+  },
+  {
+   "inizio": 76.28,
+   "fine": 76.46,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "poco.",
-   "prima_di": "E'"
+   "prima_di": "Ed"
   },
   {
-   "inizio": 76.41,
-   "fine": 76.55,
+   "inizio": 77.62,
+   "fine": 77.76,
    "durata": 0.14,
-   "tipo": "interna",
-   "dopo": "E'",
-   "prima_di": "però"
-  },
-  {
-   "inizio": 77.57,
-   "fine": 77.65,
-   "durata": 0.08,
    "tipo": "interna",
    "dopo": "Knowledge,",
    "prima_di": "mentre"
   },
   {
-   "inizio": 79.47,
-   "fine": 79.83,
-   "durata": 0.36,
+   "inizio": 79.7,
+   "fine": 79.98,
+   "durata": 0.28,
    "tipo": "interna",
-   "dopo": "chaos,",
+   "dopo": "Chaos,",
    "prima_di": "Armageddon."
   },
   {
-   "inizio": 80.61,
-   "fine": 80.75,
-   "durata": 0.14,
+   "inizio": 80.7,
+   "fine": 80.88,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "Armageddon.",
    "prima_di": "Chi"
   },
   {
-   "inizio": 81.51,
-   "fine": 81.73,
-   "durata": 0.22,
+   "inizio": 81.66,
+   "fine": 81.94,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "vince?",
    "prima_di": "Chi"
   },
   {
-   "inizio": 83.69,
-   "fine": 83.89,
-   "durata": 0.2,
-   "tipo": "interna",
-   "dopo": "Knowledge,",
-   "prima_di": "ovvero"
-  },
-  {
-   "inizio": 85.11,
-   "fine": 85.43,
-   "durata": 0.32,
+   "inizio": 85.42,
+   "fine": 85.66,
+   "durata": 0.24,
    "tipo": "interna",
    "dopo": "'industria.",
    "prima_di": "In"
   },
   {
-   "inizio": 87.97,
-   "fine": 88.07,
-   "durata": 0.1,
+   "inizio": 87.98,
+   "fine": 88.24,
+   "durata": 0.26,
    "tipo": "interna",
-   "dopo": "knowledge?",
-   "prima_di": "Perché"
+   "dopo": "Knowledge,",
+   "prima_di": "perché"
   },
   {
-   "inizio": 89.57,
-   "fine": 89.73,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "chiave?",
-   "prima_di": "Perché"
-  },
-  {
-   "inizio": 91.75,
-   "fine": 91.89,
+   "inizio": 89.68,
+   "fine": 89.82,
    "durata": 0.14,
    "tipo": "interna",
-   "dopo": "euro?",
-   "prima_di": "Come"
+   "dopo": "chiave,",
+   "prima_di": "perché"
   },
   {
-   "inizio": 92.49,
-   "fine": 92.59,
+   "inizio": 91.88,
+   "fine": 91.94,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "euro,",
+   "prima_di": "come"
+  },
+  {
+   "inizio": 92.54,
+   "fine": 92.64,
    "durata": 0.1,
    "tipo": "interna",
-   "dopo": "sempre?",
-   "prima_di": "Come"
+   "dopo": "sempre,",
+   "prima_di": "come"
   },
   {
-   "inizio": 95.97,
-   "fine": 96.11,
-   "durata": 0.14,
+   "inizio": 96.04,
+   "fine": 96.14,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "sempre.",
-   "prima_di": "È"
+   "prima_di": "E'"
   },
   {
-   "inizio": 97.43,
-   "fine": 97.61,
-   "durata": 0.18,
+   "inizio": 96.28,
+   "fine": 96.42,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "E'",
+   "prima_di": "importante,"
+  },
+  {
+   "inizio": 96.66,
+   "fine": 96.82,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "importante,",
+   "prima_di": "quindi"
+  },
+  {
+   "inizio": 97.5,
+   "fine": 98.52,
+   "durata": 1.02,
    "tipo": "interna",
    "dopo": "pazienza.",
    "prima_di": "Domain"
   },
   {
-   "inizio": 99.21,
-   "fine": 99.47,
-   "durata": 0.26,
+   "inizio": 99.32,
+   "fine": 99.6,
+   "durata": 0.28,
    "tipo": "interna",
-   "dopo": "knowledge.",
+   "dopo": "Knowledge.",
    "prima_di": "Sapere"
   },
   {
-   "inizio": 100.87,
-   "fine": 101.03,
-   "durata": 0.16,
+   "inizio": 100.92,
+   "fine": 101.06,
+   "durata": 0.14,
    "tipo": "interna",
-   "dopo": "'ambiente.",
-   "prima_di": "Conoscere"
+   "dopo": "'ambiente,",
+   "prima_di": "conoscere"
   },
   {
-   "inizio": 102.03,
-   "fine": 102.11,
-   "durata": 0.08,
+   "inizio": 102.54,
+   "fine": 102.68,
+   "durata": 0.14,
    "tipo": "interna",
-   "dopo": "'industria.",
-   "prima_di": "Ad"
-  },
-  {
-   "inizio": 104.87,
-   "fine": 104.99,
-   "durata": 0.12,
-   "tipo": "interna",
-   "dopo": "design,",
+   "dopo": "esempio,",
    "prima_di": "se"
   },
   {
-   "inizio": 107.23,
-   "fine": 107.43,
+   "inizio": 103.58,
+   "fine": 103.74,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "designer,",
+   "prima_di": "ho"
+  },
+  {
+   "inizio": 104.92,
+   "fine": 105.0,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "design.",
+   "prima_di": "Se"
+  },
+  {
+   "inizio": 106.02,
+   "fine": 106.14,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "editor,",
+   "prima_di": "ho"
+  },
+  {
+   "inizio": 107.24,
+   "fine": 107.44,
    "durata": 0.2,
    "tipo": "interna",
    "dopo": "editor.",
-   "prima_di": "Ora"
+   "prima_di": "Ora,"
   },
   {
-   "inizio": 108.15,
-   "fine": 108.33,
-   "durata": 0.18,
+   "inizio": 108.24,
+   "fine": 108.38,
+   "durata": 0.14,
    "tipo": "interna",
-   "dopo": "questo,",
-   "prima_di": "addiamo"
+   "dopo": "questo.",
+   "prima_di": "Abbiamo"
   },
   {
-   "inizio": 109.21,
-   "fine": 109.63,
-   "durata": 0.42,
+   "inizio": 109.36,
+   "fine": 109.64,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "persone.",
    "prima_di": "A"
   },
   {
-   "inizio": 109.97,
-   "fine": 110.03,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "B.",
-   "prima_di": "A"
-  },
-  {
-   "inizio": 111.71,
-   "fine": 111.87,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "AI.",
-   "prima_di": "B"
-  },
-  {
-   "inizio": 140.23,
-   "fine": 140.31,
+   "inizio": 114.62,
+   "fine": 114.7,
    "durata": 0.08,
    "tipo": "interna",
-   "dopo": "vai,",
-   "prima_di": "capisci"
+   "dopo": "edit.",
+   "prima_di": "Chi"
   },
   {
-   "inizio": 141.17,
-   "fine": 141.27,
-   "durata": 0.1,
-   "tipo": "interna",
-   "dopo": "knowledge,",
-   "prima_di": "scusa"
-  },
-  {
-   "inizio": 143.31,
-   "fine": 143.49,
-   "durata": 0.18,
-   "tipo": "interna",
-   "dopo": "knowledge,",
-   "prima_di": "pensaci"
-  },
-  {
-   "inizio": 147.43,
-   "fine": 148.1,
-   "durata": 0.67,
-   "tipo": "interna",
-   "dopo": "perché",
-   "prima_di": "so"
-  },
-  {
-   "inizio": 152.04,
-   "fine": 152.1,
+   "inizio": 117.46,
+   "fine": 117.52,
    "durata": 0.06,
    "tipo": "interna",
-   "dopo": "attenzione,",
-   "prima_di": "capisci"
+   "dopo": "'AI?",
+   "prima_di": "Ed"
   },
   {
-   "inizio": 152.88,
-   "fine": 153.02,
-   "durata": 0.14,
+   "inizio": 120.8,
+   "fine": 120.9,
+   "durata": 0.1,
    "tipo": "interna",
-   "dopo": "intendo?",
-   "prima_di": "vince"
+   "dopo": "farlo,",
+   "prima_di": "però"
   },
   {
-   "inizio": 159.42,
-   "fine": 159.56,
+   "inizio": 121.56,
+   "fine": 121.68,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "dice,",
+   "prima_di": "eh"
+  },
+  {
+   "inizio": 124.42,
+   "fine": 124.5,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "A,",
+   "prima_di": "quello"
+  },
+  {
+   "inizio": 126.04,
+   "fine": 126.18,
    "durata": 0.14,
    "tipo": "interna",
-   "dopo": "'altro,",
+   "dopo": "'AI,",
+   "prima_di": "farà"
+  },
+  {
+   "inizio": 129.64,
+   "fine": 129.72,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "carino,",
    "prima_di": "ma"
   },
   {
-   "inizio": 160.24,
-   "fine": 160.36,
-   "durata": 0.12,
+   "inizio": 134.08,
+   "fine": 134.14,
+   "durata": 0.06,
    "tipo": "interna",
-   "dopo": "knowledge,",
-   "prima_di": "hai"
+   "dopo": "vendere,",
+   "prima_di": "lui"
   },
   {
-   "inizio": 163.08,
-   "fine": 163.16,
+   "inizio": 136.24,
+   "fine": 136.34,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "vendita.",
+   "prima_di": "Mentre"
+  },
+  {
+   "inizio": 137.9,
+   "fine": 138.04,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "'AI,",
+   "prima_di": "la"
+  },
+  {
+   "inizio": 138.9,
+   "fine": 139.04,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "dice,",
+   "prima_di": "boh"
+  },
+  {
+   "inizio": 139.78,
+   "fine": 139.92,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "video,",
+   "prima_di": "ok"
+  },
+  {
+   "inizio": 140.58,
+   "fine": 140.66,
    "durata": 0.08,
    "tipo": "interna",
-   "dopo": "già,",
-   "prima_di": "forse"
+   "dopo": "Capisci?",
+   "prima_di": "E'"
   },
   {
-   "inizio": 163.92,
-   "fine": 164.06,
+   "inizio": 140.74,
+   "fine": 140.82,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "E'",
+   "prima_di": "Domain"
+  },
+  {
+   "inizio": 141.22,
+   "fine": 141.32,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "Knowledge.",
+   "prima_di": "Scusa,"
+  },
+  {
+   "inizio": 142.06,
+   "fine": 142.4,
+   "durata": 0.34,
+   "tipo": "interna",
+   "dopo": "dire,",
+   "prima_di": "Domain"
+  },
+  {
+   "inizio": 143.44,
+   "fine": 143.92,
+   "durata": 0.48,
+   "tipo": "interna",
+   "dopo": "Knowledge.",
+   "prima_di": "Pensaci,"
+  },
+  {
+   "inizio": 145.86,
+   "fine": 145.96,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "video?",
+   "prima_di": "Oltre"
+  },
+  {
+   "inizio": 146.76,
+   "fine": 147.43,
+   "durata": 0.67,
+   "tipo": "interna",
+   "dopo": "che",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 152.93,
+   "fine": 153.01,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "intendo?",
+   "prima_di": "Vince"
+  },
+  {
+   "inizio": 156.29,
+   "fine": 156.35,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "'AI,",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 157.83,
+   "fine": 157.89,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "veloce.",
+   "prima_di": "Vuoi"
+  },
+  {
+   "inizio": 160.29,
+   "fine": 160.43,
    "durata": 0.14,
    "tipo": "interna",
-   "dopo": "copywriter,",
+   "dopo": "Knowledge.",
+   "prima_di": "Hai"
+  },
+  {
+   "inizio": 160.81,
+   "fine": 160.89,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "cosa?",
+   "prima_di": "Domain"
+  },
+  {
+   "inizio": 161.43,
+   "fine": 161.63,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "Knowledge,",
+   "prima_di": "probabilmente"
+  },
+  {
+   "inizio": 164.07,
+   "fine": 164.13,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "copyrighter,",
    "prima_di": "hai"
   },
   {
-   "inizio": 165.14,
-   "fine": 165.28,
+   "inizio": 168.63,
+   "fine": 168.77,
    "durata": 0.14,
    "tipo": "interna",
-   "dopo": "copywriting,",
-   "prima_di": "forse"
+   "dopo": "siti,",
+   "prima_di": "sai"
   },
   {
-   "inizio": 167.7,
-   "fine": 167.82,
+   "inizio": 169.67,
+   "fine": 169.79,
    "durata": 0.12,
-   "tipo": "interna",
-   "dopo": "virale.",
-   "prima_di": "Se"
-  },
-  {
-   "inizio": 169.62,
-   "fine": 169.8,
-   "durata": 0.18,
    "tipo": "interna",
    "dopo": "web,",
    "prima_di": "come"
   },
   {
-   "inizio": 170.36,
-   "fine": 170.52,
+   "inizio": 170.43,
+   "fine": 170.59,
    "durata": 0.16,
    "tipo": "interna",
    "dopo": "landing,",
    "prima_di": "fare"
   },
   {
-   "inizio": 170.88,
-   "fine": 171.02,
-   "durata": 0.14,
-   "tipo": "interna",
-   "dopo": "carina.",
-   "prima_di": "Il"
-  },
-  {
-   "inizio": 175.1,
-   "fine": 175.6,
-   "durata": 0.5,
-   "tipo": "interna",
-   "dopo": "slope,",
-   "prima_di": "l"
-  },
-  {
-   "inizio": 176.74,
-   "fine": 176.88,
-   "durata": 0.14,
+   "inizio": 176.83,
+   "fine": 177.05,
+   "durata": 0.22,
    "tipo": "interna",
    "dopo": "risultati,",
    "prima_di": "vince"
   },
   {
-   "inizio": 178.96,
-   "fine": 179.3,
-   "durata": 0.34,
+   "inizio": 179.19,
+   "fine": 179.33,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "skill.",
    "prima_di": "Cioè"
   },
   {
-   "inizio": 180.04,
-   "fine": 180.18,
-   "durata": 0.14,
+   "inizio": 180.13,
+   "fine": 180.29,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "pagina,",
    "prima_di": "ti"
   },
   {
-   "inizio": 182.0,
-   "fine": 182.26,
-   "durata": 0.26,
+   "inizio": 182.15,
+   "fine": 182.29,
+   "durata": 0.14,
    "tipo": "interna",
-   "dopo": "principiante.",
+   "dopo": "principiante?",
    "prima_di": "No,"
   },
   {
-   "inizio": 182.38,
-   "fine": 182.48,
-   "durata": 0.1,
+   "inizio": 182.45,
+   "fine": 182.53,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "No,",
    "prima_di": "è"
   },
   {
-   "inizio": 186.24,
-   "fine": 186.38,
-   "durata": 0.14,
+   "inizio": 185.37,
+   "fine": 185.47,
+   "durata": 0.1,
    "tipo": "interna",
-   "dopo": "design,",
-   "prima_di": "per"
+   "dopo": "persone,",
+   "prima_di": "sa"
   },
   {
-   "inizio": 187.12,
-   "fine": 187.32,
-   "durata": 0.2,
+   "inizio": 186.33,
+   "fine": 186.43,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "design,",
+   "prima_di": "sa"
+  },
+  {
+   "inizio": 187.21,
+   "fine": 187.37,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "copy,",
    "prima_di": "fare"
   },
   {
-   "inizio": 187.96,
-   "fine": 188.06,
-   "durata": 0.1,
+   "inizio": 188.01,
+   "fine": 188.07,
+   "durata": 0.06,
    "tipo": "interna",
-   "dopo": "video.",
-   "prima_di": "Tutto"
+   "dopo": "video,",
+   "prima_di": "tutto"
   },
   {
-   "inizio": 188.36,
-   "fine": 188.42,
-   "durata": 0.06,
+   "inizio": 188.43,
+   "fine": 188.61,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "questo,",
    "prima_di": "tutto"
   },
   {
-   "inizio": 189.0,
-   "fine": 189.1,
-   "durata": 0.1,
+   "inizio": 189.09,
+   "fine": 189.35,
+   "durata": 0.26,
    "tipo": "interna",
    "dopo": "vedi,",
-   "prima_di": "è"
+   "prima_di": "tutto"
   },
   {
-   "inizio": 190.52,
-   "fine": 190.6,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "lei.",
-   "prima_di": "Però"
-  },
-  {
-   "inizio": 192.54,
-   "fine": 192.66,
-   "durata": 0.12,
+   "inizio": 192.61,
+   "fine": 192.67,
+   "durata": 0.06,
    "tipo": "interna",
    "dopo": "umano,",
    "prima_di": "ce"
   },
   {
-   "inizio": 194.16,
-   "fine": 194.26,
-   "durata": 0.1,
+   "inizio": 194.23,
+   "fine": 194.37,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "io,",
    "prima_di": "capisci"
   },
   {
-   "inizio": 194.98,
-   "fine": 195.04,
-   "durata": 0.06,
+   "inizio": 197.85,
+   "fine": 198.03,
+   "durata": 0.18,
    "tipo": "interna",
-   "dopo": "intendo.",
-   "prima_di": "Quindi"
-  },
-  {
-   "inizio": 195.92,
-   "fine": 196.0,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "me,",
-   "prima_di": "io"
-  },
-  {
-   "inizio": 197.8,
-   "fine": 197.88,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "'azienda,",
+   "dopo": "aziende,",
    "prima_di": "perché"
   },
   {
-   "inizio": 198.82,
-   "fine": 198.92,
-   "durata": 0.1,
-   "tipo": "interna",
-   "dopo": "tendere,",
-   "prima_di": "perché"
-  },
-  {
-   "inizio": 203.08,
-   "fine": 203.14,
+   "inizio": 203.11,
+   "fine": 203.17,
    "durata": 0.06,
    "tipo": "interna",
    "dopo": "scorciatoie.",
-   "prima_di": "Vi"
+   "prima_di": "Vediamo"
   },
   {
-   "inizio": 203.84,
-   "fine": 204.08,
-   "durata": 0.24,
+   "inizio": 203.91,
+   "fine": 204.19,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "2.",
    "prima_di": "Perché"
   },
   {
-   "inizio": 205.76,
-   "fine": 206.02,
-   "durata": 0.26,
+   "inizio": 205.91,
+   "fine": 206.09,
+   "durata": 0.18,
    "tipo": "interna",
-   "dopo": "knowledge?",
+   "dopo": "Knowledge?",
    "prima_di": "Io"
   },
   {
-   "inizio": 206.94,
-   "fine": 207.1,
-   "durata": 0.16,
+   "inizio": 207.01,
+   "fine": 207.23,
+   "durata": 0.22,
    "tipo": "interna",
-   "dopo": "sei.",
-   "prima_di": "Ti"
+   "dopo": "sei,",
+   "prima_di": "ti"
   },
   {
-   "inizio": 207.56,
-   "fine": 207.66,
-   "durata": 0.1,
+   "inizio": 207.63,
+   "fine": 207.71,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "conosco,",
    "prima_di": "ti"
   },
   {
-   "inizio": 208.42,
-   "fine": 210.12,
-   "durata": 1.7,
+   "inizio": 209.21,
+   "fine": 210.41,
+   "durata": 1.2,
    "tipo": "interna",
    "dopo": "notte.",
    "prima_di": "Questo"
   },
   {
-   "inizio": 211.0,
-   "fine": 211.16,
-   "durata": 0.16,
+   "inizio": 211.13,
+   "fine": 211.27,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "dire.",
-   "prima_di": "Filing"
+   "prima_di": "Fai"
   },
   {
-   "inizio": 214.22,
-   "fine": 214.28,
-   "durata": 0.06,
+   "inizio": 214.25,
+   "fine": 214.37,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "farlo,",
-   "prima_di": "magari"
+   "dopo": "farlo.",
+   "prima_di": "Magari"
   },
   {
-   "inizio": 223.44,
-   "fine": 223.5,
-   "durata": 0.06,
+   "inizio": 220.91,
+   "fine": 221.17,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "sempre.",
+   "prima_di": "È"
+  },
+  {
+   "inizio": 223.47,
+   "fine": 223.75,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "bene.",
-   "prima_di": "Vedi,"
+   "prima_di": "Vedi"
   },
   {
-   "inizio": 249.16,
-   "fine": 249.34,
-   "durata": 0.18,
+   "inizio": 227.13,
+   "fine": 227.27,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "sa,",
+   "prima_di": "sono"
+  },
+  {
+   "inizio": 231.87,
+   "fine": 232.23,
+   "durata": 0.36,
+   "tipo": "interna",
+   "dopo": "schizofreniche,",
+   "prima_di": "faccio"
+  },
+  {
+   "inizio": 234.99,
+   "fine": 235.07,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "seri.",
+   "prima_di": "Non"
+  },
+  {
+   "inizio": 235.83,
+   "fine": 235.91,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "milionario,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 236.71,
+   "fine": 236.77,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "Bezos,",
+   "prima_di": "però"
+  },
+  {
+   "inizio": 241.47,
+   "fine": 241.57,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "anni.",
+   "prima_di": "Il"
+  },
+  {
+   "inizio": 242.73,
+   "fine": 242.85,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "tutto.",
+   "prima_di": "Facevo"
+  },
+  {
+   "inizio": 243.89,
+   "fine": 244.23,
+   "durata": 0.34,
+   "tipo": "interna",
+   "dopo": "pages,",
+   "prima_di": "social"
+  },
+  {
+   "inizio": 244.83,
+   "fine": 244.89,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "media,",
+   "prima_di": "video,"
+  },
+  {
+   "inizio": 245.21,
+   "fine": 245.79,
+   "durata": 0.58,
+   "tipo": "interna",
+   "dopo": "video,",
+   "prima_di": "email"
+  },
+  {
+   "inizio": 246.37,
+   "fine": 246.53,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "marketing,",
+   "prima_di": "se"
+  },
+  {
+   "inizio": 246.87,
+   "fine": 246.97,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "serviva,",
+   "prima_di": "media"
+  },
+  {
+   "inizio": 247.39,
+   "fine": 247.61,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "buying,",
+   "prima_di": "finché"
+  },
+  {
+   "inizio": 249.29,
+   "fine": 249.39,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "tutto.",
    "prima_di": "Ad"
   },
   {
-   "inizio": 275.02,
-   "fine": 275.66,
-   "durata": 0.64,
+   "inizio": 249.87,
+   "fine": 249.99,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "'arma",
-   "prima_di": "Meglioni"
+   "dopo": "agosto,",
+   "prima_di": "tolto"
   },
   {
-   "inizio": 301.36,
-   "fine": 301.46,
-   "durata": 0.1,
+   "inizio": 250.69,
+   "fine": 250.93,
+   "durata": 0.24,
    "tipo": "interna",
-   "dopo": "2,",
-   "prima_di": "lo"
+   "dopo": "tutto,",
+   "prima_di": "ho"
   },
   {
-   "inizio": 308.44,
-   "fine": 308.52,
+   "inizio": 252.19,
+   "fine": 252.39,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "cose,",
+   "prima_di": "le"
+  },
+  {
+   "inizio": 253.25,
+   "fine": 253.47,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "pages,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 260.45,
+   "fine": 260.67,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "no,",
+   "prima_di": "sto"
+  },
+  {
+   "inizio": 267.49,
+   "fine": 267.63,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "ok,",
+   "prima_di": "qui"
+  },
+  {
+   "inizio": 278.89,
+   "fine": 279.03,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "Claude,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 287.91,
+   "fine": 287.97,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "loro.",
+   "prima_di": "C"
+  },
+  {
+   "inizio": 288.75,
+   "fine": 288.89,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "questa,",
+   "prima_di": "i"
+  },
+  {
+   "inizio": 289.79,
+   "fine": 289.95,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "gradient,",
+   "prima_di": "gli"
+  },
+  {
+   "inizio": 292.79,
+   "fine": 292.93,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "anima.",
+   "prima_di": "Questa"
+  },
+  {
+   "inizio": 294.49,
+   "fine": 294.65,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "tutti,",
+   "prima_di": "tranne"
+  },
+  {
+   "inizio": 296.03,
+   "fine": 296.17,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "apparentemente.",
+   "prima_di": "What"
+  },
+  {
+   "inizio": 296.95,
+   "fine": 297.03,
    "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "on?",
+   "prima_di": "Ho"
+  },
+  {
+   "inizio": 303.95,
+   "fine": 304.11,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "vita.",
+   "prima_di": "Insegna"
+  },
+  {
+   "inizio": 307.73,
+   "fine": 307.97,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "processo,",
+   "prima_di": "compreso"
+  },
+  {
+   "inizio": 308.47,
+   "fine": 308.67,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "design,",
    "prima_di": "compreso"
   },
   {
-   "inizio": 309.26,
-   "fine": 309.34,
-   "durata": 0.08,
+   "inizio": 309.31,
+   "fine": 309.43,
+   "durata": 0.12,
    "tipo": "interna",
    "dopo": "sviluppo,",
    "prima_di": "compreso"
   },
   {
-   "inizio": 317.7,
-   "fine": 317.84,
+   "inizio": 309.83,
+   "fine": 310.03,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "copy,",
+   "prima_di": "tutto,"
+  },
+  {
+   "inizio": 310.13,
+   "fine": 310.27,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "tutto,",
+   "prima_di": "e"
+  },
+  {
+   "inizio": 312.31,
+   "fine": 312.45,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "Yeah,",
+   "prima_di": "Jesus"
+  },
+  {
+   "inizio": 313.19,
+   "fine": 313.41,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "Christ!",
+   "prima_di": "Perché"
+  },
+  {
+   "inizio": 315.43,
+   "fine": 315.53,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "cosa.",
+   "prima_di": "La"
+  },
+  {
+   "inizio": 316.13,
+   "fine": 316.23,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "page,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 317.23,
+   "fine": 317.35,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "stai,",
+   "prima_di": "sei"
+  },
+  {
+   "inizio": 317.75,
+   "fine": 317.89,
    "durata": 0.14,
    "tipo": "interna",
    "dopo": "confuso,",
-   "prima_di": "ve"
+   "prima_di": "vieni"
   },
   {
-   "inizio": 331.46,
-   "fine": 331.56,
-   "durata": 0.1,
+   "inizio": 318.45,
+   "fine": 318.57,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "guy,",
-   "prima_di": "dovrei"
+   "dopo": "veloce.",
+   "prima_di": "Un"
   },
   {
-   "inizio": 334.36,
-   "fine": 334.42,
+   "inizio": 323.27,
+   "fine": 323.43,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "Claude.",
+   "prima_di": "Partita"
+  },
+  {
+   "inizio": 323.87,
+   "fine": 323.95,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "IVA,",
+   "prima_di": "stiamo"
+  },
+  {
+   "inizio": 328.13,
+   "fine": 328.19,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "semplificarla.",
+   "prima_di": "Un"
+  },
+  {
+   "inizio": 329.35,
+   "fine": 329.47,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "software,",
+   "prima_di": "te"
+  },
+  {
+   "inizio": 330.11,
+   "fine": 330.23,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "'AI.",
+   "prima_di": "Basta"
+  },
+  {
+   "inizio": 331.17,
+   "fine": 331.43,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "WordPress,",
+   "prima_di": "guys."
+  },
+  {
+   "inizio": 331.53,
+   "fine": 331.59,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "guys.",
+   "prima_di": "Dovrei"
+  },
+  {
+   "inizio": 334.39,
+   "fine": 334.45,
    "durata": 0.06,
    "tipo": "interna",
    "dopo": "strategie.",
    "prima_di": "E"
   },
   {
-   "inizio": 335.38,
-   "fine": 335.5,
-   "durata": 0.12,
+   "inizio": 335.45,
+   "fine": 335.51,
+   "durata": 0.06,
    "tipo": "interna",
    "dopo": "chiedi,",
    "prima_di": "se"
   },
   {
-   "inizio": 337.78,
-   "fine": 337.98,
-   "durata": 0.2,
+   "inizio": 337.91,
+   "fine": 338.21,
+   "durata": 0.3,
    "tipo": "interna",
    "dopo": "fantastica,",
    "prima_di": "perché"
   },
   {
-   "inizio": 340.18,
-   "fine": 340.32,
-   "durata": 0.14,
+   "inizio": 340.23,
+   "fine": 340.33,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "te?",
    "prima_di": "Tre"
   },
   {
-   "inizio": 341.42,
-   "fine": 341.5,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "uno,",
-   "prima_di": "soddisfazione"
-  },
-  {
-   "inizio": 342.34,
-   "fine": 342.42,
-   "durata": 0.08,
+   "inizio": 342.37,
+   "fine": 342.57,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "personale,",
-   "prima_di": "mi"
+   "prima_di": "garba"
   },
   {
-   "inizio": 343.44,
-   "fine": 343.58,
-   "durata": 0.14,
+   "inizio": 343.51,
+   "fine": 343.91,
+   "durata": 0.4,
    "tipo": "interna",
    "dopo": "stroba,",
    "prima_di": "mi"
   },
   {
-   "inizio": 345.24,
-   "fine": 345.3,
-   "durata": 0.06,
+   "inizio": 345.29,
+   "fine": 345.55,
+   "durata": 0.26,
    "tipo": "interna",
    "dopo": "corsi,",
    "prima_di": "mi"
   },
   {
-   "inizio": 346.0,
-   "fine": 346.4,
-   "durata": 0.4,
+   "inizio": 346.23,
+   "fine": 346.45,
+   "durata": 0.22,
    "tipo": "interna",
    "dopo": "appassiona.",
    "prima_di": "Numero"
   },
   {
-   "inizio": 346.84,
-   "fine": 347.14,
+   "inizio": 347.05,
+   "fine": 347.35,
    "durata": 0.3,
    "tipo": "interna",
    "dopo": "due,",
    "prima_di": "soldi,"
   },
   {
-   "inizio": 347.58,
-   "fine": 347.64,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "soldi,",
-   "prima_di": "tu"
-  },
-  {
-   "inizio": 348.14,
-   "fine": 348.24,
-   "durata": 0.1,
+   "inizio": 348.21,
+   "fine": 348.43,
+   "durata": 0.22,
    "tipo": "interna",
    "dopo": "paghi,",
+   "prima_di": "what"
+  },
+  {
+   "inizio": 348.65,
+   "fine": 348.97,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "fuck,",
    "prima_di": "ci"
   },
   {
-   "inizio": 349.58,
-   "fine": 349.74,
-   "durata": 0.16,
+   "inizio": 349.65,
+   "fine": 349.85,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "guadagno,",
    "prima_di": "ti"
   },
   {
-   "inizio": 350.46,
-   "fine": 350.7,
-   "durata": 0.24,
+   "inizio": 350.63,
+   "fine": 350.73,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "cosa,",
    "prima_di": "tu"
   },
   {
-   "inizio": 351.14,
-   "fine": 351.32,
-   "durata": 0.18,
+   "inizio": 351.27,
+   "fine": 351.33,
+   "durata": 0.06,
    "tipo": "interna",
    "dopo": "paghi,",
    "prima_di": "no."
   },
   {
-   "inizio": 351.4,
-   "fine": 351.54,
-   "durata": 0.14,
+   "inizio": 351.47,
+   "fine": 351.59,
+   "durata": 0.12,
    "tipo": "interna",
    "dopo": "no.",
    "prima_di": "E"
   },
   {
-   "inizio": 352.12,
-   "fine": 352.44,
-   "durata": 0.32,
+   "inizio": 352.37,
+   "fine": 352.55,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "tre,",
    "prima_di": "perché"
   },
   {
-   "inizio": 355.3,
-   "fine": 355.52,
-   "durata": 0.22,
+   "inizio": 355.43,
+   "fine": 355.55,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "Italia.",
-   "prima_di": "Quindi"
+   "dopo": "Italia,",
+   "prima_di": "quindi"
   },
   {
-   "inizio": 355.88,
-   "fine": 356.08,
-   "durata": 0.2,
+   "inizio": 356.01,
+   "fine": 356.13,
+   "durata": 0.12,
    "tipo": "interna",
    "dopo": "sì,",
    "prima_di": "potrei"
   },
   {
-   "inizio": 358.86,
-   "fine": 358.94,
-   "durata": 0.08,
+   "inizio": 358.89,
+   "fine": 358.95,
+   "durata": 0.06,
    "tipo": "interna",
    "dopo": "soldi,",
    "prima_di": "però"
   },
   {
-   "inizio": 360.4,
-   "fine": 360.56,
+   "inizio": 360.45,
+   "fine": 360.61,
    "durata": 0.16,
    "tipo": "interna",
    "dopo": "Cristo.",
-   "prima_di": "5"
+   "prima_di": "Cinque"
   },
   {
-   "inizio": 362.08,
-   "fine": 362.42,
-   "durata": 0.34,
+   "inizio": 362.27,
+   "fine": 362.41,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "Italia,",
    "prima_di": "se"
   },
   {
-   "inizio": 364.3,
-   "fine": 364.36,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "studenti,",
-   "prima_di": "cosa"
-  },
-  {
-   "inizio": 365.62,
-   "fine": 365.7,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "'opretore,",
-   "prima_di": "non"
-  },
-  {
-   "inizio": 366.9,
-   "fine": 367.06,
-   "durata": 0.16,
+   "inizio": 366.95,
+   "fine": 367.25,
+   "durata": 0.3,
    "tipo": "interna",
    "dopo": "anni,",
    "prima_di": "ci"
   },
   {
-   "inizio": 368.18,
-   "fine": 368.24,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "migliaia,",
-   "prima_di": "sumigliaia,"
-  },
-  {
-   "inizio": 368.64,
-   "fine": 368.7,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "sumigliaia,",
-   "prima_di": "sumigliaia"
-  },
-  {
-   "inizio": 369.84,
-   "fine": 370.0,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "ogni",
-   "prima_di": "Ora"
-  },
-  {
-   "inizio": 370.94,
-   "fine": 371.02,
+   "inizio": 371.01,
+   "fine": 371.09,
    "durata": 0.08,
    "tipo": "interna",
-   "dopo": "fraintendermi,",
+   "dopo": "intendermi,",
    "prima_di": "non"
   },
   {
-   "inizio": 372.58,
-   "fine": 372.66,
-   "durata": 0.08,
+   "inizio": 372.65,
+   "fine": 372.71,
+   "durata": 0.06,
    "tipo": "interna",
    "dopo": "facili,",
    "prima_di": "penso"
   },
   {
-   "inizio": 373.8,
-   "fine": 373.86,
-   "durata": 0.06,
+   "inizio": 373.87,
+   "fine": 373.95,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "ormai,",
    "prima_di": "non"
   },
   {
-   "inizio": 377.38,
-   "fine": 377.54,
-   "durata": 0.16,
+   "inizio": 377.49,
+   "fine": 377.55,
+   "durata": 0.06,
    "tipo": "interna",
    "dopo": "no,",
    "prima_di": "non"
   },
   {
-   "inizio": 378.06,
-   "fine": 378.16,
-   "durata": 0.1,
-   "tipo": "interna",
-   "dopo": "così.",
-   "prima_di": "È"
-  },
-  {
-   "inizio": 378.76,
-   "fine": 379.22,
-   "durata": 0.46,
+   "inizio": 379.07,
+   "fine": 379.29,
+   "durata": 0.22,
    "tipo": "interna",
    "dopo": "business,",
    "prima_di": "è"
   },
   {
-   "inizio": 380.16,
-   "fine": 380.26,
-   "durata": 0.1,
+   "inizio": 380.29,
+   "fine": 380.53,
+   "durata": 0.24,
    "tipo": "interna",
    "dopo": "business,",
    "prima_di": "qualsiasi"
   },
   {
-   "inizio": 381.24,
-   "fine": 381.48,
-   "durata": 0.24,
+   "inizio": 381.53,
+   "fine": 381.69,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "business,",
-   "prima_di": "al"
+   "prima_di": "arrischi,"
   },
   {
-   "inizio": 383.64,
-   "fine": 384.04,
-   "durata": 0.4,
+   "inizio": 382.23,
+   "fine": 382.37,
+   "durata": 0.14,
    "tipo": "interna",
-   "dopo": "dovrai",
-   "prima_di": "faticare,"
+   "dopo": "arrischi,",
+   "prima_di": "è"
   },
   {
-   "inizio": 384.4,
-   "fine": 384.52,
-   "durata": 0.12,
-   "tipo": "interna",
-   "dopo": "faticare,",
-   "prima_di": "se"
-  },
-  {
-   "inizio": 386.2,
-   "fine": 386.34,
+   "inizio": 386.29,
+   "fine": 386.43,
    "durata": 0.14,
    "tipo": "interna",
    "dopo": "business,",
    "prima_di": "non"
   },
   {
-   "inizio": 388.76,
-   "fine": 388.84,
-   "durata": 0.08,
+   "inizio": 388.83,
+   "fine": 389.01,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "business,",
    "prima_di": "semplicemente"
   },
   {
-   "inizio": 390.32,
-   "fine": 390.5,
-   "durata": 0.18,
-   "tipo": "interna",
-   "dopo": "consapevole,",
-   "prima_di": "non"
-  },
-  {
-   "inizio": 391.02,
-   "fine": 391.1,
-   "durata": 0.08,
+   "inizio": 391.13,
+   "fine": 391.23,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "me,",
    "prima_di": "non"
   },
   {
-   "inizio": 392.24,
-   "fine": 392.3,
-   "durata": 0.06,
+   "inizio": 396.03,
+   "fine": 396.76,
+   "durata": 0.73,
    "tipo": "interna",
-   "dopo": "'altro,",
-   "prima_di": "ed"
-  },
-  {
-   "inizio": 392.86,
-   "fine": 392.96,
-   "durata": 0.1,
-   "tipo": "interna",
-   "dopo": "ok,",
-   "prima_di": "però"
-  },
-  {
-   "inizio": 395.24,
-   "fine": 396.57,
-   "durata": 1.33,
-   "tipo": "interna",
-   "dopo": "provarci",
+   "dopo": "provarci,",
    "prima_di": "eccoci"
   },
   {
-   "inizio": 397.05,
-   "fine": 397.15,
-   "durata": 0.1,
-   "tipo": "interna",
-   "dopo": "qua,",
-   "prima_di": "in"
-  },
-  {
-   "inizio": 398.95,
-   "fine": 399.01,
-   "durata": 0.06,
+   "inizio": 399.0,
+   "fine": 399.16,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "so,",
    "prima_di": "state"
   },
   {
-   "inizio": 401.19,
-   "fine": 401.85,
-   "durata": 0.66,
-   "tipo": "interna",
-   "dopo": "cedendo",
-   "prima_di": "199"
-  },
-  {
-   "inizio": 402.49,
-   "fine": 402.55,
-   "durata": 0.06,
+   "inizio": 405.56,
+   "fine": 405.72,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "euro?",
-   "prima_di": "Quando"
+   "prima_di": "Devo"
   },
   {
-   "inizio": 406.77,
-   "fine": 406.83,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "alto,",
-   "prima_di": "te"
-  },
-  {
-   "inizio": 410.87,
-   "fine": 410.97,
+   "inizio": 406.78,
+   "fine": 406.88,
    "durata": 0.1,
    "tipo": "interna",
-   "dopo": "incluso,",
-   "prima_di": "ma"
+   "dopo": "alto.",
+   "prima_di": "Te"
   },
   {
-   "inizio": 419.25,
-   "fine": 419.45,
-   "durata": 0.2,
+   "inizio": 407.3,
+   "fine": 407.42,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "spiego.",
+   "prima_di": "Funnel"
+  },
+  {
+   "inizio": 410.96,
+   "fine": 411.04,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "incluso.",
+   "prima_di": "Ma"
+  },
+  {
+   "inizio": 412.36,
+   "fine": 412.42,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "Operator.",
+   "prima_di": "Ti"
+  },
+  {
+   "inizio": 419.38,
+   "fine": 419.62,
+   "durata": 0.24,
    "tipo": "interna",
    "dopo": "marketing.",
    "prima_di": "Questo"
   },
   {
-   "inizio": 428.95,
-   "fine": 429.09,
+   "inizio": 428.5,
+   "fine": 428.62,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "Operator.",
+   "prima_di": "Esatto,"
+  },
+  {
+   "inizio": 429.02,
+   "fine": 429.16,
    "durata": 0.14,
    "tipo": "interna",
    "dopo": "Esatto,",
    "prima_di": "capito?"
   },
   {
-   "inizio": 429.37,
-   "fine": 429.63,
-   "durata": 0.26,
+   "inizio": 429.5,
+   "fine": 429.64,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "capito?",
    "prima_di": "Se"
   },
   {
-   "inizio": 434.81,
-   "fine": 435.01,
-   "durata": 0.2,
+   "inizio": 434.84,
+   "fine": 434.92,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "euro,",
    "prima_di": "avrai"
   },
   {
-   "inizio": 465.13,
-   "fine": 465.81,
-   "durata": 0.68,
-   "tipo": "interna",
-   "dopo": "chiama",
-   "prima_di": "bandellarmageddon,"
-  },
-  {
-   "inizio": 468.37,
-   "fine": 468.43,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "bene.",
-   "prima_di": "Cosa"
-  },
-  {
-   "inizio": 469.89,
-   "fine": 470.67,
-   "durata": 0.78,
-   "tipo": "interna",
-   "dopo": "'operato?",
-   "prima_di": "Fanno"
-  },
-  {
-   "inizio": 471.39,
-   "fine": 471.47,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "'operato,",
-   "prima_di": "due"
-  },
-  {
-   "inizio": 471.91,
-   "fine": 472.01,
+   "inizio": 439.84,
+   "fine": 439.94,
    "durata": 0.1,
    "tipo": "interna",
-   "dopo": "parti,",
-   "prima_di": "come"
-  },
-  {
-   "inizio": 472.41,
-   "fine": 472.55,
-   "durata": 0.14,
-   "tipo": "interna",
-   "dopo": "scrivere,",
-   "prima_di": "landing"
-  },
-  {
-   "inizio": 473.63,
-   "fine": 473.69,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "clienti.",
+   "dopo": "Operator.",
    "prima_di": "E"
   },
   {
-   "inizio": 474.69,
-   "fine": 474.83,
-   "durata": 0.14,
+   "inizio": 444.54,
+   "fine": 444.6,
+   "durata": 0.06,
    "tipo": "interna",
-   "dopo": "clienti,",
-   "prima_di": "dopo"
+   "dopo": "fatto.",
+   "prima_di": "Ci"
   },
   {
-   "inizio": 477.69,
-   "fine": 477.81,
+   "inizio": 447.58,
+   "fine": 447.66,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "lavoro.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 450.9,
+   "fine": 451.02,
    "durata": 0.12,
    "tipo": "interna",
-   "dopo": "corso,",
-   "prima_di": "puoi"
+   "dopo": "decidere,",
+   "prima_di": "non"
   },
   {
-   "inizio": 483.57,
-   "fine": 483.63,
-   "durata": 0.06,
+   "inizio": 452.12,
+   "fine": 452.22,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "forza,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 470.16,
+   "fine": 470.92,
+   "durata": 0.76,
+   "tipo": "interna",
+   "dopo": "Operator?",
+   "prima_di": "Funnel"
+  },
+  {
+   "inizio": 471.46,
+   "fine": 471.54,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "Operator,",
+   "prima_di": "due"
+  },
+  {
+   "inizio": 483.62,
+   "fine": 483.82,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "vita.",
    "prima_di": "Ora,"
   },
   {
-   "inizio": 483.85,
-   "fine": 483.97,
-   "durata": 0.12,
-   "tipo": "interna",
-   "dopo": "Ora,",
-   "prima_di": "tra"
-  },
-  {
-   "inizio": 485.45,
-   "fine": 485.55,
-   "durata": 0.1,
+   "inizio": 485.54,
+   "fine": 485.62,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "anni,",
-   "prima_di": "hai"
+   "prima_di": "nei"
   },
   {
-   "inizio": 488.77,
-   "fine": 488.89,
+   "inizio": 486.98,
+   "fine": 487.1,
    "durata": 0.12,
    "tipo": "interna",
-   "dopo": "corso,",
-   "prima_di": "ho"
+   "dopo": "vuoi.",
+   "prima_di": "Sono"
   },
   {
-   "inizio": 491.13,
-   "fine": 491.23,
-   "durata": 0.1,
+   "inizio": 491.2,
+   "fine": 491.28,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "più,",
    "prima_di": "è"
   },
   {
-   "inizio": 494.01,
-   "fine": 494.17,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "cui.",
-   "prima_di": "Gruppo"
-  },
-  {
-   "inizio": 495.67,
-   "fine": 495.81,
-   "durata": 0.14,
+   "inizio": 495.78,
+   "fine": 496.06,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "community,",
    "prima_di": "strumento"
   },
   {
-   "inizio": 497.81,
-   "fine": 497.87,
-   "durata": 0.06,
+   "inizio": 497.86,
+   "fine": 497.96,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "pages,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 498.5,
+   "fine": 498.64,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "molto,",
    "prima_di": "più"
   },
   {
-   "inizio": 504.25,
-   "fine": 504.31,
-   "durata": 0.06,
+   "inizio": 504.32,
+   "fine": 504.46,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "livello,",
    "prima_di": "sono"
   },
   {
-   "inizio": 504.87,
-   "fine": 504.95,
-   "durata": 0.08,
+   "inizio": 504.9,
+   "fine": 505.26,
+   "durata": 0.36,
    "tipo": "interna",
    "dopo": "belle,",
    "prima_di": "testate"
   },
   {
-   "inizio": 512.39,
-   "fine": 512.45,
+   "inizio": 512.46,
+   "fine": 512.52,
    "durata": 0.06,
    "tipo": "interna",
-   "dopo": "cosa,",
-   "prima_di": "questo"
+   "dopo": "cose.",
+   "prima_di": "Questo"
   },
   {
-   "inizio": 516.39,
-   "fine": 516.49,
-   "durata": 0.1,
+   "inizio": 518.18,
+   "fine": 518.54,
+   "durata": 0.36,
    "tipo": "interna",
-   "dopo": "cazzo,",
-   "prima_di": "usavo"
+   "dopo": "Sites,",
+   "prima_di": "lo"
   },
   {
-   "inizio": 518.57,
-   "fine": 519.19,
-   "durata": 0.62,
+   "inizio": 520.02,
+   "fine": 520.18,
+   "durata": 0.16,
    "tipo": "interna",
-   "dopo": "non",
-   "prima_di": "sapevo"
+   "dopo": "sapevo.",
+   "prima_di": "E"
   },
   {
-   "inizio": 523.77,
-   "fine": 523.83,
-   "durata": 0.06,
+   "inizio": 523.8,
+   "fine": 523.96,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "qualità.",
    "prima_di": "Mi"
   },
   {
-   "inizio": 530.17,
-   "fine": 530.29,
-   "durata": 0.12,
+   "inizio": 527.04,
+   "fine": 527.1,
+   "durata": 0.06,
    "tipo": "interna",
-   "dopo": "clienti.",
-   "prima_di": "La"
+   "dopo": "qualità,",
+   "prima_di": "che"
   },
   {
-   "inizio": 533.91,
-   "fine": 534.03,
+   "inizio": 534.02,
+   "fine": 534.14,
    "durata": 0.12,
    "tipo": "interna",
-   "dopo": "sanno,",
-   "prima_di": "non"
+   "dopo": "sanno.",
+   "prima_di": "Non"
   },
   {
-   "inizio": 534.35,
-   "fine": 534.53,
-   "durata": 0.18,
+   "inizio": 534.44,
+   "fine": 534.52,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "so,",
    "prima_di": "ma"
   },
   {
-   "inizio": 534.87,
-   "fine": 535.51,
-   "durata": 0.64,
+   "inizio": 534.92,
+   "fine": 535.5,
+   "durata": 0.58,
    "tipo": "interna",
-   "dopo": "insegnerò.",
-   "prima_di": "Ti"
+   "dopo": "insegnere.",
+   "prima_di": "Che"
   },
   {
-   "inizio": 537.03,
-   "fine": 537.17,
-   "durata": 0.14,
+   "inizio": 537.12,
+   "fine": 537.24,
+   "durata": 0.12,
    "tipo": "interna",
    "dopo": "lavoro,",
    "prima_di": "non"
   },
   {
-   "inizio": 537.75,
-   "fine": 537.91,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "funziona.",
-   "prima_di": "Il"
-  },
-  {
-   "inizio": 540.73,
-   "fine": 540.95,
-   "durata": 0.22,
+   "inizio": 540.94,
+   "fine": 541.14,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "prepotente.",
-   "prima_di": "Fanno"
+   "prima_di": "Funnel"
   },
   {
-   "inizio": 541.49,
-   "fine": 541.87,
-   "durata": 0.38,
+   "inizio": 541.84,
+   "fine": 541.94,
+   "durata": 0.1,
    "tipo": "interna",
-   "dopo": "operator,",
+   "dopo": "Operator,",
    "prima_di": "non"
   },
   {
-   "inizio": 544.11,
-   "fine": 544.17,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "ore,",
-   "prima_di": "ma"
-  },
-  {
-   "inizio": 553.07,
-   "fine": 553.15,
+   "inizio": 542.56,
+   "fine": 542.64,
    "durata": 0.08,
    "tipo": "interna",
-   "dopo": "Pages,",
-   "prima_di": "per"
+   "dopo": "intendermi,",
+   "prima_di": "è"
   },
   {
-   "inizio": 555.19,
-   "fine": 555.25,
+   "inizio": 543.22,
+   "fine": 543.4,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "completo,",
+   "prima_di": "dura"
+  },
+  {
+   "inizio": 544.12,
+   "fine": 544.18,
    "durata": 0.06,
    "tipo": "interna",
-   "dopo": "pacchetti.",
+   "dopo": "ore.",
+   "prima_di": "Ma"
+  },
+  {
+   "inizio": 549.14,
+   "fine": 549.2,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "specifiche.",
    "prima_di": "E"
   },
   {
-   "inizio": 557.51,
-   "fine": 557.63,
-   "durata": 0.12,
+   "inizio": 557.6,
+   "fine": 557.76,
+   "durata": 0.16,
    "tipo": "interna",
-   "dopo": "cose,",
+   "dopo": "cose.",
    "prima_di": "Out"
   },
   {
-   "inizio": 558.37,
-   "fine": 558.57,
+   "inizio": 558.48,
+   "fine": 558.68,
    "durata": 0.2,
    "tipo": "interna",
    "dopo": "Funnel,",
    "prima_di": "Out"
   },
   {
-   "inizio": 559.31,
-   "fine": 559.57,
-   "durata": 0.26,
+   "inizio": 559.46,
+   "fine": 559.64,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "Headline,",
    "prima_di": "Out"
   },
   {
-   "inizio": 563.67,
-   "fine": 563.75,
+   "inizio": 561.38,
+   "fine": 561.5,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "Viral.",
+   "prima_di": "Anche"
+  },
+  {
+   "inizio": 562.02,
+   "fine": 562.2,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "questi,",
+   "prima_di": "accesso"
+  },
+  {
+   "inizio": 562.84,
+   "fine": 563.0,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "vita,",
+   "prima_di": "accedendo"
+  },
+  {
+   "inizio": 563.7,
+   "fine": 563.78,
    "durata": 0.08,
    "tipo": "interna",
    "dopo": "subito.",
    "prima_di": "Qui"
   },
   {
-   "inizio": 567.19,
-   "fine": 567.41,
-   "durata": 0.22,
+   "inizio": 579.08,
+   "fine": 579.4,
+   "durata": 0.32,
    "tipo": "interna",
-   "dopo": "pronto.",
-   "prima_di": "Considera"
+   "dopo": "interessa.",
+   "prima_di": "Ricorda,"
   },
   {
-   "inizio": 570.51,
-   "fine": 570.75,
-   "durata": 0.24,
+   "inizio": 584.0,
+   "fine": 584.18,
+   "durata": 0.18,
    "tipo": "interna",
-   "dopo": "operator.",
-   "prima_di": "E"
+   "dopo": "Operator.",
+   "prima_di": "Quindi"
   },
   {
-   "inizio": 579.51,
-   "fine": 579.61,
-   "durata": 0.1,
+   "inizio": 589.1,
+   "fine": 589.22,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "Ricorda,",
-   "prima_di": "se"
+   "dopo": "bundle.",
+   "prima_di": "E'"
   },
   {
-   "inizio": 580.55,
-   "fine": 580.75,
-   "durata": 0.2,
+   "inizio": 592.0,
+   "fine": 592.12,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "bundle,",
-   "prima_di": "adesso"
+   "dopo": "intorno.",
+   "prima_di": "Devo"
   },
   {
-   "inizio": 593.13,
-   "fine": 593.29,
-   "durata": 0.16,
+   "inizio": 593.28,
+   "fine": 593.4,
+   "durata": 0.12,
    "tipo": "interna",
    "dopo": "opportunità,",
    "prima_di": "no?"
   },
   {
-   "inizio": 593.35,
-   "fine": 593.41,
-   "durata": 0.06,
+   "inizio": 593.4,
+   "fine": 593.48,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "no?",
    "prima_di": "Però"
   },
   {
-   "inizio": 610.09,
-   "fine": 610.17,
+   "inizio": 597.0,
+   "fine": 597.24,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "euro,",
+   "prima_di": "cioè"
+  },
+  {
+   "inizio": 604.36,
+   "fine": 604.44,
    "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "operator,",
+   "prima_di": "è"
+  },
+  {
+   "inizio": 604.98,
+   "fine": 605.12,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "crazy.",
+   "prima_di": "Ora"
+  },
+  {
+   "inizio": 610.14,
+   "fine": 610.28,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "esperienza.",
    "prima_di": "Negli"
   },
   {
-   "inizio": 613.75,
-   "fine": 613.85,
-   "durata": 0.1,
+   "inizio": 613.78,
+   "fine": 613.9,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "corsi.",
-   "prima_di": "Ho"
+   "dopo": "corsi,",
+   "prima_di": "ho"
   },
   {
-   "inizio": 615.09,
-   "fine": 615.55,
-   "durata": 0.46,
-   "tipo": "interna",
-   "dopo": "piattaforme",
-   "prima_di": "prefatte"
-  },
-  {
-   "inizio": 618.25,
-   "fine": 618.35,
-   "durata": 0.1,
+   "inizio": 618.32,
+   "fine": 618.4,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "qualità,",
    "prima_di": "i"
   },
   {
-   "inizio": 619.17,
-   "fine": 619.25,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "belli,",
-   "prima_di": "però"
-  },
-  {
-   "inizio": 621.61,
-   "fine": 621.69,
-   "durata": 0.08,
+   "inizio": 621.66,
+   "fine": 621.86,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "cose.",
    "prima_di": "Con"
   },
   {
-   "inizio": 623.41,
-   "fine": 623.51,
-   "durata": 0.1,
-   "tipo": "interna",
-   "dopo": "fanculo,",
-   "prima_di": "non"
-  },
-  {
-   "inizio": 624.27,
-   "fine": 624.45,
+   "inizio": 624.36,
+   "fine": 624.54,
    "durata": 0.18,
    "tipo": "interna",
    "dopo": "spese,",
    "prima_di": "tiriamo"
   },
   {
-   "inizio": 627.09,
-   "fine": 627.15,
-   "durata": 0.06,
+   "inizio": 627.1,
+   "fine": 627.2,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "fuori.",
    "prima_di": "Ho"
   },
   {
-   "inizio": 629.11,
-   "fine": 629.27,
+   "inizio": 629.22,
+   "fine": 629.38,
    "durata": 0.16,
    "tipo": "interna",
    "dopo": "video,",
    "prima_di": "non"
   },
   {
-   "inizio": 630.09,
-   "fine": 630.27,
-   "durata": 0.18,
+   "inizio": 630.22,
+   "fine": 630.42,
+   "durata": 0.2,
    "tipo": "interna",
-   "dopo": "caso,",
-   "prima_di": "con"
+   "dopo": "caso?",
+   "prima_di": "E"
   },
   {
-   "inizio": 631.39,
-   "fine": 631.57,
-   "durata": 0.18,
+   "inizio": 631.34,
+   "fine": 631.62,
+   "durata": 0.28,
    "tipo": "interna",
-   "dopo": "powerpoint.",
+   "dopo": "PowerPoint.",
    "prima_di": "Il"
   },
   {
-   "inizio": 633.11,
-   "fine": 633.17,
-   "durata": 0.06,
+   "inizio": 633.14,
+   "fine": 633.3,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "livello,",
    "prima_di": "con"
   },
   {
-   "inizio": 634.27,
-   "fine": 634.41,
-   "durata": 0.14,
+   "inizio": 634.34,
+   "fine": 634.42,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "schermo,",
    "prima_di": "così"
   },
   {
-   "inizio": 634.93,
-   "fine": 634.99,
-   "durata": 0.06,
+   "inizio": 634.92,
+   "fine": 635.02,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "capisci.",
    "prima_di": "Le"
   },
   {
-   "inizio": 636.75,
-   "fine": 636.87,
-   "durata": 0.12,
+   "inizio": 636.82,
+   "fine": 636.88,
+   "durata": 0.06,
    "tipo": "interna",
    "dopo": "scaricare,",
    "prima_di": "la"
   },
   {
-   "inizio": 637.55,
-   "fine": 637.67,
-   "durata": 0.12,
+   "inizio": 637.62,
+   "fine": 637.72,
+   "durata": 0.1,
    "tipo": "interna",
-   "dopo": "descrizione,",
+   "dopo": "trascrizione,",
    "prima_di": "così"
   },
   {
-   "inizio": 640.99,
-   "fine": 641.05,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "video.",
-   "prima_di": "Il"
-  },
-  {
-   "inizio": 641.39,
-   "fine": 641.71,
-   "durata": 0.32,
+   "inizio": 641.68,
+   "fine": 641.88,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "quiz,",
    "prima_di": "la"
   },
   {
-   "inizio": 642.63,
-   "fine": 642.71,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "pettaforma,",
-   "prima_di": "è"
-  },
-  {
-   "inizio": 643.93,
-   "fine": 644.35,
-   "durata": 0.42,
+   "inizio": 644.22,
+   "fine": 644.4,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "custom,",
    "prima_di": "quindi"
   },
   {
-   "inizio": 645.33,
-   "fine": 645.53,
-   "durata": 0.2,
+   "inizio": 645.44,
+   "fine": 645.52,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "'account,",
    "prima_di": "quindi"
   },
   {
-   "inizio": 647.67,
-   "fine": 647.79,
-   "durata": 0.12,
+   "inizio": 647.32,
+   "fine": 647.52,
+   "durata": 0.2,
    "tipo": "interna",
-   "dopo": "tolto,",
-   "prima_di": "questi"
+   "dopo": "volte.",
+   "prima_di": "Tolti"
   },
   {
-   "inizio": 648.27,
-   "fine": 648.35,
-   "durata": 0.08,
+   "inizio": 648.32,
+   "fine": 648.66,
+   "durata": 0.34,
    "tipo": "interna",
    "dopo": "problemi,",
    "prima_di": "è"
   },
   {
-   "inizio": 649.85,
-   "fine": 649.91,
-   "durata": 0.06,
+   "inizio": 649.82,
+   "fine": 649.94,
+   "durata": 0.12,
    "tipo": "interna",
-   "dopo": "smulta.",
+   "dopo": "smutta.",
    "prima_di": "E"
   },
   {
-   "inizio": 650.29,
-   "fine": 650.45,
-   "durata": 0.16,
+   "inizio": 650.38,
+   "fine": 650.58,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "dici,",
-   "prima_di": "andrò"
+   "prima_di": "Andrea"
   },
   {
-   "inizio": 651.03,
-   "fine": 651.17,
-   "durata": 0.14,
+   "inizio": 651.08,
+   "fine": 651.18,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "frega,",
    "prima_di": "mi"
   },
   {
-   "inizio": 652.31,
-   "fine": 652.45,
-   "durata": 0.14,
-   "tipo": "interna",
-   "dopo": "informazioni,",
-   "prima_di": "lo"
-  },
-  {
-   "inizio": 652.81,
-   "fine": 652.95,
-   "durata": 0.14,
+   "inizio": 652.92,
+   "fine": 653.02,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "so,",
    "prima_di": "però"
   },
   {
-   "inizio": 656.77,
-   "fine": 656.89,
-   "durata": 0.12,
+   "inizio": 655.72,
+   "fine": 656.04,
+   "durata": 0.32,
    "tipo": "interna",
-   "dopo": "piccolezza,",
+   "dopo": "impegno,",
+   "prima_di": "anche"
+  },
+  {
+   "inizio": 656.84,
+   "fine": 656.94,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "piccolezze,",
    "prima_di": "immagina"
   },
   {
-   "inizio": 658.69,
-   "fine": 658.85,
-   "durata": 0.16,
+   "inizio": 658.8,
+   "fine": 658.88,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "resto.",
    "prima_di": "E"
   },
   {
-   "inizio": 661.63,
-   "fine": 661.85,
-   "durata": 0.22,
+   "inizio": 661.78,
+   "fine": 661.98,
+   "durata": 0.2,
    "tipo": "interna",
-   "dopo": "avere,",
-   "prima_di": "quindi"
+   "dopo": "avere.",
+   "prima_di": "Quindi"
   },
   {
-   "inizio": 664.23,
-   "fine": 664.49,
-   "durata": 0.26,
-   "tipo": "interna",
-   "dopo": "tutto,",
-   "prima_di": "conspiegazioni"
-  },
-  {
-   "inizio": 680.89,
-   "fine": 681.35,
-   "durata": 0.46,
-   "tipo": "interna",
-   "dopo": "così",
-   "prima_di": "semplice"
-  },
-  {
-   "inizio": 692.67,
-   "fine": 692.89,
-   "durata": 0.22,
-   "tipo": "interna",
-   "dopo": "codice,",
-   "prima_di": "usando"
-  },
-  {
-   "inizio": 695.91,
-   "fine": 696.03,
-   "durata": 0.12,
-   "tipo": "interna",
-   "dopo": "web,",
-   "prima_di": "ti"
-  },
-  {
-   "inizio": 701.21,
-   "fine": 701.37,
+   "inizio": 664.44,
+   "fine": 664.6,
    "durata": 0.16,
    "tipo": "interna",
-   "dopo": "serve,",
-   "prima_di": "la"
+   "dopo": "tutto,",
+   "prima_di": "con"
   },
   {
-   "inizio": 703.39,
-   "fine": 703.57,
+   "inizio": 666.98,
+   "fine": 667.04,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "idiota,",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 668.44,
+   "fine": 668.52,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "cose,",
+   "prima_di": "quando"
+  },
+  {
+   "inizio": 670.26,
+   "fine": 670.38,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "concetto,",
+   "prima_di": "tipo"
+  },
+  {
+   "inizio": 671.68,
+   "fine": 671.76,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "repository,",
+   "prima_di": "un"
+  },
+  {
+   "inizio": 672.48,
+   "fine": 672.6,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "github,",
+   "prima_di": "per"
+  },
+  {
+   "inizio": 674.34,
+   "fine": 674.5,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "standard,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 676.32,
+   "fine": 676.42,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "iai,",
+   "prima_di": "no?"
+  },
+  {
+   "inizio": 676.42,
+   "fine": 676.6,
    "durata": 0.18,
    "tipo": "interna",
-   "dopo": "avere,",
-   "prima_di": "erano"
+   "dopo": "no?",
+   "prima_di": "E"
   },
   {
-   "inizio": 713.33,
-   "fine": 713.77,
-   "durata": 0.44,
+   "inizio": 679.18,
+   "fine": 679.26,
+   "durata": 0.08,
    "tipo": "interna",
-   "dopo": "K47,",
+   "dopo": "capisci,",
    "prima_di": "è"
   },
   {
-   "inizio": 720.11,
-   "fine": 720.27,
+   "inizio": 682.44,
+   "fine": 682.58,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "chiaro.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 685.44,
+   "fine": 685.68,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "2021,",
+   "prima_di": "ti"
+  },
+  {
+   "inizio": 689.46,
+   "fine": 689.54,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "siti.",
+   "prima_di": "Se"
+  },
+  {
+   "inizio": 695.96,
+   "fine": 696.12,
    "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "web.",
+   "prima_di": "Ti"
+  },
+  {
+   "inizio": 698.76,
+   "fine": 698.88,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "giorno.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 701.34,
+   "fine": 701.46,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "serve.",
+   "prima_di": "È"
+  },
+  {
+   "inizio": 704.6,
+   "fine": 704.7,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "tempi,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 705.94,
+   "fine": 706.04,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "periodo,",
+   "prima_di": "però"
+  },
+  {
+   "inizio": 713.68,
+   "fine": 713.78,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "-47.",
+   "prima_di": "È"
+  },
+  {
+   "inizio": 717.98,
+   "fine": 718.1,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "Armageddon,",
+   "prima_di": "sto"
+  },
+  {
+   "inizio": 718.26,
+   "fine": 718.36,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "cosa,",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 720.2,
+   "fine": 720.3,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "tutto.",
    "prima_di": "La"
   },
   {
-   "inizio": 726.41,
-   "fine": 726.53,
+   "inizio": 724.06,
+   "fine": 724.16,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "meglio,",
+   "prima_di": "volantini"
+  },
+  {
+   "inizio": 725.52,
+   "fine": 725.64,
    "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "culo,",
+   "prima_di": "con"
+  },
+  {
+   "inizio": 726.5,
+   "fine": 726.66,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "GPT.",
    "prima_di": "Questi"
   },
   {
-   "inizio": 729.59,
-   "fine": 729.67,
-   "durata": 0.08,
+   "inizio": 729.66,
+   "fine": 729.8,
+   "durata": 0.14,
    "tipo": "interna",
-   "dopo": "secondi,",
-   "prima_di": "aziende"
+   "dopo": "secondi.",
+   "prima_di": "Aziende"
   },
   {
-   "inizio": 735.59,
-   "fine": 735.69,
-   "durata": 0.1,
+   "inizio": 734.34,
+   "fine": 734.5,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "investimenti,",
+   "prima_di": "pusciandolo"
+  },
+  {
+   "inizio": 735.6,
+   "fine": 735.68,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "tutti.",
    "prima_di": "Io"
   },
   {
-   "inizio": 736.43,
-   "fine": 736.63,
-   "durata": 0.2,
+   "inizio": 736.48,
+   "fine": 736.64,
+   "durata": 0.16,
    "tipo": "interna",
-   "dopo": "AI,",
+   "dopo": "'AI,",
    "prima_di": "vedi"
   },
   {
-   "inizio": 742.33,
-   "fine": 742.57,
-   "durata": 0.24,
+   "inizio": 742.44,
+   "fine": 742.7,
+   "durata": 0.26,
    "tipo": "interna",
    "dopo": "cose.",
    "prima_di": "Il"
   },
   {
-   "inizio": 744.55,
-   "fine": 744.65,
-   "durata": 0.1,
+   "inizio": 753.52,
+   "fine": 753.6,
+   "durata": 0.08,
    "tipo": "interna",
-   "dopo": "adesso.",
-   "prima_di": "E"
+   "dopo": "insegna.",
+   "prima_di": "Quindi"
   },
   {
-   "inizio": 771.71,
-   "fine": 772.05,
-   "durata": 0.34,
-   "tipo": "interna",
-   "dopo": "Instagram,",
-   "prima_di": "nel"
-  },
-  {
-   "inizio": 775.97,
-   "fine": 776.09,
+   "inizio": 762.1,
+   "fine": 762.22,
    "durata": 0.12,
    "tipo": "interna",
-   "dopo": "più.",
-   "prima_di": "Questi"
-  },
-  {
-   "inizio": 778.93,
-   "fine": 779.07,
-   "durata": 0.14,
-   "tipo": "interna",
-   "dopo": "mai,",
-   "prima_di": "quindi"
-  },
-  {
-   "inizio": 779.81,
-   "fine": 780.07,
-   "durata": 0.26,
-   "tipo": "interna",
-   "dopo": "quattro,",
-   "prima_di": "dell"
-  },
-  {
-   "inizio": 780.69,
-   "fine": 780.85,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "'ArmaGaddon.",
-   "prima_di": "Poi"
-  },
-  {
-   "inizio": 782.35,
-   "fine": 782.47,
-   "durata": 0.12,
-   "tipo": "interna",
-   "dopo": "'Operator,",
-   "prima_di": "che"
-  },
-  {
-   "inizio": 784.05,
-   "fine": 784.11,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "'anno.",
-   "prima_di": "Quello"
-  },
-  {
-   "inizio": 788.31,
-   "fine": 788.37,
-   "durata": 0.06,
-   "tipo": "interna",
-   "dopo": "usarlo,",
-   "prima_di": "quindi"
-  },
-  {
-   "inizio": 789.11,
-   "fine": 789.27,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "tempo.",
-   "prima_di": "C"
-  },
-  {
-   "inizio": 792.63,
-   "fine": 792.75,
-   "durata": 0.12,
-   "tipo": "interna",
-   "dopo": "interrate.",
+   "dopo": "prenderlo.",
    "prima_di": "Se"
   },
   {
-   "inizio": 793.41,
-   "fine": 793.55,
-   "durata": 0.14,
-   "tipo": "interna",
-   "dopo": "dettagli,",
-   "prima_di": "scrivimi"
-  },
-  {
-   "inizio": 795.53,
-   "fine": 795.81,
-   "durata": 0.28,
+   "inizio": 795.72,
+   "fine": 795.96,
+   "durata": 0.24,
    "tipo": "interna",
    "dopo": "informazioni,",
    "prima_di": "clicca"
   },
   {
-   "inizio": 796.47,
-   "fine": 796.85,
-   "durata": 0.38,
+   "inizio": 796.7,
+   "fine": 796.9,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "sotto,",
    "prima_di": "ti"
   },
   {
-   "inizio": 800.35,
-   "fine": 800.43,
-   "durata": 0.08,
+   "inizio": 800.4,
+   "fine": 800.5,
+   "durata": 0.1,
    "tipo": "interna",
-   "dopo": "'Operator.",
-   "prima_di": "Chiaramente"
+   "dopo": "Operator,",
+   "prima_di": "chiaramente"
   },
   {
-   "inizio": 808.59,
+   "inizio": 802.42,
+   "fine": 802.62,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "Operator,",
+   "prima_di": "puoi"
+  },
+  {
+   "inizio": 805.58,
+   "fine": 805.78,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "euro.",
+   "prima_di": "Clicca"
+  },
+  {
+   "inizio": 808.64,
    "fine": 808.73,
-   "durata": 0.13,
+   "durata": 0.09,
    "tipo": "coda"
   }
  ],
@@ -2373,49 +2789,33 @@
  "loudness": {
   "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
   "campioni": 8087,
-  "mediana_segmenti_LUFS_M": -21.7,
+  "mediana_segmenti_LUFS_M": -21.6,
   "picco_momentaneo_LUFS_M": -11.1,
   "picco_a_secondo": 8.7,
   "sopra_mediana_3LU": [
    {
-    "i": 2,
-    "inizio": 8.12,
-    "fine": 9.34,
-    "LUFS_M": -15.2,
-    "delta_LU": 6.5,
-    "testo": "E' totale pausa"
+    "i": 4,
+    "inizio": 26.25,
+    "fine": 30.47,
+    "LUFS_M": -17.2,
+    "delta_LU": 4.4,
+    "testo": "Permi tutti, fai un respiro. Adesso cambia tutto a tutti, che gli hanno appena lanciato!"
    },
    {
-    "i": 3,
-    "inizio": 9.34,
-    "fine": 11.44,
-    "LUFS_M": -17.9,
-    "delta_LU": 3.8,
-    "testo": "Assieme disperate dall'implementare le AI"
-   },
-   {
-    "i": 8,
-    "inizio": 23.86,
-    "fine": 26.1,
+    "i": 18,
+    "inizio": 80.88,
+    "fine": 83.78,
     "LUFS_M": -18.6,
-    "delta_LU": 3.1,
-    "testo": "WIFE, King Armageddon"
+    "delta_LU": 3.0,
+    "testo": "Chi è che vince? Chi ha Domain Knowledge?"
    },
    {
-    "i": 9,
-    "inizio": 26.1,
-    "fine": 27.82,
-    "LUFS_M": -18.5,
-    "delta_LU": 3.2,
-    "testo": "Fermi tutti, fai un respiro"
-   },
-   {
-    "i": 10,
-    "inizio": 27.82,
-    "fine": 30.46,
-    "LUFS_M": -16.3,
-    "delta_LU": 5.4,
-    "testo": "Adesso cambia tutta a tutti, che gli hanno appena lanciati!"
+    "i": 25,
+    "inizio": 98.52,
+    "fine": 99.32,
+    "LUFS_M": -15.4,
+    "delta_LU": 6.2,
+    "testo": "Domain Knowledge."
    }
   ],
   "profilo_per_secondo": [

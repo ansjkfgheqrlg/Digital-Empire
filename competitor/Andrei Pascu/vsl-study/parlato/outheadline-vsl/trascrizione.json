@@ -1,749 +1,694 @@
 {
  "slug": "outheadline-vsl",
- "strumento": "faster-whisper small, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "strumento": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
  "lingua": "it",
- "lingua_probabilita": null,
+ "lingua_probabilita": 1,
  "durata_video_s": 46.25,
  "segmenti": [
   {
    "i": 0,
    "inizio": 0.0,
-   "fine": 5.5,
-   "durata": 5.5,
-   "testo": "Hai creato un contenuto di vendita, copy, design, eccetera, ma nell'oceano di altri contenuti",
+   "fine": 8.14,
+   "durata": 8.14,
+   "testo": "Hai creato un contenuto di vendita, copy, design, eccetera, ma nell'oceano di altri contenuti che vendono lo stesso prodotto, ti differenzi?",
    "parole": [
     {
      "p": "Hai",
      "inizio": 0.0,
-     "fine": 0.2
+     "fine": 0.26
     },
     {
      "p": "creato",
-     "inizio": 0.2,
-     "fine": 0.62
+     "inizio": 0.26,
+     "fine": 0.7
     },
     {
      "p": "un",
-     "inizio": 0.62,
-     "fine": 0.76
+     "inizio": 0.7,
+     "fine": 0.98
     },
     {
      "p": "contenuto",
-     "inizio": 0.76,
-     "fine": 1.24
+     "inizio": 0.98,
+     "fine": 1.34
     },
     {
      "p": "di",
-     "inizio": 1.24,
-     "fine": 1.4
+     "inizio": 1.34,
+     "fine": 1.5
     },
     {
      "p": "vendita,",
-     "inizio": 1.4,
-     "fine": 1.88
+     "inizio": 1.5,
+     "fine": 2.02
     },
     {
      "p": "copy,",
-     "inizio": 2.06,
-     "fine": 2.36
+     "inizio": 2.3,
+     "fine": 2.46
     },
     {
      "p": "design,",
-     "inizio": 2.56,
-     "fine": 3.0
+     "inizio": 2.7,
+     "fine": 3.18
     },
     {
      "p": "eccetera,",
-     "inizio": 3.22,
-     "fine": 3.72
+     "inizio": 3.46,
+     "fine": 3.78
     },
     {
      "p": "ma",
-     "inizio": 3.74,
-     "fine": 3.8
+     "inizio": 3.78,
+     "fine": 3.98
     },
     {
      "p": "nell",
-     "inizio": 3.8,
-     "fine": 4.06
+     "inizio": 3.98,
+     "fine": 4.14
     },
     {
      "p": "'oceano",
-     "inizio": 4.06,
-     "fine": 4.5
+     "inizio": 4.14,
+     "fine": 4.6
     },
     {
      "p": "di",
-     "inizio": 4.5,
-     "fine": 4.68
+     "inizio": 4.6,
+     "fine": 4.84
     },
     {
      "p": "altri",
-     "inizio": 4.68,
-     "fine": 4.88
+     "inizio": 4.84,
+     "fine": 5.08
     },
     {
      "p": "contenuti",
-     "inizio": 4.88,
-     "fine": 5.5
-    }
-   ],
-   "loudness_M_media": -21.6
-  },
-  {
-   "i": 1,
-   "inizio": 5.5,
-   "fine": 7.9,
-   "durata": 2.4,
-   "testo": "che vendono lo stesso prodotto, ti differenzi?",
-   "parole": [
+     "inizio": 5.08,
+     "fine": 5.56
+    },
     {
      "p": "che",
-     "inizio": 5.5,
-     "fine": 5.66
+     "inizio": 5.56,
+     "fine": 5.82
     },
     {
      "p": "vendono",
-     "inizio": 5.66,
-     "fine": 6.04
+     "inizio": 5.82,
+     "fine": 6.12
     },
     {
      "p": "lo",
-     "inizio": 6.04,
-     "fine": 6.2
+     "inizio": 6.12,
+     "fine": 6.36
     },
     {
      "p": "stesso",
-     "inizio": 6.2,
-     "fine": 6.42
+     "inizio": 6.36,
+     "fine": 6.64
     },
     {
      "p": "prodotto,",
-     "inizio": 6.42,
-     "fine": 7.06
+     "inizio": 6.64,
+     "fine": 7.14
     },
     {
      "p": "ti",
-     "inizio": 7.16,
-     "fine": 7.26
+     "inizio": 7.24,
+     "fine": 7.38
     },
     {
      "p": "differenzi?",
-     "inizio": 7.26,
-     "fine": 7.9
+     "inizio": 7.38,
+     "fine": 8.14
+    }
+   ],
+   "loudness_M_media": -21.1
+  },
+  {
+   "i": 1,
+   "inizio": 9.09,
+   "fine": 16.51,
+   "durata": 7.42,
+   "testo": "Probabilmente no. E no, non sto parlando solamente del design, sto parlando proprio del testo. La maggior parte dei testi di vendita sono",
+   "parole": [
+    {
+     "p": "Probabilmente",
+     "inizio": 9.09,
+     "fine": 9.63
+    },
+    {
+     "p": "no.",
+     "inizio": 9.63,
+     "fine": 9.97
+    },
+    {
+     "p": "E",
+     "inizio": 10.25,
+     "fine": 10.37
+    },
+    {
+     "p": "no,",
+     "inizio": 10.37,
+     "fine": 10.63
+    },
+    {
+     "p": "non",
+     "inizio": 10.79,
+     "fine": 10.97
+    },
+    {
+     "p": "sto",
+     "inizio": 10.97,
+     "fine": 11.15
+    },
+    {
+     "p": "parlando",
+     "inizio": 11.15,
+     "fine": 11.55
+    },
+    {
+     "p": "solamente",
+     "inizio": 11.55,
+     "fine": 11.95
+    },
+    {
+     "p": "del",
+     "inizio": 11.95,
+     "fine": 12.19
+    },
+    {
+     "p": "design,",
+     "inizio": 12.19,
+     "fine": 12.69
+    },
+    {
+     "p": "sto",
+     "inizio": 12.87,
+     "fine": 12.99
+    },
+    {
+     "p": "parlando",
+     "inizio": 12.99,
+     "fine": 13.39
+    },
+    {
+     "p": "proprio",
+     "inizio": 13.39,
+     "fine": 13.69
+    },
+    {
+     "p": "del",
+     "inizio": 13.69,
+     "fine": 13.97
+    },
+    {
+     "p": "testo.",
+     "inizio": 13.97,
+     "fine": 14.49
+    },
+    {
+     "p": "La",
+     "inizio": 14.55,
+     "fine": 14.63
+    },
+    {
+     "p": "maggior",
+     "inizio": 14.63,
+     "fine": 14.97
+    },
+    {
+     "p": "parte",
+     "inizio": 14.97,
+     "fine": 15.19
+    },
+    {
+     "p": "dei",
+     "inizio": 15.19,
+     "fine": 15.33
+    },
+    {
+     "p": "testi",
+     "inizio": 15.33,
+     "fine": 15.65
+    },
+    {
+     "p": "di",
+     "inizio": 15.65,
+     "fine": 15.75
+    },
+    {
+     "p": "vendita",
+     "inizio": 15.75,
+     "fine": 16.13
+    },
+    {
+     "p": "sono",
+     "inizio": 16.13,
+     "fine": 16.51
     }
    ],
    "loudness_M_media": -19.5
   },
   {
    "i": 2,
-   "inizio": 9.01,
-   "fine": 9.79,
-   "durata": 0.78,
-   "testo": "Probabilmente no.",
+   "inizio": 16.51,
+   "fine": 21.91,
+   "durata": 5.4,
+   "testo": "ok, non pessimi, non eccezionali, ok. E penso, tu sappia benissimo che ok",
    "parole": [
-    {
-     "p": "Probabilmente",
-     "inizio": 9.01,
-     "fine": 9.53
-    },
-    {
-     "p": "no.",
-     "inizio": 9.53,
-     "fine": 9.79
-    }
-   ],
-   "loudness_M_media": -14.2
-  },
-  {
-   "i": 3,
-   "inizio": 10.09,
-   "fine": 14.47,
-   "durata": 4.38,
-   "testo": "E no, non sto parlando solamente del design, sto parlando proprio del testo.",
-   "parole": [
-    {
-     "p": "E",
-     "inizio": 10.09,
-     "fine": 10.27
-    },
-    {
-     "p": "no,",
-     "inizio": 10.27,
-     "fine": 10.49
-    },
-    {
-     "p": "non",
-     "inizio": 10.71,
-     "fine": 10.85
-    },
-    {
-     "p": "sto",
-     "inizio": 10.85,
-     "fine": 11.05
-    },
-    {
-     "p": "parlando",
-     "inizio": 11.05,
-     "fine": 11.43
-    },
-    {
-     "p": "solamente",
-     "inizio": 11.43,
-     "fine": 11.69
-    },
-    {
-     "p": "del",
-     "inizio": 11.69,
-     "fine": 12.13
-    },
-    {
-     "p": "design,",
-     "inizio": 12.13,
-     "fine": 12.51
-    },
-    {
-     "p": "sto",
-     "inizio": 12.77,
-     "fine": 12.93
-    },
-    {
-     "p": "parlando",
-     "inizio": 12.93,
-     "fine": 13.27
-    },
-    {
-     "p": "proprio",
-     "inizio": 13.27,
-     "fine": 13.55
-    },
-    {
-     "p": "del",
-     "inizio": 13.55,
-     "fine": 13.83
-    },
-    {
-     "p": "testo.",
-     "inizio": 13.83,
-     "fine": 14.47
-    }
-   ],
-   "loudness_M_media": -20.6
-  },
-  {
-   "i": 4,
-   "inizio": 14.51,
-   "fine": 19.43,
-   "durata": 4.92,
-   "testo": "La maggior parte dei testi di vendita sono ok, non pessimi, non eccezionali, ok.",
-   "parole": [
-    {
-     "p": "La",
-     "inizio": 14.51,
-     "fine": 14.57
-    },
-    {
-     "p": "maggior",
-     "inizio": 14.57,
-     "fine": 14.85
-    },
-    {
-     "p": "parte",
-     "inizio": 14.85,
-     "fine": 15.09
-    },
-    {
-     "p": "dei",
-     "inizio": 15.09,
-     "fine": 15.29
-    },
-    {
-     "p": "testi",
-     "inizio": 15.29,
-     "fine": 15.59
-    },
-    {
-     "p": "di",
-     "inizio": 15.59,
-     "fine": 15.65
-    },
-    {
-     "p": "vendita",
-     "inizio": 15.65,
-     "fine": 16.01
-    },
-    {
-     "p": "sono",
-     "inizio": 16.01,
-     "fine": 16.29
-    },
     {
      "p": "ok,",
-     "inizio": 16.29,
-     "fine": 17.05
+     "inizio": 16.51,
+     "fine": 17.29
     },
     {
      "p": "non",
-     "inizio": 17.41,
-     "fine": 17.51
+     "inizio": 17.47,
+     "fine": 17.65
     },
     {
      "p": "pessimi,",
-     "inizio": 17.51,
+     "inizio": 17.65,
      "fine": 18.07
     },
     {
      "p": "non",
-     "inizio": 18.11,
-     "fine": 18.19
+     "inizio": 18.15,
+     "fine": 18.25
     },
     {
      "p": "eccezionali,",
-     "inizio": 18.19,
-     "fine": 18.93
+     "inizio": 18.25,
+     "fine": 19.07
     },
     {
      "p": "ok.",
-     "inizio": 19.09,
-     "fine": 19.43
-    }
-   ],
-   "loudness_M_media": -19.4
-  },
-  {
-   "i": 5,
-   "inizio": 19.71,
-   "fine": 24.49,
-   "durata": 4.78,
-   "testo": "E penso tu sappia benissimo che ok non basta se vuoi vendere ad alti livelli qualsiasi",
-   "parole": [
-    {
-     "p": "E",
-     "inizio": 19.71,
-     "fine": 19.79
+     "inizio": 19.21,
+     "fine": 19.63
     },
     {
-     "p": "penso",
-     "inizio": 19.79,
-     "fine": 20.01
+     "p": "E",
+     "inizio": 19.77,
+     "fine": 19.91
+    },
+    {
+     "p": "penso,",
+     "inizio": 19.91,
+     "fine": 20.07
     },
     {
      "p": "tu",
-     "inizio": 20.01,
-     "fine": 20.21
+     "inizio": 20.21,
+     "fine": 20.27
     },
     {
      "p": "sappia",
-     "inizio": 20.21,
-     "fine": 20.39
+     "inizio": 20.27,
+     "fine": 20.51
     },
     {
      "p": "benissimo",
-     "inizio": 20.39,
-     "fine": 20.83
+     "inizio": 20.51,
+     "fine": 20.95
     },
     {
      "p": "che",
-     "inizio": 20.83,
-     "fine": 21.07
+     "inizio": 20.95,
+     "fine": 21.21
     },
     {
      "p": "ok",
-     "inizio": 21.07,
-     "fine": 21.69
-    },
+     "inizio": 21.21,
+     "fine": 21.91
+    }
+   ],
+   "loudness_M_media": -19.3
+  },
+  {
+   "i": 3,
+   "inizio": 21.91,
+   "fine": 28.37,
+   "durata": 6.46,
+   "testo": "non basta se vuoi vendere ad alti livelli qualsiasi prodotto servizio. Per vincere la guerra del marketing serve attirare l'attenzione",
+   "parole": [
     {
      "p": "non",
-     "inizio": 21.69,
-     "fine": 22.11
+     "inizio": 21.91,
+     "fine": 22.23
     },
     {
      "p": "basta",
-     "inizio": 22.11,
-     "fine": 22.43
+     "inizio": 22.23,
+     "fine": 22.57
     },
     {
      "p": "se",
-     "inizio": 22.43,
-     "fine": 22.67
+     "inizio": 22.57,
+     "fine": 22.73
     },
     {
      "p": "vuoi",
-     "inizio": 22.67,
-     "fine": 22.83
+     "inizio": 22.73,
+     "fine": 22.85
     },
     {
      "p": "vendere",
-     "inizio": 22.83,
-     "fine": 23.17
+     "inizio": 22.85,
+     "fine": 23.21
     },
     {
      "p": "ad",
-     "inizio": 23.17,
-     "fine": 23.29
+     "inizio": 23.21,
+     "fine": 23.39
     },
     {
      "p": "alti",
-     "inizio": 23.29,
-     "fine": 23.47
+     "inizio": 23.39,
+     "fine": 23.63
     },
     {
      "p": "livelli",
-     "inizio": 23.47,
-     "fine": 23.91
+     "inizio": 23.63,
+     "fine": 23.99
     },
     {
      "p": "qualsiasi",
-     "inizio": 23.91,
-     "fine": 24.49
-    }
-   ],
-   "loudness_M_media": -18.6
-  },
-  {
-   "i": 6,
-   "inizio": 24.49,
-   "fine": 25.43,
-   "durata": 0.94,
-   "testo": "prodotto o servizio.",
-   "parole": [
-    {
-     "p": "prodotto",
-     "inizio": 24.49,
-     "fine": 24.89
+     "inizio": 23.99,
+     "fine": 24.71
     },
     {
-     "p": "o",
-     "inizio": 24.89,
-     "fine": 24.97
+     "p": "prodotto",
+     "inizio": 24.71,
+     "fine": 25.03
     },
     {
      "p": "servizio.",
-     "inizio": 24.97,
-     "fine": 25.43
-    }
-   ],
-   "loudness_M_media": -21.3
-  },
-  {
-   "i": 7,
-   "inizio": 25.47,
-   "fine": 29.25,
-   "durata": 3.78,
-   "testo": "Per vincere la guerra del marketing serve a tirare l'attenzione, subito, sempre.",
-   "parole": [
+     "inizio": 25.03,
+     "fine": 25.45
+    },
     {
      "p": "Per",
-     "inizio": 25.47,
-     "fine": 25.57
+     "inizio": 25.49,
+     "fine": 25.61
     },
     {
      "p": "vincere",
-     "inizio": 25.57,
-     "fine": 25.93
+     "inizio": 25.61,
+     "fine": 26.05
     },
     {
      "p": "la",
-     "inizio": 25.93,
-     "fine": 26.11
+     "inizio": 26.05,
+     "fine": 26.17
     },
     {
      "p": "guerra",
-     "inizio": 26.11,
-     "fine": 26.25
+     "inizio": 26.17,
+     "fine": 26.33
     },
     {
      "p": "del",
-     "inizio": 26.25,
-     "fine": 26.45
+     "inizio": 26.33,
+     "fine": 26.53
     },
     {
      "p": "marketing",
-     "inizio": 26.45,
-     "fine": 26.77
+     "inizio": 26.53,
+     "fine": 26.93
     },
     {
      "p": "serve",
-     "inizio": 26.77,
-     "fine": 27.13
+     "inizio": 26.93,
+     "fine": 27.23
     },
     {
-     "p": "a",
-     "inizio": 27.13,
-     "fine": 27.31
-    },
-    {
-     "p": "tirare",
-     "inizio": 27.31,
-     "fine": 27.57
+     "p": "attirare",
+     "inizio": 27.23,
+     "fine": 27.69
     },
     {
      "p": "l",
-     "inizio": 27.57,
-     "fine": 27.71
+     "inizio": 27.69,
+     "fine": 27.77
     },
     {
-     "p": "'attenzione,",
-     "inizio": 27.71,
-     "fine": 28.19
-    },
-    {
-     "p": "subito,",
-     "inizio": 28.33,
-     "fine": 28.85
-    },
-    {
-     "p": "sempre.",
-     "inizio": 28.93,
-     "fine": 29.25
+     "p": "'attenzione",
+     "inizio": 27.77,
+     "fine": 28.37
     }
    ],
-   "loudness_M_media": -19.2
+   "loudness_M_media": -19.3
   },
   {
-   "i": 8,
-   "inizio": 29.25,
-   "fine": 36.99,
-   "durata": 7.74,
-   "testo": "Per quello devi saper scrivere headline eccezionali, non ok. Ok, nel 2024, non basta.",
+   "i": 4,
+   "inizio": 28.37,
+   "fine": 36.71,
+   "durata": 8.34,
+   "testo": "subito sempre per quello devi saper scrivere headline eccezionali non ok ok nel 2024 non",
    "parole": [
     {
-     "p": "Per",
-     "inizio": 29.25,
-     "fine": 29.59
+     "p": "subito",
+     "inizio": 28.37,
+     "fine": 28.95
     },
     {
-     "p": "quello",
-     "inizio": 29.59,
-     "fine": 29.91
-    },
-    {
-     "p": "devi",
-     "inizio": 29.91,
-     "fine": 30.11
-    },
-    {
-     "p": "saper",
-     "inizio": 30.11,
-     "fine": 30.39
-    },
-    {
-     "p": "scrivere",
-     "inizio": 30.39,
-     "fine": 30.79
-    },
-    {
-     "p": "headline",
-     "inizio": 30.79,
-     "fine": 31.25
-    },
-    {
-     "p": "eccezionali,",
-     "inizio": 31.25,
-     "fine": 32.73
-    },
-    {
-     "p": "non",
-     "inizio": 32.77,
-     "fine": 33.03
-    },
-    {
-     "p": "ok.",
-     "inizio": 33.03,
-     "fine": 34.07
-    },
-    {
-     "p": "Ok,",
-     "inizio": 34.37,
-     "fine": 34.77
-    },
-    {
-     "p": "nel",
-     "inizio": 35.09,
-     "fine": 35.19
-    },
-    {
-     "p": "2024,",
-     "inizio": 35.19,
-     "fine": 35.87
-    },
-    {
-     "p": "non",
-     "inizio": 36.43,
-     "fine": 36.59
-    },
-    {
-     "p": "basta.",
-     "inizio": 36.59,
-     "fine": 36.99
-    }
-   ],
-   "loudness_M_media": -19.8
-  },
-  {
-   "i": 9,
-   "inizio": 37.25,
-   "fine": 42.81,
-   "durata": 5.56,
-   "testo": "Ho deciso di rivoluzionare una volta per tutte il tuo modo di scrivere headline se sei un copywriter.",
-   "parole": [
-    {
-     "p": "Ho",
-     "inizio": 37.25,
-     "fine": 37.33
-    },
-    {
-     "p": "deciso",
-     "inizio": 37.33,
-     "fine": 37.77
-    },
-    {
-     "p": "di",
-     "inizio": 37.77,
-     "fine": 37.87
-    },
-    {
-     "p": "rivoluzionare",
-     "inizio": 37.87,
-     "fine": 38.71
-    },
-    {
-     "p": "una",
-     "inizio": 38.71,
-     "fine": 38.89
-    },
-    {
-     "p": "volta",
-     "inizio": 38.89,
-     "fine": 39.15
+     "p": "sempre",
+     "inizio": 28.95,
+     "fine": 29.37
     },
     {
      "p": "per",
-     "inizio": 39.15,
-     "fine": 39.39
+     "inizio": 29.37,
+     "fine": 29.75
     },
     {
-     "p": "tutte",
-     "inizio": 39.39,
-     "fine": 39.75
+     "p": "quello",
+     "inizio": 29.75,
+     "fine": 29.99
     },
     {
-     "p": "il",
-     "inizio": 39.75,
-     "fine": 40.09
+     "p": "devi",
+     "inizio": 29.99,
+     "fine": 30.19
     },
     {
-     "p": "tuo",
-     "inizio": 40.09,
-     "fine": 40.27
-    },
-    {
-     "p": "modo",
-     "inizio": 40.27,
-     "fine": 40.53
-    },
-    {
-     "p": "di",
-     "inizio": 40.53,
-     "fine": 40.67
+     "p": "saper",
+     "inizio": 30.19,
+     "fine": 30.53
     },
     {
      "p": "scrivere",
-     "inizio": 40.67,
-     "fine": 41.05
+     "inizio": 30.53,
+     "fine": 30.89
     },
     {
      "p": "headline",
-     "inizio": 41.05,
-     "fine": 41.63
+     "inizio": 30.89,
+     "fine": 31.45
     },
     {
-     "p": "se",
-     "inizio": 41.63,
-     "fine": 42.03
-    },
-    {
-     "p": "sei",
-     "inizio": 42.03,
-     "fine": 42.21
-    },
-    {
-     "p": "un",
-     "inizio": 42.21,
-     "fine": 42.31
-    },
-    {
-     "p": "copywriter.",
-     "inizio": 42.31,
-     "fine": 42.81
-    }
-   ],
-   "loudness_M_media": -20.5
-  },
-  {
-   "i": 10,
-   "inizio": 42.99,
-   "fine": 46.09,
-   "durata": 3.1,
-   "testo": "Reggi i contenuti qui sotto, potresti pentirtene se non lo fai.",
-   "parole": [
-    {
-     "p": "Reggi",
-     "inizio": 42.99,
-     "fine": 43.27
-    },
-    {
-     "p": "i",
-     "inizio": 43.27,
-     "fine": 43.29
-    },
-    {
-     "p": "contenuti",
-     "inizio": 43.29,
-     "fine": 43.71
-    },
-    {
-     "p": "qui",
-     "inizio": 43.71,
-     "fine": 43.85
-    },
-    {
-     "p": "sotto,",
-     "inizio": 43.85,
-     "fine": 44.21
-    },
-    {
-     "p": "potresti",
-     "inizio": 44.47,
-     "fine": 44.95
-    },
-    {
-     "p": "pentirtene",
-     "inizio": 44.95,
-     "fine": 45.51
-    },
-    {
-     "p": "se",
-     "inizio": 45.51,
-     "fine": 45.61
+     "p": "eccezionali",
+     "inizio": 31.45,
+     "fine": 32.89
     },
     {
      "p": "non",
-     "inizio": 45.61,
+     "inizio": 32.89,
+     "fine": 33.61
+    },
+    {
+     "p": "ok",
+     "inizio": 33.61,
+     "fine": 34.33
+    },
+    {
+     "p": "ok",
+     "inizio": 34.33,
+     "fine": 35.11
+    },
+    {
+     "p": "nel",
+     "inizio": 35.11,
+     "fine": 35.29
+    },
+    {
+     "p": "2024",
+     "inizio": 35.29,
+     "fine": 36.11
+    },
+    {
+     "p": "non",
+     "inizio": 36.11,
+     "fine": 36.71
+    }
+   ],
+   "loudness_M_media": -19.6
+  },
+  {
+   "i": 5,
+   "inizio": 36.71,
+   "fine": 41.77,
+   "durata": 5.06,
+   "testo": "basta ho deciso di rivoluzionare una volta per tutte il tuo modo di scrivere headline",
+   "parole": [
+    {
+     "p": "basta",
+     "inizio": 36.71,
+     "fine": 37.13
+    },
+    {
+     "p": "ho",
+     "inizio": 37.13,
+     "fine": 37.45
+    },
+    {
+     "p": "deciso",
+     "inizio": 37.45,
+     "fine": 37.85
+    },
+    {
+     "p": "di",
+     "inizio": 37.85,
+     "fine": 38.05
+    },
+    {
+     "p": "rivoluzionare",
+     "inizio": 38.05,
+     "fine": 38.81
+    },
+    {
+     "p": "una",
+     "inizio": 38.81,
+     "fine": 39.01
+    },
+    {
+     "p": "volta",
+     "inizio": 39.01,
+     "fine": 39.23
+    },
+    {
+     "p": "per",
+     "inizio": 39.23,
+     "fine": 39.61
+    },
+    {
+     "p": "tutte",
+     "inizio": 39.61,
+     "fine": 39.87
+    },
+    {
+     "p": "il",
+     "inizio": 39.87,
+     "fine": 40.25
+    },
+    {
+     "p": "tuo",
+     "inizio": 40.25,
+     "fine": 40.35
+    },
+    {
+     "p": "modo",
+     "inizio": 40.35,
+     "fine": 40.59
+    },
+    {
+     "p": "di",
+     "inizio": 40.59,
+     "fine": 40.87
+    },
+    {
+     "p": "scrivere",
+     "inizio": 40.87,
+     "fine": 41.15
+    },
+    {
+     "p": "headline",
+     "inizio": 41.15,
+     "fine": 41.77
+    }
+   ],
+   "loudness_M_media": -20.4
+  },
+  {
+   "i": 6,
+   "inizio": 41.77,
+   "fine": 46.17,
+   "durata": 4.4,
+   "testo": "se sei un copyrighter leggi contenuti qui sotto potresti pentirtene se non lo fai",
+   "parole": [
+    {
+     "p": "se",
+     "inizio": 41.77,
+     "fine": 42.13
+    },
+    {
+     "p": "sei",
+     "inizio": 42.13,
+     "fine": 42.25
+    },
+    {
+     "p": "un",
+     "inizio": 42.25,
+     "fine": 42.39
+    },
+    {
+     "p": "copyrighter",
+     "inizio": 42.39,
+     "fine": 43.01
+    },
+    {
+     "p": "leggi",
+     "inizio": 43.01,
+     "fine": 43.39
+    },
+    {
+     "p": "contenuti",
+     "inizio": 43.39,
+     "fine": 43.81
+    },
+    {
+     "p": "qui",
+     "inizio": 43.81,
+     "fine": 44.03
+    },
+    {
+     "p": "sotto",
+     "inizio": 44.03,
+     "fine": 44.41
+    },
+    {
+     "p": "potresti",
+     "inizio": 44.41,
+     "fine": 45.05
+    },
+    {
+     "p": "pentirtene",
+     "inizio": 45.05,
+     "fine": 45.57
+    },
+    {
+     "p": "se",
+     "inizio": 45.57,
      "fine": 45.71
     },
     {
-     "p": "lo",
+     "p": "non",
      "inizio": 45.71,
-     "fine": 45.83
+     "fine": 45.79
     },
     {
-     "p": "fai.",
-     "inizio": 45.83,
-     "fine": 46.09
+     "p": "lo",
+     "inizio": 45.79,
+     "fine": 45.95
+    },
+    {
+     "p": "fai",
+     "inizio": 45.95,
+     "fine": 46.17
     }
    ],
-   "loudness_M_media": -21.1
+   "loudness_M_media": -21.3
   }
  ]
 }

@@ -1,0 +1,744 @@
+{
+ "lotto": 2,
+ "totale": 123,
+ "atomi": [
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-201",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il piano generato da Claude Code per il documento di riferimento vapi.md lo struttura in 12 sezioni: Overview, Quick Reference API, Assistente, Voice Providers, Transcriber, Tools (4 categorie: Default/Custom/Code/MCP), Telefono, Squads, Server URL & Webhook, MCP, Prompt Template, Checklist creazione agente."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-202",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "I webhook di VAPI (Server URL) gestiscono 19 tipi di eventi diversi durante una chiamata, con un vincolo di tempo critico: l'evento \"assistant-request\" deve ricevere risposta entro 7,5 secondi."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-203",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il documento vapi.md generato definisce sei concetti chiave della piattaforma: Assistant (un singolo agente vocale con prompt/voce/modello/tool), Squad (più assistenti specializzati che si passano la chiamata), Tool (funzione richiamabile durante la conversazione), Phone Number (numero collegato per chiamate inbound/outbound), Server URL (endpoint webhook per eventi in tempo reale), e Call (una singola sessione vocale, telefonica o web)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-204",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Tra le caratteristiche dichiarate di VAPI nella propria documentazione: latenza sotto i 600 millisecondi, gestione naturale del turn-taking (incluse le interruzioni), chiamate telefoniche sia inbound che outbound, un widget web per l'embedding in app, e integrazione con API/database tramite tool."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-205",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Quando manca una credenziale necessaria (es. una API key non trovata nel file .env), un agente ben progettato come Claude Code non blocca silenziosamente né la inventa: pone esplicitamente una domanda strutturata all'utente con opzioni chiare (es. \"la fornisco ora\" / \"la aggiungo io al .env\") prima di proseguire."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-206",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "VAPI distingue due tipi di API key nella sezione \"API Keys\" della dashboard: la Private API Key (accesso server-side, usata per chiamate dirette all'API come la creazione di un assistente) e la Public API Key (accesso client-side per SDK, configurabile con restrizioni su domini, assistenti consentiti e assistenti transient)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-207",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Claude Code può creare un assistente VAPI interamente via API, senza passare dalla dashboard: esegue una richiesta curl POST a https://api.vapi.ai/assistant con header \"Authorization: Bearer <private key>\" e un body JSON di configurazione, ottenendo in risposta l'id univoco del nuovo assistente creato."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-208",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Configurazione concreta scelta in autonomia da Claude Code per un agente vocale italiano di prova: modello linguistico GPT-4o (OpenAI), voce ElevenLabs \"Sarah\" (modello multilingual v2, con supporto italiano), transcriber Deepgram nova-3 con lingua impostata su \"it\" ed endpointing a 300ms."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-209",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Un buon system prompt per agente vocale prevede risposte pronte per la gestione degli errori conversazionali: una frase per quando non si capisce l'utente (\"Scusa, non ho sentito bene. Puoi ripetere?\") e una per il silenzio prolungato (\"Ehi, sei ancora lì?\"), oltre a parole di riempimento naturali come \"certo\", \"capito\", \"nessun problema\" per suonare meno robotico."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-210",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Un assistente VAPI di prova configurato con GPT-4o Cluster, voce ElevenLabs Sarah e transcriber Deepgram mostra nella dashboard un costo dichiarato di circa $0,12 al minuto e una latenza dichiarata di circa 2000 millisecondi."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-211",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Testare un agente vocale con una chiamata reale subito dopo averlo creato permette di scoprire in diretta difetti percepibili non evidenti dalla sola configurazione, come una latenza di circa due secondi giudicata \"lentissima\" o un tono di voce giudicato \"un po' robotico\"."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-212",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Quando si chiede a Claude Code di creare un singolo agente/assistente, conviene specificare esplicitamente di non creare anche un workflow collegato (se non richiesto) e verificare che il piano proposto non lo includa comunque, perché capita che l'agente aggiunga un workflow non richiesto espandendo eccessivamente lo scope del compito."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-213",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Dopo un primo giro di ottimizzazione (cambio di modello LLM e di voce), lo stesso assistente vocale di prova passa da un costo di ~$0,12/min e una latenza di ~2000ms a un costo di ~$0,11/min e una latenza di ~665ms."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-214",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Per ridurre latenza e \"roboticità\" di un assistente vocale VAPI già pubblicato, Claude Code applica una PATCH diretta via API (curl -X PATCH su /assistant/<id>) che cambia quattro parametri insieme: modello LLM da GPT-4o a GPT-4o-mini (risposta più rapida), modello voce ElevenLabs da eleven_multilingual_v2 a eleven_flash_v2_5 (ottimizzato per bassa latenza, supporta italiano), Stability da 0,5 a 0,3 (voce più espressiva e meno robotica), Similarity Boost da 0,75 a 0,85 (timbro più ricco e definito)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-215",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Tra i voice provider alternativi suggeriti da Claude Code per ridurre ulteriormente la latenza di un agente vocale, Cartesia viene indicato con una latenza dichiarata ultra-bassa di circa 100 millisecondi."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-216",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il file VOICE_AGENT.md viene scritto come guida operativa master per costruire un intero agente vocale end-to-end, organizzata in un \"WORKFLOW a 7 Step\": (1) Analizza la richiesta e carica la documentazione, (2) Crea il prompt dell'agente, (3) Configura l'agente, (4) Se serve un workflow apri N8N.md e usa MCP n8n, (5) Recupera il webhook URL dal nodo trigger, (6) Crea un tool nell'agente vocale che punta a quel webhook, (7) Collega il tool all'agente."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-217",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Quando un agente vocale deve anche eseguire un'azione esterna (es. prenotare qualcosa), il collegamento tra le due piattaforme (VAPI e n8n) avviene tramite webhook: si costruisce prima il workflow n8n, si recupera l'URL del suo webhook dal nodo trigger, poi si crea nell'agente vocale un tool che punta a quell'URL, e infine si collega il tool all'agente."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-218",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il template di prompt \"definitivo\" per un agente vocale (Sezione 11 di VAPI.md, richiamato da VOICE_AGENT.md) prevede dodici sezioni obbligatorie da compilare sempre tutte, senza saltarne nessuna: IDENTITÀ, STILE, LINEE GUIDA RISPOSTA, TASK, CONTESTO, RILEVAMENTO URGENZA, TIPI DI CHIAMANTE, TOOL, GUARDRAIL, GESTIONE ERRORI, ESEMPIO DI CONVERSAZIONE, NOTE."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-219",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Il prompt di un agente vocale, anche se segue un template rigido a sezioni fisse, deve suonare come una persona reale e non come un chatbot: la forma del contenuto (frasi corte, parole naturali, niente elenchi puntati) resta più importante della sola presenza delle sezioni."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-220",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "comando",
+   "testo": "Il comando \"/init\" dentro Claude Code analizza automaticamente l'intero progetto (file .md esistenti, file di configurazione, cartelle) e genera in autonomia il file CLAUDE.md alla radice, come alternativa più rapida a scrivere un mega-prompt manuale."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-221",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "avvertimento",
+   "testo": "Durante l'analisi automatica del progetto con /init, Claude Code può rilevare e segnalare da solo un problema di sicurezza reale non richiesto esplicitamente: nel caso osservato, una API key n8n presente in chiaro sia nel file .env sia in .claude/settings.json, con la raccomandazione di aggiungere .env a .gitignore e di sostituire la chiave in settings.json con un riferimento a variabile d'ambiente invece del valore diretto."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-222",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il file CLAUDE.md generato da /init per questo progetto si organizza in tre macro-sezioni: \"WHAT\" (cos'è il progetto, lo stack tecnico, la struttura dei file), \"HOW\" (come costruire un agente vocale, come funzionano i workflow n8n, i default di configurazione voce italiana), \"WHY\" (le insidie tecniche critiche da conoscere)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-223",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "avvertimento",
+   "testo": "Nei workflow n8n collegati a un webhook, i dati ricevuti si trovano nidificati sotto `$json.body.*` e non direttamente sotto `$json.*`: è indicato come l'errore più comune in assoluto quando si scrivono espressioni o codice che leggono l'input di un webhook."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-224",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "In n8n esiste una dualità nel formato dei nomi dei tipi di nodo (nodeType): i tool MCP di ricerca e validazione (search_nodes, validate_node) si aspettano il formato senza prefisso (es. `nodes-base.httpRequest`), mentre il JSON effettivo del workflow richiede il formato con prefisso (es. `n8n-nodes-base.httpRequest`); i nodi della famiglia LangChain usano invece sempre il formato `@n8n/n8n-nodes-langchain.*`."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-225",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Il nome di un tool dichiarato nel prompt di un agente vocale VAPI deve corrispondere esattamente (stessa stringa) al campo `function.name` nella configurazione del tool: una minima discrepanza tra i due produce un fallimento silenzioso, senza errori visibili."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-226",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Il template di prompt definito nella Sezione 11 di VAPI.md è obbligatorio: un agente che salta o abbrevia una delle sue sezioni produce una qualità conversazionale scadente."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-227",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Il file CLAUDE.md generato automaticamente da /init si apre sempre con una riga di intestazione standard che ne dichiara lo scopo: fornire indicazioni a Claude Code quando lavora con il codice in quel repository."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-228",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Quando si costruisce un agente vocale multi-funzione, conviene ragionare per sistemi separati: dividere il lavoro in workflow indipendenti, ciascuno con una task ben specifica, invece di un unico flusso che mischia tutto, perche' il modello lavora meglio con task lineari."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-229",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Un AI receptionist per una clinica si costruisce come 4 workflow separati: uno per il booking (prenotazione), uno per la cancellazione, uno per il rescheduling (spostamento) e uno per le FAQ."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-230",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "anti-pattern",
+   "testo": "Non inserire date fisse ('hard coded') nel prompt o nei workflow di un agente vocale, anche se servono come esempio momentaneo: a livello teorico vanno sempre sostituite con variabili dinamiche generate da VAPI/n8n, cosi' il sistema resta valido nel tempo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-231",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Per validare un agente vocale prima del rilascio, si usa la funzione di chat testuale interna all'API di VAPI: il sistema di sviluppo puo' 'parlare' direttamente con l'agente per testarne il comportamento in autonomia, senza bisogno di chiamate vocali reali."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-232",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "In un agente vocale destinato a un pubblico italiano, transcriber, voice model e LLM vanno impostati tutti in lingua italiana, per rendere l'intera pipeline il piu' efficiente possibile."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-233",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "L'ordine di lavoro corretto per costruire un agente vocale con questo stack e' creare prima l'agente in VAPI e solo successivamente costruire l'automazione che lo supporta in n8n."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-234",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Le informazioni aziendali di un cliente (servizi, orari, prezzi, regole) vengono raccolte in un unico documento PDF, caricato nel progetto con un nome descrittivo (es. 'conoscenza.pdf'), che serve da knowledge base per l'agente vocale."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-235",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Una knowledge base aziendale ben fatta si apre con una sezione introduttiva di identita' dell'attivita' (es. 'IDENTITA' DELLA CLINICA'), con i dati anagrafici essenziali organizzati in tabella."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-236",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "La sezione servizi di una knowledge base va organizzata per categoria operativa (es. per una clinica dentale: prevenzione e igiene, conservativa ed endodonzia, protesi, implantologia, ortodonzia, chirurgia orale, urgenze), ciascuna con un elenco puntato dei trattamenti offerti."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-237",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Una knowledge base caricata per un agente vocale deve essere collegata come tool interrogabile durante la conversazione ('pescato' a runtime), non semplicemente allegata come riferimento statico."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-238",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Per far agire un agente AI in autonomia, conviene dargli accesso diretto a una risorsa vuota (es. un foglio di calcolo) invece di inserire i dati manualmente al posto suo: cosi' l'agente puo' collegarsi da solo alla risorsa ed evitare di dover chiedere informazioni all'operatore."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-239",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Come CRM iniziale per un nuovo agente vocale si puo' usare un Google Sheet completamente vuoto, il cui link viene incollato direttamente nel prompt dato all'assistente di coding, lasciando che sia lui a strutturarlo e collegarlo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-240",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "L'accesso a un file esterno (es. un Google Sheet) va condiviso con l'agente/sistema solo nel momento in cui serve davvero, non lasciato aperto in anticipo senza motivo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-241",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Un prompt di avvio per un progetto complesso puo' nascere da una dettatura vocale lunga (nell'esempio circa 8 minuti) confluita in un unico messaggio monolitico inviato all'assistente di coding, contenente tutti i requisiti insieme invece di istruzioni separate."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-242",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Ricevuto un prompt complesso, un assistente di coding come Claude Code esplora autonomamente il filesystem del progetto (comandi find/glob) per individuare i file di documentazione gia' presenti, prima di iniziare a pianificare la soluzione."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-243",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Conviene investire tempo a spiegare un compito in modo estremamente dettagliato una volta sola all'inizio, piuttosto che darlo in modo incompleto e correggerlo molte volte in seguito: dieci minuti spesi bene battono sei ore ripetute per ventisette volte."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-244",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Prima di implementare un progetto complesso, un assistente di coding in 'plan mode' presenta prima un piano scritto da rivedere, con opzioni tipo 'accetta e auto-approva ogni modifica successiva', 'accetta ma approva ogni modifica manualmente' o 'continua a pianificare'."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-245",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "avvertimento",
+   "testo": "Durante lo sviluppo in diretta, aprire il file .env nell'editor puo' esporre in chiaro sullo schermo chiavi API reali (es. chiave privata e pubblica VAPI): un rischio di esposizione accidentale a cui prestare attenzione quando si condivide lo schermo o si registra."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-246",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Lo schema minimo di un Google Sheet usato come CRM per un agente vocale include colonne come nome, email, telefono, motivo_visita, dottore, data_appuntamento (formato italiano dd/MM/yyyy) e ora_appuntamento (formato 24 ore HH:mm)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-247",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il system prompt di un agente vocale professionale segue uno standard fisso di 12 sezioni obbligatorie: IDENTITA', STILE, LINEE GUIDA RISPOSTA, TASK, CONTESTO, RILEVAMENTO URGENZA, TIPI DI CHIAMANTE, TOOL, GUARDRAIL, GESTIONE ERRORI, ESEMPIO DI CONVERSAZIONE, NOTE."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-248",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Nello stile di un prompt vocale vanno imposte frasi corte, numeri scritti per esteso (mai cifre), nessun elenco puntato nella risposta parlata, e il divieto assoluto di dire 'sono un'intelligenza artificiale' o simili."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-249",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Le linee guida di risposta di un agente vocale devono limitare ogni turno a una sola domanda per volta e a un massimo di circa 15 parole, per restare naturale al telefono."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-250",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "I 4 flussi conversazionali di un AI receptionist hanno lunghezze diverse in base alla complessita': prenotazione 11 step, cancellazione 3 step, spostamento (rescheduling) 5 step, FAQ 4 step."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-251",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Nel prompt di un agente vocale si usa una variabile dinamica (es. {{now}}) per riferirsi sempre alla data/ora corrente della conversazione, invece di un valore fisso scritto nel testo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-252",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "La sezione di rilevamento urgenza del prompt vocale si basa su un elenco di parole chiave (nell'esempio 8) collegate a un protocollo di gestione strutturato in step (nell'esempio 5)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-253",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il prompt di un buon AI receptionist prevede la gestione esplicita di piu' profili tipici di chiamante (nell'esempio 8: chi chiede solo il prezzo, l'ansioso, l'anziano, chi ha dolore, chi chiede un consiglio medico, l'arrabbiato, il sospettoso, i genitori con bambini)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-254",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Un AI receptionist completo si appoggia su 5 tool con condizioni d'uso precise e non sovrapponibili: check_availability, book_appointment, cancel_appointment, reschedule_appointment, search_knowledge_base."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-255",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il prompt di un agente vocale deve avere una sezione guardrail dedicata (nell'esempio 8 regole) che vieta esplicitamente comportamenti rischiosi come inventare prezzi o prenotare senza conferma."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-256",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "La gestione errori di un agente vocale deve coprire piu' scenari tipici in modo esplicito (nell'esempio 6: non aver capito, silenzio del chiamante, errore del tool, slot pieno, paziente non trovato)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-257",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Una configurazione tipica per il modello linguistico di un agente vocale in produzione e' OpenAI gpt-4o con temperature 0.4, mostrato nella dashboard come 'GPT 4o Cluster'."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-258",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Una configurazione tipica per la voce di un agente vocale italiano e' ElevenLabs (11labs), voce femminile italiana, con parametri stability 0.5 e similarityBoost 0.75."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-259",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Ogni tool custom di tipo webhook in VAPI viene collegato a un workflow n8n dedicato tramite un Server URL specifico, e dichiara i campi obbligatori che deve ricevere (es. book_appointment richiede nome, motivo_visita, data_appuntamento, ora_appuntamento)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-260",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Ogni tool di un agente vocale dovrebbe avere messaggi dedicati per l'inizio dell'esecuzione e per il fallimento (request-start / request-failed), scritti come frasi naturali in italiano da pronunciare mentre il tool lavora."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-261",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "definizione",
+   "testo": "search_knowledge_base e' un tool nativo di VAPI (interrogazione diretta della knowledge base caricata), diverso concettualmente dagli altri tool che sono invece webhook custom verso workflow n8n esterni."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-262",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "avvertimento",
+   "testo": "Nella pianificazione di un AI receptionist telefonico va verificato che esista un modo per terminare esplicitamente la chiamata (tool end_call): la sua assenza in un piano generato automaticamente e' una lacuna reale da controllare sempre."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-263",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "L'ordine di esecuzione consigliato per costruire un AI receptionist e': configurare l'OAuth Google necessario, creare i tool custom in VAPI collegati ai webhook n8n, creare il tool knowledge base, creare l'assistant con prompt e tool collegati, poi eseguire un test autonomo via chat API e iterare sugli errori trovati."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-264",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Prima ancora di costruire i tool, conviene pianificare in anticipo una batteria di scenari di test concreti (nell'esempio 8: nuova prenotazione, domanda sui prezzi, urgenza, cancellazione, spostamento, giorno chiuso, orario non disponibile, domanda su convenzioni) per validare ogni funzionalita' una volta pronta."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-265",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Un assistente di coding come Claude Code offre piu' modalita' di autonomia selezionabili durante il lavoro: 'Ask before edits' (chiede conferma per ogni modifica), 'Edit automatically' (modifica da solo), 'Plan mode' (presenta un piano prima di agire), 'Bypass permissions' (nessuna richiesta di permesso), oltre a un controllo di livello di ragionamento ('Effort')."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-266",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Quando un passaggio richiede necessariamente un intervento umano che il sistema non puo' completare da solo (es. autorizzare un accesso OAuth), l'assistente di coding deve fermarsi e porre una domanda esplicita con opzioni chiare, invece di procedere alla cieca o inventare un dato."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-267",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Un assistente di coding traccia l'avanzamento di un lavoro multi-step con una todo list aggiornata in tempo reale: voci completate spuntate e barrate, la voce corrente evidenziata, le voci future ancora vuote."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-268",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Prima di iniziare un nuovo progetto su un account condiviso (es. VAPI o n8n), conviene verificare e mettere da parte le configurazioni residue di progetti precedenti, per non confonderle con quelle nuove durante lo sviluppo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-269",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "In n8n, ogni workflow nella lista mostra la data di creazione e il timestamp dell'ultimo aggiornamento, utile per distinguere a colpo d'occhio i workflow appena creati da quelli piu' vecchi (legacy)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-270",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "In n8n, collegare la credenziale Google OAuth2 su un singolo nodo di un workflow la rende automaticamente disponibile per tutti gli altri workflow dello stesso progetto, senza doverla ripetere."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-271",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Un assistente di coding puo' interrogare l'API REST di n8n (endpoint /api/v1/credentials, con API key) per elencare le credenziali gia' configurate, trovare l'id di quella corretta e assegnarla in automatico ai nodi di piu' workflow in parallelo, evitando il lavoro manuale ripetuto."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-272",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "avvertimento",
+   "testo": "Durante lo sviluppo dal vivo di un'integrazione con piu' servizi esterni, e' molto facile che segreti reali (chiavi API VAPI, API key n8n in formato JWT, id di Google Sheet, id di credenziali, id dell'assistant) compaiano in chiaro sullo schermo piu' volte: vanno sempre trattati come dati sensibili da non condividere ne' trascrivere."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-273",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Il system prompt finale di un agente vocale conviene salvarlo come file Markdown a parte nel progetto (es. prompt-sara.md), cosi' resta versionabile e consultabile indipendentemente dalla chat che lo ha generato."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-274",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Nel prompt di un agente vocale, contatti come telefono ed email vanno scritti sciogliendo numeri e simboli in lettere (es. 'zero quarantanove' invece di '049', 'chiocciola' invece di '@', 'punto' invece di '.') per essere pronunciati correttamente dal motore text-to-speech."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-275",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Un flusso di spostamento appuntamento ben progettato segue 5 step: chiedere nome e data dell'appuntamento attuale, chiedere nuova data e fascia oraria preferita, verificare la disponibilita', proporre al massimo due slot alternativi, e solo dopo conferma esplicita eseguire lo spostamento."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-276",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Un flusso FAQ ben progettato segue 4 step: ascoltare la domanda del chiamante, cercare la risposta nella knowledge base con il tool dedicato, rispondere in modo chiaro e breve, poi chiedere se serve altro o se si vuole prenotare."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-277",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "A fine costruzione, un buon riepilogo elenca ogni componente creato (prompt, assistant, knowledge base, ciascun workflow, CRM, tool) con uno stato chiaro ('Fatto' / 'Testato OK') e una lista numerata di istruzioni per eseguire un test end-to-end manuale."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-278",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Tra i guardrail di un agente vocale professionale vanno inclusi: non citare mai cliniche o attivita' concorrenti, non dare consigli medici o diagnosi di alcun tipo, e avere una frase pronta per chiudere educatamente una chiamata con un interlocutore abusivo o offensivo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-279",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Un agente vocale che gestisce prenotazioni non deve mai quotare un prezzo esatto al telefono, anche se lo conosce dalla knowledge base: deve sempre guidare il chiamante verso una visita di valutazione gratuita per avere un preventivo preciso."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-280",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "definizione",
+   "testo": "In VAPI, i 'Tools' sono oggetti di configurazione separati dal testo del system prompt: vengono definiti a parte (nome, descrizione, parametri, opzioni) e poi collegati all'assistant per riferimento, non scritti dentro al prompt stesso."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-281",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Ogni tool in VAPI ha due opzioni indipendenti configurabili: 'Async' (esecuzione asincrona, senza attendere la risposta prima di continuare) e 'Strict' (validazione rigida dei parametri, richiede che tutte le proprieta' siano dichiarate obbligatorie e lo schema bloccato)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-282",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Un workflow di automazione che deve solo eseguire operazioni deterministiche (scrivere/leggere dati, verificare condizioni) puo' essere costruito con nodi a formule e codice invece che con un agente AI, ottenendo un sistema piu' semplice, prevedibile ed economico da far girare."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-283",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Un workflow di prenotazione affidabile applica un controllo duplicati esplicito prima di scrivere: legge il foglio, verifica se esiste gia' un appuntamento uguale, si dirama (true/false) e solo nel ramo negativo procede ad aggiungere la nuova riga."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-284",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "numero",
+   "testo": "La dashboard di un assistant VAPI mostra in tempo reale una stima di costo per minuto di conversazione (nell'esempio circa $0,17/min) e una stima di latenza media (nell'esempio circa 2000 ms), calcolate in base alla combinazione di modello, voce e transcriber scelti."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-285",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Prima di lanciare un test su un agente vocale, conviene tenere a portata di mano il documento sorgente (es. orari o listino prezzi) per poter verificare a colpo d'occhio se la risposta data e' effettivamente corretta."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-286",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Un test tipico di validazione orari consiste nel chiedere una prenotazione in un orario fuori apertura (es. le 20:00): l'agente corretto deve rifiutarla, incrociando la richiesta con la tabella degli orari della clinica, e chiedere un'alternativa."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-287",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Testare un assistant tramite la chat testuale integrata di VAPI ('Chat with Assistant') e' piu' veloce che testare con una chiamata vocale reale, ed e' quindi preferibile per iterare rapidamente durante lo sviluppo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-288",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "In un flusso di prenotazione ben progettato, l'agente raccoglie i dati in sequenza logica: prima il nome completo, poi il tipo di visita, poi l'indirizzo email, infine data e fascia oraria preferite."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-289",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Messo alla prova con insistenza a dare un prezzo esatto, un agente vocale ben istruito continua a rifiutarsi e ripete che il modo piu' preciso per saperlo e' fissare la visita di valutazione gratuita."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-290",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Una sezione tipica di modalita' di pagamento in una knowledge base clinica elenca: contanti (fino al limite legale), bancomat e carte, bonifico bancario, finanziamento rateale tramite finanziarie esterne (fino a un tetto di rate), e uno sconto per pagamento in unica soluzione al momento del preventivo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-291",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Un'ipotesi plausibile ma sbagliata da verificare sempre con un test reale: si puo' temere che un agente vocale abbia difficolta' a leggere dati organizzati in tabelle dentro un PDF di knowledge base, ma un test diretto (chiedere nomi e specializzazioni di uno staff da una tabella) puo' smentirla, mostrando che l'agente restituisce i dati tabellari correttamente."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-292",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "dato",
+   "testo": "Una tabella del team medico in una knowledge base clinica associa a ogni professionista nome, specializzazione e i giorni di presenza in studio."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-293",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Una sezione 'Gestione prenotazioni' in una knowledge base clinica descrive un flusso standard a 7 step: raccogliere nome e cognome, capire il tipo di visita, verificare disponibilita' con il tool dedicato, proporre al massimo due fasce orarie, riepilogare e chiedere conferma esplicita, confermare solo dopo il si', informare sui documenti da portare."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-294",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Le regole di prenotazione operative di una clinica tipicamente fissano: prima visita sempre gratuita (30 minuti), visita urgente in uno slot dedicato entro 24 ore, disdetta con almeno 24 ore di preavviso, segnalazione dei no-show ripetuti alla segreteria, e la presenza di un genitore/tutore obbligatoria per i pazienti pediatrici."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-295",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Un protocollo urgenze ben scritto in una knowledge base definisce sia le parole chiave che lo attivano (es. dolore acuto, ascesso, trauma, sangue che non si ferma, febbre alta con dolore) sia la sequenza di azioni da eseguire: rassicurare con tono calmo, saltare il small talk, cercare il primo slot disponibile, trasferire alla segreteria se non ce ne sono."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-296",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "regola",
+   "testo": "Anche dentro un protocollo urgenze, va prevista un'eccezione esplicita: in caso di gonfiore al collo o difficolta' respiratoria, la procedura corretta non e' fissare una visita ma indirizzare subito il chiamante al Pronto Soccorso."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-297",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Quando il tool di verifica disponibilita' non restituisce alcun risultato utile, un agente vocale ben progettato applica comunque il passo finale del protocollo urgenza (trasferire alla segreteria) invece di bloccarsi o inventare uno slot inesistente."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-298",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "avvertimento",
+   "testo": "Un bug tipico nei workflow di disponibilita' e' che il sistema risponda 'nessuno slot disponibile' anche quando in realta' esistono slot liberi nella fonte dati reale: prima di fidarsi della risposta dell'agente, va sempre verificato il dato sorgente per capire se il rifiuto e' corretto o e' un errore del workflow."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-299",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "avvertimento",
+   "testo": "Un errore comune nella prima versione di un workflow di prenotazione e' scrivere l'appuntamento solo su un foglio di calcolo (Google Sheet) senza alcun collegamento a un calendario reale (Google Calendar): un gap facilmente identificabile controllando i campi disponibili nel nodo che scrive i dati."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-300",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Una sezione FAQ in una knowledge base clinica raccoglie domande e risposte pronte all'uso (es. gratuita' della prima visita, mutue non accettate ma assicurazioni private si', igiene senza visita solo per pazienti gia' in cura, durata media di un impianto), pensate per essere recuperate parola per parola dal tool di ricerca."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-301",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Quando un test in produzione rivela un problema reale, la procedura corretta e' comunicarlo all'assistente di coding incollando l'errore osservato cosi' com'e' (non riassunto), chiedendogli esplicitamente di analizzarlo e fare debugging."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-302",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Davanti a un problema con piu' cause potenziali, un assistente di coding puo' lanciare piu' sub-agenti in parallelo, ciascuno incaricato di investigare una fonte diversa (es. uno i log del workflow n8n, un altro lo stato dell'assistant VAPI), invece di indagare tutto in sequenza."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-303",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "comando",
+   "testo": "Per fare debugging lato VAPI, si interroga direttamente l'API con l'endpoint delle chiamate recenti (es. GET /call con limite risultati e token Bearer di autenticazione) per ottenere i log delle ultime chiamate reali."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-304",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "comando",
+   "testo": "Per fare debugging lato n8n, si interroga l'API REST con l'endpoint delle esecuzioni recenti (es. GET /executions con limite risultati, includeData e API key) per leggere gli errori esatti registrati nelle ultime run dei workflow."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-305",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "anti-pattern",
+   "testo": "Un bug classico nell'integrazione tra un servizio esterno (VAPI) e un'automazione (n8n) e' un mismatch nel path della struttura dati: VAPI invia gli argomenti del tool in toolCallList[0].function.arguments, ma il codice del workflow cercava toolCallList[0].arguments (senza il livello 'function'), facendo fallire sistematicamente ogni chiamata di tool."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-306",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Quando un servizio esterno invia dati con una struttura precisa, va sempre verificato il path esatto dei campi ricevuti invece di assumerlo per analogia: un livello di annidamento mancante o in piu' fa fallire silenziosamente l'intera integrazione."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-307",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Anche per una semplice correzione di bug (non solo per una feature nuova), conviene far produrre prima all'assistente di coding un piano che spiega la causa del problema e il fix proposto, da rivedere e approvare prima che venga applicato."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-308",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Quando serve aggiungere una nuova integrazione (es. Google Calendar), conviene prima verificare se una credenziale adatta esiste gia' nell'ambiente e riusarla, invece di crearne una nuova da zero."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-309",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Dopo un fix architetturale, ciascuno dei 4 workflow di un AI receptionist (check/book/cancel/reschedule) puo' essere esteso per interagire sia con il Google Sheet (CRM) sia con Google Calendar, cosicche' ogni azione sull'appuntamento si rifletta in entrambi i sistemi contemporaneamente."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-310",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Testato dopo il fix, un appuntamento prenotato via chat con l'agente vocale compare correttamente sia come nuova riga nel Google Sheet CRM sia come evento nel Google Calendar collegato, con lo stesso account autenticato via OAuth come creatore dell'evento."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-311",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "n8n permette di ispezionare le esecuzioni passate di un workflow (tab Executions) nodo per nodo, mostrando l'input e l'output esatti che sono stati processati in quella specifica run, utile per verificare o fare debugging a posteriori."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-312",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Il messaggio di risposta di un tool puo' essere costruito dinamicamente in n8n con un'espressione che compone la frase leggendo i dati raccolti dal nodo precedente (nome, data, ora), invece di un testo fisso identico per ogni caso."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-313",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "esempio",
+   "testo": "Testato dopo il fix, cancellare un appuntamento tramite la chat con l'agente vocale rimuove correttamente sia la riga corrispondente nel Google Sheet sia l'evento gemello dal Google Calendar collegato."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-314",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "procedura",
+   "testo": "Una volta che il sistema funziona end-to-end, si possono continuare a chiedere piccoli aggiustamenti (cambiare voce, ridurre latenza, cambiare lingua) all'assistente di coding con semplici istruzioni testuali successive, senza dover ripartire da zero."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-315",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "I modelli di business per soluzioni di voice/AI agentic si possono classificare per potenziale di reddito annuo: AI Recruitment $200k-700k (costo medio, difficolta' medio-alta), Lead Reactivation $150k-500k (costo basso-medio, difficolta' media), AI Customer Support $120k-400k (costo medio, difficolta' medio-alta), AI Receptionist $20k-120k (costo di realizzazione il piu' basso di tutti, poche centinaia di euro, difficolta' media)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-316",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Tra i modelli di business voice-AI, l'AI Receptionist ha il potenziale di reddito piu' basso perche' si vende tipicamente con un retainer mensile contenuto: per arrivare a circa 20.000 euro al mese servono all'incirca 80-100 clienti attivi."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-317",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Posizionarsi con prezzi troppo bassi tende ad attirare clienti piu' difficili da gestire; posizionarsi su un segmento piu' premium porta tipicamente clienti piu' semplici da seguire nel tempo."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-318",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Scegliere una nicchia con un ticket medio piu' alto (es. e-commerce, dove un AI Customer Support puo' anche recuperare ordini abbandonati) sposta il valore di un servizio verso la fascia piu' alta del suo intervallo di reddito potenziale."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-319",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Le funzioni/soluzioni aziendali si possono classificare con un framework a tre livelli per valore economico: 'dentro' l'azienda (processi interni come le FAQ, basso impatto economico), 'di bordo' (riguardano lead che gia' conoscono l'azienda, es. un cliente che chiama direttamente, valore medio), 'fuori'/outbound (si contattano persone che non conoscono l'azienda, valore economico piu' alto ma esecuzione piu' difficile)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-320",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Nelle aziende, le funzioni orientate all'outbound (vendite/commerciale, tech) sono generalmente le meglio retribuite; il marketing e' considerato tipicamente una funzione 'di bordo', con impatto economico percepito minore rispetto a vendite e tech."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-321",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Il modello di business Lead Reactivation si prezza tipicamente come percentuale sul revenue effettivamente recuperato per il cliente, non come retainer fisso: un modello win-win perche' il fornitore guadagna solo se il cliente guadagna a sua volta."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-322",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "principio",
+   "testo": "Il modello AI Recruitment/outbound e' il piu' difficile da eseguire tra quelli elencati, ma offre il ritorno economico piu' alto, tipicamente pagato a percentuale sul risultato ottenuto (es. percentuale su un candidato piazzato o su un cliente chiuso)."
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-323",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "tipo": "struttura",
+   "testo": "Il corso si chiude con una doppia call-to-action: un primo link per le piccole/medie imprese interessate a farsi costruire una soluzione voice-AI su misura (contatto diretto, risposta dal team se c'e' un fit), e un secondo link per chi lavora ancora a tempo pieno e vuole imparare a vendere questo tipo di soluzioni tramite un coaching program dedicato di 90 giorni."
+  }
+ ]
+}

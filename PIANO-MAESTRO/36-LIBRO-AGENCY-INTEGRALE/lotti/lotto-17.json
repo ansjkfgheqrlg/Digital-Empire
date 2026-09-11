@@ -1,0 +1,1164 @@
+{
+ "lotto": 17,
+ "totale": 193,
+ "atomi": [
+  {
+   "uid": "Ahp_6rHSOsU::KA-01",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Positioning / Autorita",
+   "testo": "Andrei apre stabilendo autorita: 'lavoro come copywriter da quando ho 16 anni, adesso ne ho 21' + 'ho quasi sempre usato Google Docs... cose che uso ogni giorno'. Proof-of-work come hook: chi insegna lo strumento lo usa davvero in produzione."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-02",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Content / Struttura video",
+   "testo": "Struttura tutorial '8 trucchi che probabilmente non conoscevi' = format list-based ad alta ritenzione. Ogni tip numerato a voce segmenta il video, crea micro-loop di curiosita, facilita il re-watch come reference."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-03",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Workflow / Copy digitale",
+   "testo": "Principio: quando scrivi copy (es. Sales page) 'quel documento probabilmente non verra' mai stampato, quindi l'impaginazione diventa solamente fastidiosa perche' divide i testi a meta''. Il copy e' output digitale, non cartaceo."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-04",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Google Docs",
+   "testo": "COME: File -> Impostazioni della pagina -> 'Senza pagine' -> OK. Opzionale: cambiare colore sfondo + 'imposta come default'. Rende il documento un flusso continuo. 'Aiuta anche a fare migliore figura con le persone a cui invii i tuoi documenti'."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-05",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Workflow / Organizzazione",
+   "testo": "Errore comune: creare i documenti direttamente da Google Docs -> finiscono tutti nello stesso posto indifferenziato; 'una volta che ne hai 20, 30, 40 diventano tantissimi, per trovarne uno devi scavare'. Soluzione: crearli DA Google Drive, nella cartella giusta fin da subito."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-06",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Workflow / Sistema cartelle clienti",
+   "testo": "Sistema di Andrei: cartella 'Clienti' -> una sottocartella per ogni cliente -> dentro ogni cliente, cartelle divise in 'visibile al cliente' e 'NON visibile al cliente'. La cartella non-visibile e' colorata di ROSSO come reminder di non metterci cose che il cliente non deve vedere."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-07",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Anti-pattern",
+   "testo": "Anti-pattern 'da nabbi': creare i titoli ingrandendo il testo a mano (bold+size) e ricopiarli/rimodificarli ogni volta = 'un pessimo modo di lavorare, anche svantaggioso'. Perde tempo e non produce struttura."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-08",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Google Docs",
+   "testo": "COME: seleziona il testo -> 'Testo normale' (menu stili) -> scegli Intestazione/Titolo. Beneficio doppio: estetica/velocita' + genera automaticamente la STRUTTURA del documento nel pannello sinistro (outline), navigabile con un click."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-09",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Google Docs",
+   "testo": "Per cambiare lo stile di TUTTE le intestazioni in un colpo: formatta un testo come lo vuoi -> selezionalo -> Stili -> seleziona lo stile che stai modificando -> 'Aggiorna intestazione perche' corrisponda'. Aggiorna automaticamente tutti i testi con quello stile nel documento. Vale anche per 'Testo normale'."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-10",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Workflow / Copy collaborativo",
+   "testo": "Convenzione di team: 'testi normali come copy, testo in giallo come note separate dal copy'. Nel documento servono indicazioni operative (es. quali icone/loghi metterci) che NON sono copy -> vanno rese visivamente distinte per chi legge (designer, cliente)."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-11",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Google Docs",
+   "testo": "Trucco: trasformare lo stile 'nota gialla' in un heading predefinito (es. Intestazione 3) -> per creare una nota basta applicare quell'intestazione invece di evidenziare a mano ogni volta. Automatizza una convenzione ricorrente."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-12",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Project management in-doc",
+   "testo": "COME: Inserisci -> Menu a discesa (dropdown). Google offre template preset ('Stato progetto', 'Stato revisione') o se ne crea uno custom. Andrei crea uno stato-sezione: Da iniziare / In corso / In revisione / Approvato-pronto, con colore diverso per ciascuno."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-13",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Workflow / Stato lavoro",
+   "testo": "Uso reale: incolla il dropdown di stato accanto a ogni heading di sezione -> 'appena apro il documento so molto chiaramente in che stato si trova ogni parte'. Trasforma il doc di copy in mini-kanban, elimina l'ambiguita' su cosa e' pronto in documenti lunghi."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-14",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Google Docs",
+   "testo": "COME: vai all'inizio di una sezione -> Inserisci -> Segnalibro -> clicca sull'icona 'copia link'. Quel link porta direttamente a quella sezione. Puoi incollarlo ovunque e renderlo cliccabile per navigare istantaneamente."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-15",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Mindset / UX per il cliente",
+   "testo": "Principio guida: 'lo uso sempre, non per comodita' mia ma per comodita' degli altri — quando qualcuno entra sul documento voglio che abbia l'esperienza piu' smooth possibile'. Il copywriter cura l'esperienza di lettura del documento come cura il copy."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-16",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Copy / Vincolo caratteri",
+   "testo": "'Ho sempre bisogno di controllare quanti caratteri sto scrivendo': oggetto email, headline, titolo video hanno un numero limitato/consigliato di caratteri. Il conteggio e' vincolo di piattaforma, non un vezzo."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-17",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Google Docs",
+   "testo": "COME: Strumenti -> Conteggio parole -> spunta 'visualizza durante la digitazione' -> contatore live in basso a sinistra. Cliccandoci sopra si passa da parole a caratteri. Selezionando un testo mostra parole/caratteri della SOLA selezione."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-18",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Tool / Produttivita",
+   "testo": "Meta-tip: gli shortcut da tastiera sono visibili direttamente in Google Docs — passando su uno stile nel menu Stili, Docs mostra lo shortcut associato. Non serve memorizzarli: lo strumento li ricorda in-context."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-19",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Funnel / CTA",
+   "testo": "CTA di chiusura verso 'risorse interessanti nei link in descrizione' su copywriting, persuasione, gestione/acquisizione clienti. Il tutorial gratuito su uno strumento e' top-of-funnel verso risorse/prodotti a valle."
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-20",
+   "run": "Ahp_6rHSOsU",
+   "tipo": "Content / Retention hack",
+   "testo": "Micro-retention: richiesta di iscrizione A META' tutorial ('prima di andare sul numero 10... perche' non sei ancora iscritto') e ironia auto-consapevole sul fatto che tornare al video per gli shortcut 'mi fa fare un paio di views in piu''. Trasparenza sul meccanismo = tono che disarma."
+  },
+  {
+   "uid": "hb89lccIacY::KA-01",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Email opener",
+   "testo": "Anti-pattern: aprire l'email con 'Ciao, ti sto scrivendo perche' voglio parlarti di questo' prima di arrivare al punto. Regola: elimina SEMPRE quella frase iniziale — nel 90% dei casi non serve alla persuasione."
+  },
+  {
+   "uid": "hb89lccIacY::KA-02",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Oggetto email",
+   "testo": "Oggetto ~50 caratteri visibili (mobile) prima del troncamento. Regola: parola/info piu' importante il piu' vicino possibile all'inizio, taglia le filler words."
+  },
+  {
+   "uid": "hb89lccIacY::KA-03",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Personalizzazione oggetto",
+   "testo": "Non mettere {{nome}} come prima parola dell'oggetto: lunghezza variabile sposta imprevedibilmente il resto e toglie controllo sulla lunghezza. Se usato, metterlo come ultimissima cosa in fondo."
+  },
+  {
+   "uid": "hb89lccIacY::KA-04",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Anti-pattern oggetto",
+   "testo": "Non gonfiare open/click rate con clickbait che non mantiene la promessa. Genera click 'sulla carta' ma sono spam — preferire click rate piu' basso ma sano, con intenzione specifica di agire."
+  },
+  {
+   "uid": "hb89lccIacY::KA-05",
+   "run": "hb89lccIacY",
+   "tipo": "Metriche / Definizioni",
+   "testo": "CR (Click Rate) = % click sul TOTALE email inviate. CTR (Click-Through Rate) = % click sul TOTALE email aperte. Basi di calcolo diverse, spesso confuse."
+  },
+  {
+   "uid": "hb89lccIacY::KA-06",
+   "run": "hb89lccIacY",
+   "tipo": "Metriche / Esempio numerico",
+   "testo": "100 email inviate -> 10 aperture (OR 10%) -> 2 click -> CR=2%, CTR=20%. Stesso numero assoluto di click, percentuali molto diverse a seconda della base."
+  },
+  {
+   "uid": "hb89lccIacY::KA-07",
+   "run": "hb89lccIacY",
+   "tipo": "Metriche / Interpretazione dati",
+   "testo": "Un CTR alto puo' derivare da click su link secondari (Instagram/YouTube) e non sul CTA che interessa davvero. Se il CRM non mostra il breakdown per link, cambiarlo."
+  },
+  {
+   "uid": "hb89lccIacY::KA-08",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Emoji",
+   "testo": "Usa emoji nell'oggetto solo se non clichè/spammy per la nicchia (es. 💰 in 'come fare soldi' non differenzia, lo usano tutti). Emoji stagionali ok se in tema."
+  },
+  {
+   "uid": "hb89lccIacY::KA-09",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Emoji e target",
+   "testo": "Effetto emoji dipende dal target: su giovani non fa differenza, su 40-50enni puo' fare piu' danno (letto come promozionale/spam)."
+  },
+  {
+   "uid": "hb89lccIacY::KA-10",
+   "run": "hb89lccIacY",
+   "tipo": "Metodo / A/B testing",
+   "testo": "Dividi l'audience in segmenti (es. 50/50) e invia varianti diverse. Automatizzabile su CRM (Mailchimp) o manuale dividendo la lista in tag/segmenti."
+  },
+  {
+   "uid": "hb89lccIacY::KA-11",
+   "run": "hb89lccIacY",
+   "tipo": "Metodo / A/B testing — cosa testare",
+   "testo": "Testa solo elementi impattanti e collegabili a metriche precise (oggetto intero), non micro-dettagli sepolti a meta' email — risultato non calcolabile/prevedibile."
+  },
+  {
+   "uid": "hb89lccIacY::KA-12",
+   "run": "hb89lccIacY",
+   "tipo": "Metodo / A/B testing — sample size",
+   "testo": "Campione troppo piccolo/non misto puo' generare per caso un segmento piu' fidelizzato dell'altro, falsando il risultato. Regola: piu' la lista e' numerosa, piu' i risultati sono affidabili."
+  },
+  {
+   "uid": "hb89lccIacY::KA-13",
+   "run": "hb89lccIacY",
+   "tipo": "Metodo / A/B testing — rigore",
+   "testo": "Invia entrambe le varianti allo stesso orario per non introdurre un'altra variabile oltre quella testata."
+  },
+  {
+   "uid": "hb89lccIacY::KA-14",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Lunghezza email",
+   "testo": "Rule of thumb: 200-250 parole. Ma per email storytelling/valore arriva fino a 500 parole (meta' sales page) perche' copy coinvolgente toglie piu' obiezioni di copy breve."
+  },
+  {
+   "uid": "hb89lccIacY::KA-15",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Lunghezza email — livello",
+   "testo": "Principianti: restare su 200-250 parole massimo finche' non si e' sicuri di reggere l'attenzione lunga."
+  },
+  {
+   "uid": "hb89lccIacY::KA-16",
+   "run": "hb89lccIacY",
+   "tipo": "Copy / Urgency e sequenza",
+   "testo": "Manda sempre email reminder negli ultimi ~5 giorni di promo/lancio, sfruttando l'hype gia' costruito. Aggiungibile alla sequenza esistente."
+  },
+  {
+   "uid": "hb89lccIacY::KA-17",
+   "run": "hb89lccIacY",
+   "tipo": "Positioning / Autorita",
+   "testo": "Claim autorita': copywriter da 16 anni, ora 21 (5 anni esperienza), centinaia di clienti Italia+estero, migliaia di copy. Si distingue da 'altri formatori' non praticanti."
+  },
+  {
+   "uid": "hb89lccIacY::KA-18",
+   "run": "hb89lccIacY",
+   "tipo": "Funnel / CTA prodotto",
+   "testo": "CTA verso corso 'Copywriting Mentorship' ('il piu' completo in Italia'), sconto stagionale Natale >€1000, incluse consulenze+esame. Link primo in descrizione."
+  },
+  {
+   "uid": "hb89lccIacY::KA-19",
+   "run": "hb89lccIacY",
+   "tipo": "Funnel / Urgency prodotto",
+   "testo": "Applica live la tecnica del capitolo 10 alla propria CTA: 'non la rifacciamo mai piu'', finestra limitata a Natale — dimostrazione diretta invece di sola teoria."
+  },
+  {
+   "uid": "hb89lccIacY::KA-20",
+   "run": "hb89lccIacY",
+   "tipo": "Formato / Coerenza produzione",
+   "testo": "Formato uniforme per 11m49s (nessun cambio scena): talking-head studio podcast con solo 2 overlay grafici puntuali nei 2 passaggi piu' tecnici/numerici del video."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-01",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Formato / Premessa video",
+   "testo": "Format: Andrei ha pubblicato un post Instagram con la sfida 'Vendimi questo profumo' (Creed Aventus, profumo di nicchia, ~100 euro/100ml, note di ribes nero, bergamotto, ananas, gelsomino, muschio di quercia), ricevendo 100+ commenti/copy dai follower. Il video seleziona 6 di questi commenti presi a caso e li recensisce uno per uno in diretta."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-02",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Chiarezza",
+   "testo": "Critica: se un copywriter esperto deve rileggere una frase per capirla, la frase ha fallito. Il copy di mery_galesi ha una struttura grammaticale confusa che rende il messaggio incomprensibile al primo passaggio."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-03",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Registro seduttivo",
+   "testo": "L'argomento della seduzione/fascino va trattato in modo implicito ed elegante, non esplicito — troppi copy si concentrano sul 'sedurre' in maniera troppo diretta quando su questi temi conviene restare più impliciti."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-04",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Show don't tell",
+   "testo": "Nominare una parola astratta come 'prestigio' da sola non basta a dare la sensazione di lusso/status — serve fornire informazioni visive, sensoriali ed emotive che permettano al lettore di 'entrare nel ruolo' (esempio: 'stai salendo al cinquantesimo piano, entri nel tuo penthouse'). Tecnica: Show, don't tell — dimostrare la sensazione con un'immagine concreta invece di dichiararla con un'etichetta astratta."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-05",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Comprensibilita",
+   "testo": "Ogni copy deve essere 'a prova di Bart Simpson/Peter Griffin' — comprensibile da chiunque, semplicissimo da leggere — perché chi consuma contenuti su internet è distratto/veloce, non analizza il testo con attenzione."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-06",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Struttura - Rule of Three",
+   "testo": "Struttura a 3 descrizioni + 1 conclusione approvata: il numero 3 nel copywriting/comunicazione è quasi magico, più efficace e fonetico di 2 (troppo superficiale) o 4+ (si perde attenzione) — 3 è il numero ideale per una bullet list descrittiva."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-07",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Specificita vs genericita",
+   "testo": "Struttura giusta non salva contenuto vago: 'Dolci aromi fruttati' fa immaginare frutta generica senza aiutare a visualizzare nulla di specifico; 'Cupa potenza del Bosco' funziona meglio perché fa visualizzare una scena concreta (bosco scuro al tramonto). Voto: 'Mid' — buona struttura a 3, ma descrizione debole."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-08",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Aggettivi generici - unicita",
+   "testo": "Gli aggettivi devono essere precisi per funzionare — 'eleganza', 'masculità', 'ricercatezza' non sono precisi, restano vaghi e potrebbero applicarsi a QUALSIASI fragranza di nicchia: se una frase di copy vale per qualsiasi prodotto della categoria, non sta vendendo quel prodotto specifico ('non è unico')."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-09",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Visualizzazione sensoriale",
+   "testo": "Non basta far VEDERE il prodotto (foto della bottiglia), bisogna far IMMAGINARE. Per un pubblico non esperto, nominare note olfattive tecniche (es. 'bergamotto, ananas') non aiuta perché la persona media non sa a cosa associarle: serve tradurre le note in un'esperienza immaginabile, non elencarle come specifiche tecniche ('non visualizzo')."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-10",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Brand fit e tono ironico",
+   "testo": "Un angolo ironico/meme (es. riferimento pop culture tipo Patrick Bateman) non funziona per un brand di lusso distaccato, ma può funzionare benissimo per un brand giovane/scherzoso che comunica con la Gen Z — il fit tra tono e brand determina se un angolo irriverente funziona, non una regola universale pro/contro l'ironia."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-11",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Scarsita e posizionamento brand",
+   "testo": "Un brand di lusso non fa mai urgency diretta/da discount ('disponibili ancora solo 10 pezzi'). I prodotti premium restano sempre distaccati, non fanno countdown vistosi; quando fanno edizioni limitate numerate spesso non mostrano nemmeno quanti pezzi restano — generando ansia senza sembrare uno sconto Black Friday. Urgency 'da discount' su un brand di lusso svaluta la percezione."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-12",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Claim falsificabile e obiezione",
+   "testo": "'La fragranza più rinomata al mondo' è un claim esagerato che genera un'obiezione immediata: chi conosce il mercato pensa subito a fragranze oggettivamente più famose e realizza che il brand è di nicchia, non il più famoso al mondo. Comunicare qualcosa percepito come falso rompe la fiducia nel resto del messaggio."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-13",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Coerenza di scenario",
+   "testo": "Mescolare due occasioni d'uso molto diverse (cena di gala vs meeting di lavoro) in una stessa riga confonde il lettore sul contesto d'uso target. La parte 'non ti farà mai passare inosservato' è invece valutata positiva perché è esattamente ciò che il consumatore (non il collezionista) desidera."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-14",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Miglior esempio del video",
+   "testo": "'Un profumo all'altezza di uomini in grado di scegliere' dichiarato il MIGLIOR copy del video — 'in grado di scegliere' comunica implicitamente status/desiderabilità senza dichiararlo esplicitamente."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-15",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Formula CTA",
+   "testo": "La chiusura 'Scegli di vincere con [brand]' valutata ottima formula generalizzabile: verbo di scelta attiva + esito desiderato (vincere) + brand, struttura breve e memorabile."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-16",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Copy / Limite anche nel migliore",
+   "testo": "Anche il copy migliore ha un limite: 'un po' troppo generico, un po' troppo alla ChatGPT' — andrebbe specificato e ampliato. Nota metodologica: anche il vincitore di una batch review non è 'finito', solo relativamente il migliore del gruppo."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-17",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Funnel / CTA prodotto",
+   "testo": "Inserto pubblicitario: promozione del corso di copywriting con finestra ~14-16 giorni, prezzo scontato, 3 rate, consulenze e aggiornamenti inclusi. CTA doppia: 'clicca il link sotto' sia per chi conosce già il corso sia per chi non ne sa nulla."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-18",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Pattern / Errore piu comune",
+   "testo": "Recap finale: l'errore più comune nei copy recensiti è puntare solo sul Pain Point dimenticando il Time Point — il Pain Point è collegato alle emozioni e va sempre tirato fuori esplicitamente nel copy, non lasciato implicito."
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-19",
+   "run": "L5_Z63nxXjI",
+   "tipo": "Funnel / Cross-reference e posizionamento",
+   "testo": "Chiusura con rimando a un altro video del canale su 'come scrivere copy dalle basi', e CTA verso il corso di copywriting per chi vuole farne una carriera full-time. End card brandizzata 'Il futuro è nostro'."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-01",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Copy / Hook con dato statistico",
+   "testo": "Apertura con claim numerico: 'un buon pulsante scritto bene aumenta le conversioni di 10 punti percentuale, e questa e' scienza' - seguito da credenziali quantificate (agenzia 10 collaboratori, 3700+ ordini, 250k+ follower) a supporto dell'autorita'."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-02",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Framework / Tassonomia CTA",
+   "testo": "CTA superficiali = concentrati sull'azione ('clicca qui', 'iscriviti'). CTA profondi = concentrati su cosa accade dopo l'uso del prodotto, nel dolore emotivo/desiderio. Esempio: superficiale 'inizia a perdere peso' vs profondo 'vediti bene nello specchio'."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-03",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Formato / Coinvolgimento attivo",
+   "testo": "Tecnica didattica: interrompere il video con un esercizio esplicito ('ferma il video, scrivi un CTA superficiale e uno profondo') prima di rivelare la risposta - genera coinvolgimento attivo invece di sola esposizione passiva."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-04",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Copy / Esempio comparato",
+   "testo": "Risposta esercizio (cover telefono): superficiale = verbi d'azione generici intercambiabili ('clicca qui', 'vai'). Profondo = 'proteggi il tuo telefono, basta le cadute disastrose... proteggi con stile' - nomina la conseguenza specifica e la ribalta in beneficio emotivo."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-05",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Copy / Meccanismo persuasivo",
+   "testo": "Il CTA profondo converte di piu' perche' sposta l'attenzione dall'onere dell'azione (percepita come noiosa) al costo dell'inazione (la conseguenza negativa del non agire) - nominare la conseguenza dell'inazione e' piu' persuasivo che nominare l'azione richiesta."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-06",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Framework / Situazione Attuale vs Desiderio",
+   "testo": "Framework: ogni CTA profondo esplicita la Situazione di Desiderio (dove il cliente vuole arrivare), non solo la Situazione Attuale. Esempio: attuale='sei obeso', desiderio='essere in forma'. Il veicolo per arrivarci risolve un bisogno (termine economico)."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-07",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Metodo / Combinazione",
+   "testo": "Raccomandazione finale: non scegliere tra CTA superficiale e profondo, combinarli in un unico pulsante ancora piu' persuasivo ('prendi il pezzo superficiale, prendi il pezzo profondo, mettili insieme')."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-08",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Copy / Urgenza",
+   "testo": "Terza leva CTA: urgenza tramite parole temporali ('oggi', 'domani', 'presto', 'veloce') - motivata dalla tendenza delle persone a procrastinare."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-09",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Framework / Formula CTA",
+   "testo": "Formula: Azione + Situazione/Desiderio + Tempo. Esempio: 'iscriviti (azione) per essere confident (desiderio) adesso (tempo)'. Nota di calibrazione: l'elemento tempo puo' risultare overpromising se forzato."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-10",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Formato / Guest expert",
+   "testo": "Per la parte design, Andrei cede la parola a Gaia (designer dell'agenzia) - confermato visivamente che gli interventi sono clip pre-registrate separate (ambiente diverso), non videochiamata live. Pattern: delegare sezioni di competenza specialistica mantenendo un'unica voce narrante principale."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-11",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Design / Contrasto colore",
+   "testo": "Primo principio design: colori molto saturati (rosso, verde) in contrasto con lo sfondo, altrimenti il pulsante 'non si vede'."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-12",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Design / Forma riconoscibile",
+   "testo": "Secondo principio: forma universalmente riconoscibile come pulsante (rettangolo con angoli smussati). Sconsigliato: forme non convenzionali come una stella."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-13",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Design / Anti-pattern pulsante-testo",
+   "testo": "Anti-pattern mostrato con esempio visivo: pulsante con troppo testo che prende l'intera larghezza del sito 'sembra una sezione, non sembra un pulsante' - non viene cliccato perche' non riconosciuto come elemento interattivo."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-14",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Design / Coerenza stilistica",
+   "testo": "Terzo principio: mantenere lo stesso stile per tutti i pulsanti del sito, altrimenti l'utente non distingue cosa e' cliccabile."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-15",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Design / Rischio over-styling",
+   "testo": "Effetti dinamici (glow, vibrazione) su pulsanti possono generare l'effetto opposto (diffidenza, percepito come 'offerta speciale sospetta') se esagerati. Consiglio: glow leggero o pulsante statico fisso."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-16",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Design / Gerarchia filled vs ghost",
+   "testo": "Gerarchia tra pulsanti: 'field' (pieni) per azione primaria, 'ghost' (solo contorno) per azione secondaria. Dato citato: i ghost convertono mediamente il 60% in meno dei field. DA VERIFICARE: fonte del dato non citata a voce nel video."
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-17",
+   "run": "3zJpI8-7TW4",
+   "tipo": "Funnel / CTA finale",
+   "testo": "Chiusura: ringraziamento a Gaia, posizionamento 'Funnel Operator' come miglior modo per fare marketing nel 2026, CTA link in descrizione + iscrizione al canale."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-01",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Template Canva personalizzabile",
+   "testo": "Idea #1: creare template Canva pronti per il settore del cliente target (per un SMM: template per i piatti di un ristorante, template per le schede di una palestra), consegnati come file modificabile in cambio dell'email. Applicabile anche a designer generici, non solo SMM. Andrei dichiara che in Italia lo fanno pochissimi."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-02",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Challenge a step (7-14 giorni)",
+   "testo": "Idea #2: sfidare il prospect a seguire un percorso a step (7 giorni di allenamento da 20 minuti, 7 ricette per la cena perfetta) prima di proporre l'acquisto alla fine. Meccanismo: chi ha gia' iniziato un percorso e' piu' motivato a continuarlo rispetto a chi deve partire da zero, e funziona in modo particolare dove va installata un'abitudine. Usabile anche come trip wire a pagamento (pochi euro). Andrei la definisce devastante se rispetta le 5 regole finali."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-03",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Calcolatrice custom generata con AI",
+   "testo": "Idea #3: costruire una mini-applicazione calcolatrice (fattibile con Claude/ChatGPT/Gemini senza saper programmare) che stima un beneficio quantitativo personalizzato dagli input del prospect (quante ore lavori, quanto guadagni al mese -> quanto tempo e denaro risparmieresti). Esempio esterno citato: Motion Calendar. Caso proprio dichiarato: cliente nel settore formazione per autori, con una calcolatrice piu' complessa."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-04",
+   "run": "j4UInmM9kKA",
+   "tipo": "Posizionamento / Professione Funnel Operator",
+   "testo": "Digressione di posizionamento: il Funnel Operator (chi analizza e ottimizza il funnel esistente di un cliente) come carriera freelance piu' richiesta del 2026. Argomenti: clienti gia' consapevoli del problema (niente cold outreach al buio), progetti da migliaia di euro perche' l'impatto percepito (es. +50% fatturato) giustifica il prezzo, skill apprendibili da zero grazie all'AI. Andrei usa esplicitamente CRO per indicare l'ottimizzazione del funnel e prezza 2-3.000 euro il singolo intervento. Segmento promozionale di un corso proprio in prelancio: contenuto misto educativo/promozionale."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-05",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Webinar strutturato",
+   "testo": "Idea #4: i webinar non sono morti, lo sono i webinar mediocri. Critica esplicita alla registrazione schermo con 'ehm' e racconto della propria vita. Struttura corretta mostrata: lo script E' la presentazione, slide che scorrono molto velocemente (~400 slide in un singolo webinar) invece di una slide statica al minuto. Esempio applicativo per interior designer: 'Scopri qual e' lo stile adatto alla tua casa' con i 5 stili piu' comuni spiegati per personalita', chiusura con proposta di call."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-06",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Swipe file",
+   "testo": "Idea #5: raccogliere e distribuire una collezione di esempi di alta qualita' nel proprio dominio (un copywriter distribuisce i migliori copy passati; a un pubblico di video editor si danno esempi di editing eccellente). Doppio effetto: utilita' pratica diretta piu' posizionamento come provider di soluzioni."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-07",
+   "run": "j4UInmM9kKA",
+   "tipo": "Framework / Ciclo del rinforzo",
+   "testo": "Framework trasversale a tutte le 10 idee: si compra quando (1) si ha un problema, (2) si e' convinti che il prodotto lo risolva, (3) ci si fida di chi vende. Chi ha appena scoperto il brand non si fida ancora: il lead magnet deve CHIUDERE un ciclo del rinforzo dando una soluzione concreta e facendo percepire progresso reale. Un lead magnet che non chiude il ciclo equivale a budget advertising sprecato, a prescindere dal volume di lead raccolti."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-08",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Ebook breve (checklist, cheat guide)",
+   "testo": "Idea #6: ebook qui NON significa documento lungo stile libro. Anti-pattern esplicito: se il contenuto sarebbe da 10+ pagine scritte, cancellare l'idea e farci un webinar sopra, perche' nessuno legge 10 pagine di uno sconosciuto. Significa manualetto, checklist o cheat guide breve; esempio citato: un Google Sheets con la checklist delle azioni da fare quando si pubblicano ads su Ads Manager. Criterio: utilita' alta e sforzo di utilizzo basso, altrimenti il lead magnet e' sprecato anche se ben scritto."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-09",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / GPT o agent custom su WhatsApp",
+   "testo": "Idea #7 (numerata a voce, assente dai titoli ufficiali dei capitoli): creare un GPT/agent con istruzioni specifiche per la propria categoria, opzionalmente addestrato per qualificare il lead e spingerlo a fissare la call (diventa un mezzo venditore). Consiglio operativo forte: distribuirlo su WhatsApp invece di richiedere ChatGPT Plus, perche' azzera l'attrito d'accesso (WhatsApp ce l'hanno tutti)."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-10",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Quiz con punteggio segmentato a 3 livelli",
+   "testo": "Idea #8: quiz 'quante ne sai su X' (per un agente immobiliare: i fattori che influenzano il prezzo di una casa) che produce un punteggio collegato a un video di risposta segmentato per livello, basso/medio/alto, pattern a 3 livelli che Andrei dichiara di usare sistematicamente. Ogni livello propone un CTA calibrato sulla competenza percepita. Calibrazione onesta dello stesso Andrei: il quiz e' tra i format piu' DEBOLI per chiudere il ciclo del rinforzo, ma utile su argomenti grandi per abbassare la soglia d'ingresso. Corollario: si possono impilare piu' livelli di lead magnet (optin 1, optin 2 piu' potente, poi la call)."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-11",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Source files di progetto",
+   "testo": "Idea #9: distribuire i file sorgente di un progetto creativo (PSD di Photoshop, progetti After Effects/Premiere con intro e animazioni). Funziona specificamente su audience creative e tecniche; citato come pattern comune e ad alta efficacia in quel segmento, alternativa diretta al solito ebook da 50 pagine che nessuno legge."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-12",
+   "run": "j4UInmM9kKA",
+   "tipo": "Lead magnet / Liste e raccolte curate (caso reale con numeri)",
+   "testo": "Idea #10: distribuire una raccolta curata (cartella di canzoni virali per Instagram e TikTok) con riscatto a bassissimo attrito. Caso reale dichiarato: DM automatico attivato scrivendo la keyword 'cartella' nei commenti, circa 2000 follower e circa 2000 cartelle inviate, zero euro di ads. Andrei stima che chiedendo anche nome, cognome e telefono il volume si sarebbe dimezzato (1000 o 500) restando comunque alto. Principio: reward alto piu' sforzo richiesto minimo uguale volume di lead altissimo anche senza budget."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-13",
+   "run": "j4UInmM9kKA",
+   "tipo": "Regola 1 / Se devi dare valore, dai valore",
+   "testo": "Regola 1: la qualita' del lead magnet gratuito viene letta dal prospect come proxy della qualita' del prodotto a pagamento: se fa schifo la roba free, si assume che faccia schifo anche quella a pagamento. Il fatto che sia gratis non e' un'attenuante agli occhi di chi non ti conosce, perche' il lead magnet e' l'unico dato che ha su di te. Se prometti di insegnare come fare 10.000 euro al mese, devi insegnarlo davvero."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-14",
+   "run": "j4UInmM9kKA",
+   "tipo": "Regola 2 / Formato piu' intrattenente, mai la scorciatoia",
+   "testo": "Regola 2: scegliere sempre il formato piu' intrigante e intrattenente, non quello piu' comodo da produrre (meglio un webinar editato bene di un ebook lungo scritto male; se fai il webinar, editalo e investici). Principio generale dichiarato: piu' te la fai facile quando crei il contenuto, piu' ti rendi la vita difficile dopo. La scorciatoia non elimina il costo, lo sposta sulle conversioni future. Prova portata a supporto: 3700 ordini sul sito in organico con zero euro di ads."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-15",
+   "run": "j4UInmM9kKA",
+   "tipo": "Regola 3 / Mostra l'informazione, vendi l'implementazione",
+   "testo": "Regola 3, attribuita esplicitamente ad Alex Hormozi: dare gratis l'informazione e la diagnosi (perche' non riesci a perdere grasso; i 10 errori comuni di gestione aziendale) e vendere a pagamento l'implementazione (la scheda, la dieta, la consulenza operativa). Risolve la paura di dire troppo: il valore venduto e' l'esecuzione, non il sapere. Effetto secondario: permette di essere generosi senza limiti nel contenuto gratuito, il che rinforza il ciclo del rinforzo (KA-07)."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-16",
+   "run": "j4UInmM9kKA",
+   "tipo": "Regola 4 / Equilibrio tra valore dato e dati richiesti",
+   "testo": "Regola 4: la richiesta di informazioni personali nell'optin deve essere PROPORZIONATA al valore percepito del lead magnet. Una calcolatrice con tre campi che chiede nome, cognome, telefono, indirizzo ed eta' crea uno squilibrio che uccide la conversione. Non e' 'chiedi il minimo assoluto': un lead magnet piu' sostanzioso puo' legittimamente giustificare una richiesta piu' corposa, a patto di venderla nell'optin."
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-17",
+   "run": "j4UInmM9kKA",
+   "tipo": "Regola 5 / L'optin va trattata come una sales page",
+   "testo": "Regola 5: la pagina di opt-in va scritta con lo stesso impegno di una sales page vera (anche mille parole), non come un form minimale dato per scontato, perche' si sta chiedendo a uno sconosciuto di cedere informazioni private, operazione che richiede persuasione quanto una vendita. Corollario strutturale esplicito: l'optin viene PRIMA della sales page nel funnel, quindi se l'optin e' rotta la sales page non riceve mai traffico sufficiente e non puo' compensare a valle, per quanto sia scritta bene. Investi nell'optin tanto quanto investiresti nella sales page."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-01",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Hook - problema comune",
+   "testo": "'Il cliente ti dice mandami il preventivo e poi non si sente piu' - il preventivo, se usato correttamente, diventa uno strumento di vendita potente. Distingue i freelancer che fatturano 5000+/mese come chi padroneggia questo strumento."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-02",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Tassonomia preventivi",
+   "testo": "Due tipi di preventivo: quello noioso/antipatico/deprimente e quello che aiuta a vendere di piu'."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-03",
+   "run": "EBU57iVAutA",
+   "tipo": "Posizionamento / Metodo vs fortuna",
+   "testo": "Chi chiude clienti paganti non ha solo fortuna/conoscenze - chi segue regole specifiche per il preventivo chiude clienti piu' facilmente, per esperienza diretta su 4 anni di lavoro online."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-04",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Anti-pattern documento organizzativo",
+   "testo": "Il preventivo vecchia scuola (prezzi/totale/servizi, formale) e' utilizzabile per l'organizzazione interna ma NON funziona come strumento di vendita perche' mostra solo la parte piu' difficile (dare soldi) senza costruire nulla prima. Differenza tra strumenti organizzativi e strumenti persuasivi."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-05",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Struttura - Pagina 1",
+   "testo": "Pagina 1: brandizzata, info base su di te/azienda. Prima impressione irreversibile. Test: se il cliente lo rimostra a un socio, deve dire 'wow che bella presentazione', non 'oh Cristo, numeri'."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-06",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Struttura - Pagina 2",
+   "testo": "Pagina 2: panoramica generale focalizzata sugli obiettivi del CLIENTE non sui tuoi servizi. Minimo: frase su cosa fa il cliente + frase sull'obiettivo + frase su cosa farai tu."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-07",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Struttura - Pagina 3, risultati vs servizi",
+   "testo": "Pagina 3: obiettivi + stime precise dei risultati reali, sempre prima dei servizi. 'L'obiettivo del cliente sono i risultati, non i tuoi servizi' - es: non '10 video' ma 'X views per generare X nuovi clienti'."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-08",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Struttura - Pagina 4",
+   "testo": "Pagina 4: compiti/deliverable, cosa farai e come. Concentrarsi su COSA fai (competenza), non ancora sui prezzi."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-09",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Struttura - Pagina 5",
+   "testo": "Pagina 5: prezzi veri, tabella chiara e semplice, IVA esplicitata (22%)."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-10",
+   "run": "EBU57iVAutA",
+   "tipo": "Fiscale / IVA - nota informativa",
+   "testo": "IVA (Italia, tipicamente 22%) va applicata in base al servizio e al regime di partita IVA - raccomandazione consulenza gratuita Fiscozen (sponsor). Segmento prevalentemente promozionale."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-11",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Regola 1 - estetica",
+   "testo": "'Fallo bello': serve visivamente attraente con logo in cima, non deve sembrare una fattura noiosa. Template Canva sufficienti, non serve essere designer."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-12",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Regola 2 - mostrare in call",
+   "testo": "'Mostralo in call': presentare live, non solo inviare - permette di controllare fraintendimenti/obiezioni sul momento. 'O fai tutto in call o nada'. Scaletta: condividi schermo 5-10min, spiega preventivo+strategia, poi prezzo, poi dubbi."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-13",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Regola 3 - diretti",
+   "testo": "'Non avere paura di essere diretto': troppa diplomazia genera fraintendimenti. Se il cliente non si fida, chiediglielo esplicitamente; se vuole garanzie non realistiche, spiega direttamente che non e' possibile."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-14",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Regola 4 - breakdown prezzi",
+   "testo": "Per servizi complessi/costosi, spiegare il breakdown dei costi in call rende comprensibile un prezzo alto. Esempio reale: shooting 5000 euro = affitto camera 900 + attori 500 + makeup 500 + operatore 250 + altri costi."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-15",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Regola 5 - dire il prezzo",
+   "testo": "'Non avere paura di dire il prezzo': dire il totale IVA inclusa in modo diretto ('Bam, press price'), aspettare la reazione in silenzio. Alle domande, tornare sulla pagina pertinente, spiegare, tornare al prezzo, ripetere fino al si'. Quando dice si', 'te lo dira' e basta'."
+  },
+  {
+   "uid": "EBU57iVAutA::KA-16",
+   "run": "EBU57iVAutA",
+   "tipo": "Vendita / Regola 6 - qualificare prima",
+   "testo": "Se il cliente chiede il preventivo troppo presto, struttura a 3 chiamate: Call1 capire progetto (10-15min), Call2 sviluppare obiettivi (~60min), Call3 presentare preventivo. Se chiesto prima, spiegare che serve una chiamata dedicata data la complessita'."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-01",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Formato / Consulenza reale",
+   "testo": "Il video e' la registrazione di una vera call di consulenza 1-a-1 con un cliente/follower (Vasco, marketing fotovoltaico) - Andrei applica live le proprie tecniche a un caso concreto con numeri reali."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-02",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Caso studio / ROAS reale",
+   "testo": "Vasco: 1 videochiamata, 2 call fissate (1 in trattativa, 1 chiusa), ~€100 spesi in ads per un cliente che vale €1500 - ROAS 'di tipo 15'. La domanda giusta e' quanto genera per euro speso, non quanto si e' speso in assoluto."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-03",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Framework / Diagnosi lead magnet debole",
+   "testo": "Funnel Vasco: ads->optin->call->chiusura. Lead magnet = masterclass generica. Diagnosi: se il funnel gia' genera ROAS ~15 con lead magnet mediocre, uno piu' specifico moltiplicherebbe ulteriormente il risultato."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-04",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Framework / 3 categorie ads",
+   "testo": "Framework: Esperimento (nuovi format/angle, guarda i dati, spegni se non converte), Evolvo (ad validati, si investe di piu'), Awareness (low-budget €5-10/gg su custom/lookalike audience, sempre attivo, obiettivo brand association non conversione diretta)."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-05",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Metodo / Content continuo",
+   "testo": "Errore comune: lanciare un ad una volta e aspettarsi che funzioni per un mese. Approccio corretto: trattare le ads come contenuto organico continuo, aggiungendo materiale ogni giorno - permette di operare anche a budget bassi."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-06",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Strategia / Brand association",
+   "testo": "Obiettivo awareness: far associare automaticamente il volto/brand a una categoria specifica per esposizione ripetuta - Andrei cita se stesso come esempio verificabile (faccia = copywriting)."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-07",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Framework / Targeting classico vs moderno",
+   "testo": "Mostrato su slide: classico = 'settare cose' (interessi/demografiche/comportamenti) + 'tue fonti' (Pixel, customer list). Moderno (poco discusso in Italia) = content-based: il contenuto stesso della creativa (parole, hook 'se sei X') fa targetizzare la piattaforma, funziona anche a livello di puro copy."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-08",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Metodo / Scaling creativo con variabili",
+   "testo": "Tecnica B2B locale: costruire decine di versioni dello stesso ad sostituendo variabili nel hook ('Se sei imprenditore con [N] dipendenti nella provincia di [X]') per ogni combinazione rilevante - fino a 50+ versioni, iper-specificita' percepita senza inventare concept diversi da zero."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-09",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Metodo / Cross-pollination settori adiacenti",
+   "testo": "Per trovare nuovi angle senza dipendere dai competitor diretti (che si copiano a vicenda), prendere pattern da un settore diverso ma familiare (Andrei: fitness->copywriting) - differenzia dal mercato omogeneo."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-10",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Regola operativa / Criterio spegnimento ad",
+   "testo": "Vasco spegneva ad dopo soglia fissa di spesa (€20) indipendentemente dal ritorno. Regola corretta: se un ad ha generato €1500, la spesa nominale accumulata e' irrilevante - unico criterio e' il ritorno generato, non un tetto arbitrario."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-11",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Regola operativa / Coerenza filosofia",
+   "testo": "Scegliere UNA filosofia/metodo e restarci fedeli invece di mescolare tattiche di guru diversi contemporaneamente - la causa di fallimento piu' comune e' applicare due filosofie contrastanti insieme, che confonde l'attribuzione dei risultati."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-12",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Framework / Gerarchia Strategia-Sottostrategia-Ad",
+   "testo": "Struttura mostrata su documento reale: Strategia (es. Sperimentazione ads) > Sottostrategia (es. Copiare content organici, Scenetta, Tier list) > Ad (esecuzione concreta). Sperimentazione = fase piu' importante perche' cio' che funziona passa a Evoluzione; Awareness resta categoria separata e continua."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-13",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Copy / Esempio scenetta relatabile B2B",
+   "testo": "Esempio sottostrategia 'scenetta': mettere in scena una telefonata con lead non qualificato ('caccia dei preventivi', piaga del settore fotovoltaico), raccontata da chi ha fatto realmente il setter - il concept 'si scrive da solo' quando basato su esperienza vissuta riconoscibile dal target."
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-14",
+   "run": "8Pf7d57Q0Jk",
+   "tipo": "Framework / Lead magnet problema adiacente",
+   "testo": "Alternativa alla masterclass generica: risolvere gratis un problema imprenditoriale ADIACENTE reale (es. mancanza idee contenuti social) con risorsa concreta. Meccanismo: crea 'feedback loop' di fiducia (se il consiglio gratis funziona, il prospect crede di piu' all'offerta a pagamento). Beneficio collaterale: confonde i competitor che copiano solo le ads dirette."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-01",
+   "run": "cs2online-lezione-13",
+   "tipo": "Workflow end-to-end",
+   "testo": "Workflow ricerca copywriting end-to-end osservato per intero su cliente reale: call onboarding -> trascrizione Gemini -> doc ClickUp 'Client overview' -> Project Claude dedicato con doc allegato -> ricerca in parallelo Claude+Perplexity stesso prompt -> editing manuale MarkEdit -> documento finale con citazioni."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-02",
+   "run": "cs2online-lezione-13",
+   "tipo": "Prompt verbatim",
+   "testo": "Prompt esatto di ricerca copywriting (osservato a schermo, verbatim): vincola l'AI a separare 'ricerca raccolta dall'utente' da 'ricerca fatta online', vieta il blog personale come fonte dati oggettivi ('solo ed esclusivamente ricerche scientifiche' per i dati, blog solo per opinioni)."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-03",
+   "run": "cs2online-lezione-13",
+   "tipo": "Tecnica / multi-tool parallelo",
+   "testo": "Claude e Perplexity usati IN PARALLELO sullo stesso identico prompt/task per poi scegliere/combinare l'output migliore - osservato con entrambe le interfacce a schermo simultaneamente, stesso testo di prompt."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-04",
+   "run": "cs2online-lezione-13",
+   "tipo": "Struttura documento",
+   "testo": "Struttura reale del documento di ricerca finale: Executive Summary -> Parte 1 Ricerca Interna (client overview) -> Parte 2 Ricerca Esterna (studi scientifici + blog solo opinioni) -> Sintesi operativa (Pain point numerati con fonte, es. '47% molla dopo 3 episodi[^2]', e Obiezioni da neutralizzare con contro-argomento specifico)."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-05",
+   "run": "cs2online-lezione-13",
+   "tipo": "Scelta modello",
+   "testo": "Modello usato per Project cliente: Opus 4.6 con Extended Thinking - coerente con principio lezione 6 (documento riusato indefinitamente = modello piu' potente)."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-06",
+   "run": "cs2online-lezione-13",
+   "tipo": "Tool osservato",
+   "testo": "Tool di dettatura vocale 'Wispr' menzionato solo come overlay testo a schermo ('Per dettare roba in questo modo al mio mac, uso l'app Wispr; devastante'), non presente nella panoramica ufficiale scritta - trovato solo con visione diretta del frame."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-07",
+   "run": "cs2online-lezione-13",
+   "tipo": "Struttura organizzativa agenzia",
+   "testo": "Struttura organizzativa reale agenzia (ClickUp): spazi separati 'AP Formazione', 'AP Sales', 'Clients' (sotto-cartelle Onboarding/Active clients/Completed projects/Archive) - ogni cliente ha doc 'Client overview - [nome]' con sotto-pagine per servizio."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-08",
+   "run": "cs2online-lezione-13",
+   "tipo": "Regola operativa",
+   "testo": "Regola esplicita: togliere le fonti/link dal documento di contesto finale - se serve che Claude legga un sito specifico, glielo si fa leggere direttamente in quel momento; il documento di contesto serve per non ripetere l'operazione ogni volta, non per essere un archivio link."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-09",
+   "run": "cs2online-lezione-13",
+   "tipo": "Principio 80/20 ricerca",
+   "testo": "L'AI fa il 90% del lavoro pesante (ricerca, organizzazione, compilazione), l'umano il 10% di controllo/editing - ma quel 10% resta indispensabile per giudicare se l'output e' buono."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-10",
+   "run": "cs2online-lezione-13",
+   "tipo": "Allocazione tempo",
+   "testo": "Regola su dove investire il tempo umano risparmiato: i primary text li fa Claude in 5 minuti, le ore risparmiate si investono sulla sales page che richiede piu' cura - il tempo libero va reinvestito nel lavoro a piu' alto valore, non solo 'risparmiato'."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-11",
+   "run": "cs2online-lezione-13",
+   "tipo": "Posizione anti-over-engineering",
+   "testo": "Le mega-automazioni 'full AI' sono dichiarate overkill per un freelancer: producono output mediocri e richiederebbero budget da azienda strutturata per funzionare bene."
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-12",
+   "run": "cs2online-lezione-13",
+   "tipo": "Tecnica ricerca / voice-of-customer",
+   "testo": "Tecnica di ricerca: andare su YouTube a cercare recensioni di servizi simili per capire il linguaggio reale del target - TERZA occorrenza indipendente dello stesso metodo nel materiale Andrei Pascu (dopo 2 video YouTube del run andrei-pascu-001) - APPLICATO come patch a copywriting/SKILL.md in questa sessione."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-01",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / System Prompt",
+   "testo": "System prompt = istruzione nascosta data all'AI dal provider (Anthropic per Claude), non modificabile dall'utente; è la base su cui si costruiscono i prompt personalizzati."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-02",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Artifact-Canvas",
+   "testo": "Artifact (Claude) / Canvas (ChatGPT, Gemini) = documento condiviso stile Google Docs collaborativo; si attiva chiedendo esplicitamente all'AI di 'lavorare dentro un artifact'."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-03",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Projects",
+   "testo": "Project (Claude) = equivalente Custom GPTs (ChatGPT)/Gems (Gemini): cartella che raggruppa chat per progetto/cliente con nome, istruzioni fisse e file caricati (ricerche mercato, trascrizioni chiamate, richieste cliente) — ogni nuova chat nel project eredita il contesto senza doverlo riscrivere."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-04",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Reasoning",
+   "testo": "Chain of thought/reasoning = l'AI mostra il ragionamento prima della risposta finale; risposte con reasoning attivo dichiarate 'significativamente migliori'. Extended thinking (Claude Opus 4.6) = modalità per farlo ragionare più a lungo."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-05",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / API",
+   "testo": "API = collega due servizi diversi (es. Google Sheets → Yahoo Mail); API key = credenziale segreta, mai da condividere, reperibile su piattaforme developer (Platform OpenAI, Anthropic for Developers) e non nella chat consumer."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-06",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Vibe coding",
+   "testo": "Vibe coding = scrivere codice in linguaggio naturale lasciando che l'AI lo produca. Esempio citato: calendario HTML collegato a Google Sheets via API con un singolo prompt. La sales page del corso stesso ha copy scritto a mano ma development interamente fatto da AI."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-07",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Agent e automazioni",
+   "testo": "Agent = AI che esegue azioni autonome (non solo conversazione); Automazione = workflow che esegue step da solo (es. reminder email schedulata); Zapier citato come tool no-code per crearle."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-08",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Rischio",
+   "testo": "Hallucination = l'AI presenta un'informazione completamente inventata come vera, con sicurezza — rischio esplicito perché 'a volte non è ovvio che sta mentendo'."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-09",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Context Engineering",
+   "testo": "Context Engineering = 'l'arte di organizzare e dare le informazioni giuste all'AI nel modo giusto... non basta mandare PDF a raffica: serve struttura' — definizione ufficiale, coerente con la lezione 8 dedicata dello stesso corso."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-10",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Prompting - persona",
+   "testo": "Persona (nel prompting) = istruire l'AI a comportarsi come un professionista specifico (es. 'sei un copywriter senior con 10 anni di esperienza') — dichiarato che 'cambia radicalmente la qualità della risposta'."
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-11",
+   "run": "cs2online-lezione-02",
+   "tipo": "Glossario / Few-shot vs zero-shot",
+   "testo": "Few-shot prompting (dare esempi concreti nel prompt) migliora l'output rispetto a zero-shot (nessun esempio, solo istruzione) — zero-shot 'funziona per task semplici, meno per roba complessa'."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-01",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Formato / Premessa video",
+   "testo": "Materiale analizzato: DM Instagram reale ricevuto passivamente da Andrei (non sollecitato). Reel veloce (82s) vs formato live-review lungo dei video 16/17 - stesso principio di analisi applicato al formato short-form."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-02",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Copy / Targeting - reverse-engineering",
+   "testo": "Dalla frase 'idk if girls even message guys first anymore' si deduce il target senza dichiararlo: chi si riconosce nell'eccezione ('a me non scrivono mai per primo') e' il target reale, definito da uno stato psicologico non da un dato demografico."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-03",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Copy / Simulazione del lettore target",
+   "testo": "Metodo di audit: impersonare il lettore target e verbalizzare la reazione interna ('se io fossi in target, risponderei...') per testare l'effetto emotivo reale del copy, non solo la conformita' a una struttura."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-04",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Copy / Differenziazione come ricompensa emotiva",
+   "testo": "'Thought you were cute' funziona perche' fa sentire il lettore diverso/scelto rispetto alla massa - questa differenziazione emotiva abilita la disponibilita' psicologica a seguire il CTA successivo."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-05",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Copy / Coerenza Tone of Voice",
+   "testo": "TOV 'molto normale e molto giovanile' collegato esplicitamente alla foto profilo 'molto giovanile' - coerenza fra registro verbale e presentazione visiva come segnale di credibilita'/autenticita'."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-06",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Framework / APSOC - nomenclatura",
+   "testo": "Framework mostrato a schermo come 'APSOC' (5 lettere), coerente col framework interno DE. Applicazione compressa su un DM di poche righe: 4 pillar nominati (A/P/S/Obiezioni), Social Proof assente/non applicabile in un primo contatto. DA VERIFICARE: discrepanza fra audio auto-trascritto ('apso', 4 lettere) e caption burned-in ('apsoc', 5 lettere)."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-07",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Framework / APSOC - pillar Attenzione",
+   "testo": "Attenzione = la foto profilo/il volto della mittente - in un contesto DM/social l'elemento che cattura l'attenzione e' visivo (avatar), non testuale; il testo arriva dopo."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-08",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Framework / APSOC - pillar Problema implicito",
+   "testo": "Il Problema non e' mai dichiarato nel testo del DM, ma attivato nella mente del lettore ('che problema? Il fatto che io sono sfigato, quindi nessuno mi scrive') - conferma della tecnica Pain Point Implicito gia' documentata in cro-copy-architect/framework-apsoc-operativo.md, qui applicata a un DM invece che a una sales page."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-09",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Framework / APSOC - pillar CTA, redirect canale",
+   "testo": "Soluzione e CTA fusi nella riga di chiusura. Pattern di redirect: il DM arriva da un canale/account secondario a basso rischio, il CTA chiede di spostare la conversazione sull'account principale - convogliare il lead qualificato verso il canale primario di vendita."
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-10",
+   "run": "VbxTgp_fz8Y",
+   "tipo": "Meta / Framing e retention",
+   "testo": "Video etichettato 'just for fun' ma chiude comunque con CTA soft verso il canale/link in bio - anche nei contenuti leggeri viene inserito un redirect verso l'offerta principale, il formato leggero funziona anche da acquisizione."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-01",
+   "run": "cs2online-lezione-16",
+   "tipo": "Criterio decisionale",
+   "testo": "Criterio per scegliere copy 'fast' vs 'perfetto': valutare il budget ads del cliente - se spende 10-20 euro/giorno, non ha senso passare un'ora sui primary text."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-02",
+   "run": "cs2online-lezione-16",
+   "tipo": "Workflow tecnico multi-tool",
+   "testo": "Workflow creative multiple: scaricare video ad (SnapTik.app per TikTok senza watermark) -> unire in timeline unica (DaVinci Resolve) -> esportare SOLO audio in MP3 -> trascrivere con ElevenLabs Speech-to-Text (rimuovendo timestamp/speaker) -> un unico file di contesto invece di trascrivere ogni video separatamente."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-03",
+   "run": "cs2online-lezione-16",
+   "tipo": "Struttura prompt",
+   "testo": "Struttura prompt con contesto limitato: contesto -> problema -> richiesta. Specificare sempre il numero di versioni desiderate (Meta permette piu' varianti nella stessa ad)."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-04",
+   "run": "cs2online-lezione-16",
+   "tipo": "Prompt verbatim",
+   "testo": "Prompt esatto osservato a schermo (Opus 4.6 Extended, file txt allegato 25 righe trascrizione): tono colloquiale/informale anche in contesto di lavoro reale con cliente pagante - stile diretto dell'autore."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-05",
+   "run": "cs2online-lezione-16",
+   "tipo": "Regola operativa / no-delega-strategia",
+   "testo": "Regola esplicita e ripetuta (4a occorrenza nel corso): NON delegare la strategia a Claude - inserire nel prompt USP, CTA desiderata ed elementi strategici specifici. Claude va usato 'solo per la forma', non per decidere cosa dire."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-06",
+   "run": "cs2online-lezione-16",
+   "tipo": "Tecnica / passare sales page a Claude",
+   "testo": "3 modi per passare una sales page a Claude: (1) link diretto, (2) copia-incolla manuale testo, (3) tool online (totheweb.com) HTML->testo. GoFullPage (screenshot PDF pagina intera) alternativa con limite dichiarato: 'il PDF a volte non viene letto bene da Claude, meglio testo o markdown'."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-07",
+   "run": "cs2online-lezione-16",
+   "tipo": "Regola operativa / naming file",
+   "testo": "Dare nome descrittivo al file allegato (es. 'Copywriting Mentorship Sales Page Copy') per aiutare Claude a capire il contesto senza spiegarlo a parole."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-08",
+   "run": "cs2online-lezione-16",
+   "tipo": "Arricchimento contesto",
+   "testo": "Possibilita' di arricchire ulteriormente il contesto oltre alla sales page: recensioni, sito personale, brand guide, file da GitHub."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-09",
+   "run": "cs2online-lezione-16",
+   "tipo": "Iterazione output",
+   "testo": "Se l'output non piace nel formato, chiedere esplicitamente la riformattazione (es. 'mettimelo come markdown') invece di rifare il prompt da zero."
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-10",
+   "run": "cs2online-lezione-16",
+   "tipo": "Nota tecnica browser",
+   "testo": "Arc (browser) supporta estensioni Chrome perche' gira su Chromium - permette di usare GoFullPage anche fuori da Chrome stesso."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-01",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Copy / Hook - universalita'",
+   "testo": "Apertura che allarga l'audience ('non importa se sei marketer, imprenditore, copywriter o funnel operator') prima di promettere chiarezza su un concetto 'fondamentale' - hook di chiarezza concettuale, non statistico."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-02",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Framework / Business base",
+   "testo": "Framing base: ogni impresa esiste per vendere; a livello base ha entrate e uscite, il marketing e' un tipo di uscita da valutare in funzione di quanto genera in entrate."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-03",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Metodo / Validazione spesa marketing",
+   "testo": "Tecnica didattica: costruire un esempio numerico concreto (prodotto 'cubo' €15, spesa €1,50/giorno) invece di spiegare astrattamente se una spesa marketing 'ha senso' - risposta esplicita 'dipende', la sensatezza si misura sempre in relazione al ritorno."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-04",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Framework / Calcolo margine marketing",
+   "testo": "Calcolo mostrato: 10 unita'/giorno x €15 = €150 fatturato - €50 spesa ads = €100 profitto lordo/giorno. Il marketing 'ha senso' quando l'entrata generata supera l'uscita spesa, prima di considerare costi aggiuntivi per il profitto netto."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-05",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Terminologia / ROAS",
+   "testo": "Introduzione del termine ROAS (Return On Ad Spend, pronunciato 'Raz' nel video) come rapporto tra spesa marketing e fatturato generato - obiettivo: massimizzare questo rapporto, varia in base al funnel usato."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-06",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Framework / Funnel vendita diretta",
+   "testo": "Definizione funnel di vendita diretta: ads -> sito con ordine autonomo -> transazione, interamente automatizzato, senza coinvolgimento umano (es. e-commerce magliette). Requisito: prodotto acquistabile senza conversazione/consulenza previa."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-07",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Framework / Funnel di contatti",
+   "testo": "Definizione funnel di contatti: ads -> traffico -> modulo raccolta dati -> call (spesso mascherata da 'consulenza gratuita' ma di fatto call di vendita) -> acquisto in call. Usato quando il prodotto richiede personalizzazione/conversazione (es. case, prodotti custom)."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-08",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Regola operativa / Soglia prezzo + red flag",
+   "testo": "Per prodotti digitali (es. corso €948) default = vendita diretta, salvo situazioni particolari. Osservazione critica: molti usano il funnel contatti non per necessita' del prodotto ma perche' serve un venditore per far comprare - descritto come 'generalmente una red flag': se non si converte in nessun altro modo, il problema reale e' nel prodotto, nel copy o nella mancata consapevolezza costruita, non nel formato del funnel."
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-09",
+   "run": "VYyIF1r6tkw",
+   "tipo": "Framework / Criteri scelta + trade-off",
+   "testo": "Criteri di scelta: contatti quando serve conversazione per la transazione (coaching, personal training, su misura); vendita diretta quando prezzo sotto soglia indicativa ~€1000-2000 e non serve coinvolgimento umano (richiede saper 'vendere per iscritto'). Svantaggio contatti: percentuale ai venditori, processo meno automatico, piu' tempo per le call."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-01",
+   "run": "cs2online-bonus-02",
+   "tipo": "Principio / gestione clienti",
+   "testo": "Principio 'percezione e' realta'' applicato alla gestione clienti: se il cliente percepisce inattivita' (anche se il lavoro procede), per lui e' come se fosse vero - touchpoint regolari fondamentali indipendentemente dal carico di lavoro reale svolto."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-02",
+   "run": "cs2online-bonus-02",
+   "tipo": "Regola operativa",
+   "testo": "Regola operativa: non lasciare mai passare piu' di una settimana senza un touchpoint intenzionale col cliente advertising (email con report)."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-03",
+   "run": "cs2online-bonus-02",
+   "tipo": "Architettura sistema",
+   "testo": "Architettura del sistema: 4 file di contesto persistenti riutilizzati ogni settimana - file 'contesto' (cosa deve fare l'AI), file 'istruzioni' (step precisi sempre uguali), 'style-JSON.json' (brand guidelines su GitHub), dati settimanali incollati al momento."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-04",
+   "run": "cs2online-bonus-02",
+   "tipo": "Pattern anti-hallucination",
+   "testo": "Regola anti-hallucination concreta: istruzioni scritte in modo che l'AI RIFIUTI di procedere se mancano informazioni obbligatorie - 4 dati richiesti (report ultima settimana, report settimana precedente, decisioni prossima settimana, azioni miglioramento). Osservato a schermo: step 'Validate all 4 required information pieces' completato PRIMA di generare il PDF."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-05",
+   "run": "cs2online-bonus-02",
+   "tipo": "Dettaglio tecnico osservato",
+   "testo": "Dettaglio tecnico NON presente nel testo ufficiale, trovato solo con visione diretta: Claude Cowork genera il PDF scrivendo ed eseguendo codice Python con la libreria reportlab, installata al volo come step del task agentico. Processo visibile: Running skill -> Loading tools -> Update todo list -> Install reportlab -> Writing create_report.py."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-06",
+   "run": "cs2online-bonus-02",
+   "tipo": "Output verificato",
+   "testo": "Output finale verificato: PDF a 7 pagine, brandizzato (copertina 'AP SALES'), struttura professionale (Executive Summary, Confronto Week-over-Week, Analisi per Piattaforma)."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-07",
+   "run": "cs2online-bonus-02",
+   "tipo": "Convenzione naming",
+   "testo": "Convenzione naming file: usare trattini, non underscore o spazi, nei nomi dei file di contesto."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-08",
+   "run": "cs2online-bonus-02",
+   "tipo": "Concetto / anticipazione skill",
+   "testo": "Il sistema costruito (istruzioni+contesto riutilizzabili+workflow ripetibile) viene esplicitamente definito dall'autore come 'di fatto una skill di Claude' - anticipazione concettuale del meccanismo Claude Skills (trattato in Bonus 4)."
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-09",
+   "run": "cs2online-bonus-02",
+   "tipo": "Riutilizzo sistema",
+   "testo": "Riutilizzo per report successivi: basta avviare nuovo task su Cowork, condividere la stessa cartella e incollare solo i dati aggiornati - zero rilavorazione delle istruzioni."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-01",
+   "run": "cs2online-bonus-03",
+   "tipo": "Concetto / MCP",
+   "testo": "Concetto MCP (Model Context Protocol): alternativa piu' semplice alle API dirette per collegare Claude ad app esterne. Catena: Claude -> MCP -> App esegue azioni direttamente dalla chat."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-02",
+   "run": "cs2online-bonus-03",
+   "tipo": "Rischio / sicurezza",
+   "testo": "Rischio esplicito segnalato: dare accesso illimitato a Claude sulle proprie app puo' causare azioni indesiderate (es. rimborsi accidentali su Stripe) - da qui necessita' del sistema di permessi granulari."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-03",
+   "run": "cs2online-bonus-03",
+   "tipo": "Sistema permessi osservato",
+   "testo": "Sistema di permessi Claude Connectors osservato dal vivo: per ogni tool del connector (es. 23 read-only tools ClickUp) si sceglie 'Ask/Always allow/Deny' singolarmente - non e' un accesso on/off globale."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-04",
+   "run": "cs2online-bonus-03",
+   "tipo": "Prompt verbatim / conferma azione",
+   "testo": "Prompt esatto per creare task ClickUp da Claude: 'Creo un task su ClickUp sotto la general B2C, general B2C, che dice inviare una mail a Marco. Metti come due date domani e delegalo ad Andrei, ovvero me stesso.' Claude chiede conferma esplicita ('Search Workspace from ClickUp - Always allow/Deny') prima di agire."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-05",
+   "run": "cs2online-bonus-03",
+   "tipo": "Scelta tool automazione",
+   "testo": "Zapier scelto come 'ponte universale' (8.000+ app) rispetto a n8n (piu' tecnico) e Make (user-friendly ma meno esteso) - criterio: copertura app + presenza di un MCP proprio."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-06",
+   "run": "cs2online-bonus-03",
+   "tipo": "Limitazione nota",
+   "testo": "Limitazione nota di Gmail come connector diretto: permette solo bozze, non invio reale - aggirata usando Zapier MCP come intermediario per l'invio effettivo."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-07",
+   "run": "cs2online-bonus-03",
+   "tipo": "Tecnica / connector custom",
+   "testo": "Metodo per aggiungere connector custom non presente in 'Browse Connectors': cercare '[nome app] + MCP' su Google e copiare nome/URL del server manualmente."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-08",
+   "run": "cs2online-bonus-03",
+   "tipo": "Feature / scheduling",
+   "testo": "Possibilita' di schedulare task ricorrenti su Cowork collegati a ClickUp - osservato dialog 'Create scheduled task' con nome, descrizione, prompt, frequenza."
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-09",
+   "run": "cs2online-bonus-03",
+   "tipo": "Copertura app / Zapier MCP",
+   "testo": "Zapier MCP permette di aggiungere qualunque tool tra centinaia di app popolari (Gmail, Sheets, Notion, Airtable, Outlook, HubSpot, Slack, Asana, Salesforce, Jira, ecc.) a un singolo server MCP condiviso - un solo setup, accesso a tutto."
+  }
+ ]
+}

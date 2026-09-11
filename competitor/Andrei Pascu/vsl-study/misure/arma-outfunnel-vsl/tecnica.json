@@ -1,0 +1,34 @@
+{
+ "file": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\competitor\\Andrei Pascu\\vsl-study\\sorgenti\\arma-outfunnel-vsl\\video.mp4",
+ "peso_byte": 61624870,
+ "peso_MB": 58.8,
+ "contenitore": "mov,mp4,m4a,3gp,3g2,mj2",
+ "durata_s": 99.136,
+ "durata_hhmmss": "1:39.14",
+ "bitrate_totale_bps": 4972955,
+ "video": {
+  "codec": "h264",
+  "profilo": "High",
+  "pix_fmt": "yuv420p",
+  "larghezza": 1920,
+  "altezza": 1080,
+  "fps_dichiarato": "30000/1001",
+  "fps_reale": 29.97003,
+  "frame_totali": 2971,
+  "frame_totali_metodo": "ffprobe stream=nb_frames",
+  "durata_s": 99.132,
+  "bitrate_bps": 4774841
+ },
+ "audio": {
+  "codec": "aac",
+  "profilo": "LC",
+  "sample_rate_hz": 48000,
+  "canali": 2,
+  "durata_s": 99.136,
+  "bitrate_bps": 189375,
+  "frame_audio": 4649
+ },
+ "comandi": [
+  "ffprobe -v error -show_format -show_streams -of json \"C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\competitor\\Andrei Pascu\\vsl-study\\sorgenti\\arma-outfunnel-vsl\\video.mp4\""
+ ]
+}

@@ -1,0 +1,6159 @@
+{
+ "slug": "claude-speedrun-sez14",
+ "strumento": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "lingua": "it",
+ "lingua_probabilita": 1,
+ "durata_video_s": 357.12,
+ "segmenti": [
+  {
+   "i": 0,
+   "inizio": 0.0,
+   "fine": 3.02,
+   "durata": 3.02,
+   "testo": "Ma per cosa utilizzo l'intelligenza artificiale?",
+   "parole": [
+    {
+     "p": "Ma",
+     "inizio": 0.0,
+     "fine": 0.2
+    },
+    {
+     "p": "per",
+     "inizio": 0.2,
+     "fine": 0.56
+    },
+    {
+     "p": "cosa",
+     "inizio": 0.56,
+     "fine": 0.96
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 0.96,
+     "fine": 1.7
+    },
+    {
+     "p": "l",
+     "inizio": 1.7,
+     "fine": 1.88
+    },
+    {
+     "p": "'intelligenza",
+     "inizio": 1.88,
+     "fine": 2.42
+    },
+    {
+     "p": "artificiale?",
+     "inizio": 2.42,
+     "fine": 3.02
+    }
+   ],
+   "loudness_M_media": -21.0
+  },
+  {
+   "i": 1,
+   "inizio": 3.08,
+   "fine": 4.32,
+   "durata": 1.24,
+   "testo": "Ma intanto chi cazzo sono?",
+   "parole": [
+    {
+     "p": "Ma",
+     "inizio": 3.08,
+     "fine": 3.2
+    },
+    {
+     "p": "intanto",
+     "inizio": 3.2,
+     "fine": 3.42
+    },
+    {
+     "p": "chi",
+     "inizio": 3.42,
+     "fine": 3.58
+    },
+    {
+     "p": "cazzo",
+     "inizio": 3.58,
+     "fine": 4.04
+    },
+    {
+     "p": "sono?",
+     "inizio": 4.04,
+     "fine": 4.32
+    }
+   ],
+   "loudness_M_media": -18.2
+  },
+  {
+   "i": 2,
+   "inizio": 4.4,
+   "fine": 8.86,
+   "durata": 4.46,
+   "testo": "Titolare di UpSales, siamo un'agenzia di marketing e l'ho avviata con NIENTE.",
+   "parole": [
+    {
+     "p": "Titolare",
+     "inizio": 4.4,
+     "fine": 4.82
+    },
+    {
+     "p": "di",
+     "inizio": 4.82,
+     "fine": 5.0
+    },
+    {
+     "p": "UpSales,",
+     "inizio": 5.0,
+     "fine": 5.56
+    },
+    {
+     "p": "siamo",
+     "inizio": 5.72,
+     "fine": 5.76
+    },
+    {
+     "p": "un",
+     "inizio": 5.76,
+     "fine": 5.88
+    },
+    {
+     "p": "'agenzia",
+     "inizio": 5.88,
+     "fine": 6.22
+    },
+    {
+     "p": "di",
+     "inizio": 6.22,
+     "fine": 6.38
+    },
+    {
+     "p": "marketing",
+     "inizio": 6.38,
+     "fine": 6.94
+    },
+    {
+     "p": "e",
+     "inizio": 6.94,
+     "fine": 7.44
+    },
+    {
+     "p": "l",
+     "inizio": 7.44,
+     "fine": 7.56
+    },
+    {
+     "p": "'ho",
+     "inizio": 7.56,
+     "fine": 7.66
+    },
+    {
+     "p": "avviata",
+     "inizio": 7.66,
+     "fine": 8.0
+    },
+    {
+     "p": "con",
+     "inizio": 8.0,
+     "fine": 8.32
+    },
+    {
+     "p": "NIENTE.",
+     "inizio": 8.32,
+     "fine": 8.86
+    }
+   ],
+   "loudness_M_media": -17.7
+  },
+  {
+   "i": 3,
+   "inizio": 9.0,
+   "fine": 9.92,
+   "durata": 0.92,
+   "testo": "Meno di niente.",
+   "parole": [
+    {
+     "p": "Meno",
+     "inizio": 9.0,
+     "fine": 9.24
+    },
+    {
+     "p": "di",
+     "inizio": 9.24,
+     "fine": 9.48
+    },
+    {
+     "p": "niente.",
+     "inizio": 9.48,
+     "fine": 9.92
+    }
+   ],
+   "loudness_M_media": -18.2
+  },
+  {
+   "i": 4,
+   "inizio": 10.18,
+   "fine": 15.0,
+   "durata": 4.82,
+   "testo": "Ho iniziato come freelancer, lavoravo da solo e nel 2021 ho cominciato ad assumere un team.",
+   "parole": [
+    {
+     "p": "Ho",
+     "inizio": 10.18,
+     "fine": 10.26
+    },
+    {
+     "p": "iniziato",
+     "inizio": 10.26,
+     "fine": 10.6
+    },
+    {
+     "p": "come",
+     "inizio": 10.6,
+     "fine": 10.8
+    },
+    {
+     "p": "freelancer,",
+     "inizio": 10.8,
+     "fine": 11.54
+    },
+    {
+     "p": "lavoravo",
+     "inizio": 11.76,
+     "fine": 12.04
+    },
+    {
+     "p": "da",
+     "inizio": 12.04,
+     "fine": 12.32
+    },
+    {
+     "p": "solo",
+     "inizio": 12.32,
+     "fine": 12.56
+    },
+    {
+     "p": "e",
+     "inizio": 12.56,
+     "fine": 12.84
+    },
+    {
+     "p": "nel",
+     "inizio": 12.84,
+     "fine": 12.96
+    },
+    {
+     "p": "2021",
+     "inizio": 12.96,
+     "fine": 13.54
+    },
+    {
+     "p": "ho",
+     "inizio": 13.54,
+     "fine": 13.82
+    },
+    {
+     "p": "cominciato",
+     "inizio": 13.82,
+     "fine": 14.18
+    },
+    {
+     "p": "ad",
+     "inizio": 14.18,
+     "fine": 14.32
+    },
+    {
+     "p": "assumere",
+     "inizio": 14.32,
+     "fine": 14.6
+    },
+    {
+     "p": "un",
+     "inizio": 14.6,
+     "fine": 14.82
+    },
+    {
+     "p": "team.",
+     "inizio": 14.82,
+     "fine": 15.0
+    }
+   ],
+   "loudness_M_media": -19.8
+  },
+  {
+   "i": 5,
+   "inizio": 15.22,
+   "fine": 18.36,
+   "durata": 3.14,
+   "testo": "Adesso andiamo a giro per tutta l'Italia, a registrare con clienti.",
+   "parole": [
+    {
+     "p": "Adesso",
+     "inizio": 15.22,
+     "fine": 15.48
+    },
+    {
+     "p": "andiamo",
+     "inizio": 15.48,
+     "fine": 15.7
+    },
+    {
+     "p": "a",
+     "inizio": 15.7,
+     "fine": 15.8
+    },
+    {
+     "p": "giro",
+     "inizio": 15.8,
+     "fine": 15.96
+    },
+    {
+     "p": "per",
+     "inizio": 15.96,
+     "fine": 16.16
+    },
+    {
+     "p": "tutta",
+     "inizio": 16.16,
+     "fine": 16.34
+    },
+    {
+     "p": "l",
+     "inizio": 16.34,
+     "fine": 16.48
+    },
+    {
+     "p": "'Italia,",
+     "inizio": 16.48,
+     "fine": 17.0
+    },
+    {
+     "p": "a",
+     "inizio": 17.18,
+     "fine": 17.24
+    },
+    {
+     "p": "registrare",
+     "inizio": 17.24,
+     "fine": 17.58
+    },
+    {
+     "p": "con",
+     "inizio": 17.58,
+     "fine": 17.8
+    },
+    {
+     "p": "clienti.",
+     "inizio": 17.8,
+     "fine": 18.36
+    }
+   ],
+   "loudness_M_media": -18.6
+  },
+  {
+   "i": 6,
+   "inizio": 19.46,
+   "fine": 21.56,
+   "durata": 2.1,
+   "testo": "Il test, essendo...",
+   "parole": [
+    {
+     "p": "Il",
+     "inizio": 19.46,
+     "fine": 19.66
+    },
+    {
+     "p": "test,",
+     "inizio": 19.66,
+     "fine": 20.16
+    },
+    {
+     "p": "essendo...",
+     "inizio": 20.68,
+     "fine": 21.56
+    }
+   ],
+   "loudness_M_media": -17.4
+  },
+  {
+   "i": 7,
+   "inizio": 21.56,
+   "fine": 25.78,
+   "durata": 4.22,
+   "testo": "E chiudiamo contratti di migliaia su migliaia su migliaia di euro, come se non ci fosse un domani.",
+   "parole": [
+    {
+     "p": "E",
+     "inizio": 21.56,
+     "fine": 21.68
+    },
+    {
+     "p": "chiudiamo",
+     "inizio": 21.68,
+     "fine": 22.0
+    },
+    {
+     "p": "contratti",
+     "inizio": 22.0,
+     "fine": 22.46
+    },
+    {
+     "p": "di",
+     "inizio": 22.46,
+     "fine": 22.64
+    },
+    {
+     "p": "migliaia",
+     "inizio": 22.64,
+     "fine": 22.98
+    },
+    {
+     "p": "su",
+     "inizio": 22.98,
+     "fine": 23.16
+    },
+    {
+     "p": "migliaia",
+     "inizio": 23.16,
+     "fine": 23.56
+    },
+    {
+     "p": "su",
+     "inizio": 23.56,
+     "fine": 23.74
+    },
+    {
+     "p": "migliaia",
+     "inizio": 23.74,
+     "fine": 24.06
+    },
+    {
+     "p": "di",
+     "inizio": 24.06,
+     "fine": 24.2
+    },
+    {
+     "p": "euro,",
+     "inizio": 24.2,
+     "fine": 24.4
+    },
+    {
+     "p": "come",
+     "inizio": 24.48,
+     "fine": 24.64
+    },
+    {
+     "p": "se",
+     "inizio": 24.64,
+     "fine": 24.78
+    },
+    {
+     "p": "non",
+     "inizio": 24.78,
+     "fine": 24.96
+    },
+    {
+     "p": "ci",
+     "inizio": 24.96,
+     "fine": 25.14
+    },
+    {
+     "p": "fosse",
+     "inizio": 25.14,
+     "fine": 25.34
+    },
+    {
+     "p": "un",
+     "inizio": 25.34,
+     "fine": 25.5
+    },
+    {
+     "p": "domani.",
+     "inizio": 25.5,
+     "fine": 25.78
+    }
+   ],
+   "loudness_M_media": -19.2
+  },
+  {
+   "i": 8,
+   "inizio": 25.78,
+   "fine": 31.5,
+   "durata": 5.72,
+   "testo": "impressione che là fuori si parli di ai come se fosse una telenovela e tutto",
+   "parole": [
+    {
+     "p": "impressione",
+     "inizio": 25.78,
+     "fine": 26.6
+    },
+    {
+     "p": "che",
+     "inizio": 26.6,
+     "fine": 26.72
+    },
+    {
+     "p": "là",
+     "inizio": 26.72,
+     "fine": 26.98
+    },
+    {
+     "p": "fuori",
+     "inizio": 26.98,
+     "fine": 27.24
+    },
+    {
+     "p": "si",
+     "inizio": 27.24,
+     "fine": 27.42
+    },
+    {
+     "p": "parli",
+     "inizio": 27.42,
+     "fine": 27.76
+    },
+    {
+     "p": "di",
+     "inizio": 27.76,
+     "fine": 28.0
+    },
+    {
+     "p": "ai",
+     "inizio": 28.0,
+     "fine": 28.38
+    },
+    {
+     "p": "come",
+     "inizio": 28.38,
+     "fine": 28.66
+    },
+    {
+     "p": "se",
+     "inizio": 28.66,
+     "fine": 28.96
+    },
+    {
+     "p": "fosse",
+     "inizio": 28.96,
+     "fine": 29.3
+    },
+    {
+     "p": "una",
+     "inizio": 29.3,
+     "fine": 29.74
+    },
+    {
+     "p": "telenovela",
+     "inizio": 29.74,
+     "fine": 30.94
+    },
+    {
+     "p": "e",
+     "inizio": 30.94,
+     "fine": 31.24
+    },
+    {
+     "p": "tutto",
+     "inizio": 31.24,
+     "fine": 31.5
+    }
+   ],
+   "loudness_M_media": -18.5
+  },
+  {
+   "i": 9,
+   "inizio": 31.5,
+   "fine": 36.1,
+   "durata": 4.6,
+   "testo": "hype tutto quanto una wow è uscito il nuovo modello generativo di immagini e",
+   "parole": [
+    {
+     "p": "hype",
+     "inizio": 31.5,
+     "fine": 31.94
+    },
+    {
+     "p": "tutto",
+     "inizio": 31.94,
+     "fine": 32.22
+    },
+    {
+     "p": "quanto",
+     "inizio": 32.22,
+     "fine": 32.6
+    },
+    {
+     "p": "una",
+     "inizio": 32.6,
+     "fine": 33.0
+    },
+    {
+     "p": "wow",
+     "inizio": 33.0,
+     "fine": 33.36
+    },
+    {
+     "p": "è",
+     "inizio": 33.36,
+     "fine": 33.54
+    },
+    {
+     "p": "uscito",
+     "inizio": 33.54,
+     "fine": 33.82
+    },
+    {
+     "p": "il",
+     "inizio": 33.82,
+     "fine": 34.04
+    },
+    {
+     "p": "nuovo",
+     "inizio": 34.04,
+     "fine": 34.26
+    },
+    {
+     "p": "modello",
+     "inizio": 34.26,
+     "fine": 34.68
+    },
+    {
+     "p": "generativo",
+     "inizio": 34.68,
+     "fine": 35.24
+    },
+    {
+     "p": "di",
+     "inizio": 35.24,
+     "fine": 35.48
+    },
+    {
+     "p": "immagini",
+     "inizio": 35.48,
+     "fine": 35.88
+    },
+    {
+     "p": "e",
+     "inizio": 35.88,
+     "fine": 36.1
+    }
+   ],
+   "loudness_M_media": -16.4
+  },
+  {
+   "i": 10,
+   "inizio": 36.1,
+   "fine": 40.26,
+   "durata": 4.16,
+   "testo": "nel frattempo a te non cambia un cazzo la verità è che non è che non cambia",
+   "parole": [
+    {
+     "p": "nel",
+     "inizio": 36.1,
+     "fine": 36.26
+    },
+    {
+     "p": "frattempo",
+     "inizio": 36.26,
+     "fine": 36.68
+    },
+    {
+     "p": "a",
+     "inizio": 36.68,
+     "fine": 36.92
+    },
+    {
+     "p": "te",
+     "inizio": 36.92,
+     "fine": 37.06
+    },
+    {
+     "p": "non",
+     "inizio": 37.06,
+     "fine": 37.24
+    },
+    {
+     "p": "cambia",
+     "inizio": 37.24,
+     "fine": 37.54
+    },
+    {
+     "p": "un",
+     "inizio": 37.54,
+     "fine": 37.72
+    },
+    {
+     "p": "cazzo",
+     "inizio": 37.72,
+     "fine": 38.1
+    },
+    {
+     "p": "la",
+     "inizio": 38.1,
+     "fine": 38.3
+    },
+    {
+     "p": "verità",
+     "inizio": 38.3,
+     "fine": 38.66
+    },
+    {
+     "p": "è",
+     "inizio": 38.66,
+     "fine": 38.84
+    },
+    {
+     "p": "che",
+     "inizio": 38.84,
+     "fine": 38.96
+    },
+    {
+     "p": "non",
+     "inizio": 38.96,
+     "fine": 39.1
+    },
+    {
+     "p": "è",
+     "inizio": 39.1,
+     "fine": 39.24
+    },
+    {
+     "p": "che",
+     "inizio": 39.24,
+     "fine": 39.4
+    },
+    {
+     "p": "non",
+     "inizio": 39.4,
+     "fine": 39.58
+    },
+    {
+     "p": "cambia",
+     "inizio": 39.58,
+     "fine": 40.26
+    }
+   ],
+   "loudness_M_media": -22.6
+  },
+  {
+   "i": 11,
+   "inizio": 40.26,
+   "fine": 43.36,
+   "durata": 3.1,
+   "testo": "non le cose cambiano solo che non ti dicono come fare",
+   "parole": [
+    {
+     "p": "non",
+     "inizio": 40.26,
+     "fine": 40.4
+    },
+    {
+     "p": "le",
+     "inizio": 40.4,
+     "fine": 40.56
+    },
+    {
+     "p": "cose",
+     "inizio": 40.56,
+     "fine": 41.06
+    },
+    {
+     "p": "cambiano",
+     "inizio": 41.06,
+     "fine": 41.7
+    },
+    {
+     "p": "solo",
+     "inizio": 41.7,
+     "fine": 41.92
+    },
+    {
+     "p": "che",
+     "inizio": 41.92,
+     "fine": 42.12
+    },
+    {
+     "p": "non",
+     "inizio": 42.12,
+     "fine": 42.3
+    },
+    {
+     "p": "ti",
+     "inizio": 42.3,
+     "fine": 42.5
+    },
+    {
+     "p": "dicono",
+     "inizio": 42.5,
+     "fine": 42.76
+    },
+    {
+     "p": "come",
+     "inizio": 42.76,
+     "fine": 43.0
+    },
+    {
+     "p": "fare",
+     "inizio": 43.0,
+     "fine": 43.36
+    }
+   ],
+   "loudness_M_media": -25.1
+  },
+  {
+   "i": 12,
+   "inizio": 43.36,
+   "fine": 48.7,
+   "durata": 5.34,
+   "testo": "vedi sta cosa del influencer che parla di ai a me sta sul cazzo perché",
+   "parole": [
+    {
+     "p": "vedi",
+     "inizio": 43.36,
+     "fine": 43.66
+    },
+    {
+     "p": "sta",
+     "inizio": 43.66,
+     "fine": 43.84
+    },
+    {
+     "p": "cosa",
+     "inizio": 43.84,
+     "fine": 44.0
+    },
+    {
+     "p": "del",
+     "inizio": 44.0,
+     "fine": 45.04
+    },
+    {
+     "p": "influencer",
+     "inizio": 45.04,
+     "fine": 45.98
+    },
+    {
+     "p": "che",
+     "inizio": 45.98,
+     "fine": 46.34
+    },
+    {
+     "p": "parla",
+     "inizio": 46.34,
+     "fine": 46.72
+    },
+    {
+     "p": "di",
+     "inizio": 46.72,
+     "fine": 47.04
+    },
+    {
+     "p": "ai",
+     "inizio": 47.04,
+     "fine": 47.38
+    },
+    {
+     "p": "a",
+     "inizio": 47.38,
+     "fine": 47.58
+    },
+    {
+     "p": "me",
+     "inizio": 47.58,
+     "fine": 47.68
+    },
+    {
+     "p": "sta",
+     "inizio": 47.68,
+     "fine": 47.78
+    },
+    {
+     "p": "sul",
+     "inizio": 47.78,
+     "fine": 48.02
+    },
+    {
+     "p": "cazzo",
+     "inizio": 48.02,
+     "fine": 48.38
+    },
+    {
+     "p": "perché",
+     "inizio": 48.38,
+     "fine": 48.7
+    }
+   ],
+   "loudness_M_media": -20.8
+  },
+  {
+   "i": 13,
+   "inizio": 48.7,
+   "fine": 51.72,
+   "durata": 3.02,
+   "testo": "lei ha i di per sé non serve niente e come avere della benzina e non",
+   "parole": [
+    {
+     "p": "lei",
+     "inizio": 48.7,
+     "fine": 48.98
+    },
+    {
+     "p": "ha",
+     "inizio": 48.98,
+     "fine": 49.12
+    },
+    {
+     "p": "i",
+     "inizio": 49.12,
+     "fine": 49.18
+    },
+    {
+     "p": "di",
+     "inizio": 49.18,
+     "fine": 49.3
+    },
+    {
+     "p": "per",
+     "inizio": 49.3,
+     "fine": 49.46
+    },
+    {
+     "p": "sé",
+     "inizio": 49.46,
+     "fine": 49.56
+    },
+    {
+     "p": "non",
+     "inizio": 49.56,
+     "fine": 49.66
+    },
+    {
+     "p": "serve",
+     "inizio": 49.66,
+     "fine": 49.86
+    },
+    {
+     "p": "niente",
+     "inizio": 49.86,
+     "fine": 50.3
+    },
+    {
+     "p": "e",
+     "inizio": 50.3,
+     "fine": 50.48
+    },
+    {
+     "p": "come",
+     "inizio": 50.48,
+     "fine": 50.58
+    },
+    {
+     "p": "avere",
+     "inizio": 50.58,
+     "fine": 50.76
+    },
+    {
+     "p": "della",
+     "inizio": 50.76,
+     "fine": 50.96
+    },
+    {
+     "p": "benzina",
+     "inizio": 50.96,
+     "fine": 51.44
+    },
+    {
+     "p": "e",
+     "inizio": 51.44,
+     "fine": 51.6
+    },
+    {
+     "p": "non",
+     "inizio": 51.6,
+     "fine": 51.72
+    }
+   ],
+   "loudness_M_media": -18.1
+  },
+  {
+   "i": 14,
+   "inizio": 51.72,
+   "fine": 59.12,
+   "durata": 7.4,
+   "testo": "la macchina e tipo boh li liquido il punto è marketer con ai freelancer con ai designer con",
+   "parole": [
+    {
+     "p": "la",
+     "inizio": 51.72,
+     "fine": 51.9
+    },
+    {
+     "p": "macchina",
+     "inizio": 51.9,
+     "fine": 52.4
+    },
+    {
+     "p": "e",
+     "inizio": 52.4,
+     "fine": 52.48
+    },
+    {
+     "p": "tipo",
+     "inizio": 52.48,
+     "fine": 52.62
+    },
+    {
+     "p": "boh",
+     "inizio": 52.62,
+     "fine": 53.48
+    },
+    {
+     "p": "li",
+     "inizio": 53.48,
+     "fine": 54.06
+    },
+    {
+     "p": "liquido",
+     "inizio": 54.06,
+     "fine": 54.44
+    },
+    {
+     "p": "il",
+     "inizio": 54.44,
+     "fine": 54.66
+    },
+    {
+     "p": "punto",
+     "inizio": 54.66,
+     "fine": 54.94
+    },
+    {
+     "p": "è",
+     "inizio": 54.94,
+     "fine": 55.16
+    },
+    {
+     "p": "marketer",
+     "inizio": 55.16,
+     "fine": 55.82
+    },
+    {
+     "p": "con",
+     "inizio": 55.82,
+     "fine": 56.08
+    },
+    {
+     "p": "ai",
+     "inizio": 56.08,
+     "fine": 56.48
+    },
+    {
+     "p": "freelancer",
+     "inizio": 56.48,
+     "fine": 57.16
+    },
+    {
+     "p": "con",
+     "inizio": 57.16,
+     "fine": 57.6
+    },
+    {
+     "p": "ai",
+     "inizio": 57.6,
+     "fine": 58.1
+    },
+    {
+     "p": "designer",
+     "inizio": 58.1,
+     "fine": 58.7
+    },
+    {
+     "p": "con",
+     "inizio": 58.7,
+     "fine": 59.12
+    }
+   ],
+   "loudness_M_media": -19.5
+  },
+  {
+   "i": 15,
+   "inizio": 59.12,
+   "fine": 65.66,
+   "durata": 6.54,
+   "testo": "ai web developer con ai tre modi per vedere il mio utilizzo dell'ai e in questo video ti",
+   "parole": [
+    {
+     "p": "ai",
+     "inizio": 59.12,
+     "fine": 59.62
+    },
+    {
+     "p": "web",
+     "inizio": 59.62,
+     "fine": 59.98
+    },
+    {
+     "p": "developer",
+     "inizio": 59.98,
+     "fine": 60.66
+    },
+    {
+     "p": "con",
+     "inizio": 60.66,
+     "fine": 61.34
+    },
+    {
+     "p": "ai",
+     "inizio": 61.34,
+     "fine": 61.82
+    },
+    {
+     "p": "tre",
+     "inizio": 61.82,
+     "fine": 62.24
+    },
+    {
+     "p": "modi",
+     "inizio": 62.24,
+     "fine": 62.74
+    },
+    {
+     "p": "per",
+     "inizio": 62.74,
+     "fine": 62.92
+    },
+    {
+     "p": "vedere",
+     "inizio": 62.92,
+     "fine": 63.18
+    },
+    {
+     "p": "il",
+     "inizio": 63.18,
+     "fine": 63.52
+    },
+    {
+     "p": "mio",
+     "inizio": 63.52,
+     "fine": 63.66
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 63.66,
+     "fine": 64.32
+    },
+    {
+     "p": "dell",
+     "inizio": 64.32,
+     "fine": 64.46
+    },
+    {
+     "p": "'ai",
+     "inizio": 64.46,
+     "fine": 64.7
+    },
+    {
+     "p": "e",
+     "inizio": 64.7,
+     "fine": 64.9
+    },
+    {
+     "p": "in",
+     "inizio": 64.9,
+     "fine": 65.08
+    },
+    {
+     "p": "questo",
+     "inizio": 65.08,
+     "fine": 65.28
+    },
+    {
+     "p": "video",
+     "inizio": 65.28,
+     "fine": 65.5
+    },
+    {
+     "p": "ti",
+     "inizio": 65.5,
+     "fine": 65.66
+    }
+   ],
+   "loudness_M_media": -17.2
+  },
+  {
+   "i": 16,
+   "inizio": 65.66,
+   "fine": 70.52,
+   "durata": 4.86,
+   "testo": "faccio degli esempi condividendoti lo schermo numero 1 come pensano i principianti che io uso",
+   "parole": [
+    {
+     "p": "faccio",
+     "inizio": 65.66,
+     "fine": 65.88
+    },
+    {
+     "p": "degli",
+     "inizio": 65.88,
+     "fine": 66.1
+    },
+    {
+     "p": "esempi",
+     "inizio": 66.1,
+     "fine": 66.68
+    },
+    {
+     "p": "condividendoti",
+     "inizio": 66.68,
+     "fine": 67.3
+    },
+    {
+     "p": "lo",
+     "inizio": 67.3,
+     "fine": 67.48
+    },
+    {
+     "p": "schermo",
+     "inizio": 67.48,
+     "fine": 67.84
+    },
+    {
+     "p": "numero",
+     "inizio": 67.84,
+     "fine": 68.12
+    },
+    {
+     "p": "1",
+     "inizio": 68.12,
+     "fine": 68.46
+    },
+    {
+     "p": "come",
+     "inizio": 68.46,
+     "fine": 68.7
+    },
+    {
+     "p": "pensano",
+     "inizio": 68.7,
+     "fine": 69.16
+    },
+    {
+     "p": "i",
+     "inizio": 69.16,
+     "fine": 69.42
+    },
+    {
+     "p": "principianti",
+     "inizio": 69.42,
+     "fine": 70.04
+    },
+    {
+     "p": "che",
+     "inizio": 70.04,
+     "fine": 70.18
+    },
+    {
+     "p": "io",
+     "inizio": 70.18,
+     "fine": 70.38
+    },
+    {
+     "p": "uso",
+     "inizio": 70.38,
+     "fine": 70.52
+    }
+   ],
+   "loudness_M_media": -16.3
+  },
+  {
+   "i": 17,
+   "inizio": 70.52,
+   "fine": 78.3,
+   "durata": 7.78,
+   "testo": "l'ai numero 2 come i pro pensano che io uso l'ai e numero 3 come io utilizzo l'ai per davvero",
+   "parole": [
+    {
+     "p": "l",
+     "inizio": 70.52,
+     "fine": 70.7
+    },
+    {
+     "p": "'ai",
+     "inizio": 70.7,
+     "fine": 70.96
+    },
+    {
+     "p": "numero",
+     "inizio": 70.96,
+     "fine": 71.28
+    },
+    {
+     "p": "2",
+     "inizio": 71.28,
+     "fine": 71.68
+    },
+    {
+     "p": "come",
+     "inizio": 71.68,
+     "fine": 71.9
+    },
+    {
+     "p": "i",
+     "inizio": 71.9,
+     "fine": 72.24
+    },
+    {
+     "p": "pro",
+     "inizio": 72.24,
+     "fine": 72.4
+    },
+    {
+     "p": "pensano",
+     "inizio": 72.4,
+     "fine": 72.84
+    },
+    {
+     "p": "che",
+     "inizio": 72.84,
+     "fine": 73.02
+    },
+    {
+     "p": "io",
+     "inizio": 73.02,
+     "fine": 73.26
+    },
+    {
+     "p": "uso",
+     "inizio": 73.26,
+     "fine": 73.52
+    },
+    {
+     "p": "l",
+     "inizio": 73.52,
+     "fine": 73.74
+    },
+    {
+     "p": "'ai",
+     "inizio": 73.74,
+     "fine": 74.06
+    },
+    {
+     "p": "e",
+     "inizio": 74.06,
+     "fine": 74.38
+    },
+    {
+     "p": "numero",
+     "inizio": 74.38,
+     "fine": 74.68
+    },
+    {
+     "p": "3",
+     "inizio": 74.68,
+     "fine": 75.16
+    },
+    {
+     "p": "come",
+     "inizio": 75.16,
+     "fine": 75.42
+    },
+    {
+     "p": "io",
+     "inizio": 75.42,
+     "fine": 75.8
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 75.8,
+     "fine": 76.06
+    },
+    {
+     "p": "l",
+     "inizio": 76.06,
+     "fine": 76.26
+    },
+    {
+     "p": "'ai",
+     "inizio": 76.26,
+     "fine": 76.66
+    },
+    {
+     "p": "per",
+     "inizio": 76.66,
+     "fine": 77.1
+    },
+    {
+     "p": "davvero",
+     "inizio": 77.1,
+     "fine": 78.3
+    }
+   ],
+   "loudness_M_media": -19.6
+  },
+  {
+   "i": 18,
+   "inizio": 78.43,
+   "fine": 81.33,
+   "durata": 2.9,
+   "testo": "Ecco che cosa pensano i principianti che io faccio.",
+   "parole": [
+    {
+     "p": "Ecco",
+     "inizio": 78.43,
+     "fine": 78.87
+    },
+    {
+     "p": "che",
+     "inizio": 78.87,
+     "fine": 79.03
+    },
+    {
+     "p": "cosa",
+     "inizio": 79.03,
+     "fine": 79.31
+    },
+    {
+     "p": "pensano",
+     "inizio": 79.31,
+     "fine": 79.77
+    },
+    {
+     "p": "i",
+     "inizio": 79.77,
+     "fine": 80.03
+    },
+    {
+     "p": "principianti",
+     "inizio": 80.03,
+     "fine": 80.63
+    },
+    {
+     "p": "che",
+     "inizio": 80.63,
+     "fine": 80.77
+    },
+    {
+     "p": "io",
+     "inizio": 80.77,
+     "fine": 80.99
+    },
+    {
+     "p": "faccio.",
+     "inizio": 80.99,
+     "fine": 81.33
+    }
+   ],
+   "loudness_M_media": -16.5
+  },
+  {
+   "i": 19,
+   "inizio": 81.43,
+   "fine": 85.27,
+   "durata": 3.84,
+   "testo": "Loro pensano che mi sveglio la mattina, vengo su chat GPT e li chiedono una roba tipo",
+   "parole": [
+    {
+     "p": "Loro",
+     "inizio": 81.43,
+     "fine": 81.49
+    },
+    {
+     "p": "pensano",
+     "inizio": 81.49,
+     "fine": 81.81
+    },
+    {
+     "p": "che",
+     "inizio": 81.81,
+     "fine": 81.93
+    },
+    {
+     "p": "mi",
+     "inizio": 81.93,
+     "fine": 82.11
+    },
+    {
+     "p": "sveglio",
+     "inizio": 82.11,
+     "fine": 82.31
+    },
+    {
+     "p": "la",
+     "inizio": 82.31,
+     "fine": 82.49
+    },
+    {
+     "p": "mattina,",
+     "inizio": 82.49,
+     "fine": 82.81
+    },
+    {
+     "p": "vengo",
+     "inizio": 82.85,
+     "fine": 83.09
+    },
+    {
+     "p": "su",
+     "inizio": 83.09,
+     "fine": 83.27
+    },
+    {
+     "p": "chat",
+     "inizio": 83.27,
+     "fine": 83.47
+    },
+    {
+     "p": "GPT",
+     "inizio": 83.47,
+     "fine": 84.01
+    },
+    {
+     "p": "e",
+     "inizio": 84.01,
+     "fine": 84.19
+    },
+    {
+     "p": "li",
+     "inizio": 84.19,
+     "fine": 84.41
+    },
+    {
+     "p": "chiedono",
+     "inizio": 84.41,
+     "fine": 84.65
+    },
+    {
+     "p": "una",
+     "inizio": 84.65,
+     "fine": 84.73
+    },
+    {
+     "p": "roba",
+     "inizio": 84.73,
+     "fine": 84.97
+    },
+    {
+     "p": "tipo",
+     "inizio": 84.97,
+     "fine": 85.27
+    }
+   ],
+   "loudness_M_media": -18.2
+  },
+  {
+   "i": 20,
+   "inizio": 85.93,
+   "fine": 89.81,
+   "durata": 3.88,
+   "testo": "Scrivimi un copione per la mia pagina Instagram.",
+   "parole": [
+    {
+     "p": "Scrivimi",
+     "inizio": 85.93,
+     "fine": 86.37
+    },
+    {
+     "p": "un",
+     "inizio": 86.37,
+     "fine": 86.81
+    },
+    {
+     "p": "copione",
+     "inizio": 86.81,
+     "fine": 87.43
+    },
+    {
+     "p": "per",
+     "inizio": 87.43,
+     "fine": 88.01
+    },
+    {
+     "p": "la",
+     "inizio": 88.01,
+     "fine": 88.19
+    },
+    {
+     "p": "mia",
+     "inizio": 88.19,
+     "fine": 88.49
+    },
+    {
+     "p": "pagina",
+     "inizio": 88.49,
+     "fine": 89.29
+    },
+    {
+     "p": "Instagram.",
+     "inizio": 89.29,
+     "fine": 89.81
+    }
+   ],
+   "loudness_M_media": -18.1
+  },
+  {
+   "i": 21,
+   "inizio": 90.11,
+   "fine": 90.85,
+   "durata": 0.74,
+   "testo": "Allo virale.",
+   "parole": [
+    {
+     "p": "Allo",
+     "inizio": 90.11,
+     "fine": 90.41
+    },
+    {
+     "p": "virale.",
+     "inizio": 90.41,
+     "fine": 90.85
+    }
+   ],
+   "loudness_M_media": -20.9
+  },
+  {
+   "i": 22,
+   "inizio": 90.99,
+   "fine": 95.35,
+   "durata": 4.36,
+   "testo": "A meno che tu sia rimasto nel 2022, sai che questa roba non funziona mai.",
+   "parole": [
+    {
+     "p": "A",
+     "inizio": 90.99,
+     "fine": 91.07
+    },
+    {
+     "p": "meno",
+     "inizio": 91.07,
+     "fine": 91.19
+    },
+    {
+     "p": "che",
+     "inizio": 91.19,
+     "fine": 91.35
+    },
+    {
+     "p": "tu",
+     "inizio": 91.35,
+     "fine": 91.53
+    },
+    {
+     "p": "sia",
+     "inizio": 91.53,
+     "fine": 91.63
+    },
+    {
+     "p": "rimasto",
+     "inizio": 91.63,
+     "fine": 92.07
+    },
+    {
+     "p": "nel",
+     "inizio": 92.07,
+     "fine": 92.25
+    },
+    {
+     "p": "2022,",
+     "inizio": 92.25,
+     "fine": 93.15
+    },
+    {
+     "p": "sai",
+     "inizio": 93.57,
+     "fine": 93.59
+    },
+    {
+     "p": "che",
+     "inizio": 93.59,
+     "fine": 93.83
+    },
+    {
+     "p": "questa",
+     "inizio": 93.83,
+     "fine": 93.99
+    },
+    {
+     "p": "roba",
+     "inizio": 93.99,
+     "fine": 94.27
+    },
+    {
+     "p": "non",
+     "inizio": 94.27,
+     "fine": 94.49
+    },
+    {
+     "p": "funziona",
+     "inizio": 94.49,
+     "fine": 94.91
+    },
+    {
+     "p": "mai.",
+     "inizio": 94.91,
+     "fine": 95.35
+    }
+   ],
+   "loudness_M_media": -16.5
+  },
+  {
+   "i": 23,
+   "inizio": 95.47,
+   "fine": 99.45,
+   "durata": 3.98,
+   "testo": "Non solo fa schifo, ma anche se poi la usi, il contenuto che ti crea non performa.",
+   "parole": [
+    {
+     "p": "Non",
+     "inizio": 95.47,
+     "fine": 95.57
+    },
+    {
+     "p": "solo",
+     "inizio": 95.57,
+     "fine": 95.69
+    },
+    {
+     "p": "fa",
+     "inizio": 95.69,
+     "fine": 95.87
+    },
+    {
+     "p": "schifo,",
+     "inizio": 95.87,
+     "fine": 96.17
+    },
+    {
+     "p": "ma",
+     "inizio": 96.17,
+     "fine": 96.31
+    },
+    {
+     "p": "anche",
+     "inizio": 96.31,
+     "fine": 96.49
+    },
+    {
+     "p": "se",
+     "inizio": 96.49,
+     "fine": 96.65
+    },
+    {
+     "p": "poi",
+     "inizio": 96.65,
+     "fine": 96.77
+    },
+    {
+     "p": "la",
+     "inizio": 96.77,
+     "fine": 96.99
+    },
+    {
+     "p": "usi,",
+     "inizio": 96.99,
+     "fine": 97.17
+    },
+    {
+     "p": "il",
+     "inizio": 97.39,
+     "fine": 97.41
+    },
+    {
+     "p": "contenuto",
+     "inizio": 97.41,
+     "fine": 97.63
+    },
+    {
+     "p": "che",
+     "inizio": 97.63,
+     "fine": 97.79
+    },
+    {
+     "p": "ti",
+     "inizio": 97.79,
+     "fine": 97.99
+    },
+    {
+     "p": "crea",
+     "inizio": 97.99,
+     "fine": 98.45
+    },
+    {
+     "p": "non",
+     "inizio": 98.45,
+     "fine": 98.93
+    },
+    {
+     "p": "performa.",
+     "inizio": 98.93,
+     "fine": 99.45
+    }
+   ],
+   "loudness_M_media": -19.5
+  },
+  {
+   "i": 24,
+   "inizio": 99.55,
+   "fine": 103.79,
+   "durata": 4.24,
+   "testo": "Come i professionisti, cioè quelli smart che ne sanno, pensano che io utilizzo l'AI.",
+   "parole": [
+    {
+     "p": "Come",
+     "inizio": 99.55,
+     "fine": 99.81
+    },
+    {
+     "p": "i",
+     "inizio": 99.81,
+     "fine": 100.15
+    },
+    {
+     "p": "professionisti,",
+     "inizio": 100.15,
+     "fine": 100.69
+    },
+    {
+     "p": "cioè",
+     "inizio": 100.77,
+     "fine": 100.85
+    },
+    {
+     "p": "quelli",
+     "inizio": 100.85,
+     "fine": 101.07
+    },
+    {
+     "p": "smart",
+     "inizio": 101.07,
+     "fine": 101.43
+    },
+    {
+     "p": "che",
+     "inizio": 101.43,
+     "fine": 101.55
+    },
+    {
+     "p": "ne",
+     "inizio": 101.55,
+     "fine": 101.79
+    },
+    {
+     "p": "sanno,",
+     "inizio": 101.79,
+     "fine": 102.19
+    },
+    {
+     "p": "pensano",
+     "inizio": 102.39,
+     "fine": 102.75
+    },
+    {
+     "p": "che",
+     "inizio": 102.75,
+     "fine": 102.93
+    },
+    {
+     "p": "io",
+     "inizio": 102.93,
+     "fine": 103.15
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 103.15,
+     "fine": 103.41
+    },
+    {
+     "p": "l",
+     "inizio": 103.41,
+     "fine": 103.55
+    },
+    {
+     "p": "'AI.",
+     "inizio": 103.55,
+     "fine": 103.79
+    }
+   ],
+   "loudness_M_media": -16.7
+  },
+  {
+   "i": 25,
+   "inizio": 103.79,
+   "fine": 110.01,
+   "durata": 6.22,
+   "testo": "Loro pensano che passo tutto il mio tempo a complottare flow estremamente complessi con NA10",
+   "parole": [
+    {
+     "p": "Loro",
+     "inizio": 103.79,
+     "fine": 104.07
+    },
+    {
+     "p": "pensano",
+     "inizio": 104.07,
+     "fine": 104.47
+    },
+    {
+     "p": "che",
+     "inizio": 104.47,
+     "fine": 104.65
+    },
+    {
+     "p": "passo",
+     "inizio": 104.65,
+     "fine": 104.87
+    },
+    {
+     "p": "tutto",
+     "inizio": 104.87,
+     "fine": 105.09
+    },
+    {
+     "p": "il",
+     "inizio": 105.09,
+     "fine": 105.19
+    },
+    {
+     "p": "mio",
+     "inizio": 105.19,
+     "fine": 105.27
+    },
+    {
+     "p": "tempo",
+     "inizio": 105.27,
+     "fine": 105.67
+    },
+    {
+     "p": "a",
+     "inizio": 105.67,
+     "fine": 106.17
+    },
+    {
+     "p": "complottare",
+     "inizio": 106.17,
+     "fine": 107.15
+    },
+    {
+     "p": "flow",
+     "inizio": 107.15,
+     "fine": 107.57
+    },
+    {
+     "p": "estremamente",
+     "inizio": 107.57,
+     "fine": 108.43
+    },
+    {
+     "p": "complessi",
+     "inizio": 108.43,
+     "fine": 108.95
+    },
+    {
+     "p": "con",
+     "inizio": 108.95,
+     "fine": 109.19
+    },
+    {
+     "p": "NA10",
+     "inizio": 109.19,
+     "fine": 110.01
+    }
+   ],
+   "loudness_M_media": -16.7
+  },
+  {
+   "i": 26,
+   "inizio": 110.01,
+   "fine": 113.01,
+   "durata": 3.0,
+   "testo": "oppure che faccio chissà che workflow particolare con Zapier",
+   "parole": [
+    {
+     "p": "oppure",
+     "inizio": 110.01,
+     "fine": 110.45
+    },
+    {
+     "p": "che",
+     "inizio": 110.45,
+     "fine": 110.63
+    },
+    {
+     "p": "faccio",
+     "inizio": 110.63,
+     "fine": 110.79
+    },
+    {
+     "p": "chissà",
+     "inizio": 110.79,
+     "fine": 111.11
+    },
+    {
+     "p": "che",
+     "inizio": 111.11,
+     "fine": 111.23
+    },
+    {
+     "p": "workflow",
+     "inizio": 111.23,
+     "fine": 111.69
+    },
+    {
+     "p": "particolare",
+     "inizio": 111.69,
+     "fine": 112.19
+    },
+    {
+     "p": "con",
+     "inizio": 112.19,
+     "fine": 112.47
+    },
+    {
+     "p": "Zapier",
+     "inizio": 112.47,
+     "fine": 113.01
+    }
+   ],
+   "loudness_M_media": -17.2
+  },
+  {
+   "i": 27,
+   "inizio": 113.01,
+   "fine": 117.93,
+   "durata": 4.92,
+   "testo": "Cose che faccio, by the way, se non sai di cosa sto parlando, non ti preoccupare, non serve adesso",
+   "parole": [
+    {
+     "p": "Cose",
+     "inizio": 113.01,
+     "fine": 113.31
+    },
+    {
+     "p": "che",
+     "inizio": 113.31,
+     "fine": 113.63
+    },
+    {
+     "p": "faccio,",
+     "inizio": 113.63,
+     "fine": 114.21
+    },
+    {
+     "p": "by",
+     "inizio": 114.23,
+     "fine": 114.47
+    },
+    {
+     "p": "the",
+     "inizio": 114.47,
+     "fine": 114.65
+    },
+    {
+     "p": "way,",
+     "inizio": 114.65,
+     "fine": 114.89
+    },
+    {
+     "p": "se",
+     "inizio": 115.01,
+     "fine": 115.11
+    },
+    {
+     "p": "non",
+     "inizio": 115.11,
+     "fine": 115.31
+    },
+    {
+     "p": "sai",
+     "inizio": 115.31,
+     "fine": 115.37
+    },
+    {
+     "p": "di",
+     "inizio": 115.37,
+     "fine": 115.55
+    },
+    {
+     "p": "cosa",
+     "inizio": 115.55,
+     "fine": 115.67
+    },
+    {
+     "p": "sto",
+     "inizio": 115.67,
+     "fine": 115.85
+    },
+    {
+     "p": "parlando,",
+     "inizio": 115.85,
+     "fine": 116.41
+    },
+    {
+     "p": "non",
+     "inizio": 116.53,
+     "fine": 116.59
+    },
+    {
+     "p": "ti",
+     "inizio": 116.59,
+     "fine": 116.73
+    },
+    {
+     "p": "preoccupare,",
+     "inizio": 116.73,
+     "fine": 117.13
+    },
+    {
+     "p": "non",
+     "inizio": 117.21,
+     "fine": 117.33
+    },
+    {
+     "p": "serve",
+     "inizio": 117.33,
+     "fine": 117.53
+    },
+    {
+     "p": "adesso",
+     "inizio": 117.53,
+     "fine": 117.93
+    }
+   ],
+   "loudness_M_media": -20.4
+  },
+  {
+   "i": 28,
+   "inizio": 117.93,
+   "fine": 122.55,
+   "durata": 4.62,
+   "testo": "base stiamo parlando di automazioni, e io le automazioni ce le ho, questa è una semplice che ho",
+   "parole": [
+    {
+     "p": "base",
+     "inizio": 117.93,
+     "fine": 118.31
+    },
+    {
+     "p": "stiamo",
+     "inizio": 118.31,
+     "fine": 118.61
+    },
+    {
+     "p": "parlando",
+     "inizio": 118.61,
+     "fine": 119.05
+    },
+    {
+     "p": "di",
+     "inizio": 119.05,
+     "fine": 119.23
+    },
+    {
+     "p": "automazioni,",
+     "inizio": 119.23,
+     "fine": 119.83
+    },
+    {
+     "p": "e",
+     "inizio": 119.95,
+     "fine": 120.01
+    },
+    {
+     "p": "io",
+     "inizio": 120.01,
+     "fine": 120.11
+    },
+    {
+     "p": "le",
+     "inizio": 120.11,
+     "fine": 120.25
+    },
+    {
+     "p": "automazioni",
+     "inizio": 120.25,
+     "fine": 120.77
+    },
+    {
+     "p": "ce",
+     "inizio": 120.77,
+     "fine": 120.95
+    },
+    {
+     "p": "le",
+     "inizio": 120.95,
+     "fine": 121.07
+    },
+    {
+     "p": "ho,",
+     "inizio": 121.07,
+     "fine": 121.15
+    },
+    {
+     "p": "questa",
+     "inizio": 121.21,
+     "fine": 121.45
+    },
+    {
+     "p": "è",
+     "inizio": 121.45,
+     "fine": 121.55
+    },
+    {
+     "p": "una",
+     "inizio": 121.55,
+     "fine": 121.75
+    },
+    {
+     "p": "semplice",
+     "inizio": 121.75,
+     "fine": 122.17
+    },
+    {
+     "p": "che",
+     "inizio": 122.17,
+     "fine": 122.37
+    },
+    {
+     "p": "ho",
+     "inizio": 122.37,
+     "fine": 122.55
+    }
+   ],
+   "loudness_M_media": -21.5
+  },
+  {
+   "i": 29,
+   "inizio": 122.55,
+   "fine": 127.41,
+   "durata": 4.86,
+   "testo": "questa invece è un'automazione più complessa multi-step con diversi agenti AI",
+   "parole": [
+    {
+     "p": "questa",
+     "inizio": 122.55,
+     "fine": 122.87
+    },
+    {
+     "p": "invece",
+     "inizio": 122.87,
+     "fine": 123.29
+    },
+    {
+     "p": "è",
+     "inizio": 123.29,
+     "fine": 123.57
+    },
+    {
+     "p": "un",
+     "inizio": 123.57,
+     "fine": 123.65
+    },
+    {
+     "p": "'automazione",
+     "inizio": 123.65,
+     "fine": 124.09
+    },
+    {
+     "p": "più",
+     "inizio": 124.09,
+     "fine": 124.51
+    },
+    {
+     "p": "complessa",
+     "inizio": 124.51,
+     "fine": 124.83
+    },
+    {
+     "p": "multi",
+     "inizio": 124.83,
+     "fine": 125.29
+    },
+    {
+     "p": "-step",
+     "inizio": 125.29,
+     "fine": 125.61
+    },
+    {
+     "p": "con",
+     "inizio": 125.61,
+     "fine": 126.01
+    },
+    {
+     "p": "diversi",
+     "inizio": 126.01,
+     "fine": 126.61
+    },
+    {
+     "p": "agenti",
+     "inizio": 126.61,
+     "fine": 127.15
+    },
+    {
+     "p": "AI",
+     "inizio": 127.15,
+     "fine": 127.41
+    }
+   ],
+   "loudness_M_media": -19.8
+  },
+  {
+   "i": 30,
+   "inizio": 127.41,
+   "fine": 129.91,
+   "durata": 2.5,
+   "testo": "e non solo, io le vendo, le automazioni ad aziende",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 127.41,
+     "fine": 127.61
+    },
+    {
+     "p": "non",
+     "inizio": 127.61,
+     "fine": 127.81
+    },
+    {
+     "p": "solo,",
+     "inizio": 127.81,
+     "fine": 127.97
+    },
+    {
+     "p": "io",
+     "inizio": 128.03,
+     "fine": 128.13
+    },
+    {
+     "p": "le",
+     "inizio": 128.13,
+     "fine": 128.29
+    },
+    {
+     "p": "vendo,",
+     "inizio": 128.29,
+     "fine": 128.53
+    },
+    {
+     "p": "le",
+     "inizio": 128.61,
+     "fine": 128.77
+    },
+    {
+     "p": "automazioni",
+     "inizio": 128.77,
+     "fine": 129.29
+    },
+    {
+     "p": "ad",
+     "inizio": 129.29,
+     "fine": 129.53
+    },
+    {
+     "p": "aziende",
+     "inizio": 129.53,
+     "fine": 129.91
+    }
+   ],
+   "loudness_M_media": -19.9
+  },
+  {
+   "i": 31,
+   "inizio": 129.91,
+   "fine": 136.13,
+   "durata": 6.22,
+   "testo": "Infatti questo non è assolutamente il mio utilizzo principale dell'AI che la gente le crea per farle ganze.",
+   "parole": [
+    {
+     "p": "Infatti",
+     "inizio": 129.91,
+     "fine": 130.29
+    },
+    {
+     "p": "questo",
+     "inizio": 130.29,
+     "fine": 130.61
+    },
+    {
+     "p": "non",
+     "inizio": 130.61,
+     "fine": 130.87
+    },
+    {
+     "p": "è",
+     "inizio": 130.87,
+     "fine": 131.21
+    },
+    {
+     "p": "assolutamente",
+     "inizio": 131.21,
+     "fine": 132.21
+    },
+    {
+     "p": "il",
+     "inizio": 132.21,
+     "fine": 132.45
+    },
+    {
+     "p": "mio",
+     "inizio": 132.45,
+     "fine": 132.59
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 132.59,
+     "fine": 133.03
+    },
+    {
+     "p": "principale",
+     "inizio": 133.03,
+     "fine": 133.55
+    },
+    {
+     "p": "dell",
+     "inizio": 133.55,
+     "fine": 133.67
+    },
+    {
+     "p": "'AI",
+     "inizio": 133.67,
+     "fine": 133.91
+    },
+    {
+     "p": "che",
+     "inizio": 133.91,
+     "fine": 134.13
+    },
+    {
+     "p": "la",
+     "inizio": 134.13,
+     "fine": 134.27
+    },
+    {
+     "p": "gente",
+     "inizio": 134.27,
+     "fine": 134.61
+    },
+    {
+     "p": "le",
+     "inizio": 134.61,
+     "fine": 134.97
+    },
+    {
+     "p": "crea",
+     "inizio": 134.97,
+     "fine": 135.25
+    },
+    {
+     "p": "per",
+     "inizio": 135.25,
+     "fine": 135.47
+    },
+    {
+     "p": "farle",
+     "inizio": 135.47,
+     "fine": 135.81
+    },
+    {
+     "p": "ganze.",
+     "inizio": 135.81,
+     "fine": 136.13
+    }
+   ],
+   "loudness_M_media": -15.2
+  },
+  {
+   "i": 32,
+   "inizio": 136.23,
+   "fine": 145.77,
+   "durata": 9.54,
+   "testo": "Ok, guarda a figa questa automazione e tu spendi magari ore e ore e ore a fare questi API, a collegare queste incredibili orchestrate automazioni e comunque se sei confuso non ti preoccupare, ora passo al prossimo topic.",
+   "parole": [
+    {
+     "p": "Ok,",
+     "inizio": 136.23,
+     "fine": 136.39
+    },
+    {
+     "p": "guarda",
+     "inizio": 136.43,
+     "fine": 136.79
+    },
+    {
+     "p": "a",
+     "inizio": 136.79,
+     "fine": 136.87
+    },
+    {
+     "p": "figa",
+     "inizio": 136.87,
+     "fine": 137.05
+    },
+    {
+     "p": "questa",
+     "inizio": 137.05,
+     "fine": 137.21
+    },
+    {
+     "p": "automazione",
+     "inizio": 137.21,
+     "fine": 137.73
+    },
+    {
+     "p": "e",
+     "inizio": 137.73,
+     "fine": 137.89
+    },
+    {
+     "p": "tu",
+     "inizio": 137.89,
+     "fine": 138.05
+    },
+    {
+     "p": "spendi",
+     "inizio": 138.05,
+     "fine": 138.37
+    },
+    {
+     "p": "magari",
+     "inizio": 138.37,
+     "fine": 138.73
+    },
+    {
+     "p": "ore",
+     "inizio": 138.73,
+     "fine": 138.97
+    },
+    {
+     "p": "e",
+     "inizio": 138.97,
+     "fine": 139.21
+    },
+    {
+     "p": "ore",
+     "inizio": 139.21,
+     "fine": 139.29
+    },
+    {
+     "p": "e",
+     "inizio": 139.29,
+     "fine": 139.39
+    },
+    {
+     "p": "ore",
+     "inizio": 139.39,
+     "fine": 139.39
+    },
+    {
+     "p": "a",
+     "inizio": 139.39,
+     "fine": 139.49
+    },
+    {
+     "p": "fare",
+     "inizio": 139.49,
+     "fine": 139.61
+    },
+    {
+     "p": "questi",
+     "inizio": 139.61,
+     "fine": 139.93
+    },
+    {
+     "p": "API,",
+     "inizio": 139.93,
+     "fine": 140.35
+    },
+    {
+     "p": "a",
+     "inizio": 140.45,
+     "fine": 140.51
+    },
+    {
+     "p": "collegare",
+     "inizio": 140.51,
+     "fine": 140.89
+    },
+    {
+     "p": "queste",
+     "inizio": 140.89,
+     "fine": 141.11
+    },
+    {
+     "p": "incredibili",
+     "inizio": 141.11,
+     "fine": 141.67
+    },
+    {
+     "p": "orchestrate",
+     "inizio": 141.67,
+     "fine": 142.25
+    },
+    {
+     "p": "automazioni",
+     "inizio": 142.25,
+     "fine": 142.85
+    },
+    {
+     "p": "e",
+     "inizio": 142.85,
+     "fine": 143.05
+    },
+    {
+     "p": "comunque",
+     "inizio": 143.05,
+     "fine": 143.29
+    },
+    {
+     "p": "se",
+     "inizio": 143.29,
+     "fine": 143.47
+    },
+    {
+     "p": "sei",
+     "inizio": 143.47,
+     "fine": 143.59
+    },
+    {
+     "p": "confuso",
+     "inizio": 143.59,
+     "fine": 143.95
+    },
+    {
+     "p": "non",
+     "inizio": 143.95,
+     "fine": 144.07
+    },
+    {
+     "p": "ti",
+     "inizio": 144.07,
+     "fine": 144.17
+    },
+    {
+     "p": "preoccupare,",
+     "inizio": 144.17,
+     "fine": 144.55
+    },
+    {
+     "p": "ora",
+     "inizio": 144.69,
+     "fine": 144.87
+    },
+    {
+     "p": "passo",
+     "inizio": 144.87,
+     "fine": 145.05
+    },
+    {
+     "p": "al",
+     "inizio": 145.05,
+     "fine": 145.15
+    },
+    {
+     "p": "prossimo",
+     "inizio": 145.15,
+     "fine": 145.47
+    },
+    {
+     "p": "topic.",
+     "inizio": 145.47,
+     "fine": 145.77
+    }
+   ],
+   "loudness_M_media": -16.0
+  },
+  {
+   "i": 33,
+   "inizio": 145.89,
+   "fine": 154.53,
+   "durata": 8.64,
+   "testo": "Incredibili automazioni che poi nessuno usa, o una piccola azienda, non ho bisogno di 50 multistep, tanto le cose cambiano da volta a volta, crearci un'automazione che poi rimane non ha senso.",
+   "parole": [
+    {
+     "p": "Incredibili",
+     "inizio": 145.89,
+     "fine": 146.27
+    },
+    {
+     "p": "automazioni",
+     "inizio": 146.27,
+     "fine": 146.81
+    },
+    {
+     "p": "che",
+     "inizio": 146.81,
+     "fine": 146.97
+    },
+    {
+     "p": "poi",
+     "inizio": 146.97,
+     "fine": 147.13
+    },
+    {
+     "p": "nessuno",
+     "inizio": 147.13,
+     "fine": 147.45
+    },
+    {
+     "p": "usa,",
+     "inizio": 147.45,
+     "fine": 147.71
+    },
+    {
+     "p": "o",
+     "inizio": 147.89,
+     "fine": 147.97
+    },
+    {
+     "p": "una",
+     "inizio": 147.97,
+     "fine": 148.07
+    },
+    {
+     "p": "piccola",
+     "inizio": 148.07,
+     "fine": 148.39
+    },
+    {
+     "p": "azienda,",
+     "inizio": 148.39,
+     "fine": 148.77
+    },
+    {
+     "p": "non",
+     "inizio": 148.85,
+     "fine": 148.99
+    },
+    {
+     "p": "ho",
+     "inizio": 148.99,
+     "fine": 149.15
+    },
+    {
+     "p": "bisogno",
+     "inizio": 149.15,
+     "fine": 149.45
+    },
+    {
+     "p": "di",
+     "inizio": 149.45,
+     "fine": 149.61
+    },
+    {
+     "p": "50",
+     "inizio": 149.61,
+     "fine": 150.07
+    },
+    {
+     "p": "multistep,",
+     "inizio": 150.07,
+     "fine": 150.67
+    },
+    {
+     "p": "tanto",
+     "inizio": 150.75,
+     "fine": 150.95
+    },
+    {
+     "p": "le",
+     "inizio": 150.95,
+     "fine": 151.11
+    },
+    {
+     "p": "cose",
+     "inizio": 151.11,
+     "fine": 151.27
+    },
+    {
+     "p": "cambiano",
+     "inizio": 151.27,
+     "fine": 151.67
+    },
+    {
+     "p": "da",
+     "inizio": 151.67,
+     "fine": 151.87
+    },
+    {
+     "p": "volta",
+     "inizio": 151.87,
+     "fine": 152.03
+    },
+    {
+     "p": "a",
+     "inizio": 152.03,
+     "fine": 152.23
+    },
+    {
+     "p": "volta,",
+     "inizio": 152.23,
+     "fine": 152.41
+    },
+    {
+     "p": "crearci",
+     "inizio": 152.61,
+     "fine": 152.81
+    },
+    {
+     "p": "un",
+     "inizio": 152.81,
+     "fine": 152.89
+    },
+    {
+     "p": "'automazione",
+     "inizio": 152.89,
+     "fine": 153.27
+    },
+    {
+     "p": "che",
+     "inizio": 153.27,
+     "fine": 153.43
+    },
+    {
+     "p": "poi",
+     "inizio": 153.43,
+     "fine": 153.55
+    },
+    {
+     "p": "rimane",
+     "inizio": 153.55,
+     "fine": 153.85
+    },
+    {
+     "p": "non",
+     "inizio": 153.85,
+     "fine": 154.03
+    },
+    {
+     "p": "ha",
+     "inizio": 154.03,
+     "fine": 154.23
+    },
+    {
+     "p": "senso.",
+     "inizio": 154.23,
+     "fine": 154.53
+    }
+   ],
+   "loudness_M_media": -15.8
+  },
+  {
+   "i": 34,
+   "inizio": 154.53,
+   "fine": 161.23,
+   "durata": 6.7,
+   "testo": "infatti poi c'è il modo in cui veramente io utilizzo l'ai on text engineering infatti sul mio",
+   "parole": [
+    {
+     "p": "infatti",
+     "inizio": 154.53,
+     "fine": 154.99
+    },
+    {
+     "p": "poi",
+     "inizio": 154.99,
+     "fine": 155.19
+    },
+    {
+     "p": "c",
+     "inizio": 155.19,
+     "fine": 155.43
+    },
+    {
+     "p": "'è",
+     "inizio": 155.43,
+     "fine": 155.57
+    },
+    {
+     "p": "il",
+     "inizio": 155.57,
+     "fine": 155.77
+    },
+    {
+     "p": "modo",
+     "inizio": 155.77,
+     "fine": 156.05
+    },
+    {
+     "p": "in",
+     "inizio": 156.05,
+     "fine": 156.39
+    },
+    {
+     "p": "cui",
+     "inizio": 156.39,
+     "fine": 156.61
+    },
+    {
+     "p": "veramente",
+     "inizio": 156.61,
+     "fine": 157.47
+    },
+    {
+     "p": "io",
+     "inizio": 157.47,
+     "fine": 157.95
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 157.95,
+     "fine": 158.43
+    },
+    {
+     "p": "l",
+     "inizio": 158.43,
+     "fine": 158.59
+    },
+    {
+     "p": "'ai",
+     "inizio": 158.59,
+     "fine": 158.87
+    },
+    {
+     "p": "on",
+     "inizio": 158.87,
+     "fine": 159.23
+    },
+    {
+     "p": "text",
+     "inizio": 159.23,
+     "fine": 159.77
+    },
+    {
+     "p": "engineering",
+     "inizio": 159.77,
+     "fine": 160.29
+    },
+    {
+     "p": "infatti",
+     "inizio": 160.29,
+     "fine": 160.89
+    },
+    {
+     "p": "sul",
+     "inizio": 160.89,
+     "fine": 161.13
+    },
+    {
+     "p": "mio",
+     "inizio": 161.13,
+     "fine": 161.23
+    }
+   ],
+   "loudness_M_media": -19.3
+  },
+  {
+   "i": 35,
+   "inizio": 161.23,
+   "fine": 165.87,
+   "durata": 4.64,
+   "testo": "computer sul mio mac o questa cartella che si chiama clod perché io uso clod penso che",
+   "parole": [
+    {
+     "p": "computer",
+     "inizio": 161.23,
+     "fine": 161.73
+    },
+    {
+     "p": "sul",
+     "inizio": 161.73,
+     "fine": 161.93
+    },
+    {
+     "p": "mio",
+     "inizio": 161.93,
+     "fine": 162.03
+    },
+    {
+     "p": "mac",
+     "inizio": 162.03,
+     "fine": 162.35
+    },
+    {
+     "p": "o",
+     "inizio": 162.35,
+     "fine": 162.59
+    },
+    {
+     "p": "questa",
+     "inizio": 162.59,
+     "fine": 162.81
+    },
+    {
+     "p": "cartella",
+     "inizio": 162.81,
+     "fine": 163.27
+    },
+    {
+     "p": "che",
+     "inizio": 163.27,
+     "fine": 163.39
+    },
+    {
+     "p": "si",
+     "inizio": 163.39,
+     "fine": 163.57
+    },
+    {
+     "p": "chiama",
+     "inizio": 163.57,
+     "fine": 163.73
+    },
+    {
+     "p": "clod",
+     "inizio": 163.73,
+     "fine": 164.21
+    },
+    {
+     "p": "perché",
+     "inizio": 164.21,
+     "fine": 164.57
+    },
+    {
+     "p": "io",
+     "inizio": 164.57,
+     "fine": 164.81
+    },
+    {
+     "p": "uso",
+     "inizio": 164.81,
+     "fine": 164.99
+    },
+    {
+     "p": "clod",
+     "inizio": 164.99,
+     "fine": 165.43
+    },
+    {
+     "p": "penso",
+     "inizio": 165.43,
+     "fine": 165.67
+    },
+    {
+     "p": "che",
+     "inizio": 165.67,
+     "fine": 165.87
+    }
+   ],
+   "loudness_M_media": -18.0
+  },
+  {
+   "i": 36,
+   "inizio": 165.87,
+   "fine": 170.47,
+   "durata": 4.6,
+   "testo": "questo sia già chiaro non uso più c'è gbt e dentro questa cartella guarda cosa c'ho assets",
+   "parole": [
+    {
+     "p": "questo",
+     "inizio": 165.87,
+     "fine": 166.11
+    },
+    {
+     "p": "sia",
+     "inizio": 166.11,
+     "fine": 166.25
+    },
+    {
+     "p": "già",
+     "inizio": 166.25,
+     "fine": 166.45
+    },
+    {
+     "p": "chiaro",
+     "inizio": 166.45,
+     "fine": 166.77
+    },
+    {
+     "p": "non",
+     "inizio": 166.77,
+     "fine": 166.93
+    },
+    {
+     "p": "uso",
+     "inizio": 166.93,
+     "fine": 167.09
+    },
+    {
+     "p": "più",
+     "inizio": 167.09,
+     "fine": 167.29
+    },
+    {
+     "p": "c",
+     "inizio": 167.29,
+     "fine": 167.41
+    },
+    {
+     "p": "'è",
+     "inizio": 167.41,
+     "fine": 167.41
+    },
+    {
+     "p": "gbt",
+     "inizio": 167.41,
+     "fine": 167.71
+    },
+    {
+     "p": "e",
+     "inizio": 167.71,
+     "fine": 167.93
+    },
+    {
+     "p": "dentro",
+     "inizio": 167.93,
+     "fine": 168.13
+    },
+    {
+     "p": "questa",
+     "inizio": 168.13,
+     "fine": 168.37
+    },
+    {
+     "p": "cartella",
+     "inizio": 168.37,
+     "fine": 168.89
+    },
+    {
+     "p": "guarda",
+     "inizio": 168.89,
+     "fine": 169.33
+    },
+    {
+     "p": "cosa",
+     "inizio": 169.33,
+     "fine": 169.53
+    },
+    {
+     "p": "c",
+     "inizio": 169.53,
+     "fine": 169.69
+    },
+    {
+     "p": "'ho",
+     "inizio": 169.69,
+     "fine": 169.79
+    },
+    {
+     "p": "assets",
+     "inizio": 169.79,
+     "fine": 170.47
+    }
+   ],
+   "loudness_M_media": -19.2
+  },
+  {
+   "i": 37,
+   "inizio": 170.47,
+   "fine": 177.13,
+   "durata": 6.66,
+   "testo": "immagini itubi lavori per clienti business planning clod speedrun il corso di cui vedi",
+   "parole": [
+    {
+     "p": "immagini",
+     "inizio": 170.47,
+     "fine": 171.39
+    },
+    {
+     "p": "itubi",
+     "inizio": 171.39,
+     "fine": 172.27
+    },
+    {
+     "p": "lavori",
+     "inizio": 172.27,
+     "fine": 172.75
+    },
+    {
+     "p": "per",
+     "inizio": 172.75,
+     "fine": 172.95
+    },
+    {
+     "p": "clienti",
+     "inizio": 172.95,
+     "fine": 173.87
+    },
+    {
+     "p": "business",
+     "inizio": 173.87,
+     "fine": 174.33
+    },
+    {
+     "p": "planning",
+     "inizio": 174.33,
+     "fine": 174.99
+    },
+    {
+     "p": "clod",
+     "inizio": 174.99,
+     "fine": 175.41
+    },
+    {
+     "p": "speedrun",
+     "inizio": 175.41,
+     "fine": 176.01
+    },
+    {
+     "p": "il",
+     "inizio": 176.01,
+     "fine": 176.31
+    },
+    {
+     "p": "corso",
+     "inizio": 176.31,
+     "fine": 176.69
+    },
+    {
+     "p": "di",
+     "inizio": 176.69,
+     "fine": 176.83
+    },
+    {
+     "p": "cui",
+     "inizio": 176.83,
+     "fine": 176.93
+    },
+    {
+     "p": "vedi",
+     "inizio": 176.93,
+     "fine": 177.13
+    }
+   ],
+   "loudness_M_media": -17.0
+  },
+  {
+   "i": 38,
+   "inizio": 177.13,
+   "fine": 181.53,
+   "durata": 4.4,
+   "testo": "questa sales page che stai per comprare documentazione per sviluppare clod speedrun",
+   "parole": [
+    {
+     "p": "questa",
+     "inizio": 177.13,
+     "fine": 177.39
+    },
+    {
+     "p": "sales",
+     "inizio": 177.39,
+     "fine": 177.69
+    },
+    {
+     "p": "page",
+     "inizio": 177.69,
+     "fine": 177.99
+    },
+    {
+     "p": "che",
+     "inizio": 177.99,
+     "fine": 178.17
+    },
+    {
+     "p": "stai",
+     "inizio": 178.17,
+     "fine": 178.31
+    },
+    {
+     "p": "per",
+     "inizio": 178.31,
+     "fine": 178.57
+    },
+    {
+     "p": "comprare",
+     "inizio": 178.57,
+     "fine": 179.01
+    },
+    {
+     "p": "documentazione",
+     "inizio": 179.01,
+     "fine": 179.77
+    },
+    {
+     "p": "per",
+     "inizio": 179.77,
+     "fine": 179.99
+    },
+    {
+     "p": "sviluppare",
+     "inizio": 179.99,
+     "fine": 180.51
+    },
+    {
+     "p": "clod",
+     "inizio": 180.51,
+     "fine": 180.85
+    },
+    {
+     "p": "speedrun",
+     "inizio": 180.85,
+     "fine": 181.53
+    }
+   ],
+   "loudness_M_media": -16.7
+  },
+  {
+   "i": 39,
+   "inizio": 181.53,
+   "fine": 186.47,
+   "durata": 4.94,
+   "testo": "nuova struttura per il lume, roba per preventivi, produttività e ti faccio un esempio molto semplice.",
+   "parole": [
+    {
+     "p": "nuova",
+     "inizio": 181.53,
+     "fine": 181.85
+    },
+    {
+     "p": "struttura",
+     "inizio": 181.85,
+     "fine": 182.23
+    },
+    {
+     "p": "per",
+     "inizio": 182.23,
+     "fine": 182.45
+    },
+    {
+     "p": "il",
+     "inizio": 182.45,
+     "fine": 182.57
+    },
+    {
+     "p": "lume,",
+     "inizio": 182.57,
+     "fine": 182.91
+    },
+    {
+     "p": "roba",
+     "inizio": 183.11,
+     "fine": 183.23
+    },
+    {
+     "p": "per",
+     "inizio": 183.23,
+     "fine": 183.43
+    },
+    {
+     "p": "preventivi,",
+     "inizio": 183.43,
+     "fine": 183.91
+    },
+    {
+     "p": "produttività",
+     "inizio": 184.11,
+     "fine": 184.75
+    },
+    {
+     "p": "e",
+     "inizio": 184.75,
+     "fine": 185.01
+    },
+    {
+     "p": "ti",
+     "inizio": 185.01,
+     "fine": 185.23
+    },
+    {
+     "p": "faccio",
+     "inizio": 185.23,
+     "fine": 185.43
+    },
+    {
+     "p": "un",
+     "inizio": 185.43,
+     "fine": 185.49
+    },
+    {
+     "p": "esempio",
+     "inizio": 185.49,
+     "fine": 185.73
+    },
+    {
+     "p": "molto",
+     "inizio": 185.73,
+     "fine": 186.09
+    },
+    {
+     "p": "semplice.",
+     "inizio": 186.09,
+     "fine": 186.47
+    }
+   ],
+   "loudness_M_media": -15.6
+  },
+  {
+   "i": 40,
+   "inizio": 186.55,
+   "fine": 194.49,
+   "durata": 7.94,
+   "testo": "Se io vado dentro produttività, infatti, trovo il mio piano di come ho organizzato un'intera settimana di marzo con Claude.",
+   "parole": [
+    {
+     "p": "Se",
+     "inizio": 186.55,
+     "fine": 186.61
+    },
+    {
+     "p": "io",
+     "inizio": 186.61,
+     "fine": 186.71
+    },
+    {
+     "p": "vado",
+     "inizio": 186.71,
+     "fine": 186.83
+    },
+    {
+     "p": "dentro",
+     "inizio": 186.83,
+     "fine": 187.13
+    },
+    {
+     "p": "produttività,",
+     "inizio": 187.13,
+     "fine": 187.99
+    },
+    {
+     "p": "infatti,",
+     "inizio": 188.27,
+     "fine": 188.67
+    },
+    {
+     "p": "trovo",
+     "inizio": 188.83,
+     "fine": 189.21
+    },
+    {
+     "p": "il",
+     "inizio": 189.21,
+     "fine": 189.53
+    },
+    {
+     "p": "mio",
+     "inizio": 189.53,
+     "fine": 189.81
+    },
+    {
+     "p": "piano",
+     "inizio": 189.81,
+     "fine": 190.23
+    },
+    {
+     "p": "di",
+     "inizio": 190.23,
+     "fine": 190.55
+    },
+    {
+     "p": "come",
+     "inizio": 190.55,
+     "fine": 190.83
+    },
+    {
+     "p": "ho",
+     "inizio": 190.83,
+     "fine": 191.13
+    },
+    {
+     "p": "organizzato",
+     "inizio": 191.13,
+     "fine": 191.67
+    },
+    {
+     "p": "un",
+     "inizio": 191.67,
+     "fine": 191.89
+    },
+    {
+     "p": "'intera",
+     "inizio": 191.89,
+     "fine": 192.39
+    },
+    {
+     "p": "settimana",
+     "inizio": 192.39,
+     "fine": 192.73
+    },
+    {
+     "p": "di",
+     "inizio": 192.73,
+     "fine": 192.93
+    },
+    {
+     "p": "marzo",
+     "inizio": 192.93,
+     "fine": 193.39
+    },
+    {
+     "p": "con",
+     "inizio": 193.39,
+     "fine": 193.89
+    },
+    {
+     "p": "Claude.",
+     "inizio": 193.89,
+     "fine": 194.49
+    }
+   ],
+   "loudness_M_media": -14.3
+  },
+  {
+   "i": 41,
+   "inizio": 194.61,
+   "fine": 200.81,
+   "durata": 6.2,
+   "testo": "Cioè lui mi ha organizzato la settimana al posto mio e questa è una delle cose che insegno in Claude Speedrun.",
+   "parole": [
+    {
+     "p": "Cioè",
+     "inizio": 194.61,
+     "fine": 194.77
+    },
+    {
+     "p": "lui",
+     "inizio": 194.77,
+     "fine": 195.09
+    },
+    {
+     "p": "mi",
+     "inizio": 195.09,
+     "fine": 195.19
+    },
+    {
+     "p": "ha",
+     "inizio": 195.19,
+     "fine": 195.49
+    },
+    {
+     "p": "organizzato",
+     "inizio": 195.49,
+     "fine": 196.19
+    },
+    {
+     "p": "la",
+     "inizio": 196.19,
+     "fine": 196.45
+    },
+    {
+     "p": "settimana",
+     "inizio": 196.45,
+     "fine": 196.91
+    },
+    {
+     "p": "al",
+     "inizio": 196.91,
+     "fine": 197.21
+    },
+    {
+     "p": "posto",
+     "inizio": 197.21,
+     "fine": 197.55
+    },
+    {
+     "p": "mio",
+     "inizio": 197.55,
+     "fine": 197.67
+    },
+    {
+     "p": "e",
+     "inizio": 197.67,
+     "fine": 197.91
+    },
+    {
+     "p": "questa",
+     "inizio": 197.91,
+     "fine": 198.35
+    },
+    {
+     "p": "è",
+     "inizio": 198.35,
+     "fine": 198.63
+    },
+    {
+     "p": "una",
+     "inizio": 198.63,
+     "fine": 198.99
+    },
+    {
+     "p": "delle",
+     "inizio": 198.99,
+     "fine": 199.15
+    },
+    {
+     "p": "cose",
+     "inizio": 199.15,
+     "fine": 199.45
+    },
+    {
+     "p": "che",
+     "inizio": 199.45,
+     "fine": 199.67
+    },
+    {
+     "p": "insegno",
+     "inizio": 199.67,
+     "fine": 200.01
+    },
+    {
+     "p": "in",
+     "inizio": 200.01,
+     "fine": 200.27
+    },
+    {
+     "p": "Claude",
+     "inizio": 200.27,
+     "fine": 200.45
+    },
+    {
+     "p": "Speedrun.",
+     "inizio": 200.45,
+     "fine": 200.81
+    }
+   ],
+   "loudness_M_media": -14.8
+  },
+  {
+   "i": 42,
+   "inizio": 200.95,
+   "fine": 203.63,
+   "durata": 2.68,
+   "testo": "Non ti dico cosa potresti fare, non ti faccio un esempio.",
+   "parole": [
+    {
+     "p": "Non",
+     "inizio": 200.95,
+     "fine": 201.09
+    },
+    {
+     "p": "ti",
+     "inizio": 201.09,
+     "fine": 201.27
+    },
+    {
+     "p": "dico",
+     "inizio": 201.27,
+     "fine": 201.45
+    },
+    {
+     "p": "cosa",
+     "inizio": 201.45,
+     "fine": 201.71
+    },
+    {
+     "p": "potresti",
+     "inizio": 201.71,
+     "fine": 202.33
+    },
+    {
+     "p": "fare,",
+     "inizio": 202.33,
+     "fine": 202.57
+    },
+    {
+     "p": "non",
+     "inizio": 202.73,
+     "fine": 202.79
+    },
+    {
+     "p": "ti",
+     "inizio": 202.79,
+     "fine": 202.89
+    },
+    {
+     "p": "faccio",
+     "inizio": 202.89,
+     "fine": 203.01
+    },
+    {
+     "p": "un",
+     "inizio": 203.01,
+     "fine": 203.19
+    },
+    {
+     "p": "esempio.",
+     "inizio": 203.19,
+     "fine": 203.63
+    }
+   ],
+   "loudness_M_media": -15.1
+  },
+  {
+   "i": 43,
+   "inizio": 203.83,
+   "fine": 207.95,
+   "durata": 4.12,
+   "testo": "Ti dico proprio ok, io lo utilizzo in questo modo e lo faccio per molteplici settimane.",
+   "parole": [
+    {
+     "p": "Ti",
+     "inizio": 203.83,
+     "fine": 203.91
+    },
+    {
+     "p": "dico",
+     "inizio": 203.91,
+     "fine": 204.07
+    },
+    {
+     "p": "proprio",
+     "inizio": 204.07,
+     "fine": 204.35
+    },
+    {
+     "p": "ok,",
+     "inizio": 204.35,
+     "fine": 204.69
+    },
+    {
+     "p": "io",
+     "inizio": 204.79,
+     "fine": 204.95
+    },
+    {
+     "p": "lo",
+     "inizio": 204.95,
+     "fine": 205.23
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 205.23,
+     "fine": 205.45
+    },
+    {
+     "p": "in",
+     "inizio": 205.45,
+     "fine": 205.69
+    },
+    {
+     "p": "questo",
+     "inizio": 205.69,
+     "fine": 205.89
+    },
+    {
+     "p": "modo",
+     "inizio": 205.89,
+     "fine": 206.13
+    },
+    {
+     "p": "e",
+     "inizio": 206.13,
+     "fine": 206.29
+    },
+    {
+     "p": "lo",
+     "inizio": 206.29,
+     "fine": 206.45
+    },
+    {
+     "p": "faccio",
+     "inizio": 206.45,
+     "fine": 206.61
+    },
+    {
+     "p": "per",
+     "inizio": 206.61,
+     "fine": 206.87
+    },
+    {
+     "p": "molteplici",
+     "inizio": 206.87,
+     "fine": 207.57
+    },
+    {
+     "p": "settimane.",
+     "inizio": 207.57,
+     "fine": 207.95
+    }
+   ],
+   "loudness_M_media": -13.4
+  },
+  {
+   "i": 44,
+   "inizio": 207.95,
+   "fine": 213.85,
+   "durata": 5.9,
+   "testo": "guarda in legacy ci sono altri piani di altre settimane come questi dentro b2b client work",
+   "parole": [
+    {
+     "p": "guarda",
+     "inizio": 207.95,
+     "fine": 208.35
+    },
+    {
+     "p": "in",
+     "inizio": 208.35,
+     "fine": 208.55
+    },
+    {
+     "p": "legacy",
+     "inizio": 208.55,
+     "fine": 208.81
+    },
+    {
+     "p": "ci",
+     "inizio": 208.81,
+     "fine": 209.01
+    },
+    {
+     "p": "sono",
+     "inizio": 209.01,
+     "fine": 209.17
+    },
+    {
+     "p": "altri",
+     "inizio": 209.17,
+     "fine": 209.61
+    },
+    {
+     "p": "piani",
+     "inizio": 209.61,
+     "fine": 209.99
+    },
+    {
+     "p": "di",
+     "inizio": 209.99,
+     "fine": 210.27
+    },
+    {
+     "p": "altre",
+     "inizio": 210.27,
+     "fine": 210.45
+    },
+    {
+     "p": "settimane",
+     "inizio": 210.45,
+     "fine": 210.91
+    },
+    {
+     "p": "come",
+     "inizio": 210.91,
+     "fine": 211.17
+    },
+    {
+     "p": "questi",
+     "inizio": 211.17,
+     "fine": 211.77
+    },
+    {
+     "p": "dentro",
+     "inizio": 211.77,
+     "fine": 212.43
+    },
+    {
+     "p": "b2b",
+     "inizio": 212.43,
+     "fine": 213.17
+    },
+    {
+     "p": "client",
+     "inizio": 213.17,
+     "fine": 213.51
+    },
+    {
+     "p": "work",
+     "inizio": 213.51,
+     "fine": 213.85
+    }
+   ],
+   "loudness_M_media": -14.3
+  },
+  {
+   "i": 45,
+   "inizio": 213.85,
+   "fine": 218.79,
+   "durata": 4.94,
+   "testo": "c'ho diversi clienti che ora devo censurare alessio un cliente andrea un altro cliente",
+   "parole": [
+    {
+     "p": "c",
+     "inizio": 213.85,
+     "fine": 214.05
+    },
+    {
+     "p": "'ho",
+     "inizio": 214.05,
+     "fine": 214.19
+    },
+    {
+     "p": "diversi",
+     "inizio": 214.19,
+     "fine": 214.63
+    },
+    {
+     "p": "clienti",
+     "inizio": 214.63,
+     "fine": 215.07
+    },
+    {
+     "p": "che",
+     "inizio": 215.07,
+     "fine": 215.19
+    },
+    {
+     "p": "ora",
+     "inizio": 215.19,
+     "fine": 215.33
+    },
+    {
+     "p": "devo",
+     "inizio": 215.33,
+     "fine": 215.47
+    },
+    {
+     "p": "censurare",
+     "inizio": 215.47,
+     "fine": 216.23
+    },
+    {
+     "p": "alessio",
+     "inizio": 216.23,
+     "fine": 216.85
+    },
+    {
+     "p": "un",
+     "inizio": 216.85,
+     "fine": 217.09
+    },
+    {
+     "p": "cliente",
+     "inizio": 217.09,
+     "fine": 217.57
+    },
+    {
+     "p": "andrea",
+     "inizio": 217.57,
+     "fine": 218.05
+    },
+    {
+     "p": "un",
+     "inizio": 218.05,
+     "fine": 218.27
+    },
+    {
+     "p": "altro",
+     "inizio": 218.27,
+     "fine": 218.41
+    },
+    {
+     "p": "cliente",
+     "inizio": 218.41,
+     "fine": 218.79
+    }
+   ],
+   "loudness_M_media": -14.6
+  },
+  {
+   "i": 46,
+   "inizio": 218.79,
+   "fine": 223.47,
+   "durata": 4.68,
+   "testo": "e matteo qui dentro c'ho la documentazione per questo specifico cliente con riassunti",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 218.79,
+     "fine": 218.95
+    },
+    {
+     "p": "matteo",
+     "inizio": 218.95,
+     "fine": 219.45
+    },
+    {
+     "p": "qui",
+     "inizio": 219.45,
+     "fine": 219.67
+    },
+    {
+     "p": "dentro",
+     "inizio": 219.67,
+     "fine": 219.99
+    },
+    {
+     "p": "c",
+     "inizio": 219.99,
+     "fine": 220.15
+    },
+    {
+     "p": "'ho",
+     "inizio": 220.15,
+     "fine": 220.19
+    },
+    {
+     "p": "la",
+     "inizio": 220.19,
+     "fine": 220.35
+    },
+    {
+     "p": "documentazione",
+     "inizio": 220.35,
+     "fine": 221.03
+    },
+    {
+     "p": "per",
+     "inizio": 221.03,
+     "fine": 221.31
+    },
+    {
+     "p": "questo",
+     "inizio": 221.31,
+     "fine": 221.57
+    },
+    {
+     "p": "specifico",
+     "inizio": 221.57,
+     "fine": 222.13
+    },
+    {
+     "p": "cliente",
+     "inizio": 222.13,
+     "fine": 222.55
+    },
+    {
+     "p": "con",
+     "inizio": 222.55,
+     "fine": 222.73
+    },
+    {
+     "p": "riassunti",
+     "inizio": 222.73,
+     "fine": 223.47
+    }
+   ],
+   "loudness_M_media": -15.1
+  },
+  {
+   "i": 47,
+   "inizio": 223.47,
+   "fine": 227.95,
+   "durata": 4.48,
+   "testo": "quello che appena visto si chiama appunto context engineering e si concentra non su",
+   "parole": [
+    {
+     "p": "quello",
+     "inizio": 223.47,
+     "fine": 223.67
+    },
+    {
+     "p": "che",
+     "inizio": 223.67,
+     "fine": 223.81
+    },
+    {
+     "p": "appena",
+     "inizio": 223.81,
+     "fine": 224.07
+    },
+    {
+     "p": "visto",
+     "inizio": 224.07,
+     "fine": 224.33
+    },
+    {
+     "p": "si",
+     "inizio": 224.33,
+     "fine": 224.53
+    },
+    {
+     "p": "chiama",
+     "inizio": 224.53,
+     "fine": 224.71
+    },
+    {
+     "p": "appunto",
+     "inizio": 224.71,
+     "fine": 225.13
+    },
+    {
+     "p": "context",
+     "inizio": 225.13,
+     "fine": 225.85
+    },
+    {
+     "p": "engineering",
+     "inizio": 225.85,
+     "fine": 226.57
+    },
+    {
+     "p": "e",
+     "inizio": 226.57,
+     "fine": 226.79
+    },
+    {
+     "p": "si",
+     "inizio": 226.79,
+     "fine": 226.97
+    },
+    {
+     "p": "concentra",
+     "inizio": 226.97,
+     "fine": 227.47
+    },
+    {
+     "p": "non",
+     "inizio": 227.47,
+     "fine": 227.71
+    },
+    {
+     "p": "su",
+     "inizio": 227.71,
+     "fine": 227.95
+    }
+   ],
+   "loudness_M_media": -15.5
+  },
+  {
+   "i": 48,
+   "inizio": 227.95,
+   "fine": 234.47,
+   "durata": 6.52,
+   "testo": "quello che la i tira fuori o output ma sul input quello che entra dentro l'intelligenza",
+   "parole": [
+    {
+     "p": "quello",
+     "inizio": 227.95,
+     "fine": 228.27
+    },
+    {
+     "p": "che",
+     "inizio": 228.27,
+     "fine": 228.51
+    },
+    {
+     "p": "la",
+     "inizio": 228.51,
+     "fine": 228.71
+    },
+    {
+     "p": "i",
+     "inizio": 228.71,
+     "fine": 228.95
+    },
+    {
+     "p": "tira",
+     "inizio": 228.95,
+     "fine": 229.25
+    },
+    {
+     "p": "fuori",
+     "inizio": 229.25,
+     "fine": 229.69
+    },
+    {
+     "p": "o",
+     "inizio": 229.69,
+     "fine": 229.99
+    },
+    {
+     "p": "output",
+     "inizio": 229.99,
+     "fine": 230.49
+    },
+    {
+     "p": "ma",
+     "inizio": 230.49,
+     "fine": 230.81
+    },
+    {
+     "p": "sul",
+     "inizio": 230.81,
+     "fine": 231.27
+    },
+    {
+     "p": "input",
+     "inizio": 231.27,
+     "fine": 232.11
+    },
+    {
+     "p": "quello",
+     "inizio": 232.11,
+     "fine": 232.43
+    },
+    {
+     "p": "che",
+     "inizio": 232.43,
+     "fine": 232.91
+    },
+    {
+     "p": "entra",
+     "inizio": 232.91,
+     "fine": 233.39
+    },
+    {
+     "p": "dentro",
+     "inizio": 233.39,
+     "fine": 233.85
+    },
+    {
+     "p": "l",
+     "inizio": 233.85,
+     "fine": 234.03
+    },
+    {
+     "p": "'intelligenza",
+     "inizio": 234.03,
+     "fine": 234.47
+    }
+   ],
+   "loudness_M_media": -19.4
+  },
+  {
+   "i": 49,
+   "inizio": 234.47,
+   "fine": 238.73,
+   "durata": 4.26,
+   "testo": "artificiale e lo utilizzo dalla organizzazione della mia giornata della",
+   "parole": [
+    {
+     "p": "artificiale",
+     "inizio": 234.47,
+     "fine": 235.17
+    },
+    {
+     "p": "e",
+     "inizio": 235.17,
+     "fine": 235.35
+    },
+    {
+     "p": "lo",
+     "inizio": 235.35,
+     "fine": 235.55
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 235.55,
+     "fine": 236.15
+    },
+    {
+     "p": "dalla",
+     "inizio": 236.15,
+     "fine": 236.53
+    },
+    {
+     "p": "organizzazione",
+     "inizio": 236.53,
+     "fine": 237.45
+    },
+    {
+     "p": "della",
+     "inizio": 237.45,
+     "fine": 237.67
+    },
+    {
+     "p": "mia",
+     "inizio": 237.67,
+     "fine": 237.91
+    },
+    {
+     "p": "giornata",
+     "inizio": 237.91,
+     "fine": 238.53
+    },
+    {
+     "p": "della",
+     "inizio": 238.53,
+     "fine": 238.73
+    }
+   ],
+   "loudness_M_media": -15.7
+  },
+  {
+   "i": 50,
+   "inizio": 238.73,
+   "fine": 244.91,
+   "durata": 6.18,
+   "testo": "mia settimana alla generazione di testi ai power point i peggiori file che tu ti",
+   "parole": [
+    {
+     "p": "mia",
+     "inizio": 238.73,
+     "fine": 238.91
+    },
+    {
+     "p": "settimana",
+     "inizio": 238.91,
+     "fine": 239.61
+    },
+    {
+     "p": "alla",
+     "inizio": 239.61,
+     "fine": 239.93
+    },
+    {
+     "p": "generazione",
+     "inizio": 239.93,
+     "fine": 240.69
+    },
+    {
+     "p": "di",
+     "inizio": 240.69,
+     "fine": 240.91
+    },
+    {
+     "p": "testi",
+     "inizio": 240.91,
+     "fine": 241.75
+    },
+    {
+     "p": "ai",
+     "inizio": 241.75,
+     "fine": 242.01
+    },
+    {
+     "p": "power",
+     "inizio": 242.01,
+     "fine": 242.67
+    },
+    {
+     "p": "point",
+     "inizio": 242.67,
+     "fine": 243.35
+    },
+    {
+     "p": "i",
+     "inizio": 243.35,
+     "fine": 243.79
+    },
+    {
+     "p": "peggiori",
+     "inizio": 243.79,
+     "fine": 244.33
+    },
+    {
+     "p": "file",
+     "inizio": 244.33,
+     "fine": 244.45
+    },
+    {
+     "p": "che",
+     "inizio": 244.45,
+     "fine": 244.65
+    },
+    {
+     "p": "tu",
+     "inizio": 244.65,
+     "fine": 244.75
+    },
+    {
+     "p": "ti",
+     "inizio": 244.75,
+     "fine": 244.91
+    }
+   ],
+   "loudness_M_media": -16.1
+  },
+  {
+   "i": 51,
+   "inizio": 244.91,
+   "fine": 248.91,
+   "durata": 4.0,
+   "testo": "possa immaginare e voglio farti vedere come io l'utilizzo nelle lezioni di",
+   "parole": [
+    {
+     "p": "possa",
+     "inizio": 244.91,
+     "fine": 245.13
+    },
+    {
+     "p": "immaginare",
+     "inizio": 245.13,
+     "fine": 245.73
+    },
+    {
+     "p": "e",
+     "inizio": 245.73,
+     "fine": 245.93
+    },
+    {
+     "p": "voglio",
+     "inizio": 245.93,
+     "fine": 246.15
+    },
+    {
+     "p": "farti",
+     "inizio": 246.15,
+     "fine": 246.45
+    },
+    {
+     "p": "vedere",
+     "inizio": 246.45,
+     "fine": 246.69
+    },
+    {
+     "p": "come",
+     "inizio": 246.69,
+     "fine": 246.95
+    },
+    {
+     "p": "io",
+     "inizio": 246.95,
+     "fine": 247.11
+    },
+    {
+     "p": "l",
+     "inizio": 247.11,
+     "fine": 247.31
+    },
+    {
+     "p": "'utilizzo",
+     "inizio": 247.31,
+     "fine": 247.87
+    },
+    {
+     "p": "nelle",
+     "inizio": 247.87,
+     "fine": 248.17
+    },
+    {
+     "p": "lezioni",
+     "inizio": 248.17,
+     "fine": 248.65
+    },
+    {
+     "p": "di",
+     "inizio": 248.65,
+     "fine": 248.91
+    }
+   ],
+   "loudness_M_media": -16.2
+  },
+  {
+   "i": 52,
+   "inizio": 248.91,
+   "fine": 254.21,
+   "durata": 5.3,
+   "testo": "Claude Speedran sono 24 lezioni totali e ti prendo da dovunque tu sia adesso e",
+   "parole": [
+    {
+     "p": "Claude",
+     "inizio": 248.91,
+     "fine": 249.41
+    },
+    {
+     "p": "Speedran",
+     "inizio": 249.41,
+     "fine": 249.89
+    },
+    {
+     "p": "sono",
+     "inizio": 249.89,
+     "fine": 250.09
+    },
+    {
+     "p": "24",
+     "inizio": 250.09,
+     "fine": 250.81
+    },
+    {
+     "p": "lezioni",
+     "inizio": 250.81,
+     "fine": 251.17
+    },
+    {
+     "p": "totali",
+     "inizio": 251.17,
+     "fine": 251.81
+    },
+    {
+     "p": "e",
+     "inizio": 251.81,
+     "fine": 251.95
+    },
+    {
+     "p": "ti",
+     "inizio": 251.95,
+     "fine": 252.19
+    },
+    {
+     "p": "prendo",
+     "inizio": 252.19,
+     "fine": 252.47
+    },
+    {
+     "p": "da",
+     "inizio": 252.47,
+     "fine": 252.67
+    },
+    {
+     "p": "dovunque",
+     "inizio": 252.67,
+     "fine": 253.05
+    },
+    {
+     "p": "tu",
+     "inizio": 253.05,
+     "fine": 253.31
+    },
+    {
+     "p": "sia",
+     "inizio": 253.31,
+     "fine": 253.45
+    },
+    {
+     "p": "adesso",
+     "inizio": 253.45,
+     "fine": 253.97
+    },
+    {
+     "p": "e",
+     "inizio": 253.97,
+     "fine": 254.21
+    }
+   ],
+   "loudness_M_media": -17.3
+  },
+  {
+   "i": 53,
+   "inizio": 254.21,
+   "fine": 258.87,
+   "durata": 4.66,
+   "testo": "ti porto ai tempi di oggi scopri come io utilizzo l'interesse artificiale",
+   "parole": [
+    {
+     "p": "ti",
+     "inizio": 254.21,
+     "fine": 254.37
+    },
+    {
+     "p": "porto",
+     "inizio": 254.37,
+     "fine": 254.87
+    },
+    {
+     "p": "ai",
+     "inizio": 254.87,
+     "fine": 255.01
+    },
+    {
+     "p": "tempi",
+     "inizio": 255.01,
+     "fine": 255.53
+    },
+    {
+     "p": "di",
+     "inizio": 255.53,
+     "fine": 255.79
+    },
+    {
+     "p": "oggi",
+     "inizio": 255.79,
+     "fine": 256.09
+    },
+    {
+     "p": "scopri",
+     "inizio": 256.09,
+     "fine": 256.75
+    },
+    {
+     "p": "come",
+     "inizio": 256.75,
+     "fine": 257.01
+    },
+    {
+     "p": "io",
+     "inizio": 257.01,
+     "fine": 257.45
+    },
+    {
+     "p": "utilizzo",
+     "inizio": 257.45,
+     "fine": 257.83
+    },
+    {
+     "p": "l",
+     "inizio": 257.83,
+     "fine": 257.95
+    },
+    {
+     "p": "'interesse",
+     "inizio": 257.95,
+     "fine": 258.27
+    },
+    {
+     "p": "artificiale",
+     "inizio": 258.27,
+     "fine": 258.87
+    }
+   ],
+   "loudness_M_media": -17.7
+  },
+  {
+   "i": 54,
+   "inizio": 258.87,
+   "fine": 262.17,
+   "durata": 3.3,
+   "testo": "come titolare di un'agenzia di marketing ora non sono Jeff Bezos non",
+   "parole": [
+    {
+     "p": "come",
+     "inizio": 258.87,
+     "fine": 259.05
+    },
+    {
+     "p": "titolare",
+     "inizio": 259.05,
+     "fine": 259.53
+    },
+    {
+     "p": "di",
+     "inizio": 259.53,
+     "fine": 259.69
+    },
+    {
+     "p": "un",
+     "inizio": 259.69,
+     "fine": 259.81
+    },
+    {
+     "p": "'agenzia",
+     "inizio": 259.81,
+     "fine": 260.07
+    },
+    {
+     "p": "di",
+     "inizio": 260.07,
+     "fine": 260.23
+    },
+    {
+     "p": "marketing",
+     "inizio": 260.23,
+     "fine": 260.63
+    },
+    {
+     "p": "ora",
+     "inizio": 260.63,
+     "fine": 260.91
+    },
+    {
+     "p": "non",
+     "inizio": 260.91,
+     "fine": 261.15
+    },
+    {
+     "p": "sono",
+     "inizio": 261.15,
+     "fine": 261.31
+    },
+    {
+     "p": "Jeff",
+     "inizio": 261.31,
+     "fine": 261.55
+    },
+    {
+     "p": "Bezos",
+     "inizio": 261.55,
+     "fine": 261.91
+    },
+    {
+     "p": "non",
+     "inizio": 261.91,
+     "fine": 262.17
+    }
+   ],
+   "loudness_M_media": -17.4
+  },
+  {
+   "i": 55,
+   "inizio": 262.17,
+   "fine": 267.99,
+   "durata": 5.82,
+   "testo": "multimillionario non sono il top G mondo AI e del mondo del marketing ma quello che sono è uno",
+   "parole": [
+    {
+     "p": "multimillionario",
+     "inizio": 262.17,
+     "fine": 263.17
+    },
+    {
+     "p": "non",
+     "inizio": 263.17,
+     "fine": 263.41
+    },
+    {
+     "p": "sono",
+     "inizio": 263.41,
+     "fine": 263.55
+    },
+    {
+     "p": "il",
+     "inizio": 263.55,
+     "fine": 263.81
+    },
+    {
+     "p": "top",
+     "inizio": 263.81,
+     "fine": 264.11
+    },
+    {
+     "p": "G",
+     "inizio": 264.11,
+     "fine": 264.43
+    },
+    {
+     "p": "mondo",
+     "inizio": 264.43,
+     "fine": 264.81
+    },
+    {
+     "p": "AI",
+     "inizio": 264.81,
+     "fine": 265.41
+    },
+    {
+     "p": "e",
+     "inizio": 265.41,
+     "fine": 265.63
+    },
+    {
+     "p": "del",
+     "inizio": 265.63,
+     "fine": 265.77
+    },
+    {
+     "p": "mondo",
+     "inizio": 265.77,
+     "fine": 265.97
+    },
+    {
+     "p": "del",
+     "inizio": 265.97,
+     "fine": 266.15
+    },
+    {
+     "p": "marketing",
+     "inizio": 266.15,
+     "fine": 266.61
+    },
+    {
+     "p": "ma",
+     "inizio": 266.61,
+     "fine": 266.81
+    },
+    {
+     "p": "quello",
+     "inizio": 266.81,
+     "fine": 266.93
+    },
+    {
+     "p": "che",
+     "inizio": 266.93,
+     "fine": 267.17
+    },
+    {
+     "p": "sono",
+     "inizio": 267.17,
+     "fine": 267.39
+    },
+    {
+     "p": "è",
+     "inizio": 267.39,
+     "fine": 267.69
+    },
+    {
+     "p": "uno",
+     "inizio": 267.69,
+     "fine": 267.99
+    }
+   ],
+   "loudness_M_media": -16.9
+  },
+  {
+   "i": 56,
+   "inizio": 267.99,
+   "fine": 273.15,
+   "durata": 5.16,
+   "testo": "che lo usa veramente quindi se vuoi scoprire al posto di segmentali ed esempi che non userai",
+   "parole": [
+    {
+     "p": "che",
+     "inizio": 267.99,
+     "fine": 268.17
+    },
+    {
+     "p": "lo",
+     "inizio": 268.17,
+     "fine": 268.35
+    },
+    {
+     "p": "usa",
+     "inizio": 268.35,
+     "fine": 268.59
+    },
+    {
+     "p": "veramente",
+     "inizio": 268.59,
+     "fine": 269.17
+    },
+    {
+     "p": "quindi",
+     "inizio": 269.17,
+     "fine": 269.49
+    },
+    {
+     "p": "se",
+     "inizio": 269.49,
+     "fine": 269.67
+    },
+    {
+     "p": "vuoi",
+     "inizio": 269.67,
+     "fine": 269.81
+    },
+    {
+     "p": "scoprire",
+     "inizio": 269.81,
+     "fine": 270.25
+    },
+    {
+     "p": "al",
+     "inizio": 270.25,
+     "fine": 270.43
+    },
+    {
+     "p": "posto",
+     "inizio": 270.43,
+     "fine": 270.91
+    },
+    {
+     "p": "di",
+     "inizio": 270.91,
+     "fine": 271.13
+    },
+    {
+     "p": "segmentali",
+     "inizio": 271.13,
+     "fine": 271.93
+    },
+    {
+     "p": "ed",
+     "inizio": 271.93,
+     "fine": 272.21
+    },
+    {
+     "p": "esempi",
+     "inizio": 272.21,
+     "fine": 272.61
+    },
+    {
+     "p": "che",
+     "inizio": 272.61,
+     "fine": 272.73
+    },
+    {
+     "p": "non",
+     "inizio": 272.73,
+     "fine": 272.83
+    },
+    {
+     "p": "userai",
+     "inizio": 272.83,
+     "fine": 273.15
+    }
+   ],
+   "loudness_M_media": -13.7
+  },
+  {
+   "i": 57,
+   "inizio": 273.15,
+   "fine": 278.87,
+   "durata": 5.72,
+   "testo": "mai veri workflow che puoi copiare oggi stesso per usare l'AI e Claude nel miglior modo possibile",
+   "parole": [
+    {
+     "p": "mai",
+     "inizio": 273.15,
+     "fine": 273.41
+    },
+    {
+     "p": "veri",
+     "inizio": 273.41,
+     "fine": 273.83
+    },
+    {
+     "p": "workflow",
+     "inizio": 273.83,
+     "fine": 274.21
+    },
+    {
+     "p": "che",
+     "inizio": 274.21,
+     "fine": 274.45
+    },
+    {
+     "p": "puoi",
+     "inizio": 274.45,
+     "fine": 274.59
+    },
+    {
+     "p": "copiare",
+     "inizio": 274.59,
+     "fine": 274.99
+    },
+    {
+     "p": "oggi",
+     "inizio": 274.99,
+     "fine": 275.31
+    },
+    {
+     "p": "stesso",
+     "inizio": 275.31,
+     "fine": 275.87
+    },
+    {
+     "p": "per",
+     "inizio": 275.87,
+     "fine": 276.17
+    },
+    {
+     "p": "usare",
+     "inizio": 276.17,
+     "fine": 276.59
+    },
+    {
+     "p": "l",
+     "inizio": 276.59,
+     "fine": 276.73
+    },
+    {
+     "p": "'AI",
+     "inizio": 276.73,
+     "fine": 277.07
+    },
+    {
+     "p": "e",
+     "inizio": 277.07,
+     "fine": 277.29
+    },
+    {
+     "p": "Claude",
+     "inizio": 277.29,
+     "fine": 277.65
+    },
+    {
+     "p": "nel",
+     "inizio": 277.65,
+     "fine": 277.83
+    },
+    {
+     "p": "miglior",
+     "inizio": 277.83,
+     "fine": 278.07
+    },
+    {
+     "p": "modo",
+     "inizio": 278.07,
+     "fine": 278.29
+    },
+    {
+     "p": "possibile",
+     "inizio": 278.29,
+     "fine": 278.87
+    }
+   ],
+   "loudness_M_media": -13.5
+  },
+  {
+   "i": 58,
+   "inizio": 278.87,
+   "fine": 284.59,
+   "durata": 5.72,
+   "testo": "acquista Claude Speedrun costa 99 euro e include riassunti, quiz, contenuti extra,",
+   "parole": [
+    {
+     "p": "acquista",
+     "inizio": 278.87,
+     "fine": 279.57
+    },
+    {
+     "p": "Claude",
+     "inizio": 279.57,
+     "fine": 279.97
+    },
+    {
+     "p": "Speedrun",
+     "inizio": 279.97,
+     "fine": 280.51
+    },
+    {
+     "p": "costa",
+     "inizio": 280.51,
+     "fine": 280.85
+    },
+    {
+     "p": "99",
+     "inizio": 280.85,
+     "fine": 281.15
+    },
+    {
+     "p": "euro",
+     "inizio": 281.15,
+     "fine": 281.63
+    },
+    {
+     "p": "e",
+     "inizio": 281.63,
+     "fine": 281.83
+    },
+    {
+     "p": "include",
+     "inizio": 281.83,
+     "fine": 282.03
+    },
+    {
+     "p": "riassunti,",
+     "inizio": 282.03,
+     "fine": 282.85
+    },
+    {
+     "p": "quiz,",
+     "inizio": 283.03,
+     "fine": 283.27
+    },
+    {
+     "p": "contenuti",
+     "inizio": 283.65,
+     "fine": 284.09
+    },
+    {
+     "p": "extra,",
+     "inizio": 284.09,
+     "fine": 284.59
+    }
+   ],
+   "loudness_M_media": -15.4
+  },
+  {
+   "i": 59,
+   "inizio": 284.91,
+   "fine": 290.05,
+   "durata": 5.14,
+   "testo": "le versioni Markdown, trascritti di tutte le lezioni e tanti contenuti extra per",
+   "parole": [
+    {
+     "p": "le",
+     "inizio": 284.91,
+     "fine": 285.01
+    },
+    {
+     "p": "versioni",
+     "inizio": 285.01,
+     "fine": 285.45
+    },
+    {
+     "p": "Markdown,",
+     "inizio": 285.45,
+     "fine": 286.09
+    },
+    {
+     "p": "trascritti",
+     "inizio": 286.31,
+     "fine": 287.09
+    },
+    {
+     "p": "di",
+     "inizio": 287.09,
+     "fine": 287.71
+    },
+    {
+     "p": "tutte",
+     "inizio": 287.71,
+     "fine": 287.85
+    },
+    {
+     "p": "le",
+     "inizio": 287.85,
+     "fine": 288.03
+    },
+    {
+     "p": "lezioni",
+     "inizio": 288.03,
+     "fine": 288.45
+    },
+    {
+     "p": "e",
+     "inizio": 288.45,
+     "fine": 288.75
+    },
+    {
+     "p": "tanti",
+     "inizio": 288.75,
+     "fine": 289.03
+    },
+    {
+     "p": "contenuti",
+     "inizio": 289.03,
+     "fine": 289.43
+    },
+    {
+     "p": "extra",
+     "inizio": 289.43,
+     "fine": 289.77
+    },
+    {
+     "p": "per",
+     "inizio": 289.77,
+     "fine": 290.05
+    }
+   ],
+   "loudness_M_media": -15.2
+  },
+  {
+   "i": 60,
+   "inizio": 290.05,
+   "fine": 296.79,
+   "durata": 6.74,
+   "testo": "le hai nel vantaggio ingiusto che finalmente ti meriti. Anche perché tante volte tanti freelancer",
+   "parole": [
+    {
+     "p": "le",
+     "inizio": 290.05,
+     "fine": 290.71
+    },
+    {
+     "p": "hai",
+     "inizio": 290.71,
+     "fine": 291.17
+    },
+    {
+     "p": "nel",
+     "inizio": 291.17,
+     "fine": 291.53
+    },
+    {
+     "p": "vantaggio",
+     "inizio": 291.53,
+     "fine": 292.47
+    },
+    {
+     "p": "ingiusto",
+     "inizio": 292.47,
+     "fine": 293.31
+    },
+    {
+     "p": "che",
+     "inizio": 293.31,
+     "fine": 293.55
+    },
+    {
+     "p": "finalmente",
+     "inizio": 293.55,
+     "fine": 294.03
+    },
+    {
+     "p": "ti",
+     "inizio": 294.03,
+     "fine": 294.27
+    },
+    {
+     "p": "meriti.",
+     "inizio": 294.27,
+     "fine": 294.61
+    },
+    {
+     "p": "Anche",
+     "inizio": 294.71,
+     "fine": 294.89
+    },
+    {
+     "p": "perché",
+     "inizio": 294.89,
+     "fine": 295.33
+    },
+    {
+     "p": "tante",
+     "inizio": 295.33,
+     "fine": 295.69
+    },
+    {
+     "p": "volte",
+     "inizio": 295.69,
+     "fine": 295.97
+    },
+    {
+     "p": "tanti",
+     "inizio": 295.97,
+     "fine": 296.25
+    },
+    {
+     "p": "freelancer",
+     "inizio": 296.25,
+     "fine": 296.79
+    }
+   ],
+   "loudness_M_media": -16.1
+  },
+  {
+   "i": 61,
+   "inizio": 296.79,
+   "fine": 302.46,
+   "durata": 5.67,
+   "testo": "pensano di non avere competitor. Amico mio, i competitor ce li hai, sono quelli che non vedi.",
+   "parole": [
+    {
+     "p": "pensano",
+     "inizio": 296.79,
+     "fine": 297.41
+    },
+    {
+     "p": "di",
+     "inizio": 297.41,
+     "fine": 297.65
+    },
+    {
+     "p": "non",
+     "inizio": 297.65,
+     "fine": 297.81
+    },
+    {
+     "p": "avere",
+     "inizio": 297.81,
+     "fine": 297.97
+    },
+    {
+     "p": "competitor.",
+     "inizio": 297.97,
+     "fine": 298.67
+    },
+    {
+     "p": "Amico",
+     "inizio": 299.21,
+     "fine": 299.47
+    },
+    {
+     "p": "mio,",
+     "inizio": 299.47,
+     "fine": 299.67
+    },
+    {
+     "p": "i",
+     "inizio": 299.79,
+     "fine": 300.03
+    },
+    {
+     "p": "competitor",
+     "inizio": 300.03,
+     "fine": 300.37
+    },
+    {
+     "p": "ce",
+     "inizio": 300.37,
+     "fine": 300.57
+    },
+    {
+     "p": "li",
+     "inizio": 300.57,
+     "fine": 300.75
+    },
+    {
+     "p": "hai,",
+     "inizio": 300.75,
+     "fine": 301.07
+    },
+    {
+     "p": "sono",
+     "inizio": 301.45,
+     "fine": 301.63
+    },
+    {
+     "p": "quelli",
+     "inizio": 301.63,
+     "fine": 301.83
+    },
+    {
+     "p": "che",
+     "inizio": 301.83,
+     "fine": 301.97
+    },
+    {
+     "p": "non",
+     "inizio": 301.97,
+     "fine": 302.21
+    },
+    {
+     "p": "vedi.",
+     "inizio": 302.21,
+     "fine": 302.46
+    }
+   ],
+   "loudness_M_media": -23.6
+  },
+  {
+   "i": 62,
+   "inizio": 303.35,
+   "fine": 308.19,
+   "durata": 4.84,
+   "testo": "Sai qual è un competitor? Qualesiasi persona che il tuo cliente potrebbe scegliere al posto tuo.",
+   "parole": [
+    {
+     "p": "Sai",
+     "inizio": 303.35,
+     "fine": 303.49
+    },
+    {
+     "p": "qual",
+     "inizio": 303.49,
+     "fine": 303.59
+    },
+    {
+     "p": "è",
+     "inizio": 303.59,
+     "fine": 303.65
+    },
+    {
+     "p": "un",
+     "inizio": 303.65,
+     "fine": 303.87
+    },
+    {
+     "p": "competitor?",
+     "inizio": 303.87,
+     "fine": 304.35
+    },
+    {
+     "p": "Qualesiasi",
+     "inizio": 304.71,
+     "fine": 305.15
+    },
+    {
+     "p": "persona",
+     "inizio": 305.15,
+     "fine": 305.63
+    },
+    {
+     "p": "che",
+     "inizio": 305.63,
+     "fine": 305.79
+    },
+    {
+     "p": "il",
+     "inizio": 305.79,
+     "fine": 305.91
+    },
+    {
+     "p": "tuo",
+     "inizio": 305.91,
+     "fine": 306.01
+    },
+    {
+     "p": "cliente",
+     "inizio": 306.01,
+     "fine": 306.47
+    },
+    {
+     "p": "potrebbe",
+     "inizio": 306.47,
+     "fine": 306.93
+    },
+    {
+     "p": "scegliere",
+     "inizio": 306.93,
+     "fine": 307.47
+    },
+    {
+     "p": "al",
+     "inizio": 307.47,
+     "fine": 307.69
+    },
+    {
+     "p": "posto",
+     "inizio": 307.69,
+     "fine": 308.03
+    },
+    {
+     "p": "tuo.",
+     "inizio": 308.03,
+     "fine": 308.19
+    }
+   ],
+   "loudness_M_media": -18.4
+  },
+  {
+   "i": 63,
+   "inizio": 308.69,
+   "fine": 312.61,
+   "durata": 3.92,
+   "testo": "E se tu non avessi competitor, tutti quelli che hanno bisogno del tuo servizio sarebbero",
+   "parole": [
+    {
+     "p": "E",
+     "inizio": 308.69,
+     "fine": 308.81
+    },
+    {
+     "p": "se",
+     "inizio": 308.81,
+     "fine": 308.91
+    },
+    {
+     "p": "tu",
+     "inizio": 308.91,
+     "fine": 309.03
+    },
+    {
+     "p": "non",
+     "inizio": 309.03,
+     "fine": 309.19
+    },
+    {
+     "p": "avessi",
+     "inizio": 309.19,
+     "fine": 309.51
+    },
+    {
+     "p": "competitor,",
+     "inizio": 309.51,
+     "fine": 310.09
+    },
+    {
+     "p": "tutti",
+     "inizio": 310.47,
+     "fine": 310.55
+    },
+    {
+     "p": "quelli",
+     "inizio": 310.55,
+     "fine": 310.79
+    },
+    {
+     "p": "che",
+     "inizio": 310.79,
+     "fine": 310.87
+    },
+    {
+     "p": "hanno",
+     "inizio": 310.87,
+     "fine": 311.03
+    },
+    {
+     "p": "bisogno",
+     "inizio": 311.03,
+     "fine": 311.35
+    },
+    {
+     "p": "del",
+     "inizio": 311.35,
+     "fine": 311.49
+    },
+    {
+     "p": "tuo",
+     "inizio": 311.49,
+     "fine": 311.63
+    },
+    {
+     "p": "servizio",
+     "inizio": 311.63,
+     "fine": 312.19
+    },
+    {
+     "p": "sarebbero",
+     "inizio": 312.19,
+     "fine": 312.61
+    }
+   ],
+   "loudness_M_media": -16.9
+  },
+  {
+   "i": 64,
+   "inizio": 312.61,
+   "fine": 317.37,
+   "durata": 4.76,
+   "testo": "tuoi clienti. E non è così. Quando usi Cloud Speedrun così come devi utilizzarlo,",
+   "parole": [
+    {
+     "p": "tuoi",
+     "inizio": 312.61,
+     "fine": 312.81
+    },
+    {
+     "p": "clienti.",
+     "inizio": 312.81,
+     "fine": 313.43
+    },
+    {
+     "p": "E",
+     "inizio": 313.51,
+     "fine": 313.63
+    },
+    {
+     "p": "non",
+     "inizio": 313.63,
+     "fine": 313.75
+    },
+    {
+     "p": "è",
+     "inizio": 313.75,
+     "fine": 313.91
+    },
+    {
+     "p": "così.",
+     "inizio": 313.91,
+     "fine": 314.17
+    },
+    {
+     "p": "Quando",
+     "inizio": 314.31,
+     "fine": 314.61
+    },
+    {
+     "p": "usi",
+     "inizio": 314.61,
+     "fine": 314.97
+    },
+    {
+     "p": "Cloud",
+     "inizio": 314.97,
+     "fine": 315.23
+    },
+    {
+     "p": "Speedrun",
+     "inizio": 315.23,
+     "fine": 315.81
+    },
+    {
+     "p": "così",
+     "inizio": 315.81,
+     "fine": 316.13
+    },
+    {
+     "p": "come",
+     "inizio": 316.13,
+     "fine": 316.33
+    },
+    {
+     "p": "devi",
+     "inizio": 316.33,
+     "fine": 316.55
+    },
+    {
+     "p": "utilizzarlo,",
+     "inizio": 316.55,
+     "fine": 317.37
+    }
+   ],
+   "loudness_M_media": -20.9
+  },
+  {
+   "i": 65,
+   "inizio": 317.37,
+   "fine": 321.43,
+   "durata": 4.06,
+   "testo": "i tuoi competitor si chiederanno dove cazzo stanno andando a finire i miei clienti",
+   "parole": [
+    {
+     "p": "i",
+     "inizio": 317.37,
+     "fine": 317.71
+    },
+    {
+     "p": "tuoi",
+     "inizio": 317.71,
+     "fine": 317.95
+    },
+    {
+     "p": "competitor",
+     "inizio": 317.95,
+     "fine": 318.37
+    },
+    {
+     "p": "si",
+     "inizio": 318.37,
+     "fine": 318.55
+    },
+    {
+     "p": "chiederanno",
+     "inizio": 318.55,
+     "fine": 318.99
+    },
+    {
+     "p": "dove",
+     "inizio": 318.99,
+     "fine": 319.21
+    },
+    {
+     "p": "cazzo",
+     "inizio": 319.21,
+     "fine": 319.81
+    },
+    {
+     "p": "stanno",
+     "inizio": 319.81,
+     "fine": 320.05
+    },
+    {
+     "p": "andando",
+     "inizio": 320.05,
+     "fine": 320.37
+    },
+    {
+     "p": "a",
+     "inizio": 320.37,
+     "fine": 320.49
+    },
+    {
+     "p": "finire",
+     "inizio": 320.49,
+     "fine": 320.73
+    },
+    {
+     "p": "i",
+     "inizio": 320.73,
+     "fine": 320.83
+    },
+    {
+     "p": "miei",
+     "inizio": 320.83,
+     "fine": 320.99
+    },
+    {
+     "p": "clienti",
+     "inizio": 320.99,
+     "fine": 321.43
+    }
+   ],
+   "loudness_M_media": -21.2
+  },
+  {
+   "i": 66,
+   "inizio": 321.43,
+   "fine": 326.37,
+   "durata": 4.94,
+   "testo": "si chiederanno perché non riusciranno più a chiudere e la risposta sarà perché tu sai fare",
+   "parole": [
+    {
+     "p": "si",
+     "inizio": 321.43,
+     "fine": 321.59
+    },
+    {
+     "p": "chiederanno",
+     "inizio": 321.59,
+     "fine": 321.97
+    },
+    {
+     "p": "perché",
+     "inizio": 321.97,
+     "fine": 322.27
+    },
+    {
+     "p": "non",
+     "inizio": 322.27,
+     "fine": 322.47
+    },
+    {
+     "p": "riusciranno",
+     "inizio": 322.47,
+     "fine": 322.85
+    },
+    {
+     "p": "più",
+     "inizio": 322.85,
+     "fine": 322.99
+    },
+    {
+     "p": "a",
+     "inizio": 322.99,
+     "fine": 323.17
+    },
+    {
+     "p": "chiudere",
+     "inizio": 323.17,
+     "fine": 323.53
+    },
+    {
+     "p": "e",
+     "inizio": 323.53,
+     "fine": 323.75
+    },
+    {
+     "p": "la",
+     "inizio": 323.75,
+     "fine": 323.83
+    },
+    {
+     "p": "risposta",
+     "inizio": 323.83,
+     "fine": 324.31
+    },
+    {
+     "p": "sarà",
+     "inizio": 324.31,
+     "fine": 324.53
+    },
+    {
+     "p": "perché",
+     "inizio": 324.53,
+     "fine": 324.83
+    },
+    {
+     "p": "tu",
+     "inizio": 324.83,
+     "fine": 325.53
+    },
+    {
+     "p": "sai",
+     "inizio": 325.53,
+     "fine": 325.97
+    },
+    {
+     "p": "fare",
+     "inizio": 325.97,
+     "fine": 326.37
+    }
+   ],
+   "loudness_M_media": -18.2
+  },
+  {
+   "i": 67,
+   "inizio": 326.89,
+   "fine": 328.59,
+   "durata": 1.7,
+   "testo": "il tuo fucking lavoro meglio di loro",
+   "parole": [
+    {
+     "p": "il",
+     "inizio": 326.89,
+     "fine": 327.23
+    },
+    {
+     "p": "tuo",
+     "inizio": 327.23,
+     "fine": 327.35
+    },
+    {
+     "p": "fucking",
+     "inizio": 327.35,
+     "fine": 327.65
+    },
+    {
+     "p": "lavoro",
+     "inizio": 327.65,
+     "fine": 327.93
+    },
+    {
+     "p": "meglio",
+     "inizio": 327.93,
+     "fine": 328.17
+    },
+    {
+     "p": "di",
+     "inizio": 328.17,
+     "fine": 328.37
+    },
+    {
+     "p": "loro",
+     "inizio": 328.37,
+     "fine": 328.59
+    }
+   ],
+   "loudness_M_media": -18.6
+  },
+  {
+   "i": 68,
+   "inizio": 328.59,
+   "fine": 330.59,
+   "durata": 2.0,
+   "testo": "facciamo finta che tu devi assumere un architetto",
+   "parole": [
+    {
+     "p": "facciamo",
+     "inizio": 328.59,
+     "fine": 328.87
+    },
+    {
+     "p": "finta",
+     "inizio": 328.87,
+     "fine": 329.15
+    },
+    {
+     "p": "che",
+     "inizio": 329.15,
+     "fine": 329.29
+    },
+    {
+     "p": "tu",
+     "inizio": 329.29,
+     "fine": 329.43
+    },
+    {
+     "p": "devi",
+     "inizio": 329.43,
+     "fine": 329.55
+    },
+    {
+     "p": "assumere",
+     "inizio": 329.55,
+     "fine": 329.89
+    },
+    {
+     "p": "un",
+     "inizio": 329.89,
+     "fine": 330.01
+    },
+    {
+     "p": "architetto",
+     "inizio": 330.01,
+     "fine": 330.59
+    }
+   ],
+   "loudness_M_media": -14.3
+  },
+  {
+   "i": 69,
+   "inizio": 330.59,
+   "fine": 335.47,
+   "durata": 4.88,
+   "testo": "chi scegli, quello che sa usare gli ultimi strumenti di ultima generazione o quello che non li usa",
+   "parole": [
+    {
+     "p": "chi",
+     "inizio": 330.59,
+     "fine": 330.85
+    },
+    {
+     "p": "scegli,",
+     "inizio": 330.85,
+     "fine": 331.23
+    },
+    {
+     "p": "quello",
+     "inizio": 331.37,
+     "fine": 331.45
+    },
+    {
+     "p": "che",
+     "inizio": 331.45,
+     "fine": 331.61
+    },
+    {
+     "p": "sa",
+     "inizio": 331.61,
+     "fine": 331.75
+    },
+    {
+     "p": "usare",
+     "inizio": 331.75,
+     "fine": 332.05
+    },
+    {
+     "p": "gli",
+     "inizio": 332.05,
+     "fine": 332.17
+    },
+    {
+     "p": "ultimi",
+     "inizio": 332.17,
+     "fine": 332.49
+    },
+    {
+     "p": "strumenti",
+     "inizio": 332.49,
+     "fine": 333.29
+    },
+    {
+     "p": "di",
+     "inizio": 333.29,
+     "fine": 333.49
+    },
+    {
+     "p": "ultima",
+     "inizio": 333.49,
+     "fine": 333.77
+    },
+    {
+     "p": "generazione",
+     "inizio": 333.77,
+     "fine": 334.41
+    },
+    {
+     "p": "o",
+     "inizio": 334.41,
+     "fine": 334.65
+    },
+    {
+     "p": "quello",
+     "inizio": 334.65,
+     "fine": 334.83
+    },
+    {
+     "p": "che",
+     "inizio": 334.83,
+     "fine": 334.97
+    },
+    {
+     "p": "non",
+     "inizio": 334.97,
+     "fine": 335.07
+    },
+    {
+     "p": "li",
+     "inizio": 335.07,
+     "fine": 335.23
+    },
+    {
+     "p": "usa",
+     "inizio": 335.23,
+     "fine": 335.47
+    }
+   ],
+   "loudness_M_media": -13.6
+  },
+  {
+   "i": 70,
+   "inizio": 335.47,
+   "fine": 341.47,
+   "durata": 6.0,
+   "testo": "quello che li usa diventa l'architetto migliore, il freelancer migliore, il marketer migliore",
+   "parole": [
+    {
+     "p": "quello",
+     "inizio": 335.47,
+     "fine": 335.81
+    },
+    {
+     "p": "che",
+     "inizio": 335.81,
+     "fine": 335.95
+    },
+    {
+     "p": "li",
+     "inizio": 335.95,
+     "fine": 336.19
+    },
+    {
+     "p": "usa",
+     "inizio": 336.19,
+     "fine": 336.65
+    },
+    {
+     "p": "diventa",
+     "inizio": 336.65,
+     "fine": 337.39
+    },
+    {
+     "p": "l",
+     "inizio": 337.39,
+     "fine": 337.61
+    },
+    {
+     "p": "'architetto",
+     "inizio": 337.61,
+     "fine": 338.31
+    },
+    {
+     "p": "migliore,",
+     "inizio": 338.31,
+     "fine": 338.87
+    },
+    {
+     "p": "il",
+     "inizio": 339.05,
+     "fine": 339.13
+    },
+    {
+     "p": "freelancer",
+     "inizio": 339.13,
+     "fine": 339.57
+    },
+    {
+     "p": "migliore,",
+     "inizio": 339.57,
+     "fine": 339.95
+    },
+    {
+     "p": "il",
+     "inizio": 340.13,
+     "fine": 340.21
+    },
+    {
+     "p": "marketer",
+     "inizio": 340.21,
+     "fine": 340.61
+    },
+    {
+     "p": "migliore",
+     "inizio": 340.61,
+     "fine": 341.47
+    }
+   ],
+   "loudness_M_media": -18.6
+  },
+  {
+   "i": 71,
+   "inizio": 341.47,
+   "fine": 344.15,
+   "durata": 2.68,
+   "testo": "il copyrighter migliore, l'SMM migliore",
+   "parole": [
+    {
+     "p": "il",
+     "inizio": 341.47,
+     "fine": 341.73
+    },
+    {
+     "p": "copyrighter",
+     "inizio": 341.73,
+     "fine": 342.21
+    },
+    {
+     "p": "migliore,",
+     "inizio": 342.21,
+     "fine": 342.79
+    },
+    {
+     "p": "l",
+     "inizio": 342.99,
+     "fine": 343.13
+    },
+    {
+     "p": "'SMM",
+     "inizio": 343.13,
+     "fine": 343.49
+    },
+    {
+     "p": "migliore",
+     "inizio": 343.49,
+     "fine": 344.15
+    }
+   ],
+   "loudness_M_media": -24.7
+  },
+  {
+   "i": 72,
+   "inizio": 344.91,
+   "fine": 350.48,
+   "durata": 5.57,
+   "testo": "investi in Claude Speedrun e fallo diventare l'arba segreta oggi stesso e",
+   "parole": [
+    {
+     "p": "investi",
+     "inizio": 344.91,
+     "fine": 345.43
+    },
+    {
+     "p": "in",
+     "inizio": 345.43,
+     "fine": 345.71
+    },
+    {
+     "p": "Claude",
+     "inizio": 345.71,
+     "fine": 345.95
+    },
+    {
+     "p": "Speedrun",
+     "inizio": 345.95,
+     "fine": 346.47
+    },
+    {
+     "p": "e",
+     "inizio": 346.47,
+     "fine": 346.93
+    },
+    {
+     "p": "fallo",
+     "inizio": 346.93,
+     "fine": 347.09
+    },
+    {
+     "p": "diventare",
+     "inizio": 347.09,
+     "fine": 347.49
+    },
+    {
+     "p": "l",
+     "inizio": 347.49,
+     "fine": 347.61
+    },
+    {
+     "p": "'arba",
+     "inizio": 347.61,
+     "fine": 347.85
+    },
+    {
+     "p": "segreta",
+     "inizio": 347.85,
+     "fine": 348.27
+    },
+    {
+     "p": "oggi",
+     "inizio": 348.27,
+     "fine": 348.61
+    },
+    {
+     "p": "stesso",
+     "inizio": 348.61,
+     "fine": 349.23
+    },
+    {
+     "p": "e",
+     "inizio": 349.64,
+     "fine": 350.48
+    }
+   ],
+   "loudness_M_media": -24.4
+  },
+  {
+   "i": 73,
+   "inizio": 350.48,
+   "fine": 353.06,
+   "durata": 2.58,
+   "testo": "nascondi questa pagina da qualsiasi persona che faccia il tuo lavoro",
+   "parole": [
+    {
+     "p": "nascondi",
+     "inizio": 350.48,
+     "fine": 350.86
+    },
+    {
+     "p": "questa",
+     "inizio": 350.86,
+     "fine": 351.06
+    },
+    {
+     "p": "pagina",
+     "inizio": 351.06,
+     "fine": 351.44
+    },
+    {
+     "p": "da",
+     "inizio": 351.44,
+     "fine": 351.64
+    },
+    {
+     "p": "qualsiasi",
+     "inizio": 351.64,
+     "fine": 352.08
+    },
+    {
+     "p": "persona",
+     "inizio": 352.08,
+     "fine": 352.32
+    },
+    {
+     "p": "che",
+     "inizio": 352.32,
+     "fine": 352.48
+    },
+    {
+     "p": "faccia",
+     "inizio": 352.48,
+     "fine": 352.66
+    },
+    {
+     "p": "il",
+     "inizio": 352.66,
+     "fine": 352.74
+    },
+    {
+     "p": "tuo",
+     "inizio": 352.74,
+     "fine": 352.84
+    },
+    {
+     "p": "lavoro",
+     "inizio": 352.84,
+     "fine": 353.06
+    }
+   ],
+   "loudness_M_media": -21.9
+  }
+ ]
+}

@@ -1,0 +1,1200 @@
+{
+ "lotto": 16,
+ "totale": 199,
+ "atomi": [
+  {
+   "uid": "lQMO0LdeI2c::KA-01",
+   "run": "lQMO0LdeI2c",
+   "tipo": "FORMATO",
+   "testo": "Formato live session: Andrei da hotel estero, 2 Red Bull sul tavolo, AirPods, cap con logo ancora. Setup informale ma professionale. Format replicabile per creare contenuto educativo ad alto valore con strumenti minimi (schermo + faccia)."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-02",
+   "run": "lQMO0LdeI2c",
+   "tipo": "STRUTTURA",
+   "testo": "Lista brand da analizzare annunciata: Dyson, Mercedes Benz, McFit, DJI. In realtà solo McFit e Dyson vengono analizzati — sessione più profonda del previsto. Lezione: meglio 2 case study profondi che 4 superficiali."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-03",
+   "run": "lQMO0LdeI2c",
+   "tipo": "TERMINOLOGIA",
+   "testo": "Hero Section = prima sezione visiva di un sito web, quella che l'utente vede senza scrollare. 'Questa cosa gialla si chiama Hero section.' Termine fondamentale del vocabolario copy/UX per posizionarsi come professionista."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-04",
+   "run": "lQMO0LdeI2c",
+   "tipo": "COPY-CRITIQUE",
+   "testo": "'Semplicemente in forma' = tagline italiana McFit. Funziona come slogan generico ma non differenzia. L'originale tedesco ha più mordente — la traduzione appiattisce. Per brand internazionali: verificare se la versione originale aveva più forza prima di tradurre."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-05",
+   "run": "lQMO0LdeI2c",
+   "tipo": "PRINCIPIO",
+   "testo": "Regola Brand Famoso: 'Dovete sempre evitare per quanto possibile di dire questo è X.' Per brand noti (McFit, iPhone, Dyson), il pubblico sa già cosa sono. La headline NON deve spiegare il brand — deve comunicare perché scegliere questo vs concorrenza."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-06",
+   "run": "lQMO0LdeI2c",
+   "tipo": "TOOL",
+   "testo": "Google come tool di competitive research: cercare il nome brand originale (inglese/tedesco) per capire posizionamento internazionale e come la versione italiana si confronta. Andrei cerca 'simply fit' → scopre che 'Simply Fit' è un brand americano diverso (Shark Tank fitness board)."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-07",
+   "run": "lQMO0LdeI2c",
+   "tipo": "TERMINOLOGIA",
+   "testo": "Bounce Rate = quando una persona CAMBIA PAGINA nel sito (naviga verso un'altra pagina dello stesso sito). NON equivale ad abbandono del sito. Definizione precisa fondamentale per parlare di performance web con i clienti."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-08",
+   "run": "lQMO0LdeI2c",
+   "tipo": "TERMINOLOGIA",
+   "testo": "Exit Rate = quando la SESSIONE TERMINA su quella pagina (persona chiude browser, va su altro sito). Bounce rate e exit rate sono metriche distinte — confonderle porta ad analisi errate delle performance copy. Sapere la differenza = credibilità professionale."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-09",
+   "run": "lQMO0LdeI2c",
+   "tipo": "TOOL",
+   "testo": "Tech Stack Detection tramite browser extension (Wappalyzer/simile in Chrome/Arc): permette di vedere CMS, analytics, advertising pixels di qualsiasi sito. McFit usa: CMS Typo3, Google Analytics Universal, Google Tag Manager. Info gold per pitch: 'so già che usi Google Analytics UA — stai perdendo dati da quando UA è stato deprecato.'"
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-10",
+   "run": "lQMO0LdeI2c",
+   "tipo": "COPY-STRUCTURE",
+   "testo": "McFit+ loyalty copy formula: Header brand → Headline benefit → Paragrafo espansivo benefici → Lista action steps numerati (Scarica app → Attiva McFIT+). 'ANCORA DI PIÙ CON McFIT+' → 'IL PLUS PER LA TUA FEDELTÀ' → benefici concreti → 2 passi chiari. Formula replicabile per upsell abbonamenti premium."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-11",
+   "run": "lQMO0LdeI2c",
+   "tipo": "TOOL",
+   "testo": "Meta Pixel Helper (extension Chrome) per verificare se un sito usa pixel Facebook/Meta. Non sempre accurato (falsi negativi), ma utile per capire strategia advertising del concorrente/cliente. Sapere che un cliente usa o non usa il pixel = punto di partenza per proposta di miglioramento."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-12",
+   "run": "lQMO0LdeI2c",
+   "tipo": "VALORE",
+   "testo": "Copy su Sales Page determina CPA. 'Migliori il CPA di €5 → hai fatto risparmiare un'azienda €50.000-€100.000 di ads in tutto l'anno.' Per campagne con budget alto, ogni euro di CPA migliorato si moltiplica per migliaia di conversioni. Il copywriting è leva finanziaria diretta."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-13",
+   "run": "lQMO0LdeI2c",
+   "tipo": "MERCATO",
+   "testo": "'Quanto cazzo è grossa l'opportunità in Italia — la gente non se ne rende conto.' Gap: le aziende italiane investono in ads senza ottimizzare il copy. Chi sa fare copy strategico (non solo testi) ha vantaggio competitivo enorme. Il mercato italiano è sottosviluppato → early mover advantage."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-14",
+   "run": "lQMO0LdeI2c",
+   "tipo": "REGOLA",
+   "testo": "Headline ≠ Nome del prodotto. 'Non puoi usare come headline il nome del prodotto.' 'Styler Dyson Airwrap™ Complete Long Volumise' come headline è sbagliato — è il nome del SKU, non una promessa. La headline deve comunicare un beneficio o una promessa emotiva, non il catalogo."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-15",
+   "run": "lQMO0LdeI2c",
+   "tipo": "REGOLA",
+   "testo": "Contraddizione brand noto: Non puoi fare Direct Response su un brand famoso. 'Allo stesso tempo non mi puoi fare il Direct Response click funnel style — non mi puoi fare sei stanca di capelli non a modo? Prendi il [prodotto].' Per brand premium/noti, il tono DR stride con il posizionamento e danneggia il brand."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-16",
+   "run": "lQMO0LdeI2c",
+   "tipo": "ESEMPIO-POSITIVO",
+   "testo": "'headphones remastered — un'esperienza di ascolto senza pari' = copy Dyson valutato POSITIVAMENTE. 'Questo è molto molto meglio come Copy.' Formula: emozione/esperienza > feature, non spiega il prodotto, linguaggio aspirazionale. Questo è Slogan Vibes — il tono giusto per brand premium noti."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-17",
+   "run": "lQMO0LdeI2c",
+   "tipo": "STRUTTURA-ECOMMERCE",
+   "testo": "Dyson trust badges su pagina prodotto: Prezzo garantito / Pagamento a rate / Consegna gratuita in 24h* / Reso gratuito entro 30 giorni. Formula: 4 obiezioni rimosse con badges sotto il CTA principale. Replicabile per qualsiasi e-commerce premium — ogni badge risponde a una paura d'acquisto specifica."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-18",
+   "run": "lQMO0LdeI2c",
+   "tipo": "STRATEGIA",
+   "testo": "Dyson = strategia cliente ricorrente. 'Dyson è un'azienda che punta molto sicuramente sul cliente ricorrente.' Il copy Dyson non è ottimizzato per la singola vendita ma per entrare nell'ecosistema del cliente (capelli → aspirapolvere → purificatori → cuffie). Brand equity + portfolio = CLV massimizzato."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-19",
+   "run": "lQMO0LdeI2c",
+   "tipo": "CONCETTO",
+   "testo": "Customer Lifetime Value (CLV) = valore totale che un cliente genera nell'intera sua vita per l'azienda. 'il vero valore non è questa Red Bull da €2 — sono quei migliaia di euro che spenderò nella loro azienda.' Per e-commerce: CLV = base per decidere CPA massimo sostenibile e strategie di acquisizione."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-20",
+   "run": "lQMO0LdeI2c",
+   "tipo": "CONCETTO",
+   "testo": "Red Bull CLV example: 'Red Bull può perdere soldi su un evento di mountain biking però portano dentro nel loro ecosistema una persona come me che poi ti va a spendere migliaia.' Loss leader consapevole = acquistare utente ad alto CLV. L'evento è un investimento a lungo termine, non un costo."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-21",
+   "run": "lQMO0LdeI2c",
+   "tipo": "STRATEGIA",
+   "testo": "CLV alto → CPA ceiling alzato: 'Se abbiamo un e-commerce multiprodotto e il customer lifetime value è di €1000... possiamo anche alzare il CPA un attimino se significa fare la guerra contro la concorrenza e avere quel acquisto iniziale valoroso per poi fare cross Sell.' Formula: CLV alto → investi in acquisizione → market share."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-22",
+   "run": "lQMO0LdeI2c",
+   "tipo": "STRATEGIA-ECOMMERCE",
+   "testo": "E-commerce UX rule: 'Metti come primissima cosa il prodotto più venduto.' Se la gente arriva sul sito cercando un prodotto specifico, farglielo trovare subito = conversion optimization. Homepage come storefront — bestseller in evidenza, non catalogo generico o brand story."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-23",
+   "run": "lQMO0LdeI2c",
+   "tipo": "TATTICA",
+   "testo": "Scarcity per brand premium: Dyson usa 'Ora con rullo in microfibra extra in omaggio. Solo per un periodo limitato.' anche per aspirapolvere premium v15s. La scarcity funziona anche per brand luxury SE presentata come omaggio (non sconto), preservando posizionamento premium senza toccare il prezzo."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-24",
+   "run": "lQMO0LdeI2c",
+   "tipo": "POSIZIONAMENTO",
+   "testo": "Il copywriter vende strategia, non task. 'Quando tu fai Copy Non offri solamente oh ti scrivo il post su LinkedIn — tu stai offrendo la possibilità a un'azienda strategicamente di guadagnare molto di più.' Il fee si giustifica con outcome (€50K risparmiati), non con ore di lavoro."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-25",
+   "run": "lQMO0LdeI2c",
+   "tipo": "POSIZIONAMENTO",
+   "testo": "Knowledge gap come vantaggio competitivo: 'quando tu fai Copy e conosci CPA, customer lifetime value, come proporre queste cose al cliente... questa è la roba che in Italia nessuno capisce.' Sapere i termini + la logica business = premium positioning vs copywriter che scrive solo testi."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-26",
+   "run": "lQMO0LdeI2c",
+   "tipo": "MINDSET",
+   "testo": "'Rimandi l'investimento → rimandi il successo.' 'Ogni singolo giorno che tu rimandi l'investimento che dovresti fare... rimandi il successo fratello.' Risposta a chi chiede se è troppo tardi: non c'è troppo tardi, c'è solo quando vuoi iniziare."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-27",
+   "run": "lQMO0LdeI2c",
+   "tipo": "MINDSET",
+   "testo": "Framework metacognitivo: 'dovete svegliarvi ogni mattina e chiedervi: cos'è che Andrei sa che io non so?' Usare chi è più avanti come benchmark di CONOSCENZA (non di risultati). Identifica il gap specifico invece di confrontare outcomes generici."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-28",
+   "run": "lQMO0LdeI2c",
+   "tipo": "CTA",
+   "testo": "CTA finale live: 'ultime due giorni per avere manuale più workbook.' Bundle offer (manuale + workbook) con scarcity temporale. Link in bio. Formula: urgency + bundle + valore chiaro. CTA semplice, no hard sell, coerente col tono didattico della live."
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-29",
+   "run": "lQMO0LdeI2c",
+   "tipo": "FORMATO",
+   "testo": "Chiusura live Andrei: 'Ragazzi ho finito la live. Spero che vi sia utile. ci vediamo presto bimbi ciao ciao.' Tono caldo, colloquiale. 'Bimbi' = appellativo trademark Andrei verso la sua community. Chiusura organica senza recap — non riepilogare, finire con energia."
+  },
+  {
+   "uid": "max17-v16::KA-001",
+   "run": "max17-v16",
+   "tipo": "regola",
+   "testo": "Tesi di apertura contro la paura 'l'AI uccidera' gli infoprodotti': il rapporto umano e' l'ingrediente magico dietro cio' che le persone comprano, perche' le informazioni si trovano gratis ovunque - quello che cambia e' come una singola persona le distilla per il pubblico. Prova indiretta: 40-50.000 studenti nel corso degli anni, 'se le informazioni bastassero sarebbero tutti ricchi'."
+  },
+  {
+   "uid": "max17-v16::KA-002",
+   "run": "max17-v16",
+   "tipo": "definizione",
+   "testo": "Distinzione tra 'personal brand' generico (essere un influencer enorme) e 'micro personal brand': obiettivo del secondo e' acquisire clienti alto-spendenti ogni giorno sfruttando quello che si ha gia' (sapere, telefono, autorevolezza istantanea), diventando la scelta ovvia per il proprio pubblico senza bisogno di un seguito enorme."
+  },
+  {
+   "uid": "max17-v16::KA-003",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Fatturato storico dichiarato: piu' di 35 milioni di euro di infobusiness personale (relatore, fratello, azienda) accumulati in oltre 12 anni. Il relatore dichiara di aver smesso di guardare il fatturato per guardare solo il profitto netto, e di aver scelto di non spingere oltre una certa soglia l'infobusiness (rifiuta l'idea di fare 30 milioni lavorando 10 ore al giorno, preferendo profitti minori lavorando 3 ore al giorno)."
+  },
+  {
+   "uid": "max17-v16::KA-004",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Caso studio datato 'Iros', agosto 2025: con quasi tutta la rete vendita in ferie, lancio di un piccolo test webinar via Instagram con budget minimo (1-2 venditori disponibili). Risultato dichiarato: investiti 7.000 euro di ads, ricavati 149.000 euro in 4 giorni (finestra di vendita + post-vendita). Da questo episodio nasce l'intuizione alla base del resto del metodo esposto nel talk."
+  },
+  {
+   "uid": "max17-v16::KA-005",
+   "run": "max17-v16",
+   "tipo": "regola",
+   "testo": "Il problema strutturale dell'infobusiness secondo il relatore: la maggior parte degli infobusiness ha 'supply tendenzialmente infinita' (un corso si vende teoricamente all'infinito), mentre i business con supply reale limitata (eventi dal vivo con posti fisici contati, mercato degli orologi di lusso discontinuati) generano automaticamente piu' domanda e sono percepiti a maggior valore. Illustrato con un disegno a mano su flip-chart (triangolo con 'SUPPLY' in alto e 'DOMANDA' sulla diagonale), rimasto fisicamente visibile sul palco per un lungo tratto del video."
+  },
+  {
+   "uid": "max17-v16::KA-006",
+   "run": "max17-v16",
+   "tipo": "architettura",
+   "testo": "Struttura dichiarata dell'infobusiness personale del relatore dopo aver tagliato volontariamente la supply: prodotto di front-end a circa 500 euro di media, Mastermind su due livelli (30.000 euro/anno e 46.000 euro/anno), tetto massimo dichiarato di 50 persone nel mastermind (25+20 iscritti al momento del talk). Il solo mastermind e' dichiarato come business da 1,5 milioni di euro netti senza spesa pubblicitaria, con clienti che restano anche 10 anni."
+  },
+  {
+   "uid": "max17-v16::KA-007",
+   "run": "max17-v16",
+   "tipo": "metodo",
+   "testo": "Ciclo operativo mensile a 4 settimane per creare domanda su una supply artificialmente limitata: settimane 1-3 = creazione/aumento della domanda (contenuti, nessuna pressione di vendita), settimana 4 = evento (webinar live o workshop) -> apertura cancelli -> chiusura con urgenza e scarsita' reale -> dichiarazione pubblica di sold-out -> chi resta fuori si mette in lista d'attesa vera (puo' pagare ma inizia il ciclo successivo). Il ciclo si ripete ogni mese. Il canale YouTube resta l'unico funnel 'evergreen' per chi non vuole aspettare i cancelli."
+  },
+  {
+   "uid": "max17-v16::KA-008",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Case study Instagram DM -> Inner Circle, tutto in un mese: follower risponde a una storia chiedendo come entrare, il relatore risponde 'Inner Circle', lei si autocandida. Passaggi: chat breve su Pain and Desire -> invio di un 'offer doc' (Google Doc con l'offerta, preparato prima di parlare con qualcuno) -> acquisto a 15.000 euro del percorso -> 21 giorni dopo guadagna 30.000 euro applicando una strategia del percorso in un webinar live -> fa coaching one-to-one incluso nel pacchetto -> entra nell'Inner Circle a 46.000 euro/anno. Tutto partito da Instagram."
+  },
+  {
+   "uid": "max17-v16::KA-009",
+   "run": "max17-v16",
+   "tipo": "storia",
+   "testo": "Origin story del relatore: 2012 primo evento dal vivo, 1000 volantini distribuiti in piazza, presenti solo 4 persone, zero vendite. 2014 primi video su Facebook (origine di quello che fa oggi su Instagram/YouTube). Primo corso registrato in un monolocale a Roma (Via della Maglianella 203) condiviso col fratello: lavagna Ikea da 9,90 euro, un solo faro, niente microfono, un Rolex finto comprato a Ponte di Vivo. 18 mesi dopo sul palco con Russell Brunson dopo il primo milione di euro fatto con un funnel. 2016 primo evento dal vivo proprio, 300 persone a Roma, corso 'Liberati dalle catene'."
+  },
+  {
+   "uid": "max17-v16::KA-010",
+   "run": "max17-v16",
+   "tipo": "metodo",
+   "testo": "Rilettura del saggio 'The 1000 True Fans' di Kevin Kelly (cofondatore di Wired, 2008): tesi originale, se hai 1000 persone che ti amano davvero e ognuna spende 100 dollari l'anno, sono 100.000 dollari l'anno - basta un pubblico vero, non enorme. Esempi citati da Kelly: musicista con 800 fan, ceramista con 600 clienti abituali, scrittore con newsletter da 1200 persone, personal trainer con 900 iscritti che guadagna oltre 10.000 dollari l'anno."
+  },
+  {
+   "uid": "max17-v16::KA-011",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Aggiornamento 2026 dichiarato dal relatore alla tesi di Kevin Kelly: studio incrociato su 1.300 infobusiness che usano Ulama (software di infobusiness.com per vendere corsi/consulenze) - chi fa piu' di 10.000 euro al mese ha in media circa 2.000 follower su Instagram. Conclusione pratica: dato che i prezzi medi sono molto piu' alti di 100 dollari, bastano molti meno di 1000 fan veri per arrivare a 10.000 euro/mese. Baseline mostrata: 10.000 follower, prezzo medio clienti Ulama circa 2.000 euro su 400 nicchie diverse, quindi bastano circa 5 clienti al mese per pareggiare il calcolo di Kelly."
+  },
+  {
+   "uid": "max17-v16::KA-012",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Case study clienti citati per nome: cliente non nominato di corsi stampa 3D, da zero a 18.000 euro/mese in 2 mesi. Giulia, bloccata a 10.000 euro/mese, in 8 mesi arriva a 100.000 euro, oggi fa milioni di euro l'anno. Marco, bloccato a un certo punto, aiutato a rivedere prezzi/delivery/rete vendita, poi scalato."
+  },
+  {
+   "uid": "max17-v16::KA-013",
+   "run": "max17-v16",
+   "tipo": "prova sociale",
+   "testo": "Testimonianza reale mostrata a schermo: Marco Scardeoni & Partners (Tax, Legal & Labour, sedi Milano e altre citta'), screenshot messaggio 'E questo grazie a te... il concept negli eventi che faccio sta spopolando ed in tre mesi ho chiuso il 400% in piu'...'."
+  },
+  {
+   "uid": "max17-v16::KA-014",
+   "run": "max17-v16",
+   "tipo": "framework",
+   "testo": "Instagram Authority Funnel - 3 segreti dichiarati per costruire un micro personal brand autorevole: (1) non serve una grande audience, serve una nicchia affamata; (2) il profilo Instagram e' letteralmente un funnel travestito; (3) costruire un micro personal brand e' paradossalmente piu' facile quando non si e' ancora nessuno, perche' non si ha un pregresso di errori percepiti dal pubblico."
+  },
+  {
+   "uid": "max17-v16::KA-015",
+   "run": "max17-v16",
+   "tipo": "framework",
+   "testo": "Formula M+M+M (Mercato + Messaggio + Matematica): primo filtro da mettere in ordine quando si guarda un infobusiness. Mercato = qual e' il mercato e la sofisticazione/consapevolezza del pubblico con cui parlare. Concetto illustrato con metafora del golf ('buca di conversione'): 4 zone di consapevolezza del pubblico - (1) nessuna consapevolezza ne' del problema ne' della soluzione, (2) consapevolezza del problema ma non delle soluzioni esistenti, (3) consapevolezza sia del problema sia della soluzione, (4) gia' cliente di un concorrente (i piu' facili da convertire). Raccomandazione: spostare le persone di una zona alla volta verso la buca, non attaccare i 'guru' di riferimento ma fare partnership."
+  },
+  {
+   "uid": "max17-v16::KA-016",
+   "run": "max17-v16",
+   "tipo": "regola",
+   "testo": "Filosofia di pricing con analogia Tesla/Elon Musk: Musk non parti' dal modello accessibile ma dalla Tesla Roadster (fino a 200.000 dollari con optional), poi finanzio' con quei ricavi la Model X, poi la Model S, poi la Model 3 su grande scala. Argomento: se anche un miliardario ha scelto di partire dal prezzo alto, un infobusiness non ha motivo di partire chiedendo 1.000 euro invece di 25.000."
+  },
+  {
+   "uid": "max17-v16::KA-017",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Matematica del pricing: con 200 lead in CRM, per fare 20.000 euro/mese vendendo a 100 euro servirebbe convertire il 100% dei lead (mai visto in 12 anni di attivita', secondo il relatore); vendendo invece a 5.000 euro bastano 4 clienti (coerente con un tasso di conversione realistico di circa il 2%, citato come riferimento generico). Prezzo piu' alto = piu' profitto, meno clienti, meno stress, piu' tempo libero (slide mostrata a schermo)."
+  },
+  {
+   "uid": "max17-v16::KA-018",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Case study finale sulla sezione prezzo: cliente con 2.229 follower su Instagram, passato da 10.000 euro/mese a 40.000 euro/mese in un mese, con due sole vendite, dopo aver rivisto prezzi e messaggio - prima ancora di iniziare a lavorare sul personal brand vero e proprio. Il mastermind da lui acquistato (46.000 euro/anno, pagato in unica soluzione) viene recuperato in sole due settimane."
+  },
+  {
+   "uid": "max17-v16::KA-019",
+   "run": "max17-v16",
+   "tipo": "metodo",
+   "testo": "Scomposizione del profilo Instagram come funnel: nome e cognome chiari (non un tag/username incomprensibile), allineamento tra nome del profilo e identita' reale, bio con proof numerica (es. 'oltre 500 milioni fatti dai nostri clienti', cifra che il relatore dichiara di aver smesso di aggiornare con precisione), link a YouTube descritto come 'funnel evergreen fatto a ragnatela' - ogni video costruito per intersecarsi con tutti gli altri, cosi' che chi atterra su YouTube ci passi molte ore prima ancora di conoscere il relatore di persona."
+  },
+  {
+   "uid": "max17-v16::KA-020",
+   "run": "max17-v16",
+   "tipo": "metodo",
+   "testo": "Step 2 del funnel Instagram: le 'Storie in Evidenza' funzionano come una sales letter scritta a step, una sequenza di card che raccontano dolore -> scoperta -> risultato -> call to action finale ('scrivi [parola codice] e ti mando tutto'). Testo integrale delle 14 card mostrate a schermo, quasi identico parola per parola a quanto recitato a voce nella stessa sezione del talk (sizzle letter)."
+  },
+  {
+   "uid": "max17-v16::KA-021",
+   "run": "max17-v16",
+   "tipo": "framework",
+   "testo": "La 'macchina del contenuto': 4 tipologie fisse di contenuto pubblicate con cadenza dichiarata di 1-2 caroselli al mese e 3 reel a settimana. (1) Contenuto di attenzione: unico obiettivo prendere l'attenzione, non convertire (esempio: video da 1,5 milioni di views, 83.000 like, 2.600 commenti, 34.000 condivisioni). (2) Contenuto di educazione (esempio: 'Come ho attratto 62.000 nuovi follower usando solamente il mio telefono'). (3) Contenuto di autorevolezza, con casi studio a supporto. (4) Contenuto di conversione con CTA esplicita a commentare una parola per ricevere una risorsa gratuita (esempio: 1.128 commenti in circa 3 giorni)."
+  },
+  {
+   "uid": "max17-v16::KA-022",
+   "run": "max17-v16",
+   "tipo": "comando",
+   "testo": "Strumenti dichiarati per l'ideazione dei contenuti: un 'agente' personale che recupera le news calde del settore per i contenuti di attenzione, e un custom GPT (regalato gratuitamente al pubblico durante il talk, 'non c'e' ne' email ne' niente, si installa su ChatGPT') che genera 25 topic virali del momento per i contenuti di educazione."
+  },
+  {
+   "uid": "max17-v16::KA-023",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Risultati complessivi dichiarati per l'ultimo mese e mezzo prima del talk: 60 milioni di visualizzazioni, 110.000 nuovi follower, circa 11-12.000 lead raccolti, circa una quindicina di clienti paganti del primo percorso di front-end."
+  },
+  {
+   "uid": "max17-v16::KA-024",
+   "run": "max17-v16",
+   "tipo": "framework",
+   "testo": "8 Segreti per diventare un leader da seguire (elenco integrale mostrato a schermo): 1) Diventa Attraente e Vivi la vita che loro vorrebbero; 2) Sii sicuro di te stesso e NON aver paura dei nemici; 3) Devi essere polarizzante e mai noioso; 4) Padroneggia l'arte della Persuasione; 5) Fatti Pagare (...e anche tanto); 6) Ogni Leader Ha Una Storia Passata da Raccontare; 7) Usa Parabole e Metafore SEMPRE; 8) Mostra i tuoi difetti e lati deboli al pubblico. Lista non recitata integralmente a voce nella sezione corrispondente della trascrizione (che ne copre solo alcuni punti in modo discorsivo) - confermata solo dal frame."
+  },
+  {
+   "uid": "max17-v16::KA-025",
+   "run": "max17-v16",
+   "tipo": "framework",
+   "testo": "Framework di storytelling per la vendita uno-a-tanti da palco: Introduzione -> Viaggio -> Conflitto -> Momento di realizzazione -> Framework (cosa mi sono portato a casa, cosa mi ha permesso di raggiungere). Imparato dal relatore stando fisicamente sul palco per anni, con menzione dell'evento con Mirko Gasparotto (2016, primo grande evento dal vivo costruito da zero per un terzo, target iniziale 500 persone)."
+  },
+  {
+   "uid": "max17-v16::KA-026",
+   "run": "max17-v16",
+   "tipo": "regola",
+   "testo": "Tre errori tipici nella vendita uno-a-tanti da palco, individuati dal relatore nel proprio primo tentativo fallito (una piazza in Sicilia, zero vendite): 1) la 'sindrome del maestrino' (insegnare troppa tecnica e annoiare); 2) andare 'a sentimento' senza struttura; 3) non ascoltare la platea prima di presentare (il relatore dichiara di aver ascoltato il pubblico di questo stesso evento la sera prima per costruire il contenuto del talk)."
+  },
+  {
+   "uid": "max17-v16::KA-027",
+   "run": "max17-v16",
+   "tipo": "numero",
+   "testo": "Numero dichiarato per l'ultimo evento dal vivo del relatore: chiuso con 150.000 euro di vendite fatte direttamente da palco."
+  },
+  {
+   "uid": "max17-v16::KA-028",
+   "run": "max17-v16",
+   "tipo": "regola",
+   "testo": "Messaggio di chiusura del talk: la 'grande verita'' che il relatore vuole lasciare al pubblico e' che non serve un pubblico gigantesco per ottenere risultati - le vere barriere sono le false credenze interne (paura di parlare in camera, mancanza di tempo percepita), non la dimensione dell'audience. Chiusura testuale: 'vendere uno a tanti, costruire un personal brand... ha trasformato la mia vita e son certo che potra' trasformare anche la vostra.'"
+  },
+  {
+   "uid": "max17-v16::KA-029",
+   "run": "max17-v16",
+   "tipo": "meta",
+   "testo": "Formato reale del video: non e' un tutorial/screen-share come gli altri video del lotto max17, ma la registrazione di un intervento dal vivo a un evento (platea seduta a tavoli, palco con schermo di proiezione e lavagna a fogli mobili usata piu' volte, organizzatore dell'evento citato piu' volte per nome, 'Mario'). Conseguenza per la copertura video: un disegno a mano su flip-chart (es. il grafico supply/domanda) resta fisicamente visibile sul palco per minuti interi dopo essere stato disegnato, quindi frame nominalmente distanti nel tempo (es. frame-159 a 10:32 e frame-324 a 21:32) possono mostrare lo stesso identico contenuto visivo senza che questo sia un errore di sincronizzazione del tool di estrazione (verificato contro frames/manifest.json)."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-01",
+   "run": "iy13HC9M8z0",
+   "tipo": "concetto-base",
+   "testo": "Definizione copywriter: scrive testi persuasivi di vendita (pubblicita, siti web, social...)"
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-02",
+   "run": "iy13HC9M8z0",
+   "tipo": "authority-signal",
+   "testo": "Andrei pagato migliaia di euro per sales page, email, copy. Credenziale stabilita prima della critica AI."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-03",
+   "run": "iy13HC9M8z0",
+   "tipo": "frame-video",
+   "testo": "Domanda core: ChatGPT puo sostituire il copywriter? Risposta breve: no. Risposta lunga: dipende dall'uso."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-04",
+   "run": "iy13HC9M8z0",
+   "tipo": "test-empirico",
+   "testo": "Baseline GPT: genera copy generico per corso copywriting e consulenza finanziaria. Output mediocre ma strutturato. Establishes AI floor."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-05",
+   "run": "iy13HC9M8z0",
+   "tipo": "principio-tecnico",
+   "testo": "Legge prompt-qualita: prompt vago produce output vago. Input specifico = output specifico. La qualita del prompt determina direttamente la qualita dell'output GPT."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-06",
+   "run": "iy13HC9M8z0",
+   "tipo": "critica-framework",
+   "testo": "Paradosso GPT: questo Copy e ottimo e fantastico ma fa schifo. Copy formalmente strutturato ma sostanzialmente vuoto. Non sbagliato formalmente, sbagliato emotivamente e strategicamente."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-07",
+   "run": "iy13HC9M8z0",
+   "tipo": "principio-copy",
+   "testo": "Show don't tell violato nel GPT: 'materiali di alta qualita' = telling. Copywriter mostra QUALI materiali specifici, QUALE processo, QUALE risultato concreto. GPT dichiara la conclusione senza costruire il percorso."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-08",
+   "run": "iy13HC9M8z0",
+   "tipo": "struttura-copy",
+   "testo": "Struttura problema-soluzione mancante: buon copy agita problema con soluzioni attuali PRIMA di presentare il prodotto. GPT va subito a 'Siamo lieti di presentarvi' senza problema setup."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-09",
+   "run": "iy13HC9M8z0",
+   "tipo": "principio-psicologico",
+   "testo": "Gap emotivita: non c'e la parte emotiva. Copy GPT e cerebrale/informativo. Acquisto e guidato da emozione. Copy deve attivare stato emotivo specifico prima di features."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-10",
+   "run": "iy13HC9M8z0",
+   "tipo": "principio-tecnico",
+   "testo": "Prompt specifico migliora output: specificando tazza nera, alto ticket, mantenimento temperatura -> GPT include stile sofisticato, tecnologia avanzata, esperienza senza paragoni. Dimostrazione diretta: piu input specifico = piu output rilevante."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-11",
+   "run": "iy13HC9M8z0",
+   "tipo": "limite-AI",
+   "testo": "Soffitto strutturale GPT: Prompt 2 migliora MA rimane molto generico e tornano i problemi di prima. Specificita del prompt non elimina gap strutturale AI. Il soffitto rimane anche col prompt migliore."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-12",
+   "run": "iy13HC9M8z0",
+   "tipo": "limite-AI",
+   "testo": "Gap urgency/tempo: non ha gestito il tempo. GPT non crea naturalmente urgency, scarcity, timing. Copywriter umano inserisce pressione temporale istintivamente. Zero nel GPT output."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-13",
+   "run": "iy13HC9M8z0",
+   "tipo": "meta-osservazione",
+   "testo": "Paradosso impressione-conversione: Andrei genuinamente sorpreso da output 2, poi lo critica. La barra per impressionare un osservatore e bassa. La barra per convertire un cliente e alta. GPT supera la prima, non la seconda."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-14",
+   "run": "iy13HC9M8z0",
+   "tipo": "limite-AI",
+   "testo": "Gap linguaggio target: AI usa linguaggio universale neutro. Copywriter umano studia come parla il target specifico, usa le loro esatte parole, espressioni, gergo. Copy che usa linguaggio del target converte meglio."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-15",
+   "run": "iy13HC9M8z0",
+   "tipo": "limite-AI",
+   "testo": "Gap gestione obiezioni: AI non considera se una frase genera obiezioni. Copywriter anticipa e smonta obiezioni inline mentre scrive. GPT ignora questo layer completamente."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-16",
+   "run": "iy13HC9M8z0",
+   "tipo": "limite-AI",
+   "testo": "Gap creativita genuina: AI produce il centro statistico dei testi - la media ponderata di tutto il training. Non produce l'outlier creativo che fa vendere: angolo inatteso, metafora originale, struttura non convenzionale."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-17",
+   "run": "iy13HC9M8z0",
+   "tipo": "limite-AI",
+   "testo": "Gap emotivita autentica: AI descrive emozione, non la crea. Questa esperienza ti dara gioia (GPT) vs costruire narrativa che genera effettivamente gioia nel lettore (copywriter umano)."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-18",
+   "run": "iy13HC9M8z0",
+   "tipo": "limite-AI",
+   "testo": "Gap pensiero strategico: AI non analizza chi e il lettore, dove e nel funnel, cosa sa gia, quali sono le sue resistenze. Copywriter fa analisi strategica pre-scrittura. GPT va diretto al copy senza questa fase."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-19",
+   "run": "iy13HC9M8z0",
+   "tipo": "limite-AI",
+   "testo": "Gap ricerca vera: AI non fa ricerca di mercato reale. Non legge recensioni per trovare il linguaggio del target, non studia competitor, non analizza testimonial. Copywriter usa ricerca come materia prima del copy."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-20",
+   "run": "iy13HC9M8z0",
+   "tipo": "business-impact",
+   "testo": "Costo del copy generico: lasciando tantissimi soldi sul tavolo. Copy mediocre ha costo opportunita enorme. Ogni conversione persa = revenue non generata. Generic copy = money left on table, quantificabile."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-21",
+   "run": "iy13HC9M8z0",
+   "tipo": "applicazione-pratica",
+   "testo": "AI per ricerca mercato: quanti tipi di tazze ci sono? Usa ChatGPT per mapping iniziale categoria prodotto, territori tematici, angoli esistenti. Strumento di research, non di scrittura."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-22",
+   "run": "iy13HC9M8z0",
+   "tipo": "applicazione-pratica",
+   "testo": "AI come benchmark negativo: sapere cosa non fare, cosa e troppo generico, cosa e troppo semplice. Genera output GPT, identifica i cliche da evitare. Test: se il tuo copy suona come GPT -> troppo generico."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-23",
+   "run": "iy13HC9M8z0",
+   "tipo": "applicazione-pratica",
+   "testo": "AI come ispirazione strutturale: utile per format types, strutture alternative, organizzazione contenuto. Non copiare il testo, usa per ispirare struttura poi riempi con copy umano."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-24",
+   "run": "iy13HC9M8z0",
+   "tipo": "strategia",
+   "testo": "AI come floor da superare: usa GPT per capire il livello base del mercato. Il tuo copy deve sistematicamente essere migliore di cio che GPT produce gratuitamente. Se non lo superi, il cliente non ha motivo di pagarti."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-25",
+   "run": "iy13HC9M8z0",
+   "tipo": "prospettiva-futura",
+   "testo": "Caveat futuro: tra 5 e 10 anni molto probabile che AI sia cosi avanzato da sostituire copywriter. Andrei non esclude sostituzione futura. Per ora (2023): il gap e reale e misurabile."
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-26",
+   "run": "iy13HC9M8z0",
+   "tipo": "contenuto-serie",
+   "testo": "Parte 2 annunciata: analisi errori GPT. Pattern: Andrei usa AI come materiale educativo per mostrare cosa un copywriter vede che GPT non vede. Continua serie critica AI vs copy umano."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-01",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Competitive Research",
+   "testo": "Meta Ads Library e gratuito e mostra TUTTE le ads attive su Meta technologies. Andrei: 'strumento fantastico che e assurdo il fatto che nessuno ne parli in Italia — solo questo dovresti essere licenziato e fallire' se non lo usi."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-02",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Feature",
+   "testo": "Saved Searches = salva combinazioni di ricerca (paese + categoria + keyword) per monitoraggio competitivo rapido e sistematico senza rifare la ricerca ogni volta."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-03",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Coverage",
+   "testo": "Ad Library coverage: (1) tutte le ads attive su Meta, (2) ads su social/elections ultimi 7 anni, (3) qualsiasi ad mostrata in EU nell'ultimo anno. EU = massima trasparenza imposta per legge."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-04",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Search Technique",
+   "testo": "Multi-keyword search: inserisci fino a 50 parole diverse simultaneamente (es: tastiera, mouse Pad, keycaps, case, cuffie, luci RGB, gaming) per trovare ads che contengono almeno uno di quei termini. Piu keywords = meno risultati ma piu mirati."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-05",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Search Technique",
+   "testo": "Quando il mercato e vasto (es: gaming), usare i filtri e critico. Con un solo keyword si trovano migliaia di ads; con multi-keyword di nicchia si trovano le ads 'generalmente fatte un po' meglio' perche piu specifiche."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-06",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Strategia / Ad Format",
+   "testo": "Regola empirica Andrei: 'Le ADS video sono quelle che convertono. Le ad foto sono retargeting forse un annuncio veloce. Le foto non funzionano bene per la maggior parte delle categorie.' Filtra sempre per Media Type: Videos per trovare ads di conversione."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-07",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Filter",
+   "testo": "Filtro Inactive ads = ads non piu in esecuzione = ads che brand ha testato e poi stoppato. Studio delle inactive rivela cosa non ha funzionato e per inferenza cosa ha funzionato meglio rispetto alle active."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-08",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Filter Stack",
+   "testo": "Stack filtri ottimale: Paese + Platform (Instagram) + Active Status (Active) + Media Type (Videos) + Language (Italian) + Launch Date. Riduce da migliaia a ~98 risultati specifici e recenti. Gaming Italy con questo stack = 98 ads."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-09",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Pattern / Ad Analysis",
+   "testo": "Case Laurea Online: stesso brand con 3 versioni dello stesso ad (template viola gaming) tutte lanciate nello stesso periodo = brand che testa multiple creative sistematicamente. Questo pattern = brand professionalmente gestito vs template unico."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-10",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Intelligence",
+   "testo": "EU Ad Transparency (cliccando 'See ad details') rivela per ogni ad: (1) eta target esatta, (2) genere target, (3) regioni ESCLUSE dal targeting, (4) EU Reach = conti Meta unici che l'hanno vista. Strumento legale obbligatorio — intelligence gratuita per competitor."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-11",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Tool / Intelligence",
+   "testo": "EU Reach come proxy di budget: 'IN PIU TI REGALIAMO' Women 30-55 = Reach 1,770. Un ad con EU Reach 25,000 indica investimento significativamente maggiore. EU Reach non e impression — e conti unici esposti all'ad."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-12",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Strategia / Targeting",
+   "testo": "Esclusione geografica nel targeting (rivelata da EU Transparency): i brand escludono deliberatamente province/regioni specifiche. Motivi possibili: distributori locali, franchising, evitare cannibale traffico fisico. Informazione preziosissima per capire strategia distributiva competitor."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-13",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Business / Freelance",
+   "testo": "Dan Lock Gap: i grandi corsi di copywriting insegnano come scrivere ma NON come trovare clienti. 'Invia delle mail, fai queste cinque cose' = consiglio generico. Chi risolve ENTRAMBI (copy + acquisizione) ha vantaggio enorme nel mercato italiano."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-14",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Business / Opportunita",
+   "testo": "Target primario per copywriter: imprenditori italiani 'che non sanno cosa fanno, non ne hanno idea ma sono pieni di soldi'. Proponi soluzione copy specifica → 'gli cambi l'esistenza praticamente'. Mercato ampio: Meta Advantage campaign accessibile a tutti ma copy scadente."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-15",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Business / Mercato",
+   "testo": "Advantage Flash Campaign (Meta automated) = chiunque puo fare ads. 'Lo fa chiunque cioè chiunque fa le ad quindi e un grande mercato.' Il copywriter si differenzia in un mare di ads automatizzate. Piu automation = piu valore della copy manuale esperta."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-16",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Critica / Fashion Copy",
+   "testo": "Carisma Shoes: 'non ho posizionato quest'ad sembra che sia...' — ad fashion che non si identifica nel testo. Nel settore moda il video funziona 'pero non e il tipo di content che funziona piu' genericamente. Fashion video deve comunicare brand identity, non solo estetica."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-17",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Pattern / Ad Template",
+   "testo": "Template Ads Detection: molti SMB (specialmente palestre) prendono un template, inseriscono video proprio, usano stessa copy structure. 'Hanno preso un template hanno messo il video' = individua business SENZA copywriter professionista = hot prospect per servizi copy."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-18",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Analisi / Ad Spend",
+   "testo": "EU Reach 25,000 per ad di palestra/settore locale = investimento significativo. Andrei: 'dovrebbero averci investito di piu'. Alto reach + bassa qualita copy = massimo margine di miglioramento per copywriter. Usa questo come argomento di vendita."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-19",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Pattern / A/B Test",
+   "testo": "La Palestra ssd a rl: stesso testo in due versioni (Maestro Lucio Cuomo, stessa struttura 'aumentare forza resistenza dal 17 settembre') → A/B test sulla creative visuale, NON sulla copy. Brand non testa la copy = enorme opportunita di ottimizzazione."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-20",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Strategia / Email",
+   "testo": "Email marketing per e-commerce: 'dovrebbe essere staple'. Non opzionale — fondamentale. Brand e-commerce senza email marketing integrato = enorme opportunita di revenue non sfruttata. Andrei lo afferma come regola assoluta."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-21",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Lifestyle / Positioning",
+   "testo": "Andrei posiziona copywriting come enabler di digital nomad freedom: 'io faccio soldi mentre viaggio' e 'poterlo fare senza dover costantemente refreshare il conto in banca'. Copy skill = location independence. Narrazione che attrae giovani nel target corso cm5."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-22",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Critica / Creative Approach",
+   "testo": "Brand meloni: uomo in costume regale al supermercato = shock value. 'E sicuramente molto meglio che fare una immagine pero grande grande danno che non si capisca nulla nel video.' Regola: CREATIVITA != CHIAREZZA. Ad memorabile ma incomprensibile NON converte."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-23",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Copy / Prodotto",
+   "testo": "Melone brand: copy educativa sui benefici ('ricco di sodio potassio, licopene che aiuta previene le malattie cardiache'). Struttura: theatrical hook (costume regale) → benefici health → CTA. Per commodity agricole: differenziazione tramite origin story + benefici salute."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-24",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Copy / Food & Restaurant",
+   "testo": "Ristorante Corte CAB: copy alta qualita — descrizione poetica piatti ('macaron al lampone cestino di frutta e sable alla mandorla'), video close-up 'VANIGLIA' cinematic. 'Questa e un'ottima strategia da considerare ragazzi' — naming ingredienti precisi + visual lusso = premium positioning."
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-25",
+   "run": "IWCHN_mE2Vo",
+   "tipo": "Strategia / Settore",
+   "testo": "Strategia ottimale food/ristoranti: video ASMR-style con dettagli visivi di preparazione/impiattamento + testo ingredienti precisi. Non serve spiegare — basta mostrare in modo irresistibile. Contro-intuitivo rispetto alla copy testuale classica."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-01",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Formato / Premessa video",
+   "testo": "Formato: live review di copy inviati dai follower via DM Instagram, 3 sales page selezionate su un totale ben piu' ampio (6 scaricati, 'un sacco' ricevuti). Solo 3 dei 6 annunciati vengono coperti nei 33 minuti."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-02",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Coerenza persona grammaticale",
+   "testo": "Il copy alterna seconda persona (tu) e terza persona (lei) nello stesso testo - discordanza che comunica scarsa attenzione o suona poco gentile. La coerenza di persona/registro va mantenuta lungo tutto il copy."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-03",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Anti-pattern AI-generated",
+   "testo": "Un copy in terza persona fredda e formule generiche 'sembra scritto da ChatGPT' - segnale d'allarme quando il testo manca di specificita'. Il copy deve essere comprensibile da chiunque, con eccezioni in base al target."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-04",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Credibilita nomi propri",
+   "testo": "Se un copy nomina una persona senza contesto (es. 'consulenza con Simone'), funziona solo se il lettore sa gia' chi e' - altrimenti serve costruire prima la credibilita'/riconoscibilita' del nome citato."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-05",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Funnel / Sales page organica vs ADS",
+   "testo": "Una sales page per traffico organico da' per scontata familiarita' col brand che un pubblico da ADS (traffico freddo) non ha - vanno progettate sales page diverse per le due sorgenti di traffico."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-06",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Pricing / Ancoraggio - tre scatole",
+   "testo": "Strategia 'tre scatole': opzione costosissima/irrealizzabile (solo ancoraggio), opzione media (vero obiettivo di vendita), opzione base (ancoraggio verso il basso). L'opzione costosissima rende quella media percepita come affare per contrasto."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-07",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Pricing / Ordine presentazione opzioni",
+   "testo": "Generalmente mostrare l'opzione piu' costosa PRIMA della base (ancoraggio verso l'alto) - eccezione: se il prezzo alto scoraggia dal continuare a leggere, va gestita l'obiezione prima. Ancorare dal basso all'alto e' generalmente debole."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-08",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Virgolette come insicurezza lessicale",
+   "testo": "Virgolette senza motivo tipografico (es. 'vuole' riferito a un orologio) segnalano insicurezza sulla scelta lessicale - meglio trovare il termine giusto che virgolettare quello sbagliato."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-09",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Principio comunicativo fondamentale",
+   "testo": "Non conta quello che l'autore intendeva dire, conta solo quello che il lettore capisce - se una frase puo' essere fraintesa, la responsabilita' e' di chi scrive."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-10",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Obiezione principale non gestita",
+   "testo": "Il copy spiega COSA fa il servizio ma non gestisce l'obiezione implicita 'perche' dovrei averne bisogno?' - se non scontata per il target, va affrontata esplicitamente."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-11",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Social proof concreto vs astratto",
+   "testo": "Invece di spiegare astrattamente il servizio, mostrare un caso concreto con nome e dettagli specifici ('Questo e' Leonardo, per lui abbiamo scelto questo orologio perche'...') comunica il value proposition meglio di una spiegazione generica."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-12",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Targeting linguistico",
+   "testo": "Il termine 'bambina' nella headline richiama una bambina di 12 anni, incoerente col target reale (donne adulte). Alternative valutate: 'ragazza' (meglio), 'giovane' (scartata, vedi KA-13)."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-13",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Implicazione negativa nel confronto temporale",
+   "testo": "'Come quando eri giovane' implica che ORA sei vecchia - effetto collaterale negativo non intenzionale del confronto col passato. Alternative: 'come anni fa' o 'come nei tuoi migliori ricordi', che non implicano giudizio sul presente."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-14",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Prova visiva before/after",
+   "testo": "Per un copy che vende sicurezza personale/immagine corporea, una foto before/after e' fondamentale - le parole da sole non bastano a comunicare trasformazione fisica/di sicurezza."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-15",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Tono e mismatch di genere comunicativo",
+   "testo": "Il copy 'sembra scritto per le donne ma da un uomo che non capisce le donne' - troppo Direct Response per un argomento delicato (insicurezza corporea); meglio storytelling morbido puntando sulla nostalgia."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-16",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Linguaggio accusatorio su temi sensibili",
+   "testo": "Frasi come 'niente di cui vergognarti' o 'per colpa delle tue incertezze' rischiano di suonare accusatorie anche con intento rassicurante - meglio formulazioni leggere tipo 'senza paranoie'."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-17",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Pain Point debole e obiezione non gestita",
+   "testo": "Pain Point debole e obiezione implicita ('come puo' un semplice costume fare tutto questo?') non gestita - pattern ricorrente col copy 1: entrambi promettono benefici senza spiegare il meccanismo che li rende credibili."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-18",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Soluzione in headline - errore strutturale",
+   "testo": "Regola forte: la headline non deve mai contenere la SOLUZIONE - nel 999 permille dei casi deve contenere il Pain Point. Mettere la soluzione in apertura salta gli step di consapevolezza necessari."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-19",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Staircase di consapevolezza",
+   "testo": "Prima di vendere coaching ONLINE bisogna prima convincere che serve coaching IN GENERALE, poi che serve nella variante online - saltare uno step di consapevolezza da' per scontato un lettore piu' avanti nel funnel di quanto sia."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-20",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Pain point specifico - eccezione regola del 3",
+   "testo": "I pain point vanno resi specifici e relatable (non 'scarsa motivazione' generico ma 'un mese che provo le trazioni e non ci riesco'). Eccezione esplicita alla regola del 3 (video 16): per liste di pain point specifici meglio arrivare a 5-6 esempi."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-21",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Meta-commentario cringe",
+   "testo": "Frasi auto-referenziali tipo 'non fare questo errore' dentro il copy sono 'molto cringe' - meglio descrivere il beneficio/errore direttamente senza ammonimento didattico esplicito."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-22",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Formattazione bullet list",
+   "testo": "Una bullet list deve avere spazio visibile tra marcatore e testo, altrimenti illeggibile. Enfasi tipografica (bold) va usata per evidenziare le parole chiave nei punti."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-23",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Copy / Priorita di correzione",
+   "testo": "Sintesi finale: problemi principali in ordine di priorita' - (1) soluzione al posto del pain point in headline, (2) organizzazione/formattazione carente, (3) livello di consapevolezza del target dato per scontato. Il resto sono dettagli minori."
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-24",
+   "run": "Pv5uzIxp96U",
+   "tipo": "Funnel / CTA e urgenza reale",
+   "testo": "CTA verso il corso con scadenza dichiarata (30 settembre 23:59) e motivazione esplicita del rialzo prezzo ('le consulenze diventano piu' costose perche' non posso offrirle a tutti per sempre') - urgenza genuina motivata, registro opposto alla scarsita' distaccata dei brand di lusso (video 16) perche' qui il brand e' un formatore personale, non un brand di lusso."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-01",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Processo",
+   "testo": "Il processo di scrittura del copy si divide in 4 fasi sequenziali: Briefing -> Ricerca -> Scrittura -> Revisione. Separare le fasi separa il carico cognitivo - non si puo' pensare al prodotto, al target, alla struttura e alle parole tutte insieme."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-02",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Briefing",
+   "testo": "Il Briefing e' la fase zero - senza di esso il copywriter scrive alla cieca. Definisce tutti i parametri del copy prima di scrivere una parola. Vale per copywriter freelance, imprenditori, content creator."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-03",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Briefing",
+   "testo": "'Prodotto' nel briefing significa 'cosa stiamo vendendo' - include idee, personalita', video, servizi, non solo oggetti fisici. Estende il concetto di prodotto a qualsiasi offerta digitale/personale."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-04",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Briefing",
+   "testo": "Il Pain Point e' il problema che il prodotto risolve - obbligatorio nel briefing, non opzionale. Senza pain point identificato, il copy non puo' agitare la sofferenza del target: il pain precede la soluzione nella struttura APSOC."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-05",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Briefing",
+   "testo": "L'USP (Unique Selling Point) risponde a 'perche' il mio e non quello degli altri?' - ogni brand degno ha un USP diversificante. Esempi citati: Razer (gaming hardcore), Logitech (versatility), iPhone (ecosystem/status). Senza USP il copy e' generico."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-06",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Briefing",
+   "testo": "Il tipo di copy va definito upfront nel briefing: email, blog post, landing page, sales page, opt-in page, VSL, branding. Ogni formato ha struttura, lunghezza e tono diversi - confondere formati significa copy che non converte."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-07",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Briefing",
+   "testo": "Il branding aziendale (tone of voice) deve essere rispettato - il copy NON puo' essere uguale per tutti i brand. Esempio Andrei: il suo stile e' 'freddo/diretto' - lo stesso copy per un brand caldo/inclusivo sarebbe dissonante e dannoso."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-08",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Briefing",
+   "testo": "Il contesto funnel/consapevolezza determina il copy da scrivere - audience fredda vs calda richiedono approcci opposti. Esempio: FB ad = audience fredda (non sa chi sei), sales page = audience calda (ha gia' visto opt-in ed email sequence). Copy identico per entrambe = conversione zero."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-09",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Ricerca",
+   "testo": "La Ricerca e' l'elemento piu' sottovalutato del copywriting - piu' della scrittura stessa. Citazione: 'la parte scrittura e' la piu' semplice, la piu' difficile e' sottovalutata: e' la ricerca e il briefing'."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-10",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Ricerca",
+   "testo": "'Fate una buona ricerca -> sarete automaticamente meglio del 90% di copywriter, assicurato 100%.' La maggior parte dei copywriter salta la ricerca: il differenziatore non e' il talento, e' il processo."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-11",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Metodo di ricerca",
+   "testo": "Metodo pratico di ricerca: YouTube -> cerca video recensioni del prodotto/categoria -> estrai pain point e desideri espliciti del target. Esempio candele profumate: reviewer dice 'non dura tantissimo' -> insight: il target vuole durabilita' -> va nel copy. Metodo replicabile per qualsiasi nicchia."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-12",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Metodo di ricerca",
+   "testo": "La ricerca serve a usare le stesse parole del target nel copy - 'voice of customer' come fonte di linguaggio autentico. Il copy scritto con le parole del target risuona istantaneamente; il copy scritto con parole del copywriter suona artificiale e non converte."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-13",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Principio",
+   "testo": "'Chi non capisce qualcuno non puo' vendergli niente.' La comprensione del target precede la persuasione: copywriting = empatia applicata alla vendita."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-14",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Metodo di ricerca",
+   "testo": "Se non trovi recensioni in italiano, cerca nel mercato estero - il mercato internazionale ha sempre materiale di ricerca. Rimuove la scusa 'il mio mercato e' troppo piccolo': il comportamento dei consumatori e' trasferibile cross-market."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-15",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Formula APSOC (CHIAVE)",
+   "testo": "APSOC e' la formula proprietaria di scrittura di Andrei Pascu: Attenzione -> Problema -> Soluzione -> Obiezioni -> Call To Action. Diversa dalla AIDA classica perche' aggiunge esplicitamente la O (obiezioni), step spesso omesso altrove."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-16",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / APSOC - Attenzione",
+   "testo": "A = Attenzione: fermare lo scroll con 3 tecniche - pain point, curiosita', valore. L'hook e' il gate: se l'attenzione non viene catturata, il resto del copy non viene letto."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-17",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / APSOC - Problema",
+   "testo": "P = Problema: agitare il problema del target in modo che si riconosca ('Non sei stanco di vetri che non riescono a pulirsi?'). La domanda-problema usa empatia per creare identita' condivisa col target; il pain agitato precede la soluzione."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-18",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / APSOC - Soluzione",
+   "testo": "S = Soluzione: presentare il prodotto come risposta diretta al problema agitato ('Spray XXL x2000, l'unico spray che grazie agli agenti chimici avanzati pulisce anche le macchie piu' testarde'). La soluzione deve legarsi direttamente al pain, non presentare feature generiche."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-19",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / APSOC - Obiezioni",
+   "testo": "O = Obiezioni: anticipare i dubbi del prospect e rispondere PRIMA che blocchino l'acquisto ('Agenti chimici tossici? -> Tranquillo, perfettamente sicuri'). Rispondere alle obiezioni nel copy stesso elimina la necessita' di una call di vendita, riduce attrito all'acquisto."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-20",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / APSOC - CTA",
+   "testo": "C = Call To Action: dire esattamente l'azione da compiere ('Link in bio, clicca il pulsante qui sotto per comprare adesso'). CTA vaga = conversione bassa; CTA specifica con verbo imperativo + dove cliccare + perche' ora = massima conversione."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-21",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Mindset",
+   "testo": "'Se fai bene la tua ricerca, la scrittura sara' flowey' - la qualita' del briefing+ricerca determina la facilita' della scrittura. Inverte la percezione: non e' il talento di scrittura a fare la differenza, ma la preparazione."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-22",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Revisione",
+   "testo": "Regola di revisione: 'Scrivi da ubriaco, rivedi da sobrio' - le due fasi richiedono stati mentali opposti. Scrittura = flusso libero senza autocensura; revisione = analisi critica distaccata. Mescolarle rallenta entrambe e produce copy mediocre."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-23",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Revisione",
+   "testo": "Pausa obbligatoria di 1-2 ore tra scrittura e revisione, per 'svuotare il cervello' e vedere il copy con occhio fresco. Il cervello dopo la scrittura e' 'dentro' il copy - non riesce a vedere i problemi."
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-24",
+   "run": "jgIgOPAnYNY",
+   "tipo": "Copywriting / Funnel",
+   "testo": "Funnel completo: FB ad (freddo) -> opt-in page -> email sequence -> sales page (caldo) - ogni step presuppone diversa consapevolezza del prospect. Copy della sales page presuppone che l'audience conosca gia' il prodotto; lo stesso copy usato nella FB ad fredda sarebbe incomprensibile e non convertirebbe."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-01",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Definizione",
+   "testo": "Copywriting = 'scrivere per vendere'. Non vendita faccia a faccia ma tramite testo scritto/digitale."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-02",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Storia",
+   "testo": "John Emory Powers, fine '800, primo copywriter pagato professionalmente. Scriveva per retailer sui giornali (macchine da scrivere, abiti, oggetti domestici). Stesso lavoro di oggi, ma su internet invece che sui giornali."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-03",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Principi fondamentali",
+   "testo": "La psicologia umana non cambia. Il copy di fine '800 usa gli stessi principi di persuasione di oggi - motivo per cui studiare i classici del copywriting ha valore pratico attuale."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-04",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Mercato",
+   "testo": "Il mercato del copywriting vale $25B e crescera' a $42.22B entro il 2030 - indicatore di domanda in espansione."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-05",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Applicazioni",
+   "testo": "Il copy si usa in: siti web, descrizioni prodotto Amazon, ad social (FB/IG), email marketing, spot radio/podcast, menu di ristoranti. Il copywriting e' trasversale a tutti i media."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-06",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Conversion rate",
+   "testo": "Esempio vaso: 1000 visitatori, prodotto €10, 1% conversione = €100. Con copy migliore: 2% conversione = €200. Stesso traffico, stesso prodotto, revenue raddoppiata. Il copy lavora sul denominatore (conversione), non sul traffico."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-07",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Case study",
+   "testo": "In casi reali citati da Andrei, la conversione e' passata da 1% a 34% grazie al copy - triplicando/quadruplicando la revenue. Non e' teoria, e' misurabile."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-08",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Value gap dipendente",
+   "testo": "Grafica animata mostra il value gap del copywriter dipendente: genera €50k/mese per l'azienda, riceve €1.2k/mese di stipendio. Il dipendente cede il surplus di valore all'azienda. Barre animate: verde alta = valore generato, grigia/rossa bassa = stipendio."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-09",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Salario dipendente",
+   "testo": "Copywriter dipendente guadagna €1200-1500/mese, pagato per presenza/tempo, NON per valore generato. Ha un tetto di guadagno indipendente dalla performance."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-10",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Guadagni freelance",
+   "testo": "Il freelance fissa il proprio prezzo - puo' far pagare fino a €5000 per una singola landing page. Massimo realistico in Italia per copywriter freelance = €15k/mese."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-11",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Metodi di pagamento",
+   "testo": "4 metodi di pagamento freelance: (1) per parola - PESSIMO, ignora il valore vero del testo; (2) per ora - PESSIMO, replica la logica da dipendente (paghi il tempo non il risultato); (3) % del profitto (es. 10% revenue generata) - ottimo economicamente ma complesso; (4) prezzo fisso per copy consegnata - BEST per principianti, tu fissi il prezzo proporzionato al valore percepito."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-12",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Errori di pricing",
+   "testo": "Pagare per parola o per ora e' un errore concettuale: prezza il mezzo (tempo, parole) non il fine (vendite generate). Un copy di 200 parole che genera €50k vale piu' di 2000 parole che non convertono."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-13",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Posizionamento",
+   "testo": "Il copywriter non e' pagato per scrivere, e' pagato per moltiplicare il revenue del cliente. Questa distinzione cognitiva cambia come ci si presenta, come si prezza e come si misura il successo."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-14",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Storia personale / Discovery",
+   "testo": "Andrei ha scoperto il copywriting da adolescente cercando 'come guadagnare online'. Questo percorso (curiosita' -> scoperta -> specializzazione) e' comune nel copywriting italiano."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-15",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Mercato italiano",
+   "testo": "4 anni prima del video (circa 2019-2020) le risorse in italiano per imparare copywriting erano quasi assenti. Andrei ha colmato questa lacuna. Nel 2023-24 il mercato italiano e' in crescita."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-16",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Formazione",
+   "testo": "Competenze richieste per imparare copywriting da un mentor: psicologia, propaganda, marketing etico, acquisizione clienti. Non basta imparare 'a scrivere bene' - il copywriting e' persuasione applicata."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-17",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Didattica / Prop fisico",
+   "testo": "Andrei usa un vaso di vetro verde come prop fisico on-camera durante tutta la sezione conversione. Crea un anchor visivo mnemonico per la metafora: 'il prodotto non cambia, cambia quanti ne vendi grazie al copy'."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-18",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / CTA branding",
+   "testo": "Outro card finale su sfondo nero, logo triangolare blu AP. Copy CTA: 'Il futuro e' nostro.' (identita'/community) + 'Ti aspetto nella mentorship.' (offerta diretta). Struttura: aspirational identity -> offerta specifica."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-19",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Insight core",
+   "testo": "Il copy non cambia il prodotto, cambia quante persone lo comprano. Il vaso rimane lo stesso: il copy cambia quanti vasi vengono venduti. Distinzione fondamentale per capire perche' i copywriter sono pagati bene - non agiscono sul prodotto, agiscono sulla domanda."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-20",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Autonomia pricing",
+   "testo": "La differenza strutturale tra dipendente e freelance non e' lo skill ma CHI fissa il prezzo. Dipendente: prezzo fissato da altri. Freelance: prezzo fissato da se'. Controllare il pricing = controllare la proporzione tra valore creato e compenso ricevuto."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-21",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Copywriting / Metodo % profitto",
+   "testo": "Farsi pagare il 10% del revenue generato dal copy e' il metodo piu' vantaggioso economicamente ma richiede: accesso ai dati fatturato cliente, fiducia reciproca, contratto ben strutturato. Consigliato solo per copywriter senior con track record misurabile."
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-22",
+   "run": "qOK4WP82Bvo",
+   "tipo": "Struttura video / Template sales-education",
+   "testo": "Struttura narrativa del video: (1) hook curiosita' intro, (2) story credibility (storia di Andrei), (3) market context, (4) mechanism (come funziona il copy), (5) economic proof (guadagni + grafici), (6) how to start (metodi pagamento), (7) CTA mentorship. Schema replicabile per qualsiasi video educativo con offerta finale."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-01",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Strategia funnel",
+   "testo": "Percorso delle informazioni: ogni touchpoint del funnel deve consegnare UN solo pezzo di informazione, il piu' persuasivo per quella fase, nell'ordine giusto. L'ordine sbagliato = attenzione persa."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-02",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Anatomia ad Facebook",
+   "testo": "Ordine di lettura reale di un'inserzione Facebook: (1) testo sopra immagine, (2) CTA, (3) elenco feature, (4) immagine per ultima nonostante sia visivamente dominante. Il copywriter deve scrivere il testo E briefare il designer sull'immagine."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-03",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Ricerca target",
+   "testo": "Due desideri chiave del target (non-musicisti, YouTuber/streamer): (1) niente eco nella stanza, (2) stanza esteticamente bella. Entrambi devono comparire nel copy."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-04",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Onesta' del prodotto",
+   "testo": "Fonoisolamento (blocca il suono attraverso le pareti) e' diverso da fonoassorbenza (riduce eco/riverbero interno). I pannelli sono SOLO fonoassorbenti. Non promettere mai 'blocco del suono' - e' una bugia (overpromise); restare su 'riduzione eco' + 'miglioramento acustico'."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-05",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Strategia posizionamento",
+   "testo": "I pannelli hanno impatto acustico reale minimo salvo se spessi/numerosi/di qualita' alta. Il loro valore primario e' VISIVO/ESTETICO. Implicazione strategica: guidare il copy con l'estetica, non con la funzione acustica - piu' onesto E piu' persuasivo per questo target."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-06",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Metodo di ricerca",
+   "testo": "Fare sempre la ricerca prima in inglese: il mercato EN ha informazioni di qualita' piu' alta, recensioni piu' dettagliate, migliori esempi di copy. Beneficio secondario: prendere ispirazione da un mercato estero riduce il rischio di copiare inconsapevolmente competitor italiani."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-07",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Metodo di ricerca",
+   "testo": "Moodboard per copywriter: raccolta di immagini che visualizzano il mondo estetico/l'aspirazione del target. Da costruire PRIMA di scrivere qualsiasi copy per prodotti lifestyle/estetici, per capire il linguaggio visivo del target."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-08",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Metodo di ricerca",
+   "testo": "Sezione dedicata 'POTENZIALI FRASI' nel documento di lavoro: dove annotare frasi/idee durante la fase di ricerca. NON e' copy finale - e' un contenitore di brainstorm da rivedere quando si scrive il copy vero."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-09",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Uso di AI nel processo",
+   "testo": "Usare ChatGPT per capire i benefici del prodotto (cosa fa, come funziona), MAI per scrivere il copy - 'non sostituisce il copywriter'. Avvertenza critica: GPT puo' sbagliare numeri e specifiche, verificare sempre con fonti reali (recensioni Amazon, recensioni YouTube, specifiche del produttore)."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-10",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Strategia posizionamento (CHIAVE)",
+   "testo": "ChatGPT elenca i benefici del prodotto in ordine 'logico' mettendo l'estetica per ultima (dopo i benefici acustici). Il target (YouTuber/streamer) e' motivato principalmente dall'estetica. Andrei inverte deliberatamente l'ordine di GPT, mettendo l'estetica PER PRIMA. Citazione: 'lui lo ha ammesso come ultima cosa [...] ma io lo voglio sfruttare proprio come prima cosa'."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-11",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Fonti di ispirazione",
+   "testo": "Le schede prodotto Amazon sono fonte di ispirazione per il copy, ma molte usano 'over promise' (bugie) - esempio scartato: 'il bambino dorme perche' ci sono questi quadratini' (assurdo, non credibile). Il copy deve essere credibile per essere efficace."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-12",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Fonti di ispirazione",
+   "testo": "Le videorecensioni YouTube sono 'una mano Divina' per la ricerca: i recensori dicono esplicitamente cosa gli interessa e perche' hanno comprato - linguaggio reale del cliente, direttamente riusabile nel copy."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-13",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Processo di scrittura",
+   "testo": "Metodo di scrittura: partire dalla versione piu' semplice e diretta, poi rifinire ripetutamente. Citazione: 'parto da un'idea molto base e poi lo rifinisco e lo rifinisco e lo rifinisco'. Piu' passaggi finche' il copy non e' d'impatto."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-14",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Linguaggio inclusivo",
+   "testo": "'Gaming Room' esclude gli streamer che chiamano il loro spazio 'stanza di registrazione'. Parole troppo specifiche sul tipo di stanza eliminano parte del target. Soluzione: 'la tua stanza in cui registri o giochi' - copre entrambi in una frase sola."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-15",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Formula hook",
+   "testo": "Formula hook da social proof aspirazionale: 'Hai presente [cosa che hanno] [gruppo aspirazionale] nelle loro [luogo]? Che hanno tutti [nelle loro camere]? Sono questi.' Funziona per 4 motivi: 'Hai presente' presume conoscenza pregressa (crea in-group); il gruppo aspirazionale (es. YouTuber) fa leva sul desiderio di somigliargli; 'che hanno tutti' genera FOMO; 'Sono questi' e' una rivelazione del prodotto sicura e concisa."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-16",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Editing del copy",
+   "testo": "Regola: la stessa parola ripetuta due volte in un copy breve indebolisce l'impatto e suona pigro. Tecnica di correzione: sostituire con un sinonimo colloquiale - 'pannelli' diventa 'quadratini' (piu' informale, quasi comico, piu' vicino al target). Il linguaggio colloquiale spesso funziona meglio con un target giovane di creator online."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-17",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Scelta lessicale",
+   "testo": "La parola 'coinvolgente' scelta per il bullet finale perche' evoca il concetto di engagement YouTube/streaming - risuona con il target creator su un doppio livello (prodotto + mestiere del target)."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-18",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Struttura output finale",
+   "testo": "Struttura finale del copy immagine a 3 sezioni: [ALTO/giallo: hook] + [CENTRO: foto gaming room aspirazionale] + [BASSO/celeste: nome prodotto + bullet feature]. Ordine di consumo reale: immagine vista per prima (attrazione estetica) -> testo alto letto -> feature basse."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-19",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Didattica / Tecnica di insegnamento",
+   "testo": "La 'descrizione ad' (testo del post FB sopra l'immagine) NON viene scritta nel video: lasciata deliberatamente come esercizio per lo spettatore, con piano di rivedere le proposte dei commenti in un video futuro. Riconoscere quando fermare il tutorial e far esercitare lo studente e' una tecnica didattica valida."
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-20",
+   "run": "9CuQI0Cr4Pg",
+   "tipo": "Copywriting / Coerenza strategica",
+   "testo": "Apparente contraddizione risolta: la strategia dice 'estetica prima' ma il testo scritto dice 'migliora l'acustica e l'estetica' (acustica prima). Risoluzione: l'immagine consegna l'estetica VISIVAMENTE prima che qualsiasi testo venga letto - quindi l'ordine di consumo reale e' gia' estetica-first via immagine, e il testo puo' permettersi di aprire con il beneficio meno ovvio (acustica) per aggiungere credibilita'."
+  }
+ ]
+}

@@ -1,0 +1,750 @@
+{
+ "lotto": 10,
+ "assegnazioni": [
+  {
+   "uid": "max17-v02-beggiato-team::KA-001",
+   "capitolo": "V.12",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-002",
+   "capitolo": "V.12",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-003",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-004",
+   "capitolo": "V.3",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-005",
+   "capitolo": "V.17",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-006",
+   "capitolo": "V.3",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-007",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-008",
+   "capitolo": "V.17",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-009",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-010",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-011",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-012",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-013",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-014",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-015",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-016",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-017",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-018",
+   "capitolo": "VI.1",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-019",
+   "capitolo": "V.9",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-020",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-021",
+   "capitolo": "V.12",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-022",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-023",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-024",
+   "capitolo": "IV.2",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-025",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-026",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-027",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-028",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-029",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-030",
+   "capitolo": "V.3",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-031",
+   "capitolo": "V.7",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-032",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-033",
+   "capitolo": "V.3",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-034",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-035",
+   "capitolo": "V.3",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-036",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-037",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-038",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-039",
+   "capitolo": "V.17",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-040",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-041",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-042",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-043",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-044",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-045",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-046",
+   "capitolo": "V.17",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-047",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-048",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-049",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-050",
+   "capitolo": "V.17",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-051",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-052",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-053",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-054",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-055",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-056",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-057",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-058",
+   "capitolo": "V.17",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-059",
+   "capitolo": "V.17",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-060",
+   "capitolo": "V.17",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-061",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-062",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-063",
+   "capitolo": "V.5",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-064",
+   "capitolo": "VII.2",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-065",
+   "capitolo": "VII.2",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-066",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-067",
+   "capitolo": "IV.2",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-068",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-069",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-070",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-071",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-072",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-073",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-074",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-075",
+   "capitolo": "V.17",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-076",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-077",
+   "capitolo": "V.17",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-001",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-002",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-003",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-004",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-005",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-006",
+   "capitolo": "V.19",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-007",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-008",
+   "capitolo": "V.19",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-009",
+   "capitolo": "V.2",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-010",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-011",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-012",
+   "capitolo": "V.19",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-013",
+   "capitolo": "V.5",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-014",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-015",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-016",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-017",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-018",
+   "capitolo": "V.19",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-019",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-020",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-021",
+   "capitolo": "V.12",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-022",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-023",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-024",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-025",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-026",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-027",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-028",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-029",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-030",
+   "capitolo": "V.19",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-031",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-032",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-033",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-034",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-035",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-036",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-037",
+   "capitolo": "V.19",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-038",
+   "capitolo": "V.2",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-039",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-040",
+   "capitolo": "V.19",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-041",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-042",
+   "capitolo": "V.19",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-043",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-044",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-045",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-046",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-047",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-048",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-049",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-050",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-051",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-052",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-053",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-054",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-055",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-056",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-057",
+   "capitolo": "V.2",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-058",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-059",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-060",
+   "capitolo": "V.7",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-061",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-062",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-063",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-064",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-065",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-066",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-067",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-068",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-069",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-070",
+   "capitolo": "V.19",
+   "peso": "portante"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-071",
+   "capitolo": "V.2",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-072",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  }
+ ]
+}

@@ -1,61 +1,59 @@
 # Trascrizione con tempi -- `arma-outemail-secondo`
 
-**Strumento:** faster-whisper `small`, in locale su CPU (nessun audio inviato fuori). **Lingua:** it. **Durata media:** 01:46.35.
+**Strumento:** faster-whisper `medium`, in locale su CPU (nessun audio inviato fuori). **Lingua:** it. **Durata media:** 01:46.35.
 
 Testo LETTERALE, nessuna correzione, nessuna interpretazione. Formato: `[inizio -> fine]` in `mm:ss.cc`.
 
 ---
 
-**[00:00.00 -> 00:05.78]** Chi sei, esattamente, un marketer, imprenditore, copywriter, chiunque tu sia, se scrivi email
+**[00:00.00 -> 00:04.02]** Chi sei esattamente? Un marketer? Imprenditore? Copywriter?
 
-**[00:05.78 -> 00:10.26]** devi scrivere le strategiche. Non fidarti di me, fidati dei numeri. Le aziende che prendono
+**[00:04.24 -> 00:07.38]** Chiunque tu sia, se scrivi email, devi scrivere le strategiche.
 
-**[00:10.26 -> 00:16.46]** decisioni basate e solidati vedono un roi più alto fino a 5-8 volte più alto.
+**[00:07.50 -> 00:09.34]** Non fidarti di me, fidati dei numeri.
 
-**[00:16.58 -> 00:20.64]** Ma cosa significa fare il mail marketing strategico? Te lo spiego con un esempio.
+**[00:09.44 -> 00:16.52]** Le aziende che prendono decisioni basate sui dati vedono un ROI più alto fino a 5-8 volte più alto.
 
-**[00:20.92 -> 00:25.46]** Austo è un imprenditore. Ha assunto Antonio per farsi scrivere le mail di marketing
+**[00:16.56 -> 00:19.46]** Ma cosa significa fare email marketing strategico?
 
-**[00:25.46 -> 00:28.18]** da lui. Antonio deve scrivere un flusso di 10 email.
+**[00:19.66 -> 00:20.82]** Te lo spiego con un esempio.
 
-**[00:28.18 -> 00:31.30]** Quindi prende e ne scrive dieci su dieci argomenti diversi.
+**[00:21.06 -> 00:25.92]** Fausto è un imprenditore. Ha assunto Antonio per farsi scrivere le mail di marketing da lui.
 
-**[00:31.38 -> 00:33.16]** Imposta l'automazione e è finito.
+**[00:26.12 -> 00:28.24]** Antonio deve scrivere un flusso di 10 email.
 
-**[00:33.26 -> 00:36.42]** Questo non è un approccio strategico.
+**[00:28.24 -> 00:33.22]** Quindi prende e ne scrive 10 su 10 argomenti diversi. Imposta l'automazione e ha finito.
 
-**[00:36.60 -> 00:41.20]** Quindi Antonio viene licenziato, messo in un'astronave, mandato su Marte e poi Marte
+**[00:33.44 -> 00:36.62]** Questo non è un approccio strategico.
 
-**[00:41.20 -> 00:43.18]** viene bombardata e niente per quanto.
+**[00:36.82 -> 00:41.24]** Quindi Antonio viene licenziato, messo in un'astronave, mandato su Marte e poi Marte
 
-**[00:43.56 -> 00:45.46]** Fausto quindi, assumo Gianfranco.
+**[00:41.24 -> 00:45.54]** viene bombardata e niente più. Fausto quindi assume Gianfranco.
 
-**[00:45.62 -> 00:50.06]** Gianfranco prima di decidere cosa scrivere nella mail, decidere i painpoint, cosa trattare
+**[00:45.68 -> 00:50.20]** Gianfranco prima di decidere cosa scrivere nella mail decide i pain point, cosa trattare
 
-**[00:50.06 -> 00:54.82]** quando, le obiezioni che ordine scrivere in base alla costa e pevolezza scrive
+**[00:50.20 -> 00:55.32]** quando, le obiezioni, che ordine scrivere in base alla consapevolezza, scrive i mail
 
-**[00:54.82 -> 00:57.36]** i mail specifiche, non uguali a quelli dei competitor.
+**[00:55.32 -> 01:00.52]** specifiche, non uguali a quelle dei competitor. E questo è l'approccio strategico che moltiplica
 
-**[00:57.36 -> 01:01.86]** E questo è un approccio strategico che multiplica le vendite di Fausto.
+**[01:00.52 -> 01:05.06]** le vendite di Fausto. Ora so che l'esempio è stupido, l'ho fatto così per attirarti
 
-**[01:02.32 -> 01:06.26]** Ora so che l'esempio è stupido, l'ho fatto così per attirarti l'attenzione, ma è davvero
+**[01:05.06 -> 01:09.28]** l'attenzione. Ma è davvero così? 90% delle aziende italiane scrivono email generiche
 
-**[01:06.26 -> 01:06.46]** così.
+**[01:09.28 -> 01:13.14]** in questo modo. Ti vengono in mente più di 3 aziende che fanno buoni mail marketing,
 
-**[01:06.52 -> 01:10.22]** 90% delle aziende italiane scrivono e-mail generiche in questo modo, ti vengono in mente
+**[01:13.26 -> 01:17.40]** che te lo ricordi, che dici wow che bella email? No, probabilmente no. Eppure tu
 
-**[01:10.22 -> 01:14.86]** più di tre aziende che fanno buon e-mail marketing che ti lo ricordi, che dici wow che bella
+**[01:17.40 -> 01:21.74]** lavori il marketing. Strategico significa prendere decisioni in formato, seguire
 
-**[01:14.86 -> 01:15.84]** e-mail?
+**[01:21.74 -> 01:23.98]** tecniche e leve psicologiche
 
-**[01:15.88 -> 01:16.90]** No, probabilmente no.
+**[01:23.98 -> 01:24.84]** provate
 
-**[01:17.00 -> 01:21.58]** Eppure tu lavori il marketing, strategico significa prendere decisioni informati, seguire
+**[01:24.84 -> 01:32.44]** scientifici e non cose che hai visto in 5 blog copie incollate da gpt o copiatele con pezzero continuo a leggere questa pagina per vedere come
 
-**[01:21.58 -> 01:26.68]** tecniche e leve psicologiche, provate, scientifiche, non cose che hai visto
+**[01:32.44 -> 01:34.58]** scrivere la tua prima vera
 
-**[01:26.68 -> 01:30.36]** in cinque blog, copi incollate da GPT o copetere il competitor.
+**[01:36.14 -> 01:37.26]** email strategica
 
-**[01:30.52 -> 01:36.86]** Continua a leggere questa pagina per vedere come scriverla tua prima vera e mail strategica.
-
-**[01:37.14 -> 01:38.84]** Sarai sorpreso da quanto venderà.
+**[01:37.26 -> 01:39.08]** Sarai sorpreso da quanto venderà

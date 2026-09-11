@@ -1,0 +1,180 @@
+{
+ "lotto": 4,
+ "totale": 29,
+ "atomi": [
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-201",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Oltre alle skill personali, Anthropic pubblica un catalogo di plugin ufficiali organizzati per funzione aziendale (Productivity, Marketing, Sales, Design, Data, Engineering, Finance, Product management, Operations, Legal), ciascuno scaricato centinaia di migliaia di volte."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-202",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Il plugin ufficiale \"Sales\" di Anthropic bundla 9 skill (es. /call-prep, /forecast, /draft-outreach, /account-research) e 14 connector esterni (Slack, HubSpot, Clay, ZoomInfo, Notion, Atlassian, Fireflies, ecc.) collegati tramite Model Context Protocol (MCP)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-203",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "La scheda di dettaglio di un plugin installato mostra metadati (Source, Version, Author, Last updated) e una descrizione, oltre a una griglia delle skill che racchiude, ciascuna invocabile singolarmente tramite il proprio comando slash."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-204",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Importare un plugin equivale, metaforicamente, a infilare la chiavetta USB di un amico nel proprio computer: si eredita immediatamente un insieme di capacità/skill già pronte, costruite da qualcun altro."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-205",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Una skill di tipo \"daily briefing\" eseguita senza fonti dati collegate genera comunque un report demo completo con dati fittizi, così l'utente vede subito il formato esatto dell'output prima di collegare dati reali."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-206",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Un report di daily briefing vendite si struttura in: priorità principale in evidenza, numeri di pipeline a colpo d'occhio, riunioni del giorno con note di preparazione, trattative che richiedono attenzione, priorità email (da rispondere / in attesa di risposta) e una lista numerata di azioni consigliate."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-207",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Una volta collegati gli strumenti reali (calendario, CRM, email), le sezioni generate da una skill di tipo briefing si popolano automaticamente con dati veri invece di richiedere digitazione manuale da parte dell'utente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-208",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Un nuovo plugin può essere creato in due modi equivalenti: descrivendolo in linguaggio naturale a Claude (come per una skill) oppure tramite il comando dedicato \"Create plugin\"."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-209",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Oltre al catalogo ufficiale, si può aggiungere un marketplace di plugin personalizzato indicando un repository GitHub nel formato \"owner/repo\" oppure un URL git generico."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-210",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "I plugin installati da marketplace di terzi non sono controllati da Anthropic, che non può verificare che funzionino come previsto o che non cambino nel tempo: vanno quindi valutati con fiducia prima di installarli, aggiornarli o usarli."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-211",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Anthropic mantiene un repository GitHub ufficiale (\"claude-plugins-official\") come catalogo curato di plugin di qualità per Claude Code, distinguendo i plugin \"interni\" sviluppati da Anthropic dai plugin di terze parti/community (\"external_plugins\")."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-212",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Claude opera dentro una sandbox, una \"scatola sicura\" con confini ben definiti: questa separazione conta soprattutto quando si lavora con più clienti diversi (es. cliente A e cliente B) i cui dati e accessi devono restare isolati tra loro."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-213",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "\"Computer Use\" è una modalità in cui Claude prende il controllo diretto del mouse e della tastiera del computer reale dell'utente, uscendo dal normale ambiente conversazionale per interagire con il sistema operativo e le applicazioni installate."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-214",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Per attivare Computer Use su una richiesta, bisogna anteporre o posporre alla richiesta stessa la frase letterale \"computer use\"."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-215",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Mentre Computer Use è attivo, l'interfaccia mostra un indicatore visivo arancione acceso con l'etichetta \"Claude is using your computer\" e un pulsante \"Stop\" per interromperlo in qualunque momento."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-216",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "Computer Use è considerato ancora troppo acerbo per un uso aziendale serio, perché richiede che il computer resti sempre acceso, l'app sempre aperta e funzionante, e impedisce all'utente di fare altro sul computer mentre è in esecuzione."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-217",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Poiché Computer Use guida realmente il cursore e la tastiera, un'altra applicazione in esecuzione può rubare il focus della finestra durante il task e interferire con l'automazione, costringendo Claude a fermarsi, recuperare e ritentare."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-218",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "La prima volta che Computer Use deve agire dentro una determinata applicazione non ancora autorizzata (es. Preview), Claude si ferma e chiede esplicitamente l'accesso invece di procedere senza permesso."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-219",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Un caso d'uso pratico è essersi dimenticati di caricare un file (es. una thumbnail o un video) in una cartella condivisa con un collaboratore: più tardi si può chiedere a Claude di recuperare quel file, caricarlo su cloud storage e notificare il collaboratore, ma serve comunque il computer acceso, l'app aperta e non in sleep mode."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-220",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "\"Dispatch\" è una funzione che permette di controllare Claude e verificarne lo stato da qualunque posto (es. dal telefono), proseguendo una task o una sessione di codice in un unico filo continuo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-221",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Una sessione Dispatch espone impostazioni configurabili: \"Keep awake\" (evita lo stand-by della macchina), \"Allow all browser actions\", \"Computer use\" (attiva/disattiva) e \"Code permissions\" (es. \"Auto accept edits\" oppure \"Bypass permissions\")."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-222",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Dispatch può inviare una notifica push sul telefono dell'utente ogni volta che Claude scrive un nuovo messaggio nel filo di conversazione."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-223",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "numero",
+   "testo": "Al momento della registrazione del corso, i piani Individual di Claude sono: Free; Pro a 17$/mese con sconto per abbonamento annuale (200$ pagati in anticipo, 20$/mese se fatturato mensilmente), che include Claude Code e Claude Cowork; Max a partire da 100$/mese con 5x o 20x più utilizzo rispetto a Pro e limiti di output più alti."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-224",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "L'app desktop di Claude è disponibile per macOS, Windows e Windows (ARM64); quella mobile per iOS e Android; l'abbinamento tra le due app è ciò che rende possibile il controllo del computer da telefono tramite Dispatch."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-225",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Se il computer di destinazione risulta offline o irraggiungibile quando arriva un comando Dispatch dal telefono, il sistema mette il comando in coda con il messaggio \"Desktop appears offline. Will run when it reconnects.\" invece di farlo fallire immediatamente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-226",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Un flusso Dispatch end-to-end funziona così: un comando dettato dal telefono attiva Computer Use sul desktop reale, che esegue l'azione richiesta (es. aprire un file specifico), e Claude restituisce infine una conferma testuale che descrive cosa ha trovato o fatto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-227",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "La limitazione più grande attuale del Computer Use pilotato da telefono via Dispatch è che il computer desktop deve restare acceso perché tutto funzioni; il relatore prevede che in futuro questo limite verrà probabilmente risolto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-228",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Un'istruzione di Computer Use/Dispatch non è limitata a una singola azione fissa: può essere estesa in una catena di più passaggi dentro un'unica richiesta (es. non solo \"apri questo file\" ma \"aprilo, caricalo e mandalo per email\")."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-229",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il corso si chiude con una doppia call-to-action su due link distinti: un coaching program 1-1 per imparare a vendere questi servizi AI alle aziende e avviare una propria AI agency nei prossimi 90 giorni, e una risorsa separata per chi vuole invece applicare direttamente queste tecnologie nella propria azienda."
+  }
+ ]
+}

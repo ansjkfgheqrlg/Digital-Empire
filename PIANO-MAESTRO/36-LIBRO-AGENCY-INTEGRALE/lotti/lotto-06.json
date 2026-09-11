@@ -1,0 +1,174 @@
+{
+ "lotto": 6,
+ "totale": 28,
+ "atomi": [
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-201",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Baseline concettuale da cui parte il Browser Swarm: la browser automation classica a cui si è abituati consiste in un solo agente (Claude Code, Codex o altro) che usa un singolo browser per andare a cercare le cose sul web, uno alla volta."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-202",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Esempio matematico disegnato a mano per introdurre il guadagno del parallelismo: tre task fatte da un browser, ciascuna da 10 minuti, sommano a 30 minuti in sequenza (linea del tempo con tacche 10-20-30). Se le stesse tre task vengono fatte in parallelo, tutte e tre finiscono nello stesso tempo in cui ne è fatta una sola: un guadagno di tre volte in termini di tempo."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-203",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Estensione dell'esempio: se lo stesso processo da 3x di guadagno va ripetuto 5 volte, si moltiplica 5 x 3 = 15 unità di tempo (150 minuti se l'unità è 10 minuti). Spawnando -- a livello logico, con un costo in token -- 15 agenti in parallelo invece di farli in sequenza, si ottiene un risparmio di tempo per 15."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-204",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Live demo del Browser Swarm: il relatore detta il comando (trascritto integralmente in chat.md): 'Hey, per favore, ehm, spawna tre browser con il nostro Chrome Swarm. Vorrei che tu entrassi con tutti e tre nella pagina iniziale di Google, poi inserissi tre diverse query (magari una per andare su LinkedIn, una su YouTube e una su Instagram), e poi andassi lì'."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-205",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Prova tecnica reale del Browser Swarm: la skill lancia lo script swarm_driver.py con il blocco Bash 'Run swarm driver: 3 browsers search Google in parallel then follow first result', output 'Launching 3 browsers simultaneously...' con navigazione su porte reali distinte -- '[1] port 9223: navigating -> https://google.com/search?q=LinkedIn', '[2] port 9224: navigating -> https://google.com/search?q=YouTube' (e una terza porta per Instagram). Tutti e 3 i browser hanno completato in ~11 secondi."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-206",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Tabella dei risultati reali del Browser Swarm, letta dal file /tmp/swarm_results.json: '1 (porta 9223) | Linkedin | it.linkedin.com -- pagina di benvenuto italiana'; '2 (porta 9224) | YouTube | youtube.com -- homepage con consent banner'; '3 (porta 9225) | Instagram | instagram.com -- pagina di login'. I browser restano aperti al termine, con l'opzione di chiuderli con lo script kill_chrome.sh."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-207",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Uso pratico del Browser Swarm citato esplicitamente in webcam, richiamando le schermate di consenso cookie appena viste durante la demo: è utile in siti in cui è richiesta l'autenticazione umana o la selezione cookie, come visto pochi secondi prima nella dimostrazione."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-208",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "Disclaimer etico sul caso limite del Browser Swarm applicato a studi medici come nicchia: uno swarm di agenti può identificarsi come l'utente per raccogliere email da siti che richiedono autenticazione. Il relatore lo descrive ma lo accompagna esplicitamente con un disclaimer: 'Io non sto incitando niente' e, a chiusura dell'esempio: 'Ovviamente io non lo raccomando.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-209",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Catalogo reale delle skill Claude Code installate nel progetto 'Social Media Manager' di Giovanni Beggiato, visibile ripetutamente nella sidebar .claude/skills durante tutto il blocco di scene: agent-debates, agent-polling, audit, auphonic, browser-swarm, commit, contract, corso-skool, deploy-check, diagram-generator, draft-to-youtube, email-digest, linkedin-post, pre-mortem, prompt-contracts, query-anthropic, reverse-prompting, schedule-meeting, shorts, sign, skool-community-replies, skool-video-upload, step-back-prompting, video-to-action."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-210",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma 'Audit' su lavagna Excalidraw: box viola 'IL TUO PROGETTO' da cui partono tre frecce verso tre colonne di ispettori paralleli -- azzurro 'ISPETTORE CODICE -- Qualità, bug, pattern errati', verde 'ISPETTORE CONFIGURAZIONE -- Drift, file mancanti, coerenza', arancione 'ISPETTORE SICUREZZA -- Vulnerabilità, segreti esposti, permessi'. Ciascuno produce un risultato: '3 problemi trovati' (Codice), '1 drift rilevato' (Configurazione), 'Nessuna vulnerabilità' (Sicurezza). Tutti e tre convergono in un box giallo finale: 'REPORT UNIFICATO -- Stato di salute completo, priorità di intervento'."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-211",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Didascalia sotto il diagramma Audit, principio cardine della tecnica: 'Un singolo punto di vista trova solo i problemi che sa cercare. Specialisti multipli coprono gli angoli ciechi.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-212",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Annotazione manoscritta arancione '0 contesto!' con freccia verso l'Ispettore Codice: il primo agente di audit deve lavorare a zero contesto pregresso, altrimenti diventa biased dalle informazioni di contorno accumulate durante il progetto e da tutte le memorie discusse nel corso."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-213",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Annotazione manoscritta arancione 'CLAUDE.md' collegata con freccia all'Ispettore Configurazione: richiama l'esempio, fatto poco prima a voce, del file di regole del progetto non aggiornato -- 'nel mio eh cloud dot MD non sono riuscito a scrivere tutte le regole' -- come caso concreto del tipo di drift/incoerenza che questo secondo ispettore deve individuare."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-214",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Frontmatter reale del file SKILL.md della skill audit del progetto (visibile con numeri di riga, autore confermato via git blame): name: audit; description: 'Run a comprehensive 3-agent project health audit covering code quality, skill compliance, chain documentation, configuration drift, rules freshness, hooks integrity, and environment completeness. Use when the user says \"audit\", \"code review\", \"check the code\", \"review everything\", \"full audit\", \"project health\", or \"/audit\".'; allowed-tools: Bash, Read, Grep, Glob, Task."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-215",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "Goal dichiarato nel file SKILL.md reale della skill audit: 'Catch everything -- code bugs, skill drift, broken chains, stale rules, missing hooks, env gaps -- in one pass with 3 parallel agents. No manual checklist needed.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-216",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "Sezione Gotchas del file SKILL.md reale della skill audit, tre avvertenze operative: 'Scripts must run from project root. All check_*.py scripts use Path(__file__).resolve().parents[4] to find the project root. Run them with python3 .claude/skills/audit/scripts/<script>.'; 'check_skill_chains.py has hardcoded KNOWN_CHAINS. When adding a new skill chain, update the KNOWN_CHAINS dict in the script or the chain won't be verified.'; 'check_env_completeness.py won't find env vars used in browser automation. Loom/n8n vars are used via Chrome DevTools MCP, not Python os.environ.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-217",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "La barra di stato dell'editor conferma via git blame che l'autore del file SKILL.md della skill audit è proprio il relatore del corso: 'Giovanni Beggiato (2 months ago)' sulla riga selezionata -- prova diretta che la skill mostrata è materiale di produzione reale, non un esempio costruito per il video."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-218",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Live demo reale dell'Audit: lanciato sul progetto Social Media Manager, il comando /audit apre tre agenti paralleli con ruoli distinti: 'Agent 1 (Research): code inventory, skill compliance, chain integrity, project drift, orphan detection'; 'Agent 2 (Reviewer): zero-context code review, rules freshness, hooks check, memory staleness'; 'Agent 3 (QA): module imports, env completeness, reference validation, git state, tests, self-check'."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-219",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Il comando /audit reale genera una checklist Todos che struttura l'intero processo oltre alla sola raccolta dati: '[x] Collect results from 3 audit agents', '[ ] Compile and prioritize findings', '[ ] Auto-fix what can be fixed', '[ ] Update audit_log.md memory', '[ ] Run /commit pipeline'."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-220",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Primo risultato reale dell'audit lanciato dal vivo sul progetto: 'Agent 3 (QA) is done -- 5/6 checks pass, 1 FAIL on stale script references in SKILL.md files. Still waiting for Agents 1 and 2.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-221",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Prova reale dello stato del progetto al momento della demo: il pannello Source Control mostra 'Changes 28' -- 28 modifiche pending, la stessa cifra che il relatore cita a voce ('io qui ora ho ehm 28 cose pending su GitHub')."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-222",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Dopo che la skill di audit ha finito di girare, le modifiche pending vengono tutte committate e pushate automaticamente su GitHub, cosi' che il progetto rimanga pulito -- collegando esplicitamente l'ultimo step della checklist Todos ('Run /commit pipeline') al reale stato Git a schermo."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-223",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Durante la ricerca dal vivo del comando giusto, il menu 'Slash Commands' di Claude Code mostra quattro comandi reali disponibili nel progetto: /review, /reverse-prompting, /security-review, /simplify. Il relatore cercava 'security audit' ma corregge dal vivo: il comando che esiste davvero è /security-review, non un ipotetico security audit."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-224",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Elenco reale dei file toccati nel commit pending relativo alle skill browser-swarm e audit, visibile nel pannello Source Control: CLAUDE.md, skool_dm_campaign.py, check_env_completeness.py, check_hooks.py (.claude/skills/audit), check_project_drift.py, check_rules_freshness.py, check_skill_chains.py, check_skill_compliance.py, chat.md (.claude/skills/browser-swarm), kill_chrome.sh, launch_chrome.sh, launch_workers.sh, SKILL.md (.claude/skills/browser-swarm), swarm_driver.py, verify_swarm.sh, .mcp.json."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-225",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Il blocco Audit si apre con una domanda retorica che chiude idealmente l'arco delle tecniche insegnate nel corso: ipotizzando di aver costruito un progetto perfetto usando tutte le tecniche precedenti (prompt contracts, pre-mortem, agent polling, agent debates, browser swarm), come ci si assicura di averlo davvero fatto bene? La risposta sviluppata subito dopo è la tecnica di Audit a tre agenti paralleli."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-226",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Il relatore annuncia che lascerà la skill di audit a disposizione del pubblico, cosi' che chiunque la voglia importare nei propri progetti possa farlo in tutta libertà."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-227",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Chiusura del video con un'offerta commerciale esplicita: invito a chi è interessato a un programma strutturato per cominciare a vendere servizi AI o per implementare servizi AI nella propria azienda, con link lasciato in descrizione ('vi lascio il primo link qua sotto')."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-228",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "CTA di chiusura canale, in due tempi: 'mettete like al video se vi è piaciuto, commentate, ditemi qualcosa. Aiuta il canale' seguito, nell'ultima inquadratura del video, dal saluto conclusivo 'iscrivetevi e ci vediamo alla prossima. Tchau.' -- ultima battuta pronunciata nel video, che chiude l'intero corso."
+  }
+ ]
+}

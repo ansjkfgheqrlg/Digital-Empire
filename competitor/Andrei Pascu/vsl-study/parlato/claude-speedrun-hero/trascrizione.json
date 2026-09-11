@@ -1,0 +1,1274 @@
+{
+ "slug": "claude-speedrun-hero",
+ "strumento": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "lingua": "it",
+ "lingua_probabilita": 1,
+ "durata_video_s": 81.3,
+ "segmenti": [
+  {
+   "i": 0,
+   "inizio": 0.82,
+   "fine": 1.96,
+   "durata": 1.14,
+   "testo": "mio",
+   "parole": [
+    {
+     "p": "mio",
+     "inizio": 0.82,
+     "fine": 1.96
+    }
+   ],
+   "loudness_M_media": -15.3
+  },
+  {
+   "i": 1,
+   "inizio": 5.14,
+   "fine": 11.6,
+   "durata": 6.46,
+   "testo": "Sto psicopatico lo ha fatto di nuovo, stava mostrando come Claude gli fa fare soldi, e voi?",
+   "parole": [
+    {
+     "p": "Sto",
+     "inizio": 5.14,
+     "fine": 5.74
+    },
+    {
+     "p": "psicopatico",
+     "inizio": 5.74,
+     "fine": 6.34
+    },
+    {
+     "p": "lo",
+     "inizio": 6.34,
+     "fine": 6.56
+    },
+    {
+     "p": "ha",
+     "inizio": 6.56,
+     "fine": 6.74
+    },
+    {
+     "p": "fatto",
+     "inizio": 6.74,
+     "fine": 7.0
+    },
+    {
+     "p": "di",
+     "inizio": 7.0,
+     "fine": 7.34
+    },
+    {
+     "p": "nuovo,",
+     "inizio": 7.34,
+     "fine": 7.64
+    },
+    {
+     "p": "stava",
+     "inizio": 7.98,
+     "fine": 8.2
+    },
+    {
+     "p": "mostrando",
+     "inizio": 8.2,
+     "fine": 8.84
+    },
+    {
+     "p": "come",
+     "inizio": 8.84,
+     "fine": 9.18
+    },
+    {
+     "p": "Claude",
+     "inizio": 9.18,
+     "fine": 9.66
+    },
+    {
+     "p": "gli",
+     "inizio": 9.66,
+     "fine": 9.92
+    },
+    {
+     "p": "fa",
+     "inizio": 9.92,
+     "fine": 10.12
+    },
+    {
+     "p": "fare",
+     "inizio": 10.12,
+     "fine": 10.44
+    },
+    {
+     "p": "soldi,",
+     "inizio": 10.44,
+     "fine": 10.98
+    },
+    {
+     "p": "e",
+     "inizio": 10.98,
+     "fine": 11.22
+    },
+    {
+     "p": "voi?",
+     "inizio": 11.22,
+     "fine": 11.6
+    }
+   ],
+   "loudness_M_media": -15.7
+  },
+  {
+   "i": 2,
+   "inizio": 13.94,
+   "fine": 15.54,
+   "durata": 1.6,
+   "testo": "Lui ha pensato",
+   "parole": [
+    {
+     "p": "Lui",
+     "inizio": 13.94,
+     "fine": 14.3
+    },
+    {
+     "p": "ha",
+     "inizio": 14.3,
+     "fine": 14.56
+    },
+    {
+     "p": "pensato",
+     "inizio": 14.56,
+     "fine": 15.54
+    }
+   ],
+   "loudness_M_media": -16.5
+  },
+  {
+   "i": 3,
+   "inizio": 18.3,
+   "fine": 21.48,
+   "durata": 3.18,
+   "testo": "Brutto capitalista, ti garbano i soldi, eh?",
+   "parole": [
+    {
+     "p": "Brutto",
+     "inizio": 18.3,
+     "fine": 18.9
+    },
+    {
+     "p": "capitalista,",
+     "inizio": 18.9,
+     "fine": 19.5
+    },
+    {
+     "p": "ti",
+     "inizio": 19.56,
+     "fine": 19.76
+    },
+    {
+     "p": "garbano",
+     "inizio": 19.76,
+     "fine": 20.24
+    },
+    {
+     "p": "i",
+     "inizio": 20.24,
+     "fine": 20.46
+    },
+    {
+     "p": "soldi,",
+     "inizio": 20.46,
+     "fine": 20.86
+    },
+    {
+     "p": "eh?",
+     "inizio": 20.86,
+     "fine": 21.48
+    }
+   ],
+   "loudness_M_media": -18.4
+  },
+  {
+   "i": 4,
+   "inizio": 22.12,
+   "fine": 27.56,
+   "durata": 5.44,
+   "testo": "Ma tu per chi la vuoi bastar- Lo sapevi che un botto di utenti stanno switchando da chat GPT a Claude?",
+   "parole": [
+    {
+     "p": "Ma",
+     "inizio": 22.12,
+     "fine": 22.2
+    },
+    {
+     "p": "tu",
+     "inizio": 22.2,
+     "fine": 22.3
+    },
+    {
+     "p": "per",
+     "inizio": 22.3,
+     "fine": 22.48
+    },
+    {
+     "p": "chi",
+     "inizio": 22.48,
+     "fine": 22.6
+    },
+    {
+     "p": "la",
+     "inizio": 22.6,
+     "fine": 22.76
+    },
+    {
+     "p": "vuoi",
+     "inizio": 22.76,
+     "fine": 22.92
+    },
+    {
+     "p": "bastar",
+     "inizio": 22.92,
+     "fine": 23.32
+    },
+    {
+     "p": "-",
+     "inizio": 23.32,
+     "fine": 23.4
+    },
+    {
+     "p": "Lo",
+     "inizio": 23.4,
+     "fine": 23.6
+    },
+    {
+     "p": "sapevi",
+     "inizio": 23.6,
+     "fine": 23.92
+    },
+    {
+     "p": "che",
+     "inizio": 23.92,
+     "fine": 24.04
+    },
+    {
+     "p": "un",
+     "inizio": 24.04,
+     "fine": 24.22
+    },
+    {
+     "p": "botto",
+     "inizio": 24.22,
+     "fine": 24.46
+    },
+    {
+     "p": "di",
+     "inizio": 24.46,
+     "fine": 24.6
+    },
+    {
+     "p": "utenti",
+     "inizio": 24.6,
+     "fine": 24.94
+    },
+    {
+     "p": "stanno",
+     "inizio": 24.94,
+     "fine": 25.32
+    },
+    {
+     "p": "switchando",
+     "inizio": 25.32,
+     "fine": 25.86
+    },
+    {
+     "p": "da",
+     "inizio": 25.86,
+     "fine": 26.08
+    },
+    {
+     "p": "chat",
+     "inizio": 26.08,
+     "fine": 26.38
+    },
+    {
+     "p": "GPT",
+     "inizio": 26.38,
+     "fine": 27.0
+    },
+    {
+     "p": "a",
+     "inizio": 27.0,
+     "fine": 27.16
+    },
+    {
+     "p": "Claude?",
+     "inizio": 27.16,
+     "fine": 27.56
+    }
+   ],
+   "loudness_M_media": -17.5
+  },
+  {
+   "i": 5,
+   "inizio": 27.56,
+   "fine": 32.78,
+   "durata": 5.22,
+   "testo": "È perché Claude è velocemente diventata la migliore intelligenza artificiale per marketer",
+   "parole": [
+    {
+     "p": "È",
+     "inizio": 27.56,
+     "fine": 27.76
+    },
+    {
+     "p": "perché",
+     "inizio": 27.76,
+     "fine": 28.1
+    },
+    {
+     "p": "Claude",
+     "inizio": 28.1,
+     "fine": 28.62
+    },
+    {
+     "p": "è",
+     "inizio": 28.62,
+     "fine": 28.92
+    },
+    {
+     "p": "velocemente",
+     "inizio": 28.92,
+     "fine": 29.6
+    },
+    {
+     "p": "diventata",
+     "inizio": 29.6,
+     "fine": 30.14
+    },
+    {
+     "p": "la",
+     "inizio": 30.14,
+     "fine": 30.3
+    },
+    {
+     "p": "migliore",
+     "inizio": 30.3,
+     "fine": 30.76
+    },
+    {
+     "p": "intelligenza",
+     "inizio": 30.76,
+     "fine": 31.34
+    },
+    {
+     "p": "artificiale",
+     "inizio": 31.34,
+     "fine": 31.96
+    },
+    {
+     "p": "per",
+     "inizio": 31.96,
+     "fine": 32.18
+    },
+    {
+     "p": "marketer",
+     "inizio": 32.18,
+     "fine": 32.78
+    }
+   ],
+   "loudness_M_media": -18.0
+  },
+  {
+   "i": 6,
+   "inizio": 32.78,
+   "fine": 35.74,
+   "durata": 2.96,
+   "testo": "e freelancer che vogliono crescere velocemente.",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 32.78,
+     "fine": 32.94
+    },
+    {
+     "p": "freelancer",
+     "inizio": 32.94,
+     "fine": 33.54
+    },
+    {
+     "p": "che",
+     "inizio": 33.54,
+     "fine": 33.74
+    },
+    {
+     "p": "vogliono",
+     "inizio": 33.74,
+     "fine": 34.22
+    },
+    {
+     "p": "crescere",
+     "inizio": 34.22,
+     "fine": 34.88
+    },
+    {
+     "p": "velocemente.",
+     "inizio": 34.88,
+     "fine": 35.74
+    }
+   ],
+   "loudness_M_media": -19.3
+  },
+  {
+   "i": 7,
+   "inizio": 35.94,
+   "fine": 38.58,
+   "durata": 2.64,
+   "testo": "Lasciacciate GPT alle mamme che cercano ricette.",
+   "parole": [
+    {
+     "p": "Lasciacciate",
+     "inizio": 35.94,
+     "fine": 36.36
+    },
+    {
+     "p": "GPT",
+     "inizio": 36.36,
+     "fine": 36.78
+    },
+    {
+     "p": "alle",
+     "inizio": 36.78,
+     "fine": 36.96
+    },
+    {
+     "p": "mamme",
+     "inizio": 36.96,
+     "fine": 37.24
+    },
+    {
+     "p": "che",
+     "inizio": 37.24,
+     "fine": 37.38
+    },
+    {
+     "p": "cercano",
+     "inizio": 37.38,
+     "fine": 37.7
+    },
+    {
+     "p": "ricette.",
+     "inizio": 37.7,
+     "fine": 38.58
+    }
+   ],
+   "loudness_M_media": -20.4
+  },
+  {
+   "i": 8,
+   "inizio": 38.8,
+   "fine": 41.22,
+   "durata": 2.42,
+   "testo": "Inizia a usare Claude e vedrai...",
+   "parole": [
+    {
+     "p": "Inizia",
+     "inizio": 38.8,
+     "fine": 39.04
+    },
+    {
+     "p": "a",
+     "inizio": 39.04,
+     "fine": 39.18
+    },
+    {
+     "p": "usare",
+     "inizio": 39.18,
+     "fine": 39.36
+    },
+    {
+     "p": "Claude",
+     "inizio": 39.36,
+     "fine": 39.96
+    },
+    {
+     "p": "e",
+     "inizio": 39.96,
+     "fine": 40.14
+    },
+    {
+     "p": "vedrai...",
+     "inizio": 40.14,
+     "fine": 41.22
+    }
+   ],
+   "loudness_M_media": -21.0
+  },
+  {
+   "i": 9,
+   "inizio": 41.22,
+   "fine": 42.24,
+   "durata": 1.02,
+   "testo": "Ah, aspetta.",
+   "parole": [
+    {
+     "p": "Ah,",
+     "inizio": 41.22,
+     "fine": 41.52
+    },
+    {
+     "p": "aspetta.",
+     "inizio": 41.52,
+     "fine": 42.24
+    }
+   ],
+   "loudness_M_media": -30.2
+  },
+  {
+   "i": 10,
+   "inizio": 42.46,
+   "fine": 44.38,
+   "durata": 1.92,
+   "testo": "Pensi ancora che la I sia solo un giocattolo?",
+   "parole": [
+    {
+     "p": "Pensi",
+     "inizio": 42.46,
+     "fine": 42.7
+    },
+    {
+     "p": "ancora",
+     "inizio": 42.7,
+     "fine": 42.94
+    },
+    {
+     "p": "che",
+     "inizio": 42.94,
+     "fine": 43.06
+    },
+    {
+     "p": "la",
+     "inizio": 43.06,
+     "fine": 43.22
+    },
+    {
+     "p": "I",
+     "inizio": 43.22,
+     "fine": 43.34
+    },
+    {
+     "p": "sia",
+     "inizio": 43.34,
+     "fine": 43.44
+    },
+    {
+     "p": "solo",
+     "inizio": 43.44,
+     "fine": 43.62
+    },
+    {
+     "p": "un",
+     "inizio": 43.62,
+     "fine": 43.78
+    },
+    {
+     "p": "giocattolo?",
+     "inizio": 43.78,
+     "fine": 44.38
+    }
+   ],
+   "loudness_M_media": -19.4
+  },
+  {
+   "i": 11,
+   "inizio": 44.64,
+   "fine": 49.84,
+   "durata": 5.2,
+   "testo": "Andrej Pasku lo usa per programmare giornate, creare siti per clienti, scrivere copy per",
+   "parole": [
+    {
+     "p": "Andrej",
+     "inizio": 44.64,
+     "fine": 44.96
+    },
+    {
+     "p": "Pasku",
+     "inizio": 44.96,
+     "fine": 45.22
+    },
+    {
+     "p": "lo",
+     "inizio": 45.22,
+     "fine": 45.42
+    },
+    {
+     "p": "usa",
+     "inizio": 45.42,
+     "fine": 45.5
+    },
+    {
+     "p": "per",
+     "inizio": 45.5,
+     "fine": 46.02
+    },
+    {
+     "p": "programmare",
+     "inizio": 46.02,
+     "fine": 46.48
+    },
+    {
+     "p": "giornate,",
+     "inizio": 46.48,
+     "fine": 47.18
+    },
+    {
+     "p": "creare",
+     "inizio": 47.48,
+     "fine": 47.7
+    },
+    {
+     "p": "siti",
+     "inizio": 47.7,
+     "fine": 47.88
+    },
+    {
+     "p": "per",
+     "inizio": 47.88,
+     "fine": 48.12
+    },
+    {
+     "p": "clienti,",
+     "inizio": 48.12,
+     "fine": 48.88
+    },
+    {
+     "p": "scrivere",
+     "inizio": 49.06,
+     "fine": 49.36
+    },
+    {
+     "p": "copy",
+     "inizio": 49.36,
+     "fine": 49.64
+    },
+    {
+     "p": "per",
+     "inizio": 49.64,
+     "fine": 49.84
+    }
+   ],
+   "loudness_M_media": -16.2
+  },
+  {
+   "i": 12,
+   "inizio": 49.84,
+   "fine": 50.4,
+   "durata": 0.56,
+   "testo": "clienti.",
+   "parole": [
+    {
+     "p": "clienti.",
+     "inizio": 49.84,
+     "fine": 50.4
+    }
+   ],
+   "loudness_M_media": -15.3
+  },
+  {
+   "i": 13,
+   "inizio": 50.46,
+   "fine": 51.16,
+   "durata": 0.7,
+   "testo": "Non è hype.",
+   "parole": [
+    {
+     "p": "Non",
+     "inizio": 50.46,
+     "fine": 50.62
+    },
+    {
+     "p": "è",
+     "inizio": 50.62,
+     "fine": 50.78
+    },
+    {
+     "p": "hype.",
+     "inizio": 50.78,
+     "fine": 51.16
+    }
+   ],
+   "loudness_M_media": -17.6
+  },
+  {
+   "i": 14,
+   "inizio": 51.34,
+   "fine": 52.44,
+   "durata": 1.1,
+   "testo": "Qui lo usa per davvero.",
+   "parole": [
+    {
+     "p": "Qui",
+     "inizio": 51.34,
+     "fine": 51.48
+    },
+    {
+     "p": "lo",
+     "inizio": 51.48,
+     "fine": 51.66
+    },
+    {
+     "p": "usa",
+     "inizio": 51.66,
+     "fine": 51.76
+    },
+    {
+     "p": "per",
+     "inizio": 51.76,
+     "fine": 52.04
+    },
+    {
+     "p": "davvero.",
+     "inizio": 52.04,
+     "fine": 52.44
+    }
+   ],
+   "loudness_M_media": -18.4
+  },
+  {
+   "i": 15,
+   "inizio": 52.58,
+   "fine": 54.08,
+   "durata": 1.5,
+   "testo": "E tu stai rimanendo indietro.",
+   "parole": [
+    {
+     "p": "E",
+     "inizio": 52.58,
+     "fine": 52.64
+    },
+    {
+     "p": "tu",
+     "inizio": 52.64,
+     "fine": 53.0
+    },
+    {
+     "p": "stai",
+     "inizio": 53.0,
+     "fine": 53.22
+    },
+    {
+     "p": "rimanendo",
+     "inizio": 53.22,
+     "fine": 53.6
+    },
+    {
+     "p": "indietro.",
+     "inizio": 53.6,
+     "fine": 54.08
+    }
+   ],
+   "loudness_M_media": -19.8
+  },
+  {
+   "i": 16,
+   "inizio": 54.26,
+   "fine": 54.78,
+   "durata": 0.52,
+   "testo": "Pensaci.",
+   "parole": [
+    {
+     "p": "Pensaci.",
+     "inizio": 54.26,
+     "fine": 54.78
+    }
+   ],
+   "loudness_M_media": -18.5
+  },
+  {
+   "i": 17,
+   "inizio": 54.85,
+   "fine": 58.65,
+   "durata": 3.8,
+   "testo": "Questi stronzi investono miliardi nello sviluppo di Claude",
+   "parole": [
+    {
+     "p": "Questi",
+     "inizio": 54.85,
+     "fine": 55.93
+    },
+    {
+     "p": "stronzi",
+     "inizio": 55.93,
+     "fine": 56.31
+    },
+    {
+     "p": "investono",
+     "inizio": 56.31,
+     "fine": 56.75
+    },
+    {
+     "p": "miliardi",
+     "inizio": 56.75,
+     "fine": 57.39
+    },
+    {
+     "p": "nello",
+     "inizio": 57.39,
+     "fine": 57.65
+    },
+    {
+     "p": "sviluppo",
+     "inizio": 57.65,
+     "fine": 58.01
+    },
+    {
+     "p": "di",
+     "inizio": 58.01,
+     "fine": 58.17
+    },
+    {
+     "p": "Claude",
+     "inizio": 58.17,
+     "fine": 58.65
+    }
+   ],
+   "loudness_M_media": -19.1
+  },
+  {
+   "i": 18,
+   "inizio": 58.65,
+   "fine": 62.53,
+   "durata": 3.88,
+   "testo": "pensi veramente di essere troppo avanzato per trovarlo utile?",
+   "parole": [
+    {
+     "p": "pensi",
+     "inizio": 58.65,
+     "fine": 58.93
+    },
+    {
+     "p": "veramente",
+     "inizio": 58.93,
+     "fine": 59.29
+    },
+    {
+     "p": "di",
+     "inizio": 59.29,
+     "fine": 59.53
+    },
+    {
+     "p": "essere",
+     "inizio": 59.53,
+     "fine": 59.85
+    },
+    {
+     "p": "troppo",
+     "inizio": 59.85,
+     "fine": 60.55
+    },
+    {
+     "p": "avanzato",
+     "inizio": 60.55,
+     "fine": 61.39
+    },
+    {
+     "p": "per",
+     "inizio": 61.39,
+     "fine": 61.73
+    },
+    {
+     "p": "trovarlo",
+     "inizio": 61.73,
+     "fine": 62.13
+    },
+    {
+     "p": "utile?",
+     "inizio": 62.13,
+     "fine": 62.53
+    }
+   ],
+   "loudness_M_media": -21.4
+  },
+  {
+   "i": 19,
+   "inizio": 63.23,
+   "fine": 65.31,
+   "durata": 2.08,
+   "testo": "No, sei tu che non sai usarlo.",
+   "parole": [
+    {
+     "p": "No,",
+     "inizio": 63.23,
+     "fine": 63.31
+    },
+    {
+     "p": "sei",
+     "inizio": 63.77,
+     "fine": 63.89
+    },
+    {
+     "p": "tu",
+     "inizio": 63.89,
+     "fine": 64.31
+    },
+    {
+     "p": "che",
+     "inizio": 64.31,
+     "fine": 64.59
+    },
+    {
+     "p": "non",
+     "inizio": 64.59,
+     "fine": 64.77
+    },
+    {
+     "p": "sai",
+     "inizio": 64.77,
+     "fine": 64.89
+    },
+    {
+     "p": "usarlo.",
+     "inizio": 64.89,
+     "fine": 65.31
+    }
+   ],
+   "loudness_M_media": -17.2
+  },
+  {
+   "i": 20,
+   "inizio": 65.33,
+   "fine": 67.85,
+   "durata": 2.52,
+   "testo": "Sei un freelancer o marketer e conosci la I",
+   "parole": [
+    {
+     "p": "Sei",
+     "inizio": 65.33,
+     "fine": 65.49
+    },
+    {
+     "p": "un",
+     "inizio": 65.49,
+     "fine": 65.67
+    },
+    {
+     "p": "freelancer",
+     "inizio": 65.67,
+     "fine": 66.27
+    },
+    {
+     "p": "o",
+     "inizio": 66.27,
+     "fine": 66.47
+    },
+    {
+     "p": "marketer",
+     "inizio": 66.47,
+     "fine": 67.09
+    },
+    {
+     "p": "e",
+     "inizio": 67.09,
+     "fine": 67.31
+    },
+    {
+     "p": "conosci",
+     "inizio": 67.31,
+     "fine": 67.61
+    },
+    {
+     "p": "la",
+     "inizio": 67.61,
+     "fine": 67.73
+    },
+    {
+     "p": "I",
+     "inizio": 67.73,
+     "fine": 67.85
+    }
+   ],
+   "loudness_M_media": -15.8
+  },
+  {
+   "i": 21,
+   "inizio": 67.85,
+   "fine": 70.69,
+   "durata": 2.84,
+   "testo": "ma ancora non vedi come usarlo e crescerci il business.",
+   "parole": [
+    {
+     "p": "ma",
+     "inizio": 67.85,
+     "fine": 68.05
+    },
+    {
+     "p": "ancora",
+     "inizio": 68.05,
+     "fine": 68.35
+    },
+    {
+     "p": "non",
+     "inizio": 68.35,
+     "fine": 68.55
+    },
+    {
+     "p": "vedi",
+     "inizio": 68.55,
+     "fine": 68.79
+    },
+    {
+     "p": "come",
+     "inizio": 68.79,
+     "fine": 68.97
+    },
+    {
+     "p": "usarlo",
+     "inizio": 68.97,
+     "fine": 69.43
+    },
+    {
+     "p": "e",
+     "inizio": 69.43,
+     "fine": 69.65
+    },
+    {
+     "p": "crescerci",
+     "inizio": 69.65,
+     "fine": 70.09
+    },
+    {
+     "p": "il",
+     "inizio": 70.09,
+     "fine": 70.25
+    },
+    {
+     "p": "business.",
+     "inizio": 70.25,
+     "fine": 70.69
+    }
+   ],
+   "loudness_M_media": -17.5
+  },
+  {
+   "i": 22,
+   "inizio": 71.13,
+   "fine": 73.45,
+   "durata": 2.32,
+   "testo": "Oggi compra Claude Speedrun, costa 99 euro",
+   "parole": [
+    {
+     "p": "Oggi",
+     "inizio": 71.13,
+     "fine": 71.35
+    },
+    {
+     "p": "compra",
+     "inizio": 71.35,
+     "fine": 71.63
+    },
+    {
+     "p": "Claude",
+     "inizio": 71.63,
+     "fine": 71.97
+    },
+    {
+     "p": "Speedrun,",
+     "inizio": 71.97,
+     "fine": 72.37
+    },
+    {
+     "p": "costa",
+     "inizio": 72.53,
+     "fine": 72.75
+    },
+    {
+     "p": "99",
+     "inizio": 72.75,
+     "fine": 73.05
+    },
+    {
+     "p": "euro",
+     "inizio": 73.05,
+     "fine": 73.45
+    }
+   ],
+   "loudness_M_media": -16.7
+  },
+  {
+   "i": 23,
+   "inizio": 73.45,
+   "fine": 75.63,
+   "durata": 2.18,
+   "testo": "e ti mostra come andrei titolare d'agenzia.",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 73.45,
+     "fine": 73.59
+    },
+    {
+     "p": "ti",
+     "inizio": 73.59,
+     "fine": 73.73
+    },
+    {
+     "p": "mostra",
+     "inizio": 73.73,
+     "fine": 73.99
+    },
+    {
+     "p": "come",
+     "inizio": 73.99,
+     "fine": 74.19
+    },
+    {
+     "p": "andrei",
+     "inizio": 74.19,
+     "fine": 74.69
+    },
+    {
+     "p": "titolare",
+     "inizio": 74.69,
+     "fine": 75.05
+    },
+    {
+     "p": "d",
+     "inizio": 75.05,
+     "fine": 75.19
+    },
+    {
+     "p": "'agenzia.",
+     "inizio": 75.19,
+     "fine": 75.63
+    }
+   ],
+   "loudness_M_media": -17.9
+  },
+  {
+   "i": 24,
+   "inizio": 75.75,
+   "fine": 77.73,
+   "durata": 1.98,
+   "testo": "Usa Claude ogni giorno nella sua azienda.",
+   "parole": [
+    {
+     "p": "Usa",
+     "inizio": 75.75,
+     "fine": 75.91
+    },
+    {
+     "p": "Claude",
+     "inizio": 75.91,
+     "fine": 76.27
+    },
+    {
+     "p": "ogni",
+     "inizio": 76.27,
+     "fine": 76.57
+    },
+    {
+     "p": "giorno",
+     "inizio": 76.57,
+     "fine": 76.97
+    },
+    {
+     "p": "nella",
+     "inizio": 76.97,
+     "fine": 77.17
+    },
+    {
+     "p": "sua",
+     "inizio": 77.17,
+     "fine": 77.35
+    },
+    {
+     "p": "azienda.",
+     "inizio": 77.35,
+     "fine": 77.73
+    }
+   ],
+   "loudness_M_media": -17.4
+  },
+  {
+   "i": 25,
+   "inizio": 77.79,
+   "fine": 79.77,
+   "durata": 1.98,
+   "testo": "Continua a leggere questa pagina per informarti",
+   "parole": [
+    {
+     "p": "Continua",
+     "inizio": 77.79,
+     "fine": 78.13
+    },
+    {
+     "p": "a",
+     "inizio": 78.13,
+     "fine": 78.23
+    },
+    {
+     "p": "leggere",
+     "inizio": 78.23,
+     "fine": 78.51
+    },
+    {
+     "p": "questa",
+     "inizio": 78.51,
+     "fine": 78.69
+    },
+    {
+     "p": "pagina",
+     "inizio": 78.69,
+     "fine": 79.05
+    },
+    {
+     "p": "per",
+     "inizio": 79.05,
+     "fine": 79.23
+    },
+    {
+     "p": "informarti",
+     "inizio": 79.23,
+     "fine": 79.77
+    }
+   ],
+   "loudness_M_media": -18.3
+  },
+  {
+   "i": 26,
+   "inizio": 79.77,
+   "fine": 81.27,
+   "durata": 1.5,
+   "testo": "il mercato della I cambia veloce.",
+   "parole": [
+    {
+     "p": "il",
+     "inizio": 79.77,
+     "fine": 79.93
+    },
+    {
+     "p": "mercato",
+     "inizio": 79.93,
+     "fine": 80.29
+    },
+    {
+     "p": "della",
+     "inizio": 80.29,
+     "fine": 80.45
+    },
+    {
+     "p": "I",
+     "inizio": 80.45,
+     "fine": 80.69
+    },
+    {
+     "p": "cambia",
+     "inizio": 80.69,
+     "fine": 80.97
+    },
+    {
+     "p": "veloce.",
+     "inizio": 80.97,
+     "fine": 81.27
+    }
+   ],
+   "loudness_M_media": -19.6
+  }
+ ]
+}

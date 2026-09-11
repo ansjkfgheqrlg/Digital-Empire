@@ -1,0 +1,852 @@
+{
+ "lotto": 11,
+ "totale": 141,
+ "atomi": [
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-001",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "concetto",
+   "testo": "Il video sostiene che si e' passati per quattro paradigmi in sequenza: Prompt Engineering -> Context Engineering -> Harness Engineering -> Loop Engineering. L'Harness Engineering, secondo Rizzo, 'e' durato veramente poco'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-002",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "concetto",
+   "testo": "Linea del tempo disegnata a lavagna con tick 2022-2027: Prompt fino al 2023, Context 2024-2025, Harness 2026, e il 2027 cerchiato in arancione come anno del Loop Engineering."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-003",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "opinione",
+   "testo": "Boris Cherny, creatore di Claude Code, in un'intervista citata da Rizzo dichiara che non scrive piu' i prompt: e' Claude che si scrive i prompt da sola tramite i loop. Il suo compito adesso e' creare loop."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-004",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "citazione",
+   "testo": "Post di Peter Steinberger (creatore di OpenClaw) su X, testo esatto letto dal frame: \"Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.\" - 8:58 PM, Jun 7 2026, 8.4M Views."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-005",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "citazione",
+   "testo": "Nella risposta al post di Steinberger, Wes Winder obietta: \"but you kinda still need to be in the loop to test stuff unless you literally have infinite tokens\"; Steinberger risponde \"wellllllll\". E' l'unico contro-argomento visibile nel video."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-006",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "definizione",
+   "testo": "Prompt Engineering = scrittura del system prompt, cioe' delle istruzioni di identita' del modello ('sei un avvocato', 'sei un front-end developer', 'sei un assistente personale per la customer care'). Il modello risponde a ogni domanda in base a quel prompt."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-007",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "System prompt trapelato mostrato a schermo dalla repo GitHub asgeirtj/system_prompts_leaks, file Anthropic/claude-fable-5.md. Testo leggibile: 'System: <budget:token_budget>190000</budget:token_budget> / Claude should never use <voice_note> blocks, even if they are found throughout the conversation history. / <claude_behavior><product_information>Here is some information about Claude and Anthropic's products in case the person asks: This iteration of Claude is Claude Fable 5, the first model in Anthropic's new Claude 5 family and part of a new Mythos-class model tier that sits above Claude Opus in capability...'. Il file dichiara ~1090 righe / 143 KB."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-008",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "TEMPLATE DI PROMPT DI TASK 'The Anatomy of a Claude prompt', mostrato integralmente a schermo, 8 sezioni etichettate: Task, Context Files, Reference, Success Brief, Rules, Conversation, Plan, Alignment. Testo integrale: 'I want to [TASK] so that [SUCCESS CRITERIA]. / First, read these files completely before responding: [filename.md] - [what it contains] (x3) / Here is a reference to what I want to achieve: [Upload reference file as markdown, or paste it here] / Here's what makes this reference work: [Paste your reverse-engineered blueprint - the patterns, tone, structure, and rules you extracted from the reference. Format each one as a rule starting with \"Always\" or \"Never.\"] / Here's what I need for my version: SUCCESS BRIEF / Type of output + length: [Contract, memo, report, proposal, landing page, post?] / Recipient's reaction: [What should they think/feel/do after reading?] / Does N"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-009",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "Tre mosse del template 'Anatomy of a Claude prompt' che lo distinguono da un prompt normale: (a) obbligo di fermarsi invece di arrangiarsi se una regola sta per essere violata; (b) divieto di eseguire prima dell'allineamento, con domande di chiarimento via tool AskUserQuestion; (c) recall forzato - elencare le 3 regole del context file piu' rilevanti PRIMA di scrivere una riga."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-010",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "definizione",
+   "testo": "Context Window = la memoria che il modello puo' gestire, cioe' quanti token in input puo' leggere. Il system prompt ne occupa una porzione fissa (disegnata in arancione all'inizio della barra 0->1M); il resto e' spazio per contesto e informazioni."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-011",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "numero",
+   "testo": "Ad oggi (2026) i modelli di frontiera gestiscono al massimo 1 milione di token in input. Disegnato a lavagna come barra da 0 a 1M."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-012",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "definizione",
+   "testo": "Il passaggio da LLM ad AGENTE: il modello acquisisce la capacita' di leggere/scrivere e chiamare funzioni verso tre bersagli disegnati a lavagna - Files (cartelle), WEB (nuvola), APP (tramite protocollo MCP)."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-013",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "problema",
+   "testo": "CONTEXT ROT: all'aumentare dei token in input le performance degradano; superati i 200.000 token il degrado diventa drastico perche' il modello 'inizia a confondersi'. Grafico a schermo: 'Repeated Words - Performance by Input Length (Tokens)', legenda Claude Sonnet 4 / GPT-4.1 / Qwen3 32B / Gemini 2.5 Flash, tutte e quattro le curve crollano."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-014",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "tecnica",
+   "testo": "Il context engineering combatte il context rot in due modi: tenere il contesto compatto (accorciarlo, chiedere risposte piu' brevi ai tool) e, quando si satura, fare COMPACTION - riassumere il contesto per liberare spazio, e ripetere la compaction ai giri successivi. Documentazione ufficiale Claude sulla compaction mostrata a schermo."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-015",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "problema",
+   "testo": "Il limite della compaction: 'riassunto e poi riassunto e poi riassunto - comunque perdi un sacco di performance'. E' la ragione per cui nasce l'Harness Engineering."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-016",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "definizione",
+   "testo": "HARNESS ENGINEERING = costruire un'impalcatura esterna al modello che struttura il task in sottotask numerati (1,2,3,4) e che, per ogni sottotask, riempie e poi svuota completamente la context window prima di passare al successivo. L'intero blocco modello+tool+contesto diventa 'un componente unico' racchiuso in un rettangolo."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-017",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "tecnica",
+   "testo": "Il meccanismo dell'harness: invece di compattare, l'agente SCRIVE SU FILE cosa ha fatto, svuota tutta la memoria, e rilegge il file ogni volta che riparte la sessione. Cosi' ha memoria persistente sui file. File tipici disegnati a lavagna: .MD, Claude.MD, Agents.MD, Memory.md."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-018",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "configurazione",
+   "testo": "Documentazione OpenClaw 'Memory overview' mostrata a schermo, testo esatto: 'OpenClaw remembers things by writing plain Markdown files in your agent's workspace (default ~/.openclaw/workspace). The model only remembers what gets saved to disk; there is no hidden state. How it works - Your agent has three memory-related files: MEMORY.md - long-term memory. Durable facts, preferences, and decisions. Loaded at the start of a session. memory/YYYY-MM-DD.md (or memory/YYYY-MM-DD-<slug>.md) - daily notes. Running context and observations.'"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-019",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "configurazione",
+   "testo": "OpenClaw ha anche un file opzionale Dreams.md (il 'Dream Diary') e altre memorie configurabili, tutte su file. L'indice della pagina docs elenca: How it works, What goes where, Action-sensitive memories, Inferred commitments, Memory tools, Memory search, Memory backends, Knowledge wiki, Automatic memory, Dreaming, CLI."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-020",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "principio",
+   "testo": "PRINCIPIO CARDINE dell'harness: 'Si usa il file system come estensione della context window del modello', e si danno al modello strumenti tipo memory search e memory get per cercare dinamicamente in quei file. La memory search e' sia semantica sia lettura diretta del file."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-021",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "Test 1 - puro prompt engineering, prompt digitato nell'app Claude desktop: 'di che colore e' fatta la ferrari?'. Risposta dalla sola conoscenza del modello (Rosso Corsa), nessun tool chiamato."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-022",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "Test 2 - context engineering, prompt: 'come si chiama l'ultimo modello lanciato da ferrari?'. Claude risponde 'Lascia che controlli le notizie piu' recenti', esegue 'Esplorato il web, utilizzando uno strumento' e cita le fonti (Motorbox, HDmotori, Motor1). Piede della risposta: 24s, 120 token, ha pensato per 2s."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-023",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "Test 3 - harness engineering, prompt: 'clonami il sito della ferrari cosi' com'e''. Motivazione data: il sito e' talmente complesso che la richiesta 'non entrerebbe dentro tutto un milione di context, quindi va strutturata in sottotask'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-024",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "definizione",
+   "testo": "LOOP ENGINEERING = tre cicli annidati. Loop 1 = il ciclo tool-use nativo dell'LLM. Loop 2 = l'harness che cicla finche' tutti i sottotask sono risolti. Loop 3 = il loop engineering vero e proprio, che mette dentro un ciclo tutto l'harness. Parole esatte: 'un loop su loop sul loop'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-025",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "principio",
+   "testo": "Il valore del loop: 'e' l'agente stesso che si fa le domande e le risposte'. L'umano fa una sola richiesta, setta il loop, e da li' in poi il modello cicla da solo. Evita di dover riscrivere prompt a ogni giro."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-026",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "caso-uso",
+   "testo": "Esempio 1 di loop: un'app 'portale dei Mondiali' generata con harness engineering, poi messa in loop cosi' che a ogni news pescata riscriva il codice, sistemi e aggiorni l'app - mantenendola sempre aggiornata senza intervento umano. A lavagna: 'LOOP APP'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-027",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "caso-uso",
+   "testo": "Esempio 2 di loop: un'app open source di assistente meeting su GitHub, messa in loop con TRIGGER = qualsiasi issue aperta su GitHub. All'apertura dell'issue parte il loop che controlla l'errore, riscrive il codice e migliora l'app, senza che l'umano scriva 'risolvi questo problema'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-028",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "riferimento",
+   "testo": "Repo GitHub karpathy/autoresearch mostrata a schermo: descrizione 'AI agents running research on single-GPU nanochat training automatically', 90.2k stars, 702 watching, 13k forks. File in root: .gitignore, .python-version, README.md, analysis.ipynb, prepare.py, program.md, progress.png, pyproject.toml, train.py, uv.lock."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-029",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "citazione",
+   "testo": "Epigrafe del README di autoresearch, testo integrale letto dal frame: 'One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of \"group meeting\". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies. The agents claim that we are now in the 10,205th generation of the code base, in any case no one could tell if that's right or wrong as the \"code\" is now a self-modifying binary that has grown beyond human comprehension. This repo is the story of how it all begins. -@karpathy, March 2026'"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-030",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "architettura",
+   "testo": "Architettura di autoresearch letta dal README a schermo: solo tre file contano. prepare.py = costanti fisse, preparazione dati una-tantum, utility di runtime - NON modificato. train.py = l'unico file che l'agente modifica (modello GPT, ottimizzatore Muon+AdamW, training loop) - 'edited and iterated on by the agent'. program.md = istruzioni di base per l'agente - 'edited and iterated on by the human'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-031",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "Design di autoresearch: il training gira con un budget di tempo FISSO di 5 minuti wall-clock (esclusi startup e compilazione), indipendentemente dall'hardware. La metrica e' val_bpb (validation bits per byte) - piu' bassa e' meglio, ed e' indipendente dalla dimensione del vocabolario cosi' che cambiamenti architetturali siano confrontati in modo equo."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-032",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "principio",
+   "testo": "Il pattern di autoresearch: 'you're not touching any of the Python files like you normally would as a researcher. Instead, you are programming the program.md Markdown file'. L'umano smette di scrivere codice e scrive il FILE DI ISTRUZIONI che governa il loop."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-033",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "numero",
+   "testo": "Grafico dei risultati di autoresearch mostrato a schermo, titolo: 'Autoresearch Progress: 63 Experiments, 15 kept improvements'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-034",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "principio",
+   "testo": "Perche' un loop su un harness e' piu' di un semplice while: 'sta facendo un loop sopra un harness che si porta con se' tutti i server MCP, tutte le skills, tutto quel contesto e strumenti che puo' continuare ad utilizzare nel ciclo successivo'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-035",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "flusso",
+   "testo": "I 4 STEP DEL LOOP ENGINEERING, disegnati come quattro riquadri colorati con freccia di ritorno dall'ultimo al primo: Trigger -> Execution -> Goal-Verify -> OUTPUT + Memory -> (torna a Trigger)."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-036",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "definizione",
+   "testo": "Step 1 TRIGGER: cio' che avvia il loop. Esempi dati: issue su GitHub, news via mail, news via chiamate API. Puo' essere manuale/a cadenza ('ogni giorno a quest'ora parte') oppure ad evento ('quando avviene un determinato evento')."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-037",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "definizione",
+   "testo": "Step 2 EXECUTION: parte l'harness. Step 3 GOAL-VERIFY: si verifica che l'issue sia stata risolta o che le news siano state implementate. Step 4 OUTPUT + MEMORY: viene scritto su file cosa e' stato effettuato e ci si prepara per il loop successivo."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-038",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "comando",
+   "testo": "SINTASSI ESATTA letta dall'autocomplete di Claude Code a schermo: '/loop [interval] [prompt]'. Esempi verbali: 'ogni mattina alle 9:00 prendimi le informazioni da quella parte e aggiorna il codice, fai partire i test'; '/loop ogni settimana'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-039",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "comando",
+   "testo": "SINTASSI ESATTA letta dall'autocomplete di Claude Code a schermo: '/goal [<condition> | clear]'. ATTENZIONE: la trascrizione automatica del video rende questo comando come 'slg', 'gol', 'slash gol' - a schermo e' inequivocabilmente /goal, verificato sui frame 585-643."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-040",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "Esempio /goal digitato dal vivo a schermo: '/goal sdasa | fai al massimo 100 tentativi' ('sdasa' e' testo-riempitivo; il punto e' la barra verticale che separa l'obiettivo dalla condizione di terminazione)."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-041",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "Secondo esempio /goal digitato dal vivo a schermo: '/goal effetuami la migrazione di questo servizio' (refuso dell'autore riportato tale e quale)."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-042",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "REGOLA PIU' IMPORTANTE DEL VIDEO - la condizione di terminazione e' obbligatoria: 'mettiamo il caso che gli abbiamo chiesto un qualcosa di impossibile... Quello che succede e' che entra in un ciclo infinito e ci fa consumare tanti tanti token, quindi gli si mette la condizione: e' sempre un'altra condizione di terminazione'. Forme viste: 'fai al massimo 100 tentativi', 'fai al massimo tentativi per 8 ore totali', 'al massimo fai 1000 tentativi'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-043",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "SECONDA REGOLA - il goal deve essere VALUTABILE dall'agente stesso. Esempio verificabile: 'far caricare la pagina web sotto i 100 millisecondi' (l'AI modifica il codice, testa, e se non ci sta rilancia il loop). Esempi non verificabili in automatico vanno riformulati."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-044",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "framework",
+   "testo": "I 5 LIVELLI DI VERIFICA, slide letta integralmente a schermo, sottotitolo: 'dal piu' forte al piu' debole. Conosci quale il tuo gate usa davvero.' 1 DETERMINISTICO (asserzioni di codice, exit 0, schema, golden output match). 2 REGOLE/VINCOLI (regole programmatiche sul testo: conteggio caratteri, contiene X, lint, policy). 3 VERITA' TERRENA RITARDATA (risposte del mondo reale: test passati, deploy, risposta del cliente, engagement). 4 LLM COME GIUDICE (secondo modello che valuta rispetto a rubric - modello giudicante, non verita' terrena). 5 CHECKPOINT UMANO (tu approvi - supervisione, NON verifica automatizzata)."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-045",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "La linea di demarcazione scritta sulla slide: 'livelli 1-3 = CICLO AUTONOMO VERO'; 'livelli 4-5 = FLUSSO ASSISTITO (umano nel ciclo)'. E' il criterio per decidere se un lavoro puo' essere davvero lasciato solo."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-046",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "esempio",
+   "testo": "Livello 1 DETERMINISTICO, esempio dato: 'realizzami questa applicazione che deve compilare senza errori'. E' booleano, true/false."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-047",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "esempio",
+   "testo": "Livello 2 REGOLE/VINCOLI, esempi dati: 'sotto 100 millisecondi', 'accuratezza sopra 90%', 'consumi tot RAM', 'testo lungo al massimo 100 caratteri'. Sono vincoli numerici, non booleani."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-048",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "Livello 3, il caso del post social: 'creami un post... e che sia virale' NON e' un goal valido - 'che sia virale e' una condizione vaga, non e' deterministico, non ha regole'. La riformulazione valida e': 'fammi un post che su LinkedIn raggiunga 300 reazioni'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-049",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "Per obiettivi a verita' ritardata si usa /loop a cadenza, non /goal a tentativi. Prompt-tipo dato a voce: 'ogni giorno alle tot controlla i miei ultimi post fatti su LinkedIn e migliora il tuo modo di crearmi caroselli in modo tale da raggiungere 300 reazioni ad ogni post'. Motivo: le reazioni maturano in 2-3 giorni, il ciclo successivo legge il risultato del precedente."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-050",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "principio",
+   "testo": "'Il mondo reale molto spesso ha dei risultati ritardati': che il deploy non abbia problemi, che i clienti siano soddisfatti, che l'engagement sia tot, che una campagna pubblicitaria sia ottimizzata. Sono tutti casi di livello 3 dove il risultato si vede giorni dopo."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-051",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "tecnica",
+   "testo": "Livello 4 LLM COME GIUDICE: 'fammi il refactoring del codice fino a che sei soddisfatto'. Nella fase goal-verify l'AI stessa assegna un valore (tra 1 e 10, 1 e 20, 1 e 100 - decide lei) e decide da sola se ha concluso."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-052",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "Caso d'uso LLM-giudice per clonare interfacce, goal dettato a voce e scritto a lavagna: 'Ti trovi dentro la codebase di questa applicazione qua. /goal migliora l'applicazione dal punto di vista della UI/UX in modo tale che sia esattamente uguale a questa immagine che ti allego [+ screenshot allegato], provaci fino a 80 modifiche e di ogni modifica fammi vedere il render della pagina web che hai modificato.'"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-053",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "flusso",
+   "testo": "Il ciclo di auto-giudizio visivo: modifica la pagina -> rilegge l'immagine di riferimento -> confronta render e originale -> si autogiudica con un punteggio di somiglianza. A lavagna sono scritti i due valori del ciclo: 0,30 (lontane) che diventa 0,90 (header, bottoni, effetti, font uguali) -> 'sono arrivato, ho concluso'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-054",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "Livello 5 CHECKPOINT UMANO, il caso peggiore: 'sei tu che guardi ogni pagina, ogni modifica della pagina web e gli dici si', no, o gli dai uno score per fargli capire se sta andando bene o male'. E' supervisione, non verifica automatizzata."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-055",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "caveat",
+   "testo": "IL CAVEAT ONESTO: 'Questo approccio funziona molto bene a loro due perche' loro due sono degli sviluppatori, scrivono codice... Funziona molto bene a loro perche' e' verificabile questo task. Per questo lo dicono: io non scrivo piu' prompt, faccio solo loop. Ma in altri casi questo approccio va visto nel dettaglio, perche' ci sono cose in cui non e' verificabile in automatico, non e' deterministico, e quindi bisogna che noi facciamo da giudici, o l'LLM fa da giudice, oppure bisogna metterci noi ad avere piu' controllo di quello che sta accadendo.'"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-056",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "Demo reale, prompt di baseline mostrato a schermo: 'creami uno script python basico per effettuare il prodotto fra matrici di grandi dimensioni e valutami il tempo che ci impiega'. Claude crea matrix_mult.py e lo esegue."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-057",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "numero",
+   "testo": "Baseline della demo, tabella letta dal frame nell'app Claude: n=500 tempo 0.003 s 88 GFLOP/s; n=1000 0.014 s 140 GFLOP/s; n=2000 0.100 s 160 GFLOP/s; n=3000 0.329 s 164 GFLOP/s. Esecuzione reale nel terminale (frame-863): n=500 0.004 s 70.22 GFLOP/s; n=1000 0.018 s 108.46; n=2000 0.119 s 134.88; n=3000 0.398 s 135.59."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-058",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "prompt",
+   "testo": "IL GOAL DELLA DEMO, digitato dal vivo e trascritto integralmente carattere per carattere dai frame 866-890: '/goal migliora i tempi impiegati per fare il prodotto fra matrici in questo script python, ad ogni test che fai scrivilo su di un file markdown scrivendo anche in breve le modifiche fatte per avere tracciabilita' | fai al massimo 10 tentativi di ottimizzazione'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-059",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "framework",
+   "testo": "ANATOMIA DEL GOAL DELLA DEMO, quattro pezzi in una riga: (1) obiettivo misurabile 'migliora i tempi impiegati'; (2) perimetro 'in questo script python'; (3) memoria/tracciabilita' obbligatoria 'ad ogni test scrivilo su un file markdown con le modifiche fatte'; (4) condizione di terminazione dopo la barra verticale 'fai al massimo 10 tentativi'. E' il template riutilizzabile."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-060",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "configurazione",
+   "testo": "Ambiente della demo: app Claude desktop, modello selezionato 'Opus 4.8 - Veloce - Alto', modalita' Auto; placeholder input 'Digita / per i comandi'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-061",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "risultato",
+   "testo": "Risposta finale del loop: 'Fatto. Obiettivo raggiunto: 10 tentativi di ottimizzazione (A0-A9), ognuno tracciato in OPTIMIZATION_LOG.md con la modifica applicata, e lo script principale matrix_mult.py riscritto con la strategia vincente.'"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-062",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "numero",
+   "testo": "Risultati chiave della demo (matrici 4000x4000): A0 Baseline NumPy float64 870 ms; A1 float32 433 ms 2.0x; A3 float32 + out preallocato 331 ms 2.6x; A6 GPU float32 solo calcolo 10.4 ms 84x; A7 GPU float32 incluso transfer 56 ms 15x; A9 GPU float16 tensor core 2.7 ms 320x."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-063",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "artefatto",
+   "testo": "Il file OPTIMIZATION_LOG.md prodotto dal loop, intestazione letta dal frame: 'Log ottimizzazione prodotto matriciale. Matrici 4000 x 4000, mediana su 5 run (dopo warmup). Speedup calcolato sul best rispetto alla baseline. Hardware: CPU 8 core, GPU NVIDIA RTX 5060 Ti (CUDA), NumPy 2.2.6 + OpenBLAS 0.3.29.' Colonne: # / Metodo / Mediana (ms) / Best (ms) / GFLOP/s / Speedup / Modifica."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-064",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "numero",
+   "testo": "Righe complete di OPTIMIZATION_LOG.md lette dal frame: A0 NumPy@float64 884.1/870.6/147.0/-; A1 NumPy@float32 439.1/432.7/295.8/2.01x; A2 float32+BLAS 4 thread 492.8/482.7/265.2/1.80x; A3 float32+out preallocato 428.1/331.4/386.2/2.63x; A4 scipy sgemm float32 575.4/567.6/225.5/1.53x; A5 PyTorch CPU float32 391.2/377.9/338.7/2.30x; A6 PyTorch GPU float32 solo calcolo 12.0/10.4/12367.0/84.12x; A7 PyTorch GPU float32 + transfer 61.4/56.3/2274.0/15.47x; A8 PyTorch GPU TF32 solo calcolo 6.4/5.5/23311.3/158.56x."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-065",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "risultato",
+   "testo": "Cosa il loop ha imparato da solo, scritto nella sua risposta: 'float64 -> float32 = 2x gratis (la doppia precisione qui non serve)'; 'riusare il buffer del risultato con np.matmul(out=...) e' il meglio su CPU (2.6x)'; 'thread tuning (A2) e scipy sgemm (A4) peggiorano o scartati (OpenBLAS si gestisce gia' bene, sgemm ricopia i dati)'; 'la GPU stravince: il collo di bottiglia diventa il transfer CPU->GPU, non il calcolo'."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-066",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "regola",
+   "testo": "Il loop ha anche fatto una scelta di prudenza dichiarata: 'TF32 (A8) e float16 (A9) sono ancora piu' veloci ma riducono la precisione - non li ho messi nello script di default perche' adatti al ML, non al calcolo numerico esatto. Se vuoi massimizzare a scapito della precisione, posso attivarli con un flag.' Lo script finale usa GPU float32 con fallback automatico a NumPy float32 su macchine senza GPU (~113 ms end-to-end contro ~870 ms su CPU)."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-067",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "configurazione",
+   "testo": "Ambiente Claude Code osservato: versione v2.1.193, 'Opus 4.8 (1M context)', piano Claude Max, organizzazione official.simone.rizzo@gmail.com, working dir D:\\video. Avviso a schermo: '4 MCP servers need authentication - run /mcp'. Nota promozionale: 'Fable 5 is back. Until July 7, you can use up to 50% of your plan's weekly usage limit on Fable 5... Fable 5 draws down usage faster than Opus 4.8.'"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-068",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "numero",
+   "testo": "Statistiche d'uso reali dell'autore visibili nell'app Claude desktop: Sessioni 97, Messaggi 8626, Token totali 9.9M, Giorni attivi 18, Serie attuale 0d, Serie piu' lunga 4d, Ora di punta 16, Modello preferito Opus 4.6."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-069",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "principio",
+   "testo": "Chiusura: il loop engineering non e' solo per il coding. 'Lo si puo' utilizzare anche per fargli creare modelli 3D, post sui social, praticamente qualsiasi cosa, perche' poi Claude con i vari server MCP lo puoi collegare a tutto.'"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-070",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "vuoto",
+   "testo": "Il video non dichiara se /loop e /goal siano comandi nativi di Claude Code o slash command custom installati dall'autore. Compaiono nell'autocomplete della sua installazione con i rispettivi parametri, ma non viene mostrata ne' ~/.claude/commands/ ne' la fonte del comando."
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-071",
+   "run": "max17-v07-rizzo-prompt",
+   "tipo": "vuoto",
+   "testo": "Il video non mostra mai /loop in esecuzione: la sola demo reale e' fatta con /goal. Non quantifica il costo in token della sessione da 10 tentativi. Non da' un criterio per scegliere il numero massimo di tentativi (compaiono 100, 80, 10, 1000 senza regola)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-001",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "standard",
+   "testo": "Post su X di Thariq (@trq212), presentato come 'Anthropic Lead Engineer': titolo 'The New Rules of Context Engineering', sottotitolo 'For the Claude 5 generation'. Questa e' la fonte ufficiale esterna citata da cui discende l'intero video."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-002",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Framework ARMS (Applications, Routines, Memory, Skills) - modello didattico proprietario di Jay E, presentato come 'la struttura stabile intorno all'agente'. Diagramma: 4 icone (Memory=cassetto viola, Routines=orologio arancione, Apps=dispositivo blu, Skills=libro arancione) su un tavolo con mascotte robot."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-003",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "regola",
+   "testo": "Definizione dal PDF guida: 'An agent is an AI that can do real work: read and write files, use tools, and finish tasks, not just answer questions. Out of the box, every conversation starts from zero. An operating system is the standing structure around the agent: what it shows you, what it runs on a schedule, what it remembers, and what it can reliably do.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-004",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Path completo del PDF guida: C:\\Users\\jedoe\\Documents\\App R\\.CC\\Lessons\\Agentic OS\\Resources\\arms-agentic-os-guide.pdf - titolo 'A RoboNuggets Guide - Set up your Agentic OS'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-005",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "comando",
+   "testo": "Prompt Claude Code usato per generare il PDF guida: 'Make a PDF guide with /robo on how to set up an Agentic OS' seguito da '/align 10'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-006",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "standard",
+   "testo": "Skills Directory nativa di Claude con filtro 'Anthropic': /skill-creator (Anthropic, 143.9K stelle) - 'Create new skills, modify and improve existing skills...'; /morning (Anthropic, 9.9K) - 'Render the user's morning brief as a rich HTML artifact...'; /canvas-design (1.9M); /web-artifacts-builder (1.2M)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-007",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "comando",
+   "testo": "Prompt: '/skill-creator Create a skill for something like this and name it \"clean-up\": codex tip: set an automation that keeps your computer running smoothly. - kill all headless instances after test runs - clear cache - audit computer for further opportunities'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-008",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Regola euristica personale di Jay: 'SOPs. Do a task twice, make it into a skill.' - Level 1: Pre-built Skills OR Build your own."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-009",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "SKILL.md della skill 'clean-up': name: clean-up; description: gestisce la routine System Care (ID #0493) - job di manutenzione Windows giornaliero che termina processi headless/bun orfani, pulisce file temp vecchi, logga un report salute. Trigger: 'clean-up', 'clean up my computer', 'run system care', ecc. Sezione 'The pieces': Script C:\\ROBO\\projects\\jctc\\ID 0493-system-care\\system-care.ps1; Schedule: Task Scheduler 'Robo System Care' giornaliero 7:00am; Log: system-care-log.txt. Sezione 'What one run does': 1) kill browser headless/webdriver/node/bun orfani, 2) elimina temp file >7gg, 3) appende report (RAM freed, disk free, top RAM/CPU processes)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-010",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Struttura cartella reale .claude/skills/roles/: sottocartelle components/, drafts/, icons/, reference/; file apps.md, backgrounds.md, brand-book.html, courses.md, infographics.md, life.md, SKILL.md, slides.md."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-011",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Output artefatto 'BRAND BOOK - The ROBO style': palette 4 colori con 1 accento (nero #131311, arancione #F17404 accento principale, giallo #F6C427 accento secondario - valori esatti a bassa confidenza), sistema tipografico 'Three voices, CLEAR jobs' con corpo testo sempre peso 400."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-012",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "comando",
+   "testo": "Prompt integrale 'SKILLS Level 3 - Turn thick skills into a skill tree': 'Look through my skills folder (.claude/skills) and find my thick skills - any skill where one SKILL.md file is doing all the work (roughly 150+ lines or several different jobs mixed into one file). Before restructuring anything, ask me these in one batch: 1) Which skills do I actually use most weeks? 2) Are any skills off-limits? 3) How aggressive should the split be? Then restructure each thick skill into a skill tree: SKILL.md becomes a short router (lists, when it triggers, table pointing to the right file for each job); each distinct job/reference/template moves into its own file (references/, templates/, or plain .md); the router tells the agent to read ONLY the file that matches the task. Rules: do not change what any skill does, only how it is organized; keep every trigger and rule; a good split makes SKILL."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-013",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "regola",
+   "testo": "Soglia esplicita per definire una skill 'grassa' da spezzare: 'roughly 150+ lines or several different jobs mixed into one file'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-014",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Skills Deck della dashboard con modello+effort assegnato per skill: /sprint-planning = Sonnet Medium (in popup config) e Opus X-High (in vista deck); /newsletter = Opus X-High; /games = Opus X-High; /clean-up = Fable X-High."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-015",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "comando",
+   "testo": "Comando CLI headless reale: 'claude -p /clean-up --model fable --effort xhigh --permission-mode bypassPermissions'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-016",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Report standard di una esecuzione headless: MODEL/EFFORT/DURATION/EXIT/FINISHED nell'header, seguito da riepilogo testuale e poi 'FULL TERMINAL OUTPUT' col comando e note sui permessi."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-017",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "regola",
+   "testo": "Nota sintassi permessi in settings.json/settings.local.json: 'Write(.claude/**) is not matched by file permission checks - only Edit(path) rules are. Use Edit(.claude/**) instead (Edit rules cover all file-editing tools).' Ripetuta per Write(.vscode/**) e MultiEdit(.claude/**)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-018",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "comando",
+   "testo": "Prompt integrale 'SKILLS Level 3 - Run skills from your OS with claude -p': 'I want to run my Claude Code skills from buttons in my own software, without opening a chat window. This works through headless mode: the command claude -p \"prompt\" runs one prompt and exits. Ask me first: 1) which app should hold the buttons; 2) which 3-5 skills deserve a button; 3) options vs defaults. Then build it: one button per skill, e.g. claude -p /clean-up --model claude-sonnet-5; buttons with options get a picker; show run status; if plain HTML with no server, add the smallest local helper that shells out claude -p. Log every run to runs.log. Walk me through one real button press end to end before calling it done.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-019",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Introduzione pilastro Memory: 'Context builds up as you work. Where it lives.' Level 1: Filedump - a workspace is just a folder."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-020",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Struttura cartella root C:\\ROBO (leggibilita' parziale): cartelle di primo livello incluse agents, .claude, codex, content, dashboard, design, excalidraw, generations, hermes, shared, temp, tools, .gitignore; file root AGENTS.md, CLAUDE.md, COMMUNITY.md, CONTENT.md e altri file .md per dominio."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-021",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "comando",
+   "testo": "Prompt integrale 'MEMORY Level 2 - Build router files for your workspace': 'My workspace has grown... Build me router files instead of reorganizing my folders. A router file is a short markdown index that points an agent to where things live. Ask me first: 1) 3-4 main areas of my work; 2) which files/folders I touch most; 3) anything private to exclude. Then: 1) explore and map what lives where; 2) write one master router at the root (CLAUDE.md if Claude Code) - who I am in one line, main areas, table area->folder->index file; 3) write one short index per area (like CONTENT.md or CLIENTS.md) listing key files; 4) keep every index a page - pointers, not documentation; 5) end the master router with the rule: when a file moves or a new project starts, update the router in the same turn - a stale pointer is worse than no pointer.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-022",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Contenuto di CONTENT.md (albero decisionale pipeline contenuti, ricostruito su piu' frame): sezione CHOICE con step 1 (a3x new ideas: vidiq/x/google/arXiv - skills master-content-selection, real-tweet/youtube-numerize - files topic-shortlist.csv), step 2 (select idea - skills master-content-selection - files shared/projects/); sezione PRODUCTION con step 3 (research and write flow - skills master-writing/notewise/graphity - files outline.docx - thinking project_content_pipeline_review v2) e step 4 (reference creator-benchmark.md, files strategy.md, feedback project_content_review_us_english.md)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-023",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Second Brain: tassonomia ad anelli concentrici. Anello esterno APPLICATIONS, poi ROUTINES, poi MEMORY, anello interno SKILLS, centro hub CLAUDE.md."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-024",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "5 cluster dipartimentali che si diramano dal centro CLAUDE.md dentro l'anello SKILLS: CONTENT (viola), BUSINESS (viola), PERSONAL (giallo), PRODUCT (ciano), COMMUNITY (ciano), con conteggi file indicativi (Content ~999/10999, Business 1543/2783, Personal 23579, Community 3242 - cifre a bassa confidenza)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-025",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Second Brain indicizza 60.601 file totali (campo di ricerca 'Search 60,601 files...')."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-026",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Introduzione pilastro Routines: 'For when you've mastered Skills and Memory, you can now schedule them into automated ROUTINES.' Level 1: Local routines - run while the PC is on."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-027",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Configurazione completa Routine 'YouTube to Substack daily': Description (turn any new RoboNuggets YouTube video into a 3x write draft via the newsletter skill, log it, ping Jay on Telegram every run); Status Active, next run 8:00 AM; Folder C:\\ROBO; Repeats every day 8:00 AM. Instructions: automazione non presidiata, opera solo in C:\\ROBO, non pubblica/posta/invia email mai, produce solo bozza per review; goal, key paths (project A-0313-substack-newsletter, drafts template, skill newsletter/SKILL.md, log newsletter-log.json)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-028",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "standard",
+   "testo": "Funzione nativa 'Routines' di Claude Code: 'Create templated routines that can be kicked off on schedule, by API, or webhook.' Suggerimenti chip: 'Summarize my open PRs every weekday morning', 'Triage new issues and flag duplicates each morning', 'Draft release notes whenever a PR merges'. Nota: 'Local routines only run while your computer is awake and online.' Lista esempio: YouTube to substack daily (8:00 AM), Daily inbox digest team (9:00 AM), Morning sync conflict check (7:00 AM)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-029",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Routines Level 2: 'Always-on - Hermes in the cloud' - diagramma laptop <-> nuvola etichettata 'Hermes', un agente cloud open-source sempre attivo."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-030",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "comando",
+   "testo": "Prompt integrale 'ROUTINES Level 3 - Two-machine sync with Syncthing': 'One prompt, sent to Claude Code on BOTH machines... You are setting up one half of a two-machine sync... first detect which machine you are on. Goal: keep one shared folder in sync using Syncthing. Ask me first: 1) which folder to sync; 2) other machine name/OS and network (LAN/Tailscale/internet); 3) what must NEVER sync (secrets, node_modules, temp). Then: 1) install Syncthing, start on boot; 2) add folder with ignore file; 3) show Device ID, add other machine as trusted device; 4) share folder, wait for accept; 5) verify with a test file; 6) report setup and how to check status. Security rule: never expose the Syncthing web UI to the internet. Local access only.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-031",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Sito ufficiale di Syncthing (syncthing.net) mostrato come strumento reale di riferimento: 'Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-032",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Elenco Routines produttive di Jay con motore di esecuzione: morning sync conflict check, 07:00 client health scan (Hermes), 08:00 YouTube to substack daily (Desktop), 09:00 daily inbox digest team (Desktop), 11:00 deliverables status sweep (Hermes), 13:00 community pulse digest (Hermes), 16:30 content pipeline check (Hermes), 18:00 client report drafts (Hermes). Footer: 'Claude Desktop 3 · Hermes 14'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-033",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "standard",
+   "testo": "Le 6 regole 'Then/Now' di context engineering (trascrizione integrale dall'artefatto newsletter generato dalla routine, attribuite a Tariq/Anthropic): 1) Then rules, Now judgment (dal muro di regole a una riga di giudizio su codice che si legge come il contesto); 2) Then examples, Now interfaces (un campo ben nominato insegna meglio degli esempi); 3) Then everything upfront, Now progressive disclosure (un CLAUDE.md pesante consuma token a ogni sessione); 4) Then repeating yourself, Now simple tool descriptions (ripetere era un workaround per modelli deboli); 5) Then memory in CLAUDE.md, Now auto memory (i fatti vanno nel sistema di memoria, non nel file di guida); 6) Then simple specs, Now rich references (il riferimento a piu' alta fedelta' e' un documento ricco letto come codice, es. brand book HTML)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-034",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "standard",
+   "testo": "Claim riportato nell'artefatto newsletter: 'The engineer is Tariq, and the article is at 4.3 million views. They stripped what Anthropic did to themselves. They stripped over 80% of Claude Code's system prompt, and the coding advice did not drop a point.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-035",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Introduzione pilastro Apps Level 2: 'Search what exists - CLI, MCP, API' - diagramma robot con linee tratteggiate verso icone generiche di app."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-036",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "SKILL.md della skill 'search-connectors': 'API for X. Any MCP server for X. Given an app or service, find the best ways to hook into it. Quick pass, not an audit.' Workflow: 1) identify the app (official docs/GitHub first, outrank everything); 2) community pass in ordine CLI->API->MCP (github search, modelcontextprotocol/servers); 3) health check (last commit, stars, archived); 4) report format fisso; 5) end with one recommendation + install offer."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-037",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "comando",
+   "testo": "Esecuzione '/search-connectors for Adobe Premiere Pro' - output: Official (Adobe): CLI none, API UXP scripting (Premiere 25.6+), MCP none ufficiale; Community: CLI nulla di sano, MCP hetpatel-11/Premiere-Pro-MCP (462 stelle, aggiornato ieri, 282 tool); raccomandazione finale sul repo hetpatel + fonti citate."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-038",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Repository GitHub reale mostrato a schermo: hetpatel-11/Adobe_Premiere_Pro_MCP - pubblico, 462 star, 98 fork, 143 commit. Descrizione: 'Adobe Premiere Pro MCP. 282 tools for AI-driven video editing via MCP, for Codex, Claude, and other MCP clients.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-039",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Repository GitHub reale mostrato a schermo: mvanhorn/cli-printing-press - pubblico, 297 branch, 97 tag, 1.851 commit, 4.5k star. Descrizione: 'Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI - designed for AI agents first, with SQLite sync, offline search, and compound insight commands.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-040",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Apps Level 3: 'Build your own - connectors and apps' - stesso diagramma con un nuovo box 'NEW' collegato al robot, chiude la progressione a 3 livelli."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-041",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Layout completo della dashboard 'Rubric Agentic OS': colonna sinistra Micro Apps + Calendar; centro anello di icone app con visualizzazione particellare 'click to open second brain'; colonna destra Email + Skills Deck + Routines."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-042",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Elenco Micro Apps: Generations ('Every image and video you have generated'), Teleprompter ('Scripts you read on camera'), Second Brain ('Your whole workspace as a living map'), Excalidraw ('Hand-drawn diagrams ready to copy onto your canvas')."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-043",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Esempio cliente 'Stropro Agentic OS' - dashboard personalizzata per servizi finanziari in Australia: Market Clock, Capital Deployed $1.6Bn+, Issuance Pipeline, Adviser Desk 18 requests. Confermato dal sito reale stropro.com."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-044",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Esempio cliente 'Beetogreen Agentic OS' - flotta e-bike: HR Requests 24, Skills Deck /fleet-report /mobility-calc /onboarding-pack /iso-report, Kilometres Ridden 482,000, Fleet Health (bikes deployed 1540, bikes due a service 47)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-045",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Struttura del corso a pagamento 'The Claude Living Masterclass': BONUS Agentic AI Fundamentals; Volume A - Setup and Foundations (The Operating System Mindset: ARMS); Volume B - Skills; Volume C - Memory (C1 How Claude Memory Works, C2 Claude MD best practices, C3 The two Claude MDs, C4 Use /init, C5 Memory MD explained, C6 Automatic memory)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-046",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Modulo corso 'Agents-as-a-Service': 'The DOTS Framework', Pricing & Closing Techniques, Making It Official (Contracts & Invoicing), Milestone Your First Proposal, Delivering Results."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-047",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "standard",
+   "testo": "Pannello nativo Claude Code Settings -> Customize con categorie: Skills, Connectors (selezionato), Plugins, Memory; sezione Desktop app: General, Extensions, Developer."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-048",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "standard",
+   "testo": "Selettore modello nella chat nativa di Claude Code: opzioni 'Auto', 'Fable 5', 'Extra' visibili in basso nella barra di input."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-049",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Popup di configurazione skill: griglia Model x Effort con righe Haiku/Sonnet/Opus/Fable e colonne Low/Medium/High/Max; per /sprint-planning lo slider e' posizionato su Sonnet-Medium."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-050",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "regola",
+   "testo": "Gerarchia dichiarata della piramide ARMS: base piu' larga = SKILLS (fondazione), poi MEMORY, poi ROUTINES, punta piu' stretta = APPS (piu' visibile ma meno fondamentale)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-051",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Diagramma 'Level 2: Thin Skills, Rich References' - un box skill.md con 3 frecce verso file/immagine/documento separati, illustra il pattern 'router breve + reference file'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-052",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Micro-app 'Excalidraw Landing Pad' (path C:/ROBO/output/excalidraw-landing-pad/index.html): libreria di diagrammi pronti con bottoni Copy Elements/Download - 'Pixel Agents - Blue', 'ARMS Pyramid + Levels', 'Section 04 How - Pixels vs Words'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-053",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Micro-app 'Generations' aperta in locale (localhost): galleria di immagini/video generati da Jay, incluse le stesse illustrazioni pixel-art 'Then/Now' e 'Level Up' usate come grafiche in questo stesso video - conferma meta che le illustrazioni sono auto-prodotte, non materiale Anthropic."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-054",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Diagramma Memory Level 2 'Routers + a tree of files' - albero semplice (radice + 3 rami + 2 foglie ciascuno), stesso pattern router gia' visto per le Skills."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-055",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Slide credenziali: loghi di brand con cui Jay ha lavorato - Unilever, Fresh, Microsoft, Virgin, Ogilvy, Knorr, Lipton."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-056",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "Slide formazione: University of Technology Sydney - Master of Data Science and Innovation."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-057",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Sito agenzia 'RoboLabs' di Jay: 'The Era of AI is Here / RoboLabs helps you lead it', nav Services/Process/Solutions/Let's Talk."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-058",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Esempio di ricerca live nella cartella ROBO tramite Windows Explorer (query 'clean up'), UI nativa 'Search Results in ROBO'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-059",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Community classroom RoboNuggets: moduli Start Here, Agentic AI Series ('leapfrog series... Zero to your first Agentic team'), Agents-as-a-Service ('step-by-step system for launching your AI solutions'), AI Deals Bundle, Community Vault, Affiliate Program, Agentic AI Foundations, Claude Code Masterclass ('The Claude Living Masterclass'), Hermes Agent Masterclass ('most powerful open-source 24/7 Agent on the planet')."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-060",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Claim di corso non verificato: Hermes descritto come 'the most powerful open-source 24/7 Agent on the planet'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-061",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Illustrazioni pixel-art 'FASTER' (arancione) e 'CHEAPER' (verde) e fabbrica di robot-lavoratori: metafora visiva del valore promesso dall'Agentic OS (velocita' + riduzione costi)."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-062",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "regola",
+   "testo": "Regola di sicurezza dal prompt Syncthing: 'never expose the Syncthing web UI to the internet. Local access only.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-063",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "regola",
+   "testo": "Regola di manutenzione dal prompt router: 'a stale pointer is worse than no pointer' - il router master va aggiornato nello stesso turno in cui un file si sposta o parte un nuovo progetto."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-064",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "README del PDF guida: 'What this is. A setup guide for your agentic operating system... How to use it. Read the overview below, then set up one part at a time with pages 3 to 6. Each part has a copy-paste prompt... Finish with the 7-day plan on page 7. The shortcut. Inside the RoboNuggets community at skool.com/robonuggets...'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-065",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Skills Deck e Routines table della dashboard: /sprint-planning, /newsletter, /games, /clean-up con effort X-High; tabella Routines con orari 08:00-21:30 e stati done/Desktop/NEXT/QUEUED; footer 'Claude Desktop 5 · Hermes 14 · Data 20 Aug, 02:56 PM'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-066",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "regola",
+   "testo": "Il video non etichetta mai esplicitamente un 'Apps Level 1' a schermo (a differenza degli altri 3 pilastri che hanno Level 1 chiaramente mostrato) - gap dichiarato nella sezione 'cosa il video non mostra'."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-067",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "configurazione",
+   "testo": "Controlli UI del pannello Second Brain: 'View raw / Open on device / Copy path' su ogni nodo file; menu con tab Explore/Nodes/Edges; controlli layout Force/Circle/Hex/Rings; slider Link spring, Circle/Hex size; bottoni Expand all/Collapse all."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-068",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Claim di apertura del video (hook di marketing, non verificabile): 'by the end of it, you'll be using agents better than 99% of people.'"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-069",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "file",
+   "testo": "YouTube Studio widget nella dashboard: 170,000 subscribers, 8.5M lifetime views, 5 longforms this month."
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-070",
+   "run": "max17-v05-jaye-agenticos",
+   "tipo": "opinione",
+   "testo": "Pagina About community RoboNuggets: 1.2k Members, 51 Online, 4 Admins, badge 'Official member of the Claude Partner Network'."
+  }
+ ]
+}

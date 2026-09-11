@@ -1,373 +1,333 @@
 {
  "slug": "arma-outemail-secondo",
  "fonte": "sorgenti/arma-outemail-secondo/video.mp4",
- "generato": "2026-09-10 23:46",
- "strumento_trascrizione": "faster-whisper small, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "generato": "2026-09-10 23:55",
+ "strumento_trascrizione": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
  "durata_video_s": 106.35,
  "densita": {
-  "segmenti_vocali": 27,
-  "secondi_di_parlato": 96.44,
-  "percentuale_di_parlato": 90.7,
-  "segmenti_al_minuto": 15.23,
-  "durata_media_segmento_s": 3.57
+  "segmenti_vocali": 26,
+  "secondi_di_parlato": 95.72,
+  "percentuale_di_parlato": 90.0,
+  "segmenti_al_minuto": 14.67,
+  "durata_media_segmento_s": 3.68
  },
- "parole_totali": 287,
- "parole_al_minuto_medie": 161.9,
- "parole_al_minuto_sul_solo_parlato": 178.6,
+ "parole_totali": 283,
+ "parole_al_minuto_medie": 159.7,
+ "parole_al_minuto_sul_solo_parlato": 177.4,
  "wpm_per_minuto": [
   {
    "minuto": 0,
    "da": 0.0,
    "a": 60.0,
-   "parole": 171,
-   "parole_al_minuto": 171.0,
-   "secondi_di_voce": 54.2,
-   "densita_voce_pct": 90.3
+   "parole": 168,
+   "parole_al_minuto": 168.0,
+   "secondi_di_voce": 54.62,
+   "densita_voce_pct": 91.0
   },
   {
    "minuto": 1,
    "da": 60.0,
    "a": 106.35,
-   "parole": 116,
-   "parole_al_minuto": 150.2,
-   "secondi_di_voce": 35.34,
-   "densita_voce_pct": 76.3
+   "parole": 115,
+   "parole_al_minuto": 148.9,
+   "secondi_di_voce": 34.74,
+   "densita_voce_pct": 75.0
   }
  ],
- "pause_sopra_0_5s": 1,
+ "pause_sopra_0_5s": 3,
  "pause_dal_parlato": [
   {
-   "inizio": 0.52,
-   "fine": 0.78,
-   "durata": 0.26,
+   "inizio": 1.62,
+   "fine": 1.76,
+   "durata": 0.14,
    "tipo": "interna",
-   "dopo": "sei,",
-   "prima_di": "esattamente,"
+   "dopo": "esattamente?",
+   "prima_di": "Un"
   },
   {
-   "inizio": 1.48,
-   "fine": 1.66,
+   "inizio": 2.52,
+   "fine": 2.88,
+   "durata": 0.36,
+   "tipo": "interna",
+   "dopo": "marketer?",
+   "prima_di": "Imprenditore?"
+  },
+  {
+   "inizio": 3.36,
+   "fine": 3.54,
    "durata": 0.18,
    "tipo": "interna",
-   "dopo": "esattamente,",
-   "prima_di": "un"
+   "dopo": "Imprenditore?",
+   "prima_di": "Copywriter?"
   },
   {
-   "inizio": 2.42,
-   "fine": 2.48,
-   "durata": 0.06,
+   "inizio": 4.02,
+   "fine": 4.24,
+   "durata": 0.22,
    "tipo": "interna",
-   "dopo": "marketer,",
-   "prima_di": "imprenditore,"
+   "dopo": "Copywriter?",
+   "prima_di": "Chiunque"
   },
   {
-   "inizio": 3.14,
-   "fine": 3.52,
-   "durata": 0.38,
-   "tipo": "interna",
-   "dopo": "imprenditore,",
-   "prima_di": "copywriter,"
-  },
-  {
-   "inizio": 3.92,
-   "fine": 4.18,
-   "durata": 0.26,
-   "tipo": "interna",
-   "dopo": "copywriter,",
-   "prima_di": "chiunque"
-  },
-  {
-   "inizio": 4.76,
-   "fine": 5.14,
-   "durata": 0.38,
+   "inizio": 4.88,
+   "fine": 5.12,
+   "durata": 0.24,
    "tipo": "interna",
    "dopo": "sia,",
    "prima_di": "se"
   },
   {
-   "inizio": 7.32,
-   "fine": 7.46,
-   "durata": 0.14,
+   "inizio": 5.92,
+   "fine": 6.1,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "email,",
+   "prima_di": "devi"
+  },
+  {
+   "inizio": 7.38,
+   "fine": 7.5,
+   "durata": 0.12,
    "tipo": "interna",
    "dopo": "strategiche.",
    "prima_di": "Non"
   },
   {
-   "inizio": 8.22,
-   "fine": 8.38,
-   "durata": 0.16,
+   "inizio": 8.34,
+   "fine": 8.56,
+   "durata": 0.22,
    "tipo": "interna",
    "dopo": "me,",
    "prima_di": "fidati"
   },
   {
-   "inizio": 9.32,
+   "inizio": 9.34,
    "fine": 9.44,
-   "durata": 0.12,
+   "durata": 0.1,
    "tipo": "interna",
    "dopo": "numeri.",
    "prima_di": "Le"
   },
   {
-   "inizio": 16.46,
-   "fine": 16.58,
-   "durata": 0.12,
-   "tipo": "interna",
-   "dopo": "alto.",
-   "prima_di": "Ma"
-  },
-  {
-   "inizio": 19.42,
-   "fine": 19.62,
+   "inizio": 19.46,
+   "fine": 19.66,
    "durata": 0.2,
    "tipo": "interna",
    "dopo": "strategico?",
    "prima_di": "Te"
   },
   {
-   "inizio": 20.64,
-   "fine": 20.92,
-   "durata": 0.28,
+   "inizio": 20.82,
+   "fine": 21.06,
+   "durata": 0.24,
    "tipo": "interna",
    "dopo": "esempio.",
-   "prima_di": "Austo"
+   "prima_di": "Fausto"
   },
   {
-   "inizio": 22.24,
-   "fine": 22.56,
-   "durata": 0.32,
+   "inizio": 22.42,
+   "fine": 22.54,
+   "durata": 0.12,
    "tipo": "interna",
    "dopo": "imprenditore.",
    "prima_di": "Ha"
   },
   {
-   "inizio": 25.84,
-   "fine": 26.0,
-   "durata": 0.16,
+   "inizio": 25.92,
+   "fine": 26.12,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "lui.",
    "prima_di": "Antonio"
   },
   {
-   "inizio": 31.3,
-   "fine": 31.38,
-   "durata": 0.08,
+   "inizio": 31.4,
+   "fine": 31.46,
+   "durata": 0.06,
    "tipo": "interna",
    "dopo": "diversi.",
    "prima_di": "Imposta"
   },
   {
-   "inizio": 33.16,
-   "fine": 33.26,
-   "durata": 0.1,
+   "inizio": 33.22,
+   "fine": 33.44,
+   "durata": 0.22,
    "tipo": "interna",
    "dopo": "finito.",
    "prima_di": "Questo"
   },
   {
-   "inizio": 36.42,
-   "fine": 36.6,
-   "durata": 0.18,
+   "inizio": 36.62,
+   "fine": 36.82,
+   "durata": 0.2,
    "tipo": "interna",
    "dopo": "strategico.",
    "prima_di": "Quindi"
   },
   {
-   "inizio": 38.04,
-   "fine": 38.28,
-   "durata": 0.24,
+   "inizio": 38.16,
+   "fine": 38.44,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "licenziato,",
    "prima_di": "messo"
   },
   {
-   "inizio": 39.2,
-   "fine": 39.48,
-   "durata": 0.28,
+   "inizio": 39.3,
+   "fine": 39.52,
+   "durata": 0.22,
    "tipo": "interna",
    "dopo": "'astronave,",
    "prima_di": "mandato"
   },
   {
    "inizio": 43.18,
-   "fine": 43.56,
-   "durata": 0.38,
+   "fine": 43.52,
+   "durata": 0.34,
    "tipo": "interna",
-   "dopo": "quanto.",
+   "dopo": "più.",
    "prima_di": "Fausto"
   },
   {
-   "inizio": 44.32,
-   "fine": 44.54,
-   "durata": 0.22,
-   "tipo": "interna",
-   "dopo": "quindi,",
-   "prima_di": "assumo"
-  },
-  {
-   "inizio": 45.46,
-   "fine": 45.62,
-   "durata": 0.16,
+   "inizio": 45.54,
+   "fine": 45.68,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "Gianfranco.",
    "prima_di": "Gianfranco"
   },
   {
-   "inizio": 47.98,
-   "fine": 48.16,
-   "durata": 0.18,
+   "inizio": 49.14,
+   "fine": 49.36,
+   "durata": 0.22,
    "tipo": "interna",
-   "dopo": "mail,",
-   "prima_di": "decidere"
-  },
-  {
-   "inizio": 48.88,
-   "fine": 49.28,
-   "durata": 0.4,
-   "tipo": "interna",
-   "dopo": "painpoint,",
+   "dopo": "point,",
    "prima_di": "cosa"
   },
   {
-   "inizio": 50.5,
-   "fine": 50.96,
-   "durata": 0.46,
+   "inizio": 50.62,
+   "fine": 50.98,
+   "durata": 0.36,
    "tipo": "interna",
    "dopo": "quando,",
    "prima_di": "le"
   },
   {
-   "inizio": 56.0,
-   "fine": 56.1,
-   "durata": 0.1,
+   "inizio": 51.8,
+   "fine": 52.06,
+   "durata": 0.26,
    "tipo": "interna",
-   "dopo": "specifiche,",
-   "prima_di": "non"
+   "dopo": "obiezioni,",
+   "prima_di": "che"
   },
   {
-   "inizio": 61.86,
-   "fine": 62.32,
-   "durata": 0.46,
+   "inizio": 54.4,
+   "fine": 54.64,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "consapevolezza,",
+   "prima_di": "scrive"
+  },
+  {
+   "inizio": 57.56,
+   "fine": 57.84,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "competitor.",
+   "prima_di": "E"
+  },
+  {
+   "inizio": 62.04,
+   "fine": 62.46,
+   "durata": 0.42,
    "tipo": "interna",
    "dopo": "Fausto.",
    "prima_di": "Ora"
   },
   {
-   "inizio": 63.58,
-   "fine": 63.72,
-   "durata": 0.14,
+   "inizio": 63.68,
+   "fine": 63.76,
+   "durata": 0.08,
    "tipo": "interna",
    "dopo": "stupido,",
    "prima_di": "l"
   },
   {
-   "inizio": 65.5,
-   "fine": 65.82,
-   "durata": 0.32,
+   "inizio": 65.74,
+   "fine": 65.84,
+   "durata": 0.1,
    "tipo": "interna",
-   "dopo": "'attenzione,",
-   "prima_di": "ma"
+   "dopo": "'attenzione.",
+   "prima_di": "Ma"
   },
   {
-   "inizio": 66.46,
-   "fine": 66.52,
-   "durata": 0.06,
+   "inizio": 66.5,
+   "fine": 66.58,
+   "durata": 0.08,
    "tipo": "interna",
-   "dopo": "così.",
+   "dopo": "così?",
    "prima_di": "90"
   },
   {
-   "inizio": 73.94,
-   "fine": 74.0,
+   "inizio": 69.66,
+   "fine": 69.72,
    "durata": 0.06,
    "tipo": "interna",
-   "dopo": "ricordi,",
+   "dopo": "modo.",
+   "prima_di": "Ti"
+  },
+  {
+   "inizio": 73.14,
+   "fine": 73.26,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "marketing,",
    "prima_di": "che"
   },
   {
-   "inizio": 76.1,
-   "fine": 76.28,
-   "durata": 0.18,
+   "inizio": 75.22,
+   "fine": 75.96,
+   "durata": 0.74,
+   "tipo": "interna",
+   "dopo": "email?",
+   "prima_di": "No,"
+  },
+  {
+   "inizio": 76.26,
+   "fine": 76.5,
+   "durata": 0.24,
    "tipo": "interna",
    "dopo": "No,",
    "prima_di": "probabilmente"
   },
   {
-   "inizio": 76.9,
-   "fine": 77.0,
-   "durata": 0.1,
+   "inizio": 78.2,
+   "fine": 78.44,
+   "durata": 0.24,
    "tipo": "interna",
-   "dopo": "no.",
-   "prima_di": "Eppure"
+   "dopo": "marketing.",
+   "prima_di": "Strategico"
   },
   {
-   "inizio": 78.1,
-   "fine": 78.24,
+   "inizio": 81.26,
+   "fine": 81.4,
    "durata": 0.14,
    "tipo": "interna",
-   "dopo": "marketing,",
-   "prima_di": "strategico"
-  },
-  {
-   "inizio": 81.22,
-   "fine": 81.4,
-   "durata": 0.18,
-   "tipo": "interna",
-   "dopo": "informati,",
+   "dopo": "formato,",
    "prima_di": "seguire"
   },
   {
-   "inizio": 83.68,
-   "fine": 84.04,
-   "durata": 0.36,
+   "inizio": 94.58,
+   "fine": 96.14,
+   "durata": 1.56,
    "tipo": "interna",
-   "dopo": "psicologiche,",
-   "prima_di": "provate,"
+   "dopo": "vera",
+   "prima_di": "email"
   },
   {
-   "inizio": 84.64,
-   "fine": 84.94,
-   "durata": 0.3,
-   "tipo": "interna",
-   "dopo": "provate,",
-   "prima_di": "scientifiche,"
-  },
-  {
-   "inizio": 85.78,
-   "fine": 85.86,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "scientifiche,",
-   "prima_di": "non"
-  },
-  {
-   "inizio": 87.62,
-   "fine": 87.92,
-   "durata": 0.3,
-   "tipo": "interna",
-   "dopo": "blog,",
-   "prima_di": "copi"
-  },
-  {
-   "inizio": 90.36,
-   "fine": 90.52,
-   "durata": 0.16,
-   "tipo": "interna",
-   "dopo": "competitor.",
-   "prima_di": "Continua"
-  },
-  {
-   "inizio": 96.86,
-   "fine": 97.14,
-   "durata": 0.28,
-   "tipo": "interna",
-   "dopo": "strategica.",
-   "prima_di": "Sarai"
-  },
-  {
-   "inizio": 98.84,
+   "inizio": 99.08,
    "fine": 106.35,
-   "durata": 7.51,
+   "durata": 7.27,
    "tipo": "coda"
   }
  ],
@@ -392,10 +352,19 @@
  "loudness": {
   "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
   "campioni": 1063,
-  "mediana_segmenti_LUFS_M": -24.9,
+  "mediana_segmenti_LUFS_M": -25.1,
   "picco_momentaneo_LUFS_M": -12.1,
   "picco_a_secondo": 20.9,
-  "sopra_mediana_3LU": [],
+  "sopra_mediana_3LU": [
+   {
+    "i": 5,
+    "inizio": 19.66,
+    "fine": 20.82,
+    "LUFS_M": -20.3,
+    "delta_LU": 4.8,
+    "testo": "Te lo spiego con un esempio."
+   }
+  ],
   "profilo_per_secondo": [
    {
     "t": 0.0,

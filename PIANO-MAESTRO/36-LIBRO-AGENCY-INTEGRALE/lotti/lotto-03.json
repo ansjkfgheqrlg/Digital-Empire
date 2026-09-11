@@ -1,0 +1,1206 @@
+{
+ "lotto": 3,
+ "totale": 200,
+ "atomi": [
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-001",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Claude Cowork è uno strumento che, se imparato bene, permette di aumentare drasticamente la produttività di chi lo usa."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-002",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "numero",
+   "testo": "Con Claude Cowork, task che normalmente richiederebbero 2-3 ore di lavoro manuale possono essere completati in circa 10 minuti."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-003",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Il relatore del corso dichiara di gestire consulenze AI per aziende con fatturati che vanno da 10 milioni di euro al mese fino a 50 milioni l'anno, e di insegnare queste competenze anche nel proprio coaching program."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-004",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il corso completo su Claude Cowork è organizzato in 15 argomenti sequenziali, mostrati su una lavagna Excalidraw: (1) come scaricare Cowork, (2) differenze tra Claude vs Cowork vs Claude Code, (3) il ciclo delegare-verificare-correggere, (4) organizzazione del workspace in context/projects/outputs, (5) Claude Projects, (6) Project Instructions locali e globali, (7) limiti dei Projects (locali, non condivisibili in team), (9) file/skill/connettori/comandi/plugin, (10) pensare con Cowork: obiettivi vs task, (11) sub-agenti (pipeline vs paralleli), (12) finestra di contesto e suoi limiti, (13) Computer Use come eccezione alla VM, (14) Scheduled Tasks (setup e gotcha), (15) Dispatch dal telefono al desktop. Nella numerazione mostrata a schermo il punto 8 non compare mai (si salta da 7 a 9)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-005",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "numero",
+   "testo": "L'obiettivo dichiarato del corso è mettere lo spettatore in grado di usare Claude Cowork meglio del 99% delle persone, così da poterlo implementare in azienda o offrirlo come servizio AI ai clienti."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-006",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Le funzionalità mobile avanzate di Claude, trattate più avanti nel corso, richiedono di installare anche l'app mobile (iOS/Android), equivalente a quella desktop, non solo quest'ultima."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-007",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Claude Cowork richiede come minimo un abbonamento Claude Pro (o piani superiori); non è disponibile nel piano gratuito Free."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-008",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Al momento della registrazione del corso, Claude offriva tre piani: Free a $0 (chat base, senza Cowork); Pro a $17/mese con fatturazione annuale anticipata di $200 (o $20/mese con fatturazione mensile), che include Claude Code e Claude Cowork, progetti illimitati e accesso a Research; Max a partire da $100/mese, con 5x o 20x più utilizzo rispetto a Pro."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-009",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "L'app desktop di Claude offre tre modalità di utilizzo tra cui scegliere dalla schermata di benvenuto: Chat, Cowork e Code."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-010",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Claude (modalità Chat) è definibile come una semplice chat: l'utente scrive, Claude risponde, e non compie alcuna azione autonoma senza che gli venga esplicitamente richiesto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-011",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Claude Code è un assistente che lavora direttamente sui file di codice dell'utente: non si limita a suggerire modifiche, ma le applica e crea file veri sul computer."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-012",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Claude Cowork funziona come Claude Code ma senza terminale: accede a cartelle sul computer dell'utente, legge file e crea documenti, portando a termine il lavoro autonomamente fino alla fine."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-013",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Claude Cowork è pensato per i knowledge worker, cioè per chi non scrive codice (es. impiegati, staff amministrativo, HR), a differenza di Claude Code che è rivolto agli sviluppatori."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-014",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "In Claude (modalità Chat) è sempre l'utente a guidare la conversazione: Claude risponde e poi si ferma ad aspettare; per proseguire, l'utente deve scrivere di nuovo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-015",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "In Claude Code il funzionamento è basato su obiettivi: si assegna un obiettivo, Claude analizza il codice, applica le modifiche e mostra cosa ha fatto, lasciando la possibilità di fermarlo ad ogni passo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-016",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "In Claude Cowork si descrive il risultato desiderato e Claude elabora un piano, lo esegue e consegna il lavoro finito, senza richiedere l'intervento dell'utente ad ogni singolo passaggio."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-017",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "I tre strumenti Claude si raggiungono da luoghi diversi: Claude (chat) da web, app e telefono; Claude Code da terminale (web, VS Code, app iOS); Claude Cowork solo dall'app Claude Desktop (Mac e Windows)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-018",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "comando",
+   "testo": "Per avviare Claude Code da terminale si usa il comando `claude --dangerously-skip-permissions`, che il relatore chiama scherzosamente 'yolo' (you only live once); al primo avvio in una cartella, Claude Code chiede conferma esplicita che ci si fidi di quella cartella prima di poter leggere, modificare ed eseguire i file al suo interno."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-019",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "numero",
+   "testo": "Nell'interfaccia a terminale di Claude Code, il modello Opus 4.6 viene mostrato con una finestra di contesto dichiarata di 1 milione di token ('Opus 4.6 (1M context)')."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-020",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Su macOS, l'app desktop di Claude salva i propri file di configurazione (es. claude_desktop_config.json, bridge-state.json) dentro la cartella nascosta ~/Library/Application Support/Claude."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-021",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Claude Cowork esegue le proprie azioni dentro una sandbox isolata (una macchina virtuale): il file che la contiene, claudevm.bundle, si trova in ~/Library/Application Support/Claude/vm_bundles/ e pesa circa 15,22 GB."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-022",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Le istruzioni e i file di configurazione di Claude Code (CLAUDE.md, settings.json, projects, plugins, tasks, todos) risiedono nella cartella nascosta ~/.claude nella home dell'utente, un percorso distinto da quello usato dalla sandbox di Cowork."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-023",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Claude Cowork opera sempre all'interno di una cartella di progetto specifica, scelta dall'utente: è un concetto cardine del suo funzionamento, non una chat libera senza contesto di file."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-024",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "Quando si aggancia una cartella a Claude Cowork, l'app chiede esplicitamente il permesso di leggere, modificare ed eliminare in modo permanente qualsiasi file al suo interno, avvertendo che il contenuto potrebbe essere condiviso con strumenti di terze parti a cui Cowork è collegato."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-025",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Claude Code è stato originariamente progettato pensando soprattutto agli sviluppatori come utenti principali, anche se oggi il suo uso si è ampliato oltre quel pubblico iniziale."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-026",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Il file usato nella Demo #1 (export di un CRM vendite anonimizzato) contiene 24 colonne: identificativi e anagrafica del deal (ID, nome, azienda, settore, contatto, ruolo, email), dati commerciali (proprietario del deal, stadio pipeline, probabilità %, fonte lead, prodotto, valore deal, valore ponderato, valuta, priorità) e dati temporali/di attività (data creazione, data chiusura prevista, data ultimo contatto, giorni da ultimo contatto, attività totali, prossimo step, note)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-027",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Il file sorgente della Demo #1 si chiama demo1_crm_export.csv, pesa 17 KB, ed è l'unico file presente nella cartella di progetto agganciata a Cowork prima di lanciare il task."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-028",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Prompt integrale dettato per la Demo #1 (report CRM), trascritto così come reso a schermo: 'Allora, per favore, analizza dentro la cartella di riferimento il mio file si chiama \"demo1crmexport\" e quello che vorrei che tu facessi ora è prendere i dati del CRM e farmi un reporteriassuntivo con 4 fogli principalmente. Allora, vorrei una pipeline con i venditori totali, tassi di conversione per segmento, deal fermi da più di 30 giorni con ultima data di contatto e anche 5 raccomandazioni per il nostro direttore commerciale di modo tale che possa avere un'idea di che cosa deve fare e con che priorità. E poi, per favore, assicurati che il formato sia professionale, numeri con separatore delle migliaia e percentuali con una cifra decimale.' (le parole 'report' e 'riassuntivo' compaiono fuse, probabile effetto della dettatura vocale)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-029",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Quando riceve un prompt, Claude Cowork genera automaticamente un titolo sintetico per il task (es. 'Create CRM sales analysis report'), visibile in cima alla conversazione e nella lista 'Recents' della sidebar."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-030",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Di fronte a un task articolato, Claude Cowork lo scompone in una todo list a più passi mostrata nel pannello laterale 'Progress': ogni passo viene segnato come completato, in corso o in attesa man mano che il lavoro procede."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-031",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Le Skills sono moduli di competenza (file come SKILL.md) che Claude Cowork legge quando ne ha bisogno per sapere come eseguire compiti specifici; nella Demo #1, ad esempio, Cowork ha letto una skill 'xlsx' per sapere come generare correttamente un file Excel."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-032",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Ogni cartella di progetto in Claude Cowork può avere una 'Folder Instructions' (un file CLAUDE.md) dedicata, accessibile dal pannello di contesto, che serve a dare a Claude istruzioni specifiche su come lavorare in quella cartella."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-033",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il report generato dalla Demo #1 (Report_CRM_Pipeline.xlsx) è organizzato in 4 fogli tematici: Pipeline per Venditore, Conversione per Segmento, Deal Fermi 30+ Giorni, Raccomandazioni."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-034",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "numero",
+   "testo": "Nel report della Demo #1, le metriche aggregate chiave erano: tasso di conversione globale del 55,6%, valore della pipeline attiva di 4.273.119 €, valore ponderato attivo di 2.457.095 €, su 50 deal totali (41 attivi, 5 vinti, 4 persi)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-035",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Nel foglio 'Deal Fermi 30+ Giorni' del report, Cowork ha applicato una formattazione condizionale per segnalare la gravità: righe evidenziate in rosso per i deal fermi da oltre 60 giorni, in giallo per quelli fermi tra 45 e 59 giorni."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-036",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Il file generato da Claude Cowork (es. Report_CRM_Pipeline.xlsx) è un vero file .xlsx portabile: può essere aperto direttamente in applicazioni esterne come Numbers o Excel, non è solo un'anteprima interna alla chat."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-037",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "anti-pattern",
+   "testo": "Un primo output di raccomandazioni generato da un'AI può risultare troppo generico e inutilizzabile in pratica se manca di un responsabile assegnato (owner): senza un owner, una lista di raccomandazioni rischia di non essere mai eseguita da nessuno."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-038",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Una raccomandazione o azione si può definire 'azionabile' solo se rispetta due condizioni: deve essere misurabile e deve avere un owner (una persona responsabile della sua esecuzione)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-039",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Per trasformare raccomandazioni generiche in azionabili, si può chiedere esplicitamente all'AI di riscriverle secondo un formato a 4 campi: azione specifica, owner (nome della persona responsabile), scadenza (tempistica entro cui va fatta), e impatto stimato basato sui dati disponibili."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-040",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Nella Demo #1, le colonne del foglio Raccomandazioni sono passate da una prima versione generica (#, Priorità, Raccomandazione, Dettaglio, Impatto Stimato, Deal Coinvolti) a una versione riscritta e azionabile (#, Azione Specifica, Owner, Scadenza, Impatto Stimato da CRM, KPI di Verifica), dopo che l'utente ha esplicitamente richiesto owner e scadenze."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-041",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "In un foglio di calcolo (es. Numbers, Excel), il contenuto completo di una cella il cui testo appare tagliato o vuoto a video può essere letto per intero nella barra della formula selezionando quella cella."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-042",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "numero",
+   "testo": "Il risultato finale della Demo #1 è stato un piano d'azione con 5 raccomandazioni azionabili per un valore totale coinvolto di 1.283.727 EUR, prodotto in pochi minuti di lavoro reale, a fronte di un compito che il relatore stima avrebbe richiesto 2-3 ore se fatto manualmente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-043",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Il valore che Claude Cowork genera per un'azienda è tanto più elevato quanto più chiaro è l'obiettivo che gli viene assegnato: un obiettivo vago produce risultati vaghi, uno preciso produce risultati utilizzabili."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-044",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il rapporto tra l'utente e Cowork può essere rappresentato con una metafora visiva: un omino (l'utente/l'azienda oggi) che deve raggiungere una bandiera (il goal finale) attraverso una serie di blocchi intermedi (i singoli task delegati), da riempire uno alla volta."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-045",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Il ciclo corretto per delegare lavoro a Claude Cowork è un loop a tre fasi che si ripete: FAI (Cowork esegue il task), VERIFICARE (l'utente controlla il risultato), GAP (si individuano gli scostamenti dall'obiettivo); sulla base dei gap si torna a FAI per correggere — lo stesso schema con cui si farebbe l'onboarding di un nuovo dipendente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-046",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "Inseguire con corsi di formazione ogni singola nuova release di uno strumento AI ha scarsa utilità pratica, perché la tecnologia cambia così rapidamente (nel giro di una o due settimane) che la formazione rischierebbe di dover essere ripetuta in continuazione."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-047",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "La formazione AI davvero utile in azienda non viene fatta prima o durante l'apprendimento dello strumento, ma dopo l'implementazione: non riguarda lo sviluppo/development in sé, ma il processo aziendale in cui lo strumento viene inserito."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-048",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Il modello in tre passi con cui un consulente AI dovrebbe intervenire in azienda è: (1) mappare il processo esistente, (2) implementare la soluzione AI su quel processo, (3) fare formazione sul processo risultante, non sullo sviluppo tecnico."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-049",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Quando cambia la tecnologia sottostante, l'unica cosa che resta stabile e non cambia è il processo aziendale: per questo la formazione ha senso se costruita attorno al processo, non attorno allo strumento del momento."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-050",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Al momento della registrazione del corso, Claude Cowork era ancora in fase di 'research preview' (beta), come indicato direttamente nell'interfaccia del prodotto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-051",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Il flusso di lavoro reale oggi più diffuso combina i due strumenti: si fa sviluppo/lavoro tecnico con Claude Code, poi si importano i risultati dentro Claude Cowork, e da quel momento si interagisce con Cowork come una semplice interfaccia conversazionale."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-052",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Secondo il relatore, ad oggi il maggiore ritorno sull'investimento (ROI) si ottiene dalla combinazione Claude Code (per lo sviluppo) + Claude Cowork (come interfaccia), perché pochi sviluppi possono essere realizzati direttamente dentro Cowork."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-053",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "La sidebar sinistra di Claude Cowork è organizzata in queste voci principali: New task, Search, Scheduled, Projects, Dispatch, Ideas, Customize, seguite dalla lista 'Recents' delle conversazioni/task recenti."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-054",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "La funzione di ricerca di Claude Cowork (icona lente nella sidebar) permette di cercare trasversalmente tra cartelle/progetti, output generati e conversazioni/chat passate."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-055",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il menu '+' accanto al campo di input di Claude Cowork permette di aggiungere a una conversazione quattro tipi di elementi: file o foto, Skills, Connectors (connettori a servizi esterni) e Plugins."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-056",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Claude Cowork offre una scelta tra tre modelli, ciascuno con un compromesso diverso: Opus 4.6 ('il più capace per lavori ambiziosi'), Sonnet 4.6 ('il più efficiente per i task quotidiani'), Haiku 4.5 ('il più veloce per risposte rapide'); è disponibile inoltre un interruttore 'Extended thinking' per far ragionare il modello più a lungo su task complessi."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-057",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Come regola pratica, conviene usare Sonnet per la maggior parte dei task quotidiani e riservare Opus solo a compiti che richiedono codice o un ragionamento prolungato, perché l'interfaccia stessa avverte che Opus consuma i limiti di utilizzo più velocemente degli altri modelli."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-058",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Claude permette di importare la memoria salvata su un altro provider AI (es. ChatGPT) tramite un flusso guidato in due passi: (1) si copia un prompt fornito da Claude e lo si incolla in una chat con l'altro provider per farsi esportare tutti i ricordi/il contesto salvato su di sé; (2) si incolla il risultato ottenuto nell'apposita area di Claude e si conferma con 'Add to memory'."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-059",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Nella scheda Settings > General di Claude si possono impostare: il nome completo, un nomignolo con cui farsi chiamare da Claude, una descrizione del proprio lavoro, e delle preferenze personali che si applicano automaticamente a tutte le conversazioni."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-060",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Esempio reale di preferenze personali salvate in Claude: 'I like laconic responses — concise, to the point, no fluff, no marketing terms. Everything should pass the third grader test: easy to understand for someone with no technical background, no jargon. Never table anything if not requested. Always go step by step. Always avoid m-dash' — istruzioni di stile che Claude applica poi a ogni risposta."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-061",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "La scheda Settings > Usage di Claude mostra i limiti di utilizzo del piano in tre blocchi: consumo della sessione corrente (con orario di reset), limiti settimanali separati per 'tutti i modelli' e per 'solo Sonnet', e una sezione Extra Usage con spesa già sostenuta, tetto di spesa mensile configurabile e saldo disponibile per acquistare consumo aggiuntivo oltre i limiti inclusi nel piano."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-062",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "È possibile scrivere i prompt a Claude Cowork tramite dettatura vocale invece che digitando: durante la registrazione, un piccolo widget flottante con indicatore di forma d'onda e pallino rosso di registrazione conferma che lo strumento di trascrizione vocale è attivo, indipendentemente dall'app in primo piano."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-063",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Nella Demo #2, la cartella di progetto conteneva fatture PDF con contenuto plausibile (numero, date, emittente, cliente, importo) ma con nomi di file assegnati in modo casuale e privi di senso: è il problema concreto che il prompt della demo doveva risolvere."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-064",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Prompt integrale della Demo #2 (riorganizzazione fatture): 'Organizza le fatture in questa cartella (chiamata demo due fatture test). Crea una sottocartella per ogni cliente che trovi. Rinomina ogni file con questo formato: fattura-[cliente]-[numero]-[data].pdf. Se non riesci a leggere il contenuto di un file o non sei sicuro di come classificarlo, mettilo in una cartella da-verificare. NON cancellare niente. NON sovrascrivere file esistenti.'"
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-065",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Best practice per scrivere prompt a Cowork n.1 — Siate precisi: specificare esattamente cosa fare (es. struttura delle sottocartelle, formato esatto di rinomina) invece di istruzioni generiche, perché più si è specifici meno margine di interpretazione errata si lascia al modello."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-066",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Best practice per scrivere prompt a Cowork n.2 — Dite cosa non fare: aggiungere esplicitamente dei divieti (es. 'non cancellare', 'non sovrascrivere') non è ridondante, perché elimina un margine di interpretazione che altrimenti resterebbe aperto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-067",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "Aneddoto citato come monito: uno YouTuber ha chiesto a Cowork di 'pulire' una cartella, e Cowork ha cancellato 11 giga di file — esempio concreto delle conseguenze di un prompt vago su un'azione distruttiva."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-068",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "anti-pattern",
+   "testo": "Istruzioni vaghe come 'metti ordine' o 'pulisci' sono un anti-pattern nella scrittura di prompt per agenti AI con accesso ai file, perché lasciano spazio all'interpretazione: per un modello linguistico, 'sistemare'/'pulire' può tradursi letteralmente in 'cancellare'."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-069",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Best practice per scrivere prompt a Cowork n.3 — Prevedete l'incertezza: dare al modello un'uscita sicura per i casi che non sa classificare con certezza (es. una cartella 'da-verificare'), invece di lasciare che forzi una classificazione sbagliata pur di produrre un risultato."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-070",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Un guardrail (perimetro d'azione) per un agente AI si scrive come divieto esplicito e diretto, non come raccomandazione generica: ad esempio 'NON cancellare niente. NON sovrascrivere file esistenti.' invece di un generico 'fai attenzione ai file esistenti'."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-071",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Nel dare istruzioni a Claude Cowork per operazioni su file, va specificato esplicitamente 'non cancellare niente' e 'non sovrascrivere' — anche se sembra ridondante, questo elimina lo spazio di interpretazione che parole generiche come 'pulisci' lascerebbero aperto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-072",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Caso reale citato come monito: uno YouTuber ha chiesto a Cowork di 'pulire' una cartella e Cowork ha cancellato 11 giga di file, perché il verbo 'pulisci' lasciava troppo spazio di interpretazione rispetto a un'istruzione esplicita come 'non cancellare'."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-073",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Quando Claude Cowork non riesce a classificare un file o un dato con certezza, l'istruzione corretta è dirgli di mettere l'elemento dubbio in una cartella o stato 'da-verificare', invece di lasciare che forzi una classificazione a caso."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-074",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "La ragione per prevedere una via d'uscita nei casi incerti è che Cowork non può sempre sapere con certezza cosa sia un file solo dal suo nome; dandogli un'uscita sicura per i casi dubbi si evita che forzi una classificazione sbagliata."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-075",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Le tre best practice per scrivere prompt efficaci a Claude Cowork, evidenziate a colori su un prompt reale: in rosso la specificità della richiesta (nomi cartelle, formato file), in arancione la gestione dell'incertezza (cosa fare nei casi dubbi), in blu le regole di cosa NON fare (non cancellare, non sovrascrivere)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-076",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Un prompt per Cowork non deve essere per forza perfetto al primo colpo: è possibile raffinarlo continuamente mentre si interagisce con l'agente, integrando via via le correzioni necessarie."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-077",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Nel task dimostrativo di riorganizzazione fatture, Claude Cowork ha analizzato 20 PDF, identificato 3 clienti distinti, creato le sottocartelle corrispondenti e non ha lasciato nessun file nella cartella 'da-verificare' perché tutti i PDF risultavano leggibili."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-078",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Se non viene esplicitamente richiesto di eliminare i file originali, Claude Cowork li lascia intatti accanto alla nuova struttura organizzata: la regola contro la cancellazione viene rispettata anche quando l'utente non la ribadisce ad ogni turno."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-079",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Per validare l'affidabilità di una classificazione automatica di file fatta da Cowork, si può aprire il documento originale e confrontare manualmente cliente e data reali con quelli assegnati nel nome del file generato."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-080",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Un'AI potentissima ma senza memoria persistente è paragonabile a un collega con un QI altissimo che va però reintrodotto da zero ogni giorno: bisogna rispiegargli ogni volta il contesto, gli argomenti e il lavoro già fatto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-081",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Senza memoria tra le sessioni, un'intelligenza artificiale per quanto capace non porta un ROI aziendale reale, perché il tempo e il denaro spesi per rifare l'onboarding da capo ad ogni conversazione annullano il vantaggio della sua intelligenza."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-082",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Aprendo un task già concluso in passato e chiedendo a Claude Cowork se ricorda come aveva sistemato dei file, la risposta è esplicita: non ha memoria delle conversazioni precedenti perché ogni sessione riparte da zero — al più può dedurre indizi ispezionando lo stato attuale delle cartelle."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-083",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "'Projects' è una funzionalità che sposta la memoria di lavoro di Claude da una logica 'per singola chat' a una logica 'per progetto', permettendo di accumulare contesto persistente legato a un ambito di lavoro invece che a una singola conversazione."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-084",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Per creare un nuovo progetto in Claude Cowork: cliccare '+ New project', scegliere 'Start from scratch', inserire un nome (obbligatorio), opzionalmente delle Instructions, opzionalmente dei file, e scegliere la cartella di destinazione sul computer, poi confermare con 'Create'."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-085",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Il campo 'Instructions' di un progetto Cowork contiene le istruzioni permanenti che regolano il modo in cui Claude deve lavorare all'interno di quello specifico progetto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-086",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "La sezione 'Scheduled' di un progetto Cowork serve a impostare task che si ripetono automaticamente in modo periodico nel tempo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-087",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "La sezione 'Context' di un progetto Cowork elenca le risorse collegate al progetto: cartelle/file presenti sul computer e la funzione 'Memory', che insieme costituiscono il materiale di contesto che Claude userà in quel progetto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-088",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Chi usa Claude Cowork per lavorare con più clienti dovrebbe creare un progetto separato per ciascun cliente, invece di mescolare il lavoro di clienti diversi in un unico contesto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-089",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "All'interno di ogni progetto-cliente va inserita la sezione 'Instructions', cioè le istruzioni specifiche di quel singolo cliente o progetto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-090",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Esempio reale di Instructions per un progetto-cliente di consulenza: descrive chi è il consulente, il tipo di clienti seguiti (PMI nord-est Italia, manifatturiero e servizi, 50-200 dipendenti), il tono di voce richiesto (professionale ma diretto, niente burocratese, uso del 'lei' formale ma registro concreto) e vincoli sui dati mancanti."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-091",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Una regola utile da includere nelle istruzioni di un progetto-cliente è vietare all'assistente di proporre soluzioni senza dati a supporto, imponendogli di dichiarare esplicitamente quando un dato non è disponibile invece di inventarlo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-092",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Per dimostrare l'isolamento tra progetti, viene creato un secondo progetto ('Cliente B') lasciando deliberatamente vuoto il campo Instructions, poi si chiede la stessa domanda già fatta al progetto 'Cliente Giovanni' per vedere se la risposta cambia."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-093",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Ogni progetto Cowork funziona come un silo indipendente: il contesto (istruzioni, file, cronologia) creato in un progetto non è visibile né accessibile da un altro progetto diverso."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-094",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "È preferibile organizzare i progetti Cowork per cliente piuttosto che per funzione aziendale (es. marketing, sales), perché organizzare per funzione porta a moltiplicare eccessivamente il numero di contesti da gestire."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-095",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Le 'Instructions' di un progetto Cowork sono l'equivalente, per chi conosce Claude Code, del file CLAUDE.md: entrambi rappresentano le istruzioni locali specifiche di quel singolo progetto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-096",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Oltre alle istruzioni di singolo progetto esiste un livello superiore, unico per l'intero account: le 'Global instructions', che si applicano a prescindere dal progetto in cui ci si trova."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-097",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Le Global Instructions di Claude Cowork si configurano in Settings > Cowork, scorrendo fino alla sezione 'Global instructions'; da lì valgono per tutte le sessioni Cowork dell'account."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-098",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Le Global Instructions si applicano automaticamente anche ai progetti che non hanno istruzioni locali proprie: raggiungono qualunque progetto dell'account, non solo quello in cui sono state scritte."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-099",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Test dimostrativo delle Global Instructions: dopo aver scritto a livello globale che il colore preferito è il verde, la domanda 'qual è il mio colore preferito?' ottiene la stessa risposta ('Il tuo colore preferito è il verde') sia nel progetto Cliente B sia nel progetto Cliente Giovanni, pur essendo due progetti isolati tra loro."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-100",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "In un progetto locale di Claude Code coesistono sia una cartella nascosta '.claude' sia un file 'CLAUDE.md' visibile in chiaro nella root del progetto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-101",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Un file CLAUDE.md di progetto ben scritto tipicamente si organizza in sezioni: WHAT (cosa fa il progetto, stack tecnologico, struttura cartelle), HOW (comandi per eseguire, testare, installare dipendenze) e WHY (motivazioni delle scelte architetturali, pattern da seguire)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-102",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Regola operativa 'VERIFY-OR-REDO LOOP': ogni correzione o modifica deve seguire un ciclo obbligatorio che inizia sempre con la fase 'Understand' — leggere il codice rilevante e capire cosa è rotto e come dovrebbe apparire un risultato corretto dal punto di vista dell'utente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-103",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il 'Global Claude.md' personale (a livello di utente, non di singolo progetto) contiene sezioni come 'Agency Capabilities', 'Reasoning Rules' e 'Communication Style', che valgono trasversalmente su tutti i progetti Claude Code dell'utente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-104",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Regola operativa personale di editing: quando si modifica un file, prima leggerlo per intero, riscriverlo mentalmente, poi eseguire un'unica scrittura complessiva — mai modificarlo riga per riga con più chiamate sequenziali separate."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-105",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Regola operativa personale di ragionamento: non spiegare eccessivamente, non ingegnerizzare oltre il necessario e non aggiungere miglioramenti non richiesti dall'utente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-106",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Regola personale di stile comunicativo per Claude: risposte laconiche, senza fronzoli, senza filler e senza linguaggio da marketing."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-107",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Regola personale di stile comunicativo: mai usare trattini lunghi (em-dash) nel testo generato da Claude."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-108",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Nella sezione 'Agency Capabilities' del Global Claude.md si dichiara esplicitamente che l'assistente non deve chiedere il permesso per azioni come automazione browser, chiamate API, gestione file o scrittura codice: se pensa di non poter fare qualcosa, deve prima tentarlo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-109",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Parallelismo concettuale a livello locale: il file CLAUDE.md sta a Claude Code come le 'Project Instructions' stanno a Claude Cowork — entrambi rappresentano le istruzioni specifiche di un singolo progetto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-110",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Parallelismo concettuale a livello globale: il 'Global CLAUDE.md' sta a Claude Code come le 'Global Instructions' stanno a Claude Cowork — entrambi valgono su tutti i progetti dell'utente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-111",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Le istruzioni locali (CLAUDE.md di progetto / Project Instructions) contengono le informazioni specifiche per un determinato cliente o progetto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-112",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Le istruzioni globali (Global CLAUDE.md / Global Instructions) contengono tre tipi di contenuto trasversale: convinzioni personali ('belief personali'), obiettivi generali di alto livello ('overarching goal') e regole di cosa fare e non fare ('DOs & DON'Ts')."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-113",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Metafora didattica: il contesto disponibile a Claude va immaginato come uno schermo o una lavagna di dimensioni limitate — non tutto lo spazio è utilizzabile allo stesso modo, alcune zone al suo interno vanno evitate."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-114",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Scrivere regole 'DOs & DON'Ts' nelle istruzioni equivale, tra le mille soluzioni possibili che l'IA potrebbe generare per un compito, a delimitare in anticipo delle 'zone rosse' da evitare perché già note come non valide."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-115",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "I token sono l'unità di scambio (la 'moneta') con cui si misura ogni interazione con Claude, equivalenti approssimativamente a gruppi di circa tre lettere ciascuno; ogni token consumato comporta un costo sia in tempo sia in denaro."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-116",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Delimitare con precisione il contesto corretto (la 'zona verde') tramite istruzioni chiare riduce lo spreco di token che Claude altrimenti consumerebbe esplorando soluzioni sbagliate, risparmiando così sia tempo sia denaro."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-117",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Esempio pratico di progetto-cliente: creazione del progetto 'TechnoService' con istruzioni che riassumono l'intero ambito di attività gestite per l'azienda (dalla creazione di proposte commerciali ai report per il CEO, alla comunicazione con la direzione marketing)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-118",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Alla sezione 'Context' di un progetto Cowork è possibile aggiungere una cartella esistente sul computer, in aggiunta alla cartella base del progetto, per estendere il materiale che Claude può consultare."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-119",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Prima di affidarsi a documenti aggiunti al contesto in un formato particolare (es. markdown), conviene verificare con un test rapido se Claude Cowork riesce effettivamente a leggerli, invece di darlo per scontato."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-120",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "comando",
+   "testo": "Prima di far eseguire un compito complesso basato su documentazione caricata, conviene chiedere esplicitamente a Claude di leggere prima tutta la documentazione disponibile, in modo che la risposta successiva sia informata."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-121",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Quando riceve un'istruzione che dipende da documentazione di contesto, Claude Cowork esplora autonomamente le cartelle del progetto, individua i file rilevanti e li legge tutti prima di produrre una risposta."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-122",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Di fronte a una richiesta aperta su come strutturare una proposta commerciale, Claude Cowork ha proposto tre opzioni di formato (Word, PowerPoint, o combinazione dei due) motivando ciascuna in base al profilo e alle esigenze del destinatario finale."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-123",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Prima di produrre un deliverable definitivo conviene sempre far fare a Claude un giro di brainstorming di opzioni alternative, piuttosto che chiedere direttamente un unico output finale."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-124",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il pannello 'Progress' di Claude Cowork mostra la lista dei passi pianificati per completare una task complessa, ciascuno numerato, con indicazione visiva di quali sono già completati (spuntati) e quale è ancora in corso."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-125",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Quando affronta una task complessa, Claude Cowork carica automaticamente nel proprio contesto le 'Skills' pertinenti al tipo di output richiesto (es. le skill 'docx' e 'pptx' quando deve generare un documento Word e una presentazione PowerPoint)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-126",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Quando una task assegnata a Cowork è complessa, l'agente principale la spezza in più 'subagents' (sotto-agenti) paralleli, ciascuno responsabile di un compito specifico all'interno della task complessiva."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-127",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Ogni subagent lavora sulla propria 'lavagna' (il proprio contesto dedicato), scrivendo progressivamente fino a completare il proprio compito, poi passa il risultato ottenuto all'agente successivo nella catena."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-128",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Ogni subagent nella catena riparte con un contesto completamente vuoto, perché tecnicamente è una conversazione nuova: non eredita la cronologia del subagent precedente, riceve solo il risultato che gli viene passato."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-129",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "L'output finale prodotto dall'ultimo subagent della catena viene passato alla conversazione principale, nella quale l'utente vede solo il risultato finale e non i passaggi di lavoro interni di ciascun subagent."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-130",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Nella modalità 'Pipeline', i subagent lavorano in sequenza stretta, uno dopo l'altro: il task si spezza in A, poi B, poi C, e ciascuno step deve attendere il completamento di quello precedente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-131",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Nella modalità 'Parallelo', il task si dirama subito in due o più subagent (A e B) che lavorano contemporaneamente; solo dopo che entrambi hanno finito, un ultimo subagent (C) prosegue con il passo successivo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-132",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Esempio numerico del vantaggio del lavoro in parallelo: tre step da 5, 5 e 2 secondi eseguiti tutti in sequenza (pipeline) sommano un totale di 12 secondi; eseguendo invece i due step da 5 secondi in parallelo, il tempo totale scende a 7 secondi."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-133",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Scrivendo prompt in modo accorto per far lavorare i subagent in parallelo quando possibile, invece che sempre in sequenza, le task vengono completate molto più velocemente."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-134",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Tutto ciò che Claude Cowork esegue (comandi, letture, scritture di file) avviene dentro una 'virtual machine', una sandbox isolata e sicura dedicata a quella sessione di lavoro."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-135",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Anche l'intera conversazione va immaginata come una 'scatola sicura' annidata dentro la virtual machine: qualunque cosa venga fatta o cancellata resta confinata dentro quella conversazione/progetto e non tocca file al di fuori di essa."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-136",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Nella cronologia reale di una chat Cowork, la riga di sistema 'Ran 2 agents' è la prova testuale che l'agente principale ha effettivamente lanciato dei subagent per eseguire un compito specifico, come il controllo qualità visivo di due documenti."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-137",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "Buona pratica di organizzazione di un progetto Cowork: ridurre le cartelle a poche sottocartelle standard con ruoli chiari, ad esempio 'client_context' (per il materiale di contesto/input) e 'output' (per i risultati generati), invece di accumulare molte cartelle diverse senza criterio."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-138",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "comando",
+   "testo": "Per mantenere un progetto sempre pulito conviene istruire esplicitamente Claude a salvare ogni output generato dentro la sottocartella 'output' dedicata, invece di lasciare i file sparsi nella cartella principale del progetto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-139",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "È possibile creare un progetto Cowork puntandolo direttamente su una cartella già esistente sul computer, tramite l'opzione 'Use an existing folder', invece di creare una cartella nuova da zero."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-140",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Una 'skill' per Claude non è altro che un semplice file (SKILL.md) in cui sono scritte le specifiche di un compito o comportamento che si vuole rendere ripetibile."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-141",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il file di una skill è composto da una 'Description' che elenca le parole o situazioni che devono far scattare (trigger) automaticamente la skill, e da un corpo con istruzioni operative organizzate in punti numerati che guidano il comportamento da tenere."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-142",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Esistono due tipologie di skill per Claude: le skill 'native' già integrate e fornite da Anthropic, e le skill personalizzate che l'utente può creare su misura per i propri processi."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-143",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "comando",
+   "testo": "Per invocare esplicitamente una skill in una conversazione Cowork si scrive il simbolo '/' seguito dal nome della skill all'inizio del prompt (slash-command)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-144",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "La sezione 'Customize' di Claude Cowork si articola in tre categorie che modellano il comportamento dell'assistente: Connectors (collegamento alle app che si usano già), Skills (insegnare processi e competenze specifiche) e Plugins (pacchetti di conoscenza preconfezionata per un determinato settore)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-145",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Nella Directory delle skill di Anthropic, ogni skill mostra autore, numero di download e descrizione; le skill non ancora aggiunte all'account sono contrassegnate da un'icona '+' per installarle, mentre quelle già configurate mostrano un'icona a ingranaggio."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-146",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "La skill 'brand-guidelines' applica automaticamente i colori e la tipografia ufficiali di un brand a qualunque artifact prodotto (documenti, presentazioni, ecc.) che possa beneficiare di quello stile visivo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-147",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "Prima di applicare la skill brand-guidelines a un documento destinato a un cliente, Claude segnala che le uniche linee guida di brand disponibili sono quelle di Anthropic (l'azienda che fornisce l'assistente), non quelle del cliente finale, e chiede conferma esplicita prima di procedere."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-148",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Specifica concreta delle brand guidelines Anthropic applicate nella demo: sfondo scuro #141413, sfondo chiaro crema #FAF9F5, colori di accento arancione #D97757, blu #6A9BCC e verde #788C5D, font Poppins per i titoli e Lora per il corpo del testo, con fallback ad Arial se questi font non sono installati."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-149",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Anche l'applicazione di una skill di stile a un documento già esistente attiva un ciclo di subagent: uno rigenera il file con le nuove regole visive, un altro esegue un controllo qualità visivo, correggendo eventuali dettagli finché il risultato non è corretto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-150",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Il lavoro necessario per costruire correttamente una skill di brand è impegnativo, ma una volta creata il suo riutilizzo successivo è immediato: basta un singolo comando per riapplicare colori e font aziendali coerenti a qualsiasi documento nuovo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-151",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Per creare una nuova skill personalizzata si può usare la skill nativa 'skill-creator', che avvia il processo chiedendo per prima cosa all'utente cosa deve fare la nuova skill."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-152",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "In alternativa al percorso 'Customize > + > Create new skills', si può avviare la creazione di una skill digitando direttamente lo slash-command '/skill-creator' nella casella del prompt."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-153",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Fisicamente, quando Claude crea una nuova skill esegue un comando di sistema che genera una cartella dedicata dentro il percorso .claude/skills/<nome-skill>/, confermando che ogni skill è, alla base, semplicemente una cartella con dentro un file di istruzioni."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-154",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Esempio minimo di skill personalizzata creata da zero ('saluto'): la Description elenca le parole-trigger che la attivano ('saluto', 'salutami', 'ciao'), e il corpo blinda rigidamente il comportamento imponendo di rispondere con una frase esatta senza aggiungere o modificare nulla."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-155",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "Se la cartella di sistema delle skill risulta in sola lettura, Claude salva il file della nuova skill in una cartella di output alternativa; per attivarla davvero, l'utente deve poi copiare manualmente quella cartella dentro ~/.claude/skills/ (o nella cartella skill del progetto)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-156",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Il processo di creazione di una skill è iterativo: si parte da un output semplice, si valuta il risultato, e se non soddisfa si continua a raffinarlo nella stessa chat finché non risulta corretto."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-157",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "La skill skill-creator permette di generare una skill completamente nuova a partire da una descrizione in linguaggio naturale del comportamento desiderato (es. \"ogni volta che la chiamo, la skill mi dice: Ciao Giovanni, come stai?\"), producendo in automatico un file SKILL.md pronto all'uso."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-158",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "regola",
+   "testo": "La cartella delle skill di sistema è in sola lettura: quando skill-creator genera una nuova skill, questa viene salvata nella cartella di output dell'utente invece che installata direttamente nel percorso ufficiale delle skill."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-159",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Per rendere effettivamente utilizzabile una skill personalizzata salvata nella cartella di output, bisogna copiarne manualmente la cartella dentro ~/.claude/skills/ (oppure nella cartella skills del progetto corrente)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-160",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "In alternativa alla copia manuale della cartella, una skill può essere impacchettata in un file .skill per semplificarne la distribuzione e l'installazione altrove."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-161",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Cowork rinomina automaticamente il titolo di una task in base al contenuto della conversazione, non appena questo diventa più chiaro (es. \"Create custom greeting skill\" diventa poi \"Greeting and initial conversation\")."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-162",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Il prodotto dimostrato nel corso si chiama \"Cowork\" (Claude Cowork) ed è etichettato in interfaccia come \"research preview\"."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-163",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Cowork permette di lanciare ed eseguire più task/agenti indipendenti in parallelo, ciascuno visibile come voce separata nella lista \"Active tasks\", senza dover attendere il completamento del primo prima di avviarne un altro."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-164",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "La funzione \"Guest pass\" di Cowork permette di regalare a un amico una settimana gratuita del prodotto; se l'invitato si abbona, chi ha invitato riceve 10 euro di utilizzo extra."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-165",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Quando l'utente chiede esplicitamente di non usare nessuna skill, il modello sopprime deliberatamente anche i trigger impliciti presenti nel messaggio (es. la parola \"ciao\" che normalmente attiverebbe una skill di saluto) e risponde direttamente senza alcuna skill."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-166",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Una skill ben progettata può interrogare l'utente con domande a scelta multipla mirate (es. punti chiave, tono, presenza di una CTA) prima di generare l'output, invece di produrre subito un contenuto generico."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-167",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Un file SKILL.md dichiara un campo \"Description\" che specifica le condizioni di attivazione e i casi d'uso della skill, e un campo \"Allowed tools\" che limita quali strumenti la skill può effettivamente invocare durante l'esecuzione."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-168",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Un elenco \"Allowed tools\" concreto per una skill può comprendere Bash, Read, Write, Edit e AskUserQuestion."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-169",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Lo strumento AskUserQuestion, quando elencato tra gli \"Allowed tools\" di una skill, è ciò che genera concretamente il modale a scelta multipla mostrato all'utente durante l'esecuzione."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-170",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "esempio",
+   "testo": "Una skill può racchiudere ed eseguire uno script backend Python esterno (es. generate.py, invocato via Bash), e richiedere che l'utente imposti in anticipo una variabile d'ambiente come ANTHROPIC_API_KEY prima del primo utilizzo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-171",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Una skill di generazione contenuti personalizza l'output usando il contesto già noto dell'utente (es. scrive il post in inglese perché il profilo LinkedIn dell'utente è in inglese) anche quando la richiesta stessa è stata formulata in un'altra lingua."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-172",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Una skill di scrittura può apprendere e riprodurre uno stile di formattazione personale (es. spaziatura corta ad effetto \"scannability\") analizzando un insieme di post di riferimento dell'utente caricati al momento dell'esecuzione."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-173",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Dopo aver generato un contenuto, il modello propone di norma di iterare ulteriormente su di esso (cambiare tono, accorciare, allungare, riscrivere parti specifiche) invece di trattare la prima bozza come definitiva."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-174",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Cowork include un marketplace interno (\"Directory\") dove le skill possono essere cercate, filtrate e ordinate (es. per popolarità o novità), con una distinzione visiva chiara tra skill già installate (icona a ingranaggio) e skill disponibili da aggiungere (icona \"+\")."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-175",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "La scheda di dettaglio di ogni skill installata mostra sempre chi l'ha aggiunta (\"Added by\"), quando è stata aggiornata l'ultima volta (\"Last updated\") e chi può invocarla (\"Invoked by\": User or Claude)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-176",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Le skill disponibili in Cowork sono raggruppate in \"Personal skills\" (create dall'utente, es. saluto) e \"Built-in skills\" (preinstallate dalla piattaforma, es. schedule, context)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-177",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Un comando e una skill si invocano esattamente allo stesso modo, tramite lo stesso simbolo \"/\" digitato all'inizio del messaggio, senza alcuna distinzione visiva al momento della chiamata."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-178",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Concettualmente una skill è un file scritto in markdown con istruzioni (tipicamente creato dall'utente), mentre un comando è una funzionalità built-in già automatizzata dalla piattaforma (es. /schedule)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-179",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "La descrizione ufficiale del comando /schedule, mostrata in un tooltip dell'interfaccia, è: \"Create a scheduled task that can be run on demand or automatically on an interval.\""
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-180",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Digitare \"/schedule\" seguito dal nome di una skill esistente (es. \"/schedule la skill /saluto\") avvia il flusso di pianificazione di quella skill, e il sistema chiede in automatico con quale frequenza deve girare, proponendo opzioni come \"Every morning\", \"On demand only\", \"Once, right now\" o \"Something else\"."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-181",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Creare una scheduled task dalla pagina dedicata \"Scheduled tasks\" richiede di compilare i campi obbligatori Name, Description e Prompt, con in più una Frequency opzionale (default \"Manual\") e una sezione \"More options\" comprimibile."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-182",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Il Name assegnato a una scheduled task viene convertito automaticamente in uno slug adatto a un identificativo/URL (es. \"Post su LinkedIn.\" diventa \"post-su-linkedin\")."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-183",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Il campo Prompt di una scheduled task può richiamare direttamente una skill esistente citando il suo comando slash all'interno del testo (es. \"utilizza la skill /linkedin-post\")."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-184",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "Le scheduled task girano solo mentre il computer dell'utente è acceso; per questo l'interfaccia espone un interruttore dedicato \"Keep awake\" per impedire che la macchina vada in stand-by durante un'esecuzione programmata."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-185",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Una volta che una skill referenziata in una scheduled task fa parte di un plugin installato, il suo riferimento a comando slash si aggiorna automaticamente in forma con namespace (es. \"/linkedin-post\" diventa \"/social-media-manager:linkedin-post\")."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-186",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Le scheduled task supportano una frequenza \"Daily\" con un orario fisso di esecuzione impostabile (es. 09:00)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-187",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "avvertimento",
+   "testo": "Le scheduled task vengono eseguite con un ritardo casuale di alcuni minuti rispetto all'orario impostato, introdotto deliberatamente per motivi di performance del server."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-188",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "La pagina di dettaglio di una scheduled task mostra il suo stato (es. \"Active\"), la sezione \"Instructions\" con il prompt configurato, l'impostazione \"Repeats\" e una sezione \"Always allowed\" con le autorizzazioni concesse durante le esecuzioni passate."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-189",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Conviene perfezionare la qualità di una skill prima di trasformarla in una task pianificata/automatizzata, perché la pianificazione si limita a ripetere fedelmente ciò che la skill già fa."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-190",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "I \"Connectors\" permettono a Claude di leggere e scrivere direttamente sugli strumenti e le app esterne che l'utente già usa (es. Canva, Google Drive, Gmail, Google Calendar, GitHub), invece di limitarsi alla sola conversazione testuale."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-191",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Il pannello \"Customize\" di Cowork offre tre punti d'ingresso per estendere le capacità di Claude: collegare le proprie app (connectors), creare nuove skill, e sfogliare i plugin già pronti."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-192",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "struttura",
+   "testo": "Ogni connector espone permessi granulari (\"Tool permissions\") divisi in strumenti \"Interactive\" (azioni che modificano qualcosa, es. generare un design) e strumenti \"Read-only\" (es. leggere le informazioni di un design), ciascuno impostabile a un livello di autorizzazione come \"Always allow\"."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-193",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Collegare un nuovo connector (es. Google Calendar) segue un flusso di autenticazione OAuth standard: cliccare \"Connetti\", scegliere l'account Google da un elenco, e prendere visione di privacy policy e termini di servizio."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-194",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "dato",
+   "testo": "Durante questa demo live di collegamento a Google, viene rivelato il nome del relatore del corso: Giovanni Beggiato."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-195",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "La pagina di un connector non ancora collegato elenca esplicitamente quali plugin installati lo richiedono per funzionare (es. Google Calendar richiesto dai plugin Productivity, Sales e Marketing), rendendo visibile la dipendenza prima ancora di connetterlo."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-196",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Un'unica richiesta può combinare esplicitamente un connector e una skill insieme (es. \"Utilizza Canva, il connettore,... guardati la skill /brand-guidelines\"), permettendo a Claude di usare entrambe le capacità nello stesso task."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-197",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "procedura",
+   "testo": "Generare un design tramite un connector come Canva segue una pipeline a tre passi resa visibile nel pannello \"Progress\": generare le opzioni di design, far scegliere all'utente la candidata preferita, esportare quella scelta (es. in PDF)."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-198",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Nella generazione di design visuali tramite connector, Claude produce più opzioni candidate (in questo esempio 4) tra cui l'utente può scegliere in anteprima, invece di consegnare direttamente un risultato unico."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-199",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "principio",
+   "testo": "Un design generato tramite un connector come Canva può essere aperto e verificato direttamente sul sito del provider (canva.com), a conferma che si tratta di un file reale e modificabile, non di una semplice anteprima interna a Cowork."
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-200",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "tipo": "definizione",
+   "testo": "Un \"plugin\" è un pacchetto che racchiude più elementi costitutivi — skill e comandi, ed eventualmente anche connector — in un unico insieme installabile, pensato per uno scopo o un ruolo specifico."
+  }
+ ]
+}

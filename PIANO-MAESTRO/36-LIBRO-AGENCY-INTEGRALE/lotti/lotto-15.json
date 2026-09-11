@@ -1,0 +1,1140 @@
+{
+ "lotto": 15,
+ "totale": 189,
+ "atomi": [
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-001",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "architettura",
+   "testo": "Il pattern 'LLM Wiki' di Andrej Karpathy ha TRE STRATI: 1) FONTI GREZZE (trascrizioni, documenti, email: si leggono e non si toccano mai); 2) IL WIKI (note markdown collegate che l'AI aggiorna da sola, una per cliente e una per concetto); 3) LO SCHEMA (le regole su com'e' organizzato il wiki e come va mantenuto). La promessa: invece di rispiegare tutto a ogni chat, una base di conoscenza in file markdown che l'AI mantiene da sola."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-002",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "architettura",
+   "testo": "Le TRE OPERAZIONI che l'AI esegue sul wiki: INGEST (materiale nuovo entra, l'AI legge e aggiorna le note), QUERY (una domanda sul business, l'AI risponde leggendo il wiki E CITA le note da cui prende la risposta), LINT (controllo delle contraddizioni, dei dati vecchi e delle note orfane senza collegamenti)."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-003",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "Divisione del lavoro dichiarata come principio del pattern: 'L'UMANO CURA LE FONTI E FA LE DOMANDE, L'AI FA IL RESTO'. L'umano non scrive le note del wiki, le fa scrivere; il suo lavoro e' curare cosa entra in fonti/ e formulare le domande."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-004",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "fonte",
+   "testo": "Fonte primaria del pattern: post di Andrej Karpathy su X intitolato 'LLM Knowledge Bases' (URL a schermo x.com/karpathy/status/2039800565266...), datato dall'autore del video 'aprile 2026'. Il post descrive tre parti: Data ingest (documenti sorgente indicizzati in una directory raw/, poi un LLM 'compila' incrementalmente un wiki di file .md con riassunti, backlink e articoli per concetto), IDE (Obsidian come frontend, 'the LLM writes and maintains all of the data of the wiki, I rarely touch it directly'), Q&A ('once your wiki is big enough - e.g. mine is ~100 articles and ~400K words - you can ask your LLM agent all kinds of complex questions [...] I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining')."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-005",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "strumento",
+   "testo": "Karpathy usa l'estensione Obsidian Web Clipper per convertire articoli web in .md, piu' una hotkey per scaricare in locale tutte le immagini correlate cosi' che l'LLM possa referenziarle. Menziona anche plugin Obsidian per rendering alternativi (es. Marp per le slide)."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-006",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "architettura",
+   "testo": "Struttura del Company Brain (il pattern Karpathy calato su un'azienda): company-brain/ con CLAUDE.md (lo schema), fonti/ (strato 1, intoccabile), clienti/ (il wiki, una nota per cliente), offerta/offerta.md (i prezzi, unico posto), proposte/ (il wiki, una nota per proposta generata), index.md (il catalogo, una riga per nota per categoria), log.md (il registro append-only), .claude/skills/ (le automazioni), .env (le chiavi API). Claim di sintesi: 'DAI UNA CALL, TORNA UNA NOTA'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-007",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "prompt",
+   "testo": "PROMPT 1 (Company Brain), recuperato parola per parola dallo schermo, sintassi a tag pseudo-HTML: <obiettivo> 'Crea la struttura di un Company Brain seguendo il pattern LLM Wiki di Andrej Karpathy: tre strati (fonti grezze immutabili, wiki in markdown mantenuto dall'AI, schema di regole) e tre operazioni (ingest, query, lint). Il cervello e' la memoria dell'azienda: clienti, offerta e proposte vivono come note di testo collegate che Claude Code legge e aggiorna.' </obiettivo> + <struttura> (albero di cartelle con commento per ogni voce) + <CLAUDE.md deve contenere> (chi e' l'azienda, la mappa dei tre strati, il testo delle tre operazioni, le tre regole)."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-008",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "REGOLA 1 del CLAUDE.md: 'i prezzi vivono SOLO in offerta/offerta.md. Mai inventare un numero, mai copiarli altrove.' E' la regola di single-source-of-truth che impedisce la deriva dei listini tra documenti generati."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-009",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "REGOLA 2 del CLAUDE.md: 'ogni proposta generata scrive SEMPRE una nota nuova in proposte/ con data, cliente, importo, stato e link, piu' l'aggiornamento di index.md e log.md. Nessuna proposta senza nota.' Il documento commerciale non e' finito quando esiste il PDF: e' finito quando la memoria ne ha traccia."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-010",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "REGOLA 3 del CLAUDE.md: 'mai leggere o mostrare il contenuto di .env, solo i nomi delle chiavi'. Regola di sicurezza scritta dentro lo schema del cervello, non lasciata al buon senso dell'agente. (L'ultima parola della riga esce dal bordo dello schermo in entrambi i frame: 'chiavi' e' ricostruito per senso.)"
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-011",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "Regola anti-sovrascrittura dentro l'operazione INGEST: 'Se qualcosa contraddice cio' che gia' sai, segnalalo, non sovrascriverlo in silenzio.' La contraddizione e' un evento da dichiarare, non da risolvere autonomamente."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-012",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "file",
+   "testo": "Contenuto reale generato dal Prompt 1, letto nell'output di Claude: clienti/_template.md con i campi nome, azienda, email, telefono, contesto, problema, note decisorie, budget, fonte; proposte/_template.md con cliente, data, importo, stato, link, nota; offerta/offerta.md con un listino demo di lead generation a quattro voci (Setup, Starter, Growth, Scale)."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-013",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "metodo",
+   "testo": "Dimostrazione A/B eseguita dal vivo: due finestre IDE affiancate, ognuna con una sessione Claude Code (bypass permissions attivo). A sinistra il progetto 'Prova No Brain' (cartella vuota), a destra 'Brain-Karpathy' (con .claude, .env, clienti, fonti, offerta, proposte, CLAUDE.md, index.md, log.md). Stesso transcript di call, stessa richiesta ('generami una proposta per questo cliente'), confronto degli output."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-014",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "La differenza vera tra agente con memoria e agente senza NON e' estetica ma di VERIFICABILITA'. L'agente senza cervello chiude chiedendo all'umano di confermare due scelte che ha inventato lui ('ho messo la stima trimestrale a ~3.000 euro [...] se preferisci non mostrare quel totale stimato, lo tolgo'). L'agente col cervello chiude con una check-list di cinque controlli superati contro un file che esiste: copertina con logo e data OK, tre paragrafi presi dalla call OK, prezzi identici a offerta/offerta.md OK, nessuna opzione pre-evidenziata OK, pagina firma coi campi presenti OK."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-015",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "Ordine di lavoro dichiarato: 'PRIMA DISEGNO IL FLUSSO, POI GENERO'. Il flusso a 4 stadi (LA FONTE -> IL CERVELLO -> PANDADOC -> LA MEMORIA) viene disegnato a mano prima di scrivere una riga di prompt. Post-it sulla slide: 'Il flusso lo disegno io, poi Claude genera' e 'Claude scrive piu' veloce, ma il progetto e' mio'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-016",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "architettura",
+   "testo": "Il flusso di business in 4 stadi: 1) LA FONTE - la trascrizione della call entra (in demo copia-incolla, in produzione collegabile a un note-taker tipo Fathom o Fireflies); 2) IL CERVELLO - Claude trasforma la call in note e aggiunge i prezzi letti da offerta.md; 3) PANDADOC - produce il documento firmabile; 4) LA MEMORIA - registra la proposta come nota."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-017",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "metodo",
+   "testo": "Metodo di integrazione con un'API esterna in tre mosse, dichiarato come 'OGNI PEZZO TESTATO DA SOLO': (1) TESTA IL PEZZO - uno script isolato inspect_template.py che stampa cosa il template si aspetta davvero (ruolo: Client, token: client.name, pricing: Prezzi), perche' 'i nomi nel codice devono combaciare col template'; l'anti-pattern esplicito e' 'indovinare + vibe coding che rompe tutto'. (2) LA SKILL in tre file: pandadoc.py (il client: crea, legge, aspetta la bozza), create_proposal.py (orchestra il tutto), SKILL.md (il comando /genera-proposta)."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-018",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "IL DETTAGLIO ASINCRONO, isolato come trappola a se' stante nella slide: 'PandaDoc non crea il documento all'istante: risponde uploaded, tu aspetti draft'. La sequenza corretta e' POST /documents -> stato uploaded -> attesa -> stato draft -> solo allora si puo' agire. Anti-pattern dichiarato: 'mandarlo prima = fallisce'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-019",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "file",
+   "testo": "Struttura reale della skill generata, letta nell'Explorer dell'IDE e coincidente con la slide di architettura: .claude/skills/genera-proposta/ contenente scripts/ (con __pycache__/, create_proposal.py, inspect_template.py, pandadoc.py) e SKILL.md."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-020",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "prompt",
+   "testo": "Clausola anti-allucinazione inserita in coda al Prompt 2, letta a schermo: 'Se una parte di queste istruzioni e' ambigua o sembra contraddittoria, fermati e spiegami il dubbio invece di indovinare. Non aggiungere librerie, file o funzionalita' extra non richieste.' (chiusa dal tag </in_caso_di_dubbio>). Al prompt sono allegati l'URL della dashboard PandaDoc e uno screenshot del template."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-021",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "definizione",
+   "testo": "Definizione di 'skill' data dall'autore: 'la skill non e' altro che un modo di dire a Claude: automatizza questo workflow, perche' gli step sono sempre quelli, e quindi abbiamo automatizzato un piccolo pezzo di processo.'"
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-022",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "numero",
+   "testo": "Limiti reali delle due chiavi API PandaDoc, letti integralmente nella pagina Dev Center > Configuration: SANDBOX KEY - gratuita, tutti i documenti includono un prefisso developer, massimo 10 richieste al minuto. PRODUCTION KEY - pieno controllo sui nomi dei documenti, nessun watermark sui PDF, fino a 300 chiamate al minuto, richiede 'Request a demo'. Nella stessa pagina: Webhooks fino a 100 per account. Badge account: 'Trial 14' (14 giorni di prova)."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-023",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "Conseguenza operativa della chiave sandbox, dichiarata nel Notion dei prerequisiti: 'con la chiave sandbox i documenti escono marcati [DEV] e l'invio a email esterne fallisce con 403. Per una bozza in dashboard basta la sandbox; per l'invio vero serve la chiave production (o un invio a un'email della tua organizzazione).' Questo spiega perche' in tutto il video nessun documento viene realmente inviato a un cliente."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-024",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "checklist",
+   "testo": "Prerequisiti una-tantum del sistema, elencati nel Notion: (1) template PandaDoc gia' pronto nell'account - brandizzato, coi token (nome cliente, azienda, problema, contesto), le opzioni di prezzo come righe opzionali NON preselezionate, valuta EUR, e il pagamento con carta via Stripe se lo si vuole offrire - 'queste cose si impostano in UI, non via API'; (2) la chiave API giusta; (3) una trascrizione di discovery call, anche finta, pronta da mettere in fonti/; (4) Obsidian installato e puntato sulla cartella, per vedere il grafo; (5) .env con PANDADOC_API_KEY e PANDADOC_TEMPLATE_ID, 'mai a schermo'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-025",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "Le opzioni di prezzo nel template PandaDoc vanno configurate come righe opzionali NON preselezionate, e nel documento finale nessuna delle due deve essere pre-evidenziata: e' uno dei cinque controlli che l'agente col cervello dichiara di aver superato. Il testo stampato sul PDF lo rende esplicito al cliente: 'nessuna delle due e' quella giusta, dipende da come vuoi distribuire l'investimento'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-026",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "numero",
+   "testo": "Il listino reale usato nella demo, identico su tre fonti indipendenti dentro il video (transcript-fonte, check dell'agente, PDF finale): OPZIONE STANDARD - setup 1.000 euro una tantum (infrastruttura Instantly, estrazione lead Apify, enrichment Claude, scrittura sequenze) + retainer 500 euro/mese per 2 mesi (gestione campagna e report KPI) = 2.000 euro sui tre mesi. OPZIONE PERFORMANCE - setup ridotto a 600 euro + 80 euro per ogni meeting prenotato (stima ~30 meeting a trimestre), 'si paga sul meeting prenotato, mai su quanto chiudi tu'. Pagamento per entrambe: 50% alla firma, 50% a fine campagna."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-027",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "PREZZA SUL VALORE, NON SUL COSTO: lo stesso identico agente vale 3.000 euro per l'Azienda A e 15.000 euro per l'Azienda B - 'stesso agente, valore diverso'. Anti-pattern esplicito sulla slide: 'non prezzare a ore'. Chiusura del video: 'nessuna azienda di successo prezza mai al costo'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-028",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "numero",
+   "testo": "Il costo di produzione reale di questo tipo di automazione, dichiarato a voce e scritto sulla lavagna: circa 100-200 dollari al mese di abbonamento Claude + circa 59 dollari di PandaDoc + 'un paio di altre cose'. E' proprio la bassezza di questo costo a rendere il cost-based pricing una trappola: 'il costo e' una strategia che vi fara' perdere e vi fara' sempre piu' schiacciare i margini'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-029",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "formula",
+   "testo": "PRIMO METODO di value-based pricing, il TEMPO, scritto a mano sulla lavagna: VALORE -> VBP -> TEMPO -> (TEMPO PERSONA PROPOSTA) x (NUMERO PROPOSTE AL MESE). L'autore la qualifica esplicitamente come 'una proxy', non come il calcolo definitivo."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-030",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "formula",
+   "testo": "SECONDO METODO, il ROI - dichiarato come additivo e non alternativo al primo: 'non e' un o, ma e' un e'. Catena scritta a mano sulla lavagna e detta a voce: 10 ore/mese liberate -> in quelle 10 ore la persona prende 2 clienti -> cliente medio 2.500 euro -> 2 x 2.500 = 5.000 euro/mese di upside (+ va aggiunto il valore orario di chi paghi) => l'automazione si prezza intorno ai 6.000 euro/mese. L'autore avverte mentre lo fa: 'facciamo numeri a casissimo' e 'ovviamente molto molto semplificato'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-031",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "numero",
+   "testo": "STRUTTURA DI PREZZO ENTRY LEVEL, dalla slide e confermata a voce: SETUP una tantum da 1.000 a 5.000 euro; RETAINER al mese da 500 a 2.000 euro. La slide li marca esplicitamente come 'range indicativi'. A voce l'autore aggiunge la condizione: si parte da questi prezzi 'dopo ovviamente averne fatte un po'', non alla prima automazione."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-032",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "QUANDO SERVE UN RETAINER (criterio, non preferenza): quando l'automazione va MANTENUTA perche' deve cambiare forma nel tempo. Esempio dato: aziende che vendono macchinari pesanti su piu' mercati - inglese, italiano, francese, tedesco - dove le proposte devono uscire in lingue diverse e, a seconda del tipo di macchinario, prendere forme diverse. Le quattro sigle EN/IT/FR/DE sono scritte a mano sulla lavagna a 24:27."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-033",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "regola",
+   "testo": "LE TRE CONDIZIONI perche' il value-based pricing regga, dette subito dopo il calcolo del ROI e prima di qualunque cifra: 'dovete avere un business che ne ha bisogno, dovete avere un mercato che ve lo permette, dovete avere un avatar che e' disposto a pagare'. Aggiunta sulla scalabilita': 'per scalarle non e' poi cosi' semplice come farle one-shot'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-034",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "numero",
+   "testo": "L'ordine di grandezza del valore, con la riserva dell'autore incorporata: 'un one day training di 8 ore su AI puo' arrivare a costare 10-15.000. Un'automazione del genere puo' arrivare a costare anche 10.000 euro. Sara' forse la prima che venderete? Assolutamente no.' La cifra del titolo del video e' quindi un tetto teorico dichiarato con riserva, non un prezzo realizzato mostrato in un documento."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-035",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "beneficio",
+   "testo": "IL BENEFICIO VENDUTO AL CLIENTE, dalla slide: '3 GIORNI -> 1 ORA', con la frase esatta da usare in offerta: 'la proposta pronta appena arriva il lead, la rivedi e premi invia'. Non si vende l'automazione, si vende la compressione del tempo tra call e proposta firmabile."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-036",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "limite",
+   "testo": "Limite del pattern dichiarato dall'autore stesso: 'questa infrastruttura e' molto molto buona per una conoscenza di tipo personale [...] va molto bene se siete un solo founder'. Lo scaling a contesto aziendale (piu' persone che scrivono nello stesso cervello) e' nominato e rinviato a un corso a pagamento nella community, NON dimostrato nel video."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-037",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "convenzione",
+   "testo": "Convenzione di naming dei file mostrata a disco: le fonti grezze sono nominate con data ISO + slug (2026-07-10-call-rossi-marketing.md), le note di proposta con slug cliente + data (proposte/rossi-marketing-2026-07-23.md). La data nella fonte e' quella dell'evento (la call del 10 luglio), la data nella proposta e' quella della generazione (23 luglio)."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-038",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "strumento",
+   "testo": "Stack di lavoro mostrato: IDE = Google Antigravity (cercato su Google a schermo, descritto come 'agentic development environment [...] designed to orchestrate autonomous artificial intelligence agents'), con Claude Code installato come estensione VS Code di Anthropic dal marketplace Open VSX. L'autore precisa che 'non cambia assolutamente nulla' rispetto alla desktop app di Claude Code. Modalita' di esecuzione usata in tutto il video: 'bypass permissions'."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-039",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "metodo",
+   "testo": "Verifica di coerenza fatta dall'autore in chiusura del test dal vivo: dopo aver generato la proposta, TORNA nel file grezzo dentro fonti/ e confronta i prezzi scritti nella call con quelli finiti sul PDF, dichiarando la corrispondenza. La verifica non e' delegata all'agente: si controlla l'output contro la fonte immutabile."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-040",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "contesto",
+   "testo": "Cornice commerciale verificata a schermo: agenzia Gentes AI (gentes.ai), headline 'AI Growth Partner for B2C Service Businesses', tre fasi di servizio (Audit - call gratuita 30 minuti; Engineering; Training & Launch) e due linee (Lead Generation: reactivation/ad campaigns/content systems; Voice AI: receptionist/lead qualification/appointment setting). Team a schermo: Giovanni Beggiato CEO Strategy & Systems ('Led AI initiatives at Amazon delivering $4M+ in savings, Won CEO Award, top 2% of employees worldwide'), Jean-Marc Herrada COO ('worked with P&G in Manufacturing and Supply Chain, leading teams of 40 people and $100M projects'). Community Skool 'Avanguardia Plus': 91 membri, 6 online, 2 admin al momento della registrazione."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-041",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "limite",
+   "testo": "Cosa NON e' dimostrato nel video, verificato frame per frame: (1) nessun documento e' mai stato inviato davvero a un cliente - tutti hanno prefisso [DEV] e restano in stato DRAFT nella dashboard PandaDoc (contatori: Your drafts 1, Waiting for others 0, Finalized 0); (2) il cliente e' dichiaratamente finto; (3) nessun euro incassato e' mostrato; (4) il codice di pandadoc.py / create_proposal.py / inspect_template.py non e' MAI ingrandito a schermo, compaiono solo i nomi dei file; (5) il CLAUDE.md generato non e' mai aperto a schermo - se ne conosce il contenuto solo dal prompt che lo commissiona e dal riassunto che Claude ne fa."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-042",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "cautela",
+   "testo": "Cautela di lettura sull'output 'senza cervello': l'autore lo liquida a voce come 'quasi AI slop' e dice che 'non ha nemmeno il nostro logo'. Guardando il frame, l'artifact e' in realta' un documento impaginato con gerarchia tipografica e il nome 'Gentes.AI' presente come testo. Cio' che manca davvero e' il logo IMMAGINE, il template brandizzato e il canale di firma/pagamento. La differenza che il video dimostra davvero e' funzionale (firma + pagamento + nota di memoria + autoverifica sui prezzi), non estetica: il claim 'AI slop' e' retorica dell'autore, non un fatto verificato a schermo."
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-043",
+   "run": "max18-v02-karpathy-agenti",
+   "tipo": "cautela",
+   "testo": "Il vault Obsidian personale dell'autore mostrato in Galaxy view riporta '3515 notes' e contiene cartelle (_showcase, areas, code, concepts, data, docs, engine, entities, labs, outputs, projects, scripts, self, sources, workspace, piu' CLAUDE, CONVENTIONS, README) molto piu' articolate delle 4 del Company Brain demo. Il video non lo dichiara, ma la struttura letta a schermo indica che il sistema reale dell'autore e' gia' oltre lo stadio che insegna qui. Testo piccolo: confidenza media sul numero esatto di note."
+  },
+  {
+   "uid": "max17-v01-artem::KA-001",
+   "run": "max17-v01-artem",
+   "tipo": "regola",
+   "testo": "I modelli di image gen (ChatGPT Image, Nana Banana) generano una sola immagine alla volta: chiedere un carosello intero da 6 slide in un colpo solo fa sì che ogni slide venga creata da zero, senza consapevolezza delle altre slide, risultando in un carosello incoerente e generico."
+  },
+  {
+   "uid": "max17-v01-artem::KA-002",
+   "run": "max17-v01-artem",
+   "tipo": "metodo",
+   "testo": "La soluzione al problema della coerenza tra slide e' fornire un 'visual anchor' per ogni slide generata: l'anchor e' semplicemente la prima slide (hook) fatta molto bene, allegata come immagine di riferimento a ogni prompt successivo, cosi' ogni nuova slide e' vincolata a rispettarne tipografia, colori e mood."
+  },
+  {
+   "uid": "max17-v01-artem::KA-003",
+   "run": "max17-v01-artem",
+   "tipo": "metodo",
+   "testo": "The Stupid Simple Instagram Carousel System (slide riassuntiva finale, 4 passi): 1) Make sure the copy is good (40% of time); 2) Generate hook slide, this is your visual anchor (50% of time); 3) Build one slide at the time, using visual anchor as style reference (10% of time); 4) Use Canva Magic Layers to make small tweaks (like text or spacing)."
+  },
+  {
+   "uid": "max17-v01-artem::KA-004",
+   "run": "max17-v01-artem",
+   "tipo": "architettura",
+   "testo": "ChatGPT Project dedicato al copy chiamato 'Instagram Carousel Copy Writer', con due file caricati come Sources: slide-count.md e SKILL.md (nomi letti per intero nel tab Sources del progetto)."
+  },
+  {
+   "uid": "max17-v01-artem::KA-005",
+   "run": "max17-v01-artem",
+   "tipo": "file",
+   "testo": "I due file Sources del progetto Copy Writer sono a loro volta addestrati su un documento piu' ampio chiamato 'THE CAROUSEL BIBLE' (Google Doc), che raccoglie ricerca sulla psicologia dei caroselli e benchmark di performance citati con fonte."
+  },
+  {
+   "uid": "max17-v01-artem::KA-006",
+   "run": "max17-v01-artem",
+   "tipo": "numero",
+   "testo": "Statistiche verificate citate in 'The Carousel Bible': Followers gained in 2 months = 70,000; Followers in one month = 54,000; Monthly views = 11 million (fonte citata nel doc: 'Everything I know about carousels'); Views in 30 days = 180 million (fonte: Steven Bisi); Revenue from 6 carousel posts = $20,000+ (fonte: 'Instagram Algorithm LOVES this')."
+  },
+  {
+   "uid": "max17-v01-artem::KA-007",
+   "run": "max17-v01-artem",
+   "tipo": "regola",
+   "testo": "Quattro principi psicologici per cui i caroselli funzionano (da 'The Carousel Bible'): 1) Autonomy - l'utente controlla il ritmo di lettura; 2) Commitment Escalation - ogni swipe e' un micro-commitment crescente; 3) Dopamine Loops - l'anticipazione della slide successiva crea reward-seeking; 4) Reduced Cognitive Load - contenuto a bocconi e' piu' facile da processare e ricordare."
+  },
+  {
+   "uid": "max17-v01-artem::KA-008",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Prompt di copy reale usato nel progetto ChatGPT: 'I want to make a carousel about my morning routine and habits. I wake up everyday at 7 am, I have cold shower, I do a bit of stretching, I walk outside for 10 min to get sunlight in my eyes, I journal and pray for 10 min, I dont use my phone in the first hour of the morning because it disrupts the dopamine'."
+  },
+  {
+   "uid": "max17-v01-artem::KA-009",
+   "run": "max17-v01-artem",
+   "tipo": "architettura",
+   "testo": "Formato di output fisso del progetto Copy Writer per ogni richiesta di carosello: intestazione con PLAYBOOK (es. Tip/Value), TIER (es. TOFU growth), SLIDE COUNT (con motivazione, es. 'because it fits the Magic 8 format: hook, why, 6 useful habits, CTA'), HOOK CATEGORY; poi per ogni slide 3 varianti di hook (HOOK A/B/C) + RECOMMENDED con motivazione + FINAL COPY."
+  },
+  {
+   "uid": "max17-v01-artem::KA-010",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Output copy generato per la hook slide (S1 COVER) del carosello Morning Routine: HOOK A 'I protect my first hour', HOOK B 'My dopamine-proof morning' (RECOMMENDED - 'more curiosity-driven, more modern, ties directly to the dopamine angle without sounding preachy'), HOOK C 'Your phone ruins your morning'. FINAL S1 COPY: 'My dopamine-proof morning / No phone. / No scrolling. / No cheap hits. / Just a clean start.'"
+  },
+  {
+   "uid": "max17-v01-artem::KA-011",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Output copy S2 SECOND-CHANCE HOOK (THE PROBLEM) del carosello Morning Routine: 'Most people lose the day before they even get out of bed. / They wake up. / Grab the phone. / Train their brain to chase.' (testo successivo tagliato dal frame, non ricostruibile)."
+  },
+  {
+   "uid": "max17-v01-artem::KA-012",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Output copy S3 FIRST VALUE DROP del carosello Morning Routine: '01 - WAKE UP AT 7AM / Same time. Every day. / Not because I'm perfect. Because your brain loves rhythm more than motivation.' (testo finale confermato anche dal tool Publer, frame-159)."
+  },
+  {
+   "uid": "max17-v01-artem::KA-013",
+   "run": "max17-v01-artem",
+   "tipo": "metodo",
+   "testo": "Ricerca del visual anchor: Artem non cerca ispirazione su Instagram ma su Pinterest, perche' la reference puo' essere letteralmente qualsiasi cosa (copertina di libro, poster) non necessariamente un altro carosello Instagram gia' esistente."
+  },
+  {
+   "uid": "max17-v01-artem::KA-014",
+   "run": "max17-v01-artem",
+   "tipo": "file",
+   "testo": "Reference visiva scelta per il carosello Morning Routine: pin Pinterest 'Fun and Playful Instagram Carousel Canva Design Template', salvato nella bacheca 'Instagram Carousel Design', un carosello di esempio blu/nero/giallo-lime dal titolo 'My mantra before starting work' con slide '01 Start small.', '02 Do your best.', '03 Learn as you go.', '04 That's enough for today.'."
+  },
+  {
+   "uid": "max17-v01-artem::KA-015",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "PROMPT MASTER 1 - 'Slide 1 Prompt' (hook/cover), integrale: 'Create 5 different versions of slide 1 for an Instagram carousel. Use the attached references as visual inspiration only. Borrow from the references: - typography hierarchy - spacing - colour treatment - texture - visual pacing - layout logic. Do not copy: - exact text - exact branding - exact compositions. Carousel topic: [TOPIC]. Slide type: Cover / hook slide. Slide goal: Stop the scroll and make people want to swipe. Text for slide 1: [INSERT TEXT HERE]. Visual direction: [DESCRIBE WHAT SHOULD BE ON THE SLIDE]. Style direction: Make it feel raw, editorial, clear, useful, and highly readable. It should feel designed, but not overly polished or corporate. Format: 4:5 vertical Instagram carousel slide, 1080x1350. Rules: - keep the exact text only - make all text readable - do not add random words - do not copy the references d"
+  },
+  {
+   "uid": "max17-v01-artem::KA-016",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "PROMPT MASTER 2 - 'Slide [X] Prompt' (tutte le slide dalla 2 in poi), integrale: 'Create 3 versions of a slide [x] of my Instagram carousel. Use slide 1 as the visual anchor. Match slide 1's: - typography feel - spacing - colour treatment - texture - raw editorial mood - utility details - visual hierarchy - overall design language. Do not copy the references directly. Do not make this slide feel like a new carousel. It must feel like the same visual family as Slide 1. Carousel topic: [TOPIC]. Slide type: [SLIDE TYPE]. Slide goal: [SLIDE GOAL]. Text on slide: [SLIDE TEXT]. Visual direction: [DESCRIBE WHAT SHOULD BE ON THE SLIDE]. Format: 4:5 vertical Instagram carousel slide, 1080x1350. Rules: - keep the exact text only - make all text readable - do not add random words - keep it visually consistent with slide 1 - one clear idea only."
+  },
+  {
+   "uid": "max17-v01-artem::KA-017",
+   "run": "max17-v01-artem",
+   "tipo": "metodo",
+   "testo": "Per ogni slide vengono generate piu' versioni (5 per la hook slide, 3 per le slide intermedie, 5 per l'ultima slide/CTA) e l'autore sceglie manualmente la migliore ogni volta, scartando le versioni che 'non sembrano giuste'."
+  },
+  {
+   "uid": "max17-v01-artem::KA-018",
+   "run": "max17-v01-artem",
+   "tipo": "numero",
+   "testo": "Tempo dichiarato per l'intero ciclo di prompting del carosello Morning Routine (8 slide): circa 10 minuti, dopo i quali il carosello e' completo e viene scaricato in una cartella locale."
+  },
+  {
+   "uid": "max17-v01-artem::KA-019",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Copy finale slide CTA (ultima slide, slide 8) del carosello Morning Routine: 'THE BEST HABIT / No phone for the first hour. / Comment MORNING and I'll send my full routine.'"
+  },
+  {
+   "uid": "max17-v01-artem::KA-020",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Copy slide 'Journal + Pray' (etichettata 05 in overlay) del carosello Morning Routine: '10 minutes. / Write what's in my head. / Pray for what I can't control. / That's how I stop carrying noise into the rest of the day.'"
+  },
+  {
+   "uid": "max17-v01-artem::KA-021",
+   "run": "max17-v01-artem",
+   "tipo": "comando",
+   "testo": "Strumento gratuito usato per l'anteprima del carosello su Instagram prima di pubblicare: publer.com/tools/instagram-post-preview (Publer, sezione Free Tools > Instagram Post Preview). Permette upload drag-and-drop di piu' immagini e mostra un'anteprima live del post Instagram con i puntini del carosello, senza richiedere login."
+  },
+  {
+   "uid": "max17-v01-artem::KA-022",
+   "run": "max17-v01-artem",
+   "tipo": "metodo",
+   "testo": "Canva Magic Layers: percorso canva.com (homepage) > riga icone in alto (Magic Layers e' la prima icona) > upload dell'immagine generata da ChatGPT > l'immagine viene trasformata in layer editabili singolarmente (testo, forme, elementi grafici spostabili). Usato solo per micro-tweak (spostare un elemento, correggere una parola), non per rigenerare interi design."
+  },
+  {
+   "uid": "max17-v01-artem::KA-023",
+   "run": "max17-v01-artem",
+   "tipo": "regola",
+   "testo": "Regola dichiarata sull'uso di Canva Magic Layers: 'I only use magic layers if the fix is very small. Otherwise, I'll let ChatGPT do all the heavy lifting.' - cioe' Magic Layers e' un correttivo minore, non il metodo principale di produzione."
+  },
+  {
+   "uid": "max17-v01-artem::KA-024",
+   "run": "max17-v01-artem",
+   "tipo": "regola",
+   "testo": "Lo stesso sistema di prompt (visual anchor + prompt stack) funziona anche per infografiche LinkedIn, non solo per caroselli Instagram - cambia solo il topic e il formato, non la logica del metodo."
+  },
+  {
+   "uid": "max17-v01-artem::KA-025",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Prompt dichiarato a voce per ricreare un'infografica LinkedIn di riferimento: 'recreate this infographic' (il testo digitato completo in chat e' piu' lungo e visibile a schermo ma parzialmente sfocato/troppo piccolo per una trascrizione integrale certa)."
+  },
+  {
+   "uid": "max17-v01-artem::KA-026",
+   "run": "max17-v01-artem",
+   "tipo": "file",
+   "testo": "Riferimento infografico LinkedIn copiato: 'How LLM-SEO Finds Your Brand' di Madhav Mistry - flowchart completo (User -> Query -> LLM Search Console -> Query Parsing -> Refined Question/First Answer -> Large Language Model con icone Gemini/Claude -> AI Instructions -> Choose a Path -> Extra Thinking Model LLMs: Claude 4 Sonnet, GPT-4o Reasoning, Gemini 2.5 Pro -> Deeper Reasoning Model -> Retrieval Agents Short-Term/Long-Term -> Retrieval Agent A/B -> Public Web Sources/Search Engines), footer 'Master the Layers -> Train the AI. Structure for retrieval. Publish for visibility.' / 'Structure -> Retrieve -> Cite | Repost it to your Network | Follow Madhav Mistry'."
+  },
+  {
+   "uid": "max17-v01-artem::KA-027",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Infografica LinkedIn generata come risultato ('recreate this infographic'): 'Google Search Changed. SEO Alone Is Not Enough.' - sottotitolo 'What AI Mode means for your website, and how to optimize for GEO', 4 sezioni: 1) OLD SEARCH VS NEW AI SEARCH (Old Search: Search->Click->website->info vs New AI Search: Question->AI answer->chat, 'Biggest shift in search in decades'); 2) WHAT GOOGLE SAYS ('No magic community required'); 3) YOUR GEO PLAYBOOK; 4) WHAT TO IGNORE; box 'Claude GEO Audit Skill' con esempio 'Change Our Services -> What does [X] do?'; CTA finale 'Comment SEARCH and I'll send the skill + full GEO playbook'."
+  },
+  {
+   "uid": "max17-v01-artem::KA-028",
+   "run": "max17-v01-artem",
+   "tipo": "numero",
+   "testo": "Post LinkedIn reale dell'autore (tool stack aziendale, Stripe + Mercury/Revolut Business) mostrato come prova sociale del formato infografico: 1,271 reazioni (incluso 'Ariel Cohen and 1,271 others'), 390 commenti, 28 repost."
+  },
+  {
+   "uid": "max17-v01-artem::KA-029",
+   "run": "max17-v01-artem",
+   "tipo": "numero",
+   "testo": "Il carosello Instagram gia' pubblicato dall'autore ('I AUTOMATED MY CAROUSELS WITH CHATGPT') ha ottenuto, dichiarato a voce, 'nearly 100,000 views'. Dagli Instagram Insights mostrati a schermo si leggono con certezza: Interactions 12,911; Comments 6,003; Shares 1,743 (il numero esatto di Views non e' leggibile con certezza per offuscamento/compressione dello screenshot)."
+  },
+  {
+   "uid": "max17-v01-artem::KA-030",
+   "run": "max17-v01-artem",
+   "tipo": "metodo",
+   "testo": "Confronto diretto mostrato tra un carosello generato con prompt 'one shot' (tutte le 6-7 slide richieste in un solo prompt) e uno generato slide-per-slide con visual anchor, sullo stesso topic/brief: il one-shot risulta 'a bit messy, doesn't have any taste', lo slide-per-slide risulta 'very polished, consistent from slide to slide, looks something like a designer would make'."
+  },
+  {
+   "uid": "max17-v01-artem::KA-031",
+   "run": "max17-v01-artem",
+   "tipo": "prompt",
+   "testo": "Prompt meta usato per generare un carosello dimostrativo sul metodo stesso (chat 'GPT Stage 2 Carousel'): 'can you generate a 5-7 slide carousel about how gpt image 2 can be used to fully automate instagram carousel and generate me those 5-7 slides, think through each slide, this carousel has to go mega viral on each word and visual asset must it earn its place I want this carousel to showcase the full capability of its model and how it can easily be integrated or to automate Instagram Carousels. The last slide must be a CTA like Comment the word image and I'll send you the exact guide to set this up or something along the lines of that. I will send them instructions and a prompt to automate this.'"
+  },
+  {
+   "uid": "max17-v01-artem::KA-032",
+   "run": "max17-v01-artem",
+   "tipo": "architettura",
+   "testo": "Framework a 5 step + prompt stack a 4 elementi, mostrato in una lavagna Excalidraw come esempio di 'metodo' da comunicare al pubblico: workflow 01 Pick an angle, 02 Build the slide outline, 03 Lock the visual style, 04 Generate each slide, 05 Critique and refine; prompt stack 01 STRATEGY PROMPT, 02 STYLE PROMPT, 03 SLIDE PROMPT, 04 CRITIQUE PROMPT."
+  },
+  {
+   "uid": "max17-v01-artem::KA-033",
+   "run": "max17-v01-artem",
+   "tipo": "regola",
+   "testo": "Slogan riassuntivo mostrato sulla lavagna Excalidraw: 'The unlock is not the image. It's the system.' - il punto centrale del video e' il processo ripetibile (prompt stack + visual anchor), non un singolo prompt fortunato."
+  },
+  {
+   "uid": "max17-v01-artem::KA-034",
+   "run": "max17-v01-artem",
+   "tipo": "numero",
+   "testo": "Community privata dell'autore (piattaforma Skool) con weekly call per domande; nome community non perfettamente leggibile a schermo. Post visibili in home: 'Welcome to [community] (con emoji mano)', 'My AI Stack Right Now (Continuously Updated)', 'System #002: Free Local Way to Transcribe Reels, TikToks and YT', 'Discovery #001: How to Use ChatGPT Image 2 to Automate Instagram [...]'."
+  },
+  {
+   "uid": "max17-v01-artem::KA-035",
+   "run": "max17-v01-artem",
+   "tipo": "architettura",
+   "testo": "Identita' dell'autore confermata via LinkedIn mostrato a schermo: Artem Novitckii, Co-founder @ Aha!, 'Teaching how to build and scale AI Systems', Auckland (Nuova Zelanda)."
+  },
+  {
+   "uid": "max17-v01-artem::KA-036",
+   "run": "max17-v01-artem",
+   "tipo": "metodo",
+   "testo": "Prima di generare qualunque immagine, la copy deve essere definita per intero (numero di slide + testo di ogni slide) perche' e' il passo che la maggioranza delle persone salta, ma non va saltato: 'it doesn't matter how pretty your carousel is [if the copy is weak]'."
+  },
+  {
+   "uid": "max17-v01-artem::KA-037",
+   "run": "max17-v01-artem",
+   "tipo": "regola",
+   "testo": "Ogni volta che ChatGPT non produce un risultato soddisfacente per una slide, la tecnica dichiarata e' semplicemente richiedere di nuovo finche' non si ottiene una versione soddisfacente, perche' quella specifica slide (la hook) e' 'the most important step' e definisce il mood dell'intero carosello."
+  },
+  {
+   "uid": "max17-v01-artem::KA-038",
+   "run": "max17-v01-artem",
+   "tipo": "comando",
+   "testo": "Struttura cartelle: le 8 slide generate vengono scaricate in una singola cartella locale nominata dal topic (es. file slide-1.png ... slide-8.png visti nel file picker di Canva), poi caricate tutte insieme sia in Publer (per l'anteprima) sia in Canva (per eventuali micro-tweak con Magic Layers)."
+  },
+  {
+   "uid": "max17-v01-artem::KA-039",
+   "run": "max17-v01-artem",
+   "tipo": "numero",
+   "testo": "Ripartizione del tempo dichiarata per il metodo completo: copy 40% del tempo, generazione hook slide/visual anchor 50% del tempo (la fase piu' importante), costruzione slide successive 10% del tempo, piu' un passo opzionale extra di rifinitura con Canva Magic Layers."
+  },
+  {
+   "uid": "max17-v01-artem::KA-040",
+   "run": "max17-v01-artem",
+   "tipo": "regola",
+   "testo": "Format tecnico fisso richiesto in entrambi i prompt master: '4:5 vertical Instagram carousel slide, 1080x1350' - stesso formato standard usato anche dalla skill DE carousel-empire (1080x1350px, 4:5 IG)."
+  },
+  {
+   "uid": "max17-v15::KA-001",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Impianto architetturale del sistema AI CFO in tre fasi nettamente separate: 1) Estrazione - solo dati grezzi da QuickBooks salvati su disco, nessun calcolo; 2) Calcolo deterministico - un motore Python (non l'AI) fa tutte le somme, divisioni, punteggi; 3) Interpretazione - solo dopo, un agente AI (skill ai-cfo) legge i numeri gia' calcolati e li trasforma in report, verificato da uno script anti-invenzione che blocca la consegna se un numero non risale a un dato calcolato davvero."
+  },
+  {
+   "uid": "max17-v15::KA-002",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Principio dichiarato piu' volte nel video: 'il codice fa i conti, l'AI li interpreta'. Motivazione tecnica esplicita: il codice non consuma token per fare aritmetica (sono formule matematiche), e passa da 'stocasticita'' a 'determinismo' - un LLM indovina il token successivo con una probabilita' di sbagliare diversa da zero, mentre il codice fa sempre la stessa identica operazione."
+  },
+  {
+   "uid": "max17-v15::KA-003",
+   "run": "max17-v15",
+   "tipo": "numero",
+   "testo": "Demo del report finale (CFO Review, azienda fittizia Vento Logistica S.r.l. - Verona, dati al 22 agosto 2026, fonte Command Center/QuickBooks Online, periodo 12 mesi mobili): 5 CFO Alert con badge di gravita'. CRITICO: clienti pagano 93 giorni in media (76 un anno fa), 18 giorni oltre soglia 75 valgono 211.635 euro fermi nei crediti. CRITICO: esposizione 132.727 euro su cliente NordEst Commerce contro soglia 60.000, 19 fatture aperte di cui 43.863 gia' scadute. ALTO: 31% dei crediti gia' scaduto (328.028 su 1.074.203 aperti, limite 25%). ALTO: altre due esposizioni sopra soglia (ValDistribuzione 80.984, GardaMetal 61.136). MEDIO: NordEst Commerce vale il 12% del fatturato, la sua perdita toglierebbe 229.353 euro di margine."
+  },
+  {
+   "uid": "max17-v15::KA-004",
+   "run": "max17-v15",
+   "tipo": "numero",
+   "testo": "Executive summary del report demo: fatturato 12 mesi 4.198.187 euro (+17,4%), EBITDA +41,3% a 442.393 euro, cassa disponibile 205.053 euro (3,9 mesi di costi fissi). Margine mensile rotto a gennaio: da 26,84% (dicembre) a 20,61% (gennaio), mai piu' tornato sopra 25%, ultimo mese pieno al 22,68%. Media 12 mesi 25,53% nasconde il problema perche' contiene ancora il buon secondo semestre 2025. Divario fra 22,68% e la media vale 119.648 euro/anno. Giorni di incasso passati da 76,5 a 93,4, immobilizzando altri 123.070 euro. Frase di sintesi: 'Non e' un problema commerciale: vendiamo di piu', al prezzo sbagliato, e incassiamo piu' tardi.'"
+  },
+  {
+   "uid": "max17-v15::KA-005",
+   "run": "max17-v15",
+   "tipo": "metodo",
+   "testo": "Prima di costruire qualsiasi cosa, viene mostrata la fonte dati reale: QuickBooks Online Sandbox con PNL, spese pagate/da pagare, Accounting, Receipts, transazioni bancarie, e sezione Sales/Get Paid con le fatture clienti (importo dovuto, importo mandato, data di scadenza attesa, stato attivita'). Dichiarato esplicitamente come 'source of truth': qualsiasi cosa venga fatta con l'AI deve rispecchiare esattamente questi dati."
+  },
+  {
+   "uid": "max17-v15::KA-006",
+   "run": "max17-v15",
+   "tipo": "comando",
+   "testo": "Registrazione app QuickBooks per l'accesso API: developer.intuit.com/dashboard, sezione 'My Apps Dashboard', creazione nuova app con permessi Accounting, ottenimento di Client ID e Client Secret. Passaggio critico dichiarato: prendere il redirect URI dalla sezione Settings dell'app e impostarlo a http://localhost:8000/callback, altrimenti QuickBooks non risponde alla richiesta OAuth."
+  },
+  {
+   "uid": "max17-v15::KA-007",
+   "run": "max17-v15",
+   "tipo": "architettura",
+   "testo": "Ambiente di sviluppo usato: non la CLI 'Claude Code' da terminale ma la app desktop Claude (interfaccia scura) con una tab 'Code' dedicata al coding agentico dentro un progetto locale chiamato 'AI CFO YouTube'. La home dell'app mostra statistiche di utilizzo personale: 700 sessioni, 98.076 messaggi, 64,2M token totali, 41 giorni attivi, streak corrente 6 giorni, streak piu' lungo 24 giorni, ora di picco 9:00, modello preferito Opus 5."
+  },
+  {
+   "uid": "max17-v15::KA-008",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Motivazione dichiarata per creare uno strato intermedio comune fra i dati e i calcoli: 'I dati finanziari arriveranno da fonti diverse nel tempo. Oggi un gestionale via API, domani un export in foglio di calcolo, dopodomani un altro gestionale. Le metriche e i prompt devono cambiare quando cambia la fonte. Serve quindi uno strato intermedio che tutte le fonti attraversano e da cui esce sempre la stessa forma.'"
+  },
+  {
+   "uid": "max17-v15::KA-009",
+   "run": "max17-v15",
+   "tipo": "prompt",
+   "testo": "Prompt 1 (dal documento Notion 'AI CFO - tutti i prompt'): 'Costruisci il modello dati di un sistema di analisi finanziaria in Python usando la libreria standard' (nessuna dipendenza esterna). Contesto nel prompt: dati finanziari da fonti diverse nel tempo, serve strato intermedio comune. Richiede: quattro dataclass 'non negotiable' (voce=stringa, descrizione, importo=float, sempre nello stesso formato), funzioni di collegamento, e due funzioni obbligatorie che devono restituire la contabilita': carica_da_csv e carica_da_quickbooks."
+  },
+  {
+   "uid": "max17-v15::KA-010",
+   "run": "max17-v15",
+   "tipo": "prompt",
+   "testo": "Prompt 2 - 'Collegare QuickBooks e scaricare i dati' (Notion): tre parti, autenticazione OAuth 2.0, classe client Python per le chiamate API, ed estrazione pura senza calcoli. Frase chiave: 'Al momento non vogliamo ancora fare dei conti perche' vogliamo tenere le due fasi abbastanza distinte, altrimenti rischiamo di andare a far allucinare il nostro modello.' Cose da estrarre: piano dei conti, clienti, fornitori, articoli, fatture di vendita, incassi."
+  },
+  {
+   "uid": "max17-v15::KA-011",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Motivazione per salvare il dato grezzo su disco invece di ricalcolare sempre dall'API: 'Avere il dato grezzo sul disco permette di rifare i conti senza chiamare le API... se un numero non torna, apri il file grezzo.' Regola generalizzata per la piccola-media impresa: 'i dati non sono poi cosi' tanti da non poter essere contenuti dentro al PC' (a differenza di aziende con software SQL e volumi enormi, dove serve tutto in cloud). Questo e' dichiarato un trucco per efficientare i token."
+  },
+  {
+   "uid": "max17-v15::KA-012",
+   "run": "max17-v15",
+   "tipo": "comando",
+   "testo": "Tre comandi terminale lanciati in sequenza dal terminale integrato nell'app Claude per collegare QuickBooks: (1) apre il consenso OAuth nel browser e salva il token; (2) verifica stampando il nome dell'azienda collegata; (3) scarica i file grezzi. Output confermato: 'tutto collegato', poi nome azienda confermato, poi 'estrazione completata'."
+  },
+  {
+   "uid": "max17-v15::KA-013",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Cinque input finanziari rilevanti che non esistono nel gestionale (QuickBooks) e vanno aggiunti a mano in file separati: sconto contrattuale concesso a uno specifico cliente (e' nel contratto, non nel gestionale), margine di listino per servizio, budget dell'anno redatto dalla leadership in un foglio a parte, fido bancario concesso per cliente (sta nella lettera della banca)."
+  },
+  {
+   "uid": "max17-v15::KA-014",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Dichiarazione di postura sull'AI nel lavoro finanziario: 'Non stiamo parlando di rimuovere persone o rimuovere i CFO, stiamo parlando di strumenti che, se vengono utilizzati correttamente, possono aumentare drasticamente l'impatto che un determinato CFO, un determinato team di analisi finanziaria puo' avere all'interno della nostra azienda.' Ripetuta a fine video: 'parliamo qui di AI enhancement e non di rimpiazzare lavori vari', con la decisione finale sempre affidata a un umano."
+  },
+  {
+   "uid": "max17-v15::KA-015",
+   "run": "max17-v15",
+   "tipo": "prompt",
+   "testo": "Prompt 3 - 'Il motore delle metriche' (Notion, FASE 2): prompt lungo che richiede le funzioni del motore di calcolo deterministico - conto economico, conto economico per periodo, scadenziario/documenti scaduti, punteggio di rischio clienti, redditivita' per servizio, fra le altre. Include un vincolo esplicito di riproducibilita' bit-per-bit: 'a parita' di dati due esecuzioni devono eseguire un output identico riga per riga, dove ordini per punteggio aggiungi un criterio di parita' (nome, ecc.)'."
+  },
+  {
+   "uid": "max17-v15::KA-016",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Il test di determinismo ha trovato un bug reale (documentato per iscritto nel Notion, non solo dichiarato a voce): confrontando 12 mesi di budget contro 8 mesi di consuntivo usciva uno scostamento del -40,8% (falso, un calendario non un risultato). Corretto usando solo i mesi in comune: budget anno intero 4.431.983, budget periodo confrontabile (8 mesi) 2.711.483, consuntivo periodo 2.625.149, scostamento corretto -86.334 euro (-3,2%). Seconda correzione: agosto 2026 tagliato al giorno 20, introdotti i flag mese_parziale e consuntivo_al. Terza correzione: doppio arrotondamento di una percentuale sul fatturato in punti diversi del codice, corretto arrotondando una volta sola. Determinismo confermato con la stessa impronta SHA-256 su tutte e 13 le funzioni, prima e dopo le modifiche."
+  },
+  {
+   "uid": "max17-v15::KA-017",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Due decisioni di progetto dichiarate esplicitamente nel documento Notion sul motore delle metriche: il punteggio di rischio e' parziale e lo dichiara (il fido non e' compilato, quindi la componente esposizione - 30 punti su 100 - non e' calcolabile; il punteggio si normalizza sul massimo effettivamente calcolabile invece di far sembrare tutti a basso rischio); le percentuali di recupero attese sono scritte in una variabile RECUPERO_ATTESO 'in cima al modulo, non dentro le formule' - motivazione: 'Un numero scritto dentro una formula diventa invisibile: chi legge il risultato non ha modo di sapere che una parte di quel risultato e' una scelta e non una misura.'"
+  },
+  {
+   "uid": "max17-v15::KA-018",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Limite dichiarato della funzione redditivita_servizi(): restituisce margini fra 25,2% e 26,0% su tutti e otto i servizi perche', senza margini di listino dichiarati per servizio, il ricarico viene distribuito in proporzione ai ricavi - il codice stesso porta un commento 'NON DICE' a chiarirlo esplicitamente nel codice/documentazione."
+  },
+  {
+   "uid": "max17-v15::KA-019",
+   "run": "max17-v15",
+   "tipo": "metodo",
+   "testo": "Le soglie di rischio/allerta dipendono dal settore, non sono universali: un'azienda di lusso dovrebbe avere un target di profitto di almeno il 30%, un'azienda di trasporto ha margini piu' bassi per via dei costi operativi (vicino al 10%), una farmacia pura sta fra il 5-10% ma con reparto cosmesi puo' arrivare al 25-30%. Ogni azienda deve definire le proprie soglie in base al proprio settore."
+  },
+  {
+   "uid": "max17-v15::KA-020",
+   "run": "max17-v15",
+   "tipo": "prompt",
+   "testo": "Prompt 4 - 'Allerte e Command Center' (Notion): 'Cosa fai: insegni al motore quando un numero e' un problema, e impacchetti tutte le tabelle in un file solo che l'agente leggera'.' 'Perche': un alert senza soglia scritta non e' un alert, e' un'opinione. Qui le soglie diventano un elenco visibile che chiunque puo' discutere. E' anche il confine del sistema: da questo punto in poi non si calcola piu' niente, si interpreta soltanto.' Chiede di aggiungere al motore la funzione alert(contabilita) e scrivere costruisci_command_center.py."
+  },
+  {
+   "uid": "max17-v15::KA-021",
+   "run": "max17-v15",
+   "tipo": "numero",
+   "testo": "Dieci soglie di allerta dichiarate per intero nel prompt 4 (Notion, dizionario in cima al modulo con un commento per ognuna): concentrazione su singolo cliente 20% (attenzione gia' dal 10%); esposizione su singolo cliente 60.000 EUR; quota di crediti gia' scaduti 25%; crediti oltre 90 giorni 12% del totale; giorni medi di incasso 75; ciclo di cassa 60 giorni; calo del margine lordo anno su anno 1,5 punti; EBITDA minimo 6% dei ricavi; copertura dei costi fissi 3 mesi; scostamento dal budget 10%."
+  },
+  {
+   "uid": "max17-v15::KA-022",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Ogni alert deve avere sei campi obbligatori: gravita' (critico/alto/medio), titolo (una frase che si legge da sola), valore (il numero misurato, col confronto), soglia (il limite superato), impatto (cosa significa in euro o in giorni, quantificato), azione (cosa si fa, in modo verificabile)."
+  },
+  {
+   "uid": "max17-v15::KA-023",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Beggiato segnala una tensione di coerenza al modello: aveva scritto per metriche.py 'nessun aggettivo, nessuna raccomandazione' ma il campo azione degli alert ora contiene frasi come 'vanno chiamati i dieci clienti con lo scaduto piu' alto entro questa settimana'. Il modello aggiorna la docstring del modulo per dichiarare esplicitamente che un alert scatta solo quando un numero misurato supera una soglia scritta, e che il testo dell'alert e' la soglia 'vestita' col numero, non un'opinione libera."
+  },
+  {
+   "uid": "max17-v15::KA-024",
+   "run": "max17-v15",
+   "tipo": "architettura",
+   "testo": "FASE 3. L'agente (Notion): 'Il motore adesso produce numeri. Manca chi li legge, e servono due teste diverse, non una.' Due skill gia' pronte, scaricabili dalla community privata 'Avanguardia Plus' su Skool (skool.com/avanguardia-plus, lezione 'AI CFO'), non costruite da zero nel video ma scaricate come .zip e installate."
+  },
+  {
+   "uid": "max17-v15::KA-025",
+   "run": "max17-v15",
+   "tipo": "architettura",
+   "testo": "Skill 'analista-finanziario': 'estrae da QuickBooks, normalizza e calcola. Produce le dodici tabelle del Command Center e si ferma li'. Nessun aggettivo, nessuna raccomandazione: i giorni per farsi pagare sono 93 e' il suo lavoro, i giorni per farsi pagare sono preoccupanti no.' Skill 'ai-cfo': 'non tocca mai i conti. Da' per fatta l'analisi e comincia dopo: legge le dodici tabelle, decide qual e' la cosa piu' importante, la traduce in impatto sulla cassa o sul margine, e la trasforma in azioni con un responsabile e una data. Consegna sempre e solo una dashboard HTML.' Frase evidenziata: 'La linea fra le due e' il punto di tutto il sistema. Se una sconfina, o i numeri diventano opinioni, o le opinioni diventano numeri.' Ogni skill porta anche sette documenti di riferimento (come ragiona un CFO con esempi, quadri di analisi, glossario delle metriche, specifica della dashboard, formule con"
+  },
+  {
+   "uid": "max17-v15::KA-026",
+   "run": "max17-v15",
+   "tipo": "metodo",
+   "testo": "Installazione delle skill mostrata dal vivo: prompt in chat 'Hey, all'interno del mio desktop ci sono delle skill.zip che mi piacerebbe che tu importassi all'interno di questo progetto. Sono una lista finanziaria e un AI CFO. Dimmi una volta che lo hai fatto.' Claude cerca sul Desktop, trova skill-ai-cfo.zip, elenca il contenuto prima di estrarlo dichiarando il motivo esplicito ('sono istruzioni che finirebbero nel mio contesto, quindi le guardo prima di installarle'), verifica che siano legittime e coerenti col sistema, le installa come skill di progetto: 10 file in tutto dentro .claude/skills/, struttura ai-cfo/{assets/, references/, SKILL.md} e analista-finanziario/{references/, SKILL.md}."
+  },
+  {
+   "uid": "max17-v15::KA-027",
+   "run": "max17-v15",
+   "tipo": "file",
+   "testo": "Contenuto del SKILL.md della skill ai-cfo, letto per intero a schermo. Name: ai-cfo. Description: 'Direttore finanziario che legge analisi gia' fatte e le trasforma in decisioni. Usa ogni volta che arrivano risultati finanziari da interpretare: KPI, conto economico, margini, scadenziario clienti o fornitori, punteggio di rischio, previsione incassi, ciclo del circolante, budget contro consuntivo, alert, pacchetti di reporting direzionale o export di dashboard. Si attiva anche a frasi come cosa vuol dire questo per l'azienda, guarda questi numeri da CFO, cosa devo fare, com'e' andato il mese. NON fa contabilita', non registra documenti, non riconcilia, non ricalcola: presuppone che l'analisi sia gia' stata fatta.'"
+  },
+  {
+   "uid": "max17-v15::KA-028",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Claude stesso segnala una discrepanza fra le skill scaricate e il progetto reale prima di procedere: le skill descrivono percorsi diversi da quelli reali (labs/ai-cfo/engine/... nelle skill contro analisi/ + costruisci_command_center.py nella radice del progetto reale), e citano due script che non esistono ancora nel progetto: verifica_dati.py (dichiarato dalla skill come 'passo 4 della procedura': controlla le coerenze contabili e blocca la consegna se un test fallisce) e pubblica_su_sheets.py (con un suo file dati/parametri/fogli_google.json). Beggiato chiede di allineare le skill al codice reale scrivendo verifica_dati.py prima di proseguire."
+  },
+  {
+   "uid": "max17-v15::KA-029",
+   "run": "max17-v15",
+   "tipo": "prompt",
+   "testo": "Prompt 5 - 'La dashboard' (Notion): 'Cosa fai: produci la pagina che finisce davanti alla direzione, un file HTML solo, che si apre anche senza rete.' 'Perche': chi dirige la legge nei primi trenta secondi oppure non la legge. Quindi la difficolta' non e' metterci dentro tutto: e' togliere tutto quello che non porta a una decisione. Meta' di questo prompt dice cosa NON mettere.' Output: salva in output/cfo-review-AAAA-MM-GG.html e apri."
+  },
+  {
+   "uid": "max17-v15::KA-030",
+   "run": "max17-v15",
+   "tipo": "prompt",
+   "testo": "Prompt 6 - 'Il controllo antinvenzione', dichiarato a voce come 'il prompt piu' importante di tutti - e' quello che ti permette di mettere la dashboard davanti a qualcuno senza doverla accompagnare con dei distinguo.' Chiede di scrivere verifica_dashboard.py, che controlla che ogni numero scritto nella dashboard esista davvero nei dati, e insegna a risalire a un numero quando c'e' un dubbio."
+  },
+  {
+   "uid": "max17-v15::KA-031",
+   "run": "max17-v15",
+   "tipo": "metodo",
+   "testo": "PARTE A del prompt anti-invenzione - 'il cancello automatico', 6 passi dichiarati per intero: (1) estrai ogni numero dal testo dell'HTML, ignorando CSS, SVG e attributi (coordinate e larghezze, non dati); (2) costruisci l'insieme dei valori noti scavando ricorsivamente in command_center.json a qualunque profondita'; (3) espandi l'insieme con le combinazioni elementari che un CFO fa a mente (valore x100 e /100 per percentuali, valore assoluto, arrotondamenti, migliaia, giorni x fatturato giornaliero, punti percentuali x ricavi, differenze e somme fra coppie di KPI); (4) ignora i numeri che compaiono per forza e non sono dati (anni, giorni del mese, percentuali di sezione, numeri delle barre); (5) confronta con tolleranza relativa dello 0,6%; (6) elenca quello che non trova, va guardato a mano, uno per uno, e o si giustifica o si corregge. Esce con codice 1 se resta anche un solo numero se"
+  },
+  {
+   "uid": "max17-v15::KA-032",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Motivazione esplicita per il doppio cancello (codice deterministico + controllo anti-invenzione separato): 'Perche' dobbiamo mettere un altro cancello di verifica? Perche' c'e' l'interpretazione del dato. Non vogliamo che nella parte in cui ci siamo distaccati dal codice deterministico allora abbiamo cominciato poi ad introdurre degli errori.'"
+  },
+  {
+   "uid": "max17-v15::KA-033",
+   "run": "max17-v15",
+   "tipo": "numero",
+   "testo": "Tabella margine per linea di servizio del risultato finale (8 righe, ricavi/quota/margine): Trasporto nazionale 2.014.763 euro/25,9%/25,18%; Groupage nazionale 1.695.771/21,8%/25,32%; Trasporto internazionale UE 1.535.869/19,8%/25,17%; Deposito e magazzino 871.923/11,2%/25,64%; Handling, picking, imballo 633.863/8,2%/25,33%; Pratiche doganali 499.293/6,4%/25,99%; Distribuzione last mile 336.964/4,3%/25,22%; Consulenza logistica 187.290/2,4%/25,44%. Nota nella pagina: margini tutti fra 25,17% e 25,99% perche' il costo del venduto e' ripartito in proporzione ai ricavi, non usabile per decidere finche' i margini di listino non sono dichiarati."
+  },
+  {
+   "uid": "max17-v15::KA-034",
+   "run": "max17-v15",
+   "tipo": "numero",
+   "testo": "Sezione 5-CREDITI del risultato finale: 'Un milione fuori, un terzo gia' in ritardo'. Scadenziario crediti 1.074.203 euro aperti totali a barre per fascia di ritardo. Tabella 'Da chiamare per primi' con 6 clienti sintetici: TartaroComponenti 11.708 euro/625gg ('ferma dal 2024, qui si decide se svalutare'); CastelDesign 8.400/494gg; BentivoglioOfficine 8.871/311gg; un cliente a 16.809/49gg ('importo piu' alto della lista, ritardo ancora recuperabile'); NordEst Commerce 13.782/68gg ('il cliente piu' grande, la telefonata la fa la direzione'); GardaTrade 4.101/441gg ('importo piccolo ma vecchissimo: chiudere la posizione')."
+  },
+  {
+   "uid": "max17-v15::KA-035",
+   "run": "max17-v15",
+   "tipo": "numero",
+   "testo": "Sezione 4-MARGINE del risultato finale: '4 - MARGINE, Il margine si e' rotto a gennaio, e la media annuale lo nasconde' - grafico mensile del margine lordo con marcatore 'rottura gennaio', media pre-rottura 26,7% vs media post-rottura 22,8%."
+  },
+  {
+   "uid": "max17-v15::KA-036",
+   "run": "max17-v15",
+   "tipo": "architettura",
+   "testo": "La demo del report mostrata all'inizio del video (1:16, frame-020) e il risultato finale ricostruito in diretta e mostrato a fine video (32:04-32:36, frame-484/488/490) hanno numeri identici cifra per cifra (93 giorni, NordEst 132.727 euro, 31% crediti, fatturato 4.198.187 euro, EBITDA 41,3%/442.393 euro...): non e' un mockup diverso mostrato per hype, e' lo stesso identico file HTML finale mostrato in anteprima e poi ricostruito davvero nel corso del video."
+  },
+  {
+   "uid": "max17-v15::KA-037",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Nel prompt 3 e nel prompt di aggiornamento parametri, il flusso non e' un prompt unico eseguito ciecamente: Claude fa domande di chiarimento e Beggiato risponde a botta e risposta (es. 'senza questo margine i margini per servizio escono tutti uguali. Come procediamo? te li do per servizio, unico margine per tutti, lascia vuoto' - risposta: darli per i principali)."
+  },
+  {
+   "uid": "max17-v15::KA-038",
+   "run": "max17-v15",
+   "tipo": "numero",
+   "testo": "Risultato dichiarato dopo l'integrazione dei parametri esterni sui clienti principali: 'i primi 10 valgono il 47% del fatturato' e il sistema comincia a 'elaborare qualche pattern all'interno del DB'."
+  },
+  {
+   "uid": "max17-v15::KA-039",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Raccomandazione esplicita sull'uso del contesto della chat: quando si supera il 25-20% del contesto occupato, bisogna usare il comando /compact per compattare il contesto e permettere all'AI di agire in modo piu' efficiente - dichiarata come best practice anche se non applicata in diretta durante la registrazione."
+  },
+  {
+   "uid": "max17-v15::KA-040",
+   "run": "max17-v15",
+   "tipo": "regola",
+   "testo": "Comando terminale eseguito per rigenerare il command center dai dati QuickBooks: cd \"/Users/giovannibeggiato/Desktop/AI CFO YouTube\" && python3 costruisci_command_center.py --da quickbooks --al 2026-08-22 - conferma che il motore di calcolo e' uno script Python invocabile da riga di comando, separato dall'agente conversazionale."
+  },
+  {
+   "uid": "max17-v14::KA-001",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Tesi centrale del video: 'Great storytelling is making people feel the idea, not just understand it.' Esistono due tipi di speaker: quelli che ricevono applausi ma vengono dimenticati appena il pubblico esce dalla stanza, e quelli che commuovono il pubblico fino alle lacrime e vengono ricordati anni dopo. La differenza sta in un framework a 5 passi."
+  },
+  {
+   "uid": "max17-v14::KA-002",
+   "run": "max17-v14",
+   "tipo": "architettura",
+   "testo": "Framework a 5 passi HSTSS, mnemonica ufficiale 'Heroes Start Their Stories Somewhere' e versione 'edgy' per gli studenti 'Holy Sh*t That's So Smart'. Mappa completa: Heroes/Holy = Hook, Start/Sh*t = Stake(s), Their/That's = Turn, Stories/So = Scene, Somewhere/Smart = Shatter."
+  },
+  {
+   "uid": "max17-v14::KA-003",
+   "run": "max17-v14",
+   "tipo": "metodo",
+   "testo": "Passo 1 - HOOK: definizione 'The hook is how you capture the person's attention and leave them hanging.' Tecnica chiave: 'idea collision', prendere due idee fondamentalmente diverse (es. leader religioso + shot di vodka) e scontrarle nella stessa frase per creare un hook potente."
+  },
+  {
+   "uid": "max17-v14::KA-004",
+   "run": "max17-v14",
+   "tipo": "prompt",
+   "testo": "Esempio integrale di hook raccontato dall'autore: nel 2009 a Calgary, prima di salire sul palco con il Dalai Lama, entra nel bar dell'hotel e ordina due shot di vodka per il nervosismo. Versione accorciata per i social (primi 3 secondi): 'I can't believe the Dalai Lama made me kick back shots of vodka.'"
+  },
+  {
+   "uid": "max17-v14::KA-005",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Citazione di Jay Shetty su hook per i social: 'The first 3 seconds, hook them. And then all the way up to 11th second, go deeper in the hook. That's when you start the story.' Applicazione: sui social l'hook sta nei primi 3 secondi, poi altri 8 secondi di contesto prima di proseguire con la storia."
+  },
+  {
+   "uid": "max17-v14::KA-006",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Il framework HSTSS si applica anche a Stage Talk e Presentation, non solo a contenuti social: con un pubblico presente in sala si ha piu' tempo per stabilire l'hook rispetto ai 3 secondi dei social."
+  },
+  {
+   "uid": "max17-v14::KA-007",
+   "run": "max17-v14",
+   "tipo": "prompt",
+   "testo": "Secondo esempio di hook: intervista dal vivo a Londra con il miliardario Naveen Jain, che ha detto 'I don't buy that I need to spend all my free time with my kids... I make my kids see me working.' Idea collision: rompe l'aspettativa sociale che un genitore presente debba essere sempre focalizzato sui figli invece che sul lavoro."
+  },
+  {
+   "uid": "max17-v14::KA-008",
+   "run": "max17-v14",
+   "tipo": "architettura",
+   "testo": "Correzione a trascrizione automatica: il figlio di Naveen Jain citato come 'uno dei piu' giovani miliardari' e' Ankur Jain, Founder and CEO of Bilt Rewards (lower-third reale mostrato a video), non 'Uncle Jane' come trascritto dall'ASR automatico di YouTube."
+  },
+  {
+   "uid": "max17-v14::KA-009",
+   "run": "max17-v14",
+   "tipo": "metodo",
+   "testo": "Passo 2 - STAKES: definizione 'In a movie, the stakes are the opportunity where the hero might fail.' Esempi citati: Star Wars (Luke Skywalker perde la mano) e Avengers Infinity War (Thanos fa lo schiocco e sparisce meta' della popolazione, mostrato con fotogramma reale del film)."
+  },
+  {
+   "uid": "max17-v14::KA-010",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Le stakes portano umilta' e rendono lo speaker 'relatable': collegano il pubblico attraverso la vulnerabilita', non solo l'ammirazione. Titolo overlay: 'The Power of Stakes - Brings humility.'"
+  },
+  {
+   "uid": "max17-v14::KA-011",
+   "run": "max17-v14",
+   "tipo": "prompt",
+   "testo": "Storia integrale delle stakes ('The Story of the Couch'): laureato in informatica all'Universita' del Michigan nel 1999, trasferito in Silicon Valley con un sogno di startup software, presta 30.000 dollari dal padre. Lo scoppio della bolla dot-com lo lascia senza soldi: perde tutto, non trova investitori, brucia i 30.000 dollari, finisce quasi senza casa."
+  },
+  {
+   "uid": "max17-v14::KA-012",
+   "run": "max17-v14",
+   "tipo": "prompt",
+   "testo": "Dettaglio della stake, con descrizione sensoriale: vive per mesi su un divano a due posti (non tre) affittato per 200 dollari al mese da uno studente di Berkeley, gambe che penzolano fuori dal divano troppo corto, divano che puzzava con una macchia gialla mai identificata, dorme con un asciugamano sopra per non toccarla."
+  },
+  {
+   "uid": "max17-v14::KA-013",
+   "run": "max17-v14",
+   "tipo": "architettura",
+   "testo": "La storia del divano e' illustrata con una scena interamente ricostruita/drammatizzata (non talking-head ne' grafica testuale): divano marrone/beige con macchia gialla visibile sul cuscino centrale, asciugamano grigio piegato accanto, cesto di vestiti e due borse impilate, armadio a rotelle con vestiti appesi, poster 'THE UNIVERSITY OF BERKELEY - Adventure Starts Here' sulla parete."
+  },
+  {
+   "uid": "max17-v14::KA-014",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Regola sulle stakes: 'All of you have some story from your past, some moment of misery that you can share that might help other people navigate their pain.' Non bisogna inventare le stakes: devono essere reali."
+  },
+  {
+   "uid": "max17-v14::KA-015",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "'Rules of the Stakes': non descrivere solo la situazione, descrivere il sentimento. Bullet list overlay: 'Describe the feeling - Describe the shame - Describe the guilt - Describe the anger.' Applicazione: Vishen approfondisce la vergogna di aver mentito ai genitori sul fatto di avere un vero appartamento, quando in realta' dormiva sul divano."
+  },
+  {
+   "uid": "max17-v14::KA-016",
+   "run": "max17-v14",
+   "tipo": "metodo",
+   "testo": "Passo 3 - TURN: definizione 'The turn is the turn that changed the story.' Spesso nel turn e' contenuta una lezione ('Often in the turn is a lesson that is baked in')."
+  },
+  {
+   "uid": "max17-v14::KA-017",
+   "run": "max17-v14",
+   "tipo": "prompt",
+   "testo": "Continuazione della storia (il turn): dopo il fondo del barile, trova lavoro in un'azienda della Silicon Valley senza stipendio base, solo commissioni al 20% sulle vendite - un mese intero a zero vendite. Nel 2001 digita su Google 'Google, why does my life suck so bad?', 'Google, why am I so pathetic?', 'Google, why am I such a loser?'."
+  },
+  {
+   "uid": "max17-v14::KA-018",
+   "run": "max17-v14",
+   "tipo": "architettura",
+   "testo": "Il turn e' illustrato con uno screenshot vintage accurato del motore di ricerca Google dell'anno 2000 (logo Google d'epoca, box di ricerca con testo 'Why does my l...', link 'Google Web Directory', copyright '2000 Google'), effetto nostalgico coerente con l'ambientazione temporale della storia (2001)."
+  },
+  {
+   "uid": "max17-v14::KA-019",
+   "run": "max17-v14",
+   "tipo": "file",
+   "testo": "Il turn porta alla scoperta del corso di meditazione Silva Ultramind. Uno screenshot reale e attuale dei risultati di ricerca Google per 'Silva Method' mostra come secondo risultato la pagina mindvalley.com/ultramind/lesson-1, titolo 'Silva Ultramind System Free Meditation Class', sottotitolo 'Master dynamic meditation with this online meditation class by Vishen Lakhiani' - conferma che il prodotto e' tuttora venduto da Mindvalley."
+  },
+  {
+   "uid": "max17-v14::KA-020",
+   "run": "max17-v14",
+   "tipo": "metodo",
+   "testo": "Tecnica di intuizione appresa dal corso Silva: usare le pagine gialle (San Francisco Public Library) e una tecnica meditativa per 'sentire' quali nomi chiamare mentre si scorre l'elenco telefonico con un dito, raddoppiando le vendite da un giorno all'altro e ottenendo 4 promozioni in 3 mesi fino a VP of Sales."
+  },
+  {
+   "uid": "max17-v14::KA-021",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Citazioni di autorita' a supporto dell'intuizione come strumento decisionale: Steve Jobs nel discorso di laurea a Stanford ('have the courage to follow your heart and intuition'); Prof. John Mihalasky, autore del libro 'Executive ESP', ha condotto uno studio secondo cui i CEO e i founder che usano l'intuizione generano piu' fatturato senza saperlo."
+  },
+  {
+   "uid": "max17-v14::KA-022",
+   "run": "max17-v14",
+   "tipo": "metodo",
+   "testo": "Passo 4 - SCENE: definizione 'The scene is where you make something visualizable.' Regola: non descrivere solo la situazione, dipingere il quadro con dettagli sensoriali (tempo atmosferico, tappeto, salotto) che sembrano irrilevanti ma trasportano l'audience nel momento. Applicato raccontando la scena del capo russo che batte la mano sul tavolo sorpreso dai risultati di vendita."
+  },
+  {
+   "uid": "max17-v14::KA-023",
+   "run": "max17-v14",
+   "tipo": "metodo",
+   "testo": "Passo 5 - SHATTER: definizione, rompere una convinzione superata ('shattering the glass ceiling'), il momento in cui si lascia la lezione. Titolo overlay 'Move 05' individua questo passo come 'mossa numero 5' della sequenza."
+  },
+  {
+   "uid": "max17-v14::KA-024",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Tecnica del 'Mic Drop Moment': prima di elencare tutte le prove scientifiche e le citazioni a supporto di una lezione, dare al pubblico una singola frase ad effetto che riassume l'insegnamento. Citazione mic-drop usata dall'autore: 'I realized that sometimes the greatest secret of success of all is to know how to sit still and listen to that still gentle voice within, the voice of your intuition.'"
+  },
+  {
+   "uid": "max17-v14::KA-025",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Mic drop finale sull'intero video (chiusura della sezione framework): 'Nobody changes their life because of a fact. People changed their life because they heard a story that give them hope for who they could become.'"
+  },
+  {
+   "uid": "max17-v14::KA-026",
+   "run": "max17-v14",
+   "tipo": "numero",
+   "testo": "Il corso Silva Ultramind, rilanciato da Vishen nel 2018 dopo aver ottenuto i diritti dai figli del creatore Jose Silva (morto nel 1999) e ripubblicato con la sua voce e stile narrativo attraverso Mindvalley, genera dichiaratamente 40 milioni di dollari l'anno di fatturato ed e' il programma numero 1 su Mindvalley da 9 anni."
+  },
+  {
+   "uid": "max17-v14::KA-027",
+   "run": "max17-v14",
+   "tipo": "file",
+   "testo": "Prova visiva del prodotto originale pre-Mindvalley: copertina fotografata di un cofanetto DVD fisico 'THE SILVA METHOD MASTERY COURSE', sottotitolo 'Tapping the Secrets of the Mind for Total Self-Mastery', editore Nightingale-Conant, autori accreditati Robert B. Stone, Laura Silva, Kain Samiya."
+  },
+  {
+   "uid": "max17-v14::KA-028",
+   "run": "max17-v14",
+   "tipo": "numero",
+   "testo": "Prova social del successo YouTube del canale Mindvalley/Vishen: screenshot reale di pagina canale con miniature 'HEAL YOURSELF WITH THIS - Marisa Peer' (3,1M views), 'OUR ROLE IN EVOLUTION - Neale Donald Walsch' (3,1M views), 'MASTER PUBLIC SPEAKING NOW - Eric Edmeades' (2,8M views), oltre a titoli di Christie Marie Sheldon ed Esther Perel."
+  },
+  {
+   "uid": "max17-v14::KA-029",
+   "run": "max17-v14",
+   "tipo": "architettura",
+   "testo": "Identita' e credenziali dell'autore, confermate sia a voce sia dai metadati del file (info.json: uploader 'Vishen', channel 'Vishen', uploader_id '@vishen'): Vishen Lakhiani, fondatore di Mindvalley, autore del bestseller NYT 'The Code of the Extraordinary Mind' (copertina reale mostrata a video, '10 Unconventional Laws to Redefine Your Life & Succeed On Your Own Terms')."
+  },
+  {
+   "uid": "max17-v14::KA-030",
+   "run": "max17-v14",
+   "tipo": "architettura",
+   "testo": "Recap finale del framework applicato all'intero video stesso: Hook (i primi 10 secondi del video), Stakes (la storia del quasi-senzatetto), Turn multipli (il libro n.1, la scoperta dell'intuizione), Scene (la vodka col Dalai Lama, il capo russo), Shatter (il mic-drop finale sull'intuizione)."
+  },
+  {
+   "uid": "max17-v14::KA-031",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Regola finale sui punti mancanti del framework: ogni punto ha uno scopo preciso. Se manca lo stake, si rischia di sembrare arroganti/inarrivabili. Se manca il turn ma c'e' uno stake forte, il pubblico resta triste senza sollievo. Se manca la scena, il pubblico non 'ci va' con te anche con turn/stake ottimi. Se manca lo shatter, non c'e' lezione chiara da portare a casa."
+  },
+  {
+   "uid": "max17-v14::KA-032",
+   "run": "max17-v14",
+   "tipo": "regola",
+   "testo": "Distinzione tra relatability e respect: hook e stakes costruiscono relatability (il pubblico si affeziona), mentre turn, scene e shatter costruiscono respect (il pubblico percepisce l'autore come qualcuno capace di trasmettere un'idea potente). Servono entrambi: relatable ma non rispettato, o rispettato ma non relatable, non bastano da soli."
+  },
+  {
+   "uid": "max17-v14::KA-033",
+   "run": "max17-v14",
+   "tipo": "architettura",
+   "testo": "Device narrativo/di montaggio centrale del video: la tabella mnemonica HSTSS (Holy/Sh*t/That's/So/Smart -> Hook/Stake/Turn/Scene/Shatter) viene rivelata progressivamente, una riga per capitolo completato: a 3:20 solo la prima riga (Holy-Hook) e' leggibile, le altre restano pixelate; a 5:00 due righe scoperte; a 18:36 tre righe (Hook/Stake/Turn); a 23:36 tutte e cinque le righe sono leggibili."
+  },
+  {
+   "uid": "max17-v14::KA-034",
+   "run": "max17-v14",
+   "tipo": "numero",
+   "testo": "Metadati del video (P-BQ-AGS0ck.info.json): upload 2026-07-25, 86.971 views, 4.116 like al momento del download, tag includono 'vishen', 'mindvalley', 'storytelling', 'public speaking', 'leadership', 'alex hormozi', 'daniel priestley', 'kallaway'."
+  },
+  {
+   "uid": "max17-v14::KA-035",
+   "run": "max17-v14",
+   "tipo": "architettura",
+   "testo": "Easter egg di prodotto non commentato a voce: in un b-roll che mostra un Apple Store con tre iPhone in vetrina (illustrazione generica), l'iPhone centrale ha sulla home screen l'icona viola dell'app Mindvalley visibile tra le app installate, accanto a Messaggi/Calendario/Foto/Telefono."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-001",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Un'agenzia (di qualsiasi tipo, AI o no) e' sempre la stessa struttura di business: lead generation -> funnel di vendita -> sales call -> onboarding -> CRM/pipeline -> delivery -> upselling. Solo la parte di delivery cambia a seconda del servizio venduto (automazione AI vs social media management vs altro)."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-002",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "dato",
+   "testo": "Statistiche Eurostat 2025 citate a schermo (non verificate indipendentemente): mondo, 84% delle persone (6,8 miliardi) non ha mai usato AI; 16% (1,3 miliardi) usa solo modelli gratuiti; 0,3% (~25 milioni) paga un abbonamento AI; 0,04% (2-5 milioni) usa coding harness agentici. Italia: 8% usa AI generativa sul lavoro (terzultimo posto EU), 6,4% per educazione, 12,8% per uso personale."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-003",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Blue Ocean vs Red Ocean Strategy per la scelta del mercato. Blue Ocean = mercato libero senza Proof of Concept (rischioso: puo' essere che nessuno se ne sia accorto, tipo Facebook/Instagram, o che qualcuno abbia gia' fallito, esempio Tesla vs tentativi precedenti di auto elettriche). Red Ocean = mercato saturo (palestre, dentisti, real estate) dove la PoC esiste gia'. Consiglio esplicito: partire in Red Ocean con un'offerta differenziante, non in Blue Ocean, salvo avere capitale da perdere."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-004",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Due framework per scegliere la nicchia. 1) Se sai fare qualcosa: modello delle 3P (Passion / Profession / Pain del cliente), con riferimento al framework Ikigai. 2) Se non sai fare nulla: evitare nicchie regolamentate (farmaceutico, assicurazioni, banking), testare 5-6 nicchie in parallelo contattando ~100 persone per nicchia, poi concentrarsi sulle 2-3 che convertono meglio invece di scegliere 'a tavolino' con un LLM generico."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-005",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "regola",
+   "testo": "Anti-pattern 'niche hopping': permanenza minima consigliata di 6 mesi su una nicchia prima di scartarla. 30 chiamate a freddo non sono un campione sufficiente per giudicare una nicchia morta. Chi salta nicchia ogni poche settimane resta sotto la soglia dei 3.000 euro/mese perche' non accumula mai competenza verticale."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-006",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Matrice di pricing 3x3: righe DIY / DWY / DFY (Do It Yourself, Done With You, Done For You) per colonne Tempo / Unita' / Risultato. Esempio a schermo: DIY-Unita' = ebook/PDF. A voce: DFY-tempo = consulenza a ore (sconsigliata); DWY-unita' = formazione/corso con revisione; DWY-risultato = coaching a percentuale (raro); DFY-unita' = 'vendo 3 automazioni a X euro' (quadrante dove l'autore colloca la maggior parte delle soluzioni AI, piu' scalabile perche' disaccoppiato dal tempo); DFY-risultato = pagamento a risultato."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-007",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Tre modelli contrattuali per il pagamento: pay in full (paga tutto oggi, 3.000-10.000 euro upfront, difficile da vendere senza track record); pay on performance (es. paga solo l'ad-spend, 25-200 euro/giorno, il resto solo a risultato, permette ticket anche oltre 10.000 euro perche' il rischio lo prende l'agenzia); retainer (misto: fee di setup + percentuale variabile per lead/cliente o fee fissa mensile, es. 250 euro/mese)."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-008",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "regola",
+   "testo": "Golden rule del close rate al 30% per un service business: percentuale di lead che arrivano in sales call e pagano. Sopra il 30% -> prezzo troppo basso (si perde margine). Sotto il 30% -> prezzo troppo alto o vendita debole. Per community/infoprodotti il benchmark citato e' diverso (2-4%)."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-009",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Elenco a schermo dei 6 metodi di acquisizione clienti ordinati per facilita'/costo crescente: 1. Warm Network, 2. Upwork, 3. Strategie Cold (DM, Email, Call), 4. Ads, 5. Fiverr, 6. Social Media Posting (Organico)."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-010",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "metodo",
+   "testo": "Metodo Warm Network: mappare la propria rubrica (amici stretti, familiari, amici di amici, conoscenti) e clusterizzarla per professione (impiegato/imprenditore/studente). Script di contatto: presentazione breve + richiesta se conosce qualcuno interessato a un servizio gratuito in cambio di un testimonial e almeno due referral. Meccanica a catena: 1 cliente gratuito -> 2 referral -> 2 nuovi clienti (prezzo crescente, es. 250-500-1000 euro) -> altri referral."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-011",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "osservazione",
+   "testo": "Le persone aiutano molto di piu' a inizio carriera (quando l'imprenditore e' ancora a zero, senza 'invidia sociale') che nella fase intermedia di crescita (quando iniziano a superare economicamente chi li aiuta). Quindi il momento migliore per chiedere aiuto/referral e' l'inizio, non a meta' percorso."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-012",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "metodo",
+   "testo": "Upwork come piattaforma di acquisizione: si applica a job posting reali (es. 'Email Flow Creator for Automation'), costo per candidatura in 'connects' (~1 euro), consiglio di applicare entro 24 ore dalla pubblicazione e di usare prezzi non tondi (es. 13,15$/h) per differenziarsi. Buon ROI per bootstrap iniziale (es. 50 euro investiti per potenzialmente 3-4 progetti)."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-013",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Funnel di conversione per le strategie Cold (email/DM/call) con metriche a cascata: input (es. 100 email/DM) -> open rate (80%) -> reply rate (30%) -> CTR sui link (20%) -> risposte positive (10%) -> conversione a meeting (8% sull'input) -> clienti paganti (2%). Ogni metrica bassa indica un problema diverso da correggere: oggetto scadente -> open rate basso; offerta scadente -> reply rate basso; sales call debole -> conversione meeting-cliente bassa."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-014",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "tecnica",
+   "testo": "Tecnica 'cold reading' per l'apertura di un'email/DM freddo: frase generica applicabile a chiunque nella nicchia target ma percepita come personalizzata (tecnica attribuita a FBI/profiling). Struttura mostrata a schermo: oggetto breve informale + body con [1] cold reading, [2] credenziale sociale (nome noto nello stesso spazio), [3] offerta con risk reversal (setup gratuito, paghi solo a risultato), [4] CTA a un meeting breve con slot gia' proposto."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-015",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "metodo",
+   "testo": "Script di cold calling: identificare il decision-maker (proprietario o assistente con potere decisionale, es. segretaria in uno studio dentistico), fare 2 domande di scoperta del problema (es. 'ho provato a cercarla su Google ma non trovo il suo studio'), offrire una demo di 10 minuti senza impegno, chiedere uno slot preciso. Aspettarsi 80-90% di rifiuti."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-016",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Curva comparativa cold vs organico vs ads nel tempo: le strategie cold danno risultati rapidi ma con plateau precoce; il contenuto organico cresce lentamente ma senza plateau evidente nel breve periodo; gli ads, quando validati su contenuto gia' performante, salgono ripidi con alto ROI. Consiglio: outbound cold all'inizio, poi organico, poi ads sui contenuti organici gia' validati (mai ads su contenuto non testato)."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-017",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "dato",
+   "testo": "'200 views cage': fase iniziale in cui un creator resta bloccato tra 200 e 2.500 views a video/post, tipica di chi comincia su Instagram/TikTok/YouTube. Consiglio esplicito: monetizzare prima con outbound (cold/warm), investire poi il capitale generato nel personal brand di lungo periodo — non il contrario."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-018",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "metodo",
+   "testo": "Fiverr come canale inbound: si crea un profilo con servizi a pacchetti (basic/standard/premium), consigliato solo con un brand gia' riconosciuto perche' senza recensioni pregresse il traffico organico della piattaforma non converte."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-019",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "regola",
+   "testo": "Un cliente esiste solo se c'e' stato un movimento di denaro effettivo — un 'si' via email non basta a definire qualcuno come cliente pagante (le persone ripensano, si fanno influenzare, cambiano priorita')."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-020",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Flowchart Whimsical reale ('How to Service Your First Automation Client in 2026') per il processo di kickoff/fulfillment: 'Hai gia' fatto questo progetto?' -> SI: 'Customizza un template esistente sulla richiesta del cliente' / NO: 'Costruisci un MVP' -> 'Comincia a costruire' -> 'Templetizza la soluzione' -> 'Aggiorna sui progressi' (con Project Update/Delivery Templates ogni 2 settimane) -> 'Progetto completato' -> 'Test Style Workflow End-to-End (e2e)' -> 'Rafforza i check per i casi limite'."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-021",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "metodo",
+   "testo": "5 punti della kickoff call: 1) definire la timeline del progetto applicando under-promise-and-overdeliver (es. dichiarare 6 settimane, consegnare in 4); 2) definire esplicitamente la reperibilita' (giorni/orari di risposta) per evitare aspettative implicite; 3) definire il successo/deliverable in modo scritto per prevenire lo scope creep; 4) registrare il cliente su tutte le piattaforme necessarie durante la call stessa; 5) tracciare tutto in un project management tool (opzionale per il primo cliente)."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-022",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "regola",
+   "testo": "Policy sulle credenziali cliente: lavorare sempre sulle credenziali/abbonamenti/carta di credito del cliente, mai su credenziali proprie dell'agenzia, per evitare vendor lock-in ('ghigliottina' sul cliente che dipende dal pagamento ricorrente). Preferire riproporre servizi aggiuntivi via email/upsell piuttosto che trattenere l'accesso come leva di ricontrattazione."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-023",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "tecnica",
+   "testo": "Tecnica 'taking in charge': dopo la submission del form, inviare subito un messaggio automatico che comunica la presa in carico della richiesta ('ho ricevuto la tua richiesta, ti chiamo tra pochi minuti da questo numero') prima della chiamata umana vera e propria — aumenta il pickup-rate perche' il lead riconosce il numero come atteso invece che sconosciuto."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-024",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Distinzione tecnica GoHighLevel tra custom values (dati legati al sub-account/cliente, es. nome agenzia, citta' — cambiano quando si rivende il sistema a un nuovo cliente in un'altra citta') e custom fields (dati legati al singolo lead, es. origine, consenso, campagna). Confondere le due categorie e' l'errore principale che impedisce di templetizzare davvero un funnel per rivenderlo ad altri clienti."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-025",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "dato",
+   "testo": "GoHighLevel: piattaforma CRM all-in-one per agenzie a ~97$/mese (piano starter), 3 sub-account inclusi, contatti e utenti illimitati, supporto 24/7, programma di affiliazione fino al 50% ricorrente sulla spesa dei clienti riferiti. Modello sub-account = un cliente = un contenitore isolato (evita di mischiare dati/messaggi tra clienti diversi)."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-026",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "metodo",
+   "testo": "Workflow di automazione GoHighLevel dimostrato dal vivo: submission form Meta -> crea opportunita' in pipeline -> invia messaggio/email di presa in carico -> chiama l'operatore umano (mai l'AI direttamente al lead, per evitare impatto negativo sul brand) -> se l'operatore preme 1, il sistema chiama il lead e li mette in contatto diretto -> se il lead non risponde, sequenza di nurturing a cicli di 20 minuti con messaggi alternati (SMS/email) fino a un ultimo messaggio di chiusura."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-027",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "regola",
+   "testo": "Regola di assunzione: assumere quando si e' a capacita' (non piu' tempo per nuovo lavoro dai clienti esistenti) e per bisogno, non per crescita, specialmente all'inizio — assumere per crescita e' una scommessa che, se fallisce, lascia l'imprenditore in perdita netta di stipendio rispetto a prima dell'assunzione."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-028",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "regola",
+   "testo": "Il primo hire consigliato per un'agenzia AI e' un CTO (non un commerciale), anche se costoso (5.000-6.000+ euro/mese), perche' libera l'imprenditore dalla delivery per concentrarsi sulle vendite, l'unica attivita' che fa davvero crescere il fatturato (la delivery mantiene il business ma non lo fa scalare). Prerequisito indispensabile: SOP gia' documentate prima di assumere, altrimenti il nuovo hire dipende continuamente dall'imprenditore per le informazioni mancanti."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-029",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "framework",
+   "testo": "Grafico mostrato a mano: dopo l'assunzione del CTO, le curve 'Fatturato' e 'Salario' dell'imprenditore divergono temporaneamente (il salario scende perche' l'introito puro va in parte al CTO) prima di risalire quando il fatturato scala grazie al tempo liberato per le vendite. Stessa dinamica si ripete con l'assunzione del sales team in una seconda fase."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-030",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "osservazione",
+   "testo": "L'agenzia AI (come qualsiasi agenzia) e' quasi sempre uno step intermedio, non il business finale: il capitale, l'esperienza e il network accumulati portano poi a business piu' scalabili (SaaS, community, digital product). Errore comune: scartare l'agenzia perche' 'cappata' a 1-3 milioni/anno confrontandola con business teoricamente piu' scalabili, invece di confrontarla con lo stipendio da dipendente di partenza."
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-031",
+   "run": "max17-v17-beggiato-agenzia",
+   "tipo": "osservazione",
+   "testo": "Il video apre con una clip di repertorio giornalistico (Presidente del Consiglio Giorgia Meloni a un podio istituzionale) usata come B-roll generico per illustrare il tema 'cambiamento epocale in atto' — non e' un contenuto originale del relatore ne' una dichiarazione a lui attribuibile, e va letta come scelta editoriale di apertura video, non come dato."
+  }
+ ]
+}

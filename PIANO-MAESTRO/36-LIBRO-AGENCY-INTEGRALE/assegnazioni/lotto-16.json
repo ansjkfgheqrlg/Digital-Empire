@@ -1,0 +1,1000 @@
+{
+  "lotto": 16,
+  "assegnazioni": [
+    {
+      "uid": "lQMO0LdeI2c::KA-01",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-02",
+      "capitolo": "VI.8",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-03",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-04",
+      "capitolo": "VI.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-05",
+      "capitolo": "VI.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-06",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-07",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-08",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-09",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-10",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-11",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-12",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-13",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-14",
+      "capitolo": "VI.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-15",
+      "capitolo": "VI.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-16",
+      "capitolo": "VI.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-17",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-18",
+      "capitolo": "III.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-19",
+      "capitolo": "III.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-20",
+      "capitolo": "III.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-21",
+      "capitolo": "III.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-22",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-23",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-24",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-25",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-26",
+      "capitolo": "VII.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-27",
+      "capitolo": "VII.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-28",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "lQMO0LdeI2c::KA-29",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "max17-v16::KA-001",
+      "capitolo": "VI.6",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-002",
+      "capitolo": "VI.6",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-003",
+      "capitolo": "VI.6",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-004",
+      "capitolo": "VI.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-005",
+      "capitolo": "VI.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-006",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-007",
+      "capitolo": "VI.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-008",
+      "capitolo": "III.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-009",
+      "capitolo": "VI.6",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-010",
+      "capitolo": "VI.6",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-011",
+      "capitolo": "VI.6",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-012",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-013",
+      "capitolo": "VI.6",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-014",
+      "capitolo": "II.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-015",
+      "capitolo": "II.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-016",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-017",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-018",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-019",
+      "capitolo": "II.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-020",
+      "capitolo": "II.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-021",
+      "capitolo": "II.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-022",
+      "capitolo": "V.17",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-023",
+      "capitolo": "II.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-024",
+      "capitolo": "VI.6",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-025",
+      "capitolo": "VI.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-026",
+      "capitolo": "VI.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "max17-v16::KA-027",
+      "capitolo": "VI.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-028",
+      "capitolo": "VII.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "max17-v16::KA-029",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-01",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-02",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-03",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-04",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-05",
+      "capitolo": "V.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-06",
+      "capitolo": "V.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-07",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-08",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-09",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-10",
+      "capitolo": "V.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-11",
+      "capitolo": "V.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-12",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-13",
+      "capitolo": "V.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-14",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-15",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-16",
+      "capitolo": "V.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-17",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-18",
+      "capitolo": "V.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-19",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-20",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-21",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-22",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-23",
+      "capitolo": "V.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-24",
+      "capitolo": "V.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-25",
+      "capitolo": "V.3",
+      "peso": "contesto"
+    },
+    {
+      "uid": "iy13HC9M8z0::KA-26",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-01",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-02",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-03",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-04",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-05",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-06",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-07",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-08",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-09",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-10",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-11",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-12",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-13",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-14",
+      "capitolo": "II.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-15",
+      "capitolo": "II.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-16",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-17",
+      "capitolo": "II.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-18",
+      "capitolo": "II.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-19",
+      "capitolo": "II.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-20",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-21",
+      "capitolo": "VI.6",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-22",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-23",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-24",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "IWCHN_mE2Vo::KA-25",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-01",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-02",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-03",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-04",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-05",
+      "capitolo": "VI.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-06",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-07",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-08",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-09",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-10",
+      "capitolo": "III.5",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-11",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-12",
+      "capitolo": "VI.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-13",
+      "capitolo": "VI.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-14",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-15",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-16",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-17",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-18",
+      "capitolo": "VI.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-19",
+      "capitolo": "II.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-20",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-21",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-22",
+      "capitolo": "VI.9",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-23",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "Pv5uzIxp96U::KA-24",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-01",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-02",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-03",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-04",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-05",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-06",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-07",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-08",
+      "capitolo": "VI.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-09",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-10",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-11",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-12",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-13",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-14",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-15",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-16",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-17",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-18",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-19",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-20",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-21",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-22",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-23",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "jgIgOPAnYNY::KA-24",
+      "capitolo": "VI.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-01",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-02",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-03",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-04",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-05",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-06",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-07",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-08",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-09",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-10",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-11",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-12",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-13",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-14",
+      "capitolo": "VI.6",
+      "peso": "contesto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-15",
+      "capitolo": "II.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-16",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-17",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-18",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-19",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-20",
+      "capitolo": "III.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-21",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "qOK4WP82Bvo::KA-22",
+      "capitolo": "VI.8",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-01",
+      "capitolo": "VI.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-02",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-03",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-04",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-05",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-06",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-07",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-08",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-09",
+      "capitolo": "V.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-10",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-11",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-12",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-13",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-14",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-15",
+      "capitolo": "VI.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-16",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-17",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-18",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-19",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "9CuQI0Cr4Pg::KA-20",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    }
+  ]
+}

@@ -1,0 +1,1188 @@
+{
+ "lotto": 12,
+ "totale": 197,
+ "atomi": [
+  {
+   "uid": "max17-v06-belli-codex::KA-001",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "La domanda 'meglio Claude Code o Codex?' e' sbagliata. La domanda giusta e' come ottenere il massimo da entrambi, perche' ogni nuovo modello cambierebbe la classifica e ricomincerebbe la guerra."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-002",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Belli si presenta come ingegnere informatico, fondatore/gestore di Martes AI, azienda che aiuta le imprese a scalare implementando l'IA nei processi, partendo dalla formazione del personale su strumenti come Claude Code e Claude Cowork."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-003",
+   "run": "max17-v06-belli-codex",
+   "tipo": "costo",
+   "testo": "Martes AI ha lavorato con piu' di 65 aziende e portato in produzione piu' di 75 soluzioni di intelligenza artificiale (statistica aziendale, non riferita al costo Claude/Codex)."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-004",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Claude Code e' fortissimo su copywriting, design e gusto estetico; e' molto forte a pianificare e avere una visione complessiva del progetto anche quando non si ha un'idea chiara; scrive tanto codice e in fretta."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-005",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Claude Code ha tutto l'ecosistema di skills, plugin, MCP, hook che secondo Belli e' superiore a quello di Codex."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-006",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Codex esegue alla lettera: se gli dici di fare 1 2 3 4 5, fa esattamente 1 2 3 4 5, mentre Claude Code ci mette sempre un po' della sua idea/iniziativa."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-007",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Codex sta iniziando a spopolare anche fra developer senior perche' riesce a trovare piu' edge case (es. il pulsantino in alto a destra che fa crashare l'app) e vede conseguenze di secondo e terzo ordine per ogni cosa che fa."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-008",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "La debolezza principale di Claude Code secondo Belli e' che 'si entusiasma': dichiara 'fatto' senza aver testato end-to-end, salta gli edge case, da' sempre ragione all'utente e si scrive i test da solo. E' 'innamorato del codice'."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-009",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Le debolezze di Codex: sul copy e sul design 'non ci siamo'; va sfruttato al meglio con istruzioni molto precise; e' un po' piu' lento secondo l'esperienza di Belli."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-010",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Ad agosto 2026, i limiti di utilizzo di Codex si sforano molto piu' lentamente rispetto a quelli di Claude Code, secondo l'esperienza di Belli."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-011",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Principio cardine del video, scritto a lavagna: CHI COSTRUISCE E' DIVERSO DA CHI GIUDICA. Si vuole sfruttare la caratteristica di Codex di non essere innamorato del codice altrui."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-012",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Il piano lo scrive Claude, viene contestato da Codex (adversarial review), Claude produce piano v2, il ciclo si ripete finche' Codex non ha piu' niente da ridire. L'obiettivo e' capire cosa sta succedendo, non essere 'pipecoder seriali', altrimenti il progetto diventa un mostro incontrollabile."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-013",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "Il video si basa sulla repository GitHub ufficiale fatta da OpenAI chiamata 'Codex Plugin', che permette di utilizzare Codex all'interno di Claude Code."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-014",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "/codex:review — legge e basta le modifiche non committate su Git, dice cosa non va. Non accetta testo libero, non e' indirizzabile su un punto preciso."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-015",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "/codex:adversarial-review — come review ma puntabile: si puo' dire cosa contestare (anche un piano, non solo codice) e Codex attacca quella scelta specifica."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-016",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "/codex:rescue — prende il problema e lo prova a risolvere: indaga, prova una correzione, sblocca il punto dove ci si era fermati. Utile quando Claude Code si impappina e non riesce a risolvere una cosa."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-017",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "/codex:transfer — prende la conversazione in corso con Claude Code e la porta dentro Codex, continuando da dove si era rimasti invece di ripartire da zero."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-018",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "/codex:status e /codex:result — le review lunghe girano in background; status dice se Codex ha finito o meno, result restituisce i risultati quando ha finito."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-019",
+   "run": "max17-v06-belli-codex",
+   "tipo": "flusso",
+   "testo": "Pattern 1 'Far controllare l'app prima di mandarla online': app pronta -> /codex:review -> TU REVISIONI LA REVIEW (umano nel mezzo) -> Claude sistema quello che esce -> online. Codex legge tutto il branch contro main mentre l'utente continua a lavorare."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-020",
+   "run": "max17-v06-belli-codex",
+   "tipo": "flusso",
+   "testo": "Pattern 2 'Il piano prima di scrivere una riga': piano scritto con Claude -> /codex:adversarial-review sul piano -> le critiche tornano a Claude -> piano v2 -> ciclo finche' Codex non ha piu' obiezioni -> solo allora si scrive il codice."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-021",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Differenza chiave fra review e rescue: review guarda solo le modifiche non committate su Git ('come un Google Drive per il codice'); se l'app e' gia' finita e committata, review non trova nulla da dire. Per un'app gia' completa bisogna usare rescue. Belli dice che tutti i video online sbagliano questa distinzione."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-022",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "Requisiti ufficiali del plugin (README GitHub): ChatGPT subscription (incl. Free) oppure OpenAI API key (l'uso consuma la quota Codex); Node.js 18.18 o superiore."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-023",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Installazione: /plugin marketplace add openai/codex-plugin-cc -> risposta 'Successfully added marketplace: openai-codex'."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-024",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Installazione: /plugin install codex@openai-codex -> risposta 'Installed codex. Plugin is now active.'"
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-025",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Installazione: /reload-plugins -> risposta osservata 'Reloaded: 8 plugins · 18 skills · 7 agents · 4 hooks · 5 plugin MCP servers · 8 plugin LSP servers'."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-026",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Installazione: /codex:setup esegue uno shell command (node '.../scripts/codex-companion.mjs' setup --json) e verifica se Codex CLI e' pronto."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-027",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "Se Codex non e' installato, /codex:setup propone un menu: '1. Install Codex (Recommended) — Runs npm install -g @openai/codex, then re-checks setup status. 2. Skip for now — Leaves Codex uninstalled; the setup output is reported as-is.'"
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-028",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Installazione manuale alternativa di Codex CLI: npm install -g @openai/codex. Login manuale: codex login."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-029",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "Tabella di stato finale osservata dopo /codex:setup: Ready ✅ · Node v24.19.0 · npm 11.17.4 · Codex CLI codex-cli@0.148.0 (advanced runtime available) · Auth ✅ ChatGPT login active for engineering@martes-ai.com (verified) · Session runtime: direct startup, no shared runtime yet · Review gate: disabled."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-030",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "Output di /codex:setup suggerisce come step opzionale successivo: 'run /codex:setup --enable-review-gate to require a fresh review before setup...' — opzione mai attivata nel video."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-031",
+   "run": "max17-v06-belli-codex",
+   "tipo": "costo",
+   "testo": "Consiglio dato a voce: avere il piano Claude Max da $100 (non i $200) e aggiungere Codex con il piano ChatGPT da $20 — bastano $20 in piu', non il doppio."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-032",
+   "run": "max17-v06-belli-codex",
+   "tipo": "flusso",
+   "testo": "Caso reale 1: audit di MaReply, clone di ManyChat costruito dal CTO di Martes AI (automazioni 'Commenta X, ti mando Y in DM' su Instagram, incluse reel schedulati che ManyChat non offre). Martes AI pagava ManyChat 80$/mese e le API erano troppo limitate, quindi l'hanno ricostruito in-house."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-033",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Prompt usato per l'audit di MaReply: '/codex:rescue --background Fai un audit completo di questa app. E' molto utente e custodisce gli account Instagram dei clienti. Concentrati su potenziali falle. Siccome voglio lanciarla in Prod. Ad esempio, se un utente puo' vedere e toccare i dati di un altro, come sono protetti gli accessi di Instagram, cosa puo' far partire un DM sbagliato doppio, eccetera eccetera.'"
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-034",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Claude Code aveva gia' revisionato MaReply dicendo che era pronta per la produzione. Codex, interpellato con /codex:rescue, ha trovato 0 falle critiche, 2 alte, 2 medie, 2 basse — falle che Claude Code non aveva trovato."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-035",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Finding alto #1 su MaReply: l'autenticazione email/password non verifica l'email. Un attaccante puo' pre-registrare l'email della vittima con una password sua, impedendole di registrarsi normalmente; se ottiene il token di invito, dirotta l'account. Impatto: accesso al workspace della vittima incluse conversazioni Instagram e automazioni. Fix: rendere obbligatoria la verifica email prima di considerare l'account utilizzabile, rifiutare inviti su email non verificata."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-036",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Finding alto #2 su MaReply: DM duplicati per assenza di claim atomico prima dell'invio. L'endpoint che manda il DM Instagram non controlla l'ID del destinatario: un admin, una sessione rubata o un client difettoso puo' chiamarlo ripetutamente. Impatto: spam, doppio consumo del budget Meta, possibile abuso del dominio per phishing e danno reputazionale."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-037",
+   "run": "max17-v06-belli-codex",
+   "tipo": "flusso",
+   "testo": "Caso reale 2: form di candidatura interattivo (clone di Typeform, Cloudflare + Airtable come CRM) per le posizioni aperte di Martes AI. Belli lo compila dal vivo per mostrarne la complessita' (domande dinamiche per formatore vs sviluppatore)."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-038",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Su /codex:rescue e' possibile impostare --model e --effort (minimal, low, medium, high, xhigh); esempio verbale: 'meno meno model GPT 5.6 Sol' con 'effort xi' (xhigh) per un'analisi piu' pesante."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-039",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Findings alti sul form candidature (functions/api/candidature.js): 1) endpoint pubblico onRequestPOST senza autenticazione/rate limiting/CAPTCHA; 2) upload completamente fidato lato server, nessuna verifica di dimensione/estensione/MIME reale dei file; 3) nessun limite server-side sulla dimensione dei campi; 4) React/ReactDOM/Babel caricati da unpkg.com senza SRI ne' CSP configurata."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-040",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Findings medi sul form candidature: validazione solo client-side; CORS completamente permissivo (Access-Control-Allow-Origin: *); errori Airtable esposti al chiamante; possibile formula/CSV injection su export Airtable; accesso dati dipendente dai permessi della base Airtable; assenza di informativa privacy/consenso/retention (GDPR); log di errori upstream senza redazione PII; allowlist allegati incoerente fra frontend e backend; ID record Airtable esposti al client; dipendenza wrangler non fissata/lockfile assente."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-041",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Belli dichiara esplicitamente che non implementera' tutti i fix suggeriti da Codex: rifiuta di correggere il 'doppio DM' su MaReply perche' lo considera comportamento accettabile (l'utente potrebbe voler ricevere di nuovo la risorsa). Lo cita come esempio di non essere un Vibe coder: ogni segnalazione va letta e filtrata dall'umano."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-042",
+   "run": "max17-v06-belli-codex",
+   "tipo": "flusso",
+   "testo": "Caso reale 3: piano PLAN.md per un clone di Bitly (accorciatore di link con tracciamento), scritto con Claude in modalita' pianificazione ('Fable 5' nel linguaggio di Belli, 'Opus 5 [1M context]' nell'interfaccia)."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-043",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "PLAN.md — Modello dati su Cloudflare D1: tabella links (code TEXT PRIMARY KEY, url TEXT NOT NULL, created_at INTEGER, owner_id TEXT, clicks INTEGER DEFAULT 0); tabella clicks (id INTEGER PRIMARY KEY AUTOINCREMENT, code TEXT riferito a links.code, ts INTEGER, country TEXT da request.cf.country, city TEXT da request.cf.city). Stack: Cloudflare Workers + D1 + React."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-044",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "PLAN.md §5 Redirect e tracciamento: GET /:code -> SELECT url FROM links WHERE code=? -> se non trovato, 404; se trovato, scrivi riga su clicks (code, ts, referer/user-agent da header, ip da request.cf-connecting-ip) -> UPDATE links SET clicks=clicks+1 WHERE code=? -> risposta 301 Moved Permanently con Location verso la destinazione (corretto per i motori di ricerca). I passi di logging girano dentro ctx.waitUntil() per non bloccare il redirect."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-045",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "PLAN.md §6 Parsing user agent per la colonna 'dispositivo' della dashboard: se contiene 'Mobile' -> mobile; se contiene 'Tablet'/'iPad' -> tablet; altrimenti -> desktop. Browser cercato nell'ordine Edg, Chrome, Safari, Firefox."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-046",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Comando usato per contestare il piano: '/codex:adversarial-review --background contesta questo piano, voglio creare un sosia di Bitly' con il file allegato via @plan.md (tag file) oppure tasto destro -> copia il percorso."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-047",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Verdetto Codex Adversarial Review sul piano Bitly: 'needs attention'. Sintesi: il piano lascia aperti isolamento tra utenti, accuratezza dei dati e gestione dei dati personali; plan.md:46-58 compromette il tracciamento, funzione centrale del prodotto."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-048",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Finding critical sul piano Bitly: le API stats/delete non impongono l'ownership del link (plan.md:46-58). Il piano non richiede che GET /stats o DELETE verifichino owner_id, quindi chiunque potrebbe modificare/cancellare link altrui. Fix: verificare sessione + owner_id su ogni chiamata."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-049",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Finding high sul piano Bitly: i redirect 301 (permanenti) restano in cache nel browser/CDN anche dopo la cancellazione di un link (plan.md:72-74). Fix: usare 302 con cache breve o Cache-Control:no-store, oppure purge cache Cloudflare alla cancellazione."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-050",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Finding high sul piano Bitly: il contatore di click viene gonfiato da eventi duplicati (prefetch/preload/richieste multiple del browser)."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-051",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Finding medium sul piano Bitly: ogni click registra IP, user-agent, referer e geolocalizzazione senza finalita'/retention/minimizzazione dichiarate (rischio privacy); esistono 2 API pubbliche create/delete con requisiti di autenticazione non chiariti (superficie di abuso)."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-052",
+   "run": "max17-v06-belli-codex",
+   "tipo": "flusso",
+   "testo": "Belli passa le obiezioni Codex a Claude: 'controlla queste obiezioni che ha fatto Codex al nostro piano @PLAN.md per ricreare Bitly.' Claude valuta punto per punto e dichiara: 4 obiezioni su 5 hanno un nucleo valido."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-053",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Risposta di Claude sull'obiezione ownership: 'fondata, la piu' importante' — vera lacuna, chiunque legge il codice/URL puo' cancellare link altrui."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-054",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Risposta di Claude sull'obiezione 301: 'fondata' — verificato che il 301 viene cachato indefinitamente dal browser; nota aggiuntiva: Bitly stesso usa 302 dal 2016 per questo motivo."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-055",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Risposta di Claude sull'obiezione contatore duplicati: 'fondata ma gonfiata, fix banale' — 'high' e' eccessivo (perdita di poche unita' di conteggio, non integrita' critica). Fix: contare visitatori unici via hash IP+user-agent+salt giornaliero (come Plausible) invece di richieste totali; aggiungere FOREIGN KEY(code) REFERENCES links(code) per risolvere i click orfani."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-056",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Risposta di Claude sull'ordine di implementazione: 'respingo in gran parte' — costruire l'API POST prima dell'auth completa e' normale sviluppo incrementale; il rischio reale e' gia' coperto fixando il punto ownership; accetta solo di scambiare l'ordine dei passi 3 e 4."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-057",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Dopo la validazione di Claude, comando finale: 'bene, applica tali correzioni Fable' -> il piano viene aggiornato (v2) prima di scrivere qualsiasi codice applicativo. Poi si cambia modello con /model tornando a Opus per lo sviluppo vero e proprio."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-058",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "I tre comandi preferiti dichiarati esplicitamente da Belli: /codex:rescue (per gli audit), /codex:adversarial-review sui piani ('fondamentale'), /codex:transfer (quando Claude si impappina). /codex:review e /codex:status/result sono definiti 'di contorno', secondari."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-059",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Prima di andare in produzione Belli dichiara di fare sia una 'security review' con Claude Code sia un controllo con Codex, come doppio passaggio pre-produzione."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-060",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "/codex:transfer (dal README): crea un thread Codex persistente dalla sessione Claude Code corrente e stampa un comando 'codex resume <session-id>'. Da usare quando si inizia una conversazione di debug/implementazione in Claude Code e si vuole continuarla in Codex senza ripartire da zero."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-061",
+   "run": "max17-v06-belli-codex",
+   "tipo": "comando",
+   "testo": "Esempi /codex:rescue dal README: '/codex:rescue investigate why the tests started failing the smallest safe patch'; '/codex:rescue --resume apply the top fix from the last run'; '/codex:rescue --model gpt-5.1-mini --effort medium investigate the flaky integration test'; '/codex:rescue --model spark fix the issue quickly'; '/codex:rescue --background investigate the regression'."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-062",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "Note dal README su /codex:rescue: se non si passano --model o --effort, Codex sceglie i suoi default; se si scrive 'spark', il plugin lo mappa a gpt-5.1-codex-spark; le richieste di rescue successive possono continuare l'ultimo task Codex nella stessa repo."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-063",
+   "run": "max17-v06-belli-codex",
+   "tipo": "costo",
+   "testo": "Lavagna finale costi: 'TUTTO SU UNO SOLO' — $200 solo Claude (nessuno che lo controlla), $200 solo Codex (nessuno che serve bene). 'LA COPPIA' — $100 Claude Max (serve) + $20 Codex (controlla) = $120 AL MESE. Venti dollari in piu', non il doppio, perche' Codex legge e critica e scrive quasi mai: l'auditor costa molto meno che generare."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-064",
+   "run": "max17-v06-belli-codex",
+   "tipo": "costo",
+   "testo": "Sulla lavagna: 'e per provarlo basta anche il piano ChatGPT gratuito'. Confermato con una ricerca a schermo: Codex e' disponibile sul piano ChatGPT Free ma con limiti di utilizzo stretti; Cost: $0/mese; Access: incluso con account ChatGPT; Limits: i limiti piu' bassi di ogni tier, adatto a test rapidi piu' che a sviluppo pesante. Fonte citata: pagina ufficiale 'Codex Pricing' — Codex incluso in Free, Go, Plus, Pro, Business, Enterprise."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-065",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Raccomandazione finale: usare il piano Free di ChatGPT per testare la combo con qualsiasi piano Claude gia' posseduto (minimo richiesto per Claude Code: piano Pro da $20), verificare se si notano miglioramenti passando le review una o due volte, e solo se il miglioramento e' netto passare a pagare Codex separatamente."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-066",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Chiusura del video: pitch per Martes AI — coaching one-to-one e one-to-many, formazione aziendale in loco, analisi processi per costruire soluzioni AI custom, con CTA a prenotare una call."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-067",
+   "run": "max17-v06-belli-codex",
+   "tipo": "configurazione",
+   "testo": "Setup mostrato interamente su Mac + Visual Studio Code con l'estensione Claude Code, terminale integrato di VS Code. Prerequisiti dichiarati: VS Code e Claude Code gia' installati."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-068",
+   "run": "max17-v06-belli-codex",
+   "tipo": "opinione",
+   "testo": "Nomenclatura informale usata da Belli nei grafici a schermo: 'Fable 5' per un modello Claude (probabile riferimento a Opus, visto nell'interfaccia reale come 'Opus 5 [1M context]') e 'GPT-5.6 Sol' per un modello Codex/GPT — nomi non ufficiali, nickname personali di Belli."
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-069",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Durante l'attesa di un job Codex in background, Claude Code mostra lo stato passo-passo: es. 'L'audit e' ancora in corso (27 secondi trascorsi, fase running). Codex ha appena finito di mappare la struttura dell'app e lo stato git, sta iniziando a leggere i file.'"
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-070",
+   "run": "max17-v06-belli-codex",
+   "tipo": "regola",
+   "testo": "Formato del report di status di un job Codex completato: 'Codex Job Status — task-<id> · completed · rescue · Codex Task. Summary: Audit completato in sola lettura. Non sono stati eseguiti fix contro l'endpoint live. Status: Done. Codex session id: <uuid>. Codex resume command: codex resume <session-id>.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-001",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tesi",
+   "testo": "La tesi del video: 'Claude is the world's number one design agent for building beautiful websites. But just because your site looks pretty doesn't mean that it will sell or get customers. For that, you need to use the correct skills.' Le sette skill sono il ponte fra bello e vendente: sito bello + mobile optimized + copy che sembra scritto da un umano + struttura corretta, senza essere un esperto di design."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-002",
+   "run": "max17-v11-roberts-design",
+   "tipo": "formato",
+   "testo": "Il mazzo di slide del video e' un deck HTML costruito dall'autore e servito in locale: la barra indirizzi mostra '127.0.0.1:5497/index.html'. Non e' Keynote ne' Figma — il deck e' esso stesso un artefatto Claude Design, con navigazione a sezioni (indicatore a pallini sulla destra)."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-003",
+   "run": "max17-v11-roberts-design",
+   "tipo": "grammatica",
+   "testo": "Grammatica ricorrente di ogni slide del deck: [SKILL 0N · CATEGORIA] eyebrow in maiuscoletto spaziato / numerone 0N in serif enorme / titolo in serif con una parola in corsivo colorata / citazione-regola in corsivo grigio / chip con gli oggetti concreti del livello / striscia inferiore '· LIVE DEMO · COSA SI VEDE ·' / frase-ponte 'next: ...'. E' un template di slide riusabile per qualunque materiale didattico."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-004",
+   "run": "max17-v11-roberts-design",
+   "tipo": "livello",
+   "testo": "LIVELLO 1 — FIND THE STANDARD. Slide: 'SKILL 01 · REFERENCE — 01 — Find the standard' — citazione: 'Pick the site you wish you'd built.' La mossa: trovare un sito della tua nicchia che sia gold standard, che abbia vinto premi, che converta clienti, e usarlo come sorgente di design DNA."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-005",
+   "run": "max17-v11-roberts-design",
+   "tipo": "riferimenti",
+   "testo": "I sei siti gold-standard mostrati nel muro di riferimento del Livello 1, etichettati sotto ogni tile: APPLE ('Hola, Neo.' / MacBook Neo), MINTLIFY ('The Intelligent Knowledge Platform' / 'Built for the intelligence age'), MODAL ('AI infrastructure that developers love'), MERCURY (testimonianza di Fred Fugglestone, Head of Ops), LINEAR ('Purpose-built for modern product workflows at its core, Linear sets a new standard for planning and building products'), SUPERHUMAN ('How it works')."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-006",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tool",
+   "testo": "refers.design — 'Design Research for the AI Era'. A voce l'autore lo pronuncia 'referral.design' ma la barra indirizzi mostra refers.design. Sidebar: + New research, Web apps, iOS apps, Styles (Beta). Bottone 'Connect MCP' in alto. Tab Page Types: Dashboard, Product Page & Landing, Paywall & Subscription, Log In, Product Details, Profile & Account, 404 Page, Catalog Page, Blog, About, Careers, Contacts, Developers Page, Integration Page, Media Kit. Clienti: Atlassian, Plaid, ramp, Retool, Spotify, Webflow. Badge Product Hunt 5.0 con 15 recensioni."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-007",
+   "run": "max17-v11-roberts-design",
+   "tipo": "artefatto",
+   "testo": "Il file DESIGN.md di refers.design e' l'artefatto centrale del Livello 1. Pannello con quattro tab: DESIGN.md | Tokens.of | CSS Variables | Design Tokens, toggle Compact/Extended, bottoni Copy e .md. Struttura: titolo '# <Brand> — Style Reference', una frase-atmosfera in blockquote, '**Theme:** Light', un paragrafo che nomina la disciplina cromatica, poi '## Tokens — Colors' come tabella Name|Value|Token|Role, poi '## Tokens — Typography' con famiglia/sostituti/pesi/dimensioni/line-height/letter-spacing/OpenType features, poi '### Type Scale' come tabella Role|Size|Line Height|Letter Spacing|Token."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-008",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tecnica",
+   "testo": "Nel DESIGN.md ogni colore non ha solo un nome e un hex ma una DESCRIZIONE DI RUOLO IN PROSA. Testo verbatim del token brand di Mintlify: 'Brand links, active nav state, feature icons, decorative dots in eyebrow labels, the thin underline on inline code references — the only chromatic accent in a monochrome system, applied sparingly to make functional moments feel switched on.' Cloud Gray: 'Input borders, card outlines on hover states, secondary divider lines that need a step more presence than Mist Gray.' Mist Gray: 'Subtle dividers, hairline strokes on cards, low-emphasis backgrounds, and the lightest fills that need to read as a surface.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-009",
+   "run": "max17-v11-roberts-design",
+   "tipo": "dati",
+   "testo": "Tokens tipografici del DESIGN.md di Mintlify letti dall'ingrandimento 4x: famiglia unica Inter (nessuna seconda famiglia nel sistema), sostituti dichiarati IBM Plex Sans / General Sans, pesi 400-500-600, dimensioni 13/14/15/16/18/20/24/40/57 px, line-height 1.18/1.35/1.38/1.53/1.50/1.71, letter-spacing -0.03em a 57px scendendo a -0.05em da 40px fino a 16px, neutro a 13-14px, +0.05em sulle eyebrow maiuscole; OpenType features: \"ss01\" on, \"cv11\" on. Type scale: caption 13px/1.5, body 16px/1.5/-0.16px, subheading 20px/1.3/-0.2px, heading-sm 24px/1.35/-0.24px. I valori esadecimali dei colori sono al limite di leggibilita' a 360p: Mint Green ~#0c8c5e [incerto], Ink Black ~#08090a [incerto], True Black #000000, Paper White #ffffff, Mist Gray ~#f1f2f2 [incerto], Cloud Gray [illeggibile]."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-010",
+   "run": "max17-v11-roberts-design",
+   "tipo": "regola",
+   "testo": "Il concetto operativo del Livello 1, verbatim: 'what this has done is given us the design DNA, the design blueprint such that we can actually understand what makes this design fantastic. And when we give that to Claude, we can build a version for ourselves.' Il riferimento non si copia: si SMONTA in token e regole, e i token si danno a Claude."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-011",
+   "run": "max17-v11-roberts-design",
+   "tipo": "livello",
+   "testo": "LIVELLO 2 — THE WHOLE MAP. Slide: '02 — The whole map' — citazione: 'Everyone demos one landing page. The $10k site is seven of them.' Diagramma stile incisione ottocentesca su carta invecchiata con annotazioni di misura reali: HOME PAGE 72px, DEPTH 3 LEVELS, spaziature 120px fra i rettangoli di pagina."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-012",
+   "run": "max17-v11-roberts-design",
+   "tipo": "regola",
+   "testo": "La card Relume nella slide 02, verbatim: 'Relume — One brief in: sitemap, wireframes and page architecture out. / Human-made components, assembled by AI — the system behind 2M websites. / Stays consistent from the first section to the fiftieth — no drift by page three. / Pulls into Claude via MCP — the code is yours, no lock-in.' THE RULE: 'Relume is the bones. Your design system is the skin.' next: 'the moment that stops the scroll'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-013",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tool",
+   "testo": "Relume (relume.ai) — 'Build a marketing site you'd actually publish. Start with a brief. Relume builds the sitemap, wireframes, and a marketing site you'd actually publish. AI does the work. You make the calls.' Badge 'TRUSTED BY 2M+ FREELANCERS & AGENCIES'. Campo di input: 'Drop in your video, brief or a URL...'. Toggle Publish/Export + bottone Generate Website. Clienti: Rakuten, Superside, headspace, DEPT., DARKTRACE, ROKT. Tab del builder: Brief | Sitemap | Wireframe | Design."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-014",
+   "run": "max17-v11-roberts-design",
+   "tipo": "prompt",
+   "testo": "Brief dettato a Relume, verbatim: 'hey that I want you to build for me a roofing company that is best-in-class using the below design principles' — seguito dall'URL preso da refers.design oppure dall'intero DESIGN.md copiato col bottone Copy."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-015",
+   "run": "max17-v11-roberts-design",
+   "tipo": "prompt",
+   "testo": "Prompt DIGITATO a Claude Desktop per costruire il sito, trascritto parola per parola dal ritaglio 4x: 'hey there i want you to go ahead and build for me a beautiful website based on this particular link using the exact design systems and layouts that are included in this zip file that we built in relume'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-016",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tecnica",
+   "testo": "Menu Export di Relume, per intero: Figma · Webflow · React · HTML (scelto) · 'Export to Claude...' [New] · Export to TXT · Export to CSV · Export to Excel. Esiste quindi un export NATIVO verso Claude, ma l'autore sceglie HTML/zip per mostrare il caso generale."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-017",
+   "run": "max17-v11-roberts-design",
+   "tipo": "dati",
+   "testo": "Style Guide di Relume per il progetto 'Mintlify Roofing', Concept 1: scala Neutrals + Salem #0C8C5E (verde, bloccato col lucchetto) + Cello #1D3557 (blu notte) + Burnt Sienna #E76F51 (arancio terracotta). Tipografia Body = Inter (Google, Free). Bottoni 'Pitch Concepts' e 'Shuffle'. Popup: 'New schemes available — Pick a scheme to apply to your page, based on your new colors'."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-018",
+   "run": "max17-v11-roberts-design",
+   "tipo": "esempio",
+   "testo": "Meta title e meta description generati da Relume, verbatim. Sito: Meta title 'Roofing Company | Summit Roofing Co.'; Meta description 'Trusted residential and commercial roofing contractor. Roof repair, replacement, installation and maintenance with transparent pricing and a clear process. Get a free quote.' Pagina Services: slug /services; Meta Title 'Roofing Services | Repair, Replacement & Installation — Summit Roofing'; Meta Description 'Explore our roofing services: roof repair, full replacement, new installation and maintenance for residential and commercial properties. See what each service involves.' Social preview: 1200x630 pixels, override per pagina."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-019",
+   "run": "max17-v11-roberts-design",
+   "tipo": "regola",
+   "testo": "Regola di produzione citata a voce durante il passaggio sitemap: 'an ounce in print is worth a pound in post' — un'oncia di lavoro in fase di stampa/progettazione vale una libbra in post-produzione. Giustifica il tempo speso su sitemap e wireframe prima di generare qualunque pixel."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-020",
+   "run": "max17-v11-roberts-design",
+   "tipo": "livello",
+   "testo": "LIVELLO 3 — THE SCROLL-STOPPER. Slide: 'SKILL 03 · HERO — 03 — The scroll-stopper' — citazione: 'Generate the exact image each section needs. Nothing generic.' Due badge sotto: 'Higgsfield generates' e 'Claude places' — la divisione del lavoro fra generatore di immagini e agente che le colloca. Striscia: '· LIVE DEMO · HERO IMAGE + MOTION, GENERATED ON CAMERA ·'. next: 'most visitors aren't on a monitor'."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-021",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tool",
+   "testo": "Higgsfield (higgsfield.ai) — 'AI IMAGE GENERATOR BUILT FOR PROFESSIONALS — Commercial-ready visuals in seconds. Perfect text, consistent characters, and every leading model at your fingertips.' Modello di default a schermo: Nano Banana Pro, ratio 3:4. Nav: Explore, Image, Video, Audio, Edit, Draw, Cinema Studio (New), Marketing Studio (New), Your Presets, MCP & Apps (New), Competitor Intel, Academy, Community, Onboard (New), Upgrade (50% OFF), Enterprise, Assets."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-022",
+   "run": "max17-v11-roberts-design",
+   "tipo": "procedura",
+   "testo": "Connessione Higgsfield a Claude via MCP, dalla pagina higgsfield.ai/mcp. Tab disponibili: Claude | Grok Bot | ChatGPT | Cursor | Claude Code | OpenClaw | Hermes. Toggle MCP|CLI. Passo 1: 'Copy the Higgsfield connector URL — You'll paste this URL into Claude in the next step' → campo con https://mcp.higgsfield.ai/mcp. Passo 2: 'Go to Claude → Customize — In Claude desktop or claude.ai, go to Customize → Connectors, Name it Higgsfield and paste the URL.' Passo 3: 'Connect, sign in and start — Sign in, then ask Claude to generate an image or video.' Nota a pie': 'If you are using Claude Code or Codex, it's better to use the CLI'."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-023",
+   "run": "max17-v11-roberts-design",
+   "tipo": "prompt",
+   "testo": "Prompt di connessione, dettato a voce: 'hey I want you to connect to the Higgsfield CLI so we can create beautiful images and videos. Here's the link'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-024",
+   "run": "max17-v11-roberts-design",
+   "tipo": "principio",
+   "testo": "IL PRINCIPIO DEL DESIGN LOOP, verbatim dalla guida Notion 'The Design Loop: Free Guide': 'Claude Design has taste. It just can't judge its own work. The context that builds a piece is the context that grades it — a chef reviewing their own restaurant. Five stars, every time. The Design Loop fixes exactly that: it moves the judging into fresh contexts that never saw the work being made. Parallel agents buy you speed. Fresh context buys you the result.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-025",
+   "run": "max17-v11-roberts-design",
+   "tipo": "principio",
+   "testo": "L'aside finale della skill Design Loop, verbatim: 'The one thing to remember — A critic that shares memory with the builder is grading its own homework. Everything else here is detail.' E' l'invariante piu' forte del video: il giudice non deve condividere la memoria del costruttore."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-026",
+   "run": "max17-v11-roberts-design",
+   "tipo": "framework",
+   "testo": "I quattro meccanismi della skill Design Loop, tabella verbatim: (1) 'A teardown pass into bar.md' → 'Converts a reference into checkable mechanisms before any building starts'. (2) 'Three critics with distinct briefs' → 'Each can fail work the other two would pass — one harsh critic collapses into a single opinion'. (3) 'A preflight check' → 'Verifies the critic can actually see before you waste a whole run'. (4) 'Model tiering across critics' → 'Cheap where judgment is mechanical, strongest where it's taste'."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-027",
+   "run": "max17-v11-roberts-design",
+   "tipo": "attribuzione",
+   "testo": "Il Design Loop e' dichiarato come adattamento del 'Gauntlet Loop' inventato da Matt Shumer, verbatim dalla guida: 'This method is an adaptation of the Gauntlet Loop, invented by Matt Shumer. He named it, defined it, and built the original — a Three.js FPS from a single prompt that did 3.8M views. Everything on this page is a variation on his idea.' Tweet originale (@mattshumer_, 9:52 PM Jul 27 2026, 63.4k views): 'I'm officially calling this the Gauntlet Loop. The agent (not you!) breaks the goal into parts, gives each part a specialist builder and a ruthless blind critic sub-agent, with a mandate to only pass if the generated artifact is better than some real-world equivalent.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-028",
+   "run": "max17-v11-roberts-design",
+   "tipo": "invocazione",
+   "testo": "La Design Loop e' una slash-skill di Claude. Verbatim a voce: 'you're going to do forward slash. You type in design loop.' → /design loop. La guida gratuita si scarica dalla pagina risorse dell'autore (secondo link in descrizione)."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-029",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tecnica",
+   "testo": "UI SNIPING — definizione verbatim: 'this is what I call UI sniping. UI sniping is the idea that we can find any UI component that we like and bring it over.' Il problema dichiarato quando la fonte e' un'immagine e non un componente: 'The problem with this is this is not a component. This is not a UI thing that we can just grab. We need to literally basically create this, but in the style for our own website.' Cioe' non si copia il codice: si ricostruisce l'effetto dentro il proprio design system."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-030",
+   "run": "max17-v11-roberts-design",
+   "tipo": "prompt",
+   "testo": "Prompt per costruire un componente su misura da un riferimento visivo, verbatim: 'Hey there, I want you to make a roofing version of this. And what I would like you to do is enable them to upload an image of the roof, answer a few questions, and then I want a beautiful Siri-like animation to play and then actually show what the price is for them, and we can capture that information.' — accompagnato dall'immagine di riferimento incollata e, in un secondo passaggio, da un VIDEO di riferimento per l'animazione scaricato da Savee."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-031",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tecnica",
+   "testo": "Doppio riferimento per un componente animato: (1) un'IMMAGINE di riferimento per il layout (una card di signup trovata su Savee: 'Welcome, you're starting your first journey here! Add your avatar and pick a nickname for quick start.'), (2) un VIDEO di riferimento per il movimento (card scura con esplosione radiale di particelle bianche e la parola 'Calculating.', scaricata da Savee come 'video overview suggestion for Claude to use'). Due riferimenti distinti per due dimensioni distinte."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-032",
+   "run": "max17-v11-roberts-design",
+   "tipo": "esempio",
+   "testo": "Il widget preventivo costruito (file:///Users/jackroberts/Desktop/roof-quote-section/welcome-card.html): card verticale con illustrazione ad acquerello blu di tetti, titolo 'A free quote for your roof.', campi 'Your roof' ('A photo helps accuracy. PNG or JPG — optional') + Upload, 'Postcode' [M1 4BT], 'The roof' [Full replacement], bottone nero 'Get my price'. Stati dell'animazione narrati: 'checking pitch and tiles' → 'price of materials' → 'almost there' → 'having a look around' → risultato £7,150. Card finale: 'FULL REPLACEMENT · £7,150 — Fixed price confirmed by a free 20-minute survey.' + Book free survey + avatar + '4.9 from 812 roofs'."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-033",
+   "run": "max17-v11-roberts-design",
+   "tipo": "esempio",
+   "testo": "Il widget integrato nel sito, sezione verbatim: 'SIXTY SECONDS — Get a number before anyone visits — Postcode, roof type, a photograph if you have one. The free survey confirms the number. It does not move after that.' Con due prove sociali a hover: 'Booked in this week' e '4,800 roofs kept dry'. La promessa 'It does not move after that' e' l'obiezione numero uno del settore preventivi, gestita in una riga."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-034",
+   "run": "max17-v11-roberts-design",
+   "tipo": "esempio",
+   "testo": "L'hero del sito Ridgeline, verbatim: badge 'NEW · Same-day storm response across the country →'; H1 'The roof your house was supposed to have'; sub 'Inspection, repair and replacement for homes and businesses, with a written scope before anyone climbs a ladder.'; form [Email address] + [Book my inspection]; micro-copy 'Free, and you keep the report whether you hire us or not.' Nav: Home, Services, About us, Projects, Blog | Contact us | Book an inspection."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-035",
+   "run": "max17-v11-roberts-design",
+   "tipo": "pattern",
+   "testo": "Pattern di sezione 'report interattivo' come scroll-stopper: sotto l'hero, un finto pannello software con sidebar (Overview, Findings, Photographs, Materials, Scope of works, Enclosed, Warranty), barra di ricerca 'Search this report' e bottone '+ Ask a roofer'. Intestazione 'Inspection · 14 May — What we found up there — Single-storey hip roof · 24 squares · architectural asphalt, 19 years old'. Findings: 'Flashing failed at the chimney saddle — Water is tracking behind the counter-flashing into the deck.' / 'Granule loss on the south slope — Sun-side wear consistent with age. Watch, do not replace yet.' / 'Decking is sound throughout — No soft spots. No sheathing replacement in this quote.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-036",
+   "run": "max17-v11-roberts-design",
+   "tipo": "pattern",
+   "testo": "Pattern 'Loved by your favorite companies' — carosello di card-logo su fondo scuro testurizzato, ognuna con UNA frase specifica e 'Read story →'. Verbatim: OpenAI 'How OpenAI keeps its research running through a full storm.' / Anthropic 'How Anthropic re-roofed its HQ without moving a single team off-site.' / Slack 'How Slack's atrium skylights were re-kerbed over one quiet weekend.' / PayPal 'How PayPal's data-centre roof passed its insurer audit first time.' / Notion 'How Notion turned a leaking warehouse into its calmest office.' / Spotify 'How Spotify's studio block was soundproofed from the roof down.' / Stripe 'How Stripe's listed HQ kept its copper roof and its character.' / Dropbox 'How Dropbox consolidated four roofs onto one maintenance plan.' Cliccando si apre la customer story con due metriche secche (es. 84 'Squares of single-ply' / 0 'Trading days lost')."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-037",
+   "run": "max17-v11-roberts-design",
+   "tipo": "livello",
+   "testo": "LIVELLO 4 — MOBILE. Slide 'SKILL 04 · MOBILE — 04 — Where the traffic is'. Striscia: '· LIVE DEMO · EVERY PAGE AUDITED AT 390PX ·'. next: 'words that don't sound like AI.' Il numero 390px (larghezza logica di un iPhone 14/15 in portrait) compare SOLO nella slide, mai a voce: e' il numero operativo del livello."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-038",
+   "run": "max17-v11-roberts-design",
+   "tipo": "dato",
+   "testo": "Dato dichiarato a voce al Livello 4: 'level four realistically is understanding that 60% of traffic at least actually is on our phones'. Nessuna fonte citata per il 60%."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-039",
+   "run": "max17-v11-roberts-design",
+   "tipo": "prompt",
+   "testo": "Prompt per l'ottimizzazione mobile, verbatim: 'Hey, I want you to mobile optimize this website. Go out and find for me the most proficient, well-read repos that have been battle tested that will make sure that it follows all of the best mobile design principles.' Nota di tecnica: non si chiede a Claude di sapere le regole, si chiede di ANDARE A CERCARE i repo battle-tested che le contengono."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-040",
+   "run": "max17-v11-roberts-design",
+   "tipo": "regola",
+   "testo": "Metodo mobile dichiarato, verbatim: 'we'd start off with the mobile first and then work backwards to get to the actual full desktop version. And there is no substitute but to actually going through the mobile yourself. Claude can do loads of checks using the repo that I'll share below in the skills section, but ultimately speaking you want to go through the website yourself and check it out.' Mobile-first, poi a ritroso al desktop, e la verifica finale resta umana."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-041",
+   "run": "max17-v11-roberts-design",
+   "tipo": "osservato",
+   "testo": "Cosa cambia davvero nella versione stretta del sito, osservato dai frame: la nav si chiude in hamburger, la fila di 5 loghi diventa griglia a 2 colonne (OpenAI/Anthropic — Slack/PayPal — Stripe), il carosello 'Loved by your favorite companies' diventa swipe orizzontale con frecce, il report d'ispezione diventa lista verticale con foto impilate. Ammissione a voce: 'believe it or not, it did not look like this initially. I had to do this... it's not perfect.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-042",
+   "run": "max17-v11-roberts-design",
+   "tipo": "livello",
+   "testo": "LIVELLO 5 — DE-SLOPIFICATION. Slide 'SKILL 05 · COPY — 05 — De-slopification' — citazione: 'Readers smell AI copy in one line.' Le parole al bando come chip barrati rossi: 'It's not just X, it's Y', 'seamless', 'unlock', 'elevate', 'robust', 'leverage', 'faster, smarter, better', 'Let's dive in'. La pipeline in tre chip collegati: BENCHMARK → REWRITE → CLEANSE. next: 'the details that finish it'."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-043",
+   "run": "max17-v11-roberts-design",
+   "tipo": "framework",
+   "testo": "LA TABELLA 'SIGNS OF AI WRITING' — il pezzo piu' riusabile del video. Introduzione verbatim: 'These are the tells that get a line rewritten on sight. Every one of them showed up in a first draft of this page and was cut. Struck-through is what was written; green is what shipped.' I SEI TELL, ognuno con coppia prima/dopo e regola: (1) THE THREE-ITEM FLOURISH — 'Trusted, reliable and built to last.' → 'Six nails per shingle, every shingle.' — regola: 'Three adjectives is a rhythm, not an argument. One specification beats it every time.' (2) 'NOT JUST X, BUT Y' — 'Not just a roof, but peace of mind.' → 'A written scope and a fixed number before anyone climbs a ladder.' — regola: 'The construction promises a reveal and then delivers an abstraction.' (3) ELEVATED VERBS — 'We leverage industry-leading materials to deliver unparalleled protection.' → 'We source materials from manufacturers who "
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-044",
+   "run": "max17-v11-roberts-design",
+   "tipo": "regola",
+   "testo": "La regola di tracciabilita' del copy, verbatim dalla tab Copy del sito: 'Not from a brand workshop. Every line traces to one of four sources, and if a sentence cannot name its source it does not go on the page.' Ogni riga di copy deve poter nominare la propria fonte, altrimenti non va in pagina."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-045",
+   "run": "max17-v11-roberts-design",
+   "tipo": "inferito",
+   "testo": "Le quattro fonti del copy: i TITOLI delle quattro colonne sono coperti dall'overlay webcam in tutti i frame disponibili. I corpi leggibili sono: (1) '...Six nails per shingle, every shingle is a real specification with a real failure mode behind it. Nothing invented sounds like that, because invented copy does not know the trade.' (2) '...that the timber will move, that the yard will be wrecked, that they are being sold a whole roof for a flashing problem. The page answers those three in order.' (3) '...goes one level further than promises. We do not do overlays and we do not quote from the driveway both position and disqualify in one line.' (4) '...two lines came in from the layout already written — the process steps and From first call to final nail. They were better than anything a rewrite would produce, and were left untouched.' RICOSTRUZIONE INFERITA dei titoli: (1) cosa fa davvero "
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-046",
+   "run": "max17-v11-roberts-design",
+   "tipo": "fonti",
+   "testo": "Le fonti tecniche del sistema di de-slopification, dalla tab Copy: (a) icona GitHub '36,087 ★' — 'Built on the leading open-source humanisers. All four MIT.' (b) 'Signs of AI writing' — 'Wikipedia's canonical catalogue of the tells. By the people who clean them up.' (c) 'GPT-5.6 cleanse' — 'A frontier model, sceptical — never trusted without the limiter on both sides.' (d) 'World-class copy' — 'Benchmarked live against the category's best. Headlines scored verbatim.' (e) 'delve' — '65 words · 8 shapes'. (f) '3/5 → 5/5' — 'This page, measured before and after — not asserted.' Bottone 'ACTIVATE MAGIC COPY' — 'Flips every line on the Website tab to its rewritten version, live.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-047",
+   "run": "max17-v11-roberts-design",
+   "tipo": "principio",
+   "testo": "La psicologia dichiarata sotto il Livello 5, verbatim: 'it's underpinned by some core psychology. One of the best psychological principles in building anything is this idea of don't make me think. The idea essentially being that people don't read websites, they browse them. I need to be able to glance at it and understand what the website is about. Don't take anybody's time for granted... if I have to invest a minute to understand what your website is about, it's too much. So general idea, use the system one cognition. Just make it super easy. You want to name the pain.' (L'autore si autocorregge a voce da 'system two' a 'system one'.)"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-048",
+   "run": "max17-v11-roberts-design",
+   "tipo": "esempio",
+   "testo": "Before → after su un secondo prodotto (Neuro, app di allenamento al prompting). THE HERO: 'Get started' → 'Start free'; 'A Fun Way to learn AI' → 'Everyone uses AI. Almost nobody is good at it.'; nuova riga aggiunta: 'Neuro is five minutes a day of real prompting problems, marked the second you answer. You stop guessing at what works.'; 'Get started' → 'Start your first lesson'. THE HABIT: 'the streak does the work' → 'the hard part is day four'; 'Start a streak' → 'Start day one'. Corpo riscritto: 'Motivation gets you through day one. A streak gets you through day four. Miss a day and it resets, which turns out to be all the pressure anyone needs. You get five hearts a day, one per wrong answer, refilled overnight.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-049",
+   "run": "max17-v11-roberts-design",
+   "tipo": "principio",
+   "testo": "Onesta' della prova sociale, esempio verbatim dal sito Neuro: 'THE METHOD — built on how people actually learn — Two techniques do the work. Retrieval practice means recalling a skill instead of rereading it. Spaced repetition brings a concept back just as you're about to forget it.' Poi il riquadro: 'Both are among the most-replicated findings in learning science. Neuro is new, so this evidence is for the method, not for us.' Si cita la prova per il metodo e si dichiara di non averne ancora per se stessi."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-050",
+   "run": "max17-v11-roberts-design",
+   "tipo": "livello",
+   "testo": "LIVELLO 6 — ICONS + SHOWSTOPPERS. Slide 'SKILL 06 · DETAILS — 06 — Icons + showstoppers' con una fila di 8 loghi di librerie di icone e il numero '941 LICENSED ICONS — one subscription, in the repo, forever'. Striscia: '· LIVE DEMO · ONE UI MOMENT SNIPED FROM SAVEE, REBUILT IN OUR BRAND ·'. next: 'nobody can find it yet'."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-051",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tool",
+   "testo": "21st.dev — libreria di componenti UI copiabili come codice. Sidebar: Components (Featured, Newest, Authors, Libraries [Updated]) e Marketing Blocks (Announcements, ASCII Art [New], Backgrounds, Borders, Calls to Action, Clients, Comparisons). Componenti visti: Orbital Sphere, Scroll Animations (Container Scroll Animation), Interactive 3D, Shine Border, Border Beam. Nella categoria Borders: tab Recommended | Most downloaded | Most bookmarked | Newest."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-052",
+   "run": "max17-v11-roberts-design",
+   "tipo": "procedura",
+   "testo": "Flusso di UI sniping da 21st.dev, verbatim: 'If you've got the Relume MCP you can just ask it, or if you're grabbing it from a different website like 21st.dev you can come down and literally just copy the code, head over to Claude and say: Hey, add this to my website.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-053",
+   "run": "max17-v11-roberts-design",
+   "tipo": "dati",
+   "testo": "Librerie di icone citate: Icons8, Flaticon, IconScout. Costo dichiarato: '$10 to 12' al mese per stare su una di queste piattaforme; l'autore dichiara di non essere sponsorizzato. Su flaticon.com, sezione UICONS — 'The most wanted free SVG user interface icons' — quattro stili con conteggi reali: Bold 50,689 icons, Regular 10,899 icons, Solid 10,899 icons, Thin 10,899 icons. Consiglio di targeting: 'if you're doing a kind of new-age cool vibe, younger demographic — millennial or Gen Z or below — you may want to use cool graphics.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-054",
+   "run": "max17-v11-roberts-design",
+   "tipo": "livello",
+   "testo": "LIVELLO 7 — SEO-IFICATION. Slide 'SKILL 07 · SEO — 07 — SEO-ification' — citazione: 'Grab a skill. Point Claude at the site. Approve the fixes.' Tre chip con i nomi delle skill: claude-seo, amazing-seo-skill, seo-audit-skill. Striscia: '· LIVE DEMO · META, SCHEMA AND OG PATCHED ON CAMERA ·'. Ultima frase-ponte: 'last: make it live.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-055",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tool",
+   "testo": "claude-seo (repo GitHub, MIT). About verbatim: 'Universal SEO skill for Claude Code. 25 sub-skills + 18 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, backlinks, local SEO, maps intelligence, semantic clustering, e-commerce SEO, international SEO, Google APIs, and PDF/Excel reporting. Optional DataForSEO, Firecrawl, and Banana extensions.' Release in evidenza: 'Claude SEO v2.2.5 - Reliability and Google currency'. 9 branch, 23 tag, 23 release, 17 contributor. Linguaggi: Python ~60%, PowerShell ~15%, Shell, HTML ~1.7%, JavaScript. Root: CHANGELOG.md, CITATION.cff, CLAUDE.md, CODE_OF_CONDUCT.md, CONTRIBUTING.md, CONTRIBUTORS.md, LICENSE, PRIVACY.md, README.md, SECURITY.md, install.ps1, install.sh. Comando d'esempio nel banner: /seo-backlinks rival.com. Due versioni: public open-source (MIT) e community private mirror (a membership)."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-056",
+   "run": "max17-v11-roberts-design",
+   "tipo": "prompt",
+   "testo": "IL PROMPT SEO IN 5 MOSSE, verbatim: 'Hey, I want you to go ahead and find for me the best SEO design strategies that exist on the internet, and I want you to take a look at this SEO repo, and I want you to build a checklist and a strategy for my website — the things that I can rank for. Here are some of the keywords that I want to rank for, here's the kind of intent that I want to do, and I want you to question me on my customer so that we together can find out the long-tail intention words, the short intention words, and I want you to rank those based on volume and also difficulty. And from that we're going to build up an SEO strategy, a content roadmap, and we're going to find SEO suggestions for our own website.' Le cinque mosse: (1) ricerca esterna sullo stato dell'arte, (2) lettura del repo-skill, (3) checklist + strategia, (4) INTERVISTA DI RITORNO sul cliente, (5) ranking volume x"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-057",
+   "run": "max17-v11-roberts-design",
+   "tipo": "esempio",
+   "testo": "Il deliverable SEO reale (artifact pubblico di Claude, 'Glaido SEO Strategy', 19 AUGUST 2026). Copertina: titolo 'OWN VOICE CODING' + tesi verbatim 'The biggest undefended demand in this category is not dictation. It is people trying to code by talking — and almost nobody has written the pages for it. This is the plan for taking that lane, with every keyword sized, sorted and ready to copy.' Tre numeri in copertina: 119,000 ('US searches a month in the coding lane — Vibe coding, voice coding, Claude Code voice, Cursor voice. Estimated, ±50%'), 4 ('Pages Whisper Flow has built there — Out of 306 pages in total. They have not noticed yet.'), 0 ('Pages Glaido has built there — The 351 keywords in this document close that gap.'). Indice: 01 Why voice coding, not dictation / 02 The whole list, one click / 03 Short tail — the head terms."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-058",
+   "run": "max17-v11-roberts-design",
+   "tipo": "framework",
+   "testo": "La tabella keyword del deliverable SEO, colonne: KEYWORD | EST. VOL/MO | DEMAND INDEX | DIFFICULTY | VERDICT | WHY. Quattro verdetti a chip: TAKE, EASY, LATER ('Month two or three'), SKIP ('Wrong intent or unwinnable'). Normalizzazione dichiarata: 'demand index relative to dictation app = 100'. La colonna WHY e' obbligatoria e giustifica ogni verdetto in una riga. Esempi verbatim: 'speech to text' ~280,000 / 2670 / HARD / SKIP / 'Video-editing intent — CapCut, Premiere, DaVinci. Wrong buyer.'; 'voice coding' ~12,000 / 111 / MEDIUM / EASY / 'Barely defended. Closest head term to what we do.'; 'claude code voice' ~8,700 / 83 / EASY / EASY / 'Almost nobody has written this page.' Piu' un bottone 'Master list — 351 keywords as TSV / COPY ALL — Paste straight into Sheets or Excel.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-059",
+   "run": "max17-v11-roberts-design",
+   "tipo": "strategia",
+   "testo": "Riga di posizionamento dentro il deliverable SEO, verbatim: '...an expensive product, so cheaper alternative is off the table. Our wedges are zero data retention, speed, and the coding lane.' Il documento SEO dichiara esplicitamente i cunei competitivi prima di elencare le keyword."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-060",
+   "run": "max17-v11-roberts-design",
+   "tipo": "procedura",
+   "testo": "Deploy, verbatim: 'to post it, you just need to basically tell Claude to upload this to GitHub in a private repo... And then you can run the entire thing from Vercel. Vercel hosts everything. It even hosts many of the websites that I show you on this channel. Super duper easy to set up. Explain to Claude and it will explain it to you step by step.'"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-061",
+   "run": "max17-v11-roberts-design",
+   "tipo": "tesi",
+   "testo": "La chiusura del video, verbatim: 'these design skills are handy and they do help us build beautiful websites that sell. But the truth is, if you don't have your own design operating system, you're leaving way too many hours and productivity and value on the table.' Le sette skill sono i pezzi; il sistema che li orchestra (design OS) e' il passo successivo."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-062",
+   "run": "max17-v11-roberts-design",
+   "tipo": "pattern",
+   "testo": "IL 'DREAM REVIEW' — pattern architetturale mostrato solo come b-roll, mai spiegato a voce. Un cron notturno (claude-nightdream-cron.log, engine CODEX) analizza i pattern di 7 giorni e produce raccomandazioni con risparmio stimato. Esempio verbatim: 'WORKFLOW · 145 min saved — Collapse the duplicate morning briefs before another 80-message run — Keep one strategic morning brief schedule and make the Google Workspace check its preflight. Two strategic brief schedules ran yesterday, while today's run consumed another 87 messages. Fetch inbox and calendar once, fail last when either source is unavailable, then perform one synthesis pass. Inspect the cron list before removing or changing anything.' Ogni raccomandazione ha: un pulsante 'WHY WE'RE SUGGESTING THIS', un comando copiabile ('TRY IT NOW — COPY THIS AND PASTE INTO CLAUDE CODE' → hermes cron list), e tre esiti: RUN THIS FIX / SKIP / A"
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-063",
+   "run": "max17-v11-roberts-design",
+   "tipo": "dati",
+   "testo": "Cruscotto di consumo del 'Claude Code OS' dell'autore (localhost:8081/dashboard, header 'Operator | local | v0.2 | HEALTHY'): card Claude Code / Claude Max 20x con 5-HOUR LIMIT 69% (145), WEEKLY - ALL MODELS 2,735 (5,200), OPUS ONLY 18 (2,220); card ChatGPT Plus 6%. Riga 'Trends over time — TRACKING STARTED TODAY': MESSAGES 2,735, WEEKLY WINDOW 80%, SKILL RUNS 196. Sidebar dell'app: Home, Dashboard, Memory, Knowledge Graph + HERMES-AGENT e OPEN CLAUDE."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-064",
+   "run": "max17-v11-roberts-design",
+   "tipo": "dati",
+   "testo": "Statistiche d'uso di Claude dell'autore, pannello Overview: Sessions 540, Messages 132,025, Total tokens 97.2M, Active days 53, Current streak 21d, Longest streak 21d, Peak hour 7 PM, Favorite model Fable 5. In una seconda ripresa (sessione diversa): Sessions 532, Messages 132,263, Total tokens 97.3M, selettore modello Opus 5 / Extra. Nota sotto l'heatmap: 'You've used ~943x more tokens than Harry Potter and the Philosopher's Stone' [moltiplicatore incerto a 360p] — nella seconda ripresa cita Dune."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-065",
+   "run": "max17-v11-roberts-design",
+   "tipo": "curriculum",
+   "testo": "Sezione 08 Design del corso a pagamento dell'autore, lezione per lezione: 8.1 Claude Code Design (NEW) — Use the workbook / Animations baked in / Export and share; 8.2 HTML presentations — Drop in for any website / CSS only / SVG patterns / Motion that converts; 8.3 Animated graphics; 8.4 Spline 3D; 8.5 ElevenLabs + Higgsfield — Voice generation / Video generation / Combining pipeline; 8.6 Nano Banana images — Best prompt patterns / Production workflow / Quality control; piu' 'Auto-fetch brand assets — Just enter your logo from any URL, with Firecrawl'. Il corso intero: 10 PARTS · 46 LESSONS · 40+ HOURS."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-066",
+   "run": "max17-v11-roberts-design",
+   "tipo": "limite",
+   "testo": "Limiti dichiarati del video: (1) il corpo completo della skill Design Loop non e' mai a schermo (solo tabella dei 4 meccanismi + aside); (2) SlopMonster (github.com/ItsssssJack/SlopMonster) e' solo linkato in descrizione, mai aperto; (3) la generazione con Higgsfield non e' mai mostrata dal vivo malgrado la slide dica 'GENERATED ON CAMERA'; (4) Claude non e' mai mostrato mentre lavora — si vede il prompt e si vede il risultato, non il mezzo; (5) il 'before' del sito non esiste a schermo; (6) incoerenza 28 keyword (voce) vs 351 keyword (documento), non spiegata; (7) i titoli delle 4 fonti del copy sono coperti dalla webcam."
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-067",
+   "run": "max17-v11-roberts-design",
+   "tipo": "limite",
+   "testo": "Contenuto misto educativo/promozionale dichiarato: circa 90 secondi su 1376 (~6.5%) sono promo della community gratuita Skool 'AI Automation Vault' (33.3k membri, 324 online, 5 admin) e del corso a pagamento 'Claude Code FULL COURSE (Build & Sell)'. In descrizione tre link affiliati dichiarati: Higgsfield, Relume, e Glaido con codice sconto WHSAAKXO per 1 mese gratis."
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-001",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "$1.2M ARR — attributed entirely to LinkedIn"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-002",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "31K Total Followers (31,000 follower totali)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-003",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "$0 Spent on paid ads"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-004",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "$1,294,700 in one year — fatturato preciso in un anno"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-005",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Zero cold outreach messages sent · Every dollar traced to LinkedIn — tutto il fatturato è tracciabile fino a LinkedIn, nessun messaggio a freddo inviato"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-006",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "92% ICP match — Of 31,000 followers — vs. 2% ICP match on a generic 200,000-person audience"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-007",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "Oltre 60 clienti gestiti attivamente: B2B consultants, B2B SaaS, B2B businesses, B2B coaches"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-008",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "L'autore genera 3-5 dollari per follower, contro circa 1 dollaro (o meno) generato dalla maggior parte degli operatori LinkedIn"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-009",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Core insight: the metric that matters is not follower count — it is buyer concentration"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-010",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "The Consumer Social Model (Wrong for B2B): more followers equals more revenue · go big, go broad — chase reach · 200,000 followers, only 2% are your actual ICP · trains the algorithm to show content to people who will never buy · causes founders to make genuinely bad decisions"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-011",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "The Buyer Concentration Model: 31,000 followers — overwhelming majority are exact decision-makers · every conversion event is a $10K-$100K contract, not a $20 ebook"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-012",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "THE REAL METRIC: You do not need 500,000 followers. You need the right 5,000 — and a system that keeps pulling more of them in"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-013",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "Three Components, Running Together: 1) Content that pulls in buyers, not followers · 2) A profile that converts the traffic content generates · 3) Two mechanisms that turn engagement into booked calls"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-014",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Why 'Personal Brand' Content Fails in B2B: posting industry takes, leadership lessons and morning routines builds followers who never convert. A big audience of the wrong people is worse than a small audience of the right ones — it trains the algorithm to show your content to people who will never buy"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-015",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "The One-Sentence Post Test: can a qualified prospect read this and say 'yes — that is exactly my situation'? If not, wrong post"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-016",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "Two Content Types That Actually Work: Named Problem Posts + Surfaced Problem Posts"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-017",
+   "run": "max17-v04-trivellato",
+   "tipo": "template",
+   "testo": "Named Problem Posts: name the expensive problem the ICP is already thinking about — the pain they can already articulate"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-018",
+   "run": "max17-v04-trivellato",
+   "tipo": "template",
+   "testo": "Surfaced Problem Posts: surface a problem they did not know they had — the pain they haven't named yet"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-019",
+   "run": "max17-v04-trivellato",
+   "tipo": "script",
+   "testo": "Esempio reale di named-problem post (AI voice per home service companies): hook con cifre mock dichiarate dall'autore — 'home service businesses are losing 80K a month on missed calls. AI can do it for 10K'"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-020",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "Il post named-problem sull'AI voice ha ottenuto solo ~15 like ma un commento con tag a un partner ha generato un cliente da $10-16K"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-021",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "Esempio surfaced-problem post (agenzie SEO): 'Here's how to audit your SEO with 5 steps' — mostra 5 metriche, la media di settore e come intervenire, trasformando il post in un audit gratuito che fa emergere il gap del prospect"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-022",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "The Compound Effect: Right Person Follows (il concentrated ICP segue perché un post ha nominato la sua situazione esatta) → Sees Every Post For 6 Months (presenza costante nel feed, non un momento virale, fiducia sostenuta) → Reads The Case Studies (quando sono pronti a comprare, sei già posizionato come la risposta)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-023",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Why This Explains The $1.2M: not one viral post — just the right people in the feed long enough to trust the work. That's what 31,000 concentrated followers actually produces"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-024",
+   "run": "max17-v04-trivellato",
+   "tipo": "cadenza",
+   "testo": "Regola di cadenza: postare sempre negli stessi giorni e allo stesso orario, mantenendo il contenuto sempre rilevante, per costruire una routine sia con l'audience sia con l'algoritmo LinkedIn (nessun giorno/orario specifico dichiarato nel video)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-025",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "31.000 follower concentrati producono 10 volte più risultati di 300.000 follower sparsi che non si interessano davvero al contenuto"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-026",
+   "run": "max17-v04-trivellato",
+   "tipo": "template",
+   "testo": "CTA di offerta ('Quick thing'): 'If you want us to build this entire system for you, we'll look at your current LinkedIn setup and tell you exactly where it's broken. Not a pitch — a diagnostic. → yourbrand.com — Book a Strategy Call'"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-027",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "The 4 Profile Elements — Rebuilt As A Sales Page: tabella completa Mistake/Fix su headline, custom button, featured section e struttura generale del profilo"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-028",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Mistake #1: job title used as the headline (es. 'CEO at company you've never heard of' — chiunque può scriverlo, non differenzia)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-029",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Fix #1: headline = who you help + outcome delivered, nothing else. Esempio reale dell'autore: le prime due parole del suo headline sono 'Agencies and SaaS', il suo ICP esatto"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-030",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Mistake #2: custom button links to a generic homepage (o assente del tutto)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-031",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Fix #2: custom button = direct link to a booking calendar"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-032",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Mistake #3: featured section left empty"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-033",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Fix #3: featured section = case study + video testimonial + methodology breakdown"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-034",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Mistake #4: profile reads like a career history, not a sales page"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-035",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Why This Matters Most: fixing the profile beats improving content. The traffic is already arriving. A broken profile just lets it silently evaporate"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-036",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "The Silent Leak Most Founders Never Diagnose: Great Content, Real Reach (right people are seeing the posts — top of funnel is working) → Profile Doesn't Convert (all that traffic evaporates silently — you never see the people who visited and left) → Wrong Diagnosis (founders assume the content isn't good enough, rewrite content, conversions don't improve, cycle repeats)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-037",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "What Happens Without This: you keep 'fixing' content that was never the actual problem — while the real leak sits untouched on the profile page"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-038",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "The profile is not a resume. It's the page a prospect lands on the second they think [...] this? (frase parzialmente coperta a schermo, senso chiaro dal contesto ma non integralmente leggibile)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-039",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "The Gap Most People Leave Open: a profile visit is not a booked call. Great content plus a clean profile still leaves most of the pipeline on the table — without a specific mechanism, it just sits there"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-040",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "Mechanism 1 — Lead Magnet Posts: most people post and passively wait for DMs (unpredictable, low volume); un lead magnet post richiede un commento + una richiesta di connessione per ricevere la risorsa; ogni commentatore diventa una connessione di 1° grado che vede tutti i post futuri; non sono follower casuali, hanno alzato la mano per il problema esatto che risolvi; ogni nuova connessione aumenta la reach del post successivo"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-041",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "300-1,000 Qualified ICP connections per post (lead magnet) · 1st Connection tier — sees every future post"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-042",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "Un lead magnet post con 500 commenti può convertire in circa 300-400 nuovi follower da un solo post"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-043",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "Mechanism 2 — Profile View Outreach: multiple profile views in a short window = active research = buying behaviour; most people see this notification and simply ignore it; the play — one genuine question, no pitch, no deck; you are not interrupting — you are responding to a signal they already gave"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-044",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "40-50% Response rate sul Profile View Outreach (dato mostrato a schermo nella grafica Miro)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-045",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "20 to 50% response rate sul Profile View Outreach (cifra pronunciata a voce, leggermente diversa dal 40-50% mostrato a schermo — discrepanza dichiarata)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-046",
+   "run": "max17-v04-trivellato",
+   "tipo": "script",
+   "testo": "The Exact Message — Word For Word: 'Noticed you have been checking out my profile — curious what caught your attention?'"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-047",
+   "run": "max17-v04-trivellato",
+   "tipo": "script",
+   "testo": "Variante parlata dello stesso apritore DM (più discorsiva, non scritta a schermo): 'Hey, LinkedIn told me you were snooping around my profile and I was wondering if there's anything I can help you with? I'm happy to point you in the right direction or provide any advice if it's relevant.'"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-048",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "Why This Compounds — The Three Layers Together: L1 Content Pulls In The Right People (buyer-concentrated content brings in the exact ICP, not a broad crowd of followers) · L2 Profile Holds Them On Arrival (a sales-page-style profile converts the traffic instead of silently losing it) · L3 Mechanisms Force The Conversation (lead magnet posts and profile view outreach turn passive engagement into a booked call)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-049",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "The Point Most People Miss: 31,000 followers is almost beside the point — this exact system works at 5,000. Build it before the audience feels 'big enough' to bother"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-050",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Goal: take engagement from 'I saw your post' to 'I booked a call because I already trust the work.'"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-051",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "Alcuni clienti con soli 200 follower hanno prenotato 7 call qualificate in pochi giorni"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-052",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "Persone con 10.000 follower gestiscono con questo sistema un canale marketing da $50K-$100K al mese"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-053",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Non c'è alcun danno nel vendere subito se il servizio è genuinamente valido e il contenuto è genuinamente valido — non serve costruire prima l'audience ('build the audience first' è definita una delle bugie più grandi che si sentono in giro)"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-054",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "Recap finale a 3 box: (1) 31,000 followers — a genuinely concentrated audience; (2) $1.2M ARR in one year — zero paid ads, zero cold outreach; (3) the follower count didn't matter, the system did"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-055",
+   "run": "max17-v04-trivellato",
+   "tipo": "template",
+   "testo": "Headline pagina servizio/agenzia (parzialmente leggibile, la parte iniziale è tagliata fuori dal frame): '[...] days using LinkedIn alone. We write your posts, run your DMs, and book 20-30 qualified sales calls onto your calendar every month. Done-for-you.'"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-056",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "20-30 qualified sales calls prenotate sul calendario ogni mese — promessa di servizio dell'agenzia dell'autore"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-057",
+   "run": "max17-v04-trivellato",
+   "tipo": "metodo",
+   "testo": "Montage di social proof: screenshot di post LinkedIn B2B ad alte performance usati come ispirazione visiva, incluso un post firmato dallo stesso Paolo Trivellato e post di William Brown, Samuel Beck, Jared Orkin, Ariel Cohen, Eugenio Zaibell, Nick Nihalos"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-058",
+   "run": "max17-v04-trivellato",
+   "tipo": "numero",
+   "testo": "'We see so many industries': Legal Service, Financial Service, Marketing Agencies, IT Consulting, SaaS — 5 settori esplicitamente mostrati come coperti dall'agenzia"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-059",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "Anche con 10.000-50.000 impression/mese si dovrebbero comunque ottenere alcuni lead al mese da LinkedIn, se il funnel (profilo + meccanismi) funziona correttamente"
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-060",
+   "run": "max17-v04-trivellato",
+   "tipo": "regola",
+   "testo": "100K+/Month, Zero Ads, Zero Cold Outreach — titolo di capitolo del video (metadato ingest.json) che riassume il claim: oltre $100K/mese fatturati negli ultimi 6 mesi con crescita mese su mese, zero pubblicità a pagamento, zero cold outreach"
+  }
+ ]
+}

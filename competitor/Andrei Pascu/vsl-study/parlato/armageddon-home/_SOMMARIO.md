@@ -5,97 +5,85 @@ Solo misure e testo letterale. Nessun giudizio: quello arriva in Fase 4.
 | misura | valore |
 |---|---|
 | durata del video | 13:28.73 (808.73 s) |
-| durata totale del parlato | 13:11.54 (791.54 s) |
-| percentuale di parlato | 97.9% |
-| segmenti vocali | 225 (16.69 al minuto) |
-| parole totali | 2959 |
-| parole al minuto (su tutto il video) | 219.5 |
-| parole al minuto (sul solo parlato) | 224.3 |
-| pause sopra 0.5 s | 13 |
-| pausa piu' lunga | **3.00 s** a 00:30.46 -> 00:33.46 (interna) |
+| durata totale del parlato | 12:58.45 (778.45 s) |
+| percentuale di parlato | 96.3% |
+| segmenti vocali | 250 (18.55 al minuto) |
+| parole totali | 3007 |
+| parole al minuto (su tutto il video) | 223.1 |
+| parole al minuto (sul solo parlato) | 231.8 |
+| pause sopra 0.5 s | 11 |
+| pausa piu' lunga | **3.64 s** a 00:30.47 -> 00:34.11 (interna) |
 | volume medio / massimo della traccia | -20.6 / -0.0 dBFS |
 | silenzi grezzi -30 dBFS (>=0,30 s) | 7 |
 | silenzi grezzi -40 dBFS (>=0,30 s) | 7 |
 | silenzi a soglia relativa (-39 dBFS, >=0,30 s) | 7 |
-| loudness mediana dei segmenti parlati | -21.7 LUFS-M |
+| loudness mediana dei segmenti parlati | -21.6 LUFS-M |
 | picco momentaneo | -11.1 LUFS-M a 00:08.70 |
-| segmenti sopra la mediana di +3 LU o piu' | 5 |
+| segmenti sopra la mediana di +3 LU o piu' | 3 |
 
 ## Le dieci pause piu' lunghe
 
 | # | inizio | durata | dopo la parola | prima della parola |
 |---|---|---|---|---|
-| 1 | 00:30.46 | 3.00 s | `lanciati!` | `Rilassati.` |
-| 2 | 03:28.42 | 1.70 s | `notte.` | `Questo` |
-| 3 | 06:35.24 | 1.33 s | `provarci` | `eccoci` |
-| 4 | 01:13.37 | 0.82 s | `Knowledge.` | `Knowledge,` |
-| 5 | 07:49.89 | 0.78 s | `'operato?` | `Fanno` |
-| 6 | 07:45.13 | 0.68 s | `chiama` | `bandellarmageddon,` |
-| 7 | 02:27.43 | 0.67 s | `perché` | `so` |
-| 8 | 06:41.19 | 0.66 s | `cedendo` | `199` |
-| 9 | 04:35.02 | 0.64 s | `'arma` | `Meglioni` |
-| 10 | 08:54.87 | 0.64 s | `insegnerò.` | `Ti` |
+| 1 | 00:30.47 | 3.64 s | `lanciato!` | `Rilassati.` |
+| 2 | 00:17.34 | 2.90 s | `terrorizzata` | `Venuto` |
+| 3 | 03:29.21 | 1.20 s | `notte.` | `Questo` |
+| 4 | 01:37.50 | 1.02 s | `pazienza.` | `Domain` |
+| 5 | 00:25.47 | 0.78 s | `Armageddon` | `Permi` |
+| 6 | 07:50.16 | 0.76 s | `Operator?` | `Funnel` |
+| 7 | 06:36.03 | 0.73 s | `provarci,` | `eccoci` |
+| 8 | 02:26.76 | 0.67 s | `che` | `perché` |
+| 9 | 00:06.51 | 0.61 s | `quanti` | `ugualmente` |
+| 10 | 04:05.21 | 0.58 s | `video,` | `email` |
 
 ## Dove la voce sale -- segmenti a +3 LU o piu' sopra la mediana
 
 | inizio | LUFS-M | delta | testo letterale |
 |---|---|---|---|
-| 00:08.12 | -15.2 | +6.5 LU | E' totale pausa |
-| 00:27.82 | -16.3 | +5.4 LU | Adesso cambia tutta a tutti, che gli hanno appena lanciati! |
-| 00:09.34 | -17.9 | +3.8 LU | Assieme disperate dall'implementare le AI |
-| 00:26.10 | -18.5 | +3.2 LU | Fermi tutti, fai un respiro |
-| 00:23.86 | -18.6 | +3.1 LU | WIFE, King Armageddon |
+| 01:38.52 | -15.4 | +6.2 LU | Domain Knowledge. |
+| 00:26.25 | -17.2 | +4.4 LU | Permi tutti, fai un respiro. Adesso cambia tutto a tutti, che gli hanno appena lanciato! |
+| 01:20.88 | -18.6 | +3.0 LU | Chi è che vince? Chi ha Domain Knowledge? |
 
 ## Come apre -- primi 15 secondi, testuali
 
-**[00:00.00 -> 00:04.60]** Guardati intorno, tutti sanno usare le AI, tutti hanno accesso a tutto
+**[00:00.00 -> 00:06.51]** guardati intorno, tutti sanno usare le AI, tutti hanno accesso a tutto, eppure sono tutti quanti
 
-**[00:04.60 -> 00:08.12]** Eppure, sono tutti quanti, ugualmente al verde
-
-**[00:08.12 -> 00:09.34]** E' totale pausa
-
-**[00:09.34 -> 00:11.44]** Assieme disperate dall'implementare le AI
-
-**[00:11.44 -> 00:15.10]** Eppure le più grandi dichiarano di averci perso soldi e stanno tornando indietro
+**[00:07.12 -> 00:15.16]** ugualmente al verde, totale caos, aziende disperate dall'implementare le AI, eppure le più grandi dichiarano di averci perso soldi e stanno tornando indietro
 
 ## Come chiude -- ultimi 20 secondi, testuali
 
-**[13:08.37 -> 13:09.11]** quindi c'è tutto il tempo.
+**[13:04.84 -> 13:09.68]** di 199 euro avrai appunto un intero mese per usarlo quindi c'è tutto il tempo c'è anche
 
-**[13:09.27 -> 13:10.85]** C'è anche Klarna per pagare interrate
+**[13:09.68 -> 13:14.18]** clarina per pagare interrate e anche paypal per pagare interrate se vuoi dettagli scrivimi
 
-**[13:10.85 -> 13:12.63]** e anche PayPal per pagare interrate.
+**[13:14.18 -> 13:18.84]** o vai a vedere maggiori informazioni, clicca qui sotto, ti aspetto in Armageddon e poi ci
 
-**[13:12.75 -> 13:15.53]** Se vuoi dettagli, scrivimi o vai a vedere maggiori informazioni,
+**[13:18.84 -> 13:22.42]** vediamo quando lancia Funnel Operator, chiaramente non sei forzato a prendere Funnel Operator,
 
-**[13:15.81 -> 13:18.37]** clicca qui sotto, ti aspetto in Armageddon
+**[13:22.62 -> 13:25.48]** puoi prendere anche solo Armageddon se vuoi e risparmieresti comunque centinaia di
 
-**[13:18.37 -> 13:20.35]** e poi ci vediamo quando lancia Fanno l'Operator.
+**[13:25.48 -> 13:25.58]** euro.
 
-**[13:20.43 -> 13:22.27]** Chiaramente non sei forzato a prendere Fanno l'Operator,
-
-**[13:22.27 -> 13:25.57]** Puoi prendere anche sull'AlmaGaddon se vuoi e risparmeresti comunque centina di euro.
-
-**[13:25.61 -> 13:28.59]** Clicca qui sotto per acquistare accesso istantaneo.
+**[13:25.78 -> 13:28.64]** Clicca qui sotto per acquistare accesso istantaneo.
 
 ## Ritmo minuto per minuto
 
 | minuto | parole | parole/min | secondi di voce | densita' voce |
 |---|---|---|---|---|
-| 00:00 | 161 | 161.0 | 52.21 s | 87.0% |
-| 01:00 | 220 | 220.0 | 53.99 s | 90.0% |
-| 02:00 | 237 | 237.0 | 56.44 s | 94.1% |
-| 03:00 | 246 | 246.0 | 55.40 s | 92.3% |
-| 04:00 | 232 | 232.0 | 59.16 s | 98.6% |
-| 05:00 | 229 | 229.0 | 55.92 s | 93.2% |
-| 06:00 | 231 | 231.0 | 53.71 s | 89.5% |
-| 07:00 | 222 | 222.0 | 56.91 s | 94.8% |
-| 08:00 | 219 | 219.0 | 56.71 s | 94.5% |
-| 09:00 | 201 | 201.0 | 57.33 s | 95.6% |
-| 10:00 | 234 | 234.0 | 55.23 s | 92.0% |
-| 11:00 | 223 | 223.0 | 57.65 s | 96.1% |
-| 12:00 | 201 | 201.0 | 58.10 s | 96.8% |
-| 13:00 | 103 | 215.1 | 26.92 s | 93.7% |
+| 00:00 | 165 | 165.0 | 48.88 s | 81.5% |
+| 01:00 | 223 | 223.0 | 53.34 s | 88.9% |
+| 02:00 | 239 | 239.0 | 55.09 s | 91.8% |
+| 03:00 | 251 | 251.0 | 54.59 s | 91.0% |
+| 04:00 | 246 | 246.0 | 55.95 s | 93.3% |
+| 05:00 | 228 | 228.0 | 53.41 s | 89.0% |
+| 06:00 | 234 | 234.0 | 56.06 s | 93.4% |
+| 07:00 | 220 | 220.0 | 57.84 s | 96.4% |
+| 08:00 | 230 | 230.0 | 56.54 s | 94.2% |
+| 09:00 | 206 | 206.0 | 56.76 s | 94.6% |
+| 10:00 | 238 | 238.0 | 55.40 s | 92.3% |
+| 11:00 | 227 | 227.0 | 57.14 s | 95.2% |
+| 12:00 | 200 | 200.0 | 58.32 s | 97.2% |
+| 13:00 | 100 | 208.9 | 27.64 s | 96.2% |
 
 ---
 Fonte: `sorgenti/armageddon-home/video.mp4`. Misure: `ritmo-parlato.json`. Testo integrale: `trascrizione.md` / `trascrizione.json`.

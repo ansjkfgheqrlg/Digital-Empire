@@ -1,0 +1,736 @@
+{
+ "slug": "arma-outfunnel-vsl",
+ "fonte": "sorgenti/arma-outfunnel-vsl/video.mp4",
+ "generato": "2026-09-11 00:00",
+ "strumento_trascrizione": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "durata_video_s": 99.14,
+ "densita": {
+  "segmenti_vocali": 32,
+  "secondi_di_parlato": 96.58,
+  "percentuale_di_parlato": 97.4,
+  "segmenti_al_minuto": 19.37,
+  "durata_media_segmento_s": 3.02
+ },
+ "parole_totali": 341,
+ "parole_al_minuto_medie": 206.4,
+ "parole_al_minuto_sul_solo_parlato": 211.8,
+ "wpm_per_minuto": [
+  {
+   "minuto": 0,
+   "da": 0.0,
+   "a": 60.0,
+   "parole": 208,
+   "parole_al_minuto": 208.0,
+   "secondi_di_voce": 56.6,
+   "densita_voce_pct": 94.3
+  },
+  {
+   "minuto": 1,
+   "da": 60.0,
+   "a": 99.14,
+   "parole": 133,
+   "parole_al_minuto": 203.9,
+   "secondi_di_voce": 37.82,
+   "densita_voce_pct": 96.6
+  }
+ ],
+ "pause_sopra_0_5s": 0,
+ "pause_dal_parlato": [
+  {
+   "inizio": 3.9,
+   "fine": 4.18,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "funnel.",
+   "prima_di": "Tenzione"
+  },
+  {
+   "inizio": 9.62,
+   "fine": 9.82,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "cercando.",
+   "prima_di": "Andrei,"
+  },
+  {
+   "inizio": 9.92,
+   "fine": 10.0,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "Andrei,",
+   "prima_di": "ma"
+  },
+  {
+   "inizio": 11.84,
+   "fine": 11.92,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "cercando?",
+   "prima_di": "Perché"
+  },
+  {
+   "inizio": 13.58,
+   "fine": 13.68,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "te.",
+   "prima_di": "Quando"
+  },
+  {
+   "inizio": 17.48,
+   "fine": 17.56,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "discorso.",
+   "prima_di": "Inizi"
+  },
+  {
+   "inizio": 18.74,
+   "fine": 18.92,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "basi,",
+   "prima_di": "guardando"
+  },
+  {
+   "inizio": 19.58,
+   "fine": 19.68,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "corsi,",
+   "prima_di": "leggendo"
+  },
+  {
+   "inizio": 23.06,
+   "fine": 23.12,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "stabilisci.",
+   "prima_di": "Ma"
+  },
+  {
+   "inizio": 24.74,
+   "fine": 25.0,
+   "durata": 0.26,
+   "tipo": "interna",
+   "dopo": "oltre,",
+   "prima_di": "dove"
+  },
+  {
+   "inizio": 26.52,
+   "fine": 26.58,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "fai?",
+   "prima_di": "La"
+  },
+  {
+   "inizio": 30.68,
+   "fine": 31.1,
+   "durata": 0.42,
+   "tipo": "interna",
+   "dopo": "ads,",
+   "prima_di": "cosa"
+  },
+  {
+   "inizio": 32.54,
+   "fine": 32.76,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "marketing,",
+   "prima_di": "cosa"
+  },
+  {
+   "inizio": 33.2,
+   "fine": 33.3,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "sono.",
+   "prima_di": "Queste"
+  },
+  {
+   "inizio": 34.6,
+   "fine": 34.74,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "più.",
+   "prima_di": "Dove"
+  },
+  {
+   "inizio": 37.48,
+   "fine": 37.54,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "step.",
+   "prima_di": "Con"
+  },
+  {
+   "inizio": 39.86,
+   "fine": 40.1,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "Outline,",
+   "prima_di": "di"
+  },
+  {
+   "inizio": 41.56,
+   "fine": 41.8,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "parte,",
+   "prima_di": "ho"
+  },
+  {
+   "inizio": 43.12,
+   "fine": 43.2,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "questo.",
+   "prima_di": "Di"
+  },
+  {
+   "inizio": 51.42,
+   "fine": 51.54,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "marketing,",
+   "prima_di": "perché"
+  },
+  {
+   "inizio": 88.36,
+   "fine": 88.46,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "pensati,",
+   "prima_di": "strategici"
+  },
+  {
+   "inizio": 90.58,
+   "fine": 90.66,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "siano,",
+   "prima_di": "questo"
+  },
+  {
+   "inizio": 91.22,
+   "fine": 91.34,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "te.",
+   "prima_di": "Che"
+  },
+  {
+   "inizio": 92.1,
+   "fine": 92.2,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "marketer,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 93.26,
+   "fine": 93.36,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "imprenditore,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 94.28,
+   "fine": 94.5,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "copyrighter,",
+   "prima_di": "qualsiasi"
+  },
+  {
+   "inizio": 95.26,
+   "fine": 95.38,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "sia.",
+   "prima_di": "Se"
+  },
+  {
+   "inizio": 97.46,
+   "fine": 97.58,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "funnel,",
+   "prima_di": "Outfunnel"
+  },
+  {
+   "inizio": 98.96,
+   "fine": 99.14,
+   "durata": 0.18,
+   "tipo": "coda"
+  }
+ ],
+ "volume_medio_dBFS": -17.9,
+ "volume_massimo_dBFS": -1.3,
+ "silenzi_-30dB": [],
+ "silenzi_-40dB": [],
+ "soglia_relativa_dB": -36,
+ "silenzi_soglia_relativa": [],
+ "nota_silenzi": "silencedetect di ffmpeg, durata minima 0,30 s, tre soglie: due assolute (-30 e -40 dBFS) e una relativa a questo audio (volume medio meno 18 dB). Sotto una base musicale continua le soglie assolute possono restituire zero silenzi: e' un dato, non un errore, e per questo c'e' la soglia relativa.",
+ "loudness": {
+  "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
+  "campioni": 991,
+  "mediana_segmenti_LUFS_M": -20.0,
+  "picco_momentaneo_LUFS_M": -12.8,
+  "picco_a_secondo": 12.5,
+  "sopra_mediana_3LU": [
+   {
+    "i": 4,
+    "inizio": 11.92,
+    "fine": 13.58,
+    "LUFS_M": -14.5,
+    "delta_LU": 5.5,
+    "testo": "Perché io sono te."
+   },
+   {
+    "i": 5,
+    "inizio": 13.68,
+    "fine": 17.48,
+    "LUFS_M": -16.1,
+    "delta_LU": 3.9,
+    "testo": "Quando ti formi come marketer è sempre lo stesso discorso."
+   },
+   {
+    "i": 6,
+    "inizio": 17.56,
+    "fine": 21.54,
+    "LUFS_M": -15.4,
+    "delta_LU": 4.6,
+    "testo": "Inizi studiando le basi, guardando corsi, leggendo una montagna di libri"
+   },
+   {
+    "i": 7,
+    "inizio": 21.54,
+    "fine": 23.06,
+    "LUFS_M": -15.5,
+    "delta_LU": 4.5,
+    "testo": "e quelle basi le stabilisci."
+   },
+   {
+    "i": 9,
+    "inizio": 26.58,
+    "fine": 28.38,
+    "LUFS_M": -16.7,
+    "delta_LU": 3.3,
+    "testo": "La verità è che non ci sono corsi avanzati,"
+   },
+   {
+    "i": 14,
+    "inizio": 37.54,
+    "fine": 41.56,
+    "LUFS_M": -16.3,
+    "delta_LU": 3.7,
+    "testo": "Con la linea di prodotti Outline, di cui Outfunnel fa parte,"
+   }
+  ],
+  "profilo_per_secondo": [
+   {
+    "t": 0.0,
+    "M": -70.0
+   },
+   {
+    "t": 1.0,
+    "M": -14.1
+   },
+   {
+    "t": 2.0,
+    "M": -13.5
+   },
+   {
+    "t": 3.0,
+    "M": -17.9
+   },
+   {
+    "t": 4.0,
+    "M": -21.8
+   },
+   {
+    "t": 5.0,
+    "M": -18.6
+   },
+   {
+    "t": 6.0,
+    "M": -18.8
+   },
+   {
+    "t": 7.0,
+    "M": -17.9
+   },
+   {
+    "t": 8.0,
+    "M": -22.1
+   },
+   {
+    "t": 9.0,
+    "M": -19.1
+   },
+   {
+    "t": 10.0,
+    "M": -17.2
+   },
+   {
+    "t": 11.0,
+    "M": -20.3
+   },
+   {
+    "t": 12.0,
+    "M": -18.0
+   },
+   {
+    "t": 13.0,
+    "M": -14.4
+   },
+   {
+    "t": 14.0,
+    "M": -14.4
+   },
+   {
+    "t": 15.0,
+    "M": -15.3
+   },
+   {
+    "t": 16.0,
+    "M": -14.9
+   },
+   {
+    "t": 17.0,
+    "M": -19.4
+   },
+   {
+    "t": 18.0,
+    "M": -15.5
+   },
+   {
+    "t": 19.0,
+    "M": -15.9
+   },
+   {
+    "t": 20.0,
+    "M": -13.6
+   },
+   {
+    "t": 21.0,
+    "M": -17.6
+   },
+   {
+    "t": 22.0,
+    "M": -13.5
+   },
+   {
+    "t": 23.0,
+    "M": -19.1
+   },
+   {
+    "t": 24.0,
+    "M": -14.9
+   },
+   {
+    "t": 25.0,
+    "M": -22.6
+   },
+   {
+    "t": 26.0,
+    "M": -16.1
+   },
+   {
+    "t": 27.0,
+    "M": -14.5
+   },
+   {
+    "t": 28.0,
+    "M": -17.7
+   },
+   {
+    "t": 29.0,
+    "M": -20.0
+   },
+   {
+    "t": 30.0,
+    "M": -16.2
+   },
+   {
+    "t": 31.0,
+    "M": -21.3
+   },
+   {
+    "t": 32.0,
+    "M": -21.0
+   },
+   {
+    "t": 33.0,
+    "M": -21.1
+   },
+   {
+    "t": 34.0,
+    "M": -20.3
+   },
+   {
+    "t": 35.0,
+    "M": -16.9
+   },
+   {
+    "t": 36.0,
+    "M": -18.3
+   },
+   {
+    "t": 37.0,
+    "M": -26.9
+   },
+   {
+    "t": 38.0,
+    "M": -13.6
+   },
+   {
+    "t": 39.0,
+    "M": -16.5
+   },
+   {
+    "t": 40.0,
+    "M": -17.3
+   },
+   {
+    "t": 41.0,
+    "M": -21.1
+   },
+   {
+    "t": 42.0,
+    "M": -19.1
+   },
+   {
+    "t": 43.0,
+    "M": -29.0
+   },
+   {
+    "t": 44.0,
+    "M": -23.9
+   },
+   {
+    "t": 45.0,
+    "M": -16.7
+   },
+   {
+    "t": 46.0,
+    "M": -18.5
+   },
+   {
+    "t": 47.0,
+    "M": -25.8
+   },
+   {
+    "t": 48.0,
+    "M": -18.9
+   },
+   {
+    "t": 49.0,
+    "M": -22.3
+   },
+   {
+    "t": 50.0,
+    "M": -20.2
+   },
+   {
+    "t": 51.0,
+    "M": -28.4
+   },
+   {
+    "t": 52.0,
+    "M": -25.7
+   },
+   {
+    "t": 53.0,
+    "M": -18.1
+   },
+   {
+    "t": 54.0,
+    "M": -15.5
+   },
+   {
+    "t": 55.0,
+    "M": -17.8
+   },
+   {
+    "t": 56.0,
+    "M": -16.2
+   },
+   {
+    "t": 57.0,
+    "M": -19.0
+   },
+   {
+    "t": 58.0,
+    "M": -19.0
+   },
+   {
+    "t": 59.0,
+    "M": -16.9
+   },
+   {
+    "t": 60.0,
+    "M": -18.4
+   },
+   {
+    "t": 61.0,
+    "M": -17.9
+   },
+   {
+    "t": 62.0,
+    "M": -19.1
+   },
+   {
+    "t": 63.0,
+    "M": -21.9
+   },
+   {
+    "t": 64.0,
+    "M": -18.8
+   },
+   {
+    "t": 65.0,
+    "M": -26.2
+   },
+   {
+    "t": 66.0,
+    "M": -12.8
+   },
+   {
+    "t": 67.0,
+    "M": -19.7
+   },
+   {
+    "t": 68.0,
+    "M": -16.9
+   },
+   {
+    "t": 69.0,
+    "M": -19.5
+   },
+   {
+    "t": 70.0,
+    "M": -15.4
+   },
+   {
+    "t": 71.0,
+    "M": -18.8
+   },
+   {
+    "t": 72.0,
+    "M": -16.8
+   },
+   {
+    "t": 73.0,
+    "M": -26.6
+   },
+   {
+    "t": 74.0,
+    "M": -21.7
+   },
+   {
+    "t": 75.0,
+    "M": -20.0
+   },
+   {
+    "t": 76.0,
+    "M": -30.6
+   },
+   {
+    "t": 77.0,
+    "M": -24.9
+   },
+   {
+    "t": 78.0,
+    "M": -23.1
+   },
+   {
+    "t": 79.0,
+    "M": -17.5
+   },
+   {
+    "t": 80.0,
+    "M": -19.1
+   },
+   {
+    "t": 81.0,
+    "M": -17.8
+   },
+   {
+    "t": 82.0,
+    "M": -23.9
+   },
+   {
+    "t": 83.0,
+    "M": -21.2
+   },
+   {
+    "t": 84.0,
+    "M": -17.7
+   },
+   {
+    "t": 85.0,
+    "M": -19.6
+   },
+   {
+    "t": 86.0,
+    "M": -21.5
+   },
+   {
+    "t": 87.0,
+    "M": -29.2
+   },
+   {
+    "t": 88.0,
+    "M": -19.2
+   },
+   {
+    "t": 89.0,
+    "M": -19.4
+   },
+   {
+    "t": 90.0,
+    "M": -21.4
+   },
+   {
+    "t": 91.0,
+    "M": -23.3
+   },
+   {
+    "t": 92.0,
+    "M": -24.2
+   },
+   {
+    "t": 93.0,
+    "M": -21.9
+   },
+   {
+    "t": 94.0,
+    "M": -19.3
+   },
+   {
+    "t": 95.0,
+    "M": -18.9
+   },
+   {
+    "t": 96.0,
+    "M": -19.7
+   },
+   {
+    "t": 97.0,
+    "M": -23.0
+   },
+   {
+    "t": 98.0,
+    "M": -22.0
+   },
+   {
+    "t": 99.0,
+    "M": -39.3
+   }
+  ]
+ }
+}

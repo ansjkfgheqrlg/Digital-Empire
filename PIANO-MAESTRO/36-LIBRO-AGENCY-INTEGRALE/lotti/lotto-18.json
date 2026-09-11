@@ -1,0 +1,1194 @@
+{
+ "lotto": 18,
+ "totale": 198,
+ "atomi": [
+  {
+   "uid": "cs2online-bonus-04::KA-01",
+   "run": "cs2online-bonus-04",
+   "tipo": "Problema risolto",
+   "testo": "Problema risolto dalle Skills: il metodo tradizionale (riallegare sempre gli stessi file/prompt) spreca context window, token e soldi; troppi documenti allegati rischiano di far 'skippare' a Claude informazioni importanti per limiti di context."
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-02",
+   "run": "cs2online-bonus-04",
+   "tipo": "Meccanismo / analogia",
+   "testo": "Meccanismo Skills: Claude legge solo il 'front matter' (nome+descrizione, la 'copertina') di ogni skill disponibile, carica il contenuto completo SOLO se la description matcha la richiesta - analogia 'libri con copertina in una bancarella'."
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-03",
+   "run": "cs2online-bonus-04",
+   "tipo": "Framework / 4 livelli risposta",
+   "testo": "4 livelli di risposta AI: (1) risposta da memoria, (2) ricerca online, (3) documenti allegati (limitati da tempo/context), (4) skills (selezione intelligente via front matter)."
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-04",
+   "run": "cs2online-bonus-04",
+   "tipo": "Struttura tecnica",
+   "testo": "Struttura tecnica: file SKILL.md con front matter YAML delimitato da --- contenente name (trattini invece di spazi) e description (cosa fa + quando usarla) - la description e' 'la parte piu' importante' perche' determina se Claude carica la skill."
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-05",
+   "run": "cs2online-bonus-04",
+   "tipo": "Requisiti ufficiali verbatim",
+   "testo": "Requisiti ufficiali verbatim per l'upload (osservati nel dialog reale, non nel testo del corso): '.md file must contain skill name and description formatted in YAML' - '.zip or .skill file must include a SKILL.md file'."
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-06",
+   "run": "cs2online-bonus-04",
+   "tipo": "Struttura cartella",
+   "testo": "Struttura cartella completa: SKILL.md (obbligatorio) + references/ (opzionale, file MD/TXT/PDF richiamabili per step specifici) + assets/ (opzionale, immagini/supporto) + codici eseguibili (avanzato, non approfondito)."
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-07",
+   "run": "cs2online-bonus-04",
+   "tipo": "Procedura",
+   "testo": "Procedura di caricamento: creare cartella sul Mac con SKILL.md + references -> zippare la cartella -> Claude -> Customize -> Skills -> Upload Skill."
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-08",
+   "run": "cs2online-bonus-04",
+   "tipo": "Esempio osservato",
+   "testo": "Esempio ufficiale osservato nella lista Skills di Claude: 'skill-creator', skill di Anthropic stessa per creare altre skill - presente come esempio nativo nell'interfaccia."
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-09",
+   "run": "cs2online-bonus-04",
+   "tipo": "Metodo implementazione",
+   "testo": "Metodo in 2 step per implementare le Skills nel proprio lavoro: (1) identifica i processi ripetitivi dove usi l'AI, (2) per ognuno crea una skill dedicata. Esempio citato: skill per onboarding cliente con references multiple (discovery call, onboarding, overview)."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-01",
+   "run": "cs2online-bonus-06",
+   "tipo": "Precondizione automazione",
+   "testo": "Precondizione per automatizzare: serve un processo ripetitivo GIA' standardizzato (SOP) - 'la maggior parte della gente non riesce a implementare l'AI perche' non ha un processo ripetuto che vale la pena automatizzare'."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-02",
+   "run": "cs2online-bonus-06",
+   "tipo": "Domain knowledge",
+   "testo": "Concetto 'domain knowledge': bisogna essere esperti del processo PRIMA di automatizzarlo, altrimenti l'automazione non porta risultati - eco diretto del principio 'meccanico esperto' di lezione 1 del run cs2online."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-03",
+   "run": "cs2online-bonus-06",
+   "tipo": "Metodo documentazione",
+   "testo": "Metodo di documentazione visiva: diagram maker gratuito (draw.io/diagrams.net) con forme standard (processo=rettangolo, trigger, terminator, scelta=rombo, database) per mappare il processo prima di automatizzarlo."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-04",
+   "run": "cs2online-bonus-06",
+   "tipo": "Processo reale mappato",
+   "testo": "Processo di acquisizione clienti reale mappato: Trigger (prospect qualificato) -> chiamata di discovery -> sviluppo preventivo (AI) -> pagamento -> chiamata onboarding -> client overview document (AI) -> contesto per AI. Solo alcuni step marcati con icona robot = automatizzabili, altri (call, pagamento) restano manuali."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-05",
+   "run": "cs2online-bonus-06",
+   "tipo": "Pattern anti-hallucination (terza conferma)",
+   "testo": "Pattern anti-hallucination confermato per la TERZA volta nel run (dopo Bonus 2 KA-04 e lezione 1 principio meccanico esperto): SKILL.md 'sviluppo-preventivo' scritto per 'rifiutarsi categoricamente di procedere' se mancano documenti obbligatori (trascrizione discovery call, tabella prezzi) - non un'eccezione isolata, pattern sistematico dell'autore. SKILL.md completo trascritto verbatim nel lesson-analysis.md."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-06",
+   "run": "cs2online-bonus-06",
+   "tipo": "Principio / step singoli",
+   "testo": "Principio 'step singoli, non compressi': dividere il workflow in step separati e validati uno per uno invece di comprimere tutto in un prompt unico - l'AI 'lavora meglio con step singoli e validati'."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-07",
+   "run": "cs2online-bonus-06",
+   "tipo": "Struttura reference multi-file",
+   "testo": "Struttura reference multi-file per skill complessa: esempio.md (preventivo reale passato, per stile/tono), struttura-preventivo.md (struttura pagine), brand-guidelines.json - collegati e visualizzabili con graph view di Obsidian."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-08",
+   "run": "cs2online-bonus-06",
+   "tipo": "Parametro effort max",
+   "testo": "Parametro 'effort max' usato selettivamente SOLO sullo step di validazione (non su tutto il task) - osservato: 'Step 3: Validazione... utilizza expert per effort max', 'Step 4: crea il PDF finale'. Uso mirato del massimo sforzo computazionale solo dove serve precisione."
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-09",
+   "run": "cs2online-bonus-06",
+   "tipo": "Asset automatici",
+   "testo": "Possibilita' di aggiungere asset (foto, immagini) dentro la cartella skill per farli inserire automaticamente nel documento finale generato."
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-01",
+   "run": "cs2online-lezione-01",
+   "tipo": "Concetto fondamentale / LLM",
+   "testo": "Un LLM non è cosciente, non pensa, non ragiona: è un sistema allenato su enormi quantità di testo/immagini/video/audio che predice il token successivo. Analogia usata: completare 'Ciao, come...?' con 'stai' è pattern statistico appreso, non comprensione."
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-02",
+   "run": "cs2online-lezione-01",
+   "tipo": "Panorama modelli AI",
+   "testo": "3 modelli principali a marzo 2026: OpenAI→ChatGPT, Anthropic→Claude, Google→Gemini (Bard discontinuato, reindirizza a Gemini). Claude scelto per il corso perché dichiarato 'più potente disponibile' e 'più usato tra chi lo conosce davvero'."
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-03",
+   "run": "cs2online-lezione-01",
+   "tipo": "Statistiche citate (fonte non specificata)",
+   "testo": "DA VERIFICARE (fonte non citata nel video): 80% aziende usa AI ma non vede risultati veri (solo 20% di chi usa AI li vede); developer che usano AI +65%; ruoli AI-strategy nel marketing +23%; 88% freelancer con AI dichiara impatto positivo sulla carriera."
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-04",
+   "run": "cs2online-lezione-01",
+   "tipo": "Principio operativo / 80-20",
+   "testo": "Principio 80/20 applicato all'AI: l'AI gestisce l'80% del lavoro tattico (titoli, descrizioni, email, FAQ, copy base); l'operatore umano si concentra sul 20% strategico/creativo che genera l'80% del valore differenziale."
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-05",
+   "run": "cs2online-lezione-01",
+   "tipo": "Framing / posizionamento",
+   "testo": "Due errori di framing opposti sull'AI: negazionismo ('non cambia niente', paragonato a chi negava l'impatto del trattore in agricoltura) vs iper-hype ('ha cambiato tutto, i developer non hanno più lavoro'). Posizione dell'autore: la verità sta nel mezzo."
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-06",
+   "run": "cs2online-lezione-01",
+   "tipo": "Analogia / rischio giudizio",
+   "testo": "Analogia 'meccanico esperto vs cliente ignaro': senza expertise reale in un campo (es. marketing/copywriting) non si riesce a giudicare se l'output AI è buono o pieno di errori — rischio concreto di validare output scadenti che danneggiano conversioni/vendite (non solo estetica, soldi reali in advertising)."
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-07",
+   "run": "cs2online-lezione-01",
+   "tipo": "Framework / 3 errori operativi",
+   "testo": "3 errori operativi ricorrenti nell'uso dell'AI: (1) non sapere usarla → contesto insufficiente, output scarso; (2) non saper giudicare l'output → mancanza expertise di dominio; (3) usarla per i task sbagliati (es. sales page intera invece di ricerca/organizzazione/copy breve con contesto)."
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-08",
+   "run": "cs2online-lezione-01",
+   "tipo": "Applicazione pratica dell'autore",
+   "testo": "L'autore (copywriter) NON fa scrivere all'AI una sales page intera da zero; la usa per ricerca, organizzazione documenti, primary text ads — sempre con contesto costruito a monte, mai 'fammi il copy per questo' a secco."
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-01",
+   "run": "cs2online-lezione-09",
+   "tipo": "Framework / 4 modi contesto",
+   "testo": "4 modi per dare contesto a Claude, ordine di intelligenza crescente: allega tutto -> allega solo rilevante -> Cowork (cartella condivisa) -> Projects (lavori continuativi). Framework di scelta esplicito basato su durata/complessita' del task."
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-02",
+   "run": "cs2online-lezione-09",
+   "tipo": "Struttura cartelle confermata",
+   "testo": "Struttura cartelle personale confermata su schermo (Finder reale): 'Claude' > assets, B2B Client Work, Business Planning, Claude Speedrun, Productivity - coerente al 100% con quanto descritto verbalmente in lezione 6 (stesso autore, stessa struttura, conferma interna forte)."
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-03",
+   "run": "cs2online-lezione-09",
+   "tipo": "Regola anti-spreco",
+   "testo": "Regola esplicita anti-spreco: con Cowork condividere SOLO la sottocartella cliente rilevante, mai l'intera cartella principale - altrimenti Claude 'spreca token e context window a cercare la roba che gli serve'."
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-04",
+   "run": "cs2online-lezione-09",
+   "tipo": "Anti-pattern / link esterni",
+   "testo": "Link esterni sono 'uno dei modi peggiori' per dare contesto - preferire sempre un file (anche PDF) a un link. Unica eccezione dichiarata: Perplexity, con cui i link funzionano bene."
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-05",
+   "run": "cs2online-lezione-09",
+   "tipo": "Struttura Project",
+   "testo": "Struttura di un Project Claude: chat raggruppate + memory automatica (si aggiorna da sola conversazione dopo conversazione) + instructions fisse (brevi, 'il grosso lavoro lo fanno i file e la memory') + files di contesto."
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-06",
+   "run": "cs2online-lezione-09",
+   "tipo": "Criterio scelta metodo",
+   "testo": "Criterio esplicito di scelta metodo: copy/lavoro testuale continuativo -> Projects; presentazioni/task pesanti/molti file -> Cowork; task one-time veloce -> chat singola con file allegati."
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-07",
+   "run": "cs2online-lezione-09",
+   "tipo": "Warning / rilevanza file",
+   "testo": "Warning ripetuto: non allegare file 'a caso per sentirti smart' - ogni file deve essere rilevante al task specifico, altrimenti 'lavori a vuoto'."
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-08",
+   "run": "cs2online-lezione-09",
+   "tipo": "Equivalenti cross-tool",
+   "testo": "Equivalenti dei Projects Claude in altri tool: Perplexity Spaces, Grok (feature simile), Google Gemini Gems."
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-01",
+   "run": "cs2online-lezione-11",
+   "tipo": "SOP domenicale",
+   "testo": "SOP domenicale completa a 6 step per pianificazione settimanale: (1) Calendar impegni fissi, (2) esportare/collegare a Claude, (3) brain dump markdown senza filtro con vincoli espliciti, (4) allegare business plan, (5) allegare review settimana precedente, (6) prompt Opus+Extended Thinking -> documento task per fascia oraria."
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-02",
+   "run": "cs2online-lezione-11",
+   "tipo": "Output strutturato osservato",
+   "testo": "Output strutturato specifico: tabella task/giorno/fascia oraria (8-12, 12-15, 15-18)/esecutore (umano, AI, o 50-50) - confermato visivamente nel documento 'WEEK 1 - OPERATIONAL PLAN'."
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-03",
+   "run": "cs2online-lezione-11",
+   "tipo": "Regola brain dump",
+   "testo": "Regola per il brain dump: 'senza filtro' - buttare giu' tutto, poi lasciare che sia il contesto (business plan+calendario) a fare la prioritizzazione, non l'utente a pre-filtrare."
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-04",
+   "run": "cs2online-lezione-11",
+   "tipo": "Vincoli espliciti",
+   "testo": "Vincoli specifici vanno scritti esplicitamente nel brain dump (es. 'il copy va consegnato entro mercoledi', senza negoziazione') - il documento stesso deve auto-spiegarsi a Claude."
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-05",
+   "run": "cs2online-lezione-11",
+   "tipo": "Scelta modello",
+   "testo": "Modello consigliato per pianificazione settimanale: Opus + Extended Thinking - coerente col pattern gia' visto (task complessi/riusati = modello piu' potente)."
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-06",
+   "run": "cs2online-lezione-11",
+   "tipo": "Regola iterazione output",
+   "testo": "Regola di iterazione: se l'output non soddisfa, la domanda giusta e' 'cosa aggiungere/togliere dal contesto', non lamentarsi del risultato - sposta la responsabilita' sull'input, coerente con lezione 8."
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-07",
+   "run": "cs2online-lezione-11",
+   "tipo": "4 livelli contesto (variante)",
+   "testo": "4 livelli di contesto per la pianificazione (variante specifica della gerarchia di lezione 7): (1) prompt singolo, (2) settimana, (3) trimestre, (4) business permanente."
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-08",
+   "run": "cs2online-lezione-11",
+   "tipo": "Sicurezza cartella dedicata",
+   "testo": "Cartella dedicata alla condivisione con Claude - NON dare accesso a tutto il computer, stessa regola di sicurezza/efficienza gia' vista (lezioni 6, 9)."
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-01",
+   "run": "nRm7JLsP1bc",
+   "tipo": "Content / Hook a lista",
+   "testo": "Hook diretto e polarizzante: 'Queste sono tre formule di copywriting che devi smettere di usare perche' non se ne puo' piu', le usano tutti, fanno schifo'. Format 'N cose da NON fare' genera piu' curiosita' del classico 'N cose da fare' perche' va contro l'aspettativa."
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-02",
+   "run": "nRm7JLsP1bc",
+   "tipo": "Copy / Anti-pattern",
+   "testo": "Clichè #1: apertura 'Se ami/ti interessa X, allora sei nel posto giusto' (esempio: 'Se ami il caffè allora sei nel posto giusto'). Sovrausato e riconoscibile come pubblicita' generica, il lettore lo processa come rumore."
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-03",
+   "run": "nRm7JLsP1bc",
+   "tipo": "Copy / Anti-pattern",
+   "testo": "Clichè #2: '[N] cose che non sapevi su [Y]' — formula listicle da clickbait, esausta per il pubblico."
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-04",
+   "run": "nRm7JLsP1bc",
+   "tipo": "Copy / Anti-pattern",
+   "testo": "Variante aggravata del clichè #2, parodia diretta: 'I dottori lo odiano perché ha scoperto il dolorifico più salutare' — pattern da ads farmaceutici/integratori/dimagrimento ('i medici odiano questo trucco'), tra i piu' abusati e meno credibili nel copy ads."
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-05",
+   "run": "nRm7JLsP1bc",
+   "tipo": "Copy / Anti-pattern",
+   "testo": "Clichè #3: 'Il segreto che [industria/autorita'] non ti vuole far sapere su [Y]' — framing da cospirazione/rivelazione, esemplificato con 'il segreto che i ristoranti non vogliono farti sapere sulla carne congelata'."
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-06",
+   "run": "nRm7JLsP1bc",
+   "tipo": "Content / Retention-payoff",
+   "testo": "Tecnica di chiusura short-form: mette in scena letteralmente il claim assurdo del clichè (aprire un vero frigorifero) e poi lo smonta a voce ('non ti chiudo veramente') — rottura della quarta parete come punchline. Rende il video shareable/rewatchable anche senza il contenuto didattico."
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-07",
+   "run": "nRm7JLsP1bc",
+   "tipo": "Formato / Segnaletica visiva",
+   "testo": "Uso ricorrente degli occhiali da sole come 'costume switch': indossarli/toglierli/spostarli sulla fronte segnala il cambio di registro (narratore serio -> mimica del 'guru fake') senza taglio di scena esplicito o testo aggiuntivo."
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-08",
+   "run": "nRm7JLsP1bc",
+   "tipo": "Formato / Montaggio",
+   "testo": "Passaggio da colore a bianco/nero a meta' video usato come marcatore di sezione visivo, sostituendo un taglio testuale 'capitolo 2' — coerente con l'assenza di on-screen counter espliciti."
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-01",
+   "run": "outfunnel-lezione-14",
+   "tipo": "",
+   "testo": "CR (Conversion Rate) = (conversioni / visitatori) × 100."
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-02",
+   "run": "outfunnel-lezione-14",
+   "tipo": "",
+   "testo": "CPC (Cost per Click) = budget speso ÷ numero di click."
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-03",
+   "run": "outfunnel-lezione-14",
+   "tipo": "",
+   "testo": "CPA (Cost per Acquisition) = budget speso ÷ numero di acquisti."
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-04",
+   "run": "outfunnel-lezione-14",
+   "tipo": "",
+   "testo": "CPL (Cost per Lead) = budget speso ÷ numero di lead."
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-05",
+   "run": "outfunnel-lezione-14",
+   "tipo": "",
+   "testo": "ROI (Return on Investment) = (entrate - spese) ÷ spese × 100."
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-06",
+   "run": "outfunnel-lezione-14",
+   "tipo": "",
+   "testo": "CLV (Customer Lifetime Value) = quanto un cliente spende in totale nel tempo (nessuna formula esplicita data, solo definizione)."
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-07",
+   "run": "outfunnel-lezione-14",
+   "tipo": "",
+   "testo": "Altri KPI nominati senza formula: tasso di abbandono carrello, AOV (Average Order Value = spesa media per ordine), tempo medio sulla pagina, frequenza di rimbalzo, open rate email, CTR email."
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-08",
+   "run": "outfunnel-lezione-14",
+   "tipo": "",
+   "testo": "Metodo d'uso: identificare lo step con CR basso → guardare i KPI collegati a quello step specifico → eseguire test mirati → rimonitorare i KPI dopo ogni test. Esplicitamente: NON monitorare tutti i KPI sempre, solo quelli rilevanti al problema che si sta affrontando."
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-01",
+   "run": "uqa06rlgmj4",
+   "tipo": "Formato / Contesto reale Q&A",
+   "testo": "La domanda 'come creare hook perfetti' e' stata posta realmente da una persona a uno speech di Andrei a Milano - il video e' la risposta in formato street interview, non un topic scelto a tavolino."
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-02",
+   "run": "uqa06rlgmj4",
+   "tipo": "Copy / Tecnica hook - principio unico",
+   "testo": "L'unico consiglio dato: 'prendere il tuo argomento e renderlo assurdo' - presentato esplicitamente come UN consiglio singolo, coerente col titolo '1 consiglio'."
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-03",
+   "run": "uqa06rlgmj4",
+   "tipo": "Copy / Definizione operativa assurdo",
+   "testo": "'Assurdo' definito come 'piu' fire, piu' flame, un po' piu' casino' - non falso o insensato, ma piu' acceso/drammatico/provocatorio della formulazione neutra."
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-04",
+   "run": "uqa06rlgmj4",
+   "tipo": "Copy / Tecnica framing telegiornale",
+   "testo": "Esempio: 'la gente non sa piu' aspettare' diventa piu' incisiva con tono da breaking news/telegiornale (clip TG come riferimento visivo) - prestare un registro editoriale di urgenza a un'osservazione banale."
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-05",
+   "run": "uqa06rlgmj4",
+   "tipo": "Copy / Scenario iperbolico specifico",
+   "testo": "Trasformare un'affermazione generica in uno scenario specifico ed esagerato: 'se la tua pazienza quando aspetti il benzinaio, in meno di un minuto hai un serio problema' - da generico a visualizzabile e iperbolico."
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-06",
+   "run": "uqa06rlgmj4",
+   "tipo": "Copy / Pseudo-autorita via ricerca",
+   "testo": "Rafforzare l'esagerazione con riferimento a 'ricerca psicologica' + screenshot suggerito - autorita presa in prestito per credibilita'. DA VERIFICARE: nessuna ricerca reale citata, presentato come artificio retorico esplicito."
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-07",
+   "run": "uqa06rlgmj4",
+   "tipo": "Meta / Onesta sul trade-off clickbait",
+   "testo": "Dopo l'hook esagerato: 'essere autentico e poi spiegare qual e' il problema' - riconosce esplicitamente che 'sacrifichi un po' di quello che vorresti fare' ed e' 'un po' clickbait', validando il dubbio invece di negarlo ('si' pero' devi spingere')."
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-08",
+   "run": "uqa06rlgmj4",
+   "tipo": "Funnel / Esempio applicato + CTA",
+   "testo": "Chiusura: 'clicca il link, invio, leggi la mia storia' - screenshot reale di un'interfaccia app/community con pulsante 'La mia storia' come applicazione concreta della tecnica."
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-01",
+   "run": "-a0uuA1lbSI",
+   "tipo": "Diagnosi / Views senza destinazione",
+   "testo": "Apertura come diagnosi sarcastica: 'Complimenti, appena fatto 30.000 views - non hanno nessun posto dove andare a pagarti.' Il problema non e' la produzione di contenuto (video virali, formati diversi, contenuti di valore) ma l'assenza di una destinazione dove il traffico possa convertire. La metafora visiva lo rende letterale: capsule sparse sul tavolo con overlay 'occhio 30K', nessun contenitore in campo."
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-02",
+   "run": "-a0uuA1lbSI",
+   "tipo": "Diagnosi / La gente non ha capito cosa fai",
+   "testo": "Conseguenza diretta del volume senza destinazione: 'la gente non ha capito cosa fai'. L'audience accumulata dal contenuto virale non sa quale servizio venga offerto, quindi il volume non e' convertibile a prescindere dalla sua dimensione."
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-03",
+   "run": "-a0uuA1lbSI",
+   "tipo": "Framework / Tensione reach vs spiegazione",
+   "testo": "Punto centrale del video: non si puo' spiegare cosa si fa dentro i contenuti, perche' 'quello scende di views e tu continui a fare views'. Esiste una tensione strutturale tra il contenuto che genera reach e il contenuto che spiega l'offerta: due lavori in conflitto sullo stesso canale. Il creator resta intrappolato in un ciclo di views che non si monetizza mai, non per pigrizia ma per un vincolo del mezzo."
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-04",
+   "run": "-a0uuA1lbSI",
+   "tipo": "Soluzione / La landing come destinazione",
+   "testo": "'Se non c'hai un posto dove mandare le persone e dire io sono questo e offro questo, e' inutile.' La soluzione e' spostare la spiegazione FUORI dal canale sociale, su una landing page dedicata, che risolve la tensione senza costare reach. Visivamente: il piattino metallico che entra in campo verso le capsule."
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-05",
+   "run": "-a0uuA1lbSI",
+   "tipo": "Struttura / Contenuto minimo della landing",
+   "testo": "Struttura minima dichiarata, in 5 blocchi: (1) chi sei, (2) cosa fai, (3) per chi lo offri, (4) modulo per contattarti, (5) opzionale: possibilita' di pagarti direttamente sul sito. Nessuna menzione di social proof, obiezioni o long-form copy: e' esplicitamente una pagina minima di identita' e contatto, non una sales page."
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-06",
+   "run": "-a0uuA1lbSI",
+   "tipo": "Meccanica / Volume per tasso di passaggio",
+   "testo": "'Alcune di quelle 10.000 persone capitano su questa pagina, e piu' sono meglio e'.' Il modello e' volume x tasso di passaggio: la landing non converte tutti, ne intercetta una frazione. Il contenuto continua a servire per il volume, la landing per la conversione. Nota: apre con 30.000 e poi dice 10.000 senza correggersi, riportato fedelmente."
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-07",
+   "run": "-a0uuA1lbSI",
+   "tipo": "Regola operativa / Divisione dei compiti",
+   "testo": "Regola di chiusura: 'nei tuoi content non devi spiegare cosa fai e ridurre le views, devi solamente fare il CTA per andare nel link in bio.' Divisione dei compiti netta: il contenuto fa reach + UN SOLO CTA al link in bio, la landing fa spiegazione + conversione. Il CTA e' l'unico elemento commerciale ammesso dentro il contenuto."
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-01",
+   "run": "-zUDxSdaKRY",
+   "tipo": "Formato / Esercizio delivery progressivo",
+   "testo": "Stessa identica frase ripetuta 6 volte isolando la variabile delivery (tono, corpo, ritmo) dal testo - dimostra visivamente che lo stesso copy scritto converte diversamente a seconda della presentazione dal vivo."
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-02",
+   "run": "-zUDxSdaKRY",
+   "tipo": "Delivery / Livello 1 Insicuro",
+   "testo": "Livello 1 (peggiore): nessun contatto visivo, braccia conserte (postura chiusa/difensiva)."
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-03",
+   "run": "-zUDxSdaKRY",
+   "tipo": "Delivery / Livello 2 Normale",
+   "testo": "Livello 2: aggiunge contatto visivo ma parla troppo velocemente - miglioramento parziale non ancora efficace."
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-04",
+   "run": "-zUDxSdaKRY",
+   "tipo": "Delivery / Livello 3 Decente",
+   "testo": "Livello 3: parla lento, mette pause. Difetti residui: non proietta la voce, e' fisicamente fermo."
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-05",
+   "run": "-zUDxSdaKRY",
+   "tipo": "Delivery / Livello 4 Persuasivo",
+   "testo": "Livello 4: aggiunge variazione di tono (alza e abbassa). Persistono gli stessi 2 difetti: non proietta, resta fermo."
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-06",
+   "run": "-zUDxSdaKRY",
+   "tipo": "Delivery / Livello 5 Quasi perfetto",
+   "testo": "Livello 5: aggiunge proiezione vocale corretta, mantiene pause+tono. Nuovo difetto: non gesticola, risultato 'troppo da film' (teatrale/artificiale)."
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-07",
+   "run": "-zUDxSdaKRY",
+   "tipo": "Delivery / Livello 6 Perfetto",
+   "testo": "Livello 6 (finale): proietta, pause, GESTICOLA (differenza visiva netta, braccia si sbloccano), eye contact, confident. La gestualita' e' l'ultimo tassello che rende naturale una delivery tecnicamente corretta."
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-01",
+   "run": "NydMBZ2nUTE",
+   "tipo": "Copy / Hook - domanda scettica",
+   "testo": "'Ma The Wolf of Wall Street vendevano veramente o son tutte cazzate? Questo e' il reale copione che usavano durante la vendita' - hook che nomina lo scetticismo del pubblico prima di rispondere, invece di affermare direttamente."
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-02",
+   "run": "NydMBZ2nUTE",
+   "tipo": "Vendita / Setup - domanda retorica",
+   "testo": "'Secondo te funzionava veramente questa cosa? Chiami e ti dicono no non sono interessato. Cosa rispondi?' - pone il pubblico nel ruolo del venditore prima di rivelare la risposta scriptata."
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-03",
+   "run": "NydMBZ2nUTE",
+   "tipo": "Vendita / Validazione tramite fiducia implicita",
+   "testo": "'Sono certo che riceve un sacco di chiamate come questa, e sono sicuro che sappia distinguere quelle inutili da quelle valide' - valida l'esperienza del prospect invece di contestare il rifiuto, lo colloca implicitamente tra chi sa riconoscere una chiamata valida."
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-04",
+   "run": "NydMBZ2nUTE",
+   "tipo": "Vendita / Scarsita e riduzione richiesta",
+   "testo": "'Siamo una boutique che fa solo poche raccomandazioni l'anno. In questo momento il mio unico obiettivo e' presentarmi' - combina scarsita (selettivita) con riduzione esplicita della posta in gioco per abbassare la resistenza."
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-05",
+   "run": "NydMBZ2nUTE",
+   "tipo": "Vendita / Micro-commitment",
+   "testo": "'E d'accordo? Confermare quello che lui ti ha detto' - ottenere un piccolo assenso esplicito come step tecnico nominato dello script, non dettaglio conversazionale casuale. Seconda conferma indipendente nel run del pattern yes-ladder (dopo video 22)."
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-06",
+   "run": "NydMBZ2nUTE",
+   "tipo": "Vendita / Restringere la richiesta",
+   "testo": "'Non vogliamo gestire il suo portafoglio bla bla bla, fare una domanda: che ne dice?' - riduce la richiesta da 'gestire il portafoglio' a 'fare una domanda', stessa logica di KA-04 applicata a un punto diverso della chiamata."
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-07",
+   "run": "NydMBZ2nUTE",
+   "tipo": "Meta / Disclaimer etico",
+   "testo": "La copertina del documento originale mostra il testo 'SOLO A SCOPO DI FORMAZIONE' - disclaimer presente sulla fonte stessa, non aggiunto editorialmente da Andrei."
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-01",
+   "run": "_yUzEe29aTQ",
+   "tipo": "Copy / Hook bait-and-switch",
+   "testo": "'Lei ti sostituisce... i copywriter sono finiti' poi twist: 'in realta' non e' lei a sostituirti, ma chissa' usarlo meglio di te' - stessa tesi del video 21 (Hormozi), qui in un funnel di lancio evento."
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-02",
+   "run": "_yUzEe29aTQ",
+   "tipo": "Copy / Segmentazione 4 tier con posizionamento",
+   "testo": "4 tier: Boomer (scettico, terrorizzato, perde clienti) -> Media di mercato (usa AI poco, spettatore posizionato qui = 'TU', meglio della media ma non sfrutta ancora) -> Top freelancer/agenzie (usa AI per fare di piu, guadagna di piu) -> Balene (corporation $100M+/anno, irraggiungibili). Genera validazione + insicurezza motivante."
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-03",
+   "run": "_yUzEe29aTQ",
+   "tipo": "Copy / Urgenza ancorata a timeline reale",
+   "testo": "Urgenza ancorata a data storica verificabile: 'ottobre 2022 usci' GPT... da quel momento sei stato dietro a tutte le news?' - piu' credibile di un'urgenza generica."
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-04",
+   "run": "_yUzEe29aTQ",
+   "tipo": "Copy / Autovalutazione + mockery",
+   "testo": "Domande retoriche tecniche (sai fare agent? automatizzare processi? sales page con AI decente?) seguite da mockery di un prompt generico da principiante ('dammi 5 idee per una mail' con risposta derisoria) - motivazione tramite lieve imbarazzo da auto-riconoscimento."
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-05",
+   "run": "_yUzEe29aTQ",
+   "tipo": "Funnel / Framing prima volta in assoluto",
+   "testo": "'Non ho mai svelato i sistemi che uso internamente... apro le porte' - framing di rivelazione mai fatta prima pubblicamente, aumenta il valore percepito dell'evento."
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-06",
+   "run": "_yUzEe29aTQ",
+   "tipo": "Funnel / Struttura CTA evento live",
+   "testo": "CTA completo: data/ora esatte (21 maggio ore 21), formato dichiarato (diretta online), promessa, link in bio, scarsita' temporale esplicita (si parte tra 19 giorni)."
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-07",
+   "run": "_yUzEe29aTQ",
+   "tipo": "Copy / Linguaggio iperbolico informale",
+   "testo": "Promessa con intensificatore gergale ('copy che vendono assurdamente tanto') invece di numero specifico - registro colloquiale coerente col tono del canale."
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-01",
+   "run": "cs2online-lezione-06",
+   "tipo": "Principio fondamentale / context",
+   "testo": "Principio 'garbage in, garbage out': input scarso a Claude = output scarso. Soluzione: creare documenti di contesto riutilizzabili da allegare a ogni prompt, invece di riscrivere tutto da zero ogni volta."
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-02",
+   "run": "cs2online-lezione-06",
+   "tipo": "Formato / tool",
+   "testo": "Formato consigliato per documenti di contesto: Markdown (.md), non PDF ('il peggior formato per leggere le cose'). Tool consigliato: MarkEdit. Demo schermo confermata: editor con esempio 'ho 24 anni / abito in Italia / lavoro in marketing'."
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-03",
+   "run": "cs2online-lezione-06",
+   "tipo": "Struttura / organizzazione file",
+   "testo": "4 documenti di contesto core: brand guidelines (JSON), business plan, lista strumenti aziendali, skill/pregi/difetti. Struttura reale osservata su schermo: cartella 'Claude' > sottocartelle per progetto/cliente (es. 'Business planning' con file 'Business plan for sharing', 'Business Roadmap.md', 'RAG and Knowledge...md', 'Piano Strategico 2026.pptx', 'Systems and SOPs.md', 'What skills strength...md') — tag Finder dedicato 'AI contexting' (verde)."
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-04",
+   "run": "cs2online-lezione-06",
+   "tipo": "Workflow operativo / PDF-to-JSON",
+   "testo": "Workflow PDF-to-JSON osservato per intero su schermo: allegare PDF brand guidelines a chat Claude nuova, prompt 'Voglio che tu crei un JSON prompt di circa 300-400 righe, dettagliato e moderno, per indicare a un LLM come fare il design' — usare Opus con Extended Thinking (osservato: 'Opus 4.6 Extended' selezionato) perché documento riusato indefinitamente. Salvare il JSON con VS Code/Cursor (osservato: file salvato in 'Cartella contesto')."
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-05",
+   "run": "cs2online-lezione-06",
+   "tipo": "Framework / 4 livelli contesto",
+   "testo": "Framework '4 livelli di contesto' per frequenza di aggiornamento: Livello 1 = la richiesta stessa (cambia sempre, nessun documento); Livello 2 = obiettivi settimanali; Livello 3 = business planning/risultati trimestrali; Livello 4 = identità/professione/business (quasi mai). Documenti creati solo per livelli 2-4."
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-06",
+   "run": "cs2online-lezione-06",
+   "tipo": "Feature osservata / Claude memory",
+   "testo": "Feature 'memory' di Claude osservata dal vivo: saluto personalizzato 'andrei returns!' all'apertura di una nuova chat — riconoscimento cross-sessione dell'utente, non menzionato esplicitamente nel testo ma visibile a schermo."
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-07",
+   "run": "cs2online-lezione-06",
+   "tipo": "Osservazione indiretta / prova d'uso reale",
+   "testo": "Le chat recenti di Claude dell'autore, visibili sullo schermo, includono titoli di produzione del corso stesso ('10 livelli di utilizzo dell'AI', 'Course launch timeline and task p...', 'Linee guida per registrare lezioni...') — prova diretta non auto-dichiarata che l'autore usa lo stesso workflow insegnato per produrre il corso."
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-01",
+   "run": "cs2online-lezione-08",
+   "tipo": "Principio / expertise input vs output",
+   "testo": "Riformulazione del principio 'expertise per giudicare l'AI': non serve essere esperti solo per giudicare l'OUTPUT, serve esserlo per costruire un buon INPUT - se correggi sempre l'output, l'uso dell'AI perde senso."
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-02",
+   "run": "cs2online-lezione-08",
+   "tipo": "Definizione / context engineering",
+   "testo": "Definizione operativa di context engineering: concentrarsi nel costruire le informazioni contestuali che accompagnano il messaggio, per permettere all'AI di prendere decisioni migliori - distinto dal prompt engineering (2022-2023), focalizzato solo sul testo della richiesta."
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-03",
+   "run": "cs2online-lezione-08",
+   "tipo": "Principio / quantita' contesto",
+   "testo": "Principio 'non esiste troppo contesto': piu' informazioni contestuali dai, migliore e' l'output - nessun limite superiore dichiarato."
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-04",
+   "run": "cs2online-lezione-08",
+   "tipo": "Responsabilita' utente",
+   "testo": "L'AI non e' progettata per investigare attivamente sull'utente - e' programmata per rispondere subito. La responsabilita' di fornire il contesto e' sempre dell'utente, mai dell'AI."
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-05",
+   "run": "cs2online-lezione-08",
+   "tipo": "Limite feature memory",
+   "testo": "La memory delle chat passate (feature nativa Claude) NON sostituisce un buon contesto esplicito - 'non puoi affidarti al fatto che l'AI si ricordi cose dette prima'."
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-06",
+   "run": "cs2online-lezione-08",
+   "tipo": "Aneddoto personale",
+   "testo": "Aneddoto: i prompt dell'autore sono 'fatti in modo molto informale' via dictation vocale Mac (10 minuti di parlato) - il lavoro pesante lo fa il contesto pre-costruito, non la forma del prompt."
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-07",
+   "run": "cs2online-lezione-08",
+   "tipo": "Contesto per tipo AI",
+   "testo": "Il contesto varia per tipo di AI: documenti Markdown per LLM testuali; immagini stesse come contesto per generatori di immagini (es. Flux)."
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-01",
+   "run": "outfunnel-lezione-03",
+   "tipo": "",
+   "testo": "4 obiettivi possibili di un funnel: (1) generare contatti per email marketing, (2) generare contatti per un team di vendita, (3) vendita diretta, (4) awareness/brand."
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-02",
+   "run": "outfunnel-lezione-03",
+   "tipo": "",
+   "testo": "Il funnel a contatti-per-venditori si usa quando il prezzo è alto (indicativamente sopra 1.000€) o quando il copywriting da solo non basta a chiudere — si raccoglie il telefono, poi chiama un umano."
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-03",
+   "run": "outfunnel-lezione-03",
+   "tipo": "",
+   "testo": "Due varianti di email marketing: Automazione (sequenza automatica post-iscrizione) vs Blast (invio manuale a tutta la lista)."
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-04",
+   "run": "outfunnel-lezione-03",
+   "tipo": "",
+   "testo": "La vendita diretta (Ad → Pagina prodotto → Checkout) funziona bene con prodotti d'impulso o basso costo — nessun passaggio intermedio."
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-05",
+   "run": "outfunnel-lezione-03",
+   "tipo": "",
+   "testo": "L'awareness (es. Coca-Cola) è l'obiettivo più difficile da misurare perché il risultato non è immediato; può essere combinato con un funnel di iscrizione a valle."
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-06",
+   "run": "outfunnel-lezione-03",
+   "tipo": "",
+   "testo": "Struttura base generalizzata: Ads/traffico organico → Opt-in Page → Email o chiamate → Pagina di vendita o sales call."
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-07",
+   "run": "outfunnel-lezione-03",
+   "tipo": "",
+   "testo": "Regola di scelta: email marketing se serve retargeting a costo zero; sales call se prezzo alto/prodotto complesso; vendita diretta se prodotto semplice/economico; awareness se l'obiettivo è brand nel tempo."
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-01",
+   "run": "outfunnel-lezione-07",
+   "tipo": "",
+   "testo": "Struttura di esempio a 4 step: Ads → Sales page → Popup con opt-in (es. 15% sconto per la mail) → Email di follow-up dopo 48 ore."
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-02",
+   "run": "outfunnel-lezione-07",
+   "tipo": "",
+   "testo": "4 tipologie di trigger per popup: Time on page (dopo X secondi), Scroll percentage, Exit intent (solo desktop), On element (a un punto preciso della pagina)."
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-03",
+   "run": "outfunnel-lezione-07",
+   "tipo": "",
+   "testo": "Thank you page ha 3 funzioni: ringrazia, consegna il lead magnet promesso, include CTA aggiuntive per aumentare l'engagement."
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-04",
+   "run": "outfunnel-lezione-07",
+   "tipo": "",
+   "testo": "4 tipologie di email nel funnel: marketing (sequenze automatiche), blast (una tantum a tutti), conferma (migliora deliverability), carrello abbandonato."
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-05",
+   "run": "outfunnel-lezione-07",
+   "tipo": "",
+   "testo": "Order bump = piccola offerta extra aggiunta DENTRO il checkout stesso (distinta da upsell/cross-sell, che avvengono prima o dopo)."
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-06",
+   "run": "outfunnel-lezione-07",
+   "tipo": "",
+   "testo": "Automazioni con condizioni: personalizzare le email in base al comportamento (es. non inviare a chi ha già comprato) — primo accenno al tema ripreso in dettaglio in Lezione 15 (Behaviour-Based Tags)."
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-07",
+   "run": "outfunnel-lezione-07",
+   "tipo": "",
+   "testo": "Distinzione terminologica: landing page = qualsiasi pagina di atterraggio; opt-in page = landing page specificamente dedicata alla raccolta contatti (sottoinsieme, non sinonimo)."
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-01",
+   "run": "outfunnel-lezione-08",
+   "tipo": "",
+   "testo": "Step 1 — Definire l'obiettivo (vendite / lead / conversioni) e le KPI di successo; avviso esplicito: non giudicare i risultati troppo presto, analizzarli dopo qualche giorno."
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-02",
+   "run": "outfunnel-lezione-08",
+   "tipo": "",
+   "testo": "Step 2 — Comprendere il target: livello di consapevolezza (Lezione 2), buyer persona, \"hook iniziali\" (punti di attenzione che catturano il target)."
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-03",
+   "run": "outfunnel-lezione-08",
+   "tipo": "",
+   "testo": "Step 3 — Analizzare i competitor diretti E indiretti (stesso pubblico, prodotto diverso) e osservare mercati esteri; strumenti nominati: Facebook Ads Library, analisi pagine Instagram/Google Ads/YouTube dei competitor."
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-04",
+   "run": "outfunnel-lezione-08",
+   "tipo": "",
+   "testo": "Step 4 — Definire il MOFU (Middle of Funnel) prima ancora di stabilire l'entry point o il punto di chiusura: struttura a 3 livelli Top (ads) → Middle (sales page, email, educazione) → Bottom (checkout/conversione)."
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-05",
+   "run": "outfunnel-lezione-08",
+   "tipo": "",
+   "testo": "Step 5 — Definire gli entry point (Top Funnel): ads, contenuti organici, retargeting — con l'avvertenza esplicita di non considerare TUTTI i possibili entry point, solo quelli rilevanti e sotto controllo."
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-06",
+   "run": "outfunnel-lezione-08",
+   "tipo": "",
+   "testo": "Step 6 — Definire il Bottom Funnel (checkout, iscrizione, prenotazione consulenza), con possibilità di integrare un upsell."
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-07",
+   "run": "outfunnel-lezione-08",
+   "tipo": "",
+   "testo": "Step 7 — Retargeting e follow-up con tempi concreti: email di recupero carrello dopo 3 ore, follow-up dopo 30 giorni con nuove offerte/contenuti."
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-01",
+   "run": "outfunnel-lezione-11",
+   "tipo": "",
+   "testo": "Principio guida citato testualmente: \"la differenza tra 0 e 1 è maggiore della differenza tra 1 e 100\" — il primo acquisto è la barriera più alta, dopo diventa progressivamente più facile vendere."
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-02",
+   "run": "outfunnel-lezione-11",
+   "tipo": "",
+   "testo": "Esempio Apple: chi compra un iPhone è più incline a comprare Apple Watch, AirPods e altri accessori — effetto alone del primo acquisto sull'intero ecosistema di prodotti."
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-03",
+   "run": "outfunnel-lezione-11",
+   "tipo": "",
+   "testo": "3 leve di monetizzazione sui clienti esistenti: Retargeting (nuovi prodotti a chi ha già comprato, utile su prodotti senza rinnovo), Follow-up su acquisti passati (pianificato nel funnel o non pianificato, a mesi di distanza), Upsell/Cross-sell."
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-04",
+   "run": "outfunnel-lezione-11",
+   "tipo": "",
+   "testo": "Definizioni precise: Upsell = prodotto di valore MAGGIORE (es. corso base → corso avanzato); Cross-sell = prodotto COMPLEMENTARE (es. felpa → pantaloni abbinati)."
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-05",
+   "run": "outfunnel-lezione-11",
+   "tipo": "",
+   "testo": "Regola critica: l'upsell non deve mai far sembrare il primo acquisto incompleto/mancante — se il cliente percepisce che gli è stata \"tolta\" una parte del prodotto originale per rivendergliela, si sente ingannato."
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-06",
+   "run": "outfunnel-lezione-11",
+   "tipo": "",
+   "testo": "Raccomandazione operativa sulla pianificazione: se il team marketing ha risorse limitate, NON pianificare upsell/follow-up da subito — rischio di realizzare male il funnel principale per voler fare troppo in una volta."
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-07",
+   "run": "outfunnel-lezione-11",
+   "tipo": "",
+   "testo": "2 errori comuni esplicitamente nominati: (1) vendere lo stesso prodotto con variazioni cosmetiche minime (es. stesso capo, colore diverso — non converte); (2) svalutare il primo acquisto con un secondo prodotto che conteneva informazioni \"dovute\" già nel primo."
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-01",
+   "run": "outfunnel-lezione-15",
+   "tipo": "",
+   "testo": "Principio guida: \"parlare a tutti equivale a non parlare a nessuno\" — parlare a ogni singola persona individualmente sarebbe ideale ma non scalabile; la segmentazione è il compromesso pratico."
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-02",
+   "run": "outfunnel-lezione-15",
+   "tipo": "",
+   "testo": "Distinzione centrale: copy \"apparente\" (sembra specifico ma è dicibile a chiunque, es. \"Questo prodotto è perfetto per te\") vs copy \"specifico\" (dettagli concreti legati a un segmento reale, es. \"Se sei uno studente, questo tablet ti aiuta a prendere appunti senza perdere tempo\")."
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-03",
+   "run": "outfunnel-lezione-15",
+   "tipo": "",
+   "testo": "Strategie di segmentazione nel funnel: funnel separati per segmento, ads diverse per target diversi (stessa pagina o pagine personalizzate), sales page con stessa struttura ma headline diversa per segmento, budget distribuito in proporzione alla grandezza di ciascun segmento."
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-04",
+   "run": "outfunnel-lezione-15",
+   "tipo": "",
+   "testo": "**Behaviour-Based Tags**: etichette assegnate agli utenti in base alle azioni compiute (es. visita alla sales page del \"Prodotto 2\" → tag \"P2-SP\" → email personalizzate su quel prodotto); regole condizionali esemplificate: visto ma non cliccato → follow-up mirato; cliccato ma non comprato → urgenza/scarcity."
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-05",
+   "run": "outfunnel-lezione-15",
+   "tipo": "",
+   "testo": "**Lead Scoring**: sistema a punti che identifica i lead più \"caldi\" — esempio: 1ª visita sales page = +1, 2ª visita = +1, 3ª visita + visita Instagram + click su un link = lead molto interessato → email personalizzate più aggressive; permette di concentrare budget/attenzione solo sui lead a punteggio alto."
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-06",
+   "run": "outfunnel-lezione-15",
+   "tipo": "",
+   "testo": "**Custom Audience Journey**: percorsi email differenziati in base al comportamento specifico (prima visita → sequenza standard; ritorni multipli → offerta speciale; visita ad altra pagina → email con suggerimenti personalizzati)."
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-07",
+   "run": "outfunnel-lezione-15",
+   "tipo": "",
+   "testo": "Avvertenza esplicita sui limiti: queste 3 tecniche (KA-04, KA-05, KA-06) sono avanzate e richiedono esperienza — un principiante dovrebbe iniziare con tag e segmentazioni semplici; non personalizzare OGNI step, va trovato un equilibrio con tempo/budget disponibili."
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-01",
+   "run": "yX0XZh2PSYo",
+   "tipo": "Copy / Personalizzazione - esempio",
+   "testo": "Esempio d'apertura: quando un brand come Decathlon manda una mail promozionale, il testo cambia in automatico in base al nome fornito dall'utente in fase di iscrizione ('Ciao Andrei...' / 'Ciao Maria...' / 'Ciao Roberto...'). Il dato (nome, data di nascita, genere) viene raccolto al momento della creazione dell'account e riutilizzato per personalizzare le comunicazioni successive."
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-02",
+   "run": "yX0XZh2PSYo",
+   "tipo": "Definizioni / Email marketing",
+   "testo": "Definizione operativa: i merge tag sono campi che vengono cambiati automaticamente in base alla persona a cui e' destinata la mail — puo' esserci il nome, l'email, il cognome o un'altra informazione che l'utente ha fornito al momento dell'iscrizione."
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-03",
+   "run": "yX0XZh2PSYo",
+   "tipo": "Positioning / Livello competenza",
+   "testo": "Distinzione di livello: gli 'email marketer basilari' sanno cos'e' un merge tag (concetto base), ma chi opera a un livello piu' avanzato conosce anche i sostituti/fallback ai merge tag — la vera leva di differenziazione non e' il concetto base, ma la gestione dei casi limite."
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-04",
+   "run": "yX0XZh2PSYo",
+   "tipo": "Copy / Anti-pattern personalizzazione",
+   "testo": "Problema pratico: se scrivi 'Ciao, [nome],' e il destinatario non ha un nome registrato nel CRM, con un merge tag semplice quello spazio dopo 'Ciao,' rimane vuoto — un difetto visibile che rovina la mail personalizzata."
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-05",
+   "run": "yX0XZh2PSYo",
+   "tipo": "Metodo / Merge tag fallback",
+   "testo": "Soluzione: con alcuni CRM puoi impostare un fallback alternativo al posto dello spazio vuoto — sintassi tipo 'Ciao, [nome/iscritto], offerta per te': se c'e' il nome, il sistema stampa 'Ciao, Andrei'; se il nome manca, stampa 'Ciao, Iscritto' invece di lasciare un buco. Logica condizionale: campo primario -> se assente, campo/valore di riserva."
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-06",
+   "run": "yX0XZh2PSYo",
+   "tipo": "Metodo / Merge tag fallback - generalizzazione",
+   "testo": "La stessa tecnica di fallback non si limita al saluto iniziale: si puo' applicare a qualunque altro merge tag nel corpo dell'email, es. '[nome/CTA]', '[nome/Senti]' o '[nome/Ascolta]' per invitare a 'leggere bene' in modo naturale anche quando manca il dato primario — il pattern condizionale e' riutilizzabile su qualsiasi punto del copy, non solo sul nome."
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-07",
+   "run": "yX0XZh2PSYo",
+   "tipo": "Applicazione / Azione consigliata",
+   "testo": "Chiusura pratica: definita 'una semplice modifica che puoi fare oggi stesso al tuo email marketing o a quello del tuo cliente per fare piu' soldi' — intervento a basso sforzo/alto impatto, applicabile immediatamente."
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-01",
+   "run": "cs2online-bonus-01",
+   "tipo": "SOP / freelance",
+   "testo": "SOP applicate al freelance: un business sano non puo' funzionare senza processi standardizzati, vale anche per un singolo freelancer. Il 90% delle azioni in un business sono ripetitive e vanno documentate, non improvvisate."
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-02",
+   "run": "cs2online-bonus-01",
+   "tipo": "Metodo / integrazione AI",
+   "testo": "Metodo a 3 step per integrare l'AI nei processi esistenti: (1) documenta i processi attuali per intero senza inventare nulla, (2) elimina gli step inutili, (3) implementa l'AI dove possibile."
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-03",
+   "run": "cs2online-bonus-01",
+   "tipo": "Regola / gestione aggiornamenti AI",
+   "testo": "Regola anti-ansia da aggiornamento: non rincorrere ogni notizia AI quotidiana - aggiornarsi periodicamente (ogni trimestre o semestre) e SOLO ALLORA implementare le novita' nei propri sistemi. Distinzione tra 'stare dietro alle notizie' (passivo) e 'implementarle nel lavoro' (attivo, a cadenza fissa)."
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-04",
+   "run": "cs2online-bonus-01",
+   "tipo": "Aneddoto / ri-test periodico tool",
+   "testo": "Esempio personale: AI provata nel 2023 per ricerca copy 'faceva schifo', riprovata mesi dopo -> scoperto Perplexity. Stesso pattern siti web: 'impossibile con l'AI' all'inizio, ripreso mesi dopo con Lovable e funzionava. Pattern: ri-testare periodicamente uno strumento scartato, non giudicarlo definitivamente da un primo tentativo negativo."
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-05",
+   "run": "cs2online-bonus-01",
+   "tipo": "Cadenza cambiamento business",
+   "testo": "Cambiamenti significativi all'intero business vanno fatti raramente (circa una volta all'anno), non continuamente."
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-06",
+   "run": "cs2online-bonus-01",
+   "tipo": "Riferimento esterno",
+   "testo": "Riferimento citato e tradotto: articolo LinkedIn di Matt Schumer 'Something Big is Happening' - solo citato come fonte, non riassunto nel materiale disponibile."
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-01",
+   "run": "cs2online-lezione-03",
+   "tipo": "Framework / 10 livelli utilizzo AI",
+   "testo": "Framework 10 livelli (0-10) di utilizzo AI: 0=sa che esiste, 1=la usa come Google, 2=giocherella senza workflow, 3=lavoro reale ma output generico 'che sa di AI' (90% delle persone bloccata qui), 4=costruisce contesto e ottiene output performanti (salto critico), 5=sistemi/automazioni senza intervento manuale, 6=crea applicazioni/integra API, 7=fine-tuning+RAG (migliaia €/mese), 8-10=big tech/governi. Obiettivo dichiarato del corso: portare lo studente da 0-3 a 4-5, verso il 6."
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-02",
+   "run": "cs2online-lezione-03",
+   "tipo": "Bias cognitivo applicato all'AI",
+   "testo": "Effetto Dunning-Kruger applicato all'uso AI: il 90% è bloccato ai livelli 1-3, si percepisce competente ma non ha risultati misurabili reali (non più vendite, non più views)."
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-03",
+   "run": "cs2online-lezione-03",
+   "tipo": "Principio operativo / muro 3-4",
+   "testo": "Il 'muro' tra livello 3 e 4 è concettuale non tecnico: l'AI non è un 'bottone magico', il salto richiede costruzione deliberata di contesto (info giuste, tante, ben strutturate — non PDF a caso). Conferma diretta del concetto Context Engineering già visto in lezione 2."
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-04",
+   "run": "cs2online-lezione-03",
+   "tipo": "Criterio decisionale / quando NON usare AI",
+   "testo": "Criterio esplicito per NON usare l'AI: se per un task piccolo (es. 20 parole) l'AI fa peggio di farlo a mano, va fatto a mano — 'il punto non è usare l'AI per usare l'AI'."
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-05",
+   "run": "cs2online-lezione-03",
+   "tipo": "Principio / 2 motivi legittimi per usare AI",
+   "testo": "2 motivi legittimi per usare l'AI: (1) risparmiare tempo significativo, (2) fare cose che altrimenti non si saprebbe fare (es. scrivere codice senza saper programmare)."
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-06",
+   "run": "cs2online-lezione-03",
+   "tipo": "Esempio pratico / automazione livello 5",
+   "testo": "Esempio automazione livello 5: cliente manda brief via email → Zapier passa a Claude → Claude produce bozza strategica → invio email automatico → lavoro pronto al risveglio, zero intervento manuale nel mezzo."
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-01",
+   "run": "cs2online-lezione-07",
+   "tipo": "Framework / gerarchia obiettivi",
+   "testo": "Gerarchia 4 livelli obiettivo (vision -> obiettivo -> target -> task) - l'autore condivide la propria vision aziendale scritta con Claude e col team, cosi' ogni prompt eredita automaticamente il contesto strategico."
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-02",
+   "run": "cs2online-lezione-07",
+   "tipo": "Regola operativa (5a occorrenza corso)",
+   "testo": "Regola esplicita ripetuta: 'crea il contesto tu, non farlo creare all'AI. Se fai slop su slop, ottieni slop' - applicato specificamente al NON delegare la scrittura del contesto stesso all'AI (non solo il copy finale)."
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-03",
+   "run": "cs2online-lezione-07",
+   "tipo": "Categoria contesto / road block",
+   "testo": "Road block come categoria esplicita di contesto: difetti personali noti e limitazioni di risorse - beneficio dichiarato: Claude 'segnala dove tendo a sbagliare' perche' gliel'ha detto esplicitamente."
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-04",
+   "run": "cs2online-lezione-07",
+   "tipo": "Principio / selettivita'",
+   "testo": "Principio di selettivita': non usare tutti i tipi di contesto sempre - chiedersi per ogni task specifico quali hanno senso, evitando over-engineering del contesto."
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-05",
+   "run": "cs2online-lezione-07",
+   "tipo": "Concetto / AI psychosis",
+   "testo": "Concetto 'AI psychosis' citato esplicitamente: non delegare all'AI compiti banali risolvibili 'col cervello in 2 secondi' - critica implicita all'over-reliance sull'AI."
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-06",
+   "run": "cs2online-lezione-07",
+   "tipo": "Risorsa allegata",
+   "testo": "Risorsa allegata 'Vision APS' (PDF 46MB) - presumibile documento reale della vision aziendale di Andrei Pascu, usato come esempio concreto del concetto 'vision' descritto nel testo. Non analizzato in dettaglio (file grande, riferimento salvato)."
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-01",
+   "run": "cs2online-lezione-10",
+   "tipo": "Workflow completo",
+   "testo": "Workflow completo audio-cliente->revisioni osservato: WhatsApp (scarica audio) -> ElevenLabs Speech-to-Text (trascrizione, lingua italiana) -> pulizia testo (rimuovere timestamp/speaker) -> Claude Project (allegato+contesto) -> output revisioni."
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-02",
+   "run": "cs2online-lezione-10",
+   "tipo": "Motivazione scelta tool",
+   "testo": "Motivazione scelta ElevenLabs: dichiarato 'piu' preciso di altri tool su punteggiatura e riconoscimento parole' - variante di garbage-in-garbage-out applicata alla qualita' della trascrizione."
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-03",
+   "run": "cs2online-lezione-10",
+   "tipo": "Limite tecnico",
+   "testo": "Non e' possibile allegare audio direttamente a Claude - va sempre trascritto in testo prima."
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-04",
+   "run": "cs2online-lezione-10",
+   "tipo": "Front loading contesto (applicazione specifica)",
+   "testo": "Principio 'front loading del contesto' applicato all'inizio di un progetto cliente: investire ore all'inizio per costruire il miglior contesto possibile, poi riutilizzarlo (Project o Cowork) in ogni conversazione futura senza ripartire da zero."
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-05",
+   "run": "cs2online-lezione-10",
+   "tipo": "Alternative gratuite",
+   "testo": "Alternative gratuite a ElevenLabs (dichiarate meno precise): trucco YouTube auto-transcript (audio su sfondo nero come video), Whisper (open source, forte su lingue/rumore/accenti), Buzz (app desktop basata su Whisper, esporta TXT/SRT/VTT), Handy STT (locale, no cloud), oTranscribe (manuale), MacWhisper (locale, solo Mac)."
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-06",
+   "run": "cs2online-lezione-10",
+   "tipo": "Memory per-Project",
+   "testo": "Memory per-Project confermata come vantaggio specifico: ogni Project ha memory separata, Claude 'si ricorda cose specifiche di quel progetto' - coerente con lezione 9."
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-01",
+   "run": "hnPa2zspu3k",
+   "tipo": "Formato / Quiz rapid-fire",
+   "testo": "Il video pone 5 domande 'cosa viene prima, X o Y?' sull'ordine degli step di un funnel, ciascuna con due box testo affiancati a schermo - tecnica che rende leggibile il confronto binario anche senza audio (silent-scroll)."
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-02",
+   "run": "hnPa2zspu3k",
+   "tipo": "Framework / Sequenza funnel step 1",
+   "testo": "Risposta 1: l'ad viene prima della landing page - primo gradino di difficolta' crescente, ordine ovvio usato per introdurre il formato."
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-03",
+   "run": "hnPa2zspu3k",
+   "tipo": "Framework / Sequenza funnel step 2 - vincolo strutturale",
+   "testo": "Risposta 2: la landing page viene prima dell'email per vincolo tecnico esplicito - senza form di opt-in non c'e' modo di raccogliere l'iscrizione necessaria per inviare email. L'ordine dipende da un prerequisito strutturale, non da convenzione."
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-04",
+   "run": "hnPa2zspu3k",
+   "tipo": "Framework / Sequenza funnel - ambiguita reale",
+   "testo": "Risposta 3 (unica con 'non e' rilevante/dipende'): l'email puo' venire prima O dopo l'acquisto a seconda di come e' impostato il funnel - a differenza delle altre domande, qui l'ordine non e' fisso ma dipende dal design del funnel (nurturing pre-vendita vs onboarding/upsell post-acquisto)."
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-05",
+   "run": "hnPa2zspu3k",
+   "tipo": "Framework / Sequenza funnel - coesistenza",
+   "testo": "Risposta 4: 'entrambe' - sequenza tipica: call di vendita -> acquisto -> eventuale call di upsell se necessario. La call puo' comparire sia prima sia dopo l'acquisto nello stesso funnel con funzioni diverse."
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-06",
+   "run": "hnPa2zspu3k",
+   "tipo": "Framework / Sequenza funnel step 5 - vincolo strutturale",
+   "testo": "Risposta 5: le ads vengono prima del pop-up, stessa logica strutturale di KA-03 - il pop-up e' visibile solo a chi e' gia' arrivato sulla landing generata dal traffico dell'ad; non puo' esistere prima del traffico che lo genera."
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-01",
+   "run": "nP4ojCzvjr8",
+   "tipo": "Copy / Narrativa e framing",
+   "testo": "Apertura narrativa in 3 beat: 'Un uomo torna a casa, notifica. E' un'email. Lui legge. Qui ci sono due possibilita'.' Il video parte da una scena in prima persona (POV del lettore) invece che da una statistica, per rendere concreto il momento in cui si decide il destino di un'email inviata."
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-02",
+   "run": "nP4ojCzvjr8",
+   "tipo": "Copy / Esito negativo",
+   "testo": "Ramo 1: 'Uno, legge oggetto, e' spam, mette telefono in tasca e torna a casa.' La decisione di scartare si prende leggendo SOLO l'oggetto (nessuna apertura del corpo email), verdetto istantaneo e nessuna azione successiva."
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-03",
+   "run": "nP4ojCzvjr8",
+   "tipo": "Copy / Esito positivo",
+   "testo": "Ramo 2: 'Due. Legge oggetto. Interessante. Legge email. Compra prodotto.' Sequenza a 3 step (oggetto -> giudicato interessante -> apertura -> acquisto): l'oggetto resta il gate iniziale identico al ramo 1, cambia solo il giudizio del lettore nello stesso istante."
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-04",
+   "run": "nP4ojCzvjr8",
+   "tipo": "Copy / Tesi centrale",
+   "testo": "Chiusura: 'Ogni volta che invii puo' accadere. Unica cosa che fa differenza, se sai fare email marketing strategico.' I due esiti (spam-bin vs acquisto) sono presentati come casuali di default; la sola variabile che sposta l'ago e' la competenza strategica del mittente."
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-05",
+   "run": "nP4ojCzvjr8",
+   "tipo": "Formato / Tecnica di produzione",
+   "testo": "Formato a 'parabola binaria': scena live-action desaturata con overlay una/due parole per frame sincronizzato al parlato, marcatori numerici grandi '1'/'2' per la biforcazione narrativa, chiusura a schermo nero con sola tipografia bianca per isolare la tesi finale."
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-06",
+   "run": "nP4ojCzvjr8",
+   "tipo": "Copy / Prop e credibilita' visiva",
+   "testo": "Lo smartphone in mano mostra una schermata di notifica ricostruita (mittente, oggetto, preview generici non leggibili in dettaglio) - prop visivo minimo ma sufficiente a rendere concreta l'azione 'legge oggetto' descritta a voce."
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-01",
+   "run": "outfunnel-lezione-01",
+   "tipo": "",
+   "testo": "Il funnel è il modello del percorso di un potenziale cliente dal primo contatto con un prodotto/servizio fino all'acquisto, rappresentato come un imbuto: TOF (Top of Funnel, molti entrano) → BOF (Bottom of Funnel, pochi comprano)."
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-02",
+   "run": "outfunnel-lezione-01",
+   "tipo": "",
+   "testo": "Un funnel non ha un numero fisso di step: può averne 3, 5, 10 o più — è definito dal percorso, non da un template rigido."
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-03",
+   "run": "outfunnel-lezione-01",
+   "tipo": "",
+   "testo": "Struttura di riferimento a 7 step del funnel classico: Ad → Opt-in Page → Email di marketing → Sales Page → Checkout → Cross-sell/Up-sell → Follow-up."
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-04",
+   "run": "outfunnel-lezione-01",
+   "tipo": "",
+   "testo": "Definizioni operative: Cross-sell = prodotto complementare al momento dell'acquisto; Up-sell = prodotto di valore superiore a quello in acquisto; Follow-up = comunicazione post-vendita per fidelizzare e generare acquisti futuri."
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-05",
+   "run": "outfunnel-lezione-01",
+   "tipo": "",
+   "testo": "Le email di follow-up sono enfatizzate come leva a costo molto più basso degli annunci pubblicitari — motivo per cui il corso dedica sezioni dedicate a email/upsell (9-11)."
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-06",
+   "run": "outfunnel-lezione-01",
+   "tipo": "",
+   "testo": "Posizionamento dichiarato del corso: copre \"strategie avanzate di marketing online difficili da trovare altrove\" — imposta l'aspettativa che le lezioni successive vadano oltre le basi da manuale."
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-01",
+   "run": "outfunnel-lezione-02",
+   "tipo": "",
+   "testo": "Principio cardine: se il potenziale cliente non sa di avere un problema o non conosce il prodotto, non comprerà mai — ogni fase del funnel va adattata al livello di consapevolezza del target."
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-02",
+   "run": "outfunnel-lezione-02",
+   "tipo": "",
+   "testo": "Errore comune: proporre direttamente il prodotto (\"Compra ora, 50% di sconto!\") funziona solo su chi è già consapevole; su chi non sa nulla la proposta viene ignorata."
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-03",
+   "run": "outfunnel-lezione-02",
+   "tipo": "",
+   "testo": "I 5 Livelli di Consapevolezza (framework Eugene Schwartz, non attribuito esplicitamente nel video): Non consapevole → Consapevole del problema → Consapevole della soluzione → Consapevole del prodotto → Completamente consapevole."
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-04",
+   "run": "outfunnel-lezione-02",
+   "tipo": "",
+   "testo": "Esempio applicato (Dental Spray per cani) mostra due target diversi (proprietario medio vs dog trainer) che richiedono messaggi opposti sullo stesso prodotto, in base a cosa già sanno."
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-05",
+   "run": "outfunnel-lezione-02",
+   "tipo": "",
+   "testo": "Sequenza di copy che fa avanzare un lettore lungo i 5 livelli, frase per frase: \"Lo sapevi che il 90%...\" (crea consapevolezza del problema) → \"Esistono prodotti per...\" (soluzione) → \"Abbiamo creato...\" (prodotto) → \"Costa solo 19,99€...\" (spinta all'acquisto)."
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-06",
+   "run": "outfunnel-lezione-02",
+   "tipo": "",
+   "testo": "Applicazione strategica: creare più varianti di ads per ogni livello di consapevolezza del pubblico invece di un unico annuncio generico."
+  }
+ ]
+}

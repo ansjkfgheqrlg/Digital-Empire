@@ -1,0 +1,1102 @@
+{
+ "slug": "arma-outemail-vsl",
+ "fonte": "sorgenti/arma-outemail-vsl/video.mp4",
+ "generato": "2026-09-10 23:58",
+ "strumento_trascrizione": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "durata_video_s": 167.4,
+ "densita": {
+  "segmenti_vocali": 32,
+  "secondi_di_parlato": 143.16,
+  "percentuale_di_parlato": 85.5,
+  "segmenti_al_minuto": 11.47,
+  "durata_media_segmento_s": 4.47
+ },
+ "parole_totali": 428,
+ "parole_al_minuto_medie": 153.4,
+ "parole_al_minuto_sul_solo_parlato": 179.4,
+ "wpm_per_minuto": [
+  {
+   "minuto": 0,
+   "da": 0.0,
+   "a": 60.0,
+   "parole": 180,
+   "parole_al_minuto": 180.0,
+   "secondi_di_voce": 58.28,
+   "densita_voce_pct": 97.1
+  },
+  {
+   "minuto": 1,
+   "da": 60.0,
+   "a": 120.0,
+   "parole": 166,
+   "parole_al_minuto": 166.0,
+   "secondi_di_voce": 55.6,
+   "densita_voce_pct": 92.7
+  },
+  {
+   "minuto": 2,
+   "da": 120.0,
+   "a": 167.4,
+   "parole": 82,
+   "parole_al_minuto": 103.8,
+   "secondi_di_voce": 22.76,
+   "densita_voce_pct": 48.0
+  }
+ ],
+ "pause_sopra_0_5s": 2,
+ "pause_dal_parlato": [
+  {
+   "inizio": 1.2,
+   "fine": 1.32,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "te.",
+   "prima_di": "Out"
+  },
+  {
+   "inizio": 3.46,
+   "fine": 3.6,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "tutti,",
+   "prima_di": "sono"
+  },
+  {
+   "inizio": 4.32,
+   "fine": 4.52,
+   "durata": 0.2,
+   "tipo": "interna",
+   "dopo": "serio.",
+   "prima_di": "Del"
+  },
+  {
+   "inizio": 8.56,
+   "fine": 8.64,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "te.",
+   "prima_di": "Chiudi"
+  },
+  {
+   "inizio": 12.72,
+   "fine": 12.94,
+   "durata": 0.22,
+   "tipo": "interna",
+   "dopo": "marketing,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 26.16,
+   "fine": 26.28,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "guardare.",
+   "prima_di": "Perché"
+  },
+  {
+   "inizio": 32.56,
+   "fine": 32.66,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "investire.",
+   "prima_di": "Iniziamo"
+  },
+  {
+   "inizio": 37.94,
+   "fine": 38.26,
+   "durata": 0.32,
+   "tipo": "interna",
+   "dopo": "2017,",
+   "prima_di": "no"
+  },
+  {
+   "inizio": 41.18,
+   "fine": 41.24,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "xddd,",
+   "prima_di": "no"
+  },
+  {
+   "inizio": 46.64,
+   "fine": 46.7,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "volte.",
+   "prima_di": "Come"
+  },
+  {
+   "inizio": 49.28,
+   "fine": 49.34,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "servono?",
+   "prima_di": "Perché"
+  },
+  {
+   "inizio": 56.76,
+   "fine": 56.9,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "avanzate.",
+   "prima_di": "Out"
+  },
+  {
+   "inizio": 60.72,
+   "fine": 60.88,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "Outline,",
+   "prima_di": "sono"
+  },
+  {
+   "inizio": 63.3,
+   "fine": 63.42,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "marketing,",
+   "prima_di": "che"
+  },
+  {
+   "inizio": 66.84,
+   "fine": 67.02,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "strategico.",
+   "prima_di": "Cosa"
+  },
+  {
+   "inizio": 67.82,
+   "fine": 68.62,
+   "durata": 0.8,
+   "tipo": "interna",
+   "dopo": "-mail?",
+   "prima_di": "334"
+  },
+  {
+   "inizio": 70.02,
+   "fine": 70.08,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "video,",
+   "prima_di": "più"
+  },
+  {
+   "inizio": 74.4,
+   "fine": 74.52,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "spiegoni,",
+   "prima_di": "trovi"
+  },
+  {
+   "inizio": 79.22,
+   "fine": 79.38,
+   "durata": 0.16,
+   "tipo": "interna",
+   "dopo": "scrittura.",
+   "prima_di": "Vedrai"
+  },
+  {
+   "inizio": 80.52,
+   "fine": 80.76,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "penso,",
+   "prima_di": "cosa"
+  },
+  {
+   "inizio": 97.12,
+   "fine": 97.42,
+   "durata": 0.3,
+   "tipo": "interna",
+   "dopo": "scritti,",
+   "prima_di": "esempi,"
+  },
+  {
+   "inizio": 98.2,
+   "fine": 98.58,
+   "durata": 0.38,
+   "tipo": "interna",
+   "dopo": "modelli,",
+   "prima_di": "breakdown"
+  },
+  {
+   "inizio": 99.64,
+   "fine": 99.74,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "vincente,",
+   "prima_di": "copia,"
+  },
+  {
+   "inizio": 100.24,
+   "fine": 100.48,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "copia,",
+   "prima_di": "adatta,"
+  },
+  {
+   "inizio": 101.0,
+   "fine": 101.3,
+   "durata": 0.3,
+   "tipo": "interna",
+   "dopo": "adatta,",
+   "prima_di": "domina,"
+  },
+  {
+   "inizio": 101.58,
+   "fine": 101.72,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "domina,",
+   "prima_di": "no"
+  },
+  {
+   "inizio": 102.6,
+   "fine": 102.74,
+   "durata": 0.14,
+   "tipo": "interna",
+   "dopo": "basi,",
+   "prima_di": "no"
+  },
+  {
+   "inizio": 110.4,
+   "fine": 110.48,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "qua,",
+   "prima_di": "volete"
+  },
+  {
+   "inizio": 112.08,
+   "fine": 112.16,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "no?",
+   "prima_di": "Non"
+  },
+  {
+   "inizio": 124.34,
+   "fine": 124.44,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "marketing,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 125.62,
+   "fine": 125.9,
+   "durata": 0.28,
+   "tipo": "interna",
+   "dopo": "basta.",
+   "prima_di": "Out"
+  },
+  {
+   "inizio": 131.16,
+   "fine": 131.4,
+   "durata": 0.24,
+   "tipo": "interna",
+   "dopo": "strategie,",
+   "prima_di": "mostra"
+  },
+  {
+   "inizio": 134.58,
+   "fine": 134.7,
+   "durata": 0.12,
+   "tipo": "interna",
+   "dopo": "persona,",
+   "prima_di": "sono"
+  },
+  {
+   "inizio": 136.12,
+   "fine": 136.22,
+   "durata": 0.1,
+   "tipo": "interna",
+   "dopo": "scrivo.",
+   "prima_di": "Out"
+  },
+  {
+   "inizio": 137.3,
+   "fine": 137.48,
+   "durata": 0.18,
+   "tipo": "interna",
+   "dopo": "aspetta,",
+   "prima_di": "i"
+  },
+  {
+   "inizio": 139.72,
+   "fine": 140.06,
+   "durata": 0.34,
+   "tipo": "interna",
+   "dopo": "tua",
+   "prima_di": "mail"
+  },
+  {
+   "inizio": 144.3,
+   "fine": 167.4,
+   "durata": 23.1,
+   "tipo": "coda"
+  }
+ ],
+ "volume_medio_dBFS": -23.3,
+ "volume_massimo_dBFS": -4.0,
+ "silenzi_-30dB": [
+  {
+   "inizio": 144.32,
+   "fine": 144.92,
+   "durata": 0.6
+  },
+  {
+   "inizio": 151.32,
+   "fine": 153.25,
+   "durata": 1.94
+  },
+  {
+   "inizio": 153.76,
+   "fine": 154.19,
+   "durata": 0.42
+  },
+  {
+   "inizio": 161.99,
+   "fine": 162.39,
+   "durata": 0.4
+  },
+  {
+   "inizio": 164.28,
+   "fine": 164.6,
+   "durata": 0.32
+  },
+  {
+   "inizio": 164.65,
+   "fine": 165.61,
+   "durata": 0.96
+  },
+  {
+   "inizio": 165.61,
+   "fine": 167.4,
+   "durata": 1.79
+  }
+ ],
+ "silenzi_-40dB": [
+  {
+   "inizio": 165.81,
+   "fine": 166.19,
+   "durata": 0.39
+  },
+  {
+   "inizio": 166.2,
+   "fine": 167.4,
+   "durata": 1.21
+  }
+ ],
+ "soglia_relativa_dB": -41,
+ "silenzi_soglia_relativa": [
+  {
+   "inizio": 166.2,
+   "fine": 167.4,
+   "durata": 1.21
+  }
+ ],
+ "nota_silenzi": "silencedetect di ffmpeg, durata minima 0,30 s, tre soglie: due assolute (-30 e -40 dBFS) e una relativa a questo audio (volume medio meno 18 dB). Sotto una base musicale continua le soglie assolute possono restituire zero silenzi: e' un dato, non un errore, e per questo c'e' la soglia relativa.",
+ "loudness": {
+  "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
+  "campioni": 1674,
+  "mediana_segmenti_LUFS_M": -24.7,
+  "picco_momentaneo_LUFS_M": -16.6,
+  "picco_a_secondo": 94.1,
+  "sopra_mediana_3LU": [
+   {
+    "i": 18,
+    "inizio": 91.06,
+    "fine": 94.88,
+    "LUFS_M": -19.4,
+    "delta_LU": 5.3,
+    "testo": "ore di strategia pura parliamo di raggiornamento strategico non fatti la"
+   },
+   {
+    "i": 19,
+    "inizio": 94.88,
+    "fine": 99.26,
+    "LUFS_M": -21.3,
+    "delta_LU": 3.4,
+    "testo": "checklist ore di tutorial scritti, esempi, modelli, breakdown di strutture"
+   }
+  ],
+  "profilo_per_secondo": [
+   {
+    "t": 0.0,
+    "M": -70.0
+   },
+   {
+    "t": 1.0,
+    "M": -27.9
+   },
+   {
+    "t": 2.0,
+    "M": -27.5
+   },
+   {
+    "t": 3.0,
+    "M": -26.0
+   },
+   {
+    "t": 4.0,
+    "M": -22.0
+   },
+   {
+    "t": 5.0,
+    "M": -22.1
+   },
+   {
+    "t": 6.0,
+    "M": -23.7
+   },
+   {
+    "t": 7.0,
+    "M": -24.0
+   },
+   {
+    "t": 8.0,
+    "M": -23.3
+   },
+   {
+    "t": 9.0,
+    "M": -22.9
+   },
+   {
+    "t": 10.0,
+    "M": -24.3
+   },
+   {
+    "t": 11.0,
+    "M": -21.7
+   },
+   {
+    "t": 12.0,
+    "M": -26.2
+   },
+   {
+    "t": 13.0,
+    "M": -24.0
+   },
+   {
+    "t": 14.0,
+    "M": -25.0
+   },
+   {
+    "t": 15.0,
+    "M": -24.3
+   },
+   {
+    "t": 16.0,
+    "M": -24.0
+   },
+   {
+    "t": 17.0,
+    "M": -24.6
+   },
+   {
+    "t": 18.0,
+    "M": -25.0
+   },
+   {
+    "t": 19.0,
+    "M": -21.9
+   },
+   {
+    "t": 20.0,
+    "M": -23.3
+   },
+   {
+    "t": 21.0,
+    "M": -23.3
+   },
+   {
+    "t": 22.0,
+    "M": -22.1
+   },
+   {
+    "t": 23.0,
+    "M": -31.2
+   },
+   {
+    "t": 24.0,
+    "M": -24.9
+   },
+   {
+    "t": 25.0,
+    "M": -24.6
+   },
+   {
+    "t": 26.0,
+    "M": -27.3
+   },
+   {
+    "t": 27.0,
+    "M": -23.4
+   },
+   {
+    "t": 28.0,
+    "M": -25.9
+   },
+   {
+    "t": 29.0,
+    "M": -24.2
+   },
+   {
+    "t": 30.0,
+    "M": -23.2
+   },
+   {
+    "t": 31.0,
+    "M": -28.6
+   },
+   {
+    "t": 32.0,
+    "M": -30.1
+   },
+   {
+    "t": 33.0,
+    "M": -22.1
+   },
+   {
+    "t": 34.0,
+    "M": -23.2
+   },
+   {
+    "t": 35.0,
+    "M": -21.7
+   },
+   {
+    "t": 36.0,
+    "M": -23.5
+   },
+   {
+    "t": 37.0,
+    "M": -24.8
+   },
+   {
+    "t": 38.0,
+    "M": -24.9
+   },
+   {
+    "t": 39.0,
+    "M": -22.1
+   },
+   {
+    "t": 40.0,
+    "M": -22.6
+   },
+   {
+    "t": 41.0,
+    "M": -24.2
+   },
+   {
+    "t": 42.0,
+    "M": -23.1
+   },
+   {
+    "t": 43.0,
+    "M": -23.4
+   },
+   {
+    "t": 44.0,
+    "M": -23.8
+   },
+   {
+    "t": 45.0,
+    "M": -23.4
+   },
+   {
+    "t": 46.0,
+    "M": -26.9
+   },
+   {
+    "t": 47.0,
+    "M": -23.5
+   },
+   {
+    "t": 48.0,
+    "M": -23.5
+   },
+   {
+    "t": 49.0,
+    "M": -26.4
+   },
+   {
+    "t": 50.0,
+    "M": -22.9
+   },
+   {
+    "t": 51.0,
+    "M": -23.0
+   },
+   {
+    "t": 52.0,
+    "M": -22.1
+   },
+   {
+    "t": 53.0,
+    "M": -24.4
+   },
+   {
+    "t": 54.0,
+    "M": -23.1
+   },
+   {
+    "t": 55.0,
+    "M": -23.2
+   },
+   {
+    "t": 56.0,
+    "M": -25.5
+   },
+   {
+    "t": 57.0,
+    "M": -22.7
+   },
+   {
+    "t": 58.0,
+    "M": -24.1
+   },
+   {
+    "t": 59.0,
+    "M": -24.9
+   },
+   {
+    "t": 60.0,
+    "M": -24.7
+   },
+   {
+    "t": 61.0,
+    "M": -24.7
+   },
+   {
+    "t": 62.0,
+    "M": -23.1
+   },
+   {
+    "t": 63.0,
+    "M": -26.0
+   },
+   {
+    "t": 64.0,
+    "M": -25.5
+   },
+   {
+    "t": 65.0,
+    "M": -22.6
+   },
+   {
+    "t": 66.0,
+    "M": -24.4
+   },
+   {
+    "t": 67.0,
+    "M": -25.1
+   },
+   {
+    "t": 68.0,
+    "M": -22.9
+   },
+   {
+    "t": 69.0,
+    "M": -24.7
+   },
+   {
+    "t": 70.0,
+    "M": -23.6
+   },
+   {
+    "t": 71.0,
+    "M": -26.5
+   },
+   {
+    "t": 72.0,
+    "M": -22.9
+   },
+   {
+    "t": 73.0,
+    "M": -26.8
+   },
+   {
+    "t": 74.0,
+    "M": -25.8
+   },
+   {
+    "t": 75.0,
+    "M": -23.7
+   },
+   {
+    "t": 76.0,
+    "M": -22.1
+   },
+   {
+    "t": 77.0,
+    "M": -25.6
+   },
+   {
+    "t": 78.0,
+    "M": -23.3
+   },
+   {
+    "t": 79.0,
+    "M": -30.1
+   },
+   {
+    "t": 80.0,
+    "M": -19.8
+   },
+   {
+    "t": 81.0,
+    "M": -19.8
+   },
+   {
+    "t": 82.0,
+    "M": -20.1
+   },
+   {
+    "t": 83.0,
+    "M": -26.2
+   },
+   {
+    "t": 84.0,
+    "M": -20.8
+   },
+   {
+    "t": 85.0,
+    "M": -28.1
+   },
+   {
+    "t": 86.0,
+    "M": -20.2
+   },
+   {
+    "t": 87.0,
+    "M": -27.8
+   },
+   {
+    "t": 88.0,
+    "M": -22.8
+   },
+   {
+    "t": 89.0,
+    "M": -24.4
+   },
+   {
+    "t": 90.0,
+    "M": -21.7
+   },
+   {
+    "t": 91.0,
+    "M": -22.9
+   },
+   {
+    "t": 92.0,
+    "M": -20.7
+   },
+   {
+    "t": 93.0,
+    "M": -18.0
+   },
+   {
+    "t": 94.0,
+    "M": -17.3
+   },
+   {
+    "t": 95.0,
+    "M": -22.7
+   },
+   {
+    "t": 96.0,
+    "M": -20.1
+   },
+   {
+    "t": 97.0,
+    "M": -22.3
+   },
+   {
+    "t": 98.0,
+    "M": -20.1
+   },
+   {
+    "t": 99.0,
+    "M": -23.8
+   },
+   {
+    "t": 100.0,
+    "M": -19.8
+   },
+   {
+    "t": 101.0,
+    "M": -23.5
+   },
+   {
+    "t": 102.0,
+    "M": -18.6
+   },
+   {
+    "t": 103.0,
+    "M": -22.3
+   },
+   {
+    "t": 104.0,
+    "M": -20.0
+   },
+   {
+    "t": 105.0,
+    "M": -32.2
+   },
+   {
+    "t": 106.0,
+    "M": -20.2
+   },
+   {
+    "t": 107.0,
+    "M": -28.3
+   },
+   {
+    "t": 108.0,
+    "M": -37.3
+   },
+   {
+    "t": 109.0,
+    "M": -23.6
+   },
+   {
+    "t": 110.0,
+    "M": -27.9
+   },
+   {
+    "t": 111.0,
+    "M": -25.3
+   },
+   {
+    "t": 112.0,
+    "M": -27.9
+   },
+   {
+    "t": 113.0,
+    "M": -24.0
+   },
+   {
+    "t": 114.0,
+    "M": -25.1
+   },
+   {
+    "t": 115.0,
+    "M": -23.3
+   },
+   {
+    "t": 116.0,
+    "M": -28.2
+   },
+   {
+    "t": 117.0,
+    "M": -22.3
+   },
+   {
+    "t": 118.0,
+    "M": -22.5
+   },
+   {
+    "t": 119.0,
+    "M": -23.0
+   },
+   {
+    "t": 120.0,
+    "M": -24.1
+   },
+   {
+    "t": 121.0,
+    "M": -23.6
+   },
+   {
+    "t": 122.0,
+    "M": -24.0
+   },
+   {
+    "t": 123.0,
+    "M": -29.2
+   },
+   {
+    "t": 124.0,
+    "M": -26.4
+   },
+   {
+    "t": 125.0,
+    "M": -24.9
+   },
+   {
+    "t": 126.0,
+    "M": -22.2
+   },
+   {
+    "t": 127.0,
+    "M": -23.8
+   },
+   {
+    "t": 128.0,
+    "M": -23.1
+   },
+   {
+    "t": 129.0,
+    "M": -22.1
+   },
+   {
+    "t": 130.0,
+    "M": -21.4
+   },
+   {
+    "t": 131.0,
+    "M": -24.1
+   },
+   {
+    "t": 132.0,
+    "M": -24.8
+   },
+   {
+    "t": 133.0,
+    "M": -24.6
+   },
+   {
+    "t": 134.0,
+    "M": -24.2
+   },
+   {
+    "t": 135.0,
+    "M": -28.8
+   },
+   {
+    "t": 136.0,
+    "M": -25.3
+   },
+   {
+    "t": 137.0,
+    "M": -24.1
+   },
+   {
+    "t": 138.0,
+    "M": -26.2
+   },
+   {
+    "t": 139.0,
+    "M": -25.8
+   },
+   {
+    "t": 140.0,
+    "M": -24.9
+   },
+   {
+    "t": 141.0,
+    "M": -21.9
+   },
+   {
+    "t": 142.0,
+    "M": -26.8
+   },
+   {
+    "t": 143.0,
+    "M": -26.0
+   },
+   {
+    "t": 144.0,
+    "M": -23.8
+   },
+   {
+    "t": 145.0,
+    "M": -40.4
+   },
+   {
+    "t": 146.0,
+    "M": -36.0
+   },
+   {
+    "t": 147.0,
+    "M": -33.5
+   },
+   {
+    "t": 148.0,
+    "M": -35.4
+   },
+   {
+    "t": 149.0,
+    "M": -38.6
+   },
+   {
+    "t": 150.0,
+    "M": -36.9
+   },
+   {
+    "t": 151.0,
+    "M": -36.6
+   },
+   {
+    "t": 152.0,
+    "M": -42.2
+   },
+   {
+    "t": 153.0,
+    "M": -41.7
+   },
+   {
+    "t": 154.0,
+    "M": -41.5
+   },
+   {
+    "t": 155.0,
+    "M": -22.6
+   },
+   {
+    "t": 156.0,
+    "M": -23.7
+   },
+   {
+    "t": 157.0,
+    "M": -29.1
+   },
+   {
+    "t": 158.0,
+    "M": -23.4
+   },
+   {
+    "t": 159.0,
+    "M": -33.6
+   },
+   {
+    "t": 160.0,
+    "M": -26.3
+   },
+   {
+    "t": 161.0,
+    "M": -28.4
+   },
+   {
+    "t": 162.0,
+    "M": -38.7
+   },
+   {
+    "t": 163.0,
+    "M": -36.3
+   },
+   {
+    "t": 164.0,
+    "M": -35.7
+   },
+   {
+    "t": 165.0,
+    "M": -45.8
+   },
+   {
+    "t": 166.0,
+    "M": -50.0
+   },
+   {
+    "t": 167.0,
+    "M": -70.0
+   }
+  ]
+ }
+}

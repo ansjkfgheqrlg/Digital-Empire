@@ -1,0 +1,2949 @@
+{
+ "slug": "outfunnel-vsl-1",
+ "strumento": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "lingua": "it",
+ "lingua_probabilita": 1,
+ "durata_video_s": 151.28,
+ "segmenti": [
+  {
+   "i": 0,
+   "inizio": 0.0,
+   "fine": 7.92,
+   "durata": 7.92,
+   "testo": "Ti sto per fare un esempio di un funnel per un prodotto un po' strano, ma ricorda che questo vale per servizi, prodotti, B2B, B2C, qualsiasi funnel.",
+   "parole": [
+    {
+     "p": "Ti",
+     "inizio": 0.0,
+     "fine": 0.12
+    },
+    {
+     "p": "sto",
+     "inizio": 0.12,
+     "fine": 0.28
+    },
+    {
+     "p": "per",
+     "inizio": 0.28,
+     "fine": 0.46
+    },
+    {
+     "p": "fare",
+     "inizio": 0.46,
+     "fine": 0.62
+    },
+    {
+     "p": "un",
+     "inizio": 0.62,
+     "fine": 0.7
+    },
+    {
+     "p": "esempio",
+     "inizio": 0.7,
+     "fine": 0.98
+    },
+    {
+     "p": "di",
+     "inizio": 0.98,
+     "fine": 1.1
+    },
+    {
+     "p": "un",
+     "inizio": 1.1,
+     "fine": 1.34
+    },
+    {
+     "p": "funnel",
+     "inizio": 1.34,
+     "fine": 1.54
+    },
+    {
+     "p": "per",
+     "inizio": 1.54,
+     "fine": 1.76
+    },
+    {
+     "p": "un",
+     "inizio": 1.76,
+     "fine": 1.98
+    },
+    {
+     "p": "prodotto",
+     "inizio": 1.98,
+     "fine": 2.24
+    },
+    {
+     "p": "un",
+     "inizio": 2.24,
+     "fine": 2.38
+    },
+    {
+     "p": "po'",
+     "inizio": 2.38,
+     "fine": 2.54
+    },
+    {
+     "p": "strano,",
+     "inizio": 2.82,
+     "fine": 3.14
+    },
+    {
+     "p": "ma",
+     "inizio": 3.24,
+     "fine": 3.34
+    },
+    {
+     "p": "ricorda",
+     "inizio": 3.34,
+     "fine": 3.68
+    },
+    {
+     "p": "che",
+     "inizio": 3.68,
+     "fine": 3.82
+    },
+    {
+     "p": "questo",
+     "inizio": 3.82,
+     "fine": 4.06
+    },
+    {
+     "p": "vale",
+     "inizio": 4.06,
+     "fine": 4.24
+    },
+    {
+     "p": "per",
+     "inizio": 4.24,
+     "fine": 4.52
+    },
+    {
+     "p": "servizi,",
+     "inizio": 4.52,
+     "fine": 5.08
+    },
+    {
+     "p": "prodotti,",
+     "inizio": 5.3,
+     "fine": 5.66
+    },
+    {
+     "p": "B2B,",
+     "inizio": 5.92,
+     "fine": 6.44
+    },
+    {
+     "p": "B2C,",
+     "inizio": 6.44,
+     "fine": 6.94
+    },
+    {
+     "p": "qualsiasi",
+     "inizio": 6.94,
+     "fine": 7.6
+    },
+    {
+     "p": "funnel.",
+     "inizio": 7.6,
+     "fine": 7.92
+    }
+   ],
+   "loudness_M_media": -21.0
+  },
+  {
+   "i": 1,
+   "inizio": 8.04,
+   "fine": 8.92,
+   "durata": 0.88,
+   "testo": "Prodotto? Questo.",
+   "parole": [
+    {
+     "p": "Prodotto?",
+     "inizio": 8.04,
+     "fine": 8.44
+    },
+    {
+     "p": "Questo.",
+     "inizio": 8.58,
+     "fine": 8.92
+    }
+   ],
+   "loudness_M_media": -20.9
+  },
+  {
+   "i": 2,
+   "inizio": 9.04,
+   "fine": 12.18,
+   "durata": 3.14,
+   "testo": "Una macchina da caffè portatile che non ha bisogno di elettricità.",
+   "parole": [
+    {
+     "p": "Una",
+     "inizio": 9.04,
+     "fine": 9.2
+    },
+    {
+     "p": "macchina",
+     "inizio": 9.2,
+     "fine": 9.56
+    },
+    {
+     "p": "da",
+     "inizio": 9.56,
+     "fine": 9.76
+    },
+    {
+     "p": "caffè",
+     "inizio": 9.76,
+     "fine": 10.06
+    },
+    {
+     "p": "portatile",
+     "inizio": 10.06,
+     "fine": 10.68
+    },
+    {
+     "p": "che",
+     "inizio": 10.68,
+     "fine": 10.86
+    },
+    {
+     "p": "non",
+     "inizio": 10.86,
+     "fine": 11.0
+    },
+    {
+     "p": "ha",
+     "inizio": 11.0,
+     "fine": 11.14
+    },
+    {
+     "p": "bisogno",
+     "inizio": 11.14,
+     "fine": 11.4
+    },
+    {
+     "p": "di",
+     "inizio": 11.4,
+     "fine": 11.54
+    },
+    {
+     "p": "elettricità.",
+     "inizio": 11.54,
+     "fine": 12.18
+    }
+   ],
+   "loudness_M_media": -20.0
+  },
+  {
+   "i": 3,
+   "inizio": 12.28,
+   "fine": 16.72,
+   "durata": 4.44,
+   "testo": "Il funnel è molto semplice, abbiamo 3 ads, una pagina di vendita e poi l'acquisto.",
+   "parole": [
+    {
+     "p": "Il",
+     "inizio": 12.28,
+     "fine": 12.4
+    },
+    {
+     "p": "funnel",
+     "inizio": 12.4,
+     "fine": 12.58
+    },
+    {
+     "p": "è",
+     "inizio": 12.58,
+     "fine": 12.7
+    },
+    {
+     "p": "molto",
+     "inizio": 12.7,
+     "fine": 12.98
+    },
+    {
+     "p": "semplice,",
+     "inizio": 12.98,
+     "fine": 13.54
+    },
+    {
+     "p": "abbiamo",
+     "inizio": 13.64,
+     "fine": 13.94
+    },
+    {
+     "p": "3",
+     "inizio": 13.94,
+     "fine": 14.22
+    },
+    {
+     "p": "ads,",
+     "inizio": 14.22,
+     "fine": 14.58
+    },
+    {
+     "p": "una",
+     "inizio": 14.78,
+     "fine": 14.9
+    },
+    {
+     "p": "pagina",
+     "inizio": 14.9,
+     "fine": 15.24
+    },
+    {
+     "p": "di",
+     "inizio": 15.24,
+     "fine": 15.38
+    },
+    {
+     "p": "vendita",
+     "inizio": 15.38,
+     "fine": 15.8
+    },
+    {
+     "p": "e",
+     "inizio": 15.8,
+     "fine": 15.98
+    },
+    {
+     "p": "poi",
+     "inizio": 15.98,
+     "fine": 16.14
+    },
+    {
+     "p": "l",
+     "inizio": 16.14,
+     "fine": 16.26
+    },
+    {
+     "p": "'acquisto.",
+     "inizio": 16.26,
+     "fine": 16.72
+    }
+   ],
+   "loudness_M_media": -19.5
+  },
+  {
+   "i": 4,
+   "inizio": 16.8,
+   "fine": 19.82,
+   "durata": 3.02,
+   "testo": "E questo è un funnel estremamente semplice.",
+   "parole": [
+    {
+     "p": "E",
+     "inizio": 16.8,
+     "fine": 17.0
+    },
+    {
+     "p": "questo",
+     "inizio": 17.0,
+     "fine": 17.1
+    },
+    {
+     "p": "è",
+     "inizio": 17.1,
+     "fine": 17.22
+    },
+    {
+     "p": "un",
+     "inizio": 17.22,
+     "fine": 17.26
+    },
+    {
+     "p": "funnel",
+     "inizio": 17.26,
+     "fine": 17.72
+    },
+    {
+     "p": "estremamente",
+     "inizio": 17.72,
+     "fine": 19.32
+    },
+    {
+     "p": "semplice.",
+     "inizio": 19.32,
+     "fine": 19.82
+    }
+   ],
+   "loudness_M_media": -19.3
+  },
+  {
+   "i": 5,
+   "inizio": 19.82,
+   "fine": 21.06,
+   "durata": 1.24,
+   "testo": "Proprio il funnel che fanno tutti.",
+   "parole": [
+    {
+     "p": "Proprio",
+     "inizio": 19.82,
+     "fine": 19.98
+    },
+    {
+     "p": "il",
+     "inizio": 19.98,
+     "fine": 20.12
+    },
+    {
+     "p": "funnel",
+     "inizio": 20.12,
+     "fine": 20.24
+    },
+    {
+     "p": "che",
+     "inizio": 20.24,
+     "fine": 20.46
+    },
+    {
+     "p": "fanno",
+     "inizio": 20.46,
+     "fine": 20.7
+    },
+    {
+     "p": "tutti.",
+     "inizio": 20.7,
+     "fine": 21.06
+    }
+   ],
+   "loudness_M_media": -20.4
+  },
+  {
+   "i": 6,
+   "inizio": 21.1,
+   "fine": 24.18,
+   "durata": 3.08,
+   "testo": "Voglio spiegarti l'importanza dei dati in un funnel del genere.",
+   "parole": [
+    {
+     "p": "Voglio",
+     "inizio": 21.1,
+     "fine": 21.36
+    },
+    {
+     "p": "spiegarti",
+     "inizio": 21.36,
+     "fine": 21.72
+    },
+    {
+     "p": "l",
+     "inizio": 21.72,
+     "fine": 21.84
+    },
+    {
+     "p": "'importanza",
+     "inizio": 21.84,
+     "fine": 22.64
+    },
+    {
+     "p": "dei",
+     "inizio": 22.64,
+     "fine": 22.88
+    },
+    {
+     "p": "dati",
+     "inizio": 22.88,
+     "fine": 23.3
+    },
+    {
+     "p": "in",
+     "inizio": 23.3,
+     "fine": 23.4
+    },
+    {
+     "p": "un",
+     "inizio": 23.4,
+     "fine": 23.54
+    },
+    {
+     "p": "funnel",
+     "inizio": 23.54,
+     "fine": 23.78
+    },
+    {
+     "p": "del",
+     "inizio": 23.78,
+     "fine": 23.98
+    },
+    {
+     "p": "genere.",
+     "inizio": 23.98,
+     "fine": 24.18
+    }
+   ],
+   "loudness_M_media": -19.5
+  },
+  {
+   "i": 7,
+   "inizio": 24.22,
+   "fine": 27.24,
+   "durata": 3.02,
+   "testo": "Ora, per i pochissimi di voi che non lo sanno, le ads sono gli annunci.",
+   "parole": [
+    {
+     "p": "Ora,",
+     "inizio": 24.22,
+     "fine": 24.46
+    },
+    {
+     "p": "per",
+     "inizio": 24.52,
+     "fine": 24.62
+    },
+    {
+     "p": "i",
+     "inizio": 24.62,
+     "fine": 24.72
+    },
+    {
+     "p": "pochissimi",
+     "inizio": 24.72,
+     "fine": 25.12
+    },
+    {
+     "p": "di",
+     "inizio": 25.12,
+     "fine": 25.26
+    },
+    {
+     "p": "voi",
+     "inizio": 25.26,
+     "fine": 25.34
+    },
+    {
+     "p": "che",
+     "inizio": 25.34,
+     "fine": 25.44
+    },
+    {
+     "p": "non",
+     "inizio": 25.44,
+     "fine": 25.54
+    },
+    {
+     "p": "lo",
+     "inizio": 25.54,
+     "fine": 25.76
+    },
+    {
+     "p": "sanno,",
+     "inizio": 25.76,
+     "fine": 25.98
+    },
+    {
+     "p": "le",
+     "inizio": 26.0,
+     "fine": 26.16
+    },
+    {
+     "p": "ads",
+     "inizio": 26.16,
+     "fine": 26.36
+    },
+    {
+     "p": "sono",
+     "inizio": 26.36,
+     "fine": 26.58
+    },
+    {
+     "p": "gli",
+     "inizio": 26.58,
+     "fine": 26.76
+    },
+    {
+     "p": "annunci.",
+     "inizio": 26.76,
+     "fine": 27.24
+    }
+   ],
+   "loudness_M_media": -18.6
+  },
+  {
+   "i": 8,
+   "inizio": 27.36,
+   "fine": 29.78,
+   "durata": 2.42,
+   "testo": "Tipo quelli che vedi girando su Facebook o su Instagram.",
+   "parole": [
+    {
+     "p": "Tipo",
+     "inizio": 27.36,
+     "fine": 27.58
+    },
+    {
+     "p": "quelli",
+     "inizio": 27.58,
+     "fine": 27.8
+    },
+    {
+     "p": "che",
+     "inizio": 27.8,
+     "fine": 27.88
+    },
+    {
+     "p": "vedi",
+     "inizio": 27.88,
+     "fine": 28.04
+    },
+    {
+     "p": "girando",
+     "inizio": 28.04,
+     "fine": 28.36
+    },
+    {
+     "p": "su",
+     "inizio": 28.36,
+     "fine": 28.52
+    },
+    {
+     "p": "Facebook",
+     "inizio": 28.52,
+     "fine": 29.0
+    },
+    {
+     "p": "o",
+     "inizio": 29.0,
+     "fine": 29.28
+    },
+    {
+     "p": "su",
+     "inizio": 29.28,
+     "fine": 29.44
+    },
+    {
+     "p": "Instagram.",
+     "inizio": 29.44,
+     "fine": 29.78
+    }
+   ],
+   "loudness_M_media": -21.2
+  },
+  {
+   "i": 9,
+   "inizio": 29.78,
+   "fine": 34.1,
+   "durata": 4.32,
+   "testo": "La pagina di vendita è proprio il sito web sul quale c'è scritto che dovresti comprare il prodotto",
+   "parole": [
+    {
+     "p": "La",
+     "inizio": 29.78,
+     "fine": 29.96
+    },
+    {
+     "p": "pagina",
+     "inizio": 29.96,
+     "fine": 30.28
+    },
+    {
+     "p": "di",
+     "inizio": 30.28,
+     "fine": 30.36
+    },
+    {
+     "p": "vendita",
+     "inizio": 30.36,
+     "fine": 30.64
+    },
+    {
+     "p": "è",
+     "inizio": 30.64,
+     "fine": 30.78
+    },
+    {
+     "p": "proprio",
+     "inizio": 30.78,
+     "fine": 30.9
+    },
+    {
+     "p": "il",
+     "inizio": 30.9,
+     "fine": 31.02
+    },
+    {
+     "p": "sito",
+     "inizio": 31.02,
+     "fine": 31.26
+    },
+    {
+     "p": "web",
+     "inizio": 31.26,
+     "fine": 31.6
+    },
+    {
+     "p": "sul",
+     "inizio": 31.6,
+     "fine": 31.86
+    },
+    {
+     "p": "quale",
+     "inizio": 31.86,
+     "fine": 32.04
+    },
+    {
+     "p": "c",
+     "inizio": 32.04,
+     "fine": 32.14
+    },
+    {
+     "p": "'è",
+     "inizio": 32.14,
+     "fine": 32.22
+    },
+    {
+     "p": "scritto",
+     "inizio": 32.22,
+     "fine": 32.68
+    },
+    {
+     "p": "che",
+     "inizio": 32.68,
+     "fine": 32.86
+    },
+    {
+     "p": "dovresti",
+     "inizio": 32.86,
+     "fine": 33.34
+    },
+    {
+     "p": "comprare",
+     "inizio": 33.34,
+     "fine": 33.58
+    },
+    {
+     "p": "il",
+     "inizio": 33.58,
+     "fine": 33.82
+    },
+    {
+     "p": "prodotto",
+     "inizio": 33.82,
+     "fine": 34.1
+    }
+   ],
+   "loudness_M_media": -20.6
+  },
+  {
+   "i": 10,
+   "inizio": 34.1,
+   "fine": 35.52,
+   "durata": 1.42,
+   "testo": "e c'è anche il pulsante per comprare.",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 34.1,
+     "fine": 34.22
+    },
+    {
+     "p": "c",
+     "inizio": 34.22,
+     "fine": 34.26
+    },
+    {
+     "p": "'è",
+     "inizio": 34.26,
+     "fine": 34.32
+    },
+    {
+     "p": "anche",
+     "inizio": 34.32,
+     "fine": 34.46
+    },
+    {
+     "p": "il",
+     "inizio": 34.46,
+     "fine": 34.58
+    },
+    {
+     "p": "pulsante",
+     "inizio": 34.58,
+     "fine": 34.9
+    },
+    {
+     "p": "per",
+     "inizio": 34.9,
+     "fine": 35.18
+    },
+    {
+     "p": "comprare.",
+     "inizio": 35.18,
+     "fine": 35.52
+    }
+   ],
+   "loudness_M_media": -20.5
+  },
+  {
+   "i": 11,
+   "inizio": 35.64,
+   "fine": 37.5,
+   "durata": 1.86,
+   "testo": "L'ad, ad esempio, potrebbe essere questa.",
+   "parole": [
+    {
+     "p": "L",
+     "inizio": 35.64,
+     "fine": 35.74
+    },
+    {
+     "p": "'ad,",
+     "inizio": 35.74,
+     "fine": 35.9
+    },
+    {
+     "p": "ad",
+     "inizio": 35.94,
+     "fine": 36.18
+    },
+    {
+     "p": "esempio,",
+     "inizio": 36.18,
+     "fine": 36.44
+    },
+    {
+     "p": "potrebbe",
+     "inizio": 36.58,
+     "fine": 36.82
+    },
+    {
+     "p": "essere",
+     "inizio": 36.82,
+     "fine": 37.06
+    },
+    {
+     "p": "questa.",
+     "inizio": 37.06,
+     "fine": 37.5
+    }
+   ],
+   "loudness_M_media": -19.5
+  },
+  {
+   "i": 12,
+   "inizio": 37.74,
+   "fine": 41.98,
+   "durata": 4.24,
+   "testo": "Mia nonna bolliva la pentola sul fuoco per fare il caffè la mattina, ma tu non sei mia nonna.",
+   "parole": [
+    {
+     "p": "Mia",
+     "inizio": 37.74,
+     "fine": 37.8
+    },
+    {
+     "p": "nonna",
+     "inizio": 37.8,
+     "fine": 38.08
+    },
+    {
+     "p": "bolliva",
+     "inizio": 38.08,
+     "fine": 38.44
+    },
+    {
+     "p": "la",
+     "inizio": 38.44,
+     "fine": 38.6
+    },
+    {
+     "p": "pentola",
+     "inizio": 38.6,
+     "fine": 38.96
+    },
+    {
+     "p": "sul",
+     "inizio": 38.96,
+     "fine": 39.22
+    },
+    {
+     "p": "fuoco",
+     "inizio": 39.22,
+     "fine": 39.54
+    },
+    {
+     "p": "per",
+     "inizio": 39.54,
+     "fine": 39.72
+    },
+    {
+     "p": "fare",
+     "inizio": 39.72,
+     "fine": 39.9
+    },
+    {
+     "p": "il",
+     "inizio": 39.9,
+     "fine": 40.08
+    },
+    {
+     "p": "caffè",
+     "inizio": 40.08,
+     "fine": 40.16
+    },
+    {
+     "p": "la",
+     "inizio": 40.16,
+     "fine": 40.36
+    },
+    {
+     "p": "mattina,",
+     "inizio": 40.36,
+     "fine": 40.7
+    },
+    {
+     "p": "ma",
+     "inizio": 40.86,
+     "fine": 41.04
+    },
+    {
+     "p": "tu",
+     "inizio": 41.04,
+     "fine": 41.18
+    },
+    {
+     "p": "non",
+     "inizio": 41.18,
+     "fine": 41.36
+    },
+    {
+     "p": "sei",
+     "inizio": 41.36,
+     "fine": 41.5
+    },
+    {
+     "p": "mia",
+     "inizio": 41.5,
+     "fine": 41.66
+    },
+    {
+     "p": "nonna.",
+     "inizio": 41.66,
+     "fine": 41.98
+    }
+   ],
+   "loudness_M_media": -18.2
+  },
+  {
+   "i": 13,
+   "inizio": 42.12,
+   "fine": 46.58,
+   "durata": 4.46,
+   "testo": "Vuoi un caffè cremoso ovunque, senza elettricità, senza casino, senza caffè anacquato?",
+   "parole": [
+    {
+     "p": "Vuoi",
+     "inizio": 42.12,
+     "fine": 42.26
+    },
+    {
+     "p": "un",
+     "inizio": 42.26,
+     "fine": 42.42
+    },
+    {
+     "p": "caffè",
+     "inizio": 42.42,
+     "fine": 42.7
+    },
+    {
+     "p": "cremoso",
+     "inizio": 42.7,
+     "fine": 43.18
+    },
+    {
+     "p": "ovunque,",
+     "inizio": 43.18,
+     "fine": 43.76
+    },
+    {
+     "p": "senza",
+     "inizio": 43.98,
+     "fine": 44.08
+    },
+    {
+     "p": "elettricità,",
+     "inizio": 44.08,
+     "fine": 44.68
+    },
+    {
+     "p": "senza",
+     "inizio": 44.96,
+     "fine": 45.1
+    },
+    {
+     "p": "casino,",
+     "inizio": 45.1,
+     "fine": 45.42
+    },
+    {
+     "p": "senza",
+     "inizio": 45.62,
+     "fine": 45.8
+    },
+    {
+     "p": "caffè",
+     "inizio": 45.8,
+     "fine": 46.08
+    },
+    {
+     "p": "anacquato?",
+     "inizio": 46.08,
+     "fine": 46.58
+    }
+   ],
+   "loudness_M_media": -19.6
+  },
+  {
+   "i": 14,
+   "inizio": 46.76,
+   "fine": 50.06,
+   "durata": 3.3,
+   "testo": "Basta premere e triturare con un caffè perfetto, cremoso e aromatico.",
+   "parole": [
+    {
+     "p": "Basta",
+     "inizio": 46.76,
+     "fine": 47.1
+    },
+    {
+     "p": "premere",
+     "inizio": 47.1,
+     "fine": 47.54
+    },
+    {
+     "p": "e",
+     "inizio": 47.54,
+     "fine": 47.64
+    },
+    {
+     "p": "triturare",
+     "inizio": 47.64,
+     "fine": 47.92
+    },
+    {
+     "p": "con",
+     "inizio": 47.92,
+     "fine": 48.08
+    },
+    {
+     "p": "un",
+     "inizio": 48.08,
+     "fine": 48.24
+    },
+    {
+     "p": "caffè",
+     "inizio": 48.24,
+     "fine": 48.54
+    },
+    {
+     "p": "perfetto,",
+     "inizio": 48.54,
+     "fine": 49.0
+    },
+    {
+     "p": "cremoso",
+     "inizio": 49.14,
+     "fine": 49.5
+    },
+    {
+     "p": "e",
+     "inizio": 49.5,
+     "fine": 49.56
+    },
+    {
+     "p": "aromatico.",
+     "inizio": 49.56,
+     "fine": 50.06
+    }
+   ],
+   "loudness_M_media": -20.5
+  },
+  {
+   "i": 15,
+   "inizio": 50.24,
+   "fine": 55.66,
+   "durata": 5.42,
+   "testo": "Baristi in lacrime, Starbucks in fallimento, perché tu, adesso, hai l'espresso perfetto in tasca.",
+   "parole": [
+    {
+     "p": "Baristi",
+     "inizio": 50.24,
+     "fine": 50.56
+    },
+    {
+     "p": "in",
+     "inizio": 50.56,
+     "fine": 50.76
+    },
+    {
+     "p": "lacrime,",
+     "inizio": 50.76,
+     "fine": 51.1
+    },
+    {
+     "p": "Starbucks",
+     "inizio": 51.24,
+     "fine": 51.56
+    },
+    {
+     "p": "in",
+     "inizio": 51.56,
+     "fine": 51.76
+    },
+    {
+     "p": "fallimento,",
+     "inizio": 51.76,
+     "fine": 52.18
+    },
+    {
+     "p": "perché",
+     "inizio": 52.28,
+     "fine": 52.5
+    },
+    {
+     "p": "tu,",
+     "inizio": 52.5,
+     "fine": 53.02
+    },
+    {
+     "p": "adesso,",
+     "inizio": 53.22,
+     "fine": 53.54
+    },
+    {
+     "p": "hai",
+     "inizio": 53.8,
+     "fine": 53.92
+    },
+    {
+     "p": "l",
+     "inizio": 53.92,
+     "fine": 54.04
+    },
+    {
+     "p": "'espresso",
+     "inizio": 54.04,
+     "fine": 54.52
+    },
+    {
+     "p": "perfetto",
+     "inizio": 54.52,
+     "fine": 55.04
+    },
+    {
+     "p": "in",
+     "inizio": 55.04,
+     "fine": 55.32
+    },
+    {
+     "p": "tasca.",
+     "inizio": 55.32,
+     "fine": 55.66
+    }
+   ],
+   "loudness_M_media": -17.2
+  },
+  {
+   "i": 16,
+   "inizio": 55.74,
+   "fine": 58.76,
+   "durata": 3.02,
+   "testo": "Clicca il link qui sotto e smetti di soffrire con caffè da pezzenti.",
+   "parole": [
+    {
+     "p": "Clicca",
+     "inizio": 55.74,
+     "fine": 55.96
+    },
+    {
+     "p": "il",
+     "inizio": 55.96,
+     "fine": 56.04
+    },
+    {
+     "p": "link",
+     "inizio": 56.04,
+     "fine": 56.26
+    },
+    {
+     "p": "qui",
+     "inizio": 56.26,
+     "fine": 56.46
+    },
+    {
+     "p": "sotto",
+     "inizio": 56.46,
+     "fine": 56.66
+    },
+    {
+     "p": "e",
+     "inizio": 56.66,
+     "fine": 56.92
+    },
+    {
+     "p": "smetti",
+     "inizio": 56.92,
+     "fine": 57.22
+    },
+    {
+     "p": "di",
+     "inizio": 57.22,
+     "fine": 57.38
+    },
+    {
+     "p": "soffrire",
+     "inizio": 57.38,
+     "fine": 57.64
+    },
+    {
+     "p": "con",
+     "inizio": 57.64,
+     "fine": 57.86
+    },
+    {
+     "p": "caffè",
+     "inizio": 57.86,
+     "fine": 58.14
+    },
+    {
+     "p": "da",
+     "inizio": 58.14,
+     "fine": 58.26
+    },
+    {
+     "p": "pezzenti.",
+     "inizio": 58.26,
+     "fine": 58.76
+    }
+   ],
+   "loudness_M_media": -18.0
+  },
+  {
+   "i": 17,
+   "inizio": 58.76,
+   "fine": 63.66,
+   "durata": 4.9,
+   "testo": "ora in un funnel del genere tantissimi guardano uno specifico dato, il tasso di",
+   "parole": [
+    {
+     "p": "ora",
+     "inizio": 58.76,
+     "fine": 59.08
+    },
+    {
+     "p": "in",
+     "inizio": 59.08,
+     "fine": 59.34
+    },
+    {
+     "p": "un",
+     "inizio": 59.34,
+     "fine": 59.58
+    },
+    {
+     "p": "funnel",
+     "inizio": 59.58,
+     "fine": 59.78
+    },
+    {
+     "p": "del",
+     "inizio": 59.78,
+     "fine": 60.06
+    },
+    {
+     "p": "genere",
+     "inizio": 60.06,
+     "fine": 60.5
+    },
+    {
+     "p": "tantissimi",
+     "inizio": 60.5,
+     "fine": 61.1
+    },
+    {
+     "p": "guardano",
+     "inizio": 61.1,
+     "fine": 61.68
+    },
+    {
+     "p": "uno",
+     "inizio": 61.68,
+     "fine": 62.0
+    },
+    {
+     "p": "specifico",
+     "inizio": 62.0,
+     "fine": 62.62
+    },
+    {
+     "p": "dato,",
+     "inizio": 62.62,
+     "fine": 62.8
+    },
+    {
+     "p": "il",
+     "inizio": 63.16,
+     "fine": 63.16
+    },
+    {
+     "p": "tasso",
+     "inizio": 63.16,
+     "fine": 63.4
+    },
+    {
+     "p": "di",
+     "inizio": 63.4,
+     "fine": 63.66
+    }
+   ],
+   "loudness_M_media": -19.2
+  },
+  {
+   "i": 18,
+   "inizio": 63.66,
+   "fine": 68.38,
+   "durata": 4.72,
+   "testo": "conversione quindi quante persone ad esempio sull'add cliccano per andare",
+   "parole": [
+    {
+     "p": "conversione",
+     "inizio": 63.66,
+     "fine": 64.34
+    },
+    {
+     "p": "quindi",
+     "inizio": 64.34,
+     "fine": 64.6
+    },
+    {
+     "p": "quante",
+     "inizio": 64.6,
+     "fine": 65.14
+    },
+    {
+     "p": "persone",
+     "inizio": 65.14,
+     "fine": 65.76
+    },
+    {
+     "p": "ad",
+     "inizio": 65.76,
+     "fine": 66.04
+    },
+    {
+     "p": "esempio",
+     "inizio": 66.04,
+     "fine": 66.54
+    },
+    {
+     "p": "sull",
+     "inizio": 66.54,
+     "fine": 67.06
+    },
+    {
+     "p": "'add",
+     "inizio": 67.06,
+     "fine": 67.18
+    },
+    {
+     "p": "cliccano",
+     "inizio": 67.18,
+     "fine": 67.82
+    },
+    {
+     "p": "per",
+     "inizio": 67.82,
+     "fine": 68.16
+    },
+    {
+     "p": "andare",
+     "inizio": 68.16,
+     "fine": 68.38
+    }
+   ],
+   "loudness_M_media": -21.3
+  },
+  {
+   "i": 19,
+   "inizio": 68.38,
+   "fine": 72.52,
+   "durata": 4.14,
+   "testo": "avanti ad esempio 10% oppure uno va a calcolare quante persone che arrivano",
+   "parole": [
+    {
+     "p": "avanti",
+     "inizio": 68.38,
+     "fine": 68.86
+    },
+    {
+     "p": "ad",
+     "inizio": 68.86,
+     "fine": 69.08
+    },
+    {
+     "p": "esempio",
+     "inizio": 69.08,
+     "fine": 69.36
+    },
+    {
+     "p": "10",
+     "inizio": 69.36,
+     "fine": 69.64
+    },
+    {
+     "p": "%",
+     "inizio": 69.64,
+     "fine": 70.24
+    },
+    {
+     "p": "oppure",
+     "inizio": 70.24,
+     "fine": 70.6
+    },
+    {
+     "p": "uno",
+     "inizio": 70.6,
+     "fine": 70.72
+    },
+    {
+     "p": "va",
+     "inizio": 70.72,
+     "fine": 70.88
+    },
+    {
+     "p": "a",
+     "inizio": 70.88,
+     "fine": 71.0
+    },
+    {
+     "p": "calcolare",
+     "inizio": 71.0,
+     "fine": 71.36
+    },
+    {
+     "p": "quante",
+     "inizio": 71.36,
+     "fine": 71.78
+    },
+    {
+     "p": "persone",
+     "inizio": 71.78,
+     "fine": 72.1
+    },
+    {
+     "p": "che",
+     "inizio": 72.1,
+     "fine": 72.28
+    },
+    {
+     "p": "arrivano",
+     "inizio": 72.28,
+     "fine": 72.52
+    }
+   ],
+   "loudness_M_media": -21.8
+  },
+  {
+   "i": 20,
+   "inizio": 72.52,
+   "fine": 76.0,
+   "durata": 3.48,
+   "testo": "sulla pagina acquistano veramente se abbiamo ad esempio 100 visitatori e",
+   "parole": [
+    {
+     "p": "sulla",
+     "inizio": 72.52,
+     "fine": 72.7
+    },
+    {
+     "p": "pagina",
+     "inizio": 72.7,
+     "fine": 73.16
+    },
+    {
+     "p": "acquistano",
+     "inizio": 73.16,
+     "fine": 73.46
+    },
+    {
+     "p": "veramente",
+     "inizio": 73.46,
+     "fine": 73.92
+    },
+    {
+     "p": "se",
+     "inizio": 73.92,
+     "fine": 74.16
+    },
+    {
+     "p": "abbiamo",
+     "inizio": 74.16,
+     "fine": 74.36
+    },
+    {
+     "p": "ad",
+     "inizio": 74.36,
+     "fine": 74.5
+    },
+    {
+     "p": "esempio",
+     "inizio": 74.5,
+     "fine": 74.7
+    },
+    {
+     "p": "100",
+     "inizio": 74.7,
+     "fine": 74.94
+    },
+    {
+     "p": "visitatori",
+     "inizio": 74.94,
+     "fine": 75.62
+    },
+    {
+     "p": "e",
+     "inizio": 75.62,
+     "fine": 76.0
+    }
+   ],
+   "loudness_M_media": -23.5
+  },
+  {
+   "i": 21,
+   "inizio": 76.0,
+   "fine": 79.78,
+   "durata": 3.78,
+   "testo": "solamente 5 acquistano questo è un cr conversion rate tasso di conversione",
+   "parole": [
+    {
+     "p": "solamente",
+     "inizio": 76.0,
+     "fine": 76.42
+    },
+    {
+     "p": "5",
+     "inizio": 76.42,
+     "fine": 76.86
+    },
+    {
+     "p": "acquistano",
+     "inizio": 76.86,
+     "fine": 77.32
+    },
+    {
+     "p": "questo",
+     "inizio": 77.32,
+     "fine": 77.54
+    },
+    {
+     "p": "è",
+     "inizio": 77.54,
+     "fine": 77.56
+    },
+    {
+     "p": "un",
+     "inizio": 77.56,
+     "fine": 77.78
+    },
+    {
+     "p": "cr",
+     "inizio": 77.78,
+     "fine": 78.1
+    },
+    {
+     "p": "conversion",
+     "inizio": 78.1,
+     "fine": 78.66
+    },
+    {
+     "p": "rate",
+     "inizio": 78.66,
+     "fine": 78.98
+    },
+    {
+     "p": "tasso",
+     "inizio": 78.98,
+     "fine": 79.26
+    },
+    {
+     "p": "di",
+     "inizio": 79.26,
+     "fine": 79.4
+    },
+    {
+     "p": "conversione",
+     "inizio": 79.4,
+     "fine": 79.78
+    }
+   ],
+   "loudness_M_media": -21.7
+  },
+  {
+   "i": 22,
+   "inizio": 79.78,
+   "fine": 84.2,
+   "durata": 4.42,
+   "testo": "di 5% ma la verità è che non c'è solo questo dato una persona che fa",
+   "parole": [
+    {
+     "p": "di",
+     "inizio": 79.78,
+     "fine": 79.96
+    },
+    {
+     "p": "5",
+     "inizio": 79.96,
+     "fine": 80.24
+    },
+    {
+     "p": "%",
+     "inizio": 80.24,
+     "fine": 80.64
+    },
+    {
+     "p": "ma",
+     "inizio": 80.64,
+     "fine": 81.04
+    },
+    {
+     "p": "la",
+     "inizio": 81.04,
+     "fine": 81.34
+    },
+    {
+     "p": "verità",
+     "inizio": 81.34,
+     "fine": 81.96
+    },
+    {
+     "p": "è",
+     "inizio": 81.96,
+     "fine": 82.18
+    },
+    {
+     "p": "che",
+     "inizio": 82.18,
+     "fine": 82.32
+    },
+    {
+     "p": "non",
+     "inizio": 82.32,
+     "fine": 82.48
+    },
+    {
+     "p": "c",
+     "inizio": 82.48,
+     "fine": 82.56
+    },
+    {
+     "p": "'è",
+     "inizio": 82.56,
+     "fine": 82.64
+    },
+    {
+     "p": "solo",
+     "inizio": 82.64,
+     "fine": 82.78
+    },
+    {
+     "p": "questo",
+     "inizio": 82.78,
+     "fine": 83.06
+    },
+    {
+     "p": "dato",
+     "inizio": 83.06,
+     "fine": 83.34
+    },
+    {
+     "p": "una",
+     "inizio": 83.34,
+     "fine": 83.62
+    },
+    {
+     "p": "persona",
+     "inizio": 83.62,
+     "fine": 83.88
+    },
+    {
+     "p": "che",
+     "inizio": 83.88,
+     "fine": 84.04
+    },
+    {
+     "p": "fa",
+     "inizio": 84.04,
+     "fine": 84.2
+    }
+   ],
+   "loudness_M_media": -21.5
+  },
+  {
+   "i": 23,
+   "inizio": 84.2,
+   "fine": 87.62,
+   "durata": 3.42,
+   "testo": "marketing e fa successo con il proprio marketing guarda molto di più",
+   "parole": [
+    {
+     "p": "marketing",
+     "inizio": 84.2,
+     "fine": 84.66
+    },
+    {
+     "p": "e",
+     "inizio": 84.66,
+     "fine": 84.82
+    },
+    {
+     "p": "fa",
+     "inizio": 84.82,
+     "fine": 84.96
+    },
+    {
+     "p": "successo",
+     "inizio": 84.96,
+     "fine": 85.56
+    },
+    {
+     "p": "con",
+     "inizio": 85.56,
+     "fine": 85.66
+    },
+    {
+     "p": "il",
+     "inizio": 85.66,
+     "fine": 85.78
+    },
+    {
+     "p": "proprio",
+     "inizio": 85.78,
+     "fine": 85.94
+    },
+    {
+     "p": "marketing",
+     "inizio": 85.94,
+     "fine": 86.38
+    },
+    {
+     "p": "guarda",
+     "inizio": 86.38,
+     "fine": 86.86
+    },
+    {
+     "p": "molto",
+     "inizio": 86.86,
+     "fine": 87.28
+    },
+    {
+     "p": "di",
+     "inizio": 87.28,
+     "fine": 87.52
+    },
+    {
+     "p": "più",
+     "inizio": 87.52,
+     "fine": 87.62
+    }
+   ],
+   "loudness_M_media": -20.0
+  },
+  {
+   "i": 24,
+   "inizio": 87.62,
+   "fine": 93.02,
+   "durata": 5.4,
+   "testo": "Ed è lì che c'è la differenza tra un marketer principiante che fa, boh, la media, quello che fanno tutti, mediocrità,",
+   "parole": [
+    {
+     "p": "Ed",
+     "inizio": 87.62,
+     "fine": 87.66
+    },
+    {
+     "p": "è",
+     "inizio": 87.66,
+     "fine": 87.76
+    },
+    {
+     "p": "lì",
+     "inizio": 87.76,
+     "fine": 88.02
+    },
+    {
+     "p": "che",
+     "inizio": 88.02,
+     "fine": 88.1
+    },
+    {
+     "p": "c",
+     "inizio": 88.1,
+     "fine": 88.2
+    },
+    {
+     "p": "'è",
+     "inizio": 88.2,
+     "fine": 88.28
+    },
+    {
+     "p": "la",
+     "inizio": 88.28,
+     "fine": 88.4
+    },
+    {
+     "p": "differenza",
+     "inizio": 88.4,
+     "fine": 88.7
+    },
+    {
+     "p": "tra",
+     "inizio": 88.7,
+     "fine": 88.84
+    },
+    {
+     "p": "un",
+     "inizio": 88.84,
+     "fine": 89.04
+    },
+    {
+     "p": "marketer",
+     "inizio": 89.04,
+     "fine": 89.38
+    },
+    {
+     "p": "principiante",
+     "inizio": 89.38,
+     "fine": 89.96
+    },
+    {
+     "p": "che",
+     "inizio": 89.96,
+     "fine": 90.12
+    },
+    {
+     "p": "fa,",
+     "inizio": 90.12,
+     "fine": 90.38
+    },
+    {
+     "p": "boh,",
+     "inizio": 90.38,
+     "fine": 91.1
+    },
+    {
+     "p": "la",
+     "inizio": 91.24,
+     "fine": 91.36
+    },
+    {
+     "p": "media,",
+     "inizio": 91.36,
+     "fine": 91.62
+    },
+    {
+     "p": "quello",
+     "inizio": 91.74,
+     "fine": 91.84
+    },
+    {
+     "p": "che",
+     "inizio": 91.84,
+     "fine": 92.0
+    },
+    {
+     "p": "fanno",
+     "inizio": 92.0,
+     "fine": 92.14
+    },
+    {
+     "p": "tutti,",
+     "inizio": 92.14,
+     "fine": 92.46
+    },
+    {
+     "p": "mediocrità,",
+     "inizio": 92.54,
+     "fine": 93.02
+    }
+   ],
+   "loudness_M_media": -19.9
+  },
+  {
+   "i": 25,
+   "inizio": 93.1,
+   "fine": 100.66,
+   "durata": 7.56,
+   "testo": "e un marketer che fa più soldi e che porta più valore ai propri clienti, che guarda i dati e prende azioni e decisioni sulla base dei dati.",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 93.1,
+     "fine": 93.16
+    },
+    {
+     "p": "un",
+     "inizio": 93.16,
+     "fine": 93.3
+    },
+    {
+     "p": "marketer",
+     "inizio": 93.3,
+     "fine": 93.78
+    },
+    {
+     "p": "che",
+     "inizio": 93.78,
+     "fine": 93.92
+    },
+    {
+     "p": "fa",
+     "inizio": 93.92,
+     "fine": 94.08
+    },
+    {
+     "p": "più",
+     "inizio": 94.08,
+     "fine": 94.38
+    },
+    {
+     "p": "soldi",
+     "inizio": 94.38,
+     "fine": 94.8
+    },
+    {
+     "p": "e",
+     "inizio": 94.8,
+     "fine": 94.92
+    },
+    {
+     "p": "che",
+     "inizio": 94.92,
+     "fine": 95.1
+    },
+    {
+     "p": "porta",
+     "inizio": 95.1,
+     "fine": 95.26
+    },
+    {
+     "p": "più",
+     "inizio": 95.26,
+     "fine": 95.46
+    },
+    {
+     "p": "valore",
+     "inizio": 95.46,
+     "fine": 95.78
+    },
+    {
+     "p": "ai",
+     "inizio": 95.78,
+     "fine": 95.82
+    },
+    {
+     "p": "propri",
+     "inizio": 95.82,
+     "fine": 96.04
+    },
+    {
+     "p": "clienti,",
+     "inizio": 96.04,
+     "fine": 96.58
+    },
+    {
+     "p": "che",
+     "inizio": 96.66,
+     "fine": 96.76
+    },
+    {
+     "p": "guarda",
+     "inizio": 96.76,
+     "fine": 97.14
+    },
+    {
+     "p": "i",
+     "inizio": 97.14,
+     "fine": 97.34
+    },
+    {
+     "p": "dati",
+     "inizio": 97.34,
+     "fine": 97.66
+    },
+    {
+     "p": "e",
+     "inizio": 97.66,
+     "fine": 97.92
+    },
+    {
+     "p": "prende",
+     "inizio": 97.92,
+     "fine": 98.36
+    },
+    {
+     "p": "azioni",
+     "inizio": 98.36,
+     "fine": 99.06
+    },
+    {
+     "p": "e",
+     "inizio": 99.06,
+     "fine": 99.28
+    },
+    {
+     "p": "decisioni",
+     "inizio": 99.28,
+     "fine": 99.82
+    },
+    {
+     "p": "sulla",
+     "inizio": 99.82,
+     "fine": 100.04
+    },
+    {
+     "p": "base",
+     "inizio": 100.04,
+     "fine": 100.3
+    },
+    {
+     "p": "dei",
+     "inizio": 100.3,
+     "fine": 100.58
+    },
+    {
+     "p": "dati.",
+     "inizio": 100.58,
+     "fine": 100.66
+    }
+   ],
+   "loudness_M_media": -21.1
+  },
+  {
+   "i": 26,
+   "inizio": 100.84,
+   "fine": 113.58,
+   "durata": 12.74,
+   "testo": "Esempio, si va a calcolare il CPC, il cost per click, quanto costano i singoli click, oppure il CPA, cost per acquisition, customer lifetime value, le TV.",
+   "parole": [
+    {
+     "p": "Esempio,",
+     "inizio": 100.84,
+     "fine": 101.36
+    },
+    {
+     "p": "si",
+     "inizio": 101.42,
+     "fine": 101.56
+    },
+    {
+     "p": "va",
+     "inizio": 101.56,
+     "fine": 101.74
+    },
+    {
+     "p": "a",
+     "inizio": 101.74,
+     "fine": 101.92
+    },
+    {
+     "p": "calcolare",
+     "inizio": 101.92,
+     "fine": 102.34
+    },
+    {
+     "p": "il",
+     "inizio": 102.34,
+     "fine": 102.82
+    },
+    {
+     "p": "CPC,",
+     "inizio": 102.82,
+     "fine": 103.62
+    },
+    {
+     "p": "il",
+     "inizio": 104.06,
+     "fine": 104.18
+    },
+    {
+     "p": "cost",
+     "inizio": 104.18,
+     "fine": 104.48
+    },
+    {
+     "p": "per",
+     "inizio": 104.48,
+     "fine": 104.84
+    },
+    {
+     "p": "click,",
+     "inizio": 104.84,
+     "fine": 105.1
+    },
+    {
+     "p": "quanto",
+     "inizio": 105.4,
+     "fine": 105.52
+    },
+    {
+     "p": "costano",
+     "inizio": 105.52,
+     "fine": 105.9
+    },
+    {
+     "p": "i",
+     "inizio": 105.9,
+     "fine": 106.04
+    },
+    {
+     "p": "singoli",
+     "inizio": 106.04,
+     "fine": 106.32
+    },
+    {
+     "p": "click,",
+     "inizio": 106.32,
+     "fine": 106.6
+    },
+    {
+     "p": "oppure",
+     "inizio": 106.9,
+     "fine": 107.1
+    },
+    {
+     "p": "il",
+     "inizio": 107.1,
+     "fine": 107.46
+    },
+    {
+     "p": "CPA,",
+     "inizio": 107.46,
+     "fine": 107.96
+    },
+    {
+     "p": "cost",
+     "inizio": 108.32,
+     "fine": 108.6
+    },
+    {
+     "p": "per",
+     "inizio": 108.6,
+     "fine": 109.06
+    },
+    {
+     "p": "acquisition,",
+     "inizio": 109.06,
+     "fine": 109.88
+    },
+    {
+     "p": "customer",
+     "inizio": 110.36,
+     "fine": 110.82
+    },
+    {
+     "p": "lifetime",
+     "inizio": 110.82,
+     "fine": 111.66
+    },
+    {
+     "p": "value,",
+     "inizio": 111.66,
+     "fine": 112.42
+    },
+    {
+     "p": "le",
+     "inizio": 112.62,
+     "fine": 113.0
+    },
+    {
+     "p": "TV.",
+     "inizio": 113.0,
+     "fine": 113.58
+    }
+   ],
+   "loudness_M_media": -20.0
+  },
+  {
+   "i": 27,
+   "inizio": 113.58,
+   "fine": 118.96,
+   "durata": 5.38,
+   "testo": "Questi dati forse non li hai manco mai sentiti, o se li hai sentiti non li hai mai visti applicati nel mondo reale.",
+   "parole": [
+    {
+     "p": "Questi",
+     "inizio": 113.58,
+     "fine": 114.02
+    },
+    {
+     "p": "dati",
+     "inizio": 114.02,
+     "fine": 114.28
+    },
+    {
+     "p": "forse",
+     "inizio": 114.28,
+     "fine": 114.56
+    },
+    {
+     "p": "non",
+     "inizio": 114.56,
+     "fine": 114.68
+    },
+    {
+     "p": "li",
+     "inizio": 114.68,
+     "fine": 114.72
+    },
+    {
+     "p": "hai",
+     "inizio": 114.72,
+     "fine": 114.76
+    },
+    {
+     "p": "manco",
+     "inizio": 114.76,
+     "fine": 115.06
+    },
+    {
+     "p": "mai",
+     "inizio": 115.06,
+     "fine": 115.16
+    },
+    {
+     "p": "sentiti,",
+     "inizio": 115.16,
+     "fine": 115.74
+    },
+    {
+     "p": "o",
+     "inizio": 115.88,
+     "fine": 115.94
+    },
+    {
+     "p": "se",
+     "inizio": 115.94,
+     "fine": 116.04
+    },
+    {
+     "p": "li",
+     "inizio": 116.04,
+     "fine": 116.08
+    },
+    {
+     "p": "hai",
+     "inizio": 116.08,
+     "fine": 116.2
+    },
+    {
+     "p": "sentiti",
+     "inizio": 116.2,
+     "fine": 116.62
+    },
+    {
+     "p": "non",
+     "inizio": 116.62,
+     "fine": 116.82
+    },
+    {
+     "p": "li",
+     "inizio": 116.82,
+     "fine": 116.9
+    },
+    {
+     "p": "hai",
+     "inizio": 116.9,
+     "fine": 116.98
+    },
+    {
+     "p": "mai",
+     "inizio": 116.98,
+     "fine": 117.24
+    },
+    {
+     "p": "visti",
+     "inizio": 117.24,
+     "fine": 117.58
+    },
+    {
+     "p": "applicati",
+     "inizio": 117.58,
+     "fine": 118.14
+    },
+    {
+     "p": "nel",
+     "inizio": 118.14,
+     "fine": 118.3
+    },
+    {
+     "p": "mondo",
+     "inizio": 118.3,
+     "fine": 118.6
+    },
+    {
+     "p": "reale.",
+     "inizio": 118.6,
+     "fine": 118.96
+    }
+   ],
+   "loudness_M_media": -21.4
+  },
+  {
+   "i": 28,
+   "inizio": 119.02,
+   "fine": 123.5,
+   "durata": 4.48,
+   "testo": "Questo perché il 90% dei marketer delle agenzie lavorano male in maniera molto mediocre.",
+   "parole": [
+    {
+     "p": "Questo",
+     "inizio": 119.02,
+     "fine": 119.18
+    },
+    {
+     "p": "perché",
+     "inizio": 119.18,
+     "fine": 119.4
+    },
+    {
+     "p": "il",
+     "inizio": 119.4,
+     "fine": 119.44
+    },
+    {
+     "p": "90",
+     "inizio": 119.44,
+     "fine": 119.66
+    },
+    {
+     "p": "%",
+     "inizio": 119.66,
+     "fine": 120.06
+    },
+    {
+     "p": "dei",
+     "inizio": 120.06,
+     "fine": 120.2
+    },
+    {
+     "p": "marketer",
+     "inizio": 120.2,
+     "fine": 120.7
+    },
+    {
+     "p": "delle",
+     "inizio": 120.7,
+     "fine": 120.84
+    },
+    {
+     "p": "agenzie",
+     "inizio": 120.84,
+     "fine": 121.28
+    },
+    {
+     "p": "lavorano",
+     "inizio": 121.28,
+     "fine": 121.84
+    },
+    {
+     "p": "male",
+     "inizio": 121.84,
+     "fine": 122.24
+    },
+    {
+     "p": "in",
+     "inizio": 122.24,
+     "fine": 122.44
+    },
+    {
+     "p": "maniera",
+     "inizio": 122.44,
+     "fine": 122.74
+    },
+    {
+     "p": "molto",
+     "inizio": 122.74,
+     "fine": 123.08
+    },
+    {
+     "p": "mediocre.",
+     "inizio": 123.08,
+     "fine": 123.5
+    }
+   ],
+   "loudness_M_media": -20.9
+  },
+  {
+   "i": 29,
+   "inizio": 123.6,
+   "fine": 128.18,
+   "durata": 4.58,
+   "testo": "Io voglio insegnarti esattamente come guardare i dati, quindi è per questo che i dati sono importanti.",
+   "parole": [
+    {
+     "p": "Io",
+     "inizio": 123.6,
+     "fine": 123.7
+    },
+    {
+     "p": "voglio",
+     "inizio": 123.7,
+     "fine": 123.94
+    },
+    {
+     "p": "insegnarti",
+     "inizio": 123.94,
+     "fine": 124.56
+    },
+    {
+     "p": "esattamente",
+     "inizio": 124.56,
+     "fine": 125.36
+    },
+    {
+     "p": "come",
+     "inizio": 125.36,
+     "fine": 125.54
+    },
+    {
+     "p": "guardare",
+     "inizio": 125.54,
+     "fine": 125.94
+    },
+    {
+     "p": "i",
+     "inizio": 125.94,
+     "fine": 126.08
+    },
+    {
+     "p": "dati,",
+     "inizio": 126.08,
+     "fine": 126.14
+    },
+    {
+     "p": "quindi",
+     "inizio": 126.14,
+     "fine": 126.36
+    },
+    {
+     "p": "è",
+     "inizio": 126.36,
+     "fine": 126.5
+    },
+    {
+     "p": "per",
+     "inizio": 126.5,
+     "fine": 126.72
+    },
+    {
+     "p": "questo",
+     "inizio": 126.72,
+     "fine": 127.1
+    },
+    {
+     "p": "che",
+     "inizio": 127.1,
+     "fine": 127.3
+    },
+    {
+     "p": "i",
+     "inizio": 127.3,
+     "fine": 127.44
+    },
+    {
+     "p": "dati",
+     "inizio": 127.44,
+     "fine": 127.56
+    },
+    {
+     "p": "sono",
+     "inizio": 127.56,
+     "fine": 127.76
+    },
+    {
+     "p": "importanti.",
+     "inizio": 127.76,
+     "fine": 128.18
+    }
+   ],
+   "loudness_M_media": -21.7
+  },
+  {
+   "i": 30,
+   "inizio": 128.22,
+   "fine": 136.56,
+   "durata": 8.34,
+   "testo": "Se non ce li hai tutti non riesci ad analizzare la realtà, e se non sai analizzare la realtà come fai a prendere decisioni che riducono i costi e aumentano i profitti?",
+   "parole": [
+    {
+     "p": "Se",
+     "inizio": 128.22,
+     "fine": 128.38
+    },
+    {
+     "p": "non",
+     "inizio": 128.38,
+     "fine": 128.66
+    },
+    {
+     "p": "ce",
+     "inizio": 128.66,
+     "fine": 128.76
+    },
+    {
+     "p": "li",
+     "inizio": 128.76,
+     "fine": 128.86
+    },
+    {
+     "p": "hai",
+     "inizio": 128.86,
+     "fine": 129.02
+    },
+    {
+     "p": "tutti",
+     "inizio": 129.02,
+     "fine": 129.36
+    },
+    {
+     "p": "non",
+     "inizio": 129.36,
+     "fine": 129.66
+    },
+    {
+     "p": "riesci",
+     "inizio": 129.66,
+     "fine": 130.16
+    },
+    {
+     "p": "ad",
+     "inizio": 130.16,
+     "fine": 130.42
+    },
+    {
+     "p": "analizzare",
+     "inizio": 130.42,
+     "fine": 130.94
+    },
+    {
+     "p": "la",
+     "inizio": 130.94,
+     "fine": 131.12
+    },
+    {
+     "p": "realtà,",
+     "inizio": 131.12,
+     "fine": 131.46
+    },
+    {
+     "p": "e",
+     "inizio": 131.58,
+     "fine": 131.72
+    },
+    {
+     "p": "se",
+     "inizio": 131.72,
+     "fine": 131.84
+    },
+    {
+     "p": "non",
+     "inizio": 131.84,
+     "fine": 132.02
+    },
+    {
+     "p": "sai",
+     "inizio": 132.02,
+     "fine": 132.1
+    },
+    {
+     "p": "analizzare",
+     "inizio": 132.1,
+     "fine": 132.5
+    },
+    {
+     "p": "la",
+     "inizio": 132.5,
+     "fine": 132.68
+    },
+    {
+     "p": "realtà",
+     "inizio": 132.68,
+     "fine": 132.98
+    },
+    {
+     "p": "come",
+     "inizio": 132.98,
+     "fine": 133.22
+    },
+    {
+     "p": "fai",
+     "inizio": 133.22,
+     "fine": 133.4
+    },
+    {
+     "p": "a",
+     "inizio": 133.4,
+     "fine": 133.6
+    },
+    {
+     "p": "prendere",
+     "inizio": 133.6,
+     "fine": 133.84
+    },
+    {
+     "p": "decisioni",
+     "inizio": 133.84,
+     "fine": 134.36
+    },
+    {
+     "p": "che",
+     "inizio": 134.36,
+     "fine": 134.52
+    },
+    {
+     "p": "riducono",
+     "inizio": 134.52,
+     "fine": 134.88
+    },
+    {
+     "p": "i",
+     "inizio": 134.88,
+     "fine": 135.02
+    },
+    {
+     "p": "costi",
+     "inizio": 135.02,
+     "fine": 135.66
+    },
+    {
+     "p": "e",
+     "inizio": 135.66,
+     "fine": 135.78
+    },
+    {
+     "p": "aumentano",
+     "inizio": 135.78,
+     "fine": 136.12
+    },
+    {
+     "p": "i",
+     "inizio": 136.12,
+     "fine": 136.28
+    },
+    {
+     "p": "profitti?",
+     "inizio": 136.28,
+     "fine": 136.56
+    }
+   ],
+   "loudness_M_media": -22.0
+  },
+  {
+   "i": 31,
+   "inizio": 136.72,
+   "fine": 143.02,
+   "durata": 6.3,
+   "testo": "Questo tipo di mentalità del guardare la realtà è quello che mi ha permesso di passare il mio profilo da zero follower in organico",
+   "parole": [
+    {
+     "p": "Questo",
+     "inizio": 136.72,
+     "fine": 136.92
+    },
+    {
+     "p": "tipo",
+     "inizio": 136.92,
+     "fine": 137.14
+    },
+    {
+     "p": "di",
+     "inizio": 137.14,
+     "fine": 137.34
+    },
+    {
+     "p": "mentalità",
+     "inizio": 137.34,
+     "fine": 137.88
+    },
+    {
+     "p": "del",
+     "inizio": 137.88,
+     "fine": 138.06
+    },
+    {
+     "p": "guardare",
+     "inizio": 138.06,
+     "fine": 138.52
+    },
+    {
+     "p": "la",
+     "inizio": 138.52,
+     "fine": 138.68
+    },
+    {
+     "p": "realtà",
+     "inizio": 138.68,
+     "fine": 139.14
+    },
+    {
+     "p": "è",
+     "inizio": 139.14,
+     "fine": 139.34
+    },
+    {
+     "p": "quello",
+     "inizio": 139.34,
+     "fine": 139.46
+    },
+    {
+     "p": "che",
+     "inizio": 139.46,
+     "fine": 139.58
+    },
+    {
+     "p": "mi",
+     "inizio": 139.58,
+     "fine": 139.62
+    },
+    {
+     "p": "ha",
+     "inizio": 139.62,
+     "fine": 139.72
+    },
+    {
+     "p": "permesso",
+     "inizio": 139.72,
+     "fine": 140.02
+    },
+    {
+     "p": "di",
+     "inizio": 140.02,
+     "fine": 140.24
+    },
+    {
+     "p": "passare",
+     "inizio": 140.24,
+     "fine": 140.5
+    },
+    {
+     "p": "il",
+     "inizio": 140.5,
+     "fine": 140.58
+    },
+    {
+     "p": "mio",
+     "inizio": 140.58,
+     "fine": 140.76
+    },
+    {
+     "p": "profilo",
+     "inizio": 140.76,
+     "fine": 140.96
+    },
+    {
+     "p": "da",
+     "inizio": 140.96,
+     "fine": 141.16
+    },
+    {
+     "p": "zero",
+     "inizio": 141.16,
+     "fine": 141.5
+    },
+    {
+     "p": "follower",
+     "inizio": 141.5,
+     "fine": 141.92
+    },
+    {
+     "p": "in",
+     "inizio": 141.92,
+     "fine": 142.28
+    },
+    {
+     "p": "organico",
+     "inizio": 142.28,
+     "fine": 143.02
+    }
+   ],
+   "loudness_M_media": -18.7
+  },
+  {
+   "i": 32,
+   "inizio": 143.02,
+   "fine": 148.08,
+   "durata": 5.06,
+   "testo": "a 250 mila follower guarda quante views sto facendo guarda i like su questo sito su cui",
+   "parole": [
+    {
+     "p": "a",
+     "inizio": 143.02,
+     "fine": 143.38
+    },
+    {
+     "p": "250",
+     "inizio": 143.38,
+     "fine": 144.3
+    },
+    {
+     "p": "mila",
+     "inizio": 144.3,
+     "fine": 144.72
+    },
+    {
+     "p": "follower",
+     "inizio": 144.72,
+     "fine": 145.02
+    },
+    {
+     "p": "guarda",
+     "inizio": 145.02,
+     "fine": 145.44
+    },
+    {
+     "p": "quante",
+     "inizio": 145.44,
+     "fine": 145.66
+    },
+    {
+     "p": "views",
+     "inizio": 145.66,
+     "fine": 145.92
+    },
+    {
+     "p": "sto",
+     "inizio": 145.92,
+     "fine": 146.1
+    },
+    {
+     "p": "facendo",
+     "inizio": 146.1,
+     "fine": 146.54
+    },
+    {
+     "p": "guarda",
+     "inizio": 146.54,
+     "fine": 146.92
+    },
+    {
+     "p": "i",
+     "inizio": 146.92,
+     "fine": 147.02
+    },
+    {
+     "p": "like",
+     "inizio": 147.02,
+     "fine": 147.16
+    },
+    {
+     "p": "su",
+     "inizio": 147.16,
+     "fine": 147.42
+    },
+    {
+     "p": "questo",
+     "inizio": 147.42,
+     "fine": 147.6
+    },
+    {
+     "p": "sito",
+     "inizio": 147.6,
+     "fine": 147.88
+    },
+    {
+     "p": "su",
+     "inizio": 147.88,
+     "fine": 147.98
+    },
+    {
+     "p": "cui",
+     "inizio": 147.98,
+     "fine": 148.08
+    }
+   ],
+   "loudness_M_media": -19.8
+  },
+  {
+   "i": 33,
+   "inizio": 148.08,
+   "fine": 151.24,
+   "durata": 3.16,
+   "testo": "tu sei ora abbiamo più di 3 mila ordini continua a leggere qui sotto",
+   "parole": [
+    {
+     "p": "tu",
+     "inizio": 148.08,
+     "fine": 148.2
+    },
+    {
+     "p": "sei",
+     "inizio": 148.2,
+     "fine": 148.38
+    },
+    {
+     "p": "ora",
+     "inizio": 148.38,
+     "fine": 148.74
+    },
+    {
+     "p": "abbiamo",
+     "inizio": 148.74,
+     "fine": 149.04
+    },
+    {
+     "p": "più",
+     "inizio": 149.04,
+     "fine": 149.22
+    },
+    {
+     "p": "di",
+     "inizio": 149.22,
+     "fine": 149.38
+    },
+    {
+     "p": "3",
+     "inizio": 149.38,
+     "fine": 149.52
+    },
+    {
+     "p": "mila",
+     "inizio": 149.52,
+     "fine": 149.8
+    },
+    {
+     "p": "ordini",
+     "inizio": 149.8,
+     "fine": 150.1
+    },
+    {
+     "p": "continua",
+     "inizio": 150.1,
+     "fine": 150.44
+    },
+    {
+     "p": "a",
+     "inizio": 150.44,
+     "fine": 150.6
+    },
+    {
+     "p": "leggere",
+     "inizio": 150.6,
+     "fine": 150.84
+    },
+    {
+     "p": "qui",
+     "inizio": 150.84,
+     "fine": 151.0
+    },
+    {
+     "p": "sotto",
+     "inizio": 151.0,
+     "fine": 151.24
+    }
+   ],
+   "loudness_M_media": -21.0
+  }
+ ]
+}

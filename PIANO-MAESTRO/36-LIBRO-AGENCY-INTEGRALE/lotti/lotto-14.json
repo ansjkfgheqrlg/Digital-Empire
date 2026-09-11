@@ -1,0 +1,1146 @@
+{
+ "lotto": 14,
+ "totale": 190,
+ "atomi": [
+  {
+   "uid": "max17-v10-barron-sales::KA-001",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Sales System: barra a 5 caselle collegate da frecce — ICP → Meetings → Indoctrinate → Discovery Call → Business Case. Costruita progressivamente lungo il video e mostrata completa in blu alla fine."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-002",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Diagramma DELIVERY vs SALES: Delivery = 4 box blu collegati da frecce lineari (processo pulito e ripetibile). Sales = percorso caotico con punti interrogativi rossi, uno scarabocchio a spirale, un box rosso isolato."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-003",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Grafico a onde 'Sales Activity' (linea blu quasi piatta) vs 'Revenue' (linea rossa ondulata, zone verdi/rosse) — visualizza il ciclo boom-and-bust del fatturato quando le vendite sono reattive."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-004",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Diagramma Venn a 3 cerchi sovrapposti: 'Right Person' (evidenziato in blu nel frame), 'Right Timing', 'Right Message' — le tre condizioni per riempire il calendario di meeting ogni mese."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-005",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Diagramma 'Current Reality' → 'Reality Bridge' → 'Future Reality': icona persona rossa con grafico in calo a sinistra, collegata da un arco (Reality Bridge) a un'icona persona verde con grafico in salita a destra. Il servizio si posiziona come ponte tra le due realtà."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-006",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Analogia dottore/paziente: come un medico non prescrive cure prima di aver fatto domande su insorgenza, intensità e sintomi, il venditore deve fare domande (diagnosi) prima di proporre soluzioni."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-007",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Confronto due email: Email 1 generica ('I help business owners increase their revenue. Makes sense to jump a quick call and I'll explain how.') vs Email 2 specifica per ICP ('I help business owners of service-based businesses doing between $20,000 and $200,000 a month find and close more deals in the next 30 days or your money back...')."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-008",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Email di indottrinamento pre-call integrale: 'Hi NAME, I'm looking forward to speaking with you on our scheduled call. Can you please take a look through the short videos on this page https://meeting.salesman.com/confirmed. The videos explain how the mentorship works, how we are going to deliver you a positive ROI within the first 30-days and they answer some of the questions you might have right now. Watching the videos means that we have more time on our call to dig into your situation and to see if the Salesman.com Mentorship is the right fit for your business. Cheers'."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-009",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Landing page post-booking: header 'Your call has been successfully booked / IMPORTANT: Watch this video right now', video embed, sezione 'How you're going to get an ROI within the first 30-days' con tool 'Selling Systems Audit — Complete the audit to find gaps in your sales systems and prepare for your 1:1 audit and assessment review with Will Barron', menu Dashboard/Selling Systems Audit/Sales Lab/Messaging & Sales Approach/Book a 1:1 call."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-010",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "FAQ pre-call, voce prezzo: 'How much does this cost? The Salesman.com Mentorship starts at $8,000 USD for our standard 6-month mentorship. It's priced against the revenue a broken sales process is currently costing you rather than the usual online video training you might have tried in the past.'"
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-011",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "FAQ pre-call, voce bio: 'Will Barron built Salesman.com after 6 years selling complex medical devices. Since then he's built two service businesses and has now trained over 1,000 business owners too. He's the host of the Salesman.com YouTube channel (77,000 subscribers) and the Will Barron YouTube channel (11,000 subscribers), where he helps over 300,000 businesses a month increase their revenue.'"
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-012",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "FAQ pre-call, obiezioni pre-gestite: 'Do you actually work with businesses like mine, or is this generic advice?' → risposta basata su Selling Systems Audit personalizzato; 'I could just watch YouTube videos or read a book on sales. Why pay for this?' → risposta su tecnica astratta vs diagnosi specifica del proprio processo."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-013",
+   "run": "max17-v10-barron-sales",
+   "tipo": "fase",
+   "testo": "I 6 passaggi verbali della Discovery Call (nessuna grafica dedicata): 1) Pain — cosa succede se il problema non si risolve, chi altro è colpito; 2) Trigger — evento specifico che ha spinto a prenotare ora; 3) Future Reality — visione di un futuro migliore, il servizio come ponte; 4) ROI — numeri anche grezzi messi sul tavolo presto; 5) Budget — chiesto solo dopo aver mostrato il ROI; 6) Next Step — data/ora precisa bloccata in entrambi i calendari prima di chiudere."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-014",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Struttura del Business Case: 1) situazione del prospect nelle sue stesse parole (idealmente trascritte dalla call, sfrutta il bias di coerenza cognitiva), 2) upside finanziario/ROI, 3) solo alla fine la soluzione presentata come 'Fast, Easy, Cost effective'."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-015",
+   "run": "max17-v10-barron-sales",
+   "tipo": "fase",
+   "testo": "FASE 1 — ICP: si definisce un profilo cliente ristretto analizzando i clienti già vinti per dolore specifico + trigger che li ha portati ad agire ora, non solo settore/dimensione. Si misura sulla chiarezza del posizionamento (il prospect riconosce sé stesso in meno di un secondo)."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-016",
+   "run": "max17-v10-barron-sales",
+   "tipo": "fase",
+   "testo": "FASE 2 — Meetings: si costruisce un processo ripetibile di lead generation mirato (Right Person + Right Timing + Right Message), con outreach personalizzato e automazione, il cui unico obiettivo per touchpoint è ottenere un meeting prenotato, mai il pitch del servizio."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-017",
+   "run": "max17-v10-barron-sales",
+   "tipo": "fase",
+   "testo": "FASE 3 — Indoctrinate: sequenza email + landing page con video + FAQ che pre-costruisce fiducia e gestisce le obiezioni comuni prima della call, così che 'these objections very rarely come up anymore' durante la discovery call."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-018",
+   "run": "max17-v10-barron-sales",
+   "tipo": "fase",
+   "testo": "FASE 4 — Discovery Call: postura 'Questions first, Solutions later', analogia del dottore, 6 passaggi (pain, trigger, future reality, ROI, budget, next step). Segnale di successo: il prospect chiede da solo 'come comincio?' verso la fine."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-019",
+   "run": "max17-v10-barron-sales",
+   "tipo": "fase",
+   "testo": "FASE 5 — Business Case: documento post-call che rimuove l'ostacolo logico (non emotivo) alla decisione, specialmente quando il prospect deve giustificare la scelta a un socio/capo/coniuge che vuole solo i numeri, non le emozioni della call."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-020",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "Oltre 1.100 imprenditori seguiti da Will Barron a questo punto della sua carriera."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-021",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "$1,4 miliardi generati dai clienti che usano i sistemi di vendita di Will Barron."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-022",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "Fascia di fatturato ICP nell'esempio: 'service-based businesses doing between $20,000 and $200,000 a month'."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-023",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "Soglia di prezzo servizio ($5.000-$10.000+) sopra la quale evitare l'outreach di massa 'AI slop' e usare invece messaggi mirati e personalizzati."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-024",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "Aggiungere lo step del business case può alzare il tasso di conversione del 10-20% in quella fase del processo di vendita."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-025",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "Prezzo della Salesman.com Mentorship: $8.000 USD per il programma standard di 6 mesi."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-026",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "ROI positivo promesso entro i primi 30 giorni di mentorship."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-027",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "Soglia di $1 milione/anno di fatturato che molte service business non riescono a superare (causa citata: sistema di vendita + psicologia di vendita del founder)."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-028",
+   "run": "max17-v10-barron-sales",
+   "tipo": "numero",
+   "testo": "Bio Will Barron: 6 anni vendendo dispositivi medici complessi, 2 service business costruite, oltre 1.000 imprenditori formati, canale YouTube Salesman.com 77.000 iscritti, canale YouTube Will Barron 11.000 iscritti, aiuta oltre 300.000 business al mese ad aumentare il fatturato."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-029",
+   "run": "max17-v10-barron-sales",
+   "tipo": "errore",
+   "testo": "ICP troppo largo: 'we will work with anyone who needs what we do' sembra tenere aperte le opzioni ma finisce per non parlare specificamente a nessuno — il prospect non riconosce sé stesso e non prenota."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-030",
+   "run": "max17-v10-barron-sales",
+   "tipo": "errore",
+   "testo": "Mass 'AI slop' emails su 50+ domini casuali per servizi sopra i $5-10k — non funziona, va sostituito con messaggi mirati alla persona giusta nel momento giusto."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-031",
+   "run": "max17-v10-barron-sales",
+   "tipo": "errore",
+   "testo": "Pitchare troppo presto: appena il prospect nomina il problema, il business owner medio si eccita e spiega subito il servizio invece di continuare a fare domande — questo causa il 'devo pensarci' e il ghosting post-call."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-032",
+   "run": "max17-v10-barron-sales",
+   "tipo": "errore",
+   "testo": "Saltare il business case: anche quando il prospect vuole comprare e ha budget, senza il business case manca lo strumento per giustificare la decisione a un socio/capo/coniuge, e la trattativa muore per un ostacolo logico non emotivo."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-033",
+   "run": "max17-v10-barron-sales",
+   "tipo": "errore",
+   "testo": "Non bloccare data/ora precisa del prossimo step in entrambi i calendari prima di chiudere la discovery call — 'altrimenti la discovery call non è stata completata'."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-034",
+   "run": "max17-v10-barron-sales",
+   "tipo": "errore",
+   "testo": "Lead generation reattiva e ad-hoc: aspettare i referral, mandare DM a caso su LinkedIn quando il calendario si svuota, affidare le ads a 'qualche giovane inesperto assunto a caso'."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-035",
+   "run": "max17-v10-barron-sales",
+   "tipo": "errore",
+   "testo": "Attribuire il problema di vendita alla mancanza di tempo, quando la causa reale è la mancanza di un sistema di vendita."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-036",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "'Questions first, Solutions later' — regola centrale della discovery call, mostrata come caption a schermo."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-037",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Ogni touchpoint dell'outreach a freddo ha un solo obiettivo: ottenere un meeting prenotato, mai pitchare il servizio o spiegare i deliverable."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-038",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Ogni parte del sistema di vendita (dove trovare i prospect, cosa dire, come condurre la discovery call) funziona solo se è puntata fin dall'inizio sull'ICP giusto."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-039",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Il messaggio di outreach deve citare qualcosa di specifico sul business/ruolo/problema del prospect e mostrare un'ipotesi forte (anche se leggermente imprecisa) su qual è il suo problema."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-040",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Bias di coerenza cognitiva: citare le parole esatte del prospect nel business case (idealmente trascritte dalla call registrata) rende il documento più persuasivo perché le persone vogliono restare coerenti con ciò che hanno detto."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-041",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "I numeri di ROI, anche grezzi e imprecisi, vanno messi sul tavolo presto durante la discovery call — non serve precisione, serve dimostrare che il problema può pesare meno."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-042",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Va chiarito che il prospect ha budget per lavorare insieme, ma solo dopo aver mostrato il ROI — a quel punto la domanda sul budget 'passa velocemente' perché il prospect è già convinto."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-043",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Il venditore non può fare da solo la stessa parte emotiva (vendere il dolore, posizionare il futuro migliore) che ha fatto in call quando il prospect deve convincere altri decisori — da qui la necessità del business case con i 'numeri freddi e duri'."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-044",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Argomento visivo dell'apertura: la maggior parte dei service business owner ha un processo di delivery documentato e ripetibile, ma un processo di vendita completamente ad-hoc e affidato alla fortuna — questo gap causa il ciclo boom-and-bust."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-045",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Meccanica del ciclo boom-and-bust: il fatturato scende → si entra in modalità panico → si va a caccia di nuovi clienti → si torna occupati → si smette di vendere per fare il lavoro cliente → il ciclo ricomincia."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-046",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "'Sales shield' — i prospect arrivano a una call prenotata freddi, scettici e pronti a dire di no o a sparire (ghosting); l'indottrinamento pre-call serve a neutralizzare questo scudo prima ancora di parlare con loro."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-047",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Il dolore va scavato in profondità durante la discovery call, chiedendo se colpisce anche la famiglia/il team del prospect, così che ne senta il peso mentre è seduto davanti a te."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-048",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Il trigger è il secondo elemento da scovare nella discovery call: l'evento specifico (cliente perso, obiettivo mancato, concorrente comparso) che ha spinto il prospect a prenotare la call proprio ora, e che guida l'urgenza nel resto del processo."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-049",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Vanno coperti entrambi i tipi di motivazione del prospect: chi fugge dal dolore e chi è attratto dall'upside futuro (Will Barron si descrive come motivato più dall'upside che dalla fuga dal dolore)."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-050",
+   "run": "max17-v10-barron-sales",
+   "tipo": "framework",
+   "testo": "Card teaser 'LATER IN THE VIDEO' con anteprima sfocata del grafico boom-bust, mostrata nell'introduzione per anticipare un contenuto che arriverà più avanti nel video."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-051",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Hook di apertura: il fatturato è 'brillante un mese e morto il successivo' anche lavorando duramente, perché i deliverable sono a posto ma il lato vendite non lo è."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-052",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "L'indottrinamento pre-call spinge chi prenota una call a guardare 2 video YouTube aggiuntivi (potenzialmente 1-3 ore di contenuto) prima della call, così arrivano già sapendo se si fidano del team e dell'offerta."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-053",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Dopo aver costruito a mano un paio di business case, si può usare l'AI per automatizzarne la produzione."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-054",
+   "run": "max17-v10-barron-sales",
+   "tipo": "errore",
+   "testo": "Discrepanza dichiarativa: a inizio video si promettono 'the six components of the sales system' ma la grafica finale ne mostra solo 5 (ICP, Meetings, Indoctrinate, Discovery Call, Business Case); il 'sei' ricompare più avanti riferito solo ai 6 passaggi interni della Discovery Call, senza che il video chiarisca esplicitamente il collegamento."
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-055",
+   "run": "max17-v10-barron-sales",
+   "tipo": "regola",
+   "testo": "Chiedere il budget solo dopo aver mostrato valore/ROI in call è meno stressante di quanto la maggior parte degli imprenditori si aspetti: a quel punto il prospect è già abbastanza convinto da condividere le proprie finanze senza problemi, ed è 'never as stressful as what most business owners think it's going to be before they start doing this routinely'."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-001",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Il costo di una sessione non lo fa quello che scrivi tu: a ogni invio il modello rilegge da capo tutta la conversazione (il tuo contesto, tutte le sue risposte, ogni file aperto). Il tuo messaggio resta costante, quello che lui rilegge cresce a ogni turno. E' il principio da cui discendono quasi tutte le altre tecniche del video."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-002",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "L'animazione quantifica il principio con un messaggio costante da 180 token: al TURNO 2 il modello rilegge 360 token, al TURNO 3 ne rilegge 540. Il costo per turno cresce linearmente col numero di turni, quindi il cumulato cresce quadraticamente."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-003",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "Tre strumenti di misura da usare PRIMA di toccare qualsiasi cosa: /context (cosa occupa la finestra adesso), /usage (dove hai bruciato i limiti), la status line personalizzata (il contatore sempre a schermo). Sulla lavagna sono in un banner dorato sopra tutte le tecniche, non dentro una colonna."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-004",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Su una conversazione NUOVA, prima di scrivere qualsiasi cosa, /context deve stare fra il 3% e il 6%. Quel costo di partenza e' fatto da file di memoria, system prompt (CLAUDE.md), server MCP e skill installate. Molti clienti dell'autore partono gia' al 20% e poi si chiedono perche' bruciano i token."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-005",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "Finestra di contesto dei modelli come dichiarata e mostrata: Opus = 1 milione di token (letto a schermo: '59.5k / 1M (6%)'), Sonnet = 200.000 secondo l'autore ('se non sbaglio'). Il selettore modelli mostrato in quella build elenca Fable 5, Opus 5, Sonnet 5, Haiku 4.5, piu' un effort selezionabile (a schermo: 'Opus 5 | Extra')."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-006",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "/clear a ogni cambio di task. E' l'unica mossa che azzera la cronologia invece di limarla: 'ogni altro fix taglia una fetta, questo azzera la torta'. Non serve aprire una chat nuova. Dimostrato a schermo: dopo un solo 'Ciao, come stai?' il contesto era al 15%, dopo /clear torna al 6% di partenza."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-007",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "/compact e' l'anti-pattern centrale del video: 'il messaggio piu' caro'. Per riassumere rimanda tutto il contesto al modello, e poi butta via la roba gia' pronta in cache. Compra continuita', non risparmio. In piu' e' Claude a scegliere cosa tenere e cosa buttare, non tu."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-008",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "/rewind al posto di /compact quando basta tornare indietro: riporta la conversazione a un punto precedente senza consumare token, perche' torni a uno stato che il modello ha gia' pronto invece di farglielo ricostruire. Funziona identico in terminale, app desktop ed estensione VS Code."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-009",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "File di handoff al posto di /compact quando devi davvero cambiare sessione: scrivi tu lo stato e riparti da un prefisso piccolo (poche centinaia di token) invece di lasciare a Claude la scelta di cosa riassumere. Contenuto del file: obiettivo, a che punto siamo, cosa abbiamo provato che NON ha funzionato, problemi incontrati e come risolti, decisioni prese, file toccati, dove vogliamo andare."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-010",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Dettaglio presente SOLO sulla lavagna e mai detto a voce: nel file di handoff la cosa che deve sopravvivere per prima sono le strade gia' fallite. E' il pezzo di stato che costa di piu' riscoprire e che un riassunto automatico butta via per primo perche' sembra rumore."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-011",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Modello ed effort si scelgono una volta sola, all'inizio. Cambiarli a meta' conversazione butta via tutto il lavoro gia' pronto legato al modello precedente: 'e' come scegliere un nuovo cervello', e quel cervello deve riprendersi tutta la conversazione da capo. Se vuoi il modello economico, ci parti."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-012",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "Il modello non si sceglie per sessione ma per skill e per sub-agente: passi il modello dentro la skill o dentro il sub-agente, cosi' la sessione principale non la tocchi e non perdi la cache. E' la versione operativa della regola 'mai a meta' sessione'."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-013",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "Farsi produrre un diagramma ASCII PRIMA di costruire qualsiasi cosa di grafico (front-end, lavagna, layout). Il diagramma costa pochissimo perche' sono trattini, e permette di correggere lo stile prima di generare. Consiglio operativo esplicito: aggiungere questo step in testa a ogni skill di design."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-014",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Il costo che conta non e' quello del giro singolo ma quello del LAVORO RIFATTO: 'il lavoro rifatto non avviene proprio. Nessun compressore puo' farlo: agiscono su cio' che e' gia' successo'. E' il criterio che separa le tecniche che spostano davvero il conto da quelle cosmetiche."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-015",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "Spegnere i server MCP che non usi vale -47.000 token a sessione secondo la lavagna, scomposti a schermo in GitHub 26.000 + Slack 21.000. Il punto e' che quel peso entra PRIMA che tu scriva qualsiasi cosa, e resta anche se il tool non lo usi mai."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-016",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "Test di verifica dato dall'autore per sapere se un MCP sta pesando: /context deve dire 'deferred'. Se lo dice, i manuali dei tool restano fuori dal contesto finche' non servono davvero."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-017",
+   "run": "max18-v03-belli-token",
+   "tipo": "architettura",
+   "testo": "Preferire una CLI a un MCP e' definito dall'autore 'il taglio piu' grosso della lista, e non e' un tool: e' scegliere un altro modo di collegare le cose'. Un MCP carica all'avvio il manuale di TUTTI i suoi metodi e l'indice cresce a ogni tool aggiunto; una CLI costa zero finche' non la chiami, e basta una riga nel CLAUDE.md perche' l'agente sappia che esiste. A schermo: MCP 26.000 token contro CLI ~40 token, e solo quando serve."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-018",
+   "run": "max18-v03-belli-token",
+   "tipo": "architettura",
+   "testo": "Perche' non usare direttamente l'API invece dell'MCP: le risposte API nascono per essere lette da umani, quindi sono JSON lunghissimi che finiscono interi nel contesto. La CLI risolve i due problemi insieme: non carica i manuali a priori (problema MCP) e non restituisce JSON gonfi (problema API). Mostrato a schermo con una ricerca immagini 'api response json' piena di JSON lunghi."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-019",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "Regola generale che l'autore tiene scritta nel proprio CLAUDE.md: cercare sempre se esiste una CLI prima di installare un MCP. Esempio dimostrato a schermo con Supabase: invece del Supabase MCP Server (la cui doc ufficiale avverte che collegare un LLM ai progetti comporta rischi di sicurezza), cercare 'supabase cli'."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-020",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Il CLAUDE.md va trattato come un INDICE, non come un documento: deve dire DOVE stanno le cose, non contenerle. Motivo: si rilegge a ogni messaggio per tutta la conversazione. Confronto mostrato in animazione: 4.000 token come documento contro 450 token come indice; su 6 messaggi fanno 24.000 token contro poche migliaia."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-021",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "Soglia dichiarata per il CLAUDE.md: sotto le 200 righe. L'autore la attribuisce esplicitamente alla documentazione Anthropic, sia a voce sia scritta sulla lavagna. Il suo CLAUDE.md del second brain sta sulle 166 righe. ATTENZIONE: attribuzione dichiarata dall'autore ma NON verificata in questa sessione contro la doc Anthropic."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-022",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "Un CLAUDE.md per ogni cartella vale -7.160 token a sessione secondo la lavagna. Il meccanismo: il CLAUDE.md della radice si carica SEMPRE, quelli nelle sottocartelle solo quando l'agente entra davvero in quella cartella. Cosi' il file radice resta un indice leggero e il dettaglio si paga solo su richiesta."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-023",
+   "run": "max18-v03-belli-token",
+   "tipo": "affermazione",
+   "testo": "L'autore attribuisce il pattern 'un CLAUDE.md per cartella' ad Andrej Karpathy, descritto come 'uno dei membri fondatori di OpenAI, adesso sta ad Anthropic, ha inventato tutto il concetto di second brain con l'LLM wiki'. DA NON PROPAGARE COSI': l'affermazione che Karpathy lavori in Anthropic non risulta corretta e non e' stata verificata contro fonti esterne in questa sessione. Riportato come dichiarazione dubbia del relatore."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-024",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Le skill installate e le loro descrizioni si caricano a OGNI sessione, comprese quelle che non lanci mai: vale 'migliaia di token a sessione'. Le due mosse sono archiviare le skill che non usi e accorciare le descrizioni di quelle che restano. Formula della lavagna: 'restano installate, smettono di pesare'. L'autore consiglia di far accorciare le descrizioni a Claude e poi fargli fare un test end-to-end che le skill funzionino ancora."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-025",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "La qualita' del modello e' essa stessa un risparmio: per coding e planning veri si resta sul modello di frontiera, perche' 'un risultato da rifare costa piu' di quello che hai risparmiato scegliendo il modello economico'. Modelli di frontiera nominati a voce: Fable, Opus, GPT 5.6, Grock 4.6."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-026",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Per routine, skill, sub-agenti e /chrome bastano Haiku e Sonnet: 'i job schedulati che sai gia' riuscire, la navigazione, la manovalanza. Li' il modello grosso non serve'. A voce l'autore dice il 90% (in un altro passaggio il 99%) di skill e routine."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-027",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "I task schedulati 'pagano dieci volte': mandano il contesto INTERO a ogni scatto, e a frequenza oraria non trovano mai niente di pronto in cache. Anche alle 3 di notte. L'autore racconta di aver trovato, facendo un audit, task schedulati dimenticati che gli consumavano gran parte dell'usage."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-028",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "Cinque anti-pattern con il loro costo, dalla colonna 'NON FARLO' ('sembrano furbe, costano'): /compact per risparmiare = il messaggio piu' caro; screenshot del testo = 2.700 token per duecento parole (e un'immagine l'agente non la puo' modificare); dare PDF grezzi = paghi due volte, il testo della pagina PIU' l'immagine della stessa pagina; prompt piu' corti = lo 0,01% del conto, 'quello che digiti tu e' un errore di arrotondamento'; i tool che promettono il 90% = fra zero e negativo."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-029",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Controintuitivo e utile: accorciare i propri prompt e' inutile, vale lo 0,01% del conto. I prompt vaghi costano, ma non per i loro token: costano per il lavoro rifatto che innescano. Quindi la mossa giusta e' dare PIU' contesto, non meno."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-030",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "I sub-agenti non risparmiano, SPOSTANO il conto: quello che vedi tu e' un ritorno di 420 token, ma il conto vero e' system prompt 2.400 + copia della memoria 1.400 + strumenti e permessi + lettura vera 6.000, cioe' 9.800 token spesi per risparmiarne 5.700. Condizione che ribalta il conto: usarli SOLO per azioni in bulk (quaranta file, dieci fonti, roba di cui ti serve solo il verdetto). Upgrade dichiarato: metterli su Haiku, cosi' non toccano la cache della sessione principale."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-031",
+   "run": "max18-v03-belli-token",
+   "tipo": "architettura",
+   "testo": "Trasforma in codice cio' che e' ripetibile: 'l'AI serve per il GIUDIZIO. Tutto il resto e' esecuzione, e l'esecuzione ripetibile e' codice'. Confronto sulla lavagna: farlo rifare all'AI = ~2.000 token a giro, ogni tanto sbaglia, il risultato cambia; farlo fare a uno script = 0 token, non sbaglia mai, gira uguale ogni volta. Il passaggio si paga una volta sola ('lo fai scrivere UNA volta sola')."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-032",
+   "run": "max18-v03-belli-token",
+   "tipo": "strumento",
+   "testo": "I due tool di compressione contesto nominati e bocciati sono Caveman e RTK (loghi mostrati accanto alla card). Giudizio dell'autore: 'li ho provati tutti. Comprimono l'unica parte del conto che non conta, e ti mettono in mezzo uno strato fragile'; a voce aggiunge che Caveman 'spesso salta informazioni' e 'lascia cose fondamentali'. Il README di Caveman mostrato a schermo rivendica invece '33.2% fewer provider-reported input tokens' e un esempio 69 token -> 19 token. Le due affermazioni sono in conflitto diretto e NESSUNA e' stata verificata da noi."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-033",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "Il modo per trovare cosa trasformare in codice: lanciare un prompt di audit dentro il proprio brain o la propria app che chieda quali pezzi del flusso NON hanno bisogno di un modello. Quelli diventano uno script dentro la skill, e da li' in poi non si pagano mai piu'."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-034",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Euristica per capire cosa deve diventare un hook invece di una riga nel CLAUDE.md: 'ogni ricordati di e' un candidato hook: e' l'unica categoria di consiglio che sopravvive al fatto che te ne dimentichi'. Motivo: un hook e' deterministico e scatta sempre, mentre una regola scritta nel CLAUDE.md e' un prompt, e puo' capitare che il modello non la esegua."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-035",
+   "run": "max18-v03-belli-token",
+   "tipo": "metodo",
+   "testo": "Alternativa proposta ai compressori di contesto: cambiare l'output style di Claude Code (Settings -> output style -> 'conciso'), che restituisce il risultato senza preamboli ne' epiloghi. Zero installazioni, zero strato in mezzo."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-036",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "L'hook PDF dell'autore, documentato a schermo da Claude stesso: file ~/.claude/hooks/pdf-read-as-text.py, registrato in ~/.claude/settings.json come PreToolUse con matcher Read, globale su tutti i progetti. Estrae il testo con 'pdftotext -layout', lo mette in cache in ~/.claude/pdf-text-cache/<nome>.<hash>.txt, e riscrive il file_path verso quel .txt cosi' le pagine non entrano in contesto come immagini renderizzate. Si tira indietro da solo se il testo estratto sta sotto 200 caratteri per pagina o se pdftotext manca. Override manuale: 'touch ~/.claude/pdf-visual-once', consumato una volta sola. Limite dichiarato: sui PDF a colonne pdftotext appiattisce le colonne."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-037",
+   "run": "max18-v03-belli-token",
+   "tipo": "affermazione",
+   "testo": "CIFRA DA MANEGGIARE CON CAUTELA. Il relatore afferma che ogni pagina di un PDF elaborato da Claude Code consuma fra 1.500 e 3.000 token. Cinque secondi prima, a schermo, si vede da dove viene: un AI Overview di Google in risposta alla query 'claude code quanti token consuma per ogni pagina di un pdf', con il chip di citazione 'GitHub' sulla frase stessa e le voci di dettaglio citate a Reddit r/ClaudeAI e Medium. NON e' documentazione primaria Anthropic. Da riportare sempre come 'detto dal relatore', mai come dato verificato."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-038",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "Misurazione dichiarata dall'autore come propria (non citata): un PDF da 300 pagine passato con Read costa 'circa 500-600.000 token', mentre con il suo hook ne costa 150.000, quindi 'risparmi dalle 3 alle 4 volte'. Sulla lavagna la card sintetizza in '3-4x sui PDF'. E' una classe di affermazione diversa da KA-037: e' un test suo, non una citazione. Resta comunque non verificato da noi."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-039",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Imprecisione di linguaggio del relatore da non ereditare: a 9:48 dice che il costo cresce 'come se fosse esponenziale'. L'animazione che mostra lui stesso descrive invece una crescita LINEARE per turno (messaggio costante riletto n volte al turno n), quindi quadratica sul cumulato. L'animazione e' corretta, la parola no."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-040",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Soglia dei grafi di conoscenza: sotto i ~500 file non conviene ne' CodeGraph ne' Graphify, perche' il grafo costa piu' di quello che fa risparmiare. L'autore attribuisce la soglia ai manutentori stessi di CodeGraph, che lo scriverebbero nel loro README, citando un repo da 102 file su cui il tool consuma piu' del comportamento nativo. Differenza fra i due: CodeGraph e' il sensore residente per il CODICE (si indicizza da solo, un watcher lo tiene aggiornato); Graphify e' la torcia per un BRAIN (PDF, immagini, markdown, output Obsidian) ma il grafo te lo costruisce un agente, e lo paghi."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-041",
+   "run": "max18-v03-belli-token",
+   "tipo": "strumento",
+   "testo": "Dati letti direttamente dalle due repo aperte a schermo. CodeGraph (colbymchenry/codegraph): 'Pre-indexed code knowledge graph, auto syncs on code changes... fewer tokens, fewer tool calls, 100% local', 68.8k stelle, MIT, sezione '4. No more syncing!' con auto-sync via watcher e 'the index is never stale', disinstallazione con 'codegraph uninstall'. Graphify: '#2 Repository Of The Day', Apache-2.0, 162 contributors, Python 100%; mappa codice, docs, PDF, immagini e video in 'a knowledge graph you can query instead of grepping'; il codice via tree-sitter AST e' deterministico e locale, mentre docs/PDF/immagini/video usano il modello dell'assistente; ogni arco e' taggato EXTRACTED o INFERRED; non e' un vector index. Install: 'uv tool install graphify' poi 'graphify install'."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-042",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "Senza grafo l'agente 'cerca a tentoni', e ogni tentativo sbagliato resta in contesto: 'apre un file, non e' quello. Ne apre altri cinque. Ogni apertura entra nel contesto e ci resta, anche quella sbagliata'. Contatore contesto mostrato nell'animazione sul pannello 'Senza grafo': 3480. Con il grafo fa una domanda sola, va dritto al nodo, e il file poi lo legge lo stesso."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-043",
+   "run": "max18-v03-belli-token",
+   "tipo": "regola",
+   "testo": "Regola editoriale che l'autore si e' fatto scrivere da Claude in un proprio style.md, letta a schermo mentre preparava questo stesso video: se il corpo di un contenuto e' pieno di numeri misurati, l'intro promette con un AVVERBIO, non con una cifra. Una cifra in apertura o e' gonfiata (e allora contraddice un video che smonta chi promette percentuali) o e' precisa (e allora non e' una promessa ma un dettaglio che lo spettatore non sa ancora dove mettere). Da qui il 'tagliare DRASTICAMENTE' della prima riga."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-044",
+   "run": "max18-v03-belli-token",
+   "tipo": "architettura",
+   "testo": "Metodo di lavoro dell'autore visibile trasversalmente nel video: le regole non vivono in testa ma in file (style.md per le regole editoriali, script.md per lo script, CLAUDE.md per le regole operative, hook per le regole deterministiche). Ogni volta che una decisione vale oltre il caso singolo, viene scritta nel file che la fara' riapplicare da sola."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-045",
+   "run": "max18-v03-belli-token",
+   "tipo": "affermazione",
+   "testo": "CONTRADDIZIONE VISIBILE A SCHERMO E MAI COMMENTATA. Nel pannello /usage che l'autore mostra a 3:36 per dimostrare le sue tesi, in fondo, Claude Code stesso suggerisce: 'Le sessioni piu' lunghe sono piu' costose anche con la cache. Usa /compact a meta' attivita', /clear quando passi a nuove attivita''. Cioe' il prodotto raccomanda esattamente il comando che il video definisce 'la cavolata piu' grossa'. L'autore non lo nota e non lo confuta."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-046",
+   "run": "max18-v03-belli-token",
+   "tipo": "numero",
+   "testo": "Numeri di consumo reali dell'autore, letti nel pannello /usage: 93% del suo utilizzo eseguito oltre i 150k di contesto; 30% eseguito con 4 o piu' sessioni in parallelo; la skill che gli costa di piu' e' /reel-editor con il 29%, seguita da /apple-design 2%, /resource-page 1%, /post-all 1%, /repurpose 1%. Limite settimanale su tutti i modelli al 24%. Disclaimer a schermo: misure approssimative e sovrapposte, solo quel computer, escluso claude.ai."
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-047",
+   "run": "max18-v03-belli-token",
+   "tipo": "entita",
+   "testo": "L'autore e' Riccardo Belli Contarini, ingegnere informatico, founder di Martes AI (www.martes-ai.com), azienda che forma i team aziendali su Claude Code / Claude Cowork / Codex e poi costruisce soluzioni AI su misura. Posizionamento dichiarato: 'non siamo l'azienda di consulenza che ti fa l'analisi dei processi e ti da' il deck di 200 pagine, ma andiamo ad eseguire e a costruire'. Case study letto a schermo sul sito: 82.271 euro generati da un agente AI su WhatsApp per Bluvacanze. Profilo Instagram: 134 post, 12.5K follower, 22.5K iscritti YouTube dichiarati in bio."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-01",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Definizione",
+   "testo": "Copywriting = scrivere per vendere. NON scrivere cose carine, NON scrivere articoli creativi. 'L'obiettivo principale dei copywriter e' far vendere.'"
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-02",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Definizione",
+   "testo": "'Redattore pubblicitario' e' una traduzione italiana imprecisa del termine copywriter: esclude la componente vendita. Il copywriter DEVE saper vendere, non solo scrivere bene."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-03",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Formati",
+   "testo": "Il copywriting include qualsiasi contenuto SCRITTO con l'obiettivo di vendere: ads FB/IG, landing page, VSL (copione video), descrizioni prodotto, sales page, email - tutto conta come copy."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-04",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / VSL",
+   "testo": "Nel caso di video di vendita (VSL), il copywriter scrive il copione, non il video stesso. Il testo persuasivo e' il prodotto del copywriter anche dentro un formato video."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-05",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Esempio illustrativo",
+   "testo": "Esempio illustrativo (narrato, non mostrato a schermo): vendi bottiglie d'acqua da 80 euro (tipo Chiara Ferragni) -> fai campagna marketing su FB/IG/LinkedIn -> il testo di quella campagna e' il copy -> chi lo scrive e' il copywriter."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-06",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Guadagno",
+   "testo": "Il copywriter genera valore reale misurabile: con un'ad 'decente' l'imprenditore fa +10-30 mila euro. L'imprenditore e' contento di pagare 1-3 mila euro per quell'ad."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-07",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Pricing",
+   "testo": "'Non e' questione di quanto tempo investi per scrivere.' La tariffa del copywriter NON dipende dalle ore investite ne' dalla ricerca fatta - dipende dal valore (risultato/conversioni) generato. Chi scala diventa piu' bravo e puo' prezzare di piu'."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-08",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Pricing",
+   "testo": "Perche' il prezzo fisso batte la percentuale sul profitto per un freelance: (1) e' molto difficile 'attaccarsi' al profitto dell'imprenditore per prendere una fetta del guadagno; (2) il copywriter spesso non ha totale influenza sui risultati di conversione (fa solo una parte del funnel, es. solo la descrizione prodotto, non il branding o l'ad)."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-09",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Esercitazione",
+   "testo": "Metodo pratico da zero per sviluppare l'intuito: inventa un prodotto inesistente (o prendine uno esistente a caso) -> fai ricerca di mercato vera (competitor, prodotti simili, prezzi) -> scrivi copy per quel prodotto. Sviluppi istinto e 'feel' del copywriting senza dipendere da clienti reali."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-10",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Esercitazione",
+   "testo": "Andrei ha creato un PDF con prodotti inventati ideali per esercitarsi: integratore creatina, abbonamento palestra, altri prodotti 'persuasivi'. I prodotti inventati eliminano la dipendenza da clienti reali per imparare."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-11",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Principio meta",
+   "testo": "REGOLA FONDAMENTALE: 'Tutto cio' che tu fai come copywriter e' un copy.' Ogni messaggio LinkedIn, ogni email a un cliente, ogni bio sul sito = copy, e deve rispettare le regole di persuasione."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-12",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / 5 passi - Step 1",
+   "testo": "Step 1 dei 5 passi: studiare le tecniche + esercitarsi costantemente. 'Non smettere mai di farlo.' Allenamento continuo = prerequisito per gli step successivi."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-13",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / 5 passi - Step 2",
+   "testo": "Step 2 dei 5 passi: costruire una reputazione online professionale, con 3 sotto-punti: (1) ripulire i social, (2) costruire LinkedIn, (3) fare un sito web."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-14",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / 5 passi - Step 2.1",
+   "testo": "Sotto-punto 1 dello Step 2 - ripulire i social: foto di ubriachezza/party = credibilita' zero. 'Gli imprenditori che mi volevano assumere andavano a vedere le mie cose online dappertutto.' Andrei ha cancellato il suo profilo Facebook."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-15",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / 5 passi - Step 2.2",
+   "testo": "Sotto-punto 2 dello Step 2 - LinkedIn: dedicare 1-2 ore/settimana. Non spammare connessioni (come si aggiungono amici su Facebook). Interagire genuinamente nei commenti. LinkedIn = fonte diretta di clienti + validazione professionale."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-16",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / 5 passi - Step 2.3",
+   "testo": "Sotto-punto 3 dello Step 2 - sito web: usato come LANDING PAGE, non per SEO/Google. Obiettivo: vendere te stesso, mostrare portfolio/lavori di prova, convertire il visitatore in cliente. Non e' il classico sito con home+contatti."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-17",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Portfolio",
+   "testo": "Il sito deve esporre 'lavori di prova' (copy scritti per prodotti inventati) - dimostrazione pratica di competenza prima di avere clienti reali. Il portfolio e' valore anticipato."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-18",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Valore anticipato",
+   "testo": "'Valore anticipato' = dare qualcosa PRIMA di chiedere qualcosa in cambio. Applicazione: informazioni utili, copy di prova gratuito, contenuto che dimostra skill. Poi si chiede il contratto. Distinto dal 'valore aggiunto' (dato DURANTE la collaborazione, non prima)."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-19",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / 5 passi - Step 3",
+   "testo": "Step 3 dei 5 passi: cercare clienti usando la strategia del 'valore anticipato'. Idea: dai prova concreta di valore -> il cliente si fida -> ingaggia. Dettagli approfonditi nel corso 'copywriting mentorship' di Andrei."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-20",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / LinkedIn",
+   "testo": "LinkedIn come biglietto da visita obbligatorio: 'Se non ci sei e' un po' strano.' I potenziali clienti cercano il freelancer su LinkedIn prima di assumerlo - l'assenza e' un red flag."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-21",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Reputazione come copy",
+   "testo": "La reputazione online del copywriter E' parte del suo copy. Un profilo social non professionale: 'la tua credibilita' va giu', non si fida di te.' Ogni touchpoint online e' persuasione o anti-persuasione."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-22",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "Copywriting / Premessa",
+   "testo": "Premessa del video: si puo' diventare copywriter da zero esperienza. Il percorso esiste, e' strutturato in 5 passi, e non richiede prerequisiti specifici - solo metodo."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-001",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "definizione",
+   "testo": "Copywriting = scrivere per vendere. NON scrivere cose carine. NON scrivere articoli creativi. L'obiettivo principale = FAR VENDERE."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-002",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "definizione",
+   "testo": "'Redattore pubblicitario' è traduzione italiana imprecisa: esclude la componente vendita. Il copywriter DEVE saper vendere, non solo scrivere bene."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-003",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "formati",
+   "testo": "Copywriting include qualsiasi contenuto SCRITTO con obiettivo di vendere: ads FB/IG, LP, VSL (copione video), descrizioni prodotto, sales page, email."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-004",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "formati",
+   "testo": "Nel caso di VSL (video di vendita), il copywriter scrive il copione — non produce il video. Il testo persuasivo è il prodotto del copywriter anche dentro un formato video."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-005",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "esempio",
+   "testo": "Esempio Chiara Ferragni: vendi le sue bottiglie d'acqua a €80 → campagna marketing FB/IG/LinkedIn → testo di quella campagna = copy → chi lo scrive = copywriter."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-006",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "pricing",
+   "testo": "Il copywriter genera valore misurabile: con un'ad 'decente' l'imprenditore fa +€10k-30k. L'imprenditore è contento di pagare €1k-3k per quell'ad."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-007",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "pricing",
+   "testo": "'Non è questione di quanto tempo investi per scrivere.' Tariffa copywriter NON dipende dalle ore. Dipende dal valore (conversioni) generato."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-008",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "pricing",
+   "testo": "Pricing scalabile: più il copywriter migliora le performance, più può giustificare tariffe alte. È un modello pay-on-performance de facto."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-009",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "esercitazione",
+   "testo": "Metodo pratico da zero: inventa un prodotto inesistente → fai ricerca di mercato vera (competitor, prezzi) → scrivi copy per quel prodotto. Sviluppi istinto e feel del copywriting."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-010",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "esercitazione",
+   "testo": "Andrei ha PDF con prodotti inventati per esercitarsi: creatina, abbonamento palestra, etc. Prodotti che richiedono persuasione = ideali per sviluppare l'istinto del copywriter."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-011",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "meta-regola",
+   "testo": "REGOLA: 'Tutto ciò che tu fai come copywriter è un copy.' Ogni messaggio LinkedIn, email, bio sul sito = copy. Deve rispettare le regole di persuasione."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-012",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "5-passi",
+   "testo": "Step 1 dei 5 passi = studiare le tecniche + esercitarsi costantemente. 'Non smettere mai di farlo.' Prerequisito: sviluppare l'istinto prima di cercare clienti."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-013",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "5-passi",
+   "testo": "Step 2 = costruire reputazione online professionale. 3 sotto-punti: (1) ripulire i social, (2) costruire LinkedIn, (3) fare sito web come landing page."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-014",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "reputazione",
+   "testo": "Sotto-punto 1 Step 2: Ripulire i social. Contenuti non professionali = credibilità zero. 'Gli imprenditori che mi volevano assumere andavano a vedere le mie cose online.' Andrei ha cancellato il suo Facebook."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-015",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "reputazione",
+   "testo": "Sotto-punto 2 Step 2: LinkedIn. 1-2 ore/settimana. Non spammare connessioni. Interagire genuinamente. LinkedIn = fonte diretta clienti + validazione professionale."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-016",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "reputazione",
+   "testo": "Sotto-punto 3 Step 2: Sito web come LANDING PAGE (non SEO). Obiettivo: vendere te stesso, mostrare portfolio/lavori di prova, convertire visitatore in cliente."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-017",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "valore-anticipato",
+   "testo": "Il sito deve esporre 'lavori di prova' (copy per prodotti inventati) = portfolio prima di avere clienti reali. Portfolio = valore anticipato permanente e pubblico."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-018",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "valore-anticipato",
+   "testo": "'Valore anticipato' = dare qualcosa PRIMA di chiedere qualcosa in cambio. Applicazioni: copy di prova gratuito, informazioni utili, contenuto che dimostra skill."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-019",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "5-passi",
+   "testo": "Step 3 = cercare clienti usando la strategia del 'valore anticipato'. Dai prova concreta di valore → cliente si fida → ingaggia. Dettagli nel corso 'copyright mentorship' Andrei."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-020",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "linkedin",
+   "testo": "LinkedIn = biglietto da visita obbligatorio: 'Se non ci sei è un po strano.' I potenziali clienti cercano il freelancer su LinkedIn prima di assumerlo. Assenza = red flag."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-021",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "reputazione",
+   "testo": "La reputazione online del copywriter è parte del suo copy. Un profilo social non professionale: 'la tua credibilità va giù, non si fida di te.' Ogni touchpoint online = persuasione o anti-persuasione."
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-022",
+   "run": "sTCwYnWmgcQ",
+   "tipo": "percorso",
+   "testo": "Si può diventare copywriter da ZERO esperienza. Percorso strutturato in 5 passi, non richiede prerequisiti specifici — solo metodo + costanza."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-01",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Definizione",
+   "testo": "Copywriting = scrivere testo che persuade e vende. Il copywriter NON e' il designer, NON crea grafiche. Scrive esclusivamente testo."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-02",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Definizione",
+   "testo": "'Copywriting' non va confuso con 'copyright' (protezione legale su opere) - due domini completamente diversi. Confusione comune da eliminare subito."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-03",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Formati",
+   "testo": "4 formati principali di copy: (1) email marketing, (2) ads Facebook/Instagram, (3) landing page, (4) VSL/copione video. Questi coprono l'80% del lavoro freelance."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-04",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Esempio reale email",
+   "testo": "Anatomia email copy (esempio reale mostrato a schermo: newsletter 'Parola di Librai'): corpo con contenuto di valore per il lettore + 2 CTA tematici distinti ('SCOPRI LO SPECIALE' / 'CONSIGLI DAI LIBRAI'). L'email da' prima valore, poi converte."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-05",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Esempio reale ad",
+   "testo": "Anatomia ad copy (esempio reale mostrato a schermo: Torpado MTB, brand Marchisio): hook scarcity ('e' appena arrivato un nuovo stock di bici, disponibili da oggi'), urgency ('quindi affrettati'), value prop ('eccellente rapporto qualita'-prezzo'), CTA diretto con 2 contatti (email + telefono). Struttura completa direct response in un singolo post."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-06",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Metodo",
+   "testo": "Il copy non e' intuizione o talento: 'per fare copy esistono strategie provate e tecniche'. Il copywriting e' una skill acquisibile con metodo, non un dono innato."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-07",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Struttura testo",
+   "testo": "Regola struttura #1: paragrafi max 2-5 frasi. Blocchi piu' lunghi = 'muro di testo' = il lettore abbandona. Il whitespace e' persuasivo."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-08",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Struttura testo",
+   "testo": "Regola struttura #2: una sola idea per frase. Frasi brevi = piu' leggibili = piu' persuasive. La semplicita' e' una scelta, non una limitazione."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-09",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Struttura testo",
+   "testo": "Regola struttura #3: testo schematico batte testo prosastico. Bullet point, liste numerate, titoletti (H1/H2/H3) rendono il testo scannable. Il lettore scanna prima di leggere."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-10",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Anti-pattern",
+   "testo": "Anti-pattern 'tema delle medie': la scuola insegna a scrivere paragrafi densi e continui. Quel formato funziona per i professori, NON per il lettore online. Il copywriter deve disimparare attivamente questo pattern."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-11",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Psicologia d'acquisto",
+   "testo": "Legge fondamentale: nessuno acquista per acquistare. Ogni acquisto risolve DOLORE (pain) o genera PIACERE (pleasure). Nessuna terza categoria."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-12",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Psicologia d'acquisto",
+   "testo": "Esempi pain purchases: medicinali, occhiali, assicurazione/investimenti. Esempi pleasure purchases: gelato, Gucci, film, vacanza, orologio, casa, piscina. La categoria del prodotto determina la leva copy corretta."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-13",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Psicologia d'acquisto",
+   "testo": "Regola operativa: il copywriter identifica la categoria del prodotto (pain/pleasure) e sceglie di conseguenza la leva. Prodotto risolve pain -> amplifica pain. Prodotto da' pleasure -> amplifica pleasure. Leva sbagliata = conversione bassa anche con copy tecnicamente buono."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-14",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Struttura copy 3 step",
+   "testo": "Copy structure Step 1 = ATTENZIONE. Il hook cattura il lettore prima che abbandoni. Senza attenzione, il resto del copy non viene letto - e' il gate obbligatorio."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-15",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Struttura copy 3 step",
+   "testo": "Copy structure Step 2 = PROBLEMA. Il copywriter spiega il problema del prospect MEGLIO di quanto lo sappia spiegare il prospect stesso. Questo crea riconoscimento immediato ('questo parla di me') e credibilita' istantanea."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-16",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Struttura copy 3 step",
+   "testo": "Copy structure Step 3 = CTA. Dopo aver catturato attenzione e amplificato il problema, la CTA converte. L'ordine e' obbligatorio: invertirlo abbassa drasticamente la conversione."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-17",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Pain amplification",
+   "testo": "Pain Amplification = 'premere sulla ferita'. Non basta menzionare il dolore: il copy deve farlo sentire urgente, presente, non tollerabile. L'amplificazione trasforma consapevolezza in motivazione ad agire."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-18",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Urgency",
+   "testo": "Urgency = antidoto alla procrastinazione umana. 'Gli esseri umani rimandano' - il default umano e' 'lo faccio dopo'. Il copy deve creare un motivo razionale o emotivo per agire ADESSO, non domani."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-19",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Meta-esempio",
+   "testo": "Meta-esempio live: Andrei conclude il video con CTA per il suo corso di copywriting (249e, poi 690e dal 15 settembre). Sta USANDO urgency reale mentre insegna urgency - il video stesso e' copy, dimostrazione pratica del principio pain amplification + urgency = conversione."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-20",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Business model",
+   "testo": "Il copywriting e' una carriera freelance monetizzabile: Andrei vende un corso da 249-690 euro. La skill e' insegnabile, vendibile come servizio, scalabile. Il video funziona come funnel per il corso."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-21",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Metodo di ricerca",
+   "testo": "'Capire il problema meglio del cliente stesso' richiede ricerca profonda sul prospect. Non e' intuizione: e' lavoro di analisi della voice of customer prima di scrivere una parola."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-22",
+   "run": "t67-j2LiXgQ",
+   "tipo": "Copywriting / Percorso carriera",
+   "testo": "Percorso entry-level copywriter: (1) studia tecniche provate, (2) scegli 1-2 formati su cui specializzarti, (3) applica, (4) offri come servizio freelance. Andrei posiziona il corso come shortcut validato di questo percorso."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-001",
+   "run": "t67-j2LiXgQ",
+   "tipo": "definizione",
+   "testo": "Copywriting = scrivere testo persuasivo che vende. Il copywriter NON è il designer, NON crea grafiche."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-002",
+   "run": "t67-j2LiXgQ",
+   "tipo": "definizione",
+   "testo": "Copywriting ≠ copyright (protezione legale). Confusione comune da eliminare. Due domini completamente diversi."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-003",
+   "run": "t67-j2LiXgQ",
+   "tipo": "formati",
+   "testo": "4 formati principali copy: (1) email marketing, (2) FB/IG ads, (3) landing page, (4) VSL/copione. Coprono 80% lavoro freelance."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-004",
+   "run": "t67-j2LiXgQ",
+   "tipo": "email-copy",
+   "testo": "Anatomia email copy (esempio reale Parola di Librai): corpo con valore per il lettore + 2 CTA tematici ('SCOPRI LO SPECIALE' / 'CONSIGLI DAI LIBRAI'). Email dà valore prima, poi converte."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-005",
+   "run": "t67-j2LiXgQ",
+   "tipo": "ad-copy",
+   "testo": "Anatomia ad copy (esempio reale Torpado MTB/Marchisio): hook scarcity + brand social proof + urgency ('affrettati') + value prop (QUALITÀ-PREZZO) + CTA diretto email+telefono. Struttura direct response completa in un post."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-006",
+   "run": "t67-j2LiXgQ",
+   "tipo": "meta-skill",
+   "testo": "Copy non è intuizione: 'per fare copy esistono strategie provate e tecniche'. Skill acquisibile con metodo, non dono innato."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-007",
+   "run": "t67-j2LiXgQ",
+   "tipo": "struttura-testo",
+   "testo": "Struttura testo #1: paragrafi max 2-5 frasi. Blocchi più lunghi = muro di testo = lettore abbandona. Whitespace è persuasivo."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-008",
+   "run": "t67-j2LiXgQ",
+   "tipo": "struttura-testo",
+   "testo": "Struttura testo #2: una sola idea per frase. Frasi brevi = più leggibili = più persuasive. Semplicità è scelta, non limitazione."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-009",
+   "run": "t67-j2LiXgQ",
+   "tipo": "struttura-testo",
+   "testo": "Struttura testo #3: testo schematico > testo prosastico. Bullet point, liste, titoletti = testo scannable. Il lettore scanna prima di leggere."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-010",
+   "run": "t67-j2LiXgQ",
+   "tipo": "struttura-testo",
+   "testo": "Anti-pattern 'tema delle medie': scuola insegna paragrafi densi e continui. Quel formato funziona per professori, NON per lettura online. Il copywriter deve disimpararlo."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-011",
+   "run": "t67-j2LiXgQ",
+   "tipo": "psicologia-acquisto",
+   "testo": "Legge fondamentale: ogni acquisto risolve DOLORE (pain) o genera PIACERE (pleasure). Nessuna terza categoria."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-012",
+   "run": "t67-j2LiXgQ",
+   "tipo": "psicologia-acquisto",
+   "testo": "Pain purchases: medicinali, occhiali, assicurazione. Pleasure purchases: gelato, Gucci, film, vacanza. La categoria determina la leva copy."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-013",
+   "run": "t67-j2LiXgQ",
+   "tipo": "psicologia-acquisto",
+   "testo": "Regola operativa: prodotto risolve pain → amplifica pain. Prodotto dà pleasure → amplifica pleasure. Leva sbagliata = conversione bassa anche con copy tecnicamente eccellente."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-014",
+   "run": "t67-j2LiXgQ",
+   "tipo": "struttura-copy",
+   "testo": "Copy structure Step 1 = ATTENZIONE. Hook cattura il lettore prima che abbandoni. Senza attenzione il resto del copy non viene letto. Gate obbligatorio."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-015",
+   "run": "t67-j2LiXgQ",
+   "tipo": "struttura-copy",
+   "testo": "Copy structure Step 2 = PROBLEMA. Spiega il problema MEGLIO di quanto lo sappia fare il prospect stesso. Questo crea riconoscimento ('parla di me') e credibilità istantanea."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-016",
+   "run": "t67-j2LiXgQ",
+   "tipo": "struttura-copy",
+   "testo": "Copy structure Step 3 = CTA. Dopo attenzione + problema amplificato, la CTA converte. Ordine obbligatorio: invertirlo abbassa drasticamente la conversione."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-017",
+   "run": "t67-j2LiXgQ",
+   "tipo": "pain-amplification",
+   "testo": "Pain Amplification = 'premere sulla ferita'. Non menzionare il dolore: farlo sentire urgente, presente, intollerabile. Trasforma consapevolezza in motivazione."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-018",
+   "run": "t67-j2LiXgQ",
+   "tipo": "urgency",
+   "testo": "Urgency = antidoto alla procrastinazione. 'Gli esseri umani rimandano' — default umano è 'lo faccio dopo'. Il copy deve creare motivo razionale o emotivo per agire ADESSO."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-019",
+   "run": "t67-j2LiXgQ",
+   "tipo": "meta-esempio",
+   "testo": "Meta-esempio live: Andrei conclude con CTA corso (€249 ora, €690 dal 15 settembre). Usa urgency reale mentre insegna urgency. Il video stesso è copy — dimostrazione pratica del principio."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-020",
+   "run": "t67-j2LiXgQ",
+   "tipo": "carriera",
+   "testo": "Copywriting come carriera freelance monetizzabile: skill insegnabile, vendibile come servizio, scalabile. Andrei vende corso €249-690 — questo video è il funnel."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-021",
+   "run": "t67-j2LiXgQ",
+   "tipo": "ricerca",
+   "testo": "'Capire il problema meglio del cliente stesso' richiede ricerca profonda sulla voice of customer. Non è intuizione: è lavoro analitico PRE-scrittura."
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-022",
+   "run": "t67-j2LiXgQ",
+   "tipo": "percorso",
+   "testo": "Percorso entry-level copywriter: (1) studia tecniche provate, (2) scegli 1-2 formati, (3) applica, (4) offri come servizio freelance. Corso Andrei = shortcut validato."
+  }
+ ]
+}

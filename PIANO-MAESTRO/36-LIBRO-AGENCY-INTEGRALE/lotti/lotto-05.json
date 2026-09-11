@@ -1,0 +1,1206 @@
+{
+ "lotto": 5,
+ "totale": 200,
+ "atomi": [
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-001",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "L'autore apre il corso presentandosi: gestisce una community dove insegna agli imprenditori e ai freelancer a costruire e vendere agenti AI ad altri, e attualmente gestisce una propria agenzia AI con clienti che vanno da aziende da 10.000€/mese fino a 50 milioni/anno di fatturato. Questa esperienza pratica (non solo teorica) è la cornice di credibilità dentro cui si colloca tutto il corso."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-002",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Il corso è pensato per essere accessibile a chiunque: non serve background tecnico né conoscenza pregressa delle piattaforme usate, perché tutti i partecipanti partiranno dallo stesso livello di conoscenza di base."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-003",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "struttura",
+   "testo": "Indice completo del corso, mostrato per intero su lavagna Excalidraw (16 punti, trascrizione integrale lettera per lettera): \"1. Cos'è un agente AI | 2. Costruzione di un agente AI semplice su n8n | 3. Come svolgono tasks gli agenti AI | 4. Dettagli di task su Antigravity | 5. Il loop di ragionamento Agentico (OTDE) | 6. OTDE in Claude Code | 7. Importanza del prompt negli Agenti AI e quando usare Gemini.MD, Claude.MD, Agents.MD | 8. back prompt engineering: - step-back prompting - reverse prompting | 9. prompt-contracts | 10. pre-morten prompting | 11. self-improving prompts e ne capiremo il ciclo iternativo | 12. i 4 livelli di Specificità di prompt (e la loro influenza) | 13. Agent polling | 14. Agent debates | 15. Browser swarm | 16. Full workflow Audit your workflow\". Sullo schermo restano due refusi non corretti: \"pre-morten\" invece di \"premortem\" e \"iternativo\" invece di \"iterativ"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-004",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "struttura",
+   "testo": "Fine dell'overview e inizio del capitolo 2 del corso (\"Cos'è un agente AI\", architettura e componenti): l'istante coincide con l'inizio del capitolo dichiarato in ingest.json (start 222s = 3:42). Da qui l'autore smette di ripercorrere l'indice e comincia a costruire lo schema canonico di cosa sia un agente AI."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-005",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Schema canonico di \"Cos'è un Agente AI\", costruito per intero su Excalidraw: in alto un box \"Istruzioni\" (\"Un template di prompt\") con una freccia verticale che scende fino al box centrale viola \"Agente AI\". A sinistra un omino stilizzato etichettato \"Utente\", collegato all'Agente AI da due frecce orizzontali: \"Richiesta\" (utente -> agente) e \"Risposta\" (agente -> utente). A destra dell'Agente AI, una freccia doppia (<->) verso un box \"Strumenti\" che elenca quattro esempi con icona: Google (lente), WolframAlpha (stella), Python (logo), API Meteo (nuvola). Sotto l'Agente AI, due frecce scendono verso due box affiancati: \"LLM (ragionamento)\" e \"Memoria\". Questo schema a sei componenti (Istruzioni, Utente, Agente AI, Strumenti, LLM, Memoria) resta la lavagna di riferimento a cui l'autore torna ripetutamente per tutto il capitolo."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-006",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Le tre modalità con cui un Utente può interagire con un Agente AI, aggiunte come annotazione allo schema base e raggruppate da una parentesi graffa: CHAT, VOCALI (es. il microfono del telefono), FORM."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-007",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Il template di prompt dentro il box \"Istruzioni\" viene marcato con un cerchio arancione etichettato \"IP\": l'autore chiarisce che il prompt/le istruzioni saranno, a livello effettivo, l'unica vera proprietà intellettuale del progetto — l'unica skill che non cambierà anche quando gli agenti e le piattaforme sottostanti evolveranno."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-008",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Metafora dei due coni per spiegare cosa significa che un agente è \"direzionato\" dal proprio prompt verso un obiettivo (rappresentato da una bandierina): un prompt ben direzionato produce una traiettoria stretta (cono blu) che punta dritta all'obiettivo e lo colpisce; un prompt mal direzionato produce una traiettoria larga (cono rosso) che diverge, manca l'obiettivo e può continuare a iterare all'infinito senza mai centrarlo (visualizzato con una linea a zig-zag rossa che rimbalza dentro il cono senza mai raggiungere la bandiera)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-009",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Le due variabili con cui si misura se un prompt/agente è efficace, cioè se sta davvero aiutando il business o no: (1) l'investimento in dollari che rientra dall'utilizzo dell'agente (o il fatturato aumentato grazie ad esso); (2) i token consumati, che rappresentano il costo diretto e vanno minimizzati. Sulla lavagna vengono annotate come \"$, token\" seguito da \"costo ↓↓\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-010",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Il box \"LLM (ragionamento)\" dello schema viene sottolineato ed esplicitato: ogni agente viene collegato a un modello linguistico specifico — GPT, Claude, Gemini \"o chi per esso\", a seconda del caso — che gli fornisce la capacità di ragionamento. (Nota: la trascrizione automatica del parlato rende i nomi dei modelli in modo distorto, come \"CVT\" per GPT e \"Clod\" per Claude; il senso resta comunque chiaro dal contesto.)"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-011",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Oltre agli strumenti esterni (Google, WolframAlpha, Python, API Meteo), un agente AI ha a disposizione anche tool nativi forniti direttamente dall'infrastruttura del provider (Anthropic, OpenAI, ecc.) — l'autore cita esplicitamente \"Read\" e \"Bash\" come esempio di questi strumenti nativi (lo stesso tipo di tool che si trovano in Claude Code), annotati sulla lavagna sotto la scritta \"Tool\" aggiunta accanto al box Strumenti."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-012",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Ogni chiamata a un servizio esterno via API (sia per il ragionamento LLM, sia per l'uso di un tool) ha un costo economico: più un servizio terzo viene chiamato, più aumenta la spesa in token/denaro. Sulla lavagna questo viene annotato con \"API\" seguito dal simbolo \"$\" accanto al box Strumenti."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-013",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "struttura",
+   "testo": "Completamento finale dello schema \"Cos'è un Agente AI\": viene aggiunta una seconda freccia arancione curva che parte dal box \"Memoria\" e sale dentro l'\"Agente AI\" (simmetrica a quella già presente da \"LLM\"), a rappresentare che l'agente deve avere una memoria collegata per potersi ricordare le cose e svolgere determinati compiti. Lo schema risulta così completo con entrambe le frecce (LLM e Memoria) entranti nell'agente."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-014",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "struttura",
+   "testo": "Passaggio dalla teoria (Excalidraw) alla pratica: apertura della piattaforma n8n cloud (account \"giovannib\", coerente con l'autore Giovanni Beggiato) su un workflow vuoto, per replicare dal vivo lo schema \"Cos'è un Agente AI\" appena disegnato. L'autore precisa che non è un corso su n8n in sé: lo strumento serve solo a mostrare il parallelismo pratico con la teoria. (La trascrizione automatica del parlato rende \"n8n\" come \"NA10\"/\"NA dieci\".)"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-015",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Primo passo pratico per costruire l'agente in n8n: cercare il nodo \"AI Agent\" nel pannello di ricerca dei trigger/nodi e importarlo nel workflow — corrisponde al box centrale \"Agente AI\" dello schema teorico."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-016",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Secondo passo: collegare il connettore \"Chat Model*\" (obbligatorio) del nodo AI Agent — corrisponde al box \"LLM\" dello schema. Viene scelto \"OpenAI Chat Model\" tra l'elenco dei Language Model disponibili (Google Vertex, Groq, Mistral, MiniMax, Moonshot Kimi, Ollama, OpenRouter, Vercel AI Gateway, xAI Grok, OpenAI...). Nel pannello di configurazione, la credenziale usata non è una API key OpenAI propria ma \"n8n Connect\" (crediti gratuiti forniti da n8n, badge \"$3.98 remaining\" visibile in quel momento)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-017",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Terzo passo: collegare il connettore \"Memory\" del nodo AI Agent — corrisponde al box \"Memoria\" dello schema. Viene aggiunto il nodo \"Simple Memory\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-018",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Cercando un nodo da collegare al connettore \"Tool\" in n8n, il pannello di ricerca mostra tra i risultati una sezione in evidenza \"Human in the Loop\" con tre nodi che richiedono approvazione umana per l'esecuzione: \"Send Email\", \"Microsoft Teams\", \"WhatsApp Business Cloud\" (tutti con sottotitolo \"Request human approval for tools\"); sotto, una sezione \"Vector Stores\" elenca: Simple Vector Store, Supabase Vector Store, Postgres PGVector Store, Redis Vector Store, Milvus Vector Store, Azure AI Search Vector Store."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-019",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Quarto passo: collegare al connettore \"Tool\" del nodo AI Agent lo strumento \"Send a message in Gmail\" — corrisponde a una voce del box \"Strumenti\" dello schema (l'autore lo introduce parlando di \"Google\"/Gmail). Nel pannello di configurazione, il campo \"Tool Description\" viene lasciato su \"Set Automatically\" (impostazione automatica, non scritta a mano), Resource=\"Message\", Operation=\"Send\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-020",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Nel nodo AI Agent, il campo \"Prompt (User Message)\" viene lasciato con \"Source for Prompt (User Message)\" = \"Connected Chat Trigger Node\" e valore espressione {{ $json.chatInput }}: per task semplici come questa demo, il prompt non viene scritto a mano ma estratto automaticamente dalla richiesta digitata dall'utente in chat. L'autore collega questo comportamento al box \"Richiesta\" dello schema teorico."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-021",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Prima esecuzione reale dell'agente appena costruito: l'utente scrive in chat \"Hey, per favore, manda un'email a Giovanni salutandolo. Capisci tu in maniera automatica oggetto e testo della mail per raggiungere il mio [obiettivo]\", senza specificare oggetto o testo. L'agente genera autonomamente Subject=\"Un saluto\" e Message=\"Ciao Giovanni,\\n\\nSpero tu stia bene! Volevo solo prendermi un momento per salutarti.\\n\\nUn caro saluto,\\n\\n[Il Tuo Nome]\", invia realmente la mail (confermata anche sul telefono del relatore) e risponde in chat: \"L'email è stata inviata a Giovanni con un saluto. Se hai bisogno di ulteriori modifiche o di inviare un'altra email, fammi sapere.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-022",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Dettaglio dell'albero di esecuzione (Logs) della prima run: il nodo AI Agent chiama in sequenza Simple Memory -> OpenAI Chat Model -> Send a message in Gmail -> Simple Memory -> OpenAI Chat Model — cioè il modello e la memoria vengono richiamati due volte, prima e dopo la chiamata al tool Gmail. Esecuzione completa: \"Success in 10.263s\"; il nodo AI Agent da solo: \"Success in 2.689s · ~348 Tokens\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-023",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Alla prima interrogazione della memoria in questa esecuzione, l'output mostra \"chatHistory\": [] (array vuoto, \"[empty array]\"): la memoria era vuota, quindi l'agente non trova nulla di pregresso e deve elaborare la richiesta rivolgendosi da zero al modello OpenAI."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-024",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Seconda interazione in chat, per testare la memoria conversazionale: l'utente chiede \"Hey, sapresti dirmi qual è l'ultima richiesta che ti ho fatto in questa chat?\" e l'agente risponde correttamente \"L'ultima richiesta che mi hai fatto è stata di inviare un'email a Giovanni per salutarlo. Se hai bisogno di ulteriori informazioni o aiuto, fammi sapere!\" — dimostrando che ricorda lo scambio precedente. Esecuzione: \"Success in 2.279s · ~384 Tokens\"; questa volta l'albero dei log chiama solo Simple Memory -> OpenAI Chat Model -> Simple Memory, senza mai richiamare il tool Gmail."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-025",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Formato con cui \"Simple Memory\" salva la cronologia della conversazione (visibile nell'output della seconda esecuzione): turni alternati \"Human:\"/\"AI:\", incluso il momento in cui l'AI ha invocato il tool Gmail — registrato letteralmente come 'Calling Send_a_message_in_Gmail with input: {\"Subject\":\"Un saluto\",\"Message\":\"...\",\"id\":\"call_...\"}' seguito dal risultato grezzo del tool (id, threadId, labelIds) e infine dalla risposta in linguaggio naturale dell'AI all'utente."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-026",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "L'agente decide autonomamente, in base al proprio ragionamento sull'obiettivo, se invocare o no un tool: nella seconda esecuzione (una domanda sulla memoria, non sull'invio di email) il tool Gmail non viene mai chiamato, e il workflow ha comunque successo. L'autore lo sottolinea esplicitamente come dimostrazione della \"potenza\" dell'agente: l'uso di uno strumento non è automatico ma condizionato."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-027",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Il nodo \"Simple Memory\" espone un parametro \"Context Window Length\" impostato su 5, definito a schermo come \"how many past interactions the model receives as context\": in pratica la memoria conserva al massimo le ultime 5 interazioni/conversazioni."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-028",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "n8n avvisa esplicitamente, nel pannello del nodo Simple Memory, che questo tipo di memoria è limitato: \"This node stores memory locally in the n8n instance. It is not compatible with Queue Mode or Multi-Main setups, as memory will not be shared across workers. For production use cases such as scaling, consider using an external memory store such as Redis, Postgres, or another persistent memory node.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-029",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "Quando in un'esecuzione l'agente non usa alcun tool, n8n mostra un warning esplicito sul nodo AI Agent (icona triangolo arancione): \"None of your tools were used in this run. Try giving your tools clearer names and descriptions to help the AI\" — un suggerimento pratico: dare ai tool nomi e descrizioni più chiare aiuta l'AI a capire quando usarli."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-030",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Per scrivere un prompt complesso a mano invece di lasciarlo estratto automaticamente dalla chat, si cambia il campo \"Source for Prompt (User Message)\" da \"Connected Chat Trigger Node\" a \"Define below\", il che apre un editor \"Expression\" con l'avviso \"Anything inside {{ }} is JavaScript\": tutto ciò che sta dentro le doppie graffe viene valutato come JavaScript."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-031",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "struttura",
+   "testo": "Nuova lavagna Excalidraw, titolo \"Come svolgono tasks gli agenti AI\". A sinistra un riquadro \"Stato dell'Agente\" contiene il box \"Finestra di contesto\" con cinque voci elencate (tutte poi confermate con spunta arancione): Obiettivo, Strumenti, Conversazione di esempio, Istruzioni di contesto, Storico conversazione. A destra, un flowchart verticale ad anello: \"Assemblare la finestra di contesto iniziale\" -> \"Invocare LLM\" (annotato \"API ⟹ $\", con chiamata esterna verso un box \"LLM\") -> rombo \"Obiettivo raggiunto?\" con due uscite: \"sì\" -> esci dal loop, restituisci risultato; \"no\" -> \"Preparare l'esecuzione dello strumento\" -> \"Invocare Strumento\" (annotato \"API, $\", chiamata esterna verso un box \"Tool API\") -> \"Aggiornare la finestra di contesto\", che rientra con una linea tratteggiata etichettata \"turno successivo\" di nuovo su \"Invocare LLM\", chiudendo il loop."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-032",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "I cinque elementi che compongono la \"finestra di contesto\" assemblata da un agente come primo passo del loop, con la spiegazione data a voce mentre vengono spuntati uno a uno: (1) Obiettivo — che cosa sta chiedendo l'utente; (2) Strumenti; (3) Conversazione di esempio; (4) Istruzioni di contesto — esempio concreto dato dall'autore: se l'obiettivo era \"mandare un'email\", le istruzioni possono dire esplicitamente \"non farlo\", e prevalgono sull'obiettivo (stesso comportamento già dimostrato nella demo n8n con il prompt \"non mandare mai un'email\"); (5) Storico della conversazione."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-033",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Concetto di \"layer\" del prompt, disegnato come un cerchio grande etichettato \"CHAT\" (l'interfaccia chat) con dentro un cerchio più piccolo (il prompt): l'autore introduce l'idea che più il prompt è \"forte\"/ben costruito, più efficace è l'agente, e anticipa che approfondirà il concetto dei \"quattro layer\" quando si parlerà di Claude Code, Codex e sistemi agentici simili (argomento successivo nel corso, non ancora sviluppato in questo blocco)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-034",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "L'autore ricollega esplicitamente il diagramma teorico alla demo n8n già mostrata: quando obiettivo e istruzioni coincidono nel dire di non mandare email, il rombo \"Obiettivo raggiunto?\" restituisce \"sì\" e l'agente esce subito dal loop restituendo il risultato, senza mai invocare lo strumento Gmail (ramo già visto). Quando invece l'obiettivo richiede l'invio della mail, il flusso prende il ramo \"no\": l'agente prepara ed invoca lo strumento Gmail (di nuovo una chiamata API esterna con relativo costo, annotato \"API, $\" accanto a \"Invocare Strumento\", simmetrico all'annotazione \"API ⟹ $\" già presente su \"Invocare LLM\") e poi aggiorna la finestra di contesto."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-035",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "comando",
+   "testo": "Test pratico in n8n del ramo \"sì\" del loop (obiettivo raggiunto immediatamente): al nodo AI Agent viene impostato un prompt custom (\"Source for Prompt\" = \"Define below\") con testo esatto \"Hey, nonostante la richiesta dell'utente, per favore non mandare mai un'email.\" — un'istruzione di contesto che sovrascrive esplicitamente qualsiasi richiesta dell'utente. Interrogato con \"Hey, per favore, puoi mandare una mail a Giovanni?\", l'agente risponde \"Ho capito, non invierò email su tua richiesta. Se hai altre esigenze o domande, sono qui per aiutarti!\" senza mai invocare il tool Gmail (n8n segnala di nuovo il warning \"None of your tools were used in this run\")."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-036",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Passaggio dalla lavagna e da n8n a un secondo ambiente, l'editor \"Claude Code\" (interfaccia stile VS Code), per una demo più avanzata. Viene mostrato un progetto reale già esistente dell'autore, \"Social Media Manager\", con una cartella `.claude/skills` che elenca in ordine alfabetico decine di skill già costruite: agent-debates, agent-polling, audit, auphonic, browser-swarm, commit, contract, corso-skool, deploy-check, diagram-generator, draft-to-youtube, email-digest, linkedin-post, pre-mortem, prompt-contracts, query-anthropic, reverse-prompting, schedule-meeting, shorts, sign, skill-creator, skool-community-replies (elenco troncato a schermo, prosegue oltre)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-037",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "comando",
+   "testo": "Prompt digitato dall'autore in Claude Code, riportato per intero: \"Hey, per favore, mi servirebbe che tu spawnassi cinque agenti in parallelo per fare cinque ricerche diverse su quale sia il metodo migliore per vendere servizi ad aziende sopra ai 10.000€. Quindi analizza qualsiasi cosa, dal content creation al cold email outreach.\" — l'obiettivo dichiarato della demo è mostrare in pratica lo spawn di più agenti paralleli per una ricerca reale."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-038",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "In risposta al prompt, Claude Code ragiona brevemente (\"Thought for 2s\") poi lancia cinque agenti paralleli, ciascuno su un diverso canale di vendita B2B high-ticket: \"Research: Content marketing B2B high-ticket\", \"Research: Cold email outreach B2B high-ticket\", \"Research: LinkedIn social selling B2B\", \"Research: Referrals and partnerships B2B\", oltre a un quinto filone; in parallelo vengono eseguiti anche comandi Bash diretti (es. `curl` su Google Search) e tool di Web Search per raccogliere dati grezzi da fonti esterne."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-039",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Mentre gli agenti/tool lavorano, l'interfaccia permette di aprire un pannello secondario e ispezionare live il contenuto grezzo che un singolo tool sta processando (es. il pannello \"WebSearch tool output\" con il testo integrale dei risultati su compliance GDPR per il cold email B2B) — una funzionalità di trasparenza/debug sul lavoro interno degli agenti."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-040",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sintesi del canale \"1. Content Marketing & Thought Leadership\" prodotta dai 5 agenti: \"Priorità: LinkedIn >> YouTube per revenue immediata.\" — con 50K follower LinkedIn è un asset sottoutilizzato; i contenuti che convertono a high-ticket sono case study con numeri e post di metodologia, non tutorial. Regola chiave data dal report: \"insegna il COSA e il PERCHÉ pubblicamente, vendi il COME e il DONE-FOR-YOU. A €10K+ i clienti pagano velocità e certezza, non informazione.\" Timeline: 3-6 mesi di posting costante (3-5x/settimana su LinkedIn) prima che la pipeline si riempia."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-041",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sintesi del canale \"2. Cold Email Outreach\" prodotta dai 5 agenti, con numeri concreti: reply rate medio 3-5%, 1-2 meeting ogni 100 email (per 10 meeting/mese servono 500-1000 email mirate). Infrastruttura obbligatoria: 3-5 domini secondari, SPF/DKIM/DMARC, warm-up di 3-4 settimane, max 30-40 email/giorno per mailbox; tool citati: Smartlead ($39/mo), Apollo ($49/mo), Clay ($134/mo) per personalizzazione AI. Sequenza consigliata: 4 touch in 14 giorni, con il tocco finale \"Should I close the file?\" che da solo genera il 30% delle risposte totali. Nota di compliance: GDPR ok per B2B con legitimate interest documentato."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-042",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "L'autore nota a voce, ridendo, che il risultato appena ottenuto (priorità a content marketing e cold email) è logicamente sospetto: annota sulla lavagna/schermo \"M&A ⇒ outbound\", osservando che nessuno si aspetta che un deal da 5 milioni di euro (o i grandi capitali di operatori come \"Alex Ormosi\", probabile refuso della trascrizione per Alex Hormozi) avvenga tramite content creation. Anticipa che la ricerca è \"biased\", introducendo così il tema centrale del capitolo (il bias nascosto nei risultati di un agente AI)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-043",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sintesi del canale \"4. Referral & Partnership\": partner ideali per l'automazione AI sono commercialisti (vedono i P&L dei clienti), business coach, web agency, vendor SaaS (es. programma partner Make.com, HubSpot). Fee structure: 10-15% sul primo contratto; approccio consigliato: mandare un case study e proporre un pilot (\"mandami un cliente, se chiudo e consegno, formalizziamo\"). Target realistico: 10-15 partner attivi che generano il 40-60% della pipeline entro 12 mesi."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-044",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sintesi del canale \"5. Webinar / Workshop\": formato ideale = workshop live da 90 minuti con demo reale di automazione AI. Benchmark citato: 200 iscritti -> 90 presenti -> 12 prenotano una call -> 5 chiudono = €50K da un singolo webinar, riempibile organicamente con LinkedIn + YouTube senza ads. Struttura consigliata: 60 minuti di framework + demo live, poi 15 minuti di risultati before/after, poi 15 minuti di pitch (application-only, posti limitati)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-045",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "\"La mia raccomandazione\" finale del primo prompt (quello che NON specifica di partire da zero): \"Il ROI più alto nel breve termine è LinkedIn social selling (hai già 50K follower, non servono investimenti) combinato con workshop mensile come meccanismo di conversione. Cold email e referral sono buoni canali paralleli da costruire nel tempo, ma LinkedIn è la leva più immediata.\" L'agente chiude chiedendo: \"Vuoi che approfondiamo uno di questi canali o che creiamo un piano d'azione concreto?\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-046",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "comando",
+   "testo": "Tecnica dimostrata per neutralizzare il bias di un agente: aggiungere allo stesso prompt originale un vincolo esplicito che rimuove il contesto specifico dell'utente, testo esatto aggiunto: \"Fai una ricerca unbiased come se io partissi da zero e non avessi media presence.\" L'autore la definisce \"una ricerca unbiased\" e la confronta direttamente con il risultato precedente per mostrare quanto cambi."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-047",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Risultato della ricerca \"unbiased\": sezione \"5. Paid Ads\" — costo iniziale €3-5K/mese minimo per 3 mesi di test (€9-15K totali), timeline alla profittabilità 3-6 mesi, CPA €1.500-5.000; pro: scalabile, volume controllabile; contro: \"il peggiore canale partendo da zero\" (senza social proof/testimonial le conversioni sono 2-5x peggiori) — \"Consensus unanime: è un tool di scaling, non di partenza.\" \"Verdetto complessivo\": partendo da zero senza media presence, la combinazione più efficace secondo le 5 ricerche è: (1) Cold email + LinkedIn outreach come motore primario nei primi 2-4 mesi — costo bassissimo, volume controllabile, porta i primi 2-3 clienti; (2) Referral come canale parallelo da costruire dal giorno 1 — lento ma con il conversion rate più alto in assoluto (50-70%); (3) Eventi locali come acceleratore di trust se il mercato è geograficamente concentrato; (4) Paid ads solo dopo a"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-048",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Gli LLM tendono ad essere \"pigri\" e a farsi condizionare (bias) da elementi interni al proprio contesto/conversazione, se non vengono esplicitamente istruiti a ignorarli: è il principio generale che spiega perché il primo prompt (senza il vincolo \"da zero\") abbia prodotto una raccomandazione diversa e più comoda, ancorata a ciò che l'utente aveva già (i 50K follower LinkedIn), invece di una valutazione oggettiva."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-049",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Dimostrazione concreta del bias da auto-riferimento (\"self-reference bias\"): cercando su Google \"giovanni beggiato\", tutti i primi risultati parlano solo dell'autore stesso — YouTube (10,4K+ follower, video come \"Claude Changed SEO Forever\" e \"The 5 Skills That Took My AI Agency From $0 to $10K/Month\"), LinkedIn (10,3K+ follower, \"CEO at GentesAI... Won the CEO Award 2024... $30M in combined cost savings\"), Skool, un AMA su Reddit r/LLMeng, il gruppo Skool \"Avanguardia\". L'autore commenta: \"non c'è nessuno sulla prima pagina di Google\" a parte lui — un LLM che avesse questi risultati nel proprio contesto sarebbe inevitabilmente influenzato dalla fama pre-esistente dell'utente."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-050",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "struttura",
+   "testo": "Nuova lavagna Excalidraw, titolo \"Il Loop di Ragionamento Agentico\". Schema simmetrico a cinque zone attorno a un cerchio centrale: a sinistra due box viola, \"Memoria Semantica\" (sopra) e \"Memoria Episodica\" (sotto), collegati con freccia \"Recupera\" al box centrale azzurro \"LLM\"; a sinistra dell'LLM due frecce orizzontali \"Input utente ->\" (entrante) e \"<- Risposta agente\" (uscente). A destra, speculari, due box verdi \"Memoria Procedurale\" (sopra) e \"Memoria di Lavoro\" (sotto), collegati con frecce \"Recupera\"/\"Interroga\"/\"Risolvi\"/\"Ancora\" al box verde scuro \"Strumenti\". Al centro, un grande cerchio blu con quattro tappe disposte in croce e collegate da frecce curve in senso orario: \"Pianifica\" -> \"Esegui\" -> \"Valuta\" -> \"Feedback\" -> di nuovo \"Pianifica\"; una freccia diagonale \"Osserva\" entra nel cerchio dal basso a destra, collegandosi da \"Strumenti\"/Memoria di Lavoro verso \"Valuta\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-051",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Memoria Semantica, definita testualmente sullo schema come \"Conoscenza dell'utente e dell'ambiente per comprendere meglio l'input\". L'autore la collega direttamente all'esempio appena mostrato con un'annotazione scritta a mano \"LinkedIn bias\": è proprio in questa memoria che si introducono i bias legati a ciò che l'AI già sa dell'utente. Cita il caso concreto: è sbagliato dire indistintamente a una persona che \"deve fare outbound perché è l'unico modello che si scala sopra i 10.000€ al mese\" senza considerare che quella persona potrebbe già avere un asset (es. un grande seguito LinkedIn) che cambierebbe la strategia migliore."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-052",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Memoria Episodica, definita testualmente sullo schema come \"Raccolta di interazioni e processi di pensiero\": l'autore la descrive come la memoria di cui \"non molti parlano perché non molti la conoscono\", cioè la raccolta delle interazioni già avvenute tra AI e utente e dei processi di pensiero intermedi — se qualcosa è già successo in una conversazione, l'AI deve in qualche modo ricordarselo."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-053",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Memoria Procedurale, definita testualmente sullo schema come \"Conoscenza di cosa si può fare... e come eseguirlo\": l'autore la collega esplicitamente al concetto di \"skill\" degli agenti (workflow già automatizzati), annotando sullo schema una scritta corsiva vicino al box (letta come probabile \"/skill\"). Rimanda per l'approfondimento a un proprio corso dedicato di 40 minuti sulle skill, disponibile sul suo canale."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-054",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Memoria di Lavoro, definita testualmente sullo schema come \"Stati interni da mantenere; Fatti risolti e verificati\": l'autore la descrive a voce come i vari stati interni da mantenere, cose da non modificare e concetti simili."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-055",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Ritornando alla ricerca sui canali di vendita B2B, l'autore chiede direttamente all'agente in Claude Code: \"Hey, ho una domanda per te. Per caso il tuo output è biased dal fatto che io ho un LinkedIn con più di 50.000 persone? Per caso, se partissi da zero, avresti un'altra raccomandazione da darmi?\". L'agente ammette esplicitamente: \"Sì, assolutamente. Il mio output è biased dal tuo asset esistente.\" e spiega il motivo: \"il content marketing ha un delay di 3-6 mesi prima di generare pipeline. Cold email ti porta meeting in 4-6 settimane dall'infrastruttura pronta. E i referral hanno il close rate più alto in assoluto (le intro calde chiudono al 30-50% vs 1-2% del cold).\" Conclusione dell'agente: \"Da zero, il canale #1 sarebbe cold email + referral, non content.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-056",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Roadmap \"da zero\" alternativa proposta dall'agente stesso, dopo aver confessato il bias, in tre fasi: (1) Settimane 1-4: infrastruttura cold email (domini, warm-up) + 2-3 case study scritti (es. Amazon, P&G); (2) Settimane 4-8: cold email attivo (500-1000 email/mese) + identificare 10 partner strategici (commercialisti, business coach); (3) Mesi 3+: i primi clienti chiusi alimentano nuovi case study e referral — solo a questo punto il content marketing ha senso come acceleratore, non come canale primario."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-057",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Conclusione dell'agente sul rapporto tra content marketing e canali diretti: \"Il content è un moltiplicatore, non un punto di partenza. Senza audience, stai parlando al vuoto per mesi. Con cold email e referral stai parlando direttamente a decision-maker dal giorno uno.\" Raccomandazione finale, che integra entrambe le versioni della ricerca: dato che l'utente in questo caso NON parte da zero (ha già un LinkedIn da 50K follower), la risposta migliore è probabilmente sfruttare entrambi i canali in parallelo — LinkedIn per il breve termine, cold email + referral come secondo motore."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-058",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "Regola pratica conclusiva sul bias, ripetuta a più riprese guardando in camera (nessun materiale a schermo, solo webcam): se non si è consapevoli che un bias del genere esiste, si sta già direzionando il proprio agente nella direzione sbagliata. Bisogna quindi assicurarsi sempre, nel proprio prompt, di aver eliminato i bias — tutti quei piccoli \"pezzettini di memoria\" che possono condizionare silenziosamente l'output — soprattutto prima di usare l'agente per processi che hanno un ritorno economico reale."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-059",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "struttura",
+   "testo": "Nuova lavagna Excalidraw, titolo \"Observe - Think - Do - Evaluate (OTDE)\": un framework a quattro fasi disposte in cerchio e collegate da frecce curve in senso orario, già completo sullo schermo (non in costruzione). \"OSSERVA\" (box viola): \"Riceve input dall'ambiente: messaggi utente, output strumenti, risposte API, segnali errori.\" / \"Parsing input, aggiunta alla traiettoria, lettura dalla memoria a lungo termine.\" \"PENSA\" (box verde): \"Il LLM processa tutto il contesto: prompt, memoria, traiettoria, osservazione attuale.\" / \"Ragionamento chain-of-thought, decomposizione obiettivi, selezione piano, auto-critica.\" / \"Basato sul paradigma ReAct.\" \"RIFLESSIONE\" (box giallo): \"Auto-valutazione, feedback verbale scritto in memoria.\" Il quarto box (arancione, presumibilmente \"AGISCI\"/\"DO\" per completare l'acronimo OTDE) è quasi del tutto tagliato dal bordo inferiore dello schermo e non leggib"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-060",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Il framework \"Observe - Think - Do - Evaluate (OTDE)\" viene presentato come mappa di riferimento dell'intero ciclo agentico, prima di scendere nel dettaglio dei singoli passaggi: sei riquadri colorati collegati da frecce curve formano un ciclo completo, già interamente disegnato — OSSERVA (viola), MEMORIA (azzurro), RIFLESSIONE (giallo), PENSA (verde), AGISCI (arancione), AMBIENTE (azzurro) — più, a destra, un ottagono rosso \"Condizione di terminazione\" che determina quando il loop si ferma."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-061",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Nodo OSSERVA del framework OTDE (viola, icona cannocchiale/occhio): riceve input dall'ambiente — messaggi utente, output strumenti, risposte API, segnali errori — attraverso il parsing dell'input, l'aggiunta alla traiettoria e la lettura dalla memoria a lungo termine."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-062",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Nodo MEMORIA del framework OTDE (azzurro, icona archivio+nuvola): buffer a breve termine + archivio vettoriale a lungo termine."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-063",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Nodo RIFLESSIONE del framework OTDE (giallo, icona specchio+lente): auto-valutazione, feedback verbale scritto in memoria."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-064",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Nodo PENSA del framework OTDE (verde, icona lampadina+ingranaggio/cervello): il LLM processa tutto il contesto — prompt, memoria, traiettoria, osservazione attuale — tramite ragionamento chain-of-thought, decomposizione obiettivi, selezione piano, auto-critica; il riquadro dichiara esplicitamente di essere basato sul paradigma ReAct (l'etichetta \"ReAct\" viene sottolineata a mano dal relatore nella scena 134, a conferma)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-065",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Nodo AGISCI del framework OTDE (arancione, icona ingranaggi+chiave inglese): esegue l'azione scelta, con dispatch a tool esterni come ricerca, code interpreter, browser, API; l'output del tool torna come nuova osservazione, chiudendo il loop verso OSSERVA."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-066",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Nodo AMBIENTE del framework OTDE (azzurro, icona globo+edifici): filesystem, web, database, altri agenti."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-067",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "L'ottagono rosso \"Condizione di terminazione\" nel diagramma OTDE definisce quando il loop agentico si ferma: risposta finale, max iterazioni, soglia errore."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-068",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Topologia del loop OTDE: frecce curve collegano OSSERVA↔MEMORIA, OSSERVA→PENSA, PENSA↔RIFLESSIONE, PENSA→AGISCI, AGISCI↔AMBIENTE, AGISCI→Condizione di terminazione, e un arco lungo riporta da AGISCI su fino a OSSERVA, chiudendo il loop."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-069",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esempio pratico usato per illustrare il nodo PENSA/decomposizione del framework OTDE: si immagina un task ipotetico assegnato all'agente, \"disegna questo rettangolo\", rappresentato disegnando sulla lavagna un rettangolo blu vuoto a mano libera."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-070",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Il rettangolo dell'esempio \"disegna questo rettangolo\" viene riempito con scarabocchi colorati divisi in quattro quadranti (in alto a sinistra verde, in alto a destra rosso sovrapposto ad arancione, in basso a sinistra arancione, in basso a destra verde), a rappresentare la decomposizione del rettangolo/obiettivo in sotto-forme più semplici (sotto-obiettivi)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-071",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Sotto/a destra del rettangolo a quadranti compaiono cinque nuove forme separate (due piccoli quadrati verdi, un quadrato rosso, un rettangolo largo arancione, un rettangolo stretto e alto arancione), una freccia curva nera e un'icona di loop: insieme illustrano visivamente il \"chain of thought\", cioè i pezzi vengono ordinati e poi riassemblati in sequenza per ricostruire la forma originale."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-072",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Nella scena 134 il relatore sottolinea a mano, nel riquadro PENSA, l'ultima riga \"Basato sul paradigma ReAct\", confermando esplicitamente che il nodo PENSA del framework OTDE si fonda sul paradigma ReAct (Reason+Act) già scritto in precedenza."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-073",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Sul riquadro AGISCI del diagramma OTDE il relatore annota a mano due esempi concreti di tool/API esterni richiamabili dall'agente: \"Google API\" e, sotto, \"Meteo\", posizionati tra AGISCI e l'ottagono \"Condizione di terminazione\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-074",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Il relatore scrive a mano, con una freccia curva che parte dall'ottagono \"Condizione di terminazione\", la parola \"DONE\" (prima incompleta come \"DON\", poi completata con doppia sottolineatura), a rappresentare l'esito positivo del loop OTDE quando la condizione di terminazione viene soddisfatta."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-075",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Una volta raggiunto \"DONE\" (esito positivo, non ambiguo, senza divergenze), l'intero esito del loop OTDE viene comunque scritto sia nella MEMORIA sia nell'AMBIENTE, i due riquadri del framework preposti rispettivamente a conservare l'esperienza e ad applicarne gli effetti nel mondo esterno."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-076",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Su una nuova lavagna il relatore ridisegna il ciclo OTDE in una versione semplificata a quattro/cinque tappe, leggibile per intero: PROMPT → TASK → VERIFICA → FEEDBACK → MEMORIA → (ritorno a PROMPT). È presentato come lo schema minimo che chiunque dovrebbe saper disegnare a mano per capire il funzionamento di un agente."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-077",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Il feedback e il relativo salvataggio in memoria (l'errore che viene registrato) sono ciò che fa \"imparare\" l'agente: più un tool/agente viene utilizzato, più questo meccanismo si attiva fin dall'inizio, e il loop PROMPT→TASK→VERIFICA→FEEDBACK→MEMORIA continua a ripetersi e ad allargarsi man mano che l'agente accumula esperienza."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-078",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Demo pratica in Claude Code (progetto \"Social Media Manager\"): il relatore chiede all'agente, tramite un prompt vocale dettato (con refuso di trascrizione \"spaventassi\" per \"spawnassi\"), di lanciare cinque agenti di ricerca in parallelo su quale sia il metodo migliore per vendere servizi ad aziende sopra i 10.000€, con una ricerca \"unbiased\" come se il relatore partisse da zero senza media presence. L'agente risponde \"Lancio 5 agenti di ricerca in parallelo, ognuno con un angolo diverso.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-079",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Elenco parziale (visibile a schermo, troncato dal bordo del frame) dei cinque agenti di ricerca lanciati in parallelo, ciascuno con un angolo diverso sullo stesso obiettivo: \"Agent: Research: outbound cold email B2B\" (IN: best practices per vendere B2B >10.000€ via cold email/outbound, prospect list, copywriting framework, tools); \"Agent: Research: LinkedIn outreach B2B\" (IN: profile optimization, connection strategy, message sequences, Sales Navigator vs free, conversion rate); \"Agent: Research: referral partnerships B2B\" (riga IN tagliata dalla webcam, non leggibile oltre)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-080",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sintesi per canale dei risultati delle 5 ricerche parallele — \"1. Content Marketing & Thought Leadership\": priorità LinkedIn >> YouTube per revenue immediata; con 50K follower LinkedIn è un asset sottoutilizzato; i contenuti che convertono a high-ticket non sono tutorial ma case study con numeri e post di metodologia; regola chiave: insegna il COSA e il PERCHE' pubblicamente, vendi il COME e il DONE-FOR-YOU, perché a 10K€+ i clienti pagano velocità e certezza, non informazione; timeline 3-6 mesi di posting costante (3-5x/settimana LinkedIn) prima che la pipeline si riempia."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-081",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sintesi \"2. Cold Email Outreach\" dai risultati delle 5 ricerche parallele: numeri realistici 3-5% reply rate medio, 1-2 meeting ogni 100 email (per 10 meeting/mese servono 500-1000 email mirate); infrastruttura obbligatoria: 3-5 domini secondari, SPF/DKIM/DMARC, warm-up di 3-4 settimane, max 30-40 email/giorno per mailbox; tools citati: Smartlead ($39/mo), Apollo ($49/mo), Clay ($134/mo) per personalizzazione AI."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-082",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esempio reale di file CLAUDE.md mostrato per intero (progetto \"Social Media Manager\"): righe 1-18 leggibili — \"# CLAUDE.md\", \"This file provides guidance to Claude Code when working with code in this repository.\", sezione \"## WHAT\" con descrizione del progetto (skill-driven tool per LinkedIn posts, YouTube descriptions/scripts/Shorts, email triage, community management), stack tecnico (Python 3.9+, Claude API, Gemini API, OpenAI Whisper API, yt-dlp, WhisperX, FFmpeg), e struttura cartelle (\".claude/skills/\" per tutti i tool come skill Claude Code senza webapp, \"src/linkedin/\", \"src/youtube_desc/\", \"src/yt_script/\", \"src/shorts/\", \"src/seo.py\", \"src/auphonic/\", \"src/transcription/\", \"src/youtube_upload/\")."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-083",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Sezione \"## Adaptive Guardrails\" del CLAUDE.md reale: \"Scan every entry below before starting any task. No exceptions.\" — \"This is a living correction log. When the user corrects you, or when a wrong assumption causes a bug, append a new entry immediately. Entries are permanent — never delete, only supersede.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-084",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "\"### Entry format\" degli Adaptive Guardrails — formato: \"N. [ACTIVATION] Directive — reason.\" dove N è un numero sequenziale mai riutilizzato, e ACTIVATION è una di tre modalità: \"ALWAYS — Applies to every task unconditionally. Internalize before doing anything.\"; \"NEVER — Hard prohibition. Zero tolerance, zero exceptions.\"; \"WHEN:surface — Fires only when working with a specific surface. Examples: WHEN:video, WHEN:n8n, WHEN:loom, WHEN:skool, WHEN:git. Skip if the surface isn't part of the current task.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-085",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "\"### Recording entries\" degli Adaptive Guardrails — \"Append when:\" (1) the user rejects your output or redirects your approach; (2) a bug traces to an incorrect assumption about this codebase; (3) the user declares a standing preference. \"Do not record one-off instructions. Only permanent patterns or explicit standing orders.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-086",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "\"### Resolving contradictions\" degli Adaptive Guardrails — \"When two entries clash, apply in order:\" (1) Supersession — un'entry che finisce con \"(supersedes #N)\" uccide l'entry N; le entry morte restano visibili ma vengono ignorate; (2) Specificity — \"WHEN:loom\" batte \"ALWAYS\" sui task Loom, una regola che nomina un file specifico batte una che nomina un modulo, lo scope più stretto vince; (3) Recency — il numero di entry più alto vince, ultima risorsa."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-087",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esempio reale del \"Correction Log\" popolato (regole numerate 18-33 lette per intero nel CLAUDE.md di \"Social Media Manager\"): \"18. [NEVER] Track head[shots/] — personal branding assets, not code. Gitignored.\" — \"19. [ALWAYS] Hook scripts must derive PROJECT_ROOT from Path(__file__) — never hardcode absolute paths.\" — \"20. [WHEN:n8n] Verify n8n API PUT actually applied by checking the response...\" — \"21. [WHEN:n8n] Never attempt manual JWT signing in n8n Code nodes — crypto module is blocked in the sandbox.\" — \"22. [WHEN:n8n] Toggle 'Set up for use in HTTP Request node' ON in n8n googleApi credentials...\" — \"23. [WHEN:n8n] When chaining HTTP Request nodes, downstream nodes receive the upstream API response as input...\" — \"24. [WHEN:n8n] Cloudflare Workers can't reach raw IPs behind Cloudflare infrastructure (error 1003)...\" — \"25. [WHEN:n8n] n8n HTTPS domain n8n-eejg.srv1629360.hstgr.clou"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-088",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "In un progetto Antigravity completamente vuoto, il relatore digita il prompt \"Hey, dimmi un numero da 1 a 100\" senza alcuna direzione aggiuntiva nel file GEMINI.md (vuoto). L'agente risponde \"42! (La risposta alla domanda fondamentale sulla vita, l'universo e tutto quanto)\" — un riferimento scherzoso, non un vero numero casuale — a dimostrare il comportamento \"senza direzione\" di un agente privo di guardrails."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-089",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Il relatore pone l'obiettivo dimostrativo: ipotizzare che la risposta \"corretta\" al prompt \"dimmi un numero da 1 a 100\" debba essere sempre 27, per poi mostrare come si guida l'agente a rispettarla scrivendo l'istruzione nel file GEMINI.md invece di lasciarlo \"senza direzione\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-090",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Il file GEMINI.md viene aperto e compilato con il template completo degli Adaptive Guardrails (stesse sezioni viste nel CLAUDE.md di \"Social Media Manager\": Entry format, Recording entries, Resolving contradictions, Correction Log). Il relatore invia poi un prompt dettato a voce, trascritto in modo impreciso come \"Hey, dammi un numero da un accento!\" (fraintendimento vocale di \"da 1 a 100\"): l'agente risponde comunque correttamente \"27\", dimostrando che l'istruzione salvata nel file esterno ha funzionato."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-091",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esperimento dal vivo di auto-scrittura del Correction Log: il relatore invia il prompt \"Hey per favore, quando ti chiedo di generare un numero da 1 a 10, non generare mai un numero superiore a 5.\" Dopo l'elaborazione (\"Worked for 13s\"), l'agente risponde \"Ricevuto! Ho registrato questa preferenza nel file GEMINI.md. Da ora in poi, quando mi chiederai un numero da 1 a 10, ti darò sempre un numero che non supera il 5.\" e il file GEMINI.md mostra la nuova entry scritta automaticamente: \"1. [ALWAYS] When asked for a number from 1 to 10, never generate a number greater than 5 — User preference.\" Sezione \"Files Modified 1\": GEMINI.md +2 -1."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-092",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Commentando la nuova entry \"[ALWAYS]\" appena scritta autonomamente dall'agente nel Correction Log, il relatore osserva: \"Quello che il nostro agente fa è prioritizing tool usage e come vedete abbiamo un entrata always. Quindi questo è come andiamo a costruirli.\" L'agente stesso, senza istruzioni passo-passo, ha capito di dover registrare la preferenza dell'utente come regola permanente nel file."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-093",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Digressione personale del relatore: rivela di avere un'agenzia di voice AI B2C, mostrando come prova il sito gentes.ai — header \"GENTES\", hero \"AI Growth Partner for B2C Service Businesses.\" con \"AI Growth\" evidenziato, bottone \"Let's talk\", striscia loghi clienti/partner (Higgsfield, Anthropic, Notion, Amazon, P&G, Google, Value Group)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-094",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Tornato sul file GEMINI.md, il relatore indica la regola \"1. Supersession\" appena scritta nella sezione Resolving contradictions e promette di allegare l'intero prompt Adaptive Guardrails in descrizione al video, invitando gli spettatori ad aggiungerlo ai propri prompt."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-095",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Su una nuova lavagna Excalidraw il relatore disegna un asse cartesiano essenziale per spiegare il miglioramento incrementale di un agente guidato da Adaptive Guardrails: asse Y etichettato \"# sessioni\" con quattro tacche numerate 1-2-3-4, asse X etichettato su due righe \"# iterazioni (tempo sessione)\", con i quattro numeri associati a ore ipotetiche di utilizzo (1, 2, 3, 4 ore)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-096",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sul grafico cartesiano viene tracciata una linea rossa discendente a tratti (5 punti, da vicino l'origine fino in basso a destra), etichettata a mano \"# numero errori\": rappresenta il numero di errori dell'agente che scende progressivamente man mano che aumentano le sessioni d'uso."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-097",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Sullo stesso grafico viene tracciata una linea verde ascendente (5 punti, incrocia a X la linea rossa degli errori a metà) che rappresenta il \"numero di regole\" accumulate, con annotazione \"più intelligenti\": man mano che aumentano le sessioni, il numero di regole cresce e l'agente diventa sempre più intelligente, mentre il numero di errori scende."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-098",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma completo (illustrazione pulita, non a mano libera) intitolato \"DIAGRAMMA A SPIRALE ASCENDENTE: LOOP DI AUTO-MIGLIORAMENTO DELL'AGENTE AI\", presentato per formalizzare il concetto di miglioramento incrementale appena mostrato col grafico a mano. Riga inferiore \"CICLO 1\", sei box in sequenza: INIZIO SESSIONE (\"l'utente apre la sessione\") → ESEGUI TASK (\"l'agente lavora sulla richiesta\") → ERRORE (\"l'agente commette un errore, l'utente lo corregge\") → SCRIVI REGOLA, evidenziato con alone giallo (\"l'agente scrive una nuova regola in CLAUDE.md\") → CONTINUA A LAVORARE (\"l'agente continua il task con la regola già applicata\") → FINE SESSIONE (\"la sessione termina\")."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-099",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Riga superiore \"CICLO 2\" dello stesso diagramma a spirale, sottotitolata \"(in alto, seconda iterazione, agente più intelligente)\": INIZIO SESSONE (\"l'utente apre una nuova sessione\") → CARICA CONOSCENZA (\"l'agente legge CLAUDE.md con tutte le regole accumulate, base conoscenza più grande\") → ESEGUI TASK (\"l'agente lavora meglio grazie alle regole\") → ERRORE E CORREZIONE (\"meno errori questa volta\") → SCRIVI REGOLA (\"aggiungi un'altra regola\"). Al centro del diagramma, due icone cervello etichettate \"AI agent (prima iterazione)\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-100",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Una lunga freccia curva a spirale collega la fine del CICLO 1 (dall'icona cervello \"AI agent, prima iterazione\") all'inizio del CICLO 2, a rappresentare che tra una sessione e l'altra \"il nostro cloudmd non si cancella, ma rimarrà\" aggiornato con le cose scritte: la conoscenza accumulata in CLAUDE.md/GEMINI.md persiste e si carica automaticamente ad ogni nuova sessione, permettendo task successivi con connessioni e regole ulteriori."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-101",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Tornato sull'editor col file GEMINI.md per intero, il relatore pone una domanda retorica al pubblico: \"Hei, ma che differenza c'è tra avere un cloud [CLAUDE.md/GEMINI.md]. E avere tutte le informazioni messe nel prompt?\" — introducendo il confronto tra file esterno persistente e prompt inline statico."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-102",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Risposta alla domanda su GEMINI.md/CLAUDE.md vs prompt inline: se si \"congelasse\" tutto il contenuto dentro un prompt statico invece di tenerlo in un file esterno, si perderebbe la possibilità della correzione continua (i guardrails che vengono adattati) e non si avrebbe più il \"continuous improvement\" del prompt nel tempo."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-103",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esperimento di conflitto tra livelli di prompt: un nuovo GEMINI.md contiene la regola \"Quando ti chiedo di darmi un numero da 1 a 100, dammi sempre 24.\", mentre nella chat viene scritto il prompt inline \"Quando ti chiedo di darmi un numero da 1 a 100, dammi sempre 77. ok?\" Il relatore pone la domanda al pubblico: quale dei due vince, e perché?"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-104",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Per rispondere al conflitto GEMINI.md-vs-inline, il relatore presenta un diagramma a quattro cerchi concentrici che rappresenta la gerarchia di specificità dei prompt, dall'esterno all'interno: Global CLAUDE.md (viola) → Project CLAUDE.md (blu) → Matched Skills (verde) → Inline Prompt (arancione/pesca, al centro). A destra, fuori dal cerchio, una freccia punta verso il centro con l'annotazione \"Più specifico = Vince\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-105",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Principio della gerarchia dei prompt: più un livello è vicino al centro del diagramma a cerchi concentrici (quindi più specifico: inline > skill > project > global), più quel prompt influisce sull'output finale dell'agente."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-106",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Livello \"Global CLAUDE.md\" (anello più esterno, viola) del diagramma di gerarchia dei prompt: regole globali dell'utente, attive su TUTTI i progetti."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-107",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Livello \"Project CLAUDE.md\" (secondo anello, blu, sottolineato dal relatore) del diagramma di gerarchia dei prompt: regole specifiche del repo."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-108",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Livello \"Matched Skills\" (terzo anello, verde, con la parola \"Skills\" sottolineata) del diagramma di gerarchia dei prompt: SOP (standard operating procedure) per task, caricate on-demand."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-109",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Livello \"Inline Prompt\" (cerchio centrale, arancione/pesca, con la parola \"Prompt\" sottolineata) del diagramma di gerarchia: istruzione specifica del momento, il livello più specifico e quindi più forte secondo la regola \"Più specifico = Vince\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-110",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esempio pratico reale di skill del livello \"Matched Skills\": il file SKILL.md della skill \"commit\" nel progetto \"Social Media Manager\" — frontmatter YAML: name: commit; description: \"Run the full commit-push-PR pipeline for the Social Media Manager project. Invoke whenever the user says 'commit', 'push', 'ship it', 'send it live', or types '/commit'. Also trigger on 'push this', 'let's push', 'done, commit it'.\"; allowed-tools: Bash, Read. Corpo: \"# Commit\" / \"## Goal — Ship code to GitHub with automated testing and PR creation — no manual git commands. Full pipeline: test check -> staged diff review -> selective git add -> commit -> push -> open PR.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-111",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "Sezione \"## Gotchas\" della skill \"commit\": \"**Never use `git add .` or `git add -A`** — The project root has loose files (.env, credentials, data/) that must stay untracked. Always `git add` specific files or directories by name.\" — \"**Tests first, push second** — Run `pytest tests/ -v` before committing. If tests fail, abort the pipeline and fix the issue. Never push broken tests.\" — \"**Force push is always the user's call** — If `git push` is rejected, stop and ask. Never force push to main.\" — \"**Always open a PR after pushing** — Per project rules, always create a PR automatically after pushing a feature branch. Never ask for permission — just do it (see feedback_always_open_pr.md).\" — \"**Never commit directly to main** — Always use feature branches (see .claude/rules/git.md).\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-112",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "Passaggio a ripresa frontale (webcam a figura intera, niente schermo): il relatore introduce l'obiettivo pratico di evitare di aprire Claude Code e cominciare subito a scrivere un prompt senza pianificare, perché così facendo il tasso di errore è alto; l'obiettivo del blocco successivo è mostrare come usare plan mode e le tecniche di \"back prompt engineering\" per evitarlo."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-113",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Nuovo diagramma Excalidraw a tre riquadri collegati da frecce: in alto, box viola \"BACK PROMPT ENGINEERING\" (icona lampadina), da cui si diramano due tecniche — a sinistra (freccia verde) box verde-acqua \"STEP BACK PROMPTING\" (\"TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE\", refuso \"INIETRO\" per \"INDIETRO\" riportato com'è a schermo); a destra (freccia rosa/salmone) box arancione \"REVERSE PROMPTING\" (\"TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE\")."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-114",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Definizione di Step Back Prompting (box verde-acqua nel diagramma Back Prompt Engineering): \"TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE\" (refuso a schermo \"INIETRO\" per \"INDIETRO\")."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-115",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Definizione di Reverse Prompting (box arancione nel diagramma Back Prompt Engineering): \"TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-116",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Diagramma dettagliato \"Fare un passo indietro prima di agire / Step-Back Prompting\": a sinistra un fumetto \"Compito specifico: Ottimizza questa query SQL\" con freccia diretta (X rossa) verso il box rosso \"Soluzione miope\" (\"Corregge il sintomo, non la causa\"); sotto, etichetta \"FIRST\" con freccia verso l'alto al box giallo \"PASSO INDIETRO -- Qual è il principio generale?\" (\"Quali sono i pattern di ottimizzazione dei database?\"), che riparte dallo stesso compito specifico ma arriva (✓ verde) al box verde \"Soluzione migliore\" (\"Capisce il perché, non solo il cosa\")."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-117",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Massima conclusiva del diagramma Step-Back Prompting, scritta in fondo alla pagina: \"Chi capisce il principio risolve 100 problemi. Chi memorizza la soluzione ne risolve 1.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-118",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Demo pratica di Step-Back Prompting in Claude Code: da una sessione nuova e vuota, il relatore invoca il comando \"/step-back-prompting creami un bel sito web\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-119",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Risposta \"Step-Back\" alla richiesta \"creami un bel sito web\" — sezione \"The principle\": \"A website is a tool with a job. The governing question isn't 'what should it look like?' but 'what should it do?' — specifically, what's the single conversion action a visitor should take? For a solo founder with coaching + agency + community + YouTube, the website is either a (1) lead capture funnel, (2) credibility/authority page, or (3) content hub. Each implies a radically different design.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-120",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sezione \"Reframed approach: Before touching code, we need to answer:\" della risposta Step-Back, elenco completo con sottolineature progressive nelle scene successive: 1. \"Who lands here?\" -- \"Cold traffic from YouTube? LinkedIn connections checking you out? Potential coaching clients sent a link? Each audience needs different messaging.\" 2. \"What's the ONE action?\" -- \"Book a call? Join Avanguardia? Subscribe to YouTube? A page that tries to do all three converts on none.\" 3. \"Which entity?\" -- \"Gentes AI (agency)? Giovanni Beggiato (personal brand)? Avanguardia (community)? These could be the same site or different ones.\" 4. \"What's the maintenance budget?\" -- \"A static landing page lives forever. A blog/content site needs feeding. Given your time constraint, simpler is better.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-121",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "Sezione \"What this avoids\" della risposta Step-Back: \"Building a generic multi-page portfolio site with About/Services/Blog/Contact that looks professional but doesn't convert -- the most common 'technically correct but wrong' outcome for personal brand websites.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-122",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Chiusura della risposta Step-Back, tre domande dirette in italiano: \"Dimmi: — Per chi e il sito? (il tuo ICP coaching? aziende per Gentes AI? entrambi?) — Cosa deve fare chi atterra sulla pagina? (prenotare una call? iscriversi alla community?) — Sotto quale brand? (Giovanni Beggiato, Gentes AI, Avanguardia?) — Con queste tre risposte posso costruire qualcosa di mirato, non generico.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-123",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Risposta dell'utente alle tre domande dello Step-Back, scritta per intero nel campo di input: \"Hey, fammi un bel sito web per AvanguardiaPlus. È la mia community a pagamento nella quale insegno a imprenditori e freelancer come utilizzare le AI e vendere agenti AI alle aziende o come implementarli. Questo sito deve far sì che le persone capiscano il valore della community e che quindi poi acquistino magari il mio programma. Sotto quale brand utilizza pure AvanguardiaPlus?\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-124",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Recap completo in italiano generato dall'agente dopo la risposta dell'utente: \"Brand: Avanguardia+ (community a pagamento)\"; \"Target: Imprenditori e freelancer che vogliono usare AI praticamente -- per il proprio business o per vendere agenti AI alle aziende\"; \"Obiettivo conversione: Far capire il valore della community -> spingere all'acquisto del programma di coaching\"; \"Il principio guida: Questo non è un sito 'informativo' -- è una sales page. Una singola pagina lunga, verticale, costruita per portare il visitatore da 'chi è questo?' a 'voglio entrare'.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-125",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Struttura in 7 sezioni proposta per la sales page di Avanguardia+, elenco integrale: \"1. Hero -- headline che parla al desiderio (non al prodotto), CTA immediata\"; \"2. Problema -- il dolore che il target sente (tutti parlano di AI, nessuno ti dice come farci soldi)\"; \"3. Soluzione -- cos'è Avanguardia+ e perché funziona\"; \"4. Cosa ottieni -- breakdown concreto di cosa c'è dentro (moduli, community, coaching)\"; \"5. Proof -- risultati, testimonianze, numeri\"; \"6. Chi sono -- credibilità di Gio (Amazon, P&G, solo se rilevante)\"; \"7. Pricing/CTA finale -- prezzo, cosa include, ultimo push\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-126",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "Chiusura del recap: \"Cosa evito: Un sito multi-pagina con About/Blog/Contact che disperde l'attenzione. Una sola pagina, un solo obiettivo: convertire.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-127",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma Excalidraw \"Reverse Prompting\": percorso superiore (X rossa) — box viola \"Tu\" → box verde \"Agente AI\" (fumetto \"(Assumo di sapere cosa vuoi...)\") → box arancione/rosso \"Output sbagliato -- costruito su assunzioni invisibili\"; percorso inferiore (✓ verde) — box viola \"Tu\" ↔ box azzurro \"INTERROGATORIO PREVENTIVO\" con elenco puntato \"Qual è il contesto?\", \"Ci sono vincoli?\", \"Cosa significherebbe fallire?\" → box verde \"Output preciso -- costruito su fatti, non assunzioni\". Una freccia curva collega il box \"Output sbagliato\" al box \"INTERROGATORIO PREVENTIVO\", a suggerire il percorso di correzione."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-128",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Didascalia sotto il diagramma Reverse Prompting: \"Le assunzioni invisibili sono la causa #1 di output sbagliati. Meglio 5 minuti di domande che 5 ore di lavoro buttato.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-129",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Demo pratica di Reverse Prompting in Claude Code: il relatore invoca il comando \"/reverse-prompting su questo output\", applicandolo al recap Step-Back sulla sales page di Avanguardia+ appena generato."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-130",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Le cinque domande di chiarimento generate dal comando /reverse-prompting, ciascuna con Default e Perché conta: \"Q1 (impatto massimo): Dove punta il CTA -- Skool direttamente o una call con te?\" (Default: link diretto alla pagina Skool, acquisto self-service; Perché conta: se punta a una call di vendita la struttura cambia in funnel di qualificazione). \"Q2: Hai testimonianze, risultati o numeri concreti da usare?\" (Default: placeholder generici; Perché conta: proof reale vs placeholder cambia la credibilità del 90%). \"Q3: Stack tecnico -- HTML/CSS statico, o vuoi un framework (React, Next.js, etc.)?\" (Default: singolo file HTML+CSS+JS minimale, zero dipendenze; Perché conta: un framework aggiunge complessità di build e manutenzione). \"Q4: Pricing visibile sulla pagina o lo scoprono solo su Skool?\" (Default: prezzo visibile con breakdown, la trasparenza filtra i lead non qualificati; Perch"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-131",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Le cinque domande del Reverse Prompting seguono tutte lo stesso pattern strutturale a due parti: un \"Default\" (la scelta che l'agente farebbe se l'utente non rispondesse) seguito da \"Perché conta\" (la spiegazione dell'impatto di quella scelta sul risultato finale) — un formato ripetuto identicamente su Q1-Q5."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-132",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Invece di rispondere punto per punto alle cinque domande, l'utente scrive: \"hey per favore, decidi tu perché questa è una demo, però aspetta prima di procedere con l'esecuzione\" — delegando le decisioni all'agente ma mantenendo un gate esplicito prima dell'esecuzione."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-133",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "L'agente risponde alla delega dell'utente con cinque decisioni autonome, una per ciascuna domanda: \"Perfetto, ecco le decisioni: 1. CTA: Link diretto a Skool -- acquisto self-service, niente call di vendita. 2. Proof: Placeholder realistici -- li sostituirai con dati veri dopo. 3. Stack: HTML + CSS statico, file singolo, zero dipendenze. 4. Pricing: Visibile sulla pagina con breakdown di cosa include. 5. Stile: Dark mode, tech-forward, accent color vivace su sfondo scuro.\" Chiusura: \"Aspetto il tuo via libera per partire.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-134",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Sulla lavagna Excalidraw il relatore riepiloga a mano gli elementi già forniti all'agente: icona freccia + \"CTA\", icona freccia + \"Stile\", poi \"- 3\", \"- 4\", \"- 5\", \"- 6\", \"- 7\", raggruppati da un'unica grande parentesi graffa nera, mentre dice a voce: \"abbiamo dato uno stile, abbiamo dato i un chiamiamolo elemento 3, abbiamo dato un elemento 4, un 5, un 6, un 7, abbiamo fatto tutta una serie di step infiniti.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-135",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Dopo il riepilogo degli elementi già forniti, il relatore scrive sulla lavagna una nuova domanda aperta: \"CONDIZIONI PER IL SUCCESSO?\" seguita da una freccia verso il basso e dalla scritta \"DEFINIZIONE DI SUCCESSO\", ponendo il problema di come definire in modo esplicito e verificabile quando un task è davvero completato."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-136",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Per rispondere alla domanda su come definire il successo di un task, il relatore introduce un nuovo concetto: \"Allora, per farlo introduciamo un ulteriore concetto che è un prompt contract.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-137",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma \"Prompt Contracts\": riquadro centrale con bordo crema contenente 4 componenti impilati, ciascuno con icona — verde, icona bersaglio: \"OBIETTIVO -- Metrica di successo quantificabile\"; azzurro, icona lucchetto: \"VINCOLI -- Limiti rigidi e confini\"; viola, icona documento: \"FORMATO -- Forma esatta dell'output\"; rosa/rosso, icona triangolo di allerta: \"FALLIMENTO -- Condizioni esplicite di fallimento\". A sinistra una nuvoletta con X rossa \"Compito vago: Costruisci un rate limiter\" si dirama verso i 4 box; a destra le frecce dai 4 box convergono in un box verde acqua con ✓ verde \"Output preciso, qualità professionale\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-138",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esempio guida del diagramma Prompt Contracts: un \"Compito vago: Costruisci un rate limiter\" attraversa i quattro componenti (OBIETTIVO, VINCOLI, FORMATO, FALLIMENTO) e ne esce come \"Output preciso, qualità professionale\", a differenza di un compito lasciato vago che produrrebbe un risultato generico."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-139",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Didascalia sotto il diagramma Prompt Contracts: \"La clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.\" Il componente FALLIMENTO non è quindi decorativo: costringe l'agente a dichiarare esplicitamente cosa NON sarebbe accettabile come risultato."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-140",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Accanto al titolo del diagramma Prompt Contracts il relatore aggiunge a mano una doppia freccia \"<=>\" seguita dalla scritta in stampatello \"PLAN MODE\", tracciando un parallelo esplicito tra il concetto di prompt contract appena introdotto e la plan mode di Claude Code, mentre commenta: \"ora noi abbiamo ancora un compito vago con un perimetro definito.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-141",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esempio concreto di OBIETTIVO quantificabile nel Prompt Contract: una piccola nota manoscritta \"10 PX\" vicino al riquadro OBIETTIVO, riferita all'esempio verbale di un vincolo di design misurabile — il padding o lo spazio bianco tra due elementi del sito deve essere un massimo di 10 pixel, altrimenti il risultato non è accettabile."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-142",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Esempio concreto di VINCOLI nel Prompt Contract: un cerchio verde manoscritto con dentro \"< 5€\", posizionato tra il box OBIETTIVO/VINCOLI e il box verde \"Output preciso\" e collegato da una freccia verde al box VINCOLI, a rappresentare un vincolo di budget massimo esplicito."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-143",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Mentre introduce il concetto di VINCOLI come \"tunnel\" entro cui l'agente deve restare, il relatore disegna sulla lavagna una lunga linea ondulata a mano libera, senza forma definita e senza testo associato: un probabile scarabocchio illustrativo del percorso di un prompt \"che va dove vuole\" quando non ci sono vincoli espliciti, in contrapposizione al concetto di tunnel appena introdotto a voce."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-144",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Demo pratica di Prompt Contracts in Claude Code: il relatore invoca il comando \"/prompt-contracts sull'output appena prodotto\", applicandolo al piano già deciso per la sales page di Avanguardia+ (dopo Step-Back e Reverse Prompting)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-145",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Componente GOAL del contratto generato da /prompt-contracts: \"Sales page singola per Avanguardia+ che porta il visitatore da 'chi è questo?' a click sul CTA Skool. Deve caricare in <2s, essere mobile-first, e avere un flow visivo che guida lo scroll senza distrazioni.\""
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-146",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Componente CONSTRAINTS del contratto generato da /prompt-contracts, elenco integrale: \"File singolo HTML + CSS inline/embedded + JS minimale (no framework, no build step, no dipendenze esterne)\"; \"Dark mode, palette scura con accent vivace\"; \"Font da Google Fonts (max 2 font)\"; \"Immagini: solo placeholder o icone inline (SVG/emoji) -- niente asset esterni da scaricare\"; \"Sezioni obbligate in ordine: Hero -> Problema -> Soluzione -> Cosa Ottieni -> Proof -> Chi Sono -> Pricing -> CTA finale\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-147",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Prima di invocare la skill Prompt Contracts, si apre il menu comandi di Claude Code/Antigravity con le opzioni disponibili per la sessione: \"Context\", \"Attach file...\", \"Mention file from this project...\", \"Clear conversation\", \"Rewind\", \"Switch model...\" (con il modello attivo mostrato come \"Opus 4.6 (1M context)\" e toggle blu attivo), \"Effort (Medium)\" (toggle blu attivo), \"Thinking\" (toggle blu attivo), \"Account & usage...\"."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-148",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "Nel prompt vocale con cui viene lanciata la demo dei 5 agenti paralleli, il testo a schermo riporta letteralmente \"spaventassi cinque agenti\", un verosimile refuso di dettatura vocale per \"spawnassi\" pronunciato dal relatore poco prima: un esempio concreto di come la dettatura vocale possa trascrivere in modo errato termini tecnici in inglese (come \"spawn\") quando si danno comandi a voce agli agenti AI."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-149",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "Il Prompt Contract dettato per la sales page di Avanguardia+ elenca otto CONSTRAINTS vincolanti, lette ad alta voce mentre vengono sottolineate in arancione sullo schermo: file singolo HTML + CSS inline/embedded + JS minimale (no framework, no build step, no dipendenze esterne); dark mode, palette scura con accento vivace; font da Google Fonts (max 2 font); immagini solo placeholder o icone inline (SVG/emoji), niente asset esterni da scaricare; sezioni obbligate in ordine Hero -> Problema -> Soluzione -> Cosa Ottieni -> Proof -> Chi Sono -> Pricing -> CTA finale; CTA che punta a URL Skool (placeholder per ora); testo in italiano; pricing visibile con breakdown."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-150",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "La sezione FORMAT del contract specifica la forma esatta dell'output: un file solo (site/index.html), responsive mobile-first con breakpoint a 768px per desktop, smooth scroll tra le sezioni, animazioni CSS leggere (fade-in on scroll via Intersection Observer), nessun file separato (CSS e JS embedded nello stesso file)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-151",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "La sezione FAILURE del contract elenca nove condizioni esplicite di fallimento (qualsiasi vera = non finito): non è responsive, rotto su mobile (viewport < 400px); CTA non visibile senza scrollare nel hero; più di un file generato; dipendenze esterne (npm, CDN JS libraries) oltre a Google Fonts; testo in inglese invece che italiano; manca una delle 8 sezioni obbligate; font size < 16px sul body text (illeggibile su mobile); nessuna animazione, la pagina è un muro statico di testo; il JS supera le 50 righe, perché è una sales page, non un'app. Sotto una linea divisoria, il contract si chiude con: 'Aspetto il tuo OK per eseguire contro questo contract.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-152",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma di ricapitolazione 'Prompt Contracts' su lavagna Excalidraw (con annotazione manoscritta 'PLAN MODE' accanto al titolo): quattro riquadri impilati definiscono la tecnica - verde 'OBIETTIVO -- Metrica di successo quantificabile', blu 'VINCOLI -- Limiti rigidi e confini', viola 'FORMATO -- Forma esatta dell'output', rosa 'FALLIMENTO -- Condizioni esplicite di fallimento'. A sinistra una nuvoletta 'Compito vago: Costruisci un rate limiter' con una X rossa entra nel box a quattro riquadri; a destra ne esce un box verde scuro 'Output preciso, qualità professionale' con un segno di spunta, e sopra un'annotazione manoscritta verde cerchiata '< 5 €'. Didascalia: 'la clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-153",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Nel corso della demo pratica, il relatore applica in sequenza tre skill/prompt distinti sullo stesso output generato (la sales page Avanguardia+): prima lo step-back prompting (tecnica introdotta in un capitolo precedente del corso), poi /prompt-contracts sull'output appena prodotto, poi /pre-mortem sull'ultimo output. Il relatore chiude il racconto della dimostrazione riepilogando esplicitamente questa catena di quattro prompt/skill."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-154",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma 'Pre-Mortem' su lavagna Excalidraw: box viola 'OGGI -- Prima di iniziare', freccia tratteggiata etichettata 'Viaggio mentale nel futuro' verso box rosso 'FUTURO IMMAGINARIO -- Il progetto e FALLITO'. Da questo box scendono tre frecce verso tre domande: box giallo 'Perche e fallito?', box blu 'Cosa non avevamo previsto?', box rosa 'Quali segnali abbiamo ignorato?'. Una freccia curva riporta dal blocco domande al box verde 'Piano migliorato -- con difesa contro ogni rischio' con un segno di spunta. Didascalia: 'Il post-mortem arriva troppo tardi. Il pre-mortem trova gli stessi problemi PRIMA che costino tempo e denaro.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-155",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Metafora disegnata a mano per spiegare perché il pre-mortem serve: un campo coltivato a monocoltura (rettangolo pieno di tratteggi verdi fitti) rappresenta un progetto che ha proseguito senza diversificare i rischi; una X rossa lo cancella per intero e uno scarabocchio a forma di fiamma/mano lo minaccia dall'alto, a illustrare lo scenario di fallimento improvviso ('l'incendio ti brucia tutto in un colpo solo')."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-156",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Esempio numerico usato per giustificare il pre-mortem: se il sistema va giù per l'1% del tempo (downtime), e un cliente arriva a fare l'acquisto/firmare esattamente in quella finestra, quell'1% di downtime equivale al 100% del fatturato perso per quell'occasione - annotato sulla lavagna come '1% dT' con freccia verso '1% = 100%'."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-157",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Live demo: sull'ultimo output generato (la sales page Avanguardia+, già passata per il contract), il relatore lancia il comando '/pre-mortem sull'ultimo output'. La risposta si apre con l'intestazione 'Pre-Mortem: Sales Page Avanguardia+' e il testo: 'Il task è completato. È considerato un fallimento. Ecco le 3 cause più probabili.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-158",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Prima causa di fallimento individuata dal pre-mortem, classificata TIGER: 'Copy generica da template -- il testo suona come ogni altra sales page AI. \"Impara a usare l'AI\", \"il futuro è adesso\", frasi che il target ha già letto 100 volte. Il visitatore chiude in 5 secondi perché non sente la voce di Gio.' Mitigazione proposta: 'Scrivere il copy nello stile di Gio (diretto, pratico, zero guru energy). Usare i reference files dello stile e il CREATOR_PROFILE. Parlare di soldi concreti, non di \"potenziale\".'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-159",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Seconda causa di fallimento individuata dal pre-mortem, classificata PAPER TIGER (rischio gestibile): 'Dark mode illeggibile -- contrasto insufficiente tra testo e sfondo. Il testo grigio su sfondo quasi-nero sembra elegante sullo schermo del developer ma è illeggibile su un telefono Android al sole.' Mitigazione: 'Manageable: basta usare #f5f5f5 minimo sul body text e testare con un contrast checker. Problema di 2 minuti se catturato.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-160",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Terza causa di fallimento individuata dal pre-mortem, classificata TIGER: 'Muro di testo senza respiro visivo -- 8 sezioni obbligate in un file singolo. Senza immagini reali (solo placeholder/SVG), il rischio è una pagina che sembra un documento Word con sfondo nero. Nessun elemento visivo spezza la monotonia, il visitatore smette di scrollare a metà.' Mitigazione: 'Usare separatori visivi forti tra sezioni (gradient dividers, cambio colore di sfondo alternato, icone SVG grandi, spacing generoso). Ogni sezione deve sembrare un \"nuovo schermo\", non un nuovo paragrafo.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-161",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Il pre-mortem non si limita a elencare i rischi ma li ordina per priorità: 'Rischio più alto: Il #1 -- Copy generica. Il design si può aggiustare in 10 minuti, ma se il testo non suona come Gio il sito non converte indipendentemente da quanto è bello.' Il rischio sulla voce/copy batte quello visivo perché nessun restyling salva un testo che non converte."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-162",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "In base al pre-mortem, il relatore propone tre nuove condizioni FAILURE da aggiungere al contract originale della sales page: 'FAILURE: Il copy usa frasi generiche da template AI (\"sblocca il potenziale\", \"il futuro è adesso\", \"rivoluziona il tuo business\")'; 'FAILURE: Il contrasto testo/sfondo non rispetta WCAG AA (4.5:1 minimo)'; 'FAILURE: Non c'è variazione visiva tra sezioni adiacenti (tutte stesso sfondo)'."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-163",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Il pre-mortem si chiude offrendo tre opzioni operative all'utente, invece di agire da solo: '1. Procedi -- accetta i rischi, li tengo a mente durante l'esecuzione', '2. Aggiungi le 3 mitigazioni al contract e poi procedi', '3. Aggiorna il contract con nuove FAILURE conditions via /prompt-contracts'. La decisione finale resta dell'utente, non dell'agente."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-164",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma 'Agent Polling - Ricerca / Decisioni strategiche' su lavagna Excalidraw: un riquadro giallo in alto con icona megafono, 'UNA DOMANDA' e sotto l'esempio 'Come dovremmo progettare il database?'; da qui frecce si diramano verso cinque riquadri colorati affiancati, ciascuno con icona persona e fumetto '...': 'Esperto 1 -- Indipendente' (viola), 'Esperto 2 -- Indipendente' (verde), 'Esperto 3 -- Indipendente' (arancione), 'Esperto 4 -- Indipendente' (azzurro), 'Esperto 5 -- Indipendente' (rosa). Tutti e cinque convergono in un riquadro verde con icona bilancia, 'AGGREGAZIONE', con sotto: '3 su 5 concordano -> alta confidenza.' e 'Idee uniche -> spunti innovativi.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-165",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Regola scritta a mano sotto il diagramma Agent Polling, principio cardine della tecnica: 'Opinioni indipendenti si rafforzano a vicenda. Opinioni di gruppo si contaminano.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-166",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Definizione a voce dell'Agent Polling: un framework che serve nel momento in cui si fanno decisioni strategiche o ricerche di qualsiasi tipo che richiedono l'intervento di più di una mente (più agenti indipendenti invece di uno solo)."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-167",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Meccanismo esplicativo disegnato a mano sulla lavagna: cinque agenti numerati (1-5) trovano ciascuno delle risposte-lettera. Agente 1 trova A, B, C; Agente 2 trova B, C, D; Agente 3 trova A, B ed E; Agente 4 trova B, C, D; Agente 5 trova A, D, F. Si formano così cinque set di risposte diverse (A-F) proposte da cinque agenti indipendenti sulla stessa domanda."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-168",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Dalle risposte dei cinque agenti si costruisce una tabella di conteggio a sei colonne (A, B, C, D, E, F): il numero sotto ogni lettera è un coefficiente che dice quante volte quella risposta è stata presa dagli agenti. Conteggio finale: A=3, B=4, C=3, D=3, E=1, F=1. Il coefficiente più alto (B=4) indica la soluzione più probabile."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-169",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Sui conteggi delle risposte (A=3, B=4, C=3, D=3, E=1, F=1) si costruisce un grafico a campana/distribuzione: il valore più alto (B) tende a essere il più probabile, ma la domanda successiva è se sia anche il più giusto."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-170",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Il valore più alto della distribuzione (il consenso di maggioranza) non è necessariamente la soluzione giusta: un valore basso e isolato nella curva (annotato con un cerchio rosso e una freccia sul grafico) può essere un outlier - una soluzione rara ma corretta che il metodo permette comunque di individuare leggendo il report di consenso, invece di scartarla."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-171",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Analogia numerica usata per giustificare perché il polling con più agenti indipendenti funziona anche se ciascun agente singolarmente è 'meno intelligente' del miglior esperto umano: si ipotizza un gruppo con QI collettivo di 50 contro l'uomo migliore al mondo con QI 60 - un numero sufficiente di pensatori indipendenti converge sulla stessa soluzione del singolo più bravo, ma più in fretta."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-172",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Live demo dell'Agent Polling: il relatore lancia il comando con la domanda reale: '/agent-polling Hey! Vorrei capire, dato il mio profilo e il mio canale YouTube, qual è la soluzione migliore che io possa implementare quest'anno per raggiungere 100.000 sottoscrittori su YouTube. Puoi aiutarmi?'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-173",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "In risposta al comando /agent-polling, il sistema annuncia: 'I'll poll 10 independent analysts on your YouTube growth strategy. Let me load the references first' (legge framing-variations.md e report-template.md), poi: 'Launching 10 agents in parallel, each with a different analytical lens. This will cost ~$0.30-0.50 with Sonnet.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-174",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Il sistema annuncia che tutti e 10 gli agenti stanno girando in parallelo, ciascuno con una angolazione diversa: 'Each is analyzing your question from a different angle -- neutral, risk-averse, growth-oriented, contrarian, first-principles, user-empathy, resource-constrained, long-term, data-driven, and systems thinking.' Dieci prospettive indipendenti sulla stessa domanda di crescita YouTube."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-175",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Ogni agente di polling riceve lo stesso blocco CONTEXT con i dati reali del canale di Giovanni Beggiato: creator italiano di Vicenza, canale in italiano su Claude Code/agentic AI workflows/AI agents/'Make Money', statistiche correnti 2.700 iscritti, 40K visualizzazioni/28 giorni, 380K impression, stile pratico e imprenditoriale, corso di punta su Claude Code e Agentic AI, ICP chi vuole guadagnare con l'AI e imprenditori, team: solo creator + 1 thumbnail designer, revenue: coaching program con 6 clienti (~4-8K€/mese), anche 50K follower LinkedIn (in inglese), il tempo è il collo di bottiglia primario, obiettivo dichiarato: dominare la ricerca italiana su Claude Code/agentic AI. L'obiettivo posto è 100.000 iscritti entro fine 2026, pari a circa 37x di crescita."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-176",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "procedura",
+   "testo": "Ogni agente di polling deve restituire un output nello stesso formato in quattro punti: (1) la strategia/soluzione singola raccomandata; (2) un livello di confidenza da 1 a 10 sulla probabilità che quella strategia raggiunga 100K iscritti entro dicembre 2026; (3) i punti di ragionamento chiave (specifici e concreti -- numeri, tempistiche); (4) avvertenze o considerazioni discordanti."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-177",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Primi risultati parziali degli agenti di polling che arrivano in streaming nella chat: Agent 1 (Neutral Baseline) consiglia dominanza nella ricerca con 2-3 video/settimana, ma dà solo 3/10 di confidenza sul raggiungere 100K. Agent 4 (Contrarian) dà 4/10 di confidenza, con l'insight chiave che il problema è la distribuzione, non la qualità dei contenuti, e raccomanda di ingegnerizzare un unico video 'proof-of-income' come investimento creativo primario. Agent 6 (User-Empathy) dà 4/10, evidenziando le collab con creator italiani più grandi (100K-500K iscritti) come possibile leva più alta di qualsiasi strategia di contenuto da sola."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-178",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Altri risultati parziali degli agenti di polling: Agent 5 (First-Principles) dà 3/10, individuando come collo di bottiglia il traffico Browse (l'algoritmo che spinge verso audience fredde) e non la ricerca, e segnala un problema di conversione iscritti: 40K visualizzazioni/mese ma solo 2.700 iscritti totali. Agent 9 (Data-Driven) dà la confidenza più bassa vista finora, 2/10 per 100K ma 3-4/10 per 50-70K, e spinge più fortemente per le collab come singola azione a valore atteso più alto. Agent 8 (Long-Term) dà 3/10 e raccomanda di diventare IL canale 'demo dal vivo di Claude Code' con 1 video di alta qualità/settimana più cross-posting su LinkedIn, notando che i video registrati ora sono asset di ricerca che si accumulano per anni."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-179",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Regola operativa chiave enunciata mentre arrivano i risultati del polling: si può fare outsourcing del pensiero con agenti AI, ma non si può fare outsourcing della propria comprensione -- l'input umano resta necessario nel momento in cui si modella quello che si vuole che sia l'output finale di tutto il processo."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-180",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Key Takeaway del polling report finale: 'All 10 agents agree: 100K by Dec 2026 is a moonshot (avg confidence 3.2/10). The math requires 3,200 new subs/week for 30 weeks straight -- a 10-15x acceleration from your current pace. But your metrics (6% CTR, 11-min duration) are genuinely elite. The problem isn't content quality -- it's distribution to cold audiences.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-181",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "I tre Top Agreement Points del polling report: (1) 'Italian AI search is a land grab. You have 12-18 months before the window closes. Every video you plant now is a search asset that compounds for years.' (2) 'Collabs with larger Italian creators (100K-500K subs) are the single highest-leverage action. One well-placed collab can deliver more subs in a week than 3 months of solo publishing.' (3) 'LinkedIn 50K is free seeding. Cross-posting every video gives early velocity signals that trigger YouTube's broader distribution.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-182",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Most Interesting Split del polling report: 'Volume (3-4 videos/week) vs. Engineered Breakouts (1 every 2-3 weeks). Given your time constraint (solo + 6 clients), the breakout camp is probably more realistic -- but this is a judgment call only you can make based on sustainable output.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-183",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Most Interesting Standout Idea del polling report: 'Agent 4 (Contrarian): Engineer one \"proof-of-income\" video -- \"Ho guadagnato X euro in 30 giorni usando solo AI agents\" with real numbers and screen recordings. Italian audiences respond strongly to income-proof content. Seed it via LinkedIn. This single video is the highest-probability path to a breakout event. Make it your primary creative investment in the next 60 days.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-184",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma 'Agent Debates' su lavagna Excalidraw: tre colonne 'ROUND 1', 'ROUND 2', 'ROUND 3'. In ciascun round un riquadro rosso con icona spada 'SOSTENITORE -- Idea A è la migliore' e un riquadro azzurro con icona scudo 'CRITICO -- Idea A ha problemi', collegati da una doppia freccia verticale. I tre round si susseguono con frecce orizzontali e convergono in un riquadro verde finale con icona diamante: 'SINTESI FINALE -- Il meglio di entrambe le posizioni. Nessun punto debole sopravvive a 3 round di critica.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-185",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Due note gialle sotto il diagramma Agent Debates spiegano il meccanismo: 'Il sostenitore rafforza i punti deboli. Il critico riconosce i punti forti.' e 'Entrambi aggiornano la propria posizione con le critiche ricevute.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-186",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Sottotitolo del video sovrimpresso sul diagramma Agent Debates, tesi centrale della tecnica: 'dibattito strutturato produce idee che nessun singolo punto di vista avrebbe raggiunto da solo.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-187",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "Regola di base degli Agent Debates spiegata a voce: il sostenitore (in questo caso ce ne sono due) troverà ogni ragione possibile per sostenere un'idea, il critico ogni ragione possibile per buttarla giù -- ciascuno dei due ruoli è deliberatamente sbilanciato in una direzione, non neutrale."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-188",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Metafora del diamante grezzo per spiegare la convergenza degli Agent Debates: sopra il titolo del diagramma vengono disegnate in sequenza tre forme -- un cerchio irregolare, poi una forma poligonale grezza e frastagliata, poi una forma a diamante sfaccettato -- a rappresentare come l'idea iniziale, raffinata round dopo round dal confronto Sostenitore/Critico, arrivi alla forma finale che il relatore chiama 'convergenza'."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-189",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "esempio",
+   "testo": "Live demo degli Agent Debates: sul report di polling appena prodotto, il relatore digita il comando 'hey, usa /agent-debates per capire la migliore'. La skill risponde: 'Launching a 3-agent, 3-round debate on the three strategies from the polling. Let me set up the arena.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-190",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Il Round 1 dell'Agent Debates si apre con 'Round 1 -- opening positions. Launching all 3 agents in parallel.' I tre agenti-dibattito, ciascuno con la propria posizione di partenza, sono: Volume Machine, Breakout Engineer, Collab Strategist."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-191",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "I tre ruoli/system prompt del Round 1: 'Agent: Debate R1: Volume Machine' -- 'You are the \"Volume Machine\" -- a High-Volume Publishing Advocate. Your role: Defend publishing 3-4 videos/week to dominate Italian AI search. More surface area = more algorithm lottery tickets.' 'Agent: Debate R1: Breakout Engineer' -- 'You are the \"Breakout Engineer\" -- an Engineered Viral Content Advocate. Your role: Defend producing fewer but highly-engineered breakout videos (1 every 2-3 weeks) designed for cold audience discovery.' 'Agent: Debate R1: Collab Strategist' -- 'a Strategic Collaborations Advocate.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-192",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Ogni nuovo round dell'Agent Debates eredita sia il contesto delle conversazioni precedenti sia tutto quanto è stato discusso tra i vari agenti nei round già svolti -- il dibattito si accumula, non riparte da zero a ogni round."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-193",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Verdetto del dibattito dopo 3 round: 'I tre agenti sono partiti da posizioni opposte e sono convergiti su un unico piano sequenziale entro il Round 3. L'insight chiave, del Breakout Engineer: \"il sequencing conta piu della scelta della strategia.\" Tutte e tre le strategie sono corrette -- ma applicate in fasi diverse.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-194",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Piano Integrato prodotto dal verdetto dell'Agent Debates, in tre fasi sequenziali: 'Mese 1: Un video proof-of-income, nient'altro di critico.' -- \"Ho guadagnato X euro con l'AI questo mese -- ecco come.\" Numeri reali, screenshot reali, metodo passo passo. LinkedIn spike il giorno stesso. In parallelo: costruisci la lista di 15 creator italiani (10K-100K subs) per la collab. A/B testa il thumbnail su LinkedIn prima di produrre il video. 'Mese 2: Sblocca le collab con quel video come biglietto da visita.' -- 10 pitch personalizzati a creator 10K-50K in nicchie adiacenti (finanza personale, freelancing, produttivita). Lead con l'11-min di watch time medio, non il numero di iscritti. Intanto: 1 video/settimana search-optimized per costruire il catalogo. 'Mese 3+: Volume su formati provati + 1 collab/mese.' -- 1 long-form/settimana + 1-2 Shorts tagliati dal long-form + collab mensili scalando"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-195",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "regola",
+   "testo": "Decision gate inserito nel Piano Integrato: 'Se il video proof-of-income fa < 5K views in 30 giorni, salta le collab e defaulta a 2 video search/settimana.' Una condizione di uscita esplicita che ridefinisce il piano se il primo esperimento non funziona."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-196",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Il disagreement più interessante rimasto dopo il dibattito: 'Micro-collab (10K-50K) come stepping stone vs. andare diretti ai 100K+. Il mio take: parti dai 10K-50K. A 2,700 iscritti, anche un creator da 20K e un moltiplicatore 7x. E la prima collab diventa materiale per pitchare la successiva.'"
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-197",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "avvertimento",
+   "testo": "Rischio più grande segnalato dal verdetto del dibattito: 'Il buco motivazionale del Mese 2. Il Mese 1 e eccitante. Il Mese 2 e la grind. Pre-scrivi gli script del Mese 2 prima di finire il Mese 1.' Un avvertimento operativo su come il piano rischia di arenarsi psicologicamente, non tecnicamente."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-198",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "dato",
+   "testo": "Risultato atteso finale del Piano Integrato: 'Con esecuzione forte: 20K-40K iscritti entro dicembre 2026. Con un video breakout: 40K-70K. 100K richiede 2+ eventi virali o una collab con un canale 200K+ -- possibile ma non pianificabile.' Un ridimensionamento esplicito rispetto all'obiettivo iniziale di 100K, con link a debate_report.md e polling_report.md."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-199",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "definizione",
+   "testo": "Diagramma 'Browser Swarm' su lavagna Excalidraw: a sinistra un riquadro viola 'UN COMPITO -- Compila 50 moduli di contatto' con sotto 'Tempo sequenziale: 5 ore'; una freccia porta a un riquadro giallo 'ORCHESTRATORE'; da qui cinque frecce verso cinque riquadri colorati impilati: 'Browser 1 -- Moduli 1-10' (verde), 'Browser 2 -- Moduli 11-20' (arancione), 'Browser 3 -- Moduli 21-30' (blu), 'Browser 4 -- Moduli 31-40' (rosa/rosso), 'Browser 5 -- Moduli 41-50' (viola); tutte le frecce convergono verso 'Tutti simultanei' e poi in un riquadro finale verde 'COMPLETATO -- Tempo reale: 1 ora (5x piu veloce)'."
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-200",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "tipo": "principio",
+   "testo": "Didascalia sotto il diagramma Browser Swarm, principio cardine della tecnica: 'Lo stesso compito, diviso tra N browser indipendenti, finisce N volte piu in fretta.'"
+  }
+ ]
+}

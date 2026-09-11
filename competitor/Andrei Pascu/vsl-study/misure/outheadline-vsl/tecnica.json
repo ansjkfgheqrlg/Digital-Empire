@@ -1,0 +1,34 @@
+{
+ "file": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\competitor\\Andrei Pascu\\vsl-study\\sorgenti\\outheadline-vsl\\video.mp4",
+ "peso_byte": 17854198,
+ "peso_MB": 17.0,
+ "contenitore": "mov,mp4,m4a,3gp,3g2,mj2",
+ "durata_s": 46.251,
+ "durata_hhmmss": "0:46.25",
+ "bitrate_totale_bps": 3088249,
+ "video": {
+  "codec": "h264",
+  "profilo": "High",
+  "pix_fmt": "yuv420p",
+  "larghezza": 1920,
+  "altezza": 1080,
+  "fps_dichiarato": "24/1",
+  "fps_reale": 24.0,
+  "frame_totali": 1110,
+  "frame_totali_metodo": "ffprobe stream=nb_frames",
+  "durata_s": 46.25,
+  "bitrate_bps": 2953831
+ },
+ "audio": {
+  "codec": "aac",
+  "profilo": "LC",
+  "sample_rate_hz": 48000,
+  "canali": 2,
+  "durata_s": 46.251,
+  "bitrate_bps": 128836,
+  "frame_audio": 2168
+ },
+ "comandi": [
+  "ffprobe -v error -show_format -show_streams -of json \"C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\competitor\\Andrei Pascu\\vsl-study\\sorgenti\\outheadline-vsl\\video.mp4\""
+ ]
+}

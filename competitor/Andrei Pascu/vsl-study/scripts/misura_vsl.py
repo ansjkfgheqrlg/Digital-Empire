@@ -70,7 +70,7 @@ SCENE_DETECTOR = (
     / "scene_detector.py"
 )
 
-VERSIONE = "1.0.0"
+VERSIONE = "1.2.0"
 
 # ----------------------------------------------------------------------------
 # Parametri di misura (i default sono CALIBRATI, vedi PARAMETRI_MOTIVAZIONE)
@@ -83,11 +83,15 @@ CANDIDATO_MIN = 0.020       # si salvano su disco tutti i frame con score >= que
 
 SILENZIO_A = ("-40dB", 0.30)   # silenzio assoluto
 SILENZIO_B = ("-30dB", 0.25)   # pausa del parlato
+SILENZIO_C_SOTTO = 12.0        # dB sotto la mediana RMS del video: pausa relativa
+SILENZIO_C_MIN = 0.25          # s
 
 FINESTRA_AUDIO = 0.5        # s: passo del profilo di volume
 PCM_HZ = 16000              # frequenza a cui si legge il PCM per il profilo
-REGIME_SALTO_DB = 6.0       # dB: salto di RMS mediano fra blocchi che segna un cambio
 REGIME_BLOCCO = 5.0         # s: durata del blocco su cui si calcola la mediana
+REGIME_RMS_MIN_DB = 3.0     # dB: pavimento della soglia di salto RMS
+REGIME_ZCR_MIN = 0.05       # pavimento della soglia di salto zero-crossing rate
+REGIME_PERCENTILE = 0.90    # la soglia e' il massimo fra il pavimento e questo percentile
 
 PASSO_FRAME = 2.0           # s fra un frame denso e il successivo
 LARGHEZZA_FRAME = 960       # px
@@ -112,14 +116,34 @@ PARAMETRI_MOTIVAZIONE = {
         "armageddon-home il passaggio dal parlato al b-roll in bianco e nero "
         "segna 0.0312. Questi tagli morbidi sono sotto-contati per costruzione."
     ),
+    "moto_continuo": (
+        "Su un video di grafica animata continua (griglie che scorrono, zoom "
+        "permanenti) nessuna soglia per fotogramma separa il movimento dal "
+        "taglio: verificato all'occhio su outheadline-vsl il 2026-09-10, dove "
+        "fotogrammi consecutivi contati come tagli distinti appartengono alla "
+        "stessa animazione, e dove alzare la soglia a 0.100 lascia comunque 60 "
+        "tagli su 68. Il campo moto_dell_immagine misura il fenomeno. La "
+        "mediana NON basta a distinguere il caso (0.0040 su outheadline contro "
+        "0.0018 su armageddon-home): a distinguerlo sono il percentile 90 e la "
+        "frazione di fotogrammi sopra soglia. Sui dieci VSL misurati il "
+        "percentile 90 sta fra 0.0040 e 0.0126 e i fotogrammi sopra soglia fra "
+        "1.24% e 2.02% in otto casi su dieci; i due fuori scala sono "
+        "outheadline-vsl (p90 0.0751, 12.43%) e claude-speedrun-hero (p90 "
+        "0.0470, 11.64%), ed e' esattamente sui due video dal ritmo dichiarato "
+        "piu' rapido (0.67 s e 0.66 s di inquadratura media). Su quei due il "
+        "numero di tagli va letto come limite superiore, non come conteggio."
+    ),
     "finestra_fusione": (
         "0.20 s. Un taglio secco puo' far superare la soglia a due fotogrammi "
         "consecutivi; entro 0.20 s si contano come un taglio solo."
     ),
     "silenzi": (
-        "Due configurazioni dichiarate, perche' con la musica sotto la voce il "
+        "Tre configurazioni dichiarate, perche' con la musica sotto la voce il "
         "silenzio assoluto quasi non esiste: -40 dB / 0.30 s misura il silenzio "
-        "vero, -30 dB / 0.25 s misura la pausa del parlato."
+        "vero; -30 dB / 0.25 s la pausa a soglia fissa (confrontabile fra video "
+        "diversi); e una soglia relativa, 12 dB sotto la mediana RMS di QUESTO "
+        "video con durata minima 0.25 s, che si adatta a un mix compresso in cui "
+        "nessuna soglia assoluta bassa scatterebbe mai."
     ),
     "profilo_audio": (
         "Finestre da 0.5 s sul PCM mono a 16 kHz: RMS in dBFS, picco in dBFS, "
@@ -127,10 +151,16 @@ PARAMETRI_MOTIVAZIONE = {
         "integrata) viene dal filtro ebur128 di ffmpeg con cadenza 100 ms."
     ),
     "cambio_regime": (
-        "Meccanico, nessun giudizio: si calcola la mediana di RMS su blocchi da "
-        "5 s e si segna ogni blocco che si discosta di 6 dB o piu' dal blocco "
-        "precedente. Che cosa sia entrato (musica, stinger, voce sola) lo dira' "
-        "l'occhio in Fase 2, non questo script."
+        "Meccanico, nessun giudizio. Su blocchi da 5 s si calcola la mediana di "
+        "RMS (quanto e' forte) e la mediana dello zero-crossing rate (quanto e' "
+        "acuto il contenuto: la voce e la musica non hanno lo stesso ZCR anche a "
+        "pari volume). Si segna ogni blocco che si discosta dal precedente oltre "
+        "soglia, su almeno uno dei due canali. La soglia NON e' fissa: e' il "
+        "massimo fra un pavimento (3 dB per l'RMS, 0.05 per lo ZCR) e il "
+        "percentile 90 dei salti misurati in questo stesso video, perche' un mix "
+        "compresso a LRA 3 LU non produrra' mai salti da 6 dB e una soglia fissa "
+        "restituirebbe zero. Che cosa sia entrato (musica, stinger, voce sola) lo "
+        "dira' l'occhio in Fase 2, non questo script."
     ),
     "frame": (
         "Un frame ogni 2 s a 960 px di larghezza. La riduzione ai soli frame in "
@@ -427,6 +457,30 @@ def misura_stacchi(video, dest, durata, fps, soglia, tmp):
     candidati = [{"t": round(t, 2), "score": round(s, 4)}
                  for t, s in punteggi if s >= CANDIDATO_MIN]
 
+    # Quanto si muove l'immagine anche SENZA tagli: distingue un parlato fermo
+    # da un video di animazione continua, dove nessuna soglia per fotogramma
+    # puo' separare il movimento dal taglio.
+    solo_punteggi = sorted(s for _, s in punteggi)
+
+    def perc(q):
+        if not solo_punteggi:
+            return None
+        return round(solo_punteggi[min(int(q * len(solo_punteggi)), len(solo_punteggi) - 1)], 4)
+
+    moto = {
+        "punteggio_mediano": perc(0.50),
+        "punteggio_p75": perc(0.75),
+        "punteggio_p90": perc(0.90),
+        "punteggio_p99": perc(0.99),
+        "frazione_frame_sopra_soglia": round(
+            sum(1 for s in solo_punteggi if s > soglia) / float(len(solo_punteggi)), 4)
+        if solo_punteggi else None,
+        "lettura": "Il punteggio mediano dice quanto cambia l'immagine da un "
+                   "fotogramma al successivo quando NON c'e' un taglio. Piu' e' "
+                   "alto, piu' il conteggio dei tagli comprende movimento "
+                   "(animazione, zoom, pan) e non solo stacchi di montaggio.",
+    }
+
     dati = {
         "slug": dest.name,
         "metodo": {
@@ -450,6 +504,7 @@ def misura_stacchi(video, dest, durata, fps, soglia, tmp):
         "inquadrature": inquadrature,
         "statistiche_durata_inquadratura": statistiche(durate),
         "profilo_per_minuto": profilo,
+        "moto_dell_immagine": moto,
         "sensibilita_soglia": sensibilita,
         "candidati_sopra_%.3f" % CANDIDATO_MIN: candidati,
     }
@@ -473,6 +528,8 @@ def misura_stacchi(video, dest, durata, fps, soglia, tmp):
     r.append("| durata mediana | %s s |" % st.get("mediana"))
     r.append("| minima / massima | %s s / %s s |" % (st.get("min"), st.get("max")))
     r.append("| deviazione standard | %s s |" % st.get("deviazione_standard"))
+    r.append("| punteggio di scena mediano (moto dell'immagine) | %s |" % moto["punteggio_mediano"])
+    r.append("| frame sopra soglia | %s%% |" % round(100 * (moto["frazione_frame_sopra_soglia"] or 0), 2))
     r.append("")
     r.append("Comando: `%s`" % cmd_str(cmd))
     r.append("")
@@ -558,43 +615,7 @@ def misura_audio(video, dest, durata, tmp):
     momentary = [v["M"] for v in r128 if v["M"] > -70]
     short = [v["S"] for v in r128 if v["S"] > -70]
 
-    # --- 3b. Silenzi, due configurazioni ------------------------------------
-    silenzi = {}
-    for etichetta, (rumore, minimo) in (("silenzio_assoluto", SILENZIO_A),
-                                        ("pausa_parlato", SILENZIO_B)):
-        sd_err = tmp / ("silence_%s.txt" % etichetta)
-        filtro_sd = "silencedetect=noise=%s:d=%s" % (rumore, minimo)
-        cmd_sd = ["ffmpeg", "-v", "info", "-nostdin", "-i", str(video), "-vn",
-                  "-af", filtro_sd, "-f", "null", "-"]
-        with open(sd_err, "wb") as fe:
-            subprocess.run(cmd_sd, stdout=subprocess.DEVNULL, stderr=fe)
-        comandi.append(cmd_str(cmd_sd))
-        testo = open(sd_err, "r", encoding="utf-8", errors="replace").read()
-        inizi = [float(x) for x in re.findall(r"silence_start:\s*(-?[\d.]+)", testo)]
-        fini = re.findall(r"silence_end:\s*([\d.]+)\s*\|\s*silence_duration:\s*([\d.]+)", testo)
-        lista = []
-        for i, (fine, dur) in enumerate(fini):
-            ini = inizi[i] if i < len(inizi) else float(fine) - float(dur)
-            lista.append({"inizio_s": round(max(ini, 0.0), 3),
-                          "fine_s": round(float(fine), 3),
-                          "durata_s": round(float(dur), 3)})
-        if len(inizi) > len(fini):  # silenzio aperto in coda
-            lista.append({"inizio_s": round(inizi[-1], 3),
-                          "fine_s": round(durata, 3),
-                          "durata_s": round(durata - inizi[-1], 3)})
-        durate_sil = [s["durata_s"] for s in lista]
-        silenzi[etichetta] = {
-            "soglia_rumore": rumore,
-            "durata_minima_s": minimo,
-            "comando": cmd_str(cmd_sd),
-            "n": len(lista),
-            "totale_s": round(sum(durate_sil), 2),
-            "percentuale_del_video": round(100.0 * sum(durate_sil) / durata, 2) if durata else None,
-            "statistiche": statistiche(durate_sil),
-            "elenco": lista,
-        }
-
-    # --- 3c. Profilo a finestre da 0,5 s dal PCM ----------------------------
+    # --- 3b. Profilo a finestre da 0,5 s dal PCM ----------------------------
     pcm = tmp / "audio.raw"
     cmd_pcm = ["ffmpeg", "-v", "error", "-nostdin", "-i", str(video), "-vn",
                "-ac", "1", "-ar", str(PCM_HZ), "-f", "s16le", "-"]
@@ -630,12 +651,56 @@ def misura_audio(video, dest, durata, tmp):
             "zcr": round(incroci / float(per_finestra), 4),
         })
 
+    rms_tutti = [p["rms_dBFS"] for p in profilo]
+    rms_mediano = statistics.median(rms_tutti) if rms_tutti else -60.0
+
     # picchi: le finestre col picco piu' alto, e dove stanno
     ordinati = sorted(profilo, key=lambda x: x["picco_dBFS"], reverse=True)
     picchi_top = [{"t": p["t"], "picco_dBFS": p["picco_dBFS"], "hhmmss": hhmmss(p["t"])}
                   for p in ordinati[:25]]
 
-    # --- 3d. Cambi di regime, meccanici -------------------------------------
+    # --- 3c. Silenzi, tre configurazioni ------------------------------------
+    silenzio_c = ("%ddB" % int(round(rms_mediano - SILENZIO_C_SOTTO)), SILENZIO_C_MIN)
+    silenzi = {}
+    for etichetta, (rumore, minimo) in (("silenzio_assoluto", SILENZIO_A),
+                                        ("pausa_soglia_fissa", SILENZIO_B),
+                                        ("pausa_soglia_relativa", silenzio_c)):
+        sd_err = tmp / ("silence_%s.txt" % etichetta)
+        filtro_sd = "silencedetect=noise=%s:d=%s" % (rumore, minimo)
+        cmd_sd = ["ffmpeg", "-v", "info", "-nostdin", "-i", str(video), "-vn",
+                  "-af", filtro_sd, "-f", "null", "-"]
+        with open(sd_err, "wb") as fe:
+            subprocess.run(cmd_sd, stdout=subprocess.DEVNULL, stderr=fe)
+        comandi.append(cmd_str(cmd_sd))
+        testo = open(sd_err, "r", encoding="utf-8", errors="replace").read()
+        inizi = [float(x) for x in re.findall(r"silence_start:\s*(-?[\d.]+)", testo)]
+        fini = re.findall(r"silence_end:\s*([\d.]+)\s*\|\s*silence_duration:\s*([\d.]+)", testo)
+        lista = []
+        for i, (fine, dur) in enumerate(fini):
+            ini = inizi[i] if i < len(inizi) else float(fine) - float(dur)
+            lista.append({"inizio_s": round(max(ini, 0.0), 3),
+                          "fine_s": round(float(fine), 3),
+                          "durata_s": round(float(dur), 3)})
+        if len(inizi) > len(fini):  # silenzio aperto in coda
+            lista.append({"inizio_s": round(inizi[-1], 3),
+                          "fine_s": round(durata, 3),
+                          "durata_s": round(durata - inizi[-1], 3)})
+        durate_sil = [s["durata_s"] for s in lista]
+        silenzi[etichetta] = {
+            "soglia_rumore": rumore,
+            "soglia_come_ottenuta": (
+                "mediana RMS del video (%.2f dBFS) meno %.0f dB" % (rms_mediano, SILENZIO_C_SOTTO)
+                if etichetta == "pausa_soglia_relativa" else "soglia assoluta fissa"),
+            "durata_minima_s": minimo,
+            "comando": cmd_str(cmd_sd),
+            "n": len(lista),
+            "totale_s": round(sum(durate_sil), 2),
+            "percentuale_del_video": round(100.0 * sum(durate_sil) / durata, 2) if durata else None,
+            "statistiche": statistiche(durate_sil),
+            "elenco": lista,
+        }
+
+    # --- 3d. Cambi di regime, meccanici, soglia calibrata su questo video ----
     per_blocco = int(REGIME_BLOCCO / FINESTRA_AUDIO)
     blocchi = []
     for i in range(0, len(profilo) - per_blocco + 1, per_blocco):
@@ -643,19 +708,38 @@ def misura_audio(video, dest, durata, tmp):
         blocchi.append({"t": seg[0]["t"],
                         "rms_mediano_dBFS": round(statistics.median([s["rms_dBFS"] for s in seg]), 2),
                         "zcr_mediano": round(statistics.median([s["zcr"] for s in seg]), 4)})
+
+    d_rms = [abs(blocchi[i]["rms_mediano_dBFS"] - blocchi[i - 1]["rms_mediano_dBFS"])
+             for i in range(1, len(blocchi))]
+    d_zcr = [abs(blocchi[i]["zcr_mediano"] - blocchi[i - 1]["zcr_mediano"])
+             for i in range(1, len(blocchi))]
+
+    def percentile(v, q):
+        if not v:
+            return 0.0
+        s = sorted(v)
+        return s[min(int(q * len(s)), len(s) - 1)]
+
+    soglia_rms = round(max(REGIME_RMS_MIN_DB, percentile(d_rms, REGIME_PERCENTILE)), 2)
+    soglia_zcr = round(max(REGIME_ZCR_MIN, percentile(d_zcr, REGIME_PERCENTILE)), 4)
+
     cambi = []
     for i in range(1, len(blocchi)):
-        delta = blocchi[i]["rms_mediano_dBFS"] - blocchi[i - 1]["rms_mediano_dBFS"]
-        if abs(delta) >= REGIME_SALTO_DB:
+        dr = blocchi[i]["rms_mediano_dBFS"] - blocchi[i - 1]["rms_mediano_dBFS"]
+        dz = blocchi[i]["zcr_mediano"] - blocchi[i - 1]["zcr_mediano"]
+        su_rms = abs(dr) >= soglia_rms
+        su_zcr = abs(dz) >= soglia_zcr
+        if su_rms or su_zcr:
             cambi.append({"t": blocchi[i]["t"],
                           "hhmmss": hhmmss(blocchi[i]["t"]),
-                          "delta_dB": round(delta, 2),
+                          "canale": "rms+zcr" if (su_rms and su_zcr) else ("rms" if su_rms else "zcr"),
+                          "delta_dB": round(dr, 2),
                           "da_dBFS": blocchi[i - 1]["rms_mediano_dBFS"],
                           "a_dBFS": blocchi[i]["rms_mediano_dBFS"],
+                          "delta_zcr": round(dz, 4),
                           "zcr_da": blocchi[i - 1]["zcr_mediano"],
                           "zcr_a": blocchi[i]["zcr_mediano"]})
 
-    rms_tutti = [p["rms_dBFS"] for p in profilo]
     dati = {
         "slug": dest.name,
         "durata_s": round(durata, 3),
@@ -666,8 +750,16 @@ def misura_audio(video, dest, durata, tmp):
             "motivazione_profilo": PARAMETRI_MOTIVAZIONE["profilo_audio"],
             "motivazione_silenzi": PARAMETRI_MOTIVAZIONE["silenzi"],
             "motivazione_regime": PARAMETRI_MOTIVAZIONE["cambio_regime"],
-            "regime_salto_dB": REGIME_SALTO_DB,
             "regime_blocco_s": REGIME_BLOCCO,
+            "regime_soglia_rms_dB": soglia_rms,
+            "regime_soglia_zcr": soglia_zcr,
+            "regime_soglia_come_ottenuta": (
+                "max(pavimento %s dB, percentile %d dei salti misurati) per l'RMS; "
+                "max(pavimento %s, percentile %d) per lo ZCR" % (
+                    REGIME_RMS_MIN_DB, int(REGIME_PERCENTILE * 100),
+                    REGIME_ZCR_MIN, int(REGIME_PERCENTILE * 100))),
+            "silenzio_relativo_soglia": silenzio_c[0],
+            "rms_mediano_dBFS": round(rms_mediano, 2),
         },
         "ebur128": {
             "riepilogo": riepilogo,
@@ -704,38 +796,42 @@ def misura_audio(video, dest, durata, tmp):
     r.append("| RMS finestre 0,5 s media / min / max | %s / %s / %s dBFS |" % (
         round(statistics.mean(rms_tutti), 2), round(min(rms_tutti), 2), round(max(rms_tutti), 2)))
     r.append("| finestre da 0,5 s misurate | %d |" % len(profilo))
-    for et in ("silenzio_assoluto", "pausa_parlato"):
+    r.append("| RMS mediano del video | %.2f dBFS |" % rms_mediano)
+    for et in ("silenzio_assoluto", "pausa_soglia_fissa", "pausa_soglia_relativa"):
         s = silenzi[et]
         r.append("| %s (%s, min %s s) | %d occorrenze, %s s totali (%s%% del video) |" % (
             et.replace("_", " "), s["soglia_rumore"], s["durata_minima_s"],
             s["n"], s["totale_s"], s["percentuale_del_video"]))
-    r.append("| cambi di regime (>= %s dB su blocchi da %s s) | %d |" % (
-        REGIME_SALTO_DB, REGIME_BLOCCO, len(cambi)))
+    r.append("| cambi di regime (blocchi da %s s; soglia %s dB su RMS, %s su ZCR) | %d |" % (
+        REGIME_BLOCCO, soglia_rms, soglia_zcr, len(cambi)))
     r.append("")
     for c in comandi:
         r.append("Comando: `%s`" % c)
         r.append("")
     r.append("## Cambi di regime del volume")
     r.append("")
-    r.append("Regola meccanica: mediana RMS su blocchi da %s s, si segna ogni salto >= %s dB." % (
-        REGIME_BLOCCO, REGIME_SALTO_DB))
+    r.append("%s" % PARAMETRI_MOTIVAZIONE["cambio_regime"])
+    r.append("")
+    r.append("Soglie calibrate su questo video: RMS %s dB, ZCR %s (blocchi da %s s)." % (
+        soglia_rms, soglia_zcr, REGIME_BLOCCO))
     r.append("")
     if cambi:
-        r.append("| t | hh:mm:ss | da dBFS | a dBFS | delta | zcr da | zcr a |")
-        r.append("|---|---|---|---|---|---|---|")
+        r.append("| t | hh:mm:ss | canale | da dBFS | a dBFS | delta dB | zcr da | zcr a | delta zcr |")
+        r.append("|---|---|---|---|---|---|---|---|---|")
         for c in cambi:
-            r.append("| %.2f | %s | %s | %s | %+0.2f | %s | %s |" % (
-                c["t"], c["hhmmss"], c["da_dBFS"], c["a_dBFS"], c["delta_dB"],
-                c["zcr_da"], c["zcr_a"]))
+            r.append("| %.2f | %s | %s | %s | %s | %+0.2f | %s | %s | %+0.4f |" % (
+                c["t"], c["hhmmss"], c["canale"], c["da_dBFS"], c["a_dBFS"], c["delta_dB"],
+                c["zcr_da"], c["zcr_a"], c["delta_zcr"]))
     else:
         r.append("Nessun salto oltre soglia.")
     r.append("")
     r.append("## Silenzi")
     r.append("")
-    for et in ("silenzio_assoluto", "pausa_parlato"):
+    for et in ("silenzio_assoluto", "pausa_soglia_fissa", "pausa_soglia_relativa"):
         s = silenzi[et]
-        r.append("### %s - soglia %s, durata minima %s s" % (
-            et.replace("_", " "), s["soglia_rumore"], s["durata_minima_s"]))
+        r.append("### %s - soglia %s (%s), durata minima %s s" % (
+            et.replace("_", " "), s["soglia_rumore"], s["soglia_come_ottenuta"],
+            s["durata_minima_s"]))
         r.append("")
         r.append("%d occorrenze, %s s totali, %s%% del video. Media %s s, mediana %s s, max %s s." % (
             s["n"], s["totale_s"], s["percentuale_del_video"],
@@ -840,7 +936,9 @@ def estrai_frame(video, dest, durata, tagli):
     cmd_esempio = None
     for i, t in enumerate(bordi):
         nome = "stacco-%04d.png" % (i + 1)
-        c = ["ffmpeg", "-v", "error", "-nostdin", "-ss", "%.3f" % max(t + 0.02, 0.0),
+        # clamp: un taglio a ridosso della fine non ha 0.02 s davanti a se'
+        istante = min(max(t + 0.02, 0.0), max(durata - 0.08, 0.0))
+        c = ["ffmpeg", "-v", "error", "-nostdin", "-ss", "%.3f" % istante,
              "-i", str(video), "-frames:v", "1",
              "-vf", "scale=%d:-2" % LARGHEZZA_FRAME, "-y", str(stac / nome)]
         rc, _, _ = esegui(c, timeout=120)
@@ -863,7 +961,10 @@ def estrai_frame(video, dest, durata, tagli):
             "riduzione_fonte": fonte_metodo,
             "motivazione": PARAMETRI_MOTIVAZIONE["frame"],
             "nota_stacchi": "il frame di stacco e' preso a t+0.02 s, cioe' il primo "
-                            "fotogramma dell'inquadratura nuova",
+                            "fotogramma dell'inquadratura nuova; se il taglio cade a "
+                            "meno di 0.08 s dalla fine del video l'istante viene "
+                            "riportato a durata-0.08 s, altrimenti ffmpeg non "
+                            "restituirebbe alcun fotogramma",
         },
         "frame_densi_n": len(manifest_densi),
         "frame_unici_n": len(tenuti),
@@ -884,7 +985,8 @@ def scrivi_sommario(dest, tec, sta, aud, fra, soglia, secondi):
     st = sta["statistiche_durata_inquadratura"]
     rip = aud["ebur128"]["riepilogo"]
     sa = aud["silenzi"]["silenzio_assoluto"]
-    sp = aud["silenzi"]["pausa_parlato"]
+    sp = aud["silenzi"]["pausa_soglia_fissa"]
+    sr = aud["silenzi"]["pausa_soglia_relativa"]
     prs = aud["profilo_statistiche_rms_dBFS"]
 
     r = []
@@ -925,6 +1027,10 @@ def scrivi_sommario(dest, tec, sta, aud, fra, soglia, secondi):
     r.append("| durata minima | %s s |" % st.get("min"))
     r.append("| durata massima | %s s |" % st.get("max"))
     r.append("| deviazione standard | %s s |" % st.get("deviazione_standard"))
+    mo = sta.get("moto_dell_immagine", {})
+    r.append("| moto dell'immagine: punteggio di scena p90 | %s (mediana %s, p99 %s) |" % (
+        mo.get("punteggio_p90"), mo.get("punteggio_mediano"), mo.get("punteggio_p99")))
+    r.append("| frame sopra soglia | %s%% |" % round(100 * (mo.get("frazione_frame_sopra_soglia") or 0), 2))
     minuti_ord = sorted(sta["profilo_per_minuto"], key=lambda p: p["tagli"], reverse=True)
     if minuti_ord:
         r.append("| minuto con piu' tagli | minuto %d, %d tagli |" % (minuti_ord[0]["minuto"], minuti_ord[0]["tagli"]))
@@ -935,6 +1041,8 @@ def scrivi_sommario(dest, tec, sta, aud, fra, soglia, secondi):
     r.append("Soglia: %s" % PARAMETRI_MOTIVAZIONE["soglia_scena"])
     r.append("")
     r.append("Limite noto: %s" % PARAMETRI_MOTIVAZIONE["limite_noto_soglia"])
+    r.append("")
+    r.append("Secondo limite noto: %s" % PARAMETRI_MOTIVAZIONE["moto_continuo"])
     r.append("")
     r.append("Sensibilita' (stessa passata, soglie diverse):")
     r.append("")
@@ -961,9 +1069,14 @@ def scrivi_sommario(dest, tec, sta, aud, fra, soglia, secondi):
         prs.get("media"), prs.get("min"), prs.get("max")))
     r.append("| silenzi assoluti (%s, min %s s) | %d, %s s totali (%s%%) |" % (
         sa["soglia_rumore"], sa["durata_minima_s"], sa["n"], sa["totale_s"], sa["percentuale_del_video"]))
-    r.append("| pause del parlato (%s, min %s s) | %d, %s s totali (%s%%) |" % (
+    r.append("| pause a soglia fissa (%s, min %s s) | %d, %s s totali (%s%%) |" % (
         sp["soglia_rumore"], sp["durata_minima_s"], sp["n"], sp["totale_s"], sp["percentuale_del_video"]))
-    r.append("| cambi di regime del volume | %d |" % len(aud["cambi_di_regime"]))
+    r.append("| pause a soglia relativa (%s = %s, min %s s) | %d, %s s totali (%s%%) |" % (
+        sr["soglia_rumore"], sr["soglia_come_ottenuta"], sr["durata_minima_s"],
+        sr["n"], sr["totale_s"], sr["percentuale_del_video"]))
+    r.append("| cambi di regime del volume | %d (soglia %s dB su RMS, %s su ZCR) |" % (
+        len(aud["cambi_di_regime"]), aud["metodo"]["regime_soglia_rms_dB"],
+        aud["metodo"]["regime_soglia_zcr"]))
     if aud["picchi_massimi"]:
         p0 = aud["picchi_massimi"][0]
         r.append("| picco piu' alto | %s dBFS a %s |" % (p0["picco_dBFS"], p0["hhmmss"]))
@@ -976,10 +1089,11 @@ def scrivi_sommario(dest, tec, sta, aud, fra, soglia, secondi):
     r.append("Cambi di regime: %s" % PARAMETRI_MOTIVAZIONE["cambio_regime"])
     r.append("")
     if aud["cambi_di_regime"]:
-        r.append("| t | delta dB | da | a |")
-        r.append("|---|---|---|---|")
+        r.append("| t | canale | delta dB | da | a | delta zcr |")
+        r.append("|---|---|---|---|---|---|")
         for c in aud["cambi_di_regime"]:
-            r.append("| %s | %+0.2f | %s | %s |" % (c["hhmmss"], c["delta_dB"], c["da_dBFS"], c["a_dBFS"]))
+            r.append("| %s | %s | %+0.2f | %s | %s | %+0.4f |" % (
+                c["hhmmss"], c["canale"], c["delta_dB"], c["da_dBFS"], c["a_dBFS"], c["delta_zcr"]))
         r.append("")
     r.append("## Frame")
     r.append("")
@@ -1020,6 +1134,11 @@ def firma_parametri(soglia):
         "finestra_audio": FINESTRA_AUDIO,
         "silenzio_a": list(SILENZIO_A),
         "silenzio_b": list(SILENZIO_B),
+        "silenzio_c_sotto_dB": SILENZIO_C_SOTTO,
+        "regime_blocco_s": REGIME_BLOCCO,
+        "regime_rms_min_dB": REGIME_RMS_MIN_DB,
+        "regime_zcr_min": REGIME_ZCR_MIN,
+        "regime_percentile": REGIME_PERCENTILE,
         "passo_frame": PASSO_FRAME,
         "larghezza_frame": LARGHEZZA_FRAME,
         "dedup_soglia": DEDUP_SOGLIA,
@@ -1076,9 +1195,11 @@ def misura_video(slug, soglia, con_frame, forza):
         sta["statistiche_durata_inquadratura"].get("media")))
 
     aud = misura_audio(video, dest, durata, tmp)
-    log("[misura] %-24s audio: I=%s LUFS, %d silenzi assoluti, %d pause, %d cambi di regime" % (
+    log("[misura] %-24s audio: I=%s LUFS, LRA=%s LU, %d silenzi assoluti, %d pause relative, %d cambi di regime" % (
         slug, aud["ebur128"]["riepilogo"].get("integrata_LUFS"),
-        aud["silenzi"]["silenzio_assoluto"]["n"], aud["silenzi"]["pausa_parlato"]["n"],
+        aud["ebur128"]["riepilogo"].get("LRA_LU"),
+        aud["silenzi"]["silenzio_assoluto"]["n"],
+        aud["silenzi"]["pausa_soglia_relativa"]["n"],
         len(aud["cambi_di_regime"])))
 
     if con_frame:
@@ -1115,8 +1236,8 @@ def scrivi_indice():
     righe.append("Prodotto da `scripts/misura_vsl.py` v%s. Solo numeri." % VERSIONE)
     righe.append("")
     righe.append("| slug | durata | fps | tagli | inquadrature | durata media | mediana | "
-                 "I LUFS | silenzi | pause | cambi regime | frame unici |")
-    righe.append("|---|---|---|---|---|---|---|---|---|---|---|---|")
+                 "moto p90 | sopra soglia | I LUFS | LRA LU | silenzi | pause rel. | cambi regime | frame unici |")
+    righe.append("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
     for d in sorted(MISURE.iterdir()) if MISURE.is_dir() else []:
         if not d.is_dir():
             continue
@@ -1132,15 +1253,21 @@ def scrivi_indice():
         except Exception:
             unici = "-"
         st = sta["statistiche_durata_inquadratura"]
-        righe.append("| %s | %s | %s | %d | %d | %s s | %s s | %s | %d | %d | %d | %s |" % (
+        righe.append("| %s | %s | %s | %d | %d | %s s | %s s | %s | %s%% | %s | %s | %d | %d | %d | %s |" % (
             d.name, tec["durata_hhmmss"], tec["video"]["fps_reale"], sta["tagli_n"],
             sta["inquadrature_n"], st.get("media"), st.get("mediana"),
+            sta.get("moto_dell_immagine", {}).get("punteggio_p90"),
+            round(100 * (sta.get("moto_dell_immagine", {}).get("frazione_frame_sopra_soglia") or 0), 2),
             aud["ebur128"]["riepilogo"].get("integrata_LUFS"),
-            aud["silenzi"]["silenzio_assoluto"]["n"], aud["silenzi"]["pausa_parlato"]["n"],
+            aud["ebur128"]["riepilogo"].get("LRA_LU"),
+            aud["silenzi"]["silenzio_assoluto"]["n"],
+            aud["silenzi"]["pausa_soglia_relativa"]["n"],
             len(aud["cambi_di_regime"]), unici))
     righe.append("")
     righe.append("Soglia scene score usata: %.3f. %s" % (
         SOGLIA_SCENA, PARAMETRI_MOTIVAZIONE["soglia_scena"]))
+    righe.append("")
+    righe.append("Come leggere le colonne moto p90 e sopra soglia: %s" % PARAMETRI_MOTIVAZIONE["moto_continuo"])
     righe.append("")
     scrivi_testo(MISURE / "_INDICE.md", "\n".join(righe))
 

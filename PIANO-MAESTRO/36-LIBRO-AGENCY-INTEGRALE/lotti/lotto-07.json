@@ -1,0 +1,1206 @@
+{
+ "lotto": 7,
+ "totale": 200,
+ "atomi": [
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-001",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "La tesi d'apertura del corso: una company brain (cervello aziendale) è la tecnologia che separa chi usa l'AI per moltiplicare il proprio business da chi la usa solo per giocarci. Il corso promette di costruirne uno reale e funzionante, non un esperimento teorico."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-002",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Prima ancora di mostrarla, il video anticipa con un overlay di testo la domanda retorica su cosa sia davvero una company brain, segnalando che quasi nessuno lo sa: il resto del corso esiste per rispondere a questa domanda."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-003",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "La company brain reale mostrata nel video è una graph view di Obsidian a schermo intero, tema scuro: una sfera densissima di migliaia di nodi colorati con un anello esterno di puntini bianchi isolati. La legenda a sinistra elenca le cartelle-gruppo per colore: `_showcase`, `areas` (arancione), `code`, `concepts` (verde/teal), `data` (verde lime), `docs` (azzurro), `entities`, `outputs` (viola), `projects` (giallo), `scripts`, `self` (rosso/rosa), `sources`, `workspace` (blu); più, senza colore-gruppo dedicato: `CONVENTIONS`, `README`, `tutorial-completo`, `tutorial-pratico` (chiamato altrove anche `tutorial-grafico`)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-004",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "La company brain mostrata contiene 22.870 documenti (cifra scritta sulla lavagna Excalidraw dell'agenda). Il video però usa anche la cifra 22.500 detta a voce più avanti durante la demo: le due cifre divergono e non vengono riconciliate esplicitamente nel materiale visto."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-005",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Anatomia reale di una nota atomica della company brain, nota `kpi-2025-edifici`: pannello Properties con campi `title` (\"KPI 2025 — Edifici gestiti\"), `summary` (frase discorsiva sul contenuto), `tags` (4 pill colorate tra cui `data` e `kpi`), `status`, `created`/`updated` (10-06-2026), `related` (tre wikilink). Corpo: titolo, poi bullet con il dato, la sua provenienza (link a `[[prodotto-aurora-core]]`) e la sua quadratura (somma verificabile). La sidebar mostra già le 11 cartelle: `areas`, `code`, `concepts`, `data`, `docs`, `entities`, `outputs`, `projects`, `self`, `sources`, `workspace`."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-006",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Il dato solido riportato nella nota `kpi-2025-edifici`: 751 edifici gestiti sulla piattaforma a fine 2025, distribuiti su 9 clienti attivi, con una riga di \"quadratura\" che dichiara la somma degli immobili dei 9 clienti. Attenzione: la lista di addendi visibile nel frame (8 numeri leggibili per 9 clienti dichiarati, somma 757) non torna con 751 — a risoluzione 640x360 una o più cifre non sono leggibili con certezza, quindi i singoli addendi non vanno usati come dato, solo il totale dichiarato (751) e il conteggio clienti (9)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-007",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "L'identità reale dell'autore/relatore: il sito mostrato a schermo è `gentes.ai` (agenzia \"Gentes\"), con badge \"Ten years building growth systems inside Amazon and P&G\" e loghi partner tra cui Anthropic e Notion. La trascrizione automatica del video rende il nome come \"Gente Sei\": il nome corretto, letto direttamente sul frame, è Gentes."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-008",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "L'autore gestisce una community a pagamento su Skool, \"Avanguardia Plus\" (`skool.com/avanguardia-plus`), presentata a schermo come programma pensato per portare l'iscritto al primo ritorno economico con l'AI entro 90 giorni. Nel feed si vede l'owner (Giovanni Beggiato, che nel video si presenta oralmente come \"Joe\") postare il messaggio di benvenuto."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-009",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Agenda completa del corso disegnata su lavagna Excalidraw, 13 voci: 1) ROI delle Company Brain e perché ORA; 2) Production Ready Brain 22.870 documenti; 3) Come Obsidian, Notion, Github, Qdrant e Claude interagiscono; 4) Come installare Obsidian; 5) Come funziona Obsidian (wikilinks, backlinks, frontmatter, tags); 6) Le 11 cartelle: la struttura del cervello, con la regola che dice dove va ogni cosa senza più pensarci; 7) Prendiamo il materiale grezzo dell'azienda e lo trasformiamo in note atomiche e collegate; 8) L'indice per le AI (llms.txt); 9) Grafo a sfera; 10) Github o Google Drive per version control; 11) Self-Improvement guidati dalla company brain; 12) Layer Visivi (Notion, HTML); 13) Memoria Viva: aggiornamento automatico ad ogni sessione."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-010",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Documento Notion companion \"Company Brain — Tutti i prompt del tutorial\", indice completo: Passo 1 (Obsidian a mano, nessun prompt); Prompt 2 — Estrai il canon (prima un piano, poi l'ok); Prompt 3 — Trasforma il canon in note atomiche (prima gli hub); Prompt 4 — Completa il cervello (fino a circa 28 note); Passo 3 — Gate di qualità, indice per le AI, showcase, grafo, GitHub (Prompt 5 — gate di qualità/solo referto; Prompt 6 — correggi e ripeti finché \"0 errori\"; Prompt 7 — genera llms.txt; Prompt 8 — lo showcase; impostazioni grafo a sfera a mano; Prompt 9 — vault sotto git senza push); Passo 4 — Interrogare il cervello, mostrarlo, tenerlo vivo (Prompt 10 — interroga a 28 note senza RAG; Prompt 11 — domanda di incrocio dove le cartelle si arrendono; Prompt 12 — cruscotto HTML locale; Prompt 13 — apri sessione/briefing; Prompt 14 — chiudi sessione/diario)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-011",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Passo 1 completo del documento Notion, riportato integralmente — l'unico passo che si fa a mano dentro Obsidian, senza alcun prompt all'AI: (1) Installa Obsidian e crea il contenitore vuoto: vai su `obsidian.md`, scarica la versione per il tuo sistema (Mac o Windows) e installala; crea sul computer una cartella nuova e vuota `aurora-cervello`; apri Obsidian → \"Apri cartella come vault\" (\"Open folder as vault\") → seleziona `aurora-cervello`. (2) Prima nota: crea (Cmd+N / Ctrl+N), chiamala `self-identita-aurora`, scrivi nel corpo il testo aziendale. (3) Seconda nota + wikilink: crea `persona-elena-ferraro` con un wikilink `[[self-identita-aurora]]`, poi torna sulla prima nota e aggiungi in fondo un wikilink di ritorno `[[persona-elena-ferraro]]`. (4) Backlink: su `self-identita-aurora`, attiva il pannello \"Backlinks\" (tre puntini in alto a destra → \"Mostra backlink\"): il collegamento compa"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-012",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Patto dichiarato col pubblico all'inizio della parte 2, tre promesse: 1) costruiremo un company brain assieme; 2) capirete il vantaggio competitivo di averne uno; 3) saprete cosa serve per scalarlo."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-013",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Diagramma centrale della tesi economica: nodo viola in cima \"CONOSCENZA SPARSA\" con tre figli collegati: ① verde \"Nelle chat\" (\"decisioni prese al volo\"); ② arancio \"Nella testa delle persone\" (\"il commerciale, il tecnico\"); ③ giallo \"In dieci strumenti diversi\" (\"che nessuno ritrova\"). La slide scritta dice \"dieci strumenti diversi\" mentre la voce a 9:53 dice \"20.000 tool diversi\": la slide scritta è il dato affidabile."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-014",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Il rischio \"conoscenza nella testa delle persone\" si biforca in due etichette scritte a mano: \"TOP PERFORMER\" e \"ONBOARDING\". Quando il top performer se ne va o viene sottratto, i tre danni per l'azienda sono: (1) perdita economica immediata (freccia rossa verso il simbolo \"$\" barrato), (2) impossibilità di fare training perché la conoscenza non è mai stata documentata, (3) costo di tempo per riassumere e riformare qualcun altro allo stesso livello."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-015",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Disegno a mano di due linee sinuose orizzontali che si incrociano, completato con un'ellisse rossa sull'incrocio e una freccia rossa che la indica: rappresenta il punto in cui i canali informativi (i \"dieci strumenti diversi\" del box ③) si sovrappongono senza che nessuno lo governi — un collo di bottiglia non gestito."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-016",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Dato di mercato con fonte citata: il settore impiegatizio passa circa il 19% della settimana lavorativa a cercare informazioni, cioè 1 giorno su 5. Fonte dichiarata a schermo: McKinsey Global Report. È uno dei soli tre numeri di terze parti citati con fonte in tutto il video; viene poi ricerchiato in rosso per enfasi."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-017",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Dato di mercato con fonte citata: un nuovo assunto ci mette in media 8-12 mesi per diventare davvero produttivo (gran parte del tempo speso a leggere report, fare domande, ecc.). Fonte dichiarata a schermo: HBR (Harvard Business Review). La trascrizione automatica rende il dato erroneamente come \"8-1 mesi\"; il frame mostra chiaramente 8-12. Viene poi ricerchiato in rosso per enfasi."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-018",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Terzo dato della slide di mercato, senza fonte citata: quando una persona lascia l'azienda, si porta via la sua conoscenza — esce dalla porta e quel pezzo di azienda esce con lei. È il collegamento diretto tra la \"conoscenza nella testa delle persone\" e il rischio di perdita permanente se non è mai stata trasferita in un sistema esterno."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-019",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Curva di apprendimento disegnata a mano sulla lavagna: assi \"Apprend.\" (verticale) e \"Tempo\" (orizzontale). La curva sale, poi scende in una conca, poi risale ripida fino a un plateau. Sul fondo della conca un cerchietto rosso segna il punto critico dove si concentra la perdita di produttività prima della risalita."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-020",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "I tre tempi (in mesi) necessari per superare la conca della curva di apprendimento, raggruppati da una graffa in rosso sotto il grafico: 3-6 mesi per un top performer, 8-12 mesi per un mid performer, 14-18 mesi per un low performer."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-021",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Sulla stessa curva, l'autore annota chi guadagna in quale metà: tratto arancione sulla prima parte della curva (\"VOI GUADAGNATE\", cioè il dipendente durante l'apprendimento), tratto verde sulla seconda parte dopo la risalita (\"AZIENDA GUADAGNA\"), riquadro rosso \"≤ 2 anni\" vicino all'asse Tempo e \"TRAINING\" in alto a destra. Tesi: l'azienda trattiene il dipendente per almeno 2 anni perché solo dopo la conca comincia a guadagnarci; ridurre la conca significa massimizzare il guadagno aziendale."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-022",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Le tre implicazioni economiche dirette dell'accorciare la conca della curva (scritte a mano in rosso): AZIENDA↑↑ (guadagna di più), JOB ROTATION↑↑ (può muovere le persone tra ruoli più liberamente), CHURN (%)↓↓ ⟹ $ (il tasso di abbandono del personale scende, e questo è denaro)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-023",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "anti-pattern",
+   "testo": "Lo \"shadow AI\" del dipendente: un box \"Dipendente\" da cui escono tre oggetti — \"Contratto\" (verde), \"Cartellino del prezzo\" (rosa), \"Dati interni\" (giallo) — verso una nuvola \"ChatGPT / AI esterna\", con un triangolo di warning \"⚠️ Nessun controllo\". Didascalia: dati aziendali incollati fuori, senza protezione. È l'anti-pattern per eccellenza del corso: usare un'AI esterna generica senza governance espone i dati proprietari dell'azienda."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-024",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Principio riassuntivo dello shadow AI, ricostruito dalla frase in corsivo mostrata a schermo (bordi tagliati) e completata dal parlato: la nostra AI è intelligente quanto ciò che può leggere della nostra azienda. Senza una company brain che le dia contesto proprietario, l'AI resta generica."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-025",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Se un'azienda e il suo competitor usano lo stesso modello AI senza un contesto proprietario, ricevono la stessa identica risposta: l'uso dell'AI, da solo, ha zero vantaggio competitivo. Il vantaggio nasce solo dai dati proprietari che alimentano il modello."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-026",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Slide pulita \"L'arbitraggio del cervello aziendale\" (sottotitolo: \"Chi si muove prima prende ciò che chi arriva dopo non recupera\"), due colonne. Colonna 1 \"Si accumula\": ciclo chiuso a tre nodi — \"Lo usi ogni giorno\" (azzurro) → \"La memoria cresce\" (verde) → \"Risposte migliori\" (rosa) → ritorno; didascalia \"Il tempo non si compra\". Colonna 2 \"Quasi nessuno lo sa fare\": linea del tempo con icona pellicola, etichetta \"finestra aperta\", due punti — \"Oggi: 💎 vantaggio raro\" → \"Domani: 📄 normalità\"; didascalia \"Come il sito web nel 1999\"."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-027",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Tesi centrale del grafico ROI: senza company brain la curva di utilizzo dell'AI cresce più o meno uguale per tutti (i modelli migliorano per tutti, competitor inclusi), quindi zero vantaggio competitivo. Con una company brain come quella costruita nel corso, la curva è ripida e personale, perché l'AI comincia a conoscere l'azienda sempre meglio — ed è esattamente questo il vantaggio competitivo."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-028",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Grafico ROI/Tempo completato a mano: due curve — una blu ripida che sale quasi verticale a fine percorso (con company brain) e una linea tratteggiata verde/arancione alternata molto più piatta (senza, cioè i competitor). Tra le due, in corrispondenza dell'estremità destra, una freccia rossa a doppia punta verticale misura lo scarto, chiuso da una parentesi graffa verde. Le aziende grandi hanno il ROI migliore perché hanno già processi e conoscenza accumulata su cui allenare l'AI: il mondo è sempre più governato dai dati."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-029",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Principio \"data first\": con l'AI i dati sono il nuovo oro, come lo erano per i social media ma ora ancora di più — e in questo caso sono i dati proprietari della propria azienda, non dati generici raccolti da terzi."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-030",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "\"LAG\": il ritardo temporale che una startup o un competitor entrato più tardi nel mercato deve colmare rispetto a chi ha già accumulato mesi/anni di company brain. Sul grafico ROI, un pallino rosso pieno sull'asse Tempo segna il punto in cui il competitor entra, e una scritta rossa \"LAG\" con linea tratteggiata ondulata etichetta lo scarto da recuperare."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-031",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Definizione esplicita di \"arbitraggio\" data a voce: l'arbitraggio è la differenza tra quello che fai tu oggi e quello che farà il mercato domani. Vale sia per chi vende il servizio (l'azienda che applica la company brain) sia per chi lo insegna/rivende (freelancer, agenzia, community)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-032",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Le due componenti dell'arbitraggio disegnate a mano sotto il titolo \"ARBITRAGGIO\": due barre/parentesi verticali blu affiancate, e a destra in rosso una freccia verso l'alto etichettata \"VC\" (vantaggio competitivo dell'azienda che applica la company brain) e un'altra freccia sotto etichettata \"NOVITÀ (ROI↗)\" (il fattore novità/ROI che un freelancer o un canale/community porta rivendendo il servizio, prima che la finestra di opportunità si chiuda)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-033",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Tabella completa \"Clienti\" in Notion, colonne Cliente/ARR/Città/Dal/MQ/Prodotto, 20 righe leggibili per intero (ordinate per ARR decrescente): Residenze Aurora Verde €620.000 (Brescia, dal 2014, 90000mq, Care); Polo Universitario Sud €597.000 (Catania, dal 2024, 60000mq, Edge); Torre Eurosky Uffici €558.000 (Roma, dal 2016, 90000mq, Cloud); BioPharma Stabilimenti €555.000 (Latina, dal 2022, 40000mq, Edge); Galleria Moderna €552.000 (Firenze, dal 2018, 40000mq, Care); Iberia Centros €528.000 (Madrid, dal 2013, 18000mq, Care); Università Politecnica Adriatica €522.000 (Ancona, dal 2021, 60000mq, Care); Museo delle Arti Contemporanee €511.000 (Torino, dal 2017, 25000mq, Care); MediCenter Salute €508.000 (Padova, dal 2013, 12000mq, Cloud); Aurora DACH Buildings €486.000 (Monaco di Baviera, dal 2014, 8000mq, Care); Distretto Tessile Pratese €420.000 (Prato, dal 2020, 25000mq, Care); Retail Ga"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-034",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Claude Code (Antigravity IDE) risponde a \"sai dirmi qual è il cliente più grosso per questa azienda?\" con una sequenza di comandi tracciata riga per riga nel thought-process: (1) Bash `ls \"/Users/giovannibeggiato/Desktop/Company Knowledge Base/entities/\" \"/Users/giovannibeggiato/Desktop/Company Knowledge Base/scripts/rag/views/\" 2>/dev/null` per elencare le cartelle entities e views; (2) Read del file `view-clienti-arr.md` (una vista/aggregazione); (3) Bash `ls -la \"/Users/giovannibeggiato/Desktop/Company Knowledge Base/workspace/overrides/\" 2>/dev/null` che trova `cliente-residenze-aurora-verde.md`; (4) a voce alta: \"C'è un override su Residenze Aurora Verde, lo controllo prima di risponderti\"; (5) Read del file di override `cliente-residenze-aurora-verde.md` prima di formulare la risposta finale. Il meccanismo dimostrato: mai rispondere solo dalla vista aggregata, controllare sempre se"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-035",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Risposta finale di Claude Code alla domanda sul cliente più grosso (prima dell'aggiornamento ARR del Polo Universitario Sud): Residenze Aurora Verde (Brescia, segmento SMB) con 620.000 EUR di ARR, dato preso da `view-clienti-arr.md` e comprensivo dell'override manuale applicato il 9 giugno (ARR portato da 590.000 a 620.000 EUR, già propagato alla vista). Al secondo posto Polo Universitario Sud con 597.000 EUR — quindi anche senza l'override Residenze Aurora Verde resterebbe comunque in vetta, con un margine minimo. Il totale dei 34 clienti nominati vale 10.866.000 EUR di ARR."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-036",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Comando ricostruito per scrivere un override su un fatto cliente: `python3 scripts/edit_fact.py --nome \"<Nome Cliente>\" --campo <campo> --valore <valore> --date <data>` (esempio nel video: `python3 scripts/edit_fact.py --nome \"Polo Universitario Sud\" --campo arr --valore 750000 --date 2026-0…`, comando troncato dal bordo destro dello schermo). Dopo l'override si lancia la propagazione completa con `cd \"/Users/giovannibeggiato/Desktop/Company Knowledge Base\" && python3 scripts/propagate.py`, che il video dichiara propagare su: canon, views, Qdrant, Notion, audit."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-037",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Meccanismo \"canon vs override\": quando un fatto cambia (es. ARR di un cliente), Claude Code non riscrive la scheda canonica in `entities/` ma scrive un file separato in `workspace/overrides/` (es. `cliente-polo-universitario-sud.md`). L'override è dichiarato dal sistema come \"scritto e VISIBILE in Obsidian\" e soprattutto \"non sarà coperto da generate_notes\" — cioè uno script che rigenera le schede canoniche non lo cancella. Dopo la scrittura dell'override si esegue la skill `brain-sync` (barra di progresso teal) che lancia la propagazione completa (`propagate.py`) su tutti i sistemi collegati: prima scrive su Obsidian, poi aggiorna tutte le interfacce grafiche collegate (Notion, Qdrant) in modo che tutti abbiano accesso live alle informazioni aggiornate. Le skill coinvolte nel flusso di modifica sono `canon-edit` (per scrivere l'override) e `brain-sync` (per propagare)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-038",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Verifica end-to-end della propagazione: dopo il comando di override e `propagate.py`, la tabella \"Clienti\" in Notion mostra la riga Polo Universitario Sud aggiornata a 750.000,00 EUR (Catania, dal 2024, 60000 mq, Edge), ora sopra Residenze Aurora Verde a 620.000,00 EUR (Brescia, dal 2014, 90000 mq, Care) — prova visiva che la scrittura fatta da Claude Code nel vault Obsidian arriva fino a Notion senza intervento manuale."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-039",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Contenuto completo della cartella `workspace/` mostrato nella sidebar Explorer di Antigravity: sottocartella `journal`, sottocartella `overrides` (con dentro `cliente-polo-universita…md` e `cliente-residenze-auro…md`, entrambi marcati [M] per \"modificato\"), e allo stesso livello di `workspace` una serie di file sciolti dedicati a valutazione/qualità: `_audit_sample.json`, `_eval_gold.json`, `_eval_questions.json`, `_eval_results_full.json`, `_eval_results_rag_baseline.j…`, `_eval_results_rag_prod…` [M], `_eval_results.json`, `_index.md`, `_redteam_ans.json` [M], `_redteam.json`, `canon.json` [M], `enrich.log`, `notes.json` [M]. Questi nomi anticipano un impianto di valutazione e red-teaming del RAG già presente nella company brain, prima ancora del capitolo dedicato ai gate di qualità."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-040",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Contenuto integrale della scheda-cliente `entities/cliente-polo-universitario-sud.md` dopo l'override, letta riga per riga nell'editor:\n```\n---\ntitle: Polo Universitario Sud\nsummary: Scheda dei clienti di Aurora Sistemi.\ntags: [entities, tipo/cliente, status/active]\nstatus: active\ncreated: 2026-06-08\nupdated: 2026-06-08\nrelated: \"[[soc-clienti]],[[sito-polo-universitario-sud-1]] [[segmento-smb]]\"\n---\n\n# Polo Universitario Sud\n\n**Polo Universitario Sud (Education, Catania)**\n\nÈ considerato un cliente SMB, con una superficie complessiva di 60000 mq distribuiti su 9 edifici.\n\nIl cliente genera un ARR (Annual Recurring Revenue) di 750000 EUR.\n\n## Prodotti e Servizi in Uso\n\nPolo Universitario Sud utilizza i seguenti prodotti e servizi di Aurora Sistemi:\n- Edge\n- Care\n- Cloud\n\n## Voci collegate\n- [[soc-clienti]]\n- [[sito-polo-universitario-sud-1]]\n- [[segmento-smb]]\n```\nStesso schema propertie"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-041",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Risposta finale di Claude Code dopo l'override, citando il file: \"Il cliente più grosso è Polo Universitario Sud (Education, Catania): genera un ARR di 750.000 EUR, il più alto tra tutti i 34 clienti nominati di Aurora Sistemi. È un cliente SMB dal 2024, con 60.000 mq su 9 edifici, e usa Edge, Care e Cloud.\" I successivi in classifica sono Residenze Aurora Verde (620.000 EUR) e Torre Eurosky Uffici (558.000 EUR). Il totale ARR di tutti i clienti sale ora a 11.019.000 EUR (contro i 10.866.000 EUR calcolati prima dell'override di scena 68, per effetto dell'aumento di 153.000 EUR — da 597.000 a 750.000 — sul Polo Universitario Sud)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-042",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Indice TLDR completo del documento Notion privato \"Company Brain — Tutti i prompt del tutorial (segui passo passo)\": TLDR; AVANAGUARDIA-PLUS; Passo 1 — Obsidian, la prima nota, i collegamenti (a mano); Passo 2 — Le 11 cartelle e le prime note con l'AI; Prompt 2 — Estrai il canon (prima un piano, poi il tuo ok); Prompt 3 — Trasforma il canon in note atomiche (prima gli hub); Prompt 4 — Completa il cervello fino a circa 28 note; Passo 3 — Gate di qualità, indice per le AI, showcase, grafo, GitHub (Prompt 5 — Il gate di qualità [solo referto]; Prompt 6 — Correggi e ripeti finché esce \"0 errori\"; Prompt 7 — Genera l'indice per le AI [llms.txt]; Prompt 8 — Lo showcase [la fotografia per la demo]; Impostazioni grafo a sfera [a mano, in Obsidian]; Prompt 9 — Metti il vault sotto git [senza push]); Passo 4 — Interrogare il cervello, mostrarlo, tenerlo vivo (Prompt 10 — Interroga il cervello [a 2"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-043",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Offerta commerciale citata nel TLDR del documento: \"Se sei un imprenditore e vuoi applicare AI nella tua azienda (creando un secondo cervello con claude e molto altro) OPPURE se sei un freelancer e hai intenzione di rivendere questo servizio ad aziende\" → link AVANAGUARDIA-PLUS. Confronto di prezzo esplicito: \"Un consulente AI fa formazioni su questi argomenti per €1.000+ / giorno\", mentre in Avanguardia-Plus lo stesso contenuto si trova (aggiornato) a $99, cioè circa €85."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-044",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Passo 1 — Obsidian, la prima nota, i collegamenti (a mano), nessun prompt all'AI, si fa una volta sola dentro Obsidian: (1) Installa Obsidian e crea il contenitore vuoto — vai su `obsidian.md`, scarica la versione per il tuo sistema (Mac o Windows) e installala; crea sul computer una cartella nuova e vuota chiamata `aurora-cervello`; apri Obsidian → \"Apri cartella come vault\" (\"Open folder as vault\") → seleziona `aurora-cervello`. (2) Prima nota — crea (Cmd+N / Ctrl+N), chiamala `self-identita-aurora`, e scrivi nel corpo: \"Aurora Sistemi S.p.A. e' un'azienda da 340 persone che vende sistemi per rendere efficienti gli edifici. Tre linee di prodotto: Aurora Edge, Aurora Cloud, Aurora Care.\" (3) Seconda nota + wikilink — crea `persona-elena-ferraro` e scrivi: \"Elena Ferraro guida la divisione commerciale di [[self-identita-aurora]]. E' la persona che conosce il perche' dietro ogni cliente a"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-045",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Punto 6 del Passo 1 — Frontmatter: apri `self-identita-aurora` e incolla questo blocco in cima, prima del testo:\n```\n---\ntitle: Identita' di Aurora Sistemi\nsummary: Aurora Sistemi e' un'azienda da 340 persone che vende sistemi di efficie[nza...] (riga troncata oltre il bordo destro del frame)\ntags: [self, type/identita]\nstatus: active\ncreated: 2026-06-09\nupdated: 2026-06-09\nrelated: [[persona-elena-ferraro]]\n---\n```\nSubito dopo, nel documento, comincia il Passo 2 — Le 11 cartelle e le prime note con l'AI, con il Prompt 1 — Crea le 11 cartelle."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-046",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Passo 2, Prompt 1 — \"Crea le 11 cartelle\": dà all'AI lo scheletro del cervello, 11 cartelle vuote e niente altro. Testo del prompt (visibile fino al bordo del frame, elenco cartelle troncato): \"Crea nel mio vault, alla radice, queste 11 cartelle vuote, una per ciascun lavoro del cervello: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, ... (elenco troncato in basso dal bordo del frame, cartelle restanti non leggibili qui)\"."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-047",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Dimostrazione pratica di cosa sia davvero Obsidian: si crea una nota di prova chiamata \"ciao\" con corpo \"qualcosa\"; subito appare nel grafo. Aprendo Finder si verifica che è un file `ciao.md` reale sul disco (Date Modified \"Today at 10:48\", Size \"9 bytes\", Kind Markdown Document) dentro la cartella `aurora cervello`. Conclusione esplicita: \"Obsidian è un layer che va sopra la cartella e ci permette di avere una rappresentazione visiva di quello che c'è\" — non è un database, ma un layer che collega note markdown vere e proprie salvate su disco. Molte persone confondono le due cose, ed è per questo che a 1000-2000-3000 note l'organizzazione comincia a fare fatica se non si struttura bene il collegamento tra le note."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-048",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Dimostrazione del problema di scala: la nota `persona-elena-ferraro` (normalmente 30 words / 141 characters con backlink attivo) viene riempita a scopo dimostrativo con un'unica frase (\"E' la persona che conosce il perche' dietro ogni cliente acquisito.\") ripetuta senza interruzione fino a raggiungere 438 words / 2.688 characters. Spiegazione a voce: se avessimo 1000 note così, ogni volta che l'AI entra nella nota dovrebbe leggersi tutto il contesto, consumando un sacco di token e con rischio di allucinazione — un problema di leggibilità che porterebbe l'AI a sbagliare. Dopo la dimostrazione la nota viene ripulita e torna a 30 words / 141 characters."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-049",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Perché serve il frontmatter: l'AI, per leggere le skill (e per estensione le note), comincia col leggere la sezione frontmatter (\"front\") in cima al file; \"se e solo se il contesto è rilevante\" allora procede a leggere tutto il resto del documento. Questo è il meccanismo che rende sostenibile una company brain con migliaia di note: invece di dover leggere ogni nota per intero (col rischio dimostrato in P1-048, token sprecati e allucinazioni), l'AI filtra prima dal frontmatter e apre per intero solo ciò che serve davvero."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-050",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Contenuto integrale del file `SKILL.md` (skill \"skill-creator\", progetto \"Social Media Manager\") mostrato come esempio concreto di frontmatter applicato: frontmatter — `name: skill-creator`; `description: Create new skills, improve existing ones, or capture a working session as a reusable skill. Use when the user wants to create/improve/fix a skill, add a workflow or automation, says make this a skill, or /skill-creator.`; `allowed-tools: Bash, Read, Write, Edit, Glob, Grep, AskUserQuestion`. Corpo: \"# Skill Creator\", \"## Goal\" — Turn any repeated multi-step workflow into a reusable slash command with proper error handling; Create new skills and iteratively improve existing ones for this project; Read `references/skill-writing-guide.md` for the full conventions reference (Golden Rules, skill types, script boilerplate, writing style guide). \"## When to Create a Skill\" — un processo merita"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-051",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Demo dell'app desktop Claude Code (tab Cowork) sul vault `aurora cervello`: prima un popup di permesso da approvare — \"Allow Claude to change files in \"aurora cervello\"? This includes all files and subfolders. Claude will be able to read, edit, and permanently delete—and may share file contents with third-party tools it connects to. Be careful about exposing sensitive information.\" con pulsanti Cancel / Always allow / Allow. Poi la domanda all'AI: \"Ehi, sapresti dirmi chi è il responsabile commerciale dell'azienda?\". Risposta di Claude, preceduta da \"Read 2 files, ran a command\": \"Il responsabile commerciale è Elena Ferraro. Guida la divisione commerciale di Aurora Sistemi S.p.A. (l'azienda da 340 persone con le tre linee Aurora Edge, Aurora Cloud e Aurora Care). È indicata come il commerciale di riferimento e, dalle note, è 'la persona che conosce il perché dietro ogni cliente acquisito"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-052",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Follow-up alla domanda precedente: \"Hai anche altre informazioni di Elena a riguardo?\". Claude risponde citando solo ciò che trova scritto nella nota, senza inventare nulla: \"Le uniche informazioni che ho su Elena sono quelle nel file persona-elena-ferraro.md, e sono poche: Guida la divisione commerciale di Aurora Sistemi S.p.A. È la persona che conosce il 'perché' dietro ogni cliente acquisito. Si occupa di vendere (la nota dice scherzosamente 'non lo so, spazzolini'). Le piace la pizza. Non ho altri dettagli (cognome a parte, contatti, ruolo preciso, ecc.). Se vuoi, posso cercare altre informazioni nelle tue email, nel calendario o negli altri strumenti collegati. Dimmi solo dove guardare.\" Questo dimostra il comportamento corretto atteso da una company brain ben progettata: l'AI dichiara i limiti di ciò che sa e offre di ampliare la ricerca solo se esistono altre fonti collegate, inve"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-053",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Uso del pannello Properties di Obsidian: sotto il titolo di una nota compare la sezione \"Properties\" con un campo vuoto (placeholder \"Empty\") e un menu a tendina con tipi di proprietà disponibili, tra cui \"aliases\", \"cssclasses\", \"tags\". Esempio dimostrato: viene aggiunta la proprietà \"title\" con valore \"Identità di aurora\" (poi \"1 backlink · 1 property · 34 words · 230 characters\" nella barra di stato), con link \"+ Add property\" per aggiungerne altre. Queste proprietà tramite UI sono l'equivalente grafico di scrivere a mano il blocco frontmatter YAML tra i tre trattini."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-054",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Introduzione (lasciata in sospeso, solo webcam senza UI) al perché le company brain funzionano meglio di una normale nota di testo per l'AI: \"perché le company Brain funzionano? Perché esistono questi collegamenti\" tra le note (i wikilink visti in Passo 1). Anticipa che spiegherà \"come funzionano e qual è la logica sottostante\", per poi arrivare a: \"una normale nota di testo […] è […] perché Obsidian ha la possibilità di\" — frase interrotta, la spiegazione del vantaggio specifico di Obsidian prosegue oltre la scena 120 (fuori dall'intervallo analizzato qui)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-055",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "La Company Brain si organizza in 11 cartelle poste alla radice del vault, ciascuna un 'lavoro' specifico che il cervello aziendale deve svolgere. La decisione di archiviazione e' una sola: quanto e' azionabile il contenuto, non il suo tipo. Le 11 cartelle presentate nello schema Excalidraw, in ordine di lettura: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, workspace."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-056",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'self' rappresenta 'chi e azienda'. Nello schema annotato a mano e' contrassegnata da un'icona cerchiata '1' con l'elenco 'OBIETTIVI · MISSIONE · CLIENTI · OFFERTE', collegato con una freccia che sale verso la cartella 'areas' — self e' quindi il punto di partenza gerarchico da cui discendono le responsabilita' continue dell'azienda."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-057",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'areas' rappresenta 'responsabilita' continue'. Tra le card 'areas' e 'projects' l'annotazione a mano riporta '• REPARTI': le aree corrispondono ai reparti stabili dell'azienda, distinti dai progetti che hanno invece un traguardo temporale."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-058",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'projects' rappresenta 'lavoro a tempo, con traguardo'. Tra areas e projects l'annotazione aggiunge 'AUTOMAZIONI' e, sotto, una parola scritta piu' in piccolo letta come 'PROGETTABILE' ➕ (lettura non certa al 100%): il progetto sembra quindi collegato al concetto di automazione una volta reso ricorrente."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-059",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'sources' e' 'la inbox grezza'. In alto a destra dello schema annotato, sopra la card sources, la lista a mano riporta '• ARTICOLI · • APPUNTI · • NOTE': il materiale non ancora elaborato (articoli, appunti, note sparse) atterra qui prima di essere trasformato in canon e poi in note atomiche."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-060",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'concepts' e' 'idee, una per nota'. Sopra concepts/docs l'annotazione condivisa riporta '• SOP'. Sulla sinistra del canvas, accanto alla colonna concepts/code, compaiono altre annotazioni a mano: 'ARR: FATTURATO', 'AVVIO', una terza parola poco leggibile (~'DEFINITORE' ➕), e sotto 'CHURN:' con un tratto/sottolineatura incompiuta — probabili concetti-chiave di business da tenere come note atomiche in concepts."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-061",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'docs' e' 'procedure intere'. Condivide con concepts l'annotazione soprastante '• SOP' (Standard Operating Procedure): a differenza di concepts (un'idea per nota), docs ospita la procedura per intero, non spezzata."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-062",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'entities' e' 'schede dei nomi propri'. Sopra la card, l'annotazione a mano mostra due colonne di parole piccole, lette come 'PERSONE / RUOLI' e 'FORN. / TOOL' ➕ (grafia minuta, lettura non certa al 100%): le schede-entita' catalogano quindi persone/ruoli interni e fornitori/tool esterni con cui l'azienda ha rapporti."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-063",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'data' e' 'i numeri'. A destra della card, un piccolo schizzo a griglia/tabella con una lettera iniziale simile a 'K' compare nell'annotazione, ma resta tagliato dal bordo del frame e illeggibile con certezza ➕ — non e' possibile determinare a cosa si riferisca esattamente quello schizzo."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-064",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'code' e' 'script e automazioni'. Sotto la card, una freccia introduce l'annotazione '• SCRIPT' e '• ONGOING AUTOMATION': e' la destinazione dei progetti one-off che, una volta diventati processi ricorrenti, smettono di essere 'projects' e diventano automazioni permanenti in 'code'."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-065",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'outputs' e' 'deliverable finiti'. Sotto la card, una freccia introduce '• PROPOSTE', '• CASE STUDY', '• CONTRATTI': sono gli output completati e chiusi, la seconda destinazione possibile per un progetto che ha raggiunto il traguardo (l'altra e' code, per cio' che diventa automazione permanente)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-066",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La cartella 'workspace' e' 'bozze e diario'. A destra della card, una piccola freccia curva introduce l'annotazione 'DIARIO SESSIONI & GIORNALIERO': e' qui che vivono le note di sessione e i riepiloghi giornalieri (journal/sessions e journal/daily), non ancora materiale finale."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-067",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Regola del ciclo di vita di un progetto nella Company Brain: quando un progetto one-off (in 'projects') diventa un processo ricorrente, si sposta dentro 'code' come script/ongoing automation; quando invece il progetto si conclude con un deliverable, si sposta dentro 'outputs'. La trascrizione automatica rende 'one-off' come 'oneof' ➕ (probabile refuso ASR), ma il senso della regola resta chiaro dalle annotazioni sullo schema."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-068",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "La tassonomia risponde alla domanda 'che tipo di cosa e'?' e dice dove archiviare un contenuto: nello schema Excalidraw e' illustrata con l'esempio 'Progetti' che si dirama in 'Progetti Interni' e 'Progetti Clienti', cioe' l'albero di cartelle ('il vostro alberello'). Un'annotazione a mano aggiunta successivamente, 'COME / DEVO / ARCHIVIARE', con una freccia ripiegata verso questo stesso albero, sintetizza visivamente il ruolo della tassonomia: la decisione di dove mettere le cose."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-069",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "L'ontologia risponde alla domanda 'cosa sono le cose e come si collegano?' ed e' 'leggibile da una macchina': nello schema e' illustrata con due entita', 'Aurora Sistemi' (azienda) e 'Marco' (persona), collegate da una freccia con l'etichetta 'lavora nel commerciale'. A voce l'autore la definisce esplicitamente: 'Ontologica vuol dire come collego le informazioni. E' un'ontologia applicata.' Una sottolineatura ondulata blu aggiunta sotto il titolo 'ONTOLOGIA' enfatizza il concetto proprio nel momento in cui viene pronunciato a voce."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-070",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "La tassonomia dell'autore e' stata progettata deliberatamente per essere agnostica rispetto al tipo di business: 'l'ho fatta apposta perche' funzioni in qualsiasi business' e 'non ha un funziona solo per, non lo so, la clinica o la l'officina, funziona pure per me che faccio contenuto, ho la mia agenzia'."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-071",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "A differenza della tassonomia (che l'autore fornisce gia' pronta), l'ontologia va costruita da ciascuno: 'L'ontologia e' la logica di collegamento ed e' una cosa che voi ovviamente se non volete seguire la mia logica dovrete farvi[la]... Quindi dovrete dare ad Obsidian il come colleghiamo queste cosine qui.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-072",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Versione estesa dell'esempio di ontologia: a fianco dei due cerchi 'Aurora Sistemi'/'Marco', uno schizzo a mano mostra 'AURORA' e 'MARCO' in alto, con parentesi graffe che convergono su un riquadro 'COMMERC[IALE]', da cui partono frecce verso quattro attributi della relazione: 'DIPENDENTE', 'TENURE', 'FUNZ[IONE]' e 'SALARIO' — un modello concreto di come un'entita'-persona si collega a un'entita'-azienda con attributi tipati."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-073",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Il nome esatto dell'editor usato per Claude Code in questa demo e' 'Antigravity IDE' (sottotitolo 'Code with Agent'), confermato sia dalla schermata splash sia dall'etichetta della finestra in Mission Control di macOS."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-074",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "La finestra di sistema 'Apri' di macOS, aperta sulla company Brain reale e gia' in uso dall'autore (non la demo Aurora), mostra esattamente le 11 cartelle blu del framework: areas, code, concepts, data, docs, entities, outputs, projects, self, sources, workspace — a conferma che lo schema teorico Excalidraw corrisponde 1:1 a una struttura di file gia' operativa in produzione."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-075",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "La cartella 'workspace' dell'autore contiene un journal con due tipi di nota distinti e complementari: 'sessions' (una nota per ogni conversazione chiusa, con frontmatter title/tags/date/related e corpo diviso in Fatto/Decisioni/Da fare/Voci collegate) e 'daily' (un file per giornata che aggrega e riassume tutte le sessioni chiuse quel giorno sotto un titolo 'Riepilogo giornata'). Voce dell'autore: 'perche' dobbiamo averne due, perche' il daily e' un suo [riassunto]... Lei andra' a vedere con i vari titoletti che cosa ho fatto qua dentro'."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-076",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Esempio reale di wikilink e backlink in una nota di sessione: il frontmatter dichiara 'related:' seguito da una lista di wikilink su righe separate — [[tooling-skill-e-audit]], [[modulo-youtube-desc]], [[modulo-linkedin]], [[metriche-mrr-churn]] — e lo stesso identico elenco viene ripetuto nel corpo della nota sotto il titolo '## Voci collegate'. Il frontmatter dichiara il collegamento machine-readable, il corpo lo rende leggibile anche a un umano che apre la nota: e' la stessa relazione espressa due volte, in due formati."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-077",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Il file giornaliero mostra concretamente come il daily aggreghi le sessioni: la sezione 'Riepilogo giornata' racconta in linguaggio narrativo quante sessioni sono state chiuse e cosa hanno prodotto — 'Sei chiusure di sessione registrate dall'hook, quattro narrative scritte..., tutto il lavoro e' riconciliato' — trasformando log meccanici di chiusura in un resoconto leggibile, non solo in un elenco di link."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-078",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 1 — 'Crea le 11 cartelle', testo integrale incollato in Claude Code: 'Crea nel mio vault, alla radice, queste 11 cartelle vuote, una per ciascun lavoro del cervello: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, workspace. Non crearne altre e non metterci dentro nessun file. Solo le 11 cartelle.' E' il primo comando dato all'AI per costruire lo scheletro vuoto del cervello aziendale, senza ancora nessun contenuto."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-079",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Comando bash eseguito da Claude Code per materializzare il Prompt 1 sul filesystem reale: cd \"/Users/giovannibeggiato/Desktop/aurora cervello\" && mkdir -p self areas projects sources concepts docs entities data code outputs workspace && ls -la. E' l'unico comando necessario a tradurre lo schema teorico delle 11 cartelle in struttura di file reale."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-080",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Risultato del Prompt 1: l'Explorer mostra 'aurora cervello' popolata con le 11 sottocartelle in ordine alfabetico (areas, code, concepts, data, docs, entities, outputs, projects, self, sources, workspace), tutte vuote, e Claude conferma testualmente: 'Fatto. Le 11 cartelle vuote sono alla radice del vault: self, areas, projects, sources, concepts, docs, entities, data, code, outputs, workspace. Nessun file dentro, nessuna cartella extra.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-081",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "La cartella 'sources/' della demo Aurora Sistemi contiene esattamente 9 file di materiale grezzo fittizio, numerati in ordine: 01_chi-siamo-sito-web.md, 02_pitch-deck-vendita.md, 03_prodotti-brochure.md, 04_organigramma.md, 05_verbale-board-Q4-2025.md, 06_export-CRM-clienti.csv, 07_note-customer-success.md, 08_intervista-CEO_podcast.md, 09_email-interne.md. E' l'esempio concreto di cosa significa 'la inbox grezza' della cartella sources."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-082",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Contenuto chiave del file sorgente 01_chi-siamo-sito-web.md: Aurora Sistemi S.p.A. e' un'azienda fittizia (dichiarata tale dall'autore) nata a Milano nel 2018 da due ingegneri, Elena Ferraro e Marco Bianchi; oggi conta 47 persone, sede principale a Milano e un secondo ufficio a Bologna dal 2022 per il Customer Success; e' una piattaforma SaaS per la gestione intelligente degli edifici (consumi, manutenzioni, accessi, sicurezza, documenti), rivolta a organizzazioni con patrimoni immobiliari da 20 edifici in su in Italia."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-083",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Il file 06_export-CRM-clienti.csv, aperto in foglio di calcolo, ha colonne ARR_eur | stato | moduli_attivi con 10 righe: 9 clienti 'attivo' (ARR da 260.000 a 720.000 euro, con combinazioni di moduli Core/Energy/Manutenzione/Access/Insights) e 1 cliente 'churned 06/2025' da 180.000 euro. Questi numeri sono poi quelli che il canon dovra' far quadrare con i KPI aggregati."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-084",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Il Canon e' definito dal Prompt 2 ('Estrai il canon'): 'Congela i fatti duri dell'azienda in un unico canon coerente' — un unico file che deve coprire identita' (missione, ICP, offerta, posizionamento, sedi, anno di fondazione, numero dipendenti), prodotti (con cosa fa ciascuno), reparti (le funzioni continue), persone e ruoli, clienti (ognuno con i suoi numeri: da quando cliente, quanti immobili, ARR) e KPI di fine 2025 (ARR totale, clienti attivi, churn, NRR, edifici gestiti)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-085",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "regola",
+   "testo": "Le 'Regole d'oro' del Canon, dal Prompt 2: nessun fatto inventato ('se non e' nel materiale in sources/, NON scriverlo'); i numeri devono QUADRARE tra loro (la somma dell'ARR dei clienti deve essere coerente con l'ARR totale dei KPI). A queste si aggiunge, nella versione completa vista al Prompt 3, che il canon va scritto in un solo file di lavoro (non ancora note finali) e che se l'AI non riesce a fare qualcosa deve comunicarlo, non improvvisare."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-086",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Analogia visiva disegnata a mano sopra Notion per spiegare il passaggio dal Canon alle note atomiche: un bacinello grande, pieno d'acqua, collegato con linee a due-tre bicchieri piu' piccoli e vuoti — il Canon (bacinello unico e pieno) si spezza in 11 microbacinelle, una per cartella della Company Brain. Voce: 'microbacinelle, ok? Ovviamente ogni singola di queste bacinelle avra' al suo [interno]...' (frase troncata a schermo)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-087",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Prima di scrivere il Canon, Claude propone un piano in 5 punti: (1) ha letto tutti e 9 i file in sources/, fonti coerenti senza contraddizioni; (2) i numeri quadrano gia' — ARR dei 9 clienti attivi = esattamente 3.840.000 euro, immobili = esattamente 751, identici ai KPI del verbale board e del deck, churn 180k = Costruzioni Sud (-5,8% del 3,1M di inizio anno); (3) struttura del canon: un solo file con 6 sezioni (Identita', Prodotti-5 moduli, Reparti-6 funzioni, Persone e ruoli-11 nominate, Clienti-tabella 9 attivi+1 churned, KPI fine 2025 con riga di verifica); (4) lo scrive in workspace/canon.md, dichiarato 'file di lavoro, non una nota finale'; (5) lascia fuori tutto cio' che e' inventato, ma include l'obiettivo 2026 del board (ARR>5M, NRR>110%, churn<10%, +6 assunzioni) segnalandolo come obiettivo, non come KPI. Chiude chiedendo il via libera: 'Ok per scrivere?'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-088",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Il canon viene salvato in workspace/canon.md, e Claude lo dichiara esplicitamente 'un file di lavoro, non una nota finale': il Canon e' quindi una fase intermedia, un output temporaneo destinato a essere smontato nelle note atomiche definitive dentro le 11 cartelle, non un documento da conservare cosi' com'e'."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-089",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "La slide 'LA NOTA ATOMICA' (sottotitolo: 'Niklas Luhmann: una idea per scheda') contrappone due modelli: colonna 'NO' — un PDF da 40 pagine tutto insieme, con una X sotto e la scritta 'nessuno lo riusa'; colonna 'SI' — cinque caselle colorate, ciascuna '1 idea', collegate tra loro in rete, con le scritte 'il valore e' nei legami' e 'riusabile in 20 contesti'. E' la giustificazione visiva del perche' il Canon (un file unico) va smontato in tante piccole note."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-090",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Il metodo citato come base teorica della nota atomica e' lo Zettelkasten di Niklas Luhmann (nome scritto per esteso a mano sullo schermo, ma che l'autore dichiara di non voler pronunciare a voce): 90.000+ schede autonome create per scrivere i suoi libri. L'annotazione a mano mostra un esempio concreto a due schede collegate: 'FIDUCIA' (scheda 1) e 'SOLDI' (scheda 2)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-091",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "'HUB-AND-SPOKE: l'ordine di costruzione' (sottotitolo: 'come una ruota di bicicletta'): al centro un HUB grigio con icona persona e didascalia 'identita azienda, reparti'; attorno, sei nodi colorati 'dettaglio' collegati al centro e tra loro. Etichette curve: '1) prima gli hub' e '2) poi i dettagli'. Regola conseguente, scritta in un riquadro: 'Ogni link punta a qualcosa che esiste gia', quindi i link rotti sono impossibili.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-092",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 3 — 'Trasforma il canon in note atomiche (prima gli hub)', testo integrale: 'Ottimo, il canon va bene. Ora trasformalo in note atomiche dentro le 11 cartelle.' Regole per ogni nota compilata: una sola idea per nota, massimo 300 righe; frontmatter in cima con title, summary (una frase), tags (il primo e' sempre il nome della cartella), status, created, updated, related; il campo related deve stare su una sola riga fisica, con i wikilink separati da virgola e senza spazi dentro le doppie parentesi; almeno 3 wikilink uscenti verso note reali (contando i target unici, non lo stesso link ripetuto); nome del file unico in tutto il vault, con un prefisso di dominio (es. self-identita-aurora, cliente-...)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-093",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "regola",
+   "testo": "Ordine di costruzione imposto dal Prompt 3 (da rispettare): 1) prima gli hub, le note-mappa — 'self/self-identita-aurora' e' l'hub centrale; 2) poi le note di dettaglio — prodotti, clienti, KPI, concetti, ognuna collegata all'hub. Vincolo assoluto: 'Un wikilink punta solo a una nota che esiste gia': niente link verso note non ancora create.' Claude deve partire dagli hub e mostrare 'self-identita-aurora' prima di proseguire con il resto."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-094",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Sotto il Prompt 3, nella stessa pagina Notion, compare gia' il titolo del prompt successivo: 'Prompt 4 — Completa il cervello fino a circa 28 note' — indica la dimensione target dell'intero vault dimostrativo Aurora Sistemi, non ancora aperto/spiegato in questa porzione di video."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-095",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Dopo l'esecuzione del Prompt 3 in modalita' bypass permissions, Claude Code scrive il primo hub del cervello: l'azione \"Write self-identita-aurora.md\" (38 righe), con il messaggio di chiusura \"Fatto. Canon scritto in workspace/canon.md e gli 7 hub creati (1 self + 6 reparti), tutti interconnessi senza link morti.\" Il frontmatter dell'hub self, riportato fino al punto in cui il frame lo taglia: title: \"Identita' -- Aurora Sistemi S.p.A.\", summary: \"Aurora Sistemi e' la piattaforma SaaS italiana per la gestione intelligente del patrimonio immobiliare, fondata a Milano nel 2018\", tags: [self, identita, azienda, hub], status: active, created: 2026-06-10, updated: 2026-06-10, related: [[area-prodotto-engineering]], [[area-vendite]], [[area-customer-success]], [[area-marketing]], [[area-finance-operations]], [[area-p... (coda del campo related tagliata dal bordo destro del frame, oltre il quin"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-096",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Il file `workspace/canon.md` e' il documento di lavoro intermedio, dichiaratamente non parte delle note atomiche: si apre con \"_File di lavoro. Estratto e riconciliato dalle 9 fonti in `sources/`. Nessun fatto inventato._\" e \"_Compilato: 2026-06-10._\". La sezione \"1. Identita'\", riportata per intero attraverso le due riaperture del file (scena 183 e scena 205): Ragione sociale: Aurora Sistemi S.p.A.; Anno di fondazione: 2018, a Milano; Fondatori: Elena Ferraro (CEO) e Marco Bianchi (CTO), entrambi dal mondo dell'ingegneria degli impianti; Missione: rendere ogni edificio piu' efficiente, sicuro e sostenibile, dando a chi gestisce il patrimonio immobiliare un unico \"cervello digitale\" al posto di dieci sistemi scollegati; Offerta: piattaforma software SaaS in cloud per la gestione intelligente degli edifici, un'unica interfaccia per tutti gli immobili (consumi energetici, manutenzioni, acc"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-097",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Secondo hub di reparto mostrato per intero, `areas/area-customer-success.md`: frontmatter title: \"Reparto -- Customer Success\", summary: \"Reparto che cura onboarding, supporto e crescita dei clienti esistenti, guidato da Giulia Rinaldi a Bologna.\", tags: [areas, reparto, customer-success, hub], status: active, created: 2026-06-10, updated: 2026-06-10, related come blocco YAML a tre righe tra virgolette: \"[[self-identita-aurora]]\", \"[[area-vendite]]\", \"[[area-prodotto-engineering]]\". Corpo: \"# Reparto -- Customer Success\", poi \"Funzione continua responsabile di onboarding, supporto e crescita dei clienti esistenti di [[self-identita-aurora|Aurora Sistemi]]. E' il motore della retention e dell'espansione (NRR 115% nel 2025).\", poi elenco puntato \"A capo: Giulia Rinaldi (Head of Customer Success), basata a Bologna.\", \"Customer Success Manager: Chiara Fontana, segue i key account (Banca Adri"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-098",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Prima apparizione di Obsidian nella sessione (cambio applicazione da Antigravity): Graph view con la stessa sidebar a 11 cartelle (areas, code, concepts, data, docs, entities, outputs, projects, self, sources, workspace). Nodi visibili: canon (in alto, isolato, con un piccolo pallino arancione accanto, segnalato come nodo separato/orfano), area-finance-operations, area-prodotto-engineering, area-vendite, area-people-cultura, self-identita-aurora (al centro del grappolo), area-marketing, area-customer-success. Le linee formano una rete fitta tra le aree e il nodo centrale self-identita-aurora, mentre canon resta separato in alto senza linee visibili verso gli altri nodi. Questa e' la prima prova visiva, mostrata dal vivo, del problema dei file orfani che l'episodio sviluppera' nelle scene successive."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-099",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 4 del canovaccio Notion, titolo \"Prompt 4 -- Completa il cervello fino a circa 28 note\", sottotitolo \"Riempi tutte le cartelle, categoria per categoria, fermandoti intorno a 28 note di contenuto.\" Testo integrale: \"Perfetto. Ora completa il resto del cervello, sempre con le stesse regole (nota atomica, frontmatter, related su una riga, almeno 3 wikilink reali, nomi unici). Genera le note mancanti, categoria per categoria, collegandole a cio' che gia' esiste: data/: i KPI di fine 2025 (ARR totale, clienti attivi, churn, NRR, edifici); concepts/: ARR, churn, efficienza energetica; entities/: gli altri clienti, le persone coi ruoli, i tre prodotti, gli strumenti usati; docs/, projects/, outputs/, code/: le procedure, i progetti in corso, i deliverable, gli script dell'azienda. I canali commerciali (LinkedIn, eventi, partner) NON sono cartelle: sono TAG (channel/linkedin), perche' una"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-100",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Dopo aver ricevuto il Prompt 4, Claude annuncia la propria strategia di scrittura prima di procedere: \"Procedo con le note di dettaglio. Riuso i prefissi di dominio dei tuoi esempi (cliente-, concetto-, kpi-, e per coerenza persona-, prodotto-, strumento-, doc-, progetto-, output-, code-), ordino la creazione in modo che ogni related punti solo a note gia' scritte (zero link morti). I canali commerciali restano tag (channel/...), non cartelle. Scrivo tutto in un'unica passata (prodotti -> concetti -> KPI -> persona -> clienti -> strumenti -> docs/projects/outputs/code).\" Seguono le prime azioni Write in sequenza: `prodotto-aurora-core.md` (18 righe, anteprima: \"title: Prodotto -- Aurora Core\" / \"summary: Modulo base della piattaforma: anagrafica edifici, dashboard unica, spazi e archivio documentale, su cui si appoggiano tutti gli altri m[oduli]\" tagliato) e `prodotto-aurora-energy.md` ("
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-101",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Nota di concetto mostrata per intero, `concepts/concetto-churn.md`: frontmatter title: \"Concetto -- Churn\", summary: \"La perdita di clienti (logo churn) o di fatturato (gross churn) in un periodo; in Aurora il 2025 ha visto un solo logo perso.\", tags: [concepts, concetto, churn, metrica], status: active, created: 2026-06-10, updated: 2026-06-10, related: [[concetto-arr]], [[area-customer-success]], [[area-finance-operations]] (qui ancora su una riga sola, non a blocco). Corpo: \"# Concetto -- Churn\", \"Il churn misura quanto si perde. Due tagli:\", poi elenco puntato \"Logo churn: numero di clienti persi. In Aurora nel 2025 = 1 cliente (Costruzioni Sud, uscito a giugno dopo un'acquisizione) su 9 a inizio anno, ~11%.\", \"Gross revenue churn: [[concetto-arr|ARR]] perso. In Aurora = € 180.000, ~5,8% dell'ARR di inizio anno.\", chiusura \"E' il contraltare dell'espansione: [[area-customer-success]]"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-102",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Scrittura in serie dei file KPI 2025, quattro azioni Write consecutive documentate nella sidebar e nella chat: `kpi-2025-clienti-attivi.md` (18 lines, summary: \"A fine 2025 Aurora ha 9 clienti attivi, dopo l'ingresso di HotelLine e l'uscita di Costruzioni Sud.\"), `kpi-2025-churn.md` (18 lines, summary: \"Nel 2025 Aurora ha perso 1 cliente (logo churn ~11%) per € 180.000 di ARR (gross churn ~5,8%).\"), `kpi-2025-nrr.md` (19 lines, summary: \"La Net Revenue Retention 2025 di Aurora e' 115%; l'espansione sui clienti esistenti ha piu' che compensato il churn.\"), `kpi-2025-edifici.md` (parzialmente coperta dal campo di input, non leggibile oltre il titolo). Ogni file appare nella sidebar sotto la cartella `concepts`/`data` man mano che viene scritto, a riprova che Claude sta popolando le cartelle in un'unica passata come annunciato in precedenza."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-103",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Prima Graph view \"piena\" di Obsidian dopo la scrittura in massa delle note del Prompt 4: nuvola fitta di decine di nodi bianchi (note) e verdi (tag, riconoscibili dal prefisso #), collegati da una rete di linee sottili molto densa attorno a un nodo centrale piu' grande, self-identita-aurora, e a un secondo nodo grande poco sopra, area-customer-success. Etichette leggibili con certezza: #property-management, #founder, canon (in alto a destra, isolato, senza linee visibili verso gli altri nodi), kpi-2025-edifici, #efficienza-energetica, #ceo, #pitch-deck, #sales, #marketing, #prodotto, cliente-immobiliare-lombarda, prodotto-aurora-energy, #entities, #cliente, area-vendite, area-marketing, #operations, #finance, area-finance-operations, #churn, kpi-2025-churn, concetto-arr, concetto-churn, #report, #metrica, area-prodotto-engineering, #engineering, #hub, #azienda, 2026. Molte altre etichett"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-104",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Passaggio dall'IDE a sola webcam per introdurre il tema degli orfani: \"immaginatela come se viaggiasse solo tra quei collegamenti nella nostra company Brain\" -- l'AI, spiega Joe, si muove esclusivamente lungo i wikilink del vault, mai fuori da essi, motivo per cui non lasciare note isolate dal grafo e' un requisito tecnico e non solo estetico. Segue la domanda retorica, posta tenendo in mano una penna bianca (Apple Pencil) orizzontale davanti al microfono: \"Quindi noi vogliamo avere file orfani? La risposta e' no.\""
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-105",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Distinzione chiave enunciata a sola webcam, in sequenza: \"Vogliamo avere file orfani a livello concettuale, ma non orfani a livello grafo, ok?\" -- un orfano \"concettuale\" (nessuno lo cita a voce nella conversazione quotidiana) va bene, un orfano \"di grafo\" (zero wikilink in entrata) no, \"perche' vogliamo comunque che lei [l'AI] vada dentro\". L'esempio concreto portato: \"le note che avete preso in un meeting, ok? che magari le avete buttate li' a calcioni... per capirci. Eh, vogliamo che queste siano all'interno, no, del tutto\" -- una nota di riunione presa senza cura resta un tipico caso di orfano concettuale che pero' deve restare raggiungibile dal grafo, perche' se l'utente chiede all'AI \"'Hei, vai a vedere che cosa avevamo detto in quel meeting...' perche' c'era una roba interessante e magari non sono collegate a nulla, ok?\" -- se quella nota non e' collegata a nulla, l'AI non ha modo"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-106",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Dissolvenza incrociata webcam -> Graph view di Obsidian: mentre lo schermo passa dal volto di Joe al grafo, la voce completa il ragionamento sull'accesso alle note isolate (\"noi non avremo modo di accedervi, quindi dobbiamo instaurare ora una specie di...\") e poi annuncia il nome della soluzione: \"...stratagemma per collegare tutti gli orfani. Questo si chiamera' SL/index e volevo farvelo vedere ora...\" (SL/index = slash-index, cioe' il file _index per cartella). Nel frame di transizione, con la Graph view gia' nitida, sono identificati 33 nodi totali (contati uno per uno, nessuna etichetta dubbia): code-export-crm, area-vendite, concetto-arr, concetto-efficienza-energetica, cliente-hotelline-hospitality, persona-marco-bianchi, area-customer-success (nodo grande), persona-elena-ferraro, area-marketing, strumento-crm, kpi-2025-churn, doc-onboarding-cliente, persona-chiara-fontana, prodott"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-107",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Dimostrazione dal vivo del problema su canon.md riaperto per intero in Obsidian (frontmatter + sezioni 1-2 del canon, gia' trascritte in P2-102): la barra di stato in basso mostra \"0 backlinks - 942 words - 7,192 characters\", confermando che nessuna nota rimanda ancora al Canon. Voce: \"...non c'e' nessuno che va a parlare con il nostro Canon e il problema non e' quante diramazioni abbiamo, ma e' quanti file riferiscono alla nostra nota, vogliamo che il nostro index e la nostra nota siano collegati tra di loro,\" -- Joe ribadisce che la metrica che conta per un vault e' il numero di link IN ENTRATA a una nota, non i link in uscita, ed e' esattamente questa la metrica che l'_index dovra' garantire a ogni nota."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-108",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Annotazione a mano con penna/Apple Pencil verde acceso sulla Graph view di Obsidian: la scritta corsiva \"index\" con una freccia curva che parte da sotto e punta verso la cartella workspace nella sidebar (espansa: _template-nota, canon). Voce: \"perche' questo fa si' che non ci siano orfani scollegati e che quindi lei possa entrare e cominciare a vedere anche queste note.\" -- l'annotazione collega visivamente la soluzione appena nominata (_index per cartella) al nodo canon ancora isolato nel grafo, prima ancora che lo _index venga effettivamente generato."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-109",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Chiarimento sull'uso pratico del Graph view, in sequenza di sole webcam: \"Di nuovo, noi non useremo il grafico perche' il grafo sara' per l'AI, ma noi dobbiamo sapere leggere cosa va male nel grafico e capire come possiamo migliorarlo di modo tale che l'AI possa utilizzarlo nel migliore dei modi, no? Quindi oltre ai nostri prompt abbiamo anche una maniera visiva e il toggle, no, trova gli orfani per far si' che riusciamo a vederli.\" -- il Graph view non e' uno strumento di lavoro quotidiano per l'utente umano (quello e' per l'AI), ma resta lo strumento diagnostico per individuare visivamente note isolate o mal collegate, incluso un toggle dedicato di Obsidian per \"trovare gli orfani\"."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-110",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Ritorno allo screen-share su Obsidian: Graph view con la cartella data espansa nella sidebar (5 file: kpi-2025-arr, kpi-2025-churn, kpi-2025-clienti-attivi, kpi-2025-edifici, kpi-2025-nrr) e workspace espansa (_template-nota, canon). Il grafo mostra la stessa rete fitta di nodi gia' elencata in P2-112, con canon ancora presente come nodo a se'. Cursore del mouse posizionato sul nodo prodotto-aurora-core. Voce di transizione: \"cominceremo e lo faremo, pero' era solo una premessa che volevo farvi.\""
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-111",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Graph view completo con la sidebar allineata alle 11 cartelle (workspace espansa: _index-workspa..., _template-nota..., canon.md). Rete fitta di nodi etichettati, tra cui: kpi-2025-churn, concetto-churn, nota-collegata-2, output-pitch-deck-vendite, area-finance-operations, kpi-2025-nrr, prodotto-aurora-core, concetto-efficienza-energetica, prodotto-aurora-access, doc-onboarding-cliente, _template-nota, area-customer-success (nodo grande, molto connesso), persona-giulia-rinaldi, cliente-banca-adriatica, kpi-2025-edifici, area-prodotto-engineering, self-identita-aurora (nodo grande centrale), cliente-immobiliare-lombarda, persona-chiara-fontana, kpi-2025-arr, area-marketing, area-vendite, kpi-2025-clienti-attivi, prodotto-aurora-energy, concetto-arr, nota-collegata-1, strumento-crm, area-people-cultura, progetto-arr-fin-2026, persona-elena-ferraro, canon, persona-marco-bianchi, code-export"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-112",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Report completo di Claude dopo la scrittura in massa delle note del Prompt 4, trascritto integralmente, prima parte (\"Regole rispettate\"): \"Ogni nota: una sola idea, frontmatter completo (title, summary, tags, status, created, updated, related), primo tag = nome cartella, ≥3 wikilink uscenti a note reali e uniche. Ordine di creazione studiato perche' ogni related punti solo a note gia' esistenti: zero link morti, zero orfani. Canali commerciali come tag, non cartelle: channel/referral (Immobiliare Lombarda), channel/eventi (pitch deck, progetto ARR). Numeri coerenti col canon: somma ARR clienti = 3,84M, somma immobili = 751.\" Seconda parte (\"Tre cose da segnalarti\"), integrale: \"1. 'Tre prodotti' vs cinque. Mi hai chiesto i tre prodotti, ma nel canon ce ne sono cinque (Core, Energy, Manutenzione, Access, Insights). Ho creato i 3 piu' centrali per la demo (Core, Energy, Access). Vuoi che "
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-113",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt dell'utente che chiede l'introduzione dello _index, trascritto integralmente (con _index evidenziato in blu, selezionato): \"Hey, ora ho bisogno di un'ulteriore aggiunta. Analizza bene la struttura del progetto: analizza tutte le cartelle, anche quelle che hai in conversazione, e assicurati di avere tutto documentato. In particolare, assicurati di avere: - un front matter - un indice (un _index) che possa evitare note orfane all'interno del progetto. Ti posso chiedere di introdurre questo indice in ogni cartella, o dove meglio ritieni opportuno?\" Questo e' il comando che innesca la creazione effettiva degli 11 _index di cartella + l'indice madre _index-aurora.md."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-114",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Risposta completa di Claude alla richiesta dello _index, ricostruita unendo la prima apparizione (scena 215, troncata dal frame) con la ripetizione integrale successiva (scena 223, non troncata): comando eseguito con output \"File .md totali: 44 / Senza frontmatter: NESSUNO / Link rotti (escluso template): NESSUNO\", poi: \"Fatto. Grafo chiuso e verificato. Risultato finale: 44 file .md, tutti con frontmatter -- zero senza. Zero link rotti, zero note orfane (escluso il template, che e' uno scaffold per definizione fuori dal grafo). Cosa ho aggiunto: Un _index in ogni cartella (11) + un indice madre _index-aurora.md alla radice -> unico punto d'ingresso, grafo navigabile dall'alto: madre -> indice di cartella -> nota. Ogni nota ora riceve almeno un link entrante dal suo indice. Nomi unici (_index-<cartella>) per non rompere la risoluzione wikilink di Obsidian. Frontmatter aggiunto a canon.md"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-115",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Coda esclusiva della risposta di Claude, visibile per intero solo nella ripetizione integrale (scena 223), assente dalla prima apparizione troncata: \"Scope: ho indicizzato solo il vault Aurora. Le directory .claude/ e .claude/plans/ viste in sessione sono config dello strumento, non parte del cervello: lasciate fuori. Vuoi che fissi _index-aurora come nota home (impostazione di Obsidian) o lo lasci a te?\" Claude distingue qui esplicitamente i file di configurazione del proprio strumento (.claude/) dal contenuto reale del cervello aziendale, e propone di fissare l'indice madre come nota \"home\" di Obsidian (impostazione nativa dell'app, separata dal contenuto del vault)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-116",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Esempio integrale del pattern _index per cartella, file `outputs/_index-outputs.md` aperto per intero: frontmatter title: \"Indice -- outputs\", summary: \"Mappa dei deliverable prodotti da Aurora.\", tags: [outputs, index, moc], status: active, created: 2026-06-10, updated: 2026-06-10, related a blocco: \"[[output-pitch-deck-vendite]]\", \"[[area-marketing]]\", \"[[self-identita-aurora]]\". Corpo: \"# Indice -- outputs\", \"La cartella outputs/ contiene i deliverable concreti.\", sezione \"## Note\" con \"[[output-pitch-deck-vendite]] -- pitch deck commerciale, agg. dicembre 2025.\", sezione \"## Salendo\" con \"Indice madre: [[_index-aurora]]\" e \"Reparti proprietari: [[area-marketing]], [[area-vendite]]\". Questo file dimostra concretamente la struttura a tre livelli annunciata nella risposta di Claude (P2-120): indice madre -> indice di cartella -> nota, con la sezione \"Salendo\" che fa risalire il lettore "
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-117",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Graph view di Obsidian dopo la creazione degli _index: compaiono gli 11 nuovi nodi indice, riconoscibili dal prefisso _index-: _index-concepts, _index-data, _index-self, _index-docs, _index-outputs, _index-areas, _index-workspace, _index-sources, _index-code, _index-projects, _index-entities, piu' il nodo centrale _index-aurora posizionato tra area-vendite e self-identita-aurora. Voce: \"E come vedete ora abbiamo il collegamento a Canon. Quindi questo vuol dire che se noi andiamo qui ora il nostro Canon non e' piu' una nota orfana e quindi abbiamo fatto tutto come si deve\" -- conferma diretta che il nodo canon, isolato dalla prima apparizione del grafo (P2-104) fino a poco prima, risulta ora collegato alla rete grazie all'_index di workspace."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-118",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 5 del canovaccio Notion (\"Il gate di qualita' (solo referto)\", descrizione: \"Controlla ogni nota contro le sei regole e ti restituisce solo il referto.\"), testo integrale: \"Crea un link python che faccia 'a gate di qualita' sul cervello di Aurora. Passa 11 cartelle (salta solo sources/ e workspace/, che sono materiale grezzo e scratch) e controllala contro queste sei regole: 1. Frontmatter completo: title, summary, tags, status, created, updated. 2. Massimo 300 righe di corpo per nota. 3. Almeno 3 wikilink [[...]] in uscita verso note che esistono davvero (conta i bersagli unici, non lo stesso link ripetuto; gli _index non valgono). 4. Zero link rotti: ogni [[bersaglio]] punta a una nota che esiste. 5. Zero orfani: ogni nota ha almeno 1 link in ENTRATA (gli _index sono esentati). 6. Una sola componente connessa: tutto il grafo e' un unico grappolo, non due isole. Elenca gli errori"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-119",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 6 del canovaccio Notion (\"Correggi e ripeti finche' esce '0 errori'\", descrizione: \"Il ciclo correttivo: l'AI sistema cio' che ha segnalato, rifa' il gate, e ripete fino a zero.\"), testo integrale: \"Correggi le note che hai appena segnalato, applicando le regole del gate: frontmatter completo, massimo 300 righe, almeno 3 wikilink reali in uscita, zero link rotti, zero orfani, un solo grappolo connesso. Poi rifai il gate da capo e mostrami il nuovo referto. Ripeti finche' non esce 'OK, 0 errori'.\" Questo prompt istituisce il ciclo automatico correggi-verifica-ripeti come pattern operativo standard per portare qualunque vault a \"0 errori\" rispetto alle sei regole del gate di qualita', senza intervento manuale nota per nota."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-120",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 7 del canovaccio Notion (\"Genera l'indice per la AI (llms.txt)\", descrizione: \"La porta d'ingresso per la AI: un indice derivato, rigenerato dal frontmatter.\"), testo integrale: \"Genera il file llms.txt nella radice del vault: e' l'indice-porta per la AI. Per ogni cartella di contenuto (self, areas, projects, docs, entities, data, code, outputs) elenca le note nel formato \"- [[nome-file]] — summary\", prendendo il summary dal frontmatter di ogni nota. In cima metti una riga di intestazione per ogni cartella. NON includere sources/ e workspace/. NON inventare niente: title e summary vengono SOLO dal frontmatter delle note. Ricordati che llms.txt e' DERIVATO: si rigenera da capo, non si modifica a mano.\" Nota di rilievo: nell'elenco delle cartelle di questo prompt canonico manca esplicitamente 'concepts' (self, areas, projects, docs, entities, data, code, outputs = 8 cartelle su 9 sc"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-121",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 8 del canovaccio Notion (\"Lo showcase (la fotografia per la demo)\", descrizione: \"Numeri da mostrare a un cliente: quante note, quanti link, quante componenti connesse.\"), testo integrale: \"Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 = tutto collegato). Poi dammi una tabella 'note per cartella' e, sotto, l'elenco degli hub (i piu' linkati). Prendi il summary dell'_index di ogni cartella. Salva tutto in _showcase/showcase.md. E' una fotografia DERIVATA: si rigenera, non si scrive a mano.\" Questo e' l'ultimo dei quattro prompt (5-6-7-8) del \"Passo 3 — Gate di qualita', indice per le AI, showcase, grafo, GitHub\": la sua esecuzione effettiva (genera_showcase.py, _showcase/showcase.md) avviene in s"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-122",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Sequenza a sola webcam sul limite strutturale della delega all'AI, ricostruita per intero dalle 9 scene consecutive: \"Un concetto molto importante che ehm ripeto abbastanza in community e' [che] nel mondo delle AI noi possiamo fare outsourcing di competenza perche' l'AI puo' scrivere codice al posto nostro, di pensiero perche' molto spesso l'AI puo' pensare quale sia la migliore architettura, ok? al posto nostro, pero' non possiamo fare outsourcing della comprensione e questo e' la skill, il pensiero critico e' comprensione di un problema. Ehm, e questo e' importante perche' siamo arrivati al punto in cui possiamo raccontare un sacco di cose alle AI, ma se non capiamo i cosa c'e' sotto, sara' molto complesso che poi Lei riesca a farlo per noi capendolo da sola. Ok? Perche' ricordatevi sempre che a prescindere da quanto bravi diventino i modelli, sono sempre allenati sulla media dei dati "
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-123",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Ripresa dello screen-share dopo la sequenza sull'outsourcing di comprensione: Claude, dopo \"Thought for 88s\", annuncia \"Creo il gate come script Python autonomo (nessuna dipendenza esterna) e lo eseguo per produrre il referto.\" e precisa lo scope reale rispetto all'enunciato del prompt: \"Una precisazione di scope che il tuo enunciato implica: l'indice madre _index-aurora.md sta nella radice del vault, non dentro una delle 11 cartelle, quindi per definizione ('ogni nota delle 11 cartelle') resta fuori dal setaccio. Le cartelle effettivamente scansionate sono 9 (11 − sources/ − workspace/).\" Lo stato di avanzamento mostrato durante l'elaborazione e' etichettato \"Cerebrating...\" invece del solito \"Thinking...\", una delle numerose etichette di stato scherzose usate dall'IDE Antigravity per segnalare lavoro in corso."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-124",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Referto completo del primo run del gate di qualita', trascritto per intero (compare identico, parola per parola, sia nella scena in cui Claude lo produce sia nella sua ripetizione poco dopo nella stessa sessione): \"Referto: OK, 0 errori. Lo script e' gate_qualita.py alla radice del vault. Ha setacciato le 28 note delle 9 cartelle scansionate (le 11 meno sources/ e workspace/) e tutte e 6 le regole passano: 1. Frontmatter completo — ok. 2. Corpo ≤ 300 righe — ok. 3. ≥3 wikilink uscenti reali e unici, _index esclusi dal conteggio — ok. 4. Zero link rotti — ok. 5. Zero orfani, ≥1 link in entrata (_index esentati) — ok. 6. Una sola componente connessa — ok. Lo lanci con python3 gate_qualita.py (exit code 0 se pulito, 1 se trova errori, cosi' puoi usarlo anche in un hook pre-commit). Il referto raggruppato per regola compare solo quando c'e' almeno un errore; se e' tutto a posto stampa esatta"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-125",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Codice sorgente di `gate_qualita.py` aperto in editor, riportato riga per riga fino al punto in cui il frame lo taglia (righe successive alla 37 non leggibili in questo frame, dichiarato):\n```python\n#!/usr/bin/env python3\n\"\"\"\nGate di qualita' sul cervello di Aurora.\nSetaccia ogni nota delle 11 cartelle, saltando sources[...taglio bordo destro]\ne la controlla contro 6 regole. Stampa un referto ragg[...taglio]\nUso: python3 gate_qualita.py\n\"\"\"\n\nimport os\nimport re\nimport sys\n\nVAULT = os.path.dirname(os.path.abspath(__file__))\nSKIP = {\"sources\", \"workspace\"}          # material[...taglio]\nFOLDERS = [\"self\", \"areas\", \"projects\", \"c[...taglio]\",\n           \"entities\", \"data\", \"code\", \"outputs\"]  # [...taglio]\nREQUIRED_FM = [\"title\", \"summary\", \"tags\", \"status\", [...taglio]\nMAX_BODY_LINES = 300\nMIN_OUT = 3\n\nLINK_RE = re.compile(r\"\\[\\[([^\\]]+?)\\]\\]\")\nFM_RE = re.compile(r\"^---\\s*\\n(.*?)\\n---\\s*\\n"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-126",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Conferma del percorso reale del file: il mouse fermo sopra `gate_qualita.py` nella sidebar mostra il tooltip col percorso completo \"~/Desktop/aurora cervello/gate_qualita.py\". Voce: \"Ovviamente e' stato fatto fuori perche' lui e' super partes, no? va a controllare tutte le cartelle, quindi va bene che sia nella cosiddetta root, quindi fuori da tutto da tutte quante queste cartelle, ma dentro a questa cartella principale... Quindi tutti questi 11 piu' questi due sono tutti allo stesso livello.\" Principio generale: uno script che deve controllare (essere \"super partes\" rispetto a) tutte le cartelle di contenuto non puo' vivere dentro nessuna di esse; va messo alla radice del vault, allo stesso livello delle 11 cartelle, insieme all'indice madre `_index-aurora.md`."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-127",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Esecuzione dal vivo del Prompt 7: il prompt utente, dettato/incollato con la formulazione leggermente estesa vista a schermo (\"Genera il file llms.txt nella radice del vault: e' l'indice-porta per la AI. Per ogni cartella di contenuto (self, areas, projects, concepts, docs, entities, [...] data, code, outputs) elenca le sue note nel formato '- [[nome-file]] — summary'\" — coda tagliata dal riquadro). Risposta di Claude, dopo \"Thought for 24s\": \"llms.txt e' derivato, quindi non lo scrivo a mano: creo un generatore che lo rigenera dal frontmatter delle note, e lo eseguo. Cosi' title/summary vengono solo dalle note e il file si puo' ricostruire da capo quando il cervello cambia. Scelta che ti segnalo: escludo i file _index- dall'elenco. Sono scaffolding di navigazione (summary del tipo 'Mappa della cartella X'), non contenuto; un door-index per AI e' piu' utile se punta alle note vere. Se li"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-128",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Azione **Write** `genera_llms.py`, badge \"70 lines\", anteprima di codice mostrata: `#!/usr/bin/env python3`, poi apertura della docstring `\"\"\"` con prima riga \"Generatore di llms.txt per il cervello di Aurora.\" Stato di avanzamento durante la scrittura: \"Wrangling...\". Nella sidebar compare il nuovo file `genera_llms.py` subito sotto `gate_qualita.py`. Coerentemente con quanto appena dichiarato in P2-133, il generatore (non il file `llms.txt` stesso) e' l'artefatto scritto a mano; l'esecuzione dello script e la lettura del file `llms.txt` che ne risulta avvengono nella scena immediatamente successiva, fuori dal perimetro 181-240 coperto da questo file."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-129",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Pattern osservabile trasversale a piu' scene: l'IDE Antigravity non usa mai una generica etichetta \"Loading...\" per segnalare che l'agente sta lavorando, ma ruota tra verbi in -ing scelti in modo giocoso/idiosincratico, diversi ogni volta: \"Schlepping...\" (scena 181, subito dopo bypass permission), \"Thinking...\"/\"Stuttering...\" (scena 190, durante l'elaborazione del Prompt 4), \"Thinking... - 64 tokens\" (scena 214, invio del prompt _index), \"Cerebrating...\" (scena 233, mentre Claude scrive lo script del gate), \"Wrangling...\" (scena 240, mentre scrive genera_llms.py). Il contatore di token accanto all'etichetta (es. \"64 tokens\") e il nome \"Thought for Ns\" prima della risposta finale sono gli unici indicatori numerici di avanzamento mostrati all'utente durante l'attesa."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-130",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Per rigenerare e verificare al volo l'indice llms.txt si usa un unico comando bash concatenato: entra nella cartella del vault, esegue lo script generatore, poi stampa il file appena scritto con un separatore visivo. L'output conferma quante note e quante cartelle sono state indicizzate (30 note in 9 cartelle) prima ancora di aprire il file."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-131",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Contenuto integrale di llms.txt come mostrato in editor (righe tagliate a destra dal bordo del frame dove indicato nella fonte, dichiarato): intestazione con nota che il file è DERIVATO e non va modificato a mano, poi una sezione per ognuna delle 9 cartelle di contenuto (self, areas, projects, concepts, docs, entities e le altre), ciascuna con la sua nota elencata nel formato '- [[nome-file]] — summary'. Sezione self: 1 nota (self-identita-aurora). Sezione areas: 6 note (area-customer-success, area-finance-operations, area-marketing, area-people-cultura, area-prodotto-engineering, area-vendite). Sezione projects: 1 nota (progetto-arr-5m-2026). Sezione concepts: 3 note (concetto-arr, concetto-churn, concetto-efficienza-energetica). Sezione docs: 1 nota (doc-onboarding-cliente). Sezione entities: 11 note (2 clienti, 1 cliente aggiuntivo, 4 persone, 3 prodotti, 1 strumento)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-132",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "regola",
+   "testo": "Spiegazione integrale (letta a schermo, non riassunta) di cosa contiene e cosa esclude llms.txt: le 9 cartelle di contenuto nell'ordine indicato (self → outputs), ognuna con la sua riga di intestazione '## <cartella>'; 30 note elencate come '- [[nome-file]] — summary', con il summary preso SOLO dal frontmatter (le virgolette del template vengono ripulite); sources/ e workspace/ esclusi; file _index- esclusi."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-133",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Come si rigenera llms.txt (letto per intero): è derivato, non si tocca a mano. Comando: python3 genera_llms.py. Lo script genera_llms.py riscrive llms.txt da capo leggendo i frontmatter correnti; quando si aggiunge o modifica una nota, va rilanciato e l'indice si aggiorna da solo. Nota di coerenza esplicita: il generatore e il gate di qualità condividono le stesse assunzioni (stesse 9 cartelle, stesso parsing di frontmatter, esclusione _index), così quello che passa il gate è esattamente ciò che finisce in llms.txt. Proposta del sistema: incatenare i due in un unico comando che lancia gate_qualita.py e, solo se esce 0, rigenera llms.txt — utile come hook pre-commit; se non si è in un repo git, l'alternativa offerta è un piccolo script build.sh."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-134",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "L'autore dichiara esplicitamente che llms.txt non è uno standard di settore ma un consiglio personale suo: lo trova utile a livello di efficienza token, ma invita ognuno a valutare se adottarlo o meno per il proprio cervello aziendale."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-135",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 8 — 'Lo showcase (la fotografia per la demo)', scritto prima nel canovaccio Notion e poi incollato nella chat: chiede di generare una fotografia sintetica del cervello aziendale da mostrare in una demo commerciale, contando tutte le note (11 cartelle meno sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo. Testo continuo più ampio ricostruito unendo le scene 246-247 (il resto della riga prosegue oltre il bordo del frame, dichiarato tagliato nella fonte): 'Fammi lo showcase del cervello di Aurora: una fotografia da mostrare in una demo. Conta tutte le note (le 11 cartelle, salta sources/ e workspace/), i wikilink totali che le tengono insieme, e quante componenti connesse ha il grafo (1 e tutto...'."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-136",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Lo showcase, come llms.txt, è dichiarato una fotografia DERIVATA: invece di scrivere i numeri a mano, si crea un generatore (genera_showcase.py) e lo si esegue, così i numeri sono calcolati dal grafo reale e si rigenerano automaticamente quando il cervello cambia — evitando che una fotografia commerciale diventi silenziosamente falsa nel tempo."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-137",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Contenuto integrale del file sorgente _showcase/showcase.md generato: intestazione con dichiarazione di derivazione e scope esplicito (le 11 cartelle meno sources/ e workspace/, l'indice madre alla radice resta fuori), poi la tabella 'La fotografia' a due colonne (Metrica | Valore): Note totali 39; di cui note di contenuto 30; di cui hub (un _index per cartella) 9; Wikilink totali (la colla del grafo) 262; Componenti connesse 1."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-138",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Le tre metriche chiave della fotografia del cervello Aurora, come riassunte in chat dopo la generazione: 39 note totali (30 di contenuto + 9 hub, un _index per cartella); 262 wikilink che le tengono insieme; 1 componente connessa, cioè tutto collegato, nessuna isola nel grafo."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-139",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "regola",
+   "testo": "Regola di scope dichiarata nel corpo stesso di showcase.md: lo showcase copre le 11 cartelle del vault meno sources/ e workspace/ (quindi 9 cartelle), e l'indice madre alla radice del vault (_index-aurora.md) resta fuori dal conteggio — la stessa convenzione di esclusione già vista in llms.txt e nel gate di qualità."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-140",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Tabella 'Note per cartella' del rendering di showcase.md, con colonne Cartella | Contenuto | Hub | Totale: self 1/1/2; areas 6/1/7; projects 1/1/2; concepts 3/1/4; docs 1/1/2; entities 11(?)/1(?)/12(?) — quest'ultima riga è tagliata dal bordo inferiore del frame nella fonte, cifre poco nitide e dichiarate incerte."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-141",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "regola",
+   "testo": "Autocorrezione esplicita e non richiesta del sistema, dichiarata onestamente in chat: in un turno precedente l'agente aveva detto '28 note scansionate' dal gate di qualità — un numero sbagliato che l'agente stesso ammette di aver 'buttato lì', perché il gate non lo aveva realmente stampato. Il conteggio vero, ricalcolato al momento, è 39 note nelle 9 cartelle (30 contenuto + 9 hub); i tre strumenti (gate_qualita.py, genera_llms.py, genera_showcase.py) condividono ora lo stesso scope e lo stesso parsing, quindi i numeri sono coerenti tra loro."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-142",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 6 del canovaccio Notion — 'Correggi e ripeti finché esce' (titolo tagliato dal bordo del frame nella fonte): sottotitolo 'Il ciclo correttivo: l'AI sistema ciò che hai segnalato, ril[egge]...'. Corpo (tagliato a destra, dichiarato nella fonte): 'Correggi le note che hai appena segnalato, ar[...] frontmatter completo, massimo 300 righe, alm[eno]... link rotti, zero orfani, un solo grappolo con[...] mostrami il nuovo referto. Ripeti finché no[n]...'."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-143",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 7 del canovaccio Notion — 'Genera l'indice per la AI (llms.txt)', sottotitolo 'La porta d'ingresso per le AI: un indice derivato, rigenerato dal frontmatter'. Corpo, ricostruito unendo la versione più estesa vista nella scena 250 (righe tagliate a destra dal bordo, dichiarato): 'Genera il file llms.txt nella radice del vault: e' l'indi[ce]... Per ogni cartella di contenuto (self, areas, projects, co[ncepts,] data, code, outputs) elenca le sue note nel formato \"- [[...]]\"... prendendo il summary dal frontmatter di ogni nota. In cim[a]... intestazione per ogni cartella. NON includere sources/ e [workspace/]... niente: title e summary vengono SOLO dal frontmatter dell[a nota]... Ricordati che llms.txt e' DERIVATO: si rigenera da capo, [...]'. Corrisponde parola per parola al prompt eseguito in azione nelle scene 239/242."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-144",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Voce del canovaccio Notion 'Impostazioni grafo a sfera (a mano, in Obsidian)', non ancora eseguita a schermo, letta per intero nella sua versione più completa (scena 253): Distanza dei link (Link distance): BASSA → avvicina le note collegate, formano piccole sfere fitte; Forza di repulsione (Repel force): MODERATA → le note non si toccano ma non volano via; Forza centrale (Center force): DOLCE → tira tutto verso il centro, niente disperde ai bordi; Orfani (Show orphans): ACCESI → formano l'anello esterno attorno al grappolo. Istruzione aggiuntiva: poi aggiungere i gruppi di colore per cartella (le persone di un colore, i dati di un altro, ecc.)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-145",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 9 (versione breve, letta per prima nella scena 251) — 'Metti il vault sotto git (senza push)', sottotitolo 'La macchina del tempo locale: repository + branch + commit, niente push.' Testo integrale: 'Metti il mio vault sotto git, così ho una macchina del tempo. Se non è ancora un repository, crealo. Crea un branch di lavoro chiamato feature/wave-01, prendi tutti i file e fai un commit con questo messaggio: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". NON fare push da nessuna parte: il cervello resta solo sul mio computer.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-146",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 9 (versione 'istruzioni precise', vista pochi minuti dopo alla scena 253 e incollata per intero nell'IDE alla scena 254) — stesso titolo 'Metti il vault sotto git' e stesso sottotitolo, ma corpo completamente diverso, un elenco numerato: 'Trasforma il mio vault Obsidian in un repository Git. Obiettivo: avere una cronologia completa delle modifiche, come una macchina del tempo per il mio company brain. Istruzioni precise: 1. Verifica se la cartella del vault è già un repository Git. Se non lo è, inizializzalo con git init. 2. Crea un file .gitignore adatto a Obsidian: escludi .obsidian/workspace.json, .obsidian/workspace-mobile.json, file di cache e file di sistema (.DS_Store, Thumbs.db). Tutto il resto della cartella .obsidian va versionato, perché contiene grafo e configurazioni. 3. Crea un branch di lavoro chiamato feature/wave-01 e spostati su quel branch. 4. Aggiungi tutti i f"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-147",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "anti-pattern",
+   "testo": "Le due letture dello stesso riquadro 'Prompt 9', rilette due volte per certezza, non coincidono: alle 100:30 il codice dice esplicitamente 'NON fare push da nessuna parte', mentre alle 103:42 lo stesso riquadro (stesso titolo, stesso sottotitolo) contiene un elenco numerato il cui punto 4 dice 'fai commit e push' — l'istruzione di sicurezza è sparita, sostituita dall'opposto. Non è un errore di lettura: il contenuto del box è realmente diverso tra i due momenti, probabilmente riscritto/espanso con l'AI tra una ripresa e l'altra. Nota operativa per l'Impero: un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un 'espandi questo prompt'."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-148",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 10 del canovaccio Notion — 'Interroga il cervello (a 28 note, senza RAG)', sottotitolo 'Carichi tutte le note e fai una domanda da imprenditore. Regola d'oro: rispondi solo con le note, cita il file, se non c'è dillo.' Testo integrale: 'Ti do l'intero cervello di Aurora Sistemi: tutte le note markdown del vault, con il loro frontmatter. Rispondi alla mia domanda usando SOLO il contenuto di queste note. - Cita sempre il nome del file da cui prendi ogni informazione. - Se la risposta non è presente nelle note, scrivi esattamente: \"Non presente nel cervello.\" Non inventare, non stimare, non dedurre. Domanda: qual è l'ARR di Aurora e come è cambiato l'organico negli ultimi tre anni?'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-149",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 9 completo così come incollato e visibile per intero nel campo di input dell'IDE Antigravity (bordo rosso, non ancora inviato), tutte e 5 le istruzioni leggibili: '1. Verifica se la cartella del vault è già un repository Git. Se non lo è, inizializzalo con git init. 2. Crea un file .gitignore adatto a Obsidian: escludi .obsidian/workspace.json, .obsidian/workspace-mobile.json, file di cache e file di sistema (.DS_Store, Thumbs.db). Tutto il resto della cartella .obsidian va versionato, perché contiene grafo e configurazioni. 3. Crea un branch di lavoro chiamato feature/wave-01 e spostati su quel branch. 4. Aggiungi tutti i file allo staging e fai commit e push con questo messaggio esatto: \"Bootstrap del cervello a 11 cartelle: note + grafo Obsidian\". 5. Alla fine mostrami: il branch attivo, l'output di git status e l'output di git log --oneline.' Sotto, campo separato: 'GITHUB TOK"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-150",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Per dare accesso a GitHub all'agente, il presentatore valuta due strade a voce (MCP o token) e sceglie il token; annuncia l'intenzione di metterlo in un file .env (che infatti viene aperto vuoto, una sola riga, nell'Explorer accanto al prompt), ma nella pratica il token finisce incollato direttamente nel campo 'GITHUB TOKEN:' dentro il riquadro del prompt stesso (scena 258), non nel file .env. Il token viene nominato 'second brain' durante la creazione su GitHub."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-151",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Vista 'app switcher' con le cinque applicazioni tenute aperte in parallelo per costruire il tutorial del cervello Aurora: Desktop 1, Obsidian (graph view), Antigravity IDE (finestra attiva, bordo evidenziato in blu — conferma il nome esatto del tool, non 'VS Code' né 'Claude Code'), Notion, Google Chrome."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-152",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Diagramma Excalidraw disegnato a mano per spiegare Git come analogia visiva: in alto scritta BRANCH con una linea che scende verso un'icona 'postazione/laptop' (rettangolo con cerchio dentro e bandierina sopra); tre linee orizzontali parallele — una blu etichettata MAIN con trattini lungo il percorso, una arancione che sale verso un fitto scarabocchio rosso a zig-zag (che sembra rappresentare un branch fallito/da scartare, coerente con l'esempio verbale di un branch di prova per una modifica al sito che se non funziona si cancella — lettura del testo sotto lo scarabocchio non verificabile con certezza), una verde etichettata COMMIT che parte da un pallino verde e termina con una freccia corta."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-153",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Esito reale del Prompt 9 (versione con push) su GitHub: repository aurora-cervello, branch feature/wave-01, commit con messaggio esatto 'Bootstrap del cervello a 11 cartelle: note + grafo Obsidian', hash 42c675e (esteso: 42c675e7ed8fa83797aaf98defcd3f5224e8d011), datato 'Jun 10, 2026'. Il diff del commit mostra 50 files changed, +1.638 righe aggiunte, nessuna cancellazione, con un banner di avviso 'Some content is hidden' perché il commit è troppo grande per essere mostrato tutto."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-154",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Diff mostrato su GitHub per il file .gitignore generato dall'agente (badge verde '+21' righe, le prime 8 leggibili per intero prima del taglio del frame, dichiarato): '# === Segreti: MAI versionare ===' / '.env' / '.env.*' / '*.key' / (riga vuota) / '# === Obsidian: stato UI locale (non versionare) ===' / '.obsidian/workspace.json' / '.obsidian/workspace-mobile.json'."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-155",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Motivazione a voce, riepilogata attraverso una lunga sequenza di scene talking-head, sul perché versionare il cervello: proteggersi dalla perdita del computer o da un suo guasto; e, per un team, garantire che chi aggiorna la company brain lasci un'unica verità condivisa — un'unica 'source of truth' — che gli altri possano recuperare (da GitHub o da un cloud storage) invece di lavorare su copie disallineate."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-156",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Confronto esplicito tra GitHub e Google Drive come alternative equivalenti per il version control del cervello: GitHub è più tecnico e scala meglio, ma richiede più competenza; Google Drive costa relativamente poco e offre comunque un posto dove tenere le varie versioni del progetto e tornare a una versione precedente quando serve."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-157",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Dentro l'IDE Antigravity viene aperto un pannello dedicato letteralmente etichettato 'Claude Code' (logo, messaggio di benvenuto 'Use planning mode to talk through big changes before a commit. Press [Shift][Tab] to cycle between modes.'): i due strumenti (Antigravity e Claude Code) convivono nella stessa finestra dell'editor."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-158",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Demo live del Prompt 10: l'agente, prima di rispondere, esegue un comando bash di ricerca testuale multi-keyword nel vault (grep -rin -e \"organico\" -e \"persone\" -e \"dipendent\" -e \"team\" -e \"cresci\" -e \"fonda[to]\") per trovare informazioni sull'organico storico, poi risponde citando sempre il file sorgente: per l'ARR cita kpi-2025-arr.md (confermato anche in area-finance-operations.md); per l'organico, non trovando uno storico triennale, applica la regola d'oro e dichiara l'assenza del dato."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-159",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "regola",
+   "testo": "Applicazione concreta della regola d'oro del Prompt 10 nella demo: alla domanda su come è cambiato l'organico negli ultimi tre anni, l'agente risponde testualmente 'Non presente nel cervello.', spiegando che le note riportano solo l'organico attuale (47 persone su due sedi Milano e Bologna) e il piano di +6 assunzioni approvato per il 2026 (file area-people-cultura.md, canon.md), senza alcuno storico sui tre anni precedenti — nessuna stima, nessuna invenzione."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-160",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 11 del canovaccio Notion — 'La domanda di incrocio (dove le cartelle si arrendono)', sottotitolo 'Due fatti in due note diverse: la risposta si costruisce camminando sui collegamenti.' Testo integrale: 'Rispondi usando SOLO le note del cervello di Aurora. - Cita sempre il nome del file da cui prendi ogni informazione. - Elenca SOLO i clienti che hanno DAVVERO tutti e due i prodotti. Se un cliente ne ha uno solo, lascialo fuori. - Se la risposta non è nel cervello, scrivi: \"Non presente nel cervello.\" Domanda: quali clienti hanno attivato sia Aurora Cloud sia Aurora Care, e chi li segue nel customer success?'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-161",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 12 del canovaccio Notion — 'Il cruscotto HTML locale', sottotitolo 'Un singolo file HTML offline da aprire con un doppio click: il biglietto da visita per una demo.' Testo integrale: 'Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apre con un doppio click, offline e senza account.' Eseguito parola per parola nella scena 317 (con minima variazione 'apro' al posto di 'apre')."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-162",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 13 del canovaccio Notion — 'Apri la sessione (il briefing)', sottotitolo 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Testo integrale: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conviene affrontare oggi, in ordine di priorità. Non scrivere ancora niente nel cervello. Solo il briefing.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-163",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt 14 del canovaccio Notion — 'Chiudi la sessione (il diario)', sottotitolo 'A fine giornata, fai scrivere al cervello la nota di sessione, agganciata alle entità vere toccate.' Testo integrale: 'Chiudiamo la sessione di oggi. Scrivi la nota di diario nel cervello. - Cartella: workspace/journal/sessions/ - Nome file: sessione-<data di oggi> (esempio: sessione-2026-06-09) - In cima il frontmatter: title, summary (UNA frase su cosa abbiamo fatto oggi), tags (il primo è workspace/session), status: done, created e updated con la data di oggi, e related su una riga coi wikilink alle note toccate. - Corpo in tre sezioni brevi: ## Fatto — cosa abbiamo concluso oggi / ## Deciso — le scelte prese e il perché / ## Aperto — cosa resta in sospeso per domani - Aggancia la nota alle entità vere toccate oggi coi [[wikilink]] (i clienti, i KPI, i progetti). Mai una nota di diario sciolta nel vuoto. "
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-164",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Nota atomica reale prodotto-aurora-access.md, frontmatter e corpo trascritti per intero: title 'Prodotto — Aurora Access'; summary 'Modulo di controllo accessi (badge, fasce orarie, videosorveglianza) per gestire la sicurezza di molte sedi da un unico punto.'; tags [entities, prodotto, aurora-access]; status active; created/updated 2026-06-10; related [[prodotto-aurora-core]], [[area-prodotto-engineering]], [[area-customer-success]]. Corpo: modulo che si appoggia a [[prodotto-aurora-core]] per il controllo degli accessi agli edifici (badge, permessi per fasce orarie, integrazione con la videosorveglianza), pensato per chi gestisce la sicurezza di molte sedi da un unico punto. Costruito da [[area-prodotto-engineering]]. Upsell dell'anno 2025: estensione a tutte le filiali di Banca Adriatica, seguita da [[area-customer-success]]. Usato da: Gruppo Retail, Rete Sanità Nord, UniCampus, Banca "
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-165",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Comando bash usato dall'agente per verificare rigorosamente se i prodotti citati nella domanda dell'utente esistono davvero nel cervello, prima di rispondere: grep -rln -i \"aurora cloud\\|aurora care\" --include=\"*.md\" . eseguito dentro la cartella del vault; l'output è vuoto (Bash completed with no output), a conferma che nessuna nota contiene quei due nomi."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-166",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "regola",
+   "testo": "Risposta dell'agente dopo la verifica grep: 'Ho cercato in tutte le note del cervello di Aurora i prodotti citati nella domanda. I prodotti registrati nel cervello sono solo tre: Aurora Access, Aurora Core e Aurora Energy. Né \"Aurora Cloud\" né \"Aurora Care\" compaiono in alcuna nota. Non presente nel cervello.' Applicazione rigorosa della regola d'oro anche quando i nomi dei prodotti nella domanda sono plausibili ma inventati."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-167",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "esempio",
+   "testo": "Rieseguendo la domanda del Prompt 11 sui prodotti reali (Access, Core, Energy), l'agente legge le note dei tre clienti e applica la regola stretta (un cliente conta solo se ha davvero tutti i prodotti citati): cliente-banca-adriatica.md ha Core, Access, Manutenzione → Core+Access, manca Energy; cliente-hotelline-hospitality.md ha Core, Energy → manca Access; cliente-immobiliare-lombarda.md ha Core, Energy, Manutenzione, Insights → manca Access. Conclusione con la regola stretta: nessun cliente ha tutti e tre (Access + Core + Energy). Rilassando a 'almeno due dei tre', invece, tutti e tre i clienti si qualificano, e nel customer success: Banca Adriatica e Immobiliare Lombarda SGR sono seguite da Chiara Fontana; HotelLine Hospitality non ha un referente CS indicato nelle note (acquisita da Vendite) → 'Non presente nel cervello.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-168",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Nota atomica reale persona-marco-bianchi.md, frontmatter e corpo trascritti per intero: title 'Persona — Marco Bianchi (CTO)'; summary 'CTO e co-fondatore di Aurora Sistemi, responsabile di Prodotto & Engineering.'; tags [entities, persona, founder, cto]; status active; created/updated 2026-06-10; related [[area-prodotto-engineering]], [[prodotto-aurora-core]], [[persona-elena-ferraro]]. Corpo: co-fondatore e direttore tecnico di Aurora Sistemi, come [[persona-elena-ferraro|Elena Ferraro]] viene dall'ingegneria degli impianti, insieme dal 2018. Ruolo: responsabile di [[area-prodotto-engineering]] — sviluppo della piattaforma e di tutti i moduli, a partire da [[prodotto-aurora-core]]. Riporti tecnici: Luca Esposito (Engineering Lead, Core) e Paolo Marchetti (PM, Energy)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-169",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "esempio",
+   "testo": "Risposta completa alla domanda 'c'è un modo di identificare quale degli impiegati porta il maggior ARR?': il cervello documenta l'ARR di solo 3 clienti su 9 (per gli altri 6 i canoni non sono nelle note). L'unico impiegato legato esplicitamente a clienti con ARR noto è Chiara Fontana (CSM): Banca Adriatica € 520.000 + Immobiliare Lombarda SGR € 720.000 = totale € 1.240.000. HotelLine (€ 260.000) è acquisita da area-vendite.md ma non assegnata a una persona CS specifica. Risposta finale: Chiara Fontana è, in base al cervello, l'impiegata che porta il maggior ARR, con due avvertenze esplicite: 1) 'portare ARR' qui significa gestione/retention (ruolo CS), non acquisizione (ruolo vendite, non attribuita a nessun venditore per nome); 2) mancano i dati di 6 clienti su 9, quindi non si può escludere che un altro impiegato gestisca account più grandi — per quei clienti: 'Non presente nel cervell"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-170",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Quarto reset di conversazione osservato nel video (dopo le scene 279/284): schema fisso e ripetuto, tab rinominata 'Untitled', icona pixel-art arancione del robot Claude Code (qui con il corpo pieno invece che a contorno, variante grafica non vista prima), messaggio placeholder identico 'You've come to the absolutely right place!' e campo di input vuoto con bordo rosso attivo in basso. Il presentatore inizia già a dettare a voce la domanda successiva ('Ehi, guardando al mio database in una...') mentre la chat è ancora completamente vuota: il parlato anticipa sempre l'azione a schermo in questo montaggio, pattern già osservato più volte nel corso del video."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-171",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Nuova domanda posta dal presentatore, che nasce direttamente dal limite appena rilevato in P3-040 (l'ARR pro-capite era ricostruibile solo per un impiegato su dati parziali): testo esatto digitato, con chip file allegato 'persona-marco-bianchi.m...': 'Ehi, guardando al mio database in una tabella abbastanza schematica, riesci a dirmi quali sono le informazioni mancanti per riuscire a farli delle analisi complete?' Claude risponde: 'Ti aiuto. Per dirti cosa manca, prima devo vedere cosa c'è. Esploro il database.' ed esegue un comando bash 'List all vault files' che restituisce l'elenco completo e letterale di tutti i file del vault Aurora: .DS_Store, .env, .gitignore, _index-aurora.md, _showcase/showcase.md, areas/.DS_Store, areas/_index-areas.md, areas/area-customer-success.md, areas/area-finance-operations.md, areas/area-marketing.md, areas/area-people-cultura.md, areas/area-prodotto-en"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-172",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Dopo la lettura delle entità, Claude esegue un terzo comando bash che concatena in un solo for-loop la lettura di KPI, aree, progetto e script di export CRM (comando visibile solo in parte: 'cd \"...aurora cervello\" && for f in data/kpi-*.md areas/area-*.md projects/progetto-arr-5m-20[26...]' tagliato a destra), motivato a voce dal narratore come necessario per vedere 'la parte numerica e organizzativa'. Durante questa fase il contatore di elaborazione sale da 'Thinking... · 16 tokens' a 'Thinking... · 857 tokens' poi 'Thinking... · 1.3k tokens', e l'etichetta di stato ruota tra parole casuali invece di restare fissa su un singolo 'Thinking...': si osservano in sequenza '🔺 Wandering...', '🔺 Computing...', '🔺 Percolating...'. Il testo della scena 298 dichiara esplicitamente che con queste si contano 'cinque' etichette scherzose in questo blocco di sistema RAG-demo, ma ne elenca sette in tu"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-173",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Risposta di Claude sotto heading 'Il problema di fondo (è quello del \"top employee\")': 'Il tuo cervello oggi è fotografico e descrittivo' — dice benissimo com'è fatta Aurora oggi (quante ARR per cliente) ma non risponde a 'cosa funziona meglio, cosa rende davvero, dove stai andando'. Diagnosi esplicita: per quelle analisi servono tre cose che oggi mancano quasi ovunque — 'una metrica per ogni unità (persona, prodotto, cliente)', 'i costi (non solo i ricavi)', e 'il tempo (serie storiche, non una foto al 31/12)'. Il caso 'top employee' è usato come sintomo perfetto: il database descrive ruoli e gerarchia ma non attacca nessun numero alla singola persona — solo Chiara Fontana ha un 'colpo dell'anno' scritto nelle note, quindi sembra l'unica brava, ma 'Non è che sia la migliore: è l'unica misurata.' Segue heading 'Cosa puoi GIÀ fare (così è chiaro il confine)': il database non è debole, è i"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-174",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Heading 'Dati che mancano del tutto (tabelle nuove)': 'Questi non sono colonne, sono interi pezzi di azienda assenti:' seguito da lista numerata completa: 1. 'Conto economico / costi: vedi solo i ricavi (ARR). Zero costi, margine, EBITDA, cassa, runway. Oggi non puoi dire se Aurora guadagna.' 2. 'CAC, LTV, payback: quanto costa acquisire un cliente e in quanto tempo rientri. È il cuore di un SaaS e non c'è.' (riga evidenziata in blu nello screenshot). 3. 'Pipeline e forecast 2026: l'obiettivo è 5M ma non esiste una pipeline che dica se raggiungibile o un sogno.' 4. 'Serie storica dei KPI 2018-2025: oggi hai due punti (inizio e fine 2025). Due punti non fanno una tendenza.' 5. 'Marketing a numeri: lead generati, costo per lead, conversione lead→cliente. Marketing è descritto ma senza una sola cifra.' 6. 'Concorrenti e win/loss: parli di \"vecchi BMS\" ma non c'è un concorrente nominato né p"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-175",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "regola",
+   "testo": "Heading 'Migliorie strutturali (rendono le analisi automatiche)', punto 1: 'Metti i numeri nel frontmatter come campi, non nella prosa. Oggi l'ARR è scritto \"€ 720.000\" dentro al testo: per sommarlo o filtrarlo serve farlo a mano. Se diventa un campo (arr: 720000, settore: banca), Obsidian con Dataview lo somma e filtra da solo. Esempio concreto: \"tutti i clienti retail sopra 400k senza insights\" diventa una query, non una rilettura a mano.' Punto 2: 'Schede che mancano: i 6 clienti senza nota (ci sono solo 3/9), i 2 prodotti senza nota (Manutenzione, Insights), e soprattutto Costruzioni Sud, il cliente perso: è la fonte più preziosa per capire perché si perde un cliente.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-176",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Heading 'Le 3 mosse che sbloccano l'80%': 'Se fai solo tre cose, in ordine:' 1. 'Prezzo per modulo sui clienti → sblocca ricavo per prodotto, attach rate a valore, e metà delle analisi commerciali.' 2. 'Una metrica di risultato per persona (almeno AE e CSM) → sblocca il \"top employee\" e la valutazione del team.' 3. 'I costi (conto economico base + RAL) → sblocca profittabilità, margine, ARR per dipendente: passi da \"quanto fatturo\" a \"quanto guadagno\".' Chiude con la domanda del modello: 'Vuoi che ti prepari lo schema dei campi nuovi (un template aggiornato per cliente/persona/prodotto) e le 8 schede mancanti come bozze da riempire?'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-177",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Il presentatore stacca su Excalidraw e disegna a mano una tabella di scala 'a 80/20' esplicitamente definita come 'numeri indicativi... non prendeteli come solo questo', per capire 'che tipologia di company brain' serve in base al numero di note del vault. Tabella completa a due colonne '# NOTE' (arancione) | 'ARCHITETTURA' (blu): '< 500' → '~' con una freccetta che punta a testo blu corsivo, letto come 'MAPPE CONTENUTO + Plus. txt' (trascrizione incerta per la grafia manoscritta, possibile refuso per 'più .txt'/file di testo semplice); '500 - 2500' → '~' (stessa freccetta, nessun testo aggiuntivo distinto in questi frame); '2500 - 20'000' → 'Embeddings / RAG'; '20'000 +' → 'Pipeline RAG completo'. Accanto, sullo stesso canvas, un secondo schizzo separato con due rettangoli rossi etichettati 'daily logs' e 'sessions' collegati da una freccia che passa da nero a blu, elemento che introduc"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-178",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Stacco sulla piattaforma community Skool 'Avanguardia Plus', corso 'Fondamenta AI / Business', lezione 'Cosa sono i Vector Databases' (progresso 0%, sezione 'Fondamenta AI' con altre lezioni collegate: 'Cosa Uso Per fare Le Presentazioni', introduzioni agli LLM, 'Prompt Engineering Basics', masterclass live). Testo della lezione, heading 'Cosa impari in questa lezione': 'Un vector database è un tipo di database ottimizzato per salvare e cercare vector embeddings. Se RAG è il processo, il vector database è dove i dati vivono.' Segue la differenza rispetto a un database tradizionale: 'un database SQL cerca corrispondenze esatte (\"dammi tutte le righe dove città = Milano\"). Un vector database cerca per similarità semantica (\"dammi i chunk di testo più simili a questa domanda\").' Il player video incorporato nella lezione mostra come miniatura l'Embedding Projector di TensorFlow, strumento ch"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-179",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "esempio",
+   "testo": "Dimostrazione dal vivo su projector.tensorflow.org (Embedding Projector, 'Tensors from: Word2Vec 10K', 'Points: 10000 | Dimension: 200', checkbox 'Spherize data' spuntata): il presentatore cerca la parola 'king' e mostra che, cliccando dal centro della nuvola di punti, 'Kings e King sono vettori simili nella stessa direzione nello spazio tridimensionale' — dimostrazione visiva del concetto di similarità semantica appena definito. La stessa registrazione viene rivista poco dopo dentro la lezione Skool 'Cosa sono i Vector Databases', dove è visibile un secondo esempio con un grappolo di parole tutte terminanti in '-ing' disposte vicine nello spazio vettoriale: 'networking', 'buckingham', 'cooking', 'tracking', 'viking', 'checking', 'smoking', 'drinking', 'striking', 'looking', 'attacking', 'working', 'thinking', con frecce blu disegnate a mano che convergono verso l'area di 'drinking' da u"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-180",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Sulla vista Graph view di Obsidian del vault Aurora (decine di nodi: aree, KPI, persone, clienti, prodotti, indici), il presentatore traccia a mano un percorso blu a zigzag da 'output-pitch-deck-vendite' fino a 'self-identita-aurora'/'_index-entities' per illustrare il vantaggio pratico dei vector database: 'al posto che andare dentro e farsi tutti i 1000... rami e sprecare token, l'AI andrà direttamente a vedere le cose che in un database vettoriale sono più o meno orientate nella stessa direzione' — cioè un'AI collegata a un vero vector database non deve attraversare l'intero grafo di note per rispondere, ma salta direttamente ai nodi semanticamente vicini alla domanda, risparmiando token. Il grafo stesso viene poi mostrato a schermo intero come prova visiva che il vault costruito è solido: 'Obsidian è il nostro layer 1' nell'architettura a livelli della company brain, e un grafo così "
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-181",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "definizione",
+   "testo": "Rassegna di tre vector database concreti consigliati per integrazioni RAG, mostrata tramite tre ricerche Google consecutive: Supabase ('The Postgres Development Platform', 'Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings') — voce: 'i database che consiglio sono, se volete fare integrazioni di tipo rag, potete usare Superabase e quindi il classico che vedete all'interno... dei video, soprattutto quando c'erano le [integrazioni]'; Qdrant, risultato sponsorizzato ('Vector Database for RAG — Enterprise-ready vector database for cloud, on-prem, and edge deployments') — voce: 'oppure potete usare un database come quadrant, hanno alcune differenze. Supase vi permette di fare integrazioni...'; Weaviate, ultimo esempio ('Weaviate: The AI database developers love', 'With over 20M open source downloads"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-182",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Pagina Notion privata 'Company Brain — Tutti i prompt del...', heading 'Prompt 12 — Il cruscotto HTML locale': 'Un singolo file HTML offline da aprire con un doppio click: il biglietto da visita per una demo.' Blocco codice del prompt riportato per intero: 'Genera un cruscotto HTML statico dai dati del canon: gli indicatori dell'ultimo mese, i grafici di andamento (fatturato, organico, edifici), la classifica clienti e l'organico per reparto. Tutto in un solo file .html che apro con un doppio click, offline e senza account.' Introdotto a voce come primo dei due 'layer visivi' della company brain (il secondo è Notion): 'Possiamo fare o cruscotti locali, quindi con un HTML locale, lo vedete in un sacco di video YouTube, oppure possiamo utilizzare Notion.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-183",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Stessa pagina Notion 'Company Brain — Tutti i prompt', heading 'Prompt 13 — Apri la sessione (il briefing)': 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Blocco codice del prompt, parzialmente tagliato dal bordo inferiore dello screenshot: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conv[iene fare oggi in] ordine di priorità.' seguito (non del tutto leggibile nello screenshot) da: 'Non scrivere ancora niente nel cervello. Solo il briefing.' Questo prompt anticipa esattamente il comando 'buongiorno' della futura skill journal costruita più avanti nel video (vedi P3-069), con la stessa struttura in 5 righe e lo stesso vi"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-184",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "esempio",
+   "testo": "Il presentatore passa da Notion ad Antigravity ed esegue dal vivo esattamente il Prompt 12: nel riquadro di input (bordo rosso attivo) digita/incolla lo stesso testo letterale già visto nella pagina Notion ('Genera un cruscotto HTML statico dai dati del canon...'), sopra la coda ancora visibile della risposta precedente sull'audit del database (punti 'Metti i numeri nel frontmatter...' e 'Le 3 mosse che sbloccano l'80%'). Voce: 'Quindi adesso facciamo un prompt super semplice e lo incolleremo qua dentro... genere, un croscotl scarico statico dei dati del canon, gli indicatori dell'ultimo mese, grafici, l'andamento, la classifica, tutto in un solo file, HTML che apre con un doppio click online e senza account' — corrisponde parola per parola al prompt scritto, a parte i piccoli inciampi del parlato. Dopo l'invio il prompt riappare in un blocco 'Bash tool output' con pulsante 'Show more' e"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-185",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Cruscotto HTML generato dal Prompt 12, aperto in locale (barra indirizzo 'File | /Users/giovannibeggiato/Desktop/aurora%20cervello/outputs/cruscotto-aurora.html'), sfondo scuro: header con logo quadrato sfumato viola-azzurro, titolo 'Aurora Sistemi S.p.A.', sottotitolo 'Cruscotto direzionale'; a destra 'Periodo di riferimento: fine 2025', 'Fonte: canon.md · compilato 2026-06-10', 'Dati riconciliati · nessun dato inventato'. Sezione 'INDICATORI CHIAVE - FINE 2025' con 6 card riportate per intero: 'ARR TOTALE' € 3,84 Mln (€ 3.840.000, +24% vs inizio 2025); 'CLIENTI ATTIVI' 9 (+1 nuovo logo · -1 perso, netto 0); 'EDIFICI GESTITI' 751 (su Aurora Core, 9 clienti); 'NRR' 115% (nel revenue attention, target >110%); 'CHURN LOGO' ~11% (1 cliente perso su 9, Costruzioni Sud); 'CHURN FATTURATO' 5,8% (€ 180.000 gross, perdita attesa). Voce del presentatore: 'Perfetto. Quindi il primo è questo output"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-186",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Stesso cruscotto HTML, sezione 'ANDAMENTO' con due grafici riportati per intero: a sinistra 'Fatturato (ARR)' — linea che parte da € 3,10 Mln (inizio periodo reale) e sale a € 3,84 Mln (fine 2025), poi prosegue tratteggiata fino a € 5,00 Mln, etichettata come obiettivo Board 2026; a destra 'Clienti attivi' — linea a gradini dal 2019 al 2025 con valori 1, 4, 6, 8, 9, 9, 9 (crescita rapida 2019-2022, poi plateau a 9 clienti attivi dal 2023). I due grafici traducono in immagine esattamente i numeri già visti nel canon (P3-047, progetto ARR 5M) e nell'audit (churn/espansione)."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-187",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Stesso cruscotto HTML, scroll su classifica clienti per fatturato (barra multicolore con gradiente che rappresenta i moduli attivi) e organico per reparto, riportati per intero: 1 \"Immobiliare Lombarda SGR\" \"€ 720.000\" (\"Property management\", \"120 edifici · dal 2018\"); 2 \"Gruppo Retail Centro\" \"€ 640.000\" (\"Catena retail\", \"210 edifici · dal 2020\"); 3 \"Banca Adriatica\" \"€ 520.000\" (\"Banca\", \"140 edifici · dal 2019\"); 4 \"Comune di Bologna\" \"€ 410.000\" (\"Pubblica amm.\", \"95 edifici · dal 2021\"); 5 \"LogiPark Logistica\" \"€ 380.000\" (\"Logistica\", \"65 edifici · dal 2021\"); 6 \"TorreVerde Property\" \"€ 350.000\" (\"Property management\", \"60 edifici · dal 2022\"); 7 \"Rete Sanità Nord\" \"€ 300.000\" (\"Sanità\", \"38 edifici · dal 2022\"); 8 \"UniCampus Student Housing\" \"€ 260.000\"; \"HotelLine Hospitality\" \"€ 260.000\". Legenda colori moduli: Manutenzione, Access, Insights. A destra, grafico a ciambella '47 p"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-188",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "In fondo alla pagina del cruscotto, riga di stato centrata riportata per intero: 'Cruscotto statico offline · generato dai dati del canon di Aurora Sistemi · 47 persone · 9 clienti attivi · 751 edifici'. Il presentatore chiude il primo esempio con: 'credo che avere un cruscotto figo ora da parte mia sia esattamente quello per cui avete cliccato sul video, quindi lo eviteremo... Questo è un primo layer visivo. Il secondo layer visivo è utilizzarlo tramite Notion.' Torna poi in cima alla stessa pagina prima di cambiare strumento e annuncia il passaggio successivo: 'Adesso connetterò al volo questo con eh cloud code.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-189",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Documentazione ufficiale consultata a schermo, developers.notion.com/guides/mcp/get-started-with-mcp, pagina 'Connecting to Notion MCP': 'This guide walks you through connecting your AI tool to Notion using the Model Context Protocol (MCP). Once connected, your tool can read and write to your Notion workspace based on your access and permissions.' Sezione 'Claude Code': 'Run this command in your terminal:' comando riportato per intero: 'claude mcp add --transport http notion https://mcp.notion.com/mcp'. Segue: 'Then authenticate by running /mcp in Claude Code and following the OAuth flow.' Più sotto: 'Use the /mcp command to list and manage the MCP servers you have installed, and use the /context command to understand the context token usage of your current session, including the number of tokens used by each MCP server that's enabled.' La sidebar destra elenca le altre integrazioni supp"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-190",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Sequenza terminale in Claude Code per collegare Notion: digitazione '/fast' con risposta '⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok'; poi digitazione '/cl▍' con menu di autocompletamento visibile ('/clear — Start a new session with empty context; previous session stays on disk (resumable with /resume)', '/claude-api', '/exit', '/code-review-mcp-issue-prompts'); eseguito '/clear' per ripartire pulito, poi banner di benvenuto 'Welcome back Gio!' con 'Opus 4.6 (1M context) with hi[gher limits]... · Claude Max', organizzazione 'giobeggiato@gmail.com's Organization', box 'Tips for getting started' ('Run /init to create a CLAUDE.md file with instructions for Claude', 'Introducing Claude Fable 5: a Mythos-class model that we've made saf...', 'Fixed sessions not saving transcripts...', 'Added \"--safe-mode\" flag...'), avviso '⚠ 1 setup issue: MCP · /doctor'; comando cronologia '> "
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-191",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Claude crea in Notion una nuova pagina privata intitolata 'Cervello Pino' (emoji albero di pino 🌲), callout verde riportato per intero: '🌲 Cervello Pino — Cruscotto KPI di Aurora Sistemi S.p.A.' — 'Piattaforma SaaS italiana per la gestione intelligente del patrimonio immobiliare (fondata a Milano nel 2018). Dati consolidati a fine 2025 (fonte: verbale CdA del 22/01/2026, riconciliato dalla contabilità).' Heading '📊 KPI principali — chiusura 2025' con tre card colorate: verde '📈 ARR' € 3,84M ('+24% sui € 3,10M di inizio anno (+€ 740k)'); blu '🔄 NRR' 115% ('Espansione che supera il churn. Obiettivo Board: >110%'); viola '🏢 Edifici gestiti' 751 ('Somma dei 9 clienti attivi, quadra con l'anagrafica Core'). Voce: 'Integrazione Notion fatta. App Notion, lo chiameremo cervello pino. Abbiamo il nostro ARR, abbiamo il nostro revenue.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-192",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "numero",
+   "testo": "Nella pagina 'Cervello Pino', heading '📊 Revenue — dettaglio ARR' con tabella a ponte riportata per intero (colonne Voce | Valore | Note): 'ARR inizio 2025' | '€ 3.100.000' | 'Base di partenza'; '– Churn (gross)' | '– € 180.000' | 'Costruzioni Sud, uscita giugno 2025 (acquisita da gruppo con sistema proprietario)'; '+ Espansione (upsell)' | '+ € 660.000' | 'Motore NRR: Banca Adriatica (Access), Gruppo Retail (Energy), Immobiliare Lombarda (Insights)'; '+ Nuovo logo' | '+ € 260.000' | 'HotelLine Hospitality (onboarding chiuso a ottobre)'; riga totale evidenziata in verde 'ARR fine 2025' | '€ 3.840.000' | '+24% YoY'. Sotto, callout blu: '💡 La crescita 2025 è stata trainata soprattutto dall'espansione sui clienti esistenti (upsell di moduli), non dall'acquisizione: un solo nuovo logo nell'anno. È il modello che la CEO Elena Ferraro cita come \"il vero motore\" di Aurora.'"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-193",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Stessa pagina 'Cervello Pino', heading '👥 Clienti — i 3 key account per fatturato' con tre card: verde '🏢 Immobiliare Lombarda SGR' ('Property management · cliente dal...', poi coda leggibile nello scroll successivo: 'Core, Energy, Manutenzione, Insights / 2025: ha aggiunto Insights. Referenzia volentieri.'); blu '🏦 Banca Adriatica' ('Banca · cliente dal 2022', coda: '2025: Access esteso a tutte le filiali — upsell più esteso dell'anno.'); arancione '🏨 HotelLine Hospitality' ('Hospitality · cliente dal 2025', coda quasi tagliata: '...logo 2025. Forte interesse su Energy.'). Callout grigio di trasparenza sui dati: 'Il database qui sotto elenca tutti i clienti. ARR ed edifici sono valorizzati solo dove certi nel vault aziendale: per i clienti non-key account le singole cifre non sono dettagliate nelle note di origine (so il totale: € 3,84M su 751 edifici, ma non la ripartizione cliente per"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-194",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Il presentatore mostra al volo anche un database Notion preesistente e distinto, non generato in questa sessione: breadcrumb 'New page / Cruscotto Aurora / Clienti' (ramo diverso da 'Cervello Pino'). Tabella '📁 Clienti' con colonne 'Cliente | ARR | città | Dal | MQ | Pr[odotto]' e righe leggibili: Polo Universitario Sud €750.000 Catania 2024 60000 Edge; Residenze Aurora Verde €820.000 Brescia 2014 90000 Care; Torre Eurosky Uffici €558.000 Roma 2016 90000 Cloud; BioPharma Stabilimenti €555.000 Latina 2022 40000 Edge; Galleria Moderna €552.000 Firenze 2018 40000 Care; Iberia Centros €528.000 Madrid 2013 18000 Care; Università Politecnica Adriatica €522.000 Ancona 2021 60000 Care; Museo delle Arti Contemporanee €511.000 Torino 2017 25000 Care; MediCenter Salute €508.000 Padova 2013 12000 Cloud; Aurora DACH Buildings €486.000 Monaco di Baviera 2014 8000 Care; Distretto Tessile Pratese €420.0"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-195",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Risposta completa di Claude in Antigravity dopo il prompt 'Per favore, costruiscimi su Notion un cruscotto di KPI per la mia azienda Aurora con tutto quello che hai... Chiamalo \"Cervello Pino\"...': '\"Cervello Pino\" è creato su Notion:' con link, poi riepilogo di cosa contiene (cruscotto KPI a 6 card, tabella revenue a ponte, 3 key account + database 'Clienti Aurora' inline con tutti i 10 clienti filtrabile, obiettivo 2026 e mappa reparti). Poi, testuali, le 'Due note di trasparenza:' che sono il cuore metodologico dell'intero esercizio: '1.' 'Ho usato i dati del vault locale \"aurora cervello\", non un workspace Notion preesistente: il tuo Notion non aveva nessun teamspace, quindi ho costruito da zero coi dati certi del vault.' '2.' 'ARR ed edifici per cliente li ho valorizzati solo dove certi. Il vault dà il totale (€ 3,84M su 751 edifici) e il dettaglio dei 3 key account, ma non la ripar"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-196",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Il presentatore apre una nuova sessione Claude Code vuota in Antigravity ('Type /model to pick the right tool for the job.') e passa a schermo webcam a piena inquadratura per introdurre il limite strutturale della memoria fin qui costruita: 'che non abbiamo ancora un modo di dire allei \"Ehi, ascolta, ma a marzo avevamo parlato di questo argomento? Ti ricordi cos'era? Cosa avevamo deciso?\"' Il punto è che le note statiche (clienti, KPI, progetti) non bastano: serve un meccanismo dedicato per far ricordare all'AI le conversazioni passate, altrimenti resta senza memoria episodica. Il presentatore motiva perché vale la pena costruirlo: 'che ci permette di avere enormi ritorni,' — introduce così l'ultimo pezzo del sistema, la memoria dinamica (skill journal) che verrà costruita subito dopo."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-197",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Prompt digitato per intero nel riquadro di input di Antigravity (bordo rosso attivo) per costruire la skill journal, trascritto riga per riga così come appare a schermo: 'Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.' — riga vuota — 'CONTESTO -- memoria viva' — 'Il cervello ha due strati di memoria:' — '- Memoria STATICA: le note delle entità vere (clienti, KPI, progetti).' — '  Vivono già nel cervello e cambiano di rado.' — '- Memoria DINAMICA: il diario di lavoro. Ogni sessione e ogni giornata' — '  lasciano una nota che si AGGANCIA sempre alle entità statiche coi' — '  [[wikilink]]. Mai una nota di diario sciolta nel vuoto.' — 'Lo scopo della skill e' tenere viva la memoria dinamica e cucirla a' (riga finale tagliata dal bordo inferiore del riquadro nello screenshot: il testo del prompt continua oltre quanto visi"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-198",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "comando",
+   "testo": "Risposta di Claude dopo aver costruito la skill, sezione 'Come invochi i tre comandi' riportata per intero: 'Fatto. Ho costruito una sola skill (journal) con i tre comandi al suo interno, più i due template, e prima ho scritto i due template in parallelo per andare più veloce come hai chiesto.' 'Scrivi semplicemente, in chat:' — 'buongiorno → briefing di inizio sessione in 5 righe. Non scrive niente.' — 'chiudi sessione → prima ti dice in 3 righe cosa abbiamo fatto, al tuo ok scrive sessione-<data>.' — 'fine giornata → legge tutte le sessioni del giorno, ti dice in 3 righe cosa e' successo, al tuo ok scrive il daily.' Poi: 'La skill si attiva da sola su queste frasi (e varianti tipo \"chiudiamo la sessione\", \"riassunto del giorno\"). Se vuoi forzarla puoi anche scrivere /journal.' Questo comando realizza concretamente lo schema già anticipato dal Prompt 13 'Apri la sessione' della pagina N"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-199",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Stessa risposta, sezione 'Dove sono finiti i file' riportata per intero: 'Skill: .claude/skills/SKILL.md — l'orchestratore coi tre comandi e le regole.' — 'Template sessione: workspace/journal/_templates/_template-sessione.md' — 'Template daily: workspace/journal/_templates/_template-daily.md' — 'Cartelle del diario (create): workspace/journal/sessions/ e workspace/journal/daily/' Poi: 'Regole rispettate dentro la skill: date sempre YYYY-MM-DD, frontmatter conforme a _template-nota.md, ogni nota di diario con almeno un [[wikilink]] a un'entità reale (se manca, te lo chiede, nessuna entità inventata.' Testo tagliato in fondo: 'Vuoi che pr[...]'. Nella sidebar Explorer compare per la prima volta una cartella .claude in cima all'albero, appena creata dalla skill stessa."
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-200",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "esempio",
+   "testo": "Primo test del comando 'buongiorno': messaggio utente 'Buongiorno Claude', Claude legge prima llms.txt (indice-porta del vault) poi risponde per intero: 'Buongiorno Gio.' — 'Non c'è ancora nessuna nota di sessione nel diario, quindi il briefing è solo sull'indice del cervello (llms.txt).' Heading 'Dove siamo': 'Il cervello di Aurora Sistemi è popolato e in piedi: 6 aree, 3 clienti attivi mappati (Banca Adriatica, HotelLine, Immobiliare Lombarda), KPI 2025 e l'unico progetto strategico aperto.' — 'Il diario di lavoro è vuoto: questa è di fatto la prima sessione tracciata.' Heading 'Cosa è aperto / da affrontare oggi, in ordine': '1. [[progetto-arr-5m-2026]] — l'obiettivo Board 2026: ARR oltre 5M con NRR >110% e churn logo <10%. È l'unico progetto attivo, quindi il candidato naturale su cui lavorare.' '2. Churn — il 2025 ha chiuso con logo churn ~11% ([[kpi-2025-churn]]), sopra la soglia <"
+  }
+ ]
+}

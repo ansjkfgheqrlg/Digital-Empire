@@ -1,0 +1,900 @@
+{
+ "lotto": 10,
+ "totale": 149,
+ "atomi": [
+  {
+   "uid": "max17-v02-beggiato-team::KA-001",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Il team è composto da 6 agenti specialisti + 1 orchestratore, tutti in parallelo."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-002",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Ordine ufficiale dei 6 agenti: 01 Stratega, 02 Analista Concorrenza, 03 Specialista SEO, 04 Copywriter, 05 Esperto Conversioni, 06 Media Buyer."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-003",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "prompt",
+   "testo": "Per favore attiva il mio marketing team su questo URL: https://marcocalzature.it/en"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-004",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Mai concorrenti inventati (fase 1 della slide 'La scala dei dati veri')."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-005",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Le 4 fasi del metodo: 1) La scala dei dati veri, 2) Sei specialisti in parallelo, 3) La mappa delle opportunità, 4) La consegna."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-006",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "La scala dei dati veri, in ordine: Ricerca web dichiarata, Volumi di ricerca veri, Attività locali e recensioni, Registro imprese, Partita IVA dal sito."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-007",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Il team parte dall'URL, fa scraping per trovare la Partita IVA del cliente, poi incrocia col Registro Imprese per capire ATECO e concorrenti reali."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-008",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "La mappa delle opportunità è una matrice Impatto/Sforzo con 4 quadranti: Fai subito, Pianifica, Opzionale, Lascia stare."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-009",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "La consegna finale comprende: Report PDF per il cliente, Piano 90 giorni, Pagella, Radar concorrenti, Priorità."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-010",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Stratega: fa la 'prova dei 5 secondi' (capisco cosa vendi e a chi lo vendi in 5 secondi?), poi valuta la crescita guardando le fonti di traffico (Google Search, Instagram, LinkedIn, YouTube)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-011",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Specialista SEO: valuta la 'trovabilità' — se chi non ti conosce ma ha il tuo problema ti trova su Google, controllando titoli di pagina e posizione nei risultati."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-012",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Esperto conversioni: percorre il funnel click per click, verifica moduli, contatti, telefono cliccabile vicino alla CTA."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-013",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Analista concorrenza: confronta le recensioni (numero e contenuto, non solo il numero) con concorrenti reali trovati via P.IVA/ATECO."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-014",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Copywriter: prende la copy reale del sito e propone titoli prima/dopo, senza inventare nulla."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-015",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Media buyer: valuta se le ads attuali sono soldi buttati, dà un voto e raccomandazioni sul funnel."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-016",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "file",
+   "testo": "copywriter-pmi.md — frontmatter: name: copywriter-pmi; tools: Read, Bash, WebFetch, WebSearch; description: contributo qualitativo senza voto, riscrive titolo principale/sottotitolo/CTA in versione prima/dopo per mostrare al titolare."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-017",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "file",
+   "testo": "copywriter-pmi.md corpo: 'Non dai voti. Prendi i 3 testi più deboli del sito e li riscrivi davanti ai suoi occhi, in versione prima/dopo.' Ordine di rassegna: 1) titolo principale Homepage, 2) sottotitolo/frase di supporto, 3) call to action dei bottoni, 4) titoli pagine di servizio/prodotto generici."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-018",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "file",
+   "testo": "copywriter-pmi.md — 'Come riconosci un testo debole': generico (non specifico all'azienda), parla dell'azienda non del beneficio cliente, bottoni muti ('Invia', 'Scopri di più', 'Clicca qui'), vago (frasi lunghe inutili)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-019",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Struttura cartelle Company Brain: root con _showcase, claude, obsidian, ..tmp, areas, code, concepts, data, docs, engine, entities, labs, outputs, projects, scripts, self, sources, workspace, .env, .gitignore, mcp.json."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-020",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Sotto labs/team-marketing-AI/: assets, scripts, skills/ con 11 skill: marketing-ads, marketing-analisi, marketing-competitor, marketing-contenuti, marketing-email, marketing-funnel, marketing-landing, marketing-opportunita, marketing-piano, marketing-report, marketing-seo, marketing-social."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-021",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "'La struttura che io ho utilizzato è: ho creato un sacco di skill e poi ho fatto qui una mini squadra.' — pattern skill-per-deliverable + cartella squadra/ con gli agenti veri."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-022",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "file",
+   "testo": "Output aggregato: TUTTI-I-DELIVERABLE.html, path locale /Users/giovannibeggiato/Desktop/Company Brain/tmp/marketing-marcocalzature/TUTTI-I-DELIVERABLE.html"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-023",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Tab del deliverable HTML: Pagella | Mappa opportunità | Campagne Ads | Funnel | Piano SEO | Sequenza Email | Calendario Social | Piano 90 giorni."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-024",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Il report da consegnare al cliente è il PDF separato (REPORT-CLIENTE.pdf); l'HTML TUTTI-I-DELIVERABLE è per uso interno/presentazione."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-025",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Voto finale Marco Calzature: 5.6/10 (media semplice delle 5 aree)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-026",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Pagella dettaglio voti: Messaggio 6.0 (giallo), Trovabilità 5.0 (giallo), Conversione 6.5 (giallo), Concorrenza 3.5 (rosso), Crescita 7.0 (giallo)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-027",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Messaggio 6.0: 'Si capisce cosa vendono, non perché sceglierli: la storia vera (1970, famiglia, made in Italy) è nascosta nel chi siamo'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-028",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Concorrenza 3.5 (area rossa): 'Dove il cliente confronta Marco non esiste: Trustpilot 3.2 con 3 recensioni contro i 4.9/1176 di Turci'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-029",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Tabella 'I concorrenti reali trovati': Turci Calzature (4.9, 1176 recensioni, dal 1907), Velasca Donna (4.8, 542 recensioni, monomarca made in Italy), Musto Calzature (4.8, 406 recensioni, Klarna+WhatsApp), GHIGO Calzature (4.4, 476 recensioni), Walter Calzature (4.6, 299 recensioni), Pepperina (4.8, 187 recensioni) — fonte Google Places (script)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-030",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Nota di trasparenza sui concorrenti: 'Registro imprese non disponibile per questa analisi (verifica KYC in corso); profilo camerale e concorrenti per ATECO non inclusi; la lista viene da Google Places e ricerca web.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-031",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Verifiche dal vivo: controprova eseguita su browser renderizzato (Chrome via MCP), con gesti reali: click, aggiunta al carrello di un sandalo da 90 euro, checkout raggiunto e abbandonato prima del pagamento."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-032",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Confermato dal vivo: zero widget recensioni su home/collezione/2 schede prodotto, nessuna info spedizioni/resi/taglie accanto ad 'Aggiungi al carrello', guida taglie solo nel footer, spese spedizione sotto 99€ visibili solo al checkout, telefoni non cliccabili, blog /blogs/news in 404, nessuna collezione evergreen, made in Italy assente dalla home."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-033",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Smentite dal vivo: categorie 'assenti per crawler senza JavaScript' in realtà tradotte nel DOM renderizzato; hreflang 'assenti' in realtà presenti (it/en/x-default) nel DOM renderizzato; 'non dichiara spedizioni solo Italia' smentito dalla barra che dice 'SHIPMENTS IN ITALY AND EUROPEAN UNION'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-034",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Il voto Conversione è stato ricalcolato da 6.0 a 6.5 dopo la verifica dal vivo (scoperti: ritiro in negozio, checkout ospite con express pay, 'Richiedi la taglia')."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-035",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Ipotesi dichiarate esplicitamente dal sistema: nessun numero di fatturato/margine/traffico fornito dal titolare; follower Instagram/Facebook osservati da risultati ricerca (non dai profili); Trustpilot 3.2/3 recensioni da snippet di ricerca (fetch diretto bloccato); ricerca Google eseguita da IP non italiano (da controverificare); registro imprese non interrogato (KYC in corso)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-036",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Confronto stimato con Musto Calzature sulle 5 aree: Messaggio Marco 6.0 vs Musto 7, Trovabilità 5.0 vs 7, Conversione 6.5 vs 7, Concorrenza 3.5 vs 7, Crescita 7.0 vs 6."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-037",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Verifica live di Giovanni su Instagram (marcocalzaturemilano): 'vediamo che abbiamo circa 41.000 follower. Perfetto, 45, quindi ha fatto una buona approssimazione.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-038",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Verifica live di Giovanni su Facebook: 'Facebook 18 e 9 [18.9K]... abbiamo 18.000 follower, quindi perfetto. Tutti i dati, come vedete, sono effettivi.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-039",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "'Dove si perdono i clienti': al momento della decisione. Zero recensioni su tutto il percorso, spese di spedizione svelate solo al checkout dopo l'indirizzo, Marco non compare sulla mappa Google mentre il vicino Musto (Via Dante 4) ha 4.8 con 406 recensioni."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-040",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Canali attivi oggi: e-commerce con pixel Meta e GA4 installati, newsletter con 10% sul primo ordine, Instagram ~41K follower, Facebook ~18.9K, TikTok e LinkedIn linkati, brand cercato 9.900 volte/mese su Google (DataForSEO)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-041",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Mappa delle opportunità: header 'Basata su: PAGELLA-MARKETING.md del 21 luglio 2026 (Voto Finale: 5.6, area rossa: Concorrenza 3.5)' — le mosse sono ordinate 'dalla più conveniente alla meno'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-042",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Mossa #1 mappa opportunità: 'Macchina recensioni: QR in cassa nelle 3 boutique + inviti Google/Trustpilot post acquisto' — Alto impatto/Basso sforzo — 'il divario più grande coi rivali, parte in due giorni'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-043",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Mossa #2: 'Tre righe di rassicurazione sotto il bottone di acquisto (spedizioni, resi, guida taglie)' — Alto/Basso — 'oggi ogni risposta richiede di lasciare la scheda'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-044",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Mossa #6 mappa opportunità: 'Collezioni evergreen per parola cercata' — 'paniere da 215.000 ricerche/mese scoperto'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-045",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Mosse #10-#12 mappa opportunità (Basso impatto o Alto sforzo, 'non ora'): editoriale (prima le collezioni evergreen), campagne TikTok (nessun pixel, nessun asset video), marketplace Zalando/Amazon (prima far rendere il canale proprio)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-046",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Struttura campagna Meta proposta: 1 campagna obiettivo vendite; Gruppo A retargeting+catalogo dinamico su saldi/outlet (offerta fino al 50%); Gruppo B pubblico freddo su nuova collezione (offerta 10% primo ordine + spedizione gratis sopra 99€); 3 annunci per gruppo, A/B test 7 giorni."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-047",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "In parallelo alla campagna Meta: Google campagna brand ('marco calzature' + varianti) + Shopping standard, retargeting Meta sui visitatori 30 giorni sempre attivo."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-048",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Targeting: Gruppo A = visitatori sito 30gg + interazioni Instagram/Facebook 90gg, Italia, donne 25-64; Gruppo B = Italia, donne 25-54, interessi moda/calzature; esclusioni acquirenti ultimi 30gg e query fuori tema ('lavora con noi', 'resi', 'orari') sulla campagna brand."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-049",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Budget suddiviso: 900€/mese (30€/giorno: 11€ Meta A, 11€ Meta B, 8€ Google); 1200€/mese RACCOMANDATO (40€/giorno: 14€/14€/12€); 1500€/mese (50€/giorno: 18€/14€/18€)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-050",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Soglie di allarme prima settimana ads: CPM sopra 15€ su Meta = 'pubblico troppo stretto o creatività debole'; CTR sotto 0,8% su Meta = 'l'annuncio non sembra funzionare'; ROAS sotto 1 dopo 30 giorni = 'fermarsi a rivedere pagine, non annunci'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-051",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Piano del mese: Settimana 1 recensioni (QR + inviti automatici, fix 3 righe scheda prodotto); Settimana 2 schede Google Business delle 3 boutique + pagina punti vendita; Settimana 3 collezioni evergreen + redirect stagionali; Settimana 4 Conversions API Meta + consolidamento Klaviyo vs Mailchimp + prima sequenza email post-acquisto."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-052",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Incoerenza reale trovata nel sito del cliente: la data di fondazione cambia da pagina a pagina — 'storia vera (1970...)' nel copy analizzato, 'A Milano dal 1986' nell'hero della home; raccomandazione: 'una sola data ovunque'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-053",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "file",
+   "testo": "PDF cliente cover: 'GENTES AI · MARKETING AUDIT · MARCO CALZATURE 5.6' — sottotitolo 'Quarant'anni di fiducia costruita in boutique, invisibile online: sulla mappa e nelle recensioni Marco oggi non esiste.' — Preparato per: Leadership di Marco Calzature — Preparato da: Gentes AI — Data: 21/07/2026."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-054",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "PDF cliente sezione IV 'Voi e i concorrenti': radar chart 5 assi (Messaggio, Trovabilità, Conversione, Concorrenza, Crescita) — Marco Calzature (pieno) vs Musto Calzature (stima, tratteggiato)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-055",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "PDF cliente, testo radar: 'Musto combina il presidio di Via Dante con un e-commerce vero (Klarna, WhatsApp, blog) e una linea propria handmade che rende credibile il claim artigianale. Il suo punto più forte è la trovabilità locale: 4.8 con 406 recensioni.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-056",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "PDF cliente 'Confronto testa a testa' — tabella Fattore×4 concorrenti (Marco, Musto, Turci, Velasca): Posizionamento — Marco 'A Milano dal 1986, made in Italy dichiarato ma la home...'; Musto 'Lusso quotidiano, 50+ brand più linee proprie handmade'; Turci 'Comfort e heritage, riferimento per Milano dal 1907, oltre 10.000 scarpe'; Velasca 'Monomarca entirely handmade, made in Italy, storytelling dedicato'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-057",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "PDF cliente sezione V 'Le priorità': matrice 2x2 Fai subito (mosse 1-4) / Pianifica (5-8) / Opzionale (9) / Lascia stare (10-12), assi Impatto (verticale) e Sforzo (orizzontale, 'più sforzo' verso destra)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-058",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "file",
+   "testo": "PDF cliente pagina finale 'Il primo passo — Una cosa sola per partire: trovare la macchina recensioni (QR in cassa nelle tre boutique + inviti automatici dopo ogni acquisto) e le tre righe di rassicurazione in scheda prodotto. Ogni altra mossa del piano rende di più se prima la fiducia diventa visibile.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-059",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Durata totale dichiarata dell'intero processo (dal link al piano completo, con iterazioni): 20 minuti."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-060",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Grafico iterazioni×tempo: curva rossa = umano (arriva alla stessa qualità in ~14 giorni/2 settimane), curva blu = AI (arriva all'80% pronto in 20 minuti, poi iterazioni la completano). 'Capite bene qual è il vantaggio? È un vantaggio di velocità, tempo.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-061",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "'Il nostro obiettivo non è mai fare one shot, ma è avvicinarci quanto più possibile ad un output di qualità.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-062",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "La skill salva 'settimane e settimane di lavoro di un team realisticamente di tre-cinque persone' secondo il narratore."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-063",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "comando",
+   "testo": "Interfaccia usata: IDE tipo VS Code con badge 'Antigravity IDE' e 'Screen Reader Optimized' in basso a destra; barra chat con pulsanti mic, +, doc, 'Bypass permissions', stop rosso; box input 'Queue another message...'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-064",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Community Skool 'Avanguardia Plus' (skool.com/avanguardiaplus): 91 membri, 6 online, 2 admin al momento della registrazione; leaderboard 30 giorni guidata da Nicolò Sodano (+149)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-065",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Modulo community '2. Claude Code Per Aziende' (6% completato) → 'Pre-requisiti Tech': Corso Completo Claude Code (4h, sotto-capitoli 1.Setup 2.Subagents 3.Team di agenti 4.Gestione contesto 5.Skills 6.MCP), Corso Completo Agenti AI per business, Vibecoding Corso Completo (SaaS)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-066",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Gentes AI (sito gentes.ai, agenzia di Giovanni Beggiato): 'AI Growth Partner for B2C Service Businesses'; team Giovanni Beggiato (CEO, ex Amazon, $4M savings, CEO Award top 2%) + Jean-Marc Herrada (COO, ex P&G, team di 40 persone e progetti da $100M)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-067",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Metodo Gentes AI in 3 fasi: 1) Audit (call gratuita 30 min), 2) Engineering (build/test/deploy con gli utenti reali), 3) Training & Launch."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-068",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Dati aziendali Marco Calzature nel deliverable: MARCO SRL, P.IVA 08547970153, Via Curtatone 25, Milano; e-commerce scarpe donna 69-149€, 3 boutique a Milano (C.so Vittorio Emanuele II 15, Via Dante 3, Via Borgogna 3)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-069",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Il narratore verifica dal vivo su Google search 'calzature milano' per controllare manualmente la presenza dei concorrenti trovati dal sistema."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-070",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Il narratore verifica dal vivo il sito reale marcocalzature.it/en: pagina saldi, prodotti in offerta (Slingback Leather Platinum, Silver Mesh, Light Blue Mesh, Beige Mesh), aggiunge al carrello uno Slingback Silver Mesh (99→69€, taglia 38) per testare il checkout."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-071",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Home reale marcocalzature.it dichiara 'In Milan since 1986. We select the best shoes for every occasion, following seasonal trends and colors.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-072",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "metodo",
+   "testo": "Icone del logo animato canale (6 orbite): lente/ricerca (SEO), grafico a barre (analisi), megafono (media buyer/ads), matita (copywriter), bersaglio (conversione), fotocamera — rappresentano visivamente le 6 specialità del team."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-073",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "'Ci tengo a specificare... l'AI è fortissima ad aiutarci a fare il brainstorming iniziale e la prima bozza del tutto... vuol dire che l'output sarà sempre e per forza perfetto? No.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-074",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Chiusura del video: 'Questo è un ottimo team da cui voi potete partire, potete anche migliorarlo... potete farci contenuto, potete farci copy per i social media, però avere la struttura agentica in questo modo vi permette di salvare un sacco di tempo.'"
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-075",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "numero",
+   "testo": "Volumi di ricerca mensili citati come keyword mancanti sul sito Marco Calzature: sneakers donna 90.500/mese, ballerine donna 60.500/mese, sandali donna 40.500/mese (dedotti dalla sezione Trovabilità del deliverable)."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-076",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "architettura",
+   "testo": "Struttura file agente vista nella sidebar: analista-competitor.md, copywriter-pmi.md (selezionato/aperto), esperto-conversioni.md, specialista-seo.md all'interno di una cartella 'squadra'."
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-077",
+   "run": "max17-v02-beggiato-team",
+   "tipo": "regola",
+   "testo": "Il narratore, guardando il confronto con Musto Calzature: 'onestamente non ho idea di chi siano, ma a quanto pare va meglio di noi su quasi tutto' — segnalando che il sistema ha trovato un concorrente reale sconosciuto persino al presentatore."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-001",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Apertura diretta del video: il presentatore dichiara di aver costruito un bot che fa trading di Bitcoin con Claude Code (\"Cloudcode\" nella trascrizione automatica) e annuncia che nel video lo ricostruirà insieme allo spettatore, partendo da zero."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-002",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Il presentatore chiarisce subito il vero obiettivo del video: non è una guida per arricchirsi con il trading di Bitcoin, ma un caso di studio su come usare l'intelligenza artificiale per affrontare qualsiasi problema concreto, di cui il bot è solo l'esempio scelto."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-003",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Il video introduce un framework replicabile per affrontare qualsiasi problema con l'aiuto dell'AI, pensato apposta per chi non è esperto del dominio del problema (qui: il trading) e ha bisogno di farsi guidare dagli strumenti passo dopo passo."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-004",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "testo": "Il video si divide in tre parti principali, mostrate come schema su Excalidraw con tre riquadri collegati da frecce: \"COMPRENSIONE DEL PROBLEMA\" (icona lampadina, sottotitolo \"Capire cosa si vuole risolvere\"), \"DESIGN DEL SISTEMA\" (icona foglio da progetto con squadra e matita, sottotitolo \"Progettare la soluzione\"), \"IMPLEMENTAZIONE\" (icona \"</>\" sopra un ingranaggio, sottotitolo \"Costruire il sistema\"). Questa mappa in tre fasi corrisponde esattamente alla struttura dell'intero video."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-005",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Presentazione personale del canale: il presentatore gestisce un'azienda di consulenza AI con clienti che vanno da €10.000 al mese fino a 50 milioni di euro all'anno di fatturato, e ha una community privata nella quale insegna a freelancer e imprenditori come applicare l'AI in qualsiasi business e come vendere questi servizi."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-006",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Schema completo a tre livelli \"TRADING BOT BITCOIN SU BINANCE\" disegnato su Excalidraw, la scomposizione del bot nei suoi building blocks: LIVELLO 1 MONITORAGGIO E ALERT (fascia viola) — Supervisione costante, Notifiche in tempo reale (icona smartphone), Dashboard di controllo (icona ingranaggio); LIVELLO 2 IL BOT (fascia verde) — Lettura Dati (icona candele di borsa, sottotitolo \"Raccoglie candele e prezzi in tempo reale\") → Decisione e Gestione del Rischio (icona cervello, sottotitolo \"Cervello del bot: applica la strategia, decide l'azione, gestisce il rischio\") → Esecuzione Ordini (icona carrello, sottotitolo \"Invia ordini automatici di acquisto e vendita\"); LIVELLO 3 FONDAMENTA (fascia arancione) — Piattaforma Binance (icona banca/edificio, sottotitolo \"Infrastruttura del mercato crittografico\") e Connessione API (icona chiave, sottotitolo \"Interfaccia di comunicazione sicura\"), rac"
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-007",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Il presentatore sceglie Binance come piattaforma di riferimento per il bot e precisa esplicitamente di non avere alcuna associazione o sponsorizzazione con l'azienda: fa il video solo perché qualcuno degli spettatori glielo ha chiesto."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-008",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Le chiavi di connessione API sono ciò che permette a Claude (o ad altri strumenti come Codex) di accedere in maniera automatica alla piattaforma Binance; senza quelle chiavi l'AI non può operare sul sistema per conto dell'utente. È questa la ragione per cui \"Connessione API\" fa parte del Livello 3 (Fondamenta) del diagramma."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-009",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Dare un ordine vago all'AI (l'esempio usato è \"vai e conquista il mondo\") non è sufficiente perché l'AI possa davvero eseguirlo, perché manca la strategia concreta con cui farlo (con il carro armato, con le spade o con le pistole d'acqua). Bisogna sempre definire la strategia prima di delegare l'esecuzione."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-010",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Non tutti sanno qual è la migliore strategia per fare trading: la gran parte della ricerca dello spettatore dovrebbe concentrarsi nel decidere qual è la strategia migliore, prima ancora di capire come costruire il sistema tecnico. Costruire il bot con Claude Code lo sa fare quasi chiunque dopo il video; la vera proprietà intellettuale sta nella strategia."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-011",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "testo": "Per affrontare qualsiasi tipo di problema bisogna sempre procedere nello stesso ordine: prima le Fondamenta (\"possiamo farlo?\"), poi il Bot/nucleo operativo (\"cosa facciamo?\"), infine il Monitoraggio (\"come lo monitoriamo?\"). Nel diagramma questo ordine è illustrato da una grande freccia verde verticale che sale dal Livello 3 (Fondamenta) fino al Livello 1 (Monitoraggio), passando per il Livello 2 (il Bot)."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-012",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Il presentatore anticipa un'obiezione tipica dello spettatore (\"non è sempre chiaro qual è il problema che sto affrontando, non ho sempre chiaro come farlo\") e risponde che per risolverla consiglia sempre di utilizzare uno strumento come Claude, prima ancora di iniziare a costruire qualsiasi cosa."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-013",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "testo": "\"Antigravity IDE\" è l'ambiente di sviluppo (fork/derivato di VS Code) usato per l'intera sessione di lavoro con Claude Code nel video, riconoscibile dall'etichetta \"Antigravity IDE - Offline\" nella barra di stato in basso a destra, accanto a \"Screen Reader Optimized\". Il progetto radice aperto si chiama \"Social Media Manager\" (cartella preesistente del presentatore, non creata per questo video), dentro cui viene poi generata la sottocartella \"btc-trading-bot\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-014",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Prompt reale usato nell'IDE \"Antigravity\" per generare lo schema a blocchi con la skill /diagram-generator: \"I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on). The goal is to clearly display the building blocks. I will give you an example to help you stay in the right direction. If I say I need to build a trading bot, it should include multiple parts, for example: - API connection or platform choice - API connection and bot strategy - and so on /diagram-generator is the skill\". Da questo prompt è stato generato esattamente lo schema a tre livelli \"TRADING BOT BITCOIN SU BINANCE\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-015",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "testo": "/diagram-generator è una skill personalizzata del presentatore, richiamata esplicitamente nel prompt (\"/diagram-generator is the skill\"), che genera diagrammi ad alto livello a partire da una descrizione testuale del sistema da costruire, pensati per un pubblico non tecnico."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-016",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "testo": "Meccanismo dichiarato dietro la skill /diagram-generator: il presentatore ha istruito il bot a restare ad alto livello, cercare di decomporre il task in micro-sezioni, e solo dopo disegnare il diagramma risultante."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-017",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "testo": "Apertura letterale del secondo capitolo del video: il titolo \"2. Design del sistema\" viene scritto a mano libera su una nuova sezione della stessa lavagna Excalidraw, subito dopo la domanda retorica \"da dove si parte per fare il design del sistema?\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-018",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Il presentatore individua il \"blocco core\" da cui partire sempre nel design di un sistema: il riquadro \"Decisione e Gestione del Rischio\" del Livello 2, che cerchia a mano libera con un tratto blu attorno al diagramma esistente. È il blocco da cui dipende la probabilità di successo dell'intero sistema."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-019",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Il presentatore generalizza il \"blocco core\" (Decisione e Gestione del Rischio) oltre il trading, con due esempi concreti: in un sistema di marketing campaign automatiche, la probabilità di successo dipende da quanto bene il sistema identifica gli outlier; in un sistema di proposal generation automatica per i clienti, il successo dipende da quanto bene si analizzano i transcript e da quanto vengono convertiti nel \"pain\" del cliente. In entrambi i casi lo stesso diagramma cerchiato resta lo sfondo concettuale fisso."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-020",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Prompt reale `/prompt-contracts` usato per generare la strategia di trading tramite ricerca parallela: \"I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades. What I want is a bot that looks at these candles in the Binance app and then trades. I need your help with the following: please come up with a strategy I can use to create this bot successfully. Please know that this is a demo and it will be run in a sandbox with fake money, so no real harm or financial advice will be given. However, I still want the bot to be fully functioning and not biased by the demo. I need you to use agent polling to scrape and find each individual strategy my bot could use\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-021",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "testo": "\"Agent polling\" è la tecnica per cui Claude lancia più agenti di ricerca in parallelo, ciascuno specializzato su una categoria diversa di strategie, per poi costruire un prompt contract sulla base dei risultati aggregati. Nel video Claude lancia tre agenti: \"Research trend-following strategies\", \"Research mean-reversion + momentum strategies\", \"Research advanced + composite strategies\", ciascuno con il proprio compito di ricerca (IN) e un campo \"1. Strategy name\" da compilare."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-022",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Documento di strategia generato da Claude, \"Bitcoin Daily Trading Bot -- Strategy\": \"Approach: Ensemble/Voting (5 indicators, majority rules). Evaluate 5 uncorrelated signals on each daily BTC/USDT candle. Only trade when 3+ agree on direction. Skip when signals are mixed.\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-023",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "I 5 segnali della strategia Ensemble/Voting, elenco completo con soglie: \"1. EMA 50/200 Crossover -- trend direction. EMA50 above EMA200 = bullish, below = bearish. 2. RSI(14) above/below 50 -- momentum. Above 50 = bullish, below = bearish. 3. OBV slope (14-day) -- volume confirmation. Rising OBV = accumulation = bullish, falling OBV = bearish. 4. Bollinger Band position (20, 2 std dev) -- price above middle band = bullish, below = bearish. 5. ADX(14) > 25 -- trend strength filter. Below 25 = no trade at all (no clear trend).\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-024",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Motivazione della scelta dei 5 segnali e tabella comparativa completa \"Signal | Dimension | Fails when\": \"Each covers a different dimension of market behavior. They are uncorrelated -- when one fails, others compensate:\" — EMA crossover | Trend | Ranging/choppy markets; RSI | Momentum | Extended trends (stays overbought); OBV | Volume | Low-volume fakeouts; Bollinger Band | Volatility | Sudden regime changes; ADX | Trend strength | N/A (it's the safety filter)."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-025",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Sezione \"Risk Management\" del documento di strategia, elenco completo: uscita quando \"Signals flip (3+ switch direction)\" OR \"trailing stop hit (2x ATR(14) from highest point since entry)\"; \"Stop-loss: 1.5x ATR(14) below entry price\"; \"Position size: risk max 2% of capital per trade\"; \"Formula: position_size = (capital * 0.02) / (1.5 * ATR)\"; \"Trailing stop: 2x ATR(14), adjusted\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-026",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Sezione \"Expected Performance\" del documento di strategia: \"Win rate: 55-60%\", \"Risk/reward ratio: 1:1.5\", \"Trade frequency: low (only on strong consensus)\", \"Works across: trending, ranging, and volatile conditions\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-027",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Sezione \"Why This Over 20 Other Strategies\" del documento di strategia: sottotitolo \"Single indicators fail predictably:\" con confronto — \"RSI alone: 52-58% win rate but only in ranging markets, destroyed in trends\"; \"EMA crossover alone: 35-42% win rate, great R:R but constant whipsaws in ranges\"; \"MACD alone: 38-45%, lags in fast [markets]\" (riga tagliata nella fonte). In un'altra porzione del documento, letta poco dopo: \"ranges, mean reversion signals (RSI, Bollinger) dominate. No regime detection needed — the voting handles it.\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-028",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Sezione \"Tech Stack (for implementation)\" del documento di strategia: \"ccxt -- Binance Testnet API (testnet.binance.vision)\"; \"pandas + pandas-ta -- indicator calculations\"; \"python-dotenv -- API keys from environment\"; \"Both backtest mode (historical candles) and live mode (daily polling)\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-029",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "testo": "Per generare il flowchart architetturale, Claude Code prima legge la skill Excalidraw (\"Let me read the excalidraw skill first\" / Read SKILL.md), poi crea il file `.tmp/btc_daily_trading_bot.excalidraw`, ed esegue uno script Python per applicare i colori pastello: comando bash `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager\" && python3 .claude/skills/excalidraw-flowchart/colorize.py .tmp/btc_daily_trad...`. Il file risultante pesa 126.738 byte (~127KB)."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-030",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Riepilogo testuale generato da Claude Code del flowchart appena creato, i 7 step dell'intero ciclo del bot: \"1. Start -- Daily Candle Close (trigger). 2. Fetch + Calculate -- scarica candela BTC/USDT, calcola i 5 indicatori in parallelo (EMA, RSI, OBV, Bollinger, ADX). 3. Voting -- raccoglie i voti, poi filtra: ADX < 25 = HOLD. 4. Decision -- 3+ bullish = LONG, 3+ bearish = SHORT, altrimenti HOLD. 5. Risk Management -- stop-loss 1.5x ATR + trailing stop 2x ATR. 6. Monitor -- loop giornaliero: check signal flip o trailing stop hit, se no aggiorna trailing e continua. 7. Exit -- close position e torna a Wait Next Candle, che riporta al Daily Candle Close.\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-031",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Il file `.excalidraw` generato da Claude è in realtà un JSON leggibile: apertura con `\"type\": \"excalidraw\", \"version\": 2, \"source\": \"https://github.com/swiftlysingh/excalidraw-...`, poi un array `\"elements\"` dove ogni forma è un oggetto con proprietà come `\"id\"`, `\"type\": \"ellipse\"`, `\"x\"`, `\"y\"`, `\"width\"`, `\"height\"`, `\"strokeColor\": \"#1e1e1e\"`, `\"backgroundColor\": \"#b2f2bb\"`, `\"roughness\"`, `\"opacity\"`, `\"boundElements\"` (i collegamenti alle frecce), fino a `\"locked\": false`."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-032",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Verifica visiva del flowchart aperto su excalidraw.com: dall'ellisse verde \"Wait Next Candle\" una freccia scende a \"Daily Candle Close\" (altra ellisse verde), da qui una freccia ondulata scende al box blu \"Fetch BTC/USDT Daily Candle\", che a sua volta alimenta il box \"Calculate Indicators\". Questa porzione corrisponde esattamente agli step 1 (Start), 6 (Monitor) e 7 (Exit) descritti a testo da Claude."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-033",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Prima apparizione leggibile per intero dei cinque box degli indicatori tecnici nel flowchart visivo, tutti raggiunti da frecce partite dal box \"Calculate Indicators\" e confluenti in un unico box \"Collect Votes\": \"EMA 50/200 Crossover\", \"RSI 14\", \"OBV Slope 14d\", \"Bollinger Band 20,2\", \"ADX 14\". I nomi coincidono esattamente con quelli del documento di strategia e del riepilogo testuale di Claude, confermando che diagramma visivo e strategia testuale descrivono lo stesso identico sistema."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-034",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Primo nodo di decisione del flowchart (rombo giallo pastello): \"ADX above 25?\", raggiunto da una freccia dal box \"Collect Votes\". Rappresenta la soglia (threshold) di forza del trend sotto la quale il sistema non considera valido nessun segnale di acquisto o vendita."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-035",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Routing del flowchart dopo il filtro ADX: dal rombo \"3+ Bullish?\" un ramo \"Yes\" porta al box \"OPEN LONG\"; il ramo \"No\" porta al secondo rombo \"3+ Bearish?\", che a sua volta si dirama in \"Yes\" → box \"OPEN SHORT\" e \"No\" → box \"HOLD - Mixed Signals\". Un ramo separato \"HOLD - No Trend\" gestisce il caso in cui il filtro ADX iniziale sia negativo. Sia \"OPEN LONG\" sia \"OPEN SHORT\" proseguono verso il box \"Set Stop-Loss 1.5x ATR\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-036",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Chiusura visiva del ciclo del flowchart: dal rombo \"Signals Flipped?\" (ramo \"No\") si passa al rombo \"Trailing Stop Hit?\"; da qui il ramo \"Yes\" (insieme al ramo \"Yes\" di \"Signals Flipped?\") porta al box \"Close Position\", il ramo \"No\" porta a \"Update Trailing Stop\". Entrambi i box confluiscono nell'ellisse verde \"Wait Next Candle\", che con una freccia torna a \"Daily Candle Close\": il diagramma chiude così il giro completo sul proprio punto di partenza."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-037",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Percorrere per intero il flowchart visivo, dal primo box fino alla chiusura del ciclo, è la \"fase di validazione dell'architettura\": serve ad assicurarsi che l'architettura del sistema sia corretta prima di passare all'implementazione vera e propria."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-038",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "testo": "Una volta validata l'architettura, il presentatore chiede a Claude di sintetizzare tutto (diagramma + strategia) in un unico prompt completo, da incollare in una nuova sessione di Claude Code in modalità \"plan mode\", per assicurarsi che Claude implementi il sistema secondo un piano approvato invece di procedere alla cieca."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-039",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Menu \"Slash Commands\" apparso in una nuova sessione vuota di Claude Code, lista completa visibile: /pre-mortem (selezionato), /prompt-contracts, /loop, /reverse-prompting, /step-back-prompting, /fewer-permission-prompts, /skool-video-upload, /audit, /deploy-check, /contract."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-040",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Sezione \"## Implementation Order\" del prompt sintetizzato da Claude per il plan mode, lista numerata completa: \"1. config.py + data.py — connect to Binance Testnet, fetch historical daily candles, verify data. 2. indicators.py — implement all 5 indicators with pandas-ta, write unit tests. 3. strategy.py — voting logic + ADX filter, write unit tests for all edge cases. 4. risk.py — position sizing formula, stop-loss, trailing stop logic, write unit tests. 5. backtest.py + report.py — run on 1+ year of historical BTC data, print performance metrics. 6. executor.py — ccxt order placement on testnet (market orders, stop-loss orders). 7. bot.py — main live loop (poll daily, run strategy, execute if signal, monitor position). 8. monitor.py — logging + optional notifications. 9. End-to-end test — run on testnet for several days, verify orders execute correctly.\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-041",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "regola",
+   "testo": "Sezione \"## Constraints\" del prompt per il plan mode, elenco completo e non negoziabile: \"Python 3.9+ compatible (use `from __future__ import annotations` if needed). All API keys from .env, never hardcoded. Testnet only — never connect to production Binance without explicit confirmation. Each module must be independently testable. Backtest must run before any live trading.\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-042",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "testo": "Istruzione d'uso allegata al prompt sintetizzato: \"Copia-incolla tutto in una nuova sessione di Claude Code in plan mode. Claude ti proporrà il piano di implementazione step-by-step, tu approvi e lui costruisce.\" Definisce il funzionamento della modalità \"plan mode\": prima la proposta di piano, poi l'approvazione umana, infine la costruzione."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-043",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Prima dell'invio, il presentatore aggiunge manualmente in coda al prompt incollato nella nuova sessione Claude Code una sezione con segnaposto vuoti: \"Credenziali Binance: - API: - Link per vedere candele:\", con l'etichetta \"Plan mode\" attiva accanto al pulsante di invio, a conferma che l'invio avverrà in modalità pianificazione e non in esecuzione diretta."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-044",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "testo": "Apertura del capitolo \"Connessione API a Binance\": il presentatore lascia l'IDE e passa al sito reale di Binance per mostrare da dove parte il processo di autenticazione necessario a collegare il bot."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-045",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "testo": "Percorso seguito per creare una chiave API su Binance: dalla dashboard (`binance.com/en/my/dashboard`) si apre il menu laterale \"Account\", si seleziona \"API Management\" (`binance.com/en/my/settings/api-management`), poi si clicca il pulsante arancione \"Create API\" e si assegna un'etichetta alla chiave (nel video: \"YouTube bot\") nella finestra modale \"Create API\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-046",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "avvertimento",
+   "testo": "Binance blocca la creazione della chiave API finché l'utente non completa 2 verifiche di sicurezza su 2 (\"Security Verification Requirements\", contatore \"0 / 2\"): passkey (biometria o chiave di sicurezza) o verifica facciale."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-047",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "regola",
+   "testo": "La chiave API \"YouTube BOT\" creata su Binance ha solo il permesso \"Enable Reading\" attivo; tutti gli altri permessi (Permits Universal Transfer, Enable Spot & Margin Trading, Enable Withdrawals, Enable Margin Loan/Repay & Transfer, Enable Prediction Trading, Enable Symbol Whitelist) restano disattivati. L'accesso IP è impostato su \"Unrestricted (Less Secure)\". La API Key e la Secret Key sono presenti e leggibili nel frame originale ma vengono riportate in questo documento solo in forma mascherata, come nella fonte: API Key \"F4q6…tqJi\", Secret Key \"bfwU…M9cD\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-048",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "avvertimento",
+   "testo": "Avviso di sicurezza mostrato da Binance sulla chiave appena creata, in rosso: \"This API Key allows access from any IP address. This is not recommended.\" e \"To protect the safety of your funds, if the IP is unrestricted and any permission other than Reading is enabled, this API key will be deleted.\" — cioè Binance stessa cancellerebbe automaticamente la chiave se, con IP non ristretto, venisse attivato un permesso diverso dalla sola lettura."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-049",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Per trovare il link esatto della documentazione delle candele Binance, il presentatore consiglia due strade: chiedere direttamente a Claude di esplorare, oppure visitare il sito ufficiale della documentazione, `developers.binance.com/docs/binance-spot-api-docs`. Nel video ha trovato il link chiedendolo direttamente a Claude."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-050",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Blocco finale \"Credenziali Binance:\" completato e inviato dentro il prompt di plan mode: \"- API: [chiave mascherata: inizia con \"F4q6…\" e termina con \"…rotqJi\"] - Secret: [chiave mascherata: inizia con \"bfwU…\" e termina con \"…M9cD\"] - Link per vedere candele: https://developers.binance.com/docs/binance-spot-api-docs\". Il messaggio completo si chiude con il promemoria esplicito di sicurezza: \"Per favore ricordati che, per questo bot, vorrei farlo funzionare utilizzando soldi falsi e quindi in sandbox, ok?\" Le due chiavi Binance non vengono mai riportate per intero in questo documento, solo mascherate come nella fonte."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-051",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Il Finder di macOS mostra la cartella \"btc-trading-bot\" appena creata sul disco (\"Today at 12:53\"), accanto ad altri progetti del presentatore (Social Media Manager, Community Intelligence, Agency, ecc.): è la prova tangibile che l'implementazione richiesta a Claude Code in plan mode è stata avviata."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-052",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Struttura del progetto Python generata da Claude Code per il bot, visibile nell'Explorer sotto la root \"Social Media Manager\": cartelle `__pycache__`, `.claude`, `.pytest_cache`, `.tmp`, `.venv`, `data`, `src`, `tests`, e i file `.env`, `.gitignore`, `CLAUDE.md` — nessuna di queste (tranne le prime tre) era presente prima dell'implementazione."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-053",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Secondo utilizzo dello slash command `/prompt-contracts`, questa volta per chiarire cosa significhi mettere il bot \"live\": \"/prompt-contracts please put this bot live. What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\". Il presentatore aggiunge in un riquadro: \"always fake money ofc\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-054",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Prima di eseguire, Claude Code propone un \"Contract\" formale tramite `/prompt-contracts`: \"Got it -- fake money only, always. Here's the contract:\" seguito dal titolo \"### Contract\", poi \"GOAL: Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\" e \"CONSTRAINTS: Binance Testnet ONLY (sandbox mode, testnet.binance.vision)\" (elenco vincoli parzialmente tagliato dal frame, prosegue con righe troncate \"Run as pe...\" e \"Must veri...\", seguite da una sezione \"FORMAT\")."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-055",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "I percorsi file reali mostrati a schermo rivelano il nome utente del computer del presentatore, \"giovannibeggiato\" (es. `/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager/`), e Claude nel Contract generato lo chiama esplicitamente col diminutivo \"Gio\" (\"Gio can see balances, orders, and trade history at testnet.binance.vision\"), coerente col nome di scena \"Jo\" usato nel resto del video."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-056",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "definizione",
+   "testo": "Il presentatore lascia momentaneamente l'IDE per aggiornare la lavagna Excalidraw di riepilogo tappe, scrivendo dal vivo la voce \"3. Implementazione\" come terzo titolo di sezione (dopo \"1. Comprensione del problema\" e \"2. Design del sistema\"), mentre la voce narra esplicitamente di essere arrivati a quella fase del percorso, prima dell'imminente \"go live\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-057",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "esempio",
+   "testo": "Prima di eseguire la richiesta \"put this bot live\", Claude Code pone domande di chiarimento invece di agire alla cieca: \"quick questions: 1. Is the bot live? 2. Is it connected and already taking things live, or do I need to deploy it?\" e avvisa: \"Voting will get whipsawed in sideways markets. This is the reality check before going live.\" chiedendo infine: \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-058",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Al primo tentativo di avvio, la connessione al testnet funziona ma le chiavi API vengono rifiutate: \"Good news: the connection to testnet.binance.vision is working (correct URL). Bad news: the API keys are rejected -- 'Invalid API-key, IP, or permissions for action.'\" Claude spiega: \"This usually means the testnet keys expired or were regenerated. You need to get fresh ones\", precisando anche che \"The public market data works fine (no auth needed) -- that's why backtesting worked. But placing orders requires valid testnet keys.\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-059",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Lista numerata completa fornita da Claude per procurarsi chiavi testnet aggiornate: \"1. Go to https://testnet.binance.vision. 2. Log in with GitHub. 3. Click 'Generate HMAC_SHA256 Key'. 4. Copy the new API Key and Secret Key. 5. Give them to me and I'll update the .env and start the bot.\" Claude chiede infine: \"Can you grab fresh keys from testnet.binance.vision?\""
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-060",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Alla richiesta di Claude di recuperare da solo le chiavi (\"Can you grab fresh keys from testnet.binance.vision?\"), il presentatore prima chiede all'assistente \"you cando all alone right?\" (refuso per \"you can do it all alone, right?\"), lasciando intravedere un tentativo di automazione via browser (menzionato uno strumento \"Chrome-devt...\" troncato), ma poi decide di recuperare lui stesso le chiavi e mostrarlo al pubblico, invece di lasciare che sia l'AI a operare il browser in autonomia."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-061",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Sul sito testnet.binance.vision, alla pagina \"Generate HMAC-SHA-256 key\", il presentatore digita il nome descrittivo \"YouTube bot\" e lascia spuntati i tre permessi proposti di default: \"TRADE — Can place/cancel orders\", \"USER_DATA — Can view account information and query trades/orders of the user\", \"USER_STREAM — Can subscribe to the User Data Stream\"; restano non selezionati \"FIX_API\" e \"FIX_API_READ_ONLY\" (riservati a chiavi Ed25519)."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-062",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "regola",
+   "testo": "Il sito conferma \"HMAC-SHA-256 Key registered\" con l'avviso \"Save these values right now. They won't be shown again!\" e mostra API Key e Secret Key generate, entrambe perfettamente leggibili a schermo e non oscurate dalla piattaforma. Per policy di sicurezza, pur trattandosi di chiavi Testnet (denaro finto, nessun valore reale), non vengono trascritte carattere per carattere in questo documento: restano trattate come credenziali mascherate."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-063",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "procedura",
+   "testo": "Il presentatore incolla lui stesso, nel box di input di Claude Code, la API Key e la Secret Key appena generate su testnet.binance.vision (prima riga \"API: API Key: [chiave]\", seconda riga che inizia con \"Secret\"), poi preme il pulsante rosso \"Bypass permissions\" per lasciare che Claude prosegua l'implementazione senza altre conferme manuali."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-064",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Header della dashboard locale del bot su localhost:8501: card scura con titolo \"₿ BTC Trading Bot\", sottotitolo verde \"BINANCE SPOT TESTNET\", indicatore verde \"LIVE\". Sotto, quattro card metriche: \"USDT BALANCE\" → \"$10,000.00\"; \"BTC HOLDINGS\" → \"1.0000 BTC\"; \"BTC/USDT\" → \"$77,440.79\"; \"TOTAL PORTFOLIO\" → \"$87,440.79\" (coerente: $10.000 USDT + 1 BTC a $77.440,79 = $87.440,79)."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-065",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Sezione \"Bot Status & Signals\" della dashboard: badge arancione \"Waiting for signal (ADX too low)\", pannello \"Signal\" con valore \"HOLD\", e la griglia degli indicatori tecnici live: EMA FAST 76.767,29 / EMA SLOW 84.707,42, RSI 47,04 / OBV SLOPE -53290,37, BB MID 79.058,66 / ADX 19,87, ATR 2.034,08. Il log del bot conferma: \"STATUS | capital=10000.00 | position=1.000000 | signal=HOLD | ema_fast=76767.29 | ema_slow=84707.42 | obv_slope=-53290.37 | bb_mid=79058.66 | adx=19.87 | atr=2034.08\" e \"Sleeping 46718s until next daily candle...\"."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-066",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Tabella \"Trade History\" della dashboard, colonne TIME | SIDE | AMOUNT | PRICE | COST, 6 transazioni simulate: 2026-05-25 11:04:31 SELL 0.0030 $77.446,49 $232,34; 2026-05-25 11:04:30 BUY 0.0030 $77.446,50 $232,34; 2026-05-25 11:04:30 SELL 0.0020 $77.446,49 $154,89; 2026-05-25 11:04:30 BUY 0.0020 $77.446,50 $154,89; 2026-05-25 11:04:30 SELL 0.0010 $77.446,49 $77,45; 2026-05-25 11:04:29 BUY 0.0010 $77.446,50 $77,45."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-067",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Il presentatore chiarisce che il testnet ufficiale di Binance di per sé non fornisce una dashboard visiva come quella appena mostrata (costruita su misura dal bot, in locale su localhost:8501): se invece si usasse la dashboard reale di Binance con soldi veri, si potrebbe entrare nell'interfaccia principale e vedere le proprie trade come se si stesse facendo trading in prima persona."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-068",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "La pagina testnet.binance.vision mostra \"You currently have 1 API Key(s) registered for this user\" con una tabella: Key Type \"HMAC-SHA-256\", Description \"Youtube_Bot_2\", Permissions \"TRADE, USER_DATA, USER_STREAM\". Il nome descrittivo registrato (\"Youtube_Bot_2\", con underscore e suffisso \"_2\") differisce leggermente da quello pronunciato a voce (\"YouTube bot\") nella scena di generazione, probabile normalizzazione automatica del campo o numerazione di un tentativo precedente."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-069",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Chiusura a schermo intero in webcam: il presentatore chiarisce che l'obiettivo del video non era insegnare il modo migliore di costruire un bot di trading, ma un metodo per affrontare qualsiasi problema con l'AI — la stessa tesi enunciata in apertura, qui ripresa e chiusa esplicitamente."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-070",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Riepilogo esplicito dei tre step del metodo generale insegnato dal video: 1) chiarire il problema che si sta affrontando, facendo \"zoom indietro\" e ottenendo una visione di alto livello; 2) definire una struttura architetturale; 3) solo a quel punto procedere con l'implementazione."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-071",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "principio",
+   "testo": "Il presentatore avverte che i tre step del metodo (chiarire il problema, definire l'architettura, implementare) non sono sufficienti da soli se non si sa come scrivere prompt efficaci con Claude — apre così il pitch di vendita finale."
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-072",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "tipo": "dato",
+   "testo": "Chiusura del video con il pitch di vendita: il presentatore annuncia di aver realizzato \"un corso completo\" segnalato con una card in sovraimpressione (\"qua sopra\"), che porta lo spettatore \"da beginner a completi esperti in come scrivere prompt di successo con Cloud Code [Claude Code] e con Codex\". Nessun prezzo o URL esplicito viene pronunciato; il richiamo è puramente visivo. L'ultima parola pronunciata nel video è \"Yeah.\"."
+  }
+ ]
+}

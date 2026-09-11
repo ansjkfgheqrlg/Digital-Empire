@@ -1,0 +1,710 @@
+{
+ "lotto": 11,
+ "assegnazioni": [
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-001",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-002",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-003",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-004",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-005",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-006",
+   "capitolo": "V.2",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-007",
+   "capitolo": "V.2",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-008",
+   "capitolo": "V.2",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-009",
+   "capitolo": "V.2",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-010",
+   "capitolo": "V.2",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-011",
+   "capitolo": "V.2",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-012",
+   "capitolo": "V.1",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-013",
+   "capitolo": "V.3",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-014",
+   "capitolo": "V.3",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-015",
+   "capitolo": "V.3",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-016",
+   "capitolo": "V.10",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-017",
+   "capitolo": "V.10",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-018",
+   "capitolo": "V.10",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-019",
+   "capitolo": "V.10",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-020",
+   "capitolo": "V.10",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-021",
+   "capitolo": "V.2",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-022",
+   "capitolo": "V.2",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-023",
+   "capitolo": "V.10",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-024",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-025",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-026",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-027",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-028",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-029",
+   "capitolo": "V.13",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-030",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-031",
+   "capitolo": "V.13",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-032",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-033",
+   "capitolo": "V.13",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-034",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-035",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-036",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-037",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-038",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-039",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-040",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-041",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-042",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-043",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-044",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-045",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-046",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-047",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-048",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-049",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-050",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-051",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-052",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-053",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-054",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-055",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-056",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-057",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-058",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-059",
+   "capitolo": "V.13",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-060",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-061",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-062",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-063",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-064",
+   "capitolo": "V.19",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-065",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-066",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-067",
+   "capitolo": "V.5",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-068",
+   "capitolo": "V.4",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-069",
+   "capitolo": "V.13",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-070",
+   "capitolo": "V.13",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-071",
+   "capitolo": "V.13",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-001",
+   "capitolo": "V.15",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-002",
+   "capitolo": "V.15",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-003",
+   "capitolo": "V.1",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-004",
+   "capitolo": "V.15",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-005",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-006",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-007",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-008",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-009",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-010",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-011",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-012",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-013",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-014",
+   "capitolo": "V.4",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-015",
+   "capitolo": "V.5",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-016",
+   "capitolo": "V.5",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-017",
+   "capitolo": "V.5",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-018",
+   "capitolo": "V.5",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-019",
+   "capitolo": "V.10",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-020",
+   "capitolo": "V.10",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-021",
+   "capitolo": "V.10",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-022",
+   "capitolo": "V.10",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-023",
+   "capitolo": "V.9",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-024",
+   "capitolo": "V.9",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-025",
+   "capitolo": "V.9",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-026",
+   "capitolo": "V.14",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-027",
+   "capitolo": "V.14",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-028",
+   "capitolo": "V.14",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-029",
+   "capitolo": "V.14",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-030",
+   "capitolo": "V.14",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-031",
+   "capitolo": "V.14",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-032",
+   "capitolo": "V.14",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-033",
+   "capitolo": "V.2",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-034",
+   "capitolo": "V.2",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-035",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-036",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-037",
+   "capitolo": "V.6",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-038",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-039",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-040",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-041",
+   "capitolo": "V.15",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-042",
+   "capitolo": "V.15",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-043",
+   "capitolo": "V.15",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-044",
+   "capitolo": "V.15",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-045",
+   "capitolo": "VII.2",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-046",
+   "capitolo": "III.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-047",
+   "capitolo": "V.5",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-048",
+   "capitolo": "V.4",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-049",
+   "capitolo": "V.4",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-050",
+   "capitolo": "V.15",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-051",
+   "capitolo": "V.6",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-052",
+   "capitolo": "V.15",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-053",
+   "capitolo": "V.15",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-054",
+   "capitolo": "V.10",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-055",
+   "capitolo": "II.5",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-056",
+   "capitolo": "II.5",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-057",
+   "capitolo": "II.5",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-058",
+   "capitolo": "V.9",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-059",
+   "capitolo": "VII.2",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-060",
+   "capitolo": "VII.2",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-061",
+   "capitolo": "V.15",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-062",
+   "capitolo": "V.14",
+   "peso": "supporto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-063",
+   "capitolo": "I.1",
+   "peso": "portante"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-064",
+   "capitolo": "V.15",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-065",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-066",
+   "capitolo": "V.6",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-067",
+   "capitolo": "V.9",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-068",
+   "capitolo": "II.5",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-069",
+   "capitolo": "II.5",
+   "peso": "contesto"
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-070",
+   "capitolo": "VII.2",
+   "peso": "contesto"
+  }
+ ]
+}

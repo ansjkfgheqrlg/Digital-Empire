@@ -1,0 +1,36 @@
+{
+ "lotto": 8,
+ "totale": 5,
+ "atomi": [
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-201",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Primo test del comando 'chiudi sessione': Claude conferma 'Fatto. La skill funziona: nota salvata in workspace/journal/sessions/sessione-2026-06-10.md.' con verifica di conformità (frontmatter valido, aggancio a [[progetto-arr-5m-2026]] rispettando la regola del wikilink obbligatorio, corpo in tre sezioni Fatto/Deciso/Aperto). Il file sessione-2026-06-10.md viene aperto e trascritto per intero, riga per riga: frontmatter — title: \"Sessione — 2026-06-10\"; summary: \"Test della skill journal: briefing di buongiorno e prima chiusura di sessione per verificare il salvataggio della nota.\"; tags: [workspace, type/session]; status: done; created: 2026-06-10; updated: 2026-06-10; related: - \"[[progetto-arr-5m-2026]]\". Corpo — # Sessione — 2026-06-10 ## Fatto: 'Briefing di buongiorno sul cervello di Aurora Sistemi (diario ancora vuoto, prima sessione tracciata).' 'Test della skill journal: verific"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-202",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "procedura",
+   "testo": "Terzo test, comando 'fine giornata': messaggio utente 'Hey Claude, grazie per oggi. Finisco la giornata qui', Claude risponde: 'Grazie a te, Gio. Attivo \"fine giornata\". Prima di scrivere il daily, in 3 righe cosa è successo oggi in totale:' numerato per intero: '1. Briefing di buongiorno sul cervello di Aurora Sistemi (diario vuoto, prima giornata tracciata).' '2. Test della skill journal: chiusura di sessione che ha salvato correttamente la nota nel workspace.' '3. Nessun lavoro reale sulle entità: giornata dedicata a verificare il meccanismo del diario.' Poi: 'C'è una sola sessione oggi ([[sessione-2026-06-10]]), che fonderò nel daily. Ti torna? Dammi l'ok e scrivo.' L'utente risponde 'fai pure', a quel punto Claude esegue un comando bash 'Bash Read daily template, check existing' ('cd \"...aurora cervello\" && cat workspace/journal/_templates/_template-daily.md 2>/dev/null && ...') pri"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-203",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "struttura",
+   "testo": "Template _template-daily.md aperto e trascritto per intero, riga per riga (parzialmente tagliato dal bordo inferiore dello screenshot, il file continua oltre quanto visibile): frontmatter — title: \"Daily — YYYY-MM-DD\"; summary: \"Una frase di sintesi sull'intera giornata.\"; tags: [workspace, type/daily]; status: done; created: YYYY-MM-DD; updated: YYYY-MM-DD; related: - \"[[sessione-YYYY-MM-DD]]\" - \"[[entita-principale-toccata]]\". Corpo — # Daily — YYYY-MM-DD ## Fatto: 'Sintesi unica di cosa è stato concluso oggi, fondendo le sessioni senza ripeterle riga per riga.' ## Deciso: 'Le scelte chiave della giornata e il perché.' ## Aperto: 'Cosa resta in sospeso a fine giornata.' ## Sessioni: '- [[sessione-YYYY-MM-DD]]' Poi un commento HTML con le regole (tagliato prima della fine, testo visibile): '<!-- REGOLE (vedi workspace/_template-nota.md): - Date sempre YYYY-MM-DD, mai relative. - related"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-204",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "esempio",
+   "testo": "File 2026-06-10.md (daily) generato da Claude a partire dal template P3-074 e dalla sessione P3-072, trascritto per intero, riga per riga: frontmatter — title: \"Daily — 2026-06-10\"; summary: \"Prima giornata tracciata del diario: test della skill journal, dal briefing di buongiorno alla chiusura di sessione.\"; tags: [workspace, type/daily]; status: done; created: 2026-06-10; updated: 2026-06-10; related: - \"[[sessione-2026-06-10]]\" - \"[[progetto-arr-5m-2026]]\". Corpo — # Daily — 2026-06-10 ## Fatto: 'Briefing di buongiorno sul cervello di Aurora Sistemi: diario di lavoro ancora vuoto, questa è la prima giornata tracciata.' 'Testata la skill journal end-to-end: chiusura di sessione che salva correttamente la nota nel workspace.' ## Deciso: 'Agganciare le note di test a [[progetto-arr-5m-2026]], unico progetto attivo, per rispettare la regola del wikilink obbligatorio.' ## Aperto: 'Lavoro r"
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-205",
+   "run": "max18-v01-second-brain-obsidian",
+   "tipo": "principio",
+   "testo": "Tesi finale del relatore, ricostruita per intero incollando le battute letterali (marcate a voce, una per scena) delle ultime sei scene del video, tutte in webcam a piena inquadratura senza schermo software: scena 347 'Bene, signori, quindi direi che' / 'abbiamo fatto il nostro tutorial sulla' [company brain]; scena 348 'mille per essere arrivati fino alla' [fine — apertura del ringraziamento: 'Grazie mille per essere arrivati fino alla fine']; scena 349 'di più su come farlo in maniera anche' [più massiva per la propria azienda]; scena 350 'vendere questa tipologia di servizi da' [community]; scena 351 'interattive con una community di ormai' [90 imprenditori]; scena 352, ultimo frame estratto del video (occhi chiusi, espressione rilassata) 'ovviamente grazie ancora per aver' — chiusura letterale riportata dalla fonte: 'seguito il tutorial.' Tesi centrale ricomposta: il tutorial sulla c"
+  }
+ ]
+}

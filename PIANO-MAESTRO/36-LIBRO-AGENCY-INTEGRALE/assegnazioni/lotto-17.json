@@ -1,0 +1,970 @@
+{
+  "lotto": 17,
+  "assegnazioni": [
+    {
+      "uid": "Ahp_6rHSOsU::KA-01",
+      "capitolo": "IV.5",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-02",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-03",
+      "capitolo": "IV.5",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-04",
+      "capitolo": "IV.5",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-05",
+      "capitolo": "IV.5",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-06",
+      "capitolo": "IV.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-07",
+      "capitolo": "IV.5",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-08",
+      "capitolo": "IV.5",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-09",
+      "capitolo": "IV.5",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-10",
+      "capitolo": "IV.5",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-11",
+      "capitolo": "IV.5",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-12",
+      "capitolo": "IV.5",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-13",
+      "capitolo": "IV.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-14",
+      "capitolo": "IV.5",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-15",
+      "capitolo": "IV.5",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-16",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-17",
+      "capitolo": "IV.5",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-18",
+      "capitolo": "IV.5",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-19",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "Ahp_6rHSOsU::KA-20",
+      "capitolo": "VI.8",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-01",
+      "capitolo": "VI.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "hb89lccIacY::KA-02",
+      "capitolo": "VI.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "hb89lccIacY::KA-03",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-04",
+      "capitolo": "VI.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "hb89lccIacY::KA-05",
+      "capitolo": "VI.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "hb89lccIacY::KA-06",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-07",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-08",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-09",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-10",
+      "capitolo": "VI.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "hb89lccIacY::KA-11",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-12",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-13",
+      "capitolo": "VI.4",
+      "peso": "contesto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-14",
+      "capitolo": "VI.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "hb89lccIacY::KA-15",
+      "capitolo": "VI.4",
+      "peso": "contesto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-16",
+      "capitolo": "VI.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-17",
+      "capitolo": "VI.6",
+      "peso": "contesto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-18",
+      "capitolo": "VI.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-19",
+      "capitolo": "VI.4",
+      "peso": "contesto"
+    },
+    {
+      "uid": "hb89lccIacY::KA-20",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-01",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-02",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-03",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-04",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-05",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-06",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-07",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-08",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-09",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-10",
+      "capitolo": "VI.6",
+      "peso": "supporto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-11",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-12",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-13",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-14",
+      "capitolo": "VI.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-15",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-16",
+      "capitolo": "VI.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-17",
+      "capitolo": "VI.7",
+      "peso": "contesto"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-18",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "L5_Z63nxXjI::KA-19",
+      "capitolo": "VI.6",
+      "peso": "contesto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-01",
+      "capitolo": "VI.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-02",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-03",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-04",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-05",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-06",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-07",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-08",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-09",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-10",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-11",
+      "capitolo": "VI.9",
+      "peso": "portante"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-12",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-13",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-14",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-15",
+      "capitolo": "VI.9",
+      "peso": "supporto"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-16",
+      "capitolo": "VI.9",
+      "peso": "portante"
+    },
+    {
+      "uid": "3zJpI8-7TW4::KA-17",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-01",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-02",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-03",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-04",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-05",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-06",
+      "capitolo": "II.8",
+      "peso": "supporto"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-07",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-08",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-09",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-10",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-11",
+      "capitolo": "II.8",
+      "peso": "supporto"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-12",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-13",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-14",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-15",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-16",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "j4UInmM9kKA::KA-17",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-01",
+      "capitolo": "III.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-02",
+      "capitolo": "III.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-03",
+      "capitolo": "III.3",
+      "peso": "contesto"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-04",
+      "capitolo": "III.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-05",
+      "capitolo": "III.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-06",
+      "capitolo": "III.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-07",
+      "capitolo": "III.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-08",
+      "capitolo": "III.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-09",
+      "capitolo": "III.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-10",
+      "capitolo": "III.3",
+      "peso": "contesto"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-11",
+      "capitolo": "III.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-12",
+      "capitolo": "III.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-13",
+      "capitolo": "III.3",
+      "peso": "supporto"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-14",
+      "capitolo": "III.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-15",
+      "capitolo": "III.6",
+      "peso": "portante"
+    },
+    {
+      "uid": "EBU57iVAutA::KA-16",
+      "capitolo": "III.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-01",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-02",
+      "capitolo": "IV.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-03",
+      "capitolo": "II.8",
+      "peso": "supporto"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-04",
+      "capitolo": "IV.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-05",
+      "capitolo": "IV.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-06",
+      "capitolo": "IV.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-07",
+      "capitolo": "IV.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-08",
+      "capitolo": "IV.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-09",
+      "capitolo": "IV.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-10",
+      "capitolo": "IV.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-11",
+      "capitolo": "IV.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-12",
+      "capitolo": "IV.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-13",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "8Pf7d57Q0Jk::KA-14",
+      "capitolo": "II.8",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-01",
+      "capitolo": "V.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-02",
+      "capitolo": "V.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-03",
+      "capitolo": "V.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-04",
+      "capitolo": "V.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-05",
+      "capitolo": "V.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-06",
+      "capitolo": "V.4",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-07",
+      "capitolo": "IV.5",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-08",
+      "capitolo": "V.10",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-09",
+      "capitolo": "V.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-10",
+      "capitolo": "V.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-11",
+      "capitolo": "V.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-13::KA-12",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-01",
+      "capitolo": "V.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-02",
+      "capitolo": "V.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-03",
+      "capitolo": "V.10",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-04",
+      "capitolo": "V.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-05",
+      "capitolo": "V.1",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-06",
+      "capitolo": "V.19",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-07",
+      "capitolo": "V.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-08",
+      "capitolo": "V.3",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-09",
+      "capitolo": "V.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-10",
+      "capitolo": "V.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-02::KA-11",
+      "capitolo": "V.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-01",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-02",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-03",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-04",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-05",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-06",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-07",
+      "capitolo": "VI.1",
+      "peso": "supporto"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-08",
+      "capitolo": "VI.1",
+      "peso": "portante"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-09",
+      "capitolo": "II.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "VbxTgp_fz8Y::KA-10",
+      "capitolo": "VI.8",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-01",
+      "capitolo": "IV.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-02",
+      "capitolo": "IV.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-03",
+      "capitolo": "V.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-04",
+      "capitolo": "V.2",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-05",
+      "capitolo": "V.7",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-06",
+      "capitolo": "V.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-07",
+      "capitolo": "V.10",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-08",
+      "capitolo": "V.10",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-09",
+      "capitolo": "V.7",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-lezione-16::KA-10",
+      "capitolo": "V.7",
+      "peso": "contesto"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-01",
+      "capitolo": "VI.2",
+      "peso": "contesto"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-02",
+      "capitolo": "VII.4",
+      "peso": "supporto"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-03",
+      "capitolo": "VII.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-04",
+      "capitolo": "VII.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-05",
+      "capitolo": "VII.4",
+      "peso": "portante"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-06",
+      "capitolo": "VI.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-07",
+      "capitolo": "VI.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-08",
+      "capitolo": "VI.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "VYyIF1r6tkw::KA-09",
+      "capitolo": "VI.5",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-01",
+      "capitolo": "IV.2",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-02",
+      "capitolo": "IV.2",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-03",
+      "capitolo": "V.10",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-04",
+      "capitolo": "V.13",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-05",
+      "capitolo": "V.7",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-06",
+      "capitolo": "IV.2",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-07",
+      "capitolo": "V.10",
+      "peso": "contesto"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-08",
+      "capitolo": "V.6",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-bonus-02::KA-09",
+      "capitolo": "V.7",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-01",
+      "capitolo": "V.14",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-02",
+      "capitolo": "V.14",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-03",
+      "capitolo": "V.14",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-04",
+      "capitolo": "V.14",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-05",
+      "capitolo": "V.14",
+      "peso": "portante"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-06",
+      "capitolo": "V.14",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-07",
+      "capitolo": "V.14",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-08",
+      "capitolo": "V.14",
+      "peso": "supporto"
+    },
+    {
+      "uid": "cs2online-bonus-03::KA-09",
+      "capitolo": "V.14",
+      "peso": "contesto"
+    }
+  ]
+}

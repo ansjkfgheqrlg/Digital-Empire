@@ -1,188 +1,148 @@
 {
  "slug": "outheadline-vsl",
  "fonte": "sorgenti/outheadline-vsl/video.mp4",
- "generato": "2026-09-10 23:42",
- "strumento_trascrizione": "faster-whisper small, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "generato": "2026-09-11 00:26",
+ "strumento_trascrizione": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
  "durata_video_s": 46.25,
  "densita": {
-  "segmenti_vocali": 11,
-  "secondi_di_parlato": 43.88,
-  "percentuale_di_parlato": 94.9,
-  "segmenti_al_minuto": 14.27,
-  "durata_media_segmento_s": 3.99
+  "segmenti_vocali": 7,
+  "secondi_di_parlato": 45.22,
+  "percentuale_di_parlato": 97.8,
+  "segmenti_al_minuto": 9.08,
+  "durata_media_segmento_s": 6.46
  },
- "parole_totali": 126,
- "parole_al_minuto_medie": 163.5,
- "parole_al_minuto_sul_solo_parlato": 172.3,
+ "parole_totali": 123,
+ "parole_al_minuto_medie": 159.6,
+ "parole_al_minuto_sul_solo_parlato": 163.2,
  "wpm_per_minuto": [
   {
    "minuto": 0,
    "da": 0.0,
    "a": 46.25,
-   "parole": 126,
-   "parole_al_minuto": 163.5,
-   "secondi_di_voce": 40.42,
-   "densita_voce_pct": 87.4
+   "parole": 123,
+   "parole_al_minuto": 159.6,
+   "secondi_di_voce": 42.92,
+   "densita_voce_pct": 92.8
   }
  ],
- "pause_sopra_0_5s": 2,
+ "pause_sopra_0_5s": 1,
  "pause_dal_parlato": [
   {
-   "inizio": 1.88,
-   "fine": 2.06,
-   "durata": 0.18,
+   "inizio": 2.02,
+   "fine": 2.3,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "vendita,",
    "prima_di": "copy,"
   },
   {
-   "inizio": 2.36,
-   "fine": 2.56,
-   "durata": 0.2,
+   "inizio": 2.46,
+   "fine": 2.7,
+   "durata": 0.24,
    "tipo": "interna",
    "dopo": "copy,",
    "prima_di": "design,"
   },
   {
-   "inizio": 3.0,
-   "fine": 3.22,
-   "durata": 0.22,
+   "inizio": 3.18,
+   "fine": 3.46,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "design,",
    "prima_di": "eccetera,"
   },
   {
-   "inizio": 7.06,
-   "fine": 7.16,
+   "inizio": 7.14,
+   "fine": 7.24,
    "durata": 0.1,
    "tipo": "interna",
    "dopo": "prodotto,",
    "prima_di": "ti"
   },
   {
-   "inizio": 7.9,
-   "fine": 9.01,
-   "durata": 1.11,
+   "inizio": 8.14,
+   "fine": 9.09,
+   "durata": 0.95,
    "tipo": "interna",
    "dopo": "differenzi?",
    "prima_di": "Probabilmente"
   },
   {
-   "inizio": 9.79,
-   "fine": 10.09,
-   "durata": 0.3,
+   "inizio": 9.97,
+   "fine": 10.25,
+   "durata": 0.28,
    "tipo": "interna",
    "dopo": "no.",
    "prima_di": "E"
   },
   {
-   "inizio": 10.49,
-   "fine": 10.71,
-   "durata": 0.22,
+   "inizio": 10.63,
+   "fine": 10.79,
+   "durata": 0.16,
    "tipo": "interna",
    "dopo": "no,",
    "prima_di": "non"
   },
   {
-   "inizio": 12.51,
-   "fine": 12.77,
-   "durata": 0.26,
+   "inizio": 12.69,
+   "fine": 12.87,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "design,",
    "prima_di": "sto"
   },
   {
-   "inizio": 17.05,
-   "fine": 17.41,
-   "durata": 0.36,
+   "inizio": 14.49,
+   "fine": 14.55,
+   "durata": 0.06,
+   "tipo": "interna",
+   "dopo": "testo.",
+   "prima_di": "La"
+  },
+  {
+   "inizio": 17.29,
+   "fine": 17.47,
+   "durata": 0.18,
    "tipo": "interna",
    "dopo": "ok,",
    "prima_di": "non"
   },
   {
-   "inizio": 18.93,
-   "fine": 19.09,
-   "durata": 0.16,
+   "inizio": 18.07,
+   "fine": 18.15,
+   "durata": 0.08,
+   "tipo": "interna",
+   "dopo": "pessimi,",
+   "prima_di": "non"
+  },
+  {
+   "inizio": 19.07,
+   "fine": 19.21,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "eccezionali,",
    "prima_di": "ok."
   },
   {
-   "inizio": 19.43,
-   "fine": 19.71,
-   "durata": 0.28,
+   "inizio": 19.63,
+   "fine": 19.77,
+   "durata": 0.14,
    "tipo": "interna",
    "dopo": "ok.",
    "prima_di": "E"
   },
   {
-   "inizio": 28.19,
-   "fine": 28.33,
+   "inizio": 20.07,
+   "fine": 20.21,
    "durata": 0.14,
    "tipo": "interna",
-   "dopo": "'attenzione,",
-   "prima_di": "subito,"
+   "dopo": "penso,",
+   "prima_di": "tu"
   },
   {
-   "inizio": 28.85,
-   "fine": 28.93,
-   "durata": 0.08,
-   "tipo": "interna",
-   "dopo": "subito,",
-   "prima_di": "sempre."
-  },
-  {
-   "inizio": 34.07,
-   "fine": 34.37,
-   "durata": 0.3,
-   "tipo": "interna",
-   "dopo": "ok.",
-   "prima_di": "Ok,"
-  },
-  {
-   "inizio": 34.77,
-   "fine": 35.09,
-   "durata": 0.32,
-   "tipo": "interna",
-   "dopo": "Ok,",
-   "prima_di": "nel"
-  },
-  {
-   "inizio": 35.87,
-   "fine": 36.43,
-   "durata": 0.56,
-   "tipo": "interna",
-   "dopo": "2024,",
-   "prima_di": "non"
-  },
-  {
-   "inizio": 36.99,
-   "fine": 37.25,
-   "durata": 0.26,
-   "tipo": "interna",
-   "dopo": "basta.",
-   "prima_di": "Ho"
-  },
-  {
-   "inizio": 42.81,
-   "fine": 42.99,
-   "durata": 0.18,
-   "tipo": "interna",
-   "dopo": "copywriter.",
-   "prima_di": "Reggi"
-  },
-  {
-   "inizio": 44.21,
-   "fine": 44.47,
-   "durata": 0.26,
-   "tipo": "interna",
-   "dopo": "sotto,",
-   "prima_di": "potresti"
-  },
-  {
-   "inizio": 46.09,
+   "inizio": 46.17,
    "fine": 46.25,
-   "durata": 0.16,
+   "durata": 0.08,
    "tipo": "coda"
   }
  ],
@@ -196,19 +156,10 @@
  "loudness": {
   "nota": "loudness momentanea EBU R128 (finestra 400 ms), campionata ogni 100 ms; media per segmento = media aritmetica dei campioni M dentro il segmento",
   "campioni": 462,
-  "mediana_segmenti_LUFS_M": -19.8,
+  "mediana_segmenti_LUFS_M": -19.6,
   "picco_momentaneo_LUFS_M": -12.3,
   "picco_a_secondo": 9.3,
-  "sopra_mediana_3LU": [
-   {
-    "i": 2,
-    "inizio": 9.01,
-    "fine": 9.79,
-    "LUFS_M": -14.2,
-    "delta_LU": 5.6,
-    "testo": "Probabilmente no."
-   }
-  ],
+  "sopra_mediana_3LU": [],
   "profilo_per_secondo": [
    {
     "t": 0.0,

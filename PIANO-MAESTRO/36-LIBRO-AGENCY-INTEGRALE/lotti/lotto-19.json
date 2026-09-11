@@ -1,0 +1,606 @@
+{
+ "lotto": 19,
+ "totale": 100,
+ "atomi": [
+  {
+   "uid": "outfunnel-lezione-05::KA-01",
+   "run": "outfunnel-lezione-05",
+   "tipo": "",
+   "testo": "Metodo di analisi dichiarato: Paese (Italy) + Categoria (ADS) + Keyword (es. orologio, panino, consulenza) — probabile riferimento a Facebook Ads Library (strumento citato esplicitamente in Lezione 8)."
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-02",
+   "run": "outfunnel-lezione-05",
+   "tipo": "",
+   "testo": "Esempio 1 (Awareness): un brano musicale sponsorizzato = funnel a 2 step (ad di awareness → ascolto), nessuna vendita diretta."
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-03",
+   "run": "outfunnel-lezione-05",
+   "tipo": "",
+   "testo": "Esempio 2 (Just Eat): funnel diretto a 2 step (ad → pagina d'acquisto), il modello più breve possibile per acquisti d'impulso."
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-04",
+   "run": "outfunnel-lezione-05",
+   "tipo": "",
+   "testo": "Esempio 3 (consulenza lavorativa): funnel a 4 step (ad con storia personale → landing/sales page → opt-in per Open Day → possibile call di consulenza) — più elaborato perché il prodotto richiede più fiducia."
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-05",
+   "run": "outfunnel-lezione-05",
+   "tipo": "",
+   "testo": "Tassonomia di sintesi a 3 pattern: Funnel diretto (2 step, es. Just Eat), Funnel con opt-in (3+ step, es. consulenza), Funnel di Awareness (1-2 step, nessuna CTA immediata)."
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-06",
+   "run": "outfunnel-lezione-05",
+   "tipo": "",
+   "testo": "Osservazione chiave: funnel che sembrano semplici in superficie spesso nascondono elementi non visibili a un primo sguardo (opt-in, email marketing, retargeting) — l'analisi competitor va fatta seguendo il percorso reale, non giudicando dalla sola ad."
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-01",
+   "run": "outfunnel-lezione-06",
+   "tipo": "",
+   "testo": "8 tipologie di funnel per contenuto: Vendita Diretta, Lead Generation con Lead Magnet, Webinar, Free Shipping (libro gratis + spedizione a pagamento), Educativo, Challenge, Tripwire, Consulenza Gratuita."
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-02",
+   "run": "outfunnel-lezione-06",
+   "tipo": "",
+   "testo": "Funnel Webinar: ad → opt-in → link accesso → webinar con CTA finale. Nota temporale esplicita: \"molto utilizzato fino al 2022, ancora valido ma meno efficace rispetto al passato\" — segnale di erosione dell'efficacia di un formato una volta dominante."
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-03",
+   "run": "outfunnel-lezione-06",
+   "tipo": "",
+   "testo": "Funnel \"Free Shipping\": libro fisico gratis, cliente paga solo la spedizione — usato per costruire fiducia ed educare prima di vendite più costose (stesso principio del Tripwire, KA-05)."
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-04",
+   "run": "outfunnel-lezione-06",
+   "tipo": "",
+   "testo": "Funnel Challenge: sfida gratuita a tempo (es. 14 giorni) con contenuti giornalieri, offerta proposta alla fine — funziona su engagement e fidelizzazione pre-vendita."
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-05",
+   "run": "outfunnel-lezione-06",
+   "tipo": "",
+   "testo": "Funnel Tripwire: prima offerta a bassissimo prezzo (es. 5€) per abbassare la resistenza psicologica all'acquisto — chi ha già pagato una volta spende più facilmente la volta dopo (stesso principio di Lezione 11, KA-01, e ripreso in dettaglio in Lezione 20)."
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-06",
+   "run": "outfunnel-lezione-06",
+   "tipo": "",
+   "testo": "Funnel Consulenza Gratuita: applicabile a molti settori (finanza, salute, investimenti, estetica) — l'autore la descrive esplicitamente come \"spesso una call di vendita mascherata da consulenza\", onestà sul meccanismo dietro l'etichetta."
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-01",
+   "run": "outfunnel-lezione-09",
+   "tipo": "",
+   "testo": "10 tipologie di lead magnet catalogate: PDF gratuito, libro fisico con spedizione a pagamento, checklist, swipe file, webinar, free trial, quiz interattivo, toolkit/calcolatore, infografica/report, free assessment."
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-02",
+   "run": "outfunnel-lezione-09",
+   "tipo": "",
+   "testo": "Il PDF gratuito ha un limite pratico: se troppo lungo (es. 100 pagine) l'utente non lo legge, riducendo la conversione — deve dare valore reale ma restare conciso e \"consumabile\"."
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-03",
+   "run": "outfunnel-lezione-09",
+   "tipo": "",
+   "testo": "Il libro fisico con spedizione a pagamento converte MEGLIO del PDF gratuito per un motivo psicologico esplicito: chi ha già \"aperto il portafoglio\" anche per pochi euro ha più probabilità di acquistare in seguito — stesso principio della soglia psicologica del Tripwire (Lezione 6/11/20)."
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-04",
+   "run": "outfunnel-lezione-09",
+   "tipo": "",
+   "testo": "Quiz interattivi: due sotto-tipi distinti — divertenti/informativi (engagement) vs di selezione prodotto (riducono la confusione, es. \"Quale MacBook fa per te?\")."
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-05",
+   "run": "outfunnel-lezione-09",
+   "tipo": "",
+   "testo": "Concetto trasversale ripetuto 3 volte nel corso (qui, Lezione 6, Lezione 20): pagare anche 1€ è un segnale comportamentale forte — chi paga poco oggi ha più probabilità di pagare molto domani."
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-06",
+   "run": "outfunnel-lezione-09",
+   "tipo": "",
+   "testo": "Principio guida per la scelta del lead magnet: deve essere breve e utile (per non bloccare l'utente prima del completamento) e deve SEMPRE puntare alla raccolta email, qualunque sia il formato scelto."
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-01",
+   "run": "outfunnel-lezione-10",
+   "tipo": "",
+   "testo": "3 strategie email distinte: Blast (invio singolo a tutta la lista, non ripetuto), Sequenza automatica di vendita (3-4 email ravvicinate post-iscrizione), Sequenza di follow-up (per chi non ha comprato dopo la prima sequenza)."
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-02",
+   "run": "outfunnel-lezione-10",
+   "tipo": "",
+   "testo": "Regola operativa per il Blast: evitare di inviarlo a chi sta già ricevendo un'automazione, per non sovraccaricare — strategia avanzata: liste separate per chi ha completato la sequenza automatica prima di iniziare a inviargli blast."
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-03",
+   "run": "outfunnel-lezione-10",
+   "tipo": "",
+   "testo": "La sequenza automatica di vendita ha un timing tipico: 3-4 email, una al giorno; ogni email tratta un aspetto specifico (presentazione, dubbi, benefici) senza ripetizioni."
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-04",
+   "run": "outfunnel-lezione-10",
+   "tipo": "",
+   "testo": "Timing del follow-up: intervalli più lunghi (7, 15, 30 giorni), obiettivo riproporre l'offerta con angolazioni DIVERSE (non ripetere lo stesso messaggio) e gestire obiezioni non ancora trattate."
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-05",
+   "run": "outfunnel-lezione-10",
+   "tipo": "",
+   "testo": "4 tattiche per un follow-up efficace: nuovi pain point non usati prima, cambio di targeting (es. da un genere all'altro), risoluzione di obiezioni secondarie (tempo/soldi/paura di sbagliare), test di messaggi diversi."
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-06",
+   "run": "outfunnel-lezione-10",
+   "tipo": "",
+   "testo": "Vincolo temporale esplicito: il follow-up non deve durare oltre 1-2 mesi, per non risultare invadente o incoerente con i contenuti pubblicati sui social nel frattempo."
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-01",
+   "run": "wTpfKuHJhOE",
+   "tipo": "Copy / Autorita - founder che scrive il proprio copy",
+   "testo": "Alex Hormozi ha fatto un lancio da $100 milioni in un weekend e ha dichiarato di aver scritto lui stesso tutti i copy e le sales page del lancio, incluso il copy della presentazione - usato come prova di autorita': chi ottiene risultati enormi scrive personalmente i materiali di vendita piu' critici."
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-02",
+   "run": "wTpfKuHJhOE",
+   "tipo": "Copy / Ricerca esaustiva pre-lancio",
+   "testo": "Claim attribuito a Hormozi (tradotto da overlay EN): ha letto/consumato 'ogni singola parola da qualsiasi parte correlata a questo lancio' - enfasi sulla ricerca esaustiva come precondizione, non solo sulla scrittura. DA VERIFICARE: testo overlay originale parzialmente troncato nei frame, traduzione italiana presa come fonte primaria."
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-03",
+   "run": "wTpfKuHJhOE",
+   "tipo": "Copy / Anti-pattern mismatch investimento-aspettativa",
+   "testo": "Critica: delegare il copy a un freelancer da 50 euro e aspettarsi comunque risultati di alto livello - mismatch tra investimento minimo e aspettativa di performance, in contrasto con l'esempio Hormozi."
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-04",
+   "run": "wTpfKuHJhOE",
+   "tipo": "Posizionamento / Tesi centrale",
+   "testo": "Tesi centrale: 'siamo nell'era in cui non puoi semplicemente fare un copy mid' - l'epoca attuale (strumenti AI diffusi) alza la soglia minima accettabile, la mediocrita' non basta piu' per emergere."
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-05",
+   "run": "wTpfKuHJhOE",
+   "tipo": "Posizionamento / Creativita come differenziatore",
+   "testo": "'La creativita' e' cio' che fa la differenza tra successo e fallimento, perche' il resto e' gia' equalizzato' - l'esecuzione di base e' commoditizzata dagli strumenti AI, il vantaggio competitivo si sposta sulla componente creativa/strategica."
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-06",
+   "run": "wTpfKuHJhOE",
+   "tipo": "Metodo / AI come strumento non sostituto",
+   "testo": "Chiarimento: Andrei usa ChatGPT 'di continuo' - il punto non e' evitare l'AI ma saperla usare per scrivere copy persuasivo strategico, distinguendo output generico da output guidato da competenza reale di copywriting."
+  },
+  {
+   "uid": "IYd-VOngDog::KA-01",
+   "run": "IYd-VOngDog",
+   "tipo": "Struttura hook / Retorica persuasiva",
+   "testo": "Il reel usa una domanda retorica per smontare l'assunzione implicita del pubblico prima di rivelare il vero collo di bottiglia. Sequenza esatta: (1) hook con cifra ('mi pagano migliaia su migliaia ogni mese per scrivere copy'), (2) promessa di rivelazione mancata ('ma se avessi saputo questa cosa prima, stavi facendo ancora più soldi'), (3) domanda che nomina l'assunzione di default del pubblico ('tu pensi che scrivere Copy sia questione di scrivere?'), (4) conferma parziale + smentita ('Sì, ma c'è una fase ancora più importante'). Tecnica generalizzabile: nominare esplicitamente il misconception del pubblico prima di correggerlo aumenta l'attenzione perché il lettore/spettatore si riconosce nell'assunzione, rendendo la correzione successiva più memorabile di un'affermazione diretta."
+  },
+  {
+   "uid": "IYd-VOngDog::KA-02",
+   "run": "IYd-VOngDog",
+   "tipo": "Principio fondazionale / Metodologia copywriting",
+   "testo": "La 'parte quasi segreta' annunciata nel titolo è la ricerca, non la scrittura. Citazione esatta: 'c'è una fase ancora più importante, lo scrivere, ed è della ricerca, perché il marketing informato è colui che riesce a prendere decisioni che più realisticamente porteranno risultati all'azienda.' Formulazione operativa: la ricerca non è un input 'di supporto' alla scrittura, è la variabile che determina la probabilità che le decisioni di copy (headline, angolo, obiezioni gestite, CTA) producano risultati misurabili. Il testo overlay 'RICERCA' (frame-009) marca visivamente questo esatto istante come il climax semantico del video."
+  },
+  {
+   "uid": "IYd-VOngDog::KA-03",
+   "run": "IYd-VOngDog",
+   "tipo": "Applicazione pratica / Analisi competitor",
+   "testo": "Esempio concreto citato per rendere operativo il principio: 'non puoi aspettarti che la campagna di marketing venga chissà quanto se non vai a vedere le altre campagne di marketing, capire chi, come, dove [fa] la concorrenza.' Applicazione: prima di scrivere/lanciare una campagna, analizzare le campagne dei competitor (chi le fa, come sono strutturate, dove sono pubblicate) è presentato come condizione necessaria — non opzionale — per aspettarsi risultati realistici."
+  },
+  {
+   "uid": "IYd-VOngDog::KA-04",
+   "run": "IYd-VOngDog",
+   "tipo": "Meccanica di funnel / Content strategy",
+   "testo": "Il reel si chiude con un rimando esplicito a un video più lungo dello stesso canale interamente dedicato al 'come' fare ricerca ('ho fatto questo video al mio canale tu: Come si fa la ricerca... è una bomba'), accompagnato da una card overlay stile 'video consigliato' (frame-019/020). Pattern di funnel: il reel rivela IL COSA (la ricerca è la fase più importante) ma non spiega IL COME, creando un gap informativo che il CTA verso il video lungo colma — meccanismo di curiosity-gap applicato alla struttura cross-video di un canale, non solo alla singola clip."
+  },
+  {
+   "uid": "IYd-VOngDog::KA-05",
+   "run": "IYd-VOngDog",
+   "tipo": "Tecnica visiva / Editing reel",
+   "testo": "Il video usa overlay testo burned-in sincronizzati a livello di frase/parola-chiave (non parola-per-parola come in altri reel del canale): 'MI PAGANO' → 'SU MIGLIAIA' → 'PER SCRIVERE / COPY' → (silenzio overlay per il setup dubitativo) → 'RICERCA' come singolo keyword-burn-in nel momento di rivelazione. Tecnica generalizzabile: riservare l'overlay testuale ai beat informativi ad alta densità (cifre, keyword di rivelazione) e ometterlo nei beat di transizione/setup, per far risaltare la keyword-chiave quando compare."
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-01",
+   "run": "cs2online-bonus-05",
+   "tipo": "Concetto / progetto continuo",
+   "testo": "Differenza tra prompt isolato (domanda singola -> risposta -> fine) e progetto continuo: nel progetto il loop prompt-risposta si ripete e Claude accumula context nel tempo, invece di ripartire da zero ogni volta."
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-02",
+   "run": "cs2online-bonus-05",
+   "tipo": "Vantaggi Projects Cowork",
+   "testo": "3 vantaggi chiave dei Projects in Cowork: (1) memoria specifica per progetto, (2) file allegati persistenti, (3) accesso diretto a una cartella sul device - non serve riallegare/ricondividere materiale a ogni nuovo task."
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-03",
+   "run": "cs2online-bonus-05",
+   "tipo": "Metodo organizzativo",
+   "testo": "Metodo organizzativo di Andrei: un Project Cowork per singolo cliente, con cartella condivisa e tutti i file del cliente dentro quella cartella."
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-04",
+   "run": "cs2online-bonus-05",
+   "tipo": "Modalita' Claude",
+   "testo": "3 modalita' Claude distinte (chat, Cowork, Claude Code da terminale) - strategia consigliata: provarle tutte fino a sviluppare intuizione su quando usare quale, non esiste risposta univoca."
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-05",
+   "run": "cs2online-bonus-05",
+   "tipo": "Feature / import project",
+   "testo": "Possibilita' di creare un nuovo Project in Cowork oppure importarne uno gia' esistente dalla chat normale - non serve ricominciare da zero se il progetto esiste gia' altrove."
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-01",
+   "run": "cs2online-lezione-04",
+   "tipo": "Framework / 3 tipi task",
+   "testo": "Framework 3 categorie di task rispetto al coinvolgimento AI: Umano (quasi senza AI), AI assisted (~50/50), AI heavy (quasi tutto AI) — decisione da prendere PRIMA di iniziare il task, non durante."
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-02",
+   "run": "cs2online-lezione-04",
+   "tipo": "Esempio concreto / AI heavy",
+   "testo": "Esempio AI heavy: app fitness tracking creata con Lovable (no-code AI) in ~30 minuti totali di prompt, funzionante su iPhone (storico esercizi, chili, ripetizioni)."
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-03",
+   "run": "cs2online-lezione-04",
+   "tipo": "Regola operativa / copy e AI",
+   "testo": "'I copy per le sales page fatti interamente con l'AI vengono quasi sempre male' — l'autore scrive il copy principale a mano e usa l'AI solo per i derivati ripetitivi (primary text ads Meta, varianti)."
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-04",
+   "run": "cs2online-lezione-04",
+   "tipo": "Principio / limiti AI",
+   "testo": "Il limite attuale dell'AI non è la capacità generale ma la gestione del back-end (database, automazioni, security) — il front-end (design visibile) è affidabile, il back-end no. Se l'app deve scalare (es. 100k utenti), raccomandato far revisionare la security da un esperto umano, 'anche a costo di pagare migliaia di euro'."
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-05",
+   "run": "cs2online-lezione-04",
+   "tipo": "Risorsa / tabella decisionale",
+   "testo": "Esiste una tabella decisionale ufficiale (PDF 'Cosa delegare, cosa no', riusato dalla lezione 1) per scegliere Umano/AI-assisted/AI-heavy caso per caso."
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-01",
+   "run": "cs2online-lezione-05",
+   "tipo": "Tassonomia / 12 categorie task",
+   "testo": "Lista ufficiale 12 categorie di task delegabili all'AI: Copywriting, Ricerca, Ideazione/brainstorming, Web dev/vibe coding, Analisi e strategia, Organizzazione/planning, Comunicazione, Revisione/editing, Automazioni, Problem solving, Analisi dati, Formattazione/struttura."
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-02",
+   "run": "cs2online-lezione-05",
+   "tipo": "Stack strumenti / Ricerca",
+   "testo": "Stack dichiarato per la ricerca: Perplexity (tool dedicato) + Google Scholar (solo paper scientifici) + AI generalista per sintesi finale — non un singolo tool onnicomprensivo."
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-03",
+   "run": "cs2online-lezione-05",
+   "tipo": "Regola di sicurezza / comunicazione clienti",
+   "testo": "Warning esplicito e ripetuto: 'controllate sempre quello che scrive l'AI, sempre' — riferito a email clienti, brief, documenti interni."
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-04",
+   "run": "cs2online-lezione-05",
+   "tipo": "Regola di sicurezza / analisi dati",
+   "testo": "Warning specifico su analisi dati/spreadsheet: l'AI 'tende a inventarsi cose' in questo dominio — rischio di hallucination più alto qui che in altri task citati."
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-05",
+   "run": "cs2online-lezione-05",
+   "tipo": "Limite percepito / brainstorming",
+   "testo": "Ideazione/brainstorming è il task che l'autore preferisce fare senza AI ('lo faccio spesso con la mia testa') — ammissione esplicita di limite percepito, non regola universale ('dipende da quanto tempo/energia hai')."
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-01",
+   "run": "k_DXsUCIkr8",
+   "tipo": "Copy / Hook - esclusivita e tempismo",
+   "testo": "'Ho messo mano sul vero copione che usano in The Wolf of Wall Street, perche' il momento in cui lo leggete sul Wall Street Journal ormai e' troppo tardi' - framing di informazione privilegiata/anticipata rispetto a fonti mainstream."
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-02",
+   "run": "k_DXsUCIkr8",
+   "tipo": "Copy / Autorita - fonte storica reale",
+   "testo": "Stratton Oakmont (azienda del film) e' esistita realmente, i venditori usavano questo script per le chiamate - prova di autorita' basata su 'e' successo davvero', non solo su notorieta'."
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-03",
+   "run": "k_DXsUCIkr8",
+   "tipo": "Vendita / Gestione obiezione - validazione",
+   "testo": "Script gestione obiezione 'gia' con un altro broker': valida esplicitamente ('sono pienamente d'accordo, rispondi ottimo, non vogliamo interferire') invece di confutare - distinto dalla controargomentazione aggressiva tipica."
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-04",
+   "run": "k_DXsUCIkr8",
+   "tipo": "Vendita / Chiusura soft - yes-ladder",
+   "testo": "Dopo la validazione, chiede un piccolo impegno futuro condizionato: 'se identifichiamo un'opportunita' con forte potenziale, saresti disposto ad ascoltarla? D'accordo?' - tecnica yes-ladder invece di pressione immediata."
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-05",
+   "run": "k_DXsUCIkr8",
+   "tipo": "Funnel / Reveal parziale come lead magnet",
+   "testo": "Mostra solo un estratto (sezione 'se incontra un altro broker'), poi offre di inviare tutte le pagine e rimanda a un altro video - reveal parziale come meccanismo di lead generation."
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-01",
+   "run": "outfunnel-lezione-04",
+   "tipo": "",
+   "testo": "3 fasi di creazione di un funnel, in ordine di importanza: Strategia (decidere la struttura — errori qui compromettono tutto) → Creatività (copy, design, video) → Pratica (messa online: piattaforma, ads, automazioni)."
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-02",
+   "run": "outfunnel-lezione-04",
+   "tipo": "",
+   "testo": "Un funnel personalizzato batte sempre un funnel standardizzato/riciclato per lo stesso motivo per cui il copy specifico batte il copy generico (vedi Lezione 15)."
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-03",
+   "run": "outfunnel-lezione-04",
+   "tipo": "",
+   "testo": "**Target Fixation** (concetto preso in prestito dal MotoGP): concentrarsi solo sull'obiettivo finale (\"voglio vendere\") senza pensare al percorso del cliente produce funnel troppo semplici e inefficaci (ad → sales page → checkout, senza messaggio)."
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-04",
+   "run": "outfunnel-lezione-04",
+   "tipo": "",
+   "testo": "Processo corretto in 4 passi: (1) definire il primo step/traffico, (2) definire il messaggio chiave del prodotto, (3) scomporre il messaggio negli step dei 5 livelli di consapevolezza (Lezione 2), (4) trasformare gli step logici in step reali del funnel."
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-05",
+   "run": "outfunnel-lezione-04",
+   "tipo": "",
+   "testo": "Esempio applicato: orologio economico \"che sembra di lusso\" → messaggio \"impressione di successo senza spendere una fortuna\" → mappato sui 5 livelli (non sembri di alto livello → un accessorio aiuta → questo orologio è perfetto → costa poco e fa colpo → compralo ora) → tradotto in funnel reale (ad video → landing con VSL → product page → email follow-up)."
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-01",
+   "run": "outfunnel-lezione-13",
+   "tipo": "",
+   "testo": "Principio fondamentale: \"ciò che non misuri non cresce\" — vale per business, fitness, denaro e marketing; il dato principale da monitorare per un funnel è il CR (Conversion Rate) fra ogni coppia di step consecutivi."
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-02",
+   "run": "outfunnel-lezione-13",
+   "tipo": "",
+   "testo": "Errore diagnostico comune, nominato esplicitamente: dare per scontato che il problema sia SEMPRE nell'ultimo step (la Sales Page) — in realtà spesso le persone si bloccano in uno step precedente, prima ancora di arrivare alla vendita."
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-03",
+   "run": "outfunnel-lezione-13",
+   "tipo": "",
+   "testo": "Metodo di ottimizzazione: identificare lo step con il CR più basso, poi testare varianti mirate (copy, immagini/design, riduzione campi nei form, targeting ads) — MA non testare troppe cose insieme, altrimenti diventa impossibile isolare cosa ha funzionato."
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-04",
+   "run": "outfunnel-lezione-13",
+   "tipo": "",
+   "testo": "Strumento nominato esplicitamente: Milanote, per organizzare visivamente funnel e messaggi; più tabelle di percentuali di conversione per step, con tracciamento delle modifiche fatte."
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-05",
+   "run": "outfunnel-lezione-13",
+   "tipo": "",
+   "testo": "Metodo riassunto in 3 verbi: analizza, testa, ottimizza — ciclo da ripetere finché il funnel non performa al massimo."
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-01",
+   "run": "outfunnel-lezione-16",
+   "tipo": "",
+   "testo": "Funnel Evergreen: stabile nel lungo periodo, dopo i primi test non viene modificato spesso — esempio: stesso tablet venduto per anni con lo stesso funnel e solo piccole ottimizzazioni."
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-02",
+   "run": "outfunnel-lezione-16",
+   "tipo": "",
+   "testo": "Funnel per Promozioni: ha scadenza precisa, l'urgenza è centrale e DEVE crescere man mano che ci si avvicina alla fine — esempio a 3 fasi (pre-ordine → centrale con scarsità rinforzata → ultimi giorni con urgenza massima)."
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-03",
+   "run": "outfunnel-lezione-16",
+   "tipo": "",
+   "testo": "Tecnica \"Ads dinamiche\": durante una promo di 30 giorni si creano fino a 30 varianti dello stesso annuncio, cambiando SOLO la cifra dei giorni rimanenti nel copy (\"Mancano 30 giorni\" → ... → \"Ultimo giorno\") — copy e video restano identici, cambia solo la data."
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-04",
+   "run": "outfunnel-lezione-16",
+   "tipo": "",
+   "testo": "Sales Page adattabile in 3 versioni sequenziali: v1 focus sul valore (inizio promo), v2 rinforzo con social proof (metà promo), v3 timer/countdown con CTA forte (ultimi giorni)."
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-05",
+   "run": "outfunnel-lezione-16",
+   "tipo": "",
+   "testo": "Adattamento stagionale: un funnel evergreen può essere temporaneamente modificato per eventi (es. Natale) cambiando solo elementi di design/copy superficiali, senza rifare l'intero funnel."
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-01",
+   "run": "outfunnel-lezione-18",
+   "tipo": "",
+   "testo": "Struttura base minima: Ad → Sales Page diretta, senza passaggi intermedi — non è \"sbagliata\" ma raramente ottimale in termini di costi/risultati."
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-02",
+   "run": "outfunnel-lezione-18",
+   "tipo": "",
+   "testo": "Primo livello di ottimizzazione (tipico delle agenzie): A/B testing delle ads con set diversi per target diversi, poi fase di testing di 7-30 giorni prima di tagliare le ads meno efficaci e aumentare budget su quelle migliori."
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-03",
+   "run": "outfunnel-lezione-18",
+   "tipo": "",
+   "testo": "Secondo livello: Retargeting Ads verso chi ha già visitato la Sales Page, segmentato per tempo di permanenza (permanenza lunga = interesse alto) e per gestione delle obiezioni più comuni."
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-04",
+   "run": "outfunnel-lezione-18",
+   "tipo": "",
+   "testo": "Terzo livello: una SECONDA Sales Page dedicata ai visitatori di ritorno (dal retargeting), con FAQ/obiezioni spostate in cima e headline riscritta per chi ha già visto l'offerta la prima volta."
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-05",
+   "run": "outfunnel-lezione-18",
+   "tipo": "",
+   "testo": "Conclusione esplicita: un funnel corto non è un errore automatico, ma va sempre valutato se testing + retargeting + personalizzazione lo migliorano — mai standardizzare lo stesso funnel su aziende diverse."
+  },
+  {
+   "uid": "fGpz-uOgr4k::KA-01",
+   "run": "fGpz-uOgr4k",
+   "tipo": "Copy / Anti-pattern promo",
+   "testo": "Esempio povero ipotizzato: '20% su una nuova collezione per ragazze' (sconto generico) vs riga con hook di personalita' diretto ('Se si veste cosi io le chiedo il numero')."
+  },
+  {
+   "uid": "fGpz-uOgr4k::KA-02",
+   "run": "fGpz-uOgr4k",
+   "tipo": "Copy / Anti-pattern welcome",
+   "testo": "Esempio povero ipotizzato: 'Benvenuto nella newsletter. Posso scriverti una volta al giorno?' — welcome email che chiede permesso in modo burocratico invece di dare valore/personalita'."
+  },
+  {
+   "uid": "fGpz-uOgr4k::KA-03",
+   "run": "fGpz-uOgr4k",
+   "tipo": "Copy / Anti-pattern urgency",
+   "testo": "Doppio esempio urgency cliche: 'Offerta imperdibile solo per te' e 'Ultima possibilita per risparmiare 20%' — scarcity generica senza specificita, vs tono caldo/personale ('Ho preparato una cosa per te')."
+  },
+  {
+   "uid": "fGpz-uOgr4k::KA-04",
+   "run": "fGpz-uOgr4k",
+   "tipo": "Copy / Personalizzazione",
+   "testo": "Esempio ricco ipotizzato: nome usato a meta frase come domanda diretta ('Antonio, sai che giorno e oggi?') + promessa numerata + chiusura riflessiva, coerente con lo stile email lunghe/coinvolgenti gia' visto nel video 12."
+  },
+  {
+   "uid": "outfunnel-lezione-12::KA-01",
+   "run": "outfunnel-lezione-12",
+   "tipo": "",
+   "testo": "Checklist di 7 fattori \"fra gli step\": (1) tempo trascorso fra step, (2) transizione emotiva, (3) contenuti esterni visti nel frattempo (es. ads di competitor), (4) coerenza del tono di voce, (5) aspettative create negli step precedenti, (6) eventi esterni/stagionalità, (7) cambiamenti nella percezione generale del mercato."
+  },
+  {
+   "uid": "outfunnel-lezione-12::KA-02",
+   "run": "outfunnel-lezione-12",
+   "tipo": "",
+   "testo": "Fattore 1 (tempo): se passano troppi giorni fra step, l'utente dimentica — soluzione: ripetere messaggi chiave e obiezioni già affrontate nello step precedente, non darle per acquisite."
+  },
+  {
+   "uid": "outfunnel-lezione-12::KA-03",
+   "run": "outfunnel-lezione-12",
+   "tipo": "",
+   "testo": "Fattore 5 (aspettative): esempio concreto — se il copy promette \"prenota oggi\" ma il calendario reale ha la prima data disponibile fra una settimana, la conversione crolla; le tempistiche reali vanno comunicate esplicitamente."
+  },
+  {
+   "uid": "outfunnel-lezione-12::KA-04",
+   "run": "outfunnel-lezione-12",
+   "tipo": "",
+   "testo": "Fattore 7 (percezione di mercato): esempio storico citato — durante il lockdown l'interesse per i corsi online è aumentato drasticamente, dimostrando che eventi esterni globali cambiano la ricettività del pubblico indipendentemente dal funnel stesso."
+  },
+  {
+   "uid": "outfunnel-lezione-17::KA-01",
+   "run": "outfunnel-lezione-17",
+   "tipo": "",
+   "testo": "Meccanica base: contenuto desiderato dal pubblico (report, PDF, video, guida) → l'utente inserisce l'email in un opt-in per ottenerlo → consegna doppia (redirect immediato + email di conferma con link), per evitare che problemi tecnici blocchino la consegna."
+  },
+  {
+   "uid": "outfunnel-lezione-17::KA-02",
+   "run": "outfunnel-lezione-17",
+   "tipo": "",
+   "testo": "Blueprint a 5 step: Opt-in → Redirect istantaneo alla pagina di consegna → Email di consegna (backup) → Pagina di consegna (contenuto o video) → Email Marketing/Follow-up (nurturing, scoring, vendita)."
+  },
+  {
+   "uid": "outfunnel-lezione-17::KA-03",
+   "run": "outfunnel-lezione-17",
+   "tipo": "",
+   "testo": "Motivazione esplicita del redirect istantaneo: evita perdita di utenti per problemi tecnici (spam, errori di digitazione email, ritardi CRM); mantiene il tasso di conversione alto perché l'esperienza continua senza interruzioni."
+  },
+  {
+   "uid": "outfunnel-lezione-17::KA-04",
+   "run": "outfunnel-lezione-17",
+   "tipo": "",
+   "testo": "Il lead magnet può essere qualsiasi formato (ebook, webinar, report, sconto esclusivo, quiz) — la scelta della strategia dipende dall'obiettivo finale: acquisizione contatti, lead scoring, o funnel di vendita diretta."
+  },
+  {
+   "uid": "outfunnel-lezione-19::KA-01",
+   "run": "outfunnel-lezione-19",
+   "tipo": "",
+   "testo": "Soglia di prezzo esplicita per passare da vendita self-service a team di vendita: oltre 3.000€ circa (aggiorna/precisa la soglia più generica \"sopra 1.000€\" data in Lezione 3)."
+  },
+  {
+   "uid": "outfunnel-lezione-19::KA-02",
+   "run": "outfunnel-lezione-19",
+   "tipo": "",
+   "testo": "Blueprint a 3 step: Lead Generation (ad o altra fonte) → Sales Page (informazioni complete prima della call) → Opt-in con 3 varianti possibili (calendario integrato per auto-prenotarsi, form dati con ricontatto del team, o combinazione dati+calendario)."
+  },
+  {
+   "uid": "outfunnel-lezione-19::KA-03",
+   "run": "outfunnel-lezione-19",
+   "tipo": "",
+   "testo": "4 motivi per cui la Sales Page PRIMA della call è necessaria: qualifica i lead (filtra chi non è in target), aumenta la consapevolezza (arriva già informato), facilita il lavoro del venditore (meno obiezioni da gestire), evita lead non qualificati (chi non ha budget abbandona prima)."
+  },
+  {
+   "uid": "outfunnel-lezione-19::KA-04",
+   "run": "outfunnel-lezione-19",
+   "tipo": "",
+   "testo": "Alternative/complementi alla Sales Page per qualificare: quiz di qualificazione (domande su reddito, età, necessità) e filtri più stretti direttamente nel targeting delle ads."
+  },
+  {
+   "uid": "outfunnel-lezione-20::KA-01",
+   "run": "outfunnel-lezione-20",
+   "tipo": "",
+   "testo": "Problema risolto: prodotti costosi (es. 500€) sono difficili da vendere direttamente via ads — soluzione: introdurre un primo acquisto economico (Tripwire) per abbassare la resistenza; esempio Apple (iPhone come porta d'ingresso verso Mac/iPad più costosi)."
+  },
+  {
+   "uid": "outfunnel-lezione-20::KA-02",
+   "run": "outfunnel-lezione-20",
+   "tipo": "",
+   "testo": "Blueprint completo a 6 step: Traffico (ads + organico) → Lead Magnet multi-opt-in (PDF/libro/software gratis) → Email di consegna con redirect immediato → Sequenza email per vendere il Tripwire (es. 50€) → Se acquista, upsell al prodotto principale (es. 500€) → Se non acquista, follow-up a lungo termine (es. ogni 7 giorni)."
+  },
+  {
+   "uid": "outfunnel-lezione-20::KA-03",
+   "run": "outfunnel-lezione-20",
+   "tipo": "",
+   "testo": "\"Multi opt-in\": più lead magnet diversi permettono di attrarre segmenti di pubblico diversi con lo stesso funnel a valle."
+  },
+  {
+   "uid": "outfunnel-lezione-20::KA-04",
+   "run": "outfunnel-lezione-20",
+   "tipo": "",
+   "testo": "Nota di onestà metodologica: questo funnel NON è obbligatorio, elementi come le email di transizione sono opzionali e possono essere rimossi per semplificare; con un funnel così complesso servono KPI per individuare rapidamente i colli di bottiglia (collegamento esplicito a Lezione 13/14)."
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-01",
+   "run": "eze4oqwb6aw",
+   "tipo": "Formato / Reel identitario - struttura anaforica",
+   "testo": "Reel di personal branding costruito su una struttura anaforica ripetuta ('Sono un copywriter, e' ovvio che...') applicata a 5 vignette diverse, girate in luoghi/momenti reali differenti - montaggio di micro-scene con la stessa cornice verbale."
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-02",
+   "run": "eze4oqwb6aw",
+   "tipo": "Copy / Mix credenziali professionali autentiche",
+   "testo": "Lista di comportamenti professionali concreti (sales page preferita, lettura quotidiana, analisi eventi Apple, analisi copy incontrati per caso) presentati come naturali conseguenze dell'identita' dichiarata, ognuno mostrato fisicamente (show don't tell) invece di solo narrato."
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-03",
+   "run": "eze4oqwb6aw",
+   "tipo": "Copy / Punchline auto-ironica",
+   "testo": "Chiusura anticlimatica: 'sono in chiamata col cliente perche' devo chiuderlo - sono 500 euro comunque' - rompe il pattern impressionante con un dettaglio modesto, tecnica di umanizzazione/bilanciamento credibilita-simpatia."
+  },
+  {
+   "uid": "6ITBjfPQg3I::KA-01",
+   "run": "6ITBjfPQg3I",
+   "tipo": "Formato / Meme Poi: payoff differito",
+   "testo": "Micro-reel formato meme 'Poi:' che collega un'azione passata minore ('a 16 anni ti sei messo a scrivere PDF') a un risultato presente di valore ('fai 1000 euro in una call') - struttura causale compressa in una frase, quasi senza voce."
+  },
+  {
+   "uid": "6ITBjfPQg3I::KA-02",
+   "run": "6ITBjfPQg3I",
+   "tipo": "Copy / Credibilita per accumulo tempo investito",
+   "testo": "La competenza attuale e' posizionata come conseguenza legittimata da un investimento di tempo iniziato in giovane eta' - prova di credibilita' basata sulla durata del percorso, distinta da prova sociale numerica o case study."
+  }
+ ]
+}

@@ -1,0 +1,2034 @@
+{
+ "slug": "arma-outfunnel-vsl",
+ "strumento": "faster-whisper medium, CPU int8, in locale (HF_HUB_OFFLINE=1)",
+ "lingua": "it",
+ "lingua_probabilita": 1,
+ "durata_video_s": 99.14,
+ "segmenti": [
+  {
+   "i": 0,
+   "inizio": 0.0,
+   "fine": 3.9,
+   "durata": 3.9,
+   "testo": "Ah, dannazione, l'ho fatto, un intero corso su come fare funnel.",
+   "parole": [
+    {
+     "p": "Ah,",
+     "inizio": 0.0,
+     "fine": 0.4
+    },
+    {
+     "p": "dannazione,",
+     "inizio": 0.42,
+     "fine": 0.88
+    },
+    {
+     "p": "l",
+     "inizio": 0.9,
+     "fine": 1.0
+    },
+    {
+     "p": "'ho",
+     "inizio": 1.0,
+     "fine": 1.12
+    },
+    {
+     "p": "fatto,",
+     "inizio": 1.12,
+     "fine": 1.34
+    },
+    {
+     "p": "un",
+     "inizio": 1.38,
+     "fine": 1.62
+    },
+    {
+     "p": "intero",
+     "inizio": 1.62,
+     "fine": 2.14
+    },
+    {
+     "p": "corso",
+     "inizio": 2.14,
+     "fine": 2.82
+    },
+    {
+     "p": "su",
+     "inizio": 2.82,
+     "fine": 2.96
+    },
+    {
+     "p": "come",
+     "inizio": 2.96,
+     "fine": 3.16
+    },
+    {
+     "p": "fare",
+     "inizio": 3.16,
+     "fine": 3.4
+    },
+    {
+     "p": "funnel.",
+     "inizio": 3.4,
+     "fine": 3.9
+    }
+   ],
+   "loudness_M_media": -19.6
+  },
+  {
+   "i": 1,
+   "inizio": 4.18,
+   "fine": 6.84,
+   "durata": 2.66,
+   "testo": "Tenzione amico mio, non sto parlando di quelle cose che sai già.",
+   "parole": [
+    {
+     "p": "Tenzione",
+     "inizio": 4.18,
+     "fine": 4.42
+    },
+    {
+     "p": "amico",
+     "inizio": 4.42,
+     "fine": 4.76
+    },
+    {
+     "p": "mio,",
+     "inizio": 4.76,
+     "fine": 4.9
+    },
+    {
+     "p": "non",
+     "inizio": 4.94,
+     "fine": 5.08
+    },
+    {
+     "p": "sto",
+     "inizio": 5.08,
+     "fine": 5.22
+    },
+    {
+     "p": "parlando",
+     "inizio": 5.22,
+     "fine": 5.58
+    },
+    {
+     "p": "di",
+     "inizio": 5.58,
+     "fine": 5.78
+    },
+    {
+     "p": "quelle",
+     "inizio": 5.78,
+     "fine": 5.96
+    },
+    {
+     "p": "cose",
+     "inizio": 5.96,
+     "fine": 6.18
+    },
+    {
+     "p": "che",
+     "inizio": 6.18,
+     "fine": 6.42
+    },
+    {
+     "p": "sai",
+     "inizio": 6.42,
+     "fine": 6.64
+    },
+    {
+     "p": "già.",
+     "inizio": 6.64,
+     "fine": 6.84
+    }
+   ],
+   "loudness_M_media": -17.9
+  },
+  {
+   "i": 2,
+   "inizio": 6.88,
+   "fine": 9.62,
+   "durata": 2.74,
+   "testo": "Ti ho fatto un corso su quello che tu stai cercando.",
+   "parole": [
+    {
+     "p": "Ti",
+     "inizio": 6.88,
+     "fine": 6.98
+    },
+    {
+     "p": "ho",
+     "inizio": 6.98,
+     "fine": 7.04
+    },
+    {
+     "p": "fatto",
+     "inizio": 7.04,
+     "fine": 7.3
+    },
+    {
+     "p": "un",
+     "inizio": 7.3,
+     "fine": 7.54
+    },
+    {
+     "p": "corso",
+     "inizio": 7.54,
+     "fine": 7.84
+    },
+    {
+     "p": "su",
+     "inizio": 7.84,
+     "fine": 8.06
+    },
+    {
+     "p": "quello",
+     "inizio": 8.06,
+     "fine": 8.24
+    },
+    {
+     "p": "che",
+     "inizio": 8.24,
+     "fine": 8.5
+    },
+    {
+     "p": "tu",
+     "inizio": 8.5,
+     "fine": 8.88
+    },
+    {
+     "p": "stai",
+     "inizio": 8.88,
+     "fine": 9.08
+    },
+    {
+     "p": "cercando.",
+     "inizio": 9.08,
+     "fine": 9.62
+    }
+   ],
+   "loudness_M_media": -19.6
+  },
+  {
+   "i": 3,
+   "inizio": 9.82,
+   "fine": 11.84,
+   "durata": 2.02,
+   "testo": "Andrei, ma tu come fai a sapere cosa io sto cercando?",
+   "parole": [
+    {
+     "p": "Andrei,",
+     "inizio": 9.82,
+     "fine": 9.92
+    },
+    {
+     "p": "ma",
+     "inizio": 10.0,
+     "fine": 10.04
+    },
+    {
+     "p": "tu",
+     "inizio": 10.04,
+     "fine": 10.14
+    },
+    {
+     "p": "come",
+     "inizio": 10.14,
+     "fine": 10.36
+    },
+    {
+     "p": "fai",
+     "inizio": 10.36,
+     "fine": 10.5
+    },
+    {
+     "p": "a",
+     "inizio": 10.5,
+     "fine": 10.54
+    },
+    {
+     "p": "sapere",
+     "inizio": 10.54,
+     "fine": 10.88
+    },
+    {
+     "p": "cosa",
+     "inizio": 10.88,
+     "fine": 11.1
+    },
+    {
+     "p": "io",
+     "inizio": 11.1,
+     "fine": 11.28
+    },
+    {
+     "p": "sto",
+     "inizio": 11.28,
+     "fine": 11.42
+    },
+    {
+     "p": "cercando?",
+     "inizio": 11.42,
+     "fine": 11.84
+    }
+   ],
+   "loudness_M_media": -21.7
+  },
+  {
+   "i": 4,
+   "inizio": 11.92,
+   "fine": 13.58,
+   "durata": 1.66,
+   "testo": "Perché io sono te.",
+   "parole": [
+    {
+     "p": "Perché",
+     "inizio": 11.92,
+     "fine": 12.24
+    },
+    {
+     "p": "io",
+     "inizio": 12.24,
+     "fine": 12.8
+    },
+    {
+     "p": "sono",
+     "inizio": 12.8,
+     "fine": 13.2
+    },
+    {
+     "p": "te.",
+     "inizio": 13.2,
+     "fine": 13.58
+    }
+   ],
+   "loudness_M_media": -14.5
+  },
+  {
+   "i": 5,
+   "inizio": 13.68,
+   "fine": 17.48,
+   "durata": 3.8,
+   "testo": "Quando ti formi come marketer è sempre lo stesso discorso.",
+   "parole": [
+    {
+     "p": "Quando",
+     "inizio": 13.68,
+     "fine": 13.94
+    },
+    {
+     "p": "ti",
+     "inizio": 13.94,
+     "fine": 14.16
+    },
+    {
+     "p": "formi",
+     "inizio": 14.16,
+     "fine": 14.48
+    },
+    {
+     "p": "come",
+     "inizio": 14.48,
+     "fine": 14.68
+    },
+    {
+     "p": "marketer",
+     "inizio": 14.68,
+     "fine": 15.24
+    },
+    {
+     "p": "è",
+     "inizio": 15.24,
+     "fine": 15.52
+    },
+    {
+     "p": "sempre",
+     "inizio": 15.52,
+     "fine": 15.98
+    },
+    {
+     "p": "lo",
+     "inizio": 15.98,
+     "fine": 16.32
+    },
+    {
+     "p": "stesso",
+     "inizio": 16.32,
+     "fine": 16.74
+    },
+    {
+     "p": "discorso.",
+     "inizio": 16.74,
+     "fine": 17.48
+    }
+   ],
+   "loudness_M_media": -16.1
+  },
+  {
+   "i": 6,
+   "inizio": 17.56,
+   "fine": 21.54,
+   "durata": 3.98,
+   "testo": "Inizi studiando le basi, guardando corsi, leggendo una montagna di libri",
+   "parole": [
+    {
+     "p": "Inizi",
+     "inizio": 17.56,
+     "fine": 17.84
+    },
+    {
+     "p": "studiando",
+     "inizio": 17.84,
+     "fine": 18.26
+    },
+    {
+     "p": "le",
+     "inizio": 18.26,
+     "fine": 18.46
+    },
+    {
+     "p": "basi,",
+     "inizio": 18.46,
+     "fine": 18.74
+    },
+    {
+     "p": "guardando",
+     "inizio": 18.92,
+     "fine": 19.24
+    },
+    {
+     "p": "corsi,",
+     "inizio": 19.24,
+     "fine": 19.58
+    },
+    {
+     "p": "leggendo",
+     "inizio": 19.68,
+     "fine": 20.04
+    },
+    {
+     "p": "una",
+     "inizio": 20.04,
+     "fine": 20.24
+    },
+    {
+     "p": "montagna",
+     "inizio": 20.24,
+     "fine": 20.92
+    },
+    {
+     "p": "di",
+     "inizio": 20.92,
+     "fine": 21.34
+    },
+    {
+     "p": "libri",
+     "inizio": 21.34,
+     "fine": 21.54
+    }
+   ],
+   "loudness_M_media": -15.4
+  },
+  {
+   "i": 7,
+   "inizio": 21.54,
+   "fine": 23.06,
+   "durata": 1.52,
+   "testo": "e quelle basi le stabilisci.",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 21.54,
+     "fine": 21.76
+    },
+    {
+     "p": "quelle",
+     "inizio": 21.76,
+     "fine": 21.96
+    },
+    {
+     "p": "basi",
+     "inizio": 21.96,
+     "fine": 22.26
+    },
+    {
+     "p": "le",
+     "inizio": 22.26,
+     "fine": 22.5
+    },
+    {
+     "p": "stabilisci.",
+     "inizio": 22.5,
+     "fine": 23.06
+    }
+   ],
+   "loudness_M_media": -15.5
+  },
+  {
+   "i": 8,
+   "inizio": 23.12,
+   "fine": 26.52,
+   "durata": 3.4,
+   "testo": "Ma poi quando vuoi andare oltre, dove cavolo cosa fai?",
+   "parole": [
+    {
+     "p": "Ma",
+     "inizio": 23.12,
+     "fine": 23.22
+    },
+    {
+     "p": "poi",
+     "inizio": 23.22,
+     "fine": 23.36
+    },
+    {
+     "p": "quando",
+     "inizio": 23.36,
+     "fine": 23.56
+    },
+    {
+     "p": "vuoi",
+     "inizio": 23.56,
+     "fine": 23.7
+    },
+    {
+     "p": "andare",
+     "inizio": 23.7,
+     "fine": 23.96
+    },
+    {
+     "p": "oltre,",
+     "inizio": 23.96,
+     "fine": 24.74
+    },
+    {
+     "p": "dove",
+     "inizio": 25.0,
+     "fine": 25.04
+    },
+    {
+     "p": "cavolo",
+     "inizio": 25.04,
+     "fine": 26.1
+    },
+    {
+     "p": "cosa",
+     "inizio": 26.1,
+     "fine": 26.4
+    },
+    {
+     "p": "fai?",
+     "inizio": 26.4,
+     "fine": 26.52
+    }
+   ],
+   "loudness_M_media": -18.5
+  },
+  {
+   "i": 9,
+   "inizio": 26.58,
+   "fine": 28.38,
+   "durata": 1.8,
+   "testo": "La verità è che non ci sono corsi avanzati,",
+   "parole": [
+    {
+     "p": "La",
+     "inizio": 26.58,
+     "fine": 26.66
+    },
+    {
+     "p": "verità",
+     "inizio": 26.66,
+     "fine": 26.92
+    },
+    {
+     "p": "è",
+     "inizio": 26.92,
+     "fine": 26.98
+    },
+    {
+     "p": "che",
+     "inizio": 26.98,
+     "fine": 27.08
+    },
+    {
+     "p": "non",
+     "inizio": 27.08,
+     "fine": 27.2
+    },
+    {
+     "p": "ci",
+     "inizio": 27.2,
+     "fine": 27.36
+    },
+    {
+     "p": "sono",
+     "inizio": 27.36,
+     "fine": 27.52
+    },
+    {
+     "p": "corsi",
+     "inizio": 27.52,
+     "fine": 27.82
+    },
+    {
+     "p": "avanzati,",
+     "inizio": 27.82,
+     "fine": 28.38
+    }
+   ],
+   "loudness_M_media": -16.7
+  },
+  {
+   "i": 10,
+   "inizio": 28.38,
+   "fine": 30.68,
+   "durata": 2.3,
+   "testo": "Ci sono sempre le basi, cosa sono le ads,",
+   "parole": [
+    {
+     "p": "Ci",
+     "inizio": 28.38,
+     "fine": 28.54
+    },
+    {
+     "p": "sono",
+     "inizio": 28.54,
+     "fine": 28.82
+    },
+    {
+     "p": "sempre",
+     "inizio": 28.82,
+     "fine": 29.2
+    },
+    {
+     "p": "le",
+     "inizio": 29.2,
+     "fine": 29.4
+    },
+    {
+     "p": "basi,",
+     "inizio": 29.4,
+     "fine": 29.58
+    },
+    {
+     "p": "cosa",
+     "inizio": 29.6,
+     "fine": 29.86
+    },
+    {
+     "p": "sono",
+     "inizio": 29.86,
+     "fine": 30.02
+    },
+    {
+     "p": "le",
+     "inizio": 30.02,
+     "fine": 30.22
+    },
+    {
+     "p": "ads,",
+     "inizio": 30.22,
+     "fine": 30.68
+    }
+   ],
+   "loudness_M_media": -18.1
+  },
+  {
+   "i": 11,
+   "inizio": 31.1,
+   "fine": 33.2,
+   "durata": 2.1,
+   "testo": "cosa sono le e-mail di marketing, cosa sono.",
+   "parole": [
+    {
+     "p": "cosa",
+     "inizio": 31.1,
+     "fine": 31.16
+    },
+    {
+     "p": "sono",
+     "inizio": 31.16,
+     "fine": 31.38
+    },
+    {
+     "p": "le",
+     "inizio": 31.38,
+     "fine": 31.56
+    },
+    {
+     "p": "e",
+     "inizio": 31.56,
+     "fine": 31.64
+    },
+    {
+     "p": "-mail",
+     "inizio": 31.64,
+     "fine": 31.76
+    },
+    {
+     "p": "di",
+     "inizio": 31.76,
+     "fine": 31.98
+    },
+    {
+     "p": "marketing,",
+     "inizio": 31.98,
+     "fine": 32.54
+    },
+    {
+     "p": "cosa",
+     "inizio": 32.76,
+     "fine": 32.9
+    },
+    {
+     "p": "sono.",
+     "inizio": 32.9,
+     "fine": 33.2
+    }
+   ],
+   "loudness_M_media": -21.7
+  },
+  {
+   "i": 12,
+   "inizio": 33.3,
+   "fine": 34.6,
+   "durata": 1.3,
+   "testo": "Queste cose non ti servono più.",
+   "parole": [
+    {
+     "p": "Queste",
+     "inizio": 33.3,
+     "fine": 33.46
+    },
+    {
+     "p": "cose",
+     "inizio": 33.46,
+     "fine": 33.64
+    },
+    {
+     "p": "non",
+     "inizio": 33.64,
+     "fine": 33.8
+    },
+    {
+     "p": "ti",
+     "inizio": 33.8,
+     "fine": 34.0
+    },
+    {
+     "p": "servono",
+     "inizio": 34.0,
+     "fine": 34.38
+    },
+    {
+     "p": "più.",
+     "inizio": 34.38,
+     "fine": 34.6
+    }
+   ],
+   "loudness_M_media": -20.7
+  },
+  {
+   "i": 13,
+   "inizio": 34.74,
+   "fine": 37.48,
+   "durata": 2.74,
+   "testo": "Dove vai quando vuoi fare il prossimo step.",
+   "parole": [
+    {
+     "p": "Dove",
+     "inizio": 34.74,
+     "fine": 35.16
+    },
+    {
+     "p": "vai",
+     "inizio": 35.16,
+     "fine": 35.46
+    },
+    {
+     "p": "quando",
+     "inizio": 35.46,
+     "fine": 35.8
+    },
+    {
+     "p": "vuoi",
+     "inizio": 35.8,
+     "fine": 36.2
+    },
+    {
+     "p": "fare",
+     "inizio": 36.2,
+     "fine": 36.6
+    },
+    {
+     "p": "il",
+     "inizio": 36.6,
+     "fine": 36.88
+    },
+    {
+     "p": "prossimo",
+     "inizio": 36.88,
+     "fine": 37.44
+    },
+    {
+     "p": "step.",
+     "inizio": 37.44,
+     "fine": 37.48
+    }
+   ],
+   "loudness_M_media": -21.2
+  },
+  {
+   "i": 14,
+   "inizio": 37.54,
+   "fine": 41.56,
+   "durata": 4.02,
+   "testo": "Con la linea di prodotti Outline, di cui Outfunnel fa parte,",
+   "parole": [
+    {
+     "p": "Con",
+     "inizio": 37.54,
+     "fine": 37.76
+    },
+    {
+     "p": "la",
+     "inizio": 37.76,
+     "fine": 37.96
+    },
+    {
+     "p": "linea",
+     "inizio": 37.96,
+     "fine": 38.18
+    },
+    {
+     "p": "di",
+     "inizio": 38.18,
+     "fine": 38.42
+    },
+    {
+     "p": "prodotti",
+     "inizio": 38.42,
+     "fine": 39.02
+    },
+    {
+     "p": "Outline,",
+     "inizio": 39.02,
+     "fine": 39.86
+    },
+    {
+     "p": "di",
+     "inizio": 40.1,
+     "fine": 40.18
+    },
+    {
+     "p": "cui",
+     "inizio": 40.18,
+     "fine": 40.3
+    },
+    {
+     "p": "Outfunnel",
+     "inizio": 40.3,
+     "fine": 40.92
+    },
+    {
+     "p": "fa",
+     "inizio": 40.92,
+     "fine": 41.1
+    },
+    {
+     "p": "parte,",
+     "inizio": 41.1,
+     "fine": 41.56
+    }
+   ],
+   "loudness_M_media": -16.3
+  },
+  {
+   "i": 15,
+   "inizio": 41.8,
+   "fine": 43.12,
+   "durata": 1.32,
+   "testo": "ho pensato proprio questo.",
+   "parole": [
+    {
+     "p": "ho",
+     "inizio": 41.8,
+     "fine": 41.94
+    },
+    {
+     "p": "pensato",
+     "inizio": 41.94,
+     "fine": 42.48
+    },
+    {
+     "p": "proprio",
+     "inizio": 42.48,
+     "fine": 42.8
+    },
+    {
+     "p": "questo.",
+     "inizio": 42.8,
+     "fine": 43.12
+    }
+   ],
+   "loudness_M_media": -22.5
+  },
+  {
+   "i": 16,
+   "inizio": 43.2,
+   "fine": 45.68,
+   "durata": 2.48,
+   "testo": "Di dare a marketer che sanno già le basi",
+   "parole": [
+    {
+     "p": "Di",
+     "inizio": 43.2,
+     "fine": 43.3
+    },
+    {
+     "p": "dare",
+     "inizio": 43.3,
+     "fine": 43.44
+    },
+    {
+     "p": "a",
+     "inizio": 43.44,
+     "fine": 43.66
+    },
+    {
+     "p": "marketer",
+     "inizio": 43.66,
+     "fine": 44.16
+    },
+    {
+     "p": "che",
+     "inizio": 44.16,
+     "fine": 44.4
+    },
+    {
+     "p": "sanno",
+     "inizio": 44.4,
+     "fine": 44.76
+    },
+    {
+     "p": "già",
+     "inizio": 44.76,
+     "fine": 45.04
+    },
+    {
+     "p": "le",
+     "inizio": 45.04,
+     "fine": 45.28
+    },
+    {
+     "p": "basi",
+     "inizio": 45.28,
+     "fine": 45.68
+    }
+   ],
+   "loudness_M_media": -19.9
+  },
+  {
+   "i": 17,
+   "inizio": 45.68,
+   "fine": 47.6,
+   "durata": 1.92,
+   "testo": "un modo per imparare le cose più avanzate.",
+   "parole": [
+    {
+     "p": "un",
+     "inizio": 45.68,
+     "fine": 45.96
+    },
+    {
+     "p": "modo",
+     "inizio": 45.96,
+     "fine": 46.18
+    },
+    {
+     "p": "per",
+     "inizio": 46.18,
+     "fine": 46.42
+    },
+    {
+     "p": "imparare",
+     "inizio": 46.42,
+     "fine": 46.78
+    },
+    {
+     "p": "le",
+     "inizio": 46.78,
+     "fine": 46.94
+    },
+    {
+     "p": "cose",
+     "inizio": 46.94,
+     "fine": 47.08
+    },
+    {
+     "p": "più",
+     "inizio": 47.08,
+     "fine": 47.32
+    },
+    {
+     "p": "avanzate.",
+     "inizio": 47.32,
+     "fine": 47.6
+    }
+   ],
+   "loudness_M_media": -21.6
+  },
+  {
+   "i": 18,
+   "inizio": 47.64,
+   "fine": 49.22,
+   "durata": 1.58,
+   "testo": "Questo, infatti, non è un corso per i principianti.",
+   "parole": [
+    {
+     "p": "Questo,",
+     "inizio": 47.64,
+     "fine": 47.86
+    },
+    {
+     "p": "infatti,",
+     "inizio": 47.86,
+     "fine": 48.04
+    },
+    {
+     "p": "non",
+     "inizio": 48.08,
+     "fine": 48.16
+    },
+    {
+     "p": "è",
+     "inizio": 48.16,
+     "fine": 48.24
+    },
+    {
+     "p": "un",
+     "inizio": 48.24,
+     "fine": 48.38
+    },
+    {
+     "p": "corso",
+     "inizio": 48.38,
+     "fine": 48.52
+    },
+    {
+     "p": "per",
+     "inizio": 48.52,
+     "fine": 48.7
+    },
+    {
+     "p": "i",
+     "inizio": 48.7,
+     "fine": 48.78
+    },
+    {
+     "p": "principianti.",
+     "inizio": 48.78,
+     "fine": 49.22
+    }
+   ],
+   "loudness_M_media": -21.3
+  },
+  {
+   "i": 19,
+   "inizio": 49.26,
+   "fine": 51.42,
+   "durata": 2.16,
+   "testo": "Non è un percorso da fare se tu non sai niente sul marketing,",
+   "parole": [
+    {
+     "p": "Non",
+     "inizio": 49.26,
+     "fine": 49.36
+    },
+    {
+     "p": "è",
+     "inizio": 49.36,
+     "fine": 49.48
+    },
+    {
+     "p": "un",
+     "inizio": 49.48,
+     "fine": 49.66
+    },
+    {
+     "p": "percorso",
+     "inizio": 49.66,
+     "fine": 49.96
+    },
+    {
+     "p": "da",
+     "inizio": 49.96,
+     "fine": 50.14
+    },
+    {
+     "p": "fare",
+     "inizio": 50.14,
+     "fine": 50.26
+    },
+    {
+     "p": "se",
+     "inizio": 50.26,
+     "fine": 50.38
+    },
+    {
+     "p": "tu",
+     "inizio": 50.38,
+     "fine": 50.5
+    },
+    {
+     "p": "non",
+     "inizio": 50.5,
+     "fine": 50.64
+    },
+    {
+     "p": "sai",
+     "inizio": 50.64,
+     "fine": 50.74
+    },
+    {
+     "p": "niente",
+     "inizio": 50.74,
+     "fine": 50.9
+    },
+    {
+     "p": "sul",
+     "inizio": 50.9,
+     "fine": 51.04
+    },
+    {
+     "p": "marketing,",
+     "inizio": 51.04,
+     "fine": 51.42
+    }
+   ],
+   "loudness_M_media": -22.7
+  },
+  {
+   "i": 20,
+   "inizio": 51.54,
+   "fine": 52.2,
+   "durata": 0.66,
+   "testo": "perché non capirai niente.",
+   "parole": [
+    {
+     "p": "perché",
+     "inizio": 51.54,
+     "fine": 51.64
+    },
+    {
+     "p": "non",
+     "inizio": 51.64,
+     "fine": 51.78
+    },
+    {
+     "p": "capirai",
+     "inizio": 51.78,
+     "fine": 52.06
+    },
+    {
+     "p": "niente.",
+     "inizio": 52.06,
+     "fine": 52.2
+    }
+   ],
+   "loudness_M_media": -25.6
+  },
+  {
+   "i": 21,
+   "inizio": 52.2,
+   "fine": 54.68,
+   "durata": 2.48,
+   "testo": "È un percorso per coloro che sanno già le basi",
+   "parole": [
+    {
+     "p": "È",
+     "inizio": 52.2,
+     "fine": 52.34
+    },
+    {
+     "p": "un",
+     "inizio": 52.34,
+     "fine": 52.56
+    },
+    {
+     "p": "percorso",
+     "inizio": 52.56,
+     "fine": 53.0
+    },
+    {
+     "p": "per",
+     "inizio": 53.0,
+     "fine": 53.22
+    },
+    {
+     "p": "coloro",
+     "inizio": 53.22,
+     "fine": 53.44
+    },
+    {
+     "p": "che",
+     "inizio": 53.44,
+     "fine": 53.7
+    },
+    {
+     "p": "sanno",
+     "inizio": 53.7,
+     "fine": 54.0
+    },
+    {
+     "p": "già",
+     "inizio": 54.0,
+     "fine": 54.2
+    },
+    {
+     "p": "le",
+     "inizio": 54.2,
+     "fine": 54.4
+    },
+    {
+     "p": "basi",
+     "inizio": 54.4,
+     "fine": 54.68
+    }
+   ],
+   "loudness_M_media": -18.2
+  },
+  {
+   "i": 22,
+   "inizio": 54.68,
+   "fine": 58.26,
+   "durata": 3.58,
+   "testo": "e vogliono capire che cosa rende un funnel strategico",
+   "parole": [
+    {
+     "p": "e",
+     "inizio": 54.68,
+     "fine": 54.8
+    },
+    {
+     "p": "vogliono",
+     "inizio": 54.8,
+     "fine": 55.04
+    },
+    {
+     "p": "capire",
+     "inizio": 55.04,
+     "fine": 55.5
+    },
+    {
+     "p": "che",
+     "inizio": 55.5,
+     "fine": 55.8
+    },
+    {
+     "p": "cosa",
+     "inizio": 55.8,
+     "fine": 56.26
+    },
+    {
+     "p": "rende",
+     "inizio": 56.26,
+     "fine": 56.66
+    },
+    {
+     "p": "un",
+     "inizio": 56.66,
+     "fine": 56.98
+    },
+    {
+     "p": "funnel",
+     "inizio": 56.98,
+     "fine": 57.42
+    },
+    {
+     "p": "strategico",
+     "inizio": 57.42,
+     "fine": 58.26
+    }
+   ],
+   "loudness_M_media": -19.6
+  },
+  {
+   "i": 23,
+   "inizio": 58.26,
+   "fine": 61.88,
+   "durata": 3.62,
+   "testo": "veramente veramente funzionando il motivo per cui tante aziende mi assumono",
+   "parole": [
+    {
+     "p": "veramente",
+     "inizio": 58.26,
+     "fine": 58.82
+    },
+    {
+     "p": "veramente",
+     "inizio": 58.82,
+     "fine": 59.46
+    },
+    {
+     "p": "funzionando",
+     "inizio": 59.46,
+     "fine": 59.98
+    },
+    {
+     "p": "il",
+     "inizio": 59.98,
+     "fine": 60.18
+    },
+    {
+     "p": "motivo",
+     "inizio": 60.18,
+     "fine": 60.4
+    },
+    {
+     "p": "per",
+     "inizio": 60.4,
+     "fine": 60.6
+    },
+    {
+     "p": "cui",
+     "inizio": 60.6,
+     "fine": 60.68
+    },
+    {
+     "p": "tante",
+     "inizio": 60.68,
+     "fine": 60.96
+    },
+    {
+     "p": "aziende",
+     "inizio": 60.96,
+     "fine": 61.24
+    },
+    {
+     "p": "mi",
+     "inizio": 61.24,
+     "fine": 61.48
+    },
+    {
+     "p": "assumono",
+     "inizio": 61.48,
+     "fine": 61.88
+    }
+   ],
+   "loudness_M_media": -20.2
+  },
+  {
+   "i": 24,
+   "inizio": 61.88,
+   "fine": 65.82,
+   "durata": 3.94,
+   "testo": "oggi stesso abbiamo chiuso un ad l'altro ieri abbiamo chiuso un altro progetto con dei video",
+   "parole": [
+    {
+     "p": "oggi",
+     "inizio": 61.88,
+     "fine": 62.22
+    },
+    {
+     "p": "stesso",
+     "inizio": 62.22,
+     "fine": 62.54
+    },
+    {
+     "p": "abbiamo",
+     "inizio": 62.54,
+     "fine": 62.74
+    },
+    {
+     "p": "chiuso",
+     "inizio": 62.74,
+     "fine": 63.08
+    },
+    {
+     "p": "un",
+     "inizio": 63.08,
+     "fine": 63.22
+    },
+    {
+     "p": "ad",
+     "inizio": 63.22,
+     "fine": 63.44
+    },
+    {
+     "p": "l",
+     "inizio": 63.44,
+     "fine": 63.7
+    },
+    {
+     "p": "'altro",
+     "inizio": 63.7,
+     "fine": 63.88
+    },
+    {
+     "p": "ieri",
+     "inizio": 63.88,
+     "fine": 64.1
+    },
+    {
+     "p": "abbiamo",
+     "inizio": 64.1,
+     "fine": 64.3
+    },
+    {
+     "p": "chiuso",
+     "inizio": 64.3,
+     "fine": 64.56
+    },
+    {
+     "p": "un",
+     "inizio": 64.56,
+     "fine": 64.66
+    },
+    {
+     "p": "altro",
+     "inizio": 64.66,
+     "fine": 64.86
+    },
+    {
+     "p": "progetto",
+     "inizio": 64.86,
+     "fine": 65.16
+    },
+    {
+     "p": "con",
+     "inizio": 65.16,
+     "fine": 65.36
+    },
+    {
+     "p": "dei",
+     "inizio": 65.36,
+     "fine": 65.54
+    },
+    {
+     "p": "video",
+     "inizio": 65.54,
+     "fine": 65.82
+    }
+   ],
+   "loudness_M_media": -21.0
+  },
+  {
+   "i": 25,
+   "inizio": 65.82,
+   "fine": 70.82,
+   "durata": 5.0,
+   "testo": "il motivo per cui mi assumono è perché io ho strategia o quel fattore x",
+   "parole": [
+    {
+     "p": "il",
+     "inizio": 65.82,
+     "fine": 66.02
+    },
+    {
+     "p": "motivo",
+     "inizio": 66.02,
+     "fine": 66.22
+    },
+    {
+     "p": "per",
+     "inizio": 66.22,
+     "fine": 66.42
+    },
+    {
+     "p": "cui",
+     "inizio": 66.42,
+     "fine": 66.48
+    },
+    {
+     "p": "mi",
+     "inizio": 66.48,
+     "fine": 66.66
+    },
+    {
+     "p": "assumono",
+     "inizio": 66.66,
+     "fine": 67.08
+    },
+    {
+     "p": "è",
+     "inizio": 67.08,
+     "fine": 67.36
+    },
+    {
+     "p": "perché",
+     "inizio": 67.36,
+     "fine": 67.86
+    },
+    {
+     "p": "io",
+     "inizio": 67.86,
+     "fine": 68.26
+    },
+    {
+     "p": "ho",
+     "inizio": 68.26,
+     "fine": 68.66
+    },
+    {
+     "p": "strategia",
+     "inizio": 68.66,
+     "fine": 69.22
+    },
+    {
+     "p": "o",
+     "inizio": 69.22,
+     "fine": 69.64
+    },
+    {
+     "p": "quel",
+     "inizio": 69.64,
+     "fine": 69.8
+    },
+    {
+     "p": "fattore",
+     "inizio": 69.8,
+     "fine": 70.32
+    },
+    {
+     "p": "x",
+     "inizio": 70.32,
+     "fine": 70.82
+    }
+   ],
+   "loudness_M_media": -17.6
+  },
+  {
+   "i": 26,
+   "inizio": 70.82,
+   "fine": 75.1,
+   "durata": 4.28,
+   "testo": "quell'effetto wow nei contenuti che creo che ti fa pensare come cazzo è",
+   "parole": [
+    {
+     "p": "quell",
+     "inizio": 70.82,
+     "fine": 71.26
+    },
+    {
+     "p": "'effetto",
+     "inizio": 71.26,
+     "fine": 71.7
+    },
+    {
+     "p": "wow",
+     "inizio": 71.7,
+     "fine": 72.14
+    },
+    {
+     "p": "nei",
+     "inizio": 72.14,
+     "fine": 72.34
+    },
+    {
+     "p": "contenuti",
+     "inizio": 72.34,
+     "fine": 72.84
+    },
+    {
+     "p": "che",
+     "inizio": 72.84,
+     "fine": 73.1
+    },
+    {
+     "p": "creo",
+     "inizio": 73.1,
+     "fine": 73.4
+    },
+    {
+     "p": "che",
+     "inizio": 73.4,
+     "fine": 73.64
+    },
+    {
+     "p": "ti",
+     "inizio": 73.64,
+     "fine": 73.76
+    },
+    {
+     "p": "fa",
+     "inizio": 73.76,
+     "fine": 73.88
+    },
+    {
+     "p": "pensare",
+     "inizio": 73.88,
+     "fine": 74.42
+    },
+    {
+     "p": "come",
+     "inizio": 74.42,
+     "fine": 74.64
+    },
+    {
+     "p": "cazzo",
+     "inizio": 74.64,
+     "fine": 75.04
+    },
+    {
+     "p": "è",
+     "inizio": 75.04,
+     "fine": 75.1
+    }
+   ],
+   "loudness_M_media": -22.5
+  },
+  {
+   "i": 27,
+   "inizio": 75.1,
+   "fine": 78.8,
+   "durata": 3.7,
+   "testo": "venuto in mente no è geniale questo è il tipo di contenuto che vende ma se",
+   "parole": [
+    {
+     "p": "venuto",
+     "inizio": 75.1,
+     "fine": 75.38
+    },
+    {
+     "p": "in",
+     "inizio": 75.38,
+     "fine": 75.64
+    },
+    {
+     "p": "mente",
+     "inizio": 75.64,
+     "fine": 75.84
+    },
+    {
+     "p": "no",
+     "inizio": 75.84,
+     "fine": 76.06
+    },
+    {
+     "p": "è",
+     "inizio": 76.06,
+     "fine": 76.22
+    },
+    {
+     "p": "geniale",
+     "inizio": 76.22,
+     "fine": 76.58
+    },
+    {
+     "p": "questo",
+     "inizio": 76.58,
+     "fine": 77.06
+    },
+    {
+     "p": "è",
+     "inizio": 77.06,
+     "fine": 77.26
+    },
+    {
+     "p": "il",
+     "inizio": 77.26,
+     "fine": 77.36
+    },
+    {
+     "p": "tipo",
+     "inizio": 77.36,
+     "fine": 77.5
+    },
+    {
+     "p": "di",
+     "inizio": 77.5,
+     "fine": 77.78
+    },
+    {
+     "p": "contenuto",
+     "inizio": 77.78,
+     "fine": 78.1
+    },
+    {
+     "p": "che",
+     "inizio": 78.1,
+     "fine": 78.3
+    },
+    {
+     "p": "vende",
+     "inizio": 78.3,
+     "fine": 78.52
+    },
+    {
+     "p": "ma",
+     "inizio": 78.52,
+     "fine": 78.64
+    },
+    {
+     "p": "se",
+     "inizio": 78.64,
+     "fine": 78.8
+    }
+   ],
+   "loudness_M_media": -22.2
+  },
+  {
+   "i": 28,
+   "inizio": 78.8,
+   "fine": 83.64,
+   "durata": 4.84,
+   "testo": "tu fai ad sales page non venderai mai quindi se tu vuoi capire i segreti",
+   "parole": [
+    {
+     "p": "tu",
+     "inizio": 78.8,
+     "fine": 79.0
+    },
+    {
+     "p": "fai",
+     "inizio": 79.0,
+     "fine": 79.32
+    },
+    {
+     "p": "ad",
+     "inizio": 79.32,
+     "fine": 79.88
+    },
+    {
+     "p": "sales",
+     "inizio": 79.88,
+     "fine": 80.38
+    },
+    {
+     "p": "page",
+     "inizio": 80.38,
+     "fine": 80.84
+    },
+    {
+     "p": "non",
+     "inizio": 80.84,
+     "fine": 81.14
+    },
+    {
+     "p": "venderai",
+     "inizio": 81.14,
+     "fine": 81.6
+    },
+    {
+     "p": "mai",
+     "inizio": 81.6,
+     "fine": 81.82
+    },
+    {
+     "p": "quindi",
+     "inizio": 81.82,
+     "fine": 82.18
+    },
+    {
+     "p": "se",
+     "inizio": 82.18,
+     "fine": 82.46
+    },
+    {
+     "p": "tu",
+     "inizio": 82.46,
+     "fine": 82.64
+    },
+    {
+     "p": "vuoi",
+     "inizio": 82.64,
+     "fine": 82.76
+    },
+    {
+     "p": "capire",
+     "inizio": 82.76,
+     "fine": 83.12
+    },
+    {
+     "p": "i",
+     "inizio": 83.12,
+     "fine": 83.28
+    },
+    {
+     "p": "segreti",
+     "inizio": 83.28,
+     "fine": 83.64
+    }
+   ],
+   "loudness_M_media": -19.7
+  },
+  {
+   "i": 29,
+   "inizio": 83.64,
+   "fine": 91.22,
+   "durata": 7.58,
+   "testo": "Ciò che le agenzie di alto livello fanno nei funnel pensati, strategici e profittevoli che ci siano, questo è per te.",
+   "parole": [
+    {
+     "p": "Ciò",
+     "inizio": 83.64,
+     "fine": 84.02
+    },
+    {
+     "p": "che",
+     "inizio": 84.02,
+     "fine": 84.34
+    },
+    {
+     "p": "le",
+     "inizio": 84.34,
+     "fine": 84.52
+    },
+    {
+     "p": "agenzie",
+     "inizio": 84.52,
+     "fine": 85.18
+    },
+    {
+     "p": "di",
+     "inizio": 85.18,
+     "fine": 85.56
+    },
+    {
+     "p": "alto",
+     "inizio": 85.56,
+     "fine": 85.72
+    },
+    {
+     "p": "livello",
+     "inizio": 85.72,
+     "fine": 86.24
+    },
+    {
+     "p": "fanno",
+     "inizio": 86.24,
+     "fine": 86.84
+    },
+    {
+     "p": "nei",
+     "inizio": 86.84,
+     "fine": 87.14
+    },
+    {
+     "p": "funnel",
+     "inizio": 87.14,
+     "fine": 87.5
+    },
+    {
+     "p": "pensati,",
+     "inizio": 87.5,
+     "fine": 88.36
+    },
+    {
+     "p": "strategici",
+     "inizio": 88.46,
+     "fine": 89.18
+    },
+    {
+     "p": "e",
+     "inizio": 89.18,
+     "fine": 89.44
+    },
+    {
+     "p": "profittevoli",
+     "inizio": 89.44,
+     "fine": 89.98
+    },
+    {
+     "p": "che",
+     "inizio": 89.98,
+     "fine": 90.1
+    },
+    {
+     "p": "ci",
+     "inizio": 90.1,
+     "fine": 90.26
+    },
+    {
+     "p": "siano,",
+     "inizio": 90.26,
+     "fine": 90.58
+    },
+    {
+     "p": "questo",
+     "inizio": 90.66,
+     "fine": 90.82
+    },
+    {
+     "p": "è",
+     "inizio": 90.82,
+     "fine": 90.92
+    },
+    {
+     "p": "per",
+     "inizio": 90.92,
+     "fine": 91.16
+    },
+    {
+     "p": "te.",
+     "inizio": 91.16,
+     "fine": 91.22
+    }
+   ],
+   "loudness_M_media": -22.0
+  },
+  {
+   "i": 30,
+   "inizio": 91.34,
+   "fine": 95.26,
+   "durata": 3.92,
+   "testo": "Che tu sia un marketer, che tu sia un imprenditore, che tu sia un copyrighter, qualsiasi cosa tu sia.",
+   "parole": [
+    {
+     "p": "Che",
+     "inizio": 91.34,
+     "fine": 91.34
+    },
+    {
+     "p": "tu",
+     "inizio": 91.34,
+     "fine": 91.42
+    },
+    {
+     "p": "sia",
+     "inizio": 91.42,
+     "fine": 91.5
+    },
+    {
+     "p": "un",
+     "inizio": 91.5,
+     "fine": 91.7
+    },
+    {
+     "p": "marketer,",
+     "inizio": 91.7,
+     "fine": 92.1
+    },
+    {
+     "p": "che",
+     "inizio": 92.2,
+     "fine": 92.2
+    },
+    {
+     "p": "tu",
+     "inizio": 92.2,
+     "fine": 92.34
+    },
+    {
+     "p": "sia",
+     "inizio": 92.34,
+     "fine": 92.44
+    },
+    {
+     "p": "un",
+     "inizio": 92.44,
+     "fine": 92.62
+    },
+    {
+     "p": "imprenditore,",
+     "inizio": 92.62,
+     "fine": 93.26
+    },
+    {
+     "p": "che",
+     "inizio": 93.36,
+     "fine": 93.36
+    },
+    {
+     "p": "tu",
+     "inizio": 93.36,
+     "fine": 93.52
+    },
+    {
+     "p": "sia",
+     "inizio": 93.52,
+     "fine": 93.58
+    },
+    {
+     "p": "un",
+     "inizio": 93.58,
+     "fine": 93.68
+    },
+    {
+     "p": "copyrighter,",
+     "inizio": 93.68,
+     "fine": 94.28
+    },
+    {
+     "p": "qualsiasi",
+     "inizio": 94.5,
+     "fine": 94.72
+    },
+    {
+     "p": "cosa",
+     "inizio": 94.72,
+     "fine": 94.82
+    },
+    {
+     "p": "tu",
+     "inizio": 94.82,
+     "fine": 95.04
+    },
+    {
+     "p": "sia.",
+     "inizio": 95.04,
+     "fine": 95.26
+    }
+   ],
+   "loudness_M_media": -22.1
+  },
+  {
+   "i": 31,
+   "inizio": 95.38,
+   "fine": 98.96,
+   "durata": 3.58,
+   "testo": "Se vuoi capire i funnel, Outfunnel è per te.",
+   "parole": [
+    {
+     "p": "Se",
+     "inizio": 95.38,
+     "fine": 95.56
+    },
+    {
+     "p": "vuoi",
+     "inizio": 95.56,
+     "fine": 95.88
+    },
+    {
+     "p": "capire",
+     "inizio": 95.88,
+     "fine": 96.6
+    },
+    {
+     "p": "i",
+     "inizio": 96.6,
+     "fine": 96.84
+    },
+    {
+     "p": "funnel,",
+     "inizio": 96.84,
+     "fine": 97.46
+    },
+    {
+     "p": "Outfunnel",
+     "inizio": 97.58,
+     "fine": 98.24
+    },
+    {
+     "p": "è",
+     "inizio": 98.24,
+     "fine": 98.48
+    },
+    {
+     "p": "per",
+     "inizio": 98.48,
+     "fine": 98.7
+    },
+    {
+     "p": "te.",
+     "inizio": 98.7,
+     "fine": 98.96
+    }
+   ],
+   "loudness_M_media": -24.7
+  }
+ ]
+}

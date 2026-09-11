@@ -1,0 +1,34 @@
+{
+ "file": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\competitor\\Andrei Pascu\\vsl-study\\sorgenti\\claude-speedrun-hero\\video.mp4",
+ "peso_byte": 36176300,
+ "peso_MB": 34.5,
+ "contenitore": "mov,mp4,m4a,3gp,3g2,mj2",
+ "durata_s": 81.301,
+ "durata_hhmmss": "1:21.30",
+ "bitrate_totale_bps": 3559739,
+ "video": {
+  "codec": "h264",
+  "profilo": "High",
+  "pix_fmt": "yuv420p",
+  "larghezza": 1920,
+  "altezza": 1080,
+  "fps_dichiarato": "30/1",
+  "fps_reale": 30.0,
+  "frame_totali": 2439,
+  "frame_totali_metodo": "ffprobe stream=nb_frames",
+  "durata_s": 81.3,
+  "bitrate_bps": 3361425
+ },
+ "audio": {
+  "codec": "aac",
+  "profilo": "LC",
+  "sample_rate_hz": 48000,
+  "canali": 2,
+  "durata_s": 81.301,
+  "bitrate_bps": 189375,
+  "frame_audio": 3813
+ },
+ "comandi": [
+  "ffprobe -v error -show_format -show_streams -of json \"C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\competitor\\Andrei Pascu\\vsl-study\\sorgenti\\claude-speedrun-hero\\video.mp4\""
+ ]
+}
