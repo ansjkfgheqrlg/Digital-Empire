@@ -1,7 +1,7 @@
-# EMP-D9HD — V4 ESECUTIVO del Piano Impero Vivo: 3/20 documenti completi, si riprende dal 04
+# EMP-D9HD — V4 ESECUTIVO del Piano Impero Vivo: 7/20 documenti completi, si riprende dal 08
 
 - **Codice di ripresa:** `EMP-D9HD`
-- **Aperto:** 2026-09-11 (chat satura, checkpoint d'urgenza su ordine di Max)
+- **Aperto:** 2026-09-11 (chat satura, checkpoint d'urgenza su ordine di Max) · **Aggiornato:** 2026-09-11 sera (CP-20260911-H448: 7/20)
 - **Stato:** APERTO
 - **Chi riprende:** basta dire `EMP-D9HD` in una chat nuova dentro Digital Empire.
 - **Predecessore:** `EMP-MCC4` (il piano intero V1→V4; V3 chiusa il 10/09, CP-20260910-RYHK)
@@ -20,52 +20,38 @@ costruzione**. Il divieto costruttivo (EMP-MCC4 §1) è **ancora in vigore**: V4
 
 ## 2. DOVE SI RIPRENDE — SUBITO
 
-**Prossimo documento: `04-E0.9-ATTO-DI-VENDITA.md`.** Poi 05, 07, 08, 09…20 nell'ordine di
-`00-INDICE.md` §2. Lo scheletro a 7 sezioni di 04, 05, 07, 08 è **già su disco** (segnaposto
-`_(in scrittura)_`): si riempie sezione per sezione con Edit, non si ricrea. Per 09-20 lo
-scheletro va creato (`_ISTRUZIONI-SENTINELLA.md` §1 ha il template).
+**Prossimo documento: `08-E2-RINOMINA.md`** (scheletro su disco). Poi 09…20 nell'ordine di
+`00-INDICE.md` §2: per 09-20 lo scheletro va creato (`_ISTRUZIONI-SENTINELLA.md` §1 ha il template).
+Si riempie con il tool **Write** (heredoc bash con testo lungo fallisce), dopo aver rimisurato ogni
+numero sul disco. Checkpoint ogni 3-4 documenti.
 
-**Fatti già raccolti per il 04 (E0.9), da usare senza rimisurare:**
-- Il prezzo è **già sul disco**: `Crea siti/Siti CCM/checkout.config.json` → `prezzo_lancio_eur
-  67`, `prezzo_listino_eur 97`, `bump_eur 27`. È il default della decisione 8 (V3 §11).
-- `scadenza_lancio: 2026-07-31` è **passata**: E0a (2.3) la sposta con `checkout.py --scadenza`.
-- BACKLOG B-002/B-003 (righe 10-11): «NON si decide a mano: lo proporrà il team prezzi» — E0.9
-  lo scavalca con un **default reversibile** (forma di V2 §26), non con una decisione definitiva.
-- `29-ECOSISTEMA-LANCI/00-LEGGIMI.md:311`: «Il Manuale si vende o è un regalo?» — scadenza 7 gg
-  dal 05/09, default «vendita»: è la **stessa** decisione 8, non duplicarla.
-- `python scripts/tesoreria.py entrata --importo X --da <chi> --per corsi --stato incassato` è il
-  comando reale per la riga `tipo: vendita` (il campo è `--per`/`--stato`, non `tipo`: **R5 in
-  V3 §12 va letto come `--stato incassato --per corsi`**, correggere nel documento).
-- La scala prezzi di Pascu (98→434→999) è in `competitor/Andrei Pascu/ANDREI-PASCU-DOSSIER-COMPLETO.md`.
-- 23 video + 3 libri caricabili (`ultimo_metro.py`, 11/09 17:53: 31 fermi, 26 caricabili).
+**Fatti già raccolti per il 08 (E2), da usare senza rimisurare (11/09):**
+- V2 §21-E2 (riga 717) + V3 §9.2 B-1 (le 235 destinazioni si contano ORA) + V3 Appendice C
+  (+25-46 h misurate): 391 file toccati, 174 che cambiano fascia, `## Input / Output` → `## Output`.
+- Dipende da E1: dopo E1 il perimetro è 407 nomi (non 439). I 43 `LINK-FIXABLE` di doctor e gli
+  81 gruppi identici che toccano `company/` passano a E2/E5b (07-E1 §6).
+- `scripts/rinomina_io.py` e `scripts/conta_destinazioni.py` **non esistono**: sono specifiche.
+- `forge scan` misura per file (`empire/forge.py`, `_CORREDO` a 146-147); `--file` e `--json`
+  sono specifiche di 07-E1 2.3/2.7 — E2 le eredita, non le rispecifica.
 
 **Leggi in quest'ordine, a sezioni (mai V2 intero):**
-1. `V4-ESECUTIVO/00-INDICE.md` — leggi §1, ordine §2, **template §3** (le 7 sezioni obbligatorie).
-2. `V4-ESECUTIVO/_ISTRUZIONI-SENTINELLA.md` §4 — le regole di contenuto verificate a macchina.
-3. `V4-ESECUTIVO/01-E0a-MERCE.md`, `02-E0.5-AGGANCI.md`, `03-E0b-ROTAZIONE.md` — i tre modelli
-   già conformi: **stesso livello di dettaglio, stessa forma**.
-4. Per ogni scaglione, SOLO le sezioni di V2/V3 citate in `00-INDICE.md` §2 e nei prompt
-   originali (sono in questa chat, persi: si ricavano da V3 §10 + le sezioni V2 §21 omonime).
-
----
+1. `V4-ESECUTIVO/00-INDICE.md` §1-§3 · `_ISTRUZIONI-SENTINELLA.md` §4.
+2. I modelli: `01`, `04`, `05`, `07` — stesso livello di dettaglio, stessa forma (intestazione con
+   «il disco ha smentito il piano», §0 con «non dipende da Gael» se lo nomini, gate L9 copiabili).
+3. Per ogni scaglione, SOLO le sezioni V2 §21 omonime (`grep -n "^### \*\*E" V2-PIANO-AMPLIATO.md`)
+   e le correzioni V3 (`grep -n "E<n>" V3-PIANO-ASSESTATO.md`).
 
 ## 3. LO STATO DEL LAVORO
 
 | Documento | Stato |
 |---|---|
-| `00-INDICE.md` | ✅ (leggi, ordine, template, gate globali, lista via-alla-costruzione) |
-| `_ISTRUZIONI-SENTINELLA.md` | ✅ (contratto d'ingaggio, scheletro-prima-di-leggere) |
-| `01-E0a-MERCE.md` | ✅ conforme (scritto a mano) |
-| `02-E0.5-AGGANCI.md` | ✅ conforme (a mano) |
-| `03-E0b-ROTAZIONE.md` | ✅ salvo **1 tilde a riga 32** (`~`+numero, L10) — togliere |
-| `06-E0.7-HOOK.md` | ✅ conforme (unica sentinella riuscita, 43 KB) |
-| `04`, `05`, `07`, `08` | scheletri vuoti su disco |
+| `00-INDICE.md`, `_ISTRUZIONI-SENTINELLA.md`, `scripts/verifica_v4.py` | ✅ |
+| `01-E0a`, `02-E0.5`, `03-E0b`, `06-E0.7` | ✅ conformi (CP-TVMY) |
+| `04-E0.9`, `05-E0.6`, `07-E1` | ✅ conformi (CP-H448, a mano, 11/09 sera) |
+| `08-E2` | scheletro vuoto su disco ← **SI RIPRENDE DA QUI** |
 | `09`…`20` | non esistono |
-| `scripts/verifica_v4.py` | ✅ il gate: 7 sezioni, niente `~`, INV-GAEL, lunghezza minima |
 
-**Gate:** `python PIANO-MAESTRO/scripts/verifica_v4.py` → oggi 3/20 (+06 = 4/20 dopo il fix del tilde).
-
----
+**Gate:** `python PIANO-MAESTRO/scripts/verifica_v4.py` → **7/20** (11/09 sera).
 
 ## 4. TRE CORREZIONI FATTE AL PIANO MENTRE SI SCRIVEVA (il disco vince) — non riscoprirle
 

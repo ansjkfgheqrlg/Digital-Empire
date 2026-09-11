@@ -1,3 +1,11 @@
+## 🔄 2026-09-11 sera — V4 ESECUTIVO 7/20: 04-E0.9, 05-E0.6, 07-E1 scritti a mano — CP-20260911-H448
+
+**Ripresa `EMP-D9HD` (APERTA), prossimo `08-E2-RINOMINA.md`.** Tre documenti conformi in più, ogni
+numero rimisurato: il link al Manuale va solo sui 16 video Claude (i 7 VIDEO-PRONTI sono Legami
+d'Amore); `cp_id` è già nei 13 campi HC-v2; le coppie da fondere sono 32 non 36; `registry dupes`
+conta due volte lo stesso file; il «daemon di sync» è l'hook Stop → interruttore `.SYNC-SOSPESO`
+specificato in 07. **Il blocco ⚠️ COORDINAMENTO V4 sotto resta valido.** Divieto costruttivo in vigore.
+
 ## ⏸️ 2026-09-11 — EMP-V6DE IN PAUSA (si riprende in chat nuova) — CP-20260911-FHFZ
 
 **5 video con la copertina di Max pronti al primo caricamento vero** (`video-02,03,04,06,07`,
