@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { prenotaDa } from "@/lib/contatti";
 
 /** Barra fissa in basso: compare dopo il primo schermo, una sola CTA verso /prenota/. */
@@ -17,14 +16,9 @@ export function StickyCTA({ label = "Prenota la chiamata →" }: { label?: strin
   }, []);
 
   return (
-    <AnimatePresence>
-      {visible && (
-        <motion.div
-          initial={{ y: 80, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 80, opacity: 0 }}
-          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed bottom-0 inset-x-0 z-[200] bg-[#0a0a0a]/90 backdrop-blur-md"
+    <div
+          data-visibile={visible ? "1" : "0"}
+          className="barra-fissa fixed bottom-0 inset-x-0 z-[200] bg-[#0a0a0a]/90 backdrop-blur-md"
           style={{ borderTop: "1px solid var(--sv-hair)", paddingBottom: "env(safe-area-inset-bottom, 0)" }}
         >
           <div className="sv-container py-2 sm:py-3 flex items-center justify-center gap-4">
@@ -34,8 +28,6 @@ export function StickyCTA({ label = "Prenota la chiamata →" }: { label?: strin
               <span className="hidden sm:inline">{label}</span>
             </Link>
           </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+        </div>
   );
 }

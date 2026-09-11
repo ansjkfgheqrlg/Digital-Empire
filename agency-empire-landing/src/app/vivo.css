@@ -198,6 +198,7 @@
 .word { position: absolute; left: 3%; bottom: 4%; width: 43%; font-weight: 900; font-size: var(--fs-word);
   letter-spacing: -.045em; line-height: 1; pointer-events: none; user-select: none; white-space: nowrap; }
 .word--pieno { color: #fff; z-index: 1; opacity: .95; }
+.word--dx { left: auto; right: 4%; bottom: 8%; width: auto; opacity: .55; }   /* composizione B dell'hero: la parola a destra, dove starebbe il ritratto */
 .word--contorno { color: transparent; -webkit-text-stroke: 1.5px rgba(255, 255, 255, .95); z-index: 3; }
 
 /* ----------------------------------------------------------------------------
@@ -336,3 +337,10 @@ details.sv-dett p { margin-top: 10px; font-size: var(--fs-small); line-height: 1
 @keyframes marquee-scorri { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .marquee { animation: marquee-scorri 60s linear infinite; }
 @media (prefers-reduced-motion: reduce) { .marquee { animation: none; } }
+
+/* header e sticky: compaiono con una transizione CSS, niente framer-motion (F6: −130 KB di JS) */
+.barra-fissa { transition: transform .35s cubic-bezier(.22,1,.36,1), opacity .35s; }
+.barra-fissa[data-visibile="0"] { opacity: 0; pointer-events: none; }
+header.barra-fissa[data-visibile="0"] { transform: translateY(-72px); }
+div.barra-fissa[data-visibile="0"] { transform: translateY(80px); }
+@media (prefers-reduced-motion: reduce) { .barra-fissa { transition: none; } }

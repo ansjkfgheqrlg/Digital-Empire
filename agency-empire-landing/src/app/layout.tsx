@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Onest, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import "./vivo.css";
-import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 import { GrainLayers } from "@/components/grain-layers";
 import { EmpireAnalytics } from "@/components/analytics";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/lib/constants";
@@ -71,7 +70,7 @@ export default function RootLayout({
             __html: "document.documentElement.classList.add('js')",
           }}
         />
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        {children}
         <EmpireAnalytics />
       </body>
     </html>

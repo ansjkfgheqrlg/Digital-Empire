@@ -29,7 +29,7 @@ export function Hero() {
       </div>
 
       <div className={conFoto ? "relative grid md:grid-cols-[46%_54%] min-h-[560px]" : "relative min-h-[520px]"}>
-        <div className="word word--pieno hidden md:block" aria-hidden>EMPIRE</div>
+        <div className={`word word--pieno hidden md:block ${conFoto ? "" : "word--dx"}`} aria-hidden>EMPIRE</div>
         {conFoto && (
           <Aura
             file="n1-hero.webp"
@@ -41,9 +41,9 @@ export function Hero() {
             className="hero-foto min-h-[380px] md:min-h-0"
           />
         )}
-        <div className="word word--contorno hidden md:block" aria-hidden>EMPIRE</div>
+        <div className={`word word--contorno hidden md:block ${conFoto ? "" : "word--dx"}`} aria-hidden>EMPIRE</div>
 
-        <div className={`relative z-[4] flex flex-col justify-center gap-6 py-[11%] md:py-[9%] ${conFoto ? "px-[8%]" : "sv-container md:pl-[46%]"}`}>
+        <div className={`relative z-[4] flex flex-col justify-center gap-6 py-[11%] md:py-[9%] ${conFoto ? "px-[8%]" : "sv-container"}`}>
           <p className="sv-eyebrow">Tre sistemi AI sui tuoi server</p>
           <h1 id="hero-h1" className="sv-h1 max-w-[15ch]">
             Ti costa uno stipendio

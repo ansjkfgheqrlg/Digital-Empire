@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { prenotaDa } from "@/lib/contatti";
 
 const NAV_LINKS = [
@@ -23,14 +22,9 @@ export function Header() {
   }, []);
 
   return (
-    <AnimatePresence>
-      {visible && (
-        <motion.header
-          initial={{ y: -72, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -72, opacity: 0 }}
-          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed top-0 inset-x-0 z-[190] sv-hair bg-[#0a0a0a]/90 backdrop-blur-md"
+    <header
+          data-visibile={visible ? "1" : "0"}
+          className="barra-fissa fixed top-0 inset-x-0 z-[190] sv-hair bg-[#0a0a0a]/90 backdrop-blur-md"
           style={{ borderTop: "none", borderBottom: "1px solid var(--sv-hair)" }}
         >
           <div className="sv-container h-[60px] flex items-center justify-between gap-6">
@@ -49,8 +43,6 @@ export function Header() {
               Prenota
             </Link>
           </div>
-        </motion.header>
-      )}
-    </AnimatePresence>
+        </header>
   );
 }
