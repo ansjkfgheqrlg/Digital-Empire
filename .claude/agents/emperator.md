@@ -1616,6 +1616,18 @@ documentazione Empire/
 **Cosa non ci va:** materiale di lavoro interno non consegnato (bozze, HTML intermedi,
 checkpoint, log) — solo il PDF finito, quello che Max apre e guarda.
 
+> ⛔ **SOLO PDF, senza eccezioni** *(ordine di Max, 2026-09-11, testuale: "nella documentazione
+> può entrare roba solamente in PDF")*. Niente `.md`, niente `.json`, niente `LEGGIMI`, niente
+> indici: la cartella contiene PDF e basta. Se un documento va in `documentazione Empire/` e non
+> ha ancora un PDF, il PDF si fa — col motore standard (§6.19) — e quello entra. Occasione
+> dell'ordine: avevo copiato il piano editoriale KDP di Gael come `.md`+`.json`+`LEGGIMI.md`;
+> rimossi, sostituiti da `piano-editoriale-kdp-settimana-2026-08-31.pdf`.
+>
+> **Un documento ufficiale è fatto di tre pezzi** *(stesso ordine: "deve essere in MD, PY e PDF")*:
+> il **Markdown** (l'originale vivo, nella sua casa canonica), lo **script Python** che lo impagina
+> (in `PIANO-MAESTRO/scripts/build_*.py`, sopra `pdf_engine_empire.py`) e il **PDF** (casa canonica
+> accanto al Markdown + doppione qui). Manca uno dei tre, la documentazione non è chiusa.
+
 **Come si applica, in pratica:** dopo aver salvato il PDF nella sua casa naturale, **prima di
 dichiarare il lavoro chiuso**, copialo (mai spostarlo, mai un link/shortcut) dentro la
 sotto-cartella giusta di `documentazione Empire/`, stesso nome file. Se la cartella o la
@@ -1633,7 +1645,8 @@ Casi applicati: `28-DOSSIER-HIGGSFIELD-ELEVENLABS.pdf` → `Report/`;
 > l'importanza, è la **durata**: un piano serve a far eseguire qualcosa, vive in Markdown, si
 > consuma e muore. Chiediti se il documento sarà ancora vero fra un mese e se qualcuno lo rileggerà
 > come riferimento; se no, resta `.md`, niente PDF e niente doppione in `documentazione Empire/`
-> (§6.17). Occasione dell'ordine: avevo fatto il PDF del piano di implementazione Andrei Pascu —
+> (§6.17). **Eccezione che vince su tutto: se Max dice "mettilo nella documentazione", il PDF si
+> fa** — è lui a decidere cosa dura, e la cartella accetta solo PDF (2026-09-11, piano editoriale KDP). Occasione dell'ordine: avevo fatto il PDF del piano di implementazione Andrei Pascu —
 > rimosso insieme al doppione. Il resto di questo paragrafo dice **come** si fa un PDF, e vale solo
 > dopo che questa domanda ha risposto sì.
 

@@ -1,7 +1,7 @@
 # Wiki Log — Registro operazioni
 
 ## 2026-09-11 (Emperator — piano editoriale KDP in documentazione ufficiale)
-- DOC: piano editoriale KDP di Gael (2026-09-02, commit 66389b58) copiato in `documentazione Empire/Piani/KDP/` + `LEGGIMI.md` -> 1 pagina wiki aggiornata (`tools/Tool_Pipeline_Libri_KDP.md`). CP-20260911-F4FV.
+- DOC: piano editoriale KDP di Gael (2026-09-02, commit 66389b58) in PDF via `build_piano_kdp_pdf.py` → `documentazione Empire/Piani/KDP/` (solo PDF, ordine Max) -> 1 pagina wiki aggiornata (`tools/Tool_Pipeline_Libri_KDP.md`). CP-20260911-F4FV.
 
 ## 2026-09-10 (Sentinella — corpus Andrei Pascu: copy + visivo dentro le skill di casa)
 - INGEST: `competitor/Andrei Pascu/site-study/SINTESI-SISTEMA-COPY.md` e

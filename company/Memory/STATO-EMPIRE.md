@@ -25,10 +25,12 @@ sui lotti 01-11. Poi lotti 12-19, poi deduplica, poi Fase 1 (motore PDF a flusso
 
 Ordine di Max: "Gael ha fatto il piano editoriale per i KDP? se si mettilo nella documentazione ufficiale".
 Verificato: si', Gael lo ha fatto il 2026-09-02 (commit `66389b58`): 7 libri per la settimana 31/08→06/09,
-nicchia *witch bookshop cozy fantasy*, autore Maren Ashcroft. Copiato (mai spostato) in
-`documentazione Empire/Piani/KDP/` con `LEGGIMI.md` che tiene la tabella dei piani. Niente PDF (piano
-settimanale = temporaneo). Wiki `Tool_Pipeline_Libri_KDP.md` + log aggiornati. B-067: far copiare il
-doppione a `/piano-libri` da solo. Dei 7 libri del piano, 2 sono in `libri_pronti/` (Midnight Ledger,
+nicchia *witch bookshop cozy fantasy*, autore Maren Ashcroft. **Ordine di Max in seconda battuta: in
+`documentazione Empire/` entra SOLO PDF, e un documento ufficiale e' MD + PY + PDF.** Fatto:
+`PIANO-MAESTRO/scripts/build_piano_kdp_pdf.py` (motore standard, 10 pagine, stato libri dal disco) →
+`LIBRI/_piani/piano_2026-08-31.pdf` + doppione `documentazione Empire/Piani/KDP/piano-editoriale-kdp-settimana-2026-08-31.pdf`.
+Tolti md/json/LEGGIMI dalla cartella ufficiale. Legge scritta in emperator.md §6.17/§6.19. Wiki + log
+aggiornati. B-067: `/piano-libri` deve lanciare lo script da solo. Dei 7 libri del piano, 2 sono in `libri_pronti/` (Midnight Ledger,
 Coven of Lost Ember); gli altri 5 ancora da produrre.
 
 ## 🟣 2026-09-10 — Collisione EVITATA su EMP-8M9F: un'altra sessione lo sta già costruendo

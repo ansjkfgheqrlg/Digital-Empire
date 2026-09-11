@@ -127,7 +127,7 @@ ha sbagliato di nuovo (120,9 stimate contro **113 reali** alla prima consegna). 
 
 - Gael costruisce `engine/piano.py` + skill `/piano-libri` e `/libro-del-giorno` + 3 agenti (KDP-SCOUT, KDP-EDITOR, KDP-GATE): un piano di 7 libri a settimana, una riga per giorno, eseguibile cosi' com'e' (nicchia con punteggio Amazon, premessa, angolo differenziante, comando `engine.kdp nuovo`).
 - Primo piano: settimana 31/08→06/09/2026, nicchia di catalogo *witch bookshop cozy fantasy*, autore Maren Ashcroft. Originale in `LIBRI/_piani/piano_2026-08-31.{md,json}`.
-- 2026-09-11: copia ufficiale in `documentazione Empire/Piani/KDP/` con `LEGGIMI.md` (tabella dei piani). Regola: copia, mai spostamento; niente PDF per i piani settimanali. CP-20260911-F4FV.
+- 2026-09-11: PDF del piano con `PIANO-MAESTRO/scripts/build_piano_kdp_pdf.py` (motore standard-oro, 10 pagine, stato dei libri letto dal disco) → `LIBRI/_piani/piano_2026-08-31.pdf` + doppione in `documentazione Empire/Piani/KDP/`. Regola di Max: in documentazione entra solo PDF; ufficiale = MD + PY + PDF. CP-20260911-F4FV.
 
 ## Connessioni
 - [[Entity_The_Quiet_Hours_Libro_KDP]]
