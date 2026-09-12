@@ -1,3 +1,12 @@
+## 📐 2026-09-12 sera — DOSSIER 38: piano SITO AGENCY «SOLO AGGIUNTE» scritto (P0→P3→V4) + artefatto; build su «vai» — CP-20260912-HTCV
+
+Ordine di Max: *«fammi il piano e fammi vedere l'artefatto»* (il 37 v1 era sul sito sbagliato, il 37 v2 sostituiva: **il 38 è il primo
+piano con entrambi i vincoli giusti**). `PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE.md` + artefatto https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca.
+Undici aggiunte (fasce, misura, volti, video, prova, legale, indice, /prenota/ «prenotato»), tutte in `src/sezioni-aggiunte/`, +≤ 3.000 px,
+0 righe rimosse, ≈ 20 h; scheletri che rendono `null` finché i pezzi di Max non arrivano (ritratti, video, dati legali, slug Calendly,
+Higgsfield, noindex). Due corsie nel battito: nostra 85% · Max 15%. **RIPRESA DA: `EMP-XR4F`** → «vai» di Max apre F0.
+**Restano in cima i due gesti di X3A4:** deploy prod (`cd agency-empire-landing && npx vercel --prod --yes`) e evento Calendly da 30 min.
+
 ## 🔴 2026-09-12 sera — SITO AGENCY (EMP-XR4F): pronto e provato, il DEPLOY PROD aspetta Max; Calendly dice «90% formazione» — CP-20260912-X3A4
 
 **Gesti solo di Max (ADR-026, in cima perché li vede subito — non bloccano nient'altro):**

@@ -1,6 +1,7 @@
 # Wiki Log — Registro operazioni
 
 ## 2026-09-12 (sera — Emperator, EMP-XR4F)
+- PIANO: Dossier 38 «Sito Agency — solo aggiunte» (P0→P3→V4, 11 aggiunte, 8 fasi, gate) + artefatto pubblicato → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo). CP-20260912-HTCV. Build su «vai».
 - QA+FIX: sito agency `agency-empire-landing` — QA Playwright del live, 2 refusi corretti (bug compilatore Next 16 spazio+entità), og.jpg + Open Graph, nessuna sezione nuova (tutte doppioni, misurato) → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo). CP-20260912-X3A4.
 - NUOVA PAGINA: tools/Tool_Fabbrica_Siti (la Fabbrica non aveva una pagina wiki: lacuna colmata) + riga in index.
 - LEGGE: ADR-030 → CLAUDE-SITI §13 «Un sito online si può solo aggiungere» + gate meccanico `fabbrica-siti/scripts/gate_solo_aggiunte.py`; stampo `og_stampo.py`. Deploy prod in attesa di Max (classificatore). Calendly: evento agenzia 30 min da creare (Max).

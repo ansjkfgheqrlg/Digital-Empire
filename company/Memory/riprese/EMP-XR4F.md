@@ -46,6 +46,8 @@ Max. **Legge di Max (2026-09-12): niente di ciò che è online si modifica, si p
 5. Analytics (`@vercel/analytics`) della v2 NON è nel sito attuale (avrebbe toccato `package.json`): aggiungerlo solo se Max lo vuole.
 
 ## 4. IL PROSSIMO PASSO ESATTO
+**(12/09 notte, CP-HTCV) IL PIANO C'È: `PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE.md` + artefatto https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca.**
+Al «vai» di Max: F0 del V4 (§6 del dossier) — BRIEF aggiornato, baseline px/Lighthouse/CTA, domanda C3.3, poi F1 misura. Le fasi e i gate sono lì, non qui.
 0. **(12/09 sera)** Se il live non ha ancora `og.jpg` (`curl -sI https://agency-empire-landing.vercel.app/og.jpg` ≠ 200): Max lancia
    `cd agency-empire-landing && npx vercel --prod --yes`; poi verificare «65 includono» sul live e il gate contro il nuovo live.
    Quando Max dà lo slug Calendly dell'evento agenzia (30 min): una riga in `src/lib/contatti.ts` (`CALENDLY`).

@@ -16,6 +16,11 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **2026-09-12 notte — DOSSIER 38, il piano «solo aggiunte» (CP-20260912-HTCV):** primo piano con i due vincoli giusti (sito vero + solo
+  aggiunte). 11 aggiunte A1-A11 (fascia-lampo, 2 fasce-prenota, misura a 5 eventi, stanza dei 3 volti, video «guardalo girare», immagini vere
+  in prove-vere, coda legale, pronto-per-l'indice, AURA nelle sezioni nostre, /prenota/ «prenotato», og fatto), 3 critiche, V4 in 8 fasi con
+  gate e pesi (nostra 85% · Max 15%), +≤ 3.000 px, ≈ 20 h. `PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE.md` · artefatto
+  https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca. Il 37 v2 è superato. Build su «vai».
 - **2026-09-12 sera — fase «solo aggiunte» n. 2 (CP-20260912-X3A4, ripresa EMP-XR4F aperta):** QA Playwright del live (desktop+mobile,
   8 link, 0 errori console). **Nessuna sezione nuova**: le candidate del dossier (N7, N9, N10, N12, N15, N16) duplicano tutte sezioni già
   online (`hierarchy`, `pricing-roi`, `flow-framework`, `audience`, `my-promise`, `objections`). Fatto invece: 2 refusi nelle sezioni nostre
