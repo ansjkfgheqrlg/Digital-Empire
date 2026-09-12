@@ -4,6 +4,8 @@ import { FATTI } from "@/lib/fatti";
  * N11 — Prove, solo vere (COPY.md §N11). Le cifre Novacar vengono da FATTI.novacar.*, i 50 di
  * Preventa da FATTI.preventaWhatsappGiorno; il resto del testo resta quello del COPY, parola per
  * parola. Il caso-3 non porta data-fonte: come dice COPY.md, la fonte è la chiamata stessa.
+ * NOTA (2026-09-12): un testo JSX su più righe che contiene un'entità (&apos;) perde lo spazio iniziale con il
+ * compilatore di Next 16 (Turbopack/SWC): dopo `}` o `</strong>` lo spazio si scrive {" "} esplicito.
  */
 export function ProveVere() {
   return (
@@ -25,7 +27,7 @@ export function ProveVere() {
               <strong>Un concessionario, luglio 2026 — preventivi.</strong> {FATTI.novacar.preventivi} preventivi
               generati su annunci veri in dieci giorni (3-13 luglio), {FATTI.novacar.marche} marche, circa{" "}
               {FATTI.novacar.minutiPerPdf} minuti dal link al PDF, {FATTI.novacar.controlli} controlli automatici
-              prima di ogni PDF. Lo diciamo intero: quei {FATTI.novacar.preventivi} includono i nostri collaudi, e
+              prima di ogni PDF. Lo diciamo intero: quei {FATTI.novacar.preventivi}{" "}includono i nostri collaudi, e
               non sostengono che il cliente venda di più. Cosa non è andato al primo giro: le foto tagliate
               nell&apos;impaginazione. Regola del cliente, ora è il controllo numero 4.
             </p>
@@ -45,7 +47,7 @@ export function ProveVere() {
 
           <article className="sv-card" style={{ borderColor: "var(--sv-hair-light)" }}>
             <p className="sv-body">
-              <strong>Il nostro.</strong> L&apos;Outreach Factory con cui probabilmente ti abbiamo trovato gira per
+              <strong>Il nostro.</strong>{" "}L&apos;Outreach Factory con cui probabilmente ti abbiamo trovato gira per
               noi ogni giorno. In chiamata la vedi: invii di oggi, risposte in coda, lead entrati.
             </p>
           </article>

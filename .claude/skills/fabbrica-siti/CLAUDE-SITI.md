@@ -248,6 +248,40 @@ l'accento, e cambia per prodotto.
 
 ---
 
+## §13 — Un sito online si può solo aggiungere
+
+Un sito **pubblicato e visto dal committente** è suo. Chi ci lavora sopra **aggiunge soltanto**: file
+nuovi, componenti nuovi, inserimenti puri in `page.tsx` e `layout.tsx` (righe `+`, **zero righe `-`**
+sui file esistenti), CSS scopato sotto un wrapper proprio (`.vivo`), pagine nuove in cartelle nuove.
+
+Ciò che c'era **non si tocca** — testo, ordine, CTA, link, `noindex`, footer — anche se sbagliato,
+anche se «si migliorerebbe». Un difetto dell'esistente si **segnala** al committente e si aspetta la
+sua parola. Una riscrittura si fa **solo se il committente la ordina con quelle parole**, e comunque
+**prima in anteprima** (`npx vercel` senza `--prod`), mai in produzione al primo colpo.
+
+**Il «prima» è il live, non il repo.** Il sorgente può contenere restyling mai deployati: prima di
+qualunque cantiere si prova `build == live` e si mette un tag (`<sito>-live-YYYYMMDD`).
+
+**Il gate è meccanico** e va passato prima di ogni deploy:
+
+```
+python .claude/skills/fabbrica-siti/scripts/gate_solo_aggiunte.py   --live <url-live> --build <out/index.html> --base <tag-del-live> --cartella <cartella-sito>
+```
+
+Parte A: il testo del live è contenuto, nello stesso ordine, nel testo della build (difflib: solo
+`equal`/`insert`). Parte B: dal tag del live ogni file esistente ha 0 righe rimosse e nessun file è
+cancellato. Exit 0 o non si deploya. Le deroghe (`--ignora` per stringhe che cambiano da sole,
+`--consenti` per correggere un refuso in una sezione **nostra**) vanno scritte nel checkpoint.
+
+*Origine: il 12 settembre 2026 il Sito Agency Vivo v2 è andato in produzione al primo colpo al posto
+del sito che Max aveva visto per 100 giorni; bocciato dopo un'ora, ripristinato integralmente
+(CP-20260912-7ZNY). Ordine testuale di Max: «Non puoi modificare niente di ciò che già c'è, puoi
+solamente aggiungere.» — ADR-030.*
+
+*Non derogabile.*
+
+---
+
 ## Come si cambia questa legge
 
 Non si cambia in una conversazione. Si cambia con un **ADR** in `company/Memory/decisions/`, che
@@ -264,6 +298,7 @@ contraddicevano e nessuna aveva torto.
 - `company/Memory/decisions/ADR-023-fabbrica-siti-due-corsie.md` — la decisione delle corsie
 - `company/Memory/decisions/ADR-024-canone-v2-primo-strato.md` — §11 e §12, i pattern `pre-cassa` e
   `pagina-ponte`, i quattro controlli in attesa del gate
+- `company/Memory/decisions/ADR-030-sito-online-solo-aggiungere.md` — §13 e `scripts/gate_solo_aggiunte.py`
 - `competitor/Andrei Pascu/site-study/reports/11-armageddon-ATLANTE-VISIVO.md` — le misure da cui
   nasce metà di questo canone
 - `competitor/Andrei Pascu/site-study/reports/24-25-27-28-macchina-del-funnel.md` — la macchina del

@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Archive
 Tags: #agency #sito #andrei-pascu #tono #immagini-aura #fabbrica-siti
 Created: 2026-09-11
-Last updated: 2026-09-12
+Last updated: 2026-09-12 (sera)
 ---
 
 # Sito Agency Vivo — dossier 37
@@ -16,6 +16,14 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **2026-09-12 sera — fase «solo aggiunte» n. 2 (CP-20260912-X3A4, ripresa EMP-XR4F aperta):** QA Playwright del live (desktop+mobile,
+  8 link, 0 errori console). **Nessuna sezione nuova**: le candidate del dossier (N7, N9, N10, N12, N15, N16) duplicano tutte sezioni già
+  online (`hierarchy`, `pricing-roi`, `flow-framework`, `audience`, `my-promise`, `objections`). Fatto invece: 2 refusi nelle sezioni nostre
+  («65includono», «Il nostro.L'Outreach» — bug del compilatore Next 16: testo JSX multiriga con `&apos;` perde lo spazio iniziale, rimedio
+  `{" "}`); **anteprima di condivisione** (`public/og.jpg` 1200×630 dallo stampo `og_stampo.py` + Open Graph/Twitter in `layout.tsx`, +12
+  righe); **`gate_solo_aggiunte.py`** (testo del live ⊂ testo della build + 0 righe rimosse dal tag del live) e **ADR-030 → CLAUDE-SITI
+  §13**. Letto nel widget vero: l'unico evento Calendly di Max è «90% formazione 10% Peach · 1 h» → serve un evento agenzia da 30 min
+  (gesto di Max). **Deploy prod in attesa di Max** (negato al bot dal classificatore). Build e anteprima Vercel provate.
 - **2026-09-12 sera — v2 BOCCIATA da Max, sito ripristinato + solo aggiunte (CP-20260912-7ZNY):** «hai rovinato tutto il sito, riportalo
   esattamente com'era, poi aggiungi senza modificare». Live riportato al deploy di giugno, codice a `57a0ba0b`; aggiunte 3 sezioni
   (`specchio`, `prove-vere`, `cosa-ottieni`) + `/prenota/` `/privacy/` `/cookie/`, CSS scopato `.vivo`, 0 righe esistenti toccate.
@@ -49,6 +57,7 @@ quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo
   skill `voce-empire` (le 22 formule di Pascu con placeholder).
 
 ## Connessioni
+- [[Fabbrica_Siti]] — §13 «un sito online si può solo aggiungere» (ADR-030), `gate_solo_aggiunte.py`, `og_stampo.py`
 - [[Synthesis_Sistema_Visivo_Andrei_Pascu]] — la temperatura del traffico governa la forma
 - [[Concept_CCM_Brand_Guidelines]] — colore dell'azione < 10%, argento + grana
 - [[Digital_Empire_6_Phase_Process]] · `../../competitor/Andrei Pascu/site-study/README`

@@ -438,6 +438,12 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   (oggi nessun template dell'Outreach linka alcun sito). Sostituisce B-070 (pagina-ponte) finché non serve.
 - **B-078 — NUOVA (2026-09-12).** `company/offerta.md` canonico da cui i siti generano `listino.ts` (il listino DE è copiato in 68 file, studio Beggiato).
 - **B-079 — NUOVA (2026-09-12).** N4 (VSL) sul sito dell'agenzia: si costruisce solo quando esiste il `src` del video registrato sulla dashboard vera.
+- **B-080 — NUOVA (2026-09-12).** `gate_siti.py` richiama `gate_solo_aggiunte.py` quando il `project.json` del cantiere dichiara
+  `"online": true` (ADR-030 §13): finché non c'è, il gate si lancia a mano prima di ogni deploy su un sito online.
+- **B-081 — NUOVA (2026-09-12).** Lint della Fabbrica per il bug di compilazione Next 16: testo JSX su più righe con entità (`&apos;`)
+  che segue `}` o un tag inline perde lo spazio iniziale → segnalare e chiedere `{" "}` esplicito (caso reale: `prove-vere.tsx`, 23 h online).
+- **B-082 — FATTA lo stesso giorno (2026-09-12).** Stampo `fabbrica-siti/scripts/og_stampo.py` (titolo, accento, sottotitolo, dominio →
+  `og.jpg` 1200×630, grana PNG, font del canone); `agency-empire-landing/public/og.jpg` è generato da lì.
 - **B-071 → aggiornata:** vale per `agency-empire-landing` N11 (`n11-prove.tsx`), non più per il sito sbagliato.
 - **B-072 → aggiornata:** i posti sono 15 nel manifest di `agency-empire-landing/public/aura/manifest.json` (10 generati + 4 ritratti + 1 screenshot);
   senza file la composizione B tiene il layout, nessun segnaposto.

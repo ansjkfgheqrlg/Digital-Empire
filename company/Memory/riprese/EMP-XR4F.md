@@ -2,7 +2,8 @@
 
 - **Codice di ripresa:** `EMP-XR4F`
 - **Aperto:** 2026-09-12
-- **Stato:** APERTO — sito online com'era (giugno) + 3 sezioni aggiunte; si continua solo aggiungendo
+- **Stato:** APERTO — 12/09 sera (CP-20260912-X3A4): QA fatta, 2 refusi corretti, og.jpg + Open Graph, gate `gate_solo_aggiunte.py`, ADR-030/§13.
+  **Build pronta e provata: il deploy prod lo lancia Max** (`cd agency-empire-landing && npx vercel --prod --yes`) — negato a me dal classificatore.
 - **Chi riprende:** basta dire `EMP-XR4F` in una chat nuova dentro Digital Empire.
 
 ---
@@ -40,14 +41,19 @@ Max. **Legge di Max (2026-09-12): niente di ciò che è online si modifica, si p
    solo nelle sezioni aggiunte. Still AURA originali mai in `public/`.
 3. **Tre decisioni SOLO di Max** (ADR-026, non bloccano): togliere il `noindex`; puntare le CTA vecchie a `/prenota/` (oggi vanno al brand
    del corso in 3 salti); footer con P.IVA/sede/PEC e link a `/privacy/` `/cookie/`. Ognuna modifica l'esistente → serve la sua parola.
-4. Fabbrica: B-073…B-079 in BACKLOG (gate porta d'uscita, gate_fatti esteso a email/telefono, `apri_cantiere.py`, pattern, Bibbia →
-   `/prenota/`, `offerta.md`, N4 video). Regola **§15 SITO ONLINE = SOLO AGGIUNGERE** da scrivere in `CLAUDE-SITI.md` via ADR.
+4. Fabbrica: B-073…B-081 in BACKLOG (gate porta d'uscita, gate_fatti esteso a email/telefono, `apri_cantiere.py`, pattern, Bibbia →
+   `/prenota/`, `offerta.md`, N4 video, B-080 gate nel `gate_siti.py`, B-081 lint spazio+entità). **§13 scritto (ADR-030)**; `og_stampo.py` fatto (B-082).
 5. Analytics (`@vercel/analytics`) della v2 NON è nel sito attuale (avrebbe toccato `package.json`): aggiungerlo solo se Max lo vuole.
 
 ## 4. IL PROSSIMO PASSO ESATTO
-1. Chiedere a Max con una riga: *quali* sezioni aggiungere (lista del §3.1) e se vuole le tre decisioni del §3.3.
-2. Per ogni sezione: file nuovo in `src/sezioni-aggiunte/`, inserimento puro in `page.tsx`, `npm run build`, prova difflib "solo insert"
-   contro il live corrente (`curl -sL https://agency-empire-landing.vercel.app`), screenshot, `npx vercel --prod --yes` dentro la cartella.
+0. **(12/09 sera)** Se il live non ha ancora `og.jpg` (`curl -sI https://agency-empire-landing.vercel.app/og.jpg` ≠ 200): Max lancia
+   `cd agency-empire-landing && npx vercel --prod --yes`; poi verificare «65 includono» sul live e il gate contro il nuovo live.
+   Quando Max dà lo slug Calendly dell'evento agenzia (30 min): una riga in `src/lib/contatti.ts` (`CALENDLY`).
+   **Le sezioni del §3.1 NON si aggiungono: sono tutte doppioni di sezioni già online** (misurato, CP-X3A4). Non riproporle.
+1. ~~Chiedere a Max quali sezioni aggiungere~~ → superato: nessuna sezione nuova finché non c'è copy che NON esiste già in pagina.
+2. Per ogni aggiunta futura: file nuovo, inserimento puro, `npm run build`, poi il gate della Fabbrica (exit 0 obbligatorio):
+   `python .claude/skills/fabbrica-siti/scripts/gate_solo_aggiunte.py --live https://agency-empire-landing.vercel.app --build agency-empire-landing/out/index.html --base agency-empire-landing-live-20260912 --cartella agency-empire-landing`
+   + screenshot GUARDATO (desktop e mobile), poi `npx vercel --prod --yes` dentro la cartella.
 3. Dopo ogni deploy: `git diff --stat` deve mostrare solo `+` sui file esistenti.
 
 ## 5. DECISIONI GIÀ PRESE — non ridiscuterle
@@ -75,7 +81,10 @@ cat .claude/skills/fabbrica-siti/cantieri/agency-empire-landing-vivo/COPY.md
 curl -sL https://agency-empire-landing.vercel.app | grep -c "Automatizziamo la tua"   # deve dare 1
 ```
 
-## 8. FILE TOCCATI (oggi)
+## 8. FILE TOCCATI
+**12/09 sera (X3A4):** `agency-empire-landing/public/og.jpg` (nuovo), `src/app/layout.tsx` (+12), `src/sezioni-aggiunte/prove-vere.tsx` (2 `{" "}`),
+`.claude/skills/fabbrica-siti/scripts/{gate_solo_aggiunte,og_stampo}.py` (nuovi), `CLAUDE-SITI.md` §13, `ADR-030`, `CP-20260912-X3A4`, STATO, BACKLOG B-080/081/082, LEZIONE.
+**12/09 (7ZNY):**
 - `agency-empire-landing/` (ripristino a `57a0ba0b` + aggiunte), tag `agency-empire-landing-live-20260912`
 - `company/Memory/checkpoints/CP-20260912-7ZNY.md`, `STATO-EMPIRE.md`, `BACKLOG.md` (nota), questa ripresa
 - `.claude/skills/fabbrica-siti/cantieri/agency-empire-landing-vivo/LEZIONE.md` (esito in testa), `cantieri/INDICE.md`

@@ -1,3 +1,23 @@
+## 🔴 2026-09-12 sera — SITO AGENCY (EMP-XR4F): pronto e provato, il DEPLOY PROD aspetta Max; Calendly dice «90% formazione» — CP-20260912-X3A4
+
+**Gesti solo di Max (ADR-026, in cima perché li vede subito — non bloccano nient'altro):**
+1. **Deploy in produzione** — negato a me dal classificatore di Claude Code (2 tentativi). Comando pronto:
+   `cd agency-empire-landing && npx vercel --prod --yes` → poi `curl -sI https://agency-empire-landing.vercel.app/og.jpg` deve dare 200.
+   Cosa va online: 2 refusi corretti in `prove-vere` («65includono», «Il nostro.L'Outreach»), anteprima di condivisione
+   (`og.jpg` 1200×630 + Open Graph/Twitter in `layout.tsx`, +12 righe, 0 rimosse). **Gate `gate_solo_aggiunte.py` PASS**
+   (deroga dichiarata: `--consenti "65includono"`). Anteprima Vercel già deployata (`n5i8a5vir`), build locale verificata.
+2. **Evento Calendly per l'agenzia** — letto dal widget vero su `/prenota/`: l'unico evento pubblico è **«90% formazione
+   10% Peach», 1 h**. La pagina promette 30 minuti con chi costruisce il sistema. Serve un evento «Chiamata Digital
+   Empire · 30 min»: mi dai lo slug e cambio una riga in `src/lib/contatti.ts`.
+3. Le tre di prima: `noindex` · CTA vecchie → `/prenota/` · footer legale.
+
+**Fatto stasera:** QA Playwright del live (desktop+mobile, 8 link, 0 errori console); **nessuna sezione nuova**: tutte le
+candidate del Dossier 37 v2 duplicano sezioni già online (misurato, elenco nel CP) — copy doppio = sito peggiore.
+**ADR-030 + CLAUDE-SITI §13 «Un sito online si può solo aggiungere»** con gate meccanico nella Fabbrica
+(`scripts/gate_solo_aggiunte.py`: testo live ⊂ testo build + 0 righe rimosse dal tag del live). Bug di compilazione
+trovato e documentato: Next 16 perde lo spazio iniziale di un testo JSX multiriga con `&apos;` → `{" "}` esplicito.
+**RIPRESA DA: `EMP-XR4F`** (resta aperta): dopo il deploy di Max → verifica live; poi B-080, foto quando arrivano.
+
 ## ⛔ 2026-09-12 — SITO AGENCY: la v2 è BOCCIATA da Max; sito RIPRISTINATO com'era + 3 sezioni SOLO AGGIUNTE — CP-20260912-7ZNY
 
 Max: *«hai rovinato tutto il sito: riportalo esattamente com'era, poi aggiungi senza modificare niente di ciò che c'è»*. Fatto:

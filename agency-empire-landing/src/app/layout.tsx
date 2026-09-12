@@ -21,6 +21,18 @@ export const metadata: Metadata = {
   title: "Digital Empire | Sistemi AI Proprietari per la Tua Operatività",
   description: "Installiamo sistemi AI sul tuo server: Outreach Factory, Content Factory e Second Brain. Zero canoni mensili. Codice tuo per sempre. Setup in 7 giorni.",
   robots: { index: false, follow: false },
+  // AGGIUNTA 2026-09-12 (solo aggiunte): anteprima quando il link viene condiviso (WhatsApp, LinkedIn, IG, Telegram).
+  // Prima: solo titolo e descrizione, nessuna immagine. `public/og.jpg` è nuovo, 1200×630, grana + argento + un accento.
+  metadataBase: new URL("https://agency-empire-landing.vercel.app"),
+  openGraph: {
+    type: "website",
+    locale: "it_IT",
+    siteName: "Digital Empire",
+    title: "Digital Empire | Sistemi AI Proprietari per la Tua Operatività",
+    description: "Installiamo sistemi AI sul tuo server: Outreach Factory, Content Factory e Second Brain. Zero canoni mensili. Codice tuo per sempre. Setup in 7 giorni.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Digital Empire — Sistemi AI che girano sul tuo server. Zero canoni." }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og.jpg"] },
 };
 
 export const viewport: Viewport = { themeColor: "#2a2a2a" };
