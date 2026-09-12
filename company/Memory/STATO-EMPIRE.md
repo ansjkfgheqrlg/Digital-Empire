@@ -7,6 +7,8 @@ scopato sotto `.vivo`), pagine `/prenota/` `/privacy/` `/cookie/`. `page.tsx` +7
 intatto nel live (verificato). **LEGGE da oggi:** su un sito di Max online si AGGIUNGE soltanto; una riscrittura si fa solo se Max la
 ordina con quelle parole, e comunque prima in anteprima, mai in produzione al primo colpo. La v2 (20 sezioni) vive nel commit `6565545f`.
 Restano com'erano per ordine di Max: noindex, CTA vecchie verso netlify, footer `href="#"`.
+**RIPRESA DA: `EMP-XR4F`** (chat nuova) — fase successiva SOLO AGGIUNTE: altre sezioni (scelte da Max), foto quando arrivano,
+tre decisioni sue (noindex · CTA vecchie → `/prenota/` · footer legale).
 
 ## 🌐 2026-09-12 — DOSSIER 37 v2 CHIUSO: 3 critiche + V4 sul sito vero, build in attesa del «vai» — CP-20260911-MX8A
 
