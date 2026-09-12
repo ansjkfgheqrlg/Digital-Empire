@@ -46,6 +46,7 @@ Max. **Legge di Max (2026-09-12): niente di ciò che è online si modifica, si p
 5. Analytics (`@vercel/analytics`) della v2 NON è nel sito attuale (avrebbe toccato `package.json`): aggiungerlo solo se Max lo vuole.
 
 ## 4. IL PROSSIMO PASSO ESATTO
+**(13/09 notte, CP-20260913-T3U6) P4 «la vita» nel dossier 38: 13 aggiunte con immagini, Tavola https://claude.ai/code/artifact/25405882-779a-43ce-a9a3-91c65c36b34e.**
 **(12/09 notte, CP-HTCV) IL PIANO C'È: `PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE.md` + artefatto https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca.**
 Al «vai» di Max: F0 del V4 (§6 del dossier) — BRIEF aggiornato, baseline px/Lighthouse/CTA, domanda C3.3, poi F1 misura. Le fasi e i gate sono lì, non qui.
 0. **(12/09 sera)** Se il live non ha ancora `og.jpg` (`curl -sI https://agency-empire-landing.vercel.app/og.jpg` ≠ 200): Max lancia

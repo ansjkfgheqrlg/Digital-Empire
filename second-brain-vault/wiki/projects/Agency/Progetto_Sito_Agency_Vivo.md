@@ -16,6 +16,9 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **2026-09-13 notte — P4 «la vita» + Tavola Estetica solo-aggiunte (CP-20260913-T3U6):** critica di Max («dove sono le sezioni con le immagini?»):
+  il P3 le aveva perse. 13 aggiunte con immagine (firma V0 sotto l'hero, 7 cuciture fotografiche, stanza 3 volti, video, foto nello specchio, 2 fasce-prenota
+  con foto, coda legale), casting dal manifest v2, budget +≤ 4.900 px, mai due di fila, `null` senza file. Tavola: https://claude.ai/code/artifact/25405882-779a-43ce-a9a3-91c65c36b34e
 - **2026-09-12 notte — DOSSIER 38, il piano «solo aggiunte» (CP-20260912-HTCV):** primo piano con i due vincoli giusti (sito vero + solo
   aggiunte). 11 aggiunte A1-A11 (fascia-lampo, 2 fasce-prenota, misura a 5 eventi, stanza dei 3 volti, video «guardalo girare», immagini vere
   in prove-vere, coda legale, pronto-per-l'indice, AURA nelle sezioni nostre, /prenota/ «prenotato», og fatto), 3 critiche, V4 in 8 fasi con

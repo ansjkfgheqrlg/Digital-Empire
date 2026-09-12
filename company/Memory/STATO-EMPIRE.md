@@ -1,3 +1,12 @@
+## 🎞️ 2026-09-13 notte — DOSSIER 38 P4 «LA VITA»: 13 aggiunte con immagini + TAVOLA ESTETICA solo-aggiunte — CP-20260913-T3U6
+
+Max: *«dove sono le sezioni con le immagini per dare vita a tutto?»* — aveva ragione: il P3 le aveva perse. P4: **cuciture fotografiche**
+fra le sezioni di giugno (immagine + riga su banda scura, zero copy nuovo), **V0 firma** col ritratto di Max sotto l'hero, stanza dei 3
+volti, video «guardalo girare», 2 fasce-prenota con foto, foto nello specchio. **Tavola:** https://claude.ai/code/artifact/25405882-779a-43ce-a9a3-91c65c36b34e
+· **Piano:** https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca · `PIANO-MAESTRO/38-…md` §2-bis/§5-bis. Budget +≤ 4.900 px, 0,33 foto/1.000 px,
+mai due di fila; senza file ogni posto rende `null`. Gesti di Max che accendono la vita: **4 ritratti · Higgsfield Plus · video** (+ deploy
+X3A4, Calendly 30 min, dati legali). **RIPRESA DA: `EMP-XR4F`** → «vai» apre F0.
+
 ## 📐 2026-09-12 sera — DOSSIER 38: piano SITO AGENCY «SOLO AGGIUNTE» scritto (P0→P3→V4) + artefatto; build su «vai» — CP-20260912-HTCV
 
 Ordine di Max: *«fammi il piano e fammi vedere l'artefatto»* (il 37 v1 era sul sito sbagliato, il 37 v2 sostituiva: **il 38 è il primo

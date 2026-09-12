@@ -1,5 +1,8 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-13 (notte — Emperator, EMP-XR4F)
+- PIANO+TAVOLA: Dossier 38 P4 «la vita» (13 aggiunte con immagini, cuciture fotografiche, casting AURA) + Tavola Estetica solo-aggiunte pubblicata → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo). CP-20260913-T3U6.
+
 ## 2026-09-12 (sera — Emperator, EMP-XR4F)
 - PIANO: Dossier 38 «Sito Agency — solo aggiunte» (P0→P3→V4, 11 aggiunte, 8 fasi, gate) + artefatto pubblicato → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo). CP-20260912-HTCV. Build su «vai».
 - QA+FIX: sito agency `agency-empire-landing` — QA Playwright del live, 2 refusi corretti (bug compilatore Next 16 spazio+entità), og.jpg + Open Graph, nessuna sezione nuova (tutte doppioni, misurato) → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo). CP-20260912-X3A4.

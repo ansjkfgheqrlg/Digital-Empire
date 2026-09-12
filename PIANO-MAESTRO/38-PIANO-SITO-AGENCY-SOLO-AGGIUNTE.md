@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #agency #sito #solo-aggiunte #fabbrica-siti #piano #adr-030
 Created: 2026-09-12
-Last updated: 2026-09-12 (sera — P0 → 3 critiche → V4 esecutivo; build su «vai»)
+Last updated: 2026-09-13 (notte — P0 → 4 critiche (la 4ª di Max: la vita) → V4 esecutivo; tavola estetica pubblicata; build su «vai»)
 ---
 
 # DOSSIER 38 — SITO AGENCY: PIANO «SOLO AGGIUNTE»
@@ -15,7 +15,7 @@ Last updated: 2026-09-12 (sera — P0 → 3 critiche → V4 esecutivo; build su 
 > → `prj_34bLuVZNA8iqh9t2MAaK2j7M9D0c`, `npx vercel project ls`, e dalla frase di Max delle 22:05 dell'11/09) **e non si
 > modifica nulla di ciò che è online: si aggiunge soltanto**. Il gate che lo prova è `gate_solo_aggiunte.py`.
 >
-> Il piano è in quattro giri (P0 → Critica 1 → P1 → Critica 2 → P2 → Critica 3 → P3) più il V4 esecutivo. **Nessuna riga
+> Il piano è in cinque giri (P0 → C1 → P1 → C2 → P2 → C3 → P3 → **C4 di Max → P4**) più il V4 esecutivo. Tavola estetica: https://claude.ai/code/artifact/25405882-779a-43ce-a9a3-91c65c36b34e. **Nessuna riga
 > di codice parte prima del «vai» di Max su questo dossier.** Artefatto: la pagina pubblicata da questa chat.
 
 ---
@@ -170,6 +170,67 @@ la cartella del cantiere `fabbrica-siti/cantieri/agency-empire-landing-vivo/` re
 
 ---
 
+# §5-bis — CRITICA 4 (di Max, 12/09 23:40) → P4: «DOVE SONO LE SEZIONI CON LE IMMAGINI PER DARE VITA A TUTTO?»
+
+**C4.1 — Il P3 aveva perso la diagnosi.** Il Dossier 37 diceva: mancano **la vita** (volti, respiro) e **la prova**. P3 metteva le
+immagini in due voci (A4 stanza, A9 «AURA nelle sezioni nostre») e le lasciava alla corsia di Max. Sbagliato: **le immagini sono il
+cuore delle aggiunte**, non un accessorio. Un sito di 37 blocchi di testo prende vita con **cuciture fotografiche** fra le sezioni —
+un'immagine, una riga su banda scura, niente copy nuovo — esattamente ciò che la Tavola del 37 aveva mostrato e il P3 non aveva portato.
+
+**C4.2 — Il budget di altezza di P1 (+3.000 px) era scritto prima di sapere cosa serviva.** Con 13 aggiunte con immagine si arriva a
+**+≤ 4.900 px** (+13% su 38.683): cuciture ≤ 360 px, fasce ≤ 300, firma ≤ 480, stanza ≤ 640, video ≤ 620. Il budget si alza **e si
+dichiara**; la densità resta 0,33 foto ogni 1.000 px (regola del manifest: max 0,6) e **mai due foto di fila**.
+
+**C4.3 — L'hero non si tocca, ma il volto va in alto.** Soluzione: **V0 «La firma»**, striscia a due colonne SUBITO SOTTO l'hero col
+ritratto di Max e una riga in prima persona. Il primo volto del sito compare senza toccare `hero.tsx`.
+
+**C4.4 — Le immagini di produzione.** Gli still AURA (film) sono **brief**, mai in `public/`. In pagina: ritratti veri ×4 (Max nella firma
++ 3 nella stanza), video vero, PDF PreventivoForge oscurato, e per le 8 cuciture immagini **generate su Higgsfield dal brief del foglio**
+(stesso registro: luce di taglio, fondo scuro, volto non riconducibile). Senza Higgsfield le cuciture restano `null` (composizione A):
+il sito è intero, senza vita fotografica — e la lista di Max lo dice a chiare lettere.
+
+## §2-bis — LA VITA: le tredici aggiunte con immagine (tavola: https://claude.ai/code/artifact/25405882-779a-43ce-a9a3-91c65c36b34e)
+
+Casting riusato dal manifest v2 (`6565545f:public/aura/manifest.json`), spostato dalle sezioni sostituite alle **cuciture** fra le sezioni
+esistenti. Formato: 21/7 cuciture · 4/5 ritratti · 1/1 specchio. Trattamento B (`saturate(.78) contrast(1.08) brightness(.9)` +
+vignetta + grana overlay .55) tranne l'elmo (acciaio). Riga su banda scura ≥ 7:1, ≤ 90 caratteri, un fatto o una provocazione pagata.
+
+| # | Aggiunta | ▸ dopo | Foglio AURA (brief) | Riga | Altezza | Input |
+|---|---|---|---|---|---|---|
+| V0 | **La firma** (ritratto + riga, 2 colonne) | `<Hero />` | 2 · cappello, luce di taglio | «Ho costruito il primo sistema per me. Poi ho smesso di venderlo come "tool".» | ≤ 480 | **ritratto di Max** |
+| V1 | Fascia-lampo dei fatti (CSS) | `<Firma />` | — | 3 sistemi · 7 giorni · 300 msg/giorno · 0 canoni · 90 giorni | ≈ 90 | nostro |
+| S | Foto nello **Specchio** (colonna nuova, sezione nostra) | dentro `specchio.tsx` | 22 · mano sul viso | «Ogni mattina. Trenta DM. A mano. Da tre anni.» | +0 | Higgsfield |
+| V2 | Cucitura — il concorrente | `<Competitors />` | 16 · silhouette, tre finestre | «Non ha un nome. Ha un sistema. E ha i tuoi clienti.» | ≤ 360 | Higgsfield |
+| V3 | Cucitura — arrivato prima | `<ListenUp />` | 30 · pugile in piedi | «Non è più forte. È arrivato prima.» | ≤ 360 | Higgsfield |
+| V4 | Cucitura — le serate tue | `<FlowFramework />` | 35 · whisky, luce calda | «Il giorno dopo il go-live: 30 giorni di monitoraggio nostri. Le serate tue.» | ≤ 360 | Higgsfield |
+| V5 | **Guardalo girare** (video) + cucitura | `<OutreachInside />` | 14 · armatura, ciambella | «Ha già mandato 300 messaggi. Tu stai facendo colazione.» | ≤ 620 | **video** (Max o mio oscurato) + Higgsfield |
+| V6 | Cucitura — un argomento entra | `<ContentOutput />` | 21 · occhiali, braccia conserte | «Un argomento entra. Carosello, reel, caption escono. Senza toccare niente.» | ≤ 360 | Higgsfield |
+| A6 | Immagini vere in **prove-vere** | dentro `prove-vere.tsx` | — (PDF oscurato, dashboard) | didascalie con fonte | +0 | nostro (+consenso nome) |
+| V7 | **La stanza — tre volti** | `<WhoGuides />` | 10 · 33 · 32 (posa, b/n) | «Tre persone. Nessun account manager in mezzo.» | ≤ 640 | **3 ritratti** |
+| A2a | Fascia-prenota — il canone (foto + bottone) | `<PricingROI />` | 1 · banconote, asciugatrice | «Dodici canoni all'anno per un tool che non sa chi sei.» → `/prenota/?da=prezzi` | ≤ 300 | Higgsfield |
+| V8 | Cucitura — garanzia (acciaio) | `<MyPromise />` | 25 · elmo | «Se il sistema non gira come scritto, lo rifacciamo. Non "ti richiamiamo".» | ≤ 360 | Higgsfield |
+| A2b | Fascia-prenota — ciao (foto + bottone) | `<Objections />` | 29 · saluta dal finestrino | «Ci licenzi quando vuoi. Il codice resta tuo. Ciao.» → `/prenota/?da=obiezioni` | ≤ 300 | Higgsfield |
+| V9 | Coda legale (`null` senza dati) | prima del `<footer>` | — | ragione sociale · P.IVA · sede · PEC · privacy · cookie | ≤ 160 | **dati legali** |
+
+**Numeri del casting:** 8 still-brief + 4 ritratti veri + 1 video + PDF/dashboard = **13-15 immagini** su ≈ 43.500 px → 0,33/1.000 px.
+**Scartati dal casting:** 9 (formula/canone: il conto sta in A2a), 36 (per-chi: `audience` esiste, nessuna cucitura lì — tre foto in
+1.500 px sarebbero troppe), 12/20/27/34 (occhi rossi, corone: fuori registro, già scartati nel v2).
+
+**Mappa della pagina (dall'alto):** Header · Sticky · Hero · **V0** · **V1** · VSL · ScienceStats · Audience · Problems · Specchio(**+S**)
+· Competitors · **V2** · ListenUp · **V3** · divider · Hierarchy · Pillars · FlowFramework · **V4** · divider · SystemsShowcase ·
+OutreachDeep · OutreachInside · **V5** · ContentDeep · ContentOutput · **V6** · BrainDeep · SecondBrainInside · Results · ProveVere(**+A6**)
+· NoFluff · ToolStack · divider · PowerDeck · divider · WhoGuides · **V7** · BuilderNotTrainer · Bonuses · PricingROI · **A2a** · Clarity ·
+MyPromise · **V8** · Objections · **A2b** · FAQ · divider · CosaOttieni · FinalCTA · FinalOffer · AboutStory · **V9** · footer.
+Controllo «mai due di fila»: fra ogni coppia di aggiunte con foto c'è almeno una sezione di giugno. ✔
+
+**Pipeline (identica al 37, riusata):** `public/aura/manifest.json` (posti V0-V8, S, A2a/b: `alt`, riga, trattamento, `file_pubblico`,
+`sorgente`) → `scripts/aura_prep.py` (ritaglio al formato, trattamento, WebP ≤ 160 KB, contrasto banda ≥ 7:1, `--check`) →
+`components/vivo/aura.tsx` (`<Aura posto="V2"/>` rende `null` senza file) → `sezioni-aggiunte/cucitura.tsx` (una sola componente per
+V2-V8, parametri: posto, riga, ancora) · `fascia-prenota.tsx` (cucitura + `BottonePrenota`) · `firma.tsx` · `stanza.tsx` · `guardalo-girare.tsx`.
+CSS: `vivo.css` ha già `.foto`, `.riga`, `.cuc`, `.due-col` scopati sotto `.vivo`: si aggiungono solo `.cuc--wide` e `.firma`.
+
+---
+
 # §6 — V4 ESECUTIVO (P3 messo in fasi)
 
 Ogni fase: **comandi**, **gate exit 0**, **output**, **chi**, **ore**, **peso nel battito**. Il «vai» di Max apre F0.
@@ -182,13 +243,13 @@ agency-empire-landing-live-20260912 --cartella agency-empire-landing` exit 0 · 
 | F0 | **Apertura** | BRIEF aggiornato (§0, URL + `project.json` + frase di Max); domanda C3.3; baseline: altezza px, Lighthouse mobile del live (`npx serve out` o live), n. CTA; deploy di X3A4 (og.jpg) lanciato da Max | baseline in `MISURA-DOPO.md`; og.jpg 200 sul live | Emperator (+Max: deploy) | 1 | 5% |
 | F1 | **Misura (A3)** | `npm i @vercel/analytics`; `src/sezioni-aggiunte/analytics.tsx` (5 eventi, legge `?da=`, ascolta `calendly.event_scheduled`); `layout.tsx` +2 righe | eventi visibili nel `console.debug` in dev; `package.json` +1/−0 | Emperator | 3 | 15% |
 | F2 | **Ultimo metro (A2 + A10)** | `fascia-prenota.tsx` ×2 (dopo `<PricingROI />`, dopo `<Objections />`, testo diverso, `aria-label` diverso); `/prenota/` stato «prenotato» via `postMessage`; slug Calendly quando c'è | +2 righe in `page.tsx`; altezza +≤ 240 px; test manuale della prenotazione in anteprima | Emperator | 4 | 15% |
-| F3 | **Prova (A6 + scheletro A5)** | immagini in `prove-vere.tsx` (PDF PreventivoForge oscurato: banda ≥ 7:1, `aura_prep.py`), `guardalo-girare.tsx` (video slot, `null` senza `src`, `<details>`); proposta: registrazione mia con `--prova` oscurato → anteprima a Max | `aura_prep.py --check` PASS; testo di `prove-vere` = live (gate parte A: solo `insert`) | Emperator (+Max: video o ok alla mia registrazione) | 4 | 15% |
-| F4 | **Vita (A1 + scheletro A4)** | `fascia-lampo.tsx` (CSS only, reduced-motion statica) dopo `<Hero />`; `stanza.tsx` (3 ritratti, `null` senza file) dopo `<WhoGuides />`; `public/aura/manifest.json` con i 3 posti | 0 KB JS aggiunto; §7 verificato con emulazione reduced-motion; altezza +≤ 730 px | Emperator (+Max: ritratti) | 4 | 15% |
-| F5 | **Pronto (A7 + A8)** | `coda-legale.tsx` prima del footer (`null` con `legal.ts` vuoto); JSON-LD in `layout.tsx` (+1 `<script type="application/ld+json">`), `public/sitemap.xml`, `public/robots.txt` | validatore schema 0 errori; `sitemap.xml` 200 in anteprima | Emperator (+Max: dati legali, noindex) | 3 | 10% |
+| F3 | **Prova (A6 + V5)** | immagini in `prove-vere.tsx` (PDF PreventivoForge oscurato: banda ≥ 7:1), `guardalo-girare.tsx` (video slot `null` senza `src` + cucitura 14); `aura.tsx` + `aura_prep.py` + manifest riportati dal v2 come file nuovi; proposta: registrazione mia oscurata → anteprima a Max | `aura_prep.py --check` PASS; testo di `prove-vere` = live (solo `insert`) | Emperator (+Max: video) | 5 | 15% |
+| F4 | **Vita (V0-V8 + S + A2a/b)** | `cucitura.tsx` (una componente, 7 posti), `firma.tsx` dopo `<Hero />`, `fascia-lampo.tsx` CSS-only, `stanza.tsx` dopo `<WhoGuides />`, colonna foto in `specchio.tsx`, `fascia-prenota.tsx` ×2; manifest con i 13 posti; senza file ogni posto rende `null` → **il sito va online intero anche a zero immagini** | 0 KB JS oltre il player; reduced-motion; densità ≤ 0,6/1.000 px; mai due di fila; altezza +≤ 4.900 px totali; gate solo-aggiunte exit 0 | Emperator (+Max: ritratti, Higgsfield) | 8 | 20% |
+| F5 | **Pronto (V9 + A8)** | `coda-legale.tsx` prima del footer (`null` con `legal.ts` vuoto); JSON-LD in `layout.tsx`, `public/sitemap.xml`, `public/robots.txt` | validatore schema 0 errori; `sitemap.xml` 200 in anteprima | Emperator (+Max: dati legali, noindex) | 3 | 5% |
 | F6 | **Accensioni** | per ogni gesto di Max arrivato: file in `public/`, una riga in `contatti.ts`/`legal.ts`, `aura_prep.py`; **anteprima a Max** prima di `--prod` | manifest `--check` PASS; screenshot guardati da Max | Emperator + Max | 3 | 15% |
 | F7 | **Chiusura** | `MISURA-DOPO.md` (px, CTA, Lighthouse, eventi arrivati), `LEZIONE.md` esito, pattern promossi (`fascia-prenota`, `coda-legale`, `fascia-lampo` già c'è), CP, STATO, wiki, chiusura ripresa | criterio C3.4 (a)-(e) | Emperator | 1 | 10% |
 
-**Totale corsia nostra: ≈ 20 h · +≤ 3.000 px · 0 righe rimosse.** Le accensioni (F6) valgono il 15% e arrivano
+**Totale corsia nostra: ≈ 25 h · +≤ 4.900 px (P4) · 0 righe rimosse.** Le accensioni (F6) valgono il 15% e arrivano
 quando Max muove i suoi pezzi: il battito dice **«nostra X% · Max Y%»**.
 
 ## Politica di guasto (ADR-028)
@@ -199,8 +260,8 @@ quando Max muove i suoi pezzi: il battito dice **«nostra X% · Max Y%»**.
 - Max boccia un'aggiunta vista online → si **toglie** quell'aggiunta (file nostro), si scrive in `LEZIONE.md`, il resto resta.
 
 ## Percentuale nel battito
-`% = Σ pesi delle fasi chiuse col gate a exit 0`, due numeri: **nostra** (F0-F5, F7 = 85%) e **Max** (F6 = 15%, per
-gesto: ritratti 5 · video 4 · legale 3 · Calendly 2 · noindex 1). 100% solo a cantiere chiuso (C3.4), mai a pezzo finito.
+`% = Σ pesi delle fasi chiuse col gate a exit 0`, due numeri: **nostra** (F0-F5, F7 = 85%: 5+15+15+15+20+5+10) e **Max** (F6 = 15%,
+per gesto: ritratti 4 · Higgsfield 4 · video 3 · legale 2 · Calendly 1 · noindex 1). 100% solo a cantiere chiuso (C3.4), mai a pezzo finito.
 
 ---
 
@@ -210,11 +271,11 @@ gesto: ritratti 5 · video 4 · legale 3 · Calendly 2 · noindex 1). 100% solo 
 |---|---|---|---|
 | `cd agency-empire-landing && npx vercel --prod --yes` | og.jpg + refusi corretti (X3A4) e ogni fase successiva | ultimo metro di ogni fase | STATO-EMPIRE, in cima |
 | Evento Calendly «Chiamata Digital Empire · 30 min» (slug) | `/prenota/` coerente (oggi apre «90% formazione 10% Peach · 1 h») | alto: è la porta | F2 |
-| 3 ritratti (Max, Gael, Leonardo), anche da telefono, luce naturale | la stanza dei tre volti (A4) + hero due composizioni in futuro | alto: 0 volti oggi | F4 → F6 |
+| **4 ritratti** (Max per la firma V0 + Max, Gael, Leonardo per la stanza V7), anche da telefono, luce di taglio | il primo volto sotto l'hero + la stanza | alto: 0 volti oggi | F4 → F6 |
 | Video 60-90 s del sistema che gira (o «sì» alla mia registrazione oscurata) | Guardalo girare (A5) | alto: la prova che manca | F3 → F6 |
 | Ragione sociale, P.IVA, sede, PEC | coda legale (A7), `/privacy/` `/cookie/` completi | medio: fiducia + obbligo | F5 → F6 |
 | Consenso scritto Novacar/Preventa al nome | il nome nel caso di `prove-vere` | medio | F3 |
-| Higgsfield Plus (dossier 28) | immagini AURA nelle sezioni nostre (A9) | medio | F6 |
+| **Higgsfield Plus** (dossier 28) | le 8 cuciture + specchio + 2 fasce: **la vita fotografica del sito** (senza, restano `null`) | **alto** | F6 |
 | Toggle **Web Analytics** nel progetto Vercel | i 5 eventi arrivano | alto: senza, si costruisce al buio | F1 |
 | **Decisione:** togliere `noindex` | A8 vale; il sito esiste per Google | tua | F5 |
 | **Decisione:** CTA vecchie → `/prenota/` | fine dei 3 salti col brand del corso (modifica: anteprima prima) | tua | — |
