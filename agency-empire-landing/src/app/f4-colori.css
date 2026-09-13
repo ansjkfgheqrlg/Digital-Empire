@@ -1,0 +1,13 @@
+/* f4-colori.css — F4 (dossier 40, ordini di Max 13/09 sera). Importato DOPO scala.css: le regole F4 vincono su ritocchi/scala per ordine di Max. */
+
+/* B2 — IL gradiente di Max (all. 06): argento lilla → arancio in basso a destra, con grana. UNA variabile per tutti i riempimenti. */
+:root {
+  --grad-max: linear-gradient(160deg, #d3cfda 0%, #bdb8c6 36%, #d9905f 70%, #ea7430 100%);
+}
+.grad-max { position: relative; background: var(--grad-max); color: #141414; isolation: isolate; }
+.grad-max::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0; opacity: .30; mix-blend-mode: overlay; border-radius: inherit;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch' seed='4'/><feColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0.7 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+.grad-max > * { position: relative; z-index: 1; }

@@ -10,6 +10,10 @@ import "./rifatte-a.css"; // sezioni di giugno RIFATTE (stesso testo): VSL, Cont
 import "./rifatte-b.css"; // sezioni di giugno RIFATTE (stesso testo): SystemsShowcase, Objections, Competitors, FinalOffer
 import "./ritocchi.css"; // ritocchi in solo CSS alle sezioni di giugno (ordine di Max 13/09) - dossier 39B par.2
 import "./scala.css"; // de-ingrandimento (ordine di Max 13/09) - dossier 39B par.1.3; DEVE restare ultimo
+import "./f4-hero.css"; // F4 (dossier 40): hero pulito, card fluttuanti, nastro sottile — dopo scala.css su ordine di Max
+import "./f4-colori.css"; // F4: --grad-max, card Tre sistemi + 7gg/300+/0€, titolo largo, grana Numeri/Per chi, frase barrata, freccia #02
+import "./f4-storia.css"; // F4: sezione nuova «storia dei preventivi»
+import "./f4-brain.css"; // F4: Due tipi con texture grana-fuoco, Second Brain blu + 3 card, cervello
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 const onest = Onest({

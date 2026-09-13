@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 // AGGIUNTE D1/D2 (ordine di Max, 13/09): texture sotto, funnel sotto la CTA. Inserimenti puri, nulla di rimosso.
 import { HeroTexture } from "@/sezioni-aggiunte/hero-texture";
 import { FunnelHero } from "@/sezioni-aggiunte/funnel-hero";
+import { HeroCards } from "@/sezioni-aggiunte/hero-card"; // F4 A5
 
 function CTA({
   large = false,
@@ -29,6 +30,7 @@ export function Hero() {
   return (
     <section className="bg-ink relative overflow-hidden section-border-t">
       <HeroTexture />
+      <HeroCards />
       {/* Marquee */}
       <div
         className="overflow-hidden py-3 relative"

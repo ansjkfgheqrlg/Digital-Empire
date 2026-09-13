@@ -22,8 +22,9 @@ W, H = 3840, 2000
 FEATHER, OVERLAP, GIUNTO = 150, 90, 120
 
 
-def main():
-    src = Image.open(os.path.join(TEX, "hero-onde-ORIGINALE.jpg")).convert("RGB")
+def main(nome_src="hero-onde-ORIGINALE.jpg", nome_out="hero-onde", W=W, H=H):
+    """Stesso metodo per ogni texture di Max: `py -3 scripts/texture_hero_tile.py grana-fuoco-ORIGINALE.jpg grana-fuoco 3840 1400`."""
+    src = Image.open(os.path.join(TEX, nome_src)).convert("RGB")
     sw, sh = src.size
     scale = H / sh
     tw, th = round(sw * scale), H
@@ -57,10 +58,15 @@ def main():
             d.line([(cx + k, 0), (cx + k, H)], fill=a)
     canvas = Image.composite(Image.new("RGB", (W, H), (0, 0, 0)), canvas, velo)
 
-    canvas.save(os.path.join(TEX, "hero-onde.jpg"), quality=90, subsampling=0, optimize=True)
-    canvas.save(os.path.join(TEX, "hero-onde.webp"), quality=86, method=6)
+    canvas.save(os.path.join(TEX, nome_out + ".jpg"), quality=90, subsampling=0, optimize=True)
+    canvas.save(os.path.join(TEX, nome_out + ".webp"), quality=86, method=6)
     print("tessera %dx%d, %d doppioni, tela %dx%d" % (tw, th, min(n, W // step + 1), W, H))
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    a = sys.argv[1:]
+    if len(a) >= 2:
+        main(a[0], a[1], int(a[2]) if len(a) > 2 else W, int(a[3]) if len(a) > 3 else H)
+    else:
+        main()
