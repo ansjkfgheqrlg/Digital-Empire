@@ -3,6 +3,12 @@
 Tutto il Dossier 38 v2 è costruito e in anteprima (CP-PP3C). Gael/Neri: NON toccare `agency-empire-landing/` finché questo blocco non sparisce.
 Il `--prod` resta di Max.
 
+## 🟠 2026-09-13 sera (tardi) — SITO AGENCY: texture di Max a SCALA NATURALE, ripetuta con giunti sfumati — ANTEPRIMA, aspetta Max — CP-20260913-NKU3
+
+**Gesto solo di Max (ADR-026):** guardare https://agency-empire-landing-d3ubguykh-maximilians-projects-f0964962.vercel.app/ (aperta) → se va, `--prod`.
+**Fatto:** D2JA bocciata («ingrandita, qualità pessima, non si vede tutta») → `scripts/texture_hero_tile.py`: tessera intera a tutta altezza, mai
+ingrandita (desktop ≈0,57), ripetuta 4× specchiata con giunti sfumati a nero. Commit `a5711ee1`. Regola: le texture di Max si ripetono, mai si ingrandiscono.
+
 ## 🟠 2026-09-13 sera (tardi) — SITO AGENCY: l'immagine VERA di Max nell'hero — ANTEPRIMA, aspetta Max — CP-20260913-D2JA
 
 **Gesti solo di Max (ADR-026, in cima; non bloccano):** 1) guardare https://agency-empire-landing-60o6uts62-maximilians-projects-f0964962.vercel.app/

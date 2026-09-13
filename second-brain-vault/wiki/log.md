@@ -2408,3 +2408,4 @@ dei consigli raccolti), su ordine esplicito di Max.
 
 ## 2026-09-13 (sera, tardi)
 - AGGIORNAMENTO: sito agency hero — immagine vera di Max estratta dal transcript (CP-20260913-D2JA); lezione in emperator.md §6.25 → 0 pagine wiki nuove (aggiornamento ricade in Progetto_Sito_Agency_Vivo alla prossima sync)
+- AGGIORNAMENTO: hero texture a scala naturale ripetuta (CP-20260913-NKU3), generatore texture_hero_tile.py

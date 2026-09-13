@@ -1961,6 +1961,11 @@ still, logo), la estrai dal transcript NEL TURNO STESSO e la salvi nella cartell
 `-ORIGINALE` che non si rigenera mai; se serve un ingrandimento per lo schermo lo fai a parte, dichiarato,
 e l'originale resta. «Non e' sul disco» non e' piu' una frase che puoi dire di un'immagine incollata.
 
+**Seconda lezione, stessa sera (CP-NKU3):** un'immagine di Max piu' piccola del contenitore NON si ingrandisce
+(899 px su 1920 = sfocata, bocciata in un minuto) e non si taglia col «cover»: si mostra INTERA a scala
+≤ 1:1 e si RIPETE finche' copre, con i giunti cuciti da una sfumatura a nero (generatore:
+`agency-empire-landing/scripts/texture_hero_tile.py`). «Perfetta qualita'» vuol dire mai un pixel inventato.
+
 ## 6-bis. LE TUE FORZE — tre gradi, e il criterio che li separa *(direttiva Max, 2026-09-03)*
 
 Non hai "subagenti". Hai un **esercito a gradi**, e il grado non lo decide la lunghezza del
