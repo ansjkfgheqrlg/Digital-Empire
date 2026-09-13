@@ -2,6 +2,9 @@
 
 - **Codice di ripresa:** `EMP-XR4F`
 - **Aperto:** 2026-09-12
+- **Stato (13/09 pomeriggio, CP-20260913-PP3C):** APERTO — **TUTTO il Dossier 38 v2 è in ANTEPRIMA** https://agency-empire-landing-1i1sc5nzy-maximilians-projects-f0964962.vercel.app/
+  (16 sezioni nuove + 2 estese + 3 scheletri null; 3 scagnozzi con brief `cantieri/agency-empire-landing-vivo/BRIEF-F2-TUTTE-LE-AGGIUNTE.md`), gate PASS, commit `660ff21e`.
+  Prossimo: sguardo di Max → correzioni → suo `--prod` → F6 accensioni (ritratti, foto, video, legale, texture vere, Calendly) → B-089 still generati → MISURA-DOPO/LEZIONE/pattern.
 - **Stato (13/09 pomeriggio, CP-20260913-DWDE):** APERTO — «vai» ricevuto. **F1 in ANTEPRIMA** https://agency-empire-landing-lf5uapfvv-maximilians-projects-f0964962.vercel.app/
   (D1 texture + D2 funnel + A02 rail + A01 null), gate PASS, commit `a1dc3453`. Texture in `public/texture/` = approssimazioni (Max sovrascrive). Prossimo: sì di Max → suo `--prod`; poi F1b = D3 + D4 + D5 in anteprima.
 - **Stato (13/09 pomeriggio, CP-20260913-AQXZ):** APERTO — Max ha ribadito D1-D5 e aggiunto **D6 grana**; **Tavola v2.1** pubblicata (stesso URL) con le sei tavole D in cima

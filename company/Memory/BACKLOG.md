@@ -459,3 +459,4 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
 - **B-071 → aggiornata:** vale per `agency-empire-landing` N11 (`n11-prove.tsx`), non più per il sito sbagliato.
 - **B-072 → aggiornata:** i posti sono 15 nel manifest di `agency-empire-landing/public/aura/manifest.json` (10 generati + 4 ritratti + 1 screenshot);
   senza file la composizione B tiene il layout, nessun segnaposto.
+- **B-089** (2026-09-13, agency-landing) — Gli still cinematografici in pagina (silhouette D4, uomo con la mano sul viso D5, colazione A09, elmo A19) sono immagini di film: diritti d'immagine non nostri. Sostituirli con still generati (Higgsfield, brief unico §C6 del dossier 38 v2) o foto vere prima o subito dopo il `--prod`. `src/lib/media.ts` + `public/aura/`.

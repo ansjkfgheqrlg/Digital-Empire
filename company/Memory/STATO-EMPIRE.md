@@ -1,17 +1,19 @@
-## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing F1 (D1 texture + D2 funnel-hero + A01/A02) — Emperator con Max
+## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing (F2 in anteprima, aspetto Max) — Emperator con Max
 
-«vai» di Max ricevuto alle ~13:30. F1 è in anteprima (CP-DWDE); ora F1b (D3/D4/D5). Sto toccando SOLO `agency-empire-landing/` (file nuovi in `src/sezioni-aggiunte/`, `src/lib/media.ts`,
-`src/app/aggiunte-hero.css`, inserimenti in `hero.tsx`/`page.tsx`/`layout.tsx`, `public/texture/`). Gael/Neri: non aprire quella cartella
-finché questo blocco non sparisce. Deploy solo in ANTEPRIMA (`npx vercel`), il `--prod` resta di Max.
+Tutto il Dossier 38 v2 è costruito e in anteprima (CP-PP3C). Gael/Neri: NON toccare `agency-empire-landing/` finché questo blocco non sparisce.
+Il `--prod` resta di Max.
 
-## 🟠 2026-09-13 pomeriggio — SITO AGENCY F1 IN ANTEPRIMA: texture nell'hero + funnel + rail — aspetta lo sguardo di Max — CP-20260913-DWDE
+## 🟠 2026-09-13 pomeriggio — SITO AGENCY: TUTTE LE SEZIONI in ANTEPRIMA (F1+F2) — aspetta lo sguardo di Max — CP-20260913-PP3C
 
-**Gesti solo di Max (ADR-026, in cima; non bloccano):** 1) guardare l'anteprima https://agency-empire-landing-lf5uapfvv-maximilians-projects-f0964962.vercel.app/
-(già aperta nel suo browser; da loggato su Vercel) e dire sì/no; 2) se sì: `cd agency-empire-landing && npx vercel --prod --yes`; 3) mettere le sue due texture
-vere in `agency-empire-landing/public/texture/` (`hero-onde.jpg`, `grana-fuoco.jpg` — oggi ci sono approssimazioni con lo stesso nome).
-**Fatto:** D1 texture sotto l'hero con velo misurato (h1 ≥ 9,6:1), D2 titolo più in alto (CSS) + funnel a 4 blocchi con frecce SVG, A02 rail dei fatti,
-A01 firma (null senza ritratto). Solo inserimenti: `hero.tsx` +10, `page.tsx` +5, `layout.tsx` +1, 0 righe rimosse, **gate PASS**. Commit `a1dc3453`.
-**Segnalato, non toccato:** su mobile «operatività» esce dal bordo (era così anche prima). **Prossimo:** F1b = D3 + D4 + D5 in anteprima.
+**Gesti solo di Max (ADR-026, in cima; non bloccano):** 1) guardare l'anteprima completa https://agency-empire-landing-1i1sc5nzy-maximilians-projects-f0964962.vercel.app/
+(aperta nel suo browser; da loggato su Vercel) e dire cosa cambia; 2) se va: `cd agency-empire-landing && npx vercel --prod --yes`; 3) le sue 2 texture vere in
+`agency-empire-landing/public/texture/` (oggi approssimazioni con lo stesso nome); 4) i pezzi che accendono i posti vuoti: 4 ritratti (firma, stanza, garanzia),
+4 foto di lavoro, video, dati legali, Calendly 30′.
+**Fatto:** dopo il richiamo di Max («dove sono tutte le sezioni?») costruito TUTTO il catalogo in un colpo con 3 scagnozzi: 16 sezioni nuove montate
+(D3 fascia texture, D4 competitor, A05 prima/dopo, A07 scala, A08 cartella, A09 guardalo girare, A10+A20 due tipi, A12 rail sistemi, A16 mappa, A17 tessera,
+A18 quanto costa, A19 garanzia, A21 FAQ+JSON-LD…) + Specchio con foto + PDF vero nelle prove; 3 scheletri `null` (stanza, dietro le quinte, coda legale).
+`page.tsx` +33, `layout.tsx` +3, **0 righe rimosse, gate PASS**, pagina +11.594 px (+30%, sopra il budget del piano: dichiarato). Commit `660ff21e`.
+**Rischio dichiarato:** still cinematografici in pagina (D4, D5, A09, A19) → B-089: sostituire con still generati/foto vere prima o subito dopo il prod.
 
 ## 🎨 2026-09-13 pomeriggio — SITO AGENCY: le decisioni di Max RIBADITE (D1-D5) + D6 grana; TAVOLA v2.1 con le sei tavole D — CP-20260913-AQXZ
 
