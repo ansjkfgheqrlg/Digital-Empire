@@ -5,9 +5,11 @@
  */
 export const TEXTURE = {
   /** D1 — onde di linee puntinate arancioni (sfondo dell'hero). È L'IMMAGINE DI MAX (13/09 sera, incollata in chat,
-   *  estratta dal transcript e salvata in public/texture/hero-onde-ORIGINALE.jpg, 899×1748): hero-onde.jpg/.webp è la stessa
-   *  immagine ingrandita 2× Lanczos + unsharp leggero per non sfocare sui 1920 del desktop. Nessuna approssimazione. */
-  heroOnde: { src: "/texture/hero-onde.jpg", webp: "/texture/hero-onde.webp", width: 1798, height: 3496 } as const,
+   *  estratta dal transcript e salvata in public/texture/hero-onde-ORIGINALE.jpg, 899×1748). hero-onde.jpg/.webp (3840×2000) =
+   *  la tessera INTERA a tutta altezza, MAI ingrandita (sul desktop 1x è rimpicciolita ≈0,57), ripetuta 4× in orizzontale
+   *  (alternate specchiate) con giunti sfumati a nero — ordine di Max 13/09 sera: «doppioni fino a coprire, sfumatura scura sui tagli».
+   *  Generatore: scripts/texture_hero_tile.py. Nessuna approssimazione. */
+  heroOnde: { src: "/texture/hero-onde.jpg", webp: "/texture/hero-onde.webp", width: 3840, height: 2000 } as const,
   /** D3 — grana arancione con strisce scure diagonali (fascia-manifesto). */
   granaFuoco: { src: "/texture/grana-fuoco.jpg", width: 2400, height: 1000 } as const,
 } as const;

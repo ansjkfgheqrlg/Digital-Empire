@@ -2,7 +2,7 @@
 
 hero-onde-ORIGINALE.jpg -> L'IMMAGINE DI MAX, intatta (899x1748), incollata in chat il 13/09 sera ed estratta dal transcript
                            della sessione. Non toccare, non rigenerare.
-hero-onde.jpg / .webp   -> la STESSA immagine ingrandita 2x (Lanczos + unsharp leggero) per restare nitida sui 1920 del desktop.
+hero-onde.jpg / .webp   -> la STESSA tessera INTERA a tutta altezza, MAI ingrandita, ripetuta 4x in orizzontale con giunti sfumati a nero (scripts/texture_hero_tile.py).
                            Se Max consegna un file piu' grande, si sostituisce con lo stesso nome.
 grana-fuoco.jpg         -> ANCORA un'approssimazione generata (fascia piccola, D3). Max la sostituisce con la sua, stesso nome,
                            larghezza >= 2400 px.
