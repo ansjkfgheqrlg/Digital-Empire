@@ -282,6 +282,47 @@ solamente aggiungere.» — ADR-030.*
 
 ---
 
+## §14 — L'immagine si vede intera
+
+Un'immagine di contenuto — fotografia, illustrazione, oggetto, screenshot — **non si ritaglia con il CSS e non si
+ingrandisce oltre il suo pixel**. Il contenitore ha il rapporto del file (`aspect-ratio: w/h`), `object-fit:
+contain` o nessun `object-fit`. È servita a **2× della resa** (o `srcset` 1×/2×), porta `width` e `height`,
+`alt` che descrive (mai vuoto sul contenuto), `loading="lazy" decoding="async"` — tranne **una** immagine per
+pagina, l'hero, con `fetchPriority="high"`.
+
+Le immagini di fondo e le texture sono l'unica eccezione al ritaglio, e si dichiarano nel commento. La materia
+(grana, carta) vive nel file o nel CSS scopato, **mai come maschera che copre il soggetto**. Un'immagine troppo
+piccola per il posto non si allarga: **si cambia il posto** — una colonna al suo pixel, non una fascia.
+
+*Origine: la critica di Max del 13/09 («le immagini devono rimanere originali, devono vedersi completamente,
+qualità assoluta») e `funneloperator.it`, misurato il 13/09: 40 raster su 60 a 2× esatto, 1 sola immagine
+ritagliata in 30 sezioni, `width/height` su ogni `<img>` — `reports/66-funneloperator-STILE.md` §7 — ADR-031.*
+
+*Non derogabile.*
+
+---
+
+## §15 — Il volto prima, la richiesta dopo
+
+In una pagina che vende una chiamata o un servizio: il **primo volto vero entro il 10%** dell'altezza, la
+**prima prova** (numeri con fonte, screenshot, video) **entro il 30%**, la **prima CTA di vendita nuova non sopra
+il 50%**. Nella prima metà si usano micro-CTA di scorrimento («↓», ancore), non bottoni di vendita.
+
+**Una sola CTA fissa**, flottante, che compare dopo il primo schermo e **sparisce** quando la CTA di sezione o il
+footer sono in vista (`inert` quando nascosta). Le sezioni alternano superficie chiara/scura e testo/immagine:
+mai due blocchi da 150+ parole di fila, mai due immagini di fila senza testo.
+
+Sui siti già online (§13) i due articoli valgono **per le aggiunte**: l'esistente non si tocca, ma ogni aggiunta
+li rispetta e, dove può, cura il difetto dell'esistente.
+
+*Origine: `funneloperator.it` — primo volto a y=2.793 (8,5%), rail dei numeri a y=3.156, primo bottone di
+acquisto a y=20.998 (64%), bottone flottante a tre sentinelle — `reports/66-funneloperator-STRUTTURA-STRATEGIA.md`
+§3, `66-funneloperator-COSTRUZIONE.md` §9 r.8 — ADR-031.*
+
+*Non derogabile.*
+
+---
+
 ## Come si cambia questa legge
 
 Non si cambia in una conversazione. Si cambia con un **ADR** in `company/Memory/decisions/`, che
@@ -299,6 +340,7 @@ contraddicevano e nessuna aveva torto.
 - `company/Memory/decisions/ADR-024-canone-v2-primo-strato.md` — §11 e §12, i pattern `pre-cassa` e
   `pagina-ponte`, i quattro controlli in attesa del gate
 - `company/Memory/decisions/ADR-030-sito-online-solo-aggiungere.md` — §13 e `scripts/gate_solo_aggiunte.py`
+- `company/Memory/decisions/ADR-031-immagine-intera-e-ritmo-della-pagina.md` — §14 e §15, da `reports/66-funneloperator-*.md`
 - `competitor/Andrei Pascu/site-study/reports/11-armageddon-ATLANTE-VISIVO.md` — le misure da cui
   nasce metà di questo canone
 - `competitor/Andrei Pascu/site-study/reports/24-25-27-28-macchina-del-funnel.md` — la macchina del

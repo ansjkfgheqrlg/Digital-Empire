@@ -444,6 +444,18 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
   che segue `}` o un tag inline perde lo spazio iniziale → segnalare e chiedere `{" "}` esplicito (caso reale: `prove-vere.tsx`, 23 h online).
 - **B-082 — FATTA lo stesso giorno (2026-09-12).** Stampo `fabbrica-siti/scripts/og_stampo.py` (titolo, accento, sottotitolo, dominio →
   `og.jpg` 1200×630, grana PNG, font del canone); `agency-empire-landing/public/og.jpg` è generato da lì.
+- **B-083 — NUOVA (2026-09-13).** Studio funneloperator.it: aggiornare `SINTESI-SISTEMA-VISIVO.md` e `sintesi_visiva.py` con la scheda 66
+  (prima pagina «app React» dell'ecosistema: terza famiglia oltre Squarespace e artigianale).
+- **B-084 — NUOVA (2026-09-13).** `canone.css`: scala dell'accento in 4 luci (`--orange-light/-base/-hover/-deep`, hover più chiaro, active più
+  scuro) e regola «fondo di sezione mai `#000`/`#fff`» in `canone.json` (FO-C01/C02).
+- **B-085 — NUOVA (2026-09-13).** `canone.css`: quattro spazi in clamp (`--spazio-blocchi/sezioni/vendita/area`) + `--curva` unica e 4 tempi
+  (120/160/320/90 ms) (FO-C04/C07); utility scopate `.vivo .py-vendita` ecc.
+- **B-086 — NUOVA (2026-09-13).** `gate_siti.py` §14: FAIL se nei `.tsx` delle sezioni nuove c'è `<img` senza `width`/`height`, più di un
+  `fetchPriority`, `object-fit: cover` su `.foto` di contenuto, raster servito sotto 2× (confronto px file / px resi), `process.env)` chiuso senza chiave.
+- **B-087 — NUOVA (2026-09-13).** `gate_siti.py`: FAIL se nella build compare `FINTO —` o `— da girare` (placeholder autodichiarati: utili in anteprima,
+  mai in produzione — la lezione del 12/09 resa meccanica) (FO-T03/T11).
+- **B-088 — NUOVA (2026-09-13).** `gate_siti.py`: un rail parte solo con ≥ 5 immagini distinte; accordion con prima risposta aperta; `text-align: left`
+  nelle sezioni nuove (i tre difetti misurati su funneloperator, `66-funneloperator-SINTESI-STRATEGIE.md` §VI).
 - **B-071 → aggiornata:** vale per `agency-empire-landing` N11 (`n11-prove.tsx`), non più per il sito sbagliato.
 - **B-072 → aggiornata:** i posti sono 15 nel manifest di `agency-empire-landing/public/aura/manifest.json` (10 generati + 4 ritratti + 1 screenshot);
   senza file la composizione B tiene il layout, nessun segnaposto.

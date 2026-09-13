@@ -105,6 +105,7 @@ preziosa dell'intero studio.
 | `claude-speedrun.com` | 🟡 rapporto vecchio, **CSS/JS mai letti** |
 | `apsales.eu` | 🟡 rapporto vecchio, **CSS/JS mai letti** |
 | `apsales.eu/servizi` · `/landing-page` · `/consulenza` | ✅ catturate 2026-09-07 (rapporto + teardown di copy) |
+| **`funneloperator.it`** — il sito NUOVO del corso (dominio proprio, app React/TanStack + Supabase, 22 rotte) | ✅ **studiato 2026-09-13 in 4 rapporti + sintesi** (`reports/66-funneloperator-*.md`): struttura/strategia, stile, atlante visivo, costruzione; 68 media originali scaricati (`scarica_media.py`) |
 
 ### T2 — PAGINE CHE VENDONO su Squarespace: studio pieno meno il CSS di framework *(~9 pagine)*
 Il loro CSS è Squarespace: ventimila righe che non insegnano niente. Ma lo **schema**, il **copy**,

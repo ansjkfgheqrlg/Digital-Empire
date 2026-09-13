@@ -3,14 +3,14 @@ Type: TOOL
 Status: Active
 Tags: #fabbrica-siti #siti #landing #canone #gate #next-js #vercel #agency
 Created: 2026-09-12
-Last updated: 2026-09-12
+Last updated: 2026-09-13
 ---
 
 # Fabbrica Siti — la legge, il canone, le due corsie, i gate
 
 ## Overview
 Il sistema unico con cui Digital Empire produce qualunque sito o landing page (`.claude/skills/fabbrica-siti/`).
-Una **legge** numerata e citabile (`CLAUDE-SITI.md`, 13 articoli), un **canone** in due copie gemelle
+Una **legge** numerata e citabile (`CLAUDE-SITI.md`, 15 articoli), un **canone** in due copie gemelle
 (`canone.css` per il browser, `canone.json` per la macchina), **due corsie** (A vanilla ≤3 pagine senza stato ·
 B Next.js 16 per tutto il resto — ADR-023), **19 pattern** con scheda «quando sì / quando no» e una galleria
 generata, e **gate deterministici** che decidono al posto dell'agente (§9). Nasce il 2026-09-06 dallo studio del
@@ -35,6 +35,8 @@ wins here»*: il concorrente aveva una legge numerata, noi quattro skill che si 
 | 11 | La cassa ha un gradino (pre-cassa, 6 elementi, stampo `precassa.py`) | ADR-024 |
 | 12 | L'accento si spende una volta (un colore d'azione, una parola) | ADR-024 |
 | 13 | **Un sito online si può solo aggiungere** (il «prima» è il live; anteprima prima di `--prod`; gate meccanico) | **ADR-030**, 2026-09-12 |
+| 14 | **L'immagine si vede intera** (2× della resa, mai ritagliata dal CSS, `width/height`, lazy tranne l'hero; troppo piccola → si cambia il posto) | **ADR-031**, 2026-09-13 — funneloperator.it |
+| 15 | **Il volto prima, la richiesta dopo** (volto ≤ 10%, prova ≤ 30%, CTA di vendita > 50%, una sola CTA fissa che sparisce, alternanza chiaro/scuro) | **ADR-031**, 2026-09-13 — funneloperator.it |
 
 Si cambia solo con un ADR in `company/Memory/decisions/`. Una deroga senza citazione dell'articolo è un errore.
 

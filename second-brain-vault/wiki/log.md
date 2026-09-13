@@ -1,5 +1,9 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-13 (Emperator — studio funneloperator.it, 4 doom bot)
+- STUDIO: funneloperator.it catturato (site_capture2 + scarica_media: 68 originali) e analizzato in 4 rapporti (struttura/strategia 463, stile 846, atlante 987, costruzione 878 righe) + sintesi con strategie classificate FO-* → 1 pagina creata (sources/Source_Funnel_Operator_Sito_2026), Tool_Fabbrica_Siti aggiornata (§14-15), index.
+- LEGGE: ADR-031 → CLAUDE-SITI §14 «L'immagine si vede intera» + §15 «Il volto prima, la richiesta dopo»; 14 pattern candidati; B-083…B-088; MIGLIORAMENTI FO-001…012.
+
 ## 2026-09-13 (notte — Emperator, EMP-XR4F)
 - PIANO+TAVOLA: Dossier 38 P4 «la vita» (13 aggiunte con immagini, cuciture fotografiche, casting AURA) + Tavola Estetica solo-aggiunte pubblicata → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo). CP-20260913-T3U6.
 

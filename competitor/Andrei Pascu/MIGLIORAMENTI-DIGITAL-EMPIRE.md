@@ -64,6 +64,25 @@ corretto in casa).
 
 ---
 
+## 🟠 PROPOSTI — dal sito funneloperator.it (studio 2026-09-13, `site-study/reports/66-funneloperator-SINTESI-STRATEGIE.md`)
+
+| # | Candidato | Fonte | Area/Skill target |
+|---|---|---|---|
+| FO-001 | **§14 L'immagine si vede intera** (2×, mai ritagliata, width/height, lazy tranne hero) — **UFFICIALIZZATA** in CLAUDE-SITI via ADR-031 | STILE §7, ATLANTE §C | Fabbrica Siti (legge) |
+| FO-002 | **§15 Il volto prima (10%), la prova (30%), la richiesta dopo (50%+), una sola CTA fissa che sparisce** — **UFFICIALIZZATA** via ADR-031 | STRUTTURA §3, COSTRUZIONE r.8 | Fabbrica Siti (legge) |
+| FO-003 | Prezzo/offerta come **dato unico** → cifra, data, FAQ, JSON-LD | COSTRUZIONE §1, r.1 | già in `listino.ts`; estendere con `schema.ts` |
+| FO-004 | **Placeholder autodichiarati** («FINTO —», «— da girare») bloccati dal gate in produzione | COSTRUZIONE r.15 | `gate_siti.py` (B-087) |
+| FO-005 | **Consenso onesto** + analytics first-party minimale (visit: path, referrer, utm) | COSTRUZIONE r.11-12 | agency-empire-landing (B-043) |
+| FO-006 | **Scala dell'accento in 4 luci**, hover più chiaro | STILE §1.5, §6 | `canone.css` (B-084) |
+| FO-007 | **Quattro spazi in clamp + una curva** | STILE §3.2, §5.1 | `canone.css` (B-085) |
+| FO-008 | **17 schemi ricostruibili in HTML** (scala, albero, tessera, card gemelle, griglia 01-04, cartella) | ATLANTE §D | `pattern/_CANDIDATI-FUNNELOPERATOR.md` |
+| FO-009 | **Un solo registro illustrativo** (per noi: incisione argento su nero con grana) come brief unico per le immagini generate | ATLANTE §C | Fabbrica Siti / manifest AURA |
+| FO-010 | **Storia con foto «brutte» di lavoro** (7 foto, 14% della pagina) | STRUTTURA §4.4 | agency: `dietro-le-quinte` |
+| FO-011 | **Obiezioni in tre registri** (ostili / polarizzanti / FAQ in 2 gruppi + JSON-LD) | STRUTTURA §4.6 | agency: 3 aggiunte |
+| FO-012 | **Reduced-motion in tre strati** (CSS dissolvenza, variant, `matchMedia`) — forma esatta per §7 | STILE §5.4 | `vivo.css` |
+
+---
+
 ## 🟡 PROPOSTI — da valutare (gap segnalato, non urgente)
 
 | # | Candidato | Fonte | Area/Skill target |
