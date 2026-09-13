@@ -2,6 +2,9 @@
 
 - **Codice di ripresa:** `EMP-XR4F`
 - **Aperto:** 2026-09-12
+- **Stato (13/09 pomeriggio, CP-20260913-AQXZ):** APERTO — Max ha ribadito D1-D5 e aggiunto **D6 grana**; **Tavola v2.1** pubblicata (stesso URL) con le sei tavole D in cima
+  (texture **approssimate** da `texture_approx2.py`, funnel-hero HTML+SVG). Fatto il passo 2 di §4. **Restano:** passo 3 (artefatto piano → v2), le 2 texture vere di Max in
+  `agency-empire-landing/public/texture/` (cartella aperta, `LEGGIMI.txt`), poi «vai» → F1 in anteprima. Metodo tavola: `scratchpad/tavola38v3_build.py` (= v2 + `d_block.py` + `d_css.txt`, assemblato da `assemble_v3.py`).
 - **Stato (13/09, CP-20260913-EEV3):** APERTO — studio funneloperator.it ufficializzato (ADR-031 §14 §15); **Dossier 38 v2** (`…-v2.md`, sei atti, C5-C7, §I decisioni di Max D1-D5);
   **Tavola v2** https://claude.ai/code/artifact/a7cf07ac-d263-421c-8824-0600b9641384; da fare in chat nuova: tavole D1-D5, artefatto piano → v2 (https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca è ancora v1);
   Max mette le 2 texture in `public/texture/hero-onde.jpg` e `grana-fuoco.jpg`; poi «vai» → F1 (D2 funnel-hero + D1 texture + A01 firma + A02 rail) **in anteprima**.
@@ -50,7 +53,7 @@ Max. **Legge di Max (2026-09-12): niente di ciò che è online si modifica, si p
 
 ## 4. IL PROSSIMO PASSO ESATTO
 **(13/09, CP-20260913-EEV3) 1.** Leggere `PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE-v2.md` §F, §G, §I e `reports/66-funneloperator-SINTESI-STRATEGIE.md`.
-**2.** Rigenerare la Tavola v2 con le tavole D1-D5 (`scratchpad/tavola38v2_build.py` è nel checkpoint come metodo: still al pixel, contain, schemi in HTML; texture approssimate finché Max non dà i file) e ripubblicare sullo stesso URL.
+**2.** ~~Rigenerare la Tavola v2 con le tavole D1-D5~~ **FATTO 13/09 pomeriggio (CP-AQXZ, Tavola v2.1 D1-D6)** — (`scratchpad/tavola38v2_build.py` è nel checkpoint come metodo: still al pixel, contain, schemi in HTML; texture approssimate finché Max non dà i file) e ripubblicare sullo stesso URL.
 **3.** Portare l'artefatto del piano alla v2. **4.** Al «vai»: F1 in anteprima (`npx vercel` senza --prod), screenshot a Max, poi suo `--prod`.
 **(13/09 notte, CP-20260913-T3U6) P4 «la vita» nel dossier 38: 13 aggiunte con immagini, Tavola https://claude.ai/code/artifact/25405882-779a-43ce-a9a3-91c65c36b34e.**
 **(12/09 notte, CP-HTCV) IL PIANO C'È: `PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE.md` + artefatto https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca.**

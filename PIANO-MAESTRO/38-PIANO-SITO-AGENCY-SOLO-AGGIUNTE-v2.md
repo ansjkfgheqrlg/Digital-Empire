@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #agency #sito #solo-aggiunte #fabbrica-siti #piano #adr-030 #adr-031 #funneloperator
 Created: 2026-09-13
-Last updated: 2026-09-13 (v2 — riscritto dopo lo studio di funneloperator.it; P5 → C5 → P6 → C6 → P7 → C7 → V4; §I = le 5 decisioni di Max D1-D5; build su «vai»)
+Last updated: 2026-09-13 sera (v2.1 — D6 grana + Tavola v2.1 con D1-D6; v2 — riscritto dopo lo studio di funneloperator.it; P5 → C5 → P6 → C6 → P7 → C7 → V4; §I = le 5 decisioni di Max D1-D5; build su «vai»)
 ---
 
 # DOSSIER 38 v2 — SITO AGENCY, PIANO «SOLO AGGIUNTE» RISCRITTO SU FUNNELOPERATOR.IT
@@ -303,6 +303,12 @@ sopra ogni A\*.
 | **D3** | **La texture 2** (grana arancione su nero con strisce scure diagonali — allegato 2) fa lo sfondo di **una sezione piccola**, «quasi un elemento», con qualcosa scritto dentro. | nuova **fascia-manifesto** (≤ 320 px) dopo `<PowerDeck />`: la texture intera come sfondo (`cover`, eccezione §14 dichiarata), vignetta scura ai bordi per la leggibilità, una frase sola in grande — **«I tool si pagano. I sistemi si possiedono.»** — e un micro-CTA «↓». | **il file della texture** (`public/texture/grana-fuoco.jpg`) |
 | **D4** | **La sezione «Hai competitor e non lo sai»** (allegato 3 = N5 della v2: fascia arancione + asse «A MANO — TU sei qui — AUTOMATIZZATO» + silhouette con riga) **la voglio ad ogni costo**, migliorata nella qualità. | nuova `sezioni-aggiunte/competitor-vivo.tsx` dopo `<Competitors />` (A05 prima/dopo scivola dopo `<ListenUp />`): fascia arancione col titolo (unico fondo pieno arancione della pagina, §12) · corpo ink a due colonne · **immagine intera** al suo rapporto (§14: colonna 4/5, 2×, mai `cover`) con la **riga sotto l'immagine**, non sopra · asse in HTML con i tre punti e «sei qui» animato · testo «Stessi limiti tuoi. Il primo che li risolve non lo raggiungi più.» | still generato 4/5 (Higgsfield) o foto vera; il file v2 `n5-fascia.webp` era 949×1178 → va rifatto a 2× |
 | **D5** | **Lo Specchio con l'immagine** (allegato 4 = N2 della v2) **lo voglio assolutamente**, ma «le scritte sopra l'immagine più sottili, più eleganti, molto più leggibili; grana e professionalità migliorate molto». | in `specchio.tsx`: colonna foto a sinistra (`due-col--foto-sx`) con l'immagine **intera 1/1 a 2×** (il file v2 era 400×400: **va rigenerato ≥ 800×800**) · la riga **sopra l'immagine** come vuole Max, ma: peso 400-500 (non 600), corsivo serif o sans leggero, corpo 17-19, letter-spacing +0,01em, banda scura sfumata ≥ 7:1 misurata, nessun `text-shadow` pesante · grana **solo sul fondo carta**, mai sull'immagine (§14) · bordo 1 px + ombra bassa come fa funneloperator sulle foto su chiaro. | still 1/1 rigenerato a 2× |
+
+| **D6** | **La grana** — «una delle mie regole più importanti: la grana che giace nel sito è già perfetta, deve esserci» (ribadita il 13/09 con le 5 decisioni). | Legge già in vigore (11/09, `feedback_grana_sempre`): strati fissi identici a `globals.css` (overlay .55 / hard-light .30 / fibra .18) + grana locale su ogni superficie composta; sulle texture D1/D3 la grana va **sul velo**, non sull'immagine; sulle foto mai (§14). Gate meccanico in F5 (`gate_siti.py`: nessun gradiente senza `feTurbulence` nello stesso stack). | nessuno |
+
+**Ribadite da Max il 13/09 (seconda chat, testuali):** D1-D5 identiche, più D6. Le due texture sono state incollate in chat una seconda volta: **un allegato in chat non è un file sul disco** — restano da mettere in `agency-empire-landing/public/texture/` (cartella aperta a Max, `LEGGIMI.txt` dentro).
+
+**Tavola v2.1 (13/09, stesso URL):** le tavole **D1+D2, D2, D3, D4, D5, D6** sono in cima alla Tavola https://claude.ai/code/artifact/a7cf07ac-d263-421c-8824-0600b9641384, prima degli atti; le texture sono **approssimazioni generate** (`texture_approx2.py`, dichiarate in tavola); il funnel-hero è costruito in HTML+SVG (frecce bezier a puntini che scorrono, ferme in reduced-motion); D4 usa lo still 586430f8 (949×1178) intero a 300; D5 lo still 9152a07f a 368 con riga serif 400/18 su banda ≥ 7:1.
 
 **Effetti sul piano:** D1+D2 sono la **prima fase dopo il «vai»** (F1 diventa: D2 funnel-hero + D1 texture + A01 firma + A02 rail) perché
 toccano ciò che si vede per primo; **anteprima obbligatoria** (`npx vercel`) e sua parola prima del `--prod`. D4 e D5 entrano in F3/F5 con

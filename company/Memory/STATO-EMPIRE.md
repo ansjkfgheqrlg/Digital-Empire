@@ -1,3 +1,12 @@
+## 🎨 2026-09-13 pomeriggio — SITO AGENCY: le decisioni di Max RIBADITE (D1-D5) + D6 grana; TAVOLA v2.1 con le sei tavole D — CP-20260913-AQXZ
+
+Max ha riconfermato testualmente D1-D5 e aggiunto **D6 «la grana, sempre»**. Fatto il punto (a) di EEV3: **Tavola v2.1** (stesso URL
+https://claude.ai/code/artifact/a7cf07ac-d263-421c-8824-0600b9641384) con **D1+D2 hero completo** (texture + velo + grana + titolo alto + funnel
+a blocchi con frecce bezier a puntini che scorrono), **D2** da vicino, **D3** fascia-manifesto, **D4** competitor (still intero, riga sotto),
+**D5** specchio (riga serif 400/18 su banda), **D6** grana. Texture = **approssimazioni generate** (`texture_approx2.py`), dichiarate.
+**Gesto di Max (ADR-026, non blocca):** i 2 file veri in `agency-empire-landing/public/texture/hero-onde.jpg` + `grana-fuoco.jpg` — incollarli
+in chat non li mette sul disco; la cartella gli è stata aperta. **RIPRESA DA: `EMP-XR4F`** → (b) artefatto piano → v2, poi «vai» → F1 in anteprima.
+
 ## 🎯 2026-09-13 — SITO AGENCY: funneloperator.it studiato e UFFICIALIZZATO (§14, §15), Dossier 38 v2 in sei atti, Tavola v2, 5 DECISIONI DI MAX — CP-20260913-EEV3
 
 Max ha bocciato piano v1 e tavola («poche sezioni, immagini tagliate e ingrandite, nessuna logica») e ordinato lo studio di
