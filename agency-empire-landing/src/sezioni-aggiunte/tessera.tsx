@@ -5,8 +5,8 @@ import { LISTINO, eur } from "@/lib/listino";
 
 /* AGGIUNTA A17 (Dossier 38 v2, Atto VI) — «La tessera»: cosa c'è scritto sulla tua, in due colonne.
    Inserita dopo <PricingROI />. Superficie carta, h ≤ 600. CTA di vendita ammessa (Atto VI, §15).
-   Prezzi da LISTINO, giorni da FATTI (§6/§8): nessun numero scritto a mano. Il QR finto in CSS è vietato: al suo posto l'indirizzo in mono. */
-const INDIRIZZO_PRENOTA = "agency-empire-landing.vercel.app/prenota/";
+   Prezzi da LISTINO, giorni da FATTI (§6/§8): nessun numero scritto a mano. Il QR finto in CSS è vietato; l'indirizzo in mono
+   che stava al suo posto andava a capo dentro la tessera ed è stato tolto il 13/09 sera (F3 blocco C, 39B r.37). */
 
 export function Tessera() {
   const voci = [
@@ -51,7 +51,6 @@ export function Tessera() {
                   </li>
                 ))}
               </ul>
-              <p className="tess-piede sv-mono">{INDIRIZZO_PRENOTA}</p>
             </div>
           </div>
         </div>

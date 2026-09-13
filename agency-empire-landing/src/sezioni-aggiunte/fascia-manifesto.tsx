@@ -4,7 +4,7 @@ import { TEXTURE } from "@/lib/media";
    con la texture «grana di fuoco» come sfondo e una frase sola. Inserita dopo <PowerDeck />. h ≤ 320.
    Sfondo: TEXTURE.granaFuoco intera come <img> assoluto in `cover` — eccezione §14 dichiarata (è uno sfondo, non
    un'immagine di contenuto). Sopra: velo con vignetta scura ai bordi (radial + linear) per la leggibilità, grana locale
-   sul velo e non sulla texture (D6). Micro-CTA di scorrimento «↓» (§15: nessuna CTA di vendita qui).
+   sul velo e non sulla texture (D6). Nessuna CTA (§15); il cerchio-freccia «↓» è stato tolto il 13/09 sera (F3 blocco C, 39B r.31).
    Se la texture non c'è (null) la sezione rende null e il sito resta intero (ADR-028). CSS: aggiunte-a.css. */
 export function FasciaManifesto() {
   const t = TEXTURE.granaFuoco;
@@ -22,9 +22,6 @@ export function FasciaManifesto() {
           <h2 id="manifesto-h2" className="sv-h2 fm-h2">
             I tool si pagano. <span className="sv-it">I sistemi si possiedono.</span>
           </h2>
-          <a href="#prove-vere" className="fm-giu" aria-label="Scendi alle prove">
-            ↓
-          </a>
         </div>
       </section>
     </div>

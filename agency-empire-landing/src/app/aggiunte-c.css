@@ -1,6 +1,8 @@
 /* ============================================================================
    AGGIUNTE-C.CSS — Blocco C del Dossier 38 v2 (Atto V/VI): A14 stanza, A15 dietro-le-quinte, A16 mappa,
    A17 tessera, A18 quanto-costa, A19 se-non-funziona, A21 faq-contratto, A22 coda-legale, A03 cta-fissa.
+   F3 (13/09 sera, blocco C): mappa rifatta in una riga, cosa-ottieni con checklist bordata (.co-*), le due nuove
+   frase-barrata (.fb-*) e griglia-01-04 (.g4-*), etichette di quanto-costa a 12 px.
    Ordine di Max (ADR-030 / CLAUDE-SITI §13): niente di ciò che esiste si modifica, si può solo aggiungere.
    Ogni regola è prefissata `.vivo .` + una classe di questo blocco: nessuna tocca le sezioni esistenti.
    §14: le foto sono intere (`.foto-intera`), mai `cover`, mai grana sopra il soggetto.
@@ -57,55 +59,21 @@
 }
 
 /* ============================================================
-   A16 · MAPPA (ink) — l'albero: radice, connettori, tre rami
+   A16 · MAPPA (ink) — rifatta (F3 blocco C, 39B r.34): una riga sola, ≤ 200 px.
+   «Digital Empire → Agency · Formazione · SaaS» — Agency bianca con il punto accento e «sei qui» in mono.
    ============================================================ */
-.vivo .mappa-albero { position: relative; margin-top: 40px; display: flex; flex-direction: column; align-items: center; }
-.vivo .mappa-radice {
-  display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border-radius: 999px;
-  background: #fff; color: #0a0a0a; font-weight: 800; letter-spacing: -.01em; font-size: var(--fs-body);
-}
-.vivo .mappa-radice i { font-style: normal; color: var(--sv-orange); }
-.vivo .mappa-fusto { width: 0; height: 36px; border-left: 1px dashed rgba(217, 212, 225, .55); }
-.vivo .mappa-rami { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; width: 100%; max-width: 900px; margin: 0; padding: 0; list-style: none; }
-/* la traversa: dal centro del primo ramo al centro del terzo */
-.vivo .mappa-rami::before {
-  content: ""; position: absolute; top: 0; left: calc(100% / 6); right: calc(100% / 6); height: 0;
-  border-top: 1px dashed rgba(217, 212, 225, .55);
-}
-.vivo .mappa-ramo { position: relative; padding-top: 30px; }
-/* il gambo di ogni ramo */
-.vivo .mappa-ramo::before {
-  content: ""; position: absolute; top: 0; left: 50%; width: 0; height: 30px;
-  border-left: 1px dashed rgba(217, 212, 225, .55); transform: translateX(-50%);
-}
-.vivo .mappa-card {
-  position: relative; border: 1px solid var(--sv-hair); border-radius: 16px; padding: 26px 22px 24px; text-align: center;
-  background: rgba(255, 255, 255, .025);
-}
-.vivo .mappa-card b { display: block; color: #fff; font-size: var(--fs-h3); font-weight: 800; letter-spacing: -.02em; }
-.vivo .mappa-card span { display: block; margin-top: 8px; color: var(--sv-silver-dim); }
-.vivo .mappa-card--qui { border-color: var(--sv-orange); box-shadow: 0 0 0 1px rgba(251, 70, 4, .35), 0 24px 50px -30px rgba(251, 70, 4, .7); }
-.vivo .mappa-qui {
-  position: absolute; left: 50%; top: -34px; transform: translateX(-50%);
-  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
-  padding: 5px 12px; border-radius: 999px; background: var(--sv-orange); color: #000;
-  font-family: var(--font-mono, ui-monospace, monospace); font-size: var(--fs-mono); letter-spacing: .16em; text-transform: uppercase; font-weight: 700;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .vivo .mappa-qui { animation: mappa-sale 2.4s ease-in-out infinite; }
-  @keyframes mappa-sale {
-    0%, 100% { transform: translate(-50%, 0); }
-    50% { transform: translate(-50%, -7px); }
-  }
-}
-@media (max-width: 700px) {
-  .vivo .mappa-rami { grid-template-columns: 1fr; gap: 18px; max-width: 360px; }
-  .vivo .mappa-rami::before { display: none; }
-  .vivo .mappa-ramo { padding-top: 24px; }
-  .vivo .mappa-ramo::before { height: 24px; }
-  .vivo .mappa-ramo:first-child { padding-top: 0; }
-  .vivo .mappa-ramo:first-child::before { display: none; }
-  .vivo .mappa-fusto { height: 28px; }
+.vivo .mappa { padding: 48px 0; border-top: 1px solid var(--sv-hair); border-bottom: 1px solid var(--sv-hair); }
+.vivo .mappa-riga { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px; margin: 0; font-size: var(--fs-h3); font-weight: 700; letter-spacing: -.015em; line-height: 1.2; color: var(--sv-silver-dim); }
+.vivo .mappa-radice { color: var(--sv-silver); }
+.vivo .mappa-freccia, .vivo .mappa-sep { font-weight: 400; color: var(--sv-silver-dim); }
+.vivo .mappa-ramo { font-weight: 600; color: var(--sv-silver-dim); }
+.vivo .mappa-qui { display: inline-flex; align-items: baseline; gap: 10px; color: #fff; }
+.vivo .mappa-qui b { font-weight: 900; color: #fff; }
+.vivo .mappa-qui .mappa-punto { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--sv-orange); box-shadow: 0 0 0 3px rgba(251, 70, 4, .18); align-self: center; }
+.vivo .mappa-qui small { color: var(--sv-orange); letter-spacing: .16em; }
+@media (max-width: 520px) {
+  .vivo .mappa { padding: 40px 0; }
+  .vivo .mappa-riga { gap: 6px 10px; }
 }
 
 /* ============================================================
@@ -142,7 +110,7 @@
 .vivo .tess-lista { margin: 20px 0 0; padding: 18px 0 0; list-style: none; border-top: 1px solid var(--sv-hair); display: grid; gap: 9px; }
 .vivo .tess-lista li { color: var(--sv-silver); font-size: var(--fs-small); line-height: 1.5; }
 .vivo .tess-lista li::before { color: var(--sv-orange); }
-.vivo .tess-piede { margin-top: 22px; padding-top: 14px; border-top: 1px dashed var(--sv-hair); color: var(--sv-silver-dim); text-transform: none; letter-spacing: .04em; word-break: break-all; }
+/* il piede con l'URL è stato tolto (F3 blocco C, 39B r.37): andava a capo dentro la tessera */
 @media (max-width: 860px) {
   .vivo .tess-grid { grid-template-columns: 1fr; gap: 44px; }
   .vivo .tess-scena { margin: 20px auto 0; }
@@ -154,7 +122,7 @@
 .vivo .qc-formula { display: grid; grid-template-columns: 1fr auto 1fr; gap: 28px; align-items: stretch; margin-top: 36px; }
 .vivo .qc-col { border: 1px solid var(--sv-hair); border-radius: 16px; padding: 26px 26px 24px; background: rgba(255, 255, 255, .02); }
 .vivo .qc-col--sistema { border-color: var(--sv-orange); box-shadow: 0 0 0 1px rgba(251, 70, 4, .35), 0 30px 60px -36px rgba(251, 70, 4, .8); }
-.vivo .qc-col .sv-eyebrow { display: block; }
+.vivo .qc-col .sv-eyebrow { display: block; font-size: 12px; color: var(--sv-silver-dim); letter-spacing: .2em; } /* F3 (39B r.39): «OGGI» a 11 era quasi invisibile */
 .vivo .qc-riga { display: block; margin-top: 12px; font-size: var(--fs-h3); font-weight: 800; letter-spacing: -.02em; line-height: 1.15; color: #fff; font-variant-numeric: tabular-nums; }
 .vivo .qc-riga--muta { color: var(--sv-silver); font-weight: 600; }
 .vivo .qc-riga--tot { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--sv-hair); color: var(--sv-orange); }
@@ -232,4 +200,57 @@
 @media (max-width: 640px) {
   .vivo .ctaf { right: 12px; left: 12px; display: flex; justify-content: center; }
   .vivo .ctaf .sv-btn { width: 100%; }
+}
+
+/* ============================================================
+   CosaOttieni · rifatta (F3 blocco C, 39A E42) — checklist in tabella bordata + UN bottone da 48 px, ink su arancio
+   ============================================================ */
+.vivo .co-colonna { max-width: 640px; }
+.vivo .co-lista { margin: 28px 0 0; padding: 0; list-style: none; border: 1px solid var(--sv-hair); border-radius: 8px; background: rgba(255, 255, 255, .02); }
+.vivo .co-lista::after { opacity: .3; }
+.vivo .co-voce { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 16px; align-items: start; padding: 16px 18px; min-height: 58px; font-size: 17px; line-height: 1.5; color: var(--sv-silver); }
+.vivo .co-voce + .co-voce { border-top: 1px solid var(--sv-hair); }
+.vivo .co-spunta { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: rgba(251, 70, 4, .14); color: var(--sv-orange); }
+.vivo .co-azione { margin-top: 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.vivo .co-btn.sv-btn { min-height: 48px; padding: 0 26px; border-radius: 8px; box-shadow: none; color: #0a0a0a; font-size: var(--fs-body); }
+.vivo .co-btn.sv-btn:hover, .vivo .co-btn.sv-btn:focus-visible { box-shadow: 0 0 0 1px rgba(251, 70, 4, .5); }
+.vivo .co-sotto { color: var(--sv-silver-dim); text-transform: none; letter-spacing: .08em; font-size: 12px; }
+@media (max-width: 480px) {
+  .vivo .co-voce { padding: 14px 14px; font-size: 16px; gap: 12px; }
+  .vivo .co-btn.sv-btn { width: 100%; }
+}
+
+/* ============================================================
+   FraseBarrata (ink, ≤ 320) — F3 blocco C, 39A E21: la credenza barrata, sotto la frase vera
+   ============================================================ */
+.vivo .fb { padding: 60px 0; }
+.vivo .fb-barrata { margin: 0; font-size: var(--fs-h3); font-weight: 600; line-height: 1.2; letter-spacing: -.012em; color: var(--sv-silver-dim); }
+.vivo .fb-barrata s { text-decoration: line-through; text-decoration-color: var(--sv-orange); text-decoration-thickness: 3px; text-underline-offset: 0; }
+.vivo .fb-vera { margin-top: 12px; color: #fff; max-width: 22ch; }
+.vivo .fb-vera .sv-it { color: #fff; }
+.vivo .fb-sotto { margin: 16px 0 0; font-size: 17px; line-height: 1.5; color: var(--sv-silver); max-width: 48ch; }
+@media (max-width: 640px) { .vivo .fb { padding: 48px 0; } }
+
+/* ============================================================
+   Griglia0104 (ink, ≤ 420) — F3 blocco C, 39A E06: quattro colonne mono, filetti, UNA colonna accesa e fissa
+   ============================================================ */
+.vivo .g4 { padding: 56px 0; }
+.vivo .g4-griglia { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 30px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--sv-hair); border-bottom: 1px solid var(--sv-hair); }
+.vivo .g4-col { position: relative; display: flex; flex-direction: column; padding: 22px 20px 24px; border-left: 1px solid var(--sv-hair); min-height: 190px; }
+.vivo .g4-col:last-child { border-right: 1px solid var(--sv-hair); }
+.vivo .g4-n { font-family: var(--font-mono, ui-monospace, monospace); font-size: var(--fs-stat); line-height: 1; letter-spacing: -.02em; color: var(--sv-silver-dim); font-variant-numeric: tabular-nums; }
+.vivo .g4-t { display: block; margin-top: 26px; padding-top: 14px; border-top: 1px solid var(--sv-hair); font-size: 20px; line-height: 1.2; font-weight: 700; letter-spacing: -.015em; color: #fff; }
+.vivo .g4-d { display: block; margin-top: 8px; font-size: 15px; line-height: 1.5; color: var(--sv-silver); }
+/* la colonna accesa: bordo accento, velo e grana locale (c-grana), numero in accento */
+.vivo .g4-col--accesa { margin: -1px; border: 1px solid var(--sv-orange); box-shadow: 0 0 0 1px rgba(251, 70, 4, .25); background: linear-gradient(180deg, rgba(251, 70, 4, .12), rgba(251, 70, 4, .04)); }
+.vivo .g4-col--accesa .g4-n { color: var(--sv-orange); }
+.vivo .g4-col--accesa .g4-t { border-top-color: rgba(251, 70, 4, .45); }
+.vivo .g4-col--accesa .g4-d { color: #fff; }
+@media (max-width: 760px) {
+  .vivo .g4 { padding: 48px 0; }
+  .vivo .g4-griglia { grid-template-columns: 1fr 1fr; border-bottom: 0; }
+  .vivo .g4-col { min-height: 0; padding: 18px 16px 20px; border-bottom: 1px solid var(--sv-hair); }
+  .vivo .g4-col:nth-child(2n) { border-right: 1px solid var(--sv-hair); }
+  .vivo .g4-t { margin-top: 18px; padding-top: 12px; font-size: 18px; }
+  .vivo .g4-col--accesa { margin: 0; }
 }

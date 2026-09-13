@@ -23,20 +23,27 @@
 .vivo .gb-grana > * { position: relative; z-index: 1; }
 
 /* ============================================================================
-   A09 · GUARDALO GIRARE (ink) — video (quando c'è) + cucitura in colonna: colazione.webp intero a 300 px.
-   Altezza: figura 736×1309 resa 300 → 534 px; padding ridotto a 48 per stare nei 620 (+15%).
+   A09 · GUARDALO GIRARE (ink) — rifatta (F3 blocco C, 39B r.19): finché non c'è il video, una FASCIA di 320 px.
+   La foto intera a 180 px di larghezza è alta esattamente 320 (736×1309): tocca il bordo alto e basso della fascia
+   (padding verticale 0), il testo sta a destra, centrato in verticale. Niente metà vuota. Quando VIDEO c'è, sopra
+   la fascia si apre il blocco video con il suo padding.
    ============================================================================ */
-.vivo .gg.sv-section { padding: 48px 0; }
+.vivo .gg { padding: 0; }
+.vivo .gg--con-video { padding-top: 48px; }
 .vivo .gg-video { margin: 0 auto 40px; max-width: 960px; border-radius: 6px; overflow: hidden; background: #000; border: 1px solid var(--sv-hair); }
 .vivo .gg-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
-.vivo .gg-cuc { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 48px; align-items: center; }
-.vivo .gg-foto { width: 300px; max-width: 100%; }
-.vivo .gg-riga { font-size: clamp(26px, 3vw, 42px); font-weight: 900; line-height: 1.08; letter-spacing: -.022em; text-wrap: balance; max-width: 18ch; }
+.vivo .gg-fascia { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 40px; align-items: center; max-height: 320px; }
+.vivo .gg-foto { width: 180px; max-width: 100%; border-radius: 0; }
+.vivo .gg-testo { padding: 24px 0; }
+.vivo .gg-riga { font-size: clamp(22px, 2.4vw, 30px); font-weight: 900; line-height: 1.12; letter-spacing: -.02em; text-wrap: balance; max-width: 22ch; }
 .vivo .gg-riga b { color: var(--sv-orange); font-variant-numeric: tabular-nums; }
 .vivo .gg-riga .sv-it { font-weight: 400; color: var(--sv-silver); }
-@media (max-width: 767px) {
-  .vivo .gg-cuc { grid-template-columns: 1fr; gap: 28px; }
-  .vivo .gg-foto { margin: 0 auto; }
+@media (max-width: 640px) {
+  /* la foto scende a 140 px (249 di altezza): la fascia resta sotto i 320 anche sul telefono */
+  .vivo .gg-fascia { grid-template-columns: 140px minmax(0, 1fr); gap: 20px; max-height: none; }
+  .vivo .gg-foto { width: 140px; }
+  .vivo .gg-testo { padding: 16px 0; }
+  .vivo .gg-riga { font-size: 20px; }
 }
 
 /* ============================================================================

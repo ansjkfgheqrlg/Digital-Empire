@@ -86,7 +86,7 @@ export function Specchio() {
                 <b>Ti ritrovi?</b> Quattro segnali: ne basta 1.
               </span>
               <Link href={prenotaDa("specchio")} data-cta className="sv-btn">Sì, mi ritrovo →</Link>
-              <a href="#prove-vere" className="sv-btn-ghost">Non mi ritrovo</a>
+              <a href="#prove-vere" className="sp-link">Non mi ritrovo</a>
             </div>
           </div>
         </div>

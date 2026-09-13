@@ -53,6 +53,10 @@ main > section[class*="pb-24"][class*="pt-4"]:has(.card-silver-orange) [class*="
 main > section[class*="pb-24"][class*="pt-4"]:has(.card-silver-orange) .card-silver-orange > div:first-child {
   color: #fb4604 !important;
 }
+/* la cifra è uno <span> (CountUp): globals.css la forza a #111 con specificità (0,4,1) → qui (0,4,4) per vincere */
+main > section.bg-ink .card-silver-orange.card-silver-orange.card-silver-orange > div:first-child > span {
+  color: #fb4604 !important;
+}
 
 /* ----------------------------------------------------------------------------
    04 — Audience «Ideato su misura» (radice: unico h2 `md:text-[3rem]`).
@@ -128,22 +132,24 @@ main > section:has(.card-silver-orange svg[viewBox="0 0 80 90"]) .card-silver-or
    figlio diretto .reveal contiene un .rounded-2xl.overflow-hidden (struttura
    che solo le tre deep hanno tra le sezioni di giugno). Rimedio: pannello ink
    piatto + bordo hairline; su sezione già ink (23) il pannello scende a ink-2
-   così il bordo si legge; puntini/numeri dei passi in accento o hairline;
+   così il bordo si legge; il pannello ha ESATTAMENTE class="rounded-2xl
+   overflow-hidden" (match esatto: le card di PowerDeck, che hanno la stessa
+   griglia ma altre classi, non entrano); puntini/numeri dei passi in accento o hairline;
    le spunte azzurre `text-[#90c8ff]` di BrainDeep → accento.
    ---------------------------------------------------------------------------- */
-main > section [class*="md:grid-cols-2"] > .reveal > .rounded-2xl.overflow-hidden {
+main > section [class*="md:grid-cols-2"] > .reveal > [class="rounded-2xl overflow-hidden"] {
   background: #1c1c1c !important;
   background-image: none !important;
   border: 1px solid rgba(217, 212, 225, 0.16) !important;
   box-shadow: none !important;
 }
-main > section.bg-ink [class*="md:grid-cols-2"] > .reveal > .rounded-2xl.overflow-hidden {
+main > section.bg-ink [class*="md:grid-cols-2"] > .reveal > [class="rounded-2xl overflow-hidden"] {
   background: #0a0a0a !important;
 }
-main > section [class*="md:grid-cols-2"] > .reveal > .rounded-2xl.overflow-hidden span.w-2.h-2.rounded-full {
+main > section [class*="md:grid-cols-2"] > .reveal > [class="rounded-2xl overflow-hidden"] span.w-2.h-2.rounded-full {
   background: #fb4604 !important;
 }
-main > section [class*="md:grid-cols-2"] > .reveal > .rounded-2xl.overflow-hidden span.w-8.h-8.rounded-lg {
+main > section [class*="md:grid-cols-2"] > .reveal > [class="rounded-2xl overflow-hidden"] span.w-8.h-8.rounded-lg {
   background: transparent !important;
   border: 1px solid rgba(217, 212, 225, 0.16) !important;
   color: #fb4604 !important;

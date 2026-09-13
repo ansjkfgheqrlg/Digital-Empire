@@ -71,7 +71,7 @@ export function CompetitorVivo() {
                 </div>
               </div>
 
-              <p className="sv-small sv-muted cv-nota">
+              <p className="sv-small sv-muted cv-nota cv-nota--sotto">
                 Il punto «Tu» viene dagli stessi numeri del rail: {FATTI.dmAMano} messaggi a mano contro {FATTI.messaggiGiorno} del
                 sistema.
               </p>
