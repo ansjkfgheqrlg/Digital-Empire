@@ -1,0 +1,111 @@
+/* ============================================================================
+   AGGIUNTE-B.CSS — Blocco B del Dossier 38 v2 (Atto III/IV): A09 guardalo-girare, A10+A20 due-tipi,
+   A11 (colonna PDF dentro prove-vere), A12 rail-sistemi. Ordine di Max: si aggiunge soltanto (§13).
+   Ogni regola è prefissata `.vivo .` + una classe di questo blocco (gg-, dt-, pv-, rs-, gb-): nessun
+   selettore generico, nessuna regola tocca le sezioni esistenti. Le immagini sono intere (§14): mai cover,
+   mai ingrandite oltre il pixel nativo, grana MAI sulle foto — solo sulle superfici composte (::after).
+   Da importare in layout.tsx (lo fa Emperator): import "./aggiunte-b.css";
+   ============================================================================ */
+
+/* ---- §14 · la figura intera (definizione del brief, identica in ogni blocco: se un altro blocco la
+        dichiara uguale, la doppia dichiarazione è innocua) ---- */
+.vivo .foto-intera { margin: 0; border-radius: 6px; overflow: hidden; background: #000; }
+.vivo .foto-intera img { display: block; width: 100%; height: auto; }
+
+/* ---- grana locale per le superfici composte del blocco (card bianche, quadri): multiply, mai sulle foto ---- */
+.vivo .gb-grana { position: relative; }
+.vivo .gb-grana::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 0;
+  opacity: .38; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='3' stitchTiles='stitch' seed='21'/><feColorMatrix values='0 0 0 0 0.86 0 0 0 0 0.84 0 0 0 0 0.80 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+.vivo .gb-grana > * { position: relative; z-index: 1; }
+
+/* ============================================================================
+   A09 · GUARDALO GIRARE (ink) — video (quando c'è) + cucitura in colonna: colazione.webp intero a 300 px.
+   Altezza: figura 736×1309 resa 300 → 534 px; padding ridotto a 48 per stare nei 620 (+15%).
+   ============================================================================ */
+.vivo .gg.sv-section { padding: 48px 0; }
+.vivo .gg-video { margin: 0 auto 40px; max-width: 960px; border-radius: 6px; overflow: hidden; background: #000; border: 1px solid var(--sv-hair); }
+.vivo .gg-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.vivo .gg-cuc { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 48px; align-items: center; }
+.vivo .gg-foto { width: 300px; max-width: 100%; }
+.vivo .gg-riga { font-size: clamp(26px, 3vw, 42px); font-weight: 900; line-height: 1.08; letter-spacing: -.022em; text-wrap: balance; max-width: 18ch; }
+.vivo .gg-riga b { color: var(--sv-orange); font-variant-numeric: tabular-nums; }
+.vivo .gg-riga .sv-it { font-weight: 400; color: var(--sv-silver); }
+@media (max-width: 767px) {
+  .vivo .gg-cuc { grid-template-columns: 1fr; gap: 28px; }
+  .vivo .gg-foto { margin: 0 auto; }
+}
+
+/* ============================================================================
+   A10+A20 · DUE TIPI DI AZIENDE + LE DOMANDE CHE NON CI FATE (carta)
+   Card gemelle bianche (numero 81 px grigio chiaro, la seconda col bordo arancione 2 px), poi filetto e
+   tre domande ostili in tre colonne. Nessuna CTA di vendita (§15: sopra metà pagina).
+   ============================================================================ */
+.vivo .dt-gemelle { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+.vivo .dt-card {
+  background: #fff; border: 1px solid var(--sv-hair-light); border-radius: 18px;
+  padding: 28px 30px 30px; box-shadow: 0 18px 40px -30px rgba(0, 0, 0, .35);
+}
+.vivo .dt-card--giusta { border: 2px solid var(--sv-orange); padding: 27px 29px 29px; }
+.vivo .dt-num { display: block; font-size: 81px; line-height: .9; font-weight: 900; letter-spacing: -.05em; color: #dcd6cb; font-variant-numeric: tabular-nums; }
+.vivo .dt-card--giusta .dt-num { color: rgba(251, 70, 4, .28); }
+.vivo .dt-card h3 { margin-top: 14px; }
+.vivo .dt-card p { margin-top: 10px; max-width: 42ch; }
+.vivo .dt-domande { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 0; padding-top: 32px; }
+.vivo .dt-domande > div { position: relative; padding-left: 22px; }
+.vivo .dt-domande > div::before { content: "?"; position: absolute; left: 0; top: 0; font-family: var(--font-accent), Georgia, serif; font-style: italic; color: var(--sv-orange); font-size: 22px; line-height: 1.1; }
+.vivo .dt-domande dt { font-weight: 800; font-size: var(--fs-body); line-height: 1.35; letter-spacing: -.01em; text-wrap: balance; }
+.vivo .dt-domande dd { margin: 10px 0 0; font-size: var(--fs-small); line-height: 1.6; color: #4a4640; }
+@media (max-width: 767px) {
+  .vivo .dt-gemelle { grid-template-columns: 1fr; gap: 16px; margin-top: 28px; }
+  .vivo .dt-num { font-size: 64px; }
+  .vivo .dt-domande { grid-template-columns: 1fr; gap: 22px; }
+}
+
+/* ============================================================================
+   A11 · dentro PROVE-VERE (carta) — la pagina del PDF vero accanto al blocco Novacar.
+   Il wrapper .pv-griglia avvolge la griglia ESISTENTE senza toccarne una riga: la figura sta a sinistra
+   (400 px), a destra la griglia dei tre casi diventa 2 colonne con il primo caso (Novacar) a tutta larghezza.
+   ============================================================================ */
+.vivo .pv-griglia { display: grid; grid-template-columns: 400px minmax(0, 1fr); gap: 40px; align-items: start; margin-top: 40px; }
+.vivo .pv-figura { width: 400px; max-width: 100%; }
+.vivo .pv-figura .foto-intera { border: 1px solid var(--sv-hair-light); background: #fff; }
+.vivo .pv-figura figcaption { margin-top: 10px; font-size: var(--fs-small); line-height: 1.55; color: #4a4640; }
+.vivo .pv-griglia > div.grid { margin-top: 0; grid-template-columns: 1fr 1fr; align-content: start; }
+.vivo .pv-griglia > div.grid > article:first-child { grid-column: 1 / -1; }
+@media (max-width: 900px) {
+  .vivo .pv-griglia { grid-template-columns: 1fr; gap: 28px; }
+  .vivo .pv-figura { margin: 0 auto; }
+  .vivo .pv-griglia > div.grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================================
+   A12 · RAIL DEI SISTEMI IN PRODUZIONE (ink) — nastro lento 70 s, doppio elenco, fermo in reduced-motion
+   e al passaggio del mouse. Figure INTERE: i PDF a 190 px di larghezza; gli screenshot mobile (390×1911,
+   390×1362, 390×1103) a 190 px sarebbero alti fino a 931 px e sfonderebbero i 520 → tetto di altezza 340 px,
+   larghezza in proporzione (mai cover, mai tagli). Dubbio riportato nel rapporto.
+   ============================================================================ */
+.vivo .rs.sv-section { padding: 56px 0; }
+.vivo .rs-track { margin-top: 28px; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.vivo .rs-rail { display: flex; align-items: flex-start; gap: 36px; width: max-content; margin: 0; padding: 4px 24px; list-style: none; animation: rs-scorri 70s linear infinite; }
+.vivo .rs-track:hover .rs-rail, .vivo .rs-track:focus-within .rs-rail { animation-play-state: paused; }
+@keyframes rs-scorri { to { transform: translateX(-50%); } }
+.vivo .rs-item { flex: none; }
+.vivo .rs-fig { margin: 0; }
+.vivo .rs-fig .foto-intera { border: 1px solid var(--sv-hair); background: #0a0a0a; width: max-content; max-width: 190px; }
+.vivo .rs-fig .foto-intera img { width: auto; height: auto; max-width: 190px; max-height: 340px; }
+.vivo .rs-fig figcaption { margin-top: 10px; max-width: 190px; }
+.vivo .rs-fig figcaption b { display: block; font-size: var(--fs-small); font-weight: 700; color: #fff; line-height: 1.3; }
+.vivo .rs-fig figcaption span { display: block; margin-top: 3px; font-family: var(--font-mono, ui-monospace, monospace); font-size: var(--fs-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--sv-silver-dim); }
+@media (prefers-reduced-motion: reduce) {
+  .vivo .rs-rail { animation: none; flex-wrap: wrap; width: auto; justify-content: center; gap: 28px; }
+  .vivo .rs-rail [aria-hidden="true"] { display: none; }
+}
+@media (max-width: 640px) {
+  .vivo .rs-rail { gap: 24px; }
+  .vivo .rs-fig .foto-intera img { max-width: 150px; max-height: 300px; }
+  .vivo .rs-fig .foto-intera, .vivo .rs-fig figcaption { max-width: 150px; }
+}

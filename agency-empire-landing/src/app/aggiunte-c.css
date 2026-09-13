@@ -1,0 +1,235 @@
+/* ============================================================================
+   AGGIUNTE-C.CSS — Blocco C del Dossier 38 v2 (Atto V/VI): A14 stanza, A15 dietro-le-quinte, A16 mappa,
+   A17 tessera, A18 quanto-costa, A19 se-non-funziona, A21 faq-contratto, A22 coda-legale, A03 cta-fissa.
+   Ordine di Max (ADR-030 / CLAUDE-SITI §13): niente di ciò che esiste si modifica, si può solo aggiungere.
+   Ogni regola è prefissata `.vivo .` + una classe di questo blocco: nessuna tocca le sezioni esistenti.
+   §14: le foto sono intere (`.foto-intera`), mai `cover`, mai grana sopra il soggetto.
+   Legge della grana: ogni superficie composta (card, blocco arancione, tessera) porta una grana locale in `::after`
+   tramite la classe `.c-grana` — mai sulle foto.
+   ============================================================================ */
+
+/* ---- §14 · la figura intera: la definisce ogni blocco nel proprio CSS (regola identica, nessun conflitto) ---- */
+.vivo .foto-intera { margin: 0; border-radius: 6px; overflow: hidden; background: #000; }
+.vivo .foto-intera img { display: block; width: 100%; height: auto; }
+.vivo .foto-intera figcaption { padding: 10px 2px 0; }
+
+/* ---- grana locale delle superfici composte (mix overlay sullo scuro, multiply sul chiaro) ---- */
+.vivo .c-grana { position: relative; }
+.vivo .c-grana::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 0;
+  opacity: .4; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.05' numOctaves='3' stitchTiles='stitch' seed='21'/><feColorMatrix values='0 0 0 0 0.86 0 0 0 0 0.84 0 0 0 0 0.82 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+.vivo .c-grana > * { position: relative; z-index: 1; }
+.vivo .c-grana--chiara::after { mix-blend-mode: multiply; opacity: .32; }
+
+/* ============================================================
+   A14 · STANZA (ink) — tre ritratti veri, ognuno al proprio rapporto
+   ============================================================ */
+.vivo .stz-grid { display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: 48px; align-items: start; }
+.vivo .stz-figure { display: grid; grid-template-columns: repeat(3, minmax(0, 260px)); gap: 22px; justify-content: end; }
+.vivo .stz-fig { width: 100%; border: 1px solid var(--sv-hair); }
+.vivo .stz-fig .foto-intera { border-radius: 6px 6px 0 0; }
+.vivo .stz-targa { padding: 12px 14px 14px; background: rgba(255, 255, 255, .03); border-top: 1px solid var(--sv-hair); border-radius: 0 0 6px 6px; }
+.vivo .stz-targa b { display: block; color: #fff; font-size: var(--fs-body); letter-spacing: -.01em; }
+.vivo .stz-targa span { display: block; margin-top: 3px; color: var(--sv-silver-dim); }
+@media (max-width: 900px) {
+  .vivo .stz-grid { grid-template-columns: 1fr; gap: 28px; }
+  .vivo .stz-figure { grid-template-columns: repeat(3, minmax(0, 1fr)); justify-content: start; }
+}
+@media (max-width: 640px) {
+  .vivo .stz-figure { grid-template-columns: 1fr; max-width: 300px; }
+}
+
+/* ============================================================
+   A15 · DIETRO LE QUINTE (carta) — quattro foto di lavoro, a coppie
+   ============================================================ */
+.vivo .dlq-coppie { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; margin-top: 34px; }
+.vivo .dlq-coppia { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+.vivo .dlq-fig { border: 1px solid rgba(28, 28, 28, .16); box-shadow: 0 10px 26px -20px rgba(0, 0, 0, .55); }
+.vivo .dlq-fig figcaption { padding: 10px 12px 12px; color: #4a4640; font-size: var(--fs-small); line-height: 1.5; }
+@media (max-width: 760px) {
+  .vivo .dlq-coppie { grid-template-columns: 1fr; gap: 24px; }
+}
+@media (max-width: 480px) {
+  .vivo .dlq-coppia { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   A16 · MAPPA (ink) — l'albero: radice, connettori, tre rami
+   ============================================================ */
+.vivo .mappa-albero { position: relative; margin-top: 40px; display: flex; flex-direction: column; align-items: center; }
+.vivo .mappa-radice {
+  display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border-radius: 999px;
+  background: #fff; color: #0a0a0a; font-weight: 800; letter-spacing: -.01em; font-size: var(--fs-body);
+}
+.vivo .mappa-radice i { font-style: normal; color: var(--sv-orange); }
+.vivo .mappa-fusto { width: 0; height: 36px; border-left: 1px dashed rgba(217, 212, 225, .55); }
+.vivo .mappa-rami { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; width: 100%; max-width: 900px; margin: 0; padding: 0; list-style: none; }
+/* la traversa: dal centro del primo ramo al centro del terzo */
+.vivo .mappa-rami::before {
+  content: ""; position: absolute; top: 0; left: calc(100% / 6); right: calc(100% / 6); height: 0;
+  border-top: 1px dashed rgba(217, 212, 225, .55);
+}
+.vivo .mappa-ramo { position: relative; padding-top: 30px; }
+/* il gambo di ogni ramo */
+.vivo .mappa-ramo::before {
+  content: ""; position: absolute; top: 0; left: 50%; width: 0; height: 30px;
+  border-left: 1px dashed rgba(217, 212, 225, .55); transform: translateX(-50%);
+}
+.vivo .mappa-card {
+  position: relative; border: 1px solid var(--sv-hair); border-radius: 16px; padding: 26px 22px 24px; text-align: center;
+  background: rgba(255, 255, 255, .025);
+}
+.vivo .mappa-card b { display: block; color: #fff; font-size: var(--fs-h3); font-weight: 800; letter-spacing: -.02em; }
+.vivo .mappa-card span { display: block; margin-top: 8px; color: var(--sv-silver-dim); }
+.vivo .mappa-card--qui { border-color: var(--sv-orange); box-shadow: 0 0 0 1px rgba(251, 70, 4, .35), 0 24px 50px -30px rgba(251, 70, 4, .7); }
+.vivo .mappa-qui {
+  position: absolute; left: 50%; top: -14px; transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+  padding: 5px 12px; border-radius: 999px; background: var(--sv-orange); color: #000;
+  font-family: var(--font-mono, ui-monospace, monospace); font-size: var(--fs-mono); letter-spacing: .16em; text-transform: uppercase; font-weight: 700;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .vivo .mappa-qui { animation: mappa-sale 2.4s ease-in-out infinite; }
+  @keyframes mappa-sale {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -7px); }
+  }
+}
+@media (max-width: 700px) {
+  .vivo .mappa-rami { grid-template-columns: 1fr; gap: 18px; max-width: 360px; }
+  .vivo .mappa-rami::before { display: none; }
+  .vivo .mappa-ramo { padding-top: 24px; }
+  .vivo .mappa-ramo::before { height: 24px; }
+  .vivo .mappa-ramo:first-child { padding-top: 0; }
+  .vivo .mappa-ramo:first-child::before { display: none; }
+  .vivo .mappa-fusto { height: 28px; }
+}
+
+/* ============================================================
+   A17 · TESSERA (carta) — copy + la tessera scura con il laccio
+   ============================================================ */
+.vivo .tess-grid { display: grid; grid-template-columns: 1fr auto; gap: 56px; align-items: center; }
+.vivo .tess-scena { position: relative; width: 295px; max-width: 100%; padding-top: 58px; margin: 0 auto; }
+/* il laccio: scende dall'alto, con il gancio */
+.vivo .tess-laccio {
+  position: absolute; top: -40px; left: 50%; transform: translateX(-50%);
+  width: 26px; height: 90px; border-radius: 0 0 5px 5px;
+  background: linear-gradient(90deg, #191919, #2c2c2c 40%, #1a1a1a);
+  box-shadow: 0 8px 18px -10px rgba(0, 0, 0, .7);
+}
+.vivo .tess-laccio::after {
+  content: ""; position: absolute; left: 50%; bottom: -12px; transform: translateX(-50%);
+  width: 34px; height: 14px; border-radius: 4px; background: #b9b3c2;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .3);
+}
+.vivo .tess-card {
+  position: relative; border-radius: 18px; padding: 34px 26px 26px; color: #fff;
+  background: linear-gradient(160deg, #1f1f20 0%, #0d0d0d 100%);
+  border: 1px solid rgba(217, 212, 225, .22);
+  box-shadow: 0 40px 70px -30px rgba(0, 0, 0, .75), 0 0 0 1px rgba(0, 0, 0, .6);
+}
+.vivo .tess-card::before {
+  content: ""; position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
+  width: 46px; height: 8px; border-radius: 999px; background: #050505; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12);
+}
+.vivo .tess-testa { display: flex; justify-content: space-between; align-items: baseline; margin-top: 12px; color: var(--sv-silver-dim); }
+.vivo .tess-testa b { color: var(--sv-orange); font-weight: 500; }
+.vivo .tess-nome { margin-top: 18px; font-size: 28px; line-height: 1; letter-spacing: -.025em; font-weight: 900; }
+.vivo .tess-nome i { display: block; margin-top: 6px; font-family: var(--font-accent), Georgia, serif; font-style: italic; font-weight: 400; font-size: 17px; color: var(--sv-silver); letter-spacing: 0; }
+.vivo .tess-lista { margin: 20px 0 0; padding: 18px 0 0; list-style: none; border-top: 1px solid var(--sv-hair); display: grid; gap: 9px; }
+.vivo .tess-lista li { color: var(--sv-silver); font-size: var(--fs-small); line-height: 1.5; }
+.vivo .tess-lista li::before { color: var(--sv-orange); }
+.vivo .tess-piede { margin-top: 22px; padding-top: 14px; border-top: 1px dashed var(--sv-hair); color: var(--sv-silver-dim); text-transform: none; letter-spacing: .04em; word-break: break-all; }
+@media (max-width: 860px) {
+  .vivo .tess-grid { grid-template-columns: 1fr; gap: 44px; }
+  .vivo .tess-scena { margin: 20px auto 0; }
+}
+
+/* ============================================================
+   A18 · QUANTO COSTA (ink) — la formula: oggi · vs · con il sistema
+   ============================================================ */
+.vivo .qc-formula { display: grid; grid-template-columns: 1fr auto 1fr; gap: 28px; align-items: stretch; margin-top: 36px; }
+.vivo .qc-col { border: 1px solid var(--sv-hair); border-radius: 16px; padding: 26px 26px 24px; background: rgba(255, 255, 255, .02); }
+.vivo .qc-col--sistema { border-color: var(--sv-orange); box-shadow: 0 0 0 1px rgba(251, 70, 4, .35), 0 30px 60px -36px rgba(251, 70, 4, .8); }
+.vivo .qc-col .sv-eyebrow { display: block; }
+.vivo .qc-riga { display: block; margin-top: 12px; font-size: var(--fs-h3); font-weight: 800; letter-spacing: -.02em; line-height: 1.15; color: #fff; font-variant-numeric: tabular-nums; }
+.vivo .qc-riga--muta { color: var(--sv-silver); font-weight: 600; }
+.vivo .qc-riga--tot { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--sv-hair); color: var(--sv-orange); }
+.vivo .qc-col--sistema .qc-riga--tot { color: #fff; }
+.vivo .qc-vs { align-self: center; font-family: var(--font-accent), Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(26px, 3vw, 40px); color: var(--sv-silver-dim); padding: 0 6px; }
+.vivo .qc-chiusa { margin-top: 30px; max-width: 64ch; }
+.vivo .qc-chiusa b { color: var(--sv-orange); }
+@media (max-width: 760px) {
+  .vivo .qc-formula { grid-template-columns: 1fr; gap: 14px; }
+  .vivo .qc-vs { text-align: center; padding: 2px 0; }
+}
+
+/* ============================================================
+   A19 · SE NON FUNZIONA (carta) — la garanzia in due quadri + l'acciaio
+   ============================================================ */
+/* l'elmo intero a 280 px è alto 498 px: per stare nel tetto dei 600 la sezione respira un po' meno (solo lei) */
+.vivo .se-non-funziona.sv-section { padding: 64px 0; }
+.vivo .snf-grid { display: grid; grid-template-columns: 1fr auto; gap: 56px; align-items: center; }
+.vivo .snf-quadri { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+.vivo .snf-quadro { border: 1px solid rgba(28, 28, 28, .16); border-radius: 16px; padding: 22px 22px 20px; background: #fff; box-shadow: 0 14px 34px -26px rgba(0, 0, 0, .5); }
+.vivo .snf-quadro .sv-eyebrow { display: block; color: var(--sv-orange); }
+.vivo .snf-quadro p { margin-top: 10px; }
+.vivo .snf-quadro--allora { border-color: rgba(251, 70, 4, .55); }
+.vivo .snf-foto { width: min(280px, 100%); border: 1px solid rgba(28, 28, 28, .16); box-shadow: 0 18px 40px -28px rgba(0, 0, 0, .6); margin: 0 auto; }
+.vivo .snf-foto figcaption { padding: 10px 12px 12px; color: #4a4640; font-size: var(--fs-small); line-height: 1.5; font-family: var(--font-accent), Georgia, serif; font-style: italic; }
+@media (max-width: 860px) {
+  .vivo .snf-grid { grid-template-columns: 1fr; gap: 36px; }
+}
+@media (max-width: 560px) {
+  .vivo .snf-quadri { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   A21 · FAQ CONTRATTO (carta) — due gruppi di <details>, la prima aperta
+   ============================================================ */
+.vivo .fqc-gruppi { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 56px; margin-top: 36px; }
+.vivo .fqc-gruppo h3 { padding-bottom: 12px; border-bottom: 1px solid rgba(28, 28, 28, .16); }
+.vivo .fqc-voce { border-bottom: 1px solid rgba(28, 28, 28, .12); }
+.vivo .fqc-voce summary {
+  list-style: none; cursor: pointer; display: grid; grid-template-columns: 1fr 22px; gap: 14px; align-items: center;
+  padding: 14px 0; font-weight: 700; font-size: var(--fs-body); letter-spacing: -.01em; color: #1c1c1c;
+}
+.vivo .fqc-voce summary::-webkit-details-marker { display: none; }
+.vivo .fqc-voce summary::after { content: "+"; color: var(--sv-orange); font-weight: 900; font-size: 20px; line-height: 1; text-align: center; }
+.vivo .fqc-voce[open] summary::after { content: "–"; }
+.vivo .fqc-voce summary:focus-visible { outline: 2px solid var(--sv-orange); outline-offset: 4px; border-radius: 4px; }
+.vivo .fqc-voce p { padding: 0 36px 16px 0; color: #4a4640; max-width: 58ch; }
+@media (max-width: 760px) {
+  .vivo .fqc-gruppi { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* ============================================================
+   A22 · CODA LEGALE — una riga mono prima del footer
+   ============================================================ */
+.vivo .coda-legale { padding: 26px 0; border-top: 1px solid var(--sv-hair); }
+.vivo .coda-riga { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; justify-content: center; text-align: center; color: var(--sv-silver-dim); text-transform: none; letter-spacing: .06em; }
+.vivo .coda-riga a { color: var(--sv-silver); text-decoration: underline; text-underline-offset: 3px; }
+.vivo .coda-riga a:hover, .vivo .coda-riga a:focus-visible { color: #fff; }
+.vivo .coda-sep { opacity: .5; }
+
+/* ============================================================
+   A03 · CTA FISSA — pillola flottante, compare dopo il primo schermo (client)
+   NON sostituisce la barra sticky esistente: sta in basso a destra, sotto il suo z-index.
+   ============================================================ */
+.vivo .ctaf { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 190; }
+.vivo .ctaf .sv-btn { padding: 14px 20px; border-radius: 999px; font-size: var(--fs-small); box-shadow: 0 18px 40px -14px rgba(251, 70, 4, .85), 0 0 0 1px rgba(0, 0, 0, .4); }
+.vivo .ctaf .sv-btn small { display: inline; margin-left: 8px; opacity: .75; }
+@media (prefers-reduced-motion: no-preference) {
+  .vivo .ctaf:not([hidden]) { animation: ctaf-sale .35s cubic-bezier(.22, 1, .36, 1) both; }
+  @keyframes ctaf-sale {
+    from { transform: translateY(24px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+}
+@media (max-width: 640px) {
+  .vivo .ctaf { right: 12px; left: 12px; display: flex; justify-content: center; }
+  .vivo .ctaf .sv-btn { width: 100%; }
+}

@@ -1,5 +1,8 @@
 import { FATTI } from "@/lib/fatti";
 
+/** A11 — pagina vera di un PDF PreventivoForge (public/aura/, intestazione del cliente ritagliata alla fonte). */
+const PF_SCHEDA = { src: "/aura/pf-scheda.webp", width: 1191, height: 1458 } as const;
+
 /**
  * N11 — Prove, solo vere (COPY.md §N11). Le cifre Novacar vengono da FATTI.novacar.*, i 50 di
  * Preventa da FATTI.preventaWhatsappGiorno; il resto del testo resta quello del COPY, parola per
@@ -17,6 +20,26 @@ export function ProveVere() {
           Un caso coi numeri contati. <span className="sv-it" style={{ color: "var(--sv-orange)" }}>Le facce le stiamo raccogliendo.</span>
         </h2>
 
+        {/* AGGIUNTA A11 (Dossier 38 v2, 13/09): la pagina di un PDF vero accanto al blocco Novacar. Il wrapper .pv-griglia
+            avvolge la griglia esistente senza toccarne una riga (§13); la figura è INTERA (1191×1458, resa 400, §14),
+            l'intestazione del cliente è ritagliata alla fonte in public/aura/. CSS: src/app/aggiunte-b.css (.pv-*). */}
+        <div className="pv-griglia">
+          <figure className="pv-figura" data-fonte="company/Memory/checkpoints/CP-20260723-003.md">
+            <div className="foto-intera" style={{ aspectRatio: `${PF_SCHEDA.width}/${PF_SCHEDA.height}` }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={PF_SCHEDA.src}
+                width={PF_SCHEDA.width}
+                height={PF_SCHEDA.height}
+                alt="Pagina di un PDF vero di PreventivoForge: la scheda tecnica compilata dal sistema, con l'intestazione del cliente ritagliata"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              ↑ Pagina di un PDF vero: scheda tecnica compilata dal sistema. L&apos;intestazione del cliente è ritagliata finché non c&apos;è il consenso al nome.
+            </figcaption>
+          </figure>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <article
             className="sv-card"
@@ -51,6 +74,7 @@ export function ProveVere() {
               noi ogni giorno. In chiamata la vedi: invii di oggi, risposte in coda, lead entrati.
             </p>
           </article>
+        </div>
         </div>
 
         <p className="sv-small sv-muted mt-6 max-w-[70ch]">
