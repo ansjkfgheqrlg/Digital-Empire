@@ -2399,3 +2399,9 @@ dei consigli raccolti), su ordine esplicito di Max.
 ## 2026-09-12 sera (EMPERATOR — Sito Agency: v2 bocciata, ripristino + solo aggiunte)
 - UPDATE: `projects/Agency/Progetto_Sito_Agency_Vivo` → Archive. Max ha bocciato la riscrittura (20 sezioni al posto di 37): sito
   riportato al live di giugno byte per byte, poi 3 sezioni aggiunte + /prenota/, senza toccare l'esistente. Legge nuova in memoria. CP-20260912-7ZNY.
+
+## 2026-09-13 pomeriggio/sera (EMPERATOR — Sito Agency: F1, F2, F3 in anteprima; studio 3 siti competitor vs nostro)
+- UPDATE: `projects/Agency/Progetto_Sito_Agency_Vivo` (tre fasi del cantiere, deroga ADR-030 su ordine, strumenti nuovi).
+- SOURCE: dossier `PIANO-MAESTRO/39A-ATLANTE-TRE-SITI-COMPETITOR.md` (49 elementi misurati di Armageddon/Speedrun/funneloperator) e
+  `39B-VERDETTI-SEZIONI-NOSTRE.md` (55 verdetti, ricetta di de-ingrandimento, 10 ridondanze) — collegati da `Tool_Fabbrica_Siti`.
+  CP-20260913-DWDE, -PP3C, -76GG. BACKLOG B-089.

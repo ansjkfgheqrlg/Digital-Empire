@@ -74,3 +74,13 @@ quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo
 - [[Concept_CCM_Brand_Guidelines]] — colore dell'azione < 10%, argento + grana
 - [[Digital_Empire_6_Phase_Process]] · `../../competitor/Andrei Pascu/site-study/README`
 - `PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md` · `.claude/skills/fabbrica-siti/CLAUDE-SITI.md`
+
+## 2026-09-13 — Il cantiere «solo aggiunte» in tre fasi, tutto in anteprima (EMP-XR4F)
+- **F1** (CP-20260913-DWDE): texture sotto l'hero (velo misurato ≥ 9:1), titolo più in alto, funnel, rail dei fatti.
+- **F2** (CP-20260913-PP3C): TUTTO il Dossier 38 v2 — 16 sezioni nuove + Specchio con foto + PDF nelle prove; 3 scagnozzi con brief unico.
+- **F3** (CP-20260913-76GG): dopo la critica di Max («troppo ingrandito, grana che scorre, frecce da AI, sezioni brutte»): studio dei 3 ultimi siti del
+  competitor ([[Source_Funnel_Operator_Sito_2026]], Armageddon, Claude Speedrun 2 → `PIANO-MAESTRO/39A`), verdetto sulle 55 sezioni nostre (`39B`),
+  `scala.css` (titoli 48→36-40, hero 148→96), grana da fissa ad assoluta, 7 sezioni di giugno rifatte con lo stesso testo (prima deroga di ADR-030,
+  su ordine testuale), 18 ritocchi CSS, funnel a tappe con frecce ferme, 2 sezioni nuove (frase barrata, griglia 01-04). Pagina 50.277 → 43.037 px.
+- **Aperto:** sguardo di Max sull'anteprima `qr4f689y0` → `--prod` suo; texture vera; 10 ridondanze proposte (39B §4); B-089 still generati.
+- Strumenti nati: `gate_solo_aggiunte.py --parole / --deroga-b` (deroghe meccaniche e dichiarate), `misura_hero.py` (contrasto misurato sotto le scritte).

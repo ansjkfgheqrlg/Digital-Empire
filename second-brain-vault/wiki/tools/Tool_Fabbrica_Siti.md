@@ -77,3 +77,9 @@ sito sbagliato, riusato), `agency-empire-landing-vivo` (il sito dell'agenzia: v2
 - [[Source_Andrei_Pascu_Armageddon_Landing_Lancio]] — il sito che ha mostrato la legge numerata del concorrente
 - [[Concept_Guardrail_Che_Si_Fanno_Rispettare]] — il principio dietro §9 e dietro ogni gate della Fabbrica: una regola che dipende dalla buona volontà non è un controllo
 - `PIANO-MAESTRO/32-DOSSIER-FABBRICA-SITI.md` · ADR-023 · ADR-024 · ADR-030
+
+## 2026-09-13 sera — gate esteso e scala del competitor
+- `scripts/gate_solo_aggiunte.py`: `--parole` (parte A come flusso di parole, per le sezioni rifatte su ordine del committente), tolleranza dei doppioni,
+  `--deroga-b <regex file>` (parte B). Ogni deroga viene stampata e va nel checkpoint. Prima applicazione: CP-20260913-76GG.
+- La scala che «non sembra ingrandita» (dossier 39A §1): corpo 16-17 · h2 33-37 (2,1-2,2× il corpo) · h1 ≤ 60 (salvo display) · una colonna 800-960 ·
+  padding 96 · 1 bottone per schermata · accento su < 5 % dei nodi · bordi 1 px, non ombre · un raggio per famiglia.
