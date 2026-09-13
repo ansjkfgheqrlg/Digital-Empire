@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Onest, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import "./vivo.css"; // solo per le sezioni aggiunte: ogni regola è scopata sotto .vivo
+import "./aggiunte-hero.css"; // D1/D2/A02 (ordini di Max 13/09): classi nuove + la sola regola D2 sul padding dell'hero
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 const onest = Onest({

@@ -31,6 +31,9 @@ import { AboutStory } from "@/components/sections/about-story";
 import { Specchio } from "@/sezioni-aggiunte/specchio";
 import { ProveVere } from "@/sezioni-aggiunte/prove-vere";
 import { CosaOttieni } from "@/sezioni-aggiunte/cosa-ottieni";
+// Sezioni AGGIUNTE il 2026-09-13 (Dossier 38 v2, Atto I): la firma (null senza ritratto) e il rail dei fatti
+import { Firma } from "@/sezioni-aggiunte/firma";
+import { RailFatti } from "@/sezioni-aggiunte/rail-fatti";
 import { StickyCTA } from "@/components/sticky-cta";
 import { Header } from "@/components/header";
 import { Results } from "@/components/sections/results";
@@ -42,6 +45,8 @@ export default function Home() {
       <StickyCTA href="#prenota" label="Prenota una Chiamata" />
       
       <Hero />
+      <Firma />
+      <RailFatti />
       <VSL />
       <ScienceStats />
       <Audience />

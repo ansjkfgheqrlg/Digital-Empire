@@ -4,6 +4,9 @@ import { ArrowRight, Shield, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { CALL_URL } from "@/components/call-cta";
 import { cn } from "@/lib/utils";
+// AGGIUNTE D1/D2 (ordine di Max, 13/09): texture sotto, funnel sotto la CTA. Inserimenti puri, nulla di rimosso.
+import { HeroTexture } from "@/sezioni-aggiunte/hero-texture";
+import { FunnelHero } from "@/sezioni-aggiunte/funnel-hero";
 
 function CTA({
   large = false,
@@ -25,6 +28,7 @@ function CTA({
 export function Hero() {
   return (
     <section className="bg-ink relative overflow-hidden section-border-t">
+      <HeroTexture />
       {/* Marquee */}
       <div
         className="overflow-hidden py-3 relative"
@@ -144,6 +148,12 @@ export function Hero() {
               <span className="flex items-center gap-1.5"><Shield className="h-3.5 w-3.5 text-orange-pure" /> Setup in 7 giorni · Garanzia di funzionamento · Zero dipendenze</span>
             </div>
           </div>
+        </Reveal>
+      </div>
+      {/* D2 — il funnel sta FUORI dal blocco del titolo (così le chip d'argento restano dove sono) */}
+      <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20 relative">
+        <Reveal delay={0.2}>
+          <FunnelHero />
         </Reveal>
       </div>
     </section>
