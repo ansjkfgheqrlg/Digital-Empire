@@ -1,0 +1,2 @@
+/* fonte: https://www.funneloperator.it/assets/dist-CQ1EQJV4.js */
+import{i as e}from"./jsx-runtime-DUAcabCT.js";import{t}from"./react-6OGjdfot.js";import{t as n}from"./dist-By9S2dAx.js";var r=e(t(),1),i=r.useId||(()=>void 0),a=0;function o(e){let[t,o]=r.useState(i());return n(()=>{e||o(e=>e??String(a++))},[e]),e||(t?`radix-${t}`:``)}export{o as t};

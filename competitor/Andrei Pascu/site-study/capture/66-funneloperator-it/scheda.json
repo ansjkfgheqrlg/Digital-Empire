@@ -1,0 +1,3294 @@
+{
+ "url": "https://www.funneloperator.it/",
+ "slug": "66-funneloperator-it",
+ "catturata": "2026-09-13",
+ "dominio": "www.funneloperator.it",
+ "titolo": "Funnel Operator — Impara a fare landing pages per le aziende",
+ "lang": "it",
+ "costruzione": "react",
+ "altezza": 32807,
+ "larghezza": 1440,
+ "altezza_mobile": 36630,
+ "body_bg": "oklch(1 0 0)",
+ "body_font": "\"Inter Tight\", \"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+ "palette_testo": [
+  [
+   "oklch(0.178 0 89.9)",
+   111
+  ],
+  [
+   "oklch(0.934 0 89.9)",
+   78
+  ],
+  [
+   "oklch(0.633 0 89.9)",
+   51
+  ],
+  [
+   "#ffffff",
+   15
+  ],
+  [
+   "oklch(0.473 0 89.9)",
+   7
+  ],
+  [
+   "oklch(0.61 0.14 240.1)",
+   7
+  ],
+  [
+   "oklch(0.656 0.134 235.9)",
+   6
+  ],
+  [
+   "oklch(0.87 0 89.9)",
+   4
+  ],
+  [
+   "#bd0000",
+   2
+  ],
+  [
+   "oklch(0.459 0.121 247.3)",
+   2
+  ],
+  [
+   "oklch(0.598 0.199 143.2)",
+   2
+  ],
+  [
+   "oklch(0.808 0.09 238.3)",
+   2
+  ]
+ ],
+ "palette_sfondi": [
+  [
+   "oklch(0.22 0 89.9)",
+   38
+  ],
+  [
+   "oklch(0.178 0 89.9)",
+   23
+  ],
+  [
+   "oklch(0.946 0 89.9)",
+   23
+  ],
+  [
+   "oklch(0.656 0.134 235.9)",
+   6
+  ],
+  [
+   "oklch(0.87 0 89.9)",
+   6
+  ],
+  [
+   "oklab(0 0 0 / 0.45)",
+   2
+  ],
+  [
+   "oklch(1 0 0)",
+   1
+  ],
+  [
+   "oklch(0.293 0 89.9)",
+   1
+  ],
+  [
+   "oklch(0.178 0 89.9) (+img)",
+   1
+  ],
+  [
+   "oklch(1 0 89.9)",
+   1
+  ]
+ ],
+ "caratteri": [
+  [
+   "\"Inter Tight\", \"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+   172
+  ],
+  [
+   "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+   102
+  ],
+  [
+   "\"DM Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+   10
+  ],
+  [
+   "Curseyt, \"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+   3
+  ]
+ ],
+ "scala_tipografica": [
+  [
+   "17px / lh 27.2px / w400",
+   28
+  ],
+  [
+   "22px / lh 30.8px / w500",
+   22
+  ],
+  [
+   "14px / lh 21px / w500",
+   18
+  ],
+  [
+   "37px / lh 44.4px / w700",
+   18
+  ],
+  [
+   "17px / lh 19.89px / w400",
+   18
+  ],
+  [
+   "17px / lh 17px / w400",
+   16
+  ],
+  [
+   "17px / lh 22.1px / w400",
+   13
+  ],
+  [
+   "29px / lh 29px / w600",
+   11
+  ],
+  [
+   "18.928px / lh 28.392px / w500",
+   8
+  ],
+  [
+   "17px / lh 20.57px / w400",
+   7
+  ],
+  [
+   "17px / lh 20.23px / w400",
+   6
+  ],
+  [
+   "22px / lh 30.8px / w700",
+   6
+  ],
+  [
+   "14px / lh 21px / w400",
+   6
+  ],
+  [
+   "49px / lh 56.35px / w700",
+   5
+  ],
+  [
+   "17px / lh 17.051px / w400",
+   5
+  ],
+  [
+   "16px / lh 24px / w400",
+   5
+  ],
+  [
+   "29px / lh 29px / w700",
+   4
+  ],
+  [
+   "36.9994px / lh 37.1104px / w700",
+   4
+  ],
+  [
+   "22px / lh 25.74px / w400",
+   4
+  ],
+  [
+   "49px / lh 56.35px / w400",
+   4
+  ],
+  [
+   "63px / lh 69.3px / w800",
+   4
+  ],
+  [
+   "35.9989px / lh 36.1069px / w500",
+   3
+  ],
+  [
+   "49px / lh 57.82px / w700",
+   3
+  ],
+  [
+   "49px / lh 49.147px / w700",
+   3
+  ],
+  [
+   "49px / lh 49px / w600",
+   3
+  ],
+  [
+   "17px / lh 27.2px / w700",
+   3
+  ],
+  [
+   "290px / lh 194.3px / w400",
+   2
+  ],
+  [
+   "49px / lh 59.29px / w500",
+   2
+  ],
+  [
+   "36.9994px / lh 37.1104px / w500",
+   2
+  ],
+  [
+   "17px / lh 20.57px / w700",
+   2
+  ],
+  [
+   "63px / lh 63px / w600",
+   2
+  ],
+  [
+   "49px / lh 49px / w500",
+   2
+  ],
+  [
+   "37px / lh 44.4px / w500",
+   2
+  ],
+  [
+   "17px / lh 20.74px / w400",
+   2
+  ],
+  [
+   "49px / lh 49.147px / w600",
+   2
+  ],
+  [
+   "37px / lh 37.111px / w500",
+   2
+  ],
+  [
+   "81px / lh 81.243px / w800",
+   2
+  ],
+  [
+   "37px / lh 37px / w500",
+   2
+  ],
+  [
+   "50px / lh 50.15px / w800",
+   2
+  ],
+  [
+   "17px / lh 21.25px / w600",
+   2
+  ]
+ ],
+ "pesi": [
+  [
+   "400",
+   120
+  ],
+  [
+   "500",
+   72
+  ],
+  [
+   "700",
+   57
+  ],
+  [
+   "600",
+   29
+  ],
+  [
+   "800",
+   9
+  ]
+ ],
+ "raggi": [
+  [
+   "8px",
+   52
+  ],
+  [
+   "5px",
+   36
+  ],
+  [
+   "3.35544e+07px",
+   21
+  ],
+  [
+   "12px",
+   8
+  ],
+  [
+   "24px",
+   7
+  ],
+  [
+   "4px",
+   7
+  ],
+  [
+   "0px 5px 0px 0px",
+   4
+  ],
+  [
+   "5px 0px 0px",
+   4
+  ],
+  [
+   "8px 8px 0px 0px",
+   4
+  ],
+  [
+   "13px",
+   3
+  ],
+  [
+   "12px 12px 0px 0px",
+   3
+  ],
+  [
+   "10px",
+   3
+  ],
+  [
+   "15px",
+   2
+  ],
+  [
+   "9px",
+   1
+  ]
+ ],
+ "ombre": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+   14
+  ]
+ ],
+ "effetti": {
+  "transizioni": [
+   [
+    "all",
+    825
+   ],
+   [
+    "color 0.12s cubic-bezier(0.2, 0, 0, 1), background-color 0.12s cubic-bezier(0.2, 0, 0, 1), border-color 0.12s cubic-bezi",
+    53
+   ],
+   [
+    "background-size 0.3s cubic-bezier(0.2, 0, 0, 1)",
+    18
+   ],
+   [
+    "transform 0.3s cubic-bezier(0.2, 0, 0, 1), translate 0.3s cubic-bezier(0.2, 0, 0, 1), scale 0.3s cubic-bezier(0.2, 0, 0,",
+    18
+   ],
+   [
+    "color 0.7s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.7s cubic-bez",
+    4
+   ],
+   [
+    "transform 0.12s cubic-bezier(0.2, 0, 0, 1), translate 0.12s cubic-bezier(0.2, 0, 0, 1), scale 0.12s cubic-bezier(0.2, 0,",
+    4
+   ],
+   [
+    "color 0.12s cubic-bezier(0.2, 0, 0, 1)",
+    2
+   ],
+   [
+    "opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+    1
+   ],
+   [
+    "opacity 0.16s cubic-bezier(0.2, 0, 0, 1), visibility 0.16s cubic-bezier(0.2, 0, 0, 1)",
+    1
+   ]
+  ],
+  "animazioni": [
+   [
+    "fo-rail 70s linear",
+    3
+   ],
+   [
+    "fo-rail 45s linear",
+    2
+   ]
+  ],
+  "filtri": [
+   [
+    "backdrop: blur(8px)",
+    2
+   ],
+   [
+    "blur(3.55px)",
+    2
+   ],
+   [
+    "brightness(0)",
+    1
+   ]
+  ],
+  "blend": [
+   [
+    "hard-light",
+    2
+   ],
+   [
+    "difference",
+    1
+   ],
+   [
+    "screen",
+    1
+   ],
+   [
+    "color-dodge",
+    1
+   ]
+  ],
+  "clip": [
+   [
+    "polygon(0px 100%, 12.2709px 6.9px, 13.4709px 4.1px, 15.4709px 1.9px, 18.0709px 0.5px, 21.0709px 0px, calc(100% - 21.0709",
+    4
+   ],
+   [
+    "inset(50%)",
+    2
+   ]
+  ],
+  "trasformazioni": [
+   [
+    "matrix(1, 0, 0, 1, -881.595, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -902.66, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -890.442, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -349.312, 0)",
+    1
+   ],
+   [
+    "matrix(1, 0, 0, 1, -698.578, 0)",
+    1
+   ]
+  ]
+ },
+ "keyframes": [
+  "accordion-down",
+  "accordion-up",
+  "caret-blink",
+  "enter",
+  "exit",
+  "fo-comparsa",
+  "fo-dissolvenza",
+  "fo-foglio-su",
+  "fo-gira",
+  "fo-luccichio",
+  "fo-momento",
+  "fo-rail",
+  "pulse"
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "y": 161,
+   "text": "Un giorno morirai."
+  },
+  {
+   "tag": "h2",
+   "y": 1499,
+   "text": "Diventa funnel operator oggi"
+  },
+  {
+   "tag": "h2",
+   "y": 4436,
+   "text": "La realtà dei fatti?"
+  },
+  {
+   "tag": "h3",
+   "y": 5145,
+   "text": "L'evoluzione del copywriting"
+  },
+  {
+   "tag": "h3",
+   "y": 5403,
+   "text": "Apri i 3 siti che hai visitato oggi."
+  },
+  {
+   "tag": "h2",
+   "y": 6284,
+   "text": "Come funziona"
+  },
+  {
+   "tag": "h2",
+   "y": 7976,
+   "text": "Fare siti Fare landing pages."
+  },
+  {
+   "tag": "h2",
+   "y": 8945,
+   "text": "Perché fare landing pages è il servizio che ho scelto"
+  },
+  {
+   "tag": "h2",
+   "y": 9847,
+   "text": "Titolare AP Sales"
+  },
+  {
+   "tag": "h2",
+   "y": 10923,
+   "text": "Esempi di pagine fatte da"
+  },
+  {
+   "tag": "h2",
+   "y": 11857,
+   "text": "Per chi ho creato Funnel Operator:"
+  },
+  {
+   "tag": "h2",
+   "y": 12637,
+   "text": "“Ma chi cazzo pensi di essere?”"
+  },
+  {
+   "tag": "h2",
+   "y": 14561,
+   "text": "LA CRISI DEL 2025"
+  },
+  {
+   "tag": "h2",
+   "y": 15164,
+   "text": "Ho fatto 28 test di 28 servizi diversi. È sopravvissuto solo uno."
+  },
+  {
+   "tag": "h2",
+   "y": 16510,
+   "text": "Schiavizzerai l'AI."
+  },
+  {
+   "tag": "h2",
+   "y": 17136,
+   "text": "L'AI ti ruba il lavoro. Ruberai il lavoro a chi non sa usare l'AI."
+  },
+  {
+   "tag": "h3",
+   "y": 17633,
+   "text": "Ci sono 2 tipi di persone che usano l'AI per fare pagine:"
+  },
+  {
+   "tag": "h2",
+   "y": 18390,
+   "text": "«Non è un business sexy… Ma funziona»"
+  },
+  {
+   "tag": "h3",
+   "y": 19481,
+   "text": "Impara a fare landing page"
+  },
+  {
+   "tag": "h3",
+   "y": 19481,
+   "text": "Impara a trovare clienti"
+  },
+  {
+   "tag": "h3",
+   "y": 19481,
+   "text": "Chiudi un caso studio"
+  },
+  {
+   "tag": "h3",
+   "y": 19481,
+   "text": "Fatti pagare"
+  },
+  {
+   "tag": "h2",
+   "y": 20048,
+   "text": "FUNNEL OPERATOR"
+  },
+  {
+   "tag": "h2",
+   "y": 22082,
+   "text": "Il corso copre quasi ogni possibilità."
+  },
+  {
+   "tag": "h3",
+   "y": 22968,
+   "text": "Dove si fa la consulenza?"
+  },
+  {
+   "tag": "h3",
+   "y": 23049,
+   "text": "Come si fissa?"
+  },
+  {
+   "tag": "h3",
+   "y": 23130,
+   "text": "A cosa serve?"
+  },
+  {
+   "tag": "h3",
+   "y": 23211,
+   "text": "Perché devo fare 50 contatti e finire il corso per fare call?"
+  },
+  {
+   "tag": "h2",
+   "y": 23505,
+   "text": "Asset pronti per te"
+  },
+  {
+   "tag": "h2",
+   "y": 24741,
+   "text": "Prima pagina online entro 24h"
+  },
+  {
+   "tag": "h2",
+   "y": 25654,
+   "text": "Community su Telegram"
+  },
+  {
+   "tag": "h2",
+   "y": 26421,
+   "text": "Troverai veramente clienti?"
+  },
+  {
+   "tag": "h3",
+   "y": 26686,
+   "text": "Per 10 mesi abbiamo testato metodi per trovare clienti con AP Sales"
+  },
+  {
+   "tag": "h3",
+   "y": 28060,
+   "text": "Ti diamo materiale di vendita"
+  },
+  {
+   "tag": "h2",
+   "y": 28722,
+   "text": "Registrazioni chiamate di vendita di AP Sales"
+  },
+  {
+   "tag": "h3",
+   "y": 29420,
+   "text": "«Se questo metodo funziona così bene, perché lo insegni?»"
+  },
+  {
+   "tag": "h3",
+   "y": 29627,
+   "text": "«Ma così non ti crei concorrenza da solo?»"
+  },
+  {
+   "tag": "h3",
+   "y": 29844,
+   "text": "«Se guadagni con le landing pages, perché vendi anche corsi?»"
+  },
+  {
+   "tag": "h2",
+   "y": 30195,
+   "text": "Questo percorso lo descrivo con una sola frase: cambiare vita."
+  },
+  {
+   "tag": "h2",
+   "y": 30912,
+   "text": "FAQ"
+  },
+  {
+   "tag": "h3",
+   "y": 31004,
+   "text": "FUNNEL OPERATOR"
+  },
+  {
+   "tag": "h3",
+   "y": 31039,
+   "text": "Sono disponibili tutte le lezioni da subito?"
+  },
+  {
+   "tag": "h3",
+   "y": 31120,
+   "text": "Posso fare Funnel Operator se sono principiante assoluto?"
+  },
+  {
+   "tag": "h3",
+   "y": 31201,
+   "text": "Se compro questo corso divento ricco?"
+  },
+  {
+   "tag": "h3",
+   "y": 31282,
+   "text": "Posso iniziare il corso se faccio già siti o copy?"
+  },
+  {
+   "tag": "h3",
+   "y": 31363,
+   "text": "Mi serve saper programmare?"
+  },
+  {
+   "tag": "h3",
+   "y": 31444,
+   "text": "Che iscrizioni mi servono?"
+  },
+  {
+   "tag": "h3",
+   "y": 31525,
+   "text": "Se l'AI sa fare pagine, perché le aziende dovrebbero pagare me?"
+  },
+  {
+   "tag": "h3",
+   "y": 31606,
+   "text": "Mi serve la partita IVA per fare landing pages?"
+  },
+  {
+   "tag": "h3",
+   "y": 31687,
+   "text": "È garantito che avrò risultati?"
+  },
+  {
+   "tag": "h3",
+   "y": 31832,
+   "text": "PAGAMENTO"
+  },
+  {
+   "tag": "h3",
+   "y": 31867,
+   "text": "Quanto costa Funnel Operator?"
+  },
+  {
+   "tag": "h3",
+   "y": 31948,
+   "text": "Posso pagare a rate?"
+  },
+  {
+   "tag": "h3",
+   "y": 32029,
+   "text": "Posso avere fattura?"
+  },
+  {
+   "tag": "h3",
+   "y": 32110,
+   "text": "Posso pagare con bonifico?"
+  },
+  {
+   "tag": "h3",
+   "y": 32191,
+   "text": "Ho un problema con un ordine, a chi scrivo?"
+  }
+ ],
+ "cta": [
+  {
+   "text": "Iscriviti adesso",
+   "href": null,
+   "y": 20998,
+   "x": 536,
+   "w": 147,
+   "h": 48,
+   "bg": "oklch(0.656 0.134 235.9)",
+   "color": "oklch(0.178 0 89.9)",
+   "radius": "8px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "none",
+   "size": 14,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 24px"
+  },
+  {
+   "text": "Cosa contiene il corso?",
+   "href": "#programma",
+   "y": 20998,
+   "x": 702,
+   "w": 202,
+   "h": 48,
+   "bg": "oklch(0.22 0 89.9)",
+   "color": "oklch(0.934 0 89.9)",
+   "radius": "8px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "none",
+   "size": 14,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 24px"
+  },
+  {
+   "text": "01 Intro",
+   "href": null,
+   "y": 21417,
+   "x": 352,
+   "w": 212,
+   "h": 57,
+   "bg": "oklch(0.178 0 89.9)",
+   "color": "oklch(0.178 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 18.928,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 29.12px"
+  },
+  {
+   "text": "02 Landing pages",
+   "href": null,
+   "y": 21357,
+   "x": 849,
+   "w": 212,
+   "h": 57,
+   "bg": "oklch(0.178 0 89.9)",
+   "color": "oklch(0.178 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 18.928,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 29.12px"
+  },
+  {
+   "text": "03 Trovare clienti",
+   "href": null,
+   "y": 21297,
+   "x": 406,
+   "w": 212,
+   "h": 57,
+   "bg": "oklch(0.178 0 89.9)",
+   "color": "oklch(0.178 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 18.928,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 29.12px"
+  },
+  {
+   "text": "04 Domande comuni",
+   "href": null,
+   "y": 21236,
+   "x": 788,
+   "w": 238,
+   "h": 57,
+   "bg": "oklch(0.178 0 89.9)",
+   "color": "oklch(0.178 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 18.928,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 29.12px"
+  },
+  {
+   "text": "Dove si fa la consulenza?",
+   "href": null,
+   "y": 22968,
+   "x": 423,
+   "w": 594,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Come si fissa?",
+   "href": null,
+   "y": 23049,
+   "x": 423,
+   "w": 594,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "A cosa serve?",
+   "href": null,
+   "y": 23130,
+   "x": 423,
+   "w": 594,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Perché devo fare 50 contatti e finire il corso per fare call?",
+   "href": null,
+   "y": 23211,
+   "x": 423,
+   "w": 594,
+   "h": 102,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Sono pronto",
+   "href": null,
+   "y": 30648,
+   "x": 650,
+   "w": 154,
+   "h": 48,
+   "bg": "oklch(0.656 0.134 235.9)",
+   "color": "#ffffff",
+   "radius": "8px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "none",
+   "size": 14,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 24px"
+  },
+  {
+   "text": "Sono disponibili tutte le lezioni da subito?",
+   "href": null,
+   "y": 31039,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Posso fare Funnel Operator se sono principiante assoluto?",
+   "href": null,
+   "y": 31120,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Se compro questo corso divento ricco?",
+   "href": null,
+   "y": 31201,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Posso iniziare il corso se faccio già siti o copy?",
+   "href": null,
+   "y": 31282,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Mi serve saper programmare?",
+   "href": null,
+   "y": 31363,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Che iscrizioni mi servono?",
+   "href": null,
+   "y": 31444,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Se l'AI sa fare pagine, perché le aziende dovrebbero pagare me?",
+   "href": null,
+   "y": 31525,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Mi serve la partita IVA per fare landing pages?",
+   "href": null,
+   "y": 31606,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "È garantito che avrò risultati?",
+   "href": null,
+   "y": 31687,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Quanto costa Funnel Operator?",
+   "href": null,
+   "y": 31867,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Posso pagare a rate?",
+   "href": null,
+   "y": 31948,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Posso avere fattura?",
+   "href": null,
+   "y": 32029,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Posso pagare con bonifico?",
+   "href": null,
+   "y": 32110,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Ho un problema con un ordine, a chi scrivo?",
+   "href": null,
+   "y": 32191,
+   "x": 304,
+   "w": 832,
+   "h": 80,
+   "bg": "transparent",
+   "color": "oklch(0.633 0 89.9)",
+   "radius": "0px",
+   "border": "0px solid oklch(0.929 0.013 255.508)",
+   "shadow": "none",
+   "size": 22,
+   "weight": "500",
+   "transform": "none",
+   "padding": "20px 0px"
+  },
+  {
+   "text": "Ottieni accesso",
+   "href": "#prezzo",
+   "y": 26222,
+   "x": 1265,
+   "w": 151,
+   "h": 48,
+   "bg": "oklch(0.656 0.134 235.9)",
+   "color": "oklch(0.178 0 89.9)",
+   "radius": "8px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "size": 14,
+   "weight": "500",
+   "transform": "none",
+   "padding": "0px 24px"
+  }
+ ],
+ "media": [
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 16,
+   "x": 304,
+   "w": 107,
+   "h": 32
+  },
+  {
+   "tag": "img",
+   "src": "/marchi/funops-logo-bianco.png",
+   "alt": "Funnel Operator",
+   "y": 16,
+   "x": 304,
+   "w": 107,
+   "h": 32
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/soldato-caduto.webp",
+   "alt": "",
+   "y": 428,
+   "x": 304,
+   "w": 832,
+   "h": 618
+  },
+  {
+   "tag": "img",
+   "src": "/marchi/funops-logomark-gradiente.svg",
+   "alt": "",
+   "y": 1404,
+   "x": 691,
+   "w": 58,
+   "h": 54
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/carta-metodo.webp",
+   "alt": "",
+   "y": 1627,
+   "x": 570,
+   "w": 295,
+   "h": 370
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/carta-lezioni.webp",
+   "alt": "",
+   "y": 1769,
+   "x": 316,
+   "w": 295,
+   "h": 370
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/carta-landing.webp",
+   "alt": "",
+   "y": 1755,
+   "x": 809,
+   "w": 314,
+   "h": 385
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/zero-clienti.webp",
+   "alt": "Un portatile aperto su un CRM vuoto, con scritto «ZERO CLIENTI?» sullo schermo.",
+   "y": 2473,
+   "x": 786,
+   "w": 350,
+   "h": 267
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/andrei-scrivania.webp",
+   "alt": "Andrei alla scrivania, davanti al monitor e al microfono, mentre scrive alla tastiera.",
+   "y": 2793,
+   "x": 304,
+   "w": 351,
+   "h": 267
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ordini.svg",
+   "alt": "",
+   "y": 3252,
+   "x": -578,
+   "w": 72,
+   "h": 81
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/studenti.svg",
+   "alt": "",
+   "y": 3257,
+   "x": -232,
+   "w": 74,
+   "h": 71
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/apertura.svg",
+   "alt": "",
+   "y": 3255,
+   "x": 91,
+   "w": 76,
+   "h": 76
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/trustpilot.svg",
+   "alt": "",
+   "y": 3255,
+   "x": 445,
+   "w": 80,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ordini.svg",
+   "alt": "",
+   "y": 3252,
+   "x": 772,
+   "w": 72,
+   "h": 81
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/studenti.svg",
+   "alt": "",
+   "y": 3257,
+   "x": 1117,
+   "w": 74,
+   "h": 71
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/apertura.svg",
+   "alt": "",
+   "y": 3255,
+   "x": 1440,
+   "w": 76,
+   "h": 76
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/trustpilot.svg",
+   "alt": "",
+   "y": 3255,
+   "x": 1795,
+   "w": 80,
+   "h": 75
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/gancio-insegna.webp",
+   "alt": "Landing pages.",
+   "y": 3857,
+   "x": 304,
+   "w": 832,
+   "h": 259
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/sec-avviso.webp",
+   "alt": "Avviso della U.S. Securities and Exchange Commission: «Gli investitori dovrebbero capire che tutti gli investimenti hanno un rischio, gli investimenti a breve termine in un mercato volatile portano rischi significativi di perdita». SEC, ente governativo americano per la regolamentazione del mercato e degli investimenti in borsa.",
+   "y": 4765,
+   "x": 304,
+   "w": 447,
+   "h": 312
+  },
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 5552,
+   "x": 304,
+   "w": 832,
+   "h": 221
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/sito-apple.webp",
+   "alt": "La pagina iPhone del sito Apple",
+   "y": 5552,
+   "x": 304,
+   "w": 832,
+   "h": 221
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/sito-amazon.webp",
+   "alt": "La pagina iniziale di Amazon",
+   "y": 5788,
+   "x": 304,
+   "w": 408,
+   "h": 221
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/sito-notion.webp",
+   "alt": "La pagina iniziale di Notion",
+   "y": 5788,
+   "x": 728,
+   "w": 408,
+   "h": 221
+  },
+  {
+   "tag": "img",
+   "src": "/marchi/funops-logomark-scuro.svg",
+   "alt": "",
+   "y": 6407,
+   "x": 455,
+   "w": 121,
+   "h": 115
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/passo-2-checklist.webp",
+   "alt": "",
+   "y": 6585,
+   "x": 656,
+   "w": 110,
+   "h": 111
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/passo-3-dispositivo.webp",
+   "alt": "",
+   "y": 6736,
+   "x": 425,
+   "w": 161,
+   "h": 163
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/passo-4-globo.webp",
+   "alt": "",
+   "y": 6930,
+   "x": 645,
+   "w": 125,
+   "h": 126
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/passo-5-persone.webp",
+   "alt": "",
+   "y": 7110,
+   "x": 460,
+   "w": 117,
+   "h": 118
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/passo-6-grafico.webp",
+   "alt": "",
+   "y": 7284,
+   "x": 650,
+   "w": 119,
+   "h": 120
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/passo-7-paypal.webp",
+   "alt": "",
+   "y": 7457,
+   "x": 458,
+   "w": 127,
+   "h": 128
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/carriera-avviata.svg",
+   "alt": "",
+   "y": 7702,
+   "x": 880,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/fare-siti.webp",
+   "alt": "Ragazzo di profilo con un taglio di capelli sbagliato, in bianco e nero",
+   "y": 8051,
+   "x": 381,
+   "w": 298,
+   "h": 362
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/fare-landing.webp",
+   "alt": "Lo stesso profilo con un taglio di capelli curato, a colori",
+   "y": 8051,
+   "x": 762,
+   "w": 298,
+   "h": 364
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/vsl-principale.webp",
+   "alt": "",
+   "y": 9188,
+   "x": 305,
+   "w": 830,
+   "h": 466
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/andrei-telefono.webp",
+   "alt": "Andrei al tavolo di un ristorante in alto, con lo skyline della città dietro.",
+   "y": 9844,
+   "x": 300,
+   "w": 306,
+   "h": 324
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/albero-apsales.webp",
+   "alt": "L'albero di AP Sales: da AP Sales scendono due rami, Formazione e Agenzia. Un puntatore blu segna «tu sei qui» sul ramo Formazione.",
+   "y": 10403,
+   "x": 324,
+   "w": 793,
+   "h": 328
+  },
+  {
+   "tag": "img",
+   "src": "/marchi/apsales.svg",
+   "alt": "AP Sales",
+   "y": 10932,
+   "x": 903,
+   "w": 206,
+   "h": 41
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11079,
+   "x": -598,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11079,
+   "x": -352,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11079,
+   "x": -106,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11079,
+   "x": 140,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11079,
+   "x": 386,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11079,
+   "x": 632,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11079,
+   "x": 878,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11079,
+   "x": 1124,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11079,
+   "x": 1370,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11079,
+   "x": 1616,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11079,
+   "x": 1862,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11079,
+   "x": 2108,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11079,
+   "x": 2354,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11079,
+   "x": 2600,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11079,
+   "x": 2846,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11079,
+   "x": 3092,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11079,
+   "x": 3338,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11079,
+   "x": 3584,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11384,
+   "x": -585,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11384,
+   "x": -339,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11384,
+   "x": -93,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11384,
+   "x": 153,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11384,
+   "x": 399,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11384,
+   "x": 645,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11384,
+   "x": 891,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11384,
+   "x": 1137,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11384,
+   "x": 1383,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11384,
+   "x": 1629,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11384,
+   "x": 1875,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11384,
+   "x": 2121,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11384,
+   "x": 2367,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11384,
+   "x": 2613,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11384,
+   "x": 2859,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-monouso.webp",
+   "alt": "Landing page di un fornitore di prodotti monouso certificati",
+   "y": 11384,
+   "x": 3105,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-massaggi.webp",
+   "alt": "Pagina di un centro massaggi, sezione trattamenti su fondo scuro",
+   "y": 11384,
+   "x": 3351,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/esempio-apsales.webp",
+   "alt": "Pagina «Chi siamo» di AP Sales, su fondo scuro",
+   "y": 11384,
+   "x": 3597,
+   "w": 209,
+   "h": 293
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/per-chi.webp",
+   "alt": "Andrei alla scrivania, seduto di traverso sulla sedia, che indica il portatile.",
+   "y": 12081,
+   "x": 304,
+   "w": 321,
+   "h": 341
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/andrei-tondo.webp",
+   "alt": "Andrei al microfono, ritratto.",
+   "y": 12784,
+   "x": 589,
+   "w": 124,
+   "h": 124
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/storia-ufficio.webp",
+   "alt": "Andrei di spalle alla scrivania del suo ufficio, davanti al monitor e al microfono.",
+   "y": 13170,
+   "x": 387,
+   "w": 321,
+   "h": 172
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/storia-cucina.webp",
+   "alt": "Andrei al portatile, seduto al tavolo di una cucina gialla.",
+   "y": 13170,
+   "x": 732,
+   "w": 321,
+   "h": 172
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/storia-monitor.webp",
+   "alt": "Andrei di notte al computer, illuminato dal monitor.",
+   "y": 13553,
+   "x": 387,
+   "w": 321,
+   "h": 172
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/storia-tavolo.webp",
+   "alt": "Andrei qualche anno fa, appoggiato a un tavolo mentre parla alla telecamera.",
+   "y": 13553,
+   "x": 732,
+   "w": 321,
+   "h": 172
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/storia-palestra.webp",
+   "alt": "Andrei in palestra, col telefono in mano.",
+   "y": 14034,
+   "x": 387,
+   "w": 313,
+   "h": 235
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/storia-riunione.webp",
+   "alt": "Andrei e il suo team attorno a un tavolo, davanti a un portatile.",
+   "y": 14034,
+   "x": 740,
+   "w": 313,
+   "h": 235
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/motivo-teschio.webp",
+   "alt": "",
+   "y": 15565,
+   "x": 421,
+   "w": 60,
+   "h": 61
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/motivo-spade.webp",
+   "alt": "",
+   "y": 15671,
+   "x": 421,
+   "w": 60,
+   "h": 60
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/motivo-lapide.webp",
+   "alt": "",
+   "y": 15776,
+   "x": 421,
+   "w": 60,
+   "h": 60
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/carta-serpenti.webp",
+   "alt": "",
+   "y": 16112,
+   "x": 0,
+   "w": 1440,
+   "h": 928
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/serpente-testa.webp",
+   "alt": "",
+   "y": 16223,
+   "x": 231,
+   "w": 719,
+   "h": 854
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/serpente-testa.webp",
+   "alt": "",
+   "y": 16049,
+   "x": 493,
+   "w": 719,
+   "h": 854
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-claude.webp",
+   "alt": "Claude",
+   "y": 17340,
+   "x": -45,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-chatgpt.webp",
+   "alt": "ChatGPT",
+   "y": 17340,
+   "x": 374,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-github.webp",
+   "alt": "GitHub",
+   "y": 17340,
+   "x": 475,
+   "w": 46,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-lovable.webp",
+   "alt": "Lovable",
+   "y": 17340,
+   "x": 582,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-krea.webp",
+   "alt": "Krea",
+   "y": 17340,
+   "x": 683,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-claude.webp",
+   "alt": "Claude",
+   "y": 17340,
+   "x": 784,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-chatgpt.webp",
+   "alt": "ChatGPT",
+   "y": 17340,
+   "x": 1203,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-github.webp",
+   "alt": "GitHub",
+   "y": 17340,
+   "x": 1304,
+   "w": 46,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-lovable.webp",
+   "alt": "Lovable",
+   "y": 17340,
+   "x": 1411,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/ai-krea.webp",
+   "alt": "Krea",
+   "y": 17340,
+   "x": 1512,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/carte-mano.webp",
+   "alt": "Quattro carte da gioco illustrate: re, regina, fante e asso, tutte con il seme dei soldi.",
+   "y": 18722,
+   "x": 344,
+   "w": 752,
+   "h": 340
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/tessera.webp",
+   "alt": "La tessera di Funnel Operator: prima pagina online in 24h, inizi a cercare clienti dopo 8:30 ore di corso, inizia carriera come Funnel Operator, garanzia consulenza con Andrei.",
+   "y": 20131,
+   "x": 572,
+   "w": 295,
+   "h": 568
+  },
+  {
+   "tag": "img",
+   "src": "/marchi/funops-logo-bianco.png",
+   "alt": "Funnel Operator",
+   "y": 21651,
+   "x": 534,
+   "w": 372,
+   "h": 111
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/consulenza-1.webp",
+   "alt": "Una consulenza in videochiamata.",
+   "y": 22190,
+   "x": -367,
+   "w": 321,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/consulenza-2.webp",
+   "alt": "Una consulenza in videochiamata, due persone in cuffia.",
+   "y": 22190,
+   "x": -8,
+   "w": 329,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/consulenza-3.webp",
+   "alt": "Una consulenza in videochiamata.",
+   "y": 22190,
+   "x": 359,
+   "w": 322,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/consulenza-1.webp",
+   "alt": "Una consulenza in videochiamata.",
+   "y": 22190,
+   "x": 719,
+   "w": 321,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/consulenza-2.webp",
+   "alt": "Una consulenza in videochiamata, due persone in cuffia.",
+   "y": 22190,
+   "x": 1078,
+   "w": 329,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/consulenza-3.webp",
+   "alt": "Una consulenza in videochiamata.",
+   "y": 22190,
+   "x": 1445,
+   "w": 322,
+   "h": 181
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/vsl-consulenza.webp",
+   "alt": "",
+   "y": 22578,
+   "x": 429,
+   "w": 582,
+   "h": 327
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/template-fasi.webp",
+   "alt": "Un template del corso, aperto su un documento.",
+   "y": 23754,
+   "x": 784,
+   "w": 245,
+   "h": 347
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/template-messaggi.webp",
+   "alt": "Il template dei messaggi, con la struttura del primo contatto.",
+   "y": 23920,
+   "x": 411,
+   "w": 245,
+   "h": 347
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/template-fasi.webp",
+   "alt": "Il copione di una chiamata di vendita, diviso in fasi.",
+   "y": 24093,
+   "x": 784,
+   "w": 245,
+   "h": 347
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/template-messaggi.webp",
+   "alt": "Il template dei messaggi, con la struttura del primo contatto.",
+   "y": 24258,
+   "x": 411,
+   "w": 245,
+   "h": 347
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/lovable.webp",
+   "alt": "L'editor di Lovable con una landing page in costruzione: l'anteprima della pagina a destra, la chat a sinistra.",
+   "y": 24971,
+   "x": 387,
+   "w": 666,
+   "h": 286
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/aeroplano.webp",
+   "alt": "",
+   "y": 25974,
+   "x": 765,
+   "w": 405,
+   "h": 237
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/aeroplano.webp",
+   "alt": "",
+   "y": 25678,
+   "x": 252,
+   "w": 297,
+   "h": 212
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/telegram.webp",
+   "alt": "",
+   "y": 25536,
+   "x": 676,
+   "w": 89,
+   "h": 91
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/community-iphone.webp",
+   "alt": "Il gruppo Telegram di Funnel Operator, aperto su un telefono.",
+   "y": 25921,
+   "x": 557,
+   "w": 326,
+   "h": 404
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/stack-clienti.webp",
+   "alt": "",
+   "y": 26973,
+   "x": 432,
+   "w": 576,
+   "h": 916
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/call-cliente.webp",
+   "alt": "Schermata di una call con un cliente che ascolta.",
+   "y": 28891,
+   "x": 357,
+   "w": 458,
+   "h": 251
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/call-lavagna.webp",
+   "alt": "Schermata di una call: una lavagna con lo schema di un lead magnet, e in alto a destra il video di chi parla.",
+   "y": 28988,
+   "x": 624,
+   "w": 458,
+   "h": 251
+  },
+  {
+   "tag": "picture",
+   "src": "",
+   "alt": "",
+   "y": 30365,
+   "x": 304,
+   "w": 269,
+   "h": 354
+  },
+  {
+   "tag": "img",
+   "src": "/vendita/cambiare-vita.webp",
+   "alt": "Un ragazzo seduto sul davanzale di una finestra aperta, con le cuffie e il telefono in mano.",
+   "y": 30365,
+   "x": 304,
+   "w": 269,
+   "h": 354
+  },
+  {
+   "tag": "img",
+   "src": "/marchi/funops-logo-bianco.png",
+   "alt": "Funnel Operator",
+   "y": 32576,
+   "x": 304,
+   "w": 107,
+   "h": 32
+  }
+ ],
+ "blocchi_testo": 386,
+ "meta": {
+  "description": "Impara a fare landing pages per le aziende e a trovare i clienti che te le pagano. Accesso a vita, pagamento unico.",
+  "og_title": "Funnel Operator — Impara a fare landing pages per le aziende",
+  "og_image": "https://www.funneloperator.it/immagini/anteprima-social.png",
+  "canonical": "https://www.funneloperator.it/",
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.apsales.eu/#organization\",\"name\":\"AP Sales\",\"legalName\":\"Andrei Pascu Sales\",\"url\":\"https://www.apsales.eu\",\"vatID\":\"IT02001850474\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Viale Giacomo Matteotti 15\",\"postalCode\":\"50121\",\"addressLocality\":\"Firenze\",\"addressCountry\":\"IT\"},\"founder\":{\"@id\":\"https://www."
+  ]
+ },
+ "sezioni": [
+  {
+   "i": 1,
+   "y": 65,
+   "h": 1243,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "isolate.flex.flex-col",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "Un giorno morirai.",
+   "headings": [
+    "Un giorno morirai."
+   ],
+   "blocchi_testo": 4,
+   "parole": 11,
+   "densita": 1,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|isolate.flex.flex-col|2|M|-|6",
+   "gruppo": 1,
+   "rappresentante": true,
+   "screenshot": "sezioni/01-un-giorno-morirai.png"
+  },
+  {
+   "i": 2,
+   "y": 1308,
+   "h": 1068,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "relative.isolate.overflow-hidden",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": true,
+   "heading": "Diventa funnel operator oggi",
+   "headings": [
+    "Diventa funnel operator oggi"
+   ],
+   "blocchi_testo": 13,
+   "parole": 28,
+   "densita": 3,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|relative.isolate.overflow-hidden|2|M|-|5",
+   "gruppo": 2,
+   "rappresentante": true,
+   "screenshot": "sezioni/02-diventa-funnel-operator-oggi.png"
+  },
+  {
+   "i": 3,
+   "y": 2377,
+   "h": 780,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 2,
+   "parole": 27,
+   "densita": 3,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|4",
+   "gruppo": 3,
+   "rappresentante": true,
+   "screenshot": "sezioni/03-section.png"
+  },
+  {
+   "i": 4,
+   "y": 3156,
+   "h": 273,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 18,
+   "parole": 30,
+   "densita": 11,
+   "media": 8,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|1",
+   "gruppo": 4,
+   "rappresentante": true,
+   "screenshot": "sezioni/04-section.png"
+  },
+  {
+   "i": 5,
+   "y": 3429,
+   "h": 910,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 4,
+   "parole": 19,
+   "densita": 2,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|-|5",
+   "gruppo": 5,
+   "rappresentante": true,
+   "screenshot": "sezioni/05-section.png"
+  },
+  {
+   "i": 6,
+   "y": 4340,
+   "h": 1848,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "La realtà dei fatti?",
+   "headings": [
+    "La realtà dei fatti?",
+    "L'evoluzione del copywriting",
+    "Apri i 3 siti che hai visitato oggi."
+   ],
+   "blocchi_testo": 10,
+   "parole": 332,
+   "densita": 18,
+   "media": 5,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|-|9",
+   "gruppo": 6,
+   "rappresentante": true,
+   "screenshot": "sezioni/06-la-realt-dei-fatti.png"
+  },
+  {
+   "i": 7,
+   "y": 6188,
+   "h": 1692,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Come funziona",
+   "headings": [
+    "Come funziona"
+   ],
+   "blocchi_testo": 33,
+   "parole": 65,
+   "densita": 4,
+   "media": 8,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|8",
+   "gruppo": 7,
+   "rappresentante": true,
+   "screenshot": "sezioni/07-come-funziona.png"
+  },
+  {
+   "i": 8,
+   "y": 7880,
+   "h": 969,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "Fare siti Fare landing pages.",
+   "headings": [
+    "Fare siti Fare landing pages."
+   ],
+   "blocchi_testo": 9,
+   "parole": 36,
+   "densita": 4,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|-|5",
+   "gruppo": 5,
+   "rappresentante": false,
+   "screenshot": "sezioni/08-fare-siti-fare-landing-pages.png"
+  },
+  {
+   "i": 9,
+   "y": 8849,
+   "h": 902,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Perché fare landing pages è il servizio che ho scelto",
+   "headings": [
+    "Perché fare landing pages è il servizio che ho scelto"
+   ],
+   "blocchi_testo": 5,
+   "parole": 15,
+   "densita": 2,
+   "media": 1,
+   "cta": 1,
+   "firma": "section|sezione-chiara.py-vendita|1|M|C|5",
+   "gruppo": 9,
+   "rappresentante": true,
+   "screenshot": "sezioni/09-perch-fare-landing-pages-il-serviz.png"
+  },
+  {
+   "i": 10,
+   "y": 9751,
+   "h": 1076,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Titolare AP Sales",
+   "headings": [
+    "Titolare AP Sales"
+   ],
+   "blocchi_testo": 4,
+   "parole": 64,
+   "densita": 6,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|5",
+   "gruppo": 10,
+   "rappresentante": true,
+   "screenshot": "sezioni/10-titolare-ap-sales.png"
+  },
+  {
+   "i": 11,
+   "y": 10827,
+   "h": 934,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "Esempi di pagine fatte da",
+   "headings": [
+    "Esempi di pagine fatte da"
+   ],
+   "blocchi_testo": 2,
+   "parole": 5,
+   "densita": 1,
+   "media": 37,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|-|5",
+   "gruppo": 5,
+   "rappresentante": false,
+   "screenshot": "sezioni/11-esempi-di-pagine-fatte-da.png"
+  },
+  {
+   "i": 12,
+   "y": 11761,
+   "h": 780,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "Per chi ho creato Funnel Operator:",
+   "headings": [
+    "Per chi ho creato Funnel Operator:"
+   ],
+   "blocchi_testo": 6,
+   "parole": 81,
+   "densita": 10,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|-|4",
+   "gruppo": 12,
+   "rappresentante": true,
+   "screenshot": "sezioni/12-per-chi-ho-creato-funnel-operator.png"
+  },
+  {
+   "i": 13,
+   "y": 12541,
+   "h": 1924,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "“Ma chi cazzo pensi di essere?”",
+   "headings": [
+    "“Ma chi cazzo pensi di essere?”"
+   ],
+   "blocchi_testo": 10,
+   "parole": 192,
+   "densita": 10,
+   "media": 7,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|10",
+   "gruppo": 13,
+   "rappresentante": true,
+   "screenshot": "sezioni/13-ma-chi-cazzo-pensi-di-essere.png"
+  },
+  {
+   "i": 14,
+   "y": 14465,
+   "h": 603,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "LA CRISI DEL 2025",
+   "headings": [
+    "LA CRISI DEL 2025"
+   ],
+   "blocchi_testo": 7,
+   "parole": 92,
+   "densita": 15,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|-|-|3",
+   "gruppo": 14,
+   "rappresentante": true,
+   "screenshot": "sezioni/14-la-crisi-del-2025.png"
+  },
+  {
+   "i": 15,
+   "y": 15068,
+   "h": 1044,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "Ho fatto 28 test di 28 servizi diversi. È sopravvissuto solo uno.",
+   "headings": [
+    "Ho fatto 28 test di 28 servizi diversi. È sopravvissuto solo uno."
+   ],
+   "blocchi_testo": 19,
+   "parole": 139,
+   "densita": 13,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|-|5",
+   "gruppo": 5,
+   "rappresentante": false,
+   "screenshot": "sezioni/15-ho-fatto-28-test-di-28-servizi-div.png"
+  },
+  {
+   "i": 16,
+   "y": 16112,
+   "h": 928,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita.relative",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Schiavizzerai l'AI.",
+   "headings": [
+    "Schiavizzerai l'AI."
+   ],
+   "blocchi_testo": 3,
+   "parole": 29,
+   "densita": 3,
+   "media": 3,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita.relative|1|M|-|5",
+   "gruppo": 16,
+   "rappresentante": true,
+   "screenshot": "sezioni/16-schiavizzerai-l-ai.png"
+  },
+  {
+   "i": 17,
+   "y": 17040,
+   "h": 1254,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "L'AI ti ruba il lavoro. Ruberai il lavoro a chi non sa usare l'AI.",
+   "headings": [
+    "L'AI ti ruba il lavoro. Ruberai il lavoro a chi non sa usare l'AI.",
+    "Ci sono 2 tipi di persone che usano l'AI per fare pagine:"
+   ],
+   "blocchi_testo": 14,
+   "parole": 194,
+   "densita": 15,
+   "media": 14,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|6",
+   "gruppo": 17,
+   "rappresentante": true,
+   "screenshot": "sezioni/17-l-ai-ti-ruba-il-lavoro-ruberai-il.png"
+  },
+  {
+   "i": 18,
+   "y": 18294,
+   "h": 1600,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "«Non è un business sexy… Ma funziona»",
+   "headings": [
+    "«Non è un business sexy… Ma funziona»",
+    "Impara a fare landing page",
+    "Impara a trovare clienti",
+    "Chiudi un caso studio",
+    "Fatti pagare"
+   ],
+   "blocchi_testo": 24,
+   "parole": 120,
+   "densita": 8,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|-|8",
+   "gruppo": 18,
+   "rappresentante": true,
+   "screenshot": "sezioni/18-non-un-business-sexy-ma-funziona.png"
+  },
+  {
+   "i": 19,
+   "y": 19894,
+   "h": 1246,
+   "prof": 4,
+   "tag": "section",
+   "id": "offerta",
+   "classi": "relative.isolate.overflow-hidden",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "FUNNEL OPERATOR",
+   "headings": [
+    "FUNNEL OPERATOR"
+   ],
+   "blocchi_testo": 22,
+   "parole": 37,
+   "densita": 3,
+   "media": 1,
+   "cta": 2,
+   "firma": "section|relative.isolate.overflow-hidden|2|M|C|6",
+   "gruppo": 19,
+   "rappresentante": true,
+   "screenshot": "sezioni/19-funnel-operator.png"
+  },
+  {
+   "i": 20,
+   "y": 21140,
+   "h": 846,
+   "prof": 4,
+   "tag": "section",
+   "id": "programma",
+   "classi": "sezione-chiara.py-vendita.scroll-mt-24",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 12,
+   "parole": 11,
+   "densita": 1,
+   "media": 1,
+   "cta": 4,
+   "firma": "section|sezione-chiara.py-vendita.scroll-mt-24|1|M|C|4",
+   "gruppo": 20,
+   "rappresentante": true,
+   "screenshot": "sezioni/20-section.png"
+  },
+  {
+   "i": 21,
+   "y": 21986,
+   "h": 1423,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "Il corso copre quasi ogni possibilità.",
+   "headings": [
+    "Il corso copre quasi ogni possibilità.",
+    "Dove si fa la consulenza?",
+    "Come si fissa?",
+    "A cosa serve?",
+    "Perché devo fare 50 contatti e finire il corso per fare call?"
+   ],
+   "blocchi_testo": 29,
+   "parole": 67,
+   "densita": 5,
+   "media": 15,
+   "cta": 5,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|C|7",
+   "gruppo": 21,
+   "rappresentante": true,
+   "screenshot": "sezioni/21-il-corso-copre-quasi-ogni-possibil.png"
+  },
+  {
+   "i": 22,
+   "y": 23409,
+   "h": 1236,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "Asset pronti per te",
+   "headings": [
+    "Asset pronti per te"
+   ],
+   "blocchi_testo": 17,
+   "parole": 154,
+   "densita": 12,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|-|6",
+   "gruppo": 22,
+   "rappresentante": true,
+   "screenshot": "sezioni/22-asset-pronti-per-te.png"
+  },
+  {
+   "i": 23,
+   "y": 24645,
+   "h": 795,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Prima pagina online entro 24h",
+   "headings": [
+    "Prima pagina online entro 24h"
+   ],
+   "blocchi_testo": 3,
+   "parole": 26,
+   "densita": 3,
+   "media": 1,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|4",
+   "gruppo": 3,
+   "rappresentante": false,
+   "screenshot": "sezioni/23-prima-pagina-online-entro-24h.png"
+  },
+  {
+   "i": 24,
+   "y": 25440,
+   "h": 885,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita.relative",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Community su Telegram",
+   "headings": [
+    "Community su Telegram"
+   ],
+   "blocchi_testo": 4,
+   "parole": 26,
+   "densita": 3,
+   "media": 4,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita.relative|1|M|-|4",
+   "gruppo": 24,
+   "rappresentante": true,
+   "screenshot": "sezioni/24-community-su-telegram.png"
+  },
+  {
+   "i": 25,
+   "y": 26325,
+   "h": 2301,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Troverai veramente clienti?",
+   "headings": [
+    "Troverai veramente clienti?",
+    "Per 10 mesi abbiamo testato metodi per trovare clienti con AP Sales",
+    "Ti diamo materiale di vendita"
+   ],
+   "blocchi_testo": 22,
+   "parole": 126,
+   "densita": 5,
+   "media": 6,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|12",
+   "gruppo": 25,
+   "rappresentante": true,
+   "screenshot": "sezioni/25-troverai-veramente-clienti.png"
+  },
+  {
+   "i": 26,
+   "y": 28626,
+   "h": 698,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Registrazioni chiamate di vendita di AP Sales",
+   "headings": [
+    "Registrazioni chiamate di vendita di AP Sales"
+   ],
+   "blocchi_testo": 2,
+   "parole": 35,
+   "densita": 5,
+   "media": 2,
+   "cta": 0,
+   "firma": "section|sezione-chiara.py-vendita|1|M|-|3",
+   "gruppo": 26,
+   "rappresentante": true,
+   "screenshot": "sezioni/26-registrazioni-chiamate-di-vendita.png"
+  },
+  {
+   "i": 27,
+   "y": 29324,
+   "h": 775,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "«Se questo metodo funziona così bene, perché lo insegni?»",
+   "headings": [
+    "«Se questo metodo funziona così bene, perché lo insegni?»",
+    "«Ma così non ti crei concorrenza da solo?»",
+    "«Se guadagni con le landing pages, perché vendi anche corsi?»"
+   ],
+   "blocchi_testo": 6,
+   "parole": 165,
+   "densita": 21,
+   "media": 0,
+   "cta": 0,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|-|-|4",
+   "gruppo": 27,
+   "rappresentante": true,
+   "screenshot": "sezioni/27-se-questo-metodo-funziona-cos-ben.png"
+  },
+  {
+   "i": 28,
+   "y": 30099,
+   "h": 717,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "sezione-chiara.py-vendita",
+   "bg": "oklch(0.946 0 89.9)",
+   "bg_img": false,
+   "heading": "Questo percorso lo descrivo con una sola frase: cambiare vita.",
+   "headings": [
+    "Questo percorso lo descrivo con una sola frase: cambiare vita."
+   ],
+   "blocchi_testo": 5,
+   "parole": 63,
+   "densita": 9,
+   "media": 3,
+   "cta": 1,
+   "firma": "section|sezione-chiara.py-vendita|1|M|C|4",
+   "gruppo": 28,
+   "rappresentante": true,
+   "screenshot": "sezioni/28-questo-percorso-lo-descrivo-con-un.png"
+  },
+  {
+   "i": 29,
+   "y": 30816,
+   "h": 1719,
+   "prof": 4,
+   "tag": "section",
+   "id": null,
+   "classi": "bg-fo-bg.text-fo-text.py-vendita",
+   "bg": "oklch(0.178 0 89.9)",
+   "bg_img": false,
+   "heading": "FAQ",
+   "headings": [
+    "FAQ",
+    "FUNNEL OPERATOR",
+    "Sono disponibili tutte le lezioni da subito?",
+    "Posso fare Funnel Operator se sono principiante assoluto?",
+    "Se compro questo corso divento ricco?",
+    "Posso iniziare il corso se faccio già siti o copy?"
+   ],
+   "blocchi_testo": 88,
+   "parole": 152,
+   "densita": 9,
+   "media": 28,
+   "cta": 14,
+   "firma": "section|bg-fo-bg.text-fo-text.py-vendita|1|M|C|9",
+   "gruppo": 29,
+   "rappresentante": true,
+   "screenshot": "sezioni/29-faq.png"
+  },
+  {
+   "i": 30,
+   "y": 32535,
+   "h": 272,
+   "prof": 2,
+   "tag": "footer",
+   "id": null,
+   "classi": "interfaccia.border-t.border-fo-line",
+   "bg": "transparent",
+   "bg_img": false,
+   "heading": null,
+   "headings": [],
+   "blocchi_testo": 14,
+   "parole": 30,
+   "densita": 11,
+   "media": 1,
+   "cta": 1,
+   "firma": "footer|interfaccia.border-t.border-fo-line|1|M|C|1",
+   "gruppo": 30,
+   "rappresentante": true,
+   "screenshot": "sezioni/30-footer.png"
+  }
+ ],
+ "sezioni_totali": 30,
+ "sezioni_distinte": 26,
+ "src": [
+  {
+   "file": "src/01-Combination-8XuMgjkz.js",
+   "url": "https://www.funneloperator.it/assets/Combination-8XuMgjkz.js",
+   "bytes": 15567
+  },
+  {
+   "file": "src/02-accordion-BvtD-mDo.js",
+   "url": "https://www.funneloperator.it/assets/accordion-BvtD-mDo.js",
+   "bytes": 7151
+  },
+  {
+   "file": "src/03-avatar-JcsTr3Jb.js",
+   "url": "https://www.funneloperator.it/assets/avatar-JcsTr3Jb.js",
+   "bytes": 3873
+  },
+  {
+   "file": "src/04-button-rHPgEXhH.js",
+   "url": "https://www.funneloperator.it/assets/button-rHPgEXhH.js",
+   "bytes": 2064
+  },
+  {
+   "file": "src/05-buy-button-DX_4IxaR.js",
+   "url": "https://www.funneloperator.it/assets/buy-button-DX_4IxaR.js",
+   "bytes": 655
+  },
+  {
+   "file": "src/06-check-DS6YO9Tj.js",
+   "url": "https://www.funneloperator.it/assets/check-DS6YO9Tj.js",
+   "bytes": 124
+  },
+  {
+   "file": "src/07-chevron-right-H05w88XQ.js",
+   "url": "https://www.funneloperator.it/assets/chevron-right-H05w88XQ.js",
+   "bytes": 130
+  },
+  {
+   "file": "src/08-circle-Ba2swrUF.js",
+   "url": "https://www.funneloperator.it/assets/circle-Ba2swrUF.js",
+   "bytes": 130
+  },
+  {
+   "file": "src/09-clsx-CjueKrWZ.js",
+   "url": "https://www.funneloperator.it/assets/clsx-CjueKrWZ.js",
+   "bytes": 368
+  },
+  {
+   "file": "src/10-createLucideIcon-CLQ5Hlf7.js",
+   "url": "https://www.funneloperator.it/assets/createLucideIcon-CLQ5Hlf7.js",
+   "bytes": 1223
+  },
+  {
+   "file": "src/11-createServerFn-Dnzfrwdq.js",
+   "url": "https://www.funneloperator.it/assets/createServerFn-Dnzfrwdq.js",
+   "bytes": 36292
+  },
+  {
+   "file": "src/12-dialog-PqngB_cI.js",
+   "url": "https://www.funneloperator.it/assets/dialog-PqngB_cI.js",
+   "bytes": 8862
+  },
+  {
+   "file": "src/13-dist-BCr60LrK.js",
+   "url": "https://www.funneloperator.it/assets/dist-BCr60LrK.js",
+   "bytes": 3721
+  },
+  {
+   "file": "src/14-dist-BcRHIhV1.js",
+   "url": "https://www.funneloperator.it/assets/dist-BcRHIhV1.js",
+   "bytes": 207
+  },
+  {
+   "file": "src/15-dist-BjI6cdkc.js",
+   "url": "https://www.funneloperator.it/assets/dist-BjI6cdkc.js",
+   "bytes": 443
+  },
+  {
+   "file": "src/16-dist-BjzlAo1b.js",
+   "url": "https://www.funneloperator.it/assets/dist-BjzlAo1b.js",
+   "bytes": 1826
+  },
+  {
+   "file": "src/17-dist-BkcunYdr.js",
+   "url": "https://www.funneloperator.it/assets/dist-BkcunYdr.js",
+   "bytes": 1002
+  },
+  {
+   "file": "src/18-dist-Bq4XamdR.js",
+   "url": "https://www.funneloperator.it/assets/dist-Bq4XamdR.js",
+   "bytes": 3431
+  },
+  {
+   "file": "src/19-dist-BtDRIp4A.js",
+   "url": "https://www.funneloperator.it/assets/dist-BtDRIp4A.js",
+   "bytes": 26336
+  },
+  {
+   "file": "src/20-dist-By9S2dAx.js",
+   "url": "https://www.funneloperator.it/assets/dist-By9S2dAx.js",
+   "bytes": 159
+  },
+  {
+   "file": "src/21-dist-C8rXSLs3.js",
+   "url": "https://www.funneloperator.it/assets/dist-C8rXSLs3.js",
+   "bytes": 225
+  },
+  {
+   "file": "src/22-dist-CQ1EQJV4.js",
+   "url": "https://www.funneloperator.it/assets/dist-CQ1EQJV4.js",
+   "bytes": 284
+  },
+  {
+   "file": "src/23-dist-CoJsh5zY.js",
+   "url": "https://www.funneloperator.it/assets/dist-CoJsh5zY.js",
+   "bytes": 3703
+  },
+  {
+   "file": "src/24-dist-CuzAL6fY.js",
+   "url": "https://www.funneloperator.it/assets/dist-CuzAL6fY.js",
+   "bytes": 14735
+  },
+  {
+   "file": "src/25-dist-DNKK-Xcg.js",
+   "url": "https://www.funneloperator.it/assets/dist-DNKK-Xcg.js",
+   "bytes": 2126
+  },
+  {
+   "file": "src/26-dist-DQfxV11y.js",
+   "url": "https://www.funneloperator.it/assets/dist-DQfxV11y.js",
+   "bytes": 471
+  },
+  {
+   "file": "src/27-dist-cHTKLo5g.js",
+   "url": "https://www.funneloperator.it/assets/dist-cHTKLo5g.js",
+   "bytes": 2624
+  },
+  {
+   "file": "src/28-dropdown-menu-COwaHBxh.js",
+   "url": "https://www.funneloperator.it/assets/dropdown-menu-COwaHBxh.js",
+   "bytes": 8192
+  },
+  {
+   "file": "src/29-index-CLKYm5hM.js",
+   "url": "https://www.funneloperator.it/assets/index-CLKYm5hM.js",
+   "bytes": 588728
+  },
+  {
+   "file": "src/30-jsx-runtime-DUAcabCT.js",
+   "url": "https://www.funneloperator.it/assets/jsx-runtime-DUAcabCT.js",
+   "bytes": 1066
+  },
+  {
+   "file": "src/31-link-DiKj2Kcl.js",
+   "url": "https://www.funneloperator.it/assets/link-DiKj2Kcl.js",
+   "bytes": 17987
+  },
+  {
+   "file": "src/32-raccoglitore-Bj4iyfd5.js",
+   "url": "https://www.funneloperator.it/assets/raccoglitore-Bj4iyfd5.js",
+   "bytes": 4985
+  },
+  {
+   "file": "src/33-react-6OGjdfot.js",
+   "url": "https://www.funneloperator.it/assets/react-6OGjdfot.js",
+   "bytes": 7527
+  },
+  {
+   "file": "src/34-react-dom-BsPuZ7Mo.js",
+   "url": "https://www.funneloperator.it/assets/react-dom-BsPuZ7Mo.js",
+   "bytes": 3574
+  },
+  {
+   "file": "src/35-route-BYPzqRIj.js",
+   "url": "https://www.funneloperator.it/assets/route-BYPzqRIj.js",
+   "bytes": 4387
+  },
+  {
+   "file": "src/36-routes-DT2uV_Ni.js",
+   "url": "https://www.funneloperator.it/assets/routes-DT2uV_Ni.js",
+   "bytes": 68476
+  },
+  {
+   "file": "src/37-shim-DoKe8bYx.js",
+   "url": "https://www.funneloperator.it/assets/shim-DoKe8bYx.js",
+   "bytes": 854
+  },
+  {
+   "file": "src/38-styles-Cm6i-gBj.css",
+   "url": "https://www.funneloperator.it/assets/styles-Cm6i-gBj.css",
+   "bytes": 148072
+  },
+  {
+   "file": "src/39-tslib.es6-Tae09705.js",
+   "url": "https://www.funneloperator.it/assets/tslib.es6-Tae09705.js",
+   "bytes": 1069
+  },
+  {
+   "file": "src/40-useMatch-KtPQIahl.js",
+   "url": "https://www.funneloperator.it/assets/useMatch-KtPQIahl.js",
+   "bytes": 691
+  },
+  {
+   "file": "src/41-useNavigate-BkaIPmpK.js",
+   "url": "https://www.funneloperator.it/assets/useNavigate-BkaIPmpK.js",
+   "bytes": 256
+  },
+  {
+   "file": "src/42-useRouter-BUvc_oZ-.js",
+   "url": "https://www.funneloperator.it/assets/useRouter-BUvc_oZ-.js",
+   "bytes": 231
+  },
+  {
+   "file": "src/43-useStore-CmuWC2Bw.js",
+   "url": "https://www.funneloperator.it/assets/useStore-CmuWC2Bw.js",
+   "bytes": 4661
+  },
+  {
+   "file": "src/44-utils-BC4DHlz2.js",
+   "url": "https://www.funneloperator.it/assets/utils-BC4DHlz2.js",
+   "bytes": 26083
+  }
+ ],
+ "segmentazione": "ok"
+}

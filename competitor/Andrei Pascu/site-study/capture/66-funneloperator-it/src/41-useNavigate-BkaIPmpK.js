@@ -1,0 +1,2 @@
+/* fonte: https://www.funneloperator.it/assets/useNavigate-BkaIPmpK.js */
+import{i as e}from"./jsx-runtime-DUAcabCT.js";import{t}from"./react-6OGjdfot.js";import{t as n}from"./useRouter-BUvc_oZ-.js";var r=e(t(),1);function i(e){let t=n();return r.useCallback(n=>t.navigate({...n,from:n.from??e?.from}),[e?.from,t])}export{i as t};

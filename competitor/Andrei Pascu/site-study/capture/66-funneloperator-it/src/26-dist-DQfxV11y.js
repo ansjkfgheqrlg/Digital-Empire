@@ -1,0 +1,2 @@
+/* fonte: https://www.funneloperator.it/assets/dist-DQfxV11y.js */
+import{i as e,t}from"./jsx-runtime-DUAcabCT.js";import{t as n}from"./react-6OGjdfot.js";import{t as r}from"./react-dom-BsPuZ7Mo.js";import{t as i}from"./dist-By9S2dAx.js";import{t as a}from"./dist-Bq4XamdR.js";var o=e(n(),1),s=e(r(),1),c=t(),l=`Portal`,u=o.forwardRef((e,t)=>{let{container:n,...r}=e,[l,u]=o.useState(!1);i(()=>u(!0),[]);let d=n||l&&globalThis?.document?.body;return d?s.createPortal((0,c.jsx)(a.div,{...r,ref:t}),d):null});u.displayName=l;export{u as t};

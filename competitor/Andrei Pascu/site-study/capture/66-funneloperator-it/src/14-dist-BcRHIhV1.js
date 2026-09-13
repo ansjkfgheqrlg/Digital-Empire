@@ -1,0 +1,2 @@
+/* fonte: https://www.funneloperator.it/assets/dist-BcRHIhV1.js */
+import{i as e,t}from"./jsx-runtime-DUAcabCT.js";import{t as n}from"./react-6OGjdfot.js";var r=e(n(),1);t();var i=r.createContext(void 0);function a(e){let t=r.useContext(i);return e||t||`ltr`}export{a as t};

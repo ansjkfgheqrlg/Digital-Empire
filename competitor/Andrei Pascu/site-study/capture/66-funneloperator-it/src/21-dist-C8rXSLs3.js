@@ -1,0 +1,2 @@
+/* fonte: https://www.funneloperator.it/assets/dist-C8rXSLs3.js */
+import{i as e}from"./jsx-runtime-DUAcabCT.js";import{t}from"./react-6OGjdfot.js";var n=e(t(),1);function r(e){let t=n.useRef(e);return n.useEffect(()=>{t.current=e}),n.useMemo(()=>(...e)=>t.current?.(...e),[])}export{r as t};

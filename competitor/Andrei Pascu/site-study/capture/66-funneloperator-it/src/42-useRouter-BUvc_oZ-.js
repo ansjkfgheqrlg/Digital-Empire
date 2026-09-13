@@ -1,0 +1,2 @@
+/* fonte: https://www.funneloperator.it/assets/useRouter-BUvc_oZ-.js */
+import{i as e}from"./jsx-runtime-DUAcabCT.js";import{t}from"./react-6OGjdfot.js";function n(){throw Error(`Invariant failed`)}var r=e(t(),1),i=r.createContext(null);function a(e){return r.useContext(i)}export{i as n,n as r,a as t};

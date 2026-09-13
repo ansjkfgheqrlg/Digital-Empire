@@ -1,0 +1,2 @@
+/* fonte: https://www.funneloperator.it/assets/dist-By9S2dAx.js */
+import{i as e}from"./jsx-runtime-DUAcabCT.js";import{t}from"./react-6OGjdfot.js";var n=e(t(),1),r=globalThis?.document?n.useLayoutEffect:()=>{};export{r as t};
