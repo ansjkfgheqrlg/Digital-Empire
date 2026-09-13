@@ -1946,6 +1946,21 @@ accetti la proposta — lezione pagata l'08/09: una prima dimostrazione dal vivo
 
 ---
 
+### 6.25 Un'immagine incollata in chat NON e' sul disco — ma E' nel transcript: la estrai subito *(lezione 2026-09-13, tre approssimazioni bocciate)*
+
+Il 13/09 Max ha incollato tre volte la stessa texture (onde puntinate) e tre volte gli ho messo in pagina
+un'approssimazione generata, dichiarando «il file non esiste sul disco: cercato ovunque». Era vero e non
+bastava (ADR-028: non era un'infattibilita'). L'immagine incollata vive nel transcript della sessione,
+`~/.claude/projects/<progetto>/<session_id>.jsonl`, nel messaggio dell'utente come blocco
+`{"type":"image","source":{"media_type":..,"data":"<base64>"}}`. Dieci righe di Python la tirano fuori
+intatta (vedi CP-20260913-D2JA). La clipboard di Windows dal sandbox NON risponde, in STA o no: non
+perderci tempo.
+
+**Regola:** ogni volta che Max incolla un'immagine che deve finire in un lavoro (texture, foto, ritratto,
+still, logo), la estrai dal transcript NEL TURNO STESSO e la salvi nella cartella giusta con un nome
+`-ORIGINALE` che non si rigenera mai; se serve un ingrandimento per lo schermo lo fai a parte, dichiarato,
+e l'originale resta. «Non e' sul disco» non e' piu' una frase che puoi dire di un'immagine incollata.
+
 ## 6-bis. LE TUE FORZE — tre gradi, e il criterio che li separa *(direttiva Max, 2026-09-03)*
 
 Non hai "subagenti". Hai un **esercito a gradi**, e il grado non lo decide la lunghezza del

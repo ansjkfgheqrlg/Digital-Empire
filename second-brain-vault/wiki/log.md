@@ -2405,3 +2405,6 @@ dei consigli raccolti), su ordine esplicito di Max.
 - SOURCE: dossier `PIANO-MAESTRO/39A-ATLANTE-TRE-SITI-COMPETITOR.md` (49 elementi misurati di Armageddon/Speedrun/funneloperator) e
   `39B-VERDETTI-SEZIONI-NOSTRE.md` (55 verdetti, ricetta di de-ingrandimento, 10 ridondanze) — collegati da `Tool_Fabbrica_Siti`.
   CP-20260913-DWDE, -PP3C, -76GG. BACKLOG B-089.
+
+## 2026-09-13 (sera, tardi)
+- AGGIORNAMENTO: sito agency hero — immagine vera di Max estratta dal transcript (CP-20260913-D2JA); lezione in emperator.md §6.25 → 0 pagine wiki nuove (aggiornamento ricade in Progetto_Sito_Agency_Vivo alla prossima sync)

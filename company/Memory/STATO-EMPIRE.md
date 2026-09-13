@@ -1,7 +1,16 @@
-## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing (F3 in anteprima, aspetto Max) — Emperator con Max
+## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing (F3 + immagine vera hero in anteprima, aspetto Max) — Emperator con Max
 
 Tutto il Dossier 38 v2 è costruito e in anteprima (CP-PP3C). Gael/Neri: NON toccare `agency-empire-landing/` finché questo blocco non sparisce.
 Il `--prod` resta di Max.
+
+## 🟠 2026-09-13 sera (tardi) — SITO AGENCY: l'immagine VERA di Max nell'hero — ANTEPRIMA, aspetta Max — CP-20260913-D2JA
+
+**Gesti solo di Max (ADR-026, in cima; non bloccano):** 1) guardare https://agency-empire-landing-60o6uts62-maximilians-projects-f0964962.vercel.app/
+(aperta nel suo browser); 2) se va: `cd agency-empire-landing && npx vercel --prod --yes`; 3) decidere le 10 ridondanze 39B §4; 4) se vuole anche la
+grana-fuoco vera: incollarla in chat basta (ora so estrarla).
+**Fatto:** l'immagine che Max ha incollato in chat (onde puntinate) ESTRATTA dal transcript della sessione (base64 nel `.jsonl`) → salvata intatta in
+`public/texture/hero-onde-ORIGINALE.jpg` (899×1748) → `hero-onde.jpg/.webp` = la stessa a 2× Lanczos per il desktop, via `<picture>`; velo dimezzato
+(0,70→0,38). Gate A PASS. Commit `d98bf861`. **Lezione:** un'immagine incollata non è sul disco ma È nel transcript — mai più approssimazioni.
 
 ## 🟠 2026-09-13 sera — SITO AGENCY F3: de-ingrandito, 7 sezioni rifatte, grana ferma, frecce nuove — ANTEPRIMA, aspetta Max — CP-20260913-76GG
 
