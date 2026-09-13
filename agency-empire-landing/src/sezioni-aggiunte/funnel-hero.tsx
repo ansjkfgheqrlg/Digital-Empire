@@ -41,15 +41,31 @@ const BLOCCHI: { k: string; occhiello: string; titolo: string; righe: string[]; 
   },
 ];
 
-/* Le tre frecce: coordinate nel viewBox 1000×200 (preserveAspectRatio none). Ogni salto parte dal bordo alto del
-   blocco i (x ≈ 0,196 + 0,26·i) e atterra sul bordo alto del blocco i+1. */
-function Salto({ i }: { i: number }) {
-  const x0 = 196 + i * 260;
-  const d = `M${x0},-4 C${x0 + 30},-58 ${x0 + 66},-58 ${x0 + 88},-2`;
+/* Le tre frecce, nel viewBox 1000×200 (preserveAspectRatio none; larghezza dei blocchi ≈ 205, gap ≈ 60).
+   Sono lunghe: partono dal centro-alto di un blocco e atterrano sul centro-alto del successivo, arco alto e morbido.
+   La 1ª e la 3ª passano SOPRA (svg davanti ai blocchi); la 2ª passa SOTTO: il suo tracciato scende dietro il blocco
+   «Chiamata» e riemerge nel varco — si vede solo dove non c'è il blocco, come un filo che passa sotto. */
+const BLOCCO_W = (1000 - 3 * 60) / 4; // ≈ 205
+const cx = (i: number) => i * (BLOCCO_W + 60) + BLOCCO_W / 2;
+
+function Sopra({ i, delay }: { i: number; delay: number }) {
+  const x0 = cx(i) + 40, x1 = cx(i + 1) - 40;
+  const d = `M${x0},-6 C${x0 + 60},-92 ${x1 - 60},-92 ${x1},-4`;
   return (
     <>
       <path className="fh-fr-ghost" d={d} />
-      <path className="fh-fr" d={d} style={{ animationDelay: `${i * 0.8}s` }} />
+      <path className="fh-fr" d={d} style={{ animationDelay: `${delay}s` }} />
+    </>
+  );
+}
+function Sotto({ i, delay }: { i: number; delay: number }) {
+  const x0 = cx(i) + 30, x1 = cx(i + 1) - BLOCCO_W / 2 + 8;
+  // scende dietro il blocco i, attraversa il varco a mezza altezza, risale lungo il fianco del blocco i+1 e atterra sul suo spigolo alto
+  const d = `M${x0},40 C${x0 + 40},130 ${x1 - 70},170 ${x1 - 26},110 S${x1 - 4},20 ${x1},-4`;
+  return (
+    <>
+      <path className="fh-fr-ghost" d={d} />
+      <path className="fh-fr" d={d} style={{ animationDelay: `${delay}s` }} />
     </>
   );
 }
@@ -69,15 +85,22 @@ export function FunnelHero() {
           <span className="fh-f">{b.piede}</span>
         </div>
       ))}
-      <svg className="fh-frecce" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <svg className="fh-frecce fh-frecce--sotto" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
         <defs>
-          <marker id="fh-punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+          <marker id="fh-punta-sotto" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
             <path d="M0,0 L10,5 L0,10 z" fill="#fb4604" />
           </marker>
         </defs>
-        <Salto i={0} />
-        <Salto i={1} />
-        <Salto i={2} />
+        <Sotto i={1} delay={1.1} />
+      </svg>
+      <svg className="fh-frecce" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <marker id="fh-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#fb4604" />
+          </marker>
+        </defs>
+        <Sopra i={0} delay={0} />
+        <Sopra i={2} delay={2.2} />
       </svg>
     </div>
   );
