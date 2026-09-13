@@ -3,6 +3,9 @@ import { Onest, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import "./vivo.css"; // solo per le sezioni aggiunte: ogni regola è scopata sotto .vivo
 import "./aggiunte-hero.css"; // D1/D2/A02 (ordini di Max 13/09): classi nuove + la sola regola D2 sul padding dell'hero
+import "./aggiunte-a.css"; // Atto II/III (D3, D4, D5, A05, A07, A08)
+import "./aggiunte-b.css"; // Atto III/IV (A09, A10+A20, A11, A12)
+import "./aggiunte-c.css"; // Atto V/VI (A14-A22)
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 const onest = Onest({

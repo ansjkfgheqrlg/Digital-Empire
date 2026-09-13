@@ -2,7 +2,7 @@
    Ink. Nastro CSS lento (70 s, doppio elenco per il loop, fermo con prefers-reduced-motion e al passaggio del
    mouse) di CINQUE figure verticali INTERE (§14): due pagine vere di PDF PreventivoForge (intestazione del
    cliente ritagliata alla fonte, in public/aura/) e tre screenshot nostri del sito. Larghezza 190 px per i PDF;
-   gli screenshot mobile hanno un tetto d'altezza (340 px) perché a 190 px di larghezza sarebbero alti fino
+   gli screenshot mobile hanno un tetto d'altezza (320 px) perché a 190 px di larghezza sarebbero alti fino
    a 931 px — mai tagliati, mai cover. Nessuna CTA. 0 KB di JS. CSS: src/app/aggiunte-b.css (.rs-*). */
 
 type Figura = { src: string; width: number; height: number; alt: string; nome: string; ruolo: string };
@@ -27,7 +27,7 @@ const SISTEMI: Figura[] = [
   {
     src: "/aura/shot-hero-mobile.webp",
     width: 390,
-    height: 1911,
+    height: 844,
     alt: "Screenshot da telefono del sito dell'agenzia: la prima schermata, intera",
     nome: "Sito agency",
     ruolo: "hero",
@@ -35,7 +35,7 @@ const SISTEMI: Figura[] = [
   {
     src: "/aura/shot-specchio-mobile.webp",
     width: 390,
-    height: 1103,
+    height: 844,
     alt: "Screenshot da telefono del sito dell'agenzia: la sezione Specchio, intera",
     nome: "Sito agency",
     ruolo: "specchio",
@@ -43,7 +43,7 @@ const SISTEMI: Figura[] = [
   {
     src: "/aura/shot-prenota-mobile.webp",
     width: 390,
-    height: 1362,
+    height: 844,
     alt: "Screenshot da telefono della pagina /prenota/ dell'agenzia, intera",
     nome: "/prenota/",
     ruolo: "porta",

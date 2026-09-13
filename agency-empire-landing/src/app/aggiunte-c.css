@@ -86,7 +86,7 @@
 .vivo .mappa-card span { display: block; margin-top: 8px; color: var(--sv-silver-dim); }
 .vivo .mappa-card--qui { border-color: var(--sv-orange); box-shadow: 0 0 0 1px rgba(251, 70, 4, .35), 0 24px 50px -30px rgba(251, 70, 4, .7); }
 .vivo .mappa-qui {
-  position: absolute; left: 50%; top: -14px; transform: translateX(-50%);
+  position: absolute; left: 50%; top: -34px; transform: translateX(-50%);
   display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
   padding: 5px 12px; border-radius: 999px; background: var(--sv-orange); color: #000;
   font-family: var(--font-mono, ui-monospace, monospace); font-size: var(--fs-mono); letter-spacing: .16em; text-transform: uppercase; font-weight: 700;
@@ -172,13 +172,13 @@
    ============================================================ */
 /* l'elmo intero a 280 px è alto 498 px: per stare nel tetto dei 600 la sezione respira un po' meno (solo lei) */
 .vivo .se-non-funziona.sv-section { padding: 64px 0; }
-.vivo .snf-grid { display: grid; grid-template-columns: 1fr auto; gap: 56px; align-items: center; }
+.vivo .snf-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 56px; align-items: center; }
 .vivo .snf-quadri { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
 .vivo .snf-quadro { border: 1px solid rgba(28, 28, 28, .16); border-radius: 16px; padding: 22px 22px 20px; background: #fff; box-shadow: 0 14px 34px -26px rgba(0, 0, 0, .5); }
 .vivo .snf-quadro .sv-eyebrow { display: block; color: var(--sv-orange); }
 .vivo .snf-quadro p { margin-top: 10px; }
 .vivo .snf-quadro--allora { border-color: rgba(251, 70, 4, .55); }
-.vivo .snf-foto { width: min(280px, 100%); border: 1px solid rgba(28, 28, 28, .16); box-shadow: 0 18px 40px -28px rgba(0, 0, 0, .6); margin: 0 auto; }
+.vivo .snf-foto { width: min(280px, 100%); margin: 0 auto; } .vivo .snf-foto .foto-intera { border: 1px solid rgba(28, 28, 28, .16); box-shadow: 0 18px 40px -28px rgba(0, 0, 0, .6); } .vivo .snf-foto img { display: block; width: 100%; height: auto; }
 .vivo .snf-foto figcaption { padding: 10px 12px 12px; color: #4a4640; font-size: var(--fs-small); line-height: 1.5; font-family: var(--font-accent), Georgia, serif; font-style: italic; }
 @media (max-width: 860px) {
   .vivo .snf-grid { grid-template-columns: 1fr; gap: 36px; }

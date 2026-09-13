@@ -36,9 +36,11 @@ export function SeNonFunziona() {
             </div>
           </div>
 
-          <figure className="foto-intera snf-foto" style={{ aspectRatio: `${img.width}/${img.height}` }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={img.src} width={img.width} height={img.height} alt={img.alt} loading="lazy" decoding="async" />
+          <figure className="snf-foto">
+            <div className="foto-intera" style={{ aspectRatio: `${img.width}/${img.height}` }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={img.src} width={img.width} height={img.height} alt={img.alt} loading="lazy" decoding="async" />
+            </div>
             {didascalia && <figcaption>{didascalia}</figcaption>}
           </figure>
         </div>

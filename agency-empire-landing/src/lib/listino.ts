@@ -18,7 +18,7 @@ export type Sistema = "outreach" | "content" | "brain" | "engine";
 
 /** "4.000 €" — formato italiano, senza decimali */
 export function eur(n: number): string {
-  return `${n.toLocaleString("it-IT", { maximumFractionDigits: 0 })} €`;
+  return `${n.toLocaleString("it-IT", { maximumFractionDigits: 0, useGrouping: "always" as unknown as boolean })} €`;
 }
 
 export const RISPARMIO_ENGINE = LISTINO.engineListino - LISTINO.engine;

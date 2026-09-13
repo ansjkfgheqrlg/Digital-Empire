@@ -34,6 +34,23 @@ import { CosaOttieni } from "@/sezioni-aggiunte/cosa-ottieni";
 // Sezioni AGGIUNTE il 2026-09-13 (Dossier 38 v2, Atto I): la firma (null senza ritratto) e il rail dei fatti
 import { Firma } from "@/sezioni-aggiunte/firma";
 import { RailFatti } from "@/sezioni-aggiunte/rail-fatti";
+// Sezioni AGGIUNTE il 2026-09-13 pomeriggio (Dossier 38 v2 §F + §I, ordine di Max «tutte»): solo inserimenti
+import { CompetitorVivo } from "@/sezioni-aggiunte/competitor-vivo";
+import { PrimaDopo } from "@/sezioni-aggiunte/prima-dopo";
+import { Scala } from "@/sezioni-aggiunte/scala";
+import { Cartella } from "@/sezioni-aggiunte/cartella";
+import { GuardaloGirare } from "@/sezioni-aggiunte/guardalo-girare";
+import { DueTipi } from "@/sezioni-aggiunte/due-tipi";
+import { RailSistemi } from "@/sezioni-aggiunte/rail-sistemi";
+import { FasciaManifesto } from "@/sezioni-aggiunte/fascia-manifesto";
+import { Stanza } from "@/sezioni-aggiunte/stanza";
+import { DietroLeQuinte } from "@/sezioni-aggiunte/dietro-le-quinte";
+import { Mappa } from "@/sezioni-aggiunte/mappa";
+import { Tessera } from "@/sezioni-aggiunte/tessera";
+import { QuantoCosta } from "@/sezioni-aggiunte/quanto-costa";
+import { SeNonFunziona } from "@/sezioni-aggiunte/se-non-funziona";
+import { FaqContratto } from "@/sezioni-aggiunte/faq-contratto";
+import { CodaLegale } from "@/sezioni-aggiunte/coda-legale";
 import { StickyCTA } from "@/components/sticky-cta";
 import { Header } from "@/components/header";
 import { Results } from "@/components/sections/results";
@@ -53,40 +70,56 @@ export default function Home() {
       <Problems />
       <Specchio />
       <Competitors />
+      <CompetitorVivo />
       <ListenUp />
+      <PrimaDopo />
       <div className="divider-silver-orange" aria-hidden="true" />
       <Hierarchy />
       <Pillars />
       <FlowFramework />
+      <Scala />
       <div className="divider-silver-orange" aria-hidden="true" />
       <SystemsShowcase />
+      <Cartella />
       <OutreachDeep />
       <OutreachInside />
+      <GuardaloGirare />
       <ContentDeep />
       <ContentOutput />
+      <DueTipi />
       <BrainDeep />
       <SecondBrainInside />
       <Results />
       <ProveVere />
+      <RailSistemi />
       <NoFluff />
       <ToolStack />
       <div className="divider-silver-orange" aria-hidden="true" />
       <PowerDeck />
+      <FasciaManifesto />
       <div className="divider-silver-orange" aria-hidden="true" />
       <WhoGuides />
+      <Stanza />
       <BuilderNotTrainer />
+      <DietroLeQuinte />
+      <Mappa />
       <Bonuses />
       <PricingROI />
+      <Tessera />
       <Clarity />
+      <QuantoCosta />
       <MyPromise />
+      <SeNonFunziona />
       <Objections />
       <FAQ />
+      <FaqContratto />
       <div className="divider-silver-orange" aria-hidden="true" />
       <CosaOttieni />
       <FinalCTA />
       <FinalOffer />
       <AboutStory />
 
+      <CodaLegale />
       {/* Footer Minimal Empire */}
       <footer className="bg-ink-2 py-20 border-t border-white/5 text-center">
         <div className="max-w-5xl mx-auto px-6 flex flex-col items-center gap-8">
