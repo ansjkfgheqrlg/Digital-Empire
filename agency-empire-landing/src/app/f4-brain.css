@@ -167,7 +167,7 @@ section.bg-ink .grid.md\:grid-cols-3.gap-5 > div .sbi-card:hover { transform: no
   position: absolute;
   z-index: 0;
   right: -80px;
-  top: 640px; /* misurato con Playwright a 1920 — vedi nota screenshot */
+  top: 482px; /* misurato con Playwright a 1920: BrainDeep 777px, SecondBrainInside 890px — vedi CP */
   width: 1200px;
   max-width: none;
   pointer-events: none;
