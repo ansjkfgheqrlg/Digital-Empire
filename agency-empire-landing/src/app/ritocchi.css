@@ -1,1 +1,450 @@
-/* RITOCCHI.CSS - ritocchi in solo CSS alle sezioni di giugno (dossier 39B par.2). Riempito dallo scagnozzo D. */
+/* ============================================================================
+   RITOCCHI.CSS — ritocchi in SOLO CSS alle sezioni di giugno (ordine di Max,
+   13/09/2026 · dossier 39B §2 · BRIEF-F3 BLOCCO D). Scagnozzo D.
+
+   Legge: nessun componente di giugno viene toccato. Ogni blocco porta la
+   sezione (NN del dossier) e il rimedio. Le sezioni di giugno sono figlie
+   dirette di <main> (`main > section`); le aggiunte/rifatte vivono dentro
+   `div.vivo > section` e quindi NON vengono mai intercettate da `main > section`.
+   Palette: ink #1c1c1c / ink-2 #0a0a0a · carta #faf6ee · argento #d9d4e1 ·
+   argento-dim #8f8a99 · hairline rgba(217,212,225,.16) (su scuro) e
+   rgba(28,28,28,.12) (su chiaro) · accento #fb4604 solo su icone/bordo/eyebrow.
+   `!important` serve perché quasi tutto è inline style o utility Tailwind.
+   scala.css (importato dopo) resta padrone di font-size/padding/contenitori.
+   ============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   03 · 12 · 35 — .card-silver-orange (ScienceStats, Pillars, Bonuses):
+   «3 card a gradiente argento→arancio pieno» → card piatte, bordo hairline,
+   niente ombra, niente lift al passaggio. Usata SOLO da queste tre sezioni.
+   ---------------------------------------------------------------------------- */
+main > section .card-silver-orange {
+  background: #faf6ee !important;
+  background-image: none !important;
+  border: 1px solid rgba(28, 28, 28, 0.12) !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+main > section .card-silver-orange:hover {
+  transform: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+main > section .card-silver-orange h3,
+main > section .card-silver-orange h4 {
+  text-shadow: none !important;
+}
+/* la stessa card dentro una sezione scura (ScienceStats è .bg-ink) → ink piatto, testo carta/argento */
+main > section.bg-ink .card-silver-orange {
+  background: #0a0a0a !important;
+  border-color: rgba(217, 212, 225, 0.16) !important;
+}
+main > section.bg-ink .card-silver-orange h3 { color: #faf6ee !important; }
+main > section.bg-ink .card-silver-orange p  { color: #d9d4e1 !important; }
+
+/* ----------------------------------------------------------------------------
+   03 — ScienceStats «AUTOMAZIONE AI PROPRIETARIA =» (radice: unica sezione
+   `.pb-24.pt-4` con .card-silver-orange). Rimedio: card piatte (sopra) +
+   griglia più stretta e senza vuoto (le cifre restano l'unico accento).
+   ---------------------------------------------------------------------------- */
+main > section[class*="pb-24"][class*="pt-4"]:has(.card-silver-orange) [class*="md:grid-cols-3"] {
+  gap: 12px !important;
+}
+main > section[class*="pb-24"][class*="pt-4"]:has(.card-silver-orange) .card-silver-orange > div:first-child {
+  color: #fb4604 !important;
+}
+
+/* ----------------------------------------------------------------------------
+   04 — Audience «Ideato su misura» (radice: unico h2 `md:text-[3rem]`).
+   Rimedio dossier: `align-items:start` sulle due card (la colonna «non è per
+   te» non si allunga a vuoto). In più: le due card sono gradienti rosso e BLU
+   (fuori palette) con bordo argento 2 px → ink piatto, hairline, niente glow;
+   i due chip a gradiente → trasparenti con bordo (accento per «È per te»,
+   argento per «Non è per te»); testo bluastro → argento.
+   ---------------------------------------------------------------------------- */
+main > section:has(h2[class*="text-[3rem]"]) [class*="md:grid-cols-2"] {
+  align-items: start !important;
+}
+main > section:has(h2[class*="text-[3rem]"]) [class*="md:grid-cols-2"] > .reveal > .rounded-2xl {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+  box-shadow: none !important;
+  height: auto !important;
+}
+main > section:has(h2[class*="text-[3rem]"]) [class*="md:grid-cols-2"] > .reveal > .rounded-2xl span.rounded-full {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #faf6ee !important;
+  border: 1px solid #d9d4e1 !important;
+}
+main > section:has(h2[class*="text-[3rem]"]) [class*="md:grid-cols-2"] > .reveal:first-child > .rounded-2xl span.rounded-full {
+  border-color: #fb4604 !important;
+}
+main > section:has(h2[class*="text-[3rem]"]) [class*="md:grid-cols-2"] > .reveal > .rounded-2xl li {
+  color: #d9d4e1 !important;
+}
+main > section:has(h2[class*="text-[3rem]"]) [class*="md:grid-cols-2"] > .reveal > .rounded-2xl li > span:first-child {
+  color: #8f8a99 !important;
+}
+main > section:has(h2[class*="text-[3rem]"]) [class*="md:grid-cols-2"] > .reveal:first-child > .rounded-2xl li > span:first-child {
+  color: #fb4604 !important;
+}
+
+/* ----------------------------------------------------------------------------
+   09 — ListenUp «ASCOLTA BENE.» (radice: unico h2 `md:text-[88px]`; il
+   text-[88px] di FinalOffer è un h3, non entra). Rimedio: colonna di lettura
+   a 680 (`max-w-3xl` 768 → 680); titolo a un colore solo (via il gradiente).
+   ---------------------------------------------------------------------------- */
+main > section:has(h2[class*="text-[88px]"]) [class*="max-w-3xl"] {
+  max-width: 680px !important;
+}
+main > section:has(h2[class*="text-[88px]"]) h2[class*="text-[88px]"] {
+  background: none !important;
+  -webkit-text-fill-color: #faf6ee !important;
+  color: #faf6ee !important;
+}
+
+/* ----------------------------------------------------------------------------
+   12 — Pillars «Perché Digital Empire?» (radice: unica sezione con la freccia
+   SVG viewBox 0 0 80 90 dentro una .card-silver-orange). Rimedio: card piatte
+   (blocco comune sopra) + freccia rossa disegnata a mano e nota a margine
+   («Sì, il sistema lavora mentre dormi») → display:none; icona in accento su
+   quadrato trasparente hairline (via il quadrato ink pieno con ombra).
+   ---------------------------------------------------------------------------- */
+main > section .card-silver-orange > [aria-hidden="true"][class*="xl:block"] {
+  display: none !important;
+}
+main > section:has(.card-silver-orange svg[viewBox="0 0 80 90"]) .card-silver-orange .bg-ink {
+  background: transparent !important;
+  border: 1px solid rgba(28, 28, 28, 0.12) !important;
+  box-shadow: none !important;
+  color: #fb4604 !important;
+}
+
+/* ----------------------------------------------------------------------------
+   17 · 20 · 23 — OutreachDeep / ContentDeep / BrainDeep (service-deep.tsx):
+   il pannello «Come funziona il workflow» è un gradiente rosso (17), ocra (20),
+   BLU (23) con glow. Radice: sezione di giugno con griglia 2 colonne il cui
+   figlio diretto .reveal contiene un .rounded-2xl.overflow-hidden (struttura
+   che solo le tre deep hanno tra le sezioni di giugno). Rimedio: pannello ink
+   piatto + bordo hairline; su sezione già ink (23) il pannello scende a ink-2
+   così il bordo si legge; puntini/numeri dei passi in accento o hairline;
+   le spunte azzurre `text-[#90c8ff]` di BrainDeep → accento.
+   ---------------------------------------------------------------------------- */
+main > section [class*="md:grid-cols-2"] > .reveal > .rounded-2xl.overflow-hidden {
+  background: #1c1c1c !important;
+  background-image: none !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+  box-shadow: none !important;
+}
+main > section.bg-ink [class*="md:grid-cols-2"] > .reveal > .rounded-2xl.overflow-hidden {
+  background: #0a0a0a !important;
+}
+main > section [class*="md:grid-cols-2"] > .reveal > .rounded-2xl.overflow-hidden span.w-2.h-2.rounded-full {
+  background: #fb4604 !important;
+}
+main > section [class*="md:grid-cols-2"] > .reveal > .rounded-2xl.overflow-hidden span.w-8.h-8.rounded-lg {
+  background: transparent !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+  color: #fb4604 !important;
+}
+main > section [class*="text-[#90c8ff]"] {
+  color: #fb4604 !important;
+}
+/* 17 — l'eyebrow «Service #01» è un pill arancio pieno: testo accento su fondo trasparente (l'accento va su eyebrow, non su un blocco pieno) */
+main > section [class*="md:grid-cols-2"] span[class*="tracking-[0.20em]"][class*="rounded-full"][style*="#fb4604"] {
+  background: transparent !important;
+  color: #fb4604 !important;
+  border: 1px solid #fb4604 !important;
+  padding-left: 0.6rem !important;
+  padding-right: 0.6rem !important;
+}
+
+/* ----------------------------------------------------------------------------
+   18 — OutreachInside «Cosa include la tua piattaforma» (.oi-card, classe
+   propria del componente). Rimedio dossier: 3 card rosso/viola/verde pieni con
+   bianco al 60 % → card ARGENTO piatte, bordo hairline, testo ink, icona in
+   accento su badge trasparente. L'eyebrow «What's inside» non si tocca (testo).
+   ---------------------------------------------------------------------------- */
+main > section .oi-card {
+  background: #d9d4e1 !important;
+  background-image: none !important;
+  background-blend-mode: normal !important;
+  border: 1px solid rgba(28, 28, 28, 0.12) !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+main > section .oi-card:hover { transform: none !important; }
+main > section .oi-card h3 { color: #1c1c1c !important; text-shadow: none !important; }
+main > section .oi-card p  { color: rgba(28, 28, 28, 0.78) !important; }
+main > section .oi-card > span.rounded-xl {
+  background: transparent !important;
+  border: 1px solid #fb4604 !important;
+  box-shadow: none !important;
+}
+main > section .oi-card svg { color: #fb4604 !important; }
+
+/* ----------------------------------------------------------------------------
+   24 — SecondBrainInside «Cosa include il tuo Second Brain» (.sbi-card).
+   Rimedio: 3 card blu/viola/teal → ink piatte (ink-2 su sezione ink), bordo
+   hairline; icone e link in accento unico; testo bianco/argento.
+   ---------------------------------------------------------------------------- */
+main > section .sbi-card {
+  background: #0a0a0a !important;
+  background-image: none !important;
+  background-blend-mode: normal !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+main > section .sbi-card:hover { transform: none !important; }
+main > section .sbi-card h3 { color: #faf6ee !important; text-shadow: none !important; }
+main > section .sbi-card p  { color: #d9d4e1 !important; }
+main > section .sbi-card > span.rounded-xl {
+  background: transparent !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+  box-shadow: none !important;
+}
+main > section .sbi-card svg { color: #fb4604 !important; }
+main > section .sbi-card > div.mt-auto {
+  color: #fb4604 !important;
+  border-top-color: rgba(217, 212, 225, 0.16) !important;
+}
+
+/* ----------------------------------------------------------------------------
+   25 — Results «Fatti, non slogan» (#risultati). Rimedio: il riquadro
+   «16:9 · PLACEHOLDER» con play visibile in produzione → nascosto finché non
+   c'è il video; la griglia demo scende a 1 colonna (niente metà vuota);
+   card trust senza ombra, tile CTA senza gradiente (resta il bordo accento),
+   badge icona trasparenti con icona accento; via il bagliore ambientale.
+   ---------------------------------------------------------------------------- */
+#risultati .aspect-video { display: none !important; }
+#risultati [class*="lg:grid-cols-2"]:has(> .aspect-video) {
+  grid-template-columns: 1fr !important;
+  max-width: 680px;
+}
+#risultati .res-card {
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+#risultati .res-card:hover { transform: none !important; }
+#risultati a.res-card {
+  background: #0a0a0a !important;
+  border: 1px solid #fb4604 !important;
+}
+#risultati .res-card > div.rounded-xl {
+  background: transparent !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+}
+#risultati .res-card > div.rounded-xl svg { color: #fb4604 !important; }
+#risultati > div[aria-hidden="true"][class*="inset-0"] { display: none !important; }
+
+/* ----------------------------------------------------------------------------
+   32 — WhoGuides «Ok ma chi siete?» (radice: unico h2 `md:text-[72px]`).
+   Rimedio: chip «50+ sistemi» arancio pieno dentro il paragrafo → senza
+   sfondo, testo in accento; titolo a un colore (via il gradiente); via il
+   bagliore ambientale.
+   ---------------------------------------------------------------------------- */
+main > section:has(h2[class*="text-[72px]"]) p > span.inline-block.font-black {
+  background: none !important;
+  color: #fb4604 !important;
+  padding: 0 !important;
+}
+main > section:has(h2[class*="text-[72px]"]) h2[class*="text-[72px]"] {
+  background: none !important;
+  -webkit-text-fill-color: #faf6ee !important;
+  color: #faf6ee !important;
+}
+main > section:has(h2[class*="text-[72px]"]) > div[aria-hidden="true"][class*="inset-0"] { display: none !important; }
+
+/* ----------------------------------------------------------------------------
+   33 — BuilderNotTrainer «Prendo quello che uso io» (.bnt-stat, classe propria).
+   Rimedio: le 3 stat card (7 gg / €0 / 100 %) = quinta ripetizione del rail 01
+   → display:none sull'intera colonna; la griglia scende a 1 colonna di 680 così
+   il testo non resta con metà schermo vuota; titolo in 3 pesi e 3 colori → un
+   colore (resta l'ultimo paragrafo in accento, che è inline e non si tocca).
+   ---------------------------------------------------------------------------- */
+main > section:has(.bnt-stat) .flex.flex-col:has(> .reveal > .bnt-stat) { display: none !important; }
+main > section:has(.bnt-stat) [class*="md:grid-cols-2"] {
+  grid-template-columns: 1fr !important;
+  max-width: 680px;
+  margin-inline: auto;
+}
+main > section:has(.bnt-stat) h2 {
+  background: none !important;
+  -webkit-text-fill-color: #faf6ee !important;
+  color: #faf6ee !important;
+}
+main > section:has(.bnt-stat) h2 > span { -webkit-text-fill-color: #d9d4e1 !important; }
+
+/* ----------------------------------------------------------------------------
+   35 — Bonuses «Non solo il codice» — card piatte: blocco comune
+   .card-silver-orange in testa al file. Qui solo la griglia 4 card: raggio
+   unico e «VALORE €» in argento-dim (l'accento resta sui titoli in corsivo).
+   ---------------------------------------------------------------------------- */
+main > section:has(.card-silver-orange[class*="!p-6"]) .card-silver-orange > div[class*="text-[#fb4604]"] {
+  color: #8f8a99 !important;
+}
+
+/* ----------------------------------------------------------------------------
+   36 — PricingROI «Un sistema AI proprietario» (#prenota). Rimedio: le 3 card
+   rosso/blu/oro → ink-2 piatte con bordo hairline, eyebrow «[ MOTORE 0N ]» e
+   icona del badge in accento, spunte in argento-dim, prezzo senza glow, CTA
+   testuale in carta; Engine Room (la consigliata) → ink-2 con BORDO ACCENTO,
+   badge «Miglior Valore» e bottone piatti; la lista Engine Room a UNA colonna
+   (prima andava a capo ogni 2 parole); «La matematica» da verde a ink/hairline.
+   ---------------------------------------------------------------------------- */
+#prenota [class*="md:grid-cols-3"] article {
+  background: #0a0a0a !important;
+  background-image: none !important;
+  background-blend-mode: normal !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+#prenota article span.grid.place-items-center {
+  background: transparent !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+  box-shadow: none !important;
+}
+#prenota article span.grid.place-items-center svg { color: #fb4604 !important; }
+#prenota article > div:first-child > span:last-child { color: #fb4604 !important; opacity: 1 !important; }
+#prenota article li svg { color: #8f8a99 !important; }
+#prenota article div[class*="text-[2.25rem]"] { text-shadow: none !important; }
+#prenota article div[class*="tracking-[0.18em]"] { color: #8f8a99 !important; }
+#prenota article > div.rounded-xl {
+  background: transparent !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+}
+#prenota article > a { color: #faf6ee !important; }
+
+/* Engine Room = la consigliata */
+#prenota .relative.mb-12 > article {
+  background: #0a0a0a !important;
+  background-image: none !important;
+  background-blend-mode: normal !important;
+  border: 1px solid #fb4604 !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+#prenota .relative.mb-12 span.rounded-full[class*="tracking-[0.22em]"] {
+  background: #fb4604 !important;
+  box-shadow: none !important;
+}
+#prenota .relative.mb-12 span.rounded-2xl {
+  background: transparent !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+  box-shadow: none !important;
+}
+#prenota .relative.mb-12 span[class*="text-[3rem]"] { text-shadow: none !important; }
+#prenota .relative.mb-12 article a[class*="uppercase"] {
+  background: #fb4604 !important;
+  box-shadow: none !important;
+}
+#prenota article [class*="sm:grid-cols-2"] {
+  grid-template-columns: 1fr !important;
+}
+
+/* «La matematica» */
+#prenota .card-dark {
+  background: #0a0a0a !important;
+  border-color: rgba(217, 212, 225, 0.16) !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+#prenota .card-dark:hover { transform: none !important; filter: none !important; box-shadow: none !important; }
+#prenota .card-dark .rounded-full {
+  background: transparent !important;
+  border: 1px solid rgba(217, 212, 225, 0.16) !important;
+}
+#prenota .card-dark .rounded-full svg { color: #fb4604 !important; }
+
+/* ----------------------------------------------------------------------------
+   40 — MyPromise «Se il sistema non funziona» (radice: unico h2 `md:text-[58px]`
+   il cui figlio diretto è uno span.flex — gli h2 58 di About non hanno quello
+   span). Rimedio: scala (scala.css 58→40, text-lg→16,5) + titolo in 3
+   colori/2 stili → carta piatta con le sole 3 parole finali in accento; il
+   paragrafo pesca `text-[#ffb488]` → argento-dim; via il bagliore ambientale.
+   ---------------------------------------------------------------------------- */
+main > section:has(h2[class*="text-[58px]"] > span.flex) h2 > span.flex > span {
+  background: none !important;
+  -webkit-text-fill-color: #faf6ee !important;
+  color: #faf6ee !important;
+}
+main > section:has(h2[class*="text-[58px]"] > span.flex) h2 > span.flex > span:nth-child(n + 7) {
+  -webkit-text-fill-color: #fb4604 !important;
+  color: #fb4604 !important;
+}
+main > section:has(h2[class*="text-[58px]"] > span.flex) [class*="text-[#ffb488]"] { color: #8f8a99 !important; }
+main > section:has(h2[class*="text-[58px]"] > span.flex) > div[aria-hidden="true"][class*="inset-0"] { display: none !important; }
+
+/* ----------------------------------------------------------------------------
+   46 — FinalCTA «Pronto a far lavorare» (radice: unica sezione con i 4
+   .corner-bracket figli diretti). Rimedio: la riga trust «Chiamata gratuita ·
+   30 minuti · Nessun impegno» doppia il sotto-titolo del bottone («30 min ·
+   Gratuita · Zero impegno») → nascosta; il bottone perde lo `scale-110`;
+   la card «Opzione B» arancio traslucida → ink piatto con bordo accento;
+   card A senza ombra.
+   ---------------------------------------------------------------------------- */
+main > section:has(> .corner-bracket) [class*="max-w-4xl"] .flex.flex-col.gap-6 > div:last-child {
+  display: none !important;
+}
+main > section:has(> .corner-bracket) .scale-110 { transform: none !important; }
+main > section:has(> .corner-bracket) .card-dark {
+  background: #0a0a0a !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+main > section:has(> .corner-bracket) .card-dark:hover { transform: none !important; filter: none !important; box-shadow: none !important; }
+main > section:has(> .corner-bracket) .card-dark[class*="border-orange-pure"] {
+  border-color: #fb4604 !important;
+}
+
+/* ----------------------------------------------------------------------------
+   48 — AboutStory/a «Noi siamo Digital Empire» (radice: unico h2
+   `md:text-[68px]`; il 68 di FinalOffer è un div). Rimedio: colonna del
+   paragrafo d'apertura a 680 (`max-w-3xl` 768 → 680).
+   49 — AboutStory/b «Sei anni fa ero un ragazzo» (radice: unico h2
+   `md:text-[56px]`). Rimedio: colonna a 680; il box-citazione a gradiente →
+   ink piatto (tiene il suo bordo accento); via il bagliore ambientale.
+   ---------------------------------------------------------------------------- */
+main > section:has(h2[class*="text-[68px]"]) [class*="max-w-3xl"] { max-width: 680px !important; }
+main > section:has(h2[class*="text-[56px]"]) > [class*="max-w-3xl"] { max-width: 680px !important; }
+main > section:has(h2[class*="text-[56px]"]) .reveal > .rounded-2xl.overflow-hidden {
+  background: #0a0a0a !important;
+  box-shadow: none !important;
+}
+main > section:has(h2[class*="text-[56px]"]) > div[aria-hidden="true"][class*="inset-0"] { display: none !important; }
+
+/* ----------------------------------------------------------------------------
+   54 — footer di giugno (page.tsx, `main > footer`). Rimedio: 9-10 px al 10 %
+   → 12 px, colore al 40 %; padding 80 → 48. I link a «#» (Privacy/Termini) non
+   si correggono in CSS: restano da fare nel markup.
+   ---------------------------------------------------------------------------- */
+main > footer { padding-top: 48px !important; padding-bottom: 48px !important; }
+main > footer .text-xs,
+main > footer [class*="text-[10px]"],
+main > footer [class*="text-[9px]"] {
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  letter-spacing: 0.12em !important;
+}
+main > footer [class*="text-[9px]"] { text-transform: none !important; max-width: 680px !important; }
+main > footer a:hover { color: #fb4604 !important; }
+
+/* ----------------------------------------------------------------------------
+   TRASVERSALE — StickyCTA di giugno (src/components/sticky-cta.tsx: div
+   `.fixed.bottom-0.inset-x-0.z-[200]`, unica barra fissa in basso; l'header è
+   `top-0 z-[190]`). Il body riceve da <StickyGuard/> (sezioni-aggiunte/
+   sticky-guard.tsx) `.dopo-hero` oltre 3 viewport e `.cta-in-vista` quando un
+   `[data-cta]`, `#prenota`, un `.btn-orange` di sezione o il footer è a
+   schermo. Rimedio 39B (trasversale): la barra non compare finché il body non
+   ha .dopo-hero e sparisce quando ha .cta-in-vista — un solo bottone per
+   schermata. Senza StickyGuard montato il body non ha mai .dopo-hero: la
+   barra resta nascosta (scelta voluta: meglio nessuna barra che due bottoni).
+   ---------------------------------------------------------------------------- */
+body:not(.dopo-hero) .fixed.bottom-0[class*="z-[200]"],
+body.cta-in-vista .fixed.bottom-0[class*="z-[200]"] {
+  display: none !important;
+}

@@ -1,0 +1,145 @@
+/* ============================================================================
+   RIFATTE-A.CSS — blocco A del BRIEF F3 (13/09/2026): VslV2 (02), ContentOutputV2 (21), ToolStackV2 (29).
+   Ogni regola è `.vivo .ra-*`: vale solo dentro i tre componenti di src/sezioni-rifatte/, mai altrove.
+   Scala: titoli var(--fs-h2) (≤ 36), h3 17-18, corpo 15-16.5, un accento (--sv-orange) su < 5 % dei nodi,
+   bordi 1 px al posto delle ombre, un raggio per famiglia (8 px), grana locale in ::after sulle superfici composte.
+   Va importato in layout.tsx PRIMA di scala.css (che deve restare ultimo).
+   ============================================================================ */
+
+/* --- comuni ---------------------------------------------------------------- */
+.vivo .ra-col { max-width: 1000px; }
+.vivo .ra-testa { text-align: center; margin: 0 auto 40px; max-width: 30ch; }
+.vivo .ra-testa--sx { text-align: left; margin-left: 0; max-width: 34ch; }
+.vivo .ra-h2 { margin-top: 12px; }
+.vivo .ra-eyebrow { margin-top: 18px; }
+.vivo .ra-accento { color: var(--sv-orange); }
+
+/* --- 02 · VslV2 ------------------------------------------------------------- */
+.vivo .ra-pill {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
+  border: 1px solid var(--sv-hair); font-family: var(--font-mono); font-size: var(--fs-mono);
+  letter-spacing: .16em; text-transform: uppercase; color: var(--sv-silver);
+}
+.vivo .ra-pill i { width: 6px; height: 6px; border-radius: 50%; background: var(--sv-silver); }
+
+.vivo .ra-nodi { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.vivo .ra-nodo {
+  position: relative; display: flex; flex-direction: column; border-radius: 8px;
+  border: 1px solid var(--sv-hair); background: rgba(217, 212, 225, .035);
+}
+.vivo .ra-nodo::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 0;
+  opacity: .42; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='3' stitchTiles='stitch' seed='31'/><feColorMatrix values='0 0 0 0 0.86 0 0 0 0 0.84 0 0 0 0 0.80 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+.vivo .ra-nodo > * { position: relative; z-index: 1; }
+.vivo .ra-nodo-blocco { padding: 16px 20px; }
+.vivo .ra-nodo-blocco + .ra-nodo-blocco { border-top: 1px solid var(--sv-hair); }
+.vivo .ra-nodo-centro { flex: 1; padding-top: 18px; padding-bottom: 18px; }
+.vivo .ra-k {
+  display: block; font-family: var(--font-mono); font-size: var(--fs-mono); letter-spacing: .2em;
+  text-transform: uppercase; color: var(--sv-silver-dim);
+}
+.vivo .ra-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.vivo .ra-chip {
+  display: inline-block; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--sv-hair);
+  font-family: var(--font-mono); font-size: var(--fs-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--sv-silver);
+}
+.vivo .ra-nodo-riga { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 14px; }
+.vivo .ra-nome { font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #fff; }
+.vivo .ra-live {
+  display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--fs-mono);
+  letter-spacing: .16em; text-transform: uppercase; color: var(--sv-silver-dim);
+}
+.vivo .ra-live i { width: 6px; height: 6px; border-radius: 50%; background: var(--sv-silver); }
+.vivo .ra-cifra {
+  font-size: var(--fs-stat); font-weight: 900; line-height: 1; letter-spacing: -.03em;
+  font-variant-numeric: tabular-nums; color: var(--sv-orange);
+}
+.vivo .ra-unita { margin-top: 6px; font-family: var(--font-mono); font-size: var(--fs-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--sv-silver); }
+.vivo .ra-cap { margin-top: 4px; font-size: 10px; }
+.vivo .ra-bar { height: 2px; margin-top: 16px; background: var(--sv-hair); border-radius: 1px; overflow: hidden; }
+.vivo .ra-bar i { display: block; height: 100%; background: var(--sv-silver); }
+.vivo .ra-bar-label { margin-top: 8px; font-size: var(--fs-small); color: var(--sv-silver); }
+.vivo .ra-out { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.vivo .ra-out li { position: relative; padding-left: 14px; font-size: 14px; line-height: 1.45; color: rgba(255, 255, 255, .9); }
+.vivo .ra-out li::before { content: ""; position: absolute; left: 0; top: .55em; width: 5px; height: 5px; border-radius: 50%; background: var(--sv-silver-dim); }
+
+.vivo .ra-stato {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  margin-top: 14px; padding: 0 4px;
+}
+.vivo .ra-stato .ra-live { color: var(--sv-silver); }
+.vivo .ra-stato-num { display: flex; gap: 20px; flex-wrap: wrap; font-family: var(--font-mono); font-size: var(--fs-mono); letter-spacing: .06em; color: var(--sv-silver-dim); }
+.vivo .ra-stato-num b { font-weight: 600; color: #fff; }
+
+.vivo .ra-cta { display: flex; flex-direction: column; align-items: center; gap: 18px; margin-top: 40px; text-align: center; }
+.vivo .ra-link {
+  display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 600; font-size: var(--fs-small);
+  text-decoration: underline; text-decoration-color: var(--sv-hair); text-underline-offset: 4px;
+  transition: text-decoration-color .25s;
+}
+.vivo .ra-link:hover, .vivo .ra-link:focus-visible { text-decoration-color: #fff; }
+.vivo .ra-link > span { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; text-align: left; }
+.vivo .ra-link small { margin-top: 3px; font-family: var(--font-mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; font-weight: 500; color: var(--sv-silver-dim); }
+.vivo .ra-fiducia {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0; font-family: var(--font-mono); font-size: var(--fs-mono);
+  letter-spacing: .14em; text-transform: uppercase; color: var(--sv-silver-dim);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes ra-battito { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+  .vivo .ra-live i { animation: ra-battito 1.8s ease-in-out infinite; }
+}
+@media (max-width: 767px) {
+  .vivo .ra-nodi { grid-template-columns: 1fr; }
+  .vivo .ra-stato { flex-direction: column; align-items: flex-start; }
+  .vivo .ra-cta { margin-top: 32px; }
+}
+
+/* --- 21 · ContentOutputV2 -------------------------------------------------- */
+.vivo .ra-griglia {
+  position: relative; list-style: none; margin: 0; padding: 0; counter-reset: none;
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--sv-hair-light); border-radius: 8px; background: rgba(255, 255, 255, .34);
+}
+.vivo .ra-griglia::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 0;
+  opacity: .38; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='3' stitchTiles='stitch' seed='23'/><feColorMatrix values='0 0 0 0 0.86 0 0 0 0 0.84 0 0 0 0 0.80 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+.vivo .ra-cella { position: relative; z-index: 1; padding: 26px 24px 28px; border-right: 1px solid var(--sv-hair-light); border-bottom: 1px solid var(--sv-hair-light); }
+.vivo .ra-cella:nth-child(3n) { border-right: 0; }
+.vivo .ra-cella:nth-child(n + 4) { border-bottom: 0; }
+.vivo .ra-cella-eyebrow { display: block; font-family: var(--font-mono); font-size: var(--fs-mono); letter-spacing: .18em; text-transform: uppercase; color: var(--sv-orange); }
+.vivo .ra-cella-h3 { margin-top: 12px; font-size: 18px; font-weight: 700; line-height: 1.2; letter-spacing: -.01em; color: #1c1c1c; text-wrap: balance; }
+.vivo .ra-cella-p { margin-top: 8px; font-size: 15px; line-height: 1.55; color: #4a4640; max-width: 38ch; }
+@media (max-width: 767px) {
+  .vivo .ra-griglia { grid-template-columns: 1fr; }
+  .vivo .ra-cella { border-right: 0; border-bottom: 1px solid var(--sv-hair-light); padding: 22px 20px 24px; }
+  .vivo .ra-cella:nth-child(n + 4) { border-bottom: 1px solid var(--sv-hair-light); }
+  .vivo .ra-cella:last-child { border-bottom: 0; }
+}
+
+/* --- 29 · ToolStackV2 ------------------------------------------------------ */
+.vivo .ra-ts .ra-testa--sx { max-width: 62ch; margin-bottom: 28px; }
+.vivo .ra-ts-h2 { max-width: 20ch; }
+.vivo .ra-ts-lead { margin-top: 16px; max-width: 62ch; }
+.vivo .ra-ts-forte { color: #fff; font-weight: 700; }
+.vivo .ra-stack {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 40px; row-gap: 0;
+}
+.vivo .ra-stack-voce { padding: 16px 0 18px; border-top: 1px solid var(--sv-hair); }
+.vivo .ra-stack-nome { margin: 0; font-size: 17px; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; color: #fff; }
+.vivo .ra-stack-riga { margin: 6px 0 0; font-size: 15px; line-height: 1.5; color: var(--sv-silver); }
+.vivo .ra-ts-coda {
+  margin: 36px 0 0; padding-top: 18px; border-top: 1px solid var(--sv-hair);
+  font-family: var(--font-mono); font-size: var(--fs-mono); letter-spacing: .18em; text-transform: uppercase; color: var(--sv-silver);
+}
+@media (max-width: 767px) {
+  .vivo .ra-stack { grid-template-columns: 1fr; }
+  .vivo .ra-stack-voce { padding: 14px 0 16px; }
+}

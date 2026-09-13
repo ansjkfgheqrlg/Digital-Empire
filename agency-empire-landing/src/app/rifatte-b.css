@@ -1,0 +1,141 @@
+/* ============================================================================
+   RIFATTE-B.CSS — BRIEF F3, blocco B (13/09/2026): forma nuova per 4 sezioni di giugno con lo STESSO testo.
+   15 SystemsShowcase → .rb-ss* · 42 Objections → .rb-ob* · 07 Competitors → .rb-cp* · 47 FinalOffer → .rb-fo*
+   Ogni regola è `.vivo .rb-*`: vale solo dentro i componenti di src/sezioni-rifatte/. Scala: titoli via --fs-h2
+   (≤ 36), h3 ≤ 24, corpo 16-17, liste 15, mono 11-12; un accento (#fb4604) su < 5 % dei nodi; bordi 1 px al
+   posto delle ombre; niente gradienti pieni; grana locale (.rb-grana::after) su ogni superficie composta.
+   Da importare in layout.tsx PRIMA di scala.css (lo fa Emperator).
+   ============================================================================ */
+
+/* --- comuni --------------------------------------------------------------- */
+.vivo .rb-accento { color: var(--sv-orange); }
+.vivo .rb-grana { position: relative; }
+.vivo .rb-grana::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 0;
+  opacity: .4; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='3' stitchTiles='stitch' seed='31'/><feColorMatrix values='0 0 0 0 0.86 0 0 0 0 0.84 0 0 0 0 0.80 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+.vivo .rb-grana > * { position: relative; z-index: 1; }
+.vivo .rb-btn { padding: 14px 24px; border-radius: 8px; font-size: 15px; font-weight: 700; box-shadow: none; }
+.vivo .rb-btn:hover, .vivo .rb-btn:focus-visible { transform: none; box-shadow: none; background: #ff6a2e; }
+.vivo .rb-btn:focus-visible { outline: 2px solid #ff9a6e; outline-offset: 2px; }
+.vivo .rb-btn small { display: block; margin-top: 2px; font-size: var(--fs-mono); letter-spacing: .12em; text-transform: uppercase; font-weight: 500; opacity: .8; }
+.vivo .rb-link { font-family: var(--font-mono); font-size: var(--fs-mono); letter-spacing: .14em; text-transform: uppercase; color: #fff;
+  border-bottom: 1px solid var(--sv-hair); padding-bottom: 2px; transition: border-color .2s; }
+.vivo .rb-link:hover, .vivo .rb-link:focus-visible { border-bottom-color: var(--sv-orange); }
+.vivo .rb-link::after { content: " →"; }
+
+/* ============================================================================
+   15 · SYSTEMS SHOWCASE (ink) — 3 colonne monocrome a filetti, cifra 34, liste a 15, UNA CTA-bottone,
+   4 stat finali in una riga mono. Altezza stimata ≈ 1.350 (giugno 1.677).
+   ============================================================================ */
+.vivo .rb-ss-testa { max-width: 720px; }
+.vivo .rb-ss-lead { margin-top: 16px; }
+.vivo .rb-ss-lead strong { color: #fff; font-weight: 600; }
+.vivo .rb-ss-colonne { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 40px; align-items: stretch; }
+.vivo .rb-ss-col { display: flex; flex-direction: column; border: 1px solid var(--sv-hair); border-radius: 6px; background: rgba(255, 255, 255, .025); }
+.vivo .rb-ss-blocco { padding: 18px 22px; border-top: 1px solid var(--sv-hair); }
+.vivo .rb-ss-blocco:first-child { border-top: 0; }
+.vivo .rb-ss-intesta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
+.vivo .rb-ss-live { color: var(--sv-silver-dim); }
+.vivo .rb-ss-live::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--sv-silver); margin-right: 8px; vertical-align: middle; }
+.vivo .rb-ss-tagline { flex-basis: 100%; margin-top: 6px; font-size: 17px; line-height: 1.35; color: var(--sv-silver); }
+.vivo .rb-ss-metrica { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.vivo .rb-ss-cifra { font-size: 34px; font-weight: 900; letter-spacing: -.03em; line-height: 1; color: #fff; font-variant-numeric: tabular-nums; margin-bottom: 8px; }
+.vivo .rb-ss-sub { font-size: 14px; line-height: 1.45; margin-top: 6px; }
+.vivo .rb-ss-nota { display: block; margin-top: 8px; color: var(--sv-silver-dim); letter-spacing: .1em; }
+.vivo .rb-ss-uptime { text-align: right; flex-shrink: 0; }
+.vivo .rb-ss-uptime b { display: block; font-size: 20px; font-weight: 800; letter-spacing: -.02em; color: #fff; font-variant-numeric: tabular-nums; }
+.vivo .rb-ss-uptime span { color: var(--sv-silver-dim); }
+.vivo .rb-ss-titolo { display: block; margin-bottom: 12px; }
+.vivo .rb-ss-passi { list-style: none; margin: 0; padding: 0; counter-reset: passo; }
+.vivo .rb-ss-passi li { position: relative; padding-left: 26px; margin-top: 10px; counter-increment: passo; }
+.vivo .rb-ss-passi li:first-child { margin-top: 0; }
+.vivo .rb-ss-passi li::before { content: counter(passo); position: absolute; left: 0; top: 2px; font-family: var(--font-mono); font-size: var(--fs-mono); color: var(--sv-silver-dim); }
+.vivo .rb-ss-passi b { display: block; font-size: 15px; font-weight: 700; color: #fff; line-height: 1.3; }
+.vivo .rb-ss-passi span { display: block; font-size: 14px; line-height: 1.5; color: var(--sv-silver); margin-top: 2px; }
+.vivo .rb-ss-lista { list-style: none; margin: 0; padding: 0; }
+.vivo .rb-ss-lista li { position: relative; padding-left: 20px; font-size: 15px; line-height: 1.5; color: var(--sv-silver); margin-top: 8px; }
+.vivo .rb-ss-lista li:first-child { margin-top: 0; }
+.vivo .rb-ss-lista li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--sv-orange); font-size: 13px; }
+.vivo .rb-ss-stack { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 0; }
+.vivo .rb-ss-stack li { color: var(--sv-silver); letter-spacing: .1em; }
+.vivo .rb-ss-stack li + li::before { content: "·"; margin: 0 8px; color: var(--sv-silver-dim); }
+.vivo .rb-ss-roi { font-size: 17px; line-height: 1.35; color: #fff; }
+.vivo .rb-ss-piede { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.vivo .rb-ss-piede > .sv-mono { color: var(--sv-silver-dim); }
+.vivo .rb-ss-stat { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 6px 0; color: var(--sv-silver-dim); letter-spacing: .1em; }
+.vivo .rb-ss-stat b { color: #fff; font-weight: 700; }
+.vivo .rb-ss-stat span + span::before { content: "·"; margin: 0 12px; }
+@media (max-width: 900px) {
+  .vivo .rb-ss-colonne { grid-template-columns: 1fr; }
+}
+
+/* ============================================================================
+   42 · OBJECTIONS (carta) — per obiezione: colonna sinistra (eyebrow, citazione a 24 serif corsivo, kicker mono),
+   colonna destra da 720 con i 3 paragrafi etichettati; niente card, niente lettere. Altezza stimata ≈ 1.650
+   (giugno 2.578; il 39B sperava ≈ 1.300 — il testo integrale, 12 paragrafi, non ci sta in meno a 16 px).
+   ============================================================================ */
+.vivo .rb-ob-testa { max-width: 720px; margin-bottom: 8px; }
+.vivo .rb-ob-gruppo { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 720px); gap: 24px 48px; padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--sv-hair-light); }
+.vivo .rb-ob-voce .sv-mono { display: block; }
+.vivo .rb-ob-cit { margin-top: 12px; font-family: var(--font-accent), Georgia, serif; font-style: italic; font-weight: 400; font-size: 24px; line-height: 1.3; letter-spacing: -.01em; color: #1c1c1c; text-wrap: balance; }
+.vivo .rb-ob-kicker { margin-top: 14px; color: #6f6a62; letter-spacing: .1em; }
+.vivo .rb-ob-risposte { display: flex; flex-direction: column; gap: 22px; }
+.vivo .rb-ob-k { display: block; color: #6f6a62; margin-bottom: 6px; }
+.vivo .rb-ob-par h4 { font-size: 17px; font-weight: 700; line-height: 1.3; color: #1c1c1c; letter-spacing: -.01em; }
+.vivo .rb-ob-par p { margin-top: 6px; color: #3a3630; max-width: 64ch; }
+@media (max-width: 900px) {
+  .vivo .rb-ob-gruppo { grid-template-columns: 1fr; gap: 20px; }
+  .vivo .rb-ob-cit { font-size: 22px; }
+}
+
+/* ============================================================================
+   07 · COMPETITORS (ink piatto) — lista a 2 colonne senza card, citazione in una riga, chiusura.
+   Altezza stimata ≈ 640 (giugno 1.243). Padding ridotto a 56 per stare vicino ai 600.
+   ============================================================================ */
+.vivo .rb-cp.sv-section { padding: 56px 0; }
+.vivo .rb-cp-testa { max-width: 760px; }
+.vivo .rb-cp-lead { margin-top: 14px; }
+.vivo .rb-cp-lead strong { color: #fff; font-weight: 600; }
+.vivo .rb-cp-lista { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; border-top: 1px solid var(--sv-hair); }
+.vivo .rb-cp-lista li { padding: 16px 0; border-bottom: 1px solid var(--sv-hair); }
+.vivo .rb-cp-lista h3 { font-size: 17px; font-weight: 700; line-height: 1.3; color: #fff; letter-spacing: -.01em; }
+.vivo .rb-cp-lista .sv-mono { display: block; margin-top: 4px; color: var(--sv-silver-dim); }
+.vivo .rb-cp-lista p { margin-top: 6px; font-size: 15px; line-height: 1.5; color: var(--sv-silver); }
+.vivo .rb-cp-cit { margin: 28px 0 0; padding: 0; border: 0; }
+.vivo .rb-cp-cit .sv-it { font-size: 20px; line-height: 1.4; color: #fff; }
+.vivo .rb-cp-cit .sv-it b { font-weight: 400; color: var(--sv-orange); }
+.vivo .rb-cp-cit .sv-mono { display: block; margin-top: 10px; }
+.vivo .rb-cp-coda { margin-top: 18px; font-size: 15px; line-height: 1.55; max-width: 64ch; }
+.vivo .rb-cp-forte { color: #fff; font-weight: 600; }
+@media (max-width: 767px) {
+  .vivo .rb-cp-lista { grid-template-columns: 1fr; }
+}
+
+/* ============================================================================
+   47 · FINAL OFFER (ink piatto) — niente mock-schermo: eyebrow, lead, riga di stato mono, titolo ≤ 36;
+   sotto: checklist bordata (39A E42) + blocco prezzo a 44 con UNA CTA. Altezza stimata ≈ 720 (giugno 1.472).
+   ============================================================================ */
+.vivo .rb-fo-testa { max-width: 720px; }
+.vivo .rb-fo-lead { margin-top: 14px; color: var(--sv-silver); }
+.vivo .rb-fo-lead strong { color: #fff; font-weight: 600; }
+.vivo .rb-fo-stato { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 22px; color: var(--sv-silver-dim); }
+.vivo .rb-fo-stato i { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--sv-orange); margin-right: 8px; vertical-align: middle; }
+.vivo .rb-fo-titolo { margin-top: 8px; color: #fff; }
+.vivo .rb-fo-griglia { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 24px; margin-top: 36px; align-items: start; }
+.vivo .rb-fo-lista { list-style: none; margin: 0; padding: 0; border: 1px solid var(--sv-hair); border-radius: 8px; background: rgba(255, 255, 255, .025); }
+.vivo .rb-fo-lista li { position: relative; padding: 18px 20px 18px 56px; font-size: 16px; line-height: 1.5; color: var(--sv-silver); }
+.vivo .rb-fo-lista li + li { border-top: 1px solid var(--sv-hair); }
+.vivo .rb-fo-lista li::before { content: "✓"; position: absolute; left: 18px; top: 50%; transform: translateY(-50%); width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 12px; color: var(--sv-orange); background: rgba(251, 70, 4, .14); }
+.vivo .rb-fo-prezzo { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 26px 28px; border: 1px solid var(--sv-hair); border-radius: 8px; background: rgba(255, 255, 255, .025); }
+.vivo .rb-fo-prezzo > .sv-mono { color: var(--sv-silver-dim); }
+.vivo .rb-fo-prezzo > .sv-mono.rb-accento { color: var(--sv-orange); }
+.vivo .rb-fo-cifra { font-size: 44px; font-weight: 900; letter-spacing: -.03em; line-height: 1; color: #fff; font-variant-numeric: tabular-nums; }
+.vivo .rb-fo-riga { font-size: 15px; line-height: 1.5; }
+.vivo .rb-fo-btn { align-self: stretch; margin-top: 8px; flex-direction: column; gap: 0; }
+@media (max-width: 900px) {
+  .vivo .rb-fo-griglia { grid-template-columns: 1fr; }
+}

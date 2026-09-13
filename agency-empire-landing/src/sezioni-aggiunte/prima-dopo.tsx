@@ -1,19 +1,13 @@
+import { FATTI } from "@/lib/fatti";
 import { LISTINO, SAAS_ANNO, eur } from "@/lib/listino";
 
 /* AGGIUNTA A05 (Dossier 38 v2, Atto III) — Prima / dopo: la stessa cosa pagata in due modi.
-   Inserita dopo <ListenUp />. h ≤ 700. Superficie ink, due colonne uguali.
-   Sinistra: il canone barrato + una fattura RICOSTRUITA IN HTML e desaturata (grayscale) — non è lo screenshot di nessuno,
-   e lo dice in didascalia. Destra: il prezzo una tantum + una pagina vera di un PDF PreventivoForge (pf-totale.webp,
-   1191×1458, resa 380 px, §14: intera, mai cover, bordo arancione 1 px), intestazione del cliente ritagliata.
-   Ogni cifra viene da LISTINO (§6/§8): saasMese, SAAS_ANNO, outreach. Nessuna CTA di vendita (§15: Atto III).
-   Titolo della sezione: non è nel brief, è scritto qui in voce di casa e si può cambiare. CSS: aggiunte-a.css (.pd-*). */
-const PDF_TOTALE = {
-  src: "/aura/pf-totale.webp",
-  width: 1191,
-  height: 1458,
-  alt: "Pagina del totale di un preventivo PDF generato dal nostro sistema PreventivoForge, con l'intestazione del cliente ritagliata.",
-} as const;
-
+   Inserita dopo <ListenUp />. Superficie ink, due colonne uguali.
+   Rifatta il 13/09 sera (BRIEF F3 blocco C, 39B §2 r.10): via il timbro; a destra, al posto del PDF (che resta nella 26),
+   una seconda scheda HTML «4.000 € una volta» SIMMETRICA alla prima: Setup una volta / Canone 0 € / Proprietà del codice: tua /
+   Totale a 12 mesi. Sinistra: la fattura dell'abbonamento, ricostruita in HTML e desaturata. Titolo con --fs-h2 (sv-h2).
+   Ogni cifra viene da LISTINO/FATTI (§6/§8): saasMese, SAAS_ANNO, outreach, canoneMese. Nessuna CTA di vendita (§15: Atto III).
+   CSS: aggiunte-a.css (.pd-*). Altezza ≈ 520 px. */
 export function PrimaDopo() {
   return (
     <div className="vivo">
@@ -30,10 +24,7 @@ export function PrimaDopo() {
               <h3 className="pd-h4">
                 <span className="pd-barrato">{eur(LISTINO.saasMese)} al mese, per sempre</span>
               </h3>
-              <div className="pd-fattura" aria-label="Fattura di un abbonamento, ricostruita in HTML">
-                <span className="pd-timbro" aria-hidden="true">
-                  ricorrente
-                </span>
+              <div className="pd-foglio pd-fattura" aria-label="Fattura di un abbonamento, ricostruita in HTML">
                 <div className="pd-int">
                   <b>Abbonamento outreach</b>
                   <span>Piano Pro</span>
@@ -60,23 +51,36 @@ export function PrimaDopo() {
               <p className="foto-didascalia pd-did">ricostruita in HTML — non uno screenshot altrui</p>
             </div>
 
-            {/* DOPO — il sistema tuo */}
+            {/* DOPO — il sistema tuo: la stessa scheda, con i nostri numeri */}
             <div>
               <h3 className="pd-h4">
-                {eur(LISTINO.outreach)} una volta. <span className="sv-it">Tuo.</span>
+                <span data-prezzo="outreach">{eur(LISTINO.outreach)}</span> una volta. <span className="sv-it">Tuo.</span>
               </h3>
-              <figure className="foto-intera pd-pdf" style={{ aspectRatio: `${PDF_TOTALE.width}/${PDF_TOTALE.height}` }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={PDF_TOTALE.src}
-                  width={PDF_TOTALE.width}
-                  height={PDF_TOTALE.height}
-                  alt={PDF_TOTALE.alt}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <p className="foto-didascalia pd-did">PDF vero del nostro sistema · intestazione del cliente ritagliata</p>
+              <div className="pd-foglio pd-scheda" aria-label="Il sistema pagato una volta, stessa scheda">
+                <div className="pd-int">
+                  <b>Sistema outreach</b>
+                  <span>Codice tuo</span>
+                </div>
+                <ul className="pd-righe">
+                  <li>
+                    <span>Setup, una volta</span>
+                    <span data-prezzo="outreach">{eur(LISTINO.outreach)}</span>
+                  </li>
+                  <li>
+                    <span>Canone</span>
+                    <span>{eur(FATTI.canoneMese)}</span>
+                  </li>
+                  <li>
+                    <span>Proprietà del codice</span>
+                    <span>tua</span>
+                  </li>
+                  <li className="pd-tot">
+                    <span>Totale a 12 mesi</span>
+                    <span data-prezzo="outreach">{eur(LISTINO.outreach)}</span>
+                  </li>
+                </ul>
+              </div>
+              <p className="foto-didascalia pd-did">stessa scheda, i numeri del listino — niente canoni dopo</p>
             </div>
           </div>
         </div>

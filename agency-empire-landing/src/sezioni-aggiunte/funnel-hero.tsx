@@ -1,106 +1,87 @@
+import type { ReactNode } from "react";
 import { FATTI } from "@/lib/fatti";
 import { LISTINO } from "@/lib/listino";
 
-/* AGGIUNTA D2 (ordine di Max, 13/09) — lo schema a blocchi dentro l'hero, sotto il sottotitolo e la CTA:
-   dall'operatività a mano al workflow che gira. Quattro blocchi, tre frecce «a salto» in SVG: bezier,
-   tratteggio a puntini che scorre verso la punta (ferme con prefers-reduced-motion), marker triangolare.
-   Numeri da FATTI e LISTINO (§6/§8: nessun numero scritto a mano). Su mobile i blocchi vanno in colonna
-   e le frecce diventano un tratteggio verticale in CSS. */
+/* AGGIUNTA D2 (ordine di Max, 13/09) — rifatta il 13/09 sera (BRIEF F3, blocco C; 39B §5).
+   Da «quattro scatole con frecce» a «una riga con quattro momenti»: un filetto hairline con 4 punti, sopra ogni punto la
+   tappa in mono 11, sotto il titolo a 17 bold e UNA riga a 14. Niente card, niente sfondo, niente bordo. Solo l'ultima tappa
+   porta l'accento (il punto e la cifra). Allineato a sinistra in una colonna ≤ 900. Altezza ≈ 170 px.
+   Le frecce restano perché Max le vuole (lunghe, sottili, punta piccola, una che passa sotto) ma FERME (nessuna animazione)
+   e più rade: collegano i 4 punti del filetto — la 1ª e la 3ª ad arco sopra, la 2ª passa sotto il filetto.
+   Numeri da FATTI e LISTINO (§6/§8: nessun numero scritto a mano). Su mobile le tappe vanno in colonna con il filetto
+   verticale e niente SVG. CSS: aggiunte-hero.css (.funnel-hero, .fh-*). */
 
 const percentAcconto = Math.round(LISTINO.acconto * 100);
+const ore = FATTI.orePerDm.toLocaleString("it-IT");
 
-const BLOCCHI: { k: string; occhiello: string; titolo: string; righe: string[]; piede: string; fine?: boolean }[] = [
-  {
-    k: "oggi",
-    occhiello: "Oggi",
-    titolo: "Tutto a mano",
-    righe: [`${FATTI.dmAMano} DM al giorno, scritti da te`, "follow-up dimenticati", "contenuti «quando riesci»"],
-    piede: `${FATTI.orePerDm.toLocaleString("it-IT")} ore tue al giorno`,
-  },
-  {
-    k: "chiamata",
-    occhiello: `Chiamata · ${FATTI.minutiChiamata}′`,
-    titolo: "Vedi il sistema che gira",
-    righe: ["invii di oggi, risposte in coda", "il tuo caso, i tuoi numeri", "nessuna slide"],
-    piede: "gratis · nessun impegno",
-  },
+type Tappa = { k: string; tappa: string; titolo: string; riga: ReactNode; fine?: boolean };
+
+const TAPPE: Tappa[] = [
+  { k: "oggi", tappa: "Oggi", titolo: "Tutto a mano", riga: `${ore} ore tue al giorno` },
+  { k: "chiamata", tappa: `Chiamata · ${FATTI.minutiChiamata}′`, titolo: "Vedi il sistema che gira", riga: "gratis, nessun impegno" },
   {
     k: "setup",
-    occhiello: `Setup · ${FATTI.giorniSetup} giorni`,
+    tappa: `Setup · ${FATTI.giorniSetup} giorni`,
     titolo: "Sul tuo server",
-    righe: ["coi tuoi account", "dashboard aperta dal primo giorno", "formazione al tuo team"],
-    piede: `${percentAcconto} % alla firma · ${100 - percentAcconto} % al go-live`,
+    riga: `${percentAcconto} % alla firma, ${100 - percentAcconto} % al go-live`,
   },
   {
     k: "gira",
-    occhiello: "Da qui in poi",
+    tappa: "Da qui in poi",
     titolo: "Il tuo workflow gira",
-    righe: [`${FATTI.messaggiGiorno} messaggi al giorno`, `0 ore tue · ${FATTI.canoneMese} canoni`, "codice tuo, per sempre"],
-    piede: "misurato, non promesso",
+    riga: (
+      <>
+        <b className="fh-cifra">{FATTI.messaggiGiorno}</b> messaggi al giorno, 0 ore tue
+      </>
+    ),
     fine: true,
   },
 ];
 
-/* Le tre frecce, nel viewBox 1000×200 (preserveAspectRatio none; larghezza dei blocchi ≈ 205, gap ≈ 60).
-   Sono lunghe: partono dal centro-alto di un blocco e atterrano sul centro-alto del successivo, arco alto e morbido.
-   La 1ª e la 3ª passano SOPRA (svg davanti ai blocchi); la 2ª passa SOTTO: il suo tracciato scende dietro il blocco
-   «Chiamata» e riemerge nel varco — si vede solo dove non c'è il blocco, come un filo che passa sotto. */
-const BLOCCO_W = (1000 - 3 * 60) / 4; // ≈ 205
-const cx = (i: number) => i * (BLOCCO_W + 60) + BLOCCO_W / 2;
+/* Le frecce vivono in un SVG steso sopra la riga delle tappe: viewBox 900×100 con preserveAspectRatio="none",
+   alto esattamente 100 px → le y sono pixel veri (il filetto sta a y = 48, vedi --fh-linea nel CSS), le x sono
+   quarti della colonna (passo 225). I punti stanno all'inizio di ogni colonna (centro a x = 4.5).
+   Arco SOPRA: parte dal punto, sale al massimo di ~23 px sopra il filetto (resta sotto la tappa in mono) e atterra
+   sul punto successivo. Arco SOTTO: scende di ~14 px sotto il filetto (resta sopra il titolo) e risale nel punto. */
+const PASSO = 900 / 4;
+const px = (i: number) => i * PASSO + 4.5;
+const LINEA = 48;
 
-function Sopra({ i, delay }: { i: number; delay: number }) {
-  const x0 = cx(i) + 40, x1 = cx(i + 1) - 40;
-  const d = `M${x0},-6 C${x0 + 60},-92 ${x1 - 60},-92 ${x1},-4`;
+function Arco({ i, sotto = false }: { i: number; sotto?: boolean }) {
+  const x0 = px(i) + 8, x1 = px(i + 1) - 8;
+  const d = sotto
+    ? `M${x0},${LINEA + 4} C${x0 + 70},${LINEA + 23} ${x1 - 70},${LINEA + 23} ${x1},${LINEA + 4}`
+    : `M${x0},${LINEA - 3} C${x0 + 70},${LINEA - 31} ${x1 - 70},${LINEA - 31} ${x1},${LINEA - 3}`;
   return (
     <>
       <path className="fh-fr-ghost" d={d} />
-      <path className="fh-fr" d={d} style={{ animationDelay: `${delay}s` }} />
-    </>
-  );
-}
-function Sotto({ i, delay }: { i: number; delay: number }) {
-  const x0 = cx(i) + 30, x1 = cx(i + 1) - BLOCCO_W / 2 + 8;
-  // scende dietro il blocco i, attraversa il varco a mezza altezza, risale lungo il fianco del blocco i+1 e atterra sul suo spigolo alto
-  const d = `M${x0},40 C${x0 + 40},130 ${x1 - 70},170 ${x1 - 26},110 S${x1 - 4},20 ${x1},-4`;
-  return (
-    <>
-      <path className="fh-fr-ghost" d={d} />
-      <path className="fh-fr" d={d} style={{ animationDelay: `${delay}s` }} />
+      <path className="fh-fr" d={d} />
     </>
   );
 }
 
 export function FunnelHero() {
   return (
-    <div className="funnel-hero" role="list" aria-label="Da dove sei a dove arrivi, in quattro passi">
-      {BLOCCHI.map((b) => (
-        <div key={b.k} role="listitem" className={`fh-bl${b.fine ? " fh-bl-fine" : ""}`}>
-          <span className="fh-e">{b.occhiello}</span>
-          <b className="fh-t">{b.titolo}</b>
-          <ul className="fh-ul">
-            {b.righe.map((r) => (
-              <li key={r}>{r}</li>
-            ))}
-          </ul>
-          <span className="fh-f">{b.piede}</span>
-        </div>
-      ))}
-      <svg className="fh-frecce fh-frecce--sotto" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <div className="funnel-hero">
+      <ol className="fh-tappe" role="list" aria-label="Da dove sei a dove arrivi, in quattro tappe">
+        {TAPPE.map((t) => (
+          <li key={t.k} className={`fh-tappa${t.fine ? " fh-tappa--fine" : ""}`}>
+            <span className="fh-e">{t.tappa}</span>
+            <span className="fh-punto" aria-hidden="true" />
+            <b className="fh-t">{t.titolo}</b>
+            <span className="fh-r">{t.riga}</span>
+          </li>
+        ))}
+      </ol>
+      <svg className="fh-frecce" viewBox="0 0 900 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
         <defs>
-          <marker id="fh-punta-sotto" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#fb4604" />
+          <marker id="fh-punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
           </marker>
         </defs>
-        <Sotto i={1} delay={1.1} />
-      </svg>
-      <svg className="fh-frecce" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <defs>
-          <marker id="fh-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#fb4604" />
-          </marker>
-        </defs>
-        <Sopra i={0} delay={0} />
-        <Sopra i={2} delay={2.2} />
+        <Arco i={0} />
+        <Arco i={1} sotto />
+        <Arco i={2} />
       </svg>
     </div>
   );

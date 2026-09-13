@@ -42,48 +42,36 @@ main > section:first-of-type > div.max-w-5xl { padding-top: 3.25rem; padding-bot
   background-size: 220px 220px;
 }
 
-/* ---- D2 · il funnel a blocchi, dentro l'hero sotto la CTA ---- */
-.funnel-hero {
-  position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 64px;
-  width: 100%; max-width: 1080px; margin: 84px auto 0; text-align: left;
-}
-.fh-bl {
-  position: relative; z-index: 1; min-height: 190px; display: flex; flex-direction: column; gap: 6px;
-  padding: 16px 18px 14px; border-radius: 14px;
-  background: rgba(12, 11, 10, 0.72); border: 1px solid rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-}
-.fh-e { font-family: var(--font-mono, ui-monospace, monospace); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #fb4604; }
-.fh-t { color: #fff; font-size: 17px; line-height: 1.15; letter-spacing: -.01em; font-weight: 700; }
-.fh-ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 3px; }
-.fh-ul li { position: relative; padding-left: 14px; font-size: 13px; line-height: 1.45; color: rgba(255, 255, 255, 0.82); }
-.fh-ul li::before { content: "·"; position: absolute; left: 2px; top: -1px; color: #fb4604; font-weight: 900; }
-.fh-f { margin-top: auto; padding-top: 8px; border-top: 1px solid rgba(255, 255, 255, 0.10); font-family: var(--font-mono, ui-monospace, monospace); font-size: 10px; letter-spacing: .08em; color: rgba(255, 255, 255, 0.62); }
-.fh-bl-fine { background: linear-gradient(160deg, #ff5a14, #d63a00); border-color: #ff8a4d; }
-.fh-bl-fine .fh-e, .fh-bl-fine .fh-ul li::before { color: #fff; }
-.fh-bl-fine .fh-ul li { color: #fff; }
-.fh-bl-fine .fh-f { color: rgba(255, 255, 255, 0.88); border-color: rgba(255, 255, 255, 0.30); }
-/* grana locale anche sul blocco arancione (D6): l'arancione respira, non brucia */
-.fh-bl-fine::after {
-  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: .5; mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.3' numOctaves='3' stitchTiles='stitch' seed='4'/><feColorMatrix values='0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-}
-.fh-frecce { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; overflow: visible; }
-.fh-frecce--sotto { z-index: 0; }
-.fh-fr { fill: none; stroke: #fb4604; stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 1.2 6; marker-end: url(#fh-punta); vector-effect: non-scaling-stroke; animation: fh-scorri 3.2s linear infinite; }
-.fh-frecce--sotto .fh-fr { marker-end: url(#fh-punta-sotto); stroke: rgba(251, 70, 4, .85); }
-.fh-fr-ghost { fill: none; stroke: rgba(251, 70, 4, 0.16); stroke-width: 1; vector-effect: non-scaling-stroke; }
-@keyframes fh-scorri { to { stroke-dashoffset: -28.8; } }
-@media (prefers-reduced-motion: reduce) { .fh-fr { animation: none; } }
+/* ---- D2 · il funnel dell'hero, rifatto (BRIEF F3 blocco C, 39B §5): una riga con quattro momenti ----
+   Filetto hairline con 4 punti; sopra la tappa in mono 11, sotto titolo 17 bold + UNA riga a 14. Niente card.
+   Solo l'ultima tappa porta l'accento (punto + cifra). Allineato a sinistra, colonna ≤ 900, altezza ≈ 170 px.
+   Le frecce (volute da Max) sono FERME e rade: 1ª e 3ª ad arco sopra il filetto, la 2ª passa sotto.
+   --fh-linea = y del filetto dentro ogni tappa (deve coincidere con LINEA in funnel-hero.tsx). */
+.funnel-hero { --fh-linea: 48px; position: relative; width: 100%; max-width: 900px; margin: 56px 0 0; text-align: left; }
+.fh-tappe { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin: 0; padding: 0; list-style: none; }
+/* il filetto: passa per il centro dei 4 punti */
+.fh-tappe::before { content: ""; position: absolute; left: 0; right: 0; top: var(--fh-linea); height: 1px; background: rgba(255, 255, 255, .16); }
+.fh-tappa { position: relative; display: flex; flex-direction: column; align-items: flex-start; padding-right: 28px; }
+.fh-e { display: block; height: 14px; font-family: var(--font-mono, ui-monospace, monospace); font-size: 11px; line-height: 14px; letter-spacing: .18em; text-transform: uppercase; color: var(--sv-silver-dim, #8f8a99); white-space: nowrap; }
+.fh-punto { display: block; width: 9px; height: 9px; margin-top: 30px; border-radius: 50%; border: 1px solid var(--sv-silver-dim, #8f8a99); background: #0a0a0a; position: relative; z-index: 1; }
+.fh-t { display: block; margin-top: 22px; color: #fff; font-size: 17px; line-height: 1.25; letter-spacing: -.012em; font-weight: 700; }
+.fh-r { display: block; margin-top: 4px; font-size: 14px; line-height: 1.4; color: var(--sv-silver, #d9d4e1); }
+.fh-tappa--fine .fh-punto { width: 11px; height: 11px; margin-top: 29px; background: #fb4604; border-color: #fb4604; }
+.fh-tappa--fine .fh-cifra { color: #fb4604; font-weight: 700; font-variant-numeric: tabular-nums; }
+/* le frecce: un solo SVG sopra la riga (alto 100 px = 100 unità: le y sono pixel), ferme, tratteggio rado, punta piccola */
+.fh-frecce { position: absolute; left: 0; top: 0; width: 100%; height: 100px; z-index: 2; pointer-events: none; overflow: visible; }
+.fh-fr { fill: none; stroke: #fb4604; stroke-width: 1.25; stroke-linecap: round; stroke-dasharray: 2 9; marker-end: url(#fh-punta); vector-effect: non-scaling-stroke; }
+.fh-fr-ghost { fill: none; stroke: rgba(251, 70, 4, .14); stroke-width: 1; vector-effect: non-scaling-stroke; }
 @media (max-width: 820px) {
-  .funnel-hero { grid-template-columns: 1fr; gap: 26px; margin-top: 54px; }
+  .funnel-hero { margin-top: 44px; }
   .fh-frecce { display: none; }
-  .fh-bl { min-height: 0; }
-  /* su mobile il salto diventa un tratteggio verticale con la punta, fra un blocco e l'altro */
-  .fh-bl + .fh-bl::before {
-    content: ""; position: absolute; left: 50%; top: -26px; height: 26px; width: 0;
-    border-left: 2px dotted #fb4604; transform: translateX(-50%);
-  }
+  /* in colonna: il filetto diventa verticale, a sinistra; i punti ci stanno sopra */
+  .fh-tappe { grid-template-columns: 1fr; gap: 22px; padding-left: 24px; }
+  .fh-tappe::before { left: 4px; right: auto; top: 6px; bottom: 6px; width: 1px; height: auto; }
+  .fh-tappa { padding-right: 0; }
+  .fh-punto { position: absolute; left: -24px; top: 3px; margin: 0; }
+  .fh-tappa--fine .fh-punto { left: -25px; top: 2px; }
+  .fh-t { margin-top: 6px; }
 }
 
 /* ---- A02 · il rail dei quattro fatti (carta) ---- */
