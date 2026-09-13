@@ -1,0 +1,74 @@
+
+/* ============================================================================
+   SCALA.CSS — de-ingrandimento del sito agency (ordine di Max, 13/09/2026).
+   Solo aggiunte: nessun componente modificato. Obiettivo: titoli 36-40,
+   corpo 16-17, padding 64-72, colonna <= 1100 (scala del competitor).
+   ============================================================================ */
+
+/* --- 1. Variabili delle sezioni aggiunte (vivo.css) ------------------------ */
+:root {
+  --u: min(100vw, 1100px);
+  --fs-lead:      clamp(15px, 1.1vw, 17px);
+  --fs-riga:      clamp(14px, 1.1vw, 16px);
+  --fs-h3:        clamp(18px, 1.8vw, 24px);
+  --fs-h2:        clamp(26px, 2.6vw, 36px);
+  --fs-h1:        clamp(28px, 3vw, 40px);
+  --fs-stat:      clamp(26px, 2.4vw, 34px);
+  --fs-manifesto: clamp(28px, 3.6vw, 48px);
+  --fs-word:      clamp(40px, 5vw, 72px);
+}
+.vivo .sv-section { padding: 64px 0; }
+
+@media (min-width: 768px) {
+
+  /* --- 2. Padding e contenitori delle sezioni di giugno -------------------- */
+  .section { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+  [class*="md:py-32"] { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+  [class*="py-24"]    { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+  [class*="max-w-6xl"]      { max-width: 1080px !important; }
+  [class*="max-w-5xl"]      { max-width: 960px !important; }
+  [class*="max-w-[1400px]"] { max-width: 1100px !important; }
+
+  /* --- 3. Hero (hero.tsx usa inline style: serve !important) --------------- */
+  h1 > span:nth-child(1) { font-size: 28px !important; }
+  h1 > span:nth-child(2) { font-size: clamp(56px, 8vw, 96px) !important; line-height: .92 !important; }
+  h1 > span:nth-child(3) { font-size: 52px !important; }
+  h1 { margin-bottom: 1.75rem !important; }
+
+  /* --- 4. Titoli con px arbitrari (Tailwind: text-[Npx] e md:text-[Npx]) --- */
+  [class*="text-[88px]"] { font-size: 52px !important; line-height: 1.02 !important; }
+  [class*="text-[72px]"] { font-size: 44px !important; line-height: 1.04 !important; }
+  [class*="text-[68px]"] { font-size: 44px !important; line-height: 1.04 !important; }
+  [class*="text-[64px]"] { font-size: 42px !important; line-height: 1.05 !important; }
+  [class*="text-[58px]"] { font-size: 40px !important; line-height: 1.08 !important; }
+  [class*="text-[56px]"] { font-size: 40px !important; line-height: 1.08 !important; }
+  [class*="text-[52px]"] { font-size: 38px !important; line-height: 1.08 !important; }
+  [class*="text-[48px]"] { font-size: 36px !important; line-height: 1.1  !important; }
+  [class*="text-[44px]"] { font-size: 34px !important; }
+  [class*="text-[40px]"] { font-size: 34px !important; }
+
+  /* --- 5. Titoli con scala Tailwind ---------------------------------------- */
+  [class*="md:text-6xl"] { font-size: 42px !important; line-height: 1.05 !important; }
+  [class*="md:text-5xl"] { font-size: 36px !important; line-height: 1.1  !important; }
+  [class*="md:text-4xl"], [class*="text-4xl"] { font-size: 32px !important; line-height: 1.15 !important; }
+  [class*="text-3xl"] { font-size: 26px !important; }
+
+  /* --- 6. Lead e corpo ----------------------------------------------------- */
+  [class*="text-2xl"] { font-size: 19px !important; line-height: 1.5 !important; }
+  [class*="text-xl"]  { font-size: 17px !important; line-height: 1.6 !important; }
+  [class*="text-lg"]  { font-size: 16.5px !important; line-height: 1.65 !important; }
+  [class*="text-[20px]"], [class*="text-[19px]"] { font-size: 17px !important; }
+  [class*="text-[18px]"] { font-size: 16.5px !important; }
+  [class*="text-[17px]"] { font-size: 16px !important; }
+
+  /* --- 7. Decorazioni che gonfiano senza dire niente ----------------------- */
+  [class*="text-[130px]"] { display: none !important; }   /* lettere C/P/B in filigrana, Objections */
+}
+
+/* --- 8. Bottoni permanenti: la CTA fissa non compare finché la sezione
+         prezzi non è passata (il body riceve .dopo-prezzi da un observer
+         di 6 righe; finché non c'è, si può alzare la soglia a 3 viewport
+         direttamente in sticky-cta.tsx: innerHeight * 3) ------------------- */
+
+/* --- 9. Hero: le 4 chip fluttuanti ripetono il rail dei fatti 400 px piu' sotto (39B par.5.6) - nascoste --- */
+main > section:first-of-type .silver-chip { display: none !important; }

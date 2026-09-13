@@ -93,7 +93,7 @@ def parte_a(live_righe, build_righe, mostra: bool, consenti: str | None = None) 
 ARTEFATTI = re.compile(r"(\.tsbuildinfo$|(^|/)\.next/|(^|/)out/|(^|/)node_modules/)")
 
 
-def parte_b(base: str, cartella: str) -> tuple[bool, list[str]]:
+def parte_b(base: str, cartella: str, deroga_b=None) -> tuple[bool, list[str]]:
     """Ogni file esistente nel commit base: solo righe aggiunte. Gli artefatti di build (tsbuildinfo,
     .next/, out/) non sono sorgente e non contano: li riscrive la macchina, non l'agente."""
     esistenti = set(subprocess.run(["git", "ls-tree", "-r", "--name-only", base, "--", cartella], capture_output=True, text=True, encoding="utf-8").stdout.split())
@@ -107,6 +107,11 @@ def parte_b(base: str, cartella: str) -> tuple[bool, list[str]]:
         if ARTEFATTI.search(path) or path not in esistenti:
             continue  # file nuovo: libero
         if dele != "0" and dele != "-":
+            if deroga_b and deroga_b.search(path):
+                # deroga dichiarata (ADR-030: riscrittura ORDINATA dal committente, prima in anteprima):
+                # il file puo' perdere righe, ma lo si stampa perche' finisca nel checkpoint
+                print(f"  DEROGA-B dichiarata: {path}: -{dele} righe (ordine del committente)")
+                continue
             errori.append(f"  {path}: -{dele} righe (file esistente nel base {base[:12]})")
     # file cancellati
     stato = subprocess.run(["git", "diff", "--name-status", f"{base}..HEAD", "--", cartella], capture_output=True, text=True, encoding="utf-8").stdout
@@ -125,6 +130,7 @@ def main() -> int:
     ap.add_argument("--cartella", default=".", help="cartella del sito nel repo (parte B)")
     ap.add_argument("--ignora", help="regex di stringhe che cambiano da sole (deroga dichiarata)")
     ap.add_argument("--consenti", help="regex: righe del live (nostre) che possono cambiare — deroga dichiarata")
+    ap.add_argument("--deroga-b", help="regex di path che possono perdere righe (parte B) perche' il committente ha ORDINATO la riscrittura — va scritta nel checkpoint")
     ap.add_argument("--mostra", action="store_true", help="stampa i blocchi inseriti")
     a = ap.parse_args()
     # `--pagina prenota/` vale come `/prenota/` (Git Bash su Windows trasforma «/prenota/» in un path di sistema)
@@ -149,7 +155,7 @@ def main() -> int:
 
     ok_b = True
     if a.base:
-        ok_b, err_b = parte_b(a.base, a.cartella)
+        ok_b, err_b = parte_b(a.base, a.cartella, re.compile(a.deroga_b) if a.deroga_b else None)
         print(f"\nB. CODICE: {'PASS' if ok_b else 'FAIL'} — file esistenti in {a.base}: {'solo righe aggiunte' if ok_b else 'righe rimosse o file cancellati'}")
         for e in err_b:
             print(e)
