@@ -1,3 +1,9 @@
+## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing F1 (D1 texture + D2 funnel-hero + A01/A02) — Emperator con Max
+
+«vai» di Max ricevuto alle ~13:30. Sto toccando SOLO `agency-empire-landing/` (file nuovi in `src/sezioni-aggiunte/`, `src/lib/media.ts`,
+`src/app/aggiunte-hero.css`, inserimenti in `hero.tsx`/`page.tsx`/`layout.tsx`, `public/texture/`). Gael/Neri: non aprire quella cartella
+finché questo blocco non sparisce. Deploy solo in ANTEPRIMA (`npx vercel`), il `--prod` resta di Max.
+
 ## 🎨 2026-09-13 pomeriggio — SITO AGENCY: le decisioni di Max RIBADITE (D1-D5) + D6 grana; TAVOLA v2.1 con le sei tavole D — CP-20260913-AQXZ
 
 Max ha riconfermato testualmente D1-D5 e aggiunto **D6 «la grana, sempre»**. Fatto il punto (a) di EEV3: **Tavola v2.1** (stesso URL
