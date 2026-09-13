@@ -1,8 +1,17 @@
 ## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing F1 (D1 texture + D2 funnel-hero + A01/A02) — Emperator con Max
 
-«vai» di Max ricevuto alle ~13:30. Sto toccando SOLO `agency-empire-landing/` (file nuovi in `src/sezioni-aggiunte/`, `src/lib/media.ts`,
+«vai» di Max ricevuto alle ~13:30. F1 è in anteprima (CP-DWDE); ora F1b (D3/D4/D5). Sto toccando SOLO `agency-empire-landing/` (file nuovi in `src/sezioni-aggiunte/`, `src/lib/media.ts`,
 `src/app/aggiunte-hero.css`, inserimenti in `hero.tsx`/`page.tsx`/`layout.tsx`, `public/texture/`). Gael/Neri: non aprire quella cartella
 finché questo blocco non sparisce. Deploy solo in ANTEPRIMA (`npx vercel`), il `--prod` resta di Max.
+
+## 🟠 2026-09-13 pomeriggio — SITO AGENCY F1 IN ANTEPRIMA: texture nell'hero + funnel + rail — aspetta lo sguardo di Max — CP-20260913-DWDE
+
+**Gesti solo di Max (ADR-026, in cima; non bloccano):** 1) guardare l'anteprima https://agency-empire-landing-lf5uapfvv-maximilians-projects-f0964962.vercel.app/
+(già aperta nel suo browser; da loggato su Vercel) e dire sì/no; 2) se sì: `cd agency-empire-landing && npx vercel --prod --yes`; 3) mettere le sue due texture
+vere in `agency-empire-landing/public/texture/` (`hero-onde.jpg`, `grana-fuoco.jpg` — oggi ci sono approssimazioni con lo stesso nome).
+**Fatto:** D1 texture sotto l'hero con velo misurato (h1 ≥ 9,6:1), D2 titolo più in alto (CSS) + funnel a 4 blocchi con frecce SVG, A02 rail dei fatti,
+A01 firma (null senza ritratto). Solo inserimenti: `hero.tsx` +10, `page.tsx` +5, `layout.tsx` +1, 0 righe rimosse, **gate PASS**. Commit `a1dc3453`.
+**Segnalato, non toccato:** su mobile «operatività» esce dal bordo (era così anche prima). **Prossimo:** F1b = D3 + D4 + D5 in anteprima.
 
 ## 🎨 2026-09-13 pomeriggio — SITO AGENCY: le decisioni di Max RIBADITE (D1-D5) + D6 grana; TAVOLA v2.1 con le sei tavole D — CP-20260913-AQXZ
 

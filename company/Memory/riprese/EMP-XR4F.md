@@ -2,6 +2,8 @@
 
 - **Codice di ripresa:** `EMP-XR4F`
 - **Aperto:** 2026-09-12
+- **Stato (13/09 pomeriggio, CP-20260913-DWDE):** APERTO — «vai» ricevuto. **F1 in ANTEPRIMA** https://agency-empire-landing-lf5uapfvv-maximilians-projects-f0964962.vercel.app/
+  (D1 texture + D2 funnel + A02 rail + A01 null), gate PASS, commit `a1dc3453`. Texture in `public/texture/` = approssimazioni (Max sovrascrive). Prossimo: sì di Max → suo `--prod`; poi F1b = D3 + D4 + D5 in anteprima.
 - **Stato (13/09 pomeriggio, CP-20260913-AQXZ):** APERTO — Max ha ribadito D1-D5 e aggiunto **D6 grana**; **Tavola v2.1** pubblicata (stesso URL) con le sei tavole D in cima
   (texture **approssimate** da `texture_approx2.py`, funnel-hero HTML+SVG). Fatto il passo 2 di §4. **Restano:** passo 3 (artefatto piano → v2), le 2 texture vere di Max in
   `agency-empire-landing/public/texture/` (cartella aperta, `LEGGIMI.txt`), poi «vai» → F1 in anteprima. Metodo tavola: `scratchpad/tavola38v3_build.py` (= v2 + `d_block.py` + `d_css.txt`, assemblato da `assemble_v3.py`).
