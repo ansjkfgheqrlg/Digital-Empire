@@ -11,8 +11,11 @@ export function HeroTexture() {
   if (!t) return null;
   return (
     <div className="hero-tex" aria-hidden="true">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={t.src} width={t.width} height={t.height} alt="" fetchPriority="high" decoding="async" />
+      <picture>
+        <source type="image/webp" srcSet={t.webp} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={t.src} width={t.width} height={t.height} alt="" fetchPriority="high" decoding="async" />
+      </picture>
       <div className="hero-tex-velo" />
     </div>
   );

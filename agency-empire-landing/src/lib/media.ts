@@ -4,8 +4,10 @@
  * I file veri li mette Max in public/; qui si dichiara solo dove stanno.
  */
 export const TEXTURE = {
-  /** D1 — onde di linee puntinate arancioni (sfondo dell'hero). ≥ 2880 px di larghezza. */
-  heroOnde: { src: "/texture/hero-onde.jpg", width: 2880, height: 1620 } as const,
+  /** D1 — onde di linee puntinate arancioni (sfondo dell'hero). È L'IMMAGINE DI MAX (13/09 sera, incollata in chat,
+   *  estratta dal transcript e salvata in public/texture/hero-onde-ORIGINALE.jpg, 899×1748): hero-onde.jpg/.webp è la stessa
+   *  immagine ingrandita 2× Lanczos + unsharp leggero per non sfocare sui 1920 del desktop. Nessuna approssimazione. */
+  heroOnde: { src: "/texture/hero-onde.jpg", webp: "/texture/hero-onde.webp", width: 1798, height: 3496 } as const,
   /** D3 — grana arancione con strisce scure diagonali (fascia-manifesto). */
   granaFuoco: { src: "/texture/grana-fuoco.jpg", width: 2400, height: 1000 } as const,
 } as const;

@@ -1,8 +1,10 @@
 # Texture di Max (13/09)
 
-ATTENZIONE: i due file che vedi qui ORA sono APPROSSIMAZIONI generate da Emperator (scratchpad/texture_site.py),
-messe solo per far vedere la composizione in anteprima. Max li SOSTITUISCE con i suoi originali, stesso nome:
-- hero-onde.jpg   -> allegato 1: onde di linee puntinate arancioni su nero (sfondo hero, D1). Larghezza >= 2880 px.
-- grana-fuoco.jpg -> allegato 2: grana arancione su nero con strisce scure diagonali (fascia piccola, D3). Larghezza >= 2400 px.
+hero-onde-ORIGINALE.jpg -> L'IMMAGINE DI MAX, intatta (899x1748), incollata in chat il 13/09 sera ed estratta dal transcript
+                           della sessione. Non toccare, non rigenerare.
+hero-onde.jpg / .webp   -> la STESSA immagine ingrandita 2x (Lanczos + unsharp leggero) per restare nitida sui 1920 del desktop.
+                           Se Max consegna un file piu' grande, si sostituisce con lo stesso nome.
+grana-fuoco.jpg         -> ANCORA un'approssimazione generata (fascia piccola, D3). Max la sostituisce con la sua, stesso nome,
+                           larghezza >= 2400 px.
 
 Dettaglio: PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE-v2.md par. I.
