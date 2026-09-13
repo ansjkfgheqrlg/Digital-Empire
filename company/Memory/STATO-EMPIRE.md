@@ -1,3 +1,15 @@
+## 🎯 2026-09-13 — SITO AGENCY: funneloperator.it studiato e UFFICIALIZZATO (§14, §15), Dossier 38 v2 in sei atti, Tavola v2, 5 DECISIONI DI MAX — CP-20260913-EEV3
+
+Max ha bocciato piano v1 e tavola («poche sezioni, immagini tagliate e ingrandite, nessuna logica») e ordinato lo studio di
+**funneloperator.it**: fatto con 4 doom bot (3.174 righe, `reports/66-funneloperator-*.md` + SINTESI-STRATEGIE FO-*), ufficializzato in
+**ADR-031 → CLAUDE-SITI §14 «L'immagine si vede intera» + §15 «Il volto prima, la richiesta dopo»**, 14 pattern candidati, B-083…B-088.
+**Piano v2** `PIANO-MAESTRO/38-…-v2.md`: 24 aggiunte in **sei atti** sul ritmo di lui (volto 2%, prova 16%, porta 70%), +≤ 8.800 px,
+9 schemi in HTML, 9 con immagine, C5→C7. **Tavola v2** https://claude.ai/code/artifact/a7cf07ac-d263-421c-8824-0600b9641384 (still interi al pixel, PDF vero).
+**Le 5 decisioni di Max (§I del dossier):** D1 texture onde = sfondo hero · D2 hero più in alto + schema a blocchi con frecce curve
+puntinate · D3 texture grana = fascia piccola · D4 «Hai competitor e non lo sai» ad ogni costo · D5 Specchio con immagine, scritte più
+sottili. **Gesto suo:** i 2 file delle texture in `agency-empire-landing/public/texture/` (non sono sul disco).
+**RIPRESA DA: `EMP-XR4F`** in chat nuova → tavole D1-D5, artefatto piano v2, poi «vai» → F1 in anteprima.
+
 ## 🎞️ 2026-09-13 notte — DOSSIER 38 P4 «LA VITA»: 13 aggiunte con immagini + TAVOLA ESTETICA solo-aggiunte — CP-20260913-T3U6
 
 Max: *«dove sono le sezioni con le immagini per dare vita a tutto?»* — aveva ragione: il P3 le aveva perse. P4: **cuciture fotografiche**

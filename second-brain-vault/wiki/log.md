@@ -1,6 +1,7 @@
 # Wiki Log — Registro operazioni
 
 ## 2026-09-13 (Emperator — studio funneloperator.it, 4 doom bot)
+- PIANO v2 + TAVOLA v2: Dossier 38 v2 (sei atti, 24 aggiunte, C5-C7, §I decisioni di Max D1-D5) + Tavola Estetica v2 (still interi al pixel, schemi in HTML, PDF vero) → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo). CP-20260913-EEV3. Chat satura: ripresa EMP-XR4F in chat nuova.
 - STUDIO: funneloperator.it catturato (site_capture2 + scarica_media: 68 originali) e analizzato in 4 rapporti (struttura/strategia 463, stile 846, atlante 987, costruzione 878 righe) + sintesi con strategie classificate FO-* → 1 pagina creata (sources/Source_Funnel_Operator_Sito_2026), Tool_Fabbrica_Siti aggiornata (§14-15), index.
 - LEGGE: ADR-031 → CLAUDE-SITI §14 «L'immagine si vede intera» + §15 «Il volto prima, la richiesta dopo»; 14 pattern candidati; B-083…B-088; MIGLIORAMENTI FO-001…012.
 

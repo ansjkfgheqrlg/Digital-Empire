@@ -16,6 +16,10 @@ con un numero), **gli elementi vivi** (23 mappati, 13 già pattern della Fabbric
 quattro giri (P0 → tre critiche → V4 esecutivo), ≈70 h stimate, build solo su «vai».
 
 ## Dettagli
+- **2026-09-13 — Dossier 38 v2 + Tavola v2 + 5 decisioni di Max (CP-20260913-EEV3):** piano riscritto sulle strategie di funneloperator.it
+  ([[Source_Funnel_Operator_Sito_2026]]): 24 aggiunte in sei atti (volto 2%, prova 16%, porta nuova 70%), +≤ 8.800 px, 9 schemi in HTML,
+  immagini intere al pixel (§14). Tavola v2: https://claude.ai/code/artifact/a7cf07ac-d263-421c-8824-0600b9641384. Decisioni di Max: texture onde = sfondo hero, hero più in alto + funnel a blocchi con
+  frecce curve, texture grana = fascia piccola, «Hai competitor» e Specchio della v2 recuperati e migliorati. Texture: file da Max in `public/texture/`.
 - **2026-09-13 notte — P4 «la vita» + Tavola Estetica solo-aggiunte (CP-20260913-T3U6):** critica di Max («dove sono le sezioni con le immagini?»):
   il P3 le aveva perse. 13 aggiunte con immagine (firma V0 sotto l'hero, 7 cuciture fotografiche, stanza 3 volti, video, foto nello specchio, 2 fasce-prenota
   con foto, coda legale), casting dal manifest v2, budget +≤ 4.900 px, mai due di fila, `null` senza file. Tavola: https://claude.ai/code/artifact/25405882-779a-43ce-a9a3-91c65c36b34e

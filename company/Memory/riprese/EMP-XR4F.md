@@ -2,7 +2,10 @@
 
 - **Codice di ripresa:** `EMP-XR4F`
 - **Aperto:** 2026-09-12
-- **Stato:** APERTO — 12/09 sera (CP-20260912-X3A4): QA fatta, 2 refusi corretti, og.jpg + Open Graph, gate `gate_solo_aggiunte.py`, ADR-030/§13.
+- **Stato (13/09, CP-20260913-EEV3):** APERTO — studio funneloperator.it ufficializzato (ADR-031 §14 §15); **Dossier 38 v2** (`…-v2.md`, sei atti, C5-C7, §I decisioni di Max D1-D5);
+  **Tavola v2** https://claude.ai/code/artifact/a7cf07ac-d263-421c-8824-0600b9641384; da fare in chat nuova: tavole D1-D5, artefatto piano → v2 (https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca è ancora v1);
+  Max mette le 2 texture in `public/texture/hero-onde.jpg` e `grana-fuoco.jpg`; poi «vai» → F1 (D2 funnel-hero + D1 texture + A01 firma + A02 rail) **in anteprima**.
+- **Stato (12/09):** APERTO — 12/09 sera (CP-20260912-X3A4): QA fatta, 2 refusi corretti, og.jpg + Open Graph, gate `gate_solo_aggiunte.py`, ADR-030/§13.
   **Build pronta e provata: il deploy prod lo lancia Max** (`cd agency-empire-landing && npx vercel --prod --yes`) — negato a me dal classificatore.
 - **Chi riprende:** basta dire `EMP-XR4F` in una chat nuova dentro Digital Empire.
 
@@ -46,6 +49,9 @@ Max. **Legge di Max (2026-09-12): niente di ciò che è online si modifica, si p
 5. Analytics (`@vercel/analytics`) della v2 NON è nel sito attuale (avrebbe toccato `package.json`): aggiungerlo solo se Max lo vuole.
 
 ## 4. IL PROSSIMO PASSO ESATTO
+**(13/09, CP-20260913-EEV3) 1.** Leggere `PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE-v2.md` §F, §G, §I e `reports/66-funneloperator-SINTESI-STRATEGIE.md`.
+**2.** Rigenerare la Tavola v2 con le tavole D1-D5 (`scratchpad/tavola38v2_build.py` è nel checkpoint come metodo: still al pixel, contain, schemi in HTML; texture approssimate finché Max non dà i file) e ripubblicare sullo stesso URL.
+**3.** Portare l'artefatto del piano alla v2. **4.** Al «vai»: F1 in anteprima (`npx vercel` senza --prod), screenshot a Max, poi suo `--prod`.
 **(13/09 notte, CP-20260913-T3U6) P4 «la vita» nel dossier 38: 13 aggiunte con immagini, Tavola https://claude.ai/code/artifact/25405882-779a-43ce-a9a3-91c65c36b34e.**
 **(12/09 notte, CP-HTCV) IL PIANO C'È: `PIANO-MAESTRO/38-PIANO-SITO-AGENCY-SOLO-AGGIUNTE.md` + artefatto https://claude.ai/code/artifact/01019906-18ed-4e27-8cd9-5cc84180f6ca.**
 Al «vai» di Max: F0 del V4 (§6 del dossier) — BRIEF aggiornato, baseline px/Lighthouse/CTA, domanda C3.3, poi F1 misura. Le fasi e i gate sono lì, non qui.
