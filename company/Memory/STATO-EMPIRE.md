@@ -3,6 +3,12 @@
 Tutto il Dossier 38 v2 è costruito e in anteprima (CP-PP3C). Gael/Neri: NON toccare `agency-empire-landing/` finché questo blocco non sparisce.
 Il `--prod` resta di Max.
 
+## 🟠 2026-09-13 sera (tardi) — SITO AGENCY: sfondo hero APPROVATO da Max; PIANO F4 (dossier 40, 22 task) scritto — aspetta «vai» — CP-20260913-FVJT
+
+**Gesto di Max:** «vai» sul dossier 40 (`PIANO-MAESTRO/40-PIANO-F4-ORDINI-MAX-HERO-COLORI-STORIA.md`) — o correggere le 2 righe INTERPRETO (A1, C1).
+**Fatto:** 18 allegati estratti dal transcript in `agency-empire-landing/brief/F4-allegati/`; texture grana-fuoco e cervello originali salvate; piano
+in 6 blocchi (hero pulito + 5 card, gradiente unico, storia preventivi, due tipi con texture, second brain blu + cervello) con prove e deroghe.
+
 ## 🟠 2026-09-13 sera (tardi) — SITO AGENCY: texture di Max a SCALA NATURALE, ripetuta con giunti sfumati — ANTEPRIMA, aspetta Max — CP-20260913-NKU3
 
 **Gesto solo di Max (ADR-026):** guardare https://agency-empire-landing-d3ubguykh-maximilians-projects-f0964962.vercel.app/ (aperta) → se va, `--prod`.
