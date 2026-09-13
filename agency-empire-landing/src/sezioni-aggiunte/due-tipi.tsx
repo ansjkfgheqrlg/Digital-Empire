@@ -40,6 +40,8 @@ export function DueTipi() {
   return (
     <div className="vivo">
       <section id="due-tipi" className="sv sv-carta sv-section" aria-labelledby="due-tipi-h2">
+        {/* F4 E2 — sfondo grana-fuoco di Max, layer assoluto z-index:0, mai la sezione resta "carta" */}
+        <div className="dt-sfondo" aria-hidden="true" />
         <div className="sv-container">
           <h2 id="due-tipi-h2" className="sv-h2 max-w-[16ch]">
             Due tipi di aziende.
@@ -54,6 +56,12 @@ export function DueTipi() {
               </article>
             ))}
           </div>
+
+          {/* F4 E1 — copy aggiuntivo, elegante, sotto le due card */}
+          <p className="dt-riga">
+            Il primo paga per sempre e non possiede nulla. Il secondo paga una volta e possiede tutto.
+            Da qui in poi parliamo solo con il secondo.
+          </p>
 
           <div className="sv-hair mt-14">
             <h3 className="sv-h3 pt-8">Le domande che non ci fate.</h3>

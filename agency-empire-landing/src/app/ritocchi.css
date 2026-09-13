@@ -192,9 +192,12 @@ main > section .oi-card svg { color: #fb4604 !important; }
 
 /* ----------------------------------------------------------------------------
    24 — SecondBrainInside «Cosa include il tuo Second Brain» (.sbi-card).
-   Rimedio: 3 card blu/viola/teal → ink piatte (ink-2 su sezione ink), bordo
-   hairline; icone e link in accento unico; testo bianco/argento.
-   ---------------------------------------------------------------------------- */
+   COMMENTATO F4 BLOCCO F2 (dossier 40, ordine di Max 13/09 sera): Max vuole le
+   3 card ESATTAMENTE come l'allegato 16 (blu-notte/viola/teal a gradiente), non
+   più appiattite. Il colore vero ora vive in f4-brain.css (.sv-h3 no, selettori
+   :nth-child su .sbi-card), importato dopo scala.css: vince lui. Regola tenuta
+   qui solo come nota storica, MAI riattivarla senza nuovo ordine di Max.
+   ----------------------------------------------------------------------------
 main > section .sbi-card {
   background: #0a0a0a !important;
   background-image: none !important;
@@ -216,6 +219,7 @@ main > section .sbi-card > div.mt-auto {
   color: #fb4604 !important;
   border-top-color: rgba(217, 212, 225, 0.16) !important;
 }
+---------------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------------
    25 — Results «Fatti, non slogan» (#risultati). Rimedio: il riquadro

@@ -10,6 +10,10 @@ export function FraseBarrata() {
         <div className="sv-container">
           <p className="fb-barrata">
             <s>Ti serve un altro tool.</s>
+            <span className="fb-uguale">=</span>
+            <span className="fb-ovvero">
+              <b>Ovvero:</b> <span className="sv-it">è un processo lungo e ripetitivo</span>
+            </span>
           </p>
           <h2 id="frase-barrata-h2" className="sv-h2 fb-vera">
             Ti serve un sistema che gira <span className="sv-it">senza di te.</span>

@@ -11,3 +11,144 @@
   background-size: 200px 200px;
 }
 .grad-max > * { position: relative; z-index: 1; }
+
+/* ============================================================================
+   B1 — titolo «Tre sistemi» (VslV2): da 4 righe strette a due righe larghe,
+   allineate a sinistra sulla colonna 960 (all. 05). Scoperto: .ra-testa/.ra-h2
+   sono comuni a 3 sezioni rifatte (rifatte-a.css) → scopo tutto sotto .ra-vsl
+   per non toccare ToolStackV2/ContentOutputV2. Testo invariato, solo <b>/<br>.
+   ============================================================================ */
+.vivo .ra-vsl .ra-testa { text-align: left; margin: 0 0 40px; max-width: 960px; }
+.vivo .ra-vsl .ra-h2 {
+  max-width: 960px;
+  font-weight: 400;
+  line-height: 1.05;
+  text-wrap: wrap;
+}
+.vivo .ra-vsl .ra-h2 b { font-weight: 800; }
+.vivo .ra-vsl .ra-h2 .ra-h2-grande { display: inline-block; margin-top: 6px; font-weight: 800; font-size: 1.24em; }
+@media (max-width: 480px) {
+  .vivo .ra-vsl .ra-h2 { font-size: clamp(26px, 8vw, 34px); }
+}
+
+/* ============================================================================
+   B3 — le 3 card grosse «Tre sistemi» (.ra-nodo, classe grad-max aggiunta in
+   vsl-v2.tsx): fondo --grad-max + grana, testo ink, cifra in #c93a12.
+   Contrasto: ink #141414 su argento (#d3cfda) ≥ 7:1; su arancio (#ea7430) ≈ 6,3:1.
+   ============================================================================ */
+.vivo .ra-vsl .ra-nodo.grad-max {
+  border: 1px solid rgba(0, 0, 0, .25);
+  box-shadow: 0 10px 26px -18px rgba(0, 0, 0, .45);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.vivo .ra-vsl .ra-nodo.grad-max::after { display: none; } /* la grana la porta già .grad-max::before */
+.vivo .ra-vsl .ra-nodo.grad-max .ra-nodo-blocco + .ra-nodo-blocco { border-top-color: rgba(0, 0, 0, .16); }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-nome { color: #141414; }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-live { color: rgba(20, 20, 20, .7); }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-live i { background: #141414; }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-cifra { color: #c93a12; }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-unita,
+.vivo .ra-vsl .ra-nodo.grad-max .ra-k,
+.vivo .ra-vsl .ra-nodo.grad-max .ra-bar-label,
+.vivo .ra-vsl .ra-nodo.grad-max .ra-chip { color: rgba(20, 20, 20, .7); }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-chip { border-color: rgba(0, 0, 0, .25); }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-bar { background: rgba(0, 0, 0, .18); }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-bar i { background: #141414; }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-out li { color: rgba(20, 20, 20, .88); }
+.vivo .ra-vsl .ra-nodo.grad-max .ra-out li::before { background: rgba(20, 20, 20, .55); }
+
+/* ============================================================================
+   B4 — i 3 blocchi piccoli 7gg/300+/0€ di science-stats.tsx (all. 08 → 06).
+   F3 li aveva appiattiti in ritocchi.css (main > section .card-silver-orange
+   e le due regole a specificità alta su .bg-ink). Qui NESSUNA riga di
+   science-stats.tsx viene toccata (gate ADR-030): stessi selettori strutturali
+   di ritocchi.css, ma con un class-equivalent in più → vincono per specificità
+   E per ordine (f4-colori.css è importato dopo ritocchi.css e scala.css).
+   ============================================================================ */
+main > section[class*="pb-24"][class*="pt-4"] .card-silver-orange {
+  position: relative;
+  isolation: isolate;
+  background: var(--grad-max) !important;
+  background-image: var(--grad-max) !important;
+  border: none !important;
+  border-radius: 22px !important;
+  box-shadow: 0 10px 26px -18px rgba(0, 0, 0, .4) !important;
+}
+main > section[class*="pb-24"][class*="pt-4"] .card-silver-orange::before {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none; z-index: 0; opacity: .28; mix-blend-mode: overlay; border-radius: inherit;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch' seed='4'/><feColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0.7 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+main > section[class*="pb-24"][class*="pt-4"] .card-silver-orange > * { position: relative; z-index: 1; }
+main > section[class*="pb-24"][class*="pt-4"] .card-silver-orange > div:first-child {
+  color: #141414 !important;
+  font-size: 40px !important;
+  font-weight: 800 !important;
+}
+main > section[class*="pb-24"][class*="pt-4"] .card-silver-orange.card-silver-orange.card-silver-orange > div:first-child > span {
+  color: #141414 !important;
+}
+main > section[class*="pb-24"][class*="pt-4"] .card-silver-orange h3 {
+  color: #141414 !important;
+  font-size: 12px !important;
+}
+main > section[class*="pb-24"][class*="pt-4"] .card-silver-orange p {
+  color: rgba(20, 20, 20, .78) !important;
+  font-size: 15px !important;
+}
+
+/* ============================================================================
+   B5 — grana locale su ScienceStats (03) e Audience (04): il fondo opaco delle
+   due sezioni copre la grana globale del body (.grain-fine, overlay su quasi-nero
+   ≈ invisibile). CSS-only, nessuna riga toccata in science-stats.tsx/audience.tsx.
+   ============================================================================ */
+main > section[class*="pb-24"][class*="pt-4"]:has(.card-silver-orange),
+main > section:has(h2[class*="text-[3rem]"]) {
+  position: relative;
+}
+main > section[class*="pb-24"][class*="pt-4"]:has(.card-silver-orange)::after,
+main > section:has(h2[class*="text-[3rem]"])::after {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none; z-index: 0; opacity: .18; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='7'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 220px 220px;
+}
+main > section[class*="pb-24"][class*="pt-4"]:has(.card-silver-orange) > *,
+main > section:has(h2[class*="text-[3rem]"]) > * {
+  position: relative; z-index: 1;
+}
+
+/* ============================================================================
+   C1 — frase barrata (all. 09): «= Ovvero: è un processo lungo e ripetitivo»
+   accanto alla riga barrata, stessa riga a desktop, a capo su mobile.
+   ============================================================================ */
+.vivo .fb-barrata { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 10px; row-gap: 4px; }
+.vivo .fb-uguale { font-weight: 800; color: var(--sv-orange); }
+.vivo .fb-ovvero { display: inline-flex; flex-wrap: wrap; align-items: baseline; column-gap: 6px; font-size: 19px; font-weight: 400; color: var(--sv-silver); }
+.vivo .fb-ovvero b { font-weight: 600; color: var(--sv-silver); }
+.vivo .fb-ovvero .sv-it { color: var(--sv-silver); font-size: 1em; }
+
+/* ============================================================================
+   C2 — freccia elegante di ContentDeep (Service #02, service-deep.tsx): SVG
+   hairline arancio, ferma, dalla colonna destra al blocco di testo; punta con
+   didascalia serif corsivo. Nessuna riga di service-deep.tsx modificata, solo
+   inserite di sana pianta (gate ADR-030): la posizione arriva da qui.
+   ============================================================================ */
+main > section.bg-grey .grid > div:last-child { position: relative; }
+.c2-freccia { position: absolute; left: 2px; right: 2px; top: -84px; z-index: 2; }
+.c2-freccia svg { overflow: visible; }
+.c2-freccia-desktop { display: block; width: 100%; height: 72px; }
+.c2-freccia-mobile { display: none; width: 22px; height: 44px; }
+.c2-freccia-testo {
+  margin: 8px 0 0; max-width: 34ch;
+  font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-style: italic; font-weight: 400;
+  font-size: 15px; line-height: 1.5; color: #6f6a62;
+}
+@media (max-width: 767px) {
+  .c2-freccia { position: static; margin: 0 0 18px; }
+  .c2-freccia-desktop { display: none; }
+  .c2-freccia-mobile { display: block; width: 22px; height: 44px; }
+  .c2-freccia-testo { max-width: none; margin-top: 6px; }
+}

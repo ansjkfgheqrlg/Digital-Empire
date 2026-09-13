@@ -56,13 +56,15 @@ export function VslV2() {
             </span>
             <p className="sv-eyebrow ra-eyebrow">Digital Empire · Come funziona il sistema</p>
             <h2 id="vsl-v2-h2" className="sv-h2 ra-h2">
-              Tre sistemi. Un&apos;unica operatività che gira da sola.
+              Tre <b>sistemi</b>. Un&apos;unica <b>operatività</b>
+              <br />
+              <span className="ra-h2-grande">che gira da sola.</span>
             </h2>
           </header>
 
           <ul className="ra-nodi" aria-label="I tre sistemi">
             {NODI.map((n) => (
-              <li key={n.id} className="ra-nodo">
+              <li key={n.id} className="ra-nodo grad-max">
                 <div className="ra-nodo-blocco">
                   <span className="ra-k">Input</span>
                   <div className="ra-chips">

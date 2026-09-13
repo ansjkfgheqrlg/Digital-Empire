@@ -1,1 +1,175 @@
-/* f4-hero.css — F4 (dossier 40, ordini di Max 13/09 sera). Importato DOPO scala.css: le regole F4 vincono su ritocchi/scala per ordine di Max. */
+/* f4-hero.css — F4 BLOCCO A (dossier 40, ordini di Max 13/09 sera). Importato DOPO scala.css: le regole
+   F4 vincono su ritocchi/scala per ordine di Max. Tutto scoped a `main > section:first-of-type` (l'hero,
+   stesso selettore già usato da aggiunte-hero.css/scala.css) per non toccare classi condivise (.bubble-orange,
+   href="#prenota") usate anche in altre sezioni. hero.tsx: 0 righe rimosse — tutto qui e in hero-card.tsx. */
+
+/* ============================================================================
+   A1 · pulizia — restano SOLO titolo, paragrafo, bottone, funnel (+ le card A5)
+   ============================================================================ */
+main > section:first-of-type .bubble-orange { display: none !important; }
+main > section:first-of-type .pre-headline { display: none !important; }
+main > section:first-of-type a[href="#prenota"] { display: none !important; }
+/* riga "SETUP IN 7 GIORNI · GARANZIA DI FUNZIONAMENTO · ZERO DIPENDENZE": ultimo dei 3 figli
+   del contenitore flex-col che avvolge CTA + link prezzi + questa riga */
+main > section:first-of-type .flex.flex-col.gap-5.items-center > div:last-child { display: none !important; }
+
+/* ============================================================================
+   A2 · titolo largo esattamente quanto il paragrafo (misurato: colonna ferma a 768px
+   per via di max-w-3xl dentro il contenitore 960px — stessa larghezza a 1920 e 1440).
+   Specificità maggiore di scala.css (che usa solo `h1 > span:nth-child(N)`) + import dopo: vince.
+   ============================================================================ */
+@media (min-width: 768px) {
+  main > section:first-of-type h1 > span:nth-child(1) {
+    font-size: 42px !important;
+    line-height: 1.15 !important;
+  }
+  main > section:first-of-type h1 > span:nth-child(2) {
+    font-size: 164px !important;
+    line-height: 0.9 !important;
+  }
+  main > section:first-of-type h1 > span:nth-child(3) {
+    font-size: 84px !important;
+    line-height: 1.05 !important;
+  }
+}
+/* mobile — mai fuori dal viewport (chiude anche il bug "operativit" tagliata) */
+@media (max-width: 767px) {
+  main > section:first-of-type h1 {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+  main > section:first-of-type h1 > span:nth-child(1) {
+    font-size: clamp(17px, 5.4vw, 22px) !important;
+  }
+  main > section:first-of-type h1 > span:nth-child(2) {
+    font-size: clamp(38px, 14vw, 64px) !important;
+    line-height: 0.95 !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word;
+  }
+  main > section:first-of-type h1 > span:nth-child(3) {
+    font-size: clamp(22px, 7.6vw, 34px) !important;
+    overflow-wrap: break-word !important;
+  }
+}
+
+/* ============================================================================
+   A3 · bottone piu' piccolo
+   ============================================================================ */
+main > section:first-of-type .btn-orange {
+  padding: 12px 26px !important;
+  font-size: 15px !important;
+  line-height: 1.3 !important;
+  border-radius: 10px;
+}
+
+/* ============================================================================
+   A4 · funnel piu' in alto (il funnel deve restare dentro il primo viewport 1920x1080)
+   ============================================================================ */
+main > section:first-of-type .funnel-hero {
+  margin-top: 12px !important;
+}
+@media (min-width: 768px) {
+  main > section:first-of-type div.max-w-5xl.mx-auto.px-6.py-24 {
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+/* ============================================================================
+   A6 · nastro RailFatti molto piu' sottile (~44px)
+   ============================================================================ */
+.vivo .rail-fatti {
+  padding: 0 !important;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+.vivo .rf-track { height: 100%; display: flex; align-items: center; }
+.vivo .rf-rail { height: 100%; align-items: center; }
+.vivo .rf-fatto { align-items: baseline; gap: 8px !important; }
+.vivo .rf-fatto b { font-size: 20px !important; }
+.vivo .rf-fatto span { font-size: 12px !important; }
+.vivo .rf-fatto svg { width: 14px; height: 14px; }
+
+/* ============================================================================
+   A5 · le 5 card fluttuanti (hero-card.tsx). Contenitore assoluto a tutta section,
+   sotto il testo ma sopra la texture (ordine nel DOM: dopo <HeroTexture />, prima di
+   marquee/contenuto — entrambi position:relative con z-index:auto vengono dopo in
+   tree order nel gruppo di stacking "z 0/auto", quindi il testo resta sopra). Colonna
+   centrale ferma a 960px (scala.css) => bordo colonna sempre a 50% ± 480px: le card
+   stanno fuori da quel bordo con un margine, quindi non intersecano MAI titolo/
+   paragrafo/bottone/funnel, qualunque sia il top verticale scelto.
+   ============================================================================ */
+main > section:first-of-type .f4-cards {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+}
+.f4-card {
+  display: none;
+  position: absolute;
+  width: 210px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 16px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(120% 100% at 0% 0%, rgba(255, 255, 255, 0.05) 0%, transparent 55%),
+    linear-gradient(165deg, #1c1720 0%, #100d13 100%);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+.f4-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='3' stitchTiles='stitch' seed='11'/><feColorMatrix values='0 0 0 0 0.85 0 0 0 0 0.82 0 0 0 0 0.80 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 160px 160px;
+  pointer-events: none;
+}
+.f4-card-ico {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+.f4-card-ico svg { width: 40px; height: 40px; }
+.f4-card-t {
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+.f4-card-s {
+  position: relative;
+  z-index: 1;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #a39dae;
+}
+
+/* posizione + rotazione, per card — colonna centrale ferma a 960px (± 480px da metro 50%) */
+.f4-card--l1 { left: calc(50% - 716px); top: 128px; transform: rotate(-3deg); }
+.f4-card--l2 { left: calc(50% - 716px); top: 322px; transform: rotate(2deg); }
+.f4-card--l3 { left: calc(50% - 716px); top: 516px; transform: rotate(-2deg); }
+.f4-card--r1 { right: calc(50% - 716px); top: 176px; transform: rotate(3deg); }
+.f4-card--r2 { right: calc(50% - 716px); top: 400px; transform: rotate(-3deg); }
+
+/* Desktop >= 1280: 2 sx (l1, l3) + 2 dx. >= 1600: entra anche l2 (3 sx + 2 dx). < 1280: nessuna card (niente spazio libero). */
+@media (min-width: 1280px) {
+  .f4-card--l1, .f4-card--l3, .f4-card--r1, .f4-card--r2 { display: flex; }
+}
+@media (min-width: 1600px) {
+  .f4-card--l2 { display: flex; }
+}
