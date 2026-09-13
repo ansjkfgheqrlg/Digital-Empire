@@ -143,3 +143,6 @@
   .vivo .ra-stack { grid-template-columns: 1fr; }
   .vivo .ra-stack-voce { padding: 14px 0 16px; }
 }
+
+/* la riga di stato sta SOPRA i tre nodi, come nel testo di giugno (ordine delle parole = gate) */
+.vivo .ra-stato--sopra { margin: 0 0 28px; }

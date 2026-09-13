@@ -90,6 +90,40 @@ def parte_a(live_righe, build_righe, mostra: bool, consenti: str | None = None) 
     return (not errori), errori
 
 
+def parole(righe: list[str]) -> list[str]:
+    """Il testo come flusso di PAROLE (per --parole): whitespace normalizzato, minuscole, senza i token di sola
+    punteggiazione (virgolettoni decorativi, frecce, «·»). Serve quando una sezione e' stata RIFATTA su ordine del
+    committente: le parole sono le stesse, nello stesso ordine, ma i nodi/righe sono spezzati diversamente."""
+    out = []
+    for r in righe:
+        for t in r.split():
+            t = t.strip().lower()
+            if re.search(r"[0-9a-zà-ÿ]", t):
+                out.append(t)
+    return out
+
+
+def parte_a_parole(live_righe, build_righe, consenti=None) -> tuple[bool, list[str]]:
+    """Ogni parola del live compare nella build, nello stesso ordine (solo `equal`/`insert` sul flusso di parole)."""
+    a, b = parole(live_righe), parole(build_righe)
+    sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
+    errori = []
+    for op, i1, i2, j1, j2 in sm.get_opcodes():
+        if op in ("equal", "insert"):
+            continue
+        if op == "delete" and all(o in ("equal", "insert") for o, *_ in difflib.SequenceMatcher(a=a[i1:i2], b=b, autojunk=False).get_opcodes()):
+            # ogni parola del blocco tolto e' presente, nello stesso ordine, altrove nella build: era un DOPPIONE
+            # (es. la stessa card stampata due volte per desktop e mobile). Nessuna parola del committente e' sparita.
+            print(f"  DOPPIONE tolto (presente altrove nella build): «{' '.join(a[i1:i2])[:70]}» ({i2 - i1} parole)")
+            continue
+        if consenti and all(re.search(consenti, w) for w in a[i1:i2]):
+            print(f"  DEROGA (--consenti) parole «{' '.join(a[i1:i2])[:60]}»" + (f" → «{' '.join(b[j1:j2])[:60]}»" if op == "replace" else " tolte"))
+            continue
+        errori.append(f"  {op.upper():7} parole live[{i1}:{i2}] → «{' '.join(a[i1:i2])[:120]}»" + (f" · build ora: «{' '.join(b[j1:j2])[:80]}»" if op == "replace" else ""))
+    print("\n— Confronto per PAROLE (--parole, sezioni rifatte su ordine del committente): live %d parole, build %d" % (len(a), len(b)))
+    return (not errori), errori
+
+
 ARTEFATTI = re.compile(r"(\.tsbuildinfo$|(^|/)\.next/|(^|/)out/|(^|/)node_modules/)")
 
 
@@ -130,6 +164,7 @@ def main() -> int:
     ap.add_argument("--cartella", default=".", help="cartella del sito nel repo (parte B)")
     ap.add_argument("--ignora", help="regex di stringhe che cambiano da sole (deroga dichiarata)")
     ap.add_argument("--consenti", help="regex: righe del live (nostre) che possono cambiare — deroga dichiarata")
+    ap.add_argument("--parole", action="store_true", help="parte A confrontata come flusso di PAROLE (stesse parole, stesso ordine) invece che per righe: per le sezioni RIFATTE su ordine del committente — va dichiarato nel checkpoint")
     ap.add_argument("--deroga-b", help="regex di path che possono perdere righe (parte B) perche' il committente ha ORDINATO la riscrittura — va scritta nel checkpoint")
     ap.add_argument("--mostra", action="store_true", help="stampa i blocchi inseriti")
     a = ap.parse_args()
@@ -146,7 +181,7 @@ def main() -> int:
         return 2
 
     print(f"gate_solo_aggiunte — live {live_url} ({len(live_righe)} righe di testo) vs build {build_src} ({len(build_righe)})")
-    ok_a, err_a = parte_a(live_righe, build_righe, a.mostra, a.consenti)
+    ok_a, err_a = parte_a_parole(live_righe, build_righe, a.consenti) if a.parole else parte_a(live_righe, build_righe, a.mostra, a.consenti)
     print(f"\nA. TESTO : {'PASS' if ok_a else 'FAIL'} — il testo del live {'è' if ok_a else 'NON è'} contenuto intatto nella build")
     for e in err_a[:40]:
         print(e)

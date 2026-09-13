@@ -29,7 +29,7 @@ export function FinalOfferV2() {
           <header className="rb-fo-testa">
             <span className="sv-eyebrow">Digital Empire · Implementazione AI</span>
             <p className="sv-lead rb-fo-lead">
-              Installa il tuo <strong>sistema AI proprietario</strong> e fai girare l&apos;operatività
+              Installa il tuo <strong>sistema AI proprietario</strong>{" "}e fai girare l&apos;operatività
               da sola — zero canoni mensili, codice tuo per sempre.
             </p>
             <p className="sv-mono rb-fo-stato">

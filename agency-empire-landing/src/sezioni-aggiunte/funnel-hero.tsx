@@ -50,8 +50,8 @@ const LINEA = 48;
 function Arco({ i, sotto = false }: { i: number; sotto?: boolean }) {
   const x0 = px(i) + 8, x1 = px(i + 1) - 8;
   const d = sotto
-    ? `M${x0},${LINEA + 4} C${x0 + 70},${LINEA + 23} ${x1 - 70},${LINEA + 23} ${x1},${LINEA + 4}`
-    : `M${x0},${LINEA - 3} C${x0 + 70},${LINEA - 31} ${x1 - 70},${LINEA - 31} ${x1},${LINEA - 3}`;
+    ? `M${x0},${LINEA + 4} C${x0 + 60},${LINEA + 30} ${x1 - 60},${LINEA + 30} ${x1},${LINEA + 4}`
+    : `M${x0},${LINEA - 3} C${x0 + 60},${LINEA - 40} ${x1 - 60},${LINEA - 40} ${x1},${LINEA - 3}`;
   return (
     <>
       <path className="fh-fr-ghost" d={d} />
