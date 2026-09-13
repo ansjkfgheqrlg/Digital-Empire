@@ -1,7 +1,17 @@
-## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing (F2 in anteprima, aspetto Max) — Emperator con Max
+## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing (F3 in anteprima, aspetto Max) — Emperator con Max
 
 Tutto il Dossier 38 v2 è costruito e in anteprima (CP-PP3C). Gael/Neri: NON toccare `agency-empire-landing/` finché questo blocco non sparisce.
 Il `--prod` resta di Max.
+
+## 🟠 2026-09-13 sera — SITO AGENCY F3: de-ingrandito, 7 sezioni rifatte, grana ferma, frecce nuove — ANTEPRIMA, aspetta Max — CP-20260913-76GG
+
+**Gesti solo di Max (ADR-026, in cima; non bloccano):** 1) guardare https://agency-empire-landing-qr4f689y0-maximilians-projects-f0964962.vercel.app/
+(aperta nel suo browser); 2) se va: `cd agency-empire-landing && npx vercel --prod --yes`; 3) la SUA texture in `agency-empire-landing/public/texture/hero-onde.jpg`
+(sul disco non c'è: cercato ovunque); 4) decidere le 10 ridondanze proposte in `PIANO-MAESTRO/39B-VERDETTI-SEZIONI-NOSTRE.md` §4 (−20.000 px se le accetta tutte).
+**Fatto:** 2 doom bot → dossier 39A (atlante competitor, 49 elementi) e 39B (55 verdetti); `scala.css` (titoli 48→36-40, hero 148→96, padding 96→72, colonna ≤1080);
+grana da fissa ad assoluta (via il «blocco che scorre»); 7 sezioni di giugno rifatte con lo stesso testo (VSL, ContentOutput, ToolStack, Systems, Objections,
+Competitors, FinalOffer); 18 ritocchi CSS; funnel a tappe con frecce ferme; 2 sezioni nuove; StickyGuard. Pagina 50.277 → 43.037 px. Gate PASS con deroghe
+dichiarate (ADR-030 derogato su ordine testuale: `--parole`, `--deroga-b page.tsx`). Commit F3 pushato.
 
 ## 🟠 2026-09-13 pomeriggio — SITO AGENCY: TUTTE LE SEZIONI in ANTEPRIMA (F1+F2) — aspetta lo sguardo di Max — CP-20260913-PP3C
 

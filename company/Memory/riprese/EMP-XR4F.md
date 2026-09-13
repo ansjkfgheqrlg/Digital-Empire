@@ -2,6 +2,9 @@
 
 - **Codice di ripresa:** `EMP-XR4F`
 - **Aperto:** 2026-09-12
+- **Stato (13/09 sera, CP-20260913-76GG):** APERTO — **F3 in ANTEPRIMA** https://agency-empire-landing-qr4f689y0-maximilians-projects-f0964962.vercel.app/
+  (de-ingrandimento `scala.css`, grana assoluta, 7 rifacimenti `src/sezioni-rifatte/`, 18 ritocchi `ritocchi.css`, funnel a tappe, frase-barrata + griglia-01-04, StickyGuard).
+  Dossier `39A`/`39B`. Gate: `--parole --consenti "^(65includono|[123]|[cpb])$" --deroga-b "src/app/page\.tsx$"`. Prossimo: sguardo di Max → suo `--prod`; texture vera; ridondanze 39B §4.
 - **Stato (13/09 pomeriggio, CP-20260913-PP3C):** APERTO — **TUTTO il Dossier 38 v2 è in ANTEPRIMA** https://agency-empire-landing-1i1sc5nzy-maximilians-projects-f0964962.vercel.app/
   (16 sezioni nuove + 2 estese + 3 scheletri null; 3 scagnozzi con brief `cantieri/agency-empire-landing-vivo/BRIEF-F2-TUTTE-LE-AGGIUNTE.md`), gate PASS, commit `660ff21e`.
   Prossimo: sguardo di Max → correzioni → suo `--prod` → F6 accensioni (ritratti, foto, video, legale, texture vere, Calendly) → B-089 still generati → MISURA-DOPO/LEZIONE/pattern.

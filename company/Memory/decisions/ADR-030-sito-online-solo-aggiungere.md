@@ -67,3 +67,9 @@ rispettare da una macchina invece che dalla buona volontà (§9: il gate decide,
   aggiunte (scopate) e sui siti nuovi. Precisazione, non conflitto.
 - ADR-028 (niente blocca tutto): il divieto di toccare l'esistente **non ferma** le aggiunte né il lavoro intorno; le
   tre decisioni di Max sul sito agency (noindex · CTA vecchie · footer legale) si segnalano e si lavora intorno.
+
+## Nota 2026-09-13 sera — prima deroga, su ordine testuale
+Max: «modifica le sezioni brutte, non quelle belle» (13/09, dopo l'anteprima F2). Come previsto da §13 («una riscrittura si fa solo se il committente
+la ordina con quelle parole, e comunque prima in anteprima»): 7 sezioni di giugno rifatte come componenti nuovi **con lo stesso testo parola per parola**,
+scambiate in `page.tsx`, solo in anteprima. Il gate è stato esteso per restare meccanico anche in deroga: `--parole` (parte A come flusso di parole),
+tolleranza dei doppioni, `--deroga-b <file>` (parte B) — ogni deroga stampata e scritta nel CP-20260913-76GG.
