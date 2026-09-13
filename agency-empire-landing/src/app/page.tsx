@@ -34,6 +34,18 @@ import { CosaOttieni } from "@/sezioni-aggiunte/cosa-ottieni";
 // Sezioni AGGIUNTE il 2026-09-13 (Dossier 38 v2, Atto I): la firma (null senza ritratto) e il rail dei fatti
 import { Firma } from "@/sezioni-aggiunte/firma";
 import { RailFatti } from "@/sezioni-aggiunte/rail-fatti";
+// 13/09 sera — ordine di Max «modifica le sezioni brutte»: 7 sezioni di giugno RIFATTE con lo stesso testo (dossier 39B §2),
+// 2 sezioni nuove dal repertorio del competitor (39A E21, E06), guardia della CTA fissa. Deroga ADR-030 dichiarata in CP.
+import { VslV2 } from "@/sezioni-rifatte/vsl-v2";
+import { ContentOutputV2 } from "@/sezioni-rifatte/content-output-v2";
+import { ToolStackV2 } from "@/sezioni-rifatte/tool-stack-v2";
+import { SystemsShowcaseV2 } from "@/sezioni-rifatte/systems-showcase-v2";
+import { ObjectionsV2 } from "@/sezioni-rifatte/objections-v2";
+import { CompetitorsV2 } from "@/sezioni-rifatte/competitors-v2";
+import { FinalOfferV2 } from "@/sezioni-rifatte/final-offer-v2";
+import { FraseBarrata } from "@/sezioni-aggiunte/frase-barrata";
+import { Griglia0104 } from "@/sezioni-aggiunte/griglia-01-04";
+import { StickyGuard } from "@/sezioni-aggiunte/sticky-guard";
 // Sezioni AGGIUNTE il 2026-09-13 pomeriggio (Dossier 38 v2 §F + §I, ordine di Max «tutte»): solo inserimenti
 import { CompetitorVivo } from "@/sezioni-aggiunte/competitor-vivo";
 import { PrimaDopo } from "@/sezioni-aggiunte/prima-dopo";
@@ -60,40 +72,43 @@ export default function Home() {
     <main className="relative">
       <Header />
       <StickyCTA href="#prenota" label="Prenota una Chiamata" />
+      <StickyGuard />
       
       <Hero />
       <Firma />
       <RailFatti />
-      <VSL />
+      <VslV2 />
       <ScienceStats />
       <Audience />
       <Problems />
+      <FraseBarrata />
       <Specchio />
-      <Competitors />
+      <CompetitorsV2 />
       <CompetitorVivo />
       <ListenUp />
       <PrimaDopo />
       <div className="divider-silver-orange" aria-hidden="true" />
       <Hierarchy />
       <Pillars />
+      <Griglia0104 />
       <FlowFramework />
       <Scala />
       <div className="divider-silver-orange" aria-hidden="true" />
-      <SystemsShowcase />
+      <SystemsShowcaseV2 />
       <Cartella />
       <OutreachDeep />
       <OutreachInside />
       <GuardaloGirare />
       <ContentDeep />
-      <ContentOutput />
+      <ContentOutputV2 />
       <DueTipi />
       <BrainDeep />
       <SecondBrainInside />
       <Results />
       <ProveVere />
-      <RailSistemi />
+      {/* <RailSistemi /> smontato il 13/09 sera (39B r.27): screenshot del sito stesso non sono una prova; torna quando ci sono 5 cose di clienti */}
       <NoFluff />
-      <ToolStack />
+      <ToolStackV2 />
       <div className="divider-silver-orange" aria-hidden="true" />
       <PowerDeck />
       <FasciaManifesto />
@@ -110,13 +125,13 @@ export default function Home() {
       <QuantoCosta />
       <MyPromise />
       <SeNonFunziona />
-      <Objections />
+      <ObjectionsV2 />
       <FAQ />
       <FaqContratto />
       <div className="divider-silver-orange" aria-hidden="true" />
       <CosaOttieni />
       <FinalCTA />
-      <FinalOffer />
+      <FinalOfferV2 />
       <AboutStory />
 
       <CodaLegale />

@@ -6,6 +6,8 @@ import "./aggiunte-hero.css"; // D1/D2/A02 (ordini di Max 13/09): classi nuove +
 import "./aggiunte-a.css"; // Atto II/III (D3, D4, D5, A05, A07, A08)
 import "./aggiunte-b.css"; // Atto III/IV (A09, A10+A20, A11, A12)
 import "./aggiunte-c.css"; // Atto V/VI (A14-A22)
+import "./rifatte-a.css"; // sezioni di giugno RIFATTE (stesso testo): VSL, ContentOutput, ToolStack — ordine di Max 13/09
+import "./rifatte-b.css"; // sezioni di giugno RIFATTE (stesso testo): SystemsShowcase, Objections, Competitors, FinalOffer
 import "./ritocchi.css"; // ritocchi in solo CSS alle sezioni di giugno (ordine di Max 13/09) - dossier 39B par.2
 import "./scala.css"; // de-ingrandimento (ordine di Max 13/09) - dossier 39B par.1.3; DEVE restare ultimo
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
