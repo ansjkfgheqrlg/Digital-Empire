@@ -496,3 +496,12 @@ def test_video_singolo_sul_testo_reale_del_14_settembre():
 
 def test_etichetta_ripetuta_non_e_il_valore():
     assert ysr._estrai_dopo_etichetta("Views\nViews\n432", "Views") == "432"
+
+
+def test_popup_verify_its_you_e_riconosciuto_per_nome():
+    qui = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(qui, "..", "memory", "_report_analytics_video_reach_RIZuutLaEV0.txt"),
+              encoding="utf-8") as f:
+        testo = f.read()
+    assert ysr.popup_verifica_identita(testo) is True
+    assert ysr.popup_verifica_identita("Views\nViews\n432") is False

@@ -622,6 +622,19 @@ def _aspetta_analytics(page, massimo_ms=ATTESA_ANALYTICS_MAX_MS):
     return False
 
 
+MSG_VERIFICA_IDENTITA = ("Google mostra il popup 'Verify it's you' su questa pagina: la lettura si "
+                         "ferma li'. Gesto solo di Max: python apri_studio_visibile.py (poi rilancia).")
+
+
+def popup_verifica_identita(testo):
+    """True se nel testo della pagina c'e' il popup Google «Verify it's you» (visto dal vivo il
+    2026-09-14 sopra il wizard di caricamento e sulla tab Reach di un video). E' un blocco che la
+    macchina non deve provare a superare: si dichiara per nome, cosi' chi legge il report sa che
+    il dato manca per QUESTO motivo, non perche' l'etichetta e' cambiata."""
+    t = (testo or "")
+    return ("Verify it's you" in t) or ("Verifica che sei tu" in t)
+
+
 def _naviga_con_ipotesi(page, url_ipotesi, url_ripiego, attesa_ms=4000):
     """Prova l'URL ipotizzato (tab-overview/period-default); se dopo la navigazione l'URL
     effettivo non contiene '/analytics', ripiega sul path semplice — quello raggiunto
@@ -644,6 +657,9 @@ def leggi_overview_canale(page, channel_id):
     _naviga_con_ipotesi(page, url_ipotesi, url_ripiego)
     testo = _testo_pagina(page)
     dati = estrai_tiles_overview_canale(testo)
+    if popup_verifica_identita(testo):
+        dati["blocco_google"] = MSG_VERIFICA_IDENTITA
+        print("[!] Overview canale: %s" % MSG_VERIFICA_IDENTITA)
     dati["top_content"] = estrai_top_content_canale(testo)
     dati["ultimo_video_realtime"] = estrai_ultimo_video_realtime(testo)
     dati["url_letto"] = page.url
@@ -658,6 +674,9 @@ def leggi_metriche_video(page, video_id):
     testo = _testo_pagina(page)
     dati = estrai_metriche_video_singolo(testo, video_id)
     dati["url_letto"] = page.url
+    if popup_verifica_identita(testo):
+        dati["blocco_google"] = MSG_VERIFICA_IDENTITA
+        print("[!] %s: %s" % (video_id, MSG_VERIFICA_IDENTITA))
     if dati["ctr_miniatura_percento"]["valore"] is None:
         # Il CTR vive nella tab Reach (verificato 14/9: in Overview non c'e').
         url_reach = "https://studio.youtube.com/video/%s/analytics/tab-reach/period-default" % video_id
@@ -666,6 +685,13 @@ def leggi_metriche_video(page, video_id):
             page.wait_for_timeout(2500)
             _aspetta_analytics(page)
             testo_reach = _testo_pagina(page)
+            if popup_verifica_identita(testo_reach):
+                dati["blocco_google"] = MSG_VERIFICA_IDENTITA
+                dati["ctr_miniatura_percento"] = campo(None, "tab Reach coperta dal popup Google "
+                                                       "'Verify it's you' (14/9): " + MSG_VERIFICA_IDENTITA)
+                print("[!] %s (tab Reach): %s" % (video_id, MSG_VERIFICA_IDENTITA))
+                dati["url_reach_letto"] = page.url
+                return dati
             ctr_raw = None
             for et in ("Impressions click-through rate", "Thumbnail click-through rate"):
                 ctr_raw = _estrai_dopo_etichetta(testo_reach, et)
