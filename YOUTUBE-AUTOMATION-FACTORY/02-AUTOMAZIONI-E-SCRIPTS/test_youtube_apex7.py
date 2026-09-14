@@ -416,5 +416,52 @@ class TestPianoEditoriale(unittest.TestCase):
                       "fonti_extra e' solo nell'intestazione: nessuna riga la popola mai")
 
 
+class TestFase5VideoPronto(unittest.TestCase):
+    """Bug del primo caricamento vero (2026-09-14): con --video-folder e --phase 5 la fase 5
+    pretendeva lo script della Fase 3 per generare metadati che erano gia' nella cartella."""
+
+    def _orchestratore(self, cartella):
+        from apex7_orchestrator import Apex7Orchestrator
+        o = Apex7Orchestrator(run_id="test-fase5-pronto", shared_domain="test-fase5-pronto")
+        o.video_folder = cartella
+        o.upload_reale = False  # qui si prova solo il ramo metadati, non il browser
+        o.working_memory = {}
+        return o
+
+    def test_metadata_pronto_viene_usato_senza_script(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            meta = {"title": "Titolo di prova", "description": "Descrizione lunga di prova " * 10,
+                    "tags": ["a", "b"], "keyword": "prova"}
+            with open(os.path.join(d, "metadata.json"), "w", encoding="utf-8") as f:
+                json.dump(meta, f)
+            o = self._orchestratore(d)
+            self.assertEqual(o._metadata_pronto_da_cartella(), os.path.join(d, "metadata.json"))
+            # nessuno script_path in working_memory: prima qui cadeva su 'nessuno script reale'
+            import apex7_orchestrator as mod
+            originale = mod._esegui_regolatori
+            mod._esegui_regolatori = lambda *a, **k: True
+            try:
+                self.assertTrue(o.run_phase_5(interactive=False))
+            finally:
+                mod._esegui_regolatori = originale
+            self.assertEqual(o.working_memory.get("metadati_path"), os.path.join(d, "metadata.json"))
+
+    def test_senza_metadata_nella_cartella_si_torna_al_ramo_vecchio(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            o = self._orchestratore(d)
+            self.assertIsNone(o._metadata_pronto_da_cartella())
+            # ramo vecchio: senza script della fase 3 deve fallire onestamente, non caricare
+            self.assertFalse(o.run_phase_5(interactive=False))
+
+    def test_metadata_incompleto_non_conta_come_pronto(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "metadata.json"), "w", encoding="utf-8") as f:
+                json.dump({"title": "solo titolo"}, f)
+            self.assertIsNone(self._orchestratore(d)._metadata_pronto_da_cartella())
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,65 +1,82 @@
 [
-  {
-    "source_video_id": "mkaNzHTBw1M",
-    "titolo_nostro": "Dopo i 70 anni, camminare non basta più: le 2 cose che contano davvero",
-    "file": "dopo-70-anni-v11-MOVIMENTO.mp4",
-    "prodotto_il": "2026-08-03T11:15:00"
-  },
-  {
-    "source_video_id": "eax7OPi1q0M",
-    "titolo_nostro": "Familiari tossici: i 3 segnali che Dio ti sta già allontanando da loro",
-    "file": "familiari-tossici-3-segnali.mp4",
-    "prodotto_il": "2026-08-04T10:03:24",
-    "qc": "fallito",
-    "qc_motivo": "durata 605s < 720s richiesti"
-  },
-  {
-    "source_video_id": "q8p6uwsMn2U",
-    "titolo_nostro": "5 SEGNALI che una Donna Vuole che TU Faccia la Prima Mossa (quasi tutti li ignorano)",
-    "file": "5-segnali-prima-mossa-v2.mp4",
-    "prodotto_il": "2026-08-17T13:31:11",
-    "qc": "superato"
-  },
-  {
-    "source_video_id": "8_RZCbkuIQk",
-    "titolo_nostro": "7 Tocchi Che Fanno Innamorare Una Donna Di Te (Funzionano Davvero)",
-    "file": "7-tocchi-che-fanno-innamorare-una-donna-di-te-funzionano-dav.mp4",
-    "prodotto_il": "2026-08-29T14:39:56"
-  },
-  {
-    "source_video_id": "CxdlEsEnZ9g",
-    "titolo_nostro": "7 SEGNALI che una DONNA si sta innamorando (anche se non lo dice)",
-    "file": "7-segnali-che-una-donna-si-sta-innamorando-anche-se-non-lo-d.mp4",
-    "prodotto_il": "2026-09-03T12:46:03"
-  },
-  {
-    "source_video_id": "chVKOBlEpDI",
-    "titolo_nostro": "Pensi che TU non le Piaci? Guarda Questo PRIMA di Rinunciare",
-    "file": "pensi-che-tu-non-le-piaci-guarda-questo-prima-di-rinunciare.mp4",
-    "prodotto_il": "2026-09-04T12:18:26",
-    "youtube_id": "RUg6TgSd79s",
-    "youtube_url": "https://www.youtube.com/watch?v=RUg6TgSd79s",
-    "visibilita": "privato",
-    "pubblicita": "attive",
-    "cartella_consegna": "video-06"
-  },
-  {
-    "source_video_id": "qHB80wbamBI",
-    "titolo_nostro": "4 Segnali Che Lei Ti Desidera In Segreto (E Che Quasi Nessun Uomo Nota)",
-    "file": "4-segnali-che-lei-ti-desidera-in-segreto-e-che-quasi-nessun.mp4",
-    "prodotto_il": "2026-09-04T14:37:19",
-    "youtube_id": "QwtZ2e2MY1c",
-    "youtube_url": "https://www.youtube.com/watch?v=QwtZ2e2MY1c",
-    "visibilita": "privato",
-    "pubblicita": "attive",
-    "cartella_consegna": "video-07"
-  },
-  {
-    "source_video_id": "XABjAjqfUxw",
-    "titolo_nostro": "Il Trucco Psicologico Che Rende Un Uomo Irresistibile Fin Dal Primo Sguardo",
-    "file": "il-trucco-psicologico-che-rende-un-uomo-irresistibile-fin-da.mp4",
-    "prodotto_il": "2026-09-04T15:02:00",
-    "cartella_consegna": "video-08",
-    "nota": "Generazione Fliki riuscita ma polling caduto per rete (3 timeout su api.fliki.ai): job riagganciato con fliki_poll_only.py, nessun credito speso due volte. In attesa della copertina di Max."
-  }
+ {
+  "source_video_id": "mkaNzHTBw1M",
+  "titolo_nostro": "Dopo i 70 anni, camminare non basta più: le 2 cose che contano davvero",
+  "file": "dopo-70-anni-v11-MOVIMENTO.mp4",
+  "prodotto_il": "2026-08-03T11:15:00"
+ },
+ {
+  "source_video_id": "eax7OPi1q0M",
+  "titolo_nostro": "Familiari tossici: i 3 segnali che Dio ti sta già allontanando da loro",
+  "file": "familiari-tossici-3-segnali.mp4",
+  "prodotto_il": "2026-08-04T10:03:24",
+  "qc": "fallito",
+  "qc_motivo": "durata 605s < 720s richiesti"
+ },
+ {
+  "source_video_id": "q8p6uwsMn2U",
+  "titolo_nostro": "5 SEGNALI che una Donna Vuole che TU Faccia la Prima Mossa (quasi tutti li ignorano)",
+  "file": "5-segnali-prima-mossa-v2.mp4",
+  "prodotto_il": "2026-08-17T13:31:11",
+  "qc": "superato",
+  "youtube_id": "2t4BZR3KAiU",
+  "youtube_url": "https://www.youtube.com/watch?v=2t4BZR3KAiU",
+  "visibilita": "pubblico",
+  "cartella_consegna": "video-01",
+  "verificato_il": "2026-09-14 (oEmbed)"
+ },
+ {
+  "source_video_id": "8_RZCbkuIQk",
+  "titolo_nostro": "7 Tocchi Che Fanno Innamorare Una Donna Di Te (Funzionano Davvero)",
+  "file": "7-tocchi-che-fanno-innamorare-una-donna-di-te-funzionano-dav.mp4",
+  "prodotto_il": "2026-08-29T14:39:56",
+  "youtube_id": "RIZuutLaEV0",
+  "youtube_url": "https://www.youtube.com/watch?v=RIZuutLaEV0",
+  "visibilita": "pubblico",
+  "cartella_consegna": "video-04",
+  "verificato_il": "2026-09-14 (oEmbed)"
+ },
+ {
+  "source_video_id": "CxdlEsEnZ9g",
+  "titolo_nostro": "7 SEGNALI che una DONNA si sta innamorando (anche se non lo dice)",
+  "file": "7-segnali-che-una-donna-si-sta-innamorando-anche-se-non-lo-d.mp4",
+  "prodotto_il": "2026-09-03T12:46:03",
+  "youtube_id": "6hrhlS9jC4g",
+  "youtube_url": "https://www.youtube.com/watch?v=6hrhlS9jC4g",
+  "visibilita": "pubblico",
+  "cartella_consegna": "video-05",
+  "verificato_il": "2026-09-14 (oEmbed)"
+ },
+ {
+  "source_video_id": "chVKOBlEpDI",
+  "titolo_nostro": "Pensi che TU non le Piaci? Guarda Questo PRIMA di Rinunciare",
+  "file": "pensi-che-tu-non-le-piaci-guarda-questo-prima-di-rinunciare.mp4",
+  "prodotto_il": "2026-09-04T12:18:26",
+  "youtube_id": "RUg6TgSd79s",
+  "youtube_url": "https://www.youtube.com/watch?v=RUg6TgSd79s",
+  "visibilita": "bozza",
+  "pubblicita": "attive",
+  "cartella_consegna": "video-06",
+  "nota_bozza": "RUg6TgSd79s e' una bozza mai completata (letto l'11/9): da ricaricare pulito e cancellare la bozza."
+ },
+ {
+  "source_video_id": "qHB80wbamBI",
+  "titolo_nostro": "4 Segnali Che Lei Ti Desidera In Segreto (E Che Quasi Nessun Uomo Nota)",
+  "file": "4-segnali-che-lei-ti-desidera-in-segreto-e-che-quasi-nessun.mp4",
+  "prodotto_il": "2026-09-04T14:37:19",
+  "youtube_id": "QwtZ2e2MY1c",
+  "youtube_url": "https://www.youtube.com/watch?v=QwtZ2e2MY1c",
+  "visibilita": "pubblico",
+  "pubblicita": "attive",
+  "cartella_consegna": "video-07",
+  "verificato_il": "2026-09-14 (oEmbed)"
+ },
+ {
+  "source_video_id": "XABjAjqfUxw",
+  "titolo_nostro": "Il Trucco Psicologico Che Rende Un Uomo Irresistibile Fin Dal Primo Sguardo",
+  "file": "il-trucco-psicologico-che-rende-un-uomo-irresistibile-fin-da.mp4",
+  "prodotto_il": "2026-09-04T15:02:00",
+  "cartella_consegna": "video-08",
+  "nota": "Generazione Fliki riuscita ma polling caduto per rete (3 timeout su api.fliki.ai): job riagganciato con fliki_poll_only.py, nessun credito speso due volte. In attesa della copertina di Max."
+ }
 ]

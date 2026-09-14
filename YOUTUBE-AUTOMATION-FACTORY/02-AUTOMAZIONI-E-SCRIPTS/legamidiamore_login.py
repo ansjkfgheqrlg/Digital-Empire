@@ -26,7 +26,14 @@ if sys.platform.startswith("win"):
 
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
 FACTORY_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-PROFILE_DIR = os.path.join(FACTORY_DIR, "chrome-profile-legamidiamore")
+# Stesso profilo dell'orchestratore (dal 2026-09-14: chrome-profile-youtube, l'unico loggato
+# come legamidamore55@gmail.com; il vecchio chrome-profile-legamidiamore e' scaduto).
+try:
+    from apex7_orchestrator import CANALI as _CANALI
+    _PROFILO = _CANALI["legamidiamore"].get("chrome_profile_dir") or "chrome-profile-youtube"
+except Exception:
+    _PROFILO = "chrome-profile-youtube"
+PROFILE_DIR = os.path.join(FACTORY_DIR, _PROFILO)
 
 # Senza User-Agent esplicito, YouTube Studio mostra un interstiziale "browser non supportato"
 # al posto della dashboard (bug reale trovato il 2026-08-05, vedi legamidiamore_session_check.py)

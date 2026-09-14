@@ -135,7 +135,14 @@ CANALI = {
         # Formato di destinazione dichiarato (A4-L04-02). Resta 16:9: il giorno che si vorranno
         # gli Shorts, si cambia QUI o con --formato, e si sa che si sta cambiando.
         "formato": "16:9",
-        "chrome_profile_dir": "chrome-profile-legamidiamore",
+        # Profilo Chrome per l'upload. Era "chrome-profile-legamidiamore" (login di Max del
+        # 2026-08-05): sessione SCADUTA, verificato il 2026-09-14 (legamidiamore_session_check.py
+        # -> redirect al login; upload reale -> auth_required). "chrome-profile-youtube" e'
+        # invece loggato come legamidamore55@gmail.com / canale "Legami d'amore" (letto da
+        # youtube.com/account il 2026-09-14) ed e' lo stesso profilo con cui pubblica_video.py e
+        # youtube_studio_reader.py leggono Studio. Se un giorno scade anche questo, l'uploader
+        # risponde auth_required e non carica: serve un login a mano di Max, non un'ipotesi.
+        "chrome_profile_dir": "chrome-profile-youtube",
         # Override ESPLICITO solo per questo canale (Max, 2026-08-15): sottotitoli piu' piccoli.
         # "minimal" e' la scelta piu' plausibile fra i 30 preset reali in
         # memory/fliki_subtitle_presets.json (nessuno ha metadati di dimensione/descrizione
@@ -1430,7 +1437,155 @@ class Apex7Orchestrator:
         righe = [r.upper().rstrip(".,;:") for r in righe if r.strip()]
         return righe or [titolo.upper()[:40]]
 
+    def _carica_su_youtube(self, metadata_path: str) -> bool:
+        """Passo di caricamento della Fase 5 (--upload), estratto in un metodo unico
+        (2026-09-14) perche' lo usano DUE rami: i metadati generati dallo script della Fase 3
+        e i metadati gia' pronti in VIDEO-PRONTI/video-NN/metadata.json (--video-folder).
+        Nessuna riga cambiata rispetto al blocco inline precedente."""
+        # --upload (opt-in, richiesta Max 2026-08-13): pubblicazione reale via Playwright,
+        # SEMPRE privata (visibilita' PRIVATE hardcoded in youtube_uploader_playwright.py, non
+        # negoziabile finche' Max non chiede esplicitamente il pubblico). Il file mp4 e' prodotto
+        # a monte da fliki_client.py (comando manuale, non ancora orchestrato automaticamente):
+        # --video-file deve puntare al file reale gia' scaricato.
+        if getattr(self, "upload_reale", False):
+            video_folder = getattr(self, "video_folder", None)
+            video_file = getattr(self, "video_file", None)
+
+            # Regola permanente Max 2026-08-18: MAI upload senza copertina reale. La copertina
+            # non e' piu' generata da arena_thumbnail.py/prompt AI — Max la mette a mano nella
+            # cartella dedicata del video (VIDEO-PRONTI/video-NN/). --skip-thumbnail salta solo
+            # il vecchio step di brief AI qui sopra, NON questo controllo: nessuna eccezione.
+            thumbnail_path = None
+            if video_folder:
+                if not os.path.isdir(video_folder):
+                    print(f"[!] ERRORE: --video-folder non trovata ('{video_folder}').")
+                    return False
+                if not video_file:
+                    candidato_video = os.path.join(video_folder, "video.mp4")
+                    if os.path.exists(candidato_video):
+                        video_file = candidato_video
+                for nome in sorted(os.listdir(video_folder)):
+                    if nome.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
+                        thumbnail_path = os.path.join(video_folder, nome)
+                        break
+
+            if not video_file or not os.path.exists(video_file):
+                print(f"[!] ERRORE: --upload richiesto ma nessun file mp4 valido trovato "
+                      f"('{video_file}'). Genera prima il video con fliki_client.py e passa "
+                      f"--video-folder (cartella con dentro video.mp4 e la copertina) o "
+                      f"--video-file esplicito.")
+                return False
+
+            if not thumbnail_path:
+                print(f"[!] ERRORE: nessuna copertina reale trovata in '{video_folder}'. "
+                      "Regola permanente: nessun upload senza copertina. Metti un'immagine "
+                      "(jpg/png/webp) nella cartella dedicata del video e riprova.")
+                return False
+
+            profile_name = self.canale.get("chrome_profile_dir")
+            # Nessun profilo autenticato per questo canale (es. dosementale oggi): path
+            # deliberatamente inesistente, fa scattare il fallback mock sicuro gia' presente in
+            # youtube_uploader_playwright.py invece di tentare un upload senza sessione.
+            profile_dir = (os.path.join(FACTORY_DIR, profile_name) if profile_name
+                            else os.path.join(MEMORY_DIR, "nessun_profilo_autenticato"))
+
+            print(f"[📤 PUBLISHER] Avvio upload reale via Playwright (profilo: {profile_dir})...")
+            upload_cmd = [sys.executable, os.path.join(SCRIPT_DIR, "youtube_uploader_playwright.py"),
+                          "--video", video_file, "--meta", metadata_path, "--profile", profile_dir,
+                          "--thumbnail", thumbnail_path]
+            upload_res = subprocess.run(upload_cmd, capture_output=True, text=True)
+            print(f"[📤 PUBLISHER] Output uploader:\n{upload_res.stdout.strip()}")
+            if upload_res.stderr:
+                print(f"[📤 PUBLISHER] Stderr uploader:\n{upload_res.stderr.strip()}")
+
+            upload_result = {}
+            for riga in reversed(upload_res.stdout.strip().splitlines()):
+                if riga.startswith("Risultato: "):
+                    try:
+                        upload_result = json.loads(riga[len("Risultato: "):])
+                    except ValueError:
+                        upload_result = {}
+                    break
+
+            if upload_result.get("status") == "success" and upload_result.get("video_id"):
+                manifest = self.load_json(PUBLISHED_VIDEOS_PATH, [])
+                manifest = [e for e in manifest if e.get("run_id") != self.run_id]
+                manifest.append({
+                    "run_id": self.run_id,
+                    "video_id": self.working_memory.get("produzione_video_id"),
+                    "url": upload_result.get("url"),
+                    "channel_handle": self.canale["handle"],
+                    "published_at": datetime.now().isoformat(),
+                })
+                self.save_json(PUBLISHED_VIDEOS_PATH, manifest)
+                print(f"[+] Upload reale completato — {upload_result.get('url')} (PRIVATO). "
+                      f"Registrato in {PUBLISHED_VIDEOS_PATH}.")
+            else:
+                print(f"[!] Upload non riuscito o ID reale non estratto: {upload_result}. "
+                      f"Nessuna scrittura in {PUBLISHED_VIDEOS_PATH} (dato reale non disponibile).")
+                return False
+
+        return True
+
+    def _metadata_pronto_da_cartella(self) -> str | None:
+        """Con --video-folder, il metadata.json scritto dalla fabbrica nella cartella del
+        video (VIDEO-PRONTI/video-NN/) E' il metadato finale: titolo, descrizione, tag e
+        keyword sono gia' li'. Ritorna il suo path se esiste ed e' completo, altrimenti None."""
+        video_folder = getattr(self, "video_folder", None)
+        if not video_folder:
+            return None
+        candidato = os.path.join(video_folder, "metadata.json")
+        if not os.path.exists(candidato):
+            return None
+        try:
+            with open(candidato, "r", encoding="utf-8") as f:
+                meta = json.load(f)
+        except (OSError, ValueError):
+            return None
+        if not meta.get("title") or not meta.get("description"):
+            return None
+        return candidato
+
+    def _fase5_da_video_pronto(self, metadata_path: str) -> bool:
+        """Fase 5 per un video GIA' prodotto (--video-folder con metadata.json).
+        Bug trovato al primo caricamento vero (2026-09-14): la fase 5 pretendeva lo script
+        della Fase 3 per GENERARE i metadati, che invece sono gia' nella cartella — con
+        --video-folder e --phase 5 (partenza vera dalla 5, fix 2026-09-11) la run cadeva
+        sempre su 'nessuno script reale trovato'. Qui: si leggono, si misura il SEO, si
+        passano i regolatori L3 e si carica. Niente Fliki, niente script."""
+        with open(metadata_path, "r", encoding="utf-8") as f:
+            metadata = json.load(f)
+        print(f"[✍️ WRITER] Video gia' prodotto: uso i metadati pronti in {metadata_path} "
+              f"(titolo: {metadata.get('title')!r}).")
+
+        seo_res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "seo_score.py"), "--json", metadata_path],
+                                 capture_output=True, text=True)
+        print(f"[🔬 ANALYST] Calcolatore SEO Score:\n{seo_res.stdout}")
+        try:
+            seo_result = json.loads(seo_res.stdout)
+        except (json.JSONDecodeError, ValueError):
+            seo_result = {}
+        if seo_result.get("pass_soglia_70"):
+            print(f"[+] Gate SEO-Gate: PASS (score reale {seo_result.get('total')}/100)")
+        else:
+            print(f"[!] Gate SEO-Gate: FAIL onesto (score reale {seo_result.get('total')}/100, sotto soglia 70) — debolezze: {seo_result.get('notes')}")
+
+        testi_l3 = {"script": "", "titolo": metadata.get("title", ""),
+                    "descrizione": metadata.get("description", "")}
+        if not _esegui_regolatori(self.run_id, "metadati", "metadata-optimizer", "capo-copy", testi_l3):
+            return False
+
+        self.working_memory["metadati_path"] = metadata_path
+        self.working_memory["metadati_seo_score"] = seo_result.get("total")
+        if not self._carica_su_youtube(metadata_path):
+            return False
+        return True
+
     def run_phase_5(self, interactive: bool) -> bool:
+        metadata_pronto = self._metadata_pronto_da_cartella()
+        if metadata_pronto:
+            return self._fase5_da_video_pronto(metadata_pronto)
+
         print("[✍️ WRITER] Generazione dei metadati e del brief della miniatura...")
 
         script_path = self.working_memory.get("script_path")
@@ -1570,88 +1725,8 @@ class Apex7Orchestrator:
         self.working_memory["metadati_seo_score"] = seo_result.get("total")
         self.working_memory["brief_miniatura_path"] = brief_path
 
-        # --upload (opt-in, richiesta Max 2026-08-13): pubblicazione reale via Playwright,
-        # SEMPRE privata (visibilita' PRIVATE hardcoded in youtube_uploader_playwright.py, non
-        # negoziabile finche' Max non chiede esplicitamente il pubblico). Il file mp4 e' prodotto
-        # a monte da fliki_client.py (comando manuale, non ancora orchestrato automaticamente):
-        # --video-file deve puntare al file reale gia' scaricato.
-        if getattr(self, "upload_reale", False):
-            video_folder = getattr(self, "video_folder", None)
-            video_file = getattr(self, "video_file", None)
-
-            # Regola permanente Max 2026-08-18: MAI upload senza copertina reale. La copertina
-            # non e' piu' generata da arena_thumbnail.py/prompt AI — Max la mette a mano nella
-            # cartella dedicata del video (VIDEO-PRONTI/video-NN/). --skip-thumbnail salta solo
-            # il vecchio step di brief AI qui sopra, NON questo controllo: nessuna eccezione.
-            thumbnail_path = None
-            if video_folder:
-                if not os.path.isdir(video_folder):
-                    print(f"[!] ERRORE: --video-folder non trovata ('{video_folder}').")
-                    return False
-                if not video_file:
-                    candidato_video = os.path.join(video_folder, "video.mp4")
-                    if os.path.exists(candidato_video):
-                        video_file = candidato_video
-                for nome in sorted(os.listdir(video_folder)):
-                    if nome.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
-                        thumbnail_path = os.path.join(video_folder, nome)
-                        break
-
-            if not video_file or not os.path.exists(video_file):
-                print(f"[!] ERRORE: --upload richiesto ma nessun file mp4 valido trovato "
-                      f"('{video_file}'). Genera prima il video con fliki_client.py e passa "
-                      f"--video-folder (cartella con dentro video.mp4 e la copertina) o "
-                      f"--video-file esplicito.")
-                return False
-
-            if not thumbnail_path:
-                print(f"[!] ERRORE: nessuna copertina reale trovata in '{video_folder}'. "
-                      "Regola permanente: nessun upload senza copertina. Metti un'immagine "
-                      "(jpg/png/webp) nella cartella dedicata del video e riprova.")
-                return False
-
-            profile_name = self.canale.get("chrome_profile_dir")
-            # Nessun profilo autenticato per questo canale (es. dosementale oggi): path
-            # deliberatamente inesistente, fa scattare il fallback mock sicuro gia' presente in
-            # youtube_uploader_playwright.py invece di tentare un upload senza sessione.
-            profile_dir = (os.path.join(FACTORY_DIR, profile_name) if profile_name
-                            else os.path.join(MEMORY_DIR, "nessun_profilo_autenticato"))
-
-            print(f"[📤 PUBLISHER] Avvio upload reale via Playwright (profilo: {profile_dir})...")
-            upload_cmd = [sys.executable, os.path.join(SCRIPT_DIR, "youtube_uploader_playwright.py"),
-                          "--video", video_file, "--meta", metadata_path, "--profile", profile_dir,
-                          "--thumbnail", thumbnail_path]
-            upload_res = subprocess.run(upload_cmd, capture_output=True, text=True)
-            print(f"[📤 PUBLISHER] Output uploader:\n{upload_res.stdout.strip()}")
-            if upload_res.stderr:
-                print(f"[📤 PUBLISHER] Stderr uploader:\n{upload_res.stderr.strip()}")
-
-            upload_result = {}
-            for riga in reversed(upload_res.stdout.strip().splitlines()):
-                if riga.startswith("Risultato: "):
-                    try:
-                        upload_result = json.loads(riga[len("Risultato: "):])
-                    except ValueError:
-                        upload_result = {}
-                    break
-
-            if upload_result.get("status") == "success" and upload_result.get("video_id"):
-                manifest = self.load_json(PUBLISHED_VIDEOS_PATH, [])
-                manifest = [e for e in manifest if e.get("run_id") != self.run_id]
-                manifest.append({
-                    "run_id": self.run_id,
-                    "video_id": self.working_memory.get("produzione_video_id"),
-                    "url": upload_result.get("url"),
-                    "channel_handle": self.canale["handle"],
-                    "published_at": datetime.now().isoformat(),
-                })
-                self.save_json(PUBLISHED_VIDEOS_PATH, manifest)
-                print(f"[+] Upload reale completato — {upload_result.get('url')} (PRIVATO). "
-                      f"Registrato in {PUBLISHED_VIDEOS_PATH}.")
-            else:
-                print(f"[!] Upload non riuscito o ID reale non estratto: {upload_result}. "
-                      f"Nessuna scrittura in {PUBLISHED_VIDEOS_PATH} (dato reale non disponibile).")
-                return False
+        if not self._carica_su_youtube(metadata_path):
+            return False
 
         return True
 
@@ -1728,7 +1803,7 @@ class Apex7Orchestrator:
 def main():
     ap = argparse.ArgumentParser(description="APEX-7 Swarm & Memory Orchestrator Engine")
     ap.add_argument("cmd", choices=["run", "status", "memory"], help="Comando da eseguire")
-    ap.add_argument("--phase", type=int, choices=[1, 2, 3, 4, 5, 6], default=1, help="Fase di partenza (default: 1)")
+    ap.add_argument("--phase", type=int, choices=[1, 2, 3, 4, 5, 6], default=1, help="Fase MASSIMA fino a cui arrivare (tetto, NON partenza: senza --resume la run riparte sempre da 1; default 1). Unica eccezione: con --video-folder e --phase >= 5 si parte davvero dalla 5, il video e' gia' prodotto e le fasi 1-4 non hanno senso.")
     ap.add_argument("--resume", action="store_true", help="Ripristina la run dall'ultimo stato salvato")
     ap.add_argument("--run-id", help="Specifica un Run ID specifico")
     ap.add_argument("--interactive", action="store_true", help="Abilita input interattivi per le fasi")

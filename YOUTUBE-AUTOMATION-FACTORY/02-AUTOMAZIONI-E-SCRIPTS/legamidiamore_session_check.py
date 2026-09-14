@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-Diagnostica: la sessione salvata in chrome-profile-legamidiamore e' ancora valida?
+Diagnostica: la sessione del profilo con cui la fabbrica carica su @Legamidiamore e' ancora
+valida? (Dal 2026-09-14 il profilo e' chrome-profile-youtube, lo stesso di apex7_orchestrator
+CANALI["legamidiamore"]["chrome_profile_dir"]: il vecchio chrome-profile-legamidiamore e' scaduto.)
 
 Le sessioni Google scadono (logout remoto, cambio password, "esci da tutti i dispositivi",
 inattivita' prolungata). Prima di questo script, l'unico modo per saperlo era lanciare
@@ -28,7 +30,13 @@ if sys.platform.startswith("win"):
 
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
 FACTORY_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-PROFILE_DIR = os.path.join(FACTORY_DIR, "chrome-profile-legamidiamore")
+# Stesso profilo dell'orchestratore: se cambia li', cambia anche qui (letto a runtime).
+try:
+    from apex7_orchestrator import CANALI as _CANALI
+    _PROFILO = _CANALI["legamidiamore"].get("chrome_profile_dir") or "chrome-profile-youtube"
+except Exception:  # import pesante o rotto: si ripiega sul nome noto, non ci si ferma
+    _PROFILO = "chrome-profile-youtube"
+PROFILE_DIR = os.path.join(FACTORY_DIR, _PROFILO)
 
 # Bug reale trovato il 2026-08-05: senza uno User-Agent esplicito, il Chromium di Playwright
 # si identifica in un modo che YouTube Studio segna come "browser non supportato" e mostra un

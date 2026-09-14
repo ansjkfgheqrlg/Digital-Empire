@@ -306,7 +306,10 @@ def _estrai_dopo_etichetta(testo, etichetta, salta_righe_vuote_max=3):
     for i, r in enumerate(righe):
         if r == etichetta:
             for j in range(i + 1, min(i + 1 + salta_righe_vuote_max, len(righe))):
-                if righe[j]:
+                # Sulla scheda del singolo video (testo reale del 14/9,
+                # memory/_report_analytics_video_RIZuutLaEV0.txt) l'etichetta e' RIPETUTA:
+                # "Views" / "Views" / "432". La ripetizione non e' il valore.
+                if righe[j] and righe[j] != etichetta:
                     return righe[j]
     return None
 
@@ -460,12 +463,18 @@ def estrai_ultimo_video_realtime(testo):
     }
 
 
+RE_RETENTION_30S = re.compile(r"(\d+(?:[.,]\d+)?)%\s+of viewers are still watching at around the 0:30 mark")
+
+
 def estrai_metriche_video_singolo(testo, video_id):
-    """Legge la scheda Analytics di UN video specifico (CTR, retention media, punto ai 30s,
-    views, durata media). A differenza di estrai_top_content_canale() e
-    estrai_ultimo_video_realtime(), qui le etichette NON sono verificate dal vivo su questa
-    schermata precisa in questo repository — vedi sezione "IPOTESI" in cima al file.
-    Tenta piu' varianti di etichetta per ogni campo, in ordine di plausibilita'."""
+    """Legge la scheda Analytics -> Overview di UN video. Etichette VERIFICATE DAL VIVO il
+    2026-09-14 sul video RIZuutLaEV0 (testo salvato in memory/_report_analytics_video_RIZuutLaEV0.txt):
+    "Views"/"Views"/"432", "Watch time (hours)"/"19,6", "Estimated revenue"/"EUR 1.50",
+    "Average view duration"/"5:34", "Average percentage viewed"/"42.5%", e la frase
+    "67% of viewers are still watching at around the 0:30 mark". Il CTR NON sta in Overview:
+    sta nella tab Reach ("Impressions click-through rate"), letta da leggi_metriche_video()
+    con una seconda navigazione - qui si prova comunque, per il caso in cui il testo passato
+    contenga gia' quella tab."""
     def prova_etichette(etichette):
         for et in etichette:
             v = _estrai_dopo_etichetta(testo, et)
@@ -476,39 +485,42 @@ def estrai_metriche_video_singolo(testo, video_id):
     ctr_raw, ctr_etichetta = prova_etichette(
         ("Impressions click-through rate", "Thumbnail click-through rate", "Click-through rate", "CTR"))
     views_raw, _ = prova_etichette(("Views",))
+    ore_raw, _ = prova_etichette(("Watch time (hours)",))
+    entrate_raw, _ = prova_etichette(("Estimated revenue",))
     durata_raw, _ = prova_etichette(("Average view duration",))
-    retention_raw, retention_etichetta = prova_etichette(
-        ("Average percentage viewed", "Average view percentage"))
+    retention_raw, _ = prova_etichette(("Average percentage viewed", "Average view percentage"))
+    m30 = RE_RETENTION_30S.search(testo or "")
+    retention_30s_raw = (m30.group(1) + "%") if m30 else None
 
     motivo_ctr = (None if ctr_raw else
-                  "nessuna delle etichette CTR ipotizzate ('Impressions/Thumbnail "
-                  "click-through rate', 'CTR') e' stata trovata nel testo della pagina — "
-                  "etichetta reale da calibrare dal vivo su questa schermata")
-    motivo_retention = (
-        "il grafico di retention e' un SVG, non testo: nessuna etichetta testuale col valore "
-        "trovata nel DOM. Alternativa GIA' pronta e verificata: youtube_analytics_client.py "
-        "(YouTube Analytics API via OAuth) legge audienceWatchRatio in modo esatto — usa "
-        "quello per un numero affidabile invece di questo scraping." if not retention_raw else None)
-
+                  "il CTR non e' nella tab Overview del video: sta nella tab Reach "
+                  "('Impressions click-through rate') - leggi_metriche_video() la apre a parte; "
+                  "se anche li' manca, il video non ha ancora impressioni sufficienti")
     return {
         "video_id": video_id,
         "ctr_miniatura_percento": campo(parse_percentuale(ctr_raw), motivo_ctr, ctr_raw),
         "ctr_etichetta_trovata": ctr_etichetta,
         "views": campo(parse_numero(views_raw), None if views_raw else
-                        "etichetta 'Views' non trovata sulla scheda Analytics del video",
-                        views_raw),
+                        "etichetta 'Views' non trovata sulla scheda Analytics del video", views_raw),
+        "watch_time_ore": campo(parse_numero(ore_raw), None if ore_raw else
+                                 "etichetta 'Watch time (hours)' non trovata", ore_raw),
+        "entrate_stimate": campo(parse_numero(entrate_raw), None if entrate_raw else
+                                  "etichetta 'Estimated revenue' non trovata (video non monetizzato "
+                                  "o troppo recente)", entrate_raw),
+        "entrate_valuta": _rileva_valuta(entrate_raw) if entrate_raw else None,
         "durata_media_visualizzazione_secondi": campo(
             parse_durata_hhmmss(durata_raw), None if durata_raw else
             "etichetta 'Average view duration' non trovata sulla scheda Analytics del video",
             durata_raw),
-        "retention_media_percento": campo(parse_numero(retention_raw), motivo_retention, retention_raw),
+        "retention_media_percento": campo(parse_percentuale(retention_raw), None if retention_raw else
+                                           "etichetta 'Average percentage viewed' non trovata",
+                                           retention_raw),
         "retention_30s_percento": campo(
-            None,
-            "punto preciso della curva ai 30 secondi non estraibile da un dump testuale del "
-            "grafico SVG. Usa youtube_analytics_client.py::costruisci_curva_retention() "
-            "(A4-RC-15, gia' pronto) che legge audienceWatchRatio per elapsedVideoTimeRatio "
-            "dalla YouTube Analytics API e isola il punto piu' vicino a 30s con precisione."
-        ),
+            parse_percentuale(retention_30s_raw), None if retention_30s_raw else
+            "frase '<N>% of viewers are still watching at around the 0:30 mark' assente: Studio la "
+            "mostra solo quando ha abbastanza dati. Alternativa esatta: "
+            "youtube_analytics_client.py::costruisci_curva_retention() (A4-RC-15).",
+            retention_30s_raw),
     }
 
 
@@ -582,6 +594,34 @@ def ricava_channel_id(page):
         return None
 
 
+# Studio si disegna DOPO domcontentloaded: un'attesa fissa cattura la shell di avvio (299 KB
+# di JS, zero elementi) — trappola gia' pagata da pubblica_video.py l'11/9 e da questo lettore
+# il 14/9 (run reale: tutte le etichette "non trovate", nessun DOM salvato). Si aspetta un
+# ELEMENTO VERO della pagina analytics, fino a un massimo; il cronometro resta solo come tetto.
+SELETTORI_ANALYTICS_PRONTA = (
+    "yta-key-metric-block", "yta-latest-activity-card", "yta-explore-table",
+    "text=Watch time", "text=Estimated revenue", "text=Your top content",
+)
+ATTESA_ANALYTICS_MAX_MS = 60000
+
+
+def _aspetta_analytics(page, massimo_ms=ATTESA_ANALYTICS_MAX_MS):
+    """True appena uno dei selettori reali della pagina analytics compare; False se scade il
+    tetto. Con un doppio di pagina senza wait_for_selector si ripiega su un'attesa breve."""
+    if not hasattr(page, "wait_for_selector"):
+        page.wait_for_timeout(4000)
+        return True
+    for sel in SELETTORI_ANALYTICS_PRONTA:
+        try:
+            page.wait_for_selector(sel, timeout=massimo_ms // len(SELETTORI_ANALYTICS_PRONTA) + 1000,
+                                   state="visible")
+            page.wait_for_timeout(1500)  # i numeri arrivano un attimo dopo le etichette
+            return True
+        except Exception:
+            continue
+    return False
+
+
 def _naviga_con_ipotesi(page, url_ipotesi, url_ripiego, attesa_ms=4000):
     """Prova l'URL ipotizzato (tab-overview/period-default); se dopo la navigazione l'URL
     effettivo non contiene '/analytics', ripiega sul path semplice — quello raggiunto
@@ -591,6 +631,10 @@ def _naviga_con_ipotesi(page, url_ipotesi, url_ripiego, attesa_ms=4000):
     if "/analytics" not in page.url:
         page.goto(url_ripiego, wait_until="domcontentloaded", timeout=45000)
         page.wait_for_timeout(attesa_ms)
+    if not _aspetta_analytics(page):
+        print("[!] La pagina analytics non ha mostrato nessuna tessera entro %ds: leggo quello "
+              "che c'e' e salvo il DOM." % (ATTESA_ANALYTICS_MAX_MS // 1000))
+        _dump_dom_diagnostico(page, "analytics-mai-disegnata")
     return page.url
 
 
@@ -614,6 +658,28 @@ def leggi_metriche_video(page, video_id):
     testo = _testo_pagina(page)
     dati = estrai_metriche_video_singolo(testo, video_id)
     dati["url_letto"] = page.url
+    if dati["ctr_miniatura_percento"]["valore"] is None:
+        # Il CTR vive nella tab Reach (verificato 14/9: in Overview non c'e').
+        url_reach = "https://studio.youtube.com/video/%s/analytics/tab-reach/period-default" % video_id
+        try:
+            page.goto(url_reach, wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(2500)
+            _aspetta_analytics(page)
+            testo_reach = _testo_pagina(page)
+            ctr_raw = None
+            for et in ("Impressions click-through rate", "Thumbnail click-through rate"):
+                ctr_raw = _estrai_dopo_etichetta(testo_reach, et)
+                if ctr_raw:
+                    dati["ctr_etichetta_trovata"] = et
+                    break
+            if ctr_raw:
+                dati["ctr_miniatura_percento"] = campo(parse_percentuale(ctr_raw), None, ctr_raw)
+                impressioni_raw = _estrai_dopo_etichetta(testo_reach, "Impressions")
+                dati["impressioni"] = campo(parse_numero(impressioni_raw), None if impressioni_raw
+                                            else "etichetta 'Impressions' non trovata", impressioni_raw)
+            dati["url_reach_letto"] = page.url
+        except Exception as e:
+            dati["ctr_reach_errore"] = str(e)[:200]
     return dati
 
 
@@ -655,6 +721,11 @@ def leggi_tutto(page, video_ids=None, canale_nome=None):
     else:
         try:
             report["canale"] = leggi_overview_canale(page, channel_id)
+            # Lettura "riuscita" ma vuota = stesso valore di un fallimento: si porta a casa il DOM
+            # (14/9: report con tutte le etichette 'non trovate' e niente da calibrare).
+            if all(report["canale"].get(k, {}).get("valore") is None
+                   for k in ("views", "watch_time_ore", "iscritti_variazione", "entrate_stimate")):
+                _dump_dom_diagnostico(page, "overview-canale-vuota")
         except Exception as e:
             _dump_dom_diagnostico(page, "overview-canale-fallita")
             report["canale"] = None

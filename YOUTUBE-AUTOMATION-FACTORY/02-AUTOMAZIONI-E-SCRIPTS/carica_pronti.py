@@ -88,6 +88,11 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 FACTORY_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
 VIDEO_PRONTI_DIR = os.path.join(FACTORY_DIR, "VIDEO-PRONTI")
 DEFAULT_LOG = os.path.join(FACTORY_DIR, "memory", "carica_pronti.log")
+# Manifesto della fabbrica: produci_video_completo.py e l'uploader scrivono QUI youtube_id e
+# cartella_consegna, NON nel metadata.json della cartella. Il 2026-09-14 il primo giro vero ha
+# scoperto che 6 cartelle su 7 date come "mai caricate" erano gia' PUBBLICHE su YouTube: questo
+# script leggeva solo la cartella. Da allora incrocia anche il manifesto (vedi _gia_nel_manifesto).
+VIDEO_PRODOTTI_PATH = os.path.join(FACTORY_DIR, "memory", "video_prodotti.json")
 ORCHESTRATOR_FILE = "apex7_orchestrator.py"
 TIMEOUT_SECONDI = 3600  # 1h: la fase 5 senza --resume puo' rieseguire le fasi 1-4 (vedi sopra)
 
@@ -198,7 +203,38 @@ def rileva_canale(metadata, testo_copy_md):
     return None  # 0 o >1 candidati: non si indovina
 
 
-def analizza_cartella(nome, cartella):
+def _leggi_manifesto(percorso=None):
+    """Voci di memory/video_prodotti.json (lista di dict). File assente o rotto = lista vuota:
+    il manifesto e' un controllo IN PIU', non una condizione per lavorare."""
+    percorso = percorso or VIDEO_PRODOTTI_PATH
+    try:
+        with open(percorso, "r", encoding="utf-8") as f:
+            dati = json.load(f)
+    except (OSError, ValueError):
+        return []
+    return dati if isinstance(dati, list) else []
+
+
+def _gia_nel_manifesto(nome_cartella, titolo, manifesto):
+    """Ritorna lo youtube_id se il manifesto dice che questa cartella (cartella_consegna) o
+    questo identico titolo (titolo_nostro) e' gia' stato caricato. Altrimenti None."""
+    titolo_n = (titolo or "").strip().lower()
+    for voce in manifesto:
+        vid = voce.get("youtube_id")
+        if not vid:
+            continue
+        # Una BOZZA su Studio (wizard mai completato) non e' un video caricato: la cartella
+        # resta pronta per un caricamento pulito. Caso reale: video-06 / RUg6TgSd79s.
+        if (voce.get("visibilita") or "").lower() == "bozza":
+            continue
+        if voce.get("cartella_consegna") == nome_cartella:
+            return vid
+        if titolo_n and (voce.get("titolo_nostro") or "").strip().lower() == titolo_n:
+            return vid
+    return None
+
+
+def analizza_cartella(nome, cartella, manifesto=None):
     """Analizza UNA cartella video-NN e ritorna un dizionario con lo stato reale trovato sul
     disco. Non lancia mai eccezioni per condizioni attese (file mancanti): le riporta come
     stato, cosi' il chiamante puo' mostrare il quadro completo anche per le cartelle scartate."""
@@ -244,6 +280,15 @@ def analizza_cartella(nome, cartella):
         esito["canale"] = rileva_canale(metadata, testo_copy_md)
         esito["motivo"] = "gia' caricato (youtube_id=%s in metadata.json)" % youtube_id_esistente
         return esito
+    id_manifesto = _gia_nel_manifesto(nome, titolo, manifesto if manifesto is not None
+                                      else _leggi_manifesto())
+    if id_manifesto:
+        esito["stato"] = "gia_caricato"
+        esito["youtube_id_esistente"] = id_manifesto
+        esito["canale"] = rileva_canale(metadata, testo_copy_md)
+        esito["motivo"] = ("gia' caricato secondo memory/video_prodotti.json (youtube_id=%s) "
+                           "ma la cartella non lo sapeva: scrivilo in metadata.json" % id_manifesto)
+        return esito
 
     canale = rileva_canale(metadata, testo_copy_md)
     esito["canale"] = canale
@@ -259,10 +304,12 @@ def analizza_cartella(nome, cartella):
     return esito
 
 
-def costruisci_report(video_pronti_dir):
+def costruisci_report(video_pronti_dir, manifesto=None):
     """Analisi di TUTTE le cartelle video-NN trovate (anche quelle scartate: il quadro
     completo serve a Max per sapere cosa manca, non solo cosa e' pronto)."""
-    return [analizza_cartella(nome, cartella)
+    if manifesto is None:
+        manifesto = _leggi_manifesto()
+    return [analizza_cartella(nome, cartella, manifesto=manifesto)
             for nome, cartella in trova_cartelle_video(video_pronti_dir)]
 
 
@@ -316,6 +363,13 @@ def estrai_video_id_e_url(testo):
     return video_id, "https://www.youtube.com/watch?v=%s" % video_id
 
 
+def coda_output(testo, righe=12):
+    """Ultime `righe` righe non vuote dell'output catturato: e' li' che l'orchestratore scrive
+    il motivo del fallimento ('[!] ERRORE: ...')."""
+    non_vuote = [r.rstrip() for r in (testo or "").splitlines() if r.strip()]
+    return non_vuote[-righe:]
+
+
 def stato_osservato_da_testo(testo):
     """Best-effort: cerca nel testo grezzo dell'output catturato una frase che riveli lo
     stato in cui l'uploader ha lasciato il video (bozza/pending/ecc — vedi nota in testa al
@@ -365,7 +419,10 @@ def scrivi_log(cartella_nome, canale, esito, youtube_id="", stato_osservato="", 
 # ---------------------------------------------------------------------------------------
 
 def esegui(video_pronti_dir=VIDEO_PRONTI_DIR, log_path=DEFAULT_LOG, conferma=False,
-           script_dir=SCRIPT_DIR, timeout=TIMEOUT_SECONDI, stampa=print):
+           script_dir=SCRIPT_DIR, timeout=TIMEOUT_SECONDI, stampa=print, massimo=0):
+    """`massimo` > 0 limita quanti video si caricano davvero in questo giro (0 = tutti i
+    pronti). Serve al primo caricamento vero: uno solo, si guarda in che stato resta su
+    YouTube Studio (privato o bozza), e solo dopo si rilancia per gli altri."""
     report = costruisci_report(video_pronti_dir)
 
     stampa("=" * 78)
@@ -408,6 +465,12 @@ def esegui(video_pronti_dir=VIDEO_PRONTI_DIR, log_path=DEFAULT_LOG, conferma=Fal
             scrivi_log(r["nome"], r["canale"], "PROVA", dettaglio=" ".join(cmd), log_path=log_path)
         return 0
 
+    if massimo and massimo > 0 and len(candidati) > massimo:
+        stampa("")
+        stampa("--massimo %d: in questo giro carico solo i primi %d, gli altri %d restano pronti."
+               % (massimo, massimo, len(candidati) - massimo))
+        candidati = candidati[:massimo]
+
     stampa("")
     codice_uscita = 0
     for r in candidati:
@@ -425,6 +488,10 @@ def esegui(video_pronti_dir=VIDEO_PRONTI_DIR, log_path=DEFAULT_LOG, conferma=Fal
             stampa("[FALLITO] %s -- %s" % (r["nome"], dettaglio))
             if stato_osservato:
                 stampa("          stato osservato nell'output: %s" % stato_osservato)
+            # Un fallimento muto non serve a nessuno (primo giro vero, 2026-09-14: "returncode=1"
+            # e basta, la causa era nell'output inghiottito). Si mostra la coda del sottoprocesso.
+            for riga in coda_output(testo_completo):
+                stampa("          | %s" % riga)
             scrivi_log(r["nome"], r["canale"], "FALLITO", stato_osservato=stato_osservato or "",
                        dettaglio=dettaglio, log_path=log_path)
             stampa("Mi fermo qui: uno per volta, niente mitraglia dopo un fallimento.")
@@ -470,10 +537,14 @@ def main(argv=None):
                      help="Cartella da scansionare (default: VIDEO-PRONTI/ della fabbrica).")
     ap.add_argument("--log", default=DEFAULT_LOG,
                      help="File di log in append (default: memory/carica_pronti.log).")
+    ap.add_argument("--massimo", type=int, default=0,
+                     help="Con --conferma: quanti video caricare al massimo in questo giro "
+                          "(default 0 = tutti i pronti). Al primo giro vero conviene 1, per "
+                          "guardare in che stato resta il video prima di fare gli altri.")
     args = ap.parse_args(argv)
 
     return esegui(video_pronti_dir=args.video_pronti_dir, log_path=args.log,
-                  conferma=args.conferma)
+                  conferma=args.conferma, massimo=args.massimo)
 
 
 if __name__ == "__main__":

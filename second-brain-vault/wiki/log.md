@@ -1,5 +1,10 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-14 (sera — Emperator, EMP-V6DE)
+- VERITÀ: i «5 video pronti mai caricati» (CP-20260911-FHFZ) erano 6/7 GIÀ PUBBLICI su Legami d'amore (oEmbed); doppioni evitati; ERR-20260914-001; regola «mai caricato si chiede al canale, non al disco» → Tool_YouTube_Automation_Factory da aggiornare (§ pubblicazione), memoria aggiornata (project_ultimo_metro + feedback nuovo).
+- FABBRICA: carica_pronti incrocia il manifesto (bozza ≠ caricato, --massimo, coda output), fase 5 apex7 usa metadata.json pronto, profilo upload chrome-profile-youtube, youtube_studio_reader calibrato sul testo reale (Views/ore/€/durata/%vista/30s + CTR da tab Reach), apri_studio_visibile.py nuovo. 73 test verdi. CP-20260914-VDW3.
+- NUMERI: primi dati veri del canale (17.500 views/28gg, 1.300 h, +10 iscritti, €38,85 stimati) → Tesoreria E-20260914-001 (prevista). Gesto di Max: popup «Verify it's you» + termini YPP + bozze video-06.
+
 ## 2026-09-13 (Emperator — studio funneloperator.it, 4 doom bot)
 - PIANO v2 + TAVOLA v2: Dossier 38 v2 (sei atti, 24 aggiunte, C5-C7, §I decisioni di Max D1-D5) + Tavola Estetica v2 (still interi al pixel, schemi in HTML, PDF vero) → 1 pagina aggiornata (projects/Agency/Progetto_Sito_Agency_Vivo). CP-20260913-EEV3. Chat satura: ripresa EMP-XR4F in chat nuova.
 - STUDIO: funneloperator.it catturato (site_capture2 + scarica_media: 68 originali) e analizzato in 4 rapporti (struttura/strategia 463, stile 846, atlante 987, costruzione 878 righe) + sintesi con strategie classificate FO-* → 1 pagina creata (sources/Source_Funnel_Operator_Sito_2026), Tool_Fabbrica_Siti aggiornata (§14-15), index.

@@ -27,6 +27,11 @@ import time
 
 import carica_pronti as cp
 
+# I test non devono MAI leggere il manifesto vero della fabbrica (memory/video_prodotti.json):
+# le cartelle finte si chiamano video-01, video-06... come quelle vere, e il manifesto vero le
+# darebbe come gia' caricate. Il manifesto e' passato esplicitamente nei test che lo provano.
+cp.VIDEO_PRODOTTI_PATH = os.path.join(tempfile.gettempdir(), "carica_pronti_test_nessun_manifesto.json")
+
 
 # ---------------------------------------------------------------------------------------
 # Helper di costruzione cartelle finte -- niente pytest fixtures: il runner in fondo esegue
@@ -379,3 +384,78 @@ if __name__ == "__main__":
     print("%d/%d test passati (%d saltati, girano con: python -m pytest %s)"
           % (_eseguiti - _falliti, _eseguiti, _saltati, __file__.rsplit("\\", 1)[-1]))
     _sys.exit(1 if _falliti else 0)
+
+
+def test_massimo_limita_i_caricamenti_del_giro(monkeypatch):
+    chiamate = []
+
+    def subprocess_run_finto(cmd, **kwargs):
+        chiamate.append(cmd)
+        return _RisultatoFinto(returncode=0, stdout=(
+            "[+] Upload reale completato — https://www.youtube.com/watch?v=ID%08d (PRIVATO)."
+            % len(chiamate)))
+
+    monkeypatch.setattr(subprocess, "run", subprocess_run_finto)
+
+    with _CartellaTemporanea() as base:
+        c1 = _crea_video(base, "video-01", metadata={"title": "A"}, copy_md="legamidiamore")
+        c2 = _crea_video(base, "video-02", metadata={"title": "B"}, copy_md="legamidiamore")
+        log_path = os.path.join(base, "log.txt")
+
+        codice = cp.esegui(video_pronti_dir=base, log_path=log_path, conferma=True,
+                            stampa=lambda *a, **k: None, massimo=1)
+
+        assert codice == 0
+        assert len(chiamate) == 1, "con --massimo 1 parte un solo upload"
+        stati = {cp.analizza_cartella(n, c)["stato"] for n, c in (("video-01", c1), ("video-02", c2))}
+        assert stati == {"gia_caricato", "pronto"}, "uno caricato, l'altro resta pronto"
+
+
+def test_fallimento_mostra_la_coda_dell_output(monkeypatch):
+    def subprocess_run_finto(cmd, **kwargs):
+        return _RisultatoFinto(returncode=1,
+                               stdout="banner\n\n[!] ERRORE: nessuno script reale trovato\n")
+
+    monkeypatch.setattr(subprocess, "run", subprocess_run_finto)
+    righe = []
+    with _CartellaTemporanea() as base:
+        _crea_video(base, "video-01", metadata={"title": "T"}, copy_md="legamidiamore")
+        cp.esegui(video_pronti_dir=base, log_path=os.path.join(base, "log.txt"), conferma=True,
+                  stampa=lambda *a, **k: righe.append(" ".join(str(x) for x in a)))
+    assert any("nessuno script reale trovato" in r for r in righe), "la causa del fallimento va stampata"
+
+
+def test_manifesto_video_prodotti_blocca_il_doppione_per_cartella():
+    """2026-09-14: 6 cartelle su 7 erano gia' pubbliche ma la cartella non lo sapeva."""
+    manifesto = [{"source_video_id": "x", "titolo_nostro": "Altro", "youtube_id": "ABC123",
+                  "cartella_consegna": "video-06"}]
+    with _CartellaTemporanea() as base:
+        c = _crea_video(base, "video-06", metadata={"title": "T"}, copy_md="legamidiamore")
+        esito = cp.analizza_cartella("video-06", c, manifesto=manifesto)
+    assert esito["stato"] == "gia_caricato"
+    assert esito["youtube_id_esistente"] == "ABC123"
+
+
+def test_manifesto_video_prodotti_blocca_il_doppione_per_titolo():
+    manifesto = [{"titolo_nostro": "  Pensi che TU non le Piaci?  ", "youtube_id": "ZZZ999"}]
+    with _CartellaTemporanea() as base:
+        c = _crea_video(base, "video-09", metadata={"title": "pensi che tu non le piaci?"},
+                        copy_md="legamidiamore")
+        esito = cp.analizza_cartella("video-09", c, manifesto=manifesto)
+    assert esito["stato"] == "gia_caricato"
+
+
+def test_manifesto_senza_youtube_id_non_blocca():
+    manifesto = [{"titolo_nostro": "T", "cartella_consegna": "video-01"}]  # prodotto, mai caricato
+    with _CartellaTemporanea() as base:
+        c = _crea_video(base, "video-01", metadata={"title": "T"}, copy_md="legamidiamore")
+        assert cp.analizza_cartella("video-01", c, manifesto=manifesto)["stato"] == "pronto"
+
+
+def test_manifesto_bozza_non_conta_come_caricato():
+    """Una bozza mai completata su Studio non e' un caricamento: si ricarica pulito."""
+    manifesto = [{"titolo_nostro": "T", "youtube_id": "RUg6TgSd79s", "cartella_consegna": "video-06",
+                  "visibilita": "bozza"}]
+    with _CartellaTemporanea() as base:
+        c = _crea_video(base, "video-06", metadata={"title": "T"}, copy_md="legamidiamore")
+        assert cp.analizza_cartella("video-06", c, manifesto=manifesto)["stato"] == "pronto"

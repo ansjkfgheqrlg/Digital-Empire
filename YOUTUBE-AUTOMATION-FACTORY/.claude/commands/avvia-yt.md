@@ -82,6 +82,26 @@ python apex7_orchestrator.py run --canale legamidiamore --phase 5 --upload --vid
 Visibilità sempre **Private**, mai pubblico senza conferma esplicita di Max per quel video
 specifico.
 
+**Come funziona `--phase` qui (corretto 2026-09-11):** `--phase` in apex7 è un *tetto* (fino a
+che fase arrivare), non una partenza — senza `--resume` la run riparte da 1. Con
+`--video-folder` e `--phase 5` però si parte DAVVERO dalla 5: il video è già prodotto, le fasi
+1-4 non girano (prima di questa correzione il comando rifaceva il video su Fliki a pagamento e
+solo poi caricava — per questo sette copertine non erano mai diventate sette caricamenti).
+
+**Scorciatoia per i video pronti:** `python carica_pronti.py --prova` mostra chi è pronto
+(mp4 + metadata + copertina + mai caricato); `--conferma --massimo 1` ne carica uno, dal più
+vecchio, e scrive `youtube_id` in `metadata.json` così non lo ricarica due volte.
+
+**«Mai caricato» si decide interrogando il canale, non contando i file** (ERR-20260914-001:
+6 cartelle su 7 date come «mai caricate» erano già pubbliche). `carica_pronti.py` incrocia anche
+`memory/video_prodotti.json`; se una cartella risulta pronta ma hai un dubbio, oEmbed pubblico
+senza login: `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=<ID>&format=json`.
+
+**Gesti che solo Max può fare** (la macchina non li tenta): popup Google «Verify it's you»
+sopra il wizard, accettazione termini YPP, bozze lasciate da un wizard interrotto.
+`python apri_studio_visibile.py` (o `--bozze`) apre il profilo giusto in una finestra visibile e
+aspetta che Max chiuda; poi `python legamidiamore_session_check.py`.
+
 ## Limiti reali di questo comando (dillo sempre a Max se chiede aggiornamenti)
 
 - Il passo 3 (Fliki) non è velocizzabile da qui: è coda del loro server, non mio codice.

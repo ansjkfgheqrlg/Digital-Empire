@@ -473,3 +473,26 @@ if __name__ == "__main__":
     print("%d/%d test passati (%d saltati, girano con: python -m pytest %s)"
           % (_eseguiti - _falliti, _eseguiti, _saltati, __file__.rsplit("\\", 1)[-1]))
     _sys.exit(1 if _falliti else 0)
+
+
+def test_video_singolo_sul_testo_reale_del_14_settembre():
+    """Testo catturato dal vivo (RIZuutLaEV0): etichetta ripetuta 'Views/Views/432', ore, euro,
+    durata, percentuale media, frase dei 30 secondi."""
+    qui = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(qui, "..", "memory", "_report_analytics_video_RIZuutLaEV0.txt"),
+              encoding="utf-8") as f:
+        testo = f.read()
+    d = ysr.estrai_metriche_video_singolo(testo, "RIZuutLaEV0")
+    assert d["views"]["valore"] == 432.0
+    assert d["watch_time_ore"]["valore"] == 19.6
+    assert d["entrate_stimate"]["valore"] == 1.5
+    assert d["durata_media_visualizzazione_secondi"]["valore"] == 334
+    assert d["retention_media_percento"]["valore"] == 42.5
+    assert d["retention_30s_percento"]["valore"] == 67.0
+    # il CTR non e' in Overview: null con il motivo che rimanda alla tab Reach
+    assert d["ctr_miniatura_percento"]["valore"] is None
+    assert "Reach" in d["ctr_miniatura_percento"]["motivo"]
+
+
+def test_etichetta_ripetuta_non_e_il_valore():
+    assert ysr._estrai_dopo_etichetta("Views\nViews\n432", "Views") == "432"

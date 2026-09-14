@@ -16,5 +16,8 @@
   ],
   "keyword": "pensi",
   "thumbnail": true,
-  "subtitles": true
+  "subtitles": true,
+  "youtube_id_bozza": "RUg6TgSd79s",
+  "nota_bozza": "RUg6TgSd79s e' una BOZZA su YouTube Studio (wizard mai completato, letto l'11/9 da pubblica_video.py --prova): non e' un video caricato. Va caricato pulito con carica_pronti e poi la bozza va cancellata da Studio.",
+  "canale": "legamidiamore"
 }

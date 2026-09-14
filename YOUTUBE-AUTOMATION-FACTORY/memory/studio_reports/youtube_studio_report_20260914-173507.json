@@ -1,0 +1,51 @@
+{
+  "generato_il": "2026-09-14 17:34:59",
+  "channel_id": "UC0J2KtEiGnDZnzHlc2Vajpg",
+  "canale": {
+    "periodo_effettivo": null,
+    "views": {
+      "valore": null,
+      "motivo": "etichetta 'Views' (tile riepilogo) non trovata nella pagina",
+      "grezzo": null
+    },
+    "watch_time_ore": {
+      "valore": null,
+      "motivo": "etichetta 'Watch time (hours)' non trovata",
+      "grezzo": null
+    },
+    "iscritti_variazione": {
+      "valore": null,
+      "motivo": "etichetta 'Subscribers' (tile riepilogo) non trovata",
+      "grezzo": null
+    },
+    "entrate_stimate": {
+      "valore": null,
+      "motivo": "etichetta 'Estimated revenue' non trovata — probabile canale non monetizzato o schermata diversa da quella attesa",
+      "grezzo": null
+    },
+    "entrate_valuta": "EUR",
+    "top_content": [],
+    "ultimo_video_realtime": {
+      "titolo": null,
+      "views": {
+        "valore": null,
+        "motivo": "sezione 'Latest content' non trovata nella pagina",
+        "grezzo": null
+      },
+      "ctr_miniatura_percento": {
+        "valore": null,
+        "motivo": "sezione 'Latest content' non trovata",
+        "grezzo": null
+      },
+      "durata_media_visualizzazione_secondi": {
+        "valore": null,
+        "motivo": "sezione 'Latest content' non trovata",
+        "grezzo": null
+      }
+    },
+    "url_letto": "https://studio.youtube.com/channel/UC0J2KtEiGnDZnzHlc2Vajpg/analytics/tab-overview/period-default"
+  },
+  "video": [],
+  "entrate_pronte_per_tesoreria": [],
+  "entrate_pronte_per_tesoreria_motivo": "Nessuna entrata proposta: 'Estimated revenue' non e' stato letto (canale non monetizzato, dato non disponibile, o schermata diversa da quella attesa). Vedi report['canale']['entrate_stimate']['motivo']."
+}

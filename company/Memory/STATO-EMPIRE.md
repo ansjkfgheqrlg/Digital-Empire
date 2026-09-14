@@ -9,6 +9,18 @@ Il `--prod` resta di Max.
 **Fatto:** 10 allegati estratti; hero a sinistra con ombre e le sue 3 foto; 5 illustrazioni generate per le card; «Cioè:» sotto i 3 sistemi; freccia #02
 corretta; 2 foto di riferimento (American Psycho: copyright altrui, dichiarato) con freccia; 3 pagine CTA. Gate PASS. Commit `7cb77426`.
 
+## 🎬 2026-09-14 sera — EMP-V6DE ripresa: i «5 mai caricati» erano GIÀ PUBBLICI (6/7), fabbrica riparata, primi euro YouTube in Tesoreria — CP-20260914-VDW3
+
+**Gesto solo di Max (ADR-026, non blocca il resto):** su Studio è comparso il popup Google **«Verify it's you»** sopra il wizard
+(ha fermato video-06 al 10 %). `cd YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS && python apri_studio_visibile.py` → verifica +
+«Review and accept» (termini YPP) → `--bozze`: bozze di video-06 (`RUg6TgSd79s` + quella di oggi) da completare o cancellare → poi
+`python carica_pronti.py --prova`.
+**Fatto:** interrogato il canale prima di caricare: video-01..05 e 07 **già pubblici** su Legami d'amore (doppioni evitati per caso:
+ERR-20260914-001); verità scritta in cartelle + manifesto; `carica_pronti` incrocia il manifesto; fase 5 usa i metadati pronti (2° bug);
+profilo upload corretto; lettore Studio riparato e calibrato sul testo reale → **17.500 views/28gg, €38,85 stimati = E-20260914-001**
+(primo euro YouTube nei conti). 73 test verdi. **La coda di produzione è vuota: l'ultimo metro ora è a monte (script nuovi).**
+**RIPRESA DA:** `EMP-V6DE` → §4-5 del CP.
+
 ## 🟠 2026-09-14 notte — SITO AGENCY F4 COSTRUITA (22 task, 4 scagnozzi) — ANTEPRIMA, aspetta Max — CP-20260914-P6GG
 
 **Gesto solo di Max (ADR-026):** guardare https://agency-empire-landing-2uvpnq2q6-maximilians-projects-f0964962.vercel.app/ → correzioni → `--prod`.
@@ -166,7 +178,7 @@ corretti, ADR-029, gate Missione con innesco. Missione al 21%.
 
 **Coordinamento:** nessun file in comune con EMP-8M9F (Libro Agency): le due chat corrono insieme.
 
-**RIPRESA DA:** `EMP-V6DE` in chat nuova → primo caricamento vero su ordine di Max.
+**RIPRESA DA:** ~~primo caricamento vero~~ → superato il 14/9 (CP-20260914-VDW3): erano già online.
 
 ---
 
