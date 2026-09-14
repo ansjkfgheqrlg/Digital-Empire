@@ -11,6 +11,11 @@
    sia in griglia 3 colonne (desktop) sia impilata (mobile), senza toccare il markup delle card stesse.
    ============================================================================ */
 .vivo .ra-nodi { margin-bottom: 128px; }
+/* la card (.ra-nodo.grad-max, f4-colori.css) ha overflow:hidden per tagliare il gradiente sugli angoli
+   arrotondati — la grana/gradiente restano tagliati lo stesso perché il loro ::before porta già
+   border-radius:inherit; qui riapriamo SOLO l'overflow perché la freccia+nota (fuori dal bordo, sotto
+   la card) non venga tagliata via. */
+.vivo .ra-vsl .ra-nodo.grad-max { overflow: visible; }
 .vivo .ra-freccia-nota {
   position: absolute; left: 4px; right: 4px; top: 100%; margin-top: 10px; z-index: 1; pointer-events: none;
   display: flex; flex-direction: column; align-items: flex-start;
@@ -34,13 +39,13 @@
    di default della sezione (.section, 6rem ≈ 96px, globals.css): nessun bisogno dell'hook :has() di F4.
    ============================================================================ */
 .c2b-freccia { position: absolute; top: -90px; right: 0; width: 230px; z-index: 2; pointer-events: none; text-align: right; }
-.c2b-freccia svg { overflow: visible; display: block; }
+.c2b-freccia svg { overflow: visible; }
 .c2b-freccia-testo {
   margin: 0; max-width: 230px;
   font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-style: italic; font-weight: 400;
   font-size: 14px; line-height: 1.45; color: #6f6a62;
 }
-.c2b-freccia-desktop { width: 78px; height: 30px; margin: 6px 0 0 auto; }
+.c2b-freccia-desktop { display: block; width: 78px; height: 30px; margin: 6px 0 0 auto; }
 .c2b-freccia-mobile { display: none; }
 @media (max-width: 767px) {
   .c2b-freccia {
@@ -60,6 +65,15 @@
    il soggetto resti chiaramente leggibile, compromesso dichiarato.
    ============================================================================ */
 #frase-barrata .sv-container, #prima-dopo .sv-container { position: relative; }
+
+/* la foto+freccia+nota è assoluta (non conta per l'altezza naturale della sezione): su desktop riserviamo
+   lo spazio sotto perché non finisca addosso alla sezione dopo (frase-barrata) o alla card prezzi
+   (prima-dopo). Su mobile la foto torna in flusso normale (position:static più sotto): non serve riservare
+   nulla, si torna alle misure originali delle due sezioni. */
+@media (min-width: 768px) {
+  #frase-barrata.fb { padding-bottom: 176px; }
+  #prima-dopo .pd-grid { margin-top: 300px; }
+}
 
 .vivo .f5-rif-foto { position: absolute; top: 0; right: 0; width: 240px; z-index: 2; pointer-events: none; }
 .vivo .f5-rif-foto--pensa { width: 260px; }
@@ -91,4 +105,13 @@
   .vivo .f5-rif-arrow-desktop { display: none; }
   .vivo .f5-rif-arrow-mobile { display: block; width: 16px; height: 30px; margin: 10px 0 0; overflow: visible; }
   .vivo .f5-rif-nota { max-width: 26ch; text-align: center; margin: 4px 0 0; }
+}
+
+/* Integrazione F5 (Emperator): la nota di Service #02 usciva sopra la sezione (scala.css ha ridotto il padding a 72 px) e la freccia
+   partiva dalla nota, non dal testo. Ora: riga flessibile nell'angolo in alto a destra, alla stessa altezza del badge; la freccia parte
+   12 px a destra del badge (fuori dal testo), sale con una semicurva verso destra e punta alla nota. */
+@media (min-width: 768px) {
+  .c2b-freccia { top: -10px; right: 0; width: 208px; display: flex; flex-direction: row-reverse; align-items: flex-start; gap: 6px; text-align: left; }
+  .c2b-freccia-desktop { width: 48px; height: 36px; margin: 10px 0 0; flex-shrink: 0; }
+  .c2b-freccia-testo { max-width: 154px; font-size: 12px; line-height: 1.38; }
 }

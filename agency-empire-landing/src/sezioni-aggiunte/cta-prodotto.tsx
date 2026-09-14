@@ -37,7 +37,7 @@ const CONFIG: Record<Prodotto, Config> = {
     sistema: "outreach",
     tesseraNome: "Outreach Factory",
     confrontoSaas: true,
-    ghostHref: "#prezzi",
+    ghostHref: "#cartella",
     prenotaSezione: "cta-outreach",
     voci: [
       `Setup in ${FATTI.giorniSetup} giorni`,
@@ -71,7 +71,7 @@ const CONFIG: Record<Prodotto, Config> = {
     sistema: "brain",
     tesseraNome: "Second Brain",
     confrontoSaas: false,
-    ghostHref: "#prezzi",
+    ghostHref: "#tessera",
     prenotaSezione: "cta-brain",
     voci: [
       `Setup in ${FATTI.giorniSetup} giorni`,

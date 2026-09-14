@@ -211,29 +211,84 @@ main > section:first-of-type .hero-tex-velo {
    il bottone, 2 sotto le foto a destra. Selettori più specifici di f4-hero.css (che usa solo `.f4-card--xx`)
    + !important: vincono sempre, a prescindere da eventuali riordini di import futuri.
    ============================================================================ */
+/* CORREZIONE (segnalata da beta-card-f5, grazie): la section dell'hero è alta 826.86px reali a 1920
+   (803.14 a 1440), overflow:hidden — le mie prime posizioni "sotto il funnel" (top 802-826px) finivano
+   quasi del tutto FUORI dal bordo inferiore della section: 4 card su 5 sparivano, tagliate. Non c'è
+   spazio libero sotto il funnel (~20-28px soli). Rifatto: uso invece i due margini laterali liberi
+   (sinistra: striscia larga ~180-240px prima del testo; il margine destro oltre le foto è troppo
+   stretto a 1440 per ospitare qualcosa in sicurezza — vedi nota sotto). Misurato via Playwright
+   (bounding_box + section height) dopo ogni cambio, non a occhio. */
 @media (min-width: 1280px) {
-  /* in alto a sinistra, piccola (0.66×): a 1440 il padding-left del testo scende a 180px (12.5vw),
-     la card deve finire nettamente prima (qui finisce a ~163px) per non toccare mai la "A" di
-     "Automatizziamo" */
+  /* in alto a sinistra, piccola (0.66×): finisce a x≈163px, il testo inizia a 180px (1440) / 240px
+     (1920) — non tocca mai la "A" di "Automatizziamo" */
   main > section:first-of-type .f4-card--l1 {
     left: 20px !important;
     top: 58px !important;
     transform: scale(0.66) rotate(-4deg) !important;
     transform-origin: top left;
   }
+  /* le 2 "in basso a sinistra": impilate nella striscia libera a sinistra del testo (x0-180/240), sotto
+     l1 e sopra dove il testo comincia — posizioni in px assoluti (non vw): restano nella stessa striscia
+     libera a qualunque larghezza ≥1280 perché il margine sinistro del testo non scende mai sotto 180px */
+  main > section:first-of-type .f4-card--l2 {
+    left: 18px !important; top: 258px !important; right: auto !important;
+    transform: scale(0.75) rotate(2deg) !important; transform-origin: top left;
+  }
+  main > section:first-of-type .f4-card--l3 {
+    left: 18px !important; top: 476px !important; right: auto !important;
+    transform: scale(0.75) rotate(-3deg) !important; transform-origin: top left;
+  }
 }
-/* Le 2 in basso a sinistra e le 2 sotto le foto a destra vanno SOTTO il funnel (non affiancate: a 1440
-   il funnel è più stretto e la sua fascia orizzontale copre quasi tutta la larghezza utile) — quota
-   diversa per fascia, calcolata sul fondo reale del funnel misurato: 1920 → y≈799, 1440 → y≈775. */
+/* le 2 "sotto le foto a destra": c'è margine vero solo da 1600px in su (sotto, il gruppo foto scala già
+   più piccolo e lascia una fascia libera sopra al funnel). Sotto 1600px quella fascia è troppo stretta
+   (a 1440: tra fondo-foto e inizio-funnel restano ~114px, ma il margine destro libero oltre le foto è
+   sotto 50px) per ospitarle senza intaccare foto o funnel: le nascondo in quella fascia (dichiarato). */
+/* soglia 1850 (non 1600): i valori sotto sono tarati/verificati su 1920 con margine reale misurato
+   (~17-20px da foto/funnel/bordo section); a 1600 la stessa formula in px assoluti cade in una zona di
+   transizione dove foto e funnel sono già scalati diversamente e l'overlap torna (verificato con
+   Playwright: a 1600px .f4-card--r1 intersecava il funnel ed era tagliato dal bordo della section) */
+@media (min-width: 1850px) {
+  main > section:first-of-type .f4-card--r1 {
+    right: 300px !important; top: 672px !important; left: auto !important;
+    transform: scale(0.55) rotate(2deg) !important; transform-origin: top right;
+  }
+  main > section:first-of-type .f4-card--r2 {
+    right: 80px !important; top: 672px !important; left: auto !important;
+    transform: scale(0.55) rotate(-3deg) !important; transform-origin: top right;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1849px) {
+  main > section:first-of-type .f4-card--r1,
+  main > section:first-of-type .f4-card--r2 {
+    display: none !important;
+  }
+}
+
+/* ===== INTEGRAZIONE F5 (Emperator, dopo α+β) — geometria finale di foto e card, misurata a 1920/1440.
+   Ordine di Max: card «strette fra loro come nell'all. 02, anche leggermente più piccole»; foto «non troppo grandi». ===== */
+@media (min-width: 1280px) {
+  .hf-group {
+    top: 96px !important;
+    right: clamp(32px, 3vw, 64px) !important;
+    width: clamp(250px, 17vw, 330px) !important;
+    height: clamp(300px, 20.5vw, 400px) !important;
+  }
+  /* colonna sinistra: 3 card impilate strette (gap ≈ 12 px), scala .82 → 156×212 */
+  main > section:first-of-type .f4-card--l1,
+  main > section:first-of-type .f4-card--l2,
+  main > section:first-of-type .f4-card--l3 {
+    left: 8px !important; right: auto !important; transform-origin: top left;
+  }
+  main > section:first-of-type .f4-card--l1 { top: 36px !important;  transform: scale(0.8) rotate(-3deg) !important; }
+  main > section:first-of-type .f4-card--l2 { top: 262px !important; transform: scale(0.8) rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--l3 { top: 488px !important; transform: scale(0.8) rotate(-2deg) !important; }
+}
+/* le 2 di destra: sotto le foto, strette, scala .78 → 148×201; solo dove c'è spazio (≥ 1600) */
 @media (min-width: 1600px) {
-  main > section:first-of-type .f4-card--l2 { left: 24px !important; top: 826px !important; right: auto !important; transform: rotate(2deg) !important; }
-  main > section:first-of-type .f4-card--l3 { left: 268px !important; top: 826px !important; right: auto !important; transform: rotate(-3deg) !important; }
-  main > section:first-of-type .f4-card--r1 { right: 252px !important; top: 826px !important; left: auto !important; transform: rotate(2deg) !important; }
-  main > section:first-of-type .f4-card--r2 { right: 30px !important; top: 826px !important; left: auto !important; transform: rotate(-3deg) !important; }
-}
-@media (min-width: 1280px) and (max-width: 1599px) {
-  main > section:first-of-type .f4-card--l2 { left: 24px !important; top: 802px !important; right: auto !important; transform: rotate(2deg) !important; }
-  main > section:first-of-type .f4-card--l3 { left: 268px !important; top: 802px !important; right: auto !important; transform: rotate(-3deg) !important; }
-  main > section:first-of-type .f4-card--r1 { right: 252px !important; top: 802px !important; left: auto !important; transform: rotate(2deg) !important; }
-  main > section:first-of-type .f4-card--r2 { right: 30px !important; top: 802px !important; left: auto !important; transform: rotate(-3deg) !important; }
+  main > section:first-of-type .f4-card--r1,
+  main > section:first-of-type .f4-card--r2 {
+    display: flex !important; left: auto !important; top: 590px !important; transform-origin: top right;
+  }
+  main > section:first-of-type .f4-card--r1 { right: 250px !important; transform: scale(0.78) rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--r2 { right: 88px !important;  transform: scale(0.78) rotate(-3deg) !important; }
 }

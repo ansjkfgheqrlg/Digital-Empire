@@ -151,7 +151,7 @@ export function ContentDeep() {
                     <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
                   </marker>
                 </defs>
-                <path d="M2,62 C34,58 46,30 70,10" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#c2b-punta)" />
+                <path d="M2,84 C30,84 50,50 92,14" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#c2b-punta)" />
               </svg>
               <svg className="c2b-freccia-mobile" viewBox="0 0 20 44" aria-hidden="true" focusable="false">
                 <defs>
