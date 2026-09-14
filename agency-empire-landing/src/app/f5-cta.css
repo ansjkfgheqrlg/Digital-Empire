@@ -1,1 +1,191 @@
-/* f5-cta.css — F5 (ordini di Max 14/09 notte). Importato DOPO f4-*.css: vince per ordine. */
+/* f5-cta.css — F5: le tre pagine CTA (una per prodotto), ordini di Max 14/09 notte.
+   Riferimento: brief/F5-allegati/08.jpg (funneloperator.it). Fondo ink + grana-fuoco a bassissima opacità,
+   titolo enorme, tessera appesa (riuso del disegno A17 in aggiunte-c.css), prezzo, due bottoni.
+   Importato per ultimo (dopo f5-frecce.css): vince per ordine su tutto il resto. */
+
+/* ---- contenitore: ~100vh, min/max, centrato ---- */
+.cp-sezione {
+  position: relative;
+  min-height: 820px;
+  max-height: 1000px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+}
+.cp-sfondo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("/texture/grana-fuoco.webp");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 1400px auto;
+  opacity: .12;
+  mix-blend-mode: screen;
+}
+.cp-wrap {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 760px;
+  padding: 34px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 13px;
+}
+
+.cp-eyebrow { color: var(--sv-silver); }
+
+.cp-titolo {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: .95;
+  letter-spacing: -.02em;
+  font-size: clamp(48px, 7vw, 104px);
+}
+.cp-titolo .cp-accento { color: var(--sv-orange); }
+
+/* ---- la tessera appesa: riuso del disegno A17 (aggiunte-c.css .tess-*), scala e rotazione propria ---- */
+.cp-scena {
+  position: relative;
+  width: 176px;
+  padding-top: 42px;
+  margin: 2px auto 0;
+}
+.cp-laccio {
+  position: absolute; top: -32px; left: 50%; transform: translateX(-50%);
+  width: 18px; height: 76px; border-radius: 0 0 5px 5px;
+  background: linear-gradient(90deg, #191919, #2c2c2c 40%, #1a1a1a);
+  box-shadow: 0 8px 18px -10px rgba(0, 0, 0, .7);
+}
+.cp-laccio::after {
+  content: ""; position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%);
+  width: 26px; height: 11px; border-radius: 4px; background: #b9b3c2;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .3);
+}
+.cp-card {
+  position: relative;
+  width: 176px;
+  height: 246px;
+  border-radius: 14px;
+  padding: 16px 14px 12px;
+  color: #fff;
+  background: linear-gradient(160deg, #1f1f20 0%, #0d0d0d 100%);
+  border: 1px solid rgba(217, 212, 225, .22);
+  box-shadow: 0 40px 70px -30px rgba(0, 0, 0, .8), 0 0 0 1px rgba(0, 0, 0, .6);
+  transform: rotate(-2deg);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.cp-card::before {
+  content: ""; position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+  width: 40px; height: 7px; border-radius: 999px; background: #050505;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12);
+}
+.cp-card::after {
+  /* il foro in basso, come su un vero badge */
+  content: ""; position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #050505; box-shadow: inset 0 1px 2px rgba(0, 0, 0, .6);
+}
+.cp-card-testa {
+  margin-top: 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--sv-hair);
+  font-size: 9px;
+  color: var(--sv-silver-dim);
+}
+.cp-card-testa b { display: block; margin-top: 2px; color: #fff; font-size: 12px; letter-spacing: 0; text-transform: none; }
+.cp-card-lista {
+  margin: 9px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 5px;
+  flex: 1;
+}
+.cp-card-lista li {
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  gap: 6px;
+  align-items: start;
+  font-size: 10px;
+  line-height: 1.3;
+  color: var(--sv-silver);
+}
+.cp-card-lista li::before { content: "✓"; color: var(--sv-orange); font-weight: 900; }
+.cp-card-piede {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--sv-hair);
+  font-size: 8.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--sv-silver-dim);
+}
+
+/* ---- prezzo ---- */
+.cp-prezzo-riga {
+  margin: 0;
+  font-weight: 800;
+  color: #fff;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+}
+.cp-prezzo-nota {
+  margin: 0;
+  color: var(--sv-silver);
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 46ch;
+}
+.cp-prezzo-confronto {
+  margin: 0;
+  color: var(--sv-silver-dim);
+  font-size: 13px;
+}
+
+/* ---- niente countdown: una riga mono al suo posto ---- */
+.cp-slot {
+  margin: 2px 0 0;
+  color: var(--sv-silver-dim);
+}
+
+/* ---- bottoni ---- */
+.cp-bottoni {
+  margin-top: 6px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ---- riga finale ---- */
+.cp-garanzie {
+  margin-top: 4px;
+  color: var(--sv-silver-dim);
+  opacity: .8;
+}
+
+@media (max-width: 640px) {
+  .cp-sezione { min-height: 760px; }
+  .cp-wrap { padding: 26px 18px; gap: 10px; }
+  .cp-scena { width: 180px; padding-top: 38px; margin-top: 0; }
+  .cp-laccio { top: -30px; height: 70px; }
+  .cp-card { width: 180px; height: 270px; padding: 16px 14px 12px; }
+  .cp-prezzo-riga { font-size: 46px; }
+  .cp-prezzo-nota { font-size: 13px; }
+  .cp-garanzie { font-size: 9px; }
+  .cp-bottoni { flex-direction: column; width: 100%; max-width: 320px; gap: 10px; }
+  .cp-bottoni a { width: 100%; padding: 13px 20px; }
+}

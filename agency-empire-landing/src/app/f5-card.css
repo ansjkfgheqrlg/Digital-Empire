@@ -1,1 +1,72 @@
-/* f5-card.css — F5 (ordini di Max 14/09 notte). Importato DOPO f4-*.css: vince per ordine. */
+/* f5-card.css — F5 (ordini di Max 14/09 notte). Importato DOPO f4-*.css: vince per ordine.
+   Aspetto INTERNO delle 5 card fluttuanti (hero-card.tsx), rifatto sullo stile dell'allegato 02:
+   card scura stretta, illustrazione monocroma granulosa nei 2/3 superiori che sfuma nel fondo,
+   titolo bianco 600 + spunta in cerchio arancione, riga argento sotto, grana leggera sull'intera
+   card. NON tocca posizione/rotazione delle card (.f4-card--l1..r2 restano in f4-hero.css /
+   f5-hero.css, di competenza dello scagnozzo alfa) — solo dimensione e resa interna. */
+
+.f4-card {
+  width: 190px;
+  height: 258px;
+  padding: 0;
+  gap: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0c0c0d;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+/* la grana esistente (f4-card::after, feTurbulence) resta: qui solo piu' leggera come da ordine */
+.f4-card::after {
+  opacity: 0.2;
+}
+
+.f5-card-img {
+  position: relative;
+  width: 100%;
+  height: 62%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 70%, transparent);
+  mask-image: linear-gradient(#000 70%, transparent);
+}
+.f5-card-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.f5-card-body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px 16px;
+}
+
+.f5-card-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.f5-card-title b {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+.f5-card-check {
+  flex: none;
+  width: 14px;
+  height: 14px;
+}
+
+.f5-card-sub {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #a8a2ad;
+}

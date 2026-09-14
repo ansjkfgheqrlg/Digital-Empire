@@ -1,1 +1,239 @@
-/* f5-hero.css — F5 (ordini di Max 14/09 notte). Importato DOPO f4-*.css: vince per ordine. */
+/* f5-hero.css — F5 (ordini di Max 14/09 notte). Importato DOPO f4-*.css: vince per ordine + specificità.
+   Ordine testuale di Max: titolo/sottotitolo TOTALMENTE A SINISTRA, ombreggiatura nera dietro le scritte
+   che sale verso l'alto (sfondo resta visibile), bottone a sinistra, card sparse (non sopra testo/foto),
+   3 foto di Max a destra a gruppo (leggermente oblique, "una sotto poi una accanto"). hero.tsx: 0 righe
+   rimosse (solo import + <HeroFoto /> aggiunti in HeroFoto — vedi hero-foto.tsx). Tutta la geometria vive qui. */
+
+/* ============================================================================
+   B1 · IL BLOCCO TESTO A SINISTRA (contenitore, non hero.tsx — solo CSS)
+   Il div.max-w-5xl.text-center è il PRIMO dei due (il secondo, del funnel, non ha .text-center:
+   selettore con .text-center non lo tocca mai). Tolgo centratura/mx-auto, allineo tutto a sinistra,
+   lascio un margine libero a sinistra per la card "in alto a sinistra" (B4).
+   ============================================================================ */
+main > section:first-of-type > div.max-w-5xl.text-center {
+  text-align: left !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: clamp(40px, 12.5vw, 240px) !important;
+  padding-right: clamp(24px, 4vw, 64px) !important;
+  position: relative;
+  z-index: 3; /* sopra il velo/texture e sopra le card (z:1) */
+}
+
+/* h1/p/CTA ereditano text-align:left dal contenitore; le classi text-center/justify-center dei singoli
+   nodi (Tailwind) vengono spente esplicitamente perché più specifiche del solo ereditare. */
+main > section:first-of-type h1.text-center { text-align: left !important; }
+main > section:first-of-type h1 { max-width: 760px; }
+main > section:first-of-type p.leading-relaxed {
+  text-align: left !important;
+  max-width: 60ch !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+/* riga CTA: il contenitore esterno (items-center) e quello interno con la sola CTA (justify-center) */
+main > section:first-of-type .flex.flex-col.gap-5.items-center {
+  align-items: flex-start !important;
+}
+main > section:first-of-type .flex.flex-col.gap-5.items-center > div:first-child {
+  justify-content: flex-start !important;
+}
+
+/* ============================================================================
+   B2 · TIPOGRAFIA DEL TITOLO — pesi diversi sugli span esistenti (parole identiche, ordine di Max)
+   span1 "Automatizziamo la tua" → peso 400, resta argento (classe .text-silver-white = gradiente argento)
+   span2 "operatività" → peso 800, BIANCO pieno (non più gradiente argento: si stacca da span1)
+   span3 "con AI Workflows." → resta come oggi (accento sfumato, peso 800): nessuna modifica qui
+   !important necessario: batte sia le classi Tailwind (font-semibold/font-black) sia gli style inline
+   (letterSpacing/lineHeight) — un !important in foglio esterno vince su uno style inline non-important.
+   ============================================================================ */
+@media (min-width: 768px) {
+  main > section:first-of-type h1 > span:nth-child(1) {
+    font-weight: 400 !important;
+  }
+  main > section:first-of-type h1 > span:nth-child(2) {
+    font-weight: 800 !important;
+    font-size: clamp(56px, 5.2vw, 104px) !important; /* ≈96-104px a 1920, scala fino a 768 */
+    line-height: 0.95 !important;
+    letter-spacing: -0.03em !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+  }
+}
+
+/* ============================================================================
+   B3 · QUALITÀ — ombra leggera sul testo, argento sul paragrafo, niente blur
+   ============================================================================ */
+main > section:first-of-type h1 > span {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.6);
+  image-rendering: auto;
+}
+main > section:first-of-type p.leading-relaxed {
+  font-size: 18px !important;
+  line-height: 1.65 !important;
+  color: rgba(217, 212, 225, 0.86) !important; /* argento, coerente con --sv-silver */
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.55);
+}
+main > section:first-of-type p.leading-relaxed strong { color: rgba(255, 255, 255, 0.95) !important; }
+
+/* ombra dietro il bottone (in aggiunta al glow arancione esistente, non lo sostituisce) */
+main > section:first-of-type .btn-orange {
+  box-shadow:
+    0 20px 60px -10px rgba(0, 0, 0, 0.8),
+    0 0 40px 0 rgba(251, 70, 4, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+}
+
+/* ============================================================================
+   B4 · OMBREGGIATURA NERA dietro testo/bottone/foto — sale verso l'alto, sfondo resta visibile.
+   Sostituisce il velo D1 (era centrato per un titolo centrato): ora il nero si addensa dove sta il
+   testo (sinistra, 30% da sx) e in alto (linear-gradient che sale), con un velo leggero di rientro verso
+   il basso per non lasciare scoperto il testo piccolo del funnel (era già così in D1, lo mantengo:
+   "riduci il velo generale se ora è ridondante" — qui non lo è, gli aggiungo il pezzo che manca).
+   ============================================================================ */
+main > section:first-of-type .hero-tex-velo {
+  background:
+    radial-gradient(ellipse 70% 80% at 30% 50%, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0) 78%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 60%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.72) 100%);
+}
+
+/* ============================================================================
+   B5 · LE 3 FOTO A DESTRA (hero-foto.tsx, .hf-*) — gruppo assoluto sulla section (come le card f4),
+   sotto il testo (z-index 3 sul testo, foto a z 2) ma sopra texture/velo/card di sfondo.
+   Dimensioni reali: foto1 1101×616, foto2 1110×618, foto3 555×544 (ritaglio) — mai oltre 1:1 a 2×DPR
+   (340 CSS px × 2 = 680 device px < 1101 reale: ok).
+   ============================================================================ */
+.hf-group {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+}
+.hf-photo {
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.85));
+  background: #0a0a0a;
+}
+.hf-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+/* grana leggera sopra ogni foto — stesso pattern feTurbulence del velo dell'hero, opacità .25 */
+.hf-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.25;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.0' numOctaves='4' stitchTiles='stitch' seed='7'/><feColorMatrix values='0 0 0 0 0.85 0 0 0 0 0.82 0 0 0 0 0.80 0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+
+/* Desktop ≥1280: gruppo a destra, verticalmente accanto al blocco testo. Scala fluida via vw (base 1920). */
+@media (min-width: 1280px) {
+  .hf-group {
+    top: clamp(140px, 8vw, 175px);
+    right: clamp(28px, 4.8vw, 92px);
+    width: clamp(300px, 22vw, 420px);
+    height: clamp(320px, 23.2vw, 445px);
+  }
+  /* foto1: in alto a destra del gruppo, ruotata -4° */
+  .hf-photo--1 {
+    top: 0;
+    right: 0;
+    width: 100%;
+    transform: rotate(-4deg);
+    z-index: 3;
+  }
+  /* foto2: sotto, spostata a sinistra, ruotata +3°, si sovrappone a foto1 di circa 40px */
+  .hf-photo--2 {
+    top: 35.5%;
+    right: 14%;
+    width: 88%;
+    transform: rotate(3deg);
+    z-index: 2;
+  }
+  /* foto3 (il ritaglio stretto): accanto/in basso a destra, piccola, ruotata -6° */
+  .hf-photo--3 {
+    top: 60%;
+    right: -3%;
+    width: 55%;
+    transform: rotate(-6deg);
+    z-index: 4;
+  }
+}
+
+/* 768–1279: niente spazio a fianco del testo (colonna piena) → le 3 foto scendono SOTTO il testo,
+   in riga, piccole e leggermente oblique (nessuna card è visibile qui: f4-hero.css le nasconde già
+   sotto 1280px, quindi zero conflitti). Posizione stimata (non verificata su screenshot: i 3 viewport di
+   verifica sono 1920/1440/390, nessuno cade in questa fascia) — dichiarato nel report. */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hf-group {
+    left: 50%;
+    right: auto;
+    top: 900px;
+    transform: translateX(-50%);
+    width: min(92vw, 560px);
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 18px;
+  }
+  .hf-photo {
+    position: static;
+    width: 30% !important;
+    flex: 0 0 auto;
+  }
+  .hf-photo--1 { transform: rotate(-4deg); }
+  .hf-photo--2 { transform: rotate(3deg); }
+  .hf-photo--3 { transform: rotate(-6deg); width: 26% !important; }
+}
+
+/* <768: niente spazio, si nascondono (dichiarato — ordine di Max ammette questa via) */
+@media (max-width: 767px) {
+  .hf-group { display: none !important; }
+}
+
+/* ============================================================================
+   B6 · LE CARD SPARSE (.f4-card, di β) — le sposto SOLO in posizione (mai stile/colore: quello è di β).
+   Layout: 1 in alto a sinistra (piccola, nel margine libero prima del testo), 2 in basso a sinistra sotto
+   il bottone, 2 sotto le foto a destra. Selettori più specifici di f4-hero.css (che usa solo `.f4-card--xx`)
+   + !important: vincono sempre, a prescindere da eventuali riordini di import futuri.
+   ============================================================================ */
+@media (min-width: 1280px) {
+  /* in alto a sinistra, piccola (0.66×): a 1440 il padding-left del testo scende a 180px (12.5vw),
+     la card deve finire nettamente prima (qui finisce a ~163px) per non toccare mai la "A" di
+     "Automatizziamo" */
+  main > section:first-of-type .f4-card--l1 {
+    left: 20px !important;
+    top: 58px !important;
+    transform: scale(0.66) rotate(-4deg) !important;
+    transform-origin: top left;
+  }
+}
+/* Le 2 in basso a sinistra e le 2 sotto le foto a destra vanno SOTTO il funnel (non affiancate: a 1440
+   il funnel è più stretto e la sua fascia orizzontale copre quasi tutta la larghezza utile) — quota
+   diversa per fascia, calcolata sul fondo reale del funnel misurato: 1920 → y≈799, 1440 → y≈775. */
+@media (min-width: 1600px) {
+  main > section:first-of-type .f4-card--l2 { left: 24px !important; top: 826px !important; right: auto !important; transform: rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--l3 { left: 268px !important; top: 826px !important; right: auto !important; transform: rotate(-3deg) !important; }
+  main > section:first-of-type .f4-card--r1 { right: 252px !important; top: 826px !important; left: auto !important; transform: rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--r2 { right: 30px !important; top: 826px !important; left: auto !important; transform: rotate(-3deg) !important; }
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  main > section:first-of-type .f4-card--l2 { left: 24px !important; top: 802px !important; right: auto !important; transform: rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--l3 { left: 268px !important; top: 802px !important; right: auto !important; transform: rotate(-3deg) !important; }
+  main > section:first-of-type .f4-card--r1 { right: 252px !important; top: 802px !important; left: auto !important; transform: rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--r2 { right: 30px !important; top: 802px !important; left: auto !important; transform: rotate(-3deg) !important; }
+}

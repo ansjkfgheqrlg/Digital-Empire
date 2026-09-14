@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { HeroTexture } from "@/sezioni-aggiunte/hero-texture";
 import { FunnelHero } from "@/sezioni-aggiunte/funnel-hero";
 import { HeroCards } from "@/sezioni-aggiunte/hero-card"; // F4 A5
+import { HeroFoto } from "@/sezioni-aggiunte/hero-foto"; // F5 (ordine di Max 14/09 notte): 3 foto a destra
 
 function CTA({
   large = false,
@@ -31,6 +32,7 @@ export function Hero() {
     <section className="bg-ink relative overflow-hidden section-border-t">
       <HeroTexture />
       <HeroCards />
+      <HeroFoto />
       {/* Marquee */}
       <div
         className="overflow-hidden py-3 relative"

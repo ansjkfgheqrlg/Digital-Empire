@@ -15,6 +15,26 @@ export function FraseBarrata() {
               <b>Ovvero:</b> <span className="sv-it">è un processo lungo e ripetitivo</span>
             </span>
           </p>
+
+          {/* AGGIUNTA F5 (ordine 3 di Max, 14/09 notte) — foto di riferimento (09/10) a destra della riga barrata,
+              piccola, con freccia hairline (mai a contatto) verso una nota letterale. Solo aggiunta, nessuna riga
+              esistente toccata. Testo nuovo in brief/COPY-F5-gamma.md §3. CSS: f5-frecce.css (.f5-rif-*). */}
+          <div className="f5-rif-foto f5-rif-foto--smorfia">
+            <figure className="f5-rif-fig">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/foto/rif-smorfia.jpg" width={735} height={648} alt="" loading="lazy" decoding="async" />
+            </figure>
+            <svg className="f5-rif-arrow" viewBox="0 0 60 36" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <defs>
+                <marker id="f5-rif-punta-smorfia" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
+                </marker>
+              </defs>
+              <path d="M4,4 C24,4 38,24 56,30" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#f5-rif-punta-smorfia)" />
+            </svg>
+            <p className="f5-rif-nota">La faccia di chi ha appena pagato il terzo abbonamento del mese.</p>
+          </div>
+
           <h2 id="frase-barrata-h2" className="sv-h2 fb-vera">
             Ti serve un sistema che gira <span className="sv-it">senza di te.</span>
           </h2>

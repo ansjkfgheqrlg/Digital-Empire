@@ -44,6 +44,32 @@ const NODI = [
   },
 ] as const;
 
+/* AGGIUNTA F5 (ordine 1 di Max, 14/09 notte) — sotto ciascuna delle 3 card una freccetta hairline ferma che porta
+   a una spiegazione letterale, molto semplice. La freccia+nota vive DENTRO ogni <li className="ra-nodo"> come
+   ultimo figlio assoluto (la card ha già position:relative da rifatte-a.css) — nessuna riga esistente delle
+   card viene toccata. Testo nuovo in brief/COPY-F5-gamma.md §1. CSS: f5-frecce.css (.ra-freccia-nota*). */
+const NOTE_SISTEMA: Record<(typeof NODI)[number]["id"], string> = {
+  outreach: "Cioè: ogni mattina il sistema scrive e manda i messaggi ai tuoi potenziali clienti, da solo.",
+  content: "Cioè: gli dai un brief, lui produce caroselli, script e caption pronti su Drive.",
+  brain: "Cioè: l'AI ricorda il tuo business e risponde senza che tu glielo rispieghi.",
+};
+
+function FrecciaNota({ id }: { id: (typeof NODI)[number]["id"] }) {
+  return (
+    <div className="ra-freccia-nota">
+      <svg className="ra-freccia-svg" viewBox="0 0 16 24" aria-hidden="true" focusable="false">
+        <defs>
+          <marker id={`ra-punta-${id}`} viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto">
+            <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
+          </marker>
+        </defs>
+        <path d="M8,2 C10,9 6,14 8,20" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd={`url(#ra-punta-${id})`} />
+      </svg>
+      <p className="ra-nota-testo">{NOTE_SISTEMA[id]}</p>
+    </div>
+  );
+}
+
 export function VslV2() {
   return (
     <div className="vivo">
@@ -94,6 +120,8 @@ export function VslV2() {
                     ))}
                   </ul>
                 </div>
+
+                <FrecciaNota id={n.id} />
               </li>
             ))}
           </ul>
