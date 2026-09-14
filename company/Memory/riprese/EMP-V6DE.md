@@ -14,7 +14,28 @@ Studiare **167 lezioni** (AI TUBE PRO 116 + Bonus Esclusivi 51, portale
 `YOUTUBE-AUTOMATION-FACTORY` in tutto cio' che serve**. Piano approvato da Max il
 2026-09-04: [PIANO-STUDIO-AITUBEPRO](../plans/PIANO-STUDIO-AITUBEPRO.md).
 
-## ▶️ RIPRESA — leggi prima [CP-20260911-FHFZ](../checkpoints/CP-20260911-FHFZ.md), poi torna qui
+## ▶️ RIPRESA 2026-09-14 — la premessa dell'11/9 era FALSA: leggi questo blocco, poi il CP di oggi
+
+**«5 video pronti mai caricati»: sbagliato.** Interrogato il canale (oEmbed pubblico, zero clic):
+6 cartelle su 7 di `VIDEO-PRONTI/` erano **gia' PUBBLICHE** su Legami d'amore (video-01 `2t4BZR3KAiU`,
+02 `JOUWaLkyoN8`, 03 `-U7ZzQG1Gn8`, 04 `RIZuutLaEV0`, 05 `6hrhlS9jC4g`, 07 `QwtZ2e2MY1c`); video-06 e'
+una **bozza** (`RUg6TgSd79s`); video-08 aspetta la copertina. La cartella non sapeva di essere
+online perche' la fabbrica scrive l'id in `memory/video_prodotti.json`, non in `metadata.json`, e
+`carica_pronti.py` leggeva solo la cartella: il primo giro vero avrebbe fatto **doppioni**,
+evitati solo perche' il profilo Chrome era scaduto. Registrato: **ERR-20260914-001**.
+
+**Riparato e provato oggi (41 test verdi):** verita' scritta nelle 7 cartelle e nel manifesto;
+`carica_pronti.py` incrocia il manifesto (cartella + titolo; una bozza non conta) e mostra la
+coda dell'output quando fallisce; `--massimo N`; fase 5 di apex7 con `--video-folder` **usa il
+`metadata.json` pronto** invece di pretendere lo script della fase 3 (secondo bug scoperchiato
+dal fix dell'11/9); profilo upload di `legamidiamore` → `chrome-profile-youtube` (loggato come
+legamidamore55@gmail.com, verificato), il vecchio e' scaduto; `legamidiamore_session_check.py`
+segue l'orchestratore; help `--phase` e `avvia-yt.md` §6 corretti.
+
+**Regola nuova (sta nel codice, non solo qui):** un video e' «mai caricato» solo dopo aver
+interrogato il canale, mai contando i file sul disco.
+
+## ▶️ RIPRESA (11/9) — leggi prima [CP-20260911-FHFZ](../checkpoints/CP-20260911-FHFZ.md), poi torna qui
 
 **Stato al 2026-09-11 sera:** missione al **21%**. A4 e A6 chiuse (33/167 lezioni). **11 script
 nuovi** nella fabbrica, 4 bug di produzione corretti e provati, 3 agenti e 2 skill nuovi.

@@ -3,6 +3,12 @@
 Tutto il Dossier 38 v2 è costruito e in anteprima (CP-PP3C). Gael/Neri: NON toccare `agency-empire-landing/` finché questo blocco non sparisce.
 Il `--prod` resta di Max.
 
+## 🟠 2026-09-14 notte — SITO AGENCY F5 COSTRUITA (hero a sinistra + foto + card stampa + frecce + 3 CTA) — ANTEPRIMA, aspetta Max — CP-20260914-HTXT
+
+**Gesto solo di Max (ADR-026):** guardare https://agency-empire-landing-97sgyqeom-maximilians-projects-f0964962.vercel.app/ → correzioni → `--prod`.
+**Fatto:** 10 allegati estratti; hero a sinistra con ombre e le sue 3 foto; 5 illustrazioni generate per le card; «Cioè:» sotto i 3 sistemi; freccia #02
+corretta; 2 foto di riferimento (American Psycho: copyright altrui, dichiarato) con freccia; 3 pagine CTA. Gate PASS. Commit `7cb77426`.
+
 ## 🟠 2026-09-14 notte — SITO AGENCY F4 COSTRUITA (22 task, 4 scagnozzi) — ANTEPRIMA, aspetta Max — CP-20260914-P6GG
 
 **Gesto solo di Max (ADR-026):** guardare https://agency-empire-landing-2uvpnq2q6-maximilians-projects-f0964962.vercel.app/ → correzioni → `--prod`.
