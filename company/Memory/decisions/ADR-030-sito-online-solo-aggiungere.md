@@ -73,3 +73,7 @@ Max: «modifica le sezioni brutte, non quelle belle» (13/09, dopo l'anteprima F
 la ordina con quelle parole, e comunque prima in anteprima»): 7 sezioni di giugno rifatte come componenti nuovi **con lo stesso testo parola per parola**,
 scambiate in `page.tsx`, solo in anteprima. Il gate è stato esteso per restare meccanico anche in deroga: `--parole` (parte A come flusso di parole),
 tolleranza dei doppioni, `--deroga-b <file>` (parte B) — ogni deroga stampata e scritta nel CP-20260913-76GG.
+
+
+## Nota 2026-09-14 — seconda deroga su ordine testuale (F4, CP-20260914-P6GG)
+Max: «bisogna eliminare tutto tranne il titolo, il bottone e la mappa». Le 4 righe dell'hero di giugno sono NASCOSTE da CSS (restano nel DOM: gate testo intatto, 0 righe rimosse). Blu su Second Brain: fuori palette, ordine con 2 allegati. Dossier 40.
