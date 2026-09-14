@@ -37,6 +37,7 @@
    Contrasto: ink #141414 su argento (#d3cfda) ≥ 7:1; su arancio (#ea7430) ≈ 6,3:1.
    ============================================================================ */
 .vivo .ra-vsl .ra-nodo.grad-max {
+  background: var(--grad-max);
   border: 1px solid rgba(0, 0, 0, .25);
   box-shadow: 0 10px 26px -18px rgba(0, 0, 0, .45);
   border-radius: 18px;
@@ -137,18 +138,24 @@ main > section:has(h2[class*="text-[3rem]"]) > * {
    inserite di sana pianta (gate ADR-030): la posizione arriva da qui.
    ============================================================================ */
 main > section.bg-grey .grid > div:last-child { position: relative; }
-.c2-freccia { position: absolute; left: 2px; right: 2px; top: -84px; z-index: 2; }
+/* la sezione ha già padding-top:6rem + position:relative da .section (globals.css); qui basta più
+   respiro sopra SOLO per questa sezione (ha .c2-freccia dentro) perché testo+curva ci stiano 12 px
+   sopra il blocco senza toccare la sezione precedente. */
+@media (min-width: 768px) {
+  main > section.bg-grey:has(.c2-freccia) { padding-top: 224px; }
+}
+.c2-freccia { position: absolute; left: 2px; right: 2px; top: -180px; z-index: 2; }
 .c2-freccia svg { overflow: visible; }
-.c2-freccia-desktop { display: block; width: 100%; height: 72px; }
+.c2-freccia-desktop { display: block; width: 100%; height: 50px; margin-top: 6px; }
 .c2-freccia-mobile { display: none; width: 22px; height: 44px; }
 .c2-freccia-testo {
-  margin: 8px 0 0; max-width: 34ch;
+  margin: 0; max-width: 34ch;
   font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-style: italic; font-weight: 400;
   font-size: 15px; line-height: 1.5; color: #6f6a62;
 }
 @media (max-width: 767px) {
   .c2-freccia { position: static; margin: 0 0 18px; }
   .c2-freccia-desktop { display: none; }
-  .c2-freccia-mobile { display: block; width: 22px; height: 44px; }
-  .c2-freccia-testo { max-width: none; margin-top: 6px; }
+  .c2-freccia-mobile { display: block; width: 22px; height: 44px; margin-top: 6px; }
+  .c2-freccia-testo { max-width: none; }
 }

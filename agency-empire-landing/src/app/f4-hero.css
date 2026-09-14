@@ -173,3 +173,14 @@ main > section:first-of-type .f4-cards {
 @media (min-width: 1600px) {
   .f4-card--l2 { display: flex; }
 }
+
+/* Integrazione F4 (Emperator): il marquee di giugno (`width: max-content`) sfondava il viewport a 390 px (scrollWidth 424).
+   Il contenitore del marquee taglia l'eccesso; il body non scorre più in orizzontale su mobile. */
+section:has(> div > .marquee) > div:has(> .marquee) { overflow: hidden; }
+.marquee { max-width: none; }
+/* Integrazione F4: a 390 px la griglia di prove-vere (colonna 400px) sfondava il viewport (scrollWidth 424): sotto 900 la colonna
+   diventa fluida. Corregge il difetto misurato dagli scagnozzi (era nostro, di F1). */
+@media (max-width: 899px) {
+  .vivo .pv-griglia { grid-template-columns: minmax(0, 1fr) !important; }
+  .vivo .pv-figura { width: 100% !important; }
+}

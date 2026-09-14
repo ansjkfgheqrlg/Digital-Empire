@@ -56,7 +56,7 @@ export function VslV2() {
             </span>
             <p className="sv-eyebrow ra-eyebrow">Digital Empire · Come funziona il sistema</p>
             <h2 id="vsl-v2-h2" className="sv-h2 ra-h2">
-              Tre <b>sistemi</b>. Un&apos;unica <b>operatività</b>
+              Tre <b>sistemi.</b> Un&apos;unica <b>operatività</b>
               <br />
               <span className="ra-h2-grande">che gira da sola.</span>
             </h2>

@@ -140,25 +140,25 @@ export function ContentDeep() {
                 di testo: parte 12 px sopra, sale con una semicurva, punta 5 px; testo piccolo serif corsivo alla punta.
                 Solo aggiunta, nessuna riga esistente toccata. CSS: f4-colori.css (.c2-freccia*). */}
             <div className="c2-freccia">
-              <svg className="c2-freccia-desktop" viewBox="0 0 200 90" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <p className="c2-freccia-testo">
+                Lo so, stiamo andando un po&apos; di fretta&hellip; Ti sto già spiegando il mio secondo servizio. Nessuna confusione, mi raccomando: questo è un altro servizio. Non si tratta più di Outreach.
+              </p>
+              <svg className="c2-freccia-desktop" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                 <defs>
                   <marker id="c2-punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
                     <path d="M0,0 L9,5 L0,10 z" fill="#fb4604" />
                   </marker>
                 </defs>
-                <path d="M4,86 C42,86 26,12 112,7" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#c2-punta)" />
+                <path d="M4,54 C40,54 62,4 118,4" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#c2-punta)" />
               </svg>
-              <svg className="c2-freccia-mobile" viewBox="0 0 20 60" aria-hidden="true" focusable="false">
+              <svg className="c2-freccia-mobile" viewBox="0 0 20 44" aria-hidden="true" focusable="false">
                 <defs>
                   <marker id="c2-punta-m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
                     <path d="M0,0 L9,5 L0,10 z" fill="#fb4604" />
                   </marker>
                 </defs>
-                <path d="M10,55 L10,6" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#c2-punta-m)" />
+                <path d="M10,4 L10,39" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#c2-punta-m)" />
               </svg>
-              <p className="c2-freccia-testo">
-                Lo so, stiamo andando un po&apos; di fretta&hellip; Ti sto già spiegando il mio secondo servizio. Nessuna confusione, mi raccomando: questo è un altro servizio. Non si tratta più di Outreach.
-              </p>
             </div>
             <Reveal>
               <span className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.20em] text-white rounded-full px-3 py-1.5 mb-6" style={{ background: "#fb4604" }}>
