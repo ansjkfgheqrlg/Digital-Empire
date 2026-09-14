@@ -24,13 +24,21 @@ export function FraseBarrata() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/foto/rif-smorfia.jpg" width={735} height={648} alt="" loading="lazy" decoding="async" />
             </figure>
-            <svg className="f5-rif-arrow" viewBox="0 0 60 36" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <svg className="f5-rif-arrow-desktop" viewBox="0 0 46 30" preserveAspectRatio="none" aria-hidden="true" focusable="false">
               <defs>
                 <marker id="f5-rif-punta-smorfia" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto">
                   <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
                 </marker>
               </defs>
-              <path d="M4,4 C24,4 38,24 56,30" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#f5-rif-punta-smorfia)" />
+              <path d="M2,3 C18,3 30,20 43,26" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#f5-rif-punta-smorfia)" />
+            </svg>
+            <svg className="f5-rif-arrow-mobile" viewBox="0 0 16 30" aria-hidden="true" focusable="false">
+              <defs>
+                <marker id="f5-rif-punta-smorfia-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
+                </marker>
+              </defs>
+              <path d="M8,2 L8,26" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#f5-rif-punta-smorfia-m)" />
             </svg>
             <p className="f5-rif-nota">La faccia di chi ha appena pagato il terzo abbonamento del mese.</p>
           </div>

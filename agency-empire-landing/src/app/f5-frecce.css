@@ -1,1 +1,94 @@
-/* f5-frecce.css — F5 (ordini di Max 14/09 notte). Importato DOPO f4-*.css: vince per ordine. */
+/* f5-frecce.css — F5 (ordini di Max 14/09 notte). Importato DOPO f4-*.css: vince per ordine.
+   Ordine di Max (ADR-030 / CLAUDE-SITI §13): niente di ciò che esiste si modifica, si può solo aggiungere.
+   Ogni regola qui è nuova o scoperta scelta da noi in TSX (nuove classi); nessuna riga di file f4-*.css/
+   rifatte-*.css viene toccata — dove serve vincere su una regola vecchia (es. .c2-freccia*) si smette
+   semplicemente di usare quella classe nel markup: le vecchie regole restano ma non trovano più elementi. */
+
+/* ============================================================================
+   TASK 1 (ordine 1) — «Tre sistemi» (vsl-v2.tsx): una freccetta hairline sotto ognuna delle 3 card, ferma,
+   che porta a una nota letterale. Vive DENTRO ogni <li class="ra-nodo"> come ultimo figlio assoluto — la
+   card ha già position:relative (rifatte-a.css), quindi la nota resta sempre allineata alla propria card,
+   sia in griglia 3 colonne (desktop) sia impilata (mobile), senza toccare il markup delle card stesse.
+   ============================================================================ */
+.vivo .ra-nodi { margin-bottom: 128px; }
+.vivo .ra-freccia-nota {
+  position: absolute; left: 4px; right: 4px; top: 100%; margin-top: 10px; z-index: 1; pointer-events: none;
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.vivo .ra-freccia-svg { width: 13px; height: 22px; display: block; overflow: visible; }
+.vivo .ra-nota-testo {
+  margin: 6px 0 0; max-width: 30ch;
+  font-family: var(--font-mono, ui-monospace, monospace); font-size: 12.5px; line-height: 1.5;
+  letter-spacing: .01em; color: var(--sv-silver);
+}
+@media (max-width: 767px) {
+  .vivo .ra-nodi { margin-bottom: 0; row-gap: 130px; }
+  .vivo .ra-nodi > li:last-child { margin-bottom: 130px; }
+}
+
+/* ============================================================================
+   TASK 2 (ordine 2) — Service #02 «Content Factory» (service-deep.tsx, funzione ContentDeep): correzione
+   della freccia F4. Sostituisce nel markup il blocco .c2-freccia* con .c2b-freccia*: la freccia ora parte
+   dal testo (fuori dal blocco, mai sopra le parole) e va verso destra con una semicurva fino alla nota,
+   che sta nell'angolo in alto a destra della colonna — non più sopra il testo. Resta dentro il padding-top
+   di default della sezione (.section, 6rem ≈ 96px, globals.css): nessun bisogno dell'hook :has() di F4.
+   ============================================================================ */
+.c2b-freccia { position: absolute; top: -90px; right: 0; width: 230px; z-index: 2; pointer-events: none; text-align: right; }
+.c2b-freccia svg { overflow: visible; display: block; }
+.c2b-freccia-testo {
+  margin: 0; max-width: 230px;
+  font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-style: italic; font-weight: 400;
+  font-size: 14px; line-height: 1.45; color: #6f6a62;
+}
+.c2b-freccia-desktop { width: 78px; height: 30px; margin: 6px 0 0 auto; }
+.c2b-freccia-mobile { display: none; }
+@media (max-width: 767px) {
+  .c2b-freccia {
+    position: static; margin: 0 0 18px; width: auto; text-align: left;
+    display: flex; align-items: flex-start; gap: 10px;
+  }
+  .c2b-freccia-testo { max-width: none; text-align: left; }
+  .c2b-freccia-desktop { display: none; }
+  .c2b-freccia-mobile { display: block; width: 22px; height: 44px; margin-top: 4px; flex-shrink: 0; }
+}
+
+/* ============================================================================
+   TASK 3 (ordine 3) — le due foto di riferimento (09 rif-pensa, 10 rif-smorfia), piccole, con freccia
+   hairline (mai a contatto) verso una nota letterale. Classi condivise .f5-rif-*, usate in frase-barrata.tsx
+   (--smorfia) e prima-dopo.tsx (--pensa). §14 del progetto vieta la grana sopra una foto soggetto: qui
+   l'ordine esplicito di Max chiede "leggera grana" — la teniamo molto leggera (opacity .12) apposta perché
+   il soggetto resti chiaramente leggibile, compromesso dichiarato.
+   ============================================================================ */
+#frase-barrata .sv-container, #prima-dopo .sv-container { position: relative; }
+
+.vivo .f5-rif-foto { position: absolute; top: 0; right: 0; width: 240px; z-index: 2; pointer-events: none; }
+.vivo .f5-rif-foto--pensa { width: 260px; }
+.vivo .f5-rif-fig {
+  margin: 0; width: 100%; border: 1px solid var(--sv-hair); border-radius: 8px; overflow: hidden;
+  background: #000; position: relative; box-shadow: 0 16px 34px -22px rgba(0, 0, 0, .75);
+}
+.vivo .f5-rif-fig img { display: block; width: 100%; height: auto; }
+.vivo .f5-rif-fig::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  opacity: .12; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.05' numOctaves='3' stitchTiles='stitch' seed='21'/><feColorMatrix values='0 0 0 0 0.86 0 0 0 0 0.84 0 0 0 0 0.82 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+.vivo .f5-rif-foto--smorfia .f5-rif-fig { transform: rotate(-3deg); }
+.vivo .f5-rif-foto--pensa .f5-rif-fig { transform: rotate(3deg); }
+.vivo .f5-rif-arrow-desktop { display: block; width: 46px; height: 30px; margin: 10px 0 0 auto; overflow: visible; }
+.vivo .f5-rif-arrow-mobile { display: none; }
+.vivo .f5-rif-nota {
+  margin: 4px 0 0; max-width: 22ch; text-align: right;
+  font-family: var(--font-mono, ui-monospace, monospace); font-size: 12px; line-height: 1.5; color: var(--sv-silver);
+}
+@media (max-width: 767px) {
+  .vivo .f5-rif-foto {
+    position: static; width: 180px; margin: 18px 0 24px auto; display: flex; flex-direction: column; align-items: center;
+  }
+  .vivo .f5-rif-foto--pensa { width: 180px; }
+  .vivo .f5-rif-fig { width: 180px; }
+  .vivo .f5-rif-arrow-desktop { display: none; }
+  .vivo .f5-rif-arrow-mobile { display: block; width: 16px; height: 30px; margin: 10px 0 0; overflow: visible; }
+  .vivo .f5-rif-nota { max-width: 26ch; text-align: center; margin: 4px 0 0; }
+}
