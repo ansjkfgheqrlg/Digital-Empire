@@ -14,6 +14,10 @@ import "./f4-hero.css"; // F4 (dossier 40): hero pulito, card fluttuanti, nastro
 import "./f4-colori.css"; // F4: --grad-max, card Tre sistemi + 7gg/300+/0€, titolo largo, grana Numeri/Per chi, frase barrata, freccia #02
 import "./f4-storia.css"; // F4: sezione nuova «storia dei preventivi»
 import "./f4-brain.css"; // F4: Due tipi con texture grana-fuoco, Second Brain blu + 3 card, cervello
+import "./f5-hero.css"; // F5: hero a sinistra, foto di Max a destra, ombre dietro le scritte
+import "./f5-card.css"; // F5: card fluttuanti nello stile dell'all. 02 (illustrazioni granulose)
+import "./f5-frecce.css"; // F5: frecce dai blocchi Tre sistemi, freccia #02 corretta, foto di riferimento con freccia
+import "./f5-cta.css"; // F5: le tre pagine CTA (una per prodotto)
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 const onest = Onest({

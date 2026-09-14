@@ -36,6 +36,7 @@ import { Firma } from "@/sezioni-aggiunte/firma";
 import { RailFatti } from "@/sezioni-aggiunte/rail-fatti";
 import { StoriaPreventivi } from "@/sezioni-aggiunte/storia-preventivi"; // F4 D
 import { Cervello } from "@/sezioni-aggiunte/cervello"; // F4 F3
+import { CtaProdotto } from "@/sezioni-aggiunte/cta-prodotto"; // F5
 // 13/09 sera — ordine di Max «modifica le sezioni brutte»: 7 sezioni di giugno RIFATTE con lo stesso testo (dossier 39B §2),
 // 2 sezioni nuove dal repertorio del competitor (39A E21, E06), guardia della CTA fissa. Deroga ADR-030 dichiarata in CP.
 import { VslV2 } from "@/sezioni-rifatte/vsl-v2";
@@ -102,13 +103,16 @@ export default function Home() {
       <OutreachDeep />
       <OutreachInside />
       <GuardaloGirare />
+      <CtaProdotto prodotto="outreach" />
       <ContentDeep />
       <ContentOutputV2 />
+      <CtaProdotto prodotto="content" />
       <DueTipi />
       <Cervello>
       <BrainDeep />
       <SecondBrainInside />
       </Cervello>
+      <CtaProdotto prodotto="brain" />
       <Results />
       <ProveVere />
       {/* <RailSistemi /> smontato il 13/09 sera (39B r.27): screenshot del sito stesso non sono una prova; torna quando ci sono 5 cose di clienti */}
