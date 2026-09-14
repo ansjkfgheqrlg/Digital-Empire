@@ -3,7 +3,7 @@ Type: CONCEPT
 Status: Active
 Tags: #youtube-automation #cash-cow #fliki #seo #video-iq #skill #agenti
 Created: 2026-07-21
-Last updated: 2026-08-24
+Last updated: 2026-09-14
 ---
 
 # YouTube Automation Factory (skill operativa)
@@ -84,8 +84,39 @@ Google (blocco non aggirabile da script, per design). Un pulsante unico "Produci
 copertina" è stato aggiunto in Aureus/EmpireDesk (`produci_video_completo.py`, 08-08) che
 incatena F1-F5 + copertina Arena + video Fliki in un solo comando.
 
+## Il canale si misura e «mai caricato» si chiede al canale (2026-09-14, EMP-V6DE)
+
+**La scoperta.** Il checkpoint dell'11/9 dava «5 video con copertina pronti, mai caricati».
+Interrogando il canale prima di caricare (oEmbed pubblico, zero login) è uscito che **6 cartelle
+su 7 di `VIDEO-PRONTI/` erano già pubbliche** su @Legamidiamore (video-01 `2t4BZR3KAiU`, 02
+`JOUWaLkyoN8`, 03 `-U7ZzQG1Gn8`, 04 `RIZuutLaEV0`, 05 `6hrhlS9jC4g`, 07 `QwtZ2e2MY1c`); video-06 è
+una bozza (`RUg6TgSd79s`). La cartella non lo sapeva perché la fabbrica scrive l'id in
+`memory/video_prodotti.json` (`cartella_consegna`), non in `metadata.json`. Doppioni evitati per
+caso (profilo Chrome scaduto). Registrato: ERR-20260914-001.
+
+**Regola, nel codice:** un video è «mai caricato» solo dopo aver interrogato il canale.
+`carica_pronti.py` incrocia il manifesto per cartella e per titolo (una bozza non conta), ha
+`--massimo N` e stampa la coda dell'output quando fallisce.
+
+**Fabbrica riparata (73 test verdi):** con `--video-folder` la fase 5 di `apex7_orchestrator.py`
+usa il `metadata.json` pronto (`_fase5_da_video_pronto`) invece di pretendere lo script della
+fase 3; upload estratto in `_carica_su_youtube()`; profilo di `legamidiamore` →
+`chrome-profile-youtube` (l'unico loggato: legamidamore55@gmail.com); `apri_studio_visibile.py`
+per i gesti che solo Max fa (popup Google «Verify it's you», termini YPP, bozze).
+
+**Primi numeri veri, mai letti prima.** `youtube_studio_reader.py` (riparato: aspetta un
+elemento vero, calibrato sul testo reale della scheda video, CTR dalla tab Reach) — ultimi 28
+giorni: **17.500 views · 1.300 ore · +10 iscritti · €38,85 stimati** → Tesoreria
+E-20260914-001 (prevista). Per-video («7 Tocchi»): 432 views, 42,5 % vista in media, **67 %
+ancora dentro a 0:30 (sotto il tipico)**, 67,6 % del traffico da recommendations.
+
+**Dove sta l'ultimo metro adesso:** a monte. `coda_produzione.json` è vuota (solo il video
+dosementale da riespandere): servono script adattati nuovi, non caricamenti. Checkpoint
+CP-20260914-VDW3, ripresa `EMP-V6DE`.
+
 ## Connessioni
 - [[Tool_APEX7_Core_Motore_Condiviso]] — motore condiviso su cui girano le 6 fasi (ADR-010)
+- [[Tool_Tesoreria_Digital_Empire]] — prima entrata YouTube (E-20260914-001) letta da Studio
 - [[Entity_Legami_dAmore_Channel]] — primo canale con un video reale pubblicato
 - [[Entity_Dose_Mentale_Channel]] — canale target dopo il pivot dal funnel Claude Code
 - [[Concept_Meta_Ads_Library_Competitor_Research]] — analisi competitor (stesso spirito data-driven)

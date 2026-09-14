@@ -1,0 +1,514 @@
+{
+  "generato_il": "2026-09-14 17:42:32",
+  "channel_id": "UC0J2KtEiGnDZnzHlc2Vajpg",
+  "canale": {
+    "periodo_effettivo": "Last 28 days",
+    "views": {
+      "valore": 17500.0,
+      "motivo": null,
+      "grezzo": "17,5K"
+    },
+    "watch_time_ore": {
+      "valore": 1300.0,
+      "motivo": null,
+      "grezzo": "1,3K"
+    },
+    "iscritti_variazione": {
+      "valore": 10.0,
+      "motivo": null,
+      "grezzo": "+10"
+    },
+    "entrate_stimate": {
+      "valore": 38.85,
+      "motivo": null,
+      "grezzo": "€38.85"
+    },
+    "entrate_valuta": "EUR",
+    "top_content": [
+      {
+        "rank": 1,
+        "titolo": "Segnali Che Una Donna Ti Vuole Indietro",
+        "data_pubblicazione": "Dec 3, 2025",
+        "durata_video_secondi": {
+          "valore": 543,
+          "motivo": null,
+          "grezzo": "9:03"
+        },
+        "retention_media_percento": {
+          "valore": 35.8,
+          "motivo": null,
+          "grezzo": "35.8%"
+        },
+        "views": {
+          "valore": 2452.0,
+          "motivo": null,
+          "grezzo": "2.452"
+        }
+      },
+      {
+        "rank": 2,
+        "titolo": "7 segnali non ti evita, ha paura di innamorarsi",
+        "data_pubblicazione": "Sep 1, 2026",
+        "durata_video_secondi": {
+          "valore": 396,
+          "motivo": null,
+          "grezzo": "6:36"
+        },
+        "retention_media_percento": {
+          "valore": 43.1,
+          "motivo": null,
+          "grezzo": "43.1%"
+        },
+        "views": {
+          "valore": 1584.0,
+          "motivo": null,
+          "grezzo": "1.584"
+        }
+      },
+      {
+        "rank": 3,
+        "titolo": "7 Frasi di Buongiorno Che Nessuna Donna Può Ignorare: Segreti di Psicologia Femminile!",
+        "data_pubblicazione": "Nov 24, 2024",
+        "durata_video_secondi": {
+          "valore": 193,
+          "motivo": null,
+          "grezzo": "3:13"
+        },
+        "retention_media_percento": {
+          "valore": 36.7,
+          "motivo": null,
+          "grezzo": "36.7%"
+        },
+        "views": {
+          "valore": 1199.0,
+          "motivo": null,
+          "grezzo": "1.199"
+        }
+      },
+      {
+        "rank": 4,
+        "titolo": "7 SEGNALI che una DONNA si sta innamorando (anche se non lo dice)",
+        "data_pubblicazione": "Sep 9, 2026",
+        "durata_video_secondi": {
+          "valore": 270,
+          "motivo": null,
+          "grezzo": "4:30"
+        },
+        "retention_media_percento": {
+          "valore": 29.7,
+          "motivo": null,
+          "grezzo": "29.7%"
+        },
+        "views": {
+          "valore": 996.0,
+          "motivo": null,
+          "grezzo": "996"
+        }
+      },
+      {
+        "rank": 5,
+        "titolo": "5 Segnali del Corpo che Rendono un UOMO Irresistibile",
+        "data_pubblicazione": "Aug 29, 2026",
+        "durata_video_secondi": {
+          "valore": 228,
+          "motivo": null,
+          "grezzo": "3:48"
+        },
+        "retention_media_percento": {
+          "valore": 48.0,
+          "motivo": null,
+          "grezzo": "48.0%"
+        },
+        "views": {
+          "valore": 957.0,
+          "motivo": null,
+          "grezzo": "957"
+        }
+      },
+      {
+        "rank": 6,
+        "titolo": "5 SEGNALI che una Donna Vuole che TU Faccia la Prima Mossa",
+        "data_pubblicazione": "Aug 19, 2026",
+        "durata_video_secondi": {
+          "valore": 292,
+          "motivo": null,
+          "grezzo": "4:52"
+        },
+        "retention_media_percento": {
+          "valore": 38.4,
+          "motivo": null,
+          "grezzo": "38.4%"
+        },
+        "views": {
+          "valore": 802.0,
+          "motivo": null,
+          "grezzo": "802"
+        }
+      },
+      {
+        "rank": 7,
+        "titolo": "5 Segnali Che piaci ad una DONNA Ma Lo Nasconde | Legami D'amore",
+        "data_pubblicazione": "Nov 25, 2025",
+        "durata_video_secondi": {
+          "valore": 609,
+          "motivo": null,
+          "grezzo": "10:09"
+        },
+        "retention_media_percento": {
+          "valore": 36.4,
+          "motivo": null,
+          "grezzo": "36.4%"
+        },
+        "views": {
+          "valore": 682.0,
+          "motivo": null,
+          "grezzo": "682"
+        }
+      },
+      {
+        "rank": 8,
+        "titolo": "7 Segnali Che Lei Ti Tradisce (Psicologia Femminile)",
+        "data_pubblicazione": "May 22, 2025",
+        "durata_video_secondi": {
+          "valore": 224,
+          "motivo": null,
+          "grezzo": "3:44"
+        },
+        "retention_media_percento": {
+          "valore": 43.8,
+          "motivo": null,
+          "grezzo": "43.8%"
+        },
+        "views": {
+          "valore": 633.0,
+          "motivo": null,
+          "grezzo": "633"
+        }
+      },
+      {
+        "rank": 9,
+        "titolo": "5 Segnali che una Donna Vuole Farsi Notare da Te",
+        "data_pubblicazione": "Aug 27, 2026",
+        "durata_video_secondi": {
+          "valore": 225,
+          "motivo": null,
+          "grezzo": "3:45"
+        },
+        "retention_media_percento": {
+          "valore": 51.4,
+          "motivo": null,
+          "grezzo": "51.4%"
+        },
+        "views": {
+          "valore": 624.0,
+          "motivo": null,
+          "grezzo": "624"
+        }
+      },
+      {
+        "rank": 10,
+        "titolo": "Quando Una Donna Rimpiange di Averti Perso",
+        "data_pubblicazione": "Dec 5, 2025",
+        "durata_video_secondi": {
+          "valore": 531,
+          "motivo": null,
+          "grezzo": "8:51"
+        },
+        "retention_media_percento": {
+          "valore": 37.3,
+          "motivo": null,
+          "grezzo": "37.3%"
+        },
+        "views": {
+          "valore": 595.0,
+          "motivo": null,
+          "grezzo": "595"
+        }
+      }
+    ],
+    "ultimo_video_realtime": {
+      "titolo": "7 SEGNALI che una DONNA si sta innamorando (anche se non lo dice)",
+      "views": {
+        "valore": 1000.0,
+        "motivo": null,
+        "grezzo": "1K"
+      },
+      "ctr_miniatura_percento": {
+        "valore": 7.0,
+        "motivo": null,
+        "grezzo": "7.0%"
+      },
+      "durata_media_visualizzazione_secondi": {
+        "valore": 271,
+        "motivo": null,
+        "grezzo": "4:31"
+      }
+    },
+    "url_letto": "https://studio.youtube.com/channel/UC0J2KtEiGnDZnzHlc2Vajpg/analytics/tab-overview/period-default"
+  },
+  "video": [
+    {
+      "video_id": "2t4BZR3KAiU",
+      "ctr_miniatura_percento": {
+        "valore": null,
+        "motivo": "il CTR non e' nella tab Overview del video: sta nella tab Reach ('Impressions click-through rate') - leggi_metriche_video() la apre a parte; se anche li' manca, il video non ha ancora impressioni sufficienti",
+        "grezzo": null
+      },
+      "ctr_etichetta_trovata": null,
+      "views": {
+        "valore": 804.0,
+        "motivo": null,
+        "grezzo": "804"
+      },
+      "watch_time_ore": {
+        "valore": 57.5,
+        "motivo": null,
+        "grezzo": "57,5"
+      },
+      "entrate_stimate": {
+        "valore": 3.63,
+        "motivo": null,
+        "grezzo": "€3.63"
+      },
+      "entrate_valuta": "EUR",
+      "durata_media_visualizzazione_secondi": {
+        "valore": 292,
+        "motivo": null,
+        "grezzo": "4:52"
+      },
+      "retention_media_percento": {
+        "valore": 38.4,
+        "motivo": null,
+        "grezzo": "38.4%"
+      },
+      "retention_30s_percento": {
+        "valore": 73.0,
+        "motivo": null,
+        "grezzo": "73%"
+      },
+      "url_letto": "https://studio.youtube.com/video/2t4BZR3KAiU/analytics/tab-overview/period-default",
+      "url_reach_letto": "https://studio.youtube.com/video/2t4BZR3KAiU/analytics/tab-reach/period-default"
+    },
+    {
+      "video_id": "JOUWaLkyoN8",
+      "ctr_miniatura_percento": {
+        "valore": null,
+        "motivo": "il CTR non e' nella tab Overview del video: sta nella tab Reach ('Impressions click-through rate') - leggi_metriche_video() la apre a parte; se anche li' manca, il video non ha ancora impressioni sufficienti",
+        "grezzo": null
+      },
+      "ctr_etichetta_trovata": null,
+      "views": {
+        "valore": 958.0,
+        "motivo": null,
+        "grezzo": "958"
+      },
+      "watch_time_ore": {
+        "valore": 28.1,
+        "motivo": null,
+        "grezzo": "28,1"
+      },
+      "entrate_stimate": {
+        "valore": 0.07,
+        "motivo": null,
+        "grezzo": "€0.07"
+      },
+      "entrate_valuta": "EUR",
+      "durata_media_visualizzazione_secondi": {
+        "valore": 228,
+        "motivo": null,
+        "grezzo": "3:48"
+      },
+      "retention_media_percento": {
+        "valore": 48.0,
+        "motivo": null,
+        "grezzo": "48.0%"
+      },
+      "retention_30s_percento": {
+        "valore": 68.0,
+        "motivo": null,
+        "grezzo": "68%"
+      },
+      "url_letto": "https://studio.youtube.com/video/JOUWaLkyoN8/analytics/tab-overview/period-default",
+      "url_reach_letto": "https://studio.youtube.com/video/JOUWaLkyoN8/analytics/tab-reach/period-default"
+    },
+    {
+      "video_id": "-U7ZzQG1Gn8",
+      "ctr_miniatura_percento": {
+        "valore": null,
+        "motivo": "il CTR non e' nella tab Overview del video: sta nella tab Reach ('Impressions click-through rate') - leggi_metriche_video() la apre a parte; se anche li' manca, il video non ha ancora impressioni sufficienti",
+        "grezzo": null
+      },
+      "ctr_etichetta_trovata": null,
+      "views": {
+        "valore": 625.0,
+        "motivo": null,
+        "grezzo": "625"
+      },
+      "watch_time_ore": {
+        "valore": 21.0,
+        "motivo": null,
+        "grezzo": "21,0"
+      },
+      "entrate_stimate": {
+        "valore": 0.07,
+        "motivo": null,
+        "grezzo": "€0.07"
+      },
+      "entrate_valuta": "EUR",
+      "durata_media_visualizzazione_secondi": {
+        "valore": 225,
+        "motivo": null,
+        "grezzo": "3:45"
+      },
+      "retention_media_percento": {
+        "valore": 51.4,
+        "motivo": null,
+        "grezzo": "51.4%"
+      },
+      "retention_30s_percento": {
+        "valore": 73.0,
+        "motivo": null,
+        "grezzo": "73%"
+      },
+      "url_letto": "https://studio.youtube.com/video/-U7ZzQG1Gn8/analytics/tab-overview/period-default",
+      "url_reach_letto": "https://studio.youtube.com/video/-U7ZzQG1Gn8/analytics/tab-reach/period-default"
+    },
+    {
+      "video_id": "RIZuutLaEV0",
+      "ctr_miniatura_percento": {
+        "valore": null,
+        "motivo": "il CTR non e' nella tab Overview del video: sta nella tab Reach ('Impressions click-through rate') - leggi_metriche_video() la apre a parte; se anche li' manca, il video non ha ancora impressioni sufficienti",
+        "grezzo": null
+      },
+      "ctr_etichetta_trovata": null,
+      "views": {
+        "valore": 432.0,
+        "motivo": null,
+        "grezzo": "432"
+      },
+      "watch_time_ore": {
+        "valore": 19.6,
+        "motivo": null,
+        "grezzo": "19,6"
+      },
+      "entrate_stimate": {
+        "valore": 1.5,
+        "motivo": null,
+        "grezzo": "€1.50"
+      },
+      "entrate_valuta": "EUR",
+      "durata_media_visualizzazione_secondi": {
+        "valore": 334,
+        "motivo": null,
+        "grezzo": "5:34"
+      },
+      "retention_media_percento": {
+        "valore": 42.5,
+        "motivo": null,
+        "grezzo": "42.5%"
+      },
+      "retention_30s_percento": {
+        "valore": 67.0,
+        "motivo": null,
+        "grezzo": "67%"
+      },
+      "url_letto": "https://studio.youtube.com/video/RIZuutLaEV0/analytics/tab-overview/period-default",
+      "url_reach_letto": "https://studio.youtube.com/video/RIZuutLaEV0/analytics/tab-reach/period-default"
+    },
+    {
+      "video_id": "6hrhlS9jC4g",
+      "ctr_miniatura_percento": {
+        "valore": null,
+        "motivo": "il CTR non e' nella tab Overview del video: sta nella tab Reach ('Impressions click-through rate') - leggi_metriche_video() la apre a parte; se anche li' manca, il video non ha ancora impressioni sufficienti",
+        "grezzo": null
+      },
+      "ctr_etichetta_trovata": null,
+      "views": {
+        "valore": 1000.0,
+        "motivo": null,
+        "grezzo": "1K"
+      },
+      "watch_time_ore": {
+        "valore": 32.3,
+        "motivo": null,
+        "grezzo": "32,3"
+      },
+      "entrate_stimate": {
+        "valore": 1.9,
+        "motivo": null,
+        "grezzo": "€1.90"
+      },
+      "entrate_valuta": "EUR",
+      "durata_media_visualizzazione_secondi": {
+        "valore": 270,
+        "motivo": null,
+        "grezzo": "4:30"
+      },
+      "retention_media_percento": {
+        "valore": 29.7,
+        "motivo": null,
+        "grezzo": "29.7%"
+      },
+      "retention_30s_percento": {
+        "valore": 72.0,
+        "motivo": null,
+        "grezzo": "72%"
+      },
+      "url_letto": "https://studio.youtube.com/video/6hrhlS9jC4g/analytics/tab-overview/period-default",
+      "url_reach_letto": "https://studio.youtube.com/video/6hrhlS9jC4g/analytics/tab-reach/period-default"
+    },
+    {
+      "video_id": "QwtZ2e2MY1c",
+      "ctr_miniatura_percento": {
+        "valore": null,
+        "motivo": "il CTR non e' nella tab Overview del video: sta nella tab Reach ('Impressions click-through rate') - leggi_metriche_video() la apre a parte; se anche li' manca, il video non ha ancora impressioni sufficienti",
+        "grezzo": null
+      },
+      "ctr_etichetta_trovata": null,
+      "views": {
+        "valore": 355.0,
+        "motivo": null,
+        "grezzo": "355"
+      },
+      "watch_time_ore": {
+        "valore": 14.4,
+        "motivo": null,
+        "grezzo": "14,4"
+      },
+      "entrate_stimate": {
+        "valore": 0.64,
+        "motivo": null,
+        "grezzo": "€0.64"
+      },
+      "entrate_valuta": "EUR",
+      "durata_media_visualizzazione_secondi": {
+        "valore": 309,
+        "motivo": null,
+        "grezzo": "5:09"
+      },
+      "retention_media_percento": {
+        "valore": 37.5,
+        "motivo": null,
+        "grezzo": "37.5%"
+      },
+      "retention_30s_percento": {
+        "valore": 67.0,
+        "motivo": null,
+        "grezzo": "67%"
+      },
+      "url_letto": "https://studio.youtube.com/video/QwtZ2e2MY1c/analytics/tab-overview/period-default",
+      "url_reach_letto": "https://studio.youtube.com/video/QwtZ2e2MY1c/analytics/tab-reach/period-default"
+    }
+  ],
+  "entrate_pronte_per_tesoreria": [
+    {
+      "importo": 38.85,
+      "valuta": "EUR",
+      "da": "YouTube Studio - Legami d'amore",
+      "per": "youtube",
+      "stato": "previsto",
+      "data": "2026-09-14",
+      "nota": "Entrate stimate lette da YouTube Studio (periodo: Last 28 days) via youtube_studio_reader.py il 2026-09-14 17:58. Stato 'previsto' perche' e' una stima di Google (\"Your final amount may change\"), non un incasso confermato: verificare a mano prima di registrare davvero con 'python scripts/tesoreria.py entrata ...'. Questo file non scrive mai in tesoreria da solo."
+    }
+  ]
+}
