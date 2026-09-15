@@ -119,16 +119,19 @@ section:has(.fl-nota) .text-center.mb-16 { position: relative; }
 @media (min-width: 768px) {
   main > section.bg-grey:has(.c2b-freccia) { padding-top: 250px; }
 }
+/* la colonna (grid > div:last-child) misura ~484px: badge+freccia+nota non ci stanno appaiati sulla stessa
+   riga (misurato via Playwright — la freccia finiva sotto le parole della nota). Nota sopra, freccia sotto,
+   16px di distanza fra le due: mai stessa fascia verticale, 0 intersezioni indipendentemente dalla larghezza. */
 .c2b-freccia {
-  position: absolute; top: -210px; right: 0; left: 0; width: auto; height: 0;
+  position: absolute; top: -216px; right: 0; left: 0; width: auto; height: 216px;
   display: block; flex-direction: unset; align-items: unset; gap: 0; text-align: left;
   z-index: 2; pointer-events: none;
 }
 .c2b-freccia svg { overflow: visible; }
-.c2b-freccia-desktop { display: block; position: absolute; left: 300px; top: 0; width: 130px; height: 100px; margin: 0; }
+.c2b-freccia-desktop { display: block; position: absolute; top: 131px; left: 277px; width: 100px; height: 85px; margin: 0; }
 .c2b-freccia-mobile { display: none; }
 .c2b-freccia-testo {
-  position: absolute; right: 0; top: 4px; margin: 0; width: 240px; max-width: 240px;
+  position: absolute; top: 0; right: 0; margin: 0; width: 240px; max-width: 240px;
   font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-style: italic; font-weight: 400;
   font-size: 15px; line-height: 1.5; color: #6f6a62; text-align: left;
 }
