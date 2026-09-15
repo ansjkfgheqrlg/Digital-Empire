@@ -1,3 +1,10 @@
+## ⚠️ COORDINAMENTO — 2026-09-15 sera — CANTIERE APERTO: 15-LANCI S2b→S5 (struttura completa) — Emperator con Gael, GOD EMPEROR DOOM
+
+Ordine di Gael: «concludi con i lanci, con la struttura completa e tutto». In costruzione con 3 doom bot + 2 sentinelle, aree disgiunte:
+`company/Ecosistemi/15-LANCI/**` (motore, 14 gate, 15 agenti `.claude/agents/lan-*.md`, piano automazione 42 fasi), più registrazione
+(REGISTRO-IMPRESA, skills-map, wiki). **Max/Neri: NON toccare `company/Ecosistemi/15-LANCI/` né `.claude/agents/lan-*` finché questo blocco non sparisce.**
+Restano mani di Max (ADR-026, non bloccano): rotazione chiave Brevo sul pannello (B-020), Payment Link Stripe veri (MT-32RU/MT-CV7N), firma prezzo+data del Manuale.
+
 ## 🔵 2026-09-15 — PAUSA (ordine di Max) — RIPRESA: `EMP-DIOEDIT` — CP-20260915-QV6Z
 
 Studio VSL Andrei Pascu → «Dio dell'Editing». Fasi 0-1-3 complete su tutti e 10 i VSL. **Fase 2
