@@ -211,3 +211,19 @@ main > section:first-of-type h1.f6-h1 > span.f6-h1-riga > b {
   main > section:first-of-type .f4-card--r1 { top: 130px !important; transform: scale(0.72) rotate(2deg) !important; }
   main > section:first-of-type .f4-card--r2 { top: 316px !important; transform: scale(0.72) rotate(-3deg) !important; }
 }
+
+/* ===== INTEGRAZIONE F6 (Emperator, dopo α) — foto: sovrapposizioni leggere (la centrale si vede), gruppo più in alto e più a
+   sinistra; card di destra dentro l'hero, una sopra l'altra, non nell'angolo. Misurato a 1920/1440. ===== */
+@media (min-width: 1280px) {
+  .hf-group { top: 64px !important; right: 12vw !important; height: clamp(420px, calc(17.667vw + 165px), 505px) !important; }
+  .hf-photo--1 { width: 92% !important; right: 8% !important; }
+  .hf-photo--2 { top: 46% !important; right: 30% !important; width: 80% !important; z-index: 4 !important; }
+  .hf-photo--3 { top: 74% !important; right: -4% !important; width: 46% !important; z-index: 3 !important; }
+}
+@media (min-width: 1600px) {
+  main > section:first-of-type .f4-card--r1 { right: 40px !important; top: 392px !important; transform: scale(0.72) rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--r2 { right: 62px !important; top: 592px !important; transform: scale(0.72) rotate(-3deg) !important; }
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .hf-group { right: 6vw !important; width: 300px !important; height: 380px !important; }
+}

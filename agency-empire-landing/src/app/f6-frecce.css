@@ -141,3 +141,10 @@ section:has(.fl-nota) .text-center.mb-16 { position: relative; }
   .c2b-freccia-mobile { display: block; position: static; width: 22px; height: 44px; margin-top: 4px; flex-shrink: 0; }
   .c2b-freccia-testo { position: static; max-width: none; width: auto; font-size: 14px; }
 }
+
+/* Integrazione F6 (Emperator): «= Ovvero:» ereditava letter-spacing -.022em e peso 900 dall'h2 → parole schiacciate; e la sezione
+   aveva 360 px di vuoto sotto la nota. */
+.vivo .fb-ovvero { letter-spacing: 0; font-weight: 400; font-size: 22px; line-height: 1.3; margin-top: 14px; color: var(--sv-silver); }
+.vivo .fb-ovvero b { font-weight: 600; font-family: var(--font-sans, inherit); letter-spacing: 0; color: #fff; margin-right: 2px; }
+.vivo .fb-ovvero .fb-uguale { color: var(--sv-orange); font-weight: 600; margin-right: 6px; }
+@media (min-width: 768px) { #frase-barrata.fb { padding-bottom: 200px; } }

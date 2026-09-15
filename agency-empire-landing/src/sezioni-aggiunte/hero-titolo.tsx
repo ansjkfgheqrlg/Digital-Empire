@@ -15,7 +15,7 @@ export function HeroTitolo() {
       </h1>
       <p className="f6-sub">
         Hai <b>processi meccanici</b> che ti mangiano ore ogni settimana e che potrebbero{" "}
-        <b>girare da soli</b> — ma ogni tool che hai provato era più complicato del problema stesso. Noi
+        <b>girare da soli</b>{" "}— ma ogni tool che hai provato era più complicato del problema stesso. Noi
         costruiamo l&apos;<b>automazione su misura</b> e te la consegniamo in un&apos;<b>app privata</b> dove
         basta <b>un click</b> per far partire tutto. <b>Zero configurazione. Zero manuali.</b> Il tuo
         processo gira in automatico, tu torni a fare quello che conta. È una soluzione{" "}

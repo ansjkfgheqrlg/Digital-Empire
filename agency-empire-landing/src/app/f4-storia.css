@@ -144,3 +144,10 @@
   .vivo .sp-pd-col--dopo { text-align: left; }
   .vivo .sp-pd-frx { display: none; }
 }
+
+/* Integrazione F6 (Emperator): le frecce fra i 4 blocchi erano larghe 22 px (invisibili). Ora lo schema ha gap 56 px e ogni freccia
+   occupa tutto il gap, curva, sopra il filetto: si vede intera con la punta. */
+@media (min-width: 900px) {
+  .vivo .sp-schema { --sp-gap: 56px; }
+  .vivo .sp-arrow-seg { left: calc(100% + 4px); width: 48px; height: 30px; top: 16px; }
+}
