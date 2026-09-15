@@ -136,22 +136,22 @@ export function ContentDeep() {
           </Reveal>
 
           <div>
-            {/* CORREZIONE F5 (ordine 2 di Max, 14/09 notte) — sostituisce il blocco F4 (c2-freccia*, nostro, non di
-                giugno): la freccia ora parte dal testo (fuori dal blocco, mai sopra le parole) e va verso destra
-                con una semicurva fino alla nota nell'angolo in alto a destra della colonna — non più sopra il
-                testo. Le vecchie regole .c2-freccia* restano in f4-colori.css ma non trovano più elementi (nessun
-                file f4 toccato). Testo della nota invariato. CSS: f5-frecce.css (.c2b-*). */}
+            {/* RIFACIMENTO I1 (dossier 41, ordine di Max 15/09 — sostituisce la CORREZIONE F5): la freccia parte
+                10px a destra del badge e sale più lunga (≈120px) con una semicurva; la nota (14-15px, più larga)
+                resta ancorata al bordo destro della colonna, con aria dal badge e dal testo. Le vecchie regole
+                .c2-freccia e le altre regole f4 restano orfane (nessun file f4 toccato). Testo della nota invariato.
+                CSS: f6-frecce.css (.c2b-*). */}
             <div className="c2b-freccia">
               <p className="c2b-freccia-testo">
                 Lo so, stiamo andando un po&apos; di fretta&hellip; Ti sto già spiegando il mio secondo servizio. Nessuna confusione, mi raccomando: questo è un altro servizio. Non si tratta più di Outreach.
               </p>
-              <svg className="c2b-freccia-desktop" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <svg className="c2b-freccia-desktop" viewBox="0 0 130 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                 <defs>
-                  <marker id="c2b-punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto">
+                  <marker id="c2b-punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
                     <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
                   </marker>
                 </defs>
-                <path d="M2,84 C30,84 50,50 92,14" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd="url(#c2b-punta)" />
+                <path d="M2,92 C40,92 70,40 124,10" fill="none" stroke="#fb4604" strokeWidth="1.3" markerEnd="url(#c2b-punta)" />
               </svg>
               <svg className="c2b-freccia-mobile" viewBox="0 0 20 44" aria-hidden="true" focusable="false">
                 <defs>

@@ -54,9 +54,9 @@ main > section.bg-grey.section-border-t + section.bg-paper.section-border-t {
 .vivo .rb-ss-col.grad-max .rb-ss-stack li,
 .vivo .rb-ss-col.grad-max .rb-ss-piede > .sv-mono,
 .vivo .rb-ss-col.grad-max .rb-ss-passi li::before {
-  color: rgba(20, 20, 20, .7);
+  color: rgba(20, 20, 20, .8);
 }
-.vivo .rb-ss-col.grad-max .rb-ss-live::before { background: rgba(20, 20, 20, .7); }
+.vivo .rb-ss-col.grad-max .rb-ss-live::before { background: rgba(20, 20, 20, .8); }
 .vivo .rb-ss-col.grad-max .rb-ss-stack li + li::before { color: rgba(20, 20, 20, .4); }
 
 .vivo .rb-ss-col.grad-max .rb-ss-lista li::before { color: #141414; }
@@ -91,11 +91,11 @@ main > section.bg-grey.section-border-t + section.bg-paper.section-border-t {
 .vivo .cp-card-lista,
 .vivo .cp-card-piede { position: relative; z-index: 1; }
 
-.vivo .cp-card-testa { color: rgba(20, 20, 20, .7); border-bottom-color: rgba(0, 0, 0, .25); }
+.vivo .cp-card-testa { color: rgba(20, 20, 20, .8); border-bottom-color: rgba(0, 0, 0, .25); }
 .vivo .cp-card-testa b { color: #141414; }
 .vivo .cp-card-lista li { color: #141414; }
 .vivo .cp-card-lista li::before { color: #c93a12; }
-.vivo .cp-card-piede { color: rgba(20, 20, 20, .7); border-top-color: rgba(0, 0, 0, .25); }
+.vivo .cp-card-piede { color: rgba(20, 20, 20, .8); border-top-color: rgba(0, 0, 0, .25); }
 
 /* ============================================================================
    L1 — CATENE (cta-prodotto.tsx + qui): via il laccio (lo <span class="cp-laccio"> è stato tolto dal

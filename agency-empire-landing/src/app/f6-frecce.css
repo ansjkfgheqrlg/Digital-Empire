@@ -74,7 +74,12 @@
 }
 
 .vivo .fb-vera { max-width: 30ch; }
-.vivo .fb-ovvero { font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-size: 21px; margin-left: 2px; }
+/* «= Ovvero: …» a 20-22px dentro un h2 enorme (line-height ~1.02) collide con la riga sopra se resta inline:
+   va sempre a capo, appena sotto (dichiarato — "stessa riga" non regge la prova visiva con questo h2). */
+.vivo .fb-ovvero {
+  display: block; margin-top: 10px;
+  font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-size: 21px;
+}
 
 @media (min-width: 768px) {
   #frase-barrata.fb { padding-bottom: 360px; }
@@ -91,12 +96,13 @@
    destra della colonna max-w-3xl c'è il gutter della section). Visibile solo
    dove il gutter è abbastanza largo (≥1024px) per non intersecare nulla.
    ============================================================================ */
-.vivo .fl-nota { position: absolute; top: 100%; left: 100%; width: 280px; margin-left: 8px; display: none; pointer-events: none; z-index: 2; }
+section:has(.fl-nota) .text-center.mb-16 { position: relative; }
+.fl-nota { position: absolute; top: 100%; left: 100%; width: 280px; margin-left: 8px; display: none; pointer-events: none; z-index: 2; }
 @media (min-width: 1024px) {
-  .vivo .fl-nota { display: block; }
+  .fl-nota { display: block; }
 }
-.vivo .fl-nota-svg { display: block; width: 60px; height: 56px; overflow: visible; }
-.vivo .fl-nota-testo {
+.fl-nota-svg { display: block; width: 60px; height: 56px; overflow: visible; }
+.fl-nota-testo {
   margin: 8px 0 0 8px; max-width: 34ch;
   font-family: var(--font-mono, ui-monospace, monospace); font-size: 12.5px; line-height: 1.5;
   letter-spacing: .01em; color: var(--sv-silver);
@@ -127,7 +133,7 @@
   font-size: 15px; line-height: 1.5; color: #6f6a62; text-align: left;
 }
 @media (max-width: 767px) {
-  .c2b-freccia { position: static; margin: 0 0 18px; display: flex; align-items: flex-start; gap: 10px; height: auto; text-align: left; }
+  .c2b-freccia { position: static; margin: 0 0 26px; display: flex; align-items: flex-start; gap: 10px; height: auto; text-align: left; }
   .c2b-freccia-desktop { display: none; }
   .c2b-freccia-mobile { display: block; position: static; width: 22px; height: 44px; margin-top: 4px; flex-shrink: 0; }
   .c2b-freccia-testo { position: static; max-width: none; width: auto; font-size: 14px; }
