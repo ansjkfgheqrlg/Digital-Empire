@@ -1,1 +1,213 @@
-/* f6-hero.css — F6 (dossier 41, ordini di Max 15/09). Importato DOPO f5-*.css: vince per ordine. */
+/* f6-hero.css — F6 (dossier 41, ordini di Max 15/09). Importato DOPO f5-*.css: vince per ordine +
+   stessa specificità (uso gli stessi selettori di f5-hero.css, con !important dove anche lì c'è
+   !important — altrimenti un !important precedente vincerebbe comunque, a prescindere dall'ordine). */
+
+/* ============================================================================
+   A2/A3 · il titolo e il paragrafo di GIUGNO spariscono (deroga ADR-030 dichiarata, ordine testuale
+   di Max: «headline NUOVA e sottotitolo NUOVO»). Il nuovo testo vive in hero-titolo.tsx (.f6-titolo),
+   montato PRIMA dell'h1 di giugno: nascondendo h1+p, il bottone (non toccato) resta lo stesso, subito
+   sotto il nuovo sottotitolo, senza bisogno di riordinare il flex (0 righe rimosse da hero.tsx).
+   ============================================================================ */
+main > section:first-of-type h1:not(.f6-h1) { display: none !important; }
+main > section:first-of-type p.leading-relaxed { display: none !important; }
+
+/* ============================================================================
+   A2/A3 · IL TITOLO NUOVO — niente clip-text, niente text-shadow (causa delle "ombre strane" di A3):
+   colore pieno, argento/bianco. Il contenitore .f6-titolo vive dentro lo stesso blocco con z-index:3
+   di f5-hero.css (B1), quindi sta già sopra la grana del velo (.hero-tex-velo, z-index 0) — nessuna
+   macchia scura possibile qui.
+   ============================================================================ */
+.f6-titolo {
+  position: relative;
+  z-index: 3;
+}
+/* Selettori composti (h1.f6-h1, span.f6-h1-riga) apposta: le regole di giugno su `h1 > span:nth-child(N)`
+   (scala.css/f4-hero.css/f5-hero.css) sono generiche e "vedono" anche il MIO h1 (stessi 3 span figli) —
+   scoperto in verifica (il font-size non cambiava). Serve più specificità di `h1 > span:nth-child(N)`
+   per batterle anche quando anche loro sono !important (tra due !important vince la specificità, poi
+   l'ordine) — qui tutto !important + selettore più specifico, sempre. */
+main > section:first-of-type h1.f6-h1 {
+  display: block !important;
+  margin: 0 0 22px !important;
+  font-weight: 400 !important;
+  color: #d9d4e1 !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.02em !important;
+  max-width: none !important;
+  text-shadow: none !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+/* Le 3 righe sono già spezzate a mano (hero-titolo.tsx): da 768px in su restano su UNA riga ciascuna
+   (mai wrap interno — altrimenti "che elimina il lavoro ripetitivo" da sola si spezzerebbe in più
+   righe e il titolo non starebbe più in 3 righe come ordinato). Sotto 768px si può avvolgere: è mobile,
+   niente foto/card da evitare, l'unico vincolo è zero scroll orizzontale. */
+main > section:first-of-type h1.f6-h1 > span.f6-h1-riga {
+  display: block !important;
+  text-shadow: none !important;
+  font-size: clamp(32px, calc(4.22vw - 26.6px), 55px) !important;
+}
+@media (min-width: 768px) {
+  /* width: max-content — non solo "niente wrap": la riga deve avere un BOX largo quanto il suo
+     contenuto reale (non quanto il contenitore), altrimenti bounding-box/misure automatiche
+     vedrebbero un box stretto mentre il testo trabocca visivamente oltre (controllato: succedeva). */
+  main > section:first-of-type h1.f6-h1 > span.f6-h1-riga {
+    white-space: nowrap !important;
+    width: max-content !important;
+  }
+}
+main > section:first-of-type h1.f6-h1 > span.f6-h1-riga > b {
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
+.f6-sub {
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #d9d4e1;
+  max-width: 62ch;
+  text-shadow: none;
+}
+.f6-sub b {
+  font-weight: 600;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  main > section:first-of-type h1.f6-h1 > span.f6-h1-riga {
+    font-size: clamp(26px, 8vw, 40px) !important;
+  }
+  .f6-sub { font-size: 16px; max-width: 100%; }
+}
+
+/* ============================================================================
+   A1 · LE 3 FOTO — «non nell'angolo, più a sinistra, più centrate, non toccano il testo, più grandi;
+   la centrale (foto2) non così nascosta: può toccare/sovrapporsi un po', non troppo».
+   Stessi selettori di f5-hero.css (.hf-group/.hf-photo--N dentro @media min-width:1280px), stesso
+   !important: vinco per ordine di import (questo file è l'ultimo dei due con pari specificità).
+   Gruppo: right 9vw (si sposta a sinistra rispetto al bordo, "più centrato"), largo 400px a 1920 / 330px
+   a 1440 (clamp con la retta che passa per i due punti — vedi calc), quindi "più grandi" del gruppo F5
+   (che stava a 250-330px). foto2 diventa la più IN ALTO nello z-index (z:4): non è più "sandwichata" fra
+   foto1 e foto3, resta sempre interamente visibile (area visibile 100% ≥ 80% richiesto).
+   ============================================================================ */
+@media (min-width: 1280px) {
+  .hf-group {
+    top: 96px !important;
+    right: 9vw !important;
+    width: clamp(330px, calc(14.583vw + 120px), 400px) !important;
+    height: clamp(400px, calc(17.667vw + 145.6px), 485px) !important;
+  }
+  .hf-photo--1 {
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    transform: rotate(-4deg) !important;
+    z-index: 2 !important;
+  }
+  .hf-photo--2 {
+    top: 42% !important;
+    right: 22% !important;
+    width: 88% !important;
+    transform: rotate(3deg) !important;
+    z-index: 4 !important;
+  }
+  .hf-photo--3 {
+    top: 66% !important;
+    right: -2% !important;
+    width: 55% !important;
+    transform: rotate(-6deg) !important;
+    z-index: 3 !important;
+  }
+}
+
+/* ============================================================================
+   A4 · LE CARD — bordo bianco sottile con grana (non luminoso), spilla d'argento in cima, impilate.
+   ============================================================================ */
+
+/* bordo sottile + niente glow (sostituisco border/box-shadow di f5-card.css, stessa selettore) */
+.f4-card {
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.9) !important; /* invariato: nessun glow aggiunto */
+  /* NIENTE position qui: .f4-card è già position:absolute (f4-hero.css) — ridichiararla come
+     "relative" (bug scoperto in verifica) rompe tutte le coordinate top/left/right assolute delle
+     card, che ricadono nel flusso normale invece che nel gruppo .f4-cards. */
+}
+/* il bordo con grana: doppia mask (padding-box + border-box, composite exclude) → resta visibile
+   solo l'anello di 1px; dentro, una grana feTurbulence leggera (opacity .6 sull'intero layer) */
+.f4-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  padding: 1px;
+  pointer-events: none;
+  opacity: 0.6;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch' seed='4'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    linear-gradient(rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.22));
+  background-size: 120px 120px, 100% 100%;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* la spilla d'argento — in alto al centro, come "spillata allo sfondo" */
+.f4-card-spilla {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  z-index: 5;
+  pointer-events: none;
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #d9d4e1 30%, #8f8a99 70%, #5a5762 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+/* ombra proiettata sulla card, appena sotto la spilla */
+.f4-card-spilla::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(2px);
+  z-index: -1;
+}
+
+/* --- disposizione: sinistra più piccole (.70, era .80), impilate a contatto (il "corner swing" della
+   rotazione crea da solo la sovrapposizione di pochi px sugli angoli, mai sul testo: il testo di ogni
+   card è nel 38% inferiore, le card successive iniziano esattamente dove finisce la precedente). --- */
+@media (min-width: 1280px) {
+  main > section:first-of-type .f4-card--l1,
+  main > section:first-of-type .f4-card--l2,
+  main > section:first-of-type .f4-card--l3 {
+    left: 8px !important;
+    right: auto !important;
+    transform-origin: top left;
+  }
+  main > section:first-of-type .f4-card--l1 { top: 36px !important;  transform: scale(0.7) rotate(-3deg) !important; }
+  main > section:first-of-type .f4-card--l2 { top: 216px !important; transform: scale(0.7) rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--l3 { top: 396px !important; transform: scale(0.7) rotate(-2deg) !important; }
+}
+/* destra: le 2 card impilate (non più affiancate), in una colonna stretta subito a destra del gruppo
+   foto (che occupa x fino a ~9vw dal bordo): stessa tecnica, a contatto, corner-swing della rotazione. */
+@media (min-width: 1600px) {
+  main > section:first-of-type .f4-card--r1,
+  main > section:first-of-type .f4-card--r2 {
+    display: flex !important;
+    left: auto !important;
+    right: 10px !important;
+    transform-origin: top right;
+  }
+  main > section:first-of-type .f4-card--r1 { top: 130px !important; transform: scale(0.72) rotate(2deg) !important; }
+  main > section:first-of-type .f4-card--r2 { top: 316px !important; transform: scale(0.72) rotate(-3deg) !important; }
+}

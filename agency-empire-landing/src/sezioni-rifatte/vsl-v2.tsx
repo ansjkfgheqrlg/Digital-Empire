@@ -44,28 +44,73 @@ const NODI = [
   },
 ] as const;
 
-/* AGGIUNTA F5 (ordine 1 di Max, 14/09 notte) — sotto ciascuna delle 3 card una freccetta hairline ferma che porta
-   a una spiegazione letterale, molto semplice. La freccia+nota vive DENTRO ogni <li className="ra-nodo"> come
-   ultimo figlio assoluto (la card ha già position:relative da rifatte-a.css) — nessuna riga esistente delle
-   card viene toccata. Testo nuovo in brief/COPY-F5-gamma.md §1. CSS: f5-frecce.css (.ra-freccia-nota*). */
+/* RIFACIMENTO B1 (dossier 41, ordine di Max 15/09 — sostituisce l'AGGIUNTA F5) — tre frecce DIVERSE, una per
+   card, come richiesto letteralmente da Max: card 1 (Outreach) sale dall'angolo alto-destro verso l'alto-destra;
+   card 2 (Content) scende dal centro del bordo inferiore, più lunga; card 3 (Second Brain) esce dal bordo
+   destro a metà altezza e sale verso l'alto-destra — ma SOLO da 1600px in su (sotto, il margine di pagina non
+   basta per la nota: dichiarato nel piano, dossier 41 blocco B1): fino a 1599px card 3 usa lo stesso schema
+   "sotto" della card 2. Mobile (<768): tutte "dal basso", come ordinato. Il testo delle 3 note resta identico
+   (COPY-F5-gamma.md §1). Le vecchie regole .ra-freccia-nota/.ra-freccia-svg/.ra-nota-testo (f5-frecce.css)
+   restano nel file ma non trovano più elementi: qui uso classi nuove .ra-fn*. CSS: f6-frecce.css. */
 const NOTE_SISTEMA: Record<(typeof NODI)[number]["id"], string> = {
   outreach: "Cioè: ogni mattina il sistema scrive e manda i messaggi ai tuoi potenziali clienti, da solo.",
   content: "Cioè: gli dai un brief, lui produce caroselli, script e caption pronti su Drive.",
   brain: "Cioè: l'AI ricorda il tuo business e risponde senza che tu glielo rispieghi.",
 };
 
-function FrecciaNota({ id }: { id: (typeof NODI)[number]["id"] }) {
+const VARIANTE_FRECCIA: Record<(typeof NODI)[number]["id"], "top" | "bottom" | "right"> = {
+  outreach: "top",
+  content: "bottom",
+  brain: "right",
+};
+
+function Punta({ id }: { id: string }) {
   return (
-    <div className="ra-freccia-nota">
-      <svg className="ra-freccia-svg" viewBox="0 0 16 24" aria-hidden="true" focusable="false">
-        <defs>
-          <marker id={`ra-punta-${id}`} viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto">
-            <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
-          </marker>
-        </defs>
-        <path d="M8,2 C10,9 6,14 8,20" fill="none" stroke="#fb4604" strokeWidth="1.2" markerEnd={`url(#ra-punta-${id})`} />
-      </svg>
-      <p className="ra-nota-testo">{NOTE_SISTEMA[id]}</p>
+    <marker id={id} viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
+    </marker>
+  );
+}
+
+function FrecciaNota({ id }: { id: (typeof NODI)[number]["id"] }) {
+  const variante = VARIANTE_FRECCIA[id];
+  return (
+    <div className={`ra-fn ra-fn--${variante}`}>
+      {variante === "top" && (
+        <>
+          {/* desktop (≥768px): sale dall'angolo alto-destro, 8px fuori dal bordo */}
+          <svg className="ra-fn-arrow ra-fn-arrow--top" viewBox="0 0 40 100" aria-hidden="true" focusable="false">
+            <defs><Punta id={`ra-fn-p-top-${id}`} /></defs>
+            <path d="M6,94 C4,58 32,48 34,6" fill="none" stroke="#fb4604" strokeWidth="1.3" markerEnd={`url(#ra-fn-p-top-${id})`} />
+          </svg>
+          {/* mobile (<768px): tutte "dal basso" */}
+          <svg className="ra-fn-arrow ra-fn-arrow--mobile" viewBox="0 0 16 30" aria-hidden="true" focusable="false">
+            <defs><Punta id={`ra-fn-p-topm-${id}`} /></defs>
+            <path d="M8,2 L8,26" fill="none" stroke="#fb4604" strokeWidth="1.3" markerEnd={`url(#ra-fn-p-topm-${id})`} />
+          </svg>
+        </>
+      )}
+      {variante === "bottom" && (
+        <svg className="ra-fn-arrow ra-fn-arrow--bottom" viewBox="0 0 24 88" aria-hidden="true" focusable="false">
+          <defs><Punta id={`ra-fn-p-bot-${id}`} /></defs>
+          <path d="M12,4 C-6,32 30,52 12,82" fill="none" stroke="#fb4604" strokeWidth="1.3" markerEnd={`url(#ra-fn-p-bot-${id})`} />
+        </svg>
+      )}
+      {variante === "right" && (
+        <>
+          {/* ≥1600px: esce dal bordo destro a metà altezza, sale verso l'alto-destra */}
+          <svg className="ra-fn-arrow ra-fn-arrow--right" viewBox="0 0 96 72" aria-hidden="true" focusable="false">
+            <defs><Punta id={`ra-fn-p-right-${id}`} /></defs>
+            <path d="M4,64 C36,64 56,22 90,8" fill="none" stroke="#fb4604" strokeWidth="1.3" markerEnd={`url(#ra-fn-p-right-${id})`} />
+          </svg>
+          {/* <1600px (incl. mobile): fallback "sotto", come card 2 — dichiarato, il margine di pagina non basta */}
+          <svg className="ra-fn-arrow ra-fn-arrow--bottom" viewBox="0 0 24 88" aria-hidden="true" focusable="false">
+            <defs><Punta id={`ra-fn-p-botr-${id}`} /></defs>
+            <path d="M12,4 C-6,32 30,52 12,82" fill="none" stroke="#fb4604" strokeWidth="1.3" markerEnd={`url(#ra-fn-p-botr-${id})`} />
+          </svg>
+        </>
+      )}
+      <p className="ra-fn-nota">{NOTE_SISTEMA[id]}</p>
     </div>
   );
 }

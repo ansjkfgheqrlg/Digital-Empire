@@ -37,6 +37,7 @@ const CARDS: CardDef[] = [
 function Card({ c }: { c: CardDef }): ReactNode {
   return (
     <div className={`f4-card f4-card--${c.id}`}>
+      <span className="f4-card-spilla" aria-hidden="true" />
       <div className="f5-card-img">
         <img src={c.img} alt="" width={400} height={320} loading="lazy" decoding="async" />
       </div>

@@ -2,16 +2,18 @@ import Link from "next/link";
 import { prenotaDa } from "@/lib/contatti";
 import { FATTI } from "@/lib/fatti";
 
-/* SEZIONE AGGIUNTA 1 — Specchio: «Ti voglio bene, ma lo stai facendo a mano» + il DM vero + i quattro segnali + voto.
-   Inserita dopo <Problems />. Copy: cantieri/agency-empire-landing-vivo/COPY.md §N2. Tutto dentro <div class="vivo">.
+/* SEZIONE AGGIUNTA 1 — Specchio: «Ti voglio bene, ma lo stai facendo a mano» + i quattro segnali + CTA.
+   Inserita dopo <Problems />. Tutto dentro <div class="vivo">.
    D5 (ordine di Max, 13/09 — Dossier 38 v2 §I): colonna foto a sinistra del blocco alto (grid md:grid-cols-[auto_1fr] gap-10),
    immagine intera 1/1 (400×400, resa ≤ 368 px, §14: mai cover, mai grana sull'immagine), la riga SOPRA l'immagine in basso
-   (corsivo serif 400/18 su banda scura), bordo 1 px + ombra bassa. Il testo esistente non è cambiato di una parola.
-   CSS della colonna foto: aggiunte-a.css (.sp-*, .foto-intera--riga). */
+   (corsivo serif 400/18 su banda scura), bordo 1 px + ombra bassa.
+   F6 (ordine di Max 15/09, dossier 41 blocco E, legge del copy generico): riscritto senza «DM»/concessionario —
+   esempi generici in serie, il principio dell'automazione, la chiamata gratuita, la chiusura. Copy in
+   brief/COPY-F6-gamma.md §E1. CSS della colonna foto/chat: aggiunte-a.css (.sp-*, .foto-intera--riga, .dm — vivo.css). */
 const SEGNALI: [string, string][] = [
-  ["Rimandi il follow-up.", "Il lead di martedì lo ricontatti venerdì, se te lo ricordi."],
-  ["Pubblichi quando riesci.", "Tre post una settimana, zero la successiva."],
-  ["Copi e incolli.", "Lo stesso messaggio a trenta persone diverse. Loro se ne accorgono."],
+  ["Rimandi la risposta.", "A chi ti ha scritto ieri, rispondi domani. Se te lo ricordi."],
+  ["Rifai lo stesso conto.", "Ogni preventivo calcolato daccapo, ogni volta, a mano."],
+  ["Copi e incolli.", "Lo stesso messaggio, la stessa mail, lo stesso report. Cambia solo il nome in cima."],
   ["Sai tutto tu.", "Clienti, prezzi, processi: nella tua testa e in cinque cartelle Drive. Il giorno che manchi tu, manca l'azienda."],
 ];
 
@@ -20,7 +22,7 @@ const FOTO_SPECCHIO = {
   src: "/aura/specchio.webp",
   width: 400,
   height: 400,
-  alt: "Un uomo seduto, la mano sul viso, davanti al telefono: la mattina dei trenta DM scritti a mano.",
+  alt: "Un uomo seduto, la mano sul viso, davanti al computer: la mattina di chi rifà tutto a mano.",
 } as const;
 
 export function Specchio() {
@@ -43,9 +45,8 @@ export function Specchio() {
                   loading="lazy"
                   decoding="async"
                 />
-                {/* «Da tre anni» del brief non sta in FATTI.md: il numero non si scrive (regola 4). Segnalato nel rapporto. */}
                 <figcaption>
-                  Ogni mattina. {FATTI.dmAMano} DM. A mano. <b>Da anni.</b>
+                  Ogni mattina. Le stesse cose, a mano. <b>Da anni.</b>
                 </figcaption>
               </figure>
             </div>
@@ -56,16 +57,32 @@ export function Specchio() {
               </h2>
               <p className="sv-lead sv-muted mt-4 max-w-[52ch]">
                 Non è colpa tua: nessuno ti ha mai mostrato il sistema. Ti hanno mostrato un tool, un abbonamento, un corso. Questo è quello
-                che parte dal tuo telefono oggi:
+                che arriva anche a te, ogni giorno:
               </p>
               <div className="dm mt-6 max-w-[460px]">
-                <span className="sv-mono block mb-2">DM di oggi · concessionario, Veneto</span>
-                <i>Ciao! Ho visto la tua concessionaria, complimenti 👏 Ti va se ti mando due info su come aumentare i contatti? 🚗</i>
-                <em>
-                  — {FATTI.dmAMano} volte al giorno, {FATTI.minutiPerDm} minuti l&apos;uno: {FATTI.orePerDm.toLocaleString("it-IT")} ore. Sembra
-                  un template perché lo è.
-                </em>
+                <span className="sv-mono block mb-2">Nella posta, oggi:</span>
+                <i>Ciao, mi rimandi il preventivo aggiornato? Mi serve entro stasera 🙏</i>
+                <em>— Il quarto oggi. Aperto il foglio, ricopiato a mano. Di nuovo.</em>
               </div>
+              <p className="sv-body sv-muted mt-6 max-w-[54ch]">
+                Il preventivo ricopiato a mano. Lo stesso report ogni lunedì. I dati spostati a mano da un foglio all&apos;altro. La stessa
+                mail scritta {FATTI.dmAMano} volte.
+              </p>
+              <p className="sv-body mt-4 max-w-[54ch]">
+                Se lo fai ogni giorno, uguale, <b style={{ color: "var(--sv-ink-1)" }}>è una macchina che lo deve fare.</b>
+              </p>
+              <p className="sv-body sv-muted mt-4 max-w-[54ch]">
+                Automatizzare lo fa anche <b style={{ color: "var(--sv-ink-1)" }}>meglio</b> — o <b style={{ color: "var(--sv-ink-1)" }}>più
+                in grande</b>. Dipende dal processo.
+              </p>
+              <p className="sv-body sv-muted mt-4 max-w-[54ch]">
+                Non tutto va automatizzato. Per questo la prima chiamata è gratuita: in <b style={{ color: "var(--sv-ink-1)" }}>{FATTI.minutiChiamata}
+                {" "}minuti</b> guardiamo la tua situazione e ti diciamo se possiamo aiutarti davvero, su un problema concreto.
+              </p>
+              <p className="sv-body sv-muted mt-4 max-w-[54ch]">
+                Oggi con l&apos;AI si automatizza tutto. La differenza è <b style={{ color: "var(--sv-ink-1)" }}>automatizzare le cose
+                giuste, nel modo giusto</b>. Le aziende che l&apos;hanno capito scalano così.
+              </p>
             </div>
           </div>
 

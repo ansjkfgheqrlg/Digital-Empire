@@ -9,6 +9,7 @@ import { HeroTexture } from "@/sezioni-aggiunte/hero-texture";
 import { FunnelHero } from "@/sezioni-aggiunte/funnel-hero";
 import { HeroCards } from "@/sezioni-aggiunte/hero-card"; // F4 A5
 import { HeroFoto } from "@/sezioni-aggiunte/hero-foto"; // F5 (ordine di Max 14/09 notte): 3 foto a destra
+import { HeroTitolo } from "@/sezioni-aggiunte/hero-titolo"; // F6 A2 (ordine di Max 15/09): titolo+sottotitolo nuovi
 
 function CTA({
   large = false,
@@ -83,6 +84,8 @@ export function Hero() {
         <Reveal delay={0.1}>
           <div className="pre-headline mb-6">Digital Empire · Agency · Automazione AI Proprietaria</div>
         </Reveal>
+
+        <HeroTitolo />
 
         <Reveal delay={0.2}>
           <h1 className="mb-10 text-center" style={{ letterSpacing: 0 }}>
