@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s2",
+  "modalita": "retroattiva",
+  "file_prodotto": {
+    "percorso": "PIANO-MAESTRO/29-ECOSISTEMA-LANCI/00-LEGGIMI.md",
+    "byte": 1,
+    "formato": "text/markdown",
+    "pagine": null
+  },
+  "bandiere_rosse": [
+    {
+      "id": "RF1-nessun-output-pratico",
+      "presente": false,
+      "come_verificata": "fixture di collaudo: conteggio simulato",
+      "dettaglio": null
+    },
+    {
+      "id": "RF2-template-senza-esempio",
+      "presente": false,
+      "come_verificata": "fixture di collaudo: conteggio simulato",
+      "dettaglio": null
+    },
+    {
+      "id": "RF3-promessa-non-mantenuta",
+      "presente": false,
+      "come_verificata": "fixture di collaudo: confronto simulato",
+      "dettaglio": null
+    },
+    {
+      "id": "RF4-contenuto-non-originale",
+      "presente": false,
+      "come_verificata": "fixture di collaudo: ricerca nomi simulata",
+      "dettaglio": null
+    },
+    {
+      "id": "RF5-link-morti",
+      "presente": false,
+      "come_verificata": "fixture di collaudo: link elencati in link_testati",
+      "dettaglio": null
+    },
+    {
+      "id": "RF6-consegna-non-provata",
+      "presente": false,
+      "come_verificata": "fixture di collaudo: consegna simulata",
+      "dettaglio": null
+    }
+  ],
+  "link_testati": [
+    {
+      "url": "https://esempio.test/a",
+      "codice": 200
+    },
+    {
+      "url": "https://esempio.test/b",
+      "codice": 200
+    }
+  ],
+  "debito_collaudo": "Fixture di collaudo: debito dichiarato di prova, entro il 2026-12-31.",
+  "esito": "consegnabile",
+  "non_misurato": [
+    "Fixture di collaudo: nessuna verifica reale."
+  ]
+}

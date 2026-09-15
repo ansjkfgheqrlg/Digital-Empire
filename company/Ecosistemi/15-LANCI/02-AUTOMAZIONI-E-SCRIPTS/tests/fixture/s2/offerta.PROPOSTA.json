@@ -1,0 +1,56 @@
+{
+  "_nota": "Fixture di collaudo: proposta non firmata. offerta.json si costruisce nei test aggiungendo 'firma'.",
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s2",
+  "ruolo_prodotto": "vendita",
+  "ruolo_scelto_per_silenzio": false,
+  "ruolo_revisione_il": null,
+  "prezzo": 67,
+  "valuta": "EUR",
+  "prezzi_precedenti_trovati": [],
+  "livello_listino": null,
+  "data_apertura": "2030-01-15",
+  "durata_carrello_gg": 7,
+  "data_chiusura": "2030-01-22",
+  "struttura": {
+    "valore_dichiarato": 204,
+    "rapporto_valore_prezzo": 3.04,
+    "soglia_rapporto_minima": 3,
+    "ancoraggio": null,
+    "bonus": [
+      {
+        "nome": "Bonus con listino",
+        "valore": 97,
+        "fonte_valore": "prezzo-listino-proprio",
+        "riferimento_fonte": "listino di prova"
+      },
+      {
+        "nome": "Bonus con costo",
+        "valore": 40,
+        "fonte_valore": "costo-produzione",
+        "riferimento_fonte": "costo di prova"
+      },
+      {
+        "nome": "Bonus senza fonte",
+        "valore": 999,
+        "fonte_valore": null,
+        "riferimento_fonte": "vale zero"
+      }
+    ],
+    "garanzia": {
+      "giorni": 14,
+      "condizioni": "Rimborso entro 14 giorni (fixture).",
+      "rinuncia_recesso_raccolta": false
+    },
+    "motivo_per_agire_adesso": "fixture: scadenza del carrello",
+    "azione_richiesta": "Comprare il prodotto di prova."
+  },
+  "previsione_riferimento": {
+    "file": "previsione.json",
+    "ricavo_atteso": 301.5
+  },
+  "alternative_scartate": [],
+  "non_misurato": [
+    "Fixture di collaudo."
+  ]
+}

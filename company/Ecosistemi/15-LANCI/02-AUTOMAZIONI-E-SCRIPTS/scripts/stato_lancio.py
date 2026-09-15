@@ -10,8 +10,10 @@ un'altra cosa, piu' piccola e piu' noiosa:
     -> scrivere un verbale
 
 Questo modulo copre lo scaglione **S2a** (micro-task MT-XV6Y): creare, leggere,
-elencare, e caricare/validare gli artefatti. Il comando `avanza` con i gate e'
-S2b (MT-3XWC) e non sta qui.
+elencare, e caricare/validare gli artefatti; e lo scaglione **S2b** (MT-3XWC):
+`avanza` con i gate, i comandi umani (`sospendi`, `riprendi`, `abbandona`,
+`firma`, `via_libera`) e i punti umani. Il contratto dei campi e' in
+`CONTRATTO-STATO.md`, che e' legge; il registro decide sopra tutto.
 
 DUE REGOLE CHE VALGONO PER TUTTO IL FILE
 
@@ -27,8 +29,14 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 import time
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
+
+try:  # importato come pacchetto (python -m scripts.lancio, pytest)
+    from .gates import _comune as gates
+except ImportError:  # pragma: no cover - importato a mano da un altro cwd
+    from scripts.gates import _comune as gates  # type: ignore
 
 # Percorsi ------------------------------------------------------------------
 QUI = os.path.dirname(os.path.abspath(__file__))
@@ -50,6 +58,7 @@ ARTEFATTI = {
     "ricerca.json": "ricerca.schema.json",
     "previsione.json": "previsione.schema.json",
     "offerta.json": "offerta.schema.json",
+    "copy/manifest.json": "copy.schema.json",
     "funnel.json": "funnel.schema.json",
     "editoriale.json": "editoriale.schema.json",
     "budget.json": "budget.schema.json",

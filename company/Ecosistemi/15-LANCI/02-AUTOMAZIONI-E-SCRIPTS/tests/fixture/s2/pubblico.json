@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s2",
+  "misurato_il": "2026-09-01T10:00:00+02:00",
+  "scade_il": "2026-10-01",
+  "canali": [
+    {
+      "id": "lista-email-prova",
+      "tipo": "lista-email",
+      "posseduto": true,
+      "raggiungibili_verificati": 800,
+      "raggiungibili_dichiarati": 1200,
+      "prova": {
+        "tipo": "esporto-lista",
+        "riferimento": "prove/esporto-lista-20260820.csv",
+        "data": "2026-08-20"
+      },
+      "stato_tecnico": "attivo",
+      "note": "fixture di collaudo: numeri di prova, non misure reali"
+    },
+    {
+      "id": "canale-video-prova",
+      "tipo": "canale-video",
+      "posseduto": false,
+      "raggiungibili_verificati": 200,
+      "raggiungibili_dichiarati": null,
+      "prova": {
+        "tipo": "schermata-conteggio-piattaforma",
+        "riferimento": "prove/schermata-youtube-20260828.png",
+        "data": "2026-08-28"
+      },
+      "stato_tecnico": "attivo"
+    }
+  ],
+  "totale_raggiungibile_verificato": 1000,
+  "non_misurato": [
+    "Fixture di collaudo (tests/fixture/s2): i numeri sono inventati per provare il gate, non sono misure."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s2",
+  "prodotto": "Prodotto di prova S2",
+  "domande": [
+    {
+      "id": "D1-prodotto-esiste",
+      "testo": "Il prodotto esiste come file consegnabile?",
+      "risposta": "si",
+      "sostenuta_da": "certificato.json"
+    },
+    {
+      "id": "D2-pubblico-esiste",
+      "testo": "Esiste un pubblico verificato?",
+      "risposta": "si",
+      "sostenuta_da": "pubblico.json"
+    },
+    {
+      "id": "D3-si-puo-incassare",
+      "testo": "Si puo' incassare?",
+      "risposta": "si",
+      "sostenuta_da": "previsione.json"
+    },
+    {
+      "id": "D4-capacita-nel-periodo",
+      "testo": "C'e' capacita' nel periodo?",
+      "risposta": "si",
+      "sostenuta_da": "offerta.PROPOSTA.json"
+    },
+    {
+      "id": "D5-nessun-lancio-in-conflitto",
+      "testo": "Nessun altro lancio in conflitto?",
+      "risposta": "si",
+      "sostenuta_da": "ricerca.json"
+    }
+  ],
+  "esito": "si-fa",
+  "ragione_archiviazione": null,
+  "non_misurato": [
+    "Fixture di collaudo: risposte di prova."
+  ]
+}

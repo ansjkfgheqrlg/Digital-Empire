@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s2",
+  "frasi": [
+    {
+      "testo": "Frase di prova numero 1: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-1",
+        "raccolta_il": "2026-08-20",
+        "contesto": null
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di prova numero 2: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-2",
+        "raccolta_il": "2026-08-21",
+        "contesto": null
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di prova numero 3: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-3",
+        "raccolta_il": "2026-08-22",
+        "contesto": null
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di prova numero 4: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-1",
+        "raccolta_il": "2026-08-23",
+        "contesto": null
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di prova numero 5: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-2",
+        "raccolta_il": "2026-08-24",
+        "contesto": null
+      },
+      "categoria": "confronto"
+    },
+    {
+      "testo": "Frase di prova numero 6: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-3",
+        "raccolta_il": "2026-08-25",
+        "contesto": null
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di prova numero 7: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-1",
+        "raccolta_il": "2026-08-26",
+        "contesto": null
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di prova numero 8: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-2",
+        "raccolta_il": "2026-08-27",
+        "contesto": null
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di prova numero 9: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-3",
+        "raccolta_il": "2026-08-28",
+        "contesto": null
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di prova numero 10: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-1",
+        "raccolta_il": "2026-08-20",
+        "contesto": null
+      },
+      "categoria": "confronto"
+    },
+    {
+      "testo": "Frase di prova numero 11: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-2",
+        "raccolta_il": "2026-08-21",
+        "contesto": null
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di prova numero 12: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-3",
+        "raccolta_il": "2026-08-22",
+        "contesto": null
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di prova numero 13: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-1",
+        "raccolta_il": "2026-08-23",
+        "contesto": null
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di prova numero 14: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-2",
+        "raccolta_il": "2026-08-24",
+        "contesto": null
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di prova numero 15: parole del pubblico per il collaudo del gate",
+      "fonte": {
+        "url": "https://esempio.test/fonte-3",
+        "raccolta_il": "2026-08-25",
+        "contesto": null
+      },
+      "categoria": "confronto"
+    }
+  ],
+  "campione_verificato": [
+    {
+      "url": "https://esempio.test/fonte-1",
+      "raggiungibile": true,
+      "testo_ritrovato": null,
+      "verificata_il": "2026-09-01T10:00:00+02:00"
+    },
+    {
+      "url": "https://esempio.test/fonte-2",
+      "raggiungibile": true,
+      "testo_ritrovato": null,
+      "verificata_il": "2026-09-01T10:00:00+02:00"
+    },
+    {
+      "url": "https://esempio.test/fonte-3",
+      "raggiungibile": true,
+      "testo_ritrovato": null,
+      "verificata_il": "2026-09-01T10:00:00+02:00"
+    }
+  ],
+  "concorrenti": [],
+  "non_misurato": [
+    "Fixture di collaudo: frasi inventate per provare il gate."
+  ]
+}

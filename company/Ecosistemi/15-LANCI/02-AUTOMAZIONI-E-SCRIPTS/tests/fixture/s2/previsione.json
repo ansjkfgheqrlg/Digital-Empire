@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s2",
+  "calcolata_il": "2026-09-01T11:00:00+02:00",
+  "formula": "ricavo_lordo = pubblico_raggiungibile * tasso_visita * tasso_acquisto * prezzo",
+  "ingressi": {
+    "pubblico_raggiungibile": 1000,
+    "prezzo": 67,
+    "fonte_pubblico": "ART-PUB",
+    "fonte_prezzo": "proposta-in-corso"
+  },
+  "scenari": {
+    "pessimista": {
+      "tasso_visita": 0.05,
+      "tasso_acquisto": 0.01,
+      "ricavo_lordo": 33.5,
+      "copie": 0.5,
+      "perche_questo_scenario": "fixture: caso basso"
+    },
+    "atteso": {
+      "tasso_visita": 0.15,
+      "tasso_acquisto": 0.03,
+      "ricavo_lordo": 301.5,
+      "copie": 4.5,
+      "perche_questo_scenario": "fixture: caso medio"
+    },
+    "ottimista": {
+      "tasso_visita": 0.3,
+      "tasso_acquisto": 0.06,
+      "ricavo_lordo": 1206.0,
+      "copie": 18.0,
+      "perche_questo_scenario": "fixture: caso alto"
+    }
+  },
+  "assunzioni": [
+    {
+      "nome": "tasso_visita_atteso",
+      "valore": 0.15,
+      "stato": "assunto",
+      "fonte": null,
+      "da_dove_viene_se_assunto": "numero di comodo (fixture)"
+    },
+    {
+      "nome": "tasso_acquisto_atteso",
+      "valore": 0.03,
+      "stato": "assunto",
+      "fonte": null,
+      "da_dove_viene_se_assunto": "numero di comodo (fixture)"
+    },
+    {
+      "nome": "pubblico_raggiungibile",
+      "valore": 1000,
+      "stato": "misurato",
+      "fonte": "pubblico.json",
+      "da_dove_viene_se_assunto": null
+    }
+  ],
+  "pareggio": {
+    "copie_per_pareggio": 1,
+    "costo_totale_previsto": 0,
+    "include_costo_macchina": false
+  },
+  "non_misurato": [
+    "Fixture di collaudo: nessun numero e' una misura reale."
+  ]
+}
