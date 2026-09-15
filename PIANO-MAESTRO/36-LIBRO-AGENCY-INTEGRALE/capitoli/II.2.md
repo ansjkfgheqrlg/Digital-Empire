@@ -104,7 +104,7 @@ generare il 40-60% dell'intera pipeline entro 12 mesi [[max18-v06-JTn5pqm9ecM::K
 webinar, la sintesi propone un formato preciso: un workshop live di 90 minuti con una demo reale
 dell'automazione venduta, riempibile in modo organico tramite LinkedIn e YouTube senza bisogno di
 budget pubblicitario. Il benchmark citato per intero, riportato a schermo e ripetuto identico a voce,
-è il seguente: "200 iscritti → 90 presenti → 12 prenotate call → 5 chiudono = €50K da un singolo
+è il seguente: "200 iscritti → 90 presenti → 12 prenotate call → 5 chiudono 50K da un singolo
 webinar" [[max18-v06-JTn5pqm9ecM::KA-044]]. La struttura consigliata per il webinar stesso è a tre
 blocchi — sessanta minuti di framework e demo dal vivo, quindici minuti di risultati prima/dopo,
 quindici minuti finali di pitch in modalità "application-only", con posti dichiaratamente limitati

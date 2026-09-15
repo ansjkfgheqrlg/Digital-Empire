@@ -1,0 +1,828 @@
+{
+  "gruppo": "B-gate-sentinelle-ultimo-metro",
+  "fonti_lette": [
+    "scripts/verifica_recap.py",
+    "scripts/gate_battito_hook.py",
+    "PIANO-MAESTRO/scripts/gate_densita_libro.py",
+    ".claude/skills/fabbrica-siti/scripts/gate_siti.py",
+    ".claude/skills/fabbrica-siti/scripts/gate_solo_aggiunte.py",
+    ".claude/agents/sentinel-brandvoice.md",
+    ".claude/agents/sentinel-cost.md",
+    ".claude/agents/sentinel-drift.md",
+    ".claude/agents/sentinel-quality.md",
+    ".claude/agents/sentinel-security.md",
+    "company/Memory/decisions/ADR-016-ultimo-metro.md",
+    "company/Memory/decisions/ADR-028-niente-blocca-tutto.md",
+    "company/Memory/decisions/ADR-030-sito-online-solo-aggiungere.md",
+    ".claude/skills/ultimo-metro/SKILL.md",
+    "PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md",
+    "PIANO-MAESTRO/35-PIANO-LIBRO-AGENCY-V2.md (Parte 0 + §8.7)"
+  ],
+  "atoms": [
+    {
+      "id": "KA-001",
+      "tipo": "principio",
+      "contenuto": "Il principio del gate meccanico: uno strumento che dipende dal fatto che l'agente si ricordi di usarlo non è un gate, è un altro promemoria. Un vero gate deve scattare da solo, all'evento giusto, senza dipendere dalla memoria del momento.",
+      "fonte": "scripts/gate_battito_hook.py righe 8-12",
+      "ancora": "Uno strumento che dipende dal fatto che io mi ricordi di lanciarlo non e' un gate: e' un altro promemoria.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-002",
+      "tipo": "errore",
+      "contenuto": "La saga del centraggio del battito: sette giri di soluzioni tecniche via via più sofisticate (spazi, punti, blocchi di codice, tabelle markdown) risolvevano un problema — il centraggio visivo — che alla fine Max non voleva più. La tecnica giusta per un requisito sbagliato resta una soluzione sbagliata: prima di ingegnerizzare la centesima variante tecnica, va verificato che il requisito di fondo sia ancora quello vero.",
+      "fonte": "scripts/verifica_recap.py righe 12-24",
+      "ancora": "La tecnica giusta per un requisito sbagliato resta una soluzione sbagliata",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-001",
+          "tipo": "specifica",
+          "perche": "è un caso concreto del principio: uno strumento tecnico raffinato non basta se il requisito sottostante è sbagliato o cambiato"
+        }
+      ]
+    },
+    {
+      "id": "KA-003",
+      "tipo": "procedura",
+      "contenuto": "Il battito di Digital Empire ha uno schema fisso, verificato meccanicamente riga per riga: titolo in grassetto con la percentuale, poi bullet semplici per Fatto/Sto facendo/Farò/Forze/Assetto/Potere, ognuno con una riga vuota dopo. È vietato metterlo dentro un blocco di codice markdown.",
+      "fonte": "scripts/gate_battito_hook.py righe 32-45; scripts/verifica_recap.py righe 135-260",
+      "ancora": "MAI dentro un blocco di codice ``` — VIETATO dal 7º giro",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-004",
+      "tipo": "regola",
+      "contenuto": "Il gate del battito applica tre protezioni, tutte necessarie: non validare mai un esempio di documentazione scambiato per un tentativo vero (falsi positivi), non bloccare due volte lo stesso turno (anti-loop), e non rompere mai il turno per un errore imprevisto (mai rottura). Un hook che fa fallire il turno per un difetto minore sarebbe un danno peggiore del difetto che sorveglia.",
+      "fonte": "scripts/gate_battito_hook.py righe 18-27",
+      "ancora": "Un hook che fa fallire il turno di Max sarebbe un danno piu' grande di un battito storto.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-001",
+          "tipo": "dipende",
+          "perche": "le tre protezioni sono la condizione perché il gate automatico resti un aiuto e non diventi esso stesso un ostacolo"
+        }
+      ]
+    },
+    {
+      "id": "KA-005",
+      "tipo": "regola",
+      "contenuto": "Il divieto del \"widget blu\": il battito non può mai stare dentro un blocco di codice, perché nel renderer di Max un blocco di codice è un widget a sé stante (sfondo/testo colorato, pulsante copia), non testo semplice, ed è stato esplicitamente bocciato da Max con quelle parole.",
+      "fonte": "scripts/gate_battito_hook.py righe 32-38",
+      "ancora": "non deve mai essere con quel formato da copiare e tutto di colori azzurri",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-006",
+      "tipo": "errore",
+      "contenuto": "L'innesco di Missione, aggiunto dopo un fallimento in produzione: il gate sapeva già validare una Missione malformata, ma non sapeva accorgersi di una Missione MANCANTE quando Max la chiedeva esplicitamente. Un controllo a valle senza innesco a monte non è un controllo, è una speranza — ora la sua assenza, quando richiesta, è un guasto bloccante quanto una forma sbagliata.",
+      "fonte": "scripts/gate_battito_hook.py righe 239-251",
+      "ancora": "Un controllo a valle senza innesco a monte non e' un controllo: e' una speranza.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-004",
+          "tipo": "specifica",
+          "perche": "è un caso concreto in cui un buco nella copertura del gate (assenza non rilevata) ha richiesto di estendere le sue protezioni"
+        }
+      ]
+    },
+    {
+      "id": "KA-007",
+      "tipo": "definizione",
+      "contenuto": "Il gate di densità dei documenti nasce dalla stessa diagnosi del gate del battito, applicata ai documenti di conoscenza invece che al recap: un documento non esce denso perché lo si ricorda, esce denso perché un programma conta gli atomi previsti e blocca la consegna se ne mancano.",
+      "fonte": "PIANO-MAESTRO/scripts/gate_densita_libro.py righe 4-10",
+      "ancora": "Un documento non esce denso perche' me lo ricordo. Esce denso perche' un programma conta gli atomi e blocca la consegna.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-001",
+          "tipo": "specifica",
+          "perche": "applica lo stesso principio del gate meccanico (non ricordare, bloccare) a un dominio diverso: la densità dei documenti"
+        }
+      ]
+    },
+    {
+      "id": "KA-008",
+      "tipo": "procedura",
+      "contenuto": "Un capitolo cita un atomo con il marcatore letterale [[<uid>]] scritto nel punto esatto in cui l'atomo entra davvero nel testo. Il costruttore del PDF lo trasforma in una nota di fonte leggibile; il gate lo usa per contare quali atomi sono davvero stati usati.",
+      "fonte": "PIANO-MAESTRO/scripts/gate_densita_libro.py righe 12-16",
+      "ancora": "Nel markdown si scrive il marcatore  [[<uid>]]  dove l'atomo entra davvero.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-009",
+      "tipo": "regola",
+      "contenuto": "Il gate di densità applica cinque misure obbligatorie e basta che una sola manchi perché il capitolo sia rifiutato: copertura al 100% degli atomi assegnati, almeno 150 parole attorno a ogni atomo portante, la citazione verbatim dell'ancora per almeno il 90% dei portanti che ce l'hanno, il blocco di confine \"Cosa fa Digital Empire su questo punto\", e nessun marcatore di lavoro non finito.",
+      "fonte": "PIANO-MAESTRO/scripts/gate_densita_libro.py righe 17-24",
+      "ancora": "LE CINQUE MISURE (una sola che manca = RIFIUTATO)",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-007",
+          "tipo": "dipende",
+          "perche": "sono le cinque misure operative con cui il principio del gate di densità viene fatto rispettare davvero"
+        }
+      ]
+    },
+    {
+      "id": "KA-010",
+      "tipo": "numero",
+      "contenuto": "Sulla misura dell'ancora verbatim il gate dichiara il proprio limite invece di fingere una copertura che non ha: il 62% degli atomi non possiede un'ancora, quindi la soglia del 90% si applica soltanto a quelli che ce l'hanno, non a tutti gli atomi del capitolo.",
+      "fonte": "PIANO-MAESTRO/scripts/gate_densita_libro.py riga 22",
+      "ancora": "il 62% degli atomi non ce l'ha: su quelli non si puo' pretendere",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "contesto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-011",
+      "tipo": "errore",
+      "contenuto": "gate_siti.py nomina un giudice che il canone della Fabbrica dei siti citava a parole senza che esistesse davvero: dal 2026-09-06 la legge diceva che una consegna che non passa quel gate non è consegnata, ma il 2026-09-10 il file non esisteva ancora — una regola che nomina un controllo mai costruito non è un controllo.",
+      "fonte": ".claude/skills/fabbrica-siti/scripts/gate_siti.py righe 5-11",
+      "ancora": "quel file non esisteva: la legge nominava un giudice che non era mai stato nominato",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-012",
+      "tipo": "definizione",
+      "contenuto": "I controlli vivi del gate dei siti (cassa che risolve, prezzo leggibile, immagine non muta, prove verificabili, nessun anno scritto a mano) sono misurati apposta contro ciò che il metodo di riferimento studiato (Andrei Pascu) NON fa: \"scelta di Digital Empire\" significa che non è una cosa che lui fa e Digital Empire copia, ma una cosa che lui non fa e che Digital Empire fa apposta per differenziarsi.",
+      "fonte": ".claude/skills/fabbrica-siti/scripts/gate_siti.py righe 13-23",
+      "ancora": "non e' una cosa che lui fa e noi copiamo",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-013",
+      "tipo": "regola",
+      "contenuto": "Su un sito online che il committente ha già visto e approvato si può SOLO aggiungere, mai modificare: il \"prima\" da rispettare è sempre il live (non il sorgente nel repo), si aggiungono solo file o componenti nuovi con zero righe rimosse sui file esistenti, e una riscrittura si fa solo se il committente la ordina con quelle parole esatte, comunque prima in anteprima.",
+      "fonte": "company/Memory/decisions/ADR-030-sito-online-solo-aggiungere.md righe 25-35",
+      "ancora": "Non puoi modificare niente di ciò che già c'è, puoi solamente aggiungere.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-014",
+      "tipo": "procedura",
+      "contenuto": "Il gate del \"solo aggiungere\" è meccanico e in due parti: la parte A confronta il testo visibile del live con quello della nuova build (difflib deve produrre solo operazioni equal e insert; un delete o un replace significa che qualcosa che c'era è cambiato, e quindi fallisce); la parte B verifica via git diff che ogni file esistente abbia zero righe rimosse.",
+      "fonte": ".claude/skills/fabbrica-siti/scripts/gate_solo_aggiunte.py righe 6-12",
+      "ancora": "un `delete` o un `replace` = qualcosa che c'era è cambiato → FAIL",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-013",
+          "tipo": "specifica",
+          "perche": "è l'implementazione meccanica, riga per riga, della regola generale del 'solo aggiungere' su un sito già online"
+        }
+      ]
+    },
+    {
+      "id": "KA-015",
+      "tipo": "definizione",
+      "contenuto": "Le deroghe al gate \"solo aggiungere\" sono due, entrambe esplicite e mai date per default: --ignora toglie dal confronto le stringhe che cambiano da sole (come l'anno di copyright), --consenti permette di correggere un refuso in una sezione aggiunta da Digital Empire stessa, mai nel testo scritto dal committente.",
+      "fonte": ".claude/skills/fabbrica-siti/scripts/gate_solo_aggiunte.py righe 22-26",
+      "ancora": "entrambe sono DEROGHE e vanno scritte nel checkpoint, mai date per default",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-016",
+      "tipo": "errore",
+      "contenuto": "La lezione che ha generato ADR-030: un piano approvato da Max è stato messo in produzione al primo colpo su un sito già visto e approvato, ed è stato bocciato da Max dopo un'ora online. Un piano che Max ha letto e un sito che Max ha visto non coincidono finché non li vede insieme: chi ci lavora sopra non ha licenza di riscriverlo, nemmeno con un piano approvato.",
+      "fonte": "company/Memory/decisions/ADR-030-sito-online-solo-aggiungere.md righe 6-17",
+      "ancora": "hai letteralmente rovinato tutto il sito. Riporta il sito esattamente com'era prima che lo modificassi",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-013",
+          "tipo": "precede",
+          "perche": "l'errore reale del 12/09 è il fatto che ha generato la regola del solo-aggiungere"
+        }
+      ]
+    },
+    {
+      "id": "KA-017",
+      "tipo": "procedura",
+      "contenuto": "Il BrandVoice Sentinel dà il suo verdetto con un gate binario a 8 item (G2): un solo item fallito blocca l'intero output, senza punteggio pesato e senza \"quasi\". I punti verificano voce diretta/provocatoria/trasparente, claim con proof (CPB), P prima di S nella struttura APSOC, pricing one-time, zero AI-slop, autonomia del cliente, brand_kit dichiarato e segreti fuori dal repo.",
+      "fonte": ".claude/agents/sentinel-brandvoice.md righe 180-205",
+      "ancora": "checklist binaria a 8 item. Ogni item e' pass/fail. Un solo fail",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-018",
+      "tipo": "procedura",
+      "contenuto": "Il test Barnum in 3 mosse per riconoscere una frase generica: sostituire il destinatario e il settore con \"[X]\" e vedere se la frase regge identica; cercare un numero, una data o un nome proprio verificabile (assenza = candidato Barnum); cercare il contrario, e se nessun concorrente serio lo direbbe mai, la frase non sta dicendo niente.",
+      "fonte": ".claude/agents/sentinel-brandvoice.md righe 90-94",
+      "ancora": "Sostituisco il nome del destinatario e il settore con \"[X]\". Se la frase regge identica, e' Barnum.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-019",
+      "tipo": "principio",
+      "contenuto": "L'invariante assoluta del brand voice: ogni affermazione pubblica segue lo schema Claim → Proof → Benefit (CPB). Un claim senza proof è un difetto bloccante che ferma la pubblicazione senza eccezioni, indipendentemente da chi l'ha scritto — vale anche per un output firmato dal Board.",
+      "fonte": ".claude/agents/sentinel-brandvoice.md righe 58-66",
+      "ancora": "Un claim senza proof e' un difetto bloccante: il Brand-Voice Sentinel ferma la pubblicazione",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-017",
+          "tipo": "specifica",
+          "perche": "CPB è uno degli 8 item della checklist G2 e insieme il criterio più ripetuto in tutte le sentinelle"
+        }
+      ]
+    },
+    {
+      "id": "KA-020",
+      "tipo": "numero",
+      "contenuto": "Il listino pubblico e fisso di Digital Empire è one-time, mai a canone: Outreach Factory 4.000 EUR, Content Factory 3.500 EUR, Second Brain 2.500 EUR, Engine Room (bundle dei tre) 8.000 EUR, con setup di 7 giorni lavorativi e 90 giorni di supporto inclusi in ogni prodotto.",
+      "fonte": ".claude/agents/sentinel-brandvoice.md righe 99-114",
+      "ancora": "One-time, zero canoni. Nessun abbonamento mensile sulle implementazioni agency.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "contesto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-021",
+      "tipo": "principio",
+      "contenuto": "Il Cost Sentinel presidia il dry-run come invariante più dura: il flusso è sempre stima → approvazione → esecuzione, mai invertito (\"eseguiamo e vediamo quanto è costato\" è una violazione non sanabile retroattivamente), e una cifra senza metodo di stima dichiarato non è un dry-run: è un'opinione.",
+      "fonte": ".claude/agents/sentinel-cost.md righe 104-124",
+      "ancora": "Una cifra senza metodo non e' un dry-run.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-022",
+      "tipo": "regola",
+      "contenuto": "Il routing a 3 tier dei modelli è canonico: Haiku per classificazione/parsing/QA, Sonnet per copy/coding/analisi standard, Opus per decisioni strategiche/contenuti premium/architettura. Il modello più costoso non è il migliore, è quello giusto per il task: usarne uno più caro dove basterebbe uno economico è uno spreco che riduce il runway dell'intera holding.",
+      "fonte": ".claude/agents/sentinel-cost.md righe 128-143",
+      "ancora": "Il modello AI piu' costoso non e' il migliore: e' quello giusto per il task.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-023",
+      "tipo": "regola",
+      "contenuto": "Il budget-guard di sessione (ADR-006): sotto il 20% di risorse residue non si aprono build nuovi, si chiude con il COMMIT. L'unica eccezione ammessa è un'emergenza critica definita dal CEO, mai una valutazione autonoma di chi sta conducendo il build.",
+      "fonte": ".claude/agents/sentinel-cost.md righe 150-155",
+      "ancora": "L'unica eccezione ammessa e' un'emergenza critica definita dal CEO — non una valutazione del conductor",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-024",
+      "tipo": "errore",
+      "contenuto": "Caso reale bruciato dal Cost Sentinel: un'automazione UI a ciclo continuo con click su coordinate fisse e uno screenshot a piena risoluzione dopo ogni click, senza controllo del devicePixelRatio, ha consumato le risorse di sessione dall'1% al 100% in pochi minuti. Contromisura registrata: usare locator.click()/bounding_box() e query DOM testuali, screenshot solo per una verifica visiva vera.",
+      "fonte": ".claude/agents/sentinel-cost.md righe 278-290",
+      "ancora": "un'automazione UI che gira a ciclo continuo facendo click su coordinate fisse e",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-023",
+          "tipo": "specifica",
+          "perche": "è il caso reale che dimostra perché il budget-guard di sessione è necessario e non teorico"
+        }
+      ]
+    },
+    {
+      "id": "KA-025",
+      "tipo": "definizione",
+      "contenuto": "Il Drift Sentinel definisce il drift come una modifica che contraddice un ADR attivo, oppure un artefatto che nasce fuori dalla catena di controllo. Per riconoscerlo deve conoscere tutti gli ADR attivi e la loro regola-chiave, non solo il titolo.",
+      "fonte": ".claude/agents/sentinel-drift.md righe 45-53",
+      "ancora": "Un drift e' **una modifica che contraddice un ADR attivo, o un artefatto che nasce fuori dalla catena di controllo**.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-026",
+      "tipo": "regola",
+      "contenuto": "Wrap, mai riscrittura (ADR-003): i sistemi attivi non si toccano finché il sostituto non è validato in parallelo. La domanda operativa del Drift Sentinel è: se questa modifica va storta stanotte, il sistema che produce valore oggi continua a girare? Se la risposta è no, è riscrittura travestita da wrap.",
+      "fonte": ".claude/agents/sentinel-drift.md righe 191-195",
+      "ancora": "se questa modifica va storta stanotte, il sistema che produce valore oggi continua a girare?",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-025",
+          "tipo": "specifica",
+          "perche": "è la regola operativa con cui il Drift Sentinel applica concretamente la definizione di drift ai sistemi attivi"
+        }
+      ]
+    },
+    {
+      "id": "KA-027",
+      "tipo": "regola",
+      "contenuto": "Ogni artefatto nuovo (skill, agente, workflow, app, canale, dossier) nasce con 4 legami obbligatori — proprietario, controllore, origine, governo — e va registrato in un'anagrafe unica. Creare senza registrare rende l'artefatto \"abusivo\" e va bloccato, indipendentemente da quanto sia ben fatto.",
+      "fonte": ".claude/agents/sentinel-drift.md righe 186-189",
+      "ancora": "Se manca la registrazione -> **artefatto abusivo, BOCCIATO**, indipendentemente da quanto sia ben fatto.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-025",
+          "tipo": "dipende",
+          "perche": "è uno dei due modi concreti in cui la definizione generale di drift si manifesta (artefatto orfano)"
+        }
+      ]
+    },
+    {
+      "id": "KA-028",
+      "tipo": "regola",
+      "contenuto": "La regola dei puntatori: quando un file viene spostato o rinominato, il puntatore che lo indica va aggiornato nello stesso turno in cui avviene lo spostamento, mai rimandato, perché un puntatore vecchio è peggio di nessun puntatore — manda a sbattere invece di far cercare.",
+      "fonte": ".claude/agents/sentinel-drift.md righe 145-150",
+      "ancora": "un puntatore vecchio e' peggio di nessun puntatore, perche' manda a sbattere invece di far cercare",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-029",
+      "tipo": "numero",
+      "contenuto": "Caso reale di drift sistemico: dal 6 al 22 agosto 2026, sedici giorni e sedici checkpoint di lavoro reale sono passati con zero entry nel log della wiki, perché l'unico percorso di sincronizzazione esistente si attivava solo a fine ingestione di Empire Studio e non copriva il lavoro interno quotidiano.",
+      "fonte": ".claude/agents/sentinel-drift.md righe 233-236",
+      "ancora": "16 giorni, 16 checkpoint di lavoro reale, ZERO entry in `wiki/log.md`",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "contesto",
+      "relazioni": [
+        {
+          "verso": "KA-025",
+          "tipo": "specifica",
+          "perche": "è l'esempio reale che ha reso visibile il tipo di drift 'lag di sincronizzazione' e ha generato un nuovo ponte di sync"
+        }
+      ]
+    },
+    {
+      "id": "KA-030",
+      "tipo": "regola",
+      "contenuto": "La conversione ufficiale delle soglie di qualità del copy: 80/100 del Mandato equivale a 32/40 sulla Checklist Audit Copy di casa (estremo basso della fascia \"copy buono\"), 85/100 per sales page e proposte commerciali equivale a 34/40. Un PASSA a 32-34 non vuol dire buono: le aree deboli restano, e va dichiarato ogni volta.",
+      "fonte": ".claude/agents/sentinel-quality.md righe 52-70",
+      "ancora": "32/40 e' l'estremo basso di \"Copy buono\": ogni PASSA a 32-34 esce con la riga",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-031",
+      "tipo": "regola",
+      "contenuto": "Tre penalità strutturali scavalcano il punteggio del copy e bloccano da sole, qualunque sia il totale: P dopo S vale -15 punti automatici su scala 100 (-6 su scala 40) con blocco obbligatorio senza eccezioni; manca un blocco APSOC obbligatorio significa rework, non un punteggio più basso; un claim senza proof è un difetto bloccante.",
+      "fonte": ".claude/agents/sentinel-quality.md righe 145-158",
+      "ancora": "P dopo S = −15 punti automatici (su scala 100) e blocco obbligatorio",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-030",
+          "tipo": "specifica",
+          "perche": "sono i blocchi che scattano prima e a prescindere dal calcolo della soglia numerica di punteggio"
+        }
+      ]
+    },
+    {
+      "id": "KA-032",
+      "tipo": "principio",
+      "contenuto": "La regola-madre del framework di copy: se mancano i dati a monte (pain point reali, obiezioni reali, linguaggio reale del target, copy competitor analizzato, tono di voce del target) ci si ferma e si torna alla ricerca. Un copy scritto senza ricerca a monte non è da correggere, è da rifare.",
+      "fonte": ".claude/agents/sentinel-quality.md righe 206-213",
+      "ancora": "Se non hai questi dati -> FERMATI -> torna alla ricerca.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-031",
+          "tipo": "precede",
+          "perche": "senza i dati a monte nessuna delle penalità o dei punteggi ha senso: il problema si sposta a prima della scrittura"
+        }
+      ]
+    },
+    {
+      "id": "KA-033",
+      "tipo": "regola",
+      "contenuto": "La legge suprema del Security Sentinel: zero segreti nel repo è assoluto. Nessuna credenziale entra nel repo, in nessun branch, nemmeno in commit di test, nemmeno in staging, nemmeno temporaneamente. Un segreto committato è un incidente: blocco push immediato, rotazione della credenziale, deposito dell'incidente.",
+      "fonte": ".claude/agents/sentinel-security.md righe 49-52; 69-76",
+      "ancora": "nemmeno in commit di test, nemmeno in staging, nemmeno temporaneamente",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-034",
+      "tipo": "procedura",
+      "contenuto": "La sequenza di sblocco quando un segreto è già entrato nel repo è fissa e ha tre passi tutti obbligatori: rimuovere il segreto dalla history (non solo dal commit corrente), ruotare la credenziale esposta, e scrivere un ADR sull'incidente. Non esiste \"lo sistemo dopo il deploy\": il deploy non parte finché non è fatto.",
+      "fonte": ".claude/agents/sentinel-security.md righe 251-256",
+      "ancora": "Non esiste \"lo sistemo dopo il deploy\" — il deploy non parte.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-033",
+          "tipo": "specifica",
+          "perche": "è la procedura operativa che rende eseguibile la legge assoluta dello zero segreti quando viene violata"
+        }
+      ]
+    },
+    {
+      "id": "KA-035",
+      "tipo": "principio",
+      "contenuto": "I segreti dell'Impero non hanno quasi mai la forma di una chiave tipo \"sk-...\": hanno la forma di un file di sessione con un nome innocuo (profilo browser, cookie salvati). Per questo il Security Sentinel scansiona per percorso e classe di file prima che per contenuto testuale.",
+      "fonte": ".claude/agents/sentinel-security.md righe 265-277",
+      "ancora": "i segreti dell'Impero non hanno quasi mai la forma di una chiave",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-036",
+      "tipo": "principio",
+      "contenuto": "\"Niente blocca tutto\" (ADR-028): un impedimento ferma SOLO ciò che dipende letteralmente da lui, mai il lavoro intorno, anche se importante. Prima di dichiarare qualcosa \"fermo\" ci si chiede sempre cosa esattamente non si può fare senza quello, e cosa invece si può fare benissimo lo stesso: la seconda lista è quasi sempre più lunga della prima, ed è quella su cui si continua a lavorare.",
+      "fonte": "company/Memory/decisions/ADR-028-niente-blocca-tutto.md righe 39-45",
+      "ancora": "cosa, esattamente, non posso fare senza questo? E cosa invece posso fare benissimo lo stesso?",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-037",
+      "tipo": "regola",
+      "contenuto": "Chi scrive un nuovo gate, ADR o regola con parole come \"non negoziabile\" o \"blocca tutto\" deve nominare esattamente cosa blocca, mai lasciarlo implicito: si scrive \"se X non chiude, non passa SOLO il gate Y\" nominando il gate preciso, non \"tutto\" il lavoro circostante.",
+      "fonte": "company/Memory/decisions/ADR-028-niente-blocca-tutto.md righe 66-70",
+      "ancora": "deve scrivere ESATTAMENTE cosa blocca — mai lasciarlo implicito",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-036",
+          "tipo": "specifica",
+          "perche": "è la regola tecnica di scrittura che rende operativo, nei nuovi gate/ADR futuri, il principio generale di ADR-028"
+        }
+      ]
+    },
+    {
+      "id": "KA-038",
+      "tipo": "definizione",
+      "contenuto": "L'unica eccezione a \"niente blocca tutto\" è l'infattibilità vera — qualcosa tecnicamente o fisicamente impossibile in questo momento, non 'scomodo' e non 'serve un'altra persona'. Esempio reale che resta bloccante: non si può dichiarare avvenuto un pagamento vero se nessun pagamento vero è avvenuto — non è un'opinione, è un fatto che non esiste finché non esiste.",
+      "fonte": "company/Memory/decisions/ADR-028-niente-blocca-tutto.md righe 57-64",
+      "ancora": "non e' un'opinione, e' un fatto che non esiste finche' non esiste",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-036",
+          "tipo": "specifica",
+          "perche": "definisce con precisione l'unico confine oltre il quale il principio 'niente blocca tutto' non si applica"
+        }
+      ]
+    },
+    {
+      "id": "KA-039",
+      "tipo": "numero",
+      "contenuto": "La misurazione che ha fondato l'Ultimo Metro (2026-09-03): 25 pezzi finiti mai usciti, 2.137 MB di lavoro fermo, 23 pezzi caricabili subito senza toccare niente, il più vecchio fermo da 135 giorni. Cinque libri avevano manoscritto, copertina e dati Amazon già pronti, con la cartella dei libri pubblicati vuota da sempre.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md righe 11-34",
+      "ancora": "Due indagini indipendenti, partite da domande diverse, sono arrivate alla stessa conclusione: **Digital Empire produce e non pubblica.**",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-040",
+      "tipo": "decisione",
+      "contenuto": "La diagnosi corretta dell'Ultimo Metro: l'ipotesi iniziale che mancassero gli strumenti di pubblicazione era falsa e verificata (i pubblicatori esistevano e funzionavano). La causa vera era un'altra e più semplice: nessun organo di Digital Empire guardava dentro i depositi, il lavoro finito era invisibile a chiunque.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md righe 40-52",
+      "ancora": "Nessun organo di Digital Empire guardava dentro i depositi.",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-039",
+          "tipo": "precede",
+          "perche": "la diagnosi è la spiegazione del numero misurato: prima si sono contati i pezzi fermi, poi si è capito perché restavano fermi"
+        }
+      ]
+    },
+    {
+      "id": "KA-041",
+      "tipo": "principio",
+      "contenuto": "Il principio dell'Ultimo Metro, oltre il caso specifico: un pezzo di lavoro non è \"fatto\" finché non è uscito. Finito e non pubblicato ha lo stesso valore economico di non fatto, zero, con in più il costo di averlo prodotto. È la stessa legge del memory-first (nessun task è fatto finché non è salvato in Memory) applicata all'altro capo della catena, verso l'esterno.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md righe 68-73",
+      "ancora": "Un pezzo di lavoro non e' \"fatto\" finche' non e' uscito.",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-040",
+          "tipo": "precede",
+          "perche": "il principio generale nasce direttamente dalla diagnosi del caso specifico misurato in azienda"
+        }
+      ]
+    },
+    {
+      "id": "KA-042",
+      "tipo": "strumento",
+      "contenuto": "L'Ultimo Metro è composto da quattro pezzi: lo script ultimo_metro.py che apre i depositi noti e produce la lista di cosa caricare ordinata dal più vecchio, la skill ultimo-metro che collega ogni pezzo pronto al pubblicatore del suo canale, il registro pubblicati.json di ciò che è uscito davvero, e il rapporto ULTIMO-METRO.md rigenerato a ogni esecuzione.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md righe 60-66",
+      "ancora": "produce la lista di cosa caricare oggi, ordinata dal piu' vecchio",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-041",
+          "tipo": "dipende",
+          "perche": "gli strumenti dell'Ultimo Metro sono la messa in pratica operativa del principio 'finito non è fatto finché non è uscito'"
+        }
+      ]
+    },
+    {
+      "id": "KA-043",
+      "tipo": "principio",
+      "contenuto": "L'Ultimo Metro non pubblica: è l'occhio, non la mano — stesso principio del wrap, mai riscrittura (ADR-003). I pubblicatori esistenti (social-publisher, workflow-pubblicazione-auto, la fabbrica YouTube) restano gli unici a pubblicare e non vengono né toccati né sostituiti.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md righe 75-78",
+      "ancora": "L'Ultimo Metro **non pubblica**. E' l'occhio, non la mano.",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-042",
+          "tipo": "specifica",
+          "perche": "chiarisce il ruolo esatto degli strumenti descritti: vedono e segnalano, non eseguono la pubblicazione"
+        }
+      ]
+    },
+    {
+      "id": "KA-044",
+      "tipo": "regola",
+      "contenuto": "Segnare un pezzo come pubblicato nel registro dell'Ultimo Metro è obbligatorio: se non si segna, la lista mente e in due settimane nessuno la guarda più. Una lista che mente è peggio di nessuna lista, perché toglie fiducia allo strumento intero.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md riga 94-95",
+      "ancora": "Se non si segna, la lista mente e in due settimane nessuno la guarda piu'.",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-042",
+          "tipo": "dipende",
+          "perche": "il registro pubblicati.json descritto negli strumenti funziona solo se questa regola di aggiornamento viene rispettata sempre"
+        }
+      ]
+    },
+    {
+      "id": "KA-045",
+      "tipo": "definizione",
+      "contenuto": "Il semaforo dell'Ultimo Metro è una soglia di allarme, non una data anagrafica certa: l'età misurata è quella dell'ultimo tocco sul file, non della fine reale del lavoro, quindi un semplice git checkout può far sembrare 'ringiovanito' un pezzo fermo da mesi.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md riga 97",
+      "ancora": "L'eta' e' quella dell'ultimo tocco, non della fine del lavoro",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-046",
+      "tipo": "definizione",
+      "contenuto": "\"Finito\", per l'Ultimo Metro, è misurato sui file presenti sul disco, non sulla qualità del contenuto: un libro con pdf, epub, copertina e dati per il negozio pronti risulta al 100% anche se il testo dentro fosse da riscrivere. Il giudizio sulla qualità spetta alle sentinelle, non a questo strumento.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md riga 98",
+      "ancora": "\"Finito\" e' misurato sui file presenti, non sulla qualita' del contenuto",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "contesto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-047",
+      "tipo": "errore",
+      "contenuto": "Vuoti dichiarati dall'Ultimo Metro al momento della sua nascita: non esiste un caricatore automatico per Amazon KDP (i libri vanno caricati a mano), i caroselli non sono ancora sorvegliati perché sparsi in cartelle senza schema comune, e non esiste ancora una misura di cosa succede dopo la pubblicazione (vendite, conversioni) — resta il prossimo buco da chiudere.",
+      "fonte": "company/Memory/decisions/ADR-016-ultimo-metro.md righe 105-111",
+      "ancora": "resta aperto quello fra \"pubblicato\" e \"venduto\". E' il prossimo da chiudere.",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "contesto",
+      "relazioni": [
+        {
+          "verso": "KA-041",
+          "tipo": "dipende",
+          "perche": "questi vuoti sono i confini dichiarati apertamente dello stesso principio ('finito non pubblicato vale zero'), non ancora chiusi"
+        }
+      ]
+    },
+    {
+      "id": "KA-048",
+      "tipo": "procedura",
+      "contenuto": "Il rapporto dell'Ultimo Metro divide sempre in due liste: CARICABILI ADESSO (non manca niente, si carica oggi) e MANCA UN PEZZO (dice esattamente cosa manca, tipo la copertina o i dati del negozio). Spesso è mezz'ora di lavoro che sblocca un mese di produzione ferma.",
+      "fonte": ".claude/skills/ultimo-metro/SKILL.md §3",
+      "ancora": "Spesso e' mezz'ora di lavoro per sbloccare un mese di produzione ferma.",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-049",
+      "tipo": "principio",
+      "contenuto": "Quando eseguire l'Ultimo Metro: fabbricare il pezzo numero 26 mentre 25 pezzi già finiti marciscono nei depositi non è produttività, è il modo più elegante di non pubblicare. Va eseguito all'inizio di ogni sessione di produzione, prima di fabbricare altro.",
+      "fonte": ".claude/skills/ultimo-metro/SKILL.md §7",
+      "ancora": "Fabbricarne un altro mentre 25 marciscono non e' produttivita': e' il modo piu' elegante di non pubblicare.",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-041",
+          "tipo": "specifica",
+          "perche": "traduce il principio 'finito non pubblicato vale zero' in una disciplina concreta: controllare prima di produrre altro"
+        }
+      ]
+    },
+    {
+      "id": "KA-050",
+      "tipo": "procedura",
+      "contenuto": "Per sorvegliare un nuovo deposito con l'Ultimo Metro basta aggiungere una voce alla lista DEPOSITI in cima allo script (percorso, tipo, canale, file richiesti perché un pezzo sia \"finito\"). Se un deposito sparisce (cartella spostata o rinominata) lo script lo dichiara invece di tacere.",
+      "fonte": ".claude/skills/ultimo-metro/SKILL.md §5",
+      "ancora": "Se un deposito sparisce (cartella spostata o rinominata) lo script **lo dichiara** invece di tacere",
+      "confidenza": "osservato",
+      "capitolo": "I.7",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-051",
+      "tipo": "regola",
+      "contenuto": "La Regola Zero Recidiva dell'Ispettorato Generale: ogni errore diventa una voce permanente del REGISTRO-ERRORI con la sua contromisura. Prima di ogni build o run futura il registro va consultato, e ripetere un errore già registrato è recidiva: scatta un gate ROSSO bloccante più escalation immediata agli alti ranghi.",
+      "fonte": "PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md righe 22-25",
+      "ancora": "ripetere un errore registrato = gate ROSSO bloccante + escalation",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-052",
+      "tipo": "definizione",
+      "contenuto": "L'Ispettorato Generale non produce e non corregge da solo: rileva, registra, assegna la correzione al reparto owner e verifica che sia stata fatta davvero. È la stessa indipendenza del QA rispetto alla produzione, perché chi misura non è mai chi ha costruito la cosa misurata.",
+      "fonte": "PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md righe 36-39",
+      "ancora": "chi misura non e' mai chi ha costruito la cosa misurata",
+      "confidenza": "osservato",
+      "capitolo": "I.5",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-053",
+      "tipo": "procedura",
+      "contenuto": "Ogni run di ogni workflow produce automaticamente un run-report in formato fisso: esito, timeline passo per passo, gate superati o falliti, numeri contro le soglie, errori nuovi o recidivi, scostamenti dalla run precedente, azioni assegnate e verdetto in una riga. Nessuna run resta \"muta\".",
+      "fonte": "PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md §1 e §8",
+      "ancora": "Ogni run di ogni workflow (PreventivoForge, outreach, content, build interni…) produce automaticamente un run-report",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "supporto",
+      "relazioni": [
+        {
+          "verso": "KA-051",
+          "tipo": "precede",
+          "perche": "il run-report sistematico è la materia prima da cui il confronto con il registro errori rileva una recidiva"
+        }
+      ]
+    },
+    {
+      "id": "KA-054",
+      "tipo": "regola",
+      "contenuto": "Regola di forma di Max: una cosa grande e trasversale (come l'Ispettorato) va costruita come reparto forte più un'infrastruttura dati (backbone di telemetria) che attraversa tutto, non come un intero ecosistema nuovo a sé stante.",
+      "fonte": "PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md §3",
+      "ancora": "Cosa grande e trasversale → **reparto + backbone dati** (telemetria).",
+      "confidenza": "osservato",
+      "capitolo": "I.5",
+      "peso": "supporto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-055",
+      "tipo": "principio",
+      "contenuto": "L'Ispettorato Generale studia anche i successi, non solo gli errori: la funzione \"primo colpo migliore\" analizza ogni correzione di una catena di revisione (non solo l'ultima) per accorciare il ciclo nel tempo, e registra i casi a zero correzioni come pattern-vincente da ripetere.",
+      "fonte": "PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md, roster agente 11",
+      "ancora": "Studia anche i casi a **0 correzioni** (output accettato al primo colpo)",
+      "confidenza": "osservato",
+      "capitolo": "I.5",
+      "peso": "contesto",
+      "relazioni": []
+    },
+    {
+      "id": "KA-056",
+      "tipo": "errore",
+      "contenuto": "I cinque errori concatenati che hanno prodotto un libro da 11 pagine: il formato scelto prima del contenuto (motore PDF a pagine fisse con overflow:hidden che taglia in silenzio), la doppia compressione (si è lavorato solo sulla sintesi già pronta, mai sulla conoscenza integrale sottostante), il perimetro ristretto con una scusa metodologica, un target di lunghezza invece che di copertura, e nessun gate che fermasse il risultato corto.",
+      "fonte": "PIANO-MAESTRO/35-PIANO-LIBRO-AGENCY-V2.md Parte 0, righe 19-69",
+      "ancora": "Sono cinque errori concatenati, e vanno nominati tutti perché ognuno ha una contromisura diversa nel piano.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": []
+    },
+    {
+      "id": "KA-057",
+      "tipo": "principio",
+      "contenuto": "La lezione centrale del gate di densità, in una riga: un documento non esce denso perché lo si ricorda, esce denso perché una macchina conta gli atomi e rifiuta la consegna se ne mancano. È lo stesso schema del battito, dove la forma era scritta in dottrina e usciva sbagliata finché non è nato un controllo meccanico che blocca invece di ricordare.",
+      "fonte": "PIANO-MAESTRO/35-PIANO-LIBRO-AGENCY-V2.md righe 63-72",
+      "ancora": "un documento non esce denso perché me lo ricordo. Esce denso perché una macchina conta gli atomi e rifiuta la consegna se mancano.",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-056",
+          "tipo": "precede",
+          "perche": "la diagnosi dei cinque errori è ciò che ha portato a formulare questa lezione generale"
+        },
+        {
+          "verso": "KA-007",
+          "tipo": "specifica",
+          "perche": "è la formulazione narrativa della stessa regola tecnica implementata in gate_densita_libro.py"
+        }
+      ]
+    },
+    {
+      "id": "KA-058",
+      "tipo": "decisione",
+      "contenuto": "Cosa cambia in permanenza oltre il singolo libro: il gate di densità nasce come strumento generale, non come script dedicato a un solo documento; la regola entra in dottrina come principio permanente ('un documento di conoscenza non si misura in pagine, si misura in atomi coperti e parole per atomo — e lo dice una macchina, non l'agente'); la stessa regola entra nella memoria operativa.",
+      "fonte": "PIANO-MAESTRO/35-PIANO-LIBRO-AGENCY-V2.md §8.7, righe 392-399",
+      "ancora": "il gate di densità nasce come **strumento generale**, non come script del libro",
+      "confidenza": "osservato",
+      "capitolo": "I.3",
+      "peso": "portante",
+      "relazioni": [
+        {
+          "verso": "KA-057",
+          "tipo": "dipende",
+          "perche": "la decisione di generalizzare il gate è la conseguenza diretta della lezione appresa dalla diagnosi del libro corto"
+        }
+      ]
+    }
+  ]
+}

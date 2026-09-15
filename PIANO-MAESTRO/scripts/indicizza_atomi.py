@@ -146,6 +146,10 @@ def raccogli():
             norm = path.replace(os.sep, "/")
             if "/36-LIBRO-AGENCY-INTEGRALE/" in norm:
                 continue
+            # terza copia della memoria (specchio sotto .claude/skills): stesso nome di
+            # cartella, stessi uid -> collisioni. Vale solo la sede ufficiale in SKILL & Agenti/.
+            if "/.claude/skills/empire-studio/" in norm:
+                continue
             atomi, errore = carica(path)
             if errore:
                 problemi.append((norm, errore))
