@@ -6,7 +6,8 @@ import { Reveal } from "@/components/reveal";
    src/components/sections/listen-up.tsx) NON si tocca: 0 righe cambiate, si nasconde da CSS
    (f6-copy.css, selettore :has(+ .f6-marker-ascolta) — la classe sotto è il marker). Questo componente
    monta SUBITO dopo <ListenUp /> in page.tsx (deroga dichiarata, come A2/l'hero: legge del copy generico,
-   niente «Outreach», niente «lavora mentre dormono» — non è sempre vero). Stessa forma di giugno: titolo
+   niente nome di prodotto, niente promessa di lavoro automatico assoluto — non è sempre vero). Stessa
+   forma di giugno: titolo
    maiuscolo, 5 paragrafi, una citazione grande. Copy in brief/COPY-F6-gamma.md §E2. Stili in f6-copy.css
    (prefisso .ab2-), scopati dentro #ascolta-bene-v2. */
 export function AscoltaBeneV2() {

@@ -14,6 +14,11 @@ export function PrimaDopo() {
       <section id="prima-dopo" className="sv sv-ink pd-sezione" aria-labelledby="prima-dopo-h2">
         <div className="sv-container">
           <p className="sv-eyebrow">Prima / dopo</p>
+          {/* F6 (ordine di Max 15/09, dossier 41 blocco E3) — riga nuova sopra il titolo: h2-size, serif 400,
+              grassetti misti. Copy in brief/COPY-F6-gamma.md §E3. Stile: f6-copy.css (.pd-differenza). */}
+          <p className="pd-differenza mt-3">
+            <b>La differenza</b> tra un prodotto <b>custom</b> e i tool del mercato…
+          </p>
           <h2 id="prima-dopo-h2" className="sv-h2 mt-3 max-w-[22ch]">
             La stessa cosa, <span className="sv-it" style={{ color: "var(--sv-orange)" }}>pagata in due modi.</span>
           </h2>
@@ -53,7 +58,7 @@ export function PrimaDopo() {
               </h3>
               <div className="pd-foglio pd-fattura" aria-label="Fattura di un abbonamento, ricostruita in HTML">
                 <div className="pd-int">
-                  <b>Abbonamento outreach</b>
+                  <b>Abbonamento a un tool</b>
                   <span>Piano Pro</span>
                 </div>
                 <ul className="pd-righe">
@@ -85,7 +90,7 @@ export function PrimaDopo() {
               </h3>
               <div className="pd-foglio pd-scheda" aria-label="Il sistema pagato una volta, stessa scheda">
                 <div className="pd-int">
-                  <b>Sistema outreach</b>
+                  <b>Sistema custom, tuo</b>
                   <span>Codice tuo</span>
                 </div>
                 <ul className="pd-righe">
