@@ -30,8 +30,8 @@
     {
       "id": "RF4-contenuto-non-originale",
       "presente": true,
-      "come_verificata": "Cercato il 2026-09-10 sul sorgente markdown: 21 occorrenze del nome proprio 'Giovanni', fra cui 'Giovanni ha', 'Giovanni ho', 'Giovanni YouTube', e l'indirizzo 'https://giovanni-beggiato--linkedin-post-generator.modal.run' presentato come RISULTATO di un esercizio del manuale.",
-      "dettaglio": "BLOCCANTE E DA VERIFICARE DA UNA PERSONA. Il nome di un terzo e un suo servizio personale compaiono ventuno volte dentro un prodotto che vogliamo vendere. O il materiale deriva da una fonte di terzi e va attribuito o riscritto, oppure e' un residuo di lavorazione e va tolto. In nessuno dei due casi si vende cosi'."
+      "come_verificata": "Elencate una per una tutte e 21 le occorrenze di 'Giovanni' nel sorgente markdown, il 2026-09-11, con numero di riga. Diciotto sono un personaggio d'esempio ricorrente (righe 1010, 1016, 3834-3883, 8253-8320: \"Ciao sono Giovanni, ho 30 anni, vivo a Lussemburgo, mi piacciono le pentole\", e la prova di memoria \"Giovanni ha rubato il bicchiere\"). Tre no: righe 8716, 8784 e 8797 mostrano 'https://giovanni.modal.run', 'https://giovanni-beggiato--linkedin-post-generator.modal.run' e la didascalia \"Giovanni's LinkedIn Post Generator\". Incrociato con la wiki: Giovanni Beggiato e' un creatore terzo che Digital Empire studia, con dieci pagine fonte in second-brain-vault/wiki/sources/, fra cui un corso su Claude (Source_Giovanni_Beggiato_Claude_Cowork_Corso).",
+      "dettaglio": "RESTA BLOCCANTE, e adesso si sa perche'. Le diciotto occorrenze del personaggio d'esempio sono legittime in un manuale: un nome inventato vale l'altro. Le tre righe con gli indirizzi no: sono schermate di una distribuzione reale sotto l'account personale di un terzo, con la sua didascalia. Un manuale che vendiamo non puo' contenere il deploy di un altro presentato come risultato di un proprio esercizio. Cosa si puo' provare: che quelle tre righe vengono da materiale di Giovanni Beggiato. Cosa NON si puo' provare da qui: quanta parte del resto del testo derivi dai suoi corsi, perche' non e' stato eseguito nessun confronto contro le fonti. Le due domande vanno separate e le risponde una persona, non un conteggio: (1) togliere o sostituire le tre righe e' lavoro di mezz'ora; (2) stabilire l'origine del testo e' una decisione, e viene prima di mettere un prezzo."
     },
     {
       "id": "RF5-link-morti",
@@ -56,12 +56,12 @@
       "codice": null
     }
   ],
-  "debito_collaudo": "Tre bandiere su sei sono presenti e due di esse (RF4 e RF6) sono sostanziali. Il prodotto NON e' consegnabile finche': (1) una persona non stabilisce l'origine del materiale in cui compare il nome di un terzo ventuno volte, e lo attribuisce o lo riscrive; (2) la catena di consegna non e' provata almeno una volta con un pagamento vero; (3) i due indirizzi modal.run non sono aperti e sostituiti o tolti. RF3 si chiude da solo quando esiste ART-CPY. La modalita' e' retroattiva perche' il prodotto e' finito da mesi e non ha mai attraversato un flusso di produzione: questo certificato serve a dire cosa gli manca, non a fingere che l'abbia attraversato.",
+  "debito_collaudo": "Quattro bandiere su sei sono presenti e due sono sostanziali. Il prodotto NON e' consegnabile finche': (1) le tre righe che mostrano la distribuzione personale di un terzo (8716, 8784, 8797) non sono tolte o sostituite, e una persona non stabilisce quanta parte del testo derivi dai suoi corsi; (2) la catena di consegna non e' provata almeno una volta con un pagamento vero; (3) il collegamento malformato a riga 8689 non e' sistemato. RF3 si chiude da sola quando esiste ART-CPY. La modalita' e' retroattiva perche' il prodotto e' finito da mesi e non ha mai attraversato un flusso di produzione: questo certificato serve a dire cosa gli manca, non a fingere che l'abbia attraversato.",
   "esito": "non-consegnabile",
   "non_misurato": [
     "I due link del prodotto risultano con codice null, cioe' NON testati: nessuna chiamata di rete e' stata eseguita da questa sessione. Vanno aperti in una sessione pulita prima di considerare RF5 chiusa.",
-    "L'originalita' del testo rispetto a fonti esterne: non e' stato eseguito nessun confronto automatico contro corsi o materiali di terzi.",
     "La raggiungibilita' effettiva dei due indirizzi modal.run: nessuna chiamata di rete eseguita da questa sessione.",
-    "La corrispondenza fra il PDF (203 pagine) e il markdown: i due file non sono stati confrontati riga per riga."
+    "La corrispondenza fra il PDF (203 pagine) e il markdown: i due file non sono stati confrontati riga per riga.",
+    "L'origine del testo rispetto ai corsi di Giovanni Beggiato: nessun confronto eseguito fra il manuale e le dieci fonti presenti in second-brain-vault/wiki/sources/. E' la verifica che manca, ed e' quella che decide se il prodotto si vende cosi', si riscrive o si attribuisce."
   ]
 }
