@@ -22,6 +22,7 @@ import "./f6-hero.css"; // F6 (dossier 41): foto, headline nuova, card spillate
 import "./f6-frecce.css"; // F6: frecce Tre sistemi, frase barrata, #02, F.L.O.W., storia
 import "./f6-copy.css"; // F6: Per chi è senza blocchi, Specchio, Ascolta bene v2, prima/dopo
 import "./f6-colori.css"; // F6: sfondo unico Scala+Perché, Ogni sistema + tessere in --grad-max, grana Second Brain, catene
+import "./f7-luce.css"; // F7 (dossier 42): grana a luminanza neutra, texture nitida, aura nera dietro le scritte
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 const onest = Onest({
