@@ -237,10 +237,20 @@ def esegui_gate(gate_id: str, dir_lancio: str, rete: Rete | None = None) -> Verd
                         ramo_fallimento=None)
     v = mod.esegui(dir_lancio, rete if rete is not None else ReteVera())
     if v.ramo_fallimento is None and not v.passa:
-        voce = voce_gate(gate_id)
-        if voce:
-            v.ramo_fallimento = str(voce.get("ramo_fallimento"))
+        # Lo STATO di destinazione (artefatti[].se_fallisce), non la prosa del gate:
+        # il motore ha bisogno di uno stato da applicare, non di una frase.
+        v.ramo_fallimento = stato_se_fallisce(gate_id)
     return v
+
+
+def stato_se_fallisce(gate_id: str) -> str | None:
+    voce = voce_gate(gate_id)
+    if not voce:
+        return None
+    for a in registro()["artefatti"]:
+        if a["id"] == voce.get("presidia"):
+            return a.get("se_fallisce")
+    return None
 
 
 def gate_costruiti() -> list[str]:

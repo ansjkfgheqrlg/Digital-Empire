@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "calcolata_il": "2026-09-15T09:30:00+02:00",
+  "formula": "ricavo_lordo = pubblico_raggiungibile * tasso_visita * tasso_acquisto * prezzo",
+  "ingressi": {
+    "pubblico_raggiungibile": 600,
+    "prezzo": 47,
+    "fonte_pubblico": "ART-PUB",
+    "fonte_prezzo": "proposta-in-corso"
+  },
+  "scenari": {
+    "pessimista": {
+      "tasso_visita": 0.05,
+      "tasso_acquisto": 0.01,
+      "ricavo_lordo": 14.1,
+      "copie": 0.3,
+      "perche_questo_scenario": "Esempio: 600 * 0,05 * 0,01 * 47 = 14,10"
+    },
+    "atteso": {
+      "tasso_visita": 0.15,
+      "tasso_acquisto": 0.03,
+      "ricavo_lordo": 126.9,
+      "copie": 2.7,
+      "perche_questo_scenario": "Esempio: 600 * 0,15 * 0,03 * 47 = 126,90"
+    },
+    "ottimista": {
+      "tasso_visita": 0.3,
+      "tasso_acquisto": 0.06,
+      "ricavo_lordo": 507.6,
+      "copie": 10.8,
+      "perche_questo_scenario": "Esempio: 600 * 0,3 * 0,06 * 47 = 507,60"
+    }
+  },
+  "assunzioni": [
+    {
+      "nome": "tasso_visita_atteso",
+      "valore": 0.15,
+      "stato": "assunto",
+      "fonte": null,
+      "da_dove_viene_se_assunto": "numero di comodo (esempio di collaudo)"
+    },
+    {
+      "nome": "tasso_acquisto_atteso",
+      "valore": 0.03,
+      "stato": "assunto",
+      "fonte": null,
+      "da_dove_viene_se_assunto": "numero di comodo (esempio di collaudo)"
+    },
+    {
+      "nome": "pubblico_raggiungibile",
+      "valore": 600,
+      "stato": "misurato",
+      "fonte": "pubblico.json (esempio: il numero li' dentro e' di collaudo)",
+      "da_dove_viene_se_assunto": null
+    }
+  ],
+  "pareggio": {
+    "copie_per_pareggio": 0,
+    "costo_totale_previsto": 0,
+    "include_costo_macchina": false
+  },
+  "non_misurato": [
+    "ESEMPIO DI COLLAUDO (05-TEMPLATES-E-KIT/esempio): nessun numero qui e' una misura reale. Serve a vedere i gate passare su un lancio finto; `lancio crea X --con-esempio` lo copia."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_nota": "Esempio: proposta NON firmata. GATE-OFF-1 boccia con 'offerta non firmata: esiste solo la proposta', ed e' il comportamento atteso. Nessun agente scrive l'oggetto 'firma'.",
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "ruolo_prodotto": "vendita",
+  "ruolo_scelto_per_silenzio": false,
+  "ruolo_revisione_il": null,
+  "prezzo": 47,
+  "valuta": "EUR",
+  "prezzi_precedenti_trovati": [
+    {
+      "fonte": "esempio di collaudo",
+      "valore": 47,
+      "data": "2026-09-15",
+      "perche_ci_discostiamo": null
+    }
+  ],
+  "livello_listino": null,
+  "data_apertura": "2027-01-15",
+  "durata_carrello_gg": 7,
+  "data_chiusura": "2027-01-22",
+  "struttura": {
+    "valore_dichiarato": 144,
+    "rapporto_valore_prezzo": 3.06,
+    "soglia_rapporto_minima": 3,
+    "ancoraggio": null,
+    "bonus": [
+      {
+        "nome": "Bonus di esempio con listino",
+        "valore": 97,
+        "fonte_valore": "prezzo-listino-proprio",
+        "riferimento_fonte": "listino di esempio"
+      },
+      {
+        "nome": "Bonus di esempio senza fonte",
+        "valore": 199,
+        "fonte_valore": null,
+        "riferimento_fonte": "vale zero nel calcolo: e' l'esempio del vincolo"
+      }
+    ],
+    "garanzia": {
+      "giorni": 14,
+      "condizioni": "Rimborso integrale entro 14 giorni, senza motivazione (esempio).",
+      "rinuncia_recesso_raccolta": false
+    },
+    "motivo_per_agire_adesso": "Esempio: il prezzo di apertura vale per i sette giorni del carrello.",
+    "azione_richiesta": "Comprare il prodotto di esempio a 47 EUR."
+  },
+  "previsione_riferimento": {
+    "file": "previsione.json",
+    "ricavo_atteso": 126.9
+  },
+  "alternative_scartate": [],
+  "non_misurato": [
+    "ESEMPIO DI COLLAUDO (05-TEMPLATES-E-KIT/esempio): nessun numero qui e' una misura reale. Serve a vedere i gate passare su un lancio finto; `lancio crea X --con-esempio` lo copia.",
+    "La data di apertura 2027-01-15 e' fissa: se l'esempio viene eseguito dopo quella data, GATE-OFF-1 lo dira' insieme alla firma mancante."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "prodotto": "Prodotto di esempio",
+  "domande": [
+    {
+      "id": "D1-prodotto-esiste",
+      "testo": "Il prodotto esiste come file consegnabile?",
+      "risposta": "si",
+      "sostenuta_da": "certificato.json"
+    },
+    {
+      "id": "D2-pubblico-esiste",
+      "testo": "Esiste un pubblico verificato a cui proporlo?",
+      "risposta": "si",
+      "sostenuta_da": "pubblico.json"
+    },
+    {
+      "id": "D3-si-puo-incassare",
+      "testo": "Si puo' incassare, con una previsione dichiarata?",
+      "risposta": "si",
+      "sostenuta_da": "previsione.json"
+    },
+    {
+      "id": "D4-capacita-nel-periodo",
+      "testo": "C'e' capacita' di lavoro nel periodo del lancio?",
+      "risposta": "si",
+      "sostenuta_da": "offerta.PROPOSTA.json"
+    },
+    {
+      "id": "D5-nessun-lancio-in-conflitto",
+      "testo": "Nessun altro lancio occupa lo stesso pubblico nello stesso periodo?",
+      "risposta": "si",
+      "sostenuta_da": "ricerca.json"
+    }
+  ],
+  "esito": "si-fa",
+  "ragione_archiviazione": null,
+  "non_misurato": [
+    "ESEMPIO DI COLLAUDO (05-TEMPLATES-E-KIT/esempio): nessun numero qui e' una misura reale. Serve a vedere i gate passare su un lancio finto; `lancio crea X --con-esempio` lo copia."
+  ]
+}

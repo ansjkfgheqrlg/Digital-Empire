@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "frasi": [
+    {
+      "testo": "Frase di esempio numero 1: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://example.com/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di esempio numero 2: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.iana.org/domains/reserved",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di esempio numero 3: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.python.org/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di esempio numero 4: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://example.com/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di esempio numero 5: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.iana.org/domains/reserved",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "confronto"
+    },
+    {
+      "testo": "Frase di esempio numero 6: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.python.org/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di esempio numero 7: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://example.com/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di esempio numero 8: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.iana.org/domains/reserved",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di esempio numero 9: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.python.org/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di esempio numero 10: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://example.com/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "confronto"
+    },
+    {
+      "testo": "Frase di esempio numero 11: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.iana.org/domains/reserved",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di esempio numero 12: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.python.org/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di esempio numero 13: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://example.com/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di esempio numero 14: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.iana.org/domains/reserved",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di esempio numero 15: non e' una citazione reale, serve al collaudo del gate",
+      "fonte": {
+        "url": "https://www.python.org/",
+        "raccolta_il": "2026-09-14",
+        "contesto": "esempio di collaudo"
+      },
+      "categoria": "confronto"
+    }
+  ],
+  "campione_verificato": [
+    {
+      "url": "https://example.com/",
+      "raggiungibile": true,
+      "testo_ritrovato": null,
+      "verificata_il": "2026-09-15T09:00:00+02:00"
+    },
+    {
+      "url": "https://www.iana.org/domains/reserved",
+      "raggiungibile": true,
+      "testo_ritrovato": null,
+      "verificata_il": "2026-09-15T09:00:00+02:00"
+    },
+    {
+      "url": "https://www.python.org/",
+      "raggiungibile": true,
+      "testo_ritrovato": null,
+      "verificata_il": "2026-09-15T09:00:00+02:00"
+    }
+  ],
+  "concorrenti": [],
+  "non_misurato": [
+    "ESEMPIO DI COLLAUDO (05-TEMPLATES-E-KIT/esempio): nessun numero qui e' una misura reale. Serve a vedere i gate passare su un lancio finto; `lancio crea X --con-esempio` lo copia.",
+    "Le tre fonti del campione sono pagine pubbliche stabili scelte perche' il gate le riapra davvero con la rete; le frasi non vi compaiono (testo_ritrovato = null)."
+  ]
+}

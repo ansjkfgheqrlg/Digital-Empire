@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "misurato_il": "2026-09-15T09:00:00+02:00",
+  "scade_il": "2026-10-15",
+  "canali": [
+    {
+      "id": "lista-email-esempio",
+      "tipo": "lista-email",
+      "posseduto": true,
+      "raggiungibili_verificati": 500,
+      "raggiungibili_dichiarati": 800,
+      "prova": {
+        "tipo": "esporto-lista",
+        "riferimento": "prove/esporto-lista-esempio.csv (file di esempio, non allegato)",
+        "data": "2026-09-14"
+      },
+      "stato_tecnico": "attivo",
+      "note": "Canale di esempio: il numero e' inventato per il collaudo."
+    },
+    {
+      "id": "profilo-social-esempio",
+      "tipo": "profilo-social",
+      "posseduto": false,
+      "raggiungibili_verificati": 100,
+      "raggiungibili_dichiarati": null,
+      "prova": {
+        "tipo": "schermata-conteggio-piattaforma",
+        "riferimento": "prove/schermata-esempio.png (file di esempio, non allegato)",
+        "data": "2026-09-10"
+      },
+      "stato_tecnico": "attivo",
+      "note": "Canale di esempio: il numero e' inventato per il collaudo."
+    }
+  ],
+  "totale_raggiungibile_verificato": 600,
+  "non_misurato": [
+    "ESEMPIO DI COLLAUDO (05-TEMPLATES-E-KIT/esempio): nessun numero qui e' una misura reale. Serve a vedere i gate passare su un lancio finto; `lancio crea X --con-esempio` lo copia.",
+    "Nessun canale reale e' stato contato: i 600 sono un numero di collaudo."
+  ]
+}

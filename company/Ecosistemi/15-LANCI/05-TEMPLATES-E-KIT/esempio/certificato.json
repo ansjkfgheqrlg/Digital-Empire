@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "modalita": "retroattiva",
+  "file_prodotto": {
+    "percorso": "PIANO-MAESTRO/29-ECOSISTEMA-LANCI/00-LEGGIMI.md",
+    "byte": 23818,
+    "formato": "text/markdown",
+    "pagine": null
+  },
+  "bandiere_rosse": [
+    {
+      "id": "RF1-nessun-output-pratico",
+      "presente": false,
+      "come_verificata": "Esempio di collaudo: nessun comando eseguito, il file del prodotto e' il LEGGIMI del piano.",
+      "dettaglio": null
+    },
+    {
+      "id": "RF2-template-senza-esempio",
+      "presente": false,
+      "come_verificata": "Esempio di collaudo: nessun comando eseguito.",
+      "dettaglio": null
+    },
+    {
+      "id": "RF3-promessa-non-mantenuta",
+      "presente": false,
+      "come_verificata": "Esempio di collaudo: nessun confronto eseguito.",
+      "dettaglio": null
+    },
+    {
+      "id": "RF4-contenuto-non-originale",
+      "presente": false,
+      "come_verificata": "Esempio di collaudo: nessuna ricerca eseguita.",
+      "dettaglio": null
+    },
+    {
+      "id": "RF5-link-morti",
+      "presente": false,
+      "come_verificata": "Esempio di collaudo: link_testati vuoto, il prodotto di esempio non ha link da provare.",
+      "dettaglio": null
+    },
+    {
+      "id": "RF6-consegna-non-provata",
+      "presente": false,
+      "come_verificata": "Esempio di collaudo: nessuna consegna eseguita.",
+      "dettaglio": null
+    }
+  ],
+  "link_testati": [],
+  "debito_collaudo": "Esempio di collaudo: nessuna delle sei bandiere e' stata verificata davvero. Su un lancio vero ogni riga va rifatta con il comando eseguito.",
+  "esito": "consegnabile",
+  "non_misurato": [
+    "ESEMPIO DI COLLAUDO (05-TEMPLATES-E-KIT/esempio): nessun numero qui e' una misura reale. Serve a vedere i gate passare su un lancio finto; `lancio crea X --con-esempio` lo copia.",
+    "Il campo byte e' stato letto al momento della scrittura dell'esempio; il gate non lo confronta, misura il file."
+  ]
+}
