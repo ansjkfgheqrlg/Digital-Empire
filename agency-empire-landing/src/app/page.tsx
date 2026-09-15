@@ -117,7 +117,7 @@ export default function Home() {
       <ProveVere />
       {/* <RailSistemi /> smontato il 13/09 sera (39B r.27): screenshot del sito stesso non sono una prova; torna quando ci sono 5 cose di clienti */}
       <NoFluff />
-      <ToolStackV2 />
+      {/* F6 M1 (ordine di Max 15/09): «Niente black box» smontata — DEROGA-B dichiarata, il file resta */}
       <div className="divider-silver-orange" aria-hidden="true" />
       <PowerDeck />
       <FasciaManifesto />

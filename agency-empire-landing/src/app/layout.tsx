@@ -18,6 +18,10 @@ import "./f5-hero.css"; // F5: hero a sinistra, foto di Max a destra, ombre diet
 import "./f5-card.css"; // F5: card fluttuanti nello stile dell'all. 02 (illustrazioni granulose)
 import "./f5-frecce.css"; // F5: frecce dai blocchi Tre sistemi, freccia #02 corretta, foto di riferimento con freccia
 import "./f5-cta.css"; // F5: le tre pagine CTA (una per prodotto)
+import "./f6-hero.css"; // F6 (dossier 41): foto, headline nuova, card spillate
+import "./f6-frecce.css"; // F6: frecce Tre sistemi, frase barrata, #02, F.L.O.W., storia
+import "./f6-copy.css"; // F6: Per chi è senza blocchi, Specchio, Ascolta bene v2, prima/dopo
+import "./f6-colori.css"; // F6: sfondo unico Scala+Perché, Ogni sistema + tessere in --grad-max, grana Second Brain, catene
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 const onest = Onest({

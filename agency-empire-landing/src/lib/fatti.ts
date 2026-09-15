@@ -24,4 +24,7 @@ export const FATTI = {
   novacar: { preventivi: 65, marche: 11, minutiPerPdf: 2, controlli: 6, periodo: "3-13 luglio 2026" },
   /** Preventa — avvia-outreach-preventa */
   preventaWhatsappGiorno: 50,
+  /** F6 (15/09): la nota della smorfia — un'app custom che sostituisce 5 tool da 60 €/mese ognuno (ordine di Max) */
+  toolSostituiti: 5,
+  toolEuroMese: 60,
 } as const;
