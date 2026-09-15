@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "periodo": {
+    "dal": "2026-08-03",
+    "al": "2026-08-09"
+  },
+  "ricavo_lordo": 658.0,
+  "ricavo_netto": 625.1,
+  "origine": {
+    "tipo": "fornitore-pagamento",
+    "riferimento": "esporto-fornitore-di-esempio-20260809",
+    "letto_il": "2026-08-10T10:00:00+00:00"
+  },
+  "ordini": {
+    "numero": 14,
+    "prezzo_medio": 47.0,
+    "rimborsi_numero": 0,
+    "rimborsi_importo": 0.0
+  },
+  "per_canale": [
+    {
+      "canale": "email",
+      "a_pagamento": false,
+      "visite": 250,
+      "ordini": 10,
+      "costo": null,
+      "costo_per_acquisto": null
+    },
+    {
+      "canale": "instagram",
+      "a_pagamento": true,
+      "visite": 120,
+      "ordini": 4,
+      "costo": 180.0,
+      "costo_per_acquisto": 45.0
+    }
+  ],
+  "costi_reali": {
+    "totale": 240.0,
+    "macchina": 15.0,
+    "pubblicita": 180.0,
+    "strumenti": 45.0,
+    "altro": 0.0
+  },
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}

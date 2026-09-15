@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "pagine": [
+    {
+      "ruolo": "vendita",
+      "url": "https://esempio.invalid/manuale",
+      "codice_http": 200,
+      "verificata_il": "2026-07-30T10:00:00+00:00",
+      "evento_conversione": {
+        "nome": "vista_vendita",
+        "prova": {
+          "origine": "piattaforma-misura",
+          "identificativo_evento": "ev_vendita_001",
+          "letto_il": "2026-07-30T11:00:00+00:00"
+        }
+      },
+      "tempo_caricamento_ms": 800
+    },
+    {
+      "ruolo": "checkout",
+      "url": "https://esempio.invalid/manuale/checkout",
+      "codice_http": 200,
+      "verificata_il": "2026-07-30T10:00:00+00:00",
+      "evento_conversione": {
+        "nome": "vista_checkout",
+        "prova": {
+          "origine": "piattaforma-misura",
+          "identificativo_evento": "ev_checkout_001",
+          "letto_il": "2026-07-30T11:00:00+00:00"
+        }
+      },
+      "tempo_caricamento_ms": 800
+    },
+    {
+      "ruolo": "grazie",
+      "url": "https://esempio.invalid/manuale/grazie",
+      "codice_http": 200,
+      "verificata_il": "2026-07-30T10:00:00+00:00",
+      "evento_conversione": {
+        "nome": "acquisto",
+        "prova": {
+          "origine": "piattaforma-misura",
+          "identificativo_evento": "ev_grazie_001",
+          "letto_il": "2026-07-30T11:00:00+00:00"
+        }
+      },
+      "tempo_caricamento_ms": 800
+    }
+  ],
+  "prova_cassa": {
+    "stato": "incassato_e_rimborsato",
+    "fornitore": "fornitore-di-esempio",
+    "riferimento_transazione": "tx_prova_0001",
+    "importo": 1.0,
+    "eseguita_il": "2026-07-30T12:00:00+00:00",
+    "consegna_verificata": true
+  },
+  "consenso": {
+    "banner_presente": true,
+    "misura_prima_del_consenso": false,
+    "quota_consenso_stimata": null,
+    "nota": "esempio"
+  },
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero",
+    "le url sono di esempio: con ReteVera GATE-FNL-1 fallirebbe"
+  ]
+}

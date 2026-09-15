@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "pezzi": [
+    {
+      "id": "pagina-vendita",
+      "tipo": "pagina-vendita",
+      "file": "copy/pagina-vendita.md",
+      "destinazione": "vendita",
+      "punteggio": {
+        "totale": 88,
+        "blocchi": [
+          {
+            "nome": "titolo",
+            "punti": 18,
+            "punti_massimi": 20,
+            "assegnato_da": "giudice",
+            "ancora": null
+          },
+          {
+            "nome": "promessa",
+            "punti": 25,
+            "punti_massimi": 30,
+            "assegnato_da": "giudice",
+            "ancora": null
+          },
+          {
+            "nome": "prova",
+            "punti": 27,
+            "punti_massimi": 30,
+            "assegnato_da": "giudice",
+            "ancora": null
+          },
+          {
+            "nome": "chiamata",
+            "punti": 18,
+            "punti_massimi": 20,
+            "assegnato_da": "giudice",
+            "ancora": null
+          }
+        ]
+      },
+      "affermazioni": [
+        {
+          "testo": "Il manuale contiene output pratici verificati",
+          "categoria": "prova",
+          "riferimento": "certificato.json#bandiere_rosse[0].come_verificata"
+        },
+        {
+          "testo": "Il carrello chiude il 2026-08-09",
+          "categoria": "promessa",
+          "riferimento": null
+        },
+        {
+          "testo": "E' il manuale piu' chiaro che abbiamo scritto",
+          "categoria": "opinione",
+          "riferimento": null
+        }
+      ],
+      "copertina_richiesta": null
+    },
+    {
+      "id": "email-1",
+      "tipo": "email",
+      "file": "copy/email-1.md",
+      "destinazione": "vendita",
+      "punteggio": {
+        "totale": 82,
+        "blocchi": [
+          {
+            "nome": "oggetto",
+            "punti": 16,
+            "punti_massimi": 20,
+            "assegnato_da": "giudice",
+            "ancora": null
+          },
+          {
+            "nome": "corpo",
+            "punti": 45,
+            "punti_massimi": 60,
+            "assegnato_da": "giudice",
+            "ancora": null
+          },
+          {
+            "nome": "chiamata",
+            "punti": 16,
+            "punti_massimi": 20,
+            "assegnato_da": "giudice",
+            "ancora": null
+          }
+        ]
+      },
+      "affermazioni": [
+        {
+          "testo": "Rimborso entro 14 giorni",
+          "categoria": "promessa",
+          "riferimento": null
+        },
+        {
+          "testo": "Lo dice il pubblico stesso",
+          "categoria": "prova",
+          "riferimento": "ricerca.json#frasi[3].testo"
+        }
+      ],
+      "copertina_richiesta": null
+    }
+  ],
+  "punteggio_totale": 85,
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero",
+    "i punteggi sono di comodo, non assegnati da un giudice vero"
+  ]
+}

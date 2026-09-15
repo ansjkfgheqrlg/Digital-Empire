@@ -171,10 +171,11 @@ def test_ogni_creazione_lascia_un_verbale(lanci_finti):
 # ------------------------------------------------------------------- comando
 
 def test_il_comando_dice_quando_un_pezzo_non_esiste_ancora(lanci_finti, capsys):
-    """Meglio dire 'non e' costruito' che far finta di eseguire."""
-    assert cli.main(["avanza", "prova"]) == 2
+    """Meglio dire 'non e' costruito' che far finta di eseguire.
+    (S2a usava `avanza` come esempio; da S2b `avanza` esiste, l'esempio e' `blocchi`, S5.)"""
+    assert cli.main(["blocchi", "prova"]) == 2
     fuori = capsys.readouterr().out
-    assert "non e' ancora costruito" in fuori and "MT-3XWC" in fuori
+    assert "non e' ancora costruito" in fuori and "MT-RGZ6" in fuori
 
 
 def test_valida_da_uscita_1_quando_qualcosa_non_torna(lanci_finti, capsys):

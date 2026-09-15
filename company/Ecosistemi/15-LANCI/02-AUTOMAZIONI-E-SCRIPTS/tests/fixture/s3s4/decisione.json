@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "prodotto": "Prodotto di esempio",
+  "domande": [
+    {
+      "id": "D1-prodotto-esiste",
+      "testo": "Il prodotto esiste?",
+      "risposta": "si",
+      "sostenuta_da": "certificato.json"
+    },
+    {
+      "id": "D2-pubblico-esiste",
+      "testo": "Il pubblico esiste?",
+      "risposta": "si",
+      "sostenuta_da": "pubblico.json"
+    },
+    {
+      "id": "D3-si-puo-incassare",
+      "testo": "Si puo' incassare?",
+      "risposta": "si",
+      "sostenuta_da": "funnel.json"
+    },
+    {
+      "id": "D4-capacita-nel-periodo",
+      "testo": "C'e' capacita' nel periodo?",
+      "risposta": "si",
+      "sostenuta_da": "editoriale.json"
+    },
+    {
+      "id": "D5-nessun-lancio-in-conflitto",
+      "testo": "Nessun lancio in conflitto?",
+      "risposta": "si",
+      "sostenuta_da": "stato.json degli altri lanci"
+    }
+  ],
+  "esito": "si-fa",
+  "ragione_archiviazione": null,
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}

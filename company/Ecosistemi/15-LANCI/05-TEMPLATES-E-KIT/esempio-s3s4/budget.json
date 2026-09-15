@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "tetto": 500.0,
+  "voci": [
+    {
+      "nome": "pubblicita",
+      "importo": 200.0,
+      "tipo": "una-tantum",
+      "stato": "previsto",
+      "autorizzato_da": null
+    },
+    {
+      "nome": "strumenti",
+      "importo": 50.0,
+      "tipo": "ricorrente",
+      "stato": "previsto",
+      "autorizzato_da": null
+    },
+    {
+      "nome": "chiamate ai modelli",
+      "importo": 15.0,
+      "tipo": "macchina",
+      "stato": "previsto",
+      "autorizzato_da": null
+    }
+  ],
+  "costo_totale_previsto": 265.0,
+  "costo_macchina_previsto": 15.0,
+  "tetto_macchina": 15.0,
+  "pareggio": {
+    "copie": 6,
+    "calcolato_da": "previsione.json",
+    "scenario_usato": "atteso"
+  },
+  "scarto_corrente": null,
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}

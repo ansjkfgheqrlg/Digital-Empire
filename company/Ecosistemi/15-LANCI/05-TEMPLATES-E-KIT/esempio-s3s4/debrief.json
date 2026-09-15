@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "confronto": [
+    {
+      "voce": "ricavo_lordo",
+      "previsto": 705.0,
+      "reale": 658.0,
+      "scarto_percentuale": -6.67
+    },
+    {
+      "voce": "ordini",
+      "previsto": 15,
+      "reale": 14,
+      "scarto_percentuale": -6.67
+    }
+  ],
+  "cause": [
+    {
+      "voce": "ordini",
+      "causa": "un ordine in meno del previsto: scarto sotto il 10%, causa non richiesta ma annotata",
+      "cosa_faremmo_di_diverso": "niente di strutturale: lo scarto e' dentro la banda",
+      "misurata": false
+    }
+  ],
+  "schemi": [
+    {
+      "testo": "La lista email converte piu' dei social a pagamento su un prodotto sotto i 50 euro",
+      "forza": "osservazione",
+      "si_applica_quando": "prodotto digitale sotto i 50 euro venduto a una lista propria",
+      "conferme": 1,
+      "smentite": 0,
+      "artefatto_di_origine": "consuntivo.json"
+    },
+    {
+      "testo": "Un giorno di carrello senza contenuto non produce ordini quel giorno",
+      "forza": "indizio",
+      "si_applica_quando": "carrelli di 5-10 giorni con calendario editoriale",
+      "conferme": 1,
+      "smentite": 0,
+      "artefatto_di_origine": "editoriale.json"
+    },
+    {
+      "testo": "Il costo macchina resta sotto il tetto se si lavora a blocchi e non a unita' minima",
+      "forza": "osservazione",
+      "si_applica_quando": "lanci con meno di 10 agenti invocati",
+      "conferme": 1,
+      "smentite": 0,
+      "artefatto_di_origine": "budget.json"
+    }
+  ],
+  "gate_bloccanti_scattati": [
+    {
+      "gate": "GATE-REG-1",
+      "volte": 1,
+      "costo_in_giorni": 1
+    }
+  ],
+  "punti_umani_scaduti": [],
+  "controfirma": {
+    "chi": "ESEMPIO-regia",
+    "il": "2026-08-11T10:00:00+00:00",
+    "obiezioni": null
+  }
+}

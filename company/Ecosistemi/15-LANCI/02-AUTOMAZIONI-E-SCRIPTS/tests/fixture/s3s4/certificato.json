@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "modalita": "integrale",
+  "file_prodotto": {
+    "percorso": "prodotto/esempio.pdf",
+    "byte": 1024,
+    "formato": "application/pdf",
+    "pagine": 10
+  },
+  "bandiere_rosse": [
+    {
+      "id": "RF1-nessun-output-pratico",
+      "presente": false,
+      "come_verificata": "verifica di esempio, non eseguita davvero",
+      "dettaglio": null
+    },
+    {
+      "id": "RF2-template-senza-esempio",
+      "presente": false,
+      "come_verificata": "verifica di esempio, non eseguita davvero",
+      "dettaglio": null
+    },
+    {
+      "id": "RF3-promessa-non-mantenuta",
+      "presente": false,
+      "come_verificata": "verifica di esempio, non eseguita davvero",
+      "dettaglio": null
+    },
+    {
+      "id": "RF4-contenuto-non-originale",
+      "presente": false,
+      "come_verificata": "verifica di esempio, non eseguita davvero",
+      "dettaglio": null
+    },
+    {
+      "id": "RF5-link-morti",
+      "presente": false,
+      "come_verificata": "verifica di esempio, non eseguita davvero",
+      "dettaglio": null
+    },
+    {
+      "id": "RF6-consegna-non-provata",
+      "presente": false,
+      "come_verificata": "verifica di esempio, non eseguita davvero",
+      "dettaglio": null
+    }
+  ],
+  "link_testati": [
+    {
+      "url": "https://esempio.invalid/manuale",
+      "codice": 200
+    }
+  ],
+  "debito_collaudo": null,
+  "esito": "consegnabile",
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}

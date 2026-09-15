@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "frasi": [
+    {
+      "testo": "Frase di esempio numero 0, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/0",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di esempio numero 1, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/1",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di esempio numero 2, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/2",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di esempio numero 3, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/3",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di esempio numero 4, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/4",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "confronto"
+    },
+    {
+      "testo": "Frase di esempio numero 5, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/5",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di esempio numero 6, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/6",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di esempio numero 7, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/7",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di esempio numero 8, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/8",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di esempio numero 9, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/9",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "confronto"
+    },
+    {
+      "testo": "Frase di esempio numero 10, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/10",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "dolore"
+    },
+    {
+      "testo": "Frase di esempio numero 11, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/11",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "desiderio"
+    },
+    {
+      "testo": "Frase di esempio numero 12, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/12",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "obiezione"
+    },
+    {
+      "testo": "Frase di esempio numero 13, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/13",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "linguaggio"
+    },
+    {
+      "testo": "Frase di esempio numero 14, raccolta da nessuna parte",
+      "fonte": {
+        "url": "https://esempio.invalid/frase/14",
+        "raccolta_il": "2026-07-15",
+        "contesto": null
+      },
+      "categoria": "confronto"
+    }
+  ],
+  "campione_verificato": [
+    {
+      "url": "https://esempio.invalid/frase/0",
+      "raggiungibile": true,
+      "testo_ritrovato": true,
+      "verificata_il": "2026-07-16T10:00:00+00:00"
+    },
+    {
+      "url": "https://esempio.invalid/frase/1",
+      "raggiungibile": true,
+      "testo_ritrovato": true,
+      "verificata_il": "2026-07-16T10:00:00+00:00"
+    },
+    {
+      "url": "https://esempio.invalid/frase/2",
+      "raggiungibile": true,
+      "testo_ritrovato": true,
+      "verificata_il": "2026-07-16T10:00:00+00:00"
+    }
+  ],
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}

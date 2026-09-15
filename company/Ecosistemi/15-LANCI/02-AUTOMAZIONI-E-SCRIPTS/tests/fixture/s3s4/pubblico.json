@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "misurato_il": "2026-07-20T10:00:00+00:00",
+  "scade_il": "2026-08-19",
+  "canali": [
+    {
+      "id": "lista-email",
+      "tipo": "lista-email",
+      "posseduto": true,
+      "raggiungibili_verificati": 1000,
+      "raggiungibili_dichiarati": 1200,
+      "prova": {
+        "tipo": "esporto-lista",
+        "riferimento": "esporto-lista-20260720.csv",
+        "data": "2026-07-20"
+      },
+      "stato_tecnico": "attivo"
+    }
+  ],
+  "totale_raggiungibile_verificato": 1000,
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "esempio",
+  "contenuti": [
+    {
+      "id": "c-00",
+      "data_uscita": "2026-08-03",
+      "canale": "email",
+      "a_pagamento": false,
+      "formato": "email",
+      "destinazione": "vendita",
+      "stato": "pronto",
+      "pubblicato_il": null,
+      "prova_pubblicazione": null,
+      "copertina_richiesta": null,
+      "invio_reale": null
+    },
+    {
+      "id": "c-01",
+      "data_uscita": "2026-08-04",
+      "canale": "instagram",
+      "a_pagamento": false,
+      "formato": "post",
+      "destinazione": "https://esempio.invalid/manuale",
+      "stato": "pronto",
+      "pubblicato_il": null,
+      "prova_pubblicazione": null,
+      "copertina_richiesta": null,
+      "invio_reale": null
+    },
+    {
+      "id": "c-02",
+      "data_uscita": "2026-08-05",
+      "canale": "email",
+      "a_pagamento": false,
+      "formato": "email",
+      "destinazione": "vendita",
+      "stato": "pronto",
+      "pubblicato_il": null,
+      "prova_pubblicazione": null,
+      "copertina_richiesta": null,
+      "invio_reale": null
+    },
+    {
+      "id": "c-03",
+      "data_uscita": "2026-08-06",
+      "canale": "instagram",
+      "a_pagamento": false,
+      "formato": "post",
+      "destinazione": "https://esempio.invalid/manuale",
+      "stato": "pronto",
+      "pubblicato_il": null,
+      "prova_pubblicazione": null,
+      "copertina_richiesta": null,
+      "invio_reale": null
+    },
+    {
+      "id": "c-04",
+      "data_uscita": "2026-08-07",
+      "canale": "email",
+      "a_pagamento": false,
+      "formato": "email",
+      "destinazione": "vendita",
+      "stato": "pronto",
+      "pubblicato_il": null,
+      "prova_pubblicazione": null,
+      "copertina_richiesta": null,
+      "invio_reale": null
+    },
+    {
+      "id": "c-05",
+      "data_uscita": "2026-08-08",
+      "canale": "instagram",
+      "a_pagamento": false,
+      "formato": "post",
+      "destinazione": "https://esempio.invalid/manuale",
+      "stato": "pronto",
+      "pubblicato_il": null,
+      "prova_pubblicazione": null,
+      "copertina_richiesta": null,
+      "invio_reale": null
+    },
+    {
+      "id": "c-06",
+      "data_uscita": "2026-08-09",
+      "canale": "email",
+      "a_pagamento": false,
+      "formato": "email",
+      "destinazione": "vendita",
+      "stato": "pronto",
+      "pubblicato_il": null,
+      "prova_pubblicazione": null,
+      "copertina_richiesta": null,
+      "invio_reale": null
+    }
+  ],
+  "giorni_scoperti": [],
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}

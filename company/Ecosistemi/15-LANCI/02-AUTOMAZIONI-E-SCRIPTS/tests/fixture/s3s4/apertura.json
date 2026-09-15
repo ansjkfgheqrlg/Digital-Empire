@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "lista_sincronizzazione": [
+    {
+      "voce": "copy approvato",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "pagine online",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "cassa provata",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "calendario pieno",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "budget sotto tetto",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "lista email caricata",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "prezzo firmato",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "garanzia scritta",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "consegna automatica",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    },
+    {
+      "voce": "misura attiva",
+      "esito": true,
+      "verificata_il": "2026-08-02T10:00:00+00:00",
+      "come": "esempio"
+    }
+  ],
+  "artefatti_ricalcolati": [
+    {
+      "artefatto": "copy/manifest.json",
+      "valido": true,
+      "ricalcolato_il": "2026-08-02T10:00:00+00:00",
+      "motivo": null
+    },
+    {
+      "artefatto": "funnel.json",
+      "valido": true,
+      "ricalcolato_il": "2026-08-02T10:00:00+00:00",
+      "motivo": null
+    },
+    {
+      "artefatto": "editoriale.json",
+      "valido": true,
+      "ricalcolato_il": "2026-08-02T10:00:00+00:00",
+      "motivo": null
+    },
+    {
+      "artefatto": "budget.json",
+      "valido": true,
+      "ricalcolato_il": "2026-08-02T10:00:00+00:00",
+      "motivo": null
+    }
+  ],
+  "via_libera": {
+    "chi": "Persona di prova",
+    "canale": "comando-utente",
+    "riferimento": "lancio via-libera prova-s3s4",
+    "il": "2026-08-02T18:00:00+00:00"
+  },
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}

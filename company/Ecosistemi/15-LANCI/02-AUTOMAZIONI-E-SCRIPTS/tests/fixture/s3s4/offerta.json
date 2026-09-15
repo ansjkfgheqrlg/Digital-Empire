@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "ruolo_prodotto": "vendita",
+  "prezzo": 47.0,
+  "valuta": "EUR",
+  "data_apertura": "2026-08-03",
+  "durata_carrello_gg": 7,
+  "data_chiusura": "2026-08-09",
+  "struttura": {
+    "valore_dichiarato": 141.0,
+    "rapporto_valore_prezzo": 3.0,
+    "bonus": [
+      {
+        "nome": "Checklist",
+        "valore": 94.0,
+        "fonte_valore": "prezzo-listino-proprio",
+        "riferimento_fonte": "listino di esempio"
+      }
+    ],
+    "garanzia": {
+      "giorni": 14,
+      "condizioni": "rimborso entro 14 giorni senza domande",
+      "rinuncia_recesso_raccolta": true
+    },
+    "motivo_per_agire_adesso": "il carrello chiude il 2026-08-09",
+    "azione_richiesta": "compra il manuale"
+  },
+  "previsione_riferimento": {
+    "file": "previsione.json",
+    "ricavo_atteso": 705.0
+  },
+  "firma": {
+    "chi": "ESEMPIO-nessuna-persona",
+    "canale": "file-fuori-agenti",
+    "riferimento": "ESEMPIO: firma finta, nessuna persona ha firmato",
+    "proposta_impronta": "0000000000000000000000000000000000000000000000000000000000000000",
+    "il": "2026-07-22T10:00:00+00:00"
+  },
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero",
+    "la firma e' finta: serve solo a rendere il file valido per i gate S3/S4"
+  ]
+}

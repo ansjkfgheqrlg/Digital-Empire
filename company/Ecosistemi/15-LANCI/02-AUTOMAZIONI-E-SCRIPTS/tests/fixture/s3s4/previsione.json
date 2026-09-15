@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "lancio_id": "prova-s3s4",
+  "calcolata_il": "2026-07-21T10:00:00+00:00",
+  "formula": "ricavo_lordo = pubblico_raggiungibile * tasso_visita * tasso_acquisto * prezzo",
+  "ingressi": {
+    "pubblico_raggiungibile": 1000,
+    "prezzo": 47.0,
+    "fonte_pubblico": "ART-PUB",
+    "fonte_prezzo": "ART-OFF"
+  },
+  "scenari": {
+    "pessimista": {
+      "tasso_visita": 0.2,
+      "tasso_acquisto": 0.02,
+      "copie": 4,
+      "ricavo_lordo": 188.0,
+      "perche_questo_scenario": "meta' del pubblico non apre; conversione da lista fredda"
+    },
+    "atteso": {
+      "tasso_visita": 0.3,
+      "tasso_acquisto": 0.05,
+      "copie": 15,
+      "ricavo_lordo": 705.0,
+      "perche_questo_scenario": "tassi di comodo dichiarati assunti, non misurati"
+    },
+    "ottimista": {
+      "tasso_visita": 0.4,
+      "tasso_acquisto": 0.08,
+      "copie": 32,
+      "ricavo_lordo": 1504.0,
+      "perche_questo_scenario": "se il video di lancio porta traffico caldo"
+    }
+  },
+  "assunzioni": [
+    {
+      "nome": "tasso_visita",
+      "valore": 0.3,
+      "stato": "assunto",
+      "fonte": null,
+      "da_dove_viene_se_assunto": "numero di comodo"
+    },
+    {
+      "nome": "tasso_acquisto",
+      "valore": 0.05,
+      "stato": "assunto",
+      "fonte": null,
+      "da_dove_viene_se_assunto": "numero di comodo"
+    }
+  ],
+  "pareggio": {
+    "copie_per_pareggio": 6,
+    "costo_totale_previsto": 265.0,
+    "include_costo_macchina": true
+  },
+  "non_misurato": [
+    "ESEMPIO: nessun numero di questo file e' stato misurato su un lancio vero"
+  ]
+}
