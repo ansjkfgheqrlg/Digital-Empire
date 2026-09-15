@@ -2391,7 +2391,6 @@ dei consigli raccolti), su ordine esplicito di Max.
 - Con questo `EMP-W4K7` e' chiuso: max18 (9 fonti), max17 (verificato gia' chiuso), Fase 2,
   Libro dell'Agency — tutte e quattro le fasi fatte.
 
-<<<<<<< Updated upstream
 ## 2026-09-12 (EMPERATOR — EMP-2AW3, Dossier 37 v2 chiuso)
 - UPDATE: `projects/Agency/Progetto_Sito_Agency_Vivo` → 1 pagina aggiornata. Piano chiuso (3 critiche + V4, ≈53 h),
   fatti nuovi dal codice del sito vero (noindex, prenotazione in 3 salti col brand del corso, `#prenota` ancora del listino).
@@ -2417,9 +2416,7 @@ dei consigli raccolti), su ordine esplicito di Max.
 - AGGIORNAMENTO: hero texture a scala naturale ripetuta (CP-20260913-NKU3), generatore texture_hero_tile.py
 - AGGIORNAMENTO 2026-09-14: sito agency F4 costruita (dossier 40, CP-20260914-P6GG) — hero pulito, gradiente unico, storia preventivi, cervello; anteprima 2uvpnq2q6
 - AGGIORNAMENTO 2026-09-14: sito agency F5 (CP-20260914-HTXT) — hero a sinistra, foto, card stampa, frecce, 3 CTA; anteprima 97sgyqeom
-=======
 ## 2026-09-11 (ecosistema 15-LANCI in wiki + RF4 del Manuale chiarita, Gael)
 - INGEST: **15-LANCI** entra nella wiki — il catalogo master non sapeva che esistesse il quindicesimo ecosistema, nato il 10/09. → 1 pagina creata (`tools/Tool_Lanci_Digital_Empire.md`), 1 riga in `index.md`.
 - CORREZIONE: la bandiera rossa **RF4** del certificato del Manuale Claude Code passa da sospetto a fatto documentato. Elencate una per una le 21 occorrenze di 'Giovanni' con numero di riga: **18 sono un personaggio d'esempio legittimo**, **3 no** (righe 8716, 8784, 8797) e mostrano la distribuzione personale di Giovanni Beggiato, creatore terzo che DE studia con dieci pagine fonte in wiki. Separate le due domande: togliere le tre righe è mezz'ora, stabilire l'origine del testo è una decisione e viene prima del prezzo.
 - IGIENE: `SYNC-CONFLICT.txt` era un **marker orfano per la terza volta** (0 avanti, 0 indietro dal remoto, hook pre-commit verde). Rimosso. Registrato in backlog.
->>>>>>> Stashed changes
