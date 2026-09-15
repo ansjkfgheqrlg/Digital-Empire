@@ -5,7 +5,7 @@
 - **A:** la sessione/task che costruisce **l'infrastruttura dei lanci** — ecosistema 15-LANCI,
   [ADR-025](../decisions/ADR-025-ecosistema-lanci.md), piano `PIANO-MAESTRO/29-ECOSISTEMA-LANCI/`
 - **Ordinato da:** Max, 2026-09-08, a voce
-- **Stato:** 🟡 APERTA — il lavoro non è iniziato: prima si chiude lo studio dei siti
+- **Stato:** ✅ CHIUSA il 2026-09-15 — consegnata e usata da LANCI (ADR-016)
 
 ---
 
@@ -66,7 +66,7 @@ l'Ultimo Metro). Chi chiude questa task scrive qui sotto la data e chi ha ricevu
       (dati interrogabili + `build_pdf()`; `python anatomia_lanci.py --check` verificato)
 - [x] PDF generato + doppione in `documentazione Empire/` — `ANATOMIA-DEI-LANCI.pdf`, 10 pagine,
       doppione in `documentazione Empire/Lanci/`, generato 2026-09-09
-- [ ] **Consegnato a LANCI** — data: ______ · ricevuto da: ______
+- [x] **Consegnato a LANCI** — data: 2026-09-15 · ricevuto da: Emperator per Gael (sessione S2b→S5), agganciata al registro in `company/Ecosistemi/15-LANCI/04-SKILLS-E-REFERENCE/RIFERIMENTI.md` §1 (passo 12 → GATE-FNL-1, scala prezzi → GATE-OFF-1)
       Materiale pronto sul disco dal 2026-09-09 nelle tre forme. `TASK-GAEL-20260908-SETTIMANA-03.md`
       dichiara l'arrivo "non bloccante": Gael lo prende quando apre 1️⃣/2️⃣. Questa riga si spunta
       quando la sessione LANCI conferma di averlo usato (ADR-016, l'Ultimo Metro).
