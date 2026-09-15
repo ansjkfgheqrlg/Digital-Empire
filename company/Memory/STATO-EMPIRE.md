@@ -1,3 +1,21 @@
+## 🟣 2026-09-15 — `EMP-DIOEDIT` ripreso: fasi 0-1-3 verificate complete su tutti e 10 i VSL, **Fase 2 (visione) in corso**
+
+Misurato sul disco alla ripresa: i due Doom Bot interrotti dalla pausa avevano **finito tutti e
+dieci i video** prima di morire — misure del montaggio (tagli, ritmo, audio, frame) e parlato con i
+tempi (trascrizione, pause, parole/minuto) ci sono per ogni slug. Dato nuovo: `claude-speedrun-hero`
+ha **124 inquadrature in 81 secondi** — un taglio e mezzo al secondo.
+
+**Fase 2 lanciata (ADR-015):** 3× Doom Bot (opus, con visione) — Armageddon diviso in due metà
+(inquadrature 1-134 e 135-267) + il trio Claude Speedrun (370 inquadrature). Guardano **ogni primo
+fotogramma di ogni inquadratura**, uno per uno, con lo stesso protocollo scritto una volta sola:
+`vsl-study/visione/_PROTOCOLLO-VISIONE.md`. I colori li misura `scripts/colori_frame.py` (hex), i
+font e gli effetti li giudica l'occhio e lo dichiara. Seconda ondata a seguire: gli altri 6 VSL.
+
+**Poi:** Fase 4 (tre rapporti: montaggio · psicologia · comunicazione) → Fase 5 (critica e
+riscrittura integrale) → Fase 6 (piano dell'agente in 5 giri) → Fase 7 («Dio dell'Editing»).
+
+---
+
 ## ⚠️ COORDINAMENTO — 2026-09-13 pomeriggio — CANTIERE APERTO: agency-empire-landing (F3 + immagine vera hero in anteprima, aspetto Max) — Emperator con Max
 
 Tutto il Dossier 38 v2 è costruito e in anteprima (CP-PP3C). Gael/Neri: NON toccare `agency-empire-landing/` finché questo blocco non sparisce.
