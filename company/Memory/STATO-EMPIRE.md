@@ -56,6 +56,13 @@ profilo upload corretto; lettore Studio riparato e calibrato sul testo reale →
 **Fatto:** hero pulito + titolo largo + 5 card + nastro 44 px; gradiente unico su Tre sistemi e 7gg/300+/0€; «= Ovvero…»; freccia #02; sezione storia
 preventivi (1.357 px); Due tipi con grana-fuoco; Second Brain blu + 3 card + cervello; fix overflow mobile. Gate A PASS, deroghe dichiarate. Commit `2272677e`.
 
+## 🟠 2026-09-15 sera — SITO AGENCY F6 COSTRUITA (dossier 41, 31 task) — ANTEPRIMA, aspetta Max — CP-20260915-U7WT
+
+**Gesti solo di Max (ADR-026):** guardare https://agency-empire-landing-f5ztb8hd6-maximilians-projects-f0964962.vercel.app/ → correzioni → `cd agency-empire-landing && npx vercel --prod --yes`.
+**Fatto:** hero (foto riposizionate, headline+sottotitolo NUOVI con grassetti, card spillate), frecce ovunque, copy GENERICO fino a «Tre sistemi»
+(legge nuova di Max), Scala+Perché sfondo unico, Ogni sistema + tessere nel gradiente, grana Second Brain, catene d'argento, «Niente black box» via.
+Gate --parole FAIL dichiarato su 2 ordini testuali (Specchio riscritto, ToolStack smontata) → nota ADR-030. Commit `c70cdef0`.
+
 ## 🟠 2026-09-13 sera (tardi) — SITO AGENCY: sfondo hero APPROVATO da Max; PIANO F4 (dossier 40, 22 task) scritto — aspetta «vai» — CP-20260913-FVJT
 
 **Gesto di Max:** «vai» sul dossier 40 (`PIANO-MAESTRO/40-PIANO-F4-ORDINI-MAX-HERO-COLORI-STORIA.md`) — o correggere le 2 righe INTERPRETO (A1, C1).

@@ -460,3 +460,4 @@ gia' piu' avanti della fonte**, che da' principi senza testi.
 - **B-072 → aggiornata:** i posti sono 15 nel manifest di `agency-empire-landing/public/aura/manifest.json` (10 generati + 4 ritratti + 1 screenshot);
   senza file la composizione B tiene il layout, nessun segnaposto.
 - **B-089** (2026-09-13, agency-landing) — Gli still cinematografici in pagina (silhouette D4, uomo con la mano sul viso D5, colazione A09, elmo A19) sono immagini di film: diritti d'immagine non nostri. Sostituirli con still generati (Higgsfield, brief unico §C6 del dossier 38 v2) o foto vere prima o subito dopo il `--prod`. `src/lib/media.ts` + `public/aura/`.
+- **B-090** (2026-09-15) — `final-offer-v2.tsx` r.51/54: prezzi scritti a mano («da €2.500», «€3.500»…) invece di `eur(LISTINO.x)`: il gate prezzi li segnala; da portare a LISTINO nella prossima passata sul sito agency.
