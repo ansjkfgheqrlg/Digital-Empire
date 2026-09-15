@@ -114,7 +114,7 @@ export function SystemsShowcaseV2() {
 
           <div className="rb-ss-colonne">
             {systems.map((s, si) => (
-              <article key={s.id} className="rb-ss-col rb-grana">
+              <article key={s.id} className="rb-ss-col rb-grana grad-max">
                 <div className="rb-ss-blocco rb-ss-intesta">
                   <span className="sv-mono rb-accento">{s.label}</span>
                   <span className="sv-mono rb-ss-live">live</span>

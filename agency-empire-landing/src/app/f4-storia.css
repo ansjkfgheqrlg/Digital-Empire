@@ -1,89 +1,145 @@
-/* f4-storia.css — F4 BLOCCO D (dossier 40, ordini di Max 13/09 sera). Importato DOPO scala.css: le regole F4 vincono
-   su ritocchi/scala per ordine di Max. Sezione «la storia dei preventivi» (#storia-preventivi), superficie ink,
-   montata prima di <PrimaDopo />. Ogni classe con prefisso .sp-, tutte scopate sotto .vivo. Tetto altezza desktop
-   ≤ 1.400 px (D3): paddings e spaziature compatte, niente elementi decorativi extra. Grana: quella di sezione
-   (.vivo .sv::before, già ink-friendly) copre tutto — nessuna .gb-grana locale (quella è tarata per superfici chiare). */
+/* f4-storia.css — F4 BLOCCO D (dossier 40), riscritta F6 (dossier 41 blocco F1, ordine di Max 15/09 «più
+   bella»). Sezione «la storia dei preventivi» (#storia-preventivi), superficie ink, montata prima di
+   <PrimaDopo />. Ogni classe con prefisso .sp-, tutte scopate sotto .vivo. Tetto altezza desktop ≤ 1.500 px
+   (F1): paddings e spaziature compatte. Grana: quella di sezione (.vivo .sv::before) copre tutto. */
 
-.vivo .sp-sezione { padding: 56px 0 48px; }
-.vivo .sp-container { max-width: 900px; }
+.vivo .sp-sezione { padding: 48px 0 40px; }
+.vivo .sp-container { max-width: 1040px; }
 
 /* a) apertura — serif corsivo grande, argento, riga sola sopra la storia */
 .vivo .sp-apertura {
   font-family: var(--font-accent, Georgia, serif); font-style: italic; font-weight: 400;
-  font-size: clamp(22px, 2.6vw, 30px); line-height: 1.28; color: var(--sv-silver); letter-spacing: 0;
-  max-width: 26ch; margin: 0 0 28px; padding-bottom: 20px; border-bottom: 1px solid var(--sv-hair);
+  font-size: clamp(21px, 2.4vw, 28px); line-height: 1.26; color: var(--sv-silver); letter-spacing: 0;
+  max-width: 30ch; margin: 0 0 22px; padding-bottom: 16px; border-bottom: 1px solid var(--sv-hair);
 }
 .vivo .sp-apertura-it { color: #fff; }
 
-/* b) la storia */
-.vivo .sp-storia { max-width: 640px; }
-.vivo .sp-p { margin-top: 12px; max-width: 58ch; }
+/* b) layout a due colonne — testo 56% a sinistra, immagine 44% a destra (F1) */
+.vivo .sp-layout { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: start; }
+@media (min-width: 900px) {
+  .vivo .sp-layout { grid-template-columns: 1.27fr 1fr; gap: 44px; }
+}
+.vivo .sp-storia { max-width: 620px; }
+.vivo .sp-p { margin-top: 10px; max-width: 56ch; }
+.vivo .sp-p b { color: #fff; }
 .vivo .sp-prova {
-  display: inline-block; margin-top: 14px; padding: 7px 14px; border: 1px solid var(--sv-hair);
+  display: inline-block; margin-top: 12px; padding: 6px 13px; border: 1px solid var(--sv-hair);
   color: var(--sv-silver); font-size: 11px; letter-spacing: .1em;
 }
 .vivo .sp-prova b { color: var(--sv-orange); font-weight: 700; font-style: normal; text-transform: none; letter-spacing: 0; font-family: var(--font-mono, ui-monospace, monospace); }
 
-/* c) schema a 4 blocchi con frecce ferme — hairline arancio + punta 5px in CSS puro (::after ancorata a `left:100%`
-   sul blocco: cade esattamente nel gap, nessun calcolo di viewBox, nessuna animazione — stile fermo di funnel-hero) */
-.vivo .sp-schema {
-  position: relative; margin: 34px 0 0; padding: 0; list-style: none;
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-gap, 22px);
+/* c) l'immagine — still generato (scripts/illustrazione_storia_pdf.py), stesso trattamento a cornice
+   delle foto di riferimento F5 (bordo hairline + ombra bassa), niente grana aggiuntiva (già nel PNG). */
+.vivo .sp-col-img { align-self: start; }
+.vivo .sp-img-fig {
+  margin: 0; border: 1px solid var(--sv-hair); border-radius: 8px; overflow: hidden; background: #000;
+  box-shadow: 0 20px 46px -26px rgba(0, 0, 0, .85); aspect-ratio: 900 / 700;
 }
-.vivo .sp-blocco { position: relative; display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 1px solid var(--sv-hair); }
-.vivo .sp-blocco-t { font-size: 15px; line-height: 1.28; font-weight: 700; letter-spacing: -.01em; color: #fff; min-height: 39px; }
-.vivo .sp-blocco-r { font-family: var(--font-mono, ui-monospace, monospace); font-size: 11px; letter-spacing: .06em; color: var(--sv-silver-dim); }
-.vivo .sp-blocco:not(:last-child)::after {
-  content: ""; position: absolute; left: 100%; top: -4px; width: var(--sp-gap, 22px); height: 8px;
-  background-repeat: no-repeat; background-position: center left; pointer-events: none;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='8'><line x1='1' y1='4' x2='15' y2='4' stroke='%23fb4604' stroke-width='1.4' stroke-linecap='round'/><path d='M14,1 L20,4 L14,7 z' fill='%23fb4604'/></svg>");
-}
+.vivo .sp-img-fig img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
-/* d) chat — bolle HTML, nessuna immagine */
-.vivo .sp-chat { margin-top: 30px; display: flex; flex-direction: column; gap: 8px; max-width: 460px; }
-.vivo .sp-bolla { max-width: 82%; padding: 9px 14px; border-radius: 14px; }
-.vivo .sp-bolla-meta { display: block; font-family: var(--font-mono, ui-monospace, monospace); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; opacity: .68; margin-bottom: 3px; }
-.vivo .sp-bolla-ora { font-variant-numeric: tabular-nums; text-transform: none; letter-spacing: 0; }
-.vivo .sp-bolla-testo { margin: 0; font-size: 15px; line-height: 1.42; }
-.vivo .sp-bolla--cliente {
-  align-self: flex-start; background: #232324; color: #fff;
-  border-bottom-left-radius: 4px;
+/* d) chat — bolle con ombra morbida, iniziali in cerchio, orari mono, «✓✓» argento, fondo #141416 */
+.vivo .sp-chat-wrap { position: relative; margin-top: 26px; max-width: 440px; }
+.vivo .sp-chat {
+  background: #141416; border: 1px solid rgba(255, 255, 255, .06); border-radius: 14px;
+  padding: 14px; display: flex; flex-direction: column; gap: 10px;
+  box-shadow: 0 24px 48px -28px rgba(0, 0, 0, .9);
 }
+.vivo .sp-riga-bolla { display: flex; align-items: flex-end; gap: 8px; }
+.vivo .sp-riga-bolla--noi { flex-direction: row-reverse; }
+.vivo .sp-avatar {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+  font-family: var(--font-mono, ui-monospace, monospace); font-size: 9.5px; font-weight: 700; letter-spacing: .02em;
+  background: linear-gradient(160deg, #35353a, #202024); color: var(--sv-silver); border: 1px solid rgba(255, 255, 255, .1);
+}
+.vivo .sp-riga-bolla--noi .sp-avatar { background: linear-gradient(160deg, #3a1608, #1b0a03); color: #ffb385; border-color: rgba(251, 70, 4, .3); }
+.vivo .sp-bolla {
+  max-width: 78%; padding: 8px 12px; border-radius: 13px; box-shadow: 0 8px 18px -12px rgba(0, 0, 0, .7);
+}
+.vivo .sp-bolla-meta { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono, ui-monospace, monospace); font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; opacity: .68; margin-bottom: 3px; }
+.vivo .sp-bolla-ora { font-variant-numeric: tabular-nums; text-transform: none; letter-spacing: 0; }
+.vivo .sp-bolla-letto { color: #c7cbd6; letter-spacing: -1px; font-size: 11px; margin-left: 1px; }
+.vivo .sp-bolla-testo { margin: 0; font-size: 14px; line-height: 1.42; }
+.vivo .sp-bolla--cliente { background: #232324; color: #fff; border-bottom-left-radius: 4px; }
 .vivo .sp-bolla--noi {
-  align-self: flex-end; background: linear-gradient(160deg, #2c1006 0%, #1b0a03 100%);
-  border: 1px solid rgba(251, 70, 4, .38); color: #f4ede4;
-  border-bottom-right-radius: 4px;
+  background: linear-gradient(160deg, #2c1006 0%, #1b0a03 100%); border: 1px solid rgba(251, 70, 4, .38);
+  color: #f4ede4; border-bottom-right-radius: 4px;
 }
 .vivo .sp-bolla--noi .sp-bolla-meta { color: #ffb385; opacity: 1; }
 .vivo .sp-bolla--cliente .sp-bolla-meta { color: var(--sv-silver); opacity: 1; }
 
-/* e) prima/dopo — due colonne, numeri grandi in parole (nessuna cifra inventata) */
+/* nota di spiegazione dalla chat — nello spazio vuoto a destra della chat (gutter fra le due colonne),
+   mai sopra il testo, parte 8-10px fuori dal bordo della chat (F1) */
+.vivo .sp-arrow-chat { display: none; }
+.vivo .sp-nota-chat { display: none; }
+@media (min-width: 900px) {
+  .vivo .sp-arrow-chat {
+    display: block; position: absolute; left: 100%; bottom: 54px; width: 60px; height: 44px;
+    margin-left: 8px; overflow: visible; pointer-events: none;
+  }
+  .vivo .sp-nota-chat {
+    display: block; position: absolute; left: calc(100% + 66px); bottom: 8px; width: 150px;
+    margin: 0; color: var(--sv-silver); font-size: 11px; line-height: 1.5; letter-spacing: .01em;
+    text-transform: none;
+  }
+}
+
+/* e) schema a 4 blocchi con frecce CURVE (bezier), fra i blocchi — sostituisce la vecchia linea retta */
+.vivo .sp-schema-wrap { position: relative; margin-top: 34px; }
+.vivo .sp-schema {
+  position: relative; margin: 0; padding: 0; list-style: none;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-gap, 22px);
+}
+.vivo .sp-blocco { position: relative; display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 1px solid var(--sv-hair); }
+.vivo .sp-blocco-t { font-size: 14.5px; line-height: 1.28; font-weight: 700; letter-spacing: -.01em; color: #fff; min-height: 38px; }
+.vivo .sp-blocco-r { font-family: var(--font-mono, ui-monospace, monospace); font-size: 11px; letter-spacing: .06em; color: var(--sv-silver-dim); }
+.vivo .sp-arrow-seg {
+  position: absolute; left: 100%; top: -20px; width: var(--sp-gap, 22px); height: 22px;
+  overflow: visible; pointer-events: none;
+}
+
+/* nota di spiegazione dallo schema — sotto la riga, centrata, spazio vuoto prima di prima/dopo (F1) */
+.vivo .sp-arrow-schema { display: none; }
+.vivo .sp-nota-schema { display: none; }
+@media (min-width: 900px) {
+  .vivo .sp-arrow-schema {
+    display: block; position: absolute; left: 52%; top: 100%; margin-top: 8px; width: 60px; height: 40px;
+    overflow: visible; pointer-events: none;
+  }
+  .vivo .sp-nota-schema {
+    display: block; position: absolute; left: calc(52% + 66px); top: 100%; margin-top: 30px; width: 190px;
+    color: var(--sv-silver); font-size: 11px; line-height: 1.5; letter-spacing: .01em; text-transform: none;
+  }
+}
+
+/* f) prima/dopo — due colonne, numeri grandi in parole */
 .vivo .sp-primadopo {
   margin-top: 30px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 22px;
-  max-width: 620px; padding-top: 20px; border-top: 1px solid var(--sv-hair);
+  max-width: 620px; padding-top: 18px; border-top: 1px solid var(--sv-hair);
 }
+@media (min-width: 900px) { .vivo .sp-primadopo { margin-top: 76px; } }
 .vivo .sp-pd-col { display: flex; flex-direction: column; gap: 4px; }
 .vivo .sp-pd-col--dopo { text-align: right; }
 .vivo .sp-pd-eyebrow { font-family: var(--font-mono, ui-monospace, monospace); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--sv-silver-dim); }
-.vivo .sp-pd-num { font-size: clamp(26px, 3vw, 36px); font-weight: 900; letter-spacing: -.02em; line-height: 1; color: #fff; }
+.vivo .sp-pd-num { font-size: clamp(24px, 2.8vw, 34px); font-weight: 900; letter-spacing: -.02em; line-height: 1; color: #fff; }
 .vivo .sp-pd-num--accento { color: var(--sv-orange); }
 .vivo .sp-pd-r { font-size: 13px; color: var(--sv-silver-dim); }
 .vivo .sp-pd-frx { width: 34px; height: 1px; background: linear-gradient(90deg, var(--sv-silver-dim), var(--sv-orange)); }
 
-/* f) chiusura — aggancia la sezione dopo */
+/* g) chiusura — aggancia la sezione dopo */
 .vivo .sp-chiusura {
-  margin-top: 26px; font-family: var(--font-accent, Georgia, serif); font-style: italic; font-weight: 400;
-  font-size: clamp(17px, 1.6vw, 20px); line-height: 1.5; color: var(--sv-silver); max-width: 46ch;
+  margin-top: 22px; font-family: var(--font-accent, Georgia, serif); font-style: italic; font-weight: 400;
+  font-size: clamp(16px, 1.5vw, 19px); line-height: 1.45; color: var(--sv-silver); max-width: 46ch;
 }
 
-@media (max-width: 767px) {
-  .vivo .sp-sezione { padding: 56px 0 48px; }
-  .vivo .sp-apertura { margin-bottom: 32px; padding-bottom: 22px; }
-  .vivo .sp-schema { grid-template-columns: 1fr; gap: 22px; }
+@media (max-width: 899px) {
+  .vivo .sp-sezione { padding: 48px 0 40px; }
+  .vivo .sp-apertura { margin-bottom: 26px; padding-bottom: 18px; }
+  .vivo .sp-col-img { margin-top: 4px; max-width: 440px; }
+  .vivo .sp-schema { grid-template-columns: 1fr; gap: 20px; }
   .vivo .sp-blocco-t { min-height: 0; }
-  .vivo .sp-blocco:not(:last-child)::after { display: none; }
+  .vivo .sp-arrow-seg { display: none; }
   .vivo .sp-chat { max-width: 100%; }
-  .vivo .sp-bolla { max-width: 92%; }
+  .vivo .sp-bolla { max-width: 88%; }
   .vivo .sp-primadopo { grid-template-columns: 1fr; gap: 18px; }
   .vivo .sp-pd-col--dopo { text-align: left; }
   .vivo .sp-pd-frx { display: none; }

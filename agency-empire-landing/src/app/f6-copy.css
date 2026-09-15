@@ -1,1 +1,83 @@
-/* f6-copy.css — F6 (dossier 41, ordini di Max 15/09). Importato DOPO f5-*.css: vince per ordine. */
+/* f6-copy.css — F6 (dossier 41, ordini di Max 15/09, blocco copy generico C/E). Importato DOPO f5-*.css
+   e f6-hero.css/f6-frecce.css: vince per ordine. Ogni sezione di giugno toccata qui (ListenUp, Audience)
+   resta a 0 righe cambiate nel suo file: si nasconde con `:has(+ .marker)`, dove il marker è la classe
+   sul wrapper `.vivo` del componente gemello, montato SUBITO dopo nel markup (page.tsx) — deroga
+   dichiarata come per l'hero (A2). Copy nuovo: brief/COPY-F6-gamma.md. */
+
+/* ============================================================================
+   1) NASCONDI LE SEZIONI DI GIUGNO SOSTITUITE (0 righe toccate nei loro file)
+   ============================================================================ */
+/* ListenUp — src/components/sections/listen-up.tsx: <section class="bg-ink-2 section relative overflow-hidden"> */
+section.bg-ink-2.section.relative.overflow-hidden:has(+ .f6-marker-ascolta) { display: none; }
+
+/* Audience — src/components/sections/audience.tsx: <section class="bg-ink section section-border-t"> */
+section.bg-ink.section.section-border-t:has(+ .f6-marker-audience) { display: none; }
+
+/* ============================================================================
+   2) E3 — riga nuova sopra il titolo di Prima/Dopo
+   ============================================================================ */
+.vivo .pd-differenza {
+  font-family: var(--font-accent, Georgia, serif); font-weight: 400; font-style: normal;
+  font-size: var(--fs-h2); line-height: 1.12; letter-spacing: -.01em;
+  color: var(--sv-silver); max-width: 26ch;
+}
+.vivo .pd-differenza b { color: #fff; font-weight: 700; }
+
+/* ============================================================================
+   3) E2 — ASCOLTA BENE v2 (src/sezioni-aggiunte/ascolta-bene-v2.tsx)
+   ============================================================================ */
+.vivo .ab2-sezione {
+  position: relative; overflow: hidden; padding: 96px 0;
+  background:
+    radial-gradient(70% 45% at 15% 0%, rgba(251, 70, 4, 0.05), transparent 55%),
+    linear-gradient(180deg, var(--sv-ink-1) 0%, var(--sv-ink) 100%);
+  color: #fff;
+}
+.vivo .ab2-container { width: min(100%, 900px); margin: 0 auto; padding: 0 24px; }
+.vivo .ab2-titolo {
+  font-size: clamp(40px, 7vw, 84px); font-weight: 900; line-height: .95; letter-spacing: -.02em;
+  margin: 0 0 40px;
+  background: linear-gradient(180deg, #ffffff 0%, #d9d6cf 45%, #8a8378 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.vivo .ab2-corpo { display: flex; flex-direction: column; gap: 24px; max-width: 62ch;
+  font-size: clamp(17px, 1.35vw, 20px); line-height: 1.62; color: rgba(255, 255, 255, .75); }
+.vivo .ab2-corpo b { color: #ede9e2; font-weight: 700; }
+.vivo .ab2-riga-forte { font-size: clamp(19px, 1.6vw, 23px); line-height: 1.5; }
+.vivo .ab2-hl { color: #ede9e2; font-weight: 700; border-bottom: 2px solid var(--sv-orange); padding-bottom: 1px; }
+.vivo .ab2-citazione {
+  display: block; margin-top: 14px; font-weight: 700; font-size: clamp(22px, 2.6vw, 30px);
+  line-height: 1.32; color: #ede9e2;
+}
+.vivo .ab2-citazione-it { font-family: var(--font-accent, Georgia, serif); font-style: italic; font-weight: 400; color: var(--sv-orange); }
+
+/* ============================================================================
+   4) C1 — PER CHI È v2 (src/sezioni-aggiunte/audience-v2.tsx) — niente blocchi/card
+   ============================================================================ */
+.vivo .av2-sezione { padding: 8px 0 96px; background: var(--sv-ink-1); color: #fff; }
+.vivo .av2-container { width: min(100%, 1040px); margin: 0 auto; padding: 0 24px; }
+.vivo .av2-titolo { font-size: clamp(26px, 3.4vw, 44px); font-weight: 800; line-height: 1.16; letter-spacing: -.015em;
+  max-width: 30ch; margin: 0 0 44px; color: #fff; }
+.vivo .av2-titolo-it { font-family: var(--font-accent, Georgia, serif); font-style: italic; font-weight: 400; color: var(--sv-orange); }
+.vivo .av2-grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
+@media (min-width: 860px) {
+  .vivo .av2-grid { grid-template-columns: 1fr 1fr; gap: 64px; }
+}
+.vivo .av2-etichetta {
+  display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--sv-orange); font-weight: 600;
+  padding-bottom: 10px; margin-bottom: 18px; border-bottom: 1px solid var(--sv-hair);
+}
+.vivo .av2-etichetta--no { color: var(--sv-silver-dim); }
+.vivo .av2-lista { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.vivo .av2-lista li {
+  position: relative; padding-left: 20px; font-size: 15px; line-height: 1.6; color: rgba(255, 255, 255, .82);
+}
+.vivo .av2-lista li::before { content: "›"; position: absolute; left: 0; top: 0; color: var(--sv-orange); font-weight: 800; }
+.vivo .av2-lista--no li::before { color: var(--sv-silver-dim); }
+.vivo .av2-lista b { color: #fff; font-weight: 700; }
+
+@media (max-width: 767px) {
+  .vivo .ab2-sezione { padding: 64px 0; }
+  .vivo .av2-sezione { padding: 0 0 64px; }
+}

@@ -1,1 +1,131 @@
-/* f6-colori.css — F6 (dossier 41, ordini di Max 15/09). Importato DOPO f5-*.css: vince per ordine. */
+/* f6-colori.css — F6 (dossier 41, ordini di Max 15/09). Importato DOPO f5-*.css: vince per ordine.
+   Scagnozzo δ — G1 (sfondo unico Scala+Perché), H1 (Ogni sistema in --grad-max), H2 (tessere CTA in
+   --grad-max), L1 (catene d'argento). H3 (grana Second Brain) vive in f4-brain.css: le regole
+   affiancano lì i selettori blu/viola/teal che già esistono, per restare tutte vicine. */
+
+/* ============================================================================
+   G1 — SCALA + PERCHÉ DE: stesso sfondo, nessun divisore (all. 09).
+   Hierarchy (bg-grey) e Pillars (bg-paper) sono adiacenti in page.tsx (righe 95-96), sole due section
+   dirette di <main> in questa sequenza: è l'unica coppia bg-grey.section-border-t + bg-paper.section-border-t
+   nel DOM (verificato su tutte le section bg-grey del repo: content-output.tsx/mastery-map.tsx non sono
+   montate, no-fluff.tsx è seguita da PowerDeck bg-ink, ContentDeep è seguito da ContentOutputV2 sv-carta).
+   Selettore stabile per struttura, senza toccare hierarchy.tsx/pillars.tsx (sono di giugno).
+   ============================================================================ */
+main > section.bg-grey.section-border-t:has(+ section.bg-paper.section-border-t) {
+  border-bottom: 0;
+  box-shadow: none;
+  padding-bottom: 2.25rem;
+}
+main > section.bg-grey.section-border-t + section.bg-paper.section-border-t {
+  background: #e8e8e6; /* stesso fondo della prima (Hierarchy): unico colore, unica grana globale */
+  border-top: 0;
+  box-shadow: none;
+  padding-top: 2.25rem;
+}
+
+/* ============================================================================
+   H1 — «OGNI SISTEMA, NEL DETTAGLIO» (systems-showcase-v2.tsx): le 3 colonne con la classe .grad-max
+   aggiunta in tsx, riempite ESATTAMENTE come le card di «Tre sistemi» (all. 11 vs 12).
+   ============================================================================ */
+.vivo .rb-ss-col.grad-max {
+  background: var(--grad-max);
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 18px;
+  color: #141414;
+}
+.vivo .rb-ss-col.grad-max.rb-grana::after { display: none; } /* la grana la porta già .grad-max::before */
+.vivo .rb-ss-col.grad-max .rb-ss-blocco { border-top-color: rgba(0, 0, 0, .18); }
+
+.vivo .rb-ss-col.grad-max .rb-ss-tagline,
+.vivo .rb-ss-col.grad-max .rb-ss-sub,
+.vivo .rb-ss-col.grad-max .rb-ss-passi b,
+.vivo .rb-ss-col.grad-max .rb-ss-passi span,
+.vivo .rb-ss-col.grad-max .rb-ss-lista li,
+.vivo .rb-ss-col.grad-max .rb-ss-roi,
+.vivo .rb-ss-col.grad-max .rb-ss-uptime b {
+  color: #141414;
+}
+.vivo .rb-ss-col.grad-max .rb-ss-cifra { color: #c93a12; }
+
+.vivo .rb-ss-col.grad-max .rb-accento,
+.vivo .rb-ss-col.grad-max .rb-ss-live,
+.vivo .rb-ss-col.grad-max .rb-ss-nota,
+.vivo .rb-ss-col.grad-max .rb-ss-uptime span,
+.vivo .rb-ss-col.grad-max .rb-ss-stack li,
+.vivo .rb-ss-col.grad-max .rb-ss-piede > .sv-mono,
+.vivo .rb-ss-col.grad-max .rb-ss-passi li::before {
+  color: rgba(20, 20, 20, .7);
+}
+.vivo .rb-ss-col.grad-max .rb-ss-live::before { background: rgba(20, 20, 20, .7); }
+.vivo .rb-ss-col.grad-max .rb-ss-stack li + li::before { color: rgba(20, 20, 20, .4); }
+
+.vivo .rb-ss-col.grad-max .rb-ss-lista li::before { color: #141414; }
+
+.vivo .rb-ss-col.grad-max .rb-link { color: #141414; border-bottom-color: rgba(20, 20, 20, .35); }
+.vivo .rb-ss-col.grad-max .rb-link:hover,
+.vivo .rb-ss-col.grad-max .rb-link:focus-visible { border-bottom-color: var(--sv-orange); }
+
+/* «Prenota ora» (colonna Brain) resta arancio/testo bianco: bordo ink per staccare dall'angolo arancio del fondo */
+.vivo .rb-ss-col.grad-max .rb-btn { border: 1px solid rgba(20, 20, 20, .55); }
+
+/* ============================================================================
+   H2 — LE 3 TESSERE CTA (cta-prodotto.tsx): riempite con --grad-max, testo ink (all. 13-15).
+   ::before/::after di .cp-card sono già i due fori fisici (slot in alto, foro in basso): la grana passa
+   da un elemento vero, .cp-fondo, aggiunto nel componente — niente collisione di pseudo-elementi.
+   ============================================================================ */
+.vivo .cp-card {
+  background: var(--grad-max);
+  color: #141414;
+  border: 1px solid rgba(0, 0, 0, .3);
+}
+.vivo .cp-fondo {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none; border-radius: inherit;
+  opacity: .30; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch' seed='4'/><feColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0.7 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+/* il foro in alto (slot) resta scuro, sopra la grana e sopra il testo */
+.vivo .cp-card::before,
+.vivo .cp-card::after { z-index: 4; }
+.vivo .cp-card-testa,
+.vivo .cp-card-lista,
+.vivo .cp-card-piede { position: relative; z-index: 1; }
+
+.vivo .cp-card-testa { color: rgba(20, 20, 20, .7); border-bottom-color: rgba(0, 0, 0, .25); }
+.vivo .cp-card-testa b { color: #141414; }
+.vivo .cp-card-lista li { color: #141414; }
+.vivo .cp-card-lista li::before { color: #c93a12; }
+.vivo .cp-card-piede { color: rgba(20, 20, 20, .7); border-top-color: rgba(0, 0, 0, .25); }
+
+/* ============================================================================
+   L1 — CATENE (cta-prodotto.tsx + qui): via il laccio (lo <span class="cp-laccio"> è stato tolto dal
+   componente), la tessera pende da due catenelle agganciate all'ultima lettera tonda della seconda
+   parola del titolo (FACTORY → «O», BRAIN → «A», span .cp-aggancio nel componente). La geometria delle
+   catene è calcolata a runtime (getBoundingClientRect) e disegnata in <svg class="cp-catene"> dentro
+   .cp-wrap: qui solo lo spazio, i due fori nuovi e l'anello del gancio sulla lettera.
+   ============================================================================ */
+.vivo .cp-scena { padding-top: 28px; margin-top: 34px; }
+
+.vivo .cp-aggancio { position: relative; display: inline-block; }
+.vivo .cp-aggancio::after {
+  content: ""; position: absolute; left: 50%; bottom: -.06em; transform: translateX(-50%);
+  width: .16em; height: .16em; min-width: 7px; min-height: 7px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f2f2f4, #9a9aa0 55%, #45454a);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .7);
+}
+
+.vivo .cp-catene { position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: visible; }
+
+.vivo .cp-foro {
+  position: absolute; top: 10px; width: 9px; height: 9px; border-radius: 50%;
+  background: #050505; box-shadow: inset 0 1px 2px rgba(0, 0, 0, .75); z-index: 4;
+}
+.vivo .cp-foro-sx { left: 18px; }
+.vivo .cp-foro-dx { right: 18px; }
+.vivo .cp-foro-mid { left: 50%; transform: translateX(-50%); display: none; }
+
+@media (max-width: 640px) {
+  .vivo .cp-foro-sx,
+  .vivo .cp-foro-dx { display: none; }
+  .vivo .cp-foro-mid { display: block; }
+}

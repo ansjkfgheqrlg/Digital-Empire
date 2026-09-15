@@ -29,6 +29,10 @@ import { FinalOffer } from "@/components/sections/final-offer";
 import { AboutStory } from "@/components/sections/about-story";
 // Sezioni AGGIUNTE il 2026-09-12 (ordine di Max: solo aggiungere, mai modificare l'esistente)
 import { Specchio } from "@/sezioni-aggiunte/specchio";
+// Sezioni AGGIUNTE il 2026-09-15 (dossier 41, scagnozzo gamma): copy generico v2, sostituiscono ListenUp/Audience
+// di giugno da vista (0 righe toccate nei loro file, nascoste da f6-copy.css). Copy: brief/COPY-F6-gamma.md.
+import { AscoltaBeneV2 } from "@/sezioni-aggiunte/ascolta-bene-v2";
+import { AudienceV2 } from "@/sezioni-aggiunte/audience-v2";
 import { ProveVere } from "@/sezioni-aggiunte/prove-vere";
 import { CosaOttieni } from "@/sezioni-aggiunte/cosa-ottieni";
 // Sezioni AGGIUNTE il 2026-09-13 (Dossier 38 v2, Atto I): la firma (null senza ritratto) e il rail dei fatti
@@ -83,12 +87,14 @@ export default function Home() {
       <VslV2 />
       <ScienceStats />
       <Audience />
+      <AudienceV2 />
       <Problems />
       <FraseBarrata />
       <Specchio />
       <CompetitorsV2 />
       <CompetitorVivo />
       <ListenUp />
+      <AscoltaBeneV2 />
       <StoriaPreventivi />
       <PrimaDopo />
       <div className="divider-silver-orange" aria-hidden="true" />

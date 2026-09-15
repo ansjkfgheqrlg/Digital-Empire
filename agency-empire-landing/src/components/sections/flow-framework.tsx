@@ -64,6 +64,24 @@ export function FlowFramework() {
               improvvisazione: un processo testato su decine di automazioni reali.
             </p>
           </Reveal>
+          {/* AGGIUNTA G2 (dossier 41, ordine di Max 15/09) — sotto il sottotitolo, una freccia sottile
+              ferma che scende verso il basso-destra fino a una nota, sullo spazio vuoto a destra della
+              colonna (il gutter della section, visibile solo da 1024px). Solo riga aggiunta: nessuna riga
+              di giugno toccata. Testo in brief/COPY-F6-beta.md §G2. CSS: f6-frecce.css (.fl-nota*). */}
+          <div className="fl-nota" aria-hidden="true">
+            <svg className="fl-nota-svg" viewBox="0 0 60 56" focusable="false">
+              <defs>
+                <marker id="fl-nota-punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#fb4604" />
+                </marker>
+              </defs>
+              <path d="M4,2 C24,2 40,30 52,48" fill="none" stroke="#fb4604" strokeWidth="1.3" markerEnd="url(#fl-nota-punta)" />
+            </svg>
+            <p className="fl-nota-testo">
+              Questo è un framework generico e sintetico: serve a far capire, in modo vago, come lavoriamo.
+              Ogni lavoro è personalizzato e diverso — F.L.O.W. è uno slogan, non il progetto.
+            </p>
+          </div>
         </div>
 
         <div className="relative">

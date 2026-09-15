@@ -1,1 +1,134 @@
 /* f6-frecce.css — F6 (dossier 41, ordini di Max 15/09). Importato DOPO f5-*.css: vince per ordine. */
+
+/* ============================================================================
+   B1 — «Tre sistemi» (vsl-v2.tsx, funzione FrecciaNota): sostituisce l'AGGIUNTA
+   F5 (.ra-freccia-nota/.ra-freccia-svg/.ra-nota-testo, ora orfane — restano nel
+   file ma non trovano più elementi). Tre frecce DIVERSE, una per card: la card
+   ha già overflow:visible da f5-frecce.css (.ra-nodo.grad-max). Ogni freccia
+   parte 8px fuori dal bordo della card (mai a contatto); la nota sta 8px dalla
+   punta. Mobile (<768): tutte "dal basso", ordine di Max.
+   ============================================================================ */
+.vivo .ra-nodi { margin-top: 200px; margin-bottom: 180px; }
+
+.vivo .ra-fn { position: absolute; z-index: 2; pointer-events: none; }
+.vivo .ra-fn-arrow { position: absolute; display: block; overflow: visible; }
+.vivo .ra-fn-nota {
+  position: absolute; margin: 0;
+  font-family: var(--font-mono, ui-monospace, monospace); font-size: 12.5px; line-height: 1.5;
+  letter-spacing: .01em; color: var(--sv-silver);
+}
+
+/* --- card 1 (Outreach) · sale dall'angolo alto-destro, 8px fuori, verso l'alto-destra --- */
+.vivo .ra-fn--top { right: 0; bottom: 100%; width: 0; height: 0; }
+.vivo .ra-fn--top .ra-fn-arrow--top { right: -8px; bottom: 8px; width: 38px; height: 96px; }
+.vivo .ra-fn--top .ra-fn-nota { right: -8px; bottom: 112px; width: 190px; text-align: right; }
+.vivo .ra-fn--top .ra-fn-arrow--mobile { display: none; }
+
+/* --- card 2 (Content) · scende dal centro del bordo inferiore, 8px fuori, più lunga e visibile --- */
+.vivo .ra-fn--bottom { left: 50%; top: 100%; width: 0; height: 0; }
+.vivo .ra-fn--bottom .ra-fn-arrow--bottom { left: 0; top: 8px; width: 24px; height: 84px; transform: translateX(-50%); }
+.vivo .ra-fn--bottom .ra-fn-nota { left: 0; top: 100px; width: 210px; transform: translateX(-50%); text-align: center; }
+
+/* --- card 3 (Second Brain) · sotto i 1600px il margine di pagina non basta per la nota a destra
+   (dichiarato nel piano, dossier 41 blocco B1): di default usa lo stesso schema "sotto" della card 2 --- */
+.vivo .ra-fn--right { left: 50%; top: 100%; width: 0; height: 0; }
+.vivo .ra-fn--right .ra-fn-arrow--right { display: none; }
+.vivo .ra-fn--right .ra-fn-arrow--bottom { left: 0; top: 8px; width: 24px; height: 84px; transform: translateX(-50%); }
+.vivo .ra-fn--right .ra-fn-nota { left: 0; top: 100px; width: 210px; transform: translateX(-50%); text-align: center; }
+
+/* --- card 3, da 1600px in su: esce dal bordo destro a metà altezza (8px fuori), sale verso l'alto-destra --- */
+@media (min-width: 1600px) {
+  .vivo .ra-fn--right { left: 100%; right: auto; top: 50%; bottom: auto; }
+  .vivo .ra-fn--right .ra-fn-arrow--right { display: block; left: 8px; top: -58px; width: 90px; height: 66px; }
+  .vivo .ra-fn--right .ra-fn-arrow--bottom { display: none; }
+  .vivo .ra-fn--right .ra-fn-nota {
+    left: 106px; top: -66px; width: 210px; transform: none; text-align: left; max-width: 24ch;
+  }
+}
+
+@media (max-width: 767px) {
+  .vivo .ra-nodi { margin-top: 0; margin-bottom: 0; row-gap: 170px; }
+  .vivo .ra-nodi > li:last-child { margin-bottom: 170px; }
+
+  .vivo .ra-fn--top { left: 50%; right: auto; top: 100%; bottom: auto; }
+  .vivo .ra-fn--top .ra-fn-arrow--top { display: none; }
+  .vivo .ra-fn--top .ra-fn-arrow--mobile { display: block; left: 0; top: 8px; width: 16px; height: 30px; transform: translateX(-50%); }
+  .vivo .ra-fn--top .ra-fn-nota { right: auto; left: 0; bottom: auto; top: 46px; width: 210px; transform: translateX(-50%); text-align: center; }
+}
+
+/* ============================================================================
+   D1+D2+D3 — Frase barrata (frase-barrata.tsx): la nota della smorfia si aggancia
+   alla punta della freccia (8px sotto, allineata a sinistra alla x della punta);
+   testo nuovo con i numeri da FATTI; l'«= Ovvero» si sposta dentro l'h2, appeso a
+   «senza di te.» sulla stessa riga se c'è spazio (flusso naturale, nessuna media
+   query). La riga barrata torna sola: .fb-barrata perde il layout flex di F4.
+   ============================================================================ */
+.vivo .fb-barrata.fb-barrata-sola { display: block; }
+
+.vivo .d-freccia-wrap { position: relative; height: 0; margin-top: 10px; }
+.vivo .d-freccia-svg { position: absolute; top: 0; left: 20px; width: 50px; height: 50px; overflow: visible; }
+.vivo .d-freccia-nota {
+  position: absolute; top: 52px; left: 54px; margin: 0; width: 172px;
+  font-family: var(--font-mono, ui-monospace, monospace); font-size: 12px; line-height: 1.5;
+  color: var(--sv-silver); text-align: left;
+}
+
+.vivo .fb-vera { max-width: 30ch; }
+.vivo .fb-ovvero { font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-size: 21px; margin-left: 2px; }
+
+@media (min-width: 768px) {
+  #frase-barrata.fb { padding-bottom: 360px; }
+}
+@media (max-width: 767px) {
+  .vivo .d-freccia-wrap { position: static; height: auto; margin: 10px 0 0; display: flex; flex-direction: column; align-items: center; }
+  .vivo .d-freccia-svg { position: static; width: 32px; height: 32px; }
+  .vivo .d-freccia-nota { position: static; margin: 8px 0 0; width: 220px; text-align: center; }
+}
+
+/* ============================================================================
+   G2 — F.L.O.W. (flow-framework.tsx): sotto il sottotitolo, una freccia sottile
+   che scende un po' verso il basso-destra fino a una nota, su spazio vuoto (a
+   destra della colonna max-w-3xl c'è il gutter della section). Visibile solo
+   dove il gutter è abbastanza largo (≥1024px) per non intersecare nulla.
+   ============================================================================ */
+.vivo .fl-nota { position: absolute; top: 100%; left: 100%; width: 280px; margin-left: 8px; display: none; pointer-events: none; z-index: 2; }
+@media (min-width: 1024px) {
+  .vivo .fl-nota { display: block; }
+}
+.vivo .fl-nota-svg { display: block; width: 60px; height: 56px; overflow: visible; }
+.vivo .fl-nota-testo {
+  margin: 8px 0 0 8px; max-width: 34ch;
+  font-family: var(--font-mono, ui-monospace, monospace); font-size: 12.5px; line-height: 1.5;
+  letter-spacing: .01em; color: var(--sv-silver);
+}
+
+/* ============================================================================
+   I1 — Service #02 (service-deep.tsx, ContentDeep, blocco nostro .c2b-freccia*):
+   la freccia parte 10px a destra del badge e sale più lunga (≈120px) con
+   semicurva; la nota (14-15px, max-width 240) si ancora al bordo destro della
+   colonna, con aria dal badge e dal testo. Deve stare dentro la section: il
+   padding-top di scala.css (72px) non basta, lo alziamo SOLO per questa sezione
+   (stesso hook :has() già usato da F4 per .c2-freccia, mai toccato scala.css).
+   ============================================================================ */
+@media (min-width: 768px) {
+  main > section.bg-grey:has(.c2b-freccia) { padding-top: 250px; }
+}
+.c2b-freccia {
+  position: absolute; top: -210px; right: 0; left: 0; width: auto; height: 0;
+  display: block; flex-direction: unset; align-items: unset; gap: 0; text-align: left;
+  z-index: 2; pointer-events: none;
+}
+.c2b-freccia svg { overflow: visible; }
+.c2b-freccia-desktop { display: block; position: absolute; left: 300px; top: 0; width: 130px; height: 100px; margin: 0; }
+.c2b-freccia-mobile { display: none; }
+.c2b-freccia-testo {
+  position: absolute; right: 0; top: 4px; margin: 0; width: 240px; max-width: 240px;
+  font-family: var(--font-serif, Georgia, serif), Georgia, serif; font-style: italic; font-weight: 400;
+  font-size: 15px; line-height: 1.5; color: #6f6a62; text-align: left;
+}
+@media (max-width: 767px) {
+  .c2b-freccia { position: static; margin: 0 0 18px; display: flex; align-items: flex-start; gap: 10px; height: auto; text-align: left; }
+  .c2b-freccia-desktop { display: none; }
+  .c2b-freccia-mobile { display: block; position: static; width: 22px; height: 44px; margin-top: 4px; flex-shrink: 0; }
+  .c2b-freccia-testo { position: static; max-width: none; width: auto; font-size: 14px; }
+}
