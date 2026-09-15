@@ -143,6 +143,16 @@ def main() -> int:
             nome = cap if len(parti) == 1 else "%s-%s" % (cap, lettere[i])
             fonti = {}
             for a in parte:
+                if a["run"].startswith("DE-"):
+                    # materiale interno: la fonte e' il file citato nell'atomo stesso
+                    percorso = re.split(r"\s*[§#]\s*|\s+\(", a["fonte"] or "", 1)[0].strip()
+                    if percorso:
+                        assoluto = percorso if os.path.isabs(percorso) else os.path.join(REPO, percorso)
+                        if os.path.exists(assoluto):
+                            fonti.setdefault(a["run"], [])
+                            if assoluto not in fonti[a["run"]]:
+                                fonti[a["run"]].append(assoluto)
+                    continue
                 if a["run"] not in fonti:
                     fonti[a["run"]] = fonti_di(a["run"], a["file_sorgente"])
             fascicolo = {

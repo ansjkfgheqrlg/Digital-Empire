@@ -130,6 +130,26 @@ body::before {
   color:var(--orange); margin-right:6px; font-size:9px;
 }
 
+/* --- il riferimento all'atomo, in linea: la prova della fonte ------------ */
+.kref {
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:6.5px; font-weight:600;
+  letter-spacing:0.04em; color:var(--orange); vertical-align:super; line-height:0;
+  margin-left:1px; white-space:nowrap;
+}
+
+/* --- appendice: l'indice degli atomi, compatto ---------------------------- */
+.app-atomo {
+  display:grid; grid-template-columns:30mm 12mm 1fr; gap:3mm; font-size:8.5px;
+  line-height:1.45; color:var(--text-2); padding:1.6mm 0; break-inside:avoid;
+}
+.app-atomo .u { font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:7.5px; color:var(--ink); word-break:break-all; }
+.app-atomo .c { font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:7.5px; color:var(--orange); }
+.app-atomo:nth-child(odd) { background:var(--tint); }
+.sommario .voce { display:flex; gap:4mm; font-size:10px; color:var(--text-2); margin-bottom:2.6mm; break-inside:avoid; }
+.sommario .voce .c { font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:9px; color:var(--text-3); min-width:14mm; }
+.sommario .voce .p { font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:9px; color:var(--ink); margin-left:auto; }
+.sommario .libro { font-size:11px; font-weight:700; color:var(--ink); margin:6mm 0 3mm 0; }
+
 /* --- il blocco di confine: cosa fa Digital Empire su questo punto --------- */
 .de {
   margin:9mm 0 6mm 0; padding:6mm 6mm 6mm 7mm; position:relative;

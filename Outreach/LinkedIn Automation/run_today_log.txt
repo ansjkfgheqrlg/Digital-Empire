@@ -5392,4 +5392,7 @@ Traceback (most recent call last):
     return open_func(self.baseFilename, self.mode,
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'
-^C
+^C2026-09-15 09:00:13,921  ============================================================
+2026-09-15 09:00:13,921  COMMENT WARMER  2026-09-15 09:00:13
+2026-09-15 09:00:13,921  ============================================================
+2026-09-15 09:00:13,960  Commenti da fare oggi: 30 (limite: 30)
