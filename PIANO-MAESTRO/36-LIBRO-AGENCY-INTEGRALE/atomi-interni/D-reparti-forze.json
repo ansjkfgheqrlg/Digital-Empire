@@ -274,7 +274,7 @@
       "tipo": "principio",
       "contenuto": "L'ecosistema AGENCY adotta una topologia gerarchica (hierarchical) con AG-DIR alla radice e i sei coordinator di reparto sotto: la scelta serve a mantenere una catena di comando anti-drift, essenziale quando si consegna a clienti reali con SLA.",
       "fonte": "company/Ecosistemi/01-AGENCY/BACKBONE.md § 2",
-      "ancora": "delivery clienti = anti-drift, responsabilità chiare per SLA",
+      "ancora": "anti-drift, responsabilità chiare per SLA). Root: **AG-DIR** → 6 coordinator di reparto.",
       "confidenza": "osservato",
       "capitolo": "I.5",
       "peso": "supporto",
