@@ -1,3 +1,14 @@
+## 🔵 2026-09-15 — PAUSA (ordine di Max) — RIPRESA: `EMP-DIOEDIT` — CP-20260915-QV6Z
+
+Studio VSL Andrei Pascu → «Dio dell'Editing». Fasi 0-1-3 complete su tutti e 10 i VSL. **Fase 2
+(visione) in volo alla pausa**: 3 Doom Bot su Armageddon (due metà) e trio Speedrun — alla ripresa
+si misura `competitor/Andrei Pascu/vsl-study/visione/`, si tiene ciò che c'è, si rilancia ciò che
+manca col protocollo unico. Seconda ondata (altri 6 VSL) mai partita.
+
+**RIPRESA DA:** `EMP-DIOEDIT` (`company/Memory/riprese/EMP-DIOEDIT.md`).
+
+---
+
 ## 🟣 2026-09-15 — `EMP-DIOEDIT` ripreso: fasi 0-1-3 verificate complete su tutti e 10 i VSL, **Fase 2 (visione) in corso**
 
 Misurato sul disco alla ripresa: i due Doom Bot interrotti dalla pausa avevano **finito tutti e

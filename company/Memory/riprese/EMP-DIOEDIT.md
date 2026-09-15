@@ -2,7 +2,7 @@
 
 - **Aperto:** 2026-09-10 · **Stato:** APERTA (pausa chiesta da Max)
 - **Come si riprende:** dire `EMP-DIOEDIT` in una chat nuova dentro Digital Empire.
-- **Checkpoint di origine:** [CP-20260910-A6YV](../checkpoints/CP-20260910-A6YV.md)
+- **Checkpoint di origine:** [CP-20260910-A6YV](../checkpoints/CP-20260910-A6YV.md) · **ultimo:** [CP-20260915-QV6Z](../checkpoints/CP-20260915-QV6Z.md)
 - **Impianto completo (leggilo per primo):**
   `competitor/Andrei Pascu/vsl-study/PIANO-OPERATIVO-STUDIO-VSL.md`
 
@@ -25,7 +25,14 @@ Misurare sul disco, non fidarsi di questa pagina:
 ls "competitor/Andrei Pascu/vsl-study/misure/"
 ls "competitor/Andrei Pascu/vsl-study/parlato/"
 ```
-**Attenzione:** due Doom Bot erano ancora al lavoro quando è arrivata la pausa. Gli agenti non
+**Attenzione (pausa del 15/09):** tre Doom Bot di **visione** erano in volo quando è arrivata la
+pausa (Armageddon A, Armageddon B, trio Speedrun). Il loro output atteso:
+`vsl-study/visione/armageddon-home/visione-parte-A.md` e `-parte-B.md`,
+`vsl-study/visione/claude-speedrun-*/visione.md`, `vsl-study/visione/_speedrun-confronto.md`.
+Il protocollo che seguivano, da riusare identico per rilanciare: `vsl-study/visione/_PROTOCOLLO-VISIONE.md`
+(+ `scripts/colori_frame.py` per i colori in hex).
+
+**Nota della pausa precedente (10/09):** due Doom Bot erano ancora al lavoro quando è arrivata la pausa. Gli agenti non
 sopravvivono alla chiusura della chat, **ma il loro lavoro resta sul disco** — e può essere
 completo, parziale o mancante. Si guarda, non si assume. Entrambi gli script sono **rieseguibili e
 idempotenti**: `vsl-study/scripts/misura_vsl.py` e `vsl-study/scripts/parlato_misura.py`.
@@ -37,9 +44,9 @@ idempotenti**: `vsl-study/scripts/misura_vsl.py` e `vsl-study/scripts/parlato_mi
 | Fase | Cosa | Stato |
 |---|---|---|
 | **0** | Approvvigionamento dei VSL veri | ✅ **FATTO** — 10 video, 36:52, 989 MB |
-| **1** | Misura a macchina (stacchi, audio, frame) | 🔁 fatta su `armageddon-home`, gli altri da verificare |
-| **3** | Parlato con i tempi | 🔁 fatta su `armageddon-home`, gli altri da verificare |
-| **2** | Visione dei frame (Claude guarda davvero) | ⬜ non iniziata |
+| **1** | Misura a macchina (stacchi, audio, frame) | ✅ **FATTA su tutti e 10** (verificato 2026-09-15) |
+| **3** | Parlato con i tempi | ✅ **FATTA su tutti e 10** (verificato 2026-09-15) |
+| **2** | Visione dei frame (Claude guarda davvero) | 🔁 **IN CORSO alla pausa del 15/09** — 3 Doom Bot in volo su `armageddon-home` (parte A: inq. 1-134, parte B: 135-267) e sul trio `claude-speedrun-*`. **Alla ripresa: misurare `vsl-study/visione/<slug>/`** — cio' che c'e' si tiene, cio' che manca si rilancia con lo stesso protocollo. Seconda ondata mai partita: gli altri 6 VSL |
 | **4** | I tre rapporti (montaggio · psicologia · comunicazione) | ⬜ non iniziata |
 | **5** | Critica e miglioramento integrale | ⬜ non iniziata |
 | **6** | Piano dell'agente, **migliorato 5 volte** (P0→P5) | ⬜ non iniziata |
