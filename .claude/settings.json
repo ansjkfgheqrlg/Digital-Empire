@@ -118,7 +118,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode pull",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${CLAUDE_PROJECT_DIR}/scripts/empire-sync.ps1\" -Mode pull",
             "timeout": 90
           }
         ]
@@ -127,7 +127,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "py -3 scripts/emperator_boot.py",
+            "command": "py -3 \"${CLAUDE_PROJECT_DIR}/scripts/emperator_boot.py\"",
             "timeout": 20,
             "statusMessage": "EMPERATOR — dottrina integrale..."
           }
@@ -139,7 +139,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "py -3 scripts/gate_battito_hook.py",
+            "command": "py -3 \"${CLAUDE_PROJECT_DIR}/scripts/gate_battito_hook.py\"",
             "timeout": 15,
             "statusMessage": "EMPERATOR — controllo del battito..."
           }
@@ -149,7 +149,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode push",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${CLAUDE_PROJECT_DIR}/scripts/empire-sync.ps1\" -Mode push",
             "timeout": 120
           }
         ]
@@ -180,7 +180,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "py -3 scripts/emperator_hook.py",
+            "command": "py -3 \"${CLAUDE_PROJECT_DIR}/scripts/emperator_hook.py\"",
             "timeout": 15,
             "statusMessage": "EMPERATOR..."
           }
