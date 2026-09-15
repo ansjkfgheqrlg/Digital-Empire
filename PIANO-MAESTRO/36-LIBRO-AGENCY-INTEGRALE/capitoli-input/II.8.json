@@ -1,0 +1,614 @@
+{
+ "capitolo": "II.8",
+ "parte": "II.8",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Lead magnet e cattura del contatto",
+ "libro": "II",
+ "libro_titolo": "Trovare clienti",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "8Pf7d57Q0Jk::KA-03",
+  "8Pf7d57Q0Jk::KA-14",
+  "j4UInmM9kKA::KA-01",
+  "j4UInmM9kKA::KA-02",
+  "j4UInmM9kKA::KA-03",
+  "j4UInmM9kKA::KA-05",
+  "j4UInmM9kKA::KA-06",
+  "j4UInmM9kKA::KA-07",
+  "j4UInmM9kKA::KA-08",
+  "j4UInmM9kKA::KA-09",
+  "j4UInmM9kKA::KA-10",
+  "j4UInmM9kKA::KA-11",
+  "j4UInmM9kKA::KA-12",
+  "j4UInmM9kKA::KA-13",
+  "j4UInmM9kKA::KA-14",
+  "j4UInmM9kKA::KA-15",
+  "j4UInmM9kKA::KA-16",
+  "j4UInmM9kKA::KA-17",
+  "k_DXsUCIkr8::KA-05",
+  "max18-v09-NmoOZVTrTXA::KA-118",
+  "max18-v09-NmoOZVTrTXA::KA-119",
+  "max18-v09-NmoOZVTrTXA::KA-120",
+  "outfunnel-lezione-09::KA-01",
+  "outfunnel-lezione-09::KA-02",
+  "outfunnel-lezione-09::KA-03",
+  "outfunnel-lezione-09::KA-04",
+  "outfunnel-lezione-09::KA-05",
+  "outfunnel-lezione-09::KA-06",
+  "outfunnel-lezione-17::KA-01",
+  "outfunnel-lezione-17::KA-02",
+  "outfunnel-lezione-17::KA-03"
+ ],
+ "fonti_integrali": {
+  "8Pf7d57Q0Jk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/8Pf7d57Q0Jk\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\8Pf7d57Q0Jk\\contenuto-integrale.md"
+  ],
+  "j4UInmM9kKA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/j4UInmM9kKA\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\j4UInmM9kKA\\contenuto-integrale.md"
+  ],
+  "k_DXsUCIkr8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/k_DXsUCIkr8\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\k_DXsUCIkr8\\contenuto-integrale.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-09": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-09\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-17": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-17\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "8Pf7d57Q0Jk::KA-03",
+   "peso": "supporto",
+   "tipo": "Framework / Diagnosi lead magnet debole",
+   "contenuto": "Funnel Vasco: ads->optin->call->chiusura. Lead magnet = masterclass generica. Diagnosi: se il funnel gia' genera ROAS ~15 con lead magnet mediocre, uno piu' specifico moltiplicherebbe ulteriormente il risultato.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~01:30",
+   "frame": "frame-050",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-03",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~01:30"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-14",
+   "peso": "portante",
+   "tipo": "Framework / Lead magnet problema adiacente",
+   "contenuto": "Alternativa alla masterclass generica: risolvere gratis un problema imprenditoriale ADIACENTE reale (es. mancanza idee contenuti social) con risorsa concreta. Meccanismo: crea 'feedback loop' di fiducia (se il consiglio gratis funziona, il prospect crede di piu' all'offerta a pagamento). Beneficio collaterale: confonde i competitor che copiano solo le ads dirette.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~12:30",
+   "frame": "frame-400",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-14",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~12:30"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-01",
+   "peso": "portante",
+   "tipo": "Lead magnet / Template Canva personalizzabile",
+   "contenuto": "Idea #1: creare template Canva pronti per il settore del cliente target (per un SMM: template per i piatti di un ristorante, template per le schede di una palestra), consegnati come file modificabile in cambio dell'email. Applicabile anche a designer generici, non solo SMM. Andrei dichiara che in Italia lo fanno pochissimi.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:00:05",
+   "frame": "frame-001",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-01",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:00:05"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-02",
+   "peso": "portante",
+   "tipo": "Lead magnet / Challenge a step (7-14 giorni)",
+   "contenuto": "Idea #2: sfidare il prospect a seguire un percorso a step (7 giorni di allenamento da 20 minuti, 7 ricette per la cena perfetta) prima di proporre l'acquisto alla fine. Meccanismo: chi ha gia' iniziato un percorso e' piu' motivato a continuarlo rispetto a chi deve partire da zero, e funziona in modo particolare dove va installata un'abitudine. Usabile anche come trip wire a pagamento (pochi euro). Andrei la definisce devastante se rispetta le 5 regole finali.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:01:25",
+   "frame": "frame-041",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-02",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:01:25"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-03",
+   "peso": "portante",
+   "tipo": "Lead magnet / Calcolatrice custom generata con AI",
+   "contenuto": "Idea #3: costruire una mini-applicazione calcolatrice (fattibile con Claude/ChatGPT/Gemini senza saper programmare) che stima un beneficio quantitativo personalizzato dagli input del prospect (quante ore lavori, quanto guadagni al mese -> quanto tempo e denaro risparmieresti). Esempio esterno citato: Motion Calendar. Caso proprio dichiarato: cliente nel settore formazione per autori, con una calcolatrice piu' complessa.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:03:15",
+   "frame": "frame-096",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-03",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:03:15"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-05",
+   "peso": "portante",
+   "tipo": "Lead magnet / Webinar strutturato",
+   "contenuto": "Idea #4: i webinar non sono morti, lo sono i webinar mediocri. Critica esplicita alla registrazione schermo con 'ehm' e racconto della propria vita. Struttura corretta mostrata: lo script E' la presentazione, slide che scorrono molto velocemente (~400 slide in un singolo webinar) invece di una slide statica al minuto. Esempio applicativo per interior designer: 'Scopri qual e' lo stile adatto alla tua casa' con i 5 stili piu' comuni spiegati per personalita', chiusura con proposta di call.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:07:15",
+   "frame": "frame-256",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-05",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:07:15"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-06",
+   "peso": "supporto",
+   "tipo": "Lead magnet / Swipe file",
+   "contenuto": "Idea #5: raccogliere e distribuire una collezione di esempi di alta qualita' nel proprio dominio (un copywriter distribuisce i migliori copy passati; a un pubblico di video editor si danno esempi di editing eccellente). Doppio effetto: utilita' pratica diretta piu' posizionamento come provider di soluzioni.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:08:35",
+   "frame": "frame-325",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-06",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:08:35"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-07",
+   "peso": "portante",
+   "tipo": "Framework / Ciclo del rinforzo",
+   "contenuto": "Framework trasversale a tutte le 10 idee: si compra quando (1) si ha un problema, (2) si e' convinti che il prodotto lo risolva, (3) ci si fida di chi vende. Chi ha appena scoperto il brand non si fida ancora: il lead magnet deve CHIUDERE un ciclo del rinforzo dando una soluzione concreta e facendo percepire progresso reale. Un lead magnet che non chiude il ciclo equivale a budget advertising sprecato, a prescindere dal volume di lead raccolti.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:09:30",
+   "frame": "",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-07",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:09:30"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-08",
+   "peso": "portante",
+   "tipo": "Lead magnet / Ebook breve (checklist, cheat guide)",
+   "contenuto": "Idea #6: ebook qui NON significa documento lungo stile libro. Anti-pattern esplicito: se il contenuto sarebbe da 10+ pagine scritte, cancellare l'idea e farci un webinar sopra, perche' nessuno legge 10 pagine di uno sconosciuto. Significa manualetto, checklist o cheat guide breve; esempio citato: un Google Sheets con la checklist delle azioni da fare quando si pubblicano ads su Ads Manager. Criterio: utilita' alta e sforzo di utilizzo basso, altrimenti il lead magnet e' sprecato anche se ben scritto.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:10:55",
+   "frame": "frame-400",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-08",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:10:55"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-09",
+   "peso": "portante",
+   "tipo": "Lead magnet / GPT o agent custom su WhatsApp",
+   "contenuto": "Idea #7 (numerata a voce, assente dai titoli ufficiali dei capitoli): creare un GPT/agent con istruzioni specifiche per la propria categoria, opzionalmente addestrato per qualificare il lead e spingerlo a fissare la call (diventa un mezzo venditore). Consiglio operativo forte: distribuirlo su WhatsApp invece di richiedere ChatGPT Plus, perche' azzera l'attrito d'accesso (WhatsApp ce l'hanno tutti).",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:13:00",
+   "frame": "",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-09",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:13:00"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-10",
+   "peso": "portante",
+   "tipo": "Lead magnet / Quiz con punteggio segmentato a 3 livelli",
+   "contenuto": "Idea #8: quiz 'quante ne sai su X' (per un agente immobiliare: i fattori che influenzano il prezzo di una casa) che produce un punteggio collegato a un video di risposta segmentato per livello, basso/medio/alto, pattern a 3 livelli che Andrei dichiara di usare sistematicamente. Ogni livello propone un CTA calibrato sulla competenza percepita. Calibrazione onesta dello stesso Andrei: il quiz e' tra i format piu' DEBOLI per chiudere il ciclo del rinforzo, ma utile su argomenti grandi per abbassare la soglia d'ingresso. Corollario: si possono impilare piu' livelli di lead magnet (optin 1, optin 2 piu' potente, poi la call).",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:13:20",
+   "frame": "frame-441",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-10",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:13:20"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-11",
+   "peso": "supporto",
+   "tipo": "Lead magnet / Source files di progetto",
+   "contenuto": "Idea #9: distribuire i file sorgente di un progetto creativo (PSD di Photoshop, progetti After Effects/Premiere con intro e animazioni). Funziona specificamente su audience creative e tecniche; citato come pattern comune e ad alta efficacia in quel segmento, alternativa diretta al solito ebook da 50 pagine che nessuno legge.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:14:45",
+   "frame": "frame-460",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-11",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:14:45"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-12",
+   "peso": "portante",
+   "tipo": "Lead magnet / Liste e raccolte curate (caso reale con numeri)",
+   "contenuto": "Idea #10: distribuire una raccolta curata (cartella di canzoni virali per Instagram e TikTok) con riscatto a bassissimo attrito. Caso reale dichiarato: DM automatico attivato scrivendo la keyword 'cartella' nei commenti, circa 2000 follower e circa 2000 cartelle inviate, zero euro di ads. Andrei stima che chiedendo anche nome, cognome e telefono il volume si sarebbe dimezzato (1000 o 500) restando comunque alto. Principio: reward alto piu' sforzo richiesto minimo uguale volume di lead altissimo anche senza budget.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:15:22",
+   "frame": "frame-486",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-12",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:15:22"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-13",
+   "peso": "portante",
+   "tipo": "Regola 1 / Se devi dare valore, dai valore",
+   "contenuto": "Regola 1: la qualita' del lead magnet gratuito viene letta dal prospect come proxy della qualita' del prodotto a pagamento: se fa schifo la roba free, si assume che faccia schifo anche quella a pagamento. Il fatto che sia gratis non e' un'attenuante agli occhi di chi non ti conosce, perche' il lead magnet e' l'unico dato che ha su di te. Se prometti di insegnare come fare 10.000 euro al mese, devi insegnarlo davvero.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:16:15",
+   "frame": "frame-486",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-13",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:16:15"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-14",
+   "peso": "portante",
+   "tipo": "Regola 2 / Formato piu' intrattenente, mai la scorciatoia",
+   "contenuto": "Regola 2: scegliere sempre il formato piu' intrigante e intrattenente, non quello piu' comodo da produrre (meglio un webinar editato bene di un ebook lungo scritto male; se fai il webinar, editalo e investici). Principio generale dichiarato: piu' te la fai facile quando crei il contenuto, piu' ti rendi la vita difficile dopo. La scorciatoia non elimina il costo, lo sposta sulle conversioni future. Prova portata a supporto: 3700 ordini sul sito in organico con zero euro di ads.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:17:00",
+   "frame": "",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-14",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:17:00"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-15",
+   "peso": "portante",
+   "tipo": "Regola 3 / Mostra l'informazione, vendi l'implementazione",
+   "contenuto": "Regola 3, attribuita esplicitamente ad Alex Hormozi: dare gratis l'informazione e la diagnosi (perche' non riesci a perdere grasso; i 10 errori comuni di gestione aziendale) e vendere a pagamento l'implementazione (la scheda, la dieta, la consulenza operativa). Risolve la paura di dire troppo: il valore venduto e' l'esecuzione, non il sapere. Effetto secondario: permette di essere generosi senza limiti nel contenuto gratuito, il che rinforza il ciclo del rinforzo (KA-07).",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:18:00",
+   "frame": "",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-15",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:18:00"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-16",
+   "peso": "portante",
+   "tipo": "Regola 4 / Equilibrio tra valore dato e dati richiesti",
+   "contenuto": "Regola 4: la richiesta di informazioni personali nell'optin deve essere PROPORZIONATA al valore percepito del lead magnet. Una calcolatrice con tre campi che chiede nome, cognome, telefono, indirizzo ed eta' crea uno squilibrio che uccide la conversione. Non e' 'chiedi il minimo assoluto': un lead magnet piu' sostanzioso puo' legittimamente giustificare una richiesta piu' corposa, a patto di venderla nell'optin.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:19:00",
+   "frame": "",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-16",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:19:00"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-17",
+   "peso": "portante",
+   "tipo": "Regola 5 / L'optin va trattata come una sales page",
+   "contenuto": "Regola 5: la pagina di opt-in va scritta con lo stesso impegno di una sales page vera (anche mille parole), non come un form minimale dato per scontato, perche' si sta chiedendo a uno sconosciuto di cedere informazioni private, operazione che richiede persuasione quanto una vendita. Corollario strutturale esplicito: l'optin viene PRIMA della sales page nel funnel, quindi se l'optin e' rotta la sales page non riceve mai traffico sufficiente e non puo' compensare a valle, per quanto sia scritta bene. Investi nell'optin tanto quanto investiresti nella sales page.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:19:40",
+   "frame": "frame-616",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-17",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:19:40"
+    }
+   ]
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-05",
+   "peso": "supporto",
+   "tipo": "Funnel / Reveal parziale come lead magnet",
+   "contenuto": "Mostra solo un estratto (sezione 'se incontra un altro broker'), poi offre di inviare tutte le pagine e rimanda a un altro video - reveal parziale come meccanismo di lead generation.",
+   "ancora": "",
+   "fonte": "k_DXsUCIkr8#00:00:40",
+   "frame": "frame-016,017,018,019",
+   "run": "k_DXsUCIkr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "k_DXsUCIkr8::KA-05",
+     "run": "k_DXsUCIkr8",
+     "fonte": "k_DXsUCIkr8#00:00:40"
+    }
+   ]
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-118",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esempio concreto di lead magnet pubblicato live: un \"ROI Calculator\" per agenti vocali (roi-voice-ai-calculator.vercel.app) che chiede volume mensile di chiamate, durata media chiamata, stipendio medio annuo del personale e ricavo medio per lavoro, per stimare il risparmio annuo ottenibile passando a un agente vocale AI.",
+   "ancora": "Calculate Your ROI ... See how much your business could save by switching to a Voice AI Agent that answers calls 24/7",
+   "fonte": "NmoOZVTrTXA#52:54 (sito live roi-voice-ai-calculator.vercel.app) + voce 52:32-52:56",
+   "frame": "frame-0530.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-117",
+     "tipo": "esempio-di",
+     "perche": "è un esempio concreto di progetto pubblicato su Vercel"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-119",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Con input di esempio (500 chiamate/mese, durata media 3 minuti, stipendio medio annuo $40.000, ricavo medio per lavoro $5.000), il calcolatore ROI per agenti vocali stima: risparmio netto annuo $160.300, risparmio sul costo del personale $28.000, profitto aggiuntivo da chiamate perse recuperate $135.000, costo della soluzione AI $2.700, ROI del 5937%, tempo di recupero dell'investimento (payback period) di 6 giorni.",
+   "ancora": "By switching to a Voice AI Agent, you could save $160,300/year ... ROI 5937% ... PAYBACK PERIOD 6 days",
+   "fonte": "NmoOZVTrTXA#53:00 (sezione risultati del ROI calculator) + voce 52:56-53:06",
+   "frame": "frame-0531.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-118",
+     "tipo": "quantifica",
+     "perche": "fornisce i numeri concreti prodotti dal calcolatore descritto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-120",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Le stime del ROI calculator per agenti vocali si basano su quattro assunzioni dichiarate esplicitamente in pagina: tasso di automazione delle chiamate al 70%, conversione da chiamata persa a prenotazione al 15%, margine di profitto sui lavori al 30%, costo dell'AI di $0,15 al minuto per tutte le chiamate.",
+   "ancora": "Assumptions: 70% call automation rate · 15% missed-call-to-booking conversion · 30% profit margin on jobs · $0.15/min AI cost",
+   "fonte": "NmoOZVTrTXA#53:00 (nota \"Assumptions\" a piè pagina del ROI calculator) + voce 52:56-53:06",
+   "frame": "frame-0531.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-119",
+     "tipo": "motiva",
+     "perche": "sono le assunzioni che generano i numeri di risparmio e ROI dichiarati"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "10 tipologie di lead magnet catalogate: PDF gratuito, libro fisico con spedizione a pagamento, checklist, swipe file, webinar, free trial, quiz interattivo, toolkit/calcolatore, infografica/report, free assessment.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-09#intero-riassunto",
+   "frame": "",
+   "run": "outfunnel-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Il PDF gratuito ha un limite pratico: se troppo lungo (es. 100 pagine) l'utente non lo legge, riducendo la conversione — deve dare valore reale ma restare conciso e \"consumabile\".",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-09#\"pdf-gratuiti\"",
+   "frame": "",
+   "run": "outfunnel-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Il libro fisico con spedizione a pagamento converte MEGLIO del PDF gratuito per un motivo psicologico esplicito: chi ha già \"aperto il portafoglio\" anche per pochi euro ha più probabilità di acquistare in seguito — stesso principio della soglia psicologica del Tripwire (Lezione 6/11/20).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-09#\"libri-fisici-con-spedizione-a-pagamento\"",
+   "frame": "",
+   "run": "outfunnel-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Quiz interattivi: due sotto-tipi distinti — divertenti/informativi (engagement) vs di selezione prodotto (riducono la confusione, es. \"Quale MacBook fa per te?\").",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-09#\"quiz-interattivi\"",
+   "frame": "",
+   "run": "outfunnel-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-05",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Concetto trasversale ripetuto 3 volte nel corso (qui, Lezione 6, Lezione 20): pagare anche 1€ è un segnale comportamentale forte — chi paga poco oggi ha più probabilità di pagare molto domani.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-09#\"concetti-chiave\"",
+   "frame": "",
+   "run": "outfunnel-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-09::KA-06",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Principio guida per la scelta del lead magnet: deve essere breve e utile (per non bloccare l'utente prima del completamento) e deve SEMPRE puntare alla raccolta email, qualunque sia il formato scelto.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-09#\"concetti-chiave\"",
+   "frame": "",
+   "run": "outfunnel-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-17::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Meccanica base: contenuto desiderato dal pubblico (report, PDF, video, guida) → l'utente inserisce l'email in un opt-in per ottenerlo → consegna doppia (redirect immediato + email di conferma con link), per evitare che problemi tecnici blocchino la consegna.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-17#\"1.-come-funziona\"",
+   "frame": "",
+   "run": "outfunnel-lezione-17",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-17::KA-02",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Blueprint a 5 step: Opt-in → Redirect istantaneo alla pagina di consegna → Email di consegna (backup) → Pagina di consegna (contenuto o video) → Email Marketing/Follow-up (nurturing, scoring, vendita).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-17#\"2.-struttura\"",
+   "frame": "",
+   "run": "outfunnel-lezione-17",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-17::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Motivazione esplicita del redirect istantaneo: evita perdita di utenti per problemi tecnici (spam, errori di digitazione email, ritardi CRM); mantiene il tasso di conversione alto perché l'esperienza continua senza interruzioni.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-17#\"3.-perché-il-redirect-istantaneo\"",
+   "frame": "",
+   "run": "outfunnel-lezione-17",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-17::KA-04",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Il lead magnet può essere qualsiasi formato (ebook, webinar, report, sconto esclusivo, quiz) — la scelta della strategia dipende dall'obiettivo finale: acquisizione contatti, lead scoring, o funnel di vendita diretta.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-17#\"4.-personalizzazione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-17",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

@@ -1,0 +1,857 @@
+{
+ "capitolo": "V.3",
+ "parte": "V.3",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Limiti dei modelli e come si aggirano",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "9CuQI0Cr4Pg::KA-09",
+  "cs2online-bonus-06::KA-05",
+  "cs2online-lezione-02::KA-08",
+  "cs2online-lezione-04::KA-04",
+  "cs2online-lezione-05::KA-03",
+  "cs2online-lezione-05::KA-04",
+  "cs2online-lezione-07::KA-05",
+  "iy13HC9M8z0::KA-03",
+  "iy13HC9M8z0::KA-04",
+  "iy13HC9M8z0::KA-06",
+  "iy13HC9M8z0::KA-11",
+  "iy13HC9M8z0::KA-12",
+  "iy13HC9M8z0::KA-13",
+  "iy13HC9M8z0::KA-14",
+  "iy13HC9M8z0::KA-15",
+  "iy13HC9M8z0::KA-16",
+  "iy13HC9M8z0::KA-17",
+  "iy13HC9M8z0::KA-18",
+  "iy13HC9M8z0::KA-19",
+  "iy13HC9M8z0::KA-21",
+  "iy13HC9M8z0::KA-22",
+  "iy13HC9M8z0::KA-23",
+  "iy13HC9M8z0::KA-24",
+  "max17-v02-beggiato-team::KA-004",
+  "max17-v02-beggiato-team::KA-006",
+  "max17-v02-beggiato-team::KA-030",
+  "max17-v02-beggiato-team::KA-033",
+  "max17-v02-beggiato-team::KA-035",
+  "max17-v06-belli-codex::KA-010",
+  "max17-v07-rizzo-prompt::KA-013",
+  "max17-v07-rizzo-prompt::KA-014",
+  "max17-v07-rizzo-prompt::KA-015",
+  "max18-v06-JTn5pqm9ecM::KA-042",
+  "max18-v06-JTn5pqm9ecM::KA-046",
+  "max18-v06-JTn5pqm9ecM::KA-048",
+  "max18-v06-JTn5pqm9ecM::KA-049",
+  "max18-v06-JTn5pqm9ecM::KA-055",
+  "max18-v06-JTn5pqm9ecM::KA-058",
+  "max18-v08-DI5aWJiFAt8::KA-113",
+  "max18-v08-DI5aWJiFAt8::KA-114"
+ ],
+ "fonti_integrali": {
+  "9CuQI0Cr4Pg": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/9CuQI0Cr4Pg\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\9CuQI0Cr4Pg\\contenuto-integrale.md"
+  ],
+  "cs2online-bonus-06": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-06\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-02\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-04": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-04\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-05": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-05\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-07": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-07\\contenuto-integrale.md"
+  ],
+  "iy13HC9M8z0": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/iy13HC9M8z0\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\iy13HC9M8z0\\contenuto-integrale.md"
+  ],
+  "max17-v02-beggiato-team": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\video-analysis.md"
+  ],
+  "max17-v06-belli-codex": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v06-belli-codex\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v06-belli-codex\\video-analysis.md"
+  ],
+  "max17-v07-rizzo-prompt": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\video-analysis.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "9CuQI0Cr4Pg::KA-09",
+   "peso": "portante",
+   "tipo": "Copywriting / Uso di AI nel processo",
+   "contenuto": "Usare ChatGPT per capire i benefici del prodotto (cosa fa, come funziona), MAI per scrivere il copy - 'non sostituisce il copywriter'. Avvertenza critica: GPT puo' sbagliare numeri e specifiche, verificare sempre con fonti reali (recensioni Amazon, recensioni YouTube, specifiche del produttore).",
+   "ancora": "",
+   "fonte": "9CuQI0Cr4Pg#0:10:52",
+   "frame": "frame-328",
+   "run": "9CuQI0Cr4Pg",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "9CuQI0Cr4Pg::KA-09",
+     "run": "9CuQI0Cr4Pg",
+     "fonte": "9CuQI0Cr4Pg#0:10:52"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-05",
+   "peso": "portante",
+   "tipo": "Pattern anti-hallucination (terza conferma)",
+   "contenuto": "Pattern anti-hallucination confermato per la TERZA volta nel run (dopo Bonus 2 KA-04 e lezione 1 principio meccanico esperto): SKILL.md 'sviluppo-preventivo' scritto per 'rifiutarsi categoricamente di procedere' se mancano documenti obbligatori (trascrizione discovery call, tabella prezzi) - non un'eccezione isolata, pattern sistematico dell'autore. SKILL.md completo trascritto verbatim nel lesson-analysis.md.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#frame-t14m00s",
+   "frame": "frame-t14m00s-skill-md-completo.jpg",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-05",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#frame-t14m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-08",
+   "peso": "portante",
+   "tipo": "Glossario / Rischio",
+   "contenuto": "Hallucination = l'AI presenta un'informazione completamente inventata come vera, con sicurezza — rischio esplicito perché 'a volte non è ovvio che sta mentendo'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#glossario-csv",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-08",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#glossario-csv"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-04",
+   "peso": "portante",
+   "tipo": "Principio / limiti AI",
+   "contenuto": "Il limite attuale dell'AI non è la capacità generale ma la gestione del back-end (database, automazioni, security) — il front-end (design visibile) è affidabile, il back-end no. Se l'app deve scalare (es. 100k utenti), raccomandato far revisionare la security da un esperto umano, 'anche a costo di pagare migliaia di euro'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-04#trascrizione:limite-ai",
+   "frame": "",
+   "run": "cs2online-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-04::KA-04",
+     "run": "cs2online-lezione-04",
+     "fonte": "cs2online-lezione-04#trascrizione:limite-ai"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-03",
+   "peso": "portante",
+   "tipo": "Regola di sicurezza / comunicazione clienti",
+   "contenuto": "Warning esplicito e ripetuto: 'controllate sempre quello che scrive l'AI, sempre' — riferito a email clienti, brief, documenti interni.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-05#trascrizione:comunicazione",
+   "frame": "",
+   "run": "cs2online-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-05::KA-03",
+     "run": "cs2online-lezione-05",
+     "fonte": "cs2online-lezione-05#trascrizione:comunicazione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-04",
+   "peso": "supporto",
+   "tipo": "Regola di sicurezza / analisi dati",
+   "contenuto": "Warning specifico su analisi dati/spreadsheet: l'AI 'tende a inventarsi cose' in questo dominio — rischio di hallucination più alto qui che in altri task citati.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-05#trascrizione:analisi-dati",
+   "frame": "",
+   "run": "cs2online-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-05::KA-04",
+     "run": "cs2online-lezione-05",
+     "fonte": "cs2online-lezione-05#trascrizione:analisi-dati"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-05",
+   "peso": "supporto",
+   "tipo": "Concetto / AI psychosis",
+   "contenuto": "Concetto 'AI psychosis' citato esplicitamente: non delegare all'AI compiti banali risolvibili 'col cervello in 2 secondi' - critica implicita all'over-reliance sull'AI.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-07#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-07::KA-05",
+     "run": "cs2online-lezione-07",
+     "fonte": "cs2online-lezione-07#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-03",
+   "peso": "supporto",
+   "tipo": "frame-video",
+   "contenuto": "Domanda core: ChatGPT puo sostituire il copywriter? Risposta breve: no. Risposta lunga: dipende dall'uso.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:00:45",
+   "frame": "frame-010.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-03",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:00:45"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-04",
+   "peso": "supporto",
+   "tipo": "test-empirico",
+   "contenuto": "Baseline GPT: genera copy generico per corso copywriting e consulenza finanziaria. Output mediocre ma strutturato. Establishes AI floor.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:01:10",
+   "frame": "frame-050.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-04",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:01:10"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-06",
+   "peso": "portante",
+   "tipo": "critica-framework",
+   "contenuto": "Paradosso GPT: questo Copy e ottimo e fantastico ma fa schifo. Copy formalmente strutturato ma sostanzialmente vuoto. Non sbagliato formalmente, sbagliato emotivamente e strategicamente.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:02:00",
+   "frame": "frame-070.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-06",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:02:00"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-11",
+   "peso": "portante",
+   "tipo": "limite-AI",
+   "contenuto": "Soffitto strutturale GPT: Prompt 2 migliora MA rimane molto generico e tornano i problemi di prima. Specificita del prompt non elimina gap strutturale AI. Il soffitto rimane anche col prompt migliore.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:04:58",
+   "frame": "frame-150.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-11",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:04:58"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-12",
+   "peso": "supporto",
+   "tipo": "limite-AI",
+   "contenuto": "Gap urgency/tempo: non ha gestito il tempo. GPT non crea naturalmente urgency, scarcity, timing. Copywriter umano inserisce pressione temporale istintivamente. Zero nel GPT output.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:05:10",
+   "frame": "frame-150.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-12",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:05:10"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-13",
+   "peso": "portante",
+   "tipo": "meta-osservazione",
+   "contenuto": "Paradosso impressione-conversione: Andrei genuinamente sorpreso da output 2, poi lo critica. La barra per impressionare un osservatore e bassa. La barra per convertire un cliente e alta. GPT supera la prima, non la seconda.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:05:20",
+   "frame": "frame-160.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-13",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:05:20"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-14",
+   "peso": "supporto",
+   "tipo": "limite-AI",
+   "contenuto": "Gap linguaggio target: AI usa linguaggio universale neutro. Copywriter umano studia come parla il target specifico, usa le loro esatte parole, espressioni, gergo. Copy che usa linguaggio del target converte meglio.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:05:48",
+   "frame": "frame-175.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-14",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:05:48"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-15",
+   "peso": "supporto",
+   "tipo": "limite-AI",
+   "contenuto": "Gap gestione obiezioni: AI non considera se una frase genera obiezioni. Copywriter anticipa e smonta obiezioni inline mentre scrive. GPT ignora questo layer completamente.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:06:00",
+   "frame": "frame-175.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-15",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:06:00"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-16",
+   "peso": "portante",
+   "tipo": "limite-AI",
+   "contenuto": "Gap creativita genuina: AI produce il centro statistico dei testi - la media ponderata di tutto il training. Non produce l'outlier creativo che fa vendere: angolo inatteso, metafora originale, struttura non convenzionale.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:06:10",
+   "frame": "frame-175.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-16",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:06:10"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-17",
+   "peso": "supporto",
+   "tipo": "limite-AI",
+   "contenuto": "Gap emotivita autentica: AI descrive emozione, non la crea. Questa esperienza ti dara gioia (GPT) vs costruire narrativa che genera effettivamente gioia nel lettore (copywriter umano).",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:06:18",
+   "frame": "frame-175.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-17",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:06:18"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-18",
+   "peso": "portante",
+   "tipo": "limite-AI",
+   "contenuto": "Gap pensiero strategico: AI non analizza chi e il lettore, dove e nel funnel, cosa sa gia, quali sono le sue resistenze. Copywriter fa analisi strategica pre-scrittura. GPT va diretto al copy senza questa fase.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:06:25",
+   "frame": "frame-200.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-18",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:06:25"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-19",
+   "peso": "supporto",
+   "tipo": "limite-AI",
+   "contenuto": "Gap ricerca vera: AI non fa ricerca di mercato reale. Non legge recensioni per trovare il linguaggio del target, non studia competitor, non analizza testimonial. Copywriter usa ricerca come materia prima del copy.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:06:30",
+   "frame": "frame-200.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-19",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:06:30"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-21",
+   "peso": "supporto",
+   "tipo": "applicazione-pratica",
+   "contenuto": "AI per ricerca mercato: quanti tipi di tazze ci sono? Usa ChatGPT per mapping iniziale categoria prodotto, territori tematici, angoli esistenti. Strumento di research, non di scrittura.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:06:40",
+   "frame": "frame-200.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-21",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:06:40"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-22",
+   "peso": "supporto",
+   "tipo": "applicazione-pratica",
+   "contenuto": "AI come benchmark negativo: sapere cosa non fare, cosa e troppo generico, cosa e troppo semplice. Genera output GPT, identifica i cliche da evitare. Test: se il tuo copy suona come GPT -> troppo generico.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:06:50",
+   "frame": "frame-230.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-22",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:06:50"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-23",
+   "peso": "supporto",
+   "tipo": "applicazione-pratica",
+   "contenuto": "AI come ispirazione strutturale: utile per format types, strutture alternative, organizzazione contenuto. Non copiare il testo, usa per ispirare struttura poi riempi con copy umano.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:07:00",
+   "frame": "frame-230.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-23",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:07:00"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-24",
+   "peso": "portante",
+   "tipo": "strategia",
+   "contenuto": "AI come floor da superare: usa GPT per capire il livello base del mercato. Il tuo copy deve sistematicamente essere migliore di cio che GPT produce gratuitamente. Se non lo superi, il cliente non ha motivo di pagarti.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:07:10",
+   "frame": "frame-230.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-24",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:07:10"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-25",
+   "peso": "contesto",
+   "tipo": "prospettiva-futura",
+   "contenuto": "Caveat futuro: tra 5 e 10 anni molto probabile che AI sia cosi avanzato da sostituire copywriter. Andrei non esclude sostituzione futura. Per ora (2023): il gap e reale e misurabile.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:07:30",
+   "frame": "frame-230.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-25",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:07:30"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-004",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Mai concorrenti inventati (fase 1 della slide 'La scala dei dati veri').",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#0:58",
+   "frame": "frame-005.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-006",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "La scala dei dati veri, in ordine: Ricerca web dichiarata, Volumi di ricerca veri, Attività locali e recensioni, Registro imprese, Partita IVA dal sito.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#0:08",
+   "frame": "frame-005.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-030",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Nota di trasparenza sui concorrenti: 'Registro imprese non disponibile per questa analisi (verifica KYC in corso); profilo camerale e concorrenti per ATECO non inclusi; la lista viene da Google Places e ricerca web.'",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#16:47",
+   "frame": "frame-486.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-033",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Smentite dal vivo: categorie 'assenti per crawler senza JavaScript' in realtà tradotte nel DOM renderizzato; hreflang 'assenti' in realtà presenti (it/en/x-default) nel DOM renderizzato; 'non dichiara spedizioni solo Italia' smentito dalla barra che dice 'SHIPMENTS IN ITALY AND EUROPEAN UNION'.",
+   "ancora": "",
+   "fonte": "deliverable Piano SEO",
+   "frame": "frame-512.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-035",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Ipotesi dichiarate esplicitamente dal sistema: nessun numero di fatturato/margine/traffico fornito dal titolare; follower Instagram/Facebook osservati da risultati ricerca (non dai profili); Trustpilot 3.2/3 recensioni da snippet di ricerca (fetch diretto bloccato); ricerca Google eseguita da IP non italiano (da controverificare); registro imprese non interrogato (KYC in corso).",
+   "ancora": "",
+   "fonte": "deliverable Piano SEO",
+   "frame": "frame-512.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-010",
+   "peso": "supporto",
+   "tipo": "opinione",
+   "contenuto": "Ad agosto 2026, i limiti di utilizzo di Codex si sforano molto piu' lentamente rispetto a quelli di Claude Code, secondo l'esperienza di Belli.",
+   "ancora": "",
+   "fonte": "T7PPX5M6Puo#03:04",
+   "frame": "frame-093.png",
+   "run": "max17-v06-belli-codex",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-013",
+   "peso": "portante",
+   "tipo": "problema",
+   "contenuto": "CONTEXT ROT: all'aumentare dei token in input le performance degradano; superati i 200.000 token il degrado diventa drastico perche' il modello 'inizia a confondersi'. Grafico a schermo: 'Repeated Words - Performance by Input Length (Tokens)', legenda Claude Sonnet 4 / GPT-4.1 / Qwen3 32B / Gemini 2.5 Flash, tutte e quattro le curve crollano.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#06:02",
+   "frame": "frame-183.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-014",
+   "peso": "portante",
+   "tipo": "tecnica",
+   "contenuto": "Il context engineering combatte il context rot in due modi: tenere il contesto compatto (accorciarlo, chiedere risposte piu' brevi ai tool) e, quando si satura, fare COMPACTION - riassumere il contesto per liberare spazio, e ripetere la compaction ai giri successivi. Documentazione ufficiale Claude sulla compaction mostrata a schermo.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#07:26",
+   "frame": "frame-248.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-015",
+   "peso": "supporto",
+   "tipo": "problema",
+   "contenuto": "Il limite della compaction: 'riassunto e poi riassunto e poi riassunto - comunque perdi un sacco di performance'. E' la ragione per cui nasce l'Harness Engineering.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#07:57",
+   "frame": "frame-260.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-042",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "L'autore nota a voce, ridendo, che il risultato appena ottenuto (priorità a content marketing e cold email) è logicamente sospetto: annota sulla lavagna/schermo \"M&A ⇒ outbound\", osservando che nessuno si aspetta che un deal da 5 milioni di euro (o i grandi capitali di operatori come \"Alex Ormosi\", probabile refuso della trascrizione per Alex Hormozi) avvenga tramite content creation. Anticipa che la ricerca è \"biased\", introducendo così il tema centrale del capitolo (il bias nascosto nei risultati di un agente AI).",
+   "ancora": "non ci aspettiamo che un deal da 5 milioni [risate] avvenga tramite content creation",
+   "fonte": "JTn5pqm9ecM#26:48-27:00 + voce 26:48-27:00",
+   "frame": "frame-0269.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-188",
+     "tipo": "contraddice"
+    },
+    {
+     "verso": "KA-196",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-046",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Tecnica dimostrata per neutralizzare il bias di un agente: aggiungere allo stesso prompt originale un vincolo esplicito che rimuove il contesto specifico dell'utente, testo esatto aggiunto: \"Fai una ricerca unbiased come se io partissi da zero e non avessi media presence.\" L'autore la definisce \"una ricerca unbiased\" e la confronta direttamente con il risultato precedente per mostrare quanto cambi.",
+   "ancora": "Fai una ricerca unbiased come se io partissi da zero e non avessi media presence",
+   "fonte": "JTn5pqm9ecM#27:24-27:54 + voce 27:54, 28:24",
+   "frame": "frame-0275.png, frame-0280.png, frame-0285.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "contraddice"
+    },
+    {
+     "verso": "KA-195",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-048",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Gli LLM tendono ad essere \"pigri\" e a farsi condizionare (bias) da elementi interni al proprio contesto/conversazione, se non vengono esplicitamente istruiti a ignorarli: è il principio generale che spiega perché il primo prompt (senza il vincolo \"da zero\") abbia prodotto una raccomandazione diversa e più comoda, ancorata a ciò che l'utente aveva già (i 50K follower LinkedIn), invece di una valutazione oggettiva.",
+   "ancora": "biased da cose interne a se stesso. Quindi tendono a essere un po' pigri questi LLM",
+   "fonte": "JTn5pqm9ecM#28:54-29:12 + voce 28:54-29:12",
+   "frame": "frame-0290.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-190",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-193",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-197",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-049",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Dimostrazione concreta del bias da auto-riferimento (\"self-reference bias\"): cercando su Google \"giovanni beggiato\", tutti i primi risultati parlano solo dell'autore stesso — YouTube (10,4K+ follower, video come \"Claude Changed SEO Forever\" e \"The 5 Skills That Took My AI Agency From $0 to $10K/Month\"), LinkedIn (10,3K+ follower, \"CEO at GentesAI... Won the CEO Award 2024... $30M in combined cost savings\"), Skool, un AMA su Reddit r/LLMeng, il gruppo Skool \"Avanguardia\". L'autore commenta: \"non c'è nessuno sulla prima pagina di Google\" a parte lui — un LLM che avesse questi risultati nel proprio contesto sarebbe inevitabilmente influenzato dalla fama pre-esistente dell'utente.",
+   "ancora": "cioè se io cerco Giovanni Beggiato adesso e chiedo chi è, io ho un profilo",
+   "fonte": "JTn5pqm9ecM#29:12-29:24 + voce 29:12, 29:24, 29:30",
+   "frame": "frame-0293.png, frame-0294.png, frame-0295.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-196",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-199",
+     "tipo": "precede",
+     "perche": "Questo stesso fenomeno (bias da ciò che l'AI sa già sull'utente/ambiente) è esattamente ciò che la 'Memoria Semantica' formalizza teoricamente nel diagramma successivo, dove viene esplicitamente etichettato 'LinkedIn bias'."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-055",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Ritornando alla ricerca sui canali di vendita B2B, l'autore chiede direttamente all'agente in Claude Code: \"Hey, ho una domanda per te. Per caso il tuo output è biased dal fatto che io ho un LinkedIn con più di 50.000 persone? Per caso, se partissi da zero, avresti un'altra raccomandazione da darmi?\". L'agente ammette esplicitamente: \"Sì, assolutamente. Il mio output è biased dal tuo asset esistente.\" e spiega il motivo: \"il content marketing ha un delay di 3-6 mesi prima di generare pipeline. Cold email ti porta meeting in 4-6 settimane dall'infrastruttura pronta. E i referral hanno il close rate più alto in assoluto (le intro calde chiudono al 30-50% vs 1-2% del cold).\" Conclusione dell'agente: \"Da zero, il canale #1 sarebbe cold email + referral, non content.\"",
+   "ancora": "Sì, assolutamente. Il mio output è biased dal tuo asset esistente.",
+   "fonte": "JTn5pqm9ecM#33:18 + voce 33:18",
+   "frame": "frame-0334.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-199",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-196",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-195",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-204",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-058",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Regola pratica conclusiva sul bias, ripetuta a più riprese guardando in camera (nessun materiale a schermo, solo webcam): se non si è consapevoli che un bias del genere esiste, si sta già direzionando il proprio agente nella direzione sbagliata. Bisogna quindi assicurarsi sempre, nel proprio prompt, di aver eliminato i bias — tutti quei piccoli \"pezzettini di memoria\" che possono condizionare silenziosamente l'output — soprattutto prima di usare l'agente per processi che hanno un ritorno economico reale.",
+   "ancora": "consapevoli che questo bias esiste, state già direzionando il vostro agente nella direzione sbagliata",
+   "fonte": "JTn5pqm9ecM#33:30-34:00 + voce 33:30-34:00",
+   "frame": "frame-0336.png, frame-0338.png, frame-0340.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-205",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-196",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-113",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Metafora didattica: il contesto disponibile a Claude va immaginato come uno schermo o una lavagna di dimensioni limitate — non tutto lo spazio è utilizzabile allo stesso modo, alcune zone al suo interno vanno evitate.",
+   "ancora": "immaginate che questo sia uno schermo o una lavagna, no? e il vostro contesto, diciamo, è questo",
+   "fonte": "DI5aWJiFAt8#57:06 (lavagna Excalidraw, disegno rettangolo/schermo) + voce 56:54-57:06",
+   "frame": "frame-0572.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-114",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Scrivere regole 'DOs & DON'Ts' nelle istruzioni equivale, tra le mille soluzioni possibili che l'IA potrebbe generare per un compito, a delimitare in anticipo delle 'zone rosse' da evitare perché già note come non valide.",
+   "ancora": "nella 1000 soluzioni che tu puoi fare per trovare per il mio cliente, mi raccomando, questa parte qui evitala perché so già che non va bene... è la zona che io chiamo rossa",
+   "fonte": "DI5aWJiFAt8#57:36 (lavagna Excalidraw, macchia rossa nel rettangolo) + voce 57:36",
+   "frame": "frame-0577.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-113",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-112",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "capitolo": "II.3",
+ "parte": "II.3",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Cold outreach via email",
+ "libro": "II",
+ "libro_titolo": "Trovare clienti",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v10-barron-sales::KA-030",
+  "max17-v10-barron-sales::KA-039",
+  "max17-v17-beggiato-agenzia::KA-013",
+  "max17-v17-beggiato-agenzia::KA-014",
+  "max18-v06-JTn5pqm9ecM::KA-041",
+  "max18-v06-JTn5pqm9ecM::KA-081"
+ ],
+ "fonti_integrali": {
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v10-barron-sales::KA-030",
+   "peso": "portante",
+   "tipo": "errore",
+   "contenuto": "Mass 'AI slop' emails su 50+ domini casuali per servizi sopra i $5-10k — non funziona, va sostituito con messaggi mirati alla persona giusta nel momento giusto.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#09:45",
+   "frame": "frame-298.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-039",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Il messaggio di outreach deve citare qualcosa di specifico sul business/ruolo/problema del prospect e mostrare un'ipotesi forte (anche se leggermente imprecisa) su qual è il suo problema.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#10:18",
+   "frame": "frame-306.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-013",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Funnel di conversione per le strategie Cold (email/DM/call) con metriche a cascata: input (es. 100 email/DM) -> open rate (80%) -> reply rate (30%) -> CTR sui link (20%) -> risposte positive (10%) -> conversione a meeting (8% sull'input) -> clienti paganti (2%). Ogni metrica bassa indica un problema diverso da correggere: oggetto scadente -> open rate basso; offerta scadente -> reply rate basso; sales call debole -> conversione meeting-cliente bassa.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#1:49-1:55",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-014",
+   "peso": "portante",
+   "tipo": "tecnica",
+   "contenuto": "Tecnica 'cold reading' per l'apertura di un'email/DM freddo: frase generica applicabile a chiunque nella nicchia target ma percepita come personalizzata (tecnica attribuita a FBI/profiling). Struttura mostrata a schermo: oggetto breve informale + body con [1] cold reading, [2] credenziale sociale (nome noto nello stesso spazio), [3] offerta con risk reversal (setup gratuito, paghi solo a risultato), [4] CTA a un meeting breve con slot gia' proposto.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#1:58-2:07",
+   "frame": "frame-0899.png (1:59:44)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-041",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Sintesi del canale \"2. Cold Email Outreach\" prodotta dai 5 agenti, con numeri concreti: reply rate medio 3-5%, 1-2 meeting ogni 100 email (per 10 meeting/mese servono 500-1000 email mirate). Infrastruttura obbligatoria: 3-5 domini secondari, SPF/DKIM/DMARC, warm-up di 3-4 settimane, max 30-40 email/giorno per mailbox; tool citati: Smartlead ($39/mo), Apollo ($49/mo), Clay ($134/mo) per personalizzazione AI. Sequenza consigliata: 4 touch in 14 giorni, con il tocco finale \"Should I close the file?\" che da solo genera il 30% delle risposte totali. Nota di compliance: GDPR ok per B2B con legitimate interest documentato.",
+   "ancora": "3-5% reply rate medio, 1-2 meeting ogni 100 email",
+   "fonte": "JTn5pqm9ecM#25:48 + voce 26:00 ca.",
+   "frame": "frame-0259.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-186",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-195",
+     "tipo": "esempio-di",
+     "perche": "Questo stesso canale, cold email, diventerà il canale #1 raccomandato nella versione 'unbiased' della ricerca: i dati tecnici restano identici, cambia solo la priorità assegnata."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-081",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Sintesi \"2. Cold Email Outreach\" dai risultati delle 5 ricerche parallele: numeri realistici 3-5% reply rate medio, 1-2 meeting ogni 100 email (per 10 meeting/mese servono 500-1000 email mirate); infrastruttura obbligatoria: 3-5 domini secondari, SPF/DKIM/DMARC, warm-up di 3-4 settimane, max 30-40 email/giorno per mailbox; tools citati: Smartlead ($39/mo), Apollo ($49/mo), Clay ($134/mo) per personalizzazione AI.",
+   "ancora": "Numeri realistici: 3-5% reply rate medio, 1-2 meeting ogni 100 email.",
+   "fonte": "JTn5pqm9ecM#37:12 (sezione \"2. Cold Email Outreach\" della sintesi) + voce 37:12",
+   "frame": "frame-0373.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-167",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

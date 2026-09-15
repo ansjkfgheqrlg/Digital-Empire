@@ -1,0 +1,210 @@
+{
+ "capitolo": "III.7",
+ "parte": "III.7",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Upsell, cross-sell, rinnovo",
+ "libro": "III",
+ "libro_titolo": "Vendere e prezzare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "lQMO0LdeI2c::KA-18",
+  "lQMO0LdeI2c::KA-19",
+  "lQMO0LdeI2c::KA-20",
+  "lQMO0LdeI2c::KA-21",
+  "outfunnel-lezione-01::KA-04",
+  "outfunnel-lezione-11::KA-01",
+  "outfunnel-lezione-11::KA-02",
+  "outfunnel-lezione-11::KA-03",
+  "outfunnel-lezione-11::KA-04",
+  "outfunnel-lezione-11::KA-05",
+  "outfunnel-lezione-11::KA-06",
+  "outfunnel-lezione-11::KA-07"
+ ],
+ "fonti_integrali": {
+  "lQMO0LdeI2c": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/lQMO0LdeI2c\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\lQMO0LdeI2c\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-01": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-01\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-11": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-11\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "lQMO0LdeI2c::KA-18",
+   "peso": "supporto",
+   "tipo": "STRATEGIA",
+   "contenuto": "Dyson = strategia cliente ricorrente. 'Dyson è un'azienda che punta molto sicuramente sul cliente ricorrente.' Il copy Dyson non è ottimizzato per la singola vendita ma per entrare nell'ecosistema del cliente (capelli → aspirapolvere → purificatori → cuffie). Brand equity + portfolio = CLV massimizzato.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:28:45",
+   "frame": "frame-0864.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-18",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:28:45"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-19",
+   "peso": "portante",
+   "tipo": "CONCETTO",
+   "contenuto": "Customer Lifetime Value (CLV) = valore totale che un cliente genera nell'intera sua vita per l'azienda. 'il vero valore non è questa Red Bull da €2 — sono quei migliaia di euro che spenderò nella loro azienda.' Per e-commerce: CLV = base per decidere CPA massimo sostenibile e strategie di acquisizione.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:29:00",
+   "frame": "frame-0931.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-19",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:29:00"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-20",
+   "peso": "supporto",
+   "tipo": "CONCETTO",
+   "contenuto": "Red Bull CLV example: 'Red Bull può perdere soldi su un evento di mountain biking però portano dentro nel loro ecosistema una persona come me che poi ti va a spendere migliaia.' Loss leader consapevole = acquistare utente ad alto CLV. L'evento è un investimento a lungo termine, non un costo.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:31:00",
+   "frame": "frame-0931.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-20",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:31:00"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-21",
+   "peso": "portante",
+   "tipo": "STRATEGIA",
+   "contenuto": "CLV alto → CPA ceiling alzato: 'Se abbiamo un e-commerce multiprodotto e il customer lifetime value è di €1000... possiamo anche alzare il CPA un attimino se significa fare la guerra contro la concorrenza e avere quel acquisto iniziale valoroso per poi fare cross Sell.' Formula: CLV alto → investi in acquisizione → market share.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:32:07",
+   "frame": "frame-0931.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-21",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:32:07"
+    }
+   ]
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-04",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Definizioni operative: Cross-sell = prodotto complementare al momento dell'acquisto; Up-sell = prodotto di valore superiore a quello in acquisto; Follow-up = comunicazione post-vendita per fidelizzare e generare acquisti futuri.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-01#\"concetti-avanzati\"",
+   "frame": "",
+   "run": "outfunnel-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Principio guida citato testualmente: \"la differenza tra 0 e 1 è maggiore della differenza tra 1 e 100\" — il primo acquisto è la barriera più alta, dopo diventa progressivamente più facile vendere.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-11#\"perché-vendere-ai-clienti-attuali-è-più-facile?\"",
+   "frame": "",
+   "run": "outfunnel-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Esempio Apple: chi compra un iPhone è più incline a comprare Apple Watch, AirPods e altri accessori — effetto alone del primo acquisto sull'intero ecosistema di prodotti.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-11#\"perché-vendere...\"",
+   "frame": "",
+   "run": "outfunnel-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "3 leve di monetizzazione sui clienti esistenti: Retargeting (nuovi prodotti a chi ha già comprato, utile su prodotti senza rinnovo), Follow-up su acquisti passati (pianificato nel funnel o non pianificato, a mesi di distanza), Upsell/Cross-sell.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-11#\"strategie-di-monetizzazione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-04",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Definizioni precise: Upsell = prodotto di valore MAGGIORE (es. corso base → corso avanzato); Cross-sell = prodotto COMPLEMENTARE (es. felpa → pantaloni abbinati).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-11#\"upsell-e-cross-sell\"",
+   "frame": "",
+   "run": "outfunnel-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-05",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Regola critica: l'upsell non deve mai far sembrare il primo acquisto incompleto/mancante — se il cliente percepisce che gli è stata \"tolta\" una parte del prodotto originale per rivendergliela, si sente ingannato.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-11#\"upsell-e-cross-sell\"",
+   "frame": "",
+   "run": "outfunnel-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-06",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Raccomandazione operativa sulla pianificazione: se il team marketing ha risorse limitate, NON pianificare upsell/follow-up da subito — rischio di realizzare male il funnel principale per voler fare troppo in una volta.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-11#\"quando-pianificare\"",
+   "frame": "",
+   "run": "outfunnel-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-11::KA-07",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "2 errori comuni esplicitamente nominati: (1) vendere lo stesso prodotto con variazioni cosmetiche minime (es. stesso capo, colore diverso — non converte); (2) svalutare il primo acquisto con un secondo prodotto che conteneva informazioni \"dovute\" già nel primo.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-11#\"errori-comuni-da-evitare\"",
+   "frame": "",
+   "run": "outfunnel-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

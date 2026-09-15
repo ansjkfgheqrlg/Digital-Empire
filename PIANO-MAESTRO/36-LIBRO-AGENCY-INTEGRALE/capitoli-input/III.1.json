@@ -1,0 +1,355 @@
+{
+ "capitolo": "III.1",
+ "parte": "III.1",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "La call di diagnosi",
+ "libro": "III",
+ "libro_titolo": "Vendere e prezzare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "NydMBZ2nUTE::KA-02",
+  "NydMBZ2nUTE::KA-05",
+  "k_DXsUCIkr8::KA-04",
+  "max17-v10-barron-sales::KA-002",
+  "max17-v10-barron-sales::KA-005",
+  "max17-v10-barron-sales::KA-006",
+  "max17-v10-barron-sales::KA-013",
+  "max17-v10-barron-sales::KA-018",
+  "max17-v10-barron-sales::KA-031",
+  "max17-v10-barron-sales::KA-033",
+  "max17-v10-barron-sales::KA-036",
+  "max17-v10-barron-sales::KA-041",
+  "max17-v10-barron-sales::KA-042",
+  "max17-v10-barron-sales::KA-045",
+  "max17-v10-barron-sales::KA-047",
+  "max17-v10-barron-sales::KA-048",
+  "max17-v10-barron-sales::KA-049",
+  "max17-v10-barron-sales::KA-055",
+  "outfunnel-lezione-19::KA-02",
+  "outfunnel-lezione-19::KA-03"
+ ],
+ "fonti_integrali": {
+  "NydMBZ2nUTE": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/NydMBZ2nUTE\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NydMBZ2nUTE\\contenuto-integrale.md"
+  ],
+  "k_DXsUCIkr8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/k_DXsUCIkr8\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\k_DXsUCIkr8\\contenuto-integrale.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "outfunnel-lezione-19": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-19\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "NydMBZ2nUTE::KA-02",
+   "peso": "supporto",
+   "tipo": "Vendita / Setup - domanda retorica",
+   "contenuto": "'Secondo te funzionava veramente questa cosa? Chiami e ti dicono no non sono interessato. Cosa rispondi?' - pone il pubblico nel ruolo del venditore prima di rivelare la risposta scriptata.",
+   "ancora": "",
+   "fonte": "NydMBZ2nUTE#00:00:13",
+   "frame": "frame-005,006,007",
+   "run": "NydMBZ2nUTE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "NydMBZ2nUTE::KA-02",
+     "run": "NydMBZ2nUTE",
+     "fonte": "NydMBZ2nUTE#00:00:13"
+    }
+   ]
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-05",
+   "peso": "portante",
+   "tipo": "Vendita / Micro-commitment",
+   "contenuto": "'E d'accordo? Confermare quello che lui ti ha detto' - ottenere un piccolo assenso esplicito come step tecnico nominato dello script, non dettaglio conversazionale casuale. Seconda conferma indipendente nel run del pattern yes-ladder (dopo video 22).",
+   "ancora": "",
+   "fonte": "NydMBZ2nUTE#00:00:29",
+   "frame": "frame-014,015,016,017",
+   "run": "NydMBZ2nUTE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "NydMBZ2nUTE::KA-05",
+     "run": "NydMBZ2nUTE",
+     "fonte": "NydMBZ2nUTE#00:00:29"
+    }
+   ]
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-07",
+   "peso": "contesto",
+   "tipo": "Meta / Disclaimer etico",
+   "contenuto": "La copertina del documento originale mostra il testo 'SOLO A SCOPO DI FORMAZIONE' - disclaimer presente sulla fonte stessa, non aggiunto editorialmente da Andrei.",
+   "ancora": "",
+   "fonte": "NydMBZ2nUTE#00:00:49",
+   "frame": "frame-026",
+   "run": "NydMBZ2nUTE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "NydMBZ2nUTE::KA-07",
+     "run": "NydMBZ2nUTE",
+     "fonte": "NydMBZ2nUTE#00:00:49"
+    }
+   ]
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-04",
+   "peso": "portante",
+   "tipo": "Vendita / Chiusura soft - yes-ladder",
+   "contenuto": "Dopo la validazione, chiede un piccolo impegno futuro condizionato: 'se identifichiamo un'opportunita' con forte potenziale, saresti disposto ad ascoltarla? D'accordo?' - tecnica yes-ladder invece di pressione immediata.",
+   "ancora": "",
+   "fonte": "k_DXsUCIkr8#00:00:32",
+   "frame": "frame-013,014",
+   "run": "k_DXsUCIkr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "k_DXsUCIkr8::KA-04",
+     "run": "k_DXsUCIkr8",
+     "fonte": "k_DXsUCIkr8#00:00:32"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-001",
+   "peso": "contesto",
+   "tipo": "framework",
+   "contenuto": "Sales System: barra a 5 caselle collegate da frecce — ICP → Meetings → Indoctrinate → Discovery Call → Business Case. Costruita progressivamente lungo il video e mostrata completa in blu alla fine.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#23:26",
+   "frame": "frame-704.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-002",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Diagramma DELIVERY vs SALES: Delivery = 4 box blu collegati da frecce lineari (processo pulito e ripetibile). Sales = percorso caotico con punti interrogativi rossi, uno scarabocchio a spirale, un box rosso isolato.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#01:28",
+   "frame": "frame-045.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-003",
+   "peso": "contesto",
+   "tipo": "framework",
+   "contenuto": "Grafico a onde 'Sales Activity' (linea blu quasi piatta) vs 'Revenue' (linea rossa ondulata, zone verdi/rosse) — visualizza il ciclo boom-and-bust del fatturato quando le vendite sono reattive.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#08:16",
+   "frame": "frame-249.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-005",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Diagramma 'Current Reality' → 'Reality Bridge' → 'Future Reality': icona persona rossa con grafico in calo a sinistra, collegata da un arco (Reality Bridge) a un'icona persona verde con grafico in salita a destra. Il servizio si posiziona come ponte tra le due realtà.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#18:18",
+   "frame": "frame-550.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-006",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Analogia dottore/paziente: come un medico non prescrive cure prima di aver fatto domande su insorgenza, intensità e sintomi, il venditore deve fare domande (diagnosi) prima di proporre soluzioni.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#16:11",
+   "frame": "frame-482.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-013",
+   "peso": "portante",
+   "tipo": "fase",
+   "contenuto": "I 6 passaggi verbali della Discovery Call (nessuna grafica dedicata): 1) Pain — cosa succede se il problema non si risolve, chi altro è colpito; 2) Trigger — evento specifico che ha spinto a prenotare ora; 3) Future Reality — visione di un futuro migliore, il servizio come ponte; 4) ROI — numeri anche grezzi messi sul tavolo presto; 5) Budget — chiesto solo dopo aver mostrato il ROI; 6) Next Step — data/ora precisa bloccata in entrambi i calendari prima di chiudere.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#16:41",
+   "frame": "frame-505.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-018",
+   "peso": "portante",
+   "tipo": "fase",
+   "contenuto": "FASE 4 — Discovery Call: postura 'Questions first, Solutions later', analogia del dottore, 6 passaggi (pain, trigger, future reality, ROI, budget, next step). Segnale di successo: il prospect chiede da solo 'come comincio?' verso la fine.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#16:02",
+   "frame": "frame-484.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-031",
+   "peso": "portante",
+   "tipo": "errore",
+   "contenuto": "Pitchare troppo presto: appena il prospect nomina il problema, il business owner medio si eccita e spiega subito il servizio invece di continuare a fare domande — questo causa il 'devo pensarci' e il ghosting post-call.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#15:23",
+   "frame": "frame-463.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-033",
+   "peso": "supporto",
+   "tipo": "errore",
+   "contenuto": "Non bloccare data/ora precisa del prossimo step in entrambi i calendari prima di chiudere la discovery call — 'altrimenti la discovery call non è stata completata'.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#19:41",
+   "frame": "frame-601.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-036",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "'Questions first, Solutions later' — regola centrale della discovery call, mostrata come caption a schermo.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#16:06",
+   "frame": "frame-484.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-041",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "I numeri di ROI, anche grezzi e imprecisi, vanno messi sul tavolo presto durante la discovery call — non serve precisione, serve dimostrare che il problema può pesare meno.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#18:34",
+   "frame": "frame-558.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-042",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Va chiarito che il prospect ha budget per lavorare insieme, ma solo dopo aver mostrato il ROI — a quel punto la domanda sul budget 'passa velocemente' perché il prospect è già convinto.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#19:08",
+   "frame": "frame-577.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-045",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Meccanica del ciclo boom-and-bust: il fatturato scende → si entra in modalità panico → si va a caccia di nuovi clienti → si torna occupati → si smette di vendere per fare il lavoro cliente → il ciclo ricomincia.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#01:51",
+   "frame": "frame-052.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-047",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Il dolore va scavato in profondità durante la discovery call, chiedendo se colpisce anche la famiglia/il team del prospect, così che ne senta il peso mentre è seduto davanti a te.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#16:57",
+   "frame": "frame-517.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-048",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Il trigger è il secondo elemento da scovare nella discovery call: l'evento specifico (cliente perso, obiettivo mancato, concorrente comparso) che ha spinto il prospect a prenotare la call proprio ora, e che guida l'urgenza nel resto del processo.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#17:28",
+   "frame": "frame-528.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-049",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Vanno coperti entrambi i tipi di motivazione del prospect: chi fugge dal dolore e chi è attratto dall'upside futuro (Will Barron si descrive come motivato più dall'upside che dalla fuga dal dolore).",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#18:01",
+   "frame": "frame-544.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-055",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Chiedere il budget solo dopo aver mostrato valore/ROI in call è meno stressante di quanto la maggior parte degli imprenditori si aspetti: a quel punto il prospect è già abbastanza convinto da condividere le proprie finanze senza problemi, ed è 'never as stressful as what most business owners think it's going to be before they start doing this routinely'.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#19:24",
+   "frame": "frame-580.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-19::KA-02",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Blueprint a 3 step: Lead Generation (ad o altra fonte) → Sales Page (informazioni complete prima della call) → Opt-in con 3 varianti possibili (calendario integrato per auto-prenotarsi, form dati con ricontatto del team, o combinazione dati+calendario).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-19#\"1.-struttura-del-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-19",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-19::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "4 motivi per cui la Sales Page PRIMA della call è necessaria: qualifica i lead (filtra chi non è in target), aumenta la consapevolezza (arriva già informato), facilita il lavoro del venditore (meno obiezioni da gestire), evita lead non qualificati (chi non ha budget abbandona prima).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-19#\"2.-perché-inserire-una-sales-page\"",
+   "frame": "",
+   "run": "outfunnel-lezione-19",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

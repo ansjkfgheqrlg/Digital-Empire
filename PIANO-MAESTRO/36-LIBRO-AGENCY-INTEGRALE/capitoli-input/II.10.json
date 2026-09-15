@@ -1,0 +1,282 @@
+{
+ "capitolo": "II.10",
+ "parte": "II.10",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Il primo cliente quando non hai case study",
+ "libro": "II",
+ "libro_titolo": "Trovare clienti",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "sTCwYnWmgcQ::KA-012",
+  "sTCwYnWmgcQ::KA-013",
+  "sTCwYnWmgcQ::KA-017",
+  "sTCwYnWmgcQ::KA-018",
+  "sTCwYnWmgcQ::KA-019",
+  "sTCwYnWmgcQ::KA-12",
+  "sTCwYnWmgcQ::KA-13",
+  "sTCwYnWmgcQ::KA-17",
+  "sTCwYnWmgcQ::KA-18",
+  "sTCwYnWmgcQ::KA-19",
+  "t67-j2LiXgQ::KA-020",
+  "t67-j2LiXgQ::KA-022",
+  "t67-j2LiXgQ::KA-20",
+  "t67-j2LiXgQ::KA-22"
+ ],
+ "fonti_integrali": {
+  "sTCwYnWmgcQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/memory-empire/knowledge/sTCwYnWmgcQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\sTCwYnWmgcQ\\contenuto-integrale.md"
+  ],
+  "t67-j2LiXgQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/memory-empire/knowledge/t67-j2LiXgQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\t67-j2LiXgQ\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "sTCwYnWmgcQ::KA-012",
+   "peso": "portante",
+   "tipo": "5-passi",
+   "contenuto": "Step 1 dei 5 passi = studiare le tecniche + esercitarsi costantemente. 'Non smettere mai di farlo.' Prerequisito: sviluppare l'istinto prima di cercare clienti.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:06:43",
+   "frame": "frame-197.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-013",
+   "peso": "portante",
+   "tipo": "5-passi",
+   "contenuto": "Step 2 = costruire reputazione online professionale. 3 sotto-punti: (1) ripulire i social, (2) costruire LinkedIn, (3) fare sito web come landing page.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:07:00",
+   "frame": "frame-230.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-017",
+   "peso": "portante",
+   "tipo": "valore-anticipato",
+   "contenuto": "Il sito deve esporre 'lavori di prova' (copy per prodotti inventati) = portfolio prima di avere clienti reali. Portfolio = valore anticipato permanente e pubblico.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:09:14",
+   "frame": "frame-260.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-018",
+   "peso": "portante",
+   "tipo": "valore-anticipato",
+   "contenuto": "'Valore anticipato' = dare qualcosa PRIMA di chiedere qualcosa in cambio. Applicazioni: copy di prova gratuito, informazioni utili, contenuto che dimostra skill.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:09:35",
+   "frame": "frame-295.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-019",
+   "peso": "supporto",
+   "tipo": "5-passi",
+   "contenuto": "Step 3 = cercare clienti usando la strategia del 'valore anticipato'. Dai prova concreta di valore → cliente si fida → ingaggia. Dettagli nel corso 'copyright mentorship' Andrei.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:09:21",
+   "frame": "frame-295.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-022",
+   "peso": "contesto",
+   "tipo": "percorso",
+   "contenuto": "Si può diventare copywriter da ZERO esperienza. Percorso strutturato in 5 passi, non richiede prerequisiti specifici — solo metodo + costanza.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:00:03",
+   "frame": "frame-033.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-12",
+   "peso": "portante",
+   "tipo": "Copywriting / 5 passi - Step 1",
+   "contenuto": "Step 1 dei 5 passi: studiare le tecniche + esercitarsi costantemente. 'Non smettere mai di farlo.' Allenamento continuo = prerequisito per gli step successivi.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:06:43",
+   "frame": "frame-197",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-12",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:06:43"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-13",
+   "peso": "portante",
+   "tipo": "Copywriting / 5 passi - Step 2",
+   "contenuto": "Step 2 dei 5 passi: costruire una reputazione online professionale, con 3 sotto-punti: (1) ripulire i social, (2) costruire LinkedIn, (3) fare un sito web.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:07:00",
+   "frame": "frame-230",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-13",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:07:00"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-17",
+   "peso": "portante",
+   "tipo": "Copywriting / Portfolio",
+   "contenuto": "Il sito deve esporre 'lavori di prova' (copy scritti per prodotti inventati) - dimostrazione pratica di competenza prima di avere clienti reali. Il portfolio e' valore anticipato.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:09:14",
+   "frame": "frame-260",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-17",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:09:14"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-18",
+   "peso": "portante",
+   "tipo": "Copywriting / Valore anticipato",
+   "contenuto": "'Valore anticipato' = dare qualcosa PRIMA di chiedere qualcosa in cambio. Applicazione: informazioni utili, copy di prova gratuito, contenuto che dimostra skill. Poi si chiede il contratto. Distinto dal 'valore aggiunto' (dato DURANTE la collaborazione, non prima).",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:09:35",
+   "frame": "frame-295",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-18",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:09:35"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-19",
+   "peso": "supporto",
+   "tipo": "Copywriting / 5 passi - Step 3",
+   "contenuto": "Step 3 dei 5 passi: cercare clienti usando la strategia del 'valore anticipato'. Idea: dai prova concreta di valore -> il cliente si fida -> ingaggia. Dettagli approfonditi nel corso 'copywriting mentorship' di Andrei.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:09:21",
+   "frame": "frame-295",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-19",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:09:21"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-22",
+   "peso": "contesto",
+   "tipo": "Copywriting / Premessa",
+   "contenuto": "Premessa del video: si puo' diventare copywriter da zero esperienza. Il percorso esiste, e' strutturato in 5 passi, e non richiede prerequisiti specifici - solo metodo.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:00:03",
+   "frame": "frame-033",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-22",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:00:03"
+    }
+   ]
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-020",
+   "peso": "supporto",
+   "tipo": "carriera",
+   "contenuto": "Copywriting come carriera freelance monetizzabile: skill insegnabile, vendibile come servizio, scalabile. Andrei vende corso €249-690 — questo video è il funnel.",
+   "ancora": "",
+   "fonte": "t67-j2LiXgQ#0:13:17",
+   "frame": "frame-399.png",
+   "run": "t67-j2LiXgQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-022",
+   "peso": "supporto",
+   "tipo": "percorso",
+   "contenuto": "Percorso entry-level copywriter: (1) studia tecniche provate, (2) scegli 1-2 formati, (3) applica, (4) offri come servizio freelance. Corso Andrei = shortcut validato.",
+   "ancora": "",
+   "fonte": "t67-j2LiXgQ#0:01:00",
+   "frame": "frame-001.png",
+   "run": "t67-j2LiXgQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-20",
+   "peso": "supporto",
+   "tipo": "Copywriting / Business model",
+   "contenuto": "Il copywriting e' una carriera freelance monetizzabile: Andrei vende un corso da 249-690 euro. La skill e' insegnabile, vendibile come servizio, scalabile. Il video funziona come funnel per il corso.",
+   "ancora": "",
+   "fonte": "t67-j2LiXgQ#0:13:17",
+   "frame": "frame-399",
+   "run": "t67-j2LiXgQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "t67-j2LiXgQ::KA-20",
+     "run": "t67-j2LiXgQ",
+     "fonte": "t67-j2LiXgQ#0:13:17"
+    }
+   ]
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-22",
+   "peso": "supporto",
+   "tipo": "Copywriting / Percorso carriera",
+   "contenuto": "Percorso entry-level copywriter: (1) studia tecniche provate, (2) scegli 1-2 formati su cui specializzarti, (3) applica, (4) offri come servizio freelance. Andrei posiziona il corso come shortcut validato di questo percorso.",
+   "ancora": "",
+   "fonte": "t67-j2LiXgQ#0:01:00",
+   "frame": "frame-001",
+   "run": "t67-j2LiXgQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "t67-j2LiXgQ::KA-22",
+     "run": "t67-j2LiXgQ",
+     "fonte": "t67-j2LiXgQ#0:01:00"
+    }
+   ]
+  }
+ ]
+}

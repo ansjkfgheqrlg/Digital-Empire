@@ -1,0 +1,789 @@
+{
+ "capitolo": "VI.4",
+ "parte": "VI.4",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Email di vendita e sequenze di lancio",
+ "libro": "VI",
+ "libro_titolo": "Contenuto, brand, lanci",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "IWCHN_mE2Vo::KA-20",
+  "fGpz-uOgr4k::KA-01",
+  "fGpz-uOgr4k::KA-02",
+  "fGpz-uOgr4k::KA-03",
+  "fGpz-uOgr4k::KA-04",
+  "hb89lccIacY::KA-01",
+  "hb89lccIacY::KA-02",
+  "hb89lccIacY::KA-03",
+  "hb89lccIacY::KA-04",
+  "hb89lccIacY::KA-05",
+  "hb89lccIacY::KA-06",
+  "hb89lccIacY::KA-07",
+  "hb89lccIacY::KA-08",
+  "hb89lccIacY::KA-09",
+  "hb89lccIacY::KA-10",
+  "hb89lccIacY::KA-11",
+  "hb89lccIacY::KA-12",
+  "hb89lccIacY::KA-14",
+  "hb89lccIacY::KA-16",
+  "nP4ojCzvjr8::KA-01",
+  "nP4ojCzvjr8::KA-02",
+  "nP4ojCzvjr8::KA-03",
+  "nP4ojCzvjr8::KA-04",
+  "outfunnel-lezione-01::KA-05",
+  "outfunnel-lezione-03::KA-03",
+  "outfunnel-lezione-07::KA-04",
+  "outfunnel-lezione-10::KA-01",
+  "outfunnel-lezione-10::KA-02",
+  "outfunnel-lezione-10::KA-03",
+  "t67-j2LiXgQ::KA-004",
+  "t67-j2LiXgQ::KA-04",
+  "yX0XZh2PSYo::KA-01",
+  "yX0XZh2PSYo::KA-02",
+  "yX0XZh2PSYo::KA-03",
+  "yX0XZh2PSYo::KA-04",
+  "yX0XZh2PSYo::KA-05",
+  "yX0XZh2PSYo::KA-06"
+ ],
+ "fonti_integrali": {
+  "IWCHN_mE2Vo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/IWCHN_mE2Vo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\IWCHN_mE2Vo\\contenuto-integrale.md"
+  ],
+  "fGpz-uOgr4k": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/fGpz-uOgr4k\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\fGpz-uOgr4k\\contenuto-integrale.md"
+  ],
+  "hb89lccIacY": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/hb89lccIacY\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\hb89lccIacY\\contenuto-integrale.md"
+  ],
+  "nP4ojCzvjr8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/nP4ojCzvjr8\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\nP4ojCzvjr8\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-01": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-01\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-03": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-03\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-07": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-07\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-10": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-10\\contenuto-integrale.md"
+  ],
+  "t67-j2LiXgQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/memory-empire/knowledge/t67-j2LiXgQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\t67-j2LiXgQ\\contenuto-integrale.md"
+  ],
+  "yX0XZh2PSYo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/yX0XZh2PSYo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\yX0XZh2PSYo\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "IWCHN_mE2Vo::KA-20",
+   "peso": "supporto",
+   "tipo": "Strategia / Email",
+   "contenuto": "Email marketing per e-commerce: 'dovrebbe essere staple'. Non opzionale — fondamentale. Brand e-commerce senza email marketing integrato = enorme opportunita di revenue non sfruttata. Andrei lo afferma come regola assoluta.",
+   "ancora": "",
+   "fonte": "IWCHN_mE2Vo#00:45:54",
+   "frame": "frame-1380",
+   "run": "IWCHN_mE2Vo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IWCHN_mE2Vo::KA-20",
+     "run": "IWCHN_mE2Vo",
+     "fonte": "IWCHN_mE2Vo#00:45:54"
+    }
+   ]
+  },
+  {
+   "uid": "fGpz-uOgr4k::KA-01",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern promo",
+   "contenuto": "Esempio povero ipotizzato: '20% su una nuova collezione per ragazze' (sconto generico) vs riga con hook di personalita' diretto ('Se si veste cosi io le chiedo il numero').",
+   "ancora": "",
+   "fonte": "fGpz-uOgr4k#00:00:00",
+   "frame": "frame-001",
+   "run": "fGpz-uOgr4k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "fGpz-uOgr4k::KA-01",
+     "run": "fGpz-uOgr4k",
+     "fonte": "fGpz-uOgr4k#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "fGpz-uOgr4k::KA-02",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern welcome",
+   "contenuto": "Esempio povero ipotizzato: 'Benvenuto nella newsletter. Posso scriverti una volta al giorno?' — welcome email che chiede permesso in modo burocratico invece di dare valore/personalita'.",
+   "ancora": "",
+   "fonte": "fGpz-uOgr4k#00:00:05",
+   "frame": "frame-003",
+   "run": "fGpz-uOgr4k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "fGpz-uOgr4k::KA-02",
+     "run": "fGpz-uOgr4k",
+     "fonte": "fGpz-uOgr4k#00:00:05"
+    }
+   ]
+  },
+  {
+   "uid": "fGpz-uOgr4k::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern urgency",
+   "contenuto": "Doppio esempio urgency cliche: 'Offerta imperdibile solo per te' e 'Ultima possibilita per risparmiare 20%' — scarcity generica senza specificita, vs tono caldo/personale ('Ho preparato una cosa per te').",
+   "ancora": "",
+   "fonte": "fGpz-uOgr4k#00:00:10",
+   "frame": "frame-006",
+   "run": "fGpz-uOgr4k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "fGpz-uOgr4k::KA-03",
+     "run": "fGpz-uOgr4k",
+     "fonte": "fGpz-uOgr4k#00:00:10"
+    }
+   ]
+  },
+  {
+   "uid": "fGpz-uOgr4k::KA-04",
+   "peso": "supporto",
+   "tipo": "Copy / Personalizzazione",
+   "contenuto": "Esempio ricco ipotizzato: nome usato a meta frase come domanda diretta ('Antonio, sai che giorno e oggi?') + promessa numerata + chiusura riflessiva, coerente con lo stile email lunghe/coinvolgenti gia' visto nel video 12.",
+   "ancora": "",
+   "fonte": "fGpz-uOgr4k#00:00:18",
+   "frame": "frame-010",
+   "run": "fGpz-uOgr4k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "fGpz-uOgr4k::KA-04",
+     "run": "fGpz-uOgr4k",
+     "fonte": "fGpz-uOgr4k#00:00:18"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-01",
+   "peso": "portante",
+   "tipo": "Copy / Email opener",
+   "contenuto": "Anti-pattern: aprire l'email con 'Ciao, ti sto scrivendo perche' voglio parlarti di questo' prima di arrivare al punto. Regola: elimina SEMPRE quella frase iniziale — nel 90% dei casi non serve alla persuasione.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:00:00",
+   "frame": "frame-001",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-01",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-02",
+   "peso": "portante",
+   "tipo": "Copy / Oggetto email",
+   "contenuto": "Oggetto ~50 caratteri visibili (mobile) prima del troncamento. Regola: parola/info piu' importante il piu' vicino possibile all'inizio, taglia le filler words.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:00:52",
+   "frame": "frame-025",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-02",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:00:52"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Personalizzazione oggetto",
+   "contenuto": "Non mettere {{nome}} come prima parola dell'oggetto: lunghezza variabile sposta imprevedibilmente il resto e toglie controllo sulla lunghezza. Se usato, metterlo come ultimissima cosa in fondo.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:01:40",
+   "frame": "frame-049",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-03",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:01:40"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-04",
+   "peso": "portante",
+   "tipo": "Copy / Anti-pattern oggetto",
+   "contenuto": "Non gonfiare open/click rate con clickbait che non mantiene la promessa. Genera click 'sulla carta' ma sono spam — preferire click rate piu' basso ma sano, con intenzione specifica di agire.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:02:22",
+   "frame": "frame-070",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-04",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:02:22"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-05",
+   "peso": "portante",
+   "tipo": "Metriche / Definizioni",
+   "contenuto": "CR (Click Rate) = % click sul TOTALE email inviate. CTR (Click-Through Rate) = % click sul TOTALE email aperte. Basi di calcolo diverse, spesso confuse.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:03:22",
+   "frame": "frame-101",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-05",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:03:22"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-06",
+   "peso": "supporto",
+   "tipo": "Metriche / Esempio numerico",
+   "contenuto": "100 email inviate -> 10 aperture (OR 10%) -> 2 click -> CR=2%, CTR=20%. Stesso numero assoluto di click, percentuali molto diverse a seconda della base.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:04:05",
+   "frame": "frame-139",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-06",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:04:05"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-07",
+   "peso": "supporto",
+   "tipo": "Metriche / Interpretazione dati",
+   "contenuto": "Un CTR alto puo' derivare da click su link secondari (Instagram/YouTube) e non sul CTA che interessa davvero. Se il CRM non mostra il breakdown per link, cambiarlo.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:04:39",
+   "frame": "frame-139",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-07",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:04:39"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-08",
+   "peso": "supporto",
+   "tipo": "Copy / Emoji",
+   "contenuto": "Usa emoji nell'oggetto solo se non clichè/spammy per la nicchia (es. 💰 in 'come fare soldi' non differenzia, lo usano tutti). Emoji stagionali ok se in tema.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:05:36",
+   "frame": "frame-167",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-08",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:05:36"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-09",
+   "peso": "supporto",
+   "tipo": "Copy / Emoji e target",
+   "contenuto": "Effetto emoji dipende dal target: su giovani non fa differenza, su 40-50enni puo' fare piu' danno (letto come promozionale/spam).",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:06:02",
+   "frame": "frame-167",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-09",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:06:02"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-10",
+   "peso": "portante",
+   "tipo": "Metodo / A/B testing",
+   "contenuto": "Dividi l'audience in segmenti (es. 50/50) e invia varianti diverse. Automatizzabile su CRM (Mailchimp) o manuale dividendo la lista in tag/segmenti.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:06:15",
+   "frame": "frame-187",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-10",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:06:15"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-11",
+   "peso": "supporto",
+   "tipo": "Metodo / A/B testing — cosa testare",
+   "contenuto": "Testa solo elementi impattanti e collegabili a metriche precise (oggetto intero), non micro-dettagli sepolti a meta' email — risultato non calcolabile/prevedibile.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:07:40",
+   "frame": "frame-226",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-11",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:07:40"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-12",
+   "peso": "supporto",
+   "tipo": "Metodo / A/B testing — sample size",
+   "contenuto": "Campione troppo piccolo/non misto puo' generare per caso un segmento piu' fidelizzato dell'altro, falsando il risultato. Regola: piu' la lista e' numerosa, piu' i risultati sono affidabili.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:08:09",
+   "frame": "frame-262",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-12",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:08:09"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-13",
+   "peso": "contesto",
+   "tipo": "Metodo / A/B testing — rigore",
+   "contenuto": "Invia entrambe le varianti allo stesso orario per non introdurre un'altra variabile oltre quella testata.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:07:35",
+   "frame": "frame-226",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-13",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:07:35"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-14",
+   "peso": "portante",
+   "tipo": "Copy / Lunghezza email",
+   "contenuto": "Rule of thumb: 200-250 parole. Ma per email storytelling/valore arriva fino a 500 parole (meta' sales page) perche' copy coinvolgente toglie piu' obiezioni di copy breve.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:08:46",
+   "frame": "frame-262",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-14",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:08:46"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-15",
+   "peso": "contesto",
+   "tipo": "Copy / Lunghezza email — livello",
+   "contenuto": "Principianti: restare su 200-250 parole massimo finche' non si e' sicuri di reggere l'attenzione lunga.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:09:21",
+   "frame": "frame-262",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-15",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:09:21"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-16",
+   "peso": "supporto",
+   "tipo": "Copy / Urgency e sequenza",
+   "contenuto": "Manda sempre email reminder negli ultimi ~5 giorni di promo/lancio, sfruttando l'hype gia' costruito. Aggiungibile alla sequenza esistente.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:09:34",
+   "frame": "frame-286",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-16",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:09:34"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-19",
+   "peso": "contesto",
+   "tipo": "Funnel / Urgency prodotto",
+   "contenuto": "Applica live la tecnica del capitolo 10 alla propria CTA: 'non la rifacciamo mai piu'', finestra limitata a Natale — dimostrazione diretta invece di sola teoria.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:11:15",
+   "frame": "frame-331",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-19",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:11:15"
+    }
+   ]
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-01",
+   "peso": "supporto",
+   "tipo": "Copy / Narrativa e framing",
+   "contenuto": "Apertura narrativa in 3 beat: 'Un uomo torna a casa, notifica. E' un'email. Lui legge. Qui ci sono due possibilita'.' Il video parte da una scena in prima persona (POV del lettore) invece che da una statistica, per rendere concreto il momento in cui si decide il destino di un'email inviata.",
+   "ancora": "",
+   "fonte": "nP4ojCzvjr8#00:00:00",
+   "frame": "frame-001,frame-002,frame-004",
+   "run": "nP4ojCzvjr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nP4ojCzvjr8::KA-01",
+     "run": "nP4ojCzvjr8",
+     "fonte": "nP4ojCzvjr8#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-02",
+   "peso": "supporto",
+   "tipo": "Copy / Esito negativo",
+   "contenuto": "Ramo 1: 'Uno, legge oggetto, e' spam, mette telefono in tasca e torna a casa.' La decisione di scartare si prende leggendo SOLO l'oggetto (nessuna apertura del corpo email), verdetto istantaneo e nessuna azione successiva.",
+   "ancora": "",
+   "fonte": "nP4ojCzvjr8#00:00:06",
+   "frame": "frame-005,frame-006,frame-007",
+   "run": "nP4ojCzvjr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nP4ojCzvjr8::KA-02",
+     "run": "nP4ojCzvjr8",
+     "fonte": "nP4ojCzvjr8#00:00:06"
+    }
+   ]
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Esito positivo",
+   "contenuto": "Ramo 2: 'Due. Legge oggetto. Interessante. Legge email. Compra prodotto.' Sequenza a 3 step (oggetto -> giudicato interessante -> apertura -> acquisto): l'oggetto resta il gate iniziale identico al ramo 1, cambia solo il giudizio del lettore nello stesso istante.",
+   "ancora": "",
+   "fonte": "nP4ojCzvjr8#00:00:12",
+   "frame": "frame-008,frame-009,frame-010",
+   "run": "nP4ojCzvjr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nP4ojCzvjr8::KA-03",
+     "run": "nP4ojCzvjr8",
+     "fonte": "nP4ojCzvjr8#00:00:12"
+    }
+   ]
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-04",
+   "peso": "portante",
+   "tipo": "Copy / Tesi centrale",
+   "contenuto": "Chiusura: 'Ogni volta che invii puo' accadere. Unica cosa che fa differenza, se sai fare email marketing strategico.' I due esiti (spam-bin vs acquisto) sono presentati come casuali di default; la sola variabile che sposta l'ago e' la competenza strategica del mittente.",
+   "ancora": "",
+   "fonte": "nP4ojCzvjr8#00:00:18",
+   "frame": "frame-011,frame-012,frame-013,frame-014",
+   "run": "nP4ojCzvjr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nP4ojCzvjr8::KA-04",
+     "run": "nP4ojCzvjr8",
+     "fonte": "nP4ojCzvjr8#00:00:18"
+    }
+   ]
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-05",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Le email di follow-up sono enfatizzate come leva a costo molto più basso degli annunci pubblicitari — motivo per cui il corso dedica sezioni dedicate a email/upsell (9-11).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-01#\"importanza-del-funnel-strategico\"",
+   "frame": "",
+   "run": "outfunnel-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Due varianti di email marketing: Automazione (sequenza automatica post-iscrizione) vs Blast (invio manuale a tutta la lista).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-03#\"generare-contatti-per-email-marketing\"",
+   "frame": "",
+   "run": "outfunnel-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "4 tipologie di email nel funnel: marketing (sequenze automatiche), blast (una tantum a tutti), conferma (migliora deliverability), carrello abbandonato.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-07#\"tipologie-di-email\"",
+   "frame": "",
+   "run": "outfunnel-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "3 strategie email distinte: Blast (invio singolo a tutta la lista, non ripetuto), Sequenza automatica di vendita (3-4 email ravvicinate post-iscrizione), Sequenza di follow-up (per chi non ha comprato dopo la prima sequenza).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-10#intero-riassunto",
+   "frame": "",
+   "run": "outfunnel-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Regola operativa per il Blast: evitare di inviarlo a chi sta già ricevendo un'automazione, per non sovraccaricare — strategia avanzata: liste separate per chi ha completato la sequenza automatica prima di iniziare a inviargli blast.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-10#\"1.-email-blast\"",
+   "frame": "",
+   "run": "outfunnel-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "La sequenza automatica di vendita ha un timing tipico: 3-4 email, una al giorno; ogni email tratta un aspetto specifico (presentazione, dubbi, benefici) senza ripetizioni.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-10#\"2.-sequenza-automatica-per-la-vendita\"",
+   "frame": "",
+   "run": "outfunnel-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-004",
+   "peso": "portante",
+   "tipo": "email-copy",
+   "contenuto": "Anatomia email copy (esempio reale Parola di Librai): corpo con valore per il lettore + 2 CTA tematici ('SCOPRI LO SPECIALE' / 'CONSIGLI DAI LIBRAI'). Email dà valore prima, poi converte.",
+   "ancora": "",
+   "fonte": "t67-j2LiXgQ#0:02:38",
+   "frame": "frame-079.png",
+   "run": "t67-j2LiXgQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-04",
+   "peso": "portante",
+   "tipo": "Copywriting / Esempio reale email",
+   "contenuto": "Anatomia email copy (esempio reale mostrato a schermo: newsletter 'Parola di Librai'): corpo con contenuto di valore per il lettore + 2 CTA tematici distinti ('SCOPRI LO SPECIALE' / 'CONSIGLI DAI LIBRAI'). L'email da' prima valore, poi converte.",
+   "ancora": "",
+   "fonte": "t67-j2LiXgQ#0:02:38",
+   "frame": "frame-079",
+   "run": "t67-j2LiXgQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "t67-j2LiXgQ::KA-04",
+     "run": "t67-j2LiXgQ",
+     "fonte": "t67-j2LiXgQ#0:02:38"
+    }
+   ]
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-01",
+   "peso": "supporto",
+   "tipo": "Copy / Personalizzazione - esempio",
+   "contenuto": "Esempio d'apertura: quando un brand come Decathlon manda una mail promozionale, il testo cambia in automatico in base al nome fornito dall'utente in fase di iscrizione ('Ciao Andrei...' / 'Ciao Maria...' / 'Ciao Roberto...'). Il dato (nome, data di nascita, genere) viene raccolto al momento della creazione dell'account e riutilizzato per personalizzare le comunicazioni successive.",
+   "ancora": "",
+   "fonte": "yX0XZh2PSYo#00:00:00",
+   "frame": "frame-001,003,005,010",
+   "run": "yX0XZh2PSYo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "yX0XZh2PSYo::KA-01",
+     "run": "yX0XZh2PSYo",
+     "fonte": "yX0XZh2PSYo#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-02",
+   "peso": "portante",
+   "tipo": "Definizioni / Email marketing",
+   "contenuto": "Definizione operativa: i merge tag sono campi che vengono cambiati automaticamente in base alla persona a cui e' destinata la mail — puo' esserci il nome, l'email, il cognome o un'altra informazione che l'utente ha fornito al momento dell'iscrizione.",
+   "ancora": "",
+   "fonte": "yX0XZh2PSYo#00:00:15",
+   "frame": "frame-009,013,017",
+   "run": "yX0XZh2PSYo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "yX0XZh2PSYo::KA-02",
+     "run": "yX0XZh2PSYo",
+     "fonte": "yX0XZh2PSYo#00:00:15"
+    }
+   ]
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-03",
+   "peso": "supporto",
+   "tipo": "Positioning / Livello competenza",
+   "contenuto": "Distinzione di livello: gli 'email marketer basilari' sanno cos'e' un merge tag (concetto base), ma chi opera a un livello piu' avanzato conosce anche i sostituti/fallback ai merge tag — la vera leva di differenziazione non e' il concetto base, ma la gestione dei casi limite.",
+   "ancora": "",
+   "fonte": "yX0XZh2PSYo#00:00:30",
+   "frame": "frame-020",
+   "run": "yX0XZh2PSYo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "yX0XZh2PSYo::KA-03",
+     "run": "yX0XZh2PSYo",
+     "fonte": "yX0XZh2PSYo#00:00:30"
+    }
+   ]
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-04",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern personalizzazione",
+   "contenuto": "Problema pratico: se scrivi 'Ciao, [nome],' e il destinatario non ha un nome registrato nel CRM, con un merge tag semplice quello spazio dopo 'Ciao,' rimane vuoto — un difetto visibile che rovina la mail personalizzata.",
+   "ancora": "",
+   "fonte": "yX0XZh2PSYo#00:00:43",
+   "frame": "frame-023,024,025",
+   "run": "yX0XZh2PSYo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "yX0XZh2PSYo::KA-04",
+     "run": "yX0XZh2PSYo",
+     "fonte": "yX0XZh2PSYo#00:00:43"
+    }
+   ]
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-05",
+   "peso": "portante",
+   "tipo": "Metodo / Merge tag fallback",
+   "contenuto": "Soluzione: con alcuni CRM puoi impostare un fallback alternativo al posto dello spazio vuoto — sintassi tipo 'Ciao, [nome/iscritto], offerta per te': se c'e' il nome, il sistema stampa 'Ciao, Andrei'; se il nome manca, stampa 'Ciao, Iscritto' invece di lasciare un buco. Logica condizionale: campo primario -> se assente, campo/valore di riserva.",
+   "ancora": "",
+   "fonte": "yX0XZh2PSYo#00:00:50",
+   "frame": "frame-028,029,030",
+   "run": "yX0XZh2PSYo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "yX0XZh2PSYo::KA-05",
+     "run": "yX0XZh2PSYo",
+     "fonte": "yX0XZh2PSYo#00:00:50"
+    }
+   ]
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-06",
+   "peso": "supporto",
+   "tipo": "Metodo / Merge tag fallback - generalizzazione",
+   "contenuto": "La stessa tecnica di fallback non si limita al saluto iniziale: si puo' applicare a qualunque altro merge tag nel corpo dell'email, es. '[nome/CTA]', '[nome/Senti]' o '[nome/Ascolta]' per invitare a 'leggere bene' in modo naturale anche quando manca il dato primario — il pattern condizionale e' riutilizzabile su qualsiasi punto del copy, non solo sul nome.",
+   "ancora": "",
+   "fonte": "yX0XZh2PSYo#00:01:06",
+   "frame": "frame-034,037,039,043",
+   "run": "yX0XZh2PSYo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "yX0XZh2PSYo::KA-06",
+     "run": "yX0XZh2PSYo",
+     "fonte": "yX0XZh2PSYo#00:01:06"
+    }
+   ]
+  },
+  {
+   "uid": "yX0XZh2PSYo::KA-07",
+   "peso": "contesto",
+   "tipo": "Applicazione / Azione consigliata",
+   "contenuto": "Chiusura pratica: definita 'una semplice modifica che puoi fare oggi stesso al tuo email marketing o a quello del tuo cliente per fare piu' soldi' — intervento a basso sforzo/alto impatto, applicabile immediatamente.",
+   "ancora": "",
+   "fonte": "yX0XZh2PSYo#00:01:24",
+   "frame": "frame-044,045,046",
+   "run": "yX0XZh2PSYo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "yX0XZh2PSYo::KA-07",
+     "run": "yX0XZh2PSYo",
+     "fonte": "yX0XZh2PSYo#00:01:24"
+    }
+   ]
+  }
+ ]
+}

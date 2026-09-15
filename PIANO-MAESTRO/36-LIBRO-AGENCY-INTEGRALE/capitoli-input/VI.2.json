@@ -1,0 +1,689 @@
+{
+ "capitolo": "VI.2",
+ "parte": "VI.2",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Headline e hook",
+ "libro": "VI",
+ "libro_titolo": "Contenuto, brand, lanci",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "3zJpI8-7TW4::KA-01",
+  "9CuQI0Cr4Pg::KA-15",
+  "IYd-VOngDog::KA-01",
+  "L5_Z63nxXjI::KA-14",
+  "NydMBZ2nUTE::KA-01",
+  "Pv5uzIxp96U::KA-12",
+  "Pv5uzIxp96U::KA-13",
+  "Pv5uzIxp96U::KA-18",
+  "_yUzEe29aTQ::KA-01",
+  "_yUzEe29aTQ::KA-04",
+  "k_DXsUCIkr8::KA-01",
+  "lQMO0LdeI2c::KA-04",
+  "lQMO0LdeI2c::KA-05",
+  "lQMO0LdeI2c::KA-14",
+  "lQMO0LdeI2c::KA-15",
+  "lQMO0LdeI2c::KA-16",
+  "max17-v14::KA-003",
+  "max17-v14::KA-004",
+  "max17-v14::KA-005",
+  "max17-v14::KA-007",
+  "max18-v03-belli-token::KA-043",
+  "nRm7JLsP1bc::KA-01",
+  "t67-j2LiXgQ::KA-014",
+  "t67-j2LiXgQ::KA-14",
+  "uqa06rlgmj4::KA-02",
+  "uqa06rlgmj4::KA-03",
+  "uqa06rlgmj4::KA-04",
+  "uqa06rlgmj4::KA-05",
+  "uqa06rlgmj4::KA-06",
+  "uqa06rlgmj4::KA-07"
+ ],
+ "fonti_integrali": {
+  "3zJpI8-7TW4": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/3zJpI8-7TW4\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\3zJpI8-7TW4\\contenuto-integrale.md"
+  ],
+  "9CuQI0Cr4Pg": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/9CuQI0Cr4Pg\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\9CuQI0Cr4Pg\\contenuto-integrale.md"
+  ],
+  "IYd-VOngDog": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/IYd-VOngDog\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\IYd-VOngDog\\contenuto-integrale.md"
+  ],
+  "L5_Z63nxXjI": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/L5_Z63nxXjI\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\L5_Z63nxXjI\\contenuto-integrale.md"
+  ],
+  "NydMBZ2nUTE": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/NydMBZ2nUTE\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NydMBZ2nUTE\\contenuto-integrale.md"
+  ],
+  "Pv5uzIxp96U": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Pv5uzIxp96U\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Pv5uzIxp96U\\contenuto-integrale.md"
+  ],
+  "VYyIF1r6tkw": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/VYyIF1r6tkw\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\VYyIF1r6tkw\\contenuto-integrale.md"
+  ],
+  "_yUzEe29aTQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/_yUzEe29aTQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\_yUzEe29aTQ\\contenuto-integrale.md"
+  ],
+  "k_DXsUCIkr8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/k_DXsUCIkr8\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\k_DXsUCIkr8\\contenuto-integrale.md"
+  ],
+  "lQMO0LdeI2c": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/lQMO0LdeI2c\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\lQMO0LdeI2c\\contenuto-integrale.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max17-v14": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v14\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v14\\video-analysis.md"
+  ],
+  "max18-v03-belli-token": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\video-analysis.md"
+  ],
+  "nRm7JLsP1bc": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/nRm7JLsP1bc\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\nRm7JLsP1bc\\contenuto-integrale.md"
+  ],
+  "t67-j2LiXgQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/memory-empire/knowledge/t67-j2LiXgQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\t67-j2LiXgQ\\contenuto-integrale.md"
+  ],
+  "uqa06rlgmj4": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/uqa06rlgmj4\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\uqa06rlgmj4\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "3zJpI8-7TW4::KA-01",
+   "peso": "supporto",
+   "tipo": "Copy / Hook con dato statistico",
+   "contenuto": "Apertura con claim numerico: 'un buon pulsante scritto bene aumenta le conversioni di 10 punti percentuale, e questa e' scienza' - seguito da credenziali quantificate (agenzia 10 collaboratori, 3700+ ordini, 250k+ follower) a supporto dell'autorita'.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:00:03",
+   "frame": "frame-001",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-01",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:00:03"
+    }
+   ]
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-15",
+   "peso": "portante",
+   "tipo": "Copywriting / Formula hook",
+   "contenuto": "Formula hook da social proof aspirazionale: 'Hai presente [cosa che hanno] [gruppo aspirazionale] nelle loro [luogo]? Che hanno tutti [nelle loro camere]? Sono questi.' Funziona per 4 motivi: 'Hai presente' presume conoscenza pregressa (crea in-group); il gruppo aspirazionale (es. YouTuber) fa leva sul desiderio di somigliargli; 'che hanno tutti' genera FOMO; 'Sono questi' e' una rivelazione del prodotto sicura e concisa.",
+   "ancora": "",
+   "fonte": "9CuQI0Cr4Pg#0:15:31",
+   "frame": "frame-465",
+   "run": "9CuQI0Cr4Pg",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "9CuQI0Cr4Pg::KA-15",
+     "run": "9CuQI0Cr4Pg",
+     "fonte": "9CuQI0Cr4Pg#0:15:31"
+    }
+   ]
+  },
+  {
+   "uid": "IYd-VOngDog::KA-01",
+   "peso": "portante",
+   "tipo": "Struttura hook / Retorica persuasiva",
+   "contenuto": "Il reel usa una domanda retorica per smontare l'assunzione implicita del pubblico prima di rivelare il vero collo di bottiglia. Sequenza esatta: (1) hook con cifra ('mi pagano migliaia su migliaia ogni mese per scrivere copy'), (2) promessa di rivelazione mancata ('ma se avessi saputo questa cosa prima, stavi facendo ancora più soldi'), (3) domanda che nomina l'assunzione di default del pubblico ('tu pensi che scrivere Copy sia questione di scrivere?'), (4) conferma parziale + smentita ('Sì, ma c'è una fase ancora più importante'). Tecnica generalizzabile: nominare esplicitamente il misconception del pubblico prima di correggerlo aumenta l'attenzione perché il lettore/spettatore si riconosce nell'assunzione, rendendo la correzione successiva più memorabile di un'affermazione diretta.",
+   "ancora": "",
+   "fonte": "IYd-VOngDog#00:00:09",
+   "frame": "frame-005/006/007",
+   "run": "IYd-VOngDog",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IYd-VOngDog::KA-01",
+     "run": "IYd-VOngDog",
+     "fonte": "IYd-VOngDog#00:00:09"
+    }
+   ]
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-14",
+   "peso": "supporto",
+   "tipo": "Copy / Miglior esempio del video",
+   "contenuto": "'Un profumo all'altezza di uomini in grado di scegliere' dichiarato il MIGLIOR copy del video — 'in grado di scegliere' comunica implicitamente status/desiderabilità senza dichiararlo esplicitamente.",
+   "ancora": "",
+   "fonte": "L5_Z63nxXjI#00:10:39",
+   "frame": "frame-304",
+   "run": "L5_Z63nxXjI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "L5_Z63nxXjI::KA-14",
+     "run": "L5_Z63nxXjI",
+     "fonte": "L5_Z63nxXjI#00:10:39"
+    }
+   ]
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-01",
+   "peso": "supporto",
+   "tipo": "Copy / Hook - domanda scettica",
+   "contenuto": "'Ma The Wolf of Wall Street vendevano veramente o son tutte cazzate? Questo e' il reale copione che usavano durante la vendita' - hook che nomina lo scetticismo del pubblico prima di rispondere, invece di affermare direttamente.",
+   "ancora": "",
+   "fonte": "NydMBZ2nUTE#00:00:00",
+   "frame": "frame-001,002,003",
+   "run": "NydMBZ2nUTE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "NydMBZ2nUTE::KA-01",
+     "run": "NydMBZ2nUTE",
+     "fonte": "NydMBZ2nUTE#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-12",
+   "peso": "supporto",
+   "tipo": "Copy / Targeting linguistico",
+   "contenuto": "Il termine 'bambina' nella headline richiama una bambina di 12 anni, incoerente col target reale (donne adulte). Alternative valutate: 'ragazza' (meglio), 'giovane' (scartata, vedi KA-13).",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:15:13",
+   "frame": "frame-457",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-12",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:15:13"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-13",
+   "peso": "supporto",
+   "tipo": "Copy / Implicazione negativa nel confronto temporale",
+   "contenuto": "'Come quando eri giovane' implica che ORA sei vecchia - effetto collaterale negativo non intenzionale del confronto col passato. Alternative: 'come anni fa' o 'come nei tuoi migliori ricordi', che non implicano giudizio sul presente.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:16:15",
+   "frame": "frame-457",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-13",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:16:15"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-18",
+   "peso": "portante",
+   "tipo": "Copy / Soluzione in headline - errore strutturale",
+   "contenuto": "Regola forte: la headline non deve mai contenere la SOLUZIONE - nel 999 permille dei casi deve contenere il Pain Point. Mettere la soluzione in apertura salta gli step di consapevolezza necessari.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:25:53",
+   "frame": "frame-800",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-18",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:25:53"
+    }
+   ]
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-01",
+   "peso": "contesto",
+   "tipo": "Copy / Hook - universalita'",
+   "contenuto": "Apertura che allarga l'audience ('non importa se sei marketer, imprenditore, copywriter o funnel operator') prima di promettere chiarezza su un concetto 'fondamentale' - hook di chiarezza concettuale, non statistico.",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:00:00",
+   "frame": "frame-001",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-01",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-01",
+   "peso": "supporto",
+   "tipo": "Copy / Hook bait-and-switch",
+   "contenuto": "'Lei ti sostituisce... i copywriter sono finiti' poi twist: 'in realta' non e' lei a sostituirti, ma chissa' usarlo meglio di te' - stessa tesi del video 21 (Hormozi), qui in un funnel di lancio evento.",
+   "ancora": "",
+   "fonte": "_yUzEe29aTQ#00:00:00",
+   "frame": "frame-001",
+   "run": "_yUzEe29aTQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "_yUzEe29aTQ::KA-01",
+     "run": "_yUzEe29aTQ",
+     "fonte": "_yUzEe29aTQ#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-04",
+   "peso": "supporto",
+   "tipo": "Copy / Autovalutazione + mockery",
+   "contenuto": "Domande retoriche tecniche (sai fare agent? automatizzare processi? sales page con AI decente?) seguite da mockery di un prompt generico da principiante ('dammi 5 idee per una mail' con risposta derisoria) - motivazione tramite lieve imbarazzo da auto-riconoscimento.",
+   "ancora": "",
+   "fonte": "_yUzEe29aTQ#00:01:29",
+   "frame": "frame-050",
+   "run": "_yUzEe29aTQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "_yUzEe29aTQ::KA-04",
+     "run": "_yUzEe29aTQ",
+     "fonte": "_yUzEe29aTQ#00:01:29"
+    }
+   ]
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-01",
+   "peso": "supporto",
+   "tipo": "Copy / Hook - esclusivita e tempismo",
+   "contenuto": "'Ho messo mano sul vero copione che usano in The Wolf of Wall Street, perche' il momento in cui lo leggete sul Wall Street Journal ormai e' troppo tardi' - framing di informazione privilegiata/anticipata rispetto a fonti mainstream.",
+   "ancora": "",
+   "fonte": "k_DXsUCIkr8#00:00:00",
+   "frame": "frame-001",
+   "run": "k_DXsUCIkr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "k_DXsUCIkr8::KA-01",
+     "run": "k_DXsUCIkr8",
+     "fonte": "k_DXsUCIkr8#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-02",
+   "peso": "contesto",
+   "tipo": "Copy / Autorita - fonte storica reale",
+   "contenuto": "Stratton Oakmont (azienda del film) e' esistita realmente, i venditori usavano questo script per le chiamate - prova di autorita' basata su 'e' successo davvero', non solo su notorieta'.",
+   "ancora": "",
+   "fonte": "k_DXsUCIkr8#00:00:09",
+   "frame": "frame-006",
+   "run": "k_DXsUCIkr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "k_DXsUCIkr8::KA-02",
+     "run": "k_DXsUCIkr8",
+     "fonte": "k_DXsUCIkr8#00:00:09"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-04",
+   "peso": "supporto",
+   "tipo": "COPY-CRITIQUE",
+   "contenuto": "'Semplicemente in forma' = tagline italiana McFit. Funziona come slogan generico ma non differenzia. L'originale tedesco ha più mordente — la traduzione appiattisce. Per brand internazionali: verificare se la versione originale aveva più forza prima di tradurre.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:05:38",
+   "frame": "frame-0170.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-04",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:05:38"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-05",
+   "peso": "portante",
+   "tipo": "PRINCIPIO",
+   "contenuto": "Regola Brand Famoso: 'Dovete sempre evitare per quanto possibile di dire questo è X.' Per brand noti (McFit, iPhone, Dyson), il pubblico sa già cosa sono. La headline NON deve spiegare il brand — deve comunicare perché scegliere questo vs concorrenza.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:06:38",
+   "frame": "frame-0200.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-05",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:06:38"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-14",
+   "peso": "portante",
+   "tipo": "REGOLA",
+   "contenuto": "Headline ≠ Nome del prodotto. 'Non puoi usare come headline il nome del prodotto.' 'Styler Dyson Airwrap™ Complete Long Volumise' come headline è sbagliato — è il nome del SKU, non una promessa. La headline deve comunicare un beneficio o una promessa emotiva, non il catalogo.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:24:54",
+   "frame": "frame-0748.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-14",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:24:54"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-15",
+   "peso": "supporto",
+   "tipo": "REGOLA",
+   "contenuto": "Contraddizione brand noto: Non puoi fare Direct Response su un brand famoso. 'Allo stesso tempo non mi puoi fare il Direct Response click funnel style — non mi puoi fare sei stanca di capelli non a modo? Prendi il [prodotto].' Per brand premium/noti, il tono DR stride con il posizionamento e danneggia il brand.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:25:14",
+   "frame": "frame-0748.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-15",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:25:14"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-16",
+   "peso": "supporto",
+   "tipo": "ESEMPIO-POSITIVO",
+   "contenuto": "'headphones remastered — un'esperienza di ascolto senza pari' = copy Dyson valutato POSITIVAMENTE. 'Questo è molto molto meglio come Copy.' Formula: emozione/esperienza > feature, non spiega il prodotto, linguaggio aspirazionale. Questo è Slogan Vibes — il tono giusto per brand premium noti.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:29:22",
+   "frame": "frame-0864.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-16",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:29:22"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-051",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "Hook di apertura: il fatturato è 'brillante un mese e morto il successivo' anche lavorando duramente, perché i deliverable sono a posto ma il lato vendite non lo è.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#00:00",
+   "frame": "frame-001.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-003",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Passo 1 - HOOK: definizione 'The hook is how you capture the person's attention and leave them hanging.' Tecnica chiave: 'idea collision', prendere due idee fondamentalmente diverse (es. leader religioso + shot di vodka) e scontrarle nella stessa frase per creare un hook potente.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#3:21-4:45",
+   "frame": "frame-081.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-004",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Esempio integrale di hook raccontato dall'autore: nel 2009 a Calgary, prima di salire sul palco con il Dalai Lama, entra nel bar dell'hotel e ordina due shot di vodka per il nervosismo. Versione accorciata per i social (primi 3 secondi): 'I can't believe the Dalai Lama made me kick back shots of vodka.'",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#3:29-5:29",
+   "frame": "frame-081.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-005",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Citazione di Jay Shetty su hook per i social: 'The first 3 seconds, hook them. And then all the way up to 11th second, go deeper in the hook. That's when you start the story.' Applicazione: sui social l'hook sta nei primi 3 secondi, poi altri 8 secondi di contesto prima di proseguire con la storia.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#5:01-5:18",
+   "frame": "frame-091.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-007",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Secondo esempio di hook: intervista dal vivo a Londra con il miliardario Naveen Jain, che ha detto 'I don't buy that I need to spend all my free time with my kids... I make my kids see me working.' Idea collision: rompe l'aspettativa sociale che un genitore presente debba essere sempre focalizzato sui figli invece che sul lavoro.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#6:13-7:15",
+   "frame": "frame-106.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-043",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Regola editoriale che l'autore si e' fatto scrivere da Claude in un proprio style.md, letta a schermo mentre preparava questo stesso video: se il corpo di un contenuto e' pieno di numeri misurati, l'intro promette con un AVVERBIO, non con una cifra. Una cifra in apertura o e' gonfiata (e allora contraddice un video che smonta chi promette percentuali) o e' precisa (e allora non e' una promessa ma un dettaglio che lo spettatore non sa ancora dove mettere). Da qui il 'tagliare DRASTICAMENTE' della prima riga.",
+   "ancora": "se il corpo e' pieno di numeri misurati, l'intro promette con un avverbio, non con una cifra",
+   "fonte": "1Dyld3y-V7Y#10:06 (risposta di Claude a schermo, letta per intero)",
+   "frame": "frame-203.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-044",
+     "tipo": "esempio-di-metodo"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-01",
+   "peso": "portante",
+   "tipo": "Content / Hook a lista",
+   "contenuto": "Hook diretto e polarizzante: 'Queste sono tre formule di copywriting che devi smettere di usare perche' non se ne puo' piu', le usano tutti, fanno schifo'. Format 'N cose da NON fare' genera piu' curiosita' del classico 'N cose da fare' perche' va contro l'aspettativa.",
+   "ancora": "",
+   "fonte": "nRm7JLsP1bc#00:00:00",
+   "frame": "frame-001",
+   "run": "nRm7JLsP1bc",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nRm7JLsP1bc::KA-01",
+     "run": "nRm7JLsP1bc",
+     "fonte": "nRm7JLsP1bc#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-014",
+   "peso": "portante",
+   "tipo": "struttura-copy",
+   "contenuto": "Copy structure Step 1 = ATTENZIONE. Hook cattura il lettore prima che abbandoni. Senza attenzione il resto del copy non viene letto. Gate obbligatorio.",
+   "ancora": "",
+   "fonte": "t67-j2LiXgQ#0:09:35",
+   "frame": "frame-290.png",
+   "run": "t67-j2LiXgQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "t67-j2LiXgQ::KA-14",
+   "peso": "portante",
+   "tipo": "Copywriting / Struttura copy 3 step",
+   "contenuto": "Copy structure Step 1 = ATTENZIONE. Il hook cattura il lettore prima che abbandoni. Senza attenzione, il resto del copy non viene letto - e' il gate obbligatorio.",
+   "ancora": "",
+   "fonte": "t67-j2LiXgQ#0:09:35",
+   "frame": "frame-290",
+   "run": "t67-j2LiXgQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "t67-j2LiXgQ::KA-14",
+     "run": "t67-j2LiXgQ",
+     "fonte": "t67-j2LiXgQ#0:09:35"
+    }
+   ]
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-01",
+   "peso": "contesto",
+   "tipo": "Formato / Contesto reale Q&A",
+   "contenuto": "La domanda 'come creare hook perfetti' e' stata posta realmente da una persona a uno speech di Andrei a Milano - il video e' la risposta in formato street interview, non un topic scelto a tavolino.",
+   "ancora": "",
+   "fonte": "uqa06rlgmj4#00:00:00",
+   "frame": "frame-001,005,007",
+   "run": "uqa06rlgmj4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "uqa06rlgmj4::KA-01",
+     "run": "uqa06rlgmj4",
+     "fonte": "uqa06rlgmj4#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-02",
+   "peso": "portante",
+   "tipo": "Copy / Tecnica hook - principio unico",
+   "contenuto": "L'unico consiglio dato: 'prendere il tuo argomento e renderlo assurdo' - presentato esplicitamente come UN consiglio singolo, coerente col titolo '1 consiglio'.",
+   "ancora": "",
+   "fonte": "uqa06rlgmj4#00:00:09",
+   "frame": "frame-006",
+   "run": "uqa06rlgmj4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "uqa06rlgmj4::KA-02",
+     "run": "uqa06rlgmj4",
+     "fonte": "uqa06rlgmj4#00:00:09"
+    }
+   ]
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Definizione operativa assurdo",
+   "contenuto": "'Assurdo' definito come 'piu' fire, piu' flame, un po' piu' casino' - non falso o insensato, ma piu' acceso/drammatico/provocatorio della formulazione neutra.",
+   "ancora": "",
+   "fonte": "uqa06rlgmj4#00:00:20",
+   "frame": "frame-008",
+   "run": "uqa06rlgmj4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "uqa06rlgmj4::KA-03",
+     "run": "uqa06rlgmj4",
+     "fonte": "uqa06rlgmj4#00:00:20"
+    }
+   ]
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-04",
+   "peso": "supporto",
+   "tipo": "Copy / Tecnica framing telegiornale",
+   "contenuto": "Esempio: 'la gente non sa piu' aspettare' diventa piu' incisiva con tono da breaking news/telegiornale (clip TG come riferimento visivo) - prestare un registro editoriale di urgenza a un'osservazione banale.",
+   "ancora": "",
+   "fonte": "uqa06rlgmj4#00:00:14",
+   "frame": "frame-013",
+   "run": "uqa06rlgmj4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "uqa06rlgmj4::KA-04",
+     "run": "uqa06rlgmj4",
+     "fonte": "uqa06rlgmj4#00:00:14"
+    }
+   ]
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-05",
+   "peso": "supporto",
+   "tipo": "Copy / Scenario iperbolico specifico",
+   "contenuto": "Trasformare un'affermazione generica in uno scenario specifico ed esagerato: 'se la tua pazienza quando aspetti il benzinaio, in meno di un minuto hai un serio problema' - da generico a visualizzabile e iperbolico.",
+   "ancora": "",
+   "fonte": "uqa06rlgmj4#00:00:28",
+   "frame": "frame-016,017",
+   "run": "uqa06rlgmj4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "uqa06rlgmj4::KA-05",
+     "run": "uqa06rlgmj4",
+     "fonte": "uqa06rlgmj4#00:00:28"
+    }
+   ]
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-06",
+   "peso": "supporto",
+   "tipo": "Copy / Pseudo-autorita via ricerca",
+   "contenuto": "Rafforzare l'esagerazione con riferimento a 'ricerca psicologica' + screenshot suggerito - autorita presa in prestito per credibilita'. DA VERIFICARE: nessuna ricerca reale citata, presentato come artificio retorico esplicito.",
+   "ancora": "",
+   "fonte": "uqa06rlgmj4#00:00:36",
+   "frame": "frame-020",
+   "run": "uqa06rlgmj4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "uqa06rlgmj4::KA-06",
+     "run": "uqa06rlgmj4",
+     "fonte": "uqa06rlgmj4#00:00:36"
+    }
+   ]
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-07",
+   "peso": "supporto",
+   "tipo": "Meta / Onesta sul trade-off clickbait",
+   "contenuto": "Dopo l'hook esagerato: 'essere autentico e poi spiegare qual e' il problema' - riconosce esplicitamente che 'sacrifichi un po' di quello che vorresti fare' ed e' 'un po' clickbait', validando il dubbio invece di negarlo ('si' pero' devi spingere').",
+   "ancora": "",
+   "fonte": "uqa06rlgmj4#00:00:44",
+   "frame": "frame-021,025,026",
+   "run": "uqa06rlgmj4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "uqa06rlgmj4::KA-07",
+     "run": "uqa06rlgmj4",
+     "fonte": "uqa06rlgmj4#00:00:44"
+    }
+   ]
+  }
+ ]
+}

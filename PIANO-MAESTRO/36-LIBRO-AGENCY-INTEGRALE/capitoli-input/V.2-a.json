@@ -1,0 +1,2160 @@
+{
+ "capitolo": "V.2",
+ "parte": "V.2-a",
+ "parte_n": 1,
+ "parti_totali": 2,
+ "titolo": "Prompt: struttura, contesto, istruzioni",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max18-v06-JTn5pqm9ecM::KA-008",
+  "max18-v06-JTn5pqm9ecM::KA-029",
+  "max18-v06-JTn5pqm9ecM::KA-035",
+  "max18-v06-JTn5pqm9ecM::KA-103",
+  "max18-v06-JTn5pqm9ecM::KA-104",
+  "max18-v06-JTn5pqm9ecM::KA-105",
+  "max18-v06-JTn5pqm9ecM::KA-106",
+  "max18-v06-JTn5pqm9ecM::KA-107",
+  "max18-v06-JTn5pqm9ecM::KA-109",
+  "max18-v06-JTn5pqm9ecM::KA-112",
+  "max18-v06-JTn5pqm9ecM::KA-113",
+  "max18-v06-JTn5pqm9ecM::KA-114",
+  "max18-v06-JTn5pqm9ecM::KA-115",
+  "max18-v06-JTn5pqm9ecM::KA-116",
+  "max18-v06-JTn5pqm9ecM::KA-117",
+  "max18-v06-JTn5pqm9ecM::KA-118",
+  "max18-v06-JTn5pqm9ecM::KA-119",
+  "max18-v06-JTn5pqm9ecM::KA-120",
+  "max18-v06-JTn5pqm9ecM::KA-122",
+  "max18-v06-JTn5pqm9ecM::KA-127",
+  "max18-v06-JTn5pqm9ecM::KA-128",
+  "max18-v06-JTn5pqm9ecM::KA-129",
+  "max18-v06-JTn5pqm9ecM::KA-130",
+  "max18-v06-JTn5pqm9ecM::KA-131",
+  "max18-v06-JTn5pqm9ecM::KA-132",
+  "max18-v06-JTn5pqm9ecM::KA-136",
+  "max18-v06-JTn5pqm9ecM::KA-137",
+  "max18-v06-JTn5pqm9ecM::KA-138",
+  "max18-v06-JTn5pqm9ecM::KA-139",
+  "max18-v06-JTn5pqm9ecM::KA-140",
+  "max18-v06-JTn5pqm9ecM::KA-144",
+  "max18-v06-JTn5pqm9ecM::KA-152",
+  "max18-v08-DI5aWJiFAt8::KA-028",
+  "max18-v08-DI5aWJiFAt8::KA-037",
+  "max18-v08-DI5aWJiFAt8::KA-038",
+  "max18-v08-DI5aWJiFAt8::KA-039",
+  "max18-v08-DI5aWJiFAt8::KA-040",
+  "max18-v08-DI5aWJiFAt8::KA-043",
+  "max18-v08-DI5aWJiFAt8::KA-064",
+  "max18-v08-DI5aWJiFAt8::KA-065",
+  "max18-v08-DI5aWJiFAt8::KA-066",
+  "max18-v08-DI5aWJiFAt8::KA-067",
+  "max18-v08-DI5aWJiFAt8::KA-068",
+  "max18-v08-DI5aWJiFAt8::KA-069",
+  "max18-v08-DI5aWJiFAt8::KA-070",
+  "max18-v08-DI5aWJiFAt8::KA-071",
+  "max18-v08-DI5aWJiFAt8::KA-072",
+  "max18-v08-DI5aWJiFAt8::KA-073",
+  "max18-v08-DI5aWJiFAt8::KA-074",
+  "max18-v08-DI5aWJiFAt8::KA-075",
+  "max18-v08-DI5aWJiFAt8::KA-076",
+  "max18-v08-DI5aWJiFAt8::KA-078",
+  "max18-v08-DI5aWJiFAt8::KA-105",
+  "max18-v08-DI5aWJiFAt8::KA-106",
+  "max18-v08-DI5aWJiFAt8::KA-120",
+  "max18-v08-DI5aWJiFAt8::KA-122",
+  "max18-v08-DI5aWJiFAt8::KA-123",
+  "max18-v09-NmoOZVTrTXA::KA-209",
+  "max18-v09-NmoOZVTrTXA::KA-218",
+  "max18-v09-NmoOZVTrTXA::KA-219",
+  "max18-v09-NmoOZVTrTXA::KA-226",
+  "max18-v09-NmoOZVTrTXA::KA-230",
+  "max18-v09-NmoOZVTrTXA::KA-247",
+  "max18-v09-NmoOZVTrTXA::KA-248",
+  "max18-v09-NmoOZVTrTXA::KA-249",
+  "max18-v09-NmoOZVTrTXA::KA-273",
+  "max18-v09-NmoOZVTrTXA::KA-274",
+  "max17-v07-rizzo-prompt::KA-006",
+  "max17-v07-rizzo-prompt::KA-007",
+  "max17-v07-rizzo-prompt::KA-008",
+  "max17-v07-rizzo-prompt::KA-009",
+  "max17-v07-rizzo-prompt::KA-010",
+  "max17-v07-rizzo-prompt::KA-011",
+  "max17-v07-rizzo-prompt::KA-021",
+  "max17-v07-rizzo-prompt::KA-022",
+  "cs2online-lezione-07::KA-01",
+  "cs2online-lezione-07::KA-02",
+  "cs2online-lezione-07::KA-03",
+  "cs2online-lezione-07::KA-04",
+  "cs2online-lezione-08::KA-02",
+  "cs2online-lezione-08::KA-03",
+  "cs2online-lezione-08::KA-04",
+  "cs2online-lezione-02::KA-01",
+  "cs2online-lezione-02::KA-09",
+  "cs2online-lezione-02::KA-10",
+  "cs2online-lezione-02::KA-11",
+  "cs2online-lezione-06::KA-01",
+  "cs2online-lezione-06::KA-02",
+  "cs2online-lezione-06::KA-04",
+  "cs2online-lezione-06::KA-05",
+  "cs2online-lezione-11::KA-03",
+  "cs2online-lezione-11::KA-04",
+  "cs2online-lezione-11::KA-06",
+  "cs2online-lezione-11::KA-07"
+ ],
+ "fonti_integrali": {
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ],
+  "max17-v07-rizzo-prompt": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\video-analysis.md"
+  ],
+  "cs2online-lezione-07": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-07\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-08": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-08\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-02\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-06": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-06\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-11": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-11\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-008",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Metafora dei due coni per spiegare cosa significa che un agente è \"direzionato\" dal proprio prompt verso un obiettivo (rappresentato da una bandierina): un prompt ben direzionato produce una traiettoria stretta (cono blu) che punta dritta all'obiettivo e lo colpisce; un prompt mal direzionato produce una traiettoria larga (cono rosso) che diverge, manca l'obiettivo e può continuare a iterare all'infinito senza mai centrarlo (visualizzato con una linea a zig-zag rossa che rimbalza dentro il cono senza mai raggiungere la bandiera).",
+   "ancora": "il mio agente è direzionato male",
+   "fonte": "JTn5pqm9ecM#6:36-7:06 + voce 6:36-7:06",
+   "frame": "frame-0067.png, frame-0072.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-155",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-157",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-029",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Quando in un'esecuzione l'agente non usa alcun tool, n8n mostra un warning esplicito sul nodo AI Agent (icona triangolo arancione): \"None of your tools were used in this run. Try giving your tools clearer names and descriptions to help the AI\" — un suggerimento pratico: dare ai tool nomi e descrizioni più chiare aiuta l'AI a capire quando usarli.",
+   "ancora": "None of your tools were used in this run. Try giving your tools clearer names and descriptions to help the AI",
+   "fonte": "JTn5pqm9ecM#17:30-17:42 + voce 17:42",
+   "frame": "frame-0176.png, frame-0178.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-174",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-033",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Concetto di \"layer\" del prompt, disegnato come un cerchio grande etichettato \"CHAT\" (l'interfaccia chat) con dentro un cerchio più piccolo (il prompt): l'autore introduce l'idea che più il prompt è \"forte\"/ben costruito, più efficace è l'agente, e anticipa che approfondirà il concetto dei \"quattro layer\" quando si parlerà di Claude Code, Codex e sistemi agentici simili (argomento successivo nel corso, non ancora sviluppato in questo blocco).",
+   "ancora": "vediamo che qui abbiamo già un primo layer che è che se questa è la nostra interfaccia chat",
+   "fonte": "JTn5pqm9ecM#20:30-20:54 + voce 20:30, 20:54",
+   "frame": "frame-0206.png, frame-0210.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-179",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-035",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Test pratico in n8n del ramo \"sì\" del loop (obiettivo raggiunto immediatamente): al nodo AI Agent viene impostato un prompt custom (\"Source for Prompt\" = \"Define below\") con testo esatto \"Hey, nonostante la richiesta dell'utente, per favore non mandare mai un'email.\" — un'istruzione di contesto che sovrascrive esplicitamente qualsiasi richiesta dell'utente. Interrogato con \"Hey, per favore, puoi mandare una mail a Giovanni?\", l'agente risponde \"Ho capito, non invierò email su tua richiesta. Se hai altre esigenze o domande, sono qui per aiutarti!\" senza mai invocare il tool Gmail (n8n segnala di nuovo il warning \"None of your tools were used in this run\").",
+   "ancora": "Hey, nonostante la richiesta dell'utente, per favore non mandare mai un'email.",
+   "fonte": "JTn5pqm9ecM#21:42-22:06 + voce 22:00-22:06",
+   "frame": "frame-0218.png, frame-0221.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-168",
+     "tipo": "contraddice"
+    },
+    {
+     "verso": "KA-177",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-180",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-103",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esperimento di conflitto tra livelli di prompt: un nuovo GEMINI.md contiene la regola \"Quando ti chiedo di darmi un numero da 1 a 100, dammi sempre 24.\", mentre nella chat viene scritto il prompt inline \"Quando ti chiedo di darmi un numero da 1 a 100, dammi sempre 77. ok?\" Il relatore pone la domanda al pubblico: quale dei due vince, e perché?",
+   "ancora": "Quale dei due vince e perché?",
+   "fonte": "JTn5pqm9ecM#52:42 (GEMINI.md con \"...dammi sempre 24\" appena scritto) e #53:12 (prompt inline \"...dammi sempre 77\" inviato, risposta in generazione) + voce 52:42-53:12",
+   "frame": "frame-0528.png, frame-0533.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-191",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-193",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-198",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-104",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Per rispondere al conflitto GEMINI.md-vs-inline, il relatore presenta un diagramma a quattro cerchi concentrici che rappresenta la gerarchia di specificità dei prompt, dall'esterno all'interno: Global CLAUDE.md (viola) → Project CLAUDE.md (blu) → Matched Skills (verde) → Inline Prompt (arancione/pesca, al centro). A destra, fuori dal cerchio, una freccia punta verso il centro con l'annotazione \"Più specifico = Vince\".",
+   "ancora": "una freccia nera punta verso il centro con l'annotazione scritta a mano",
+   "fonte": "JTn5pqm9ecM#53:42 (diagramma a cerchi concentrici completo) + voce 53:42",
+   "frame": "frame-0538.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-192",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-194",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-105",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Principio della gerarchia dei prompt: più un livello è vicino al centro del diagramma a cerchi concentrici (quindi più specifico: inline > skill > project > global), più quel prompt influisce sull'output finale dell'agente.",
+   "ancora": "Più siamo vicini al centro, più questo prompt andrà ad influire sull'output",
+   "fonte": "JTn5pqm9ecM#54:12 (stesso diagramma, pannello strumenti aperto) + voce 54:12",
+   "frame": "frame-0543.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-192",
+     "tipo": "definisce",
+     "perche": "la regola di specificità spiega chi vince tra la regola \"24\" in GEMINI.md e la regola \"77\" inline nel test appena mostrato: vince l'inline, perché più vicino al centro del cerchio"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-106",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Livello \"Global CLAUDE.md\" (anello più esterno, viola) del diagramma di gerarchia dei prompt: regole globali dell'utente, attive su TUTTI i progetti.",
+   "ancora": "Regole globali utente, attive su TUTTI i progetti",
+   "fonte": "JTn5pqm9ecM#53:42 (anello esterno \"Global CLAUDE.md\" del diagramma) + voce 53:42-54:48",
+   "frame": "frame-0538.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-107",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Livello \"Project CLAUDE.md\" (secondo anello, blu, sottolineato dal relatore) del diagramma di gerarchia dei prompt: regole specifiche del repo.",
+   "ancora": "Regole specifiche del repo",
+   "fonte": "JTn5pqm9ecM#53:42 (anello \"Project CLAUDE.md\") e #54:30 (sottolineato a mano) + voce 53:42-54:48",
+   "frame": "frame-0538.png, frame-0546.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-109",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Livello \"Inline Prompt\" (cerchio centrale, arancione/pesca, con la parola \"Prompt\" sottolineata) del diagramma di gerarchia: istruzione specifica del momento, il livello più specifico e quindi più forte secondo la regola \"Più specifico = Vince\".",
+   "ancora": "Istruzione specifica del momento",
+   "fonte": "JTn5pqm9ecM#53:42 (cerchio centrale \"Inline Prompt\") e #54:30 (sottolineatura su \"Prompt\") + voce 53:42-54:48",
+   "frame": "frame-0538.png, frame-0546.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-192",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-112",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Passaggio a ripresa frontale (webcam a figura intera, niente schermo): il relatore introduce l'obiettivo pratico di evitare di aprire Claude Code e cominciare subito a scrivere un prompt senza pianificare, perché così facendo il tasso di errore è alto; l'obiettivo del blocco successivo è mostrare come usare plan mode e le tecniche di \"back prompt engineering\" per evitarlo.",
+   "ancora": "come sappiamo, il tasso di errore e di",
+   "fonte": "JTn5pqm9ecM#55:42-56:12 (sequenza di webcam a figura intera senza elementi a schermo) + voce 55:42-56:12",
+   "frame": "frame-0558.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-202",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-113",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Nuovo diagramma Excalidraw a tre riquadri collegati da frecce: in alto, box viola \"BACK PROMPT ENGINEERING\" (icona lampadina), da cui si diramano due tecniche — a sinistra (freccia verde) box verde-acqua \"STEP BACK PROMPTING\" (\"TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE\", refuso \"INIETRO\" per \"INDIETRO\" riportato com'è a schermo); a destra (freccia rosa/salmone) box arancione \"REVERSE PROMPTING\" (\"TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE\").",
+   "ancora": "box **viola** con icona a lampadina: **\"BACK PROMPT ENGINEERING\"**.",
+   "fonte": "JTn5pqm9ecM#56:18 (diagramma BACK PROMPT ENGINEERING con le due tecniche) + voce 56:18",
+   "frame": "frame-0564.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-201",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-203",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-204",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-114",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Definizione di Step Back Prompting (box verde-acqua nel diagramma Back Prompt Engineering): \"TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE\" (refuso a schermo \"INIETRO\" per \"INDIETRO\").",
+   "ancora": "TECNICA DI FARE UN PASSO INIETRO PER IDENTIFICARE IL PRINCIPIO GUIDA PRIMA DI RISPONDERE",
+   "fonte": "JTn5pqm9ecM#56:18 (box \"STEP BACK PROMPTING\") + voce 56:18-57:06",
+   "frame": "frame-0564.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-202",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-205",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-115",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Definizione di Reverse Prompting (box arancione nel diagramma Back Prompt Engineering): \"TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE\".",
+   "ancora": "TECNICA DI FAR EMERGERE LE ASSUNZIONI E PORRE DOMANDE DI CHIARIMENTO PRIMA DI INIZIARE",
+   "fonte": "JTn5pqm9ecM#56:18 (box \"REVERSE PROMPTING\") + voce 56:18",
+   "frame": "frame-0564.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-202",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-216",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-116",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Diagramma dettagliato \"Fare un passo indietro prima di agire / Step-Back Prompting\": a sinistra un fumetto \"Compito specifico: Ottimizza questa query SQL\" con freccia diretta (X rossa) verso il box rosso \"Soluzione miope\" (\"Corregge il sintomo, non la causa\"); sotto, etichetta \"FIRST\" con freccia verso l'alto al box giallo \"PASSO INDIETRO -- Qual è il principio generale?\" (\"Quali sono i pattern di ottimizzazione dei database?\"), che riparte dallo stesso compito specifico ma arriva (✓ verde) al box verde \"Soluzione migliore\" (\"Capisce il perché, non solo il cosa\").",
+   "ancora": "Corregge il sintomo, non la causa",
+   "fonte": "JTn5pqm9ecM#57:36 (diagramma completo con X rossa e ✓ verde) + voce 57:36",
+   "frame": "frame-0577.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-203",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-206",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-117",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Massima conclusiva del diagramma Step-Back Prompting, scritta in fondo alla pagina: \"Chi capisce il principio risolve 100 problemi. Chi memorizza la soluzione ne risolve 1.\"",
+   "ancora": "Chi capisce il principio risolve 100 problemi.",
+   "fonte": "JTn5pqm9ecM#57:36 (righe finali del diagramma Step-Back Prompting) + voce 57:36",
+   "frame": "frame-0577.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-205",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-228",
+     "tipo": "motiva",
+     "perche": "la stessa idea — capire il principio invece di limitarsi a un output superficiale — motiva la clausola FALLIMENTO dei Prompt Contracts mostrata molte scene più avanti"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-118",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Demo pratica di Step-Back Prompting in Claude Code: da una sessione nuova e vuota, il relatore invoca il comando \"/step-back-prompting creami un bel sito web\".",
+   "ancora": "/step-back-prompting creami un bel sito web",
+   "fonte": "JTn5pqm9ecM#58:36 (comando inviato per intero, header \"Step-Back\" in arrivo) + voce 58:36",
+   "frame": "frame-0587.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-203",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-208",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-119",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Risposta \"Step-Back\" alla richiesta \"creami un bel sito web\" — sezione \"The principle\": \"A website is a tool with a job. The governing question isn't 'what should it look like?' but 'what should it do?' — specifically, what's the single conversion action a visitor should take? For a solo founder with coaching + agency + community + YouTube, the website is either a (1) lead capture funnel, (2) credibility/authority page, or (3) content hub. Each implies a radically different design.\"",
+   "ancora": "A website is a tool with a job.",
+   "fonte": "JTn5pqm9ecM#58:36-59:48 (sezione \"The principle\" della risposta Step-Back, ripresa e sottolineata in scena 211) + voce 58:36-59:48",
+   "frame": "frame-0587.png, frame-0599.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-207",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-206",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-209",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-120",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Sezione \"Reframed approach: Before touching code, we need to answer:\" della risposta Step-Back, elenco completo con sottolineature progressive nelle scene successive: 1. \"Who lands here?\" -- \"Cold traffic from YouTube? LinkedIn connections checking you out? Potential coaching clients sent a link? Each audience needs different messaging.\" 2. \"What's the ONE action?\" -- \"Book a call? Join Avanguardia? Subscribe to YouTube? A page that tries to do all three converts on none.\" 3. \"Which entity?\" -- \"Gentes AI (agency)? Giovanni Beggiato (personal brand)? Avanguardia (community)? These could be the same site or different ones.\" 4. \"What's the maintenance budget?\" -- \"A static landing page lives forever. A blog/content site needs feeding. Given your time constraint, simpler is better.\"",
+   "ancora": "Cold traffic from YouTube? LinkedIn connections checking you out?",
+   "fonte": "JTn5pqm9ecM#59:06 (elenco 1-4 per intero) e #1:00:18-1:01:30 (sottolineature progressive nelle scene 212-214) + voce 59:06-1:01:18",
+   "frame": "frame-0592.png, frame-0604.png, frame-0609.png, frame-0614.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-207",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-210",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-122",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Chiusura della risposta Step-Back, tre domande dirette in italiano: \"Dimmi: — Per chi e il sito? (il tuo ICP coaching? aziende per Gentes AI? entrambi?) — Cosa deve fare chi atterra sulla pagina? (prenotare una call? iscriversi alla community?) — Sotto quale brand? (Giovanni Beggiato, Gentes AI, Avanguardia?) — Con queste tre risposte posso costruire qualcosa di mirato, non generico.\"",
+   "ancora": "Con queste tre risposte posso costruire qualcosa di mirato, non generico.",
+   "fonte": "JTn5pqm9ecM#1:02:00 (sezione \"Dimmi:\" selezionata per intero) + voce 1:02:00",
+   "frame": "frame-0621.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-207",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-212",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-127",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Diagramma Excalidraw \"Reverse Prompting\": percorso superiore (X rossa) — box viola \"Tu\" → box verde \"Agente AI\" (fumetto \"(Assumo di sapere cosa vuoi...)\") → box arancione/rosso \"Output sbagliato -- costruito su assunzioni invisibili\"; percorso inferiore (✓ verde) — box viola \"Tu\" ↔ box azzurro \"INTERROGATORIO PREVENTIVO\" con elenco puntato \"Qual è il contesto?\", \"Ci sono vincoli?\", \"Cosa significherebbe fallire?\" → box verde \"Output preciso -- costruito su fatti, non assunzioni\". Una freccia curva collega il box \"Output sbagliato\" al box \"INTERROGATORIO PREVENTIVO\", a suggerire il percorso di correzione.",
+   "ancora": "(Assumo di sapere cosa vuoi...)",
+   "fonte": "JTn5pqm9ecM#1:03:18 (diagramma Reverse Prompting completo) + voce 1:03:18",
+   "frame": "frame-0634.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-204",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-217",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-128",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Didascalia sotto il diagramma Reverse Prompting: \"Le assunzioni invisibili sono la causa #1 di output sbagliati. Meglio 5 minuti di domande che 5 ore di lavoro buttato.\"",
+   "ancora": "Le assunzioni invisibili sono la causa #1 di output sbagliati.",
+   "fonte": "JTn5pqm9ecM#1:03:18 (didascalia sotto i due schemi) + voce 1:03:18",
+   "frame": "frame-0634.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-216",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-218",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-129",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Demo pratica di Reverse Prompting in Claude Code: il relatore invoca il comando \"/reverse-prompting su questo output\", applicandolo al recap Step-Back sulla sales page di Avanguardia+ appena generato.",
+   "ancora": "/reverse-prompting su questo output",
+   "fonte": "JTn5pqm9ecM#1:04:30 (comando \"/reverse-prompting\" evidenziato nel menu Slash Commands) e #1:05:00 (comando inviato per intero) + voce 1:04:30",
+   "frame": "frame-0646.png, frame-0651.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-204",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-213",
+     "tipo": "precede",
+     "perche": "il reverse-prompting viene lanciato sull'output del recap Step-Back appena generato, per metterlo alla prova"
+    },
+    {
+     "verso": "KA-219",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-130",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Le cinque domande di chiarimento generate dal comando /reverse-prompting, ciascuna con Default e Perché conta: \"Q1 (impatto massimo): Dove punta il CTA -- Skool direttamente o una call con te?\" (Default: link diretto alla pagina Skool, acquisto self-service; Perché conta: se punta a una call di vendita la struttura cambia in funnel di qualificazione). \"Q2: Hai testimonianze, risultati o numeri concreti da usare?\" (Default: placeholder generici; Perché conta: proof reale vs placeholder cambia la credibilità del 90%). \"Q3: Stack tecnico -- HTML/CSS statico, o vuoi un framework (React, Next.js, etc.)?\" (Default: singolo file HTML+CSS+JS minimale, zero dipendenze; Perché conta: un framework aggiunge complessità di build e manutenzione). \"Q4: Pricing visibile sulla pagina o lo scoprono solo su Skool?\" (Default: prezzo visibile con breakdown, la trasparenza filtra i lead non qualificati; Perché conta: nascondere il prezzo trasforma la sezione in 'cosa include' senza cifre). \"Q5: Stile visivo -- quale vibe?\" (Default: dark mode, moderno, tech-forward, accent color vivace; Perché conta: uno stile più caldo/accessibile cambia completamente il design). Chiusura: \"Rispondimi anche con una parola per ognuna -- 'ok' o la correzione. Poi parto.\"",
+   "ancora": "Rispondimi anche con una parola per ognuna -- \"ok\" o la correzione. Poi parto.",
+   "fonte": "JTn5pqm9ecM#1:05:00 (Q3-Q5 scrollate) e #1:05:06 (Q1-Q2 per intero) + voce 1:05:00-1:05:06",
+   "frame": "frame-0651.png, frame-0652.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-218",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-216",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-220",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-131",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Le cinque domande del Reverse Prompting seguono tutte lo stesso pattern strutturale a due parti: un \"Default\" (la scelta che l'agente farebbe se l'utente non rispondesse) seguito da \"Perché conta\" (la spiegazione dell'impatto di quella scelta sul risultato finale) — un formato ripetuto identicamente su Q1-Q5.",
+   "ancora": "Perché conta: Proof reale vs placeholder cambia la credibilità della pagina del 90%.",
+   "fonte": "JTn5pqm9ecM#1:05:00-1:05:06 (struttura Default/Perché conta ripetuta su tutte e cinque le domande) + voce 1:05:00-1:05:30",
+   "frame": "frame-0651.png, frame-0652.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-219",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-132",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Invece di rispondere punto per punto alle cinque domande, l'utente scrive: \"hey per favore, decidi tu perché questa è una demo, però aspetta prima di procedere con l'esecuzione\" — delegando le decisioni all'agente ma mantenendo un gate esplicito prima dell'esecuzione.",
+   "ancora": "decidi tu, eh perché questa è una demo, però ehm aspetta prima di procedere con l'esecuzione.",
+   "fonte": "JTn5pqm9ecM#1:08:24 (campo di input attivo, pronto a ricevere il messaggio) + voce 1:08:54",
+   "frame": "frame-0685.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-219",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-222",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-134",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Sulla lavagna Excalidraw il relatore riepiloga a mano gli elementi già forniti all'agente: icona freccia + \"CTA\", icona freccia + \"Stile\", poi \"- 3\", \"- 4\", \"- 5\", \"- 6\", \"- 7\", raggruppati da un'unica grande parentesi graffa nera, mentre dice a voce: \"abbiamo dato uno stile, abbiamo dato i un chiamiamolo elemento 3, abbiamo dato un elemento 4, un 5, un 6, un 7, abbiamo fatto tutta una serie di step infiniti.\"",
+   "ancora": "abbiamo dato uno stile, abbiamo dato i un chiamiamolo elemento 3, abbiamo dato un elemento 4, un 5, un 6, un 7",
+   "fonte": "JTn5pqm9ecM#1:09:30 (elenco CTA/Stile/3-7 con parentesi graffa) + voce 1:09:30",
+   "frame": "frame-0696.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-222",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-224",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-135",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Dopo il riepilogo degli elementi già forniti, il relatore scrive sulla lavagna una nuova domanda aperta: \"CONDIZIONI PER IL SUCCESSO?\" seguita da una freccia verso il basso e dalla scritta \"DEFINIZIONE DI SUCCESSO\", ponendo il problema di come definire in modo esplicito e verificabile quando un task è davvero completato.",
+   "ancora": "CONDIZIONI PER IL SUCCESSO?",
+   "fonte": "JTn5pqm9ecM#1:10:00 (scrittura in corso di \"CONDIZIONI PER IL SUCCESSO?\"/\"DEFINI...\") e #1:10:36 (scritta completa \"DEFINIZIONE DI SUCCESSO\") + voce 1:10:00-1:10:36",
+   "frame": "frame-0701.png, frame-0707.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-223",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-225",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-136",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Per rispondere alla domanda su come definire il successo di un task, il relatore introduce un nuovo concetto: \"Allora, per farlo introduciamo un ulteriore concetto che è un prompt contract.\"",
+   "ancora": "Allora, per farlo introduciamo un ulteriore concetto che è un prompt contract.",
+   "fonte": "JTn5pqm9ecM#1:10:48 (stacco netto sul diagramma \"Prompt Contracts\") + voce 1:10:48",
+   "frame": "frame-0709.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-224",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-226",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-137",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Diagramma \"Prompt Contracts\": riquadro centrale con bordo crema contenente 4 componenti impilati, ciascuno con icona — verde, icona bersaglio: \"OBIETTIVO -- Metrica di successo quantificabile\"; azzurro, icona lucchetto: \"VINCOLI -- Limiti rigidi e confini\"; viola, icona documento: \"FORMATO -- Forma esatta dell'output\"; rosa/rosso, icona triangolo di allerta: \"FALLIMENTO -- Condizioni esplicite di fallimento\". A sinistra una nuvoletta con X rossa \"Compito vago: Costruisci un rate limiter\" si dirama verso i 4 box; a destra le frecce dai 4 box convergono in un box verde acqua con ✓ verde \"Output preciso, qualità professionale\".",
+   "ancora": "OBIETTIVO -- Metrica di successo quantificabile",
+   "fonte": "JTn5pqm9ecM#1:10:48 (diagramma Prompt Contracts completo) + voce 1:10:48",
+   "frame": "frame-0709.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-225",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-227",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-138",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esempio guida del diagramma Prompt Contracts: un \"Compito vago: Costruisci un rate limiter\" attraversa i quattro componenti (OBIETTIVO, VINCOLI, FORMATO, FALLIMENTO) e ne esce come \"Output preciso, qualità professionale\", a differenza di un compito lasciato vago che produrrebbe un risultato generico.",
+   "ancora": "Compito vago: Costruisci un rate limiter",
+   "fonte": "JTn5pqm9ecM#1:10:48 (nuvoletta \"Compito vago\" e box finale \"Output preciso, qualità professionale\") + voce 1:10:48-1:10:54",
+   "frame": "frame-0709.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-226",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-228",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-139",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Didascalia sotto il diagramma Prompt Contracts: \"La clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.\" Il componente FALLIMENTO non è quindi decorativo: costringe l'agente a dichiarare esplicitamente cosa NON sarebbe accettabile come risultato.",
+   "ancora": "La clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.",
+   "fonte": "JTn5pqm9ecM#1:10:48 (didascalia sotto lo schema) + voce 1:10:54-1:11:24",
+   "frame": "frame-0709.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-226",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-206",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-140",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Accanto al titolo del diagramma Prompt Contracts il relatore aggiunge a mano una doppia freccia \"<=>\" seguita dalla scritta in stampatello \"PLAN MODE\", tracciando un parallelo esplicito tra il concetto di prompt contract appena introdotto e la plan mode di Claude Code, mentre commenta: \"ora noi abbiamo ancora un compito vago con un perimetro definito.\"",
+   "ancora": "posizionata in alto a destra del titolo",
+   "fonte": "JTn5pqm9ecM#1:11:24 (annotazione \"PLAN MODE\" accanto al titolo) + voce 1:11:24",
+   "frame": "frame-0715.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-226",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-141",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Esempio concreto di OBIETTIVO quantificabile nel Prompt Contract: una piccola nota manoscritta \"10 PX\" vicino al riquadro OBIETTIVO, riferita all'esempio verbale di un vincolo di design misurabile — il padding o lo spazio bianco tra due elementi del sito deve essere un massimo di 10 pixel, altrimenti il risultato non è accettabile.",
+   "ancora": "deve essere un massimo di 10 pixel, altrimenti non sono contento",
+   "fonte": "JTn5pqm9ecM#1:12:24 (annotazione \"10 PX\" vicino al riquadro OBIETTIVO) + voce 1:12:24",
+   "frame": "frame-0725.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-226",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-142",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Esempio concreto di VINCOLI nel Prompt Contract: un cerchio verde manoscritto con dentro \"< 5€\", posizionato tra il box OBIETTIVO/VINCOLI e il box verde \"Output preciso\" e collegato da una freccia verde al box VINCOLI, a rappresentare un vincolo di budget massimo esplicito.",
+   "ancora": "posizionato tra il box OBIETTIVO/VINCOLI e il box verde",
+   "fonte": "JTn5pqm9ecM#1:13:24 (annotazione \"< 5€\" con freccia verde verso VINCOLI) + voce 1:13:24",
+   "frame": "frame-0735.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-226",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-143",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-143",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Mentre introduce il concetto di VINCOLI come \"tunnel\" entro cui l'agente deve restare, il relatore disegna sulla lavagna una lunga linea ondulata a mano libera, senza forma definita e senza testo associato: un probabile scarabocchio illustrativo del percorso di un prompt \"che va dove vuole\" quando non ci sono vincoli espliciti, in contrapposizione al concetto di tunnel appena introdotto a voce.",
+   "ancora": "avere un un tunnel che rappresentano i miei vincoli.",
+   "fonte": "JTn5pqm9ecM#1:13:30 (linea ondulata isolata a sinistra del diagramma) + voce 1:13:30",
+   "frame": "frame-0736.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-226",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-144",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Demo pratica di Prompt Contracts in Claude Code: il relatore invoca il comando \"/prompt-contracts sull'output appena prodotto\", applicandolo al piano già deciso per la sales page di Avanguardia+ (dopo Step-Back e Reverse Prompting).",
+   "ancora": "/prompt-contracts sull'output appena prodotto",
+   "fonte": "JTn5pqm9ecM#1:14:18 (menu comandi aperto, digitazione \"/\") e #1:14:48 (comando inviato per intero) + voce 1:14:18-1:14:48",
+   "frame": "frame-0744.png, frame-0749.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-225",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-145",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-148",
+   "peso": "contesto",
+   "tipo": "avvertimento",
+   "contenuto": "Nel prompt vocale con cui viene lanciata la demo dei 5 agenti paralleli, il testo a schermo riporta letteralmente \"spaventassi cinque agenti\", un verosimile refuso di dettatura vocale per \"spawnassi\" pronunciato dal relatore poco prima: un esempio concreto di come la dettatura vocale possa trascrivere in modo errato termini tecnici in inglese (come \"spawn\") quando si danno comandi a voce agli agenti AI.",
+   "ancora": "verosimile refuso di dettatura vocale per \"spawnassi\" pronunciato poco prima",
+   "fonte": "JTn5pqm9ecM#37:06 (testo del prompt con \"spaventassi\" nel box \"Agent tool input\") + voce 37:06",
+   "frame": "frame-0372.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-167",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-152",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Diagramma di ricapitolazione 'Prompt Contracts' su lavagna Excalidraw (con annotazione manoscritta 'PLAN MODE' accanto al titolo): quattro riquadri impilati definiscono la tecnica - verde 'OBIETTIVO -- Metrica di successo quantificabile', blu 'VINCOLI -- Limiti rigidi e confini', viola 'FORMATO -- Forma esatta dell'output', rosa 'FALLIMENTO -- Condizioni esplicite di fallimento'. A sinistra una nuvoletta 'Compito vago: Costruisci un rate limiter' con una X rossa entra nel box a quattro riquadri; a destra ne esce un box verde scuro 'Output preciso, qualità professionale' con un segno di spunta, e sopra un'annotazione manoscritta verde cerchiata '< 5 €'. Didascalia: 'la clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.'",
+   "ancora": "la clausola FALLIMENTO impedisce all'agente di prendere scorciatoie che altrimenti razionalizzerebbe come accettabili.",
+   "fonte": "JTn5pqm9ecM#77:24 (lavagna Excalidraw, diagramma di ricapitolazione Prompt Contracts) + voce 77:20-77:30",
+   "frame": "frame-0775.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-154",
+     "tipo": "precede",
+     "perche": "Il diagramma di ricapitolazione dei Prompt Contracts chiude quel capitolo e fa da cerniera visiva subito prima che il relatore introduca il Pre-Mortem."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-028",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Prompt integrale dettato per la Demo #1 (report CRM), trascritto così come reso a schermo: 'Allora, per favore, analizza dentro la cartella di riferimento il mio file si chiama \"demo1crmexport\" e quello che vorrei che tu facessi ora è prendere i dati del CRM e farmi un reporteriassuntivo con 4 fogli principalmente. Allora, vorrei una pipeline con i venditori totali, tassi di conversione per segmento, deal fermi da più di 30 giorni con ultima data di contatto e anche 5 raccomandazioni per il nostro direttore commerciale di modo tale che possa avere un'idea di che cosa deve fare e con che priorità. E poi, per favore, assicurati che il formato sia professionale, numeri con separatore delle migliaia e percentuali con una cifra decimale.' (le parole 'report' e 'riassuntivo' compaiono fuse, probabile effetto della dettatura vocale).",
+   "ancora": "farmi un reporteriassuntivo con 4 fogli principalmente",
+   "fonte": "DI5aWJiFAt8#13:00 (bolla prompt utente, task Create CRM sales analysis report) + voce 13:00-13:30",
+   "frame": "frame-0131.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-027",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-037",
+   "peso": "portante",
+   "tipo": "anti-pattern",
+   "contenuto": "Un primo output di raccomandazioni generato da un'AI può risultare troppo generico e inutilizzabile in pratica se manca di un responsabile assegnato (owner): senza un owner, una lista di raccomandazioni rischia di non essere mai eseguita da nessuno.",
+   "ancora": "sono abbastanza generiche, giusto? ... sarebbe un disastro perché non c'è un owner, non non c'è niente",
+   "fonte": "DI5aWJiFAt8#16:54 (prima versione del Foglio Raccomandazioni, giudicata generica) + voce 16:54-17:00",
+   "frame": "frame-0170.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-038",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-038",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Una raccomandazione o azione si può definire 'azionabile' solo se rispetta due condizioni: deve essere misurabile e deve avere un owner (una persona responsabile della sua esecuzione).",
+   "ancora": "Ciò che rende una raccomandazione o un'azione azionabile è che deve essere misurabile e avere un owner.",
+   "fonte": "DI5aWJiFAt8#17:54 (prompt di correzione delle raccomandazioni) + voce 17:54-18:18",
+   "frame": "frame-0180.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-039",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-039",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Per trasformare raccomandazioni generiche in azionabili, si può chiedere esplicitamente all'AI di riscriverle secondo un formato a 4 campi: azione specifica, owner (nome della persona responsabile), scadenza (tempistica entro cui va fatta), e impatto stimato basato sui dati disponibili.",
+   "ancora": "Azione specifica ... Nome del venditore o della persona che deve prendere azioni ... Tempistica entro quando questa azione deve essere fatta (dal loaner) ... Impatto stimato sulla base dei dati che trovi all'interno del CRM.",
+   "fonte": "DI5aWJiFAt8#18:42 (formato di correzione a 4 campi) + voce 18:42-18:54",
+   "frame": "frame-0188.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-038",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-040",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Nella Demo #1, le colonne del foglio Raccomandazioni sono passate da una prima versione generica (#, Priorità, Raccomandazione, Dettaglio, Impatto Stimato, Deal Coinvolti) a una versione riscritta e azionabile (#, Azione Specifica, Owner, Scadenza, Impatto Stimato da CRM, KPI di Verifica), dopo che l'utente ha esplicitamente richiesto owner e scadenze.",
+   "ancora": "con owner, eh scadenza, impatto da CRM e KPI di verifica",
+   "fonte": "DI5aWJiFAt8#19:12 (foglio Raccomandazioni riscritto, nuove colonne) + voce 19:12-19:42",
+   "frame": "frame-0193.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-039",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-043",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Il valore che Claude Cowork genera per un'azienda è tanto più elevato quanto più chiaro è l'obiettivo che gli viene assegnato: un obiettivo vago produce risultati vaghi, uno preciso produce risultati utilizzabili.",
+   "ancora": "il valore di cowork, quindi, è tanto più elevato per un'azienda quanto ... più chiaro è l'obiettivo che dovete andare a raggiungere",
+   "fonte": "DI5aWJiFAt8#20:12 (chiusura Demo #1, generalizzazione) + voce 20:12-20:42",
+   "frame": "frame-0203.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-016",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-064",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Prompt integrale della Demo #2 (riorganizzazione fatture): 'Organizza le fatture in questa cartella (chiamata demo due fatture test). Crea una sottocartella per ogni cliente che trovi. Rinomina ogni file con questo formato: fattura-[cliente]-[numero]-[data].pdf. Se non riesci a leggere il contenuto di un file o non sei sicuro di come classificarlo, mettilo in una cartella da-verificare. NON cancellare niente. NON sovrascrivere file esistenti.'",
+   "ancora": "Rinomina ogni file con questo formato: 'fattura-[cliente]-[numero]-[data].pdf'. ... NON cancellare niente. NON sovrascrivere file esistenti.",
+   "fonte": "DI5aWJiFAt8#36:12 (bolla prompt utente, task Organize invoices by client folder) + voce 36:12-36:18",
+   "frame": "frame-0363.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-065",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-066",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-069",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-077",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-065",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Best practice per scrivere prompt a Cowork n.1 — Siate precisi: specificare esattamente cosa fare (es. struttura delle sottocartelle, formato esatto di rinomina) invece di istruzioni generiche, perché più si è specifici meno margine di interpretazione errata si lascia al modello.",
+   "ancora": "Non ho scritto \"metti ordine\" o \"pulisci\". Ho detto esattamente cosa fare ... Piu' siete specifici, meno margine di interpretazione lasciate.",
+   "fonte": "DI5aWJiFAt8#36:42 (lavagna best practice, blocco Siate Precisi) + voce 36:42-37:00",
+   "frame": "frame-0368.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-075",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-066",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Best practice per scrivere prompt a Cowork n.2 — Dite cosa non fare: aggiungere esplicitamente dei divieti (es. 'non cancellare', 'non sovrascrivere') non è ridondante, perché elimina un margine di interpretazione che altrimenti resterebbe aperto.",
+   "ancora": "\"Non cancellare niente. Non sovrascrivere.\" Sembra ridondante? Non lo e'.",
+   "fonte": "DI5aWJiFAt8#36:18 (lavagna best practice, blocco Dite Cosa Non Fare) + voce 36:18-36:42",
+   "frame": "frame-0364.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-071",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-067",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "Aneddoto citato come monito: uno YouTuber ha chiesto a Cowork di 'pulire' una cartella, e Cowork ha cancellato 11 giga di file — esempio concreto delle conseguenze di un prompt vago su un'azione distruttiva.",
+   "ancora": "Vi ricordate la storia dello YouTuber che ha chiesto di \"pulire\" una cartella e Cowork ha cancellato 11 giga di file?",
+   "fonte": "DI5aWJiFAt8#37:00 (racconto dell'aneddoto sulla lavagna) + voce 37:00-37:12",
+   "frame": "frame-0371.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-066",
+     "tipo": "motiva"
+    },
+    {
+     "verso": "KA-068",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-072",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-068",
+   "peso": "portante",
+   "tipo": "anti-pattern",
+   "contenuto": "Istruzioni vaghe come 'metti ordine' o 'pulisci' sono un anti-pattern nella scrittura di prompt per agenti AI con accesso ai file, perché lasciano spazio all'interpretazione: per un modello linguistico, 'sistemare'/'pulire' può tradursi letteralmente in 'cancellare'.",
+   "ancora": "La parola \"pulisci\" lascia spazio all'interpretazione. ... sistemare per un linguaggio di programmazione vuol dire cancellare",
+   "fonte": "DI5aWJiFAt8#37:12 (morale dell'aneddoto) + voce 37:12-37:18",
+   "frame": "frame-0373.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-069",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Best practice per scrivere prompt a Cowork n.3 — Prevedete l'incertezza: dare al modello un'uscita sicura per i casi che non sa classificare con certezza (es. una cartella 'da-verificare'), invece di lasciare che forzi una classificazione sbagliata pur di produrre un risultato.",
+   "ancora": "Metti in 'da-verificare' quello che non riesci a classificare. Cowork non puo' sempre sapere cosa sia un file dal nome.",
+   "fonte": "DI5aWJiFAt8#38:36 (lavagna best practice, blocco Prevedete l'Incertezza) + voce 38:36-38:42",
+   "frame": "frame-0387.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-073",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-070",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Un guardrail (perimetro d'azione) per un agente AI si scrive come divieto esplicito e diretto, non come raccomandazione generica: ad esempio 'NON cancellare niente. NON sovrascrivere file esistenti.' invece di un generico 'fai attenzione ai file esistenti'.",
+   "ancora": "guardrails o dei perimetri a cowork per ... NON cancellare niente. NON sovrascrivere file esistenti.",
+   "fonte": "DI5aWJiFAt8#38:06 (sottolineatura sul prompt, introduzione del termine guardrails) + voce 38:06-38:12",
+   "frame": "frame-0382.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-066",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-071",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Nel dare istruzioni a Claude Cowork per operazioni su file, va specificato esplicitamente 'non cancellare niente' e 'non sovrascrivere' — anche se sembra ridondante, questo elimina lo spazio di interpretazione che parole generiche come 'pulisci' lascerebbero aperto.",
+   "ancora": "Non cancellare niente. Non sovrascrivere.",
+   "fonte": "DI5aWJiFAt8#38:48 (lavagna Excalidraw, riepilogo best practice prompt Cowork) + voce 38:42-38:48",
+   "frame": "frame-0389.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-072",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Caso reale citato come monito: uno YouTuber ha chiesto a Cowork di 'pulire' una cartella e Cowork ha cancellato 11 giga di file, perché il verbo 'pulisci' lasciava troppo spazio di interpretazione rispetto a un'istruzione esplicita come 'non cancellare'.",
+   "ancora": "Vi ricordate la storia dello YouTuber che ha chiesto di 'pulire' una cartella e Cowork ha cancellato 11 giga di file?",
+   "fonte": "DI5aWJiFAt8#38:48 (lavagna Excalidraw) + voce 38:42-38:48",
+   "frame": "frame-0389.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-071",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-073",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Quando Claude Cowork non riesce a classificare un file o un dato con certezza, l'istruzione corretta è dirgli di mettere l'elemento dubbio in una cartella o stato 'da-verificare', invece di lasciare che forzi una classificazione a caso.",
+   "ancora": "Metti in 'da-verificare' quello che non riesci a classificare.",
+   "fonte": "DI5aWJiFAt8#38:48 (lavagna Excalidraw, sezione PREVEDETE L'INCERTEZZA) + voce 38:42-38:48",
+   "frame": "frame-0389.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-074",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "La ragione per prevedere una via d'uscita nei casi incerti è che Cowork non può sempre sapere con certezza cosa sia un file solo dal suo nome; dandogli un'uscita sicura per i casi dubbi si evita che forzi una classificazione sbagliata.",
+   "ancora": "Cowork non puo' sempre sapere cosa sia un file dal nome. Dandogli un'uscita sicura per i casi dubbi, evitate che forzi una classificazione sbagliata.",
+   "fonte": "DI5aWJiFAt8#38:48 (lavagna Excalidraw) + voce 38:42-38:48",
+   "frame": "frame-0389.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-073",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-075",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Le tre best practice per scrivere prompt efficaci a Claude Cowork, evidenziate a colori su un prompt reale: in rosso la specificità della richiesta (nomi cartelle, formato file), in arancione la gestione dell'incertezza (cosa fare nei casi dubbi), in blu le regole di cosa NON fare (non cancellare, non sovrascrivere).",
+   "ancora": "Queste sono, diciamo, delle tre best practices per fare prompting di cork.",
+   "fonte": "DI5aWJiFAt8#39:06 (lavagna Excalidraw, prompt annotato a tre colori) + voce 39:06-39:18",
+   "frame": "frame-0392.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-071",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-073",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-076",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Un prompt per Cowork non deve essere per forza perfetto al primo colpo: è possibile raffinarlo continuamente mentre si interagisce con l'agente, integrando via via le correzioni necessarie.",
+   "ancora": "abbiamo la possibilità di raffinare continuamente questo prompt mano che interagiamo",
+   "fonte": "DI5aWJiFAt8#39:18 (lavagna Excalidraw) + voce 39:18",
+   "frame": "frame-0394.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-078",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Se non viene esplicitamente richiesto di eliminare i file originali, Claude Cowork li lascia intatti accanto alla nuova struttura organizzata: la regola contro la cancellazione viene rispettata anche quando l'utente non la ribadisce ad ogni turno.",
+   "ancora": "i file di prima sono rimasti lì perché non gli ho chiesto di eliminarli",
+   "fonte": "DI5aWJiFAt8#40:00 (Finder, cartella con vecchi PDF e nuove sottocartelle) + voce 40:00",
+   "frame": "frame-0401.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-071",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-105",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Regola operativa personale di ragionamento: non spiegare eccessivamente, non ingegnerizzare oltre il necessario e non aggiungere miglioramenti non richiesti dall'utente.",
+   "ancora": "Do not overexplain, overengineer, or add unrequested improvements",
+   "fonte": "DI5aWJiFAt8#54:42 (Global Claude.md, sezione Reasoning Rules) + voce 54:42",
+   "frame": "frame-0548.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-103",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-106",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Regola personale di stile comunicativo per Claude: risposte laconiche, senza fronzoli, senza filler e senza linguaggio da marketing.",
+   "ancora": "Laconic. No fluff, no filler, no marketing language",
+   "fonte": "DI5aWJiFAt8#54:42 (Global Claude.md, sezione Communication Style) + voce 54:42",
+   "frame": "frame-0548.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-103",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-107",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "Regola personale di stile comunicativo: mai usare trattini lunghi (em-dash) nel testo generato da Claude.",
+   "ancora": "No m-dashes (also — not allowed)",
+   "fonte": "DI5aWJiFAt8#55:12 (Global Claude.md) + voce 55:12",
+   "frame": "frame-0553.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-103",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-120",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Prima di far eseguire un compito complesso basato su documentazione caricata, conviene chiedere esplicitamente a Claude di leggere prima tutta la documentazione disponibile, in modo che la risposta successiva sia informata.",
+   "ancora": "Per favore, prima di procedere, leggi tutta la documentazione che hai a disposizione.",
+   "fonte": "DI5aWJiFAt8#62:18 (chat, richiesta proposta commerciale) + voce 61:30-62:00",
+   "frame": "frame-0624.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-122",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Di fronte a una richiesta aperta su come strutturare una proposta commerciale, Claude Cowork ha proposto tre opzioni di formato (Word, PowerPoint, o combinazione dei due) motivando ciascuna in base al profilo e alle esigenze del destinatario finale.",
+   "ancora": "Ti propongo tre opzioni, ognuna con vantaggi diversi per un interlocutore come Marco",
+   "fonte": "DI5aWJiFAt8#62:18 (chat, Quale formato per la proposta?) + voce 62:18-63:18",
+   "frame": "frame-0624.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-123",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Prima di produrre un deliverable definitivo conviene sempre far fare a Claude un giro di brainstorming di opzioni alternative, piuttosto che chiedere direttamente un unico output finale.",
+   "ancora": "cominciamo a fare brainstorming, che è quello che consiglio sempre",
+   "fonte": "DI5aWJiFAt8#63:18 (chat, elenco opzioni proposta) + voce 63:18",
+   "frame": "frame-0634.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-122",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-209",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Un buon system prompt per agente vocale prevede risposte pronte per la gestione degli errori conversazionali: una frase per quando non si capisce l'utente (\"Scusa, non ho sentito bene. Puoi ripetere?\") e una per il silenzio prolungato (\"Ehi, sei ancora lì?\"), oltre a parole di riempimento naturali come \"certo\", \"capito\", \"nessun problema\" per suonare meno robotico.",
+   "ancora": "Se non capisci: \"Scusa, non ho sentito bene. Puoi ripetere?\" — Se c'è silenzio lungo: \"Ehi, sei ancora lì?\" ... Usa parole di riempimento naturali come \"certo\", \"capito\", \"nessun problema\"",
+   "fonte": "NmoOZVTrTXA#87:36 (System Prompt generato per \"Agente vocale prova\") + voce 87:34-87:46",
+   "frame": "frame-0877.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-195",
+     "tipo": "esempio-di",
+     "perche": "è un'istanza concreta delle sezioni GESTIONE ERRORI/STILE del template"
+    },
+    {
+     "verso": "KA-207",
+     "tipo": "precede",
+     "perche": "scritto il system prompt con le frasi di gestione errori, l'assistente viene creato via API con quel prompt"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-218",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Il template di prompt \"definitivo\" per un agente vocale (Sezione 11 di VAPI.md, richiamato da VOICE_AGENT.md) prevede dodici sezioni obbligatorie da compilare sempre tutte, senza saltarne nessuna: IDENTITÀ, STILE, LINEE GUIDA RISPOSTA, TASK, CONTESTO, RILEVAMENTO URGENZA, TIPI DI CHIAMANTE, TOOL, GUARDRAIL, GESTIONE ERRORI, ESEMPIO DI CONVERSAZIONE, NOTE.",
+   "ancora": "Compila TUTTE le sezioni del template — non saltarne nessuna: IDENTITA'... GUARDRAIL... GESTIONE ERRORI... ESEMPIO DI CONVERSAZIONE... NOTE.",
+   "fonte": "NmoOZVTrTXA#93:18 (VOICE_AGENT.md, Step 2 \"Crea il prompt dell'agente\") + osservazione schermo",
+   "frame": "frame-0934.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-195",
+     "tipo": "parte-di",
+     "perche": "è l'elenco completo e definitivo delle sezioni del template già introdotto"
+    },
+    {
+     "verso": "KA-217",
+     "tipo": "precede",
+     "perche": "creare il prompt (step 2) avviene prima di configurare e collegare i tool (step 3-7)"
+    },
+    {
+     "verso": "KA-201",
+     "tipo": "applica",
+     "perche": "la Sezione 11 di VAPI.md richiamata qui e' la sezione Prompt Template pianificata nella struttura a 12 sezioni di vapi.md"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-219",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Il prompt di un agente vocale, anche se segue un template rigido a sezioni fisse, deve suonare come una persona reale e non come un chatbot: la forma del contenuto (frasi corte, parole naturali, niente elenchi puntati) resta più importante della sola presenza delle sezioni.",
+   "ancora": "Il prompt deve suonare come una persona reale, non un chatbot.",
+   "fonte": "NmoOZVTrTXA#93:18 (VOICE_AGENT.md, \"Il prompt deve suonare come una persona reale, non un chatbot.\") + osservazione schermo",
+   "frame": "frame-0934.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-218",
+     "tipo": "parte-di",
+     "perche": "è il criterio qualitativo che accompagna il template a 12 sezioni"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-226",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Il template di prompt definito nella Sezione 11 di VAPI.md è obbligatorio: un agente che salta o abbrevia una delle sue sezioni produce una qualità conversazionale scadente.",
+   "ancora": "VAPI prompt template is mandatory — Section 11 of VAPI.md defines the exact structure. Every section must be filled. Agents that skip sections produce poor conversational quality.",
+   "fonte": "NmoOZVTrTXA#95:36 (CLAUDE.md, sezione \"## WHY\") + osservazione schermo (non menzionato a voce)",
+   "frame": "frame-0957.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-222",
+     "tipo": "parte-di",
+     "perche": "è la prima insidia tecnica elencata nella sezione WHY"
+    },
+    {
+     "verso": "KA-218",
+     "tipo": "applica",
+     "perche": "ribadisce come vincolo esplicito l'obbligo di compilare tutte le 12 sezioni del template"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-230",
+   "peso": "supporto",
+   "tipo": "anti-pattern",
+   "contenuto": "Non inserire date fisse ('hard coded') nel prompt o nei workflow di un agente vocale, anche se servono come esempio momentaneo: a livello teorico vanno sempre sostituite con variabili dinamiche generate da VAPI/n8n, cosi' il sistema resta valido nel tempo.",
+   "ancora": "questo dato solo perche' tu possa avere un aggancio ma dovresti a livello teorico utilizzare variabili",
+   "fonte": "NmoOZVTrTXA#99:24 (dettatura del prompt) + voce 01:39:19",
+   "frame": "frame-0995.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-231",
+     "tipo": "precede",
+     "perche": "la dettatura prosegue dal divieto di date fisse all'uso della chat VAPI per validare"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-247",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il system prompt di un agente vocale professionale segue uno standard fisso di 12 sezioni obbligatorie: IDENTITA', STILE, LINEE GUIDA RISPOSTA, TASK, CONTESTO, RILEVAMENTO URGENZA, TIPI DI CHIAMANTE, TOOL, GUARDRAIL, GESTIONE ERRORI, ESEMPIO DI CONVERSAZIONE, NOTE.",
+   "ancora": "Tutte le 12 sezioni obbligatorie di Section 11",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, struttura completa del prompt Section 11) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-218",
+     "tipo": "applica",
+     "perche": "le 12 sezioni del prompt di Sara sono identiche, nello stesso ordine, al template Sezione 11 di VAPI.md definito nella build precedente"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-248",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Nello stile di un prompt vocale vanno imposte frasi corte, numeri scritti per esteso (mai cifre), nessun elenco puntato nella risposta parlata, e il divieto assoluto di dire 'sono un'intelligenza artificiale' o simili.",
+   "ancora": "STILE: frasi corte, numeri per esteso, niente elenchi, niente 'sono un AI'",
+   "fonte": "NmoOZVTrTXA#104:48 / 109:00 (sezione STILE del piano; GUARDRAIL nel prompt reale) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-249",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Le linee guida di risposta di un agente vocale devono limitare ogni turno a una sola domanda per volta e a un massimo di circa 15 parole, per restare naturale al telefono.",
+   "ancora": "LINEE GUIDA RISPOSTA: 1 domanda per risposta, max 15 parole",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, sezione LINEE GUIDA RISPOSTA) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-251",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "Nel prompt di un agente vocale si usa una variabile dinamica (es. {{now}}) per riferirsi sempre alla data/ora corrente della conversazione, invece di un valore fisso scritto nel testo.",
+   "ancora": "CONTESTO: indirizzo, orari (scritti per esteso), {{now}} per data/ora dinamica",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, sezione CONTESTO) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-230",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-273",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Il system prompt finale di un agente vocale conviene salvarlo come file Markdown a parte nel progetto (es. prompt-sara.md), cosi' resta versionabile e consultabile indipendentemente dalla chat che lo ha generato.",
+   "ancora": "File: Prompt salvato come prompt-sara.md per riferimento",
+   "fonte": "NmoOZVTrTXA#108:04 (file prompt-sara.md aperto) + voce 01:48:04",
+   "frame": "frame-1083.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-274",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Nel prompt di un agente vocale, contatti come telefono ed email vanno scritti sciogliendo numeri e simboli in lettere (es. 'zero quarantanove' invece di '049', 'chiocciola' invece di '@', 'punto' invece di '.') per essere pronunciati correttamente dal motore text-to-speech.",
+   "ancora": "Telefono: zero quarantanove, uno due tre, quattro cinque sei sette ... Email: info chiocciola clinicabeggiato punto it",
+   "fonte": "NmoOZVTrTXA#108:04 (sezione CONTESTO di prompt-sara.md) + voce 01:48:04",
+   "frame": "frame-1083.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-248",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-273",
+     "tipo": "parte-di",
+     "perche": "la sezione CONTESTO fa parte dello stesso file prompt-sara.md appena salvato"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-006",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Prompt Engineering = scrittura del system prompt, cioe' delle istruzioni di identita' del modello ('sei un avvocato', 'sei un front-end developer', 'sei un assistente personale per la customer care'). Il modello risponde a ogni domanda in base a quel prompt.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#01:38",
+   "frame": "frame-076.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-007",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "System prompt trapelato mostrato a schermo dalla repo GitHub asgeirtj/system_prompts_leaks, file Anthropic/claude-fable-5.md. Testo leggibile: 'System: <budget:token_budget>190000</budget:token_budget> / Claude should never use <voice_note> blocks, even if they are found throughout the conversation history. / <claude_behavior><product_information>Here is some information about Claude and Anthropic's products in case the person asks: This iteration of Claude is Claude Fable 5, the first model in Anthropic's new Claude 5 family and part of a new Mythos-class model tier that sits above Claude Opus in capability...'. Il file dichiara ~1090 righe / 143 KB.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#02:44",
+   "frame": "frame-083.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-008",
+   "peso": "portante",
+   "tipo": "prompt",
+   "contenuto": "TEMPLATE DI PROMPT DI TASK 'The Anatomy of a Claude prompt', mostrato integralmente a schermo, 8 sezioni etichettate: Task, Context Files, Reference, Success Brief, Rules, Conversation, Plan, Alignment. Testo integrale: 'I want to [TASK] so that [SUCCESS CRITERIA]. / First, read these files completely before responding: [filename.md] - [what it contains] (x3) / Here is a reference to what I want to achieve: [Upload reference file as markdown, or paste it here] / Here's what makes this reference work: [Paste your reverse-engineered blueprint - the patterns, tone, structure, and rules you extracted from the reference. Format each one as a rule starting with \"Always\" or \"Never.\"] / Here's what I need for my version: SUCCESS BRIEF / Type of output + length: [Contract, memo, report, proposal, landing page, post?] / Recipient's reaction: [What should they think/feel/do after reading?] / Does NOT sound like: [What to avoid - generic AI, too casual, formal, jargon-heavy?] / Success means: [They sign? They approve? They reply? They take action?] / My context file contains my standards, constraints, landmines, and audience. Read it fully before starting. If you're about to break one of my rules, stop and tell me. / DO NOT start executing yet. Instead, ask me clarifying questions [use `AskUserQuestion` tool] so we can refine the approach together step by step. / Before you write anything, list the 3 rules from my context file that matter most for this task. / Then give me your execution plan (5 steps maximum). / Only begin work once we've aligned.'",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#03:19",
+   "frame": "frame-104.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-009",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Tre mosse del template 'Anatomy of a Claude prompt' che lo distinguono da un prompt normale: (a) obbligo di fermarsi invece di arrangiarsi se una regola sta per essere violata; (b) divieto di eseguire prima dell'allineamento, con domande di chiarimento via tool AskUserQuestion; (c) recall forzato - elencare le 3 regole del context file piu' rilevanti PRIMA di scrivere una riga.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#03:19",
+   "frame": "frame-104.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-010",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Context Window = la memoria che il modello puo' gestire, cioe' quanti token in input puo' leggere. Il system prompt ne occupa una porzione fissa (disegnata in arancione all'inizio della barra 0->1M); il resto e' spazio per contesto e informazioni.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#03:51",
+   "frame": "frame-140.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-011",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Ad oggi (2026) i modelli di frontiera gestiscono al massimo 1 milione di token in input. Disegnato a lavagna come barra da 0 a 1M.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#04:19",
+   "frame": "frame-159.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-021",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Test 1 - puro prompt engineering, prompt digitato nell'app Claude desktop: 'di che colore e' fatta la ferrari?'. Risposta dalla sola conoscenza del modello (Rosso Corsa), nessun tool chiamato.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#11:35",
+   "frame": "frame-348.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-022",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Test 2 - context engineering, prompt: 'come si chiama l'ultimo modello lanciato da ferrari?'. Claude risponde 'Lascia che controlli le notizie piu' recenti', esegue 'Esplorato il web, utilizzando uno strumento' e cita le fonti (Motorbox, HDmotori, Motor1). Piede della risposta: 24s, 120 token, ha pensato per 2s.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#12:02",
+   "frame": "frame-378.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-01",
+   "peso": "portante",
+   "tipo": "Framework / gerarchia obiettivi",
+   "contenuto": "Gerarchia 4 livelli obiettivo (vision -> obiettivo -> target -> task) - l'autore condivide la propria vision aziendale scritta con Claude e col team, cosi' ogni prompt eredita automaticamente il contesto strategico.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-07#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-07::KA-01",
+     "run": "cs2online-lezione-07",
+     "fonte": "cs2online-lezione-07#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-02",
+   "peso": "supporto",
+   "tipo": "Regola operativa (5a occorrenza corso)",
+   "contenuto": "Regola esplicita ripetuta: 'crea il contesto tu, non farlo creare all'AI. Se fai slop su slop, ottieni slop' - applicato specificamente al NON delegare la scrittura del contesto stesso all'AI (non solo il copy finale).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-07#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-07::KA-02",
+     "run": "cs2online-lezione-07",
+     "fonte": "cs2online-lezione-07#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-03",
+   "peso": "supporto",
+   "tipo": "Categoria contesto / road block",
+   "contenuto": "Road block come categoria esplicita di contesto: difetti personali noti e limitazioni di risorse - beneficio dichiarato: Claude 'segnala dove tendo a sbagliare' perche' gliel'ha detto esplicitamente.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-07#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-07::KA-03",
+     "run": "cs2online-lezione-07",
+     "fonte": "cs2online-lezione-07#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-04",
+   "peso": "supporto",
+   "tipo": "Principio / selettivita'",
+   "contenuto": "Principio di selettivita': non usare tutti i tipi di contesto sempre - chiedersi per ogni task specifico quali hanno senso, evitando over-engineering del contesto.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-07#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-07::KA-04",
+     "run": "cs2online-lezione-07",
+     "fonte": "cs2online-lezione-07#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-07::KA-06",
+   "peso": "contesto",
+   "tipo": "Risorsa allegata",
+   "contenuto": "Risorsa allegata 'Vision APS' (PDF 46MB) - presumibile documento reale della vision aziendale di Andrei Pascu, usato come esempio concreto del concetto 'vision' descritto nel testo. Non analizzato in dettaglio (file grande, riferimento salvato).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-07#risorsa-vision-aps",
+   "frame": "",
+   "run": "cs2online-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-07::KA-06",
+     "run": "cs2online-lezione-07",
+     "fonte": "cs2online-lezione-07#risorsa-vision-aps"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-02",
+   "peso": "portante",
+   "tipo": "Definizione / context engineering",
+   "contenuto": "Definizione operativa di context engineering: concentrarsi nel costruire le informazioni contestuali che accompagnano il messaggio, per permettere all'AI di prendere decisioni migliori - distinto dal prompt engineering (2022-2023), focalizzato solo sul testo della richiesta.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-08#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-08::KA-02",
+     "run": "cs2online-lezione-08",
+     "fonte": "cs2online-lezione-08#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-03",
+   "peso": "supporto",
+   "tipo": "Principio / quantita' contesto",
+   "contenuto": "Principio 'non esiste troppo contesto': piu' informazioni contestuali dai, migliore e' l'output - nessun limite superiore dichiarato.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-08#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-08::KA-03",
+     "run": "cs2online-lezione-08",
+     "fonte": "cs2online-lezione-08#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-04",
+   "peso": "supporto",
+   "tipo": "Responsabilita' utente",
+   "contenuto": "L'AI non e' progettata per investigare attivamente sull'utente - e' programmata per rispondere subito. La responsabilita' di fornire il contesto e' sempre dell'utente, mai dell'AI.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-08#trascrizione+cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-08::KA-04",
+     "run": "cs2online-lezione-08",
+     "fonte": "cs2online-lezione-08#trascrizione+cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-06",
+   "peso": "contesto",
+   "tipo": "Aneddoto personale",
+   "contenuto": "Aneddoto: i prompt dell'autore sono 'fatti in modo molto informale' via dictation vocale Mac (10 minuti di parlato) - il lavoro pesante lo fa il contesto pre-costruito, non la forma del prompt.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-08#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-08::KA-06",
+     "run": "cs2online-lezione-08",
+     "fonte": "cs2online-lezione-08#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-07",
+   "peso": "contesto",
+   "tipo": "Contesto per tipo AI",
+   "contenuto": "Il contesto varia per tipo di AI: documenti Markdown per LLM testuali; immagini stesse come contesto per generatori di immagini (es. Flux).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-08#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-08::KA-07",
+     "run": "cs2online-lezione-08",
+     "fonte": "cs2online-lezione-08#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-01",
+   "peso": "portante",
+   "tipo": "Glossario / System Prompt",
+   "contenuto": "System prompt = istruzione nascosta data all'AI dal provider (Anthropic per Claude), non modificabile dall'utente; è la base su cui si costruiscono i prompt personalizzati.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-01",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-09",
+   "peso": "portante",
+   "tipo": "Glossario / Context Engineering",
+   "contenuto": "Context Engineering = 'l'arte di organizzare e dare le informazioni giuste all'AI nel modo giusto... non basta mandare PDF a raffica: serve struttura' — definizione ufficiale, coerente con la lezione 8 dedicata dello stesso corso.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#glossario-csv",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-09",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#glossario-csv"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-10",
+   "peso": "portante",
+   "tipo": "Glossario / Prompting - persona",
+   "contenuto": "Persona (nel prompting) = istruire l'AI a comportarsi come un professionista specifico (es. 'sei un copywriter senior con 10 anni di esperienza') — dichiarato che 'cambia radicalmente la qualità della risposta'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#glossario-csv",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-10",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#glossario-csv"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-11",
+   "peso": "portante",
+   "tipo": "Glossario / Few-shot vs zero-shot",
+   "contenuto": "Few-shot prompting (dare esempi concreti nel prompt) migliora l'output rispetto a zero-shot (nessun esempio, solo istruzione) — zero-shot 'funziona per task semplici, meno per roba complessa'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#glossario-csv",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-11",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#glossario-csv"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-01",
+   "peso": "portante",
+   "tipo": "Principio fondamentale / context",
+   "contenuto": "Principio 'garbage in, garbage out': input scarso a Claude = output scarso. Soluzione: creare documenti di contesto riutilizzabili da allegare a ogni prompt, invece di riscrivere tutto da zero ogni volta.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-06#trascrizione + frame-t0m45s",
+   "frame": "frame-t0m45s-whiteboard-gigo.jpg",
+   "run": "cs2online-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-06::KA-01",
+     "run": "cs2online-lezione-06",
+     "fonte": "cs2online-lezione-06#trascrizione + frame-t0m45s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-02",
+   "peso": "supporto",
+   "tipo": "Formato / tool",
+   "contenuto": "Formato consigliato per documenti di contesto: Markdown (.md), non PDF ('il peggior formato per leggere le cose'). Tool consigliato: MarkEdit. Demo schermo confermata: editor con esempio 'ho 24 anni / abito in Italia / lavoro in marketing'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-06#trascrizione + frame-t4m15s",
+   "frame": "frame-t4m15s-markedit-and-finder-aicontexting.jpg",
+   "run": "cs2online-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-06::KA-02",
+     "run": "cs2online-lezione-06",
+     "fonte": "cs2online-lezione-06#trascrizione + frame-t4m15s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-04",
+   "peso": "portante",
+   "tipo": "Workflow operativo / PDF-to-JSON",
+   "contenuto": "Workflow PDF-to-JSON osservato per intero su schermo: allegare PDF brand guidelines a chat Claude nuova, prompt 'Voglio che tu crei un JSON prompt di circa 300-400 righe, dettagliato e moderno, per indicare a un LLM come fare il design' — usare Opus con Extended Thinking (osservato: 'Opus 4.6 Extended' selezionato) perché documento riusato indefinitamente. Salvare il JSON con VS Code/Cursor (osservato: file salvato in 'Cartella contesto').",
+   "ancora": "",
+   "fonte": "cs2online-lezione-06#trascrizione + frame-t9m15s",
+   "frame": "frame-t9m15s-pdf-to-json-conversion-demo.jpg",
+   "run": "cs2online-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-06::KA-04",
+     "run": "cs2online-lezione-06",
+     "fonte": "cs2online-lezione-06#trascrizione + frame-t9m15s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-05",
+   "peso": "portante",
+   "tipo": "Framework / 4 livelli contesto",
+   "contenuto": "Framework '4 livelli di contesto' per frequenza di aggiornamento: Livello 1 = la richiesta stessa (cambia sempre, nessun documento); Livello 2 = obiettivi settimanali; Livello 3 = business planning/risultati trimestrali; Livello 4 = identità/professione/business (quasi mai). Documenti creati solo per livelli 2-4.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-06#trascrizione + frame-t12m00s",
+   "frame": "frame-t12m00s-whiteboard-4-livelli-completo.jpg",
+   "run": "cs2online-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-06::KA-05",
+     "run": "cs2online-lezione-06",
+     "fonte": "cs2online-lezione-06#trascrizione + frame-t12m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-03",
+   "peso": "supporto",
+   "tipo": "Regola brain dump",
+   "contenuto": "Regola per il brain dump: 'senza filtro' - buttare giu' tutto, poi lasciare che sia il contesto (business plan+calendario) a fare la prioritizzazione, non l'utente a pre-filtrare.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-11#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-11::KA-03",
+     "run": "cs2online-lezione-11",
+     "fonte": "cs2online-lezione-11#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-04",
+   "peso": "supporto",
+   "tipo": "Vincoli espliciti",
+   "contenuto": "Vincoli specifici vanno scritti esplicitamente nel brain dump (es. 'il copy va consegnato entro mercoledi', senza negoziazione') - il documento stesso deve auto-spiegarsi a Claude.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-11#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-11::KA-04",
+     "run": "cs2online-lezione-11",
+     "fonte": "cs2online-lezione-11#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-06",
+   "peso": "portante",
+   "tipo": "Regola iterazione output",
+   "contenuto": "Regola di iterazione: se l'output non soddisfa, la domanda giusta e' 'cosa aggiungere/togliere dal contesto', non lamentarsi del risultato - sposta la responsabilita' sull'input, coerente con lezione 8.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-11#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-11::KA-06",
+     "run": "cs2online-lezione-11",
+     "fonte": "cs2online-lezione-11#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-07",
+   "peso": "supporto",
+   "tipo": "4 livelli contesto (variante)",
+   "contenuto": "4 livelli di contesto per la pianificazione (variante specifica della gerarchia di lezione 7): (1) prompt singolo, (2) settimana, (3) trimestre, (4) business permanente.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-11#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-11::KA-07",
+     "run": "cs2online-lezione-11",
+     "fonte": "cs2online-lezione-11#cosa-hai-imparato"
+    }
+   ]
+  }
+ ]
+}

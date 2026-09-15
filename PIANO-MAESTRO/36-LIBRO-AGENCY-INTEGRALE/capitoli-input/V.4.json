@@ -1,0 +1,955 @@
+{
+ "capitolo": "V.4",
+ "parte": "V.4",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Token, costi, scelta del modello",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-bonus-06::KA-08",
+  "cs2online-lezione-01::KA-02",
+  "cs2online-lezione-13::KA-05",
+  "max17-v05-jaye-agenticos::KA-014",
+  "max17-v05-jaye-agenticos::KA-049",
+  "max17-v06-belli-codex::KA-031",
+  "max17-v06-belli-codex::KA-063",
+  "max17-v06-belli-codex::KA-064",
+  "max17-v06-belli-codex::KA-065",
+  "max17-v08-herk-brain::KA-015",
+  "max17-v11-roberts-design::KA-063",
+  "max17-v11-roberts-design::KA-064",
+  "max17-v15::KA-039",
+  "max18-v03-belli-token::KA-001",
+  "max18-v03-belli-token::KA-002",
+  "max18-v03-belli-token::KA-003",
+  "max18-v03-belli-token::KA-004",
+  "max18-v03-belli-token::KA-005",
+  "max18-v03-belli-token::KA-007",
+  "max18-v03-belli-token::KA-011",
+  "max18-v03-belli-token::KA-014",
+  "max18-v03-belli-token::KA-015",
+  "max18-v03-belli-token::KA-016",
+  "max18-v03-belli-token::KA-025",
+  "max18-v03-belli-token::KA-026",
+  "max18-v03-belli-token::KA-028",
+  "max18-v03-belli-token::KA-038",
+  "max18-v03-belli-token::KA-046",
+  "max18-v06-JTn5pqm9ecM::KA-009",
+  "max18-v06-JTn5pqm9ecM::KA-012",
+  "max18-v08-DI5aWJiFAt8::KA-008",
+  "max18-v08-DI5aWJiFAt8::KA-056",
+  "max18-v08-DI5aWJiFAt8::KA-057",
+  "max18-v08-DI5aWJiFAt8::KA-061",
+  "max18-v08-DI5aWJiFAt8::KA-115",
+  "max18-v08-DI5aWJiFAt8::KA-116",
+  "max18-v08-DI5aWJiFAt8::KA-223"
+ ],
+ "fonti_integrali": {
+  "cs2online-bonus-06": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-06\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-01": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-01\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-11": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-11\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-13": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-13\\contenuto-integrale.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max17-v06-belli-codex": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v06-belli-codex\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v06-belli-codex\\video-analysis.md"
+  ],
+  "max17-v07-rizzo-prompt": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\video-analysis.md"
+  ],
+  "max17-v08-herk-brain": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\video-analysis.md"
+  ],
+  "max17-v11-roberts-design": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\video-analysis.md"
+  ],
+  "max17-v15": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\video-analysis.md"
+  ],
+  "max18-v03-belli-token": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\video-analysis.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-bonus-06::KA-08",
+   "peso": "supporto",
+   "tipo": "Parametro effort max",
+   "contenuto": "Parametro 'effort max' usato selettivamente SOLO sullo step di validazione (non su tutto il task) - osservato: 'Step 3: Validazione... utilizza expert per effort max', 'Step 4: crea il PDF finale'. Uso mirato del massimo sforzo computazionale solo dove serve precisione.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#frame-t19m30s",
+   "frame": "frame-t19m30s-claude-genera-preventivo-effort-max.jpg",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-08",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#frame-t19m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-02",
+   "peso": "supporto",
+   "tipo": "Panorama modelli AI",
+   "contenuto": "3 modelli principali a marzo 2026: OpenAI→ChatGPT, Anthropic→Claude, Google→Gemini (Bard discontinuato, reindirizza a Gemini). Claude scelto per il corso perché dichiarato 'più potente disponibile' e 'più usato tra chi lo conosce davvero'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-01#sezione:I modelli principali",
+   "frame": "",
+   "run": "cs2online-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-01::KA-02",
+     "run": "cs2online-lezione-01",
+     "fonte": "cs2online-lezione-01#sezione:I modelli principali"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-05",
+   "peso": "contesto",
+   "tipo": "Scelta modello",
+   "contenuto": "Modello consigliato per pianificazione settimanale: Opus + Extended Thinking - coerente col pattern gia' visto (task complessi/riusati = modello piu' potente).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-11#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-11::KA-05",
+     "run": "cs2online-lezione-11",
+     "fonte": "cs2online-lezione-11#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-05",
+   "peso": "supporto",
+   "tipo": "Scelta modello",
+   "contenuto": "Modello usato per Project cliente: Opus 4.6 con Extended Thinking - coerente con principio lezione 6 (documento riusato indefinitamente = modello piu' potente).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#frame-t15m30s",
+   "frame": "frame-t15m30s-claude-project-simone-ferretti-wispr.jpg",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-05",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#frame-t15m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-06",
+   "peso": "contesto",
+   "tipo": "Tool osservato",
+   "contenuto": "Tool di dettatura vocale 'Wispr' menzionato solo come overlay testo a schermo ('Per dettare roba in questo modo al mio mac, uso l'app Wispr; devastante'), non presente nella panoramica ufficiale scritta - trovato solo con visione diretta del frame.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#frame-t15m30s",
+   "frame": "frame-t15m30s-claude-project-simone-ferretti-wispr.jpg",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-06",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#frame-t15m30s"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-014",
+   "peso": "supporto",
+   "tipo": "configurazione",
+   "contenuto": "Skills Deck della dashboard con modello+effort assegnato per skill: /sprint-planning = Sonnet Medium (in popup config) e Opus X-High (in vista deck); /newsletter = Opus X-High; /games = Opus X-High; /clean-up = Fable X-High.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#1:14",
+   "frame": "frame-038.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-048",
+   "peso": "contesto",
+   "tipo": "standard",
+   "contenuto": "Selettore modello nella chat nativa di Claude Code: opzioni 'Auto', 'Fable 5', 'Extra' visibili in basso nella barra di input.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#18:46",
+   "frame": "frame-564.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-049",
+   "peso": "supporto",
+   "tipo": "configurazione",
+   "contenuto": "Popup di configurazione skill: griglia Model x Effort con righe Haiku/Sonnet/Opus/Fable e colonne Low/Medium/High/Max; per /sprint-planning lo slider e' posizionato su Sonnet-Medium.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:14",
+   "frame": "frame-008.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-031",
+   "peso": "portante",
+   "tipo": "costo",
+   "contenuto": "Consiglio dato a voce: avere il piano Claude Max da $100 (non i $200) e aggiungere Codex con il piano ChatGPT da $20 — bastano $20 in piu', non il doppio.",
+   "ancora": "",
+   "fonte": "T7PPX5M6Puo#09:55-10:24",
+   "frame": "frame-309.png",
+   "run": "max17-v06-belli-codex",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-063",
+   "peso": "portante",
+   "tipo": "costo",
+   "contenuto": "Lavagna finale costi: 'TUTTO SU UNO SOLO' — $200 solo Claude (nessuno che lo controlla), $200 solo Codex (nessuno che serve bene). 'LA COPPIA' — $100 Claude Max (serve) + $20 Codex (controlla) = $120 AL MESE. Venti dollari in piu', non il doppio, perche' Codex legge e critica e scrive quasi mai: l'auditor costa molto meno che generare.",
+   "ancora": "",
+   "fonte": "T7PPX5M6Puo#27:44-28:47",
+   "frame": "frame-846.png",
+   "run": "max17-v06-belli-codex",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-064",
+   "peso": "supporto",
+   "tipo": "costo",
+   "contenuto": "Sulla lavagna: 'e per provarlo basta anche il piano ChatGPT gratuito'. Confermato con una ricerca a schermo: Codex e' disponibile sul piano ChatGPT Free ma con limiti di utilizzo stretti; Cost: $0/mese; Access: incluso con account ChatGPT; Limits: i limiti piu' bassi di ogni tier, adatto a test rapidi piu' che a sviluppo pesante. Fonte citata: pagina ufficiale 'Codex Pricing' — Codex incluso in Free, Go, Plus, Pro, Business, Enterprise.",
+   "ancora": "",
+   "fonte": "T7PPX5M6Puo#29:16-29:34",
+   "frame": "frame-879.png",
+   "run": "max17-v06-belli-codex",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v06-belli-codex::KA-065",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Raccomandazione finale: usare il piano Free di ChatGPT per testare la combo con qualsiasi piano Claude gia' posseduto (minimo richiesto per Claude Code: piano Pro da $20), verificare se si notano miglioramenti passando le review una o due volte, e solo se il miglioramento e' netto passare a pagare Codex separatamente.",
+   "ancora": "",
+   "fonte": "T7PPX5M6Puo#29:12-30:03",
+   "frame": "frame-908.png",
+   "run": "max17-v06-belli-codex",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-068",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Statistiche d'uso reali dell'autore visibili nell'app Claude desktop: Sessioni 97, Messaggi 8626, Token totali 9.9M, Giorni attivi 18, Serie attuale 0d, Serie piu' lunga 4d, Ora di punta 16, Modello preferito Opus 4.6.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#11:34",
+   "frame": "frame-348.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-015",
+   "peso": "portante",
+   "tipo": "file",
+   "contenuto": "Pagina wiki reale concepts/context-window.md (testo integrale letto su 2 frame): autocompact scatta al ~95% di contesto, best practice compattare manualmente al ~60%; dopo 3-4 compattazioni consecutive conviene un fresh start; agent workflow multiplier: multi-agente consuma 7-10x piu' token di single-agent; token compounding (msg1 ~500 token, msg30 ~11.500 token = 31x, 98.5% dei token spesi a rileggere history vecchia, a msg30 si arriva vicino a un quarto di milione di token); cosa consuma il context (CLAUDE.md <150-200 righe consigliate, mcp-servers fino a ~18.000 token ciascuno, un fresh session gia' consuma 51.000 token in un benchmark); prompt caching Anthropic scade dopo 5 min di inattivita'; 'context rot' = degrado qualita' con contesto pieno.",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#9:10-9:22",
+   "frame": "frame-269.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-063",
+   "peso": "supporto",
+   "tipo": "dati",
+   "contenuto": "Cruscotto di consumo del 'Claude Code OS' dell'autore (localhost:8081/dashboard, header 'Operator | local | v0.2 | HEALTHY'): card Claude Code / Claude Max 20x con 5-HOUR LIMIT 69% (145), WEEKLY - ALL MODELS 2,735 (5,200), OPUS ONLY 18 (2,220); card ChatGPT Plus 6%. Riga 'Trends over time — TRACKING STARTED TODAY': MESSAGES 2,735, WEEKLY WINDOW 80%, SKILL RUNS 196. Sidebar dell'app: Home, Dashboard, Memory, Knowledge Graph + HERMES-AGENT e OPEN CLAUDE.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#12:22",
+   "frame": "frame-373.png, frame-370.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-064",
+   "peso": "supporto",
+   "tipo": "dati",
+   "contenuto": "Statistiche d'uso di Claude dell'autore, pannello Overview: Sessions 540, Messages 132,025, Total tokens 97.2M, Active days 53, Current streak 21d, Longest streak 21d, Peak hour 7 PM, Favorite model Fable 5. In una seconda ripresa (sessione diversa): Sessions 532, Messages 132,263, Total tokens 97.3M, selettore modello Opus 5 / Extra. Nota sotto l'heatmap: 'You've used ~943x more tokens than Harry Potter and the Philosopher's Stone' [moltiplicatore incerto a 360p] — nella seconda ripresa cita Dune.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#4:04 e #21:02",
+   "frame": "frame-123.png, frame-632.png, _zoom/z123s.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-039",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Raccomandazione esplicita sull'uso del contesto della chat: quando si supera il 25-20% del contesto occupato, bisogna usare il comando /compact per compattare il contesto e permettere all'AI di agire in modo piu' efficiente - dichiarata come best practice anche se non applicata in diretta durante la registrazione.",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#26:39-27:04",
+   "frame": "frame-392.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-001",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Il costo di una sessione non lo fa quello che scrivi tu: a ogni invio il modello rilegge da capo tutta la conversazione (il tuo contesto, tutte le sue risposte, ogni file aperto). Il tuo messaggio resta costante, quello che lui rilegge cresce a ogni turno. E' il principio da cui discendono quasi tutte le altre tecniche del video.",
+   "ancora": "Tu scrivi una riga. Lui rilegge tutto. Ogni volta.",
+   "fonte": "1Dyld3y-V7Y#9:12 (animazione a schermo) + audio 9:14-10:02",
+   "frame": "frame-185.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-002",
+     "tipo": "quantificato-da"
+    },
+    {
+     "verso": "KA-006",
+     "tipo": "motiva"
+    },
+    {
+     "verso": "KA-010",
+     "tipo": "motiva"
+    },
+    {
+     "verso": "KA-014",
+     "tipo": "motiva"
+    },
+    {
+     "verso": "KA-039",
+     "tipo": "corretto-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-002",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "L'animazione quantifica il principio con un messaggio costante da 180 token: al TURNO 2 il modello rilegge 360 token, al TURNO 3 ne rilegge 540. Il costo per turno cresce linearmente col numero di turni, quindi il cumulato cresce quadraticamente.",
+   "ancora": "IL TUO MESSAGGIO: 180 token / QUELLO CHE RILEGGE PER RISPONDERTI: 360 token",
+   "fonte": "1Dyld3y-V7Y#0:15 e #9:12 (stesso pannello, due turni diversi)",
+   "frame": "frame-006.png, frame-185.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-001",
+     "tipo": "quantifica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-003",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Tre strumenti di misura da usare PRIMA di toccare qualsiasi cosa: /context (cosa occupa la finestra adesso), /usage (dove hai bruciato i limiti), la status line personalizzata (il contatore sempre a schermo). Sulla lavagna sono in un banner dorato sopra tutte le tecniche, non dentro una colonna.",
+   "ancora": "PRIMA DI TOCCARE QUALSIASI COSA, MISURA",
+   "fonte": "1Dyld3y-V7Y#1:33-1:44 (audio) + banner della lavagna",
+   "frame": "frame-033.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-004",
+     "tipo": "misura"
+    },
+    {
+     "verso": "KA-017",
+     "tipo": "verifica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-004",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Su una conversazione NUOVA, prima di scrivere qualsiasi cosa, /context deve stare fra il 3% e il 6%. Quel costo di partenza e' fatto da file di memoria, system prompt (CLAUDE.md), server MCP e skill installate. Molti clienti dell'autore partono gia' al 20% e poi si chiedono perche' bruciano i token.",
+   "ancora": "come regola bisogna stare fra il 3 e il 6%",
+   "fonte": "1Dyld3y-V7Y#2:33-2:49",
+   "frame": "frame-110.png (conferma a schermo: 59.5k / 1M = 6%)",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-005",
+     "tipo": "misurato-con"
+    },
+    {
+     "verso": "KA-017",
+     "tipo": "principale-causa"
+    },
+    {
+     "verso": "KA-020",
+     "tipo": "causa"
+    },
+    {
+     "verso": "KA-022",
+     "tipo": "causa"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-005",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Finestra di contesto dei modelli come dichiarata e mostrata: Opus = 1 milione di token (letto a schermo: '59.5k / 1M (6%)'), Sonnet = 200.000 secondo l'autore ('se non sbaglio'). Il selettore modelli mostrato in quella build elenca Fable 5, Opus 5, Sonnet 5, Haiku 4.5, piu' un effort selezionabile (a schermo: 'Opus 5 | Extra').",
+   "ancora": "Finestra di contesto — 59.5k / 1M (6%)",
+   "fonte": "1Dyld3y-V7Y#1:49-1:57 (audio) + #5:27 (schermo)",
+   "frame": "frame-110.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-004",
+     "tipo": "misura"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-007",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "/compact e' l'anti-pattern centrale del video: 'il messaggio piu' caro'. Per riassumere rimanda tutto il contesto al modello, e poi butta via la roba gia' pronta in cache. Compra continuita', non risparmio. In piu' e' Claude a scegliere cosa tenere e cosa buttare, non tu.",
+   "ancora": "/compact per risparmiare — il messaggio piu' caro",
+   "fonte": "1Dyld3y-V7Y#6:11-7:00 e #23:04-23:15 (audio) + card lavagna",
+   "frame": "frame-462.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-008",
+     "tipo": "sostituito-da"
+    },
+    {
+     "verso": "KA-009",
+     "tipo": "sostituito-da"
+    },
+    {
+     "verso": "KA-037",
+     "tipo": "contraddetto-da"
+    },
+    {
+     "verso": "KA-041",
+     "tipo": "in-conflitto-con"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-011",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Modello ed effort si scelgono una volta sola, all'inizio. Cambiarli a meta' conversazione butta via tutto il lavoro gia' pronto legato al modello precedente: 'e' come scegliere un nuovo cervello', e quel cervello deve riprendersi tutta la conversazione da capo. Se vuoi il modello economico, ci parti.",
+   "ancora": "modello ed effort scelti una volta — eviti un 10x",
+   "fonte": "1Dyld3y-V7Y#5:22-6:09 (audio) + card lavagna",
+   "frame": "frame-107.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-012",
+     "tipo": "raffinato-da"
+    },
+    {
+     "verso": "KA-025",
+     "tipo": "collegato-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-014",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Il costo che conta non e' quello del giro singolo ma quello del LAVORO RIFATTO: 'il lavoro rifatto non avviene proprio. Nessun compressore puo' farlo: agiscono su cio' che e' gia' successo'. E' il criterio che separa le tecniche che spostano davvero il conto da quelle cosmetiche.",
+   "ancora": "Il lavoro rifatto non avviene proprio. Nessun compressore puo' farlo",
+   "fonte": "1Dyld3y-V7Y#11:42 (card lavagna)",
+   "frame": "frame-201.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-013",
+     "tipo": "generalizza"
+    },
+    {
+     "verso": "KA-024",
+     "tipo": "generalizza"
+    },
+    {
+     "verso": "KA-028",
+     "tipo": "generalizza"
+    },
+    {
+     "verso": "KA-001",
+     "tipo": "discende-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-015",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Spegnere i server MCP che non usi vale -47.000 token a sessione secondo la lavagna, scomposti a schermo in GitHub 26.000 + Slack 21.000. Il punto e' che quel peso entra PRIMA che tu scriva qualsiasi cosa, e resta anche se il tool non lo usi mai.",
+   "ancora": "spegni gli MCP che non usi — -47.000 a sessione — GitHub 26.000, Slack 21.000",
+   "fonte": "1Dyld3y-V7Y#13:30-14:03 (card lavagna, cifre lette a schermo)",
+   "frame": "frame-271.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-004",
+     "tipo": "riduce"
+    },
+    {
+     "verso": "KA-017",
+     "tipo": "premessa-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-016",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Test di verifica dato dall'autore per sapere se un MCP sta pesando: /context deve dire 'deferred'. Se lo dice, i manuali dei tool restano fuori dal contesto finche' non servono davvero.",
+   "ancora": "Verifica sempre che /context dica 'deferred'",
+   "fonte": "1Dyld3y-V7Y#27:30 (nota gialla del riquadro CLI vs MCP)",
+   "frame": "frame-551.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-003",
+     "tipo": "usa"
+    },
+    {
+     "verso": "KA-017",
+     "tipo": "verifica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-025",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "La qualita' del modello e' essa stessa un risparmio: per coding e planning veri si resta sul modello di frontiera, perche' 'un risultato da rifare costa piu' di quello che hai risparmiato scegliendo il modello economico'. Modelli di frontiera nominati a voce: Fable, Opus, GPT 5.6, Grock 4.6.",
+   "ancora": "coding e planning veri — resta sul modello di frontiera",
+   "fonte": "1Dyld3y-V7Y#20:22-21:20 (audio) + card lavagna",
+   "frame": "frame-410.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-014",
+     "tipo": "discende-da"
+    },
+    {
+     "verso": "KA-026",
+     "tipo": "complemento-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-026",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Per routine, skill, sub-agenti e /chrome bastano Haiku e Sonnet: 'i job schedulati che sai gia' riuscire, la navigazione, la manovalanza. Li' il modello grosso non serve'. A voce l'autore dice il 90% (in un altro passaggio il 99%) di skill e routine.",
+   "ancora": "routine, skill, sub-agenti, /chrome — Haiku e Sonnet vanno benissimo",
+   "fonte": "1Dyld3y-V7Y#21:27 (card lavagna) + audio 21:26-22:20",
+   "frame": "frame-430.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-025",
+     "tipo": "complementa"
+    },
+    {
+     "verso": "KA-030",
+     "tipo": "applicato-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-028",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Cinque anti-pattern con il loro costo, dalla colonna 'NON FARLO' ('sembrano furbe, costano'): /compact per risparmiare = il messaggio piu' caro; screenshot del testo = 2.700 token per duecento parole (e un'immagine l'agente non la puo' modificare); dare PDF grezzi = paghi due volte, il testo della pagina PIU' l'immagine della stessa pagina; prompt piu' corti = lo 0,01% del conto, 'quello che digiti tu e' un errore di arrotondamento'; i tool che promettono il 90% = fra zero e negativo.",
+   "ancora": "NON FARLO — sembrano furbe, costano",
+   "fonte": "1Dyld3y-V7Y#23:03-24:00 (colonna lavagna letta per intero) + audio 22:58-24:52",
+   "frame": "frame-462.png, frame-472.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-007",
+     "tipo": "contiene"
+    },
+    {
+     "verso": "KA-029",
+     "tipo": "contiene"
+    },
+    {
+     "verso": "KA-032",
+     "tipo": "contiene"
+    },
+    {
+     "verso": "KA-014",
+     "tipo": "discende-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-037",
+   "peso": "contesto",
+   "tipo": "affermazione",
+   "contenuto": "CIFRA DA MANEGGIARE CON CAUTELA. Il relatore afferma che ogni pagina di un PDF elaborato da Claude Code consuma fra 1.500 e 3.000 token. Cinque secondi prima, a schermo, si vede da dove viene: un AI Overview di Google in risposta alla query 'claude code quanti token consuma per ogni pagina di un pdf', con il chip di citazione 'GitHub' sulla frase stessa e le voci di dettaglio citate a Reddit r/ClaudeAI e Medium. NON e' documentazione primaria Anthropic. Da riportare sempre come 'detto dal relatore', mai come dato verificato.",
+   "ancora": "Ogni pagina di un documento PDF elaborato con Cloud code consuma tra i 1500 e 3000 token",
+   "fonte": "1Dyld3y-V7Y#17:41 (audio) + #17:36 (fonte visibile a schermo)",
+   "frame": "frame-353.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-036",
+     "tipo": "giustifica"
+    },
+    {
+     "verso": "KA-028",
+     "tipo": "supporta"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-038",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Misurazione dichiarata dall'autore come propria (non citata): un PDF da 300 pagine passato con Read costa 'circa 500-600.000 token', mentre con il suo hook ne costa 150.000, quindi 'risparmi dalle 3 alle 4 volte'. Sulla lavagna la card sintetizza in '3-4x sui PDF'. E' una classe di affermazione diversa da KA-037: e' un test suo, non una citazione. Resta comunque non verificato da noi.",
+   "ancora": "Io ho fatto diversi test, se non mi credete fateli anche voi",
+   "fonte": "1Dyld3y-V7Y#19:51-20:12 (audio) + card lavagna",
+   "frame": "frame-341.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-036",
+     "tipo": "quantifica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-039",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "Imprecisione di linguaggio del relatore da non ereditare: a 9:48 dice che il costo cresce 'come se fosse esponenziale'. L'animazione che mostra lui stesso descrive invece una crescita LINEARE per turno (messaggio costante riletto n volte al turno n), quindi quadratica sul cumulato. L'animazione e' corretta, la parola no.",
+   "ancora": "quindi ogni volta e' come se fosse esponenziale",
+   "fonte": "1Dyld3y-V7Y#9:48 (audio) contro #9:12 (animazione)",
+   "frame": "frame-185.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-001",
+     "tipo": "corregge"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-045",
+   "peso": "contesto",
+   "tipo": "affermazione",
+   "contenuto": "CONTRADDIZIONE VISIBILE A SCHERMO E MAI COMMENTATA. Nel pannello /usage che l'autore mostra a 3:36 per dimostrare le sue tesi, in fondo, Claude Code stesso suggerisce: 'Le sessioni piu' lunghe sono piu' costose anche con la cache. Usa /compact a meta' attivita', /clear quando passi a nuove attivita''. Cioe' il prodotto raccomanda esattamente il comando che il video definisce 'la cavolata piu' grossa'. L'autore non lo nota e non lo confuta.",
+   "ancora": "Usa /compact a meta' attivita', /clear quando passi a nuove attivita'",
+   "fonte": "1Dyld3y-V7Y#3:36 (pannello /usage, testo letto a schermo)",
+   "frame": "frame-073.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-007",
+     "tipo": "contraddice"
+    },
+    {
+     "verso": "KA-006",
+     "tipo": "conferma"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-046",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Numeri di consumo reali dell'autore, letti nel pannello /usage: 93% del suo utilizzo eseguito oltre i 150k di contesto; 30% eseguito con 4 o piu' sessioni in parallelo; la skill che gli costa di piu' e' /reel-editor con il 29%, seguita da /apple-design 2%, /resource-page 1%, /post-all 1%, /repurpose 1%. Limite settimanale su tutti i modelli al 24%. Disclaimer a schermo: misure approssimative e sovrapposte, solo quel computer, escluso claude.ai.",
+   "ancora": "93% eseguito oltre 150k di contesto / 30% eseguito mentre 4+ sessioni erano in parallelo",
+   "fonte": "1Dyld3y-V7Y#3:36 (pannello /usage letto a schermo) + audio 3:03-3:17",
+   "frame": "frame-073.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-003",
+     "tipo": "prodotto-da"
+    },
+    {
+     "verso": "KA-024",
+     "tipo": "dimostra"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-047",
+   "peso": "contesto",
+   "tipo": "entita",
+   "contenuto": "L'autore e' Riccardo Belli Contarini, ingegnere informatico, founder di Martes AI (www.martes-ai.com), azienda che forma i team aziendali su Claude Code / Claude Cowork / Codex e poi costruisce soluzioni AI su misura. Posizionamento dichiarato: 'non siamo l'azienda di consulenza che ti fa l'analisi dei processi e ti da' il deck di 200 pagine, ma andiamo ad eseguire e a costruire'. Case study letto a schermo sul sito: 82.271 euro generati da un agente AI su WhatsApp per Bluvacanze. Profilo Instagram: 134 post, 12.5K follower, 22.5K iscritti YouTube dichiarati in bio.",
+   "ancora": "82.271 generati da un agente AI su WhatsApp",
+   "fonte": "1Dyld3y-V7Y#0:52-1:20 e #35:00-35:40 (audio) + #0:57 e #3:18 (schermo)",
+   "frame": "frame-020.png, frame-067.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-043",
+     "tipo": "autore-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-009",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Le due variabili con cui si misura se un prompt/agente è efficace, cioè se sta davvero aiutando il business o no: (1) l'investimento in dollari che rientra dall'utilizzo dell'agente (o il fatturato aumentato grazie ad esso); (2) i token consumati, che rappresentano il costo diretto e vanno minimizzati. Sulla lavagna vengono annotate come \"$, token\" seguito da \"costo ↓↓\".",
+   "ancora": "le due variabili che noi abbiamo per decidere quanto un prompt sia efficace",
+   "fonte": "JTn5pqm9ecM#7:06-7:48 + voce 7:06-7:48",
+   "frame": "frame-0072.png, frame-0077.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-156",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-160",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-012",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Ogni chiamata a un servizio esterno via API (sia per il ragionamento LLM, sia per l'uso di un tool) ha un costo economico: più un servizio terzo viene chiamato, più aumenta la spesa in token/denaro. Sulla lavagna questo viene annotato con \"API\" seguito dal simbolo \"$\" accanto al box Strumenti.",
+   "ancora": "più chiamiamo un servizio terzo, quindi più volte lo utilizziamo, peggio è per noi perché pagheremo molto di più",
+   "fonte": "JTn5pqm9ecM#9:48-10:18 + voce 10:18",
+   "frame": "frame-0099.png, frame-0104.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-157",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-183",
+     "tipo": "precede",
+     "perche": "Questo stesso principio (chiamata esterna = costo) viene ridisegnato identico, con la stessa annotazione API+$, sul nuovo diagramma del loop dei task (\"Invocare LLM\"/\"Invocare Strumento\")."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-008",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Al momento della registrazione del corso, Claude offriva tre piani: Free a $0 (chat base, senza Cowork); Pro a $17/mese con fatturazione annuale anticipata di $200 (o $20/mese con fatturazione mensile), che include Claude Code e Claude Cowork, progetti illimitati e accesso a Research; Max a partire da $100/mese, con 5x o 20x più utilizzo rispetto a Pro.",
+   "ancora": "Pro ... $17 ... Includes Claude Code and Claude Cowork ... Max ... From $100",
+   "fonte": "DI5aWJiFAt8#3:36 (pagina claude.com/pricing) + voce 3:36-4:00",
+   "frame": "frame-0037.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-223",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-056",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Claude Cowork offre una scelta tra tre modelli, ciascuno con un compromesso diverso: Opus 4.6 ('il più capace per lavori ambiziosi'), Sonnet 4.6 ('il più efficiente per i task quotidiani'), Haiku 4.5 ('il più veloce per risposte rapide'); è disponibile inoltre un interruttore 'Extended thinking' per far ragionare il modello più a lungo su task complessi.",
+   "ancora": "Opus 4.6 — Most capable for ambitious work ... Sonnet 4.6 — Most efficient for everyday tasks ... Haiku 4.5 — Fastest for quick answers ... Extended thinking — Think longer for complex tasks",
+   "fonte": "DI5aWJiFAt8#31:36 (menu selezione modello aperto) + voce 31:36-32:06",
+   "frame": "frame-0317.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-057",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Come regola pratica, conviene usare Sonnet per la maggior parte dei task quotidiani e riservare Opus solo a compiti che richiedono codice o un ragionamento prolungato, perché l'interfaccia stessa avverte che Opus consuma i limiti di utilizzo più velocemente degli altri modelli.",
+   "ancora": "Opus consumes usage limits faster than other models",
+   "fonte": "DI5aWJiFAt8#31:36 (avviso sotto Opus 4.6 nel menu modello) + voce 31:36-32:06",
+   "frame": "frame-0317.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-056",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-061",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "La scheda Settings > Usage di Claude mostra i limiti di utilizzo del piano in tre blocchi: consumo della sessione corrente (con orario di reset), limiti settimanali separati per 'tutti i modelli' e per 'solo Sonnet', e una sezione Extra Usage con spesa già sostenuta, tetto di spesa mensile configurabile e saldo disponibile per acquistare consumo aggiuntivo oltre i limiti inclusi nel piano.",
+   "ancora": "Current session ... Weekly limits ... All models ... Sonnet only ... Extra usage",
+   "fonte": "DI5aWJiFAt8#34:42 (Settings, scheda Usage) + voce 34:42-34:48",
+   "frame": "frame-0348.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-008",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-115",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "I token sono l'unità di scambio (la 'moneta') con cui si misura ogni interazione con Claude, equivalenti approssimativamente a gruppi di circa tre lettere ciascuno; ogni token consumato comporta un costo sia in tempo sia in denaro.",
+   "ancora": "ogni volta che voi interagite con Cloud voi spendete Token... sono, diciamo, delle parole, in realtà sono circa tre lettere e questo ha... ripercussioni sulle due cose che sono tempo e denaro",
+   "fonte": "DI5aWJiFAt8#58:06 (lavagna Excalidraw, schema Token / $ / Time) + voce 58:06",
+   "frame": "frame-0582.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-116",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Delimitare con precisione il contesto corretto (la 'zona verde') tramite istruzioni chiare riduce lo spreco di token che Claude altrimenti consumerebbe esplorando soluzioni sbagliate, risparmiando così sia tempo sia denaro.",
+   "ancora": "la tua parte a disposizione quando fai la soluzione è solo questa",
+   "fonte": "DI5aWJiFAt8#58:06 (lavagna Excalidraw) + voce 58:06",
+   "frame": "frame-0582.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-114",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-115",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-223",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Al momento della registrazione del corso, i piani Individual di Claude sono: Free; Pro a 17$/mese con sconto per abbonamento annuale (200$ pagati in anticipo, 20$/mese se fatturato mensilmente), che include Claude Code e Claude Cowork; Max a partire da 100$/mese con 5x o 20x più utilizzo rispetto a Pro e limiti di output più alti.",
+   "ancora": "\"Pro\"... prezzo \"$17\"... \"Max\"... prezzo \"From $100\"... \"Choose 5x or 20x more usage than Pro*\"",
+   "fonte": "DI5aWJiFAt8#109:48 (pagina claude.com/pricing) + voce 109:48-109:54",
+   "frame": "frame-1099.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

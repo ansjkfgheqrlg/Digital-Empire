@@ -1,0 +1,50 @@
+{
+ "capitolo": "IV.1",
+ "parte": "IV.1",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Onboarding del cliente",
+ "libro": "IV",
+ "libro_titolo": "Consegnare e scalare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v17-beggiato-agenzia::KA-021",
+  "max17-v17-beggiato-agenzia::KA-023"
+ ],
+ "fonti_integrali": {
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-021",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "5 punti della kickoff call: 1) definire la timeline del progetto applicando under-promise-and-overdeliver (es. dichiarare 6 settimane, consegnare in 4); 2) definire esplicitamente la reperibilita' (giorni/orari di risposta) per evitare aspettative implicite; 3) definire il successo/deliverable in modo scritto per prevenire lo scope creep; 4) registrare il cliente su tutte le piattaforme necessarie durante la call stessa; 5) tracciare tutto in un project management tool (opzionale per il primo cliente).",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#2:57-3:04",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-023",
+   "peso": "supporto",
+   "tipo": "tecnica",
+   "contenuto": "Tecnica 'taking in charge': dopo la submission del form, inviare subito un messaggio automatico che comunica la presa in carico della richiesta ('ho ricevuto la tua richiesta, ti chiamo tra pochi minuti da questo numero') prima della chiamata umana vera e propria — aumenta il pickup-rate perche' il lead riconosce il numero come atteso invece che sconosciuto.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#3:48-3:49",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

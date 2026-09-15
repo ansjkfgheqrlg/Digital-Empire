@@ -1,0 +1,295 @@
+{
+ "capitolo": "II.1",
+ "parte": "II.1",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Chi e' il cliente: ICP, nicchia, segmento",
+ "libro": "II",
+ "libro_titolo": "Trovare clienti",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "IWCHN_mE2Vo::KA-14",
+  "Pv5uzIxp96U::KA-19",
+  "max17-v10-barron-sales::KA-007",
+  "max17-v10-barron-sales::KA-015",
+  "max17-v10-barron-sales::KA-022",
+  "max17-v10-barron-sales::KA-029",
+  "max17-v10-barron-sales::KA-038",
+  "max17-v16::KA-015",
+  "max17-v17-beggiato-agenzia::KA-003",
+  "max17-v17-beggiato-agenzia::KA-004",
+  "max17-v17-beggiato-agenzia::KA-005",
+  "max18-v09-NmoOZVTrTXA::KA-318",
+  "qOK4WP82Bvo::KA-15"
+ ],
+ "fonti_integrali": {
+  "IWCHN_mE2Vo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/IWCHN_mE2Vo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\IWCHN_mE2Vo\\contenuto-integrale.md"
+  ],
+  "Pv5uzIxp96U": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Pv5uzIxp96U\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Pv5uzIxp96U\\contenuto-integrale.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max17-v16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\video-analysis.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ],
+  "qOK4WP82Bvo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/qOK4WP82Bvo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\qOK4WP82Bvo\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "IWCHN_mE2Vo::KA-14",
+   "peso": "supporto",
+   "tipo": "Business / Opportunita",
+   "contenuto": "Target primario per copywriter: imprenditori italiani 'che non sanno cosa fanno, non ne hanno idea ma sono pieni di soldi'. Proponi soluzione copy specifica → 'gli cambi l'esistenza praticamente'. Mercato ampio: Meta Advantage campaign accessibile a tutti ma copy scadente.",
+   "ancora": "",
+   "fonte": "IWCHN_mE2Vo#00:26:40",
+   "frame": "frame-0780",
+   "run": "IWCHN_mE2Vo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IWCHN_mE2Vo::KA-14",
+     "run": "IWCHN_mE2Vo",
+     "fonte": "IWCHN_mE2Vo#00:26:40"
+    }
+   ]
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-15",
+   "peso": "contesto",
+   "tipo": "Business / Mercato",
+   "contenuto": "Advantage Flash Campaign (Meta automated) = chiunque puo fare ads. 'Lo fa chiunque cioè chiunque fa le ad quindi e un grande mercato.' Il copywriter si differenzia in un mare di ads automatizzate. Piu automation = piu valore della copy manuale esperta.",
+   "ancora": "",
+   "fonte": "IWCHN_mE2Vo#00:26:53",
+   "frame": "frame-0780",
+   "run": "IWCHN_mE2Vo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IWCHN_mE2Vo::KA-15",
+     "run": "IWCHN_mE2Vo",
+     "fonte": "IWCHN_mE2Vo#00:26:53"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-19",
+   "peso": "portante",
+   "tipo": "Copy / Staircase di consapevolezza",
+   "contenuto": "Prima di vendere coaching ONLINE bisogna prima convincere che serve coaching IN GENERALE, poi che serve nella variante online - saltare uno step di consapevolezza da' per scontato un lettore piu' avanti nel funnel di quanto sia.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:26:24",
+   "frame": "frame-800",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-19",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:26:24"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-007",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Confronto due email: Email 1 generica ('I help business owners increase their revenue. Makes sense to jump a quick call and I'll explain how.') vs Email 2 specifica per ICP ('I help business owners of service-based businesses doing between $20,000 and $200,000 a month find and close more deals in the next 30 days or your money back...').",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#05:18",
+   "frame": "frame-160.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-015",
+   "peso": "portante",
+   "tipo": "fase",
+   "contenuto": "FASE 1 — ICP: si definisce un profilo cliente ristretto analizzando i clienti già vinti per dolore specifico + trigger che li ha portati ad agire ora, non solo settore/dimensione. Si misura sulla chiarezza del posizionamento (il prospect riconosce sé stesso in meno di un secondo).",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#03:10",
+   "frame": "frame-136.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-022",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Fascia di fatturato ICP nell'esempio: 'service-based businesses doing between $20,000 and $200,000 a month'.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#05:01",
+   "frame": "frame-150.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-029",
+   "peso": "portante",
+   "tipo": "errore",
+   "contenuto": "ICP troppo largo: 'we will work with anyone who needs what we do' sembra tenere aperte le opzioni ma finisce per non parlare specificamente a nessuno — il prospect non riconosce sé stesso e non prenota.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#03:34",
+   "frame": "frame-108.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-038",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Ogni parte del sistema di vendita (dove trovare i prospect, cosa dire, come condurre la discovery call) funziona solo se è puntata fin dall'inizio sull'ICP giusto.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#06:52",
+   "frame": "frame-201.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-015",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Formula M+M+M (Mercato + Messaggio + Matematica): primo filtro da mettere in ordine quando si guarda un infobusiness. Mercato = qual e' il mercato e la sofisticazione/consapevolezza del pubblico con cui parlare. Concetto illustrato con metafora del golf ('buca di conversione'): 4 zone di consapevolezza del pubblico - (1) nessuna consapevolezza ne' del problema ne' della soluzione, (2) consapevolezza del problema ma non delle soluzioni esistenti, (3) consapevolezza sia del problema sia della soluzione, (4) gia' cliente di un concorrente (i piu' facili da convertire). Raccomandazione: spostare le persone di una zona alla volta verso la buca, non attaccare i 'guru' di riferimento ma fare partnership.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#34:24-37:00",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-001",
+   "peso": "contesto",
+   "tipo": "framework",
+   "contenuto": "Un'agenzia (di qualsiasi tipo, AI o no) e' sempre la stessa struttura di business: lead generation -> funnel di vendita -> sales call -> onboarding -> CRM/pipeline -> delivery -> upselling. Solo la parte di delivery cambia a seconda del servizio venduto (automazione AI vs social media management vs altro).",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#0:17-0:24",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-003",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Blue Ocean vs Red Ocean Strategy per la scelta del mercato. Blue Ocean = mercato libero senza Proof of Concept (rischioso: puo' essere che nessuno se ne sia accorto, tipo Facebook/Instagram, o che qualcuno abbia gia' fallito, esempio Tesla vs tentativi precedenti di auto elettriche). Red Ocean = mercato saturo (palestre, dentisti, real estate) dove la PoC esiste gia'. Consiglio esplicito: partire in Red Ocean con un'offerta differenziante, non in Blue Ocean, salvo avere capitale da perdere.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#0:29-0:38",
+   "frame": "frame-0263.png (0:35:04)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-004",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Due framework per scegliere la nicchia. 1) Se sai fare qualcosa: modello delle 3P (Passion / Profession / Pain del cliente), con riferimento al framework Ikigai. 2) Se non sai fare nulla: evitare nicchie regolamentate (farmaceutico, assicurazioni, banking), testare 5-6 nicchie in parallelo contattando ~100 persone per nicchia, poi concentrarsi sulle 2-3 che convertono meglio invece di scegliere 'a tavolino' con un LLM generico.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#0:38-0:53",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-005",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Anti-pattern 'niche hopping': permanenza minima consigliata di 6 mesi su una nicchia prima di scartarla. 30 chiamate a freddo non sono un campione sufficiente per giudicare una nicchia morta. Chi salta nicchia ogni poche settimane resta sotto la soglia dei 3.000 euro/mese perche' non accumula mai competenza verticale.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#0:53-0:54",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-318",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Scegliere una nicchia con un ticket medio piu' alto (es. e-commerce, dove un AI Customer Support puo' anche recuperare ordini abbandonati) sposta il valore di un servizio verso la fascia piu' alta del suo intervallo di reddito potenziale.",
+   "ancora": "fare il recupero ordini, quindi riuscite anche a monetizzare questa cosa qui",
+   "fonte": "NmoOZVTrTXA#128:36 (evidenziazione a mano su $120k-$400k) + voce 02:08:35",
+   "frame": "frame-1287.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-315",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-15",
+   "peso": "supporto",
+   "tipo": "Copywriting / Mercato italiano",
+   "contenuto": "4 anni prima del video (circa 2019-2020) le risorse in italiano per imparare copywriting erano quasi assenti. Andrei ha colmato questa lacuna. Nel 2023-24 il mercato italiano e' in crescita.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:09:15",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-15",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:09:15"
+    }
+   ]
+  }
+ ]
+}

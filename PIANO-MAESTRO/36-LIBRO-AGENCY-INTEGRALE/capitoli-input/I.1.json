@@ -1,0 +1,37 @@
+{
+ "capitolo": "I.1",
+ "parte": "I.1",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Come nasce una decisione: ADR, memoria, checkpoint",
+ "libro": "I",
+ "libro_titolo": "Il Metodo Digital Empire",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v05-jaye-agenticos::KA-063"
+ ],
+ "fonti_integrali": {
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-063",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Regola di manutenzione dal prompt router: 'a stale pointer is worse than no pointer' - il router master va aggiornato nello stesso turno in cui un file si sposta o parte un nuovo progetto.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#13:30",
+   "frame": "frame-406.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

@@ -1,0 +1,1124 @@
+{
+ "capitolo": "VI.8",
+ "parte": "VI.8",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "YouTube e video",
+ "libro": "VI",
+ "libro_titolo": "Contenuto, brand, lanci",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "-zUDxSdaKRY::KA-01",
+  "-zUDxSdaKRY::KA-07",
+  "Ahp_6rHSOsU::KA-20",
+  "IYd-VOngDog::KA-04",
+  "lQMO0LdeI2c::KA-02",
+  "max18-v04-140FuW7b9pk::KA-073",
+  "max18-v04-140FuW7b9pk::KA-074",
+  "max18-v04-140FuW7b9pk::KA-075",
+  "max18-v04-140FuW7b9pk::KA-076",
+  "max18-v04-140FuW7b9pk::KA-077",
+  "max18-v04-140FuW7b9pk::KA-078",
+  "max18-v06-JTn5pqm9ecM::KA-175",
+  "max18-v06-JTn5pqm9ecM::KA-180",
+  "max18-v06-JTn5pqm9ecM::KA-181",
+  "max18-v06-JTn5pqm9ecM::KA-183",
+  "max18-v06-JTn5pqm9ecM::KA-193",
+  "max18-v06-JTn5pqm9ecM::KA-194",
+  "max18-v06-JTn5pqm9ecM::KA-195",
+  "max18-v06-JTn5pqm9ecM::KA-197",
+  "nRm7JLsP1bc::KA-06",
+  "qOK4WP82Bvo::KA-22"
+ ],
+ "fonti_integrali": {
+  "-zUDxSdaKRY": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/-zUDxSdaKRY\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\-zUDxSdaKRY\\contenuto-integrale.md"
+  ],
+  "3zJpI8-7TW4": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/3zJpI8-7TW4\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\3zJpI8-7TW4\\contenuto-integrale.md"
+  ],
+  "8Pf7d57Q0Jk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/8Pf7d57Q0Jk\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\8Pf7d57Q0Jk\\contenuto-integrale.md"
+  ],
+  "9CuQI0Cr4Pg": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/9CuQI0Cr4Pg\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\9CuQI0Cr4Pg\\contenuto-integrale.md"
+  ],
+  "Ahp_6rHSOsU": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Ahp_6rHSOsU\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Ahp_6rHSOsU\\contenuto-integrale.md"
+  ],
+  "IYd-VOngDog": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/IYd-VOngDog\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\IYd-VOngDog\\contenuto-integrale.md"
+  ],
+  "L5_Z63nxXjI": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/L5_Z63nxXjI\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\L5_Z63nxXjI\\contenuto-integrale.md"
+  ],
+  "Pv5uzIxp96U": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Pv5uzIxp96U\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Pv5uzIxp96U\\contenuto-integrale.md"
+  ],
+  "VbxTgp_fz8Y": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/VbxTgp_fz8Y\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\VbxTgp_fz8Y\\contenuto-integrale.md"
+  ],
+  "hb89lccIacY": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/hb89lccIacY\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\hb89lccIacY\\contenuto-integrale.md"
+  ],
+  "hnPa2zspu3k": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/hnPa2zspu3k\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\hnPa2zspu3k\\contenuto-integrale.md"
+  ],
+  "iy13HC9M8z0": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/iy13HC9M8z0\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\iy13HC9M8z0\\contenuto-integrale.md"
+  ],
+  "lQMO0LdeI2c": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/lQMO0LdeI2c\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\lQMO0LdeI2c\\contenuto-integrale.md"
+  ],
+  "max17-v16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\video-analysis.md"
+  ],
+  "max18-v04-140FuW7b9pk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v04-140FuW7b9pk\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v04-140FuW7b9pk\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v04-140FuW7b9pk\\_parte-001-040.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v04-140FuW7b9pk\\_parte-041-080.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v04-140FuW7b9pk\\_parte-081-120.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\140FuW7b9pk\\contenuto-integrale.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "nP4ojCzvjr8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/nP4ojCzvjr8\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\nP4ojCzvjr8\\contenuto-integrale.md"
+  ],
+  "nRm7JLsP1bc": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/nRm7JLsP1bc\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\nRm7JLsP1bc\\contenuto-integrale.md"
+  ],
+  "qOK4WP82Bvo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/qOK4WP82Bvo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\qOK4WP82Bvo\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "-zUDxSdaKRY::KA-01",
+   "peso": "supporto",
+   "tipo": "Formato / Esercizio delivery progressivo",
+   "contenuto": "Stessa identica frase ripetuta 6 volte isolando la variabile delivery (tono, corpo, ritmo) dal testo - dimostra visivamente che lo stesso copy scritto converte diversamente a seconda della presentazione dal vivo.",
+   "ancora": "",
+   "fonte": "-zUDxSdaKRY#00:00:00",
+   "frame": "frame-001",
+   "run": "-zUDxSdaKRY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-zUDxSdaKRY::KA-01",
+     "run": "-zUDxSdaKRY",
+     "fonte": "-zUDxSdaKRY#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-02",
+   "peso": "contesto",
+   "tipo": "Delivery / Livello 1 Insicuro",
+   "contenuto": "Livello 1 (peggiore): nessun contatto visivo, braccia conserte (postura chiusa/difensiva).",
+   "ancora": "",
+   "fonte": "-zUDxSdaKRY#00:00:00",
+   "frame": "frame-001,002",
+   "run": "-zUDxSdaKRY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-zUDxSdaKRY::KA-02",
+     "run": "-zUDxSdaKRY",
+     "fonte": "-zUDxSdaKRY#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-03",
+   "peso": "contesto",
+   "tipo": "Delivery / Livello 2 Normale",
+   "contenuto": "Livello 2: aggiunge contatto visivo ma parla troppo velocemente - miglioramento parziale non ancora efficace.",
+   "ancora": "",
+   "fonte": "-zUDxSdaKRY#00:00:04",
+   "frame": "frame-003",
+   "run": "-zUDxSdaKRY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-zUDxSdaKRY::KA-03",
+     "run": "-zUDxSdaKRY",
+     "fonte": "-zUDxSdaKRY#00:00:04"
+    }
+   ]
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-04",
+   "peso": "contesto",
+   "tipo": "Delivery / Livello 3 Decente",
+   "contenuto": "Livello 3: parla lento, mette pause. Difetti residui: non proietta la voce, e' fisicamente fermo.",
+   "ancora": "",
+   "fonte": "-zUDxSdaKRY#00:00:06",
+   "frame": "frame-004,005",
+   "run": "-zUDxSdaKRY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-zUDxSdaKRY::KA-04",
+     "run": "-zUDxSdaKRY",
+     "fonte": "-zUDxSdaKRY#00:00:06"
+    }
+   ]
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-05",
+   "peso": "contesto",
+   "tipo": "Delivery / Livello 4 Persuasivo",
+   "contenuto": "Livello 4: aggiunge variazione di tono (alza e abbassa). Persistono gli stessi 2 difetti: non proietta, resta fermo.",
+   "ancora": "",
+   "fonte": "-zUDxSdaKRY#00:00:10",
+   "frame": "frame-006,007,008",
+   "run": "-zUDxSdaKRY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-zUDxSdaKRY::KA-05",
+     "run": "-zUDxSdaKRY",
+     "fonte": "-zUDxSdaKRY#00:00:10"
+    }
+   ]
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-06",
+   "peso": "contesto",
+   "tipo": "Delivery / Livello 5 Quasi perfetto",
+   "contenuto": "Livello 5: aggiunge proiezione vocale corretta, mantiene pause+tono. Nuovo difetto: non gesticola, risultato 'troppo da film' (teatrale/artificiale).",
+   "ancora": "",
+   "fonte": "-zUDxSdaKRY#00:00:16",
+   "frame": "frame-009,010",
+   "run": "-zUDxSdaKRY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-zUDxSdaKRY::KA-06",
+     "run": "-zUDxSdaKRY",
+     "fonte": "-zUDxSdaKRY#00:00:16"
+    }
+   ]
+  },
+  {
+   "uid": "-zUDxSdaKRY::KA-07",
+   "peso": "portante",
+   "tipo": "Delivery / Livello 6 Perfetto",
+   "contenuto": "Livello 6 (finale): proietta, pause, GESTICOLA (differenza visiva netta, braccia si sbloccano), eye contact, confident. La gestualita' e' l'ultimo tassello che rende naturale una delivery tecnicamente corretta.",
+   "ancora": "",
+   "fonte": "-zUDxSdaKRY#00:00:20",
+   "frame": "frame-011,012,013",
+   "run": "-zUDxSdaKRY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-zUDxSdaKRY::KA-07",
+     "run": "-zUDxSdaKRY",
+     "fonte": "-zUDxSdaKRY#00:00:20"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-03",
+   "peso": "contesto",
+   "tipo": "Formato / Coinvolgimento attivo",
+   "contenuto": "Tecnica didattica: interrompere il video con un esercizio esplicito ('ferma il video, scrivi un CTA superficiale e uno profondo') prima di rivelare la risposta - genera coinvolgimento attivo invece di sola esposizione passiva.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:01:28",
+   "frame": "frame-044",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-03",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:01:28"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-10",
+   "peso": "contesto",
+   "tipo": "Formato / Guest expert",
+   "contenuto": "Per la parte design, Andrei cede la parola a Gaia (designer dell'agenzia) - confermato visivamente che gli interventi sono clip pre-registrate separate (ambiente diverso), non videochiamata live. Pattern: delegare sezioni di competenza specialistica mantenendo un'unica voce narrante principale.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:04:59",
+   "frame": "frame-152",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-10",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:04:59"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-17",
+   "peso": "contesto",
+   "tipo": "Funnel / CTA finale",
+   "contenuto": "Chiusura: ringraziamento a Gaia, posizionamento 'Funnel Operator' come miglior modo per fare marketing nel 2026, CTA link in descrizione + iscrizione al canale.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:07:04",
+   "frame": "frame-217",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-17",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:07:04"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-01",
+   "peso": "contesto",
+   "tipo": "Formato / Consulenza reale",
+   "contenuto": "Il video e' la registrazione di una vera call di consulenza 1-a-1 con un cliente/follower (Vasco, marketing fotovoltaico) - Andrei applica live le proprie tecniche a un caso concreto con numeri reali.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~00:00",
+   "frame": "frame-001",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-01",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~00:00"
+    }
+   ]
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-19",
+   "peso": "contesto",
+   "tipo": "Didattica / Tecnica di insegnamento",
+   "contenuto": "La 'descrizione ad' (testo del post FB sopra l'immagine) NON viene scritta nel video: lasciata deliberatamente come esercizio per lo spettatore, con piano di rivedere le proposte dei commenti in un video futuro. Riconoscere quando fermare il tutorial e far esercitare lo studente e' una tecnica didattica valida.",
+   "ancora": "",
+   "fonte": "9CuQI0Cr4Pg#0:17:25",
+   "frame": "frame-525",
+   "run": "9CuQI0Cr4Pg",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "9CuQI0Cr4Pg::KA-19",
+     "run": "9CuQI0Cr4Pg",
+     "fonte": "9CuQI0Cr4Pg#0:17:25"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-02",
+   "peso": "contesto",
+   "tipo": "Content / Struttura video",
+   "contenuto": "Struttura tutorial '8 trucchi che probabilmente non conoscevi' = format list-based ad alta ritenzione. Ogni tip numerato a voce segmenta il video, crea micro-loop di curiosita, facilita il re-watch come reference.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:00:08",
+   "frame": "frame-001",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-02",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:00:08"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-19",
+   "peso": "contesto",
+   "tipo": "Funnel / CTA",
+   "contenuto": "CTA di chiusura verso 'risorse interessanti nei link in descrizione' su copywriting, persuasione, gestione/acquisizione clienti. Il tutorial gratuito su uno strumento e' top-of-funnel verso risorse/prodotti a valle.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:10:36",
+   "frame": "frame-334",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-19",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:10:36"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-20",
+   "peso": "supporto",
+   "tipo": "Content / Retention hack",
+   "contenuto": "Micro-retention: richiesta di iscrizione A META' tutorial ('prima di andare sul numero 10... perche' non sei ancora iscritto') e ironia auto-consapevole sul fatto che tornare al video per gli shortcut 'mi fa fare un paio di views in piu''. Trasparenza sul meccanismo = tono che disarma.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:08:50",
+   "frame": "frame-334",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-20",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:08:50"
+    }
+   ]
+  },
+  {
+   "uid": "IYd-VOngDog::KA-04",
+   "peso": "supporto",
+   "tipo": "Meccanica di funnel / Content strategy",
+   "contenuto": "Il reel si chiude con un rimando esplicito a un video più lungo dello stesso canale interamente dedicato al 'come' fare ricerca ('ho fatto questo video al mio canale tu: Come si fa la ricerca... è una bomba'), accompagnato da una card overlay stile 'video consigliato' (frame-019/020). Pattern di funnel: il reel rivela IL COSA (la ricerca è la fase più importante) ma non spiega IL COME, creando un gap informativo che il CTA verso il video lungo colma — meccanismo di curiosity-gap applicato alla struttura cross-video di un canale, non solo alla singola clip.",
+   "ancora": "",
+   "fonte": "IYd-VOngDog#00:00:34",
+   "frame": "frame-018/019/020",
+   "run": "IYd-VOngDog",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IYd-VOngDog::KA-04",
+     "run": "IYd-VOngDog",
+     "fonte": "IYd-VOngDog#00:00:34"
+    }
+   ]
+  },
+  {
+   "uid": "IYd-VOngDog::KA-05",
+   "peso": "contesto",
+   "tipo": "Tecnica visiva / Editing reel",
+   "contenuto": "Il video usa overlay testo burned-in sincronizzati a livello di frase/parola-chiave (non parola-per-parola come in altri reel del canale): 'MI PAGANO' → 'SU MIGLIAIA' → 'PER SCRIVERE / COPY' → (silenzio overlay per il setup dubitativo) → 'RICERCA' come singolo keyword-burn-in nel momento di rivelazione. Tecnica generalizzabile: riservare l'overlay testuale ai beat informativi ad alta densità (cifre, keyword di rivelazione) e ometterlo nei beat di transizione/setup, per far risaltare la keyword-chiave quando compare.",
+   "ancora": "",
+   "fonte": "IYd-VOngDog#00:00:00-00:00:38",
+   "frame": "frame-001,002,003,009",
+   "run": "IYd-VOngDog",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IYd-VOngDog::KA-05",
+     "run": "IYd-VOngDog",
+     "fonte": "IYd-VOngDog#00:00:00-00:00:38"
+    }
+   ]
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-01",
+   "peso": "contesto",
+   "tipo": "Formato / Premessa video",
+   "contenuto": "Format: Andrei ha pubblicato un post Instagram con la sfida 'Vendimi questo profumo' (Creed Aventus, profumo di nicchia, ~100 euro/100ml, note di ribes nero, bergamotto, ananas, gelsomino, muschio di quercia), ricevendo 100+ commenti/copy dai follower. Il video seleziona 6 di questi commenti presi a caso e li recensisce uno per uno in diretta.",
+   "ancora": "",
+   "fonte": "L5_Z63nxXjI#00:00:12",
+   "frame": "frame-001",
+   "run": "L5_Z63nxXjI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "L5_Z63nxXjI::KA-01",
+     "run": "L5_Z63nxXjI",
+     "fonte": "L5_Z63nxXjI#00:00:12"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-01",
+   "peso": "contesto",
+   "tipo": "Formato / Premessa video",
+   "contenuto": "Formato: live review di copy inviati dai follower via DM Instagram, 3 sales page selezionate su un totale ben piu' ampio (6 scaricati, 'un sacco' ricevuti). Solo 3 dei 6 annunciati vengono coperti nei 33 minuti.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:00:00",
+   "frame": "frame-001",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-01",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-01",
+   "peso": "contesto",
+   "tipo": "Formato / Premessa video",
+   "contenuto": "Materiale analizzato: DM Instagram reale ricevuto passivamente da Andrei (non sollecitato). Reel veloce (82s) vs formato live-review lungo dei video 16/17 - stesso principio di analisi applicato al formato short-form.",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:00:00",
+   "frame": "frame-001",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-01",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-10",
+   "peso": "contesto",
+   "tipo": "Meta / Framing e retention",
+   "contenuto": "Video etichettato 'just for fun' ma chiude comunque con CTA soft verso il canale/link in bio - anche nei contenuti leggeri viene inserito un redirect verso l'offerta principale, il formato leggero funziona anche da acquisizione.",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:01:10",
+   "frame": "frame-037",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-10",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:01:10"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-20",
+   "peso": "contesto",
+   "tipo": "Formato / Coerenza produzione",
+   "contenuto": "Formato uniforme per 11m49s (nessun cambio scena): talking-head studio podcast con solo 2 overlay grafici puntuali nei 2 passaggi piu' tecnici/numerici del video.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:00:00-00:11:49",
+   "frame": "frame-001,frame-331",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-20",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:00:00-00:11:49"
+    }
+   ]
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-01",
+   "peso": "contesto",
+   "tipo": "Formato / Quiz rapid-fire",
+   "contenuto": "Il video pone 5 domande 'cosa viene prima, X o Y?' sull'ordine degli step di un funnel, ciascuna con due box testo affiancati a schermo - tecnica che rende leggibile il confronto binario anche senza audio (silent-scroll).",
+   "ancora": "",
+   "fonte": "hnPa2zspu3k#00:00:00",
+   "frame": "frame-001",
+   "run": "hnPa2zspu3k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hnPa2zspu3k::KA-01",
+     "run": "hnPa2zspu3k",
+     "fonte": "hnPa2zspu3k#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-26",
+   "peso": "contesto",
+   "tipo": "contenuto-serie",
+   "contenuto": "Parte 2 annunciata: analisi errori GPT. Pattern: Andrei usa AI come materiale educativo per mostrare cosa un copywriter vede che GPT non vede. Continua serie critica AI vs copy umano.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:08:18",
+   "frame": "frame-250.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-26",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:08:18"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-01",
+   "peso": "contesto",
+   "tipo": "FORMATO",
+   "contenuto": "Formato live session: Andrei da hotel estero, 2 Red Bull sul tavolo, AirPods, cap con logo ancora. Setup informale ma professionale. Format replicabile per creare contenuto educativo ad alto valore con strumenti minimi (schermo + faccia).",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:00:00",
+   "frame": "frame-0001.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-01",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-02",
+   "peso": "supporto",
+   "tipo": "STRUTTURA",
+   "contenuto": "Lista brand da analizzare annunciata: Dyson, Mercedes Benz, McFit, DJI. In realtà solo McFit e Dyson vengono analizzati — sessione più profonda del previsto. Lezione: meglio 2 case study profondi che 4 superficiali.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:02:57",
+   "frame": "frame-0090.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-02",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:02:57"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-29",
+   "peso": "contesto",
+   "tipo": "FORMATO",
+   "contenuto": "Chiusura live Andrei: 'Ragazzi ho finito la live. Spero che vi sia utile. ci vediamo presto bimbi ciao ciao.' Tono caldo, colloquiale. 'Bimbi' = appellativo trademark Andrei verso la sua community. Chiusura organica senza recap — non riepilogare, finire con energia.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:44:54",
+   "frame": "frame-1348.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-29",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:44:54"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v16::KA-029",
+   "peso": "contesto",
+   "tipo": "meta",
+   "contenuto": "Formato reale del video: non e' un tutorial/screen-share come gli altri video del lotto max17, ma la registrazione di un intervento dal vivo a un evento (platea seduta a tavoli, palco con schermo di proiezione e lavagna a fogli mobili usata piu' volte, organizzatore dell'evento citato piu' volte per nome, 'Mario'). Conseguenza per la copertura video: un disegno a mano su flip-chart (es. il grafico supply/domanda) resta fisicamente visibile sul palco per minuti interi dopo essere stato disegnato, quindi frame nominalmente distanti nel tempo (es. frame-159 a 10:32 e frame-324 a 21:32) possono mostrare lo stesso identico contenuto visivo senza che questo sia un errore di sincronizzazione del tool di estrazione (verificato contro frames/manifest.json).",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI (osservazione strutturale su tutto il video)",
+   "frame": "frame-001.png,frame-159.png,frame-324.png",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v04-140FuW7b9pk::KA-073",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Tecnica di montaggio ricorrente: il video alterna un filmato d'archivio in bianco e nero del relatore a una sequenza patinata di b-roll a colori, con sottotitoli centrali bianchi che scandiscono la frase pronunciata in quel momento.",
+   "ancora": "il montaggio alterna frammenti del relatore... a una lunga sequenza di b-roll turistico... con sottotitoli centrali bianchi che scandiscono la frase pronunciata in quel momento.",
+   "fonte": "140FuW7b9pk#10:00 (nota di apertura del blocco scene 81-120) + voce continua",
+   "frame": "frame-101.png",
+   "run": "max18-v04-140FuW7b9pk",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v04-140FuW7b9pk::KA-074",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "La slide in stile «pagina di quaderno» funziona da tracker visivo progressivo della lista delle quattro emozioni: ogni volta che il relatore ne annuncia una nuova, la slide ricompare con una voce numerata in più rispetto alla comparsa precedente.",
+   "ancora": "1) Disgusto. — 2) Decisione. — 3) Desiderio.",
+   "fonte": "140FuW7b9pk#4:42 (slide pagina di quaderno, elenco a metà animazione) + testo a schermo",
+   "frame": "frame-048.png",
+   "run": "max18-v04-140FuW7b9pk",
+   "relazioni": [
+    {
+     "verso": "KA-001",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v04-140FuW7b9pk::KA-075",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "La stessa tecnica di rivelazione progressiva viene riapplicata alla slide delle quattro domande di riflessione: i termini compaiono prima in filigrana pallida, poi vengono «attivati» graficamente in nero uno alla volta man mano che il relatore li pronuncia, fino al riepilogo completo.",
+   "ancora": "Perché?\nPerché no?\nPerché non tu?\nPerché non adesso?",
+   "fonte": "140FuW7b9pk#11:30 (slide manoscritta, quattro domande complete) + testo a schermo",
+   "frame": "frame-116.png",
+   "run": "max18-v04-140FuW7b9pk",
+   "relazioni": [
+    {
+     "verso": "KA-046",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-074",
+     "tipo": "alternativa-a",
+     "perche": "stessa tecnica di reveal progressivo applicata a un'altra lista (le domande invece delle emozioni)"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v04-140FuW7b9pk::KA-076",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Tecnica ricorrente di scrittura per immagini: ogni citazione chiave viene abbinata a un'inquadratura che la illustra in modo letterale, spesso nell'istante esatto in cui la parola chiave viene pronunciata, rinforzando il messaggio sia a livello uditivo che visivo.",
+   "ancora": "Un giorno devi guardare dritto negli occhi la mona Lisa.",
+   "fonte": "140FuW7b9pk#10:24 (macro volto della Gioconda) + voce 10:24",
+   "frame": "frame-105.png",
+   "run": "max18-v04-140FuW7b9pk",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v04-140FuW7b9pk::KA-077",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Economia di montaggio: quando l'elenco verbale di azioni si allunga, lo stesso spezzone visivo (ad esempio una mano che scrive su un quaderno) viene riutilizzato per accompagnare più battute consecutive, anche quando il contenuto parlato non riguarda più letteralmente l'immagine mostrata.",
+   "ancora": "Inizia il tuo quaderno dei progetti,",
+   "fonte": "140FuW7b9pk#11:54 (macro mano che scrive su un quaderno) + testo a schermo",
+   "frame": "frame-119.png",
+   "run": "max18-v04-140FuW7b9pk",
+   "relazioni": [
+    {
+     "verso": "KA-062",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v04-140FuW7b9pk::KA-078",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Il filmato d'archivio autentico in bianco e nero viene riservato ai momenti di massima autenticità e autorevolezza del discorso (la citazione esatta della studentessa, il ringraziamento e il commiato finale), mentre il resto del video usa b-roll patinato a colori.",
+   "ancora": "credo di sapere cosa significhi determinazione",
+   "fonte": "140FuW7b9pk#6:06 (prima ricomparsa del filmato reale dopo solo b-roll simbolico) + testo a schermo",
+   "frame": "frame-062.png",
+   "run": "max18-v04-140FuW7b9pk",
+   "relazioni": [
+    {
+     "verso": "KA-037",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-073",
+     "tipo": "alternativa-a",
+     "perche": "specifica quando, all'interno dell'alternanza generale, viene scelto il filmato reale invece del b-roll"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-175",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Ogni agente di polling riceve lo stesso blocco CONTEXT con i dati reali del canale di Giovanni Beggiato: creator italiano di Vicenza, canale in italiano su Claude Code/agentic AI workflows/AI agents/'Make Money', statistiche correnti 2.700 iscritti, 40K visualizzazioni/28 giorni, 380K impression, stile pratico e imprenditoriale, corso di punta su Claude Code e Agentic AI, ICP chi vuole guadagnare con l'AI e imprenditori, team: solo creator + 1 thumbnail designer, revenue: coaching program con 6 clienti (~4-8K€/mese), anche 50K follower LinkedIn (in inglese), il tempo è il collo di bottiglia primario, obiettivo dichiarato: dominare la ricerca italiana su Claude Code/agentic AI. L'obiettivo posto è 100.000 iscritti entro fine 2026, pari a circa 37x di crescita.",
+   "ancora": "Team: solo creator + 1 thumbnail designer",
+   "fonte": "JTn5pqm9ecM#91:42 (Claude Code/Antigravity, pannello 'Agent tool input' con il CONTEXT completo dell'Agente 3) + voce 91:42-92:00",
+   "frame": "frame-0918.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-176",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-177",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Primi risultati parziali degli agenti di polling che arrivano in streaming nella chat: Agent 1 (Neutral Baseline) consiglia dominanza nella ricerca con 2-3 video/settimana, ma dà solo 3/10 di confidenza sul raggiungere 100K. Agent 4 (Contrarian) dà 4/10 di confidenza, con l'insight chiave che il problema è la distribuzione, non la qualità dei contenuti, e raccomanda di ingegnerizzare un unico video 'proof-of-income' come investimento creativo primario. Agent 6 (User-Empathy) dà 4/10, evidenziando le collab con creator italiani più grandi (100K-500K iscritti) come possibile leva più alta di qualsiasi strategia di contenuto da sola.",
+   "ancora": "Agent 4 (Contrarian) is in -- 4/10 confidence. Key contrarian insight: the problem is distribution, not content quality.",
+   "fonte": "JTn5pqm9ecM#92:36 (Claude Code/Antigravity, risultati parziali Agent 1/4/6 in arrivo) + voce 92:36-93:06",
+   "frame": "frame-0927.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-173",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-178",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-178",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Altri risultati parziali degli agenti di polling: Agent 5 (First-Principles) dà 3/10, individuando come collo di bottiglia il traffico Browse (l'algoritmo che spinge verso audience fredde) e non la ricerca, e segnala un problema di conversione iscritti: 40K visualizzazioni/mese ma solo 2.700 iscritti totali. Agent 9 (Data-Driven) dà la confidenza più bassa vista finora, 2/10 per 100K ma 3-4/10 per 50-70K, e spinge più fortemente per le collab come singola azione a valore atteso più alto. Agent 8 (Long-Term) dà 3/10 e raccomanda di diventare IL canale 'demo dal vivo di Claude Code' con 1 video di alta qualità/settimana più cross-posting su LinkedIn, notando che i video registrati ora sono asset di ricerca che si accumulano per anni.",
+   "ancora": "Also flags a sub conversion problem: 40K views/month but only 2,700 total subs.",
+   "fonte": "JTn5pqm9ecM#93:06 (Claude Code/Antigravity, risultati parziali Agent 5/9/8 in arrivo) + voce 93:06-93:24",
+   "frame": "frame-0932.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-173",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-180",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-180",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Key Takeaway del polling report finale: 'All 10 agents agree: 100K by Dec 2026 is a moonshot (avg confidence 3.2/10). The math requires 3,200 new subs/week for 30 weeks straight -- a 10-15x acceleration from your current pace. But your metrics (6% CTR, 11-min duration) are genuinely elite. The problem isn't content quality -- it's distribution to cold audiences.'",
+   "ancora": "All 10 agents agree: 100K by Dec 2026 is a moonshot (avg confidence 3.2/10).",
+   "fonte": "JTn5pqm9ecM#93:24 (Claude Code/Antigravity, sezione Key Takeaway del polling_report.md) + voce 93:24-93:54",
+   "frame": "frame-0935.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-178",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-181",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-181",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "I tre Top Agreement Points del polling report: (1) 'Italian AI search is a land grab. You have 12-18 months before the window closes. Every video you plant now is a search asset that compounds for years.' (2) 'Collabs with larger Italian creators (100K-500K subs) are the single highest-leverage action. One well-placed collab can deliver more subs in a week than 3 months of solo publishing.' (3) 'LinkedIn 50K is free seeding. Cross-posting every video gives early velocity signals that trigger YouTube's broader distribution.'",
+   "ancora": "Italian AI search is a land grab. You have 12-18 months before the window closes.",
+   "fonte": "JTn5pqm9ecM#93:24 (Claude Code/Antigravity, sezione Top 3 Agreement Points del polling_report.md) + voce 93:24-93:54",
+   "frame": "frame-0935.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-180",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-182",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Most Interesting Split del polling report: 'Volume (3-4 videos/week) vs. Engineered Breakouts (1 every 2-3 weeks). Given your time constraint (solo + 6 clients), the breakout camp is probably more realistic -- but this is a judgment call only you can make based on sustainable output.'",
+   "ancora": "Volume (3-4 videos/week) vs. Engineered Breakouts (1 every 2-3 weeks).",
+   "fonte": "JTn5pqm9ecM#93:54 (Claude Code/Antigravity, sezione Most Interesting Split del polling_report.md) + voce 93:54-94:24",
+   "frame": "frame-0940.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-180",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-194",
+     "tipo": "contraddice",
+     "perche": "Il dilemma volume-vs-breakout sollevato qui dal polling non viene scelto in modo netto ma sequenziato nel tempo dal verdetto di Agent Debates nel Piano Integrato."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-183",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Most Interesting Standout Idea del polling report: 'Agent 4 (Contrarian): Engineer one \"proof-of-income\" video -- \"Ho guadagnato X euro in 30 giorni usando solo AI agents\" with real numbers and screen recordings. Italian audiences respond strongly to income-proof content. Seed it via LinkedIn. This single video is the highest-probability path to a breakout event. Make it your primary creative investment in the next 60 days.'",
+   "ancora": "Engineer one \"proof-of-income\" video",
+   "fonte": "JTn5pqm9ecM#93:54 (Claude Code/Antigravity, sezione Most Interesting Standout Idea del polling_report.md) + voce 93:54-94:24",
+   "frame": "frame-0940.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-180",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-194",
+     "tipo": "precede",
+     "perche": "L'idea del video proof-of-income, segnalata come standout dal polling, diventa il primo passo concreto del Piano Integrato prodotto dall'Agent Debates."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-193",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Verdetto del dibattito dopo 3 round: 'I tre agenti sono partiti da posizioni opposte e sono convergiti su un unico piano sequenziale entro il Round 3. L'insight chiave, del Breakout Engineer: \"il sequencing conta piu della scelta della strategia.\" Tutte e tre le strategie sono corrette -- ma applicate in fasi diverse.'",
+   "ancora": "il sequencing conta piu della scelta della strategia.",
+   "fonte": "JTn5pqm9ecM#99:24 (Claude Code/Antigravity, sezione Verdetto del dibattito) + voce 99:24-99:30",
+   "frame": "frame-0995.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-190",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-194",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-194",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Piano Integrato prodotto dal verdetto dell'Agent Debates, in tre fasi sequenziali: 'Mese 1: Un video proof-of-income, nient'altro di critico.' -- \"Ho guadagnato X euro con l'AI questo mese -- ecco come.\" Numeri reali, screenshot reali, metodo passo passo. LinkedIn spike il giorno stesso. In parallelo: costruisci la lista di 15 creator italiani (10K-100K subs) per la collab. A/B testa il thumbnail su LinkedIn prima di produrre il video. 'Mese 2: Sblocca le collab con quel video come biglietto da visita.' -- 10 pitch personalizzati a creator 10K-50K in nicchie adiacenti (finanza personale, freelancing, produttivita). Lead con l'11-min di watch time medio, non il numero di iscritti. Intanto: 1 video/settimana search-optimized per costruire il catalogo. 'Mese 3+: Volume su formati provati + 1 collab/mese.' -- 1 long-form/settimana + 1-2 Shorts tagliati dal long-form + collab mensili scalando verso creator 100K+.",
+   "ancora": "Un video proof-of-income, nient'altro di critico.",
+   "fonte": "JTn5pqm9ecM#99:24 (Claude Code/Antigravity, sezione Il Piano Integrato completa) + voce 99:24-99:36",
+   "frame": "frame-0995.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-183",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-195",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Decision gate inserito nel Piano Integrato: 'Se il video proof-of-income fa < 5K views in 30 giorni, salta le collab e defaulta a 2 video search/settimana.' Una condizione di uscita esplicita che ridefinisce il piano se il primo esperimento non funziona.",
+   "ancora": "Decision gate: Se il video proof-of-income fa < 5K views in 30 giorni, salta le collab e defaulta a 2 video search/settimana.",
+   "fonte": "JTn5pqm9ecM#99:30 (Claude Code/Antigravity, riga Decision gate) + voce 99:30-99:36",
+   "frame": "frame-0996.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-194",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-196",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il disagreement più interessante rimasto dopo il dibattito: 'Micro-collab (10K-50K) come stepping stone vs. andare diretti ai 100K+. Il mio take: parti dai 10K-50K. A 2,700 iscritti, anche un creator da 20K e un moltiplicatore 7x. E la prima collab diventa materiale per pitchare la successiva.'",
+   "ancora": "Micro-collab (10K-50K) come stepping stone vs. andare diretti ai 100K+.",
+   "fonte": "JTn5pqm9ecM#99:30 (Claude Code/Antigravity, sezione Il disagreement piu interessante) + voce 99:30-99:36",
+   "frame": "frame-0996.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-197",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Rischio più grande segnalato dal verdetto del dibattito: 'Il buco motivazionale del Mese 2. Il Mese 1 e eccitante. Il Mese 2 e la grind. Pre-scrivi gli script del Mese 2 prima di finire il Mese 1.' Un avvertimento operativo su come il piano rischia di arenarsi psicologicamente, non tecnicamente.",
+   "ancora": "Il buco motivazionale del Mese 2. Il Mese 1 e eccitante. Il Mese 2 e la grind.",
+   "fonte": "JTn5pqm9ecM#99:36 (Claude Code/Antigravity, sezione Il rischio piu grande) + voce 99:36-99:42",
+   "frame": "frame-0997.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-198",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Risultato atteso finale del Piano Integrato: 'Con esecuzione forte: 20K-40K iscritti entro dicembre 2026. Con un video breakout: 40K-70K. 100K richiede 2+ eventi virali o una collab con un canale 200K+ -- possibile ma non pianificabile.' Un ridimensionamento esplicito rispetto all'obiettivo iniziale di 100K, con link a debate_report.md e polling_report.md.",
+   "ancora": "Con esecuzione forte: 20K-40K iscritti entro dicembre 2026. Con un video breakout: 40K-70K.",
+   "fonte": "JTn5pqm9ecM#99:42 (Claude Code/Antigravity, sezione Risultato atteso) + voce 99:42-100:06",
+   "frame": "frame-0998.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-194",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-05",
+   "peso": "contesto",
+   "tipo": "Formato / Tecnica di produzione",
+   "contenuto": "Formato a 'parabola binaria': scena live-action desaturata con overlay una/due parole per frame sincronizzato al parlato, marcatori numerici grandi '1'/'2' per la biforcazione narrativa, chiusura a schermo nero con sola tipografia bianca per isolare la tesi finale.",
+   "ancora": "",
+   "fonte": "nP4ojCzvjr8#00:00:00-00:00:28",
+   "frame": "frame-001,frame-014",
+   "run": "nP4ojCzvjr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nP4ojCzvjr8::KA-05",
+     "run": "nP4ojCzvjr8",
+     "fonte": "nP4ojCzvjr8#00:00:00-00:00:28"
+    }
+   ]
+  },
+  {
+   "uid": "nP4ojCzvjr8::KA-06",
+   "peso": "contesto",
+   "tipo": "Copy / Prop e credibilita' visiva",
+   "contenuto": "Lo smartphone in mano mostra una schermata di notifica ricostruita (mittente, oggetto, preview generici non leggibili in dettaglio) - prop visivo minimo ma sufficiente a rendere concreta l'azione 'legge oggetto' descritta a voce.",
+   "ancora": "",
+   "fonte": "nP4ojCzvjr8#00:00:08",
+   "frame": "frame-005",
+   "run": "nP4ojCzvjr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nP4ojCzvjr8::KA-06",
+     "run": "nP4ojCzvjr8",
+     "fonte": "nP4ojCzvjr8#00:00:08"
+    }
+   ]
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-06",
+   "peso": "portante",
+   "tipo": "Content / Retention-payoff",
+   "contenuto": "Tecnica di chiusura short-form: mette in scena letteralmente il claim assurdo del clichè (aprire un vero frigorifero) e poi lo smonta a voce ('non ti chiudo veramente') — rottura della quarta parete come punchline. Rende il video shareable/rewatchable anche senza il contenuto didattico.",
+   "ancora": "",
+   "fonte": "nRm7JLsP1bc#00:00:42",
+   "frame": "frame-021",
+   "run": "nRm7JLsP1bc",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nRm7JLsP1bc::KA-06",
+     "run": "nRm7JLsP1bc",
+     "fonte": "nRm7JLsP1bc#00:00:42"
+    }
+   ]
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-07",
+   "peso": "contesto",
+   "tipo": "Formato / Segnaletica visiva",
+   "contenuto": "Uso ricorrente degli occhiali da sole come 'costume switch': indossarli/toglierli/spostarli sulla fronte segnala il cambio di registro (narratore serio -> mimica del 'guru fake') senza taglio di scena esplicito o testo aggiuntivo.",
+   "ancora": "",
+   "fonte": "nRm7JLsP1bc#00:00:00-00:16",
+   "frame": "frame-001,frame-006",
+   "run": "nRm7JLsP1bc",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nRm7JLsP1bc::KA-07",
+     "run": "nRm7JLsP1bc",
+     "fonte": "nRm7JLsP1bc#00:00:00-00:16"
+    }
+   ]
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-08",
+   "peso": "contesto",
+   "tipo": "Formato / Montaggio",
+   "contenuto": "Passaggio da colore a bianco/nero a meta' video usato come marcatore di sezione visivo, sostituendo un taglio testuale 'capitolo 2' — coerente con l'assenza di on-screen counter espliciti.",
+   "ancora": "",
+   "fonte": "nRm7JLsP1bc#00:00:16",
+   "frame": "frame-009",
+   "run": "nRm7JLsP1bc",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nRm7JLsP1bc::KA-08",
+     "run": "nRm7JLsP1bc",
+     "fonte": "nRm7JLsP1bc#00:00:16"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-17",
+   "peso": "contesto",
+   "tipo": "Didattica / Prop fisico",
+   "contenuto": "Andrei usa un vaso di vetro verde come prop fisico on-camera durante tutta la sezione conversione. Crea un anchor visivo mnemonico per la metafora: 'il prodotto non cambia, cambia quanti ne vendi grazie al copy'.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:12:42",
+   "frame": "frame-382",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-17",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:12:42"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-22",
+   "peso": "supporto",
+   "tipo": "Struttura video / Template sales-education",
+   "contenuto": "Struttura narrativa del video: (1) hook curiosita' intro, (2) story credibility (storia di Andrei), (3) market context, (4) mechanism (come funziona il copy), (5) economic proof (guadagni + grafici), (6) how to start (metodi pagamento), (7) CTA mentorship. Schema replicabile per qualsiasi video educativo con offerta finale.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:00:00-0:17:01",
+   "frame": "frame-001/frame-515",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-22",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:00:00-0:17:01"
+    }
+   ]
+  }
+ ]
+}

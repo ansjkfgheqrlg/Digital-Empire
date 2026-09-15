@@ -1,0 +1,63 @@
+{
+ "capitolo": "IV.4",
+ "parte": "IV.4",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Team, hiring, delega",
+ "libro": "IV",
+ "libro_titolo": "Consegnare e scalare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v17-beggiato-agenzia::KA-027",
+  "max17-v17-beggiato-agenzia::KA-028",
+  "max17-v17-beggiato-agenzia::KA-029"
+ ],
+ "fonti_integrali": {
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-027",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Regola di assunzione: assumere quando si e' a capacita' (non piu' tempo per nuovo lavoro dai clienti esistenti) e per bisogno, non per crescita, specialmente all'inizio — assumere per crescita e' una scommessa che, se fallisce, lascia l'imprenditore in perdita netta di stipendio rispetto a prima dell'assunzione.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#3:58-4:02",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-028",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Il primo hire consigliato per un'agenzia AI e' un CTO (non un commerciale), anche se costoso (5.000-6.000+ euro/mese), perche' libera l'imprenditore dalla delivery per concentrarsi sulle vendite, l'unica attivita' che fa davvero crescere il fatturato (la delivery mantiene il business ma non lo fa scalare). Prerequisito indispensabile: SOP gia' documentate prima di assumere, altrimenti il nuovo hire dipende continuamente dall'imprenditore per le informazioni mancanti.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#4:02-4:09",
+   "frame": "frame-1875.png (4:09:52)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-029",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Grafico mostrato a mano: dopo l'assunzione del CTO, le curve 'Fatturato' e 'Salario' dell'imprenditore divergono temporaneamente (il salario scende perche' l'introito puro va in parte al CTO) prima di risalire quando il fatturato scala grazie al tempo liberato per le vendite. Stessa dinamica si ripete con l'assunzione del sales team in una seconda fase.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#4:06-4:12",
+   "frame": "frame-1875.png (4:09:52)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

@@ -1,0 +1,1009 @@
+{
+ "capitolo": "V.1",
+ "parte": "V.1",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Cosa e' davvero un agente",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-lezione-01::KA-01",
+  "cs2online-lezione-01::KA-04",
+  "cs2online-lezione-01::KA-05",
+  "cs2online-lezione-01::KA-06",
+  "cs2online-lezione-01::KA-07",
+  "cs2online-lezione-01::KA-08",
+  "cs2online-lezione-02::KA-04",
+  "cs2online-lezione-02::KA-07",
+  "cs2online-lezione-03::KA-01",
+  "cs2online-lezione-03::KA-02",
+  "cs2online-lezione-03::KA-04",
+  "cs2online-lezione-03::KA-05",
+  "cs2online-lezione-04::KA-01",
+  "cs2online-lezione-05::KA-01",
+  "cs2online-lezione-05::KA-02",
+  "cs2online-lezione-08::KA-01",
+  "max17-v05-jaye-agenticos::KA-003",
+  "max17-v07-rizzo-prompt::KA-012",
+  "max18-v02-karpathy-agenti::KA-013",
+  "max18-v02-karpathy-agenti::KA-014",
+  "max18-v06-JTn5pqm9ecM::KA-005",
+  "max18-v06-JTn5pqm9ecM::KA-007",
+  "max18-v06-JTn5pqm9ecM::KA-010",
+  "max18-v06-JTn5pqm9ecM::KA-011",
+  "max18-v06-JTn5pqm9ecM::KA-026",
+  "max18-v06-JTn5pqm9ecM::KA-031",
+  "max18-v06-JTn5pqm9ecM::KA-032",
+  "max18-v06-JTn5pqm9ecM::KA-034",
+  "max18-v08-DI5aWJiFAt8::KA-009",
+  "max18-v08-DI5aWJiFAt8::KA-010",
+  "max18-v08-DI5aWJiFAt8::KA-011",
+  "max18-v08-DI5aWJiFAt8::KA-012",
+  "max18-v08-DI5aWJiFAt8::KA-013",
+  "max18-v08-DI5aWJiFAt8::KA-014",
+  "max18-v08-DI5aWJiFAt8::KA-015",
+  "max18-v08-DI5aWJiFAt8::KA-016",
+  "max18-v08-DI5aWJiFAt8::KA-134",
+  "max18-v08-DI5aWJiFAt8::KA-135",
+  "max18-v08-DI5aWJiFAt8::KA-212"
+ ],
+ "fonti_integrali": {
+  "cs2online-lezione-01": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-01\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-02\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-03": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-03\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-04": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-04\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-05": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-05\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-08": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-08\\contenuto-integrale.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max17-v07-rizzo-prompt": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\video-analysis.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ],
+  "max18-v02-karpathy-agenti": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\video-analysis.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-lezione-01::KA-01",
+   "peso": "portante",
+   "tipo": "Concetto fondamentale / LLM",
+   "contenuto": "Un LLM non è cosciente, non pensa, non ragiona: è un sistema allenato su enormi quantità di testo/immagini/video/audio che predice il token successivo. Analogia usata: completare 'Ciao, come...?' con 'stai' è pattern statistico appreso, non comprensione.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-01#sezione:Cos'è l'intelligenza artificiale?",
+   "frame": "",
+   "run": "cs2online-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-01::KA-01",
+     "run": "cs2online-lezione-01",
+     "fonte": "cs2online-lezione-01#sezione:Cos'è l'intelligenza artificiale?"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-03",
+   "peso": "contesto",
+   "tipo": "Statistiche citate (fonte non specificata)",
+   "contenuto": "DA VERIFICARE (fonte non citata nel video): 80% aziende usa AI ma non vede risultati veri (solo 20% di chi usa AI li vede); developer che usano AI +65%; ruoli AI-strategy nel marketing +23%; 88% freelancer con AI dichiara impatto positivo sulla carriera.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-01#sezione:Perché esiste questo corso",
+   "frame": "",
+   "run": "cs2online-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-01::KA-03",
+     "run": "cs2online-lezione-01",
+     "fonte": "cs2online-lezione-01#sezione:Perché esiste questo corso"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-04",
+   "peso": "portante",
+   "tipo": "Principio operativo / 80-20",
+   "contenuto": "Principio 80/20 applicato all'AI: l'AI gestisce l'80% del lavoro tattico (titoli, descrizioni, email, FAQ, copy base); l'operatore umano si concentra sul 20% strategico/creativo che genera l'80% del valore differenziale.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-01#sezione:Perché esiste questo corso",
+   "frame": "",
+   "run": "cs2online-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-01::KA-04",
+     "run": "cs2online-lezione-01",
+     "fonte": "cs2online-lezione-01#sezione:Perché esiste questo corso"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-05",
+   "peso": "supporto",
+   "tipo": "Framing / posizionamento",
+   "contenuto": "Due errori di framing opposti sull'AI: negazionismo ('non cambia niente', paragonato a chi negava l'impatto del trattore in agricoltura) vs iper-hype ('ha cambiato tutto, i developer non hanno più lavoro'). Posizione dell'autore: la verità sta nel mezzo.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-01#sezione:I due campi sbagliati",
+   "frame": "",
+   "run": "cs2online-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-01::KA-05",
+     "run": "cs2online-lezione-01",
+     "fonte": "cs2online-lezione-01#sezione:I due campi sbagliati"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-06",
+   "peso": "portante",
+   "tipo": "Analogia / rischio giudizio",
+   "contenuto": "Analogia 'meccanico esperto vs cliente ignaro': senza expertise reale in un campo (es. marketing/copywriting) non si riesce a giudicare se l'output AI è buono o pieno di errori — rischio concreto di validare output scadenti che danneggiano conversioni/vendite (non solo estetica, soldi reali in advertising).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-01#sezione:I due campi sbagliati",
+   "frame": "",
+   "run": "cs2online-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-01::KA-06",
+     "run": "cs2online-lezione-01",
+     "fonte": "cs2online-lezione-01#sezione:I due campi sbagliati"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-07",
+   "peso": "portante",
+   "tipo": "Framework / 3 errori operativi",
+   "contenuto": "3 errori operativi ricorrenti nell'uso dell'AI: (1) non sapere usarla → contesto insufficiente, output scarso; (2) non saper giudicare l'output → mancanza expertise di dominio; (3) usarla per i task sbagliati (es. sales page intera invece di ricerca/organizzazione/copy breve con contesto).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-01#sezione:I due campi sbagliati",
+   "frame": "",
+   "run": "cs2online-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-01::KA-07",
+     "run": "cs2online-lezione-01",
+     "fonte": "cs2online-lezione-01#sezione:I due campi sbagliati"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-01::KA-08",
+   "peso": "supporto",
+   "tipo": "Applicazione pratica dell'autore",
+   "contenuto": "L'autore (copywriter) NON fa scrivere all'AI una sales page intera da zero; la usa per ricerca, organizzazione documenti, primary text ads — sempre con contesto costruito a monte, mai 'fammi il copy per questo' a secco.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-01#sezione:I due campi sbagliati (chiusura)",
+   "frame": "",
+   "run": "cs2online-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-01::KA-08",
+     "run": "cs2online-lezione-01",
+     "fonte": "cs2online-lezione-01#sezione:I due campi sbagliati (chiusura)"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-02",
+   "peso": "contesto",
+   "tipo": "Glossario / Artifact-Canvas",
+   "contenuto": "Artifact (Claude) / Canvas (ChatGPT, Gemini) = documento condiviso stile Google Docs collaborativo; si attiva chiedendo esplicitamente all'AI di 'lavorare dentro un artifact'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-02",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-04",
+   "peso": "supporto",
+   "tipo": "Glossario / Reasoning",
+   "contenuto": "Chain of thought/reasoning = l'AI mostra il ragionamento prima della risposta finale; risposte con reasoning attivo dichiarate 'significativamente migliori'. Extended thinking (Claude Opus 4.6) = modalità per farlo ragionare più a lungo.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-04",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-05",
+   "peso": "contesto",
+   "tipo": "Glossario / API",
+   "contenuto": "API = collega due servizi diversi (es. Google Sheets → Yahoo Mail); API key = credenziale segreta, mai da condividere, reperibile su piattaforme developer (Platform OpenAI, Anthropic for Developers) e non nella chat consumer.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-05",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-07",
+   "peso": "portante",
+   "tipo": "Glossario / Agent e automazioni",
+   "contenuto": "Agent = AI che esegue azioni autonome (non solo conversazione); Automazione = workflow che esegue step da solo (es. reminder email schedulata); Zapier citato come tool no-code per crearle.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-07",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-01",
+   "peso": "portante",
+   "tipo": "Framework / 10 livelli utilizzo AI",
+   "contenuto": "Framework 10 livelli (0-10) di utilizzo AI: 0=sa che esiste, 1=la usa come Google, 2=giocherella senza workflow, 3=lavoro reale ma output generico 'che sa di AI' (90% delle persone bloccata qui), 4=costruisce contesto e ottiene output performanti (salto critico), 5=sistemi/automazioni senza intervento manuale, 6=crea applicazioni/integra API, 7=fine-tuning+RAG (migliaia €/mese), 8-10=big tech/governi. Obiettivo dichiarato del corso: portare lo studente da 0-3 a 4-5, verso il 6.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-03::KA-01",
+     "run": "cs2online-lezione-03",
+     "fonte": "cs2online-lezione-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-02",
+   "peso": "supporto",
+   "tipo": "Bias cognitivo applicato all'AI",
+   "contenuto": "Effetto Dunning-Kruger applicato all'uso AI: il 90% è bloccato ai livelli 1-3, si percepisce competente ma non ha risultati misurabili reali (non più vendite, non più views).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-03::KA-02",
+     "run": "cs2online-lezione-03",
+     "fonte": "cs2online-lezione-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-04",
+   "peso": "portante",
+   "tipo": "Criterio decisionale / quando NON usare AI",
+   "contenuto": "Criterio esplicito per NON usare l'AI: se per un task piccolo (es. 20 parole) l'AI fa peggio di farlo a mano, va fatto a mano — 'il punto non è usare l'AI per usare l'AI'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-03::KA-04",
+     "run": "cs2online-lezione-03",
+     "fonte": "cs2online-lezione-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-05",
+   "peso": "supporto",
+   "tipo": "Principio / 2 motivi legittimi per usare AI",
+   "contenuto": "2 motivi legittimi per usare l'AI: (1) risparmiare tempo significativo, (2) fare cose che altrimenti non si saprebbe fare (es. scrivere codice senza saper programmare).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-03::KA-05",
+     "run": "cs2online-lezione-03",
+     "fonte": "cs2online-lezione-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-01",
+   "peso": "portante",
+   "tipo": "Framework / 3 tipi task",
+   "contenuto": "Framework 3 categorie di task rispetto al coinvolgimento AI: Umano (quasi senza AI), AI assisted (~50/50), AI heavy (quasi tutto AI) — decisione da prendere PRIMA di iniziare il task, non durante.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-04#trascrizione:apertura",
+   "frame": "",
+   "run": "cs2online-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-04::KA-01",
+     "run": "cs2online-lezione-04",
+     "fonte": "cs2online-lezione-04#trascrizione:apertura"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-05",
+   "peso": "contesto",
+   "tipo": "Risorsa / tabella decisionale",
+   "contenuto": "Esiste una tabella decisionale ufficiale (PDF 'Cosa delegare, cosa no', riusato dalla lezione 1) per scegliere Umano/AI-assisted/AI-heavy caso per caso.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-04#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-04::KA-05",
+     "run": "cs2online-lezione-04",
+     "fonte": "cs2online-lezione-04#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-01",
+   "peso": "portante",
+   "tipo": "Tassonomia / 12 categorie task",
+   "contenuto": "Lista ufficiale 12 categorie di task delegabili all'AI: Copywriting, Ricerca, Ideazione/brainstorming, Web dev/vibe coding, Analisi e strategia, Organizzazione/planning, Comunicazione, Revisione/editing, Automazioni, Problem solving, Analisi dati, Formattazione/struttura.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-05#trascrizione:lista",
+   "frame": "",
+   "run": "cs2online-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-05::KA-01",
+     "run": "cs2online-lezione-05",
+     "fonte": "cs2online-lezione-05#trascrizione:lista"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-02",
+   "peso": "supporto",
+   "tipo": "Stack strumenti / Ricerca",
+   "contenuto": "Stack dichiarato per la ricerca: Perplexity (tool dedicato) + Google Scholar (solo paper scientifici) + AI generalista per sintesi finale — non un singolo tool onnicomprensivo.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-05#trascrizione:ricerca",
+   "frame": "",
+   "run": "cs2online-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-05::KA-02",
+     "run": "cs2online-lezione-05",
+     "fonte": "cs2online-lezione-05#trascrizione:ricerca"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-05::KA-05",
+   "peso": "contesto",
+   "tipo": "Limite percepito / brainstorming",
+   "contenuto": "Ideazione/brainstorming è il task che l'autore preferisce fare senza AI ('lo faccio spesso con la mia testa') — ammissione esplicita di limite percepito, non regola universale ('dipende da quanto tempo/energia hai').",
+   "ancora": "",
+   "fonte": "cs2online-lezione-05#trascrizione:ideazione",
+   "frame": "",
+   "run": "cs2online-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-05::KA-05",
+     "run": "cs2online-lezione-05",
+     "fonte": "cs2online-lezione-05#trascrizione:ideazione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-01",
+   "peso": "portante",
+   "tipo": "Principio / expertise input vs output",
+   "contenuto": "Riformulazione del principio 'expertise per giudicare l'AI': non serve essere esperti solo per giudicare l'OUTPUT, serve esserlo per costruire un buon INPUT - se correggi sempre l'output, l'uso dell'AI perde senso.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-08#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-08::KA-01",
+     "run": "cs2online-lezione-08",
+     "fonte": "cs2online-lezione-08#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-003",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Definizione dal PDF guida: 'An agent is an AI that can do real work: read and write files, use tools, and finish tasks, not just answer questions. Out of the box, every conversation starts from zero. An operating system is the standing structure around the agent: what it shows you, what it runs on a schedule, what it remembers, and what it can reliably do.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#21:24",
+   "frame": "frame-643.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-012",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Il passaggio da LLM ad AGENTE: il modello acquisisce la capacita' di leggere/scrivere e chiamare funzioni verso tre bersagli disegnati a lavagna - Files (cartelle), WEB (nuvola), APP (tramite protocollo MCP).",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#05:00",
+   "frame": "frame-162.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-002",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Statistiche Eurostat 2025 citate a schermo (non verificate indipendentemente): mondo, 84% delle persone (6,8 miliardi) non ha mai usato AI; 16% (1,3 miliardi) usa solo modelli gratuiti; 0,3% (~25 milioni) paga un abbonamento AI; 0,04% (2-5 milioni) usa coding harness agentici. Italia: 8% usa AI generativa sul lavoro (terzultimo posto EU), 6,4% per educazione, 12,8% per uso personale.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#0:04-0:08 e #0:22-0:26",
+   "frame": "frame-0029.png (0:03:44)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-013",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Dimostrazione A/B eseguita dal vivo: due finestre IDE affiancate, ognuna con una sessione Claude Code (bypass permissions attivo). A sinistra il progetto 'Prova No Brain' (cartella vuota), a destra 'Brain-Karpathy' (con .claude, .env, clienti, fonti, offerta, proposte, CLAUDE.md, index.md, log.md). Stesso transcript di call, stessa richiesta ('generami una proposta per questo cliente'), confronto degli output.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#6:51-8:52",
+   "frame": "frame-138.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-014",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "La differenza vera tra agente con memoria e agente senza NON e' estetica ma di VERIFICABILITA'. L'agente senza cervello chiude chiedendo all'umano di confermare due scelte che ha inventato lui ('ho messo la stima trimestrale a ~3.000 euro [...] se preferisci non mostrare quel totale stimato, lo tolgo'). L'agente col cervello chiude con una check-list di cinque controlli superati contro un file che esiste: copertina con logo e data OK, tre paragrafi presi dalla call OK, prezzi identici a offerta/offerta.md OK, nessuna opzione pre-evidenziata OK, pagina firma coi campi presenti OK.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#8:03 (entrambi gli output letti a schermo)",
+   "frame": "frame-162.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-005",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Schema canonico di \"Cos'è un Agente AI\", costruito per intero su Excalidraw: in alto un box \"Istruzioni\" (\"Un template di prompt\") con una freccia verticale che scende fino al box centrale viola \"Agente AI\". A sinistra un omino stilizzato etichettato \"Utente\", collegato all'Agente AI da due frecce orizzontali: \"Richiesta\" (utente -> agente) e \"Risposta\" (agente -> utente). A destra dell'Agente AI, una freccia doppia (<->) verso un box \"Strumenti\" che elenca quattro esempi con icona: Google (lente), WolframAlpha (stella), Python (logo), API Meteo (nuvola). Sotto l'Agente AI, due frecce scendono verso due box affiancati: \"LLM (ragionamento)\" e \"Memoria\". Questo schema a sei componenti (Istruzioni, Utente, Agente AI, Strumenti, LLM, Memoria) resta la lavagna di riferimento a cui l'autore torna ripetutamente per tutto il capitolo.",
+   "ancora": "due frecce verso il basso che portano a due box affiancati",
+   "fonte": "JTn5pqm9ecM#3:48 (stato base) + voce 3:48",
+   "frame": "frame-0039.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-152",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-154",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-158",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-159",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-161",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-006",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Le tre modalità con cui un Utente può interagire con un Agente AI, aggiunte come annotazione allo schema base e raggruppate da una parentesi graffa: CHAT, VOCALI (es. il microfono del telefono), FORM.",
+   "ancora": "del telefono o qualsiasi cosa vogliamo",
+   "fonte": "JTn5pqm9ecM#4:18-4:48 + voce 4:18-4:48",
+   "frame": "frame-0044.png, frame-0049.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-007",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Il template di prompt dentro il box \"Istruzioni\" viene marcato con un cerchio arancione etichettato \"IP\": l'autore chiarisce che il prompt/le istruzioni saranno, a livello effettivo, l'unica vera proprietà intellettuale del progetto — l'unica skill che non cambierà anche quando gli agenti e le piattaforme sottostanti evolveranno.",
+   "ancora": "questo sarà a livello effettivo l'unica vostra proprietà intellettuale",
+   "fonte": "JTn5pqm9ecM#5:18-6:00 + voce 5:20-6:00",
+   "frame": "frame-0054.png, frame-0059.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-156",
+     "tipo": "motiva",
+     "perche": "Se il prompt è l'unica IP che conta, allora la sua qualità (essere ben direzionato) diventa la variabile decisiva spiegata subito dopo con la metafora dei coni."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-010",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Il box \"LLM (ragionamento)\" dello schema viene sottolineato ed esplicitato: ogni agente viene collegato a un modello linguistico specifico — GPT, Claude, Gemini \"o chi per esso\", a seconda del caso — che gli fornisce la capacità di ragionamento. (Nota: la trascrizione automatica del parlato rende i nomi dei modelli in modo distorto, come \"CVT\" per GPT e \"Clod\" per Claude; il senso resta comunque chiaro dal contesto.)",
+   "ancora": "andremo a collegare un LM, quindi c'è CVT, Clod, Gemini",
+   "fonte": "JTn5pqm9ecM#8:18 + voce 8:18",
+   "frame": "frame-0084.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-011",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Oltre agli strumenti esterni (Google, WolframAlpha, Python, API Meteo), un agente AI ha a disposizione anche tool nativi forniti direttamente dall'infrastruttura del provider (Anthropic, OpenAI, ecc.) — l'autore cita esplicitamente \"Read\" e \"Bash\" come esempio di questi strumenti nativi (lo stesso tipo di tool che si trovano in Claude Code), annotati sulla lavagna sotto la scritta \"Tool\" aggiunta accanto al box Strumenti.",
+   "ancora": "abbiamo anche la possibilità di avere uno strumento che si chiama read, uno strumento che si chiama bash",
+   "fonte": "JTn5pqm9ecM#8:48-9:18 + voce 9:18",
+   "frame": "frame-0089.png, frame-0094.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-160",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-013",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Completamento finale dello schema \"Cos'è un Agente AI\": viene aggiunta una seconda freccia arancione curva che parte dal box \"Memoria\" e sale dentro l'\"Agente AI\" (simmetrica a quella già presente da \"LLM\"), a rappresentare che l'agente deve avere una memoria collegata per potersi ricordare le cose e svolgere determinati compiti. Lo schema risulta così completo con entrambe le frecce (LLM e Memoria) entranti nell'agente.",
+   "ancora": "noi dobbiamo inserire una memoria all'interno di questo agente per permettergli di fare determinate cose",
+   "fonte": "JTn5pqm9ecM#10:48 + voce 10:48",
+   "frame": "frame-0109.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-162",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-026",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "L'agente decide autonomamente, in base al proprio ragionamento sull'obiettivo, se invocare o no un tool: nella seconda esecuzione (una domanda sulla memoria, non sull'invio di email) il tool Gmail non viene mai chiamato, e il workflow ha comunque successo. L'autore lo sottolinea esplicitamente come dimostrazione della \"potenza\" dell'agente: l'uso di uno strumento non è automatico ma condizionato.",
+   "ancora": "questo strumento non è stato mai chiamato, quindi vedete la potenza",
+   "fonte": "JTn5pqm9ecM#16:54-18:06 + voce 18:06",
+   "frame": "frame-0170.png, frame-0182.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-182",
+     "tipo": "precede",
+     "perche": "Questo stesso principio (l'agente sceglie da solo se chiamare il tool) è quello che il diagramma teorico del capitolo successivo formalizza nel rombo 'Obiettivo raggiunto?'."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-031",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Nuova lavagna Excalidraw, titolo \"Come svolgono tasks gli agenti AI\". A sinistra un riquadro \"Stato dell'Agente\" contiene il box \"Finestra di contesto\" con cinque voci elencate (tutte poi confermate con spunta arancione): Obiettivo, Strumenti, Conversazione di esempio, Istruzioni di contesto, Storico conversazione. A destra, un flowchart verticale ad anello: \"Assemblare la finestra di contesto iniziale\" -> \"Invocare LLM\" (annotato \"API ⟹ $\", con chiamata esterna verso un box \"LLM\") -> rombo \"Obiettivo raggiunto?\" con due uscite: \"sì\" -> esci dal loop, restituisci risultato; \"no\" -> \"Preparare l'esecuzione dello strumento\" -> \"Invocare Strumento\" (annotato \"API, $\", chiamata esterna verso un box \"Tool API\") -> \"Aggiornare la finestra di contesto\", che rientra con una linea tratteggiata etichettata \"turno successivo\" di nuovo su \"Invocare LLM\", chiudendo il loop.",
+   "ancora": "Assemblare la finestra di contesto iniziale",
+   "fonte": "JTn5pqm9ecM#18:42-22:18 (costruzione progressiva del diagramma) + voce 18:48-22:18",
+   "frame": "frame-0188.png, frame-0196.png, frame-0201.png, frame-0223.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-152",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-153",
+     "tipo": "esempio-di",
+     "perche": "Questo flowchart formalizza in un ciclo esplicito lo stesso schema statico Utente/Agente/LLM/Strumenti/Memoria già visto nel capitolo 'Cos'e un Agente AI'."
+    },
+    {
+     "verso": "KA-160",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-180",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-182",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-032",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "I cinque elementi che compongono la \"finestra di contesto\" assemblata da un agente come primo passo del loop, con la spiegazione data a voce mentre vengono spuntati uno a uno: (1) Obiettivo — che cosa sta chiedendo l'utente; (2) Strumenti; (3) Conversazione di esempio; (4) Istruzioni di contesto — esempio concreto dato dall'autore: se l'obiettivo era \"mandare un'email\", le istruzioni possono dire esplicitamente \"non farlo\", e prevalgono sull'obiettivo (stesso comportamento già dimostrato nella demo n8n con il prompt \"non mandare mai un'email\"); (5) Storico della conversazione.",
+   "ancora": "Poi raccoglie le istruzioni del contesto, quindi se qui aveva l'obiettivo di mandare un email, qui le istruzioni gli dicono non farlo",
+   "fonte": "JTn5pqm9ecM#20:00-20:30 + voce 20:00-20:30",
+   "frame": "frame-0201.png, frame-0206.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-179",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-183",
+     "tipo": "esempio-di",
+     "perche": "L'esempio 'istruzioni che dicono non farlo' fatto qui a voce è esattamente il test col prompt custom 'non mandare mai un email' già mostrato in pratica in n8n."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-034",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "L'autore ricollega esplicitamente il diagramma teorico alla demo n8n già mostrata: quando obiettivo e istruzioni coincidono nel dire di non mandare email, il rombo \"Obiettivo raggiunto?\" restituisce \"sì\" e l'agente esce subito dal loop restituendo il risultato, senza mai invocare lo strumento Gmail (ramo già visto). Quando invece l'obiettivo richiede l'invio della mail, il flusso prende il ramo \"no\": l'agente prepara ed invoca lo strumento Gmail (di nuovo una chiamata API esterna con relativo costo, annotato \"API, $\" accanto a \"Invocare Strumento\", simmetrico all'annotazione \"API ⟹ $\" già presente su \"Invocare LLM\") e poi aggiorna la finestra di contesto.",
+   "ancora": "dopo il nodo AI è entrato nel nodo Gmail e si è preparato ad utilizzarlo",
+   "fonte": "JTn5pqm9ecM#21:42-23:18 + voce 22:00-23:18",
+   "frame": "frame-0218.png, frame-0221.png, frame-0222.png, frame-0234.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-179",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-174",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-183",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-009",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "L'app desktop di Claude offre tre modalità di utilizzo tra cui scegliere dalla schermata di benvenuto: Chat, Cowork e Code.",
+   "ancora": "avrete la possibilità di entrare nelle tre modalità, quindi chat, cowork e code",
+   "fonte": "DI5aWJiFAt8#4:12 (schermata di benvenuto dell'app desktop) + voce 4:12-4:30",
+   "frame": "frame-0043.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-010",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-010",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Claude (modalità Chat) è definibile come una semplice chat: l'utente scrive, Claude risponde, e non compie alcuna azione autonoma senza che gli venga esplicitamente richiesto.",
+   "ancora": "Una chat. Tu scrivi, Claude risponde. Non fa nulla senza che tu lo chieda.",
+   "fonte": "DI5aWJiFAt8#4:36 (tabella comparativa Excalidraw, riga Cos'è - colonna Claude) + voce 4:30-4:42",
+   "frame": "frame-0047.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-011",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Claude Code è un assistente che lavora direttamente sui file di codice dell'utente: non si limita a suggerire modifiche, ma le applica e crea file veri sul computer.",
+   "ancora": "Un assistente che lavora direttamente sui tuoi file di codice — non solo suggerisce, ma modifica e crea file sul tuo computer.",
+   "fonte": "DI5aWJiFAt8#5:00 (tabella comparativa, cella Cos'è - Claude Code) + voce 5:00-5:18",
+   "frame": "frame-0051.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-010",
+     "tipo": "alternativa-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-012",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Claude Cowork funziona come Claude Code ma senza terminale: accede a cartelle sul computer dell'utente, legge file e crea documenti, portando a termine il lavoro autonomamente fino alla fine.",
+   "ancora": "Come Claude Code, ma senza terminale. Accede a cartelle sul tuo computer, legge file, crea documenti — tutto da solo, fino alla fine.",
+   "fonte": "DI5aWJiFAt8#5:42 (tabella comparativa, cella Cos'è - Claude Cowork) + voce 5:42-6:06",
+   "frame": "frame-0058.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-011",
+     "tipo": "alternativa-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-013",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Claude Cowork è pensato per i knowledge worker, cioè per chi non scrive codice (es. impiegati, staff amministrativo, HR), a differenza di Claude Code che è rivolto agli sviluppatori.",
+   "ancora": "è stato pensato per i knowledge worker, quindi per chi non scrive codice",
+   "fonte": "DI5aWJiFAt8#6:06 (tabella comparativa, riga Per chi - Cowork) + voce 6:06-6:18",
+   "frame": "frame-0062.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-012",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-014",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "In Claude (modalità Chat) è sempre l'utente a guidare la conversazione: Claude risponde e poi si ferma ad aspettare; per proseguire, l'utente deve scrivere di nuovo.",
+   "ancora": "Tu guidi sempre. Claude risponde, poi aspetta. Se vuoi continuare, devi scrivere ancora.",
+   "fonte": "DI5aWJiFAt8#4:42 (tabella comparativa, riga Come funziona - Claude) + voce 4:42-5:00",
+   "frame": "frame-0048.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-010",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-015",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "In Claude Code il funzionamento è basato su obiettivi: si assegna un obiettivo, Claude analizza il codice, applica le modifiche e mostra cosa ha fatto, lasciando la possibilità di fermarlo ad ogni passo.",
+   "ancora": "Dai un obiettivo. Claude analizza il codice, fa le modifiche, ti mostra cosa ha fatto. Puoi fermarlo ad ogni passo.",
+   "fonte": "DI5aWJiFAt8#7:12 (tabella comparativa, riga Come funziona - Claude Code) + voce 7:12-7:18",
+   "frame": "frame-0073.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-011",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-016",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "In Claude Cowork si descrive il risultato desiderato e Claude elabora un piano, lo esegue e consegna il lavoro finito, senza richiedere l'intervento dell'utente ad ogni singolo passaggio.",
+   "ancora": "Descrivi il risultato che vuoi. Claude fa un piano, lo esegue, e ti consegna il lavoro finito. Non devi intervenire ad ogni step.",
+   "fonte": "DI5aWJiFAt8#7:18 (tabella comparativa, riga Come funziona - Claude Cowork) + voce 7:18-7:30",
+   "frame": "frame-0074.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-012",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-025",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Claude Code è stato originariamente progettato pensando soprattutto agli sviluppatori come utenti principali, anche se oggi il suo uso si è ampliato oltre quel pubblico iniziale.",
+   "ancora": "Cloud Code era stato sviluppato prevalentemente pensando che sviluppatori lo avrebbero utilizzato.",
+   "fonte": "DI5aWJiFAt8#5:24 (tabella comparativa, cella Per chi - Claude Code) + voce 5:24-5:30",
+   "frame": "frame-0055.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-013",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-134",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Tutto ciò che Claude Cowork esegue (comandi, letture, scritture di file) avviene dentro una 'virtual machine', una sandbox isolata e sicura dedicata a quella sessione di lavoro.",
+   "ancora": "Tutto questo avviene in quella che noi definiamo virtual machine... questa scatola sicura dentro la quale letteralmente tutto succede",
+   "fonte": "DI5aWJiFAt8#72:30 (Claude Cowork, chat TechnoService) + voce 72:30",
+   "frame": "frame-0726.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-212",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-135",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Anche l'intera conversazione va immaginata come una 'scatola sicura' annidata dentro la virtual machine: qualunque cosa venga fatta o cancellata resta confinata dentro quella conversazione/progetto e non tocca file al di fuori di essa.",
+   "ancora": "tutta questa conversazione sia un'altra scatola sicura... se qualcosa viene cancellato o fatto... avviene solo all'interno di questa conversazione",
+   "fonte": "DI5aWJiFAt8#73:00 (Claude Cowork, annotazione rettangolo verde attorno alla pagina) + voce 73:00",
+   "frame": "frame-0731.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-134",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-212",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Claude opera dentro una sandbox, una \"scatola sicura\" con confini ben definiti: questa separazione conta soprattutto quando si lavora con più clienti diversi (es. cliente A e cliente B) i cui dati e accessi devono restare isolati tra loro.",
+   "ancora": "questa è la nostra ehm sandbox... la nostra scatola sicura dentro la quale Cloud opera e opera dentro dei confini ben definiti",
+   "fonte": "DI5aWJiFAt8#104:18 (annotazione grafica che racchiude l'intera interfaccia) + voce 104:18-104:48",
+   "frame": "frame-1044.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

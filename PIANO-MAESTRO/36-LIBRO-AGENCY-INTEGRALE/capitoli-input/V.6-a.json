@@ -1,0 +1,1851 @@
+{
+ "capitolo": "V.6",
+ "parte": "V.6-a",
+ "parte_n": 1,
+ "parti_totali": 2,
+ "titolo": "Skill, hook e comandi propri",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max18-v08-DI5aWJiFAt8::KA-031",
+  "max18-v08-DI5aWJiFAt8::KA-055",
+  "max18-v08-DI5aWJiFAt8::KA-125",
+  "max18-v08-DI5aWJiFAt8::KA-140",
+  "max18-v08-DI5aWJiFAt8::KA-141",
+  "max18-v08-DI5aWJiFAt8::KA-142",
+  "max18-v08-DI5aWJiFAt8::KA-143",
+  "max18-v08-DI5aWJiFAt8::KA-144",
+  "max18-v08-DI5aWJiFAt8::KA-146",
+  "max18-v08-DI5aWJiFAt8::KA-147",
+  "max18-v08-DI5aWJiFAt8::KA-149",
+  "max18-v08-DI5aWJiFAt8::KA-150",
+  "max18-v08-DI5aWJiFAt8::KA-151",
+  "max18-v08-DI5aWJiFAt8::KA-152",
+  "max18-v08-DI5aWJiFAt8::KA-153",
+  "max18-v08-DI5aWJiFAt8::KA-154",
+  "max18-v08-DI5aWJiFAt8::KA-155",
+  "max18-v08-DI5aWJiFAt8::KA-156",
+  "max18-v08-DI5aWJiFAt8::KA-157",
+  "max18-v08-DI5aWJiFAt8::KA-158",
+  "max18-v08-DI5aWJiFAt8::KA-159",
+  "max18-v08-DI5aWJiFAt8::KA-160",
+  "max18-v08-DI5aWJiFAt8::KA-165",
+  "max18-v08-DI5aWJiFAt8::KA-166",
+  "max18-v08-DI5aWJiFAt8::KA-167",
+  "max18-v08-DI5aWJiFAt8::KA-168",
+  "max18-v08-DI5aWJiFAt8::KA-169",
+  "max18-v08-DI5aWJiFAt8::KA-170",
+  "max18-v08-DI5aWJiFAt8::KA-171",
+  "max18-v08-DI5aWJiFAt8::KA-172",
+  "max18-v08-DI5aWJiFAt8::KA-173",
+  "max18-v08-DI5aWJiFAt8::KA-176",
+  "max18-v08-DI5aWJiFAt8::KA-177",
+  "max18-v08-DI5aWJiFAt8::KA-178",
+  "max18-v08-DI5aWJiFAt8::KA-190",
+  "max18-v08-DI5aWJiFAt8::KA-192",
+  "max18-v08-DI5aWJiFAt8::KA-193",
+  "max18-v08-DI5aWJiFAt8::KA-195",
+  "max18-v08-DI5aWJiFAt8::KA-196",
+  "max18-v08-DI5aWJiFAt8::KA-197",
+  "max18-v08-DI5aWJiFAt8::KA-198",
+  "max18-v08-DI5aWJiFAt8::KA-200",
+  "max18-v08-DI5aWJiFAt8::KA-201",
+  "max18-v08-DI5aWJiFAt8::KA-202",
+  "max18-v08-DI5aWJiFAt8::KA-204",
+  "max18-v08-DI5aWJiFAt8::KA-205",
+  "max18-v08-DI5aWJiFAt8::KA-206",
+  "max18-v08-DI5aWJiFAt8::KA-208",
+  "max18-v08-DI5aWJiFAt8::KA-209",
+  "max18-v08-DI5aWJiFAt8::KA-210",
+  "max17-v05-jaye-agenticos::KA-005",
+  "max17-v05-jaye-agenticos::KA-007",
+  "max17-v05-jaye-agenticos::KA-008",
+  "max17-v05-jaye-agenticos::KA-009",
+  "max17-v05-jaye-agenticos::KA-012",
+  "max17-v05-jaye-agenticos::KA-013",
+  "max17-v05-jaye-agenticos::KA-036",
+  "max17-v05-jaye-agenticos::KA-037",
+  "max17-v05-jaye-agenticos::KA-051",
+  "max18-v09-NmoOZVTrTXA::KA-139",
+  "max18-v09-NmoOZVTrTXA::KA-140",
+  "max18-v09-NmoOZVTrTXA::KA-141",
+  "max18-v09-NmoOZVTrTXA::KA-142",
+  "max18-v09-NmoOZVTrTXA::KA-144",
+  "max18-v09-NmoOZVTrTXA::KA-145",
+  "max18-v09-NmoOZVTrTXA::KA-147",
+  "max18-v09-NmoOZVTrTXA::KA-149",
+  "max18-v09-NmoOZVTrTXA::KA-154",
+  "max18-v09-NmoOZVTrTXA::KA-173",
+  "max18-v09-NmoOZVTrTXA::KA-174",
+  "max18-v09-NmoOZVTrTXA::KA-176",
+  "max18-v09-NmoOZVTrTXA::KA-177",
+  "max18-v06-JTn5pqm9ecM::KA-082",
+  "max18-v06-JTn5pqm9ecM::KA-108",
+  "max18-v06-JTn5pqm9ecM::KA-110",
+  "max18-v06-JTn5pqm9ecM::KA-111",
+  "max18-v06-JTn5pqm9ecM::KA-214",
+  "max18-v06-JTn5pqm9ecM::KA-215",
+  "max18-v06-JTn5pqm9ecM::KA-216"
+ ],
+ "fonti_integrali": {
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-031",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Le Skills sono moduli di competenza (file come SKILL.md) che Claude Cowork legge quando ne ha bisogno per sapere come eseguire compiti specifici; nella Demo #1, ad esempio, Cowork ha letto una skill 'xlsx' per sapere come generare correttamente un file Excel.",
+   "ancora": "Context ... Skills ... xlsx",
+   "fonte": "DI5aWJiFAt8#14:42 (pannello Context, sezione Skills - xlsx) + voce 14:42-15:12",
+   "frame": "frame-0148.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-030",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-140",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-055",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il menu '+' accanto al campo di input di Claude Cowork permette di aggiungere a una conversazione quattro tipi di elementi: file o foto, Skills, Connectors (connettori a servizi esterni) e Plugins.",
+   "ancora": "Add files or photos ... Skills ... Connectors ... Plugins",
+   "fonte": "DI5aWJiFAt8#31:06 (menu + aperto sulla home page) + voce 31:06-31:36",
+   "frame": "frame-0312.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-140",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-190",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-200",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-125",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Quando affronta una task complessa, Claude Cowork carica automaticamente nel proprio contesto le 'Skills' pertinenti al tipo di output richiesto (es. le skill 'docx' e 'pptx' quando deve generare un documento Word e una presentazione PowerPoint).",
+   "ancora": "carica nel suo contesto le skill... una è creazione di un documento... di un doc e l'altra è di un PowerPoint",
+   "fonte": "DI5aWJiFAt8#64:18 (pannello Context > Skills: docx, pptx) + voce 64:18",
+   "frame": "frame-0644.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-124",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-140",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Una 'skill' per Claude non è altro che un semplice file (SKILL.md) in cui sono scritte le specifiche di un compito o comportamento che si vuole rendere ripetibile.",
+   "ancora": "vedete che queste skill non sono altro che dei semplici file in cui noi andiamo a dare delle specifiche di che cos'è che vogliamo fare",
+   "fonte": "DI5aWJiFAt8#77:54 (pannello Customize > Skills > eli5) + voce 77:54",
+   "frame": "frame-0780.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-141",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Il file di una skill è composto da una 'Description' che elenca le parole o situazioni che devono far scattare (trigger) automaticamente la skill, e da un corpo con istruzioni operative organizzate in punti numerati che guidano il comportamento da tenere.",
+   "ancora": "Use this skill whenever the user says 'eli5', 'explain like I'm 5', 'explain it simply', 'dumb it down'",
+   "fonte": "DI5aWJiFAt8#77:54 (dettaglio skill eli5, Description + How to explain) + voce 77:54",
+   "frame": "frame-0780.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-140",
+     "tipo": "definisce"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-142",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Esistono due tipologie di skill per Claude: le skill 'native' già integrate e fornite da Anthropic, e le skill personalizzate che l'utente può creare su misura per i propri processi.",
+   "ancora": "esistono varie tipologie di skill. Uno sono quelle che... sono già qua dentro, quindi quelle native di Antropic. esistono poi delle skill che noi andremo a fare che sono... customizzate",
+   "fonte": "DI5aWJiFAt8#79:12 (pagina Customize Claude, tre percorsi) + voce 79:12",
+   "frame": "frame-0793.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-140",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-143",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Per invocare esplicitamente una skill in una conversazione Cowork si scrive il simbolo '/' seguito dal nome della skill all'inizio del prompt (slash-command).",
+   "ancora": "per chiamare una skill ho utilizzato il forward slash",
+   "fonte": "DI5aWJiFAt8#78:42 (chat, badge /eli5) + voce 78:42",
+   "frame": "frame-0788.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-144",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "La sezione 'Customize' di Claude Cowork si articola in tre categorie che modellano il comportamento dell'assistente: Connectors (collegamento alle app che si usano già), Skills (insegnare processi e competenze specifiche) e Plugins (pacchetti di conoscenza preconfezionata per un determinato settore).",
+   "ancora": "Connect your apps / Create new skills / Browse plugins",
+   "fonte": "DI5aWJiFAt8#79:12 (pagina Customize Claude) + voce 79:12",
+   "frame": "frame-0793.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-191",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-145",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Nella Directory delle skill di Anthropic, ogni skill mostra autore, numero di download e descrizione; le skill non ancora aggiunte all'account sono contrassegnate da un'icona '+' per installarle, mentre quelle già configurate mostrano un'icona a ingranaggio.",
+   "ancora": "/brand-guidelines — Anthropic — 42.3K download — icona a ingranaggio",
+   "fonte": "DI5aWJiFAt8#79:42 (modale Directory, griglia skill) + voce 79:42",
+   "frame": "frame-0798.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-174",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-146",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "La skill 'brand-guidelines' applica automaticamente i colori e la tipografia ufficiali di un brand a qualunque artifact prodotto (documenti, presentazioni, ecc.) che possa beneficiare di quello stile visivo.",
+   "ancora": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel",
+   "fonte": "DI5aWJiFAt8#80:12 (tooltip descrizione brand-guidelines) + voce 79:42-80:12",
+   "frame": "frame-0803.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-142",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-147",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Prima di applicare la skill brand-guidelines a un documento destinato a un cliente, Claude segnala che le uniche linee guida di brand disponibili sono quelle di Anthropic (l'azienda che fornisce l'assistente), non quelle del cliente finale, e chiede conferma esplicita prima di procedere.",
+   "ancora": "le brand guidelines che ho a disposizione sono quelle di Anthropic (la mia azienda, per così dire), non quelle di TechnoService",
+   "fonte": "DI5aWJiFAt8#80:42 (chat, richiesta conferma brand guidelines) + voce 80:42",
+   "frame": "frame-0808.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-146",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-148",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Specifica concreta delle brand guidelines Anthropic applicate nella demo: sfondo scuro #141413, sfondo chiaro crema #FAF9F5, colori di accento arancione #D97757, blu #6A9BCC e verde #788C5D, font Poppins per i titoli e Lora per il corpo del testo, con fallback ad Arial se questi font non sono installati.",
+   "ancora": "sfondo scuro (quasi nero) #141413... Sfondo chiaro #FAF9F5 (crema)... Font: Poppins per tutti i titoli... Lora per il corpo del testo",
+   "fonte": "DI5aWJiFAt8#81:00 (chat, elenco colori e font applicati) + voce 81:00",
+   "frame": "frame-0811.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-146",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-149",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Anche l'applicazione di una skill di stile a un documento già esistente attiva un ciclo di subagent: uno rigenera il file con le nuove regole visive, un altro esegue un controllo qualità visivo, correggendo eventuali dettagli finché il risultato non è corretto.",
+   "ancora": "avrà i nostri due subagents che abbiamo già introdotto. Quindi uno ricrea il PowerPoint con brand guidelines e l'altro fa il QA visivo",
+   "fonte": "DI5aWJiFAt8#80:42 (chat, Ricreando il PPTX / QA visivo) + voce 80:42",
+   "frame": "frame-0808.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-126",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-147",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-150",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Il lavoro necessario per costruire correttamente una skill di brand è impegnativo, ma una volta creata il suo riutilizzo successivo è immediato: basta un singolo comando per riapplicare colori e font aziendali coerenti a qualsiasi documento nuovo.",
+   "ancora": "la parte difficile... è creare questa skill, ma una volta creata l'utilizzo è estremamente semplice",
+   "fonte": "DI5aWJiFAt8#81:36 (chat, dopo revisione slide) + voce 81:36",
+   "frame": "frame-0817.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-204",
+     "tipo": "alternativa-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-151",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Per creare una nuova skill personalizzata si può usare la skill nativa 'skill-creator', che avvia il processo chiedendo per prima cosa all'utente cosa deve fare la nuova skill.",
+   "ancora": "Let's create a skill together using your skill-creator skill. First ask me what the skill should do.",
+   "fonte": "DI5aWJiFAt8#82:06 (home, prompt con skill-creator) + voce 82:06",
+   "frame": "frame-0822.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-142",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-152",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "In alternativa al percorso 'Customize > + > Create new skills', si può avviare la creazione di una skill digitando direttamente lo slash-command '/skill-creator' nella casella del prompt.",
+   "ancora": "l'altro modo è esattamente fare questo, quindi skill creator",
+   "fonte": "DI5aWJiFAt8#83:06 (home, badge /skill-creator) + voce 83:06",
+   "frame": "frame-0832.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-151",
+     "tipo": "alternativa-a"
+    },
+    {
+     "verso": "KA-143",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-153",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Fisicamente, quando Claude crea una nuova skill esegue un comando di sistema che genera una cartella dedicata dentro il percorso .claude/skills/<nome-skill>/, confermando che ogni skill è, alla base, semplicemente una cartella con dentro un file di istruzioni.",
+   "ancora": "mkdir -p /sessions/festive-eager-dirac/mnt/.claude/skills/saluto",
+   "fonte": "DI5aWJiFAt8#83:36 (chat, comando mkdir) + voce 83:36",
+   "frame": "frame-0837.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-140",
+     "tipo": "quantificato-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-154",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Esempio minimo di skill personalizzata creata da zero ('saluto'): la Description elenca le parole-trigger che la attivano ('saluto', 'salutami', 'ciao'), e il corpo blinda rigidamente il comportamento imponendo di rispondere con una frase esatta senza aggiungere o modificare nulla.",
+   "ancora": "Non aggiungere altro. Non modificare il messaggio. Rispondi solo con quella frase esatta.",
+   "fonte": "DI5aWJiFAt8#84:06 (pannello SKILL.md generato) + voce 84:06",
+   "frame": "frame-0842.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-141",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-157",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-155",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "Se la cartella di sistema delle skill risulta in sola lettura, Claude salva il file della nuova skill in una cartella di output alternativa; per attivarla davvero, l'utente deve poi copiare manualmente quella cartella dentro ~/.claude/skills/ (o nella cartella skill del progetto).",
+   "ancora": "la cartella delle skill di sistema era in sola lettura, quindi ho salvato la skill nella tua cartella di output. Per installarla, dovrai copiare la cartella 'saluto' dentro '~/.claude/skills/'",
+   "fonte": "DI5aWJiFAt8#84:06 (chat, avviso cartella sola lettura) + voce 84:06",
+   "frame": "frame-0842.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "corretto-da"
+    },
+    {
+     "verso": "KA-158",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-156",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Il processo di creazione di una skill è iterativo: si parte da un output semplice, si valuta il risultato, e se non soddisfa si continua a raffinarlo nella stessa chat finché non risulta corretto.",
+   "ancora": "cominciamo con qualcosa, abbiamo un output, lui ci darà un output, a noi non piace, lo andiamo a raffinare e continuiamo a parlare in questa chat",
+   "fonte": "DI5aWJiFAt8#83:36 (chat, dopo creazione skill saluto) + voce 83:36",
+   "frame": "frame-0837.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-076",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-157",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "La skill skill-creator permette di generare una skill completamente nuova a partire da una descrizione in linguaggio naturale del comportamento desiderato (es. \"ogni volta che la chiamo, la skill mi dice: Ciao Giovanni, come stai?\"), producendo in automatico un file SKILL.md pronto all'uso.",
+   "ancora": "/skill-creator Creo una skill tale per cui, ogni volta che la chiamo... la skill mi dice: \"Ciao Giovanni, come stai? Che bella giornata oggi\".",
+   "fonte": "DI5aWJiFAt8#84:12 (creazione della skill \"saluto\" via skill-creator) + voce 84:12-84:42",
+   "frame": "frame-0843.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-158",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "La cartella delle skill di sistema è in sola lettura: quando skill-creator genera una nuova skill, questa viene salvata nella cartella di output dell'utente invece che installata direttamente nel percorso ufficiale delle skill.",
+   "ancora": "la cartella delle skill di sistema era in sola lettura, quindi ho salvato la skill nella tua cartella di output",
+   "fonte": "DI5aWJiFAt8#84:12 (limite sandbox segnalato da skill-creator) + voce 84:12-84:42",
+   "frame": "frame-0843.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-157",
+     "tipo": "parte-di",
+     "perche": "è un limite tecnico del flusso di generazione descritto in KA-201"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-159",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Per rendere effettivamente utilizzabile una skill personalizzata salvata nella cartella di output, bisogna copiarne manualmente la cartella dentro ~/.claude/skills/ (oppure nella cartella skills del progetto corrente).",
+   "ancora": "Per installarla, dovrai copiare la cartella saluto dentro ~/.claude/skills/ (o nella cartella skills del tuo progetto).",
+   "fonte": "DI5aWJiFAt8#84:12 (istruzioni di installazione della skill saluto) + voce 84:12-84:42",
+   "frame": "frame-0843.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-158",
+     "tipo": "applica",
+     "perche": "è la soluzione pratica al limite di sola lettura"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-160",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "In alternativa alla copia manuale della cartella, una skill può essere impacchettata in un file .skill per semplificarne la distribuzione e l'installazione altrove.",
+   "ancora": "Vuoi che la impacchetti come file .skill per facilitare l'installazione?",
+   "fonte": "DI5aWJiFAt8#84:12 (proposta di pacchettizzazione della skill saluto) + voce 84:12-84:42",
+   "frame": "frame-0843.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-159",
+     "tipo": "alternativa-a",
+     "perche": "offre un altro modo di installare la skill oltre alla copia manuale della cartella"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-165",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Quando l'utente chiede esplicitamente di non usare nessuna skill, il modello sopprime deliberatamente anche i trigger impliciti presenti nel messaggio (es. la parola \"ciao\" che normalmente attiverebbe una skill di saluto) e risponde direttamente senza alcuna skill.",
+   "ancora": "They said \"ciao\" but also said not to use any skill, so I won't trigger the saluto skill either.",
+   "fonte": "DI5aWJiFAt8#86:12 (blocco Thinking, richiesta post LinkedIn senza skill) + voce 86:12-86:42",
+   "frame": "frame-0863.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-154",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-166",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Una skill ben progettata può interrogare l'utente con domande a scelta multipla mirate (es. punti chiave, tono, presenza di una CTA) prima di generare l'output, invece di produrre subito un contenuto generico.",
+   "ancora": "Quali sono i punti chiave che vuoi toccare nel post sulla vita?",
+   "fonte": "DI5aWJiFAt8#86:42 (modale a scelta multipla della skill /linkedin-post) + voce 86:42-87:12",
+   "frame": "frame-0868.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-165",
+     "tipo": "alternativa-a",
+     "perche": "mostra il comportamento opposto rispetto alla generazione diretta senza skill del caso precedente"
+    },
+    {
+     "verso": "KA-123",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-167",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Un file SKILL.md dichiara un campo \"Description\" che specifica le condizioni di attivazione e i casi d'uso della skill, e un campo \"Allowed tools\" che limita quali strumenti la skill può effettivamente invocare durante l'esecuzione.",
+   "ancora": "Description ⓘ\": \"Generate a LinkedIn post in Gio's writing style...\" / \"Allowed tools\": \"Bash, Read, Write, Edit, AskUserQuestion\"",
+   "fonte": "DI5aWJiFAt8#87:36 (contenuto integrale di SKILL.md per linkedin-post) + voce 87:36-87:42",
+   "frame": "frame-0877.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-168",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Un elenco \"Allowed tools\" concreto per una skill può comprendere Bash, Read, Write, Edit e AskUserQuestion.",
+   "ancora": "Allowed tools\": \"Bash, Read, Write, Edit, AskUserQuestion\"",
+   "fonte": "DI5aWJiFAt8#87:36 (campo Allowed tools di linkedin-post) + voce 87:36-87:42",
+   "frame": "frame-0877.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-167",
+     "tipo": "esempio-di",
+     "perche": "è un'istanza concreta del campo Allowed tools definito in KA-211"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-169",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Lo strumento AskUserQuestion, quando elencato tra gli \"Allowed tools\" di una skill, è ciò che genera concretamente il modale a scelta multipla mostrato all'utente durante l'esecuzione.",
+   "ancora": "è lo strumento AskUserQuestion a spiegare tecnicamente da dove nasce il modale a scelta multipla",
+   "fonte": "DI5aWJiFAt8#87:36 (SKILL.md di linkedin-post, Allowed tools) + voce 87:36-87:42",
+   "frame": "frame-0877.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-166",
+     "tipo": "definisce",
+     "perche": "spiega il meccanismo tecnico dietro il comportamento osservato in KA-210"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-170",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Una skill può racchiudere ed eseguire uno script backend Python esterno (es. generate.py, invocato via Bash), e richiedere che l'utente imposti in anticipo una variabile d'ambiente come ANTHROPIC_API_KEY prima del primo utilizzo.",
+   "ancora": "Ensure the ANTHROPIC_API_KEY environment variable is set. If not, ask the user for it and export it",
+   "fonte": "DI5aWJiFAt8#87:36 (sezione First-Time Setup di SKILL.md) + voce 87:36-87:42",
+   "frame": "frame-0877.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-167",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-171",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Una skill di generazione contenuti personalizza l'output usando il contesto già noto dell'utente (es. scrive il post in inglese perché il profilo LinkedIn dell'utente è in inglese) anche quando la richiesta stessa è stata formulata in un'altra lingua.",
+   "ancora": "il post è in inglese perché il mio LinkedIn è in inglese prima di tutto e non è in italiano",
+   "fonte": "DI5aWJiFAt8#87:42 (post LinkedIn generato in inglese) + voce 87:42-88:12",
+   "frame": "frame-0878.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-166",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-172",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Una skill di scrittura può apprendere e riprodurre uno stile di formattazione personale (es. spaziatura corta ad effetto \"scannability\") analizzando un insieme di post di riferimento dell'utente caricati al momento dell'esecuzione.",
+   "ancora": "I have the reference posts loaded (18 posts, plenty of style data).",
+   "fonte": "DI5aWJiFAt8#86:42 (caricamento dei post di riferimento) + voce 86:42-87:12",
+   "frame": "frame-0873.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-166",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-173",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Dopo aver generato un contenuto, il modello propone di norma di iterare ulteriormente su di esso (cambiare tono, accorciare, allungare, riscrivere parti specifiche) invece di trattare la prima bozza come definitiva.",
+   "ancora": "Vuoi che cambi qualcosa? Posso aggiustare il tono, accorciare, allungare, o riscrivere parti specifiche.",
+   "fonte": "DI5aWJiFAt8#88:12 (fine del post LinkedIn generato) + voce 88:12-88:42",
+   "frame": "frame-0883.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-076",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-174",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Cowork include un marketplace interno (\"Directory\") dove le skill possono essere cercate, filtrate e ordinate (es. per popolarità o novità), con una distinzione visiva chiara tra skill già installate (icona a ingranaggio) e skill disponibili da aggiungere (icona \"+\").",
+   "ancora": "potete anche vedere quali avete installato e quali no... ordinarle, insomma, tra le più popolari, le più nuove",
+   "fonte": "DI5aWJiFAt8#88:42 (modale Directory, marketplace skill) + voce 88:42-89:00",
+   "frame": "frame-0888.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-175",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "La scheda di dettaglio di ogni skill installata mostra sempre chi l'ha aggiunta (\"Added by\"), quando è stata aggiornata l'ultima volta (\"Last updated\") e chi può invocarla (\"Invoked by\": User or Claude).",
+   "ancora": "\"Added by\" → \"You\"; \"Last updated\" → \"Apr 7, 2026\"; \"Invoked by\" → \"User or Claude\"",
+   "fonte": "DI5aWJiFAt8#89:00 (dettaglio della skill saluto in Customize) + voce 89:00-89:30",
+   "frame": "frame-0891.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-174",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-176",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Le skill disponibili in Cowork sono raggruppate in \"Personal skills\" (create dall'utente, es. saluto) e \"Built-in skills\" (preinstallate dalla piattaforma, es. schedule, context).",
+   "ancora": "abbiamo queste built in skills, ok? Quindi cose che sono già dentro.",
+   "fonte": "DI5aWJiFAt8#89:30 (colonna Skills, sezione Built-in skills) + voce 89:30-90:00",
+   "frame": "frame-0896.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-154",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-174",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-177",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Un comando e una skill si invocano esattamente allo stesso modo, tramite lo stesso simbolo \"/\" digitato all'inizio del messaggio, senza alcuna distinzione visiva al momento della chiamata.",
+   "ancora": "un comando e una skill vengono chiamati allo stesso modo perché è sempre questo forward slash qui",
+   "fonte": "DI5aWJiFAt8#90:00 (digitazione di /schedule in home page) + voce 90:00-90:30",
+   "frame": "frame-0901.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-178",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Concettualmente una skill è un file scritto in markdown con istruzioni (tipicamente creato dall'utente), mentre un comando è una funzionalità built-in già automatizzata dalla piattaforma (es. /schedule).",
+   "ancora": "quando parliamo di skill, noi parliamo di un file... scritto in markdown... Quando parliamo di un comando, parliamo di una serie di istruzioni che sono già state automatizzate",
+   "fonte": "DI5aWJiFAt8#90:30 (menu a tendina con skill e comandi mescolati) + voce 90:30-91:00",
+   "frame": "frame-0906.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-177",
+     "tipo": "precede",
+     "perche": "la distinzione concettuale viene spiegata subito dopo aver mostrato che si invocano allo stesso modo"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-190",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "I \"Connectors\" permettono a Claude di leggere e scrivere direttamente sugli strumenti e le app esterne che l'utente già usa (es. Canva, Google Drive, Gmail, Google Calendar, GitHub), invece di limitarsi alla sola conversazione testuale.",
+   "ancora": "Let Claude read and write to the tools you already use.",
+   "fonte": "DI5aWJiFAt8#93:42 (pannello Customize, introduzione ai Connectors) + voce 93:42-94:12",
+   "frame": "frame-0938.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-191",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Il pannello \"Customize\" di Cowork offre tre punti d'ingresso per estendere le capacità di Claude: collegare le proprie app (connectors), creare nuove skill, e sfogliare i plugin già pronti.",
+   "ancora": "\"Connect your apps\" ... \"Create new skills\" ... \"Browse plugins\"",
+   "fonte": "DI5aWJiFAt8#93:42 (pannello Customize Claude, tre card) + voce 93:42-94:12",
+   "frame": "frame-0938.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-192",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Ogni connector espone permessi granulari (\"Tool permissions\") divisi in strumenti \"Interactive\" (azioni che modificano qualcosa, es. generare un design) e strumenti \"Read-only\" (es. leggere le informazioni di un design), ciascuno impostabile a un livello di autorizzazione come \"Always allow\".",
+   "ancora": "\"Interactive tools [4]\"... \"Read-only tools [14]\"... \"🛡 Always allow ⌄\"",
+   "fonte": "DI5aWJiFAt8#94:12 (dettaglio del connector Canva, Tool permissions) + voce 94:12-94:36",
+   "frame": "frame-0943.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-190",
+     "tipo": "parte-di",
+     "perche": "i permessi granulari fanno parte del funzionamento generale dei connector"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-193",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Collegare un nuovo connector (es. Google Calendar) segue un flusso di autenticazione OAuth standard: cliccare \"Connetti\", scegliere l'account Google da un elenco, e prendere visione di privacy policy e termini di servizio.",
+   "ancora": "andiamo qua dentro, premiamo connetti e quindi questo è un normalissimo processo... connettiamo un paio di passaggi e questo è connesso",
+   "fonte": "DI5aWJiFAt8#94:36 (pagina di login Google per Claude for Google Calendar) + voce 94:36-94:42",
+   "frame": "frame-0947.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-190",
+     "tipo": "esempio-di",
+     "perche": "è l'esempio pratico di come si collega un connector"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-194",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Durante questa demo live di collegamento a Google, viene rivelato il nome del relatore del corso: Giovanni Beggiato.",
+   "ancora": "\"Giovanni Beggiato\" — beggiato.linkedin@gmail.com",
+   "fonte": "DI5aWJiFAt8#94:36 (schermata di scelta account Google) + voce 94:36-94:42",
+   "frame": "frame-0947.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-092",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-195",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "La pagina di un connector non ancora collegato elenca esplicitamente quali plugin installati lo richiedono per funzionare (es. Google Calendar richiesto dai plugin Productivity, Sales e Marketing), rendendo visibile la dipendenza prima ancora di connetterlo.",
+   "ancora": "This connector is required by the following plugins: Productivity, Sales, Marketing",
+   "fonte": "DI5aWJiFAt8#94:42 (dettaglio Google Calendar non connesso) + voce 94:42-95:12",
+   "frame": "frame-0948.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-201",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-196",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Un'unica richiesta può combinare esplicitamente un connector e una skill insieme (es. \"Utilizza Canva, il connettore,... guardati la skill /brand-guidelines\"), permettendo a Claude di usare entrambe le capacità nello stesso task.",
+   "ancora": "Utilizza Canva, il connettore, per crearmi un PDF su Canva... Per farlo, puoi guardarti la skill /brand-guidelines",
+   "fonte": "DI5aWJiFAt8#95:42 (prompt che combina Canva e /brand-guidelines) + voce 95:42-96:12",
+   "frame": "frame-0958.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-190",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-167",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-197",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Generare un design tramite un connector come Canva segue una pipeline a tre passi resa visibile nel pannello \"Progress\": generare le opzioni di design, far scegliere all'utente la candidata preferita, esportare quella scelta (es. in PDF).",
+   "ancora": "1. \"Generating the one-page design on Canva\" 2. \"Let user pick the preferred candidate design\" 3. \"Export the design as PDF\"",
+   "fonte": "DI5aWJiFAt8#96:42 (pannello Progress con i 3 step della pipeline Canva) + voce 96:42-97:12",
+   "frame": "frame-0968.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-198",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Nella generazione di design visuali tramite connector, Claude produce più opzioni candidate (in questo esempio 4) tra cui l'utente può scegliere in anteprima, invece di consegnare direttamente un risultato unico.",
+   "ancora": "Ecco 4 opzioni generate da Canva. Dai un'occhiata alle anteprime:",
+   "fonte": "DI5aWJiFAt8#97:12 (4 opzioni generate da Canva) + voce 97:12-97:18",
+   "frame": "frame-0973.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-197",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio del primo passo della pipeline a 3 step"
+    },
+    {
+     "verso": "KA-123",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-199",
+   "peso": "contesto",
+   "tipo": "principio",
+   "contenuto": "Un design generato tramite un connector come Canva può essere aperto e verificato direttamente sul sito del provider (canva.com), a conferma che si tratta di un file reale e modificabile, non di una semplice anteprima interna a Cowork.",
+   "ancora": "Open link, verifichiamo effettivamente che questo sia su Canva. Eccoci qua.",
+   "fonte": "DI5aWJiFAt8#97:18 (documento aperto realmente su canva.com) + voce 97:18-97:24",
+   "frame": "frame-0974.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-200",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Un \"plugin\" è un pacchetto che racchiude più elementi costitutivi — skill e comandi, ed eventualmente anche connector — in un unico insieme installabile, pensato per uno scopo o un ruolo specifico.",
+   "ancora": "hanno al loro interno... delle skill... hanno al loro interno dei comandi e possono avere al loro interno anche",
+   "fonte": "DI5aWJiFAt8#99:48 (diagramma manoscritto PLUGIN → skill/comandi) + voce 99:48-100:12",
+   "frame": "frame-0999.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-167",
+     "tipo": "parte-di",
+     "perche": "un plugin è un contenitore che include skill definite come in KA-211"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-201",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Oltre alle skill personali, Anthropic pubblica un catalogo di plugin ufficiali organizzati per funzione aziendale (Productivity, Marketing, Sales, Design, Data, Engineering, Finance, Product management, Operations, Legal), ciascuno scaricato centinaia di migliaia di volte.",
+   "ancora": "\"Productivity\" — Anthropic • ⬇401.5K ... \"Marketing\" — Anthropic • ⬇304.7K ... \"Sales\" — Anthropic • ⬇200.3K",
+   "fonte": "DI5aWJiFAt8#100:12 (Directory, tab Anthropic & Partners, tab Plugins) + voce 100:12-100:42",
+   "frame": "frame-1003.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-200",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-202",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Il plugin ufficiale \"Sales\" di Anthropic bundla 9 skill (es. /call-prep, /forecast, /draft-outreach, /account-research) e 14 connector esterni (Slack, HubSpot, Clay, ZoomInfo, Notion, Atlassian, Fireflies, ecc.) collegati tramite Model Context Protocol (MCP).",
+   "ancora": "Sezione \"Skills\" con badge numerico \"9\"... Sezione \"Connectors\" con badge numerico \"14\"... connected via the Model Context Protocol (MCP)",
+   "fonte": "DI5aWJiFAt8#100:42 (dettaglio plugin Sales nella Directory) + voce 100:42-100:54",
+   "frame": "frame-1008.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-201",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-203",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "La scheda di dettaglio di un plugin installato mostra metadati (Source, Version, Author, Last updated) e una descrizione, oltre a una griglia delle skill che racchiude, ciascuna invocabile singolarmente tramite il proprio comando slash.",
+   "ancora": "\"Source\" → \"Uploaded from file\", \"Version\" → \"0.1.0\", \"Author\" → \"Gio\", \"Last updated\" → \"12 days ago\"",
+   "fonte": "DI5aWJiFAt8#100:54 (dettaglio plugin \"Social media manager\") + voce 100:54-101:24",
+   "frame": "frame-1010.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-200",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-204",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Importare un plugin equivale, metaforicamente, a infilare la chiavetta USB di un amico nel proprio computer: si eredita immediatamente un insieme di capacità/skill già pronte, costruite da qualcun altro.",
+   "ancora": "immaginatevi letteralmente come se voi aveste preso la chiavetta di un amico e l'aveste infilata nel vostro computer",
+   "fonte": "DI5aWJiFAt8#101:54 (scrittura del file daily-briefing-demo.html) + voce 101:54-102:24",
+   "frame": "frame-1020.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-200",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-205",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Una skill di tipo \"daily briefing\" eseguita senza fonti dati collegate genera comunque un report demo completo con dati fittizi, così l'utente vede subito il formato esatto dell'output prima di collegare dati reali.",
+   "ancora": "Here's the demo with fictional data so you can see the full format in action.",
+   "fonte": "DI5aWJiFAt8#102:24 (anteprima HTML del Daily Sales Briefing demo) + voce 102:24-102:30",
+   "frame": "frame-1025.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-091",
+     "tipo": "contraddice"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-206",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Un report di daily briefing vendite si struttura in: priorità principale in evidenza, numeri di pipeline a colpo d'occhio, riunioni del giorno con note di preparazione, trattative che richiedono attenzione, priorità email (da rispondere / in attesa di risposta) e una lista numerata di azioni consigliate.",
+   "ancora": "priority call-out, pipeline numbers at a glance, meetings with prep notes, deal alerts, email priorities, and a ranked action list",
+   "fonte": "DI5aWJiFAt8#102:24 (descrizione delle sezioni del daily briefing) + voce 102:24-102:30",
+   "frame": "frame-1025.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-205",
+     "tipo": "parte-di",
+     "perche": "descrive la struttura interna del report demo di KA-249"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-207",
+   "peso": "contesto",
+   "tipo": "principio",
+   "contenuto": "Una volta collegati gli strumenti reali (calendario, CRM, email), le sezioni generate da una skill di tipo briefing si popolano automaticamente con dati veri invece di richiedere digitazione manuale da parte dell'utente.",
+   "ancora": "When you connect real tools (calendar, CRM, email), these sections fill in automatically instead of you having to type anything.",
+   "fonte": "DI5aWJiFAt8#102:24 (nota finale sulla versione demo del briefing) + voce 102:24-102:30",
+   "frame": "frame-1025.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-205",
+     "tipo": "alternativa-a",
+     "perche": "descrive la modalità con dati reali, alternativa alla modalità demo con dati fittizi"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-208",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Un nuovo plugin può essere creato in due modi equivalenti: descrivendolo in linguaggio naturale a Claude (come per una skill) oppure tramite il comando dedicato \"Create plugin\".",
+   "ancora": "avete la possibilità di crearvi il vostro sempre... parlando con cloud... o con lo slash create plugin",
+   "fonte": "DI5aWJiFAt8#102:36 (menu Browse plugins / Create plugin nel pannello Customize) + voce 102:36-102:48",
+   "frame": "frame-1027.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-200",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-209",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Oltre al catalogo ufficiale, si può aggiungere un marketplace di plugin personalizzato indicando un repository GitHub nel formato \"owner/repo\" oppure un URL git generico.",
+   "ancora": "A GitHub `owner/repo` or a git repository URL.",
+   "fonte": "DI5aWJiFAt8#102:48 (modale Add marketplace) + voce 102:48-102:54",
+   "frame": "frame-1029.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-210",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "I plugin installati da marketplace di terzi non sono controllati da Anthropic, che non può verificare che funzionino come previsto o che non cambino nel tempo: vanno quindi valutati con fiducia prima di installarli, aggiornarli o usarli.",
+   "ancora": "Plugins installed from marketplaces are not controlled by Anthropic, and Anthropic cannot verify that they will work as intended or that they won't change.",
+   "fonte": "DI5aWJiFAt8#102:48 (riquadro di avviso rosso nel modale Add marketplace) + voce 102:48-102:54",
+   "frame": "frame-1029.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-209",
+     "tipo": "motiva",
+     "perche": "il rischio descritto qui è il motivo per cui la procedura va usata con cautela"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-211",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Anthropic mantiene un repository GitHub ufficiale (\"claude-plugins-official\") come catalogo curato di plugin di qualità per Claude Code, distinguendo i plugin \"interni\" sviluppati da Anthropic dai plugin di terze parti/community (\"external_plugins\").",
+   "ancora": "Internal plugins developed and maintained by Anthropic / external_plugins - Third-party plugins from partners and the community",
+   "fonte": "DI5aWJiFAt8#103:06 (README del repository anthropics/claude-plugins-official) + voce 103:06-103:12",
+   "frame": "frame-1032.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-210",
+     "tipo": "alternativa-a",
+     "perche": "è la fonte curata e più affidabile rispetto a un marketplace di terzi non verificato"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-005",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Prompt Claude Code usato per generare il PDF guida: 'Make a PDF guide with /robo on how to set up an Agentic OS' seguito da '/align 10'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#8:30",
+   "frame": "frame-256.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-006",
+   "peso": "contesto",
+   "tipo": "standard",
+   "contenuto": "Skills Directory nativa di Claude con filtro 'Anthropic': /skill-creator (Anthropic, 143.9K stelle) - 'Create new skills, modify and improve existing skills...'; /morning (Anthropic, 9.9K) - 'Render the user's morning brief as a rich HTML artifact...'; /canvas-design (1.9M); /web-artifacts-builder (1.2M).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#5:52",
+   "frame": "frame-177.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-007",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Prompt: '/skill-creator Create a skill for something like this and name it \"clean-up\": codex tip: set an automation that keeps your computer running smoothly. - kill all headless instances after test runs - clear cache - audit computer for further opportunities'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#6:20",
+   "frame": "frame-191.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-008",
+   "peso": "portante",
+   "tipo": "opinione",
+   "contenuto": "Regola euristica personale di Jay: 'SOPs. Do a task twice, make it into a skill.' - Level 1: Pre-built Skills OR Build your own.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#6:40",
+   "frame": "frame-201.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-009",
+   "peso": "supporto",
+   "tipo": "file",
+   "contenuto": "SKILL.md della skill 'clean-up': name: clean-up; description: gestisce la routine System Care (ID #0493) - job di manutenzione Windows giornaliero che termina processi headless/bun orfani, pulisce file temp vecchi, logga un report salute. Trigger: 'clean-up', 'clean up my computer', 'run system care', ecc. Sezione 'The pieces': Script C:\\ROBO\\projects\\jctc\\ID 0493-system-care\\system-care.ps1; Schedule: Task Scheduler 'Robo System Care' giornaliero 7:00am; Log: system-care-log.txt. Sezione 'What one run does': 1) kill browser headless/webdriver/node/bun orfani, 2) elimina temp file >7gg, 3) appende report (RAM freed, disk free, top RAM/CPU processes).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#7:08",
+   "frame": "frame-215.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-010",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Struttura cartella reale .claude/skills/roles/: sottocartelle components/, drafts/, icons/, reference/; file apps.md, backgrounds.md, brand-book.html, courses.md, infographics.md, life.md, SKILL.md, slides.md.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#7:30",
+   "frame": "frame-226.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-011",
+   "peso": "contesto",
+   "tipo": "configurazione",
+   "contenuto": "Output artefatto 'BRAND BOOK - The ROBO style': palette 4 colori con 1 accento (nero #131311, arancione #F17404 accento principale, giallo #F6C427 accento secondario - valori esatti a bassa confidenza), sistema tipografico 'Three voices, CLEAR jobs' con corpo testo sempre peso 400.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#8:00",
+   "frame": "frame-242.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-012",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Prompt integrale 'SKILLS Level 3 - Turn thick skills into a skill tree': 'Look through my skills folder (.claude/skills) and find my thick skills - any skill where one SKILL.md file is doing all the work (roughly 150+ lines or several different jobs mixed into one file). Before restructuring anything, ask me these in one batch: 1) Which skills do I actually use most weeks? 2) Are any skills off-limits? 3) How aggressive should the split be? Then restructure each thick skill into a skill tree: SKILL.md becomes a short router (lists, when it triggers, table pointing to the right file for each job); each distinct job/reference/template moves into its own file (references/, templates/, or plain .md); the router tells the agent to read ONLY the file that matches the task. Rules: do not change what any skill does, only how it is organized; keep every trigger and rule; a good split makes SKILL.md shorter, not longer; show before/after line counts.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#8:52",
+   "frame": "frame-267.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-013",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Soglia esplicita per definire una skill 'grassa' da spezzare: 'roughly 150+ lines or several different jobs mixed into one file'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#8:52",
+   "frame": "frame-267.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-035",
+   "peso": "contesto",
+   "tipo": "opinione",
+   "contenuto": "Introduzione pilastro Apps Level 2: 'Search what exists - CLI, MCP, API' - diagramma robot con linee tratteggiate verso icone generiche di app.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#19:08",
+   "frame": "frame-571.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-036",
+   "peso": "portante",
+   "tipo": "file",
+   "contenuto": "SKILL.md della skill 'search-connectors': 'API for X. Any MCP server for X. Given an app or service, find the best ways to hook into it. Quick pass, not an audit.' Workflow: 1) identify the app (official docs/GitHub first, outrank everything); 2) community pass in ordine CLI->API->MCP (github search, modelcontextprotocol/servers); 3) health check (last commit, stars, archived); 4) report format fisso; 5) end with one recommendation + install offer.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#19:12",
+   "frame": "frame-577.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-037",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Esecuzione '/search-connectors for Adobe Premiere Pro' - output: Official (Adobe): CLI none, API UXP scripting (Premiere 25.6+), MCP none ufficiale; Community: CLI nulla di sano, MCP hetpatel-11/Premiere-Pro-MCP (462 stelle, aggiornato ieri, 282 tool); raccomandazione finale sul repo hetpatel + fonti citate.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#19:42",
+   "frame": "frame-587.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-038",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Repository GitHub reale mostrato a schermo: hetpatel-11/Adobe_Premiere_Pro_MCP - pubblico, 462 star, 98 fork, 143 commit. Descrizione: 'Adobe Premiere Pro MCP. 282 tools for AI-driven video editing via MCP, for Codex, Claude, and other MCP clients.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#19:48",
+   "frame": "frame-595.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-039",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Repository GitHub reale mostrato a schermo: mvanhorn/cli-printing-press - pubblico, 297 branch, 97 tag, 1.851 commit, 4.5k star. Descrizione: 'Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI - designed for AI agents first, with SQLite sync, offline search, and compound insight commands.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#20:08",
+   "frame": "frame-602.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-040",
+   "peso": "contesto",
+   "tipo": "opinione",
+   "contenuto": "Apps Level 3: 'Build your own - connectors and apps' - stesso diagramma con un nuovo box 'NEW' collegato al robot, chiude la progressione a 3 livelli.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#20:24",
+   "frame": "frame-613.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-051",
+   "peso": "portante",
+   "tipo": "opinione",
+   "contenuto": "Diagramma 'Level 2: Thin Skills, Rich References' - un box skill.md con 3 frecce verso file/immagine/documento separati, illustra il pattern 'router breve + reference file'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#9:04",
+   "frame": "frame-273.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-065",
+   "peso": "contesto",
+   "tipo": "configurazione",
+   "contenuto": "Skills Deck e Routines table della dashboard: /sprint-planning, /newsletter, /games, /clean-up con effort X-High; tabella Routines con orari 08:00-21:30 e stati done/Desktop/NEXT/QUEUED; footer 'Claude Desktop 5 · Hermes 14 · Data 20 Aug, 02:56 PM'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#1:14",
+   "frame": "frame-039.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-066",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "Il video non etichetta mai esplicitamente un 'Apps Level 1' a schermo (a differenza degli altri 3 pilastri che hanno Level 1 chiaramente mostrato) - gap dichiarato nella sezione 'cosa il video non mostra'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#19:08",
+   "frame": "frame-571.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-139",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Per insegnare a Claude Code come funziona una piattaforma esterna (es. n8n), si crea un file markdown dedicato dentro il progetto (es. \"n8n.md\") che funge da manuale di istruzioni per quella piattaforma.",
+   "ancora": "manuale di istruzioni sarà un md file, quindi qui avremo il nostro file.md che dovrà far capire al nostro, diciamo, cloud code come funziona na10",
+   "fonte": "NmoOZVTrTXA#57:42 (Explorer con cartella progetto vuota, tooltip \"New File...\") + voce 57:40",
+   "frame": "frame-0578.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-140",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Il progetto di un agente vocale costruito con Claude Code si organizza attorno a quattro file markdown di istruzioni nella cartella principale: \"CLAUDE.md\" (istruzioni generali di progetto), \"n8n.md\" (come funziona n8n), \"vapi.md\" (come funziona VAPI), \"voice_agent.md\" (istruzioni in linguaggio naturale su come costruire un agente vocale).",
+   "ancora": "CLAUDE.md, n8n.md, vapi.md, voice_agent.md / avremo bisogno di un Cloud.md che sono le istruzioni generali di progetto",
+   "fonte": "NmoOZVTrTXA#59:12 (Explorer con i quattro file creati, CLAUDE.md evidenziato) + voce 58:37-58:58",
+   "frame": "frame-0593.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-139",
+     "tipo": "parte-di",
+     "perche": "n8n.md è uno dei quattro file della struttura completa qui descritta"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-141",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "I quattro file di istruzioni del progetto (CLAUDE.md, n8n.md, vapi.md, voice_agent.md) sono pensati per collegarsi tra loro in un ciclo di riferimenti incrociati, non come documenti isolati: ciascuno rimanda agli altri per costruire una conoscenza di progetto coerente.",
+   "ancora": "quindi ora pian pianino andremo a crearle (frecce arancione/viola/ciano/verde che collegano CLAUDE.md, n8n.md, vapi.md, voice_agent.md in un anello)",
+   "fonte": "NmoOZVTrTXA#59:42 (Explorer con frecce disegnate a mano che collegano i 4 file in un anello) + voce 59:53",
+   "frame": "frame-0598.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-140",
+     "tipo": "parte-di",
+     "perche": "descrive la relazione tra i quattro file già elencati"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-142",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Per documentare a Claude come lavorare con n8n, gli ingredienti da inserire nel file di istruzioni sono due: un MCP dedicato e delle skill dedicate.",
+   "ancora": "dobbiamo cominciare a fare questa documentazione per NA10... dobbiamo inserirli un MCP e dobbiamo inserirli e poi le skills",
+   "fonte": "NmoOZVTrTXA#60:12 (n8n.md vuoto in editor) + voce 60:05",
+   "frame": "frame-0603.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-141",
+     "tipo": "applica",
+     "perche": "è il primo contenuto concreto che va scritto in uno dei quattro file collegati"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-144",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Lo scheletro minimo di un file di istruzioni per una piattaforma esterna (es. n8n.md) si compone di tre campi in quest'ordine: \"Skills:\" (link alla repo di skill), \"MCP:\" (link al server MCP), \"PROMPT:\" (un mini prompt descrittivo aggiuntivo).",
+   "ancora": "Skills: ... MCP: ... PROMPT:",
+   "fonte": "NmoOZVTrTXA#60:54 (input di Claude Code con i tre campi \"Skills:\", \"MCP:\", \"PROMPT:\") + voce 60:18",
+   "frame": "frame-0610.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-142",
+     "tipo": "applica",
+     "perche": "traduce in uno scheletro scrivibile i due ingredienti (MCP e skill) appena richiesti"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-145",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "In questo contesto, un MCP dà accesso agli strumenti/tool sottostanti di una piattaforma, mentre le skill dicono all'agente (Claude) come e quando usare correttamente quegli strumenti: sono due livelli complementari, non intercambiabili.",
+   "ancora": "l'MCP dà accesso a i vari strumenti di Anethen [Anthropic]. Le skill dicono a Cloud come deve usare questi strumenti.",
+   "fonte": "NmoOZVTrTXA#61:18 (compilazione dei campi Skills/MCP in Claude Code) + voce 61:15",
+   "frame": "frame-0614.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-147",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Quando si fa riferimento a repository esterne di skill/MCP dentro un prompt per Claude, conviene chiedere esplicitamente di clonare (o importare) quelle repository dentro il workspace del progetto stesso, così tutte le informazioni restano contenute in un'unica fonte di verità (source of truth) invece di restare sparse fuori dal progetto.",
+   "ancora": "assicurati di clonare le repository anche all'interno del nostro, o di importarle nel nostro workspace o nel nostro progetto, perché questo... ci permetterà di avere tutte le informazioni contenute in un'unica source of truth",
+   "fonte": "NmoOZVTrTXA#63:18 (prompt dettato in Claude Code) + voce 62:44",
+   "frame": "frame-0634.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-145",
+     "tipo": "applica",
+     "perche": "applica il principio MCP/skill imponendo che le fonti restino dentro il progetto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-149",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Dopo aver importato conoscenza esterna (skill+MCP) in un progetto Claude, il primo test di validazione consiste nel chiedere direttamente all'agente di produrre l'artefatto target (in questo caso un workflow n8n) e verificare se il risultato è effettivamente corretto, prima di fidarsi del setup.",
+   "ancora": "la prima verifica che faremo è ok. Detto che ho importato queste informazioni, ora se io chiedessi a Cloud di farmi un workflow... può Cloud farmi effettivamente il workflow che ho chiesto, si o no, e poi verificheremo",
+   "fonte": "NmoOZVTrTXA#64:06-64:24 (sequenza a camera fissa) + voce 64:06-64:23",
+   "frame": "frame-0643.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-148",
+     "tipo": "applica",
+     "perche": "definisce il criterio di verifica da applicare subito dopo l'importazione appena eseguita"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-154",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "La combinazione concettuale di un MCP server (dati e strumenti) con delle skill (guida esperta su come usare quegli strumenti) produce un \"workflow builder\" completo basato sul principio della progressive disclosure, cioè rivelare la complessità solo quando serve.",
+   "ancora": "n8n-mcp MCP Server (dati: 1.084 nodi, 2.709 template, validazione) + n8n-skills (guida esperta su COME usare gli MCP tools) = Workflow builder completo con progressive disclosure",
+   "fonte": "NmoOZVTrTXA#65:30 (blocco di sintesi in n8n.md) + voce 65:05",
+   "frame": "frame-0656.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-145",
+     "tipo": "applica",
+     "perche": "riformula in chiave di progressive disclosure la stessa distinzione MCP/skill già definita"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-173",
+   "peso": "portante",
+   "tipo": "anti-pattern",
+   "contenuto": "Dichiarare l'intenzione di mettere una chiave API in un file .env per sicurezza, e poi incollarla per intero in chiaro direttamente dentro il prompt di chat inviato all'agente, è un anti-pattern: il testo del prompt non è un posto sicuro per un segreto quanto un file .env dedicato, specialmente se la sessione è condivisa o registrata.",
+   "ancora": "prima di partire assicurati anche che le mie chiavi siano dentro ad un file .env, te l'ho già creato, può inserirle lì dentro (mentre lo schermo mostra la chiave già incollata in chiaro nel prompt)",
+   "fonte": "NmoOZVTrTXA#70:00 (chiave JWT incollata per intero nel prompt di Claude Code) + voce 70:04",
+   "frame": "frame-0701.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "parte-di",
+     "perche": "è una conseguenza pratica dell'esposizione del segreto già osservata"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-174",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "La convenzione standard tra sviluppatori software per gestire le chiavi segrete/API key di un progetto è tenerle in un file dedicato chiamato \".env\", separato dal codice e dai prompt.",
+   "ancora": "abbiamo delle API key che sono contenute dentro a un file che è questo .env... una convenzione di software developer",
+   "fonte": "NmoOZVTrTXA#70:30 (comparsa del file .env nell'Explorer) + voce 70:12",
+   "frame": "frame-0706.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-173",
+     "tipo": "contraddice",
+     "perche": "è la buona pratica che l'anti-pattern osservato non rispetta nell'immediato"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-176",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Per attivare un server MCP dentro Claude Code, l'agente crea una cartella \".claude\" nel progetto con un file \"settings.json\" contenente la configurazione \"mcpServers\"; dopo questa modifica è necessario ricaricare la sessione di Claude Code (chiudendo e riaprendo, oppure con il comando /restart) prima che i nuovi tool MCP diventino disponibili.",
+   "ancora": "Write settings.json (20 lines)... { \"mcpServers\": { \"chrome-devtools\": { ... Setup completato. Ora devo chiederti di ricaricare Claude Code per attivare il server n8n-mcp",
+   "fonte": "NmoOZVTrTXA#71:54 (creazione di .claude/settings.json e messaggio \"Setup completato... ricaricare Claude Code\") + osservazione schermo",
+   "frame": "frame-0720.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-177",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Anche dopo aver dato istruzioni scritte per usare un MCP specifico, può essere necessario intervenire di persona con un messaggio esplicito e insistito (del tipo \"assicurati di usare davvero l'MCP\") per forzare l'agente a impiegare concretamente il tool invece di procedere in altro modo.",
+   "ancora": "ensure you use the MCP and you get it right? stupid but just to make sure",
+   "fonte": "NmoOZVTrTXA#71:54 (messaggio dell'autore \"ensure you use the MCP and you get it right? stupid but just to make sure\") + osservazione schermo",
+   "frame": "frame-0720.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-176",
+     "tipo": "parte-di",
+     "perche": "avviene nella stessa sequenza di attivazione del server MCP"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-036",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Passaggio dalla lavagna e da n8n a un secondo ambiente, l'editor \"Claude Code\" (interfaccia stile VS Code), per una demo più avanzata. Viene mostrato un progetto reale già esistente dell'autore, \"Social Media Manager\", con una cartella `.claude/skills` che elenca in ordine alfabetico decine di skill già costruite: agent-debates, agent-polling, audit, auphonic, browser-swarm, commit, contract, corso-skool, deploy-check, diagram-generator, draft-to-youtube, email-digest, linkedin-post, pre-mortem, prompt-contracts, query-anthropic, reverse-prompting, schedule-meeting, shorts, sign, skill-creator, skool-community-replies (elenco troncato a schermo, prosegue oltre).",
+   "ancora": "cartella `.claude/skills` espansa con lo stesso elenco già visto",
+   "fonte": "JTn5pqm9ecM#23:42-24:12 + voce 23:42",
+   "frame": "frame-0238.png, frame-0243.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-162",
+     "tipo": "contraddice",
+     "perche": "È un secondo ambiente/piattaforma (Claude Code) mostrato in contrasto con n8n: la stessa architettura teorica viene applicata su uno strumento diverso, più avanzato, con skill/agenti già pronti invece di nodi visuali da collegare a mano."
+    },
+    {
+     "verso": "KA-185",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-082",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Esempio reale di file CLAUDE.md mostrato per intero (progetto \"Social Media Manager\"): righe 1-18 leggibili — \"# CLAUDE.md\", \"This file provides guidance to Claude Code when working with code in this repository.\", sezione \"## WHAT\" con descrizione del progetto (skill-driven tool per LinkedIn posts, YouTube descriptions/scripts/Shorts, email triage, community management), stack tecnico (Python 3.9+, Claude API, Gemini API, OpenAI Whisper API, yt-dlp, WhisperX, FFmpeg), e struttura cartelle (\".claude/skills/\" per tutti i tool come skill Claude Code senza webapp, \"src/linkedin/\", \"src/youtube_desc/\", \"src/yt_script/\", \"src/shorts/\", \"src/seo.py\", \"src/auphonic/\", \"src/transcription/\", \"src/youtube_upload/\").",
+   "ancora": "This file provides guidance to Claude Code when working with code in this repository.",
+   "fonte": "JTn5pqm9ecM#39:48 (tab CLAUDE.md aperta per intero nel pannello destro dell'IDE) + voce 39:48",
+   "frame": "frame-0399.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-196",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-108",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Livello \"Matched Skills\" (terzo anello, verde, con la parola \"Skills\" sottolineata) del diagramma di gerarchia dei prompt: SOP (standard operating procedure) per task, caricate on-demand.",
+   "ancora": "SOP per task, caricate on-demand",
+   "fonte": "JTn5pqm9ecM#53:42 (anello \"Matched Skills\") e #54:30 (sottolineatura su \"Skills\") + voce 53:42-54:48",
+   "frame": "frame-0538.png, frame-0546.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-199",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-110",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Esempio pratico reale di skill del livello \"Matched Skills\": il file SKILL.md della skill \"commit\" nel progetto \"Social Media Manager\" — frontmatter YAML: name: commit; description: \"Run the full commit-push-PR pipeline for the Social Media Manager project. Invoke whenever the user says 'commit', 'push', 'ship it', 'send it live', or types '/commit'. Also trigger on 'push this', 'let's push', 'done, commit it'.\"; allowed-tools: Bash, Read. Corpo: \"# Commit\" / \"## Goal — Ship code to GitHub with automated testing and PR creation — no manual git commands. Full pipeline: test check -> staged diff review -> selective git add -> commit -> push -> open PR.\"",
+   "ancora": "Run the full commit-push-PR pipeline for the Social Media Manager project.",
+   "fonte": "JTn5pqm9ecM#54:48 (SKILL.md della skill \"commit\" aperto per intero) + voce 54:48",
+   "frame": "frame-0549.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-197",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-200",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-111",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Sezione \"## Gotchas\" della skill \"commit\": \"**Never use `git add .` or `git add -A`** — The project root has loose files (.env, credentials, data/) that must stay untracked. Always `git add` specific files or directories by name.\" — \"**Tests first, push second** — Run `pytest tests/ -v` before committing. If tests fail, abort the pipeline and fix the issue. Never push broken tests.\" — \"**Force push is always the user's call** — If `git push` is rejected, stop and ask. Never force push to main.\" — \"**Always open a PR after pushing** — Per project rules, always create a PR automatically after pushing a feature branch. Never ask for permission — just do it (see feedback_always_open_pr.md).\" — \"**Never commit directly to main** — Always use feature branches (see .claude/rules/git.md).\"",
+   "ancora": "Never force push to main.",
+   "fonte": "JTn5pqm9ecM#54:48 (sezione Gotchas della skill \"commit\", per intero) + voce 54:48",
+   "frame": "frame-0549.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-199",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-209",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Catalogo reale delle skill Claude Code installate nel progetto 'Social Media Manager' di Giovanni Beggiato, visibile ripetutamente nella sidebar .claude/skills durante tutto il blocco di scene: agent-debates, agent-polling, audit, auphonic, browser-swarm, commit, contract, corso-skool, deploy-check, diagram-generator, draft-to-youtube, email-digest, linkedin-post, pre-mortem, prompt-contracts, query-anthropic, reverse-prompting, schedule-meeting, shorts, sign, skool-community-replies, skool-video-upload, step-back-prompting, video-to-action.",
+   "ancora": "\"agent-debates\", \"agent-polling\", \"audit\", \"auphonic\", \"browser-swarm\"",
+   "fonte": "JTn5pqm9ecM#92:06 e 104:24 (Claude Code/VS Code, sidebar Explorer .claude/skills espansa) + voce assente (solo screen-share)",
+   "frame": "frame-1045.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-218",
+     "tipo": "motiva",
+     "perche": "Il catalogo mostra che browser-swarm e audit sono due delle 24 skill reali già installate nello stesso progetto, coerenti con l'uso pratico dimostrato dal vivo in entrambi i capitoli."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-214",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Frontmatter reale del file SKILL.md della skill audit del progetto (visibile con numeri di riga, autore confermato via git blame): name: audit; description: 'Run a comprehensive 3-agent project health audit covering code quality, skill compliance, chain documentation, configuration drift, rules freshness, hooks integrity, and environment completeness. Use when the user says \"audit\", \"code review\", \"check the code\", \"review everything\", \"full audit\", \"project health\", or \"/audit\".'; allowed-tools: Bash, Read, Grep, Glob, Task.",
+   "ancora": "Run a comprehensive 3-agent project health audit covering code quality,",
+   "fonte": "JTn5pqm9ecM#107:42 (VS Code, file .claude/skills/audit/SKILL.md aperto, righe 1-13) + voce assente (solo screen-share, poi voce 107:36-107:42)",
+   "frame": "frame-1078.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-215",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-210",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-215",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Goal dichiarato nel file SKILL.md reale della skill audit: 'Catch everything -- code bugs, skill drift, broken chains, stale rules, missing hooks, env gaps -- in one pass with 3 parallel agents. No manual checklist needed.'",
+   "ancora": "Catch everything -- code bugs, skill drift, broken chains, stale rules, missing hooks, env gaps",
+   "fonte": "JTn5pqm9ecM#107:42 (VS Code, sezione ## Goal di SKILL.md) + voce assente (solo screen-share)",
+   "frame": "frame-1078.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-214",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-216",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "Sezione Gotchas del file SKILL.md reale della skill audit, tre avvertenze operative: 'Scripts must run from project root. All check_*.py scripts use Path(__file__).resolve().parents[4] to find the project root. Run them with python3 .claude/skills/audit/scripts/<script>.'; 'check_skill_chains.py has hardcoded KNOWN_CHAINS. When adding a new skill chain, update the KNOWN_CHAINS dict in the script or the chain won't be verified.'; 'check_env_completeness.py won't find env vars used in browser automation. Loom/n8n vars are used via Chrome DevTools MCP, not Python os.environ.'",
+   "ancora": "Scripts must run from project root.",
+   "fonte": "JTn5pqm9ecM#107:42 (VS Code, sezione ## Gotchas di SKILL.md) + voce assente (solo screen-share)",
+   "frame": "frame-1078.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-214",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-217",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "La barra di stato dell'editor conferma via git blame che l'autore del file SKILL.md della skill audit è proprio il relatore del corso: 'Giovanni Beggiato (2 months ago)' sulla riga selezionata -- prova diretta che la skill mostrata è materiale di produzione reale, non un esempio costruito per il video.",
+   "ancora": "Giovanni Beggiato (2 months ago)",
+   "fonte": "JTn5pqm9ecM#107:42 (VS Code, barra di stato con git blame su SKILL.md) + voce assente (solo screen-share)",
+   "frame": "frame-1078.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-214",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-226",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il relatore annuncia che lascerà la skill di audit a disposizione del pubblico, cosi' che chiunque la voglia importare nei propri progetti possa farlo in tutta libertà.",
+   "ancora": "lascerò anche questa skill di audit sotto in modo tale che se poi vogliate importarla",
+   "fonte": "JTn5pqm9ecM#109:48 (solo webcam) + voce 109:48-109:54",
+   "frame": "frame-1099.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-222",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-214",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

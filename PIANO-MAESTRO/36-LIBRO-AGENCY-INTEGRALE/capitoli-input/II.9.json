@@ -1,0 +1,144 @@
+{
+ "capitolo": "II.9",
+ "parte": "II.9",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Follow-up e sequenze di recupero",
+ "libro": "II",
+ "libro_titolo": "Trovare clienti",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v10-barron-sales::KA-008",
+  "max17-v10-barron-sales::KA-009",
+  "max17-v10-barron-sales::KA-011",
+  "max17-v10-barron-sales::KA-017",
+  "max17-v10-barron-sales::KA-046",
+  "max17-v10-barron-sales::KA-052",
+  "outfunnel-lezione-10::KA-04",
+  "outfunnel-lezione-10::KA-05",
+  "outfunnel-lezione-10::KA-06"
+ ],
+ "fonti_integrali": {
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "outfunnel-lezione-10": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-10\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v10-barron-sales::KA-008",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Email di indottrinamento pre-call integrale: 'Hi NAME, I'm looking forward to speaking with you on our scheduled call. Can you please take a look through the short videos on this page https://meeting.salesman.com/confirmed. The videos explain how the mentorship works, how we are going to deliver you a positive ROI within the first 30-days and they answer some of the questions you might have right now. Watching the videos means that we have more time on our call to dig into your situation and to see if the Salesman.com Mentorship is the right fit for your business. Cheers'.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#14:30",
+   "frame": "frame-436.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-009",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Landing page post-booking: header 'Your call has been successfully booked / IMPORTANT: Watch this video right now', video embed, sezione 'How you're going to get an ROI within the first 30-days' con tool 'Selling Systems Audit — Complete the audit to find gaps in your sales systems and prepare for your 1:1 audit and assessment review with Will Barron', menu Dashboard/Selling Systems Audit/Sales Lab/Messaging & Sales Approach/Book a 1:1 call.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#14:32",
+   "frame": "frame-437.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-011",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "FAQ pre-call, voce bio: 'Will Barron built Salesman.com after 6 years selling complex medical devices. Since then he's built two service businesses and has now trained over 1,000 business owners too. He's the host of the Salesman.com YouTube channel (77,000 subscribers) and the Will Barron YouTube channel (11,000 subscribers), where he helps over 300,000 businesses a month increase their revenue.'",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#14:40",
+   "frame": "frame-441.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-017",
+   "peso": "portante",
+   "tipo": "fase",
+   "contenuto": "FASE 3 — Indoctrinate: sequenza email + landing page con video + FAQ che pre-costruisce fiducia e gestisce le obiezioni comuni prima della call, così che 'these objections very rarely come up anymore' durante la discovery call.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#11:44",
+   "frame": "frame-386.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-046",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "'Sales shield' — i prospect arrivano a una call prenotata freddi, scettici e pronti a dire di no o a sparire (ghosting); l'indottrinamento pre-call serve a neutralizzare questo scudo prima ancora di parlare con loro.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#11:40",
+   "frame": "frame-352.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-052",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "L'indottrinamento pre-call spinge chi prenota una call a guardare 2 video YouTube aggiuntivi (potenzialmente 1-3 ore di contenuto) prima della call, così arrivano già sapendo se si fidano del team e dell'offerta.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#13:17",
+   "frame": "frame-406.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Timing del follow-up: intervalli più lunghi (7, 15, 30 giorni), obiettivo riproporre l'offerta con angolazioni DIVERSE (non ripetere lo stesso messaggio) e gestire obiezioni non ancora trattate.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-10#\"3.-sequenza-di-follow-up\"",
+   "frame": "",
+   "run": "outfunnel-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-05",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "4 tattiche per un follow-up efficace: nuovi pain point non usati prima, cambio di targeting (es. da un genere all'altro), risoluzione di obiezioni secondarie (tempo/soldi/paura di sbagliare), test di messaggi diversi.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-10#\"strategie-per-rendere-il-follow-up-efficace\"",
+   "frame": "",
+   "run": "outfunnel-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-10::KA-06",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Vincolo temporale esplicito: il follow-up non deve durare oltre 1-2 mesi, per non risultare invadente o incoerente con i contenuti pubblicati sui social nel frattempo.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-10#\"strategie\"",
+   "frame": "",
+   "run": "outfunnel-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

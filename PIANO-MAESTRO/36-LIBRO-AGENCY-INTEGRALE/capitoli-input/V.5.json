@@ -1,0 +1,1250 @@
+{
+ "capitolo": "V.5",
+ "parte": "V.5",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Claude Code: impianto, comandi, sessione",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v05-jaye-agenticos::KA-015",
+  "max17-v05-jaye-agenticos::KA-016",
+  "max17-v05-jaye-agenticos::KA-017",
+  "max17-v05-jaye-agenticos::KA-018",
+  "max17-v15::KA-007",
+  "max18-v01-second-brain-obsidian::KA-129",
+  "max18-v01-second-brain-obsidian::KA-150",
+  "max18-v02-karpathy-agenti::KA-038",
+  "max18-v03-belli-token::KA-006",
+  "max18-v03-belli-token::KA-008",
+  "max18-v03-belli-token::KA-021",
+  "max18-v03-belli-token::KA-022",
+  "max18-v05-RnNSRF4s9nk::KA-013",
+  "max18-v06-JTn5pqm9ecM::KA-147",
+  "max18-v08-DI5aWJiFAt8::KA-018",
+  "max18-v08-DI5aWJiFAt8::KA-019",
+  "max18-v08-DI5aWJiFAt8::KA-101",
+  "max18-v08-DI5aWJiFAt8::KA-104",
+  "max18-v09-NmoOZVTrTXA::KA-123",
+  "max18-v09-NmoOZVTrTXA::KA-124",
+  "max18-v09-NmoOZVTrTXA::KA-125",
+  "max18-v09-NmoOZVTrTXA::KA-133",
+  "max18-v09-NmoOZVTrTXA::KA-134",
+  "max18-v09-NmoOZVTrTXA::KA-167",
+  "max18-v09-NmoOZVTrTXA::KA-175",
+  "max18-v09-NmoOZVTrTXA::KA-191",
+  "max18-v09-NmoOZVTrTXA::KA-198",
+  "max18-v09-NmoOZVTrTXA::KA-220",
+  "max18-v09-NmoOZVTrTXA::KA-221",
+  "max18-v09-NmoOZVTrTXA::KA-222",
+  "max18-v09-NmoOZVTrTXA::KA-244",
+  "max18-v09-NmoOZVTrTXA::KA-265",
+  "max18-v09-NmoOZVTrTXA::KA-267",
+  "max18-v09-NmoOZVTrTXA::KA-272"
+ ],
+ "fonti_integrali": {
+  "max17-v02-beggiato-team": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\video-analysis.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max17-v07-rizzo-prompt": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\video-analysis.md"
+  ],
+  "max17-v15": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\video-analysis.md"
+  ],
+  "max18-v01-second-brain-obsidian": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-091-117.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-116-130.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-131-145.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-178-204.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-193-207.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-208-222.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-223-237.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-238-250.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-299-313.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-314-328.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-329-352.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-A.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-B.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C2.md"
+  ],
+  "max18-v02-karpathy-agenti": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\video-analysis.md"
+  ],
+  "max18-v03-belli-token": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\video-analysis.md"
+  ],
+  "max18-v05-RnNSRF4s9nk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-001-020.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-021-040.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-041-060.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-061-080.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-081-098.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\RnNSRF4s9nk\\contenuto-integrale.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v02-beggiato-team::KA-063",
+   "peso": "contesto",
+   "tipo": "comando",
+   "contenuto": "Interfaccia usata: IDE tipo VS Code con badge 'Antigravity IDE' e 'Screen Reader Optimized' in basso a destra; barra chat con pulsanti mic, +, doc, 'Bypass permissions', stop rosso; box input 'Queue another message...'.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#0:06",
+   "frame": "frame-004.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-015",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Comando CLI headless reale: 'claude -p /clean-up --model fable --effort xhigh --permission-mode bypassPermissions'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#9:54",
+   "frame": "frame-297.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-016",
+   "peso": "supporto",
+   "tipo": "configurazione",
+   "contenuto": "Report standard di una esecuzione headless: MODEL/EFFORT/DURATION/EXIT/FINISHED nell'header, seguito da riepilogo testuale e poi 'FULL TERMINAL OUTPUT' col comando e note sui permessi.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#9:52",
+   "frame": "frame-295.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-017",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Nota sintassi permessi in settings.json/settings.local.json: 'Write(.claude/**) is not matched by file permission checks - only Edit(path) rules are. Use Edit(.claude/**) instead (Edit rules cover all file-editing tools).' Ripetuta per Write(.vscode/**) e MultiEdit(.claude/**).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#9:52",
+   "frame": "frame-296.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-018",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Prompt integrale 'SKILLS Level 3 - Run skills from your OS with claude -p': 'I want to run my Claude Code skills from buttons in my own software, without opening a chat window. This works through headless mode: the command claude -p \"prompt\" runs one prompt and exits. Ask me first: 1) which app should hold the buttons; 2) which 3-5 skills deserve a button; 3) options vs defaults. Then build it: one button per skill, e.g. claude -p /clean-up --model claude-sonnet-5; buttons with options get a picker; show run status; if plain HTML with no server, add the smallest local helper that shells out claude -p. Log every run to runs.log. Walk me through one real button press end to end before calling it done.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#10:14",
+   "frame": "frame-308.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-047",
+   "peso": "contesto",
+   "tipo": "standard",
+   "contenuto": "Pannello nativo Claude Code Settings -> Customize con categorie: Skills, Connectors (selezionato), Plugins, Memory; sezione Desktop app: General, Extensions, Developer.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#18:52",
+   "frame": "frame-567.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-067",
+   "peso": "contesto",
+   "tipo": "configurazione",
+   "contenuto": "Ambiente Claude Code osservato: versione v2.1.193, 'Opus 4.8 (1M context)', piano Claude Max, organizzazione official.simone.rizzo@gmail.com, working dir D:\\video. Avviso a schermo: '4 MCP servers need authentication - run /mcp'. Nota promozionale: 'Fable 5 is back. Until July 7, you can use up to 50% of your plan's weekly usage limit on Fable 5... Fable 5 draws down usage faster than Opus 4.8.'",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#19:06",
+   "frame": "frame-574.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-007",
+   "peso": "supporto",
+   "tipo": "architettura",
+   "contenuto": "Ambiente di sviluppo usato: non la CLI 'Claude Code' da terminale ma la app desktop Claude (interfaccia scura) con una tab 'Code' dedicata al coding agentico dentro un progetto locale chiamato 'AI CFO YouTube'. La home dell'app mostra statistiche di utilizzo personale: 700 sessioni, 98.076 messaggi, 64,2M token totali, 41 giorni attivi, streak corrente 6 giorni, streak piu' lungo 24 giorni, ora di picco 9:00, modello preferito Opus 5.",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#6:04-6:20",
+   "frame": "frame-092.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-073",
+   "peso": "contesto",
+   "tipo": "definizione",
+   "contenuto": "Il nome esatto dell'editor usato per Claude Code in questa demo e' 'Antigravity IDE' (sottotitolo 'Code with Agent'), confermato sia dalla schermata splash sia dall'etichetta della finestra in Mission Control di macOS.",
+   "ancora": "Antigravity IDE",
+   "fonte": "RnoC5IlOUhs#63:48 (splash Antigravity IDE) + #64:00 (Mission Control)",
+   "frame": "frame-0639.png, frame-0641.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-129",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Pattern osservabile trasversale a piu' scene: l'IDE Antigravity non usa mai una generica etichetta \"Loading...\" per segnalare che l'agente sta lavorando, ma ruota tra verbi in -ing scelti in modo giocoso/idiosincratico, diversi ogni volta: \"Schlepping...\" (scena 181, subito dopo bypass permission), \"Thinking...\"/\"Stuttering...\" (scena 190, durante l'elaborazione del Prompt 4), \"Thinking... - 64 tokens\" (scena 214, invio del prompt _index), \"Cerebrating...\" (scena 233, mentre Claude scrive lo script del gate), \"Wrangling...\" (scena 240, mentre scrive genera_llms.py). Il contatore di token accanto all'etichetta (es. \"64 tokens\") e il nome \"Thought for Ns\" prima della risposta finale sono gli unici indicatori numerici di avanzamento mostrati all'utente durante l'attesa.",
+   "ancora": "Schlepping...",
+   "fonte": "RnoC5IlOUhs#77:30, #80:42, #88:30, #95:06, #96:48 (etichette di stato Schlepping/Thinking-Stuttering/Cerebrating/Wrangling nelle rispettive scene)",
+   "frame": "frame-0776.png, frame-0808.png, frame-0886.png, frame-0952.png, frame-0969.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-095",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-073",
+     "tipo": "parte-di",
+     "perche": "I verbi in -ing idiosincratici ('Schlepping...', 'Wrangling...') sono l'indicatore di stato dell'IDE nominato in KA-073: sono un dettaglio di quell'interfaccia, non un comportamento del modello."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-150",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Per dare accesso a GitHub all'agente, il presentatore valuta due strade a voce (MCP o token) e sceglie il token; annuncia l'intenzione di metterlo in un file .env (che infatti viene aperto vuoto, una sola riga, nell'Explorer accanto al prompt), ma nella pratica il token finisce incollato direttamente nel campo 'GITHUB TOKEN:' dentro il riquadro del prompt stesso (scena 258), non nel file .env. Il token viene nominato 'second brain' durante la creazione su GitHub.",
+   "ancora": "allora ora dovremmo dargli accesso a GitHub. Eh, potremmo farlo con MCP, potremmo farlo con token, diamoglielo con il token.",
+   "fonte": "RnoC5IlOUhs#104:18-105:18 (scene 255, 258)",
+   "frame": "frame-1044.png, frame-1054.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-154",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-151",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Vista 'app switcher' con le cinque applicazioni tenute aperte in parallelo per costruire il tutorial del cervello Aurora: Desktop 1, Obsidian (graph view), Antigravity IDE (finestra attiva, bordo evidenziato in blu — conferma il nome esatto del tool, non 'VS Code' né 'Claude Code'), Notion, Google Chrome.",
+   "ancora": "**\"Antigravity IDE\"** (miniatura scura, editor di codice — bordo evidenziato in blu, finestra attiva)",
+   "fonte": "RnoC5IlOUhs#105:24 (scena 259)",
+   "frame": "frame-1055.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-073",
+     "tipo": "esempio-di",
+     "perche": "La vista app switcher mostra la finestra 'Antigravity IDE' attiva col bordo blu ed e' la seconda prova indipendente del nome esatto che KA-073 fissa (non 'VS Code')."
+    },
+    {
+     "verso": "KA-098",
+     "tipo": "parte-di",
+     "perche": "Il cambio applicazione Antigravity -> Obsidian di KA-098 e' uno dei salti resi possibili dalle cinque app tenute aperte in parallelo che KA-151 fotografa nell'app switcher."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-157",
+   "peso": "contesto",
+   "tipo": "definizione",
+   "contenuto": "Dentro l'IDE Antigravity viene aperto un pannello dedicato letteralmente etichettato 'Claude Code' (logo, messaggio di benvenuto 'Use planning mode to talk through big changes before a commit. Press [Shift][Tab] to cycle between modes.'): i due strumenti (Antigravity e Claude Code) convivono nella stessa finestra dell'editor.",
+   "ancora": "Conferma che dentro l'IDE \"Antigravity\" viene aperto un pannello dedicato letteralmente etichettato **\"Claude Code\"**: i due strumenti convivono nella stessa finestra.",
+   "fonte": "RnoC5IlOUhs#112:00 (scena 279)",
+   "frame": "frame-1121.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-073",
+     "tipo": "parte-di",
+     "perche": "Il pannello etichettato letteralmente 'Claude Code' con il messaggio 'Use planning mode...' e' un riquadro interno alla finestra Antigravity: i due strumenti sono contenitore e contenuto, non alternative."
+    },
+    {
+     "verso": "KA-051",
+     "tipo": "esempio-di",
+     "perche": "Il pannello 'Claude Code' dentro Antigravity e' la stessa applicazione mostrata in KA-051 nella versione desktop (tab Cowork) con il popup di permesso sul vault: due superfici dello stesso agente."
+    },
+    {
+     "verso": "KA-190",
+     "tipo": "precede",
+     "perche": "Il pannello Claude Code aperto in KA-157 e' la finestra in cui poi si digitano '/fast' (Opus 4.6) e '/clear' per collegare Notion via MCP in KA-190."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-170",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Quarto reset di conversazione osservato nel video (dopo le scene 279/284): schema fisso e ripetuto, tab rinominata 'Untitled', icona pixel-art arancione del robot Claude Code (qui con il corpo pieno invece che a contorno, variante grafica non vista prima), messaggio placeholder identico 'You've come to the absolutely right place!' e campo di input vuoto con bordo rosso attivo in basso. Il presentatore inizia già a dettare a voce la domanda successiva ('Ehi, guardando al mio database in una...') mentre la chat è ancora completamente vuota: il parlato anticipa sempre l'azione a schermo in questo montaggio, pattern già osservato più volte nel corso del video.",
+   "ancora": "You've come to the absolutely right place!",
+   "fonte": "RnoC5IlOUhs#116:18 (scena 294, editor Antigravity, tab 'Untitled') + voce 116:18-116:24",
+   "frame": "frame-1164.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-171",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-172",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Dopo la lettura delle entità, Claude esegue un terzo comando bash che concatena in un solo for-loop la lettura di KPI, aree, progetto e script di export CRM (comando visibile solo in parte: 'cd \"...aurora cervello\" && for f in data/kpi-*.md areas/area-*.md projects/progetto-arr-5m-20[26...]' tagliato a destra), motivato a voce dal narratore come necessario per vedere 'la parte numerica e organizzativa'. Durante questa fase il contatore di elaborazione sale da 'Thinking... · 16 tokens' a 'Thinking... · 857 tokens' poi 'Thinking... · 1.3k tokens', e l'etichetta di stato ruota tra parole casuali invece di restare fissa su un singolo 'Thinking...': si osservano in sequenza '🔺 Wandering...', '🔺 Computing...', '🔺 Percolating...'. Il testo della scena 298 dichiara esplicitamente che con queste si contano 'cinque' etichette scherzose in questo blocco di sistema RAG-demo, ma ne elenca sette in tutto: Discombobulating, Germinating, Ruminating (già viste in parte-C) più le quattro nuove Forming, Wandering, Computing, Percolating — la fonte stessa non risolve l'incongruenza tra il numero dichiarato (cinque) e i nomi elencati (sette), quindi va riportata come discrepanza osservata nel materiale originale, non normalizzata qui.",
+   "ancora": "🔺 Percolating...",
+   "fonte": "RnoC5IlOUhs#117:18-117:36 (scene 296-298) + voce",
+   "frame": "frame-1174.png, frame-1176.png, frame-1177.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-173",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-190",
+   "peso": "contesto",
+   "tipo": "comando",
+   "contenuto": "Sequenza terminale in Claude Code per collegare Notion: digitazione '/fast' con risposta '⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok'; poi digitazione '/cl▍' con menu di autocompletamento visibile ('/clear — Start a new session with empty context; previous session stays on disk (resumable with /resume)', '/claude-api', '/exit', '/code-review-mcp-issue-prompts'); eseguito '/clear' per ripartire pulito, poi banner di benvenuto 'Welcome back Gio!' con 'Opus 4.6 (1M context) with hi[gher limits]... · Claude Max', organizzazione 'giobeggiato@gmail.com's Organization', box 'Tips for getting started' ('Run /init to create a CLAUDE.md file with instructions for Claude', 'Introducing Claude Fable 5: a Mythos-class model that we've made saf...', 'Fixed sessions not saving transcripts...', 'Added \"--safe-mode\" flag...'), avviso '⚠ 1 setup issue: MCP · /doctor'; comando cronologia '> mcp add --transport http notion https://mcp.notion.com/mcp' con stato '⚙ Perusing...'; infine messaggio utente 'sei connesso con Notion?' con stato di elaborazione '🔴 Pontific_a' (verosimilmente 'Pontificating...', etichetta troncata a schermo). Nota di cautela sulla fonte: il nome del modello 'Claude Fable 5' così come appare nel banner di questa specifica registrazione non è verificabile altrove nella sessione ed è riportato alla lettera solo perché leggibile a schermo in quel frame.",
+   "ancora": "⚡ Fast mode ON · model set to Opus 4.6 · $10/$50 per Mtok",
+   "fonte": "RnoC5IlOUhs#127:54-129:18 (scene 324-326) + voce",
+   "frame": "frame-1280.png, frame-1281.png, frame-1287.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-191",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-038",
+   "peso": "supporto",
+   "tipo": "strumento",
+   "contenuto": "Stack di lavoro mostrato: IDE = Google Antigravity (cercato su Google a schermo, descritto come 'agentic development environment [...] designed to orchestrate autonomous artificial intelligence agents'), con Claude Code installato come estensione VS Code di Anthropic dal marketplace Open VSX. L'autore precisa che 'non cambia assolutamente nulla' rispetto alla desktop app di Claude Code. Modalita' di esecuzione usata in tutto il video: 'bypass permissions'.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#9:21-10:09",
+   "frame": "frame-188.png, frame-198.png, frame-138.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-006",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "/clear a ogni cambio di task. E' l'unica mossa che azzera la cronologia invece di limarla: 'ogni altro fix taglia una fetta, questo azzera la torta'. Non serve aprire una chat nuova. Dimostrato a schermo: dopo un solo 'Ciao, come stai?' il contesto era al 15%, dopo /clear torna al 6% di partenza.",
+   "ancora": "/clear a ogni cambio di task — azzera la base",
+   "fonte": "1Dyld3y-V7Y#4:34-5:22 (audio) + card lavagna",
+   "frame": "frame-107.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-001",
+     "tipo": "discende-da"
+    },
+    {
+     "verso": "KA-007",
+     "tipo": "alternativa-a"
+    },
+    {
+     "verso": "KA-045",
+     "tipo": "confermato-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-008",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "/rewind al posto di /compact quando basta tornare indietro: riporta la conversazione a un punto precedente senza consumare token, perche' torni a uno stato che il modello ha gia' pronto invece di farglielo ricostruire. Funziona identico in terminale, app desktop ed estensione VS Code.",
+   "ancora": "/rewind, non /compact — non ricostruisci nulla",
+   "fonte": "1Dyld3y-V7Y#7:46-8:41 (audio) + card lavagna",
+   "frame": "frame-126.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-007",
+     "tipo": "sostituisce"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-021",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Soglia dichiarata per il CLAUDE.md: sotto le 200 righe. L'autore la attribuisce esplicitamente alla documentazione Anthropic, sia a voce sia scritta sulla lavagna. Il suo CLAUDE.md del second brain sta sulle 166 righe. ATTENZIONE: attribuzione dichiarata dall'autore ma NON verificata in questa sessione contro la doc Anthropic.",
+   "ancora": "sotto le 200 righe — Regola dai doc Anthropic",
+   "fonte": "1Dyld3y-V7Y#14:45-14:52 (audio) + card lavagna",
+   "frame": "frame-282.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-020",
+     "tipo": "vincola"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-022",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Un CLAUDE.md per ogni cartella vale -7.160 token a sessione secondo la lavagna. Il meccanismo: il CLAUDE.md della radice si carica SEMPRE, quelli nelle sottocartelle solo quando l'agente entra davvero in quella cartella. Cosi' il file radice resta un indice leggero e il dettaglio si paga solo su richiesta.",
+   "ancora": "un CLAUDE.md per cartella — -7.160 a sessione",
+   "fonte": "1Dyld3y-V7Y#15:17-16:45 (audio) + card lavagna",
+   "frame": "frame-307.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-020",
+     "tipo": "completa"
+    },
+    {
+     "verso": "KA-023",
+     "tipo": "attribuito-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-013",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "\"Antigravity IDE\" è l'ambiente di sviluppo (fork/derivato di VS Code) usato per l'intera sessione di lavoro con Claude Code nel video, riconoscibile dall'etichetta \"Antigravity IDE - Offline\" nella barra di stato in basso a destra, accanto a \"Screen Reader Optimized\". Il progetto radice aperto si chiama \"Social Media Manager\" (cartella preesistente del presentatore, non creata per questo video), dentro cui viene poi generata la sottocartella \"btc-trading-bot\".",
+   "ancora": "Antigravity IDE - Offline",
+   "fonte": "RnNSRF4s9nk#5:12 (prima apparizione IDE) + voce varie",
+   "frame": "frame-053.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-014",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-052",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-039",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Mentre gli agenti/tool lavorano, l'interfaccia permette di aprire un pannello secondario e ispezionare live il contenuto grezzo che un singolo tool sta processando (es. il pannello \"WebSearch tool output\" con il testo integrale dei risultati su compliance GDPR per il cold email B2B) — una funzionalità di trasparenza/debug sul lavoro interno degli agenti.",
+   "ancora": "Se poi voi premete avete anche la possibilità di vedere dentro al tool che cosa sta processando",
+   "fonte": "JTn5pqm9ecM#25:18 + voce 25:18",
+   "frame": "frame-0254.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-186",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-147",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Prima di invocare la skill Prompt Contracts, si apre il menu comandi di Claude Code/Antigravity con le opzioni disponibili per la sessione: \"Context\", \"Attach file...\", \"Mention file from this project...\", \"Clear conversation\", \"Rewind\", \"Switch model...\" (con il modello attivo mostrato come \"Opus 4.6 (1M context)\" e toggle blu attivo), \"Effort (Medium)\" (toggle blu attivo), \"Thinking\" (toggle blu attivo), \"Account & usage...\".",
+   "ancora": "in chiaro: **\"Opus 4.6 (1M context)\"** con toggle blu attivo",
+   "fonte": "JTn5pqm9ecM#1:14:18 (menu a tendina di comando aperto) + voce 1:14:18",
+   "frame": "frame-0744.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-144",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-223",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Durante la ricerca dal vivo del comando giusto, il menu 'Slash Commands' di Claude Code mostra quattro comandi reali disponibili nel progetto: /review, /reverse-prompting, /security-review, /simplify. Il relatore cercava 'security audit' ma corregge dal vivo: il comando che esiste davvero è /security-review, non un ipotetico security audit.",
+   "ancora": "/security-review` (riga evidenziata con sfondo blu, selezionata)",
+   "fonte": "JTn5pqm9ecM#108:30 (Claude Code, menu a tendina Slash Commands) + voce 108:30-108:36",
+   "frame": "frame-1086.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-218",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-018",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Per avviare Claude Code da terminale si usa il comando `claude --dangerously-skip-permissions`, che il relatore chiama scherzosamente 'yolo' (you only live once); al primo avvio in una cartella, Claude Code chiede conferma esplicita che ci si fidi di quella cartella prima di poter leggere, modificare ed eseguire i file al suo interno.",
+   "ancora": "yolo ... Claude Code'll be able to read, edit, and execute files here. ... 1. Yes, I trust this folder",
+   "fonte": "DI5aWJiFAt8#6:36 (terminale, avvio Claude Code) + voce 6:36-6:42",
+   "frame": "frame-0067.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-011",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-019",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Nell'interfaccia a terminale di Claude Code, il modello Opus 4.6 viene mostrato con una finestra di contesto dichiarata di 1 milione di token ('Opus 4.6 (1M context)').",
+   "ancora": "Opus 4.6 (1M context) with medium effort · Claude Max ... 0 / 1000000 tokens",
+   "fonte": "DI5aWJiFAt8#6:42 (interfaccia Claude Code avviata da terminale) + voce 6:42-6:48",
+   "frame": "frame-0068.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-011",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-020",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Su macOS, l'app desktop di Claude salva i propri file di configurazione (es. claude_desktop_config.json, bridge-state.json) dentro la cartella nascosta ~/Library/Application Support/Claude.",
+   "ancora": "Claude — Today at 09:38 ... claude_desktop_config.json — Today at 09:32 — 559 bytes — JSON document",
+   "fonte": "DI5aWJiFAt8#8:06 (Finder, cartella Application Support/Claude) + voce 8:06-8:36",
+   "frame": "frame-0082.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-012",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-022",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Le istruzioni e i file di configurazione di Claude Code (CLAUDE.md, settings.json, projects, plugins, tasks, todos) risiedono nella cartella nascosta ~/.claude nella home dell'utente, un percorso distinto da quello usato dalla sandbox di Cowork.",
+   "ancora": "CLAUDE.md — Yesterday at 20:16 — 4 KB ... vivono in due parti diverse del nostro computer",
+   "fonte": "DI5aWJiFAt8#9:36 (Finder, cartella nascosta .claude) + voce 9:36-9:48",
+   "frame": "frame-0097.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-011",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-100",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-100",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "In un progetto locale di Claude Code coesistono sia una cartella nascosta '.claude' sia un file 'CLAUDE.md' visibile in chiaro nella root del progetto.",
+   "ancora": "vedete che qui ho il mio cloud.",
+   "fonte": "DI5aWJiFAt8#53:54 (Finder, cartella Social Media Manager) + voce 53:54",
+   "frame": "frame-0540.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-101",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Un file CLAUDE.md di progetto ben scritto tipicamente si organizza in sezioni: WHAT (cosa fa il progetto, stack tecnologico, struttura cartelle), HOW (comandi per eseguire, testare, installare dipendenze) e WHY (motivazioni delle scelte architetturali, pattern da seguire).",
+   "ancora": "## WHAT ... ## HOW ... ## WHY",
+   "fonte": "DI5aWJiFAt8#54:12 (editor, CLAUDE.md sezioni WHAT/HOW/WHY) + voce 54:06-54:18",
+   "frame": "frame-0543.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-103",
+     "tipo": "alternativa-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-104",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Regola operativa personale di editing: quando si modifica un file, prima leggerlo per intero, riscriverlo mentalmente, poi eseguire un'unica scrittura complessiva — mai modificarlo riga per riga con più chiamate sequenziali separate.",
+   "ancora": "When editing a file: read it fully, rewrite in your head, then do one single write — never edit line by line across multiple sequential calls",
+   "fonte": "DI5aWJiFAt8#54:42 (Global Claude.md, sezione Reasoning Rules) + voce 55:12",
+   "frame": "frame-0548.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-103",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-121",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Google Antigravity è un IDE (integrated development environment) potenziato da AI sviluppato da Google, con data di rilascio iniziale 18 novembre 2025 e licenza proprietaria, pensato per dare priorità agli agenti AI nello sviluppo software.",
+   "ancora": "Google Antigravity is an AI-powered integrated development environment developed by Google... Initial release date: November 18, 2025... License: Proprietary software",
+   "fonte": "NmoOZVTrTXA#53:24 (Google Knowledge Panel per \"Google Antigravity\") + voce 53:19",
+   "frame": "frame-0535.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-122",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Antigravity si scarica dal sito ufficiale antigravity.google, che offre un pulsante di download dedicato per MacOS oltre a sezioni Product, Use Cases, Pricing, Blog, Resources.",
+   "ancora": "Experience liftoff with the next-generation IDE ... Download for MacOS",
+   "fonte": "NmoOZVTrTXA#53:30 (homepage antigravity.google) + voce 53:19-53:31",
+   "frame": "frame-0536.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-121",
+     "tipo": "parte-di",
+     "perche": "descrive dove e come scaricare il prodotto appena definito"
+    },
+    {
+     "verso": "KA-123",
+     "tipo": "precede",
+     "perche": "dopo la pagina di download di Antigravity, il confronto si sposta sul costo di Claude Code"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-123",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "A differenza di Antigravity, che offre un margine d'uso gratuito per provare il modello, l'utilizzo di Claude Code richiede un abbonamento a pagamento: è l'unica vera differenza da considerare prima di iniziare a usarlo rispetto ad Antigravity.",
+   "ancora": "per quanto riguarda invece Cloud una sola cosa avete da considerare... mentre anti-gravity avrete diciamo un intervallo per giocare con il modello gratuitamente",
+   "fonte": "NmoOZVTrTXA#53:36 (ricerca Google \"claude\" prima di aprire la pagina prezzi) + voce 53:31-53:50",
+   "frame": "frame-0537.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-124",
+     "tipo": "precede",
+     "perche": "subito dopo aver detto che Claude richiede un abbonamento, si apre la pagina prezzi ufficiale"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-124",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Sul sito ufficiale claude.com/pricing, il piano Free costa $0, il piano Pro costa $17 al mese con abbonamento annuale (o $20 al mese se fatturato mensilmente), e il piano Max parte da $100 al mese.",
+   "ancora": "Free — $0 — Free for everyone ... Pro — $17 — Per month with annual subscription discount... $20 if billed monthly ... Max — From $100 — Per month",
+   "fonte": "NmoOZVTrTXA#54:00 (pagina claude.com/pricing) + voce 54:01",
+   "frame": "frame-0541.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-125",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Solo i piani a pagamento Pro e Max di Claude includono l'accesso a Claude Code (e a \"Cowork\"): il piano Free non lo include, quindi senza un abbonamento Pro o superiore non è possibile utilizzare Claude Code.",
+   "ancora": "la cloud la tier pro e la tier max sono quelle che vi permettono di utilizzarlo... se non pagate l'abbonamento questa cosa qui... non potete utilizzarla / Includes Claude Code and Cowork",
+   "fonte": "NmoOZVTrTXA#54:00 (pagina claude.com/pricing, elenco funzionalità del piano Pro) + voce 54:01",
+   "frame": "frame-0541.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-124",
+     "tipo": "parte-di",
+     "perche": "specifica quale dei tre piani di prezzo dà accesso a Claude Code"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-126",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il piano Max di Claude offre, rispetto al piano Pro, la scelta tra 5 volte o 20 volte più utilizzo, limiti di output più alti per tutti i task, accesso anticipato alle funzionalità avanzate e accesso prioritario nelle fasce orarie di alto traffico.",
+   "ancora": "Choose 5x or 20x more usage than Pro* ... Higher output limits for all tasks ... Priority access at high traffic times",
+   "fonte": "NmoOZVTrTXA#54:00 (pagina claude.com/pricing, elenco funzionalità del piano Max) + voce 54:01",
+   "frame": "frame-0541.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-124",
+     "tipo": "parte-di",
+     "perche": "dettaglia i vantaggi aggiuntivi del piano Max rispetto ai prezzi già indicati"
+    },
+    {
+     "verso": "KA-127",
+     "tipo": "precede",
+     "perche": "conclusa la pagina prezzi Claude, si torna su Antigravity con la sua schermata di benvenuto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-127",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "La schermata di benvenuto di Antigravity offre tre punti di ingresso per iniziare un progetto — \"Open Folder\", \"Open Agent Manager\", \"Clone Repository\" — più un elenco \"Workspaces\" dei progetti già aperti in precedenza, organizzati per cartella sul computer.",
+   "ancora": "Open Folder ... Open Agent Manager ... Clone Repository ... tutti i progetti dentro Antigravity... vivono dentro una cartella",
+   "fonte": "NmoOZVTrTXA#54:24 (schermata di benvenuto di Antigravity) + voce 54:22",
+   "frame": "frame-0545.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-128",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Nel pannello \"Agent\" della schermata di benvenuto di Antigravity, il modello di default preimpostato è Claude Sonnet, con una modalità \"Planning\" selezionabile accanto alla scelta del modello.",
+   "ancora": "menu a tendina \"Planning\" e \"Claude So...\" (Claude Sonnet)",
+   "fonte": "NmoOZVTrTXA#54:24 (pannello Agent di Antigravity) + voce 54:22",
+   "frame": "frame-0545.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-127",
+     "tipo": "parte-di",
+     "perche": "è un dettaglio del pannello Agent nella stessa schermata di benvenuto"
+    },
+    {
+     "verso": "KA-129",
+     "tipo": "precede",
+     "perche": "dal pannello Agent della schermata di benvenuto si passa al marketplace delle estensioni"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-129",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Antigravity utilizza di default il marketplace \"Open VSX\" per le estensioni (impostazione modificabile), e al suo interno è disponibile l'estensione ufficiale \"Claude Code for VS Code\" pubblicata da Anthropic.",
+   "ancora": "By default, Antigravity uses Open VSX as a marketplace. This can be changed in Antigravity settings. / Claude Code for VS Code, editore Anthropic",
+   "fonte": "NmoOZVTrTXA#55:18 (pannello Extensions Marketplace di Antigravity) + voce 55:15-55:22",
+   "frame": "frame-0554.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-130",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "Per usare Claude Code dentro un IDE come Antigravity (basato su VS Code), si cerca \"Claude Code\" nel marketplace delle estensioni e la si installa: al termine dell'installazione appare un'icona dedicata nell'editor per aprire il pannello di chat.",
+   "ancora": "estensioni cloud code ora per utilizzarlo avrete questa iconcina qui quindi basta che la premiate",
+   "fonte": "NmoOZVTrTXA#55:24-55:36 (installazione dell'estensione \"Claude Code for VS Code\") + voce 55:22-55:34",
+   "frame": "frame-0555.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-129",
+     "tipo": "applica",
+     "perche": "descrive l'azione pratica di installazione dell'estensione appena definita"
+    },
+    {
+     "verso": "KA-133",
+     "tipo": "precede",
+     "perche": "installata l'estensione Claude Code, il primo passo pratico e' aprire un progetto e il suo pannello"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-131",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Su Mac, la scorciatoia da tastiera per aprire il pannello di Claude Code dentro l'estensione VS Code/Antigravity è Command+Shift+Esc.",
+   "ancora": "oppure se avete un Mac è command shift ed esc la shortcut che potete utilizzare",
+   "fonte": "NmoOZVTrTXA#55:36 (pagina estensione \"Claude Code for VS Code\") + voce 55:34",
+   "frame": "frame-0557.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-130",
+     "tipo": "alternativa-a",
+     "perche": "è un modo alternativo al click sull'icona per aprire lo stesso pannello"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-132",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Al momento della registrazione del corso, l'estensione ufficiale \"Claude Code for VS Code\" (versione 2.1.76) contava circa 5,38 milioni di installazioni, era stata pubblicata 7 mesi prima con un ultimo rilascio risalente a 3 giorni prima, per una dimensione di circa 228,53MB.",
+   "ancora": "5,378,633 ... Version: 2.1.76 ... Published: 7 months ago ... Last Released: 3 days ago ... Size: 228.53MB",
+   "fonte": "NmoOZVTrTXA#55:24 (pagina dettaglio estensione \"Claude Code for VS Code\") + voce 55:22",
+   "frame": "frame-0555.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-129",
+     "tipo": "quantifica",
+     "perche": "fornisce i numeri precisi dell'estensione già definita"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-133",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Il primo passo pratico per costruire un agente vocale end-to-end con Claude Code è impostare un progetto dedicato: aprire una cartella di lavoro e, al suo interno, il pannello di chat di Claude Code, prima ancora di scegliere quale piattaforma vocale (n8n, VAPI, ecc.) utilizzare.",
+   "ancora": "ora sostanzialmente cominciamo con l'impostare il progetto ... prima cosa è la piattaforma che noi andiamo ad utilizzare",
+   "fonte": "NmoOZVTrTXA#55:42 (primo pannello Claude Code aperto in Antigravity) + voce 55:41-55:49",
+   "frame": "frame-0558.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-135",
+     "tipo": "precede",
+     "perche": "aperto il pannello di Claude Code, si passa subito al login sulla piattaforma scelta come sponda, n8n"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-134",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Nella barra di input della chat di Claude Code (anche nella variante estensione VS Code/Antigravity) è presente un interruttore \"Bypass permissions\" che, se attivato, permette all'agente di eseguire azioni senza chiedere conferma ad ogni passo.",
+   "ancora": "interruttore rosso \"Bypass permissions\"",
+   "fonte": "NmoOZVTrTXA#55:48 (barra di input di Claude Code in Antigravity) + osservazione visiva",
+   "frame": "frame-0559.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-167",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Nell'interfaccia di Claude Code, il controllo in basso a destra della barra di input può alternare tra due modalità: \"Bypass permissions\" (esegue subito) e \"Plan mode\" (elabora prima un piano, consigliato per richieste che richiedono un ragionamento più corposo).",
+   "ancora": "il pulsante in basso a destra è ora cambiato da Bypass permissions a Plan mode ... deve andare ovviamente in modalità plan perché richiede un certo tipo di effort",
+   "fonte": "NmoOZVTrTXA#67:24 (toggle passato da Bypass permissions a Plan mode) + voce 66:54",
+   "frame": "frame-0675.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-134",
+     "tipo": "alternativa-a",
+     "perche": "è l'altra modalità dello stesso controllo già descritto per Bypass permissions"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-175",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Quando riceve un compito, Claude Code esplora autonomamente la struttura del progetto (liste di file, ricerca di file specifici, lettura di CLAUDE.md) per orientarsi, invece di richiedere che gli vengano indicati manualmente tutti i percorsi esatti.",
+   "ancora": "Agent: Explore n8n.md and project — Plan: 1. List all files... 2. Read the file n8n.md (search for it if not at root)",
+   "fonte": "NmoOZVTrTXA#71:00 (sequenza \"Explore n8n.md and project\" con comandi find/ls) + voce 70:24",
+   "frame": "frame-0711.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-176",
+     "tipo": "precede",
+     "perche": "l'esplorazione autonoma del progetto precede la creazione del file di configurazione MCP"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-191",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Conviene iniziare una nuova sessione pulita di Claude Code (invece di continuare la stessa conversazione lunga) quando si passa a un compito nuovo e scorrelato (es. da n8n a VAPI), per azzerare il consumo di token accumulato dalla conversazione precedente.",
+   "ancora": "pulita, quindi niente più token usage che vi ho dicendo e ora semplicemente procedo in questo modo",
+   "fonte": "NmoOZVTrTXA#76:48 (nuova sessione Claude Code \"Untitled\") + voce 76:35",
+   "frame": "frame-0769.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-192",
+     "tipo": "precede",
+     "perche": "aperta la nuova sessione per VAPI, la dettatura del prompt riparte con whisper flow"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-198",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Prima di rinominare un file referenziato altrove nel progetto, un comportamento sicuro è cercare con grep tutti i riferimenti al suo nome in ogni documento (inclusi i file di istruzioni e di memoria) per verificare quali vadano aggiornati, prima di eseguire la rinomina effettiva.",
+   "ancora": "Let me find any references to n8n.md first. ... No references to update in the project docs. Now let me rename the file.",
+   "fonte": "NmoOZVTrTXA#81:36-81:48 (sequenza Grep \"n8n\\.md\" prima del comando \"mv\") + voce 81:09",
+   "frame": "frame-0819.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-201",
+     "tipo": "precede",
+     "perche": "rinominato il file secondo la convenzione caps, il passo successivo e' pianificare la struttura di vapi.md"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-199",
+   "peso": "contesto",
+   "tipo": "principio",
+   "contenuto": "Per convenzione, i file markdown di istruzioni/riferimento di un progetto vengono spesso scritti con il nome tutto in maiuscolo (es. N8N.md, VAPI.md, CLAUDE.md), anche solo per renderli immediatamente riconoscibili a chiunque entri nel progetto.",
+   "ancora": "generalmente questi file.md sono scritti in caps",
+   "fonte": "NmoOZVTrTXA#81:54 + voce 81:37 (e scena 313, 81:09: \"generalmente questi file.md sono scritti in caps\")",
+   "frame": "frame-0820.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-198",
+     "tipo": "motiva",
+     "perche": "è la convenzione che giustifica la rinomina appena eseguita con verifica preventiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-200",
+   "peso": "contesto",
+   "tipo": "avvertimento",
+   "contenuto": "Quando un agente come Claude Code recupera automaticamente pagine di documentazione esterna (WebFetch), alcuni URL possono restituire errore 404 se la pagina è stata spostata o rinominata dal fornitore: è normale dover verificare quali fetch sono realmente andati a buon fine prima di fidarsi del risultato.",
+   "ancora": "Web Fetch https://docs.vapi.ai/quickstart/phone/inbound — Request failed with status code 404",
+   "fonte": "NmoOZVTrTXA#81:54 (tentativi \"Web Fetch\" con esito \"Request failed with status code 404\" su più URL vapi.ai) + osservazione schermo",
+   "frame": "frame-0820.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-220",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Il comando \"/init\" dentro Claude Code analizza automaticamente l'intero progetto (file .md esistenti, file di configurazione, cartelle) e genera in autonomia il file CLAUDE.md alla radice, come alternativa più rapida a scrivere un mega-prompt manuale.",
+   "ancora": "o facciamo un mega prompt o facciamo slash init e quindi questo sostanzialmente permetterà di crearci in automatico il nostro file che si chiama appunto cloud.md",
+   "fonte": "NmoOZVTrTXA#94:42 (comando \"/init\" digitato, sequenza di analisi automatica del progetto) + voce 94:10",
+   "frame": "frame-0948.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-221",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "Durante l'analisi automatica del progetto con /init, Claude Code può rilevare e segnalare da solo un problema di sicurezza reale non richiesto esplicitamente: nel caso osservato, una API key n8n presente in chiaro sia nel file .env sia in .claude/settings.json, con la raccomandazione di aggiungere .env a .gitignore e di sostituire la chiave in settings.json con un riferimento a variabile d'ambiente invece del valore diretto.",
+   "ancora": "Security warning: Your .env file and .claude/settings.json both contain your n8n API key in plain text. The .env should be added to .gitignore if not already, and the API key should be removed from settings.json (use environment variable references instead).",
+   "fonte": "NmoOZVTrTXA#95:06 (output di /init: \"Security warning: Your .env file and .claude/settings.json both contain your n8n API key in plain text...\") + osservazione schermo (non menzionato a voce)",
+   "frame": "frame-0952.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "parte-di",
+     "perche": "è un effetto collaterale osservato durante la stessa esecuzione di /init"
+    },
+    {
+     "verso": "KA-174",
+     "tipo": "applica",
+     "perche": "applica la stessa convenzione .env già definita, notando che qui non viene rispettata del tutto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-222",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il file CLAUDE.md generato da /init per questo progetto si organizza in tre macro-sezioni: \"WHAT\" (cos'è il progetto, lo stack tecnico, la struttura dei file), \"HOW\" (come costruire un agente vocale, come funzionano i workflow n8n, i default di configurazione voce italiana), \"WHY\" (le insidie tecniche critiche da conoscere).",
+   "ancora": "## WHAT ... ## HOW ... ## WHY / abbiamo il what, how e why",
+   "fonte": "NmoOZVTrTXA#95:12-95:36 (CLAUDE.md, sezioni ## WHAT / ## HOW / ## WHY) + voce 95:02, 95:34",
+   "frame": "frame-0953.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "esempio-di",
+     "perche": "è il risultato concreto generato dal comando /init in questo progetto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-227",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il file CLAUDE.md generato automaticamente da /init si apre sempre con una riga di intestazione standard che ne dichiara lo scopo: fornire indicazioni a Claude Code quando lavora con il codice in quel repository.",
+   "ancora": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+   "fonte": "NmoOZVTrTXA#95:12 (CLAUDE.md, prima riga del file) + osservazione schermo",
+   "frame": "frame-0953.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "parte-di",
+     "perche": "è l'intestazione standard prodotta da ogni esecuzione di /init"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-242",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Ricevuto un prompt complesso, un assistente di coding come Claude Code esplora autonomamente il filesystem del progetto (comandi find/glob) per individuare i file di documentazione gia' presenti, prima di iniziare a pianificare la soluzione.",
+   "ancora": "find ... -name \"VOICE_AGENT.md\" -o -name \"VAPI.md\" ... Glob pattern: \"**/conoscenza*\"",
+   "fonte": "NmoOZVTrTXA#103:42 (log azioni automatiche dopo invio prompt) + voce 01:43:40",
+   "frame": "frame-1038.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-244",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-243",
+     "tipo": "precede",
+     "perche": "dopo aver visto Claude esplorare il progetto, arriva la riflessione sul valore di un prompt dettagliato dato una sola volta"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-244",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Prima di implementare un progetto complesso, un assistente di coding in 'plan mode' presenta prima un piano scritto da rivedere, con opzioni tipo 'accetta e auto-approva ogni modifica successiva', 'accetta ma approva ogni modifica manualmente' o 'continua a pianificare'.",
+   "ancora": "Accept this plan? 1 Yes, and auto-accept ... 2 Yes, and manually approve edits ... 3 No, keep planning",
+   "fonte": "NmoOZVTrTXA#104:24 (piano generato, dialogo Accept this plan?) + voce 01:44:28",
+   "frame": "frame-1045.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-263",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-307",
+     "tipo": "alternativa-a",
+     "perche": "lo stesso meccanismo di piano-da-approvare viene riusato piu' avanti anche per un bugfix"
+    },
+    {
+     "verso": "KA-245",
+     "tipo": "precede",
+     "perche": "mentre si rivede il piano, il file .env viene aperto nell'editor ed espone le chiavi"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-245",
+   "peso": "contesto",
+   "tipo": "avvertimento",
+   "contenuto": "Durante lo sviluppo in diretta, aprire il file .env nell'editor puo' esporre in chiaro sullo schermo chiavi API reali (es. chiave privata e pubblica VAPI): un rischio di esposizione accidentale a cui prestare attenzione quando si condivide lo schermo o si registra.",
+   "ancora": "Private vapi: ... public vapi ...",
+   "fonte": "NmoOZVTrTXA#104:24 (file .env aperto nell'Explorer) + voce 01:44:28",
+   "frame": "frame-1045.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-272",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-265",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Un assistente di coding come Claude Code offre piu' modalita' di autonomia selezionabili durante il lavoro: 'Ask before edits' (chiede conferma per ogni modifica), 'Edit automatically' (modifica da solo), 'Plan mode' (presenta un piano prima di agire), 'Bypass permissions' (nessuna richiesta di permesso), oltre a un controllo di livello di ragionamento ('Effort').",
+   "ancora": "Ask before edits ... Edit automatically ... Plan mode ... Bypass permissions ... Effort (Medium)",
+   "fonte": "NmoOZVTrTXA#105:54 (menu Modes in Claude Code) + voce 01:45:34",
+   "frame": "frame-1061.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-266",
+     "tipo": "precede",
+     "perche": "scelta la modalita' di lavoro, arriva la richiesta di autorizzare Google Auth"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-267",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Un assistente di coding traccia l'avanzamento di un lavoro multi-step con una todo list aggiornata in tempo reale: voci completate spuntate e barrate, la voce corrente evidenziata, le voci future ancora vuote.",
+   "ancora": "Update Todos ... Salvare VAPI keys in .env ... Costruire WF4: Reschedule Appointment in n8n",
+   "fonte": "NmoOZVTrTXA#106:12 / 107:18 (Update Todos) + voce 01:46:10",
+   "frame": "frame-1063.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-268",
+     "tipo": "precede",
+     "perche": "aggiornata la todo list, si passa ad archiviare le configurazioni residue di progetti precedenti"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-272",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Durante lo sviluppo dal vivo di un'integrazione con piu' servizi esterni, e' molto facile che segreti reali (chiavi API VAPI, API key n8n in formato JWT, id di Google Sheet, id di credenziali, id dell'assistant) compaiano in chiaro sullo schermo piu' volte: vanno sempre trattati come dati sensibili da non condividere ne' trascrivere.",
+   "ancora": "⚠️ valore NON trascritto — segreto di terzi",
+   "fonte": "NmoOZVTrTXA#107:06 / 119:18 / 120:36 (chiavi/token visibili in piu' scene) + voce 01:47:00",
+   "frame": "frame-1072.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

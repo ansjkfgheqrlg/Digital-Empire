@@ -1,0 +1,478 @@
+{
+ "capitolo": "IV.2",
+ "parte": "IV.2",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Il fulfillment: come si consegna davvero",
+ "libro": "IV",
+ "libro_titolo": "Consegnare e scalare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "8Pf7d57Q0Jk::KA-02",
+  "8Pf7d57Q0Jk::KA-04",
+  "8Pf7d57Q0Jk::KA-05",
+  "8Pf7d57Q0Jk::KA-06",
+  "8Pf7d57Q0Jk::KA-07",
+  "8Pf7d57Q0Jk::KA-08",
+  "8Pf7d57Q0Jk::KA-09",
+  "8Pf7d57Q0Jk::KA-10",
+  "8Pf7d57Q0Jk::KA-11",
+  "8Pf7d57Q0Jk::KA-12",
+  "cs2online-bonus-02::KA-01",
+  "cs2online-bonus-02::KA-02",
+  "cs2online-lezione-16::KA-01",
+  "cs2online-lezione-16::KA-02",
+  "max17-v02-beggiato-team::KA-024",
+  "max17-v02-beggiato-team::KA-067",
+  "max17-v17-beggiato-agenzia::KA-020",
+  "max17-v17-beggiato-agenzia::KA-022",
+  "max17-v17-beggiato-agenzia::KA-026",
+  "max18-v08-DI5aWJiFAt8::KA-046",
+  "max18-v08-DI5aWJiFAt8::KA-047",
+  "max18-v08-DI5aWJiFAt8::KA-048",
+  "max18-v08-DI5aWJiFAt8::KA-049"
+ ],
+ "fonti_integrali": {
+  "8Pf7d57Q0Jk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/8Pf7d57Q0Jk\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\8Pf7d57Q0Jk\\contenuto-integrale.md"
+  ],
+  "cs2online-bonus-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-02\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-16\\contenuto-integrale.md"
+  ],
+  "max17-v02-beggiato-team": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\video-analysis.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "8Pf7d57Q0Jk::KA-02",
+   "peso": "portante",
+   "tipo": "Caso studio / ROAS reale",
+   "contenuto": "Vasco: 1 videochiamata, 2 call fissate (1 in trattativa, 1 chiusa), ~€100 spesi in ads per un cliente che vale €1500 - ROAS 'di tipo 15'. La domanda giusta e' quanto genera per euro speso, non quanto si e' speso in assoluto.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~00:30",
+   "frame": "frame-001",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-02",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~00:30"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-04",
+   "peso": "portante",
+   "tipo": "Framework / 3 categorie ads",
+   "contenuto": "Framework: Esperimento (nuovi format/angle, guarda i dati, spegni se non converte), Evolvo (ad validati, si investe di piu'), Awareness (low-budget €5-10/gg su custom/lookalike audience, sempre attivo, obiettivo brand association non conversione diretta).",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~02:45",
+   "frame": "frame-100",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-04",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~02:45"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-05",
+   "peso": "supporto",
+   "tipo": "Metodo / Content continuo",
+   "contenuto": "Errore comune: lanciare un ad una volta e aspettarsi che funzioni per un mese. Approccio corretto: trattare le ads come contenuto organico continuo, aggiungendo materiale ogni giorno - permette di operare anche a budget bassi.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~04:00",
+   "frame": "",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-05",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~04:00"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-06",
+   "peso": "supporto",
+   "tipo": "Strategia / Brand association",
+   "contenuto": "Obiettivo awareness: far associare automaticamente il volto/brand a una categoria specifica per esposizione ripetuta - Andrei cita se stesso come esempio verificabile (faccia = copywriting).",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~04:30",
+   "frame": "",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-06",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~04:30"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-07",
+   "peso": "portante",
+   "tipo": "Framework / Targeting classico vs moderno",
+   "contenuto": "Mostrato su slide: classico = 'settare cose' (interessi/demografiche/comportamenti) + 'tue fonti' (Pixel, customer list). Moderno (poco discusso in Italia) = content-based: il contenuto stesso della creativa (parole, hook 'se sei X') fa targetizzare la piattaforma, funziona anche a livello di puro copy.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~06:10",
+   "frame": "frame-150",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-07",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~06:10"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-08",
+   "peso": "portante",
+   "tipo": "Metodo / Scaling creativo con variabili",
+   "contenuto": "Tecnica B2B locale: costruire decine di versioni dello stesso ad sostituendo variabili nel hook ('Se sei imprenditore con [N] dipendenti nella provincia di [X]') per ogni combinazione rilevante - fino a 50+ versioni, iper-specificita' percepita senza inventare concept diversi da zero.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~07:10",
+   "frame": "frame-200",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-08",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~07:10"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-09",
+   "peso": "supporto",
+   "tipo": "Metodo / Cross-pollination settori adiacenti",
+   "contenuto": "Per trovare nuovi angle senza dipendere dai competitor diretti (che si copiano a vicenda), prendere pattern da un settore diverso ma familiare (Andrei: fitness->copywriting) - differenzia dal mercato omogeneo.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~08:00",
+   "frame": "",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-09",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~08:00"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-10",
+   "peso": "portante",
+   "tipo": "Regola operativa / Criterio spegnimento ad",
+   "contenuto": "Vasco spegneva ad dopo soglia fissa di spesa (€20) indipendentemente dal ritorno. Regola corretta: se un ad ha generato €1500, la spesa nominale accumulata e' irrilevante - unico criterio e' il ritorno generato, non un tetto arbitrario.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~09:20",
+   "frame": "frame-300",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-10",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~09:20"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-11",
+   "peso": "supporto",
+   "tipo": "Regola operativa / Coerenza filosofia",
+   "contenuto": "Scegliere UNA filosofia/metodo e restarci fedeli invece di mescolare tattiche di guru diversi contemporaneamente - la causa di fallimento piu' comune e' applicare due filosofie contrastanti insieme, che confonde l'attribuzione dei risultati.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~09:40",
+   "frame": "",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-11",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~09:40"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-12",
+   "peso": "portante",
+   "tipo": "Framework / Gerarchia Strategia-Sottostrategia-Ad",
+   "contenuto": "Struttura mostrata su documento reale: Strategia (es. Sperimentazione ads) > Sottostrategia (es. Copiare content organici, Scenetta, Tier list) > Ad (esecuzione concreta). Sperimentazione = fase piu' importante perche' cio' che funziona passa a Evoluzione; Awareness resta categoria separata e continua.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~10:00",
+   "frame": "frame-300",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-12",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~10:00"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-01",
+   "peso": "portante",
+   "tipo": "Principio / gestione clienti",
+   "contenuto": "Principio 'percezione e' realta'' applicato alla gestione clienti: se il cliente percepisce inattivita' (anche se il lavoro procede), per lui e' come se fosse vero - touchpoint regolari fondamentali indipendentemente dal carico di lavoro reale svolto.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#panoramica+frame-t2m00s",
+   "frame": "frame-t2m00s-whiteboard-fiducia-touchpoint.jpg",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-01",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#panoramica+frame-t2m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-02",
+   "peso": "supporto",
+   "tipo": "Regola operativa",
+   "contenuto": "Regola operativa: non lasciare mai passare piu' di una settimana senza un touchpoint intenzionale col cliente advertising (email con report).",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-02",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-06",
+   "peso": "contesto",
+   "tipo": "Output verificato",
+   "contenuto": "Output finale verificato: PDF a 7 pagine, brandizzato (copertina 'AP SALES'), struttura professionale (Executive Summary, Confronto Week-over-Week, Analisi per Piattaforma).",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#frame-t13m15s",
+   "frame": "frame-t13m15s-pdf-finale-ap-sales.jpg",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-06",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#frame-t13m15s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-01",
+   "peso": "supporto",
+   "tipo": "Criterio decisionale",
+   "contenuto": "Criterio per scegliere copy 'fast' vs 'perfetto': valutare il budget ads del cliente - se spende 10-20 euro/giorno, non ha senso passare un'ora sui primary text.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-01",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-02",
+   "peso": "supporto",
+   "tipo": "Workflow tecnico multi-tool",
+   "contenuto": "Workflow creative multiple: scaricare video ad (SnapTik.app per TikTok senza watermark) -> unire in timeline unica (DaVinci Resolve) -> esportare SOLO audio in MP3 -> trascrivere con ElevenLabs Speech-to-Text (rimuovendo timestamp/speaker) -> un unico file di contesto invece di trascrivere ogni video separatamente.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#frame-t3m00s+t3m15s",
+   "frame": "frame-t3m00s-davinci-project-thumbnails.jpg",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-02",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#frame-t3m00s+t3m15s"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-024",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Il report da consegnare al cliente è il PDF separato (REPORT-CLIENTE.pdf); l'HTML TUTTI-I-DELIVERABLE è per uso interno/presentazione.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#12:57 e testo header HTML",
+   "frame": "frame-384.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-067",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Metodo Gentes AI in 3 fasi: 1) Audit (call gratuita 30 min), 2) Engineering (build/test/deploy con gli utenti reali), 3) Training & Launch.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#0:48",
+   "frame": "frame-025.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-020",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Flowchart Whimsical reale ('How to Service Your First Automation Client in 2026') per il processo di kickoff/fulfillment: 'Hai gia' fatto questo progetto?' -> SI: 'Customizza un template esistente sulla richiesta del cliente' / NO: 'Costruisci un MVP' -> 'Comincia a costruire' -> 'Templetizza la soluzione' -> 'Aggiorna sui progressi' (con Project Update/Delivery Templates ogni 2 settimane) -> 'Progetto completato' -> 'Test Style Workflow End-to-End (e2e)' -> 'Rafforza i check per i casi limite'.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#3:06-3:14",
+   "frame": "frame-1401.png (3:06:40) e frame-1440.png (3:11:52)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-022",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Policy sulle credenziali cliente: lavorare sempre sulle credenziali/abbonamenti/carta di credito del cliente, mai su credenziali proprie dell'agenzia, per evitare vendor lock-in ('ghigliottina' sul cliente che dipende dal pagamento ricorrente). Preferire riproporre servizi aggiuntivi via email/upsell piuttosto che trattenere l'accesso come leva di ricontrattazione.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#3:05-3:06",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-026",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Workflow di automazione GoHighLevel dimostrato dal vivo: submission form Meta -> crea opportunita' in pipeline -> invia messaggio/email di presa in carico -> chiama l'operatore umano (mai l'AI direttamente al lead, per evitare impatto negativo sul brand) -> se l'operatore preme 1, il sistema chiama il lead e li mette in contatto diretto -> se il lead non risponde, sequenza di nurturing a cicli di 20 minuti con messaggi alternati (SMS/email) fino a un ultimo messaggio di chiusura.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#3:45-3:52",
+   "frame": "frame-1687.png (3:44:48)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-046",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Inseguire con corsi di formazione ogni singola nuova release di uno strumento AI ha scarsa utilità pratica, perché la tecnologia cambia così rapidamente (nel giro di una o due settimane) che la formazione rischierebbe di dover essere ripetuta in continuazione.",
+   "ancora": "due settimane l'azienda deve richiamarvi per fare formazione, no?",
+   "fonte": "DI5aWJiFAt8#25:24 (argomentazione contro la formazione continua) + voce 25:12-25:42",
+   "frame": "frame-0255.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-047",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "La formazione AI davvero utile in azienda non viene fatta prima o durante l'apprendimento dello strumento, ma dopo l'implementazione: non riguarda lo sviluppo/development in sé, ma il processo aziendale in cui lo strumento viene inserito.",
+   "ancora": "NON COME PENSI TU ... formazione, attenzione, non è sul development, ma è sul processo",
+   "fonte": "DI5aWJiFAt8#27:48 (chiusura del capitolo, precisazione su development vs processo) + voce 27:48-28:18",
+   "frame": "frame-0279.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-046",
+     "tipo": "alternativa-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-048",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Il modello in tre passi con cui un consulente AI dovrebbe intervenire in azienda è: (1) mappare il processo esistente, (2) implementare la soluzione AI su quel processo, (3) fare formazione sul processo risultante, non sullo sviluppo tecnico.",
+   "ancora": "1 — MAPPARE PROCESSO, 2 — IMPLEMENTAZIONE, 3 — FORMA[ZIONE]",
+   "fonte": "DI5aWJiFAt8#27:48 (schema a 3 cerchi numerati su Excalidraw) + voce 27:18-27:48",
+   "frame": "frame-0279.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-047",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-049",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Quando cambia la tecnologia sottostante, l'unica cosa che resta stabile e non cambia è il processo aziendale: per questo la formazione ha senso se costruita attorno al processo, non attorno allo strumento del momento.",
+   "ancora": "COSÌ È L'UNICA COSA CHE NON CAMBIA SE CAMBIA TECH?",
+   "fonte": "DI5aWJiFAt8#28:18 (scritta 'COSÌ È L'UNICA COSA CHE NON CAMBIA SE CAMBIA TECH?') + voce 28:18-28:48",
+   "frame": "frame-0284.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-048",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

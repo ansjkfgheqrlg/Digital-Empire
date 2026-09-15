@@ -1,0 +1,252 @@
+{
+ "capitolo": "III.5",
+ "parte": "III.5",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Obiezioni",
+ "libro": "III",
+ "libro_titolo": "Vendere e prezzare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "NydMBZ2nUTE::KA-03",
+  "NydMBZ2nUTE::KA-04",
+  "NydMBZ2nUTE::KA-06",
+  "Pv5uzIxp96U::KA-10",
+  "k_DXsUCIkr8::KA-03",
+  "max17-v10-barron-sales::KA-012",
+  "max17-v10-barron-sales::KA-020",
+  "max17-v10-barron-sales::KA-021",
+  "max18-v09-NmoOZVTrTXA::KA-279",
+  "max18-v09-NmoOZVTrTXA::KA-289"
+ ],
+ "fonti_integrali": {
+  "NydMBZ2nUTE": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/NydMBZ2nUTE\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NydMBZ2nUTE\\contenuto-integrale.md"
+  ],
+  "Pv5uzIxp96U": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Pv5uzIxp96U\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Pv5uzIxp96U\\contenuto-integrale.md"
+  ],
+  "k_DXsUCIkr8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/k_DXsUCIkr8\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\k_DXsUCIkr8\\contenuto-integrale.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "NydMBZ2nUTE::KA-03",
+   "peso": "portante",
+   "tipo": "Vendita / Validazione tramite fiducia implicita",
+   "contenuto": "'Sono certo che riceve un sacco di chiamate come questa, e sono sicuro che sappia distinguere quelle inutili da quelle valide' - valida l'esperienza del prospect invece di contestare il rifiuto, lo colloca implicitamente tra chi sa riconoscere una chiamata valida.",
+   "ancora": "",
+   "fonte": "NydMBZ2nUTE#00:00:15",
+   "frame": "frame-008,009,010",
+   "run": "NydMBZ2nUTE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "NydMBZ2nUTE::KA-03",
+     "run": "NydMBZ2nUTE",
+     "fonte": "NydMBZ2nUTE#00:00:15"
+    }
+   ]
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-04",
+   "peso": "portante",
+   "tipo": "Vendita / Scarsita e riduzione richiesta",
+   "contenuto": "'Siamo una boutique che fa solo poche raccomandazioni l'anno. In questo momento il mio unico obiettivo e' presentarmi' - combina scarsita (selettivita) con riduzione esplicita della posta in gioco per abbassare la resistenza.",
+   "ancora": "",
+   "fonte": "NydMBZ2nUTE#00:00:22",
+   "frame": "frame-011,012,013",
+   "run": "NydMBZ2nUTE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "NydMBZ2nUTE::KA-04",
+     "run": "NydMBZ2nUTE",
+     "fonte": "NydMBZ2nUTE#00:00:22"
+    }
+   ]
+  },
+  {
+   "uid": "NydMBZ2nUTE::KA-06",
+   "peso": "supporto",
+   "tipo": "Vendita / Restringere la richiesta",
+   "contenuto": "'Non vogliamo gestire il suo portafoglio bla bla bla, fare una domanda: che ne dice?' - riduce la richiesta da 'gestire il portafoglio' a 'fare una domanda', stessa logica di KA-04 applicata a un punto diverso della chiamata.",
+   "ancora": "",
+   "fonte": "NydMBZ2nUTE#00:00:34",
+   "frame": "frame-018,019,020,021",
+   "run": "NydMBZ2nUTE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "NydMBZ2nUTE::KA-06",
+     "run": "NydMBZ2nUTE",
+     "fonte": "NydMBZ2nUTE#00:00:34"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-10",
+   "peso": "supporto",
+   "tipo": "Copy / Obiezione principale non gestita",
+   "contenuto": "Il copy spiega COSA fa il servizio ma non gestisce l'obiezione implicita 'perche' dovrei averne bisogno?' - se non scontata per il target, va affrontata esplicitamente.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:12:10",
+   "frame": "frame-400",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-10",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:12:10"
+    }
+   ]
+  },
+  {
+   "uid": "k_DXsUCIkr8::KA-03",
+   "peso": "portante",
+   "tipo": "Vendita / Gestione obiezione - validazione",
+   "contenuto": "Script gestione obiezione 'gia' con un altro broker': valida esplicitamente ('sono pienamente d'accordo, rispondi ottimo, non vogliamo interferire') invece di confutare - distinto dalla controargomentazione aggressiva tipica.",
+   "ancora": "",
+   "fonte": "k_DXsUCIkr8#00:00:19",
+   "frame": "frame-010,011,012",
+   "run": "k_DXsUCIkr8",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "k_DXsUCIkr8::KA-03",
+     "run": "k_DXsUCIkr8",
+     "fonte": "k_DXsUCIkr8#00:00:19"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-012",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "FAQ pre-call, obiezioni pre-gestite: 'Do you actually work with businesses like mine, or is this generic advice?' → risposta basata su Selling Systems Audit personalizzato; 'I could just watch YouTube videos or read a book on sales. Why pay for this?' → risposta su tecnica astratta vs diagnosi specifica del proprio processo.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#14:42",
+   "frame": "frame-442.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-020",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Oltre 1.100 imprenditori seguiti da Will Barron a questo punto della sua carriera.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#02:23",
+   "frame": "frame-071.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-021",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "$1,4 miliardi generati dai clienti che usano i sistemi di vendita di Will Barron.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#02:55",
+   "frame": "frame-093.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-028",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Bio Will Barron: 6 anni vendendo dispositivi medici complessi, 2 service business costruite, oltre 1.000 imprenditori formati, canale YouTube Salesman.com 77.000 iscritti, canale YouTube Will Barron 11.000 iscritti, aiuta oltre 300.000 business al mese ad aumentare il fatturato.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#14:40",
+   "frame": "frame-441.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-279",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Un agente vocale che gestisce prenotazioni non deve mai quotare un prezzo esatto al telefono, anche se lo conosce dalla knowledge base: deve sempre guidare il chiamante verso una visita di valutazione gratuita per avere un preventivo preciso.",
+   "ancora": "Non quotare prezzi al telefono. Sempre guidare verso la prima visita gratuita",
+   "fonte": "NmoOZVTrTXA#109:00 / 113:36 (guardrail nel prompt; verifica dal vivo in chat) + voce 01:48:38",
+   "frame": "frame-1091.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-255",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-289",
+     "tipo": "quantificato-da",
+     "perche": "il comportamento reale in chat conferma che la regola viene rispettata"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-289",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Messo alla prova con insistenza a dare un prezzo esatto, un agente vocale ben istruito continua a rifiutarsi e ripete che il modo piu' preciso per saperlo e' fissare la visita di valutazione gratuita.",
+   "ancora": "Il modo migliore per avere un costo preciso e' fare una visita di valutazione gratuita. Posso fissarla per lei?",
+   "fonte": "NmoOZVTrTXA#113:36 (risposta dell'assistente dopo insistenza) + voce 113:25",
+   "frame": "frame-1137.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-279",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

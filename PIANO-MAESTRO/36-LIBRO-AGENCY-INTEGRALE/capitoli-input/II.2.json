@@ -1,0 +1,355 @@
+{
+ "capitolo": "II.2",
+ "parte": "II.2",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Dove stanno i clienti: canali, liste, scraping",
+ "libro": "II",
+ "libro_titolo": "Trovare clienti",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "IWCHN_mE2Vo::KA-17",
+  "IWCHN_mE2Vo::KA-18",
+  "IWCHN_mE2Vo::KA-19",
+  "max17-v10-barron-sales::KA-004",
+  "max17-v10-barron-sales::KA-016",
+  "max17-v10-barron-sales::KA-023",
+  "max17-v10-barron-sales::KA-034",
+  "max17-v10-barron-sales::KA-035",
+  "max17-v10-barron-sales::KA-037",
+  "max17-v17-beggiato-agenzia::KA-009",
+  "max17-v17-beggiato-agenzia::KA-010",
+  "max17-v17-beggiato-agenzia::KA-011",
+  "max17-v17-beggiato-agenzia::KA-012",
+  "max17-v17-beggiato-agenzia::KA-016",
+  "max17-v17-beggiato-agenzia::KA-018",
+  "max18-v06-JTn5pqm9ecM::KA-043",
+  "max18-v06-JTn5pqm9ecM::KA-044",
+  "max18-v06-JTn5pqm9ecM::KA-047",
+  "max18-v06-JTn5pqm9ecM::KA-056"
+ ],
+ "fonti_integrali": {
+  "IWCHN_mE2Vo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/IWCHN_mE2Vo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\IWCHN_mE2Vo\\contenuto-integrale.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "IWCHN_mE2Vo::KA-17",
+   "peso": "portante",
+   "tipo": "Pattern / Ad Template",
+   "contenuto": "Template Ads Detection: molti SMB (specialmente palestre) prendono un template, inseriscono video proprio, usano stessa copy structure. 'Hanno preso un template hanno messo il video' = individua business SENZA copywriter professionista = hot prospect per servizi copy.",
+   "ancora": "",
+   "fonte": "IWCHN_mE2Vo#00:38:49",
+   "frame": "frame-1162",
+   "run": "IWCHN_mE2Vo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IWCHN_mE2Vo::KA-17",
+     "run": "IWCHN_mE2Vo",
+     "fonte": "IWCHN_mE2Vo#00:38:49"
+    }
+   ]
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-18",
+   "peso": "supporto",
+   "tipo": "Analisi / Ad Spend",
+   "contenuto": "EU Reach 25,000 per ad di palestra/settore locale = investimento significativo. Andrei: 'dovrebbero averci investito di piu'. Alto reach + bassa qualita copy = massimo margine di miglioramento per copywriter. Usa questo come argomento di vendita.",
+   "ancora": "",
+   "fonte": "IWCHN_mE2Vo#00:38:51",
+   "frame": "frame-1162",
+   "run": "IWCHN_mE2Vo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IWCHN_mE2Vo::KA-18",
+     "run": "IWCHN_mE2Vo",
+     "fonte": "IWCHN_mE2Vo#00:38:51"
+    }
+   ]
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-19",
+   "peso": "supporto",
+   "tipo": "Pattern / A/B Test",
+   "contenuto": "La Palestra ssd a rl: stesso testo in due versioni (Maestro Lucio Cuomo, stessa struttura 'aumentare forza resistenza dal 17 settembre') → A/B test sulla creative visuale, NON sulla copy. Brand non testa la copy = enorme opportunita di ottimizzazione.",
+   "ancora": "",
+   "fonte": "IWCHN_mE2Vo#00:38:44",
+   "frame": "frame-1162",
+   "run": "IWCHN_mE2Vo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IWCHN_mE2Vo::KA-19",
+     "run": "IWCHN_mE2Vo",
+     "fonte": "IWCHN_mE2Vo#00:38:44"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-004",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Diagramma Venn a 3 cerchi sovrapposti: 'Right Person' (evidenziato in blu nel frame), 'Right Timing', 'Right Message' — le tre condizioni per riempire il calendario di meeting ogni mese.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#09:16",
+   "frame": "frame-279.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-016",
+   "peso": "portante",
+   "tipo": "fase",
+   "contenuto": "FASE 2 — Meetings: si costruisce un processo ripetibile di lead generation mirato (Right Person + Right Timing + Right Message), con outreach personalizzato e automazione, il cui unico obiettivo per touchpoint è ottenere un meeting prenotato, mai il pitch del servizio.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#07:14",
+   "frame": "frame-224.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-023",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Soglia di prezzo servizio ($5.000-$10.000+) sopra la quale evitare l'outreach di massa 'AI slop' e usare invece messaggi mirati e personalizzati.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#09:29",
+   "frame": "frame-297.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-034",
+   "peso": "supporto",
+   "tipo": "errore",
+   "contenuto": "Lead generation reattiva e ad-hoc: aspettare i referral, mandare DM a caso su LinkedIn quando il calendario si svuota, affidare le ads a 'qualche giovane inesperto assunto a caso'.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#07:39",
+   "frame": "frame-241.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-035",
+   "peso": "supporto",
+   "tipo": "errore",
+   "contenuto": "Attribuire il problema di vendita alla mancanza di tempo, quando la causa reale è la mancanza di un sistema di vendita.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#02:39",
+   "frame": "frame-081.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-037",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Ogni touchpoint dell'outreach a freddo ha un solo obiettivo: ottenere un meeting prenotato, mai pitchare il servizio o spiegare i deliverable.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#10:50",
+   "frame": "frame-334.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-009",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Elenco a schermo dei 6 metodi di acquisizione clienti ordinati per facilita'/costo crescente: 1. Warm Network, 2. Upwork, 3. Strategie Cold (DM, Email, Call), 4. Ads, 5. Fiverr, 6. Social Media Posting (Organico).",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#1:24-1:24",
+   "frame": "frame-0631.png (1:24:00)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-010",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Metodo Warm Network: mappare la propria rubrica (amici stretti, familiari, amici di amici, conoscenti) e clusterizzarla per professione (impiegato/imprenditore/studente). Script di contatto: presentazione breve + richiesta se conosce qualcuno interessato a un servizio gratuito in cambio di un testimonial e almeno due referral. Meccanica a catena: 1 cliente gratuito -> 2 referral -> 2 nuovi clienti (prezzo crescente, es. 250-500-1000 euro) -> altri referral.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#1:25-1:45",
+   "frame": "frame-0676.png (1:30:08) e frame-0751.png (1:40:08)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-011",
+   "peso": "supporto",
+   "tipo": "osservazione",
+   "contenuto": "Le persone aiutano molto di piu' a inizio carriera (quando l'imprenditore e' ancora a zero, senza 'invidia sociale') che nella fase intermedia di crescita (quando iniziano a superare economicamente chi li aiuta). Quindi il momento migliore per chiedere aiuto/referral e' l'inizio, non a meta' percorso.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#1:40-1:43",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-012",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Upwork come piattaforma di acquisizione: si applica a job posting reali (es. 'Email Flow Creator for Automation'), costo per candidatura in 'connects' (~1 euro), consiglio di applicare entro 24 ore dalla pubblicazione e di usare prezzi non tondi (es. 13,15$/h) per differenziarsi. Buon ROI per bootstrap iniziale (es. 50 euro investiti per potenzialmente 3-4 progetti).",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#2:36-2:50",
+   "frame": "frame-1235.png (2:44:32)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-016",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Curva comparativa cold vs organico vs ads nel tempo: le strategie cold danno risultati rapidi ma con plateau precoce; il contenuto organico cresce lentamente ma senza plateau evidente nel breve periodo; gli ads, quando validati su contenuto gia' performante, salgono ripidi con alto ROI. Consiglio: outbound cold all'inizio, poi organico, poi ads sui contenuti organici gia' validati (mai ads su contenuto non testato).",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#2:14-2:35",
+   "frame": "frame-1075.png (2:23:12)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-018",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Fiverr come canale inbound: si crea un profilo con servizi a pacchetti (basic/standard/premium), consigliato solo con un brand gia' riconosciuto perche' senza recensioni pregresse il traffico organico della piattaforma non converte.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#2:50-2:53",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-043",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Sintesi del canale \"4. Referral & Partnership\": partner ideali per l'automazione AI sono commercialisti (vedono i P&L dei clienti), business coach, web agency, vendor SaaS (es. programma partner Make.com, HubSpot). Fee structure: 10-15% sul primo contratto; approccio consigliato: mandare un case study e proporre un pilot (\"mandami un cliente, se chiudo e consegno, formalizziamo\"). Target realistico: 10-15 partner attivi che generano il 40-60% della pipeline entro 12 mesi.",
+   "ancora": "Partner ideali per AI automation",
+   "fonte": "JTn5pqm9ecM#27:00 + voce 27:00 ca.",
+   "frame": "frame-0271.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-186",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-044",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Sintesi del canale \"5. Webinar / Workshop\": formato ideale = workshop live da 90 minuti con demo reale di automazione AI. Benchmark citato: 200 iscritti -> 90 presenti -> 12 prenotano una call -> 5 chiudono = €50K da un singolo webinar, riempibile organicamente con LinkedIn + YouTube senza ads. Struttura consigliata: 60 minuti di framework + demo live, poi 15 minuti di risultati before/after, poi 15 minuti di pitch (application-only, posti limitati).",
+   "ancora": "200 iscritti → 90 presenti → 12 prenotate call → 5 chiudono = €50K da un singolo webinar",
+   "fonte": "JTn5pqm9ecM#27:00 + voce 27:00 ca.",
+   "frame": "frame-0271.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-186",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-047",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Risultato della ricerca \"unbiased\": sezione \"5. Paid Ads\" — costo iniziale €3-5K/mese minimo per 3 mesi di test (€9-15K totali), timeline alla profittabilità 3-6 mesi, CPA €1.500-5.000; pro: scalabile, volume controllabile; contro: \"il peggiore canale partendo da zero\" (senza social proof/testimonial le conversioni sono 2-5x peggiori) — \"Consensus unanime: è un tool di scaling, non di partenza.\" \"Verdetto complessivo\": partendo da zero senza media presence, la combinazione più efficace secondo le 5 ricerche è: (1) Cold email + LinkedIn outreach come motore primario nei primi 2-4 mesi — costo bassissimo, volume controllabile, porta i primi 2-3 clienti; (2) Referral come canale parallelo da costruire dal giorno 1 — lento ma con il conversion rate più alto in assoluto (50-70%); (3) Eventi locali come acceleratore di trust se il mercato è geograficamente concentrato; (4) Paid ads solo dopo aver chiuso i primi clienti e avere case study da mostrare.",
+   "ancora": "Partendo da zero senza media presence, la combinazione più efficace secondo le 5 ricerche:",
+   "fonte": "JTn5pqm9ecM#27:24-27:54 + voce 27:24, 27:54",
+   "frame": "frame-0275.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-194",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-193",
+     "tipo": "contraddice"
+    },
+    {
+     "verso": "KA-188",
+     "tipo": "contraddice"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-056",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Roadmap \"da zero\" alternativa proposta dall'agente stesso, dopo aver confessato il bias, in tre fasi: (1) Settimane 1-4: infrastruttura cold email (domini, warm-up) + 2-3 case study scritti (es. Amazon, P&G); (2) Settimane 4-8: cold email attivo (500-1000 email/mese) + identificare 10 partner strategici (commercialisti, business coach); (3) Mesi 3+: i primi clienti chiusi alimentano nuovi case study e referral — solo a questo punto il content marketing ha senso come acceleratore, non come canale primario.",
+   "ancora": "Settimane 1-4: infrastruttura cold email (domini, warmup) + 2-3 case study scritti (Amazon, P&G)",
+   "fonte": "JTn5pqm9ecM#33:18 + voce 33:18",
+   "frame": "frame-0334.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-203",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-205",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

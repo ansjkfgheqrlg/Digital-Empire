@@ -1,0 +1,1740 @@
+{
+ "capitolo": "VI.1",
+ "parte": "VI.1-b",
+ "parte_n": 2,
+ "parti_totali": 2,
+ "titolo": "Copy: le formule che funzionano",
+ "libro": "VI",
+ "libro_titolo": "Contenuto, brand, lanci",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "Pv5uzIxp96U::KA-02",
+  "Pv5uzIxp96U::KA-03",
+  "Pv5uzIxp96U::KA-04",
+  "Pv5uzIxp96U::KA-09",
+  "Pv5uzIxp96U::KA-11",
+  "Pv5uzIxp96U::KA-14",
+  "Pv5uzIxp96U::KA-15",
+  "Pv5uzIxp96U::KA-16",
+  "Pv5uzIxp96U::KA-17",
+  "Pv5uzIxp96U::KA-20",
+  "Pv5uzIxp96U::KA-23",
+  "Pv5uzIxp96U::KA-24",
+  "qOK4WP82Bvo::KA-03",
+  "qOK4WP82Bvo::KA-06",
+  "qOK4WP82Bvo::KA-07",
+  "qOK4WP82Bvo::KA-16",
+  "qOK4WP82Bvo::KA-19",
+  "sTCwYnWmgcQ::KA-001",
+  "sTCwYnWmgcQ::KA-002",
+  "sTCwYnWmgcQ::KA-003",
+  "sTCwYnWmgcQ::KA-005",
+  "sTCwYnWmgcQ::KA-01",
+  "sTCwYnWmgcQ::KA-011",
+  "sTCwYnWmgcQ::KA-02",
+  "sTCwYnWmgcQ::KA-03",
+  "sTCwYnWmgcQ::KA-05",
+  "sTCwYnWmgcQ::KA-11",
+  "lQMO0LdeI2c::KA-06",
+  "lQMO0LdeI2c::KA-09",
+  "lQMO0LdeI2c::KA-10",
+  "lQMO0LdeI2c::KA-12",
+  "lQMO0LdeI2c::KA-13",
+  "lQMO0LdeI2c::KA-17",
+  "lQMO0LdeI2c::KA-23",
+  "lQMO0LdeI2c::KA-28",
+  "max17-v11-roberts-design::KA-042",
+  "max17-v11-roberts-design::KA-043",
+  "max17-v11-roberts-design::KA-044",
+  "max17-v11-roberts-design::KA-046",
+  "max17-v11-roberts-design::KA-047",
+  "max17-v11-roberts-design::KA-048",
+  "max17-v11-roberts-design::KA-049",
+  "3zJpI8-7TW4::KA-02",
+  "3zJpI8-7TW4::KA-04",
+  "3zJpI8-7TW4::KA-05",
+  "3zJpI8-7TW4::KA-06",
+  "3zJpI8-7TW4::KA-07",
+  "3zJpI8-7TW4::KA-08",
+  "3zJpI8-7TW4::KA-09",
+  "VbxTgp_fz8Y::KA-02",
+  "VbxTgp_fz8Y::KA-03",
+  "VbxTgp_fz8Y::KA-04",
+  "VbxTgp_fz8Y::KA-05",
+  "VbxTgp_fz8Y::KA-06",
+  "VbxTgp_fz8Y::KA-07",
+  "VbxTgp_fz8Y::KA-08",
+  "iy13HC9M8z0::KA-07",
+  "iy13HC9M8z0::KA-08",
+  "iy13HC9M8z0::KA-09",
+  "iy13HC9M8z0::KA-20",
+  "outfunnel-lezione-02::KA-01",
+  "outfunnel-lezione-02::KA-02",
+  "outfunnel-lezione-02::KA-03",
+  "outfunnel-lezione-02::KA-04",
+  "outfunnel-lezione-02::KA-05",
+  "outfunnel-lezione-02::KA-06",
+  "nRm7JLsP1bc::KA-02",
+  "nRm7JLsP1bc::KA-03",
+  "nRm7JLsP1bc::KA-04",
+  "nRm7JLsP1bc::KA-05",
+  "wTpfKuHJhOE::KA-01",
+  "wTpfKuHJhOE::KA-03",
+  "wTpfKuHJhOE::KA-04",
+  "wTpfKuHJhOE::KA-05",
+  "IYd-VOngDog::KA-02",
+  "IYd-VOngDog::KA-03",
+  "8Pf7d57Q0Jk::KA-13",
+  "Ahp_6rHSOsU::KA-16",
+  "cs2online-lezione-04::KA-03",
+  "cs2online-lezione-13::KA-12",
+  "max17-v02-beggiato-team::KA-018",
+  "outfunnel-lezione-15::KA-02"
+ ],
+ "fonti_integrali": {
+  "Pv5uzIxp96U": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Pv5uzIxp96U\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Pv5uzIxp96U\\contenuto-integrale.md"
+  ],
+  "qOK4WP82Bvo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/qOK4WP82Bvo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\qOK4WP82Bvo\\contenuto-integrale.md"
+  ],
+  "sTCwYnWmgcQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/memory-empire/knowledge/sTCwYnWmgcQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\sTCwYnWmgcQ\\contenuto-integrale.md"
+  ],
+  "lQMO0LdeI2c": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/lQMO0LdeI2c\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\lQMO0LdeI2c\\contenuto-integrale.md"
+  ],
+  "max17-v11-roberts-design": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\video-analysis.md"
+  ],
+  "3zJpI8-7TW4": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/3zJpI8-7TW4\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\3zJpI8-7TW4\\contenuto-integrale.md"
+  ],
+  "VbxTgp_fz8Y": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/VbxTgp_fz8Y\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\VbxTgp_fz8Y\\contenuto-integrale.md"
+  ],
+  "iy13HC9M8z0": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/iy13HC9M8z0\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\iy13HC9M8z0\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-02\\contenuto-integrale.md"
+  ],
+  "nRm7JLsP1bc": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/nRm7JLsP1bc\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\nRm7JLsP1bc\\contenuto-integrale.md"
+  ],
+  "wTpfKuHJhOE": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/wTpfKuHJhOE\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\wTpfKuHJhOE\\contenuto-integrale.md"
+  ],
+  "IYd-VOngDog": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/IYd-VOngDog\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\IYd-VOngDog\\contenuto-integrale.md"
+  ],
+  "8Pf7d57Q0Jk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/8Pf7d57Q0Jk\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\8Pf7d57Q0Jk\\contenuto-integrale.md"
+  ],
+  "Ahp_6rHSOsU": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Ahp_6rHSOsU\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Ahp_6rHSOsU\\contenuto-integrale.md"
+  ],
+  "_yUzEe29aTQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/_yUzEe29aTQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\_yUzEe29aTQ\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-04": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-04\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-13": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-13\\contenuto-integrale.md"
+  ],
+  "max17-v02-beggiato-team": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\video-analysis.md"
+  ],
+  "outfunnel-lezione-15": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-15\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "Pv5uzIxp96U::KA-02",
+   "peso": "supporto",
+   "tipo": "Copy / Coerenza persona grammaticale",
+   "contenuto": "Il copy alterna seconda persona (tu) e terza persona (lei) nello stesso testo - discordanza che comunica scarsa attenzione o suona poco gentile. La coerenza di persona/registro va mantenuta lungo tutto il copy.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:02:15",
+   "frame": "frame-060",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-02",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:02:15"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern AI-generated",
+   "contenuto": "Un copy in terza persona fredda e formule generiche 'sembra scritto da ChatGPT' - segnale d'allarme quando il testo manca di specificita'. Il copy deve essere comprensibile da chiunque, con eccezioni in base al target.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:03:18",
+   "frame": "frame-060",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-03",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:03:18"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-04",
+   "peso": "supporto",
+   "tipo": "Copy / Credibilita nomi propri",
+   "contenuto": "Se un copy nomina una persona senza contesto (es. 'consulenza con Simone'), funziona solo se il lettore sa gia' chi e' - altrimenti serve costruire prima la credibilita'/riconoscibilita' del nome citato.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:04:21",
+   "frame": "frame-060",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-04",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:04:21"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-08",
+   "peso": "contesto",
+   "tipo": "Copy / Virgolette come insicurezza lessicale",
+   "contenuto": "Virgolette senza motivo tipografico (es. 'vuole' riferito a un orologio) segnalano insicurezza sulla scelta lessicale - meglio trovare il termine giusto che virgolettare quello sbagliato.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:09:31",
+   "frame": "frame-400",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-08",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:09:31"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-09",
+   "peso": "portante",
+   "tipo": "Copy / Principio comunicativo fondamentale",
+   "contenuto": "Non conta quello che l'autore intendeva dire, conta solo quello che il lettore capisce - se una frase puo' essere fraintesa, la responsabilita' e' di chi scrive.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:11:06",
+   "frame": "frame-400",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-09",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:11:06"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-11",
+   "peso": "portante",
+   "tipo": "Copy / Social proof concreto vs astratto",
+   "contenuto": "Invece di spiegare astrattamente il servizio, mostrare un caso concreto con nome e dettagli specifici ('Questo e' Leonardo, per lui abbiamo scelto questo orologio perche'...') comunica il value proposition meglio di una spiegazione generica.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:13:11",
+   "frame": "frame-400",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-11",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:13:11"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-14",
+   "peso": "supporto",
+   "tipo": "Copy / Prova visiva before/after",
+   "contenuto": "Per un copy che vende sicurezza personale/immagine corporea, una foto before/after e' fondamentale - le parole da sole non bastano a comunicare trasformazione fisica/di sicurezza.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:15:44",
+   "frame": "frame-457",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-14",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:15:44"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-15",
+   "peso": "supporto",
+   "tipo": "Copy / Tono e mismatch di genere comunicativo",
+   "contenuto": "Il copy 'sembra scritto per le donne ma da un uomo che non capisce le donne' - troppo Direct Response per un argomento delicato (insicurezza corporea); meglio storytelling morbido puntando sulla nostalgia.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:21:03",
+   "frame": "frame-504",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-15",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:21:03"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-16",
+   "peso": "supporto",
+   "tipo": "Copy / Linguaggio accusatorio su temi sensibili",
+   "contenuto": "Frasi come 'niente di cui vergognarti' o 'per colpa delle tue incertezze' rischiano di suonare accusatorie anche con intento rassicurante - meglio formulazioni leggere tipo 'senza paranoie'.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:20:32",
+   "frame": "frame-504",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-16",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:20:32"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-17",
+   "peso": "supporto",
+   "tipo": "Copy / Pain Point debole e obiezione non gestita",
+   "contenuto": "Pain Point debole e obiezione implicita ('come puo' un semplice costume fare tutto questo?') non gestita - pattern ricorrente col copy 1: entrambi promettono benefici senza spiegare il meccanismo che li rende credibili.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:22:07",
+   "frame": "frame-600",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-17",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:22:07"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-20",
+   "peso": "supporto",
+   "tipo": "Copy / Pain point specifico - eccezione regola del 3",
+   "contenuto": "I pain point vanno resi specifici e relatable (non 'scarsa motivazione' generico ma 'un mese che provo le trazioni e non ci riesco'). Eccezione esplicita alla regola del 3 (video 16): per liste di pain point specifici meglio arrivare a 5-6 esempi.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:27:56",
+   "frame": "frame-800",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-20",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:27:56"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-21",
+   "peso": "contesto",
+   "tipo": "Copy / Meta-commentario cringe",
+   "contenuto": "Frasi auto-referenziali tipo 'non fare questo errore' dentro il copy sono 'molto cringe' - meglio descrivere il beneficio/errore direttamente senza ammonimento didattico esplicito.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:29:02",
+   "frame": "frame-800",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-21",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:29:02"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-23",
+   "peso": "portante",
+   "tipo": "Copy / Priorita di correzione",
+   "contenuto": "Sintesi finale: problemi principali in ordine di priorita' - (1) soluzione al posto del pain point in headline, (2) organizzazione/formattazione carente, (3) livello di consapevolezza del target dato per scontato. Il resto sono dettagli minori.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:31:37",
+   "frame": "frame-888",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-23",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:31:37"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-24",
+   "peso": "supporto",
+   "tipo": "Funnel / CTA e urgenza reale",
+   "contenuto": "CTA verso il corso con scadenza dichiarata (30 settembre 23:59) e motivazione esplicita del rialzo prezzo ('le consulenze diventano piu' costose perche' non posso offrirle a tutti per sempre') - urgenza genuina motivata, registro opposto alla scarsita' distaccata dei brand di lusso (video 16) perche' qui il brand e' un formatore personale, non un brand di lusso.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:32:07",
+   "frame": "frame-990",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-24",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:32:07"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-01",
+   "peso": "contesto",
+   "tipo": "Copywriting / Definizione",
+   "contenuto": "Copywriting = 'scrivere per vendere'. Non vendita faccia a faccia ma tramite testo scritto/digitale.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:05:18",
+   "frame": "frame-160",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-01",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:05:18"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-02",
+   "peso": "contesto",
+   "tipo": "Copywriting / Storia",
+   "contenuto": "John Emory Powers, fine '800, primo copywriter pagato professionalmente. Scriveva per retailer sui giornali (macchine da scrivere, abiti, oggetti domestici). Stesso lavoro di oggi, ma su internet invece che sui giornali.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:02:12",
+   "frame": "frame-067",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-02",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:02:12"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-03",
+   "peso": "supporto",
+   "tipo": "Copywriting / Principi fondamentali",
+   "contenuto": "La psicologia umana non cambia. Il copy di fine '800 usa gli stessi principi di persuasione di oggi - motivo per cui studiare i classici del copywriting ha valore pratico attuale.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:02:45",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-03",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:02:45"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-04",
+   "peso": "contesto",
+   "tipo": "Copywriting / Mercato",
+   "contenuto": "Il mercato del copywriting vale $25B e crescera' a $42.22B entro il 2030 - indicatore di domanda in espansione.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:05:18",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-04",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:05:18"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-05",
+   "peso": "contesto",
+   "tipo": "Copywriting / Applicazioni",
+   "contenuto": "Il copy si usa in: siti web, descrizioni prodotto Amazon, ad social (FB/IG), email marketing, spot radio/podcast, menu di ristoranti. Il copywriting e' trasversale a tutti i media.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:05:30",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-05",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:05:30"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-06",
+   "peso": "portante",
+   "tipo": "Copywriting / Conversion rate",
+   "contenuto": "Esempio vaso: 1000 visitatori, prodotto €10, 1% conversione = €100. Con copy migliore: 2% conversione = €200. Stesso traffico, stesso prodotto, revenue raddoppiata. Il copy lavora sul denominatore (conversione), non sul traffico.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:07:00",
+   "frame": "frame-211",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-06",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:07:00"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-07",
+   "peso": "supporto",
+   "tipo": "Copywriting / Case study",
+   "contenuto": "In casi reali citati da Andrei, la conversione e' passata da 1% a 34% grazie al copy - triplicando/quadruplicando la revenue. Non e' teoria, e' misurabile.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:07:40",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-07",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:07:40"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-16",
+   "peso": "supporto",
+   "tipo": "Copywriting / Formazione",
+   "contenuto": "Competenze richieste per imparare copywriting da un mentor: psicologia, propaganda, marketing etico, acquisizione clienti. Non basta imparare 'a scrivere bene' - il copywriting e' persuasione applicata.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:15:05",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-16",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:15:05"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-18",
+   "peso": "contesto",
+   "tipo": "Copywriting / CTA branding",
+   "contenuto": "Outro card finale su sfondo nero, logo triangolare blu AP. Copy CTA: 'Il futuro e' nostro.' (identita'/community) + 'Ti aspetto nella mentorship.' (offerta diretta). Struttura: aspirational identity -> offerta specifica.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:17:01",
+   "frame": "frame-515",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-18",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:17:01"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-19",
+   "peso": "portante",
+   "tipo": "Copywriting / Insight core",
+   "contenuto": "Il copy non cambia il prodotto, cambia quante persone lo comprano. Il vaso rimane lo stesso: il copy cambia quanti vasi vengono venduti. Distinzione fondamentale per capire perche' i copywriter sono pagati bene - non agiscono sul prodotto, agiscono sulla domanda.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:07:00",
+   "frame": "frame-211",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-19",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:07:00"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-001",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Copywriting = scrivere per vendere. NON scrivere cose carine. NON scrivere articoli creativi. L'obiettivo principale = FAR VENDERE.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:00:22",
+   "frame": "frame-033.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-002",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "'Redattore pubblicitario' è traduzione italiana imprecisa: esclude la componente vendita. Il copywriter DEVE saper vendere, non solo scrivere bene.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:01:10",
+   "frame": "frame-033.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-003",
+   "peso": "supporto",
+   "tipo": "formati",
+   "contenuto": "Copywriting include qualsiasi contenuto SCRITTO con obiettivo di vendere: ads FB/IG, LP, VSL (copione video), descrizioni prodotto, sales page, email.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:01:30",
+   "frame": "frame-066.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-005",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esempio Chiara Ferragni: vendi le sue bottiglie d'acqua a €80 → campagna marketing FB/IG/LinkedIn → testo di quella campagna = copy → chi lo scrive = copywriter.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:00:35",
+   "frame": "frame-033.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-01",
+   "peso": "portante",
+   "tipo": "Copywriting / Definizione",
+   "contenuto": "Copywriting = scrivere per vendere. NON scrivere cose carine, NON scrivere articoli creativi. 'L'obiettivo principale dei copywriter e' far vendere.'",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:00:22",
+   "frame": "frame-033",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-01",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:00:22"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-011",
+   "peso": "portante",
+   "tipo": "meta-regola",
+   "contenuto": "REGOLA: 'Tutto ciò che tu fai come copywriter è un copy.' Ogni messaggio LinkedIn, email, bio sul sito = copy. Deve rispettare le regole di persuasione.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:06:40",
+   "frame": "frame-197.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-02",
+   "peso": "supporto",
+   "tipo": "Copywriting / Definizione",
+   "contenuto": "'Redattore pubblicitario' e' una traduzione italiana imprecisa del termine copywriter: esclude la componente vendita. Il copywriter DEVE saper vendere, non solo scrivere bene.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:01:10",
+   "frame": "frame-033",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-02",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:01:10"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-03",
+   "peso": "supporto",
+   "tipo": "Copywriting / Formati",
+   "contenuto": "Il copywriting include qualsiasi contenuto SCRITTO con l'obiettivo di vendere: ads FB/IG, landing page, VSL (copione video), descrizioni prodotto, sales page, email - tutto conta come copy.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:01:30",
+   "frame": "frame-066",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-03",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:01:30"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-05",
+   "peso": "supporto",
+   "tipo": "Copywriting / Esempio illustrativo",
+   "contenuto": "Esempio illustrativo (narrato, non mostrato a schermo): vendi bottiglie d'acqua da 80 euro (tipo Chiara Ferragni) -> fai campagna marketing su FB/IG/LinkedIn -> il testo di quella campagna e' il copy -> chi lo scrive e' il copywriter.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:00:35",
+   "frame": "frame-033",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-05",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:00:35"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-11",
+   "peso": "portante",
+   "tipo": "Copywriting / Principio meta",
+   "contenuto": "REGOLA FONDAMENTALE: 'Tutto cio' che tu fai come copywriter e' un copy.' Ogni messaggio LinkedIn, ogni email a un cliente, ogni bio sul sito = copy, e deve rispettare le regole di persuasione.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:06:40",
+   "frame": "frame-197",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-11",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:06:40"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-06",
+   "peso": "supporto",
+   "tipo": "TOOL",
+   "contenuto": "Google come tool di competitive research: cercare il nome brand originale (inglese/tedesco) per capire posizionamento internazionale e come la versione italiana si confronta. Andrei cerca 'simply fit' → scopre che 'Simply Fit' è un brand americano diverso (Shark Tank fitness board).",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:06:38",
+   "frame": "frame-0200.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-06",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:06:38"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-09",
+   "peso": "supporto",
+   "tipo": "TOOL",
+   "contenuto": "Tech Stack Detection tramite browser extension (Wappalyzer/simile in Chrome/Arc): permette di vedere CMS, analytics, advertising pixels di qualsiasi sito. McFit usa: CMS Typo3, Google Analytics Universal, Google Tag Manager. Info gold per pitch: 'so già che usi Google Analytics UA — stai perdendo dati da quando UA è stato deprecato.'",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:19:48",
+   "frame": "frame-0413.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-09",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:19:48"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-10",
+   "peso": "portante",
+   "tipo": "COPY-STRUCTURE",
+   "contenuto": "McFit+ loyalty copy formula: Header brand → Headline benefit → Paragrafo espansivo benefici → Lista action steps numerati (Scarica app → Attiva McFIT+). 'ANCORA DI PIÙ CON McFIT+' → 'IL PLUS PER LA TUA FEDELTÀ' → benefici concreti → 2 passi chiari. Formula replicabile per upsell abbonamenti premium.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:13:46",
+   "frame": "frame-0413.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-10",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:13:46"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-11",
+   "peso": "contesto",
+   "tipo": "TOOL",
+   "contenuto": "Meta Pixel Helper (extension Chrome) per verificare se un sito usa pixel Facebook/Meta. Non sempre accurato (falsi negativi), ma utile per capire strategia advertising del concorrente/cliente. Sapere che un cliente usa o non usa il pixel = punto di partenza per proposta di miglioramento.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:20:00",
+   "frame": "frame-0413.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-11",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:20:00"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-12",
+   "peso": "portante",
+   "tipo": "VALORE",
+   "contenuto": "Copy su Sales Page determina CPA. 'Migliori il CPA di €5 → hai fatto risparmiare un'azienda €50.000-€100.000 di ads in tutto l'anno.' Per campagne con budget alto, ogni euro di CPA migliorato si moltiplica per migliaia di conversioni. Il copywriting è leva finanziaria diretta.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:28:09",
+   "frame": "frame-0845.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-12",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:28:09"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-13",
+   "peso": "supporto",
+   "tipo": "MERCATO",
+   "contenuto": "'Quanto cazzo è grossa l'opportunità in Italia — la gente non se ne rende conto.' Gap: le aziende italiane investono in ads senza ottimizzare il copy. Chi sa fare copy strategico (non solo testi) ha vantaggio competitivo enorme. Il mercato italiano è sottosviluppato → early mover advantage.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:28:12",
+   "frame": "frame-0845.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-13",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:28:12"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-17",
+   "peso": "portante",
+   "tipo": "STRUTTURA-ECOMMERCE",
+   "contenuto": "Dyson trust badges su pagina prodotto: Prezzo garantito / Pagamento a rate / Consegna gratuita in 24h* / Reso gratuito entro 30 giorni. Formula: 4 obiezioni rimosse con badges sotto il CTA principale. Replicabile per qualsiasi e-commerce premium — ogni badge risponde a una paura d'acquisto specifica.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:28:46",
+   "frame": "frame-0864.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-17",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:28:46"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-23",
+   "peso": "supporto",
+   "tipo": "TATTICA",
+   "contenuto": "Scarcity per brand premium: Dyson usa 'Ora con rullo in microfibra extra in omaggio. Solo per un periodo limitato.' anche per aspirapolvere premium v15s. La scarcity funziona anche per brand luxury SE presentata come omaggio (non sconto), preservando posizionamento premium senza toccare il prezzo.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:35:44",
+   "frame": "frame-1073.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-23",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:35:44"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-28",
+   "peso": "supporto",
+   "tipo": "CTA",
+   "contenuto": "CTA finale live: 'ultime due giorni per avere manuale più workbook.' Bundle offer (manuale + workbook) con scarcity temporale. Link in bio. Formula: urgency + bundle + valore chiaro. CTA semplice, no hard sell, coerente col tono didattico della live.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:43:30",
+   "frame": "frame-1306.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-28",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:43:30"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-042",
+   "peso": "portante",
+   "tipo": "livello",
+   "contenuto": "LIVELLO 5 — DE-SLOPIFICATION. Slide 'SKILL 05 · COPY — 05 — De-slopification' — citazione: 'Readers smell AI copy in one line.' Le parole al bando come chip barrati rossi: 'It's not just X, it's Y', 'seamless', 'unlock', 'elevate', 'robust', 'leverage', 'faster, smarter, better', 'Let's dive in'. La pipeline in tre chip collegati: BENCHMARK → REWRITE → CLEANSE. next: 'the details that finish it'.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#14:58",
+   "frame": "frame-450.png, _zoom/z450.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-043",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "LA TABELLA 'SIGNS OF AI WRITING' — il pezzo piu' riusabile del video. Introduzione verbatim: 'These are the tells that get a line rewritten on sight. Every one of them showed up in a first draft of this page and was cut. Struck-through is what was written; green is what shipped.' I SEI TELL, ognuno con coppia prima/dopo e regola: (1) THE THREE-ITEM FLOURISH — 'Trusted, reliable and built to last.' → 'Six nails per shingle, every shingle.' — regola: 'Three adjectives is a rhythm, not an argument. One specification beats it every time.' (2) 'NOT JUST X, BUT Y' — 'Not just a roof, but peace of mind.' → 'A written scope and a fixed number before anyone climbs a ladder.' — regola: 'The construction promises a reveal and then delivers an abstraction.' (3) ELEVATED VERBS — 'We leverage industry-leading materials to deliver unparalleled protection.' → 'We source materials from manufacturers who test for wind, hail and sun.' — regola: 'Leverage, deliver, unparalleled, seamless, robust, elevate. All of them mean nothing and cost a line.' (4) EMPTY SUPERLATIVES — 'The area's most trusted roofing experts.' → 'Roofing, and only roofing, since 2001.' — regola: 'Most trusted is unfalsifiable, so the reader discounts it entirely. A date cannot be argued with.' (5) M-DASH PILEUP — 'Our team — trained, certified and local — is ready to help.' → 'Thirty-eight on the crew, factory-trained for every material we install.' — regola: 'One dash in a paragraph is punctuation. Three is a tic.' (6) NUMERI INVENTATI — 'Loved by 10,000+ happy homeowners.' → 'Project names and photography are placeholders — swap in your own jobs before this ships.' — regola: 'Inventing a number is the one unrecoverable mistake. Say the slot is empty instead.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#16:47-17:56",
+   "frame": "frame-510.png, frame-514.png, frame-520.png, _zoom/z510.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-044",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "La regola di tracciabilita' del copy, verbatim dalla tab Copy del sito: 'Not from a brand workshop. Every line traces to one of four sources, and if a sentence cannot name its source it does not go on the page.' Ogni riga di copy deve poter nominare la propria fonte, altrimenti non va in pagina.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#15:56",
+   "frame": "frame-479.png, _zoom/z479.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-045",
+   "peso": "contesto",
+   "tipo": "inferito",
+   "contenuto": "Le quattro fonti del copy: i TITOLI delle quattro colonne sono coperti dall'overlay webcam in tutti i frame disponibili. I corpi leggibili sono: (1) '...Six nails per shingle, every shingle is a real specification with a real failure mode behind it. Nothing invented sounds like that, because invented copy does not know the trade.' (2) '...that the timber will move, that the yard will be wrecked, that they are being sold a whole roof for a flashing problem. The page answers those three in order.' (3) '...goes one level further than promises. We do not do overlays and we do not quote from the driveway both position and disqualify in one line.' (4) '...two lines came in from the layout already written — the process steps and From first call to final nail. They were better than anything a rewrite would produce, and were left untouched.' RICOSTRUZIONE INFERITA dei titoli: (1) cosa fa davvero il mestiere, (2) cosa il cliente gia' teme, (3) cosa la concorrenza non dira', (4) le righe del layout gia' buone. NON LETTO — marcato inferito.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#15:56",
+   "frame": "frame-479.png, frame-461.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-046",
+   "peso": "supporto",
+   "tipo": "fonti",
+   "contenuto": "Le fonti tecniche del sistema di de-slopification, dalla tab Copy: (a) icona GitHub '36,087 ★' — 'Built on the leading open-source humanisers. All four MIT.' (b) 'Signs of AI writing' — 'Wikipedia's canonical catalogue of the tells. By the people who clean them up.' (c) 'GPT-5.6 cleanse' — 'A frontier model, sceptical — never trusted without the limiter on both sides.' (d) 'World-class copy' — 'Benchmarked live against the category's best. Headlines scored verbatim.' (e) 'delve' — '65 words · 8 shapes'. (f) '3/5 → 5/5' — 'This page, measured before and after — not asserted.' Bottone 'ACTIVATE MAGIC COPY' — 'Flips every line on the Website tab to its rewritten version, live.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#15:56-16:02",
+   "frame": "frame-479.png, frame-482.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-047",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "La psicologia dichiarata sotto il Livello 5, verbatim: 'it's underpinned by some core psychology. One of the best psychological principles in building anything is this idea of don't make me think. The idea essentially being that people don't read websites, they browse them. I need to be able to glance at it and understand what the website is about. Don't take anybody's time for granted... if I have to invest a minute to understand what your website is about, it's too much. So general idea, use the system one cognition. Just make it super easy. You want to name the pain.' (L'autore si autocorregge a voce da 'system two' a 'system one'.)",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#16:50-17:24",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-048",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Before → after su un secondo prodotto (Neuro, app di allenamento al prompting). THE HERO: 'Get started' → 'Start free'; 'A Fun Way to learn AI' → 'Everyone uses AI. Almost nobody is good at it.'; nuova riga aggiunta: 'Neuro is five minutes a day of real prompting problems, marked the second you answer. You stop guessing at what works.'; 'Get started' → 'Start your first lesson'. THE HABIT: 'the streak does the work' → 'the hard part is day four'; 'Start a streak' → 'Start day one'. Corpo riscritto: 'Motivation gets you through day one. A streak gets you through day four. Miss a day and it resets, which turns out to be all the pressure anyone needs. You get five hearts a day, one per wrong answer, refilled overnight.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#16:36",
+   "frame": "frame-499.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-049",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Onesta' della prova sociale, esempio verbatim dal sito Neuro: 'THE METHOD — built on how people actually learn — Two techniques do the work. Retrieval practice means recalling a skill instead of rereading it. Spaced repetition brings a concept back just as you're about to forget it.' Poi il riquadro: 'Both are among the most-replicated findings in learning science. Neuro is new, so this evidence is for the method, not for us.' Si cita la prova per il metodo e si dichiara di non averne ancora per se stessi.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#15:18",
+   "frame": "frame-460.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-02",
+   "peso": "portante",
+   "tipo": "Framework / Tassonomia CTA",
+   "contenuto": "CTA superficiali = concentrati sull'azione ('clicca qui', 'iscriviti'). CTA profondi = concentrati su cosa accade dopo l'uso del prodotto, nel dolore emotivo/desiderio. Esempio: superficiale 'inizia a perdere peso' vs profondo 'vediti bene nello specchio'.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:00:44",
+   "frame": "frame-044",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-02",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:00:44"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-04",
+   "peso": "supporto",
+   "tipo": "Copy / Esempio comparato",
+   "contenuto": "Risposta esercizio (cover telefono): superficiale = verbi d'azione generici intercambiabili ('clicca qui', 'vai'). Profondo = 'proteggi il tuo telefono, basta le cadute disastrose... proteggi con stile' - nomina la conseguenza specifica e la ribalta in beneficio emotivo.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:01:34",
+   "frame": "frame-067",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-04",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:01:34"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-05",
+   "peso": "portante",
+   "tipo": "Copy / Meccanismo persuasivo",
+   "contenuto": "Il CTA profondo converte di piu' perche' sposta l'attenzione dall'onere dell'azione (percepita come noiosa) al costo dell'inazione (la conseguenza negativa del non agire) - nominare la conseguenza dell'inazione e' piu' persuasivo che nominare l'azione richiesta.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:02:04",
+   "frame": "frame-067",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-05",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:02:04"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-06",
+   "peso": "portante",
+   "tipo": "Framework / Situazione Attuale vs Desiderio",
+   "contenuto": "Framework: ogni CTA profondo esplicita la Situazione di Desiderio (dove il cliente vuole arrivare), non solo la Situazione Attuale. Esempio: attuale='sei obeso', desiderio='essere in forma'. Il veicolo per arrivarci risolve un bisogno (termine economico).",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:02:27",
+   "frame": "frame-080",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-06",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:02:27"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-07",
+   "peso": "supporto",
+   "tipo": "Metodo / Combinazione",
+   "contenuto": "Raccomandazione finale: non scegliere tra CTA superficiale e profondo, combinarli in un unico pulsante ancora piu' persuasivo ('prendi il pezzo superficiale, prendi il pezzo profondo, mettili insieme').",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:03:06",
+   "frame": "frame-105",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-07",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:03:06"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-08",
+   "peso": "supporto",
+   "tipo": "Copy / Urgenza",
+   "contenuto": "Terza leva CTA: urgenza tramite parole temporali ('oggi', 'domani', 'presto', 'veloce') - motivata dalla tendenza delle persone a procrastinare.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:04:16",
+   "frame": "frame-145",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-08",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:04:16"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-09",
+   "peso": "portante",
+   "tipo": "Framework / Formula CTA",
+   "contenuto": "Formula: Azione + Situazione/Desiderio + Tempo. Esempio: 'iscriviti (azione) per essere confident (desiderio) adesso (tempo)'. Nota di calibrazione: l'elemento tempo puo' risultare overpromising se forzato.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:04:35",
+   "frame": "frame-145",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-09",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:04:35"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-02",
+   "peso": "portante",
+   "tipo": "Copy / Targeting - reverse-engineering",
+   "contenuto": "Dalla frase 'idk if girls even message guys first anymore' si deduce il target senza dichiararlo: chi si riconosce nell'eccezione ('a me non scrivono mai per primo') e' il target reale, definito da uno stato psicologico non da un dato demografico.",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:00:25",
+   "frame": "frame-014",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-02",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:00:25"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-03",
+   "peso": "portante",
+   "tipo": "Copy / Simulazione del lettore target",
+   "contenuto": "Metodo di audit: impersonare il lettore target e verbalizzare la reazione interna ('se io fossi in target, risponderei...') per testare l'effetto emotivo reale del copy, non solo la conformita' a una struttura.",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:00:38",
+   "frame": "frame-020",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-03",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:00:38"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-04",
+   "peso": "supporto",
+   "tipo": "Copy / Differenziazione come ricompensa emotiva",
+   "contenuto": "'Thought you were cute' funziona perche' fa sentire il lettore diverso/scelto rispetto alla massa - questa differenziazione emotiva abilita la disponibilita' psicologica a seguire il CTA successivo.",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:00:39",
+   "frame": "frame-021",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-04",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:00:39"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-05",
+   "peso": "supporto",
+   "tipo": "Copy / Coerenza Tone of Voice",
+   "contenuto": "TOV 'molto normale e molto giovanile' collegato esplicitamente alla foto profilo 'molto giovanile' - coerenza fra registro verbale e presentazione visiva come segnale di credibilita'/autenticita'.",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:00:44",
+   "frame": "frame-024",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-05",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:00:44"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-06",
+   "peso": "supporto",
+   "tipo": "Framework / APSOC - nomenclatura",
+   "contenuto": "Framework mostrato a schermo come 'APSOC' (5 lettere), coerente col framework interno DE. Applicazione compressa su un DM di poche righe: 4 pillar nominati (A/P/S/Obiezioni), Social Proof assente/non applicabile in un primo contatto. DA VERIFICARE: discrepanza fra audio auto-trascritto ('apso', 4 lettere) e caption burned-in ('apsoc', 5 lettere).",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:00:52",
+   "frame": "frame-027",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-06",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:00:52"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-07",
+   "peso": "supporto",
+   "tipo": "Framework / APSOC - pillar Attenzione",
+   "contenuto": "Attenzione = la foto profilo/il volto della mittente - in un contesto DM/social l'elemento che cattura l'attenzione e' visivo (avatar), non testuale; il testo arriva dopo.",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:00:56",
+   "frame": "frame-029",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-07",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:00:56"
+    }
+   ]
+  },
+  {
+   "uid": "VbxTgp_fz8Y::KA-08",
+   "peso": "portante",
+   "tipo": "Framework / APSOC - pillar Problema implicito",
+   "contenuto": "Il Problema non e' mai dichiarato nel testo del DM, ma attivato nella mente del lettore ('che problema? Il fatto che io sono sfigato, quindi nessuno mi scrive') - conferma della tecnica Pain Point Implicito gia' documentata in cro-copy-architect/framework-apsoc-operativo.md, qui applicata a un DM invece che a una sales page.",
+   "ancora": "",
+   "fonte": "VbxTgp_fz8Y#00:00:59",
+   "frame": "frame-031",
+   "run": "VbxTgp_fz8Y",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VbxTgp_fz8Y::KA-08",
+     "run": "VbxTgp_fz8Y",
+     "fonte": "VbxTgp_fz8Y#00:00:59"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-01",
+   "peso": "contesto",
+   "tipo": "concetto-base",
+   "contenuto": "Definizione copywriter: scrive testi persuasivi di vendita (pubblicita, siti web, social...)",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:00:18",
+   "frame": "frame-010.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-01",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:00:18"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-02",
+   "peso": "contesto",
+   "tipo": "authority-signal",
+   "contenuto": "Andrei pagato migliaia di euro per sales page, email, copy. Credenziale stabilita prima della critica AI.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:00:30",
+   "frame": "frame-010.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-02",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:00:30"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-07",
+   "peso": "portante",
+   "tipo": "principio-copy",
+   "contenuto": "Show don't tell violato nel GPT: 'materiali di alta qualita' = telling. Copywriter mostra QUALI materiali specifici, QUALE processo, QUALE risultato concreto. GPT dichiara la conclusione senza costruire il percorso.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:02:15",
+   "frame": "frame-070.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-07",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:02:15"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-08",
+   "peso": "portante",
+   "tipo": "struttura-copy",
+   "contenuto": "Struttura problema-soluzione mancante: buon copy agita problema con soluzioni attuali PRIMA di presentare il prodotto. GPT va subito a 'Siamo lieti di presentarvi' senza problema setup.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:02:30",
+   "frame": "frame-090.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-08",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:02:30"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-09",
+   "peso": "portante",
+   "tipo": "principio-psicologico",
+   "contenuto": "Gap emotivita: non c'e la parte emotiva. Copy GPT e cerebrale/informativo. Acquisto e guidato da emozione. Copy deve attivare stato emotivo specifico prima di features.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:02:45",
+   "frame": "frame-090.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-09",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:02:45"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-20",
+   "peso": "supporto",
+   "tipo": "business-impact",
+   "contenuto": "Costo del copy generico: lasciando tantissimi soldi sul tavolo. Copy mediocre ha costo opportunita enorme. Ogni conversione persa = revenue non generata. Generic copy = money left on table, quantificabile.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:06:38",
+   "frame": "frame-200.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-20",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:06:38"
+    }
+   ]
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Principio cardine: se il potenziale cliente non sa di avere un problema o non conosce il prodotto, non comprerà mai — ogni fase del funnel va adattata al livello di consapevolezza del target.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-02#\"introduzione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Errore comune: proporre direttamente il prodotto (\"Compra ora, 50% di sconto!\") funziona solo su chi è già consapevole; su chi non sa nulla la proposta viene ignorata.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-02#\"errore-comune-delle-aziende\"",
+   "frame": "",
+   "run": "outfunnel-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "I 5 Livelli di Consapevolezza (framework Eugene Schwartz, non attribuito esplicitamente nel video): Non consapevole → Consapevole del problema → Consapevole della soluzione → Consapevole del prodotto → Completamente consapevole.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-02#\"i-5-livelli-di-consapevolezza\"",
+   "frame": "",
+   "run": "outfunnel-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Esempio applicato (Dental Spray per cani) mostra due target diversi (proprietario medio vs dog trainer) che richiedono messaggi opposti sullo stesso prodotto, in base a cosa già sanno.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-02#\"esempio-pratico\"",
+   "frame": "",
+   "run": "outfunnel-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-05",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Sequenza di copy che fa avanzare un lettore lungo i 5 livelli, frase per frase: \"Lo sapevi che il 90%...\" (crea consapevolezza del problema) → \"Esistono prodotti per...\" (soluzione) → \"Abbiamo creato...\" (prodotto) → \"Costa solo 19,99€...\" (spinta all'acquisto).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-02#\"esempio-di-processo-di-consapevolezza\"",
+   "frame": "",
+   "run": "outfunnel-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-02::KA-06",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Applicazione strategica: creare più varianti di ads per ogni livello di consapevolezza del pubblico invece di un unico annuncio generico.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-02#\"impatto-sui-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-02",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern",
+   "contenuto": "Clichè #1: apertura 'Se ami/ti interessa X, allora sei nel posto giusto' (esempio: 'Se ami il caffè allora sei nel posto giusto'). Sovrausato e riconoscibile come pubblicita' generica, il lettore lo processa come rumore.",
+   "ancora": "",
+   "fonte": "nRm7JLsP1bc#00:00:12",
+   "frame": "frame-007",
+   "run": "nRm7JLsP1bc",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nRm7JLsP1bc::KA-02",
+     "run": "nRm7JLsP1bc",
+     "fonte": "nRm7JLsP1bc#00:00:12"
+    }
+   ]
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern",
+   "contenuto": "Clichè #2: '[N] cose che non sapevi su [Y]' — formula listicle da clickbait, esausta per il pubblico.",
+   "ancora": "",
+   "fonte": "nRm7JLsP1bc#00:00:18",
+   "frame": "frame-010",
+   "run": "nRm7JLsP1bc",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nRm7JLsP1bc::KA-03",
+     "run": "nRm7JLsP1bc",
+     "fonte": "nRm7JLsP1bc#00:00:18"
+    }
+   ]
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-04",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern",
+   "contenuto": "Variante aggravata del clichè #2, parodia diretta: 'I dottori lo odiano perché ha scoperto il dolorifico più salutare' — pattern da ads farmaceutici/integratori/dimagrimento ('i medici odiano questo trucco'), tra i piu' abusati e meno credibili nel copy ads.",
+   "ancora": "",
+   "fonte": "nRm7JLsP1bc#00:00:30",
+   "frame": "frame-016",
+   "run": "nRm7JLsP1bc",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nRm7JLsP1bc::KA-04",
+     "run": "nRm7JLsP1bc",
+     "fonte": "nRm7JLsP1bc#00:00:30"
+    }
+   ]
+  },
+  {
+   "uid": "nRm7JLsP1bc::KA-05",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern",
+   "contenuto": "Clichè #3: 'Il segreto che [industria/autorita'] non ti vuole far sapere su [Y]' — framing da cospirazione/rivelazione, esemplificato con 'il segreto che i ristoranti non vogliono farti sapere sulla carne congelata'.",
+   "ancora": "",
+   "fonte": "nRm7JLsP1bc#00:00:36",
+   "frame": "frame-018",
+   "run": "nRm7JLsP1bc",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "nRm7JLsP1bc::KA-05",
+     "run": "nRm7JLsP1bc",
+     "fonte": "nRm7JLsP1bc#00:00:36"
+    }
+   ]
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-01",
+   "peso": "supporto",
+   "tipo": "Copy / Autorita - founder che scrive il proprio copy",
+   "contenuto": "Alex Hormozi ha fatto un lancio da $100 milioni in un weekend e ha dichiarato di aver scritto lui stesso tutti i copy e le sales page del lancio, incluso il copy della presentazione - usato come prova di autorita': chi ottiene risultati enormi scrive personalmente i materiali di vendita piu' critici.",
+   "ancora": "",
+   "fonte": "wTpfKuHJhOE#00:00:00",
+   "frame": "frame-001,002,003",
+   "run": "wTpfKuHJhOE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "wTpfKuHJhOE::KA-01",
+     "run": "wTpfKuHJhOE",
+     "fonte": "wTpfKuHJhOE#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Anti-pattern mismatch investimento-aspettativa",
+   "contenuto": "Critica: delegare il copy a un freelancer da 50 euro e aspettarsi comunque risultati di alto livello - mismatch tra investimento minimo e aspettativa di performance, in contrasto con l'esempio Hormozi.",
+   "ancora": "",
+   "fonte": "wTpfKuHJhOE#00:00:21",
+   "frame": "frame-011,012,013,014",
+   "run": "wTpfKuHJhOE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "wTpfKuHJhOE::KA-03",
+     "run": "wTpfKuHJhOE",
+     "fonte": "wTpfKuHJhOE#00:00:21"
+    }
+   ]
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-04",
+   "peso": "portante",
+   "tipo": "Posizionamento / Tesi centrale",
+   "contenuto": "Tesi centrale: 'siamo nell'era in cui non puoi semplicemente fare un copy mid' - l'epoca attuale (strumenti AI diffusi) alza la soglia minima accettabile, la mediocrita' non basta piu' per emergere.",
+   "ancora": "",
+   "fonte": "wTpfKuHJhOE#00:00:28",
+   "frame": "frame-015,016",
+   "run": "wTpfKuHJhOE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "wTpfKuHJhOE::KA-04",
+     "run": "wTpfKuHJhOE",
+     "fonte": "wTpfKuHJhOE#00:00:28"
+    }
+   ]
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-05",
+   "peso": "portante",
+   "tipo": "Posizionamento / Creativita come differenziatore",
+   "contenuto": "'La creativita' e' cio' che fa la differenza tra successo e fallimento, perche' il resto e' gia' equalizzato' - l'esecuzione di base e' commoditizzata dagli strumenti AI, il vantaggio competitivo si sposta sulla componente creativa/strategica.",
+   "ancora": "",
+   "fonte": "wTpfKuHJhOE#00:00:32",
+   "frame": "frame-017,018,019",
+   "run": "wTpfKuHJhOE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "wTpfKuHJhOE::KA-05",
+     "run": "wTpfKuHJhOE",
+     "fonte": "wTpfKuHJhOE#00:00:32"
+    }
+   ]
+  },
+  {
+   "uid": "IYd-VOngDog::KA-02",
+   "peso": "portante",
+   "tipo": "Principio fondazionale / Metodologia copywriting",
+   "contenuto": "La 'parte quasi segreta' annunciata nel titolo è la ricerca, non la scrittura. Citazione esatta: 'c'è una fase ancora più importante, lo scrivere, ed è della ricerca, perché il marketing informato è colui che riesce a prendere decisioni che più realisticamente porteranno risultati all'azienda.' Formulazione operativa: la ricerca non è un input 'di supporto' alla scrittura, è la variabile che determina la probabilità che le decisioni di copy (headline, angolo, obiezioni gestite, CTA) producano risultati misurabili. Il testo overlay 'RICERCA' (frame-009) marca visivamente questo esatto istante come il climax semantico del video.",
+   "ancora": "",
+   "fonte": "IYd-VOngDog#00:00:16",
+   "frame": "frame-009",
+   "run": "IYd-VOngDog",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IYd-VOngDog::KA-02",
+     "run": "IYd-VOngDog",
+     "fonte": "IYd-VOngDog#00:00:16"
+    }
+   ]
+  },
+  {
+   "uid": "IYd-VOngDog::KA-03",
+   "peso": "supporto",
+   "tipo": "Applicazione pratica / Analisi competitor",
+   "contenuto": "Esempio concreto citato per rendere operativo il principio: 'non puoi aspettarti che la campagna di marketing venga chissà quanto se non vai a vedere le altre campagne di marketing, capire chi, come, dove [fa] la concorrenza.' Applicazione: prima di scrivere/lanciare una campagna, analizzare le campagne dei competitor (chi le fa, come sono strutturate, dove sono pubblicate) è presentato come condizione necessaria — non opzionale — per aspettarsi risultati realistici.",
+   "ancora": "",
+   "fonte": "IYd-VOngDog#00:00:24",
+   "frame": "frame-013/014/015/016",
+   "run": "IYd-VOngDog",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IYd-VOngDog::KA-03",
+     "run": "IYd-VOngDog",
+     "fonte": "IYd-VOngDog#00:00:24"
+    }
+   ]
+  },
+  {
+   "uid": "8Pf7d57Q0Jk::KA-13",
+   "peso": "supporto",
+   "tipo": "Copy / Esempio scenetta relatabile B2B",
+   "contenuto": "Esempio sottostrategia 'scenetta': mettere in scena una telefonata con lead non qualificato ('caccia dei preventivi', piaga del settore fotovoltaico), raccontata da chi ha fatto realmente il setter - il concept 'si scrive da solo' quando basato su esperienza vissuta riconoscibile dal target.",
+   "ancora": "",
+   "fonte": "8Pf7d57Q0Jk#~11:20",
+   "frame": "",
+   "run": "8Pf7d57Q0Jk",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "8Pf7d57Q0Jk::KA-13",
+     "run": "8Pf7d57Q0Jk",
+     "fonte": "8Pf7d57Q0Jk#~11:20"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-16",
+   "peso": "supporto",
+   "tipo": "Copy / Vincolo caratteri",
+   "contenuto": "'Ho sempre bisogno di controllare quanti caratteri sto scrivendo': oggetto email, headline, titolo video hanno un numero limitato/consigliato di caratteri. Il conteggio e' vincolo di piattaforma, non un vezzo.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:09:02",
+   "frame": "frame-305",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-16",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:09:02"
+    }
+   ]
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-07",
+   "peso": "contesto",
+   "tipo": "Copy / Linguaggio iperbolico informale",
+   "contenuto": "Promessa con intensificatore gergale ('copy che vendono assurdamente tanto') invece di numero specifico - registro colloquiale coerente col tono del canale.",
+   "ancora": "",
+   "fonte": "_yUzEe29aTQ#00:02:33",
+   "frame": "frame-079",
+   "run": "_yUzEe29aTQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "_yUzEe29aTQ::KA-07",
+     "run": "_yUzEe29aTQ",
+     "fonte": "_yUzEe29aTQ#00:02:33"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-04::KA-03",
+   "peso": "portante",
+   "tipo": "Regola operativa / copy e AI",
+   "contenuto": "'I copy per le sales page fatti interamente con l'AI vengono quasi sempre male' — l'autore scrive il copy principale a mano e usa l'AI solo per i derivati ripetitivi (primary text ads Meta, varianti).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-04#trascrizione:ai-assisted",
+   "frame": "",
+   "run": "cs2online-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-04::KA-03",
+     "run": "cs2online-lezione-04",
+     "fonte": "cs2online-lezione-04#trascrizione:ai-assisted"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-12",
+   "peso": "supporto",
+   "tipo": "Tecnica ricerca / voice-of-customer",
+   "contenuto": "Tecnica di ricerca: andare su YouTube a cercare recensioni di servizi simili per capire il linguaggio reale del target - TERZA occorrenza indipendente dello stesso metodo nel materiale Andrei Pascu (dopo 2 video YouTube del run andrei-pascu-001) - APPLICATO come patch a copywriting/SKILL.md in questa sessione.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-12",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-018",
+   "peso": "portante",
+   "tipo": "file",
+   "contenuto": "copywriter-pmi.md — 'Come riconosci un testo debole': generico (non specifico all'azienda), parla dell'azienda non del beneficio cliente, bottoni muti ('Invia', 'Scopri di più', 'Clicca qui'), vago (frasi lunghe inutili).",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#11:22",
+   "frame": "frame-342.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-02",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Distinzione centrale: copy \"apparente\" (sembra specifico ma è dicibile a chiunque, es. \"Questo prodotto è perfetto per te\") vs copy \"specifico\" (dettagli concreti legati a un segmento reale, es. \"Se sei uno studente, questo tablet ti aiuta a prendere appunti senza perdere tempo\").",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-15#\"2.-come-segmentare\"",
+   "frame": "",
+   "run": "outfunnel-lezione-15",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

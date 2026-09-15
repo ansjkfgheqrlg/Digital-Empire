@@ -1,0 +1,542 @@
+{
+ "capitolo": "V.2",
+ "parte": "V.2-b",
+ "parte_n": 2,
+ "parti_totali": 2,
+ "titolo": "Prompt: struttura, contesto, istruzioni",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max18-v05-RnNSRF4s9nk::KA-009",
+  "max18-v05-RnNSRF4s9nk::KA-038",
+  "max18-v05-RnNSRF4s9nk::KA-057",
+  "max18-v05-RnNSRF4s9nk::KA-071",
+  "cs2online-lezione-09::KA-01",
+  "cs2online-lezione-09::KA-04",
+  "cs2online-lezione-09::KA-07",
+  "cs2online-lezione-13::KA-02",
+  "cs2online-lezione-13::KA-04",
+  "cs2online-lezione-16::KA-03",
+  "iy13HC9M8z0::KA-05",
+  "iy13HC9M8z0::KA-10",
+  "max17-v05-jaye-agenticos::KA-033",
+  "max17-v05-jaye-agenticos::KA-034",
+  "max18-v02-karpathy-agenti::KA-015",
+  "max18-v02-karpathy-agenti::KA-020",
+  "max18-v03-belli-token::KA-013",
+  "max18-v03-belli-token::KA-029",
+  "cs2online-bonus-06::KA-06",
+  "cs2online-lezione-03::KA-03",
+  "cs2online-lezione-10::KA-04",
+  "max17-v15::KA-037",
+  "max18-v01-second-brain-obsidian::KA-147"
+ ],
+ "fonti_integrali": {
+  "max18-v05-RnNSRF4s9nk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-001-020.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-021-040.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-041-060.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-061-080.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-081-098.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\RnNSRF4s9nk\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-09": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-09\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-13": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-13\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-16\\contenuto-integrale.md"
+  ],
+  "iy13HC9M8z0": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/iy13HC9M8z0\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\iy13HC9M8z0\\contenuto-integrale.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max18-v02-karpathy-agenti": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\video-analysis.md"
+  ],
+  "max18-v03-belli-token": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\video-analysis.md"
+  ],
+  "cs2online-bonus-06": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-06\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-03": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-03\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-10": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-10\\contenuto-integrale.md"
+  ],
+  "max17-v15": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\video-analysis.md"
+  ],
+  "max18-v01-second-brain-obsidian": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-091-117.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-116-130.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-131-145.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-178-204.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-193-207.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-208-222.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-223-237.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-238-250.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-299-313.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-314-328.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-329-352.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-A.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-B.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C2.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-009",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Dare un ordine vago all'AI (l'esempio usato è \"vai e conquista il mondo\") non è sufficiente perché l'AI possa davvero eseguirlo, perché manca la strategia concreta con cui farlo (con il carro armato, con le spade o con le pistole d'acqua). Bisogna sempre definire la strategia prima di delegare l'esecuzione.",
+   "ancora": "Perché dire a Claud e per favore vai e conquista il mondo non è sufficiente per Claud conquistare questo mondo, cioè con il carro armato, con le spade o con le pistole d'acqua. Quindi dobbiamo definire quella che è la strategia...",
+   "fonte": "RnNSRF4s9nk#3:18 (Excalidraw, sottolineatura arancione su \"Cervello del bot:\" + freccia arancione) + voce 3:18-3:30",
+   "frame": "frame-034.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-010",
+     "tipo": "motiva"
+    },
+    {
+     "verso": "KA-018",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-038",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Una volta validata l'architettura, il presentatore chiede a Claude di sintetizzare tutto (diagramma + strategia) in un unico prompt completo, da incollare in una nuova sessione di Claude Code in modalità \"plan mode\", per assicurarsi che Claude implementi il sistema secondo un piano approvato invece di procedere alla cieca.",
+   "ancora": "perfetto, sintetizzami tutto in un prompt e includi anche tutta la strategia che ti ho incollato, in modo tale che io possa andare ora in una nuova sessione di Claude Code e incollartela in plan mode ed assicurarmi che Claude poi vada ad implementare il mio sistema",
+   "fonte": "RnNSRF4s9nk#17:00 (IDE Antigravity) e #17:18 (richiesta completa) + voce 17:00-17:24",
+   "frame": "frame-171.png, frame-174.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-037",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-040",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-042",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-057",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Prima di eseguire la richiesta \"put this bot live\", Claude Code pone domande di chiarimento invece di agire alla cieca: \"quick questions: 1. Is the bot live? 2. Is it connected and already taking things live, or do I need to deploy it?\" e avvisa: \"Voting will get whipsawed in sideways markets. This is the reality check before going live.\" chiedendo infine: \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\"",
+   "ancora": "quick questions:\" \"1. Is the bot live?\" \"2. Is it connected and already taking things live, or do I need to deploy it?\" [...] \"Want to tweak the strategy parameters before starting the live bot, or are you good with running it as-is on testnet?\"",
+   "fonte": "RnNSRF4s9nk#20:42 (IDE Antigravity, scroll verso l'alto della chat) + voce 20:42-21:12",
+   "frame": "frame-208.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-054",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-042",
+     "tipo": "applica",
+     "perche": "Le domande di chiarimento prima di agire seguono la stessa logica del plan mode: proporre/chiarire prima di costruire."
+    },
+    {
+     "verso": "KA-058",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-071",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Il presentatore avverte che i tre step del metodo (chiarire il problema, definire l'architettura, implementare) non sono sufficienti da soli se non si sa come scrivere prompt efficaci con Claude — apre così il pitch di vendita finale.",
+   "ancora": "Questi tre step però non sono [...] sufficienti se non sapete come scrivere prompticaci con cloud e per farlo ho",
+   "fonte": "RnNSRF4s9nk#23:24 (talking head) + voce 23:24-23:30",
+   "frame": "frame-235.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-070",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-072",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-01",
+   "peso": "portante",
+   "tipo": "Framework / 4 modi contesto",
+   "contenuto": "4 modi per dare contesto a Claude, ordine di intelligenza crescente: allega tutto -> allega solo rilevante -> Cowork (cartella condivisa) -> Projects (lavori continuativi). Framework di scelta esplicito basato su durata/complessita' del task.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-09#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-09::KA-01",
+     "run": "cs2online-lezione-09",
+     "fonte": "cs2online-lezione-09#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-04",
+   "peso": "supporto",
+   "tipo": "Anti-pattern / link esterni",
+   "contenuto": "Link esterni sono 'uno dei modi peggiori' per dare contesto - preferire sempre un file (anche PDF) a un link. Unica eccezione dichiarata: Perplexity, con cui i link funzionano bene.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-09#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-09::KA-04",
+     "run": "cs2online-lezione-09",
+     "fonte": "cs2online-lezione-09#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-07",
+   "peso": "supporto",
+   "tipo": "Warning / rilevanza file",
+   "contenuto": "Warning ripetuto: non allegare file 'a caso per sentirti smart' - ogni file deve essere rilevante al task specifico, altrimenti 'lavori a vuoto'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-09#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-09::KA-07",
+     "run": "cs2online-lezione-09",
+     "fonte": "cs2online-lezione-09#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-02",
+   "peso": "portante",
+   "tipo": "Prompt verbatim",
+   "contenuto": "Prompt esatto di ricerca copywriting (osservato a schermo, verbatim): vincola l'AI a separare 'ricerca raccolta dall'utente' da 'ricerca fatta online', vieta il blog personale come fonte dati oggettivi ('solo ed esclusivamente ricerche scientifiche' per i dati, blog solo per opinioni).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#frame-t17m30s",
+   "frame": "frame-t17m30s-prompt-ricerca-parallelo.jpg",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-02",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#frame-t17m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-04",
+   "peso": "supporto",
+   "tipo": "Struttura documento",
+   "contenuto": "Struttura reale del documento di ricerca finale: Executive Summary -> Parte 1 Ricerca Interna (client overview) -> Parte 2 Ricerca Esterna (studi scientifici + blog solo opinioni) -> Sintesi operativa (Pain point numerati con fonte, es. '47% molla dopo 3 episodi[^2]', e Obiezioni da neutralizzare con contro-argomento specifico).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#frame-t21m30s",
+   "frame": "frame-t21m30s-markedit-documento-finale.jpg",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-04",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#frame-t21m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-03",
+   "peso": "supporto",
+   "tipo": "Struttura prompt",
+   "contenuto": "Struttura prompt con contesto limitato: contesto -> problema -> richiesta. Specificare sempre il numero di versioni desiderate (Meta permette piu' varianti nella stessa ad).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#panoramica",
+   "frame": "",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-03",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#panoramica"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-04",
+   "peso": "contesto",
+   "tipo": "Prompt verbatim",
+   "contenuto": "Prompt esatto osservato a schermo (Opus 4.6 Extended, file txt allegato 25 righe trascrizione): tono colloquiale/informale anche in contesto di lavoro reale con cliente pagante - stile diretto dell'autore.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#frame-t7m15s",
+   "frame": "frame-t7m15s-claude-prompt-primary-text.jpg",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-04",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#frame-t7m15s"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-05",
+   "peso": "portante",
+   "tipo": "principio-tecnico",
+   "contenuto": "Legge prompt-qualita: prompt vago produce output vago. Input specifico = output specifico. La qualita del prompt determina direttamente la qualita dell'output GPT.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:01:36",
+   "frame": "frame-050.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-05",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:01:36"
+    }
+   ]
+  },
+  {
+   "uid": "iy13HC9M8z0::KA-10",
+   "peso": "portante",
+   "tipo": "principio-tecnico",
+   "contenuto": "Prompt specifico migliora output: specificando tazza nera, alto ticket, mantenimento temperatura -> GPT include stile sofisticato, tecnologia avanzata, esperienza senza paragoni. Dimostrazione diretta: piu input specifico = piu output rilevante.",
+   "ancora": "",
+   "fonte": "iy13HC9M8z0#0:04:20",
+   "frame": "frame-130.png",
+   "run": "iy13HC9M8z0",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "iy13HC9M8z0::KA-10",
+     "run": "iy13HC9M8z0",
+     "fonte": "iy13HC9M8z0#0:04:20"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-033",
+   "peso": "portante",
+   "tipo": "standard",
+   "contenuto": "Le 6 regole 'Then/Now' di context engineering (trascrizione integrale dall'artefatto newsletter generato dalla routine, attribuite a Tariq/Anthropic): 1) Then rules, Now judgment (dal muro di regole a una riga di giudizio su codice che si legge come il contesto); 2) Then examples, Now interfaces (un campo ben nominato insegna meglio degli esempi); 3) Then everything upfront, Now progressive disclosure (un CLAUDE.md pesante consuma token a ogni sessione); 4) Then repeating yourself, Now simple tool descriptions (ripetere era un workaround per modelli deboli); 5) Then memory in CLAUDE.md, Now auto memory (i fatti vanno nel sistema di memoria, non nel file di guida); 6) Then simple specs, Now rich references (il riferimento a piu' alta fedelta' e' un documento ricco letto come codice, es. brand book HTML).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#15:40",
+   "frame": "frame-472.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-034",
+   "peso": "supporto",
+   "tipo": "standard",
+   "contenuto": "Claim riportato nell'artefatto newsletter: 'The engineer is Tariq, and the article is at 4.3 million views. They stripped what Anthropic did to themselves. They stripped over 80% of Claude Code's system prompt, and the coding advice did not drop a point.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#15:40",
+   "frame": "frame-472.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-015",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Ordine di lavoro dichiarato: 'PRIMA DISEGNO IL FLUSSO, POI GENERO'. Il flusso a 4 stadi (LA FONTE -> IL CERVELLO -> PANDADOC -> LA MEMORIA) viene disegnato a mano prima di scrivere una riga di prompt. Post-it sulla slide: 'Il flusso lo disegno io, poi Claude genera' e 'Claude scrive piu' veloce, ma il progetto e' mio'.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#11:08-11:20",
+   "frame": "frame-224.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-020",
+   "peso": "portante",
+   "tipo": "prompt",
+   "contenuto": "Clausola anti-allucinazione inserita in coda al Prompt 2, letta a schermo: 'Se una parte di queste istruzioni e' ambigua o sembra contraddittoria, fermati e spiegami il dubbio invece di indovinare. Non aggiungere librerie, file o funzionalita' extra non richieste.' (chiusa dal tag </in_caso_di_dubbio>). Al prompt sono allegati l'URL della dashboard PandaDoc e uno screenshot del template.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#16:06",
+   "frame": "frame-323.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-013",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Farsi produrre un diagramma ASCII PRIMA di costruire qualsiasi cosa di grafico (front-end, lavagna, layout). Il diagramma costa pochissimo perche' sono trattini, e permette di correggere lo stile prima di generare. Consiglio operativo esplicito: aggiungere questo step in testa a ogni skill di design.",
+   "ancora": "diagramma ASCII prima di costruire — togli il giro",
+   "fonte": "1Dyld3y-V7Y#11:41-13:29 (audio) + card lavagna",
+   "frame": "frame-201.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-014",
+     "tipo": "istanza-di"
+    },
+    {
+     "verso": "KA-031",
+     "tipo": "affine-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-029",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Controintuitivo e utile: accorciare i propri prompt e' inutile, vale lo 0,01% del conto. I prompt vaghi costano, ma non per i loro token: costano per il lavoro rifatto che innescano. Quindi la mossa giusta e' dare PIU' contesto, non meno.",
+   "ancora": "prompt piu' corti — lo 0,01% del conto",
+   "fonte": "1Dyld3y-V7Y#23:33 (card lavagna) + audio 24:35-24:48",
+   "frame": "frame-472.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-028",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-014",
+     "tipo": "istanza-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-06",
+   "peso": "portante",
+   "tipo": "Principio / step singoli",
+   "contenuto": "Principio 'step singoli, non compressi': dividere il workflow in step separati e validati uno per uno invece di comprimere tutto in un prompt unico - l'AI 'lavora meglio con step singoli e validati'.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-06",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-03",
+   "peso": "portante",
+   "tipo": "Principio operativo / muro 3-4",
+   "contenuto": "Il 'muro' tra livello 3 e 4 è concettuale non tecnico: l'AI non è un 'bottone magico', il salto richiede costruzione deliberata di contesto (info giuste, tante, ben strutturate — non PDF a caso). Conferma diretta del concetto Context Engineering già visto in lezione 2.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-03::KA-03",
+     "run": "cs2online-lezione-03",
+     "fonte": "cs2online-lezione-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-04",
+   "peso": "portante",
+   "tipo": "Front loading contesto (applicazione specifica)",
+   "contenuto": "Principio 'front loading del contesto' applicato all'inizio di un progetto cliente: investire ore all'inizio per costruire il miglior contesto possibile, poi riutilizzarlo (Project o Cowork) in ogni conversazione futura senza ripartire da zero.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-10#panoramica",
+   "frame": "",
+   "run": "cs2online-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-10::KA-04",
+     "run": "cs2online-lezione-10",
+     "fonte": "cs2online-lezione-10#panoramica"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v15::KA-037",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Nel prompt 3 e nel prompt di aggiornamento parametri, il flusso non e' un prompt unico eseguito ciecamente: Claude fa domande di chiarimento e Beggiato risponde a botta e risposta (es. 'senza questo margine i margini per servizio escono tutti uguali. Come procediamo? te li do per servizio, unico margine per tutti, lascia vuoto' - risposta: darli per i principali).",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#19:12-19:41",
+   "frame": "frame-249.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-147",
+   "peso": "portante",
+   "tipo": "anti-pattern",
+   "contenuto": "Le due letture dello stesso riquadro 'Prompt 9', rilette due volte per certezza, non coincidono: alle 100:30 il codice dice esplicitamente 'NON fare push da nessuna parte', mentre alle 103:42 lo stesso riquadro (stesso titolo, stesso sottotitolo) contiene un elenco numerato il cui punto 4 dice 'fai commit e push' — l'istruzione di sicurezza è sparita, sostituita dall'opposto. Non è un errore di lettura: il contenuto del box è realmente diverso tra i due momenti, probabilmente riscritto/espanso con l'AI tra una ripresa e l'altra. Nota operativa per l'Impero: un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un 'espandi questo prompt'.",
+   "ancora": "un'espansione di prompt via AI può capovolgere in silenzio un vincolo di sicurezza scritto a mano — da controllare sempre dopo un \"espandi questo prompt\".",
+   "fonte": "RnoC5IlOUhs#103:42 (confronto scena 251 vs scena 253) 🔎 doppia lettura per certezza",
+   "frame": "frame-1006.png, frame-1038.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-145",
+     "tipo": "contraddice"
+    },
+    {
+     "verso": "KA-146",
+     "tipo": "contraddice"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

@@ -1,0 +1,1018 @@
+{
+ "capitolo": "V.6",
+ "parte": "V.6-b",
+ "parte_n": 2,
+ "parti_totali": 2,
+ "titolo": "Skill, hook e comandi propri",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-bonus-04::KA-01",
+  "cs2online-bonus-04::KA-02",
+  "cs2online-bonus-04::KA-03",
+  "cs2online-bonus-04::KA-04",
+  "cs2online-bonus-04::KA-05",
+  "cs2online-bonus-04::KA-06",
+  "cs2online-bonus-04::KA-07",
+  "cs2online-bonus-04::KA-09",
+  "max18-v03-belli-token::KA-017",
+  "max18-v03-belli-token::KA-018",
+  "max18-v03-belli-token::KA-019",
+  "max18-v03-belli-token::KA-024",
+  "max18-v03-belli-token::KA-032",
+  "max18-v03-belli-token::KA-034",
+  "max18-v03-belli-token::KA-035",
+  "max18-v03-belli-token::KA-036",
+  "max18-v03-belli-token::KA-044",
+  "max17-v03-nico-seo::KA-009",
+  "max18-v05-RnNSRF4s9nk::KA-014",
+  "max18-v05-RnNSRF4s9nk::KA-015",
+  "max18-v05-RnNSRF4s9nk::KA-016",
+  "max18-v05-RnNSRF4s9nk::KA-020",
+  "max18-v05-RnNSRF4s9nk::KA-029",
+  "max18-v05-RnNSRF4s9nk::KA-039",
+  "max18-v05-RnNSRF4s9nk::KA-053",
+  "max18-v05-RnNSRF4s9nk::KA-054",
+  "max17-v07-rizzo-prompt::KA-038",
+  "max17-v07-rizzo-prompt::KA-039",
+  "max17-v07-rizzo-prompt::KA-040",
+  "max17-v07-rizzo-prompt::KA-058",
+  "max17-v02-beggiato-team::KA-016",
+  "max17-v02-beggiato-team::KA-017",
+  "max17-v02-beggiato-team::KA-020",
+  "max17-v02-beggiato-team::KA-076",
+  "cs2online-bonus-06::KA-07",
+  "max17-v08-herk-brain::KA-035",
+  "max17-v08-herk-brain::KA-036",
+  "max17-v15::KA-026",
+  "max17-v15::KA-027",
+  "max18-v01-second-brain-obsidian::KA-050",
+  "max18-v02-karpathy-agenti::KA-019",
+  "max18-v02-karpathy-agenti::KA-021",
+  "cs2online-bonus-02::KA-08"
+ ],
+ "fonti_integrali": {
+  "cs2online-bonus-04": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-04\\contenuto-integrale.md"
+  ],
+  "max18-v03-belli-token": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\video-analysis.md"
+  ],
+  "max17-v03-nico-seo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v03-nico-seo\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v03-nico-seo\\video-analysis.md"
+  ],
+  "max18-v05-RnNSRF4s9nk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-001-020.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-021-040.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-041-060.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-061-080.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-081-098.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\RnNSRF4s9nk\\contenuto-integrale.md"
+  ],
+  "max17-v07-rizzo-prompt": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\video-analysis.md"
+  ],
+  "max17-v02-beggiato-team": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\video-analysis.md"
+  ],
+  "cs2online-bonus-06": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-06\\contenuto-integrale.md"
+  ],
+  "max17-v08-herk-brain": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\video-analysis.md"
+  ],
+  "max17-v15": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\video-analysis.md"
+  ],
+  "max18-v01-second-brain-obsidian": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-091-117.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-116-130.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-131-145.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-178-204.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-193-207.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-208-222.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-223-237.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-238-250.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-299-313.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-314-328.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-329-352.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-A.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-B.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C2.md"
+  ],
+  "max18-v02-karpathy-agenti": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\video-analysis.md"
+  ],
+  "cs2online-bonus-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-02\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-bonus-04::KA-01",
+   "peso": "supporto",
+   "tipo": "Problema risolto",
+   "contenuto": "Problema risolto dalle Skills: il metodo tradizionale (riallegare sempre gli stessi file/prompt) spreca context window, token e soldi; troppi documenti allegati rischiano di far 'skippare' a Claude informazioni importanti per limiti di context.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-01",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-02",
+   "peso": "portante",
+   "tipo": "Meccanismo / analogia",
+   "contenuto": "Meccanismo Skills: Claude legge solo il 'front matter' (nome+descrizione, la 'copertina') di ogni skill disponibile, carica il contenuto completo SOLO se la description matcha la richiesta - analogia 'libri con copertina in una bancarella'.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#panoramica+frame-t4m30s+t7m30s",
+   "frame": "frame-t4m30s-whiteboard-libro-analogia.jpg",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-02",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#panoramica+frame-t4m30s+t7m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-03",
+   "peso": "portante",
+   "tipo": "Framework / 4 livelli risposta",
+   "contenuto": "4 livelli di risposta AI: (1) risposta da memoria, (2) ricerca online, (3) documenti allegati (limitati da tempo/context), (4) skills (selezione intelligente via front matter).",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-03",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-04",
+   "peso": "portante",
+   "tipo": "Struttura tecnica",
+   "contenuto": "Struttura tecnica: file SKILL.md con front matter YAML delimitato da --- contenente name (trattini invece di spazi) e description (cosa fa + quando usarla) - la description e' 'la parte piu' importante' perche' determina se Claude carica la skill.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#cosa-hai-imparato+frame-t13m30s",
+   "frame": "frame-t13m30s-excalidraw-skill-md.jpg",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-04",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#cosa-hai-imparato+frame-t13m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-05",
+   "peso": "supporto",
+   "tipo": "Requisiti ufficiali verbatim",
+   "contenuto": "Requisiti ufficiali verbatim per l'upload (osservati nel dialog reale, non nel testo del corso): '.md file must contain skill name and description formatted in YAML' - '.zip or .skill file must include a SKILL.md file'.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#frame-t19m00s",
+   "frame": "frame-t19m00s-upload-skill-dialog-requirements.jpg",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-05",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#frame-t19m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-06",
+   "peso": "portante",
+   "tipo": "Struttura cartella",
+   "contenuto": "Struttura cartella completa: SKILL.md (obbligatorio) + references/ (opzionale, file MD/TXT/PDF richiamabili per step specifici) + assets/ (opzionale, immagini/supporto) + codici eseguibili (avanzato, non approfondito).",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-06",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-07",
+   "peso": "supporto",
+   "tipo": "Procedura",
+   "contenuto": "Procedura di caricamento: creare cartella sul Mac con SKILL.md + references -> zippare la cartella -> Claude -> Customize -> Skills -> Upload Skill.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#cosa-hai-imparato+frame-t14m30s",
+   "frame": "frame-t14m30s-markedit-folder-skilltest.jpg",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-07",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#cosa-hai-imparato+frame-t14m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-08",
+   "peso": "contesto",
+   "tipo": "Esempio osservato",
+   "contenuto": "Esempio ufficiale osservato nella lista Skills di Claude: 'skill-creator', skill di Anthropic stessa per creare altre skill - presente come esempio nativo nell'interfaccia.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#frame-t18m00s",
+   "frame": "frame-t18m00s-claude-skills-list.jpg",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-08",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#frame-t18m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-04::KA-09",
+   "peso": "portante",
+   "tipo": "Metodo implementazione",
+   "contenuto": "Metodo in 2 step per implementare le Skills nel proprio lavoro: (1) identifica i processi ripetitivi dove usi l'AI, (2) per ognuno crea una skill dedicata. Esempio citato: skill per onboarding cliente con references multiple (discovery call, onboarding, overview).",
+   "ancora": "",
+   "fonte": "cs2online-bonus-04#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-04",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-04::KA-09",
+     "run": "cs2online-bonus-04",
+     "fonte": "cs2online-bonus-04#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-017",
+   "peso": "portante",
+   "tipo": "architettura",
+   "contenuto": "Preferire una CLI a un MCP e' definito dall'autore 'il taglio piu' grosso della lista, e non e' un tool: e' scegliere un altro modo di collegare le cose'. Un MCP carica all'avvio il manuale di TUTTI i suoi metodi e l'indice cresce a ogni tool aggiunto; una CLI costa zero finche' non la chiami, e basta una riga nel CLAUDE.md perche' l'agente sappia che esiste. A schermo: MCP 26.000 token contro CLI ~40 token, e solo quando serve.",
+   "ancora": "MCP: il manuale entra all'avvio / CLI: zero finche' non la chiami",
+   "fonte": "1Dyld3y-V7Y#24:52-28:30 (audio) + riquadro lavagna letto per intero",
+   "frame": "frame-570.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-015",
+     "tipo": "generalizza"
+    },
+    {
+     "verso": "KA-018",
+     "tipo": "motivato-da"
+    },
+    {
+     "verso": "KA-016",
+     "tipo": "verificato-da"
+    },
+    {
+     "verso": "KA-019",
+     "tipo": "istanza-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-018",
+   "peso": "supporto",
+   "tipo": "architettura",
+   "contenuto": "Perche' non usare direttamente l'API invece dell'MCP: le risposte API nascono per essere lette da umani, quindi sono JSON lunghissimi che finiscono interi nel contesto. La CLI risolve i due problemi insieme: non carica i manuali a priori (problema MCP) e non restituisce JSON gonfi (problema API). Mostrato a schermo con una ricerca immagini 'api response json' piena di JSON lunghi.",
+   "ancora": "le chiamate API nascono per essere lette da umani",
+   "fonte": "1Dyld3y-V7Y#26:40-27:28 (audio) + #26:42 (schermo)",
+   "frame": "frame-535.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-017",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-019",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Regola generale che l'autore tiene scritta nel proprio CLAUDE.md: cercare sempre se esiste una CLI prima di installare un MCP. Esempio dimostrato a schermo con Supabase: invece del Supabase MCP Server (la cui doc ufficiale avverte che collegare un LLM ai progetti comporta rischi di sicurezza), cercare 'supabase cli'.",
+   "ancora": "ho nel mio cloud cerca sempre se ci sono cli petto ad MCP",
+   "fonte": "1Dyld3y-V7Y#28:24-28:32 (audio) + #28:15-28:18 (schermo)",
+   "frame": "frame-566.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-017",
+     "tipo": "istanzia"
+    },
+    {
+     "verso": "KA-020",
+     "tipo": "vive-dentro"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-024",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Le skill installate e le loro descrizioni si caricano a OGNI sessione, comprese quelle che non lanci mai: vale 'migliaia di token a sessione'. Le due mosse sono archiviare le skill che non usi e accorciare le descrizioni di quelle che restano. Formula della lavagna: 'restano installate, smettono di pesare'. L'autore consiglia di far accorciare le descrizioni a Claude e poi fargli fare un test end-to-end che le skill funzionino ancora.",
+   "ancora": "Skill e descrizioni si caricano ogni volta, anche quelle che non parti mai.",
+   "fonte": "1Dyld3y-V7Y#16:45-17:24 (audio) + card lavagna",
+   "frame": "frame-341.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-004",
+     "tipo": "riduce"
+    },
+    {
+     "verso": "KA-046",
+     "tipo": "dimostrato-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-032",
+   "peso": "supporto",
+   "tipo": "strumento",
+   "contenuto": "I due tool di compressione contesto nominati e bocciati sono Caveman e RTK (loghi mostrati accanto alla card). Giudizio dell'autore: 'li ho provati tutti. Comprimono l'unica parte del conto che non conta, e ti mettono in mezzo uno strato fragile'; a voce aggiunge che Caveman 'spesso salta informazioni' e 'lascia cose fondamentali'. Il README di Caveman mostrato a schermo rivendica invece '33.2% fewer provider-reported input tokens' e un esempio 69 token -> 19 token. Le due affermazioni sono in conflitto diretto e NESSUNA e' stata verificata da noi.",
+   "ancora": "i tool che promettono il 90% — fra zero e negativo",
+   "fonte": "1Dyld3y-V7Y#23:33 (card + loghi) + #24:00 (README a schermo) + audio 23:50-24:52",
+   "frame": "frame-480.png, frame-481.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-028",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-035",
+     "tipo": "sostituito-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-034",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Euristica per capire cosa deve diventare un hook invece di una riga nel CLAUDE.md: 'ogni ricordati di e' un candidato hook: e' l'unica categoria di consiglio che sopravvive al fatto che te ne dimentichi'. Motivo: un hook e' deterministico e scatta sempre, mentre una regola scritta nel CLAUDE.md e' un prompt, e puo' capitare che il modello non la esegua.",
+   "ancora": "Ogni 'ricordati di' e' un candidato hook",
+   "fonte": "1Dyld3y-V7Y#32:33 (riquadro lavagna) + audio 32:46-33:16",
+   "frame": "frame-652.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-031",
+     "tipo": "specializza"
+    },
+    {
+     "verso": "KA-033",
+     "tipo": "affine-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-035",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Alternativa proposta ai compressori di contesto: cambiare l'output style di Claude Code (Settings -> output style -> 'conciso'), che restituisce il risultato senza preamboli ne' epiloghi. Zero installazioni, zero strato in mezzo.",
+   "ancora": "la cosa che ha molto piu' senso e' mettere ad esempio conciso",
+   "fonte": "1Dyld3y-V7Y#24:19-24:52",
+   "frame": "n/a (menu mostrato ma non leggibile a 640x360)",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-032",
+     "tipo": "sostituisce"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-036",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "L'hook PDF dell'autore, documentato a schermo da Claude stesso: file ~/.claude/hooks/pdf-read-as-text.py, registrato in ~/.claude/settings.json come PreToolUse con matcher Read, globale su tutti i progetti. Estrae il testo con 'pdftotext -layout', lo mette in cache in ~/.claude/pdf-text-cache/<nome>.<hash>.txt, e riscrive il file_path verso quel .txt cosi' le pagine non entrano in contesto come immagini renderizzate. Si tira indietro da solo se il testo estratto sta sotto 200 caratteri per pagina o se pdftotext manca. Override manuale: 'touch ~/.claude/pdf-visual-once', consumato una volta sola. Limite dichiarato: sui PDF a colonne pdftotext appiattisce le colonne.",
+   "ancora": "~/.claude/hooks/pdf-read-as-text.py ... PreToolUse con matcher Read",
+   "fonte": "1Dyld3y-V7Y#19:12 (schermata di Claude che descrive l'hook, letta per intero)",
+   "frame": "frame-385.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-034",
+     "tipo": "istanza-di"
+    },
+    {
+     "verso": "KA-037",
+     "tipo": "giustificato-da"
+    },
+    {
+     "verso": "KA-028",
+     "tipo": "rimedia-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-044",
+   "peso": "portante",
+   "tipo": "architettura",
+   "contenuto": "Metodo di lavoro dell'autore visibile trasversalmente nel video: le regole non vivono in testa ma in file (style.md per le regole editoriali, script.md per lo script, CLAUDE.md per le regole operative, hook per le regole deterministiche). Ogni volta che una decisione vale oltre il caso singolo, viene scritta nel file che la fara' riapplicare da sola.",
+   "ancora": "l'ho scritta come regola in style.md, perche' vale oltre questo video",
+   "fonte": "1Dyld3y-V7Y#10:06 + #15:42 (second brain in VS Code) + #19:12 (hook)",
+   "frame": "frame-203.png, frame-315.png, frame-385.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-034",
+     "tipo": "generalizza"
+    },
+    {
+     "verso": "KA-020",
+     "tipo": "generalizza"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v03-nico-seo::KA-009",
+   "peso": "supporto",
+   "tipo": "tool",
+   "contenuto": "Zernio — piattaforma di connettori per Claude/agenti. Landing: 'Ship Your Reddit Integration In Minutes, Not Months — Stop wrestling with Reddit's API. Zernio handles OAuth, rate limits, subreddit rules, and API changes — so you can focus on building your product.'",
+   "ancora": "",
+   "fonte": "E8Ax92etrMc#03:04",
+   "frame": "frame-093.png",
+   "run": "max17-v03-nico-seo",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v03-nico-seo::KA-010",
+   "peso": "contesto",
+   "tipo": "tool",
+   "contenuto": "Zernio — piattaforme disponibili: Twitter/X, TikTok, LinkedIn, YouTube, Discord, Bluesky, Snapchat, Instagram, WhatsApp, Facebook, Threads, Pinterest, Telegram, Google Business, Slack, Google Ads, TikTok Ads, LinkedIn Ads, Pinterest Ads, X Ads, OpenAI Ads, Meta Ads, Reddit. Telephony: Phone Numbers, SMS & MMS, Voice & Calls. APIs: Posting, Comments, Messaging, Analytics, Ads, Comment to DM. For Agents: AI Agents, Claude Code, Cursor, Codex, OpenClaw, Hermes.",
+   "ancora": "",
+   "fonte": "E8Ax92etrMc#02:58",
+   "frame": "frame-090.png",
+   "run": "max17-v03-nico-seo",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v03-nico-seo::KA-011",
+   "peso": "contesto",
+   "tipo": "soglia",
+   "contenuto": "Zernio: connettere fino a 2 account è completamente gratis.",
+   "ancora": "",
+   "fonte": "E8Ax92etrMc#03:04",
+   "frame": "frame-093.png",
+   "run": "max17-v03-nico-seo",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v03-nico-seo::KA-012",
+   "peso": "contesto",
+   "tipo": "comando",
+   "contenuto": "import Zernio from \"@zernio/node\"; const zernio = new Zernio(process.env.ZERNIO_API_KEY) — snippet SDK visibile sulla landing Zernio.",
+   "ancora": "",
+   "fonte": "E8Ax92etrMc#03:04",
+   "frame": "frame-093.png",
+   "run": "max17-v03-nico-seo",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v03-nico-seo::KA-013",
+   "peso": "contesto",
+   "tipo": "comando",
+   "contenuto": "Setup Reddit su Zernio: create account → 'create a new connection' → cercare Reddit → autenticare/autorizzare l'account Reddit → click 'Allow'.",
+   "ancora": "",
+   "fonte": "E8Ax92etrMc#03:10",
+   "frame": "frame-096.png",
+   "run": "max17-v03-nico-seo",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v03-nico-seo::KA-014",
+   "peso": "contesto",
+   "tipo": "comando",
+   "contenuto": "Collegare Zernio a Claude: Settings → Customize → Connectors → 'Add new' → 'Add custom connector'. Campo 'Remote MCP server URL' → mcp.zernio.com/mcp. Campo 'Name' → libero (es. Zernio). Nessuna advanced setting necessaria se loggati a Zernio nello stesso browser. Confermare 'Connect' nel popup.",
+   "ancora": "",
+   "fonte": "E8Ax92etrMc#03:23",
+   "frame": "frame-100.png",
+   "run": "max17-v03-nico-seo",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v03-nico-seo::KA-015",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "URL connettore MCP custom esatto: mcp.zernio.com/mcp",
+   "ancora": "",
+   "fonte": "E8Ax92etrMc#03:43",
+   "frame": "frame-100.png",
+   "run": "max17-v03-nico-seo",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v03-nico-seo::KA-018",
+   "peso": "contesto",
+   "tipo": "tool",
+   "contenuto": "Interfaccia chat Claude usata: modello selezionato 'Opus 5', effort 'High'. Icona/connettore 'vidiQ' visibile accanto al selettore modello (non spiegata nel video).",
+   "ancora": "",
+   "fonte": "E8Ax92etrMc#04:34",
+   "frame": "frame-138.png",
+   "run": "max17-v03-nico-seo",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-014",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Prompt reale usato nell'IDE \"Antigravity\" per generare lo schema a blocchi con la skill /diagram-generator: \"I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on). The goal is to clearly display the building blocks. I will give you an example to help you stay in the right direction. If I say I need to build a trading bot, it should include multiple parts, for example: - API connection or platform choice - API connection and bot strategy - and so on /diagram-generator is the skill\". Da questo prompt è stato generato esattamente lo schema a tre livelli \"TRADING BOT BITCOIN SU BINANCE\".",
+   "ancora": "I am trying to build a trading bot for a YouTube video. It should analyze Bitcoin candles on Binance and figure out the best strategy to implement for trading. I would like you to draw me a diagram showing the skills you have, targeted at non-technical people (entrepreneurs and others who do not understand much about finance and so on).",
+   "fonte": "RnNSRF4s9nk#5:12 (IDE Antigravity, pannello chat) + voce 5:12-5:30",
+   "frame": "frame-053.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-015",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-006",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-015",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "/diagram-generator è una skill personalizzata del presentatore, richiamata esplicitamente nel prompt (\"/diagram-generator is the skill\"), che genera diagrammi ad alto livello a partire da una descrizione testuale del sistema da costruire, pensati per un pubblico non tecnico.",
+   "ancora": "/diagram-generator is the skill",
+   "fonte": "RnNSRF4s9nk#5:12 (IDE Antigravity) + voce 5:12",
+   "frame": "frame-053.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-016",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-016",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Meccanismo dichiarato dietro la skill /diagram-generator: il presentatore ha istruito il bot a restare ad alto livello, cercare di decomporre il task in micro-sezioni, e solo dopo disegnare il diagramma risultante.",
+   "ancora": "...semplicemente questa è una skill nella quale io ho detto al bot, 'Hei, quando ti do un richiesta per farmi un diagramma', stai ad alto livello, cerca di decomporre il task in micro sezioni e dopo",
+   "fonte": "RnNSRF4s9nk#7:00 (IDE Antigravity) + voce 7:00-7:12",
+   "frame": "frame-071.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-015",
+     "tipo": "definisce"
+    },
+    {
+     "verso": "KA-014",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-020",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Prompt reale `/prompt-contracts` usato per generare la strategia di trading tramite ricerca parallela: \"I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades. What I want is a bot that looks at these candles in the Binance app and then trades. I need your help with the following: please come up with a strategy I can use to create this bot successfully. Please know that this is a demo and it will be run in a sandbox with fake money, so no real harm or financial advice will be given. However, I still want the bot to be fully functioning and not biased by the demo. I need you to use agent polling to scrape and find each individual strategy my bot could use\".",
+   "ancora": "/prompt-contracts I am building a bot on Claude Code that should trade Bitcoin on a daily basis, doing daily trades.",
+   "fonte": "RnNSRF4s9nk#8:06 (IDE Antigravity) + voce 8:06-8:36",
+   "frame": "frame-082.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-021",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-022",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-029",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Per generare il flowchart architetturale, Claude Code prima legge la skill Excalidraw (\"Let me read the excalidraw skill first\" / Read SKILL.md), poi crea il file `.tmp/btc_daily_trading_bot.excalidraw`, ed esegue uno script Python per applicare i colori pastello: comando bash `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media Manager\" && python3 .claude/skills/excalidraw-flowchart/colorize.py .tmp/btc_daily_trad...`. Il file risultante pesa 126.738 byte (~127KB).",
+   "ancora": "Bash\" \"Apply pastel colors to flowchart\" - riga \"IN\": `cd \"/Users/giovannibeggiato/Desktop/Agentic Personal/Social Media...` [...] \"Flowchart generato:\" `.tmp/btc_daily_trading_bot.excalidraw` \"(127KB).\"",
+   "fonte": "RnNSRF4s9nk#13:30 (IDE Antigravity, log Claude Code) e #14:00 + voce 13:30-14:00",
+   "frame": "frame-136.png, frame-141.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-030",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-016",
+     "tipo": "applica",
+     "perche": "Anche questa skill segue lo stesso mental model visivo già dichiarato per /diagram-generator: rappresentare l'architettura prima di implementarla."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-039",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Menu \"Slash Commands\" apparso in una nuova sessione vuota di Claude Code, lista completa visibile: /pre-mortem (selezionato), /prompt-contracts, /loop, /reverse-prompting, /step-back-prompting, /fewer-permission-prompts, /skool-video-upload, /audit, /deploy-check, /contract.",
+   "ancora": "`/pre-mortem` (selezionato) `/prompt-contracts` `/loop` `/reverse-prompting` `/step-back-prompting` `/fewer-permission-prompts` `/skool-video-upload` `/audit` `/deploy-check` `/contract`",
+   "fonte": "RnNSRF4s9nk#17:24 (IDE Antigravity, nuova sessione Claude Code) + voce 17:24-17:36",
+   "frame": "frame-175.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-020",
+     "tipo": "parte-di",
+     "perche": "/prompt-contracts, già usato in scena 31, compare qui nel menu completo dei comandi disponibili nella toolkit del presentatore."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-053",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Secondo utilizzo dello slash command `/prompt-contracts`, questa volta per chiarire cosa significhi mettere il bot \"live\": \"/prompt-contracts please put this bot live. What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\". Il presentatore aggiunge in un riquadro: \"always fake money ofc\".",
+   "ancora": "/prompt-contracts   please put this bot live.\" [...] \"What does that mean? I should be able to see the trades in my Binance account. You should have deployed it already, and there should be so many other things there too. Please also tell me how I would be able to see it and all of that. If you don't know how to do it, use agent polling\"",
+   "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, timestamp come riportato nella fonte) + voce 20:12-20:30",
+   "frame": "frame-204.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-052",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-054",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-020",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-054",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Prima di eseguire, Claude Code propone un \"Contract\" formale tramite `/prompt-contracts`: \"Got it -- fake money only, always. Here's the contract:\" seguito dal titolo \"### Contract\", poi \"GOAL: Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\" e \"CONSTRAINTS: Binance Testnet ONLY (sandbox mode, testnet.binance.vision)\" (elenco vincoli parzialmente tagliato dal frame, prosegue con righe troncate \"Run as pe...\" e \"Must veri...\", seguite da una sezione \"FORMAT\").",
+   "ancora": "Got it -- fake money only, always. Here's the contract:\" linea separatrice, poi titolo grande \"### Contract\" [...] \"GOAL:** Bot is running live on Binance Testnet (fake money), executing real trades visible in the testnet account. Gio can see balances, orders, and trade history at testnet.binance.vision.\"",
+   "fonte": "RnNSRF4s9nk#18:42 (IDE Antigravity, timestamp come riportato nella fonte) + voce 20:12-20:30",
+   "frame": "frame-204.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-053",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-041",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-058",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-038",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "SINTASSI ESATTA letta dall'autocomplete di Claude Code a schermo: '/loop [interval] [prompt]'. Esempi verbali: 'ogni mattina alle 9:00 prendimi le informazioni da quella parte e aggiorna il codice, fai partire i test'; '/loop ogni settimana'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#19:23",
+   "frame": "frame-590.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-039",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "SINTASSI ESATTA letta dall'autocomplete di Claude Code a schermo: '/goal [<condition> | clear]'. ATTENZIONE: la trascrizione automatica del video rende questo comando come 'slg', 'gol', 'slash gol' - a schermo e' inequivocabilmente /goal, verificato sui frame 585-643.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#19:41",
+   "frame": "frame-620.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-040",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Esempio /goal digitato dal vivo a schermo: '/goal sdasa | fai al massimo 100 tentativi' ('sdasa' e' testo-riempitivo; il punto e' la barra verticale che separa l'obiettivo dalla condizione di terminazione).",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#19:56",
+   "frame": "frame-601.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-041",
+   "peso": "contesto",
+   "tipo": "prompt",
+   "contenuto": "Secondo esempio /goal digitato dal vivo a schermo: '/goal effetuami la migrazione di questo servizio' (refuso dell'autore riportato tale e quale).",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#20:48",
+   "frame": "frame-634.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-058",
+   "peso": "portante",
+   "tipo": "prompt",
+   "contenuto": "IL GOAL DELLA DEMO, digitato dal vivo e trascritto integralmente carattere per carattere dai frame 866-890: '/goal migliora i tempi impiegati per fare il prodotto fra matrici in questo script python, ad ogni test che fai scrivilo su di un file markdown scrivendo anche in breve le modifiche fatte per avere tracciabilita' | fai al massimo 10 tentativi di ottimizzazione'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#28:48",
+   "frame": "frame-890.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-016",
+   "peso": "supporto",
+   "tipo": "file",
+   "contenuto": "copywriter-pmi.md — frontmatter: name: copywriter-pmi; tools: Read, Bash, WebFetch, WebSearch; description: contributo qualitativo senza voto, riscrive titolo principale/sottotitolo/CTA in versione prima/dopo per mostrare al titolare.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#11:22",
+   "frame": "frame-342.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-017",
+   "peso": "supporto",
+   "tipo": "file",
+   "contenuto": "copywriter-pmi.md corpo: 'Non dai voti. Prendi i 3 testi più deboli del sito e li riscrivi davanti ai suoi occhi, in versione prima/dopo.' Ordine di rassegna: 1) titolo principale Homepage, 2) sottotitolo/frase di supporto, 3) call to action dei bottoni, 4) titoli pagine di servizio/prodotto generici.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#11:22",
+   "frame": "frame-342.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-020",
+   "peso": "supporto",
+   "tipo": "architettura",
+   "contenuto": "Sotto labs/team-marketing-AI/: assets, scripts, skills/ con 11 skill: marketing-ads, marketing-analisi, marketing-competitor, marketing-contenuti, marketing-email, marketing-funnel, marketing-landing, marketing-opportunita, marketing-piano, marketing-report, marketing-seo, marketing-social.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#0:06 e 12:14",
+   "frame": "frame-004.png / frame-364.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-076",
+   "peso": "supporto",
+   "tipo": "architettura",
+   "contenuto": "Struttura file agente vista nella sidebar: analista-competitor.md, copywriter-pmi.md (selezionato/aperto), esperto-conversioni.md, specialista-seo.md all'interno di una cartella 'squadra'.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#11:22",
+   "frame": "frame-342.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-07",
+   "peso": "supporto",
+   "tipo": "Struttura reference multi-file",
+   "contenuto": "Struttura reference multi-file per skill complessa: esempio.md (preventivo reale passato, per stile/tono), struttura-preventivo.md (struttura pagine), brand-guidelines.json - collegati e visualizzabili con graph view di Obsidian.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#cosa-hai-imparato+frame-t18m00s",
+   "frame": "frame-t18m00s-struttura-preventivo-md.jpg",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-07",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#cosa-hai-imparato+frame-t18m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-09",
+   "peso": "contesto",
+   "tipo": "Asset automatici",
+   "contenuto": "Possibilita' di aggiungere asset (foto, immagini) dentro la cartella skill per farli inserire automaticamente nel documento finale generato.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-09",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-035",
+   "peso": "portante",
+   "tipo": "strumento",
+   "contenuto": "Skill custom /grill-me (originariamente da Matt Pocock, personalizzata da Nate Herk, distribuita nella community AIS): 'Interview the user relentlessly about a plan, design, or topic, checkpointing every answer to a brainstorm file so nothing is lost.' Usata per popolare knowledge graph e wiki con dati sufficienti (es. 'Grill me about client A').",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#20:40-21:02",
+   "frame": "frame-672.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-036",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Menu slash-command reale di Herk-2 (digitando /gr): /grill-me, /excalidraw-diagram (default per richieste di diagrammi editabili), /community-response, /claude-api (reference Claude API/Anthropic SDK - model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting), /upgrade (a Max per rate limit piu' alti e piu' Opus), /background, /context (visualizza uso contesto come griglia colorata), /visualizations, /herk-thumbnails, /fork (spawna agente in background che eredita la conversazione completa).",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#20:56-22:22",
+   "frame": "frame-672.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-026",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Installazione delle skill mostrata dal vivo: prompt in chat 'Hey, all'interno del mio desktop ci sono delle skill.zip che mi piacerebbe che tu importassi all'interno di questo progetto. Sono una lista finanziaria e un AI CFO. Dimmi una volta che lo hai fatto.' Claude cerca sul Desktop, trova skill-ai-cfo.zip, elenca il contenuto prima di estrarlo dichiarando il motivo esplicito ('sono istruzioni che finirebbero nel mio contesto, quindi le guardo prima di installarle'), verifica che siano legittime e coerenti col sistema, le installa come skill di progetto: 10 file in tutto dentro .claude/skills/, struttura ai-cfo/{assets/, references/, SKILL.md} e analista-finanziario/{references/, SKILL.md}.",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#28:40-29:33",
+   "frame": "frame-445.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-027",
+   "peso": "supporto",
+   "tipo": "file",
+   "contenuto": "Contenuto del SKILL.md della skill ai-cfo, letto per intero a schermo. Name: ai-cfo. Description: 'Direttore finanziario che legge analisi gia' fatte e le trasforma in decisioni. Usa ogni volta che arrivano risultati finanziari da interpretare: KPI, conto economico, margini, scadenziario clienti o fornitori, punteggio di rischio, previsione incassi, ciclo del circolante, budget contro consuntivo, alert, pacchetti di reporting direzionale o export di dashboard. Si attiva anche a frasi come cosa vuol dire questo per l'azienda, guarda questi numeri da CFO, cosa devo fare, com'e' andato il mese. NON fa contabilita', non registra documenti, non riconcilia, non ricalcola: presuppone che l'analisi sia gia' stata fatta.'",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#29:44 (frame statico)",
+   "frame": "frame-447.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-050",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Contenuto integrale del file `SKILL.md` (skill \"skill-creator\", progetto \"Social Media Manager\") mostrato come esempio concreto di frontmatter applicato: frontmatter — `name: skill-creator`; `description: Create new skills, improve existing ones, or capture a working session as a reusable skill. Use when the user wants to create/improve/fix a skill, add a workflow or automation, says make this a skill, or /skill-creator.`; `allowed-tools: Bash, Read, Write, Edit, Glob, Grep, AskUserQuestion`. Corpo: \"# Skill Creator\", \"## Goal\" — Turn any repeated multi-step workflow into a reusable slash command with proper error handling; Create new skills and iteratively improve existing ones for this project; Read `references/skill-writing-guide.md` for the full conventions reference (Golden Rules, skill types, script boilerplate, writing style guide). \"## When to Create a Skill\" — un processo merita una skill propria quando: è ripetuto 3+ volte tra conversazioni; coinvolge più passaggi che beneficiano di orchestrazione strutturata; richiede tool specifici (browser automation, file editing, API calls); l'utente chiede esplicitamente di automatizzare qualcosa. \"## Step 1: Capture Intent\" — prima di scrivere qualsiasi cosa, intervistare l'utente per estrarre passi, tool usati e correzioni fatte, poi confermare; domande da chiarire: 1) What problem does this solve? (il WHY, non solo il WHAT); 2) What type of skill is it?; 3) When should it trigger?; 4) What tools does it need?; 5) Does it overlap with existing skills?. \"## Step 2: Choose a Pattern\" — leggere 1-2 skill esistenti dello stesso tipo, con tabella di riferimento (Content generation → linkedin-post, youtube-description; Pipeline → shorts; Browser automation → riga finale troncata dal bordo del frame).",
+   "ancora": "name: skill-creator",
+   "fonte": "RnoC5IlOUhs#43:36 (editor con SKILL.md aperto per intero, sidebar skills espansa) + voce 43:36-44:12",
+   "frame": "frame-0437.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-049",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-199",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Stessa risposta, sezione 'Dove sono finiti i file' riportata per intero: 'Skill: .claude/skills/SKILL.md — l'orchestratore coi tre comandi e le regole.' — 'Template sessione: workspace/journal/_templates/_template-sessione.md' — 'Template daily: workspace/journal/_templates/_template-daily.md' — 'Cartelle del diario (create): workspace/journal/sessions/ e workspace/journal/daily/' Poi: 'Regole rispettate dentro la skill: date sempre YYYY-MM-DD, frontmatter conforme a _template-nota.md, ogni nota di diario con almeno un [[wikilink]] a un'entità reale (se manca, te lo chiede, nessuna entità inventata.' Testo tagliato in fondo: 'Vuoi che pr[...]'. Nella sidebar Explorer compare per la prima volta una cartella .claude in cima all'albero, appena creata dalla skill stessa.",
+   "ancora": "Dove sono finiti i file",
+   "fonte": "RnoC5IlOUhs#136:12 (scena 340)",
+   "frame": "frame-1355.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-200",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-019",
+   "peso": "supporto",
+   "tipo": "file",
+   "contenuto": "Struttura reale della skill generata, letta nell'Explorer dell'IDE e coincidente con la slide di architettura: .claude/skills/genera-proposta/ contenente scripts/ (con __pycache__/, create_proposal.py, inspect_template.py, pandadoc.py) e SKILL.md.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#17:15",
+   "frame": "frame-345.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-021",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Definizione di 'skill' data dall'autore: 'la skill non e' altro che un modo di dire a Claude: automatizza questo workflow, perche' gli step sono sempre quelli, e quindi abbiamo automatizzato un piccolo pezzo di processo.'",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#16:57-17:10",
+   "frame": "",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-08",
+   "peso": "supporto",
+   "tipo": "Concetto / anticipazione skill",
+   "contenuto": "Il sistema costruito (istruzioni+contesto riutilizzabili+workflow ripetibile) viene esplicitamente definito dall'autore come 'di fatto una skill di Claude' - anticipazione concettuale del meccanismo Claude Skills (trattato in Bonus 4).",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-08",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#cosa-hai-imparato"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "capitolo": "V.14",
+ "parte": "V.14-b",
+ "parte_n": 2,
+ "parti_totali": 2,
+ "titolo": "Workflow e automazione (n8n e simili)",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-lezione-11::KA-01",
+  "cs2online-lezione-11::KA-02",
+  "cs2online-lezione-03::KA-06",
+  "max17-v08-herk-brain::KA-017"
+ ],
+ "fonti_integrali": {
+  "cs2online-lezione-11": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-11\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-03": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-03\\contenuto-integrale.md"
+  ],
+  "max17-v08-herk-brain": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-lezione-11::KA-01",
+   "peso": "portante",
+   "tipo": "SOP domenicale",
+   "contenuto": "SOP domenicale completa a 6 step per pianificazione settimanale: (1) Calendar impegni fissi, (2) esportare/collegare a Claude, (3) brain dump markdown senza filtro con vincoli espliciti, (4) allegare business plan, (5) allegare review settimana precedente, (6) prompt Opus+Extended Thinking -> documento task per fascia oraria.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-11#panoramica+frame",
+   "frame": "frame-t5m00s-google-calendar-reale.jpg",
+   "run": "cs2online-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-11::KA-01",
+     "run": "cs2online-lezione-11",
+     "fonte": "cs2online-lezione-11#panoramica+frame"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-02",
+   "peso": "supporto",
+   "tipo": "Output strutturato osservato",
+   "contenuto": "Output strutturato specifico: tabella task/giorno/fascia oraria (8-12, 12-15, 15-18)/esecutore (umano, AI, o 50-50) - confermato visivamente nel documento 'WEEK 1 - OPERATIONAL PLAN'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-11#frame-t8m00s",
+   "frame": "frame-t8m00s-week1-operational-plan-output.jpg",
+   "run": "cs2online-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-11::KA-02",
+     "run": "cs2online-lezione-11",
+     "fonte": "cs2online-lezione-11#frame-t8m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-03::KA-06",
+   "peso": "portante",
+   "tipo": "Esempio pratico / automazione livello 5",
+   "contenuto": "Esempio automazione livello 5: cliente manda brief via email → Zapier passa a Claude → Claude produce bozza strategica → invio email automatico → lavoro pronto al risveglio, zero intervento manuale nel mezzo.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-03::KA-06",
+     "run": "cs2online-lezione-03",
+     "fonte": "cs2online-lezione-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-017",
+   "peso": "supporto",
+   "tipo": "file",
+   "contenuto": "Pagina wiki reale techniques/ai-video-production-pipeline.md (front-matter type/tags/sources/last-updated + corpo What It Is / Why It Matters / How To Do It): pipeline automatica script->video con elevenlabs (voice cloning), heygen (avatar 5), ionmotion (editing motion graphics), claude-code (orchestrazione); riduce 5+ ore di produzione a workflow overnight; step: script chunking (45-60s), voice generation, avatar generation, upgrade Avatar4->Avatar5 via playwright, stitching via ffmpeg.",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#24:04-24:06",
+   "frame": "frame-723.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

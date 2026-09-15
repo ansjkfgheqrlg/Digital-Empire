@@ -1,0 +1,247 @@
+{
+ "capitolo": "V.15",
+ "parte": "V.15",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Agentic OS: sistemi che si reggono da soli",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v05-jaye-agenticos::KA-001",
+  "max17-v05-jaye-agenticos::KA-002",
+  "max17-v05-jaye-agenticos::KA-041",
+  "max17-v05-jaye-agenticos::KA-043",
+  "max17-v05-jaye-agenticos::KA-044",
+  "max17-v05-jaye-agenticos::KA-050",
+  "max17-v08-herk-brain::KA-016",
+  "max17-v08-herk-brain::KA-038",
+  "max17-v08-herk-brain::KA-039",
+  "max17-v08-herk-brain::KA-040",
+  "max17-v11-roberts-design::KA-062"
+ ],
+ "fonti_integrali": {
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max17-v08-herk-brain": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\video-analysis.md"
+  ],
+  "max17-v11-roberts-design": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-001",
+   "peso": "supporto",
+   "tipo": "standard",
+   "contenuto": "Post su X di Thariq (@trq212), presentato come 'Anthropic Lead Engineer': titolo 'The New Rules of Context Engineering', sottotitolo 'For the Claude 5 generation'. Questa e' la fonte ufficiale esterna citata da cui discende l'intero video.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:02",
+   "frame": "frame-002.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-002",
+   "peso": "portante",
+   "tipo": "opinione",
+   "contenuto": "Framework ARMS (Applications, Routines, Memory, Skills) - modello didattico proprietario di Jay E, presentato come 'la struttura stabile intorno all'agente'. Diagramma: 4 icone (Memory=cassetto viola, Routines=orologio arancione, Apps=dispositivo blu, Skills=libro arancione) su un tavolo con mascotte robot.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:24",
+   "frame": "frame-013.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-004",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Path completo del PDF guida: C:\\Users\\jedoe\\Documents\\App R\\.CC\\Lessons\\Agentic OS\\Resources\\arms-agentic-os-guide.pdf - titolo 'A RoboNuggets Guide - Set up your Agentic OS'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#21:20",
+   "frame": "frame-641.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-041",
+   "peso": "supporto",
+   "tipo": "configurazione",
+   "contenuto": "Layout completo della dashboard 'Rubric Agentic OS': colonna sinistra Micro Apps + Calendar; centro anello di icone app con visualizzazione particellare 'click to open second brain'; colonna destra Email + Skills Deck + Routines.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:00",
+   "frame": "frame-001.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-042",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Elenco Micro Apps: Generations ('Every image and video you have generated'), Teleprompter ('Scripts you read on camera'), Second Brain ('Your whole workspace as a living map'), Excalidraw ('Hand-drawn diagrams ready to copy onto your canvas').",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:54",
+   "frame": "frame-033.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-043",
+   "peso": "supporto",
+   "tipo": "opinione",
+   "contenuto": "Esempio cliente 'Stropro Agentic OS' - dashboard personalizzata per servizi finanziari in Australia: Market Clock, Capital Deployed $1.6Bn+, Issuance Pipeline, Adviser Desk 18 requests. Confermato dal sito reale stropro.com.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#2:34",
+   "frame": "frame-078.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-044",
+   "peso": "supporto",
+   "tipo": "opinione",
+   "contenuto": "Esempio cliente 'Beetogreen Agentic OS' - flotta e-bike: HR Requests 24, Skills Deck /fleet-report /mobility-calc /onboarding-pack /iso-report, Kilometres Ridden 482,000, Fleet Health (bikes deployed 1540, bikes due a service 47).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#2:40",
+   "frame": "frame-081.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-050",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Gerarchia dichiarata della piramide ARMS: base piu' larga = SKILLS (fondazione), poi MEMORY, poi ROUTINES, punta piu' stretta = APPS (piu' visibile ma meno fondamentale).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#5:24",
+   "frame": "frame-163.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-052",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Micro-app 'Excalidraw Landing Pad' (path C:/ROBO/output/excalidraw-landing-pad/index.html): libreria di diagrammi pronti con bottoni Copy Elements/Download - 'Pixel Agents - Blue', 'ARMS Pyramid + Levels', 'Section 04 How - Pixels vs Words'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#20:56",
+   "frame": "frame-629.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-053",
+   "peso": "contesto",
+   "tipo": "opinione",
+   "contenuto": "Micro-app 'Generations' aperta in locale (localhost): galleria di immagini/video generati da Jay, incluse le stesse illustrazioni pixel-art 'Then/Now' e 'Level Up' usate come grafiche in questo stesso video - conferma meta che le illustrazioni sono auto-prodotte, non materiale Anthropic.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#20:32",
+   "frame": "frame-617.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-061",
+   "peso": "contesto",
+   "tipo": "opinione",
+   "contenuto": "Illustrazioni pixel-art 'FASTER' (arancione) e 'CHEAPER' (verde) e fabbrica di robot-lavoratori: metafora visiva del valore promesso dall'Agentic OS (velocita' + riduzione costi).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:20",
+   "frame": "frame-011.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-064",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "README del PDF guida: 'What this is. A setup guide for your agentic operating system... How to use it. Read the overview below, then set up one part at a time with pages 3 to 6. Each part has a copy-paste prompt... Finish with the 7-day plan on page 7. The shortcut. Inside the RoboNuggets community at skool.com/robonuggets...'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#8:28",
+   "frame": "frame-255.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-016",
+   "peso": "portante",
+   "tipo": "file",
+   "contenuto": "Pagina wiki reale concepts/agentic-workflows.md (testo integrale): Workflows/Agent/Tools come pattern WAT; CLAUDE.md come system prompt persistente nel root; un workflow testato puo' diventare codice deterministico (trigger-dev, vercel, modal) oppure restare 'routine' agentica in cloud (rilasciate aprile 2026) che preserva self-correction leggendo CLAUDE.md; accuracy compounding: 5 step al 90% di accuratezza ciascuno = ~59% di accuratezza cumulativa, da cui l'importanza di WAT + self-healing + review umane; tool citati: claude-code, trigger-dev, n8n (in via di sostituzione), perplexity, firecrawl, wat-framework.",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#12:04",
+   "frame": "frame-363.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-038",
+   "peso": "portante",
+   "tipo": "livello",
+   "contenuto": "LEVEL 5 · TERMINAL + YOU RUN A SERVER · REAL BURDEN — 'Always-on Brain-OS (gbrain)'. Question: 'Consolidate on its own while I'm away?'. Cosa lo rende diverso: unico livello che lavora mentre dormi, 'nightly dream cycle' arricchisce le note. Il muro: real burden (server 24/7), per Q&A il Livello 3 copre gia' la maggior parte dei casi, Windows bug -> usa WSL2 o Postgres. 'You run agents offline vs a 5,000+ page brain. Otherwise, no.'",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#25:26",
+   "frame": "frame-764.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-039",
+   "peso": "supporto",
+   "tipo": "strumento",
+   "contenuto": "Gbrain: progetto di Garry Tan (CEO di Y Combinator), pensato per accoppiarsi con 'G-stack'. L'autore dichiara esplicitamente di non usarlo quotidianamente ('which is why I don't currently run Gbrain at the moment') pur sperimentandolo con un Hermes Agent, perche' in Claude Code dovrebbe gestire lui stesso i cron. Nessuna schermata di gbrain, G-stack o Hermes Agent appare nel video: solo narrazione audio.",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#25:32-26:01",
+   "frame": "frame-033.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-040",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "The Build Order — The Four Cs: Context (who you are) -> Connections (your real data) -> Capabilities (skills + agents) -> Cadence (runs on its own). Context+Connections = 'build the second brain'; Capabilities+Cadence = 'make it an operating system'. 'This is the order. But you don't force each step. Usage pulls you to the next C.'",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#27:00",
+   "frame": "frame-811.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-062",
+   "peso": "portante",
+   "tipo": "pattern",
+   "contenuto": "IL 'DREAM REVIEW' — pattern architetturale mostrato solo come b-roll, mai spiegato a voce. Un cron notturno (claude-nightdream-cron.log, engine CODEX) analizza i pattern di 7 giorni e produce raccomandazioni con risparmio stimato. Esempio verbatim: 'WORKFLOW · 145 min saved — Collapse the duplicate morning briefs before another 80-message run — Keep one strategic morning brief schedule and make the Google Workspace check its preflight. Two strategic brief schedules ran yesterday, while today's run consumed another 87 messages. Fetch inbox and calendar once, fail last when either source is unavailable, then perform one synthesis pass. Inspect the cron list before removing or changing anything.' Ogni raccomandazione ha: un pulsante 'WHY WE'RE SUGGESTING THIS', un comando copiabile ('TRY IT NOW — COPY THIS AND PASTE INTO CLAUDE CODE' → hermes cron list), e tre esiti: RUN THIS FIX / SKIP / APPLY & MARK DONE. Piu' 'REPLAY THE DREAM'.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#12:26",
+   "frame": "frame-374.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

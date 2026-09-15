@@ -1,0 +1,772 @@
+{
+ "capitolo": "VI.6",
+ "parte": "VI.6",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Storytelling e posizionamento",
+ "libro": "VI",
+ "libro_titolo": "Contenuto, brand, lanci",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "6ITBjfPQg3I::KA-01",
+  "6ITBjfPQg3I::KA-02",
+  "IWCHN_mE2Vo::KA-21",
+  "L5_Z63nxXjI::KA-10",
+  "_yUzEe29aTQ::KA-02",
+  "eze4oqwb6aw::KA-01",
+  "eze4oqwb6aw::KA-02",
+  "eze4oqwb6aw::KA-03",
+  "max17-v14::KA-001",
+  "max17-v14::KA-002",
+  "max17-v14::KA-006",
+  "max17-v14::KA-009",
+  "max17-v14::KA-010",
+  "max17-v14::KA-011",
+  "max17-v14::KA-014",
+  "max17-v14::KA-015",
+  "max17-v14::KA-016",
+  "max17-v14::KA-017",
+  "max17-v14::KA-021",
+  "max17-v14::KA-022",
+  "max17-v14::KA-023",
+  "max17-v14::KA-024",
+  "max17-v14::KA-025",
+  "max17-v14::KA-030",
+  "max17-v14::KA-031",
+  "max17-v14::KA-032",
+  "max17-v16::KA-001",
+  "max17-v16::KA-002",
+  "max17-v16::KA-003",
+  "max17-v16::KA-009",
+  "max17-v16::KA-010",
+  "max17-v16::KA-011",
+  "max17-v16::KA-013",
+  "max17-v16::KA-024"
+ ],
+ "fonti_integrali": {
+  "6ITBjfPQg3I": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/6ITBjfPQg3I\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\6ITBjfPQg3I\\contenuto-integrale.md"
+  ],
+  "IWCHN_mE2Vo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/IWCHN_mE2Vo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\IWCHN_mE2Vo\\contenuto-integrale.md"
+  ],
+  "L5_Z63nxXjI": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/L5_Z63nxXjI\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\L5_Z63nxXjI\\contenuto-integrale.md"
+  ],
+  "_yUzEe29aTQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/_yUzEe29aTQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\_yUzEe29aTQ\\contenuto-integrale.md"
+  ],
+  "eze4oqwb6aw": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/eze4oqwb6aw\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\eze4oqwb6aw\\contenuto-integrale.md"
+  ],
+  "hb89lccIacY": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/hb89lccIacY\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\hb89lccIacY\\contenuto-integrale.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max17-v14": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v14\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v14\\video-analysis.md"
+  ],
+  "max17-v16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\video-analysis.md"
+  ],
+  "qOK4WP82Bvo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/qOK4WP82Bvo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\qOK4WP82Bvo\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "6ITBjfPQg3I::KA-01",
+   "peso": "supporto",
+   "tipo": "Formato / Meme Poi: payoff differito",
+   "contenuto": "Micro-reel formato meme 'Poi:' che collega un'azione passata minore ('a 16 anni ti sei messo a scrivere PDF') a un risultato presente di valore ('fai 1000 euro in una call') - struttura causale compressa in una frase, quasi senza voce.",
+   "ancora": "",
+   "fonte": "6ITBjfPQg3I#00:00:00",
+   "frame": "frame-001",
+   "run": "6ITBjfPQg3I",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "6ITBjfPQg3I::KA-01",
+     "run": "6ITBjfPQg3I",
+     "fonte": "6ITBjfPQg3I#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "6ITBjfPQg3I::KA-02",
+   "peso": "supporto",
+   "tipo": "Copy / Credibilita per accumulo tempo investito",
+   "contenuto": "La competenza attuale e' posizionata come conseguenza legittimata da un investimento di tempo iniziato in giovane eta' - prova di credibilita' basata sulla durata del percorso, distinta da prova sociale numerica o case study.",
+   "ancora": "",
+   "fonte": "6ITBjfPQg3I#00:00:00",
+   "frame": "frame-001",
+   "run": "6ITBjfPQg3I",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "6ITBjfPQg3I::KA-02",
+     "run": "6ITBjfPQg3I",
+     "fonte": "6ITBjfPQg3I#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-21",
+   "peso": "supporto",
+   "tipo": "Lifestyle / Positioning",
+   "contenuto": "Andrei posiziona copywriting come enabler di digital nomad freedom: 'io faccio soldi mentre viaggio' e 'poterlo fare senza dover costantemente refreshare il conto in banca'. Copy skill = location independence. Narrazione che attrae giovani nel target corso cm5.",
+   "ancora": "",
+   "fonte": "IWCHN_mE2Vo#00:35:39",
+   "frame": "frame-1063",
+   "run": "IWCHN_mE2Vo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IWCHN_mE2Vo::KA-21",
+     "run": "IWCHN_mE2Vo",
+     "fonte": "IWCHN_mE2Vo#00:35:39"
+    }
+   ]
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-10",
+   "peso": "supporto",
+   "tipo": "Copy / Brand fit e tono ironico",
+   "contenuto": "Un angolo ironico/meme (es. riferimento pop culture tipo Patrick Bateman) non funziona per un brand di lusso distaccato, ma può funzionare benissimo per un brand giovane/scherzoso che comunica con la Gen Z — il fit tra tono e brand determina se un angolo irriverente funziona, non una regola universale pro/contro l'ironia.",
+   "ancora": "",
+   "fonte": "L5_Z63nxXjI#00:07:46",
+   "frame": "frame-236",
+   "run": "L5_Z63nxXjI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "L5_Z63nxXjI::KA-10",
+     "run": "L5_Z63nxXjI",
+     "fonte": "L5_Z63nxXjI#00:07:46"
+    }
+   ]
+  },
+  {
+   "uid": "L5_Z63nxXjI::KA-19",
+   "peso": "contesto",
+   "tipo": "Funnel / Cross-reference e posizionamento",
+   "contenuto": "Chiusura con rimando a un altro video del canale su 'come scrivere copy dalle basi', e CTA verso il corso di copywriting per chi vuole farne una carriera full-time. End card brandizzata 'Il futuro è nostro'.",
+   "ancora": "",
+   "fonte": "L5_Z63nxXjI#00:11:41",
+   "frame": "frame-358",
+   "run": "L5_Z63nxXjI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "L5_Z63nxXjI::KA-19",
+     "run": "L5_Z63nxXjI",
+     "fonte": "L5_Z63nxXjI#00:11:41"
+    }
+   ]
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-02",
+   "peso": "portante",
+   "tipo": "Copy / Segmentazione 4 tier con posizionamento",
+   "contenuto": "4 tier: Boomer (scettico, terrorizzato, perde clienti) -> Media di mercato (usa AI poco, spettatore posizionato qui = 'TU', meglio della media ma non sfrutta ancora) -> Top freelancer/agenzie (usa AI per fare di piu, guadagna di piu) -> Balene (corporation $100M+/anno, irraggiungibili). Genera validazione + insicurezza motivante.",
+   "ancora": "",
+   "fonte": "_yUzEe29aTQ#00:00:11",
+   "frame": "frame-012,035",
+   "run": "_yUzEe29aTQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "_yUzEe29aTQ::KA-02",
+     "run": "_yUzEe29aTQ",
+     "fonte": "_yUzEe29aTQ#00:00:11"
+    }
+   ]
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-01",
+   "peso": "portante",
+   "tipo": "Formato / Reel identitario - struttura anaforica",
+   "contenuto": "Reel di personal branding costruito su una struttura anaforica ripetuta ('Sono un copywriter, e' ovvio che...') applicata a 5 vignette diverse, girate in luoghi/momenti reali differenti - montaggio di micro-scene con la stessa cornice verbale.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:00",
+   "frame": "frame-001,002",
+   "run": "eze4oqwb6aw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "eze4oqwb6aw::KA-01",
+     "run": "eze4oqwb6aw",
+     "fonte": "eze4oqwb6aw#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-02",
+   "peso": "supporto",
+   "tipo": "Copy / Mix credenziali professionali autentiche",
+   "contenuto": "Lista di comportamenti professionali concreti (sales page preferita, lettura quotidiana, analisi eventi Apple, analisi copy incontrati per caso) presentati come naturali conseguenze dell'identita' dichiarata, ognuno mostrato fisicamente (show don't tell) invece di solo narrato.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:04",
+   "frame": "frame-003,005,007,010",
+   "run": "eze4oqwb6aw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "eze4oqwb6aw::KA-02",
+     "run": "eze4oqwb6aw",
+     "fonte": "eze4oqwb6aw#00:00:04"
+    }
+   ]
+  },
+  {
+   "uid": "eze4oqwb6aw::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Punchline auto-ironica",
+   "contenuto": "Chiusura anticlimatica: 'sono in chiamata col cliente perche' devo chiuderlo - sono 500 euro comunque' - rompe il pattern impressionante con un dettaglio modesto, tecnica di umanizzazione/bilanciamento credibilita-simpatia.",
+   "ancora": "",
+   "fonte": "eze4oqwb6aw#00:00:22",
+   "frame": "frame-012,013",
+   "run": "eze4oqwb6aw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "eze4oqwb6aw::KA-03",
+     "run": "eze4oqwb6aw",
+     "fonte": "eze4oqwb6aw#00:00:22"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-17",
+   "peso": "contesto",
+   "tipo": "Positioning / Autorita",
+   "contenuto": "Claim autorita': copywriter da 16 anni, ora 21 (5 anni esperienza), centinaia di clienti Italia+estero, migliaia di copy. Si distingue da 'altri formatori' non praticanti.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:10:13",
+   "frame": "frame-306",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-17",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:10:13"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-050",
+   "peso": "contesto",
+   "tipo": "framework",
+   "contenuto": "Card teaser 'LATER IN THE VIDEO' con anteprima sfocata del grafico boom-bust, mostrata nell'introduzione per anticipare un contenuto che arriverà più avanti nel video.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#00:22",
+   "frame": "frame-012.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-001",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Tesi centrale del video: 'Great storytelling is making people feel the idea, not just understand it.' Esistono due tipi di speaker: quelli che ricevono applausi ma vengono dimenticati appena il pubblico esce dalla stanza, e quelli che commuovono il pubblico fino alle lacrime e vengono ricordati anni dopo. La differenza sta in un framework a 5 passi.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#0:00-0:43",
+   "frame": "frame-001.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-002",
+   "peso": "portante",
+   "tipo": "architettura",
+   "contenuto": "Framework a 5 passi HSTSS, mnemonica ufficiale 'Heroes Start Their Stories Somewhere' e versione 'edgy' per gli studenti 'Holy Sh*t That's So Smart'. Mappa completa: Heroes/Holy = Hook, Start/Sh*t = Stake(s), Their/That's = Turn, Stories/So = Scene, Somewhere/Smart = Shatter.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#2:39-3:20",
+   "frame": "frame-041.png,frame-046.png,frame-050.png,frame-051.png,frame-356.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-006",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Il framework HSTSS si applica anche a Stage Talk e Presentation, non solo a contenuti social: con un pubblico presente in sala si ha piu' tempo per stabilire l'hook rispetto ai 3 secondi dei social.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#5:56-6:11",
+   "frame": "frame-086.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-008",
+   "peso": "contesto",
+   "tipo": "architettura",
+   "contenuto": "Correzione a trascrizione automatica: il figlio di Naveen Jain citato come 'uno dei piu' giovani miliardari' e' Ankur Jain, Founder and CEO of Bilt Rewards (lower-third reale mostrato a video), non 'Uncle Jane' come trascritto dall'ASR automatico di YouTube.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#6:38-6:44",
+   "frame": "frame-101.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-009",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Passo 2 - STAKES: definizione 'In a movie, the stakes are the opportunity where the hero might fail.' Esempi citati: Star Wars (Luke Skywalker perde la mano) e Avengers Infinity War (Thanos fa lo schiocco e sparisce meta' della popolazione, mostrato con fotogramma reale del film).",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#8:22-8:41",
+   "frame": "frame-131.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-010",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Le stakes portano umilta' e rendono lo speaker 'relatable': collegano il pubblico attraverso la vulnerabilita', non solo l'ammirazione. Titolo overlay: 'The Power of Stakes - Brings humility.'",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#9:13-9:19",
+   "frame": "frame-141.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-011",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Storia integrale delle stakes ('The Story of the Couch'): laureato in informatica all'Universita' del Michigan nel 1999, trasferito in Silicon Valley con un sogno di startup software, presta 30.000 dollari dal padre. Lo scoppio della bolla dot-com lo lascia senza soldi: perde tutto, non trova investitori, brucia i 30.000 dollari, finisce quasi senza casa.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#10:14-11:07",
+   "frame": "frame-151.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-012",
+   "peso": "contesto",
+   "tipo": "prompt",
+   "contenuto": "Dettaglio della stake, con descrizione sensoriale: vive per mesi su un divano a due posti (non tre) affittato per 200 dollari al mese da uno studente di Berkeley, gambe che penzolano fuori dal divano troppo corto, divano che puzzava con una macchia gialla mai identificata, dorme con un asciugamano sopra per non toccarla.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#11:07-11:59",
+   "frame": "frame-171.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-013",
+   "peso": "contesto",
+   "tipo": "architettura",
+   "contenuto": "La storia del divano e' illustrata con una scena interamente ricostruita/drammatizzata (non talking-head ne' grafica testuale): divano marrone/beige con macchia gialla visibile sul cuscino centrale, asciugamano grigio piegato accanto, cesto di vestiti e due borse impilate, armadio a rotelle con vestiti appesi, poster 'THE UNIVERSITY OF BERKELEY - Adventure Starts Here' sulla parete.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#11:20 (frame statico)",
+   "frame": "frame-171.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-014",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Regola sulle stakes: 'All of you have some story from your past, some moment of misery that you can share that might help other people navigate their pain.' Non bisogna inventare le stakes: devono essere reali.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#12:55-13:05",
+   "frame": "frame-195.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-015",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "'Rules of the Stakes': non descrivere solo la situazione, descrivere il sentimento. Bullet list overlay: 'Describe the feeling - Describe the shame - Describe the guilt - Describe the anger.' Applicazione: Vishen approfondisce la vergogna di aver mentito ai genitori sul fatto di avere un vero appartamento, quando in realta' dormiva sul divano.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#13:18-13:52",
+   "frame": "frame-201.png,frame-210.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-016",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Passo 3 - TURN: definizione 'The turn is the turn that changed the story.' Spesso nel turn e' contenuta una lezione ('Often in the turn is a lesson that is baked in').",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#14:00-14:25",
+   "frame": "frame-216.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-017",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Continuazione della storia (il turn): dopo il fondo del barile, trova lavoro in un'azienda della Silicon Valley senza stipendio base, solo commissioni al 20% sulle vendite - un mese intero a zero vendite. Nel 2001 digita su Google 'Google, why does my life suck so bad?', 'Google, why am I so pathetic?', 'Google, why am I such a loser?'.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#14:39-15:22",
+   "frame": "frame-231.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-018",
+   "peso": "contesto",
+   "tipo": "architettura",
+   "contenuto": "Il turn e' illustrato con uno screenshot vintage accurato del motore di ricerca Google dell'anno 2000 (logo Google d'epoca, box di ricerca con testo 'Why does my l...', link 'Google Web Directory', copyright '2000 Google'), effetto nostalgico coerente con l'ambientazione temporale della storia (2001).",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#15:20 (frame statico)",
+   "frame": "frame-231.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-019",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Il turn porta alla scoperta del corso di meditazione Silva Ultramind. Uno screenshot reale e attuale dei risultati di ricerca Google per 'Silva Method' mostra come secondo risultato la pagina mindvalley.com/ultramind/lesson-1, titolo 'Silva Ultramind System Free Meditation Class', sottotitolo 'Master dynamic meditation with this online meditation class by Vishen Lakhiani' - conferma che il prodotto e' tuttora venduto da Mindvalley.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#15:36-15:44 (frame statico)",
+   "frame": "frame-236.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-020",
+   "peso": "contesto",
+   "tipo": "metodo",
+   "contenuto": "Tecnica di intuizione appresa dal corso Silva: usare le pagine gialle (San Francisco Public Library) e una tecnica meditativa per 'sentire' quali nomi chiamare mentre si scorre l'elenco telefonico con un dito, raddoppiando le vendite da un giorno all'altro e ottenendo 4 promozioni in 3 mesi fino a VP of Sales.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#16:09-16:25",
+   "frame": "frame-245.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-021",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Citazioni di autorita' a supporto dell'intuizione come strumento decisionale: Steve Jobs nel discorso di laurea a Stanford ('have the courage to follow your heart and intuition'); Prof. John Mihalasky, autore del libro 'Executive ESP', ha condotto uno studio secondo cui i CEO e i founder che usano l'intuizione generano piu' fatturato senza saperlo.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#16:44-17:11",
+   "frame": "frame-256.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-022",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Passo 4 - SCENE: definizione 'The scene is where you make something visualizable.' Regola: non descrivere solo la situazione, dipingere il quadro con dettagli sensoriali (tempo atmosferico, tappeto, salotto) che sembrano irrilevanti ma trasportano l'audience nel momento. Applicato raccontando la scena del capo russo che batte la mano sul tavolo sorpreso dai risultati di vendita.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#18:55-19:51",
+   "frame": "frame-286.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-023",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Passo 5 - SHATTER: definizione, rompere una convinzione superata ('shattering the glass ceiling'), il momento in cui si lascia la lezione. Titolo overlay 'Move 05' individua questo passo come 'mossa numero 5' della sequenza.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#20:00-20:03",
+   "frame": "frame-301.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-024",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Tecnica del 'Mic Drop Moment': prima di elencare tutte le prove scientifiche e le citazioni a supporto di una lezione, dare al pubblico una singola frase ad effetto che riassume l'insegnamento. Citazione mic-drop usata dall'autore: 'I realized that sometimes the greatest secret of success of all is to know how to sit still and listen to that still gentle voice within, the voice of your intuition.'",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#21:14-21:24",
+   "frame": "frame-316.png,frame-322.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-025",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Mic drop finale sull'intero video (chiusura della sezione framework): 'Nobody changes their life because of a fact. People changed their life because they heard a story that give them hope for who they could become.'",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#23:40-23:52",
+   "frame": "frame-361.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-026",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Il corso Silva Ultramind, rilanciato da Vishen nel 2018 dopo aver ottenuto i diritti dai figli del creatore Jose Silva (morto nel 1999) e ripubblicato con la sua voce e stile narrativo attraverso Mindvalley, genera dichiaratamente 40 milioni di dollari l'anno di fatturato ed e' il programma numero 1 su Mindvalley da 9 anni.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#21:44-22:20",
+   "frame": "frame-326.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-027",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Prova visiva del prodotto originale pre-Mindvalley: copertina fotografata di un cofanetto DVD fisico 'THE SILVA METHOD MASTERY COURSE', sottotitolo 'Tapping the Secrets of the Mind for Total Self-Mastery', editore Nightingale-Conant, autori accreditati Robert B. Stone, Laura Silva, Kain Samiya.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#21:40 (frame statico)",
+   "frame": "frame-326.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-028",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Prova social del successo YouTube del canale Mindvalley/Vishen: screenshot reale di pagina canale con miniature 'HEAL YOURSELF WITH THIS - Marisa Peer' (3,1M views), 'OUR ROLE IN EVOLUTION - Neale Donald Walsch' (3,1M views), 'MASTER PUBLIC SPEAKING NOW - Eric Edmeades' (2,8M views), oltre a titoli di Christie Marie Sheldon ed Esther Perel.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#22:56 (frame statico)",
+   "frame": "frame-345.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-029",
+   "peso": "contesto",
+   "tipo": "architettura",
+   "contenuto": "Identita' e credenziali dell'autore, confermate sia a voce sia dai metadati del file (info.json: uploader 'Vishen', channel 'Vishen', uploader_id '@vishen'): Vishen Lakhiani, fondatore di Mindvalley, autore del bestseller NYT 'The Code of the Extraordinary Mind' (copertina reale mostrata a video, '10 Unconventional Laws to Redefine Your Life & Succeed On Your Own Terms').",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#1:24-2:07 + info.json",
+   "frame": "frame-351.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-030",
+   "peso": "supporto",
+   "tipo": "architettura",
+   "contenuto": "Recap finale del framework applicato all'intero video stesso: Hook (i primi 10 secondi del video), Stakes (la storia del quasi-senzatetto), Turn multipli (il libro n.1, la scoperta dell'intuizione), Scene (la vodka col Dalai Lama, il capo russo), Shatter (il mic-drop finale sull'intuizione).",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#23:02-23:20",
+   "frame": "frame-351.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-031",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Regola finale sui punti mancanti del framework: ogni punto ha uno scopo preciso. Se manca lo stake, si rischia di sembrare arroganti/inarrivabili. Se manca il turn ma c'e' uno stake forte, il pubblico resta triste senza sollievo. Se manca la scena, il pubblico non 'ci va' con te anche con turn/stake ottimi. Se manca lo shatter, non c'e' lezione chiara da portare a casa.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#24:04-24:50",
+   "frame": "frame-372.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-032",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Distinzione tra relatability e respect: hook e stakes costruiscono relatability (il pubblico si affeziona), mentre turn, scene e shatter costruiscono respect (il pubblico percepisce l'autore come qualcuno capace di trasmettere un'idea potente). Servono entrambi: relatable ma non rispettato, o rispettato ma non relatable, non bastano da soli.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#24:52-25:22",
+   "frame": "frame-376.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-033",
+   "peso": "contesto",
+   "tipo": "architettura",
+   "contenuto": "Device narrativo/di montaggio centrale del video: la tabella mnemonica HSTSS (Holy/Sh*t/That's/So/Smart -> Hook/Stake/Turn/Scene/Shatter) viene rivelata progressivamente, una riga per capitolo completato: a 3:20 solo la prima riga (Holy-Hook) e' leggibile, le altre restano pixelate; a 5:00 due righe scoperte; a 18:36 tre righe (Hook/Stake/Turn); a 23:36 tutte e cinque le righe sono leggibili.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#3:20 / 5:00 / 18:36 / 23:36 (frame statici multipli)",
+   "frame": "frame-051.png,frame-126.png,frame-280.png,frame-356.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-034",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Metadati del video (P-BQ-AGS0ck.info.json): upload 2026-07-25, 86.971 views, 4.116 like al momento del download, tag includono 'vishen', 'mindvalley', 'storytelling', 'public speaking', 'leadership', 'alex hormozi', 'daniel priestley', 'kallaway'.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck (info.json)",
+   "frame": "P-BQ-AGS0ck.info.json",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v14::KA-035",
+   "peso": "contesto",
+   "tipo": "architettura",
+   "contenuto": "Easter egg di prodotto non commentato a voce: in un b-roll che mostra un Apple Store con tre iPhone in vetrina (illustrazione generica), l'iPhone centrale ha sulla home screen l'icona viola dell'app Mindvalley visibile tra le app installate, accanto a Messaggi/Calendario/Foto/Telefono.",
+   "ancora": "",
+   "fonte": "P-BQ-AGS0ck#2:00 (frame statico)",
+   "frame": "frame-031.png",
+   "run": "max17-v14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-001",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Tesi di apertura contro la paura 'l'AI uccidera' gli infoprodotti': il rapporto umano e' l'ingrediente magico dietro cio' che le persone comprano, perche' le informazioni si trovano gratis ovunque - quello che cambia e' come una singola persona le distilla per il pubblico. Prova indiretta: 40-50.000 studenti nel corso degli anni, 'se le informazioni bastassero sarebbero tutti ricchi'.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#1:58-2:36",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-002",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Distinzione tra 'personal brand' generico (essere un influencer enorme) e 'micro personal brand': obiettivo del secondo e' acquisire clienti alto-spendenti ogni giorno sfruttando quello che si ha gia' (sapere, telefono, autorevolezza istantanea), diventando la scelta ovvia per il proprio pubblico senza bisogno di un seguito enorme.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#3:12-3:33",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-003",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Fatturato storico dichiarato: piu' di 35 milioni di euro di infobusiness personale (relatore, fratello, azienda) accumulati in oltre 12 anni. Il relatore dichiara di aver smesso di guardare il fatturato per guardare solo il profitto netto, e di aver scelto di non spingere oltre una certa soglia l'infobusiness (rifiuta l'idea di fare 30 milioni lavorando 10 ore al giorno, preferendo profitti minori lavorando 3 ore al giorno).",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#5:30-7:00",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-009",
+   "peso": "portante",
+   "tipo": "storia",
+   "contenuto": "Origin story del relatore: 2012 primo evento dal vivo, 1000 volantini distribuiti in piazza, presenti solo 4 persone, zero vendite. 2014 primi video su Facebook (origine di quello che fa oggi su Instagram/YouTube). Primo corso registrato in un monolocale a Roma (Via della Maglianella 203) condiviso col fratello: lavagna Ikea da 9,90 euro, un solo faro, niente microfono, un Rolex finto comprato a Ponte di Vivo. 18 mesi dopo sul palco con Russell Brunson dopo il primo milione di euro fatto con un funnel. 2016 primo evento dal vivo proprio, 300 persone a Roma, corso 'Liberati dalle catene'.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#23:58-26:47",
+   "frame": "n/a (solo audio, foto d'archivio proiettate non lette a schermo intero in questa sessione)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-010",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Rilettura del saggio 'The 1000 True Fans' di Kevin Kelly (cofondatore di Wired, 2008): tesi originale, se hai 1000 persone che ti amano davvero e ognuna spende 100 dollari l'anno, sono 100.000 dollari l'anno - basta un pubblico vero, non enorme. Esempi citati da Kelly: musicista con 800 fan, ceramista con 600 clienti abituali, scrittore con newsletter da 1200 persone, personal trainer con 900 iscritti che guadagna oltre 10.000 dollari l'anno.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#27:42-30:31",
+   "frame": "frame-418.png",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-011",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Aggiornamento 2026 dichiarato dal relatore alla tesi di Kevin Kelly: studio incrociato su 1.300 infobusiness che usano Ulama (software di infobusiness.com per vendere corsi/consulenze) - chi fa piu' di 10.000 euro al mese ha in media circa 2.000 follower su Instagram. Conclusione pratica: dato che i prezzi medi sono molto piu' alti di 100 dollari, bastano molti meno di 1000 fan veri per arrivare a 10.000 euro/mese. Baseline mostrata: 10.000 follower, prezzo medio clienti Ulama circa 2.000 euro su 400 nicchie diverse, quindi bastano circa 5 clienti al mese per pareggiare il calcolo di Kelly.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#29:14-31:00",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-013",
+   "peso": "supporto",
+   "tipo": "prova sociale",
+   "contenuto": "Testimonianza reale mostrata a schermo: Marco Scardeoni & Partners (Tax, Legal & Labour, sedi Milano e altre citta'), screenshot messaggio 'E questo grazie a te... il concept negli eventi che faccio sta spopolando ed in tre mesi ho chiuso il 400% in piu'...'.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#~28:12 (slide statica)",
+   "frame": "frame-470.png",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-024",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "8 Segreti per diventare un leader da seguire (elenco integrale mostrato a schermo): 1) Diventa Attraente e Vivi la vita che loro vorrebbero; 2) Sii sicuro di te stesso e NON aver paura dei nemici; 3) Devi essere polarizzante e mai noioso; 4) Padroneggia l'arte della Persuasione; 5) Fatti Pagare (...e anche tanto); 6) Ogni Leader Ha Una Storia Passata da Raccontare; 7) Usa Parabole e Metafore SEMPRE; 8) Mostra i tuoi difetti e lati deboli al pubblico. Lista non recitata integralmente a voce nella sezione corrispondente della trascrizione (che ne copre solo alcuni punti in modo discorsivo) - confermata solo dal frame.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#~51:16 (slide statica)",
+   "frame": "frame-773.png",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-14",
+   "peso": "contesto",
+   "tipo": "Storia personale / Discovery",
+   "contenuto": "Andrei ha scoperto il copywriting da adolescente cercando 'come guadagnare online'. Questo percorso (curiosita' -> scoperta -> specializzazione) e' comune nel copywriting italiano.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:00:36",
+   "frame": "frame-019",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-14",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:00:36"
+    }
+   ]
+  }
+ ]
+}

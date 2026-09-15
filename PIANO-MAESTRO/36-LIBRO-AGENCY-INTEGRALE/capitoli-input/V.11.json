@@ -1,0 +1,99 @@
+{
+ "capitolo": "V.11",
+ "parte": "V.11",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Ingestione: da video o corso a conoscenza usabile",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-lezione-10::KA-01",
+  "cs2online-lezione-10::KA-02",
+  "cs2online-lezione-10::KA-03",
+  "cs2online-lezione-10::KA-05"
+ ],
+ "fonti_integrali": {
+  "cs2online-lezione-10": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-10\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-lezione-10::KA-01",
+   "peso": "portante",
+   "tipo": "Workflow completo",
+   "contenuto": "Workflow completo audio-cliente->revisioni osservato: WhatsApp (scarica audio) -> ElevenLabs Speech-to-Text (trascrizione, lingua italiana) -> pulizia testo (rimuovere timestamp/speaker) -> Claude Project (allegato+contesto) -> output revisioni.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-10#frame-t1m20s+t2m40s+t4m00s",
+   "frame": "frame-t2m40s-elevenlabs-speech-to-text.jpg",
+   "run": "cs2online-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-10::KA-01",
+     "run": "cs2online-lezione-10",
+     "fonte": "cs2online-lezione-10#frame-t1m20s+t2m40s+t4m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-02",
+   "peso": "supporto",
+   "tipo": "Motivazione scelta tool",
+   "contenuto": "Motivazione scelta ElevenLabs: dichiarato 'piu' preciso di altri tool su punteggiatura e riconoscimento parole' - variante di garbage-in-garbage-out applicata alla qualita' della trascrizione.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-10#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-10::KA-02",
+     "run": "cs2online-lezione-10",
+     "fonte": "cs2online-lezione-10#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-03",
+   "peso": "supporto",
+   "tipo": "Limite tecnico",
+   "contenuto": "Non e' possibile allegare audio direttamente a Claude - va sempre trascritto in testo prima.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-10#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-10::KA-03",
+     "run": "cs2online-lezione-10",
+     "fonte": "cs2online-lezione-10#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-05",
+   "peso": "supporto",
+   "tipo": "Alternative gratuite",
+   "contenuto": "Alternative gratuite a ElevenLabs (dichiarate meno precise): trucco YouTube auto-transcript (audio su sfondo nero come video), Whisper (open source, forte su lingue/rumore/accenti), Buzz (app desktop basata su Whisper, esporta TXT/SRT/VTT), Handy STT (locale, no cloud), oTranscribe (manuale), MacWhisper (locale, solo Mac).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-10#cosa-hai-imparato-alternative",
+   "frame": "",
+   "run": "cs2online-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-10::KA-05",
+     "run": "cs2online-lezione-10",
+     "fonte": "cs2online-lezione-10#cosa-hai-imparato-alternative"
+    }
+   ]
+  }
+ ]
+}

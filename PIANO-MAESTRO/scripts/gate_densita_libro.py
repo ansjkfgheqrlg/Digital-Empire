@@ -183,6 +183,9 @@ def main() -> int:
 
     per_capitolo: dict[str, list[dict]] = {}
     for a in indice["atomi"]:
+        # i doppioni ereditano tutto dal principale: e' lui che il capitolo deve citare
+        if a.get("principale_di"):
+            continue
         if a["capitolo"] and a["capitolo"] != "FUORI":
             per_capitolo.setdefault(a["capitolo"], []).append(a)
 
@@ -195,12 +198,17 @@ def main() -> int:
     for codice in sorted(per_capitolo, key=lambda c: (c.split(".")[0], int(c.split(".")[1]))):
         if solo and codice != solo:
             continue
-        path = os.path.join(CAP_DIR, "%s.md" % codice)
-        if not os.path.exists(path):
+        # un capitolo puo' essere scritto in parti: V.9-a.md, V.9-b.md ... si giudica intero
+        parti = sorted(f for f in os.listdir(CAP_DIR)
+                       if f == "%s.md" % codice or
+                       (f.startswith("%s-" % codice) and f.endswith(".md")))
+        if not parti:
             non_scritti.append(codice)
             continue
-        with open(path, encoding="utf-8") as fh:
-            testo = fh.read()
+        testo = ""
+        for f in parti:
+            with open(os.path.join(CAP_DIR, f), encoding="utf-8") as fh:
+                testo += fh.read() + "\n\n"
         if rapporto_capitolo(codice, per_capitolo[codice], testo, elenco):
             passati += 1
         else:

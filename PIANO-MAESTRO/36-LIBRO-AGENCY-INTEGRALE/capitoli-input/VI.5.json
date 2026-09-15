@@ -1,0 +1,1465 @@
+{
+ "capitolo": "VI.5",
+ "parte": "VI.5",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Funnel: struttura e passaggi",
+ "libro": "VI",
+ "libro_titolo": "Contenuto, brand, lanci",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "-a0uuA1lbSI::KA-01",
+  "-a0uuA1lbSI::KA-02",
+  "-a0uuA1lbSI::KA-03",
+  "-a0uuA1lbSI::KA-04",
+  "-a0uuA1lbSI::KA-05",
+  "-a0uuA1lbSI::KA-06",
+  "-a0uuA1lbSI::KA-07",
+  "9CuQI0Cr4Pg::KA-01",
+  "Pv5uzIxp96U::KA-05",
+  "VYyIF1r6tkw::KA-06",
+  "VYyIF1r6tkw::KA-07",
+  "VYyIF1r6tkw::KA-08",
+  "VYyIF1r6tkw::KA-09",
+  "hnPa2zspu3k::KA-03",
+  "hnPa2zspu3k::KA-04",
+  "hnPa2zspu3k::KA-05",
+  "jgIgOPAnYNY::KA-08",
+  "jgIgOPAnYNY::KA-24",
+  "outfunnel-lezione-01::KA-01",
+  "outfunnel-lezione-01::KA-02",
+  "outfunnel-lezione-01::KA-03",
+  "outfunnel-lezione-03::KA-01",
+  "outfunnel-lezione-03::KA-02",
+  "outfunnel-lezione-03::KA-04",
+  "outfunnel-lezione-03::KA-06",
+  "outfunnel-lezione-03::KA-07",
+  "outfunnel-lezione-04::KA-01",
+  "outfunnel-lezione-04::KA-02",
+  "outfunnel-lezione-04::KA-03",
+  "outfunnel-lezione-04::KA-04",
+  "outfunnel-lezione-04::KA-05",
+  "outfunnel-lezione-05::KA-01",
+  "outfunnel-lezione-05::KA-02",
+  "outfunnel-lezione-05::KA-03",
+  "outfunnel-lezione-05::KA-04",
+  "outfunnel-lezione-05::KA-05",
+  "outfunnel-lezione-05::KA-06",
+  "outfunnel-lezione-06::KA-01",
+  "outfunnel-lezione-06::KA-02",
+  "outfunnel-lezione-06::KA-03",
+  "outfunnel-lezione-06::KA-04",
+  "outfunnel-lezione-06::KA-05",
+  "outfunnel-lezione-06::KA-06",
+  "outfunnel-lezione-07::KA-01",
+  "outfunnel-lezione-07::KA-02",
+  "outfunnel-lezione-07::KA-03",
+  "outfunnel-lezione-07::KA-05",
+  "outfunnel-lezione-08::KA-01",
+  "outfunnel-lezione-08::KA-02",
+  "outfunnel-lezione-08::KA-03",
+  "outfunnel-lezione-08::KA-04",
+  "outfunnel-lezione-08::KA-05",
+  "outfunnel-lezione-08::KA-06",
+  "outfunnel-lezione-08::KA-07",
+  "outfunnel-lezione-12::KA-01",
+  "outfunnel-lezione-12::KA-02",
+  "outfunnel-lezione-12::KA-03",
+  "outfunnel-lezione-13::KA-02",
+  "outfunnel-lezione-13::KA-03",
+  "outfunnel-lezione-13::KA-05",
+  "outfunnel-lezione-14::KA-01",
+  "outfunnel-lezione-14::KA-02",
+  "outfunnel-lezione-14::KA-03",
+  "outfunnel-lezione-14::KA-04",
+  "outfunnel-lezione-14::KA-05",
+  "outfunnel-lezione-14::KA-06",
+  "outfunnel-lezione-14::KA-08",
+  "outfunnel-lezione-15::KA-01",
+  "outfunnel-lezione-15::KA-03",
+  "outfunnel-lezione-15::KA-04",
+  "outfunnel-lezione-15::KA-05",
+  "outfunnel-lezione-15::KA-06",
+  "outfunnel-lezione-15::KA-07",
+  "outfunnel-lezione-16::KA-01",
+  "outfunnel-lezione-16::KA-02",
+  "outfunnel-lezione-16::KA-03",
+  "outfunnel-lezione-16::KA-04",
+  "outfunnel-lezione-18::KA-02",
+  "outfunnel-lezione-18::KA-03",
+  "outfunnel-lezione-18::KA-04",
+  "outfunnel-lezione-18::KA-05",
+  "outfunnel-lezione-20::KA-01",
+  "outfunnel-lezione-20::KA-02",
+  "outfunnel-lezione-20::KA-03",
+  "outfunnel-lezione-20::KA-04"
+ ],
+ "fonti_integrali": {
+  "-a0uuA1lbSI": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/-a0uuA1lbSI\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\-a0uuA1lbSI\\contenuto-integrale.md"
+  ],
+  "9CuQI0Cr4Pg": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/9CuQI0Cr4Pg\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\9CuQI0Cr4Pg\\contenuto-integrale.md"
+  ],
+  "Pv5uzIxp96U": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Pv5uzIxp96U\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Pv5uzIxp96U\\contenuto-integrale.md"
+  ],
+  "VYyIF1r6tkw": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/VYyIF1r6tkw\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\VYyIF1r6tkw\\contenuto-integrale.md"
+  ],
+  "hnPa2zspu3k": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/hnPa2zspu3k\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\hnPa2zspu3k\\contenuto-integrale.md"
+  ],
+  "jgIgOPAnYNY": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/jgIgOPAnYNY\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\jgIgOPAnYNY\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-01": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-01\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-03": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-03\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-04": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-04\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-05": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-05\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-06": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-06\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-07": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-07\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-08": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-08\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-12": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-12\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-13": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-13\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-14": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-14\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-15": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-15\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-16\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-18": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-18\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-20": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-20\\contenuto-integrale.md"
+  ],
+  "uqa06rlgmj4": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/uqa06rlgmj4\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\uqa06rlgmj4\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "-a0uuA1lbSI::KA-01",
+   "peso": "portante",
+   "tipo": "Diagnosi / Views senza destinazione",
+   "contenuto": "Apertura come diagnosi sarcastica: 'Complimenti, appena fatto 30.000 views - non hanno nessun posto dove andare a pagarti.' Il problema non e' la produzione di contenuto (video virali, formati diversi, contenuti di valore) ma l'assenza di una destinazione dove il traffico possa convertire. La metafora visiva lo rende letterale: capsule sparse sul tavolo con overlay 'occhio 30K', nessun contenitore in campo.",
+   "ancora": "",
+   "fonte": "-a0uuA1lbSI#00:00:00",
+   "frame": "frame-001, frame-002",
+   "run": "-a0uuA1lbSI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-a0uuA1lbSI::KA-01",
+     "run": "-a0uuA1lbSI",
+     "fonte": "-a0uuA1lbSI#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-02",
+   "peso": "supporto",
+   "tipo": "Diagnosi / La gente non ha capito cosa fai",
+   "contenuto": "Conseguenza diretta del volume senza destinazione: 'la gente non ha capito cosa fai'. L'audience accumulata dal contenuto virale non sa quale servizio venga offerto, quindi il volume non e' convertibile a prescindere dalla sua dimensione.",
+   "ancora": "",
+   "fonte": "-a0uuA1lbSI#00:00:09",
+   "frame": "frame-006, frame-008",
+   "run": "-a0uuA1lbSI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-a0uuA1lbSI::KA-02",
+     "run": "-a0uuA1lbSI",
+     "fonte": "-a0uuA1lbSI#00:00:09"
+    }
+   ]
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-03",
+   "peso": "portante",
+   "tipo": "Framework / Tensione reach vs spiegazione",
+   "contenuto": "Punto centrale del video: non si puo' spiegare cosa si fa dentro i contenuti, perche' 'quello scende di views e tu continui a fare views'. Esiste una tensione strutturale tra il contenuto che genera reach e il contenuto che spiega l'offerta: due lavori in conflitto sullo stesso canale. Il creator resta intrappolato in un ciclo di views che non si monetizza mai, non per pigrizia ma per un vincolo del mezzo.",
+   "ancora": "",
+   "fonte": "-a0uuA1lbSI#00:00:12",
+   "frame": "frame-009, frame-011",
+   "run": "-a0uuA1lbSI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-a0uuA1lbSI::KA-03",
+     "run": "-a0uuA1lbSI",
+     "fonte": "-a0uuA1lbSI#00:00:12"
+    }
+   ]
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-04",
+   "peso": "portante",
+   "tipo": "Soluzione / La landing come destinazione",
+   "contenuto": "'Se non c'hai un posto dove mandare le persone e dire io sono questo e offro questo, e' inutile.' La soluzione e' spostare la spiegazione FUORI dal canale sociale, su una landing page dedicata, che risolve la tensione senza costare reach. Visivamente: il piattino metallico che entra in campo verso le capsule.",
+   "ancora": "",
+   "fonte": "-a0uuA1lbSI#00:00:15",
+   "frame": "frame-012, frame-014",
+   "run": "-a0uuA1lbSI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-a0uuA1lbSI::KA-04",
+     "run": "-a0uuA1lbSI",
+     "fonte": "-a0uuA1lbSI#00:00:15"
+    }
+   ]
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-05",
+   "peso": "portante",
+   "tipo": "Struttura / Contenuto minimo della landing",
+   "contenuto": "Struttura minima dichiarata, in 5 blocchi: (1) chi sei, (2) cosa fai, (3) per chi lo offri, (4) modulo per contattarti, (5) opzionale: possibilita' di pagarti direttamente sul sito. Nessuna menzione di social proof, obiezioni o long-form copy: e' esplicitamente una pagina minima di identita' e contatto, non una sales page.",
+   "ancora": "",
+   "fonte": "-a0uuA1lbSI#00:00:27",
+   "frame": "frame-015, frame-017",
+   "run": "-a0uuA1lbSI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-a0uuA1lbSI::KA-05",
+     "run": "-a0uuA1lbSI",
+     "fonte": "-a0uuA1lbSI#00:00:27"
+    }
+   ]
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-06",
+   "peso": "supporto",
+   "tipo": "Meccanica / Volume per tasso di passaggio",
+   "contenuto": "'Alcune di quelle 10.000 persone capitano su questa pagina, e piu' sono meglio e'.' Il modello e' volume x tasso di passaggio: la landing non converte tutti, ne intercetta una frazione. Il contenuto continua a servire per il volume, la landing per la conversione. Nota: apre con 30.000 e poi dice 10.000 senza correggersi, riportato fedelmente.",
+   "ancora": "",
+   "fonte": "-a0uuA1lbSI#00:00:36",
+   "frame": "frame-020, frame-022",
+   "run": "-a0uuA1lbSI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-a0uuA1lbSI::KA-06",
+     "run": "-a0uuA1lbSI",
+     "fonte": "-a0uuA1lbSI#00:00:36"
+    }
+   ]
+  },
+  {
+   "uid": "-a0uuA1lbSI::KA-07",
+   "peso": "portante",
+   "tipo": "Regola operativa / Divisione dei compiti",
+   "contenuto": "Regola di chiusura: 'nei tuoi content non devi spiegare cosa fai e ridurre le views, devi solamente fare il CTA per andare nel link in bio.' Divisione dei compiti netta: il contenuto fa reach + UN SOLO CTA al link in bio, la landing fa spiegazione + conversione. Il CTA e' l'unico elemento commerciale ammesso dentro il contenuto.",
+   "ancora": "",
+   "fonte": "-a0uuA1lbSI#00:00:41",
+   "frame": "frame-023, frame-024, frame-026",
+   "run": "-a0uuA1lbSI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "-a0uuA1lbSI::KA-07",
+     "run": "-a0uuA1lbSI",
+     "fonte": "-a0uuA1lbSI#00:00:41"
+    }
+   ]
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-01",
+   "peso": "portante",
+   "tipo": "Copywriting / Strategia funnel",
+   "contenuto": "Percorso delle informazioni: ogni touchpoint del funnel deve consegnare UN solo pezzo di informazione, il piu' persuasivo per quella fase, nell'ordine giusto. L'ordine sbagliato = attenzione persa.",
+   "ancora": "",
+   "fonte": "9CuQI0Cr4Pg#0:02:00",
+   "frame": "frame-061",
+   "run": "9CuQI0Cr4Pg",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "9CuQI0Cr4Pg::KA-01",
+     "run": "9CuQI0Cr4Pg",
+     "fonte": "9CuQI0Cr4Pg#0:02:00"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-05",
+   "peso": "portante",
+   "tipo": "Funnel / Sales page organica vs ADS",
+   "contenuto": "Una sales page per traffico organico da' per scontata familiarita' col brand che un pubblico da ADS (traffico freddo) non ha - vanno progettate sales page diverse per le due sorgenti di traffico.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:04:51",
+   "frame": "frame-060",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-05",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:04:51"
+    }
+   ]
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-06",
+   "peso": "portante",
+   "tipo": "Framework / Funnel vendita diretta",
+   "contenuto": "Definizione funnel di vendita diretta: ads -> sito con ordine autonomo -> transazione, interamente automatizzato, senza coinvolgimento umano (es. e-commerce magliette). Requisito: prodotto acquistabile senza conversazione/consulenza previa.",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:02:36",
+   "frame": "frame-060",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-06",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:02:36"
+    }
+   ]
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-07",
+   "peso": "portante",
+   "tipo": "Framework / Funnel di contatti",
+   "contenuto": "Definizione funnel di contatti: ads -> traffico -> modulo raccolta dati -> call (spesso mascherata da 'consulenza gratuita' ma di fatto call di vendita) -> acquisto in call. Usato quando il prodotto richiede personalizzazione/conversazione (es. case, prodotti custom).",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:02:57",
+   "frame": "frame-080",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-07",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:02:57"
+    }
+   ]
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-08",
+   "peso": "portante",
+   "tipo": "Regola operativa / Soglia prezzo + red flag",
+   "contenuto": "Per prodotti digitali (es. corso €948) default = vendita diretta, salvo situazioni particolari. Osservazione critica: molti usano il funnel contatti non per necessita' del prodotto ma perche' serve un venditore per far comprare - descritto come 'generalmente una red flag': se non si converte in nessun altro modo, il problema reale e' nel prodotto, nel copy o nella mancata consapevolezza costruita, non nel formato del funnel.",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:03:19",
+   "frame": "frame-100",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-08",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:03:19"
+    }
+   ]
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-09",
+   "peso": "portante",
+   "tipo": "Framework / Criteri scelta + trade-off",
+   "contenuto": "Criteri di scelta: contatti quando serve conversazione per la transazione (coaching, personal training, su misura); vendita diretta quando prezzo sotto soglia indicativa ~€1000-2000 e non serve coinvolgimento umano (richiede saper 'vendere per iscritto'). Svantaggio contatti: percentuale ai venditori, processo meno automatico, piu' tempo per le call.",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:05:12",
+   "frame": "frame-140",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-09",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:05:12"
+    }
+   ]
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-02",
+   "peso": "contesto",
+   "tipo": "Framework / Sequenza funnel step 1",
+   "contenuto": "Risposta 1: l'ad viene prima della landing page - primo gradino di difficolta' crescente, ordine ovvio usato per introdurre il formato.",
+   "ancora": "",
+   "fonte": "hnPa2zspu3k#00:00:02",
+   "frame": "frame-002",
+   "run": "hnPa2zspu3k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hnPa2zspu3k::KA-02",
+     "run": "hnPa2zspu3k",
+     "fonte": "hnPa2zspu3k#00:00:02"
+    }
+   ]
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-03",
+   "peso": "supporto",
+   "tipo": "Framework / Sequenza funnel step 2 - vincolo strutturale",
+   "contenuto": "Risposta 2: la landing page viene prima dell'email per vincolo tecnico esplicito - senza form di opt-in non c'e' modo di raccogliere l'iscrizione necessaria per inviare email. L'ordine dipende da un prerequisito strutturale, non da convenzione.",
+   "ancora": "",
+   "fonte": "hnPa2zspu3k#00:00:05",
+   "frame": "frame-005",
+   "run": "hnPa2zspu3k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hnPa2zspu3k::KA-03",
+     "run": "hnPa2zspu3k",
+     "fonte": "hnPa2zspu3k#00:00:05"
+    }
+   ]
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-04",
+   "peso": "supporto",
+   "tipo": "Framework / Sequenza funnel - ambiguita reale",
+   "contenuto": "Risposta 3 (unica con 'non e' rilevante/dipende'): l'email puo' venire prima O dopo l'acquisto a seconda di come e' impostato il funnel - a differenza delle altre domande, qui l'ordine non e' fisso ma dipende dal design del funnel (nurturing pre-vendita vs onboarding/upsell post-acquisto).",
+   "ancora": "",
+   "fonte": "hnPa2zspu3k#00:00:14",
+   "frame": "frame-008",
+   "run": "hnPa2zspu3k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hnPa2zspu3k::KA-04",
+     "run": "hnPa2zspu3k",
+     "fonte": "hnPa2zspu3k#00:00:14"
+    }
+   ]
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-05",
+   "peso": "supporto",
+   "tipo": "Framework / Sequenza funnel - coesistenza",
+   "contenuto": "Risposta 4: 'entrambe' - sequenza tipica: call di vendita -> acquisto -> eventuale call di upsell se necessario. La call puo' comparire sia prima sia dopo l'acquisto nello stesso funnel con funzioni diverse.",
+   "ancora": "",
+   "fonte": "hnPa2zspu3k#00:00:21",
+   "frame": "frame-012",
+   "run": "hnPa2zspu3k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hnPa2zspu3k::KA-05",
+     "run": "hnPa2zspu3k",
+     "fonte": "hnPa2zspu3k#00:00:21"
+    }
+   ]
+  },
+  {
+   "uid": "hnPa2zspu3k::KA-06",
+   "peso": "contesto",
+   "tipo": "Framework / Sequenza funnel step 5 - vincolo strutturale",
+   "contenuto": "Risposta 5: le ads vengono prima del pop-up, stessa logica strutturale di KA-03 - il pop-up e' visibile solo a chi e' gia' arrivato sulla landing generata dal traffico dell'ad; non puo' esistere prima del traffico che lo genera.",
+   "ancora": "",
+   "fonte": "hnPa2zspu3k#00:00:27",
+   "frame": "frame-015",
+   "run": "hnPa2zspu3k",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hnPa2zspu3k::KA-06",
+     "run": "hnPa2zspu3k",
+     "fonte": "hnPa2zspu3k#00:00:27"
+    }
+   ]
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-08",
+   "peso": "portante",
+   "tipo": "Copywriting / Briefing",
+   "contenuto": "Il contesto funnel/consapevolezza determina il copy da scrivere - audience fredda vs calda richiedono approcci opposti. Esempio: FB ad = audience fredda (non sa chi sei), sales page = audience calda (ha gia' visto opt-in ed email sequence). Copy identico per entrambe = conversione zero.",
+   "ancora": "",
+   "fonte": "jgIgOPAnYNY#0:05:30",
+   "frame": "frame-200",
+   "run": "jgIgOPAnYNY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "jgIgOPAnYNY::KA-08",
+     "run": "jgIgOPAnYNY",
+     "fonte": "jgIgOPAnYNY#0:05:30"
+    }
+   ]
+  },
+  {
+   "uid": "jgIgOPAnYNY::KA-24",
+   "peso": "portante",
+   "tipo": "Copywriting / Funnel",
+   "contenuto": "Funnel completo: FB ad (freddo) -> opt-in page -> email sequence -> sales page (caldo) - ogni step presuppone diversa consapevolezza del prospect. Copy della sales page presuppone che l'audience conosca gia' il prodotto; lo stesso copy usato nella FB ad fredda sarebbe incomprensibile e non convertirebbe.",
+   "ancora": "",
+   "fonte": "jgIgOPAnYNY#0:05:50",
+   "frame": "frame-200",
+   "run": "jgIgOPAnYNY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "jgIgOPAnYNY::KA-24",
+     "run": "jgIgOPAnYNY",
+     "fonte": "jgIgOPAnYNY#0:05:50"
+    }
+   ]
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Il funnel è il modello del percorso di un potenziale cliente dal primo contatto con un prodotto/servizio fino all'acquisto, rappresentato come un imbuto: TOF (Top of Funnel, molti entrano) → BOF (Bottom of Funnel, pochi comprano).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-01#\"cos'è-un-funnel?\"",
+   "frame": "",
+   "run": "outfunnel-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Un funnel non ha un numero fisso di step: può averne 3, 5, 10 o più — è definito dal percorso, non da un template rigido.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-01#\"funzionamento-del-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Struttura di riferimento a 7 step del funnel classico: Ad → Opt-in Page → Email di marketing → Sales Page → Checkout → Cross-sell/Up-sell → Follow-up.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-01#\"esempio-di-funnel-classico\"",
+   "frame": "",
+   "run": "outfunnel-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-01::KA-06",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Posizionamento dichiarato del corso: copre \"strategie avanzate di marketing online difficili da trovare altrove\" — imposta l'aspettativa che le lezioni successive vadano oltre le basi da manuale.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-01#\"conclusione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-01",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "4 obiettivi possibili di un funnel: (1) generare contatti per email marketing, (2) generare contatti per un team di vendita, (3) vendita diretta, (4) awareness/brand.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-03#\"1️⃣-tipologie-di-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Il funnel a contatti-per-venditori si usa quando il prezzo è alto (indicativamente sopra 1.000€) o quando il copywriting da solo non basta a chiudere — si raccoglie il telefono, poi chiama un umano.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-03#\"generare-contatti-per-venditori\"",
+   "frame": "",
+   "run": "outfunnel-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "La vendita diretta (Ad → Pagina prodotto → Checkout) funziona bene con prodotti d'impulso o basso costo — nessun passaggio intermedio.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-03#\"vendita-diretta\"",
+   "frame": "",
+   "run": "outfunnel-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-05",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "L'awareness (es. Coca-Cola) è l'obiettivo più difficile da misurare perché il risultato non è immediato; può essere combinato con un funnel di iscrizione a valle.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-03#\"creazione-di-awareness\"",
+   "frame": "",
+   "run": "outfunnel-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-06",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Struttura base generalizzata: Ads/traffico organico → Opt-in Page → Email o chiamate → Pagina di vendita o sales call.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-03#\"2️⃣-struttura-base-di-un-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-03::KA-07",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Regola di scelta: email marketing se serve retargeting a costo zero; sales call se prezzo alto/prodotto complesso; vendita diretta se prodotto semplice/economico; awareness se l'obiettivo è brand nel tempo.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-03#\"3️⃣-quando-usare-ogni-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-03",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "3 fasi di creazione di un funnel, in ordine di importanza: Strategia (decidere la struttura — errori qui compromettono tutto) → Creatività (copy, design, video) → Pratica (messa online: piattaforma, ads, automazioni).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-04#\"1️⃣-le-tre-fasi\"",
+   "frame": "",
+   "run": "outfunnel-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Un funnel personalizzato batte sempre un funnel standardizzato/riciclato per lo stesso motivo per cui il copy specifico batte il copy generico (vedi Lezione 15).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-04#\"2️⃣-il-problema-degli-approcci-standardizzati\"",
+   "frame": "",
+   "run": "outfunnel-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "**Target Fixation** (concetto preso in prestito dal MotoGP): concentrarsi solo sull'obiettivo finale (\"voglio vendere\") senza pensare al percorso del cliente produce funnel troppo semplici e inefficaci (ad → sales page → checkout, senza messaggio).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-04#\"3️⃣-target-fixation\"",
+   "frame": "",
+   "run": "outfunnel-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-04",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Processo corretto in 4 passi: (1) definire il primo step/traffico, (2) definire il messaggio chiave del prodotto, (3) scomporre il messaggio negli step dei 5 livelli di consapevolezza (Lezione 2), (4) trasformare gli step logici in step reali del funnel.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-04#\"4️⃣-il-processo-corretto\"",
+   "frame": "",
+   "run": "outfunnel-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-04::KA-05",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Esempio applicato: orologio economico \"che sembra di lusso\" → messaggio \"impressione di successo senza spendere una fortuna\" → mappato sui 5 livelli (non sembri di alto livello → un accessorio aiuta → questo orologio è perfetto → costa poco e fa colpo → compralo ora) → tradotto in funnel reale (ad video → landing con VSL → product page → email follow-up).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-04#\"4️⃣\",-esempio-completo",
+   "frame": "",
+   "run": "outfunnel-lezione-04",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-01",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Metodo di analisi dichiarato: Paese (Italy) + Categoria (ADS) + Keyword (es. orologio, panino, consulenza) — probabile riferimento a Facebook Ads Library (strumento citato esplicitamente in Lezione 8).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-05#\"analisi-di-esempi-di-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Esempio 1 (Awareness): un brano musicale sponsorizzato = funnel a 2 step (ad di awareness → ascolto), nessuna vendita diretta.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-05#\"esempio-1\"",
+   "frame": "",
+   "run": "outfunnel-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Esempio 2 (Just Eat): funnel diretto a 2 step (ad → pagina d'acquisto), il modello più breve possibile per acquisti d'impulso.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-05#\"esempio-2\"",
+   "frame": "",
+   "run": "outfunnel-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Esempio 3 (consulenza lavorativa): funnel a 4 step (ad con storia personale → landing/sales page → opt-in per Open Day → possibile call di consulenza) — più elaborato perché il prodotto richiede più fiducia.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-05#\"esempio-3\"",
+   "frame": "",
+   "run": "outfunnel-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-05",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Tassonomia di sintesi a 3 pattern: Funnel diretto (2 step, es. Just Eat), Funnel con opt-in (3+ step, es. consulenza), Funnel di Awareness (1-2 step, nessuna CTA immediata).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-05#\"struttura-comune-nei-funnel-analizzati\"",
+   "frame": "",
+   "run": "outfunnel-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-05::KA-06",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Osservazione chiave: funnel che sembrano semplici in superficie spesso nascondono elementi non visibili a un primo sguardo (opt-in, email marketing, retargeting) — l'analisi competitor va fatta seguendo il percorso reale, non giudicando dalla sola ad.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-05#\"conclusione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-05",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "8 tipologie di funnel per contenuto: Vendita Diretta, Lead Generation con Lead Magnet, Webinar, Free Shipping (libro gratis + spedizione a pagamento), Educativo, Challenge, Tripwire, Consulenza Gratuita.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-06#intero-riassunto",
+   "frame": "",
+   "run": "outfunnel-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Funnel Webinar: ad → opt-in → link accesso → webinar con CTA finale. Nota temporale esplicita: \"molto utilizzato fino al 2022, ancora valido ma meno efficace rispetto al passato\" — segnale di erosione dell'efficacia di un formato una volta dominante.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-06#\"funnel-per-webinar\"",
+   "frame": "",
+   "run": "outfunnel-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Funnel \"Free Shipping\": libro fisico gratis, cliente paga solo la spedizione — usato per costruire fiducia ed educare prima di vendite più costose (stesso principio del Tripwire, KA-05).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-06#\"funnel-free-shipping\"",
+   "frame": "",
+   "run": "outfunnel-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Funnel Challenge: sfida gratuita a tempo (es. 14 giorni) con contenuti giornalieri, offerta proposta alla fine — funziona su engagement e fidelizzazione pre-vendita.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-06#\"funnel-challenge\"",
+   "frame": "",
+   "run": "outfunnel-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-05",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Funnel Tripwire: prima offerta a bassissimo prezzo (es. 5€) per abbassare la resistenza psicologica all'acquisto — chi ha già pagato una volta spende più facilmente la volta dopo (stesso principio di Lezione 11, KA-01, e ripreso in dettaglio in Lezione 20).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-06#\"funnel-tripwire\"",
+   "frame": "",
+   "run": "outfunnel-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-06::KA-06",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Funnel Consulenza Gratuita: applicabile a molti settori (finanza, salute, investimenti, estetica) — l'autore la descrive esplicitamente come \"spesso una call di vendita mascherata da consulenza\", onestà sul meccanismo dietro l'etichetta.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-06#\"funnel-per-consulenza-gratuita\"",
+   "frame": "",
+   "run": "outfunnel-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-01",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Struttura di esempio a 4 step: Ads → Sales page → Popup con opt-in (es. 15% sconto per la mail) → Email di follow-up dopo 48 ore.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-07#\"struttura-di-base\"",
+   "frame": "",
+   "run": "outfunnel-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "4 tipologie di trigger per popup: Time on page (dopo X secondi), Scroll percentage, Exit intent (solo desktop), On element (a un punto preciso della pagina).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-07#\"popup\"",
+   "frame": "",
+   "run": "outfunnel-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Thank you page ha 3 funzioni: ringrazia, consegna il lead magnet promesso, include CTA aggiuntive per aumentare l'engagement.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-07#\"opt-in-e-thank-you-page\"",
+   "frame": "",
+   "run": "outfunnel-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-05",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Order bump = piccola offerta extra aggiunta DENTRO il checkout stesso (distinta da upsell/cross-sell, che avvengono prima o dopo).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-07#\"checkout-e-strategie-di-vendita\"",
+   "frame": "",
+   "run": "outfunnel-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-06",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Automazioni con condizioni: personalizzare le email in base al comportamento (es. non inviare a chi ha già comprato) — primo accenno al tema ripreso in dettaglio in Lezione 15 (Behaviour-Based Tags).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-07#\"automazioni-con-condizioni\"",
+   "frame": "",
+   "run": "outfunnel-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-07::KA-07",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Distinzione terminologica: landing page = qualsiasi pagina di atterraggio; opt-in page = landing page specificamente dedicata alla raccolta contatti (sottoinsieme, non sinonimo).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-07#\"landing-page-e-opt-in-page\"",
+   "frame": "",
+   "run": "outfunnel-lezione-07",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Step 1 — Definire l'obiettivo (vendite / lead / conversioni) e le KPI di successo; avviso esplicito: non giudicare i risultati troppo presto, analizzarli dopo qualche giorno.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-08#\"definire-l'obiettivo\"",
+   "frame": "",
+   "run": "outfunnel-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Step 2 — Comprendere il target: livello di consapevolezza (Lezione 2), buyer persona, \"hook iniziali\" (punti di attenzione che catturano il target).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-08#\"comprendere-il-target\"",
+   "frame": "",
+   "run": "outfunnel-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Step 3 — Analizzare i competitor diretti E indiretti (stesso pubblico, prodotto diverso) e osservare mercati esteri; strumenti nominati: Facebook Ads Library, analisi pagine Instagram/Google Ads/YouTube dei competitor.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-08#\"analizzare-i-funnel-dei-competitor\"",
+   "frame": "",
+   "run": "outfunnel-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-04",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Step 4 — Definire il MOFU (Middle of Funnel) prima ancora di stabilire l'entry point o il punto di chiusura: struttura a 3 livelli Top (ads) → Middle (sales page, email, educazione) → Bottom (checkout/conversione).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-08#\"definire-il-middle-of-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-05",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Step 5 — Definire gli entry point (Top Funnel): ads, contenuti organici, retargeting — con l'avvertenza esplicita di non considerare TUTTI i possibili entry point, solo quelli rilevanti e sotto controllo.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-08#\"definire-gli-entry-points\"",
+   "frame": "",
+   "run": "outfunnel-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-06",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Step 6 — Definire il Bottom Funnel (checkout, iscrizione, prenotazione consulenza), con possibilità di integrare un upsell.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-08#\"definire-il-bottom-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-08::KA-07",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Step 7 — Retargeting e follow-up con tempi concreti: email di recupero carrello dopo 3 ore, follow-up dopo 30 giorni con nuove offerte/contenuti.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-08#\"definire-retargeting-e-follow-up\"",
+   "frame": "",
+   "run": "outfunnel-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-12::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Checklist di 7 fattori \"fra gli step\": (1) tempo trascorso fra step, (2) transizione emotiva, (3) contenuti esterni visti nel frattempo (es. ads di competitor), (4) coerenza del tono di voce, (5) aspettative create negli step precedenti, (6) eventi esterni/stagionalità, (7) cambiamenti nella percezione generale del mercato.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-12#intero-riassunto",
+   "frame": "",
+   "run": "outfunnel-lezione-12",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-12::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Fattore 1 (tempo): se passano troppi giorni fra step, l'utente dimentica — soluzione: ripetere messaggi chiave e obiezioni già affrontate nello step precedente, non darle per acquisite.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-12#\"1.-tempo-tra-uno-step-e-l'altro\"",
+   "frame": "",
+   "run": "outfunnel-lezione-12",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-12::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Fattore 5 (aspettative): esempio concreto — se il copy promette \"prenota oggi\" ma il calendario reale ha la prima data disponibile fra una settimana, la conversione crolla; le tempistiche reali vanno comunicate esplicitamente.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-12#\"5.-aspettative-create\"",
+   "frame": "",
+   "run": "outfunnel-lezione-12",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-12::KA-04",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Fattore 7 (percezione di mercato): esempio storico citato — durante il lockdown l'interesse per i corsi online è aumentato drasticamente, dimostrando che eventi esterni globali cambiano la ricettività del pubblico indipendentemente dal funnel stesso.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-12#\"7.-cambiamenti-nella-percezione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-12",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-02",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Errore diagnostico comune, nominato esplicitamente: dare per scontato che il problema sia SEMPRE nell'ultimo step (la Sales Page) — in realtà spesso le persone si bloccano in uno step precedente, prima ancora di arrivare alla vendita.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-13#\"3.-errore-comune\"",
+   "frame": "",
+   "run": "outfunnel-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Metodo di ottimizzazione: identificare lo step con il CR più basso, poi testare varianti mirate (copy, immagini/design, riduzione campi nei form, targeting ads) — MA non testare troppe cose insieme, altrimenti diventa impossibile isolare cosa ha funzionato.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-13#\"4.-come-ottimizzare\"",
+   "frame": "",
+   "run": "outfunnel-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-04",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Strumento nominato esplicitamente: Milanote, per organizzare visivamente funnel e messaggi; più tabelle di percentuali di conversione per step, con tracciamento delle modifiche fatte.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-13#\"5.-strumenti\"",
+   "frame": "",
+   "run": "outfunnel-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-05",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Metodo riassunto in 3 verbi: analizza, testa, ottimizza — ciclo da ripetere finché il funnel non performa al massimo.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-13#\"conclusione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-01",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "CR (Conversion Rate) = (conversioni / visitatori) × 100.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-14#\"tasso-di-conversione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "CPC (Cost per Click) = budget speso ÷ numero di click.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-14#\"costo-per-click\"",
+   "frame": "",
+   "run": "outfunnel-lezione-14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "CPA (Cost per Acquisition) = budget speso ÷ numero di acquisti.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-14#\"costo-per-acquisizione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "CPL (Cost per Lead) = budget speso ÷ numero di lead.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-14#\"costo-per-lead\"",
+   "frame": "",
+   "run": "outfunnel-lezione-14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-05",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "ROI (Return on Investment) = (entrate - spese) ÷ spese × 100.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-14#\"ritorno-sull'investimento\"",
+   "frame": "",
+   "run": "outfunnel-lezione-14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-06",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "CLV (Customer Lifetime Value) = quanto un cliente spende in totale nel tempo (nessuna formula esplicita data, solo definizione).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-14#\"customer-lifetime-value\"",
+   "frame": "",
+   "run": "outfunnel-lezione-14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-07",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Altri KPI nominati senza formula: tasso di abbandono carrello, AOV (Average Order Value = spesa media per ordine), tempo medio sulla pagina, frequenza di rimbalzo, open rate email, CTR email.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-14#sezione-2,-coda",
+   "frame": "",
+   "run": "outfunnel-lezione-14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-14::KA-08",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Metodo d'uso: identificare lo step con CR basso → guardare i KPI collegati a quello step specifico → eseguire test mirati → rimonitorare i KPI dopo ogni test. Esplicitamente: NON monitorare tutti i KPI sempre, solo quelli rilevanti al problema che si sta affrontando.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-14#\"3.-come-usare-i-kpi\"",
+   "frame": "",
+   "run": "outfunnel-lezione-14",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Principio guida: \"parlare a tutti equivale a non parlare a nessuno\" — parlare a ogni singola persona individualmente sarebbe ideale ma non scalabile; la segmentazione è il compromesso pratico.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-15#\"1.-perché-la-segmentazione-è-fondamentale\"",
+   "frame": "",
+   "run": "outfunnel-lezione-15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Strategie di segmentazione nel funnel: funnel separati per segmento, ads diverse per target diversi (stessa pagina o pagine personalizzate), sales page con stessa struttura ma headline diversa per segmento, budget distribuito in proporzione alla grandezza di ciascun segmento.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-15#\"strategie-per-segmentare\"",
+   "frame": "",
+   "run": "outfunnel-lezione-15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-04",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "**Behaviour-Based Tags**: etichette assegnate agli utenti in base alle azioni compiute (es. visita alla sales page del \"Prodotto 2\" → tag \"P2-SP\" → email personalizzate su quel prodotto); regole condizionali esemplificate: visto ma non cliccato → follow-up mirato; cliccato ma non comprato → urgenza/scarcity.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-15#\"1.-behaviour-based-tags\"",
+   "frame": "",
+   "run": "outfunnel-lezione-15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-05",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "**Lead Scoring**: sistema a punti che identifica i lead più \"caldi\" — esempio: 1ª visita sales page = +1, 2ª visita = +1, 3ª visita + visita Instagram + click su un link = lead molto interessato → email personalizzate più aggressive; permette di concentrare budget/attenzione solo sui lead a punteggio alto.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-15#\"2.-lead-scoring\"",
+   "frame": "",
+   "run": "outfunnel-lezione-15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-06",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "**Custom Audience Journey**: percorsi email differenziati in base al comportamento specifico (prima visita → sequenza standard; ritorni multipli → offerta speciale; visita ad altra pagina → email con suggerimenti personalizzati).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-15#\"3.-custom-audience-journey\"",
+   "frame": "",
+   "run": "outfunnel-lezione-15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-15::KA-07",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Avvertenza esplicita sui limiti: queste 3 tecniche (KA-04, KA-05, KA-06) sono avanzate e richiedono esperienza — un principiante dovrebbe iniziare con tag e segmentazioni semplici; non personalizzare OGNI step, va trovato un equilibrio con tempo/budget disponibili.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-15#\"4.-implementazione-pratica\"",
+   "frame": "",
+   "run": "outfunnel-lezione-15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-01",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Funnel Evergreen: stabile nel lungo periodo, dopo i primi test non viene modificato spesso — esempio: stesso tablet venduto per anni con lo stesso funnel e solo piccole ottimizzazioni.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-16#\"1.-funnel-evergreen\"",
+   "frame": "",
+   "run": "outfunnel-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Funnel per Promozioni: ha scadenza precisa, l'urgenza è centrale e DEVE crescere man mano che ci si avvicina alla fine — esempio a 3 fasi (pre-ordine → centrale con scarsità rinforzata → ultimi giorni con urgenza massima).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-16#\"2.-funnel-per-promozioni\"",
+   "frame": "",
+   "run": "outfunnel-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Tecnica \"Ads dinamiche\": durante una promo di 30 giorni si creano fino a 30 varianti dello stesso annuncio, cambiando SOLO la cifra dei giorni rimanenti nel copy (\"Mancano 30 giorni\" → ... → \"Ultimo giorno\") — copy e video restano identici, cambia solo la data.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-16#\"1.-ads-dinamiche\"",
+   "frame": "",
+   "run": "outfunnel-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-04",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Sales Page adattabile in 3 versioni sequenziali: v1 focus sul valore (inizio promo), v2 rinforzo con social proof (metà promo), v3 timer/countdown con CTA forte (ultimi giorni).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-16#\"2.-sales-page-adattabile\"",
+   "frame": "",
+   "run": "outfunnel-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-16::KA-05",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Adattamento stagionale: un funnel evergreen può essere temporaneamente modificato per eventi (es. Natale) cambiando solo elementi di design/copy superficiali, senza rifare l'intero funnel.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-16#\"3.-adattamento-alle-festività\"",
+   "frame": "",
+   "run": "outfunnel-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-01",
+   "peso": "contesto",
+   "tipo": "",
+   "contenuto": "Struttura base minima: Ad → Sales Page diretta, senza passaggi intermedi — non è \"sbagliata\" ma raramente ottimale in termini di costi/risultati.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-18#\"1.-struttura-base\"",
+   "frame": "",
+   "run": "outfunnel-lezione-18",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-02",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Primo livello di ottimizzazione (tipico delle agenzie): A/B testing delle ads con set diversi per target diversi, poi fase di testing di 7-30 giorni prima di tagliare le ads meno efficaci e aumentare budget su quelle migliori.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-18#\"2.-agenzie-e-ottimizzazione-base\"",
+   "frame": "",
+   "run": "outfunnel-lezione-18",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-03",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Secondo livello: Retargeting Ads verso chi ha già visitato la Sales Page, segmentato per tempo di permanenza (permanenza lunga = interesse alto) e per gestione delle obiezioni più comuni.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-18#\"3.-aggiunta-del-retargeting\"",
+   "frame": "",
+   "run": "outfunnel-lezione-18",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-04",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Terzo livello: una SECONDA Sales Page dedicata ai visitatori di ritorno (dal retargeting), con FAQ/obiezioni spostate in cima e headline riscritta per chi ha già visto l'offerta la prima volta.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-18#\"4.-ottimizzazione-della-sales-page\"",
+   "frame": "",
+   "run": "outfunnel-lezione-18",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-18::KA-05",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Conclusione esplicita: un funnel corto non è un errore automatico, ma va sempre valutato se testing + retargeting + personalizzazione lo migliorano — mai standardizzare lo stesso funnel su aziende diverse.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-18#\"5.-conclusione\"",
+   "frame": "",
+   "run": "outfunnel-lezione-18",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-20::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Problema risolto: prodotti costosi (es. 500€) sono difficili da vendere direttamente via ads — soluzione: introdurre un primo acquisto economico (Tripwire) per abbassare la resistenza; esempio Apple (iPhone come porta d'ingresso verso Mac/iPad più costosi).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-20#\"1.-il-problema\"",
+   "frame": "",
+   "run": "outfunnel-lezione-20",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-20::KA-02",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Blueprint completo a 6 step: Traffico (ads + organico) → Lead Magnet multi-opt-in (PDF/libro/software gratis) → Email di consegna con redirect immediato → Sequenza email per vendere il Tripwire (es. 50€) → Se acquista, upsell al prodotto principale (es. 500€) → Se non acquista, follow-up a lungo termine (es. ogni 7 giorni).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-20#\"2.-struttura-del-funnel\"",
+   "frame": "",
+   "run": "outfunnel-lezione-20",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-20::KA-03",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "\"Multi opt-in\": più lead magnet diversi permettono di attrarre segmenti di pubblico diversi con lo stesso funnel a valle.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-20#\"3.-punti-chiave\"",
+   "frame": "",
+   "run": "outfunnel-lezione-20",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-20::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Nota di onestà metodologica: questo funnel NON è obbligatorio, elementi come le email di transizione sono opzionali e possono essere rimossi per semplificare; con un funnel così complesso servono KPI per individuare rapidamente i colli di bottiglia (collegamento esplicito a Lezione 13/14).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-20#\"considerazioni-finali\"",
+   "frame": "",
+   "run": "outfunnel-lezione-20",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "uqa06rlgmj4::KA-08",
+   "peso": "contesto",
+   "tipo": "Funnel / Esempio applicato + CTA",
+   "contenuto": "Chiusura: 'clicca il link, invio, leggi la mia storia' - screenshot reale di un'interfaccia app/community con pulsante 'La mia storia' come applicazione concreta della tecnica.",
+   "ancora": "",
+   "fonte": "uqa06rlgmj4#00:00:52",
+   "frame": "frame-028,029",
+   "run": "uqa06rlgmj4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "uqa06rlgmj4::KA-08",
+     "run": "uqa06rlgmj4",
+     "fonte": "uqa06rlgmj4#00:00:52"
+    }
+   ]
+  }
+ ]
+}

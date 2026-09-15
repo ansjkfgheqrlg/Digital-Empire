@@ -1,0 +1,1710 @@
+{
+ "capitolo": "V.7",
+ "parte": "V.7",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Cowork e delega operativa all'AI",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-bonus-02::KA-09",
+  "cs2online-bonus-05::KA-01",
+  "cs2online-bonus-05::KA-02",
+  "cs2online-bonus-05::KA-03",
+  "cs2online-bonus-05::KA-04",
+  "cs2online-lezione-09::KA-03",
+  "cs2online-lezione-09::KA-05",
+  "cs2online-lezione-09::KA-06",
+  "cs2online-lezione-13::KA-01",
+  "cs2online-lezione-13::KA-03",
+  "cs2online-lezione-13::KA-09",
+  "cs2online-lezione-13::KA-10",
+  "cs2online-lezione-13::KA-11",
+  "cs2online-lezione-16::KA-05",
+  "cs2online-lezione-16::KA-06",
+  "max17-v02-beggiato-team::KA-031",
+  "max17-v10-barron-sales::KA-053",
+  "max18-v05-RnNSRF4s9nk::KA-060",
+  "max18-v08-DI5aWJiFAt8::KA-001",
+  "max18-v08-DI5aWJiFAt8::KA-002",
+  "max18-v08-DI5aWJiFAt8::KA-004",
+  "max18-v08-DI5aWJiFAt8::KA-006",
+  "max18-v08-DI5aWJiFAt8::KA-007",
+  "max18-v08-DI5aWJiFAt8::KA-017",
+  "max18-v08-DI5aWJiFAt8::KA-023",
+  "max18-v08-DI5aWJiFAt8::KA-024",
+  "max18-v08-DI5aWJiFAt8::KA-030",
+  "max18-v08-DI5aWJiFAt8::KA-035",
+  "max18-v08-DI5aWJiFAt8::KA-036",
+  "max18-v08-DI5aWJiFAt8::KA-042",
+  "max18-v08-DI5aWJiFAt8::KA-044",
+  "max18-v08-DI5aWJiFAt8::KA-051",
+  "max18-v08-DI5aWJiFAt8::KA-052",
+  "max18-v08-DI5aWJiFAt8::KA-121",
+  "max18-v08-DI5aWJiFAt8::KA-213",
+  "max18-v08-DI5aWJiFAt8::KA-214",
+  "max18-v08-DI5aWJiFAt8::KA-216",
+  "max18-v08-DI5aWJiFAt8::KA-217",
+  "max18-v08-DI5aWJiFAt8::KA-218",
+  "max18-v08-DI5aWJiFAt8::KA-219",
+  "max18-v08-DI5aWJiFAt8::KA-220",
+  "max18-v08-DI5aWJiFAt8::KA-221",
+  "max18-v08-DI5aWJiFAt8::KA-225",
+  "max18-v08-DI5aWJiFAt8::KA-226",
+  "max18-v08-DI5aWJiFAt8::KA-227",
+  "max18-v08-DI5aWJiFAt8::KA-228",
+  "max18-v09-NmoOZVTrTXA::KA-205",
+  "max18-v09-NmoOZVTrTXA::KA-212",
+  "max18-v09-NmoOZVTrTXA::KA-238",
+  "max18-v09-NmoOZVTrTXA::KA-239",
+  "max18-v09-NmoOZVTrTXA::KA-241",
+  "max18-v09-NmoOZVTrTXA::KA-243",
+  "max18-v09-NmoOZVTrTXA::KA-266",
+  "max18-v09-NmoOZVTrTXA::KA-301",
+  "max18-v09-NmoOZVTrTXA::KA-307"
+ ],
+ "fonti_integrali": {
+  "cs2online-bonus-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-02\\contenuto-integrale.md"
+  ],
+  "cs2online-bonus-05": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-05\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-09": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-09\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-11": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-11\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-13": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-13\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-16\\contenuto-integrale.md"
+  ],
+  "max17-v02-beggiato-team": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\video-analysis.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max18-v05-RnNSRF4s9nk": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-001-020.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-021-040.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-041-060.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-061-080.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v05-RnNSRF4s9nk\\_parte-081-098.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\RnNSRF4s9nk\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-bonus-02::KA-05",
+   "peso": "contesto",
+   "tipo": "Dettaglio tecnico osservato",
+   "contenuto": "Dettaglio tecnico NON presente nel testo ufficiale, trovato solo con visione diretta: Claude Cowork genera il PDF scrivendo ed eseguendo codice Python con la libreria reportlab, installata al volo come step del task agentico. Processo visibile: Running skill -> Loading tools -> Update todo list -> Install reportlab -> Writing create_report.py.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#frame-t12m15s",
+   "frame": "frame-t12m15s-cowork-reportlab-pdf-generation.jpg",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-05",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#frame-t12m15s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-09",
+   "peso": "supporto",
+   "tipo": "Riutilizzo sistema",
+   "contenuto": "Riutilizzo per report successivi: basta avviare nuovo task su Cowork, condividere la stessa cartella e incollare solo i dati aggiornati - zero rilavorazione delle istruzioni.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-09",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-01",
+   "peso": "portante",
+   "tipo": "Concetto / progetto continuo",
+   "contenuto": "Differenza tra prompt isolato (domanda singola -> risposta -> fine) e progetto continuo: nel progetto il loop prompt-risposta si ripete e Claude accumula context nel tempo, invece di ripartire da zero ogni volta.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-05#cosa-hai-imparato+frame-t3m10s",
+   "frame": "frame-t3m10s-excalidraw-loop-diagram.jpg",
+   "run": "cs2online-bonus-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-05::KA-01",
+     "run": "cs2online-bonus-05",
+     "fonte": "cs2online-bonus-05#cosa-hai-imparato+frame-t3m10s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-02",
+   "peso": "portante",
+   "tipo": "Vantaggi Projects Cowork",
+   "contenuto": "3 vantaggi chiave dei Projects in Cowork: (1) memoria specifica per progetto, (2) file allegati persistenti, (3) accesso diretto a una cartella sul device - non serve riallegare/ricondividere materiale a ogni nuovo task.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-05#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-05::KA-02",
+     "run": "cs2online-bonus-05",
+     "fonte": "cs2online-bonus-05#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-03",
+   "peso": "supporto",
+   "tipo": "Metodo organizzativo",
+   "contenuto": "Metodo organizzativo di Andrei: un Project Cowork per singolo cliente, con cartella condivisa e tutti i file del cliente dentro quella cartella.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-05#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-05::KA-03",
+     "run": "cs2online-bonus-05",
+     "fonte": "cs2online-bonus-05#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-04",
+   "peso": "supporto",
+   "tipo": "Modalita' Claude",
+   "contenuto": "3 modalita' Claude distinte (chat, Cowork, Claude Code da terminale) - strategia consigliata: provarle tutte fino a sviluppare intuizione su quando usare quale, non esiste risposta univoca.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-05#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-05::KA-04",
+     "run": "cs2online-bonus-05",
+     "fonte": "cs2online-bonus-05#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-05::KA-05",
+   "peso": "contesto",
+   "tipo": "Feature / import project",
+   "contenuto": "Possibilita' di creare un nuovo Project in Cowork oppure importarne uno gia' esistente dalla chat normale - non serve ricominciare da zero se il progetto esiste gia' altrove.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-05#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-05",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-05::KA-05",
+     "run": "cs2online-bonus-05",
+     "fonte": "cs2online-bonus-05#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-03",
+   "peso": "portante",
+   "tipo": "Regola anti-spreco",
+   "contenuto": "Regola esplicita anti-spreco: con Cowork condividere SOLO la sottocartella cliente rilevante, mai l'intera cartella principale - altrimenti Claude 'spreca token e context window a cercare la roba che gli serve'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-09#trascrizione",
+   "frame": "",
+   "run": "cs2online-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-09::KA-03",
+     "run": "cs2online-lezione-09",
+     "fonte": "cs2online-lezione-09#trascrizione"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-05",
+   "peso": "portante",
+   "tipo": "Struttura Project",
+   "contenuto": "Struttura di un Project Claude: chat raggruppate + memory automatica (si aggiorna da sola conversazione dopo conversazione) + instructions fisse (brevi, 'il grosso lavoro lo fanno i file e la memory') + files di contesto.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-09#trascrizione+frame-t8m00s",
+   "frame": "frame-t8m00s-claude-set-project-instructions.jpg",
+   "run": "cs2online-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-09::KA-05",
+     "run": "cs2online-lezione-09",
+     "fonte": "cs2online-lezione-09#trascrizione+frame-t8m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-06",
+   "peso": "portante",
+   "tipo": "Criterio scelta metodo",
+   "contenuto": "Criterio esplicito di scelta metodo: copy/lavoro testuale continuativo -> Projects; presentazioni/task pesanti/molti file -> Cowork; task one-time veloce -> chat singola con file allegati.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-09#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-09::KA-06",
+     "run": "cs2online-lezione-09",
+     "fonte": "cs2online-lezione-09#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-09::KA-08",
+   "peso": "contesto",
+   "tipo": "Equivalenti cross-tool",
+   "contenuto": "Equivalenti dei Projects Claude in altri tool: Perplexity Spaces, Grok (feature simile), Google Gemini Gems.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-09#link-utili",
+   "frame": "",
+   "run": "cs2online-lezione-09",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-09::KA-08",
+     "run": "cs2online-lezione-09",
+     "fonte": "cs2online-lezione-09#link-utili"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-11::KA-08",
+   "peso": "contesto",
+   "tipo": "Sicurezza cartella dedicata",
+   "contenuto": "Cartella dedicata alla condivisione con Claude - NON dare accesso a tutto il computer, stessa regola di sicurezza/efficienza gia' vista (lezioni 6, 9).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-11#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-11",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-11::KA-08",
+     "run": "cs2online-lezione-11",
+     "fonte": "cs2online-lezione-11#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-01",
+   "peso": "portante",
+   "tipo": "Workflow end-to-end",
+   "contenuto": "Workflow ricerca copywriting end-to-end osservato per intero su cliente reale: call onboarding -> trascrizione Gemini -> doc ClickUp 'Client overview' -> Project Claude dedicato con doc allegato -> ricerca in parallelo Claude+Perplexity stesso prompt -> editing manuale MarkEdit -> documento finale con citazioni.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#timeline-completa",
+   "frame": "",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-01",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#timeline-completa"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-03",
+   "peso": "supporto",
+   "tipo": "Tecnica / multi-tool parallelo",
+   "contenuto": "Claude e Perplexity usati IN PARALLELO sullo stesso identico prompt/task per poi scegliere/combinare l'output migliore - osservato con entrambe le interfacce a schermo simultaneamente, stesso testo di prompt.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#frame-t17m30s-t18m00s",
+   "frame": "",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-03",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#frame-t17m30s-t18m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-09",
+   "peso": "portante",
+   "tipo": "Principio 80/20 ricerca",
+   "contenuto": "L'AI fa il 90% del lavoro pesante (ricerca, organizzazione, compilazione), l'umano il 10% di controllo/editing - ma quel 10% resta indispensabile per giudicare se l'output e' buono.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-09",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-10",
+   "peso": "supporto",
+   "tipo": "Allocazione tempo",
+   "contenuto": "Regola su dove investire il tempo umano risparmiato: i primary text li fa Claude in 5 minuti, le ore risparmiate si investono sulla sales page che richiede piu' cura - il tempo libero va reinvestito nel lavoro a piu' alto valore, non solo 'risparmiato'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-10",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-11",
+   "peso": "supporto",
+   "tipo": "Posizione anti-over-engineering",
+   "contenuto": "Le mega-automazioni 'full AI' sono dichiarate overkill per un freelancer: producono output mediocri e richiederebbero budget da azienda strutturata per funzionare bene.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-11",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-05",
+   "peso": "portante",
+   "tipo": "Regola operativa / no-delega-strategia",
+   "contenuto": "Regola esplicita e ripetuta (4a occorrenza nel corso): NON delegare la strategia a Claude - inserire nel prompt USP, CTA desiderata ed elementi strategici specifici. Claude va usato 'solo per la forma', non per decidere cosa dire.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-05",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-06",
+   "peso": "supporto",
+   "tipo": "Tecnica / passare sales page a Claude",
+   "contenuto": "3 modi per passare una sales page a Claude: (1) link diretto, (2) copia-incolla manuale testo, (3) tool online (totheweb.com) HTML->testo. GoFullPage (screenshot PDF pagina intera) alternativa con limite dichiarato: 'il PDF a volte non viene letto bene da Claude, meglio testo o markdown'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#panoramica+cosa-hai-imparato+frame-t11m00s",
+   "frame": "frame-t11m00s-gofullpage-capture.jpg",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-06",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#panoramica+cosa-hai-imparato+frame-t11m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-09",
+   "peso": "contesto",
+   "tipo": "Iterazione output",
+   "contenuto": "Se l'output non piace nel formato, chiedere esplicitamente la riformattazione (es. 'mettimelo come markdown') invece di rifare il prompt da zero.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-09",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-10",
+   "peso": "contesto",
+   "tipo": "Nota tecnica browser",
+   "contenuto": "Arc (browser) supporta estensioni Chrome perche' gira su Chromium - permette di usare GoFullPage anche fuori da Chrome stesso.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-10",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-031",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Verifiche dal vivo: controprova eseguita su browser renderizzato (Chrome via MCP), con gesti reali: click, aggiunta al carrello di un sandalo da 90 euro, checkout raggiunto e abbandonato prima del pagamento.",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA (sezione Piano SEO deliverable)",
+   "frame": "frame-512.png",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-053",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Dopo aver costruito a mano un paio di business case, si può usare l'AI per automatizzarne la produzione.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#22:41",
+   "frame": "frame-676.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v05-RnNSRF4s9nk::KA-060",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Alla richiesta di Claude di recuperare da solo le chiavi (\"Can you grab fresh keys from testnet.binance.vision?\"), il presentatore prima chiede all'assistente \"you cando all alone right?\" (refuso per \"you can do it all alone, right?\"), lasciando intravedere un tentativo di automazione via browser (menzionato uno strumento \"Chrome-devt...\" troncato), ma poi decide di recuperare lui stesso le chiavi e mostrarlo al pubblico, invece di lasciare che sia l'AI a operare il browser in autonomia.",
+   "ancora": "poi ho deciso di farlo con voi. Perfetto, quindi fatemi pulire. E ora noi una volta fatto premeremo bypass permission e continueremo l'implementazione.",
+   "fonte": "RnNSRF4s9nk#21:30 (IDE Antigravity, \"you cando all alone right?\") e #22:06 (decisione confermata a voce) + voce 22:00-22:06",
+   "frame": "frame-216.png, frame-222.png",
+   "run": "max18-v05-RnNSRF4s9nk",
+   "relazioni": [
+    {
+     "verso": "KA-059",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-062",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-063",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-001",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Claude Cowork è uno strumento che, se imparato bene, permette di aumentare drasticamente la produttività di chi lo usa.",
+   "ancora": "Cowork è uno strumento che, se imparato bene, vi permette di aumentare drasticamente la vostra produttività.",
+   "fonte": "DI5aWJiFAt8#0:06 (apertura del corso, promessa di produttività) + voce 0:06-0:18",
+   "frame": "frame-0002.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-002",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Con Claude Cowork, task che normalmente richiederebbero 2-3 ore di lavoro manuale possono essere completati in circa 10 minuti.",
+   "ancora": "Task che prima vi richiedevano 2 ore, 3 ore, li farete letteralmente in 10 minuti.",
+   "fonte": "DI5aWJiFAt8#0:18 (promessa quantificata di velocità) + voce 0:18-0:24",
+   "frame": "frame-0004.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-001",
+     "tipo": "quantifica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-003",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il relatore del corso dichiara di gestire consulenze AI per aziende con fatturati che vanno da 10 milioni di euro al mese fino a 50 milioni l'anno, e di insegnare queste competenze anche nel proprio coaching program.",
+   "ancora": "Io ci gestisco consulenze per aziende che vanno da €10.000.000 al mese fino ai 50 milioni l'anno e lo insegno anche alle persone nel mio coaching program.",
+   "fonte": "DI5aWJiFAt8#0:24 (credenziale del relatore) + voce 0:24-0:36",
+   "frame": "frame-0005.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-229",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-004",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il corso completo su Claude Cowork è organizzato in 15 argomenti sequenziali, mostrati su una lavagna Excalidraw: (1) come scaricare Cowork, (2) differenze tra Claude vs Cowork vs Claude Code, (3) il ciclo delegare-verificare-correggere, (4) organizzazione del workspace in context/projects/outputs, (5) Claude Projects, (6) Project Instructions locali e globali, (7) limiti dei Projects (locali, non condivisibili in team), (9) file/skill/connettori/comandi/plugin, (10) pensare con Cowork: obiettivi vs task, (11) sub-agenti (pipeline vs paralleli), (12) finestra di contesto e suoi limiti, (13) Computer Use come eccezione alla VM, (14) Scheduled Tasks (setup e gotcha), (15) Dispatch dal telefono al desktop. Nella numerazione mostrata a schermo il punto 8 non compare mai (si salta da 7 a 9).",
+   "ancora": "CLAUDE COWORK CORSO COMPLETO / 1. Come scaricare Cowork",
+   "fonte": "DI5aWJiFAt8#0:36 (indice del corso su lavagna Excalidraw) + voce 0:36-0:48",
+   "frame": "frame-0007.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-137",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-084",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-096",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-093",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-126",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-113",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-213",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-181",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-184",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-220",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-005",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "L'obiettivo dichiarato del corso è mettere lo spettatore in grado di usare Claude Cowork meglio del 99% delle persone, così da poterlo implementare in azienda o offrirlo come servizio AI ai clienti.",
+   "ancora": "conoscenze necessarie per poter utilizzare Cloud Cowork, meglio del 99% delle persone",
+   "fonte": "DI5aWJiFAt8#2:24 (chiusura del capitolo aspettative del corso) + voce 2:24-2:30",
+   "frame": "frame-0025.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-001",
+     "tipo": "quantifica"
+    },
+    {
+     "verso": "KA-229",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-006",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Le funzionalità mobile avanzate di Claude, trattate più avanti nel corso, richiedono di installare anche l'app mobile (iOS/Android), equivalente a quella desktop, non solo quest'ultima.",
+   "ancora": "vi servirà in un momento successivo anche la parte mobile",
+   "fonte": "DI5aWJiFAt8#3:00 (pagina di download, sezione Mobile) + voce 3:00-3:24",
+   "frame": "frame-0031.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-224",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-007",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Claude Cowork richiede come minimo un abbonamento Claude Pro (o piani superiori); non è disponibile nel piano gratuito Free.",
+   "ancora": "servirà come minimo l'abbonamento Pro per poterlo utilizzare",
+   "fonte": "DI5aWJiFAt8#3:30 (ricerca prezzi Claude prima del download) + voce 3:24-3:36",
+   "frame": "frame-0036.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-008",
+     "tipo": "quantificato-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-017",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "I tre strumenti Claude si raggiungono da luoghi diversi: Claude (chat) da web, app e telefono; Claude Code da terminale (web, VS Code, app iOS); Claude Cowork solo dall'app Claude Desktop (Mac e Windows).",
+   "ancora": "Web, app, telefono | Terminale (web, VS Code, app iOS..) | Claude Desktop (Mac + Windows)",
+   "fonte": "DI5aWJiFAt8#4:30 (tabella comparativa, riga Dove puoi accedere) + voce 4:30-4:36",
+   "frame": "frame-0046.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-021",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Claude Cowork esegue le proprie azioni dentro una sandbox isolata (una macchina virtuale): il file che la contiene, claudevm.bundle, si trova in ~/Library/Application Support/Claude/vm_bundles/ e pesa circa 15,22 GB.",
+   "ancora": "vm_bundles ... claudevm.bundle — Today at 09:32 — 15,22 GB — bundle ... è la nostra sandbox, la scatolina sicura",
+   "fonte": "DI5aWJiFAt8#8:36 (Finder, cartella vm_bundles) + voce 8:36-9:06",
+   "frame": "frame-0087.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-012",
+     "tipo": "esempio-di",
+     "perche": "mostra fisicamente dove Cowork esegue le sue azioni sul computer"
+    },
+    {
+     "verso": "KA-134",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-023",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Claude Cowork opera sempre all'interno di una cartella di progetto specifica, scelta dall'utente: è un concetto cardine del suo funzionamento, non una chat libera senza contesto di file.",
+   "ancora": "Cloud Cowork ora sempre all'interno di una cartella",
+   "fonte": "DI5aWJiFAt8#10:18 (introduzione del primo concetto chiave di Cowork) + voce 10:18-10:42",
+   "frame": "frame-0104.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-024",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "Quando si aggancia una cartella a Claude Cowork, l'app chiede esplicitamente il permesso di leggere, modificare ed eliminare in modo permanente qualsiasi file al suo interno, avvertendo che il contenuto potrebbe essere condiviso con strumenti di terze parti a cui Cowork è collegato.",
+   "ancora": "Allow Claude to change files in \"Cowork tutorial\"? ... Claude will be able to read, edit, and permanently delete—and may share file contents with third-party tools it connects to.",
+   "fonte": "DI5aWJiFAt8#10:54 (dialogo di permesso cartella) + voce 10:54-11:00",
+   "frame": "frame-0110.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-023",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-108",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-026",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Il file usato nella Demo #1 (export di un CRM vendite anonimizzato) contiene 24 colonne: identificativi e anagrafica del deal (ID, nome, azienda, settore, contatto, ruolo, email), dati commerciali (proprietario del deal, stadio pipeline, probabilità %, fonte lead, prodotto, valore deal, valore ponderato, valuta, priorità) e dati temporali/di attività (data creazione, data chiusura prevista, data ultimo contatto, giorni da ultimo contatto, attività totali, prossimo step, note).",
+   "ancora": "Prodotto | Valore Deal | Valore Ponderato | Valuta | Priorità | Data Creazione | Data Chiusura Prevista | Data Ultimo Contatto | Giorni da Ultimo Contatto | Attività Totali | Prossimo Step",
+   "fonte": "DI5aWJiFAt8#11:24 (foglio Numbers, colonne del CRM) + voce 11:24-11:30",
+   "frame": "frame-0115.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-027",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il file sorgente della Demo #1 si chiama demo1_crm_export.csv, pesa 17 KB, ed è l'unico file presente nella cartella di progetto agganciata a Cowork prima di lanciare il task.",
+   "ancora": "demo1_crm_export.csv — Yesterday at 13:27 — 17 KB — CSV Document",
+   "fonte": "DI5aWJiFAt8#11:30 (Finder, cartella Cowork tutorial) + voce 11:30-11:36",
+   "frame": "frame-0116.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-026",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-029",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Quando riceve un prompt, Claude Cowork genera automaticamente un titolo sintetico per il task (es. 'Create CRM sales analysis report'), visibile in cima alla conversazione e nella lista 'Recents' della sidebar.",
+   "ancora": "Create CRM sales analysis report",
+   "fonte": "DI5aWJiFAt8#13:00 (titolo task generato automaticamente) + voce 13:00-13:30",
+   "frame": "frame-0131.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-028",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-030",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Di fronte a un task articolato, Claude Cowork lo scompone in una todo list a più passi mostrata nel pannello laterale 'Progress': ogni passo viene segnato come completato, in corso o in attesa man mano che il lavoro procede.",
+   "ancora": "Analizzare i dati CRM dal CSV (completata) ... Creando il file Excel completo (in corso) ... Verificare formule e formato finale (in attesa)",
+   "fonte": "DI5aWJiFAt8#13:30 (pannello Progress con step della todo list) + voce 13:30-13:54",
+   "frame": "frame-0136.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-033",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-124",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-033",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Il report generato dalla Demo #1 (Report_CRM_Pipeline.xlsx) è organizzato in 4 fogli tematici: Pipeline per Venditore, Conversione per Segmento, Deal Fermi 30+ Giorni, Raccomandazioni.",
+   "ancora": "Foglio 1 - Pipeline per Venditore ... Foglio 2 - Conversione per Segmento ... Foglio 3 - Deal Fermi 30+ Giorni ... Foglio 4 - Raccomandazioni",
+   "fonte": "DI5aWJiFAt8#15:42 (riepilogo finale del report a 4 fogli) + voce 15:42-16:00",
+   "frame": "frame-0158.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-028",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-034",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Nel report della Demo #1, le metriche aggregate chiave erano: tasso di conversione globale del 55,6%, valore della pipeline attiva di 4.273.119 €, valore ponderato attivo di 2.457.095 €, su 50 deal totali (41 attivi, 5 vinti, 4 persi).",
+   "ancora": "TOTALE | 50 | 41 | 5 | 4 | 55.6% | 4.273.119 € | 2.457.095 €",
+   "fonte": "DI5aWJiFAt8#16:00 (foglio Pipeline per Venditore, riga TOTALE) + voce 16:00-16:30",
+   "frame": "frame-0161.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-033",
+     "tipo": "quantifica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-035",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Nel foglio 'Deal Fermi 30+ Giorni' del report, Cowork ha applicato una formattazione condizionale per segnalare la gravità: righe evidenziate in rosso per i deal fermi da oltre 60 giorni, in giallo per quelli fermi tra 45 e 59 giorni.",
+   "ancora": "Quelli oltre 60 giorni sono evidenziati in rosso, quelli tra 45-59 in giallo.",
+   "fonte": "DI5aWJiFAt8#15:42 (descrizione del Foglio 3) + voce 15:42-16:00",
+   "frame": "frame-0158.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-033",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-036",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Il file generato da Claude Cowork (es. Report_CRM_Pipeline.xlsx) è un vero file .xlsx portabile: può essere aperto direttamente in applicazioni esterne come Numbers o Excel, non è solo un'anteprima interna alla chat.",
+   "ancora": "giusto per cambiare, insomma, andiamo ad aprirlo qua dentro",
+   "fonte": "DI5aWJiFAt8#18:54 (apertura del report in Numbers) + voce 18:54-19:00",
+   "frame": "frame-0190.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-033",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-199",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-041",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "In un foglio di calcolo (es. Numbers, Excel), il contenuto completo di una cella il cui testo appare tagliato o vuoto a video può essere letto per intero nella barra della formula selezionando quella cella.",
+   "ancora": "riferimento cella G8 ... Redistribuire 3-4 deal di Bruno a Diego.",
+   "fonte": "DI5aWJiFAt8#16:54 (cella G8, contenuto letto dalla barra della formula) + voce 16:54-17:00",
+   "frame": "frame-0170.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-033",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-042",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Il risultato finale della Demo #1 è stato un piano d'azione con 5 raccomandazioni azionabili per un valore totale coinvolto di 1.283.727 EUR, prodotto in pochi minuti di lavoro reale, a fronte di un compito che il relatore stima avrebbe richiesto 2-3 ore se fatto manualmente.",
+   "ancora": "Valore totale coinvolto nelle 5 azioni: 1.283.727 EUR. ... in un minuto realisticamente sono stati cinque ... ci avrebbe eh, insomma richiesto 2-3 ore",
+   "fonte": "DI5aWJiFAt8#19:48 (messaggio finale di riepilogo di Cowork) + voce 19:48-20:12",
+   "frame": "frame-0199.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-002",
+     "tipo": "quantifica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-044",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il rapporto tra l'utente e Cowork può essere rappresentato con una metafora visiva: un omino (l'utente/l'azienda oggi) che deve raggiungere una bandiera (il goal finale) attraverso una serie di blocchi intermedi (i singoli task delegati), da riempire uno alla volta.",
+   "ancora": "siamo questo omino fantastico. E noi abbiamo che in questa parte qui, qui abbiamo la nostra bandiera, ok? E questo è il nostro goal.",
+   "fonte": "DI5aWJiFAt8#21:12 (disegno Excalidraw: omino, blocchi, bandiera goal) + voce 21:12-21:42",
+   "frame": "frame-0213.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-045",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-050",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Al momento della registrazione del corso, Claude Cowork era ancora in fase di 'research preview' (beta), come indicato direttamente nell'interfaccia del prodotto.",
+   "ancora": "ancora in fase, diciamo, di preview, beta, quello che volete",
+   "fonte": "DI5aWJiFAt8#29:30 (chiusura capitolo formazione, transizione al walkthrough) + voce 29:30-29:36",
+   "frame": "frame-0296.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-162",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-051",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Il flusso di lavoro reale oggi più diffuso combina i due strumenti: si fa sviluppo/lavoro tecnico con Claude Code, poi si importano i risultati dentro Claude Cowork, e da quel momento si interagisce con Cowork come una semplice interfaccia conversazionale.",
+   "ancora": "fa development con cloud code, una volta che lo ha fatto ... importa le cose su cowork ... interagendo così come un'interfaccia",
+   "fonte": "DI5aWJiFAt8#29:42 (descrizione del flusso reale Code + Cowork) + voce 29:36-29:54",
+   "frame": "frame-0298.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-011",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-012",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-052",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Secondo il relatore, ad oggi il maggiore ritorno sull'investimento (ROI) si ottiene dalla combinazione Claude Code (per lo sviluppo) + Claude Cowork (come interfaccia), perché pochi sviluppi possono essere realizzati direttamente dentro Cowork.",
+   "ancora": "il maggiore arroi che abbiamo. Pochi sviluppi possono essere fatti",
+   "fonte": "DI5aWJiFAt8#30:00 (opinione sul maggior ROI) + voce 30:00-30:06",
+   "frame": "frame-0301.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-051",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-053",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "La sidebar sinistra di Claude Cowork è organizzata in queste voci principali: New task, Search, Scheduled, Projects, Dispatch, Ideas, Customize, seguite dalla lista 'Recents' delle conversazioni/task recenti.",
+   "ancora": "+ New task ... Search ... Scheduled ... Projects ... Dispatch ... Ideas ... Customize",
+   "fonte": "DI5aWJiFAt8#30:06 (inizio walkthrough interfaccia) + voce 30:06-30:36",
+   "frame": "frame-0302.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-144",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-054",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "La funzione di ricerca di Claude Cowork (icona lente nella sidebar) permette di cercare trasversalmente tra cartelle/progetti, output generati e conversazioni/chat passate.",
+   "ancora": "i nostri output e le nostre chat",
+   "fonte": "DI5aWJiFAt8#30:36 (popup di ricerca aperto) + voce 30:36-31:06",
+   "frame": "frame-0307.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-053",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-062",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "È possibile scrivere i prompt a Claude Cowork tramite dettatura vocale invece che digitando: durante la registrazione, un piccolo widget flottante con indicatore di forma d'onda e pallino rosso di registrazione conferma che lo strumento di trascrizione vocale è attivo, indipendentemente dall'app in primo piano.",
+   "ancora": "strumenti di traduzione come il mio che questo in",
+   "fonte": "DI5aWJiFAt8#32:06 (widget di dettatura, nominato dal relatore) + voce 32:06-32:36",
+   "frame": "frame-0322.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-028",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-063",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Nella Demo #2, la cartella di progetto conteneva fatture PDF con contenuto plausibile (numero, date, emittente, cliente, importo) ma con nomi di file assegnati in modo casuale e privi di senso: è il problema concreto che il prompt della demo doveva risolvere.",
+   "ancora": "sono nominati a caso, non hanno alcun tipo di senso e cose di questo tipo",
+   "fonte": "DI5aWJiFAt8#35:06 (anteprima di una fattura PDF con nome file casuale) + voce 35:06-35:12",
+   "frame": "frame-0352.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-064",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-077",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Nel task dimostrativo di riorganizzazione fatture, Claude Cowork ha analizzato 20 PDF, identificato 3 clienti distinti, creato le sottocartelle corrispondenti e non ha lasciato nessun file nella cartella 'da-verificare' perché tutti i PDF risultavano leggibili.",
+   "ancora": "3 clienti trovati, 20 fatture organizzate, 0 file nella cartella \"da-verificare\" (tutti i PDF erano leggibili).",
+   "fonte": "DI5aWJiFAt8#39:42 (chat Cowork, task Organize invoices by client folder) + voce 39:42-40:00",
+   "frame": "frame-0398.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-079",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-121",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Quando riceve un'istruzione che dipende da documentazione di contesto, Claude Cowork esplora autonomamente le cartelle del progetto, individua i file rilevanti e li legge tutti prima di produrre una risposta.",
+   "ancora": "Ho letto tutto. Ecco quello che ho capito e le mie proposte.",
+   "fonte": "DI5aWJiFAt8#62:18 (chat, Read 3 files) + voce 62:18",
+   "frame": "frame-0624.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-120",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-124",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Il pannello 'Progress' di Claude Cowork mostra la lista dei passi pianificati per completare una task complessa, ciascuno numerato, con indicazione visiva di quali sono già completati (spuntati) e quale è ancora in corso.",
+   "ancora": "1 Creare il documento Word... 2 Creare la presentazione PowerPoint... 3 QA visivo",
+   "fonte": "DI5aWJiFAt8#64:18 (pannello Progress, tre passi Word/PowerPoint/QA) + voce 64:18",
+   "frame": "frame-0644.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-139",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "È possibile creare un progetto Cowork puntandolo direttamente su una cartella già esistente sul computer, tramite l'opzione 'Use an existing folder', invece di creare una cartella nuova da zero.",
+   "ancora": "Pick a folder and Claude will treat its files as project context.",
+   "fonte": "DI5aWJiFAt8#75:12 (modale Use an existing folder) + voce 75:06-75:12",
+   "frame": "frame-0753.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-084",
+     "tipo": "alternativa-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-161",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Cowork rinomina automaticamente il titolo di una task in base al contenuto della conversazione, non appena questo diventa più chiaro (es. \"Create custom greeting skill\" diventa poi \"Greeting and initial conversation\").",
+   "ancora": "il titolo della task in alto è cambiato automaticamente in \"Greeting and initial conversation\" (rinominata dal sistema in base al contenuto della conversazione)",
+   "fonte": "DI5aWJiFAt8#85:12 (rinomina automatica del titolo task) + voce 85:12-85:42",
+   "frame": "frame-0853.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-157",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-162",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il prodotto dimostrato nel corso si chiama \"Cowork\" (Claude Cowork) ed è etichettato in interfaccia come \"research preview\".",
+   "ancora": "Cowork is in research preview. Learn how to use it safely.",
+   "fonte": "DI5aWJiFAt8#85:42 (home page di Cowork) + voce 85:42-86:12",
+   "frame": "frame-0858.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-164",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "La funzione \"Guest pass\" di Cowork permette di regalare a un amico una settimana gratuita del prodotto; se l'invitato si abbona, chi ha invitato riceve 10 euro di utilizzo extra.",
+   "ancora": "Send a friend a free week of Cowork. If they love it and subscribe, you'll get €10 of extra usage.",
+   "fonte": "DI5aWJiFAt8#85:42 (riquadro Guest pass in home page) + voce 85:42-86:12",
+   "frame": "frame-0858.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-213",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "\"Computer Use\" è una modalità in cui Claude prende il controllo diretto del mouse e della tastiera del computer reale dell'utente, uscendo dal normale ambiente conversazionale per interagire con il sistema operativo e le applicazioni installate.",
+   "ancora": "cloud sta cliccando letteralmente con il mio mouse",
+   "fonte": "DI5aWJiFAt8#107:00 (Claude clicca col mouse reale nel Finder) + voce 107:00-107:12",
+   "frame": "frame-1071.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-214",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Per attivare Computer Use su una richiesta, bisogna anteporre o posporre alla richiesta stessa la frase letterale \"computer use\".",
+   "ancora": "dovete preporre o postporre la la frase computer use alla vostra alla vostra richiesta per poterlo utilizzare",
+   "fonte": "DI5aWJiFAt8#106:12 (richiesta di aprire un file nei download via computer use) + voce 106:12-106:30",
+   "frame": "frame-1063.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-213",
+     "tipo": "parte-di",
+     "perche": "è la regola operativa per attivare la modalità definita in KA-257"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-215",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Mentre Computer Use è attivo, l'interfaccia mostra un indicatore visivo arancione acceso con l'etichetta \"Claude is using your computer\" e un pulsante \"Stop\" per interromperlo in qualunque momento.",
+   "ancora": "\"Claude is using your computer\" e un pulsante \"Stop\" in alto a destra",
+   "fonte": "DI5aWJiFAt8#106:30 (barra arancione di stato durante Computer Use) + voce 106:30-107:00",
+   "frame": "frame-1066.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-213",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-216",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "Computer Use è considerato ancora troppo acerbo per un uso aziendale serio, perché richiede che il computer resti sempre acceso, l'app sempre aperta e funzionante, e impedisce all'utente di fare altro sul computer mentre è in esecuzione.",
+   "ancora": "richiede il computer sempre acceso, l'app sempre funzionante e aperta ed inoltre non potete fare grandi altre cose con il computer",
+   "fonte": "DI5aWJiFAt8#107:00 (commento sui limiti di Computer Use) + voce 107:00-107:12",
+   "frame": "frame-1071.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-217",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Poiché Computer Use guida realmente il cursore e la tastiera, un'altra applicazione in esecuzione può rubare il focus della finestra durante il task e interferire con l'automazione, costringendo Claude a fermarsi, recuperare e ritentare.",
+   "ancora": "Sembra che un'app chiamata \"Presentify\" abbia preso",
+   "fonte": "DI5aWJiFAt8#107:00 (log: un'app chiamata Presentify interferisce) + voce 107:00-107:12",
+   "frame": "frame-1071.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-213",
+     "tipo": "parte-di",
+     "perche": "mostra un effetto collaterale reale del controllo diretto di mouse e tastiera definito in KA-257"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-218",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "La prima volta che Computer Use deve agire dentro una determinata applicazione non ancora autorizzata (es. Preview), Claude si ferma e chiede esplicitamente l'accesso invece di procedere senza permesso.",
+   "ancora": "Il file si è aperto in Preview, ma Preview non è tra le app autorizzate. Devo chiedere l'accesso.",
+   "fonte": "DI5aWJiFAt8#107:54 (Claude blocca l'apertura in Preview per mancata autorizzazione) + voce 107:54-108:12",
+   "frame": "frame-1080.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-213",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-219",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Un caso d'uso pratico è essersi dimenticati di caricare un file (es. una thumbnail o un video) in una cartella condivisa con un collaboratore: più tardi si può chiedere a Claude di recuperare quel file, caricarlo su cloud storage e notificare il collaboratore, ma serve comunque il computer acceso, l'app aperta e non in sleep mode.",
+   "ancora": "vai prendi nella cartella X il mio video Y, caricamelo nel Drive e poi notifica l'editor che tutto è fatto.",
+   "fonte": "DI5aWJiFAt8#107:42 (esempio di utilizzo remoto raccontato a voce) + voce 107:42-108:54",
+   "frame": "frame-1085.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "motiva",
+     "perche": "questo scenario di necessità introduce e motiva la funzione Dispatch spiegata subito dopo"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-220",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "\"Dispatch\" è una funzione che permette di controllare Claude e verificarne lo stato da qualunque posto (es. dal telefono), proseguendo una task o una sessione di codice in un unico filo continuo.",
+   "ancora": "Dispatch to Claude and check in from anywhere—a task, a code session, in one continuous thread.",
+   "fonte": "DI5aWJiFAt8#109:18 (pannello Dispatch aperto per la prima volta) + voce 109:18-109:36",
+   "frame": "frame-1094.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-221",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Una sessione Dispatch espone impostazioni configurabili: \"Keep awake\" (evita lo stand-by della macchina), \"Allow all browser actions\", \"Computer use\" (attiva/disattiva) e \"Code permissions\" (es. \"Auto accept edits\" oppure \"Bypass permissions\").",
+   "ancora": "\"Keep awake\"... \"Allow all browser actions\"... \"Computer use\"... \"Code permissions\"... \"Auto accept edits\"",
+   "fonte": "DI5aWJiFAt8#109:18 (impostazioni della sessione Dispatch) + voce 109:18-109:36",
+   "frame": "frame-1094.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-222",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Dispatch può inviare una notifica push sul telefono dell'utente ogni volta che Claude scrive un nuovo messaggio nel filo di conversazione.",
+   "ancora": "Get a push notification on your phone when Claude messages you here.",
+   "fonte": "DI5aWJiFAt8#109:18 (banner di notifica push nel pannello Dispatch) + voce 109:18-109:36",
+   "frame": "frame-1094.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-224",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "L'app desktop di Claude è disponibile per macOS, Windows e Windows (ARM64); quella mobile per iOS e Android; l'abbinamento tra le due app è ciò che rende possibile il controllo del computer da telefono tramite Dispatch.",
+   "ancora": "\"macOS\" — \"Download\", \"Windows\" — \"Download\", \"Windows (arm 64)\" — \"Download\"... \"iOS\" — \"Download\" e \"Android\" — \"Download\"",
+   "fonte": "DI5aWJiFAt8#110:12 (pagina claude.com/download, sezione Get started) + voce 110:12-110:24",
+   "frame": "frame-1103.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "parte-di",
+     "perche": "l'abbinamento desktop-mobile è la base tecnica che rende possibile Dispatch"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-225",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Se il computer di destinazione risulta offline o irraggiungibile quando arriva un comando Dispatch dal telefono, il sistema mette il comando in coda con il messaggio \"Desktop appears offline. Will run when it reconnects.\" invece di farlo fallire immediatamente.",
+   "ancora": "Desktop appears offline. Will run when it reconnects.",
+   "fonte": "DI5aWJiFAt8#111:48 (messaggio di stato nel pannello Dispatch mobile) + voce 111:48-112:00",
+   "frame": "frame-1119.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-226",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Un flusso Dispatch end-to-end funziona così: un comando dettato dal telefono attiva Computer Use sul desktop reale, che esegue l'azione richiesta (es. aprire un file specifico), e Claude restituisce infine una conferma testuale che descrive cosa ha trovato o fatto.",
+   "ancora": "Fatto! Ho aperto \"thumbnail (12).jpeg\" in Preview. E' la thumbnail \"FULL CONTROL.\" con il logo Cowork e le icone delle app intorno.",
+   "fonte": "DI5aWJiFAt8#112:42 (risposta di Claude nel pannello Dispatch dopo l'esecuzione remota) + voce 112:42-112:48",
+   "frame": "frame-1128.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-220",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-227",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "La limitazione più grande attuale del Computer Use pilotato da telefono via Dispatch è che il computer desktop deve restare acceso perché tutto funzioni; il relatore prevede che in futuro questo limite verrà probabilmente risolto.",
+   "ancora": "computer deve essere acceso e questa è la più grossa limitazione di adesso. Probabilmente nel futuro verrà risolto",
+   "fonte": "DI5aWJiFAt8#112:30 (commento sui limiti dopo l'apertura riuscita della thumbnail) + voce 112:30-112:42",
+   "frame": "frame-1126.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-216",
+     "tipo": "applica",
+     "perche": "riapplica e restringe al caso Dispatch/mobile la limitazione generale già osservata per Computer Use"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-228",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Un'istruzione di Computer Use/Dispatch non è limitata a una singola azione fissa: può essere estesa in una catena di più passaggi dentro un'unica richiesta (es. non solo \"apri questo file\" ma \"aprilo, caricalo e mandalo per email\").",
+   "ancora": "potuto dire \"Ok, caricala e manda un'email\".",
+   "fonte": "DI5aWJiFAt8#112:54 (chiusura dell'esempio della thumbnail) + voce 112:54-113:06",
+   "frame": "frame-1130.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-213",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-205",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Quando manca una credenziale necessaria (es. una API key non trovata nel file .env), un agente ben progettato come Claude Code non blocca silenziosamente né la inventa: pone esplicitamente una domanda strutturata all'utente con opzioni chiare (es. \"la fornisco ora\" / \"la aggiungo io al .env\") prima di proseguire.",
+   "ancora": "Non ho trovato una API Key VAPI nel file .env. Per creare l'agente via API ho bisogno di alcune informazioni. AskUserQuestion",
+   "fonte": "NmoOZVTrTXA#85:00 (popup \"AskUserQuestion\" — \"VAPI API Key\") + voce 84:59-85:06",
+   "frame": "frame-0851.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-206",
+     "tipo": "precede",
+     "perche": "non trovata la chiave nel .env, la domanda esplicita precede l'apertura della pagina delle API key di VAPI"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-212",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Quando si chiede a Claude Code di creare un singolo agente/assistente, conviene specificare esplicitamente di non creare anche un workflow collegato (se non richiesto) e verificare che il piano proposto non lo includa comunque, perché capita che l'agente aggiunga un workflow non richiesto espandendo eccessivamente lo scope del compito.",
+   "ancora": "Mi raccomando non fare alcun tipo di workflow, quello lo chiederò a parte / molto spesso quello che succede è che noi glielo diciamo poi nel piano c'è scritto file workflow tutto esplode",
+   "fonte": "NmoOZVTrTXA#84:36-85:00 (istruzione \"Mi raccomando non fare alcun tipo di workflow\" + verifica nel piano) + voce 84:12, 84:41-84:45",
+   "frame": "frame-0847.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-205",
+     "tipo": "precede",
+     "perche": "l'istruzione di non creare workflow non richiesti precede il tentativo di creazione dell'assistente che si blocca sulla chiave mancante"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-238",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Per far agire un agente AI in autonomia, conviene dargli accesso diretto a una risorsa vuota (es. un foglio di calcolo) invece di inserire i dati manualmente al posto suo: cosi' l'agente puo' collegarsi da solo alla risorsa ed evitare di dover chiedere informazioni all'operatore.",
+   "ancora": "di modo tale che tu possa poi agire in autonomia e evitare di chiedermi informazioni",
+   "fonte": "NmoOZVTrTXA#103:12 (prompt su CRM/Google Sheet) + voce 01:43:11",
+   "frame": "frame-1032.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-239",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-270",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-308",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-240",
+     "tipo": "precede",
+     "perche": "introdotto il Google Sheet vuoto come CRM, la dettatura chiarisce che va condiviso solo quando serve"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-239",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Come CRM iniziale per un nuovo agente vocale si puo' usare un Google Sheet completamente vuoto, il cui link viene incollato direttamente nel prompt dato all'assistente di coding, lasciando che sia lui a strutturarlo e collegarlo.",
+   "ancora": "fatto questo file vuoto, quindi gli mettiamo Google Sheet",
+   "fonte": "NmoOZVTrTXA#103:00 (Google Sheet vuoto aperto nel browser) + voce 01:42:59",
+   "frame": "frame-1031.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-238",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-240",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "L'accesso a un file esterno (es. un Google Sheet) va condiviso con l'agente/sistema solo nel momento in cui serve davvero, non lasciato aperto in anticipo senza motivo.",
+   "ancora": "di farlo solo nel momento in cui questo serve",
+   "fonte": "NmoOZVTrTXA#103:18 (Google Sheet ancora vuoto) + voce 01:43:20",
+   "frame": "frame-1034.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-241",
+     "tipo": "precede",
+     "perche": "conclusa la dettatura, il presentatore la definisce lui stesso un prompt gigante di 8 minuti"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-241",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Un prompt di avvio per un progetto complesso puo' nascere da una dettatura vocale lunga (nell'esempio circa 8 minuti) confluita in un unico messaggio monolitico inviato all'assistente di coding, contenente tutti i requisiti insieme invece di istruzioni separate.",
+   "ancora": "Va bene, allora un prompt giganorme, sono tipo 8 minuti di brainstorming",
+   "fonte": "NmoOZVTrTXA#103:24 (prompt completo, prima dell'invio) + voce 01:43:27",
+   "frame": "frame-1035.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-243",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-243",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Conviene investire tempo a spiegare un compito in modo estremamente dettagliato una volta sola all'inizio, piuttosto che darlo in modo incompleto e correggerlo molte volte in seguito: dieci minuti spesi bene battono sei ore ripetute per ventisette volte.",
+   "ancora": "preferite dare l'informazione e spiegarla bene ... una volta sola e metterci dieci minuti oppure metterci sei ore",
+   "fonte": "NmoOZVTrTXA#104:00-104:06 (riflessione a webcam prima di tornare sullo schermo) + voce 01:43:40-01:44:02",
+   "frame": "frame-1041.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-244",
+     "tipo": "precede",
+     "perche": "la riflessione precede la presentazione del piano generato in plan mode"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-266",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Quando un passaggio richiede necessariamente un intervento umano che il sistema non puo' completare da solo (es. autorizzare un accesso OAuth), l'assistente di coding deve fermarsi e porre una domanda esplicita con opzioni chiare, invece di procedere alla cieca o inventare un dato.",
+   "ancora": "Per far funzionare i workflow devo collegare Google Sheets a n8n ... Hai completato questo step?",
+   "fonte": "NmoOZVTrTXA#106:12 (popup AskUserQuestion 'Google Auth') + voce 01:46:10",
+   "frame": "frame-1063.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-267",
+     "tipo": "precede",
+     "perche": "posta la domanda su Google Auth, l'avanzamento del lavoro viene tracciato nella todo list"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-268",
+   "peso": "contesto",
+   "tipo": "principio",
+   "contenuto": "Prima di iniziare un nuovo progetto su un account condiviso (es. VAPI o n8n), conviene verificare e mettere da parte le configurazioni residue di progetti precedenti, per non confonderle con quelle nuove durante lo sviluppo.",
+   "ancora": "aspetta che archivio al volo questi che cosi' li teniamo sotto occhio",
+   "fonte": "NmoOZVTrTXA#106:30 (tool VAPI legacy intravisti sull'account) + voce 01:46:32",
+   "frame": "frame-1066.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-269",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-301",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Quando un test in produzione rivela un problema reale, la procedura corretta e' comunicarlo all'assistente di coding incollando l'errore osservato cosi' com'e' (non riassunto), chiedendogli esplicitamente di analizzarlo e fare debugging.",
+   "ancora": "ti incollo anche l'errore che il tool mi sta dando, di modo tale che tu possa magari fare debugging",
+   "fonte": "NmoOZVTrTXA#117:18 / 118:36 (ritorno su Claude Code col riepilogo, richiesta di debugging) + voce 01:57:14",
+   "frame": "frame-1174.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-302",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-307",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Anche per una semplice correzione di bug (non solo per una feature nuova), conviene far produrre prima all'assistente di coding un piano che spiega la causa del problema e il fix proposto, da rivedere e approvare prima che venga applicato.",
+   "ancora": "Piano: Fix AI Receptionist + Google Calendar Integration ... Ready for review",
+   "fonte": "NmoOZVTrTXA#120:48 (Piano: Fix AI Receptionist + Google Calendar Integration) + voce 02:00:43",
+   "frame": "frame-1209.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-244",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-308",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-309",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-314",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "Una volta che il sistema funziona end-to-end, si possono continuare a chiedere piccoli aggiustamenti (cambiare voce, ridurre latenza, cambiare lingua) all'assistente di coding con semplici istruzioni testuali successive, senza dover ripartire da zero.",
+   "ancora": "non gli diciamo, hey, per favore modificare la latenza, fai la voce in italiano",
+   "fonte": "NmoOZVTrTXA#125:48 (bug risolto evidenziato, esempio di iterazione) + voce 02:05:36",
+   "frame": "frame-1259.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-315",
+     "tipo": "precede",
+     "perche": "conclusa la parte tecnica, il corso passa al capitolo sui modelli di business"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

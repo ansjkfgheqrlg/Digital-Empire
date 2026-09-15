@@ -1,0 +1,1565 @@
+{
+ "capitolo": "V.10",
+ "parte": "V.10",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Memoria degli agenti: cosa ricordare e dove",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-bonus-02::KA-03",
+  "cs2online-lezione-02::KA-03",
+  "cs2online-lezione-06::KA-03",
+  "cs2online-lezione-08::KA-05",
+  "cs2online-lezione-13::KA-08",
+  "cs2online-lezione-16::KA-07",
+  "cs2online-lezione-16::KA-08",
+  "max17-v05-jaye-agenticos::KA-019",
+  "max17-v05-jaye-agenticos::KA-021",
+  "max17-v05-jaye-agenticos::KA-054",
+  "max17-v07-rizzo-prompt::KA-016",
+  "max17-v07-rizzo-prompt::KA-017",
+  "max17-v07-rizzo-prompt::KA-018",
+  "max17-v07-rizzo-prompt::KA-019",
+  "max17-v07-rizzo-prompt::KA-020",
+  "max17-v07-rizzo-prompt::KA-023",
+  "max17-v08-herk-brain::KA-011",
+  "max17-v08-herk-brain::KA-012",
+  "max17-v08-herk-brain::KA-013",
+  "max18-v01-second-brain-obsidian::KA-075",
+  "max18-v01-second-brain-obsidian::KA-076",
+  "max18-v01-second-brain-obsidian::KA-077",
+  "max18-v01-second-brain-obsidian::KA-162",
+  "max18-v01-second-brain-obsidian::KA-163",
+  "max18-v01-second-brain-obsidian::KA-196",
+  "max18-v01-second-brain-obsidian::KA-197",
+  "max18-v01-second-brain-obsidian::KA-198",
+  "max18-v01-second-brain-obsidian::KA-200",
+  "max18-v02-karpathy-agenti::KA-009",
+  "max18-v03-belli-token::KA-009",
+  "max18-v03-belli-token::KA-010",
+  "max18-v06-JTn5pqm9ecM::KA-025",
+  "max18-v06-JTn5pqm9ecM::KA-050",
+  "max18-v06-JTn5pqm9ecM::KA-051",
+  "max18-v06-JTn5pqm9ecM::KA-052",
+  "max18-v06-JTn5pqm9ecM::KA-053",
+  "max18-v06-JTn5pqm9ecM::KA-054",
+  "max18-v08-DI5aWJiFAt8::KA-032",
+  "max18-v08-DI5aWJiFAt8::KA-058",
+  "max18-v08-DI5aWJiFAt8::KA-059",
+  "max18-v08-DI5aWJiFAt8::KA-060",
+  "max18-v08-DI5aWJiFAt8::KA-080",
+  "max18-v08-DI5aWJiFAt8::KA-081",
+  "max18-v08-DI5aWJiFAt8::KA-082",
+  "max18-v08-DI5aWJiFAt8::KA-083",
+  "max18-v08-DI5aWJiFAt8::KA-084",
+  "max18-v08-DI5aWJiFAt8::KA-085",
+  "max18-v08-DI5aWJiFAt8::KA-087",
+  "max18-v08-DI5aWJiFAt8::KA-088",
+  "max18-v08-DI5aWJiFAt8::KA-089",
+  "max18-v08-DI5aWJiFAt8::KA-090",
+  "max18-v08-DI5aWJiFAt8::KA-091",
+  "max18-v08-DI5aWJiFAt8::KA-093",
+  "max18-v08-DI5aWJiFAt8::KA-094",
+  "max18-v08-DI5aWJiFAt8::KA-095",
+  "max18-v08-DI5aWJiFAt8::KA-096",
+  "max18-v08-DI5aWJiFAt8::KA-097",
+  "max18-v08-DI5aWJiFAt8::KA-098",
+  "max18-v08-DI5aWJiFAt8::KA-099",
+  "max18-v08-DI5aWJiFAt8::KA-103",
+  "max18-v08-DI5aWJiFAt8::KA-108",
+  "max18-v08-DI5aWJiFAt8::KA-109",
+  "max18-v08-DI5aWJiFAt8::KA-110",
+  "max18-v08-DI5aWJiFAt8::KA-112",
+  "max18-v08-DI5aWJiFAt8::KA-117",
+  "max18-v08-DI5aWJiFAt8::KA-137",
+  "max18-v08-DI5aWJiFAt8::KA-138",
+  "max18-v09-NmoOZVTrTXA::KA-178",
+  "max18-v09-NmoOZVTrTXA::KA-179"
+ ],
+ "fonti_integrali": {
+  "cs2online-bonus-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-02\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-02\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-06": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-06\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-08": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-08\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-10": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-10\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-13": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-13\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-16\\contenuto-integrale.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max17-v07-rizzo-prompt": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\video-analysis.md"
+  ],
+  "max17-v08-herk-brain": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v08-herk-brain\\video-analysis.md"
+  ],
+  "max18-v01-second-brain-obsidian": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-091-117.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-116-130.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-131-145.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-178-204.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-193-207.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-208-222.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-223-237.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-238-250.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-299-313.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-314-328.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-329-352.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-A.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-B.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C2.md"
+  ],
+  "max18-v02-karpathy-agenti": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\video-analysis.md"
+  ],
+  "max18-v03-belli-token": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\video-analysis.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-bonus-02::KA-03",
+   "peso": "portante",
+   "tipo": "Architettura sistema",
+   "contenuto": "Architettura del sistema: 4 file di contesto persistenti riutilizzati ogni settimana - file 'contesto' (cosa deve fare l'AI), file 'istruzioni' (step precisi sempre uguali), 'style-JSON.json' (brand guidelines su GitHub), dati settimanali incollati al momento.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#frame-t6m00s+t10m00s",
+   "frame": "frame-t6m00s-obsidian-contesto-md.jpg",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-03",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#frame-t6m00s+t10m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-02::KA-07",
+   "peso": "contesto",
+   "tipo": "Convenzione naming",
+   "contenuto": "Convenzione naming file: usare trattini, non underscore o spazi, nei nomi dei file di contesto.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-07",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-02::KA-03",
+   "peso": "portante",
+   "tipo": "Glossario / Projects",
+   "contenuto": "Project (Claude) = equivalente Custom GPTs (ChatGPT)/Gems (Gemini): cartella che raggruppa chat per progetto/cliente con nome, istruzioni fisse e file caricati (ricerche mercato, trascrizioni chiamate, richieste cliente) — ogni nuova chat nel project eredita il contesto senza doverlo riscrivere.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-02#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-02::KA-03",
+     "run": "cs2online-lezione-02",
+     "fonte": "cs2online-lezione-02#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-03",
+   "peso": "portante",
+   "tipo": "Struttura / organizzazione file",
+   "contenuto": "4 documenti di contesto core: brand guidelines (JSON), business plan, lista strumenti aziendali, skill/pregi/difetti. Struttura reale osservata su schermo: cartella 'Claude' > sottocartelle per progetto/cliente (es. 'Business planning' con file 'Business plan for sharing', 'Business Roadmap.md', 'RAG and Knowledge...md', 'Piano Strategico 2026.pptx', 'Systems and SOPs.md', 'What skills strength...md') — tag Finder dedicato 'AI contexting' (verde).",
+   "ancora": "",
+   "fonte": "cs2online-lezione-06#trascrizione + frame-t4m45s",
+   "frame": "frame-t4m45s-finder-businessplanning-subfolder.jpg",
+   "run": "cs2online-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-06::KA-03",
+     "run": "cs2online-lezione-06",
+     "fonte": "cs2online-lezione-06#trascrizione + frame-t4m45s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-06",
+   "peso": "contesto",
+   "tipo": "Feature osservata / Claude memory",
+   "contenuto": "Feature 'memory' di Claude osservata dal vivo: saluto personalizzato 'andrei returns!' all'apertura di una nuova chat — riconoscimento cross-sessione dell'utente, non menzionato esplicitamente nel testo ma visibile a schermo.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-06#frame-t7m15s",
+   "frame": "frame-t7m15s-claude-memory-andrei-returns.jpg",
+   "run": "cs2online-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-06::KA-06",
+     "run": "cs2online-lezione-06",
+     "fonte": "cs2online-lezione-06#frame-t7m15s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-06::KA-07",
+   "peso": "contesto",
+   "tipo": "Osservazione indiretta / prova d'uso reale",
+   "contenuto": "Le chat recenti di Claude dell'autore, visibili sullo schermo, includono titoli di produzione del corso stesso ('10 livelli di utilizzo dell'AI', 'Course launch timeline and task p...', 'Linee guida per registrare lezioni...') — prova diretta non auto-dichiarata che l'autore usa lo stesso workflow insegnato per produrre il corso.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-06#frame-t7m15s",
+   "frame": "frame-t7m15s-claude-memory-andrei-returns.jpg",
+   "run": "cs2online-lezione-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-06::KA-07",
+     "run": "cs2online-lezione-06",
+     "fonte": "cs2online-lezione-06#frame-t7m15s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-08::KA-05",
+   "peso": "supporto",
+   "tipo": "Limite feature memory",
+   "contenuto": "La memory delle chat passate (feature nativa Claude) NON sostituisce un buon contesto esplicito - 'non puoi affidarti al fatto che l'AI si ricordi cose dette prima'.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-08#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-08",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-08::KA-05",
+     "run": "cs2online-lezione-08",
+     "fonte": "cs2online-lezione-08#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-10::KA-06",
+   "peso": "contesto",
+   "tipo": "Memory per-Project",
+   "contenuto": "Memory per-Project confermata come vantaggio specifico: ogni Project ha memory separata, Claude 'si ricorda cose specifiche di quel progetto' - coerente con lezione 9.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-10#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-10",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-10::KA-06",
+     "run": "cs2online-lezione-10",
+     "fonte": "cs2online-lezione-10#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-08",
+   "peso": "supporto",
+   "tipo": "Regola operativa",
+   "contenuto": "Regola esplicita: togliere le fonti/link dal documento di contesto finale - se serve che Claude legga un sito specifico, glielo si fa leggere direttamente in quel momento; il documento di contesto serve per non ripetere l'operazione ogni volta, non per essere un archivio link.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-08",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-07",
+   "peso": "supporto",
+   "tipo": "Regola operativa / naming file",
+   "contenuto": "Dare nome descrittivo al file allegato (es. 'Copywriting Mentorship Sales Page Copy') per aiutare Claude a capire il contesto senza spiegarlo a parole.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-07",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-16::KA-08",
+   "peso": "supporto",
+   "tipo": "Arricchimento contesto",
+   "contenuto": "Possibilita' di arricchire ulteriormente il contesto oltre alla sales page: recensioni, sito personale, brand guide, file da GitHub.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-16#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-lezione-16",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-16::KA-08",
+     "run": "cs2online-lezione-16",
+     "fonte": "cs2online-lezione-16#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-019",
+   "peso": "supporto",
+   "tipo": "opinione",
+   "contenuto": "Introduzione pilastro Memory: 'Context builds up as you work. Where it lives.' Level 1: Filedump - a workspace is just a folder.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#10:48",
+   "frame": "frame-325.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-020",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Struttura cartella root C:\\ROBO (leggibilita' parziale): cartelle di primo livello incluse agents, .claude, codex, content, dashboard, design, excalidraw, generations, hermes, shared, temp, tools, .gitignore; file root AGENTS.md, CLAUDE.md, COMMUNITY.md, CONTENT.md e altri file .md per dominio.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#11:04",
+   "frame": "frame-336.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-021",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Prompt integrale 'MEMORY Level 2 - Build router files for your workspace': 'My workspace has grown... Build me router files instead of reorganizing my folders. A router file is a short markdown index that points an agent to where things live. Ask me first: 1) 3-4 main areas of my work; 2) which files/folders I touch most; 3) anything private to exclude. Then: 1) explore and map what lives where; 2) write one master router at the root (CLAUDE.md if Claude Code) - who I am in one line, main areas, table area->folder->index file; 3) write one short index per area (like CONTENT.md or CLIENTS.md) listing key files; 4) keep every index a page - pointers, not documentation; 5) end the master router with the rule: when a file moves or a new project starts, update the router in the same turn - a stale pointer is worse than no pointer.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#13:30",
+   "frame": "frame-406.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-022",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Contenuto di CONTENT.md (albero decisionale pipeline contenuti, ricostruito su piu' frame): sezione CHOICE con step 1 (a3x new ideas: vidiq/x/google/arXiv - skills master-content-selection, real-tweet/youtube-numerize - files topic-shortlist.csv), step 2 (select idea - skills master-content-selection - files shared/projects/); sezione PRODUCTION con step 3 (research and write flow - skills master-writing/notewise/graphity - files outline.docx - thinking project_content_pipeline_review v2) e step 4 (reference creator-benchmark.md, files strategy.md, feedback project_content_review_us_english.md).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#12:52",
+   "frame": "frame-387.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-054",
+   "peso": "supporto",
+   "tipo": "opinione",
+   "contenuto": "Diagramma Memory Level 2 'Routers + a tree of files' - albero semplice (radice + 3 rami + 2 foglie ciascuno), stesso pattern router gia' visto per le Skills.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#12:16",
+   "frame": "frame-369.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-016",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "HARNESS ENGINEERING = costruire un'impalcatura esterna al modello che struttura il task in sottotask numerati (1,2,3,4) e che, per ogni sottotask, riempie e poi svuota completamente la context window prima di passare al successivo. L'intero blocco modello+tool+contesto diventa 'un componente unico' racchiuso in un rettangolo.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#08:10",
+   "frame": "frame-283.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-017",
+   "peso": "portante",
+   "tipo": "tecnica",
+   "contenuto": "Il meccanismo dell'harness: invece di compattare, l'agente SCRIVE SU FILE cosa ha fatto, svuota tutta la memoria, e rilegge il file ogni volta che riparte la sessione. Cosi' ha memoria persistente sui file. File tipici disegnati a lavagna: .MD, Claude.MD, Agents.MD, Memory.md.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#09:24",
+   "frame": "frame-334.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-018",
+   "peso": "supporto",
+   "tipo": "configurazione",
+   "contenuto": "Documentazione OpenClaw 'Memory overview' mostrata a schermo, testo esatto: 'OpenClaw remembers things by writing plain Markdown files in your agent's workspace (default ~/.openclaw/workspace). The model only remembers what gets saved to disk; there is no hidden state. How it works - Your agent has three memory-related files: MEMORY.md - long-term memory. Durable facts, preferences, and decisions. Loaded at the start of a session. memory/YYYY-MM-DD.md (or memory/YYYY-MM-DD-<slug>.md) - daily notes. Running context and observations.'",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#10:00",
+   "frame": "frame-301.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-019",
+   "peso": "supporto",
+   "tipo": "configurazione",
+   "contenuto": "OpenClaw ha anche un file opzionale Dreams.md (il 'Dream Diary') e altre memorie configurabili, tutte su file. L'indice della pagina docs elenca: How it works, What goes where, Action-sensitive memories, Inferred commitments, Memory tools, Memory search, Memory backends, Knowledge wiki, Automatic memory, Dreaming, CLI.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#10:28",
+   "frame": "frame-301.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-020",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "PRINCIPIO CARDINE dell'harness: 'Si usa il file system come estensione della context window del modello', e si danno al modello strumenti tipo memory search e memory get per cercare dinamicamente in quei file. La memory search e' sia semantica sia lettura diretta del file.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#10:35",
+   "frame": "frame-301.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-023",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Test 3 - harness engineering, prompt: 'clonami il sito della ferrari cosi' com'e''. Motivazione data: il sito e' talmente complesso che la richiesta 'non entrerebbe dentro tutto un milione di context, quindi va strutturata in sottotask'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#12:44",
+   "frame": "frame-406.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-011",
+   "peso": "portante",
+   "tipo": "file",
+   "contenuto": "Testo integrale MEMORY.md (auto-memory sidecar) di esempio: scritto dall'AI stessa, non e' un livello di retrieval ma un bolt-on che automatizza la cattura, carica le prime ~200 righe a inizio sessione. Contiene bullet su preferenze utente, dettagli newsletter 'Phoenix' (esce il martedi', formato one-idea-per-issue), cliente principale Acme Corp (contatto Jordan, retainer content strategy), nota che l'utente vuole la wiki mantenuta dall'AI non scritta a mano.",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#11:04",
+   "frame": "frame-325.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-012",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Output del comando nativo Claude Code /memory: 'Memory / Auto-memory: on / 1. ~/OneDrive/Desktop/CLAUDE.md / 2. Project memory - Saved in ./CLAUDE.md / 3. User memory - Saved in ~/.claude/CLAUDE.md / 4. Open auto-memory folder / Learn more: https://code.claude.com/docs/en/memory'.",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#17:30 / 23:24",
+   "frame": "frame-526.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v08-herk-brain::KA-013",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Slide 'Two memory systems, one you write, one Claude writes': You write CLAUDE.md (rules, how to act, where to look, you own it) vs Claude writes MEMORY.md (what it learned, updates itself). On by default: saves durable facts, reloads next session. A folder not one file: short index auto-loads, topic files load on demand. Il rischio non e' dimenticare, e' un fatto vecchio ricordato con sicurezza -> datare i fatti, revisione trimestrale.",
+   "ancora": "",
+   "fonte": "DTCyvo6cC54#11:24",
+   "frame": "frame-333.png",
+   "run": "max17-v08-herk-brain",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-075",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "La cartella 'workspace' dell'autore contiene un journal con due tipi di nota distinti e complementari: 'sessions' (una nota per ogni conversazione chiusa, con frontmatter title/tags/date/related e corpo diviso in Fatto/Decisioni/Da fare/Voci collegate) e 'daily' (un file per giornata che aggrega e riassume tutte le sessioni chiuse quel giorno sotto un titolo 'Riepilogo giornata'). Voce dell'autore: 'perche' dobbiamo averne due, perche' il daily e' un suo [riassunto]... Lei andra' a vedere con i vari titoletti che cosa ho fatto qua dentro'.",
+   "ancora": "questo perché è importante? Perché dobbiamo averne due, perché il daily è un suo",
+   "fonte": "RnoC5IlOUhs#57:24-57:42 (Explorer + note reali aperte)",
+   "frame": "frame-0575.png, frame-0578.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-066",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-076",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Esempio reale di wikilink e backlink in una nota di sessione: il frontmatter dichiara 'related:' seguito da una lista di wikilink su righe separate — [[tooling-skill-e-audit]], [[modulo-youtube-desc]], [[modulo-linkedin]], [[metriche-mrr-churn]] — e lo stesso identico elenco viene ripetuto nel corpo della nota sotto il titolo '## Voci collegate'. Il frontmatter dichiara il collegamento machine-readable, il corpo lo rende leggibile anche a un umano che apre la nota: e' la stessa relazione espressa due volte, in due formati.",
+   "ancora": "- \"[[tooling-skill-e-audit]]\"",
+   "fonte": "RnoC5IlOUhs#57:24 (file workspace/journal/sessions/2026-06-10-0221.md aperto per intero)",
+   "frame": "frame-0575.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-075",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-077",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il file giornaliero mostra concretamente come il daily aggreghi le sessioni: la sezione 'Riepilogo giornata' racconta in linguaggio narrativo quante sessioni sono state chiuse e cosa hanno prodotto — 'Sei chiusure di sessione registrate dall'hook, quattro narrative scritte..., tutto il lavoro e' riconciliato' — trasformando log meccanici di chiusura in un resoconto leggibile, non solo in un elenco di link.",
+   "ancora": "Sei chiusure di sessione registrate dall'hook, quattro narrative scritte",
+   "fonte": "RnoC5IlOUhs#57:42 (file workspace/journal/daily/2026-06-10.md aperto)",
+   "frame": "frame-0578.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-075",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-162",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Prompt 13 del canovaccio Notion — 'Apri la sessione (il briefing)', sottotitolo 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Testo integrale: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conviene affrontare oggi, in ordine di priorità. Non scrivere ancora niente nel cervello. Solo il briefing.'",
+   "ancora": "Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta).",
+   "fonte": "RnoC5IlOUhs#112:48 e #126:06 (pagina Notion, scene 281, 316)",
+   "frame": "frame-1129.png, frame-1262.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-201",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-163",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Prompt 14 del canovaccio Notion — 'Chiudi la sessione (il diario)', sottotitolo 'A fine giornata, fai scrivere al cervello la nota di sessione, agganciata alle entità vere toccate.' Testo integrale: 'Chiudiamo la sessione di oggi. Scrivi la nota di diario nel cervello. - Cartella: workspace/journal/sessions/ - Nome file: sessione-<data di oggi> (esempio: sessione-2026-06-09) - In cima il frontmatter: title, summary (UNA frase su cosa abbiamo fatto oggi), tags (il primo è workspace/session), status: done, created e updated con la data di oggi, e related su una riga coi wikilink alle note toccate. - Corpo in tre sezioni brevi: ## Fatto — cosa abbiamo concluso oggi / ## Deciso — le scelte prese e il perché / ## Aperto — cosa resta in sospeso per domani - Aggancia la nota alle entità vere toccate oggi coi [[wikilink]] (i clienti, i KPI, i progetti). Mai una nota di diario sciolta nel vuoto. Prima dimmi in 3 righe cosa hai capito che abbiamo fatto oggi. Al mio ok, scrivi.'",
+   "ancora": "Nome file: sessione-<data di oggi> (esempio: sessione-2026-06-09)",
+   "fonte": "RnoC5IlOUhs#112:48 (pagina Notion, scena 281)",
+   "frame": "frame-1129.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-202",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-198",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-183",
+   "peso": "contesto",
+   "tipo": "comando",
+   "contenuto": "Stessa pagina Notion 'Company Brain — Tutti i prompt', heading 'Prompt 13 — Apri la sessione (il briefing)': 'A inizio giornata, fai riprendere il filo al cervello dal diario dell'ultima volta.' Blocco codice del prompt, parzialmente tagliato dal bordo inferiore dello screenshot: 'Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora. Leggi l'indice llms.txt e l'ultima nota dentro workspace/journal/sessions/ (il diario dell'ultima volta). Poi dammi un briefing in 5 righe: - dove eravamo rimasti, dal diario; - cosa era rimasto aperto; - cosa conv[iene fare oggi in] ordine di priorità.' seguito (non del tutto leggibile nello screenshot) da: 'Non scrivere ancora niente nel cervello. Solo il briefing.' Questo prompt anticipa esattamente il comando 'buongiorno' della futura skill journal costruita più avanti nel video (vedi P3-069), con la stessa struttura in 5 righe e lo stesso vincolo di non scrivere nulla durante il briefing.",
+   "ancora": "Buongiorno. Apriamo la sessione di lavoro sul cervello di Aurora.",
+   "fonte": "RnoC5IlOUhs#126:06 (scena 316) + voce",
+   "frame": "frame-1262.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-184",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-198",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-196",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Il presentatore apre una nuova sessione Claude Code vuota in Antigravity ('Type /model to pick the right tool for the job.') e passa a schermo webcam a piena inquadratura per introdurre il limite strutturale della memoria fin qui costruita: 'che non abbiamo ancora un modo di dire allei \"Ehi, ascolta, ma a marzo avevamo parlato di questo argomento? Ti ricordi cos'era? Cosa avevamo deciso?\"' Il punto è che le note statiche (clienti, KPI, progetti) non bastano: serve un meccanismo dedicato per far ricordare all'AI le conversazioni passate, altrimenti resta senza memoria episodica. Il presentatore motiva perché vale la pena costruirlo: 'che ci permette di avere enormi ritorni,' — introduce così l'ultimo pezzo del sistema, la memoria dinamica (skill journal) che verrà costruita subito dopo.",
+   "ancora": "che ci permette di avere enormi ritorni,",
+   "fonte": "RnoC5IlOUhs#130:00-130:42 (scene 332-336) + voce",
+   "frame": "frame-1301.png, frame-1305.png, frame-1306.png, frame-1307.png, frame-1308.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-197",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-197",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Prompt digitato per intero nel riquadro di input di Antigravity (bordo rosso attivo) per costruire la skill journal, trascritto riga per riga così come appare a schermo: 'Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.' — riga vuota — 'CONTESTO -- memoria viva' — 'Il cervello ha due strati di memoria:' — '- Memoria STATICA: le note delle entità vere (clienti, KPI, progetti).' — '  Vivono già nel cervello e cambiano di rado.' — '- Memoria DINAMICA: il diario di lavoro. Ogni sessione e ogni giornata' — '  lasciano una nota che si AGGANCIA sempre alle entità statiche coi' — '  [[wikilink]]. Mai una nota di diario sciolta nel vuoto.' — 'Lo scopo della skill e' tenere viva la memoria dinamica e cucirla a' (riga finale tagliata dal bordo inferiore del riquadro nello screenshot: il testo del prompt continua oltre quanto visibile, la fonte non ne riporta il proseguimento). Prima di inviarlo il presentatore lo introduce a voce quasi verbatim: 'dentro e gli diciamo contesto memoria viva. Il cervello ha due strati, memoria...'",
+   "ancora": "Costruiamo una skill per il cervello di Aurora che gestisca il journal: inizio sessione, fine sessione, fine giornata.",
+   "fonte": "RnoC5IlOUhs#134:06 (scena 338) + voce",
+   "frame": "frame-1342.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-198",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-198",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Risposta di Claude dopo aver costruito la skill, sezione 'Come invochi i tre comandi' riportata per intero: 'Fatto. Ho costruito una sola skill (journal) con i tre comandi al suo interno, più i due template, e prima ho scritto i due template in parallelo per andare più veloce come hai chiesto.' 'Scrivi semplicemente, in chat:' — 'buongiorno → briefing di inizio sessione in 5 righe. Non scrive niente.' — 'chiudi sessione → prima ti dice in 3 righe cosa abbiamo fatto, al tuo ok scrive sessione-<data>.' — 'fine giornata → legge tutte le sessioni del giorno, ti dice in 3 righe cosa e' successo, al tuo ok scrive il daily.' Poi: 'La skill si attiva da sola su queste frasi (e varianti tipo \"chiudiamo la sessione\", \"riassunto del giorno\"). Se vuoi forzarla puoi anche scrivere /journal.' Questo comando realizza concretamente lo schema già anticipato dal Prompt 13 'Apri la sessione' della pagina Notion (vedi P3-054): stessa logica di briefing in poche righe senza scrivere nulla, ora però automatizzata in una skill invocabile a frase libera.",
+   "ancora": "Come invochi i tre comandi",
+   "fonte": "RnoC5IlOUhs#136:12 (scena 340) + voce",
+   "frame": "frame-1355.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-199",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-183",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-200",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Primo test del comando 'buongiorno': messaggio utente 'Buongiorno Claude', Claude legge prima llms.txt (indice-porta del vault) poi risponde per intero: 'Buongiorno Gio.' — 'Non c'è ancora nessuna nota di sessione nel diario, quindi il briefing è solo sull'indice del cervello (llms.txt).' Heading 'Dove siamo': 'Il cervello di Aurora Sistemi è popolato e in piedi: 6 aree, 3 clienti attivi mappati (Banca Adriatica, HotelLine, Immobiliare Lombarda), KPI 2025 e l'unico progetto strategico aperto.' — 'Il diario di lavoro è vuoto: questa è di fatto la prima sessione tracciata.' Heading 'Cosa è aperto / da affrontare oggi, in ordine': '1. [[progetto-arr-5m-2026]] — l'obiettivo Board 2026: ARR oltre 5M con NRR >110% e churn logo <10%. È l'unico progetto attivo, quindi il candidato naturale su cui lavorare.' '2. Churn — il 2025 ha chiuso con logo churn ~11% ([[kpi-2025-churn]]), sopra la soglia <10% che il progetto richiede. Punto di attenzione concreto.' '3. Vedo che hai aperto outputs/cruscotto-aurora.html nell'IDE — se il lavoro di oggi è lì, partiamo da quello.' Chiusura: 'Da cosa vuoi cominciare?' Verifica end-to-end che il briefing rispetta esattamente la struttura in 5 righe promessa dal comando 'buongiorno' (P3-069) e dal Prompt 13 originale (P3-054), senza scrivere nulla nel cervello.",
+   "ancora": "Buongiorno Gio.",
+   "fonte": "RnoC5IlOUhs#136:12 (scena 341) + voce",
+   "frame": "frame-1363.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-201",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-198",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-009",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "REGOLA 2 del CLAUDE.md: 'ogni proposta generata scrive SEMPRE una nota nuova in proposte/ con data, cliente, importo, stato e link, piu' l'aggiornamento di index.md e log.md. Nessuna proposta senza nota.' Il documento commerciale non e' finito quando esiste il PDF: e' finito quando la memoria ne ha traccia.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#10:09 (prompt a schermo) + #14:45",
+   "frame": "frame-204.png, frame-296.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-009",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "File di handoff al posto di /compact quando devi davvero cambiare sessione: scrivi tu lo stato e riparti da un prefisso piccolo (poche centinaia di token) invece di lasciare a Claude la scelta di cosa riassumere. Contenuto del file: obiettivo, a che punto siamo, cosa abbiamo provato che NON ha funzionato, problemi incontrati e come risolti, decisioni prese, file toccati, dove vogliamo andare.",
+   "ancora": "un file di handoff, non /compact — poche centinaia di token",
+   "fonte": "1Dyld3y-V7Y#8:41-11:31 (audio) + card lavagna",
+   "frame": "frame-235.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-007",
+     "tipo": "sostituisce"
+    },
+    {
+     "verso": "KA-010",
+     "tipo": "specializzato-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-010",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Dettaglio presente SOLO sulla lavagna e mai detto a voce: nel file di handoff la cosa che deve sopravvivere per prima sono le strade gia' fallite. E' il pezzo di stato che costa di piu' riscoprire e che un riassunto automatico butta via per primo perche' sembra rumore.",
+   "ancora": "E scegli tu cosa sopravvive; soprattutto le strade gia' fallite.",
+   "fonte": "1Dyld3y-V7Y#11:42 (card della lavagna, non nel parlato)",
+   "frame": "frame-235.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-009",
+     "tipo": "specializza"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-025",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Formato con cui \"Simple Memory\" salva la cronologia della conversazione (visibile nell'output della seconda esecuzione): turni alternati \"Human:\"/\"AI:\", incluso il momento in cui l'AI ha invocato il tool Gmail — registrato letteralmente come 'Calling Send_a_message_in_Gmail with input: {\"Subject\":\"Un saluto\",\"Message\":\"...\",\"id\":\"call_...\"}' seguito dal risultato grezzo del tool (id, threadId, labelIds) e infine dalla risposta in linguaggio naturale dell'AI all'utente.",
+   "ancora": "Calling Send_a_message_in_Gmail with input",
+   "fonte": "JTn5pqm9ecM#16:24 + voce 16:24",
+   "frame": "frame-0165.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-027",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il nodo \"Simple Memory\" espone un parametro \"Context Window Length\" impostato su 5, definito a schermo come \"how many past interactions the model receives as context\": in pratica la memoria conserva al massimo le ultime 5 interazioni/conversazioni.",
+   "ancora": "5, vuol dire teniamo al massimo cinque conversazioni",
+   "fonte": "JTn5pqm9ecM#17:24-17:30 + voce 17:30",
+   "frame": "frame-0175.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-165",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-050",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Nuova lavagna Excalidraw, titolo \"Il Loop di Ragionamento Agentico\". Schema simmetrico a cinque zone attorno a un cerchio centrale: a sinistra due box viola, \"Memoria Semantica\" (sopra) e \"Memoria Episodica\" (sotto), collegati con freccia \"Recupera\" al box centrale azzurro \"LLM\"; a sinistra dell'LLM due frecce orizzontali \"Input utente ->\" (entrante) e \"<- Risposta agente\" (uscente). A destra, speculari, due box verdi \"Memoria Procedurale\" (sopra) e \"Memoria di Lavoro\" (sotto), collegati con frecce \"Recupera\"/\"Interroga\"/\"Risolvi\"/\"Ancora\" al box verde scuro \"Strumenti\". Al centro, un grande cerchio blu con quattro tappe disposte in croce e collegate da frecce curve in senso orario: \"Pianifica\" -> \"Esegui\" -> \"Valuta\" -> \"Feedback\" -> di nuovo \"Pianifica\"; una freccia diagonale \"Osserva\" entra nel cerchio dal basso a destra, collegandosi da \"Strumenti\"/Memoria di Lavoro verso \"Valuta\".",
+   "ancora": "quattro tappe disposte in croce e collegate da frecce curve in senso orario",
+   "fonte": "JTn5pqm9ecM#29:36-30:12 (comparsa) + voce 29:36-30:12",
+   "frame": "frame-0297.png, frame-0303.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-197",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-179",
+     "tipo": "esempio-di",
+     "perche": "È un secondo livello di dettaglio dello stesso loop già visto in 'Come svolgono tasks gli agenti AI': lì il ciclo era Assemblare/Invocare LLM/Obiettivo raggiunto/Invocare Strumento; qui lo stesso ciclo viene riletto attraverso quattro tipi di memoria e le quattro fasi Pianifica/Esegui/Valuta/Feedback."
+    },
+    {
+     "verso": "KA-199",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-200",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-201",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-202",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-207",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-051",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Memoria Semantica, definita testualmente sullo schema come \"Conoscenza dell'utente e dell'ambiente per comprendere meglio l'input\". L'autore la collega direttamente all'esempio appena mostrato con un'annotazione scritta a mano \"LinkedIn bias\": è proprio in questa memoria che si introducono i bias legati a ciò che l'AI già sa dell'utente. Cita il caso concreto: è sbagliato dire indistintamente a una persona che \"deve fare outbound perché è l'unico modello che si scala sopra i 10.000€ al mese\" senza considerare che quella persona potrebbe già avere un asset (es. un grande seguito LinkedIn) che cambierebbe la strategia migliore.",
+   "ancora": "E capite bene quanto sbagliato sia dire ad una persona",
+   "fonte": "JTn5pqm9ecM#30:24-31:00 + voce 30:24, 30:54",
+   "frame": "frame-0305.png, frame-0310.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-198",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-197",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-193",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-052",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Memoria Episodica, definita testualmente sullo schema come \"Raccolta di interazioni e processi di pensiero\": l'autore la descrive come la memoria di cui \"non molti parlano perché non molti la conoscono\", cioè la raccolta delle interazioni già avvenute tra AI e utente e dei processi di pensiero intermedi — se qualcosa è già successo in una conversazione, l'AI deve in qualche modo ricordarselo.",
+   "ancora": "La seconda cosa che abbiamo di cui non molti parlano perché non molti conoscono, è memoria episodica",
+   "fonte": "JTn5pqm9ecM#31:00-31:06 + voce 31:00",
+   "frame": "frame-0311.png, frame-0312.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-198",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-173",
+     "tipo": "esempio-di",
+     "perche": "La cronologia Human/AI salvata da 'Simple Memory' nella demo n8n (KA-025) è un esempio concreto e già visto di cosa sia in pratica una memoria episodica."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-053",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Memoria Procedurale, definita testualmente sullo schema come \"Conoscenza di cosa si può fare... e come eseguirlo\": l'autore la collega esplicitamente al concetto di \"skill\" degli agenti (workflow già automatizzati), annotando sullo schema una scritta corsiva vicino al box (letta come probabile \"/skill\"). Rimanda per l'approfondimento a un proprio corso dedicato di 40 minuti sulle skill, disponibile sul suo canale.",
+   "ancora": "ho fatto un corso di 40 minuti dove vi spiego in dettaglio che cosa sono le skill",
+   "fonte": "JTn5pqm9ecM#31:36-32:00 + voce 31:36-32:00",
+   "frame": "frame-0317.png, frame-0321.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-198",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-159",
+     "tipo": "esempio-di",
+     "perche": "I tool nativi come Read/Bash già visti nello schema base sono un caso particolare di ciò che la memoria procedurale rappresenta in astratto: conoscenza di cosa si può fare e come eseguirlo."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-054",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Memoria di Lavoro, definita testualmente sullo schema come \"Stati interni da mantenere; Fatti risolti e verificati\": l'autore la descrive a voce come i vari stati interni da mantenere, cose da non modificare e concetti simili.",
+   "ancora": "Stati interni da mantenere; Fatti risolti e verificati",
+   "fonte": "JTn5pqm9ecM#32:30-32:42 + voce 32:30-32:42",
+   "frame": "frame-0326.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-198",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-032",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Ogni cartella di progetto in Claude Cowork può avere una 'Folder Instructions' (un file CLAUDE.md) dedicata, accessibile dal pannello di contesto, che serve a dare a Claude istruzioni specifiche su come lavorare in quella cartella.",
+   "ancora": "Use this to give Claude instructions for working in this folder.",
+   "fonte": "DI5aWJiFAt8#13:54 (modale Folder instructions) + voce 13:54-14:06",
+   "frame": "frame-0140.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-085",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-058",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Claude permette di importare la memoria salvata su un altro provider AI (es. ChatGPT) tramite un flusso guidato in due passi: (1) si copia un prompt fornito da Claude e lo si incolla in una chat con l'altro provider per farsi esportare tutti i ricordi/il contesto salvato su di sé; (2) si incolla il risultato ottenuto nell'apposita area di Claude e si conferma con 'Add to memory'.",
+   "ancora": "Export all of my stored memories and any context you've learned about me from past conversations. Preserve my words verbatim where possible ... Paste results below to add to Claude's memory",
+   "fonte": "DI5aWJiFAt8#33:12 (modale Import memory to Claude) + voce 33:12-33:18",
+   "frame": "frame-0333.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-087",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-059",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Nella scheda Settings > General di Claude si possono impostare: il nome completo, un nomignolo con cui farsi chiamare da Claude, una descrizione del proprio lavoro, e delle preferenze personali che si applicano automaticamente a tutte le conversazioni.",
+   "ancora": "Full name ... What should Claude call you? ... What personal preferences should Claude consider in responses?",
+   "fonte": "DI5aWJiFAt8#34:12 (Settings, scheda General, sezione Profile) + voce 34:12-34:42",
+   "frame": "frame-0343.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-060",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Esempio reale di preferenze personali salvate in Claude: 'I like laconic responses — concise, to the point, no fluff, no marketing terms. Everything should pass the third grader test: easy to understand for someone with no technical background, no jargon. Never table anything if not requested. Always go step by step. Always avoid m-dash' — istruzioni di stile che Claude applica poi a ogni risposta.",
+   "ancora": "I like laconic responses — concise, to the point, no fluff, no marketing terms. Everything should pass the third grader test",
+   "fonte": "DI5aWJiFAt8#34:12 (campo preferenze personali valorizzato) + voce 34:12-34:42",
+   "frame": "frame-0343.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-059",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-106",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-107",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-080",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Un'AI potentissima ma senza memoria persistente è paragonabile a un collega con un QI altissimo che va però reintrodotto da zero ogni giorno: bisogna rispiegargli ogni volta il contesto, gli argomenti e il lavoro già fatto.",
+   "ancora": "un IQ di 8 milioni, ma realisticamente",
+   "fonte": "DI5aWJiFAt8#42:30 (webcam a piena inquadratura) + voce 42:06-42:48",
+   "frame": "frame-0426.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-081",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Senza memoria tra le sessioni, un'intelligenza artificiale per quanto capace non porta un ROI aziendale reale, perché il tempo e il denaro spesi per rifare l'onboarding da capo ad ogni conversazione annullano il vantaggio della sua intelligenza.",
+   "ancora": "un sacco per rifargli tutto l'onboarding",
+   "fonte": "DI5aWJiFAt8#42:42 (webcam) + voce 42:36-42:48",
+   "frame": "frame-0428.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-080",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-082",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Aprendo un task già concluso in passato e chiedendo a Claude Cowork se ricorda come aveva sistemato dei file, la risposta è esplicita: non ha memoria delle conversazioni precedenti perché ogni sessione riparte da zero — al più può dedurre indizi ispezionando lo stato attuale delle cartelle.",
+   "ancora": "Purtroppo no, non ho memoria delle conversazioni precedenti. Ogni sessione riparte da zero.",
+   "fonte": "DI5aWJiFAt8#42:54 (chat Cowork, task Organize PDF files in folder) + voce 42:54",
+   "frame": "frame-0430.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-081",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-083",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "'Projects' è una funzionalità che sposta la memoria di lavoro di Claude da una logica 'per singola chat' a una logica 'per progetto', permettendo di accumulare contesto persistente legato a un ambito di lavoro invece che a una singola conversazione.",
+   "ancora": "projects adesso sostanzialmente ci permetterà di muoverci... da una memoria che va per chat ad una memoria che va per progetto",
+   "fonte": "DI5aWJiFAt8#43:18 (apertura modale Start a new project) + voce 43:18",
+   "frame": "frame-0434.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-081",
+     "tipo": "corretto-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-084",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Per creare un nuovo progetto in Claude Cowork: cliccare '+ New project', scegliere 'Start from scratch', inserire un nome (obbligatorio), opzionalmente delle Instructions, opzionalmente dei file, e scegliere la cartella di destinazione sul computer, poi confermare con 'Create'.",
+   "ancora": "premiamo un nuovo progetto... facciamo start from scratch",
+   "fonte": "DI5aWJiFAt8#43:18 (modale Start a new project) + voce 43:18-43:54",
+   "frame": "frame-0434.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-085",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Il campo 'Instructions' di un progetto Cowork contiene le istruzioni permanenti che regolano il modo in cui Claude deve lavorare all'interno di quello specifico progetto.",
+   "ancora": "abbiamo delle istruzioni che stiamo dando al nostro... cloud cowork",
+   "fonte": "DI5aWJiFAt8#43:54 (pagina progetto DEMO YOUTUBE CLAUDE COWORK) + voce 43:54",
+   "frame": "frame-0440.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-087",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "La sezione 'Context' di un progetto Cowork elenca le risorse collegate al progetto: cartelle/file presenti sul computer e la funzione 'Memory', che insieme costituiscono il materiale di contesto che Claude userà in quel progetto.",
+   "ancora": "questo è sostanzialmente il contesto che noi stiamo dando",
+   "fonte": "DI5aWJiFAt8#44:54 (pagina progetto, sezione Context) + voce 44:54",
+   "frame": "frame-0450.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-083",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-088",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Chi usa Claude Cowork per lavorare con più clienti dovrebbe creare un progetto separato per ciascun cliente, invece di mescolare il lavoro di clienti diversi in un unico contesto.",
+   "ancora": "dividete i vari clienti come se fossero un progetto a sante... qui avrete cliente B e qui avrete cliente C",
+   "fonte": "DI5aWJiFAt8#45:48 (lavagna Excalidraw, tre rettangoli Progetto A/B/C) + voce 45:48",
+   "frame": "frame-0459.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-089",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "All'interno di ogni progetto-cliente va inserita la sezione 'Instructions', cioè le istruzioni specifiche di quel singolo cliente o progetto.",
+   "ancora": "abbiamo una cosa che si chiama instructions e quindi che sono le istruzioni",
+   "fonte": "DI5aWJiFAt8#46:18 (lavagna Excalidraw, riquadro B con scritta Instructions) + voce 46:18",
+   "frame": "frame-0464.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-088",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-090",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Esempio reale di Instructions per un progetto-cliente di consulenza: descrive chi è il consulente, il tipo di clienti seguiti (PMI nord-est Italia, manifatturiero e servizi, 50-200 dipendenti), il tono di voce richiesto (professionale ma diretto, niente burocratese, uso del 'lei' formale ma registro concreto) e vincoli sui dati mancanti.",
+   "ancora": "Sono un consulente che implementa servizi AI in azienda e fa formazione aziendale. Lavoro con PMI del nord-est Italia, settore manifatturiero e servizi, 50-200 dipendenti.",
+   "fonte": "DI5aWJiFAt8#46:54 (modale Edit instructions, progetto Cliente Giovanni) + voce 46:54",
+   "frame": "frame-0470.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-089",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-091",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Una regola utile da includere nelle istruzioni di un progetto-cliente è vietare all'assistente di proporre soluzioni senza dati a supporto, imponendogli di dichiarare esplicitamente quando un dato non è disponibile invece di inventarlo.",
+   "ancora": "Non proporre mai soluzioni senza dati a supporto. Se non hai un dato, dillo -- non inventarlo.",
+   "fonte": "DI5aWJiFAt8#50:30 (modale Edit instructions, continuazione testo) + voce 46:54",
+   "frame": "frame-0506.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-090",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-073",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-092",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Per dimostrare l'isolamento tra progetti, viene creato un secondo progetto ('Cliente B') lasciando deliberatamente vuoto il campo Instructions, poi si chiede la stessa domanda già fatta al progetto 'Cliente Giovanni' per vedere se la risposta cambia.",
+   "ancora": "non metto alcun tipo di istruzione con che aziende lavoro io, quanti dipendenti hanno",
+   "fonte": "DI5aWJiFAt8#48:24 (pagina progetto Cliente B, Instructions vuote) + voce 48:24",
+   "frame": "frame-0485.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-093",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Ogni progetto Cowork funziona come un silo indipendente: il contesto (istruzioni, file, cronologia) creato in un progetto non è visibile né accessibile da un altro progetto diverso.",
+   "ancora": "il contesto rimane poi limitato a il cliente B e poi al cliente Giovanni... queste vanno in silos",
+   "fonte": "DI5aWJiFAt8#49:24 (pagina Projects, elenco Cliente B / Cliente Giovanni con percorsi separati) + voce 49:24",
+   "frame": "frame-0495.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-092",
+     "tipo": "quantificato-da"
+    },
+    {
+     "verso": "KA-212",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-094",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "È preferibile organizzare i progetti Cowork per cliente piuttosto che per funzione aziendale (es. marketing, sales), perché organizzare per funzione porta a moltiplicare eccessivamente il numero di contesti da gestire.",
+   "ancora": "è molto molto utile organizzare il vostro contesto per cliente piuttosto che per funzione... perché altrimenti vi esplode l'universo",
+   "fonte": "DI5aWJiFAt8#49:24 (pagina Projects) + voce 49:24",
+   "frame": "frame-0495.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-093",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-095",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Le 'Instructions' di un progetto Cowork sono l'equivalente, per chi conosce Claude Code, del file CLAUDE.md: entrambi rappresentano le istruzioni locali specifiche di quel singolo progetto.",
+   "ancora": "questo è il parallelo per quello che noi chiameremo il nostro cloud. MD",
+   "fonte": "DI5aWJiFAt8#49:54 (annotazione LOCALI/CLAUDE su pagina Cliente Giovanni) + voce 49:54",
+   "frame": "frame-0500.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-096",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Oltre alle istruzioni di singolo progetto esiste un livello superiore, unico per l'intero account: le 'Global instructions', che si applicano a prescindere dal progetto in cui ci si trova.",
+   "ancora": "ma esiste un livello più sopra a questo?",
+   "fonte": "DI5aWJiFAt8#50:36 (chat, domanda su un livello superiore) + voce 50:36",
+   "frame": "frame-0507.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-097",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Le Global Instructions di Claude Cowork si configurano in Settings > Cowork, scorrendo fino alla sezione 'Global instructions'; da lì valgono per tutte le sessioni Cowork dell'account.",
+   "ancora": "abbiamo il nostro cowork e abbiamo il global instruction",
+   "fonte": "DI5aWJiFAt8#52:48 (pagina Settings > Cowork > Global instructions) + voce 52:48",
+   "frame": "frame-0529.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-096",
+     "tipo": "definisce"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-098",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Le Global Instructions si applicano automaticamente anche ai progetti che non hanno istruzioni locali proprie: raggiungono qualunque progetto dell'account, non solo quello in cui sono state scritte.",
+   "ancora": "qua chiederò qual è il mio colore preferito a cliente B",
+   "fonte": "DI5aWJiFAt8#53:12 (pagina progetto Cliente B, Instructions vuote) + voce 53:12",
+   "frame": "frame-0533.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-096",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-099",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Test dimostrativo delle Global Instructions: dopo aver scritto a livello globale che il colore preferito è il verde, la domanda 'qual è il mio colore preferito?' ottiene la stessa risposta ('Il tuo colore preferito è il verde') sia nel progetto Cliente B sia nel progetto Cliente Giovanni, pur essendo due progetti isolati tra loro.",
+   "ancora": "Il tuo colore preferito è il verde.",
+   "fonte": "DI5aWJiFAt8#53:42 (chat, task Discover personal color preference) + voce 53:42",
+   "frame": "frame-0538.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-098",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-093",
+     "tipo": "contraddice",
+     "perche": "dimostra che le Global Instructions, a differenza delle Instructions locali, attraversano i silos di progetto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-103",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Il 'Global Claude.md' personale (a livello di utente, non di singolo progetto) contiene sezioni come 'Agency Capabilities', 'Reasoning Rules' e 'Communication Style', che valgono trasversalmente su tutti i progetti Claude Code dell'utente.",
+   "ancora": "## Agency Capabilities ... ## Reasoning Rules ... ## Communication Style",
+   "fonte": "DI5aWJiFAt8#54:42 (editor, file Global Claude.md) + voce 54:42",
+   "frame": "frame-0548.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-095",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-108",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Nella sezione 'Agency Capabilities' del Global Claude.md si dichiara esplicitamente che l'assistente non deve chiedere il permesso per azioni come automazione browser, chiamate API, gestione file o scrittura codice: se pensa di non poter fare qualcosa, deve prima tentarlo.",
+   "ancora": "You do not need to ask Gio to do these things manually. If you think you cannot do something, attempt it first.",
+   "fonte": "DI5aWJiFAt8#54:42 (Global Claude.md, sezione Agency Capabilities) + voce 54:42",
+   "frame": "frame-0548.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-103",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-109",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Parallelismo concettuale a livello locale: il file CLAUDE.md sta a Claude Code come le 'Project Instructions' stanno a Claude Cowork — entrambi rappresentano le istruzioni specifiche di un singolo progetto.",
+   "ancora": "abbiamo in... un parallelo",
+   "fonte": "DI5aWJiFAt8#55:24 (lavagna Excalidraw, etichette CLAUDE.md / PROJECT INTRUCTIONS) + voce 55:24",
+   "frame": "frame-0555.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-095",
+     "tipo": "definisce"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-110",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Parallelismo concettuale a livello globale: il 'Global CLAUDE.md' sta a Claude Code come le 'Global Instructions' stanno a Claude Cowork — entrambi valgono su tutti i progetti dell'utente.",
+   "ancora": "CLAUDE.md (GLOBAL) collegato a PROJECT INTRUCTIONS (GLOBAL)",
+   "fonte": "DI5aWJiFAt8#56:24 (lavagna Excalidraw, riga CLAUDE.md GLOBAL / PROJECT INTRUCTIONS GLOBAL) + voce 55:54-56:24",
+   "frame": "frame-0565.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-096",
+     "tipo": "definisce"
+    },
+    {
+     "verso": "KA-109",
+     "tipo": "alternativa-a",
+     "perche": "stesso parallelismo ma a livello globale invece che locale"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-111",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Le istruzioni locali (CLAUDE.md di progetto / Project Instructions) contengono le informazioni specifiche per un determinato cliente o progetto.",
+   "ancora": "Info Specifiche x cliente o progetto.",
+   "fonte": "DI5aWJiFAt8#56:24 (lavagna Excalidraw, sotto CLAUDE.md) + voce 55:54-56:24",
+   "frame": "frame-0565.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-109",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-112",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Le istruzioni globali (Global CLAUDE.md / Global Instructions) contengono tre tipi di contenuto trasversale: convinzioni personali ('belief personali'), obiettivi generali di alto livello ('overarching goal') e regole di cosa fare e non fare ('DOs & DON'Ts').",
+   "ancora": "Belief personali / overarching goal / DOs & DONTs",
+   "fonte": "DI5aWJiFAt8#56:54 (lavagna Excalidraw, elenco sotto CLAUDE.md GLOBAL) + voce 56:24-56:54",
+   "frame": "frame-0570.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-110",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-117",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esempio pratico di progetto-cliente: creazione del progetto 'TechnoService' con istruzioni che riassumono l'intero ambito di attività gestite per l'azienda (dalla creazione di proposte commerciali ai report per il CEO, alla comunicazione con la direzione marketing).",
+   "ancora": "sostanzialmente regola tutte le attività che faccio per l'azienda, dalla creazione di... proposte commerciali a report dal CEO, a comunicazione con direzione marketing",
+   "fonte": "DI5aWJiFAt8#59:12 (modale Start a new project, nome TechnoService) + voce 59:12",
+   "frame": "frame-0593.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-088",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-118",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "Alla sezione 'Context' di un progetto Cowork è possibile aggiungere una cartella esistente sul computer, in aggiunta alla cartella base del progetto, per estendere il materiale che Claude può consultare.",
+   "ancora": "posso scegliermi un folder e cominciare a mettere dentro delle cose",
+   "fonte": "DI5aWJiFAt8#59:42 (picker file macOS, selezione cartella) + voce 59:42",
+   "frame": "frame-0598.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-137",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Buona pratica di organizzazione di un progetto Cowork: ridurre le cartelle a poche sottocartelle standard con ruoli chiari, ad esempio 'client_context' (per il materiale di contesto/input) e 'output' (per i risultati generati), invece di accumulare molte cartelle diverse senza criterio.",
+   "ancora": "avremo tutto pulito ed organizzato",
+   "fonte": "DI5aWJiFAt8#76:00 (Finder, cartella Techno Service ridotta a client_context/output) + voce 76:00",
+   "frame": "frame-0761.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-138",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Per mantenere un progetto sempre pulito conviene istruire esplicitamente Claude a salvare ogni output generato dentro la sottocartella 'output' dedicata, invece di lasciare i file sparsi nella cartella principale del progetto.",
+   "ancora": "gli diremo metti l'output dentro la cartella output",
+   "fonte": "DI5aWJiFAt8#76:00 (Finder, cartella Techno Service) + voce 76:00",
+   "frame": "frame-0761.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-137",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-178",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Per mantenere continuità di lavoro tra una sessione di Claude Code e la successiva (es. dopo un riavvio necessario per attivare un MCP), si può chiedere esplicitamente all'agente di salvare lo stato di avanzamento in una cartella di memoria persistente, così che al rientro sia sufficiente un comando breve (es. \"ok continua\") perché l'agente recuperi da solo il contesto e sappia da dove ripartire.",
+   "ancora": "assicurati di salvare il tutto in una memoria in modo tale che appena riapro io possa semplicemente dire \"ok continua\" e tu capisci immediatamente da dove devi ripartire",
+   "fonte": "NmoOZVTrTXA#72:24-72:30 (richiesta \"salva il tutto in una memoria\" + creazione di MEMORY.md) + voce 72:00",
+   "frame": "frame-0726.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-176",
+     "tipo": "motiva",
+     "perche": "il riavvio richiesto per attivare l'MCP è ciò che rende necessaria una memoria persistente"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-179",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esempio concreto di implementazione della memoria persistente in Claude Code: viene creata una cartella dedicata sotto la home dell'utente (`.claude/projects/<progetto>/memory`) con un file \"MEMORY.md\" che funge da indice puntando ad altri file di dettaglio (es. \"project_n8n_workflows.md\"), più un messaggio di riepilogo con i passi esatti da riprendere al comando \"ok continua\".",
+   "ancora": "# Memory Index — [project_n8n_workflows.md]... Fatto. Memoria salvata. Quando riapri Claude Code e dici \"ok continua\", saprò esattamente che devo: 1. Usare i tool MCP... 4. Validare entrambi.",
+   "fonte": "NmoOZVTrTXA#72:30 (Write MEMORY.md, messaggio finale con i 4 passi da riprendere) + voce 72:19",
+   "frame": "frame-0726.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-178",
+     "tipo": "esempio-di",
+     "perche": "è l'attuazione concreta del principio di continuità appena richiesto"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

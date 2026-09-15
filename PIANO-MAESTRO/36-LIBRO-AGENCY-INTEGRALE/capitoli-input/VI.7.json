@@ -1,0 +1,231 @@
+{
+ "capitolo": "VI.7",
+ "parte": "VI.7",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Anatomia di un lancio",
+ "libro": "VI",
+ "libro_titolo": "Contenuto, brand, lanci",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "_yUzEe29aTQ::KA-03",
+  "_yUzEe29aTQ::KA-05",
+  "_yUzEe29aTQ::KA-06",
+  "hb89lccIacY::KA-18",
+  "max17-v16::KA-004",
+  "max17-v16::KA-005",
+  "max17-v16::KA-007",
+  "max17-v16::KA-025",
+  "max17-v16::KA-026",
+  "max17-v16::KA-027",
+  "wTpfKuHJhOE::KA-02"
+ ],
+ "fonti_integrali": {
+  "L5_Z63nxXjI": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/L5_Z63nxXjI\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\L5_Z63nxXjI\\contenuto-integrale.md"
+  ],
+  "_yUzEe29aTQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/_yUzEe29aTQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\_yUzEe29aTQ\\contenuto-integrale.md"
+  ],
+  "hb89lccIacY": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/hb89lccIacY\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\hb89lccIacY\\contenuto-integrale.md"
+  ],
+  "max17-v16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\video-analysis.md"
+  ],
+  "wTpfKuHJhOE": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/wTpfKuHJhOE\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\wTpfKuHJhOE\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "L5_Z63nxXjI::KA-17",
+   "peso": "contesto",
+   "tipo": "Funnel / CTA prodotto",
+   "contenuto": "Inserto pubblicitario: promozione del corso di copywriting con finestra ~14-16 giorni, prezzo scontato, 3 rate, consulenze e aggiornamenti inclusi. CTA doppia: 'clicca il link sotto' sia per chi conosce già il corso sia per chi non ne sa nulla.",
+   "ancora": "",
+   "fonte": "L5_Z63nxXjI#00:10:07",
+   "frame": "frame-304",
+   "run": "L5_Z63nxXjI",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "L5_Z63nxXjI::KA-17",
+     "run": "L5_Z63nxXjI",
+     "fonte": "L5_Z63nxXjI#00:10:07"
+    }
+   ]
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-03",
+   "peso": "supporto",
+   "tipo": "Copy / Urgenza ancorata a timeline reale",
+   "contenuto": "Urgenza ancorata a data storica verificabile: 'ottobre 2022 usci' GPT... da quel momento sei stato dietro a tutte le news?' - piu' credibile di un'urgenza generica.",
+   "ancora": "",
+   "fonte": "_yUzEe29aTQ#00:01:20",
+   "frame": "",
+   "run": "_yUzEe29aTQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "_yUzEe29aTQ::KA-03",
+     "run": "_yUzEe29aTQ",
+     "fonte": "_yUzEe29aTQ#00:01:20"
+    }
+   ]
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-05",
+   "peso": "supporto",
+   "tipo": "Funnel / Framing prima volta in assoluto",
+   "contenuto": "'Non ho mai svelato i sistemi che uso internamente... apro le porte' - framing di rivelazione mai fatta prima pubblicamente, aumenta il valore percepito dell'evento.",
+   "ancora": "",
+   "fonte": "_yUzEe29aTQ#00:01:56",
+   "frame": "frame-060",
+   "run": "_yUzEe29aTQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "_yUzEe29aTQ::KA-05",
+     "run": "_yUzEe29aTQ",
+     "fonte": "_yUzEe29aTQ#00:01:56"
+    }
+   ]
+  },
+  {
+   "uid": "_yUzEe29aTQ::KA-06",
+   "peso": "portante",
+   "tipo": "Funnel / Struttura CTA evento live",
+   "contenuto": "CTA completo: data/ora esatte (21 maggio ore 21), formato dichiarato (diretta online), promessa, link in bio, scarsita' temporale esplicita (si parte tra 19 giorni).",
+   "ancora": "",
+   "fonte": "_yUzEe29aTQ#00:02:11",
+   "frame": "frame-070,079",
+   "run": "_yUzEe29aTQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "_yUzEe29aTQ::KA-06",
+     "run": "_yUzEe29aTQ",
+     "fonte": "_yUzEe29aTQ#00:02:11"
+    }
+   ]
+  },
+  {
+   "uid": "hb89lccIacY::KA-18",
+   "peso": "supporto",
+   "tipo": "Funnel / CTA prodotto",
+   "contenuto": "CTA verso corso 'Copywriting Mentorship' ('il piu' completo in Italia'), sconto stagionale Natale >€1000, incluse consulenze+esame. Link primo in descrizione.",
+   "ancora": "",
+   "fonte": "hb89lccIacY#00:10:46",
+   "frame": "frame-331",
+   "run": "hb89lccIacY",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "hb89lccIacY::KA-18",
+     "run": "hb89lccIacY",
+     "fonte": "hb89lccIacY#00:10:46"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v16::KA-004",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Caso studio datato 'Iros', agosto 2025: con quasi tutta la rete vendita in ferie, lancio di un piccolo test webinar via Instagram con budget minimo (1-2 venditori disponibili). Risultato dichiarato: investiti 7.000 euro di ads, ricavati 149.000 euro in 4 giorni (finestra di vendita + post-vendita). Da questo episodio nasce l'intuizione alla base del resto del metodo esposto nel talk.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#7:09-7:56",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-005",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Il problema strutturale dell'infobusiness secondo il relatore: la maggior parte degli infobusiness ha 'supply tendenzialmente infinita' (un corso si vende teoricamente all'infinito), mentre i business con supply reale limitata (eventi dal vivo con posti fisici contati, mercato degli orologi di lusso discontinuati) generano automaticamente piu' domanda e sono percepiti a maggior valore. Illustrato con un disegno a mano su flip-chart (triangolo con 'SUPPLY' in alto e 'DOMANDA' sulla diagonale), rimasto fisicamente visibile sul palco per un lungo tratto del video.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#10:09-13:20",
+   "frame": "frame-159.png,frame-324.png",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-007",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Ciclo operativo mensile a 4 settimane per creare domanda su una supply artificialmente limitata: settimane 1-3 = creazione/aumento della domanda (contenuti, nessuna pressione di vendita), settimana 4 = evento (webinar live o workshop) -> apertura cancelli -> chiusura con urgenza e scarsita' reale -> dichiarazione pubblica di sold-out -> chi resta fuori si mette in lista d'attesa vera (puo' pagare ma inizia il ciclo successivo). Il ciclo si ripete ogni mese. Il canale YouTube resta l'unico funnel 'evergreen' per chi non vuole aspettare i cancelli.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#14:22-19:03",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-025",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Framework di storytelling per la vendita uno-a-tanti da palco: Introduzione -> Viaggio -> Conflitto -> Momento di realizzazione -> Framework (cosa mi sono portato a casa, cosa mi ha permesso di raggiungere). Imparato dal relatore stando fisicamente sul palco per anni, con menzione dell'evento con Mirko Gasparotto (2016, primo grande evento dal vivo costruito da zero per un terzo, target iniziale 500 persone).",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#53:19-54:14",
+   "frame": "frame-798.png",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-026",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Tre errori tipici nella vendita uno-a-tanti da palco, individuati dal relatore nel proprio primo tentativo fallito (una piazza in Sicilia, zero vendite): 1) la 'sindrome del maestrino' (insegnare troppa tecnica e annoiare); 2) andare 'a sentimento' senza struttura; 3) non ascoltare la platea prima di presentare (il relatore dichiara di aver ascoltato il pubblico di questo stesso evento la sera prima per costruire il contenuto del talk).",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#54:32-55:05",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-027",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Numero dichiarato per l'ultimo evento dal vivo del relatore: chiuso con 150.000 euro di vendite fatte direttamente da palco.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#55:36-55:40",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "wTpfKuHJhOE::KA-02",
+   "peso": "supporto",
+   "tipo": "Copy / Ricerca esaustiva pre-lancio",
+   "contenuto": "Claim attribuito a Hormozi (tradotto da overlay EN): ha letto/consumato 'ogni singola parola da qualsiasi parte correlata a questo lancio' - enfasi sulla ricerca esaustiva come precondizione, non solo sulla scrittura. DA VERIFICARE: testo overlay originale parzialmente troncato nei frame, traduzione italiana presa come fonte primaria.",
+   "ancora": "",
+   "fonte": "wTpfKuHJhOE#00:00:12",
+   "frame": "frame-007,008,009,010",
+   "run": "wTpfKuHJhOE",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "wTpfKuHJhOE::KA-02",
+     "run": "wTpfKuHJhOE",
+     "fonte": "wTpfKuHJhOE#00:00:12"
+    }
+   ]
+  }
+ ]
+}

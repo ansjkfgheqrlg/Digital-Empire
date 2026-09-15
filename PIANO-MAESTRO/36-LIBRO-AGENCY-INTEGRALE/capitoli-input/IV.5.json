@@ -1,0 +1,431 @@
+{
+ "capitolo": "IV.5",
+ "parte": "IV.5",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Processi, SOP, documentazione operativa",
+ "libro": "IV",
+ "libro_titolo": "Consegnare e scalare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "Ahp_6rHSOsU::KA-04",
+  "Ahp_6rHSOsU::KA-05",
+  "Ahp_6rHSOsU::KA-06",
+  "Ahp_6rHSOsU::KA-08",
+  "Ahp_6rHSOsU::KA-10",
+  "Ahp_6rHSOsU::KA-12",
+  "Ahp_6rHSOsU::KA-13",
+  "Ahp_6rHSOsU::KA-15",
+  "cs2online-bonus-01::KA-01",
+  "cs2online-bonus-01::KA-02",
+  "cs2online-lezione-13::KA-07",
+  "max17-v17-beggiato-agenzia::KA-024",
+  "max17-v17-beggiato-agenzia::KA-025"
+ ],
+ "fonti_integrali": {
+  "Ahp_6rHSOsU": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Ahp_6rHSOsU\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Ahp_6rHSOsU\\contenuto-integrale.md"
+  ],
+  "cs2online-bonus-01": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-01\\contenuto-integrale.md"
+  ],
+  "cs2online-lezione-13": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-lezione-13\\contenuto-integrale.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "Ahp_6rHSOsU::KA-01",
+   "peso": "contesto",
+   "tipo": "Positioning / Autorita",
+   "contenuto": "Andrei apre stabilendo autorita: 'lavoro come copywriter da quando ho 16 anni, adesso ne ho 21' + 'ho quasi sempre usato Google Docs... cose che uso ogni giorno'. Proof-of-work come hook: chi insegna lo strumento lo usa davvero in produzione.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:00:00",
+   "frame": "frame-001",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-01",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-03",
+   "peso": "contesto",
+   "tipo": "Workflow / Copy digitale",
+   "contenuto": "Principio: quando scrivi copy (es. Sales page) 'quel documento probabilmente non verra' mai stampato, quindi l'impaginazione diventa solamente fastidiosa perche' divide i testi a meta''. Il copy e' output digitale, non cartaceo.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:00:21",
+   "frame": "frame-018",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-03",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:00:21"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-04",
+   "peso": "supporto",
+   "tipo": "Tool / Google Docs",
+   "contenuto": "COME: File -> Impostazioni della pagina -> 'Senza pagine' -> OK. Opzionale: cambiare colore sfondo + 'imposta come default'. Rende il documento un flusso continuo. 'Aiuta anche a fare migliore figura con le persone a cui invii i tuoi documenti'.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:00:41",
+   "frame": "frame-023",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-04",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:00:41"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-05",
+   "peso": "supporto",
+   "tipo": "Workflow / Organizzazione",
+   "contenuto": "Errore comune: creare i documenti direttamente da Google Docs -> finiscono tutti nello stesso posto indifferenziato; 'una volta che ne hai 20, 30, 40 diventano tantissimi, per trovarne uno devi scavare'. Soluzione: crearli DA Google Drive, nella cartella giusta fin da subito.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:01:03",
+   "frame": "frame-045",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-05",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:01:03"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-06",
+   "peso": "portante",
+   "tipo": "Workflow / Sistema cartelle clienti",
+   "contenuto": "Sistema di Andrei: cartella 'Clienti' -> una sottocartella per ogni cliente -> dentro ogni cliente, cartelle divise in 'visibile al cliente' e 'NON visibile al cliente'. La cartella non-visibile e' colorata di ROSSO come reminder di non metterci cose che il cliente non deve vedere.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:01:36",
+   "frame": "frame-045",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-06",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:01:36"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-07",
+   "peso": "contesto",
+   "tipo": "Tool / Anti-pattern",
+   "contenuto": "Anti-pattern 'da nabbi': creare i titoli ingrandendo il testo a mano (bold+size) e ricopiarli/rimodificarli ogni volta = 'un pessimo modo di lavorare, anche svantaggioso'. Perde tempo e non produce struttura.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:02:22",
+   "frame": "frame-083",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-07",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:02:22"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-08",
+   "peso": "supporto",
+   "tipo": "Tool / Google Docs",
+   "contenuto": "COME: seleziona il testo -> 'Testo normale' (menu stili) -> scegli Intestazione/Titolo. Beneficio doppio: estetica/velocita' + genera automaticamente la STRUTTURA del documento nel pannello sinistro (outline), navigabile con un click.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:02:44",
+   "frame": "frame-116",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-08",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:02:44"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-09",
+   "peso": "contesto",
+   "tipo": "Tool / Google Docs",
+   "contenuto": "Per cambiare lo stile di TUTTE le intestazioni in un colpo: formatta un testo come lo vuoi -> selezionalo -> Stili -> seleziona lo stile che stai modificando -> 'Aggiorna intestazione perche' corrisponda'. Aggiorna automaticamente tutti i testi con quello stile nel documento. Vale anche per 'Testo normale'.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:03:45",
+   "frame": "frame-151",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-09",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:03:45"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-10",
+   "peso": "supporto",
+   "tipo": "Workflow / Copy collaborativo",
+   "contenuto": "Convenzione di team: 'testi normali come copy, testo in giallo come note separate dal copy'. Nel documento servono indicazioni operative (es. quali icone/loghi metterci) che NON sono copy -> vanno rese visivamente distinte per chi legge (designer, cliente).",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:04:33",
+   "frame": "frame-196",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-10",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:04:33"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-11",
+   "peso": "contesto",
+   "tipo": "Tool / Google Docs",
+   "contenuto": "Trucco: trasformare lo stile 'nota gialla' in un heading predefinito (es. Intestazione 3) -> per creare una nota basta applicare quell'intestazione invece di evidenziare a mano ogni volta. Automatizza una convenzione ricorrente.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:05:30",
+   "frame": "frame-196",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-11",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:05:30"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-12",
+   "peso": "supporto",
+   "tipo": "Tool / Project management in-doc",
+   "contenuto": "COME: Inserisci -> Menu a discesa (dropdown). Google offre template preset ('Stato progetto', 'Stato revisione') o se ne crea uno custom. Andrei crea uno stato-sezione: Da iniziare / In corso / In revisione / Approvato-pronto, con colore diverso per ciascuno.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:06:32",
+   "frame": "frame-207",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-12",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:06:32"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-13",
+   "peso": "portante",
+   "tipo": "Workflow / Stato lavoro",
+   "contenuto": "Uso reale: incolla il dropdown di stato accanto a ogni heading di sezione -> 'appena apro il documento so molto chiaramente in che stato si trova ogni parte'. Trasforma il doc di copy in mini-kanban, elimina l'ambiguita' su cosa e' pronto in documenti lunghi.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:07:18",
+   "frame": "frame-226",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-13",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:07:18"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-14",
+   "peso": "contesto",
+   "tipo": "Tool / Google Docs",
+   "contenuto": "COME: vai all'inizio di una sezione -> Inserisci -> Segnalibro -> clicca sull'icona 'copia link'. Quel link porta direttamente a quella sezione. Puoi incollarlo ovunque e renderlo cliccabile per navigare istantaneamente.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:07:53",
+   "frame": "frame-251",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-14",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:07:53"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-15",
+   "peso": "supporto",
+   "tipo": "Mindset / UX per il cliente",
+   "contenuto": "Principio guida: 'lo uso sempre, non per comodita' mia ma per comodita' degli altri — quando qualcuno entra sul documento voglio che abbia l'esperienza piu' smooth possibile'. Il copywriter cura l'esperienza di lettura del documento come cura il copy.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:08:43",
+   "frame": "frame-251",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-15",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:08:43"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-17",
+   "peso": "contesto",
+   "tipo": "Tool / Google Docs",
+   "contenuto": "COME: Strumenti -> Conteggio parole -> spunta 'visualizza durante la digitazione' -> contatore live in basso a sinistra. Cliccandoci sopra si passa da parole a caratteri. Selezionando un testo mostra parole/caratteri della SOLA selezione.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:09:47",
+   "frame": "frame-305",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-17",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:09:47"
+    }
+   ]
+  },
+  {
+   "uid": "Ahp_6rHSOsU::KA-18",
+   "peso": "contesto",
+   "tipo": "Tool / Produttivita",
+   "contenuto": "Meta-tip: gli shortcut da tastiera sono visibili direttamente in Google Docs — passando su uno stile nel menu Stili, Docs mostra lo shortcut associato. Non serve memorizzarli: lo strumento li ricorda in-context.",
+   "ancora": "",
+   "fonte": "Ahp_6rHSOsU#00:09:23",
+   "frame": "frame-290",
+   "run": "Ahp_6rHSOsU",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Ahp_6rHSOsU::KA-18",
+     "run": "Ahp_6rHSOsU",
+     "fonte": "Ahp_6rHSOsU#00:09:23"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-01",
+   "peso": "portante",
+   "tipo": "SOP / freelance",
+   "contenuto": "SOP applicate al freelance: un business sano non puo' funzionare senza processi standardizzati, vale anche per un singolo freelancer. Il 90% delle azioni in un business sono ripetitive e vanno documentate, non improvvisate.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-01#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-01::KA-01",
+     "run": "cs2online-bonus-01",
+     "fonte": "cs2online-bonus-01#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-02",
+   "peso": "portante",
+   "tipo": "Metodo / integrazione AI",
+   "contenuto": "Metodo a 3 step per integrare l'AI nei processi esistenti: (1) documenta i processi attuali per intero senza inventare nulla, (2) elimina gli step inutili, (3) implementa l'AI dove possibile.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-01#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-01::KA-02",
+     "run": "cs2online-bonus-01",
+     "fonte": "cs2online-bonus-01#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-06",
+   "peso": "contesto",
+   "tipo": "Riferimento esterno",
+   "contenuto": "Riferimento citato e tradotto: articolo LinkedIn di Matt Schumer 'Something Big is Happening' - solo citato come fonte, non riassunto nel materiale disponibile.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-01#link-utili",
+   "frame": "",
+   "run": "cs2online-bonus-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-01::KA-06",
+     "run": "cs2online-bonus-01",
+     "fonte": "cs2online-bonus-01#link-utili"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-lezione-13::KA-07",
+   "peso": "supporto",
+   "tipo": "Struttura organizzativa agenzia",
+   "contenuto": "Struttura organizzativa reale agenzia (ClickUp): spazi separati 'AP Formazione', 'AP Sales', 'Clients' (sotto-cartelle Onboarding/Active clients/Completed projects/Archive) - ogni cliente ha doc 'Client overview - [nome]' con sotto-pagine per servizio.",
+   "ancora": "",
+   "fonte": "cs2online-lezione-13#frame-t8m15s",
+   "frame": "frame-t8m15s-clickup-doc-structure.jpg",
+   "run": "cs2online-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-lezione-13::KA-07",
+     "run": "cs2online-lezione-13",
+     "fonte": "cs2online-lezione-13#frame-t8m15s"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-024",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "Distinzione tecnica GoHighLevel tra custom values (dati legati al sub-account/cliente, es. nome agenzia, citta' — cambiano quando si rivende il sistema a un nuovo cliente in un'altra citta') e custom fields (dati legati al singolo lead, es. origine, consenso, campagna). Confondere le due categorie e' l'errore principale che impedisce di templetizzare davvero un funnel per rivenderlo ad altri clienti.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#3:30-3:34",
+   "frame": "frame-1590.png (3:31:52)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-025",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "GoHighLevel: piattaforma CRM all-in-one per agenzie a ~97$/mese (piano starter), 3 sub-account inclusi, contatti e utenti illimitati, supporto 24/7, programma di affiliazione fino al 50% ricorrente sulla spesa dei clienti riferiti. Modello sub-account = un cliente = un contenitore isolato (evita di mischiare dati/messaggi tra clienti diversi).",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#3:16-3:18",
+   "frame": "frame-1511.png (3:21:20)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

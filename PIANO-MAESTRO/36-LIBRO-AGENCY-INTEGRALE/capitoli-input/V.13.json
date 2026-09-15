@@ -1,0 +1,1941 @@
+{
+ "capitolo": "V.13",
+ "parte": "V.13",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Loop, verifica, autocritica automatica",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-bonus-02::KA-04",
+  "max17-v02-beggiato-team::KA-061",
+  "max17-v02-beggiato-team::KA-073",
+  "max17-v07-rizzo-prompt::KA-001",
+  "max17-v07-rizzo-prompt::KA-002",
+  "max17-v07-rizzo-prompt::KA-003",
+  "max17-v07-rizzo-prompt::KA-004",
+  "max17-v07-rizzo-prompt::KA-005",
+  "max17-v07-rizzo-prompt::KA-024",
+  "max17-v07-rizzo-prompt::KA-025",
+  "max17-v07-rizzo-prompt::KA-026",
+  "max17-v07-rizzo-prompt::KA-027",
+  "max17-v07-rizzo-prompt::KA-028",
+  "max17-v07-rizzo-prompt::KA-030",
+  "max17-v07-rizzo-prompt::KA-032",
+  "max17-v07-rizzo-prompt::KA-034",
+  "max17-v07-rizzo-prompt::KA-035",
+  "max17-v07-rizzo-prompt::KA-036",
+  "max17-v07-rizzo-prompt::KA-037",
+  "max17-v07-rizzo-prompt::KA-042",
+  "max17-v07-rizzo-prompt::KA-043",
+  "max17-v07-rizzo-prompt::KA-044",
+  "max17-v07-rizzo-prompt::KA-045",
+  "max17-v07-rizzo-prompt::KA-046",
+  "max17-v07-rizzo-prompt::KA-047",
+  "max17-v07-rizzo-prompt::KA-048",
+  "max17-v07-rizzo-prompt::KA-049",
+  "max17-v07-rizzo-prompt::KA-050",
+  "max17-v07-rizzo-prompt::KA-051",
+  "max17-v07-rizzo-prompt::KA-052",
+  "max17-v07-rizzo-prompt::KA-053",
+  "max17-v07-rizzo-prompt::KA-054",
+  "max17-v07-rizzo-prompt::KA-055",
+  "max17-v07-rizzo-prompt::KA-059",
+  "max17-v07-rizzo-prompt::KA-065",
+  "max17-v07-rizzo-prompt::KA-066",
+  "max17-v07-rizzo-prompt::KA-069",
+  "max17-v11-roberts-design::KA-024",
+  "max17-v11-roberts-design::KA-025",
+  "max17-v11-roberts-design::KA-026",
+  "max17-v11-roberts-design::KA-027",
+  "max17-v11-roberts-design::KA-028",
+  "max17-v15::KA-028",
+  "max17-v15::KA-030",
+  "max17-v15::KA-031",
+  "max17-v15::KA-032",
+  "max17-v15::KA-036",
+  "max18-v01-second-brain-obsidian::KA-119",
+  "max18-v02-karpathy-agenti::KA-039",
+  "max18-v06-JTn5pqm9ecM::KA-059",
+  "max18-v06-JTn5pqm9ecM::KA-060",
+  "max18-v06-JTn5pqm9ecM::KA-061",
+  "max18-v06-JTn5pqm9ecM::KA-062",
+  "max18-v06-JTn5pqm9ecM::KA-063",
+  "max18-v06-JTn5pqm9ecM::KA-064",
+  "max18-v06-JTn5pqm9ecM::KA-065",
+  "max18-v06-JTn5pqm9ecM::KA-066",
+  "max18-v06-JTn5pqm9ecM::KA-067",
+  "max18-v06-JTn5pqm9ecM::KA-075",
+  "max18-v06-JTn5pqm9ecM::KA-076",
+  "max18-v06-JTn5pqm9ecM::KA-077",
+  "max18-v06-JTn5pqm9ecM::KA-083",
+  "max18-v06-JTn5pqm9ecM::KA-084",
+  "max18-v06-JTn5pqm9ecM::KA-085",
+  "max18-v06-JTn5pqm9ecM::KA-086",
+  "max18-v06-JTn5pqm9ecM::KA-087",
+  "max18-v06-JTn5pqm9ecM::KA-088",
+  "max18-v06-JTn5pqm9ecM::KA-090",
+  "max18-v06-JTn5pqm9ecM::KA-091",
+  "max18-v06-JTn5pqm9ecM::KA-092",
+  "max18-v06-JTn5pqm9ecM::KA-095",
+  "max18-v06-JTn5pqm9ecM::KA-096",
+  "max18-v06-JTn5pqm9ecM::KA-097",
+  "max18-v06-JTn5pqm9ecM::KA-098",
+  "max18-v06-JTn5pqm9ecM::KA-099",
+  "max18-v06-JTn5pqm9ecM::KA-100",
+  "max18-v06-JTn5pqm9ecM::KA-102",
+  "max18-v06-JTn5pqm9ecM::KA-153",
+  "max18-v06-JTn5pqm9ecM::KA-154",
+  "max18-v06-JTn5pqm9ecM::KA-155",
+  "max18-v06-JTn5pqm9ecM::KA-156",
+  "max18-v06-JTn5pqm9ecM::KA-157",
+  "max18-v06-JTn5pqm9ecM::KA-161",
+  "max18-v06-JTn5pqm9ecM::KA-163",
+  "max18-v08-DI5aWJiFAt8::KA-045",
+  "max18-v08-DI5aWJiFAt8::KA-079",
+  "max18-v08-DI5aWJiFAt8::KA-102",
+  "max18-v08-DI5aWJiFAt8::KA-119",
+  "max18-v09-NmoOZVTrTXA::KA-291",
+  "max18-v09-NmoOZVTrTXA::KA-298"
+ ],
+ "fonti_integrali": {
+  "cs2online-bonus-02": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-02\\contenuto-integrale.md"
+  ],
+  "max17-v02-beggiato-team": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v02-beggiato-team\\video-analysis.md"
+  ],
+  "max17-v07-rizzo-prompt": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt\\video-analysis.md"
+  ],
+  "max17-v11-roberts-design": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\video-analysis.md"
+  ],
+  "max17-v15": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15\\video-analysis.md"
+  ],
+  "max18-v01-second-brain-obsidian": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-091-117.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-116-130.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-131-145.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-178-204.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-193-207.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-208-222.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-223-237.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-238-250.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-299-313.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-314-328.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-329-352.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-A.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-B.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v01-second-brain-obsidian\\_parte-C2.md"
+  ],
+  "max18-v02-karpathy-agenti": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\video-analysis.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-bonus-02::KA-04",
+   "peso": "portante",
+   "tipo": "Pattern anti-hallucination",
+   "contenuto": "Regola anti-hallucination concreta: istruzioni scritte in modo che l'AI RIFIUTI di procedere se mancano informazioni obbligatorie - 4 dati richiesti (report ultima settimana, report settimana precedente, decisioni prossima settimana, azioni miglioramento). Osservato a schermo: step 'Validate all 4 required information pieces' completato PRIMA di generare il PDF.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-02#cosa-hai-imparato+frame-t12m15s",
+   "frame": "frame-t12m15s-cowork-reportlab-pdf-generation.jpg",
+   "run": "cs2online-bonus-02",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-02::KA-04",
+     "run": "cs2online-bonus-02",
+     "fonte": "cs2online-bonus-02#cosa-hai-imparato+frame-t12m15s"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-061",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "'Il nostro obiettivo non è mai fare one shot, ma è avvicinarci quanto più possibile ad un output di qualità.'",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#5:16-5:24",
+   "frame": "n/a (audio)",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v02-beggiato-team::KA-073",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "'Ci tengo a specificare... l'AI è fortissima ad aiutarci a fare il brainstorming iniziale e la prima bozza del tutto... vuol dire che l'output sarà sempre e per forza perfetto? No.'",
+   "ancora": "",
+   "fonte": "yJOCyyP77bA#4:34-4:58",
+   "frame": "n/a (audio)",
+   "run": "max17-v02-beggiato-team",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-001",
+   "peso": "portante",
+   "tipo": "concetto",
+   "contenuto": "Il video sostiene che si e' passati per quattro paradigmi in sequenza: Prompt Engineering -> Context Engineering -> Harness Engineering -> Loop Engineering. L'Harness Engineering, secondo Rizzo, 'e' durato veramente poco'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#00:11",
+   "frame": "frame-007.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-002",
+   "peso": "supporto",
+   "tipo": "concetto",
+   "contenuto": "Linea del tempo disegnata a lavagna con tick 2022-2027: Prompt fino al 2023, Context 2024-2025, Harness 2026, e il 2027 cerchiato in arancione come anno del Loop Engineering.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#00:04",
+   "frame": "frame-003.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-003",
+   "peso": "portante",
+   "tipo": "opinione",
+   "contenuto": "Boris Cherny, creatore di Claude Code, in un'intervista citata da Rizzo dichiara che non scrive piu' i prompt: e' Claude che si scrive i prompt da sola tramite i loop. Il suo compito adesso e' creare loop.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#00:41",
+   "frame": "frame-028.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-004",
+   "peso": "portante",
+   "tipo": "citazione",
+   "contenuto": "Post di Peter Steinberger (creatore di OpenClaw) su X, testo esatto letto dal frame: \"Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.\" - 8:58 PM, Jun 7 2026, 8.4M Views.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#01:05",
+   "frame": "frame-036.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-005",
+   "peso": "supporto",
+   "tipo": "citazione",
+   "contenuto": "Nella risposta al post di Steinberger, Wes Winder obietta: \"but you kinda still need to be in the loop to test stuff unless you literally have infinite tokens\"; Steinberger risponde \"wellllllll\". E' l'unico contro-argomento visibile nel video.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#01:05",
+   "frame": "frame-036.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-024",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "LOOP ENGINEERING = tre cicli annidati. Loop 1 = il ciclo tool-use nativo dell'LLM. Loop 2 = l'harness che cicla finche' tutti i sottotask sono risolti. Loop 3 = il loop engineering vero e proprio, che mette dentro un ciclo tutto l'harness. Parole esatte: 'un loop su loop sul loop'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#13:41",
+   "frame": "frame-447.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-025",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Il valore del loop: 'e' l'agente stesso che si fa le domande e le risposte'. L'umano fa una sola richiesta, setta il loop, e da li' in poi il modello cicla da solo. Evita di dover riscrivere prompt a ogni giro.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#14:30",
+   "frame": "frame-447.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-026",
+   "peso": "supporto",
+   "tipo": "caso-uso",
+   "contenuto": "Esempio 1 di loop: un'app 'portale dei Mondiali' generata con harness engineering, poi messa in loop cosi' che a ogni news pescata riscriva il codice, sistemi e aggiorni l'app - mantenendola sempre aggiornata senza intervento umano. A lavagna: 'LOOP APP'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#15:24",
+   "frame": "frame-476.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-027",
+   "peso": "supporto",
+   "tipo": "caso-uso",
+   "contenuto": "Esempio 2 di loop: un'app open source di assistente meeting su GitHub, messa in loop con TRIGGER = qualsiasi issue aperta su GitHub. All'apertura dell'issue parte il loop che controlla l'errore, riscrive il codice e migliora l'app, senza che l'umano scriva 'risolvi questo problema'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#16:11",
+   "frame": "frame-487.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-028",
+   "peso": "supporto",
+   "tipo": "riferimento",
+   "contenuto": "Repo GitHub karpathy/autoresearch mostrata a schermo: descrizione 'AI agents running research on single-GPU nanochat training automatically', 90.2k stars, 702 watching, 13k forks. File in root: .gitignore, .python-version, README.md, analysis.ipynb, prepare.py, program.md, progress.png, pyproject.toml, train.py, uv.lock.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#16:58",
+   "frame": "frame-508.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-029",
+   "peso": "contesto",
+   "tipo": "citazione",
+   "contenuto": "Epigrafe del README di autoresearch, testo integrale letto dal frame: 'One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of \"group meeting\". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies. The agents claim that we are now in the 10,205th generation of the code base, in any case no one could tell if that's right or wrong as the \"code\" is now a self-modifying binary that has grown beyond human comprehension. This repo is the story of how it all begins. -@karpathy, March 2026'",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#17:00",
+   "frame": "frame-510.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-030",
+   "peso": "supporto",
+   "tipo": "architettura",
+   "contenuto": "Architettura di autoresearch letta dal README a schermo: solo tre file contano. prepare.py = costanti fisse, preparazione dati una-tantum, utility di runtime - NON modificato. train.py = l'unico file che l'agente modifica (modello GPT, ottimizzatore Muon+AdamW, training loop) - 'edited and iterated on by the agent'. program.md = istruzioni di base per l'agente - 'edited and iterated on by the human'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#17:10",
+   "frame": "frame-522.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-031",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "Design di autoresearch: il training gira con un budget di tempo FISSO di 5 minuti wall-clock (esclusi startup e compilazione), indipendentemente dall'hardware. La metrica e' val_bpb (validation bits per byte) - piu' bassa e' meglio, ed e' indipendente dalla dimensione del vocabolario cosi' che cambiamenti architetturali siano confrontati in modo equo.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#17:10",
+   "frame": "frame-522.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-032",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Il pattern di autoresearch: 'you're not touching any of the Python files like you normally would as a researcher. Instead, you are programming the program.md Markdown file'. L'umano smette di scrivere codice e scrive il FILE DI ISTRUZIONI che governa il loop.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#17:03",
+   "frame": "frame-522.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-033",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Grafico dei risultati di autoresearch mostrato a schermo, titolo: 'Autoresearch Progress: 63 Experiments, 15 kept improvements'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#16:58",
+   "frame": "frame-510.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-034",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Perche' un loop su un harness e' piu' di un semplice while: 'sta facendo un loop sopra un harness che si porta con se' tutti i server MCP, tutte le skills, tutto quel contesto e strumenti che puo' continuare ad utilizzare nel ciclo successivo'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#17:53",
+   "frame": "frame-535.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-035",
+   "peso": "portante",
+   "tipo": "flusso",
+   "contenuto": "I 4 STEP DEL LOOP ENGINEERING, disegnati come quattro riquadri colorati con freccia di ritorno dall'ultimo al primo: Trigger -> Execution -> Goal-Verify -> OUTPUT + Memory -> (torna a Trigger).",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#18:08",
+   "frame": "frame-564.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-036",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Step 1 TRIGGER: cio' che avvia il loop. Esempi dati: issue su GitHub, news via mail, news via chiamate API. Puo' essere manuale/a cadenza ('ogni giorno a quest'ora parte') oppure ad evento ('quando avviene un determinato evento').",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#18:12",
+   "frame": "frame-560.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-037",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Step 2 EXECUTION: parte l'harness. Step 3 GOAL-VERIFY: si verifica che l'issue sia stata risolta o che le news siano state implementate. Step 4 OUTPUT + MEMORY: viene scritto su file cosa e' stato effettuato e ci si prepara per il loop successivo.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#18:33",
+   "frame": "frame-567.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-042",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "REGOLA PIU' IMPORTANTE DEL VIDEO - la condizione di terminazione e' obbligatoria: 'mettiamo il caso che gli abbiamo chiesto un qualcosa di impossibile... Quello che succede e' che entra in un ciclo infinito e ci fa consumare tanti tanti token, quindi gli si mette la condizione: e' sempre un'altra condizione di terminazione'. Forme viste: 'fai al massimo 100 tentativi', 'fai al massimo tentativi per 8 ore totali', 'al massimo fai 1000 tentativi'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#20:06",
+   "frame": "frame-601.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-043",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "SECONDA REGOLA - il goal deve essere VALUTABILE dall'agente stesso. Esempio verificabile: 'far caricare la pagina web sotto i 100 millisecondi' (l'AI modifica il codice, testa, e se non ci sta rilancia il loop). Esempi non verificabili in automatico vanno riformulati.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#20:26",
+   "frame": "frame-645.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-044",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "I 5 LIVELLI DI VERIFICA, slide letta integralmente a schermo, sottotitolo: 'dal piu' forte al piu' debole. Conosci quale il tuo gate usa davvero.' 1 DETERMINISTICO (asserzioni di codice, exit 0, schema, golden output match). 2 REGOLE/VINCOLI (regole programmatiche sul testo: conteggio caratteri, contiene X, lint, policy). 3 VERITA' TERRENA RITARDATA (risposte del mondo reale: test passati, deploy, risposta del cliente, engagement). 4 LLM COME GIUDICE (secondo modello che valuta rispetto a rubric - modello giudicante, non verita' terrena). 5 CHECKPOINT UMANO (tu approvi - supervisione, NON verifica automatizzata).",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#21:28",
+   "frame": "frame-648.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-045",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "La linea di demarcazione scritta sulla slide: 'livelli 1-3 = CICLO AUTONOMO VERO'; 'livelli 4-5 = FLUSSO ASSISTITO (umano nel ciclo)'. E' il criterio per decidere se un lavoro puo' essere davvero lasciato solo.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#21:28",
+   "frame": "frame-800.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-046",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Livello 1 DETERMINISTICO, esempio dato: 'realizzami questa applicazione che deve compilare senza errori'. E' booleano, true/false.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#21:32",
+   "frame": "frame-719.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-047",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Livello 2 REGOLE/VINCOLI, esempi dati: 'sotto 100 millisecondi', 'accuratezza sopra 90%', 'consumi tot RAM', 'testo lungo al massimo 100 caratteri'. Sono vincoli numerici, non booleani.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#21:44",
+   "frame": "frame-727.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-048",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Livello 3, il caso del post social: 'creami un post... e che sia virale' NON e' un goal valido - 'che sia virale e' una condizione vaga, non e' deterministico, non ha regole'. La riformulazione valida e': 'fammi un post che su LinkedIn raggiunga 300 reazioni'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#22:20",
+   "frame": "frame-727.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-049",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Per obiettivi a verita' ritardata si usa /loop a cadenza, non /goal a tentativi. Prompt-tipo dato a voce: 'ogni giorno alle tot controlla i miei ultimi post fatti su LinkedIn e migliora il tuo modo di crearmi caroselli in modo tale da raggiungere 300 reazioni ad ogni post'. Motivo: le reazioni maturano in 2-3 giorni, il ciclo successivo legge il risultato del precedente.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#23:01",
+   "frame": "frame-727.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-050",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "'Il mondo reale molto spesso ha dei risultati ritardati': che il deploy non abbia problemi, che i clienti siano soddisfatti, che l'engagement sia tot, che una campagna pubblicitaria sia ottimizzata. Sono tutti casi di livello 3 dove il risultato si vede giorni dopo.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#23:32",
+   "frame": "frame-727.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-051",
+   "peso": "portante",
+   "tipo": "tecnica",
+   "contenuto": "Livello 4 LLM COME GIUDICE: 'fammi il refactoring del codice fino a che sei soddisfatto'. Nella fase goal-verify l'AI stessa assegna un valore (tra 1 e 10, 1 e 20, 1 e 100 - decide lei) e decide da sola se ha concluso.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#23:57",
+   "frame": "frame-732.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-052",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Caso d'uso LLM-giudice per clonare interfacce, goal dettato a voce e scritto a lavagna: 'Ti trovi dentro la codebase di questa applicazione qua. /goal migliora l'applicazione dal punto di vista della UI/UX in modo tale che sia esattamente uguale a questa immagine che ti allego [+ screenshot allegato], provaci fino a 80 modifiche e di ogni modifica fammi vedere il render della pagina web che hai modificato.'",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#24:56",
+   "frame": "frame-762.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-053",
+   "peso": "supporto",
+   "tipo": "flusso",
+   "contenuto": "Il ciclo di auto-giudizio visivo: modifica la pagina -> rilegge l'immagine di riferimento -> confronta render e originale -> si autogiudica con un punteggio di somiglianza. A lavagna sono scritti i due valori del ciclo: 0,30 (lontane) che diventa 0,90 (header, bottoni, effetti, font uguali) -> 'sono arrivato, ho concluso'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#25:33",
+   "frame": "frame-783.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-054",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Livello 5 CHECKPOINT UMANO, il caso peggiore: 'sei tu che guardi ogni pagina, ogni modifica della pagina web e gli dici si', no, o gli dai uno score per fargli capire se sta andando bene o male'. E' supervisione, non verifica automatizzata.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#26:36",
+   "frame": "frame-790.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-055",
+   "peso": "portante",
+   "tipo": "caveat",
+   "contenuto": "IL CAVEAT ONESTO: 'Questo approccio funziona molto bene a loro due perche' loro due sono degli sviluppatori, scrivono codice... Funziona molto bene a loro perche' e' verificabile questo task. Per questo lo dicono: io non scrivo piu' prompt, faccio solo loop. Ma in altri casi questo approccio va visto nel dettaglio, perche' ci sono cose in cui non e' verificabile in automatico, non e' deterministico, e quindi bisogna che noi facciamo da giudici, o l'LLM fa da giudice, oppure bisogna metterci noi ad avere piu' controllo di quello che sta accadendo.'",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#26:52",
+   "frame": "frame-809.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-059",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "ANATOMIA DEL GOAL DELLA DEMO, quattro pezzi in una riga: (1) obiettivo misurabile 'migliora i tempi impiegati'; (2) perimetro 'in questo script python'; (3) memoria/tracciabilita' obbligatoria 'ad ogni test scrivilo su un file markdown con le modifiche fatte'; (4) condizione di terminazione dopo la barra verticale 'fai al massimo 10 tentativi'. E' il template riutilizzabile.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#28:48",
+   "frame": "frame-890.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-065",
+   "peso": "supporto",
+   "tipo": "risultato",
+   "contenuto": "Cosa il loop ha imparato da solo, scritto nella sua risposta: 'float64 -> float32 = 2x gratis (la doppia precisione qui non serve)'; 'riusare il buffer del risultato con np.matmul(out=...) e' il meglio su CPU (2.6x)'; 'thread tuning (A2) e scipy sgemm (A4) peggiorano o scartati (OpenBLAS si gestisce gia' bene, sgemm ricopia i dati)'; 'la GPU stravince: il collo di bottiglia diventa il transfer CPU->GPU, non il calcolo'.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#30:46",
+   "frame": "frame-924.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-066",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Il loop ha anche fatto una scelta di prudenza dichiarata: 'TF32 (A8) e float16 (A9) sono ancora piu' veloci ma riducono la precisione - non li ho messi nello script di default perche' adatti al ML, non al calcolo numerico esatto. Se vuoi massimizzare a scapito della precisione, posso attivarli con un flag.' Lo script finale usa GPU float32 con fallback automatico a NumPy float32 su macchine senza GPU (~113 ms end-to-end contro ~870 ms su CPU).",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#31:06",
+   "frame": "frame-934.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-069",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Chiusura: il loop engineering non e' solo per il coding. 'Lo si puo' utilizzare anche per fargli creare modelli 3D, post sui social, praticamente qualsiasi cosa, perche' poi Claude con i vari server MCP lo puoi collegare a tutto.'",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#30:47",
+   "frame": "frame-940.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-070",
+   "peso": "contesto",
+   "tipo": "vuoto",
+   "contenuto": "Il video non dichiara se /loop e /goal siano comandi nativi di Claude Code o slash command custom installati dall'autore. Compaiono nell'autocomplete della sua installazione con i rispettivi parametri, ma non viene mostrata ne' ~/.claude/commands/ ne' la fonte del comando.",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#19:20",
+   "frame": "frame-590.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v07-rizzo-prompt::KA-071",
+   "peso": "contesto",
+   "tipo": "vuoto",
+   "contenuto": "Il video non mostra mai /loop in esecuzione: la sola demo reale e' fatta con /goal. Non quantifica il costo in token della sessione da 10 tentativi. Non da' un criterio per scegliere il numero massimo di tentativi (compaiono 100, 80, 10, 1000 senza regola).",
+   "ancora": "",
+   "fonte": "BSUHmVcaO1g#29:25",
+   "frame": "frame-890.png",
+   "run": "max17-v07-rizzo-prompt",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-024",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "IL PRINCIPIO DEL DESIGN LOOP, verbatim dalla guida Notion 'The Design Loop: Free Guide': 'Claude Design has taste. It just can't judge its own work. The context that builds a piece is the context that grades it — a chef reviewing their own restaurant. Five stars, every time. The Design Loop fixes exactly that: it moves the judging into fresh contexts that never saw the work being made. Parallel agents buy you speed. Fresh context buys you the result.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#4:20-4:38",
+   "frame": "frame-131.png, frame-140.png, _zoom/z131.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-025",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "L'aside finale della skill Design Loop, verbatim: 'The one thing to remember — A critic that shares memory with the builder is grading its own homework. Everything else here is detail.' E' l'invariante piu' forte del video: il giudice non deve condividere la memoria del costruttore.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#4:48",
+   "frame": "frame-145.png, _zoom/z145.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-026",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "I quattro meccanismi della skill Design Loop, tabella verbatim: (1) 'A teardown pass into bar.md' → 'Converts a reference into checkable mechanisms before any building starts'. (2) 'Three critics with distinct briefs' → 'Each can fail work the other two would pass — one harsh critic collapses into a single opinion'. (3) 'A preflight check' → 'Verifies the critic can actually see before you waste a whole run'. (4) 'Model tiering across critics' → 'Cheap where judgment is mechanical, strongest where it's taste'.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#4:48",
+   "frame": "frame-145.png, _zoom/z145.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-027",
+   "peso": "supporto",
+   "tipo": "attribuzione",
+   "contenuto": "Il Design Loop e' dichiarato come adattamento del 'Gauntlet Loop' inventato da Matt Shumer, verbatim dalla guida: 'This method is an adaptation of the Gauntlet Loop, invented by Matt Shumer. He named it, defined it, and built the original — a Three.js FPS from a single prompt that did 3.8M views. Everything on this page is a variation on his idea.' Tweet originale (@mattshumer_, 9:52 PM Jul 27 2026, 63.4k views): 'I'm officially calling this the Gauntlet Loop. The agent (not you!) breaks the goal into parts, gives each part a specialist builder and a ruthless blind critic sub-agent, with a mandate to only pass if the generated artifact is better than some real-world equivalent.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#4:20-4:38",
+   "frame": "frame-131.png, frame-140.png, _zoom/z140b.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-028",
+   "peso": "supporto",
+   "tipo": "invocazione",
+   "contenuto": "La Design Loop e' una slash-skill di Claude. Verbatim a voce: 'you're going to do forward slash. You type in design loop.' → /design loop. La guida gratuita si scarica dalla pagina risorse dell'autore (secondo link in descrizione).",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#10:22-10:24",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-028",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Claude stesso segnala una discrepanza fra le skill scaricate e il progetto reale prima di procedere: le skill descrivono percorsi diversi da quelli reali (labs/ai-cfo/engine/... nelle skill contro analisi/ + costruisci_command_center.py nella radice del progetto reale), e citano due script che non esistono ancora nel progetto: verifica_dati.py (dichiarato dalla skill come 'passo 4 della procedura': controlla le coerenze contabili e blocca la consegna se un test fallisce) e pubblica_su_sheets.py (con un suo file dati/parametri/fogli_google.json). Beggiato chiede di allineare le skill al codice reale scrivendo verifica_dati.py prima di proseguire.",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#30:24 (frame statico)",
+   "frame": "frame-461.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-030",
+   "peso": "portante",
+   "tipo": "prompt",
+   "contenuto": "Prompt 6 - 'Il controllo antinvenzione', dichiarato a voce come 'il prompt piu' importante di tutti - e' quello che ti permette di mettere la dashboard davanti a qualcuno senza doverla accompagnare con dei distinguo.' Chiede di scrivere verifica_dashboard.py, che controlla che ogni numero scritto nella dashboard esista davvero nei dati, e insegna a risalire a un numero quando c'e' un dubbio.",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#31:41-31:53 (voce) + Notion",
+   "frame": "frame-482.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-031",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "PARTE A del prompt anti-invenzione - 'il cancello automatico', 6 passi dichiarati per intero: (1) estrai ogni numero dal testo dell'HTML, ignorando CSS, SVG e attributi (coordinate e larghezze, non dati); (2) costruisci l'insieme dei valori noti scavando ricorsivamente in command_center.json a qualunque profondita'; (3) espandi l'insieme con le combinazioni elementari che un CFO fa a mente (valore x100 e /100 per percentuali, valore assoluto, arrotondamenti, migliaia, giorni x fatturato giornaliero, punti percentuali x ricavi, differenze e somme fra coppie di KPI); (4) ignora i numeri che compaiono per forza e non sono dati (anni, giorni del mese, percentuali di sezione, numeri delle barre); (5) confronta con tolleranza relativa dello 0,6%; (6) elenca quello che non trova, va guardato a mano, uno per uno, e o si giustifica o si corregge. Esce con codice 1 se resta anche un solo numero senza origine, bloccando la pipeline.",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#Notion, frame statico",
+   "frame": "frame-482.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-032",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Motivazione esplicita per il doppio cancello (codice deterministico + controllo anti-invenzione separato): 'Perche' dobbiamo mettere un altro cancello di verifica? Perche' c'e' l'interpretazione del dato. Non vogliamo che nella parte in cui ci siamo distaccati dal codice deterministico allora abbiamo cominciato poi ad introdurre degli errori.'",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#31:33-31:57",
+   "frame": "frame-482.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v15::KA-036",
+   "peso": "supporto",
+   "tipo": "architettura",
+   "contenuto": "La demo del report mostrata all'inizio del video (1:16, frame-020) e il risultato finale ricostruito in diretta e mostrato a fine video (32:04-32:36, frame-484/488/490) hanno numeri identici cifra per cifra (93 giorni, NordEst 132.727 euro, 31% crediti, fatturato 4.198.187 euro, EBITDA 41,3%/442.393 euro...): non e' un mockup diverso mostrato per hype, e' lo stesso identico file HTML finale mostrato in anteprima e poi ricostruito davvero nel corso del video.",
+   "ancora": "",
+   "fonte": "sno_IcNbYFM#1:16 e 32:04-32:36 (confronto diretto fra due frame)",
+   "frame": "frame-020.png,frame-490.png",
+   "run": "max17-v15",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v01-second-brain-obsidian::KA-119",
+   "peso": "portante",
+   "tipo": "comando",
+   "contenuto": "Prompt 6 del canovaccio Notion (\"Correggi e ripeti finche' esce '0 errori'\", descrizione: \"Il ciclo correttivo: l'AI sistema cio' che ha segnalato, rifa' il gate, e ripete fino a zero.\"), testo integrale: \"Correggi le note che hai appena segnalato, applicando le regole del gate: frontmatter completo, massimo 300 righe, almeno 3 wikilink reali in uscita, zero link rotti, zero orfani, un solo grappolo connesso. Poi rifai il gate da capo e mostrami il nuovo referto. Ripeti finche' non esce 'OK, 0 errori'.\" Questo prompt istituisce il ciclo automatico correggi-verifica-ripeti come pattern operativo standard per portare qualunque vault a \"0 errori\" rispetto alle sei regole del gate di qualita', senza intervento manuale nota per nota.",
+   "ancora": "Il ciclo correttivo: l'AI sistema ciò che ha segnalato, rifà il gate, e ripete fino a zero.",
+   "fonte": "RnoC5IlOUhs#95:48 (Notion, doc Company Brain — Tutti i prompt, Prompt 6 per intero) + voce 95:48-96:00",
+   "frame": "frame-0959.png",
+   "run": "max18-v01-second-brain-obsidian",
+   "relazioni": [
+    {
+     "verso": "KA-118",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-042",
+     "tipo": "parte-di",
+     "perche": "Il Prompt 6 e' una voce dello stesso canovaccio Notion indicizzato in KA-042."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-039",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Verifica di coerenza fatta dall'autore in chiusura del test dal vivo: dopo aver generato la proposta, TORNA nel file grezzo dentro fonti/ e confronta i prezzi scritti nella call con quelli finiti sul PDF, dichiarando la corrispondenza. La verifica non e' delegata all'agente: si controlla l'output contro la fonte immutabile.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#18:32-19:22",
+   "frame": "frame-387.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-041",
+   "peso": "contesto",
+   "tipo": "limite",
+   "contenuto": "Cosa NON e' dimostrato nel video, verificato frame per frame: (1) nessun documento e' mai stato inviato davvero a un cliente - tutti hanno prefisso [DEV] e restano in stato DRAFT nella dashboard PandaDoc (contatori: Your drafts 1, Waiting for others 0, Finalized 0); (2) il cliente e' dichiaratamente finto; (3) nessun euro incassato e' mostrato; (4) il codice di pandadoc.py / create_proposal.py / inspect_template.py non e' MAI ingrandito a schermo, compaiono solo i nomi dei file; (5) il CLAUDE.md generato non e' mai aperto a schermo - se ne conosce il contenuto solo dal prompt che lo commissiona e dal riassunto che Claude ne fa.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#12:57 + #17:15 + #14:45 (verifica incrociata su piu' frame)",
+   "frame": "frame-260.png, frame-345.png, frame-296.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-042",
+   "peso": "contesto",
+   "tipo": "cautela",
+   "contenuto": "Cautela di lettura sull'output 'senza cervello': l'autore lo liquida a voce come 'quasi AI slop' e dice che 'non ha nemmeno il nostro logo'. Guardando il frame, l'artifact e' in realta' un documento impaginato con gerarchia tipografica e il nome 'Gentes.AI' presente come testo. Cio' che manca davvero e' il logo IMMAGINE, il template brandizzato e il canale di firma/pagamento. La differenza che il video dimostra davvero e' funzionale (firma + pagamento + nota di memoria + autoverifica sui prezzi), non estetica: il claim 'AI slop' e' retorica dell'autore, non un fatto verificato a schermo.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#7:37-8:00 vs frame-155 guardato",
+   "frame": "frame-155.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-059",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Nuova lavagna Excalidraw, titolo \"Observe - Think - Do - Evaluate (OTDE)\": un framework a quattro fasi disposte in cerchio e collegate da frecce curve in senso orario, già completo sullo schermo (non in costruzione). \"OSSERVA\" (box viola): \"Riceve input dall'ambiente: messaggi utente, output strumenti, risposte API, segnali errori.\" / \"Parsing input, aggiunta alla traiettoria, lettura dalla memoria a lungo termine.\" \"PENSA\" (box verde): \"Il LLM processa tutto il contesto: prompt, memoria, traiettoria, osservazione attuale.\" / \"Ragionamento chain-of-thought, decomposizione obiettivi, selezione piano, auto-critica.\" / \"Basato sul paradigma ReAct.\" \"RIFLESSIONE\" (box giallo): \"Auto-valutazione, feedback verbale scritto in memoria.\" Il quarto box (arancione, presumibilmente \"AGISCI\"/\"DO\" per completare l'acronimo OTDE) è quasi del tutto tagliato dal bordo inferiore dello schermo e non leggibile in questo blocco di scene. Questo diagramma corrisponde al punto 5 dell'indice del corso (\"Il loop di ragionamento Agentico (OTDE)\") e resta il punto in cui si interrompe il blocco di scene 1-126 qui atomizzato.",
+   "ancora": "Observe - Think - Do - Evaluate (OTDE)",
+   "fonte": "JTn5pqm9ecM#34:24 + voce 34:18-34:24",
+   "frame": "frame-0345.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-198",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-151",
+     "tipo": "esempio-di",
+     "perche": "È l'apertura concreta del punto 5 dell'indice del corso mostrato all'inizio del video."
+    },
+    {
+     "verso": "KA-179",
+     "tipo": "esempio-di",
+     "perche": "OSSERVA/PENSA/RIFLESSIONE/(AGISCI) è una riformulazione più fine-grained dello stesso ciclo Assemblare/Invocare LLM/Obiettivo raggiunto/Invocare Strumento già visto: 'Osserva' assorbe l'assemblaggio della finestra di contesto, 'Pensa' corrisponde a 'Invocare LLM', 'Riflessione' corrisponde alla valutazione dell'obiettivo raggiunto."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-060",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Il framework \"Observe - Think - Do - Evaluate (OTDE)\" viene presentato come mappa di riferimento dell'intero ciclo agentico, prima di scendere nel dettaglio dei singoli passaggi: sei riquadri colorati collegati da frecce curve formano un ciclo completo, già interamente disegnato — OSSERVA (viola), MEMORIA (azzurro), RIFLESSIONE (giallo), PENSA (verde), AGISCI (arancione), AMBIENTE (azzurro) — più, a destra, un ottagono rosso \"Condizione di terminazione\" che determina quando il loop si ferma.",
+   "ancora": "Observe - Think - Do - Evaluate (OTDE)",
+   "fonte": "JTn5pqm9ecM#34:30 (lavagna Excalidraw, diagramma OTDE completo a schermo intero, webcam del relatore in basso a sinistra) + voce 34:30-34:36",
+   "frame": "frame-0346.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-158",
+     "tipo": "precede",
+     "perche": "il framework generale viene subito applicato all'esempio pratico del rettangolo da disegnare"
+    },
+    {
+     "verso": "KA-165",
+     "tipo": "precede",
+     "perche": "lo stesso ciclo viene poi riformulato in versione semplificata PROMPT-TASK-VERIFICA-FEEDBACK-MEMORIA"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-061",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Nodo OSSERVA del framework OTDE (viola, icona cannocchiale/occhio): riceve input dall'ambiente — messaggi utente, output strumenti, risposte API, segnali errori — attraverso il parsing dell'input, l'aggiunta alla traiettoria e la lettura dalla memoria a lungo termine.",
+   "ancora": "Riceve input dall'ambiente: messaggi utente, output strumenti, risposte API, segnali errori.",
+   "fonte": "JTn5pqm9ecM#34:30 (riquadro OSSERVA nel diagramma OTDE) + voce 34:30",
+   "frame": "frame-0346.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-062",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Nodo MEMORIA del framework OTDE (azzurro, icona archivio+nuvola): buffer a breve termine + archivio vettoriale a lungo termine.",
+   "ancora": "Buffer a breve termine + archivio vettoriale a lungo termine.",
+   "fonte": "JTn5pqm9ecM#34:30 (riquadro MEMORIA nel diagramma OTDE) + voce 34:30",
+   "frame": "frame-0346.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-063",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Nodo RIFLESSIONE del framework OTDE (giallo, icona specchio+lente): auto-valutazione, feedback verbale scritto in memoria.",
+   "ancora": "Auto-valutazione, feedback verbale scritto in memoria.",
+   "fonte": "JTn5pqm9ecM#34:30 (riquadro RIFLESSIONE nel diagramma OTDE) + voce 34:30",
+   "frame": "frame-0346.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-153",
+     "tipo": "precede",
+     "perche": "nel diagramma le frecce collegano PENSA↔RIFLESSIONE in un sotto-loop"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-064",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Nodo PENSA del framework OTDE (verde, icona lampadina+ingranaggio/cervello): il LLM processa tutto il contesto — prompt, memoria, traiettoria, osservazione attuale — tramite ragionamento chain-of-thought, decomposizione obiettivi, selezione piano, auto-critica; il riquadro dichiara esplicitamente di essere basato sul paradigma ReAct (l'etichetta \"ReAct\" viene sottolineata a mano dal relatore nella scena 134, a conferma).",
+   "ancora": "Ragionamento chain-of-thought, decomposizione obiettivi, selezione piano, auto-critica.",
+   "fonte": "JTn5pqm9ecM#34:30 (riquadro PENSA nel diagramma OTDE, poi zoom dedicato in scena 130 e sottolineatura di \"ReAct\" in scena 134) + voce 34:30, 34:48, 36:36",
+   "frame": "frame-0346.png, frame-0349.png, frame-0367.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-158",
+     "tipo": "motiva",
+     "perche": "l'esempio del rettangolo scomposto in quadranti è la dimostrazione pratica di come PENSA decompone un obiettivo"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-065",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Nodo AGISCI del framework OTDE (arancione, icona ingranaggi+chiave inglese): esegue l'azione scelta, con dispatch a tool esterni come ricerca, code interpreter, browser, API; l'output del tool torna come nuova osservazione, chiudendo il loop verso OSSERVA.",
+   "ancora": "Esegue l'azione scelta: dispatch a tool esterni come ricerca, code interpreter, browser, API.",
+   "fonte": "JTn5pqm9ecM#34:30 (riquadro AGISCI nel diagramma OTDE, poi zoom dedicato con annotazioni \"Google API\"/\"Meteo\" in scena 135) + voce 34:30, 36:42",
+   "frame": "frame-0346.png, frame-0368.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-167",
+     "tipo": "motiva",
+     "perche": "il dispatch a tool esterni descritto qui è esattamente ciò che la demo dei 5 agenti di ricerca paralleli mette in pratica in Claude Code"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-066",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Nodo AMBIENTE del framework OTDE (azzurro, icona globo+edifici): filesystem, web, database, altri agenti.",
+   "ancora": "Filesystem, web, database, altri agenti.",
+   "fonte": "JTn5pqm9ecM#34:30 (riquadro AMBIENTE nel diagramma OTDE, visibile per intero in scena 141) + voce 34:30, 37:48",
+   "frame": "frame-0346.png, frame-0379.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-067",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "L'ottagono rosso \"Condizione di terminazione\" nel diagramma OTDE definisce quando il loop agentico si ferma: risposta finale, max iterazioni, soglia errore.",
+   "ancora": "Risposta finale, max iterazioni, soglia errore.",
+   "fonte": "JTn5pqm9ecM#34:30 (ottagono rosso a destra del diagramma OTDE) + voce 34:30",
+   "frame": "frame-0346.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-163",
+     "tipo": "precede",
+     "perche": "la condizione di terminazione raggiunta è ciò che viene poi annotato a mano come \"DONE\" nelle scene successive"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-068",
+   "peso": "contesto",
+   "tipo": "definizione",
+   "contenuto": "Topologia del loop OTDE: frecce curve collegano OSSERVA↔MEMORIA, OSSERVA→PENSA, PENSA↔RIFLESSIONE, PENSA→AGISCI, AGISCI↔AMBIENTE, AGISCI→Condizione di terminazione, e un arco lungo riporta da AGISCI su fino a OSSERVA, chiudendo il loop.",
+   "ancora": "un arco lungo riporta da AGISCI su fino a OSSERVA (chiusura del loop)",
+   "fonte": "JTn5pqm9ecM#34:30 (frecce di collegamento tra i sei riquadri del diagramma OTDE) + voce 34:30",
+   "frame": "frame-0346.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-069",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Esempio pratico usato per illustrare il nodo PENSA/decomposizione del framework OTDE: si immagina un task ipotetico assegnato all'agente, \"disegna questo rettangolo\", rappresentato disegnando sulla lavagna un rettangolo blu vuoto a mano libera.",
+   "ancora": "immaginiamo che il task sia disegna questo rettangolo",
+   "fonte": "JTn5pqm9ecM#35:18 (rettangolo blu appena tracciato accanto al riquadro PENSA) + voce 35:18",
+   "frame": "frame-0354.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-159",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-070",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Il rettangolo dell'esempio \"disegna questo rettangolo\" viene riempito con scarabocchi colorati divisi in quattro quadranti (in alto a sinistra verde, in alto a destra rosso sovrapposto ad arancione, in basso a sinistra arancione, in basso a destra verde), a rappresentare la decomposizione del rettangolo/obiettivo in sotto-forme più semplici (sotto-obiettivi).",
+   "ancora": "rappresenta la decomposizione del rettangolo/obiettivo in sotto-forme più semplici (subobiettivi)",
+   "fonte": "JTn5pqm9ecM#35:48 (rettangolo riempito con quattro quadranti colorati) + voce 35:48",
+   "frame": "frame-0359.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-158",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-160",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-153",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-071",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Sotto/a destra del rettangolo a quadranti compaiono cinque nuove forme separate (due piccoli quadrati verdi, un quadrato rosso, un rettangolo largo arancione, un rettangolo stretto e alto arancione), una freccia curva nera e un'icona di loop: insieme illustrano visivamente il \"chain of thought\", cioè i pezzi vengono ordinati e poi riassemblati in sequenza per ricostruire la forma originale.",
+   "ancora": "illustrano visivamente il \"chain of thought\": i pezzi vengono ordinati e poi riassemblati in sequenza per ricostruire la forma originale.",
+   "fonte": "JTn5pqm9ecM#36:18 (cinque forme scomposte + freccia curva + icona di loop accanto al rettangolo a quadranti) + voce 36:18",
+   "frame": "frame-0364.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-161",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-072",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Nella scena 134 il relatore sottolinea a mano, nel riquadro PENSA, l'ultima riga \"Basato sul paradigma ReAct\", confermando esplicitamente che il nodo PENSA del framework OTDE si fonda sul paradigma ReAct (Reason+Act) già scritto in precedenza.",
+   "ancora": "ora sottolineata a mano nell'ultima riga",
+   "fonte": "JTn5pqm9ecM#36:36 (sottolineatura fresca sotto \"ReAct\" nel riquadro PENSA) + voce 36:36",
+   "frame": "frame-0367.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-073",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Sul riquadro AGISCI del diagramma OTDE il relatore annota a mano due esempi concreti di tool/API esterni richiamabili dall'agente: \"Google API\" e, sotto, \"Meteo\", posizionati tra AGISCI e l'ottagono \"Condizione di terminazione\".",
+   "ancora": "Nuove annotazioni scritte a mano: **\"Google API\"** e, sotto, **\"Meteo\"**",
+   "fonte": "JTn5pqm9ecM#36:42 (annotazioni manoscritte accanto al riquadro AGISCI) + voce 36:42",
+   "frame": "frame-0368.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-154",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-074",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Il relatore scrive a mano, con una freccia curva che parte dall'ottagono \"Condizione di terminazione\", la parola \"DONE\" (prima incompleta come \"DON\", poi completata con doppia sottolineatura), a rappresentare l'esito positivo del loop OTDE quando la condizione di terminazione viene soddisfatta.",
+   "ancora": "sottolineatura doppia tracciata sotto",
+   "fonte": "JTn5pqm9ecM#38:06 (scrittura in corso di \"DON...\") e #38:18 (\"DONE\" completo e sottolineato) + voce 38:06, 38:18",
+   "frame": "frame-0382.png, frame-0384.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-156",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-164",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-075",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Una volta raggiunto \"DONE\" (esito positivo, non ambiguo, senza divergenze), l'intero esito del loop OTDE viene comunque scritto sia nella MEMORIA sia nell'AMBIENTE, i due riquadri del framework preposti rispettivamente a conservare l'esperienza e ad applicarne gli effetti nel mondo esterno.",
+   "ancora": "tutto questo verrà inserito nella memoria e poi dentro l'ambiente",
+   "fonte": "JTn5pqm9ecM#38:18 (MEMORIA e AMBIENTE inquadrati per intero accanto alla scritta \"DONE\") + voce 38:18",
+   "frame": "frame-0384.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-151",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-155",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-076",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Su una nuova lavagna il relatore ridisegna il ciclo OTDE in una versione semplificata a quattro/cinque tappe, leggibile per intero: PROMPT → TASK → VERIFICA → FEEDBACK → MEMORIA → (ritorno a PROMPT). È presentato come lo schema minimo che chiunque dovrebbe saper disegnare a mano per capire il funzionamento di un agente.",
+   "ancora": "Loop completo ora leggibile: PROMPT → TASK → VERIFICA → FEEDBACK → MEMORIA → (ritorno a PROMPT).",
+   "fonte": "JTn5pqm9ecM#39:06 (loop PROMPT-TASK-VERIFICA-FEEDBACK appena disegnato) e #39:36 (aggiunta di MEMORIA e chiusura del loop) + voce 38:36-39:36",
+   "frame": "frame-0392.png, frame-0397.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-149",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-166",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-077",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Il feedback e il relativo salvataggio in memoria (l'errore che viene registrato) sono ciò che fa \"imparare\" l'agente: più un tool/agente viene utilizzato, più questo meccanismo si attiva fin dall'inizio, e il loop PROMPT→TASK→VERIFICA→FEEDBACK→MEMORIA continua a ripetersi e ad allargarsi man mano che l'agente accumula esperienza.",
+   "ancora": "quindi partirà da qui, farà una cosa del genere, poi continuerà a fare un loop così",
+   "fonte": "JTn5pqm9ecM#39:36 (loop completo con MEMORIA sulla lavagna) + voce 39:06-39:48",
+   "frame": "frame-0397.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-165",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-172",
+     "tipo": "motiva",
+     "perche": "il concetto di feedback salvato in memoria per far imparare l'agente è il seme concettuale del meccanismo Adaptive Guardrails mostrato poco dopo in CLAUDE.md"
+    },
+    {
+     "verso": "KA-187",
+     "tipo": "motiva",
+     "perche": "lo stesso principio viene formalizzato più avanti nel diagramma a spirale ascendente del miglioramento incrementale"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-083",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Sezione \"## Adaptive Guardrails\" del CLAUDE.md reale: \"Scan every entry below before starting any task. No exceptions.\" — \"This is a living correction log. When the user corrects you, or when a wrong assumption causes a bug, append a new entry immediately. Entries are permanent — never delete, only supersede.\"",
+   "ancora": "This is a living correction log. When the user corrects you, or when a wrong assumption causes a bug, append a new entry immediately. Entries are permanent — never delete, only supersede.",
+   "fonte": "JTn5pqm9ecM#39:54-40:00 (sezione \"## Adaptive Guardrails\" a riga 56 del CLAUDE.md) + voce 39:54, 52:12",
+   "frame": "frame-0400.png, frame-0401.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-171",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-173",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-084",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "\"### Entry format\" degli Adaptive Guardrails — formato: \"N. [ACTIVATION] Directive — reason.\" dove N è un numero sequenziale mai riutilizzato, e ACTIVATION è una di tre modalità: \"ALWAYS — Applies to every task unconditionally. Internalize before doing anything.\"; \"NEVER — Hard prohibition. Zero tolerance, zero exceptions.\"; \"WHEN:surface — Fires only when working with a specific surface. Examples: WHEN:video, WHEN:n8n, WHEN:loom, WHEN:skool, WHEN:git. Skip if the surface isn't part of the current task.\"",
+   "ancora": "N. [ACTIVATION] Directive — reason.",
+   "fonte": "JTn5pqm9ecM#39:54 (sezione \"### Entry format\") + voce 39:54, 44:24-45:24",
+   "frame": "frame-0400.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-174",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-085",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "\"### Recording entries\" degli Adaptive Guardrails — \"Append when:\" (1) the user rejects your output or redirects your approach; (2) a bug traces to an incorrect assumption about this codebase; (3) the user declares a standing preference. \"Do not record one-off instructions. Only permanent patterns or explicit standing orders.\"",
+   "ancora": "Do not record one-off instructions. Only permanent patterns or explicit standing orders.",
+   "fonte": "JTn5pqm9ecM#39:54 (sezione \"### Recording entries\") + voce 39:54",
+   "frame": "frame-0400.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-175",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-086",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "\"### Resolving contradictions\" degli Adaptive Guardrails — \"When two entries clash, apply in order:\" (1) Supersession — un'entry che finisce con \"(supersedes #N)\" uccide l'entry N; le entry morte restano visibili ma vengono ignorate; (2) Specificity — \"WHEN:loom\" batte \"ALWAYS\" sui task Loom, una regola che nomina un file specifico batte una che nomina un modulo, lo scope più stretto vince; (3) Recency — il numero di entry più alto vince, ultima risorsa.",
+   "ancora": "When two entries clash, apply in order:",
+   "fonte": "JTn5pqm9ecM#40:12 (sezione \"### Resolving contradictions\" per intero) + voce 46:54",
+   "frame": "frame-0403.png, frame-0440.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-176",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-087",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Esempio reale del \"Correction Log\" popolato (regole numerate 18-33 lette per intero nel CLAUDE.md di \"Social Media Manager\"): \"18. [NEVER] Track head[shots/] — personal branding assets, not code. Gitignored.\" — \"19. [ALWAYS] Hook scripts must derive PROJECT_ROOT from Path(__file__) — never hardcode absolute paths.\" — \"20. [WHEN:n8n] Verify n8n API PUT actually applied by checking the response...\" — \"21. [WHEN:n8n] Never attempt manual JWT signing in n8n Code nodes — crypto module is blocked in the sandbox.\" — \"22. [WHEN:n8n] Toggle 'Set up for use in HTTP Request node' ON in n8n googleApi credentials...\" — \"23. [WHEN:n8n] When chaining HTTP Request nodes, downstream nodes receive the upstream API response as input...\" — \"24. [WHEN:n8n] Cloudflare Workers can't reach raw IPs behind Cloudflare infrastructure (error 1003)...\" — \"25. [WHEN:n8n] n8n HTTPS domain n8n-eejg.srv1629360.hstgr.cloud only works on port 32769 (HTTP), not 443...\" — \"26. [WHEN:n8n] Google Cloud rejects raw IP addresses as OAuth redirect URIs...\" — \"27. [WHEN:n8n] n8n webhook responseMode must be onReceived (not immediately) for v2 webhook nodes.\" — \"28. [WHEN:n8n] Always flush stale n8n executions (deactivate, wait 10s, reactivate) before testing code changes...\" — \"29. [WHEN:n8n] n8n API: active field is read-only on PUT — cannot set it in the request body.\" — \"30. [WHEN:n8n] n8n per-node error handling: set onError: 'continueErrorOutput'...\" — \"31. [WHEN:gemini] Gemini 2.5 Flash: always set responseSchema + maxOutputTokens=16384 — without schema, Gemini guesses structure. Do NOT include thinkingConfig (causes 400 error).\" — \"32. [WHEN:skool] Community writing style profile in .claude/skills/write-skool-module/references/writing_style.md — use /write-skool-module skill for all Italian module translations and community content.\" — \"33. [WHEN:loom] Loom transcript takes 15+ minutes to generate for newly uploaded videos — don't wait, use Whisper API fallback...\"",
+   "ancora": "18. [NEVER] Track `head[shots/]` — personal branding assets, not code. Gitignored.",
+   "fonte": "JTn5pqm9ecM#40:06 (Correction Log scrollato, righe 110-125+ del CLAUDE.md reale) + voce (segmento silente, il relatore mostra la lista mentre parla del concetto di regole accumulate)",
+   "frame": "frame-0402.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-173",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-088",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "In un progetto Antigravity completamente vuoto, il relatore digita il prompt \"Hey, dimmi un numero da 1 a 100\" senza alcuna direzione aggiuntiva nel file GEMINI.md (vuoto). L'agente risponde \"42! (La risposta alla domanda fondamentale sulla vita, l'universo e tutto quanto)\" — un riferimento scherzoso, non un vero numero casuale — a dimostrare il comportamento \"senza direzione\" di un agente privo di guardrails.",
+   "ancora": "42! (La risposta alla domanda fondamentale sulla vita, l'universo e tutto quanto)",
+   "fonte": "JTn5pqm9ecM#41:24 (risposta dell'agente nel pannello destro, GEMINI.md ancora vuoto) + voce 41:24",
+   "frame": "frame-0415.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-178",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-089",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "Il relatore pone l'obiettivo dimostrativo: ipotizzare che la risposta \"corretta\" al prompt \"dimmi un numero da 1 a 100\" debba essere sempre 27, per poi mostrare come si guida l'agente a rispettarla scrivendo l'istruzione nel file GEMINI.md invece di lasciarlo \"senza direzione\".",
+   "ancora": "Ipotizziamo che la risposta corretta sia sempre, non lo so, 27.",
+   "fonte": "JTn5pqm9ecM#41:54 (stessa risposta \"42\" ancora a schermo, GEMINI.md non ancora aperto) + voce 41:54",
+   "frame": "frame-0420.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-179",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-090",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Il file GEMINI.md viene aperto e compilato con il template completo degli Adaptive Guardrails (stesse sezioni viste nel CLAUDE.md di \"Social Media Manager\": Entry format, Recording entries, Resolving contradictions, Correction Log). Il relatore invia poi un prompt dettato a voce, trascritto in modo impreciso come \"Hey, dammi un numero da un accento!\" (fraintendimento vocale di \"da 1 a 100\"): l'agente risponde comunque correttamente \"27\", dimostrando che l'istruzione salvata nel file esterno ha funzionato.",
+   "ancora": "Hey, dammi un numero da un accento!",
+   "fonte": "JTn5pqm9ecM#42:54 (GEMINI.md compilato col template, risposta \"27\" nel pannello destro) + voce 42:54",
+   "frame": "frame-0430.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-173",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-180",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-091",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Esperimento dal vivo di auto-scrittura del Correction Log: il relatore invia il prompt \"Hey per favore, quando ti chiedo di generare un numero da 1 a 10, non generare mai un numero superiore a 5.\" Dopo l'elaborazione (\"Worked for 13s\"), l'agente risponde \"Ricevuto! Ho registrato questa preferenza nel file GEMINI.md. Da ora in poi, quando mi chiederai un numero da 1 a 10, ti darò sempre un numero che non supera il 5.\" e il file GEMINI.md mostra la nuova entry scritta automaticamente: \"1. [ALWAYS] When asked for a number from 1 to 10, never generate a number greater than 5 — User preference.\" Sezione \"Files Modified 1\": GEMINI.md +2 -1.",
+   "ancora": "1. [ALWAYS] When asked for a number from 1 to 10, never generate a number greater than 5 — User preference.",
+   "fonte": "JTn5pqm9ecM#45:54 (prompt inviato, stato \"Generating.\") e #46:24 (entry \"1. [ALWAYS]\" scritta nel file, risposta dell'agente) + voce 45:54-46:24",
+   "frame": "frame-0460.png, frame-0465.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-174",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-181",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-092",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Commentando la nuova entry \"[ALWAYS]\" appena scritta autonomamente dall'agente nel Correction Log, il relatore osserva: \"Quello che il nostro agente fa è prioritizing tool usage e come vedete abbiamo un entrata always. Quindi questo è come andiamo a costruirli.\" L'agente stesso, senza istruzioni passo-passo, ha capito di dover registrare la preferenza dell'utente come regola permanente nel file.",
+   "ancora": "il nostro agente fa è prioritizing tool usage e come vedete abbiamo un entrata always.",
+   "fonte": "JTn5pqm9ecM#46:24 (entry \"1. [ALWAYS]\" e risposta \"Ricevuto! Ho registrato questa preferenza...\" per intero) + voce 46:24",
+   "frame": "frame-0465.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-176",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-172",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-094",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Tornato sul file GEMINI.md, il relatore indica la regola \"1. Supersession\" appena scritta nella sezione Resolving contradictions e promette di allegare l'intero prompt Adaptive Guardrails in descrizione al video, invitando gli spettatori ad aggiungerlo ai propri prompt.",
+   "ancora": "Vi lascio questo prompt sotto in descrizione, aggiungetevelo ai vostri prompt.",
+   "fonte": "JTn5pqm9ecM#46:54 (regola Supersession inquadrata per intero) + voce 46:54",
+   "frame": "frame-0470.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-175",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-184",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-095",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Su una nuova lavagna Excalidraw il relatore disegna un asse cartesiano essenziale per spiegare il miglioramento incrementale di un agente guidato da Adaptive Guardrails: asse Y etichettato \"# sessioni\" con quattro tacche numerate 1-2-3-4, asse X etichettato su due righe \"# iterazioni (tempo sessione)\", con i quattro numeri associati a ore ipotetiche di utilizzo (1, 2, 3, 4 ore).",
+   "ancora": "# iterazioni (tempo sessione)",
+   "fonte": "JTn5pqm9ecM#47:48 (primo tratto dell'asse cartesiano) e #48:18 (etichette \"# sessioni\" e \"# iterazioni\" aggiunte) + voce 47:48-48:18",
+   "frame": "frame-0479.png, frame-0484.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-166",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-185",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-096",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Sul grafico cartesiano viene tracciata una linea rossa discendente a tratti (5 punti, da vicino l'origine fino in basso a destra), etichettata a mano \"# numero errori\": rappresenta il numero di errori dell'agente che scende progressivamente man mano che aumentano le sessioni d'uso.",
+   "ancora": "questi sono, per farci una piccola leggenda, il eh numero di errori",
+   "fonte": "JTn5pqm9ecM#48:48 (linea rossa discendente + etichetta) + voce 48:48",
+   "frame": "frame-0489.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-184",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-186",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-097",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Sullo stesso grafico viene tracciata una linea verde ascendente (5 punti, incrocia a X la linea rossa degli errori a metà) che rappresenta il \"numero di regole\" accumulate, con annotazione \"più intelligenti\": man mano che aumentano le sessioni, il numero di regole cresce e l'agente diventa sempre più intelligente, mentre il numero di errori scende.",
+   "ancora": "il nostro agente diventa sempre più intelligente.",
+   "fonte": "JTn5pqm9ecM#49:18 (linea verde completa, incrocio a X con la linea rossa, riquadro \"più intelligenti\") + voce 49:18",
+   "frame": "frame-0494.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-184",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-187",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-098",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Diagramma completo (illustrazione pulita, non a mano libera) intitolato \"DIAGRAMMA A SPIRALE ASCENDENTE: LOOP DI AUTO-MIGLIORAMENTO DELL'AGENTE AI\", presentato per formalizzare il concetto di miglioramento incrementale appena mostrato col grafico a mano. Riga inferiore \"CICLO 1\", sei box in sequenza: INIZIO SESSIONE (\"l'utente apre la sessione\") → ESEGUI TASK (\"l'agente lavora sulla richiesta\") → ERRORE (\"l'agente commette un errore, l'utente lo corregge\") → SCRIVI REGOLA, evidenziato con alone giallo (\"l'agente scrive una nuova regola in CLAUDE.md\") → CONTINUA A LAVORARE (\"l'agente continua il task con la regola già applicata\") → FINE SESSIONE (\"la sessione termina\").",
+   "ancora": "DIAGRAMMA A SPIRALE ASCENDENTE: LOOP DI AUTO-MIGLIORAMENTO DELL'AGENTE AI",
+   "fonte": "JTn5pqm9ecM#49:36 (diagramma a spirale ascendente, riga CICLO 1) + voce 49:36",
+   "frame": "frame-0497.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-184",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-188",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-099",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "Riga superiore \"CICLO 2\" dello stesso diagramma a spirale, sottotitolata \"(in alto, seconda iterazione, agente più intelligente)\": INIZIO SESSONE (\"l'utente apre una nuova sessione\") → CARICA CONOSCENZA (\"l'agente legge CLAUDE.md con tutte le regole accumulate, base conoscenza più grande\") → ESEGUI TASK (\"l'agente lavora meglio grazie alle regole\") → ERRORE E CORREZIONE (\"meno errori questa volta\") → SCRIVI REGOLA (\"aggiungi un'altra regola\"). Al centro del diagramma, due icone cervello etichettate \"AI agent (prima iterazione)\".",
+   "ancora": "l'agente legge CLAUDE.md con tutte le regole accumulate (base conoscenza più grande)",
+   "fonte": "JTn5pqm9ecM#49:36-49:42 (riga CICLO 2 del diagramma a spirale) + voce 49:36-49:42",
+   "frame": "frame-0497.png, frame-0498.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-187",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-189",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-172",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-100",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Una lunga freccia curva a spirale collega la fine del CICLO 1 (dall'icona cervello \"AI agent, prima iterazione\") all'inizio del CICLO 2, a rappresentare che tra una sessione e l'altra \"il nostro cloudmd non si cancella, ma rimarrà\" aggiornato con le cose scritte: la conoscenza accumulata in CLAUDE.md/GEMINI.md persiste e si carica automaticamente ad ogni nuova sessione, permettendo task successivi con connessioni e regole ulteriori.",
+   "ancora": "che questa nuova conoscenza viene caricata, quindi una volta che ricominciamo il nostro cloud, il nostro cloudmd non si cancella, no, ma rimarrà",
+   "fonte": "JTn5pqm9ecM#50:30 (inizio della freccia a spirale) e #50:54 (freccia a spirale completa, entrambi i cicli visibili insieme) + voce 50:30-50:54",
+   "frame": "frame-0506.png, frame-0510.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-187",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-188",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-190",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-101",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Tornato sull'editor col file GEMINI.md per intero, il relatore pone una domanda retorica al pubblico: \"Hei, ma che differenza c'è tra avere un cloud [CLAUDE.md/GEMINI.md]. E avere tutte le informazioni messe nel prompt?\" — introducendo il confronto tra file esterno persistente e prompt inline statico.",
+   "ancora": "Hei, ma che differenza c'è tra avere un cloud. E avere tutte le informazioni messe nel prompt?",
+   "fonte": "JTn5pqm9ecM#51:12 (editor con GEMINI.md, pannello Agent vuoto) + voce 51:12",
+   "frame": "frame-0513.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-191",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-102",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Risposta alla domanda su GEMINI.md/CLAUDE.md vs prompt inline: se si \"congelasse\" tutto il contenuto dentro un prompt statico invece di tenerlo in un file esterno, si perderebbe la possibilità della correzione continua (i guardrails che vengono adattati) e non si avrebbe più il \"continuous improvement\" del prompt nel tempo.",
+   "ancora": "Ovviamente se facessimo questo, noi non avremmo modo di avere questo eh questa correzione continua",
+   "fonte": "JTn5pqm9ecM#51:42 (sezione Correction Log selezionata in blu, 191 caratteri) e #52:12 (chiusura dell'argomento) + voce 51:42-52:12",
+   "frame": "frame-0518.png, frame-0523.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-172",
+     "tipo": "motiva"
+    },
+    {
+     "verso": "KA-192",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-153",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Nel corso della demo pratica, il relatore applica in sequenza tre skill/prompt distinti sullo stesso output generato (la sales page Avanguardia+): prima lo step-back prompting (tecnica introdotta in un capitolo precedente del corso), poi /prompt-contracts sull'output appena prodotto, poi /pre-mortem sull'ultimo output. Il relatore chiude il racconto della dimostrazione riepilogando esplicitamente questa catena di quattro prompt/skill.",
+   "ancora": "chiude il racconto della dimostrazione pratica (dal prompt iniziale ai quattro prompt/skill usati: step-back, prompt-contracts, pre-mortem)",
+   "fonte": "JTn5pqm9ecM#82:30 (Claude Code, schermata riscrollata con entrambi i comandi /prompt-contracts e /pre-mortem visibili in sequenza) + voce 82:24-82:36",
+   "frame": "frame-0826.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-152",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-157",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-154",
+   "peso": "portante",
+   "tipo": "definizione",
+   "contenuto": "Diagramma 'Pre-Mortem' su lavagna Excalidraw: box viola 'OGGI -- Prima di iniziare', freccia tratteggiata etichettata 'Viaggio mentale nel futuro' verso box rosso 'FUTURO IMMAGINARIO -- Il progetto e FALLITO'. Da questo box scendono tre frecce verso tre domande: box giallo 'Perche e fallito?', box blu 'Cosa non avevamo previsto?', box rosa 'Quali segnali abbiamo ignorato?'. Una freccia curva riporta dal blocco domande al box verde 'Piano migliorato -- con difesa contro ogni rischio' con un segno di spunta. Didascalia: 'Il post-mortem arriva troppo tardi. Il pre-mortem trova gli stessi problemi PRIMA che costino tempo e denaro.'",
+   "ancora": "Il post-mortem arriva troppo tardi. Il pre-mortem trova gli stessi problemi PRIMA che costino tempo e denaro.",
+   "fonte": "JTn5pqm9ecM#77:30 (lavagna Excalidraw, diagramma Pre-Mortem) + voce 77:27-78:00",
+   "frame": "frame-0776.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-152",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-157",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-155",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Metafora disegnata a mano per spiegare perché il pre-mortem serve: un campo coltivato a monocoltura (rettangolo pieno di tratteggi verdi fitti) rappresenta un progetto che ha proseguito senza diversificare i rischi; una X rossa lo cancella per intero e uno scarabocchio a forma di fiamma/mano lo minaccia dall'alto, a illustrare lo scenario di fallimento improvviso ('l'incendio ti brucia tutto in un colpo solo').",
+   "ancora": "l'incendio ti brucia tutto in un colpo solo",
+   "fonte": "JTn5pqm9ecM#79:18 (lavagna Excalidraw, disegno campo monocoltura/raccoglitore) + voce 79:18-80:00",
+   "frame": "frame-0799.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-154",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-156",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Esempio numerico usato per giustificare il pre-mortem: se il sistema va giù per l'1% del tempo (downtime), e un cliente arriva a fare l'acquisto/firmare esattamente in quella finestra, quell'1% di downtime equivale al 100% del fatturato perso per quell'occasione - annotato sulla lavagna come '1% dT' con freccia verso '1% = 100%'.",
+   "ancora": "una seconda riga **\"1% = 100%\"** (il segno \"=\" racchiuso in un piccolo ovale)",
+   "fonte": "JTn5pqm9ecM#80:30 (lavagna Excalidraw, annotazione 1% = 100%) + voce 80:00-80:42",
+   "frame": "frame-0806.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-154",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-157",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Live demo: sull'ultimo output generato (la sales page Avanguardia+, già passata per il contract), il relatore lancia il comando '/pre-mortem sull'ultimo output'. La risposta si apre con l'intestazione 'Pre-Mortem: Sales Page Avanguardia+' e il testo: 'Il task è completato. È considerato un fallimento. Ecco le 3 cause più probabili.'",
+   "ancora": "Il task è completato. È considerato un fallimento. Ecco le 3 cause più probabili.",
+   "fonte": "JTn5pqm9ecM#81:12 (Claude Code, comando /pre-mortem sull'ultimo output) + voce 81:12-81:42",
+   "frame": "frame-0813.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-154",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-158",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-161",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Il pre-mortem non si limita a elencare i rischi ma li ordina per priorità: 'Rischio più alto: Il #1 -- Copy generica. Il design si può aggiustare in 10 minuti, ma se il testo non suona come Gio il sito non converte indipendentemente da quanto è bello.' Il rischio sulla voce/copy batte quello visivo perché nessun restyling salva un testo che non converte.",
+   "ancora": "Rischio più alto: Il #1 -- Copy generica. Il design si può aggiustare in 10 minuti, ma se il testo non suona come Gio il sito non converte indipendentemente da quanto è bello.",
+   "fonte": "JTn5pqm9ecM#82:12 (Claude Code, sezione Rischio più alto) + voce 82:12-82:18",
+   "frame": "frame-0823.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-158",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-162",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-163",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Il pre-mortem si chiude offrendo tre opzioni operative all'utente, invece di agire da solo: '1. Procedi -- accetta i rischi, li tengo a mente durante l'esecuzione', '2. Aggiungi le 3 mitigazioni al contract e poi procedi', '3. Aggiorna il contract con nuove FAILURE conditions via /prompt-contracts'. La decisione finale resta dell'utente, non dell'agente.",
+   "ancora": "Aggiorna il contract** con nuove FAILURE conditions via `/prompt-contracts`",
+   "fonte": "JTn5pqm9ecM#82:36 (VS Code/Antigravity, sezione Opzioni completa) + voce 82:24-82:36",
+   "frame": "frame-0827.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-162",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-045",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Il ciclo corretto per delegare lavoro a Claude Cowork è un loop a tre fasi che si ripete: FAI (Cowork esegue il task), VERIFICARE (l'utente controlla il risultato), GAP (si individuano gli scostamenti dall'obiettivo); sulla base dei gap si torna a FAI per correggere — lo stesso schema con cui si farebbe l'onboarding di un nuovo dipendente.",
+   "ancora": "FAI ... VERIFICARE ... GAP ... e poi gli diremo sulla base di queste gap vai a rifare",
+   "fonte": "DI5aWJiFAt8#24:12 (loop FAI-VERIFICARE-GAP chiuso ad anello) + voce 23:42-24:42",
+   "frame": "frame-0243.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-044",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-102",
+     "tipo": "alternativa-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-079",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Per validare l'affidabilità di una classificazione automatica di file fatta da Cowork, si può aprire il documento originale e confrontare manualmente cliente e data reali con quelli assegnati nel nome del file generato.",
+   "ancora": "vediamo se questo è 15 gennaio 24 bianchi impianti srl",
+   "fonte": "DI5aWJiFAt8#40:30 (anteprima PDF fattura Bianchi Impianti) + voce 40:30",
+   "frame": "frame-0406.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-102",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Regola operativa 'VERIFY-OR-REDO LOOP': ogni correzione o modifica deve seguire un ciclo obbligatorio che inizia sempre con la fase 'Understand' — leggere il codice rilevante e capire cosa è rotto e come dovrebbe apparire un risultato corretto dal punto di vista dell'utente.",
+   "ancora": "Every fix/change MUST follow this loop — no exceptions... 1. Understand: Read the relevant code.",
+   "fonte": "DI5aWJiFAt8#54:12 (editor, CLAUDE.md sezione VERIFY-OR-REDO LOOP) + voce 54:12",
+   "frame": "frame-0543.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-119",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Prima di affidarsi a documenti aggiunti al contesto in un formato particolare (es. markdown), conviene verificare con un test rapido se Claude Cowork riesce effettivamente a leggerli, invece di darlo per scontato.",
+   "ancora": "potrebbe essere che Cowork non li legga",
+   "fonte": "DI5aWJiFAt8#60:00 (pannello Context, aggiunta demo3_proposta commerciale) + voce 60:00",
+   "frame": "frame-0601.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-118",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-291",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Un'ipotesi plausibile ma sbagliata da verificare sempre con un test reale: si puo' temere che un agente vocale abbia difficolta' a leggere dati organizzati in tabelle dentro un PDF di knowledge base, ma un test diretto (chiedere nomi e specializzazioni di uno staff da una tabella) puo' smentirla, mostrando che l'agente restituisce i dati tabellari correttamente.",
+   "ancora": "se la teoria e' confermata dovremmo avere qualche problema a vedere ... come si chiamano",
+   "fonte": "NmoOZVTrTXA#114:06-114:24 (verifica sulla tabella TEAM MEDICO) + voce 114:02",
+   "frame": "frame-1142.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-298",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Un bug tipico nei workflow di disponibilita' e' che il sistema risponda 'nessuno slot disponibile' anche quando in realta' esistono slot liberi nella fonte dati reale: prima di fidarsi della risposta dell'agente, va sempre verificato il dato sorgente per capire se il rifiuto e' corretto o e' un errore del workflow.",
+   "ancora": "questo e' falso invece, non ci sono slot disponibili perche' io li ho",
+   "fonte": "NmoOZVTrTXA#117:00 (verifica manuale sulla cella orario) + voce 01:56:53",
+   "frame": "frame-1171.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-305",
+     "tipo": "corretto-da"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

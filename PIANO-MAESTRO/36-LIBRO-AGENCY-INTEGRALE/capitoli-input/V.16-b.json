@@ -1,0 +1,1299 @@
+{
+ "capitolo": "V.16",
+ "parte": "V.16-b",
+ "parte_n": 2,
+ "parti_totali": 2,
+ "titolo": "Agenti vocali",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max18-v09-NmoOZVTrTXA::KA-111",
+  "max18-v09-NmoOZVTrTXA::KA-113",
+  "max18-v09-NmoOZVTrTXA::KA-114",
+  "max18-v09-NmoOZVTrTXA::KA-115",
+  "max18-v09-NmoOZVTrTXA::KA-116",
+  "max18-v09-NmoOZVTrTXA::KA-117",
+  "max18-v09-NmoOZVTrTXA::KA-193",
+  "max18-v09-NmoOZVTrTXA::KA-194",
+  "max18-v09-NmoOZVTrTXA::KA-195",
+  "max18-v09-NmoOZVTrTXA::KA-196",
+  "max18-v09-NmoOZVTrTXA::KA-197",
+  "max18-v09-NmoOZVTrTXA::KA-202",
+  "max18-v09-NmoOZVTrTXA::KA-203",
+  "max18-v09-NmoOZVTrTXA::KA-204",
+  "max18-v09-NmoOZVTrTXA::KA-206",
+  "max18-v09-NmoOZVTrTXA::KA-207",
+  "max18-v09-NmoOZVTrTXA::KA-208",
+  "max18-v09-NmoOZVTrTXA::KA-211",
+  "max18-v09-NmoOZVTrTXA::KA-214",
+  "max18-v09-NmoOZVTrTXA::KA-216",
+  "max18-v09-NmoOZVTrTXA::KA-225",
+  "max18-v09-NmoOZVTrTXA::KA-231",
+  "max18-v09-NmoOZVTrTXA::KA-232",
+  "max18-v09-NmoOZVTrTXA::KA-233",
+  "max18-v09-NmoOZVTrTXA::KA-234",
+  "max18-v09-NmoOZVTrTXA::KA-235",
+  "max18-v09-NmoOZVTrTXA::KA-237",
+  "max18-v09-NmoOZVTrTXA::KA-250",
+  "max18-v09-NmoOZVTrTXA::KA-252",
+  "max18-v09-NmoOZVTrTXA::KA-253",
+  "max18-v09-NmoOZVTrTXA::KA-254",
+  "max18-v09-NmoOZVTrTXA::KA-260",
+  "max18-v09-NmoOZVTrTXA::KA-261",
+  "max18-v09-NmoOZVTrTXA::KA-262",
+  "max18-v09-NmoOZVTrTXA::KA-263",
+  "max18-v09-NmoOZVTrTXA::KA-264",
+  "max18-v09-NmoOZVTrTXA::KA-278",
+  "max18-v09-NmoOZVTrTXA::KA-286",
+  "max18-v09-NmoOZVTrTXA::KA-287",
+  "max18-v09-NmoOZVTrTXA::KA-293",
+  "max18-v09-NmoOZVTrTXA::KA-295",
+  "max18-v09-NmoOZVTrTXA::KA-297",
+  "max18-v09-NmoOZVTrTXA::KA-303"
+ ],
+ "fonti_integrali": {
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-111",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Finché un assistente vocale costruito manualmente in una dashboard come VAPI non viene pubblicato, resta confinato dentro quella piattaforma e non può essere consegnato o condiviso con un cliente.",
+   "ancora": "questa cosa qui per ora vive nel nostro computer, cioè vive letteralmente dentro VAPI, non l'abbiamo ancora pubblicata, non la possiamo dare a nessuno",
+   "fonte": "NmoOZVTrTXA#50:48 (popup \"Unsaved Changes\" di VAPI) + voce 50:49-51:06",
+   "frame": "frame-0509.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-113",
+     "tipo": "motiva",
+     "perche": "il principio che un assistente non pubblicato non e' condivisibile spiega perche' Fast Receptionist non e' pronto per un cliente"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-112",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Un secondo assistente di esempio dentro VAPI, \"Fast Receptionist\" (provider OpenAI, modello GPT 4o Cluster), mostra un costo dichiarato di circa $0,1 al minuto e una latenza dichiarata di circa 1050 millisecondi.",
+   "ancora": "Cost ~$0.1 /min ... Latency ~1050 ms",
+   "fonte": "NmoOZVTrTXA#51:18 (dashboard VAPI, assistente \"Fast Receptionist\") + voce 51:12-51:26",
+   "frame": "frame-0514.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-113",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Un assistente vocale generico costruito solo per provare personalmente la conversazione durante lo sviluppo non è automaticamente pronto per essere consegnato a un'azienda cliente reale.",
+   "ancora": "ma non è una cosa che poi possiamo andare a dire hey azienda top, tieni questo è il voice agent che dovrei andare a fare",
+   "fonte": "NmoOZVTrTXA#51:18 (dashboard VAPI, assistente \"Fast Receptionist\") + voce 51:12-51:26",
+   "frame": "frame-0514.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-112",
+     "tipo": "parte-di",
+     "perche": "la valutazione riguarda proprio l'assistente di esempio appena descritto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-114",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esempio completo di system prompt generico per un receptionist AI telefonico, strutturato in quattro sezioni: [Identity] (ruolo e contesto generico), [Style] (tono caldo e professionale, risposte di 1-2 frasi), [Response Guidelines] (risposte concise, niente gergo tecnico), [Task & Goals] (5 passi: saluto, gestione richieste generiche, conferma orario per appuntamenti, indirizzamento al reparto giusto, verifica finale).",
+   "ancora": "[Identity] You are a friendly and professional AI receptionist at a generic business... [Task & Goals] 1. Greet callers warmly and ask how you can assist them.",
+   "fonte": "NmoOZVTrTXA#51:48 (system prompt completo di \"Fast Receptionist\" in VAPI) + voce 51:27-51:48",
+   "frame": "frame-0519.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-091",
+     "tipo": "esempio-di",
+     "perche": "è un'istanza concreta della stessa struttura a blocchi (identità/stile/linee guida/task)"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-115",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "È possibile costruire un intero agente vocale usando solo Claude Code, senza ricorrere a una piattaforma di orchestrazione come n8n; n8n viene comunque scelto come supporto (sponda) perché rende più semplice controllare e modellare i vari system prompt degli agenti.",
+   "ancora": "tutto può essere fatto con Cloud Code senza andare ad utilizzare Na10, che io invece ora utilizzerò come sponda perché... vi permette di controllare i system prompt",
+   "fonte": "NmoOZVTrTXA#51:48 (transizione verso le piattaforme) + voce 51:27-51:48",
+   "frame": "frame-0519.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-139",
+     "tipo": "precede",
+     "perche": "deciso di usare n8n come sponda, il primo passo concreto e' creare il file n8n.md che lo documenta a Claude"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-116",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Il flusso di lavoro dichiarato per costruire un sistema di agenti vocali comincia con Claude Code, poi passa a n8n per modellare e mettere a punto i system prompt dei singoli agenti, soprattutto quando il progetto prevede più flussi/agenti collegati tra loro.",
+   "ancora": "il mio flusso è prendo, comincio con Cloud Code, uso N8n perché mi viene un po' meglio modellare la gente, capire i vari system prompt",
+   "fonte": "NmoOZVTrTXA#52:18 (System Prompt di \"Fast Receptionist\" ancora a schermo) + voce 51:52-52:07",
+   "frame": "frame-0524.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-115",
+     "tipo": "parte-di",
+     "perche": "descrive nel dettaglio l'ordine pratico del flusso Claude Code + n8n"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-117",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Dopo aver validato singolarmente ogni flusso/agente (latenza, prompt, risposte) nelle rispettive piattaforme, il passo successivo è chiedere a Claude Code di ricostruire l'intero sistema in un progetto unico e pubblicarlo su Vercel, rendendolo accessibile pubblicamente come qualsiasi altro sito.",
+   "ancora": "chiedo di ricostruire tutto con Cloud Code... e poi possiamo pubblicare in Vercel queste cose, quindi poi sono accessibili come qualsiasi altra cosa",
+   "fonte": "NmoOZVTrTXA#52:42 (dashboard Vercel con storico deployment) + voce 52:16-52:32",
+   "frame": "frame-0528.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-116",
+     "tipo": "parte-di",
+     "perche": "è l'ultimo passo del flusso Claude Code + n8n descritto in precedenza"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-192",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il presentatore detta i prompt a Claude Code tramite uno strumento di trascrizione vocale in tempo reale (\"whisper flow\"): mentre parla, il testo dettato compare progressivamente nel campo di input, con un indicatore a schermo (forma d'onda + pallino rosso di registrazione).",
+   "ancora": "utilizzerò di nuovo il mio whisper flow... Allora mi servirebbe che mi aiutassi ora a popolare il mio vapi.md (testo che compare dettato in tempo reale)",
+   "fonte": "NmoOZVTrTXA#77:18 (overlay di dettatura vocale nel campo prompt) + voce 76:35-77:02",
+   "frame": "frame-0774.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-193",
+     "tipo": "precede",
+     "perche": "dettato l'inizio del prompt per vapi.md, la prima fonte recuperata e' la definizione ufficiale di VAPI"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-193",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "VAPI si definisce come una piattaforma per sviluppatori dedicata alla costruzione di agenti vocali AI: gestisce l'infrastruttura complessa (telefonia, riconoscimento vocale, modello linguistico, sintesi vocale) così lo sviluppatore può concentrarsi sulla logica e l'esperienza dell'agente.",
+   "ancora": "Vapi is the developer platform for building voice AI agents. We handle the complex infrastructure so you can focus on creating great voice experiences.",
+   "fonte": "NmoOZVTrTXA#77:30 (docs.vapi.ai/quickstart/introduction) + voce 77:20",
+   "frame": "frame-0776.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-194",
+     "tipo": "precede",
+     "perche": "recuperata la definizione di VAPI, il prompt completo con i link alla documentazione viene fornito subito dopo"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-194",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Per costruire un documento di riferimento operativo (es. vapi.md) tramite Claude Code, si può fornire in un unico prompt: più link alla documentazione ufficiale della piattaforma (introduzione, API reference, MCP), istruzioni esplicite su come leggere e strutturare le informazioni nel file, e un \"prompt di riferimento\" già collaudato incollato per intero, da usare come base di qualità per ogni futuro prompt di agente generato a partire da quel documento.",
+   "ancora": "4. Vorrei che per creare un prompt di un agente tu non utilizzassi un prompt fai-da-te ma che utilizzassi il prompt che ti fornisco sotto... PROMPT DI RIFERIMENTO:",
+   "fonte": "NmoOZVTrTXA#78:42-80:24 (prompt completo con 3 link + 4 istruzioni + \"PROMPT DI RIFERIMENTO\") + voce 78:45-79:48",
+   "frame": "frame-0805.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-139",
+     "tipo": "applica",
+     "perche": "è un'applicazione più ricca dello stesso pattern usato per n8n.md"
+    },
+    {
+     "verso": "KA-200",
+     "tipo": "precede",
+     "perche": "tra i link di documentazione forniti, alcuni WebFetch tornano 404"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-195",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il template di riferimento per system prompt di agenti vocali, oltre ai quattro blocchi IDENTITÀ/STILE/LINEE GUIDA RISPOSTA/TASK, include ulteriori sezioni standard: CONTESTO (tutto ciò che l'agente deve sapere sull'azienda: servizi, prezzi, orari, zone operative), RILEVAMENTO URGENZA (parole chiave che attivano un protocollo di urgenza), TIPI DI CHIAMATA (comportamenti diversi per chi chiede prezzi, anziani/lenti, frustrati, sospetti/competitor), e TOOL.",
+   "ancora": "# CONTESTO: Tutto ciò che l'agente deve sapere sull'azienda... # RILEVAMENTO URGENZA... # TIPI DI CHIAMATA... # TOOL",
+   "fonte": "NmoOZVTrTXA#80:18 (documento Notion con il primo prompt del corso, sezioni # CONTESTO, # RILEVAMENTO URGENZA, # TIPI DI CHIAMATA, # TOOL) + voce 80:13",
+   "frame": "frame-0804.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-091",
+     "tipo": "parte-di",
+     "perche": "estende con altre sezioni la stessa struttura a blocchi già definita"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-196",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Le linee guida di risposta di un buon system prompt per agente vocale includono regole conversazionali precise: una sola domanda per risposta (aspettando la risposta prima di continuare), massimo quindici parole per risposta quando possibile, riconoscere sempre quanto detto dal chiamante prima della domanda successiva, non ripetere informazioni già date, e presentare al massimo due opzioni alla volta.",
+   "ancora": "Una domanda per risposta. Aspetta la risposta prima di continuare. Massimo quindici parole per risposta quando possibile... Se presenti opzioni, massimo due alla volta.",
+   "fonte": "NmoOZVTrTXA#80:18 (template Notion, sezione # LINEE GUIDA RISPOSTA) + voce 80:13",
+   "frame": "frame-0804.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-195",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio della sezione LINEE GUIDA RISPOSTA dello stesso template"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-197",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Nel template di riferimento per prompt di agenti vocali, l'orario attuale va sempre passato come variabile dinamica (es. {{now}}) invece di un valore statico, a prescindere da quale piattaforma vocale (VAPI, n8n, ecc.) la ospiti.",
+   "ancora": "## Orario attuale: {{now}} — usa SEMPRE variabile dinamica per questo, a prescindere dalla piattaforma (VAPI...)",
+   "fonte": "NmoOZVTrTXA#80:18 (sezione \"## Orario attuale\" del template Notion) + osservazione schermo",
+   "frame": "frame-0804.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-169",
+     "tipo": "parte-di",
+     "perche": "generalizza a qualunque piattaforma la stessa regola sulle variabili dinamiche"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-201",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Il piano generato da Claude Code per il documento di riferimento vapi.md lo struttura in 12 sezioni: Overview, Quick Reference API, Assistente, Voice Providers, Transcriber, Tools (4 categorie: Default/Custom/Code/MCP), Telefono, Squads, Server URL & Webhook, MCP, Prompt Template, Checklist creazione agente.",
+   "ancora": "1. OVERVIEW... 12. CHECKLIST CREAZIONE AGENTE — Passi operativi step-by-step",
+   "fonte": "NmoOZVTrTXA#82:42 (piano \"Il file vapi.md sarà strutturato in 12 sezioni\") + voce 82:15-82:34",
+   "frame": "frame-0828.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-202",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "I webhook di VAPI (Server URL) gestiscono 19 tipi di eventi diversi durante una chiamata, con un vincolo di tempo critico: l'evento \"assistant-request\" deve ricevere risposta entro 7,5 secondi.",
+   "ancora": "9. SERVER URL & WEBHOOK — 19 eventi, timing critico (7.5s per as...",
+   "fonte": "NmoOZVTrTXA#82:42 (sezione 9 del piano, \"SERVER URL & WEBHOOK — 19 eventi, timing critico (7.5s per as...)\") + osservazione schermo",
+   "frame": "frame-0828.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-201",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio della nona delle 12 sezioni pianificate"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-203",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Il documento vapi.md generato definisce sei concetti chiave della piattaforma: Assistant (un singolo agente vocale con prompt/voce/modello/tool), Squad (più assistenti specializzati che si passano la chiamata), Tool (funzione richiamabile durante la conversazione), Phone Number (numero collegato per chiamate inbound/outbound), Server URL (endpoint webhook per eventi in tempo reale), e Call (una singola sessione vocale, telefonica o web).",
+   "ancora": "Assistant — Un singolo agente vocale con prompt, voce, modello e tools ... Call — Una singola sessione vocale (telefono o web)",
+   "fonte": "NmoOZVTrTXA#83:06 (VAPI.md, sezione \"Concetti chiave\") + voce 82:57-83:21",
+   "frame": "frame-0832.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-201",
+     "tipo": "parte-di",
+     "perche": "è il contenuto generato per la prima delle 12 sezioni pianificate"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-204",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Tra le caratteristiche dichiarate di VAPI nella propria documentazione: latenza sotto i 600 millisecondi, gestione naturale del turn-taking (incluse le interruzioni), chiamate telefoniche sia inbound che outbound, un widget web per l'embedding in app, e integrazione con API/database tramite tool.",
+   "ancora": "Latenza sotto 600ms - Turn-taking naturale (gestione interruzioni) - Chiamate telefoniche inbound e outbound - Widget web per embedding in app",
+   "fonte": "NmoOZVTrTXA#83:06 (VAPI.md, sezione \"Caratteristiche\") + voce 83:11",
+   "frame": "frame-0832.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-203",
+     "tipo": "parte-di",
+     "perche": "è la seconda parte della stessa sezione Overview di vapi.md"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-206",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "VAPI distingue due tipi di API key nella sezione \"API Keys\" della dashboard: la Private API Key (accesso server-side, usata per chiamate dirette all'API come la creazione di un assistente) e la Public API Key (accesso client-side per SDK, configurabile con restrizioni su domini, assistenti consentiti e assistenti transient).",
+   "ancora": "Private API Keys — Server-side API access ... Public API Keys — Client-side SDK access ... Origins: All domains allowed",
+   "fonte": "NmoOZVTrTXA#85:18 (dashboard.vapi.ai/org/api-keys) + voce 85:14-85:21",
+   "frame": "frame-0854.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-207",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Claude Code può creare un assistente VAPI interamente via API, senza passare dalla dashboard: esegue una richiesta curl POST a https://api.vapi.ai/assistant con header \"Authorization: Bearer <private key>\" e un body JSON di configurazione, ottenendo in risposta l'id univoco del nuovo assistente creato.",
+   "ancora": "curl -s -X POST \"https://api.vapi.ai/assistant\" -H \"Authorization: Bearer 58168a0a-...\" -H \"Content-Type: application/json\" ... { \"id\": \"dfc195a5-de61-432a-a4d2-7e53f2941b2b\", ...}",
+   "fonte": "NmoOZVTrTXA#88:42 (comando Bash \"Create VAPI assistant\" con curl POST) + osservazione schermo",
+   "frame": "frame-0888.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-206",
+     "tipo": "applica",
+     "perche": "usa concretamente la Private API Key per una chiamata server-side"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-208",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Configurazione concreta scelta in autonomia da Claude Code per un agente vocale italiano di prova: modello linguistico GPT-4o (OpenAI), voce ElevenLabs \"Sarah\" (modello multilingual v2, con supporto italiano), transcriber Deepgram nova-3 con lingua impostata su \"it\" ed endpointing a 300ms.",
+   "ancora": "LLM | GPT-4o (OpenAI) — Voce | ElevenLabs - Sarah (multilingual v2, supporto italiano) — Transcriber | Deepgram nova-3, lingua it, endpointing 300ms",
+   "fonte": "NmoOZVTrTXA#88:42 (tabella \"Componente | Configurazione\" nel riepilogo di Claude Code) + voce 88:33",
+   "frame": "frame-0888.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-207",
+     "tipo": "parte-di",
+     "perche": "è il contenuto della configurazione inviata nella stessa chiamata API"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-210",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Un assistente VAPI di prova configurato con GPT-4o Cluster, voce ElevenLabs Sarah e transcriber Deepgram mostra nella dashboard un costo dichiarato di circa $0,12 al minuto e una latenza dichiarata di circa 2000 millisecondi.",
+   "ancora": "Cost — ~$0.12 /min ... Latency — ~2000 ms",
+   "fonte": "NmoOZVTrTXA#88:00 (dashboard, indicatori Cost/Latency) + osservazione schermo",
+   "frame": "frame-0881.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-207",
+     "tipo": "esempio-di",
+     "perche": "le metriche di costo e latenza mostrate sono quelle dell'assistente appena creato via API"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-211",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Testare un agente vocale con una chiamata reale subito dopo averlo creato permette di scoprire in diretta difetti percepibili non evidenti dalla sola configurazione, come una latenza di circa due secondi giudicata \"lentissima\" o un tono di voce giudicato \"un po' robotico\".",
+   "ancora": "mi piace ho un problema la latenza è tipo due secondi quindi è lentissimo... mi sembra che sia un po' robotica la voce",
+   "fonte": "NmoOZVTrTXA#88:24-89:12 (trascrizione live della chiamata di prova) + voce 88:33-89:08",
+   "frame": "frame-0885.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-210",
+     "tipo": "quantificato-da",
+     "perche": "i numeri di costo/latenza già mostrati sono la base tecnica del giudizio dato durante la chiamata"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-213",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Dopo un primo giro di ottimizzazione (cambio di modello LLM e di voce), lo stesso assistente vocale di prova passa da un costo di ~$0,12/min e una latenza di ~2000ms a un costo di ~$0,11/min e una latenza di ~665ms.",
+   "ancora": "Cost — ~$0.11 /min ... Latency — ~665 ms / il mio agente vocale prova ora una latenza di 6,65... prima era un costo di 2 centesimi, ora l'ha anche ridotto",
+   "fonte": "NmoOZVTrTXA#89:36 (dashboard VAPI, indicatori Cost/Latency aggiornati) + voce 89:44",
+   "frame": "frame-0897.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-210",
+     "tipo": "contraddice",
+     "perche": "mostra gli stessi indicatori dopo l'ottimizzazione, con valori molto più bassi"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-214",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Per ridurre latenza e \"roboticità\" di un assistente vocale VAPI già pubblicato, Claude Code applica una PATCH diretta via API (curl -X PATCH su /assistant/<id>) che cambia quattro parametri insieme: modello LLM da GPT-4o a GPT-4o-mini (risposta più rapida), modello voce ElevenLabs da eleven_multilingual_v2 a eleven_flash_v2_5 (ottimizzato per bassa latenza, supporta italiano), Stability da 0,5 a 0,3 (voce più espressiva e meno robotica), Similarity Boost da 0,75 a 0,85 (timbro più ricco e definito).",
+   "ancora": "LLM: GPT-4o → GPT-4o-mini — Risposta molto più rapida... Modello voce: eleven_multilingual_v2 → eleven_flash_v2_5 — Modello ottimizzato per bassa latenza... Stability: 0.5 → 0.3 — Più bassa = voce espressiva e meno robotica",
+   "fonte": "NmoOZVTrTXA#91:18 (blocco \"Bash — Update VAPI assistant with faster model and more natural voice\", tabella Cosa/Prima/Dopo/Perché) + voce 91:09",
+   "frame": "frame-0914.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-213",
+     "tipo": "motiva",
+     "perche": "è la modifica concreta che produce i nuovi valori di costo/latenza osservati"
+    },
+    {
+     "verso": "KA-211",
+     "tipo": "applica",
+     "perche": "risponde direttamente ai due difetti (latenza, voce robotica) notati durante il test dal vivo"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-215",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Tra i voice provider alternativi suggeriti da Claude Code per ridurre ulteriormente la latenza di un agente vocale, Cartesia viene indicato con una latenza dichiarata ultra-bassa di circa 100 millisecondi.",
+   "ancora": "Provare Cartesia come voice provider (latenza ultra-bassa, ~100ms)",
+   "fonte": "NmoOZVTrTXA#91:18 (suggerimento successivo alla PATCH: \"Provare Cartesia come voice provider (latenza ultra-bassa, ~100ms)\") + osservazione schermo",
+   "frame": "frame-0914.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-214",
+     "tipo": "alternativa-a",
+     "perche": "è un'ulteriore opzione di riduzione latenza oltre alla PATCH già applicata"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-216",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Il file VOICE_AGENT.md viene scritto come guida operativa master per costruire un intero agente vocale end-to-end, organizzata in un \"WORKFLOW a 7 Step\": (1) Analizza la richiesta e carica la documentazione, (2) Crea il prompt dell'agente, (3) Configura l'agente, (4) Se serve un workflow apri N8N.md e usa MCP n8n, (5) Recupera il webhook URL dal nodo trigger, (6) Crea un tool nell'agente vocale che punta a quel webhook, (7) Collega il tool all'agente.",
+   "ancora": "## WORKFLOW — 7 Step ### Step 1 — Analizza la richiesta e carica la documentazione ... 7. Collega il tool all'agente.",
+   "fonte": "NmoOZVTrTXA#93:18 (VOICE_AGENT.md generato, \"## WORKFLOW — 7 Step\") + voce 91:43-92:34, 93:10",
+   "frame": "frame-0934.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-140",
+     "tipo": "parte-di",
+     "perche": "è il contenuto operativo del quarto dei quattro file di progetto già definiti"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-225",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Il nome di un tool dichiarato nel prompt di un agente vocale VAPI deve corrispondere esattamente (stessa stringa) al campo `function.name` nella configurazione del tool: una minima discrepanza tra i due produce un fallimento silenzioso, senza errori visibili.",
+   "ancora": "Tool name matching is critical — The tool name in the VAPI prompt must be IDENTICAL to function.name in the tool config. Mismatch = silent failure.",
+   "fonte": "NmoOZVTrTXA#95:36 (CLAUDE.md, sezione \"## WHY\") + osservazione schermo (non menzionato a voce)",
+   "frame": "frame-0957.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-222",
+     "tipo": "parte-di",
+     "perche": "è la quarta insidia tecnica elencata nella sezione WHY"
+    },
+    {
+     "verso": "KA-217",
+     "tipo": "applica",
+     "perche": "è la condizione di correttezza necessaria perché il collegamento tool-webhook funzioni davvero"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-231",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Per validare un agente vocale prima del rilascio, si usa la funzione di chat testuale interna all'API di VAPI: il sistema di sviluppo puo' 'parlare' direttamente con l'agente per testarne il comportamento in autonomia, senza bisogno di chiamate vocali reali.",
+   "ancora": "vorrei che tu utilizzassi la funzione chat che c'e' interna a VAPI",
+   "fonte": "NmoOZVTrTXA#99:54 (dettatura del prompt) + voce 01:39:49",
+   "frame": "frame-1000.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-287",
+     "tipo": "precede",
+     "perche": "il requisito dichiarato qui viene poi applicato concretamente durante i test in chat"
+    },
+    {
+     "verso": "KA-232",
+     "tipo": "precede",
+     "perche": "la dettatura prosegue dalla chat di validazione all'obbligo di tutto in italiano"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-232",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "In un agente vocale destinato a un pubblico italiano, transcriber, voice model e LLM vanno impostati tutti in lingua italiana, per rendere l'intera pipeline il piu' efficiente possibile.",
+   "ancora": "far si' che anche i vari prompt sia in italiano e per far si' che tutto sia il piu' efficiente",
+   "fonte": "NmoOZVTrTXA#100:24 (dettatura del prompt) + voce 01:40:23",
+   "frame": "frame-1005.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-233",
+     "tipo": "precede",
+     "perche": "la dettatura prosegue dall'italiano all'ordine di lavoro VAPI-poi-n8n"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-233",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "L'ordine di lavoro corretto per costruire un agente vocale con questo stack e' creare prima l'agente in VAPI e solo successivamente costruire l'automazione che lo supporta in n8n.",
+   "ancora": "procedere con creare la gente in VAPI e con successivamente creare il tutto in N8N",
+   "fonte": "NmoOZVTrTXA#100:54 (dettatura del prompt) + voce 01:40:55",
+   "frame": "frame-1010.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-229",
+     "tipo": "precede",
+     "perche": "la dettatura prosegue dall'ordine di lavoro alla struttura in 4 workflow separati"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-234",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Le informazioni aziendali di un cliente (servizi, orari, prezzi, regole) vengono raccolte in un unico documento PDF, caricato nel progetto con un nome descrittivo (es. 'conoscenza.pdf'), che serve da knowledge base per l'agente vocale.",
+   "ancora": "Ora io aggiungero' il file come CONOSCENZA.pdf, che e' il database con informazioni aziendali",
+   "fonte": "NmoOZVTrTXA#101:30 (rinomina file + apertura PDF in Claude Code) + voce 01:41:30",
+   "frame": "frame-1016.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-235",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Una knowledge base aziendale ben fatta si apre con una sezione introduttiva di identita' dell'attivita' (es. 'IDENTITA' DELLA CLINICA'), con i dati anagrafici essenziali organizzati in tabella.",
+   "ancora": "1. IDENTITA' DELLA CLINICA con una tabella che elenca campi come Nome, Titolare, Via",
+   "fonte": "NmoOZVTrTXA#101:24 (PDF conoscenza.pdf aperto, pagina 1-2) + voce 01:41:19",
+   "frame": "frame-1015.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-234",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-236",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "La sezione servizi di una knowledge base va organizzata per categoria operativa (es. per una clinica dentale: prevenzione e igiene, conservativa ed endodonzia, protesi, implantologia, ortodonzia, chirurgia orale, urgenze), ciascuna con un elenco puntato dei trattamenti offerti.",
+   "ancora": "sezione Prevenzione e igiene ... Conservativa ed endodonzia ... Protesi ... Implantologia ... Ortodonzia",
+   "fonte": "NmoOZVTrTXA#101:48 (PDF conoscenza.pdf, pagina 3) + voce 01:41:44",
+   "frame": "frame-1019.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-234",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-237",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Una knowledge base caricata per un agente vocale deve essere collegata come tool interrogabile durante la conversazione ('pescato' a runtime), non semplicemente allegata come riferimento statico.",
+   "ancora": "fa si' appunto che questa conoscenza venga appunto pescata",
+   "fonte": "NmoOZVTrTXA#102:18 (Claude Code, PDF ancora aperto) + voce 01:42:18",
+   "frame": "frame-1024.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-261",
+     "tipo": "precede",
+     "perche": "il principio viene poi implementato come tool nativo search_knowledge_base"
+    },
+    {
+     "verso": "KA-238",
+     "tipo": "precede",
+     "perche": "stabilito che la KB va resa interrogabile come tool, la dettatura prosegue con l'accesso a una risorsa CRM vuota"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-250",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "I 4 flussi conversazionali di un AI receptionist hanno lunghezze diverse in base alla complessita': prenotazione 11 step, cancellazione 3 step, spostamento (rescheduling) 5 step, FAQ 4 step.",
+   "ancora": "TASK: 4 flussi (prenotazione 11 step, cancellazione 3 step, spostamento 5 step, FAQ 4 step)",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, sezione TASK) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-252",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "La sezione di rilevamento urgenza del prompt vocale si basa su un elenco di parole chiave (nell'esempio 8) collegate a un protocollo di gestione strutturato in step (nell'esempio 5).",
+   "ancora": "RILEVAMENTO URGENZA: 8 keyword + protocollo 5 step",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, sezione RILEVAMENTO URGENZA) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-295",
+     "tipo": "alternativa-a",
+     "perche": "un protocollo urgenze molto simile, con keyword e azioni proprie, esiste anche nel documento di knowledge base separato dal prompt"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-253",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il prompt di un buon AI receptionist prevede la gestione esplicita di piu' profili tipici di chiamante (nell'esempio 8: chi chiede solo il prezzo, l'ansioso, l'anziano, chi ha dolore, chi chiede un consiglio medico, l'arrabbiato, il sospettoso, i genitori con bambini).",
+   "ancora": "TIPI DI CHIAMANTE: 8 profili (prezzo, ansioso, anziano, dolore, consiglio medico, arrabbiato, sospetto, bambini)",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, sezione TIPI DI CHIAMANTE) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-254",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Un AI receptionist completo si appoggia su 5 tool con condizioni d'uso precise e non sovrapponibili: check_availability, book_appointment, cancel_appointment, reschedule_appointment, search_knowledge_base.",
+   "ancora": "TOOL: 5 tool con condizioni d'uso precise (check_availability, book_appointment, cancel_appointment, reschedule_appointment, search_knowledge_base)",
+   "fonte": "NmoOZVTrTXA#104:48 / 109:00 (piano e prompt reale, sezione TOOL) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-255",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Il prompt di un agente vocale deve avere una sezione guardrail dedicata (nell'esempio 8 regole) che vieta esplicitamente comportamenti rischiosi come inventare prezzi o prenotare senza conferma.",
+   "ancora": "GUARDRAIL: 8 regole (mai inventare prezzi, mai prenotare senza conferma, ecc.)",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, sezione GUARDRAIL) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-256",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "La gestione errori di un agente vocale deve coprire piu' scenari tipici in modo esplicito (nell'esempio 6: non aver capito, silenzio del chiamante, errore del tool, slot pieno, paziente non trovato).",
+   "ancora": "GESTIONE ERRORI: 6 scenari (non capito, silenzio, tool error, slot pieno, paziente non trovato)",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, sezione GESTIONE ERRORI) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-247",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-257",
+     "tipo": "precede",
+     "perche": "concluse le sezioni del prompt nel piano, il piano prosegue con la scelta del modello linguistico"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-257",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Una configurazione tipica per il modello linguistico di un agente vocale in produzione e' OpenAI gpt-4o con temperature 0.4, mostrato nella dashboard come 'GPT 4o Cluster'.",
+   "ancora": "model: OpenAI gpt-4o, temperature 0.4",
+   "fonte": "NmoOZVTrTXA#104:48 / 109:00 (piano e dashboard VAPI, sezione MODEL) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-258",
+     "tipo": "precede",
+     "perche": "dal modello linguistico, il piano prosegue con la scelta della voce italiana"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-258",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Una configurazione tipica per la voce di un agente vocale italiano e' ElevenLabs (11labs), voce femminile italiana, con parametri stability 0.5 e similarityBoost 0.75.",
+   "ancora": "voice: ElevenLabs (11labs), voce femminile italiana, stability 0.5, similarityBoost 0.75",
+   "fonte": "NmoOZVTrTXA#104:48 (piano, sezione voice) + voce 01:44:49",
+   "frame": "frame-1049.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-284",
+     "tipo": "quantificato-da",
+     "perche": "la scelta di modello e voce si riflette nel costo/minuto e nella latenza mostrati in dashboard"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-260",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Ogni tool di un agente vocale dovrebbe avere messaggi dedicati per l'inizio dell'esecuzione e per il fallimento (request-start / request-failed), scritti come frasi naturali in italiano da pronunciare mentre il tool lavora.",
+   "ancora": "Ogni tool ha messages per request-start e request-failed (frasi naturali in italiano)",
+   "fonte": "NmoOZVTrTXA#105:18 (piano, nota sotto la tabella tool) + voce 01:45:15",
+   "frame": "frame-1054.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-261",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "search_knowledge_base e' un tool nativo di VAPI (interrogazione diretta della knowledge base caricata), diverso concettualmente dagli altri tool che sono invece webhook custom verso workflow n8n esterni.",
+   "ancora": "search_knowledge_base — VAPI KB tool — (VAPI nativo) — query",
+   "fonte": "NmoOZVTrTXA#105:18 / 109:06 (piano; dashboard Tools) + voce 01:45:15",
+   "frame": "frame-1054.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-254",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-237",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-262",
+     "tipo": "precede",
+     "perche": "descritto il tool nativo di ricerca KB, la revisione del piano nota l'assenza di un modo per chiudere la chiamata"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-262",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Nella pianificazione di un AI receptionist telefonico va verificato che esista un modo per terminare esplicitamente la chiamata (tool end_call): la sua assenza in un piano generato automaticamente e' una lacuna reale da controllare sempre.",
+   "ancora": "pero' ecco, una cosa che non vedo e' la capacita' da parte della gente di chiudere la chiamata",
+   "fonte": "NmoOZVTrTXA#105:18-105:48 (review del piano) + voce 01:45:15",
+   "frame": "frame-1054.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-263",
+     "tipo": "precede",
+     "perche": "notata la lacuna sull'end_call, il piano passa all'ordine di esecuzione"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-263",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "L'ordine di esecuzione consigliato per costruire un AI receptionist e': configurare l'OAuth Google necessario, creare i tool custom in VAPI collegati ai webhook n8n, creare il tool knowledge base, creare l'assistant con prompt e tool collegati, poi eseguire un test autonomo via chat API e iterare sugli errori trovati.",
+   "ancora": "7. Creare 4 tool custom VAPI ... 8. Creare KB tool VAPI ... 9. Creare assistant VAPI ... 10. Test autonomo ... 11. Iterare",
+   "fonte": "NmoOZVTrTXA#105:48 (piano, Fase 6 Ordine Esecuzione) + voce 01:45:22",
+   "frame": "frame-1059.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-244",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-264",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Prima ancora di costruire i tool, conviene pianificare in anticipo una batteria di scenari di test concreti (nell'esempio 8: nuova prenotazione, domanda sui prezzi, urgenza, cancellazione, spostamento, giorno chiuso, orario non disponibile, domanda su convenzioni) per validare ogni funzionalita' una volta pronta.",
+   "ancora": "T1 Nuova prenotazione prima visita ... T8 'Accettate mutue?' — search_knowledge_base",
+   "fonte": "NmoOZVTrTXA#105:48 (piano, Fase 7 Testing) + voce 01:45:22",
+   "frame": "frame-1059.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-263",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-265",
+     "tipo": "precede",
+     "perche": "definita la batteria di test, si passa alle modalita' di autonomia di Claude Code"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-275",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Un flusso di spostamento appuntamento ben progettato segue 5 step: chiedere nome e data dell'appuntamento attuale, chiedere nuova data e fascia oraria preferita, verificare la disponibilita', proporre al massimo due slot alternativi, e solo dopo conferma esplicita eseguire lo spostamento.",
+   "ancora": "Step 1 – Chiedi nome e data dell'appuntamento attuale ... Step 5 – Dopo conferma esplicita, usa reschedule_appointment",
+   "fonte": "NmoOZVTrTXA#108:04 (prompt-sara.md, Flusso spostamento) + voce 01:48:04",
+   "frame": "frame-1083.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-250",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-276",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Un flusso FAQ ben progettato segue 4 step: ascoltare la domanda del chiamante, cercare la risposta nella knowledge base con il tool dedicato, rispondere in modo chiaro e breve, poi chiedere se serve altro o se si vuole prenotare.",
+   "ancora": "Step 2 – Usa search_knowledge_base per cercare la risposta nella documentazione della clinica",
+   "fonte": "NmoOZVTrTXA#108:04 (prompt-sara.md, Flusso domande) + voce 01:48:04",
+   "frame": "frame-1083.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-250",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-277",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "A fine costruzione, un buon riepilogo elenca ogni componente creato (prompt, assistant, knowledge base, ciascun workflow, CRM, tool) con uno stato chiaro ('Fatto' / 'Testato OK') e una lista numerata di istruzioni per eseguire un test end-to-end manuale.",
+   "ancora": "Per testare end-to-end: 1. Vai sulla VAPI Dashboard ... 5. Controlla il Google Sheet per vedere se la prenotazione appare",
+   "fonte": "NmoOZVTrTXA#108:18 (Riepilogo: AI Receptionist Sara - Completato) + voce 01:48:19",
+   "frame": "frame-1084.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-263",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-278",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Tra i guardrail di un agente vocale professionale vanno inclusi: non citare mai cliniche o attivita' concorrenti, non dare consigli medici o diagnosi di alcun tipo, e avere una frase pronta per chiudere educatamente una chiamata con un interlocutore abusivo o offensivo.",
+   "ancora": "Non citare altre cliniche o concorrenti ... Non continuare la chiamata se il paziente e' abusivo o offensivo",
+   "fonte": "NmoOZVTrTXA#109:00 (system prompt reale, sezione GUARDRAIL) + voce 01:48:38",
+   "frame": "frame-1091.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-255",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-280",
+   "peso": "contesto",
+   "tipo": "definizione",
+   "contenuto": "In VAPI, i 'Tools' sono oggetti di configurazione separati dal testo del system prompt: vengono definiti a parte (nome, descrizione, parametri, opzioni) e poi collegati all'assistant per riferimento, non scritti dentro al prompt stesso.",
+   "ancora": "Tools 9 ... Tool Settings — Configure the basic settings for this tool",
+   "fonte": "NmoOZVTrTXA#109:06 (pagina Tools di VAPI) + voce 01:49:09",
+   "frame": "frame-1092.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-254",
+     "tipo": "definisce"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-281",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Ogni tool in VAPI ha due opzioni indipendenti configurabili: 'Async' (esecuzione asincrona, senza attendere la risposta prima di continuare) e 'Strict' (validazione rigida dei parametri, richiede che tutte le proprieta' siano dichiarate obbligatorie e lo schema bloccato).",
+   "ancora": "Async — Tool executes asynchronously ... Strict — Enforces strict parameter validation",
+   "fonte": "NmoOZVTrTXA#109:06 (pagina Tools, sezione Options) + voce 01:49:09",
+   "frame": "frame-1092.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-280",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-284",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "La dashboard di un assistant VAPI mostra in tempo reale una stima di costo per minuto di conversazione (nell'esempio circa $0,17/min) e una stima di latenza media (nell'esempio circa 2000 ms), calcolate in base alla combinazione di modello, voce e transcriber scelti.",
+   "ancora": "Cost — ~$0.17 /min ... Latency — ~2000 ms",
+   "fonte": "NmoOZVTrTXA#111:06 (schede Cost/Latency della dashboard) + voce 01:51:03",
+   "frame": "frame-1112.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-285",
+     "tipo": "precede",
+     "perche": "mostrate le metriche costo-latenza dell'assistente Sara, si prepara il test sugli orari"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-285",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "Prima di lanciare un test su un agente vocale, conviene tenere a portata di mano il documento sorgente (es. orari o listino prezzi) per poter verificare a colpo d'occhio se la risposta data e' effettivamente corretta.",
+   "ancora": "vogliamo testare innanzitutto che non possiamo prenotare dopo le otto",
+   "fonte": "NmoOZVTrTXA#111:42 (tabella orari consultata prima del test) + voce 01:51:38",
+   "frame": "frame-1118.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-286",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-291",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-286",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Un test tipico di validazione orari consiste nel chiedere una prenotazione in un orario fuori apertura (es. le 20:00): l'agente corretto deve rifiutarla, incrociando la richiesta con la tabella degli orari della clinica, e chiedere un'alternativa.",
+   "ancora": "Domani sera alle venti non siamo aperti. Ha un'altra preferenza di giorno o fascia oraria?",
+   "fonte": "NmoOZVTrTXA#112:54 (risposta completa in chat) + voce 112:54",
+   "frame": "frame-1130.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-285",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-287",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Testare un assistant tramite la chat testuale integrata di VAPI ('Chat with Assistant') e' piu' veloce che testare con una chiamata vocale reale, ed e' quindi preferibile per iterare rapidamente durante lo sviluppo.",
+   "ancora": "Faccio cosi' solo perche' e' molto piu' veloce",
+   "fonte": "NmoOZVTrTXA#111:54 (pannello Chat with Assistant) + voce 01:51:49",
+   "frame": "frame-1120.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-288",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-288",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "In un flusso di prenotazione ben progettato, l'agente raccoglie i dati in sequenza logica: prima il nome completo, poi il tipo di visita, poi l'indirizzo email, infine data e fascia oraria preferite.",
+   "ancora": "Perfetto, Giovanni. Che tipo di visita desidera prenotare? ... Mi lascia il suo indirizzo email per favore?",
+   "fonte": "NmoOZVTrTXA#112:24 (scambio chat nome→tipo visita→email) + voce 01:51:57",
+   "frame": "frame-1125.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-287",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-290",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Una sezione tipica di modalita' di pagamento in una knowledge base clinica elenca: contanti (fino al limite legale), bancomat e carte, bonifico bancario, finanziamento rateale tramite finanziarie esterne (fino a un tetto di rate), e uno sconto per pagamento in unica soluzione al momento del preventivo.",
+   "ancora": "Contanti (fino al limite legale) ... Finanziamento rateale tramite Cofidis e Findomestic (fino a 48 rate) ... Sconto del 5%",
+   "fonte": "NmoOZVTrTXA#113:42 (documento, Modalita' di pagamento) + voce 113:40",
+   "frame": "frame-1138.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-234",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-292",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Una tabella del team medico in una knowledge base clinica associa a ogni professionista nome, specializzazione e i giorni di presenza in studio.",
+   "ancora": "Dott. Giovanni Beggiato — Odontoiatria generale, implantologia — Lun/Mar/Gio/Ven",
+   "fonte": "NmoOZVTrTXA#113:54 (sezione TEAM MEDICO) + voce 113:50",
+   "frame": "frame-1140.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-234",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-293",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Una sezione 'Gestione prenotazioni' in una knowledge base clinica descrive un flusso standard a 7 step: raccogliere nome e cognome, capire il tipo di visita, verificare disponibilita' con il tool dedicato, proporre al massimo due fasce orarie, riepilogare e chiedere conferma esplicita, confermare solo dopo il si', informare sui documenti da portare.",
+   "ancora": "Step 6 — Confermare la prenotazione con book_appointment solo dopo la conferma",
+   "fonte": "NmoOZVTrTXA#114:48 (sezione Gestione prenotazioni, Flusso standard) + voce 114:47",
+   "frame": "frame-1149.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-234",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-294",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "Le regole di prenotazione operative di una clinica tipicamente fissano: prima visita sempre gratuita (30 minuti), visita urgente in uno slot dedicato entro 24 ore, disdetta con almeno 24 ore di preavviso, segnalazione dei no-show ripetuti alla segreteria, e la presenza di un genitore/tutore obbligatoria per i pazienti pediatrici.",
+   "ancora": "No-show ripetuto (piu' di due volte): segnalare alla segreteria",
+   "fonte": "NmoOZVTrTXA#114:54 (elenco Regole di prenotazione) + voce 114:47",
+   "frame": "frame-1150.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-234",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-295",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Un protocollo urgenze ben scritto in una knowledge base definisce sia le parole chiave che lo attivano (es. dolore acuto, ascesso, trauma, sangue che non si ferma, febbre alta con dolore) sia la sequenza di azioni da eseguire: rassicurare con tono calmo, saltare il small talk, cercare il primo slot disponibile, trasferire alla segreteria se non ce ne sono.",
+   "ancora": "Parole chiave che attivano il protocollo urgente ... 4 — Se non ci sono slot: trasferire subito alla segreteria o al medico di turno",
+   "fonte": "NmoOZVTrTXA#114:54 (sezione PROTOCOLLO URGENZE) + voce 114:47",
+   "frame": "frame-1150.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-234",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-297",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-296",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "Anche dentro un protocollo urgenze, va prevista un'eccezione esplicita: in caso di gonfiore al collo o difficolta' respiratoria, la procedura corretta non e' fissare una visita ma indirizzare subito il chiamante al Pronto Soccorso.",
+   "ancora": "gonfiore al collo o difficolta' respiratoria: indicare il Pronto Soccorso",
+   "fonte": "NmoOZVTrTXA#115:12 (frammento di pagina intravisto) + voce 115:10",
+   "frame": "frame-1153.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-295",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-297",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Quando il tool di verifica disponibilita' non restituisce alcun risultato utile, un agente vocale ben progettato applica comunque il passo finale del protocollo urgenza (trasferire alla segreteria) invece di bloccarsi o inventare uno slot inesistente.",
+   "ancora": "Non ci sono slot disponibili domani. Le passo subito la segreteria per trovare una soluzione immediata",
+   "fonte": "NmoOZVTrTXA#115:48 (risposta finale dopo Tool Response senza risultato) + voce 115:36",
+   "frame": "frame-1159.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-295",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-256",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-300",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Una sezione FAQ in una knowledge base clinica raccoglie domande e risposte pronte all'uso (es. gratuita' della prima visita, mutue non accettate ma assicurazioni private si', igiene senza visita solo per pazienti gia' in cura, durata media di un impianto), pensate per essere recuperate parola per parola dal tool di ricerca.",
+   "ancora": "D: Accettate convenzioni o mutue? — R: Al momento la clinica non aderisce al Servizio Sanitario Nazionale",
+   "fonte": "NmoOZVTrTXA#116:30 (sezione DOMANDE FREQUENTI) + voce 01:56:18",
+   "frame": "frame-1166.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-234",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-303",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Per fare debugging lato VAPI, si interroga direttamente l'API con l'endpoint delle chiamate recenti (es. GET /call con limite risultati e token Bearer di autenticazione) per ottenere i log delle ultime chiamate reali.",
+   "ancora": "curl -s \"https://api.vapi.ai/call?limit=5\" -H \"Authorization: Bearer [...]\"",
+   "fonte": "NmoOZVTrTXA#120:06 (comando curl Get recent call logs) + voce 02:00:05",
+   "frame": "frame-1202.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-302",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

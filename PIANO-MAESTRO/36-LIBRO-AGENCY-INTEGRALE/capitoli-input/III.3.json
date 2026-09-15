@@ -1,0 +1,410 @@
+{
+ "capitolo": "III.3",
+ "parte": "III.3",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "La proposta e il preventivo",
+ "libro": "III",
+ "libro_titolo": "Vendere e prezzare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "EBU57iVAutA::KA-01",
+  "EBU57iVAutA::KA-02",
+  "EBU57iVAutA::KA-04",
+  "EBU57iVAutA::KA-05",
+  "EBU57iVAutA::KA-06",
+  "EBU57iVAutA::KA-07",
+  "EBU57iVAutA::KA-08",
+  "EBU57iVAutA::KA-09",
+  "EBU57iVAutA::KA-11",
+  "EBU57iVAutA::KA-12",
+  "EBU57iVAutA::KA-13",
+  "max17-v10-barron-sales::KA-014",
+  "max17-v10-barron-sales::KA-019",
+  "max17-v10-barron-sales::KA-024",
+  "max17-v10-barron-sales::KA-032",
+  "max17-v10-barron-sales::KA-040",
+  "max17-v10-barron-sales::KA-043",
+  "max17-v16::KA-008",
+  "max18-v02-karpathy-agenti::KA-025",
+  "max18-v02-karpathy-agenti::KA-035"
+ ],
+ "fonti_integrali": {
+  "EBU57iVAutA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/EBU57iVAutA\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\EBU57iVAutA\\contenuto-integrale.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max17-v16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\video-analysis.md"
+  ],
+  "max18-v02-karpathy-agenti": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "EBU57iVAutA::KA-01",
+   "peso": "portante",
+   "tipo": "Vendita / Hook - problema comune",
+   "contenuto": "'Il cliente ti dice mandami il preventivo e poi non si sente piu' - il preventivo, se usato correttamente, diventa uno strumento di vendita potente. Distingue i freelancer che fatturano 5000+/mese come chi padroneggia questo strumento.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:00:00",
+   "frame": "frame-001",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-01",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:00:00"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-02",
+   "peso": "supporto",
+   "tipo": "Vendita / Tassonomia preventivi",
+   "contenuto": "Due tipi di preventivo: quello noioso/antipatico/deprimente e quello che aiuta a vendere di piu'.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:00:20",
+   "frame": "frame-001",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-02",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:00:20"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-03",
+   "peso": "contesto",
+   "tipo": "Posizionamento / Metodo vs fortuna",
+   "contenuto": "Chi chiude clienti paganti non ha solo fortuna/conoscenze - chi segue regole specifiche per il preventivo chiude clienti piu' facilmente, per esperienza diretta su 4 anni di lavoro online.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:00:44",
+   "frame": "frame-001",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-03",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:00:44"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-04",
+   "peso": "portante",
+   "tipo": "Vendita / Anti-pattern documento organizzativo",
+   "contenuto": "Il preventivo vecchia scuola (prezzi/totale/servizi, formale) e' utilizzabile per l'organizzazione interna ma NON funziona come strumento di vendita perche' mostra solo la parte piu' difficile (dare soldi) senza costruire nulla prima. Differenza tra strumenti organizzativi e strumenti persuasivi.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:01:11",
+   "frame": "",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-04",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:01:11"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-05",
+   "peso": "portante",
+   "tipo": "Vendita / Struttura - Pagina 1",
+   "contenuto": "Pagina 1: brandizzata, info base su di te/azienda. Prima impressione irreversibile. Test: se il cliente lo rimostra a un socio, deve dire 'wow che bella presentazione', non 'oh Cristo, numeri'.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:01:51",
+   "frame": "frame-058",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-05",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:01:51"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-06",
+   "peso": "portante",
+   "tipo": "Vendita / Struttura - Pagina 2",
+   "contenuto": "Pagina 2: panoramica generale focalizzata sugli obiettivi del CLIENTE non sui tuoi servizi. Minimo: frase su cosa fa il cliente + frase sull'obiettivo + frase su cosa farai tu.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:02:14",
+   "frame": "frame-058",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-06",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:02:14"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-07",
+   "peso": "portante",
+   "tipo": "Vendita / Struttura - Pagina 3, risultati vs servizi",
+   "contenuto": "Pagina 3: obiettivi + stime precise dei risultati reali, sempre prima dei servizi. 'L'obiettivo del cliente sono i risultati, non i tuoi servizi' - es: non '10 video' ma 'X views per generare X nuovi clienti'.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:02:41",
+   "frame": "frame-075",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-07",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:02:41"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-08",
+   "peso": "supporto",
+   "tipo": "Vendita / Struttura - Pagina 4",
+   "contenuto": "Pagina 4: compiti/deliverable, cosa farai e come. Concentrarsi su COSA fai (competenza), non ancora sui prezzi.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:02:59",
+   "frame": "frame-095",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-08",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:02:59"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-09",
+   "peso": "supporto",
+   "tipo": "Vendita / Struttura - Pagina 5",
+   "contenuto": "Pagina 5: prezzi veri, tabella chiara e semplice, IVA esplicitata (22%).",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:03:10",
+   "frame": "frame-095",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-09",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:03:10"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-10",
+   "peso": "contesto",
+   "tipo": "Fiscale / IVA - nota informativa",
+   "contenuto": "IVA (Italia, tipicamente 22%) va applicata in base al servizio e al regime di partita IVA - raccomandazione consulenza gratuita Fiscozen (sponsor). Segmento prevalentemente promozionale.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:03:31",
+   "frame": "frame-130",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-10",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:03:31"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-11",
+   "peso": "supporto",
+   "tipo": "Vendita / Regola 1 - estetica",
+   "contenuto": "'Fallo bello': serve visivamente attraente con logo in cima, non deve sembrare una fattura noiosa. Template Canva sufficienti, non serve essere designer.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:05:22",
+   "frame": "frame-190",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-11",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:05:22"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-12",
+   "peso": "portante",
+   "tipo": "Vendita / Regola 2 - mostrare in call",
+   "contenuto": "'Mostralo in call': presentare live, non solo inviare - permette di controllare fraintendimenti/obiezioni sul momento. 'O fai tutto in call o nada'. Scaletta: condividi schermo 5-10min, spiega preventivo+strategia, poi prezzo, poi dubbi.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:05:38",
+   "frame": "frame-190",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-12",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:05:38"
+    }
+   ]
+  },
+  {
+   "uid": "EBU57iVAutA::KA-13",
+   "peso": "supporto",
+   "tipo": "Vendita / Regola 3 - diretti",
+   "contenuto": "'Non avere paura di essere diretto': troppa diplomazia genera fraintendimenti. Se il cliente non si fida, chiediglielo esplicitamente; se vuole garanzie non realistiche, spiega direttamente che non e' possibile.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:06:08",
+   "frame": "frame-190",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-13",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:06:08"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-014",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Struttura del Business Case: 1) situazione del prospect nelle sue stesse parole (idealmente trascritte dalla call, sfrutta il bias di coerenza cognitiva), 2) upside finanziario/ROI, 3) solo alla fine la soluzione presentata come 'Fast, Easy, Cost effective'.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#22:09",
+   "frame": "frame-687.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-019",
+   "peso": "portante",
+   "tipo": "fase",
+   "contenuto": "FASE 5 — Business Case: documento post-call che rimuove l'ostacolo logico (non emotivo) alla decisione, specialmente quando il prospect deve giustificare la scelta a un socio/capo/coniuge che vuole solo i numeri, non le emozioni della call.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#19:57",
+   "frame": "frame-611.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-024",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Aggiungere lo step del business case può alzare il tasso di conversione del 10-20% in quella fase del processo di vendita.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#22:41",
+   "frame": "frame-678.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-032",
+   "peso": "portante",
+   "tipo": "errore",
+   "contenuto": "Saltare il business case: anche quando il prospect vuole comprare e ha budget, senza il business case manca lo strumento per giustificare la decisione a un socio/capo/coniuge, e la trattativa muore per un ostacolo logico non emotivo.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#20:14",
+   "frame": "frame-616.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-040",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Bias di coerenza cognitiva: citare le parole esatte del prospect nel business case (idealmente trascritte dalla call registrata) rende il documento più persuasivo perché le persone vogliono restare coerenti con ciò che hanno detto.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#22:09",
+   "frame": "frame-664.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-043",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Il venditore non può fare da solo la stessa parte emotiva (vendere il dolore, posizionare il futuro migliore) che ha fatto in call quando il prospect deve convincere altri decisori — da qui la necessità del business case con i 'numeri freddi e duri'.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#20:47",
+   "frame": "frame-637.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-054",
+   "peso": "contesto",
+   "tipo": "errore",
+   "contenuto": "Discrepanza dichiarativa: a inizio video si promettono 'the six components of the sales system' ma la grafica finale ne mostra solo 5 (ICP, Meetings, Indoctrinate, Discovery Call, Business Case); il 'sei' ricompare più avanti riferito solo ai 6 passaggi interni della Discovery Call, senza che il video chiarisca esplicitamente il collegamento.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#00:16",
+   "frame": "frame-009.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-008",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Case study Instagram DM -> Inner Circle, tutto in un mese: follower risponde a una storia chiedendo come entrare, il relatore risponde 'Inner Circle', lei si autocandida. Passaggi: chat breve su Pain and Desire -> invio di un 'offer doc' (Google Doc con l'offerta, preparato prima di parlare con qualcuno) -> acquisto a 15.000 euro del percorso -> 21 giorni dopo guadagna 30.000 euro applicando una strategia del percorso in un webinar live -> fa coaching one-to-one incluso nel pacchetto -> entra nell'Inner Circle a 46.000 euro/anno. Tutto partito da Instagram.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#19:56-23:12",
+   "frame": "n/a (solo audio, screenshot DM descritto verbalmente riga per riga nella trascrizione)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-025",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Le opzioni di prezzo nel template PandaDoc vanno configurate come righe opzionali NON preselezionate, e nel documento finale nessuna delle due deve essere pre-evidenziata: e' uno dei cinque controlli che l'agente col cervello dichiara di aver superato. Il testo stampato sul PDF lo rende esplicito al cliente: 'nessuna delle due e' quella giusta, dipende da come vuoi distribuire l'investimento'.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#8:03 + #19:06 (PDF letto a schermo)",
+   "frame": "frame-162.png, frame-383.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-035",
+   "peso": "supporto",
+   "tipo": "beneficio",
+   "contenuto": "IL BENEFICIO VENDUTO AL CLIENTE, dalla slide: '3 GIORNI -> 1 ORA', con la frase esatta da usare in offerta: 'la proposta pronta appena arriva il lead, la rivedi e premi invia'. Non si vende l'automazione, si vende la compressione del tempo tra call e proposta firmabile.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#19:24",
+   "frame": "frame-389.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

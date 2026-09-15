@@ -1,0 +1,66 @@
+{
+ "capitolo": "IV.7",
+ "parte": "IV.7",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "I numeri dell'agenzia: margine, capacita', carico",
+ "libro": "IV",
+ "libro_titolo": "Consegnare e scalare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v10-barron-sales::KA-027",
+  "max17-v17-beggiato-agenzia::KA-030"
+ ],
+ "fonti_integrali": {
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v10-barron-sales::KA-027",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Soglia di $1 milione/anno di fatturato che molte service business non riescono a superare (causa citata: sistema di vendita + psicologia di vendita del founder).",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#23:45",
+   "frame": "frame-719.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-044",
+   "peso": "contesto",
+   "tipo": "framework",
+   "contenuto": "Argomento visivo dell'apertura: la maggior parte dei service business owner ha un processo di delivery documentato e ripetibile, ma un processo di vendita completamente ad-hoc e affidato alla fortuna — questo gap causa il ciclo boom-and-bust.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#00:32",
+   "frame": "frame-025.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-030",
+   "peso": "supporto",
+   "tipo": "osservazione",
+   "contenuto": "L'agenzia AI (come qualsiasi agenzia) e' quasi sempre uno step intermedio, non il business finale: il capitale, l'esperienza e il network accumulati portano poi a business piu' scalabili (SaaS, community, digital product). Errore comune: scartare l'agenzia perche' 'cappata' a 1-3 milioni/anno confrontandola con business teoricamente piu' scalabili, invece di confrontarla con lo stipendio da dipendente di partenza.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#4:14-4:16",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

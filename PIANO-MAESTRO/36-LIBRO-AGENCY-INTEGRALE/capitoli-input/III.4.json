@@ -1,0 +1,883 @@
+{
+ "capitolo": "III.4",
+ "parte": "III.4",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Prezzo, pacchetti, retainer",
+ "libro": "III",
+ "libro_titolo": "Vendere e prezzare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "EBU57iVAutA::KA-14",
+  "IWCHN_mE2Vo::KA-13",
+  "Pv5uzIxp96U::KA-06",
+  "Pv5uzIxp96U::KA-07",
+  "j4UInmM9kKA::KA-04",
+  "lQMO0LdeI2c::KA-24",
+  "lQMO0LdeI2c::KA-25",
+  "max17-v10-barron-sales::KA-010",
+  "max17-v10-barron-sales::KA-025",
+  "max17-v16::KA-006",
+  "max17-v16::KA-012",
+  "max17-v16::KA-016",
+  "max17-v16::KA-017",
+  "max17-v16::KA-018",
+  "max17-v17-beggiato-agenzia::KA-006",
+  "max17-v17-beggiato-agenzia::KA-007",
+  "max18-v02-karpathy-agenti::KA-026",
+  "max18-v02-karpathy-agenti::KA-027",
+  "max18-v02-karpathy-agenti::KA-028",
+  "max18-v02-karpathy-agenti::KA-029",
+  "max18-v02-karpathy-agenti::KA-030",
+  "max18-v02-karpathy-agenti::KA-031",
+  "max18-v02-karpathy-agenti::KA-032",
+  "max18-v02-karpathy-agenti::KA-033",
+  "max18-v02-karpathy-agenti::KA-034",
+  "max18-v09-NmoOZVTrTXA::KA-315",
+  "max18-v09-NmoOZVTrTXA::KA-316",
+  "max18-v09-NmoOZVTrTXA::KA-317",
+  "max18-v09-NmoOZVTrTXA::KA-319",
+  "max18-v09-NmoOZVTrTXA::KA-320",
+  "max18-v09-NmoOZVTrTXA::KA-321",
+  "max18-v09-NmoOZVTrTXA::KA-322",
+  "outfunnel-lezione-19::KA-01",
+  "qOK4WP82Bvo::KA-08",
+  "qOK4WP82Bvo::KA-09",
+  "qOK4WP82Bvo::KA-10",
+  "qOK4WP82Bvo::KA-11",
+  "qOK4WP82Bvo::KA-12",
+  "qOK4WP82Bvo::KA-13",
+  "qOK4WP82Bvo::KA-20",
+  "qOK4WP82Bvo::KA-21",
+  "sTCwYnWmgcQ::KA-006",
+  "sTCwYnWmgcQ::KA-007",
+  "sTCwYnWmgcQ::KA-008",
+  "sTCwYnWmgcQ::KA-06",
+  "sTCwYnWmgcQ::KA-07",
+  "sTCwYnWmgcQ::KA-08"
+ ],
+ "fonti_integrali": {
+  "EBU57iVAutA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/EBU57iVAutA\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\EBU57iVAutA\\contenuto-integrale.md"
+  ],
+  "IWCHN_mE2Vo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/IWCHN_mE2Vo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\IWCHN_mE2Vo\\contenuto-integrale.md"
+  ],
+  "Pv5uzIxp96U": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Pv5uzIxp96U\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Pv5uzIxp96U\\contenuto-integrale.md"
+  ],
+  "j4UInmM9kKA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/j4UInmM9kKA\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\j4UInmM9kKA\\contenuto-integrale.md"
+  ],
+  "lQMO0LdeI2c": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/lQMO0LdeI2c\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\lQMO0LdeI2c\\contenuto-integrale.md"
+  ],
+  "max17-v10-barron-sales": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v10-barron-sales\\video-analysis.md"
+  ],
+  "max17-v16": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v16\\video-analysis.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ],
+  "max18-v02-karpathy-agenti": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v02-karpathy-agenti\\video-analysis.md"
+  ],
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-19": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-19\\contenuto-integrale.md"
+  ],
+  "qOK4WP82Bvo": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/qOK4WP82Bvo\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\qOK4WP82Bvo\\contenuto-integrale.md"
+  ],
+  "sTCwYnWmgcQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/memory-empire/knowledge/sTCwYnWmgcQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\sTCwYnWmgcQ\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "EBU57iVAutA::KA-14",
+   "peso": "portante",
+   "tipo": "Vendita / Regola 4 - breakdown prezzi",
+   "contenuto": "Per servizi complessi/costosi, spiegare il breakdown dei costi in call rende comprensibile un prezzo alto. Esempio reale: shooting 5000 euro = affitto camera 900 + attori 500 + makeup 500 + operatore 250 + altri costi.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:06:32",
+   "frame": "frame-210",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-14",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:06:32"
+    }
+   ]
+  },
+  {
+   "uid": "IWCHN_mE2Vo::KA-13",
+   "peso": "supporto",
+   "tipo": "Business / Freelance",
+   "contenuto": "Dan Lock Gap: i grandi corsi di copywriting insegnano come scrivere ma NON come trovare clienti. 'Invia delle mail, fai queste cinque cose' = consiglio generico. Chi risolve ENTRAMBI (copy + acquisizione) ha vantaggio enorme nel mercato italiano.",
+   "ancora": "",
+   "fonte": "IWCHN_mE2Vo#00:23:57",
+   "frame": "frame-0780",
+   "run": "IWCHN_mE2Vo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "IWCHN_mE2Vo::KA-13",
+     "run": "IWCHN_mE2Vo",
+     "fonte": "IWCHN_mE2Vo#00:23:57"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-06",
+   "peso": "portante",
+   "tipo": "Pricing / Ancoraggio - tre scatole",
+   "contenuto": "Strategia 'tre scatole': opzione costosissima/irrealizzabile (solo ancoraggio), opzione media (vero obiettivo di vendita), opzione base (ancoraggio verso il basso). L'opzione costosissima rende quella media percepita come affare per contrasto.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:05:23",
+   "frame": "frame-178",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-06",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:05:23"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-07",
+   "peso": "supporto",
+   "tipo": "Pricing / Ordine presentazione opzioni",
+   "contenuto": "Generalmente mostrare l'opzione piu' costosa PRIMA della base (ancoraggio verso l'alto) - eccezione: se il prezzo alto scoraggia dal continuare a leggere, va gestita l'obiezione prima. Ancorare dal basso all'alto e' generalmente debole.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:07:59",
+   "frame": "frame-178",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-07",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:07:59"
+    }
+   ]
+  },
+  {
+   "uid": "j4UInmM9kKA::KA-04",
+   "peso": "portante",
+   "tipo": "Posizionamento / Professione Funnel Operator",
+   "contenuto": "Digressione di posizionamento: il Funnel Operator (chi analizza e ottimizza il funnel esistente di un cliente) come carriera freelance piu' richiesta del 2026. Argomenti: clienti gia' consapevoli del problema (niente cold outreach al buio), progetti da migliaia di euro perche' l'impatto percepito (es. +50% fatturato) giustifica il prezzo, skill apprendibili da zero grazie all'AI. Andrei usa esplicitamente CRO per indicare l'ottimizzazione del funnel e prezza 2-3.000 euro il singolo intervento. Segmento promozionale di un corso proprio in prelancio: contenuto misto educativo/promozionale.",
+   "ancora": "",
+   "fonte": "j4UInmM9kKA#00:05:30",
+   "frame": "frame-217",
+   "run": "j4UInmM9kKA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "j4UInmM9kKA::KA-04",
+     "run": "j4UInmM9kKA",
+     "fonte": "j4UInmM9kKA#00:05:30"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-24",
+   "peso": "portante",
+   "tipo": "POSIZIONAMENTO",
+   "contenuto": "Il copywriter vende strategia, non task. 'Quando tu fai Copy Non offri solamente oh ti scrivo il post su LinkedIn — tu stai offrendo la possibilità a un'azienda strategicamente di guadagnare molto di più.' Il fee si giustifica con outcome (€50K risparmiati), non con ore di lavoro.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:33:49",
+   "frame": "frame-1073.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-24",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:33:49"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-25",
+   "peso": "supporto",
+   "tipo": "POSIZIONAMENTO",
+   "contenuto": "Knowledge gap come vantaggio competitivo: 'quando tu fai Copy e conosci CPA, customer lifetime value, come proporre queste cose al cliente... questa è la roba che in Italia nessuno capisce.' Sapere i termini + la logica business = premium positioning vs copywriter che scrive solo testi.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:33:37",
+   "frame": "frame-1073.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-25",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:33:37"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-010",
+   "peso": "supporto",
+   "tipo": "framework",
+   "contenuto": "FAQ pre-call, voce prezzo: 'How much does this cost? The Salesman.com Mentorship starts at $8,000 USD for our standard 6-month mentorship. It's priced against the revenue a broken sales process is currently costing you rather than the usual online video training you might have tried in the past.'",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#14:36",
+   "frame": "frame-439.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-025",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Prezzo della Salesman.com Mentorship: $8.000 USD per il programma standard di 6 mesi.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#14:36",
+   "frame": "frame-439.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v10-barron-sales::KA-026",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "ROI positivo promesso entro i primi 30 giorni di mentorship.",
+   "ancora": "",
+   "fonte": "5swDtQFyIws#14:30",
+   "frame": "frame-436.png",
+   "run": "max17-v10-barron-sales",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-006",
+   "peso": "portante",
+   "tipo": "architettura",
+   "contenuto": "Struttura dichiarata dell'infobusiness personale del relatore dopo aver tagliato volontariamente la supply: prodotto di front-end a circa 500 euro di media, Mastermind su due livelli (30.000 euro/anno e 46.000 euro/anno), tetto massimo dichiarato di 50 persone nel mastermind (25+20 iscritti al momento del talk). Il solo mastermind e' dichiarato come business da 1,5 milioni di euro netti senza spesa pubblicitaria, con clienti che restano anche 10 anni.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#13:44-14:18",
+   "frame": "frame-208.png",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-012",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Case study clienti citati per nome: cliente non nominato di corsi stampa 3D, da zero a 18.000 euro/mese in 2 mesi. Giulia, bloccata a 10.000 euro/mese, in 8 mesi arriva a 100.000 euro, oggi fa milioni di euro l'anno. Marco, bloccato a un certo punto, aiutato a rivedere prezzi/delivery/rete vendita, poi scalato.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#31:24-31:56",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-016",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Filosofia di pricing con analogia Tesla/Elon Musk: Musk non parti' dal modello accessibile ma dalla Tesla Roadster (fino a 200.000 dollari con optional), poi finanzio' con quei ricavi la Model X, poi la Model S, poi la Model 3 su grande scala. Argomento: se anche un miliardario ha scelto di partire dal prezzo alto, un infobusiness non ha motivo di partire chiedendo 1.000 euro invece di 25.000.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#38:18-39:14",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-017",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Matematica del pricing: con 200 lead in CRM, per fare 20.000 euro/mese vendendo a 100 euro servirebbe convertire il 100% dei lead (mai visto in 12 anni di attivita', secondo il relatore); vendendo invece a 5.000 euro bastano 4 clienti (coerente con un tasso di conversione realistico di circa il 2%, citato come riferimento generico). Prezzo piu' alto = piu' profitto, meno clienti, meno stress, piu' tempo libero (slide mostrata a schermo).",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#39:44-40:59",
+   "frame": "frame-599.png",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v16::KA-018",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Case study finale sulla sezione prezzo: cliente con 2.229 follower su Instagram, passato da 10.000 euro/mese a 40.000 euro/mese in un mese, con due sole vendite, dopo aver rivisto prezzi e messaggio - prima ancora di iniziare a lavorare sul personal brand vero e proprio. Il mastermind da lui acquistato (46.000 euro/anno, pagato in unica soluzione) viene recuperato in sole due settimane.",
+   "ancora": "",
+   "fonte": "gUnQK6bWHkI#41:01-41:35",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v16",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-006",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Matrice di pricing 3x3: righe DIY / DWY / DFY (Do It Yourself, Done With You, Done For You) per colonne Tempo / Unita' / Risultato. Esempio a schermo: DIY-Unita' = ebook/PDF. A voce: DFY-tempo = consulenza a ore (sconsigliata); DWY-unita' = formazione/corso con revisione; DWY-risultato = coaching a percentuale (raro); DFY-unita' = 'vendo 3 automazioni a X euro' (quadrante dove l'autore colloca la maggior parte delle soluzioni AI, piu' scalabile perche' disaccoppiato dal tempo); DFY-risultato = pagamento a risultato.",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#0:58-1:06",
+   "frame": "frame-0451.png (1:00:08)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-007",
+   "peso": "portante",
+   "tipo": "framework",
+   "contenuto": "Tre modelli contrattuali per il pagamento: pay in full (paga tutto oggi, 3.000-10.000 euro upfront, difficile da vendere senza track record); pay on performance (es. paga solo l'ad-spend, 25-200 euro/giorno, il resto solo a risultato, permette ticket anche oltre 10.000 euro perche' il rischio lo prende l'agenzia); retainer (misto: fee di setup + percentuale variabile per lead/cliente o fee fissa mensile, es. 250 euro/mese).",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#1:06-1:20",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-026",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Il listino reale usato nella demo, identico su tre fonti indipendenti dentro il video (transcript-fonte, check dell'agente, PDF finale): OPZIONE STANDARD - setup 1.000 euro una tantum (infrastruttura Instantly, estrazione lead Apify, enrichment Claude, scrittura sequenze) + retainer 500 euro/mese per 2 mesi (gestione campagna e report KPI) = 2.000 euro sui tre mesi. OPZIONE PERFORMANCE - setup ridotto a 600 euro + 80 euro per ogni meeting prenotato (stima ~30 meeting a trimestre), 'si paga sul meeting prenotato, mai su quanto chiudi tu'. Pagamento per entrambe: 50% alla firma, 50% a fine campagna.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#18:46-19:22 + #8:03 + #19:06",
+   "frame": "frame-387.png, frame-162.png, frame-383.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-027",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "PREZZA SUL VALORE, NON SUL COSTO: lo stesso identico agente vale 3.000 euro per l'Azienda A e 15.000 euro per l'Azienda B - 'stesso agente, valore diverso'. Anti-pattern esplicito sulla slide: 'non prezzare a ore'. Chiusura del video: 'nessuna azienda di successo prezza mai al costo'.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#19:24 + #24:31-24:45",
+   "frame": "frame-389.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-028",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Il costo di produzione reale di questo tipo di automazione, dichiarato a voce e scritto sulla lavagna: circa 100-200 dollari al mese di abbonamento Claude + circa 59 dollari di PandaDoc + 'un paio di altre cose'. E' proprio la bassezza di questo costo a rendere il cost-based pricing una trappola: 'il costo e' una strategia che vi fara' perdere e vi fara' sempre piu' schiacciare i margini'.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#20:28-20:56 (parlato) + #21:00 (lavagna)",
+   "frame": "frame-420.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-029",
+   "peso": "portante",
+   "tipo": "formula",
+   "contenuto": "PRIMO METODO di value-based pricing, il TEMPO, scritto a mano sulla lavagna: VALORE -> VBP -> TEMPO -> (TEMPO PERSONA PROPOSTA) x (NUMERO PROPOSTE AL MESE). L'autore la qualifica esplicitamente come 'una proxy', non come il calcolo definitivo.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#21:13-21:46 (parlato) + #21:30-22:00 (lavagna)",
+   "frame": "frame-430.png, frame-440.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-030",
+   "peso": "portante",
+   "tipo": "formula",
+   "contenuto": "SECONDO METODO, il ROI - dichiarato come additivo e non alternativo al primo: 'non e' un o, ma e' un e'. Catena scritta a mano sulla lavagna e detta a voce: 10 ore/mese liberate -> in quelle 10 ore la persona prende 2 clienti -> cliente medio 2.500 euro -> 2 x 2.500 = 5.000 euro/mese di upside (+ va aggiunto il valore orario di chi paghi) => l'automazione si prezza intorno ai 6.000 euro/mese. L'autore avverte mentre lo fa: 'facciamo numeri a casissimo' e 'ovviamente molto molto semplificato'.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#21:59-23:16 (parlato) + #22:30-24:00 (lavagna)",
+   "frame": "frame-450.png, frame-460.png, frame-480.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-031",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "STRUTTURA DI PREZZO ENTRY LEVEL, dalla slide e confermata a voce: SETUP una tantum da 1.000 a 5.000 euro; RETAINER al mese da 500 a 2.000 euro. La slide li marca esplicitamente come 'range indicativi'. A voce l'autore aggiunge la condizione: si parte da questi prezzi 'dopo ovviamente averne fatte un po'', non alla prima automazione.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#19:24 (slide) + #23:47-23:59 (parlato)",
+   "frame": "frame-389.png, frame-480.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-032",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "QUANDO SERVE UN RETAINER (criterio, non preferenza): quando l'automazione va MANTENUTA perche' deve cambiare forma nel tempo. Esempio dato: aziende che vendono macchinari pesanti su piu' mercati - inglese, italiano, francese, tedesco - dove le proposte devono uscire in lingue diverse e, a seconda del tipo di macchinario, prendere forme diverse. Le quattro sigle EN/IT/FR/DE sono scritte a mano sulla lavagna a 24:27.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#24:05-24:31 (parlato) + #24:27 (lavagna)",
+   "frame": "frame-490.png",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-033",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "LE TRE CONDIZIONI perche' il value-based pricing regga, dette subito dopo il calcolo del ROI e prima di qualunque cifra: 'dovete avere un business che ne ha bisogno, dovete avere un mercato che ve lo permette, dovete avere un avatar che e' disposto a pagare'. Aggiunta sulla scalabilita': 'per scalarle non e' poi cosi' semplice come farle one-shot'.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#23:16-23:32",
+   "frame": "",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v02-karpathy-agenti::KA-034",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "L'ordine di grandezza del valore, con la riserva dell'autore incorporata: 'un one day training di 8 ore su AI puo' arrivare a costare 10-15.000. Un'automazione del genere puo' arrivare a costare anche 10.000 euro. Sara' forse la prima che venderete? Assolutamente no.' La cifra del titolo del video e' quindi un tetto teorico dichiarato con riserva, non un prezzo realizzato mostrato in un documento.",
+   "ancora": "",
+   "fonte": "LCNk5e5EiCA#19:57-20:16",
+   "frame": "",
+   "run": "max18-v02-karpathy-agenti",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-315",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "I modelli di business per soluzioni di voice/AI agentic si possono classificare per potenziale di reddito annuo: AI Recruitment $200k-700k (costo medio, difficolta' medio-alta), Lead Reactivation $150k-500k (costo basso-medio, difficolta' media), AI Customer Support $120k-400k (costo medio, difficolta' medio-alta), AI Receptionist $20k-120k (costo di realizzazione il piu' basso di tutti, poche centinaia di euro, difficolta' media).",
+   "ancora": "01 AI Recruitment ... $200k - $700k ... 05 AI Receptionist — Few $100 ... $20k - $120k",
+   "fonte": "NmoOZVTrTXA#126:24 (lavagna Offerte per aziende) + voce 02:05:50",
+   "frame": "frame-1265.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-316",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-318",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-321",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-322",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-319",
+     "tipo": "alternativa-a",
+     "perche": "e' una seconda lente di classificazione (dentro/bordo/fuori) sugli stessi modelli di business"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-316",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Tra i modelli di business voice-AI, l'AI Receptionist ha il potenziale di reddito piu' basso perche' si vende tipicamente con un retainer mensile contenuto: per arrivare a circa 20.000 euro al mese servono all'incirca 80-100 clienti attivi.",
+   "ancora": "ci servono sostanzialmente un ottantino, un centinaio di clienti",
+   "fonte": "NmoOZVTrTXA#126:24 / 127:18 (cifra 'Few $100' e conto clienti necessari) + voce 02:07:14",
+   "frame": "frame-1274.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-315",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-317",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-317",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Posizionarsi con prezzi troppo bassi tende ad attirare clienti piu' difficili da gestire; posizionarsi su un segmento piu' premium porta tipicamente clienti piu' semplici da seguire nel tempo.",
+   "ancora": "se ci posizioniamo un segmento un po' piu' premium, generalmente diventano clienti un po' piu' semplici",
+   "fonte": "NmoOZVTrTXA#127:24 / 127:36 (argomentazione su clienti low-cost vs premium) + voce 02:07:40",
+   "frame": "frame-1277.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-319",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Le funzioni/soluzioni aziendali si possono classificare con un framework a tre livelli per valore economico: 'dentro' l'azienda (processi interni come le FAQ, basso impatto economico), 'di bordo' (riguardano lead che gia' conoscono l'azienda, es. un cliente che chiama direttamente, valore medio), 'fuori'/outbound (si contattano persone che non conoscono l'azienda, valore economico piu' alto ma esecuzione piu' difficile).",
+   "ancora": "le cose dentro, le cose nel bordo, le cose fuori, questo vale un po' per tutto",
+   "fonte": "NmoOZVTrTXA#131:24 (disegno rettangolo azienda con zone) + voce 02:11:23",
+   "frame": "frame-1315.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-315",
+     "tipo": "alternativa-a"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-320",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Nelle aziende, le funzioni orientate all'outbound (vendite/commerciale, tech) sono generalmente le meglio retribuite; il marketing e' considerato tipicamente una funzione 'di bordo', con impatto economico percepito minore rispetto a vendite e tech.",
+   "ancora": "sono quelli che prendono piu' soldi. Perche'? Perche' siamo sempre in outbound",
+   "fonte": "NmoOZVTrTXA#132:18 (chiusura del framework dentro/bordo/fuori) + voce 02:12:18",
+   "frame": "frame-1324.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-319",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-323",
+     "tipo": "precede",
+     "perche": "concluso il framework dentro-bordo-fuori, il corso chiude con la doppia call-to-action finale"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-321",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Il modello di business Lead Reactivation si prezza tipicamente come percentuale sul revenue effettivamente recuperato per il cliente, non come retainer fisso: un modello win-win perche' il fornitore guadagna solo se il cliente guadagna a sua volta.",
+   "ancora": "se il vostro cliente pagando vi diciamo guadagna, poi guadagnate su guadagnato, quindi e' un win per tutti",
+   "fonte": "NmoOZVTrTXA#129:36 (spiegazione del modello Lead Reactivation) + voce 02:09:34",
+   "frame": "frame-1297.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-315",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-322",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Il modello AI Recruitment/outbound e' il piu' difficile da eseguire tra quelli elencati, ma offre il ritorno economico piu' alto, tipicamente pagato a percentuale sul risultato ottenuto (es. percentuale su un candidato piazzato o su un cliente chiuso).",
+   "ancora": "Outbound potrete guadagnare su percentuale di un cliente chiuso, percentuale di un candidato preso",
+   "fonte": "NmoOZVTrTXA#130:06 (sottolineatura su AI Recruitment) + voce 02:09:51",
+   "frame": "frame-1302.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-315",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "outfunnel-lezione-19::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Soglia di prezzo esplicita per passare da vendita self-service a team di vendita: oltre 3.000€ circa (aggiorna/precisa la soglia più generica \"sopra 1.000€\" data in Lezione 3).",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-19#\"panoramica\"",
+   "frame": "",
+   "run": "outfunnel-lezione-19",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-08",
+   "peso": "portante",
+   "tipo": "Copywriting / Value gap dipendente",
+   "contenuto": "Grafica animata mostra il value gap del copywriter dipendente: genera €50k/mese per l'azienda, riceve €1.2k/mese di stipendio. Il dipendente cede il surplus di valore all'azienda. Barre animate: verde alta = valore generato, grigia/rossa bassa = stipendio.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:11:32",
+   "frame": "frame-347",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-08",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:11:32"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-09",
+   "peso": "supporto",
+   "tipo": "Copywriting / Salario dipendente",
+   "contenuto": "Copywriter dipendente guadagna €1200-1500/mese, pagato per presenza/tempo, NON per valore generato. Ha un tetto di guadagno indipendente dalla performance.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:10:10",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-09",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:10:10"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-10",
+   "peso": "supporto",
+   "tipo": "Copywriting / Guadagni freelance",
+   "contenuto": "Il freelance fissa il proprio prezzo - puo' far pagare fino a €5000 per una singola landing page. Massimo realistico in Italia per copywriter freelance = €15k/mese.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:11:00",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-10",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:11:00"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-11",
+   "peso": "portante",
+   "tipo": "Copywriting / Metodi di pagamento",
+   "contenuto": "4 metodi di pagamento freelance: (1) per parola - PESSIMO, ignora il valore vero del testo; (2) per ora - PESSIMO, replica la logica da dipendente (paghi il tempo non il risultato); (3) % del profitto (es. 10% revenue generata) - ottimo economicamente ma complesso; (4) prezzo fisso per copy consegnata - BEST per principianti, tu fissi il prezzo proporzionato al valore percepito.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:12:43",
+   "frame": "frame-382",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-11",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:12:43"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-12",
+   "peso": "portante",
+   "tipo": "Copywriting / Errori di pricing",
+   "contenuto": "Pagare per parola o per ora e' un errore concettuale: prezza il mezzo (tempo, parole) non il fine (vendite generate). Un copy di 200 parole che genera €50k vale piu' di 2000 parole che non convertono.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:13:00",
+   "frame": "frame-408",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-12",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:13:00"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-13",
+   "peso": "portante",
+   "tipo": "Copywriting / Posizionamento",
+   "contenuto": "Il copywriter non e' pagato per scrivere, e' pagato per moltiplicare il revenue del cliente. Questa distinzione cognitiva cambia come ci si presenta, come si prezza e come si misura il successo.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:07:30",
+   "frame": "",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-13",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:07:30"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-20",
+   "peso": "supporto",
+   "tipo": "Copywriting / Autonomia pricing",
+   "contenuto": "La differenza strutturale tra dipendente e freelance non e' lo skill ma CHI fissa il prezzo. Dipendente: prezzo fissato da altri. Freelance: prezzo fissato da se'. Controllare il pricing = controllare la proporzione tra valore creato e compenso ricevuto.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:10:10-0:12:53",
+   "frame": "frame-347",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-20",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:10:10-0:12:53"
+    }
+   ]
+  },
+  {
+   "uid": "qOK4WP82Bvo::KA-21",
+   "peso": "portante",
+   "tipo": "Copywriting / Metodo % profitto",
+   "contenuto": "Farsi pagare il 10% del revenue generato dal copy e' il metodo piu' vantaggioso economicamente ma richiede: accesso ai dati fatturato cliente, fiducia reciproca, contratto ben strutturato. Consigliato solo per copywriter senior con track record misurabile.",
+   "ancora": "",
+   "fonte": "qOK4WP82Bvo#0:13:34",
+   "frame": "frame-408",
+   "run": "qOK4WP82Bvo",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "qOK4WP82Bvo::KA-21",
+     "run": "qOK4WP82Bvo",
+     "fonte": "qOK4WP82Bvo#0:13:34"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-006",
+   "peso": "supporto",
+   "tipo": "pricing",
+   "contenuto": "Il copywriter genera valore misurabile: con un'ad 'decente' l'imprenditore fa +€10k-30k. L'imprenditore è contento di pagare €1k-3k per quell'ad.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:02:22",
+   "frame": "frame-085.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-007",
+   "peso": "portante",
+   "tipo": "pricing",
+   "contenuto": "'Non è questione di quanto tempo investi per scrivere.' Tariffa copywriter NON dipende dalle ore. Dipende dal valore (conversioni) generato.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:02:31",
+   "frame": "frame-085.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-008",
+   "peso": "portante",
+   "tipo": "pricing",
+   "contenuto": "Pricing scalabile: più il copywriter migliora le performance, più può giustificare tariffe alte. È un modello pay-on-performance de facto.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:02:21",
+   "frame": "frame-085.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-06",
+   "peso": "supporto",
+   "tipo": "Copywriting / Guadagno",
+   "contenuto": "Il copywriter genera valore reale misurabile: con un'ad 'decente' l'imprenditore fa +10-30 mila euro. L'imprenditore e' contento di pagare 1-3 mila euro per quell'ad.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:02:22",
+   "frame": "frame-085",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-06",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:02:22"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-07",
+   "peso": "portante",
+   "tipo": "Copywriting / Pricing",
+   "contenuto": "'Non e' questione di quanto tempo investi per scrivere.' La tariffa del copywriter NON dipende dalle ore investite ne' dalla ricerca fatta - dipende dal valore (risultato/conversioni) generato. Chi scala diventa piu' bravo e puo' prezzare di piu'.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:02:31",
+   "frame": "frame-085",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-07",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:02:31"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-08",
+   "peso": "portante",
+   "tipo": "Copywriting / Pricing",
+   "contenuto": "Perche' il prezzo fisso batte la percentuale sul profitto per un freelance: (1) e' molto difficile 'attaccarsi' al profitto dell'imprenditore per prendere una fetta del guadagno; (2) il copywriter spesso non ha totale influenza sui risultati di conversione (fa solo una parte del funnel, es. solo la descrizione prodotto, non il branding o l'ad).",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:02:21",
+   "frame": "frame-085",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-08",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:02:21"
+    }
+   ]
+  }
+ ]
+}

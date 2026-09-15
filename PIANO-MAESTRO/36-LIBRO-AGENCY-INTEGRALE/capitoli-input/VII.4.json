@@ -1,0 +1,116 @@
+{
+ "capitolo": "VII.4",
+ "parte": "VII.4",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Decidere sui numeri",
+ "libro": "VII",
+ "libro_titolo": "Imparare e decidere",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "VYyIF1r6tkw::KA-02",
+  "VYyIF1r6tkw::KA-03",
+  "VYyIF1r6tkw::KA-04",
+  "VYyIF1r6tkw::KA-05",
+  "outfunnel-lezione-13::KA-01"
+ ],
+ "fonti_integrali": {
+  "VYyIF1r6tkw": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/VYyIF1r6tkw\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\VYyIF1r6tkw\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-13": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-13\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "VYyIF1r6tkw::KA-02",
+   "peso": "supporto",
+   "tipo": "Framework / Business base",
+   "contenuto": "Framing base: ogni impresa esiste per vendere; a livello base ha entrate e uscite, il marketing e' un tipo di uscita da valutare in funzione di quanto genera in entrate.",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:00:29",
+   "frame": "frame-001",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-02",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:00:29"
+    }
+   ]
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-03",
+   "peso": "portante",
+   "tipo": "Metodo / Validazione spesa marketing",
+   "contenuto": "Tecnica didattica: costruire un esempio numerico concreto (prodotto 'cubo' €15, spesa €1,50/giorno) invece di spiegare astrattamente se una spesa marketing 'ha senso' - risposta esplicita 'dipende', la sensatezza si misura sempre in relazione al ritorno.",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:01:14",
+   "frame": "frame-020",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-03",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:01:14"
+    }
+   ]
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-04",
+   "peso": "portante",
+   "tipo": "Framework / Calcolo margine marketing",
+   "contenuto": "Calcolo mostrato: 10 unita'/giorno x €15 = €150 fatturato - €50 spesa ads = €100 profitto lordo/giorno. Il marketing 'ha senso' quando l'entrata generata supera l'uscita spesa, prima di considerare costi aggiuntivi per il profitto netto.",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:01:47",
+   "frame": "frame-040",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-04",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:01:47"
+    }
+   ]
+  },
+  {
+   "uid": "VYyIF1r6tkw::KA-05",
+   "peso": "portante",
+   "tipo": "Terminologia / ROAS",
+   "contenuto": "Introduzione del termine ROAS (Return On Ad Spend, pronunciato 'Raz' nel video) come rapporto tra spesa marketing e fatturato generato - obiettivo: massimizzare questo rapporto, varia in base al funnel usato.",
+   "ancora": "",
+   "fonte": "VYyIF1r6tkw#00:02:11",
+   "frame": "frame-040",
+   "run": "VYyIF1r6tkw",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "VYyIF1r6tkw::KA-05",
+     "run": "VYyIF1r6tkw",
+     "fonte": "VYyIF1r6tkw#00:02:11"
+    }
+   ]
+  },
+  {
+   "uid": "outfunnel-lezione-13::KA-01",
+   "peso": "portante",
+   "tipo": "",
+   "contenuto": "Principio fondamentale: \"ciò che non misuri non cresce\" — vale per business, fitness, denaro e marketing; il dato principale da monitorare per un funnel è il CR (Conversion Rate) fra ogni coppia di step consecutivi.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-13#\"1.-il-principio-fondamentale\"",
+   "frame": "",
+   "run": "outfunnel-lezione-13",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

@@ -1,0 +1,1304 @@
+{
+ "capitolo": "II.5",
+ "parte": "II.5",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "LinkedIn organico e personal brand come acquisizione",
+ "libro": "II",
+ "libro_titolo": "Trovare clienti",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max17-v04-trivellato::KA-001",
+  "max17-v04-trivellato::KA-002",
+  "max17-v04-trivellato::KA-003",
+  "max17-v04-trivellato::KA-004",
+  "max17-v04-trivellato::KA-005",
+  "max17-v04-trivellato::KA-006",
+  "max17-v04-trivellato::KA-008",
+  "max17-v04-trivellato::KA-009",
+  "max17-v04-trivellato::KA-010",
+  "max17-v04-trivellato::KA-011",
+  "max17-v04-trivellato::KA-012",
+  "max17-v04-trivellato::KA-013",
+  "max17-v04-trivellato::KA-014",
+  "max17-v04-trivellato::KA-015",
+  "max17-v04-trivellato::KA-016",
+  "max17-v04-trivellato::KA-017",
+  "max17-v04-trivellato::KA-018",
+  "max17-v04-trivellato::KA-019",
+  "max17-v04-trivellato::KA-020",
+  "max17-v04-trivellato::KA-021",
+  "max17-v04-trivellato::KA-022",
+  "max17-v04-trivellato::KA-023",
+  "max17-v04-trivellato::KA-025",
+  "max17-v04-trivellato::KA-026",
+  "max17-v04-trivellato::KA-027",
+  "max17-v04-trivellato::KA-028",
+  "max17-v04-trivellato::KA-029",
+  "max17-v04-trivellato::KA-030",
+  "max17-v04-trivellato::KA-031",
+  "max17-v04-trivellato::KA-032",
+  "max17-v04-trivellato::KA-033",
+  "max17-v04-trivellato::KA-034",
+  "max17-v04-trivellato::KA-035",
+  "max17-v04-trivellato::KA-036",
+  "max17-v04-trivellato::KA-037",
+  "max17-v04-trivellato::KA-038",
+  "max17-v04-trivellato::KA-039",
+  "max17-v04-trivellato::KA-040",
+  "max17-v04-trivellato::KA-041",
+  "max17-v04-trivellato::KA-042",
+  "max17-v04-trivellato::KA-043",
+  "max17-v04-trivellato::KA-044",
+  "max17-v04-trivellato::KA-046",
+  "max17-v04-trivellato::KA-047",
+  "max17-v04-trivellato::KA-048",
+  "max17-v04-trivellato::KA-049",
+  "max17-v04-trivellato::KA-050",
+  "max17-v04-trivellato::KA-051",
+  "max17-v04-trivellato::KA-052",
+  "max17-v04-trivellato::KA-053",
+  "max18-v06-JTn5pqm9ecM::KA-040",
+  "max18-v06-JTn5pqm9ecM::KA-045",
+  "max18-v06-JTn5pqm9ecM::KA-057",
+  "max18-v06-JTn5pqm9ecM::KA-080",
+  "max18-v07-O2IDhISyy8Y::KA-003",
+  "max18-v07-O2IDhISyy8Y::KA-004",
+  "max18-v07-O2IDhISyy8Y::KA-007",
+  "sTCwYnWmgcQ::KA-014",
+  "sTCwYnWmgcQ::KA-015",
+  "sTCwYnWmgcQ::KA-016",
+  "sTCwYnWmgcQ::KA-020",
+  "sTCwYnWmgcQ::KA-021",
+  "sTCwYnWmgcQ::KA-14",
+  "sTCwYnWmgcQ::KA-15",
+  "sTCwYnWmgcQ::KA-16",
+  "sTCwYnWmgcQ::KA-20",
+  "sTCwYnWmgcQ::KA-21"
+ ],
+ "fonti_integrali": {
+  "max17-v04-trivellato": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v04-trivellato\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v04-trivellato\\video-analysis.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v07-O2IDhISyy8Y": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v07-O2IDhISyy8Y\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v07-O2IDhISyy8Y\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v07-O2IDhISyy8Y\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v07-O2IDhISyy8Y\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v07-O2IDhISyy8Y\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v07-O2IDhISyy8Y\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v07-O2IDhISyy8Y\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v07-O2IDhISyy8Y\\_parte-106-126.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\O2IDhISyy8Y\\contenuto-integrale.md"
+  ],
+  "sTCwYnWmgcQ": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/memory-empire/knowledge/sTCwYnWmgcQ\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\sTCwYnWmgcQ\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max17-v04-trivellato::KA-001",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "$1.2M ARR — attributed entirely to LinkedIn",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#1:20",
+   "frame": "frame-041.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-002",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "31K Total Followers (31,000 follower totali)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#1:20",
+   "frame": "frame-041.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-003",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "$0 Spent on paid ads",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#1:20",
+   "frame": "frame-041.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-004",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "$1,294,700 in one year — fatturato preciso in un anno",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#1:20",
+   "frame": "frame-041.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-005",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Zero cold outreach messages sent · Every dollar traced to LinkedIn — tutto il fatturato è tracciabile fino a LinkedIn, nessun messaggio a freddo inviato",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#1:20",
+   "frame": "frame-041.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-006",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "92% ICP match — Of 31,000 followers — vs. 2% ICP match on a generic 200,000-person audience",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#1:20",
+   "frame": "frame-041.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-007",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Oltre 60 clienti gestiti attivamente: B2B consultants, B2B SaaS, B2B businesses, B2B coaches",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#0:18",
+   "frame": "frame-011.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-008",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "L'autore genera 3-5 dollari per follower, contro circa 1 dollaro (o meno) generato dalla maggior parte degli operatori LinkedIn",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#2:13",
+   "frame": "frame-064.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-009",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Core insight: the metric that matters is not follower count — it is buyer concentration",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#3:34",
+   "frame": "frame-108.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-010",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "The Consumer Social Model (Wrong for B2B): more followers equals more revenue · go big, go broad — chase reach · 200,000 followers, only 2% are your actual ICP · trains the algorithm to show content to people who will never buy · causes founders to make genuinely bad decisions",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#2:34",
+   "frame": "frame-078.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-011",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "The Buyer Concentration Model: 31,000 followers — overwhelming majority are exact decision-makers · every conversion event is a $10K-$100K contract, not a $20 ebook",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#2:44",
+   "frame": "frame-083.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-012",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "THE REAL METRIC: You do not need 500,000 followers. You need the right 5,000 — and a system that keeps pulling more of them in",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#3:10",
+   "frame": "frame-096.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-013",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Three Components, Running Together: 1) Content that pulls in buyers, not followers · 2) A profile that converts the traffic content generates · 3) Two mechanisms that turn engagement into booked calls",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#3:46",
+   "frame": "frame-114.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-014",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Why 'Personal Brand' Content Fails in B2B: posting industry takes, leadership lessons and morning routines builds followers who never convert. A big audience of the wrong people is worse than a small audience of the right ones — it trains the algorithm to show your content to people who will never buy",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#3:50",
+   "frame": "frame-116.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-015",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "The One-Sentence Post Test: can a qualified prospect read this and say 'yes — that is exactly my situation'? If not, wrong post",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#4:28",
+   "frame": "frame-135.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-016",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Two Content Types That Actually Work: Named Problem Posts + Surfaced Problem Posts",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#4:56",
+   "frame": "frame-149.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-017",
+   "peso": "portante",
+   "tipo": "template",
+   "contenuto": "Named Problem Posts: name the expensive problem the ICP is already thinking about — the pain they can already articulate",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#4:56",
+   "frame": "frame-149.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-018",
+   "peso": "portante",
+   "tipo": "template",
+   "contenuto": "Surfaced Problem Posts: surface a problem they did not know they had — the pain they haven't named yet",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#6:40",
+   "frame": "frame-201.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-019",
+   "peso": "supporto",
+   "tipo": "script",
+   "contenuto": "Esempio reale di named-problem post (AI voice per home service companies): hook con cifre mock dichiarate dall'autore — 'home service businesses are losing 80K a month on missed calls. AI can do it for 10K'",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#5:36",
+   "frame": "frame-149.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-020",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Il post named-problem sull'AI voice ha ottenuto solo ~15 like ma un commento con tag a un partner ha generato un cliente da $10-16K",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#5:56",
+   "frame": "frame-149.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-021",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Esempio surfaced-problem post (agenzie SEO): 'Here's how to audit your SEO with 5 steps' — mostra 5 metriche, la media di settore e come intervenire, trasformando il post in un audit gratuito che fa emergere il gap del prospect",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#7:00",
+   "frame": "frame-201.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-022",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "The Compound Effect: Right Person Follows (il concentrated ICP segue perché un post ha nominato la sua situazione esatta) → Sees Every Post For 6 Months (presenza costante nel feed, non un momento virale, fiducia sostenuta) → Reads The Case Studies (quando sono pronti a comprare, sei già posizionato come la risposta)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#8:00",
+   "frame": "frame-241.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-023",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Why This Explains The $1.2M: not one viral post — just the right people in the feed long enough to trust the work. That's what 31,000 concentrated followers actually produces",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#8:56",
+   "frame": "frame-279.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-024",
+   "peso": "contesto",
+   "tipo": "cadenza",
+   "contenuto": "Regola di cadenza: postare sempre negli stessi giorni e allo stesso orario, mantenendo il contenuto sempre rilevante, per costruire una routine sia con l'audience sia con l'algoritmo LinkedIn (nessun giorno/orario specifico dichiarato nel video)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#8:16",
+   "frame": "frame-241.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-025",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "31.000 follower concentrati producono 10 volte più risultati di 300.000 follower sparsi che non si interessano davvero al contenuto",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#9:41",
+   "frame": "frame-290.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-026",
+   "peso": "supporto",
+   "tipo": "template",
+   "contenuto": "CTA di offerta ('Quick thing'): 'If you want us to build this entire system for you, we'll look at your current LinkedIn setup and tell you exactly where it's broken. Not a pitch — a diagnostic. → yourbrand.com — Book a Strategy Call'",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#9:54",
+   "frame": "frame-298.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-027",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "The 4 Profile Elements — Rebuilt As A Sales Page: tabella completa Mistake/Fix su headline, custom button, featured section e struttura generale del profilo",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#9:56",
+   "frame": "frame-299.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-028",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Mistake #1: job title used as the headline (es. 'CEO at company you've never heard of' — chiunque può scriverlo, non differenzia)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#10:30",
+   "frame": "frame-316.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-029",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Fix #1: headline = who you help + outcome delivered, nothing else. Esempio reale dell'autore: le prime due parole del suo headline sono 'Agencies and SaaS', il suo ICP esatto",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#12:00",
+   "frame": "frame-361.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-030",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Mistake #2: custom button links to a generic homepage (o assente del tutto)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#10:30",
+   "frame": "frame-316.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-031",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Fix #2: custom button = direct link to a booking calendar",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#12:00",
+   "frame": "frame-361.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-032",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Mistake #3: featured section left empty",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#10:30",
+   "frame": "frame-316.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-033",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Fix #3: featured section = case study + video testimonial + methodology breakdown",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#12:00",
+   "frame": "frame-361.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-034",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Mistake #4: profile reads like a career history, not a sales page",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#10:30",
+   "frame": "frame-316.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-035",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Why This Matters Most: fixing the profile beats improving content. The traffic is already arriving. A broken profile just lets it silently evaporate",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#12:00",
+   "frame": "frame-361.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-036",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "The Silent Leak Most Founders Never Diagnose: Great Content, Real Reach (right people are seeing the posts — top of funnel is working) → Profile Doesn't Convert (all that traffic evaporates silently — you never see the people who visited and left) → Wrong Diagnosis (founders assume the content isn't good enough, rewrite content, conversions don't improve, cycle repeats)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#13:20",
+   "frame": "frame-401.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-037",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "What Happens Without This: you keep 'fixing' content that was never the actual problem — while the real leak sits untouched on the profile page",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#13:26",
+   "frame": "frame-404.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-038",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "The profile is not a resume. It's the page a prospect lands on the second they think [...] this? (frase parzialmente coperta a schermo, senso chiaro dal contesto ma non integralmente leggibile)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#13:56",
+   "frame": "frame-419.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-039",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "The Gap Most People Leave Open: a profile visit is not a booked call. Great content plus a clean profile still leaves most of the pipeline on the table — without a specific mechanism, it just sits there",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#14:28",
+   "frame": "frame-435.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-040",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Mechanism 1 — Lead Magnet Posts: most people post and passively wait for DMs (unpredictable, low volume); un lead magnet post richiede un commento + una richiesta di connessione per ricevere la risorsa; ogni commentatore diventa una connessione di 1° grado che vede tutti i post futuri; non sono follower casuali, hanno alzato la mano per il problema esatto che risolvi; ogni nuova connessione aumenta la reach del post successivo",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#14:44",
+   "frame": "frame-444.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-041",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "300-1,000 Qualified ICP connections per post (lead magnet) · 1st Connection tier — sees every future post",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#14:46",
+   "frame": "frame-444.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-042",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Un lead magnet post con 500 commenti può convertire in circa 300-400 nuovi follower da un solo post",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#15:36",
+   "frame": "frame-444.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-043",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Mechanism 2 — Profile View Outreach: multiple profile views in a short window = active research = buying behaviour; most people see this notification and simply ignore it; the play — one genuine question, no pitch, no deck; you are not interrupting — you are responding to a signal they already gave",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#15:52",
+   "frame": "frame-477.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-044",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "40-50% Response rate sul Profile View Outreach (dato mostrato a schermo nella grafica Miro)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#15:52",
+   "frame": "frame-477.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-045",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "20 to 50% response rate sul Profile View Outreach (cifra pronunciata a voce, leggermente diversa dal 40-50% mostrato a schermo — discrepanza dichiarata)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#16:54",
+   "frame": "frame-477.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-046",
+   "peso": "portante",
+   "tipo": "script",
+   "contenuto": "The Exact Message — Word For Word: 'Noticed you have been checking out my profile — curious what caught your attention?'",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#17:04",
+   "frame": "frame-513.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-047",
+   "peso": "supporto",
+   "tipo": "script",
+   "contenuto": "Variante parlata dello stesso apritore DM (più discorsiva, non scritta a schermo): 'Hey, LinkedIn told me you were snooping around my profile and I was wondering if there's anything I can help you with? I'm happy to point you in the right direction or provide any advice if it's relevant.'",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#16:26",
+   "frame": "frame-477.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-048",
+   "peso": "portante",
+   "tipo": "metodo",
+   "contenuto": "Why This Compounds — The Three Layers Together: L1 Content Pulls In The Right People (buyer-concentrated content brings in the exact ICP, not a broad crowd of followers) · L2 Profile Holds Them On Arrival (a sales-page-style profile converts the traffic instead of silently losing it) · L3 Mechanisms Force The Conversation (lead magnet posts and profile view outreach turn passive engagement into a booked call)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#17:08",
+   "frame": "frame-515.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-049",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "The Point Most People Miss: 31,000 followers is almost beside the point — this exact system works at 5,000. Build it before the audience feels 'big enough' to bother",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#17:26",
+   "frame": "frame-524.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-050",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Goal: take engagement from 'I saw your post' to 'I booked a call because I already trust the work.'",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#17:26",
+   "frame": "frame-524.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-051",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Alcuni clienti con soli 200 follower hanno prenotato 7 call qualificate in pochi giorni",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#17:36",
+   "frame": "frame-524.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-052",
+   "peso": "supporto",
+   "tipo": "numero",
+   "contenuto": "Persone con 10.000 follower gestiscono con questo sistema un canale marketing da $50K-$100K al mese",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#18:14",
+   "frame": "frame-524.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-053",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Non c'è alcun danno nel vendere subito se il servizio è genuinamente valido e il contenuto è genuinamente valido — non serve costruire prima l'audience ('build the audience first' è definita una delle bugie più grandi che si sentono in giro)",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#17:44",
+   "frame": "frame-524.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-054",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Recap finale a 3 box: (1) 31,000 followers — a genuinely concentrated audience; (2) $1.2M ARR in one year — zero paid ads, zero cold outreach; (3) the follower count didn't matter, the system did",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#18:34",
+   "frame": "frame-558.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-055",
+   "peso": "contesto",
+   "tipo": "template",
+   "contenuto": "Headline pagina servizio/agenzia (parzialmente leggibile, la parte iniziale è tagliata fuori dal frame): '[...] days using LinkedIn alone. We write your posts, run your DMs, and book 20-30 qualified sales calls onto your calendar every month. Done-for-you.'",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#0:34",
+   "frame": "frame-018.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-056",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "20-30 qualified sales calls prenotate sul calendario ogni mese — promessa di servizio dell'agenzia dell'autore",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#0:34",
+   "frame": "frame-018.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-057",
+   "peso": "contesto",
+   "tipo": "metodo",
+   "contenuto": "Montage di social proof: screenshot di post LinkedIn B2B ad alte performance usati come ispirazione visiva, incluso un post firmato dallo stesso Paolo Trivellato e post di William Brown, Samuel Beck, Jared Orkin, Ariel Cohen, Eugenio Zaibell, Nick Nihalos",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#0:58",
+   "frame": "frame-030.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-058",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "'We see so many industries': Legal Service, Financial Service, Marketing Agencies, IT Consulting, SaaS — 5 settori esplicitamente mostrati come coperti dall'agenzia",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#0:52",
+   "frame": "frame-027.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-059",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "Anche con 10.000-50.000 impression/mese si dovrebbero comunque ottenere alcuni lead al mese da LinkedIn, se il funnel (profilo + meccanismi) funziona correttamente",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#13:26",
+   "frame": "frame-404.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v04-trivellato::KA-060",
+   "peso": "contesto",
+   "tipo": "regola",
+   "contenuto": "100K+/Month, Zero Ads, Zero Cold Outreach — titolo di capitolo del video (metadato ingest.json) che riassume il claim: oltre $100K/mese fatturati negli ultimi 6 mesi con crescita mese su mese, zero pubblicità a pagamento, zero cold outreach",
+   "ancora": "",
+   "fonte": "-gq8euRvNR4#1:20",
+   "frame": "frame-041.png",
+   "run": "max17-v04-trivellato",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-055",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Slide credenziali: loghi di brand con cui Jay ha lavorato - Unilever, Fresh, Microsoft, Virgin, Ogilvy, Knorr, Lipton.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:32",
+   "frame": "frame-017.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-056",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Slide formazione: University of Technology Sydney - Master of Data Science and Innovation.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:34",
+   "frame": "frame-018.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-057",
+   "peso": "contesto",
+   "tipo": "opinione",
+   "contenuto": "Sito agenzia 'RoboLabs' di Jay: 'The Era of AI is Here / RoboLabs helps you lead it', nav Services/Process/Solutions/Let's Talk.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:36",
+   "frame": "frame-019.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-068",
+   "peso": "contesto",
+   "tipo": "opinione",
+   "contenuto": "Claim di apertura del video (hook di marketing, non verificabile): 'by the end of it, you'll be using agents better than 99% of people.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#0:27",
+   "frame": "frame-016.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-069",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "YouTube Studio widget nella dashboard: 170,000 subscribers, 8.5M lifetime views, 5 longforms this month.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#1:14",
+   "frame": "frame-038.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-040",
+   "peso": "portante",
+   "tipo": "dato",
+   "contenuto": "Sintesi del canale \"1. Content Marketing & Thought Leadership\" prodotta dai 5 agenti: \"Priorità: LinkedIn >> YouTube per revenue immediata.\" — con 50K follower LinkedIn è un asset sottoutilizzato; i contenuti che convertono a high-ticket sono case study con numeri e post di metodologia, non tutorial. Regola chiave data dal report: \"insegna il COSA e il PERCHÉ pubblicamente, vendi il COME e il DONE-FOR-YOU. A €10K+ i clienti pagano velocità e certezza, non informazione.\" Timeline: 3-6 mesi di posting costante (3-5x/settimana su LinkedIn) prima che la pipeline si riempia.",
+   "ancora": "insegna il COSA e il PERCHÉ pubblicamente, vendi il COME e il DONE-FOR-YOU",
+   "fonte": "JTn5pqm9ecM#25:48 + voce 26:00 ca.",
+   "frame": "frame-0259.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-186",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-193",
+     "tipo": "contraddice",
+     "perche": "Questo canale (content marketing) risulterà NON prioritario quando lo stesso prompt viene rifatto con il vincolo esplicito 'come se partissi da zero': i due risultati si contraddicono, ed è proprio questa discrepanza a rivelare il bias."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-045",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "\"La mia raccomandazione\" finale del primo prompt (quello che NON specifica di partire da zero): \"Il ROI più alto nel breve termine è LinkedIn social selling (hai già 50K follower, non servono investimenti) combinato con workshop mensile come meccanismo di conversione. Cold email e referral sono buoni canali paralleli da costruire nel tempo, ma LinkedIn è la leva più immediata.\" L'agente chiude chiedendo: \"Vuoi che approfondiamo uno di questi canali o che creiamo un piano d'azione concreto?\"",
+   "ancora": "Il ROI più alto nel breve termine è",
+   "fonte": "JTn5pqm9ecM#27:00-27:24 + voce 27:00-27:18",
+   "frame": "frame-0271.png, frame-0274.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-188",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-189",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-191",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-192",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-195",
+     "tipo": "contraddice"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-057",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Conclusione dell'agente sul rapporto tra content marketing e canali diretti: \"Il content è un moltiplicatore, non un punto di partenza. Senza audience, stai parlando al vuoto per mesi. Con cold email e referral stai parlando direttamente a decision-maker dal giorno uno.\" Raccomandazione finale, che integra entrambe le versioni della ricerca: dato che l'utente in questo caso NON parte da zero (ha già un LinkedIn da 50K follower), la risposta migliore è probabilmente sfruttare entrambi i canali in parallelo — LinkedIn per il breve termine, cold email + referral come secondo motore.",
+   "ancora": "Il content è un moltiplicatore, non un punto di partenza.",
+   "fonte": "JTn5pqm9ecM#33:18-33:24 + voce 33:24",
+   "frame": "frame-0334.png, frame-0335.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-204",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-193",
+     "tipo": "contraddice"
+    },
+    {
+     "verso": "KA-206",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-080",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Sintesi per canale dei risultati delle 5 ricerche parallele — \"1. Content Marketing & Thought Leadership\": priorità LinkedIn >> YouTube per revenue immediata; con 50K follower LinkedIn è un asset sottoutilizzato; i contenuti che convertono a high-ticket non sono tutorial ma case study con numeri e post di metodologia; regola chiave: insegna il COSA e il PERCHE' pubblicamente, vendi il COME e il DONE-FOR-YOU, perché a 10K€+ i clienti pagano velocità e certezza, non informazione; timeline 3-6 mesi di posting costante (3-5x/settimana LinkedIn) prima che la pipeline si riempia.",
+   "ancora": "Priorità: LinkedIn >> YouTube per revenue immediata.",
+   "fonte": "JTn5pqm9ecM#37:12 (output web search e sintesi strutturata nella tab \"Analyze B2B sales strate...\") + voce 37:12",
+   "frame": "frame-0373.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-167",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-170",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v07-O2IDhISyy8Y::KA-001",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Il relatore apre il video dichiarando di aver generato più di 50.000 follower su LinkedIn nell'ultimo anno e poco più di $100.000, presentandolo come il risultato personale che dimostra la sua competenza sul metodo di acquisizione clienti che sta per insegnare in tutto il video.",
+   "ancora": "Ho generato più di 50.000 follower nell'ultimo anno solo con LinkedIn e poco più di $100.000.",
+   "fonte": "O2IDhISyy8Y#0:00 (talking head, apertura) + voce 0:00-0:06",
+   "frame": "frame-001.png",
+   "run": "max18-v07-O2IDhISyy8Y",
+   "relazioni": [
+    {
+     "verso": "KA-002",
+     "tipo": "quantificato-da"
+    },
+    {
+     "verso": "KA-050",
+     "tipo": "esempio-di",
+     "perche": "I 50.000 follower dichiarati in apertura sono la 'proof che la avete' del ramo sinistro dello schema PROOF."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v07-O2IDhISyy8Y::KA-002",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Screenshot reale della dashboard LinkedIn Analytics (linkedin.com/analytics/creator/audience/) del profilo dell'autore (badge Premium 'AI Automation step by step', location Luxembourg): il riquadro Follower growth mostra 51.747 Total followers con una crescita di +4.828,3% vs prior 365 days, grafico a linea cumulativo che sale da quasi 0 (aprile 2025) a circa 52K (aprile 2026), filtro impostato su 365 days. E' la prova visiva diretta, non solo dichiarata a voce, del numero di follower citato in apertura.",
+   "ancora": "51,747 Total followers",
+   "fonte": "O2IDhISyy8Y#0:06 (screen recording LinkedIn analytics) + voce 0:06-0:12",
+   "frame": "frame-002.png",
+   "run": "max18-v07-O2IDhISyy8Y",
+   "relazioni": [
+    {
+     "verso": "KA-001",
+     "tipo": "quantifica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v07-O2IDhISyy8Y::KA-003",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Contro la credenza comune che il modo migliore per fare soldi online sia postare sui social media, l'autore sostiene che questo non è vero, specialmente nel breve termine: postare da solo non genera vendite rapide, va integrato con altre leve (come il cold outreach che introduce subito dopo).",
+   "ancora": "Tutte persone ti diranno che il miglior modo per fare soldi online è postare sui social media, ma questo non è vero, specialmente nel breve termine.",
+   "fonte": "O2IDhISyy8Y#0:12 (talking head, stylus in mano) + voce 0:12-0:18",
+   "frame": "frame-003.png",
+   "run": "max18-v07-O2IDhISyy8Y",
+   "relazioni": [
+    {
+     "verso": "KA-005",
+     "tipo": "motiva"
+    },
+    {
+     "verso": "KA-008",
+     "tipo": "motiva"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v07-O2IDhISyy8Y::KA-004",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "Screenshot della dashboard LinkedIn 'Analytics & tools' (Thursday, April 23): 268.972 Post impressions (+130,7% past 7 days), 51.747 Followers (+2,3% past 7 days), 9.865 Profile viewers (Past 90 days), 442 Search appearances (Previous week); sotto, il Weekly sharing tracker con obiettivo di 3 azioni a settimana superato ('318 of 3 actions') e una card che segnala 314 comments con il claim che chi commenta una volta a settimana in media vede fino a 3 volte più visualizzazioni di profilo. Nonostante questi numeri alti di post, l'autore dichiara che nell'ultimo anno, di tutti i soldi generati per la sua agenzia AI, meno del 5% è venuto da post/content creation.",
+   "ancora": "Nell'ultimo anno di tutti i soldi che ho generato per la mia agenzia AI, probabilmente meno del 5% è venuto da post, quindi da content creation.",
+   "fonte": "O2IDhISyy8Y#0:18 (dashboard LinkedIn Analytics & tools) + voce 0:18-0:48",
+   "frame": "frame-004.png",
+   "run": "max18-v07-O2IDhISyy8Y",
+   "relazioni": [
+    {
+     "verso": "KA-003",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-005",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v07-O2IDhISyy8Y::KA-006",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Prova con screenshot del sito Favikon (creator.favikon.com), ranking 'Top 200 Creators · IT & Tech · LinkedIn · Luxembourg': l'autore Giovanni Beggiato è in prima posizione assoluta (medaglia oro, '1#' 'NEW'), con LinkedIn Score 93,7/100, 51,7K follower LinkedIn + 10,7K su YouTube, Growth +6,95%. Il box di sintesi lo segnala come 'Rising Star' con +6,88% LinkedIn growth e 'Best Country — Luxembourg 109/109'. E' citato a voce come prova della sua autorità come creator numero uno per la categoria IT & Tech in Lussemburgo.",
+   "ancora": "sono creator numero uno per quanto riguarda parte ET e Technology per quanto riguarda Lussemburgo",
+   "fonte": "O2IDhISyy8Y#0:54 (ranking Favikon IT&Tech Luxembourg) + voce 0:54-1:12",
+   "frame": "frame-010.png",
+   "run": "max18-v07-O2IDhISyy8Y",
+   "relazioni": [
+    {
+     "verso": "KA-010",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-050",
+     "tipo": "esempio-di",
+     "perche": "Il ranking Favikon e' l'altra prova di autorita' esibita dal relatore: e' il ramo 'la avete' dello schema PROOF, mostrato prima ancora di enunciarlo."
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v07-O2IDhISyy8Y::KA-007",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Unica eccezione dichiarata alla regola 'postare non porta clienti nel breve termine' (P1-003): YouTube, perché è una piattaforma dove 'la gente può vedervi' — il formato video lungo genera fiducia/visibilità che gli altri social non generano, quindi solo lì il posting produce inbound reale.",
+   "ancora": "a meno che non utilizzate una piattaforma come YouTube nella quale la gente può vedervi, postare nei social media non vi porterà poi così tanto in bound.",
+   "fonte": "O2IDhISyy8Y#1:12 (talking head) + voce 1:12-1:24",
+   "frame": "frame-013.png",
+   "run": "max18-v07-O2IDhISyy8Y",
+   "relazioni": [
+    {
+     "verso": "KA-003",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v07-O2IDhISyy8Y::KA-010",
+   "peso": "contesto",
+   "tipo": "numero",
+   "contenuto": "Screenshot Favikon, ranking generale 'Top 200 Creators · LinkedIn · Luxembourg' (tutte le categorie, non solo IT&Tech): l'autore Giovanni è in 3ª posizione (bronzo) con Score 93,7/100, 51,7K+10,7K follower e Growth +6,95%, dietro Antony (oro, 96,8/100) e Xavier Bettel, Deputy Prime Minister del Lussemburgo (argento, 95/100), e davanti a Luc Frieden, Prime Minister del Lussemburgo (93,6/100). Citato a voce come 'terzo sotto al primo ministro per quanto riguarda crescita su LinkedIn'.",
+   "ancora": "sono il terzo sotto al primo ministro per quanto riguarda crescita su LinkedIn",
+   "fonte": "O2IDhISyy8Y#1:36 (ranking Favikon generale Luxembourg) + voce 1:01-1:05 (citazione riportata nell'analisi, timestamp non coincidente col frame)",
+   "frame": "frame-017.png",
+   "run": "max18-v07-O2IDhISyy8Y",
+   "relazioni": [
+    {
+     "verso": "KA-006",
+     "tipo": "quantificato-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-014",
+   "peso": "supporto",
+   "tipo": "reputazione",
+   "contenuto": "Sotto-punto 1 Step 2: Ripulire i social. Contenuti non professionali = credibilità zero. 'Gli imprenditori che mi volevano assumere andavano a vedere le mie cose online.' Andrei ha cancellato il suo Facebook.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:07:05",
+   "frame": "frame-230.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-015",
+   "peso": "portante",
+   "tipo": "reputazione",
+   "contenuto": "Sotto-punto 2 Step 2: LinkedIn. 1-2 ore/settimana. Non spammare connessioni. Interagire genuinamente. LinkedIn = fonte diretta clienti + validazione professionale.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:07:54",
+   "frame": "frame-230.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-016",
+   "peso": "supporto",
+   "tipo": "reputazione",
+   "contenuto": "Sotto-punto 3 Step 2: Sito web come LANDING PAGE (non SEO). Obiettivo: vendere te stesso, mostrare portfolio/lavori di prova, convertire visitatore in cliente.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:08:36",
+   "frame": "frame-260.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-020",
+   "peso": "supporto",
+   "tipo": "linkedin",
+   "contenuto": "LinkedIn = biglietto da visita obbligatorio: 'Se non ci sei è un po strano.' I potenziali clienti cercano il freelancer su LinkedIn prima di assumerlo. Assenza = red flag.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:08:26",
+   "frame": "frame-320.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-021",
+   "peso": "supporto",
+   "tipo": "reputazione",
+   "contenuto": "La reputazione online del copywriter è parte del suo copy. Un profilo social non professionale: 'la tua credibilità va giù, non si fida di te.' Ogni touchpoint online = persuasione o anti-persuasione.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:07:14",
+   "frame": "frame-230.png",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-14",
+   "peso": "supporto",
+   "tipo": "Copywriting / 5 passi - Step 2.1",
+   "contenuto": "Sotto-punto 1 dello Step 2 - ripulire i social: foto di ubriachezza/party = credibilita' zero. 'Gli imprenditori che mi volevano assumere andavano a vedere le mie cose online dappertutto.' Andrei ha cancellato il suo profilo Facebook.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:07:05",
+   "frame": "frame-230",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-14",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:07:05"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-15",
+   "peso": "portante",
+   "tipo": "Copywriting / 5 passi - Step 2.2",
+   "contenuto": "Sotto-punto 2 dello Step 2 - LinkedIn: dedicare 1-2 ore/settimana. Non spammare connessioni (come si aggiungono amici su Facebook). Interagire genuinamente nei commenti. LinkedIn = fonte diretta di clienti + validazione professionale.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:07:54",
+   "frame": "frame-230",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-15",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:07:54"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-16",
+   "peso": "supporto",
+   "tipo": "Copywriting / 5 passi - Step 2.3",
+   "contenuto": "Sotto-punto 3 dello Step 2 - sito web: usato come LANDING PAGE, non per SEO/Google. Obiettivo: vendere te stesso, mostrare portfolio/lavori di prova, convertire il visitatore in cliente. Non e' il classico sito con home+contatti.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:08:36",
+   "frame": "frame-260",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-16",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:08:36"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-20",
+   "peso": "supporto",
+   "tipo": "Copywriting / LinkedIn",
+   "contenuto": "LinkedIn come biglietto da visita obbligatorio: 'Se non ci sei e' un po' strano.' I potenziali clienti cercano il freelancer su LinkedIn prima di assumerlo - l'assenza e' un red flag.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:08:26",
+   "frame": "frame-320",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-20",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:08:26"
+    }
+   ]
+  },
+  {
+   "uid": "sTCwYnWmgcQ::KA-21",
+   "peso": "supporto",
+   "tipo": "Copywriting / Reputazione come copy",
+   "contenuto": "La reputazione online del copywriter E' parte del suo copy. Un profilo social non professionale: 'la tua credibilita' va giu', non si fida di te.' Ogni touchpoint online e' persuasione o anti-persuasione.",
+   "ancora": "",
+   "fonte": "sTCwYnWmgcQ#0:07:14",
+   "frame": "frame-230",
+   "run": "sTCwYnWmgcQ",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "sTCwYnWmgcQ::KA-21",
+     "run": "sTCwYnWmgcQ",
+     "fonte": "sTCwYnWmgcQ#0:07:14"
+    }
+   ]
+  }
+ ]
+}

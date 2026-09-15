@@ -1,0 +1,59 @@
+{
+ "capitolo": "III.2",
+ "parte": "III.2",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Qualifica e discovery",
+ "libro": "III",
+ "libro_titolo": "Vendere e prezzare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "EBU57iVAutA::KA-16",
+  "outfunnel-lezione-19::KA-04"
+ ],
+ "fonti_integrali": {
+  "EBU57iVAutA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/EBU57iVAutA\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\EBU57iVAutA\\contenuto-integrale.md"
+  ],
+  "outfunnel-lezione-19": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/outfunnel-lezione-19\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "EBU57iVAutA::KA-16",
+   "peso": "portante",
+   "tipo": "Vendita / Regola 6 - qualificare prima",
+   "contenuto": "Se il cliente chiede il preventivo troppo presto, struttura a 3 chiamate: Call1 capire progetto (10-15min), Call2 sviluppare obiettivi (~60min), Call3 presentare preventivo. Se chiesto prima, spiegare che serve una chiamata dedicata data la complessita'.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:07:51",
+   "frame": "frame-230",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-16",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:07:51"
+    }
+   ]
+  },
+  {
+   "uid": "outfunnel-lezione-19::KA-04",
+   "peso": "supporto",
+   "tipo": "",
+   "contenuto": "Alternative/complementi alla Sales Page per qualificare: quiz di qualificazione (domande su reddito, età, necessità) e filtri più stretti direttamente nel targeting delle ads.",
+   "ancora": "",
+   "fonte": "outfunnel-lezione-19#\"3.-alternative\"",
+   "frame": "",
+   "run": "outfunnel-lezione-19",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

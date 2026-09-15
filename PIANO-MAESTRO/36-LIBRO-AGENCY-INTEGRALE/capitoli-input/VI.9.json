@@ -1,0 +1,838 @@
+{
+ "capitolo": "VI.9",
+ "parte": "VI.9",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Design e resa visiva",
+ "libro": "VI",
+ "libro_titolo": "Contenuto, brand, lanci",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "3zJpI8-7TW4::KA-11",
+  "3zJpI8-7TW4::KA-12",
+  "3zJpI8-7TW4::KA-13",
+  "3zJpI8-7TW4::KA-14",
+  "3zJpI8-7TW4::KA-15",
+  "3zJpI8-7TW4::KA-16",
+  "9CuQI0Cr4Pg::KA-18",
+  "lQMO0LdeI2c::KA-03",
+  "lQMO0LdeI2c::KA-07",
+  "lQMO0LdeI2c::KA-08",
+  "lQMO0LdeI2c::KA-22",
+  "max17-v11-roberts-design::KA-001",
+  "max17-v11-roberts-design::KA-003",
+  "max17-v11-roberts-design::KA-004",
+  "max17-v11-roberts-design::KA-005",
+  "max17-v11-roberts-design::KA-006",
+  "max17-v11-roberts-design::KA-007",
+  "max17-v11-roberts-design::KA-008",
+  "max17-v11-roberts-design::KA-010",
+  "max17-v11-roberts-design::KA-011",
+  "max17-v11-roberts-design::KA-012",
+  "max17-v11-roberts-design::KA-013",
+  "max17-v11-roberts-design::KA-014",
+  "max17-v11-roberts-design::KA-015",
+  "max17-v11-roberts-design::KA-019",
+  "max17-v11-roberts-design::KA-020",
+  "max17-v11-roberts-design::KA-021",
+  "max17-v11-roberts-design::KA-022",
+  "max17-v11-roberts-design::KA-029",
+  "max17-v11-roberts-design::KA-030",
+  "max17-v11-roberts-design::KA-031",
+  "max17-v11-roberts-design::KA-033",
+  "max17-v11-roberts-design::KA-035",
+  "max17-v11-roberts-design::KA-036",
+  "max17-v11-roberts-design::KA-037",
+  "max17-v11-roberts-design::KA-038",
+  "max17-v11-roberts-design::KA-039",
+  "max17-v11-roberts-design::KA-040",
+  "max17-v11-roberts-design::KA-050",
+  "max17-v11-roberts-design::KA-051",
+  "max17-v11-roberts-design::KA-052",
+  "max17-v11-roberts-design::KA-061"
+ ],
+ "fonti_integrali": {
+  "3zJpI8-7TW4": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/3zJpI8-7TW4\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\3zJpI8-7TW4\\contenuto-integrale.md"
+  ],
+  "9CuQI0Cr4Pg": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/9CuQI0Cr4Pg\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\9CuQI0Cr4Pg\\contenuto-integrale.md"
+  ],
+  "Pv5uzIxp96U": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/Pv5uzIxp96U\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\Pv5uzIxp96U\\contenuto-integrale.md"
+  ],
+  "lQMO0LdeI2c": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/lQMO0LdeI2c\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\lQMO0LdeI2c\\contenuto-integrale.md"
+  ],
+  "max17-v11-roberts-design": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "3zJpI8-7TW4::KA-11",
+   "peso": "portante",
+   "tipo": "Design / Contrasto colore",
+   "contenuto": "Primo principio design: colori molto saturati (rosso, verde) in contrasto con lo sfondo, altrimenti il pulsante 'non si vede'.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:05:10",
+   "frame": "frame-160",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-11",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:05:10"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-12",
+   "peso": "supporto",
+   "tipo": "Design / Forma riconoscibile",
+   "contenuto": "Secondo principio: forma universalmente riconoscibile come pulsante (rettangolo con angoli smussati). Sconsigliato: forme non convenzionali come una stella.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:05:18",
+   "frame": "frame-160",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-12",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:05:18"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-13",
+   "peso": "supporto",
+   "tipo": "Design / Anti-pattern pulsante-testo",
+   "contenuto": "Anti-pattern mostrato con esempio visivo: pulsante con troppo testo che prende l'intera larghezza del sito 'sembra una sezione, non sembra un pulsante' - non viene cliccato perche' non riconosciuto come elemento interattivo.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:05:31",
+   "frame": "frame-190",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-13",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:05:31"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-14",
+   "peso": "supporto",
+   "tipo": "Design / Coerenza stilistica",
+   "contenuto": "Terzo principio: mantenere lo stesso stile per tutti i pulsanti del sito, altrimenti l'utente non distingue cosa e' cliccabile.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:05:38",
+   "frame": "frame-170",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-14",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:05:38"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-15",
+   "peso": "supporto",
+   "tipo": "Design / Rischio over-styling",
+   "contenuto": "Effetti dinamici (glow, vibrazione) su pulsanti possono generare l'effetto opposto (diffidenza, percepito come 'offerta speciale sospetta') se esagerati. Consiglio: glow leggero o pulsante statico fisso.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:05:58",
+   "frame": "frame-180",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-15",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:05:58"
+    }
+   ]
+  },
+  {
+   "uid": "3zJpI8-7TW4::KA-16",
+   "peso": "portante",
+   "tipo": "Design / Gerarchia filled vs ghost",
+   "contenuto": "Gerarchia tra pulsanti: 'field' (pieni) per azione primaria, 'ghost' (solo contorno) per azione secondaria. Dato citato: i ghost convertono mediamente il 60% in meno dei field. DA VERIFICARE: fonte del dato non citata a voce nel video.",
+   "ancora": "",
+   "fonte": "3zJpI8-7TW4#00:06:19",
+   "frame": "frame-190",
+   "run": "3zJpI8-7TW4",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "3zJpI8-7TW4::KA-16",
+     "run": "3zJpI8-7TW4",
+     "fonte": "3zJpI8-7TW4#00:06:19"
+    }
+   ]
+  },
+  {
+   "uid": "9CuQI0Cr4Pg::KA-18",
+   "peso": "supporto",
+   "tipo": "Copywriting / Struttura output finale",
+   "contenuto": "Struttura finale del copy immagine a 3 sezioni: [ALTO/giallo: hook] + [CENTRO: foto gaming room aspirazionale] + [BASSO/celeste: nome prodotto + bullet feature]. Ordine di consumo reale: immagine vista per prima (attrazione estetica) -> testo alto letto -> feature basse.",
+   "ancora": "",
+   "fonte": "9CuQI0Cr4Pg#0:16:22",
+   "frame": "frame-487",
+   "run": "9CuQI0Cr4Pg",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "9CuQI0Cr4Pg::KA-18",
+     "run": "9CuQI0Cr4Pg",
+     "fonte": "9CuQI0Cr4Pg#0:16:22"
+    }
+   ]
+  },
+  {
+   "uid": "Pv5uzIxp96U::KA-22",
+   "peso": "contesto",
+   "tipo": "Copy / Formattazione bullet list",
+   "contenuto": "Una bullet list deve avere spazio visibile tra marcatore e testo, altrimenti illeggibile. Enfasi tipografica (bold) va usata per evidenziare le parole chiave nei punti.",
+   "ancora": "",
+   "fonte": "Pv5uzIxp96U#00:30:04",
+   "frame": "frame-888",
+   "run": "Pv5uzIxp96U",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "Pv5uzIxp96U::KA-22",
+     "run": "Pv5uzIxp96U",
+     "fonte": "Pv5uzIxp96U#00:30:04"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-03",
+   "peso": "supporto",
+   "tipo": "TERMINOLOGIA",
+   "contenuto": "Hero Section = prima sezione visiva di un sito web, quella che l'utente vede senza scrollare. 'Questa cosa gialla si chiama Hero section.' Termine fondamentale del vocabolario copy/UX per posizionarsi come professionista.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:05:38",
+   "frame": "frame-0170.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-03",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:05:38"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-07",
+   "peso": "supporto",
+   "tipo": "TERMINOLOGIA",
+   "contenuto": "Bounce Rate = quando una persona CAMBIA PAGINA nel sito (naviga verso un'altra pagina dello stesso sito). NON equivale ad abbandono del sito. Definizione precisa fondamentale per parlare di performance web con i clienti.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:13:43",
+   "frame": "frame-0413.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-07",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:13:43"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-08",
+   "peso": "supporto",
+   "tipo": "TERMINOLOGIA",
+   "contenuto": "Exit Rate = quando la SESSIONE TERMINA su quella pagina (persona chiude browser, va su altro sito). Bounce rate e exit rate sono metriche distinte — confonderle porta ad analisi errate delle performance copy. Sapere la differenza = credibilità professionale.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:14:01",
+   "frame": "frame-0413.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-08",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:14:01"
+    }
+   ]
+  },
+  {
+   "uid": "lQMO0LdeI2c::KA-22",
+   "peso": "supporto",
+   "tipo": "STRATEGIA-ECOMMERCE",
+   "contenuto": "E-commerce UX rule: 'Metti come primissima cosa il prodotto più venduto.' Se la gente arriva sul sito cercando un prodotto specifico, farglielo trovare subito = conversion optimization. Homepage come storefront — bestseller in evidenza, non catalogo generico o brand story.",
+   "ancora": "",
+   "fonte": "lQMO0LdeI2c#0:35:26",
+   "frame": "frame-1073.png",
+   "run": "lQMO0LdeI2c",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "lQMO0LdeI2c::KA-22",
+     "run": "lQMO0LdeI2c",
+     "fonte": "lQMO0LdeI2c#0:35:26"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-001",
+   "peso": "portante",
+   "tipo": "tesi",
+   "contenuto": "La tesi del video: 'Claude is the world's number one design agent for building beautiful websites. But just because your site looks pretty doesn't mean that it will sell or get customers. For that, you need to use the correct skills.' Le sette skill sono il ponte fra bello e vendente: sito bello + mobile optimized + copy che sembra scritto da un umano + struttura corretta, senza essere un esperto di design.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#0:00-0:31",
+   "frame": "transcript_clean.txt + frame-001.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-002",
+   "peso": "contesto",
+   "tipo": "formato",
+   "contenuto": "Il mazzo di slide del video e' un deck HTML costruito dall'autore e servito in locale: la barra indirizzi mostra '127.0.0.1:5497/index.html'. Non e' Keynote ne' Figma — il deck e' esso stesso un artefatto Claude Design, con navigazione a sezioni (indicatore a pallini sulla destra).",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#0:34",
+   "frame": "frame-018.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-003",
+   "peso": "supporto",
+   "tipo": "grammatica",
+   "contenuto": "Grammatica ricorrente di ogni slide del deck: [SKILL 0N · CATEGORIA] eyebrow in maiuscoletto spaziato / numerone 0N in serif enorme / titolo in serif con una parola in corsivo colorata / citazione-regola in corsivo grigio / chip con gli oggetti concreti del livello / striscia inferiore '· LIVE DEMO · COSA SI VEDE ·' / frase-ponte 'next: ...'. E' un template di slide riusabile per qualunque materiale didattico.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#0:34-20:36",
+   "frame": "frame-018.png, frame-053.png, frame-273.png, frame-448.png, frame-450.png, frame-557.png, frame-619.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-004",
+   "peso": "portante",
+   "tipo": "livello",
+   "contenuto": "LIVELLO 1 — FIND THE STANDARD. Slide: 'SKILL 01 · REFERENCE — 01 — Find the standard' — citazione: 'Pick the site you wish you'd built.' La mossa: trovare un sito della tua nicchia che sia gold standard, che abbia vinto premi, che converta clienti, e usarlo come sorgente di design DNA.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#0:34",
+   "frame": "frame-018.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-005",
+   "peso": "supporto",
+   "tipo": "riferimenti",
+   "contenuto": "I sei siti gold-standard mostrati nel muro di riferimento del Livello 1, etichettati sotto ogni tile: APPLE ('Hola, Neo.' / MacBook Neo), MINTLIFY ('The Intelligent Knowledge Platform' / 'Built for the intelligence age'), MODAL ('AI infrastructure that developers love'), MERCURY (testimonianza di Fred Fugglestone, Head of Ops), LINEAR ('Purpose-built for modern product workflows at its core, Linear sets a new standard for planning and building products'), SUPERHUMAN ('How it works').",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#0:38-0:52",
+   "frame": "frame-020.png, frame-027.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-006",
+   "peso": "portante",
+   "tipo": "tool",
+   "contenuto": "refers.design — 'Design Research for the AI Era'. A voce l'autore lo pronuncia 'referral.design' ma la barra indirizzi mostra refers.design. Sidebar: + New research, Web apps, iOS apps, Styles (Beta). Bottone 'Connect MCP' in alto. Tab Page Types: Dashboard, Product Page & Landing, Paywall & Subscription, Log In, Product Details, Profile & Account, 404 Page, Catalog Page, Blog, About, Careers, Contacts, Developers Page, Integration Page, Media Kit. Clienti: Atlassian, Plaid, ramp, Retool, Spotify, Webflow. Badge Product Hunt 5.0 con 15 recensioni.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#1:00-1:14",
+   "frame": "frame-031.png, frame-033.png, frame-038.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-007",
+   "peso": "portante",
+   "tipo": "artefatto",
+   "contenuto": "Il file DESIGN.md di refers.design e' l'artefatto centrale del Livello 1. Pannello con quattro tab: DESIGN.md | Tokens.of | CSS Variables | Design Tokens, toggle Compact/Extended, bottoni Copy e .md. Struttura: titolo '# <Brand> — Style Reference', una frase-atmosfera in blockquote, '**Theme:** Light', un paragrafo che nomina la disciplina cromatica, poi '## Tokens — Colors' come tabella Name|Value|Token|Role, poi '## Tokens — Typography' con famiglia/sostituti/pesi/dimensioni/line-height/letter-spacing/OpenType features, poi '### Type Scale' come tabella Role|Size|Line Height|Letter Spacing|Token.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#1:30-1:40",
+   "frame": "frame-046.png, frame-051.png, _zoom/z051a.png, _zoom/z051b.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-008",
+   "peso": "supporto",
+   "tipo": "tecnica",
+   "contenuto": "Nel DESIGN.md ogni colore non ha solo un nome e un hex ma una DESCRIZIONE DI RUOLO IN PROSA. Testo verbatim del token brand di Mintlify: 'Brand links, active nav state, feature icons, decorative dots in eyebrow labels, the thin underline on inline code references — the only chromatic accent in a monochrome system, applied sparingly to make functional moments feel switched on.' Cloud Gray: 'Input borders, card outlines on hover states, secondary divider lines that need a step more presence than Mist Gray.' Mist Gray: 'Subtle dividers, hairline strokes on cards, low-emphasis backgrounds, and the lightest fills that need to read as a surface.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#7:24-8:04",
+   "frame": "frame-223.png, frame-243.png, _zoom/z223.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-009",
+   "peso": "contesto",
+   "tipo": "dati",
+   "contenuto": "Tokens tipografici del DESIGN.md di Mintlify letti dall'ingrandimento 4x: famiglia unica Inter (nessuna seconda famiglia nel sistema), sostituti dichiarati IBM Plex Sans / General Sans, pesi 400-500-600, dimensioni 13/14/15/16/18/20/24/40/57 px, line-height 1.18/1.35/1.38/1.53/1.50/1.71, letter-spacing -0.03em a 57px scendendo a -0.05em da 40px fino a 16px, neutro a 13-14px, +0.05em sulle eyebrow maiuscole; OpenType features: \"ss01\" on, \"cv11\" on. Type scale: caption 13px/1.5, body 16px/1.5/-0.16px, subheading 20px/1.3/-0.2px, heading-sm 24px/1.35/-0.24px. I valori esadecimali dei colori sono al limite di leggibilita' a 360p: Mint Green ~#0c8c5e [incerto], Ink Black ~#08090a [incerto], True Black #000000, Paper White #ffffff, Mist Gray ~#f1f2f2 [incerto], Cloud Gray [illeggibile].",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#1:40",
+   "frame": "frame-051.png, _zoom/z051a.png, _zoom/z051b.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-010",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Il concetto operativo del Livello 1, verbatim: 'what this has done is given us the design DNA, the design blueprint such that we can actually understand what makes this design fantastic. And when we give that to Claude, we can build a version for ourselves.' Il riferimento non si copia: si SMONTA in token e regole, e i token si danno a Claude.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#1:30-1:43",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-011",
+   "peso": "portante",
+   "tipo": "livello",
+   "contenuto": "LIVELLO 2 — THE WHOLE MAP. Slide: '02 — The whole map' — citazione: 'Everyone demos one landing page. The $10k site is seven of them.' Diagramma stile incisione ottocentesca su carta invecchiata con annotazioni di misura reali: HOME PAGE 72px, DEPTH 3 LEVELS, spaziature 120px fra i rettangoli di pagina.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#1:44-1:56",
+   "frame": "frame-053.png, frame-059.png, frame-201.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-012",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "La card Relume nella slide 02, verbatim: 'Relume — One brief in: sitemap, wireframes and page architecture out. / Human-made components, assembled by AI — the system behind 2M websites. / Stays consistent from the first section to the fiftieth — no drift by page three. / Pulls into Claude via MCP — the code is yours, no lock-in.' THE RULE: 'Relume is the bones. Your design system is the skin.' next: 'the moment that stops the scroll'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#8:54",
+   "frame": "frame-268.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-013",
+   "peso": "portante",
+   "tipo": "tool",
+   "contenuto": "Relume (relume.ai) — 'Build a marketing site you'd actually publish. Start with a brief. Relume builds the sitemap, wireframes, and a marketing site you'd actually publish. AI does the work. You make the calls.' Badge 'TRUSTED BY 2M+ FREELANCERS & AGENCIES'. Campo di input: 'Drop in your video, brief or a URL...'. Toggle Publish/Export + bottone Generate Website. Clienti: Rakuten, Superside, headspace, DEPT., DARKTRACE, ROKT. Tab del builder: Brief | Sitemap | Wireframe | Design.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#2:04-2:06",
+   "frame": "frame-063.png, frame-064.png, frame-562.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-014",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Brief dettato a Relume, verbatim: 'hey that I want you to build for me a roofing company that is best-in-class using the below design principles' — seguito dall'URL preso da refers.design oppure dall'intero DESIGN.md copiato col bottone Copy.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#2:47-2:53",
+   "frame": "transcript_clean.txt + frame-084.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-015",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Prompt DIGITATO a Claude Desktop per costruire il sito, trascritto parola per parola dal ritaglio 4x: 'hey there i want you to go ahead and build for me a beautiful website based on this particular link using the exact design systems and layouts that are included in this zip file that we built in relume'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#4:04",
+   "frame": "frame-123.png, _zoom/z123p.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-016",
+   "peso": "contesto",
+   "tipo": "tecnica",
+   "contenuto": "Menu Export di Relume, per intero: Figma · Webflow · React · HTML (scelto) · 'Export to Claude...' [New] · Export to TXT · Export to CSV · Export to Excel. Esiste quindi un export NATIVO verso Claude, ma l'autore sceglie HTML/zip per mostrare il caso generale.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#3:58",
+   "frame": "frame-120.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-017",
+   "peso": "contesto",
+   "tipo": "dati",
+   "contenuto": "Style Guide di Relume per il progetto 'Mintlify Roofing', Concept 1: scala Neutrals + Salem #0C8C5E (verde, bloccato col lucchetto) + Cello #1D3557 (blu notte) + Burnt Sienna #E76F51 (arancio terracotta). Tipografia Body = Inter (Google, Free). Bottoni 'Pitch Concepts' e 'Shuffle'. Popup: 'New schemes available — Pick a scheme to apply to your page, based on your new colors'.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#3:42-3:44",
+   "frame": "frame-112.png, frame-113.png, _zoom/z112.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-018",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Meta title e meta description generati da Relume, verbatim. Sito: Meta title 'Roofing Company | Summit Roofing Co.'; Meta description 'Trusted residential and commercial roofing contractor. Roof repair, replacement, installation and maintenance with transparent pricing and a clear process. Get a free quote.' Pagina Services: slug /services; Meta Title 'Roofing Services | Repair, Replacement & Installation — Summit Roofing'; Meta Description 'Explore our roofing services: roof repair, full replacement, new installation and maintenance for residential and commercial properties. See what each service involves.' Social preview: 1200x630 pixels, override per pagina.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#5:32-5:36",
+   "frame": "frame-167.png, frame-169.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-019",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Regola di produzione citata a voce durante il passaggio sitemap: 'an ounce in print is worth a pound in post' — un'oncia di lavoro in fase di stampa/progettazione vale una libbra in post-produzione. Giustifica il tempo speso su sitemap e wireframe prima di generare qualunque pixel.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#3:12-3:16",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-020",
+   "peso": "portante",
+   "tipo": "livello",
+   "contenuto": "LIVELLO 3 — THE SCROLL-STOPPER. Slide: 'SKILL 03 · HERO — 03 — The scroll-stopper' — citazione: 'Generate the exact image each section needs. Nothing generic.' Due badge sotto: 'Higgsfield generates' e 'Claude places' — la divisione del lavoro fra generatore di immagini e agente che le colloca. Striscia: '· LIVE DEMO · HERO IMAGE + MOTION, GENERATED ON CAMERA ·'. next: 'most visitors aren't on a monitor'.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#9:04",
+   "frame": "frame-273.png, frame-380.png, _zoom/z273.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-021",
+   "peso": "portante",
+   "tipo": "tool",
+   "contenuto": "Higgsfield (higgsfield.ai) — 'AI IMAGE GENERATOR BUILT FOR PROFESSIONALS — Commercial-ready visuals in seconds. Perfect text, consistent characters, and every leading model at your fingertips.' Modello di default a schermo: Nano Banana Pro, ratio 3:4. Nav: Explore, Image, Video, Audio, Edit, Draw, Cinema Studio (New), Marketing Studio (New), Your Presets, MCP & Apps (New), Competitor Intel, Academy, Community, Onboard (New), Upgrade (50% OFF), Enterprise, Assets.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#5:56",
+   "frame": "frame-179.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-022",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Connessione Higgsfield a Claude via MCP, dalla pagina higgsfield.ai/mcp. Tab disponibili: Claude | Grok Bot | ChatGPT | Cursor | Claude Code | OpenClaw | Hermes. Toggle MCP|CLI. Passo 1: 'Copy the Higgsfield connector URL — You'll paste this URL into Claude in the next step' → campo con https://mcp.higgsfield.ai/mcp. Passo 2: 'Go to Claude → Customize — In Claude desktop or claude.ai, go to Customize → Connectors, Name it Higgsfield and paste the URL.' Passo 3: 'Connect, sign in and start — Sign in, then ask Claude to generate an image or video.' Nota a pie': 'If you are using Claude Code or Codex, it's better to use the CLI'.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#6:04-6:36",
+   "frame": "frame-183.png, frame-199.png, _zoom/z183.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-023",
+   "peso": "contesto",
+   "tipo": "prompt",
+   "contenuto": "Prompt di connessione, dettato a voce: 'hey I want you to connect to the Higgsfield CLI so we can create beautiful images and videos. Here's the link'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#6:21-6:27",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-029",
+   "peso": "portante",
+   "tipo": "tecnica",
+   "contenuto": "UI SNIPING — definizione verbatim: 'this is what I call UI sniping. UI sniping is the idea that we can find any UI component that we like and bring it over.' Il problema dichiarato quando la fonte e' un'immagine e non un componente: 'The problem with this is this is not a component. This is not a UI thing that we can just grab. We need to literally basically create this, but in the style for our own website.' Cioe' non si copia il codice: si ricostruisce l'effetto dentro il proprio design system.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#10:08-10:16 e #18:35-18:42",
+   "frame": "transcript_clean.txt + frame-303.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-030",
+   "peso": "supporto",
+   "tipo": "prompt",
+   "contenuto": "Prompt per costruire un componente su misura da un riferimento visivo, verbatim: 'Hey there, I want you to make a roofing version of this. And what I would like you to do is enable them to upload an image of the roof, answer a few questions, and then I want a beautiful Siri-like animation to play and then actually show what the price is for them, and we can capture that information.' — accompagnato dall'immagine di riferimento incollata e, in un secondo passaggio, da un VIDEO di riferimento per l'animazione scaricato da Savee.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#10:26-10:44",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-031",
+   "peso": "supporto",
+   "tipo": "tecnica",
+   "contenuto": "Doppio riferimento per un componente animato: (1) un'IMMAGINE di riferimento per il layout (una card di signup trovata su Savee: 'Welcome, you're starting your first journey here! Add your avatar and pick a nickname for quick start.'), (2) un VIDEO di riferimento per il movimento (card scura con esplosione radiale di particelle bianche e la parola 'Calculating.', scaricata da Savee come 'video overview suggestion for Claude to use'). Due riferimenti distinti per due dimensioni distinte.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#10:04-10:52",
+   "frame": "frame-303.png, frame-304.png, frame-327.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-032",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Il widget preventivo costruito (file:///Users/jackroberts/Desktop/roof-quote-section/welcome-card.html): card verticale con illustrazione ad acquerello blu di tetti, titolo 'A free quote for your roof.', campi 'Your roof' ('A photo helps accuracy. PNG or JPG — optional') + Upload, 'Postcode' [M1 4BT], 'The roof' [Full replacement], bottone nero 'Get my price'. Stati dell'animazione narrati: 'checking pitch and tiles' → 'price of materials' → 'almost there' → 'having a look around' → risultato £7,150. Card finale: 'FULL REPLACEMENT · £7,150 — Fixed price confirmed by a free 20-minute survey.' + Book free survey + avatar + '4.9 from 812 roofs'.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#11:04-11:20",
+   "frame": "frame-333.png, frame-341.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-033",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Il widget integrato nel sito, sezione verbatim: 'SIXTY SECONDS — Get a number before anyone visits — Postcode, roof type, a photograph if you have one. The free survey confirms the number. It does not move after that.' Con due prove sociali a hover: 'Booked in this week' e '4,800 roofs kept dry'. La promessa 'It does not move after that' e' l'obiezione numero uno del settore preventivi, gestita in una riga.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#19:22-19:34",
+   "frame": "frame-582.png, frame-588.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-034",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "L'hero del sito Ridgeline, verbatim: badge 'NEW · Same-day storm response across the country →'; H1 'The roof your house was supposed to have'; sub 'Inspection, repair and replacement for homes and businesses, with a written scope before anyone climbs a ladder.'; form [Email address] + [Book my inspection]; micro-copy 'Free, and you keep the report whether you hire us or not.' Nav: Home, Services, About us, Projects, Blog | Contact us | Book an inspection.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#7:10-8:28",
+   "frame": "frame-216.png, frame-226.png, frame-255.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-035",
+   "peso": "supporto",
+   "tipo": "pattern",
+   "contenuto": "Pattern di sezione 'report interattivo' come scroll-stopper: sotto l'hero, un finto pannello software con sidebar (Overview, Findings, Photographs, Materials, Scope of works, Enclosed, Warranty), barra di ricerca 'Search this report' e bottone '+ Ask a roofer'. Intestazione 'Inspection · 14 May — What we found up there — Single-storey hip roof · 24 squares · architectural asphalt, 19 years old'. Findings: 'Flashing failed at the chimney saddle — Water is tracking behind the counter-flashing into the deck.' / 'Granule loss on the south slope — Sun-side wear consistent with age. Watch, do not replace yet.' / 'Decking is sound throughout — No soft spots. No sheathing replacement in this quote.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#7:10",
+   "frame": "frame-216.png, _zoom/z216.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-036",
+   "peso": "supporto",
+   "tipo": "pattern",
+   "contenuto": "Pattern 'Loved by your favorite companies' — carosello di card-logo su fondo scuro testurizzato, ognuna con UNA frase specifica e 'Read story →'. Verbatim: OpenAI 'How OpenAI keeps its research running through a full storm.' / Anthropic 'How Anthropic re-roofed its HQ without moving a single team off-site.' / Slack 'How Slack's atrium skylights were re-kerbed over one quiet weekend.' / PayPal 'How PayPal's data-centre roof passed its insurer audit first time.' / Notion 'How Notion turned a leaking warehouse into its calmest office.' / Spotify 'How Spotify's studio block was soundproofed from the roof down.' / Stripe 'How Stripe's listed HQ kept its copper roof and its character.' / Dropbox 'How Dropbox consolidated four roofs onto one maintenance plan.' Cliccando si apre la customer story con due metriche secche (es. 84 'Squares of single-ply' / 0 'Trading days lost').",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#7:58-8:26 e #16:14",
+   "frame": "frame-240.png, frame-249.png, frame-254.png, frame-488.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-037",
+   "peso": "portante",
+   "tipo": "livello",
+   "contenuto": "LIVELLO 4 — MOBILE. Slide 'SKILL 04 · MOBILE — 04 — Where the traffic is'. Striscia: '· LIVE DEMO · EVERY PAGE AUDITED AT 390PX ·'. next: 'words that don't sound like AI.' Il numero 390px (larghezza logica di un iPhone 14/15 in portrait) compare SOLO nella slide, mai a voce: e' il numero operativo del livello.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#14:54",
+   "frame": "frame-448.png, _zoom/z448.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-038",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Dato dichiarato a voce al Livello 4: 'level four realistically is understanding that 60% of traffic at least actually is on our phones'. Nessuna fonte citata per il 60%.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#12:55",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-039",
+   "peso": "portante",
+   "tipo": "prompt",
+   "contenuto": "Prompt per l'ottimizzazione mobile, verbatim: 'Hey, I want you to mobile optimize this website. Go out and find for me the most proficient, well-read repos that have been battle tested that will make sure that it follows all of the best mobile design principles.' Nota di tecnica: non si chiede a Claude di sapere le regole, si chiede di ANDARE A CERCARE i repo battle-tested che le contengono.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#13:21-13:35",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-040",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Metodo mobile dichiarato, verbatim: 'we'd start off with the mobile first and then work backwards to get to the actual full desktop version. And there is no substitute but to actually going through the mobile yourself. Claude can do loads of checks using the repo that I'll share below in the skills section, but ultimately speaking you want to go through the website yourself and check it out.' Mobile-first, poi a ritroso al desktop, e la verifica finale resta umana.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#14:22-14:35",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-041",
+   "peso": "contesto",
+   "tipo": "osservato",
+   "contenuto": "Cosa cambia davvero nella versione stretta del sito, osservato dai frame: la nav si chiude in hamburger, la fila di 5 loghi diventa griglia a 2 colonne (OpenAI/Anthropic — Slack/PayPal — Stripe), il carosello 'Loved by your favorite companies' diventa swipe orizzontale con frecce, il report d'ispezione diventa lista verticale con foto impilate. Ammissione a voce: 'believe it or not, it did not look like this initially. I had to do this... it's not perfect.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#13:46-14:08",
+   "frame": "frame-414.png, frame-418.png, frame-419.png, frame-425.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-050",
+   "peso": "portante",
+   "tipo": "livello",
+   "contenuto": "LIVELLO 6 — ICONS + SHOWSTOPPERS. Slide 'SKILL 06 · DETAILS — 06 — Icons + showstoppers' con una fila di 8 loghi di librerie di icone e il numero '941 LICENSED ICONS — one subscription, in the repo, forever'. Striscia: '· LIVE DEMO · ONE UI MOMENT SNIPED FROM SAVEE, REBUILT IN OUR BRAND ·'. next: 'nobody can find it yet'.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#18:32",
+   "frame": "frame-557.png, _zoom/z557.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-051",
+   "peso": "supporto",
+   "tipo": "tool",
+   "contenuto": "21st.dev — libreria di componenti UI copiabili come codice. Sidebar: Components (Featured, Newest, Authors, Libraries [Updated]) e Marketing Blocks (Announcements, ASCII Art [New], Backgrounds, Borders, Calls to Action, Clients, Comparisons). Componenti visti: Orbital Sphere, Scroll Animations (Container Scroll Animation), Interactive 3D, Shine Border, Border Beam. Nella categoria Borders: tab Recommended | Most downloaded | Most bookmarked | Newest.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#18:54-19:00",
+   "frame": "frame-568.png, frame-571.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-052",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Flusso di UI sniping da 21st.dev, verbatim: 'If you've got the Relume MCP you can just ask it, or if you're grabbing it from a different website like 21st.dev you can come down and literally just copy the code, head over to Claude and say: Hey, add this to my website.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#19:07-19:19",
+   "frame": "transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-053",
+   "peso": "contesto",
+   "tipo": "dati",
+   "contenuto": "Librerie di icone citate: Icons8, Flaticon, IconScout. Costo dichiarato: '$10 to 12' al mese per stare su una di queste piattaforme; l'autore dichiara di non essere sponsorizzato. Su flaticon.com, sezione UICONS — 'The most wanted free SVG user interface icons' — quattro stili con conteggi reali: Bold 50,689 icons, Regular 10,899 icons, Solid 10,899 icons, Thin 10,899 icons. Consiglio di targeting: 'if you're doing a kind of new-age cool vibe, younger demographic — millennial or Gen Z or below — you may want to use cool graphics.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#19:41-20:29",
+   "frame": "frame-596.png, transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-060",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "Deploy, verbatim: 'to post it, you just need to basically tell Claude to upload this to GitHub in a private repo... And then you can run the entire thing from Vercel. Vercel hosts everything. It even hosts many of the websites that I show you on this channel. Super duper easy to set up. Explain to Claude and it will explain it to you step by step.'",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#22:14-22:33",
+   "frame": "transcript_clean.txt, frame-668.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-061",
+   "peso": "portante",
+   "tipo": "tesi",
+   "contenuto": "La chiusura del video, verbatim: 'these design skills are handy and they do help us build beautiful websites that sell. But the truth is, if you don't have your own design operating system, you're leaving way too many hours and productivity and value on the table.' Le sette skill sono i pezzi; il sistema che li orchestra (design OS) e' il passo successivo.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#22:35-22:55",
+   "frame": "frame-683.png, transcript_clean.txt",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-065",
+   "peso": "contesto",
+   "tipo": "curriculum",
+   "contenuto": "Sezione 08 Design del corso a pagamento dell'autore, lezione per lezione: 8.1 Claude Code Design (NEW) — Use the workbook / Animations baked in / Export and share; 8.2 HTML presentations — Drop in for any website / CSS only / SVG patterns / Motion that converts; 8.3 Animated graphics; 8.4 Spline 3D; 8.5 ElevenLabs + Higgsfield — Voice generation / Video generation / Combining pipeline; 8.6 Nano Banana images — Best prompt patterns / Production workflow / Quality control; piu' 'Auto-fetch brand assets — Just enter your logo from any URL, with Firecrawl'. Il corso intero: 10 PARTS · 46 LESSONS · 40+ HOURS.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#12:32",
+   "frame": "frame-377.png, frame-362.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-066",
+   "peso": "contesto",
+   "tipo": "limite",
+   "contenuto": "Limiti dichiarati del video: (1) il corpo completo della skill Design Loop non e' mai a schermo (solo tabella dei 4 meccanismi + aside); (2) SlopMonster (github.com/ItsssssJack/SlopMonster) e' solo linkato in descrizione, mai aperto; (3) la generazione con Higgsfield non e' mai mostrata dal vivo malgrado la slide dica 'GENERATED ON CAMERA'; (4) Claude non e' mai mostrato mentre lavora — si vede il prompt e si vede il risultato, non il mezzo; (5) il 'before' del sito non esiste a schermo; (6) incoerenza 28 keyword (voce) vs 351 keyword (documento), non spiegata; (7) i titoli delle 4 fonti del copy sono coperti dalla webcam.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#intero",
+   "frame": "analisi trasversale",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v11-roberts-design::KA-067",
+   "peso": "contesto",
+   "tipo": "limite",
+   "contenuto": "Contenuto misto educativo/promozionale dichiarato: circa 90 secondi su 1376 (~6.5%) sono promo della community gratuita Skool 'AI Automation Vault' (33.3k membri, 324 online, 5 admin) e del corso a pagamento 'Claude Code FULL COURSE (Build & Sell)'. In descrizione tre link affiliati dichiarati: Higgsfield, Relume, e Glaido con codice sconto WHSAAKXO per 1 mese gratis.",
+   "ancora": "",
+   "fonte": "pUu4G2lINnk#11:56-12:36",
+   "frame": "frame-133.png, frame-134.png, frame-362.png",
+   "run": "max17-v11-roberts-design",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

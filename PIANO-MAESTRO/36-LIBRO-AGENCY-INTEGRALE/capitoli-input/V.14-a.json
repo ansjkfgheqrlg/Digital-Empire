@@ -1,0 +1,2219 @@
+{
+ "capitolo": "V.14",
+ "parte": "V.14-a",
+ "parte_n": 1,
+ "parti_totali": 2,
+ "titolo": "Workflow e automazione (n8n e simili)",
+ "libro": "V",
+ "libro_titolo": "Costruire con l'AI",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "max18-v09-NmoOZVTrTXA::KA-138",
+  "max18-v09-NmoOZVTrTXA::KA-143",
+  "max18-v09-NmoOZVTrTXA::KA-146",
+  "max18-v09-NmoOZVTrTXA::KA-150",
+  "max18-v09-NmoOZVTrTXA::KA-152",
+  "max18-v09-NmoOZVTrTXA::KA-153",
+  "max18-v09-NmoOZVTrTXA::KA-155",
+  "max18-v09-NmoOZVTrTXA::KA-156",
+  "max18-v09-NmoOZVTrTXA::KA-157",
+  "max18-v09-NmoOZVTrTXA::KA-158",
+  "max18-v09-NmoOZVTrTXA::KA-159",
+  "max18-v09-NmoOZVTrTXA::KA-160",
+  "max18-v09-NmoOZVTrTXA::KA-161",
+  "max18-v09-NmoOZVTrTXA::KA-162",
+  "max18-v09-NmoOZVTrTXA::KA-163",
+  "max18-v09-NmoOZVTrTXA::KA-164",
+  "max18-v09-NmoOZVTrTXA::KA-165",
+  "max18-v09-NmoOZVTrTXA::KA-168",
+  "max18-v09-NmoOZVTrTXA::KA-169",
+  "max18-v09-NmoOZVTrTXA::KA-172",
+  "max18-v09-NmoOZVTrTXA::KA-180",
+  "max18-v09-NmoOZVTrTXA::KA-181",
+  "max18-v09-NmoOZVTrTXA::KA-183",
+  "max18-v09-NmoOZVTrTXA::KA-184",
+  "max18-v09-NmoOZVTrTXA::KA-185",
+  "max18-v09-NmoOZVTrTXA::KA-187",
+  "max18-v09-NmoOZVTrTXA::KA-188",
+  "max18-v09-NmoOZVTrTXA::KA-190",
+  "max18-v09-NmoOZVTrTXA::KA-217",
+  "max18-v09-NmoOZVTrTXA::KA-223",
+  "max18-v09-NmoOZVTrTXA::KA-224",
+  "max18-v09-NmoOZVTrTXA::KA-228",
+  "max18-v09-NmoOZVTrTXA::KA-229",
+  "max18-v09-NmoOZVTrTXA::KA-259",
+  "max18-v09-NmoOZVTrTXA::KA-270",
+  "max18-v09-NmoOZVTrTXA::KA-271",
+  "max18-v09-NmoOZVTrTXA::KA-282",
+  "max18-v09-NmoOZVTrTXA::KA-283",
+  "max18-v09-NmoOZVTrTXA::KA-299",
+  "max18-v09-NmoOZVTrTXA::KA-304",
+  "max18-v09-NmoOZVTrTXA::KA-305",
+  "max18-v09-NmoOZVTrTXA::KA-306",
+  "max18-v09-NmoOZVTrTXA::KA-311",
+  "max18-v06-JTn5pqm9ecM::KA-015",
+  "max18-v06-JTn5pqm9ecM::KA-016",
+  "max18-v06-JTn5pqm9ecM::KA-017",
+  "max18-v06-JTn5pqm9ecM::KA-019",
+  "max18-v06-JTn5pqm9ecM::KA-020",
+  "max18-v06-JTn5pqm9ecM::KA-021",
+  "max18-v06-JTn5pqm9ecM::KA-024",
+  "max18-v06-JTn5pqm9ecM::KA-028",
+  "max18-v06-JTn5pqm9ecM::KA-030",
+  "max18-v08-DI5aWJiFAt8::KA-086",
+  "max18-v08-DI5aWJiFAt8::KA-179",
+  "max18-v08-DI5aWJiFAt8::KA-180",
+  "max18-v08-DI5aWJiFAt8::KA-181",
+  "max18-v08-DI5aWJiFAt8::KA-183",
+  "max18-v08-DI5aWJiFAt8::KA-184",
+  "max18-v08-DI5aWJiFAt8::KA-187",
+  "max18-v08-DI5aWJiFAt8::KA-188",
+  "max18-v08-DI5aWJiFAt8::KA-189",
+  "cs2online-bonus-03::KA-01",
+  "cs2online-bonus-03::KA-02",
+  "cs2online-bonus-03::KA-03",
+  "cs2online-bonus-03::KA-04",
+  "cs2online-bonus-03::KA-05",
+  "cs2online-bonus-03::KA-06",
+  "cs2online-bonus-03::KA-07",
+  "cs2online-bonus-03::KA-08",
+  "max17-v05-jaye-agenticos::KA-026",
+  "max17-v05-jaye-agenticos::KA-027",
+  "max17-v05-jaye-agenticos::KA-028",
+  "max17-v05-jaye-agenticos::KA-029",
+  "max17-v05-jaye-agenticos::KA-030",
+  "max17-v05-jaye-agenticos::KA-062",
+  "cs2online-bonus-06::KA-01",
+  "cs2online-bonus-06::KA-02",
+  "cs2online-bonus-06::KA-03",
+  "cs2online-bonus-06::KA-04",
+  "max18-v03-belli-token::KA-027",
+  "max18-v03-belli-token::KA-031",
+  "max18-v03-belli-token::KA-033"
+ ],
+ "fonti_integrali": {
+  "max18-v09-NmoOZVTrTXA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-379-399.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-400-420.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-421-441.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-442-462.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-463-483.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v09-NmoOZVTrTXA\\_parte-484-494.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\NmoOZVTrTXA\\contenuto-integrale.md"
+  ],
+  "max18-v06-JTn5pqm9ecM": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-289-302.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-303-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-326-341.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-342-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-358-376.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v06-JTn5pqm9ecM\\_parte-368-376.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\JTn5pqm9ecM\\contenuto-integrale.md"
+  ],
+  "max18-v08-DI5aWJiFAt8": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\video-analysis.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-001-021.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-022-042.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-043-063.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-064-084.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-085-105.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-106-126.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-127-147.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-148-168.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-169-189.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-190-210.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-211-231.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-232-252.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-253-273.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-274-294.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-295-315.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-316-336.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-337-357.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-358-378.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v08-DI5aWJiFAt8\\_parte-379-393.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\DI5aWJiFAt8\\contenuto-integrale.md"
+  ],
+  "cs2online-bonus-03": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-03\\contenuto-integrale.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "cs2online-bonus-06": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-06\\contenuto-integrale.md"
+  ],
+  "max18-v03-belli-token": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max18-v03-belli-token\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-135",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "L'accesso a n8n cloud avviene tramite un nome account personalizzato a cui si aggiunge automaticamente il suffisso fisso \".app.n8n.cloud\" per formare l'URL della propria istanza.",
+   "ancora": "n8n account name precompilato con \"giovanniyoutube\" seguito dal suffisso fisso \".app.n8n.cloud\"",
+   "fonte": "NmoOZVTrTXA#56:06 (pagina di login n8n cloud) + voce 55:59-56:07",
+   "frame": "frame-0562.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-136",
+     "tipo": "precede",
+     "perche": "effettuato il login, si apre la dashboard Overview di n8n cloud"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-136",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "La dashboard \"Overview\" di n8n cloud organizza il lavoro in tab distinte — Workflows, Credentials, Executions, Variables, Data tables — ed espone in cima alcune metriche riassuntive come numero di esecuzioni in produzione, tasso di fallimento e tempo medio di esecuzione.",
+   "ancora": "Workflows (attiva), Credentials, Executions, Variables, Data tables / Prod. executions 13 ... Failure rate 46.2% ... Run time (avg.) 4.5s",
+   "fonte": "NmoOZVTrTXA#56:12 (dashboard n8n cloud \"Overview\") + voce 56:07",
+   "frame": "frame-0563.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-137",
+     "tipo": "precede",
+     "perche": "dalla dashboard si apre un nuovo workflow vuoto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-137",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Un nuovo workflow vuoto in n8n offre due punti di partenza alternativi sul canvas: aggiungere manualmente il primo nodo (\"+ Add first step...\") oppure generare la struttura iniziale con l'AI (\"✨ Build with AI\").",
+   "ancora": "+ Add first step... e ✨ Build with AI",
+   "fonte": "NmoOZVTrTXA#56:42 (canvas di un nuovo workflow n8n vuoto) + voce 56:33",
+   "frame": "frame-0568.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-139",
+     "tipo": "precede",
+     "perche": "davanti al canvas vuoto di n8n nasce l'esigenza di documentare la piattaforma a Claude Code nel file n8n.md"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-138",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Anche disponendo di Claude Code, esistono ancora compiti che si svolgono meglio dentro una piattaforma di orchestrazione visuale come n8n piuttosto che direttamente in Claude Code.",
+   "ancora": "alcune cose ancora saranno, diciamo, fate meglio su questa tipologia di piattaforma rispetto che Claude",
+   "fonte": "NmoOZVTrTXA#57:12 (canvas n8n vuoto, nessuna azione compiuta) + voce 57:03",
+   "frame": "frame-0573.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-115",
+     "tipo": "parte-di",
+     "perche": "precisa il ruolo di n8n accanto a Claude Code già introdotto in precedenza"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-143",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Esiste una repository GitHub pubblica di terze parti, \"czlonkowski/n8n-skills\" (circa 3,8 mila star, 651 fork), che fornisce skill Claude Code già pronte per costruire workflow n8n corretti appoggiandosi al server MCP \"n8n-mcp\".",
+   "ancora": "n8n-skills — Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server / Stars 3.8k",
+   "fonte": "NmoOZVTrTXA#60:42 (pagina GitHub czlonkowski/n8n-skills) + voce 60:37",
+   "frame": "frame-0608.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-142",
+     "tipo": "applica",
+     "perche": "è la fonte concreta della skill richiesta per documentare n8n"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-146",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Per n8n, l'autore czlonkowski pubblica due repository GitHub distinte e complementari: \"n8n-skills\" (le skill) e \"n8n-mcp\" (il server MCP).",
+   "ancora": "Skills: https://github.com/czlonkowski/n8n-skills ... MCP: https://github.com/czlonkowski/n8n-mcp",
+   "fonte": "NmoOZVTrTXA#61:18 (campi compilati \"Skills: .../n8n-skills\" e \"MCP: .../n8n-mcp\") + voce 61:07-61:15",
+   "frame": "frame-0614.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-145",
+     "tipo": "esempio-di",
+     "perche": "è l'esempio concreto della coppia MCP+skill appena definita"
+    },
+    {
+     "verso": "KA-143",
+     "tipo": "parte-di",
+     "perche": "conferma l'autore e completa la coppia di repository già citata"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-148",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Esecuzione concreta della clonazione delle repository dentro il progetto: Claude Code lancia due comandi \"git clone\" (per \"n8n-skills\" e per \"n8n-mcp\") e le due cartelle risultanti compaiono nell'Explorer del progetto accanto ai file di istruzioni.",
+   "ancora": "Bash → Clone n8n-skills repository — git clone https://github.com/czlonkowski/n8n-skills.g... / Bash → Clone n8n-mcp repository",
+   "fonte": "NmoOZVTrTXA#63:36 (output dei comandi Bash \"Clone n8n-skills repository\" e \"Clone n8n-mcp repository\") + voce 62:50",
+   "frame": "frame-0637.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-147",
+     "tipo": "esempio-di",
+     "perche": "mostra l'istruzione appena dettata effettivamente eseguita"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-150",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il primo system prompt generato da Claude per n8n organizza le \"fonti di riferimento locali\" in una tabella con tre colonne — Repository, Path locale, Scopo — mappando \"n8n-skills\" (7 skill che insegnano a costruire workflow) e \"n8n-mcp\" (server MCP con accesso a nodi, validazione, template) alle rispettive cartelle locali clonate.",
+   "ancora": "| Repository | Path locale | Scopo | ... | n8n-mcp | `n8n-mcp/` | MCP server che fornisce accesso a 1.084 nodi, validazione, template |",
+   "fonte": "NmoOZVTrTXA#64:30 (file n8n.md generato, sezione \"Fonti di riferimento locali\") + voce 64:27",
+   "frame": "frame-0646.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-148",
+     "tipo": "applica",
+     "perche": "documenta i path locali delle repository appena clonate"
+    },
+    {
+     "verso": "KA-155",
+     "tipo": "corretto-da",
+     "perche": "questa prima versione del prompt viene riscritta poco dopo con una struttura a 6 step più esplicita"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-151",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il server MCP \"n8n-mcp\" dà accesso, tra le altre cose, a 1.084 nodi n8n documentati e a 2.709 template di workflow.",
+   "ancora": "MCP server che fornisce accesso a 1.084 nodi, validazione, template (dettaglio esteso nella scena 250: \"n8n-mcp MCP Server (dati: 1.084 nodi, 2.709 template, validazione)\")",
+   "fonte": "NmoOZVTrTXA#64:30 (tabella \"Fonti di riferimento locali\" in n8n.md) + voce 64:27",
+   "frame": "frame-0646.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-150",
+     "tipo": "parte-di",
+     "perche": "quantifica lo scopo del server MCP già descritto nella tabella"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-152",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Il prompt n8n generato mappa ogni tipo di attività (capire quale tool MCP usare, struttura/pattern del workflow, scrivere espressioni n8n, configurare un nodo, validare, scrivere codice JavaScript o Python nei Code node, gestire il ciclo create/update/deploy, ricerca nodi, guida alla validazione, workflow AI Agent) al file SKILL.md specifico dentro \"n8n-skills/skills/\" da consultare per quel compito.",
+   "ancora": "Capire quale tool MCP usare → n8n-skills/skills/n8n-mcp-tools-expert/SKILL.md ... AI Agent workflow → n8n-skills/skills/n8n-workflow-patterns/ai_agent_workflow.md",
+   "fonte": "NmoOZVTrTXA#64:30 (tabella \"File chiave da consultare per tipo di attività\") + voce 64:27",
+   "frame": "frame-0646.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-150",
+     "tipo": "parte-di",
+     "perche": "è la seconda tabella dello stesso file di prompt n8n"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-153",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Anche se un file di istruzioni importa correttamente sia l'MCP sia le skill di una piattaforma, questo non basta: bisogna verificare che il testo generato spieghi in modo sufficientemente chiaro COME MCP e skill vanno usati insieme, altrimenti il prompt va riscritto.",
+   "ancora": "non vedo che abbia dettagliato in maniera sufficientemente chiara il fatto che bisogna utilizzare MCP e skill",
+   "fonte": "NmoOZVTrTXA#65:30 (rilettura critica del primo n8n.md) + voce 65:05",
+   "frame": "frame-0656.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-150",
+     "tipo": "contraddice",
+     "perche": "mette in discussione la completezza della prima versione del prompt appena mostrata"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-155",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Il prompt n8n riscritto definisce un processo obbligatorio a 6 step da seguire per OGNI richiesta di costruzione di un workflow, da non saltare mai: Step 1 Clarify & Plan, Step 2 Research Nodes, e altri 4 step successivi (scrittura di espressioni/codice, costruzione, validazione, attivazione).",
+   "ancora": "## Processo a 6 Step / Per OGNI richiesta di workflow, segui questi 6 step in ordine. Non saltarne nessuno.",
+   "fonte": "NmoOZVTrTXA#65:42 (n8n.md riscritto, \"## Processo a 6 Step\") + voce 65:36-65:52",
+   "frame": "frame-0658.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "applica",
+     "perche": "la riscrittura risponde direttamente alla critica sulla mancanza di dettaglio nella versione precedente"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-156",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Lo Step 1 (\"Clarify & Plan\") del processo di costruzione di un workflow n8n richiede tre azioni: identificare il trigger (webhook, schedule, evento, manuale, chat), mappare il flusso dati (origine → trasformazioni → destinazione), e usare la skill \"n8n-workflow-patterns\" per scegliere il pattern architetturale corretto.",
+   "ancora": "1. Identifica il trigger (webhook, schedule, evento, manuale, chat) ... 2. Mappa il flusso dati... 3. Usa la skill n8n-workflow-patterns per selezionare il pattern",
+   "fonte": "NmoOZVTrTXA#65:42 (n8n.md, \"### Step 1: Clarify & Plan\") + voce 65:36",
+   "frame": "frame-0658.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-155",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio operativo del primo dei 6 step definiti"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-157",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Esistono tre modi distinti e documentati per costruire un agente vocale con n8n, ciascuno con un trade-off diverso: \"Voice Agent (Twilio)\" dà controllo totale su STT/TTS/telefonia; \"Voice Agent (Vapi)\" lascia che sia Vapi a gestire la voce mentre n8n gestisce solo la logica di business (voce gestita/managed); \"Voice Agent (ElevenLabs)\" usa ElevenLabs come tool provider per la conversazione.",
+   "ancora": "Voice Agent (Twilio) → Controllo totale STT/TTS/telefonia → Full control / Voice Agent (Vapi) → Vapi gestisce voce, n8n logica business → Managed voice / Voice Agent (ElevenLabs) → ElevenLabs gestisce conversazione → Tool provider",
+   "fonte": "NmoOZVTrTXA#65:42 (tabella pattern in n8n.md riscritto, righe \"Voice Agent\") + voce 65:36",
+   "frame": "frame-0658.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-156",
+     "tipo": "parte-di",
+     "perche": "è parte della tabella dei pattern usata al punto 3 dello Step 1"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-158",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Oltre ai tre pattern per agenti vocali, il prompt n8n riscritto elenca altri pattern architetturali con la relativa frequenza d'uso osservata: Webhook Processing (35% dei trigger), HTTP API Integration (molto comune), Database Operations (con schedule), AI Agent Workflow (per agenti con LLM/tool/memoria), Scheduled Tasks (28% dei trigger, per polling/report periodici).",
+   "ancora": "Webhook Processing — Ricevi dati via HTTP e rispondi — 35% dei trigger / Scheduled Tasks — Polling, report periodici, sync — 28% dei trigger",
+   "fonte": "NmoOZVTrTXA#65:42 (tabella pattern completa in n8n.md riscritto) + voce 65:36",
+   "frame": "frame-0658.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-157",
+     "tipo": "parte-di",
+     "perche": "sono le altre righe della stessa tabella di pattern"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-159",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Il prompt n8n riscritto impone di cercare sempre un template esistente prima di costruire un workflow da zero, usando lo strumento MCP \"search_templates\" che dà accesso a oltre 2.709 template disponibili.",
+   "ancora": "SEMPRE cerca template prima di costruire da zero: usa MCP search_templates — ci sono 2.709+ template disponibili",
+   "fonte": "NmoOZVTrTXA#65:42 (n8n.md, punto 4 dello Step 1) + voce 65:36",
+   "frame": "frame-0658.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-156",
+     "tipo": "parte-di",
+     "perche": "è il quarto punto operativo dello Step 1"
+    },
+    {
+     "verso": "KA-151",
+     "tipo": "applica",
+     "perche": "usa concretamente la libreria di template già quantificata nel server MCP"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-160",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Lo Step 2 (\"Research Nodes\") del processo n8n impone di conoscere la configurazione esatta di ogni nodo PRIMA di scrivere il JSON del workflow, usando il tool MCP \"search_nodes\" (con modalità di ricerca OR, AND o FUZZY) e poi il tool MCP \"get_node\" per ottenerne i parametri.",
+   "ancora": "Obiettivo: Conoscere la configurazione esatta di ogni nodo PRIMA di scrivere JSON. / Usa MCP search_nodes per trovare i nodi (supporta mode OR, AND, FUZZY)",
+   "fonte": "NmoOZVTrTXA#65:54 (n8n.md, \"### Step 2: Research Nodes\") + voce 65:52",
+   "frame": "frame-0660.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-155",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio operativo del secondo dei 6 step definiti"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-161",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Il tool MCP \"get_node\" per ispezionare un nodo n8n offre tre livelli di dettaglio selezionabili: \"minimal\" (circa 200 token, panoramica veloce), \"standard\" (circa 1-2K token, il default sufficiente per la maggior parte dei casi), \"full\" (circa 3-8K token, tutti i parametri e le opzioni).",
+   "ancora": "minimal (~200 token) — panoramica veloce / standard (~1-2K token) — default, sufficiente per la maggior parte dei casi / full (~3-8K token) — tutti i parametri e opzioni",
+   "fonte": "NmoOZVTrTXA#65:54 (n8n.md, dettaglio dei tre livelli di get_node) + voce 65:52",
+   "frame": "frame-0660.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-160",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio del secondo strumento MCP usato nello Step 2"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-162",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Nel codice JavaScript di un Code node in n8n, le espressioni tra doppie graffe {{ }} non vanno mai usate: sono due sistemi separati, il linguaggio delle espressioni n8n e il codice JavaScript del Code node.",
+   "ancora": "NON usare espressioni {{ }} dentro Code node — sono due sistemi separati",
+   "fonte": "NmoOZVTrTXA#66:24 (n8n.md, Step 4 Build) + voce 66:34",
+   "frame": "frame-0665.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-164",
+     "tipo": "parte-di",
+     "perche": "la regola sulle doppie graffe nel Code node fa parte dello stesso Step 4 Build, stessa fonte 66:24"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-163",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Le convenzioni di scrittura di un Code node n8n includono: il formato di ritorno `return [{ json: { ... } }]`, l'accesso ai dati in input tramite `$input.all()`, `$input.first()`, `$input.item`, e per le chiamate HTTP dentro al codice l'uso di `await $helpers.httpRequest({ url, method })`.",
+   "ancora": "Return format: return [{ json: { ... } }] ... Accesso input: $input.all(), $input.first(), $input.item ... Per HTTP nel codice: await $helpers.httpRequest({ url, method })",
+   "fonte": "NmoOZVTrTXA#66:24 (n8n.md, Step 4 Build) + osservazione schermo",
+   "frame": "frame-0665.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-162",
+     "tipo": "parte-di",
+     "perche": "sono le altre convenzioni dello stesso blocco sui Code node"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-164",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Lo Step 4 (\"Build\") del processo n8n prevede di creare il workflow tramite MCP: prima cercare un template adatto con `search_templates` e, se trovato, deployarlo con `n8n_deploy_template` e personalizzarlo con `n8n_update_partial_workflow`; altrimenti costruire da zero con `n8n_create_workflow`, specificando un nome descrittivo, l'array completo dei nodi e le connessioni con i tipi corretti. Il workflow viene sempre creato inattivo.",
+   "ancora": "Obiettivo: Creare il workflow su n8n via MCP. ... crea da zero con n8n_create_workflow ... Il workflow viene creato SEMPRE inattivo",
+   "fonte": "NmoOZVTrTXA#66:24 (n8n.md, \"### Step 4: Build\") + voce 66:34",
+   "frame": "frame-0665.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-155",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio operativo del quarto dei 6 step definiti"
+    },
+    {
+     "verso": "KA-159",
+     "tipo": "applica",
+     "perche": "applica la regola di cercare sempre un template prima di costruire da zero"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-165",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Per modifiche incrementali a un workflow n8n già esistente, il tool MCP `n8n_update_partial_workflow` espone operazioni dedicate a coppie: addNode/removeNode, updateNode, moveNode, enableNode/disableNode, addConnection/removeConnection, updateSettings/updateName, addTag/removeTag, activateWorkflow/deactivateWorkflow.",
+   "ancora": "addNode | Aggiungi nodo ... activateWorkflow / deactivateWorkflow | Attiva/disattiva",
+   "fonte": "NmoOZVTrTXA#66:24 (n8n.md, tabella delle operazioni di n8n_update_partial_workflow) + osservazione schermo",
+   "frame": "frame-0665.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-164",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio del terzo punto operativo dello Step 4"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-166",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il system prompt completo per costruire workflow n8n (n8n.md) viene reso disponibile gratuitamente come risorsa del corso, dichiarato dal presentatore come versione \"definitiva\" pronta all'uso.",
+   "ancora": "Questo prompt, gratuito sotto, prendetelo e è il definitivo, cioè non è che c'è di più",
+   "fonte": "NmoOZVTrTXA#66:24 + voce 66:34",
+   "frame": "frame-0665.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-155",
+     "tipo": "parte-di",
+     "perche": "il prompt n8n.md reso gratuito e' lo stesso Processo a 6 Step appena riscritto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-168",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esempio di richiesta in linguaggio naturale per generare due workflow n8n tramite Claude Code: un agente AI collegato a Google Calendar che usa una variabile dinamica (\"now\") per sapere che giorno è oggi e determinare gli slot liberi, e un secondo agente AI che verifica se un appuntamento specifico risulta prenotato o meno, entrambi con l'istruzione esplicita di fare riferimento al file n8n.md per l'esecuzione.",
+   "ancora": "Usa pure ora quindi una variabile dinamica now per capire che giorno è oggi... Per farlo ovviamente, riferisciti al file chiamato n8n.md",
+   "fonte": "NmoOZVTrTXA#68:54 (prompt dettato in Claude Code) + voce 67:53",
+   "frame": "frame-0690.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-139",
+     "tipo": "applica",
+     "perche": "usa concretamente il file n8n.md come riferimento richiesto nel prompt"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-169",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Quando si scrive un prompt per generare un workflow n8n con Claude Code, conviene usare esplicitamente variabili dinamiche (come una variabile \"now\" per la data corrente) invece di valori statici, sia nel testo del prompt che dentro ai nodi n8n stessi.",
+   "ancora": "assicurati di utilizzare variabili dinamiche anche dentro al nodo in n8n",
+   "fonte": "NmoOZVTrTXA#68:54 + voce 67:53",
+   "frame": "frame-0690.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-168",
+     "tipo": "parte-di",
+     "perche": "è una delle istruzioni contenute nello stesso prompt di esempio"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-170",
+   "peso": "contesto",
+   "tipo": "procedura",
+   "contenuto": "Per collegare Claude Code a un'istanza n8n reale tramite MCP, occorre generare una API key dedicata dal pannello n8n (percorso: Settings → n8n API → \"Create an API Key\"), da fornire insieme all'URL dell'istanza.",
+   "ancora": "Settings, N8n API, crea API Key",
+   "fonte": "NmoOZVTrTXA#69:24 (pagina Settings > n8n API) + voce 69:17",
+   "frame": "frame-0695.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-171",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Nel modale di creazione di una API key su n8n cloud si può impostare un'etichetta identificativa, una scadenza (es. 30 giorni oppure nessuna scadenza) e un ampio elenco di permessi granulari (scope) per risorsa (credential, dataTable, ecc.), anche se sul piano gratuito la modifica dettagliata degli scope resta bloccata dietro un upgrade.",
+   "ancora": "Expiration: 30 days ... Scopes: credential:create, credential:delete... +43 ... Upgrade to unlock the ability to modify API key scopes",
+   "fonte": "NmoOZVTrTXA#69:30 (modale \"Create API Key\") + voce 69:25",
+   "frame": "frame-0696.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-170",
+     "tipo": "parte-di",
+     "perche": "descrive i campi del modale di creazione già richiamato"
+    },
+    {
+     "verso": "KA-172",
+     "tipo": "precede",
+     "perche": "lo stesso modale di creazione API key n8n mostrato pochi secondi dopo, col token ora visibile in chiaro"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-172",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Quando si crea una API key su una piattaforma come n8n, il valore completo del token viene mostrato una sola volta in chiaro subito dopo la creazione (con avviso esplicito \"copiala ora perché non potrai più vederla\"): se lo schermo è condiviso o registrato in quel momento, il segreto resta esposto per intero.",
+   "ancora": "Make sure to copy your API key now as you will not be able to see this again.",
+   "fonte": "NmoOZVTrTXA#69:48 (modale \"API Key Created\" con token JWT interamente leggibile) + voce 69:52",
+   "frame": "frame-0699.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-180",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Un workflow n8n \"AI Agent\" generato da Claude Code segue una struttura a nodi tipica: un nodo trigger (es. Chat Trigger) collegato a un nodo \"AI Agent\" centrale, che a sua volta si ramifica in tre collegamenti opzionali — Chat Model (es. Google Gemini), Memory (es. Window Buffer Memory) e Tool (es. ricerca eventi calendario) — dove la Memory può essere presente o assente a seconda che il caso d'uso richieda di ricordare lo stato tra un messaggio e l'altro.",
+   "ancora": "Chat Trigger → AI Agent, e sotto AI Agent tre rami Chat Model, Memory, Tool tutti collegati: Google Gemini, Get Calendar Events, e Window Buffer Memory",
+   "fonte": "NmoOZVTrTXA#73:18 (canvas del workflow \"AI Agent - Check Calendar Availability\" con Chat Model/Memory/Tool tutti collegati) + voce 73:05",
+   "frame": "frame-0734.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-168",
+     "tipo": "esempio-di",
+     "perche": "il workflow AI Agent - Check Calendar Availability e' la realizzazione concreta di uno dei due workflow richiesti nel prompt"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-181",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Un agente AI che deve solo verificare un fatto puntuale in una singola interazione (es. \"questo appuntamento è confermato?\") può fare a meno del nodo Memory, mentre un agente che deve ragionare su uno stato/contesto che si accumula (es. \"controlla la disponibilità di calendario\") beneficia di un nodo Memory collegato.",
+   "ancora": "per quello che controlla la disponibilità a calendario abbiamo ovviamente una memoria... (a differenza del workflow di conferma appuntamento, privo del nodo Memory)",
+   "fonte": "NmoOZVTrTXA#72:48 (workflow \"Confirm Appointment Booking\" senza nodo Memory) + voce 72:37",
+   "frame": "frame-0729.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-180",
+     "tipo": "esempio-di",
+     "perche": "è un'applicazione pratica della struttura a nodi appena definita"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-182",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il riepilogo generato da Claude Code dopo aver creato due workflow n8n specifica anche le espressioni dinamiche usate al loro interno: `{{ $now.toISO() }}` nel system prompt per la data corrente, e `$fromAI('timeMin')` / `$fromAI('timeMax')` nel nodo Calendar per lasciare che sia il modello AI a decidere dinamicamente l'intervallo di tempo da interrogare.",
+   "ancora": "Variabili dinamiche: {{ $now.toISO() }} nel system prompt + $fromAI('timeMin') / $fromAI('timeMax') nel nodo Calendar",
+   "fonte": "NmoOZVTrTXA#73:06 (riepilogo di Claude Code, Workflow 1) + voce 73:00",
+   "frame": "frame-0732.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-169",
+     "tipo": "esempio-di",
+     "perche": "è l'applicazione concreta della regola sulle variabili dinamiche"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-183",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Anche quando un agente come Claude Code costruisce un intero workflow n8n in autonomia via MCP, restano sempre almeno tre azioni manuali da completare a mano dall'utente: collegare le credenziali OAuth2 dei servizi esterni (es. Google Calendar), inserire le API key dei modelli AI usati (es. Google Gemini), e attivare il workflow quando si è pronti — i workflow vengono creati sempre disattivati.",
+   "ancora": "1. Connetti le credenziali Google Calendar OAuth2... 2. Connetti le credenziali Google Gemini API Key... 3. Attiva i workflow quando sei pronto. Entrambi i workflow sono inattivi e pronti per la configurazione.",
+   "fonte": "NmoOZVTrTXA#73:06 (checklist \"Cosa devi fare tu su n8n\") + voce 73:00",
+   "frame": "frame-0732.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-164",
+     "tipo": "applica",
+     "perche": "conferma che il workflow creato via MCP resta sempre inattivo fino a un intervento manuale"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-184",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Nel nodo \"Get Calendar Events\" generato per il workflow di disponibilità calendario, l'intervallo di ricerca non è una data fissa ma un'espressione dinamica: campo \"After\" = `{{ $now }}` e campo \"Before\" = `{{ $now.plus({ week: 1 }) }}`, così l'agente calcola sempre \"questa settimana da oggi\" senza che nessuno debba aggiornare manualmente le date.",
+   "ancora": "After — {{ $now }} ... Before — {{ $now.plus({ week: 1 }) }}",
+   "fonte": "NmoOZVTrTXA#73:24 (pannello parametri del nodo \"Get Calendar Events\") + voce 73:16",
+   "frame": "frame-0735.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-182",
+     "tipo": "esempio-di",
+     "perche": "mostra nel dettaglio le variabili dinamiche già riassunte da Claude Code"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-185",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Il collegamento delle credenziali OAuth2 di un servizio esterno (es. Google Calendar) dentro n8n richiede necessariamente un'autorizzazione umana manuale tramite login: è l'unico step che un agente come Claude Code non può compiere al posto dell'utente.",
+   "ancora": "la finestra OAuth2 di Google Calendar che va autorizzata a mano, unico step che Claude Code non può fare al posto dell'utente",
+   "fonte": "NmoOZVTrTXA#73:42 (popup \"Google Calendar account\" OAuth2) + voce 73:24",
+   "frame": "frame-0737.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-183",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio del primo dei tre step manuali elencati"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-186",
+   "peso": "contesto",
+   "tipo": "principio",
+   "contenuto": "L'editor delle espressioni di n8n mostra in un pannello \"Result\" separato il valore concreto a cui si risolve dal vivo un'espressione dinamica (es. una data), permettendo di verificarne subito la correttezza senza dover eseguire l'intero workflow.",
+   "ancora": "pannello Result... stesso testo con la riga dinamica risolta in verde: Data e ora corrente: 2026-03-24T18:10:58.757+01:00 (poi 24/11/2026 dopo il cambio di formato)",
+   "fonte": "NmoOZVTrTXA#74:24-74:54 (pannello \"Expression\"/\"Result\" del nodo AI Agent) + voce 74:08-75:11",
+   "frame": "frame-0745.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-184",
+     "tipo": "applica",
+     "perche": "è lo stesso meccanismo di verifica applicato all'espressione della data corrente"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-187",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Esempio completo di system prompt generato per un agente AI che verifica disponibilità di calendario: include la data corrente dinamica, istruzioni numerate su come usare il tool Google Calendar, come classificare gli slot (occupati vs liberi), un orario lavorativo di default (9:00-18:00) da usare salvo diversa indicazione, e l'istruzione esplicita di rispondere sempre in italiano.",
+   "ancora": "5. Considera l'orario lavorativo standard dalle 9:00 alle 18:00 salvo diversa indicazione. 6. Rispondi sempre in italiano.",
+   "fonte": "NmoOZVTrTXA#74:24 (system prompt completo del nodo AI Agent) + voce 74:08",
+   "frame": "frame-0745.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-164",
+     "tipo": "esempio-di",
+     "perche": "è il risultato concreto del processo di build applicato al caso della disponibilità calendario"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-188",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Anche quando la logica di business (fasce orarie di lavoro, formato delle risposte, lingua forzata) non viene dettata riga per riga dall'utente, un agente come Claude Code può dedurla e scriverla in autonomia dentro il system prompt generato, partendo dal contesto della richiesta originale.",
+   "ancora": "questo system prompt completo a 6 regole numerate (mai pronunciato a voce, solo mostrato) è la prova diretta di cosa Claude Code ha scritto da solo... tutto generato senza che Max lo dettasse riga per riga",
+   "fonte": "NmoOZVTrTXA#74:24 + voce 74:08",
+   "frame": "frame-0745.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-187",
+     "tipo": "parte-di",
+     "perche": "riguarda esattamente il prompt di esempio appena descritto"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-189",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il linguaggio di espressioni di n8n offre un metodo `.format(fmt)` sui valori DateTime per convertirli in stringa con un formato personalizzato (es. `dt.format('dd/LL/yyyy')` produce \"30/04/2024\"), alternativo al formato ISO prodotto da `.toISO()`.",
+   "ancora": "format (fmt) — Converts the DateTime to a string, using the format specified. ... dt.format('dd/LL/yyyy') // -> '30/04/2024'",
+   "fonte": "NmoOZVTrTXA#74:54 (tooltip di autocompletamento su \"format (fmt)\") + voce 75:11",
+   "frame": "frame-0750.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-186",
+     "tipo": "applica",
+     "perche": "usa il pannello Result per verificare il valore prodotto da questo metodo"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-190",
+   "peso": "supporto",
+   "tipo": "principio",
+   "contenuto": "Per un aggiustamento piccolo e visivo come cambiare il formato di una data dentro un'espressione già scritta, è più immediato modificare direttamente il nodo dentro l'interfaccia n8n (dove si legge e si vede subito il risultato) piuttosto che tornare a chiedere la modifica a Claude Code.",
+   "ancora": "è estremamente più semplice da fare se io utilizzo questo tipo di interfaccia, quindi lo leggo, vedo e, insomma, capisco quello che faccio, e invece che utilizzare Cloud Code",
+   "fonte": "NmoOZVTrTXA#75:24-76:00 (sequenza webcam + editor su n8n) + voce 75:29-76:00",
+   "frame": "frame-0761.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-138",
+     "tipo": "esempio-di",
+     "perche": "è un caso concreto di compito che si fa meglio su n8n che su Claude Code"
+    },
+    {
+     "verso": "KA-191",
+     "tipo": "precede",
+     "perche": "dopo aver preferito modificare a mano dentro n8n, si chiude la sessione e se ne apre una pulita per passare a VAPI"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-217",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Quando un agente vocale deve anche eseguire un'azione esterna (es. prenotare qualcosa), il collegamento tra le due piattaforme (VAPI e n8n) avviene tramite webhook: si costruisce prima il workflow n8n, si recupera l'URL del suo webhook dal nodo trigger, poi si crea nell'agente vocale un tool che punta a quell'URL, e infine si collega il tool all'agente.",
+   "ancora": "5. Una volta creato il workflow, recupera il webhook URL dal nodo trigger. 6. Crea un tool dentro l'agente vocale che punta a quel webhook. 7. Collega il tool all'agente.",
+   "fonte": "NmoOZVTrTXA#92:42 (VOICE_AGENT.md, step 5-7 del prompt) + voce 92:20-92:34",
+   "frame": "frame-0928.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-216",
+     "tipo": "parte-di",
+     "perche": "è il dettaglio degli step 5-7 dello stesso workflow a 7 step"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-223",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "Nei workflow n8n collegati a un webhook, i dati ricevuti si trovano nidificati sotto `$json.body.*` e non direttamente sotto `$json.*`: è indicato come l'errore più comune in assoluto quando si scrivono espressioni o codice che leggono l'input di un webhook.",
+   "ancora": "Webhook data gotcha — n8n webhook data lives under $json.body.*, NOT $json.* directly. This is the #1 error.",
+   "fonte": "NmoOZVTrTXA#95:36 (CLAUDE.md, sezione \"## WHY\") + osservazione schermo (non menzionato a voce)",
+   "frame": "frame-0957.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-222",
+     "tipo": "parte-di",
+     "perche": "è la prima delle insidie tecniche elencate nella sezione WHY"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-224",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "In n8n esiste una dualità nel formato dei nomi dei tipi di nodo (nodeType): i tool MCP di ricerca e validazione (search_nodes, validate_node) si aspettano il formato senza prefisso (es. `nodes-base.httpRequest`), mentre il JSON effettivo del workflow richiede il formato con prefisso (es. `n8n-nodes-base.httpRequest`); i nodi della famiglia LangChain usano invece sempre il formato `@n8n/n8n-nodes-langchain.*`.",
+   "ancora": "nodeType format duality — search_nodes/validate_node use nodes-base.httpRequest (no prefix), but workflow JSON uses n8n-nodes-base.httpRequest (with prefix). LangChain nodes always use @n8n/n8n-nodes-langchain.*.",
+   "fonte": "NmoOZVTrTXA#95:36 (CLAUDE.md, sezione \"## WHY\") + osservazione schermo (non menzionato a voce)",
+   "frame": "frame-0957.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-222",
+     "tipo": "parte-di",
+     "perche": "è la seconda insidia tecnica elencata nella sezione WHY"
+    },
+    {
+     "verso": "KA-160",
+     "tipo": "applica",
+     "perche": "chiarisce un dettaglio pratico dell'uso dei tool MCP search_nodes/get_node già introdotti"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-228",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Quando si costruisce un agente vocale multi-funzione, conviene ragionare per sistemi separati: dividere il lavoro in workflow indipendenti, ciascuno con una task ben specifica, invece di un unico flusso che mischia tutto, perche' il modello lavora meglio con task lineari.",
+   "ancora": "vorrei che tu ragionassi per sistemi, quindi non vorrei che tu facessi un mischiotto di tutto",
+   "fonte": "NmoOZVTrTXA#98:24 (dettatura del prompt, prima della digitazione) + voce 01:38:24",
+   "frame": "frame-0985.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-230",
+     "tipo": "precede",
+     "perche": "dichiarato il principio di ragionare per sistemi, la dettatura prosegue con l'istruzione di non usare date hard-coded"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-229",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Un AI receptionist per una clinica si costruisce come 4 workflow separati: uno per il booking (prenotazione), uno per la cancellazione, uno per il rescheduling (spostamento) e uno per le FAQ.",
+   "ancora": "Quattro workflow dovranno essere fatti: - uno e' per il booking - uno e' per la cancellazione - uno e' per il scheduling",
+   "fonte": "NmoOZVTrTXA#101:24 (prompt digitato in Claude Code) + voce 01:41:19",
+   "frame": "frame-1015.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-228",
+     "tipo": "parte-di",
+     "perche": "i 4 workflow sono l'applicazione concreta del principio di dividere per sistemi"
+    },
+    {
+     "verso": "KA-234",
+     "tipo": "precede",
+     "perche": "definiti i 4 workflow, la dettatura passa al caricamento del PDF di conoscenza aziendale"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-246",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Lo schema minimo di un Google Sheet usato come CRM per un agente vocale include colonne come nome, email, telefono, motivo_visita, dottore, data_appuntamento (formato italiano dd/MM/yyyy) e ora_appuntamento (formato 24 ore HH:mm).",
+   "ancora": "data_appuntamento formato \"dd/MM/yyyy\" (Formato italiano) e ora_appuntamento formato \"HH:mm\" (24h)",
+   "fonte": "NmoOZVTrTXA#104:30 (piano, tabella Google Sheet CRM) + voce 01:44:34",
+   "frame": "frame-1046.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-239",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-247",
+     "tipo": "precede",
+     "perche": "dallo schema del CRM nel piano, il piano prosegue con la struttura a 12 sezioni del prompt"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-259",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "Ogni tool custom di tipo webhook in VAPI viene collegato a un workflow n8n dedicato tramite un Server URL specifico, e dichiara i campi obbligatori che deve ricevere (es. book_appointment richiede nome, motivo_visita, data_appuntamento, ora_appuntamento).",
+   "ancora": "book_appointment — custom webhook — WF2 webhook — nome, motivo_visita, data_appuntamento, ora_appuntamento",
+   "fonte": "NmoOZVTrTXA#105:18 (piano, tabella tool/webhook) + voce 01:45:15",
+   "frame": "frame-1054.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-254",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-260",
+     "tipo": "precede",
+     "perche": "definita la mappa tool-webhook, il piano aggiunge i messaggi di request-start e request-failed per ogni tool"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-269",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "In n8n, ogni workflow nella lista mostra la data di creazione e il timestamp dell'ultimo aggiornamento, utile per distinguere a colpo d'occhio i workflow appena creati da quelli piu' vecchi (legacy).",
+   "ancora": "Voice Agent - Book Appointment (Last updated 2 minutes ago) ... AI Agent - Check Calendar Availability (1 hour ago)",
+   "fonte": "NmoOZVTrTXA#106:36 (lista workflow n8n con Last updated) + voce 01:46:38",
+   "frame": "frame-1067.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-270",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "In n8n, collegare la credenziale Google OAuth2 su un singolo nodo di un workflow la rende automaticamente disponibile per tutti gli altri workflow dello stesso progetto, senza doverla ripetere.",
+   "ancora": "Fatto questo, la stessa credenziale sara' disponibile per tutti i workflow",
+   "fonte": "NmoOZVTrTXA#106:48 (nodo con pulsante Sign in with Google) + voce 01:46:47",
+   "frame": "frame-1069.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-238",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-271",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-271",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Un assistente di coding puo' interrogare l'API REST di n8n (endpoint /api/v1/credentials, con API key) per elencare le credenziali gia' configurate, trovare l'id di quella corretta e assegnarla in automatico ai nodi di piu' workflow in parallelo, evitando il lavoro manuale ripetuto.",
+   "ancora": "List n8n credentials to find the Google Sheets credential ... Faccio tutto in parallelo",
+   "fonte": "NmoOZVTrTXA#107:48 (comando curl per listare credenziali n8n) + voce 01:47:49",
+   "frame": "frame-1079.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-270",
+     "tipo": "applica"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-282",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Un workflow di automazione che deve solo eseguire operazioni deterministiche (scrivere/leggere dati, verificare condizioni) puo' essere costruito con nodi a formule e codice invece che con un agente AI, ottenendo un sistema piu' semplice, prevedibile ed economico da far girare.",
+   "ancora": "perche' non gli ho detto di andare con agenti AI, quindi lui ha fatto con formule molto interessante e codice di modo tale che sia piu' semplice",
+   "fonte": "NmoOZVTrTXA#110:42 (canvas del workflow Book Appointment) + voce 01:50:26",
+   "frame": "frame-1108.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-283",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-259",
+     "tipo": "applica",
+     "perche": "il workflow Book Appointment costruito con formule invece che con un agente AI e' lo stesso tool book_appointment mappato al webhook WF2"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-283",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Un workflow di prenotazione affidabile applica un controllo duplicati esplicito prima di scrivere: legge il foglio, verifica se esiste gia' un appuntamento uguale, si dirama (true/false) e solo nel ramo negativo procede ad aggiungere la nuova riga.",
+   "ancora": "Controlla Duplicati (read: sheet) → Verifica Duplicato → Duplicato? → ramo vero/falso",
+   "fonte": "NmoOZVTrTXA#110:42 (canvas nodi: Controlla Duplicati, Verifica Duplicato, Duplicato?) + voce 01:50:26",
+   "frame": "frame-1108.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-282",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-299",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Un errore comune nella prima versione di un workflow di prenotazione e' scrivere l'appuntamento solo su un foglio di calcolo (Google Sheet) senza alcun collegamento a un calendario reale (Google Calendar): un gap facilmente identificabile controllando i campi disponibili nel nodo che scrive i dati.",
+   "ancora": "dovrei vedere di avere accesso ad un calendario. Cosa che io qua non vedo per esempio",
+   "fonte": "NmoOZVTrTXA#117:06 (nodo Prenota Appuntamento, solo Google Sheets) + voce 01:57:06",
+   "frame": "frame-1172.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-309",
+     "tipo": "corretto-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-304",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Per fare debugging lato n8n, si interroga l'API REST con l'endpoint delle esecuzioni recenti (es. GET /executions con limite risultati, includeData e API key) per leggere gli errori esatti registrati nelle ultime run dei workflow.",
+   "ancora": "curl -s \"https://.../api/v1/executions?limit=10&includeData=true\" -H \"X-N8N-API-KEY: [...]\"",
+   "fonte": "NmoOZVTrTXA#120:36 (comando curl Check recent n8n executions) + voce 02:00:34",
+   "frame": "frame-1207.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-302",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-305",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-305",
+   "peso": "portante",
+   "tipo": "anti-pattern",
+   "contenuto": "Un bug classico nell'integrazione tra un servizio esterno (VAPI) e un'automazione (n8n) e' un mismatch nel path della struttura dati: VAPI invia gli argomenti del tool in toolCallList[0].function.arguments, ma il codice del workflow cercava toolCallList[0].arguments (senza il livello 'function'), facendo fallire sistematicamente ogni chiamata di tool.",
+   "ancora": "VAPI invia toolCallList[0].function.arguments ... ma i nostri Code node cercano toolCallList[0].arguments (manca .function. nel path)",
+   "fonte": "NmoOZVTrTXA#120:48 / 121:06 (Piano di fix; spiegazione del bug) + voce 02:01:00",
+   "frame": "frame-1212.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-306",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-307",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-306",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Quando un servizio esterno invia dati con una struttura precisa, va sempre verificato il path esatto dei campi ricevuti invece di assumerlo per analogia: un livello di annidamento mancante o in piu' fa fallire silenziosamente l'intera integrazione.",
+   "ancora": "Questo e' il bug che causa tutti gli errori",
+   "fonte": "NmoOZVTrTXA#121:06 (spiegazione del bug toolCallList) + voce 02:01:00",
+   "frame": "frame-1212.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-308",
+   "peso": "contesto",
+   "tipo": "principio",
+   "contenuto": "Quando serve aggiungere una nuova integrazione (es. Google Calendar), conviene prima verificare se una credenziale adatta esiste gia' nell'ambiente e riusarla, invece di crearne una nuova da zero.",
+   "ancora": "Aggiungere Google Calendar a tutti i workflow (credenziale gia' presente in n8n)",
+   "fonte": "NmoOZVTrTXA#121:06 (credenziale Google Calendar gia' presente in n8n) + voce 02:01:00",
+   "frame": "frame-1212.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-238",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-309",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-309",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Dopo un fix architetturale, ciascuno dei 4 workflow di un AI receptionist (check/book/cancel/reschedule) puo' essere esteso per interagire sia con il Google Sheet (CRM) sia con Google Calendar, cosicche' ogni azione sull'appuntamento si rifletta in entrambi i sistemi contemporaneamente.",
+   "ancora": "Book Appointment: scrive nel Sheet e crea evento in Calendar",
+   "fonte": "NmoOZVTrTXA#125:18 (riepilogo Fix Completati) + voce 02:05:18",
+   "frame": "frame-1254.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-310",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-313",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-310",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Testato dopo il fix, un appuntamento prenotato via chat con l'agente vocale compare correttamente sia come nuova riga nel Google Sheet CRM sia come evento nel Google Calendar collegato, con lo stesso account autenticato via OAuth come creatore dell'evento.",
+   "ancora": "riga 6 (selezionata): 8:30, confermato ... toolCallId call_xCZrP0gmx5rgg3IRGPpQy4Wt",
+   "fonte": "NmoOZVTrTXA#123:18 / 124:24 (riga confermata sul foglio; evento su Calendar) + voce 02:03:10",
+   "frame": "frame-1234.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-309",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-312",
+     "tipo": "precede",
+     "perche": "verificata la prenotazione a doppia scrittura, si osserva come il messaggio di conferma viene costruito dinamicamente"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-311",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "n8n permette di ispezionare le esecuzioni passate di un workflow (tab Executions) nodo per nodo, mostrando l'input e l'output esatti che sono stati processati in quella specifica run, utile per verificare o fare debugging a posteriori.",
+   "ancora": "Mar 24, 20:33:28 — Succeeded in 5.313s ... ID#40",
+   "fonte": "NmoOZVTrTXA#125:12 (lista Executions con dettaglio canvas) + voce 02:05:04",
+   "frame": "frame-1253.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-312",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-312",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Il messaggio di risposta di un tool puo' essere costruito dinamicamente in n8n con un'espressione che compone la frase leggendo i dati raccolti dal nodo precedente (nome, data, ora), invece di un testo fisso identico per ogni caso.",
+   "ancora": "'Appuntamento confermato per ' + $('Verifica Duplicato').first().json.nome + ' il ' + ...",
+   "fonte": "NmoOZVTrTXA#124:42 (nodo Conferma Prenotazione, Response Body) + voce 02:04:50",
+   "frame": "frame-1248.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v09-NmoOZVTrTXA::KA-313",
+   "peso": "contesto",
+   "tipo": "esempio",
+   "contenuto": "Testato dopo il fix, cancellare un appuntamento tramite la chat con l'agente vocale rimuove correttamente sia la riga corrispondente nel Google Sheet sia l'evento gemello dal Google Calendar collegato.",
+   "ancora": "Appuntamento del 27/03/2026 alle 8:30 cancellato con successo. Rimosso anche dal calendario",
+   "fonte": "NmoOZVTrTXA#124:06 / 124:12 (conferma cancellazione in chat; calendario ripulito) + voce 02:03:58",
+   "frame": "frame-1242.png",
+   "run": "max18-v09-NmoOZVTrTXA",
+   "relazioni": [
+    {
+     "verso": "KA-309",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-314",
+     "tipo": "motiva",
+     "perche": "il test di cancellazione riuscito su entrambi i sistemi mostra che ora si puo' iterare con piccoli aggiustamenti successivi"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-014",
+   "peso": "contesto",
+   "tipo": "struttura",
+   "contenuto": "Passaggio dalla teoria (Excalidraw) alla pratica: apertura della piattaforma n8n cloud (account \"giovannib\", coerente con l'autore Giovanni Beggiato) su un workflow vuoto, per replicare dal vivo lo schema \"Cos'è un Agente AI\" appena disegnato. L'autore precisa che non è un corso su n8n in sé: lo strumento serve solo a mostrare il parallelismo pratico con la teoria. (La trascrizione automatica del parlato rende \"n8n\" come \"NA10\"/\"NA dieci\".)",
+   "ancora": "Una volta discusso questo, quindi, andiamo dentro NA10 e vediamo nella pratica",
+   "fonte": "JTn5pqm9ecM#11:00-11:18 + voce 11:00, 11:18-11:24",
+   "frame": "frame-0111.png, frame-0113.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-163",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-015",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Primo passo pratico per costruire l'agente in n8n: cercare il nodo \"AI Agent\" nel pannello di ricerca dei trigger/nodi e importarlo nel workflow — corrisponde al box centrale \"Agente AI\" dello schema teorico.",
+   "ancora": "abbiamo detto che inizialmente dobbiamo avere questo, quindi un agente AI, quindi quello che andremo a fare sarà andare a premere AI agent",
+   "fonte": "JTn5pqm9ecM#11:18 + voce 11:18",
+   "frame": "frame-0114.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-153",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-164",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-016",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Secondo passo: collegare il connettore \"Chat Model*\" (obbligatorio) del nodo AI Agent — corrisponde al box \"LLM\" dello schema. Viene scelto \"OpenAI Chat Model\" tra l'elenco dei Language Model disponibili (Google Vertex, Groq, Mistral, MiniMax, Moonshot Kimi, Ollama, OpenRouter, Vercel AI Gateway, xAI Grok, OpenAI...). Nel pannello di configurazione, la credenziale usata non è una API key OpenAI propria ma \"n8n Connect\" (crediti gratuiti forniti da n8n, badge \"$3.98 remaining\" visibile in quel momento).",
+   "ancora": "gli dirò le mie credenziali che ho già connesso ovviamente al mio ehm al mio NA10",
+   "fonte": "JTn5pqm9ecM#11:42-11:54 + voce 11:48",
+   "frame": "frame-0118.png, frame-0119.png, frame-0120.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-163",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-158",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-165",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-017",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Terzo passo: collegare il connettore \"Memory\" del nodo AI Agent — corrisponde al box \"Memoria\" dello schema. Viene aggiunto il nodo \"Simple Memory\".",
+   "ancora": "mini-toolbar a comparsa sopra il nodo che mostra tre icone",
+   "fonte": "JTn5pqm9ecM#12:06 + voce 12:06",
+   "frame": "frame-0122.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-161",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-164",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-167",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-018",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Cercando un nodo da collegare al connettore \"Tool\" in n8n, il pannello di ricerca mostra tra i risultati una sezione in evidenza \"Human in the Loop\" con tre nodi che richiedono approvazione umana per l'esecuzione: \"Send Email\", \"Microsoft Teams\", \"WhatsApp Business Cloud\" (tutti con sottotitolo \"Request human approval for tools\"); sotto, una sezione \"Vector Stores\" elenca: Simple Vector Store, Supabase Vector Store, Postgres PGVector Store, Redis Vector Store, Milvus Vector Store, Azure AI Search Vector Store.",
+   "ancora": "Request human approval for tools",
+   "fonte": "JTn5pqm9ecM#12:18 + voce 12:18-12:24",
+   "frame": "frame-0124.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-165",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-167",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-019",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Quarto passo: collegare al connettore \"Tool\" del nodo AI Agent lo strumento \"Send a message in Gmail\" — corrisponde a una voce del box \"Strumenti\" dello schema (l'autore lo introduce parlando di \"Google\"/Gmail). Nel pannello di configurazione, il campo \"Tool Description\" viene lasciato su \"Set Automatically\" (impostazione automatica, non scritta a mano), Resource=\"Message\", Operation=\"Send\".",
+   "ancora": "Tool description fatta automaticamente e diciamo che vogliamo mandare una mail a",
+   "fonte": "JTn5pqm9ecM#12:24 + voce 12:24-12:48",
+   "frame": "frame-0125.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-166",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-168",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-020",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "Nel nodo AI Agent, il campo \"Prompt (User Message)\" viene lasciato con \"Source for Prompt (User Message)\" = \"Connected Chat Trigger Node\" e valore espressione {{ $json.chatInput }}: per task semplici come questa demo, il prompt non viene scritto a mano ma estratto automaticamente dalla richiesta digitata dall'utente in chat. L'autore collega questo comportamento al box \"Richiesta\" dello schema teorico.",
+   "ancora": "il mio prompt viene, diciamo, estratto dalla richiesta dell'utente",
+   "fonte": "JTn5pqm9ecM#13:06-13:24 + voce 13:06-13:24",
+   "frame": "frame-0132.png, frame-0135.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-167",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-153",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-169",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-021",
+   "peso": "portante",
+   "tipo": "esempio",
+   "contenuto": "Prima esecuzione reale dell'agente appena costruito: l'utente scrive in chat \"Hey, per favore, manda un'email a Giovanni salutandolo. Capisci tu in maniera automatica oggetto e testo della mail per raggiungere il mio [obiettivo]\", senza specificare oggetto o testo. L'agente genera autonomamente Subject=\"Un saluto\" e Message=\"Ciao Giovanni,\\n\\nSpero tu stia bene! Volevo solo prendermi un momento per salutarti.\\n\\nUn caro saluto,\\n\\n[Il Tuo Nome]\", invia realmente la mail (confermata anche sul telefono del relatore) e risponde in chat: \"L'email è stata inviata a Giovanni con un saluto. Se hai bisogno di ulteriori modifiche o di inviare un'altra email, fammi sapere.\"",
+   "ancora": "L'email è stata inviata a Giovanni con un saluto",
+   "fonte": "JTn5pqm9ecM#13:54-15:42 (chat + log di esecuzione) + voce 13:54-15:42",
+   "frame": "frame-0140.png, frame-0146.png, frame-0156.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-168",
+     "tipo": "esempio-di"
+    },
+    {
+     "verso": "KA-170",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-022",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Dettaglio dell'albero di esecuzione (Logs) della prima run: il nodo AI Agent chiama in sequenza Simple Memory -> OpenAI Chat Model -> Send a message in Gmail -> Simple Memory -> OpenAI Chat Model — cioè il modello e la memoria vengono richiamati due volte, prima e dopo la chiamata al tool Gmail. Esecuzione completa: \"Success in 10.263s\"; il nodo AI Agent da solo: \"Success in 2.689s · ~348 Tokens\".",
+   "ancora": "il modello e la memoria vengono richiamati due volte: prima e dopo la chiamata al tool Gmail",
+   "fonte": "JTn5pqm9ecM#14:30 + voce 14:30-15:00",
+   "frame": "frame-0146.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-169",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-171",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-023",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Alla prima interrogazione della memoria in questa esecuzione, l'output mostra \"chatHistory\": [] (array vuoto, \"[empty array]\"): la memoria era vuota, quindi l'agente non trova nulla di pregresso e deve elaborare la richiesta rivolgendosi da zero al modello OpenAI.",
+   "ancora": "perché non ha trovato niente in memoria e ha processato poi la nostra",
+   "fonte": "JTn5pqm9ecM#15:00-16:06 + voce 15:00",
+   "frame": "frame-0151.png, frame-0162.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-170",
+     "tipo": "parte-di"
+    },
+    {
+     "verso": "KA-172",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-024",
+   "peso": "supporto",
+   "tipo": "esempio",
+   "contenuto": "Seconda interazione in chat, per testare la memoria conversazionale: l'utente chiede \"Hey, sapresti dirmi qual è l'ultima richiesta che ti ho fatto in questa chat?\" e l'agente risponde correttamente \"L'ultima richiesta che mi hai fatto è stata di inviare un'email a Giovanni per salutarlo. Se hai bisogno di ulteriori informazioni o aiuto, fammi sapere!\" — dimostrando che ricorda lo scambio precedente. Esecuzione: \"Success in 2.279s · ~384 Tokens\"; questa volta l'albero dei log chiama solo Simple Memory -> OpenAI Chat Model -> Simple Memory, senza mai richiamare il tool Gmail.",
+   "ancora": "L'ultima richiesta che mi hai fatto è stata di inviare un'email a Giovanni",
+   "fonte": "JTn5pqm9ecM#16:24 + voce 16:24",
+   "frame": "frame-0165.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-171",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-173",
+     "tipo": "precede"
+    },
+    {
+     "verso": "KA-174",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-028",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "n8n avvisa esplicitamente, nel pannello del nodo Simple Memory, che questo tipo di memoria è limitato: \"This node stores memory locally in the n8n instance. It is not compatible with Queue Mode or Multi-Main setups, as memory will not be shared across workers. For production use cases such as scaling, consider using an external memory store such as Redis, Postgres, or another persistent memory node.\"",
+   "ancora": "This node stores memory locally in the n8n instance. It is not compatible with Queue Mode or Multi-Main setups",
+   "fonte": "JTn5pqm9ecM#17:24 + voce 17:24 (box informativo a schermo)",
+   "frame": "frame-0175.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-175",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v06-JTn5pqm9ecM::KA-030",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Per scrivere un prompt complesso a mano invece di lasciarlo estratto automaticamente dalla chat, si cambia il campo \"Source for Prompt (User Message)\" da \"Connected Chat Trigger Node\" a \"Define below\", il che apre un editor \"Expression\" con l'avviso \"Anything inside {{ }} is JavaScript\": tutto ciò che sta dentro le doppie graffe viene valutato come JavaScript.",
+   "ancora": "Anything inside {{ }} is JavaScript",
+   "fonte": "JTn5pqm9ecM#17:42-17:48 + voce 17:48",
+   "frame": "frame-0178.png, frame-0179.png",
+   "run": "max18-v06-JTn5pqm9ecM",
+   "relazioni": [
+    {
+     "verso": "KA-168",
+     "tipo": "contraddice",
+     "perche": "È l'alternativa esplicita al comportamento di default (prompt auto-estratto dalla chat) descritto in KA-020: qui il prompt viene invece scritto/definito manualmente."
+    },
+    {
+     "verso": "KA-183",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-086",
+   "peso": "supporto",
+   "tipo": "definizione",
+   "contenuto": "La sezione 'Scheduled' di un progetto Cowork serve a impostare task che si ripetono automaticamente in modo periodico nel tempo.",
+   "ancora": "serve per avere task che vanno in maniera ripetitiva durante il giorno",
+   "fonte": "DI5aWJiFAt8#44:24 (pagina progetto, sezione Scheduled) + voce 44:24",
+   "frame": "frame-0445.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-181",
+     "tipo": "precede"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-179",
+   "peso": "supporto",
+   "tipo": "dato",
+   "contenuto": "La descrizione ufficiale del comando /schedule, mostrata in un tooltip dell'interfaccia, è: \"Create a scheduled task that can be run on demand or automatically on an interval.\"",
+   "ancora": "Create a scheduled task that can be run on demand or automatically on an interval.",
+   "fonte": "DI5aWJiFAt8#91:00 (tooltip del comando /schedule) + voce 91:00-91:30",
+   "frame": "frame-0911.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-178",
+     "tipo": "esempio-di",
+     "perche": "è l'esempio concreto del lato \"comando\" della distinzione"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-180",
+   "peso": "portante",
+   "tipo": "procedura",
+   "contenuto": "Digitare \"/schedule\" seguito dal nome di una skill esistente (es. \"/schedule la skill /saluto\") avvia il flusso di pianificazione di quella skill, e il sistema chiede in automatico con quale frequenza deve girare, proponendo opzioni come \"Every morning\", \"On demand only\", \"Once, right now\" o \"Something else\".",
+   "ancora": "\"When should the saluto skill run?\" ... 1 — \"Every morning\" ... 2 — \"On demand only\" ... 3 — \"Once, right now\"",
+   "fonte": "DI5aWJiFAt8#91:30 (modale \"When should the saluto skill run?\") + voce 91:30-91:42",
+   "frame": "frame-0916.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-179",
+     "tipo": "applica",
+     "perche": "applica concretamente la funzione dichiarata nella descrizione ufficiale del comando"
+    },
+    {
+     "verso": "KA-154",
+     "tipo": "esempio-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-181",
+   "peso": "portante",
+   "tipo": "struttura",
+   "contenuto": "Creare una scheduled task dalla pagina dedicata \"Scheduled tasks\" richiede di compilare i campi obbligatori Name, Description e Prompt, con in più una Frequency opzionale (default \"Manual\") e una sezione \"More options\" comprimibile.",
+   "ancora": "\"Name *\" ... \"Description *\" ... \"Prompt *\" ... \"Frequency\" — menu a tendina impostato su \"Manual\"",
+   "fonte": "DI5aWJiFAt8#91:42 (modale Create scheduled task) + voce 91:42-92:12",
+   "frame": "frame-0918.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-182",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Il Name assegnato a una scheduled task viene convertito automaticamente in uno slug adatto a un identificativo/URL (es. \"Post su LinkedIn.\" diventa \"post-su-linkedin\").",
+   "ancora": "Will be saved as \"post-su-linkedin\"",
+   "fonte": "DI5aWJiFAt8#92:12 (campo Name compilato) + voce 92:12-92:18",
+   "frame": "frame-0923.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-181",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-183",
+   "peso": "supporto",
+   "tipo": "procedura",
+   "contenuto": "Il campo Prompt di una scheduled task può richiamare direttamente una skill esistente citando il suo comando slash all'interno del testo (es. \"utilizza la skill /linkedin-post\").",
+   "ancora": "utilizza la skill /linkedin-post",
+   "fonte": "DI5aWJiFAt8#92:12 (campo Prompt in composizione) + voce 92:12-92:18",
+   "frame": "frame-0923.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-143",
+     "tipo": "applica"
+    },
+    {
+     "verso": "KA-181",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-184",
+   "peso": "portante",
+   "tipo": "avvertimento",
+   "contenuto": "Le scheduled task girano solo mentre il computer dell'utente è acceso; per questo l'interfaccia espone un interruttore dedicato \"Keep awake\" per impedire che la macchina vada in stand-by durante un'esecuzione programmata.",
+   "ancora": "Scheduled tasks only run while your computer is awake.",
+   "fonte": "DI5aWJiFAt8#92:18 (toast di conferma + banner informativo) + voce 92:18-92:30",
+   "frame": "frame-0924.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-181",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-185",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Una volta che una skill referenziata in una scheduled task fa parte di un plugin installato, il suo riferimento a comando slash si aggiorna automaticamente in forma con namespace (es. \"/linkedin-post\" diventa \"/social-media-manager:linkedin-post\").",
+   "ancora": "utilizza la skill /social-media-manager:linkedin-post per cerare un post su LinkedIn sulla vita.",
+   "fonte": "DI5aWJiFAt8#92:30 (modale Edit scheduled task, campo Prompt) + voce 92:30-92:42",
+   "frame": "frame-0926.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-183",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-186",
+   "peso": "contesto",
+   "tipo": "dato",
+   "contenuto": "Le scheduled task supportano una frequenza \"Daily\" con un orario fisso di esecuzione impostabile (es. 09:00).",
+   "ancora": "\"Frequency\": cambiato in \"Daily\" ... Campo orario sotto la frequenza: \"09:00\"",
+   "fonte": "DI5aWJiFAt8#92:30 (campi Frequency e orario nel modale Edit) + voce 92:30-92:42",
+   "frame": "frame-0926.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-181",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-187",
+   "peso": "supporto",
+   "tipo": "avvertimento",
+   "contenuto": "Le scheduled task vengono eseguite con un ritardo casuale di alcuni minuti rispetto all'orario impostato, introdotto deliberatamente per motivi di performance del server.",
+   "ancora": "Scheduled tasks use a randomized delay of several minutes for server performance.",
+   "fonte": "DI5aWJiFAt8#92:30 (testo di aiuto sotto il campo orario) + voce 92:30-92:42",
+   "frame": "frame-0926.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-186",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-188",
+   "peso": "supporto",
+   "tipo": "struttura",
+   "contenuto": "La pagina di dettaglio di una scheduled task mostra il suo stato (es. \"Active\"), la sezione \"Instructions\" con il prompt configurato, l'impostazione \"Repeats\" e una sezione \"Always allowed\" con le autorizzazioni concesse durante le esecuzioni passate.",
+   "ancora": "\"Repeats\": \"Manual only\" in grassetto. Sezione \"Always allowed\"... \"Approvals you grant during a run appear here.\"",
+   "fonte": "DI5aWJiFAt8#92:42 (pagina di dettaglio \"Post su linkedin\") + voce 92:42-93:12",
+   "frame": "frame-0928.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-181",
+     "tipo": "parte-di"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v08-DI5aWJiFAt8::KA-189",
+   "peso": "portante",
+   "tipo": "principio",
+   "contenuto": "Conviene perfezionare la qualità di una skill prima di trasformarla in una task pianificata/automatizzata, perché la pianificazione si limita a ripetere fedelmente ciò che la skill già fa.",
+   "ancora": "quanto importante è avere una skill di qualità prima di fare queste cose",
+   "fonte": "DI5aWJiFAt8#93:12 (chiusura del discorso sullo scheduling) + voce 93:12-93:42",
+   "frame": "frame-0933.png",
+   "run": "max18-v08-DI5aWJiFAt8",
+   "relazioni": [
+    {
+     "verso": "KA-180",
+     "tipo": "motiva",
+     "perche": "il rischio di ripetere errori su scala motiva la cura della qualità prima di schedulare"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-01",
+   "peso": "portante",
+   "tipo": "Concetto / MCP",
+   "contenuto": "Concetto MCP (Model Context Protocol): alternativa piu' semplice alle API dirette per collegare Claude ad app esterne. Catena: Claude -> MCP -> App esegue azioni direttamente dalla chat.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#cosa-hai-imparato+frame-t3m00s",
+   "frame": "frame-t3m00s-whiteboard-api-ai.jpg",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-01",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#cosa-hai-imparato+frame-t3m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-02",
+   "peso": "portante",
+   "tipo": "Rischio / sicurezza",
+   "contenuto": "Rischio esplicito segnalato: dare accesso illimitato a Claude sulle proprie app puo' causare azioni indesiderate (es. rimborsi accidentali su Stripe) - da qui necessita' del sistema di permessi granulari.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-02",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-03",
+   "peso": "portante",
+   "tipo": "Sistema permessi osservato",
+   "contenuto": "Sistema di permessi Claude Connectors osservato dal vivo: per ogni tool del connector (es. 23 read-only tools ClickUp) si sceglie 'Ask/Always allow/Deny' singolarmente - non e' un accesso on/off globale.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#frame-t15m30s",
+   "frame": "frame-t15m30s-claude-connectors-permissions.jpg",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-03",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#frame-t15m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-04",
+   "peso": "supporto",
+   "tipo": "Prompt verbatim / conferma azione",
+   "contenuto": "Prompt esatto per creare task ClickUp da Claude: 'Creo un task su ClickUp sotto la general B2C, general B2C, che dice inviare una mail a Marco. Metti come due date domani e delegalo ad Andrei, ovvero me stesso.' Claude chiede conferma esplicita ('Search Workspace from ClickUp - Always allow/Deny') prima di agire.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#frame-t16m30s",
+   "frame": "frame-t16m30s-claude-clickup-task-permission-prompt.jpg",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-04",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#frame-t16m30s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-05",
+   "peso": "portante",
+   "tipo": "Scelta tool automazione",
+   "contenuto": "Zapier scelto come 'ponte universale' (8.000+ app) rispetto a n8n (piu' tecnico) e Make (user-friendly ma meno esteso) - criterio: copertura app + presenza di un MCP proprio.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-05",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-06",
+   "peso": "supporto",
+   "tipo": "Limitazione nota",
+   "contenuto": "Limitazione nota di Gmail come connector diretto: permette solo bozze, non invio reale - aggirata usando Zapier MCP come intermediario per l'invio effettivo.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-06",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-07",
+   "peso": "supporto",
+   "tipo": "Tecnica / connector custom",
+   "contenuto": "Metodo per aggiungere connector custom non presente in 'Browse Connectors': cercare '[nome app] + MCP' su Google e copiare nome/URL del server manualmente.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-07",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-08",
+   "peso": "supporto",
+   "tipo": "Feature / scheduling",
+   "contenuto": "Possibilita' di schedulare task ricorrenti su Cowork collegati a ClickUp - osservato dialog 'Create scheduled task' con nome, descrizione, prompt, frequenza.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#frame-t18m00s",
+   "frame": "frame-t18m00s-cowork-scheduled-task.jpg",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-08",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#frame-t18m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-03::KA-09",
+   "peso": "contesto",
+   "tipo": "Copertura app / Zapier MCP",
+   "contenuto": "Zapier MCP permette di aggiungere qualunque tool tra centinaia di app popolari (Gmail, Sheets, Notion, Airtable, Outlook, HubSpot, Slack, Asana, Salesforce, Jira, ecc.) a un singolo server MCP condiviso - un solo setup, accesso a tutto.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-03#frame-t20m00s",
+   "frame": "frame-t20m00s-zapier-mcp-add-tools.jpg",
+   "run": "cs2online-bonus-03",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-03::KA-09",
+     "run": "cs2online-bonus-03",
+     "fonte": "cs2online-bonus-03#frame-t20m00s"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-026",
+   "peso": "supporto",
+   "tipo": "opinione",
+   "contenuto": "Introduzione pilastro Routines: 'For when you've mastered Skills and Memory, you can now schedule them into automated ROUTINES.' Level 1: Local routines - run while the PC is on.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#14:36",
+   "frame": "frame-439.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-027",
+   "peso": "supporto",
+   "tipo": "configurazione",
+   "contenuto": "Configurazione completa Routine 'YouTube to Substack daily': Description (turn any new RoboNuggets YouTube video into a 3x write draft via the newsletter skill, log it, ping Jay on Telegram every run); Status Active, next run 8:00 AM; Folder C:\\ROBO; Repeats every day 8:00 AM. Instructions: automazione non presidiata, opera solo in C:\\ROBO, non pubblica/posta/invia email mai, produce solo bozza per review; goal, key paths (project A-0313-substack-newsletter, drafts template, skill newsletter/SKILL.md, log newsletter-log.json).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#15:10",
+   "frame": "frame-456.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-028",
+   "peso": "portante",
+   "tipo": "standard",
+   "contenuto": "Funzione nativa 'Routines' di Claude Code: 'Create templated routines that can be kicked off on schedule, by API, or webhook.' Suggerimenti chip: 'Summarize my open PRs every weekday morning', 'Triage new issues and flag duplicates each morning', 'Draft release notes whenever a PR merges'. Nota: 'Local routines only run while your computer is awake and online.' Lista esempio: YouTube to substack daily (8:00 AM), Daily inbox digest team (9:00 AM), Morning sync conflict check (7:00 AM).",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#15:58",
+   "frame": "frame-480.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-029",
+   "peso": "supporto",
+   "tipo": "opinione",
+   "contenuto": "Routines Level 2: 'Always-on - Hermes in the cloud' - diagramma laptop <-> nuvola etichettata 'Hermes', un agente cloud open-source sempre attivo.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#16:40",
+   "frame": "frame-501.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-030",
+   "peso": "supporto",
+   "tipo": "comando",
+   "contenuto": "Prompt integrale 'ROUTINES Level 3 - Two-machine sync with Syncthing': 'One prompt, sent to Claude Code on BOTH machines... You are setting up one half of a two-machine sync... first detect which machine you are on. Goal: keep one shared folder in sync using Syncthing. Ask me first: 1) which folder to sync; 2) other machine name/OS and network (LAN/Tailscale/internet); 3) what must NEVER sync (secrets, node_modules, temp). Then: 1) install Syncthing, start on boot; 2) add folder with ignore file; 3) show Device ID, add other machine as trusted device; 4) share folder, wait for accept; 5) verify with a test file; 6) report setup and how to check status. Security rule: never expose the Syncthing web UI to the internet. Local access only.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#17:38",
+   "frame": "frame-530.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-031",
+   "peso": "contesto",
+   "tipo": "file",
+   "contenuto": "Sito ufficiale di Syncthing (syncthing.net) mostrato come strumento reale di riferimento: 'Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#17:18",
+   "frame": "frame-520.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-032",
+   "peso": "contesto",
+   "tipo": "configurazione",
+   "contenuto": "Elenco Routines produttive di Jay con motore di esecuzione: morning sync conflict check, 07:00 client health scan (Hermes), 08:00 YouTube to substack daily (Desktop), 09:00 daily inbox digest team (Desktop), 11:00 deliverables status sweep (Hermes), 13:00 community pulse digest (Hermes), 16:30 content pipeline check (Hermes), 18:00 client report drafts (Hermes). Footer: 'Claude Desktop 3 · Hermes 14'.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#17:00",
+   "frame": "frame-511.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-062",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Regola di sicurezza dal prompt Syncthing: 'never expose the Syncthing web UI to the internet. Local access only.'",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#17:38",
+   "frame": "frame-530.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-01",
+   "peso": "portante",
+   "tipo": "Precondizione automazione",
+   "contenuto": "Precondizione per automatizzare: serve un processo ripetitivo GIA' standardizzato (SOP) - 'la maggior parte della gente non riesce a implementare l'AI perche' non ha un processo ripetuto che vale la pena automatizzare'.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-01",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-02",
+   "peso": "supporto",
+   "tipo": "Domain knowledge",
+   "contenuto": "Concetto 'domain knowledge': bisogna essere esperti del processo PRIMA di automatizzarlo, altrimenti l'automazione non porta risultati - eco diretto del principio 'meccanico esperto' di lezione 1 del run cs2online.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-02",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-03",
+   "peso": "supporto",
+   "tipo": "Metodo documentazione",
+   "contenuto": "Metodo di documentazione visiva: diagram maker gratuito (draw.io/diagrams.net) con forme standard (processo=rettangolo, trigger, terminator, scelta=rombo, database) per mappare il processo prima di automatizzarlo.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#cosa-hai-imparato+frame-t6m00s",
+   "frame": "frame-t6m00s-drawio-empty.jpg",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-03",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#cosa-hai-imparato+frame-t6m00s"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-06::KA-04",
+   "peso": "portante",
+   "tipo": "Processo reale mappato",
+   "contenuto": "Processo di acquisizione clienti reale mappato: Trigger (prospect qualificato) -> chiamata di discovery -> sviluppo preventivo (AI) -> pagamento -> chiamata onboarding -> client overview document (AI) -> contesto per AI. Solo alcuni step marcati con icona robot = automatizzabili, altri (call, pagamento) restano manuali.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-06#frame-t9m00s+t11m00s+t20m15s",
+   "frame": "frame-t9m00s-flowchart-processo-acquisizione.jpg",
+   "run": "cs2online-bonus-06",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-06::KA-04",
+     "run": "cs2online-bonus-06",
+     "fonte": "cs2online-bonus-06#frame-t9m00s+t11m00s+t20m15s"
+    }
+   ]
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-027",
+   "peso": "portante",
+   "tipo": "numero",
+   "contenuto": "I task schedulati 'pagano dieci volte': mandano il contesto INTERO a ogni scatto, e a frequenza oraria non trovano mai niente di pronto in cache. Anche alle 3 di notte. L'autore racconta di aver trovato, facendo un audit, task schedulati dimenticati che gli consumavano gran parte dell'usage.",
+   "ancora": "i task schedulati: pagano dieci volte",
+   "fonte": "1Dyld3y-V7Y#22:30 (card lavagna) + audio 22:32-22:58",
+   "frame": "frame-451.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-026",
+     "tipo": "rimedio-in"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-031",
+   "peso": "portante",
+   "tipo": "architettura",
+   "contenuto": "Trasforma in codice cio' che e' ripetibile: 'l'AI serve per il GIUDIZIO. Tutto il resto e' esecuzione, e l'esecuzione ripetibile e' codice'. Confronto sulla lavagna: farlo rifare all'AI = ~2.000 token a giro, ogni tanto sbaglia, il risultato cambia; farlo fare a uno script = 0 token, non sbaglia mai, gira uguale ogni volta. Il passaggio si paga una volta sola ('lo fai scrivere UNA volta sola').",
+   "ancora": "L'AI serve per il GIUDIZIO. Tutto il resto e' esecuzione, e l'esecuzione ripetibile e' codice.",
+   "fonte": "1Dyld3y-V7Y#30:45-32:20 (riquadro lavagna letto per intero) + audio 30:43-32:24",
+   "frame": "frame-652.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-033",
+     "tipo": "operazionalizzato-da"
+    },
+    {
+     "verso": "KA-034",
+     "tipo": "specializzato-da"
+    },
+    {
+     "verso": "KA-014",
+     "tipo": "discende-da"
+    }
+   ],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max18-v03-belli-token::KA-033",
+   "peso": "supporto",
+   "tipo": "metodo",
+   "contenuto": "Il modo per trovare cosa trasformare in codice: lanciare un prompt di audit dentro il proprio brain o la propria app che chieda quali pezzi del flusso NON hanno bisogno di un modello. Quelli diventano uno script dentro la skill, e da li' in poi non si pagano mai piu'.",
+   "ancora": "lancia il prompt di audit e fatti dire quali pezzi del tuo flusso non hanno bisogno di un modello",
+   "fonte": "1Dyld3y-V7Y#32:33 (riquadro giallo lavagna) + audio 32:24-32:42",
+   "frame": "frame-652.png",
+   "run": "max18-v03-belli-token",
+   "relazioni": [
+    {
+     "verso": "KA-031",
+     "tipo": "operazionalizza"
+    }
+   ],
+   "detto_anche_da": []
+  }
+ ]
+}

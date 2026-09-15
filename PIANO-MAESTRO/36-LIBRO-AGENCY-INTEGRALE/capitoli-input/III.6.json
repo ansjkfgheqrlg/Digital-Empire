@@ -1,0 +1,89 @@
+{
+ "capitolo": "III.6",
+ "parte": "III.6",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Chiusura, contratto, incasso",
+ "libro": "III",
+ "libro_titolo": "Vendere e prezzare",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "EBU57iVAutA::KA-15",
+  "max17-v17-beggiato-agenzia::KA-008",
+  "max17-v17-beggiato-agenzia::KA-019"
+ ],
+ "fonti_integrali": {
+  "EBU57iVAutA": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/EBU57iVAutA\\contenuto-integrale.md",
+   "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Empire Studio Suite\\empire-studio\\memory-empire\\knowledge\\EBU57iVAutA\\contenuto-integrale.md"
+  ],
+  "max17-v05-jaye-agenticos": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v05-jaye-agenticos\\video-analysis.md"
+  ],
+  "max17-v17-beggiato-agenzia": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\transcript.md",
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v17-beggiato-agenzia\\video-analysis.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "EBU57iVAutA::KA-15",
+   "peso": "portante",
+   "tipo": "Vendita / Regola 5 - dire il prezzo",
+   "contenuto": "'Non avere paura di dire il prezzo': dire il totale IVA inclusa in modo diretto ('Bam, press price'), aspettare la reazione in silenzio. Alle domande, tornare sulla pagina pertinente, spiegare, tornare al prezzo, ripetere fino al si'. Quando dice si', 'te lo dira' e basta'.",
+   "ancora": "",
+   "fonte": "EBU57iVAutA#00:07:07",
+   "frame": "frame-230",
+   "run": "EBU57iVAutA",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "EBU57iVAutA::KA-15",
+     "run": "EBU57iVAutA",
+     "fonte": "EBU57iVAutA#00:07:07"
+    }
+   ]
+  },
+  {
+   "uid": "max17-v05-jaye-agenticos::KA-046",
+   "peso": "contesto",
+   "tipo": "opinione",
+   "contenuto": "Modulo corso 'Agents-as-a-Service': 'The DOTS Framework', Pricing & Closing Techniques, Making It Official (Contracts & Invoicing), Milestone Your First Proposal, Delivering Results.",
+   "ancora": "",
+   "fonte": "8NSyI-npJCU#3:06",
+   "frame": "frame-094.png",
+   "run": "max17-v05-jaye-agenticos",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-008",
+   "peso": "portante",
+   "tipo": "regola",
+   "contenuto": "Golden rule del close rate al 30% per un service business: percentuale di lead che arrivano in sales call e pagano. Sopra il 30% -> prezzo troppo basso (si perde margine). Sotto il 30% -> prezzo troppo alto o vendita debole. Per community/infoprodotti il benchmark citato e' diverso (2-4%).",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#1:20-1:23",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  },
+  {
+   "uid": "max17-v17-beggiato-agenzia::KA-019",
+   "peso": "supporto",
+   "tipo": "regola",
+   "contenuto": "Un cliente esiste solo se c'e' stato un movimento di denaro effettivo — un 'si' via email non basta a definire qualcuno come cliente pagante (le persone ripensano, si fanno influenzare, cambiano priorita').",
+   "ancora": "",
+   "fonte": "rvpRQD43wdY#2:54-2:55",
+   "frame": "n/a (solo audio)",
+   "run": "max17-v17-beggiato-agenzia",
+   "relazioni": [],
+   "detto_anche_da": []
+  }
+ ]
+}

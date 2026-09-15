@@ -1,0 +1,80 @@
+{
+ "capitolo": "VII.5",
+ "parte": "VII.5",
+ "parte_n": 1,
+ "parti_totali": 1,
+ "titolo": "Tempo, priorita', energia",
+ "libro": "VII",
+ "libro_titolo": "Imparare e decidere",
+ "regole": {
+  "portante": "entra espanso, MINIMO 150 parole attorno al marcatore [[uid]], con la citazione letterale della fonte (campo `ancora`) riportata",
+  "supporto": "entra come citazione dentro un paragrafo, col marcatore [[uid]]",
+  "contesto": "NON entra nel corpo: sta in appendice (generata da codice)"
+ },
+ "marcatori_richiesti": [
+  "cs2online-bonus-01::KA-03",
+  "cs2online-bonus-01::KA-04",
+  "cs2online-bonus-01::KA-05"
+ ],
+ "fonti_integrali": {
+  "cs2online-bonus-01": [
+   "C:/Users/Utente/Desktop/qui tutto/Digital Empire/.claude/skills/empire-studio/memory-empire/knowledge/cs2online-bonus-01\\contenuto-integrale.md"
+  ]
+ },
+ "atomi": [
+  {
+   "uid": "cs2online-bonus-01::KA-03",
+   "peso": "supporto",
+   "tipo": "Regola / gestione aggiornamenti AI",
+   "contenuto": "Regola anti-ansia da aggiornamento: non rincorrere ogni notizia AI quotidiana - aggiornarsi periodicamente (ogni trimestre o semestre) e SOLO ALLORA implementare le novita' nei propri sistemi. Distinzione tra 'stare dietro alle notizie' (passivo) e 'implementarle nel lavoro' (attivo, a cadenza fissa).",
+   "ancora": "",
+   "fonte": "cs2online-bonus-01#panoramica+cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-01::KA-03",
+     "run": "cs2online-bonus-01",
+     "fonte": "cs2online-bonus-01#panoramica+cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-04",
+   "peso": "supporto",
+   "tipo": "Aneddoto / ri-test periodico tool",
+   "contenuto": "Esempio personale: AI provata nel 2023 per ricerca copy 'faceva schifo', riprovata mesi dopo -> scoperto Perplexity. Stesso pattern siti web: 'impossibile con l'AI' all'inizio, ripreso mesi dopo con Lovable e funzionava. Pattern: ri-testare periodicamente uno strumento scartato, non giudicarlo definitivamente da un primo tentativo negativo.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-01#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-01::KA-04",
+     "run": "cs2online-bonus-01",
+     "fonte": "cs2online-bonus-01#cosa-hai-imparato"
+    }
+   ]
+  },
+  {
+   "uid": "cs2online-bonus-01::KA-05",
+   "peso": "supporto",
+   "tipo": "Cadenza cambiamento business",
+   "contenuto": "Cambiamenti significativi all'intero business vanno fatti raramente (circa una volta all'anno), non continuamente.",
+   "ancora": "",
+   "fonte": "cs2online-bonus-01#cosa-hai-imparato",
+   "frame": "",
+   "run": "cs2online-bonus-01",
+   "relazioni": [],
+   "detto_anche_da": [
+    {
+     "uid": "cs2online-bonus-01::KA-05",
+     "run": "cs2online-bonus-01",
+     "fonte": "cs2online-bonus-01#cosa-hai-imparato"
+    }
+   ]
+  }
+ ]
+}
